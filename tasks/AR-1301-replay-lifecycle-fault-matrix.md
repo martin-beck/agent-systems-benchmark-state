@@ -8,7 +8,7 @@
     "AR-1300"
   ],
   "id": "AR-1301",
-  "next_action": "Independent exact-head review of final signed head cf2a7b0 and complete diff (including 955a060 negative matrix and cf2a7b0 strict-lint fix); publish only after review and exact-head CI are green.",
+  "next_action": "Acceptance blocker: direct relay/service negatives are insufficient. Add a supervised authenticated integration using pinned sidecar/supervisor + ReplayRelay + StrictReplayService/adapter for stale, malformed, duplicate, strict mismatch and no-fallback, retaining crash-to-fresh-generation evidence; rerun full locked gates before review/publication.",
   "observed_branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "observed_dirty": 0,
   "observed_head": "cf2a7b0315bc7d596dbab9956e8e18a003a381a2",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 132,
+  "task_revision": 133,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T11:21:14+00:00",
+  "updated_at": "2026-09-17T11:23:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -377,3 +377,8 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
   commits precisely.
 
 - 2026-09-17T11:21:14+00:00: Heartbeat by ar1301_negative_matrix.
+
+- 2026-09-17T11:23:52+00:00: Independent review confirmed current
+  authenticated_replay_boundary_rejects... is direct unit coverage and
+  native_supervisor_fault_matrix uses only shell/curl fixtures. AR remains in progress; no
+  publication authorized until supervised authenticated negative cases execute end to end.

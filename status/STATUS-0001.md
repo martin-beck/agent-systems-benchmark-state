@@ -1639,7 +1639,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md): Supervised replay lifecycle fault matrix | ar1301_negative_matrix | Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end. | Independent exact-head review of final signed head cf2a7b0 and complete diff (including 955a060 negative matrix and cf2a7b0 strict-lint fix); publish only after review and exact-head CI are green. |
+| P0 | [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md): Supervised replay lifecycle fault matrix | ar1301_negative_matrix | Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end. | Acceptance blocker: direct relay/service negatives are insufficient. Add a supervised authenticated integration using pinned sidecar/supervisor + ReplayRelay + StrictReplayService/adapter for stale, malformed, duplicate, strict mismatch and no-fallback, retaining crash-to-fresh-generation evidence; rerun full locked gates before review/publication. |
 
 ### Blocked (49)
 
