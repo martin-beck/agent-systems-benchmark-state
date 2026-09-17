@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814.",
-  "task_revision": 91,
+  "task_revision": 92,
   "title": "Runtime certificate issuance and chain validation",
-  "updated_at": "2026-09-17T03:07:42+00:00",
+  "updated_at": "2026-09-17T03:07:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1288-certificate-chain-authz"
 }
 ---
@@ -281,3 +281,6 @@ must not reuse unmerged strict-replay or asb-tui branches.
   passed. Existing generated schema parity and certificate-focused 7/7 remain green. Product
   worktree clean; branch origin/feature/ar-1288-certificate-chain-authz is at
   0e8d7e2b23bde802b7ce793654915e886d6432f4, SSH-signed with matching DCO.
+
+- 2026-09-17T03:07:52+00:00: Recorded command exit 0; command argv SHA-256
+  054cdd4d699111534bad3aa816c59705350fb78ad734b3c8771c5d017fa83e06.
