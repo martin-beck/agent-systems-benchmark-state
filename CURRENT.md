@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1282](tasks/AR-1282-authenticated-replay-transport.md): Authenticated replay transport foundation | Land the authenticated runtime-to-CLI replay transport foundation. | Monitor PR #208 exact head a455d5ea09b2 against base 69e8b064d312; all required hosted checks are running. Do not merge until terminal green and independent approval remains recorded. | asb_ar1282_core_runtime_transport |
+| P0 | [AR-1282](tasks/AR-1282-authenticated-replay-transport.md): Authenticated replay transport foundation | Land the authenticated runtime-to-CLI replay transport foundation. | PR #208 now needs fresh checks at exact head b44be60fb9f1 after formal Cargo.lock refresh. Formal lock test itself hit unrelated Text file busy in TLA acquisition; preserve evidence and await hosted rerun. | asb_ar1282_core_runtime_transport |
 
 ## Open
 

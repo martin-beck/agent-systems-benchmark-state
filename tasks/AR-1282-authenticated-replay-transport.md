@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1282",
-  "next_action": "Monitor PR #208 exact head a455d5ea09b2 against base 69e8b064d312; all required hosted checks are running. Do not merge until terminal green and independent approval remains recorded.",
+  "next_action": "PR #208 now needs fresh checks at exact head b44be60fb9f1 after formal Cargo.lock refresh. Formal lock test itself hit unrelated Text file busy in TLA acquisition; preserve evidence and await hosted rerun.",
   "observed_branch": "feature/ar-1282-authenticated-replay-transport",
   "observed_dirty": 0,
   "observed_head": "b44be60fb9f127920f360ef86db482a85c3d7bae",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Land the authenticated runtime-to-CLI replay transport foundation.",
-  "task_revision": 73,
+  "task_revision": 74,
   "title": "Authenticated replay transport foundation",
-  "updated_at": "2026-09-17T00:49:47+00:00",
+  "updated_at": "2026-09-17T00:50:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1282-authenticated-replay-transport"
 }
 ---
@@ -233,3 +233,11 @@ claim primary command execution.
 
 - 2026-09-17T00:49:47+00:00: Recorded command exit 101; command argv SHA-256
   94c8bbe7dd9100c2f84436d9dffed9410efba9445281b625a84a30ae473da8eb.
+
+- 2026-09-17T00:50:25+00:00: Fresh signed+DCO head b44be60fb9f127920f360ef86db482a85c3d7bae adds
+  only formal/Cargo.lock asb-runtime dependency entry required by transport Cargo.toml. Exact local
+  formal lock tests: 2+4+2+3+5+2+6 passed, but 2 TLA acquisition tests failed with Os code 26
+  ExecutableFileBusy (Text file busy) at tests/tla_artifact_acquisition.rs:201 and :461, an
+  unrelated concurrent artifact/process infrastructure condition. Full workspace test suite remained
+  green (primary 173 passed, 1 ignored; all observed suites green). PR #208 branch is pushed at
+  b44be60; prior CI is invalidated and fresh exact-head checks are required.
