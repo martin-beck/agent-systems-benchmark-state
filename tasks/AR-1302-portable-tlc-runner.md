@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1302-portable-tlc-runner",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T09:33:29+00:00",
   "depends_on": [],
   "id": "AR-1302",
   "next_action": "Promote and provision a digest-pinned x86_64 container/VM runner with portable cgroup containment, bounded thread/memory/swap capacity, and owner-private evidence paths for AR-1293.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "",
+  "owner": "codex-ar1302-recovery-20260917",
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T07:32:31+00:00",
+  "updated_at": "2026-09-17T07:33:29+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -130,3 +130,5 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   minutes. Unsafe full-rootfs export was removed. Preserve only uncommitted minimal runner
   helper/docs for focused reassignment; tests, signed commit, and portable qualification remain
   outstanding.
+
+- 2026-09-17T07:33:29+00:00: Claimed by codex-ar1302-recovery-20260917.
