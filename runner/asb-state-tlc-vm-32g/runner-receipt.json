@@ -1,0 +1,17 @@
+{
+  "architecture": "x86_64",
+  "disposable": true,
+  "guest_swap_bytes": 17179869184,
+  "host_mounts": false,
+  "hypervisor": "qemu-system-x86_64 8.2.2",
+  "image": {
+    "path": "/srv/data/projects/asb-state-tlc-vm/noble-server-cloudimg-amd64.img",
+    "sha256": "612b2c0cc1bc413a6cb8c38fd611794caf0f2b436c50013d8b3794db12ad7354"
+  },
+  "memory_bytes": 34359738368,
+  "network": "none",
+  "purpose": "ASB AR-1302 portable TLC full-exhaustive admission runner",
+  "root_overlay": "/srv/data/projects/asb-state-tlc-vm-32g/asb-state-tlc-32g.qcow2",
+  "runner_id": "asb-state-tlc-vm-32g-v1",
+  "vcpus": 8
+}
