@@ -85,8 +85,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1284-strict-replay-lifecycle` | `feature/ar-1284-strict-replay-lifecycle` | `f9ddf7ef6b3b` | 0 | behind 5, ahead 0 |
 | `agent-systems-benchmark-ar-1285-runtime-launch-factory` | `feature/ar-1285-runtime-launch-factory` | `0f876c7ae7fd` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-ar-1286-supervised-replay-lifecycle` | `feature/ar-1286-supervised-replay-lifecycle` | `d8064117cdeb` | 0 | behind 0, ahead 4 |
-| `agent-systems-benchmark-ar-1288-certificate-chain-authz` | `feature/ar-1288-certificate-chain-authz` | `871d2f7ee4ae` | 2 | behind 0, ahead 1 |
-| changed files | - | - | - | `crates/asb-control/Cargo.toml`, `crates/asb-control/src/certificate.rs` |
+| `agent-systems-benchmark-ar-1288-certificate-chain-authz` | `feature/ar-1288-certificate-chain-authz` | `871d2f7ee4ae` | 3 | behind 0, ahead 1 |
+| changed files | - | - | - | `Cargo.lock`, `crates/asb-control/Cargo.toml`, `crates/asb-control/src/certificate.rs` |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 522, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 625, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 519, ahead 0 |
