@@ -10,17 +10,17 @@
   "id": "AR-1306",
   "next_action": "Relay lifecycle repair commit cf6c9e4dd9611f88252418b1e4e7effa4667aaa7 is signed/DCO and pushed to PR #222. Positive authenticated service test now uses bounded curl connect/max time and a 30s supervisor deadline; 15 repeated qualified native runs passed. Verify full native matrix and refreshed exact-head CI, then obtain independent review. Prior 22:54 exit 101 was malformed temporary quote syntax before correction; subsequent fmt and focused runs passed.",
   "observed_branch": "feature/ar-1306-authenticated-fault-matrix-qualification",
-  "observed_dirty": 1,
-  "observed_head": "cf6c9e4dd9611f88252418b1e4e7effa4667aaa7",
+  "observed_dirty": 0,
+  "observed_head": "1a22bc65dbd730cd019635d9bccdf6416ada1d3e",
   "owner": "codex-ar1306-auth-listener-20260917",
   "plan": "../plans/AR-1306.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the real authenticated strict-replay service and fault matrix missing from PR #221.",
-  "task_revision": 172,
+  "task_revision": 173,
   "title": "Authenticated strict-replay fault-matrix qualification",
-  "updated_at": "2026-09-17T22:58:14+00:00",
+  "updated_at": "2026-09-17T22:58:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1306-authenticated-fault-matrix-qualification"
 }
 ---
