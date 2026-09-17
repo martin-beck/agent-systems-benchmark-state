@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1283-formal-lockfile",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T02:47:11+00:00",
+  "claim_expires": "2026-09-17T02:49:13+00:00",
   "depends_on": [
     "AR-0003"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair formal workspace lockfile drift that fails the locked CI gate.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Formal lockfile CI drift repair",
-  "updated_at": "2026-09-17T00:47:50+00:00",
+  "updated_at": "2026-09-17T00:49:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1283-formal-lockfile"
 }
 ---
@@ -35,3 +35,5 @@ Repair formal lockfile drift without weakening locked CI or changing formal beha
 
 - 2026-09-17T00:47:43+00:00: Recorded command exit 0; command argv SHA-256
   5c8da9b34935360f7399b9d4b260d9a460b442f2f0ca08eddaee6e8f11776ef0.
+
+- 2026-09-17T00:49:13+00:00: Heartbeat by asb_ar1024_lifecycle_router.
