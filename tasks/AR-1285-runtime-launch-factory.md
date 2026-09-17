@@ -18,11 +18,11 @@
   "plan": "../plans/AR-1285.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Provide a runtime-owned launch factory for authenticated strict-replay CLI execution.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Runtime-owned strict-replay launch factory",
-  "updated_at": "2026-09-17T01:27:13Z",
+  "updated_at": "2026-09-17T01:28:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1285-runtime-launch-factory"
 }
 ---
@@ -54,3 +54,6 @@ AR-1260--AR-1284 branches.
 
 If the complete supervised lifecycle remains unavailable, stop at this boundary and create a
 separate successor rather than claiming strict-replay execution.
+
+- 2026-09-17T01:28:07+00:00: AR-1284 identified missing runtime-owned launch factory; promote narrow
+  successor
