@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1293.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 122,
+  "task_revision": 123,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T13:03:36+00:00",
+  "updated_at": "2026-09-17T13:03:59+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -444,3 +444,7 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   working-tree diff or repair commit was produced. Preserve AR-1302 evidence. Next action remains
   implementing a separate bounded virtual-address-space limit in tools/tlc_runner.py with
   attestation/schema and positive/negative tests, then requalifying portable-smoke.
+
+- 2026-09-17T13:03:59+00:00: Coordinator implementation authorized after two workers produced no
+  diff: add explicit bounded portable virtual-address-space contract, positive/negative tests, and
+  attestation evidence without weakening 3G physical/swap.
