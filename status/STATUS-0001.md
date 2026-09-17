@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**331 ARs tracked** across 7 active status categories.
+**331 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 49 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
@@ -398,7 +398,7 @@ flowchart LR
         direction TB
         AR_1300["AR-1300 - Done"]:::status_done
         AR_1301["AR-1301 - Blocked"]:::status_blocked
-        AR_1302["AR-1302 - Open"]:::status_open
+        AR_1302["AR-1302 - In progress"]:::status_in_progress
         AR_1303["AR-1303 - Blocked"]:::status_blocked
     end
     AR_0001 --> AR_0002
@@ -1639,17 +1639,12 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | coordinator-ar1293-as-limit-repair | Repair the state-repository TLA admission runner and truthful worktree metadata. | Requalify AR-1302 portable-smoke with exact 8G portable address-space bound and 3G physical/swap limits; require success attestation before required/full. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | Unclaimed | Provision a clean portable TLC CI/VM runner for state formal admission. | Create a reviewed AR-1293/state runner change that separates a bounded virtual-address-space limit from the 3 GiB physical/swap attested bounds, with positive/negative tests and formal evidence update. Then run fresh VM preflight and portable-smoke; only after smoke terminal success may required-pr/full proceed. |
+| P0 | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | codex-ar1302-requalify-address-space | Provision a clean portable TLC CI/VM runner for state formal admission. | Create a reviewed AR-1293/state runner change that separates a bounded virtual-address-space limit from the 3 GiB physical/swap attested bounds, with positive/negative tests and formal evidence update. Then run fresh VM preflight and portable-smoke; only after smoke terminal success may required-pr/full proceed. |
 
 ### Blocked (49)
 

@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1302-portable-tlc-runner",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T15:14:08+00:00",
   "depends_on": [],
   "id": "AR-1302",
   "next_action": "Create a reviewed AR-1293/state runner change that separates a bounded virtual-address-space limit from the 3 GiB physical/swap attested bounds, with positive/negative tests and formal evidence update. Then run fresh VM preflight and portable-smoke; only after smoke terminal success may required-pr/full proceed.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "",
+  "owner": "codex-ar1302-requalify-address-space",
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 364,
+  "task_revision": 365,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T13:14:05+00:00",
+  "updated_at": "2026-09-17T13:14:08+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1219,3 +1219,5 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
 - 2026-09-17T13:14:05+00:00: AR-1293 contract repair is reviewed at f1931686c: portable launcher now
   separates bounded 8G address space from 3G physical/swap. Requalify fresh UUID-wired VM exact
   preflight and portable-smoke; no required/full until attestation succeeds.
+
+- 2026-09-17T13:14:08+00:00: Claimed by codex-ar1302-requalify-address-space.
