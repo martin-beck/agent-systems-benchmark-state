@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1293-state-tla-admission",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T06:48:56+00:00",
   "depends_on": [],
   "id": "AR-1293",
   "next_action": "Reconcile the still-failing vendor fixture contract to coordinator v0.3.7 and provide a host with enough thread capacity for the portable TLC VM; then rerun full state and formal gates. Candidate 53dd96389 is signed and focused-green but is not publishable while 133-test vendor failures and TLC EAGAIN remain.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "",
+  "owner": "codex-ar1293-requalify-v2",
   "plan": "../plans/AR-1293.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T05:48:15+00:00",
+  "updated_at": "2026-09-17T05:48:56+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -167,3 +167,5 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 - 2026-09-17T05:48:15+00:00: AR-1295 fixture repair is on current main; prior candidate branch still
   carries stale v0.3.5 tests. Rebase candidate onto current signed main, rerun full suite, and
   classify remaining TLC EAGAIN separately.
+
+- 2026-09-17T05:48:56+00:00: Claimed by codex-ar1293-requalify-v2.
