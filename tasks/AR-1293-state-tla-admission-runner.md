@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1293-state-tla-admission",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T14:52:43+00:00",
   "depends_on": [],
   "id": "AR-1293",
   "next_action": "Release ownerless blocked pending a clean approved 32G VM with available swap and fixed guest JVM; AR-1302 may use the clean runner. Preserve candidate f16d2cb41721bf8f17aa5aa75ab01520aeb91eb8 and all focused/full local evidence; do not claim pr-publication or full-exhaustive formal success.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "",
+  "owner": "codex-ar1293-as-limit-repair",
   "plan": "../plans/AR-1293.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 100,
+  "task_revision": 101,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T12:52:41+00:00",
+  "updated_at": "2026-09-17T12:52:43+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -377,3 +377,5 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 - 2026-09-17T12:52:41+00:00: Implement reviewed runner-contract repair required by AR-1302: separate
   bounded virtual address space from 3 GiB physical/swap bounds, add positive/negative tests and
   formal evidence updates.
+
+- 2026-09-17T12:52:43+00:00: Claimed by codex-ar1293-as-limit-repair.
