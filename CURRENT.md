@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1289](tasks/AR-1289-formal-lock-gate.md): Repair formal lock gate | Repair the stale formal Cargo.lock required by hosted exact-head gates. | Signed lock repair 53981d6 cleanly refreshes formal/Cargo.lock. Rerun complete locked formal suite and applicable formal provenance/policy gates; then independent review and publish exact head. | asb_ar1024_lifecycle_router |
+| P0 | [AR-1289](tasks/AR-1289-formal-lock-gate.md): Repair formal lock gate | Repair the stale formal Cargo.lock required by hosted exact-head gates. | PR #211 is open at exact clean head 53981d6; monitor all required checks to terminal, retain merge block, and request independent review. Do not merge until green. | asb_ar1024_lifecycle_router |
 | P1 | [AR-1288](tasks/AR-1288-certificate-chain-authz.md): Runtime certificate issuance and chain validation | Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814. | PR #210 now points to exact signed head 7b3ff1d3a87436c2a7299d452bb4220dd7847a4c after adding regenerated formal/Cargo.lock for x509-parser. The prior Loom failure was stale-lock-only; formal artifact-acquisition test had one Os 26 Text file busy environment race, then 3/3 bounded focused reruns passed. Fresh hosted exact-head checks are pending; do not merge until all required checks and final independent review are green. | asb_ar0909_lifecycle_repair |
 
 ## Open

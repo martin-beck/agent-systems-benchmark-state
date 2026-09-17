@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T05:17:44+00:00",
   "depends_on": [],
   "id": "AR-1289",
-  "next_action": "Signed lock repair 53981d6 cleanly refreshes formal/Cargo.lock. Rerun complete locked formal suite and applicable formal provenance/policy gates; then independent review and publish exact head.",
+  "next_action": "PR #211 is open at exact clean head 53981d6; monitor all required checks to terminal, retain merge block, and request independent review. Do not merge until green.",
   "observed_branch": "fix/ar-1289-formal-lock-gate",
   "observed_dirty": 0,
   "observed_head": "53981d651645594a65aa7e69c9faa28e0770b6a6",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the stale formal Cargo.lock required by hosted exact-head gates.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Repair formal lock gate",
-  "updated_at": "2026-09-17T03:18:22+00:00",
+  "updated_at": "2026-09-17T03:18:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1289-formal-lock-gate"
 }
 ---
@@ -78,3 +78,11 @@ be used with `--locked`. Repair and verify this gate independently of feature AR
 
 - 2026-09-17T03:18:22+00:00: Recorded command exit 0; command argv SHA-256
   f29e7ba2c9d9f11ea861bbabff757f5c1ebb8175ffd67e0964855c76398523ba.
+
+- 2026-09-17T03:18:47+00:00: Published exact signed/DCO lock-only repair 53981d6 via branch
+  fix/ar-1289-formal-lock-gate. PR #211:
+  https://github.com/martin-beck/agent-systems-benchmark/pull/211, base 2fd90557, head
+  53981d651645594a65aa7e69c9faa28e0770b6a6. Hosted checks started: formal 35177646338, Rust
+  35177646365, repository quality 35177646319, fault 35177646341, AArch64 35177646317, hosted
+  portability 35177646355, headers 35177646353 (headers and AWQ already SUCCESS; remaining checks
+  IN_PROGRESS). Worktree clean.
