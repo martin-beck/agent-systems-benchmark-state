@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Land the authenticated runtime-to-CLI replay transport foundation.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Authenticated replay transport foundation",
-  "updated_at": "2026-09-17T00:41:18+00:00",
+  "updated_at": "2026-09-17T00:42:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1282-authenticated-replay-transport"
 }
 ---
@@ -211,3 +211,6 @@ claim primary command execution.
   closed. Focused runtime transport tests pass 3/3; full locked workspace test suite, fmt, clippy -D
   warnings, rustdoc, and repository policy gates are green at this change. Request independent
   re-review; no primary CLI/lifecycle claim.
+
+- 2026-09-17T00:42:45+00:00: Recorded command exit 0; command argv SHA-256
+  206250bc2dffe4e94692fc3432ba0e6dd1688b336b14fa57e9701bfe0e0de999.
