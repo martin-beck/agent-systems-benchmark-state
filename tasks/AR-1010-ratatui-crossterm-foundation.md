@@ -2,7 +2,7 @@
 {
   "branch": "feature/ratatui-crossterm-foundation",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T06:16:02+00:00",
   "depends_on": [
     "AR-0803",
     "AR-0804",
@@ -18,15 +18,15 @@
   ],
   "id": "AR-1010",
   "next_action": "Remain open pending a supported AR-1062 signed publication/repair successor, green exact-main Repository quality and Trusted main, and recovered AR-1060 control-publication provenance. Do not repeat merged foundation work or add UI code to ASB.",
-  "owner": "",
+  "owner": "codex-ar1010-finalize-20260917",
   "plan": "../plans/AR-1010.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 434,
+  "task_revision": 435,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-13T20:03:51+00:00",
+  "updated_at": "2026-09-17T04:16:02+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -1543,3 +1543,5 @@ trusted terminal qualification; do not repeat the already merged PR #9 publicati
 - 2026-09-13T20:03:51+00:00: Updated stale wording: AR-1062 produced local diagnostics but lacks
   supported signed publication and Trusted-main acceptance; AR-1060 control provenance is separately
   blocked. Preserve current status and dependency graph pending a reviewed successor definition.
+
+- 2026-09-17T04:16:02+00:00: Claimed by codex-ar1010-finalize-20260917.
