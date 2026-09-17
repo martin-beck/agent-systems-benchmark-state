@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1304-required-tier-qemu-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T17:00:39+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1302"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "codex-ar1304-required-runner-20260917",
+  "owner": "",
   "plan": "../plans/AR-1304.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Create a clean required-containment QEMU runner for formal publication evidence.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Required-tier QEMU user-bus runner",
-  "updated_at": "2026-09-17T15:00:39+00:00",
+  "updated_at": "2026-09-17T15:00:43+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1304-required-tier-qemu-runner"
 }
 ---
@@ -199,3 +199,9 @@ logs, or claim full-exhaustive evidence before required attestation is green.
 - 2026-09-17T15:00:22+00:00: Claimed by codex-ar1304-required-runner-20260917.
 
 - 2026-09-17T15:00:39+00:00: Heartbeat by codex-ar1304-required-runner-20260917.
+
+- 2026-09-17T15:00:43+00:00: Required-tier investigation confirms standalone dbus-daemon socket is
+  insufficient: native asb-session-bus.service starts and /run/user/1000/bus exists, but systemd-run
+  --user returns Transport endpoint is not connected. The correct next repair must use the
+  image-supported system-managed user@1000 manager/session bus ordering and environment; no wrapper,
+  portable fallback, or gate weakening is acceptable. No required attestation exists.
