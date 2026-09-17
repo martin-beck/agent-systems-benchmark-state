@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1304](tasks/AR-1304-required-tier-qemu-runner.md): Required-tier QEMU user-bus runner | Create a clean required-containment QEMU runner for formal publication evidence. | Independent exact-head review of signed commits 4bc1e4102, 247c7e770, 151bd0f99, de489eac9, and current seed/receipt chain; then hand required pr-publication evidence to AR-1293. Do not run full-exhaustive until coordinator accepts the attestation. | codex-ar1304-required-runner-20260917 |
+| P0 | [AR-1304](tasks/AR-1304-required-tier-qemu-runner.md): Required-tier QEMU user-bus runner | Create a clean required-containment QEMU runner for formal publication evidence. | Independent exact-head review of signed commits 56001d6e2, 151bd0f99, de489eac9, and current seed/receipt chain; then hand required pr-publication evidence to AR-1293. Do not run full-exhaustive until coordinator accepts the attestation. | codex-ar1304-required-runner-20260917 |
 
 ## Blocked
 

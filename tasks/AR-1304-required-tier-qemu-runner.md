@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1304",
-  "next_action": "Independent exact-head review of signed commits 4bc1e4102, 247c7e770, 151bd0f99, de489eac9, and current seed/receipt chain; then hand required pr-publication evidence to AR-1293. Do not run full-exhaustive until coordinator accepts the attestation.",
+  "next_action": "Independent exact-head review of signed commits 56001d6e2, 151bd0f99, de489eac9, and current seed/receipt chain; then hand required pr-publication evidence to AR-1293. Do not run full-exhaustive until coordinator accepts the attestation.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Create a clean required-containment QEMU runner for formal publication evidence.",
-  "task_revision": 271,
+  "task_revision": 272,
   "title": "Required-tier QEMU user-bus runner",
-  "updated_at": "2026-09-17T16:44:02+00:00",
+  "updated_at": "2026-09-17T16:44:27+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1304-required-tier-qemu-runner"
 }
 ---
@@ -880,3 +880,14 @@ logs, or claim full-exhaustive evidence before required attestation is green.
 
 - 2026-09-17T16:44:02+00:00: Recorded command exit 0; command argv SHA-256
   59db073a73b89886b3579cddb4313e8481b32f4daedca221bceb3d857576a3a8.
+
+- 2026-09-17T16:44:27+00:00: Final marker-format repair verified. Fresh clean QEMU PR8 serial
+  contains REQUIRED_TRANSIENT_RC=0 newline, PR_PUBLICATION_RC=0 newline, and
+  PR_PUBLICATION_EVIDENCE_OK. Persisted clean-data marker was dumped and byte-checked exactly as 50
+  52 5f 50 55 42 4c 49 43 41 54 49 4f 4e 5f 52 43 3d 30 0a (PR_PUBLICATION_RC=0 plus one LF), with
+  no literal n. /bin/systemd-run remains absent; direct /usr/bin/systemd-run and offline rootfs curl
+  shim were used. Fresh attestation remains success/required/pr-publication for candidate 39c8933f5
+  with six model outcomes success and JAR 936a262...050e88. Current receipt SHA256
+  ca9c4d93...6c1c11; final data image digest 589b67f4...a056cf and seed digest 08b9a41d...9e01d.
+  Focused tests 4 passed, full pytest 138 plus 85 subtests passed, Ruff and mypy passed. No network
+  fallback or gate weakening.
