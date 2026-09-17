@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T18:46:20+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Independent review of afb9e7da8+bc49937f6; then run only fresh required-tier qualification with pinned images, inspect receipt/serial/attestation, and retain full tier blocked until required evidence passes.",
+  "next_action": "Independent review of dfff5a008 and fresh required-tier invocation using direct ext4 data image; inspect seed image, writable overlay, receipt, serial, and extracted attestation before any full tier.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 326,
+  "task_revision": 327,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T18:16:33+00:00",
+  "updated_at": "2026-09-17T18:16:45+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -1110,3 +1110,9 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T18:16:33+00:00: Recorded command exit 0; command argv SHA-256
   b591cf271173d81ad6b2c145d4155e7c69cdf5794cf3c3da596ab1b743c934e6.
+
+- 2026-09-17T18:16:45+00:00: Final extraction fix committed signed+DCO dfff5a008: guestfish now
+  probes list-partitions and selects /dev/sda1 for partitioned images or direct /dev/sda for direct
+  ext4 data.raw; unsupported layouts fail closed. Tests cover partitioned, direct, and unsupported
+  layouts. Exact offline Ruff check/format, mypy tools tests, and 23/23 focused tests pass. Fresh
+  required-tier run remains pending independent review; direct ext4 data image must be used.
