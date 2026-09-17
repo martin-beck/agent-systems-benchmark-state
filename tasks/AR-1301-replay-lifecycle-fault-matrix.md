@@ -8,7 +8,7 @@
     "AR-1300"
   ],
   "id": "AR-1301",
-  "next_action": "Independently review PR #221 exact head 64eb03e5bf052d3cc40bc3a280e79b0abbb6ad4e, the explicit follow-up to merged PR #219 (base 18698e48ce86229a387740fdd690dd79866e1755). GitHub reports 12/12 checks green and MERGEABLE/CLEAN, but no review approval is recorded. Verify retained approved-KVM matrix evidence and exact ASB scope, then merge only through protected workflow; perform exact-main post-merge verification and reconcile.",
+  "next_action": "PR #221 exact head 64eb03e5bf052d3cc40bc3a280e79b0abbb6ad4e is blocked by independent qualification review: hosted-portability evidence is non-qualification; run_supervised_fault lacks a real StrictReplayService/relay listener; positive-path identity/response parity and cause-specific provider/descendant egress-denial fault evidence are unproven. Implement real runtime-owned service/listener fixtures and distinct cause assertions through the approved runner, rerun the complete matrix and exact-head CI, obtain independent approval, then protected-merge and post-merge reconcile.",
   "observed_branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "observed_dirty": 0,
   "observed_head": "dd5bfb8dfea08331bb5ee62ddbdee07ad6fb8e7c",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 297,
+  "task_revision": 298,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T21:22:46+00:00",
+  "updated_at": "2026-09-17T21:26:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -838,3 +838,8 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
 - 2026-09-17T21:22:46+00:00: Reconciled stale AR-1301 action from merged PR #219/dd5bfb8 to live
   follow-up PR #221/64eb03e5bf05. Claimed solely for independent review and evidence reconciliation;
   no merge authorized.
+
+- 2026-09-17T21:26:32+00:00: Independent review blocker recorded: PR #221 checks are green/CLEAN but
+  do not establish AR-1301 acceptance. Hosted portability is non-qualification, the fault helper
+  lacks a real StrictReplayService/relay listener, and positive parity plus cause-specific egress
+  denial remain unproven. Preserve PR and do not merge.
