@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 104,
+  "task_revision": 105,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-17T23:31:16+00:00",
+  "updated_at": "2026-09-17T23:31:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -363,3 +363,6 @@ and protected publication sequence.
   user@1000 but cloud-init final emitted no runcmd and no receipt; root cause is inherited
   cloud-init semaphores in the prepared run base. Do not accept this as qualification. Next run uses
   a unique deterministic instance-id/local-hostname plus a newly created overlay.
+
+- 2026-09-17T23:31:24+00:00: Recorded command exit 0; command argv SHA-256
+  15876391cf8a9bbf0d5d9600313ba588da009a54a509288fd8faf61ba0bb89ac.
