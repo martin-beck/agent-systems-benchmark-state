@@ -12,17 +12,17 @@
   "id": "AR-1285",
   "next_action": "Token binding fix is implemented in launch_factory.rs and sandbox.rs; focused launch_factory tests pass 5/5 including mismatched-context rejection. Commit signed/DCO, run locked full gates, force-with-lease push PR #209, then request re-review.",
   "observed_branch": "feature/ar-1285-runtime-launch-factory",
-  "observed_dirty": 2,
-  "observed_head": "9fde4d8a6ff1c820fbfa4fc0214c1e36ea7f86d5",
+  "observed_dirty": 0,
+  "observed_head": "0f876c7ae7fdfdff240a9fd3ad51e79cddaa4ffe",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1285.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a runtime-owned launch factory for authenticated strict-replay CLI execution.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Runtime-owned strict-replay launch factory",
-  "updated_at": "2026-09-17T01:57:38+00:00",
+  "updated_at": "2026-09-17T01:57:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1285-runtime-launch-factory"
 }
 ---
