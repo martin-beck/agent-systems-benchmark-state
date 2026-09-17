@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T05:13:50+00:00",
   "depends_on": [],
   "id": "AR-1289",
-  "next_action": "Promote and claim; reproduce formal/Cargo.lock failure on protected main, determine exact lock drift, and repair the smallest ASB formal gate scope.",
+  "next_action": "Signed lock repair 53981d6 cleanly refreshes formal/Cargo.lock. Rerun complete locked formal suite and applicable formal provenance/policy gates; then independent review and publish exact head.",
   "observed_branch": "fix/ar-1289-formal-lock-gate",
   "observed_dirty": 0,
   "observed_head": "53981d651645594a65aa7e69c9faa28e0770b6a6",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the stale formal Cargo.lock required by hosted exact-head gates.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Repair formal lock gate",
-  "updated_at": "2026-09-17T03:15:57+00:00",
+  "updated_at": "2026-09-17T03:16:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1289-formal-lock-gate"
 }
 ---
@@ -60,3 +60,10 @@ be used with `--locked`. Repair and verify this gate independently of feature AR
 
 - 2026-09-17T03:15:48+00:00: Recorded command exit 0; command argv SHA-256
   8b04d9f94f406362c0ec0821546b3ba121711de8bffa18560b3aa5d08d740899.
+
+- 2026-09-17T03:16:11+00:00: Reproduced protected-main formal command: test suite runs but one
+  bounded acquisition test intermittently fails with Os code 26 Text file busy; isolated rerun
+  passes. cargo generate-lockfile on clean formal manifest produced the exact 40-line dependency
+  checksum/version drift (cfg-if, syn, smallvec, synstructure, unicode-ident, yoke, zerofrom and
+  related edges). Committed only formal/Cargo.lock as signed+DCO 53981d6. Post-repair cargo test
+  --locked --manifest-path formal/Cargo.toml passes all formal suites; worktree clean.

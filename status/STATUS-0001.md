@@ -1605,7 +1605,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1289](../tasks/AR-1289-formal-lock-gate.md): Repair formal lock gate | asb_ar1024_lifecycle_router | Repair the stale formal Cargo.lock required by hosted exact-head gates. | Promote and claim; reproduce formal/Cargo.lock failure on protected main, determine exact lock drift, and repair the smallest ASB formal gate scope. |
+| P0 | [AR-1289](../tasks/AR-1289-formal-lock-gate.md): Repair formal lock gate | asb_ar1024_lifecycle_router | Repair the stale formal Cargo.lock required by hosted exact-head gates. | Signed lock repair 53981d6 cleanly refreshes formal/Cargo.lock. Rerun complete locked formal suite and applicable formal provenance/policy gates; then independent review and publish exact head. |
 | P1 | [AR-1288](../tasks/AR-1288-certificate-chain-authz.md): Runtime certificate issuance and chain validation | asb_ar0909_lifecycle_repair | Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814. | PR #210 is pushed at exact signed head ddcd51b8a4add9d24e1738c771ead956348e4071. Hosted policy failure on prior 0e8d7e2 was fixed by registering control.certificate-identity, adding its bounded fixture, and regenerating docs/CONTRACT_CATALOG.md. Local contract_consistency --run-tests, fmt, locked offline workspace tests, and locked clippy pass; fresh hosted exact-head checks are pending. Do not merge until all required checks and independent review are green. |
 
 ### Open (6)
