@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1293-state-tla-admission",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T06:43:08+00:00",
   "depends_on": [],
   "id": "AR-1293",
   "next_action": "Create a truthful state-repository worktree, audit formal/handoffctl/verify.sh callers, and implement or prove the missing bounded tools/tlc_runner.py interface without touching handoffctl or product code.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "codex-ar1293-tlc-admission-20260917",
   "plan": "../plans/AR-1293.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T04:42:32+00:00",
+  "updated_at": "2026-09-17T04:43:08+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -32,3 +32,5 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T04:42:32+00:00: State-scoped runner successor is independent of product ARs and repairs
   the truthful worktree boundary.
+
+- 2026-09-17T04:43:08+00:00: Claimed by codex-ar1293-tlc-admission-20260917.

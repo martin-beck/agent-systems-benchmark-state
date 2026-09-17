@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Create a truthful state-repository worktree, audit formal/handoffctl/verify.sh callers, and implement or prove the missing bounded tools/tlc_runner.py interface without touching handoffctl or product code. | - |
+| P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Create a truthful state-repository worktree, audit formal/handoffctl/verify.sh callers, and implement or prove the missing bounded tools/tlc_runner.py interface without touching handoffctl or product code. | codex-ar1293-tlc-admission-20260917 |
 
 ## Blocked
 
