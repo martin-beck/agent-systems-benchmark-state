@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the real authenticated strict-replay service and fault matrix missing from PR #221.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Authenticated strict-replay fault-matrix qualification",
-  "updated_at": "2026-09-17T22:04:38+00:00",
+  "updated_at": "2026-09-17T22:05:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1306-authenticated-fault-matrix-qualification"
 }
 ---
@@ -228,3 +228,6 @@ publication, independent review, green exact-head CI, protected merge and post-m
 
 - 2026-09-17T22:04:38+00:00: Recorded command exit 0; command argv SHA-256
   e0e814b48e1909b50ccabd4bb0699237298e6f32cf543810dd57274837794bd9.
+
+- 2026-09-17T22:05:00+00:00: Recorded command exit 0; command argv SHA-256
+  b32d7f6d27223df1388736c47cfbf3be6867d979652e18c16b75a17facee42f1.
