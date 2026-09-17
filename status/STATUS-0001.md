@@ -1605,7 +1605,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1288](../tasks/AR-1288-certificate-chain-authz.md): Runtime certificate issuance and chain validation | asb_ar0909_lifecycle_repair | Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814. | Signed exact head 0e8d7e2 aligns runtime validity with generated schema by rejecting epoch-zero not_before/not_after. Fresh exact-head gates all pass: cargo fmt check, cargo test --offline --locked --workspace, cargo clippy --offline --locked --workspace --all-targets -- -D warnings; certificate tests 7/7 and schema conformance pass. Branch pushed; request final independent review now, then publish only after approval. |
+| P1 | [AR-1288](../tasks/AR-1288-certificate-chain-authz.md): Runtime certificate issuance and chain validation | asb_ar0909_lifecycle_repair | Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814. | PR #210 is pushed at exact signed head ddcd51b8a4add9d24e1738c771ead956348e4071. Hosted policy failure on prior 0e8d7e2 was fixed by registering control.certificate-identity, adding its bounded fixture, and regenerating docs/CONTRACT_CATALOG.md. Local contract_consistency --run-tests, fmt, locked offline workspace tests, and locked clippy pass; fresh hosted exact-head checks are pending. Do not merge until all required checks and independent review are green. |
 
 ### Open (7)
 

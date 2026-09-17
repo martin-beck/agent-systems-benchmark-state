@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-1288",
-  "next_action": "Signed exact head 0e8d7e2 aligns runtime validity with generated schema by rejecting epoch-zero not_before/not_after. Fresh exact-head gates all pass: cargo fmt check, cargo test --offline --locked --workspace, cargo clippy --offline --locked --workspace --all-targets -- -D warnings; certificate tests 7/7 and schema conformance pass. Branch pushed; request final independent review now, then publish only after approval.",
+  "next_action": "PR #210 is pushed at exact signed head ddcd51b8a4add9d24e1738c771ead956348e4071. Hosted policy failure on prior 0e8d7e2 was fixed by registering control.certificate-identity, adding its bounded fixture, and regenerating docs/CONTRACT_CATALOG.md. Local contract_consistency --run-tests, fmt, locked offline workspace tests, and locked clippy pass; fresh hosted exact-head checks are pending. Do not merge until all required checks and independent review are green.",
   "observed_branch": "feature/ar-1288-certificate-chain-authz",
   "observed_dirty": 0,
   "observed_head": "ddcd51b8a4add9d24e1738c771ead956348e4071",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814.",
-  "task_revision": 104,
+  "task_revision": 105,
   "title": "Runtime certificate issuance and chain validation",
-  "updated_at": "2026-09-17T03:11:26+00:00",
+  "updated_at": "2026-09-17T03:12:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1288-certificate-chain-authz"
 }
 ---
@@ -314,3 +314,10 @@ must not reuse unmerged strict-replay or asb-tui branches.
 
 - 2026-09-17T03:11:26+00:00: Recorded command exit 0; command argv SHA-256
   b927f334bf6974a9084049de639ecf53e555468e86c96b20c8045a92d516750b.
+
+- 2026-09-17T03:12:42+00:00: Checkpoint ddcd51b: added
+  crates/asb-control/fixtures/v1/certificate-identity.json, registered control.certificate-identity
+  with asb-control/schema_conformance in contracts/v1/catalog.json, regenerated
+  docs/CONTRACT_CATALOG.md. contract_consistency.py --run-tests passed all registered suites; exact
+  signed/DCO tree clean and pushed. Prior failed baseline command used truncated OID 2fd90557; no
+  product impact.
