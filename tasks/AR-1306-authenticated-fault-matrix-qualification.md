@@ -8,7 +8,7 @@
     "AR-1287"
   ],
   "id": "AR-1306",
-  "next_action": "PR #222 exact head 1a22bc6 is signed/DCO and fixes the malformed provider-egress tuple; local qualified native sandbox_boundary matrix completed 15/15 tests successfully after repair, focused parity repeated 15/15, fmt and clippy pass. Await refreshed exact-head CI and independent native review; do not merge until all checks/review green.",
+  "next_action": "PR #222 exact head af44d47 is signed/DCO with explicit reviewed bubblewrap allowlist and pushed clean. Await all refreshed exact-head CI; then inspect native 15/15 and repeated parity evidence for independent approval. Do not merge before all checks and review are green.",
   "observed_branch": "feature/ar-1306-authenticated-fault-matrix-qualification",
   "observed_dirty": 0,
   "observed_head": "af44d473a3bab40a268986f360693c93e441c418",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the real authenticated strict-replay service and fault matrix missing from PR #221.",
-  "task_revision": 191,
+  "task_revision": 192,
   "title": "Authenticated strict-replay fault-matrix qualification",
-  "updated_at": "2026-09-17T23:10:16+00:00",
+  "updated_at": "2026-09-17T23:10:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1306-authenticated-fault-matrix-qualification"
 }
 ---
@@ -552,3 +552,7 @@ publication, independent review, green exact-head CI, protected merge and post-m
 
 - 2026-09-17T23:10:16+00:00: Recorded command exit 0; command argv SHA-256
   4b1e493df180257fa1f5462cd66c7520c41bc4b7e16f55ee24ac315e501354f8.
+
+- 2026-09-17T23:10:45+00:00: Independent review repair: replaced dynamic bubblewrap 0.9.0-*
+  selection with explicit reviewed revisions 0.9.0-1ubuntu0.2 and 0.9.0-1build1; exact signed commit
+  af44d47 pushed through handoffctl. Refreshed PR CI is running.
