@@ -10,7 +10,7 @@
   "id": "AR-1301",
   "next_action": "Acceptance blocker: direct relay/service negatives are insufficient. Add a supervised authenticated integration using pinned sidecar/supervisor + ReplayRelay + StrictReplayService/adapter for stale, malformed, duplicate, strict mismatch and no-fallback, retaining crash-to-fresh-generation evidence; rerun full locked gates before review/publication.",
   "observed_branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "cf2a7b0315bc7d596dbab9956e8e18a003a381a2",
   "owner": "ar1301_negative_matrix",
   "plan": "../plans/AR-1301.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 134,
+  "task_revision": 135,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T11:25:29+00:00",
+  "updated_at": "2026-09-17T11:25:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
