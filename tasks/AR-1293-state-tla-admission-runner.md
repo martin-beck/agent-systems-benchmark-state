@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T10:54:31+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Rerun pr-publication on the approved VM through a non-interactive, history-expansion-safe console command; the prior attempt never entered verify.sh and produced no attestation. Then run full-exhaustive and record terminal attestation.",
+  "next_action": "Approved VM console path is fixed, but pr-publication now fails at JVM startup with native memory allocation error because host swap is exhausted (100 KiB free) and concurrent VM/worker load remains active. Rerun pr-publication/full-exhaustive only on a clean runner with available swap and the known-good guest JVM; do not alter unrelated workloads.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 95,
+  "task_revision": 96,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T10:36:00+00:00",
+  "updated_at": "2026-09-17T10:36:36+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -344,3 +344,13 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T10:36:00+00:00: Recorded command exit 0; command argv SHA-256
   70b6fc77cb9937cec4ce7c628a4e687484d3f619a7aa21d77e3557e7704afa1d.
+
+- 2026-09-17T10:36:36+00:00: History-safe retry reached verify.sh and validated the pinned TLA jar,
+  but terminal gate failed before TLC model completion: TLC emitted `java.lang.InternalError: Error
+  loading java.security file` with the mounted runtime (environment defect, no attestation). Retried
+  after switching to the VM guest fixed JVM; TLC started and parsed HandoffctlBinding, then failed
+  `insufficient memory for the Java Runtime Environment` / `Native memory allocation (malloc) failed
+  to allocate 16 bytes`, exit 1, with no attestation. Host evidence at retry: SwapFree=100 kB,
+  multiple concurrent QEMU/worker workloads. This is runner capacity/JVM environment failure, not a
+  model or product failure. Focused 10/10, vendor verify, Ruff, mypy remain green; full unittest was
+  running separately and no product/asb-tui changes were made.
