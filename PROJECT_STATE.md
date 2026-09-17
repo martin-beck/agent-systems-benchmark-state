@@ -29,10 +29,10 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35286357727 | `8b98b2037a22` | push | Emulated aarch64 portability | in_progress:- |
+| 35286357727 | `8b98b2037a22` | push | Emulated aarch64 portability | completed:success |
 | 35286357726 | `8b98b2037a22` | push | Formal assurance | completed:success |
 | 35286357725 | `8b98b2037a22` | push | Fault assurance | completed:success |
-| 35286357714 | `8b98b2037a22` | push | Repository quality | in_progress:- |
+| 35286357714 | `8b98b2037a22` | push | Repository quality | completed:success |
 | 35286357708 | `8b98b2037a22` | push | Rust verification | completed:success |
 | 35286357706 | `8b98b2037a22` | push | Hosted portability and native qualification | completed:success |
 | 35286357698 | `8b98b2037a22` | push | Huawei MIT source headers | completed:success |
