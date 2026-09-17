@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 456,
+  "task_revision": 457,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T13:43:37+00:00",
+  "updated_at": "2026-09-17T13:43:52+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1527,3 +1527,7 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   tests pass. Actual VM smoke was not rerun in this lease; prior VM boot reached guest but stalled
   wait-online before preflight. Next action: run one fresh lifecycle with cloud-localds available,
   verify guest UUID mount marker, then execute f1931686c portable-smoke.
+
+- 2026-09-17T13:43:52+00:00: Run one fresh integrated lifecycle from signed seed commit 8342538e4
+  with cloud-localds, verify guest UUID mount marker and then exact f1931686c portable-smoke;
+  capture terminal evidence or release blocked with precise failure.
