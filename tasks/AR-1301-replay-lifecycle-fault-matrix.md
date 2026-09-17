@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T15:18:39+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1287",
     "AR-1300"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "observed_dirty": 0,
   "observed_head": "dd5bfb8dfea08331bb5ee62ddbdee07ad6fb8e7c",
-  "owner": "root",
+  "owner": "",
   "plan": "../plans/AR-1301.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 293,
+  "task_revision": 294,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T13:18:51+00:00",
+  "updated_at": "2026-09-17T14:21:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -822,3 +822,9 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
 
 - 2026-09-17T13:18:51+00:00: Platform blocker resolved and AR resumed. Hosted portability unit tests
   11/11 pass locally; GitHub Platform evidence check is green on dd5bfb8.
+
+- 2026-09-17T14:21:45+00:00: Protected signed merge 18698e48 published from reviewed head dd5bfb8.
+  Independent exact-head review blocks AR completion: native fault matrix directly calls
+  SandboxBackend::spawn instead of runtime-issued ReplayOperation/ReplayLaunchFactory, and approved
+  KVM execution evidence for the full matrix is not retained. Create a successor patch and run it
+  through the approved KVM runner before marking done.
