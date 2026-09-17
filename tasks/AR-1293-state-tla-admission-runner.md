@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1293-state-tla-admission",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T19:35:16+00:00",
+  "claim_expires": "2026-09-17T20:10:51+00:00",
   "depends_on": [],
   "id": "AR-1293",
   "next_action": "Rebuild the clean data image from signed candidate ac971b996, generate required-tier seed, rerun bounded required launcher, and inspect PR result, attestation, and receipt.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 479,
+  "task_revision": 480,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T19:10:41+00:00",
+  "updated_at": "2026-09-17T19:10:51+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -1603,3 +1603,5 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   evidence was present but extraction failed. Candidate ac971b996 replaces this with a launched
   list-filesystems probe (direct /dev/sda, partition fallback /dev/sda1) and adds a regression
   assertion. Focused Ruff, format, mypy, and 23 tests pass; commit is SSH-signed with DCO.
+
+- 2026-09-17T19:10:51+00:00: Heartbeat by codex-ar1293-timeout-repair-20260917.
