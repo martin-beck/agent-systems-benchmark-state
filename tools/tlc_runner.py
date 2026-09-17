@@ -61,6 +61,17 @@ def _digest(path: Path) -> str | None:
         return None
 
 
+def _input_path(value: str, name: str) -> Path:
+    """Resolve one required input without allowing symbolic-link substitution."""
+    raw = Path(value)
+    if raw.is_symlink():
+        raise AdmissionError(f"{name} must not be a symbolic link")
+    resolved = raw.resolve()
+    if not resolved.is_file():
+        raise AdmissionError(f"{name} is missing or not a regular file")
+    return resolved
+
+
 def _git_value(root: Path, *args: str) -> str:
     """Read one small Git identity value with a finite deadline."""
     try:
@@ -320,9 +331,9 @@ def run(args: argparse.Namespace) -> int:
     outcome = job.with_name(job.name.replace(".job.json", ".outcome.json"))
     lock_path = Path(args.admission_lock).resolve()
     _private_directory(lock_path.parent)
-    model = Path(args.model).resolve()
-    config = Path(args.config).resolve()
-    jar = Path(args.jar).resolve()
+    model = _input_path(args.model, "model")
+    config = _input_path(args.config, "config")
+    jar = _input_path(args.jar, "TLC JAR")
     metadir = Path(args.metadir).resolve()
     _private_directory(metadir)
     provenance = _provenance(model, jar, config, metadir)

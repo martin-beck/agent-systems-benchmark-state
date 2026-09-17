@@ -15,6 +15,11 @@ name: handoffctl formal verification
       - "tests/test_handoffctl_vendor.py"
       - "tests/test_sqlite_storage.py"
       - "formal/handoffctl/**"
+      - "tools/tlc_runner.py"
+      - "tools/run_formal_tier.py"
+      - "tools/guest_seed.py"
+      - "tests/test_tlc_runner.py"
+      - "tests/test_formal_launcher.py"
       - ".github/workflows/handoffctl-formal.yml"
   pull_request:
     paths:
@@ -27,6 +32,11 @@ name: handoffctl formal verification
       - "tests/test_handoffctl_vendor.py"
       - "tests/test_sqlite_storage.py"
       - "formal/handoffctl/**"
+      - "tools/tlc_runner.py"
+      - "tools/run_formal_tier.py"
+      - "tools/guest_seed.py"
+      - "tests/test_tlc_runner.py"
+      - "tests/test_formal_launcher.py"
       - ".github/workflows/handoffctl-formal.yml"
 
 permissions:

@@ -57,7 +57,9 @@ class TlcRunnerTests(unittest.TestCase):
         workflow = (ROOT / ".github" / "workflows" / "handoffctl-formal.yml").read_text(
             encoding="utf-8"
         )
-        self.assertIn("run: uv run python tools/run_formal_tier.py --tier full-exhaustive", workflow)
+        self.assertIn(
+            "run: uv run python tools/run_formal_tier.py --tier full-exhaustive", workflow
+        )
         verify = (ROOT / "formal" / "handoffctl" / "verify.sh").read_text(encoding="utf-8")
         launcher = (ROOT / "tools" / "run_formal_tier.py").read_text(encoding="utf-8")
         self.assertIn("TLC_TIMEOUT_SECONDS", launcher)

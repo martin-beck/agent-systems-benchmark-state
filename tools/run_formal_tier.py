@@ -83,6 +83,14 @@ def run(tier: str, *, environ: Mapping[str, str] | None = None) -> int:
     env.update(environment(tier))
     if environ is not None:
         env.update(environ)
+    runtime_root = Path(env["TLC_RUNTIME_ROOT"]).resolve()
+    if not runtime_root.is_relative_to(PROJECT_ROOT):
+        raise ValueError("runtime root must remain under /srv/data/projects")
+    if Path(env["TMPDIR"]).resolve() != runtime_root:
+        raise ValueError("TMPDIR must match the approved runtime root")
+    if not Path(env["TLC_ATTESTATION_PATH"]).resolve().is_relative_to(PROJECT_ROOT):
+        raise ValueError("attestation path must remain under /srv/data/projects")
+    _private_directory(runtime_root)
     command = [
         str(Path(__file__).resolve().parents[1] / "formal/handoffctl/verify.sh"),
         "--tier",

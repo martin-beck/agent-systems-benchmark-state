@@ -1,7 +1,9 @@
 # ASB state TLC clean 32 GiB VM runner
 
-This disposable qualification runner is provisioned under
-`/srv/data/projects/asb-state-tlc-vm-32g` for AR-1302.
+This disposable qualification runner was provisioned under
+`/srv/data/projects/asb-state-tlc-vm-32g` for AR-1302. Its receipt is
+historical evidence only and is not reused as AR-1307 qualification evidence;
+AR-1307 requires a fresh exact-head run through the canonical launcher.
 
 Properties:
 
