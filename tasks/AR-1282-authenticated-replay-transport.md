@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Land the authenticated runtime-to-CLI replay transport foundation.",
-  "task_revision": 74,
+  "task_revision": 75,
   "title": "Authenticated replay transport foundation",
-  "updated_at": "2026-09-17T00:50:25+00:00",
+  "updated_at": "2026-09-17T00:50:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1282-authenticated-replay-transport"
 }
 ---
@@ -241,3 +241,6 @@ claim primary command execution.
   unrelated concurrent artifact/process infrastructure condition. Full workspace test suite remained
   green (primary 173 passed, 1 ignored; all observed suites green). PR #208 branch is pushed at
   b44be60; prior CI is invalidated and fresh exact-head checks are required.
+
+- 2026-09-17T00:50:27+00:00: Recorded command exit 0; command argv SHA-256
+  ecd8e1a9c5b91aec8ffa0436c3cee9ca9a1c5f8eea3ade621c126c916f2eb43c.
