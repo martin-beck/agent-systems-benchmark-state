@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1304-required-tier-qemu-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T17:23:55+00:00",
+  "claim_expires": "2026-09-17T17:17:24+00:00",
   "depends_on": [
     "AR-1302"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Create a clean required-containment QEMU runner for formal publication evidence.",
-  "task_revision": 272,
+  "task_revision": 273,
   "title": "Required-tier QEMU user-bus runner",
-  "updated_at": "2026-09-17T16:44:27+00:00",
+  "updated_at": "2026-09-17T16:47:24+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1304-required-tier-qemu-runner"
 }
 ---
@@ -891,3 +891,5 @@ logs, or claim full-exhaustive evidence before required attestation is green.
   ca9c4d93...6c1c11; final data image digest 589b67f4...a056cf and seed digest 08b9a41d...9e01d.
   Focused tests 4 passed, full pytest 138 plus 85 subtests passed, Ruff and mypy passed. No network
   fallback or gate weakening.
+
+- 2026-09-17T16:47:24+00:00: Heartbeat by codex-ar1304-required-runner-20260917.
