@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1291.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Repair missing successor pointers on superseded dependency tasks.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Repair superseded dependency pointers",
-  "updated_at": "2026-09-17T04:15:00+00:00",
+  "updated_at": "2026-09-17T04:14:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1291-superseded-pointers"
 }
 ---
@@ -26,3 +26,5 @@ AR-1010 cannot pass dependency validation because legacy superseded tasks AR-105
 AR-1056, AR-1058, and AR-1061 lack explicit `superseded_by` pointers. This state-only repair
 records the successor chain already documented in each task's next action. It must not alter
 product or handoffctl code.
+
+- 2026-09-17T04:14:10+00:00: state-only repair for documented superseded successor chain
