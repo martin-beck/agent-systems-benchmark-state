@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Build fresh direct-ext4 data image populated from exact reviewed candidate, record digest/provenance, then rerun fresh required tier and validate extracted attestation commit. | codex-ar1293-timeout-repair-20260917 |
+| P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Run fresh required-tier launcher against this clean image, verify direct debugfs attestation commit equals 519ba3dd4, receipt/image digest and serial; do not run full until required evidence is green. | codex-ar1293-timeout-repair-20260917 |
 
 ## Blocked
 

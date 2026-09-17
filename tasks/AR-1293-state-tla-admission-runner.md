@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T18:59:15+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Build fresh direct-ext4 data image populated from exact reviewed candidate, record digest/provenance, then rerun fresh required tier and validate extracted attestation commit.",
+  "next_action": "Run fresh required-tier launcher against this clean image, verify direct debugfs attestation commit equals 519ba3dd4, receipt/image digest and serial; do not run full until required evidence is green.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 356,
+  "task_revision": 357,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T18:29:40+00:00",
+  "updated_at": "2026-09-17T18:30:18+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -1210,3 +1210,10 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T18:29:40+00:00: Recorded command exit 0; command argv SHA-256
   47b5d1a378ab82bd108c4b6190b2f8bea191cf0323ccb0bab7be66e3e9bbad05.
+
+- 2026-09-17T18:30:18+00:00: Fresh data image rebuilt deterministically at the private runner path
+  from a new ext4 filesystem using the pinned data UUID; copied exact candidate state worktree and
+  bare git clone, with top-level state/git/jvm/tla2tools.jar. Bare git HEAD resolves candidate
+  519ba3dd4e0298ec443e290b007f6cd7e36152b8. Unmounted and e2fsck -fy then e2fsck -fn both clean.
+  Image SHA256 b593012b198396f58d1cc00c5034610783c544cdbc948eac389e3c927f42b027. Previous image/run
+  was rejected for stale 39c attestation and corrupt/recovery-needed filesystem; no reuse.
