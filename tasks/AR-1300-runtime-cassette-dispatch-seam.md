@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect runtime-issued cassette operations to the real strict-replay dispatch path.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Runtime-to-replay cassette dispatch seam",
-  "updated_at": "2026-09-17T07:19:00+00:00",
+  "updated_at": "2026-09-17T07:19:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1300-runtime-cassette-dispatch-seam"
 }
 ---
@@ -166,3 +166,6 @@ fixtures/tests. Do not modify asb-tui or coordinator implementation.
   libs 145 tests green, full locked workspace suite green (with only pre-existing environment-gated
   ignores), clippy/rustdoc/release build green. Earlier command failures and compile defect were
   separately checkpointed.
+
+- 2026-09-17T07:19:09+00:00: Recorded command exit 0; command argv SHA-256
+  9ceb7f0d8269380f98e3c07da67513c54e2dd1461affec926838bb05c816f0cf.
