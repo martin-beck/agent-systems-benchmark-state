@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect authenticated replay transport to the runtime-owned primary strict-replay lifecycle.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Runtime-owned strict-replay lifecycle execution",
-  "updated_at": "2026-09-17T01:25:19+00:00",
+  "updated_at": "2026-09-17T01:25:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1284-strict-replay-lifecycle"
 }
 ---
@@ -78,3 +78,6 @@ record the exact blocker and split a further dependency-safe successor instead o
 
 - 2026-09-17T01:25:19+00:00: Recorded command exit 0; command argv SHA-256
   771eac905e8dcf88a2538b3b9d4dba74c7c07db8a1a8c4748df8f9c8e0ace411.
+
+- 2026-09-17T01:25:47+00:00: Recorded command exit 0; command argv SHA-256
+  36c571ad891aa3f703a376cee9ea11d1c6f71c532e6ba09b743b20cfa7d4d72e.
