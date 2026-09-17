@@ -3,7 +3,9 @@
   "branch": "feature/ar-1305-image-native-user-session",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1302"],
+  "depends_on": [
+    "AR-1302"
+  ],
   "id": "AR-1305",
   "next_action": "Promote after review; qualify dbus-user-session and systemd user-manager support in a fresh offline guest image, then hand the immutable image to AR-1304.",
   "observed_branch": "",
@@ -13,11 +15,11 @@
   "plan": "../plans/AR-1305.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Qualify image-native D-Bus user-session support for required TLC containment.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Image-native user-session support",
-  "updated_at": "2026-09-17T15:07:00+00:00",
+  "updated_at": "2026-09-17T15:06:59+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1305-image-native-user-session"
 }
 ---
@@ -31,3 +33,5 @@ limits and fail-closed behavior remain unchanged.
 
 - 2026-09-17T15:07:00+00:00: Created from repeated AR-1304 required-tier
   transport failures; no portable fallback is authorized.
+
+- 2026-09-17T15:06:59+00:00: AR-1302 done; image repair unblocks AR-1304
