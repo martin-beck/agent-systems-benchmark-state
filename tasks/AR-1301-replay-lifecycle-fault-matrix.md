@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1301.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 290,
+  "task_revision": 291,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T13:15:13+00:00",
+  "updated_at": "2026-09-17T13:18:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -814,3 +814,6 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
   required CI checks are green. Preserve next_action: repair/track CI infrastructure, then rerun
   Platform evidence and resume exact-head merge only after green. No product weakening or further
   blind reruns.
+
+- 2026-09-17T13:18:13+00:00: Hosted platform evidence blocker resolved at exact PR #219 head
+  dd5bfb8; Platform evidence is green. Resume for remaining exact-head checks and protected merge.
