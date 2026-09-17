@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 321,
+  "task_revision": 322,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T12:16:07+00:00",
+  "updated_at": "2026-09-17T12:17:46+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1053,3 +1053,7 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   powered off cleanly and fsck completed. Remaining blocker is the guest systemd user manager
   refusing the TLC transient unit despite the session bus being active; no gate was weakened or
   success claimed.
+
+- 2026-09-17T12:17:46+00:00: Final image repair completed: user@1000 and asb-session-bus started
+  before cloud-final, but the exact required transient systemd containment still failed with Process
+  org.freedesktop.systemd1 status 1 and no attestation. Keep blocked; no blind rerun.
