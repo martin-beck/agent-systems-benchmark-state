@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1304",
-  "next_action": "Independent exact-head review of signed 9111d2f2a and 8a815690c; then hand required pr-publication evidence to AR-1293. Do not run full-exhaustive until coordinator accepts the attestation.",
+  "next_action": "Independent exact-head review of signed 920356c60, 9111d2f2a, and 8a815690c; then hand required pr-publication evidence to AR-1293. Do not run full-exhaustive until coordinator accepts the attestation.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Create a clean required-containment QEMU runner for formal publication evidence.",
-  "task_revision": 155,
+  "task_revision": 156,
   "title": "Required-tier QEMU user-bus runner",
-  "updated_at": "2026-09-17T15:58:02+00:00",
+  "updated_at": "2026-09-17T15:58:32+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1304-required-tier-qemu-runner"
 }
 ---
@@ -523,3 +523,10 @@ logs, or claim full-exhaustive evidence before required attestation is green.
 
 - 2026-09-17T15:58:02+00:00: Recorded command exit 0; command argv SHA-256
   8f60dfc8740e3af4d847e8c52f54ad4c1fa853ff893705be397bce51319d8124.
+
+- 2026-09-17T15:58:32+00:00: Final hygiene pass complete: corrected the literal escaped newline in
+  the SPDX/ruff header of tools/required_seed.py. Focused seed tests pass 2/2; Ruff check and format
+  check pass. Signed+DCO fix commit is 920356c60. Existing PR4 required publication evidence remains
+  green and unchanged: REQUIRED_TRANSIENT_RC=0, PR_PUBLICATION_RC=0, six models success, exact
+  candidate 39c8933f5, required systemd cgroup bounds, no network, no host mounts. Lease renewed
+  before this pass; AR remains held for independent review.
