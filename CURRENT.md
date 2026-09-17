@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1296](tasks/AR-1296-state-quality-baseline.md): State quality-gate baseline | Restore strict state-repository mypy and coverage quality gates without weakening thresholds. | Repair explicit tools package identity and add bounded offline upgrade-command coverage until strict mypy and the unchanged 95% coverage gate pass. | asb-ar1296-state-tests |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -49,6 +43,7 @@ Never edit this file directly.
 | P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Re-run the exact state and formal gates after the host has sufficient process/thread capacity and after the pre-existing vendor test baseline is reconciled to coordinator v0.3.7; candidate repair 53dd96389 is ready for independent review, but do not publish while unittest vendor failures or TLC VM resource errors remain. | - |
 | P0 | [AR-1294](tasks/AR-1294-state-gate-baseline.md): State formal-gate baseline integrity | Restore vendor and formal admission baseline integrity needed to qualify AR-1293. | Audit the vendor lock/digest mismatch and root-owned TLC admission lock; repair only through immutable provenance and owner-safe lock handling, then rerun full state/formal gates. | - |
 | P0 | [AR-1295](tasks/AR-1295-vendor-fixture-v037.md): Coordinator vendor v0.3.7 fixture alignment | Align stale coordinator vendor tests with the verified immutable v0.3.7 pin. | Update stale coordinator vendor test fixtures from v0.3.5 to verified immutable v0.3.7 and rerun the complete state test suite without changing vendor or handoffctl code. | - |
+| P0 | [AR-1296](tasks/AR-1296-state-quality-baseline.md): State quality-gate baseline | Restore strict state-repository mypy and coverage quality gates without weakening thresholds. | Repair explicit tools package identity and add bounded offline upgrade-command coverage until strict mypy and the unchanged 95% coverage gate pass. | - |
 | P1 | [AR-0604](tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Obtain coordinator-authorized native x86_64 runner/container and immutable CSB source root plus interpreter bytes matching Python 3.12.3 SHA-256 1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118. Docker is currently inaccessible; qemu cannot substitute native x86 evidence. Then rerun native_boundary and record A/B/overhead evidence. | - |
 | P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Control genuine native platform capacity lifecycle. | Formal assurance owner AR-0877/AR-0907 must repair the pinned TLA artifact provenance mismatch (downloaded byte count/hash) before PR #119 can be requalified; AR-0704 native controller requires no source change. | - |
 | P1 | [AR-0814](tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Create and link a focused successor AR for trusted route/IP and ancestor authority: independently authenticate route/peer binding and ancestor provenance; test wrong-route rejection, route rotation/revocation, and local recovery. AR-1288 certificate issuance/chain validation is complete and merged at signed main 2de393a05cc3c65f3495238abb19408e8218e483. Preserve AR-0814 exact clean head 29cfa19323a0ceb124438854d73f664ae2b86dcc until that successor is complete. | - |

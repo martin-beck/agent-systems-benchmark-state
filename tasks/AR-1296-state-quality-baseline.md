@@ -2,22 +2,22 @@
 {
   "branch": "repair/ar-1296-state-quality-baseline",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T07:18:15+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1296",
   "next_action": "Repair explicit tools package identity and add bounded offline upgrade-command coverage until strict mypy and the unchanged 95% coverage gate pass.",
   "observed_branch": "repair/ar-1296-state-quality-baseline",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "asb-ar1296-state-tests",
+  "owner": "",
   "plan": "../plans/AR-1296.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Restore strict state-repository mypy and coverage quality gates without weakening thresholds.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "State quality-gate baseline",
-  "updated_at": "2026-09-17T05:26:32+00:00",
+  "updated_at": "2026-09-17T05:26:47+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1296-quality"
 }
 ---
@@ -118,3 +118,11 @@ alter handoffctl semantics without tests.
 
 - 2026-09-17T05:26:32+00:00: Recorded command exit 1; command argv SHA-256
   672bc8b0e4b5dc6f601d619f56873dbf2ab9087c955c7d8adcba7b10d3cff76c.
+
+- 2026-09-17T05:26:47+00:00: Implemented explicit tools package identity via tools/__init__.py and
+  added bounded offline positive/negative upgrade contract tests in tests/test_upgrade_contracts.py.
+  Signed DCO commit 8aa9e0c4c; strict mypy, Ruff, vendor verification, source headers, lizard, and
+  coverage all pass; coverage is 95% with unchanged floor. Full state schema/generated-state gate
+  remains blocked by pre-existing task metadata/schema errors across many ARs (stale missing
+  observed_head and unsupported superseded_by fields) and existing long next_action values. No
+  handoffctl semantics, product, asb-tui, formal, or TLC changes.

@@ -7,13 +7,13 @@
 
 ## Portfolio overview
 
-**324 ARs tracked** across 6 active status categories.
+**324 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
-| **Blocked** | Cannot proceed until its recorded blocker clears | 50 |
+| **Blocked** | Cannot proceed until its recorded blocker clears | 51 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 205 |
@@ -389,7 +389,7 @@ flowchart LR
         AR_1293["AR-1293 - Blocked"]:::status_blocked
         AR_1294["AR-1294 - Blocked"]:::status_blocked
         AR_1295["AR-1295 - Blocked"]:::status_blocked
-        AR_1296["AR-1296 - In progress"]:::status_in_progress
+        AR_1296["AR-1296 - Blocked"]:::status_blocked
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1615,13 +1615,7 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1296](../tasks/AR-1296-state-quality-baseline.md): State quality-gate baseline | asb-ar1296-state-tests | Restore strict state-repository mypy and coverage quality gates without weakening thresholds. | Repair explicit tools package identity and add bounded offline upgrade-command coverage until strict mypy and the unchanged 95&#37; coverage gate pass. |
-
-### Blocked (50)
+### Blocked (51)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1661,6 +1655,7 @@ flowchart LR
 | P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Unclaimed | Repair the state-repository TLA admission runner and truthful worktree metadata. | Re-run the exact state and formal gates after the host has sufficient process/thread capacity and after the pre-existing vendor test baseline is reconciled to coordinator v0.3.7; candidate repair 53dd96389 is ready for independent review, but do not publish while unittest vendor failures or TLC VM resource errors remain. |
 | P0 | [AR-1294](../tasks/AR-1294-state-gate-baseline.md): State formal-gate baseline integrity | Unclaimed | Restore vendor and formal admission baseline integrity needed to qualify AR-1293. | Audit the vendor lock/digest mismatch and root-owned TLC admission lock; repair only through immutable provenance and owner-safe lock handling, then rerun full state/formal gates. |
 | P0 | [AR-1295](../tasks/AR-1295-vendor-fixture-v037.md): Coordinator vendor v0.3.7 fixture alignment | Unclaimed | Align stale coordinator vendor tests with the verified immutable v0.3.7 pin. | Update stale coordinator vendor test fixtures from v0.3.5 to verified immutable v0.3.7 and rerun the complete state test suite without changing vendor or handoffctl code. |
+| P0 | [AR-1296](../tasks/AR-1296-state-quality-baseline.md): State quality-gate baseline | Unclaimed | Restore strict state-repository mypy and coverage quality gates without weakening thresholds. | Repair explicit tools package identity and add bounded offline upgrade-command coverage until strict mypy and the unchanged 95&#37; coverage gate pass. |
 | P1 | [AR-0604](../tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Unclaimed | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Obtain coordinator-authorized native x86_64 runner/container and immutable CSB source root plus interpreter bytes matching Python 3.12.3 SHA-256 1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118. Docker is currently inaccessible; qemu cannot substitute native x86 evidence. Then rerun native_boundary and record A/B/overhead evidence. |
 | P1 | [AR-0704](../tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | Formal assurance owner AR-0877/AR-0907 must repair the pinned TLA artifact provenance mismatch (downloaded byte count/hash) before PR #119 can be requalified; AR-0704 native controller requires no source change. |
 | P1 | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Unclaimed | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Create and link a focused successor AR for trusted route/IP and ancestor authority: independently authenticate route/peer binding and ancestor provenance; test wrong-route rejection, route rotation/revocation, and local recovery. AR-1288 certificate issuance/chain validation is complete and merged at signed main 2de393a05cc3c65f3495238abb19408e8218e483. Preserve AR-0814 exact clean head 29cfa19323a0ceb124438854d73f664ae2b86dcc until that successor is complete. |
@@ -1701,3 +1696,4 @@ flowchart LR
 | P0 | [AR-1211](../tasks/AR-1211-initial-setup-first-agent.md): Initial setup and first agent connection tutorial | Unclaimed | Teach first-time users to initialize ASB and add the first agent connection. | Implement the syntax-checked tutorial for ASB initialization, first-agent registration, and agent connection setup. |
 | P0 | [AR-1212](../tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Unclaimed | Teach users to test configured-agent benchmark eligibility without running an agent. | Implement the offline tutorial for checking agent benchmark readiness under the current configuration. |
 | P0 | [AR-1213](../tasks/AR-1213-benchmark-and-shared-config.md): Benchmark run and shared-agent configuration tutorials | Unclaimed | Teach benchmark execution and extending agents with one shared configuration. | Implement syntax-checked tutorials for one benchmark run and atomic shared configuration across selected agents. |
+| P0 | [AR-1214](../tasks/AR-1214-record-replay.md): LLM response record/replay tutorial | Unclaimed | Teach privacy-safe LLM response recording and strict offline replay. | Implement the syntax-checked record/replay tutorial with synthetic cassette fixtures and no-network CI. |
