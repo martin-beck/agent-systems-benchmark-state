@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute strict-replay cassettes through the runtime-owned supervised lifecycle.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Supervised strict-replay cassette lifecycle",
-  "updated_at": "2026-09-17T02:20:43+00:00",
+  "updated_at": "2026-09-17T02:20:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1286-supervised-replay-lifecycle"
 }
 ---
@@ -47,3 +47,6 @@ do not touch or claim asb-tui behavior.
   protected main 2fd9055. Initial handoffctl bootstrap from canonical checkout was rejected because
   invocation worktree did not yet match the declared AR worktree; created the declared worktree from
   origin/main, and all subsequent product commands will run there through handoffctl.
+
+- 2026-09-17T02:20:47+00:00: Recorded command exit 0; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
