@@ -83,8 +83,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1282-authenticated-replay-transport-integration` | `DETACHED` | `69e8b064d312` | 0 | behind 8, ahead 0 |
 | `agent-systems-benchmark-ar-1283-formal-lockfile` | `feature/ar-1283-formal-lockfile` | `69e8b064d312` | 0 | behind 8, ahead 0 |
 | `agent-systems-benchmark-ar-1284-strict-replay-lifecycle` | `feature/ar-1284-strict-replay-lifecycle` | `f9ddf7ef6b3b` | 0 | behind 0, ahead 0 |
-| `agent-systems-benchmark-ar-1285-runtime-launch-factory` | `feature/ar-1285-runtime-launch-factory` | `daba285cdc61` | 3 | behind 0, ahead 2 |
-| changed files | - | - | - | `crates/asb-cli/tests/workflow_transcript.rs`, `docs/examples/asb-cli-workflow-v1.json`, `docs/examples/asb-cli-workflow-v1.provenance.json` |
+| `agent-systems-benchmark-ar-1285-runtime-launch-factory` | `feature/ar-1285-runtime-launch-factory` | `9fde4d8a6ff1` | 0 | behind 0, ahead 3 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 517, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 620, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 514, ahead 0 |
