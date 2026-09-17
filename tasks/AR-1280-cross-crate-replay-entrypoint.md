@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1280-cross-crate-replay-entrypoint",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T02:13:29+00:00",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1280-cross-crate-replay-entrypoint",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "asb_ar1280_runtime_cli_entrypoint",
   "plan": "../plans/AR-1280.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Implement the cross-crate runtime process entrypoint for primary strict replay.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Cross-crate replay process entrypoint",
-  "updated_at": "2026-09-17T00:13:14+00:00",
+  "updated_at": "2026-09-17T00:13:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1280-cross-crate-replay-entrypoint"
 }
 ---
@@ -33,3 +33,5 @@ prior blocked evidence, but do not substitute another audit-only result.
 
 - 2026-09-17T00:13:14+00:00: Dependencies AR-1237, AR-1238, and AR-1239 are done. Prior ARs only
   establish the missing seam; this AR must implement the cross-crate entrypoint from protected main.
+
+- 2026-09-17T00:13:29+00:00: Claimed by asb_ar1280_runtime_cli_entrypoint.
