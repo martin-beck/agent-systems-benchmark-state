@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-17T22:39:40+00:00",
+  "updated_at": "2026-09-17T22:39:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -158,3 +158,6 @@ and protected publication sequence.
   exports TLC_JAR_PATH/SHA256 directly, and switched default admission lock to the project-wide
   owner-private lock. Added symlink rejection for private directories and updated seed tests.
   Changes remain uncommitted pending full gates.
+
+- 2026-09-17T22:39:54+00:00: Recorded command exit 1; command argv SHA-256
+  283ea296807f61d25a86cd8528f4863e1c7f1906cdc3341cb81a48f42d122c32.
