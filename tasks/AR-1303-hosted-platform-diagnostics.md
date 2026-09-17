@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1303.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Add privacy-safe fixed diagnostics for hosted platform evidence failures.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Privacy-safe hosted platform failure diagnostics",
-  "updated_at": "2026-09-17T12:35:26+00:00",
+  "updated_at": "2026-09-17T12:45:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1303-hosted-platform-diagnostics"
 }
 ---
@@ -195,3 +195,7 @@ native qualification route. This AR must not modify runtime behavior or asb-tui.
   tla_artifact_acquisition (jobs 105201914173 and controlled rerun 105203375737). Platform evidence
   and all other completed checks pass. Resume only after CI infrastructure repair and fresh
   all-green exact-head CI; do not weaken gates or change AR-1303 product code.
+
+- 2026-09-17T12:45:33+00:00: Resume infrastructure-only follow-up: diagnose repeated hosted ETXTBSY
+  formal-runner failures without changing product behavior or gates; publish exact sanitized
+  evidence and retry only after repair.
