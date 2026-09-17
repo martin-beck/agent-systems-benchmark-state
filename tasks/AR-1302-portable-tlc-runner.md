@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T12:40:57+00:00",
   "depends_on": [],
   "id": "AR-1302",
-  "next_action": "Run a fresh disposable v10 guest as user asb with XDG_RUNTIME_DIR and DBUS_SESSION_BUS_ADDRESS set, TLC_CGROUP_MODE=required, pinned offline JDK/JAR, and capture terminal attestation; then stop stale generic VM 1928184 through handoffctl and record cleanup.",
+  "next_action": "Repair the image unit ordering/activation: require and order After=user@1000.service, use a non-forking Type=simple dbus session daemon with a bounded readiness check on /run/user/1000/bus before cloud-final; then run exactly one clean required full-exhaustive attempt and capture terminal attestation. Do not reuse the stale v10 action or rerun blindly.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 307,
+  "task_revision": 308,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T12:11:12+00:00",
+  "updated_at": "2026-09-17T12:11:39+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -994,3 +994,11 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
 
 - 2026-09-17T12:11:12+00:00: Recorded command exit 0; command argv SHA-256
   4a558995c70694f9aa845fc2546212a09840f0125b3843a9ed68ebe53c517d07.
+
+- 2026-09-17T12:11:39+00:00: Diagnosis: final serial evidence shows user-runtime-dir@1000 finished,
+  then asb-session-bus.service started concurrently with user@1000 and failed before cloud-final;
+  user@1000 later succeeded. The image unit is ordered only After=user-runtime-dir@1000, not
+  After=user@1000, and uses runuser plus a forking session dbus daemon from a system oneshot; this
+  race/activation design is the concrete likely failure. Offline mount inspection was unavailable
+  because the boot-tested qcow2 remained dirty, so no additional image mutation was made. Stale
+  ownerless AR-1293 QEMU cleanup was performed by coordinator.
