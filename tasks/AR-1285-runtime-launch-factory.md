@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a runtime-owned launch factory for authenticated strict-replay CLI execution.",
-  "task_revision": 79,
+  "task_revision": 80,
   "title": "Runtime-owned strict-replay launch factory",
-  "updated_at": "2026-09-17T01:56:37+00:00",
+  "updated_at": "2026-09-17T01:57:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1285-runtime-launch-factory"
 }
 ---
@@ -270,3 +270,6 @@ separate successor rather than claiming strict-replay execution.
   command digests; attestation now receives input/lease/cassette and derives this binding. Focused
   runtime suite passes 5/5. Prior exit-1 was the expected handoffctl cargo-fmt cwd/manifest
   invocation failure; rerun with explicit worktree manifest succeeded.
+
+- 2026-09-17T01:57:02+00:00: Recorded command exit 0; command argv SHA-256
+  5aef6359fe19c1c029e156b03ef5e2c60dc4369548d3ba378e563862ff9be31e.
