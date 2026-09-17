@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T18:19:32+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Run source headers/Ruff/mypy/privacy and independent diff review; commit complete guest seed and tests signed+DCO, then request exact-head review before VM.",
+  "next_action": "Run privacy/diff review, commit complete guest seed and tests signed+DCO, verify signature/DCO, then request independent exact-head review before any VM.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 263,
+  "task_revision": 264,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T17:50:27+00:00",
+  "updated_at": "2026-09-17T17:50:39+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -906,3 +906,9 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T17:50:27+00:00: Recorded command exit 0; command argv SHA-256
   cf7282b4747951ef3d06bb086a04767973f1e27707611c760b6c7f718cec013a.
+
+- 2026-09-17T17:50:39+00:00: Quality gates: source headers passed; Ruff passed; first mypy
+  invocation failed only because the command omitted MYPYPATH for the repository's local
+  tier_profiles import (missing import tier_profiles), then corrected MYPYPATH=.../formal/handoffctl
+  and mypy passed with no issues. This is an invocation/environment correction, not a product
+  defect. Focused guest-seed tests remain 20/20.

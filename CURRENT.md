@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Run source headers/Ruff/mypy/privacy and independent diff review; commit complete guest seed and tests signed+DCO, then request exact-head review before VM. | codex-ar1293-timeout-repair-20260917 |
+| P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Run privacy/diff review, commit complete guest seed and tests signed+DCO, verify signature/DCO, then request independent exact-head review before any VM. | codex-ar1293-timeout-repair-20260917 |
 
 ## Blocked
 
