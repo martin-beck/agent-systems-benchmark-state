@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 356,
+  "task_revision": 357,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T12:49:38+00:00",
+  "updated_at": "2026-09-17T12:50:20+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1184,3 +1184,7 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   prlimit, with no attestation. Required-pr/full-exhaustive was not launched. Runner is stopped;
   next action is a capacity-safe portable containment repair followed by successful portable-smoke
   evidence.
+
+- 2026-09-17T12:50:20+00:00: Resume distinct capacity repair: preserve bounded portable containment
+  but eliminate JVM native allocation failure; rerun exact preflight and portable-smoke before any
+  required/full tier.
