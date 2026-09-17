@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 177,
+  "task_revision": 178,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T11:37:36+00:00",
+  "updated_at": "2026-09-17T11:37:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -506,3 +506,6 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
 - 2026-09-17T11:37:36+00:00: Published PR #219 from clean exact e98293a after independent review.
   Remote branch push and PR creation were performed through handoffctl. Awaiting exact-head CI; no
   merge yet.
+
+- 2026-09-17T11:37:45+00:00: Recorded command exit 8; command argv SHA-256
+  692eb759baea7146573fa037797ec9330bdc03edccdf287567e9debb3b6e3027.
