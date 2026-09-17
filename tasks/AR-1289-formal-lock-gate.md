@@ -2,7 +2,7 @@
 {
   "branch": "fix/ar-1289-formal-lock-gate",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T05:13:50+00:00",
+  "claim_expires": "2026-09-17T05:17:44+00:00",
   "depends_on": [],
   "id": "AR-1289",
   "next_action": "Signed lock repair 53981d6 cleanly refreshes formal/Cargo.lock. Rerun complete locked formal suite and applicable formal provenance/policy gates; then independent review and publish exact head.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the stale formal Cargo.lock required by hosted exact-head gates.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Repair formal lock gate",
-  "updated_at": "2026-09-17T03:16:11+00:00",
+  "updated_at": "2026-09-17T03:17:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1289-formal-lock-gate"
 }
 ---
@@ -67,3 +67,5 @@ be used with `--locked`. Repair and verify this gate independently of feature AR
   checksum/version drift (cfg-if, syn, smallvec, synstructure, unicode-ident, yoke, zerofrom and
   related edges). Committed only formal/Cargo.lock as signed+DCO 53981d6. Post-repair cargo test
   --locked --manifest-path formal/Cargo.toml passes all formal suites; worktree clean.
+
+- 2026-09-17T03:17:44+00:00: Heartbeat by asb_ar1024_lifecycle_router.
