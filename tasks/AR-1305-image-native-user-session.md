@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1305.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Qualify image-native D-Bus user-session support for required TLC containment.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Image-native user-session support",
-  "updated_at": "2026-09-17T15:10:02+00:00",
+  "updated_at": "2026-09-17T15:10:51+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1305-image-native-user-session"
 }
 ---
@@ -71,3 +71,6 @@ limits and fail-closed behavior remain unchanged.
   transient qualification produced. Next action: provide an approved offline root-image
   customization tool or prebuilt immutable image pipeline, then install this exact package and rerun
   required transient qualification.
+
+- 2026-09-17T15:10:51+00:00: Install image customization tooling and build fresh root image from
+  staged dbus-user-session package
