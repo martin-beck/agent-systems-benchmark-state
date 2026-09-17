@@ -10,17 +10,17 @@
   "id": "AR-1306",
   "next_action": "Repair commit 1ab79c1 remains the exact pushed PR head; source tree is clean after removing the temporary mandatory-env assertion. Qualified native-platform workflow explicitly invokes the full sandbox_boundary test binary with ASB_REQUIRE_NATIVE_SANDBOX=1 (native-platforms.yml lines 57/71), so authenticated matrix executes there and native capability fails closed. Local focused native matrix was green under env; rerun after coordinator lock clears, then retain PR CI monitoring.",
   "observed_branch": "feature/ar-1306-authenticated-fault-matrix-qualification",
-  "observed_dirty": 1,
-  "observed_head": "1ab79c1faaff483bd419ca4d2d184201b8335566",
+  "observed_dirty": 0,
+  "observed_head": "a6c0a039ed8a9c362c0c9ca2a3bc1cbb38c89f95",
   "owner": "codex-ar1306-auth-listener-20260917",
   "plan": "../plans/AR-1306.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the real authenticated strict-replay service and fault matrix missing from PR #221.",
-  "task_revision": 106,
+  "task_revision": 107,
   "title": "Authenticated strict-replay fault-matrix qualification",
-  "updated_at": "2026-09-17T22:22:40+00:00",
+  "updated_at": "2026-09-17T22:22:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1306-authenticated-fault-matrix-qualification"
 }
 ---
