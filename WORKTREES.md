@@ -7,8 +7,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark` | `main` | `bd7d10d4a760` | 4 | behind 451, ahead 1 |
 | changed files | - | - | - | `docs/QUALITY_GATES.md`, `tools/quality/check_dco.py`, `tools/quality/test_failure_paths.py`, `ProvisionedControlServer` |
 | `agent-systems-benchmark-agent-aider` | `feature/agent-aider` | `da81ead6932c` | 0 | behind 738, ahead 0 |
-| `agent-systems-benchmark-agent-catalog-metadata` | `feature/ar1299-agent-catalog-metadata` | `c1b1860786e8` | 7 | behind 0, ahead 0 |
-| changed files | - | - | - | `crates/asb-control/fixtures/v1.4/agent-catalog-response.json`, `crates/asb-control/schema/v1.4/response.schema.json`, `crates/asb-control/schema/v1.5/response.schema.json`, `crates/asb-control/schema/v1.6/response.schema.json`, `crates/asb-control/src/catalog.rs`, `docs/AGENT_CATALOG_DIGEST.md`, `docs/FRONTEND_CONTROL_API.md` |
+| `agent-systems-benchmark-agent-catalog-metadata` | `feature/ar1299-agent-catalog-metadata` | `b9edf44edcbc` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-agent-codex` | `feature/agent-codex` | `eb03bd9d9ed5` | 0 | behind 726, ahead 0 |
 | `agent-systems-benchmark-agent-gemini` | `feature/agent-gemini` | `d381d340163e` | 0 | behind 722, ahead 0 |
 | `agent-systems-benchmark-agent-goose` | `feature/agent-goose` | `95b3ef8c7830` | 0 | behind 718, ahead 0 |
@@ -86,7 +85,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1283-formal-lockfile` | `feature/ar-1283-formal-lockfile` | `69e8b064d312` | 0 | behind 24, ahead 0 |
 | `agent-systems-benchmark-ar-1284-strict-replay-lifecycle` | `feature/ar-1284-strict-replay-lifecycle` | `f9ddf7ef6b3b` | 0 | behind 16, ahead 0 |
 | `agent-systems-benchmark-ar-1285-runtime-launch-factory` | `feature/ar-1285-runtime-launch-factory` | `0f876c7ae7fd` | 0 | behind 12, ahead 0 |
-| `agent-systems-benchmark-ar-1286-supervised-replay-lifecycle` | `feature/ar-1286-supervised-replay-lifecycle` | `d8064117cdeb` | 0 | behind 11, ahead 4 |
+| `agent-systems-benchmark-ar-1286-supervised-replay-lifecycle` | `feature/ar-1286-supervised-replay-lifecycle` | `d8064117cdeb` | 1 | behind 11, ahead 4 |
+| changed files | - | - | - | `crates/asb-cli/src/lib.rs` |
 | `agent-systems-benchmark-ar-1288-certificate-chain-authz` | `feature/ar-1288-certificate-chain-authz` | `7b3ff1d3a874` | 0 | behind 5, ahead 0 |
 | `agent-systems-benchmark-ar-1289-formal-lock-gate` | `fix/ar-1289-formal-lock-gate` | `53981d651645` | 0 | behind 11, ahead 1 |
 | `agent-systems-benchmark-ar-1290-dependabot-dco` | `repair/ar-1290-dependabot-dco` | `418960215134` | 0 | behind 1, ahead 0 |
