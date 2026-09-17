@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T09:51:39+00:00",
   "depends_on": [],
   "id": "AR-1287",
-  "next_action": "Run AR-1286 qualified and AR-1301 lifecycle fixtures in the KVM guest; resolve any VM-specific fixture assumptions, then record bounded evidence.",
+  "next_action": "Run AR-1301 lifecycle/fault matrix in the verified KVM guest; then complete AR-1287 runner review/publication and reconcile.",
   "observed_branch": "feature/ar-1287-delegated-sandbox-runner",
   "observed_dirty": 0,
   "observed_head": "dba5f9bb6973cbb256695161e83f7a0eee860fb9",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a delegated runner for real strict-replay child lifecycle qualification.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Delegated sandbox runner capability",
-  "updated_at": "2026-09-17T07:52:31+00:00",
+  "updated_at": "2026-09-17T07:55:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1287-delegated-sandbox-runner"
 }
 ---
@@ -78,3 +78,9 @@ lifecycle completion until the actual child and fault fixtures run in the qualif
   --unshare-net, user systemd-run TasksMax=16/MemoryMax=64M, and denied-egress probes pass. The
   AR-1286 qualified runtime backend test passes as asb. Full copied test binary run found one VM
   path-sensitive malformed-spec assertion failure; retain as follow-up, do not claim full suite.
+
+- 2026-09-17T07:55:07+00:00: VM fixture path was corrected by creating the immutable expected
+  workspace prefix inside the guest, without mounting host source. Re-ran as unprivileged asb: all
+  51 normal asb-runtime tests pass (1 qualified test intentionally ignored in normal suite), and
+  explicit ignored qualified_runtime_backend_executes_and_reaps_child passes. Capability and
+  denied-egress probes remain green.
