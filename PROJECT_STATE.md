@@ -22,16 +22,16 @@ Generated from local Git and GitHub. Do not edit.
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
 | #214 | `feature/ar-1286-supervised-replay-lifecycle@eaf7fcbf42ae` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(replay): integrate runtime-owned supervised replay lifecycle |
 | #215 | `feature/ar-1286-replay-lifecycle-rebased@03b1ddc7c9d2` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(replay): integrate signed runtime replay lifecycle |
-| #219 | `feature/ar-1301-replay-lifecycle-fault-matrix@c55da0ec4de3` | `main` | UNSTABLE | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | test(runtime): qualify supervised replay lifecycle fault matrix |
+| #219 | `feature/ar-1301-replay-lifecycle-fault-matrix@c55da0ec4de3` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | test(runtime): qualify supervised replay lifecycle fault matrix |
 | #220 | `feature/ar-1303-hosted-platform-diagnostics@d85889d5066c` | `main` | UNSTABLE | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | ci(platforms): add privacy-safe hosted failure diagnostics |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35225517809 | `c55da0ec4de3` | pull_request | Agent Workflow Quality shadow | queued:- |
+| 35225517809 | `c55da0ec4de3` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 35225517772 | `c55da0ec4de3` | pull_request | Rust verification | in_progress:- |
-| 35225517733 | `c55da0ec4de3` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 35225517733 | `c55da0ec4de3` | pull_request | Hosted portability and native qualification | completed:failure |
 | 35225517719 | `c55da0ec4de3` | pull_request | Fault assurance | in_progress:- |
 | 35225517659 | `c55da0ec4de3` | pull_request | Repository quality | in_progress:- |
 | 35225517653 | `c55da0ec4de3` | pull_request | Formal assurance | in_progress:- |
