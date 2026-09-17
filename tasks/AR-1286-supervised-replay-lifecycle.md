@@ -19,11 +19,11 @@
   "plan": "../plans/AR-1286.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Execute strict-replay cassettes through the runtime-owned supervised lifecycle.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Supervised strict-replay cassette lifecycle",
-  "updated_at": "2026-09-17T02:31:01+00:00",
+  "updated_at": "2026-09-17T05:56:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1286-supervised-replay-lifecycle"
 }
 ---
@@ -152,3 +152,7 @@ do not touch or claim asb-tui behavior.
   wiring is signed and focused tests pass, but actual child execution, egress denial,
   cancellation/timeout/crash/restart cleanup, and no-fallback fixtures require an approved
   container/VM runner or a successor AR. No asb-tui changes; lease released ownerless.
+
+- 2026-09-17T05:56:05+00:00: User authorized starting deep repair of stale PR #197/#207; resume the
+  current dependency-safe successor on its existing clean branch, preserving fail-closed sandbox
+  requirements.

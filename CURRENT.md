@@ -10,6 +10,12 @@ Never edit this file directly.
 | P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Reconcile the still-failing vendor fixture contract to coordinator v0.3.7 and provide a host with enough thread capacity for the portable TLC VM; then rerun full state and formal gates. Candidate 53dd96389 is signed and focused-green but is not publishable while 133-test vendor failures and TLC EAGAIN remain. | codex-ar1293-requalify-v2 |
 | P0 | [AR-1299](tasks/AR-1299.md): Complete authenticated agent catalog identity metadata | Complete authenticated agent catalog signer, provenance, SBOM and license metadata. | Promote after reconciliation, claim with a unique owner, and implement the missing v1.4 catalog metadata contract in an isolated worktree. | root-ar1299-catalog |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1286](tasks/AR-1286-supervised-replay-lifecycle.md): Supervised strict-replay cassette lifecycle | Execute strict-replay cassettes through the runtime-owned supervised lifecycle. | Await approved delegated namespace runner; then add cancellation, timeout, crash, restart and egress lifecycle fixtures. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -44,7 +50,6 @@ Never edit this file directly.
 | P0 | [AR-1281](tasks/AR-1281-supervised-cassette-lifecycle.md): Supervised cassette lifecycle execution | Execute primary strict replay through a supervised runtime cassette lifecycle. | Promote after dependency verification; implement the complete supervised cassette path and lifecycle fault matrix from protected main. | - |
 | P0 | [AR-1283](tasks/AR-1283-formal-lockfile.md): Formal lockfile CI drift repair | Repair formal workspace lockfile drift that fails the locked CI gate. | Promote after dependency verification; regenerate and verify formal/Cargo.lock so hosted --locked formal tests do not attempt updates. | - |
 | P0 | [AR-1284](tasks/AR-1284-runtime-strict-replay-lifecycle.md): Runtime-owned strict-replay lifecycle execution | Connect authenticated replay transport to the runtime-owned primary strict-replay lifecycle. | Split a runtime-owned launch-factory/CLI entrypoint successor: current protected main has only caller-constructible ReplayTransportIssuer and SandboxBackend APIs, so AR-1284 cannot safely wire primary replay without fabricating authority. | - |
-| P0 | [AR-1286](tasks/AR-1286-supervised-replay-lifecycle.md): Supervised strict-replay cassette lifecycle | Execute strict-replay cassettes through the runtime-owned supervised lifecycle. | Await approved delegated namespace runner; then add cancellation, timeout, crash, restart and egress lifecycle fixtures. | - |
 | P0 | [AR-1287](tasks/AR-1287-delegated-sandbox-runner.md): Delegated sandbox runner capability | Provide a delegated runner for real strict-replay child lifecycle qualification. | Await approved signed multi-arch delegated runner; preserve AR-1286 fail-closed lifecycle blocker. | - |
 | P0 | [AR-1292](tasks/AR-1292-tla-provenance-repair.md): Pinned TLA+ artifact provenance repair | Repair or formally retain the pinned TLA+ artifact provenance mismatch blocking formal assurance. | Await independently verifiable TLA+ provenance: a signed/attested immutable v1.8.0 asset bound to its source revision, or a deterministic source-build qualification for the current 142d0ba release. Do not update only hash/size or rerun PR #119 until that evidence exists. | - |
 | P0 | [AR-1294](tasks/AR-1294-state-gate-baseline.md): State formal-gate baseline integrity | Restore vendor and formal admission baseline integrity needed to qualify AR-1293. | Audit the vendor lock/digest mismatch and root-owned TLC admission lock; repair only through immutable provenance and owner-safe lock handling, then rerun full state/formal gates. | - |
