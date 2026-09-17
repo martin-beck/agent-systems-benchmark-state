@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-1288",
-  "next_action": "Signed exact head 35c49a9 closes schema parity: certificate identity digest fields require lowercase 64-hex, role enum/length, schema_version const 1, generation/validity minimums; generated artifact and schema assertions are updated. Cryptographic issue_der remains mandatory with DER chain/order/subject/endpoint/revocation checks. Focused certificate tests 7/7, offline locked workspace tests, and workspace Clippy -D warnings pass. Next: push exact head and request independent re-review.",
+  "next_action": "Signed exact head 0e8d7e2 aligns runtime validity with schema by rejecting epoch-zero not_before/not_after. Fresh exact-head cargo fmt check, offline locked workspace tests, workspace Clippy -D warnings, and certificate-focused tests all pass. Schema artifact parity is verified. Next: push exact head and request final independent review; do not publish before approval.",
   "observed_branch": "feature/ar-1288-certificate-chain-authz",
   "observed_dirty": 0,
   "observed_head": "0e8d7e2b23bde802b7ce793654915e886d6432f4",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814.",
-  "task_revision": 85,
+  "task_revision": 86,
   "title": "Runtime certificate issuance and chain validation",
-  "updated_at": "2026-09-17T03:06:05+00:00",
+  "updated_at": "2026-09-17T03:06:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1288-certificate-chain-authz"
 }
 ---
@@ -255,3 +255,10 @@ must not reuse unmerged strict-replay or asb-tui branches.
 
 - 2026-09-17T03:05:58+00:00: Recorded command exit 0; command argv SHA-256
   6ea19b7d53348bc9ff61279312eb46b3aed5b15de79e7b4cb454b75c8e842445.
+
+- 2026-09-17T03:06:17+00:00: 2026-09-17T03:07:00+00:00: Fresh post-35c49a9 gates completed at exact
+  source before this signed validity-bound checkpoint: cargo fmt --all -- --check passed; cargo test
+  --offline --locked --workspace passed; cargo clippy --offline --locked --workspace --all-targets
+  -- -D warnings passed. Runtime now rejects not_before/not_after=0 to match generated schema
+  minimum=1. Product commit 0e8d7e2b23bde802b7ce793654915e886d6432f is SSH-signed with matching DCO;
+  worktree clean.

@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1288](tasks/AR-1288-certificate-chain-authz.md): Runtime certificate issuance and chain validation | Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814. | Signed exact head 35c49a9 closes schema parity: certificate identity digest fields require lowercase 64-hex, role enum/length, schema_version const 1, generation/validity minimums; generated artifact and schema assertions are updated. Cryptographic issue_der remains mandatory with DER chain/order/subject/endpoint/revocation checks. Focused certificate tests 7/7, offline locked workspace tests, and workspace Clippy -D warnings pass. Next: push exact head and request independent re-review. | asb_ar0909_lifecycle_repair |
+| P1 | [AR-1288](tasks/AR-1288-certificate-chain-authz.md): Runtime certificate issuance and chain validation | Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814. | Signed exact head 0e8d7e2 aligns runtime validity with schema by rejecting epoch-zero not_before/not_after. Fresh exact-head cargo fmt check, offline locked workspace tests, workspace Clippy -D warnings, and certificate-focused tests all pass. Schema artifact parity is verified. Next: push exact head and request final independent review; do not publish before approval. | asb_ar0909_lifecycle_repair |
 
 ## Open
 
