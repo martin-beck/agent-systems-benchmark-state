@@ -76,6 +76,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1276-primary-replay-runtime` | `feature/ar-1276-primary-replay-runtime` | `69e8b064d312` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-ar-1277-runtime-cli-replay-transport` | `feature/ar-1277-runtime-cli-replay-transport` | `c88a34c86a67` | 0 | behind 0, ahead 2 |
 | `agent-systems-benchmark-ar-1278-primary-runtime-client` | `feature/ar-1278-primary-runtime-client` | `69e8b064d312` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-ar-1279-end-to-end-replay-runtime` | `feature/ar-1279-end-to-end-replay-runtime` | `69e8b064d312` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 509, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 612, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 506, ahead 0 |
