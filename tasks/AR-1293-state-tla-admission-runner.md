@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 387,
+  "task_revision": 388,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T18:37:02+00:00",
+  "updated_at": "2026-09-17T18:37:20+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -1306,3 +1306,6 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   reported errors. Final image SHA256
   8e45429efd5e1ea3d22dbfe63a99e9210f4a214f66a1cd3fe17bd3146554566d. Earlier 519 image/run is
   rejected and not reused for qualification.
+
+- 2026-09-17T18:37:20+00:00: Recorded command exit 1; command argv SHA-256
+  ae0b636ce67abc5bd46cea0535db9735f2ad036af390f71c47f193ba92954d26.
