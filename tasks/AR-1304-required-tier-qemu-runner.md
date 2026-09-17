@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Create a clean required-containment QEMU runner for formal publication evidence.",
-  "task_revision": 156,
+  "task_revision": 157,
   "title": "Required-tier QEMU user-bus runner",
-  "updated_at": "2026-09-17T15:58:32+00:00",
+  "updated_at": "2026-09-17T16:03:29+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1304-required-tier-qemu-runner"
 }
 ---
@@ -530,3 +530,6 @@ logs, or claim full-exhaustive evidence before required attestation is green.
   green and unchanged: REQUIRED_TRANSIENT_RC=0, PR_PUBLICATION_RC=0, six models success, exact
   candidate 39c8933f5, required systemd cgroup bounds, no network, no host mounts. Lease renewed
   before this pass; AR remains held for independent review.
+
+- 2026-09-17T16:03:29+00:00: Recorded command exit 0; command argv SHA-256
+  60caee0fe6d71f37d58a731c65fc62e54e20b6190a25a9bea7fb2a506b1e41ff.
