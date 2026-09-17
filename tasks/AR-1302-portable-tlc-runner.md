@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 151,
+  "task_revision": 152,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T10:14:16+00:00",
+  "updated_at": "2026-09-17T10:14:19+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -491,3 +491,6 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   after AR-1293 releases the VM, create a private offline copy of the data disk, inject the pinned
   JAR SHA-256 936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88, boot a distinct
   disposable VM/data path, then run full-exhaustive and capture terminal attestation.
+
+- 2026-09-17T10:14:19+00:00: Recorded command exit 0; command argv SHA-256
+  6c217499234d05165d24394a8558bcfbd8ed092cc12ff2fd2e71493de479e39a.
