@@ -218,8 +218,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-protected-main-admission` | `DETACHED` | `eb0ad13f8b6e` | 0 | behind 152, ahead 0 |
 | `agent-systems-benchmark-protected-main-dco-1259` | `repair/pr202-protected-main-dco` | `8b81be45b1cf` | 0 | behind 38, ahead 0 |
 | `agent-systems-benchmark-protected-merge-signature-policy` | `fix/protected-merge-signature-policy` | `d6fa883ad1b2` | 0 | behind 396, ahead 0 |
-| `agent-systems-benchmark-protected-merge-tree-remediation` | `repair/ar1226-current-base` | `8737bbed4b9a` | 4 | behind 0, ahead 0 |
-| changed files | - | - | - | `.github/workflows/verify.yml`, `tools/quality/repository_policy.py`, `tools/quality/check_current_topic_base.py`, `tools/quality/test_current_topic_base.py` |
+| `agent-systems-benchmark-protected-merge-tree-remediation` | `repair/ar1226-current-base` | `e730645316d6` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-protected-topic-sync-topology` | `fix/protected-topic-sync-topology` | `40a84dda234f` | 0 | behind 384, ahead 0 |
 | `agent-systems-benchmark-provider-aware-agent-launch` | `feature/provider-aware-agent-launch` | `7c9daf795b02` | 0 | behind 517, ahead 0 |
 | `agent-systems-benchmark-provider-credential-integration` | `feature/provider-credential-integration` | `0f92642fc870` | 0 | behind 564, ahead 0 |
