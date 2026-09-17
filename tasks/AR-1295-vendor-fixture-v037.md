@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Align stale coordinator vendor tests with the verified immutable v0.3.7 pin.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Coordinator vendor v0.3.7 fixture alignment",
-  "updated_at": "2026-09-17T05:11:59+00:00",
+  "updated_at": "2026-09-17T05:12:05+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1295-vendor-fixtures"
 }
 ---
@@ -33,3 +33,6 @@ handoffctl, formal runner behavior, ASB product, or asb-tui.
   an independent deterministic gate defect.
 
 - 2026-09-17T05:11:59+00:00: Claimed by asb-ar1295-vendor-tests.
+
+- 2026-09-17T05:12:05+00:00: Recorded command exit 0; command argv SHA-256
+  d86cbe2231c7a3eb40e69e7556d13b1a845c3940bec346e84ad1d3f700d9ba9c.
