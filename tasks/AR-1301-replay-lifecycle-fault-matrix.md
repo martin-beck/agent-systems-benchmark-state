@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T11:48:13+00:00",
+  "claim_expires": "2026-09-17T11:49:29+00:00",
   "depends_on": [
     "AR-1287",
     "AR-1300"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 125,
+  "task_revision": 126,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T11:19:22+00:00",
+  "updated_at": "2026-09-17T11:19:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -354,3 +354,5 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
   arguments and clippy::too_many_arguments was denied. This was a test-lint/setup failure, not a
   product/runtime failure. Added narrowly scoped #[allow(clippy::too_many_arguments)] in signed
   commit cf2a7b0; rerun gates.
+
+- 2026-09-17T11:19:29+00:00: Heartbeat by ar1301_negative_matrix.
