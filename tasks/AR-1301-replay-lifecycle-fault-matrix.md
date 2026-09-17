@@ -8,7 +8,7 @@
     "AR-1300"
   ],
   "id": "AR-1301",
-  "next_action": "PR #219 is updated to exact signed head 6221b89; monitor all required exact-head CI checks, diagnose failures from artifacts, merge only after terminal green, then post-merge verify and release AR-1301.",
+  "next_action": "PR #219 exact head 6221b89: await terminal Rust rerun 35218373715 attempt job 105193339347 and retain hosted platform blocker from controlled rerun 35218373699; do not merge until every required check is green. Then perform exact-head review/merge and post-merge verification.",
   "observed_branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "observed_dirty": 0,
   "observed_head": "6221b894c438292ff50b21d2d0c27a875d0bcc1b",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 268,
+  "task_revision": 269,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T12:02:33+00:00",
+  "updated_at": "2026-09-17T12:02:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -748,3 +748,10 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
 
 - 2026-09-17T12:02:33+00:00: Recorded command exit 0; command argv SHA-256
   9297707410d01652031fd8c5d0747f988a59193cd8fb865cd79b73cfebf4bde6.
+
+- 2026-09-17T12:02:53+00:00: CI decision: local focused Gemini timing test passed 5/5, so Rust
+  failure was classified as hosted runner timing/resource flake; one controlled gh run rerun
+  --failed was issued for Rust. Platform evidence failed identically in its one controlled rerun
+  (job 105192558571), while process/metrics/sandbox subchecks pass locally; helper suppresses child
+  output, so retain as hosted-runner infrastructure blocker pending fresh green platform evidence.
+  No product patch or merge is authorized from these failures.
