@@ -2,7 +2,7 @@
 {
   "branch": "feature/remote-enrollment-authz",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T05:59:40+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0813"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
   "observed_head": "29cfa19323a0ceb124438854d73f664ae2b86dcc",
-  "owner": "asb_ar0814_enrollment_authz",
+  "owner": "",
   "plan": "../plans/AR-0814.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 307,
+  "task_revision": 308,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-17T04:01:56+00:00",
+  "updated_at": "2026-09-17T04:02:46+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -865,3 +865,11 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-17T04:01:56+00:00: Recorded command exit 0; command argv SHA-256
   23885b9cec3b55c5a1871e989cb630852e916e5f972b4280a4fd2c92e18e7a10.
+
+- 2026-09-17T04:02:46+00:00: AR-1288 is complete and merged at signed main
+  2de393a05cc3c65f3495238abb19408e8218e483 with exact-main gates green. AR-0814 remains blocked,
+  ownerless, at clean head 29cfa19323a0ceb124438854d73f664ae2b86dcc: the bounded
+  authorization/pairing implementation and prior full locked gates are preserved, but trusted
+  route/IP and ancestor authority are not implemented. Create a focused successor for independently
+  authenticated route/peer binding, ancestor provenance, wrong-route rejection, route
+  rotation/revocation and recovery evidence; do not publish AR-0814 as done.
