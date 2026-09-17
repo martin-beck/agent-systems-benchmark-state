@@ -3,7 +3,7 @@
   "branch": "feature/ar-1305-image-native-user-session",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1304"],
+  "depends_on": ["AR-1302"],
   "id": "AR-1305",
   "next_action": "Promote after review; qualify dbus-user-session and systemd user-manager support in a fresh offline guest image, then hand the immutable image to AR-1304.",
   "observed_branch": "",
