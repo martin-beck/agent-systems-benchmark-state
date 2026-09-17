@@ -8,7 +8,7 @@
     "AR-1285"
   ],
   "id": "AR-1300",
-  "next_action": "Promote after AR-1282 and AR-1285 dependency verification; implement and test the runtime-to-replay cassette operation seam from protected main.",
+  "next_action": "Inspect protected origin/main worktree and implement the runtime-to-replay cassette dispatch seam; record focused results.",
   "observed_branch": "feature/ar-1300-runtime-cassette-dispatch-seam",
   "observed_dirty": 0,
   "observed_head": "c1b1860786e844adb69b8f74e39af290592a89c8",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect runtime-issued cassette operations to the real strict-replay dispatch path.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Runtime-to-replay cassette dispatch seam",
-  "updated_at": "2026-09-17T07:04:50+00:00",
+  "updated_at": "2026-09-17T07:05:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1300-runtime-cassette-dispatch-seam"
 }
 ---
@@ -72,3 +72,12 @@ fixtures/tests. Do not modify asb-tui or coordinator implementation.
 
 - 2026-09-17T07:04:42+00:00: Recorded command exit 0; command argv SHA-256
   b5ee3857d808cc2b617700d589910a7a1ddc72ba808914702dbe8ba0c08b1a5d.
+
+- 2026-09-17T07:05:02+00:00: 2026-09-17T07:06:00Z checkpoint: two exit-255 worktree commands were
+  environment/coordination invocation failures, not product failures. First attempted git worktree
+  removal/add in one chained wrapper; post-reconcile external GitHub API run-list retries failed, so
+  the second chained command was not executed. Second attempted product worktree add before deleting
+  the stale local branch; git correctly rejected the existing branch. The stale state-repo worktree
+  was removed, the stale product branch was deleted through handoffctl, and the protected
+  origin/main product worktree was then created successfully at c1b1860. No source mutation or
+  external project state was damaged.
