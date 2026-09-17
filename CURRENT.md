@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1282](tasks/AR-1282-authenticated-replay-transport.md): Authenticated replay transport foundation | Land the authenticated runtime-to-CLI replay transport foundation. | Run full locked workspace fmt/test/clippy/rustdoc/policy/privacy/formal/portability gates at signed d3bcdeaf; then request independent review of bounded core/runtime transport only. | asb_ar1282_core_runtime_transport |
+| P0 | [AR-1282](tasks/AR-1282-authenticated-replay-transport.md): Authenticated replay transport foundation | Land the authenticated runtime-to-CLI replay transport foundation. | Run full locked workspace fmt/test/clippy/rustdoc/policy/privacy/formal/portability gates at signed 977a37d; request independent re-review of bounded core/runtime transport only after all pass. | asb_ar1282_core_runtime_transport |
 
 ## Open
 
