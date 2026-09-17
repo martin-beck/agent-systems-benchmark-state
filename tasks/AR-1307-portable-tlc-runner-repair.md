@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1307-portable-tlc-runner-repair",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-18T00:31:08+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1302"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "codex-ar1307-runner-20260917",
+  "owner": "",
   "plan": "../plans/AR-1307.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-17T22:31:08+00:00",
+  "updated_at": "2026-09-17T22:33:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -117,3 +117,7 @@ and protected publication sequence.
   claimed.
 
 - 2026-09-17T22:31:08+00:00: Heartbeat by codex-ar1307-runner-20260917.
+
+- 2026-09-17T22:33:16+00:00: Prior worker interrupted; releasing claim for controlled takeover.
+  Preserve PR #24 and commit evidence; successor will complete exact-head qualification and repair
+  remaining review blockers.
