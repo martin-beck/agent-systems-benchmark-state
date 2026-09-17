@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify image-native D-Bus user-session support for required TLC containment.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Image-native user-session support",
-  "updated_at": "2026-09-17T15:22:53+00:00",
+  "updated_at": "2026-09-17T15:23:08+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1305-image-native-user-session"
 }
 ---
@@ -172,3 +172,6 @@ limits and fail-closed behavior remain unchanged.
   socket and retry transient qualification
 
 - 2026-09-17T15:22:53+00:00: Claimed by codex-ar1305-image-session-20260917.
+
+- 2026-09-17T15:23:08+00:00: Recorded command exit 0; command argv SHA-256
+  cac145a4c7ca554b59cb9513889a8b23fa2b61bdef7c0fbc6d1c71fa98f72a9a.
