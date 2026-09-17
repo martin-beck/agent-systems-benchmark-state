@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1297.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Repair task schema and metadata consistency without weakening coordinator validation.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Task schema and metadata consistency",
-  "updated_at": "2026-09-17T00:00:00+00:00",
+  "updated_at": "2026-09-17T05:27:58+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1297-task-schema"
 }
 ---
@@ -28,3 +28,6 @@ AR-1296 exposed repository-wide schema failures in historical task metadata.
 This AR owns only evidence-based task metadata and the versioned schema/test
 contract. It must not relax validation, fabricate provenance, touch product or
 asb-tui source, modify handoffctl implementation, or alter formal gates.
+
+- 2026-09-17T05:27:58+00:00: Repository-wide schema failures are evidence-based metadata defects;
+  promote strict normalization without weakening validation.
