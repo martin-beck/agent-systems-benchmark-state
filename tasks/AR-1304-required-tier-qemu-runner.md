@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1304.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Create a clean required-containment QEMU runner for formal publication evidence.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Required-tier QEMU user-bus runner",
-  "updated_at": "2026-09-17T14:47:56+00:00",
+  "updated_at": "2026-09-17T14:48:17+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1304-required-tier-qemu-runner"
 }
 ---
@@ -76,3 +76,6 @@ logs, or claim full-exhaustive evidence before required attestation is green.
   produced. Next action: create a fresh seed/service that starts user@1000 and a session bus, run
   the exact required launcher with all six resource properties, and capture sanitized bus/transient
   results before retry.
+
+- 2026-09-17T14:48:17+00:00: Launcher contract is green; resume to integrate deterministic guest
+  user bus and produce required attestation
