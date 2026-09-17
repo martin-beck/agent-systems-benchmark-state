@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T12:32:27+00:00",
+  "claim_expires": "2026-09-17T12:33:33+00:00",
   "depends_on": [
     "AR-1287",
     "AR-1300"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 168,
+  "task_revision": 169,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T11:33:21+00:00",
+  "updated_at": "2026-09-17T11:33:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -474,3 +474,5 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
   cassette supervisor hit its 10s deadline and local replay transport failure. The new supervised
   negative matrix itself passed. No product defect inferred; rerun serial native tests to
   distinguish contention and record terminal result.
+
+- 2026-09-17T11:33:33+00:00: Heartbeat by ar1301_negative_matrix.
