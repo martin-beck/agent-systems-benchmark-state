@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1305.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Qualify image-native D-Bus user-session support for required TLC containment.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Image-native user-session support",
-  "updated_at": "2026-09-17T15:20:19+00:00",
+  "updated_at": "2026-09-17T15:22:50+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1305-image-native-user-session"
 }
 ---
@@ -167,3 +167,6 @@ limits and fail-closed behavior remain unchanged.
   user-manager transport. No required attestation. Image hash remains 1a5db8d8... and package
   provenance e585b169...; next action is a supported systemd user-session image/service
   configuration repair, not a portable fallback.
+
+- 2026-09-17T15:22:50+00:00: Fresh image lacks global user dbus.socket activation; enable reviewed
+  socket and retry transient qualification
