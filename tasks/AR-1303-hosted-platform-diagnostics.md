@@ -8,7 +8,7 @@
     "AR-1252"
   ],
   "id": "AR-1303",
-  "next_action": "Independent exact-head review of signed d85889d, then publish PR from clean tree. Wait exact-head CI; merge only if all required checks green. Mypy remains blocked by 11 pre-existing errors in native_evidence.py and unchanged hosted release_route lines; do not broaden AR-1303.",
+  "next_action": "PR #220 exact head d85889d is published. Monitor all required exact-head CI; diagnose failures without weakening gates. Merge only after every required check is green, then perform post-merge verification and release AR-1303. Mypy baseline and missing jsonschema environment remain documented.",
   "observed_branch": "feature/ar-1303-hosted-platform-diagnostics",
   "observed_dirty": 0,
   "observed_head": "d85889d5066c26dc69279594a7c91f4f140a23e3",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add privacy-safe fixed diagnostics for hosted platform evidence failures.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Privacy-safe hosted platform failure diagnostics",
-  "updated_at": "2026-09-17T12:28:37+00:00",
+  "updated_at": "2026-09-17T12:28:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1303-hosted-platform-diagnostics"
 }
 ---
@@ -130,3 +130,7 @@ native qualification route. This AR must not modify runtime behavior or asb-tui.
 
 - 2026-09-17T12:28:37+00:00: Recorded command exit 0; command argv SHA-256
   ea604edd3eba9f4d2dd5172da70c6415199d773b43f710ed2fca14c7152ad1d1.
+
+- 2026-09-17T12:28:56+00:00: PR #220 published from clean exact signed head d85889d. Independent
+  review verified SSH signature/DCO, no schema changes, fixed privacy-safe diagnostics only, focused
+  platform tests 12/12 and Ruff green. CI monitoring is now the active action.
