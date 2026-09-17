@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "PR #24 is open at eb0da360b6091d5a5f74decfff4da39202226eec; local quality gates pass, but exact-head CI and fresh portable/required formal evidence remain before merge.",
+  "next_action": "Run full state tests, Ruff/format/mypy/vendor/privacy/schema checks; review diff and commit signed+DCO, then refresh PR #24 and execute clean exact-head portable/required tiers.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-17T22:39:37+00:00",
+  "updated_at": "2026-09-17T22:39:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -151,3 +151,10 @@ and protected publication sequence.
   12ca69f764cdcbf14c0661d54f759467c97d41a8846f6fdabeaf72348a3a6ec5.
 
 - 2026-09-17T22:39:37+00:00: Heartbeat by codex-ar1307-runner-repair-20260918.
+
+- 2026-09-17T22:39:40+00:00: Takeover checkpoint: classified exit 127 as missing .venv/bin/python in
+  the PR worktree; reran with canonical state .venv and focused runner/launcher suites pass 28/28.
+  Repaired verify.sh to require the pinned staged TLA JAR offline (no network fetch), guest seed now
+  exports TLC_JAR_PATH/SHA256 directly, and switched default admission lock to the project-wide
+  owner-private lock. Added symlink rejection for private directories and updated seed tests.
+  Changes remain uncommitted pending full gates.
