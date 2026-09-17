@@ -10,7 +10,7 @@
   "id": "AR-1300",
   "next_action": "Wait for GitHub API cooldown, then perform one bounded PR #217 status fetch; do not merge until every required check is terminal green and independent review is recorded.",
   "observed_branch": "feature/ar-1300-runtime-cassette-dispatch-seam",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "405f68f0a957cf338a7efd958f6162f39729443d",
   "owner": "ar1300_dispatch",
   "plan": "../plans/AR-1300.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect runtime-issued cassette operations to the real strict-replay dispatch path.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Runtime-to-replay cassette dispatch seam",
-  "updated_at": "2026-09-17T07:25:20+00:00",
+  "updated_at": "2026-09-17T07:26:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1300-runtime-cassette-dispatch-seam"
 }
 ---
