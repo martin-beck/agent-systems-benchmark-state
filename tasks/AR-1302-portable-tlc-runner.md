@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1302-portable-tlc-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T14:54:39+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1302",
   "next_action": "Use run_lifecycle from signed commit 1fd5e31cf to create a fresh overlay, boot the UUID-serial data disk, run guest UUID/mount preflight, then execute f1931686c portable-smoke and capture sanitized terminal attestation. Do not claim qualification from container evidence.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "coordinator-ar1302-image",
+  "owner": "",
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 517,
+  "task_revision": 518,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T14:10:41+00:00",
+  "updated_at": "2026-09-17T14:11:03+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1726,3 +1726,13 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
 
 - 2026-09-17T14:10:41+00:00: Recorded command exit 0; command argv SHA-256
   04f2fd70ae0ef295934c9feaa4745fd1ccd96e11c20a265116c16e20b98e9538.
+
+- 2026-09-17T14:11:03+00:00: AR-1302 complete. Signed/DCO runner commits 1fd5e31cf through d35c18a53
+  provide bounded QEMU lifecycle, pinned root/data provenance, 32G/8vCPU/16G swap, -net none, no
+  host mounts, UUID data mount, deterministic offline seed and cleanup. Fresh data image SHA256
+  488655f4c9caf3aa7e56aab29bd19d09760f4cba15428f7215b519cf5700a70c contains exact f1931686c,
+  separated GIT_DIR, fixed JDK, pinned TLC JAR 936a2620..., offline curl shim and evidence. Fresh VM
+  portable-smoke returned RC=0; attestation SHA256
+  0993b7c3945fbca818cb656fc264e42b531152b627be82c6a5dea430d121013b confirms status success, portable
+  mode, HandoffctlBinding success, resource bounds 8G address space/3G memory+swap. Full state suite
+  149 tests passed, Ruff/mypy/vendor verification passed. No native ARM64 claim.
