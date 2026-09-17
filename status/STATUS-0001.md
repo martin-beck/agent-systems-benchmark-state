@@ -1643,7 +1643,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | codex-ar1302-preflight-diagnosis | Provision a clean portable TLC CI/VM runner for state formal admission. | Do not launch TLC yet. Provision/verify native dbus-user-session + user@1000 bus in a fresh immutable guest image, then require these bounded preflights to exit 0: systemctl --user is-system-running; systemd-run --user --wait --pipe --collect with 3G memory/swap, 200&#37; CPU, TasksMax=64 running /usr/bin/true. Record exact exit/evidence; run full-exhaustive only if both pass. |
+| P0 | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | codex-ar1302-preflight-diagnosis | Provision a clean portable TLC CI/VM runner for state formal admission. | Repair the disposable VM data-disk wiring before any further TLC: required-pr run failed because /mnt/asb-data mount point/device was absent in that boot. Reprovision a fresh seed/fstab with the virtio data disk UUID and a boot-time mount preflight; then rerun exact 3G/3G/200&#37;/Tasks64 transient preflight and portable-smoke through handoffctl. Full-exhaustive was manually interrupted and is not qualified. |
 
 ### Blocked (50)
 

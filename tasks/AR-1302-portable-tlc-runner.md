@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T13:24:34+00:00",
   "depends_on": [],
   "id": "AR-1302",
-  "next_action": "Do not launch TLC yet. Provision/verify native dbus-user-session + user@1000 bus in a fresh immutable guest image, then require these bounded preflights to exit 0: systemctl --user is-system-running; systemd-run --user --wait --pipe --collect with 3G memory/swap, 200% CPU, TasksMax=64 running /usr/bin/true. Record exact exit/evidence; run full-exhaustive only if both pass.",
+  "next_action": "Repair the disposable VM data-disk wiring before any further TLC: required-pr run failed because /mnt/asb-data mount point/device was absent in that boot. Reprovision a fresh seed/fstab with the virtio data disk UUID and a boot-time mount preflight; then rerun exact 3G/3G/200%/Tasks64 transient preflight and portable-smoke through handoffctl. Full-exhaustive was manually interrupted and is not qualified.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 337,
+  "task_revision": 338,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T12:39:34+00:00",
+  "updated_at": "2026-09-17T12:43:28+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1110,3 +1110,15 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   fa3438aef1b80cd2498029fc2a46a2fb4a29282c67f0744f8a8b5bf936b8253e.
 
 - 2026-09-17T12:39:34+00:00: Heartbeat by codex-ar1302-preflight-diagnosis.
+
+- 2026-09-17T12:43:28+00:00: Sanitized checkpoint: fresh repair image used 32 GiB RAM, 8 vCPU, 30
+  GiB usable root after resize, 8 GiB guest swap, no network/host mounts, and pinned f16d2cb41 data
+  disk. Exact required preflight passed through handoffctl: user@1000 active, user systemd running,
+  /run/user/1000/bus present, systemd-run --user /bin/true exit 0 with MemoryMax=3G,
+  MemorySwapMax=3G, CPUQuota=200%, TasksMax=64, RuntimeMaxSec=1800. Portable-smoke then passed for
+  f16d2cb41721bf8f17aa5aa75ab01520aeb91eb8 with TLC no-error and success attestation. A subsequent
+  required-pr helper failed before verify because /mnt/asb-data mount point/device was absent in
+  that boot; this is runner data-disk wiring, not TLC. Full-exhaustive was started only after the
+  exact preflight, but manually interrupted during Handoffctl liveness exploration (~9.3M distinct
+  states); no full attestation or qualification. QEMU repair process was stopped cleanly and no
+  socat remains.
