@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1302-portable-tlc-runner",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T15:49:29+00:00",
   "depends_on": [],
   "id": "AR-1302",
   "next_action": "Use run_lifecycle from signed commit 1fd5e31cf to create a fresh overlay, boot the UUID-serial data disk, run guest UUID/mount preflight, then execute f1931686c portable-smoke and capture sanitized terminal attestation. Do not claim qualification from container evidence.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "",
+  "owner": "codex-ar1302-smoke-seed",
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 465,
+  "task_revision": 466,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T13:49:26+00:00",
+  "updated_at": "2026-09-17T13:49:29+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1562,3 +1562,5 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
 
 - 2026-09-17T13:49:26+00:00: Resume to run the reviewed portable-smoke command from the offline seed
   after successful UUID mount preflight.
+
+- 2026-09-17T13:49:29+00:00: Claimed by codex-ar1302-smoke-seed.
