@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Remediate the protected-main merge-tree mismatch from stale-base PR merging.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Protected merge-tree remediation",
-  "updated_at": "2026-09-17T08:52:04+00:00",
+  "updated_at": "2026-09-17T08:59:24+00:00",
   "worktree_key": "agent-systems-benchmark-protected-merge-tree-remediation"
 }
 ---
@@ -140,3 +140,6 @@ current-main requalification; it must not mark the merge usable until policy ass
 - 2026-09-17T08:51:20+00:00: Heartbeat by codex-ar1226-merge-remediation-20260917.
 
 - 2026-09-17T08:52:04+00:00: Heartbeat by codex-ar1226-merge-remediation-20260917.
+
+- 2026-09-17T08:59:24+00:00: Recorded command exit 2; command argv SHA-256
+  485d652e48809778c55ad44cfbeebbe6451e8a3ca236badb5ee38eb9207c3bb8.
