@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 354,
+  "task_revision": 355,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T12:49:18+00:00",
+  "updated_at": "2026-09-17T12:49:21+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1175,3 +1175,6 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   completion with native JVM allocation failure under portable prlimit AS=3G (AllocateHeap 16
   bytes), ASB_RC=1; no attestation. Required-pr was correctly not launched because smoke did not
   pass. Runner powered off and data fsck completed.
+
+- 2026-09-17T12:49:21+00:00: Recorded command exit 0; command argv SHA-256
+  d2d0ad76bf84a0d8480eae80cf11b1c9aadf63dd417c845be05fb83bb06c963c.
