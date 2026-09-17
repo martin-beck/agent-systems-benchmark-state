@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-1288",
-  "next_action": "PR #210 exact head 7b3ff1d3a87436c2a7299d452bb4220dd7847a4c remains under hosted validation. Green: Loom/state, TLC/Alloy, Kani, fuzz, mutation, platform, retained-faults, headers, AWQ. Pending: emulated aarch64, Policy/coverage/supply-chain, and Rust checks. Formal lock repair is pushed and separately tracked by PR #211; keep AR-1288 open and do not merge until all PR #210 checks plus final independent review are green.",
+  "next_action": "PR #210 is CLEAN at exact signed head 7b3ff1d3a87436c2a7299d452bb4220dd7847a4c, base 2fd90557a4e7be32fab590f47bc501462127c1c1. All 12 required hosted checks are terminal SUCCESS, including formal Loom/state after formal/Cargo.lock repair, policy, Rust, and emulated aarch64. Await/record final independent review; merge only through protected signed workflow, then verify exact-main post-merge gates.",
   "observed_branch": "feature/ar-1288-certificate-chain-authz",
   "observed_dirty": 0,
   "observed_head": "7b3ff1d3a87436c2a7299d452bb4220dd7847a4c",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814.",
-  "task_revision": 137,
+  "task_revision": 138,
   "title": "Runtime certificate issuance and chain validation",
-  "updated_at": "2026-09-17T03:27:00+00:00",
+  "updated_at": "2026-09-17T03:27:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1288-certificate-chain-authz"
 }
 ---
@@ -420,3 +420,9 @@ must not reuse unmerged strict-replay or asb-tui branches.
 
 - 2026-09-17T03:27:00+00:00: Recorded command exit 0; command argv SHA-256
   bc2639e62cf73b8578695431ab4e66182e33ad3cdafce79b995f9d067a4c42da.
+
+- 2026-09-17T03:27:25+00:00: Fresh PR #210 exact-head evidence: AWQ 35177620286; aarch64
+  35177620261; retained faults 35177620260; TLC/Alloy 35177620321; platform 35177620249; headers
+  35177620250; policy 35177620269; Rust 35177620295; fuzz 35177620260; Kani 35177620321; mutation
+  35177620260; Loom 35177620321. Every check SUCCESS, PR mergeState CLEAN, head 7b3ff1d. Worktree
+  clean and SSH-signed/DCO verified.
