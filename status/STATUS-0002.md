@@ -1,7 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| P1 | [AR-0811](../tasks/AR-0811-documentation-qualification.md): Audit workflow documentation and publication | Unclaimed | Qualify documentation completeness, executability, accessibility, privacy, provenance, and release accuracy. | Independently audit every published workflow against released programs and deployed Pages output. |
-| P1 | [AR-0815](../tasks/AR-0815-remote-run-lifecycle.md): Manage remote benchmark run lifecycles | Unclaimed | Manage durable benchmark runs from another machine without making the frontend their owner. | Implement remote validation, launch, detach, reconnect, status, cancellation, and recovery workflows. |
 | P1 | [AR-0816](../tasks/AR-0816-cross-platform-remote-interoperability.md): Qualify cross-platform remote control | Unclaimed | Validate remote TUI interoperability with native x86_64 and required emulated AArch64 coverage; keep native ARM64 optional. | Prove native x86_64 and pinned QEMU AArch64 controller-runner protocol workflows across available distributions; document native ARM64 cross-host testing as optional future evidence. |
 | P1 | [AR-0818](../tasks/AR-0818-remote-control-security-audit.md): Audit remote benchmark control | Unclaimed | Attack and qualify remote benchmark control before any release enables it. | Independently audit remote protocol, trust, authorization, lifecycle, interoperability, privacy, and operational safety. |
 | P1 | [AR-0823](../tasks/AR-0823-installation-qualification.md): Audit installation and first-run experience | Unclaimed | Qualify the one-line experience and complete install lifecycle across the supported native matrix. | Independently attack and usability-test first install, onboarding, upgrade, rollback, repair, and uninstall. |
@@ -37,7 +35,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (207)
+### Done (208)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -125,6 +123,7 @@
 | P0 | [AR-1289](../tasks/AR-1289-formal-lock-gate.md): Repair formal lock gate | Unclaimed | Repair the stale formal Cargo.lock required by hosted exact-head gates. | Policy check 35177646319 failed only on pre-existing Gemini timing assertion; exact targeted test passed 3/3 locally. Failed hosted job rerun requested once; monitor rerun plus remaining required checks, merge only if all terminal-success. |
 | P0 | [AR-1290](../tasks/AR-1290-dependabot-dco-boundary-recovery.md): Dependabot DCO boundary recovery | Unclaimed | Recover protected-main DCO assurance for the immutable Dependabot serde commit without weakening broad policy. | Monitor exact-main post-merge workflows for c1b1860786e844adb69b8f74e39af290592a89c8 to terminal SUCCESS; verify protected main signature/DCO/tree and release AR-1290 done. |
 | P0 | [AR-1291](../tasks/AR-1291-superseded-pointer-repair.md): Repair superseded dependency pointers | Unclaimed | Repair missing successor pointers on superseded dependency tasks. | Claim the state-repair AR, add the verified successor pointers to AR-1052/1054/1056/1058/1061, reconcile and validate AR-1010 dependency readiness. |
+| P0 | [AR-1296](../tasks/AR-1296-state-quality-baseline.md): State quality-gate baseline | Unclaimed | Restore strict state-repository mypy and coverage quality gates without weakening thresholds. | Repair explicit tools package identity and add bounded offline upgrade-command coverage until strict mypy and the unchanged 95&#37; coverage gate pass. |
 | P0 | [AR-1297](../tasks/AR-1297-task-schema-metadata.md): Task schema and metadata consistency | Unclaimed | Repair task schema and metadata consistency without weakening coordinator validation. | Repair every reported task schema/metadata error from durable evidence, add strict superseded_by schema coverage, regenerate views, and rerun all state gates. |
 | P0 | [AR-1298](../tasks/AR-1298-narrow-metadata-repair.md): Narrow task metadata repair scope | Unclaimed | Narrow AR-1297 metadata changes to the exact evidence-backed schema repairs. | Restore unrelated task files to pre-AR-1297 bytes, retain only evidence-backed schema-failure repairs, regenerate views, and rerun all gates. |
 | P1 | [AR-0002](../tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Unclaimed | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. |
