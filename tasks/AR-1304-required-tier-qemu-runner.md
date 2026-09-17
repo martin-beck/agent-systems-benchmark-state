@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Create a clean required-containment QEMU runner for formal publication evidence.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Required-tier QEMU user-bus runner",
-  "updated_at": "2026-09-17T14:50:09+00:00",
+  "updated_at": "2026-09-17T14:50:34+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1304-required-tier-qemu-runner"
 }
 ---
@@ -101,3 +101,6 @@ logs, or claim full-exhaustive evidence before required attestation is green.
   starts user@1000, starts a non-forking D-Bus session at /run/user/1000/bus, and tests socket
   readiness without networking. Seed tests plus required launcher tests pass and Ruff is green.
   Fresh guest integration and required attestation remain outstanding.
+
+- 2026-09-17T14:50:34+00:00: Recorded command exit 0; command argv SHA-256
+  cd44ca7677ac3faaf4cadef5dbcf257bbd264d9cafcf732a79ef98b1f89bed95.
