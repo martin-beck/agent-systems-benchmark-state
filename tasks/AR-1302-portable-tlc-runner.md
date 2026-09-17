@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 304,
+  "task_revision": 305,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T11:33:45+00:00",
+  "updated_at": "2026-09-17T12:10:54+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -986,3 +986,6 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   remains infrastructure-blocked; no release gate was weakened and no success is claimed. Next
   action requires fixing unit ordering/activation so the session bus is active before cloud-final,
   then one terminal-attested run.
+
+- 2026-09-17T12:10:54+00:00: Refreshing stale next_action to the final image-level bus activation
+  blocker; no rerun.
