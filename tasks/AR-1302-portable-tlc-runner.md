@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T12:36:25+00:00",
   "depends_on": [],
   "id": "AR-1302",
-  "next_action": "Wait for AR-1293 worker to release the 32 GiB VM; then offline-stage the pinned TLC JAR into a distinct runner data disk, boot without network or host mounts, and run signed candidate f16d2cb41 full-exhaustive with exact attestation.",
+  "next_action": "Run v9 on the released distinct VM with the pinned offline JDK/JAR and explicit XDG_RUNTIME_DIR/DBUS_SESSION_BUS_ADDRESS for the guest user systemd manager; require terminal full-exhaustive attestation before completion.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 212,
+  "task_revision": 213,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T10:39:32+00:00",
+  "updated_at": "2026-09-17T10:40:45+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -673,3 +673,10 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
 
 - 2026-09-17T10:39:32+00:00: Recorded command exit 0; command argv SHA-256
   9521a5db2a60435b2007c17c99ad5331f66134e3ca0d8c2cae7650bd8bfaccad.
+
+- 2026-09-17T10:40:45+00:00: 2026-09-17T10:40:10Z: AR-1293 released the original VM; AR-1302 now
+  owns a distinct offline data copy with pinned JAR SHA-256
+  936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88. v7 reached TLC but failed native
+  allocation under portable prlimit AS=3G (ASB_RC=1), no attestation. v8 correctly used
+  TLC_CGROUP_MODE=required but systemd-run --user failed with Failed to connect to bus: No medium
+  found (ASB_RC=1), no attestation. No gate was weakened or success claimed.
