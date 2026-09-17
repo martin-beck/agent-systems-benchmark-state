@@ -6,7 +6,6 @@
   "depends_on": [],
   "id": "AR-1053",
   "next_action": "Harden the audited standalone asb-tui task and plan records without changing either product repository or feature-task status.",
-  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-1053.md",
   "priority": "P0",

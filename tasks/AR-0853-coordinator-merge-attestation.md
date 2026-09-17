@@ -6,7 +6,6 @@
   "depends_on": [],
   "id": "AR-0853",
   "next_action": "Repair the attestation test to validate a closed fetch-free signed representation and installed manifest without requiring the unreachable historical merge object; document that limitation, rerun gates, and publish a signed successor by exact lease.",
-  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-0853.md",
   "priority": "P0",

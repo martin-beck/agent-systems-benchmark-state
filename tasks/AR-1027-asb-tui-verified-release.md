@@ -3,15 +3,9 @@
   "branch": "release/asb-tui-verified-channel",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": [
-    "AR-0823",
-    "AR-0903",
-    "AR-1012",
-    "AR-1026"
-  ],
+  "depends_on": ["AR-0823", "AR-0903", "AR-1012", "AR-1026"],
   "id": "AR-1027",
   "next_action": "Publish the first verified asb-tui release only after ASB release, complete UI/install qualification and exact cross-repository evidence are done.",
-  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-1027.md",
   "priority": "P1",

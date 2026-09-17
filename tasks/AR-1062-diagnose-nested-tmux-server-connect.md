@@ -6,7 +6,6 @@
   "depends_on": [],
   "id": "AR-1062",
   "next_action": "Run exact Rust 1.93.0 full gates on the diagnostic-only test patch, then freeze a signed DCO commit for immutable review.",
-  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-1062.md",
   "priority": "P0",

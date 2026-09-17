@@ -3,12 +3,9 @@
   "branch": "docs/ar-1215-result-comparison",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": [
-    "AR-1213"
-  ],
+  "depends_on": ["AR-1213"],
   "id": "AR-1215",
   "next_action": "Implement the syntax-checked tutorial for comparing two or more agents on one benchmark definition.",
-  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-1215.md",
   "priority": "P0",

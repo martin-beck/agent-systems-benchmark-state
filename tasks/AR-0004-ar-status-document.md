@@ -8,7 +8,6 @@
   ],
   "id": "AR-0004",
   "next_action": "Await independent immutable-head review of state PR 3 at eedd311; repair findings before coordinator integration.",
-  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-0004.md",
   "priority": "P1",

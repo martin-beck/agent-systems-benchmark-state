@@ -10,7 +10,6 @@
   ],
   "id": "AR-0705",
   "next_action": "Qualify native x86_64 Debian and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence.",
-  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-0705.md",
   "priority": "P2",

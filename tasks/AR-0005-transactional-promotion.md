@@ -9,7 +9,6 @@
   ],
   "id": "AR-0005",
   "next_action": "Await immutable independent review of exact state PR #4 head 4e56e83 and integrate only after verified green CI.",
-  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-0005.md",
   "priority": "P1",

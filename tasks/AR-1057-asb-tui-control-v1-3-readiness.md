@@ -6,7 +6,6 @@
   "depends_on": [],
   "id": "AR-1057",
   "next_action": "Bind the standalone client and measurement-selection UX roadmap to ASB control v1.3 precise diagnostics with closed v1.2 fallback behavior.",
-  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-1057.md",
   "priority": "P0",

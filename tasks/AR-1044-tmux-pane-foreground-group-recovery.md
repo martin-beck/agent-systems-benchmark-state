@@ -6,7 +6,6 @@
   "depends_on": [],
   "id": "AR-1044",
   "next_action": "No further action: AR-1044 safety repair is accepted by the later trusted-main run 34872879697 at main 78bf72d; AR-1048 and all downstream tmux recoveries are superseded or completed. Preserve merged evidence; do not touch asb-tui source from ASB.",
-  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-1044.md",
   "priority": "P0",

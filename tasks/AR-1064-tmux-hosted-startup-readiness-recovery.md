@@ -6,7 +6,6 @@
   "depends_on": [],
   "id": "AR-1064",
   "next_action": "PR #26 is exact-head green but protected merge is blocked because GitHub reports the required context as pending; resolve policy/check-run propagation without admin bypass, then require post-merge Trusted main.",
-  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-1064.md",
   "priority": "P0",

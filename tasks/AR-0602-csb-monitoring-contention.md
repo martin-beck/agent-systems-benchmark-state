@@ -11,7 +11,6 @@
   ],
   "id": "AR-0602",
   "next_action": "Audit CSB monitoring using native x86_64 oracles and required pinned QEMU AArch64 portable mapping/lifecycle checks; keep native ARM64 counters and performance as optional future evidence.",
-  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-0602.md",
   "priority": "P2",

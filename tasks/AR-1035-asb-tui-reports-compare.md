@@ -3,15 +3,9 @@
   "branch": "feature/tui-reports-compare",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": [
-    "AR-0875",
-    "AR-1025",
-    "AR-1033",
-    "AR-1170"
-  ],
+  "depends_on": ["AR-0875", "AR-1025", "AR-1033", "AR-1170"],
   "id": "AR-1035",
   "next_action": "Implement report and comparison screens after recording workflows publish stable live and strict-replay source labels.",
-  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-1035.md",
   "priority": "P0",

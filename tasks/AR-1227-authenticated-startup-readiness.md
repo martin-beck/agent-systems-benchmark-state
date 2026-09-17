@@ -3,14 +3,9 @@
   "branch": "feature/ar-1227-authenticated-startup-readiness",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": [
-    "AR-1060",
-    "AR-1151",
-    "AR-1160"
-  ],
+  "depends_on": ["AR-1060", "AR-1151", "AR-1160"],
   "id": "AR-1227",
   "next_action": "Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests.",
-  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-1227.md",
   "priority": "P0",

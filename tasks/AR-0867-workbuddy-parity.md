@@ -8,7 +8,6 @@
   ],
   "id": "AR-0867",
   "next_action": "Extend exact provider parity and the platform support matrix only for executable-qualified WorkBuddy combinations under a serialized shared-path fence.",
-  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-0867.md",
   "priority": "P1",

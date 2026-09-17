@@ -13,7 +13,6 @@
   ],
   "id": "AR-0817",
   "next_action": "Integrate polished connection, trust, remote launch, detach, reconnect, and management journeys into the TUI.",
-  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-0817.md",
   "priority": "P0",

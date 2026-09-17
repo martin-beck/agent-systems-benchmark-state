@@ -8,7 +8,6 @@
   ],
   "id": "AR-0866",
   "next_action": "Seal the sanitized live capture and prove strict offline replay, causal parity, malformed-record rejection, and zero external network.",
-  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-0866.md",
   "priority": "P1",

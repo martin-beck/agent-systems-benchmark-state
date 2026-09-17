@@ -10,7 +10,6 @@
   ],
   "id": "AR-1006",
   "next_action": "Monitor post-merge workflows for main 4e2820b until terminal; verify exact tree/signature/DCO/policy, then release AR-1006 done.",
-  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-1006.md",
   "priority": "P3",

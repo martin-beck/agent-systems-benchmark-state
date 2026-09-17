@@ -3,15 +3,9 @@
   "branch": "test/tui-quality-assurance",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": [
-    "AR-1010",
-    "AR-1011",
-    "AR-0807",
-    "AR-0873"
-  ],
+  "depends_on": ["AR-1010", "AR-1011", "AR-0807", "AR-0873"],
   "id": "AR-1012",
   "next_action": "Qualify the complete Ratatui/Crossterm TUI across terminals, failure paths, accessibility checks, and benchmark-overhead budgets.",
-  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-1012.md",
   "priority": "P1",

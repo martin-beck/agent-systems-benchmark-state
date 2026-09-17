@@ -6,7 +6,6 @@
   "depends_on": [],
   "id": "AR-1059",
   "next_action": "Bind AR-1024 to the exact rebase, environment, process-cleanup, no-daemon and trusted-pin gates required before lifecycle-router publication.",
-  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-1059.md",
   "priority": "P0",

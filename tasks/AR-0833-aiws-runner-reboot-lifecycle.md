@@ -3,13 +3,9 @@
   "branch": "feature/development-host-runner-reboot-lifecycle",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": [
-    "AR-0830",
-    "AR-0832"
-  ],
+  "depends_on": ["AR-0830", "AR-0832"],
   "id": "AR-0833",
   "next_action": "Design and qualify a tokenless supervisor/orchestration path that can provision fresh ephemeral registrations after boot without storing reusable GitHub credentials.",
-  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-0833.md",
   "priority": "P1",

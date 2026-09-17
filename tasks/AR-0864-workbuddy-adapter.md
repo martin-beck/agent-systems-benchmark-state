@@ -8,7 +8,6 @@
   ],
   "id": "AR-0864",
   "next_action": "Implement the bounded agent contract, exact provider translation, and capability registration from the pinned protocol; keep live support unclaimed.",
-  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-0864.md",
   "priority": "P1",

@@ -6,7 +6,6 @@
   "depends_on": [],
   "id": "AR-0852",
   "next_action": "Preserve merged v0.1.4 effect e52ce3aa without history rewrite; complete a focused signed+DCO repair or documented signed state replacement under AR-0853, then re-audit live main before releasing AR-0852.",
-  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-0852.md",
   "priority": "P1",

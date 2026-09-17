@@ -3,16 +3,9 @@
   "branch": "feature/tui-contextual-help",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": [
-    "AR-1014",
-    "AR-1031",
-    "AR-1034",
-    "AR-1035",
-    "AR-1170"
-  ],
+  "depends_on": ["AR-1014", "AR-1031", "AR-1034", "AR-1035", "AR-1170"],
   "id": "AR-1032",
   "next_action": "Add the contextual action registry, search field, fitted hotkey window and complete help coverage after the user-facing screens exist.",
-  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-1032.md",
   "priority": "P0",

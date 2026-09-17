@@ -8,7 +8,6 @@
   ],
   "id": "AR-0002",
   "next_action": "Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release.",
-  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-0002.md",
   "priority": "P1",

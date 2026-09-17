@@ -3,12 +3,9 @@
   "branch": "docs/ar-1211-initial-setup",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": [
-    "AR-1210"
-  ],
+  "depends_on": ["AR-1210"],
   "id": "AR-1211",
   "next_action": "Implement the syntax-checked tutorial for ASB initialization, first-agent registration, and agent connection setup.",
-  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-1211.md",
   "priority": "P0",

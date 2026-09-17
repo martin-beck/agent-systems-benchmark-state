@@ -3,14 +3,9 @@
   "branch": "feature/tui-visual-system",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": [
-    "AR-0812",
-    "AR-1010",
-    "AR-1025"
-  ],
+  "depends_on": ["AR-0812", "AR-1010", "AR-1025"],
   "id": "AR-1033",
   "next_action": "Create the standalone Ratatui visual system after the application shell is integrated.",
-  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-1033.md",
   "priority": "P0",
