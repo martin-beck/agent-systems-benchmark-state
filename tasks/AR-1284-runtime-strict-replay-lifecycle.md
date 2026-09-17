@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1284-strict-replay-lifecycle",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T03:26:28+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1282",
     "AR-1237",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1284-strict-replay-lifecycle",
   "observed_dirty": 0,
   "observed_head": "f9ddf7ef6b3b2a96dd7faee04906f4e5cb3aa8e1",
-  "owner": "asb_ar1024_lifecycle_router",
+  "owner": "",
   "plan": "../plans/AR-1284.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Connect authenticated replay transport to the runtime-owned primary strict-replay lifecycle.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Runtime-owned strict-replay lifecycle execution",
-  "updated_at": "2026-09-17T01:26:31+00:00",
+  "updated_at": "2026-09-17T01:26:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1284-strict-replay-lifecycle"
 }
 ---
@@ -92,3 +92,13 @@ record the exact blocker and split a further dependency-safe successor instead o
   ResourceLease, pinned supervisor/sidecar commands, or a cassette service callback. Adding a
   CLI-side constructor would violate AR acceptance and prior review boundaries. AR-1284 worktree is
   clean at f9ddf7ef; no product mutation and no asb-tui paths touched.
+
+- 2026-09-17T01:26:40+00:00: Release blocked/ownerless after implementation audit. Protected main
+  f9ddf7ef includes merged AR-1282 and runtime transport tests pass 6/6, but primary asb-cli
+  replay() remains metadata-only. Existing ReplayTransportIssuer::bind and
+  SandboxBackend::new/spawn_launch are caller-constructible; no runtime-owned launch factory/opaque
+  handoff supplies SandboxLaunchInput, ResourceLease, pinned supervisor/sidecar commands, or
+  cassette service callback. Wiring these in CLI would fabricate authority and violate fail-closed
+  acceptance. Worktree agent-systems-benchmark-ar-1284-strict-replay-lifecycle is clean at f9ddf7ef;
+  no product mutation or asb-tui changes. Next action: create a narrowly scoped runtime-owned
+  launch-factory/CLI entrypoint AR, then implement lifecycle and egress fixtures there.
