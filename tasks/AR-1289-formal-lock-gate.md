@@ -2,22 +2,22 @@
 {
   "branch": "fix/ar-1289-formal-lock-gate",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T05:29:44+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1289",
   "next_action": "Policy check 35177646319 failed only on pre-existing Gemini timing assertion; exact targeted test passed 3/3 locally. Failed hosted job rerun requested once; monitor rerun plus remaining required checks, merge only if all terminal-success.",
   "observed_branch": "fix/ar-1289-formal-lock-gate",
   "observed_dirty": 0,
   "observed_head": "53981d651645594a65aa7e69c9faa28e0770b6a6",
-  "owner": "asb_ar1024_lifecycle_router",
+  "owner": "",
   "plan": "../plans/AR-1289.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Repair the stale formal Cargo.lock required by hosted exact-head gates.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Repair formal lock gate",
-  "updated_at": "2026-09-17T03:33:06+00:00",
+  "updated_at": "2026-09-17T03:33:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1289-formal-lock-gate"
 }
 ---
@@ -176,3 +176,13 @@ be used with `--locked`. Repair and verify this gate independently of feature AR
 
 - 2026-09-17T03:33:06+00:00: Recorded command exit 0; command argv SHA-256
   4a21fd12d1093e230446c56df54c561012eb0808043c6459a61ef37c4d1b8df6.
+
+- 2026-09-17T03:33:28+00:00: Closed duplicate PR #211 after verification that its exact
+  formal/Cargo.lock repair (53981d651645594a65aa7e69c9faa28e0770b6a6) already landed equivalently in
+  protected-main PR #210 merge 2de393a05cc3c65f3495238abb19408e8218e483 (formal/Cargo.lock changed
+  242 lines). Verified origin/main at 2de393a05cc3c65f3495238abb19408e8218e483 contains
+  formal/Cargo.lock; cargo test --locked --manifest-path formal/Cargo.toml on a detached
+  protected-main worktree passed 43 tests, 0 failed, plus 0 doctests. PR #211 was dirty/conflicting
+  against updated main and closed without merge. Hosted PR #211 policy rerun was superseded; prior
+  failure was unrelated Gemini timing assertion, with 3/3 isolated local passes. No duplicate merge
+  performed.

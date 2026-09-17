@@ -11,12 +11,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 4 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 44 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
-| **Done** | Accepted, integrated, and durably verified | 199 |
+| **Done** | Accepted, integrated, and durably verified | 200 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 9 |
 
@@ -382,7 +382,7 @@ flowchart LR
         AR_1286["AR-1286 - Blocked"]:::status_blocked
         AR_1287["AR-1287 - Blocked"]:::status_blocked
         AR_1288["AR-1288 - In progress"]:::status_in_progress
-        AR_1289["AR-1289 - In progress"]:::status_in_progress
+        AR_1289["AR-1289 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1601,11 +1601,10 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1289](../tasks/AR-1289-formal-lock-gate.md): Repair formal lock gate | asb_ar1024_lifecycle_router | Repair the stale formal Cargo.lock required by hosted exact-head gates. | Policy check 35177646319 failed only on pre-existing Gemini timing assertion; exact targeted test passed 3/3 locally. Failed hosted job rerun requested once; monitor rerun plus remaining required checks, merge only if all terminal-success. |
 | P1 | [AR-1288](../tasks/AR-1288-certificate-chain-authz.md): Runtime certificate issuance and chain validation | asb_ar0909_lifecycle_repair | Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814. | PR #210 is CLEAN at exact signed head 7b3ff1d3a87436c2a7299d452bb4220dd7847a4c, base 2fd90557a4e7be32fab590f47bc501462127c1c1. All 12 required hosted checks are terminal SUCCESS, including formal Loom/state after formal/Cargo.lock repair, policy, Rust, and emulated aarch64. Await/record final independent review; merge only through protected signed workflow, then verify exact-main post-merge gates. |
 
 ### Open (4)
@@ -1696,3 +1695,4 @@ flowchart LR
 | P0 | [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md): ASB tutorial freshness CI and documentation qualification | Unclaimed | Continuously keep ASB tutorial commands and steps syntactically current. | Implement the repository-wide tutorial discovery and syntax-freshness CI gate after all tutorial contracts are defined. |
 | P0 | [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Unclaimed | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. |
 | P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
+| P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
