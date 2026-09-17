@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1302-portable-tlc-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T15:33:19+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1302",
   "next_action": "Use run_lifecycle from signed commit 1fd5e31cf to create a fresh overlay, boot the UUID-serial data disk, run guest UUID/mount preflight, then execute f1931686c portable-smoke and capture sanitized terminal attestation. Do not claim qualification from container evidence.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "codex-ar1302-boot-repair",
+  "owner": "",
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 428,
+  "task_revision": 429,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T13:36:21+00:00",
+  "updated_at": "2026-09-17T13:36:36+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1425,3 +1425,11 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
 
 - 2026-09-17T13:36:21+00:00: Recorded command exit 0; command argv SHA-256
   c741fd8ef5e0593c6388cd75ff8651a3ea6c353954f820bff1522bce64e840a4.
+
+- 2026-09-17T13:36:36+00:00: Boot wiring repair signed at 9174db1c7; focused 6/6 tests and Ruff
+  pass. Fresh VM now boots the root image successfully, but with -net none the guest stalls
+  indefinitely on systemd-networkd-wait-online before cloud-init/UUID mount preflight; bounded
+  lifecycle was terminated and cleanup performed. The attempt therefore produced no guest mount
+  proof or f1931686c portable-smoke attestation. Next action: use the receipt-approved prepared root
+  overlay image (not the base cloud image), add a boot-time offline seed/service that disables only
+  the guest wait-online dependency without enabling networking, then rerun preflight and smoke.
