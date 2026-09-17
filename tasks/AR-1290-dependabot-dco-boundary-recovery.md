@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover protected-main DCO assurance for the immutable Dependabot serde commit without weakening broad policy.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Dependabot DCO boundary recovery",
-  "updated_at": "2026-09-17T03:46:03+00:00",
+  "updated_at": "2026-09-17T03:46:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1290-dependabot-dco"
 }
 ---
@@ -107,3 +107,6 @@ change certificate/runtime behavior, touch asb-tui, or weaken broad policy.
 
 - 2026-09-17T03:45:55+00:00: Recorded command exit 0; command argv SHA-256
   d215a98fef899cfeaa09485e24db58b391a7af6c48ff50bcbabcf274c423ffa3.
+
+- 2026-09-17T03:46:12+00:00: Recorded command exit 0; command argv SHA-256
+  6a7b8a9561df316593aef3f953d5bec19bc7e1349eab88c6aeb5ca389ed62ecb.
