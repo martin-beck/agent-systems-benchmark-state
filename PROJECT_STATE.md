@@ -23,21 +23,21 @@ Generated from local Git and GitHub. Do not edit.
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
 | #197 | `feature/ar-1248-strict-replay-cli-contract@7d9c2ee2e08b` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): define strict offline replay consumer contract |
 | #207 | `feature/ar-1262-runtime-owned-launch-authority@c009185748a4` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(runtime): issue strict-replay launch authority |
-| #208 | `feature/ar-1282-authenticated-replay-transport@b44be60fb9f1` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED: | feat(runtime): add bounded authenticated replay transport |
+| #208 | `feature/ar-1282-authenticated-replay-transport@b44be60fb9f1` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(runtime): add bounded authenticated replay transport |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35168096507 | `b44be60fb9f1` | pull_request | Fault assurance | queued:- |
-| 35168096428 | `b44be60fb9f1` | pull_request | Agent Workflow Quality shadow | in_progress:- |
-| 35168096420 | `b44be60fb9f1` | pull_request | Huawei MIT source headers | in_progress:- |
-| 35168096413 | `b44be60fb9f1` | pull_request | Hosted portability and native qualification | queued:- |
-| 35168096410 | `b44be60fb9f1` | pull_request | Rust verification | queued:- |
+| 35168096507 | `b44be60fb9f1` | pull_request | Fault assurance | in_progress:- |
+| 35168096428 | `b44be60fb9f1` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 35168096420 | `b44be60fb9f1` | pull_request | Huawei MIT source headers | completed:success |
+| 35168096413 | `b44be60fb9f1` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 35168096410 | `b44be60fb9f1` | pull_request | Rust verification | in_progress:- |
 | 35168096405 | `b44be60fb9f1` | pull_request | Repository quality | in_progress:- |
 | 35168096404 | `b44be60fb9f1` | pull_request | Formal assurance | queued:- |
-| 35168096401 | `b44be60fb9f1` | pull_request | Emulated aarch64 portability | pending:- |
-| 35167664458 | `a455d5ea09b2` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 35168096401 | `b44be60fb9f1` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 35167664458 | `a455d5ea09b2` | pull_request | Emulated aarch64 portability | completed:cancelled |
 | 35167664432 | `a455d5ea09b2` | pull_request | Formal assurance | completed:failure |
 | 35167664413 | `a455d5ea09b2` | pull_request | Huawei MIT source headers | completed:success |
 | 35167664410 | `a455d5ea09b2` | pull_request | Fault assurance | completed:success |
