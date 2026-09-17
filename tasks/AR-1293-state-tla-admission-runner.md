@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T18:34:58+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Independent exact-head review of candidate 36440a1e1 and AR-1304 923378246; after green review run launcher on clean pinned images, verify receipt digests, then required and full QEMU gates.",
+  "next_action": "Independent exact-head review of 2bbf0b285; if green, invoke launcher on clean pinned images and inspect receipt/serial/attestation before accepting required/full qualification.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 304,
+  "task_revision": 305,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T18:05:39+00:00",
+  "updated_at": "2026-09-17T18:05:59+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -1038,3 +1038,13 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T18:05:39+00:00: Recorded command exit 0; command argv SHA-256
   50bb0d7da5637eb7a143e433f142749a0a1d9bfed261038a195ac93a3af293c7.
+
+- 2026-09-17T18:05:59+00:00: Review fixes committed as signed+DCO
+  2bbf0b285b026578bf4139cfabfd77baaf48cece. Shared VM_VCPU_COUNT=8 and tier timeout_for_tier are
+  used; normal package imports work. qemu_runner now executes argv-only QEMU with bounded timeout,
+  captures serial, and writes result receipt. Command binds no NIC, 32GiB/8-vCPU VM, data UUID
+  serial/fw_cfg, tier runtime. Receipt binds candidate==seed source, command/serial/image/JAR/JDK
+  digests, architecture, UUID, VM containment and result. Ruff check+format pass, mypy with
+  follow-imports=skip passes, focused suite 23/23 passes. Latest test exit-1 was stale test call
+  missing new receipt command/serial/result parameters; corrected and rerun green. Candidate
+  worktree clean.
