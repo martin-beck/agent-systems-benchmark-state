@@ -10,6 +10,7 @@ import json
 import os
 import sys
 import tempfile
+import subprocess
 import unittest
 from argparse import Namespace
 from pathlib import Path
@@ -283,6 +284,16 @@ class TlcRunnerTests(unittest.TestCase):
     def test_guest_seed_rejects_unknown_tier(self) -> None:
         with self.assertRaisesRegex(ValueError, "unknown formal tier"):
             GUEST.build_user_data("unknown")
+
+    def test_guest_seed_normal_import_renders(self) -> None:
+        completed = subprocess.run(
+            [sys.executable, "-c", "from tools.guest_seed import build_user_data; print(build_user_data('full-exhaustive'))"],
+            cwd=ROOT,
+            check=True,
+            capture_output=True,
+            text=True,
+        )
+        self.assertIn("TLC_TIMEOUT_SECONDS=7200", completed.stdout)
 
 
 if __name__ == "__main__":

@@ -5,7 +5,10 @@
 
 from __future__ import annotations
 
-from tier_profiles import timeout_for_tier
+try:
+    from tier_profiles import timeout_for_tier
+except ModuleNotFoundError:  # pragma: no cover - supports normal package imports
+    from .tier_profiles import timeout_for_tier
 
 
 def environment_for_tier(tier: str) -> dict[str, str]:
