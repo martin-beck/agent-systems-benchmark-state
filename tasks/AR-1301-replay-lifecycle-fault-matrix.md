@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 133,
+  "task_revision": 134,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T11:23:52+00:00",
+  "updated_at": "2026-09-17T11:25:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -382,3 +382,6 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
   authenticated_replay_boundary_rejects... is direct unit coverage and
   native_supervisor_fault_matrix uses only shell/curl fixtures. AR remains in progress; no
   publication authorized until supervised authenticated negative cases execute end to end.
+
+- 2026-09-17T11:25:29+00:00: Recorded command exit 0; command argv SHA-256
+  fac6e4880e7d891708f96ec317c69f057cdfb4b4f9bf081daf63b8afe33ba8d6.
