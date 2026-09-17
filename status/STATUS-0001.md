@@ -7,13 +7,13 @@
 
 ## Portfolio overview
 
-**330 ARs tracked** across 6 active status categories.
+**330 ARs tracked** across 7 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 0 |
-| **Blocked** | Cannot proceed until its recorded blocker clears | 49 |
+| **Open** | Dependency-ready and available to claim | 1 |
+| **Blocked** | Cannot proceed until its recorded blocker clears | 48 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 212 |
@@ -386,7 +386,7 @@ flowchart LR
         AR_1290["AR-1290 - Done"]:::status_done
         AR_1291["AR-1291 - Done"]:::status_done
         AR_1292["AR-1292 - Blocked"]:::status_blocked
-        AR_1293["AR-1293 - Blocked"]:::status_blocked
+        AR_1293["AR-1293 - Open"]:::status_open
         AR_1294["AR-1294 - Blocked"]:::status_blocked
         AR_1295["AR-1295 - Blocked"]:::status_blocked
         AR_1296["AR-1296 - Done"]:::status_done
@@ -1641,7 +1641,13 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md): Supervised replay lifecycle fault matrix | coordinator-ar1301-lifecycle-20260917 | Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end. | Promote only after AR-1287 and AR-1300 are done; implement the executable supervised replay lifecycle fault matrix and qualify it on the approved runner. |
 
-### Blocked (49)
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Unclaimed | Repair the state-repository TLA admission runner and truthful worktree metadata. | Provide a clean CI/VM runner with portable timeout/prlimit capacity and adequate swap, then rerun portable-smoke; otherwise resume AR-1293 only when that infrastructure is available. Candidate f16d2cb41 remains the reviewed code checkpoint. |
+
+### Blocked (48)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1676,7 +1682,6 @@ flowchart LR
 | P0 | [AR-1284](../tasks/AR-1284-runtime-strict-replay-lifecycle.md): Runtime-owned strict-replay lifecycle execution | Unclaimed | Connect authenticated replay transport to the runtime-owned primary strict-replay lifecycle. | Split a runtime-owned launch-factory/CLI entrypoint successor: current protected main has only caller-constructible ReplayTransportIssuer and SandboxBackend APIs, so AR-1284 cannot safely wire primary replay without fabricating authority. |
 | P0 | [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md): Supervised strict-replay cassette lifecycle | Unclaimed | Execute strict-replay cassettes through the runtime-owned supervised lifecycle. | Await approved delegated namespace runner; then add cancellation, timeout, crash, restart and egress lifecycle fixtures. |
 | P0 | [AR-1292](../tasks/AR-1292-tla-provenance-repair.md): Pinned TLA+ artifact provenance repair | Unclaimed | Repair or formally retain the pinned TLA+ artifact provenance mismatch blocking formal assurance. | Await independently verifiable TLA+ provenance: a signed/attested immutable v1.8.0 asset bound to its source revision, or a deterministic source-build qualification for the current 142d0ba release. Do not update only hash/size or rerun PR #119 until that evidence exists. |
-| P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Unclaimed | Repair the state-repository TLA admission runner and truthful worktree metadata. | Provide a clean CI/VM runner with portable timeout/prlimit capacity and adequate swap, then rerun portable-smoke; otherwise resume AR-1293 only when that infrastructure is available. Candidate f16d2cb41 remains the reviewed code checkpoint. |
 | P0 | [AR-1294](../tasks/AR-1294-state-gate-baseline.md): State formal-gate baseline integrity | Unclaimed | Restore vendor and formal admission baseline integrity needed to qualify AR-1293. | Audit the vendor lock/digest mismatch and root-owned TLC admission lock; repair only through immutable provenance and owner-safe lock handling, then rerun full state/formal gates. |
 | P0 | [AR-1295](../tasks/AR-1295-vendor-fixture-v037.md): Coordinator vendor v0.3.7 fixture alignment | Unclaimed | Align stale coordinator vendor tests with the verified immutable v0.3.7 pin. | Update stale coordinator vendor test fixtures from v0.3.5 to verified immutable v0.3.7 and rerun the complete state test suite without changing vendor or handoffctl code. |
 | P0 | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | Unclaimed | Provision a clean portable TLC CI/VM runner for state formal admission. | Provision or attach a clean x86_64 CI/VM runner with an effective cgroup memory limit of at least 32 GiB, then rerun signed runner commit 5bd411e19 at full-exhaustive; portable-smoke and pr-publication pass on the 20 GiB profile. |
@@ -1724,4 +1729,3 @@ flowchart LR
 | P0 | [AR-1215](../tasks/AR-1215-result-comparison.md): Multi-agent result comparison tutorial | Unclaimed | Teach conservative comparison of multiple agents from the same benchmark. | Implement the syntax-checked tutorial for comparing two or more agents on one benchmark definition. |
 | P0 | [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md): ASB tutorial freshness CI and documentation qualification | Unclaimed | Continuously keep ASB tutorial commands and steps syntactically current. | Implement the repository-wide tutorial discovery and syntax-freshness CI gate after all tutorial contracts are defined. |
 | P0 | [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Unclaimed | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. |
-| P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
