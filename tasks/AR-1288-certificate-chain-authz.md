@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1288-certificate-chain-authz",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T04:39:29+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0813"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1288-certificate-chain-authz",
   "observed_dirty": 0,
   "observed_head": "2fd90557a4e7be32fab590f47bc501462127c1c1",
-  "owner": "asb_ar1024_lifecycle_router",
+  "owner": "",
   "plan": "../plans/AR-1288.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Runtime certificate issuance and chain validation",
-  "updated_at": "2026-09-17T02:40:11+00:00",
+  "updated_at": "2026-09-17T02:44:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1288-certificate-chain-authz"
 }
 ---
@@ -56,3 +56,6 @@ must not reuse unmerged strict-replay or asb-tui branches.
   asb-control --lib passes 51/51. Existing asb-control has mTLS frame transport,
   AuthEnroll/rotate/revoke and pairing identity contracts but no certificate
   issuance/chain-validation module, confirming successor scope.
+
+- 2026-09-17T02:44:08+00:00: Worker stopped after baseline setup without implementation; preserve
+  baseline evidence and reopen ownerless for reassignment.
