@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1302-portable-tlc-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T12:47:49+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1302",
   "next_action": "Run a fresh disposable v10 guest as user asb with XDG_RUNTIME_DIR and DBUS_SESSION_BUS_ADDRESS set, TLC_CGROUP_MODE=required, pinned offline JDK/JAR, and capture terminal attestation; then stop stale generic VM 1928184 through handoffctl and record cleanup.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "codex-ar1302-runner-20260917-vm2",
+  "owner": "",
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 274,
+  "task_revision": 275,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T11:07:39+00:00",
+  "updated_at": "2026-09-17T11:07:57+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -875,3 +875,14 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
 
 - 2026-09-17T11:07:39+00:00: Recorded command exit 0; command argv SHA-256
   074e679debc66266e3d3c5bc31207e7c3084bb3d2927c713902824e512541602.
+
+- 2026-09-17T11:07:57+00:00: 2026-09-17T11:08:10Z: Reclaimed AR-1302 and repaired several runner
+  layers. v14 proved guest user-systemd required containment can start, then failed only for 8 GiB
+  root capacity. Enlarged clean offline data disk to 16 GiB; v15/v16 exposed and fixed evidence/temp
+  ownership issues. Fresh v17/v18/v19/v20 retries were bounded and stopped after cloud-init
+  preflight stalled before verify; the guest user-systemd bus/transient-unit path is not reliably
+  usable from noninteractive cloud-init. No terminal full-exhaustive attestation exists. Exact next
+  action: provision a guest image with user-systemd/dbus preconfigured at boot (bus socket and
+  user@1000 ready before cloud-final) or an approved system-scope cgroup launcher accepted by the
+  unchanged required attestation; then run exact candidate f16d2cb41 once on a clean 16 GiB+ data
+  disk and capture all model outcomes plus attestation. No gate was weakened.
