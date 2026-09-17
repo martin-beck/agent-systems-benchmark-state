@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1288](tasks/AR-1288-certificate-chain-authz.md): Runtime certificate issuance and chain validation | Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814. | Signed exact head 01bf266 enforces cryptographic issue_der only: pinned DER trust anchor, offline rustls/webpki validation, intermediate DER digest/order binding, parsed DER subject-to-pairing binding, enrolled endpoint binding, generation revocation, strict identity schema and generated certificate-identity schema. Full offline locked workspace tests and workspace Clippy -D warnings pass; focused certificate tests 7/7 pass. Next: push exact head and request independent re-review; do not publish until review approves. | asb_ar0909_lifecycle_repair |
+| P1 | [AR-1288](tasks/AR-1288-certificate-chain-authz.md): Runtime certificate issuance and chain validation | Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814. | Signed exact head 35c49a9 closes schema parity: certificate identity digest fields require lowercase 64-hex, role enum/length, schema_version const 1, generation/validity minimums; generated artifact and schema assertions are updated. Cryptographic issue_der remains mandatory with DER chain/order/subject/endpoint/revocation checks. Focused certificate tests 7/7, offline locked workspace tests, and workspace Clippy -D warnings pass. Next: push exact head and request independent re-review. | asb_ar0909_lifecycle_repair |
 
 ## Open
 
