@@ -19,11 +19,11 @@
   "plan": "../plans/AR-1286.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Execute strict-replay cassettes through the runtime-owned supervised lifecycle.",
-  "task_revision": 64,
+  "task_revision": 65,
   "title": "Supervised strict-replay cassette lifecycle",
-  "updated_at": "2026-09-17T06:04:28+00:00",
+  "updated_at": "2026-09-17T06:05:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1286-supervised-replay-lifecycle"
 }
 ---
@@ -215,3 +215,7 @@ do not touch or claim asb-tui behavior.
   tests, and clippy pass locally except delegated lifecycle remains unqualified: host bwrap
   namespace creation fails Resource temporarily unavailable. PR #197/#207 remain open stale
   predecessors and must not merge independently; requalify #214 on a capable delegated runner.
+
+- 2026-09-17T06:05:34+00:00: Reopen to integrate successor branch with latest protected main so
+  hosted immutable-source evidence can run; preserve signed feature commits and resolve only
+  mechanical conflicts.
