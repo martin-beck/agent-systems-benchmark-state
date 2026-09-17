@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1304.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Create a clean required-containment QEMU runner for formal publication evidence.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Required-tier QEMU user-bus runner",
-  "updated_at": "2026-09-17T15:03:17+00:00",
+  "updated_at": "2026-09-17T15:03:34+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1304-required-tier-qemu-runner"
 }
 ---
@@ -241,3 +241,6 @@ logs, or claim full-exhaustive evidence before required attestation is green.
   in this turn; prior exact trial remains Transport endpoint is not connected with no required
   attestation. Next action: run one bounded fresh seed/QEMU retry, verify systemctl --user
   is-system-running and transient success, then run exact pr-publication.
+
+- 2026-09-17T15:03:34+00:00: Signed systemd-activation repair 2def1851e is ready; run fresh QEMU
+  required transient and pr-publication retry
