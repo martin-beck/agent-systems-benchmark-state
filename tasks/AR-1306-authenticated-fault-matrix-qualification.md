@@ -8,7 +8,7 @@
     "AR-1287"
   ],
   "id": "AR-1306",
-  "next_action": "Repair commit 1ab79c1 is signed/DCO and pushed to PR #222. Focused matrix, full locked workspace tests, fmt, clippy and docs pass. Release build handoff failed only with coordinator LOCK_TIMEOUT after 10s due concurrent AR-1293 reconciliation; retry build after lock clears, then monitor refreshed exact-head CI.",
+  "next_action": "Repair commit 1ab79c1 is signed/DCO and pushed to PR #222. Focused matrix, full locked workspace tests, fmt, clippy, docs, and release build all pass. Refresh PR #222 exact-head CI for 1ab79c1 and obtain independent approval; do not merge until all checks/review green.",
   "observed_branch": "feature/ar-1306-authenticated-fault-matrix-qualification",
   "observed_dirty": 0,
   "observed_head": "1ab79c1faaff483bd419ca4d2d184201b8335566",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the real authenticated strict-replay service and fault matrix missing from PR #221.",
-  "task_revision": 72,
+  "task_revision": 73,
   "title": "Authenticated strict-replay fault-matrix qualification",
-  "updated_at": "2026-09-17T22:06:51+00:00",
+  "updated_at": "2026-09-17T22:07:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1306-authenticated-fault-matrix-qualification"
 }
 ---
@@ -247,3 +247,7 @@ publication, independent review, green exact-head CI, protected merge and post-m
 
 - 2026-09-17T22:06:51+00:00: Recorded command exit 0; command argv SHA-256
   b49a90ee600c1023cee9ee9f9e8a4f9a06c53eef8c48d3932d88e482126c7c01.
+
+- 2026-09-17T22:07:14+00:00: Retry after coordinator lock cleared: cargo build --locked --workspace
+  --release passed. All local applicable gates are now terminal green; candidate remains clean and
+  exact pushed head 1ab79c1.
