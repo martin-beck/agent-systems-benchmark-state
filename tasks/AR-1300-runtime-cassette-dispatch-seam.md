@@ -8,7 +8,7 @@
     "AR-1285"
   ],
   "id": "AR-1300",
-  "next_action": "Add direct positive/negative operation and wire tests, then rerun focused and full locked gates.",
+  "next_action": "Run exact-head independent review and hosted PR #217 checks; fix any failures, then merge only after all required checks are green.",
   "observed_branch": "feature/ar-1300-runtime-cassette-dispatch-seam",
   "observed_dirty": 0,
   "observed_head": "405f68f0a957cf338a7efd958f6162f39729443d",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect runtime-issued cassette operations to the real strict-replay dispatch path.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Runtime-to-replay cassette dispatch seam",
-  "updated_at": "2026-09-17T07:18:57+00:00",
+  "updated_at": "2026-09-17T07:19:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1300-runtime-cassette-dispatch-seam"
 }
 ---
@@ -156,3 +156,13 @@ fixtures/tests. Do not modify asb-tui or coordinator implementation.
   c03ba282c60956bb78b11e580cef9581dc9ec4d4af52f9f3a99a0a45745714ca.
 
 - 2026-09-17T07:18:57+00:00: Heartbeat by ar1300_dispatch.
+
+- 2026-09-17T07:19:00+00:00: Signed/DCO implementation checkpoint 405f68f pushed from clean
+  protected-origin/main worktree and PR #217 opened. RuntimeLaunchContext now issues a one-shot
+  private generation-authenticated operation; CLI serializes the actual cassette request, dispatches
+  through StrictReplayService, receives/decodes the cassette response, and emits response
+  status/digest. Negative coverage rejects malformed response shapes, credential-bearing operation
+  headers, duplicate operation use, handler failure, stale generation, and oversized frames. Focused
+  libs 145 tests green, full locked workspace suite green (with only pre-existing environment-gated
+  ignores), clippy/rustdoc/release build green. Earlier command failures and compile defect were
+  separately checkpointed.
