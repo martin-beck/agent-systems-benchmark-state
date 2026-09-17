@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-1288",
-  "next_action": "PR #210 now points to exact signed head 7b3ff1d3a87436c2a7299d452bb4220dd7847a4c after adding regenerated formal/Cargo.lock for x509-parser. The prior Loom failure was stale-lock-only; formal artifact-acquisition test had one Os 26 Text file busy environment race, then 3/3 bounded focused reruns passed. Fresh hosted exact-head checks are pending; do not merge until all required checks and final independent review are green.",
+  "next_action": "PR #210 exact head 7b3ff1d3a87436c2a7299d452bb4220dd7847a4c remains under hosted validation. Green: Loom/state, TLC/Alloy, Kani, fuzz, mutation, platform, retained-faults, headers, AWQ. Pending: emulated aarch64, Policy/coverage/supply-chain, and Rust checks. Formal lock repair is pushed and separately tracked by PR #211; keep AR-1288 open and do not merge until all PR #210 checks plus final independent review are green.",
   "observed_branch": "feature/ar-1288-certificate-chain-authz",
   "observed_dirty": 0,
   "observed_head": "7b3ff1d3a87436c2a7299d452bb4220dd7847a4c",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814.",
-  "task_revision": 129,
+  "task_revision": 130,
   "title": "Runtime certificate issuance and chain validation",
-  "updated_at": "2026-09-17T03:21:42+00:00",
+  "updated_at": "2026-09-17T03:22:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1288-certificate-chain-authz"
 }
 ---
@@ -394,3 +394,8 @@ must not reuse unmerged strict-replay or asb-tui branches.
 
 - 2026-09-17T03:21:42+00:00: Recorded command exit 0; command argv SHA-256
   82ae1cc7db39aa3581d4ec213843cb8a33e7b54d15f5cbbd4e28c46ddcd818d1.
+
+- 2026-09-17T03:22:02+00:00: Fresh exact-head PR #210 poll: head 7b3ff1d; completed successes
+  Loom/state, TLC/Alloy, Kani, fuzz, mutation, platform, retained-faults, headers, AWQ. Aarch64,
+  policy, Rust still IN_PROGRESS. One transient coordinator LOCK_TIMEOUT occurred during poll;
+  controlled retry succeeded. Worktree clean and signed.
