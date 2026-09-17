@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T07:20:59+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Reconcile the still-failing vendor fixture contract to coordinator v0.3.7 and provide a host with enough thread capacity for the portable TLC VM; then rerun full state and formal gates. Candidate 53dd96389 is signed and focused-green but is not publishable while 133-test vendor failures and TLC EAGAIN remain.",
+  "next_action": "Restore immutable vendor verify.sh/README digests while retaining state-owned private admission runner through supported wrapper, then rerun vendor, full quality, and portable/pr/full formal tiers.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T06:50:59+00:00",
+  "updated_at": "2026-09-17T06:55:38+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -191,3 +191,9 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 - 2026-09-17T06:49:00+00:00: Claimed by codex-ar1293-recovery-20260917.
 
 - 2026-09-17T06:50:59+00:00: Heartbeat by codex-ar1293-recovery-20260917.
+
+- 2026-09-17T06:55:38+00:00: Progress checkpoint: candidate v2 rebased onto current main e00bd0782;
+  full state suite passed 144 tests and focused TLC runner suite passed 10 tests. Ruff, mypy, and
+  source headers pass. Candidate formal vendor files still need restoration to the immutable v0.3.7
+  digests after the worker-private runner changes; then rerun vendor and formal gates. No product,
+  asb-tui, or external root-owned lock touched.
