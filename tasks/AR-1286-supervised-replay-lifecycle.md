@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1286-supervised-replay-lifecycle",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T08:00:38+00:00",
   "depends_on": [
     "AR-1282",
     "AR-1285",
@@ -15,15 +15,15 @@
   "observed_branch": "feature/ar-1286-supervised-replay-lifecycle",
   "observed_dirty": 1,
   "observed_head": "d8064117cdebd2d1fa84cd4e65469cc802e6d281",
-  "owner": "",
+  "owner": "codex-ar1286-repair",
   "plan": "../plans/AR-1286.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Execute strict-replay cassettes through the runtime-owned supervised lifecycle.",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Supervised strict-replay cassette lifecycle",
-  "updated_at": "2026-09-17T06:00:35+00:00",
+  "updated_at": "2026-09-17T06:00:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1286-supervised-replay-lifecycle"
 }
 ---
@@ -174,3 +174,5 @@ do not touch or claim asb-tui behavior.
 
 - 2026-09-17T06:00:35+00:00: Resume for a narrow secure descriptor read fix in the owned CLI
   boundary; delegated lifecycle remains separately blocked and will stay fail-closed.
+
+- 2026-09-17T06:00:38+00:00: Claimed by codex-ar1286-repair.
