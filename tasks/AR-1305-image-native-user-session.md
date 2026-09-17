@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1305-image-native-user-session",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T17:07:43+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1302"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "codex-ar1305-image-session-20260917",
+  "owner": "",
   "plan": "../plans/AR-1305.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Qualify image-native D-Bus user-session support for required TLC containment.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Image-native user-session support",
-  "updated_at": "2026-09-17T15:07:48+00:00",
+  "updated_at": "2026-09-17T15:08:13+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1305-image-native-user-session"
 }
 ---
@@ -42,3 +42,10 @@ limits and fail-closed behavior remain unchanged.
 
 - 2026-09-17T15:07:48+00:00: Recorded command exit 0; command argv SHA-256
   ad1ed7ff263a54de81425f1be1569bf15d2356c5b428c57abc1f01328929e8b7.
+
+- 2026-09-17T15:08:13+00:00: Host has dbus-user-session installed (1.14.10-4ubuntu4.1), but no
+  offline dbus-user-session package artifact or image customization tool is available under
+  /srv/data/projects to build a fresh immutable guest. Existing prepared qcow2 is stale and cannot
+  be mutated/reused as provenance. No image-native transient qualification was produced. Next
+  action: stage a reviewed dbus-user-session package/base-image artifact under project storage,
+  build a fresh image, then prove user@1000/systemd-run transient success with all AR-1304 limits.
