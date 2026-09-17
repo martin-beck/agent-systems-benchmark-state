@@ -13,17 +13,17 @@
   "id": "AR-1286",
   "next_action": "Signed checkpoint 08bb157 adds ReplayLaunchContext::spawn, consuming opaque launch input and benchmark lease through SandboxBackend::spawn_launch. Runtime package locked tests 50 unit/integration plus 2 doctests pass. Next wire actual CLI cassette execution and bounded lifecycle fault fixtures.",
   "observed_branch": "feature/ar-1286-supervised-replay-lifecycle",
-  "observed_dirty": 1,
-  "observed_head": "08bb15738759dea12fe830ea54246370bffff2ff",
+  "observed_dirty": 0,
+  "observed_head": "eef68946cae5a67826f102eb88a6597619fd69f6",
   "owner": "asb_ar1286_supervised_replay_lifecycle",
   "plan": "../plans/AR-1286.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute strict-replay cassettes through the runtime-owned supervised lifecycle.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Supervised strict-replay cassette lifecycle",
-  "updated_at": "2026-09-17T02:23:34+00:00",
+  "updated_at": "2026-09-17T02:23:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1286-supervised-replay-lifecycle"
 }
 ---
