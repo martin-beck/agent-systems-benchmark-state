@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Runtime certificate issuance and chain validation",
-  "updated_at": "2026-09-17T02:52:50+00:00",
+  "updated_at": "2026-09-17T02:52:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1288-certificate-chain-authz"
 }
 ---
@@ -126,3 +126,6 @@ must not reuse unmerged strict-replay or asb-tui branches.
   bounds; documented offline no-fallback certificate boundary in docs/AUTH_ENROLLMENT.md. Product
   commit 871d2f7ee4ae13108510c9bf2c7baa45627473f2 is SSH-signed by Martin Beck and has matching
   Signed-off-by. cargo test --locked -p asb-control --lib: 56/56 passed.
+
+- 2026-09-17T02:52:59+00:00: Recorded command exit 0; command argv SHA-256
+  84b337450e1940a3484de7020a0103bfe0d26b27f5478cf84ea4798eeff1c8fe.
