@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Run full applicable state suite plus Ruff/format/mypy/privacy/schema checks against exact 7fc6a246b; independently review complete diff; monitor PR #24 exact-head CI/review, then run clean exact-head portable and required tiers with sanitized receipts.",
+  "next_action": "Obtain independent complete-diff review for 1fd1432eb, monitor PR #24 exact-head CI; then run disposable digest-pinned no-network QEMU portable-smoke repeatedly and required tiers, retaining sanitized schema-valid receipts.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-17T22:47:10+00:00",
+  "updated_at": "2026-09-17T22:47:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -218,3 +218,10 @@ and protected publication sequence.
   ff052edd1e2f19032f140ceca1cc5232f5c0488311ef3a0b6f27895850b67e60.
 
 - 2026-09-17T22:47:10+00:00: Heartbeat by codex-ar1307-runner-repair-20260918.
+
+- 2026-09-17T22:47:13+00:00: Repair is now exact PR head 1fd1432eb (signed+DCO), pushed to PR #24.
+  Full state suite passed 163/163; Ruff check and format passed; source-header verification passed
+  32 files; vendor v0.3.7 verification passed; strict mypy passed 20 files; focused runner/launcher
+  passed 29/29. Exit-1 at 22:45:19 was Ruff S108 on the literal canonical /tmp path and is fixed by
+  constructed constant; the next exit-2 was an operator-invoked unsupported --check option for
+  check_source_headers.py, rerun correctly with --root and passed. No formal VM tier evidence yet.
