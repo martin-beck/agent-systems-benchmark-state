@@ -10,7 +10,7 @@
     "AR-1239"
   ],
   "id": "AR-1285",
-  "next_action": "PR #209 is visible OPEN at exact head 9fde4d8; independent review requested and hosted checks are running. Keep merge blocked until all required checks and review are green.",
+  "next_action": "Token binding fix is implemented in launch_factory.rs and sandbox.rs; focused launch_factory tests pass 5/5 including mismatched-context rejection. Commit signed/DCO, run locked full gates, force-with-lease push PR #209, then request re-review.",
   "observed_branch": "feature/ar-1285-runtime-launch-factory",
   "observed_dirty": 2,
   "observed_head": "9fde4d8a6ff1c820fbfa4fc0214c1e36ea7f86d5",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a runtime-owned launch factory for authenticated strict-replay CLI execution.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Runtime-owned strict-replay launch factory",
-  "updated_at": "2026-09-17T01:56:17+00:00",
+  "updated_at": "2026-09-17T01:56:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1285-runtime-launch-factory"
 }
 ---
@@ -263,3 +263,10 @@ separate successor rather than claiming strict-replay execution.
 
 - 2026-09-17T01:56:17+00:00: Recorded command exit 0; command argv SHA-256
   857f990d5ceba0b79266ac4f90d4a539844b74fffcead193ea586341b22552ff.
+
+- 2026-09-17T01:56:37+00:00: Review blocker diagnosed: RuntimeLaunchToken previously carried only a
+  nonce and could be reused with a different launch context. Added SHA-256 binding over cassette,
+  program/args/env, lease class/CPUs, relay handoff, supervisor generation/relay/route and pinned
+  command digests; attestation now receives input/lease/cassette and derives this binding. Focused
+  runtime suite passes 5/5. Prior exit-1 was the expected handoffctl cargo-fmt cwd/manifest
+  invocation failure; rerun with explicit worktree manifest succeeded.
