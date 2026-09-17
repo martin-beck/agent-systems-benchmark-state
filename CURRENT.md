@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1290](tasks/AR-1290-dependabot-dco-boundary-recovery.md): Dependabot DCO boundary recovery | Recover protected-main DCO assurance for the immutable Dependabot serde commit without weakening broad policy. | Monitor updated PR #212 exact head 418960215134b89710e5549351c5bf30ad17d3b7 until all required checks terminal-success; independent exact-head re-review is required after fuzz policy fix. Do not merge until every check passes. | asb_ar1024_lifecycle_router |
+| P0 | [AR-1290](tasks/AR-1290-dependabot-dco-boundary-recovery.md): Dependabot DCO boundary recovery | Recover protected-main DCO assurance for the immutable Dependabot serde commit without weakening broad policy. | Independent exact-head review requested for PR #212 head 418960215134b89710e5549351c5bf30ad17d3b7; merge only after reviewer approval using protected signed workflow, then verify post-merge workflows. | asb_ar1024_lifecycle_router |
 
 ## Open
 

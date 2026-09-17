@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T05:52:53+00:00",
   "depends_on": [],
   "id": "AR-1290",
-  "next_action": "Monitor updated PR #212 exact head 418960215134b89710e5549351c5bf30ad17d3b7 until all required checks terminal-success; independent exact-head re-review is required after fuzz policy fix. Do not merge until every check passes.",
+  "next_action": "Independent exact-head review requested for PR #212 head 418960215134b89710e5549351c5bf30ad17d3b7; merge only after reviewer approval using protected signed workflow, then verify post-merge workflows.",
   "observed_branch": "repair/ar-1290-dependabot-dco",
   "observed_dirty": 0,
   "observed_head": "418960215134b89710e5549351c5bf30ad17d3b7",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover protected-main DCO assurance for the immutable Dependabot serde commit without weakening broad policy.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Dependabot DCO boundary recovery",
-  "updated_at": "2026-09-17T03:54:56+00:00",
+  "updated_at": "2026-09-17T03:55:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1290-dependabot-dco"
 }
 ---
@@ -176,3 +176,9 @@ change certificate/runtime behavior, touch asb-tui, or weaken broad policy.
 
 - 2026-09-17T03:54:56+00:00: Recorded command exit 0; command argv SHA-256
   5704b42e0ba9baee7c4abd2e1fa4c926e17f94d27aa7863f3f1240cb1236db1d.
+
+- 2026-09-17T03:55:34+00:00: PR #212 exact head 4189602 is OPEN/MERGEABLE/CLEAN and all 12 required
+  hosted checks are terminal SUCCESS: AArch64 35179405256, Rust 35179405211, Repository quality
+  35179405203, Formal 35179405252, TLC/Loom/Kani, fuzz/fault/mutation, headers, platform and AWQ.
+  Cumulative commits 04ce4ac, 1cff949, 4189602 all have Good SSH signatures and matching Martin DCO.
+  No review is recorded yet; merge is intentionally held.
