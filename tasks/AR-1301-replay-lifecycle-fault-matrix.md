@@ -8,7 +8,7 @@
     "AR-1300"
   ],
   "id": "AR-1301",
-  "next_action": "Promote only after AR-1287 and AR-1300 are done; implement the executable supervised replay lifecycle fault matrix and qualify it on the approved runner.",
+  "next_action": "Candidate a57d111 has full locked workspace/runtime gates and five consecutive native authenticated-cassette runs. Independent review must still add supervised stale/malformed/duplicate/mismatch no-fallback cases and genuine crash-restart evidence before PR publication.",
   "observed_branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "observed_dirty": 0,
   "observed_head": "a57d11140b98a0fe29ca13553a5c272f3dc70d0b",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 100,
+  "task_revision": 101,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T10:10:09+00:00",
+  "updated_at": "2026-09-17T10:11:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -291,3 +291,6 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
 
 - 2026-09-17T10:10:09+00:00: Recorded command exit 0; command argv SHA-256
   0a80e5fef7a7fd1f9619dda5154f8e236f7046b2d753e8434f5dc84d2c1342d8.
+
+- 2026-09-17T10:11:32+00:00: Updated durable next action after runtime-owned authenticated cassette
+  integration and exact full-gate evidence; no completion or publication claim.
