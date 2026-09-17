@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1293-state-tla-admission",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T11:21:03+00:00",
   "depends_on": [],
   "id": "AR-1293",
   "next_action": "Provide a clean CI/VM runner with portable timeout/prlimit capacity and adequate swap, then rerun portable-smoke; otherwise resume AR-1293 only when that infrastructure is available. Candidate f16d2cb41 remains the reviewed code checkpoint.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "",
+  "owner": "codex-ar1293-clean-vm-20260917",
   "plan": "../plans/AR-1293.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T09:20:15+00:00",
+  "updated_at": "2026-09-17T09:21:03+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -232,3 +232,5 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   SHA-256 612b2c..., QEMU 8.2.2 x86_64, 4 vCPU, 16 GiB RAM, 16 GiB guest swap, disposable qcow2
   overlay, no network device, no host mounts. Reclaim and rerun portable-smoke there; preserve
   fail-closed attestation and record guest Java/TLC toolchain evidence.
+
+- 2026-09-17T09:21:03+00:00: Claimed by codex-ar1293-clean-vm-20260917.
