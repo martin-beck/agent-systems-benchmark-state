@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1287-delegated-sandbox-runner",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T09:51:39+00:00",
   "depends_on": [],
   "id": "AR-1287",
   "next_action": "Await approved signed multi-arch delegated runner; preserve AR-1286 fail-closed lifecycle blocker.",
   "observed_branch": "feature/ar-1287-delegated-sandbox-runner",
   "observed_dirty": 0,
   "observed_head": "dba5f9bb6973cbb256695161e83f7a0eee860fb9",
-  "owner": "",
+  "owner": "root",
   "plan": "../plans/AR-1287.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide a delegated runner for real strict-replay child lifecycle qualification.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Delegated sandbox runner capability",
-  "updated_at": "2026-09-17T07:51:33+00:00",
+  "updated_at": "2026-09-17T07:51:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1287-delegated-sandbox-runner"
 }
 ---
@@ -69,3 +69,5 @@ lifecycle completion until the actual child and fault fixtures run in the qualif
   Guest-only AppArmor userns setting enabled. As user asb, unshare -Ur, bwrap --unshare-net, user
   systemd-run scope, and denied-egress probes pass; qualified AR-1286 runtime test passes. Continue
   full lifecycle qualification and record bounded evidence.
+
+- 2026-09-17T07:51:39+00:00: Claimed by root.
