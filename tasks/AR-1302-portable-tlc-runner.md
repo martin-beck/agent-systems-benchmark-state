@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 81,
+  "task_revision": 82,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T07:58:11+00:00",
+  "updated_at": "2026-09-17T08:00:30+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -272,3 +272,6 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   exact full-tier requalification of signed runner 01a3433bb.
 
 - 2026-09-17T07:58:11+00:00: Claimed by coordinator-ar1302-full-20260917.
+
+- 2026-09-17T08:00:30+00:00: Recorded command exit 2; command argv SHA-256
+  833842e3742991924309b636552bb68c9f4ec4ab046a92d8d59f13e308948f63.
