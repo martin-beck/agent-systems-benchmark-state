@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1302-portable-tlc-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T15:38:03+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1302",
   "next_action": "Use run_lifecycle from signed commit 1fd5e31cf to create a fresh overlay, boot the UUID-serial data disk, run guest UUID/mount preflight, then execute f1931686c portable-smoke and capture sanitized terminal attestation. Do not claim qualification from container evidence.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "codex-ar1302-receipt",
+  "owner": "",
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 439,
+  "task_revision": 440,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T13:39:19+00:00",
+  "updated_at": "2026-09-17T13:39:28+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1468,3 +1468,10 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
 
 - 2026-09-17T13:39:19+00:00: Recorded command exit 0; command argv SHA-256
   8acc81309bdea5a810ef52c1679a6cc86a39b94491fa356686d722da66413524.
+
+- 2026-09-17T13:39:28+00:00: Verified qemu-img backing chain for prepared root overlay: overlay
+  SHA256 49d5d97c..., prepared-base SHA256 4bcd7779..., and pinned Ubuntu base SHA256 612b2c0c...;
+  chain is truthful and recorded in signed commit. However no reviewed offline seed/mount service is
+  present in the state runner, and historical private seed scripts cannot be reused. Therefore no
+  guest UUID/mount preflight or f1931686c portable-smoke attestation was produced. Next action:
+  implement a reviewed offline seed/mount service, then launch with -net none.
