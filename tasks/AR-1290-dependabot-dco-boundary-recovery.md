@@ -7,17 +7,17 @@
   "id": "AR-1290",
   "next_action": "Audit whether 07d4b62 is an ancestor of protected main. Prefer closing/superseding the unmerged Dependabot PR and recreating its exact dependency diff in a signed+DCO topic; use a narrowly hash-bound immutable-history attestation only if ancestry proves unavoidable.",
   "observed_branch": "repair/ar-1290-dependabot-dco",
-  "observed_dirty": 2,
-  "observed_head": "04ce4ac5eb93a58b1a1cc79f956698b8a9e0baac",
+  "observed_dirty": 0,
+  "observed_head": "1cff949293446d085787414c4405ac628670d868",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1290.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover protected-main DCO assurance for the immutable Dependabot serde commit without weakening broad policy.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Dependabot DCO boundary recovery",
-  "updated_at": "2026-09-17T03:42:56+00:00",
+  "updated_at": "2026-09-17T03:43:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1290-dependabot-dco"
 }
 ---
