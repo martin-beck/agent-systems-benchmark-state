@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Land the authenticated runtime-to-CLI replay transport foundation.",
-  "task_revision": 67,
+  "task_revision": 68,
   "title": "Authenticated replay transport foundation",
-  "updated_at": "2026-09-17T00:43:11+00:00",
+  "updated_at": "2026-09-17T00:48:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1282-authenticated-replay-transport"
 }
 ---
@@ -221,3 +221,6 @@ claim primary command execution.
   fault/fuzz 35167664410; formal 35167664432; platform 35167664407; policy 35167664409; Rust
   35167664404. AWQ 35167664406 and headers 35167664413 already succeeded. Scope remains transport
   foundation only; no CLI/lifecycle claim.
+
+- 2026-09-17T00:48:45+00:00: Recorded command exit 0; command argv SHA-256
+  c5bce7af5649fc37e89531c4a7b4159d65b2e1222241d4117668195241a51bf4.
