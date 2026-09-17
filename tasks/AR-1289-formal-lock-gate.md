@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the stale formal Cargo.lock required by hosted exact-head gates.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Repair formal lock gate",
-  "updated_at": "2026-09-17T03:26:27+00:00",
+  "updated_at": "2026-09-17T03:27:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1289-formal-lock-gate"
 }
 ---
@@ -135,3 +135,6 @@ be used with `--locked`. Repair and verify this gate independently of feature AR
 
 - 2026-09-17T03:26:27+00:00: Recorded command exit 0; command argv SHA-256
   75a306d0a0e4d07e4161808e5cd5a8e0cab1a971ca1892b917b07f6f57b8733f.
+
+- 2026-09-17T03:27:16+00:00: Recorded command exit 0; command argv SHA-256
+  8255d955fd18dc0494dac132d038c7568c9e65312f1410c6e92335cedd383124.
