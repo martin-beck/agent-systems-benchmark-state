@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 442,
+  "task_revision": 443,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T13:40:27+00:00",
+  "updated_at": "2026-09-17T13:40:38+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1481,3 +1481,6 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   UUID mount and f1931686c smoke.
 
 - 2026-09-17T13:40:27+00:00: Claimed by codex-ar1302-seed.
+
+- 2026-09-17T13:40:38+00:00: Recorded command exit 0; command argv SHA-256
+  26e9887d7eabd4343ad0da0dc7f4cf9e21d4710255065793d04f0585de454883.
