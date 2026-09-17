@@ -1643,7 +1643,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | coordinator_state_cleanup | Provision a clean portable TLC CI/VM runner for state formal admission. | Repair the image unit ordering/activation: require and order After=user@1000.service, use a non-forking Type=simple dbus session daemon with a bounded readiness check on /run/user/1000/bus before cloud-final; then run exactly one clean required full-exhaustive attempt and capture terminal attestation. Do not reuse the stale v10 action or rerun blindly. |
+| P0 | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | coordinator_state_cleanup | Provision a clean portable TLC CI/VM runner for state formal admission. | Image-level bus repair succeeded: user@1000.service and asb-session-bus.service both started before cloud-final. The one clean 32 GiB/8-vCPU/16 GiB-swap/16 GiB-data attempt then failed unchanged required transient containment: Process org.freedesktop.systemd1 exited with status 1; JAR verification passed but no attestation was emitted. Do not rerun until the required transient systemd containment path is repaired. |
 | P1 | [AR-1303](../tasks/AR-1303-hosted-platform-diagnostics.md): Privacy-safe hosted platform failure diagnostics | ar1303_ci_diagnostics | Add privacy-safe fixed diagnostics for hosted platform evidence failures. | Promote only after confirming AR-1301 remains blocked and no worker owns the hosted platform tooling; then implement fixed privacy-safe failure classifications and tests without weakening the fail-closed gate. |
 
 ### Blocked (49)
