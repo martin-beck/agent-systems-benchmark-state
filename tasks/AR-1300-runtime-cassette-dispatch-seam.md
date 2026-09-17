@@ -8,7 +8,7 @@
     "AR-1285"
   ],
   "id": "AR-1300",
-  "next_action": "Continue bounded monitoring of the four pending exact-head checks; if all pass, perform protected merge and post-merge exact-main verification.",
+  "next_action": "Continue bounded monitoring of post-merge exact-main workflows for 9263f8310cbf4d222d09d0d1eaef4b4bdfb72e05; release only after all terminal checks pass.",
   "observed_branch": "feature/ar-1300-runtime-cassette-dispatch-seam",
   "observed_dirty": 0,
   "observed_head": "019038378726405eaf05a77269b8541d9a81d912",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect runtime-issued cassette operations to the real strict-replay dispatch path.",
-  "task_revision": 91,
+  "task_revision": 92,
   "title": "Runtime-to-replay cassette dispatch seam",
-  "updated_at": "2026-09-17T07:42:00+00:00",
+  "updated_at": "2026-09-17T07:42:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1300-runtime-cassette-dispatch-seam"
 }
 ---
@@ -310,3 +310,8 @@ fixtures/tests. Do not modify asb-tui or coordinator implementation.
   053af7feedd1f7ed6365ab2e5c1a91d8968b7b482fb47ff300fb3f3d34a6ff96.
 
 - 2026-09-17T07:42:00+00:00: Heartbeat by ar1300_dispatch.
+
+- 2026-09-17T07:42:13+00:00: Protected merge completed: PR #217 merged at
+  9263f8310cbf4d222d09d0d1eaef4b4bdfb72e05, exact topic parent
+  019038378726405eaf05a77269b8541d9a81d912, signed/DCO merge and tree equality verified. Post-merge
+  push workflows are being monitored; headers, hosted, and fault checks passed at checkpoint.

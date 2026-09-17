@@ -1640,7 +1640,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1299](../tasks/AR-1299.md): Complete authenticated agent catalog identity metadata | root-ar1299-catalog | Complete authenticated agent catalog signer, provenance, SBOM and license metadata. | Await independent exact-head review and all hosted PR #213 checks at b9edf44; do not merge or close issue #164 until both pass. |
-| P0 | [AR-1300](../tasks/AR-1300-runtime-cassette-dispatch-seam.md): Runtime-to-replay cassette dispatch seam | ar1300_dispatch | Connect runtime-issued cassette operations to the real strict-replay dispatch path. | Continue bounded monitoring of the four pending exact-head checks; if all pass, perform protected merge and post-merge exact-main verification. |
+| P0 | [AR-1300](../tasks/AR-1300-runtime-cassette-dispatch-seam.md): Runtime-to-replay cassette dispatch seam | ar1300_dispatch | Connect runtime-issued cassette operations to the real strict-replay dispatch path. | Continue bounded monitoring of post-merge exact-main workflows for 9263f8310cbf4d222d09d0d1eaef4b4bdfb72e05; release only after all terminal checks pass. |
 | P0 | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | codex-ar1302-recovery-20260917 | Provision a clean portable TLC CI/VM runner for state formal admission. | Promote and provision a digest-pinned x86_64 container/VM runner with portable cgroup containment, bounded thread/memory/swap capacity, and owner-private evidence paths for AR-1293. |
 
 ### Blocked (50)
