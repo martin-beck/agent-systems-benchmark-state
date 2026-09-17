@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T15:45:38+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Run owner-authorized portable requalification using /srv/data/projects/asb-state-tlc-vm-32g receipt: verify exact f1931686c data image and attestation hashes, then build a fresh image for 39c8933f5 before required/full gates.",
+  "next_action": "Portable-smoke passed for exact 39c8933f5; run pr-publication on the same candidate-specific VM image, then full-exhaustive only if required tier attests green.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 170,
+  "task_revision": 171,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T14:24:24+00:00",
+  "updated_at": "2026-09-17T14:24:49+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -602,3 +602,11 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T14:24:24+00:00: Recorded command exit 0; command argv SHA-256
   adf5eae46fe3af5ea5e0a214cee276ba26f26bca4f4ca8e24bb4bff55baaffc3.
+
+- 2026-09-17T14:24:49+00:00: Portable requalification terminal green: fresh data image
+  /srv/data/projects/asb-state-tlc-vm-32g/ar1293-39c8933f5-data.raw SHA256
+  15c826232de7726b421a0ac0df883f2a2d95be89472fc2873d866750698f89; guest git HEAD
+  39c8933f555af7add5e39b3d2b88d1726152f471; PORTABLE_SMOKE_RC=0; attestation SHA256
+  6fffdbbfa6daf877c69ed4fe869415841d187488405fed969f2bef5104890472; status success,
+  portable-timeout-prlimit, address_space_max 8G, memory_max 3G, swap_max 3G, heap 2048m, workers 2.
+  Prior RC=1 was seed/env and JDK symlink infrastructure, repaired fail-closed.
