@@ -1615,7 +1615,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | codex-ar1293-tlc-repair-20260917 | Repair the state-repository TLA admission runner and truthful worktree metadata. | Candidate 885d14159 adds the state runner, attestation helper, and bounded admission tests, but release is blocked: full state unittest baseline fails pre-existing coordinator vendor lock/runtime mismatch (runtime 0.3.7 vs vendor lock 0.3.5 and manifest digest mismatch), and canonical formal smoke cannot acquire the existing root/group-owned /tmp/agent-workflow-coordinator-tlc-admission.lock (permission denied). Reconcile the vendor release boundary and runner admission ownership, then review candidate and rerun all state gates; do not touch product or handoffctl. |
+| P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | codex-ar1293-tlc-repair-20260917 | Repair the state-repository TLA admission runner and truthful worktree metadata. | Re-run the exact state and formal gates after the host has sufficient process/thread capacity and after the pre-existing vendor test baseline is reconciled to coordinator v0.3.7; candidate repair 53dd96389 is ready for independent review, but do not publish while unittest vendor failures or TLC VM resource errors remain. |
 
 ### Blocked (48)
 
@@ -1697,3 +1697,4 @@ flowchart LR
 | P0 | [AR-1213](../tasks/AR-1213-benchmark-and-shared-config.md): Benchmark run and shared-agent configuration tutorials | Unclaimed | Teach benchmark execution and extending agents with one shared configuration. | Implement syntax-checked tutorials for one benchmark run and atomic shared configuration across selected agents. |
 | P0 | [AR-1214](../tasks/AR-1214-record-replay.md): LLM response record/replay tutorial | Unclaimed | Teach privacy-safe LLM response recording and strict offline replay. | Implement the syntax-checked record/replay tutorial with synthetic cassette fixtures and no-network CI. |
 | P0 | [AR-1215](../tasks/AR-1215-result-comparison.md): Multi-agent result comparison tutorial | Unclaimed | Teach conservative comparison of multiple agents from the same benchmark. | Implement the syntax-checked tutorial for comparing two or more agents on one benchmark definition. |
+| P0 | [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md): ASB tutorial freshness CI and documentation qualification | Unclaimed | Continuously keep ASB tutorial commands and steps syntactically current. | Implement the repository-wide tutorial discovery and syntax-freshness CI gate after all tutorial contracts are defined. |

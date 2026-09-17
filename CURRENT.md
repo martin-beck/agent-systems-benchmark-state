@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Candidate 885d14159 adds the state runner, attestation helper, and bounded admission tests, but release is blocked: full state unittest baseline fails pre-existing coordinator vendor lock/runtime mismatch (runtime 0.3.7 vs vendor lock 0.3.5 and manifest digest mismatch), and canonical formal smoke cannot acquire the existing root/group-owned /tmp/agent-workflow-coordinator-tlc-admission.lock (permission denied). Reconcile the vendor release boundary and runner admission ownership, then review candidate and rerun all state gates; do not touch product or handoffctl. | codex-ar1293-tlc-repair-20260917 |
+| P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Re-run the exact state and formal gates after the host has sufficient process/thread capacity and after the pre-existing vendor test baseline is reconciled to coordinator v0.3.7; candidate repair 53dd96389 is ready for independent review, but do not publish while unittest vendor failures or TLC VM resource errors remain. | codex-ar1293-tlc-repair-20260917 |
 
 ## Blocked
 

@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T07:08:22+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Candidate 885d14159 adds the state runner, attestation helper, and bounded admission tests, but release is blocked: full state unittest baseline fails pre-existing coordinator vendor lock/runtime mismatch (runtime 0.3.7 vs vendor lock 0.3.5 and manifest digest mismatch), and canonical formal smoke cannot acquire the existing root/group-owned /tmp/agent-workflow-coordinator-tlc-admission.lock (permission denied). Reconcile the vendor release boundary and runner admission ownership, then review candidate and rerun all state gates; do not touch product or handoffctl.",
+  "next_action": "Re-run the exact state and formal gates after the host has sufficient process/thread capacity and after the pre-existing vendor test baseline is reconciled to coordinator v0.3.7; candidate repair 53dd96389 is ready for independent review, but do not publish while unittest vendor failures or TLC VM resource errors remain.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T05:09:29+00:00",
+  "updated_at": "2026-09-17T05:10:26+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -113,3 +113,11 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T05:09:29+00:00: Recorded command exit 0; command argv SHA-256
   9a191e41853225b4eafcc2dd651779e0e822ca2e4be79cd7dfd6e6f95c9073a3.
+
+- 2026-09-17T05:10:26+00:00: Audited candidate 885d14159 and implemented signed commit 53dd96389:
+  owner-private per-worker queue/lock defaults and verify wiring, strict formal/tier-evidence
+  validation, malformed/duplicate manifest rejection, and negative tests. Focused tests (8) plus
+  mypy and ruff pass. Full state unittest ran 133 tests with 1 failure and 2 errors in pre-existing
+  vendor fixtures expecting v0.3.5/digest f91226... while coordinator.vendor.json is v0.3.7; formal
+  portable-smoke downloaded the pinned JAR but TLC failed before model execution with JVM EAGAIN
+  (Cannot create VM thread/host resource exhaustion). No PR or publication.
