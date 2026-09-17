@@ -44,6 +44,11 @@ if SEED_SPEC is None or SEED_SPEC.loader is None:
     raise RuntimeError("cannot load seed profile")
 SEED = importlib.util.module_from_spec(SEED_SPEC)
 SEED_SPEC.loader.exec_module(SEED)
+GUEST_SPEC = importlib.util.spec_from_file_location("guest_seed", ROOT / "tools" / "guest_seed.py")
+if GUEST_SPEC is None or GUEST_SPEC.loader is None:
+    raise RuntimeError("cannot load guest seed")
+GUEST = importlib.util.module_from_spec(GUEST_SPEC)
+GUEST_SPEC.loader.exec_module(GUEST)
 
 
 class TlcRunnerTests(unittest.TestCase):
@@ -246,6 +251,14 @@ class TlcRunnerTests(unittest.TestCase):
         self.assertEqual(full["TLC_MEMORY_MAX"], required["TLC_MEMORY_MAX"])
         with self.assertRaisesRegex(ValueError, "unknown formal tier"):
             SEED.environment_for_tier("unknown")
+
+    def test_guest_seed_renders_execution_timeout(self) -> None:
+        required = GUEST.build_user_data("pr-publication")
+        full = GUEST.build_user_data("full-exhaustive")
+        self.assertIn("TLC_TIMEOUT_SECONDS=1800", required)
+        self.assertIn("RuntimeMaxSec=1800", required)
+        self.assertIn("TLC_TIMEOUT_SECONDS=7200", full)
+        self.assertIn("RuntimeMaxSec=7200", full)
 
 
 if __name__ == "__main__":
