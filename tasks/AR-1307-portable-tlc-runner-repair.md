@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Regenerate seed after GIT environment correction and test expectation update; create fresh data/overlay with unique metadata, rerun portable-smoke, and inspect explicit PORTABLE_SMOKE_RC plus attestation. Do not begin required/full until portable passes.",
+  "next_action": "Repair guest JVM temp confinement: set Java java.io.tmpdir to owner-private /mnt/asb-data/tmp (host /tmp is not writable by asb and JFR fails at TLC startup); rerun focused tests, then fresh data/overlay portable-smoke and require attestation.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 127,
+  "task_revision": 128,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-17T23:37:37+00:00",
+  "updated_at": "2026-09-17T23:38:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -439,3 +439,10 @@ and protected publication sequence.
 
 - 2026-09-17T23:37:37+00:00: Recorded command exit 0; command argv SHA-256
   88caf16c5ba6024ffd36d79c0d74e84ee526b1bee4ae069efeafa1ba890affff.
+
+- 2026-09-17T23:38:48+00:00: Fresh unique-instance portable run executed runcmd, passed
+  user@1000/D-Bus and transient RC=0, then TLC exited 1 at startup with bounded JFR stack
+  (TLAFlightRecorder via TLC.printWelcome) and no attestation. Pinned guest pair is OpenJDK 17.0.20
+  + TLC 2.19 / tla2tools SHA 936a...; likely JFR cannot create temp files because Java defaults to
+  root-owned /tmp while TMPDIR alone does not change java.io.tmpdir. Treat as runner environment
+  failure, not formal success; next patch adds explicit -Djava.io.tmpdir owner-private.
