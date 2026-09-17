@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1286](tasks/AR-1286-supervised-replay-lifecycle.md): Supervised strict-replay cassette lifecycle | Execute strict-replay cassettes through the runtime-owned supervised lifecycle. | Signed clean head 7830724 wires runtime-owned backend/context consumption into CLI replay; cargo test -p asb-runtime and -p asb-cli --locked pass (runtime 50 unit, 3 binary, 8 process, 11 sandbox, 16 scheduler, 2 doctests; CLI 71 unit, 12 capability, 3 e2e, 4 guides, 2 setup, 4 TUI, 3 workflow). Next add qualified positive child plus cancellation/timeout/crash/restart/cleanup and egress fixtures. | asb_ar1286_supervised_replay_lifecycle |
+| P0 | [AR-1286](tasks/AR-1286-supervised-replay-lifecycle.md): Supervised strict-replay cassette lifecycle | Execute strict-replay cassettes through the runtime-owned supervised lifecycle. | Signed head d806411 adds a runtime-issued backend child probe and fail-closed missing-backend test. Qualified child probe is intentionally ignored pending delegated namespace capability: actual spawn reached bwrap and failed ScopeOwnership with bwrap namespace Resource temporarily unavailable. Do not claim positive lifecycle; next provide approved container/VM runner or record successor boundary, then add cancellation/timeout/crash/restart/egress fixtures. | asb_ar1286_supervised_replay_lifecycle |
 
 ## Open
 

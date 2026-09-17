@@ -11,7 +11,7 @@
     "AR-1239"
   ],
   "id": "AR-1286",
-  "next_action": "Signed clean head 7830724 wires runtime-owned backend/context consumption into CLI replay; cargo test -p asb-runtime and -p asb-cli --locked pass (runtime 50 unit, 3 binary, 8 process, 11 sandbox, 16 scheduler, 2 doctests; CLI 71 unit, 12 capability, 3 e2e, 4 guides, 2 setup, 4 TUI, 3 workflow). Next add qualified positive child plus cancellation/timeout/crash/restart/cleanup and egress fixtures.",
+  "next_action": "Signed head d806411 adds a runtime-issued backend child probe and fail-closed missing-backend test. Qualified child probe is intentionally ignored pending delegated namespace capability: actual spawn reached bwrap and failed ScopeOwnership with bwrap namespace Resource temporarily unavailable. Do not claim positive lifecycle; next provide approved container/VM runner or record successor boundary, then add cancellation/timeout/crash/restart/egress fixtures.",
   "observed_branch": "feature/ar-1286-supervised-replay-lifecycle",
   "observed_dirty": 0,
   "observed_head": "d8064117cdebd2d1fa84cd4e65469cc802e6d281",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute strict-replay cassettes through the runtime-owned supervised lifecycle.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Supervised strict-replay cassette lifecycle",
-  "updated_at": "2026-09-17T02:30:31+00:00",
+  "updated_at": "2026-09-17T02:30:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1286-supervised-replay-lifecycle"
 }
 ---
@@ -137,3 +137,10 @@ do not touch or claim asb-tui behavior.
 
 - 2026-09-17T02:30:23+00:00: Recorded command exit 0; command argv SHA-256
   d45d080ff3c9a246adcf89323425cce30285b18d51e7f36bec125afdbc18047c.
+
+- 2026-09-17T02:30:44+00:00: Controlled fixture diagnosis: first attempt failed compile only because
+  ToolPin import was missing; fixed and reran. One-shot qualified child then failed exactly at
+  runtime: SandboxError::ScopeOwnership, bwrap stderr `Creating new namespace failed: Resource
+  temporarily unavailable`. This is an environment capability blocker, not a product assertion; test
+  is now explicitly ignored pending qualified delegated runner. Focused launch_factory tests pass
+  6/6 with 1 capability probe ignored. Signed+DCO head d806411 clean.
