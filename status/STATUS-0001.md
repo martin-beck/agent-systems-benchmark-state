@@ -11,8 +11,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 45 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
@@ -355,7 +355,7 @@ flowchart LR
         AR_1259["AR-1259 - Done"]:::status_done
         AR_1260["AR-1260 - Blocked"]:::status_blocked
         AR_1261["AR-1261 - Blocked"]:::status_blocked
-        AR_1262["AR-1262 - Open"]:::status_open
+        AR_1262["AR-1262 - In progress"]:::status_in_progress
         AR_1263["AR-1263 - Done"]:::status_done
         AR_1264["AR-1264 - Done"]:::status_done
         AR_1265["AR-1265 - Blocked"]:::status_blocked
@@ -1605,11 +1605,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1262](../tasks/AR-1262-runtime-owned-launch-authority.md): Runtime-owned strict-replay launch authority | Unclaimed | Issue runtime-owned authority for supervised strict-replay execution. | Monitor PR #207 exact head c0091857 through terminal required CI; retain merge block until independent review and all checks green. |
+| P0 | [AR-1262](../tasks/AR-1262-runtime-owned-launch-authority.md): Runtime-owned strict-replay launch authority | codex-ar1262-pr-audit-20260917b | Issue runtime-owned authority for supervised strict-replay execution. | Monitor PR #207 exact head c0091857 through terminal required CI; retain merge block until independent review and all checks green. |
 
 ### Blocked (45)
 

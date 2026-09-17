@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1262-runtime-owned-launch-authority",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T05:29:46+00:00",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1262-runtime-owned-launch-authority",
   "observed_dirty": 0,
   "observed_head": "535149950dc4b0ec1105093092689be146972b50",
-  "owner": "",
+  "owner": "codex-ar1262-pr-audit-20260917b",
   "plan": "../plans/AR-1262.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Issue runtime-owned authority for supervised strict-replay execution.",
-  "task_revision": 71,
+  "task_revision": 72,
   "title": "Runtime-owned strict-replay launch authority",
-  "updated_at": "2026-09-17T04:29:44+00:00",
+  "updated_at": "2026-09-17T04:29:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1262-runtime-authority"
 }
 ---
@@ -250,3 +250,5 @@ ownership and bounded lifecycle evidence.
 
 - 2026-09-17T04:29:44+00:00: Reopen solely to replace stale next_action with the verified PR audit
   blocker; no product change.
+
+- 2026-09-17T04:29:46+00:00: Claimed by codex-ar1262-pr-audit-20260917b.
