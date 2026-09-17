@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1293-state-tla-admission",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T14:57:36+00:00",
+  "claim_expires": "2026-09-17T14:59:25+00:00",
   "depends_on": [],
   "id": "AR-1293",
   "next_action": "Release ownerless blocked pending a clean approved 32G VM with available swap and fixed guest JVM; AR-1302 may use the clean runner. Preserve candidate f16d2cb41721bf8f17aa5aa75ab01520aeb91eb8 and all focused/full local evidence; do not claim pr-publication or full-exhaustive formal success.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 108,
+  "task_revision": 109,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T12:57:36+00:00",
+  "updated_at": "2026-09-17T12:59:25+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -401,3 +401,5 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   physical/swap attestation.
 
 - 2026-09-17T12:57:36+00:00: Claimed by codex-ar1293-as-limit-repair-v2.
+
+- 2026-09-17T12:59:25+00:00: Heartbeat by codex-ar1293-as-limit-repair-v2.
