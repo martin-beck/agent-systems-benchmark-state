@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1302-portable-tlc-runner",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T14:50:23+00:00",
   "depends_on": [],
   "id": "AR-1302",
   "next_action": "Data-disk UUID wiring is repaired and proven. Do not run required-pr/full-exhaustive until bounded portable containment capacity prevents native JVM allocation failure; preserve 32 GiB RAM/16 GiB swap/no network/no host mounts and require successful portable-smoke terminal evidence first.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "",
+  "owner": "codex-ar1302-capacity-repair",
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 357,
+  "task_revision": 358,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T12:50:20+00:00",
+  "updated_at": "2026-09-17T12:50:23+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1188,3 +1188,5 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
 - 2026-09-17T12:50:20+00:00: Resume distinct capacity repair: preserve bounded portable containment
   but eliminate JVM native allocation failure; rerun exact preflight and portable-smoke before any
   required/full tier.
+
+- 2026-09-17T12:50:23+00:00: Claimed by codex-ar1302-capacity-repair.
