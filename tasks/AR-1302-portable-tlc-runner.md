@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1302-portable-tlc-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T15:40:27+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1302",
   "next_action": "Use run_lifecycle from signed commit 1fd5e31cf to create a fresh overlay, boot the UUID-serial data disk, run guest UUID/mount preflight, then execute f1931686c portable-smoke and capture sanitized terminal attestation. Do not claim qualification from container evidence.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "codex-ar1302-seed",
+  "owner": "",
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 455,
+  "task_revision": 456,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T13:43:25+00:00",
+  "updated_at": "2026-09-17T13:43:37+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1520,3 +1520,10 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
 
 - 2026-09-17T13:43:25+00:00: Recorded command exit 0; command argv SHA-256
   0b1f87e4d095a1cc628881f507a21c10f3473c82eb6ef9aa608cc89d7e96c6e1.
+
+- 2026-09-17T13:43:37+00:00: Signed seed integration commit 8342538e4 creates deterministic
+  cloud-localds offline seed, attaches it read-only to QEMU, masks only guest wait-online, mounts
+  reviewed data UUID, and cleans seed/overlay/serial in lifecycle finally. Eight focused seed/runner
+  tests pass. Actual VM smoke was not rerun in this lease; prior VM boot reached guest but stalled
+  wait-online before preflight. Next action: run one fresh lifecycle with cloud-localds available,
+  verify guest UUID mount marker, then execute f1931686c portable-smoke.
