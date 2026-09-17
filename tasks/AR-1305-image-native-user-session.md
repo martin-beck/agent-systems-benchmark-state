@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1305.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Qualify image-native D-Bus user-session support for required TLC containment.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Image-native user-session support",
-  "updated_at": "2026-09-17T15:08:13+00:00",
+  "updated_at": "2026-09-17T15:08:48+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1305-image-native-user-session"
 }
 ---
@@ -49,3 +49,6 @@ limits and fail-closed behavior remain unchanged.
   be mutated/reused as provenance. No image-native transient qualification was produced. Next
   action: stage a reviewed dbus-user-session package/base-image artifact under project storage,
   build a fresh image, then prove user@1000/systemd-run transient success with all AR-1304 limits.
+
+- 2026-09-17T15:08:48+00:00: Stage immutable dbus-user-session package/base artifact and build a
+  fresh offline image; do not mutate stale qcow2
