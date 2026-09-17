@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 124,
+  "task_revision": 125,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T13:04:02+00:00",
+  "updated_at": "2026-09-17T13:05:55+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -450,3 +450,6 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   attestation evidence without weakening 3G physical/swap.
 
 - 2026-09-17T13:04:02+00:00: Claimed by coordinator-ar1293-as-limit-repair.
+
+- 2026-09-17T13:05:55+00:00: Recorded command exit 5; command argv SHA-256
+  dab4e6e1d517264d7285304b8328aaaf2c842f2f33d119d7b4f59450b9f96167.
