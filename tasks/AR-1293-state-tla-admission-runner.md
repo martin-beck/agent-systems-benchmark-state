@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1293-state-tla-admission",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T07:01:27+00:00",
+  "claim_expires": "2026-09-17T07:08:22+00:00",
   "depends_on": [],
   "id": "AR-1293",
   "next_action": "Candidate 885d14159 adds the state runner, attestation helper, and bounded admission tests, but release is blocked: full state unittest baseline fails pre-existing coordinator vendor lock/runtime mismatch (runtime 0.3.7 vs vendor lock 0.3.5 and manifest digest mismatch), and canonical formal smoke cannot acquire the existing root/group-owned /tmp/agent-workflow-coordinator-tlc-admission.lock (permission denied). Reconcile the vendor release boundary and runner admission ownership, then review candidate and rerun all state gates; do not touch product or handoffctl.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T05:08:13+00:00",
+  "updated_at": "2026-09-17T05:08:22+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -105,3 +105,5 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T05:08:13+00:00: Recorded command exit 1; command argv SHA-256
   446387fae377a2b2d9117793c36555d90f1bdb3fb13f898b032c8e13d790e74e.
+
+- 2026-09-17T05:08:22+00:00: Heartbeat by codex-ar1293-tlc-repair-20260917.
