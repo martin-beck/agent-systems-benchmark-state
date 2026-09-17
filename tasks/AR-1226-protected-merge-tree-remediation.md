@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Remediate the protected-main merge-tree mismatch from stale-base PR merging.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Protected merge-tree remediation",
-  "updated_at": "2026-09-17T08:39:33+00:00",
+  "updated_at": "2026-09-17T08:39:49+00:00",
   "worktree_key": "agent-systems-benchmark-protected-merge-tree-remediation"
 }
 ---
@@ -103,3 +103,6 @@ current-main requalification; it must not mark the merge usable until policy ass
 
 - 2026-09-17T08:39:26+00:00: Recorded command exit 0; command argv SHA-256
   0a3ccd6fa55f00057d856e3c5afa7d53baa1328ad0f84a897094f7ab69269a2e.
+
+- 2026-09-17T08:39:49+00:00: Recorded command exit 0; command argv SHA-256
+  f2f9d7ab4c4278fd8c4329799525392ad3a810ade035c322f1e3fa826bfa10a3.
