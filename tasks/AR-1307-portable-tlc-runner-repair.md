@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Regenerate unique schema-valid seed after removing incorrect GIT_DIR/GIT_WORK_TREE overrides; launch a new clean 32 GiB overlay and require explicit TLC/PORTABLE_SMOKE_RC plus attestation on data disk. Then repeat required/full tiers.",
+  "next_action": "Regenerate seed after GIT environment correction and test expectation update; create fresh data/overlay with unique metadata, rerun portable-smoke, and inspect explicit PORTABLE_SMOKE_RC plus attestation. Do not begin required/full until portable passes.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 119,
+  "task_revision": 120,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-17T23:35:04+00:00",
+  "updated_at": "2026-09-17T23:35:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -411,3 +411,10 @@ and protected publication sequence.
 
 - 2026-09-17T23:35:04+00:00: Recorded command exit 0; command argv SHA-256
   fe37a9028cfd2ed3d701f2f7b6f6e10ee572313e5beaf5a570563f8c7ee8d49e.
+
+- 2026-09-17T23:35:31+00:00: Latest portable attempt did execute runcmd (transient D-Bus RC=0 and
+  state queue created) but failed closed during Git provenance because the seed supplied a
+  nonexistent bare GIT_DIR; no evidence was emitted. This exact cause is now patched by removing
+  GIT_DIR/GIT_WORK_TREE exports. Focused test initially caught the intentional contract update
+  (obsolete GIT_DIR expectation); test was corrected. A fresh data disk and overlay are required to
+  avoid stale state/evidence.
