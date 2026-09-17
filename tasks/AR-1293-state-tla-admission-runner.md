@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1293.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 106,
+  "task_revision": 107,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T12:57:21+00:00",
+  "updated_at": "2026-09-17T12:57:33+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -395,3 +395,7 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   remains clean at 53dd96389. Preserve AR-1302 evidence. Next action: inspect the exact failing
   command/environment, then implement and test a separate bounded virtual-address-space limit
   without changing the 3 GiB physical/swap attestation.
+
+- 2026-09-17T12:57:33+00:00: Retry with a different worker: inspect prior command failures and
+  implement separate bounded virtual-address-space contract with tests/evidence; preserve
+  physical/swap attestation.
