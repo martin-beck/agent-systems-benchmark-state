@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Repair guest JVM temp confinement: set Java java.io.tmpdir to owner-private /mnt/asb-data/tmp (host /tmp is not writable by asb and JFR fails at TLC startup); rerun focused tests, then fresh data/overlay portable-smoke and require attestation.",
+  "next_action": "Rebuild fresh data disk with /state checkout, /jvm, and pinned tla2tools.jar (current exact head 0ed457003); regenerate unique schema-valid seed, launch no-NIC 32 GiB overlay, and verify portable-smoke attestation.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 149,
+  "task_revision": 150,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-17T23:46:15+00:00",
+  "updated_at": "2026-09-17T23:46:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -506,3 +506,9 @@ and protected publication sequence.
   ef0b1ab8ee8987cd12e7fbfac0b291a32ab89a670e2bc6f91d732beea9931e15.
 
 - 2026-09-17T23:46:15+00:00: Heartbeat by codex-ar1307-runner-repair-20260918.
+
+- 2026-09-17T23:46:22+00:00: Exact-head run reached cloud-init and user@1000, but failed before
+  formal execution because the data disk staging root lacked /state: chown reported
+  /mnt/asb-data/state absent and cd to /state/formal/handoffctl failed. This was caused by cloning
+  the checkout directly into stage-head rather than nesting it under stage-head/state. No
+  attestation accepted. Rebuilding the data image with the required layout now.
