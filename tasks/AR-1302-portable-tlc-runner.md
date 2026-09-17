@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 419,
+  "task_revision": 420,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T13:33:19+00:00",
+  "updated_at": "2026-09-17T13:33:29+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1398,3 +1398,6 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   fresh VM preflight and exact f1931686c portable-smoke.
 
 - 2026-09-17T13:33:19+00:00: Claimed by codex-ar1302-boot-repair.
+
+- 2026-09-17T13:33:29+00:00: Recorded command exit 0; command argv SHA-256
+  0b5a103d792f3993be7e299d2c4bcf744f96b5a2c58dcf9fa4b16aa71a0765aa.
