@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1282",
-  "next_action": "PR #208 now needs fresh checks at exact head b44be60fb9f1 after formal Cargo.lock refresh. Formal lock test itself hit unrelated Text file busy in TLA acquisition; preserve evidence and await hosted rerun.",
+  "next_action": "Coverage repaired at signed head b1fb837: asb-core replay_transport 98.24% lines and 97.53% regions, above unchanged 95% floor; focused core 4/4 and runtime 6/6 pass. Fmt, workspace locked tests, and clippy pass; push exact head and await fresh PR #208 checks.",
   "observed_branch": "feature/ar-1282-authenticated-replay-transport",
   "observed_dirty": 0,
   "observed_head": "b1fb8371104839324c5736ebcd7d39b93c9d8bbc",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Land the authenticated runtime-to-CLI replay transport foundation.",
-  "task_revision": 89,
+  "task_revision": 90,
   "title": "Authenticated replay transport foundation",
-  "updated_at": "2026-09-17T01:01:42+00:00",
+  "updated_at": "2026-09-17T01:02:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1282-authenticated-replay-transport"
 }
 ---
@@ -274,3 +274,8 @@ claim primary command execution.
 
 - 2026-09-17T01:01:42+00:00: Recorded command exit 0; command argv SHA-256
   8c03900249028985dc78d989d3d9f275356ce4d71e77e0a08a96dc53f9f99418.
+
+- 2026-09-17T01:02:06+00:00: Coverage blocker fixed with positive/negative envelope,
+  malformed-frame, missing-endpoint, duplicate-request, and private-parent tests in b1fb837; package
+  llvm-cov reports replay_transport 100% lines and 97.53% regions, TOTAL asb-core 99.61% lines.
+  Exact PR head pushed, worktree clean; fresh hosted checks required.

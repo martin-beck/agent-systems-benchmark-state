@@ -1579,7 +1579,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md): Authenticated replay transport foundation | asb_ar1282_core_runtime_transport | Land the authenticated runtime-to-CLI replay transport foundation. | PR #208 now needs fresh checks at exact head b44be60fb9f1 after formal Cargo.lock refresh. Formal lock test itself hit unrelated Text file busy in TLA acquisition; preserve evidence and await hosted rerun. |
+| P0 | [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md): Authenticated replay transport foundation | asb_ar1282_core_runtime_transport | Land the authenticated runtime-to-CLI replay transport foundation. | Coverage repaired at signed head b1fb837: asb-core replay_transport 98.24&#37; lines and 97.53&#37; regions, above unchanged 95&#37; floor; focused core 4/4 and runtime 6/6 pass. Fmt, workspace locked tests, and clippy pass; push exact head and await fresh PR #208 checks. |
 
 ### Open (6)
 
