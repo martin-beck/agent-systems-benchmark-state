@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T15:17:30+00:00",
   "depends_on": [],
   "id": "AR-1302",
-  "next_action": "Use signed launcher commit 6907c558a to create a fresh overlay from the pinned root, boot the UUID-serial data disk, run guest UUID/mount preflight, then execute f1931686c portable-smoke and capture sanitized terminal attestation. Do not claim qualification from container evidence.",
+  "next_action": "Use run_lifecycle from signed commit 1fd5e31cf to create a fresh overlay, boot the UUID-serial data disk, run guest UUID/mount preflight, then execute f1931686c portable-smoke and capture sanitized terminal attestation. Do not claim qualification from container evidence.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 400,
+  "task_revision": 401,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T13:27:09+00:00",
+  "updated_at": "2026-09-17T13:27:29+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1334,3 +1334,8 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
 
 - 2026-09-17T13:27:09+00:00: Recorded command exit 0; command argv SHA-256
   2f19866966241bfcbebe068b88f884a8a45aa065c71bd73a0f0c3a74da050c87.
+
+- 2026-09-17T13:27:29+00:00: Lifecycle hardening is signed/DCO at 1fd5e31cf: run_lifecycle creates
+  the overlay, builds the bounded offline QEMU argv, runs with a strict timeout, and always cleans
+  the run overlay and serial artifact. Six focused tests pass. VM execution and guest
+  preflight/attestation remain outstanding.
