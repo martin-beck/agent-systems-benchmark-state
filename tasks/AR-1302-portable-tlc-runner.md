@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 477,
+  "task_revision": 478,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T13:54:04+00:00",
+  "updated_at": "2026-09-17T13:54:36+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1606,3 +1606,7 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   attestation was claimed. Next action: create a new private ext4 data image, inject exact
   source/JDK/JAR and offline shim through approved bounded provisioning, record its
   digest/provenance, then rerun VM.
+
+- 2026-09-17T13:54:36+00:00: Coordinator will build fresh ext4 data image with exact f1931686c
+  source, pinned JDK/JAR, offline curl shim and evidence paths through handoffctl, then rerun VM
+  smoke.
