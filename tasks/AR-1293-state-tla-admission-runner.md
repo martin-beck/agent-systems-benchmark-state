@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1293-state-tla-admission",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T14:56:52+00:00",
   "depends_on": [],
   "id": "AR-1293",
   "next_action": "Requalify AR-1302 portable-smoke with exact 8G portable address-space bound and 3G physical/swap limits; require success attestation before required/full.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "",
+  "owner": "codex-ar1293-requalify-fresh",
   "plan": "../plans/AR-1293.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 149,
+  "task_revision": 150,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T14:11:29+00:00",
+  "updated_at": "2026-09-17T14:11:52+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -532,3 +532,5 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   attestation 0993b7c3... and fresh data image 488655f4.... Release the idle pre-runner claim; next
   worker must use the qualified runner and requalify AR-1293 exact 8G address-space/3G memory+swap
   contract before required/full.
+
+- 2026-09-17T14:11:52+00:00: Claimed by codex-ar1293-requalify-fresh.
