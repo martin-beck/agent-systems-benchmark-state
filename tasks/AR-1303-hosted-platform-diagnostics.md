@@ -8,7 +8,7 @@
     "AR-1252"
   ],
   "id": "AR-1303",
-  "next_action": "PR #220 exact head d85889d: await controlled rerun of formal job 105201914173 after unrelated Text file busy failure in tla_artifact_acquisition. Merge only after every exact-head check is green; then post-merge verify and release.",
+  "next_action": "PR #220 exact head d85889d is blocked only by unrelated hosted formal-runner ETXTBSY failures. Repair/retry CI infrastructure; then require fresh all-green exact-head CI before merge. Do not alter AR-1303 gates or product behavior.",
   "observed_branch": "feature/ar-1303-hosted-platform-diagnostics",
   "observed_dirty": 0,
   "observed_head": "d85889d5066c26dc69279594a7c91f4f140a23e3",
@@ -20,7 +20,7 @@
   "summary": "Add privacy-safe fixed diagnostics for hosted platform evidence failures.",
   "task_revision": 52,
   "title": "Privacy-safe hosted platform failure diagnostics",
-  "updated_at": "2026-09-17T12:35:01+00:00",
+  "updated_at": "2026-09-17T12:35:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1303-hosted-platform-diagnostics"
 }
 ---
@@ -181,5 +181,11 @@ native qualification route. This AR must not modify runtime behavior or asb-tui.
 - 2026-09-17T12:34:40+00:00: Recorded command exit 1; command argv SHA-256
   43e7e3b98eba305d7edfece7dde3df8ba38a915e2d8da917a37fbcf86ec39b67.
 
-- 2026-09-17T12:35:01+00:00: Recorded command exit 0; command argv SHA-256
-  b5175418c3dd10204f8942857d7411a289142734592c0106cbc549a7d9f7ee8d.
+- 2026-09-17T12:35:18+00:00: Platform evidence passed. Formal Loom/state workflow job 105201914173
+  failed first in tla_artifact_acquisition::bounded_online_build_and_verified_cache_reuse_succeed
+  with Os code 26 Text file busy; its controlled rerun job 105203375737 reproduced ETXTBSY across
+  concurrent_acquisition_converges_on_one_verified_output,
+  bounded_online_acquisition_faults_do_not_promote, and
+  verified_offline_cache_succeeds_without_network. This is an external hosted runner/filesystem
+  execution defect unrelated to AR-1303. No further blind reruns authorized; merge remains
+  prohibited.

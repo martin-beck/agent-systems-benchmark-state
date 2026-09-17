@@ -1644,7 +1644,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | codex-ar1302-preflight-diagnosis | Provision a clean portable TLC CI/VM runner for state formal admission. | Do not launch TLC yet. Provision/verify native dbus-user-session + user@1000 bus in a fresh immutable guest image, then require these bounded preflights to exit 0: systemctl --user is-system-running; systemd-run --user --wait --pipe --collect with 3G memory/swap, 200&#37; CPU, TasksMax=64 running /usr/bin/true. Record exact exit/evidence; run full-exhaustive only if both pass. |
-| P1 | [AR-1303](../tasks/AR-1303-hosted-platform-diagnostics.md): Privacy-safe hosted platform failure diagnostics | ar1303_ci_diagnostics | Add privacy-safe fixed diagnostics for hosted platform evidence failures. | PR #220 exact head d85889d: await controlled rerun of formal job 105201914173 after unrelated Text file busy failure in tla_artifact_acquisition. Merge only after every exact-head check is green; then post-merge verify and release. |
+| P1 | [AR-1303](../tasks/AR-1303-hosted-platform-diagnostics.md): Privacy-safe hosted platform failure diagnostics | ar1303_ci_diagnostics | Add privacy-safe fixed diagnostics for hosted platform evidence failures. | PR #220 exact head d85889d is blocked only by unrelated hosted formal-runner ETXTBSY failures. Repair/retry CI infrastructure; then require fresh all-green exact-head CI before merge. Do not alter AR-1303 gates or product behavior. |
 
 ### Blocked (49)
 
