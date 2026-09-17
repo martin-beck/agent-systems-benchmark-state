@@ -8,7 +8,7 @@
     "AR-1300"
   ],
   "id": "AR-1301",
-  "next_action": "PR #219 exact head 6221b89 is fully green except hosted Platform evidence. Do not merge. Blocked on repeated hosted portability sandbox failure: initial job 105192558571 and final controlled rerun job 105195340454 both fail generically, while exact local collector passes and all other CI checks are green. Propose/track CI-infrastructure repair; resume exact-head merge only after Platform evidence green.",
+  "next_action": "PR #219 exact head dd5bfb8: Platform evidence is green after hosted probe classification fix. Wait for remaining exact-head checks; then complete independent review, protected signed merge, post-merge verification and reconcile.",
   "observed_branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "observed_dirty": 0,
   "observed_head": "dd5bfb8dfea08331bb5ee62ddbdee07ad6fb8e7c",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 292,
+  "task_revision": 293,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T13:18:39+00:00",
+  "updated_at": "2026-09-17T13:18:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -819,3 +819,6 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
   dd5bfb8; Platform evidence is green. Resume for remaining exact-head checks and protected merge.
 
 - 2026-09-17T13:18:39+00:00: Claimed by root.
+
+- 2026-09-17T13:18:51+00:00: Platform blocker resolved and AR resumed. Hosted portability unit tests
+  11/11 pass locally; GitHub Platform evidence check is green on dd5bfb8.
