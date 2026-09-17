@@ -8,6 +8,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import importlib
+import importlib.util
 import os
 import signal
 import subprocess
@@ -22,7 +23,17 @@ MODEL_COUNTS = {"portable-smoke": 1, "pr-publication": 6, "full-exhaustive": 6}
 
 
 def _timeout_for_tier(tier: str) -> int:
-    module = importlib.import_module("formal.handoffctl.tier_profiles")
+    try:
+        module = importlib.import_module("formal.handoffctl.tier_profiles")
+    except ModuleNotFoundError:
+        # ``uv run`` may execute from a checkout without namespace-package
+        # discovery enabled.  Load the reviewed sibling by absolute path.
+        path = Path(__file__).resolve().parents[1] / "formal/handoffctl/tier_profiles.py"
+        spec = importlib.util.spec_from_file_location("tier_profiles", path)
+        if spec is None or spec.loader is None:
+            raise RuntimeError("tier profile module is unavailable") from None
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
     timeout_for_tier = cast(Callable[[str], int], module.timeout_for_tier)
     return timeout_for_tier(tier)
 
