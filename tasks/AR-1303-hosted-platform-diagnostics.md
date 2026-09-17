@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1303-hosted-platform-diagnostics",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T13:34:16+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0907",
     "AR-1252"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1303-hosted-platform-diagnostics",
   "observed_dirty": 0,
   "observed_head": "d85889d5066c26dc69279594a7c91f4f140a23e3",
-  "owner": "ar1303_ci_diagnostics",
+  "owner": "",
   "plan": "../plans/AR-1303.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Add privacy-safe fixed diagnostics for hosted platform evidence failures.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Privacy-safe hosted platform failure diagnostics",
-  "updated_at": "2026-09-17T12:35:18+00:00",
+  "updated_at": "2026-09-17T12:35:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1303-hosted-platform-diagnostics"
 }
 ---
@@ -189,3 +189,9 @@ native qualification route. This AR must not modify runtime behavior or asb-tui.
   verified_offline_cache_succeeds_without_network. This is an external hosted runner/filesystem
   execution defect unrelated to AR-1303. No further blind reruns authorized; merge remains
   prohibited.
+
+- 2026-09-17T12:35:26+00:00: Released owner and lease. PR #220 remains at exact signed head d85889d
+  and is blocked by unrelated repeated hosted formal-runner ETXTBSY failures in
+  tla_artifact_acquisition (jobs 105201914173 and controlled rerun 105203375737). Platform evidence
+  and all other completed checks pass. Resume only after CI infrastructure repair and fresh
+  all-green exact-head CI; do not weaken gates or change AR-1303 product code.
