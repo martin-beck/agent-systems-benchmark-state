@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1293-state-tla-admission",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T06:46:48+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1293",
   "next_action": "Candidate 885d14159 adds the state runner, attestation helper, and bounded admission tests, but release is blocked: full state unittest baseline fails pre-existing coordinator vendor lock/runtime mismatch (runtime 0.3.7 vs vendor lock 0.3.5 and manifest digest mismatch), and canonical formal smoke cannot acquire the existing root/group-owned /tmp/agent-workflow-coordinator-tlc-admission.lock (permission denied). Reconcile the vendor release boundary and runner admission ownership, then review candidate and rerun all state gates; do not touch product or handoffctl.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "codex-ar1293-tlc-admission-20260917",
+  "owner": "",
   "plan": "../plans/AR-1293.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T04:50:52+00:00",
+  "updated_at": "2026-09-17T04:50:54+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -69,3 +69,7 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T04:50:52+00:00: Recorded implementation candidate and exact gate blockers; no
   handoffctl/product changes.
+
+- 2026-09-17T04:50:54+00:00: Blocked ownerless after candidate 885d14159. Focused runner tests, Ruff
+  and mypy pass; full state suite and canonical formal smoke remain blocked by the baseline vendor
+  mismatch and host admission-lock ownership above. Preserve the signed candidate for follow-up.
