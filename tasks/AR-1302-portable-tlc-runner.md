@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 361,
+  "task_revision": 362,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T12:52:00+00:00",
+  "updated_at": "2026-09-17T12:52:03+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1206,3 +1206,6 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   attested 3 GiB memory_max. The clean UUID-wired VM proved mount/JAR/TLC startup but failed native
   JVM allocation under that ceiling. Raising AS ad hoc or changing tier evidence would
   weaken/circumvent the reviewed contract; no source or gate change was made.
+
+- 2026-09-17T12:52:03+00:00: Recorded command exit 0; command argv SHA-256
+  4e2a95a82c38486469748dbfc1df62aad08e49ea335a15c425bb128a75bd75d4.
