@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1286-supervised-replay-lifecycle",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T08:16:45+00:00",
   "depends_on": [
     "AR-1282",
     "AR-1285",
@@ -15,15 +15,15 @@
   "observed_branch": "feature/ar-1286-supervised-replay-lifecycle",
   "observed_dirty": 0,
   "observed_head": "eaf7fcbf42aee720a208d9d356a163d42ce30fab",
-  "owner": "",
+  "owner": "codex-ar1286-repair",
   "plan": "../plans/AR-1286.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Execute strict-replay cassettes through the runtime-owned supervised lifecycle.",
-  "task_revision": 80,
+  "task_revision": 81,
   "title": "Supervised strict-replay cassette lifecycle",
-  "updated_at": "2026-09-17T06:16:42+00:00",
+  "updated_at": "2026-09-17T06:16:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1286-supervised-replay-lifecycle"
 }
 ---
@@ -264,3 +264,5 @@ do not touch or claim asb-tui behavior.
 - 2026-09-17T06:16:42+00:00: Direct Bubblewrap and exact systemd-run/taskset/bwrap probe now pass;
   resume to rerun qualified ASB sandbox test and distinguish transient resource exhaustion from
   product defect.
+
+- 2026-09-17T06:16:45+00:00: Claimed by codex-ar1286-repair.
