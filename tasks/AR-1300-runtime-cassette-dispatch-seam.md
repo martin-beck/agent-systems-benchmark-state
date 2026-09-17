@@ -10,17 +10,17 @@
   "id": "AR-1300",
   "next_action": "Add direct positive/negative operation and wire tests, then rerun focused and full locked gates.",
   "observed_branch": "feature/ar-1300-runtime-cassette-dispatch-seam",
-  "observed_dirty": 7,
-  "observed_head": "c1b1860786e844adb69b8f74e39af290592a89c8",
+  "observed_dirty": 0,
+  "observed_head": "405f68f0a957cf338a7efd958f6162f39729443d",
   "owner": "ar1300_dispatch",
   "plan": "../plans/AR-1300.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect runtime-issued cassette operations to the real strict-replay dispatch path.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Runtime-to-replay cassette dispatch seam",
-  "updated_at": "2026-09-17T07:17:45+00:00",
+  "updated_at": "2026-09-17T07:17:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1300-runtime-cassette-dispatch-seam"
 }
 ---
