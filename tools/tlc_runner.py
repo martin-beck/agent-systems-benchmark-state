@@ -383,6 +383,12 @@ def run(args: argparse.Namespace) -> int:
             exit_code, timed_out = _bounded_process(
                 command, args.timeout_seconds + COMMAND_GRACE_SECONDS
             )
+            if exit_code != 0 and not timed_out:
+                print(
+                    f"TLC execution failed closed: exit={exit_code}; "
+                    "no success attestation will be emitted",
+                    file=sys.stderr,
+                )
             record.update(
                 {
                     "ended": time.time(),
