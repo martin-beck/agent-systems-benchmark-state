@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 394,
+  "task_revision": 395,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T13:25:34+00:00",
+  "updated_at": "2026-09-17T13:26:03+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1316,3 +1316,6 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   non-existing overlay, creates root-backed qcow2 overlays, assigns the reviewed data UUID as virtio
   serial, uses -net none, 32G RAM, 8 vCPUs, bounded timeout, and cleanup. Five focused tests plus
   Ruff pass. VM execution/guest preflight/attestation remain outstanding.
+
+- 2026-09-17T13:26:03+00:00: Recorded command exit 0; command argv SHA-256
+  0b5a103d792f3993be7e299d2c4bcf744f96b5a2c58dcf9fa4b16aa71a0765aa.
