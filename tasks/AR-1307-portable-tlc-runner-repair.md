@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Canonical runner repair is implemented on feature/ar-1307-portable-tlc-runner-repair; restore immutable vendor files, finish bounded/provenance gates, rerun full quality suite, then obtain independent review and fresh exact-head tier evidence.",
+  "next_action": "Vendor boundary is restored in the repair branch; run exact quality gates and formal launcher tests, then stage one signed repair commit and request independent review before publication.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-17T22:10:39+00:00",
+  "updated_at": "2026-09-17T22:13:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -72,3 +72,9 @@ and protected publication sequence.
   currently fails because imported commits modify immutable formal/handoffctl/README.md and
   verify.sh, which must be restored. Branch checkpoint 50a547dcd plus local repair changes remains
   unpublished.
+
+- 2026-09-17T22:13:51+00:00: Durable checkpoint: imported runner chain initially failed vendor
+  verification because immutable formal/handoffctl README.md and verify.sh were modified; both are
+  now restored in the AR-1307 worktree and vendor verification passes (agent-workflow-coordinator
+  v0.3.7). Focused suite remains 24/24 and full state suite 158/158. Ruff repair is in progress
+  after adding bounded launcher/provenance changes; no release or PR claim yet.
