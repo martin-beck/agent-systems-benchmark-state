@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T05:52:53+00:00",
   "depends_on": [],
   "id": "AR-1290",
-  "next_action": "Independent exact-head review requested for PR #212 head 418960215134b89710e5549351c5bf30ad17d3b7; merge only after reviewer approval using protected signed workflow, then verify post-merge workflows.",
+  "next_action": "Monitor exact-main post-merge workflows for c1b1860786e844adb69b8f74e39af290592a89c8 to terminal SUCCESS; verify protected main signature/DCO/tree and release AR-1290 done.",
   "observed_branch": "repair/ar-1290-dependabot-dco",
   "observed_dirty": 0,
   "observed_head": "418960215134b89710e5549351c5bf30ad17d3b7",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover protected-main DCO assurance for the immutable Dependabot serde commit without weakening broad policy.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Dependabot DCO boundary recovery",
-  "updated_at": "2026-09-17T03:57:44+00:00",
+  "updated_at": "2026-09-17T03:58:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1290-dependabot-dco"
 }
 ---
@@ -206,3 +206,9 @@ change certificate/runtime behavior, touch asb-tui, or weaken broad policy.
 
 - 2026-09-17T03:57:44+00:00: Recorded command exit 0; command argv SHA-256
   e68f6ebea998fe95803c3e70599abae1c983bd69d749f38f2144eac375088bf7.
+
+- 2026-09-17T03:58:09+00:00: Protected merge succeeded through tools/integration/merge_pr.py from
+  exact base 2de393a05cc3c65f3495238abb19408e8218e483, PR212 exact head
+  418960215134b89710e5549351c5bf30ad17d3b7 and tree 9e8d8744cf6229b9f4d39705be0dc59cb15b9574.
+  Published signed merge c1b1860786e844adb69b8f74e39af290592a89c8; no web merge or history rewrite.
+  Await exact-main post-merge workflows before release.
