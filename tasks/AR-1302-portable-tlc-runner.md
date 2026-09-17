@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T12:13:30+00:00",
   "depends_on": [],
   "id": "AR-1302",
-  "next_action": "Use the provisioned 32 GiB QEMU/KVM runner receipt b1457b809 with the pinned TLC 1.7.4 JAR pre-staged on its offline data disk; then run the signed AR-1293 candidate f16d2cb41 full-exhaustive tier and record exact attestation. Do not overlap the active AR-1293 VM worker.",
+  "next_action": "Wait for AR-1293 worker to release the 32 GiB VM; then offline-stage the pinned TLC JAR into a distinct runner data disk, boot without network or host mounts, and run signed candidate f16d2cb41 full-exhaustive with exact attestation.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 150,
+  "task_revision": 151,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T10:13:30+00:00",
+  "updated_at": "2026-09-17T10:14:16+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -482,3 +482,12 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
 - 2026-09-17T10:12:26+00:00: Heartbeat by codex-ar1302-runner-20260917-vm.
 
 - 2026-09-17T10:13:30+00:00: Heartbeat by codex-ar1302-runner-20260917-vm.
+
+- 2026-09-17T10:14:16+00:00: 2026-09-17T10:13:55Z checkpoint: full-exhaustive is not yet runnable.
+  The provisioned 32 GiB VM is live (QEMU pid 1928184) with runner-data-f16d2cb41.raw attached
+  read-only; its data disk lacks tla2tools.jar. The active console/socat is owned by the AR-1293
+  worker (codex-ar1293-clean-vm-20260917), and its prior guest attempt correctly failed before TLC
+  with curl exit 6 because network=none. Do not stop or overlap that worker. Exact next action:
+  after AR-1293 releases the VM, create a private offline copy of the data disk, inject the pinned
+  JAR SHA-256 936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88, boot a distinct
+  disposable VM/data path, then run full-exhaustive and capture terminal attestation.
