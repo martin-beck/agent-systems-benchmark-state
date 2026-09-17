@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1302-portable-tlc-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T12:40:57+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1302",
   "next_action": "Repair the image unit ordering/activation: require and order After=user@1000.service, use a non-forking Type=simple dbus session daemon with a bounded readiness check on /run/user/1000/bus before cloud-final; then run exactly one clean required full-exhaustive attempt and capture terminal attestation. Do not reuse the stale v10 action or rerun blindly.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "codex-ar1302-diagnosis",
+  "owner": "",
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 309,
+  "task_revision": 310,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T12:11:42+00:00",
+  "updated_at": "2026-09-17T12:12:03+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1005,3 +1005,9 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
 
 - 2026-09-17T12:11:42+00:00: Recorded command exit 0; command argv SHA-256
   d37a24e5d17105ef564a0d77bc26084c9317d844667cab5290c38a64f6065b6a.
+
+- 2026-09-17T12:12:03+00:00: Diagnosis complete and ownerless release: final serial proves the bus
+  unit raced user@1000 (user-runtime-dir finished; bus unit failed; user@1000 succeeded afterward).
+  Current exact next_action records the image-level repair: order After/Requires user@1000, use
+  non-forking Type=simple dbus daemon, bounded readiness check, then one terminal-attested run. No
+  further rerun or gate weakening performed.
