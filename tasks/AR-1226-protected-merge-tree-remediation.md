@@ -2,7 +2,7 @@
 {
   "branch": "repair/protected-merge-tree-policy",
   "checkpoint_commit": "ef82484fa78dd31c0d7b5ad48e2dc51a93ec1339",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T10:31:51+00:00",
   "depends_on": [
     "AR-1200"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "repair/protected-merge-tree-policy",
   "observed_dirty": 0,
   "observed_head": "fd7daa43549edd67b60076aa6b1eee333061b438",
-  "owner": "",
+  "owner": "codex-ar1226-merge-remediation-20260917",
   "plan": "../plans/AR-1226.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Remediate the protected-main merge-tree mismatch from stale-base PR merging.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Protected merge-tree remediation",
-  "updated_at": "2026-09-17T08:31:48+00:00",
+  "updated_at": "2026-09-17T08:31:51+00:00",
   "worktree_key": "agent-systems-benchmark-protected-merge-tree-remediation"
 }
 ---
@@ -53,3 +53,5 @@ current-main requalification; it must not mark the merge usable until policy ass
 
 - 2026-09-17T08:31:48+00:00: Resume for forward-only current-main protected-merge admission
   remediation; historical merges remain unchanged.
+
+- 2026-09-17T08:31:51+00:00: Claimed by codex-ar1226-merge-remediation-20260917.
