@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1293-state-tla-admission",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T18:50:41+00:00",
+  "claim_expires": "2026-09-17T18:51:49+00:00",
   "depends_on": [],
   "id": "AR-1293",
   "next_action": "Independent review f1b81fe23; then fresh required-tier QEMU run with direct ext4 data image and inspect receipt/serial/extracted attestation.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 334,
+  "task_revision": 335,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T18:21:28+00:00",
+  "updated_at": "2026-09-17T18:21:49+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -1140,3 +1140,5 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   explicit if=none drive IDs; raw backend no longer receives serial. Exact offline Ruff/format/mypy
   and 23/23 focused tests pass. Prior result-125 QEMU serial error is durably recorded. Candidate
   clean.
+
+- 2026-09-17T18:21:49+00:00: Heartbeat by codex-ar1293-timeout-repair-20260917.
