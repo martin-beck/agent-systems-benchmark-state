@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 328,
+  "task_revision": 329,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T12:30:24+00:00",
+  "updated_at": "2026-09-17T12:30:37+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1085,3 +1085,6 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   --property=CPUQuota=200% --property=TasksMax=64 /usr/bin/true. Both must exit 0 and bus ownership
   must identify user@1000; otherwise fail closed without launching TLC. Only after positive
   admission should exact f16d2cb41 full-exhaustive run.
+
+- 2026-09-17T12:30:37+00:00: Recorded command exit 0; command argv SHA-256
+  f3b19139c55a1adfd4799226f94a4277369efdf361b4a8778f667503f037b7f0.
