@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T15:04:02+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Release ownerless blocked pending a clean approved 32G VM with available swap and fixed guest JVM; AR-1302 may use the clean runner. Preserve candidate f16d2cb41721bf8f17aa5aa75ab01520aeb91eb8 and all focused/full local evidence; do not claim pr-publication or full-exhaustive formal success.",
+  "next_action": "Independently review exact signed head 1c7f8f4, run full applicable state gates, then requalify AR-1302 portable-smoke through the UUID-wired VM before required/full.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 134,
+  "task_revision": 135,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T13:08:15+00:00",
+  "updated_at": "2026-09-17T13:08:36+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -480,3 +480,8 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T13:08:15+00:00: Recorded command exit 1; command argv SHA-256
   1c199fe7b569da817ff7e90ab3e87bf5a5ac226cbccc2a36e3f1d70000052b72.
+
+- 2026-09-17T13:08:36+00:00: Implemented signed+DCO commit 1c7f8f4: portable runner now uses
+  separate bounded 8G RLIMIT_AS while retaining attested 3G physical/swap bounds; tier evidence and
+  attestation schema record the bound; positive/negative tests added. Focused tests 9/9 and Ruff
+  pass. Ready for independent review and fresh VM qualification.

@@ -1643,7 +1643,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | coordinator-ar1293-as-limit-repair | Repair the state-repository TLA admission runner and truthful worktree metadata. | Release ownerless blocked pending a clean approved 32G VM with available swap and fixed guest JVM; AR-1302 may use the clean runner. Preserve candidate f16d2cb41721bf8f17aa5aa75ab01520aeb91eb8 and all focused/full local evidence; do not claim pr-publication or full-exhaustive formal success. |
+| P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | coordinator-ar1293-as-limit-repair | Repair the state-repository TLA admission runner and truthful worktree metadata. | Independently review exact signed head 1c7f8f4, run full applicable state gates, then requalify AR-1302 portable-smoke through the UUID-wired VM before required/full. |
 
 ### Blocked (50)
 
