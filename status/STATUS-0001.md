@@ -1566,7 +1566,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1280](../tasks/AR-1280-cross-crate-replay-entrypoint.md): Cross-crate replay process entrypoint | asb_ar1280_runtime_cli_entrypoint | Implement the cross-crate runtime process entrypoint for primary strict replay. | Promote after dependency verification; implement the cross-crate authenticated replay process entrypoint from protected main. |
+| P0 | [AR-1280](../tasks/AR-1280-cross-crate-replay-entrypoint.md): Cross-crate replay process entrypoint | asb_ar1280_runtime_cli_entrypoint | Implement the cross-crate runtime process entrypoint for primary strict replay. | Extend replay-plan dispatch to invoke runtime-owned supervised process with argument-level command and cassette service; preserve denied egress/no-fallback and add lifecycle fault tests. Current signed head f92a86b provides bridge/binding baseline. |
 
 ### Open (6)
 
