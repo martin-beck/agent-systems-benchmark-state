@@ -22,7 +22,7 @@ Generated from local Git and GitHub. Do not edit.
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
 | #214 | `feature/ar-1286-supervised-replay-lifecycle@eaf7fcbf42ae` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(replay): integrate runtime-owned supervised replay lifecycle |
 | #215 | `feature/ar-1286-replay-lifecycle-rebased@03b1ddc7c9d2` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(replay): integrate signed runtime replay lifecycle |
-| #219 | `feature/ar-1301-replay-lifecycle-fault-matrix@ee34e9778fa3` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(runtime): qualify supervised replay lifecycle fault matrix |
+| #219 | `feature/ar-1301-replay-lifecycle-fault-matrix@ee34e9778fa3` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(runtime): qualify supervised replay lifecycle fault matrix |
 
 ## Recent workflows
 
@@ -35,7 +35,7 @@ Generated from local Git and GitHub. Do not edit.
 | 35217105877 | `ee34e9778fa3` | pull_request | Fault assurance | completed:success |
 | 35217105875 | `ee34e9778fa3` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 35217105854 | `ee34e9778fa3` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 35217105837 | `ee34e9778fa3` | pull_request | Formal assurance | in_progress:- |
+| 35217105837 | `ee34e9778fa3` | pull_request | Formal assurance | completed:success |
 | 35216655637 | `e98293ab022d` | pull_request | Fault assurance | completed:success |
 | 35216655560 | `e98293ab022d` | pull_request | Emulated aarch64 portability | completed:cancelled |
 | 35216655546 | `e98293ab022d` | pull_request | Hosted portability and native qualification | completed:failure |
