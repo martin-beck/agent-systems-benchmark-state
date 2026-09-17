@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1302-portable-tlc-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T13:29:22+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1302",
   "next_action": "Run a fresh disposable v10 guest as user asb with XDG_RUNTIME_DIR and DBUS_SESSION_BUS_ADDRESS set, TLC_CGROUP_MODE=required, pinned offline JDK/JAR, and capture terminal attestation; then stop stale generic VM 1928184 through handoffctl and record cleanup.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "codex-ar1302-runner-20260917-final",
+  "owner": "",
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 303,
+  "task_revision": 304,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T11:33:24+00:00",
+  "updated_at": "2026-09-17T11:33:45+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -976,3 +976,13 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
 
 - 2026-09-17T11:33:24+00:00: Recorded command exit 0; command argv SHA-256
   5175266eead4eafd6c90f7df78c385a0f8b0701c7f48ce04ef123daefd23f5ea.
+
+- 2026-09-17T11:33:45+00:00: 2026-09-17T11:34:00Z: Final bounded qualification attempt used a fresh
+  image copy with image-level asb-session-bus.service, fresh 16 GiB data disk, 32 GiB RAM/16 GiB
+  swap, no network/host mounts, pinned JAR, and exact f16d2cb41 state. Boot evidence is explicit:
+  systemd started user@1000 but asb-session-bus.service failed before cloud-final; serial lines
+  812-816 show service start then FAILED. QEMU consumed CPU while cloud-final attempted verify, but
+  no full-exhaustive.log or attestation was produced. Runner was stopped through handoffctl. AR-1302
+  remains infrastructure-blocked; no release gate was weakened and no success is claimed. Next
+  action requires fixing unit ordering/activation so the session bus is active before cloud-final,
+  then one terminal-attested run.
