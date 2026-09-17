@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1282-authenticated-replay-transport",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T02:22:15+00:00",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1282-authenticated-replay-transport",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "asb_ar1282_core_runtime_transport",
   "plan": "../plans/AR-1282.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Land the authenticated runtime-to-CLI replay transport foundation.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Authenticated replay transport foundation",
-  "updated_at": "2026-09-17T00:22:01+00:00",
+  "updated_at": "2026-09-17T00:22:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1282-authenticated-replay-transport"
 }
 ---
@@ -33,3 +33,5 @@ claim primary command execution.
 
 - 2026-09-17T00:22:01+00:00: Dependencies are done; prior ARs prove the missing seam. Land only the
   bounded authenticated transport foundation as an independently mergeable boundary.
+
+- 2026-09-17T00:22:15+00:00: Claimed by asb_ar1282_core_runtime_transport.
