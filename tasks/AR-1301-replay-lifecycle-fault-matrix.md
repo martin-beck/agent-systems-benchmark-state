@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T13:09:25+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1287",
     "AR-1300"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "observed_dirty": 0,
   "observed_head": "6221b894c438292ff50b21d2d0c27a875d0bcc1b",
-  "owner": "ar1301_negative_matrix",
+  "owner": "",
   "plan": "../plans/AR-1301.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 286,
+  "task_revision": 287,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T12:09:28+00:00",
+  "updated_at": "2026-09-17T12:10:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -806,3 +806,11 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
   helper suppresses child output. Exact local hosted collector with CI args passes process=712
   bytes, metrics=903 bytes, sandbox=1384 bytes. This is a repeated hosted-runner/platform
   infrastructure blocker, not an AR product failure. No more blind reruns, merge, or release.
+
+- 2026-09-17T12:10:02+00:00: Released owner and lease. AR-1301 is blocked on repeated hosted
+  Platform evidence failures at exact PR head 6221b89: initial job 105192558571 and final controlled
+  rerun 105195340454 both failed generically in hosted_portability sandbox collection. Exact local
+  hosted collector passes process=712 bytes, metrics=903 bytes, sandbox=1384 bytes; all other
+  required CI checks are green. Preserve next_action: repair/track CI infrastructure, then rerun
+  Platform evidence and resume exact-head merge only after green. No product weakening or further
+  blind reruns.

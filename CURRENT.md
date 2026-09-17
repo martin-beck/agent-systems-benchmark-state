@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1301](tasks/AR-1301-replay-lifecycle-fault-matrix.md): Supervised replay lifecycle fault matrix | Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end. | PR #219 exact head 6221b89 is fully green except hosted Platform evidence. Do not merge. Blocked on repeated hosted portability sandbox failure: initial job 105192558571 and final controlled rerun job 105195340454 both fail generically, while exact local collector passes and all other CI checks are green. Propose/track CI-infrastructure repair; resume exact-head merge only after Platform evidence green. | ar1301_negative_matrix |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -47,6 +41,7 @@ Never edit this file directly.
 | P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Release ownerless blocked pending a clean approved 32G VM with available swap and fixed guest JVM; AR-1302 may use the clean runner. Preserve candidate f16d2cb41721bf8f17aa5aa75ab01520aeb91eb8 and all focused/full local evidence; do not claim pr-publication or full-exhaustive formal success. | - |
 | P0 | [AR-1294](tasks/AR-1294-state-gate-baseline.md): State formal-gate baseline integrity | Restore vendor and formal admission baseline integrity needed to qualify AR-1293. | Audit the vendor lock/digest mismatch and root-owned TLC admission lock; repair only through immutable provenance and owner-safe lock handling, then rerun full state/formal gates. | - |
 | P0 | [AR-1295](tasks/AR-1295-vendor-fixture-v037.md): Coordinator vendor v0.3.7 fixture alignment | Align stale coordinator vendor tests with the verified immutable v0.3.7 pin. | Update stale coordinator vendor test fixtures from v0.3.5 to verified immutable v0.3.7 and rerun the complete state test suite without changing vendor or handoffctl code. | - |
+| P0 | [AR-1301](tasks/AR-1301-replay-lifecycle-fault-matrix.md): Supervised replay lifecycle fault matrix | Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end. | PR #219 exact head 6221b89 is fully green except hosted Platform evidence. Do not merge. Blocked on repeated hosted portability sandbox failure: initial job 105192558571 and final controlled rerun job 105195340454 both fail generically, while exact local collector passes and all other CI checks are green. Propose/track CI-infrastructure repair; resume exact-head merge only after Platform evidence green. | - |
 | P0 | [AR-1302](tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | Provision a clean portable TLC CI/VM runner for state formal admission. | Run a fresh disposable v10 guest as user asb with XDG_RUNTIME_DIR and DBUS_SESSION_BUS_ADDRESS set, TLC_CGROUP_MODE=required, pinned offline JDK/JAR, and capture terminal attestation; then stop stale generic VM 1928184 through handoffctl and record cleanup. | - |
 | P1 | [AR-0604](tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Obtain authorized native x86 runner and immutable CSB/Python evidence; rerun native_boundary and record A/B overhead. | - |
 | P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Control genuine native platform capacity lifecycle. | Formal assurance owner AR-0877/AR-0907 must repair the pinned TLA artifact provenance mismatch (downloaded byte count/hash) before PR #119 can be requalified; AR-0704 native controller requires no source change. | - |
