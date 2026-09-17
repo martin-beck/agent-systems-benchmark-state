@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1296.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Restore strict state-repository mypy and coverage quality gates without weakening thresholds.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "State quality-gate baseline",
-  "updated_at": "2026-09-17T00:00:00+00:00",
+  "updated_at": "2026-09-17T05:18:02+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1296-quality"
 }
 ---
@@ -29,3 +29,6 @@ the `tools` package consistently, and coverage is 84% because upgrade command
 modules have no tests. This AR owns only package identity and bounded tests; it
 must not lower quality thresholds, suppress imports, touch product/asb-tui, or
 alter handoffctl semantics without tests.
+
+- 2026-09-17T05:18:02+00:00: Strict mypy and unchanged coverage floor expose deterministic state
+  quality gaps; promote independent repair.
