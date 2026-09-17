@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1282",
-  "next_action": "Independent exact-head re-review requested for signed 977a37d; focused transport and full locked workspace gates pass. Scope remains bounded core/runtime transport only; no primary CLI/lifecycle claim.",
+  "next_action": "Independent re-review requested for signed 0c4b9a4; response identity binding and one-shot completion negatives pass, full locked workspace gates pass. Scope remains bounded core/runtime transport only.",
   "observed_branch": "feature/ar-1282-authenticated-replay-transport",
   "observed_dirty": 0,
   "observed_head": "0c4b9a4581c32039513118781f504cf6c88d704d",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Land the authenticated runtime-to-CLI replay transport foundation.",
-  "task_revision": 56,
+  "task_revision": 57,
   "title": "Authenticated replay transport foundation",
-  "updated_at": "2026-09-17T00:37:33+00:00",
+  "updated_at": "2026-09-17T00:37:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1282-authenticated-replay-transport"
 }
 ---
@@ -180,3 +180,10 @@ claim primary command execution.
 
 - 2026-09-17T00:37:33+00:00: Recorded command exit 0; command argv SHA-256
   ecd8e1a9c5b91aec8ffa0436c3cee9ca9a1c5f8eea3ade621c126c916f2eb43c.
+
+- 2026-09-17T00:37:46+00:00: Response-binding blocker fixed in signed+DCO
+  0c4b9a4581c32039513118781f504cf6c88d704d. ReplayTransportIssuer now records accepted request ID
+  and completion state; respond rejects mismatched generation/request ID and duplicate responses.
+  Explicit mismatch and duplicate tests pass. Full locked workspace test suite remains green after
+  fix; prior fmt, clippy, rustdoc, and repository policy gates pass at this unchanged scoped
+  foundation. Product worktree is clean and pushed. Request independent exact-head re-review.

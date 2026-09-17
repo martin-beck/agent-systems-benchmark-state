@@ -1576,7 +1576,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md): Authenticated replay transport foundation | asb_ar1282_core_runtime_transport | Land the authenticated runtime-to-CLI replay transport foundation. | Independent exact-head re-review requested for signed 977a37d; focused transport and full locked workspace gates pass. Scope remains bounded core/runtime transport only; no primary CLI/lifecycle claim. |
+| P0 | [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md): Authenticated replay transport foundation | asb_ar1282_core_runtime_transport | Land the authenticated runtime-to-CLI replay transport foundation. | Independent re-review requested for signed 0c4b9a4; response identity binding and one-shot completion negatives pass, full locked workspace gates pass. Scope remains bounded core/runtime transport only. |
 
 ### Open (6)
 
