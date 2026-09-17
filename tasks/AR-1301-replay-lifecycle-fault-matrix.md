@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T13:02:05+00:00",
+  "claim_expires": "2026-09-17T13:03:47+00:00",
   "depends_on": [
     "AR-1287",
     "AR-1300"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 269,
+  "task_revision": 270,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T12:02:53+00:00",
+  "updated_at": "2026-09-17T12:03:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -755,3 +755,5 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
   (job 105192558571), while process/metrics/sandbox subchecks pass locally; helper suppresses child
   output, so retain as hosted-runner infrastructure blocker pending fresh green platform evidence.
   No product patch or merge is authorized from these failures.
+
+- 2026-09-17T12:03:47+00:00: Heartbeat by ar1301_negative_matrix.
