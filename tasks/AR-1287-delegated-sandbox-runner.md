@@ -5,7 +5,7 @@
   "claim_expires": "",
   "depends_on": [],
   "id": "AR-1287",
-  "next_action": "Release AR-1287 done after final reconciliation: protected merge 7ea3e001 exact-main workflows 35202285902/85873/85881/85905/85917/85930/85955 all green; KVM guest passed 51 normal plus qualified backend test. Promote AR-1301 afterward.",
+  "next_action": "No further action; protected merge 7ea3e001 exact-main workflows 35202285902/85873/85881/85905/85917/85930/85955 all green, and KVM guest passed 51 normal plus the qualified backend test. AR-1301 is promoted and active.",
   "observed_branch": "feature/ar-1287-delegated-sandbox-runner",
   "observed_dirty": 0,
   "observed_head": "dba5f9bb6973cbb256695161e83f7a0eee860fb9",
