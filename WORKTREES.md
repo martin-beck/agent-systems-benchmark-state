@@ -94,7 +94,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1292-tla-provenance` | `repair/ar-1292-tla-provenance` | `c1b1860786e8` | 0 | behind 10, ahead 0 |
 | `agent-systems-benchmark-ar-1300-runtime-cassette-dispatch-seam` | `feature/ar-1300-runtime-cassette-dispatch-seam` | `019038378726` | 0 | behind 8, ahead 0 |
 | `agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix` | `feature/ar-1301-replay-lifecycle-fault-matrix` | `6221b894c438` | 0 | behind 0, ahead 13 |
-| `agent-systems-benchmark-ar-1303-hosted-platform-diagnostics` | `feature/ar-1303-hosted-platform-diagnostics` | `7ea3e001dffa` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-ar-1303-hosted-platform-diagnostics` | `feature/ar-1303-hosted-platform-diagnostics` | `7ea3e001dffa` | 2 | behind 0, ahead 0 |
+| changed files | - | - | - | `.github/workflows/native-platforms.yml`, `tools/platforms/hosted_portability.py` |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 543, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 646, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 540, ahead 0 |

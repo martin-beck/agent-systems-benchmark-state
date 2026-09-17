@@ -10,7 +10,7 @@
   "id": "AR-1303",
   "next_action": "Promote only after confirming AR-1301 remains blocked and no worker owns the hosted platform tooling; then implement fixed privacy-safe failure classifications and tests without weakening the fail-closed gate.",
   "observed_branch": "feature/ar-1303-hosted-platform-diagnostics",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "7ea3e001dffa13eca5ff0f05444c2b3b9d4df928",
   "owner": "ar1303_ci_diagnostics",
   "plan": "../plans/AR-1303.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add privacy-safe fixed diagnostics for hosted platform evidence failures.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Privacy-safe hosted platform failure diagnostics",
-  "updated_at": "2026-09-17T12:19:06+00:00",
+  "updated_at": "2026-09-17T12:19:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1303-hosted-platform-diagnostics"
 }
 ---
