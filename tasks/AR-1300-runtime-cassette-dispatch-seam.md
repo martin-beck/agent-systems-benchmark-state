@@ -8,7 +8,7 @@
     "AR-1285"
   ],
   "id": "AR-1300",
-  "next_action": "Wait for the shared lock, run repository policy with its supported arguments, and continue exact-head review/CI monitoring.",
+  "next_action": "Wait for GitHub API cooldown, then perform one bounded PR #217 status fetch; do not merge until every required check is terminal green and independent review is recorded.",
   "observed_branch": "feature/ar-1300-runtime-cassette-dispatch-seam",
   "observed_dirty": 0,
   "observed_head": "405f68f0a957cf338a7efd958f6162f39729443d",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect runtime-issued cassette operations to the real strict-replay dispatch path.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Runtime-to-replay cassette dispatch seam",
-  "updated_at": "2026-09-17T07:22:57+00:00",
+  "updated_at": "2026-09-17T07:23:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1300-runtime-cassette-dispatch-seam"
 }
 ---
@@ -199,3 +199,11 @@ fixtures/tests. Do not modify asb-tui or coordinator implementation.
 
 - 2026-09-17T07:22:57+00:00: Recorded command exit 8; command argv SHA-256
   8d51c1a8224c0865fa00e2b7ce60899a553f9c37ff5586fb52271da60170496c.
+
+- 2026-09-17T07:23:59+00:00: 2026-09-17T07:24:00Z checkpoint: repeated exit-8 records from gh
+  PR-check polling are external API failures/rate-limit or transient GitHub API unavailability, not
+  product gate failures. Polling has been stopped to avoid aggressive retries. Last successful PR
+  #217 snapshot: OPEN, MERGEABLE, exact head 405f68f on base c1b1860; headers, AWQ, Kani, Loom,
+  platform, retained faults, fuzz, and mutation checks SUCCESS; Rust, formal aggregate,
+  emulated-aarch64, and policy/coverage/supply checks remained pending. Local signed/DCO head is
+  clean and repository policy passed.
