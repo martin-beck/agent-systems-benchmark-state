@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1284-strict-replay-lifecycle",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T03:23:52+00:00",
+  "claim_expires": "2026-09-17T03:26:28+00:00",
   "depends_on": [
     "AR-1282",
     "AR-1237",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect authenticated replay transport to the runtime-owned primary strict-replay lifecycle.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Runtime-owned strict-replay lifecycle execution",
-  "updated_at": "2026-09-17T01:25:47+00:00",
+  "updated_at": "2026-09-17T01:26:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1284-strict-replay-lifecycle"
 }
 ---
@@ -81,3 +81,5 @@ record the exact blocker and split a further dependency-safe successor instead o
 
 - 2026-09-17T01:25:47+00:00: Recorded command exit 0; command argv SHA-256
   36c571ad891aa3f703a376cee9ea11d1c6f71c532e6ba09b743b20cfa7d4d72e.
+
+- 2026-09-17T01:26:28+00:00: Heartbeat by asb_ar1024_lifecycle_router.
