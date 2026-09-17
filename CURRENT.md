@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Rebuild seed/data pairing from d57b495b9 exact candidate, rerun required tier, and require PR result plus attestation commit equality. | codex-ar1293-timeout-repair-20260917 |
+| P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Generate d57 seed and run required launcher against this exact clean image; inspect JDK repair markers, PR result, attestation commit and receipt. | codex-ar1293-timeout-repair-20260917 |
 
 ## Blocked
 

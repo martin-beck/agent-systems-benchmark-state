@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T19:20:27+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Rebuild seed/data pairing from d57b495b9 exact candidate, rerun required tier, and require PR result plus attestation commit equality.",
+  "next_action": "Generate d57 seed and run required launcher against this exact clean image; inspect JDK repair markers, PR result, attestation commit and receipt.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 427,
+  "task_revision": 428,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T18:51:05+00:00",
+  "updated_at": "2026-09-17T18:51:40+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -1437,3 +1437,10 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T18:51:05+00:00: Recorded command exit 0; command argv SHA-256
   9910223ba906c3e50f3f01ce2e19ae368e080d6269092661e8376141664cb76f.
+
+- 2026-09-17T18:51:40+00:00: Fresh d57 image corrected after an intermediate failed command typo
+  left the image state/refs unchanged. Bare Git was recreated from the exact candidate; debugfs
+  packed-refs now resolves feature/ar-1293-state-tla-admission-v2 to
+  d57b495b9150efd0a5114b09c45b9e31d83228ff. Image unmounted and e2fsck -fn clean. Final image SHA256
+  804c6e67e11a7ffdfbe897bcca5771e51d15f52ae27ae087c79f9a653a6912c1. The typo was ./tools.handoffctl
+  (missing slash), corrected; no VM run on mismatched refs.
