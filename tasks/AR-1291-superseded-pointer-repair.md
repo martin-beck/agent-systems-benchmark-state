@@ -2,22 +2,22 @@
 {
   "branch": "repair/ar-1291-superseded-pointers",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T06:14:20+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1291",
   "next_action": "Claim the state-repair AR, add the verified successor pointers to AR-1052/1054/1056/1058/1061, reconcile and validate AR-1010 dependency readiness.",
   "observed_branch": "repair/ar-1291-superseded-pointers",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "asb_state_repair_coordinator",
+  "owner": "",
   "plan": "../plans/AR-1291.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Repair missing successor pointers on superseded dependency tasks.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Repair superseded dependency pointers",
-  "updated_at": "2026-09-17T04:15:28+00:00",
+  "updated_at": "2026-09-17T04:16:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1291-superseded-pointers"
 }
 ---
@@ -39,3 +39,6 @@ product or handoffctl code.
 
 - 2026-09-17T04:15:28+00:00: Recorded command exit 0; command argv SHA-256
   c2f671dbb0fe1a885718d25c7cdb9c1c82889ed294bb10f942cdec6bdc05c918.
+
+- 2026-09-17T04:16:10+00:00: Added verified superseded_by chain AR-1052→1054→1056→1058→1061→1062;
+  doctor and dependency validation pass.
