@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1293-state-tla-admission",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T16:10:25+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1293",
   "next_action": "Repair the authorized QEMU guest required-containment path: provide a working systemd user bus/transient unit launcher for the exact candidate image; portable-smoke already passed. Do not run full-exhaustive until pr-publication attestation is green.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "codex-ar1293-requalify-fresh2",
+  "owner": "",
   "plan": "../plans/AR-1293.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 196,
+  "task_revision": 197,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T14:42:27+00:00",
+  "updated_at": "2026-09-17T14:42:30+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -689,3 +689,10 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   but systemd-run transient invocation did not produce a result and wrapper interception was not
   selected by the runner (no wrapper log). No pr-publication attestation exists; full-exhaustive was
   not run.
+
+- 2026-09-17T14:42:30+00:00: Blocked after portable-smoke success for exact 39c8933f5.
+  Required/pr-publication cannot attest because guest systemd-run --user fails No medium despite
+  healthy user bus; wrapper attempt was not used by runner, so no containment weakening is accepted.
+  Preserve candidate and image evidence; next action is repair the runner-level systemd launcher or
+  use a clean approved guest where required transient containment succeeds, then rerun
+  pr-publication before full-exhaustive.
