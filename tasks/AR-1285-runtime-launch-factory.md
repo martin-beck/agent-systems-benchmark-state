@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a runtime-owned launch factory for authenticated strict-replay CLI execution.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Runtime-owned strict-replay launch factory",
-  "updated_at": "2026-09-17T01:39:14+00:00",
+  "updated_at": "2026-09-17T01:39:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1285-runtime-launch-factory"
 }
 ---
@@ -131,3 +131,6 @@ separate successor rather than claiming strict-replay execution.
 
 - 2026-09-17T01:39:06+00:00: Recorded command exit 0; command argv SHA-256
   cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
+
+- 2026-09-17T01:39:17+00:00: Recorded command exit 101; command argv SHA-256
+  3af3bc63cabdb1c0e0102f50b8dac571e856ed25d9ce7a7d217405801142bcad.
