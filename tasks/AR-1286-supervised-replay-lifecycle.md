@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute strict-replay cassettes through the runtime-owned supervised lifecycle.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Supervised strict-replay cassette lifecycle",
-  "updated_at": "2026-09-17T02:26:00+00:00",
+  "updated_at": "2026-09-17T02:26:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1286-supervised-replay-lifecycle"
 }
 ---
@@ -96,3 +96,6 @@ do not touch or claim asb-tui behavior.
   nonzero/failure. Focused workflow provenance test passes. Prior focused package command had one
   expected provenance-drift failure because CLI source changed; refreshed only the checked-in exact
   source digest and reran 1/1 success. Signed+DCO, clean tree, no asb-tui changes.
+
+- 2026-09-17T02:26:26+00:00: Recorded command exit 0; command argv SHA-256
+  858ad2e4956c1e7e1b8767ba4e1a064f54e12b5916bd2360c4e2ceb50d0b06a0.
