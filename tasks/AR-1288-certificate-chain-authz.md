@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814.",
-  "task_revision": 136,
+  "task_revision": 137,
   "title": "Runtime certificate issuance and chain validation",
-  "updated_at": "2026-09-17T03:26:44+00:00",
+  "updated_at": "2026-09-17T03:27:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1288-certificate-chain-authz"
 }
 ---
@@ -417,3 +417,6 @@ must not reuse unmerged strict-replay or asb-tui branches.
 
 - 2026-09-17T03:26:44+00:00: Recorded command exit 0; command argv SHA-256
   b63168f3e723284be6c58d73108c3a9520b3facd57ee035710ba6afc90a70641.
+
+- 2026-09-17T03:27:00+00:00: Recorded command exit 0; command argv SHA-256
+  bc2639e62cf73b8578695431ab4e66182e33ad3cdafce79b995f9d067a4c42da.
