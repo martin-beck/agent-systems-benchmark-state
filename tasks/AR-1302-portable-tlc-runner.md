@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1302-portable-tlc-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T13:42:45+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1302",
   "next_action": "Repair the image unit ordering/activation: require and order After=user@1000.service, use a non-forking Type=simple dbus session daemon with a bounded readiness check on /run/user/1000/bus before cloud-final; then run exactly one clean required full-exhaustive attempt and capture terminal attestation. Do not reuse the stale v10 action or rerun blindly.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "ar1302_image_repair",
+  "owner": "",
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 320,
+  "task_revision": 321,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T12:14:57+00:00",
+  "updated_at": "2026-09-17T12:16:07+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1042,3 +1042,14 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
 
 - 2026-09-17T12:14:57+00:00: Recorded command exit 0; command argv SHA-256
   9d7e53ca50f647969f4c67fc85b8d42f1ac3efd963d40ff00f74b4ce4930012f.
+
+- 2026-09-17T12:16:07+00:00: 2026-09-17T12:16:00Z: Concrete image repair applied and one clean
+  attempt completed. Fresh image unit now has Requires=user@1000.service, After=user@1000.service,
+  Type=simple, User=asb, non-forking dbus-daemon, and 10s startup bound; serial confirms user@1000
+  and asb-session-bus.service both started successfully before cloud-final. Fresh 16 GiB data disk,
+  32 GiB RAM, 8 vCPU, 16 GiB swap, no network/host mounts, pinned JAR and exact candidate were used.
+  Terminal result from data evidence: JAR hash verified, then Failed to start transient service
+  unit: Process org.freedesktop.systemd1 exited with status 1; ASB_RC=1; no attestation. Runner
+  powered off cleanly and fsck completed. Remaining blocker is the guest systemd user manager
+  refusing the TLC transient unit despite the session bus being active; no gate was weakened or
+  success claimed.
