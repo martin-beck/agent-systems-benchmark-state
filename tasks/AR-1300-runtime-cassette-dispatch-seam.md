@@ -10,7 +10,7 @@
   "id": "AR-1300",
   "next_action": "Inspect protected origin/main worktree and implement the runtime-to-replay cassette dispatch seam; record focused results.",
   "observed_branch": "feature/ar-1300-runtime-cassette-dispatch-seam",
-  "observed_dirty": 0,
+  "observed_dirty": 5,
   "observed_head": "c1b1860786e844adb69b8f74e39af290592a89c8",
   "owner": "ar1300_dispatch",
   "plan": "../plans/AR-1300.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect runtime-issued cassette operations to the real strict-replay dispatch path.",
-  "task_revision": 15,
+  "task_revision": 17,
   "title": "Runtime-to-replay cassette dispatch seam",
-  "updated_at": "2026-09-17T07:05:02+00:00",
+  "updated_at": "2026-09-17T07:07:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1300-runtime-cassette-dispatch-seam"
 }
 ---
