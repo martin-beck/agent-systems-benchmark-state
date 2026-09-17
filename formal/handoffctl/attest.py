@@ -43,7 +43,7 @@ TIER_KEYS = {
     "timeout_seconds",
     "containment",
 }
-PROJECT_ROOT = Path("/srv/data/projects")
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
 
 def digest(path: Path) -> str:

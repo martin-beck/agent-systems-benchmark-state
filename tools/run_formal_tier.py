@@ -15,7 +15,7 @@ from collections.abc import Callable, Mapping
 from pathlib import Path
 from typing import cast
 
-PROJECT_ROOT = Path("/srv/data/projects")
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
 RUNTIME_ROOT = PROJECT_ROOT / ".asb-tlc"
 TIERS = ("portable-smoke", "pr-publication", "full-exhaustive")
 MODEL_COUNTS = {"portable-smoke": 1, "pr-publication": 6, "full-exhaustive": 6}

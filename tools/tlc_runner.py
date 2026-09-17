@@ -26,9 +26,8 @@ DEFAULT_SWAP_MAX = "3G"
 # distinct from the attested 3G cgroup envelope so JVM native mappings do not
 # consume the physical-memory contract by accident.
 DEFAULT_ADDRESS_SPACE_MAX = "8G"
-_WORKER_ROOT = (
-    Path("/srv/data/projects") / ".asb-tlc" / (f"worker-{getattr(os, 'getuid', lambda: 0)()}")
-)
+_PROJECT_ROOT = Path(__file__).resolve().parents[1]
+_WORKER_ROOT = _PROJECT_ROOT / ".asb-tlc" / (f"worker-{getattr(os, 'getuid', lambda: 0)()}")
 DEFAULT_QUEUE = str(_WORKER_ROOT / "queue")
 # This exact path is the coordinator's canonical host-wide admission fence.
 # Do not replace it with a worker-private lock: that would permit concurrent
