@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #119 | `feature/native-capacity-controller@c5a7b5a0448c` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(capacity): add bounded native lifecycle controller |
+| #119 | `feature/native-capacity-controller@c5a7b5a0448c` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(capacity): add bounded native lifecycle controller |
 | #125 | `fix/control-state-lock-test-isolation@8b0f9fd07d5d` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(cli): isolate control state roots |
 | #144 | `dependabot/github_actions/actions/setup-java-6.0.0@5885c200026e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump actions/setup-java from 5.0.0 to 6.0.0 |
 | #145 | `dependabot/cargo/toml-0.9.5@5f30c0c92f18` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump toml from 0.8.23 to 0.9.5 |
@@ -27,13 +27,13 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 35399110323 | `78a8e9fc2144` | push | Huawei MIT source headers | completed:success |
-| 35399110287 | `78a8e9fc2144` | push | Repository quality | in_progress:- |
+| 35399110287 | `78a8e9fc2144` | push | Repository quality | completed:failure |
 | 35399110246 | `78a8e9fc2144` | push | Hosted portability and native qualification | completed:success |
 | 35399110242 | `78a8e9fc2144` | push | Emulated aarch64 portability | in_progress:- |
 | 35399110241 | `78a8e9fc2144` | push | Formal assurance | completed:success |
 | 35399110214 | `78a8e9fc2144` | push | Fault assurance | completed:success |
 | 35399110207 | `78a8e9fc2144` | push | Rust verification | in_progress:- |
-| 35398910348 | `c5a7b5a0448c` | pull_request | Repository quality | in_progress:- |
+| 35398910348 | `c5a7b5a0448c` | pull_request | Repository quality | completed:success |
 | 35398910299 | `c5a7b5a0448c` | pull_request | Fault assurance | completed:success |
 | 35398910291 | `c5a7b5a0448c` | pull_request | Huawei MIT source headers | completed:success |
 | 35398910268 | `c5a7b5a0448c` | pull_request | Hosted portability and native qualification | completed:success |
