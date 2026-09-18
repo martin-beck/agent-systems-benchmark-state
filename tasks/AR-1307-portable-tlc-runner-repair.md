@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Commit and push containment-profile validator correction, then rebuild a fresh stage12 image/seed from the new exact PR head and rerun portable-smoke; stage11 must remain non-qualifying.",
+  "next_action": "Build fresh stage12 data/seed/overlay from exact PR head 01f6e000b, verify embedded HEAD and ownership, run one exact-head portable-smoke, and require schema-valid attestation commit 01f6e000b.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 364,
+  "task_revision": 365,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T00:52:48+00:00",
+  "updated_at": "2026-09-18T00:53:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1169,3 +1169,8 @@ and protected publication sequence.
 
 - 2026-09-18T00:52:48+00:00: Recorded command exit 0; command argv SHA-256
   d32ff6e347f70565791bd2b92f7ced60c3a2eb2d5c8ddd0110cd435f71aae50f.
+
+- 2026-09-18T00:53:09+00:00: Containment contract correction committed signed+DCO as 01f6e000b and
+  pushed to PR branch. Focused tests pass: 26 passed. Stage11 remains non-qualifying only because
+  its old validator rejected truthful portable containment after PORTABLE_SMOKE_RC=0; no
+  release/merge claim made.
