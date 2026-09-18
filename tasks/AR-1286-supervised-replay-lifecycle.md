@@ -11,7 +11,7 @@
     "AR-1239"
   ],
   "id": "AR-1286",
-  "next_action": "Await approved delegated namespace runner; then add cancellation, timeout, crash, restart and egress lifecycle fixtures.",
+  "next_action": "Await terminal post-merge workflows for protected main 2066e323; then verify exact merge/policy/evidence and close lifecycle acceptance.",
   "observed_branch": "feature/ar-1286-supervised-replay-lifecycle",
   "observed_dirty": 0,
   "observed_head": "eaf7fcbf42aee720a208d9d356a163d42ce30fab",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute strict-replay cassettes through the runtime-owned supervised lifecycle.",
-  "task_revision": 96,
+  "task_revision": 97,
   "title": "Supervised strict-replay cassette lifecycle",
-  "updated_at": "2026-09-18T09:18:29+00:00",
+  "updated_at": "2026-09-18T09:18:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1286-supervised-replay-lifecycle"
 }
 ---
@@ -315,3 +315,8 @@ do not touch or claim asb-tui behavior.
   cancellation/timeout/crash/restart/egress fixture closure after post-merge gates.
 
 - 2026-09-18T09:18:29+00:00: Claimed by root.
+
+- 2026-09-18T09:18:32+00:00: PR #215 merged at 1c123805 with exact reviewed tree; policy-topology
+  repair PR #223 merged at 2066e323. Approved VM passed two full 15/15 native runs plus three
+  repeated terminal fault-matrix runs on exact PR binaries. All PR #223 checks passed; protected
+  post-merge workflows are still running.
