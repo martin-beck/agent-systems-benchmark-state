@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1310.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Runtime-owned provider capture and recording campaign qualification.",
-  "task_revision": 110,
+  "task_revision": 111,
   "title": "Runtime-owned provider capture and recording campaign qualification",
-  "updated_at": "2026-09-18T22:06:05+00:00",
+  "updated_at": "2026-09-18T23:01:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1310-provider-capture-campaign"
 }
 ---
@@ -404,3 +404,6 @@ independently so its promotion is not falsely implied by AR-1160 completion.
   publication was skipped. Existing AR-1246/1247 are done and only fix protected-main
   admission/workflow behavior, so neither owns historical repair. No existing AR legitimately owns
   this repair; preserve blocker and keep AR-1312 dependency-blocked.
+
+- 2026-09-18T23:01:35+00:00: Authorized bounded exact-main Repository quality rerun only; preserve
+  historical 909078c DCO blocker and AR-1312 dependency.

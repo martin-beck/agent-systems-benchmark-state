@@ -7,13 +7,13 @@
 
 ## Portfolio overview
 
-**340 ARs tracked** across 5 active status categories.
+**340 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
-| **Blocked** | Cannot proceed until its recorded blocker clears | 50 |
+| **Open** | Dependency-ready and available to claim | 1 |
+| **Blocked** | Cannot proceed until its recorded blocker clears | 49 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 220 |
@@ -406,7 +406,7 @@ flowchart LR
         AR_1307["AR-1307 - Blocked"]:::status_blocked
         AR_1308["AR-1308 - Blocked"]:::status_blocked
         AR_1309["AR-1309 - Planned"]:::status_planned
-        AR_1310["AR-1310 - Blocked"]:::status_blocked
+        AR_1310["AR-1310 - Open"]:::status_open
         AR_1311["AR-1311 - Done"]:::status_done
         AR_1312["AR-1312 - Planned"]:::status_planned
     end
@@ -1668,7 +1668,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Blocked (50)
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1310](../tasks/AR-1310-provider-capture-campaign.md): Runtime-owned provider capture and recording campaign qualification | Unclaimed | Runtime-owned provider capture and recording campaign qualification. | Route DCO failure for pre-existing merge 909078c to a dedicated merge-integrity AR; separately rerun a supported exact-main post-merge Repository quality path that reports coverage. Local tree is 90.48&#37;, but hosted run 35396621049 did not qualify. Keep AR-1312 blocked. |
+
+### Blocked (49)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1707,7 +1713,6 @@ flowchart LR
 | P0 | [AR-1305](../tasks/AR-1305-image-native-user-session.md): Image-native user-session support | Unclaimed | Qualify image-native D-Bus user-session support for required TLC containment. | Blocked: guestfish read-only inspection fails before access because /usr/bin/supermin exits 1; approved root has ~4.9 GiB free, preventing safe image repair. Reopen only with reviewed working appliance/capacity; no portable fallback, AR-1304 limit changes, or qualification. |
 | P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Unclaimed | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | AR-1308 is planned for disposable x86_64 QEMU capacity. Keep AR-1307 unqualified; after AR-1308 capacity evidence, rerun exact full-exhaustive without changing the 3G/3G contract. |
 | P0 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Unclaimed | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Clean runner ready: 64 GiB disk, x86_64 QEMU 8.2.2, 8 vCPU, 32 GiB RAM, no network/mounts. Bind exact AR-1307 bundle, pinned JDK/TLC, lock, image and seed; preflight before boot. |
-| P0 | [AR-1310](../tasks/AR-1310-provider-capture-campaign.md): Runtime-owned provider capture and recording campaign qualification | Unclaimed | Runtime-owned provider capture and recording campaign qualification. | Route DCO failure for pre-existing merge 909078c to a dedicated merge-integrity AR; separately rerun a supported exact-main post-merge Repository quality path that reports coverage. Local tree is 90.48&#37;, but hosted run 35396621049 did not qualify. Keep AR-1312 blocked. |
 | P1 | [AR-0604](../tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Unclaimed | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Obtain authorized native x86 runner and immutable CSB/Python evidence; rerun native_boundary and record A/B overhead. |
 | P1 | [AR-0704](../tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | PR #119 exact e2e3574 is green except quality 35401437247 at 89.99&#37; coverage. Preserve PR; repair via AR-1312 when promotable. Do not merge or weaken 90&#37;. |
 | P1 | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Unclaimed | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Create successor AR for authenticated route/ancestor authority; preserve AR-1288 evidence and AR-0814 head 29cfa193. |
