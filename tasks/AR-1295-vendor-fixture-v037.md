@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1295.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Align stale coordinator vendor tests with the verified immutable v0.3.7 pin.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Coordinator vendor v0.3.7 fixture alignment",
-  "updated_at": "2026-09-17T05:17:05+00:00",
+  "updated_at": "2026-09-18T18:56:33+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1295-vendor-fixtures"
 }
 ---
@@ -86,3 +86,8 @@ handoffctl, formal runner behavior, ASB product, or asb-tui.
   handoffctl_vendor verify passes. Full required state gates remain blocked by pre-existing mypy
   import/package errors and coverage report 84% below 95%; no vendor implementation, handoffctl,
   formal runner, product, asb-tui, or host-capacity changes.
+
+- 2026-09-18T18:56:33+00:00: Re-opening deterministic fixture repair: current main still carries
+  stale vendor expectations; prior signed candidate 53fd66118 is not integrated on main. No
+  dependencies remain, and immutable v0.3.7 provenance is already verified. Claim for exact-head
+  review and full-gate classification; do not weaken pre-existing state gates.
