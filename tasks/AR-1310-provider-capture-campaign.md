@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1310.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Runtime-owned provider capture and recording campaign qualification.",
-  "task_revision": 103,
+  "task_revision": 104,
   "title": "Runtime-owned provider capture and recording campaign qualification",
-  "updated_at": "2026-09-18T21:26:45+00:00",
+  "updated_at": "2026-09-18T21:27:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1310-provider-capture-campaign"
 }
 ---
@@ -380,3 +380,6 @@ independently so its promotion is not falsely implied by AR-1160 completion.
   90.48% workspace/96.47% critical. No active DCO-repair AR owns this new merge-integrity finding;
   coordinator must route it separately. Keep AR-1310 and AR-1312 blocked; do not weaken policy or
   promote.
+
+- 2026-09-18T21:27:15+00:00: Coordinator requested explicit next action after hosted rerun failure;
+  no implementation retry.
