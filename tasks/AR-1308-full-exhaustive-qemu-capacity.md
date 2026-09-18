@@ -7,7 +7,7 @@
     "AR-1304"
   ],
   "id": "AR-1308",
-  "next_action": "PR #26 is blocked by independent review: require closed validator schema and actual image/overlay/QEMU/version/hypervisor/disk/inode/swap checks, exact TLC/source identity, sanitized receipt digests, complete negative tests and applicable full-quality CI. Rebase and re-review before any full QEMU attempt.",
+  "next_action": "Fix state observation, then exact-head review and green CI; run bounded QEMU only after.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 73,
+  "task_revision": 74,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T14:32:11+00:00",
+  "updated_at": "2026-09-18T14:33:57+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -253,3 +253,8 @@ source code or treating a capacity failure as a model result.
 
 - 2026-09-18T14:32:11+00:00: Recorded command exit 0; command argv SHA-256
   1a1e0287ff2227fd62e81f9446dfba7e4a69704f1d910f17a5c68e3223788195.
+
+- 2026-09-18T14:33:57+00:00: Review fixes are pushed in PR #26. Full-quality CI first run failed
+  only schema observation: scanner left observed_head empty because configured product checkout does
+  not enumerate this state-repository worktree. Coverage now passes at 95%; re-run after observation
+  repair.

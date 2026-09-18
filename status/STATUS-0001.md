@@ -1660,7 +1660,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1160](../tasks/AR-1160.md): Wizard control API | root | Wizard control API | Resume PR #227 required hosted gates when GitHub runner capacity is available; do not bypass branch protection. Then merge 88df781 and wire runtime capture adapter plus asb-tui recording controls. |
-| P0 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | codex-ar1308-qemu-capacity-20260918 | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | PR #26 is blocked by independent review: require closed validator schema and actual image/overlay/QEMU/version/hypervisor/disk/inode/swap checks, exact TLC/source identity, sanitized receipt digests, complete negative tests and applicable full-quality CI. Rebase and re-review before any full QEMU attempt. |
+| P0 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | codex-ar1308-qemu-capacity-20260918 | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Fix state observation, then exact-head review and green CI; run bounded QEMU only after. |
 
 ### Open (2)
 
@@ -1742,3 +1742,4 @@ flowchart LR
 | P0 | [AR-1170](../tasks/AR-1170.md): Standalone TUI wizard | Unclaimed | Guide TUI setup through analysis. | Read the plan. |
 | P0 | [AR-1180](../tasks/AR-1180.md): Cross-project wizard qualification | Unclaimed | Qualify the complete wizard. | Read the plan. |
 | P0 | [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md): Authenticated TUI install router | Unclaimed | Expose an authenticated renderer-neutral ASB router for asb tui install and lifecycle operations. | Promote only after dependencies are independently complete; implement the renderer-neutral authenticated CLI/control route and full integration tests. |
+| P0 | [AR-1211](../tasks/AR-1211-initial-setup-first-agent.md): Initial setup and first agent connection tutorial | Unclaimed | Teach first-time users to initialize ASB and add the first agent connection. | Implement the syntax-checked tutorial for ASB initialization, first-agent registration, and agent connection setup. |

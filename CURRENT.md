@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1160](tasks/AR-1160.md): Wizard control API | Wizard control API | Resume PR #227 required hosted gates when GitHub runner capacity is available; do not bypass branch protection. Then merge 88df781 and wire runtime capture adapter plus asb-tui recording controls. | root |
-| P0 | [AR-1308](tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | PR #26 is blocked by independent review: require closed validator schema and actual image/overlay/QEMU/version/hypervisor/disk/inode/swap checks, exact TLC/source identity, sanitized receipt digests, complete negative tests and applicable full-quality CI. Rebase and re-review before any full QEMU attempt. | codex-ar1308-qemu-capacity-20260918 |
+| P0 | [AR-1308](tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Fix state observation, then exact-head review and green CI; run bounded QEMU only after. | codex-ar1308-qemu-capacity-20260918 |
 
 ## Open
 
