@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 569,
+  "task_revision": 570,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T04:20:10+00:00",
+  "updated_at": "2026-09-18T04:20:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1545,3 +1545,6 @@ and protected publication sequence.
   969eef058 with matching author DCO. PR #24 had been closed during an erroneous canonical-HEAD
   push; the remote branch was safely corrected with a live lease and PR #25 opened at exact head
   969eef058. No merge or gate bypass occurred.
+
+- 2026-09-18T04:20:25+00:00: Recorded command exit 0; command argv SHA-256
+  e0d2a10e980da4c6e60e665aab8579043c3a2097ffcb1041ab193de4d79a27bd.
