@@ -7,7 +7,7 @@
     "AR-1304"
   ],
   "id": "AR-1308",
-  "next_action": "Review exact head and green CI; run bounded QEMU only after.",
+  "next_action": "Obtain fresh independent review of exact head; merge only after review. Keep QEMU full run paused.",
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "a30b2de72e94977b9c75e7b63d801dcf8cf4690d",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 180,
+  "task_revision": 181,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T15:47:59+00:00",
+  "updated_at": "2026-09-18T15:49:12+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -486,3 +486,9 @@ source code or treating a capacity failure as a model result.
 
 - 2026-09-18T15:47:59+00:00: Recorded command exit 0; command argv SHA-256
   7b349b027c31e0885c01a21b5b21626d042f5f941d05c0f9afd300083eca1cb4.
+
+- 2026-09-18T15:49:12+00:00: Exact-head a30b2de72e94977b9c75e7b63d801dcf8cf4690d has handoffctl
+  formal, strict coordination, AWQ shadow, and source-header workflows green: runs 35364562857,
+  35364541277, 35364585118, 35364607523. Local focused tests passed (41 TLC, 78 coordinator, 8
+  vendor); full CI ran 194 tests at 95% coverage. Host preflight remains correctly blocked by low
+  host swap/disk; no QEMU run started.
