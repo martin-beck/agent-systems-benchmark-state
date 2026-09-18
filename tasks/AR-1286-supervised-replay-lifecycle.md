@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1286-supervised-replay-lifecycle",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-18T09:48:29+00:00",
   "depends_on": [
     "AR-1282",
     "AR-1285",
@@ -15,15 +15,15 @@
   "observed_branch": "feature/ar-1286-supervised-replay-lifecycle",
   "observed_dirty": 0,
   "observed_head": "eaf7fcbf42aee720a208d9d356a163d42ce30fab",
-  "owner": "",
+  "owner": "root",
   "plan": "../plans/AR-1286.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Execute strict-replay cassettes through the runtime-owned supervised lifecycle.",
-  "task_revision": 95,
+  "task_revision": 96,
   "title": "Supervised strict-replay cassette lifecycle",
-  "updated_at": "2026-09-18T09:18:12+00:00",
+  "updated_at": "2026-09-18T09:18:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1286-supervised-replay-lifecycle"
 }
 ---
@@ -313,3 +313,5 @@ do not touch or claim asb-tui behavior.
 - 2026-09-18T09:18:12+00:00: Protected PR #215 merged as 1c123805; topology repair PR #223 merged as
   2066e323. Runtime lifecycle and approved-VM evidence are complete; continue with
   cancellation/timeout/crash/restart/egress fixture closure after post-merge gates.
+
+- 2026-09-18T09:18:29+00:00: Claimed by root.
