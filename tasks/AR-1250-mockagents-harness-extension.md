@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1250-mockagents-harness-extension",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-18T22:30:16+00:00",
   "depends_on": [
     "AR-0888",
     "AR-0889"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1250-mockagents-harness-extension",
   "observed_dirty": 0,
   "observed_head": "0d42bca02b276342606ae35bfaa30a5b5cd5247a",
-  "owner": "",
+  "owner": "asb_ar1250_arm64_recheck",
   "plan": "../plans/AR-1250.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Extend the pinned MockAgents executable qualification harness.",
-  "task_revision": 72,
+  "task_revision": 73,
   "title": "Extend MockAgents qualification harness",
-  "updated_at": "2026-09-18T21:30:11+00:00",
+  "updated_at": "2026-09-18T21:30:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1250"
 }
 ---
@@ -213,3 +213,5 @@ privacy, signature, DCO, and exact-tree gates; do not claim support from host in
 
 - 2026-09-18T21:30:11+00:00: Re-audit current pinned QEMU AArch64 runner availability and perform
   arm64 qualification if the exact reviewed runner contract is present.
+
+- 2026-09-18T21:30:16+00:00: Claimed by asb_ar1250_arm64_recheck.
