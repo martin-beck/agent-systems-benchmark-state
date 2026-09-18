@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 597,
+  "task_revision": 598,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T04:47:59+00:00",
+  "updated_at": "2026-09-18T04:48:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1633,3 +1633,6 @@ and protected publication sequence.
   PR #25 and formal cancellation evidence for fresh takeover.
 
 - 2026-09-18T04:47:59+00:00: Claimed by codex-ar1307-metadata-repair-20260918.
+
+- 2026-09-18T04:48:46+00:00: Recorded command exit 1; command argv SHA-256
+  c9b630ff5832780fd6e79aadbbc0de855766c9f9ee8d6c6ab7a89aa97d80b620.
