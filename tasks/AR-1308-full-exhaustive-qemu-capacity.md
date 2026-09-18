@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 212,
+  "task_revision": 213,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T16:01:42+00:00",
+  "updated_at": "2026-09-18T16:01:58+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -574,3 +574,6 @@ source code or treating a capacity failure as a model result.
   preflight and preserve fail-closed gates.
 
 - 2026-09-18T16:01:42+00:00: Claimed by codex-ar1308-runner-provision-20260918.
+
+- 2026-09-18T16:01:58+00:00: Recorded command exit 0; command argv SHA-256
+  d01ec9815109888cbe3c2cb2925927fcd44864ade58c52b9bbfc1618bedf8735.
