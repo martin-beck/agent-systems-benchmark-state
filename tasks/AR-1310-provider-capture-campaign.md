@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1310-provider-capture-campaign",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-18T21:50:44+00:00",
   "depends_on": [
     "AR-1060",
     "AR-1151"
   ],
   "id": "AR-1310",
   "next_action": "Promote only after review confirms AR-1160 blocked evidence is preserved and the runtime capture design is dependency-ready; implement the provider-bound capture seam, durable tuple cassette coverage, restart reconciliation, and fail-closed offline activation.",
-  "owner": "",
+  "owner": "ar1310-provider-capture",
   "plan": "../plans/AR-1310.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Runtime-owned provider capture and recording campaign qualification.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Runtime-owned provider capture and recording campaign qualification",
-  "updated_at": "2026-09-18T19:50:38+00:00",
+  "updated_at": "2026-09-18T19:50:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1310-provider-capture-campaign"
 }
 ---
@@ -90,3 +90,5 @@ independently so its promotion is not falsely implied by AR-1160 completion.
 - 2026-09-18T19:50:38+00:00: Dependencies AR-1060 and AR-1151 are done; reviewed AR-1160 blocked
   evidence and protected-main baseline, promoting scoped runtime-owned capture successor without
   treating AR-1160 as complete.
+
+- 2026-09-18T19:50:44+00:00: Claimed by ar1310-provider-capture.
