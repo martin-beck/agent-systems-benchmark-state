@@ -2,8 +2,8 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `83c3c202271286fb00d0a8634690faa451b9b2fd`
-- Local origin/main: `83c3c202271286fb00d0a8634690faa451b9b2fd`
+- Product remote main: `1c123805aa26de1217562a3c4421384cc4b4e75c`
+- Local origin/main: `1c123805aa26de1217562a3c4421384cc4b4e75c`
 - Primary worktree head: `bd7d10d4a760a84fa42de2b1fa9e97e8ea85ba09`
 
 ## Open pull requests
@@ -21,22 +21,21 @@ Generated from local Git and GitHub. Do not edit.
 | #150 | `dependabot/cargo/tempfile-3.27.0@d4eb5ee4a62e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump tempfile from 3.22.0 to 3.27.0 |
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
 | #214 | `feature/ar-1286-supervised-replay-lifecycle@eaf7fcbf42ae` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(replay): integrate runtime-owned supervised replay lifecycle |
-| #215 | `feature/ar-1286-replay-lifecycle-rebased@03b1ddc7c9d2` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(replay): integrate signed runtime replay lifecycle |
 | #220 | `feature/ar-1303-hosted-platform-diagnostics@d85889d5066c` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | ci(platforms): add privacy-safe hosted failure diagnostics |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35324591872 | `83c3c2022712` | push | Fault assurance | completed:success |
-| 35324591860 | `83c3c2022712` | push | Formal assurance | completed:success |
-| 35324591853 | `83c3c2022712` | push | Rust verification | completed:success |
-| 35324591783 | `83c3c2022712` | push | Huawei MIT source headers | completed:success |
-| 35324591773 | `83c3c2022712` | push | Hosted portability and native qualification | completed:success |
-| 35324591769 | `83c3c2022712` | push | Repository quality | completed:success |
-| 35324591758 | `83c3c2022712` | push | Emulated aarch64 portability | completed:success |
-| 35323554662 | `5dbe97e84d32` | pull_request | Rust verification | completed:success |
-| 35323554647 | `5dbe97e84d32` | pull_request | Repository quality | completed:success |
-| 35323554557 | `5dbe97e84d32` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 35323554544 | `5dbe97e84d32` | pull_request | Emulated aarch64 portability | completed:success |
-| 35323554541 | `5dbe97e84d32` | pull_request | Hosted portability and native qualification | completed:success |
+| 35327741947 | `1c123805aa26` | push | Fault assurance | in_progress:- |
+| 35327741899 | `1c123805aa26` | push | Emulated aarch64 portability | in_progress:- |
+| 35327741891 | `1c123805aa26` | push | Hosted portability and native qualification | in_progress:- |
+| 35327741888 | `1c123805aa26` | push | Huawei MIT source headers | completed:success |
+| 35327741886 | `1c123805aa26` | push | Repository quality | completed:failure |
+| 35327741861 | `1c123805aa26` | push | Rust verification | in_progress:- |
+| 35327741849 | `1c123805aa26` | push | Formal assurance | in_progress:- |
+| 35326872660 | `f17fdb3347e6` | pull_request | Rust verification | completed:success |
+| 35326872656 | `f17fdb3347e6` | pull_request | Emulated aarch64 portability | completed:success |
+| 35326872572 | `f17fdb3347e6` | pull_request | Repository quality | completed:success |
+| 35326872501 | `f17fdb3347e6` | pull_request | Formal assurance | completed:success |
+| 35326872495 | `f17fdb3347e6` | pull_request | Agent Workflow Quality shadow | completed:success |
