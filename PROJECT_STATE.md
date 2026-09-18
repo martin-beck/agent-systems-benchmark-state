@@ -32,7 +32,7 @@ Generated from local Git and GitHub. Do not edit.
 | 35386812218 | `21b675e81191` | push | Formal assurance | completed:success |
 | 35386812199 | `21b675e81191` | push | Emulated aarch64 portability | in_progress:- |
 | 35386812194 | `21b675e81191` | push | Hosted portability and native qualification | completed:success |
-| 35386812105 | `21b675e81191` | push | Rust verification | in_progress:- |
+| 35386812105 | `21b675e81191` | push | Rust verification | completed:success |
 | 35385954483 | `b5b0ef3bdda8` | pull_request | Formal assurance | completed:success |
 | 35385954355 | `b5b0ef3bdda8` | pull_request | Repository quality | completed:success |
 | 35385954223 | `b5b0ef3bdda8` | pull_request | Rust verification | completed:success |
