@@ -2,22 +2,22 @@
 {
   "branch": "repair/ar-1295-vendor-fixtures",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-18T21:03:47+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1295",
   "next_action": "Open a review PR from the clean exact fixture head after repairing the unrelated generated-state schema blocker: AR-1160 next_action exceeds the schema length bound. Preserve the v0.3.7 fixture and do not change handoffctl/vendor code.",
   "observed_branch": "repair/ar-1295-vendor-fixtures",
   "observed_dirty": 0,
   "observed_head": "c8c5a25e0ba31862c83465ea02963c5e4adb5d22",
-  "owner": "asb-ar1295-vendor-fixtures-20260918",
+  "owner": "",
   "plan": "../plans/AR-1295.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Align stale coordinator vendor tests with the verified immutable v0.3.7 pin.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Coordinator vendor v0.3.7 fixture alignment",
-  "updated_at": "2026-09-18T19:03:47+00:00",
+  "updated_at": "2026-09-18T19:13:10+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1295-vendor-fixtures"
 }
 ---
@@ -148,3 +148,11 @@ handoffctl, formal runner behavior, ASB product, or asb-tui.
   and route the schema repair separately before PR/review.
 
 - 2026-09-18T19:03:47+00:00: Heartbeat by asb-ar1295-vendor-fixtures-20260918.
+
+- 2026-09-18T19:13:10+00:00: Released as blocked with evidence preserved. Immutable v0.3.7 fixture
+  repair is already on protected signed+DCO main at 53fd66118559b2e99ebf5c4d50416b004156049d; vendor
+  verify, focused 8/8, full unittest 196/196, coverage >=95, Ruff, mypy, headers, Lizard, and
+  render-status checks pass. The only failing applicable gate is schema validation because AR-1160
+  next_action exceeds the declared schema length bound. This is an unrelated live AR-1160 owner
+  issue; do not alter AR-1160 here. After that owner repairs and exact-head generated state is
+  green, re-open AR-1295 only if a publication/review transition remains.
