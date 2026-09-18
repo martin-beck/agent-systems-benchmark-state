@@ -11,16 +11,16 @@
   "next_action": "Rebase PR #119 onto current main after merged formal provenance repairs; preserve signed lifecycle commits, run full gates, refresh exact-head CI, and merge only when every required check is green.",
   "observed_branch": "feature/native-capacity-controller",
   "observed_dirty": 0,
-  "observed_head": "28f30eea80efef5a61ea438e77402f8640564cc9",
+  "observed_head": "a40b71353f46d395fdbc130f7f8b10597a9594fb",
   "owner": "ar0704_rebase_impl",
   "plan": "../plans/AR-0704.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 160,
+  "task_revision": 161,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-18T21:54:27+00:00",
+  "updated_at": "2026-09-18T21:54:36+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
