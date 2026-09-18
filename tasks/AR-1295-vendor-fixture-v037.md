@@ -2,22 +2,22 @@
 {
   "branch": "repair/ar-1295-vendor-fixtures",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-18T20:56:39+00:00",
   "depends_on": [],
   "id": "AR-1295",
   "next_action": "Update stale coordinator vendor test fixtures from v0.3.5 to verified immutable v0.3.7 and rerun the complete state test suite without changing vendor or handoffctl code.",
   "observed_branch": "repair/ar-1295-vendor-fixtures",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "",
+  "owner": "asb-ar1295-vendor-fixtures-20260918",
   "plan": "../plans/AR-1295.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Align stale coordinator vendor tests with the verified immutable v0.3.7 pin.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Coordinator vendor v0.3.7 fixture alignment",
-  "updated_at": "2026-09-18T18:56:33+00:00",
+  "updated_at": "2026-09-18T18:56:39+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1295-vendor-fixtures"
 }
 ---
@@ -91,3 +91,5 @@ handoffctl, formal runner behavior, ASB product, or asb-tui.
   stale vendor expectations; prior signed candidate 53fd66118 is not integrated on main. No
   dependencies remain, and immutable v0.3.7 provenance is already verified. Claim for exact-head
   review and full-gate classification; do not weaken pre-existing state gates.
+
+- 2026-09-18T18:56:39+00:00: Claimed by asb-ar1295-vendor-fixtures-20260918.
