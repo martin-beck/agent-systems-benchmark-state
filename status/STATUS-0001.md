@@ -11,12 +11,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 47 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
-| **Done** | Accepted, integrated, and durably verified | 217 |
+| **Done** | Accepted, integrated, and durably verified | 218 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 11 |
 
@@ -399,7 +399,7 @@ flowchart LR
         AR_1300["AR-1300 - Done"]:::status_done
         AR_1301["AR-1301 - Superseded"]:::status_superseded
         AR_1302["AR-1302 - Done"]:::status_done
-        AR_1303["AR-1303 - In progress"]:::status_in_progress
+        AR_1303["AR-1303 - Done"]:::status_done
         AR_1304["AR-1304 - Done"]:::status_done
         AR_1305["AR-1305 - Blocked"]:::status_blocked
         AR_1306["AR-1306 - Done"]:::status_done
@@ -1659,12 +1659,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1160](../tasks/AR-1160.md): Wizard control API | codex-ar1160-lifecycle-20260918 | Wizard control API | Post-merge exact-main verification for f7602a73e4fc7a5d9af4f675b8772680d2612066 is terminal green across all seven workflows: Repository quality 35374843154, Rust 35374843254, fault 35374843244, formal 35374843115, aarch64 35374843171, hosted portability 35374843061, headers 35374843105. Follow-up coverage repair is complete. Prepare the next fresh scoped ASB implementation AR/branch for provider-bound capture wiring, durable cassette reconciliation, and offline-default activation; keep AR-1160 open until remaining scope is complete. |
-| P1 | [AR-1303](../tasks/AR-1303-hosted-platform-diagnostics.md): Privacy-safe hosted platform failure diagnostics | ar1303_ci_infra_repair | Add privacy-safe fixed diagnostics for hosted platform evidence failures. | PR #220 exact head b5b0ef3 is clean/mergeable with all 12 required exact-head checks green (runs 35385954125, 35385954126, 35385954155, 35385954223, 35385954355, 35385954483). Independent diff review confirms only fixed opt-in privacy diagnostics plus unavailable-marker compatibility; signature/DCO and no gate weakening verified. Merge through protected path, then watch every post-merge workflow for resulting main SHA. |
 
 ### Open (1)
 
@@ -1741,3 +1740,6 @@ flowchart LR
 | P0 | [AR-1032](../tasks/AR-1032-asb-tui-contextual-help.md): Add contextual hotkeys and complete action help | Unclaimed | Provide a context-fitted hotkey window, global action search and mechanically complete help. | Add the contextual action registry, search field, fitted hotkey window and complete help coverage after the user-facing screens exist. |
 | P0 | [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md): Establish the professional TUI visual system | Unclaimed | Create a responsive, accessible and professional visual system for every TUI screen. | Create the standalone Ratatui visual system after the application shell is integrated. |
 | P0 | [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md): Add the standalone TUI configuration center | Unclaimed | Add a searchable configuration menu for frontend preferences and benchmark defaults. | Implement the non-secret configuration center foundation after the visual system and ASB wizard control API are stable; AR-1170 owns provider, authentication and default integration. |
+| P0 | [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md): Build recent-runs, report and comparison workspaces | Unclaimed | Add searchable recent runs, report inspection and evidence-qualified comparison workspaces. | Implement report and comparison screens after recording workflows publish stable live and strict-replay source labels. |
+| P0 | [AR-1170](../tasks/AR-1170.md): Standalone TUI wizard | Unclaimed | Guide TUI setup through analysis. | Read the plan. |
+| P0 | [AR-1180](../tasks/AR-1180.md): Cross-project wizard qualification | Unclaimed | Qualify the complete wizard. | Read the plan. |

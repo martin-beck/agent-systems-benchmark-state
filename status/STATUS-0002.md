@@ -1,8 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| P0 | [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md): Build recent-runs, report and comparison workspaces | Unclaimed | Add searchable recent runs, report inspection and evidence-qualified comparison workspaces. | Implement report and comparison screens after recording workflows publish stable live and strict-replay source labels. |
-| P0 | [AR-1170](../tasks/AR-1170.md): Standalone TUI wizard | Unclaimed | Guide TUI setup through analysis. | Read the plan. |
-| P0 | [AR-1180](../tasks/AR-1180.md): Cross-project wizard qualification | Unclaimed | Qualify the complete wizard. | Read the plan. |
 | P0 | [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md): Authenticated TUI install router | Unclaimed | Expose an authenticated renderer-neutral ASB router for asb tui install and lifecycle operations. | Promote only after dependencies are independently complete; implement the renderer-neutral authenticated CLI/control route and full integration tests. |
 | P0 | [AR-1211](../tasks/AR-1211-initial-setup-first-agent.md): Initial setup and first agent connection tutorial | Unclaimed | Teach first-time users to initialize ASB and add the first agent connection. | Implement the syntax-checked tutorial for ASB initialization, first-agent registration, and agent connection setup. |
 | P0 | [AR-1212](../tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Unclaimed | Teach users to test configured-agent benchmark eligibility without running an agent. | Implement the offline tutorial for checking agent benchmark readiness under the current configuration. |
@@ -52,7 +49,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (217)
+### Done (218)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -259,6 +256,7 @@
 | P1 | [AR-1253](../tasks/AR-1253-pinned-python-transport-runtime.md): Provision pinned Python transport fixture runtime | Unclaimed | Provision pinned Python transport fixture runtime. | Monitor post-merge workflows for exact main a0befc0 until all seven terminal SUCCESS; verify exact tree/signature/DCO/policy, then release AR-1253 done. |
 | P1 | [AR-1263](../tasks/AR-1263-sandbox-scope-classification-stability.md): Stabilize sandbox scope classification gate | Unclaimed | Stabilize intermittent sandbox scope classification in the quality gate. | Complete: feature 0acbc1d tree equals signed protected main 69e8b064; AR-1264 recovery and all seven exact-main workflows SUCCESS. Preserve PR205 and recovery traceability. |
 | P1 | [AR-1288](../tasks/AR-1288-certificate-chain-authz.md): Runtime certificate issuance and chain validation | Unclaimed | Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814. | Preserve merged code; repair protected-main DCO integrity forward-only, rerun exact-main gates, then release. |
+| P1 | [AR-1303](../tasks/AR-1303-hosted-platform-diagnostics.md): Privacy-safe hosted platform failure diagnostics | Unclaimed | Add privacy-safe fixed diagnostics for hosted platform evidence failures. | PR #220 exact head b5b0ef3 is clean/mergeable with all 12 required exact-head checks green (runs 35385954125, 35385954126, 35385954155, 35385954223, 35385954355, 35385954483). Independent diff review confirms only fixed opt-in privacy diagnostics plus unavailable-marker compatibility; signature/DCO and no gate weakening verified. Merge through protected path, then watch every post-merge workflow for resulting main SHA. |
 | P2 | [AR-0202](../tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Unclaimed | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Run final exact-main and local post-merge verification using required native x86_64 kernel evidence and applicable pinned QEMU AArch64 portability checks; record native ARM64 PMU/eBPF as optional future evidence, then release. |
 | P2 | [AR-0308](../tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | Unclaimed | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Run final state validation/live doctor and release done after confirming clean synchronized product/state refs at signed merge a0d80e4. |
 | P2 | [AR-0309](../tasks/AR-0309-agent-openhands.md): Implement maintained OpenHands SDK client adapter | Unclaimed | Run a maintained MIT OpenHands SDK or canonical headless client. | Monitor PR #65 exact-head CI for fec0487, investigate any failure, and await final review; do not merge. |

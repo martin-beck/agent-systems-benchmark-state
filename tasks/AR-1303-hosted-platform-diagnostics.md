@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1303-hosted-platform-diagnostics",
   "checkpoint_commit": "b5b0ef3bdda88f1b1d73b0e51f7610bdf6406f53",
-  "claim_expires": "2026-09-18T21:30:48+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0907",
     "AR-1252"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1303-hosted-platform-diagnostics",
   "observed_dirty": 0,
   "observed_head": "b5b0ef3bdda88f1b1d73b0e51f7610bdf6406f53",
-  "owner": "ar1303_ci_infra_repair",
+  "owner": "",
   "plan": "../plans/AR-1303.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Add privacy-safe fixed diagnostics for hosted platform evidence failures.",
-  "task_revision": 79,
+  "task_revision": 80,
   "title": "Privacy-safe hosted platform failure diagnostics",
-  "updated_at": "2026-09-18T19:43:35+00:00",
+  "updated_at": "2026-09-18T19:44:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1303-hosted-platform-diagnostics"
 }
 ---
@@ -272,3 +272,16 @@ native qualification route. This AR must not modify runtime behavior or asb-tui.
 
 - 2026-09-18T19:43:35+00:00: Recorded command exit 0; command argv SHA-256
   64ce53dd5cb265655fe3822437b7cbeb934d6da1adcdbdf7306334e8bac9e423.
+
+- 2026-09-18T19:44:18+00:00: Completed AR-1303. Rebased d85889d onto current main, resolved
+  unavailable-marker compatibility while retaining fail-closed behavior, and published signed+DCO
+  topic b5b0ef3. Independent review found only fixed opt-in privacy-safe hosted diagnostics and
+  workflow opt-in; no schema/native/gate weakening. Local focused platform suite passed 12/12 plus 9
+  subtests; Ruff, py_compile and diff checks passed. PR #220 exact-head CI all green: 35385954125
+  fault, 35385954126 platform, 35385954155 emulated-aarch64, 35385954223 Rust, 35385954355 quality,
+  35385954483 formal, plus AWQ/header checks. Protected merge
+  21b675e8119104ebbfec967454fabc2dfa0d632d has parents f7602a73e4fc7a5d9af4f675b8772680d2612066 and
+  b5b0ef3, identical merge/topic trees. Post-merge main SHA workflows all terminal success:
+  35386812105 Rust, 35386812194 platform, 35386812199 emulated-aarch64, 35386812218 formal,
+  35386812254 headers, 35386812272 fault, 35386812378 quality. Native/QEMU policy and gates
+  preserved.
