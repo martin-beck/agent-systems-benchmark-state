@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T13:47:05+00:00",
+  "updated_at": "2026-09-18T13:47:23+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -41,3 +41,6 @@ source code or treating a capacity failure as a model result.
   worker assignment. Preserve AR-1307 3G/3G contract and exact-head dependency.
 
 - 2026-09-18T13:47:05+00:00: Claimed by codex-ar1308-qemu-capacity-20260918.
+
+- 2026-09-18T13:47:23+00:00: Recorded command exit 128; command argv SHA-256
+  3c23ab8c7aef5e69413a67148e540252a0be1c5f0afbf399d42a0b9fde7ef802.
