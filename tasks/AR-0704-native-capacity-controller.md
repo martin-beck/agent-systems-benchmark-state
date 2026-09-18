@@ -2,7 +2,7 @@
 {
   "branch": "feature/native-capacity-controller",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-18T23:06:32+00:00",
+  "claim_expires": "2026-09-18T23:22:45+00:00",
   "depends_on": [
     "AR-0701",
     "AR-0103"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 213,
+  "task_revision": 214,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-18T22:22:19+00:00",
+  "updated_at": "2026-09-18T22:22:45+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -716,3 +716,5 @@ must not block this AR or its dependents.
 
 - 2026-09-18T22:22:19+00:00: Recorded command exit 0; command argv SHA-256
   1d8901870ec3290fc544e186290f19ccc3575fa9600d595ead40b49933491249.
+
+- 2026-09-18T22:22:45+00:00: Heartbeat by ar0704_capacity_reclaim.
