@@ -10,17 +10,17 @@
   "id": "AR-1310",
   "next_action": "Promote only after review confirms AR-1160 blocked evidence is preserved and the runtime capture design is dependency-ready; implement the provider-bound capture seam, durable tuple cassette coverage, restart reconciliation, and fail-closed offline activation.",
   "observed_branch": "feature/ar-1310-provider-capture-campaign",
-  "observed_dirty": 1,
-  "observed_head": "a6a3e43cce68255fc2d6bf47e883827da284c8dd",
+  "observed_dirty": 0,
+  "observed_head": "1625655a0a9582d30a9b31ba2ec9a0f1a4904eda",
   "owner": "ar1310-provider-capture",
   "plan": "../plans/AR-1310.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Runtime-owned provider capture and recording campaign qualification.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Runtime-owned provider capture and recording campaign qualification",
-  "updated_at": "2026-09-18T20:23:49+00:00",
+  "updated_at": "2026-09-18T20:23:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1310-provider-capture-campaign"
 }
 ---
