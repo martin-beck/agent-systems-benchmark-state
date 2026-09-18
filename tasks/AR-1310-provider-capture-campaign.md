@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1310-provider-capture-campaign",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "a6a3e43cce68255fc2d6bf47e883827da284c8dd",
   "claim_expires": "2026-09-18T22:15:16+00:00",
   "depends_on": [
     "AR-1060",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Runtime-owned provider capture and recording campaign qualification.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Runtime-owned provider capture and recording campaign qualification",
-  "updated_at": "2026-09-18T20:15:16+00:00",
+  "updated_at": "2026-09-18T20:15:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1310-provider-capture-campaign"
 }
 ---
@@ -228,3 +228,12 @@ independently so its promotion is not falsely implied by AR-1160 completion.
   a21a7e60eee0efcd5f4353b04cf59f00fc7fb30606d66fa1af9ed484d7f5bd4a.
 
 - 2026-09-18T20:15:16+00:00: Heartbeat by ar1310-provider-capture.
+
+- 2026-09-18T20:15:38+00:00: PR #229 exact-head a6a3e43 was rejected by hosted Rust job 105745687544
+  in run 35389941221 with E0369 at crates/asb-replay/src/service.rs:2015: assert_eq! compared
+  Result<CassetteContents, ReplayError>, but ReplayError intentionally lacks PartialEq. Corrective
+  action: changed the negative test to assert!(matches!(..., Err(ReplayError::InvalidHttp))),
+  preserving the fail-closed API and avoiding an unnecessary public trait derivation. Focused
+  negative test, cargo fmt check, workspace clippy -D warnings, and full cargo test --locked
+  --workspace --offline pass. New commit is SSH-signed with DCO; push exact head and await required
+  CI.
