@@ -8,7 +8,7 @@
     "AR-0103"
   ],
   "id": "AR-0704",
-  "next_action": "PR #119 is exact head e2e3574 on base 78a8e9f; wait all required exact-head checks (runs 35401437280,35401437351,35401437224,35401437264,35401437247,35401437295) to terminal green, then independent review and merge/post-merge verification.",
+  "next_action": "PR #119 remains exact head e2e3574 on base 78a8e9f; wait Emulated aarch64 35401437280, Repository quality 35401437247, and Rust verification 35401437295 to terminal green, then independent review and merge/post-merge verification.",
   "observed_branch": "feature/native-capacity-controller",
   "observed_dirty": 0,
   "observed_head": "e2e3574ed2bbc020105ffb1eb4c5a38691b299a3",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 222,
+  "task_revision": 223,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-18T22:28:52+00:00",
+  "updated_at": "2026-09-18T22:29:10+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -750,3 +750,8 @@ must not block this AR or its dependents.
   merge attempted.
 
 - 2026-09-18T22:28:52+00:00: Heartbeat by ar0704_capacity_reclaim.
+
+- 2026-09-18T22:29:10+00:00: CI progress rechecked: all formal subchecks in run 35401437224 are
+  green, fault subchecks in 35401437351 are green, platform run 35401437264, headers 35401437239,
+  and AWQ shadow 35401437238 are green. Only top-level Emulated aarch64, Repository quality, and
+  Rust verification remain in progress. PR head remains exact e2e3574; no merge.

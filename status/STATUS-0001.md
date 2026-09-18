@@ -1672,7 +1672,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0704](../tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | ar0704_capacity_reclaim | Control genuine native platform capacity lifecycle. | PR #119 is exact head e2e3574 on base 78a8e9f; wait all required exact-head checks (runs 35401437280,35401437351,35401437224,35401437264,35401437247,35401437295) to terminal green, then independent review and merge/post-merge verification. |
+| P1 | [AR-0704](../tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | ar0704_capacity_reclaim | Control genuine native platform capacity lifecycle. | PR #119 remains exact head e2e3574 on base 78a8e9f; wait Emulated aarch64 35401437280, Repository quality 35401437247, and Rust verification 35401437295 to terminal green, then independent review and merge/post-merge verification. |
 
 ### Blocked (49)
 
