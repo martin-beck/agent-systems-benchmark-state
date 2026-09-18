@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Await fresh DCO/vendor/strict CI on exact head 590dd6c5d; then diagnose repeated full TLC exit-1 with captured stdout and repair only proven causes before qualification.",
+  "next_action": "Diagnose repeated full-exhaustive TLC exit-1 with controlled local reproduction and cgroup/disk/journal evidence; make only evidence-backed termination repair, then rerun focused gates before any new formal dispatch.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "969eef05834a4ce5f711bbafaa5798549abd95c8",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 696,
+  "task_revision": 697,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T09:58:14+00:00",
+  "updated_at": "2026-09-18T11:06:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1956,3 +1956,9 @@ and protected publication sequence.
   retained). Force-with-lease pushed exact head 590dd6c5d. Formal failure 35326417135 remains
   recorded: ~32.86M generated, ~27.20M distinct, ~10.8M queued states, exit 1, no attestation. No
   merge or qualification claim.
+
+- 2026-09-18T11:06:35+00:00: Formal run 35332252619 failed at 2026-09-18T11:00:00Z on exact head
+  590dd6c5d after approximately 62 minutes. TLC used 2 workers/2 cores, ~1979MB heap and 64MB
+  offheap, reached ~33.145M generated, ~27.489M distinct states, and ~10.805M queued states, then
+  exited 1. No invariant, OOM, or explicit termination text was emitted. DCO/vendor/strict CI is
+  green; formal evidence remains failed. Do not widen limits or claim success.
