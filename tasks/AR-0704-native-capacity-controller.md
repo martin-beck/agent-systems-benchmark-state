@@ -16,11 +16,11 @@
   "plan": "../plans/AR-0704.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 229,
+  "task_revision": 230,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-18T22:34:32+00:00",
+  "updated_at": "2026-09-18T22:36:04+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -773,3 +773,7 @@ must not block this AR or its dependents.
   deficit also observed on main run 35399110287 (90.00% rounded with 5,271 missed); preserve PR #119
   and route meaningful coverage repair to AR-1312 after its dependency policy allows promotion. Do
   not weaken the floor or merge.
+
+- 2026-09-18T22:36:04+00:00: Correct stale next_action after terminal CI: required checks are no
+  longer pending; Repository quality failed at 89.99%, so preserve PR and route coverage repair to
+  AR-1312. No merge.
