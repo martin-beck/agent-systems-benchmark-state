@@ -59,6 +59,7 @@ runcmd:
   - [mkdir, -p, /srv/data/projects]
   - [mount, --bind, /mnt/asb-data/state, /srv/data/projects]
   - [mkdir, -p, /mnt/asb-data/tmp, /mnt/asb-data/state/tmp, /mnt/asb-data/state/evidence]
+  - [chown, -R, 1000:1000, /mnt/asb-data/state/tmp, /mnt/asb-data/state/evidence]
   - [chmod, "1777", /mnt/asb-data/tmp, /mnt/asb-data/state/tmp]
   - [chmod, "1777", /tmp]
   - [systemctl, start, user-runtime-dir@1000.service]
