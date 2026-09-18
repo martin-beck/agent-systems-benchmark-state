@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 321,
+  "task_revision": 322,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T02:30:47+00:00",
+  "updated_at": "2026-09-18T02:30:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -822,3 +822,6 @@ and protected publication sequence.
   bounded private non-success interruption receipts; no success attestation is emitted. Stage17
   remains SUBPROCESS_INTERRUPTED with no full attestation. Worker state branch is pushed; PR branch
   advanced from 01f6e000b to adfb775a0.
+
+- 2026-09-18T02:30:55+00:00: Recorded command exit 0; command argv SHA-256
+  ffd2c2087ea8d4d5936a68173743a8fba699a09882c490f525737dd2bf2fa977.
