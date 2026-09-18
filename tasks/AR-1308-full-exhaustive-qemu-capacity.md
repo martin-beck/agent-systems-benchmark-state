@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 261,
+  "task_revision": 262,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T16:26:05+00:00",
+  "updated_at": "2026-09-18T16:27:54+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -738,3 +738,6 @@ source code or treating a capacity failure as a model result.
   offline/no-host-mount and bounded-QEMU gates.
 
 - 2026-09-18T16:26:05+00:00: Claimed by codex-ar1308-fixture-repair-20260918.
+
+- 2026-09-18T16:27:54+00:00: Recorded command exit 0; command argv SHA-256
+  345b7f045a692dbcc079b4545803eedce545827bb52f2e19e959b757381e7f59.
