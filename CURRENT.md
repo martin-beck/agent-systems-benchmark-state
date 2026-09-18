@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1307](tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Run exact-head CI for PR #25 at 969eef058; review the complete diff and merge only after all required checks and fresh formal attestation pass. | codex-ar1307-signed-history-20260918 |
+| P0 | [AR-1307](tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Await formal run 35306838470 at exact head 969eef058; then independently review, merge, verify post-merge, and hand off to AR-1293 only if every gate is green. | codex-ar1307-signed-history-20260918 |
 
 ## Open
 

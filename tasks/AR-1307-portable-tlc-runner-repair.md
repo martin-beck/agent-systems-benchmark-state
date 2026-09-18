@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Run exact-head CI for PR #25 at 969eef058; review the complete diff and merge only after all required checks and fresh formal attestation pass.",
+  "next_action": "Await formal run 35306838470 at exact head 969eef058; then independently review, merge, verify post-merge, and hand off to AR-1293 only if every gate is green.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 588,
+  "task_revision": 589,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T04:25:08+00:00",
+  "updated_at": "2026-09-18T04:28:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1602,3 +1602,8 @@ and protected publication sequence.
 
 - 2026-09-18T04:25:08+00:00: Recorded command exit 0; command argv SHA-256
   99ca51039acb1eb7ac4037dddd0c1ff06ae3fd1577521df105449ff7c884bd7a.
+
+- 2026-09-18T04:28:27+00:00: Qualification is active at exact PR #25 head 969eef058. Hosted
+  coordination 35306743512, Huawei headers 35306794847, and AWQ shadow 35306806803 passed. Formal
+  35306838470 passed runner/user-bus setup and is executing the exhaustive model. Stale formal
+  35305564895 from closed PR #24 was canceled after confirming no process or admission-lock holder.
