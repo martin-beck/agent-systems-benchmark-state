@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 166,
+  "task_revision": 167,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-18T21:56:13+00:00",
+  "updated_at": "2026-09-18T21:56:38+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -579,3 +579,6 @@ must not block this AR or its dependents.
 
 - 2026-09-18T21:56:04+00:00: Recorded command exit 1; command argv SHA-256
   414994e96972a91feab4e2df2671a370a456d29122985fd923c11854d6b95ad7.
+
+- 2026-09-18T21:56:38+00:00: Recorded command exit 0; command argv SHA-256
+  1028b7558af5d5f37c83b8855ae610869d7a0c5f82d0bc73800684ef76ca84c3.
