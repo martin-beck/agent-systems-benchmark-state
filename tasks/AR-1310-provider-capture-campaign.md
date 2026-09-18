@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1310-provider-capture-campaign",
   "checkpoint_commit": "17a1530e620608a4d53b6d92ba48c642400778e2",
-  "claim_expires": "2026-09-18T22:49:22+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1060",
     "AR-1151"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1310-provider-capture-campaign",
   "observed_dirty": 0,
   "observed_head": "9a2f313e86332e35eec40b97a692026b497d46cd",
-  "owner": "ar1310-provider-capture",
+  "owner": "",
   "plan": "../plans/AR-1310.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Runtime-owned provider capture and recording campaign qualification.",
-  "task_revision": 88,
+  "task_revision": 89,
   "title": "Runtime-owned provider capture and recording campaign qualification",
-  "updated_at": "2026-09-18T20:51:52+00:00",
+  "updated_at": "2026-09-18T20:52:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1310-provider-capture-campaign"
 }
 ---
@@ -335,3 +335,10 @@ independently so its promotion is not falsely implied by AR-1160 completion.
 
 - 2026-09-18T20:51:52+00:00: Recorded command exit 0; command argv SHA-256
   eaf2472e4b0ec29bac3303a6d46474c99be3c0ab077feca87b1c3650d4745e53.
+
+- 2026-09-18T20:52:05+00:00: AR-1310 implementation merged at
+  17a1530e620608a4d53b6d92ba48c642400778e2, but required post-merge policy run 35393146183 failed
+  the unchanged workspace coverage floor at 89.99% (52,704 executed, 5,274 missed of 80,319 lines).
+  Exact blocker transferred to successor AR-1312 (durably recorded and dependency-linked); this AR
+  is now blocked and ownerless pending successor correction and all-green exact-main post-merge
+  checks.

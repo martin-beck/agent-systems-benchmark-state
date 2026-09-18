@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1310](tasks/AR-1310-provider-capture-campaign.md): Runtime-owned provider capture and recording campaign qualification | Runtime-owned provider capture and recording campaign qualification. | Promote only after review confirms AR-1160 blocked evidence is preserved and the runtime capture design is dependency-ready; implement the provider-bound capture seam, durable tuple cassette coverage, restart reconciliation, and fail-closed offline activation. | ar1310-provider-capture |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -53,6 +47,7 @@ Never edit this file directly.
 | P0 | [AR-1305](tasks/AR-1305-image-native-user-session.md): Image-native user-session support | Qualify image-native D-Bus user-session support for required TLC containment. | Promote after review; qualify dbus-user-session and systemd user-manager support in a fresh offline guest image, then hand the immutable image to AR-1304. | - |
 | P0 | [AR-1307](tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | AR-1308 is planned for disposable x86_64 QEMU capacity. Keep AR-1307 unqualified; after AR-1308 capacity evidence, rerun exact full-exhaustive without changing the 3G/3G contract. | - |
 | P0 | [AR-1308](tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Provision reviewed second-disk headroom and bind exact AR-1307 969eef058; preflight must pass disk, JDK, TLC, lock, image, seed, source, and 32/48G runner receipt gates before any QEMU run. | - |
+| P0 | [AR-1310](tasks/AR-1310-provider-capture-campaign.md): Runtime-owned provider capture and recording campaign qualification | Runtime-owned provider capture and recording campaign qualification. | Promote only after review confirms AR-1160 blocked evidence is preserved and the runtime capture design is dependency-ready; implement the provider-bound capture seam, durable tuple cassette coverage, restart reconciliation, and fail-closed offline activation. | - |
 | P1 | [AR-0604](tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Obtain authorized native x86 runner and immutable CSB/Python evidence; rerun native_boundary and record A/B overhead. | - |
 | P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Control genuine native platform capacity lifecycle. | Formal assurance owner AR-0877/AR-0907 must repair the pinned TLA artifact provenance mismatch (downloaded byte count/hash) before PR #119 can be requalified; AR-0704 native controller requires no source change. | - |
 | P1 | [AR-0814](tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Create successor AR for authenticated route/ancestor authority; preserve AR-1288 evidence and AR-0814 head 29cfa193. | - |
