@@ -8,7 +8,7 @@
     "AR-1252"
   ],
   "id": "AR-1303",
-  "next_action": "PR #220 exact head b5b0ef3 is clean/mergeable with all 12 required exact-head checks green (runs 35385954125, 35385954126, 35385954155, 35385954223, 35385954355, 35385954483). Independent diff review confirms only fixed opt-in privacy diagnostics plus unavailable-marker compatibility; signature/DCO and no gate weakening verified. Merge through protected path, then watch every post-merge workflow for resulting main SHA.",
+  "next_action": "PR #220 merged after exact-head review; verify resulting main post-merge workflows and retain terminal workflow evidence. Diagnostics remain opt-in and privacy-safe; no gate weakening.",
   "observed_branch": "feature/ar-1303-hosted-platform-diagnostics",
   "observed_dirty": 0,
   "observed_head": "b5b0ef3bdda88f1b1d73b0e51f7610bdf6406f53",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "done",
   "summary": "Add privacy-safe fixed diagnostics for hosted platform evidence failures.",
-  "task_revision": 80,
+  "task_revision": 81,
   "title": "Privacy-safe hosted platform failure diagnostics",
-  "updated_at": "2026-09-18T19:44:18+00:00",
+  "updated_at": "2026-09-18T19:53:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1303-hosted-platform-diagnostics"
 }
 ---
@@ -285,3 +285,6 @@ native qualification route. This AR must not modify runtime behavior or asb-tui.
   35386812105 Rust, 35386812194 platform, 35386812199 emulated-aarch64, 35386812218 formal,
   35386812254 headers, 35386812272 fault, 35386812378 quality. Native/QEMU policy and gates
   preserved.
+
+- 2026-09-18T19:53:12+00:00: Bound metadata repair: shortened retained post-merge evidence to the
+  300-character schema limit; AR remains done and implementation evidence unchanged.
