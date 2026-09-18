@@ -8,13 +8,13 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1160](tasks/AR-1160.md): Wizard control API | Wizard control API | PR #227 exact head is now 3cc144e73ed68bd86f4dd05c644162e65dfb0895 with focused empty-campaign status coverage test. Local full tools/quality/check_coverage.py passed at 90.48% lines (51,864/57,? workspace report; hosted prior was 89.99%); all local tests in the full coverage run passed. Push completed; six hosted required workflows are running and must reach terminal green. Then obtain independent review, verify exact-head CI and merge only when all required checks are green. Runtime provider capture wiring and asb-tui recording controls remain future work; do not claim AR complete. | codex-ar1160-control-20260918 |
+| P0 | [AR-1308](tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Rebuild disposable guest with reviewed asb user/user-manager; rerun preflight and one bounded QEMU attempt. | codex-ar1308-fixture-repair-20260918 |
 
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Blocked on AR-1307 runner merge and handoff. Prior full VM was interrupted without success or attestation; after merge, rebuild exact fa57625d9 image/seed and rerun independently reviewed gates. | - |
-| P0 | [AR-1308](tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Rebuild disposable guest with reviewed asb user/user-manager; rerun preflight and one bounded QEMU attempt. | - |
 
 ## Blocked
 
