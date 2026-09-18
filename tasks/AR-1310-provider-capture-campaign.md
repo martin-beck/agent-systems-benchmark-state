@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1310-provider-capture-campaign",
   "checkpoint_commit": "17a1530e620608a4d53b6d92ba48c642400778e2",
-  "claim_expires": "2026-09-18T22:35:39+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1060",
     "AR-1151"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1310-provider-capture-campaign",
   "observed_dirty": 0,
   "observed_head": "9a2f313e86332e35eec40b97a692026b497d46cd",
-  "owner": "ar1310_followup_routing",
+  "owner": "",
   "plan": "../plans/AR-1310.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Runtime-owned provider capture and recording campaign qualification.",
-  "task_revision": 109,
+  "task_revision": 110,
   "title": "Runtime-owned provider capture and recording campaign qualification",
-  "updated_at": "2026-09-18T22:05:39+00:00",
+  "updated_at": "2026-09-18T22:06:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1310-provider-capture-campaign"
 }
 ---
@@ -398,3 +398,9 @@ independently so its promotion is not falsely implied by AR-1160 completion.
   authorized merge-integrity AR.
 
 - 2026-09-18T22:05:39+00:00: Claimed by ar1310_followup_routing.
+
+- 2026-09-18T22:06:05+00:00: Exact evidence: workflow 35396621049 on 17a1530 failed repository
+  policy because 909078ced21f36e5a72590c9decf41ac56452212 lacks matching Signed-off-by; optional
+  publication was skipped. Existing AR-1246/1247 are done and only fix protected-main
+  admission/workflow behavior, so neither owns historical repair. No existing AR legitimately owns
+  this repair; preserve blocker and keep AR-1312 dependency-blocked.
