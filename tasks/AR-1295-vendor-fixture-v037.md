@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-18T20:17:41+00:00",
   "depends_on": [],
   "id": "AR-1295",
-  "next_action": "Open a review PR from the clean exact fixture head after repairing the unrelated generated-state schema blocker: AR-1160 next_action exceeds the schema length bound. Preserve the v0.3.7 fixture and do not change handoffctl/vendor code.",
+  "next_action": "Repair current generated-state blockers (AR-1160, AR-1258, AR-1303, malformed AR-1309), then re-audit exact-head publication.",
   "observed_branch": "repair/ar-1295-vendor-fixtures",
   "observed_dirty": 0,
   "observed_head": "c8c5a25e0ba31862c83465ea02963c5e4adb5d22",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Align stale coordinator vendor tests with the verified immutable v0.3.7 pin.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Coordinator vendor v0.3.7 fixture alignment",
-  "updated_at": "2026-09-18T19:47:41+00:00",
+  "updated_at": "2026-09-18T19:47:55+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1295-vendor-fixtures"
 }
 ---
@@ -165,3 +165,10 @@ handoffctl, formal runner behavior, ASB product, or asb-tui.
   and exact-head publication transition is actually required.
 
 - 2026-09-18T19:47:41+00:00: Claimed by asb-ar1295-vendor-reaudit-20260918.
+
+- 2026-09-18T19:47:55+00:00: Live re-audit: schema validation remains non-green. AR-1160 next_action
+  exceeds bound; AR-1258 and AR-1303 next_action values also exceed it; AR-1309 has empty
+  checkpoint_commit and fails its SHA-1 schema. render-status --check passes, no AR-1295 PR exists,
+  fixture worktree is clean, and no competing owner/lease is present. The immutable v0.3.7 fixture
+  repair is already signed+DCO on main at 53fd66118559b2e99ebf5c4d50416b004156049d. No
+  handoffctl/vendor policy changes are authorized.
