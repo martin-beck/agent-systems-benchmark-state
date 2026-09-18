@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Await fresh exact-head CI for f33c250cb; if required checks pass, independently review and dispatch exactly one new formal run, then investigate any terminal TLC result before merge.",
+  "next_action": "Record repeated TLC exit-1 root cause, update generated vendor manifest fixture, rerun full focused/strict gates on a fresh signed head, and qualify only after a terminal green formal run.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "969eef05834a4ce5f711bbafaa5798549abd95c8",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 679,
+  "task_revision": 680,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T07:33:59+00:00",
+  "updated_at": "2026-09-18T08:45:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1892,3 +1892,9 @@ and protected publication sequence.
   to the approved runtime root. Corrective signed head f33c250cb also fixes Ruff formatting in
   tests/test_tlc_runner.py. Focused tests 61 passed; Ruff format/check passed. Prior full run
   35314479090 remains failed and is not reused as qualification.
+
+- 2026-09-18T08:45:59+00:00: Formal run 35320006238 reached terminal failure at 2026-09-18T08:36:56Z
+  on exact head f33c250cb. Offline preflight/admission passed, but full-exhaustive TLC failed closed
+  with exit 1 and no success attestation. This repeats the prior TLC exit-1 after the attestation
+  path fix; no qualification or merge claim. Strict consistency also requires generated
+  CURRENT_MANIFEST_SHA256 to match coordinator.vendor.json.
