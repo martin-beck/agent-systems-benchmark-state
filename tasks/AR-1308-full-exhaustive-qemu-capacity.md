@@ -9,7 +9,7 @@
   "id": "AR-1308",
   "next_action": "Fix state observation, then exact-head review and green CI; run bounded QEMU only after.",
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "ff84fd850a2299baa8a49b7d9827f141ed318e7d",
   "owner": "codex-ar1308-qemu-capacity-20260918",
   "plan": "../plans/AR-1308.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 88,
+  "task_revision": 89,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T15:08:23+00:00",
+  "updated_at": "2026-09-18T15:08:31+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
