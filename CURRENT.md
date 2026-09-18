@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1160](tasks/AR-1160.md): Wizard control API | Wizard control API | PR #227 exact head is 3db1f4ccc86ee470849c20366c7f91d6a51ded2a with portable lifecycle identity/error-path coverage. Hosted required checks are running; policy coverage rerun must reach terminal green before any merge. After green, obtain independent review and merge only exact reviewed head. AR remains incomplete after this slice: provider-bound capture wiring, durable cassette coverage reconciliation, and offline-default activation still require implementation. | codex-ar1160-control-20260918 |
+| P0 | [AR-1160](tasks/AR-1160.md): Wizard control API | Wizard control API | PR #227 exact head 3db1f4c has a hosted Rust test failure only in gemini malformed-ready timing assertion (<1s). Focused reproduction passed five serial attempts with RUST_TEST_THREADS=1 (one attempt hit coordinator LOCK_TIMEOUT only). The failed Rust workflow was rerun via handoffctl; wait for rerun plus policy coverage to reach terminal green, then independently review and merge only exact reviewed head. AR remains incomplete: provider capture wiring, cassette reconciliation, offline-default activation. | codex-ar1160-control-20260918 |
 | P0 | [AR-1308](tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Rebuild disposable guest with reviewed asb user/user-manager; rerun preflight and one bounded QEMU attempt. | codex-ar1308-fixture-repair-20260918 |
 
 ## Open
