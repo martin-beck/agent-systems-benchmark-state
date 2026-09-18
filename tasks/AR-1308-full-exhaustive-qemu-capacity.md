@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 181,
+  "task_revision": 182,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T15:49:12+00:00",
+  "updated_at": "2026-09-18T15:49:54+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -492,3 +492,6 @@ source code or treating a capacity failure as a model result.
   35364541277, 35364585118, 35364607523. Local focused tests passed (41 TLC, 78 coordinator, 8
   vendor); full CI ran 194 tests at 95% coverage. Host preflight remains correctly blocked by low
   host swap/disk; no QEMU run started.
+
+- 2026-09-18T15:49:54+00:00: Recorded command exit 0; command argv SHA-256
+  2a6e7f4c0dab971d1616332a6b5e3951e98e4535b2dd902935a981f391136765.
