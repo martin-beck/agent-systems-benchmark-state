@@ -7,7 +7,7 @@
     "AR-1304"
   ],
   "id": "AR-1308",
-  "next_action": "Runner is clean and strict-JSON valid at /srv/data/projects/asb-state-tlc-vm-ar1308-clean-v1: 64 GiB sparse data disk, x86_64 QEMU 8.2.2, q35, 8 vCPU, 32 GiB RAM, 16 GiB swap contract, no network/mounts. Bind exact signed AR-1307 969eef058 bundle plus pinned JDK/TLC, lock, image and seed; run complete preflight before boot. Do not qualify yet.",
+  "next_action": "Clean runner ready: 64 GiB disk, x86_64 QEMU 8.2.2, 8 vCPU, 32 GiB RAM, no network/mounts. Bind exact AR-1307 bundle, pinned JDK/TLC, lock, image and seed; preflight before boot.",
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 525,
+  "task_revision": 526,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T22:52:43+00:00",
+  "updated_at": "2026-09-18T22:52:46+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1573,3 +1573,6 @@ source code or treating a capacity failure as a model result.
   blocker evidence.
 
 - 2026-09-18T22:52:43+00:00: Claimed by coordinator-ar1308-runner-repair.
+
+- 2026-09-18T22:52:46+00:00: Schema repair: shortened next_action. Runner remains
+  prepared-not-qualified; no VM boot.
