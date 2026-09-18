@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 257,
+  "task_revision": 258,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T16:21:56+00:00",
+  "updated_at": "2026-09-18T16:22:01+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -719,3 +719,6 @@ source code or treating a capacity failure as a model result.
   process and preserve the classified fixture mismatch evidence.
 
 - 2026-09-18T16:21:56+00:00: Claimed by codex-coordinator-ar1308-runner-20260918.
+
+- 2026-09-18T16:22:01+00:00: Recorded command exit 0; command argv SHA-256
+  7e45f5e1e40fed516ec51062e5979d82637c99ff6fed6bb2f3cc00774fbb964b.
