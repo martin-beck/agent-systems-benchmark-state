@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Formal 35342513872 proved Java OOM during liveness at 3G/3G after ~45.77M generated and ~37.99M distinct states. Keep AR unqualified; define and promote a separately reviewed QEMU/full-exhaustive capacity contract before rerun.",
+  "next_action": "AR-1308 is planned for disposable x86_64 QEMU capacity. Keep AR-1307 unqualified; after AR-1308 capacity evidence, rerun exact full-exhaustive without changing the 3G/3G contract.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "969eef05834a4ce5f711bbafaa5798549abd95c8",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 728,
+  "task_revision": 729,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T13:40:39+00:00",
+  "updated_at": "2026-09-18T13:41:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -2059,3 +2059,8 @@ and protected publication sequence.
 
 - 2026-09-18T13:40:39+00:00: Recorded command exit 0; command argv SHA-256
   cab31349ac235baaea2cea9382b0c34a892b15caa7c4bd3235edb0de243162a2.
+
+- 2026-09-18T13:41:06+00:00: Created follow-on AR-1308 with dependency on done AR-1304. It owns
+  measured disposable QEMU/container capacity, exact AR-1307 inputs, bounded diagnostics and
+  terminal full-exhaustive qualification; no limit widening or gate weakening. AR-1307 remains open
+  and claimed.
