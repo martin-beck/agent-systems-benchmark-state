@@ -1659,7 +1659,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1160](../tasks/AR-1160.md): Wizard control API | codex-ar1160-control-20260918 | Wizard control API | PR #227 exact head 3db1f4ccc86ee470849c20366c7f91d6a51ded2a has all required hosted checks terminal green, including coverage and the rerun Rust job. Independent slice review found signed+DCO commits, clean exact tree, focused/full local gates, and no privacy/schema/workflow regressions. Merge the exact reviewed head only after coordinator confirms review policy; then perform post-merge verification. AR is not complete overall: provider-bound capture wiring, durable cassette reconciliation, offline-default activation, and frontend integration remain. |
+| P0 | [AR-1160](../tasks/AR-1160.md): Wizard control API | codex-ar1160-control-20260918 | Wizard control API | PR #227 merged at 278abfde3b568b9bbd248825e1246a8c530a8308 from exact reviewed head 3db1f4c. Verify all post-merge main workflows for 278abfd terminal green, then prepare the next isolated ASB-owned implementation slice/AR for provider-bound capture wiring, durable cassette reconciliation, and offline-default activation; do not mark AR-1160 complete yet. |
 | P0 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | codex-ar1308-fixture-repair-20260918 | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Clear cloud-init instance state in a fresh asb-user/wait-online-masked overlay, rerun governed preflight, then one bounded networkless QEMU attempt. |
 
 ### Open (1)
@@ -1741,3 +1741,4 @@ flowchart LR
 | P0 | [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md): Build recent-runs, report and comparison workspaces | Unclaimed | Add searchable recent runs, report inspection and evidence-qualified comparison workspaces. | Implement report and comparison screens after recording workflows publish stable live and strict-replay source labels. |
 | P0 | [AR-1170](../tasks/AR-1170.md): Standalone TUI wizard | Unclaimed | Guide TUI setup through analysis. | Read the plan. |
 | P0 | [AR-1180](../tasks/AR-1180.md): Cross-project wizard qualification | Unclaimed | Qualify the complete wizard. | Read the plan. |
+| P0 | [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md): Authenticated TUI install router | Unclaimed | Expose an authenticated renderer-neutral ASB router for asb tui install and lifecycle operations. | Promote only after dependencies are independently complete; implement the renderer-neutral authenticated CLI/control route and full integration tests. |
