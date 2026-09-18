@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1305",
-  "next_action": "Blocked: existing fresh image and pinned dbus package are present, but read-only guest inspection through guestfish still fails because supermin exits 1; no safe supported image-native repair or qualification is available. Reopen only after a reviewed working customization/inspection appliance is provisioned; do not use portable fallback or weaken AR-1304 limits.",
+  "next_action": "Blocked: guestfish read-only inspection fails before access because /usr/bin/supermin exits 1; approved root has ~4.9 GiB free, preventing safe image repair. Reopen only with reviewed working appliance/capacity; no portable fallback, AR-1304 limit changes, or qualification.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "00a47726683609b7fef8ea5738fed5a3692fac29",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "blocked",
   "summary": "Qualify image-native D-Bus user-session support for required TLC containment.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Image-native user-session support",
-  "updated_at": "2026-09-18T21:11:02+00:00",
+  "updated_at": "2026-09-18T21:11:45+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1305-image-native-user-session"
 }
 ---
@@ -218,3 +218,6 @@ limits and fail-closed behavior remain unchanged.
   only ~4.9 GiB approved-root free, no safe supported image repair or qualification can proceed.
   Reopen only with a reviewed working image customization/inspection appliance and capacity;
   preserve AR-1304 resource limits and do not use portable fallback.
+
+- 2026-09-18T21:11:45+00:00: Schema repair only: shortened next_action below 300 characters while
+  preserving the exact guestfish/supermin, capacity, no-fallback, and no-limit-change blockers.
