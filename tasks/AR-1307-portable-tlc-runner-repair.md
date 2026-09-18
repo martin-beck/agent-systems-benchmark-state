@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1307-portable-tlc-runner-repair",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-18T04:52:49+00:00",
   "depends_on": [
     "AR-1302"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "codex-ar1307-runner-repair2-20260918",
   "plan": "../plans/AR-1307.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 344,
+  "task_revision": 345,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T02:51:41+00:00",
+  "updated_at": "2026-09-18T02:52:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -887,3 +887,5 @@ and protected publication sequence.
 - 2026-09-18T02:51:41+00:00: Recovered after worker became idle with no active process and no
   durable progress after exact-head 22fe361. Signed/DCO repair preserved; reassignment required for
   runner-bus bootstrap, CI rerun, and full-tier qualification.
+
+- 2026-09-18T02:52:49+00:00: Claimed by codex-ar1307-runner-repair2-20260918.
