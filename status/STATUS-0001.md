@@ -1656,7 +1656,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1151](../tasks/AR-1151.md): Strict offline replay | codex_ar1151_followup | Replay strictly without providers. | Verify GitHub email/push authorization, publish c68e912 as the next exact PR head, rerun the aarch64 gate, then continue with idempotent configuration mutations and recording/offline-default operations. |
+| P0 | [AR-1151](../tasks/AR-1151.md): Strict offline replay | codex_ar1151_followup | Replay strictly without providers. | Verify GitHub email/push authorization, publish c68e912 and 5881374 as the next exact PR head, rerun hosted aarch64, then continue recording campaign/offline-default operations and TUI adapter work. |
 | P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | codex-ar1307-metadata-repair-20260918 | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Await fresh DCO/vendor/strict CI on exact head 590dd6c5d; then diagnose repeated full TLC exit-1 with captured stdout and repair only proven causes before qualification. |
 
 ### Open (1)
