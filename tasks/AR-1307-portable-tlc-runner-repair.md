@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1307-portable-tlc-runner-repair",
   "checkpoint_commit": "beafa965e61b0f09d9ed5f10ffcd621b0cf3e5b2",
-  "claim_expires": "",
+  "claim_expires": "2026-09-18T18:25:22+00:00",
   "depends_on": [
     "AR-1302"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "969eef05834a4ce5f711bbafaa5798549abd95c8",
-  "owner": "",
+  "owner": "codex-ar1307-qualification-20260918",
   "plan": "../plans/AR-1307.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 731,
+  "task_revision": 732,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T14:22:58+00:00",
+  "updated_at": "2026-09-18T16:25:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -2071,3 +2071,5 @@ and protected publication sequence.
   codex-ar1307-metadata-repair-20260918. 2026-09-18T16:26:00+02:00: Expired metadata-repair claim
   found with no active worker; released claim for safe future reassignment. No implementation state
   changed.
+
+- 2026-09-18T16:25:22+00:00: Claimed by codex-ar1307-qualification-20260918.
