@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-18T07:42:32+00:00",
   "depends_on": [
     "AR-1287",
     "AR-1300"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "observed_dirty": 0,
   "observed_head": "dd5bfb8dfea08331bb5ee62ddbdee07ad6fb8e7c",
-  "owner": "",
+  "owner": "root",
   "plan": "../plans/AR-1301.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 300,
+  "task_revision": 301,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-18T07:12:23+00:00",
+  "updated_at": "2026-09-18T07:12:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -852,3 +852,5 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
 - 2026-09-18T07:12:23+00:00: AR-1306 completed the reviewed successor: real authenticated
   relay/cassette parity, native 15/15 matrix, protected merge 8b98b20 and all post-merge gates
   green. Resume only to reconcile predecessor disposition.
+
+- 2026-09-18T07:12:32+00:00: Claimed by root.

@@ -7,6 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1301](tasks/AR-1301-replay-lifecycle-fault-matrix.md): Supervised replay lifecycle fault matrix | Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end. | Implement runtime-owned listener fixtures and cause-specific assertions; rerun the matrix and exact-head CI, obtain approval, merge, and reconcile. | root |
 | P0 | [AR-1307](tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Await exact-head CI for cd33b1b04; if formal reaches TLC, inspect measured attestation/isolation failures and repair remaining gates before merge. | codex-ar1307-metadata-repair-20260918 |
 
 ## Open
@@ -14,7 +15,6 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Blocked on AR-1307 runner merge and handoff. Prior full VM was interrupted without success or attestation; after merge, rebuild exact fa57625d9 image/seed and rerun independently reviewed gates. | - |
-| P0 | [AR-1301](tasks/AR-1301-replay-lifecycle-fault-matrix.md): Supervised replay lifecycle fault matrix | Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end. | Implement runtime-owned listener fixtures and cause-specific assertions; rerun the matrix and exact-head CI, obtain approval, merge, and reconcile. | - |
 
 ## Blocked
 
