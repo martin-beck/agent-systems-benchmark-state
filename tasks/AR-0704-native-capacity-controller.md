@@ -2,7 +2,7 @@
 {
   "branch": "feature/native-capacity-controller",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-18T23:36:42+00:00",
   "depends_on": [
     "AR-0701",
     "AR-0103"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/native-capacity-controller",
   "observed_dirty": 0,
   "observed_head": "28f30eea80efef5a61ea438e77402f8640564cc9",
-  "owner": "",
+  "owner": "asb-ar0704-formal-rebase-20260918",
   "plan": "../plans/AR-0704.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 115,
+  "task_revision": 116,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-18T21:36:02+00:00",
+  "updated_at": "2026-09-18T21:36:42+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -435,3 +435,5 @@ must not block this AR or its dependents.
 - 2026-09-18T21:36:02+00:00: Audit complete; released ownerless for dependency-safe rebase and full
   requalification on repaired formal provenance. No source mutation, force push, merge, or gate
   weakening performed.
+
+- 2026-09-18T21:36:42+00:00: Claimed by asb-ar0704-formal-rebase-20260918.
