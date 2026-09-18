@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Provision/use a disposable digest-pinned QEMU/CI runner with a booted user@1000 systemd/D-Bus bus, no NIC or host mounts, staged pinned TLA JAR, and current exact b8db467ee source; run repeated portable-smoke then required pr-publication/full tiers and validate schema receipts.",
+  "next_action": "Repair and review the handoffctl/timeout supervisor so a bounded full-tier subprocess cannot disappear or orphan QEMU; then rebuild a pristine exact-head runner and rerun full-exhaustive. Preserve SUBPROCESS_INTERRUPTED evidence; do not merge until terminal attestation and exact-head CI are green.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 314,
+  "task_revision": 315,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T02:24:57+00:00",
+  "updated_at": "2026-09-18T02:26:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -798,3 +798,10 @@ and protected publication sequence.
   eb930183a098a67b97fd76015f5db87f936c84b507f2678564aed0b0b964fcbe.
 
 - 2026-09-18T02:24:57+00:00: Heartbeat by codex-ar1307-runner-repair-20260918.
+
+- 2026-09-18T02:26:14+00:00: Canonical reconciliation from worker evidence: stage17 used a pristine
+  fixed-UUID image, exact source 01f6e000b, no NIC/host mounts, 32GiB/8vCPU, and a 7800s outer
+  bound. The supervisor vanished after about 30 minutes, orphaning QEMU; orphan was terminated.
+  Serial had only FULL_EXHAUSTIVE_TRANSIENT_RC=0, with no terminal full RC, attestation, evidence
+  validation, or poweroff. Classified as SUBPROCESS_INTERRUPTED/orphaned-supervisor; no full-tier
+  success or merge claim.

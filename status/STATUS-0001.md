@@ -1656,7 +1656,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | codex-ar1307-runner-repair-20260918 | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Provision/use a disposable digest-pinned QEMU/CI runner with a booted user@1000 systemd/D-Bus bus, no NIC or host mounts, staged pinned TLA JAR, and current exact b8db467ee source; run repeated portable-smoke then required pr-publication/full tiers and validate schema receipts. |
+| P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | codex-ar1307-runner-repair-20260918 | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Repair and review the handoffctl/timeout supervisor so a bounded full-tier subprocess cannot disappear or orphan QEMU; then rebuild a pristine exact-head runner and rerun full-exhaustive. Preserve SUBPROCESS_INTERRUPTED evidence; do not merge until terminal attestation and exact-head CI are green. |
 
 ### Open (1)
 
