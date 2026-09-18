@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Await formal run 35306838470 at exact head 969eef058; then independently review, merge, verify post-merge, and hand off to AR-1293 only if every gate is green.",
+  "next_action": "Repair canonical metadata, rebase PR #25 onto reviewed main, then run one fresh formal qualification at exact head 969eef058-derived tree.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 592,
+  "task_revision": 593,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T04:44:33+00:00",
+  "updated_at": "2026-09-18T04:45:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1616,3 +1616,11 @@ and protected publication sequence.
 
 - 2026-09-18T04:44:33+00:00: Recorded command exit 0; command argv SHA-256
   e77d924b8c969291ab12953afb5874659af542f62e7b3c66cf7bdc9b6019bf9d.
+
+- 2026-09-18T04:45:02+00:00: Formal run 35306838470 at PR #25 exact head 969eef058 was canceled
+  after exceeding the 15-minute workflow budget (active 04:25:35-04:43:10Z); it produced no
+  qualification result. Cancellation left TLC PGID 1802733; exact stale process was terminated. Four
+  older orphan TLC process groups (1418396, 1425100, 1501586, 1555250, 1578798) were also verified
+  against zero active formal runs and terminated through governed cleanup. Coordination 35308021341
+  failed on canonical metadata (AR-1293 next_action length and missing observed heads/checkpoints);
+  main metadata repair and PR refresh are required before the next formal run.

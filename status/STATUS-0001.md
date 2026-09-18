@@ -1656,7 +1656,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | codex-ar1307-signed-history-20260918 | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Await formal run 35306838470 at exact head 969eef058; then independently review, merge, verify post-merge, and hand off to AR-1293 only if every gate is green. |
+| P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | codex-ar1307-signed-history-20260918 | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Repair canonical metadata, rebase PR #25 onto reviewed main, then run one fresh formal qualification at exact head 969eef058-derived tree. |
 
 ### Open (1)
 
