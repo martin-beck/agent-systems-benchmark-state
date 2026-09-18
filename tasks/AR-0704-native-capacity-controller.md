@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/native-capacity-controller",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "e2e3574ed2bbc020105ffb1eb4c5a38691b299a3",
   "claim_expires": "2026-09-18T23:22:45+00:00",
   "depends_on": [
     "AR-0701",
     "AR-0103"
   ],
   "id": "AR-0704",
-  "next_action": "After approved /srv/data capacity is available, rerun cargo test --locked --workspace and all remaining full gates; publish clean exact candidate and wait exact-head CI before any merge.",
+  "next_action": "All local gates now pass after reclaiming old generated targets; publish exact signed candidate e2e3574 and wait exact-head CI, then independently review/post-merge before release.",
   "observed_branch": "feature/native-capacity-controller",
   "observed_dirty": 0,
   "observed_head": "e2e3574ed2bbc020105ffb1eb4c5a38691b299a3",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 218,
+  "task_revision": 219,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-18T22:23:47+00:00",
+  "updated_at": "2026-09-18T22:24:20+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -730,3 +730,12 @@ must not block this AR or its dependents.
 
 - 2026-09-18T22:23:47+00:00: Recorded command exit 0; command argv SHA-256
   5fbf8cf5f7a5033b168f87348a1437fc40d72ecd1e1d68cf72198b21c522c119.
+
+- 2026-09-18T22:24:20+00:00: Reclaimed only unowned generated .asb-target/ar1028* artifacts via
+  handoffctl: free space rose 9G to 24G. Full cargo test, fmt, clippy, docs, release build, coverage
+  90.48% workspace/96.47% critical, policy, contracts, tutorials, workflows, gitleaks, deny, audit,
+  platform tests (58), failure paths, signatures, artifact tests, and CLI smoke pass. Initial
+  platform test lacked jsonschema; rerun with state venv passed. Initial contract test saw profraw
+  residue; exact generated files removed and rerun passed. One baseline-ref symbolic error and one
+  expected invalid-command exit 2 recorded; no product failures. Remaining gate: exact-head
+  CI/publication.
