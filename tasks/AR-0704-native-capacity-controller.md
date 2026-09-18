@@ -16,11 +16,11 @@
   "plan": "../plans/AR-0704.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 83,
+  "task_revision": 84,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-16T06:48:59+00:00",
+  "updated_at": "2026-09-18T20:55:59+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -322,3 +322,10 @@ must not block this AR or its dependents.
 
 - 2026-09-16T06:48:59+00:00: Released blocked and ownerless. Formal TLA artifact/provenance repair
   belongs to AR-0877/AR-0907; do not alter native-capacity code or weaken formal verification.
+
+- 2026-09-18T20:55:59+00:00: Re-audit PR #119 without source mutation. PR #119 remains open with
+  exact head 28f30ee; 11 checks passed and only Formal assurance failed after the official TLA+
+  v1.8.0 asset download. The failure is an immutable artifact byte-count/hash mismatch outside
+  AR-0704 native-capacity scope; matching formal/provenance successors AR-0877/AR-0907 (and AR-0906)
+  have the repair boundary. Reopen only for a new native-capacity issue after formal provenance is
+  repaired.
