@@ -21,20 +21,21 @@ Generated from local Git and GitHub. Do not edit.
 | #150 | `dependabot/cargo/tempfile-3.27.0@d4eb5ee4a62e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump tempfile from 3.22.0 to 3.27.0 |
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
 | #214 | `feature/ar-1286-supervised-replay-lifecycle@eaf7fcbf42ae` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(replay): integrate runtime-owned supervised replay lifecycle |
+| #230 | `repair/ar-1313-runner-routing-forward-revalidation@27fbefc436df` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | docs: clarify required runner evidence routing |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 35398398885 | `27fbefc436df` | pull_request | Fault assurance | in_progress:- |
+| 35398398849 | `27fbefc436df` | pull_request | Formal assurance | in_progress:- |
+| 35398398758 | `27fbefc436df` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 35398398718 | `27fbefc436df` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 35398398712 | `27fbefc436df` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 35398398711 | `27fbefc436df` | pull_request | Repository quality | in_progress:- |
+| 35398398700 | `27fbefc436df` | pull_request | Huawei MIT source headers | completed:success |
+| 35398398697 | `27fbefc436df` | pull_request | Rust verification | in_progress:- |
 | 35396621049 | `17a1530e6206` | workflow_dispatch | Repository quality | completed:failure |
 | 35393146266 | `17a1530e6206` | push | Formal assurance | completed:success |
 | 35393146249 | `17a1530e6206` | push | Hosted portability and native qualification | completed:success |
 | 35393146226 | `17a1530e6206` | push | Fault assurance | completed:success |
-| 35393146189 | `17a1530e6206` | push | Huawei MIT source headers | completed:success |
-| 35393146183 | `17a1530e6206` | push | Repository quality | completed:failure |
-| 35393146082 | `17a1530e6206` | push | Emulated aarch64 portability | completed:success |
-| 35393146079 | `17a1530e6206` | push | Rust verification | completed:success |
-| 35391935125 | `9a2f313e8633` | pull_request | Hosted portability and native qualification | completed:success |
-| 35391935108 | `9a2f313e8633` | pull_request | Repository quality | completed:success |
-| 35391935090 | `9a2f313e8633` | pull_request | Fault assurance | completed:success |
-| 35391935069 | `9a2f313e8633` | pull_request | Emulated aarch64 portability | completed:success |
