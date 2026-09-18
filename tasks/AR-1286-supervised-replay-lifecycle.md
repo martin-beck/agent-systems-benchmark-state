@@ -19,11 +19,11 @@
   "plan": "../plans/AR-1286.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Execute strict-replay cassettes through the runtime-owned supervised lifecycle.",
-  "task_revision": 94,
+  "task_revision": 95,
   "title": "Supervised strict-replay cassette lifecycle",
-  "updated_at": "2026-09-17T06:29:59+00:00",
+  "updated_at": "2026-09-18T09:18:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1286-supervised-replay-lifecycle"
 }
 ---
@@ -309,3 +309,7 @@ do not touch or claim asb-tui behavior.
   03b1ddc. Required hosted checks remain pending. AR-1286 still cannot complete until the real
   cassette request/response and lifecycle fault matrix (egress, cancellation, timeout, crash,
   restart, cleanup, no-fallback) is implemented and qualified.
+
+- 2026-09-18T09:18:12+00:00: Protected PR #215 merged as 1c123805; topology repair PR #223 merged as
+  2066e323. Runtime lifecycle and approved-VM evidence are complete; continue with
+  cancellation/timeout/crash/restart/egress fixture closure after post-merge gates.
