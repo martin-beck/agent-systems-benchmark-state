@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "checkpoint_commit": "df0e402f442468e43e06b7c1acb3c3667277fb75",
-  "claim_expires": "2026-09-18T22:50:15+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1304"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
-  "owner": "coordinator-ar1308-runner",
+  "owner": "",
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 505,
+  "task_revision": 506,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T22:20:29+00:00",
+  "updated_at": "2026-09-18T22:21:13+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1504,3 +1504,12 @@ source code or treating a capacity failure as a model result.
 
 - 2026-09-18T22:20:29+00:00: Recorded command exit 0; command argv SHA-256
   865e3b8d6530ed42aa06cc0b372949bf0148aee9b63ac534dff6f1d35de0dec4.
+
+- 2026-09-18T22:21:13+00:00: Prepared clean disposable runner at
+  /srv/data/projects/asb-state-tlc-vm-ar1308-clean-v1 via handoffctl: x86_64 QEMU 8.2.2, q35
+  KVM-or-TCG, 8 vCPU, 32768 MiB guest RAM, 16384 MiB guest swap contract, no NIC, no host mounts,
+  sparse 16 GiB data image, disposable qcow2 root overlay. Receipt and argv are recorded with status
+  prepared-not-qualified. No VM was booted and no qualification claimed because exact signed AR-1307
+  969eef058 object/input bundle, pinned JDK/TLC, admission lock, and exact seed remain unavailable;
+  preserve unchanged 3G/3G/2-worker/2-core/8G/7200s process contract. Next action: bind exact
+  inputs, regenerate seed, run full preflight, then boot only after every gate passes.
