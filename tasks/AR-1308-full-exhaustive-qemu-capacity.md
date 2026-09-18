@@ -7,7 +7,7 @@
     "AR-1304"
   ],
   "id": "AR-1308",
-  "next_action": "Obtain fresh independent review of exact head; merge only after review. Keep QEMU full run paused.",
+  "next_action": "Run governed post-merge capacity preflight; if host capacity passes, execute one bounded exact-head QEMU attempt, otherwise record measured blocker and provision a compliant disposable runner.",
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 204,
+  "task_revision": 205,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T15:56:49+00:00",
+  "updated_at": "2026-09-18T15:59:11+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -544,3 +544,7 @@ source code or treating a capacity failure as a model result.
 
 - 2026-09-18T15:56:49+00:00: Recorded command exit 0; command argv SHA-256
   1ea5be485f58dc3809faf59c62631986ea6f90f6361f8f3ef3beb01a72f51054.
+
+- 2026-09-18T15:59:11+00:00: PR #26 merged at e9de9677ae6d071fa053ab4fc41d82f3e3381d81. Post-merge
+  main contains the reviewed AR-1308 runner at exact merge commit; transition is now post-merge
+  verification and governed preflight.
