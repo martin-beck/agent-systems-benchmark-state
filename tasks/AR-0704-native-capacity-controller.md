@@ -10,7 +10,7 @@
   "id": "AR-0704",
   "next_action": "After approved /srv/data capacity is available, rerun cargo test --locked --workspace and all remaining full gates; publish clean exact candidate and wait exact-head CI before any merge.",
   "observed_branch": "feature/native-capacity-controller",
-  "observed_dirty": 0,
+  "observed_dirty": 7,
   "observed_head": "e2e3574ed2bbc020105ffb1eb4c5a38691b299a3",
   "owner": "ar0704_capacity_reclaim",
   "plan": "../plans/AR-0704.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 188,
+  "task_revision": 189,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-18T22:11:48+00:00",
+  "updated_at": "2026-09-18T22:11:59+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
