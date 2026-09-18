@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1310-provider-capture-campaign",
   "checkpoint_commit": "17a1530e620608a4d53b6d92ba48c642400778e2",
-  "claim_expires": "2026-09-18T22:56:02+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1060",
     "AR-1151"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1310-provider-capture-campaign",
   "observed_dirty": 0,
   "observed_head": "9a2f313e86332e35eec40b97a692026b497d46cd",
-  "owner": "ar1310-coverage-repair",
+  "owner": "",
   "plan": "../plans/AR-1310.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Runtime-owned provider capture and recording campaign qualification.",
-  "task_revision": 102,
+  "task_revision": 103,
   "title": "Runtime-owned provider capture and recording campaign qualification",
-  "updated_at": "2026-09-18T21:26:05+00:00",
+  "updated_at": "2026-09-18T21:26:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1310-provider-capture-campaign"
 }
 ---
@@ -373,3 +373,10 @@ independently so its promotion is not falsely implied by AR-1160 completion.
 
 - 2026-09-18T21:26:05+00:00: Recorded command exit 0; command argv SHA-256
   c435e9db4536a232aea27856f0d7cf03c9720a9b2103947d5f91489628d5952c.
+
+- 2026-09-18T21:26:45+00:00: Hosted exact-main dispatch 35396621049 targeted merge 17a1530 but
+  failed two distinct gates: repository policy rejected pre-existing merge 909078c as lacking DCO,
+  and therefore did not provide a passing hosted coverage result. Local exact-tree coverage is
+  90.48% workspace/96.47% critical. No active DCO-repair AR owns this new merge-integrity finding;
+  coordinator must route it separately. Keep AR-1310 and AR-1312 blocked; do not weaken policy or
+  promote.
