@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Runtime-owned provider capture and recording campaign qualification.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Runtime-owned provider capture and recording campaign qualification",
-  "updated_at": "2026-09-18T20:00:23+00:00",
+  "updated_at": "2026-09-18T20:00:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1310-provider-capture-campaign"
 }
 ---
@@ -136,3 +136,6 @@ independently so its promotion is not falsely implied by AR-1160 completion.
 
 - 2026-09-18T20:00:23+00:00: Recorded command exit 0; command argv SHA-256
   cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
+
+- 2026-09-18T20:00:36+00:00: Recorded command exit 0; command argv SHA-256
+  5756b7eeda2418e8e776d8aeb7945c70ec3dbeadda3f377c14f1c2c9f3482e7d.
