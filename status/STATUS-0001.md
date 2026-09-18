@@ -1660,7 +1660,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1160](../tasks/AR-1160.md): Wizard control API | codex-ar1160-control-20260918 | Wizard control API | PR #227 exact head 3db1f4c has a hosted Rust test failure only in gemini malformed-ready timing assertion (&lt;1s). Focused reproduction passed five serial attempts with RUST_TEST_THREADS=1 (one attempt hit coordinator LOCK_TIMEOUT only). The failed Rust workflow was rerun via handoffctl; wait for rerun plus policy coverage to reach terminal green, then independently review and merge only exact reviewed head. AR remains incomplete: provider capture wiring, cassette reconciliation, offline-default activation. |
-| P0 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | codex-ar1308-fixture-repair-20260918 | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Rebuild disposable guest with reviewed asb user/user-manager; rerun preflight and one bounded QEMU attempt. |
+| P0 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | codex-ar1308-fixture-repair-20260918 | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Mask systemd-networkd-wait-online in the reviewed asb-user overlay, rerun governed preflight, then one bounded networkless QEMU attempt. |
 
 ### Open (1)
 

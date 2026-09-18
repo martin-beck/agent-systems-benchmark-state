@@ -7,7 +7,7 @@
     "AR-1304"
   ],
   "id": "AR-1308",
-  "next_action": "Rebuild disposable guest with reviewed asb user/user-manager; rerun preflight and one bounded QEMU attempt.",
+  "next_action": "Mask systemd-networkd-wait-online in the reviewed asb-user overlay, rerun governed preflight, then one bounded networkless QEMU attempt.",
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 304,
+  "task_revision": 305,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T16:56:10+00:00",
+  "updated_at": "2026-09-18T16:58:12+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -871,3 +871,9 @@ source code or treating a capacity failure as a model result.
 
 - 2026-09-18T16:56:10+00:00: Recorded command exit 0; command argv SHA-256
   9260087a09bf53c1d86bb816078be3a7e7aef8ff1b5a75260842df6e303b6bcf.
+
+- 2026-09-18T16:58:12+00:00: Reused reviewed AR-1305 root fixture by creating a disposable overlay
+  from the pinned Ubuntu image and adding uid 1000 asb plus systemd linger. Governed preflight
+  passed with absolute receipt paths. The bounded QEMU boot then stalled at
+  systemd-networkd-wait-online for at least 1m44s and emitted no cloud-init, TLC, or attestation;
+  process was gone afterward. This is a guest bootstrap blocker, not qualification.
