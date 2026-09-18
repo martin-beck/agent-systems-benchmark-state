@@ -5,10 +5,8 @@
   "guest_swap_bytes": 17179869184,
   "host_mounts": false,
   "hypervisor": "qemu-system-x86_64 8.2.2",
-  "image": {
-    "path": "/srv/data/projects/asb-state-tlc-vm/noble-server-cloudimg-amd64.img",
-    "sha256": "612b2c0cc1bc413a6cb8c38fd611794caf0f2b436c50013d8b3794db12ad7354"
-  },
+  "image_id": "ubuntu-24.04-amd64-reviewed",
+  "image_sha256": "612b2c0cc1bc413a6cb8c38fd611794caf0f2b436c50013d8b3794db12ad7354",
   "guest_disk_bytes": 68719476736,
   "network": "none",
   "pinned_inputs": {
@@ -24,7 +22,13 @@
     "timeout_seconds": 7200,
     "workers": 2
   },
-  "root_overlay": "/srv/data/projects/asb-state-tlc-vm-ar1308/ar1308-root.qcow2",
+  "overlay_id": "ar1308-disposable-qcow2-64g-v1",
   "runner_id": "asb-state-tlc-vm-ar1308-v1",
-  "vcpus": 8
+  "vcpus": 8,
+  "model_config_sha256": "af8af6a9303d7a5144df62f899b7890320b288089165c9910ee7221588131799",
+  "seed_sha256": "b109b0b8c23b6c30c953526be4c9f60de4508450cc5e799740f7c69b6fd8e24d",
+  "source_tree_sha256": "0bdb1a4c19f71d0b0d659e74ae47c88f00ece8834b14c2130176ce3e4824ac83",
+  "validator_sha256": "abd53a8c0c5ffc123d238ba791ac713a958e4d1720ad4701df3c670a92300c3f",
+  "admission_lock_id": "canonical-ar1307-admission-lock",
+  "cleanup_policy": "bounded-reap-and-delete"
 }

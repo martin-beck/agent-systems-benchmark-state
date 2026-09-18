@@ -1,23 +1,59 @@
 # Copyright (C) Huawei Technologies Co., Ltd. 2026. All rights reserved.
 # SPDX-License-Identifier: MIT
 
-"""Fail-closed receipt and host-capacity preflight for AR-1308."""
+"""Fail-closed live receipt and capacity preflight for AR-1308."""
 
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
+import os
 import platform
 import shutil
+import subprocess
 from pathlib import Path
 from typing import Any
 
 GIB = 1024**3
 REQUIRED_COMMIT = "ab485f767fbddbd8adfc27b5120f3df0a045b762"
 REQUIRED_IMAGE_SHA256 = "612b2c0cc1bc413a6cb8c38fd611794caf0f2b436c50013d8b3794db12ad7354"
+REQUIRED_TLC_SHA256 = "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88"
 MIN_GUEST_MEMORY = 48 * GIB
 MIN_HOST_MEMORY = 56 * GIB
 MIN_HOST_DISK = 16 * GIB
+MIN_HOST_SWAP = 1 * GIB
+CONTRACT = {
+    "address_space_max": "8G",
+    "cpu_quota": "200%",
+    "memory_max": "3G",
+    "swap_max": "3G",
+    "timeout_seconds": 7200,
+    "workers": 2,
+}
+RECEIPT_KEYS = {
+    "architecture",
+    "disposable",
+    "guest_memory_bytes",
+    "guest_swap_bytes",
+    "guest_disk_bytes",
+    "host_mounts",
+    "hypervisor",
+    "image_sha256",
+    "image_id",
+    "network",
+    "pinned_inputs",
+    "process_contract",
+    "overlay_id",
+    "runner_id",
+    "vcpus",
+    "model_config_sha256",
+    "seed_sha256",
+    "source_tree_sha256",
+    "validator_sha256",
+    "admission_lock_id",
+    "cleanup_policy",
+}
 
 
 def _string(data: dict[str, Any], key: str) -> str:
@@ -25,8 +61,11 @@ def _string(data: dict[str, Any], key: str) -> str:
     return value if isinstance(value, str) else ""
 
 
+def _hex(value: str) -> bool:
+    return len(value) == 64 and all(char in "0123456789abcdef" for char in value)
+
+
 def _validate_isolation(receipt: dict[str, Any]) -> list[str]:
-    """Validate isolation fields."""
     issues: list[str] = []
     if _string(receipt, "architecture") != "x86_64":
         issues.append("receipt architecture must be x86_64")
@@ -39,8 +78,7 @@ def _validate_isolation(receipt: dict[str, Any]) -> list[str]:
     return issues
 
 
-def _validate_guest_capacity(receipt: dict[str, Any]) -> list[str]:
-    """Validate guest capacity fields."""
+def _validate_capacity(receipt: dict[str, Any]) -> list[str]:
     issues: list[str] = []
     if (
         not isinstance(receipt.get("guest_memory_bytes"), int)
@@ -56,84 +94,192 @@ def _validate_guest_capacity(receipt: dict[str, Any]) -> list[str]:
         issues.append("guest disk must provide at least 64 GiB virtual capacity")
     if receipt.get("vcpus") != 8:
         issues.append("guest vCPUs must be exactly 8")
-    image = receipt.get("image")
-    if not isinstance(image, dict) or _string(image, "sha256") != REQUIRED_IMAGE_SHA256:
-        issues.append("image digest is not the reviewed Ubuntu 24.04 image")
+    if _string(receipt, "hypervisor") != "qemu-system-x86_64 8.2.2":
+        issues.append("hypervisor must be the pinned QEMU x86_64 8.2.2")
     return issues
 
 
 def _validate_inputs(receipt: dict[str, Any]) -> list[str]:
-    """Validate immutable image and tool inputs."""
     issues: list[str] = []
     inputs = receipt.get("pinned_inputs")
-    if not isinstance(inputs, dict) or _string(inputs, "ar1307_commit") != REQUIRED_COMMIT:
+    if not isinstance(inputs, dict) or inputs.get("ar1307_commit") != REQUIRED_COMMIT:
         issues.append("pinned input is not the exact signed AR-1307 head")
     if not isinstance(inputs, dict) or inputs.get("jdk_major") != 17:
         issues.append("pinned JDK must be major version 17")
-    if not isinstance(inputs, dict) or len(_string(inputs, "tlc_jar_sha256")) != 64:
-        issues.append("pinned TLC artifact must have a SHA-256 digest")
-    return issues
-
-
-def _validate_contract(receipt: dict[str, Any]) -> list[str]:
-    """Validate the unchanged AR-1307 process contract."""
-    issues: list[str] = []
-    contract = receipt.get("process_contract")
-    expected = {
-        "address_space_max": "8G",
-        "cpu_quota": "200%",
-        "memory_max": "3G",
-        "swap_max": "3G",
-        "timeout_seconds": 7200,
-        "workers": 2,
-    }
-    if contract != expected:
-        issues.append("process contract must remain 8G AS, 3G/3G, 200%, 2 workers, 7200 seconds")
+    if not isinstance(inputs, dict) or inputs.get("tlc_jar_sha256") != REQUIRED_TLC_SHA256:
+        issues.append("pinned TLC artifact digest is not the reviewed artifact")
+    digest_keys = (
+        "image_sha256",
+        "model_config_sha256",
+        "seed_sha256",
+        "source_tree_sha256",
+        "validator_sha256",
+    )
+    issues.extend(
+        f"{key} must be a lowercase SHA-256 digest"
+        for key in digest_keys
+        if not _hex(_string(receipt, key))
+    )
+    if _string(receipt, "image_sha256") != REQUIRED_IMAGE_SHA256:
+        issues.append("image digest is not the reviewed Ubuntu 24.04 image")
     return issues
 
 
 def validate_receipt(receipt: dict[str, Any]) -> list[str]:
-    """Return actionable violations without exposing machine-specific data."""
-    issues = _validate_isolation(receipt)
-    issues.extend(_validate_guest_capacity(receipt))
+    """Validate the closed receipt schema and unchanged process contract."""
+    issues: list[str] = []
+    if set(receipt) - RECEIPT_KEYS:
+        issues.append("receipt contains unknown fields")
+    issues.extend(_validate_isolation(receipt))
+    issues.extend(_validate_capacity(receipt))
     issues.extend(_validate_inputs(receipt))
-    issues.extend(_validate_contract(receipt))
-    if not _string(receipt, "runner_id"):
-        issues.append("runner_id is required")
+    if receipt.get("process_contract") != CONTRACT:
+        issues.append("process contract must remain 8G AS, 3G/3G, 200%, 2 workers, 7200 seconds")
+    if (
+        not _string(receipt, "runner_id")
+        or not _string(receipt, "image_id")
+        or not _string(receipt, "overlay_id")
+        or not _string(receipt, "admission_lock_id")
+    ):
+        issues.append("runner, image, overlay and admission identities are required")
+    if _string(receipt, "cleanup_policy") != "bounded-reap-and-delete":
+        issues.append("cleanup policy must be bounded-reap-and-delete")
     return issues
 
 
+def _digest(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as stream:
+        for chunk in iter(lambda: stream.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
 def host_capacity(root: Path) -> dict[str, int | str]:
-    """Measure only bounded numeric host capacity under the approved root."""
-    memory = 0
+    """Measure bounded host memory, swap, disk and inode capacity."""
+    values: dict[str, int | str] = {"architecture": platform.machine()}
     for line in Path("/proc/meminfo").read_text(encoding="utf-8").splitlines():
-        if line.startswith("MemAvailable:"):
-            memory = int(line.split()[1]) * 1024
-            break
-    disk = shutil.disk_usage(root)
-    return {
-        "architecture": platform.machine(),
-        "available_memory_bytes": memory,
-        "available_disk_bytes": disk.free,
-    }
+        fields = line.split()
+        if fields and fields[0] in {"MemAvailable:", "SwapFree:"} and len(fields) > 1:
+            values[fields[0][:-1].lower() + "_bytes"] = int(fields[1]) * 1024
+    values["available_disk_bytes"] = shutil.disk_usage(root).free
+    values["available_inodes"] = os.statvfs(root).f_favail
+    return values
 
 
 def validate_host(capacity: dict[str, int | str]) -> list[str]:
-    """Return fail-closed host-capacity violations."""
+    """Reject insufficient architecture, memory, swap, disk or inodes."""
     issues: list[str] = []
     if capacity.get("architecture") != "x86_64":
         issues.append("host architecture must be x86_64")
-    if int(capacity.get("available_memory_bytes", 0)) < MIN_HOST_MEMORY:
-        issues.append("host available memory is below the guest plus runtime headroom")
+    if int(capacity.get("memavailable_bytes", 0)) < MIN_HOST_MEMORY:
+        issues.append("host available memory is below guest plus runtime headroom")
+    if int(capacity.get("swapfree_bytes", 0)) < MIN_HOST_SWAP:
+        issues.append("host available swap is below the safe preflight floor")
     if int(capacity.get("available_disk_bytes", 0)) < MIN_HOST_DISK:
-        issues.append("approved root lacks the required disk headroom")
+        issues.append("approved root lacks required disk headroom")
+    if int(capacity.get("available_inodes", 0)) < 10000:
+        issues.append("approved root lacks required inode headroom")
+    return issues
+
+
+def _run(argv: list[str]) -> subprocess.CompletedProcess[str]:
+    return subprocess.run(  # noqa: S603
+        argv, check=False, capture_output=True, text=True, timeout=10
+    )
+
+
+def _validate_vm(image: Path, overlay: Path) -> list[str]:
+    issues: list[str] = []
+    if not image.is_file() or _digest(image) != REQUIRED_IMAGE_SHA256:
+        issues.append("image file is missing or has the wrong digest")
+    if not overlay.is_file():
+        issues.append("overlay is missing")
+    qemu = _run(["qemu-system-x86_64", "--version"])
+    if qemu.returncode != 0 or "8.2.2" not in qemu.stdout:
+        issues.append("installed QEMU is not pinned to 8.2.2")
+    info = _run(["qemu-img", "info", "--output=json", str(overlay)])
+    if info.returncode != 0:
+        issues.append("overlay metadata is unreadable")
+    else:
+        try:
+            if int(json.loads(info.stdout)["virtual-size"]) < 64 * GIB:
+                issues.append("overlay virtual disk is below 64 GiB")
+        except (KeyError, TypeError, ValueError, json.JSONDecodeError):
+            issues.append("overlay metadata is malformed")
+    return issues
+
+
+def _validate_source(receipt: dict[str, Any], source: Path) -> list[str]:
+    issues: list[str] = []
+    if not source.is_dir() or not (source / ".git").exists():
+        return ["exact source checkout is missing Git metadata"]
+    head = _run(["git", "-C", str(source), "rev-parse", "HEAD"])
+    tree = _run(["git", "-C", str(source), "ls-tree", "-r", "--full-tree", "HEAD"])
+    verified = _run(["git", "-C", str(source), "verify-commit", "HEAD"])
+    if head.stdout.strip() != REQUIRED_COMMIT or verified.returncode != 0:
+        issues.append("source is not the exact signed AR-1307 commit")
+    if hashlib.sha256(tree.stdout.encode()).hexdigest() != _string(receipt, "source_tree_sha256"):
+        issues.append("source tree identity does not match the receipt")
+    return issues
+
+
+def _validate_artifacts(
+    receipt: dict[str, Any], model: Path, seed: Path, jdk: Path, jar: Path, lock: Path
+) -> list[str]:
+    issues: list[str] = []
+    if not model.is_file() or _digest(model) != _string(receipt, "model_config_sha256"):
+        issues.append("model/config input is missing or has the wrong digest")
+    if not seed.is_file() or _digest(seed) != _string(receipt, "seed_sha256"):
+        issues.append("seed input is missing or has the wrong digest")
+    if not lock.exists() or lock.stat().st_mode & 0o002:
+        issues.append("admission-lock input is missing or writable by other users")
+    if not jdk.is_dir() or not (jdk / "bin/java").is_file():
+        issues.append("pinned JDK is missing")
+    else:
+        java = _run([str(jdk / "bin/java"), "-version"])
+        if java.returncode != 0 or 'version "17.' not in java.stderr:
+            issues.append("pinned JDK is not major version 17")
+    if not jar.is_file() or _digest(jar) != REQUIRED_TLC_SHA256:
+        issues.append("pinned TLC JAR is missing or has the wrong digest")
+    return issues
+
+
+def validate_live(
+    receipt: dict[str, Any],
+    root: Path,
+    image: Path,
+    overlay: Path,
+    source: Path,
+    model: Path,
+    seed: Path,
+    jdk: Path,
+    jar: Path,
+    lock: Path,
+) -> list[str]:
+    """Bind receipt identities to the actual immutable live inputs."""
+    issues = validate_host(host_capacity(root))
+    issues.extend(_validate_vm(image, overlay))
+    issues.extend(_validate_source(receipt, source))
+    issues.extend(_validate_artifacts(receipt, model, seed, jdk, jar, lock))
     return issues
 
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--receipt", type=Path, required=True)
-    parser.add_argument("--skip-host", action="store_true")
+    for name in (
+        "receipt",
+        "runtime-root",
+        "image",
+        "overlay",
+        "source",
+        "model",
+        "seed",
+        "jdk",
+        "tlc-jar",
+        "admission-lock",
+    ):
+        parser.add_argument(f"--{name}", type=Path, required=True)
     args = parser.parse_args(argv)
     try:
         receipt = json.loads(args.receipt.read_text(encoding="utf-8"))
@@ -145,8 +291,21 @@ def main(argv: list[str] | None = None) -> int:
         if isinstance(receipt, dict)
         else ["receipt must be a JSON object"]
     )
-    if not args.skip_host:
-        issues.extend(validate_host(host_capacity(Path("/srv/data/projects"))))
+    if isinstance(receipt, dict):
+        issues.extend(
+            validate_live(
+                receipt,
+                args.runtime_root,
+                args.image,
+                args.overlay,
+                args.source,
+                args.model,
+                args.seed,
+                args.jdk,
+                args.tlc_jar,
+                args.admission_lock,
+            )
+        )
     if issues:
         print("AR-1308 preflight failed: " + "; ".join(issues))
         return 1
