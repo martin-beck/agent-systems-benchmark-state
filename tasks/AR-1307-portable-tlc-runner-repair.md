@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Build fresh stage12 data/seed/overlay from exact PR head 01f6e000b, verify embedded HEAD and ownership, run one exact-head portable-smoke, and require schema-valid attestation commit 01f6e000b.",
+  "next_action": "Rebuild stage12 data image with the seed DATA_UUID constant, verify blkid/debugfs and exact embedded HEAD 01f6e000b, then rerun one fresh portable-smoke.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 378,
+  "task_revision": 379,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T00:57:19+00:00",
+  "updated_at": "2026-09-18T00:57:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1213,3 +1213,7 @@ and protected publication sequence.
 
 - 2026-09-18T00:57:19+00:00: Recorded command exit 0; command argv SHA-256
   86374b514823afd4861667db89c0cb400a0a6e1f7d490aac06a0b204e7987daa.
+
+- 2026-09-18T00:57:54+00:00: Stage12 exact-head QEMU failed closed before TLC because the image
+  filesystem UUID did not match the guest_seed DATA_UUID constant. Serial confirmed mount failure,
+  missing JDK/state, and absent attestation; this is a runner fixture mismatch, not a gate bypass.
