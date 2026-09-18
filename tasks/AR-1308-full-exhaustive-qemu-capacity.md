@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "checkpoint_commit": "df0e402f442468e43e06b7c1acb3c3667277fb75",
-  "claim_expires": "2026-09-18T21:45:28+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1304"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
-  "owner": "codex-ar1308-runner-provision-20260918",
+  "owner": "",
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 486,
+  "task_revision": 487,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T21:15:56+00:00",
+  "updated_at": "2026-09-18T21:16:17+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1443,3 +1443,11 @@ source code or treating a capacity failure as a model result.
 
 - 2026-09-18T21:15:56+00:00: Recorded command exit 1; command argv SHA-256
   7201d0db32254111fcd4abb58f3a33ad14e1be0eae79deb36cace649c67172d0.
+
+- 2026-09-18T21:16:17+00:00: Runner provisioning attempt complete. No VM was booted. Exact validator
+  run via handoffctl at 2026-09-18T21:15Z failed closed: approved second-disk root has only ~4.9 GiB
+  free (<16 GiB minimum); source is not signed AR-1307 969eef058;
+  receipt/model/seed/JDK/TLC/admission-lock inputs are not all present and bound. Preserved existing
+  evidence and unchanged 3G/3G/2-worker/2-core/8G/7200s process contract. Next action: provision
+  approved second-disk headroom and exact current input bundle, then rerun validator before any QEMU
+  boot.
