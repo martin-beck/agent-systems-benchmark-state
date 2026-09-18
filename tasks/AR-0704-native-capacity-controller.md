@@ -2,7 +2,7 @@
 {
   "branch": "feature/native-capacity-controller",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-18T21:26:19+00:00",
   "depends_on": [
     "AR-0701",
     "AR-0103"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/native-capacity-controller",
   "observed_dirty": 0,
   "observed_head": "28f30eea80efef5a61ea438e77402f8640564cc9",
-  "owner": "",
+  "owner": "asb-ar0704-pr119-audit-20260918",
   "plan": "../plans/AR-0704.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-18T20:55:59+00:00",
+  "updated_at": "2026-09-18T20:56:19+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -329,3 +329,5 @@ must not block this AR or its dependents.
   AR-0704 native-capacity scope; matching formal/provenance successors AR-0877/AR-0907 (and AR-0906)
   have the repair boundary. Reopen only for a new native-capacity issue after formal provenance is
   repaired.
+
+- 2026-09-18T20:56:19+00:00: Claimed by asb-ar0704-pr119-audit-20260918.
