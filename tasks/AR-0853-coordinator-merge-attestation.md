@@ -6,15 +6,18 @@
   "depends_on": [],
   "id": "AR-0853",
   "next_action": "Repair the attestation test to validate a closed fetch-free signed representation and installed manifest without requiring the unreachable historical merge object; document that limitation, rerun gates, and publish a signed successor by exact lease.",
+  "observed_branch": "fix/coordinator-v014-merge-attestation",
+  "observed_dirty": 0,
+  "observed_head": "655817806e2be89c597557a99bd4a3c0977b3b2c",
   "owner": "",
   "plan": "../plans/AR-0853.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "done",
   "summary": "Repair the v0.1.4 coordinator merge attestation without rewriting published history.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Repair coordinator merge attestation",
-  "updated_at": "2026-09-08T08:05:54+00:00",
+  "updated_at": "2026-09-18T15:00:11+00:00",
   "worktree_key": "agent-systems-benchmark-coordinator-merge-attestation"
 }
 ---

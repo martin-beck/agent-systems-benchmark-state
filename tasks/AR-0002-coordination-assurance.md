@@ -8,15 +8,18 @@
   ],
   "id": "AR-0002",
   "next_action": "Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release.",
+  "observed_branch": "feature/coordination-assurance",
+  "observed_dirty": 0,
+  "observed_head": "adfde31ad408f30e84c033e157db9717ba7fddc7",
   "owner": "",
   "plan": "../plans/AR-0002.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "done",
   "summary": "Adapt generic coordination tooling for public ASB workers without importing private state.",
-  "task_revision": 66,
+  "task_revision": 67,
   "title": "Harden reusable coordination framework",
-  "updated_at": "2026-09-06T16:28:14+00:00",
+  "updated_at": "2026-09-18T15:00:11+00:00",
   "worktree_key": "agent-systems-benchmark-coordination-assurance"
 }
 ---

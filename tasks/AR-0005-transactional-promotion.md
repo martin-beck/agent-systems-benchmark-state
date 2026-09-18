@@ -9,15 +9,18 @@
   ],
   "id": "AR-0005",
   "next_action": "Await immutable independent review of exact state PR #4 head 4e56e83 and integrate only after verified green CI.",
+  "observed_branch": "feature/transactional-promotion",
+  "observed_dirty": 0,
+  "observed_head": "4e56e83d4f09af0e549ebb6c0b2e644e0788cf56",
   "owner": "",
   "plan": "../plans/AR-0005.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "done",
   "summary": "Make planned-to-open promotion a transactional handoffctl operation.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Add transactional AR promotion",
-  "updated_at": "2026-09-06T21:03:52+00:00",
+  "updated_at": "2026-09-18T15:00:11+00:00",
   "worktree_key": "agent-systems-benchmark-state-promotion"
 }
 ---

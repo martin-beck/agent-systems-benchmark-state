@@ -9,15 +9,18 @@
   ],
   "id": "AR-0895",
   "next_action": "Rebase the approved three-path patch onto current repaired/licensed state main, preserve exact scope/signature/DCO, guarded force-with-lease PR #17, and require fresh exact-head CI before merge.",
+  "observed_branch": "ci/verify-coordination-content",
+  "observed_dirty": 0,
+  "observed_head": "431e5041cebfedadd5bf068263967474971f5a1f",
   "owner": "",
   "plan": "../plans/AR-0895.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "done",
   "summary": "Close the workflow path-filter gap that lets coordination-content pull requests skip strict state consistency and DCO checks.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Verify every coordination-content pull request",
-  "updated_at": "2026-09-09T10:21:46+00:00",
+  "updated_at": "2026-09-18T15:00:11+00:00",
   "worktree_key": "agent-systems-benchmark-state-verify-coordination-content"
 }
 ---

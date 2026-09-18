@@ -8,15 +8,18 @@
   ],
   "id": "AR-0004",
   "next_action": "Await independent immutable-head review of state PR 3 at eedd311; repair findings before coordinator integration.",
+  "observed_branch": "feature/ar-status-document",
+  "observed_dirty": 0,
+  "observed_head": "eedd3119c08b7a56500f8e99bb8a08e326ccee1b",
   "owner": "",
   "plan": "../plans/AR-0004.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "done",
   "summary": "Render every AR, status, and dependency as an accessible visual state document.",
-  "task_revision": 110,
+  "task_revision": 111,
   "title": "Generate the visual AR status document",
-  "updated_at": "2026-09-06T18:06:40+00:00",
+  "updated_at": "2026-09-18T15:00:11+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-status-document"
 }
 ---

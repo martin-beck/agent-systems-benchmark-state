@@ -9,15 +9,18 @@
   ],
   "id": "AR-0834",
   "next_action": "No further action; repair is integrated and verified.",
+  "observed_branch": "fix/handoffctl-apply-resume-lint",
+  "observed_dirty": 0,
+  "observed_head": "746042a0e55e1f6d3658fc2a37b2cf779b5fce64",
   "owner": "",
   "plan": "../plans/AR-0834.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "done",
   "summary": "Repair the coordination-tool Ruff regression discovered during AR-0830 reconciliation.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Repair handoffctl lint regression",
-  "updated_at": "2026-09-07T07:25:54+00:00",
+  "updated_at": "2026-09-18T15:00:11+00:00",
   "worktree_key": "agent-systems-benchmark-coordination-lint-regression"
 }
 ---
