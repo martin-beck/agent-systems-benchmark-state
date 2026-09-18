@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Runtime-owned provider capture and recording campaign qualification.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Runtime-owned provider capture and recording campaign qualification",
-  "updated_at": "2026-09-18T20:06:03+00:00",
+  "updated_at": "2026-09-18T20:06:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1310-provider-capture-campaign"
 }
 ---
@@ -179,3 +179,6 @@ independently so its promotion is not falsely implied by AR-1160 completion.
   destructuring the redaction result; focused conversion test now passes, along with prior
   lifecycle/callback/restart tests and full asb-replay suite. No retry loop; next action is full
   locked workspace gates.
+
+- 2026-09-18T20:06:47+00:00: Recorded command exit 0; command argv SHA-256
+  681994a9b7b368ece8b133aae9b6f6ac982dd6a4869c3ca5fb59dcb9ad68604a.
