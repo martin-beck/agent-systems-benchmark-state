@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair planned-task metadata that violates the current live-observation schema.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Repair planned-task metadata schema contradiction",
-  "updated_at": "2026-09-18T19:54:55+00:00",
+  "updated_at": "2026-09-18T19:55:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1311-planned-task-metadata-schema"
 }
 ---
@@ -27,3 +27,6 @@ AR-1309's empty checkpoint convention for planned work, regenerate views, and pr
 the state gates without changing implementation claims or the schema contract.
 
 - 2026-09-18T19:54:55+00:00: Claimed by codex-state-metadata-schema-20260918.
+
+- 2026-09-18T19:55:19+00:00: Recorded command exit 0; command argv SHA-256
+  9628f1ff118a9d6f79a735b5385258a1bdf4f79308b09e086e1a2f1b96c45ea6.
