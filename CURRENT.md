@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1307](tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Supervision repair d0db32adf is SSH-signed/DCO, focused tests 31/31, and exact PR head. Worker state branch now fast-forwarded with signed merge 5ab4ffe2d. Obtain independent review/exact-head CI; only then rebuild pristine full fixture and rerun full-exhaustive; do not merge before terminal attestation. | codex-ar1307-runner-repair2-20260918 |
+| P0 | [AR-1307](tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Qualify the dedicated self-hosted runner user manager and bus at exact PR head 4d98e1dca; repair only the governed runner bootstrap or workflow portability defect, rerun exact-head hosted checks, then rebuild pristine QEMU fixture and run full-exhaustive after all required CI is green. | codex-ar1307-runner-repair2-20260918 |
 
 ## Open
 

@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Supervision repair d0db32adf is SSH-signed/DCO, focused tests 31/31, and exact PR head. Worker state branch now fast-forwarded with signed merge 5ab4ffe2d. Obtain independent review/exact-head CI; only then rebuild pristine full fixture and rerun full-exhaustive; do not merge before terminal attestation.",
+  "next_action": "Qualify the dedicated self-hosted runner user manager and bus at exact PR head 4d98e1dca; repair only the governed runner bootstrap or workflow portability defect, rerun exact-head hosted checks, then rebuild pristine QEMU fixture and run full-exhaustive after all required CI is green.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 347,
+  "task_revision": 348,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T02:55:09+00:00",
+  "updated_at": "2026-09-18T02:55:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -893,3 +893,9 @@ and protected publication sequence.
 - 2026-09-18T02:54:58+00:00: Heartbeat by codex-ar1307-runner-repair2-20260918.
 
 - 2026-09-18T02:55:09+00:00: Heartbeat by codex-ar1307-runner-repair2-20260918.
+
+- 2026-09-18T02:55:24+00:00: Takeover progress: AR-1307 claimed by successor. Exact PR worktree
+  /srv/data/projects/ar1307-qemu-stage-head is clean at signed+DCO 4d98e1dca (includes 22fe361);
+  runner label is online but exact-head formal check failed in user-bus preflight. Current host
+  inspection confirms UID 984 lingering user manager and systemd user bus can run a transient unit;
+  failure timing/bootstrapping remains under investigation. No formal qualification or merge claim.
