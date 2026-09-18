@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 153,
+  "task_revision": 154,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T15:37:51+00:00",
+  "updated_at": "2026-09-18T15:38:04+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -422,3 +422,6 @@ source code or treating a capacity failure as a model result.
 - 2026-09-18T15:37:51+00:00: Checkpoint recorded through handoffctl for signed implementation head
   ed70f0b6d95e577d1fb8cc4ca32bba95d513bb6b. Formal runner, tier fixtures, approved runtime paths,
   vendor digest, and coverage fixes are in the PR; no QEMU run yet.
+
+- 2026-09-18T15:38:04+00:00: Recorded command exit 0; command argv SHA-256
+  28cd5e9b62d2bc37abd137652a4e2d4dc441885a9bc8df4deda18994dbe4c694.
