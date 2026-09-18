@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Complete missing evidence for the pinned MockAgents executable qualification.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Complete MockAgents executable qualification evidence",
-  "updated_at": "2026-09-18T21:37:28+00:00",
+  "updated_at": "2026-09-18T21:38:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1249"
 }
 ---
@@ -150,3 +150,6 @@ network denial, privacy, signature, DCO, and exact-tree gates.
   against exact artifact; implement only an in-scope fail-closed repair or route candidate defect.
 
 - 2026-09-18T21:37:28+00:00: Claimed by asb_ar1249_candidate_recheck.
+
+- 2026-09-18T21:38:04+00:00: Recorded command exit 1; command argv SHA-256
+  b1a21886da3caaa87fe08edfc0b3535be2a3912525a8febf0b5540cb47b43e31.
