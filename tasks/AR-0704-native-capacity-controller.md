@@ -2,7 +2,7 @@
 {
   "branch": "feature/native-capacity-controller",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-18T23:06:32+00:00",
   "depends_on": [
     "AR-0701",
     "AR-0103"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/native-capacity-controller",
   "observed_dirty": 0,
   "observed_head": "e2e3574ed2bbc020105ffb1eb4c5a38691b299a3",
-  "owner": "",
+  "owner": "ar0704_capacity_reclaim",
   "plan": "../plans/AR-0704.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 180,
+  "task_revision": 181,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-18T22:06:26+00:00",
+  "updated_at": "2026-09-18T22:06:32+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -624,3 +624,5 @@ must not block this AR or its dependents.
 - 2026-09-18T22:06:26+00:00: Authorized bounded capacity-reclamation audit: reclaim only unowned
   generated Cargo targets/caches, preserve source and formal evidence, then rerun full gates if
   capacity suffices.
+
+- 2026-09-18T22:06:32+00:00: Claimed by ar0704_capacity_reclaim.

@@ -11,8 +11,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 49 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
@@ -119,7 +119,7 @@ flowchart LR
         AR_0701["AR-0701 - Done"]:::status_done
         AR_0702["AR-0702 - Done"]:::status_done
         AR_0703["AR-0703 - Future"]:::status_future
-        AR_0704["AR-0704 - Open"]:::status_open
+        AR_0704["AR-0704 - In progress"]:::status_in_progress
         AR_0705["AR-0705 - Planned"]:::status_planned
         AR_0706["AR-0706 - Planned"]:::status_planned
         AR_0707["AR-0707 - Done"]:::status_done
@@ -1668,11 +1668,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0704](../tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | After approved /srv/data capacity is available, rerun cargo test --locked --workspace and all remaining full gates; publish clean exact candidate and wait exact-head CI before any merge. |
+| P1 | [AR-0704](../tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | ar0704_capacity_reclaim | Control genuine native platform capacity lifecycle. | After approved /srv/data capacity is available, rerun cargo test --locked --workspace and all remaining full gates; publish clean exact candidate and wait exact-head CI before any merge. |
 
 ### Blocked (49)
 

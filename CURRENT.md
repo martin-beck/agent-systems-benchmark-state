@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Control genuine native platform capacity lifecycle. | After approved /srv/data capacity is available, rerun cargo test --locked --workspace and all remaining full gates; publish clean exact candidate and wait exact-head CI before any merge. | - |
+| P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Control genuine native platform capacity lifecycle. | After approved /srv/data capacity is available, rerun cargo test --locked --workspace and all remaining full gates; publish clean exact candidate and wait exact-head CI before any merge. | ar0704_capacity_reclaim |
 
 ## Blocked
 
