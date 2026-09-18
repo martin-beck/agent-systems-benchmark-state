@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "checkpoint_commit": "df0e402f442468e43e06b7c1acb3c3667277fb75",
-  "claim_expires": "2026-09-18T22:43:57+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1304"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
-  "owner": "ar1310_followup_routing",
+  "owner": "",
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 496,
+  "task_revision": 497,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T22:14:55+00:00",
+  "updated_at": "2026-09-18T22:17:06+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1476,3 +1476,8 @@ source code or treating a capacity failure as a model result.
 
 - 2026-09-18T22:14:55+00:00: Recorded command exit 0; command argv SHA-256
   190318643b5aa43246de70b4cb595f3734e92e07352c2b937ce0565abe6c8f60.
+
+- 2026-09-18T22:17:06+00:00: Interrupted provisioning worker after bounded preflight; capacity is
+  now above disk floor but exact AR-1307 969eef058 input bundle and pinned runtime inputs are still
+  not proven present. Preserve unchanged 3G/3G/2-worker/2-core/8G/7200s contract; next run must
+  provision only after exact bundle and all preflight gates pass.
