@@ -27,7 +27,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35328715582 | `2066e3233487` | push | Hosted portability and native qualification | in_progress:- |
+| 35328715582 | `2066e3233487` | push | Hosted portability and native qualification | completed:success |
 | 35328715552 | `2066e3233487` | push | Emulated aarch64 portability | in_progress:- |
 | 35328715514 | `2066e3233487` | push | Rust verification | in_progress:- |
 | 35328715512 | `2066e3233487` | push | Formal assurance | in_progress:- |
