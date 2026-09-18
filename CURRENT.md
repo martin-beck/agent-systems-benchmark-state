@@ -3,11 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1025](tasks/AR-1025-standalone-asb-tui-application.md): Build the standalone asb-tui application | Deliver the actual standalone interactive asb-tui application without an ASB workspace dependency. | After AR-1010, AR-1037 and AR-1060 complete, build the standalone shell and make its closed v1.3 control transport consume and independently re-authenticate the inherited channel. | asb-ar1025-boundary-audit-20260918 |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1025](tasks/AR-1025-standalone-asb-tui-application.md): Build the standalone asb-tui application | Deliver the actual standalone interactive asb-tui application without an ASB workspace dependency. | After AR-1010, AR-1037 and AR-1060 complete, build the standalone shell and make its closed v1.3 control transport consume and independently re-authenticate the inherited channel. | - |
 | P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Blocked on AR-1307 runner merge and handoff. Prior full VM was interrupted without success or attestation; after merge, rebuild exact fa57625d9 image/seed and rerun independently reviewed gates. | - |
 
 ## Blocked

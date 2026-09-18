@@ -2,7 +2,7 @@
 {
   "branch": "feature/standalone-asb-tui-application",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-18T21:22:30+00:00",
   "depends_on": [
     "AR-0804",
     "AR-0805",
@@ -17,15 +17,15 @@
   ],
   "id": "AR-1025",
   "next_action": "After AR-1010, AR-1037 and AR-1060 complete, build the standalone shell and make its closed v1.3 control transport consume and independently re-authenticate the inherited channel.",
-  "owner": "",
+  "owner": "asb-ar1025-boundary-audit-20260918",
   "plan": "../plans/AR-1025.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Deliver the actual standalone interactive asb-tui application without an ASB workspace dependency.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Build the standalone asb-tui application",
-  "updated_at": "2026-09-18T20:52:24+00:00",
+  "updated_at": "2026-09-18T20:52:30+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-standalone-application"
 }
 ---
@@ -57,3 +57,5 @@ product path in `martin-beck/agent-systems-benchmark`.
   for boundary audit only. Before implementation, verify the repository authorization and semantic
   completion of AR-1010/AR-1060; AR-1025 implementation belongs only to standalone asb-tui and must
   not touch ASB product paths or blocked runner ARs.
+
+- 2026-09-18T20:52:30+00:00: Claimed by asb-ar1025-boundary-audit-20260918.

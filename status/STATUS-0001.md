@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**340 ARs tracked** across 6 active status categories.
+**340 ARs tracked** across 7 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 49 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
@@ -248,7 +248,7 @@ flowchart LR
         AR_1022["AR-1022 - Done"]:::status_done
         AR_1023["AR-1023 - Done"]:::status_done
         AR_1024["AR-1024 - Blocked"]:::status_blocked
-        AR_1025["AR-1025 - Open"]:::status_open
+        AR_1025["AR-1025 - In progress"]:::status_in_progress
         AR_1026["AR-1026 - Planned"]:::status_planned
         AR_1027["AR-1027 - Planned"]:::status_planned
         AR_1028["AR-1028 - Done"]:::status_done
@@ -1668,11 +1668,16 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md): Build the standalone asb-tui application | Unclaimed | Deliver the actual standalone interactive asb-tui application without an ASB workspace dependency. | After AR-1010, AR-1037 and AR-1060 complete, build the standalone shell and make its closed v1.3 control transport consume and independently re-authenticate the inherited channel. |
+| P0 | [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md): Build the standalone asb-tui application | asb-ar1025-boundary-audit-20260918 | Deliver the actual standalone interactive asb-tui application without an ASB workspace dependency. | After AR-1010, AR-1037 and AR-1060 complete, build the standalone shell and make its closed v1.3 control transport consume and independently re-authenticate the inherited channel. |
+
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Unclaimed | Repair the state-repository TLA admission runner and truthful worktree metadata. | Blocked on AR-1307 runner merge and handoff. Prior full VM was interrupted without success or attestation; after merge, rebuild exact fa57625d9 image/seed and rerun independently reviewed gates. |
 
 ### Blocked (49)
@@ -1745,4 +1750,3 @@ flowchart LR
 | P0 | [AR-1032](../tasks/AR-1032-asb-tui-contextual-help.md): Add contextual hotkeys and complete action help | Unclaimed | Provide a context-fitted hotkey window, global action search and mechanically complete help. | Add the contextual action registry, search field, fitted hotkey window and complete help coverage after the user-facing screens exist. |
 | P0 | [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md): Establish the professional TUI visual system | Unclaimed | Create a responsive, accessible and professional visual system for every TUI screen. | Create the standalone Ratatui visual system after the application shell is integrated. |
 | P0 | [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md): Add the standalone TUI configuration center | Unclaimed | Add a searchable configuration menu for frontend preferences and benchmark defaults. | Implement the non-secret configuration center foundation after the visual system and ASB wizard control API are stable; AR-1170 owns provider, authentication and default integration. |
-| P0 | [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md): Build recent-runs, report and comparison workspaces | Unclaimed | Add searchable recent runs, report inspection and evidence-qualified comparison workspaces. | Implement report and comparison screens after recording workflows publish stable live and strict-replay source labels. |
