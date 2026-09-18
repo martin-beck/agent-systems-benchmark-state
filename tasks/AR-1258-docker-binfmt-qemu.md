@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision and verify Docker binfmt/QEMU for multiarch qualification.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Provision Docker binfmt/QEMU capability",
-  "updated_at": "2026-09-18T19:05:36+00:00",
+  "updated_at": "2026-09-18T19:05:45+00:00",
   "worktree_key": "agent-systems-benchmark-docker-binfmt-qemu"
 }
 ---
@@ -174,3 +174,6 @@ Provide the independent Docker binfmt/QEMU capability required by multiarch qual
   handler restart, so only read-only capability checks are authorized until maintenance approval.
 
 - 2026-09-18T19:05:36+00:00: Claimed by codex-ar1258-capability-audit-20260918.
+
+- 2026-09-18T19:05:45+00:00: Recorded command exit 0; command argv SHA-256
+  157f063ac36d84d906310c338221fd573fdb0e337ab328ee963ba513ecbc7be8.
