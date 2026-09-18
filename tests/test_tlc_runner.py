@@ -348,7 +348,7 @@ class TlcRunnerTests(unittest.TestCase):
             "DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus",
             "test, -S, /run/user/1000/bus",
             "TMPDIR=/mnt/asb-data/state/tmp",
-            "TLC_ATTESTATION_PATH=/srv/data/projects/evidence/full-exhaustive-attestation.json",
+            "TLC_ATTESTATION_PATH=/mnt/asb-data/state/evidence/full-exhaustive-attestation.json",
             "/run/asb-validate.py",
             "systemctl, poweroff",
         ):

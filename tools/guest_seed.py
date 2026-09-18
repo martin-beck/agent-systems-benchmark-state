@@ -72,4 +72,4 @@ runcmd:
   - [runuser, -u, asb, --preserve-environment, --, /bin/bash, -c, 'set -eu; export XDG_RUNTIME_DIR=/run/user/1000 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus PATH=/usr/local/libexec/asb-offline:/mnt/asb-data/jvm/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/sbin:/bin TLC_CGROUP_MODE={mode} TLC_TIMEOUT_SECONDS={timeout} TLC_ADDRESS_SPACE_MAX=8G TLC_MEMORY_MAX=3G TLC_JAR_PATH=/mnt/asb-data/tla2tools.jar TLC_JAR_SHA256=936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88 TMPDIR=/mnt/asb-data/state/tmp JAVA_TOOL_OPTIONS=-Djava.io.tmpdir=/mnt/asb-data/tmp TLC_ATTESTATION_PATH=/srv/data/projects/evidence/{tier}-attestation.json; cd /mnt/asb-data/state/formal/handoffctl; hash -r; test -x /usr/local/libexec/asb-offline/curl; command -v curl; curl --output /tmp/tla2tools.probe; ./verify.sh --tier {tier}; rc=$?; printf "{result_name}_RC=%s\\n" "$rc" | tee /tmp/{tier}.result /srv/data/projects/evidence/{tier}.result; test "$rc" = 0']
   - [runuser, -u, asb, --preserve-environment, --, /usr/bin/python3, /run/asb-validate.py]
   - [systemctl, poweroff]
-'''
+'''.replace("/srv/data/projects/evidence", "/mnt/asb-data/state/evidence")
