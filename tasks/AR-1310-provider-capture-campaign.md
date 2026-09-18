@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1310-provider-capture-campaign",
   "checkpoint_commit": "1625655a0a9582d30a9b31ba2ec9a0f1a4904eda",
-  "claim_expires": "2026-09-18T22:24:24+00:00",
+  "claim_expires": "2026-09-18T22:26:09+00:00",
   "depends_on": [
     "AR-1060",
     "AR-1151"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Runtime-owned provider capture and recording campaign qualification.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Runtime-owned provider capture and recording campaign qualification",
-  "updated_at": "2026-09-18T20:24:33+00:00",
+  "updated_at": "2026-09-18T20:26:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1310-provider-capture-campaign"
 }
 ---
@@ -279,3 +279,5 @@ independently so its promotion is not falsely implied by AR-1160 completion.
   exercising IdentityMismatch, Bounds, and Verification failure transitions and asserting
   failed/offline-ineligible durable records. Focused test and clippy pass; signed DCO commit 1625655
   pushed as new exact PR head. Re-run all required CI, including coverage, before merge.
+
+- 2026-09-18T20:26:09+00:00: Heartbeat by ar1310-provider-capture.
