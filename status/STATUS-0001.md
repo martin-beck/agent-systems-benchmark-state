@@ -12,9 +12,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 47 |
-| **Planned** | Defined work awaiting promotion or dependencies | 58 |
+| **Planned** | Defined work awaiting promotion or dependencies | 57 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 217 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -298,7 +298,7 @@ flowchart LR
         AR_1140["AR-1140 - Done"]:::status_done
         AR_1150["AR-1150 - Done"]:::status_done
         AR_1151["AR-1151 - Done"]:::status_done
-        AR_1160["AR-1160 - Planned"]:::status_planned
+        AR_1160["AR-1160 - Open"]:::status_open
         AR_1170["AR-1170 - Planned"]:::status_planned
         AR_1180["AR-1180 - Planned"]:::status_planned
         AR_1181["AR-1181 - Blocked"]:::status_blocked
@@ -1658,10 +1658,11 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | codex-ar1307-metadata-repair-20260918 | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Await formal run 35342513872 on exact head ab485f767; if terminal green, independently review and complete merge gates, otherwise diagnose its bounded failure before any retry. |
 
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1160](../tasks/AR-1160.md): Wizard control API | Unclaimed | Expose wizard operations. | Read the plan. |
 | P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Unclaimed | Repair the state-repository TLA admission runner and truthful worktree metadata. | Blocked on AR-1307 runner merge and handoff. Prior full VM was interrupted without success or attestation; after merge, rebuild exact fa57625d9 image/seed and rerun independently reviewed gates. |
 
 ### Blocked (47)
@@ -1716,7 +1717,7 @@ flowchart LR
 | P1 | [AR-1258](../tasks/AR-1258-docker-binfmt-qemu.md): Provision Docker binfmt/QEMU capability | Unclaimed | Provision and verify Docker binfmt/QEMU for multiarch qualification. | Inspect Docker/binfmt/QEMU capability and approved privilege workflow; add bounded verification and rollback-safe checks. |
 | P1 | [AR-1303](../tasks/AR-1303-hosted-platform-diagnostics.md): Privacy-safe hosted platform failure diagnostics | Unclaimed | Add privacy-safe fixed diagnostics for hosted platform evidence failures. | PR #220 exact head d85889d is blocked only by unrelated hosted formal-runner ETXTBSY failures. Repair/retry CI infrastructure; then require fresh all-green exact-head CI before merge. Do not alter AR-1303 gates or product behavior. |
 
-### Planned (58)
+### Planned (57)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1734,7 +1735,6 @@ flowchart LR
 | P0 | [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md): Establish the professional TUI visual system | Unclaimed | Create a responsive, accessible and professional visual system for every TUI screen. | Create the standalone Ratatui visual system after the application shell is integrated. |
 | P0 | [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md): Add the standalone TUI configuration center | Unclaimed | Add a searchable configuration menu for frontend preferences and benchmark defaults. | Implement the non-secret configuration center foundation after the visual system and ASB wizard control API are stable; AR-1170 owns provider, authentication and default integration. |
 | P0 | [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md): Build recent-runs, report and comparison workspaces | Unclaimed | Add searchable recent runs, report inspection and evidence-qualified comparison workspaces. | Implement report and comparison screens after recording workflows publish stable live and strict-replay source labels. |
-| P0 | [AR-1160](../tasks/AR-1160.md): Wizard control API | Unclaimed | Expose wizard operations. | Read the plan. |
 | P0 | [AR-1170](../tasks/AR-1170.md): Standalone TUI wizard | Unclaimed | Guide TUI setup through analysis. | Read the plan. |
 | P0 | [AR-1180](../tasks/AR-1180.md): Cross-project wizard qualification | Unclaimed | Qualify the complete wizard. | Read the plan. |
 | P0 | [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md): Authenticated TUI install router | Unclaimed | Expose an authenticated renderer-neutral ASB router for asb tui install and lifecycle operations. | Promote only after dependencies are independently complete; implement the renderer-neutral authenticated CLI/control route and full integration tests. |

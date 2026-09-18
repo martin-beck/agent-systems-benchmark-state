@@ -13,6 +13,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1160](tasks/AR-1160.md): Wizard control API | Expose wizard operations. | Read the plan. | - |
 | P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Blocked on AR-1307 runner merge and handoff. Prior full VM was interrupted without success or attestation; after merge, rebuild exact fa57625d9 image/seed and rerun independently reviewed gates. | - |
 
 ## Blocked
@@ -85,7 +86,6 @@ Never edit this file directly.
 | P0 | [AR-1033](tasks/AR-1033-asb-tui-visual-system.md): Establish the professional TUI visual system | Create a responsive, accessible and professional visual system for every TUI screen. | Create the standalone Ratatui visual system after the application shell is integrated. | - |
 | P0 | [AR-1034](tasks/AR-1034-asb-tui-configuration-center.md): Add the standalone TUI configuration center | Add a searchable configuration menu for frontend preferences and benchmark defaults. | Implement the non-secret configuration center foundation after the visual system and ASB wizard control API are stable; AR-1170 owns provider, authentication and default integration. | - |
 | P0 | [AR-1035](tasks/AR-1035-asb-tui-reports-compare.md): Build recent-runs, report and comparison workspaces | Add searchable recent runs, report inspection and evidence-qualified comparison workspaces. | Implement report and comparison screens after recording workflows publish stable live and strict-replay source labels. | - |
-| P0 | [AR-1160](tasks/AR-1160.md): Wizard control API | Expose wizard operations. | Read the plan. | - |
 | P0 | [AR-1170](tasks/AR-1170.md): Standalone TUI wizard | Guide TUI setup through analysis. | Read the plan. | - |
 | P0 | [AR-1180](tasks/AR-1180.md): Cross-project wizard qualification | Qualify the complete wizard. | Read the plan. | - |
 | P0 | [AR-1199](tasks/AR-1199-authenticated-tui-install-router.md): Authenticated TUI install router | Expose an authenticated renderer-neutral ASB router for asb tui install and lifecycle operations. | Promote only after dependencies are independently complete; implement the renderer-neutral authenticated CLI/control route and full integration tests. | - |
