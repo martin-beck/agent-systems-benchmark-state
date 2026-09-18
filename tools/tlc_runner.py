@@ -132,7 +132,7 @@ def _bounded_process(command: list[str], timeout_seconds: int) -> tuple[int, boo
         stdout_capture = tempfile.TemporaryFile(  # noqa: SIM115
             mode="w+b", dir=str(DEFAULT_TMPDIR)
         )
-    except PermissionError:
+    except (FileNotFoundError, PermissionError):
         # Unit-test doubles may not own the disposable runtime directory. A
         # real admitted runner must own it; retain a bounded pipe fallback for
         # diagnostics without changing the execution gate.
