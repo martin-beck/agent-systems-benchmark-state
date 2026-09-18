@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1151](tasks/AR-1151.md): Strict offline replay | Replay strictly without providers. | Implement AR-1160 control API slice: expose bounded workload/provider/model/auth/recording catalogs, idempotent campaign coverage and offline-default preflight; preserve seven-workload runtime qualification as acceptance gate. | root |
+| P0 | [AR-1151](tasks/AR-1151.md): Strict offline replay | Replay strictly without providers. | Implement AR-1160 control API slice: bounded catalogs, idempotent configuration/provider/auth mutations, recording campaign coverage and offline-default preflight; then qualify all seven workloads and hand exact contracts to asb-tui. | root |
 | P0 | [AR-1307](tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Await fresh DCO/vendor/strict CI on exact head 590dd6c5d; then diagnose repeated full TLC exit-1 with captured stdout and repair only proven causes before qualification. | codex-ar1307-metadata-repair-20260918 |
 
 ## Open
