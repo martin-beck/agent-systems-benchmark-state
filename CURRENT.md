@@ -7,7 +7,6 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1301](tasks/AR-1301-replay-lifecycle-fault-matrix.md): Supervised replay lifecycle fault matrix | Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end. | Implement runtime-owned listener fixtures and cause-specific assertions; rerun the matrix and exact-head CI, obtain approval, merge, and reconcile. | root |
 | P0 | [AR-1307](tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Await exact-head CI for cd33b1b04; if formal reaches TLC, inspect measured attestation/isolation failures and repair remaining gates before merge. | codex-ar1307-metadata-repair-20260918 |
 
 ## Open
@@ -372,3 +371,4 @@ Never edit this file directly.
 | P0 | [AR-1056](tasks/AR-1056-tmux-socket-connect-diagnostics.md): Diagnose tmux socket connection stage | Diagnose and repair the remaining trusted tmux socket connection-stage failure. | No further action: AR-1058 superseded this diagnostic after PR #21 proved socket substages were no longer the blocker. | - |
 | P0 | [AR-1058](tasks/AR-1058-tmux-startup-observation-diagnostics.md): Diagnose tmux startup observation | Diagnose and repair the remaining trusted tmux stable-startup observation failure. | No further action: AR-1061 superseded this recovery after PR #22 merged and tested the remaining fixture-contention hypothesis. | - |
 | P0 | [AR-1061](tasks/AR-1061-isolate-concurrent-tmux-fixtures.md): Isolate concurrent trusted tmux fixtures | Diagnose and isolate concurrent trusted tmux fixture contention. | No further action: AR-1062 superseded the falsified fixture-contention hypothesis with nested server/connect diagnostics. | - |
+| P0 | [AR-1301](tasks/AR-1301-replay-lifecycle-fault-matrix.md): Supervised replay lifecycle fault matrix | Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end. | Implement runtime-owned listener fixtures and cause-specific assertions; rerun the matrix and exact-head CI, obtain approval, merge, and reconcile. | - |

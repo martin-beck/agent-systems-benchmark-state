@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-18T07:42:32+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1287",
     "AR-1300"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "observed_dirty": 0,
   "observed_head": "dd5bfb8dfea08331bb5ee62ddbdee07ad6fb8e7c",
-  "owner": "root",
+  "owner": "",
   "plan": "../plans/AR-1301.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "superseded",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 301,
+  "task_revision": 302,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-18T07:12:32+00:00",
+  "updated_at": "2026-09-18T07:12:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -854,3 +854,8 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
   green. Resume only to reconcile predecessor disposition.
 
 - 2026-09-18T07:12:32+00:00: Claimed by root.
+
+- 2026-09-18T07:12:35+00:00: Superseded by AR-1306. Successor PR #222 protected merge
+  8b98b2037a2231878c084401c660b32362a4e0f7; approved exact-head review, native 15/15 matrix, focused
+  authenticated cassette parity reruns, explicit Bubblewrap allowlist and all post-merge workflows
+  passed.

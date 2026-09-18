@@ -11,14 +11,14 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 49 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 215 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
-| **Superseded** | Replaced by another AR | 9 |
+| **Superseded** | Replaced by another AR | 10 |
 
 ## Dependency graph
 
@@ -397,7 +397,7 @@ flowchart LR
     subgraph series_13["13 - Additional work"]
         direction TB
         AR_1300["AR-1300 - Done"]:::status_done
-        AR_1301["AR-1301 - In progress"]:::status_in_progress
+        AR_1301["AR-1301 - Superseded"]:::status_superseded
         AR_1302["AR-1302 - Done"]:::status_done
         AR_1303["AR-1303 - Blocked"]:::status_blocked
         AR_1304["AR-1304 - Done"]:::status_done
@@ -1652,11 +1652,10 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md): Supervised replay lifecycle fault matrix | root | Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end. | Implement runtime-owned listener fixtures and cause-specific assertions; rerun the matrix and exact-head CI, obtain approval, merge, and reconcile. |
 | P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | codex-ar1307-metadata-repair-20260918 | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Await exact-head CI for cd33b1b04; if formal reaches TLC, inspect measured attestation/isolation failures and repair remaining gates before merge. |
 
 ### Open (1)
@@ -1741,3 +1740,4 @@ flowchart LR
 | P0 | [AR-1170](../tasks/AR-1170.md): Standalone TUI wizard | Unclaimed | Guide TUI setup through analysis. | Read the plan. |
 | P0 | [AR-1180](../tasks/AR-1180.md): Cross-project wizard qualification | Unclaimed | Qualify the complete wizard. | Read the plan. |
 | P0 | [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md): Authenticated TUI install router | Unclaimed | Expose an authenticated renderer-neutral ASB router for asb tui install and lifecycle operations. | Promote only after dependencies are independently complete; implement the renderer-neutral authenticated CLI/control route and full integration tests. |
+| P0 | [AR-1211](../tasks/AR-1211-initial-setup-first-agent.md): Initial setup and first agent connection tutorial | Unclaimed | Teach first-time users to initialize ASB and add the first agent connection. | Implement the syntax-checked tutorial for ASB initialization, first-agent registration, and agent connection setup. |

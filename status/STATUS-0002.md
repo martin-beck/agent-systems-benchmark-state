@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| P0 | [AR-1211](../tasks/AR-1211-initial-setup-first-agent.md): Initial setup and first agent connection tutorial | Unclaimed | Teach first-time users to initialize ASB and add the first agent connection. | Implement the syntax-checked tutorial for ASB initialization, first-agent registration, and agent connection setup. |
 | P0 | [AR-1212](../tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Unclaimed | Teach users to test configured-agent benchmark eligibility without running an agent. | Implement the offline tutorial for checking agent benchmark readiness under the current configuration. |
 | P0 | [AR-1213](../tasks/AR-1213-benchmark-and-shared-config.md): Benchmark run and shared-agent configuration tutorials | Unclaimed | Teach benchmark execution and extending agents with one shared configuration. | Implement syntax-checked tutorials for one benchmark run and atomic shared configuration across selected agents. |
 | P0 | [AR-1214](../tasks/AR-1214-record-replay.md): LLM response record/replay tutorial | Unclaimed | Teach privacy-safe LLM response recording and strict offline replay. | Implement the syntax-checked record/replay tutorial with synthetic cassette fixtures and no-network CI. |
@@ -267,7 +266,7 @@
 | P3 | [AR-0406](../tasks/AR-0406-evolving-workloads.md): Add evolving long-horizon workload sources | Unclaimed | Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation. | Monitor all required post-merge CI runs for exact main ca6e75916a8c9831b9107377cd48d731463c272a; release only after every required gate is green. |
 | P3 | [AR-1006](../tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Unclaimed | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Monitor post-merge workflows for main 4e2820b until terminal; verify exact tree/signature/DCO/policy, then release AR-1006 done. |
 
-### Superseded (9)
+### Superseded (10)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -280,3 +279,4 @@
 | P0 | [AR-1056](../tasks/AR-1056-tmux-socket-connect-diagnostics.md): Diagnose tmux socket connection stage | Unclaimed | Diagnose and repair the remaining trusted tmux socket connection-stage failure. | No further action: AR-1058 superseded this diagnostic after PR #21 proved socket substages were no longer the blocker. |
 | P0 | [AR-1058](../tasks/AR-1058-tmux-startup-observation-diagnostics.md): Diagnose tmux startup observation | Unclaimed | Diagnose and repair the remaining trusted tmux stable-startup observation failure. | No further action: AR-1061 superseded this recovery after PR #22 merged and tested the remaining fixture-contention hypothesis. |
 | P0 | [AR-1061](../tasks/AR-1061-isolate-concurrent-tmux-fixtures.md): Isolate concurrent trusted tmux fixtures | Unclaimed | Diagnose and isolate concurrent trusted tmux fixture contention. | No further action: AR-1062 superseded the falsified fixture-contention hypothesis with nested server/connect diagnostics. |
+| P0 | [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md): Supervised replay lifecycle fault matrix | Unclaimed | Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end. | Implement runtime-owned listener fixtures and cause-specific assertions; rerun the matrix and exact-head CI, obtain approval, merge, and reconcile. |
