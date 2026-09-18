@@ -28,7 +28,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1140` | `feature/ar-1140` | `1e3212baf22c` | 0 | behind 226, ahead 0 |
 | `agent-systems-benchmark-ar-1150` | `feature/ar-1150` | `d2498a7372ed` | 0 | behind 275, ahead 0 |
 | `agent-systems-benchmark-ar-1151` | `feature/ar-1151` | `169edc2b2c4e` | 0 | behind 155, ahead 3 |
-| `agent-systems-benchmark-ar-1151-followup` | `feature/ar-1151-followup` | `3ebbcad09f6e` | 0 | behind 0, ahead 14 |
+| `agent-systems-benchmark-ar-1151-followup` | `feature/ar-1151-followup` | `20db76eaf55c` | 0 | behind 0, ahead 15 |
 | `agent-systems-benchmark-ar-1151-integrated` | `feature/ar-1151-integrated` | `b9cfa2ccb96d` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-ar-1210` | `docs/ar-1210-tutorial-contract` | `3e475bda8f44` | 0 | behind 259, ahead 0 |
 | `agent-systems-benchmark-ar-1228-auth-backends-probes` | `feature/ar-1228-auth-backends-probes` | `2d716c8cac94` | 0 | behind 326, ahead 0 |
