@@ -7,7 +7,7 @@
     "AR-1304"
   ],
   "id": "AR-1308",
-  "next_action": "Obtain a separately reviewed capacity contract or model reduction; the bounded QEMU rerun reached liveness checking but Java exhausted memory before attestation, so AR-1307 remains unqualified.",
+  "next_action": "Provision reviewed second-disk headroom and bind exact AR-1307 969eef058; preflight must pass disk, JDK, TLC, lock, image, seed, source, and 32/48G runner receipt gates before any QEMU run.",
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 481,
+  "task_revision": 482,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T20:47:11+00:00",
+  "updated_at": "2026-09-18T20:47:37+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1414,3 +1414,14 @@ source code or treating a capacity failure as a model result.
 
 - 2026-09-18T20:47:11+00:00: Recorded command exit 1; command argv SHA-256
   f4dd6145c4e57d78e685c3e0a6d248aee969a3049db1176342cfc7af89ad9686.
+
+- 2026-09-18T20:47:37+00:00: Bounded audit result: no AR-1308 QEMU is active and AR-1304 is done.
+  Existing receipt is x86_64, network none, no host mounts, QEMU 8.2.2, 8 vCPU, 16 GiB guest swap,
+  64 GiB disk, and unchanged 3G memory/3G swap/2-worker/2-core/8G-address-space/7200s process
+  contract, but it pins older AR-1307 head ab485f767 rather than current signed task head 969eef058.
+  Live preflight was run through handoffctl and failed closed: approved root has only about 4.9 GiB
+  free versus 16 GiB minimum; admission lock, pinned JDK, and TLC JAR are absent at the supplied
+  runtime root. No formal QEMU/TLC attempt was started. Host swap was restored after bounded
+  capacity inspection; no unrelated process was stopped and no cache/artifact was deleted. Required
+  next action is provision approved second-disk headroom and exact current input bundle; do not
+  weaken validator or process limits.
