@@ -1672,7 +1672,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | coordinator-ar1308-runner | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Provision reviewed second-disk headroom and bind exact AR-1307 969eef058; preflight must pass disk, JDK, TLC, lock, image, seed, source, and 32/48G runner receipt gates before any QEMU run. |
+| P0 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | coordinator-ar1308-runner | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Prepared 64 GiB sparse data disk and receipt; bind exact signed AR-1307 969eef058 plus pinned JDK/TLC, lock, image and seed. Run complete preflight before boot; no qualification yet. |
 
 ### Blocked (49)
 

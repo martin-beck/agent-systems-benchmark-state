@@ -7,7 +7,7 @@
     "AR-1304"
   ],
   "id": "AR-1308",
-  "next_action": "Provision reviewed second-disk headroom and bind exact AR-1307 969eef058; preflight must pass disk, JDK, TLC, lock, image, seed, source, and 32/48G runner receipt gates before any QEMU run.",
+  "next_action": "Prepared 64 GiB sparse data disk and receipt; bind exact signed AR-1307 969eef058 plus pinned JDK/TLC, lock, image and seed. Run complete preflight before boot; no qualification yet.",
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 515,
+  "task_revision": 516,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T22:45:01+00:00",
+  "updated_at": "2026-09-18T22:45:34+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1540,3 +1540,6 @@ source code or treating a capacity failure as a model result.
 
 - 2026-09-18T22:45:01+00:00: Recorded command exit 0; command argv SHA-256
   d1040736945ddb9eb8a1299ce8704ac70b34e8463570a040e91bce13cccbb5d2.
+
+- 2026-09-18T22:45:34+00:00: Repaired runner disk property to reviewed >=64 GiB virtual capacity;
+  receipt remains prepared-not-qualified.
