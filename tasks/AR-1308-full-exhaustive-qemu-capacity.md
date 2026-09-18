@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 512,
+  "task_revision": 513,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T22:42:30+00:00",
+  "updated_at": "2026-09-18T22:43:23+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1531,3 +1531,6 @@ source code or treating a capacity failure as a model result.
 
 - 2026-09-18T22:42:30+00:00: Recorded command exit 0; command argv SHA-256
   68e27c941b8dd556a41dfa5ca3c66a70eda8b07a2ddd9859d7c03d2f1bbeea72.
+
+- 2026-09-18T22:43:23+00:00: Recorded command exit -9; command argv SHA-256
+  a5540bef81253d58bb5e3099f15dbbc670c14839b271db9b5c02a5ca761b60da.
