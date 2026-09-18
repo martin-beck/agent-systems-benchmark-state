@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1310-provider-capture-campaign",
   "checkpoint_commit": "17a1530e620608a4d53b6d92ba48c642400778e2",
-  "claim_expires": "2026-09-18T23:19:13+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1060",
     "AR-1151"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1310-provider-capture-campaign",
   "observed_dirty": 7,
   "observed_head": "9a2f313e86332e35eec40b97a692026b497d46cd",
-  "owner": "ar1310-coverage-repair",
+  "owner": "",
   "plan": "../plans/AR-1310.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Runtime-owned provider capture and recording campaign qualification.",
-  "task_revision": 94,
+  "task_revision": 95,
   "title": "Runtime-owned provider capture and recording campaign qualification",
-  "updated_at": "2026-09-18T21:22:47+00:00",
+  "updated_at": "2026-09-18T21:23:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1310-provider-capture-campaign"
 }
 ---
@@ -353,3 +353,7 @@ independently so its promotion is not falsely implied by AR-1160 completion.
 
 - 2026-09-18T21:22:39+00:00: Recorded command exit 0; command argv SHA-256
   c94bd28b1048f8a1cca912fd8f67e3fd057de4b19098183e4422aa306e665090.
+
+- 2026-09-18T21:23:38+00:00: Coverage rerun on exact merged tree passed locally: workspace 90.48%,
+  critical packages 96.47%, all tests passed; no source diff needed. Keep blocked until hosted
+  exact-main post-merge rerun proves 90% and all required workflows green; then promote AR-1312.
