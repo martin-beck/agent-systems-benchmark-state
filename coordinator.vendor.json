@@ -89,7 +89,7 @@
       "source": "tools/handoffctl"
     },
     "tools/handoffctl.py": {
-      "sha256": "3fb63c6f8ea46efab3096ef4080d8eb49c916cc8409313bb0343acf43769af35",
+      "sha256": "5ddb253e311fa8c20038ddbcd8af5a2eb23308a891bbb996439ea34899849462",
       "source": "tools/handoffctl.py"
     },
     "tools/handoffctl_vendor.py": {

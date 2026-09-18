@@ -1477,6 +1477,16 @@ def require_promotion_preflight(kind: str) -> None:
         raise RuntimeError("promotion requires a clean state repository")
 
 
+def apply_checkpoint(args: argparse.Namespace, meta: Meta) -> None:
+    """Record a caller-supplied full commit as the durable task checkpoint."""
+    checkpoint = getattr(args, "checkpoint_commit", None)
+    if checkpoint is None:
+        return
+    if not re.fullmatch(r"[0-9a-f]{40}", str(checkpoint)):
+        raise RuntimeError("checkpoint commit must be a full lowercase Git commit")
+    meta["checkpoint_commit"] = str(checkpoint)
+
+
 def apply_owned_change(args: argparse.Namespace, kind: str, meta: Meta) -> str:
     if meta.get("owner") != args.owner:
         raise RuntimeError(f"{args.task} is owned by {meta.get('owner') or 'nobody'}")
@@ -1500,6 +1510,7 @@ def apply_owned_change(args: argparse.Namespace, kind: str, meta: Meta) -> str:
         raise RuntimeError(f"stale revision: expected {expected}, current {current}")
     if args.status is not None and args.status != "in_progress":
         raise RuntimeError("use release for a non-active status")
+    apply_checkpoint(args, meta)
     for name in ("status", "priority", "summary", "next_action"):
         value = getattr(args, name, None)
         if value is not None:
@@ -2131,6 +2142,7 @@ def main() -> int:
     item.add_argument("--priority", choices=PRIORITIES)
     item.add_argument("--summary")
     item.add_argument("--next-action")
+    item.add_argument("--checkpoint-commit")
     item.add_argument("--note", required=True)
     item = commands.add_parser("run")
     item.add_argument("task")
