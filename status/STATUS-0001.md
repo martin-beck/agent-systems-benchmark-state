@@ -1660,7 +1660,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1160](../tasks/AR-1160.md): Wizard control API | codex-ar1160-control-20260918 | Wizard control API | PR #227 exact head is now 3cc144e73ed68bd86f4dd05c644162e65dfb0895 with focused empty-campaign status coverage test. Local full tools/quality/check_coverage.py passed at 90.48&#37; lines (51,864/57,? workspace report; hosted prior was 89.99&#37;); all local tests in the full coverage run passed. Push completed; six hosted required workflows are running and must reach terminal green. Then obtain independent review, verify exact-head CI and merge only when all required checks are green. Runtime provider capture wiring and asb-tui recording controls remain future work; do not claim AR complete. |
-| P0 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | codex-ar1308-fixture-repair-20260918 | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Repair/rebuild the disposable data fixture so the seed can read pinned JDK security files at its reviewed path; verify image fsck/hash and serial bootstrap, then rerun preflight before one bounded QEMU attempt. |
+| P0 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | codex-ar1308-fixture-repair-20260918 | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Rebuild disposable guest with reviewed asb user/user-manager; rerun preflight and one bounded QEMU attempt. |
 
 ### Open (1)
 

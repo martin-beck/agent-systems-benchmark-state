@@ -7,7 +7,7 @@
     "AR-1304"
   ],
   "id": "AR-1308",
-  "next_action": "Repair/rebuild the disposable data fixture so the seed can read pinned JDK security files at its reviewed path; verify image fsck/hash and serial bootstrap, then rerun preflight before one bounded QEMU attempt.",
+  "next_action": "Rebuild disposable guest with reviewed asb user/user-manager; rerun preflight and one bounded QEMU attempt.",
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 286,
+  "task_revision": 287,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T16:43:24+00:00",
+  "updated_at": "2026-09-18T16:47:00+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -813,3 +813,8 @@ source code or treating a capacity failure as a model result.
 
 - 2026-09-18T16:43:24+00:00: Recorded command exit 0; command argv SHA-256
   96701d5b0d830da6e9e51f3297e004e7bdf95e5ad511b41347552ad431bb016f.
+
+- 2026-09-18T16:47:00+00:00: Preflight passed after fsck-clean data repair and expected JDK security
+  paths. One bounded networkless QEMU boot terminated after cloud-final with five runuser failures:
+  user asb does not exist; no TLC or attestation was emitted. Capacity qualification remains
+  unproven.
