@@ -2,7 +2,7 @@
 {
   "branch": "feature/native-capacity-controller",
   "checkpoint_commit": "e2e3574ed2bbc020105ffb1eb4c5a38691b299a3",
-  "claim_expires": "2026-09-18T23:28:52+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0701",
     "AR-0103"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/native-capacity-controller",
   "observed_dirty": 0,
   "observed_head": "e2e3574ed2bbc020105ffb1eb4c5a38691b299a3",
-  "owner": "ar0704_capacity_reclaim",
+  "owner": "",
   "plan": "../plans/AR-0704.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 228,
+  "task_revision": 229,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-18T22:33:45+00:00",
+  "updated_at": "2026-09-18T22:34:32+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -764,3 +764,12 @@ must not block this AR or its dependents.
 
 - 2026-09-18T22:33:36+00:00: Recorded command exit 0; command argv SHA-256
   1cb04b14f34a336eda9c270f46e6c32e9c9bf0a0b45894e6964bc9dbc2e3db92.
+
+- 2026-09-18T22:34:32+00:00: Exact-head PR #119 at e2e3574 passed every required check except
+  Repository quality run 35401437247, which failed unchanged workspace coverage floor: TOTAL 52,704
+  executed and 5,274 missed, 89.99%, check_coverage.py exit 1. Emulated AArch64, Rust, formal,
+  fault, platform, headers, AWQ, fuzz, mutation, Kani, and Loom checks are green. Worktree was
+  cleaned of generated profraw residue. No merge attempted. This is the known baseline coverage
+  deficit also observed on main run 35399110287 (90.00% rounded with 5,271 missed); preserve PR #119
+  and route meaningful coverage repair to AR-1312 after its dependency policy allows promotion. Do
+  not weaken the floor or merge.
