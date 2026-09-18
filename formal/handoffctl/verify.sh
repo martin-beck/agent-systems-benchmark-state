@@ -13,7 +13,15 @@ readonly ATTESTATION="${TLC_ATTESTATION_PATH:-${TMPDIR:-/tmp}/handoffctl-${TIER}
 readonly TLA_VERSION=1.7.4
 readonly TLA_SHA256=936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88
 readonly SPEC_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
-readonly TEMP_DIR="$(mktemp -d)"
+readonly RUNTIME_ROOT="${TLC_RUNTIME_ROOT:-/srv/data/projects/.asb-tlc}"
+if [[ -L "${RUNTIME_ROOT}" ]]; then
+    echo "TLC_RUNTIME_ROOT must not be a symbolic link" >&2
+    exit 78
+fi
+mkdir -p "${RUNTIME_ROOT}"
+chmod 700 "${RUNTIME_ROOT}"
+readonly TEMP_DIR="$(mktemp -d "${RUNTIME_ROOT%/}/verify.XXXXXX")"
+chmod 700 "${TEMP_DIR}"
 readonly MANIFEST="${TEMP_DIR}/outcomes.manifest"
 : > "${MANIFEST}"
 trap 'rm -rf -- "${TEMP_DIR}"' EXIT
