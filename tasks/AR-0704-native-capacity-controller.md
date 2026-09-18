@@ -8,7 +8,7 @@
     "AR-0103"
   ],
   "id": "AR-0704",
-  "next_action": "All local gates now pass after reclaiming old generated targets; publish exact signed candidate e2e3574 and wait exact-head CI, then independently review/post-merge before release.",
+  "next_action": "PR #119 is exact head e2e3574 on base 78a8e9f; wait all required exact-head checks (runs 35401437280,35401437351,35401437224,35401437264,35401437247,35401437295) to terminal green, then independent review and merge/post-merge verification.",
   "observed_branch": "feature/native-capacity-controller",
   "observed_dirty": 0,
   "observed_head": "e2e3574ed2bbc020105ffb1eb4c5a38691b299a3",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 220,
+  "task_revision": 221,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-18T22:24:52+00:00",
+  "updated_at": "2026-09-18T22:25:23+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -742,3 +742,9 @@ must not block this AR or its dependents.
 
 - 2026-09-18T22:24:52+00:00: Recorded command exit 0; command argv SHA-256
   e18eaecd6c2cfdb2651dced7ea6a288a14b70557a06574d593b944f2119e95bc.
+
+- 2026-09-18T22:25:23+00:00: Published clean signed/DCO candidate with narrow force-with-lease from
+  remote c5a7b5a to e2e3574. GitHub PR #119 now reports base main 78a8e9fc and exact head e2e3574,
+  mergeable/open. Required CI runs 35401437280, 35401437351, 35401437224, 35401437264, 35401437247,
+  35401437295 are in progress; header and AWQ shadow checks 35401437239/35401437238 are green. No
+  merge attempted.

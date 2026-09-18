@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Control genuine native platform capacity lifecycle. | All local gates now pass after reclaiming old generated targets; publish exact signed candidate e2e3574 and wait exact-head CI, then independently review/post-merge before release. | ar0704_capacity_reclaim |
+| P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Control genuine native platform capacity lifecycle. | PR #119 is exact head e2e3574 on base 78a8e9f; wait all required exact-head checks (runs 35401437280,35401437351,35401437224,35401437264,35401437247,35401437295) to terminal green, then independent review and merge/post-merge verification. | ar0704_capacity_reclaim |
 
 ## Blocked
 
