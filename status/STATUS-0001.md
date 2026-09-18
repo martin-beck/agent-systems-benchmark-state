@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**340 ARs tracked** across 7 active status categories.
+**340 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 48 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
@@ -342,7 +342,7 @@ flowchart LR
         AR_1246["AR-1246 - Done"]:::status_done
         AR_1247["AR-1247 - Done"]:::status_done
         AR_1248["AR-1248 - Blocked"]:::status_blocked
-        AR_1249["AR-1249 - Open"]:::status_open
+        AR_1249["AR-1249 - In progress"]:::status_in_progress
         AR_1250["AR-1250 - Blocked"]:::status_blocked
         AR_1251["AR-1251 - Blocked"]:::status_blocked
         AR_1252["AR-1252 - Done"]:::status_done
@@ -1668,17 +1668,12 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0704](../tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | asb-ar0704-formal-rebase-20260918 | Control genuine native platform capacity lifecycle. | Rebase PR #119 onto current main after merged formal provenance repairs; preserve signed lifecycle commits, run full gates, refresh exact-head CI, and merge only when every required check is green. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1249](../tasks/AR-1249-mockagents-qualification-evidence.md): Complete MockAgents executable qualification evidence | Unclaimed | Complete missing evidence for the pinned MockAgents executable qualification. | Investigate pinned MockAgents v0.5.0 streaming fault semantics or create a narrowly scoped candidate repair AR; rerun strict lifecycle/network qualification only after terminal-marker rejection is proven. |
+| P1 | [AR-1249](../tasks/AR-1249-mockagents-qualification-evidence.md): Complete MockAgents executable qualification evidence | asb_ar1249_candidate_recheck | Complete missing evidence for the pinned MockAgents executable qualification. | Investigate pinned MockAgents v0.5.0 streaming fault semantics or create a narrowly scoped candidate repair AR; rerun strict lifecycle/network qualification only after terminal-marker rejection is proven. |
 
 ### Blocked (48)
 
@@ -1750,3 +1745,4 @@ flowchart LR
 | P0 | [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md): Establish the professional TUI visual system | Unclaimed | Create a responsive, accessible and professional visual system for every TUI screen. | Create the standalone Ratatui visual system after the application shell is integrated. |
 | P0 | [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md): Add the standalone TUI configuration center | Unclaimed | Add a searchable configuration menu for frontend preferences and benchmark defaults. | Implement the non-secret configuration center foundation after the visual system and ASB wizard control API are stable; AR-1170 owns provider, authentication and default integration. |
 | P0 | [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md): Build recent-runs, report and comparison workspaces | Unclaimed | Add searchable recent runs, report inspection and evidence-qualified comparison workspaces. | Implement report and comparison screens after recording workflows publish stable live and strict-replay source labels. |
+| P0 | [AR-1170](../tasks/AR-1170.md): Standalone TUI wizard | Unclaimed | Guide TUI setup through analysis. | Read the plan. |

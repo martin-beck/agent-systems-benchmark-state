@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1249-mockagents-qualification-evidence",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-18T22:37:28+00:00",
   "depends_on": [
     "AR-0888",
     "AR-0889"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1249-mockagents-qualification-evidence",
   "observed_dirty": 0,
   "observed_head": "128ecddbfdb7fcfff6e257adf3237b5866aca481",
-  "owner": "",
+  "owner": "asb_ar1249_candidate_recheck",
   "plan": "../plans/AR-1249.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Complete missing evidence for the pinned MockAgents executable qualification.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Complete MockAgents executable qualification evidence",
-  "updated_at": "2026-09-18T21:37:26+00:00",
+  "updated_at": "2026-09-18T21:37:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1249"
 }
 ---
@@ -148,3 +148,5 @@ network denial, privacy, signature, DCO, and exact-tree gates.
 
 - 2026-09-18T21:37:26+00:00: Re-audit pinned MockAgents terminal-marker and bounded-input semantics
   against exact artifact; implement only an in-scope fail-closed repair or route candidate defect.
+
+- 2026-09-18T21:37:28+00:00: Claimed by asb_ar1249_candidate_recheck.
