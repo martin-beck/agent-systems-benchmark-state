@@ -16,11 +16,11 @@
   "plan": "../plans/AR-0704.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 233,
+  "task_revision": 234,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-18T22:36:22+00:00",
+  "updated_at": "2026-09-18T22:36:45+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -786,3 +786,6 @@ must not block this AR or its dependents.
 - 2026-09-18T22:36:22+00:00: Released ownerless after correcting next_action. PR #119 is preserved
   at exact signed head e2e3574; only repository quality coverage failed at 89.99%. Coverage repair
   belongs to AR-1312 once its dependency policy allows; no merge or threshold change.
+
+- 2026-09-18T22:36:45+00:00: Shorten next_action to schema limit while preserving terminal coverage
+  evidence.
