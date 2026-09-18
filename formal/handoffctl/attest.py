@@ -44,6 +44,7 @@ TIER_KEYS = {
     "containment",
 }
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
+APPROVED_RUNTIME_ROOT = Path("/srv/data/projects")
 
 
 def digest(path: Path) -> str:
@@ -75,7 +76,7 @@ def git_value(root: Path, *args: str) -> str:
 def root_relative(path: Path) -> str:
     """Return an approved-root-relative path and reject host leakage."""
     try:
-        return str(path.resolve().relative_to(PROJECT_ROOT))
+        return str(path.resolve().relative_to(APPROVED_RUNTIME_ROOT))
     except ValueError as error:
         raise ValueError("attestation path is outside /srv/data/projects") from error
 
