@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Monitor coordination 35305103755 and formal 35305104802 at exact head 436edb9cbdb96e0c27230972d014edd54c3d1e72; preserve the AR-1294 lock-boundary evidence, then independently review and merge only after all gates and fresh full attestation are green.",
+  "next_action": "Run exact-head CI for PR #25 at 969eef058; review the complete diff and merge only after all required checks and fresh formal attestation pass.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 568,
+  "task_revision": 569,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T04:19:53+00:00",
+  "updated_at": "2026-09-18T04:20:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1539,3 +1539,9 @@ and protected publication sequence.
 
 - 2026-09-18T04:19:53+00:00: Recorded command exit 0; command argv SHA-256
   62e51ca62d0261a5229f4fad0f99b3eff59471c013e0a11125615bc37c1ccc3e.
+
+- 2026-09-18T04:20:10+00:00: Signed-history reconstruction complete: fresh worktree from base
+  48c7251dd reproduced the exact 19-file implementation tree as one SSH-signed conventional commit
+  969eef058 with matching author DCO. PR #24 had been closed during an erroneous canonical-HEAD
+  push; the remote branch was safely corrected with a live lease and PR #25 opened at exact head
+  969eef058. No merge or gate bypass occurred.

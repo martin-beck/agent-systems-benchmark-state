@@ -1656,7 +1656,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | codex-ar1307-signed-history-20260918 | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Monitor coordination 35305103755 and formal 35305104802 at exact head 436edb9cbdb96e0c27230972d014edd54c3d1e72; preserve the AR-1294 lock-boundary evidence, then independently review and merge only after all gates and fresh full attestation are green. |
+| P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | codex-ar1307-signed-history-20260918 | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Run exact-head CI for PR #25 at 969eef058; review the complete diff and merge only after all required checks and fresh formal attestation pass. |
 
 ### Open (1)
 
