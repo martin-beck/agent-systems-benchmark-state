@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 396,
+  "task_revision": 397,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T17:39:11+00:00",
+  "updated_at": "2026-09-18T17:39:21+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1163,3 +1163,6 @@ source code or treating a capacity failure as a model result.
   FileNotFoundError and missing attestation. Seed was updated to create data-backed guest .asb-tlc,
   admission.lock, worker queue, and bind it at /srv/data/projects/.asb-tlc. Earlier combined command
   had a quoting assertion failure; the direct replacement now succeeded and was recorded.
+
+- 2026-09-18T17:39:21+00:00: Recorded command exit 0; command argv SHA-256
+  e01bd8b8af55c39c7fb2a0d0c0b2ada678b055bda1120d4c0bd4524fa6d57924.
