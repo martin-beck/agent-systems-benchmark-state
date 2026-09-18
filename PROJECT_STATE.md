@@ -22,7 +22,7 @@ Generated from local Git and GitHub. Do not edit.
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
 | #214 | `feature/ar-1286-supervised-replay-lifecycle@eaf7fcbf42ae` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(replay): integrate runtime-owned supervised replay lifecycle |
 | #220 | `feature/ar-1303-hosted-platform-diagnostics@d85889d5066c` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | ci(platforms): add privacy-safe hosted failure diagnostics |
-| #227 | `feature/ar-1160-control-lifecycle@88df781ce9d3` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(control): add recording campaign lifecycle operations |
+| #227 | `feature/ar-1160-control-lifecycle@88df781ce9d3` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(control): add recording campaign lifecycle operations |
 
 ## Recent workflows
 
@@ -35,7 +35,7 @@ Generated from local Git and GitHub. Do not edit.
 | 35354700638 | `88df781ce9d3` | pull_request | Fault assurance | in_progress:- |
 | 35354700611 | `88df781ce9d3` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 35354700609 | `88df781ce9d3` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 35354700586 | `88df781ce9d3` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 35354700586 | `88df781ce9d3` | pull_request | Hosted portability and native qualification | completed:success |
 | 35354615315 | `ce71ffbc3364` | pull_request | Formal assurance | completed:cancelled |
 | 35354615197 | `ce71ffbc3364` | pull_request | Repository quality | completed:failure |
 | 35354615177 | `ce71ffbc3364` | pull_request | Emulated aarch64 portability | completed:cancelled |
