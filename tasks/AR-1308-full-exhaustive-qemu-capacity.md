@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
-  "checkpoint_commit": "ed70f0b6d95e577d1fb8cc4ca32bba95d513bb6b",
+  "checkpoint_commit": "df0e402f442468e43e06b7c1acb3c3667277fb75",
   "claim_expires": "2026-09-18T15:54:46+00:00",
   "depends_on": [
     "AR-1304"
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 169,
+  "task_revision": 170,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T15:45:24+00:00",
+  "updated_at": "2026-09-18T15:45:47+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -458,3 +458,7 @@ source code or treating a capacity failure as a model result.
 
 - 2026-09-18T15:45:24+00:00: Recorded command exit 0; command argv SHA-256
   28cd5e9b62d2bc37abd137652a4e2d4dc441885a9bc8df4deda18994dbe4c694.
+
+- 2026-09-18T15:45:47+00:00: Checkpoint advanced through handoffctl to signed exact PR head
+  df0e402f442468e43e06b7c1acb3c3667277fb75 after coverage and checkpoint-path tests. Required gates
+  are being rerun; QEMU remains paused.
