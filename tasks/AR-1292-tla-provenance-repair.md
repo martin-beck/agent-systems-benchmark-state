@@ -2,22 +2,22 @@
 {
   "branch": "repair/ar-1292-tla-provenance",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-18T21:39:59+00:00",
   "depends_on": [],
   "id": "AR-1292",
   "next_action": "Await independently verifiable TLA+ provenance: a signed/attested immutable v1.8.0 asset bound to its source revision, or a deterministic source-build qualification for the current 142d0ba release. Do not update only hash/size or rerun PR #119 until that evidence exists.",
   "observed_branch": "repair/ar-1292-tla-provenance",
   "observed_dirty": 0,
   "observed_head": "c1b1860786e844adb69b8f74e39af290592a89c8",
-  "owner": "",
+  "owner": "asb-ar1292-provenance-reaudit-20260918",
   "plan": "../plans/AR-1292.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair or formally retain the pinned TLA+ artifact provenance mismatch blocking formal assurance.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Pinned TLA+ artifact provenance repair",
-  "updated_at": "2026-09-18T21:09:56+00:00",
+  "updated_at": "2026-09-18T21:09:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1292-tla-provenance"
 }
 ---
@@ -75,3 +75,5 @@ verification, alter native-capacity behavior, or touch asb-tui.
 
 - 2026-09-18T21:09:56+00:00: Bounded provenance re-audit authorized; verify live v1.8.0 release, tag
   signature, artifact attestation, and source binding without changing the pinned fixture.
+
+- 2026-09-18T21:09:59+00:00: Claimed by asb-ar1292-provenance-reaudit-20260918.
