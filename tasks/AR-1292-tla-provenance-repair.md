@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-18T21:39:59+00:00",
   "depends_on": [],
   "id": "AR-1292",
-  "next_action": "Await independently verifiable TLA+ provenance: a signed/attested immutable v1.8.0 asset bound to its source revision, or a deterministic source-build qualification for the current 142d0ba release. Do not update only hash/size or rerun PR #119 until that evidence exists.",
+  "next_action": "Await signed or attested immutable TLA+ v1.8.0 provenance, or deterministic source-build qualification for 142d0ba; do not update hash only.",
   "observed_branch": "repair/ar-1292-tla-provenance",
   "observed_dirty": 0,
   "observed_head": "c1b1860786e844adb69b8f74e39af290592a89c8",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair or formally retain the pinned TLA+ artifact provenance mismatch blocking formal assurance.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Pinned TLA+ artifact provenance repair",
-  "updated_at": "2026-09-18T21:09:59+00:00",
+  "updated_at": "2026-09-18T21:10:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1292-tla-provenance"
 }
 ---
@@ -77,3 +77,13 @@ verification, alter native-capacity behavior, or touch asb-tui.
   signature, artifact attestation, and source binding without changing the pinned fixture.
 
 - 2026-09-18T21:09:59+00:00: Claimed by asb-ar1292-provenance-reaudit-20260918.
+
+- 2026-09-18T21:10:16+00:00: Refreshed 2026-09-18 official GitHub evidence: release 25926686 remains
+  draft=false/prerelease=true, published 2026-09-17T03:26:45Z; tla2tools.jar asset 569359548 is size
+  4492966 with API SHA-256 9d36716ffb5e49d1ba8fae4651eba59f3189887e12eb90e204a42d2e6e993fef.
+  Independent download matches those bytes and manifest X-Git-Revision
+  142d0ba85e54a937c0fc5e1503941bd4cf46b684, matching lightweight refs/tags/v1.8.0. The tag has no
+  annotated tag object, commit verification is null, and release assets/body expose no
+  source-to-binary signature or attestation (body has only SHA-1 checksums). Prior asset 551753628
+  remains unavailable and repository pin remains 4490679 bytes/SHA a1fc0bfe...; replacing hash/size
+  would weaken fail-closed provenance. No product/asb-tui mutation and no PR #119 rerun.
