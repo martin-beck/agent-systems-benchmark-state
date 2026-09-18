@@ -1661,7 +1661,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1160](../tasks/AR-1160.md): Wizard control API | root | Wizard control API | Run PR #227 exact-head gates after rustfmt correction at 3efbacb; merge when green, then wire runtime capture adapter and asb-tui recording controls. |
 | P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | codex-ar1307-metadata-repair-20260918 | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | AR-1308 is planned for disposable x86_64 QEMU capacity. Keep AR-1307 unqualified; after AR-1308 capacity evidence, rerun exact full-exhaustive without changing the 3G/3G contract. |
-| P0 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | codex-ar1308-qemu-capacity-20260918 | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Promote after AR-1304 review; provision disposable x86_64 QEMU capacity and qualify the exact AR-1307 full-exhaustive liveness run without changing its 3G/3G contract. |
+| P0 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | codex-ar1308-qemu-capacity-20260918 | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Await PR #26 exact-head review and green checks; then merge the signed AR-1308 receipt/preflight and run one bounded exact-head full-exhaustive attempt on the disposable QEMU capacity. |
 
 ### Open (1)
 
@@ -1742,4 +1742,3 @@ flowchart LR
 | P0 | [AR-1170](../tasks/AR-1170.md): Standalone TUI wizard | Unclaimed | Guide TUI setup through analysis. | Read the plan. |
 | P0 | [AR-1180](../tasks/AR-1180.md): Cross-project wizard qualification | Unclaimed | Qualify the complete wizard. | Read the plan. |
 | P0 | [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md): Authenticated TUI install router | Unclaimed | Expose an authenticated renderer-neutral ASB router for asb tui install and lifecycle operations. | Promote only after dependencies are independently complete; implement the renderer-neutral authenticated CLI/control route and full integration tests. |
-| P0 | [AR-1211](../tasks/AR-1211-initial-setup-first-agent.md): Initial setup and first agent connection tutorial | Unclaimed | Teach first-time users to initialize ASB and add the first agent connection. | Implement the syntax-checked tutorial for ASB initialization, first-agent registration, and agent connection setup. |
