@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Regenerate stage12 metadata with real newline delimiters (not literal backslash-n), rebuild fresh seed with unique instance ID, rerun one QEMU portable-smoke, and validate attestation commit 01f6e000b.",
+  "next_action": "Portable-smoke exact-head stage12 passed once with validated attestation; run an independent fresh exact-head portable-smoke repeat, then run pr-publication and full-exhaustive tiers only after repeated portable evidence, preserving all receipts and exact-head checks.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 397,
+  "task_revision": 398,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T01:06:11+00:00",
+  "updated_at": "2026-09-18T01:06:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1274,3 +1274,12 @@ and protected publication sequence.
 
 - 2026-09-18T01:06:11+00:00: Recorded command exit 0; command argv SHA-256
   a5c454fe24d989efe14deacda0550c5bbf53c4df01068b722660de67f9502775.
+
+- 2026-09-18T01:06:36+00:00: Stage12 fresh seed metadata now has real newline delimiters; data UUID
+  matches seed constant; embedded state HEAD and attestation commit both equal
+  01f6e000b3d4d42b35545e06b527e6e9152386c0. QEMU: 32 GiB overlay, 8 vCPU, 32 GiB RAM, -nic none, no
+  host mounts, user@1000/D-Bus active, resolved JDK and pinned TLC jar. Serial:
+  PORTABLE_SMOKE_TRANSIENT_RC=0, PORTABLE_SMOKE_RC=0, PORTABLE_SMOKE_EVIDENCE_OK, clean poweroff at
+  37.4s. Extracted JSON validates status success, profile portable-smoke, containment portable,
+  commit equality, jar digest. One successful run is recorded; higher tiers and merge remain paused
+  pending repeat/full gates.
