@@ -7,7 +7,7 @@
     "AR-1304"
   ],
   "id": "AR-1308",
-  "next_action": "Rebuild corrected seed and fresh overlay with guest-internal .asb-tlc bind mapping; rerun preflight, then one bounded QEMU attempt and inspect attestation.",
+  "next_action": "Launch one bounded QEMU with fresh overlay5 and git-safe bind seed; inspect full-exhaustive TLC result and attestation.",
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 419,
+  "task_revision": 420,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T17:46:29+00:00",
+  "updated_at": "2026-09-18T17:46:50+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1232,3 +1232,7 @@ source code or treating a capacity failure as a model result.
 
 - 2026-09-18T17:46:29+00:00: Recorded command exit 0; command argv SHA-256
   9cb678f8fd6b2a30e31c352c2e0b1e5778425212a26233050b84fb44cc4b02a2.
+
+- 2026-09-18T17:46:50+00:00: Seed now includes guest-internal data-backed .asb-tlc bind mapping and
+  guest-local safe.directory for the mounted state repository. Fresh overlay5 built; corrected seed
+  receipt committed; governed preflight passed. QEMU is next.
