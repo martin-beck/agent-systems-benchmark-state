@@ -15,6 +15,7 @@ import shutil
 import signal
 import subprocess
 import sys
+import tempfile
 import time
 import uuid
 from pathlib import Path
@@ -128,10 +129,19 @@ def _provenance(model: Path, jar: Path, config: Path, metadir: Path) -> dict[str
 def _bounded_process(command: list[str], timeout_seconds: int) -> tuple[int, bool]:  # noqa: C901
     """Run one argv-only command with bounded output and process-group cleanup."""
     try:
+        stdout_capture = tempfile.TemporaryFile(  # noqa: SIM115
+            mode="w+b", dir=str(DEFAULT_TMPDIR)
+        )
+    except PermissionError:
+        # Unit-test doubles may not own the disposable runtime directory. A
+        # real admitted runner must own it; retain a bounded pipe fallback for
+        # diagnostics without changing the execution gate.
+        stdout_capture = None
+    try:
         process = subprocess.Popen(  # noqa: S603
             command,
             stdin=subprocess.DEVNULL,
-            stdout=subprocess.PIPE,
+            stdout=stdout_capture if stdout_capture is not None else subprocess.PIPE,
             stderr=subprocess.PIPE,
             start_new_session=True,
         )
@@ -140,9 +150,18 @@ def _bounded_process(command: list[str], timeout_seconds: int) -> tuple[int, boo
     try:
         exit_code = process.wait(timeout=timeout_seconds)
         if exit_code != 0:
-            streams = [stream for stream in (process.stdout, process.stderr) if stream is not None]
+            streams = [
+                stream
+                for stream in (
+                    stdout_capture if stdout_capture is not None else process.stdout,
+                    process.stderr,
+                )
+                if stream is not None
+            ]
             details = []
             for stream in streams:
+                if stdout_capture is not None and stream is stdout_capture:
+                    stream.seek(max(0, stream.seek(0, os.SEEK_END) - 4096))
                 chunk = stream.read(4096)
                 if isinstance(chunk, bytes):
                     details.append(chunk.decode("utf-8", errors="replace"))
@@ -164,6 +183,9 @@ def _bounded_process(command: list[str], timeout_seconds: int) -> tuple[int, boo
             except subprocess.TimeoutExpired:
                 continue
         return 124, True
+    finally:
+        if stdout_capture is not None:
+            stdout_capture.close()
 
 
 def _positive_int(value: str, name: str) -> int:
