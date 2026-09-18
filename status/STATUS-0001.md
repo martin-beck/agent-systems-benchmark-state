@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**338 ARs tracked** across 7 active status categories.
+**339 ARs tracked** across 7 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 48 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
@@ -407,6 +407,7 @@ flowchart LR
         AR_1308["AR-1308 - Blocked"]:::status_blocked
         AR_1309["AR-1309 - Planned"]:::status_planned
         AR_1310["AR-1310 - In progress"]:::status_in_progress
+        AR_1311["AR-1311 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1660,6 +1661,7 @@ flowchart LR
 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md) | [AR-1304](../tasks/AR-1304-required-tier-qemu-runner.md) | [AR-1309](../tasks/AR-1309-reviewed-capacity-or-model-reduction.md) |
 | [AR-1309](../tasks/AR-1309-reviewed-capacity-or-model-reduction.md) | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md), [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md) | None |
 | [AR-1310](../tasks/AR-1310-provider-capture-campaign.md) | [AR-1060](../tasks/AR-1060-authenticated-control-endpoint-handoff.md), [AR-1151](../tasks/AR-1151.md) | None |
+| [AR-1311](../tasks/AR-1311-planned-task-metadata-schema-repair.md) | None | None |
 
 ## Complete AR inventory
 
@@ -1669,11 +1671,12 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1310](../tasks/AR-1310-provider-capture-campaign.md): Runtime-owned provider capture and recording campaign qualification | ar1310-provider-capture | Runtime-owned provider capture and recording campaign qualification. | Promote only after review confirms AR-1160 blocked evidence is preserved and the runtime capture design is dependency-ready; implement the provider-bound capture seam, durable tuple cassette coverage, restart reconciliation, and fail-closed offline activation. |
 
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Unclaimed | Repair the state-repository TLA admission runner and truthful worktree metadata. | Blocked on AR-1307 runner merge and handoff. Prior full VM was interrupted without success or attestation; after merge, rebuild exact fa57625d9 image/seed and rerun independently reviewed gates. |
+| P1 | [AR-1311](../tasks/AR-1311-planned-task-metadata-schema-repair.md): Repair planned-task metadata schema contradiction | Unclaimed | Repair planned-task metadata that violates the current live-observation schema. | Claim this metadata-only repair, remove unsupported empty live-observation fields from planned AR-1309, regenerate views, and rerun schema and state gates. Do not alter AR-1309 meaning or claim implementation. |
 
 ### Blocked (48)
 
@@ -1745,6 +1748,3 @@ flowchart LR
 | P0 | [AR-1032](../tasks/AR-1032-asb-tui-contextual-help.md): Add contextual hotkeys and complete action help | Unclaimed | Provide a context-fitted hotkey window, global action search and mechanically complete help. | Add the contextual action registry, search field, fitted hotkey window and complete help coverage after the user-facing screens exist. |
 | P0 | [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md): Establish the professional TUI visual system | Unclaimed | Create a responsive, accessible and professional visual system for every TUI screen. | Create the standalone Ratatui visual system after the application shell is integrated. |
 | P0 | [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md): Add the standalone TUI configuration center | Unclaimed | Add a searchable configuration menu for frontend preferences and benchmark defaults. | Implement the non-secret configuration center foundation after the visual system and ASB wizard control API are stable; AR-1170 owns provider, authentication and default integration. |
-| P0 | [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md): Build recent-runs, report and comparison workspaces | Unclaimed | Add searchable recent runs, report inspection and evidence-qualified comparison workspaces. | Implement report and comparison screens after recording workflows publish stable live and strict-replay source labels. |
-| P0 | [AR-1170](../tasks/AR-1170.md): Standalone TUI wizard | Unclaimed | Guide TUI setup through analysis. | Read the plan. |
-| P0 | [AR-1180](../tasks/AR-1180.md): Cross-project wizard qualification | Unclaimed | Qualify the complete wizard. | Read the plan. |
