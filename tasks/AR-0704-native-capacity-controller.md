@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 116,
+  "task_revision": 117,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-18T21:36:42+00:00",
+  "updated_at": "2026-09-18T21:36:57+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -437,3 +437,6 @@ must not block this AR or its dependents.
   weakening performed.
 
 - 2026-09-18T21:36:42+00:00: Claimed by asb-ar0704-formal-rebase-20260918.
+
+- 2026-09-18T21:36:57+00:00: Recorded command exit 0; command argv SHA-256
+  4a73c3c01d06ab32f7ab9670ffe18da4e5ba09971fc15aeff38f745b2e49465b.
