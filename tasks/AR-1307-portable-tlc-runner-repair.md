@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1307-portable-tlc-runner-repair",
   "checkpoint_commit": "beafa965e61b0f09d9ed5f10ffcd621b0cf3e5b2",
-  "claim_expires": "2026-09-18T11:23:26+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1302"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "969eef05834a4ce5f711bbafaa5798549abd95c8",
-  "owner": "codex-ar1307-metadata-repair-20260918",
+  "owner": "",
   "plan": "../plans/AR-1307.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 704,
+  "task_revision": 705,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T11:16:27+00:00",
+  "updated_at": "2026-09-18T11:29:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1983,3 +1983,8 @@ and protected publication sequence.
 
 - 2026-09-18T11:16:27+00:00: Recorded command exit 128; command argv SHA-256
   3aa8227eccc225182e16d94abd6aeaae5b3140cd5c61742d77fa0605350f6ae7.
+
+- 2026-09-18T11:29:16+00:00: Recovered expired claim formerly owned by
+  codex-ar1307-metadata-repair-20260918. Recovered expired AR-1307 claim during routine coordination
+  doctor; no product mutation or worker launch performed. Preserve next_action and require explicit
+  re-claim before work resumes.
