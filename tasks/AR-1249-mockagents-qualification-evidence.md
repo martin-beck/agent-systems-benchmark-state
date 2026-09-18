@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1249.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Complete missing evidence for the pinned MockAgents executable qualification.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Complete MockAgents executable qualification evidence",
-  "updated_at": "2026-09-16T18:46:14+00:00",
+  "updated_at": "2026-09-18T21:37:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1249"
 }
 ---
@@ -145,3 +145,6 @@ network denial, privacy, signature, DCO, and exact-tree gates.
 - 2026-09-16T18:46:14+00:00: Released ownerless with confirmed bounded evidence: tool-call and
   rate-limit cases pass; configured truncated-stream case emits terminal [DONE], blocking strict
   qualification. Clean branch; no claim.
+
+- 2026-09-18T21:37:26+00:00: Re-audit pinned MockAgents terminal-marker and bounded-input semantics
+  against exact artifact; implement only an in-scope fail-closed repair or route candidate defect.
