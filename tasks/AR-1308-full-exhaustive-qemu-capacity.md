@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T13:38:00+00:00",
+  "updated_at": "2026-09-18T13:45:32+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -36,3 +36,6 @@ The dependency on AR-1304 provides the reviewed required-tier QEMU runner and us
 The run must consume the exact signed AR-1307 head and pinned TLC/JDK/model inputs, without changing
 source code or treating a capacity failure as a model result.
 
+
+- 2026-09-18T13:45:32+00:00: AR-1304 is done; promote capacity follow-on to open for independent
+  worker assignment. Preserve AR-1307 3G/3G contract and exact-head dependency.
