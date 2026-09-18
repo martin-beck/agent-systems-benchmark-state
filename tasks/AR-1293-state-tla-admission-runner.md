@@ -5,7 +5,7 @@
   "claim_expires": "",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Blocked on AR-1307 qualification and AR-1308 capacity/input repair: remote AR-1307 is ab485f767 while task requires 969eef058; AR-1308 preflight failed closed on 4.9 GiB approved-root free versus 16 GiB minimum and missing lock/JDK/TLC at runtime root. Reopen only with exact current input bundle and passing preflight; do not run formal TLC locally.",
+  "next_action": "Blocked: AR-1307 remote head ab485f767 != required 969eef058. AR-1308 preflight had 4.9 GiB free vs 16 GiB minimum and missing lock/JDK/TLC at runtime root. Reopen only with exact input bundle and passing preflight; do not run TLC locally.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "f1931686c9297f5661446bf1871870b659d69684",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "blocked",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 746,
+  "task_revision": 747,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-18T21:04:30+00:00",
+  "updated_at": "2026-09-18T21:08:20+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -2237,3 +2237,6 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   latest preflight failed closed on stale input ab485f767, ~4.9 GiB approved-root free versus 16 GiB
   minimum, and missing lock/JDK/TLC runtime inputs. No safe local preparation or formal execution is
   authorized; resume only after exact current input bundle and passing isolated preflight.
+
+- 2026-09-18T21:08:20+00:00: Schema repair only: shortened next_action below 300 characters while
+  preserving the exact runner, disk, and input blockers; implementation and gates unchanged.
