@@ -53,7 +53,7 @@
       "source": "formal/handoffctl/HandoffctlStorage.tla"
     },
     "formal/handoffctl/README.md": {
-      "sha256": "9535bf0e170e0731662d02ebc6d9e353856c2c2b5606bbad2926092e2ca2cd18",
+      "sha256": "9d1d1af291b34040dec454ad4b91705aa3fc706bed7bca5e78dd83e5a403ee74",
       "source": "formal/handoffctl/README.md"
     },
     "formal/handoffctl/verify.sh": {
