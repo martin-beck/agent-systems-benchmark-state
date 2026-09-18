@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1151](tasks/AR-1151.md): Strict offline replay | Replay strictly without providers. | Publish exact head 5c9b5cc after GitHub email verification, rerun hosted aarch64, then implement durable recording campaign lifecycle, cassette coverage reconciliation, offline-default application, and TUI adapter. | codex_ar1151_followup |
+| P0 | [AR-1151](tasks/AR-1151.md): Strict offline replay | Replay strictly without providers. | Publish exact local head 3313860 after GitHub email verification, rerun hosted aarch64, then implement durable recording campaign lifecycle, cassette coverage reconciliation, offline-default application, and TUI adapter. | codex_ar1151_followup |
 | P0 | [AR-1307](tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Diagnose repeated full-exhaustive TLC exit-1 with controlled local reproduction and cgroup/disk/journal evidence; make only evidence-backed termination repair, then rerun focused gates before any new formal dispatch. | codex-ar1307-metadata-repair-20260918 |
 
 ## Open
