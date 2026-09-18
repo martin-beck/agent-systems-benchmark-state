@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1310](tasks/AR-1310-provider-capture-campaign.md): Runtime-owned provider capture and recording campaign qualification | Runtime-owned provider capture and recording campaign qualification. | AR-1312 owns the transferred 89.99% post-merge coverage blocker; keep this AR blocked and ownerless until its successor correction and exact-main checks are green. | - |
+| P0 | [AR-1310](tasks/AR-1310-provider-capture-campaign.md): Runtime-owned provider capture and recording campaign qualification | Runtime-owned provider capture and recording campaign qualification. | AR-1312 owns the transferred 89.99% post-merge coverage blocker; keep this AR blocked and ownerless until its successor correction and exact-main checks are green. | ar1310-coverage-repair |
 
 ## Blocked
 

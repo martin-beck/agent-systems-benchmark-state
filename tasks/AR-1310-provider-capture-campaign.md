@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1310-provider-capture-campaign",
   "checkpoint_commit": "17a1530e620608a4d53b6d92ba48c642400778e2",
-  "claim_expires": "",
+  "claim_expires": "2026-09-18T21:57:17+00:00",
   "depends_on": [
     "AR-1060",
     "AR-1151"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1310-provider-capture-campaign",
   "observed_dirty": 0,
   "observed_head": "9a2f313e86332e35eec40b97a692026b497d46cd",
-  "owner": "",
+  "owner": "ar1310-coverage-repair",
   "plan": "../plans/AR-1310.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Runtime-owned provider capture and recording campaign qualification.",
-  "task_revision": 104,
+  "task_revision": 105,
   "title": "Runtime-owned provider capture and recording campaign qualification",
-  "updated_at": "2026-09-18T21:27:15+00:00",
+  "updated_at": "2026-09-18T21:27:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1310-provider-capture-campaign"
 }
 ---
@@ -383,3 +383,5 @@ independently so its promotion is not falsely implied by AR-1160 completion.
 
 - 2026-09-18T21:27:15+00:00: Coordinator requested explicit next action after hosted rerun failure;
   no implementation retry.
+
+- 2026-09-18T21:27:17+00:00: Claimed by ar1310-coverage-repair.
