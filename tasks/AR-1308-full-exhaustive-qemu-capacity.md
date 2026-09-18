@@ -7,7 +7,7 @@
     "AR-1304"
   ],
   "id": "AR-1308",
-  "next_action": "Launch one bounded QEMU with fresh overlay3, corrected data UUID, and seed exporting TLC_JAR_PATH plus exact jar digest; then inspect TLC/attestation.",
+  "next_action": "Rebuild corrected seed and fresh overlay with guest-internal .asb-tlc bind mapping; rerun preflight, then one bounded QEMU attempt and inspect attestation.",
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 395,
+  "task_revision": 396,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T17:38:48+00:00",
+  "updated_at": "2026-09-18T17:39:11+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1157,3 +1157,9 @@ source code or treating a capacity failure as a model result.
 
 - 2026-09-18T17:38:48+00:00: Recorded command exit 0; command argv SHA-256
   f0e57191b2c5b8b533559933c359a861856ade8e79ad38365bbcda991f2331c0.
+
+- 2026-09-18T17:39:11+00:00: The prior corrected final reached transient RC=0 but failed before TLC
+  because /srv/data/projects/.asb-tlc and worker paths were absent inside the guest; serial showed
+  FileNotFoundError and missing attestation. Seed was updated to create data-backed guest .asb-tlc,
+  admission.lock, worker queue, and bind it at /srv/data/projects/.asb-tlc. Earlier combined command
+  had a quoting assertion failure; the direct replacement now succeeded and was recorded.
