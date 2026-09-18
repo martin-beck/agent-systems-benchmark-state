@@ -8,7 +8,7 @@
     "AR-0889"
   ],
   "id": "AR-1249",
-  "next_action": "Investigate pinned MockAgents v0.5.0 streaming fault semantics or create a narrowly scoped candidate repair AR; rerun strict lifecycle/network qualification only after terminal-marker rejection is proven.",
+  "next_action": "Create a narrowly scoped candidate-repair AR for MockAgents v0.5.0 streaming truncation; rerun strict lifecycle/network qualification only after truncate_after_chunks suppresses terminal [DONE].",
   "observed_branch": "feature/ar-1249-mockagents-qualification-evidence",
   "observed_dirty": 0,
   "observed_head": "128ecddbfdb7fcfff6e257adf3237b5866aca481",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Complete missing evidence for the pinned MockAgents executable qualification.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Complete MockAgents executable qualification evidence",
-  "updated_at": "2026-09-18T21:39:34+00:00",
+  "updated_at": "2026-09-18T21:39:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1249"
 }
 ---
@@ -161,3 +161,11 @@ network denial, privacy, signature, DCO, and exact-tree gates.
   82a63120a3d96d11e984b437689f6da47a71e72a106f21bdf24c57ac3ca7f0b6.
 
 - 2026-09-18T21:39:34+00:00: Heartbeat by asb_ar1249_candidate_recheck.
+
+- 2026-09-18T21:39:47+00:00: Exact arm64 candidate probe ran through handoffctl with the pinned
+  MockAgents v0.5.0 artifact under QEMU 8.2.2. A fixture setting streaming.truncate_after_chunks: 1
+  returned HTTP 200 with the full assistant stream and terminal data: [DONE] (573 bytes), proving
+  the terminal-marker rejection failure. This is external pinned-candidate behavior, not an ASB
+  harness or runner defect. AR-1249 owns qualification evidence and cannot modify the external
+  candidate; no safe workaround or qualification claim is valid. Route to a narrowly scoped
+  candidate-repair AR.

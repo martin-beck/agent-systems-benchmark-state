@@ -1673,7 +1673,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0704](../tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | asb-ar0704-formal-rebase-20260918 | Control genuine native platform capacity lifecycle. | Rebase PR #119 onto current main after merged formal provenance repairs; preserve signed lifecycle commits, run full gates, refresh exact-head CI, and merge only when every required check is green. |
-| P1 | [AR-1249](../tasks/AR-1249-mockagents-qualification-evidence.md): Complete MockAgents executable qualification evidence | asb_ar1249_candidate_recheck | Complete missing evidence for the pinned MockAgents executable qualification. | Investigate pinned MockAgents v0.5.0 streaming fault semantics or create a narrowly scoped candidate repair AR; rerun strict lifecycle/network qualification only after terminal-marker rejection is proven. |
+| P1 | [AR-1249](../tasks/AR-1249-mockagents-qualification-evidence.md): Complete MockAgents executable qualification evidence | asb_ar1249_candidate_recheck | Complete missing evidence for the pinned MockAgents executable qualification. | Create a narrowly scoped candidate-repair AR for MockAgents v0.5.0 streaming truncation; rerun strict lifecycle/network qualification only after truncate_after_chunks suppresses terminal &#91;DONE&#93;. |
 
 ### Blocked (48)
 
