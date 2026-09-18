@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1160](tasks/AR-1160.md): Wizard control API | Wizard control API | Implement ASB runtime recording campaign execution, cassette coverage reconciliation, offline-default activation, then add/verify TUI recording actions. | root |
+| P0 | [AR-1160](tasks/AR-1160.md): Wizard control API | Wizard control API | Add a runtime-owned provider capture proxy/adapter seam, persist RecordingCampaign tuple coverage, expose v1.8 execute/progress/cancel/reconcile/offline-default operations, then wire TUI actions. | root |
 | P0 | [AR-1307](tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Await formal run 35342513872 on exact head ab485f767; if terminal green, independently review and complete merge gates, otherwise diagnose its bounded failure before any retry. | codex-ar1307-metadata-repair-20260918 |
 
 ## Open
