@@ -337,6 +337,13 @@ class TlcRunnerTests(unittest.TestCase):
         self.assertIn("TLC_TIMEOUT_SECONDS=7200", full)
         self.assertIn("RuntimeMaxSec=7200", full)
 
+    def test_guest_seed_validates_containment_for_each_profile(self) -> None:
+        portable = GUEST.build_user_data("portable-smoke")
+        required = GUEST.build_user_data("pr-publication")
+        self.assertIn('evidence["containment_mode"] == "portable"', portable)
+        self.assertNotIn('evidence["containment_mode"] == "required"', portable)
+        self.assertIn('evidence["containment_mode"] == "required"', required)
+
     def test_guest_seed_contains_complete_bounded_bootstrap(self) -> None:
         seed = GUEST.build_user_data("full-exhaustive")
         for contract in (
