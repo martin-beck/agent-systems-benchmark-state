@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 707,
+  "task_revision": 708,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T11:33:40+00:00",
+  "updated_at": "2026-09-18T11:54:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1995,3 +1995,6 @@ and protected publication sequence.
   bounded TLC terminal-tail diagnostics; remote remains 590dd6c5d. Governed publication is blocked
   by GitHub HTTPS 403: account email must be verified. State claim/update is local-only until that
   external blocker is cleared; no credential bypass or push retry.
+
+- 2026-09-18T11:54:52+00:00: Recorded command exit 0; command argv SHA-256
+  3aa8227eccc225182e16d94abd6aeaae5b3140cd5c61742d77fa0605350f6ae7.
