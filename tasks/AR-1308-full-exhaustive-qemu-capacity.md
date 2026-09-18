@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 499,
+  "task_revision": 500,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T22:18:14+00:00",
+  "updated_at": "2026-09-18T22:18:28+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1487,3 +1487,6 @@ source code or treating a capacity failure as a model result.
   signed AR-1307 input bundle and all preflight inputs are present.
 
 - 2026-09-18T22:18:14+00:00: Claimed by coordinator-ar1308-runner.
+
+- 2026-09-18T22:18:28+00:00: Recorded command exit 0; command argv SHA-256
+  60721d549a5e0c55db17bf773ce56487f01205fd76e867ca73d0b3080fe3946c.
