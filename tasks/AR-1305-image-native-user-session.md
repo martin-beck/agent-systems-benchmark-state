@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1305-image-native-user-session",
   "checkpoint_commit": "00a47726683609b7fef8ea5738fed5a3692fac29",
-  "claim_expires": "2026-09-18T21:40:38+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1302"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "00a47726683609b7fef8ea5738fed5a3692fac29",
-  "owner": "codex-ar1305-audit-20260918",
+  "owner": "",
   "plan": "../plans/AR-1305.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Qualify image-native D-Bus user-session support for required TLC containment.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Image-native user-session support",
-  "updated_at": "2026-09-18T21:10:54+00:00",
+  "updated_at": "2026-09-18T21:11:02+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1305-image-native-user-session"
 }
 ---
@@ -211,3 +211,10 @@ limits and fail-closed behavior remain unchanged.
   free space remains only about 4.9 GiB, and no safe image-native repair/customization can be
   validated under this capacity/appliance state. No stale image was mutated, no portable fallback
   used, no AR-1304 limit changed, and no qualification attestation exists.
+
+- 2026-09-18T21:11:02+00:00: Released ownerless after bounded image-native audit. Existing fresh
+  image/package evidence remains, but native serial probe still fails Transport endpoint is not
+  connected and read-only guestfish access fails before inspection because supermin exits 1. With
+  only ~4.9 GiB approved-root free, no safe supported image repair or qualification can proceed.
+  Reopen only with a reviewed working image customization/inspection appliance and capacity;
+  preserve AR-1304 resource limits and do not use portable fallback.
