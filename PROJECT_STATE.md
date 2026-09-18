@@ -21,21 +21,21 @@ Generated from local Git and GitHub. Do not edit.
 | #150 | `dependabot/cargo/tempfile-3.27.0@d4eb5ee4a62e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump tempfile from 3.22.0 to 3.27.0 |
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
 | #214 | `feature/ar-1286-supervised-replay-lifecycle@eaf7fcbf42ae` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(replay): integrate runtime-owned supervised replay lifecycle |
-| #229 | `feature/ar-1310-provider-capture-campaign@1625655a0a95` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: qualify runtime provider capture campaigns |
+| #229 | `feature/ar-1310-provider-capture-campaign@9a2f313e8633` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, IN_PROGRESS:, QUEUED:, IN_PROGRESS:, QUEUED:, IN_PROGRESS: | feat: qualify runtime provider capture campaigns |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 35391935125 | `9a2f313e8633` | pull_request | Hosted portability and native qualification | queued:- |
+| 35391935108 | `9a2f313e8633` | pull_request | Repository quality | queued:- |
+| 35391935090 | `9a2f313e8633` | pull_request | Fault assurance | queued:- |
+| 35391935069 | `9a2f313e8633` | pull_request | Emulated aarch64 portability | pending:- |
+| 35391935053 | `9a2f313e8633` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 35391935030 | `9a2f313e8633` | pull_request | Formal assurance | in_progress:- |
+| 35391935027 | `9a2f313e8633` | pull_request | Huawei MIT source headers | in_progress:- |
+| 35391935021 | `9a2f313e8633` | pull_request | Rust verification | in_progress:- |
 | 35391247400 | `1625655a0a95` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 35391247332 | `1625655a0a95` | pull_request | Formal assurance | completed:success |
 | 35391247312 | `1625655a0a95` | pull_request | Huawei MIT source headers | completed:success |
 | 35391247288 | `1625655a0a95` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 35391247255 | `1625655a0a95` | pull_request | Rust verification | completed:success |
-| 35391247253 | `1625655a0a95` | pull_request | Fault assurance | completed:success |
-| 35391247234 | `1625655a0a95` | pull_request | Repository quality | completed:failure |
-| 35391247203 | `1625655a0a95` | pull_request | Hosted portability and native qualification | completed:success |
-| 35390406888 | `a6a3e43cce68` | pull_request | Huawei MIT source headers | completed:success |
-| 35390406870 | `a6a3e43cce68` | pull_request | Fault assurance | completed:success |
-| 35390406740 | `a6a3e43cce68` | pull_request | Formal assurance | completed:success |
-| 35390406607 | `a6a3e43cce68` | pull_request | Agent Workflow Quality shadow | completed:success |
