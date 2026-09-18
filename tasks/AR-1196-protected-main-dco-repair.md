@@ -5,7 +5,7 @@
   "claim_expires": "",
   "depends_on": [],
   "id": "AR-1196",
-  "next_action": "Reconcile PR #170 merge against main; do not merge duplicates until exact remote head and post-merge checks are verified.",
+  "next_action": "Completed: PR #170 merged; stale duplicate PR #171 requires authorized cleanup.",
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-1196.md",
@@ -13,9 +13,9 @@
   "schema_version": 1,
   "status": "done",
   "summary": "Restore a Signed-off-by-bearing protected-main history after the catalog merge.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Protected-main DCO history repair",
-  "updated_at": "2026-09-15T08:27:09+00:00",
+  "updated_at": "2026-09-18T22:58:25+00:00",
   "worktree_key": "agent-systems-benchmark-protected-main-dco-repair"
 }
 ---
@@ -58,3 +58,6 @@ policy checks; never bypass the gate or misclassify the failed post-merge run.
 
 - 2026-09-15T08:27:09+00:00: Completed: repaired ASB main through GitHub Web Flow DCO-bearing merge
   4f855514c5086e1a933ba1e5a4f41db135dbf0a8; exact main post-merge assurance is green.
+
+- 2026-09-18T22:58:25+00:00: Correct stale completion routing after live audit; no product or merge
+  change.
