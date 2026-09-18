@@ -8,7 +8,7 @@
     "AR-0889"
   ],
   "id": "AR-1250",
-  "next_action": "Repair the arm64 oversized-request rejection in the reviewed harness or candidate fixture, then rerun the full arm64 repeat gate with the verified QEMU runner.",
+  "next_action": "Route candidate oversized-request behavior to AR-1249 or a reviewed successor; do not weaken the harness rejection. After candidate repair, rerun arm64 and amd64 repeat qualification with the verified QEMU runner.",
   "observed_branch": "feature/ar-1250-mockagents-harness-extension",
   "observed_dirty": 0,
   "observed_head": "0d42bca02b276342606ae35bfaa30a5b5cd5247a",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Extend the pinned MockAgents executable qualification harness.",
-  "task_revision": 81,
+  "task_revision": 82,
   "title": "Extend MockAgents qualification harness",
-  "updated_at": "2026-09-18T21:35:41+00:00",
+  "updated_at": "2026-09-18T21:35:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1250"
 }
 ---
@@ -244,3 +244,11 @@ privacy, signature, DCO, and exact-tree gates; do not claim support from host in
   089b7e6a1a78634adc3a9bd4ae67cc8f417192897f3a3aff8197bb570ad5e4a8.
 
 - 2026-09-18T21:35:41+00:00: Heartbeat by asb_ar1250_arm64_recheck.
+
+- 2026-09-18T21:35:50+00:00: Architecture comparison complete through handoffctl: both the exact
+  pinned linux-arm64 artifact under reviewed QEMU and the pinned linux-amd64 artifact fail at the
+  same oversized-request assertion because MockAgents returns an accepted response. This is
+  candidate behavior, not an arm64 runner fault. Focused harness tests pass 9/9, but they do not
+  establish executable qualification. No safe AR-1250 harness change can make an accepted oversized
+  request valid; changing the assertion would weaken the fail-closed contract. Route candidate
+  semantics/repair to AR-1249 or a narrowly scoped successor.
