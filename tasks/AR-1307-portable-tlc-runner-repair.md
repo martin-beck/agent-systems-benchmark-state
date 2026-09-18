@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 726,
+  "task_revision": 727,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T13:37:55+00:00",
+  "updated_at": "2026-09-18T13:40:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -2053,3 +2053,6 @@ and protected publication sequence.
   generated and 37.99M distinct states; no invariant error. Existing 3G memory and 3G swap limits
   were not widened. AR-1307 remains in progress and unqualified pending governed capacity
   successor/acceptance decision.
+
+- 2026-09-18T13:40:17+00:00: Recorded command exit 0; command argv SHA-256
+  298c7f934e72d4c00af00f4795e93de1eb7f2d7d7ffd218e818f4bc2311ffb32.
