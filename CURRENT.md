@@ -8,13 +8,13 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1160](tasks/AR-1160.md): Wizard control API | Wizard control API | Post-merge main 278abfd verification is not green: repository-quality run 35373092634 failed coverage at displayed 90.00% (51894 covered / 5191 missed; fail-under-lines 90 exits 1 due exact threshold rounding). Record this as a follow-up ASB repair blocker and add enough portable production-path coverage in a fresh isolated follow-up AR/branch; do not weaken the floor. Continue monitoring remaining post-merge workflows. AR-1160 remains open for provider capture wiring, cassette reconciliation, offline-default activation, and frontend integration. | codex-ar1160-control-20260918 |
+| P0 | [AR-1308](tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Free at least 1 GiB host swap without reducing 16 GiB disk headroom; rerun preflight only after swap is available, then one bounded QEMU attempt using UUID-corrected data fixture. | codex-ar1308-fixture-repair-20260918 |
 
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Blocked on AR-1307 runner merge and handoff. Prior full VM was interrupted without success or attestation; after merge, rebuild exact fa57625d9 image/seed and rerun independently reviewed gates. | - |
-| P0 | [AR-1308](tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Free at least 1 GiB host swap without reducing 16 GiB disk headroom; rerun preflight only after swap is available, then one bounded QEMU attempt using UUID-corrected data fixture. | - |
 
 ## Blocked
 
