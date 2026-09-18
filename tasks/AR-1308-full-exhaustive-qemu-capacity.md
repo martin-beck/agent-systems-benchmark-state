@@ -7,7 +7,7 @@
     "AR-1304"
   ],
   "id": "AR-1308",
-  "next_action": "Launch one bounded QEMU with fresh overlay7 and state/.git provenance seed; inspect TLC result and attestation.",
+  "next_action": "Obtain a separately reviewed capacity contract or model reduction; the bounded QEMU rerun reached liveness checking but Java exhausted memory before attestation, so AR-1307 remains unqualified.",
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 471,
+  "task_revision": 472,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T19:08:55+00:00",
+  "updated_at": "2026-09-18T19:09:46+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1379,3 +1379,9 @@ source code or treating a capacity failure as a model result.
 
 - 2026-09-18T19:08:55+00:00: Recorded command exit 0; command argv SHA-256
   4735a967a0efbd68c5a2b78147594936318ac9bdfa9d3a74e2db9125c4e43804.
+
+- 2026-09-18T19:09:46+00:00: Final bounded networkless QEMU terminated after 4200 seconds. TLC
+  transient admission passed, then liveness checking failed closed with Java out of memory:
+  46,920,678 generated states, 38,735,235 distinct states, and 10,722,623 states left on the queue;
+  exit=1 and no success attestation was emitted. The validator consequently found no attestation
+  file. This is a truthful capacity failure, not a model success; AR-1307 is not qualified.
