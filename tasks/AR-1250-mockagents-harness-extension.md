@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1250-mockagents-harness-extension",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-18T23:32:15+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0888",
     "AR-0889"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1250-mockagents-harness-extension",
   "observed_dirty": 0,
   "observed_head": "0d42bca02b276342606ae35bfaa30a5b5cd5247a",
-  "owner": "asb_ar1250_arm64_recheck",
+  "owner": "",
   "plan": "../plans/AR-1250.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Extend the pinned MockAgents executable qualification harness.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Extend MockAgents qualification harness",
-  "updated_at": "2026-09-18T21:32:41+00:00",
+  "updated_at": "2026-09-18T21:32:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1250"
 }
 ---
@@ -227,3 +227,10 @@ privacy, signature, DCO, and exact-tree gates; do not claim support from host in
   pinned arm64 artifact is present. Qualification through handoffctl with this exact runner failed
   closed because MockAgents accepted the oversized request (QualificationError). No arm64
   qualification evidence or support claim is valid; runner availability is no longer the blocker.
+
+- 2026-09-18T21:32:56+00:00: Released ownerless blocked after re-audit. The exact reviewed QEMU
+  runner is present and verified (qemu-aarch64 8.2.2, SHA-256
+  0338d0ed6013abe5e0f41c5a22976ac6fe2f1b5869edf05d4a9098c121248f02), but the pinned arm64
+  qualification failed closed because the candidate accepted an oversized request. Fix that reviewed
+  harness/candidate behavior and rerun the full arm64 repeat gate; do not claim qualification from
+  this run.
