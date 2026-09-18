@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Await exact-head CI for cd33b1b04; if formal reaches TLC, inspect measured attestation/isolation failures and repair remaining gates before merge.",
+  "next_action": "Record and diagnose formal 35314479090 TLC exit 1/no-attestation, fix Ruff formatting in tests/test_tlc_runner.py, rerun focused/full gates on a fresh signed head; do not qualify or merge.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "969eef05834a4ce5f711bbafaa5798549abd95c8",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 672,
+  "task_revision": 673,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T07:30:28+00:00",
+  "updated_at": "2026-09-18T07:30:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1864,3 +1864,9 @@ and protected publication sequence.
   e675c83ca414267e8a75949663be628075f423f0ea4e210079a9858933632b83.
 
 - 2026-09-18T07:30:28+00:00: Heartbeat by codex-ar1307-metadata-repair-20260918.
+
+- 2026-09-18T07:30:48+00:00: Formal run 35314479090 reached terminal failure at 2026-09-18T07:21:49Z
+  on exact head 9c06f0108. Offline artifact preflight and admission succeeded, but full-exhaustive
+  TLC failed closed with exit 1 and emitted no success attestation. Strict consistency additionally
+  reported Ruff formatting required at tests/test_tlc_runner.py:534. Lease renewed through
+  2026-09-18T09:30:28Z; owner preserved.
