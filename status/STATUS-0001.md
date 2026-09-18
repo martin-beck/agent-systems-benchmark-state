@@ -7,13 +7,13 @@
 
 ## Portfolio overview
 
-**340 ARs tracked** across 6 active status categories.
+**340 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
-| **Blocked** | Cannot proceed until its recorded blocker clears | 49 |
+| **Blocked** | Cannot proceed until its recorded blocker clears | 50 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 220 |
@@ -301,7 +301,7 @@ flowchart LR
         AR_1160["AR-1160 - Blocked"]:::status_blocked
         AR_1170["AR-1170 - Planned"]:::status_planned
         AR_1180["AR-1180 - Planned"]:::status_planned
-        AR_1181["AR-1181 - In progress"]:::status_in_progress
+        AR_1181["AR-1181 - Blocked"]:::status_blocked
         AR_1190["AR-1190 - Done"]:::status_done
         AR_1191["AR-1191 - Done"]:::status_done
         AR_1196["AR-1196 - Done"]:::status_done
@@ -1668,13 +1668,7 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1181](../tasks/AR-1181.md): TLA admission | codex-ar1181-successor-audit-20260918 | Bound ASB TLC memory. | Correct AR-1181 repository/worktree metadata to a state-repository branch/worktree, then implement missing tools/tlc_runner.py with bounded admission; current declared path is an ASB product checkout and must not be mutated. |
-
-### Blocked (49)
+### Blocked (50)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1683,6 +1677,7 @@ flowchart LR
 | P0 | [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md): Implement &#96;asb tui&#96; lifecycle routing | Unclaimed | Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend. | After AR-1010, AR-1037 and AR-1060 are done, rebase c545c33 onto protected ASB main and implement only the ASB provisioning half before regenerated evidence and trusted asb-tui pinning. |
 | P0 | [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md): Build the standalone asb-tui application | Unclaimed | Deliver the actual standalone interactive asb-tui application without an ASB workspace dependency. | Blocked: implementation belongs to asb-tui, but current scope forbids touching that repository; AR-1010/AR-1060 also retain unresolved publication blockers. Obtain explicit scope/dependency repair before re-opening. |
 | P0 | [AR-1160](../tasks/AR-1160.md): Wizard control API | Unclaimed | Wizard control API | Keep AR-1160 blocked. Create a fresh scoped AR for runtime-owned authenticated provider capture, per-tuple cassette reconciliation, and verified offline activation; preserve fail-closed gates and do not change this AR&#x27;s historical evidence. |
+| P0 | [AR-1181](../tasks/AR-1181.md): TLA admission | Unclaimed | Bound ASB TLC memory. | No independent work remains: AR-1293 owns the state-scoped runner and AR-1307/AR-1308 own qualification/capacity; preserve their blocked evidence and do not duplicate runner work. |
 | P0 | [AR-1210](../tasks/AR-1210-tutorial-contract-validator.md): Tutorial contract and syntax validator | Unclaimed | Define offline tutorial steps and validate them against the ASB CLI grammar. | Do not release AR-1210 yet: post-merge Repository quality run 35054743606 failed because protected merge commit 4d4a0c4 lacks Signed-off-by. Coordinate merge-integrity/DCO repair and rerun exact-main assurance; preserve merged main and all evidence. |
 | P0 | [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md): Bounded strict-replay CLI consumer contract | Unclaimed | Define the strict-replay CLI consumer contract. | Await runtime-owned launch authority, then wire replay through supervised context and add lifecycle/no-fallback tests. |
 | P0 | [AR-1260](../tasks/AR-1260-runtime-owned-strict-replay-integration.md): Runtime-owned strict-replay integration | Unclaimed | Integrate strict replay with runtime-owned attestation and supervised sandbox execution. | Blocked pending runtime-owned launch context injection: CLI dispatch has no safe source for SidecarHandoff, SandboxBackend, ResourceLease, or pinned supervisor/sidecar commands. Runtime API presence alone does not authorize CLI fabrication; create a narrow runtime-to-CLI entrypoint or successor AR. |
