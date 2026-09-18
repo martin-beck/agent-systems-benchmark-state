@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Rerun fresh exact-head formal and coordination checks at beafa965e61b0f09d9ed5f10ffcd621b0cf3e5b2 after runner runtime ownership and bus/cgroup repair; after all required hosted checks are green, rebuild the pristine QEMU fixture and run full-exhaustive attestation.",
+  "next_action": "Monitor formal run 35304602667 at exact head c75e1f391360ad9cc9c7df9ba3257c45202c8b3c to terminal; repair the canonical lock ownership through the governed AR-1294 boundary, then make coordination and formal checks green before pristine full-exhaustive attestation.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 509,
+  "task_revision": 510,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T03:49:37+00:00",
+  "updated_at": "2026-09-18T03:50:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1374,3 +1374,9 @@ and protected publication sequence.
   4ad2a0043330ee14b807dc825bdbbb56042256a1fe3f8b1c4bd605b8df60099e.
 
 - 2026-09-18T03:49:37+00:00: Heartbeat by codex-ar1307-runner-repair2-20260918.
+
+- 2026-09-18T03:50:22+00:00: Fresh formal run 35304602667 is active after bus/cgroup and
+  runtime-root repairs. Prior formal failures were immediate admission-lock permission errors. The
+  canonical /tmp lock resides in the sticky directory; group access alone cannot open a file owned
+  by another account. The runner-owned inode now admits gha-asb-state; coordinator-user
+  compatibility remains an external AR-1294 lock-boundary issue and must not be hidden or bypassed.

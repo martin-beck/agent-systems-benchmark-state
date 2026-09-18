@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1307](tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Rerun fresh exact-head formal and coordination checks at beafa965e61b0f09d9ed5f10ffcd621b0cf3e5b2 after runner runtime ownership and bus/cgroup repair; after all required hosted checks are green, rebuild the pristine QEMU fixture and run full-exhaustive attestation. | codex-ar1307-runner-repair2-20260918 |
+| P0 | [AR-1307](tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Monitor formal run 35304602667 at exact head c75e1f391360ad9cc9c7df9ba3257c45202c8b3c to terminal; repair the canonical lock ownership through the governed AR-1294 boundary, then make coordination and formal checks green before pristine full-exhaustive attestation. | codex-ar1307-runner-repair2-20260918 |
 
 ## Open
 
