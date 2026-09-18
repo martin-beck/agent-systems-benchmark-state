@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Runtime-owned provider capture and recording campaign qualification.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Runtime-owned provider capture and recording campaign qualification",
-  "updated_at": "2026-09-18T20:00:07+00:00",
+  "updated_at": "2026-09-18T20:00:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1310-provider-capture-campaign"
 }
 ---
@@ -133,3 +133,6 @@ independently so its promotion is not falsely implied by AR-1160 completion.
   compile errors (coverage previous Option type and moved campaign_id closure captures); focused
   lifecycle test now passes. Earlier exit-101 was compile failure, not silent retry; next run
   validates positive callback test and full gates.
+
+- 2026-09-18T20:00:23+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
