@@ -2,22 +2,22 @@
 {
   "branch": "repair/ar-1295-vendor-fixtures",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-18T20:17:41+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1295",
   "next_action": "Repair current generated-state blockers (AR-1160, AR-1258, AR-1303, malformed AR-1309), then re-audit exact-head publication.",
   "observed_branch": "repair/ar-1295-vendor-fixtures",
   "observed_dirty": 0,
   "observed_head": "c8c5a25e0ba31862c83465ea02963c5e4adb5d22",
-  "owner": "asb-ar1295-vendor-reaudit-20260918",
+  "owner": "",
   "plan": "../plans/AR-1295.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Align stale coordinator vendor tests with the verified immutable v0.3.7 pin.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Coordinator vendor v0.3.7 fixture alignment",
-  "updated_at": "2026-09-18T19:47:55+00:00",
+  "updated_at": "2026-09-18T19:48:03+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1295-vendor-fixtures"
 }
 ---
@@ -172,3 +172,10 @@ handoffctl, formal runner behavior, ASB product, or asb-tui.
   fixture worktree is clean, and no competing owner/lease is present. The immutable v0.3.7 fixture
   repair is already signed+DCO on main at 53fd66118559b2e99ebf5c4d50416b004156049d. No
   handoffctl/vendor policy changes are authorized.
+
+- 2026-09-18T19:48:03+00:00: Released blocked after live re-audit. Schema validation still fails on
+  AR-1160, AR-1258, and AR-1303 next_action length bounds, plus AR-1309 empty checkpoint_commit.
+  render-status passes. AR-1295 has no PR or remaining source diff: immutable v0.3.7 fixture repair
+  is signed+DCO on main at 53fd66118559b2e99ebf5c4d50416b004156049d, and prior focused/full vendor
+  evidence remains valid. Reopen only after generated-state blockers are repaired and a genuine
+  exact-head publication transition remains.

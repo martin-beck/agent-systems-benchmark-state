@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1295](tasks/AR-1295-vendor-fixture-v037.md): Coordinator vendor v0.3.7 fixture alignment | Align stale coordinator vendor tests with the verified immutable v0.3.7 pin. | Repair current generated-state blockers (AR-1160, AR-1258, AR-1303, malformed AR-1309), then re-audit exact-head publication. | asb-ar1295-vendor-reaudit-20260918 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -49,6 +43,7 @@ Never edit this file directly.
 | P0 | [AR-1283](tasks/AR-1283-formal-lockfile.md): Formal lockfile CI drift repair | Repair formal workspace lockfile drift that fails the locked CI gate. | Promote after dependency verification; regenerate and verify formal/Cargo.lock so hosted --locked formal tests do not attempt updates. | - |
 | P0 | [AR-1284](tasks/AR-1284-runtime-strict-replay-lifecycle.md): Runtime-owned strict-replay lifecycle execution | Connect authenticated replay transport to the runtime-owned primary strict-replay lifecycle. | Split a runtime-owned launch-factory/CLI entrypoint successor: current protected main has only caller-constructible ReplayTransportIssuer and SandboxBackend APIs, so AR-1284 cannot safely wire primary replay without fabricating authority. | - |
 | P0 | [AR-1292](tasks/AR-1292-tla-provenance-repair.md): Pinned TLA+ artifact provenance repair | Repair or formally retain the pinned TLA+ artifact provenance mismatch blocking formal assurance. | Await independently verifiable TLA+ provenance: a signed/attested immutable v1.8.0 asset bound to its source revision, or a deterministic source-build qualification for the current 142d0ba release. Do not update only hash/size or rerun PR #119 until that evidence exists. | - |
+| P0 | [AR-1295](tasks/AR-1295-vendor-fixture-v037.md): Coordinator vendor v0.3.7 fixture alignment | Align stale coordinator vendor tests with the verified immutable v0.3.7 pin. | Repair current generated-state blockers (AR-1160, AR-1258, AR-1303, malformed AR-1309), then re-audit exact-head publication. | - |
 | P0 | [AR-1305](tasks/AR-1305-image-native-user-session.md): Image-native user-session support | Qualify image-native D-Bus user-session support for required TLC containment. | Promote after review; qualify dbus-user-session and systemd user-manager support in a fresh offline guest image, then hand the immutable image to AR-1304. | - |
 | P0 | [AR-1307](tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | AR-1308 is planned for disposable x86_64 QEMU capacity. Keep AR-1307 unqualified; after AR-1308 capacity evidence, rerun exact full-exhaustive without changing the 3G/3G contract. | - |
 | P0 | [AR-1308](tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Obtain a separately reviewed capacity contract or model reduction; the bounded QEMU rerun reached liveness checking but Java exhausted memory before attestation, so AR-1307 remains unqualified. | - |
