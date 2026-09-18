@@ -301,7 +301,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-audit-sPabk3` | `DETACHED` | `83c3c2022712` | 0 | behind 42, ahead 0 |
 | `asb-policy-repair` | `chore/protected-main-sync-repair` | `2acc009c5b6c` | 0 | behind 28, ahead 0 |
 | `asb-pr173-audit.1BnB0T` | `DETACHED` | `39f90b316faf` | 0 | behind 391, ahead 3 |
-| `agent-systems-benchmark-state` | `main` | `1771b7592380` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-state` | `main` | `96314bc9d68e` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity` | `feature/ar-1308-full-exhaustive-qemu-capacity` | `659030fffd7e` | 0 | behind 131, ahead 0 |
 | `agent-systems-benchmark-coordination-assurance` | `feature/coordination-assurance` | `adfde31ad408` | 0 | behind 28011, ahead 0 |
 | `agent-systems-benchmark-coordination-lint-regression` | `fix/handoffctl-apply-resume-lint` | `746042a0e55e` | 0 | behind 22754, ahead 0 |
