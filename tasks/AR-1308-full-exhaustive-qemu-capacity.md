@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 64,
+  "task_revision": 65,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T14:27:03+00:00",
+  "updated_at": "2026-09-18T14:27:10+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -226,3 +226,6 @@ source code or treating a capacity failure as a model result.
 - 2026-09-18T14:27:03+00:00: Recorded independent-review blockers before further PR work. No
   full-exhaustive QEMU run is authorized until the exact signed AR-1307 head, bounded
   preflight/cleanup, exact-head review, and green required checks are satisfied.
+
+- 2026-09-18T14:27:10+00:00: Recorded command exit 0; command argv SHA-256
+  99beec250f1c9b45024601b855699804266fead0951f1d71e4fd7cca246e55fe.
