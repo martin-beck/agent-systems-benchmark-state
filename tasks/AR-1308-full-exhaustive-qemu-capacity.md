@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 251,
+  "task_revision": 252,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T16:19:52+00:00",
+  "updated_at": "2026-09-18T16:20:16+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -695,3 +695,6 @@ source code or treating a capacity failure as a model result.
   private fixed JDK and remove dangling links), but is not part of merged AR-1308. Rebuild or
   provision the exact reviewed fixture contract, preserve pinned digests, and rerun fail-closed
   checks.
+
+- 2026-09-18T16:20:16+00:00: Resuming only to correct the durable next action after the newly
+  diagnosed bootstrap fixture mismatch; no qualification run authorized.
