@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Portable-smoke exact-head stage12 passed once with validated attestation; run an independent fresh exact-head portable-smoke repeat, then run pr-publication and full-exhaustive tiers only after repeated portable evidence, preserving all receipts and exact-head checks.",
+  "next_action": "Full-exhaustive launch reached transient RC 0 but was interrupted by the external 180-second QEMU bound with no attestation. Rebuild a fresh full-tier overlay/seed and rerun with an explicit bounded window compatible with the 7200-second tier contract; require terminal FULL_EXHAUSTIVE_RC=0, evidence validation, exact commit, and clean poweroff before merge.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 421,
+  "task_revision": 422,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T01:16:53+00:00",
+  "updated_at": "2026-09-18T01:17:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1351,3 +1351,9 @@ and protected publication sequence.
 
 - 2026-09-18T01:16:53+00:00: Recorded command exit 0; command argv SHA-256
   2eea047963f48c65266b2fc00f41b60604b70af7f132460f896feb9981c1c8c5.
+
+- 2026-09-18T01:17:16+00:00: Portable-smoke repeated successfully (two fresh seeds/overlays) and
+  pr-publication passed with required containment. Full-exhaustive stage15 only reached
+  FULL_EXHAUSTIVE_TRANSIENT_RC=0; external timeout 180s exceeded while TLC remained active, so
+  AR-1307 full tier is failed/interrupted, no attestation accepted. AR-1307-specific QEMU/timeout
+  processes were terminated and reaped; no merge/completion claim.
