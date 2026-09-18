@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 219,
+  "task_revision": 220,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-18T22:24:20+00:00",
+  "updated_at": "2026-09-18T22:24:52+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -739,3 +739,6 @@ must not block this AR or its dependents.
   residue; exact generated files removed and rerun passed. One baseline-ref symbolic error and one
   expected invalid-command exit 2 recorded; no product failures. Remaining gate: exact-head
   CI/publication.
+
+- 2026-09-18T22:24:52+00:00: Recorded command exit 0; command argv SHA-256
+  e18eaecd6c2cfdb2651dced7ea6a288a14b70557a06574d593b944f2119e95bc.
