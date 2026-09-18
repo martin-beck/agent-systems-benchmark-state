@@ -2,22 +2,22 @@
 {
   "branch": "repair/ar-1294-state-gate-baseline",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-18T19:38:40+00:00",
   "depends_on": [],
   "id": "AR-1294",
   "next_action": "Audit the vendor lock/digest mismatch and root-owned TLC admission lock; repair only through immutable provenance and owner-safe lock handling, then rerun full state/formal gates.",
   "observed_branch": "repair/ar-1294-state-gate-baseline",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "",
+  "owner": "codex-ar1294-baseline-review-20260918",
   "plan": "../plans/AR-1294.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Restore vendor and formal admission baseline integrity needed to qualify AR-1293.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "State formal-gate baseline integrity",
-  "updated_at": "2026-09-18T19:08:38+00:00",
+  "updated_at": "2026-09-18T19:08:40+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1294-gate-baseline"
 }
 ---
@@ -83,3 +83,5 @@ formal checks, or manipulate another service's lock.
 - 2026-09-18T19:08:38+00:00: Coordinator audit found AR-1294's vendor baseline repair already
   durably verified; reopen briefly only to record successor handoff and supersede this stale blocked
   task without overlapping AR-1295 or AR-1308.
+
+- 2026-09-18T19:08:40+00:00: Claimed by codex-ar1294-baseline-review-20260918.
