@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1258.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provision and verify Docker binfmt/QEMU for multiarch qualification.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Provision Docker binfmt/QEMU capability",
-  "updated_at": "2026-09-16T14:17:41+00:00",
+  "updated_at": "2026-09-18T19:05:28+00:00",
   "worktree_key": "agent-systems-benchmark-docker-binfmt-qemu"
 }
 ---
@@ -168,3 +168,7 @@ Provide the independent Docker binfmt/QEMU capability required by multiarch qual
   current handler state, apply F registration, validate pinned arm64 /bin/true, and rollback by
   restoring exact config plus controlled unregister/re-register if validation fails. No host
   mutation performed.
+
+- 2026-09-18T19:05:28+00:00: Ownerless blocked task is being re-audited against current
+  Docker/binfmt state. Keep gate fail-closed; active public Docker workload prevents host-wide
+  handler restart, so only read-only capability checks are authorized until maintenance approval.
