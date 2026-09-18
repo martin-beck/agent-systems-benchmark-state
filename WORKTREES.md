@@ -31,8 +31,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1151-followup` | `feature/ar-1160-runtime` | `13f589ca387e` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-ar-1151-integrated` | `feature/ar-1151-integrated` | `b9cfa2ccb96d` | 0 | behind 19, ahead 0 |
 | `agent-systems-benchmark-ar-1160-control` | `feature/ar-1160-control-lifecycle` | `076491b06511` | 0 | behind 0, ahead 1 |
-| `agent-systems-benchmark-ar-1160-coverage-repair` | `fix/ar-1160-coverage-repair` | `076491b06511` | 1 | behind 0, ahead 1 |
-| changed files | - | - | - | `crates/asb-cli/src/control.rs` |
+| `agent-systems-benchmark-ar-1160-coverage-repair` | `fix/ar-1160-coverage-repair` | `3efbacb6739c` | 0 | behind 0, ahead 2 |
 | `agent-systems-benchmark-ar-1210` | `docs/ar-1210-tutorial-contract` | `3e475bda8f44` | 0 | behind 277, ahead 0 |
 | `agent-systems-benchmark-ar-1228-auth-backends-probes` | `feature/ar-1228-auth-backends-probes` | `2d716c8cac94` | 0 | behind 344, ahead 0 |
 | `agent-systems-benchmark-ar-1229-auth-application-integration` | `feature/ar-1229-auth-application-integration` | `b33d6da59ba9` | 0 | behind 324, ahead 0 |

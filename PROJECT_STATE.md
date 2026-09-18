@@ -22,21 +22,21 @@ Generated from local Git and GitHub. Do not edit.
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
 | #214 | `feature/ar-1286-supervised-replay-lifecycle@eaf7fcbf42ae` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(replay): integrate runtime-owned supervised replay lifecycle |
 | #220 | `feature/ar-1303-hosted-platform-diagnostics@d85889d5066c` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | ci(platforms): add privacy-safe hosted failure diagnostics |
-| #227 | `feature/ar-1160-control-lifecycle@076491b06511` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(control): add recording campaign lifecycle operations |
+| #227 | `feature/ar-1160-control-lifecycle@3efbacb6739c` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, QUEUED:, QUEUED:, QUEUED:, QUEUED: | feat(control): add recording campaign lifecycle operations |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35351048520 | `076491b06511` | pull_request | Hosted portability and native qualification | completed:success |
-| 35351048512 | `076491b06511` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 35351048482 | `076491b06511` | pull_request | Formal assurance | completed:success |
-| 35351048469 | `076491b06511` | pull_request | Emulated aarch64 portability | completed:success |
-| 35351048434 | `076491b06511` | pull_request | Fault assurance | completed:success |
-| 35351048388 | `076491b06511` | pull_request | Rust verification | completed:success |
-| 35351048378 | `076491b06511` | pull_request | Huawei MIT source headers | completed:success |
-| 35351048376 | `076491b06511` | pull_request | Repository quality | completed:failure |
-| 35350931074 | `069e66723617` | pull_request | Huawei MIT source headers | completed:success |
-| 35350931064 | `069e66723617` | pull_request | Emulated aarch64 portability | completed:cancelled |
-| 35350931058 | `069e66723617` | pull_request | Hosted portability and native qualification | completed:failure |
-| 35350931038 | `069e66723617` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 35352715223 | `3efbacb6739c` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 35352715190 | `3efbacb6739c` | pull_request | Fault assurance | queued:- |
+| 35352715090 | `3efbacb6739c` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 35352715052 | `3efbacb6739c` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 35352714992 | `3efbacb6739c` | pull_request | Rust verification | in_progress:- |
+| 35352714980 | `3efbacb6739c` | pull_request | Repository quality | queued:- |
+| 35352714958 | `3efbacb6739c` | pull_request | Formal assurance | queued:- |
+| 35352714942 | `3efbacb6739c` | pull_request | Huawei MIT source headers | completed:success |
+| 35352647646 | `9fec73e62529` | pull_request | Huawei MIT source headers | completed:success |
+| 35352647608 | `9fec73e62529` | pull_request | Emulated aarch64 portability | completed:cancelled |
+| 35352647439 | `9fec73e62529` | pull_request | Rust verification | completed:failure |
+| 35352647354 | `9fec73e62529` | pull_request | Repository quality | completed:cancelled |
