@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Runtime-owned provider capture and recording campaign qualification.",
-  "task_revision": 85,
+  "task_revision": 86,
   "title": "Runtime-owned provider capture and recording campaign qualification",
-  "updated_at": "2026-09-18T20:49:30+00:00",
+  "updated_at": "2026-09-18T20:51:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1310-provider-capture-campaign"
 }
 ---
@@ -326,3 +326,6 @@ independently so its promotion is not falsely implied by AR-1160 completion.
   post-merge Rust and emulated-aarch64 runs were still in progress at inspection; other completed
   post-merge workflows were green. Do not mark done or release until a follow-up coverage correction
   is merged and all exact-main required checks pass.
+
+- 2026-09-18T20:51:27+00:00: Recorded command exit 0; command argv SHA-256
+  d83d8458a410708d54dfb3a77946f2af231374c1ef035e70d60f21c1e02b7438.
