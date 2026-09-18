@@ -14,6 +14,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Blocked on AR-1307 runner merge and handoff. Prior full VM was interrupted without success or attestation; after merge, rebuild exact fa57625d9 image/seed and rerun independently reviewed gates. | - |
+| P1 | [AR-1303](tasks/AR-1303-hosted-platform-diagnostics.md): Privacy-safe hosted platform failure diagnostics | Add privacy-safe fixed diagnostics for hosted platform evidence failures. | PR #220 exact head d85889d is blocked only by unrelated hosted formal-runner ETXTBSY failures. Repair/retry CI infrastructure; then require fresh all-green exact-head CI before merge. Do not alter AR-1303 gates or product behavior. | - |
 
 ## Blocked
 
@@ -66,7 +67,6 @@ Never edit this file directly.
 | P1 | [AR-1254](tasks/AR-1254-mockagents-pinned-python-transport.md): Qualify MockAgents through pinned Python transport | Qualify MockAgents through the pinned Python sandbox. | Await AR-1258 pinned arm64 runner and AR-1255 transport evidence; then qualify protocol, cancellation, egress and restart. | - |
 | P1 | [AR-1256](tasks/AR-1256-bundled-mockagents-isolation.md): Execute bundled MockAgents transport in isolation | Execute bundled MockAgents transport in isolation. | Implement bundled in-container MockAgents transport and digest-pinned arm64 QEMU evidence. | - |
 | P1 | [AR-1258](tasks/AR-1258-docker-binfmt-qemu.md): Provision Docker binfmt/QEMU capability | Provision and verify Docker binfmt/QEMU for multiarch qualification. | Obtain an approved maintenance window with zero active Docker workloads; snapshot /usr/lib/binfmt.d/qemu-aarch64.conf and current handler state, apply rollback-safe F-capable qemu-aarch64 registration without weakening gates, then rerun the pinned arm64 alpine /bin/true smoke test with network disabled and record interpreter, digest, license, provenance, timeout, and rollback evidence. Do not restart systemd-binfmt or unregister handlers while public-ci-62f0b126a9ad8b70 is running. | - |
-| P1 | [AR-1303](tasks/AR-1303-hosted-platform-diagnostics.md): Privacy-safe hosted platform failure diagnostics | Add privacy-safe fixed diagnostics for hosted platform evidence failures. | PR #220 exact head d85889d is blocked only by unrelated hosted formal-runner ETXTBSY failures. Repair/retry CI infrastructure; then require fresh all-green exact-head CI before merge. Do not alter AR-1303 gates or product behavior. | - |
 
 ## Planned
 

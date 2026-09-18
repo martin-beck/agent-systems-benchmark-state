@@ -12,8 +12,8 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 1 |
-| **Blocked** | Cannot proceed until its recorded blocker clears | 48 |
+| **Open** | Dependency-ready and available to claim | 2 |
+| **Blocked** | Cannot proceed until its recorded blocker clears | 47 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 217 |
@@ -399,7 +399,7 @@ flowchart LR
         AR_1300["AR-1300 - Done"]:::status_done
         AR_1301["AR-1301 - Superseded"]:::status_superseded
         AR_1302["AR-1302 - Done"]:::status_done
-        AR_1303["AR-1303 - Blocked"]:::status_blocked
+        AR_1303["AR-1303 - Open"]:::status_open
         AR_1304["AR-1304 - Done"]:::status_done
         AR_1305["AR-1305 - Blocked"]:::status_blocked
         AR_1306["AR-1306 - Done"]:::status_done
@@ -1665,13 +1665,14 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1160](../tasks/AR-1160.md): Wizard control API | codex-ar1160-control-20260918 | Wizard control API | Post-merge exact-main verification for f7602a73e4fc7a5d9af4f675b8772680d2612066 is terminal green across all seven workflows: Repository quality 35374843154, Rust 35374843254, fault 35374843244, formal 35374843115, aarch64 35374843171, hosted portability 35374843061, headers 35374843105. Follow-up coverage repair is complete. Prepare the next fresh scoped ASB implementation AR/branch for provider-bound capture wiring, durable cassette reconciliation, and offline-default activation; keep AR-1160 open until remaining scope is complete. |
 
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Unclaimed | Repair the state-repository TLA admission runner and truthful worktree metadata. | Blocked on AR-1307 runner merge and handoff. Prior full VM was interrupted without success or attestation; after merge, rebuild exact fa57625d9 image/seed and rerun independently reviewed gates. |
+| P1 | [AR-1303](../tasks/AR-1303-hosted-platform-diagnostics.md): Privacy-safe hosted platform failure diagnostics | Unclaimed | Add privacy-safe fixed diagnostics for hosted platform evidence failures. | PR #220 exact head d85889d is blocked only by unrelated hosted formal-runner ETXTBSY failures. Repair/retry CI infrastructure; then require fresh all-green exact-head CI before merge. Do not alter AR-1303 gates or product behavior. |
 
-### Blocked (48)
+### Blocked (47)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1722,7 +1723,6 @@ flowchart LR
 | P1 | [AR-1254](../tasks/AR-1254-mockagents-pinned-python-transport.md): Qualify MockAgents through pinned Python transport | Unclaimed | Qualify MockAgents through the pinned Python sandbox. | Await AR-1258 pinned arm64 runner and AR-1255 transport evidence; then qualify protocol, cancellation, egress and restart. |
 | P1 | [AR-1256](../tasks/AR-1256-bundled-mockagents-isolation.md): Execute bundled MockAgents transport in isolation | Unclaimed | Execute bundled MockAgents transport in isolation. | Implement bundled in-container MockAgents transport and digest-pinned arm64 QEMU evidence. |
 | P1 | [AR-1258](../tasks/AR-1258-docker-binfmt-qemu.md): Provision Docker binfmt/QEMU capability | Unclaimed | Provision and verify Docker binfmt/QEMU for multiarch qualification. | Obtain an approved maintenance window with zero active Docker workloads; snapshot /usr/lib/binfmt.d/qemu-aarch64.conf and current handler state, apply rollback-safe F-capable qemu-aarch64 registration without weakening gates, then rerun the pinned arm64 alpine /bin/true smoke test with network disabled and record interpreter, digest, license, provenance, timeout, and rollback evidence. Do not restart systemd-binfmt or unregister handlers while public-ci-62f0b126a9ad8b70 is running. |
-| P1 | [AR-1303](../tasks/AR-1303-hosted-platform-diagnostics.md): Privacy-safe hosted platform failure diagnostics | Unclaimed | Add privacy-safe fixed diagnostics for hosted platform evidence failures. | PR #220 exact head d85889d is blocked only by unrelated hosted formal-runner ETXTBSY failures. Repair/retry CI infrastructure; then require fresh all-green exact-head CI before merge. Do not alter AR-1303 gates or product behavior. |
 
 ### Planned (58)
 

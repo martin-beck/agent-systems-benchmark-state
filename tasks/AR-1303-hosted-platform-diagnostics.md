@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1303.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Add privacy-safe fixed diagnostics for hosted platform evidence failures.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Privacy-safe hosted platform failure diagnostics",
-  "updated_at": "2026-09-17T12:49:13+00:00",
+  "updated_at": "2026-09-18T19:22:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1303-hosted-platform-diagnostics"
 }
 ---
@@ -225,3 +225,6 @@ native qualification route. This AR must not modify runtime behavior or asb-tui.
   is external CI/runner isolation or deterministic per-test executable/temp lifecycle diagnostics;
   no blind retries, automatic pass, gate weakening, or product edits. PR #220 remains unmergeable
   pending fresh exact-head all-green formal CI.
+
+- 2026-09-18T19:22:41+00:00: Infrastructure-only follow-up is actionable: reconcile PR #220 conflict
+  and inspect current hosted formal ETXTBSY evidence before any retry; no product or gate changes.
