@@ -26,6 +26,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 35396621049 | `17a1530e6206` | workflow_dispatch | Repository quality | in_progress:- |
 | 35393146266 | `17a1530e6206` | push | Formal assurance | completed:success |
 | 35393146249 | `17a1530e6206` | push | Hosted portability and native qualification | completed:success |
 | 35393146226 | `17a1530e6206` | push | Fault assurance | completed:success |
@@ -37,4 +38,3 @@ Generated from local Git and GitHub. Do not edit.
 | 35391935108 | `9a2f313e8633` | pull_request | Repository quality | completed:success |
 | 35391935090 | `9a2f313e8633` | pull_request | Fault assurance | completed:success |
 | 35391935069 | `9a2f313e8633` | pull_request | Emulated aarch64 portability | completed:success |
-| 35391935053 | `9a2f313e8633` | pull_request | Agent Workflow Quality shadow | completed:success |
