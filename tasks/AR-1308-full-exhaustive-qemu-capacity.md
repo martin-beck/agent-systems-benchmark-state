@@ -8,18 +8,18 @@
   ],
   "id": "AR-1308",
   "next_action": "Obtain fresh independent review of exact head; merge only after review. Keep QEMU full run paused.",
-  "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
-  "observed_dirty": 0,
-  "observed_head": "a30b2de72e94977b9c75e7b63d801dcf8cf4690d",
+  "observed_branch": "DETACHED",
+  "observed_dirty": 2,
+  "observed_head": "fa8c5e5ec3ab2ea2a883369fdf9a6cc161cabfe7",
   "owner": "codex-ar1308-qemu-capacity-20260918",
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 183,
+  "task_revision": 184,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T15:50:14+00:00",
+  "updated_at": "2026-09-18T15:50:22+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
