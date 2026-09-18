@@ -28,12 +28,12 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 35328715582 | `2066e3233487` | push | Hosted portability and native qualification | completed:success |
-| 35328715552 | `2066e3233487` | push | Emulated aarch64 portability | in_progress:- |
-| 35328715514 | `2066e3233487` | push | Rust verification | in_progress:- |
-| 35328715512 | `2066e3233487` | push | Formal assurance | in_progress:- |
-| 35328715487 | `2066e3233487` | push | Fault assurance | in_progress:- |
+| 35328715552 | `2066e3233487` | push | Emulated aarch64 portability | completed:success |
+| 35328715514 | `2066e3233487` | push | Rust verification | completed:success |
+| 35328715512 | `2066e3233487` | push | Formal assurance | completed:success |
+| 35328715487 | `2066e3233487` | push | Fault assurance | completed:success |
 | 35328715477 | `2066e3233487` | push | Huawei MIT source headers | completed:success |
-| 35328715474 | `2066e3233487` | push | Repository quality | in_progress:- |
+| 35328715474 | `2066e3233487` | push | Repository quality | completed:success |
 | 35328047919 | `2acc009c5b6c` | pull_request | Hosted portability and native qualification | completed:success |
 | 35328047846 | `2acc009c5b6c` | pull_request | Formal assurance | completed:success |
 | 35328047836 | `2acc009c5b6c` | pull_request | Rust verification | completed:success |
