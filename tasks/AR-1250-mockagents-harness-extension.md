@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1250-mockagents-harness-extension",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-18T23:35:41+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0888",
     "AR-0889"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1250-mockagents-harness-extension",
   "observed_dirty": 0,
   "observed_head": "0d42bca02b276342606ae35bfaa30a5b5cd5247a",
-  "owner": "asb_ar1250_arm64_recheck",
+  "owner": "",
   "plan": "../plans/AR-1250.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Extend the pinned MockAgents executable qualification harness.",
-  "task_revision": 82,
+  "task_revision": 83,
   "title": "Extend MockAgents qualification harness",
-  "updated_at": "2026-09-18T21:35:50+00:00",
+  "updated_at": "2026-09-18T21:35:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1250"
 }
 ---
@@ -252,3 +252,10 @@ privacy, signature, DCO, and exact-tree gates; do not claim support from host in
   establish executable qualification. No safe AR-1250 harness change can make an accepted oversized
   request valid; changing the assertion would weaken the fail-closed contract. Route candidate
   semantics/repair to AR-1249 or a narrowly scoped successor.
+
+- 2026-09-18T21:35:59+00:00: Released ownerless blocked after architecture comparison. Reviewed QEMU
+  runner is valid and exact; both arm64-under-QEMU and amd64 qualification fail identically because
+  pinned MockAgents accepts the oversized request. Focused harness tests pass 9/9, but executable
+  qualification is not valid. This is outside AR-1250 harness scope: route candidate behavior to
+  AR-1249 or a reviewed successor, preserve the rejection, then rerun both repeat gates. No product
+  change and no support claim.
