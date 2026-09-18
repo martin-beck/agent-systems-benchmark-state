@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**335 ARs tracked** across 7 active status categories.
+**335 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
+| **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 50 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
@@ -403,7 +403,7 @@ flowchart LR
         AR_1304["AR-1304 - Done"]:::status_done
         AR_1305["AR-1305 - Blocked"]:::status_blocked
         AR_1306["AR-1306 - Done"]:::status_done
-        AR_1307["AR-1307 - In progress"]:::status_in_progress
+        AR_1307["AR-1307 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1652,17 +1652,12 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | codex-ar1307-signed-history-20260918 | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Repair canonical metadata, rebase PR #25 onto reviewed main, then run one fresh formal qualification at exact head 969eef058-derived tree. |
-
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Unclaimed | Repair the state-repository TLA admission runner and truthful worktree metadata. | AR-1293 remains blocked on AR-1307 PR #24 (eb0da360b6091d5a5f74decfff4da39202226eec) merge and fresh runner handoff. Old ada383cea full VM terminated with serial ending during liveness progress at 47,029,477 generated / 38,798,900 distinct states, with no FULL_EXHAUSTIVE_RC, success marker, attestation, or receipt; classify as interrupted/incomplete, not a model result. After AR-1307 is merged and handed off, rebuild fresh exact fa57625d9 image/seed and rerun required then independently reviewed full gates. |
+| P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Unclaimed | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Repair canonical metadata, rebase PR #25 onto reviewed main, then run one fresh formal qualification at exact head 969eef058-derived tree. |
 
 ### Blocked (50)
 
@@ -1740,3 +1735,4 @@ flowchart LR
 | P0 | [AR-1160](../tasks/AR-1160.md): Wizard control API | Unclaimed | Expose wizard operations. | Read the plan. |
 | P0 | [AR-1170](../tasks/AR-1170.md): Standalone TUI wizard | Unclaimed | Guide TUI setup through analysis. | Read the plan. |
 | P0 | [AR-1180](../tasks/AR-1180.md): Cross-project wizard qualification | Unclaimed | Qualify the complete wizard. | Read the plan. |
+| P0 | [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md): Authenticated TUI install router | Unclaimed | Expose an authenticated renderer-neutral ASB router for asb tui install and lifecycle operations. | Promote only after dependencies are independently complete; implement the renderer-neutral authenticated CLI/control route and full integration tests. |

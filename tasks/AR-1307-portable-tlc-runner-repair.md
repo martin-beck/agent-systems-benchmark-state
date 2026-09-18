@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1307-portable-tlc-runner-repair",
   "checkpoint_commit": "beafa965e61b0f09d9ed5f10ffcd621b0cf3e5b2",
-  "claim_expires": "2026-09-18T06:46:26+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1302"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "codex-ar1307-signed-history-20260918",
+  "owner": "",
   "plan": "../plans/AR-1307.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 595,
+  "task_revision": 596,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T04:46:26+00:00",
+  "updated_at": "2026-09-18T04:46:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1628,3 +1628,6 @@ and protected publication sequence.
 - 2026-09-18T04:45:06+00:00: Heartbeat by codex-ar1307-signed-history-20260918.
 
 - 2026-09-18T04:46:26+00:00: Heartbeat by codex-ar1307-signed-history-20260918.
+
+- 2026-09-18T04:46:49+00:00: Worker stopped after cleanup with no metadata-repair commands; preserve
+  PR #25 and formal cancellation evidence for fresh takeover.
