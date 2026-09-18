@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Run fresh exact-head CI on fb90e13f7, then inspect bounded TLC stdout diagnostics from the next formal run; do not qualify or merge until terminal green formal evidence.",
+  "next_action": "Repair exact author-matching DCO trailers across feature history, rerun vendor/strict gates, then diagnose repeated full TLC exit-1 using terminal bounded diagnostics; do not qualify or merge.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "969eef05834a4ce5f711bbafaa5798549abd95c8",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 691,
+  "task_revision": 692,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T09:23:26+00:00",
+  "updated_at": "2026-09-18T09:55:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1934,3 +1934,9 @@ and protected publication sequence.
   run. Focused suite: 69 passed, 6 subtests.
 
 - 2026-09-18T09:23:26+00:00: Heartbeat by codex-ar1307-metadata-repair-20260918.
+
+- 2026-09-18T09:55:54+00:00: Formal run 35326417135 terminated at 2026-09-18T09:42:53Z on exact head
+  fb90e13f7. Offline preflight/admission passed; TLC ran with 2 workers/2 cores, approximately
+  1979MB heap and 64MB offheap, reaching about 32.86M generated, 27.20M distinct states, and 10.8M
+  queued states before exit 1. No invariant/OOM detail appeared in bounded diagnostics and no
+  success attestation was emitted. This is a truthful formal failure, not qualification.
