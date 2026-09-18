@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Record repeated TLC exit-1 root cause, update generated vendor manifest fixture, rerun full focused/strict gates on a fresh signed head, and qualify only after a terminal green formal run.",
+  "next_action": "Run fresh exact-head CI on fb90e13f7, then inspect bounded TLC stdout diagnostics from the next formal run; do not qualify or merge until terminal green formal evidence.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "969eef05834a4ce5f711bbafaa5798549abd95c8",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 689,
+  "task_revision": 690,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T08:50:19+00:00",
+  "updated_at": "2026-09-18T08:50:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1925,3 +1925,10 @@ and protected publication sequence.
 
 - 2026-09-18T08:50:19+00:00: Recorded command exit 0; command argv SHA-256
   71bfff740cf83bc2f932ddeb467f18ce69d26b0d549b15fabb5de52878f3173e.
+
+- 2026-09-18T08:50:42+00:00: Generated vendor manifest fixture was refreshed to
+  coordinator.vendor.json SHA-256 69e39095876e048d25f7fb0a661e72e34421d9bc758e7d635c427a0982a63af8;
+  vendor suite passed 8 tests/6 subtests. Repeated full-exhaustive failure remains exit 1 with no
+  stderr detail. Signed head fb90e13f7 now captures bounded sanitized TLC stdout plus stderr on
+  nonzero exit, preserving fail-closed behavior and enabling diagnosis on the next required formal
+  run. Focused suite: 69 passed, 6 subtests.

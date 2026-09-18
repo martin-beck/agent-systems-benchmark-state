@@ -1656,7 +1656,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | codex-ar1307-metadata-repair-20260918 | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Record repeated TLC exit-1 root cause, update generated vendor manifest fixture, rerun full focused/strict gates on a fresh signed head, and qualify only after a terminal green formal run. |
+| P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | codex-ar1307-metadata-repair-20260918 | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Run fresh exact-head CI on fb90e13f7, then inspect bounded TLC stdout diagnostics from the next formal run; do not qualify or merge until terminal green formal evidence. |
 
 ### Open (1)
 
