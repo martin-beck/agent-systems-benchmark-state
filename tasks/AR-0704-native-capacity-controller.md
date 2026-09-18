@@ -2,7 +2,7 @@
 {
   "branch": "feature/native-capacity-controller",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-18T23:53:26+00:00",
   "depends_on": [
     "AR-0701",
     "AR-0103"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/native-capacity-controller",
   "observed_dirty": 0,
   "observed_head": "28f30eea80efef5a61ea438e77402f8640564cc9",
-  "owner": "",
+  "owner": "ar0704_rebase_impl",
   "plan": "../plans/AR-0704.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 157,
+  "task_revision": 158,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-18T21:52:34+00:00",
+  "updated_at": "2026-09-18T21:53:26+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -562,3 +562,5 @@ must not block this AR or its dependents.
   rebased PR #119 candidate; PR #119 remains at 28f30ee with stale formal pin. Preserve current
   source and require a fresh owner to perform the documented rebase onto current main, then run full
   gates and exact-head CI. Unrelated PR #230/AR-1313 was not merged or accepted as AR-0704 evidence.
+
+- 2026-09-18T21:53:26+00:00: Claimed by ar0704_rebase_impl.
