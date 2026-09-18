@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "checkpoint_commit": "df0e402f442468e43e06b7c1acb3c3667277fb75",
-  "claim_expires": "2026-09-18T23:02:43+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1304"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
-  "owner": "coordinator-ar1308-runner-repair",
+  "owner": "",
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 526,
+  "task_revision": 527,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T22:52:46+00:00",
+  "updated_at": "2026-09-18T22:52:48+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1576,3 +1576,6 @@ source code or treating a capacity failure as a model result.
 
 - 2026-09-18T22:52:46+00:00: Schema repair: shortened next_action. Runner remains
   prepared-not-qualified; no VM boot.
+
+- 2026-09-18T22:52:48+00:00: Runner metadata is valid and capacity contract is recorded. Exact
+  AR-1307 runtime bundle and pinned inputs remain unavailable; no qualification claimed.
