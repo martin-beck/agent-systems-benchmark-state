@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Stage17 full-exhaustive is active under finite 7800s outer bound after clean blkid/debugfs validation: fixed seed UUID, embedded exact HEAD 01f6e000b, fresh data image and unique metadata. Monitor for terminal FULL_EXHAUSTIVE_RC=0, schema-valid exact attestation, and clean poweroff.",
+  "next_action": "Stage17 full-exhaustive was SUBPROCESS_INTERRUPTED: the handoffctl/timeout supervisor vanished and orphaned QEMU was terminated after only transient RC=0. No full attestation or clean poweroff exists. Repair the runner supervision path so the bounded supervisor cannot disappear, then rerun from a pristine verified image; do not merge.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 454,
+  "task_revision": 455,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T02:23:32+00:00",
+  "updated_at": "2026-09-18T02:25:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1457,3 +1457,9 @@ and protected publication sequence.
 - 2026-09-18T02:23:32+00:00: Recorded command timeout; classification=SUBPROCESS_TIMEOUT;
   deadline=1800.0s; command argv SHA-256
   ccdddcb458551d757efd96602ca614f79f58c095fc94d286294ebe9f39eb084f.
+
+- 2026-09-18T02:25:06+00:00: Verified orphan QEMU PID is gone. Stage17 serial has only
+  FULL_EXHAUSTIVE_TRANSIENT_RC=0; no FULL_EXHAUSTIVE_RC, evidence validator, attestation, or
+  poweroff marker. Classify as orphaned-supervisor/SUBPROCESS_INTERRUPTED, not a formal/model
+  result. Previous portable-smoke and pr-publication attestations remain valid separately. PR
+  #24/full-tier remain blocked.
