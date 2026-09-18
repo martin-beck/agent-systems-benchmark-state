@@ -13,7 +13,7 @@ rejected before admission.
 
 The runner's default queue, temporary model state and attestation roots are
 owner-private directories below `/srv/data/projects/.asb-tlc`. Admission uses
-the exact coordinator-wide `/tmp/agent-workflow-coordinator-tlc-admission.lock`
+the exact coordinator-wide `/srv/data/projects/.asb-tlc/admission.lock`
 fence; replacing it with a private lock is diagnostic-only and cannot qualify
 publication evidence. Callers cannot redirect the runtime root or attestation
 outside that approved project root. Every TLC process is started

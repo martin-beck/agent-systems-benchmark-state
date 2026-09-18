@@ -36,9 +36,11 @@ _WORKER_ROOT = APPROVED_RUNTIME_ROOT / (f"worker-{getattr(os, 'getuid', lambda: 
 DEFAULT_QUEUE = str(_WORKER_ROOT / "queue")
 DEFAULT_TMPDIR = _WORKER_ROOT / "tmp"
 # This exact path is the coordinator's canonical host-wide admission fence.
-# Do not replace it with a worker-private lock: that would permit concurrent
-# formal jobs to bypass memory admission.  Queues remain worker-private.
-DEFAULT_ADMISSION_LOCK = str(Path(os.sep) / "tmp" / "agent-workflow-coordinator-tlc-admission.lock")
+# Keep it on the approved second disk so disposable runner users can access it
+# without depending on a host-owned /tmp inode. Do not replace it with a
+# worker-private lock: that would permit concurrent formal jobs to bypass
+# memory admission. Queues remain worker-private.
+DEFAULT_ADMISSION_LOCK = str(APPROVED_RUNTIME_ROOT / "admission.lock")
 COMMAND_GRACE_SECONDS = 10
 GIT_PROVENANCE_TIMEOUT_SECONDS = 5
 
