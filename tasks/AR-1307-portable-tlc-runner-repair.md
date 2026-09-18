@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 334,
+  "task_revision": 335,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T02:36:45+00:00",
+  "updated_at": "2026-09-18T02:36:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -863,3 +863,6 @@ and protected publication sequence.
   codex/ar-1307-portable-tlc-runner=5ab4ffe2dcdbd9875807746774462ef26cf7d690 (worker state,
   fast-forward integration of signed repair). Source commit d0db32adf verifies G with allowed
   signers and DCO; staging tree is clean of untracked JDK/JAR artifacts. No new full run started.
+
+- 2026-09-18T02:36:53+00:00: Recorded command exit 0; command argv SHA-256
+  ffd2c2087ea8d4d5936a68173743a8fba699a09882c490f525737dd2bf2fa977.
