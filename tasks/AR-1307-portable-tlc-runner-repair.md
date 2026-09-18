@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Diagnose repeated full-exhaustive TLC exit-1 with controlled local reproduction and cgroup/disk/journal evidence; make only evidence-backed termination repair, then rerun focused gates before any new formal dispatch.",
+  "next_action": "Verify GitHub email externally; then retry governed state and PR publication of signed local diagnostics head c5f6ad076. Do not dispatch formal until push and exact-head CI pass.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "969eef05834a4ce5f711bbafaa5798549abd95c8",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 706,
+  "task_revision": 707,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T11:33:26+00:00",
+  "updated_at": "2026-09-18T11:33:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1990,3 +1990,8 @@ and protected publication sequence.
   re-claim before work resumes.
 
 - 2026-09-18T11:33:26+00:00: Claimed by codex-ar1307-metadata-repair-20260918.
+
+- 2026-09-18T11:33:40+00:00: Reclaimed after lease expiry. Local signed PR head c5f6ad076 preserves
+  bounded TLC terminal-tail diagnostics; remote remains 590dd6c5d. Governed publication is blocked
+  by GitHub HTTPS 403: account email must be verified. State claim/update is local-only until that
+  external blocker is cleared; no credential bypass or push retry.
