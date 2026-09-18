@@ -1672,7 +1672,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1305](../tasks/AR-1305-image-native-user-session.md): Image-native user-session support | codex-ar1305-audit-20260918 | Qualify image-native D-Bus user-session support for required TLC containment. | Promote after review; qualify dbus-user-session and systemd user-manager support in a fresh offline guest image, then hand the immutable image to AR-1304. |
+| P0 | [AR-1305](../tasks/AR-1305-image-native-user-session.md): Image-native user-session support | codex-ar1305-audit-20260918 | Qualify image-native D-Bus user-session support for required TLC containment. | Blocked: existing fresh image and pinned dbus package are present, but read-only guest inspection through guestfish still fails because supermin exits 1; no safe supported image-native repair or qualification is available. Reopen only after a reviewed working customization/inspection appliance is provisioned; do not use portable fallback or weaken AR-1304 limits. |
 
 ### Blocked (49)
 

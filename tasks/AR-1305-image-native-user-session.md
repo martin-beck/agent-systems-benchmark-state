@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1305",
-  "next_action": "Promote after review; qualify dbus-user-session and systemd user-manager support in a fresh offline guest image, then hand the immutable image to AR-1304.",
+  "next_action": "Blocked: existing fresh image and pinned dbus package are present, but read-only guest inspection through guestfish still fails because supermin exits 1; no safe supported image-native repair or qualification is available. Reopen only after a reviewed working customization/inspection appliance is provisioned; do not use portable fallback or weaken AR-1304 limits.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "00a47726683609b7fef8ea5738fed5a3692fac29",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify image-native D-Bus user-session support for required TLC containment.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Image-native user-session support",
-  "updated_at": "2026-09-18T21:10:38+00:00",
+  "updated_at": "2026-09-18T21:10:54+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1305-image-native-user-session"
 }
 ---
@@ -200,3 +200,14 @@ limits and fail-closed behavior remain unchanged.
   available. Reopen briefly to refresh evidence and release ownerless.
 
 - 2026-09-18T21:10:38+00:00: Claimed by codex-ar1305-audit-20260918.
+
+- 2026-09-18T21:10:54+00:00: Bounded audit 2026-09-18: required tools qemu-img, qemu-system-x86_64,
+  virt-customize, guestfish and dbus-user-session package are installed; staged package remains
+  under /srv/data/projects with prior digest e585b169... Existing fresh image
+  ar1305-root-userbus.qcow2 is an 8 GiB qcow2 overlay (214 MiB) backed by the approved runner image,
+  and native serial evidence still reports dbus.socket and user@1000.service started but systemd-run
+  transient fails Transport endpoint is not connected. A read-only guestfish inspection of the image
+  failed three times before guest access because /usr/bin/supermin exited status 1. Approved-root
+  free space remains only about 4.9 GiB, and no safe image-native repair/customization can be
+  validated under this capacity/appliance state. No stale image was mutated, no portable fallback
+  used, no AR-1304 limit changed, and no qualification attestation exists.
