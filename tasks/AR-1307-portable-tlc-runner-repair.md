@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Repair exact author-matching DCO trailers across feature history, rerun vendor/strict gates, then diagnose repeated full TLC exit-1 using terminal bounded diagnostics; do not qualify or merge.",
+  "next_action": "Await fresh DCO/vendor/strict CI on exact head 590dd6c5d; then diagnose repeated full TLC exit-1 with captured stdout and repair only proven causes before qualification.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "969eef05834a4ce5f711bbafaa5798549abd95c8",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 695,
+  "task_revision": 696,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T09:57:49+00:00",
+  "updated_at": "2026-09-18T09:58:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1949,3 +1949,10 @@ and protected publication sequence.
 
 - 2026-09-18T09:57:49+00:00: Recorded command exit 0; command argv SHA-256
   b9d269555ef5771ea36092e556f5d7760a270906193e950850a500bc5f40865a.
+
+- 2026-09-18T09:58:14+00:00: Reconstructed feature history onto current main and re-signed every
+  commit with SSH signatures. Author is Martin Beck <martin.beck2@gmx.de>; each rewritten commit now
+  includes matching Signed-off-by Martin Beck <martin.beck2@gmx.de> (legacy huawei trailer
+  retained). Force-with-lease pushed exact head 590dd6c5d. Formal failure 35326417135 remains
+  recorded: ~32.86M generated, ~27.20M distinct, ~10.8M queued states, exit 1, no attestation. No
+  merge or qualification claim.
