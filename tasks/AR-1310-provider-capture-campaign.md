@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Runtime-owned provider capture and recording campaign qualification.",
-  "task_revision": 115,
+  "task_revision": 116,
   "title": "Runtime-owned provider capture and recording campaign qualification",
-  "updated_at": "2026-09-18T23:02:29+00:00",
+  "updated_at": "2026-09-18T23:02:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1310-provider-capture-campaign"
 }
 ---
@@ -417,3 +417,6 @@ independently so its promotion is not falsely implied by AR-1160 completion.
   22fb6eebf0a2e27fc56964e2f78bb25774bbb46ee2b30bde5322fbdf4aa98bf0.
 
 - 2026-09-18T23:02:29+00:00: Heartbeat by ar1310_exactmain_rerun.
+
+- 2026-09-18T23:02:33+00:00: Recorded command exit 0; command argv SHA-256
+  22fb6eebf0a2e27fc56964e2f78bb25774bbb46ee2b30bde5322fbdf4aa98bf0.
