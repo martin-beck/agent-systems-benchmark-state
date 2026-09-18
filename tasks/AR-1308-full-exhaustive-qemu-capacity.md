@@ -7,7 +7,7 @@
     "AR-1304"
   ],
   "id": "AR-1308",
-  "next_action": "Launch one bounded QEMU with fresh overlay6 and exact safe-directory plus guest ownership seed; inspect TLC result and attestation.",
+  "next_action": "Launch one bounded QEMU with fresh overlay7 and state/.git provenance seed; inspect TLC result and attestation.",
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 453,
+  "task_revision": 454,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T17:57:14+00:00",
+  "updated_at": "2026-09-18T17:57:35+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1337,3 +1337,8 @@ source code or treating a capacity failure as a model result.
 
 - 2026-09-18T17:57:14+00:00: Recorded command exit 0; command argv SHA-256
   c6327c2bcaf4e504f01d66708e1b5737741f1a6ac0e336ec443a46c3388c3757.
+
+- 2026-09-18T17:57:35+00:00: Definitive prior blocker: data fixture contains state/.git, not
+  top-level git; GIT_DIR=/mnt/asb-data/git caused provenance failure. Seed now uses
+  GIT_DIR=/mnt/asb-data/state/.git, retains state work tree, and adds exact safe-directory/ownership
+  setup. Fresh overlay7 built; governed preflight passed.
