@@ -7,7 +7,7 @@
     "AR-1304"
   ],
   "id": "AR-1308",
-  "next_action": "Mask systemd-networkd-wait-online in the reviewed asb-user overlay, rerun governed preflight, then one bounded networkless QEMU attempt.",
+  "next_action": "Clear cloud-init instance state in a fresh asb-user/wait-online-masked overlay, rerun governed preflight, then one bounded networkless QEMU attempt.",
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 321,
+  "task_revision": 322,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T17:04:09+00:00",
+  "updated_at": "2026-09-18T17:06:07+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -925,3 +925,9 @@ source code or treating a capacity failure as a model result.
 
 - 2026-09-18T17:04:09+00:00: Recorded command exit 0; command argv SHA-256
   51279695736ea819088f09be3324a2aa5ddcfda23e8c734cce64d62c35738b9a.
+
+- 2026-09-18T17:06:07+00:00: Fresh overlay now contains uid 1000 asb, linger, and masked
+  systemd-networkd-wait-online; host swap was restored and governed preflight passed. Bounded QEMU
+  boot reached user-runtime-dir@1000 and user@1000 successfully, but cloud-init final completed in
+  10.6s without executing the seed commands (no mount, TLC, or attestation) and guest remained at
+  login; no qualification evidence.

@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1160](tasks/AR-1160.md): Wizard control API | Wizard control API | PR #227 exact head 3db1f4ccc86ee470849c20366c7f91d6a51ded2a has all required hosted checks terminal green, including coverage and the rerun Rust job. Independent slice review found signed+DCO commits, clean exact tree, focused/full local gates, and no privacy/schema/workflow regressions. Merge the exact reviewed head only after coordinator confirms review policy; then perform post-merge verification. AR is not complete overall: provider-bound capture wiring, durable cassette reconciliation, offline-default activation, and frontend integration remain. | codex-ar1160-control-20260918 |
-| P0 | [AR-1308](tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Mask systemd-networkd-wait-online in the reviewed asb-user overlay, rerun governed preflight, then one bounded networkless QEMU attempt. | codex-ar1308-fixture-repair-20260918 |
+| P0 | [AR-1308](tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Clear cloud-init instance state in a fresh asb-user/wait-online-masked overlay, rerun governed preflight, then one bounded networkless QEMU attempt. | codex-ar1308-fixture-repair-20260918 |
 
 ## Open
 
