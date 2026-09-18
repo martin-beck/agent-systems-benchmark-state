@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T14:00:55+00:00",
+  "updated_at": "2026-09-18T14:01:05+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -102,3 +102,6 @@ source code or treating a capacity failure as a model result.
 - 2026-09-18T14:00:55+00:00: Added signed AR-1308 QEMU receipt/preflight at e11adae64; focused and
   140-test state suites pass, vendor and Ruff/source-header checks pass, and live host preflight is
   ready. No formal qualification claimed.
+
+- 2026-09-18T14:01:05+00:00: Recorded command exit 0; command argv SHA-256
+  757c4b4bf4f927ca983e9d79b069750eaad8c94ab28e20ac329bc70932e9134d.
