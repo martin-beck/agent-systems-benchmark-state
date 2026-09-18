@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Refresh stage/data from remote 55b6ca3c4, regenerate schema-valid seed including bounded stat/java.io.tmpdir preflight, launch fresh 32 GiB no-NIC VM, capture effective temp properties and first/last TLC diagnostic. Do not accept attestation or run higher tiers until portable passes.",
+  "next_action": "Rebuild data image only after verifying staged /jvm and pinned JAR are present; use fresh stage4 raw, unique seed, and fresh overlay. Confirm debugfs root lists state/jvm/tla2tools.jar before launching portable-smoke.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 201,
+  "task_revision": 202,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-17T23:59:58+00:00",
+  "updated_at": "2026-09-18T00:00:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -665,3 +665,9 @@ and protected publication sequence.
 
 - 2026-09-17T23:59:58+00:00: Recorded command exit 0; command argv SHA-256
   7a7b1d71036cdf3a258c16cf2136f2119066e682e7cb0bf2e69e15ecaf2cd65c.
+
+- 2026-09-18T00:00:28+00:00: Stage3 diagnostic preflight proved tmp paths are root:root mode 1777
+  and JDK/JAR paths were absent: env could not execute /mnt/asb-data/jvm/bin/java, curl shim
+  reported missing /mnt/asb-data/tla2tools.jar, and validator found no evidence. The staging copy
+  and mke2fs overlapped, so the image captured only /state. No formal result accepted. Rebuild
+  sequentially with explicit artifact presence checks.
