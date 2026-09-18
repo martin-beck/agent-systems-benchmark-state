@@ -5,7 +5,7 @@
   "claim_expires": "",
   "depends_on": ["AR-1310"],
   "id": "AR-1312",
-  "next_action": "Remain planned until AR-1310 is released or its post-merge coverage blocker is explicitly transferred; then inspect run 35393146183 coverage, add meaningful positive/negative tests, and rerun the unchanged 90% gate.",
+  "next_action": "Promotion is currently refused because blocked AR-1310 remains an unfinished dependency; coordinator must explicitly transfer/resolve that dependency, then inspect run 35393146183 and repair coverage without weakening the 90% gate.",
   "owner": "",
   "plan": "../plans/AR-1312.md",
   "priority": "P0",
