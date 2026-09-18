@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Supervision repair adfb775a0 is pushed to PR #24 and focused tests pass 31/31. Obtain independent review and exact-head CI. Only after green review/CI, rebuild pristine full fixture and rerun full-exhaustive with terminal attestation; do not merge before that.",
+  "next_action": "Signed repair d0db32adf is remote PR head; obtain independent review and exact-head CI. Worker state branch is 8a7b418a2 and source PR branch is d0db32adf. Only after green review/CI, rebuild pristine full fixture and rerun full-exhaustive; do not merge before terminal attestation.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 327,
+  "task_revision": 328,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T02:34:17+00:00",
+  "updated_at": "2026-09-18T02:34:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -837,3 +837,9 @@ and protected publication sequence.
 
 - 2026-09-18T02:34:17+00:00: Recorded command exit 1; command argv SHA-256
   a3d95dd7adbf1f58971137cdb99f661b9a258a76678823ce96fe750d7b7d108a.
+
+- 2026-09-18T02:34:51+00:00: Exact remote verification: feature/ar-1307-portable-tlc-runner-repair =
+  d0db32adf21c9f1a13954e3382581681d6ecbe2b; codex/ar-1307-portable-tlc-runner =
+  8a7b418a2e78234c2325d6002c8f775b3a173cef. Source repair d0db32adf verifies SSH signature status G
+  with allowed signers, DCO Signed-off-by, focused tests 31/31, and clean staging tree with no
+  untracked JDK/JAR artifacts. Full-tier remains blocked by prior SUBPROCESS_INTERRUPTED evidence.
