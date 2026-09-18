@@ -29,8 +29,8 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 35374843254 | `f7602a73e4fc` | push | Rust verification | completed:success |
 | 35374843244 | `f7602a73e4fc` | push | Fault assurance | completed:success |
-| 35374843171 | `f7602a73e4fc` | push | Emulated aarch64 portability | in_progress:- |
-| 35374843154 | `f7602a73e4fc` | push | Repository quality | in_progress:- |
+| 35374843171 | `f7602a73e4fc` | push | Emulated aarch64 portability | completed:success |
+| 35374843154 | `f7602a73e4fc` | push | Repository quality | completed:success |
 | 35374843115 | `f7602a73e4fc` | push | Formal assurance | completed:success |
 | 35374843105 | `f7602a73e4fc` | push | Huawei MIT source headers | completed:success |
 | 35374843061 | `f7602a73e4fc` | push | Hosted portability and native qualification | completed:success |
