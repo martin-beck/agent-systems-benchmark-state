@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1310-provider-capture-campaign",
-  "checkpoint_commit": "1625655a0a9582d30a9b31ba2ec9a0f1a4904eda",
+  "checkpoint_commit": "9a2f313e86332e35eec40b97a692026b497d46cd",
   "claim_expires": "2026-09-18T22:31:54+00:00",
   "depends_on": [
     "AR-1060",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Runtime-owned provider capture and recording campaign qualification.",
-  "task_revision": 79,
+  "task_revision": 80,
   "title": "Runtime-owned provider capture and recording campaign qualification",
-  "updated_at": "2026-09-18T20:31:54+00:00",
+  "updated_at": "2026-09-18T20:32:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1310-provider-capture-campaign"
 }
 ---
@@ -301,3 +301,11 @@ independently so its promotion is not falsely implied by AR-1160 completion.
   a21a7e60eee0efcd5f4353b04cf59f00fc7fb30606d66fa1af9ed484d7f5bd4a.
 
 - 2026-09-18T20:31:54+00:00: Heartbeat by ar1310-provider-capture.
+
+- 2026-09-18T20:32:03+00:00: Policy rerun at exact head 1625655 improved workspace coverage from
+  89.96% to 89.98% but remained below fail-under-lines=90. Added
+  runtime_capture_rejects_unverified_or_malformed_results, exercising Ok(_) capture responses with
+  redaction=false, replay=false, and malformed cassette digest; each durably fails the campaign
+  closed with verification reason. Focused test, fmt, and workspace clippy pass. Signed DCO commit
+  9a2f313 pushed as new PR head. Rerun all exact-head gates and inspect coverage result before
+  merge.
