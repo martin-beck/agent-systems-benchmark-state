@@ -526,7 +526,15 @@ class TlcRunnerTests(unittest.TestCase):
         ):
             self.assertIn(contract, seed)
         self.assertNotIn("network:", seed)
+        self.assertNotIn("curl", seed)
         self.assertNotIn("\\n  - [", seed)
+
+    def test_verify_requires_preloaded_digest_pinned_jar_without_network_fallback(self) -> None:
+        verify = (ROOT / "formal/handoffctl/verify.sh").read_text(encoding="utf-8")
+        self.assertIn('TLC_JAR_PATH:-', verify)
+        self.assertIn('TLC_JAR_SHA256:-', verify)
+        self.assertIn("network fallback", verify)
+        self.assertNotIn("curl --fail", verify)
 
     def test_guest_seed_rejects_unknown_tier(self) -> None:
         with self.assertRaisesRegex(ValueError, "unknown formal tier"):

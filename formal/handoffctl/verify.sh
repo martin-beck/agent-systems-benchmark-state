@@ -18,11 +18,24 @@ readonly MANIFEST="${TEMP_DIR}/outcomes.manifest"
 : > "${MANIFEST}"
 trap 'rm -rf -- "${TEMP_DIR}"' EXIT
 
-readonly JAR="${TEMP_DIR}/tla2tools.jar"
-readonly URL="https://github.com/tlaplus/tlaplus/releases/download/v${TLA_VERSION}/tla2tools.jar"
-
-curl --fail --location --retry 3 --show-error --silent --output "${JAR}" "${URL}"
-printf '%s  %s\n' "${TLA_SHA256}" "${JAR}" | sha256sum --check --strict
+readonly JAR="${TLC_JAR_PATH:-}"
+readonly PROVIDED_SHA256="${TLC_JAR_SHA256:-}"
+if [[ -z "${JAR}" || -z "${PROVIDED_SHA256}" ]]; then
+    echo "TLC_JAR_PATH and TLC_JAR_SHA256 must point to the preloaded offline TLC artifact" >&2
+    exit 78
+fi
+if [[ ! -f "${JAR}" || -L "${JAR}" ]]; then
+    echo "preloaded TLC artifact must be a regular non-symlink file: ${JAR}" >&2
+    exit 78
+fi
+if [[ "${PROVIDED_SHA256}" != "${TLA_SHA256}" ]]; then
+    echo "TLC_JAR_SHA256 does not match the reviewed TLC ${TLA_VERSION} digest" >&2
+    exit 78
+fi
+if ! printf '%s  %s\n' "${TLA_SHA256}" "${JAR}" | sha256sum --check --strict >/dev/null; then
+    echo "preloaded TLC artifact digest mismatch; refusing network fallback" >&2
+    exit 78
+fi
 
 run_model() {
     local model="$1"
