@@ -136,7 +136,8 @@ def _bounded_process(command: list[str], timeout_seconds: int) -> tuple[int, boo
             detail = process.stderr.read(4096).decode("utf-8", errors="replace").strip()
             detail = re.sub(r"/(?:srv|tmp)/data/projects[^\s']*", "<approved-runtime-path>", detail)
             if detail:
-                print(f"TLC child diagnostic: {detail[-1000:]}", file=sys.stderr)
+                excerpt = detail if len(detail) <= 1000 else detail[:500] + " ... " + detail[-500:]
+                print(f"TLC child diagnostic: {excerpt}", file=sys.stderr)
         return exit_code, False
     except subprocess.TimeoutExpired:
         for sig in (signal.SIGTERM, signal.SIGKILL):
