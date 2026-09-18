@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 506,
+  "task_revision": 507,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T22:21:13+00:00",
+  "updated_at": "2026-09-18T22:41:19+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1513,3 +1513,7 @@ source code or treating a capacity failure as a model result.
   969eef058 object/input bundle, pinned JDK/TLC, admission lock, and exact seed remain unavailable;
   preserve unchanged 3G/3G/2-worker/2-core/8G/7200s process contract. Next action: bind exact
   inputs, regenerate seed, run full preflight, then boot only after every gate passes.
+
+- 2026-09-18T22:41:19+00:00: Repair runner contract: reviewed capacity evidence requires a >=64 GiB
+  virtual disk; enlarge the prepared sparse data image only, preserve no-network/no-mounts and the
+  3G/3G process contract, and do not boot.
