@@ -32,6 +32,12 @@ name: handoffctl formal verification
 permissions:
   contents: read
 
+env:
+  # Keep disposable queue, runtime and attestation state on the approved
+  # second-disk root; never fall back to runner /tmp or checkout paths.
+  TLC_RUNTIME_ROOT: /srv/data/projects/.asb-tlc/ci-${{ github.run_id }}
+  TLC_ATTESTATION_PATH: /srv/data/projects/.asb-tlc/attestations/ci-${{ github.run_id }}.json
+
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
