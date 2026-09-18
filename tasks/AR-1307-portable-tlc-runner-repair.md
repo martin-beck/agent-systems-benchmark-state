@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 285,
+  "task_revision": 286,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T00:24:10+00:00",
+  "updated_at": "2026-09-18T00:24:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -927,3 +927,6 @@ and protected publication sequence.
   completed, and debugfs proved the resulting image contained only state/jvm but lacked root
   tla2tools.jar. No QEMU evidence accepted. Stage8 staging directory is now complete; rebuilding a
   fresh stage9 image sequentially and verifying image contents before boot.
+
+- 2026-09-18T00:24:17+00:00: Recorded command exit 0; command argv SHA-256
+  c2bd314225ecfdb96a4573ceba2352bc12b92f8b3dea0d437003557a91265a5e.
