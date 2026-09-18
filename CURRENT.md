@@ -3,12 +3,17 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1295](tasks/AR-1295-vendor-fixture-v037.md): Coordinator vendor v0.3.7 fixture alignment | Align stale coordinator vendor tests with the verified immutable v0.3.7 pin. | Repair current generated-state blockers (AR-1160, AR-1258, AR-1303, malformed AR-1309), then re-audit exact-head publication. | codex-ar1295-final-20260918 |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Blocked on AR-1307 runner merge and handoff. Prior full VM was interrupted without success or attestation; after merge, rebuild exact fa57625d9 image/seed and rerun independently reviewed gates. | - |
-| P0 | [AR-1295](tasks/AR-1295-vendor-fixture-v037.md): Coordinator vendor v0.3.7 fixture alignment | Align stale coordinator vendor tests with the verified immutable v0.3.7 pin. | Repair current generated-state blockers (AR-1160, AR-1258, AR-1303, malformed AR-1309), then re-audit exact-head publication. | - |
 
 ## Blocked
 

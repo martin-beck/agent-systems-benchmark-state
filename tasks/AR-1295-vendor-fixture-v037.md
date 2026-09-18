@@ -2,22 +2,22 @@
 {
   "branch": "repair/ar-1295-vendor-fixtures",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-18T21:39:19+00:00",
   "depends_on": [],
   "id": "AR-1295",
   "next_action": "Repair current generated-state blockers (AR-1160, AR-1258, AR-1303, malformed AR-1309), then re-audit exact-head publication.",
   "observed_branch": "repair/ar-1295-vendor-fixtures",
   "observed_dirty": 0,
   "observed_head": "c8c5a25e0ba31862c83465ea02963c5e4adb5d22",
-  "owner": "",
+  "owner": "codex-ar1295-final-20260918",
   "plan": "../plans/AR-1295.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Align stale coordinator vendor tests with the verified immutable v0.3.7 pin.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Coordinator vendor v0.3.7 fixture alignment",
-  "updated_at": "2026-09-18T20:54:16+00:00",
+  "updated_at": "2026-09-18T20:54:19+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1295-vendor-fixtures"
 }
 ---
@@ -182,3 +182,5 @@ handoffctl, formal runner behavior, ASB product, or asb-tui.
 
 - 2026-09-18T20:54:16+00:00: Generated-state schema blockers are repaired; resume exact-head vendor
   fixture re-audit without changing vendor implementation or formal behavior.
+
+- 2026-09-18T20:54:19+00:00: Claimed by codex-ar1295-final-20260918.
