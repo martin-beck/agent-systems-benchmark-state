@@ -8,7 +8,7 @@
     "AR-0889"
   ],
   "id": "AR-1250",
-  "next_action": "Acquire approved pinned arm64 emulator runner; then run arm64 repeat qualification.",
+  "next_action": "Repair the arm64 oversized-request rejection in the reviewed harness or candidate fixture, then rerun the full arm64 repeat gate with the verified QEMU runner.",
   "observed_branch": "feature/ar-1250-mockagents-harness-extension",
   "observed_dirty": 0,
   "observed_head": "0d42bca02b276342606ae35bfaa30a5b5cd5247a",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Extend the pinned MockAgents executable qualification harness.",
-  "task_revision": 75,
+  "task_revision": 76,
   "title": "Extend MockAgents qualification harness",
-  "updated_at": "2026-09-18T21:32:15+00:00",
+  "updated_at": "2026-09-18T21:32:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1250"
 }
 ---
@@ -220,3 +220,10 @@ privacy, signature, DCO, and exact-tree gates; do not claim support from host in
   e4f9cb3709de654d8318656bf43b0b691c489fe4f16732c905c44f14b92c469f.
 
 - 2026-09-18T21:32:15+00:00: Heartbeat by asb_ar1250_arm64_recheck.
+
+- 2026-09-18T21:32:41+00:00: Runner re-audit: reviewed QEMU user runner is available at
+  /usr/bin/qemu-aarch64, version 8.2.2, SHA-256
+  0338d0ed6013abe5e0f41c5a22976ac6fe2f1b5869edf05d4a9098c121248f02; manifest validates and the
+  pinned arm64 artifact is present. Qualification through handoffctl with this exact runner failed
+  closed because MockAgents accepted the oversized request (QualificationError). No arm64
+  qualification evidence or support claim is valid; runner availability is no longer the blocker.
