@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1310.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Runtime-owned provider capture and recording campaign qualification.",
-  "task_revision": 96,
+  "task_revision": 97,
   "title": "Runtime-owned provider capture and recording campaign qualification",
-  "updated_at": "2026-09-18T21:23:52+00:00",
+  "updated_at": "2026-09-18T21:24:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1310-provider-capture-campaign"
 }
 ---
@@ -357,3 +357,6 @@ independently so its promotion is not falsely implied by AR-1160 completion.
 - 2026-09-18T21:23:38+00:00: Coverage rerun on exact merged tree passed locally: workspace 90.48%,
   critical packages 96.47%, all tests passed; no source diff needed. Keep blocked until hosted
   exact-main post-merge rerun proves 90% and all required workflows green; then promote AR-1312.
+
+- 2026-09-18T21:24:27+00:00: Authorized bounded hosted exact-main rerun of Repository quality for
+  merged commit 17a1530; no product changes or gate changes.
