@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 365,
+  "task_revision": 366,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T00:53:09+00:00",
+  "updated_at": "2026-09-18T00:53:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1174,3 +1174,6 @@ and protected publication sequence.
   pushed to PR branch. Focused tests pass: 26 passed. Stage11 remains non-qualifying only because
   its old validator rejected truthful portable containment after PORTABLE_SMOKE_RC=0; no
   release/merge claim made.
+
+- 2026-09-18T00:53:18+00:00: Recorded command exit 0; command argv SHA-256
+  a3e0a68885b0dc1e491a06152e060508280f331cd617571536ef10fcf88c9922.
