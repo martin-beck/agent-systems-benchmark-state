@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Refresh stage from PR head 24e24690b, rebuild fresh data/seed/overlay, rerun portable-smoke to capture first+last TLC stderr now that effective tmp path is proven. Classify JFR fixture failure before any higher tier or merge.",
+  "next_action": "Rebuild pinned JDK staging with symlinks resolved (cp -aL), verify java.home/conf/security/java.security exists inside guest data image, then rerun one fresh no-NIC 32 GiB portable-smoke. Do not advance higher tiers.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 227,
+  "task_revision": 228,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T00:08:33+00:00",
+  "updated_at": "2026-09-18T00:08:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -747,3 +747,11 @@ and protected publication sequence.
   f5720cc2edba85785085cca348ea867f17135fd1a08ba74c672a3098b9fe9db9.
 
 - 2026-09-18T00:08:33+00:00: Heartbeat by codex-ar1307-runner-repair-20260918.
+
+- 2026-09-18T00:08:42+00:00: Stage5 exact-head fresh run proved effective
+  TMPDIR/java.io.tmpdir=/mnt/asb-data/tmp, writable /tmp and D-Bus, and captured leading failure:
+  java.lang.InternalError: Error loading java.security file. The pinned JDK tree contains absolute
+  symlinks from jvm/conf/security/java.security to /etc/java-17-openjdk/security/java.security,
+  absent in the clean guest. This is a self-contained runner-artifact defect, not a TLC/JFR model
+  result. Next correction resolves JDK symlinks into the data image and verifies the security file
+  before boot.
