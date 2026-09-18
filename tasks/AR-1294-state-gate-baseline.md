@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1294.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Restore vendor and formal admission baseline integrity needed to qualify AR-1293.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "State formal-gate baseline integrity",
-  "updated_at": "2026-09-17T05:00:34+00:00",
+  "updated_at": "2026-09-18T19:08:38+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1294-gate-baseline"
 }
 ---
@@ -79,3 +79,7 @@ formal checks, or manipulate another service's lock.
   /tmp/agent-workflow-coordinator-tlc-admission.lock and queue are external
   gha-workflow-coordinator-owned and untouched. No product, asb-tui, or handoffctl source changes.
   AR-1293 must supply an isolated owner-safe runner path, then rerun formal gates.
+
+- 2026-09-18T19:08:38+00:00: Coordinator audit found AR-1294's vendor baseline repair already
+  durably verified; reopen briefly only to record successor handoff and supersede this stale blocked
+  task without overlapping AR-1295 or AR-1308.
