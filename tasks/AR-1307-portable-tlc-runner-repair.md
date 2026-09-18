@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 348,
+  "task_revision": 349,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T02:55:24+00:00",
+  "updated_at": "2026-09-18T02:57:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -899,3 +899,6 @@ and protected publication sequence.
   runner label is online but exact-head formal check failed in user-bus preflight. Current host
   inspection confirms UID 984 lingering user manager and systemd user bus can run a transient unit;
   failure timing/bootstrapping remains under investigation. No formal qualification or merge claim.
+
+- 2026-09-18T02:57:01+00:00: Recorded command exit 0; command argv SHA-256
+  1e17191845140a9ea485ed0887415b90d3062661fe8e449e56cc7e2597a28173.
