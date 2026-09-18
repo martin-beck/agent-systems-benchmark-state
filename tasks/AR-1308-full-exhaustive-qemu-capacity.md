@@ -7,7 +7,7 @@
     "AR-1304"
   ],
   "id": "AR-1308",
-  "next_action": "Free at least 1 GiB host swap without reducing 16 GiB disk headroom; rerun preflight only after swap is available, then one bounded QEMU attempt using UUID-corrected data fixture.",
+  "next_action": "Launch one bounded QEMU with fresh overlay3, corrected data UUID, and seed exporting TLC_JAR_PATH plus exact jar digest; then inspect TLC/attestation.",
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 390,
+  "task_revision": 391,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T17:35:37+00:00",
+  "updated_at": "2026-09-18T17:35:59+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1140,3 +1140,8 @@ source code or treating a capacity failure as a model result.
 
 - 2026-09-18T17:35:37+00:00: Recorded command exit 0; command argv SHA-256
   9cba9102188ca10db40bf2065515d886121fe82637c6e85e8b50a7f6de944360.
+
+- 2026-09-18T17:35:59+00:00: Durable diagnosis update: corrected2 reached transient RC=0 but failed
+  closed because the seed omitted TLC_JAR_PATH/TLC_JAR_SHA256; a fresh corrected seed now exports
+  both exact values, receipt hash is refreshed, and overlay3 is newly built with
+  asb/linger/wait-online mask. Governed preflight passed; QEMU is next.
