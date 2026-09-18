@@ -1656,7 +1656,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1151](../tasks/AR-1151.md): Strict offline replay | codex_ar1151_followup | Replay strictly without providers. | After GitHub email verification, publish ASB 8cb9553 and TUI 5fd9fe2 on exact branches; then connect campaign execution to runtime/cassette reconciliation and offline-default activation before adding rendered wizard actions. |
+| P0 | [AR-1151](../tasks/AR-1151.md): Strict offline replay | codex_ar1151_followup | Replay strictly without providers. | Implement the remaining AR-1160 control operations: authenticated agent catalog, recording campaign launch/progress/coverage reconciliation/cancel and offline-default activation; then wire AR-1170 TUI wizard actions against those operations. Publish exact heads after GitHub email verification. |
 | P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | codex-ar1307-metadata-repair-20260918 | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Verify GitHub email externally; then retry governed state and PR publication of signed local diagnostics head c5f6ad076. Do not dispatch formal until push and exact-head CI pass. |
 
 ### Open (1)
