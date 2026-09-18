@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "checkpoint_commit": "df0e402f442468e43e06b7c1acb3c3667277fb75",
-  "claim_expires": "2026-09-18T23:11:06+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1304"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
-  "owner": "coordinator-ar1308-runner-repair",
+  "owner": "",
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 522,
+  "task_revision": 523,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T22:52:06+00:00",
+  "updated_at": "2026-09-18T22:52:15+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1562,3 +1562,9 @@ source code or treating a capacity failure as a model result.
 - 2026-09-18T22:52:06+00:00: Repaired qemu-command.json through handoffctl run: removed the literal
   backslash-n trailer and confirmed strict JSON parsing. Receipt and argv agree on 64 GiB data
   capacity, 32 GiB guest memory, 8 vCPU, and network none. No VM boot or qualification claim.
+
+- 2026-09-18T22:52:15+00:00: Runner preparation complete and durable: strict JSON command metadata
+  and receipt validated; 64 GiB sparse disk, x86_64 QEMU 8.2.2, q35, 8 vCPU, 32 GiB RAM, 16 GiB swap
+  contract, no network/mounts. AR remains blocked because the exact signed AR-1307 969eef058 runtime
+  bundle, pinned JDK/TLC/model/seed/admission lock are not all available; no VM boot or
+  qualification claimed.
