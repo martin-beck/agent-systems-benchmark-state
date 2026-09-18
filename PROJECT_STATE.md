@@ -22,20 +22,21 @@ Generated from local Git and GitHub. Do not edit.
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
 | #214 | `feature/ar-1286-supervised-replay-lifecycle@eaf7fcbf42ae` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(replay): integrate runtime-owned supervised replay lifecycle |
 | #220 | `feature/ar-1303-hosted-platform-diagnostics@d85889d5066c` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | ci(platforms): add privacy-safe hosted failure diagnostics |
+| #224 | `feature/ar-1151-integrated@643fd5daf8bf` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS: | feat(replay): enforce offline coverage and evidence labeling |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35328715582 | `2066e3233487` | push | Hosted portability and native qualification | completed:success |
-| 35328715552 | `2066e3233487` | push | Emulated aarch64 portability | completed:success |
-| 35328715514 | `2066e3233487` | push | Rust verification | completed:success |
-| 35328715512 | `2066e3233487` | push | Formal assurance | completed:success |
-| 35328715487 | `2066e3233487` | push | Fault assurance | completed:success |
-| 35328715477 | `2066e3233487` | push | Huawei MIT source headers | completed:success |
-| 35328715474 | `2066e3233487` | push | Repository quality | completed:success |
-| 35328047919 | `2acc009c5b6c` | pull_request | Hosted portability and native qualification | completed:success |
-| 35328047846 | `2acc009c5b6c` | pull_request | Formal assurance | completed:success |
-| 35328047836 | `2acc009c5b6c` | pull_request | Rust verification | completed:success |
-| 35328047816 | `2acc009c5b6c` | pull_request | Huawei MIT source headers | completed:success |
-| 35328047796 | `2acc009c5b6c` | pull_request | Repository quality | completed:success |
+| 35332048968 | `643fd5daf8bf` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 35332048900 | `643fd5daf8bf` | pull_request | Hosted portability and native qualification | completed:success |
+| 35332048889 | `643fd5daf8bf` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 35332048876 | `643fd5daf8bf` | pull_request | Rust verification | in_progress:- |
+| 35332048853 | `643fd5daf8bf` | pull_request | Formal assurance | in_progress:- |
+| 35332048850 | `643fd5daf8bf` | pull_request | Huawei MIT source headers | completed:success |
+| 35332048839 | `643fd5daf8bf` | pull_request | Fault assurance | in_progress:- |
+| 35332048837 | `643fd5daf8bf` | pull_request | Repository quality | in_progress:- |
+| 35331716278 | `6debdcdb96d8` | pull_request | Emulated aarch64 portability | completed:cancelled |
+| 35331716231 | `6debdcdb96d8` | pull_request | Fault assurance | completed:success |
+| 35331716221 | `6debdcdb96d8` | pull_request | Formal assurance | completed:cancelled |
+| 35331716220 | `6debdcdb96d8` | pull_request | Huawei MIT source headers | completed:success |
