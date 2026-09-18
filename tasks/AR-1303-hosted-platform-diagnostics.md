@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1303-hosted-platform-diagnostics",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "b5b0ef3bdda88f1b1d73b0e51f7610bdf6406f53",
   "claim_expires": "2026-09-18T21:30:48+00:00",
   "depends_on": [
     "AR-0907",
     "AR-1252"
   ],
   "id": "AR-1303",
-  "next_action": "PR #220 exact head d85889d is blocked only by unrelated hosted formal-runner ETXTBSY failures. Repair/retry CI infrastructure; then require fresh all-green exact-head CI before merge. Do not alter AR-1303 gates or product behavior.",
+  "next_action": "PR #220 exact head b5b0ef3 rebased onto origin/main; focused platform tests 12/12 plus 9 subtests, Ruff and compile pass. Fresh required CI run 35385954125/54126/54155/54223/54355/54483 is active; formal suite is green including Loom after prior ETXTBSY. Wait for all remaining checks terminal green, review exact diff, then merge and post-merge verify.",
   "observed_branch": "feature/ar-1303-hosted-platform-diagnostics",
   "observed_dirty": 0,
   "observed_head": "b5b0ef3bdda88f1b1d73b0e51f7610bdf6406f53",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add privacy-safe fixed diagnostics for hosted platform evidence failures.",
-  "task_revision": 75,
+  "task_revision": 76,
   "title": "Privacy-safe hosted platform failure diagnostics",
-  "updated_at": "2026-09-18T19:30:48+00:00",
+  "updated_at": "2026-09-18T19:33:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1303-hosted-platform-diagnostics"
 }
 ---
@@ -259,3 +259,6 @@ native qualification route. This AR must not modify runtime behavior or asb-tui.
   1ca250a0b97c42093348921de4e0d707724924006f6f81f9d58bacebeabc60e9.
 
 - 2026-09-18T19:30:48+00:00: Heartbeat by ar1303_ci_infra_repair.
+
+- 2026-09-18T19:33:00+00:00: Reconciled current main and corrected unavailable-marker compatibility
+  without changing gates; fresh exact-head CI is active.
