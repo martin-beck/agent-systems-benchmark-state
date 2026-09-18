@@ -8,13 +8,13 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1151](tasks/AR-1151.md): Strict offline replay | Replay strictly without providers. | Publish exact local head f78a124 after GitHub email verification, rerun hosted aarch64, then add campaign execution/cassette coverage reconciliation and offline-default application before asb-tui integration. | codex_ar1151_followup |
+| P0 | [AR-1307](tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Diagnose repeated full-exhaustive TLC exit-1 with controlled local reproduction and cgroup/disk/journal evidence; make only evidence-backed termination repair, then rerun focused gates before any new formal dispatch. | codex-ar1307-metadata-repair-20260918 |
 
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Blocked on AR-1307 runner merge and handoff. Prior full VM was interrupted without success or attestation; after merge, rebuild exact fa57625d9 image/seed and rerun independently reviewed gates. | - |
-| P0 | [AR-1307](tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Diagnose repeated full-exhaustive TLC exit-1 with controlled local reproduction and cgroup/disk/journal evidence; make only evidence-backed termination repair, then rerun focused gates before any new formal dispatch. | - |
 
 ## Blocked
 
