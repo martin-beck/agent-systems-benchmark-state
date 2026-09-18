@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1310.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Runtime-owned provider capture and recording campaign qualification.",
-  "task_revision": 89,
+  "task_revision": 90,
   "title": "Runtime-owned provider capture and recording campaign qualification",
-  "updated_at": "2026-09-18T20:52:05+00:00",
+  "updated_at": "2026-09-18T21:18:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1310-provider-capture-campaign"
 }
 ---
@@ -342,3 +342,7 @@ independently so its promotion is not falsely implied by AR-1160 completion.
   Exact blocker transferred to successor AR-1312 (durably recorded and dependency-linked); this AR
   is now blocked and ownerless pending successor correction and all-green exact-main post-merge
   checks.
+
+- 2026-09-18T21:18:11+00:00: Coverage repair worker authorized to investigate and implement the
+  post-merge 89.99% gate correction; preserve existing implementation evidence and do not weaken
+  threshold.
