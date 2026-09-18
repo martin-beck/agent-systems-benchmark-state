@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Stage16 full-exhaustive is actively running under the 1800-second outer bound; currently transient RC=0 with no terminal attestation yet. Keep lease/monitor; accept only FULL_EXHAUSTIVE_RC=0, evidence validation, exact commit 01f6e000b, and clean poweroff, otherwise record bounded interruption.",
+  "next_action": "Stage16 full-exhaustive exceeded the 1800-second bound with only transient RC=0 and no full attestation; rebuild a pristine data image because interrupted QEMU left the qualification image filesystem inconsistent, then investigate a truthful bounded full-tier fixture/runtime before rerun. Do not merge or claim completion.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 434,
+  "task_revision": 435,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T01:48:52+00:00",
+  "updated_at": "2026-09-18T01:49:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1391,3 +1391,9 @@ and protected publication sequence.
 
 - 2026-09-18T01:48:52+00:00: Recorded command exit 0; command argv SHA-256
   12523641edc602715763658ccb11b1a3e0112e7d892d2ff95f30b47137a01dfe.
+
+- 2026-09-18T01:49:15+00:00: Terminal result: handoffctl recorded QEMU termination by signal 15
+  after the 1800-second outer bound. Serial contains only FULL_EXHAUSTIVE_TRANSIENT_RC=0, no
+  FULL_EXHAUSTIVE_RC, no evidence validator, no clean poweroff. Post-run debugfs reports a block
+  bitmap checksum mismatch on the mutable data image, so discard/rebuild that fixture; prior
+  portable/pr-publication evidence remains separately recorded but this full image is not evidence.
