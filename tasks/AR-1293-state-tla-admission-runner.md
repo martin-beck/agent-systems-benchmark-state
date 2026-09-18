@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1293-state-tla-admission",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-18T01:09:15+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1293",
   "next_action": "AR-1293 remains blocked on AR-1307 PR #24 (eb0da360b6091d5a5f74decfff4da39202226eec) merge and fresh runner handoff. Old ada383cea full VM terminated with serial ending during liveness progress at 47,029,477 generated / 38,798,900 distinct states, with no FULL_EXHAUSTIVE_RC, success marker, attestation, or receipt; classify as interrupted/incomplete, not a model result. After AR-1307 is merged and handed off, rebuild fresh exact fa57625d9 image/seed and rerun required then independently reviewed full gates.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "codex-ar1293-timeout-repair-20260917",
+  "owner": "",
   "plan": "../plans/AR-1293.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 741,
+  "task_revision": 742,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T23:09:15+00:00",
+  "updated_at": "2026-09-18T01:10:56+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -2214,3 +2214,8 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 - 2026-09-17T23:07:55+00:00: Heartbeat by codex-ar1293-timeout-repair-20260917.
 
 - 2026-09-17T23:09:15+00:00: Heartbeat by codex-ar1293-timeout-repair-20260917.
+
+- 2026-09-18T01:10:56+00:00: Recovered expired claim formerly owned by
+  codex-ar1293-timeout-repair-20260917. Recovered stale AR-1293 claim after owner stopped
+  heartbeating at 2026-09-17T23:09:15Z; preserve blocked status and evidence, leave ownerless for
+  reassignment after AR-1307 runner handoff.
