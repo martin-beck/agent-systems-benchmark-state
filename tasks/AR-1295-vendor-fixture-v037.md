@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1295.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Align stale coordinator vendor tests with the verified immutable v0.3.7 pin.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Coordinator vendor v0.3.7 fixture alignment",
-  "updated_at": "2026-09-18T19:13:10+00:00",
+  "updated_at": "2026-09-18T19:47:35+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1295-vendor-fixtures"
 }
 ---
@@ -156,3 +156,10 @@ handoffctl, formal runner behavior, ASB product, or asb-tui.
   next_action exceeds the declared schema length bound. This is an unrelated live AR-1160 owner
   issue; do not alter AR-1160 here. After that owner repairs and exact-head generated state is
   green, re-open AR-1295 only if a publication/review transition remains.
+
+- 2026-09-18T19:47:35+00:00: Re-audit 2026-09-18: generated-state schema validation remains blocked.
+  AR-1160 next_action still exceeds the schema bound; AR-1258 and AR-1303 next_action values also
+  exceed it, and AR-1309 has an empty checkpoint_commit violating the SHA-1 schema. AR-1160 is now
+  ownerless/blocked. AR-1295 fixture remains immutable v0.3.7 on signed+DCO main; no source or
+  policy change is needed here. Reopen only after coordinator repairs the generated-state blockers
+  and exact-head publication transition is actually required.
