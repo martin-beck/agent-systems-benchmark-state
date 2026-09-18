@@ -499,4 +499,3 @@ def parser() -> argparse.ArgumentParser:
 
 if __name__ == "__main__":
     raise SystemExit(run(parser().parse_args()))
-
