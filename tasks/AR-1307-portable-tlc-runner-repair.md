@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 589,
+  "task_revision": 590,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T04:28:27+00:00",
+  "updated_at": "2026-09-18T04:42:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1607,3 +1607,6 @@ and protected publication sequence.
   coordination 35306743512, Huawei headers 35306794847, and AWQ shadow 35306806803 passed. Formal
   35306838470 passed runner/user-bus setup and is executing the exhaustive model. Stale formal
   35305564895 from closed PR #24 was canceled after confirming no process or admission-lock holder.
+
+- 2026-09-18T04:42:58+00:00: Recorded command exit 0; command argv SHA-256
+  b0e7cd52047c90483fbd7dbe9a751e40e20aee93f107df8643206e4be9fde988.
