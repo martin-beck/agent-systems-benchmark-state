@@ -8,7 +8,7 @@
     "AR-0103"
   ],
   "id": "AR-0704",
-  "next_action": "Rebase PR #119 onto current main after merged formal provenance repairs; preserve signed lifecycle commits, run full gates, refresh exact-head CI, and merge only when every required check is green.",
+  "next_action": "After approved /srv/data capacity is available, rerun cargo test --locked --workspace and all remaining full gates; publish clean exact candidate and wait exact-head CI before any merge.",
   "observed_branch": "feature/native-capacity-controller",
   "observed_dirty": 0,
   "observed_head": "e2e3574ed2bbc020105ffb1eb4c5a38691b299a3",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 177,
+  "task_revision": 178,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-18T21:59:53+00:00",
+  "updated_at": "2026-09-18T22:00:01+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -608,3 +608,9 @@ must not block this AR or its dependents.
   1024fc1e6cefa31b078f0b5d2ed85c7ea4586897b388bf1e308f62db58574461.
 
 - 2026-09-18T21:59:53+00:00: Heartbeat by ar0704_rebase_impl.
+
+- 2026-09-18T22:00:01+00:00: Rebased PR #119 onto current origin/main 78a8e9f with exactly two
+  AR-owned lifecycle paths and signed DCO commits 8fa0c40/e2e3574. Focused 14/14, fmt, clippy,
+  repository policy and diff checks pass. Full cargo test stopped at infrastructure ENOSPC after
+  /srv/data reached 100%; only this AR and its stale rebase target caches were cleaned, state
+  integrity verified. Resume full gates after additional approved disk capacity is available.
