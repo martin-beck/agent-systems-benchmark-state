@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add privacy-safe fixed diagnostics for hosted platform evidence failures.",
-  "task_revision": 62,
+  "task_revision": 63,
   "title": "Privacy-safe hosted platform failure diagnostics",
-  "updated_at": "2026-09-18T19:22:44+00:00",
+  "updated_at": "2026-09-18T19:23:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1303-hosted-platform-diagnostics"
 }
 ---
@@ -230,3 +230,6 @@ native qualification route. This AR must not modify runtime behavior or asb-tui.
   and inspect current hosted formal ETXTBSY evidence before any retry; no product or gate changes.
 
 - 2026-09-18T19:22:44+00:00: Claimed by ar1303_ci_infra_repair.
+
+- 2026-09-18T19:23:11+00:00: Recorded command exit 1; command argv SHA-256
+  43b0093da226eea5dd054b985ebacda9e47f0b4ed7ed7143ed2279af6a111395.
