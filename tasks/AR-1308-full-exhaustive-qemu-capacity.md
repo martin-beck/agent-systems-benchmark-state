@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 210,
+  "task_revision": 211,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T16:01:05+00:00",
+  "updated_at": "2026-09-18T16:01:39+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -568,3 +568,7 @@ source code or treating a capacity failure as a model result.
   closed on host SwapFree approximately 232 KiB, below required 1 GiB. Provision an approved
   disposable runner with sufficient host swap and accessible owner-private admission lock, then
   resume and rerun preflight before any QEMU attempt.
+
+- 2026-09-18T16:01:39+00:00: Coordinator is provisioning a disposable second-disk runner: temporary
+  host swap capacity and an owner-accessible admission lock. Resume only to perform measured
+  preflight and preserve fail-closed gates.
