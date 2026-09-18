@@ -85,8 +85,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1283-formal-lockfile` | `feature/ar-1283-formal-lockfile` | `69e8b064d312` | 0 | behind 67, ahead 0 |
 | `agent-systems-benchmark-ar-1284-strict-replay-lifecycle` | `feature/ar-1284-strict-replay-lifecycle` | `f9ddf7ef6b3b` | 0 | behind 59, ahead 0 |
 | `agent-systems-benchmark-ar-1285-runtime-launch-factory` | `feature/ar-1285-runtime-launch-factory` | `0f876c7ae7fd` | 0 | behind 55, ahead 0 |
-| `agent-systems-benchmark-ar-1286-replay-lifecycle-rebased` | `feature/ar-1286-replay-lifecycle-rebased` | `e86da1692413` | 3 | behind 0, ahead 8 |
-| changed files | - | - | - | `crates/asb-cli/src/lib.rs`, `crates/asb-runtime/src/launch_factory.rs`, `docs/examples/asb-cli-workflow-v1.provenance.json` |
+| `agent-systems-benchmark-ar-1286-replay-lifecycle-rebased` | `feature/ar-1286-replay-lifecycle-rebased` | `92dfca738ffe` | 1 | behind 0, ahead 9 |
+| changed files | - | - | - | `crates/asb-runtime/src/sandbox.rs` |
 | `agent-systems-benchmark-ar-1286-supervised-replay-lifecycle` | `feature/ar-1286-supervised-replay-lifecycle` | `eaf7fcbf42ae` | 0 | behind 43, ahead 6 |
 | `agent-systems-benchmark-ar-1287-delegated-sandbox-runner` | `feature/ar-1287-delegated-sandbox-runner` | `dba5f9bb6973` | 0 | behind 41, ahead 0 |
 | `agent-systems-benchmark-ar-1288-certificate-chain-authz` | `feature/ar-1288-certificate-chain-authz` | `7b3ff1d3a874` | 0 | behind 48, ahead 0 |
