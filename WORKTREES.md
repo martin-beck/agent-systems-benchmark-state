@@ -301,36 +301,35 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-audit-sPabk3` | `DETACHED` | `83c3c2022712` | 0 | behind 42, ahead 0 |
 | `asb-policy-repair` | `chore/protected-main-sync-repair` | `2acc009c5b6c` | 0 | behind 28, ahead 0 |
 | `asb-pr173-audit.1BnB0T` | `DETACHED` | `39f90b316faf` | 0 | behind 391, ahead 3 |
-| `agent-systems-benchmark-state` | `main` | `3598e3fc6534` | 0 | behind 0, ahead 0 |
-| `agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity` | `DETACHED` | `659030fffd7e` | 1 | behind 16, ahead 15 |
-| changed files | - | - | - | `tasks/AR-1308-full-exhaustive-qemu-capacity.md` |
-| `agent-systems-benchmark-coordination-assurance` | `feature/coordination-assurance` | `adfde31ad408` | 0 | behind 27881, ahead 0 |
-| `agent-systems-benchmark-coordination-lint-regression` | `fix/handoffctl-apply-resume-lint` | `746042a0e55e` | 0 | behind 22624, ahead 0 |
-| `agent-systems-benchmark-coordinator-merge-attestation` | `fix/coordinator-v014-merge-attestation` | `655817806e2b` | 0 | behind 19706, ahead 0 |
-| `agent-systems-benchmark-state-ar-1293-tla-admission` | `feature/ar-1293-state-tla-admission` | `f1931686c929` | 0 | behind 3870, ahead 4 |
-| `agent-systems-benchmark-state-ar-1293-tla-admission-v2` | `feature/ar-1293-state-tla-admission-v2` | `fa57625d9d25` | 0 | behind 3589, ahead 35 |
-| `agent-systems-benchmark-state-ar-1302-portable-tlc-runner` | `feature/ar-1302-portable-tlc-runner` | `d35c18a5343b` | 1 | behind 3547, ahead 25 |
+| `agent-systems-benchmark-state` | `main` | `c81ca1ba6166` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity` | `feature/ar-1308-full-exhaustive-qemu-capacity` | `659030fffd7e` | 0 | behind 18, ahead 15 |
+| `agent-systems-benchmark-coordination-assurance` | `feature/coordination-assurance` | `adfde31ad408` | 0 | behind 27883, ahead 0 |
+| `agent-systems-benchmark-coordination-lint-regression` | `fix/handoffctl-apply-resume-lint` | `746042a0e55e` | 0 | behind 22626, ahead 0 |
+| `agent-systems-benchmark-coordinator-merge-attestation` | `fix/coordinator-v014-merge-attestation` | `655817806e2b` | 0 | behind 19708, ahead 0 |
+| `agent-systems-benchmark-state-ar-1293-tla-admission` | `feature/ar-1293-state-tla-admission` | `f1931686c929` | 0 | behind 3872, ahead 4 |
+| `agent-systems-benchmark-state-ar-1293-tla-admission-v2` | `feature/ar-1293-state-tla-admission-v2` | `fa57625d9d25` | 0 | behind 3591, ahead 35 |
+| `agent-systems-benchmark-state-ar-1302-portable-tlc-runner` | `feature/ar-1302-portable-tlc-runner` | `d35c18a5343b` | 1 | behind 3549, ahead 25 |
 | changed files | - | - | - | `private/` |
-| `agent-systems-benchmark-state-ar-1304-required-tier-qemu-runner` | `feature/ar-1304-required-tier-qemu-runner` | `923378246980` | 0 | behind 2278, ahead 21 |
-| `agent-systems-benchmark-state-ar-1307-portable-tlc-runner` | `DETACHED` | `7eafd883460e` | 0 | behind 1369, ahead 552 |
-| `agent-systems-benchmark-state-ar-1307-portable-tlc-runner-repair` | `feature/ar-1307-portable-tlc-runner-repair` | `91bbfd5287fd` | 2 | behind 1369, ahead 82 |
+| `agent-systems-benchmark-state-ar-1304-required-tier-qemu-runner` | `feature/ar-1304-required-tier-qemu-runner` | `923378246980` | 0 | behind 2280, ahead 21 |
+| `agent-systems-benchmark-state-ar-1307-portable-tlc-runner` | `DETACHED` | `7eafd883460e` | 0 | behind 1371, ahead 552 |
+| `agent-systems-benchmark-state-ar-1307-portable-tlc-runner-repair` | `feature/ar-1307-portable-tlc-runner-repair` | `91bbfd5287fd` | 2 | behind 1371, ahead 82 |
 | changed files | - | - | - | `tests/test_tlc_runner.py`, `tools/tlc_runner.py` |
-| `agent-systems-benchmark-state-ar-1307-signed-history` | `feature/ar-1307-signed-history` | `ab485f767fbd` | 0 | behind 373, ahead 13 |
-| `agent-systems-benchmark-state-ar-status-document` | `feature/ar-status-document` | `eedd3119c08b` | 0 | behind 27158, ahead 0 |
-| `agent-systems-benchmark-state-ar1061-tmux-isolation` | `docs/ar1061-tmux-live-fixture-isolation` | `51cd8f1d82da` | 1 | behind 10525, ahead 0 |
+| `agent-systems-benchmark-state-ar-1307-signed-history` | `feature/ar-1307-signed-history` | `ab485f767fbd` | 0 | behind 375, ahead 13 |
+| `agent-systems-benchmark-state-ar-status-document` | `feature/ar-status-document` | `eedd3119c08b` | 0 | behind 27160, ahead 0 |
+| `agent-systems-benchmark-state-ar1061-tmux-isolation` | `docs/ar1061-tmux-live-fixture-isolation` | `51cd8f1d82da` | 1 | behind 10527, ahead 0 |
 | changed files | - | - | - | `.runtime` |
-| `agent-systems-benchmark-state-formal-verification` | `fix/handoffctl-ci-dco-merge` | `dfb7061b0239` | 0 | behind 20457, ahead 0 |
-| `agent-systems-benchmark-state-huawei-mit-headers` | `fix/huawei-mit-license-headers` | `3ff44bd93d1a` | 0 | behind 17441, ahead 0 |
-| `agent-systems-benchmark-state-local-llm-testing-recommendations` | `docs/local-llm-testing-recommendations-state` | `1bd496c86c84` | 0 | behind 15762, ahead 4 |
-| `agent-systems-benchmark-state-local-llm-testing-recommendations-clean` | `docs/local-llm-testing-recommendations-state-clean` | `355dd134d222` | 0 | behind 15560, ahead 0 |
-| `agent-systems-benchmark-state-native-arm-policy` | `policy/optional-native-arm64` | `78c9ade2c3e0` | 0 | behind 15029, ahead 0 |
-| `agent-systems-benchmark-state-native-arm-task-policy` | `policy/optional-native-arm64-tasks` | `e76b58553f23` | 0 | behind 14994, ahead 0 |
-| `agent-systems-benchmark-state-promotion` | `feature/transactional-promotion` | `4e56e83d4f09` | 0 | behind 25769, ahead 0 |
-| `agent-systems-benchmark-state-shared-coordinator` | `feature/shared-workflow-coordinator` | `e4fecc1e65e6` | 0 | behind 19829, ahead 0 |
-| `agent-systems-benchmark-state-status-size-repair` | `fix/status-size-observation-cleanup` | `4288aec63ff5` | 0 | behind 10401, ahead 2 |
-| `agent-systems-benchmark-state-verify-coordination-content` | `ci/verify-coordination-content` | `431e5041cebf` | 0 | behind 15080, ahead 0 |
-| `ar1308-ar1307-source` | `DETACHED` | `ab485f767fbd` | 0 | behind 373, ahead 13 |
-| `asb-state-ar1198` | `ar1198-catalog-digest` | `f660ec7db80c` | 2 | behind 10124, ahead 0 |
+| `agent-systems-benchmark-state-formal-verification` | `fix/handoffctl-ci-dco-merge` | `dfb7061b0239` | 0 | behind 20459, ahead 0 |
+| `agent-systems-benchmark-state-huawei-mit-headers` | `fix/huawei-mit-license-headers` | `3ff44bd93d1a` | 0 | behind 17443, ahead 0 |
+| `agent-systems-benchmark-state-local-llm-testing-recommendations` | `docs/local-llm-testing-recommendations-state` | `1bd496c86c84` | 0 | behind 15764, ahead 4 |
+| `agent-systems-benchmark-state-local-llm-testing-recommendations-clean` | `docs/local-llm-testing-recommendations-state-clean` | `355dd134d222` | 0 | behind 15562, ahead 0 |
+| `agent-systems-benchmark-state-native-arm-policy` | `policy/optional-native-arm64` | `78c9ade2c3e0` | 0 | behind 15031, ahead 0 |
+| `agent-systems-benchmark-state-native-arm-task-policy` | `policy/optional-native-arm64-tasks` | `e76b58553f23` | 0 | behind 14996, ahead 0 |
+| `agent-systems-benchmark-state-promotion` | `feature/transactional-promotion` | `4e56e83d4f09` | 0 | behind 25771, ahead 0 |
+| `agent-systems-benchmark-state-shared-coordinator` | `feature/shared-workflow-coordinator` | `e4fecc1e65e6` | 0 | behind 19831, ahead 0 |
+| `agent-systems-benchmark-state-status-size-repair` | `fix/status-size-observation-cleanup` | `4288aec63ff5` | 0 | behind 10403, ahead 2 |
+| `agent-systems-benchmark-state-verify-coordination-content` | `ci/verify-coordination-content` | `431e5041cebf` | 0 | behind 15082, ahead 0 |
+| `ar1308-ar1307-source` | `DETACHED` | `ab485f767fbd` | 0 | behind 375, ahead 13 |
+| `asb-state-ar1198` | `ar1198-catalog-digest` | `f660ec7db80c` | 2 | behind 10126, ahead 0 |
 | changed files | - | - | - | `plans/AR-1198.md`, `tasks/AR-1198.md` |
-| `review-ar1308-e11` | `DETACHED` | `e11adae64fc3` | 0 | behind 282, ahead 3 |
-| `asb-state-ar0806-schema-maint` | `maintenance/ar0806-next-action-20260909` | `810984b7a3b7` | 0 | behind 17637, ahead 0 |
+| `review-ar1308-e11` | `DETACHED` | `e11adae64fc3` | 0 | behind 284, ahead 3 |
+| `asb-state-ar0806-schema-maint` | `maintenance/ar0806-next-action-20260909` | `810984b7a3b7` | 0 | behind 17639, ahead 0 |
