@@ -8,7 +8,7 @@
     "AR-0103"
   ],
   "id": "AR-0704",
-  "next_action": "Formal provenance owners must repair TLA v1.8.0 byte/hash mismatch before PR #119 exact-head rerun; AR-0704 source needs no change.",
+  "next_action": "Rebase PR #119 onto current main after merged formal provenance repairs; preserve signed lifecycle commits, run full gates, refresh exact-head CI, and merge only when every required check is green.",
   "observed_branch": "feature/native-capacity-controller",
   "observed_dirty": 0,
   "observed_head": "28f30eea80efef5a61ea438e77402f8640564cc9",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 113,
+  "task_revision": 114,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-18T21:35:30+00:00",
+  "updated_at": "2026-09-18T21:35:57+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -424,3 +424,10 @@ must not block this AR or its dependents.
 
 - 2026-09-18T21:35:30+00:00: Recorded command exit 0; command argv SHA-256
   f3ee8e02a9bfd0a29686c93f72445327b2d56616a21cd4eb1dc471eb2f380b74.
+
+- 2026-09-18T21:35:57+00:00: Fresh audit 2026-09-18: PR #119 remains exact head 28f30eea,
+  signed/DCO, 11 required checks green, Formal assurance failed only because its old branch pins
+  official TLA artifact 4490679 bytes/SHA a1fc0bfe. Current origin/main includes merged formal
+  provenance repairs and pins deterministic source-build artifact 4512486 bytes/SHA 8c200a88 via
+  AR-0877/0906/0907 merges. The AR-0704 branch still has the stale pin, so no rerun or merge is
+  authorized until a signed rebase/update and complete exact-head CI.
