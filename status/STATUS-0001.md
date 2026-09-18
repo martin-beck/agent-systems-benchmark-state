@@ -11,14 +11,14 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 4 |
+| **In progress** | Claimed work with a live lease | 3 |
 | **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 46 |
 | **Planned** | Defined work awaiting promotion or dependencies | 57 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 217 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
-| **Superseded** | Replaced by another AR | 10 |
+| **Superseded** | Replaced by another AR | 11 |
 
 ## Dependency graph
 
@@ -387,7 +387,7 @@ flowchart LR
         AR_1291["AR-1291 - Done"]:::status_done
         AR_1292["AR-1292 - Blocked"]:::status_blocked
         AR_1293["AR-1293 - Open"]:::status_open
-        AR_1294["AR-1294 - In progress"]:::status_in_progress
+        AR_1294["AR-1294 - Superseded"]:::status_superseded
         AR_1295["AR-1295 - In progress"]:::status_in_progress
         AR_1296["AR-1296 - Done"]:::status_done
         AR_1297["AR-1297 - Done"]:::status_done
@@ -1655,12 +1655,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (4)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1160](../tasks/AR-1160.md): Wizard control API | codex-ar1160-control-20260918 | Wizard control API | Post-merge exact-main verification for f7602a73e4fc7a5d9af4f675b8772680d2612066 is terminal green across all seven workflows: Repository quality 35374843154, Rust 35374843254, fault 35374843244, formal 35374843115, aarch64 35374843171, hosted portability 35374843061, headers 35374843105. Follow-up coverage repair is complete. Prepare the next fresh scoped ASB implementation AR/branch for provider-bound capture wiring, durable cassette reconciliation, and offline-default activation; keep AR-1160 open until remaining scope is complete. |
-| P0 | [AR-1294](../tasks/AR-1294-state-gate-baseline.md): State formal-gate baseline integrity | codex-ar1294-baseline-review-20260918 | Restore vendor and formal admission baseline integrity needed to qualify AR-1293. | Audit the vendor lock/digest mismatch and root-owned TLC admission lock; repair only through immutable provenance and owner-safe lock handling, then rerun full state/formal gates. |
 | P0 | [AR-1295](../tasks/AR-1295-vendor-fixture-v037.md): Coordinator vendor v0.3.7 fixture alignment | asb-ar1295-vendor-fixtures-20260918 | Align stale coordinator vendor tests with the verified immutable v0.3.7 pin. | Open a review PR from the clean exact fixture head after repairing the unrelated generated-state schema blocker: AR-1160 next_action exceeds the schema length bound. Preserve the v0.3.7 fixture and do not change handoffctl/vendor code. |
 | P0 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | codex-ar1308-fixture-repair-20260918 | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Launch one bounded QEMU with fresh overlay7 and state/.git provenance seed; inspect TLC result and attestation. |
 
@@ -1740,3 +1739,4 @@ flowchart LR
 | P0 | [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md): Add the standalone TUI configuration center | Unclaimed | Add a searchable configuration menu for frontend preferences and benchmark defaults. | Implement the non-secret configuration center foundation after the visual system and ASB wizard control API are stable; AR-1170 owns provider, authentication and default integration. |
 | P0 | [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md): Build recent-runs, report and comparison workspaces | Unclaimed | Add searchable recent runs, report inspection and evidence-qualified comparison workspaces. | Implement report and comparison screens after recording workflows publish stable live and strict-replay source labels. |
 | P0 | [AR-1170](../tasks/AR-1170.md): Standalone TUI wizard | Unclaimed | Guide TUI setup through analysis. | Read the plan. |
+| P0 | [AR-1180](../tasks/AR-1180.md): Cross-project wizard qualification | Unclaimed | Qualify the complete wizard. | Read the plan. |

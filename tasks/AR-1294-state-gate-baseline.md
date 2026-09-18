@@ -2,22 +2,22 @@
 {
   "branch": "repair/ar-1294-state-gate-baseline",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-18T19:38:40+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1294",
   "next_action": "Audit the vendor lock/digest mismatch and root-owned TLC admission lock; repair only through immutable provenance and owner-safe lock handling, then rerun full state/formal gates.",
   "observed_branch": "repair/ar-1294-state-gate-baseline",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "codex-ar1294-baseline-review-20260918",
+  "owner": "",
   "plan": "../plans/AR-1294.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "superseded",
   "summary": "Restore vendor and formal admission baseline integrity needed to qualify AR-1293.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "State formal-gate baseline integrity",
-  "updated_at": "2026-09-18T19:08:40+00:00",
+  "updated_at": "2026-09-18T19:08:43+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1294-gate-baseline"
 }
 ---
@@ -85,3 +85,11 @@ formal checks, or manipulate another service's lock.
   task without overlapping AR-1295 or AR-1308.
 
 - 2026-09-18T19:08:40+00:00: Claimed by codex-ar1294-baseline-review-20260918.
+
+- 2026-09-18T19:08:43+00:00: Durable audit: AR-1294 vendor provenance baseline was repaired and
+  verified at immutable coordinator v0.3.7 pin 550c014c440cc9bc45727fea71d90a9025c554c3, with
+  handoffctl_vendor verification passing. The remaining formal admission concern was explicitly
+  deferred to successor AR-1293, which owns the isolated state-scoped owner-safe TLC runner;
+  AR-1307/AR-1308 now own its qualified portable/full-exhaustive runner and disposable capacity.
+  AR-1294 must not manipulate the external gha-workflow-coordinator root lock. No AR-1294 source or
+  product work remains; preserve prior evidence and successor gating.
