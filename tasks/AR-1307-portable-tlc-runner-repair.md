@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Rebuild pinned JDK staging with symlinks resolved (cp -aL), verify java.home/conf/security/java.security exists inside guest data image, then rerun one fresh no-NIC 32 GiB portable-smoke. Do not advance higher tiers.",
+  "next_action": "Refresh stage from PR head 1a3e37665, rebuild fresh data with resolved JDK and unique seed, run portable-smoke, and inspect checkout-bound attestation under /mnt/asb-data/state/evidence. Only after validated portable evidence may higher tiers start.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,7 +17,7 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 248,
+  "task_revision": 249,
   "title": "Portable TLC runner repair and qualification",
   "updated_at": "2026-09-18T00:13:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
@@ -813,3 +813,9 @@ and protected publication sequence.
   adbfd17bd5a46378d72f07219f1688bced64b1502623c7575151571fe8da7dcf.
 
 - 2026-09-18T00:13:54+00:00: Heartbeat by codex-ar1307-runner-repair-20260918.
+
+- 2026-09-18T00:13:54+00:00: Stage6 proved self-contained resolved-JDK closure and reached
+  attest.py, which correctly rejected the prior external evidence path /mnt/asb-data/evidence. Guest
+  seed and focused test contract now bind attestation/results under the checked-out state root
+  /mnt/asb-data/state/evidence. Focused tests pass 25/25. PR remote exact head is 1a3e37665; no
+  attestation or merge yet.
