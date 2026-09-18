@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Build fresh stage10 data image from checkout ca43179ea (not stage9), verify debugfs root state/jvm/tla2tools and source HEAD ca43179ea, regenerate unique seed, rerun portable-smoke, extract/validate attestation commit equals ca43179ea.",
+  "next_action": "Build fresh stage11 data/seed/overlay from PR head cc1fe0bdd, verify embedded HEAD and evidence directory ownership, run one exact-head portable-smoke, and require attestation commit cc1fe0bdd.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 327,
+  "task_revision": 328,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T00:39:47+00:00",
+  "updated_at": "2026-09-18T00:40:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1054,3 +1054,9 @@ and protected publication sequence.
 
 - 2026-09-18T00:39:47+00:00: Recorded command exit 0; command argv SHA-256
   adbfd17bd5a46378d72f07219f1688bced64b1502623c7575151571fe8da7dcf.
+
+- 2026-09-18T00:40:05+00:00: Stage10 exact-head run confirmed source checkout ca43179ea and reached
+  portable TLC, but attestation failed because state/evidence was created after recursive chown and
+  remained root-owned; output_parent.chmod raised PermissionError. Added post-creation chown for
+  state/tmp and state/evidence. Focused tests pass 25/25. Fix pushed as signed commit 980a5343d; PR
+  remote head is cc1fe0bdd. No higher tiers or merge.
