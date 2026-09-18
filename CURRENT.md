@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1307](tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Signed repair d0db32adf is remote PR head; obtain independent review and exact-head CI. Worker state branch is 8a7b418a2 and source PR branch is d0db32adf. Only after green review/CI, rebuild pristine full fixture and rerun full-exhaustive; do not merge before terminal attestation. | codex-ar1307-runner-repair-20260918 |
+| P0 | [AR-1307](tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Supervision repair d0db32adf is SSH-signed/DCO, focused tests 31/31, and exact PR head. Worker state branch now fast-forwarded with signed merge 5ab4ffe2d. Obtain independent review/exact-head CI; only then rebuild pristine full fixture and rerun full-exhaustive; do not merge before terminal attestation. | codex-ar1307-runner-repair-20260918 |
 
 ## Open
 
