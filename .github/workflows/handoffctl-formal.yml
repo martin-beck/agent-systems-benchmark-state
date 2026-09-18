@@ -116,6 +116,22 @@ jobs:
             DBUS_SESSION_BUS_ADDRESS="unix:path=$bus_path" \
             systemctl --user show-environment >/dev/null
 
+      - name: Admit the preloaded offline TLC artifact
+        shell: bash
+        run: |
+          set -euo pipefail
+          jar=/srv/data/projects/asb-state-tlc-data-f16d2cb41/tla2tools.jar
+          digest=936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88
+          if [[ ! -f "$jar" || -L "$jar" ]]; then
+            echo "::error::reviewed offline TLC artifact is missing or is a symlink: $jar"
+            exit 1
+          fi
+          printf '%s  %s\n' "$digest" "$jar" | sha256sum --check --strict
+          {
+            echo "TLC_JAR_PATH=$jar"
+            echo "TLC_JAR_SHA256=$digest"
+          } >> "$GITHUB_ENV"
+
       - name: Check exhaustive concurrent-state model
         run: uv run python tools/run_formal_tier.py --tier full-exhaustive
 
