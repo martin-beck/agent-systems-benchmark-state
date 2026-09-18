@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 462,
+  "task_revision": 463,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T02:29:52+00:00",
+  "updated_at": "2026-09-18T02:30:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1487,3 +1487,6 @@ and protected publication sequence.
   producing success attestation. Added focused receipt contract test; formal-launcher plus TLC tests
   pass 31/31. This addresses the runner supervision path; stage17 remains SUBPROCESS_INTERRUPTED and
   no full success is claimed.
+
+- 2026-09-18T02:30:00+00:00: Recorded command exit 0; command argv SHA-256
+  17b43a7c826a95908dbc80c2245b87acdf3aad22f4d08a56f3439a972693545e.
