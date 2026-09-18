@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1292.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Repair or formally retain the pinned TLA+ artifact provenance mismatch blocking formal assurance.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Pinned TLA+ artifact provenance repair",
-  "updated_at": "2026-09-17T04:39:56+00:00",
+  "updated_at": "2026-09-18T21:09:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1292-tla-provenance"
 }
 ---
@@ -72,3 +72,6 @@ verification, alter native-capacity behavior, or touch asb-tui.
   has no source-to-binary signature/attestation; old asset 551753628 is gone and prior
   source/artifact pins are inconsistent. Require signed/attested immutable provenance or
   deterministic current-source rebuild before any hash update or PR #119 requalification.
+
+- 2026-09-18T21:09:56+00:00: Bounded provenance re-audit authorized; verify live v1.8.0 release, tag
+  signature, artifact attestation, and source binding without changing the pinned fixture.
