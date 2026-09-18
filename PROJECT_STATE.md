@@ -27,13 +27,13 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35373092871 | `278abfde3b56` | push | Emulated aarch64 portability | in_progress:- |
-| 35373092835 | `278abfde3b56` | push | Fault assurance | in_progress:- |
-| 35373092833 | `278abfde3b56` | push | Formal assurance | in_progress:- |
+| 35373092871 | `278abfde3b56` | push | Emulated aarch64 portability | completed:success |
+| 35373092835 | `278abfde3b56` | push | Fault assurance | completed:success |
+| 35373092833 | `278abfde3b56` | push | Formal assurance | completed:success |
 | 35373092762 | `278abfde3b56` | push | Huawei MIT source headers | completed:success |
-| 35373092701 | `278abfde3b56` | push | Rust verification | in_progress:- |
+| 35373092701 | `278abfde3b56` | push | Rust verification | completed:success |
 | 35373092644 | `278abfde3b56` | push | Hosted portability and native qualification | completed:success |
-| 35373092634 | `278abfde3b56` | push | Repository quality | in_progress:- |
+| 35373092634 | `278abfde3b56` | push | Repository quality | completed:failure |
 | 35370825762 | `3db1f4ccc86e` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 35370825719 | `3db1f4ccc86e` | pull_request | Emulated aarch64 portability | completed:success |
 | 35370825683 | `3db1f4ccc86e` | pull_request | Formal assurance | completed:success |
