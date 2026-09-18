@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 158,
+  "task_revision": 159,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-18T21:53:26+00:00",
+  "updated_at": "2026-09-18T21:54:14+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -564,3 +564,6 @@ must not block this AR or its dependents.
   gates and exact-head CI. Unrelated PR #230/AR-1313 was not merged or accepted as AR-0704 evidence.
 
 - 2026-09-18T21:53:26+00:00: Claimed by ar0704_rebase_impl.
+
+- 2026-09-18T21:54:14+00:00: Recorded command exit 0; command argv SHA-256
+  8d1ddb3b4a240498846cf6bc9e7b0527a9f212355d8f7646d0226c570c56be84.
