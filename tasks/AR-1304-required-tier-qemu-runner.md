@@ -10,7 +10,7 @@
   "next_action": "Independent exact-head review of signed commits 56001d6e2, 151bd0f99, de489eac9, and current seed/receipt chain; then hand required pr-publication evidence to AR-1293. Do not run full-exhaustive until coordinator accepts the attestation.",
   "observed_branch": "",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "ca9c4d9368f8c137d65354fd22c54c118d33d7e1",
   "owner": "",
   "plan": "../plans/AR-1304.md",
   "priority": "P0",

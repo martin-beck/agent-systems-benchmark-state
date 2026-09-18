@@ -10,7 +10,7 @@
   "next_action": "Promote after review; qualify dbus-user-session and systemd user-manager support in a fresh offline guest image, then hand the immutable image to AR-1304.",
   "observed_branch": "",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "00a47726683609b7fef8ea5738fed5a3692fac29",
   "owner": "",
   "plan": "../plans/AR-1305.md",
   "priority": "P0",
