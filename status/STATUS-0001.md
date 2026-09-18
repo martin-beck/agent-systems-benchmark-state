@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**340 ARs tracked** across 6 active status categories.
+**340 ARs tracked** across 7 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 48 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
@@ -119,7 +119,7 @@ flowchart LR
         AR_0701["AR-0701 - Done"]:::status_done
         AR_0702["AR-0702 - Done"]:::status_done
         AR_0703["AR-0703 - Future"]:::status_future
-        AR_0704["AR-0704 - Open"]:::status_open
+        AR_0704["AR-0704 - In progress"]:::status_in_progress
         AR_0705["AR-0705 - Planned"]:::status_planned
         AR_0706["AR-0706 - Planned"]:::status_planned
         AR_0707["AR-0707 - Done"]:::status_done
@@ -1668,11 +1668,16 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0704](../tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | Formal provenance owners must repair TLA v1.8.0 byte/hash mismatch before PR #119 exact-head rerun; AR-0704 source needs no change. |
+| P1 | [AR-0704](../tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | asb-ar0704-pr119-audit-20260918 | Control genuine native platform capacity lifecycle. | Formal provenance owners must repair TLA v1.8.0 byte/hash mismatch before PR #119 exact-head rerun; AR-0704 source needs no change. |
+
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P1 | [AR-1250](../tasks/AR-1250-mockagents-harness-extension.md): Extend MockAgents qualification harness | Unclaimed | Extend the pinned MockAgents executable qualification harness. | Acquire approved pinned arm64 emulator runner; then run arm64 repeat qualification. |
 
 ### Blocked (48)

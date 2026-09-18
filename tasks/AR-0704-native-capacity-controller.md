@@ -2,7 +2,7 @@
 {
   "branch": "feature/native-capacity-controller",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-18T23:30:13+00:00",
   "depends_on": [
     "AR-0701",
     "AR-0103"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/native-capacity-controller",
   "observed_dirty": 0,
   "observed_head": "28f30eea80efef5a61ea438e77402f8640564cc9",
-  "owner": "",
+  "owner": "asb-ar0704-pr119-audit-20260918",
   "plan": "../plans/AR-0704.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 88,
+  "task_revision": 89,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-18T21:30:08+00:00",
+  "updated_at": "2026-09-18T21:30:13+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -350,3 +350,5 @@ must not block this AR or its dependents.
 
 - 2026-09-18T21:30:08+00:00: Fresh coordinator-authorized exact-head and formal provenance audit
   after formal successor merges; preserve native-capacity scope and fail closed.
+
+- 2026-09-18T21:30:13+00:00: Claimed by asb-ar0704-pr119-audit-20260918.

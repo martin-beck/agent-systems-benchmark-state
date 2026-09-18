@@ -3,11 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Control genuine native platform capacity lifecycle. | Formal provenance owners must repair TLA v1.8.0 byte/hash mismatch before PR #119 exact-head rerun; AR-0704 source needs no change. | asb-ar0704-pr119-audit-20260918 |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Control genuine native platform capacity lifecycle. | Formal provenance owners must repair TLA v1.8.0 byte/hash mismatch before PR #119 exact-head rerun; AR-0704 source needs no change. | - |
 | P1 | [AR-1250](tasks/AR-1250-mockagents-harness-extension.md): Extend MockAgents qualification harness | Extend the pinned MockAgents executable qualification harness. | Acquire approved pinned arm64 emulator runner; then run arm64 repeat qualification. | - |
 
 ## Blocked
