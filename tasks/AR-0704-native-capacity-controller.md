@@ -2,7 +2,7 @@
 {
   "branch": "feature/native-capacity-controller",
   "checkpoint_commit": "e2e3574ed2bbc020105ffb1eb4c5a38691b299a3",
-  "claim_expires": "2026-09-18T22:46:48+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0701",
     "AR-0103"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/native-capacity-controller",
   "observed_dirty": 0,
   "observed_head": "e2e3574ed2bbc020105ffb1eb4c5a38691b299a3",
-  "owner": "coordinator-ar0704-routing",
+  "owner": "",
   "plan": "../plans/AR-0704.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 236,
+  "task_revision": 237,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-18T22:36:50+00:00",
+  "updated_at": "2026-09-18T22:36:53+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -793,3 +793,6 @@ must not block this AR or its dependents.
 - 2026-09-18T22:36:48+00:00: Claimed by coordinator-ar0704-routing.
 
 - 2026-09-18T22:36:50+00:00: Shortened next_action below schema limit.
+
+- 2026-09-18T22:36:53+00:00: Ownerless blocked; exact CI coverage failure remains, with corrected
+  concise next_action.
