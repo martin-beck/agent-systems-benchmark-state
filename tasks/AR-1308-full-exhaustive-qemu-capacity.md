@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "checkpoint_commit": "df0e402f442468e43e06b7c1acb3c3667277fb75",
-  "claim_expires": "2026-09-18T16:23:48+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1304"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
-  "owner": "codex-ar1308-qemu-capacity-20260918",
+  "owner": "",
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 209,
+  "task_revision": 210,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T16:00:56+00:00",
+  "updated_at": "2026-09-18T16:01:05+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -563,3 +563,8 @@ source code or treating a capacity failure as a model result.
   free and 28 GiB available memory. Canonical /srv/data/projects/.asb-tlc admission lock is
   owner-private to gha-asb-state and inaccessible to this worker, so no full run was attempted. A
   temporary accessible lock was used only to expose the host-swap blocker; no gate was weakened.
+
+- 2026-09-18T16:01:05+00:00: Blocked after merged PR #26: governed post-merge preflight failed
+  closed on host SwapFree approximately 232 KiB, below required 1 GiB. Provision an approved
+  disposable runner with sufficient host swap and accessible owner-private admission lock, then
+  resume and rerun preflight before any QEMU attempt.
