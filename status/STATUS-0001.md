@@ -1659,7 +1659,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | codex-ar1308-runner-provision-20260918 | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Provision an approved disposable runner with &gt;=1 GiB free host swap and accessible owner-private admission lock; rerun preflight, then one bounded exact-head QEMU attempt. |
+| P0 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | codex-ar1308-runner-provision-20260918 | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Repair/rebuild the disposable data fixture so the seed can read pinned JDK security files at its reviewed path; verify image fsck/hash and serial bootstrap, then rerun preflight before one bounded QEMU attempt. |
 
 ### Open (3)
 

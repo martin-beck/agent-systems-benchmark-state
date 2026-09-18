@@ -7,7 +7,7 @@
     "AR-1304"
   ],
   "id": "AR-1308",
-  "next_action": "Provision an approved disposable runner with >=1 GiB free host swap and accessible owner-private admission lock; rerun preflight, then one bounded exact-head QEMU attempt.",
+  "next_action": "Repair/rebuild the disposable data fixture so the seed can read pinned JDK security files at its reviewed path; verify image fsck/hash and serial bootstrap, then rerun preflight before one bounded QEMU attempt.",
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 253,
+  "task_revision": 254,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T16:20:24+00:00",
+  "updated_at": "2026-09-18T16:20:33+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -700,3 +700,10 @@ source code or treating a capacity failure as a model result.
   diagnosed bootstrap fixture mismatch; no qualification run authorized.
 
 - 2026-09-18T16:20:24+00:00: Claimed by codex-ar1308-runner-provision-20260918.
+
+- 2026-09-18T16:20:33+00:00: Durable next action corrected after serial diagnosis. The merged
+  AR-1308 seed invokes the mounted JDK, whose security links require
+  /mnt/asb-data/etc/java-17-openjdk; the prepared fixture instead exposes etc-java-17-openjdk. The
+  guest therefore powers off before attestation. AR-1293 signed commits d57b495b9, 92238e735, and
+  9b9491d08 document the canonical private fixed-JDK/security-file repair, but are not merged into
+  AR-1308. No qualification claim.
