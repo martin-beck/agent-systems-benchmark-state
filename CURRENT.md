@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1310](tasks/AR-1310-provider-capture-campaign.md): Runtime-owned provider capture and recording campaign qualification | Runtime-owned provider capture and recording campaign qualification. | Route DCO failure for pre-existing merge 909078c to a dedicated merge-integrity AR; separately rerun a supported exact-main post-merge Repository quality path that reports coverage. Local tree is 90.48%, but hosted run 35396621049 did not qualify. Keep AR-1312 blocked. | - |
+| P0 | [AR-1310](tasks/AR-1310-provider-capture-campaign.md): Runtime-owned provider capture and recording campaign qualification | Runtime-owned provider capture and recording campaign qualification. | Route DCO failure for pre-existing merge 909078c to a dedicated merge-integrity AR; separately rerun a supported exact-main post-merge Repository quality path that reports coverage. Local tree is 90.48%, but hosted run 35396621049 did not qualify. Keep AR-1312 blocked. | ar1310_exactmain_rerun |
 
 ## Blocked
 
