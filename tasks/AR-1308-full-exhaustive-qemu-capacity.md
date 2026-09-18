@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 454,
+  "task_revision": 455,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T17:57:35+00:00",
+  "updated_at": "2026-09-18T17:57:50+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1342,3 +1342,6 @@ source code or treating a capacity failure as a model result.
   top-level git; GIT_DIR=/mnt/asb-data/git caused provenance failure. Seed now uses
   GIT_DIR=/mnt/asb-data/state/.git, retains state work tree, and adds exact safe-directory/ownership
   setup. Fresh overlay7 built; governed preflight passed.
+
+- 2026-09-18T17:57:50+00:00: Recorded command exit 0; command argv SHA-256
+  32e712471e499450a053e957b29f02727a1fbfee61f9851c66d20fa7a481e613.
