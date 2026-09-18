@@ -16,11 +16,11 @@
   "plan": "../plans/AR-0704.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 179,
+  "task_revision": 180,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-18T22:00:47+00:00",
+  "updated_at": "2026-09-18T22:06:26+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -620,3 +620,7 @@ must not block this AR or its dependents.
   and diff evidence; no clean full-gate/publication claim. Resume only after additional approved
   second-disk capacity, then rerun cargo test --locked --workspace and all remaining gates before
   exact-head CI/merge.
+
+- 2026-09-18T22:06:26+00:00: Authorized bounded capacity-reclamation audit: reclaim only unowned
+  generated Cargo targets/caches, preserve source and formal evidence, then rerun full gates if
+  capacity suffices.
