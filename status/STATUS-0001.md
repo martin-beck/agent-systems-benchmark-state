@@ -1656,7 +1656,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1151](../tasks/AR-1151.md): Strict offline replay | codex_ar1151_followup | Replay strictly without providers. | Implement the remaining AR-1160 control operations: authenticated agent catalog, recording campaign launch/progress/coverage reconciliation/cancel and offline-default activation; then wire AR-1170 TUI wizard actions against those operations. Publish exact heads after GitHub email verification. |
+| P0 | [AR-1151](../tasks/AR-1151.md): Strict offline replay | codex_ar1151_followup | Replay strictly without providers. | Monitor PR #225 and #116 hosted gates; after green review/merge, continue AR-1160 implementation of campaign launch/progress/cancel/coverage/offline-default operations and then AR-1170 mutation/auth wizard actions. |
 | P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | codex-ar1307-metadata-repair-20260918 | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Await formal run 35342513872 on exact head ab485f767; if terminal green, independently review and complete merge gates, otherwise diagnose its bounded failure before any retry. |
 
 ### Open (1)
