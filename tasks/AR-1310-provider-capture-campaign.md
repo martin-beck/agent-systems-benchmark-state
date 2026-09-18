@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Runtime-owned provider capture and recording campaign qualification.",
-  "task_revision": 112,
+  "task_revision": 113,
   "title": "Runtime-owned provider capture and recording campaign qualification",
-  "updated_at": "2026-09-18T23:01:38+00:00",
+  "updated_at": "2026-09-18T23:01:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1310-provider-capture-campaign"
 }
 ---
@@ -409,3 +409,6 @@ independently so its promotion is not falsely implied by AR-1160 completion.
   historical 909078c DCO blocker and AR-1312 dependency.
 
 - 2026-09-18T23:01:38+00:00: Claimed by ar1310_exactmain_rerun.
+
+- 2026-09-18T23:01:47+00:00: Recorded command exit 0; command argv SHA-256
+  493276d5414104db09a78a144750702bd68d4b359a663ebfeb76e3a05bd61d5b.
