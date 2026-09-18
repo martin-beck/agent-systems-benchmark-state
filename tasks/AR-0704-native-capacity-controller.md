@@ -2,7 +2,7 @@
 {
   "branch": "feature/native-capacity-controller",
   "checkpoint_commit": "e2e3574ed2bbc020105ffb1eb4c5a38691b299a3",
-  "claim_expires": "2026-09-18T23:22:45+00:00",
+  "claim_expires": "2026-09-18T23:28:52+00:00",
   "depends_on": [
     "AR-0701",
     "AR-0103"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 221,
+  "task_revision": 222,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-18T22:25:23+00:00",
+  "updated_at": "2026-09-18T22:28:52+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -748,3 +748,5 @@ must not block this AR or its dependents.
   mergeable/open. Required CI runs 35401437280, 35401437351, 35401437224, 35401437264, 35401437247,
   35401437295 are in progress; header and AWQ shadow checks 35401437239/35401437238 are green. No
   merge attempted.
+
+- 2026-09-18T22:28:52+00:00: Heartbeat by ar0704_capacity_reclaim.
