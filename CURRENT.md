@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1151](tasks/AR-1151.md): Strict offline replay | Replay strictly without providers. | Advance PR #225 provider/model catalog through exact-head review, then implement idempotent configuration/provider/auth mutations and recording campaign/offline-default operations; qualify all seven workloads before handing contracts to asb-tui. | codex_ar1151_followup |
+| P0 | [AR-1151](tasks/AR-1151.md): Strict offline replay | Replay strictly without providers. | Advance PR #225 through exact-head review and CI, then implement idempotent configuration/provider/auth mutations and recording campaign/offline-default operations; qualify all seven workloads before handing exact contracts to asb-tui. | codex_ar1151_followup |
 | P0 | [AR-1307](tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Await fresh DCO/vendor/strict CI on exact head 590dd6c5d; then diagnose repeated full TLC exit-1 with captured stdout and repair only proven causes before qualification. | codex-ar1307-metadata-repair-20260918 |
 
 ## Open
