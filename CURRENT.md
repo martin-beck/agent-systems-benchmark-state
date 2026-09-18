@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1308](tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Fix state observation, then exact-head review and green CI; run bounded QEMU only after. | codex-ar1308-qemu-capacity-20260918 |
+| P0 | [AR-1308](tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Review exact head and green CI; run bounded QEMU only after. | codex-ar1308-qemu-capacity-20260918 |
 
 ## Open
 

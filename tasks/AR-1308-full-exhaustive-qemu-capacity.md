@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "ed70f0b6d95e577d1fb8cc4ca32bba95d513bb6b",
   "claim_expires": "2026-09-18T15:54:46+00:00",
   "depends_on": [
     "AR-1304"
   ],
   "id": "AR-1308",
-  "next_action": "Fix state observation, then exact-head review and green CI; run bounded QEMU only after.",
+  "next_action": "Review exact head and green CI; run bounded QEMU only after.",
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "ed70f0b6d95e577d1fb8cc4ca32bba95d513bb6b",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 152,
+  "task_revision": 153,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T15:37:28+00:00",
+  "updated_at": "2026-09-18T15:37:51+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -418,3 +418,7 @@ source code or treating a capacity failure as a model result.
 
 - 2026-09-18T15:37:28+00:00: Recorded command exit 0; command argv SHA-256
   0ed9acf954162e40651c9aa2aefbe7d0b07b0fd4794d7584178017119e46a4f2.
+
+- 2026-09-18T15:37:51+00:00: Checkpoint recorded through handoffctl for signed implementation head
+  ed70f0b6d95e577d1fb8cc4ca32bba95d513bb6b. Formal runner, tier fixtures, approved runtime paths,
+  vendor digest, and coverage fixes are in the PR; no QEMU run yet.
