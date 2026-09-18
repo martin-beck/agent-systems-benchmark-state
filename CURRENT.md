@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1307](tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Repair preload/no-network/attestation gaps, rebase PR #25 onto current main, rerun required gates, and qualify only after terminal green formal evidence. | codex-ar1307-metadata-repair-20260918 |
+| P0 | [AR-1307](tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Run focused/full gates on exact pushed head 25ab3b860; repair measured attestation and isolated runner blockers before any merge or qualification. | codex-ar1307-metadata-repair-20260918 |
 
 ## Open
 

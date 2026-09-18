@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Repair preload/no-network/attestation gaps, rebase PR #25 onto current main, rerun required gates, and qualify only after terminal green formal evidence.",
+  "next_action": "Run focused/full gates on exact pushed head 25ab3b860; repair measured attestation and isolated runner blockers before any merge or qualification.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "969eef05834a4ce5f711bbafaa5798549abd95c8",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 656,
+  "task_revision": 657,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T06:14:06+00:00",
+  "updated_at": "2026-09-18T06:14:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1810,3 +1810,10 @@ and protected publication sequence.
   f3fc3934df4dee817adf6d4702641c8286e0f9944ac55b04fa56556f5dbb4212.
 
 - 2026-09-18T06:14:06+00:00: Heartbeat by codex-ar1307-metadata-repair-20260918.
+
+- 2026-09-18T06:14:28+00:00: Formal run 35309351851 terminated 2026-09-18T06:00:52Z at exact head
+  b2010efb5 with exit 1: TLC execution failed closed and emitted no success attestation. Corrective
+  change 25ab3b860 now requires an offline preloaded non-symlink TLC JAR with reviewed SHA-256,
+  rejects network fallback, removes guest curl probing, and adds negative coverage. PR #25 was
+  rebased onto current main and force-with-lease pushed; exact head is 25ab3b860. Remaining
+  measured-attestation and isolated-runner evidence gates are unresolved.
