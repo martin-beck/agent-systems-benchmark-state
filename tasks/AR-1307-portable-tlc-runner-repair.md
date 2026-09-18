@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1307-portable-tlc-runner-repair",
   "checkpoint_commit": "beafa965e61b0f09d9ed5f10ffcd621b0cf3e5b2",
-  "claim_expires": "2026-09-18T18:25:22+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1302"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "969eef05834a4ce5f711bbafaa5798549abd95c8",
-  "owner": "codex-ar1307-qualification-20260918",
+  "owner": "",
   "plan": "../plans/AR-1307.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 732,
+  "task_revision": 733,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T16:25:22+00:00",
+  "updated_at": "2026-09-18T16:26:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -2073,3 +2073,13 @@ and protected publication sequence.
   changed.
 
 - 2026-09-18T16:25:22+00:00: Claimed by codex-ar1307-qualification-20260918.
+
+- 2026-09-18T16:26:41+00:00: Qualification audit 2026-09-18: PR #25 exact head ab485f767 has green
+  coordination/AWQ/source-header checks but required formal workflow 35342513872 failed closed
+  during liveness checking after 37,986,996 distinct states because Java exhausted the existing 3G
+  heap/swap contract; no attestation was emitted. AR-1308 is the approved capacity follow-on and is
+  currently blocked after its first disposable QEMU bootstrap produced no evidence due the reviewed
+  fixture/seed JDK path mismatch. Preserve the runner implementation and 3G/3G limits; no merge or
+  qualification claim. Next action: wait for AR-1308 to repair and validate the disposable x86_64
+  QEMU fixture and produce exact AR-1307-head capacity evidence, then rerun canonical
+  full-exhaustive through verify.sh/tlc_runner.py without changing limits.
