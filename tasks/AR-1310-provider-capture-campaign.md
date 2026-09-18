@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Runtime-owned provider capture and recording campaign qualification.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Runtime-owned provider capture and recording campaign qualification",
-  "updated_at": "2026-09-18T19:59:07+00:00",
+  "updated_at": "2026-09-18T20:00:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1310-provider-capture-campaign"
 }
 ---
@@ -125,3 +125,11 @@ independently so its promotion is not falsely implied by AR-1160 completion.
 
 - 2026-09-18T19:59:07+00:00: Recorded command exit 0; command argv SHA-256
   3245a656999a89261584f9836b9f14a677949b83542660656338485f93deb290.
+
+- 2026-09-18T20:00:07+00:00: Implementation checkpoint: added runtime-owned ProviderCapture
+  trait/request/result with fail-closed UnavailableProviderCapture; durable per-tuple coverage
+  metadata and exact-matrix validation; execute now persists in_progress intent, invokes injected
+  runtime callback, and durably records complete/failed outcomes. Corrected recorded exit-101
+  compile errors (coverage previous Option type and moved campaign_id closure captures); focused
+  lifecycle test now passes. Earlier exit-101 was compile failure, not silent retry; next run
+  validates positive callback test and full gates.
