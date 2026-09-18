@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "checkpoint_commit": "df0e402f442468e43e06b7c1acb3c3667277fb75",
-  "claim_expires": "",
+  "claim_expires": "2026-09-18T21:45:28+00:00",
   "depends_on": [
     "AR-1304"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
-  "owner": "",
+  "owner": "codex-ar1308-runner-provision-20260918",
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 484,
+  "task_revision": 485,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T21:15:25+00:00",
+  "updated_at": "2026-09-18T21:15:28+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1438,3 +1438,5 @@ source code or treating a capacity failure as a model result.
 - 2026-09-18T21:15:25+00:00: Coordinator authorized runner-provisioning attempt: inspect approved
   second-disk capacity and prepare only the exact isolated QEMU contract; fail closed if
   disk/headroom or pinned inputs are unavailable.
+
+- 2026-09-18T21:15:28+00:00: Claimed by codex-ar1308-runner-provision-20260918.
