@@ -10,9 +10,10 @@ import importlib.util
 import json
 import unittest
 from pathlib import Path
+from types import ModuleType
 
 
-def load_module():
+def load_module() -> ModuleType:
     path = Path(__file__).parents[1] / "tools" / "validate_ar1308_capacity.py"
     spec = importlib.util.spec_from_file_location("validate_ar1308_capacity", path)
     if spec is None or spec.loader is None:
