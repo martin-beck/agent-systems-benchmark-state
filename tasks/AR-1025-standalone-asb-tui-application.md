@@ -2,7 +2,7 @@
 {
   "branch": "feature/standalone-asb-tui-application",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-18T21:22:30+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0804",
     "AR-0805",
@@ -17,15 +17,15 @@
   ],
   "id": "AR-1025",
   "next_action": "Blocked: implementation belongs to asb-tui, but current scope forbids touching that repository; AR-1010/AR-1060 also retain unresolved publication blockers. Obtain explicit scope/dependency repair before re-opening.",
-  "owner": "asb-ar1025-boundary-audit-20260918",
+  "owner": "",
   "plan": "../plans/AR-1025.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Deliver the actual standalone interactive asb-tui application without an ASB workspace dependency.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Build the standalone asb-tui application",
-  "updated_at": "2026-09-18T20:52:52+00:00",
+  "updated_at": "2026-09-18T20:53:00+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-standalone-application"
 }
 ---
@@ -67,3 +67,10 @@ product path in `martin-beck/agent-systems-benchmark`.
   and recovered AR-1060 provenance; AR-1060 next_action explicitly says keep AR-1060 blocked pending
   authorized repository-level recovery. These are semantic dependency blockers despite done labels.
   No ASB product, runner, or asb-tui files were modified.
+
+- 2026-09-18T20:53:00+00:00: Released blocked and ownerless after boundary/dependency audit. No
+  source worktree or implementation was created because AR-1025 belongs exclusively to
+  martin-beck/asb-tui, which current scope explicitly forbids touching. Additionally, AR-1010 and
+  AR-1060 are labeled done but retain unresolved publication/provenance next actions, so semantic
+  dependency closure is not proven. Re-open only after authorized asb-tui scope and those dependency
+  repairs are both confirmed.

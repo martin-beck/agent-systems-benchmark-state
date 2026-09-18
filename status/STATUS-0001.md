@@ -7,13 +7,13 @@
 
 ## Portfolio overview
 
-**340 ARs tracked** across 7 active status categories.
+**340 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 1 |
-| **Blocked** | Cannot proceed until its recorded blocker clears | 49 |
+| **Blocked** | Cannot proceed until its recorded blocker clears | 50 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 219 |
@@ -248,7 +248,7 @@ flowchart LR
         AR_1022["AR-1022 - Done"]:::status_done
         AR_1023["AR-1023 - Done"]:::status_done
         AR_1024["AR-1024 - Blocked"]:::status_blocked
-        AR_1025["AR-1025 - In progress"]:::status_in_progress
+        AR_1025["AR-1025 - Blocked"]:::status_blocked
         AR_1026["AR-1026 - Planned"]:::status_planned
         AR_1027["AR-1027 - Planned"]:::status_planned
         AR_1028["AR-1028 - Done"]:::status_done
@@ -1668,25 +1668,20 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md): Build the standalone asb-tui application | asb-ar1025-boundary-audit-20260918 | Deliver the actual standalone interactive asb-tui application without an ASB workspace dependency. | Blocked: implementation belongs to asb-tui, but current scope forbids touching that repository; AR-1010/AR-1060 also retain unresolved publication blockers. Obtain explicit scope/dependency repair before re-opening. |
-
 ### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Unclaimed | Repair the state-repository TLA admission runner and truthful worktree metadata. | Blocked on AR-1307 runner merge and handoff. Prior full VM was interrupted without success or attestation; after merge, rebuild exact fa57625d9 image/seed and rerun independently reviewed gates. |
 
-### Blocked (49)
+### Blocked (50)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0514](../tasks/AR-0514-replay-openhands.md): Qualify OpenHands replay | Unclaimed | Qualify replay conformance for OpenHands. | Recover exact approved OpenHands environment digest 63727569 from immutable provenance; otherwise schedule pin-reproduction repair before native replay. |
 | P0 | [AR-0836](../tasks/AR-0836-runner-isolation-hardening.md): Harden runner isolation and credential boundaries | Unclaimed | Harden development-host runner isolation against same-UID job tampering and diagnostic leakage. | Independently review immutable signed candidate 9b4e7084e02cdb3a1ff56dc55bbdce413ed6b1d3; keep trusted workflows blocked and AR-0836 in progress until required AR-0837 proves the digest-pinned no-host-mount job-container boundary. |
 | P0 | [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md): Implement &#96;asb tui&#96; lifecycle routing | Unclaimed | Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend. | After AR-1010, AR-1037 and AR-1060 are done, rebase c545c33 onto protected ASB main and implement only the ASB provisioning half before regenerated evidence and trusted asb-tui pinning. |
+| P0 | [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md): Build the standalone asb-tui application | Unclaimed | Deliver the actual standalone interactive asb-tui application without an ASB workspace dependency. | Blocked: implementation belongs to asb-tui, but current scope forbids touching that repository; AR-1010/AR-1060 also retain unresolved publication blockers. Obtain explicit scope/dependency repair before re-opening. |
 | P0 | [AR-1160](../tasks/AR-1160.md): Wizard control API | Unclaimed | Wizard control API | Keep AR-1160 blocked. Create a fresh scoped AR for runtime-owned authenticated provider capture, per-tuple cassette reconciliation, and verified offline activation; preserve fail-closed gates and do not change this AR&#x27;s historical evidence. |
 | P0 | [AR-1181](../tasks/AR-1181.md): TLA admission | Unclaimed | Bound ASB TLC memory. | Correct AR-1181 repository/worktree metadata to a state-repository branch/worktree, then implement missing tools/tlc_runner.py with bounded admission; current declared path is an ASB product checkout and must not be mutated. |
 | P0 | [AR-1210](../tasks/AR-1210-tutorial-contract-validator.md): Tutorial contract and syntax validator | Unclaimed | Define offline tutorial steps and validate them against the ASB CLI grammar. | Do not release AR-1210 yet: post-merge Repository quality run 35054743606 failed because protected merge commit 4d4a0c4 lacks Signed-off-by. Coordinate merge-integrity/DCO repair and rerun exact-main assurance; preserve merged main and all evidence. |
@@ -1750,3 +1745,4 @@ flowchart LR
 | P0 | [AR-1032](../tasks/AR-1032-asb-tui-contextual-help.md): Add contextual hotkeys and complete action help | Unclaimed | Provide a context-fitted hotkey window, global action search and mechanically complete help. | Add the contextual action registry, search field, fitted hotkey window and complete help coverage after the user-facing screens exist. |
 | P0 | [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md): Establish the professional TUI visual system | Unclaimed | Create a responsive, accessible and professional visual system for every TUI screen. | Create the standalone Ratatui visual system after the application shell is integrated. |
 | P0 | [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md): Add the standalone TUI configuration center | Unclaimed | Add a searchable configuration menu for frontend preferences and benchmark defaults. | Implement the non-secret configuration center foundation after the visual system and ASB wizard control API are stable; AR-1170 owns provider, authentication and default integration. |
+| P0 | [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md): Build recent-runs, report and comparison workspaces | Unclaimed | Add searchable recent runs, report inspection and evidence-qualified comparison workspaces. | Implement report and comparison screens after recording workflows publish stable live and strict-replay source labels. |
