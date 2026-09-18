@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "checkpoint_commit": "df0e402f442468e43e06b7c1acb3c3667277fb75",
-  "claim_expires": "2026-09-18T22:44:35+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1304"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
-  "owner": "asb-ar1308-capacity-repair-20260918",
+  "owner": "",
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 482,
+  "task_revision": 483,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T20:47:37+00:00",
+  "updated_at": "2026-09-18T20:47:46+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1425,3 +1425,12 @@ source code or treating a capacity failure as a model result.
   capacity inspection; no unrelated process was stopped and no cache/artifact was deleted. Required
   next action is provision approved second-disk headroom and exact current input bundle; do not
   weaken validator or process limits.
+
+- 2026-09-18T20:47:46+00:00: Released blocked after bounded live preflight. No formal run was
+  attempted. Current receipt preserves the 3G/3G/2-worker/2-core/8G/7200s process contract, network
+  none, no host mounts, x86_64 QEMU 8.2.2, 8 vCPU, and 16 GiB guest swap, but it is bound to stale
+  AR-1307 head ab485f767. Preflight failed closed on only 4.9 GiB approved-root free space versus 16
+  GiB required, and missing admission lock, pinned JDK, and TLC JAR at the supplied runtime root.
+  AR-1307 current signed head is 969eef058. Host swap was restored; no caches or artifacts were
+  deleted, and no unrelated process was stopped. Reopen only after an approved second-disk
+  capacity/input bundle is available and the exact current receipt passes all gates.
