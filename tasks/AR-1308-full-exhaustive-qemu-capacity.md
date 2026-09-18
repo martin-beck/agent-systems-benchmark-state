@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "checkpoint_commit": "df0e402f442468e43e06b7c1acb3c3667277fb75",
-  "claim_expires": "2026-09-18T18:06:49+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1304"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
-  "owner": "codex-ar1308-fixture-repair-20260918",
+  "owner": "",
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 347,
+  "task_revision": 348,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T17:16:34+00:00",
+  "updated_at": "2026-09-18T17:16:36+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1010,3 +1010,7 @@ source code or treating a capacity failure as a model result.
   UUID; this prevented /mnt/asb-data and caused TLC_JAR_PATH rejection. The data UUID is now
   corrected and fsck-clean. Latest governed preflight was blocked before QEMU because host SwapFree
   was below 1 GiB: all 13 GiB active swap was consumed. Stop retries until swap is freed safely.
+
+- 2026-09-18T17:16:36+00:00: Released blocked with measured causes: corrected data UUID after prior
+  NoCloud mount failure; current preflight blocker is SwapFree below 1 GiB with 13 GiB swap fully
+  used. Free swap without violating disk/resource gates before the next single QEMU attempt.
