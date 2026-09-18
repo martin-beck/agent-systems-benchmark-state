@@ -1509,6 +1509,50 @@ class HandoffTest(unittest.TestCase):
         self.assertEqual(1, state["worktrees"][0]["dirty"])
         self.assertEqual("DETACHED", state["worktrees"][1]["branch"])
 
+    def test_project_scan_includes_state_repository_worktrees(self) -> None:
+        product = self.root / "product"
+        state_worktree = self.root / "state-task"
+        product.mkdir()
+        state_worktree.mkdir()
+        CORE.CONFIG.parent.mkdir()
+        CORE.CONFIG.write_text(
+            json.dumps(
+                {
+                    "projects_root": str(self.root),
+                    "product_worktree": product.name,
+                    "github_repository": "owner/repo",
+                }
+            )
+        )
+
+        def fake_run(args: list[str], **_: object) -> object:
+            joined = " ".join(args)
+            if "worktree list" in joined:
+                checkout = args[args.index("-C") + 1]
+                if checkout == str(CORE.ROOT):
+                    stdout = f"worktree {CORE.ROOT}\n\nworktree {state_worktree}\n"
+                else:
+                    stdout = f"worktree {product}\n"
+                return subprocess.CompletedProcess(args, 0, stdout=stdout, stderr="")
+            if args[:3] in (["gh", "pr", "list"], ["gh", "run", "list"]):
+                return subprocess.CompletedProcess(args, 0, stdout="[]", stderr="")
+            if "ls-remote" in joined:
+                return subprocess.CompletedProcess(args, 0, stdout=("a" * 40) + "\n", stderr="")
+            if "symbolic-ref" in joined:
+                return subprocess.CompletedProcess(args, 0, stdout="main\n", stderr="")
+            if "status --porcelain" in joined:
+                return subprocess.CompletedProcess(args, 0, stdout="", stderr="")
+            if "rev-list" in joined:
+                return subprocess.CompletedProcess(args, 0, stdout="0 0\n", stderr="")
+            return subprocess.CompletedProcess(args, 0, stdout=("b" * 40) + "\n", stderr="")
+
+        with patch.object(CORE, "run", side_effect=fake_run):
+            state = CORE.project_scan()
+        self.assertEqual(
+            {product.name, state_worktree.name, CORE.ROOT.name},
+            {item["key"] for item in state["worktrees"]},
+        )
+
     def test_changed_paths_preserves_existing_and_deleted_semantics(self) -> None:
         changed = self.root / "changed.md"
         changed.write_text("after")

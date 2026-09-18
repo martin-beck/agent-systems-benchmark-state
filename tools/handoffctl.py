@@ -615,8 +615,20 @@ def project_scan() -> State:
     settings = config()
     base = Path(settings["projects_root"])
     repo = base / settings["product_worktree"]
-    raw = run(["git", "-C", str(repo), "worktree", "list", "--porcelain"]).stdout
-    paths = [Path(line[9:]) for line in raw.splitlines() if line.startswith("worktree ")]
+    # A coordinated task may work in either repository: product changes are
+    # observed from the configured product checkout, while coordination/Git
+    # changes are observed from this bound state checkout.  Scanning only the
+    # product repository leaves state-task observations empty and makes clean
+    # exact-head evidence unverifiable.  Preserve one privacy-safe inventory
+    # by deduplicating paths shared by both repositories.
+    paths: list[Path] = []
+    for checkout in (repo, ROOT):
+        raw = run(["git", "-C", str(checkout), "worktree", "list", "--porcelain"]).stdout
+        for line in raw.splitlines():
+            if line.startswith("worktree "):
+                path = Path(line[9:])
+                if path not in paths:
+                    paths.append(path)
     worktrees = []
     for path in paths:
         head = run(["git", "-C", str(path), "rev-parse", "HEAD"]).stdout.strip()
