@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1160](tasks/AR-1160.md): Wizard control API | Wizard control API | Follow-up PR #228 exact head 43579f2d72f64722814d1456e7c331df9f747943 is based on merged main 278abfd and adds meaningful portable recording-estimate stale-runner, unconfigured, and invalid-workload coverage to clear the exact 90% floor with margin. Hosted exact-head gates are running; wait for terminal green, independently review, merge through handoffctl, and post-verify main. Keep AR open for provider capture wiring, cassette reconciliation, offline-default activation, and frontend integration. | codex-ar1160-control-20260918 |
+| P0 | [AR-1160](tasks/AR-1160.md): Wizard control API | Wizard control API | Follow-up PR #228 merged at f7602a73e4fc7a5d9af4f675b8772680d2612066 after exact head 43579f2 passed all 12 required checks, including repository quality coverage with margin. Verify all post-merge main workflows for f7602a7 terminal green. Then continue with a fresh scoped ASB implementation AR/branch for provider-bound capture wiring, durable cassette reconciliation, and offline-default activation; keep AR-1160 open until remaining scope is complete. | codex-ar1160-control-20260918 |
 | P0 | [AR-1308](tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Free at least 1 GiB host swap without reducing 16 GiB disk headroom; rerun preflight only after swap is available, then one bounded QEMU attempt using UUID-corrected data fixture. | codex-ar1308-fixture-repair-20260918 |
 
 ## Open
