@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Repair canonical metadata, rebase PR #25 onto reviewed main, then run one fresh formal qualification at exact head 969eef058-derived tree.",
+  "next_action": "Repair preload/no-network/attestation gaps, rebase PR #25 onto current main, rerun required gates, and qualify only after terminal green formal evidence.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "969eef05834a4ce5f711bbafaa5798549abd95c8",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 636,
+  "task_revision": 637,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T06:03:33+00:00",
+  "updated_at": "2026-09-18T06:03:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1749,3 +1749,8 @@ and protected publication sequence.
   52e8d819883bdb6609bdded4ea222914a9427d62d52051c2d319f806f1bb6538.
 
 - 2026-09-18T06:03:33+00:00: Heartbeat by codex-ar1307-metadata-repair-20260918.
+
+- 2026-09-18T06:03:52+00:00: Formal run 35309351851 at exact head
+  b2010efb550b26954216122dbfd573350080c24f terminated at 06:00:52Z with full-exhaustive exit 1: TLC
+  execution failed closed and emitted no success attestation. Qualification is not established;
+  preserve this failure as the blocking evidence.
