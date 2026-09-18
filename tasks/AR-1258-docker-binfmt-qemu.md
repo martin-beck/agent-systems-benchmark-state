@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-18T19:17:11+00:00",
   "depends_on": [],
   "id": "AR-1258",
-  "next_action": "Inspect Docker/binfmt/QEMU capability and approved privilege workflow; add bounded verification and rollback-safe checks.",
+  "next_action": "Obtain an approved maintenance window with zero active Docker workloads; snapshot /usr/lib/binfmt.d/qemu-aarch64.conf and current handler state, apply rollback-safe F-capable qemu-aarch64 registration without weakening gates, then rerun the pinned arm64 alpine /bin/true smoke test with network disabled and record interpreter, digest, license, provenance, timeout, and rollback evidence. Do not restart systemd-binfmt or unregister handlers while public-ci-62f0b126a9ad8b70 is running.",
   "observed_branch": "feature/docker-binfmt-qemu-capability",
   "observed_dirty": 0,
   "observed_head": "a0befc0ff247a42b8d796af161b58b1011de8377",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision and verify Docker binfmt/QEMU for multiarch qualification.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Provision Docker binfmt/QEMU capability",
-  "updated_at": "2026-09-18T19:07:11+00:00",
+  "updated_at": "2026-09-18T19:07:14+00:00",
   "worktree_key": "agent-systems-benchmark-docker-binfmt-qemu"
 }
 ---
@@ -197,3 +197,6 @@ Provide the independent Docker binfmt/QEMU capability required by multiarch qual
   before returning ownerless blocked; no capability claim or host mutation.
 
 - 2026-09-18T19:07:11+00:00: Claimed by codex-ar1258-capability-audit-20260918.
+
+- 2026-09-18T19:07:14+00:00: Persisted exact next action after read-only audit; capability remains
+  unverified and blocked.
