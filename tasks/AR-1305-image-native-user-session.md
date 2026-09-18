@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1305-image-native-user-session",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "00a47726683609b7fef8ea5738fed5a3692fac29",
   "claim_expires": "",
   "depends_on": [
     "AR-1302"

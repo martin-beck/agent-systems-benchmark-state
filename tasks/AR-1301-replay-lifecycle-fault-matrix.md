@@ -8,7 +8,7 @@
     "AR-1300"
   ],
   "id": "AR-1301",
-  "next_action": "PR #221 exact head 64eb03e5bf052d3cc40bc3a280e79b0abbb6ad4e is blocked by independent qualification review: hosted-portability evidence is non-qualification; run_supervised_fault lacks a real StrictReplayService/relay listener; positive-path identity/response parity and cause-specific provider/descendant egress-denial fault evidence are unproven. Implement real runtime-owned service/listener fixtures and distinct cause assertions through the approved runner, rerun the complete matrix and exact-head CI, obtain independent approval, then protected-merge and post-merge reconcile.",
+  "next_action": "Implement runtime-owned listener fixtures and cause-specific assertions; rerun the matrix and exact-head CI, obtain approval, merge, and reconcile.",
   "observed_branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "observed_dirty": 0,
   "observed_head": "dd5bfb8dfea08331bb5ee62ddbdee07ad6fb8e7c",

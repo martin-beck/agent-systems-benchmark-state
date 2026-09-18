@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1304-required-tier-qemu-runner",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "ca9c4d9368f8c137d65354fd22c54c118d33d7e1",
   "claim_expires": "",
   "depends_on": [
     "AR-1302"

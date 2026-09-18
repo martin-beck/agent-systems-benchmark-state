@@ -8,7 +8,7 @@
     "AR-1287"
   ],
   "id": "AR-1306",
-  "next_action": "Independent review approved at exact head af44d47: all 12 hosted checks terminal green, native sandbox_boundary exact-head run 15/15, response-parity focused reruns 2/2. Protected merge may proceed only after live head/clean tree recheck; then post-merge verification and AR close.",
+  "next_action": "Recheck approved exact head, merge the PR, verify post-merge state, and close AR with durable evidence.",
   "observed_branch": "feature/ar-1306-authenticated-fault-matrix-qualification",
   "observed_dirty": 0,
   "observed_head": "af44d473a3bab40a268986f360693c93e441c418",
