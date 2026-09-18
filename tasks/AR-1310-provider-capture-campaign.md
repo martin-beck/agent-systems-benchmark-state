@@ -10,7 +10,7 @@
   "id": "AR-1310",
   "next_action": "AR-1312 owns the transferred 89.99% post-merge coverage blocker; keep this AR blocked and ownerless until its successor correction and exact-main checks are green.",
   "observed_branch": "feature/ar-1310-provider-capture-campaign",
-  "observed_dirty": 7,
+  "observed_dirty": 0,
   "observed_head": "9a2f313e86332e35eec40b97a692026b497d46cd",
   "owner": "",
   "plan": "../plans/AR-1310.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "blocked",
   "summary": "Runtime-owned provider capture and recording campaign qualification.",
-  "task_revision": 95,
+  "task_revision": 96,
   "title": "Runtime-owned provider capture and recording campaign qualification",
-  "updated_at": "2026-09-18T21:23:38+00:00",
+  "updated_at": "2026-09-18T21:23:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1310-provider-capture-campaign"
 }
 ---
