@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**337 ARs tracked** across 6 active status categories.
+**338 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 48 |
-| **Planned** | Defined work awaiting promotion or dependencies | 58 |
+| **Planned** | Defined work awaiting promotion or dependencies | 59 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 218 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -406,6 +406,7 @@ flowchart LR
         AR_1307["AR-1307 - Blocked"]:::status_blocked
         AR_1308["AR-1308 - Blocked"]:::status_blocked
         AR_1309["AR-1309 - Planned"]:::status_planned
+        AR_1310["AR-1310 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1111,6 +1112,7 @@ flowchart LR
     AR_1060 --> AR_1025
     AR_1060 --> AR_1160
     AR_1060 --> AR_1227
+    AR_1060 --> AR_1310
     AR_1061 --> AR_1010
     AR_1062 --> AR_1010
     AR_1062 --> AR_1058
@@ -1135,6 +1137,7 @@ flowchart LR
     AR_1151 --> AR_0808
     AR_1151 --> AR_1160
     AR_1151 --> AR_1227
+    AR_1151 --> AR_1310
     AR_1160 --> AR_1034
     AR_1160 --> AR_1170
     AR_1160 --> AR_1199
@@ -1542,7 +1545,7 @@ flowchart LR
 | [AR-1057](../tasks/AR-1057-asb-tui-control-v1-3-readiness.md) | None | None |
 | [AR-1058](../tasks/AR-1058-tmux-startup-observation-diagnostics.md) | [AR-1062](../tasks/AR-1062-diagnose-nested-tmux-server-connect.md) | [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md) |
 | [AR-1059](../tasks/AR-1059-asb-tui-lifecycle-router-publication-readiness.md) | None | None |
-| [AR-1060](../tasks/AR-1060-authenticated-control-endpoint-handoff.md) | [AR-1022](../tasks/AR-1022-asb-tui-release-contract-hardening.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) | [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md), [AR-1160](../tasks/AR-1160.md), [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md) |
+| [AR-1060](../tasks/AR-1060-authenticated-control-endpoint-handoff.md) | [AR-1022](../tasks/AR-1022-asb-tui-release-contract-hardening.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) | [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md), [AR-1160](../tasks/AR-1160.md), [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md), [AR-1310](../tasks/AR-1310-provider-capture-campaign.md) |
 | [AR-1061](../tasks/AR-1061-isolate-concurrent-tmux-fixtures.md) | [AR-1062](../tasks/AR-1062-diagnose-nested-tmux-server-connect.md) | [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md) |
 | [AR-1062](../tasks/AR-1062-diagnose-nested-tmux-server-connect.md) | None | [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md), [AR-1058](../tasks/AR-1058-tmux-startup-observation-diagnostics.md), [AR-1061](../tasks/AR-1061-isolate-concurrent-tmux-fixtures.md) |
 | [AR-1064](../tasks/AR-1064-tmux-hosted-startup-readiness-recovery.md) | None | None |
@@ -1553,7 +1556,7 @@ flowchart LR
 | [AR-1130](../tasks/AR-1130.md) | [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md), [AR-1110](../tasks/AR-1110.md) | [AR-1140](../tasks/AR-1140.md), [AR-1150](../tasks/AR-1150.md) |
 | [AR-1140](../tasks/AR-1140.md) | [AR-1130](../tasks/AR-1130.md) | [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0823](../tasks/AR-0823-installation-qualification.md), [AR-1180](../tasks/AR-1180.md) |
 | [AR-1150](../tasks/AR-1150.md) | [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-1130](../tasks/AR-1130.md) | [AR-1151](../tasks/AR-1151.md) |
-| [AR-1151](../tasks/AR-1151.md) | [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-1150](../tasks/AR-1150.md), [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md), [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md) | [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-1160](../tasks/AR-1160.md), [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md) |
+| [AR-1151](../tasks/AR-1151.md) | [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-1150](../tasks/AR-1150.md), [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md), [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md) | [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-1160](../tasks/AR-1160.md), [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md), [AR-1310](../tasks/AR-1310-provider-capture-campaign.md) |
 | [AR-1160](../tasks/AR-1160.md) | [AR-1060](../tasks/AR-1060-authenticated-control-endpoint-handoff.md), [AR-1151](../tasks/AR-1151.md) | [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md), [AR-1170](../tasks/AR-1170.md), [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md), [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md) |
 | [AR-1170](../tasks/AR-1170.md) | [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md), [AR-1160](../tasks/AR-1160.md) | [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0823](../tasks/AR-0823-installation-qualification.md), [AR-0873](../tasks/AR-0873-ci-workflow-captures.md), [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md), [AR-1031](../tasks/AR-1031-asb-tui-landing-screen.md), [AR-1032](../tasks/AR-1032-asb-tui-contextual-help.md), [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md), [AR-1180](../tasks/AR-1180.md) |
 | [AR-1180](../tasks/AR-1180.md) | [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md), [AR-1140](../tasks/AR-1140.md), [AR-1170](../tasks/AR-1170.md) | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md) |
@@ -1656,6 +1659,7 @@ flowchart LR
 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md) | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md) | [AR-1309](../tasks/AR-1309-reviewed-capacity-or-model-reduction.md) |
 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md) | [AR-1304](../tasks/AR-1304-required-tier-qemu-runner.md) | [AR-1309](../tasks/AR-1309-reviewed-capacity-or-model-reduction.md) |
 | [AR-1309](../tasks/AR-1309-reviewed-capacity-or-model-reduction.md) | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md), [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md) | None |
+| [AR-1310](../tasks/AR-1310-provider-capture-campaign.md) | [AR-1060](../tasks/AR-1060-authenticated-control-endpoint-handoff.md), [AR-1151](../tasks/AR-1151.md) | None |
 
 ## Complete AR inventory
 
@@ -1718,7 +1722,7 @@ flowchart LR
 | P1 | [AR-1256](../tasks/AR-1256-bundled-mockagents-isolation.md): Execute bundled MockAgents transport in isolation | Unclaimed | Execute bundled MockAgents transport in isolation. | Implement bundled in-container MockAgents transport and digest-pinned arm64 QEMU evidence. |
 | P1 | [AR-1258](../tasks/AR-1258-docker-binfmt-qemu.md): Provision Docker binfmt/QEMU capability | Unclaimed | Provision and verify Docker binfmt/QEMU for multiarch qualification. | Obtain an approved maintenance window with zero active Docker workloads; snapshot /usr/lib/binfmt.d/qemu-aarch64.conf and current handler state, apply rollback-safe F-capable qemu-aarch64 registration without weakening gates, then rerun the pinned arm64 alpine /bin/true smoke test with network disabled and record interpreter, digest, license, provenance, timeout, and rollback evidence. Do not restart systemd-binfmt or unregister handlers while public-ci-62f0b126a9ad8b70 is running. |
 
-### Planned (58)
+### Planned (59)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1738,4 +1742,3 @@ flowchart LR
 | P0 | [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md): Build recent-runs, report and comparison workspaces | Unclaimed | Add searchable recent runs, report inspection and evidence-qualified comparison workspaces. | Implement report and comparison screens after recording workflows publish stable live and strict-replay source labels. |
 | P0 | [AR-1170](../tasks/AR-1170.md): Standalone TUI wizard | Unclaimed | Guide TUI setup through analysis. | Read the plan. |
 | P0 | [AR-1180](../tasks/AR-1180.md): Cross-project wizard qualification | Unclaimed | Qualify the complete wizard. | Read the plan. |
-| P0 | [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md): Authenticated TUI install router | Unclaimed | Expose an authenticated renderer-neutral ASB router for asb tui install and lifecycle operations. | Promote only after dependencies are independently complete; implement the renderer-neutral authenticated CLI/control route and full integration tests. |
