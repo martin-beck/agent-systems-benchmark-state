@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Rebuild pristine stage17 data image and fresh full-tier VM from exact 01f6e000b. Because full profile declares a 7200-second TLC bound, use a finite 7800-second outer bound; require terminal FULL_EXHAUSTIVE_RC=0, schema-valid exact-head attestation, and clean poweroff.",
+  "next_action": "Stage17 full-exhaustive is active under finite 7800s outer bound after clean blkid/debugfs validation: fixed seed UUID, embedded exact HEAD 01f6e000b, fresh data image and unique metadata. Monitor for terminal FULL_EXHAUSTIVE_RC=0, schema-valid exact attestation, and clean poweroff.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 448,
+  "task_revision": 449,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T01:53:18+00:00",
+  "updated_at": "2026-09-18T01:54:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1438,3 +1438,9 @@ and protected publication sequence.
 
 - 2026-09-18T01:53:18+00:00: Recorded command exit 0; command argv SHA-256
   1f7891161f983b265a966624bffe82485ab344c9bd96b0777b84a32f7c09e9b3.
+
+- 2026-09-18T01:54:11+00:00: Stage17 rebuilt sequentially from exact source: blkid reports ASB_DATA
+  with seed-matching UUID; debugfs reads embedded branch ref at 01f6e000b. Fresh 32GiB/8vCPU
+  no-NIC/no-host-mount VM launched with full profile and 7800s outer bound. Serial reached
+  FULL_EXHAUSTIVE_TRANSIENT_RC=0; no terminal result yet. State evidence pushed to worker branch
+  codex/ar-1307-portable-tlc-runner.
