@@ -125,13 +125,13 @@ def _provenance(model: Path, jar: Path, config: Path, metadir: Path) -> dict[str
     return values
 
 
-def _bounded_process(command: list[str], timeout_seconds: int) -> tuple[int, bool]:
+def _bounded_process(command: list[str], timeout_seconds: int) -> tuple[int, bool]:  # noqa: C901
     """Run one argv-only command with bounded output and process-group cleanup."""
     try:
         process = subprocess.Popen(  # noqa: S603
             command,
             stdin=subprocess.DEVNULL,
-            stdout=subprocess.DEVNULL,
+            stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
             start_new_session=True,
         )
@@ -139,8 +139,14 @@ def _bounded_process(command: list[str], timeout_seconds: int) -> tuple[int, boo
         raise
     try:
         exit_code = process.wait(timeout=timeout_seconds)
-        if exit_code != 0 and process.stderr is not None:
-            detail = process.stderr.read(4096).decode("utf-8", errors="replace").strip()
+        if exit_code != 0:
+            streams = [stream for stream in (process.stdout, process.stderr) if stream is not None]
+            details = []
+            for stream in streams:
+                chunk = stream.read(4096)
+                if isinstance(chunk, bytes):
+                    details.append(chunk.decode("utf-8", errors="replace"))
+            detail = "\n".join(details).strip()
             detail = re.sub(r"/(?:srv|tmp)/data/projects[^\s']*", "<approved-runtime-path>", detail)
             if detail:
                 excerpt = detail if len(detail) <= 1000 else detail[:500] + " ... " + detail[-500:]
