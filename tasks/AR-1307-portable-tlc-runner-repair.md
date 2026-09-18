@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 673,
+  "task_revision": 674,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T07:30:48+00:00",
+  "updated_at": "2026-09-18T07:31:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1870,3 +1870,6 @@ and protected publication sequence.
   TLC failed closed with exit 1 and emitted no success attestation. Strict consistency additionally
   reported Ruff formatting required at tests/test_tlc_runner.py:534. Lease renewed through
   2026-09-18T09:30:28Z; owner preserved.
+
+- 2026-09-18T07:31:19+00:00: Recorded command exit 1; command argv SHA-256
+  459b61b713802798fa25e4b0f6d8c0f70efc7b1c826e044597da33a87152bb03.
