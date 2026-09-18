@@ -1656,7 +1656,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1151](../tasks/AR-1151.md): Strict offline replay | codex_ar1151_followup | Replay strictly without providers. | Obtain hosted runner service recovery or approved alternative evidence, then publish exact local head d116ded after GitHub email verification; continue recording campaign execution, cassette reconciliation, offline-default application, and TUI adapter. |
+| P0 | [AR-1151](../tasks/AR-1151.md): Strict offline replay | codex_ar1151_followup | Replay strictly without providers. | Publish exact local head f78a124 after GitHub email verification, rerun hosted aarch64, then add campaign execution/cassette coverage reconciliation and offline-default application before asb-tui integration. |
 | P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | codex-ar1307-metadata-repair-20260918 | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Diagnose repeated full-exhaustive TLC exit-1 with controlled local reproduction and cgroup/disk/journal evidence; make only evidence-backed termination repair, then rerun focused gates before any new formal dispatch. |
 
 ### Open (1)
