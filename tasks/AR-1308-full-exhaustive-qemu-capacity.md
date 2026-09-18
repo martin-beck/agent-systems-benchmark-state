@@ -7,7 +7,7 @@
     "AR-1304"
   ],
   "id": "AR-1308",
-  "next_action": "Run governed post-merge capacity preflight; if host capacity passes, execute one bounded exact-head QEMU attempt, otherwise record measured blocker and provision a compliant disposable runner.",
+  "next_action": "Provision an approved disposable runner with >=1 GiB free host swap and accessible owner-private admission lock; rerun preflight, then one bounded exact-head QEMU attempt.",
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 208,
+  "task_revision": 209,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T16:00:29+00:00",
+  "updated_at": "2026-09-18T16:00:56+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -557,3 +557,9 @@ source code or treating a capacity failure as a model result.
 
 - 2026-09-18T16:00:29+00:00: Recorded command exit 1; command argv SHA-256
   5900aa5d4830ceb2f0a073d55a7f59a92e7047175a109f6dce3be3ec571640c9.
+
+- 2026-09-18T16:00:56+00:00: Post-merge preflight ran against merged runner. It failed closed
+  truthfully: host SwapFree measured about 232 KiB versus required 1 GiB; /srv/data had about 38 GiB
+  free and 28 GiB available memory. Canonical /srv/data/projects/.asb-tlc admission lock is
+  owner-private to gha-asb-state and inaccessible to this worker, so no full run was attempted. A
+  temporary accessible lock was used only to expose the host-swap blocker; no gate was weakened.
