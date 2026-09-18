@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Await formal run 35342513872 on exact head ab485f767; if terminal green, independently review and complete merge gates, otherwise diagnose its bounded failure before any retry.",
+  "next_action": "Formal 35342513872 proved Java OOM during liveness at 3G/3G after ~45.77M generated and ~37.99M distinct states. Keep AR unqualified; define and promote a separately reviewed QEMU/full-exhaustive capacity contract before rerun.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "969eef05834a4ce5f711bbafaa5798549abd95c8",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 725,
+  "task_revision": 726,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T13:37:41+00:00",
+  "updated_at": "2026-09-18T13:37:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -2047,3 +2047,9 @@ and protected publication sequence.
 - 2026-09-18T13:06:10+00:00: Heartbeat by codex-ar1307-metadata-repair-20260918.
 
 - 2026-09-18T13:37:41+00:00: Heartbeat by codex-ar1307-metadata-repair-20260918.
+
+- 2026-09-18T13:37:55+00:00: Terminal formal evidence: run 35342513872, exact head ab485f767, failed
+  closed because Java ran out of memory during liveness checking after approximately 45.77M
+  generated and 37.99M distinct states; no invariant error. Existing 3G memory and 3G swap limits
+  were not widened. AR-1307 remains in progress and unqualified pending governed capacity
+  successor/acceptance decision.

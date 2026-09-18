@@ -1657,7 +1657,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1160](../tasks/AR-1160.md): Wizard control API | root | Wizard control API | Run PR #227 exact-head gates after rebasing onto protected main; then wire runtime capture adapter and add asb-tui recording actions. |
-| P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | codex-ar1307-metadata-repair-20260918 | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Await formal run 35342513872 on exact head ab485f767; if terminal green, independently review and complete merge gates, otherwise diagnose its bounded failure before any retry. |
+| P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | codex-ar1307-metadata-repair-20260918 | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Formal 35342513872 proved Java OOM during liveness at 3G/3G after ~45.77M generated and ~37.99M distinct states. Keep AR unqualified; define and promote a separately reviewed QEMU/full-exhaustive capacity contract before rerun. |
 
 ### Open (1)
 
