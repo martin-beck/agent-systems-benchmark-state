@@ -2,7 +2,7 @@
 {
   "branch": "feature/native-capacity-controller",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-18T23:36:42+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0701",
     "AR-0103"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/native-capacity-controller",
   "observed_dirty": 0,
   "observed_head": "28f30eea80efef5a61ea438e77402f8640564cc9",
-  "owner": "asb-ar0704-formal-rebase-20260918",
+  "owner": "",
   "plan": "../plans/AR-0704.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 156,
+  "task_revision": 157,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-18T21:52:22+00:00",
+  "updated_at": "2026-09-18T21:52:34+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -557,3 +557,8 @@ must not block this AR or its dependents.
 
 - 2026-09-18T21:52:22+00:00: Recorded command exit 0; command argv SHA-256
   1ae79520b2744f50fe09a46318262deeb9d244a79627cd7a56315dccd211d252.
+
+- 2026-09-18T21:52:34+00:00: Rebase worker stopped after repeated bounded probes without producing a
+  rebased PR #119 candidate; PR #119 remains at 28f30ee with stale formal pin. Preserve current
+  source and require a fresh owner to perform the documented rebase onto current main, then run full
+  gates and exact-head CI. Unrelated PR #230/AR-1313 was not merged or accepted as AR-0704 evidence.
