@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 348,
+  "task_revision": 349,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T17:16:36+00:00",
+  "updated_at": "2026-09-18T17:19:44+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1014,3 +1014,7 @@ source code or treating a capacity failure as a model result.
 - 2026-09-18T17:16:36+00:00: Released blocked with measured causes: corrected data UUID after prior
   NoCloud mount failure; current preflight blocker is SwapFree below 1 GiB with 13 GiB swap fully
   used. Free swap without violating disk/resource gates before the next single QEMU attempt.
+
+- 2026-09-18T17:19:44+00:00: Resource repair: swap is fully consumed by unrelated processes;
+  preserve them, reclaim free swap by cycling the existing swap device with ample RAM, then rerun
+  preflight.
