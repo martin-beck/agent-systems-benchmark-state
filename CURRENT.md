@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1160](tasks/AR-1160.md): Wizard control API | Wizard control API | Post-merge exact-main verification for f7602a73e4fc7a5d9af4f675b8772680d2612066 is terminal green across all seven workflows: Repository quality 35374843154, Rust 35374843254, fault 35374843244, formal 35374843115, aarch64 35374843171, hosted portability 35374843061, headers 35374843105. Follow-up coverage repair is complete. Prepare the next fresh scoped ASB implementation AR/branch for provider-bound capture wiring, durable cassette reconciliation, and offline-default activation; keep AR-1160 open until remaining scope is complete. | codex-ar1160-lifecycle-20260918 |
+| P0 | [AR-1160](tasks/AR-1160.md): Wizard control API | Wizard control API | Provider capture is not wired: asb-cli RunnerBackend::recording_campaign_lifecycle only mutates state/count; it never calls StrictReplayService::capture_authenticated_connection, RecordingCampaignRecord stores no tuple/cassette digests, and offline-ready is only manually injected by a test. Create a fresh scoped AR for runtime-owned authenticated provider launch capture, durable per-tuple cassette coverage/reconciliation, and verified offline activation; preserve fail-closed gates. Keep AR-1160 blocked. | codex-ar1160-lifecycle-20260918 |
 
 ## Open
 
