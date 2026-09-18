@@ -21,21 +21,21 @@ Generated from local Git and GitHub. Do not edit.
 | #150 | `dependabot/cargo/tempfile-3.27.0@d4eb5ee4a62e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump tempfile from 3.22.0 to 3.27.0 |
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
 | #214 | `feature/ar-1286-supervised-replay-lifecycle@eaf7fcbf42ae` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(replay): integrate runtime-owned supervised replay lifecycle |
-| #220 | `feature/ar-1303-hosted-platform-diagnostics@d85889d5066c` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | ci(platforms): add privacy-safe hosted failure diagnostics |
+| #220 | `feature/ar-1303-hosted-platform-diagnostics@b5b0ef3bdda8` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, IN_PROGRESS:, QUEUED:, IN_PROGRESS:, QUEUED:, IN_PROGRESS: | ci(platforms): add privacy-safe hosted failure diagnostics |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 35385954483 | `b5b0ef3bdda8` | pull_request | Formal assurance | queued:- |
+| 35385954355 | `b5b0ef3bdda8` | pull_request | Repository quality | in_progress:- |
+| 35385954223 | `b5b0ef3bdda8` | pull_request | Rust verification | in_progress:- |
+| 35385954205 | `b5b0ef3bdda8` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 35385954175 | `b5b0ef3bdda8` | pull_request | Huawei MIT source headers | in_progress:- |
+| 35385954155 | `b5b0ef3bdda8` | pull_request | Emulated aarch64 portability | queued:- |
+| 35385954126 | `b5b0ef3bdda8` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 35385954125 | `b5b0ef3bdda8` | pull_request | Fault assurance | in_progress:- |
 | 35374843254 | `f7602a73e4fc` | push | Rust verification | completed:success |
 | 35374843244 | `f7602a73e4fc` | push | Fault assurance | completed:success |
 | 35374843171 | `f7602a73e4fc` | push | Emulated aarch64 portability | completed:success |
 | 35374843154 | `f7602a73e4fc` | push | Repository quality | completed:success |
-| 35374843115 | `f7602a73e4fc` | push | Formal assurance | completed:success |
-| 35374843105 | `f7602a73e4fc` | push | Huawei MIT source headers | completed:success |
-| 35374843061 | `f7602a73e4fc` | push | Hosted portability and native qualification | completed:success |
-| 35374053681 | `43579f2d72f6` | pull_request | Hosted portability and native qualification | completed:success |
-| 35374053613 | `43579f2d72f6` | pull_request | Rust verification | completed:success |
-| 35374053559 | `43579f2d72f6` | pull_request | Formal assurance | completed:success |
-| 35374053509 | `43579f2d72f6` | pull_request | Repository quality | completed:success |
-| 35374053433 | `43579f2d72f6` | pull_request | Emulated aarch64 portability | completed:success |
