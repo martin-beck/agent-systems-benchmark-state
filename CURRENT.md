@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1160](tasks/AR-1160.md): Wizard control API | Wizard control API | PR #227 exact head is now 3cc144e73ed68bd86f4dd05c644162e65dfb0895 with focused empty-campaign status coverage test. Local full tools/quality/check_coverage.py passed at 90.48% lines (51,864/57,? workspace report; hosted prior was 89.99%); all local tests in the full coverage run passed. Push completed; six hosted required workflows are running and must reach terminal green. Then obtain independent review, verify exact-head CI and merge only when all required checks are green. Runtime provider capture wiring and asb-tui recording controls remain future work; do not claim AR complete. | codex-ar1160-control-20260918 |
+| P0 | [AR-1160](tasks/AR-1160.md): Wizard control API | Wizard control API | PR #227 exact head is 3db1f4ccc86ee470849c20366c7f91d6a51ded2a with portable lifecycle identity/error-path coverage. Hosted required checks are running; policy coverage rerun must reach terminal green before any merge. After green, obtain independent review and merge only exact reviewed head. AR remains incomplete after this slice: provider-bound capture wiring, durable cassette coverage reconciliation, and offline-default activation still require implementation. | codex-ar1160-control-20260918 |
 | P0 | [AR-1308](tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Rebuild disposable guest with reviewed asb user/user-manager; rerun preflight and one bounded QEMU attempt. | codex-ar1308-fixture-repair-20260918 |
 
 ## Open
