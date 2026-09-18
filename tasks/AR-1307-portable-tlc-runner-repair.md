@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Qualify the dedicated self-hosted runner user manager and bus at exact PR head 4d98e1dca; repair only the governed runner bootstrap or workflow portability defect, rerun exact-head hosted checks, then rebuild pristine QEMU fixture and run full-exhaustive after all required CI is green.",
+  "next_action": "Rerun fresh exact-head formal and coordination checks at beafa965e61b0f09d9ed5f10ffcd621b0cf3e5b2 after runner runtime ownership and bus/cgroup repair; after all required hosted checks are green, rebuild the pristine QEMU fixture and run full-exhaustive attestation.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 454,
+  "task_revision": 455,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T03:32:37+00:00",
+  "updated_at": "2026-09-18T03:33:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1207,3 +1207,10 @@ and protected publication sequence.
   cf5ad88b193fc852275862bc50b8853a856fecfda5b438d091447d09a9edb6a1.
 
 - 2026-09-18T03:32:37+00:00: Heartbeat by codex-ar1307-runner-repair2-20260918.
+
+- 2026-09-18T03:33:03+00:00: Runner repair is active and service online. The previous formal failure
+  was from the run launched before provisioning: chmod of /srv/data/projects/.asb-tlc failed under
+  the old root-owned runtime. Provisioned .asb-tlc, attestations, and queue for gha-asb-state mode
+  0700 through handoffctl. Previous coordination failure is existing generated metadata validation:
+  AR-1301/1306 next_action over schema maximum and AR-1304/1305/1307 empty checkpoint_commit; must
+  be repaired in canonical state before rerun.

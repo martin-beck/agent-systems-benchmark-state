@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1307](tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Qualify the dedicated self-hosted runner user manager and bus at exact PR head 4d98e1dca; repair only the governed runner bootstrap or workflow portability defect, rerun exact-head hosted checks, then rebuild pristine QEMU fixture and run full-exhaustive after all required CI is green. | codex-ar1307-runner-repair2-20260918 |
+| P0 | [AR-1307](tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Rerun fresh exact-head formal and coordination checks at beafa965e61b0f09d9ed5f10ffcd621b0cf3e5b2 after runner runtime ownership and bus/cgroup repair; after all required hosted checks are green, rebuild the pristine QEMU fixture and run full-exhaustive attestation. | codex-ar1307-runner-repair2-20260918 |
 
 ## Open
 
