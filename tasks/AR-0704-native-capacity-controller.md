@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 89,
+  "task_revision": 90,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-18T21:30:13+00:00",
+  "updated_at": "2026-09-18T21:30:24+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -352,3 +352,6 @@ must not block this AR or its dependents.
   after formal successor merges; preserve native-capacity scope and fail closed.
 
 - 2026-09-18T21:30:13+00:00: Claimed by asb-ar0704-pr119-audit-20260918.
+
+- 2026-09-18T21:30:24+00:00: Recorded command exit 0; command argv SHA-256
+  8835ca6afa124b5f0cfd058e18f654c75cfea93cbe35cb3c57d7948687d35db1.
