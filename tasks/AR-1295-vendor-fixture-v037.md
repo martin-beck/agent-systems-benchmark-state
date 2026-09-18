@@ -2,22 +2,22 @@
 {
   "branch": "repair/ar-1295-vendor-fixtures",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-18T21:39:19+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1295",
   "next_action": "Repair current generated-state blockers (AR-1160, AR-1258, AR-1303, malformed AR-1309), then re-audit exact-head publication.",
   "observed_branch": "repair/ar-1295-vendor-fixtures",
   "observed_dirty": 0,
   "observed_head": "c8c5a25e0ba31862c83465ea02963c5e4adb5d22",
-  "owner": "codex-ar1295-final-20260918",
+  "owner": "",
   "plan": "../plans/AR-1295.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Align stale coordinator vendor tests with the verified immutable v0.3.7 pin.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Coordinator vendor v0.3.7 fixture alignment",
-  "updated_at": "2026-09-18T20:58:22+00:00",
+  "updated_at": "2026-09-18T20:58:42+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1295-vendor-fixtures"
 }
 ---
@@ -220,3 +220,11 @@ handoffctl, formal runner behavior, ASB product, or asb-tui.
 
 - 2026-09-18T20:58:22+00:00: Recorded command exit 0; command argv SHA-256
   46832a662b038db9d93990b46dbf55d12047c35b46c6b23c663051e8b793c7c6.
+
+- 2026-09-18T20:58:42+00:00: Final re-audit complete: immutable v0.3.7 fixture commit
+  53fd66118559b2e99ebf5c4d50416b004156049d is ancestor of protected main; current manifest fixture
+  and vendor payload verify with handoffctl_vendor. Focused vendor tests 8/8, full unittest 196/196,
+  schema, render-status, Ruff, format, mypy, headers, and Lizard pass. Prior coverage report passed
+  at 95%. The only later coverage wrapper RC=1 was post-command reconcile refusal on disposable
+  .coverage exceeding 200 KiB; cache removed, no source/gate failure. No PR/publication transition
+  remains; release done.
