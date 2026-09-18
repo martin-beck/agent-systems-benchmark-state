@@ -7,7 +7,7 @@
     "AR-1304"
   ],
   "id": "AR-1308",
-  "next_action": "Await PR #26 exact-head review and green checks; then merge the signed AR-1308 receipt/preflight and run one bounded exact-head full-exhaustive attempt on the disposable QEMU capacity.",
+  "next_action": "PR #26 is blocked by independent review: require closed validator schema and actual image/overlay/QEMU/version/hypervisor/disk/inode/swap checks, exact TLC/source identity, sanitized receipt digests, complete negative tests and applicable full-quality CI. Rebase and re-review before any full QEMU attempt.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T14:13:06+00:00",
+  "updated_at": "2026-09-18T14:27:03+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -222,3 +222,7 @@ source code or treating a capacity failure as a model result.
 
 - 2026-09-18T14:13:06+00:00: Recorded command exit 0; command argv SHA-256
   934f79b23cfb32922ac60efb6fecced9c3c3507ec05ea0f1c7971b44ffa68791.
+
+- 2026-09-18T14:27:03+00:00: Recorded independent-review blockers before further PR work. No
+  full-exhaustive QEMU run is authorized until the exact signed AR-1307 head, bounded
+  preflight/cleanup, exact-head review, and green required checks are satisfied.
