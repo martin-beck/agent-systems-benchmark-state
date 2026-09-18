@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Record and diagnose formal 35314479090 TLC exit 1/no-attestation, fix Ruff formatting in tests/test_tlc_runner.py, rerun focused/full gates on a fresh signed head; do not qualify or merge.",
+  "next_action": "Await fresh exact-head CI for f33c250cb; if required checks pass, independently review and dispatch exactly one new formal run, then investigate any terminal TLC result before merge.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "969eef05834a4ce5f711bbafaa5798549abd95c8",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 678,
+  "task_revision": 679,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T07:33:35+00:00",
+  "updated_at": "2026-09-18T07:33:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1885,3 +1885,10 @@ and protected publication sequence.
 
 - 2026-09-18T07:33:35+00:00: Recorded command exit 0; command argv SHA-256
   e819c0f0383ba16de699e705921636269f94694e773c4d3c4fbeaa3145df1d7c.
+
+- 2026-09-18T07:33:59+00:00: Root cause investigation reproduced the post-admission failure locally:
+  attest.py rejected the approved /srv/data/projects runtime evidence path because it incorrectly
+  required paths under the source checkout. Portable-smoke then passed after binding path validation
+  to the approved runtime root. Corrective signed head f33c250cb also fixes Ruff formatting in
+  tests/test_tlc_runner.py. Focused tests 61 passed; Ruff format/check passed. Prior full run
+  35314479090 remains failed and is not reused as qualification.

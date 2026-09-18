@@ -1656,7 +1656,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | codex-ar1307-metadata-repair-20260918 | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Record and diagnose formal 35314479090 TLC exit 1/no-attestation, fix Ruff formatting in tests/test_tlc_runner.py, rerun focused/full gates on a fresh signed head; do not qualify or merge. |
+| P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | codex-ar1307-metadata-repair-20260918 | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Await fresh exact-head CI for f33c250cb; if required checks pass, independently review and dispatch exactly one new formal run, then investigate any terminal TLC result before merge. |
 
 ### Open (1)
 
