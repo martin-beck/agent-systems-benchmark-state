@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 668,
+  "task_revision": 669,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T06:19:48+00:00",
+  "updated_at": "2026-09-18T06:20:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1853,3 +1853,6 @@ and protected publication sequence.
   (permission denied). Corrective signed head cd33b1b04 relocates the canonical shared admission
   fence to /srv/data/projects/.asb-tlc/admission.lock and updates focused tests/docs. Focused tests
   passed (61); pushed with force-with-lease. No qualification or merge claim.
+
+- 2026-09-18T06:20:23+00:00: Recorded command exit 0; command argv SHA-256
+  af9af4914ab50cd5a7c99d853b116f42da6960721689ceb3cced5416e2fe63ba.
