@@ -289,3 +289,72 @@ class Ar1308CapacityTests(unittest.TestCase):
                 ):
                     args.extend((f"--{name}", str(receipt)))
                 self.assertEqual(validator.main(args), 2)
+
+    def test_live_validators_cover_bound_inputs_and_capacity_branches(self) -> None:
+        from tempfile import TemporaryDirectory
+
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            image = root / "image"
+            overlay = root / "overlay"
+            model = root / "model"
+            seed = root / "seed"
+            jar = root / "tla2tools.jar"
+            for path in (image, overlay, model, seed, jar):
+                path.write_bytes(b"fixture")
+            lock = root / "lock"
+            lock.touch()
+            jdk = root / "jdk"
+            (jdk / "bin").mkdir(parents=True)
+            (jdk / "bin/java").touch()
+            with (
+                patch.object(validator, "_digest", return_value=validator.REQUIRED_IMAGE_SHA256),
+                patch.object(
+                    validator,
+                    "_run",
+                    side_effect=[
+                        validator.subprocess.CompletedProcess([], 0, "QEMU emulator 8.2.2", ""),
+                        validator.subprocess.CompletedProcess(
+                            [], 0, json.dumps({"virtual-size": 64 * validator.GIB}), ""
+                        ),
+                    ],
+                ),
+            ):
+                self.assertEqual(validator._validate_vm(image, overlay), [])
+            with (
+                patch.object(
+                    validator,
+                    "_run",
+                    return_value=validator.subprocess.CompletedProcess([], 0, "", 'version "17.0"'),
+                ),
+                patch.object(
+                    validator, "_digest", side_effect=["m", "s", validator.REQUIRED_TLC_SHA256]
+                ),
+            ):
+                candidate = copy.deepcopy(RECEIPT)
+                candidate["model_config_sha256"] = "m"
+                candidate["seed_sha256"] = "s"
+                self.assertEqual(
+                    validator._validate_artifacts(candidate, model, seed, jdk, jar, lock), []
+                )
+
+    def test_main_rejects_non_object_and_live_failure(self) -> None:
+        from tempfile import TemporaryDirectory
+
+        with TemporaryDirectory() as directory:
+            receipt = Path(directory) / "receipt.json"
+            receipt.write_text("[]", encoding="utf-8")
+            args = ["--receipt", str(receipt)]
+            for name in (
+                "runtime-root",
+                "image",
+                "overlay",
+                "source",
+                "model",
+                "seed",
+                "jdk",
+                "tlc-jar",
+                "admission-lock",
+            ):
+                args.extend((f"--{name}", str(receipt)))
+            self.assertEqual(validator.main(args), 1)
