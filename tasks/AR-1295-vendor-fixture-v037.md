@@ -2,22 +2,22 @@
 {
   "branch": "repair/ar-1295-vendor-fixtures",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-18T20:17:41+00:00",
   "depends_on": [],
   "id": "AR-1295",
   "next_action": "Open a review PR from the clean exact fixture head after repairing the unrelated generated-state schema blocker: AR-1160 next_action exceeds the schema length bound. Preserve the v0.3.7 fixture and do not change handoffctl/vendor code.",
   "observed_branch": "repair/ar-1295-vendor-fixtures",
   "observed_dirty": 0,
   "observed_head": "c8c5a25e0ba31862c83465ea02963c5e4adb5d22",
-  "owner": "",
+  "owner": "asb-ar1295-vendor-reaudit-20260918",
   "plan": "../plans/AR-1295.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Align stale coordinator vendor tests with the verified immutable v0.3.7 pin.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Coordinator vendor v0.3.7 fixture alignment",
-  "updated_at": "2026-09-18T19:47:35+00:00",
+  "updated_at": "2026-09-18T19:47:41+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1295-vendor-fixtures"
 }
 ---
@@ -163,3 +163,5 @@ handoffctl, formal runner behavior, ASB product, or asb-tui.
   ownerless/blocked. AR-1295 fixture remains immutable v0.3.7 on signed+DCO main; no source or
   policy change is needed here. Reopen only after coordinator repairs the generated-state blockers
   and exact-head publication transition is actually required.
+
+- 2026-09-18T19:47:41+00:00: Claimed by asb-ar1295-vendor-reaudit-20260918.

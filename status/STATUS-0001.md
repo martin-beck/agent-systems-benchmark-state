@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**337 ARs tracked** across 6 active status categories.
+**337 ARs tracked** across 7 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 47 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
@@ -388,7 +388,7 @@ flowchart LR
         AR_1292["AR-1292 - Blocked"]:::status_blocked
         AR_1293["AR-1293 - Open"]:::status_open
         AR_1294["AR-1294 - Superseded"]:::status_superseded
-        AR_1295["AR-1295 - Open"]:::status_open
+        AR_1295["AR-1295 - In progress"]:::status_in_progress
         AR_1296["AR-1296 - Done"]:::status_done
         AR_1297["AR-1297 - Done"]:::status_done
         AR_1298["AR-1298 - Done"]:::status_done
@@ -1659,12 +1659,17 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (2)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1295](../tasks/AR-1295-vendor-fixture-v037.md): Coordinator vendor v0.3.7 fixture alignment | asb-ar1295-vendor-reaudit-20260918 | Align stale coordinator vendor tests with the verified immutable v0.3.7 pin. | Open a review PR from the clean exact fixture head after repairing the unrelated generated-state schema blocker: AR-1160 next_action exceeds the schema length bound. Preserve the v0.3.7 fixture and do not change handoffctl/vendor code. |
+
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Unclaimed | Repair the state-repository TLA admission runner and truthful worktree metadata. | Blocked on AR-1307 runner merge and handoff. Prior full VM was interrupted without success or attestation; after merge, rebuild exact fa57625d9 image/seed and rerun independently reviewed gates. |
-| P0 | [AR-1295](../tasks/AR-1295-vendor-fixture-v037.md): Coordinator vendor v0.3.7 fixture alignment | Unclaimed | Align stale coordinator vendor tests with the verified immutable v0.3.7 pin. | Open a review PR from the clean exact fixture head after repairing the unrelated generated-state schema blocker: AR-1160 next_action exceeds the schema length bound. Preserve the v0.3.7 fixture and do not change handoffctl/vendor code. |
 
 ### Blocked (47)
 
@@ -1738,4 +1743,3 @@ flowchart LR
 | P0 | [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md): Build recent-runs, report and comparison workspaces | Unclaimed | Add searchable recent runs, report inspection and evidence-qualified comparison workspaces. | Implement report and comparison screens after recording workflows publish stable live and strict-replay source labels. |
 | P0 | [AR-1170](../tasks/AR-1170.md): Standalone TUI wizard | Unclaimed | Guide TUI setup through analysis. | Read the plan. |
 | P0 | [AR-1180](../tasks/AR-1180.md): Cross-project wizard qualification | Unclaimed | Qualify the complete wizard. | Read the plan. |
-| P0 | [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md): Authenticated TUI install router | Unclaimed | Expose an authenticated renderer-neutral ASB router for asb tui install and lifecycle operations. | Promote only after dependencies are independently complete; implement the renderer-neutral authenticated CLI/control route and full integration tests. |

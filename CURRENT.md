@@ -3,12 +3,17 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1295](tasks/AR-1295-vendor-fixture-v037.md): Coordinator vendor v0.3.7 fixture alignment | Align stale coordinator vendor tests with the verified immutable v0.3.7 pin. | Open a review PR from the clean exact fixture head after repairing the unrelated generated-state schema blocker: AR-1160 next_action exceeds the schema length bound. Preserve the v0.3.7 fixture and do not change handoffctl/vendor code. | asb-ar1295-vendor-reaudit-20260918 |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Blocked on AR-1307 runner merge and handoff. Prior full VM was interrupted without success or attestation; after merge, rebuild exact fa57625d9 image/seed and rerun independently reviewed gates. | - |
-| P0 | [AR-1295](tasks/AR-1295-vendor-fixture-v037.md): Coordinator vendor v0.3.7 fixture alignment | Align stale coordinator vendor tests with the verified immutable v0.3.7 pin. | Open a review PR from the clean exact fixture head after repairing the unrelated generated-state schema blocker: AR-1160 next_action exceeds the schema length bound. Preserve the v0.3.7 fixture and do not change handoffctl/vendor code. | - |
 
 ## Blocked
 
