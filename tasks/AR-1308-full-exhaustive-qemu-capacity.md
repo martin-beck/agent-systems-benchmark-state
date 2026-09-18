@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 483,
+  "task_revision": 484,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T20:47:46+00:00",
+  "updated_at": "2026-09-18T21:15:25+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1434,3 +1434,7 @@ source code or treating a capacity failure as a model result.
   AR-1307 current signed head is 969eef058. Host swap was restored; no caches or artifacts were
   deleted, and no unrelated process was stopped. Reopen only after an approved second-disk
   capacity/input bundle is available and the exact current receipt passes all gates.
+
+- 2026-09-18T21:15:25+00:00: Coordinator authorized runner-provisioning attempt: inspect approved
+  second-disk capacity and prepare only the exact isolated QEMU contract; fail closed if
+  disk/headroom or pinned inputs are unavailable.
