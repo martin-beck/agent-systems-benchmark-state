@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1305.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Qualify image-native D-Bus user-session support for required TLC containment.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Image-native user-session support",
-  "updated_at": "2026-09-17T15:25:14+00:00",
+  "updated_at": "2026-09-18T21:10:35+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1305-image-native-user-session"
 }
 ---
@@ -194,3 +194,7 @@ limits and fail-closed behavior remain unchanged.
   endpoint is not connected. No required attestation. This rules out missing dbus.socket symlink as
   sufficient; next action is image-native user-manager/session environment diagnosis with systemctl
   --user status and supported dbus-user-session activation.
+
+- 2026-09-18T21:10:35+00:00: Bounded audit found tooling now installed but read-only guest
+  inspection still fails: supermin exits 1, so no safe image-native repair or qualification is
+  available. Reopen briefly to refresh evidence and release ownerless.
