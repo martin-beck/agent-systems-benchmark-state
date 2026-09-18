@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 259,
+  "task_revision": 260,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T16:22:12+00:00",
+  "updated_at": "2026-09-18T16:25:59+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -732,3 +732,7 @@ source code or treating a capacity failure as a model result.
   cloud-init final stage before bounded cleanup, so no qualification is claimed. Repair/rebuild the
   reviewed fixture/seed chain, verify fsck/hash and serial bootstrap, then rerun preflight and one
   bounded exact-head attempt.
+
+- 2026-09-18T16:25:59+00:00: Resume fixture repair after reviewing the durable mismatch. Repair only
+  the disposable data/seed chain for pinned JDK security files; retain exact model, 3G/3G limits,
+  offline/no-host-mount and bounded-QEMU gates.
