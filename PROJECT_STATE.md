@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #119 | `feature/native-capacity-controller@28f30eea80ef` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(capacity): add bounded native lifecycle controller |
+| #119 | `feature/native-capacity-controller@c5a7b5a0448c` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, IN_PROGRESS:, QUEUED:, IN_PROGRESS: | feat(capacity): add bounded native lifecycle controller |
 | #125 | `fix/control-state-lock-test-isolation@8b0f9fd07d5d` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(cli): isolate control state roots |
 | #144 | `dependabot/github_actions/actions/setup-java-6.0.0@5885c200026e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump actions/setup-java from 5.0.0 to 6.0.0 |
 | #145 | `dependabot/cargo/toml-0.9.5@5f30c0c92f18` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump toml from 0.8.23 to 0.9.5 |
@@ -21,21 +21,21 @@ Generated from local Git and GitHub. Do not edit.
 | #150 | `dependabot/cargo/tempfile-3.27.0@d4eb5ee4a62e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump tempfile from 3.22.0 to 3.27.0 |
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
 | #214 | `feature/ar-1286-supervised-replay-lifecycle@eaf7fcbf42ae` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(replay): integrate runtime-owned supervised replay lifecycle |
-| #230 | `repair/ar-1313-runner-routing-forward-revalidation@27fbefc436df` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | docs: clarify required runner evidence routing |
+| #230 | `repair/ar-1313-runner-routing-forward-revalidation@27fbefc436df` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | docs: clarify required runner evidence routing |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 35398910348 | `c5a7b5a0448c` | pull_request | Repository quality | in_progress:- |
+| 35398910299 | `c5a7b5a0448c` | pull_request | Fault assurance | queued:- |
+| 35398910291 | `c5a7b5a0448c` | pull_request | Huawei MIT source headers | queued:- |
+| 35398910268 | `c5a7b5a0448c` | pull_request | Hosted portability and native qualification | queued:- |
+| 35398910254 | `c5a7b5a0448c` | pull_request | Formal assurance | queued:- |
+| 35398910230 | `c5a7b5a0448c` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 35398910227 | `c5a7b5a0448c` | pull_request | Agent Workflow Quality shadow | queued:- |
+| 35398910222 | `c5a7b5a0448c` | pull_request | Rust verification | in_progress:- |
 | 35398398885 | `27fbefc436df` | pull_request | Fault assurance | completed:success |
-| 35398398849 | `27fbefc436df` | pull_request | Formal assurance | in_progress:- |
+| 35398398849 | `27fbefc436df` | pull_request | Formal assurance | completed:success |
 | 35398398758 | `27fbefc436df` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 35398398718 | `27fbefc436df` | pull_request | Hosted portability and native qualification | completed:success |
-| 35398398712 | `27fbefc436df` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 35398398711 | `27fbefc436df` | pull_request | Repository quality | in_progress:- |
-| 35398398700 | `27fbefc436df` | pull_request | Huawei MIT source headers | completed:success |
-| 35398398697 | `27fbefc436df` | pull_request | Rust verification | in_progress:- |
-| 35396621049 | `17a1530e6206` | workflow_dispatch | Repository quality | completed:failure |
-| 35393146266 | `17a1530e6206` | push | Formal assurance | completed:success |
-| 35393146249 | `17a1530e6206` | push | Hosted portability and native qualification | completed:success |
-| 35393146226 | `17a1530e6206` | push | Fault assurance | completed:success |
