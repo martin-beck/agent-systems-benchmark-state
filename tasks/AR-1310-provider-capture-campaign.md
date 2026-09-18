@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Runtime-owned provider capture and recording campaign qualification.",
-  "task_revision": 56,
+  "task_revision": 57,
   "title": "Runtime-owned provider capture and recording campaign qualification",
-  "updated_at": "2026-09-18T20:18:21+00:00",
+  "updated_at": "2026-09-18T20:19:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1310-provider-capture-campaign"
 }
 ---
@@ -241,3 +241,9 @@ independently so its promotion is not falsely implied by AR-1160 completion.
 - 2026-09-18T20:16:28+00:00: Heartbeat by ar1310-provider-capture.
 
 - 2026-09-18T20:18:21+00:00: Heartbeat by ar1310-provider-capture.
+
+- 2026-09-18T20:19:51+00:00: PR #229 exact head a6a3e43 CI rerun is active. Green so far: platform,
+  Kani, Loom, fault assurance subchecks, headers, AWQ shadow. Rust verification, repository quality,
+  and emulated-aarch64 jobs remain queued in-progress without runners; no new failure is present.
+  Continue monitoring exact-head CI; do not merge until all required checks are green and
+  independent review is complete.
