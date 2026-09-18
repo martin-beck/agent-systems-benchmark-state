@@ -7,7 +7,7 @@
     "AR-1304"
   ],
   "id": "AR-1308",
-  "next_action": "Clear cloud-init instance state in a fresh asb-user/wait-online-masked overlay, rerun governed preflight, then one bounded networkless QEMU attempt.",
+  "next_action": "Free at least 1 GiB host swap without reducing 16 GiB disk headroom; rerun preflight only after swap is available, then one bounded QEMU attempt using UUID-corrected data fixture.",
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 346,
+  "task_revision": 347,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T17:15:33+00:00",
+  "updated_at": "2026-09-18T17:16:34+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1004,3 +1004,9 @@ source code or treating a capacity failure as a model result.
 
 - 2026-09-18T17:15:33+00:00: Recorded command exit 1; command argv SHA-256
   55bfcc9abdf7abce14c6f5a96931bc4fd72414094b112c6ca4af431e9b577aac.
+
+- 2026-09-18T17:16:34+00:00: Concrete diagnosis: prior fresh boot executed NoCloud and transient
+  RC=0, but verify.sh failed closed because the data filesystem UUID differed from the reviewed seed
+  UUID; this prevented /mnt/asb-data and caused TLC_JAR_PATH rejection. The data UUID is now
+  corrected and fsck-clean. Latest governed preflight was blocked before QEMU because host SwapFree
+  was below 1 GiB: all 13 GiB active swap was consumed. Stop retries until swap is freed safely.

@@ -1660,7 +1660,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1160](../tasks/AR-1160.md): Wizard control API | codex-ar1160-control-20260918 | Wizard control API | PR #227 merged at 278abfde3b568b9bbd248825e1246a8c530a8308 from exact reviewed head 3db1f4c. Verify all post-merge main workflows for 278abfd terminal green, then prepare the next isolated ASB-owned implementation slice/AR for provider-bound capture wiring, durable cassette reconciliation, and offline-default activation; do not mark AR-1160 complete yet. |
-| P0 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | codex-ar1308-fixture-repair-20260918 | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Clear cloud-init instance state in a fresh asb-user/wait-online-masked overlay, rerun governed preflight, then one bounded networkless QEMU attempt. |
+| P0 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | codex-ar1308-fixture-repair-20260918 | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Free at least 1 GiB host swap without reducing 16 GiB disk headroom; rerun preflight only after swap is available, then one bounded QEMU attempt using UUID-corrected data fixture. |
 
 ### Open (1)
 
