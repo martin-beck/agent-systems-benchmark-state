@@ -8,16 +8,16 @@
   "next_action": "Update stale coordinator vendor test fixtures from v0.3.5 to verified immutable v0.3.7 and rerun the complete state test suite without changing vendor or handoffctl code.",
   "observed_branch": "repair/ar-1295-vendor-fixtures",
   "observed_dirty": 0,
-  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
+  "observed_head": "c8c5a25e0ba31862c83465ea02963c5e4adb5d22",
   "owner": "asb-ar1295-vendor-fixtures-20260918",
   "plan": "../plans/AR-1295.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Align stale coordinator vendor tests with the verified immutable v0.3.7 pin.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Coordinator vendor v0.3.7 fixture alignment",
-  "updated_at": "2026-09-18T18:56:51+00:00",
+  "updated_at": "2026-09-18T18:57:00+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1295-vendor-fixtures"
 }
 ---
