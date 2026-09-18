@@ -605,6 +605,39 @@ class TlcRunnerTests(unittest.TestCase):
             ):
                 RUNNER.run(args)
 
+    def test_runner_records_child_exit_and_admission_error(self) -> None:
+        process = mock.Mock(pid=1234)
+        process.wait.return_value = 9
+        with mock.patch.object(RUNNER.subprocess, "Popen", return_value=process):
+            self.assertEqual(RUNNER._bounded_process(["fixture"], 5), (9, False))
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            for name in ("jar", "model", "config"):
+                (root / name).write_text("fixture", encoding="utf-8")
+            args = Namespace(
+                queue=str(root / "queue"),
+                jar=str(root / "jar"),
+                model=str(root / "model"),
+                config=str(root / "config"),
+                metadir=str(root / "meta"),
+                workers=2,
+                heap="2048m",
+                memory_max="3G",
+                swap_max="3G",
+                address_space_max="8G",
+                cpu_quota="200%",
+                tasks_max=64,
+                timeout_seconds=10,
+                cgroup_mode="off",
+                admission_lock=str(root / "admission.lock"),
+            )
+            with (
+                mock.patch.object(RUNNER, "DEFAULT_TMPDIR", root / "tmp"),
+                mock.patch.object(RUNNER, "_provenance", side_effect=RUNNER.AdmissionError("bad")),
+                self.assertRaisesRegex(RUNNER.AdmissionError, "bad"),
+            ):
+                RUNNER.run(args)
+
 
 if __name__ == "__main__":
     unittest.main()

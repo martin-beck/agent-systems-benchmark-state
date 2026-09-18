@@ -77,7 +77,7 @@
       "source": "schema/upgrade-contract.schema.json"
     },
     "tests/test_handoffctl.py": {
-      "sha256": "aeb289e02f87021a1636b3b34ce71ad03941b0c8e975fa38fa3128fec1582d87",
+      "sha256": "88e11f687e4f2b75f87331df426fab988b6652c309dc89701d9ad600e82dc92a",
       "source": "tests/test_handoffctl.py"
     },
     "tests/test_sqlite_storage.py": {
