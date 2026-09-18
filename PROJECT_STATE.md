@@ -28,7 +28,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35353760231 | `3e77bd390773` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 35353760231 | `3e77bd390773` | pull_request | Hosted portability and native qualification | completed:success |
 | 35353760206 | `3e77bd390773` | pull_request | Rust verification | in_progress:- |
 | 35353760163 | `3e77bd390773` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 35353760070 | `3e77bd390773` | pull_request | Repository quality | in_progress:- |
