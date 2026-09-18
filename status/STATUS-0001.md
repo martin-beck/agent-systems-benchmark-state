@@ -11,9 +11,9 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 1 |
-| **Blocked** | Cannot proceed until its recorded blocker clears | 47 |
+| **Blocked** | Cannot proceed until its recorded blocker clears | 48 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 218 |
@@ -351,7 +351,7 @@ flowchart LR
         AR_1255["AR-1255 - Planned"]:::status_planned
         AR_1256["AR-1256 - Blocked"]:::status_blocked
         AR_1257["AR-1257 - Planned"]:::status_planned
-        AR_1258["AR-1258 - In progress"]:::status_in_progress
+        AR_1258["AR-1258 - Blocked"]:::status_blocked
         AR_1259["AR-1259 - Done"]:::status_done
         AR_1260["AR-1260 - Blocked"]:::status_blocked
         AR_1261["AR-1261 - Blocked"]:::status_blocked
@@ -1663,12 +1663,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1310](../tasks/AR-1310-provider-capture-campaign.md): Runtime-owned provider capture and recording campaign qualification | ar1310-provider-capture | Runtime-owned provider capture and recording campaign qualification. | Promote only after review confirms AR-1160 blocked evidence is preserved and the runtime capture design is dependency-ready; implement the provider-bound capture seam, durable tuple cassette coverage, restart reconciliation, and fail-closed offline activation. |
-| P1 | [AR-1258](../tasks/AR-1258-docker-binfmt-qemu.md): Provision Docker binfmt/QEMU capability | codex-state-metadata-20260918 | Provision and verify Docker binfmt/QEMU for multiarch qualification. | Await an approved maintenance window with zero Docker workloads; snapshot binfmt state, apply rollback-safe F registration, then rerun pinned arm64 Alpine /bin/true with network disabled and record sanitized interpreter, digest, provenance, timeout, and rollback evidence. Keep qualification blocked. |
 
 ### Open (1)
 
@@ -1676,7 +1675,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Unclaimed | Repair the state-repository TLA admission runner and truthful worktree metadata. | Blocked on AR-1307 runner merge and handoff. Prior full VM was interrupted without success or attestation; after merge, rebuild exact fa57625d9 image/seed and rerun independently reviewed gates. |
 
-### Blocked (47)
+### Blocked (48)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1727,6 +1726,7 @@ flowchart LR
 | P1 | [AR-1251](../tasks/AR-1251-mockagents-transport-sandbox.md): Add MockAgents transport sandbox fixture | Unclaimed | Add a bounded transport and sandbox fixture for MockAgents qualification. | Await reviewed AR-1252 integration allowing pinned MockAgents and Python client in one approved sandbox; then add real transport/lifecycle/egress tests. |
 | P1 | [AR-1254](../tasks/AR-1254-mockagents-pinned-python-transport.md): Qualify MockAgents through pinned Python transport | Unclaimed | Qualify MockAgents through the pinned Python sandbox. | Await AR-1258 pinned arm64 runner and AR-1255 transport evidence; then qualify protocol, cancellation, egress and restart. |
 | P1 | [AR-1256](../tasks/AR-1256-bundled-mockagents-isolation.md): Execute bundled MockAgents transport in isolation | Unclaimed | Execute bundled MockAgents transport in isolation. | Implement bundled in-container MockAgents transport and digest-pinned arm64 QEMU evidence. |
+| P1 | [AR-1258](../tasks/AR-1258-docker-binfmt-qemu.md): Provision Docker binfmt/QEMU capability | Unclaimed | Provision and verify Docker binfmt/QEMU for multiarch qualification. | Await an approved maintenance window with zero Docker workloads; snapshot binfmt state, apply rollback-safe F registration, then rerun pinned arm64 Alpine /bin/true with network disabled and record sanitized interpreter, digest, provenance, timeout, and rollback evidence. Keep qualification blocked. |
 
 ### Planned (58)
 

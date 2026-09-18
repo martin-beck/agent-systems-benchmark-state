@@ -8,7 +8,6 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1310](tasks/AR-1310-provider-capture-campaign.md): Runtime-owned provider capture and recording campaign qualification | Runtime-owned provider capture and recording campaign qualification. | Promote only after review confirms AR-1160 blocked evidence is preserved and the runtime capture design is dependency-ready; implement the provider-bound capture seam, durable tuple cassette coverage, restart reconciliation, and fail-closed offline activation. | ar1310-provider-capture |
-| P1 | [AR-1258](tasks/AR-1258-docker-binfmt-qemu.md): Provision Docker binfmt/QEMU capability | Provision and verify Docker binfmt/QEMU for multiarch qualification. | Await an approved maintenance window with zero Docker workloads; snapshot binfmt state, apply rollback-safe F registration, then rerun pinned arm64 Alpine /bin/true with network disabled and record sanitized interpreter, digest, provenance, timeout, and rollback evidence. Keep qualification blocked. | codex-state-metadata-20260918 |
 
 ## Open
 
@@ -67,6 +66,7 @@ Never edit this file directly.
 | P1 | [AR-1251](tasks/AR-1251-mockagents-transport-sandbox.md): Add MockAgents transport sandbox fixture | Add a bounded transport and sandbox fixture for MockAgents qualification. | Await reviewed AR-1252 integration allowing pinned MockAgents and Python client in one approved sandbox; then add real transport/lifecycle/egress tests. | - |
 | P1 | [AR-1254](tasks/AR-1254-mockagents-pinned-python-transport.md): Qualify MockAgents through pinned Python transport | Qualify MockAgents through the pinned Python sandbox. | Await AR-1258 pinned arm64 runner and AR-1255 transport evidence; then qualify protocol, cancellation, egress and restart. | - |
 | P1 | [AR-1256](tasks/AR-1256-bundled-mockagents-isolation.md): Execute bundled MockAgents transport in isolation | Execute bundled MockAgents transport in isolation. | Implement bundled in-container MockAgents transport and digest-pinned arm64 QEMU evidence. | - |
+| P1 | [AR-1258](tasks/AR-1258-docker-binfmt-qemu.md): Provision Docker binfmt/QEMU capability | Provision and verify Docker binfmt/QEMU for multiarch qualification. | Await an approved maintenance window with zero Docker workloads; snapshot binfmt state, apply rollback-safe F registration, then rerun pinned arm64 Alpine /bin/true with network disabled and record sanitized interpreter, digest, provenance, timeout, and rollback evidence. Keep qualification blocked. | - |
 
 ## Planned
 

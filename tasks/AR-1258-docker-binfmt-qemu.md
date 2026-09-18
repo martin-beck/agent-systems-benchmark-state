@@ -2,22 +2,22 @@
 {
   "branch": "feature/docker-binfmt-qemu-capability",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-18T20:22:50+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1258",
   "next_action": "Await an approved maintenance window with zero Docker workloads; snapshot binfmt state, apply rollback-safe F registration, then rerun pinned arm64 Alpine /bin/true with network disabled and record sanitized interpreter, digest, provenance, timeout, and rollback evidence. Keep qualification blocked.",
   "observed_branch": "feature/docker-binfmt-qemu-capability",
   "observed_dirty": 0,
   "observed_head": "a0befc0ff247a42b8d796af161b58b1011de8377",
-  "owner": "codex-state-metadata-20260918",
+  "owner": "",
   "plan": "../plans/AR-1258.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provision and verify Docker binfmt/QEMU for multiarch qualification.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Provision Docker binfmt/QEMU capability",
-  "updated_at": "2026-09-18T19:52:58+00:00",
+  "updated_at": "2026-09-18T19:53:00+00:00",
   "worktree_key": "agent-systems-benchmark-docker-binfmt-qemu"
 }
 ---
@@ -212,3 +212,6 @@ Provide the independent Docker binfmt/QEMU capability required by multiarch qual
 - 2026-09-18T19:52:58+00:00: Shortened next_action to the declared 300-character schema bound;
   preserves the prior capability failure and maintenance-window blocker without changing host or
   product state.
+
+- 2026-09-18T19:53:00+00:00: Metadata schema repair only: concise next_action is now within the
+  declared bound; capability remains blocked with prior immutable evidence and no host mutation.
