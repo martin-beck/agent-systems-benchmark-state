@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 692,
+  "task_revision": 693,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T09:55:54+00:00",
+  "updated_at": "2026-09-18T09:56:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1940,3 +1940,6 @@ and protected publication sequence.
   1979MB heap and 64MB offheap, reaching about 32.86M generated, 27.20M distinct states, and 10.8M
   queued states before exit 1. No invariant/OOM detail appeared in bounded diagnostics and no
   success attestation was emitted. This is a truthful formal failure, not qualification.
+
+- 2026-09-18T09:56:59+00:00: Recorded command exit 0; command argv SHA-256
+  9534ff79d2070569dbb5ef70f5426132813a345733894b15c3af55cccb73055c.
