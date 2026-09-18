@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "checkpoint_commit": "df0e402f442468e43e06b7c1acb3c3667277fb75",
-  "claim_expires": "2026-09-18T16:36:56+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1304"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
-  "owner": "codex-coordinator-ar1308-runner-20260918",
+  "owner": "",
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 258,
+  "task_revision": 259,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T16:22:01+00:00",
+  "updated_at": "2026-09-18T16:22:12+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -722,3 +722,13 @@ source code or treating a capacity failure as a model result.
 
 - 2026-09-18T16:22:01+00:00: Recorded command exit 0; command argv SHA-256
   7e45f5e1e40fed516ec51062e5979d82637c99ff6fed6bb2f3cc00774fbb964b.
+
+- 2026-09-18T16:22:12+00:00: Governed preflight passed after host swap, kvm access, admission-lock
+  ownership and signer setup. A bounded disposable QEMU boot using the pinned image and offline seed
+  failed closed before TLC: seed requested
+  /mnt/asb-data/etc/java-17-openjdk/{java.security,java.policy,nss.cfg}, but the prepared data
+  fixture exposed only etc-java-17-openjdk; serial recorded cp ENOENT and no attestation/evidence. A
+  fresh disposable data copy added the canonical symlink, but a network-none boot did not reach
+  cloud-init final stage before bounded cleanup, so no qualification is claimed. Repair/rebuild the
+  reviewed fixture/seed chain, verify fsck/hash and serial bootstrap, then rerun preflight and one
+  bounded exact-head attempt.
