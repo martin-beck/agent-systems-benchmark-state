@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 288,
+  "task_revision": 289,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T16:47:09+00:00",
+  "updated_at": "2026-09-18T16:50:13+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -823,3 +823,7 @@ source code or treating a capacity failure as a model result.
   data and governed preflight passed, but fresh networkless guest emitted five runuser failures
   because user asb is absent, then powered off without TLC or attestation. Rebuild reviewed guest
   user/user-manager fixture before retry.
+
+- 2026-09-18T16:50:13+00:00: Starting fresh bounded repair: reuse reviewed AR-1305 image-native
+  user/user-manager root image read-only as disposable overlay; preserve exact limits and network
+  isolation.
