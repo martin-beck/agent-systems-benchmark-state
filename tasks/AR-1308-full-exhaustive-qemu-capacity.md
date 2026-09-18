@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 485,
+  "task_revision": 486,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T21:15:28+00:00",
+  "updated_at": "2026-09-18T21:15:56+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1440,3 +1440,6 @@ source code or treating a capacity failure as a model result.
   disk/headroom or pinned inputs are unavailable.
 
 - 2026-09-18T21:15:28+00:00: Claimed by codex-ar1308-runner-provision-20260918.
+
+- 2026-09-18T21:15:56+00:00: Recorded command exit 1; command argv SHA-256
+  7201d0db32254111fcd4abb58f3a33ad14e1be0eae79deb36cace649c67172d0.
