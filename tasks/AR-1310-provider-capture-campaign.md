@@ -3,18 +3,21 @@
   "branch": "feature/ar-1310-provider-capture-campaign",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1060", "AR-1151"],
+  "depends_on": [
+    "AR-1060",
+    "AR-1151"
+  ],
   "id": "AR-1310",
   "next_action": "Promote only after review confirms AR-1160 blocked evidence is preserved and the runtime capture design is dependency-ready; implement the provider-bound capture seam, durable tuple cassette coverage, restart reconciliation, and fail-closed offline activation.",
   "owner": "",
   "plan": "../plans/AR-1310.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Runtime-owned provider capture and recording campaign qualification.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Runtime-owned provider capture and recording campaign qualification",
-  "updated_at": "2026-09-18T19:47:00+00:00",
+  "updated_at": "2026-09-18T19:50:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1310-provider-capture-campaign"
 }
 ---
@@ -83,3 +86,7 @@ independently so its promotion is not falsely implied by AR-1160 completion.
    SSH-signed matching-DCO commits, independent immutable-head review, exact-head
    required CI and post-merge main workflows all pass. Durable evidence records
    exact commit, PR, CI run IDs, review, merge and post-merge results.
+
+- 2026-09-18T19:50:38+00:00: Dependencies AR-1060 and AR-1151 are done; reviewed AR-1160 blocked
+  evidence and protected-main baseline, promoting scoped runtime-owned capture successor without
+  treating AR-1160 as complete.
