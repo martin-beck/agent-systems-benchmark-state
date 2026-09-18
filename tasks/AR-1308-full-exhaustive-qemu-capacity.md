@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 497,
+  "task_revision": 498,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T22:17:06+00:00",
+  "updated_at": "2026-09-18T22:18:11+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1481,3 +1481,7 @@ source code or treating a capacity failure as a model result.
   now above disk floor but exact AR-1307 969eef058 input bundle and pinned runtime inputs are still
   not proven present. Preserve unchanged 3G/3G/2-worker/2-core/8G/7200s contract; next run must
   provision only after exact bundle and all preflight gates pass.
+
+- 2026-09-18T22:18:11+00:00: Coordinator-authorized runner-only preparation: provision a clean
+  disposable base/overlay and receipt under /srv/data/projects. Do not boot or qualify until exact
+  signed AR-1307 input bundle and all preflight inputs are present.
