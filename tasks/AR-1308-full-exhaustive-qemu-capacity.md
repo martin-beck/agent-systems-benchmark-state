@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 323,
+  "task_revision": 324,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T17:06:09+00:00",
+  "updated_at": "2026-09-18T17:06:46+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -935,3 +935,7 @@ source code or treating a capacity failure as a model result.
 - 2026-09-18T17:06:09+00:00: Released blocked: guest user manager and wait-online prerequisites
   passed, but stale cloud-init state prevented NoCloud seed execution; no TLC or attestation.
   Rebuild fresh overlay clearing cloud-init instance/seed state, then retry once.
+
+- 2026-09-18T17:06:46+00:00: Fresh repair cycle: build a new overlay from pinned image with reviewed
+  asb user/linger, masked wait-online, and cleared cloud-init state; then preflight and one bounded
+  networkless QEMU attempt.
