@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 657,
+  "task_revision": 658,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T06:14:28+00:00",
+  "updated_at": "2026-09-18T06:15:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1817,3 +1817,6 @@ and protected publication sequence.
   rejects network fallback, removes guest curl probing, and adds negative coverage. PR #25 was
   rebased onto current main and force-with-lease pushed; exact head is 25ab3b860. Remaining
   measured-attestation and isolated-runner evidence gates are unresolved.
+
+- 2026-09-18T06:15:25+00:00: Recorded command exit 0; command argv SHA-256
+  47e2a8aae25a481f256bc44385000d949087e0d58dffc080eb85ccd6108d9a02.
