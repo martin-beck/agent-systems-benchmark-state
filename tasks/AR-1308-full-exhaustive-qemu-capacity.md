@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "checkpoint_commit": "df0e402f442468e43e06b7c1acb3c3667277fb75",
-  "claim_expires": "2026-09-18T17:50:16+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1304"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
-  "owner": "codex-ar1308-fixture-repair-20260918",
+  "owner": "",
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 305,
+  "task_revision": 306,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T16:58:12+00:00",
+  "updated_at": "2026-09-18T16:58:14+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -877,3 +877,7 @@ source code or treating a capacity failure as a model result.
   passed with absolute receipt paths. The bounded QEMU boot then stalled at
   systemd-networkd-wait-online for at least 1m44s and emitted no cloud-init, TLC, or attestation;
   process was gone afterward. This is a guest bootstrap blocker, not qualification.
+
+- 2026-09-18T16:58:14+00:00: Released blocked: disposable asb-user overlay preflight passed, but
+  QEMU networkless boot stalled indefinitely at systemd-networkd-wait-online before cloud-init/TLC.
+  Next action is to mask that wait-online unit in the reviewed disposable overlay and retry once.
