@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 223,
+  "task_revision": 224,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-18T22:29:10+00:00",
+  "updated_at": "2026-09-18T22:30:24+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -755,3 +755,6 @@ must not block this AR or its dependents.
   green, fault subchecks in 35401437351 are green, platform run 35401437264, headers 35401437239,
   and AWQ shadow 35401437238 are green. Only top-level Emulated aarch64, Repository quality, and
   Rust verification remain in progress. PR head remains exact e2e3574; no merge.
+
+- 2026-09-18T22:30:24+00:00: Recorded command exit 0; command argv SHA-256
+  119791eb92e28e4e226b450041f682cefda40ad131424406f47a0cc60c2a6708.
