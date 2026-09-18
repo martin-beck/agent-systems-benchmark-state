@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1151](tasks/AR-1151.md): Strict offline replay | Replay strictly without providers. | Publish exact local head c152e5c after GitHub email verification; connect record-campaign and durable campaign-plan state to runtime execution/coverage reconciliation, then add offline-default application and TUI wizard action. | codex_ar1151_followup |
+| P0 | [AR-1151](tasks/AR-1151.md): Strict offline replay | Replay strictly without providers. | Publish exact ASB c152e5c and rebase/publish TUI 9e0d318+f52cd21 after GitHub email verification; then implement runtime campaign execution, cassette reconciliation, offline-default control, and wizard action wiring. | codex_ar1151_followup |
 | P0 | [AR-1307](tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Verify GitHub email externally; then retry governed state and PR publication of signed local diagnostics head c5f6ad076. Do not dispatch formal until push and exact-head CI pass. | codex-ar1307-metadata-repair-20260918 |
 
 ## Open
