@@ -8,7 +8,7 @@
     "AR-1151"
   ],
   "id": "AR-1310",
-  "next_action": "Route DCO failure for pre-existing merge 909078c to a dedicated merge-integrity AR; separately rerun a supported exact-main post-merge Repository quality path that reports coverage. Local tree is 90.48%, but hosted run 35396621049 did not qualify. Keep AR-1312 blocked.",
+  "next_action": "Historical merge 909078c lacks Signed-off-by; exact-main rerun 35404039692 failed policy before coverage. Authorize a dedicated DCO repair AR; keep AR-1312 blocked.",
   "observed_branch": "feature/ar-1310-provider-capture-campaign",
   "observed_dirty": 0,
   "observed_head": "9a2f313e86332e35eec40b97a692026b497d46cd",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "blocked",
   "summary": "Runtime-owned provider capture and recording campaign qualification.",
-  "task_revision": 118,
+  "task_revision": 119,
   "title": "Runtime-owned provider capture and recording campaign qualification",
-  "updated_at": "2026-09-18T23:03:54+00:00",
+  "updated_at": "2026-09-18T23:04:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1310-provider-capture-campaign"
 }
 ---
@@ -428,3 +428,6 @@ independently so its promotion is not falsely implied by AR-1160 completion.
   failure: repository policy rejected historical merge 909078ced21f36e5a72590c9decf41ac56452212 for
   missing matching Signed-off-by; coverage and later gates were skipped. Preserve separate DCO
   blocker; AR-1312 remains planned/dependency-blocked.
+
+- 2026-09-18T23:04:55+00:00: Correct current next_action after terminal exact-main rerun evidence;
+  no product or gate changes.
