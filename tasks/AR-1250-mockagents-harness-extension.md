@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1250.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Extend the pinned MockAgents executable qualification harness.",
-  "task_revision": 71,
+  "task_revision": 72,
   "title": "Extend MockAgents qualification harness",
-  "updated_at": "2026-09-16T19:25:00+00:00",
+  "updated_at": "2026-09-18T21:30:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1250"
 }
 ---
@@ -210,3 +210,6 @@ privacy, signature, DCO, and exact-tree gates; do not claim support from host in
 - 2026-09-16T19:25:00+00:00: Released ownerless: linux-arm64 qualification fails closed because no
   approved explicit pinned emulator runner is available. Preserve signed 0d42bca and amd64 9/9
   evidence; successor must provision and verify immutable arm64 runner before repeat qualification.
+
+- 2026-09-18T21:30:11+00:00: Re-audit current pinned QEMU AArch64 runner availability and perform
+  arm64 qualification if the exact reviewed runner contract is present.
