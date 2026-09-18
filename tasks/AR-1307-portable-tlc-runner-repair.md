@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1307-portable-tlc-runner-repair",
   "checkpoint_commit": "beafa965e61b0f09d9ed5f10ffcd621b0cf3e5b2",
-  "claim_expires": "2026-09-18T14:07:41+00:00",
+  "claim_expires": "2026-09-18T14:16:24+00:00",
   "depends_on": [
     "AR-1302"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 729,
+  "task_revision": 730,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T13:41:06+00:00",
+  "updated_at": "2026-09-18T13:46:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -2064,3 +2064,5 @@ and protected publication sequence.
   measured disposable QEMU/container capacity, exact AR-1307 inputs, bounded diagnostics and
   terminal full-exhaustive qualification; no limit widening or gate weakening. AR-1307 remains open
   and claimed.
+
+- 2026-09-18T13:46:24+00:00: Heartbeat by codex-ar1307-metadata-repair-20260918.
