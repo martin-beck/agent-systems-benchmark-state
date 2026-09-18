@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1160](tasks/AR-1160.md): Wizard control API | Wizard control API | Run PR #227 exact-head gates after lifecycle rejection coverage at ce71ffb; merge only after coverage and all required checks pass, then wire runtime capture adapter and asb-tui recording controls. | root |
+| P0 | [AR-1160](tasks/AR-1160.md): Wizard control API | Wizard control API | Run PR #227 exact-head gates after DCO-corrected lifecycle coverage commit 88df781; merge only after coverage and all required checks pass, then wire runtime capture adapter and asb-tui recording controls. | root |
 | P0 | [AR-1307](tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | AR-1308 is planned for disposable x86_64 QEMU capacity. Keep AR-1307 unqualified; after AR-1308 capacity evidence, rerun exact full-exhaustive without changing the 3G/3G contract. | codex-ar1307-metadata-repair-20260918 |
 | P0 | [AR-1308](tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Await PR #26 exact-head review and green checks; then merge the signed AR-1308 receipt/preflight and run one bounded exact-head full-exhaustive attempt on the disposable QEMU capacity. | codex-ar1308-qemu-capacity-20260918 |
 
