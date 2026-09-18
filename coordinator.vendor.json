@@ -57,7 +57,7 @@
       "source": "formal/handoffctl/README.md"
     },
     "formal/handoffctl/verify.sh": {
-      "sha256": "772b6f74e07f3fd3641688e1645ffea66681d7390b09b884e030cc1d3d013dd5",
+      "sha256": "38834a2e941a9ec58529ecec779be1cd3cdad956282d9690a3218891d094abeb",
       "source": "formal/handoffctl/verify.sh"
     },
     "schema/handoffctl-backend-config.schema.json": {

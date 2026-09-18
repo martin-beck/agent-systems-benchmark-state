@@ -154,9 +154,10 @@ formal/handoffctl/verify.sh
 uv run python -m unittest discover -s tests -p 'test_*.py'
 ```
 
-`verify.sh` downloads the official TLA+ 1.7.4 verifier into a temporary
-directory and verifies its pinned SHA-256 before execution. It does not retain
-the JAR or modify coordinator state.
+`verify.sh` accepts only the preloaded official TLA+ 1.7.4 verifier through
+`TLC_JAR_PATH` and `TLC_JAR_SHA256`, verifies its pinned SHA-256 before
+execution, and refuses network fallback. It does not retain the JAR or modify
+coordinator state.
 
 Formal tiers are explicit: `verify.sh --tier portable-smoke` runs one model
 and is non-exhaustive; it cannot produce publication or full evidence.
