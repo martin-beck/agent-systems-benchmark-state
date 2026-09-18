@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1310-provider-capture-campaign",
   "checkpoint_commit": "17a1530e620608a4d53b6d92ba48c642400778e2",
-  "claim_expires": "2026-09-18T23:32:29+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1060",
     "AR-1151"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1310-provider-capture-campaign",
   "observed_dirty": 0,
   "observed_head": "9a2f313e86332e35eec40b97a692026b497d46cd",
-  "owner": "ar1310_exactmain_rerun",
+  "owner": "",
   "plan": "../plans/AR-1310.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Runtime-owned provider capture and recording campaign qualification.",
-  "task_revision": 117,
+  "task_revision": 118,
   "title": "Runtime-owned provider capture and recording campaign qualification",
-  "updated_at": "2026-09-18T23:02:46+00:00",
+  "updated_at": "2026-09-18T23:03:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1310-provider-capture-campaign"
 }
 ---
@@ -423,3 +423,8 @@ independently so its promotion is not falsely implied by AR-1160 completion.
 
 - 2026-09-18T23:02:46+00:00: Recorded command exit 0; command argv SHA-256
   c2e3f31155b0c15988c4e829a3c089f124bfa74580443a6c4f2e28cc170e2f7d.
+
+- 2026-09-18T23:03:54+00:00: Exact-main Repository quality rerun 35404039692 at 78a8e9fc completed
+  failure: repository policy rejected historical merge 909078ced21f36e5a72590c9decf41ac56452212 for
+  missing matching Signed-off-by; coverage and later gates were skipped. Preserve separate DCO
+  blocker; AR-1312 remains planned/dependency-blocked.
