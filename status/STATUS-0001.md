@@ -12,8 +12,8 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 1 |
-| **Blocked** | Cannot proceed until its recorded blocker clears | 48 |
+| **Open** | Dependency-ready and available to claim | 2 |
+| **Blocked** | Cannot proceed until its recorded blocker clears | 47 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 215 |
@@ -297,7 +297,7 @@ flowchart LR
         AR_1130["AR-1130 - Done"]:::status_done
         AR_1140["AR-1140 - Done"]:::status_done
         AR_1150["AR-1150 - Done"]:::status_done
-        AR_1151["AR-1151 - Blocked"]:::status_blocked
+        AR_1151["AR-1151 - Open"]:::status_open
         AR_1160["AR-1160 - Planned"]:::status_planned
         AR_1170["AR-1170 - Planned"]:::status_planned
         AR_1180["AR-1180 - Planned"]:::status_planned
@@ -1659,20 +1659,20 @@ flowchart LR
 | P0 | [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md): Supervised strict-replay cassette lifecycle | root | Execute strict-replay cassettes through the runtime-owned supervised lifecycle. | Await terminal post-merge workflows for protected main 2066e323; then verify exact merge/policy/evidence and close lifecycle acceptance. |
 | P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | codex-ar1307-metadata-repair-20260918 | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Run fresh exact-head CI on fb90e13f7, then inspect bounded TLC stdout diagnostics from the next formal run; do not qualify or merge until terminal green formal evidence. |
 
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1151](../tasks/AR-1151.md): Strict offline replay | Unclaimed | Replay strictly without providers. | Await reviewed CLI consumer contract for cassette artifact resolution and runtime handoff; do not fabricate paths or authority. |
 | P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Unclaimed | Repair the state-repository TLA admission runner and truthful worktree metadata. | Blocked on AR-1307 runner merge and handoff. Prior full VM was interrupted without success or attestation; after merge, rebuild exact fa57625d9 image/seed and rerun independently reviewed gates. |
 
-### Blocked (48)
+### Blocked (47)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0514](../tasks/AR-0514-replay-openhands.md): Qualify OpenHands replay | Unclaimed | Qualify replay conformance for OpenHands. | Recover exact approved OpenHands environment digest 63727569 from immutable provenance; otherwise schedule pin-reproduction repair before native replay. |
 | P0 | [AR-0836](../tasks/AR-0836-runner-isolation-hardening.md): Harden runner isolation and credential boundaries | Unclaimed | Harden development-host runner isolation against same-UID job tampering and diagnostic leakage. | Independently review immutable signed candidate 9b4e7084e02cdb3a1ff56dc55bbdce413ed6b1d3; keep trusted workflows blocked and AR-0836 in progress until required AR-0837 proves the digest-pinned no-host-mount job-container boundary. |
 | P0 | [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md): Implement &#96;asb tui&#96; lifecycle routing | Unclaimed | Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend. | After AR-1010, AR-1037 and AR-1060 are done, rebase c545c33 onto protected ASB main and implement only the ASB provisioning half before regenerated evidence and trusted asb-tui pinning. |
-| P0 | [AR-1151](../tasks/AR-1151.md): Strict offline replay | Unclaimed | Replay strictly without providers. | Await reviewed CLI consumer contract for cassette artifact resolution and runtime handoff; do not fabricate paths or authority. |
 | P0 | [AR-1181](../tasks/AR-1181.md): TLA admission | Unclaimed | Bound ASB TLC memory. | Correct AR-1181 repository/worktree metadata to a state-repository branch/worktree, then implement missing tools/tlc_runner.py with bounded admission; current declared path is an ASB product checkout and must not be mutated. |
 | P0 | [AR-1210](../tasks/AR-1210-tutorial-contract-validator.md): Tutorial contract and syntax validator | Unclaimed | Define offline tutorial steps and validate them against the ASB CLI grammar. | Do not release AR-1210 yet: post-merge Repository quality run 35054743606 failed because protected merge commit 4d4a0c4 lacks Signed-off-by. Coordinate merge-integrity/DCO repair and rerun exact-main assurance; preserve merged main and all evidence. |
 | P0 | [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md): Bounded strict-replay CLI consumer contract | Unclaimed | Define the strict-replay CLI consumer contract. | Await runtime-owned launch authority, then wire replay through supervised context and add lifecycle/no-fallback tests. |
