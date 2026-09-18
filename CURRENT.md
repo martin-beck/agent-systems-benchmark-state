@@ -9,6 +9,12 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Control genuine native platform capacity lifecycle. | Formal provenance owners must repair TLA v1.8.0 byte/hash mismatch before PR #119 exact-head rerun; AR-0704 source needs no change. | asb-ar0704-pr119-audit-20260918 |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-1250](tasks/AR-1250-mockagents-harness-extension.md): Extend MockAgents qualification harness | Extend the pinned MockAgents executable qualification harness. | Repair the arm64 oversized-request rejection in the reviewed harness or candidate fixture, then rerun the full arm64 repeat gate with the verified QEMU runner. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -57,7 +63,6 @@ Never edit this file directly.
 | P1 | [AR-0890](tasks/AR-0890-deterministic-llm-double-ci.md): Integrate a deterministic LLM double in CI | Add the independently selected deterministic protocol double as a pinned isolated CI test dependency. | Integrate only the selected exact mock artifact into credential-free CI with fail-closed startup, network denial, provenance, and hostile lifecycle tests. | - |
 | P1 | [AR-0896](tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change. | Remain blocked until the complete pinned MockAgents hostile qualification is implemented and rerun: tool/tool-result, cancellation/backpressure, outbound-denial, repeated-clean-state, and executable arm64 QEMU cases with deterministic evidence. Do not select MockAgents or advance AR-0890. | - |
 | P1 | [AR-1249](tasks/AR-1249-mockagents-qualification-evidence.md): Complete MockAgents executable qualification evidence | Complete missing evidence for the pinned MockAgents executable qualification. | Investigate pinned MockAgents v0.5.0 streaming fault semantics or create a narrowly scoped candidate repair AR; rerun strict lifecycle/network qualification only after terminal-marker rejection is proven. | - |
-| P1 | [AR-1250](tasks/AR-1250-mockagents-harness-extension.md): Extend MockAgents qualification harness | Extend the pinned MockAgents executable qualification harness. | Repair the arm64 oversized-request rejection in the reviewed harness or candidate fixture, then rerun the full arm64 repeat gate with the verified QEMU runner. | - |
 | P1 | [AR-1251](tasks/AR-1251-mockagents-transport-sandbox.md): Add MockAgents transport sandbox fixture | Add a bounded transport and sandbox fixture for MockAgents qualification. | Await reviewed AR-1252 integration allowing pinned MockAgents and Python client in one approved sandbox; then add real transport/lifecycle/egress tests. | - |
 | P1 | [AR-1254](tasks/AR-1254-mockagents-pinned-python-transport.md): Qualify MockAgents through pinned Python transport | Qualify MockAgents through the pinned Python sandbox. | Await AR-1258 pinned arm64 runner and AR-1255 transport evidence; then qualify protocol, cancellation, egress and restart. | - |
 | P1 | [AR-1256](tasks/AR-1256-bundled-mockagents-isolation.md): Execute bundled MockAgents transport in isolation | Execute bundled MockAgents transport in isolation. | Implement bundled in-container MockAgents transport and digest-pinned arm64 QEMU evidence. | - |

@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1250.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Extend the pinned MockAgents executable qualification harness.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Extend MockAgents qualification harness",
-  "updated_at": "2026-09-18T21:32:56+00:00",
+  "updated_at": "2026-09-18T21:34:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1250"
 }
 ---
@@ -234,3 +234,6 @@ privacy, signature, DCO, and exact-tree gates; do not claim support from host in
   qualification failed closed because the candidate accepted an oversized request. Fix that reviewed
   harness/candidate behavior and rerun the full arm64 repeat gate; do not claim qualification from
   this run.
+
+- 2026-09-18T21:34:10+00:00: Bounded comparison of the oversized-request failure is requested;
+  preserve fail-closed qualification.
