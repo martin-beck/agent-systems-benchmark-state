@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 487,
+  "task_revision": 488,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T21:16:17+00:00",
+  "updated_at": "2026-09-18T22:12:21+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1451,3 +1451,7 @@ source code or treating a capacity failure as a model result.
   evidence and unchanged 3G/3G/2-worker/2-core/8G/7200s process contract. Next action: provision
   approved second-disk headroom and exact current input bundle, then rerun validator before any QEMU
   boot.
+
+- 2026-09-18T22:12:21+00:00: Fresh bounded preflight audit: verify current second-disk capacity and
+  exact AR-1307 signed input bundle before any runner provisioning; fail closed if any contract gate
+  is absent.
