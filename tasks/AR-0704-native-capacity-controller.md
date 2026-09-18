@@ -2,7 +2,7 @@
 {
   "branch": "feature/native-capacity-controller",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-18T23:30:13+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0701",
     "AR-0103"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/native-capacity-controller",
   "observed_dirty": 0,
   "observed_head": "28f30eea80efef5a61ea438e77402f8640564cc9",
-  "owner": "asb-ar0704-pr119-audit-20260918",
+  "owner": "",
   "plan": "../plans/AR-0704.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 114,
+  "task_revision": 115,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-18T21:35:57+00:00",
+  "updated_at": "2026-09-18T21:36:02+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -431,3 +431,7 @@ must not block this AR or its dependents.
   provenance repairs and pins deterministic source-build artifact 4512486 bytes/SHA 8c200a88 via
   AR-0877/0906/0907 merges. The AR-0704 branch still has the stale pin, so no rerun or merge is
   authorized until a signed rebase/update and complete exact-head CI.
+
+- 2026-09-18T21:36:02+00:00: Audit complete; released ownerless for dependency-safe rebase and full
+  requalification on repaired formal provenance. No source mutation, force push, merge, or gate
+  weakening performed.
