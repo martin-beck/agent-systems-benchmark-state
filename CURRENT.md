@@ -3,17 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1307](tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Monitor coordination 35305103755 and formal 35305104802 at exact head 436edb9cbdb96e0c27230972d014edd54c3d1e72; preserve the AR-1294 lock-boundary evidence, then independently review and merge only after all gates and fresh full attestation are green. | codex-ar1307-dco-repair-20260918 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | AR-1293 remains blocked on AR-1307 PR #24 (eb0da360b6091d5a5f74decfff4da39202226eec) merge and fresh runner handoff. Old ada383cea full VM terminated with serial ending during liveness progress at 47,029,477 generated / 38,798,900 distinct states, with no FULL_EXHAUSTIVE_RC, success marker, attestation, or receipt; classify as interrupted/incomplete, not a model result. After AR-1307 is merged and handed off, rebuild fresh exact fa57625d9 image/seed and rerun required then independently reviewed full gates. | - |
+| P0 | [AR-1307](tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Monitor coordination 35305103755 and formal 35305104802 at exact head 436edb9cbdb96e0c27230972d014edd54c3d1e72; preserve the AR-1294 lock-boundary evidence, then independently review and merge only after all gates and fresh full attestation are green. | - |
 
 ## Blocked
 
