@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 504,
+  "task_revision": 505,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T22:20:15+00:00",
+  "updated_at": "2026-09-18T22:20:29+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1501,3 +1501,6 @@ source code or treating a capacity failure as a model result.
   45068ac056e80cd18eec684ecd4283fec35652d280b4a55ccf0d20645e6ac23b.
 
 - 2026-09-18T22:20:15+00:00: Heartbeat by coordinator-ar1308-runner.
+
+- 2026-09-18T22:20:29+00:00: Recorded command exit 0; command argv SHA-256
+  865e3b8d6530ed42aa06cc0b372949bf0148aee9b63ac534dff6f1d35de0dec4.
