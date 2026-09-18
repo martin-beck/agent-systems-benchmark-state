@@ -29,11 +29,11 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 35333549691 | `8584dfd70c75` | push | Hosted portability and native qualification | completed:success |
 | 35333549638 | `8584dfd70c75` | push | Huawei MIT source headers | completed:success |
-| 35333549634 | `8584dfd70c75` | push | Emulated aarch64 portability | in_progress:- |
-| 35333549624 | `8584dfd70c75` | push | Fault assurance | in_progress:- |
-| 35333549531 | `8584dfd70c75` | push | Rust verification | in_progress:- |
-| 35333549515 | `8584dfd70c75` | push | Formal assurance | in_progress:- |
-| 35333549504 | `8584dfd70c75` | push | Repository quality | in_progress:- |
+| 35333549634 | `8584dfd70c75` | push | Emulated aarch64 portability | completed:success |
+| 35333549624 | `8584dfd70c75` | push | Fault assurance | completed:success |
+| 35333549531 | `8584dfd70c75` | push | Rust verification | completed:success |
+| 35333549515 | `8584dfd70c75` | push | Formal assurance | completed:success |
+| 35333549504 | `8584dfd70c75` | push | Repository quality | completed:success |
 | 35332812480 | `b9cfa2ccb96d` | pull_request | Emulated aarch64 portability | completed:success |
 | 35332812463 | `b9cfa2ccb96d` | pull_request | Fault assurance | completed:success |
 | 35332812388 | `b9cfa2ccb96d` | pull_request | Hosted portability and native qualification | completed:success |
