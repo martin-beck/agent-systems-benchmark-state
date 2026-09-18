@@ -11,16 +11,16 @@
   "next_action": "PR #220 exact head d85889d is blocked only by unrelated hosted formal-runner ETXTBSY failures. Repair/retry CI infrastructure; then require fresh all-green exact-head CI before merge. Do not alter AR-1303 gates or product behavior.",
   "observed_branch": "feature/ar-1303-hosted-platform-diagnostics",
   "observed_dirty": 0,
-  "observed_head": "fe8ae85a36bdbff8b189d9bb13d5e5c0292cc89e",
+  "observed_head": "b5b0ef3bdda88f1b1d73b0e51f7610bdf6406f53",
   "owner": "ar1303_ci_infra_repair",
   "plan": "../plans/AR-1303.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add privacy-safe fixed diagnostics for hosted platform evidence failures.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Privacy-safe hosted platform failure diagnostics",
-  "updated_at": "2026-09-18T19:25:04+00:00",
+  "updated_at": "2026-09-18T19:25:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1303-hosted-platform-diagnostics"
 }
 ---
