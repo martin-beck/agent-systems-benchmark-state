@@ -7,7 +7,7 @@
     "AR-1304"
   ],
   "id": "AR-1308",
-  "next_action": "Launch one bounded QEMU with fresh overlay5 and git-safe bind seed; inspect full-exhaustive TLC result and attestation.",
+  "next_action": "Launch one bounded QEMU with fresh overlay6 and exact safe-directory plus guest ownership seed; inspect TLC result and attestation.",
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 437,
+  "task_revision": 438,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T17:52:20+00:00",
+  "updated_at": "2026-09-18T17:52:42+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1287,3 +1287,8 @@ source code or treating a capacity failure as a model result.
 
 - 2026-09-18T17:52:20+00:00: Recorded command exit 0; command argv SHA-256
   b3468c7a6ed2c2dc5b45503411fb4dbd795b6fa518c43b6376ecbfe049708d20.
+
+- 2026-09-18T17:52:42+00:00: Previous bind-final reached transient RC=0 but Git provenance failed.
+  The seed correction now adds safe.directory entries for state/formal/git and chowns disposable
+  mounted state/git to asb; malformed literal newline was corrected and new seed hash recorded.
+  Fresh overlay6 built and governed preflight passed.
