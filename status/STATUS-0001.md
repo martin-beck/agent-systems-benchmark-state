@@ -11,12 +11,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 47 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
-| **Done** | Accepted, integrated, and durably verified | 216 |
+| **Done** | Accepted, integrated, and durably verified | 217 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 10 |
 
@@ -297,7 +297,7 @@ flowchart LR
         AR_1130["AR-1130 - Done"]:::status_done
         AR_1140["AR-1140 - Done"]:::status_done
         AR_1150["AR-1150 - Done"]:::status_done
-        AR_1151["AR-1151 - In progress"]:::status_in_progress
+        AR_1151["AR-1151 - Done"]:::status_done
         AR_1160["AR-1160 - Planned"]:::status_planned
         AR_1170["AR-1170 - Planned"]:::status_planned
         AR_1180["AR-1180 - Planned"]:::status_planned
@@ -1652,11 +1652,10 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1151](../tasks/AR-1151.md): Strict offline replay | codex_ar1151_followup | Replay strictly without providers. | Monitor PR #225 fresh gates at exact head 20db76e; after green review/merge, implement AR-1160 runtime campaign launch/progress/cancel, cassette coverage reconciliation, and offline-default activation. |
 | P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | codex-ar1307-metadata-repair-20260918 | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Await formal run 35342513872 on exact head ab485f767; if terminal green, independently review and complete merge gates, otherwise diagnose its bounded failure before any retry. |
 
 ### Open (1)
@@ -1741,3 +1740,4 @@ flowchart LR
 | P0 | [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md): Authenticated TUI install router | Unclaimed | Expose an authenticated renderer-neutral ASB router for asb tui install and lifecycle operations. | Promote only after dependencies are independently complete; implement the renderer-neutral authenticated CLI/control route and full integration tests. |
 | P0 | [AR-1211](../tasks/AR-1211-initial-setup-first-agent.md): Initial setup and first agent connection tutorial | Unclaimed | Teach first-time users to initialize ASB and add the first agent connection. | Implement the syntax-checked tutorial for ASB initialization, first-agent registration, and agent connection setup. |
 | P0 | [AR-1212](../tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Unclaimed | Teach users to test configured-agent benchmark eligibility without running an agent. | Implement the offline tutorial for checking agent benchmark readiness under the current configuration. |
+| P0 | [AR-1213](../tasks/AR-1213-benchmark-and-shared-config.md): Benchmark run and shared-agent configuration tutorials | Unclaimed | Teach benchmark execution and extending agents with one shared configuration. | Implement syntax-checked tutorials for one benchmark run and atomic shared configuration across selected agents. |

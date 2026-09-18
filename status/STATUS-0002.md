@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| P0 | [AR-1213](../tasks/AR-1213-benchmark-and-shared-config.md): Benchmark run and shared-agent configuration tutorials | Unclaimed | Teach benchmark execution and extending agents with one shared configuration. | Implement syntax-checked tutorials for one benchmark run and atomic shared configuration across selected agents. |
 | P0 | [AR-1214](../tasks/AR-1214-record-replay.md): LLM response record/replay tutorial | Unclaimed | Teach privacy-safe LLM response recording and strict offline replay. | Implement the syntax-checked record/replay tutorial with synthetic cassette fixtures and no-network CI. |
 | P0 | [AR-1215](../tasks/AR-1215-result-comparison.md): Multi-agent result comparison tutorial | Unclaimed | Teach conservative comparison of multiple agents from the same benchmark. | Implement the syntax-checked tutorial for comparing two or more agents on one benchmark definition. |
 | P0 | [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md): ASB tutorial freshness CI and documentation qualification | Unclaimed | Continuously keep ASB tutorial commands and steps syntactically current. | Implement the repository-wide tutorial discovery and syntax-freshness CI gate after all tutorial contracts are defined. |
@@ -45,7 +44,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (216)
+### Done (217)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -102,6 +101,7 @@
 | P0 | [AR-1130](../tasks/AR-1130.md): Configured provider launches | Unclaimed | Launch agents with configured providers. | Post-merge verification complete: PR #181 merged at 0443ebac; exact-main tree matches feature tree, focused provider-launch/workflow tests and full locked offline workspace tests passed, worktree clean. Release AR-1130 as done. |
 | P0 | [AR-1140](../tasks/AR-1140.md): CLI setup wizard | Unclaimed | Guide CLI setup and reconfiguration. | Wait for PR #186 exact-head CI and independent review on 1e3212b; do not merge. |
 | P0 | [AR-1150](../tasks/AR-1150.md): Recording campaigns | Unclaimed | Record response cassettes. | Post-merge verification complete: PR #182 merged at a83ba8e; exact-main tree matches feature tree, focused replay tests and full locked offline workspace tests passed, worktree clean. Release AR-1150 as done. |
+| P0 | [AR-1151](../tasks/AR-1151.md): Strict offline replay | Unclaimed | Replay strictly without providers. | Monitor PR #225 fresh gates at exact head 20db76e; after green review/merge, implement AR-1160 runtime campaign launch/progress/cancel, cassette coverage reconciliation, and offline-default activation. |
 | P0 | [AR-1190](../tasks/AR-1190.md): Authenticated agent catalog control | Unclaimed | Expose a verified, capability-aware local-agent catalog to asb-tui. | Wait for exact-main post-merge assurance on 748c16ba67b9cff5a08558784dd183d020a1f2d4, then qualify ASB v1.4 fixtures against asb-tui PR #86. |
 | P0 | [AR-1191](../tasks/AR-1191.md): Verified local-agent lifecycle | Unclaimed | Install, activate, verify and recover supported local benchmark agents safely. | Run independent review on lifecycle PR #169 head 6d210836d4b45942aa6b9b2530c30a0afe30144a after hosted checks, then merge and qualify asb-tui. |
 | P0 | [AR-1196](../tasks/AR-1196-protected-main-dco-repair.md): Protected-main DCO history repair | Unclaimed | Restore a Signed-off-by-bearing protected-main history after the catalog merge. | Reconcile PR #170 merge against main; do not merge duplicates until exact remote head and post-merge checks are verified. |

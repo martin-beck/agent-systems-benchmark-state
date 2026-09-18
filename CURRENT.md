@@ -7,7 +7,6 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1151](tasks/AR-1151.md): Strict offline replay | Replay strictly without providers. | Monitor PR #225 fresh gates at exact head 20db76e; after green review/merge, implement AR-1160 runtime campaign launch/progress/cancel, cassette coverage reconciliation, and offline-default activation. | codex_ar1151_followup |
 | P0 | [AR-1307](tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Await formal run 35342513872 on exact head ab485f767; if terminal green, independently review and complete merge gates, otherwise diagnose its bounded failure before any retry. | codex-ar1307-metadata-repair-20260918 |
 
 ## Open
@@ -194,6 +193,7 @@ Never edit this file directly.
 | P0 | [AR-1130](tasks/AR-1130.md): Configured provider launches | Launch agents with configured providers. | Post-merge verification complete: PR #181 merged at 0443ebac; exact-main tree matches feature tree, focused provider-launch/workflow tests and full locked offline workspace tests passed, worktree clean. Release AR-1130 as done. | - |
 | P0 | [AR-1140](tasks/AR-1140.md): CLI setup wizard | Guide CLI setup and reconfiguration. | Wait for PR #186 exact-head CI and independent review on 1e3212b; do not merge. | - |
 | P0 | [AR-1150](tasks/AR-1150.md): Recording campaigns | Record response cassettes. | Post-merge verification complete: PR #182 merged at a83ba8e; exact-main tree matches feature tree, focused replay tests and full locked offline workspace tests passed, worktree clean. Release AR-1150 as done. | - |
+| P0 | [AR-1151](tasks/AR-1151.md): Strict offline replay | Replay strictly without providers. | Monitor PR #225 fresh gates at exact head 20db76e; after green review/merge, implement AR-1160 runtime campaign launch/progress/cancel, cassette coverage reconciliation, and offline-default activation. | - |
 | P0 | [AR-1190](tasks/AR-1190.md): Authenticated agent catalog control | Expose a verified, capability-aware local-agent catalog to asb-tui. | Wait for exact-main post-merge assurance on 748c16ba67b9cff5a08558784dd183d020a1f2d4, then qualify ASB v1.4 fixtures against asb-tui PR #86. | - |
 | P0 | [AR-1191](tasks/AR-1191.md): Verified local-agent lifecycle | Install, activate, verify and recover supported local benchmark agents safely. | Run independent review on lifecycle PR #169 head 6d210836d4b45942aa6b9b2530c30a0afe30144a after hosted checks, then merge and qualify asb-tui. | - |
 | P0 | [AR-1196](tasks/AR-1196-protected-main-dco-repair.md): Protected-main DCO history repair | Restore a Signed-off-by-bearing protected-main history after the catalog merge. | Reconcile PR #170 merge against main; do not merge duplicates until exact remote head and post-merge checks are verified. | - |
