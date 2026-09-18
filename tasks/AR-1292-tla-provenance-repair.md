@@ -2,22 +2,22 @@
 {
   "branch": "repair/ar-1292-tla-provenance",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-18T21:39:59+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1292",
   "next_action": "Await signed or attested immutable TLA+ v1.8.0 provenance, or deterministic source-build qualification for 142d0ba; do not update hash only.",
   "observed_branch": "repair/ar-1292-tla-provenance",
   "observed_dirty": 0,
   "observed_head": "c1b1860786e844adb69b8f74e39af290592a89c8",
-  "owner": "asb-ar1292-provenance-reaudit-20260918",
+  "owner": "",
   "plan": "../plans/AR-1292.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Repair or formally retain the pinned TLA+ artifact provenance mismatch blocking formal assurance.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Pinned TLA+ artifact provenance repair",
-  "updated_at": "2026-09-18T21:10:16+00:00",
+  "updated_at": "2026-09-18T21:10:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1292-tla-provenance"
 }
 ---
@@ -87,3 +87,9 @@ verification, alter native-capacity behavior, or touch asb-tui.
   source-to-binary signature or attestation (body has only SHA-1 checksums). Prior asset 551753628
   remains unavailable and repository pin remains 4490679 bytes/SHA a1fc0bfe...; replacing hash/size
   would weaken fail-closed provenance. No product/asb-tui mutation and no PR #119 rerun.
+
+- 2026-09-18T21:10:23+00:00: Refreshed audit confirms blocker unchanged: v1.8.0 is mutable
+  prerelease with unsigned lightweight tag/unsigned commit and no source-to-binary attestation;
+  current asset digest/manifest binding alone is insufficient. Released ownerless; require signed or
+  attested immutable provenance or deterministic 142d0ba source build before any fixture update or
+  PR #119 requalification.
