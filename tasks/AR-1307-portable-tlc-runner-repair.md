@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Run focused/full gates on exact pushed head 25ab3b860; repair measured attestation and isolated runner blockers before any merge or qualification.",
+  "next_action": "Await exact-head CI for cd33b1b04; if formal reaches TLC, inspect measured attestation/isolation failures and repair remaining gates before merge.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "969eef05834a4ce5f711bbafaa5798549abd95c8",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 667,
+  "task_revision": 668,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T06:19:27+00:00",
+  "updated_at": "2026-09-18T06:19:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1847,3 +1847,9 @@ and protected publication sequence.
 
 - 2026-09-18T06:19:27+00:00: Recorded command exit 0; command argv SHA-256
   c797acf72d668ca2af6d60b41797423c0d4fdd8dd97930ef5a575612cb501d55.
+
+- 2026-09-18T06:19:48+00:00: Exact-head formal run 35314250213 on 57fcb60eb failed closed before
+  TLC: runner could not open host-owned /tmp/agent-workflow-coordinator-tlc-admission.lock
+  (permission denied). Corrective signed head cd33b1b04 relocates the canonical shared admission
+  fence to /srv/data/projects/.asb-tlc/admission.lock and updates focused tests/docs. Focused tests
+  passed (61); pushed with force-with-lease. No qualification or merge claim.

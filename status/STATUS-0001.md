@@ -1656,7 +1656,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | codex-ar1307-metadata-repair-20260918 | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Run focused/full gates on exact pushed head 25ab3b860; repair measured attestation and isolated runner blockers before any merge or qualification. |
+| P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | codex-ar1307-metadata-repair-20260918 | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Await exact-head CI for cd33b1b04; if formal reaches TLC, inspect measured attestation/isolation failures and repair remaining gates before merge. |
 
 ### Open (1)
 
