@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1250-mockagents-harness-extension",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-18T22:04:38+00:00",
   "depends_on": [
     "AR-0888",
     "AR-0889"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1250-mockagents-harness-extension",
   "observed_dirty": 0,
   "observed_head": "0d42bca02b276342606ae35bfaa30a5b5cd5247a",
-  "owner": "",
+  "owner": "asb_ar1250_arm64_recheck",
   "plan": "../plans/AR-1250.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Extend the pinned MockAgents executable qualification harness.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Extend MockAgents qualification harness",
-  "updated_at": "2026-09-18T21:34:10+00:00",
+  "updated_at": "2026-09-18T21:34:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1250"
 }
 ---
@@ -237,3 +237,5 @@ privacy, signature, DCO, and exact-tree gates; do not claim support from host in
 
 - 2026-09-18T21:34:10+00:00: Bounded comparison of the oversized-request failure is requested;
   preserve fail-closed qualification.
+
+- 2026-09-18T21:34:38+00:00: Claimed by asb_ar1250_arm64_recheck.

@@ -8,12 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Control genuine native platform capacity lifecycle. | Formal provenance owners must repair TLA v1.8.0 byte/hash mismatch before PR #119 exact-head rerun; AR-0704 source needs no change. | asb-ar0704-pr119-audit-20260918 |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1250](tasks/AR-1250-mockagents-harness-extension.md): Extend MockAgents qualification harness | Extend the pinned MockAgents executable qualification harness. | Repair the arm64 oversized-request rejection in the reviewed harness or candidate fixture, then rerun the full arm64 repeat gate with the verified QEMU runner. | - |
+| P1 | [AR-1250](tasks/AR-1250-mockagents-harness-extension.md): Extend MockAgents qualification harness | Extend the pinned MockAgents executable qualification harness. | Repair the arm64 oversized-request rejection in the reviewed harness or candidate fixture, then rerun the full arm64 repeat gate with the verified QEMU runner. | asb_ar1250_arm64_recheck |
 
 ## Blocked
 

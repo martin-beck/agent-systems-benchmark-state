@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**340 ARs tracked** across 7 active status categories.
+**340 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 48 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
@@ -343,7 +343,7 @@ flowchart LR
         AR_1247["AR-1247 - Done"]:::status_done
         AR_1248["AR-1248 - Blocked"]:::status_blocked
         AR_1249["AR-1249 - Blocked"]:::status_blocked
-        AR_1250["AR-1250 - Open"]:::status_open
+        AR_1250["AR-1250 - In progress"]:::status_in_progress
         AR_1251["AR-1251 - Blocked"]:::status_blocked
         AR_1252["AR-1252 - Done"]:::status_done
         AR_1253["AR-1253 - Done"]:::status_done
@@ -1668,17 +1668,12 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0704](../tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | asb-ar0704-pr119-audit-20260918 | Control genuine native platform capacity lifecycle. | Formal provenance owners must repair TLA v1.8.0 byte/hash mismatch before PR #119 exact-head rerun; AR-0704 source needs no change. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1250](../tasks/AR-1250-mockagents-harness-extension.md): Extend MockAgents qualification harness | Unclaimed | Extend the pinned MockAgents executable qualification harness. | Repair the arm64 oversized-request rejection in the reviewed harness or candidate fixture, then rerun the full arm64 repeat gate with the verified QEMU runner. |
+| P1 | [AR-1250](../tasks/AR-1250-mockagents-harness-extension.md): Extend MockAgents qualification harness | asb_ar1250_arm64_recheck | Extend the pinned MockAgents executable qualification harness. | Repair the arm64 oversized-request rejection in the reviewed harness or candidate fixture, then rerun the full arm64 repeat gate with the verified QEMU runner. |
 
 ### Blocked (48)
 
@@ -1751,3 +1746,4 @@ flowchart LR
 | P0 | [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md): Add the standalone TUI configuration center | Unclaimed | Add a searchable configuration menu for frontend preferences and benchmark defaults. | Implement the non-secret configuration center foundation after the visual system and ASB wizard control API are stable; AR-1170 owns provider, authentication and default integration. |
 | P0 | [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md): Build recent-runs, report and comparison workspaces | Unclaimed | Add searchable recent runs, report inspection and evidence-qualified comparison workspaces. | Implement report and comparison screens after recording workflows publish stable live and strict-replay source labels. |
 | P0 | [AR-1170](../tasks/AR-1170.md): Standalone TUI wizard | Unclaimed | Guide TUI setup through analysis. | Read the plan. |
+| P0 | [AR-1180](../tasks/AR-1180.md): Cross-project wizard qualification | Unclaimed | Qualify the complete wizard. | Read the plan. |
