@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1310](tasks/AR-1310-provider-capture-campaign.md): Runtime-owned provider capture and recording campaign qualification | Runtime-owned provider capture and recording campaign qualification. | AR-1312 owns the transferred 89.99% post-merge coverage blocker; keep this AR blocked and ownerless until its successor correction and exact-main checks are green. | ar1310-coverage-repair |
+| P0 | [AR-1310](tasks/AR-1310-provider-capture-campaign.md): Runtime-owned provider capture and recording campaign qualification | Runtime-owned provider capture and recording campaign qualification. | Route DCO failure for pre-existing merge 909078c to a dedicated merge-integrity AR; separately rerun a supported exact-main post-merge Repository quality path that reports coverage. Local tree is 90.48%, but hosted run 35396621049 did not qualify. Keep AR-1312 blocked. | ar1310-coverage-repair |
 
 ## Blocked
 

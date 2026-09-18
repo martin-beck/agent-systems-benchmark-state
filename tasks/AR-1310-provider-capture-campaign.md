@@ -8,7 +8,7 @@
     "AR-1151"
   ],
   "id": "AR-1310",
-  "next_action": "AR-1312 owns the transferred 89.99% post-merge coverage blocker; keep this AR blocked and ownerless until its successor correction and exact-main checks are green.",
+  "next_action": "Route DCO failure for pre-existing merge 909078c to a dedicated merge-integrity AR; separately rerun a supported exact-main post-merge Repository quality path that reports coverage. Local tree is 90.48%, but hosted run 35396621049 did not qualify. Keep AR-1312 blocked.",
   "observed_branch": "feature/ar-1310-provider-capture-campaign",
   "observed_dirty": 0,
   "observed_head": "9a2f313e86332e35eec40b97a692026b497d46cd",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Runtime-owned provider capture and recording campaign qualification.",
-  "task_revision": 105,
+  "task_revision": 106,
   "title": "Runtime-owned provider capture and recording campaign qualification",
-  "updated_at": "2026-09-18T21:27:17+00:00",
+  "updated_at": "2026-09-18T21:27:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1310-provider-capture-campaign"
 }
 ---
@@ -385,3 +385,6 @@ independently so its promotion is not falsely implied by AR-1160 completion.
   no implementation retry.
 
 - 2026-09-18T21:27:17+00:00: Claimed by ar1310-coverage-repair.
+
+- 2026-09-18T21:27:20+00:00: Explicitly separated hosted policy/DCO failure from unresolved hosted
+  coverage evidence; no gate weakening or product diff.
