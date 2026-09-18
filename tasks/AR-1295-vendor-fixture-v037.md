@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-18T20:56:39+00:00",
   "depends_on": [],
   "id": "AR-1295",
-  "next_action": "Update stale coordinator vendor test fixtures from v0.3.5 to verified immutable v0.3.7 and rerun the complete state test suite without changing vendor or handoffctl code.",
+  "next_action": "Open a review PR from the clean exact fixture head after repairing the unrelated generated-state schema blocker: AR-1160 next_action exceeds the schema length bound. Preserve the v0.3.7 fixture and do not change handoffctl/vendor code.",
   "observed_branch": "repair/ar-1295-vendor-fixtures",
   "observed_dirty": 0,
   "observed_head": "c8c5a25e0ba31862c83465ea02963c5e4adb5d22",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Align stale coordinator vendor tests with the verified immutable v0.3.7 pin.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Coordinator vendor v0.3.7 fixture alignment",
-  "updated_at": "2026-09-18T19:02:38+00:00",
+  "updated_at": "2026-09-18T19:03:13+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1295-vendor-fixtures"
 }
 ---
@@ -138,3 +138,11 @@ handoffctl, formal runner behavior, ASB product, or asb-tui.
 
 - 2026-09-18T19:02:38+00:00: Recorded command exit 0; command argv SHA-256
   2a5f18a018eac4703aa065a1484ea3190893d02da0a4a6cf358510cff78afa0c.
+
+- 2026-09-18T19:03:13+00:00: Gate classification: focused vendor tests 8/8, vendor verify, headers,
+  Ruff format/check, mypy, Lizard, full unittest 196/196, and coverage report --fail-under=95 pass.
+  Schema validation fails only because AR-1160 next_action exceeds the declared length bound;
+  render-status check passes. AR-1308 preflight warnings occurred inside full tests but are expected
+  unrelated fixture failures and did not fail the suite. No source change made in this pass; prior
+  v0.3.7 fixture content is already on protected history. Next action is to preserve this evidence
+  and route the schema repair separately before PR/review.
