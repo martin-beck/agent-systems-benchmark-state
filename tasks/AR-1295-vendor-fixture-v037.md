@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1295-vendor-fixtures",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-18T20:56:39+00:00",
+  "claim_expires": "2026-09-18T21:03:47+00:00",
   "depends_on": [],
   "id": "AR-1295",
   "next_action": "Open a review PR from the clean exact fixture head after repairing the unrelated generated-state schema blocker: AR-1160 next_action exceeds the schema length bound. Preserve the v0.3.7 fixture and do not change handoffctl/vendor code.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Align stale coordinator vendor tests with the verified immutable v0.3.7 pin.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Coordinator vendor v0.3.7 fixture alignment",
-  "updated_at": "2026-09-18T19:03:13+00:00",
+  "updated_at": "2026-09-18T19:03:47+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1295-vendor-fixtures"
 }
 ---
@@ -146,3 +146,5 @@ handoffctl, formal runner behavior, ASB product, or asb-tui.
   unrelated fixture failures and did not fail the suite. No source change made in this pass; prior
   v0.3.7 fixture content is already on protected history. Next action is to preserve this evidence
   and route the schema repair separately before PR/review.
+
+- 2026-09-18T19:03:47+00:00: Heartbeat by asb-ar1295-vendor-fixtures-20260918.
