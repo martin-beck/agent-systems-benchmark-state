@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1310-provider-capture-campaign",
-  "checkpoint_commit": "9a2f313e86332e35eec40b97a692026b497d46cd",
+  "checkpoint_commit": "17a1530e620608a4d53b6d92ba48c642400778e2",
   "claim_expires": "2026-09-18T22:49:22+00:00",
   "depends_on": [
     "AR-1060",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Runtime-owned provider capture and recording campaign qualification.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Runtime-owned provider capture and recording campaign qualification",
-  "updated_at": "2026-09-18T20:49:22+00:00",
+  "updated_at": "2026-09-18T20:49:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1310-provider-capture-campaign"
 }
 ---
@@ -318,3 +318,11 @@ independently so its promotion is not falsely implied by AR-1160 completion.
 - 2026-09-18T20:46:18+00:00: Heartbeat by ar1310-provider-capture.
 
 - 2026-09-18T20:49:22+00:00: Heartbeat by ar1310-provider-capture.
+
+- 2026-09-18T20:49:30+00:00: Post-merge verification found a real required-gate failure; AR is not
+  releasable yet. Main is exactly 17a1530e620608a4d53b6d92ba48c642400778e2 and PR #229 is merged,
+  but post-merge Repository quality run 35393146183 failed Policy coverage: workspace line coverage
+  89.99% (52,704 executed / 5,274 missed across 80,319 lines), below fail-under-lines=90. The
+  post-merge Rust and emulated-aarch64 runs were still in progress at inspection; other completed
+  post-merge workflows were green. Do not mark done or release until a follow-up coverage correction
+  is merged and all exact-main required checks pass.
