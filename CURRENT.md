@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1151](tasks/AR-1151.md): Strict offline replay | Replay strictly without providers. | Implement the remaining AR-1160 control operations: authenticated agent catalog, recording campaign launch/progress/coverage reconciliation/cancel and offline-default activation; then wire AR-1170 TUI wizard actions against those operations. Publish exact heads after GitHub email verification. | codex_ar1151_followup |
-| P0 | [AR-1307](tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Verify GitHub email externally; then retry governed state and PR publication of signed local diagnostics head c5f6ad076. Do not dispatch formal until push and exact-head CI pass. | codex-ar1307-metadata-repair-20260918 |
+| P0 | [AR-1307](tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Await formal run 35342513872 on exact head ab485f767; if terminal green, independently review and complete merge gates, otherwise diagnose its bounded failure before any retry. | codex-ar1307-metadata-repair-20260918 |
 
 ## Open
 

@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Verify GitHub email externally; then retry governed state and PR publication of signed local diagnostics head c5f6ad076. Do not dispatch formal until push and exact-head CI pass.",
+  "next_action": "Await formal run 35342513872 on exact head ab485f767; if terminal green, independently review and complete merge gates, otherwise diagnose its bounded failure before any retry.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "969eef05834a4ce5f711bbafaa5798549abd95c8",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 720,
+  "task_revision": 721,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T12:01:26+00:00",
+  "updated_at": "2026-09-18T12:02:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -2034,3 +2034,8 @@ and protected publication sequence.
 
 - 2026-09-18T12:01:26+00:00: Recorded command exit 0; command argv SHA-256
   b3975316cf31e1e1d808b06fff1d9348a96fbc473193c439170ad45c82e765f7.
+
+- 2026-09-18T12:02:58+00:00: Resolved GitHub email-verification 403. Published signed diagnostics
+  repair head ab485f767 after fixing fresh-run and direct-test temp-directory initialization.
+  Exact-head verify, AWQ shadow, and strict coordination checks are green; formal run 35342513872 is
+  active. No qualification or merge claim yet.
