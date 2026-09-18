@@ -11,8 +11,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 49 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
@@ -119,7 +119,7 @@ flowchart LR
         AR_0701["AR-0701 - Done"]:::status_done
         AR_0702["AR-0702 - Done"]:::status_done
         AR_0703["AR-0703 - Future"]:::status_future
-        AR_0704["AR-0704 - Open"]:::status_open
+        AR_0704["AR-0704 - In progress"]:::status_in_progress
         AR_0705["AR-0705 - Planned"]:::status_planned
         AR_0706["AR-0706 - Planned"]:::status_planned
         AR_0707["AR-0707 - Done"]:::status_done
@@ -1668,11 +1668,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0704](../tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | PR #119 remains exact head e2e3574 on base 78a8e9f, with all required checks green except Repository quality 35401437247 at 89.99&#37; workspace coverage. Preserve the open PR; promote/claim AR-1312 only after its dependency policy allows, then add meaningful tests and rerun exact CI. Do not merge or weaken the 90&#37; floor. |
+| P1 | [AR-0704](../tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | coordinator-ar0704-routing | Control genuine native platform capacity lifecycle. | PR #119 remains exact head e2e3574 on base 78a8e9f, with all required checks green except Repository quality 35401437247 at 89.99&#37; workspace coverage. Preserve the open PR; promote/claim AR-1312 only after its dependency policy allows, then add meaningful tests and rerun exact CI. Do not merge or weaken the 90&#37; floor. |
 
 ### Blocked (49)
 
