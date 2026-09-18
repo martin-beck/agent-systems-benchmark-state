@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 170,
+  "task_revision": 171,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T15:45:47+00:00",
+  "updated_at": "2026-09-18T15:45:54+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -462,3 +462,6 @@ source code or treating a capacity failure as a model result.
 - 2026-09-18T15:45:47+00:00: Checkpoint advanced through handoffctl to signed exact PR head
   df0e402f442468e43e06b7c1acb3c3667277fb75 after coverage and checkpoint-path tests. Required gates
   are being rerun; QEMU remains paused.
+
+- 2026-09-18T15:45:54+00:00: Recorded command exit 1; command argv SHA-256
+  55b7ac64074e6ba48d9aa0109b081f466a6a7dc81a329e4a898df3da00717791.
