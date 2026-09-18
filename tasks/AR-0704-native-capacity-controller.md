@@ -8,7 +8,7 @@
     "AR-0103"
   ],
   "id": "AR-0704",
-  "next_action": "PR #119 remains exact head e2e3574 on base 78a8e9f, with all required checks green except Repository quality 35401437247 at 89.99% workspace coverage. Preserve the open PR; promote/claim AR-1312 only after its dependency policy allows, then add meaningful tests and rerun exact CI. Do not merge or weaken the 90% floor.",
+  "next_action": "PR #119 exact e2e3574 is green except quality 35401437247 at 89.99% coverage. Preserve PR; repair via AR-1312 when promotable. Do not merge or weaken 90%.",
   "observed_branch": "feature/native-capacity-controller",
   "observed_dirty": 0,
   "observed_head": "e2e3574ed2bbc020105ffb1eb4c5a38691b299a3",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 235,
+  "task_revision": 236,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-18T22:36:48+00:00",
+  "updated_at": "2026-09-18T22:36:50+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -791,3 +791,5 @@ must not block this AR or its dependents.
   evidence.
 
 - 2026-09-18T22:36:48+00:00: Claimed by coordinator-ar0704-routing.
+
+- 2026-09-18T22:36:50+00:00: Shortened next_action below schema limit.

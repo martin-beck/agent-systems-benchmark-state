@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Control genuine native platform capacity lifecycle. | PR #119 remains exact head e2e3574 on base 78a8e9f, with all required checks green except Repository quality 35401437247 at 89.99% workspace coverage. Preserve the open PR; promote/claim AR-1312 only after its dependency policy allows, then add meaningful tests and rerun exact CI. Do not merge or weaken the 90% floor. | coordinator-ar0704-routing |
+| P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Control genuine native platform capacity lifecycle. | PR #119 exact e2e3574 is green except quality 35401437247 at 89.99% coverage. Preserve PR; repair via AR-1312 when promotable. Do not merge or weaken 90%. | coordinator-ar0704-routing |
 
 ## Blocked
 
