@@ -1659,7 +1659,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1160](../tasks/AR-1160.md): Wizard control API | codex-ar1160-control-20260918 | Wizard control API | Resume PR #227 required hosted gates when GitHub runner capacity is available; do not bypass branch protection. Then merge 88df781 and wire runtime capture adapter plus asb-tui recording controls. |
+| P0 | [AR-1160](../tasks/AR-1160.md): Wizard control API | codex-ar1160-control-20260918 | Wizard control API | PR #227 exact head is now 3cc144e73ed68bd86f4dd05c644162e65dfb0895 with focused empty-campaign status coverage test. Local full tools/quality/check_coverage.py passed at 90.48&#37; lines (51,864/57,? workspace report; hosted prior was 89.99&#37;); all local tests in the full coverage run passed. Push completed; six hosted required workflows are running and must reach terminal green. Then obtain independent review, verify exact-head CI and merge only when all required checks are green. Runtime provider capture wiring and asb-tui recording controls remain future work; do not claim AR complete. |
 | P0 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | codex-ar1308-fixture-repair-20260918 | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Repair/rebuild the disposable data fixture so the seed can read pinned JDK security files at its reviewed path; verify image fsck/hash and serial bootstrap, then rerun preflight before one bounded QEMU attempt. |
 
 ### Open (1)
@@ -1741,4 +1741,3 @@ flowchart LR
 | P0 | [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md): Build recent-runs, report and comparison workspaces | Unclaimed | Add searchable recent runs, report inspection and evidence-qualified comparison workspaces. | Implement report and comparison screens after recording workflows publish stable live and strict-replay source labels. |
 | P0 | [AR-1170](../tasks/AR-1170.md): Standalone TUI wizard | Unclaimed | Guide TUI setup through analysis. | Read the plan. |
 | P0 | [AR-1180](../tasks/AR-1180.md): Cross-project wizard qualification | Unclaimed | Qualify the complete wizard. | Read the plan. |
-| P0 | [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md): Authenticated TUI install router | Unclaimed | Expose an authenticated renderer-neutral ASB router for asb tui install and lifecycle operations. | Promote only after dependencies are independently complete; implement the renderer-neutral authenticated CLI/control route and full integration tests. |
