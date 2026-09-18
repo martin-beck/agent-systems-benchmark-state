@@ -1656,7 +1656,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1151](../tasks/AR-1151.md): Strict offline replay | codex_ar1151_followup | Replay strictly without providers. | Monitor fresh PR #225 gates at exact head 3ebbcad; after green review/merge, continue AR-1160 runtime campaign operations and offline-default activation. |
+| P0 | [AR-1151](../tasks/AR-1151.md): Strict offline replay | codex_ar1151_followup | Replay strictly without providers. | Monitor PR #225 fresh gates at exact head 20db76e; after green review/merge, implement AR-1160 runtime campaign launch/progress/cancel, cassette coverage reconciliation, and offline-default activation. |
 | P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | codex-ar1307-metadata-repair-20260918 | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Await formal run 35342513872 on exact head ab485f767; if terminal green, independently review and complete merge gates, otherwise diagnose its bounded failure before any retry. |
 
 ### Open (1)
