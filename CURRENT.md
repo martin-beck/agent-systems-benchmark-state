@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1308](tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Provision reviewed second-disk headroom and bind exact AR-1307 969eef058; preflight must pass disk, JDK, TLC, lock, image, seed, source, and 32/48G runner receipt gates before any QEMU run. | - |
+| P0 | [AR-1308](tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Provision reviewed second-disk headroom and bind exact AR-1307 969eef058; preflight must pass disk, JDK, TLC, lock, image, seed, source, and 32/48G runner receipt gates before any QEMU run. | coordinator-ar1308-runner |
 
 ## Blocked
 

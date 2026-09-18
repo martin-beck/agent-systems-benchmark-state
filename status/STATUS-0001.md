@@ -11,8 +11,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 49 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
@@ -404,7 +404,7 @@ flowchart LR
         AR_1305["AR-1305 - Blocked"]:::status_blocked
         AR_1306["AR-1306 - Done"]:::status_done
         AR_1307["AR-1307 - Blocked"]:::status_blocked
-        AR_1308["AR-1308 - Open"]:::status_open
+        AR_1308["AR-1308 - In progress"]:::status_in_progress
         AR_1309["AR-1309 - Planned"]:::status_planned
         AR_1310["AR-1310 - Blocked"]:::status_blocked
         AR_1311["AR-1311 - Done"]:::status_done
@@ -1668,11 +1668,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Unclaimed | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Provision reviewed second-disk headroom and bind exact AR-1307 969eef058; preflight must pass disk, JDK, TLC, lock, image, seed, source, and 32/48G runner receipt gates before any QEMU run. |
+| P0 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | coordinator-ar1308-runner | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Provision reviewed second-disk headroom and bind exact AR-1307 969eef058; preflight must pass disk, JDK, TLC, lock, image, seed, source, and 32/48G runner receipt gates before any QEMU run. |
 
 ### Blocked (49)
 
