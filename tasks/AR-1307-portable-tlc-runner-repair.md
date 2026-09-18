@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 379,
+  "task_revision": 380,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T00:57:54+00:00",
+  "updated_at": "2026-09-18T00:58:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1217,3 +1217,6 @@ and protected publication sequence.
 - 2026-09-18T00:57:54+00:00: Stage12 exact-head QEMU failed closed before TLC because the image
   filesystem UUID did not match the guest_seed DATA_UUID constant. Serial confirmed mount failure,
   missing JDK/state, and absent attestation; this is a runner fixture mismatch, not a gate bypass.
+
+- 2026-09-18T00:58:01+00:00: Recorded command exit 0; command argv SHA-256
+  cbbbf782e4d4383ff31fe188cfcd3e8ac93f6c0f836e29b7860b21b3ff417890.
