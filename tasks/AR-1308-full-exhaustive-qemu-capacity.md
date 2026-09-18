@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 473,
+  "task_revision": 474,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T19:09:49+00:00",
+  "updated_at": "2026-09-18T20:43:02+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1390,3 +1390,8 @@ source code or treating a capacity failure as a model result.
   QEMU run reached liveness checking, Java exhausted memory, exited 1, and emitted no attestation.
   Further work requires a separately reviewed capacity contract or model reduction; do not qualify
   AR-1307 from this run.
+
+- 2026-09-18T20:43:02+00:00: Re-opening bounded capacity repair after prior Java OOM: AR-1304 is
+  done, no active AR-1308 worker/process exists, and a fresh disposable runner may be attempted
+  without changing the AR-1307 3G/3G/2-worker/2-core process contract. Claim only to audit existing
+  fixture provenance and provision a larger guest capacity; preserve any terminal failure.
