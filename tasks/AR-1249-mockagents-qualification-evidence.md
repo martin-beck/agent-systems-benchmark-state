@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1249-mockagents-qualification-evidence",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-18T22:37:28+00:00",
+  "claim_expires": "2026-09-18T23:39:34+00:00",
   "depends_on": [
     "AR-0888",
     "AR-0889"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Complete missing evidence for the pinned MockAgents executable qualification.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Complete MockAgents executable qualification evidence",
-  "updated_at": "2026-09-18T21:39:11+00:00",
+  "updated_at": "2026-09-18T21:39:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1249"
 }
 ---
@@ -159,3 +159,5 @@ network denial, privacy, signature, DCO, and exact-tree gates.
 
 - 2026-09-18T21:39:11+00:00: Recorded command exit 0; command argv SHA-256
   82a63120a3d96d11e984b437689f6da47a71e72a106f21bdf24c57ac3ca7f0b6.
+
+- 2026-09-18T21:39:34+00:00: Heartbeat by asb_ar1249_candidate_recheck.
