@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Monitor formal run 35304602667 at exact head c75e1f391360ad9cc9c7df9ba3257c45202c8b3c to terminal; repair the canonical lock ownership through the governed AR-1294 boundary, then make coordination and formal checks green before pristine full-exhaustive attestation.",
+  "next_action": "Monitor coordination 35305103755 and formal 35305104802 at exact head 436edb9cbdb96e0c27230972d014edd54c3d1e72; preserve the AR-1294 lock-boundary evidence, then independently review and merge only after all gates and fresh full attestation are green.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 521,
+  "task_revision": 522,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T03:57:36+00:00",
+  "updated_at": "2026-09-18T03:57:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1409,3 +1409,9 @@ and protected publication sequence.
 - 2026-09-18T03:57:34+00:00: Heartbeat by codex-ar1307-runner-repair2-20260918.
 
 - 2026-09-18T03:57:36+00:00: Heartbeat by codex-ar1307-runner-repair2-20260918.
+
+- 2026-09-18T03:57:49+00:00: Refreshed PR #24 onto current remote main with signed merge 436edb9cb;
+  GitHub now reports mergeable=true, eliminating stale-base metadata failures. Superseded formal
+  35304602667 on old head c75e1f391 was cancelled before terminal attestation; fresh exact-head
+  coordination/formal runs are dispatched as 35305103755/35305104802. Do not claim formal success
+  until the new run is terminal.
