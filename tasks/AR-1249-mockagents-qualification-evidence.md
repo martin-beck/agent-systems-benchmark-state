@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1249-mockagents-qualification-evidence",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-18T23:39:34+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0888",
     "AR-0889"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1249-mockagents-qualification-evidence",
   "observed_dirty": 0,
   "observed_head": "128ecddbfdb7fcfff6e257adf3237b5866aca481",
-  "owner": "asb_ar1249_candidate_recheck",
+  "owner": "",
   "plan": "../plans/AR-1249.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Complete missing evidence for the pinned MockAgents executable qualification.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Complete MockAgents executable qualification evidence",
-  "updated_at": "2026-09-18T21:39:47+00:00",
+  "updated_at": "2026-09-18T21:39:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1249"
 }
 ---
@@ -169,3 +169,9 @@ network denial, privacy, signature, DCO, and exact-tree gates.
   harness or runner defect. AR-1249 owns qualification evidence and cannot modify the external
   candidate; no safe workaround or qualification claim is valid. Route to a narrowly scoped
   candidate-repair AR.
+
+- 2026-09-18T21:39:54+00:00: Released ownerless blocked. Exact pinned MockAgents v0.5.0 arm64 probe
+  under reviewed QEMU 8.2.2 confirmed streaming.truncate_after_chunks: 1 is ignored: HTTP 200
+  emitted the complete stream and terminal [DONE]. Candidate behavior blocks strict qualification;
+  AR-1249 cannot repair an external pinned executable without a reviewed candidate-repair AR. No ASB
+  product mutation, workaround, or support claim.
