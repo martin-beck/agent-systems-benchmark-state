@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 508,
+  "task_revision": 509,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T22:41:22+00:00",
+  "updated_at": "2026-09-18T22:41:29+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1519,3 +1519,6 @@ source code or treating a capacity failure as a model result.
   3G/3G process contract, and do not boot.
 
 - 2026-09-18T22:41:22+00:00: Claimed by coordinator-ar1308-runner.
+
+- 2026-09-18T22:41:29+00:00: Recorded command exit 0; command argv SHA-256
+  6f172b22f9ed55918fc516c48a1549e602623700745a6bbaae1d00c3c7d298d5.
