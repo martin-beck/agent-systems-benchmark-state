@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 517,
+  "task_revision": 518,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T22:45:36+00:00",
+  "updated_at": "2026-09-18T22:50:44+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1547,3 +1547,6 @@ source code or treating a capacity failure as a model result.
 - 2026-09-18T22:45:36+00:00: Runner now has 64 GiB sparse data disk, QEMU 8.2.2 x86_64, 8 vCPU, 32
   GiB RAM, 16 GiB swap contract, no network/mounts. Exact AR-1307 inputs and pinned runtime
   artifacts remain unavailable; no VM boot or TLC qualification.
+
+- 2026-09-18T22:50:44+00:00: Coordinator repair: validate and normalize the prepared clean-v1 runner
+  receipt/command metadata; no qualification or VM boot.
