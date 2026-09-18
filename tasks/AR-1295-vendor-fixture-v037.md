@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1295.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Align stale coordinator vendor tests with the verified immutable v0.3.7 pin.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Coordinator vendor v0.3.7 fixture alignment",
-  "updated_at": "2026-09-18T19:48:03+00:00",
+  "updated_at": "2026-09-18T20:54:16+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1295-vendor-fixtures"
 }
 ---
@@ -179,3 +179,6 @@ handoffctl, formal runner behavior, ASB product, or asb-tui.
   is signed+DCO on main at 53fd66118559b2e99ebf5c4d50416b004156049d, and prior focused/full vendor
   evidence remains valid. Reopen only after generated-state blockers are repaired and a genuine
   exact-head publication transition remains.
+
+- 2026-09-18T20:54:16+00:00: Generated-state schema blockers are repaired; resume exact-head vendor
+  fixture re-audit without changing vendor implementation or formal behavior.
