@@ -8,7 +8,7 @@
     "AR-0103"
   ],
   "id": "AR-0704",
-  "next_action": "Formal assurance owner AR-0877/AR-0907 must repair the pinned TLA artifact provenance mismatch (downloaded byte count/hash) before PR #119 can be requalified; AR-0704 native controller requires no source change.",
+  "next_action": "Formal provenance owners must repair TLA v1.8.0 byte/hash mismatch before PR #119 exact-head rerun; AR-0704 source needs no change.",
   "observed_branch": "feature/native-capacity-controller",
   "observed_dirty": 0,
   "observed_head": "28f30eea80efef5a61ea438e77402f8640564cc9",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 85,
+  "task_revision": 86,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-18T20:56:19+00:00",
+  "updated_at": "2026-09-18T20:56:34+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -331,3 +331,13 @@ must not block this AR or its dependents.
   repaired.
 
 - 2026-09-18T20:56:19+00:00: Claimed by asb-ar0704-pr119-audit-20260918.
+
+- 2026-09-18T20:56:34+00:00: PR #119 live audit: exact head 28f30eea80efef5a61ea438e77402f8640564cc9
+  is SSH-signed with matching DCO; its two AR-0704 paths are exactly the reviewed lifecycle
+  controller. GitHub reports 11 required checks green and only Formal assurance run 34355869235 job
+  102480266536 failed. The failure occurs immediately after downloading the official TLA+ v1.8.0
+  asset: transfer reports 4385 KiB / 4490679 bytes, but pinned validation observes SHA
+  ae41e3f67f8f81de9788e348cac2c868f0fdf810e14c6b49fd759b3ef578562e instead of
+  a1fc0bfe391d99fdd86f579a63ff68c0950010e9dde551f1192b867d5c8f4efd. No product assertion ran. PR
+  #119 remains open/mergeable but unstable. Formal repair is outside AR-0704 and belongs to
+  AR-0877/AR-0907/AR-0906; no native-capacity or formal gate was weakened.
