@@ -2,7 +2,7 @@
 {
   "branch": "feature/native-capacity-controller",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-18T23:59:53+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0701",
     "AR-0103"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/native-capacity-controller",
   "observed_dirty": 0,
   "observed_head": "e2e3574ed2bbc020105ffb1eb4c5a38691b299a3",
-  "owner": "ar0704_rebase_impl",
+  "owner": "",
   "plan": "../plans/AR-0704.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 178,
+  "task_revision": 179,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-18T22:00:01+00:00",
+  "updated_at": "2026-09-18T22:00:47+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -614,3 +614,9 @@ must not block this AR or its dependents.
   repository policy and diff checks pass. Full cargo test stopped at infrastructure ENOSPC after
   /srv/data reached 100%; only this AR and its stale rebase target caches were cleaned, state
   integrity verified. Resume full gates after additional approved disk capacity is available.
+
+- 2026-09-18T22:00:47+00:00: Full cargo test remains blocked by infrastructure ENOSPC after approved
+  /srv/data reached 100%. Preserve signed candidate e2e3574 and focused 14/14, fmt, clippy, policy,
+  and diff evidence; no clean full-gate/publication claim. Resume only after additional approved
+  second-disk capacity, then rerun cargo test --locked --workspace and all remaining gates before
+  exact-head CI/merge.
