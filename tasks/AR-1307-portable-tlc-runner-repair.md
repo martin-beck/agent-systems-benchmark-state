@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1307-portable-tlc-runner-repair",
   "checkpoint_commit": "beafa965e61b0f09d9ed5f10ffcd621b0cf3e5b2",
-  "claim_expires": "2026-09-18T06:07:15+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1302"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "codex-ar1307-runner-repair2-20260918",
+  "owner": "",
   "plan": "../plans/AR-1307.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 541,
+  "task_revision": 542,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T04:08:08+00:00",
+  "updated_at": "2026-09-18T04:08:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1468,3 +1468,6 @@ and protected publication sequence.
 
 - 2026-09-18T04:08:08+00:00: Recorded command exit 1; command argv SHA-256
   4072af302c4ca8a38151f6ad94ba9ea7e7536396674b813828a2c5962586f159.
+
+- 2026-09-18T04:08:19+00:00: Worker interrupted after no progress beyond DCO gate; preserve PR #24
+  and exact runner evidence for successor takeover.
