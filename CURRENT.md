@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1308](tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Prepared 64 GiB sparse data disk and receipt; bind exact signed AR-1307 969eef058 plus pinned JDK/TLC, lock, image and seed. Run complete preflight before boot; no qualification yet. | coordinator-ar1308-runner-repair |
+| P0 | [AR-1308](tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Runner is clean and strict-JSON valid at /srv/data/projects/asb-state-tlc-vm-ar1308-clean-v1: 64 GiB sparse data disk, x86_64 QEMU 8.2.2, q35, 8 vCPU, 32 GiB RAM, 16 GiB swap contract, no network/mounts. Bind exact signed AR-1307 969eef058 bundle plus pinned JDK/TLC, lock, image and seed; run complete preflight before boot. Do not qualify yet. | coordinator-ar1308-runner-repair |
 
 ## Blocked
 

@@ -1672,7 +1672,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | coordinator-ar1308-runner-repair | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Prepared 64 GiB sparse data disk and receipt; bind exact signed AR-1307 969eef058 plus pinned JDK/TLC, lock, image and seed. Run complete preflight before boot; no qualification yet. |
+| P0 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | coordinator-ar1308-runner-repair | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Runner is clean and strict-JSON valid at /srv/data/projects/asb-state-tlc-vm-ar1308-clean-v1: 64 GiB sparse data disk, x86_64 QEMU 8.2.2, q35, 8 vCPU, 32 GiB RAM, 16 GiB swap contract, no network/mounts. Bind exact signed AR-1307 969eef058 bundle plus pinned JDK/TLC, lock, image and seed; run complete preflight before boot. Do not qualify yet. |
 
 ### Blocked (49)
 
@@ -1745,4 +1745,3 @@ flowchart LR
 | P0 | [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md): Establish the professional TUI visual system | Unclaimed | Create a responsive, accessible and professional visual system for every TUI screen. | Create the standalone Ratatui visual system after the application shell is integrated. |
 | P0 | [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md): Add the standalone TUI configuration center | Unclaimed | Add a searchable configuration menu for frontend preferences and benchmark defaults. | Implement the non-secret configuration center foundation after the visual system and ASB wizard control API are stable; AR-1170 owns provider, authentication and default integration. |
 | P0 | [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md): Build recent-runs, report and comparison workspaces | Unclaimed | Add searchable recent runs, report inspection and evidence-qualified comparison workspaces. | Implement report and comparison screens after recording workflows publish stable live and strict-replay source labels. |
-| P0 | [AR-1170](../tasks/AR-1170.md): Standalone TUI wizard | Unclaimed | Guide TUI setup through analysis. | Read the plan. |
