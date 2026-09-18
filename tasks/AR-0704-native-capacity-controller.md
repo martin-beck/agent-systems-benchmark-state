@@ -2,7 +2,7 @@
 {
   "branch": "feature/native-capacity-controller",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-18T21:26:19+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0701",
     "AR-0103"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/native-capacity-controller",
   "observed_dirty": 0,
   "observed_head": "28f30eea80efef5a61ea438e77402f8640564cc9",
-  "owner": "asb-ar0704-pr119-audit-20260918",
+  "owner": "",
   "plan": "../plans/AR-0704.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 86,
+  "task_revision": 87,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-18T20:56:34+00:00",
+  "updated_at": "2026-09-18T20:57:27+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -341,3 +341,9 @@ must not block this AR or its dependents.
   a1fc0bfe391d99fdd86f579a63ff68c0950010e9dde551f1192b867d5c8f4efd. No product assertion ran. PR
   #119 remains open/mergeable but unstable. Formal repair is outside AR-0704 and belongs to
   AR-0877/AR-0907/AR-0906; no native-capacity or formal gate was weakened.
+
+- 2026-09-18T20:57:27+00:00: Released blocked and ownerless after exact PR #119 audit. Head 28f30ee
+  is signed/DCO and all non-formal checks pass; formal assurance fails on the downloaded TLA+ v1.8.0
+  artifact byte/hash mismatch (observed 4490679 bytes and ae41e3f6..., pinned a1fc0bfe...). This is
+  outside AR-0704 native-capacity scope and must be repaired by AR-0877/AR-0907/AR-0906 before
+  requalification. No product mutation, merge, or gate weakening performed.
