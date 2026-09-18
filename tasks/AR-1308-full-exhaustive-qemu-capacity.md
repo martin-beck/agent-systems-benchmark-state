@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "checkpoint_commit": "df0e402f442468e43e06b7c1acb3c3667277fb75",
-  "claim_expires": "",
+  "claim_expires": "2026-09-18T22:43:05+00:00",
   "depends_on": [
     "AR-1304"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
-  "owner": "",
+  "owner": "asb-ar1308-capacity-repair-20260918",
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 474,
+  "task_revision": 475,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T20:43:02+00:00",
+  "updated_at": "2026-09-18T20:43:05+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1395,3 +1395,5 @@ source code or treating a capacity failure as a model result.
   done, no active AR-1308 worker/process exists, and a fresh disposable runner may be attempted
   without changing the AR-1307 3G/3G/2-worker/2-core process contract. Claim only to audit existing
   fixture provenance and provision a larger guest capacity; preserve any terminal failure.
+
+- 2026-09-18T20:43:05+00:00: Claimed by asb-ar1308-capacity-repair-20260918.
