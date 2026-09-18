@@ -7,13 +7,13 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1160](tasks/AR-1160.md): Wizard control API | Wizard control API | Resume PR #227 required hosted gates when GitHub runner capacity is available; do not bypass branch protection. Then merge 88df781 and wire runtime capture adapter plus asb-tui recording controls. | root |
 | P0 | [AR-1308](tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Fix state observation, then exact-head review and green CI; run bounded QEMU only after. | codex-ar1308-qemu-capacity-20260918 |
 
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1160](tasks/AR-1160.md): Wizard control API | Wizard control API | Resume PR #227 required hosted gates when GitHub runner capacity is available; do not bypass branch protection. Then merge 88df781 and wire runtime capture adapter plus asb-tui recording controls. | - |
 | P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Blocked on AR-1307 runner merge and handoff. Prior full VM was interrupted without success or attestation; after merge, rebuild exact fa57625d9 image/seed and rerun independently reviewed gates. | - |
 | P0 | [AR-1307](tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | AR-1308 is planned for disposable x86_64 QEMU capacity. Keep AR-1307 unqualified; after AR-1308 capacity evidence, rerun exact full-exhaustive without changing the 3G/3G contract. | - |
 
