@@ -1659,7 +1659,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1160](../tasks/AR-1160.md): Wizard control API | codex-ar1160-control-20260918 | Wizard control API | PR #227 merged at 278abfde3b568b9bbd248825e1246a8c530a8308 from exact reviewed head 3db1f4c. Verify all post-merge main workflows for 278abfd terminal green, then prepare the next isolated ASB-owned implementation slice/AR for provider-bound capture wiring, durable cassette reconciliation, and offline-default activation; do not mark AR-1160 complete yet. |
+| P0 | [AR-1160](../tasks/AR-1160.md): Wizard control API | codex-ar1160-control-20260918 | Wizard control API | Post-merge main 278abfd verification is not green: repository-quality run 35373092634 failed coverage at displayed 90.00&#37; (51894 covered / 5191 missed; fail-under-lines 90 exits 1 due exact threshold rounding). Record this as a follow-up ASB repair blocker and add enough portable production-path coverage in a fresh isolated follow-up AR/branch; do not weaken the floor. Continue monitoring remaining post-merge workflows. AR-1160 remains open for provider capture wiring, cassette reconciliation, offline-default activation, and frontend integration. |
 
 ### Open (1)
 
@@ -1741,4 +1741,3 @@ flowchart LR
 | P0 | [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md): Build recent-runs, report and comparison workspaces | Unclaimed | Add searchable recent runs, report inspection and evidence-qualified comparison workspaces. | Implement report and comparison screens after recording workflows publish stable live and strict-replay source labels. |
 | P0 | [AR-1170](../tasks/AR-1170.md): Standalone TUI wizard | Unclaimed | Guide TUI setup through analysis. | Read the plan. |
 | P0 | [AR-1180](../tasks/AR-1180.md): Cross-project wizard qualification | Unclaimed | Qualify the complete wizard. | Read the plan. |
-| P0 | [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md): Authenticated TUI install router | Unclaimed | Expose an authenticated renderer-neutral ASB router for asb tui install and lifecycle operations. | Promote only after dependencies are independently complete; implement the renderer-neutral authenticated CLI/control route and full integration tests. |

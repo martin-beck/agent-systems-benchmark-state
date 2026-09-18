@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1160](tasks/AR-1160.md): Wizard control API | Wizard control API | PR #227 merged at 278abfde3b568b9bbd248825e1246a8c530a8308 from exact reviewed head 3db1f4c. Verify all post-merge main workflows for 278abfd terminal green, then prepare the next isolated ASB-owned implementation slice/AR for provider-bound capture wiring, durable cassette reconciliation, and offline-default activation; do not mark AR-1160 complete yet. | codex-ar1160-control-20260918 |
+| P0 | [AR-1160](tasks/AR-1160.md): Wizard control API | Wizard control API | Post-merge main 278abfd verification is not green: repository-quality run 35373092634 failed coverage at displayed 90.00% (51894 covered / 5191 missed; fail-under-lines 90 exits 1 due exact threshold rounding). Record this as a follow-up ASB repair blocker and add enough portable production-path coverage in a fresh isolated follow-up AR/branch; do not weaken the floor. Continue monitoring remaining post-merge workflows. AR-1160 remains open for provider capture wiring, cassette reconciliation, offline-default activation, and frontend integration. | codex-ar1160-control-20260918 |
 
 ## Open
 
