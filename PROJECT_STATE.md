@@ -26,7 +26,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35396621049 | `17a1530e6206` | workflow_dispatch | Repository quality | in_progress:- |
+| 35396621049 | `17a1530e6206` | workflow_dispatch | Repository quality | completed:failure |
 | 35393146266 | `17a1530e6206` | push | Formal assurance | completed:success |
 | 35393146249 | `17a1530e6206` | push | Hosted portability and native qualification | completed:success |
 | 35393146226 | `17a1530e6206` | push | Fault assurance | completed:success |
