@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Runtime-owned provider capture and recording campaign qualification.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Runtime-owned provider capture and recording campaign qualification",
-  "updated_at": "2026-09-18T20:05:32+00:00",
+  "updated_at": "2026-09-18T20:06:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1310-provider-capture-campaign"
 }
 ---
@@ -172,3 +172,10 @@ independently so its promotion is not falsely implied by AR-1160 completion.
 
 - 2026-09-18T20:05:32+00:00: Recorded command exit 0; command argv SHA-256
   03e3afb3d0d86dfbcda0c8581df5c6db6e16afc6f3f1462066deb18e6c8270a9.
+
+- 2026-09-18T20:06:03+00:00: Recorded exit-101 diagnosis: new cassette conversion test passed
+  Redactor::redact_contents() tuple directly to seal_cassette; compiler E0308 expected
+  RedactedCassetteContents but received (RedactedCassetteContents, RedactionReport). Corrected by
+  destructuring the redaction result; focused conversion test now passes, along with prior
+  lifecycle/callback/restart tests and full asb-replay suite. No retry loop; next action is full
+  locked workspace gates.
