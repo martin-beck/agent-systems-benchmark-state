@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1025](tasks/AR-1025-standalone-asb-tui-application.md): Build the standalone asb-tui application | Deliver the actual standalone interactive asb-tui application without an ASB workspace dependency. | After AR-1010, AR-1037 and AR-1060 complete, build the standalone shell and make its closed v1.3 control transport consume and independently re-authenticate the inherited channel. | asb-ar1025-boundary-audit-20260918 |
+| P0 | [AR-1025](tasks/AR-1025-standalone-asb-tui-application.md): Build the standalone asb-tui application | Deliver the actual standalone interactive asb-tui application without an ASB workspace dependency. | Blocked: implementation belongs to asb-tui, but current scope forbids touching that repository; AR-1010/AR-1060 also retain unresolved publication blockers. Obtain explicit scope/dependency repair before re-opening. | asb-ar1025-boundary-audit-20260918 |
 
 ## Open
 
