@@ -350,10 +350,12 @@ class TlcRunnerTests(unittest.TestCase):
                 admission_lock=str(root / "admission.lock"),
             )
             with (
+                mock.patch.object(RUNNER, "DEFAULT_TMPDIR", root / "tmp"),
                 mock.patch.object(RUNNER, "build_command", return_value=["java"]),
                 mock.patch.object(RUNNER, "_bounded_process", return_value=(0, False)),
             ):
                 self.assertEqual(RUNNER.run(args), 0)
+            self.assertTrue((root / "tmp").is_dir())
             outcomes = list(queue.glob("*.outcome.json"))
             self.assertEqual(len(outcomes), 1)
             record = json.loads(outcomes[0].read_text(encoding="utf-8"))
@@ -429,6 +431,7 @@ class TlcRunnerTests(unittest.TestCase):
                 admission_lock=str(Path(directory) / "admission.lock"),
             )
             with (
+                mock.patch.object(RUNNER, "DEFAULT_TMPDIR", Path(directory) / "tmp"),
                 mock.patch.object(RUNNER, "build_command", return_value=["java"]),
                 mock.patch.object(RUNNER, "_bounded_process", side_effect=KeyboardInterrupt),
                 self.assertRaises(KeyboardInterrupt),

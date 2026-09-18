@@ -374,6 +374,10 @@ def run(args: argparse.Namespace) -> int:
     """Queue, admit, execute, and durably classify one TLC model."""
     queue = Path(args.queue).resolve()
     _private_directory(queue)
+    # The bounded stdout capture uses this worker-private directory.  Create
+    # it during admission so a fresh runner fails only on an actual admission
+    # or TLC error, rather than on an absent temporary directory.
+    _private_directory(DEFAULT_TMPDIR)
     _prune_stale(queue)
     job = queue / f"{os.getpid()}-{uuid.uuid4().hex}.job.json"
     outcome = job.with_name(job.name.replace(".job.json", ".outcome.json"))
