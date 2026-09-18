@@ -57,7 +57,7 @@
       "source": "formal/handoffctl/README.md"
     },
     "formal/handoffctl/verify.sh": {
-      "sha256": "772b6f74e07f3fd3641688e1645ffea66681d7390b09b884e030cc1d3d013dd5",
+      "sha256": "5c51df25a26f034055b0df7f016e271545ef1ac31fa5d5549f865cef07db816c",
       "source": "formal/handoffctl/verify.sh"
     },
     "schema/handoffctl-backend-config.schema.json": {
@@ -77,7 +77,7 @@
       "source": "schema/upgrade-contract.schema.json"
     },
     "tests/test_handoffctl.py": {
-      "sha256": "6f2de715a67b3b15352fcd0a3161dbb269e415d76857dd97964ed6dd5b82d664",
+      "sha256": "88e11f687e4f2b75f87331df426fab988b6652c309dc89701d9ad600e82dc92a",
       "source": "tests/test_handoffctl.py"
     },
     "tests/test_sqlite_storage.py": {
