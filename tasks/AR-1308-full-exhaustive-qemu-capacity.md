@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-18T15:47:05+00:00",
   "depends_on": [
     "AR-1304"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "codex-ar1308-qemu-capacity-20260918",
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T13:45:32+00:00",
+  "updated_at": "2026-09-18T13:47:05+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -39,3 +39,5 @@ source code or treating a capacity failure as a model result.
 
 - 2026-09-18T13:45:32+00:00: AR-1304 is done; promote capacity follow-on to open for independent
   worker assignment. Preserve AR-1307 3G/3G contract and exact-head dependency.
+
+- 2026-09-18T13:47:05+00:00: Claimed by codex-ar1308-qemu-capacity-20260918.
