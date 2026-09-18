@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 205,
+  "task_revision": 206,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T15:59:11+00:00",
+  "updated_at": "2026-09-18T15:59:27+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -548,3 +548,6 @@ source code or treating a capacity failure as a model result.
 - 2026-09-18T15:59:11+00:00: PR #26 merged at e9de9677ae6d071fa053ab4fc41d82f3e3381d81. Post-merge
   main contains the reviewed AR-1308 runner at exact merge commit; transition is now post-merge
   verification and governed preflight.
+
+- 2026-09-18T15:59:27+00:00: Recorded command exit 1; command argv SHA-256
+  76f107d648f95578172531bd0a75f4da58d0f616811f0c8f2303b6c1e8fc5689.
