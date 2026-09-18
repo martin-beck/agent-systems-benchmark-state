@@ -9,10 +9,12 @@ import argparse
 import hashlib
 import importlib
 import importlib.util
+import json
 import os
 import re
 import signal
 import subprocess
+import time
 from collections.abc import Callable, Mapping
 from pathlib import Path
 from typing import cast
@@ -95,6 +97,29 @@ def _failure_detail(process: subprocess.Popen[bytes]) -> str:
     return detail[-1000:] or "no diagnostic was emitted"
 
 
+def _write_interruption_receipt(tier: str, *, state: str, reason: str, timeout: int) -> None:
+    """Record bounded non-success termination without creating formal evidence."""
+    receipts = RUNTIME_ROOT / "receipts"
+    _private_directory(receipts)
+    receipt = receipts / f"{tier}-interruption.json"
+    receipt.write_text(
+        json.dumps(
+            {
+                "schema_version": 1,
+                "tier": tier,
+                "state": state,
+                "reason": reason,
+                "timeout_seconds": timeout,
+                "pid": os.getpid(),
+                "timestamp_epoch": int(time.time()),
+            },
+            sort_keys=True,
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+
+
 def run(tier: str, *, environ: Mapping[str, str] | None = None) -> int:
     """Run the canonical verify script without shell or retained output."""
     if tier not in TIERS:
@@ -133,8 +158,20 @@ def run(tier: str, *, environ: Mapping[str, str] | None = None) -> int:
         return result
     except subprocess.TimeoutExpired:
         _terminate(process)
+        _write_interruption_receipt(
+            tier, state="timed_out", reason="bounded launcher timeout", timeout=timeout
+        )
         print(f"formal tier {tier} failed: bounded timeout after {timeout}s")
         return 124
+    except KeyboardInterrupt:
+        _terminate(process)
+        _write_interruption_receipt(
+            tier, state="interrupted", reason="launcher interruption", timeout=timeout
+        )
+        raise
+    finally:
+        if process.poll() is None:
+            _terminate(process)
 
 
 def main() -> int:
