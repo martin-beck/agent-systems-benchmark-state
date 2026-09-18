@@ -12,7 +12,7 @@
   "guest_disk_bytes": 68719476736,
   "network": "none",
   "pinned_inputs": {
-    "ar1307_commit": "ab485f767",
+    "ar1307_commit": "ab485f767fbddbd8adfc27b5120f3df0a045b762",
     "jdk_major": 17,
     "tlc_jar_sha256": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88"
   },
