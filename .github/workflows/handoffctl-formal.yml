@@ -15,6 +15,11 @@ name: handoffctl formal verification
       - "tests/test_handoffctl_vendor.py"
       - "tests/test_sqlite_storage.py"
       - "formal/handoffctl/**"
+      - "tools/tlc_runner.py"
+      - "tools/run_formal_tier.py"
+      - "tools/guest_seed.py"
+      - "tests/test_tlc_runner.py"
+      - "tests/test_formal_launcher.py"
       - ".github/workflows/handoffctl-formal.yml"
   pull_request:
     paths:
@@ -27,6 +32,11 @@ name: handoffctl formal verification
       - "tests/test_handoffctl_vendor.py"
       - "tests/test_sqlite_storage.py"
       - "formal/handoffctl/**"
+      - "tools/tlc_runner.py"
+      - "tools/run_formal_tier.py"
+      - "tools/guest_seed.py"
+      - "tests/test_tlc_runner.py"
+      - "tests/test_formal_launcher.py"
       - ".github/workflows/handoffctl-formal.yml"
 
 permissions:
@@ -43,7 +53,7 @@ jobs:
       github.event_name != 'pull_request' ||
       github.event.pull_request.head.repo.full_name == github.repository
     runs-on: [self-hosted, linux, x64, agent-systems-benchmark-state-ci]
-    timeout-minutes: 15
+    timeout-minutes: 720
 
     steps:
       - name: Check out source without credentials
@@ -67,8 +77,63 @@ jobs:
       - name: Install locked quality environment
         run: uv sync --locked --only-group quality
 
+      - name: Verify the provisioned runner user bus
+        shell: bash
+        run: |
+          set -euo pipefail
+          runner_uid="$(id -u)"
+          runtime_dir="/run/user/${runner_uid}"
+          bus_path="${runtime_dir}/bus"
+          manager_state="unavailable"
+          ready=0
+          for _attempt in {1..30}; do
+            if [[ -d "$runtime_dir" && -S "$bus_path" ]]; then
+              manager_state="$({
+                XDG_RUNTIME_DIR="$runtime_dir" \
+                  DBUS_SESSION_BUS_ADDRESS="unix:path=$bus_path" \
+                  systemctl --user is-system-running 2>/dev/null || true
+              })"
+              if [[ "$manager_state" == "running" || "$manager_state" == "degraded" ]] && \
+                XDG_RUNTIME_DIR="$runtime_dir" \
+                DBUS_SESSION_BUS_ADDRESS="unix:path=$bus_path" \
+                systemctl --user show-environment >/dev/null 2>&1; then
+                ready=1
+                break
+              fi
+            fi
+            sleep 1
+          done
+          if [[ "$ready" != 1 ]]; then
+            echo "::error::runner user manager/bus did not become ready (uid=${runner_uid}, state=${manager_state})"
+            echo "::error::Expected a lingering user manager with a private session bus at /run/user/<uid>/bus."
+            exit 1
+          fi
+          {
+            echo "XDG_RUNTIME_DIR=$runtime_dir"
+            echo "DBUS_SESSION_BUS_ADDRESS=unix:path=$bus_path"
+          } >> "$GITHUB_ENV"
+          XDG_RUNTIME_DIR="$runtime_dir" \
+            DBUS_SESSION_BUS_ADDRESS="unix:path=$bus_path" \
+            systemctl --user show-environment >/dev/null
+
+      - name: Admit the preloaded offline TLC artifact
+        shell: bash
+        run: |
+          set -euo pipefail
+          jar=/srv/data/projects/asb-state-tlc-data-f16d2cb41/tla2tools.jar
+          digest=936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88
+          if [[ ! -f "$jar" || -L "$jar" ]]; then
+            echo "::error::reviewed offline TLC artifact is missing or is a symlink: $jar"
+            exit 1
+          fi
+          printf '%s  %s\n' "$digest" "$jar" | sha256sum --check --strict
+          {
+            echo "TLC_JAR_PATH=$jar"
+            echo "TLC_JAR_SHA256=$digest"
+          } >> "$GITHUB_ENV"
+
       - name: Check exhaustive concurrent-state model
-        run: formal/handoffctl/verify.sh
+        run: uv run python tools/run_formal_tier.py --tier full-exhaustive
 
       - name: Check implementation refinement and fault behavior
         run: uv run python -m unittest discover -s tests -p 'test_*.py'
