@@ -1656,7 +1656,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1151](../tasks/AR-1151.md): Strict offline replay | root | Replay strictly without providers. | Await reviewed CLI consumer contract for cassette artifact resolution and runtime handoff; do not fabricate paths or authority. |
+| P0 | [AR-1151](../tasks/AR-1151.md): Strict offline replay | root | Replay strictly without providers. | Add and qualify complete seven-workload strict-replay campaign coverage and offline-default preflight through the control API; current cassette/service and single CLI authority paths are verified, but wizard campaign operations are not yet exposed. |
 | P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | codex-ar1307-metadata-repair-20260918 | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Run fresh exact-head CI on fb90e13f7, then inspect bounded TLC stdout diagnostics from the next formal run; do not qualify or merge until terminal green formal evidence. |
 
 ### Open (1)
