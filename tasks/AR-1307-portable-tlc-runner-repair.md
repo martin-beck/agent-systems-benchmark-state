@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 244,
+  "task_revision": 245,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T00:13:09+00:00",
+  "updated_at": "2026-09-18T00:13:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -802,3 +802,6 @@ and protected publication sequence.
 
 - 2026-09-18T00:13:09+00:00: Recorded command exit 0; command argv SHA-256
   5149a2d7424ac8c39d5fd7e60fc1598faab7174808ed7653845729de009f5dd1.
+
+- 2026-09-18T00:13:22+00:00: Recorded command exit 0; command argv SHA-256
+  33b9ac5b03b52c85ea1832b090a70e43ceaa7e6b1c3f0c2a97f76d902ab9e1b5.
