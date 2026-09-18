@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "checkpoint_commit": "df0e402f442468e43e06b7c1acb3c3667277fb75",
-  "claim_expires": "2026-09-18T16:30:24+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1304"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
-  "owner": "codex-ar1308-runner-provision-20260918",
+  "owner": "",
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 254,
+  "task_revision": 255,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T16:20:33+00:00",
+  "updated_at": "2026-09-18T16:20:43+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -707,3 +707,10 @@ source code or treating a capacity failure as a model result.
   guest therefore powers off before attestation. AR-1293 signed commits d57b495b9, 92238e735, and
   9b9491d08 document the canonical private fixed-JDK/security-file repair, but are not merged into
   AR-1308. No qualification claim.
+
+- 2026-09-18T16:20:43+00:00: Blocked on disposable runner bootstrap fixture mismatch. Serial boot
+  reached the mounted data but failed before any attestation because the seed/JDK security links
+  require /mnt/asb-data/etc/java-17-openjdk while the prepared fixture has etc-java-17-openjdk. The
+  merged AR-1308 contract has no canonical fix; AR-1293 signed repairs d57b495b9/92238e735/9b9491d08
+  are the reference. Rebuild the reviewed fixture or apply an approved equivalent, verify
+  fsck/hash/serial bootstrap, then preflight; do not claim qualification.
