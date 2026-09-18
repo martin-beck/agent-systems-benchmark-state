@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Regenerate fresh stage10 seed from PR head ca43179ea (do not reuse stale stage8 seed), create unique metadata and use verified stage9 raw layout, run one QEMU portable-smoke, and validate checkout-bound attestation.",
+  "next_action": "Build fresh stage10 data image from checkout ca43179ea (not stage9), verify debugfs root state/jvm/tla2tools and source HEAD ca43179ea, regenerate unique seed, rerun portable-smoke, extract/validate attestation commit equals ca43179ea.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 307,
+  "task_revision": 308,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T00:33:33+00:00",
+  "updated_at": "2026-09-18T00:33:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -993,3 +993,9 @@ and protected publication sequence.
   1169e1946c609adc354e6c7de31e5ea81f1896aa624a2ab01e3cba9ff41fb590.
 
 - 2026-09-18T00:33:33+00:00: Heartbeat by codex-ar1307-runner-repair-20260918.
+
+- 2026-09-18T00:33:45+00:00: CA seed run itself passed: PORTABLE_SMOKE_RC=0 and clean shutdown;
+  extracted JSON attestation was schema-valid/status success but reported source commit 36c93fa1f
+  because stage9 data disk contained stale checkout. Therefore this is explicitly non-qualifying
+  stale-input evidence. Do not advance tiers. Rebuild the data image from ca43179ea and enforce
+  attestation source-commit equality before acceptance.
