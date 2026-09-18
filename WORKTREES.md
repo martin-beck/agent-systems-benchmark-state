@@ -94,7 +94,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1292-tla-provenance` | `repair/ar-1292-tla-provenance` | `c1b1860786e8` | 0 | behind 35, ahead 0 |
 | `agent-systems-benchmark-ar-1300-runtime-cassette-dispatch-seam` | `feature/ar-1300-runtime-cassette-dispatch-seam` | `019038378726` | 0 | behind 33, ahead 0 |
 | `agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix` | `feature/ar-1301-replay-lifecycle-fault-matrix` | `dd5bfb8dfea0` | 0 | behind 10, ahead 0 |
-| `agent-systems-benchmark-ar-1301-runtime-fault-authority` | `fix/ar-1301-runtime-fault-authority` | `b1dcd74cdcf2` | 0 | behind 0, ahead 2 |
+| `agent-systems-benchmark-ar-1301-runtime-fault-authority` | `fix/ar-1301-runtime-fault-authority` | `f55ad60413d2` | 0 | behind 0, ahead 3 |
 | `agent-systems-benchmark-ar-1303-hosted-platform-diagnostics` | `feature/ar-1303-hosted-platform-diagnostics` | `d85889d5066c` | 0 | behind 25, ahead 1 |
 | `agent-systems-benchmark-ar-1306-authenticated-fault-matrix-qualification` | `feature/ar-1306-authenticated-fault-matrix-qualification` | `af44d473a3ba` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 568, ahead 0 |
