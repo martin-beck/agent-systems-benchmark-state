@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Complete missing evidence for the pinned MockAgents executable qualification.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Complete MockAgents executable qualification evidence",
-  "updated_at": "2026-09-18T21:38:04+00:00",
+  "updated_at": "2026-09-18T21:38:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1249"
 }
 ---
@@ -153,3 +153,6 @@ network denial, privacy, signature, DCO, and exact-tree gates.
 
 - 2026-09-18T21:38:04+00:00: Recorded command exit 1; command argv SHA-256
   b1a21886da3caaa87fe08edfc0b3535be2a3912525a8febf0b5540cb47b43e31.
+
+- 2026-09-18T21:38:44+00:00: Recorded command exit 1; command argv SHA-256
+  f24687d16307946f244f378aaa9ff0c363e137d8b03bca550f0da1e6d770970c.
