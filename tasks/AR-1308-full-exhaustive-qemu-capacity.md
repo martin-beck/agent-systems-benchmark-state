@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 306,
+  "task_revision": 307,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T16:58:14+00:00",
+  "updated_at": "2026-09-18T16:59:47+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -881,3 +881,6 @@ source code or treating a capacity failure as a model result.
 - 2026-09-18T16:58:14+00:00: Released blocked: disposable asb-user overlay preflight passed, but
   QEMU networkless boot stalled indefinitely at systemd-networkd-wait-online before cloud-init/TLC.
   Next action is to mask that wait-online unit in the reviewed disposable overlay and retry once.
+
+- 2026-09-18T16:59:47+00:00: Resuming bounded guest bootstrap repair: mask networkd wait-online in
+  disposable overlay, then rerun preflight and exactly one networkless QEMU attempt.
