@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 697,
+  "task_revision": 698,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T11:06:35+00:00",
+  "updated_at": "2026-09-18T11:07:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1962,3 +1962,6 @@ and protected publication sequence.
   offheap, reached ~33.145M generated, ~27.489M distinct states, and ~10.805M queued states, then
   exited 1. No invariant, OOM, or explicit termination text was emitted. DCO/vendor/strict CI is
   green; formal evidence remains failed. Do not widen limits or claim success.
+
+- 2026-09-18T11:07:20+00:00: Recorded command exit 0; command argv SHA-256
+  ca3bf4b5e4c41b9198930ceec09c95237dd912bde652a01c535e1dfa690d6de4.
