@@ -1672,7 +1672,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | codex-ar1293-audit-20260918 | Repair the state-repository TLA admission runner and truthful worktree metadata. | Blocked on AR-1307 runner merge and handoff. Prior full VM was interrupted without success or attestation; after merge, rebuild exact fa57625d9 image/seed and rerun independently reviewed gates. |
+| P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | codex-ar1293-audit-20260918 | Repair the state-repository TLA admission runner and truthful worktree metadata. | Blocked on AR-1307 qualification and AR-1308 capacity/input repair: remote AR-1307 is ab485f767 while task requires 969eef058; AR-1308 preflight failed closed on 4.9 GiB approved-root free versus 16 GiB minimum and missing lock/JDK/TLC at runtime root. Reopen only with exact current input bundle and passing preflight; do not run formal TLC locally. |
 
 ### Blocked (49)
 
