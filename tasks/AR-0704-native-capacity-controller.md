@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 214,
+  "task_revision": 215,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-18T22:22:45+00:00",
+  "updated_at": "2026-09-18T22:22:59+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -718,3 +718,6 @@ must not block this AR or its dependents.
   1d8901870ec3290fc544e186290f19ccc3575fa9600d595ead40b49933491249.
 
 - 2026-09-18T22:22:45+00:00: Heartbeat by ar0704_capacity_reclaim.
+
+- 2026-09-18T22:22:59+00:00: Recorded command exit 0; command argv SHA-256
+  7d6ca61a3a824cdc5de0615b25848fd1890d121e35e1d9cafeb3466fb4394468.
