@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1307](tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Repair and review the handoffctl/timeout supervisor so a bounded full-tier subprocess cannot disappear or orphan QEMU; then rebuild a pristine exact-head runner and rerun full-exhaustive. Preserve SUBPROCESS_INTERRUPTED evidence; do not merge until terminal attestation and exact-head CI are green. | codex-ar1307-runner-repair-20260918 |
+| P0 | [AR-1307](tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Supervision repair adfb775a0 is pushed to PR #24 and focused tests pass 31/31. Obtain independent review and exact-head CI. Only after green review/CI, rebuild pristine full fixture and rerun full-exhaustive with terminal attestation; do not merge before that. | codex-ar1307-runner-repair-20260918 |
 
 ## Open
 

@@ -1656,7 +1656,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | codex-ar1307-runner-repair-20260918 | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Repair and review the handoffctl/timeout supervisor so a bounded full-tier subprocess cannot disappear or orphan QEMU; then rebuild a pristine exact-head runner and rerun full-exhaustive. Preserve SUBPROCESS_INTERRUPTED evidence; do not merge until terminal attestation and exact-head CI are green. |
+| P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | codex-ar1307-runner-repair-20260918 | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Supervision repair adfb775a0 is pushed to PR #24 and focused tests pass 31/31. Obtain independent review and exact-head CI. Only after green review/CI, rebuild pristine full fixture and rerun full-exhaustive with terminal attestation; do not merge before that. |
 
 ### Open (1)
 
@@ -1737,3 +1737,4 @@ flowchart LR
 | P0 | [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md): Establish the professional TUI visual system | Unclaimed | Create a responsive, accessible and professional visual system for every TUI screen. | Create the standalone Ratatui visual system after the application shell is integrated. |
 | P0 | [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md): Add the standalone TUI configuration center | Unclaimed | Add a searchable configuration menu for frontend preferences and benchmark defaults. | Implement the non-secret configuration center foundation after the visual system and ASB wizard control API are stable; AR-1170 owns provider, authentication and default integration. |
 | P0 | [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md): Build recent-runs, report and comparison workspaces | Unclaimed | Add searchable recent runs, report inspection and evidence-qualified comparison workspaces. | Implement report and comparison screens after recording workflows publish stable live and strict-replay source labels. |
+| P0 | [AR-1160](../tasks/AR-1160.md): Wizard control API | Unclaimed | Expose wizard operations. | Read the plan. |

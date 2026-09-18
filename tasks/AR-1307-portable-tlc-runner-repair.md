@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Repair and review the handoffctl/timeout supervisor so a bounded full-tier subprocess cannot disappear or orphan QEMU; then rebuild a pristine exact-head runner and rerun full-exhaustive. Preserve SUBPROCESS_INTERRUPTED evidence; do not merge until terminal attestation and exact-head CI are green.",
+  "next_action": "Supervision repair adfb775a0 is pushed to PR #24 and focused tests pass 31/31. Obtain independent review and exact-head CI. Only after green review/CI, rebuild pristine full fixture and rerun full-exhaustive with terminal attestation; do not merge before that.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 320,
+  "task_revision": 321,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T02:30:10+00:00",
+  "updated_at": "2026-09-18T02:30:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -816,3 +816,9 @@ and protected publication sequence.
 - 2026-09-18T02:28:55+00:00: Heartbeat by codex-ar1307-runner-repair-20260918.
 
 - 2026-09-18T02:30:10+00:00: Heartbeat by codex-ar1307-runner-repair-20260918.
+
+- 2026-09-18T02:30:47+00:00: Canonical worker evidence now includes signed+DCO supervision repair
+  adfb775a0: run_formal_tier cleans process groups on timeout/interruption/finalization and writes
+  bounded private non-success interruption receipts; no success attestation is emitted. Stage17
+  remains SUBPROCESS_INTERRUPTED with no full attestation. Worker state branch is pushed; PR branch
+  advanced from 01f6e000b to adfb775a0.
