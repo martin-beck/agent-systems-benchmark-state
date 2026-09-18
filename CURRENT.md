@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Control genuine native platform capacity lifecycle. | PR #119 remains exact head e2e3574 on base 78a8e9f; wait Emulated aarch64 35401437280, Repository quality 35401437247, and Rust verification 35401437295 to terminal green, then independent review and merge/post-merge verification. | - |
+| P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Control genuine native platform capacity lifecycle. | PR #119 remains exact head e2e3574 on base 78a8e9f; wait Emulated aarch64 35401437280, Repository quality 35401437247, and Rust verification 35401437295 to terminal green, then independent review and merge/post-merge verification. | coordinator-ar0704-routing |
 
 ## Blocked
 
