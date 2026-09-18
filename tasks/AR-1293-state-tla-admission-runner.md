@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1293-state-tla-admission",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-18T21:34:05+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1293",
   "next_action": "Blocked on AR-1307 qualification and AR-1308 capacity/input repair: remote AR-1307 is ab485f767 while task requires 969eef058; AR-1308 preflight failed closed on 4.9 GiB approved-root free versus 16 GiB minimum and missing lock/JDK/TLC at runtime root. Reopen only with exact current input bundle and passing preflight; do not run formal TLC locally.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "f1931686c9297f5661446bf1871870b659d69684",
-  "owner": "codex-ar1293-audit-20260918",
+  "owner": "",
   "plan": "../plans/AR-1293.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 745,
+  "task_revision": 746,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-18T21:04:20+00:00",
+  "updated_at": "2026-09-18T21:04:30+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -2230,3 +2230,10 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   pinned JDK, and TLC JAR. Receipt preserves x86_64 QEMU 8.2.2, network none/no host mounts, 8
   vCPU/16 GiB guest swap and 3G/3G/2-worker/2-core/8G/7200s contract. No safe in-scope preparation
   or formal execution performed; unrelated processes and caches untouched.
+
+- 2026-09-18T21:04:30+00:00: Released ownerless after evidence-only audit. AR-1307 remains
+  unqualified: required runner head is 969eef058 but remote branch is ab485f767 and prior formal run
+  35342513872 failed Java OOM under unchanged 3G/3G with no attestation. AR-1308 remains blocked:
+  latest preflight failed closed on stale input ab485f767, ~4.9 GiB approved-root free versus 16 GiB
+  minimum, and missing lock/JDK/TLC runtime inputs. No safe local preparation or formal execution is
+  authorized; resume only after exact current input bundle and passing isolated preflight.
