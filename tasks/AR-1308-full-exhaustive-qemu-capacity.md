@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-18T15:34:46+00:00",
+  "claim_expires": "2026-09-18T15:54:46+00:00",
   "depends_on": [
     "AR-1304"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 129,
+  "task_revision": 130,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T15:21:12+00:00",
+  "updated_at": "2026-09-18T15:24:46+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -371,3 +371,5 @@ source code or treating a capacity failure as a model result.
 
 - 2026-09-18T15:21:12+00:00: Recorded command exit 0; command argv SHA-256
   3b135d58667e42661cba4d48445e2245849d7dde1eb024308dcf77fd3822a39e.
+
+- 2026-09-18T15:24:46+00:00: Heartbeat by codex-ar1308-qemu-capacity-20260918.
