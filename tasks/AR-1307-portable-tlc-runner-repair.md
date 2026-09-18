@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Full-exhaustive launch reached transient RC 0 but was interrupted by the external 180-second QEMU bound with no attestation. Rebuild a fresh full-tier overlay/seed and rerun with an explicit bounded window compatible with the 7200-second tier contract; require terminal FULL_EXHAUSTIVE_RC=0, evidence validation, exact commit, and clean poweroff before merge.",
+  "next_action": "Stage16 full-exhaustive is actively running under the 1800-second outer bound; currently transient RC=0 with no terminal attestation yet. Keep lease/monitor; accept only FULL_EXHAUSTIVE_RC=0, evidence validation, exact commit 01f6e000b, and clean poweroff, otherwise record bounded interruption.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 428,
+  "task_revision": 429,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T01:21:19+00:00",
+  "updated_at": "2026-09-18T01:26:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1373,3 +1373,8 @@ and protected publication sequence.
   fd8499ed204ce52ae6e917a4a9f144a94d8b9768ad20909da965c28f23ababac.
 
 - 2026-09-18T01:21:19+00:00: Heartbeat by codex-ar1307-runner-repair-20260918.
+
+- 2026-09-18T01:26:10+00:00: Portable repeat and pr-publication are green with exact-head
+  attestations. Stage16 is a fresh full-tier VM: 32GiB RAM, 8 vCPU, no NIC/host mounts, pinned
+  JDK/TLA, unique valid NoCloud metadata, and matching data UUID. At latest checkpoint QEMU had been
+  CPU-active for about 6 minutes after FULL_EXHAUSTIVE_TRANSIENT_RC=0; no completion claim.
