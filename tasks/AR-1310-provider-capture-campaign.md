@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1310.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Runtime-owned provider capture and recording campaign qualification.",
-  "task_revision": 107,
+  "task_revision": 108,
   "title": "Runtime-owned provider capture and recording campaign qualification",
-  "updated_at": "2026-09-18T21:27:23+00:00",
+  "updated_at": "2026-09-18T22:05:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1310-provider-capture-campaign"
 }
 ---
@@ -391,3 +391,8 @@ independently so its promotion is not falsely implied by AR-1160 completion.
 
 - 2026-09-18T21:27:23+00:00: Released ownerless after recording distinct DCO/policy and
   hosted-coverage blockers.
+
+- 2026-09-18T22:05:29+00:00: Audit confirms no existing AR can own historical DCO defect
+  909078ced21f36e5a72590c9decf41ac56452212: AR-1246/1247 are completed protected-main admission
+  fixes and do not authorize history repair. Keep this follow-up blocked pending a separately
+  authorized merge-integrity AR.
