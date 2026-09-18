@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Rebuild data image only after verifying staged /jvm and pinned JAR are present; use fresh stage4 raw, unique seed, and fresh overlay. Confirm debugfs root lists state/jvm/tla2tools.jar before launching portable-smoke.",
+  "next_action": "Refresh stage from PR head 24e24690b, rebuild fresh data/seed/overlay, rerun portable-smoke to capture first+last TLC stderr now that effective tmp path is proven. Classify JFR fixture failure before any higher tier or merge.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 212,
+  "task_revision": 213,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T00:03:29+00:00",
+  "updated_at": "2026-09-18T00:03:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -700,3 +700,10 @@ and protected publication sequence.
 
 - 2026-09-18T00:03:29+00:00: Recorded command exit 0; command argv SHA-256
   adbfd17bd5a46378d72f07219f1688bced64b1502623c7575151571fe8da7dcf.
+
+- 2026-09-18T00:03:39+00:00: Stage4 verified ext4 root layout state/jvm/tla2tools.jar and booted
+  isolated 32 GiB no-NIC VM. Preflight proved /mnt/asb-data/tmp and /tmp both mode 1777, Java
+  17.0.20 java.io.tmpdir=/mnt/asb-data/tmp, and transient D-Bus RC=0. TLC nevertheless failed closed
+  at JFR startup; prior bounded output lost the leading exception. Added signed commit 629697197 to
+  preserve first+last 1000-byte diagnostic excerpts; pushed PR branch exact head 24e24690b. No
+  attestation accepted and no higher tiers started.
