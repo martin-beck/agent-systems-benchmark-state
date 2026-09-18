@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Stage16 full-exhaustive exceeded the 1800-second bound with only transient RC=0 and no full attestation; rebuild a pristine data image because interrupted QEMU left the qualification image filesystem inconsistent, then investigate a truthful bounded full-tier fixture/runtime before rerun. Do not merge or claim completion.",
+  "next_action": "Rebuild pristine stage17 data image and fresh full-tier VM from exact 01f6e000b. Because full profile declares a 7200-second TLC bound, use a finite 7800-second outer bound; require terminal FULL_EXHAUSTIVE_RC=0, schema-valid exact-head attestation, and clean poweroff.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 435,
+  "task_revision": 436,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T01:49:15+00:00",
+  "updated_at": "2026-09-18T01:49:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1397,3 +1397,9 @@ and protected publication sequence.
   FULL_EXHAUSTIVE_RC, no evidence validator, no clean poweroff. Post-run debugfs reports a block
   bitmap checksum mismatch on the mutable data image, so discard/rebuild that fixture; prior
   portable/pr-publication evidence remains separately recorded but this full image is not evidence.
+
+- 2026-09-18T01:49:54+00:00: Stage16 was interrupted at 1800s, which is below the full profile
+  TLC_TIMEOUT_SECONDS=7200, so it could not truthfully reach the tier terminal gate. The interrupted
+  mutable data image also failed debugfs checksum validation and must be discarded. No gate is
+  weakened: stage17 will use a fresh fixed-UUID image, unique metadata, isolated
+  no-NIC/no-host-mount QEMU, and 7800s outer bound.
