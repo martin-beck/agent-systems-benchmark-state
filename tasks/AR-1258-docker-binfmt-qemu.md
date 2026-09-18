@@ -2,22 +2,22 @@
 {
   "branch": "feature/docker-binfmt-qemu-capability",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-18T19:35:36+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1258",
   "next_action": "Inspect Docker/binfmt/QEMU capability and approved privilege workflow; add bounded verification and rollback-safe checks.",
   "observed_branch": "feature/docker-binfmt-qemu-capability",
   "observed_dirty": 0,
   "observed_head": "a0befc0ff247a42b8d796af161b58b1011de8377",
-  "owner": "codex-ar1258-capability-audit-20260918",
+  "owner": "",
   "plan": "../plans/AR-1258.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provision and verify Docker binfmt/QEMU for multiarch qualification.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Provision Docker binfmt/QEMU capability",
-  "updated_at": "2026-09-18T19:05:58+00:00",
+  "updated_at": "2026-09-18T19:06:51+00:00",
   "worktree_key": "agent-systems-benchmark-docker-binfmt-qemu"
 }
 ---
@@ -180,3 +180,15 @@ Provide the independent Docker binfmt/QEMU capability required by multiarch qual
 
 - 2026-09-18T19:05:58+00:00: Recorded command exit 255; command argv SHA-256
   6e2e220b931070fdca5d5a5d581e2fea31575ed7b80c815b9f1b509888a6db76.
+
+- 2026-09-18T19:06:51+00:00: Read-only re-audit 2026-09-18: Docker 29.7.2/buildx 0.36.1 is available
+  through approved sudo and public-ci-62f0b126a9ad8b70 is still running. qemu-aarch64 remains
+  enabled with interpreter /usr/libexec/qemu-binfmt/aarch64-binfmt-P and flags PO, missing F.
+  Immutable alpine arm64 digest
+  sha256:28bd5fe8b56d1bd048e5babf5b10710ebe0bae67db86916198a6eec434943f8b still fails closed under
+  --network none with exec /bin/true: no such file or directory; no Docker arm64 execution
+  capability is claimed. The recorded exit 255 at 19:05:58Z is the handoffctl post-command reconcile
+  failure caused by stale WORKTREES.md, not a successful capability result and not a host mutation.
+  No binfmt unregister/restart or persistent host change was made. Remains blocked pending approved
+  maintenance window, rollback-safe F registration repair, and successful immutable pinned arm64
+  smoke test.
