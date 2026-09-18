@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Rebuild stage9 data image sequentially from complete stage8 directory; verify debugfs root has state,jvm,tla2tools.jar before one fresh QEMU portable-smoke. Do not overlap copy/mke2fs/image commands.",
+  "next_action": "Regenerate fresh stage10 seed from PR head ca43179ea (do not reuse stale stage8 seed), create unique metadata and use verified stage9 raw layout, run one QEMU portable-smoke, and validate checkout-bound attestation.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 296,
+  "task_revision": 297,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T00:28:41+00:00",
+  "updated_at": "2026-09-18T00:29:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -959,3 +959,9 @@ and protected publication sequence.
 
 - 2026-09-18T00:28:41+00:00: Recorded command exit 0; command argv SHA-256
   adbfd17bd5a46378d72f07219f1688bced64b1502623c7575151571fe8da7dcf.
+
+- 2026-09-18T00:29:20+00:00: Stage9 QEMU invocation accidentally used stale stage8 seed and
+  therefore reproduced the obsolete /srv/data/projects evidence path; no result accepted. Corrected
+  source is now signed commit 32f44345d and pushed; PR exact remote head is ca43179ea. Focused tests
+  passed 25/25 before correction. Next run must regenerate seed from ca43179ea and verify
+  attestation under /mnt/asb-data/state/evidence.
