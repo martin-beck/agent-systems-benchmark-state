@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1307-portable-tlc-runner-repair",
   "checkpoint_commit": "beafa965e61b0f09d9ed5f10ffcd621b0cf3e5b2",
-  "claim_expires": "2026-09-18T09:30:28+00:00",
+  "claim_expires": "2026-09-18T11:23:26+00:00",
   "depends_on": [
     "AR-1302"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 690,
+  "task_revision": 691,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T08:50:42+00:00",
+  "updated_at": "2026-09-18T09:23:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1932,3 +1932,5 @@ and protected publication sequence.
   stderr detail. Signed head fb90e13f7 now captures bounded sanitized TLC stdout plus stderr on
   nonzero exit, preserving fail-closed behavior and enabling diagnosis on the next required formal
   run. Focused suite: 69 passed, 6 subtests.
+
+- 2026-09-18T09:23:26+00:00: Heartbeat by codex-ar1307-metadata-repair-20260918.
