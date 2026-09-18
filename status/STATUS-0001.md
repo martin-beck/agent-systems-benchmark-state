@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**336 ARs tracked** across 7 active status categories.
+**337 ARs tracked** across 7 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 47 |
-| **Planned** | Defined work awaiting promotion or dependencies | 57 |
+| **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 217 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -405,6 +405,7 @@ flowchart LR
         AR_1306["AR-1306 - Done"]:::status_done
         AR_1307["AR-1307 - Blocked"]:::status_blocked
         AR_1308["AR-1308 - Blocked"]:::status_blocked
+        AR_1309["AR-1309 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1302,6 +1303,8 @@ flowchart LR
     AR_1302 --> AR_1305
     AR_1302 --> AR_1307
     AR_1304 --> AR_1308
+    AR_1307 --> AR_1309
+    AR_1308 --> AR_1309
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -1650,8 +1653,9 @@ flowchart LR
 | [AR-1304](../tasks/AR-1304-required-tier-qemu-runner.md) | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md) | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md) |
 | [AR-1305](../tasks/AR-1305-image-native-user-session.md) | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md) | None |
 | [AR-1306](../tasks/AR-1306-authenticated-fault-matrix-qualification.md) | [AR-1287](../tasks/AR-1287-delegated-sandbox-runner.md), [AR-1300](../tasks/AR-1300-runtime-cassette-dispatch-seam.md) | None |
-| [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md) | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md) | None |
-| [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md) | [AR-1304](../tasks/AR-1304-required-tier-qemu-runner.md) | None |
+| [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md) | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md) | [AR-1309](../tasks/AR-1309-reviewed-capacity-or-model-reduction.md) |
+| [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md) | [AR-1304](../tasks/AR-1304-required-tier-qemu-runner.md) | [AR-1309](../tasks/AR-1309-reviewed-capacity-or-model-reduction.md) |
+| [AR-1309](../tasks/AR-1309-reviewed-capacity-or-model-reduction.md) | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md), [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md) | None |
 
 ## Complete AR inventory
 
@@ -1720,7 +1724,7 @@ flowchart LR
 | P1 | [AR-1258](../tasks/AR-1258-docker-binfmt-qemu.md): Provision Docker binfmt/QEMU capability | Unclaimed | Provision and verify Docker binfmt/QEMU for multiarch qualification. | Obtain an approved maintenance window with zero active Docker workloads; snapshot /usr/lib/binfmt.d/qemu-aarch64.conf and current handler state, apply rollback-safe F-capable qemu-aarch64 registration without weakening gates, then rerun the pinned arm64 alpine /bin/true smoke test with network disabled and record interpreter, digest, license, provenance, timeout, and rollback evidence. Do not restart systemd-binfmt or unregister handlers while public-ci-62f0b126a9ad8b70 is running. |
 | P1 | [AR-1303](../tasks/AR-1303-hosted-platform-diagnostics.md): Privacy-safe hosted platform failure diagnostics | Unclaimed | Add privacy-safe fixed diagnostics for hosted platform evidence failures. | PR #220 exact head d85889d is blocked only by unrelated hosted formal-runner ETXTBSY failures. Repair/retry CI infrastructure; then require fresh all-green exact-head CI before merge. Do not alter AR-1303 gates or product behavior. |
 
-### Planned (57)
+### Planned (58)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1738,5 +1742,3 @@ flowchart LR
 | P0 | [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md): Establish the professional TUI visual system | Unclaimed | Create a responsive, accessible and professional visual system for every TUI screen. | Create the standalone Ratatui visual system after the application shell is integrated. |
 | P0 | [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md): Add the standalone TUI configuration center | Unclaimed | Add a searchable configuration menu for frontend preferences and benchmark defaults. | Implement the non-secret configuration center foundation after the visual system and ASB wizard control API are stable; AR-1170 owns provider, authentication and default integration. |
 | P0 | [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md): Build recent-runs, report and comparison workspaces | Unclaimed | Add searchable recent runs, report inspection and evidence-qualified comparison workspaces. | Implement report and comparison screens after recording workflows publish stable live and strict-replay source labels. |
-| P0 | [AR-1170](../tasks/AR-1170.md): Standalone TUI wizard | Unclaimed | Guide TUI setup through analysis. | Read the plan. |
-| P0 | [AR-1180](../tasks/AR-1180.md): Cross-project wizard qualification | Unclaimed | Qualify the complete wizard. | Read the plan. |
