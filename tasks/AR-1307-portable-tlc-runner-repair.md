@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Rebuild stage12 data image with the seed DATA_UUID constant, verify blkid/debugfs and exact embedded HEAD 01f6e000b, then rerun one fresh portable-smoke.",
+  "next_action": "Regenerate stage12 metadata with real newline delimiters (not literal backslash-n), rebuild fresh seed with unique instance ID, rerun one QEMU portable-smoke, and validate attestation commit 01f6e000b.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 388,
+  "task_revision": 389,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T01:02:45+00:00",
+  "updated_at": "2026-09-18T01:03:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1244,3 +1244,9 @@ and protected publication sequence.
 
 - 2026-09-18T01:02:45+00:00: Recorded command exit 0; command argv SHA-256
   84a12fd8cb6508997bc0133c35ed46435ad8aff86901d5e81dfc52c5ed6f835b.
+
+- 2026-09-18T01:03:18+00:00: Stage12 image UUID was corrected and verified, but QEMU still skipped
+  all runcmd actions and hung at login. Seed ISO inspection found metadata contained literal
+  backslash-n characters, so cloud-init did not receive distinct instance-id/local-hostname fields.
+  Classified as seed-generation infrastructure failure; stale QEMU was terminated after timeout
+  leak.
