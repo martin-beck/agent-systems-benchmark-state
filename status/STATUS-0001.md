@@ -11,12 +11,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 47 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
-| **Done** | Accepted, integrated, and durably verified | 215 |
+| **Done** | Accepted, integrated, and durably verified | 216 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 10 |
 
@@ -379,7 +379,7 @@ flowchart LR
         AR_1283["AR-1283 - Blocked"]:::status_blocked
         AR_1284["AR-1284 - Blocked"]:::status_blocked
         AR_1285["AR-1285 - Done"]:::status_done
-        AR_1286["AR-1286 - In progress"]:::status_in_progress
+        AR_1286["AR-1286 - Done"]:::status_done
         AR_1287["AR-1287 - Done"]:::status_done
         AR_1288["AR-1288 - Done"]:::status_done
         AR_1289["AR-1289 - Done"]:::status_done
@@ -1652,11 +1652,10 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md): Supervised strict-replay cassette lifecycle | root | Execute strict-replay cassettes through the runtime-owned supervised lifecycle. | Await terminal post-merge workflows for protected main 2066e323; then verify exact merge/policy/evidence and close lifecycle acceptance. |
 | P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | codex-ar1307-metadata-repair-20260918 | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Run fresh exact-head CI on fb90e13f7, then inspect bounded TLC stdout diagnostics from the next formal run; do not qualify or merge until terminal green formal evidence. |
 
 ### Open (2)
@@ -1741,3 +1740,4 @@ flowchart LR
 | P0 | [AR-1180](../tasks/AR-1180.md): Cross-project wizard qualification | Unclaimed | Qualify the complete wizard. | Read the plan. |
 | P0 | [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md): Authenticated TUI install router | Unclaimed | Expose an authenticated renderer-neutral ASB router for asb tui install and lifecycle operations. | Promote only after dependencies are independently complete; implement the renderer-neutral authenticated CLI/control route and full integration tests. |
 | P0 | [AR-1211](../tasks/AR-1211-initial-setup-first-agent.md): Initial setup and first agent connection tutorial | Unclaimed | Teach first-time users to initialize ASB and add the first agent connection. | Implement the syntax-checked tutorial for ASB initialization, first-agent registration, and agent connection setup. |
+| P0 | [AR-1212](../tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Unclaimed | Teach users to test configured-agent benchmark eligibility without running an agent. | Implement the offline tutorial for checking agent benchmark readiness under the current configuration. |

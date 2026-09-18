@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| P0 | [AR-1212](../tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Unclaimed | Teach users to test configured-agent benchmark eligibility without running an agent. | Implement the offline tutorial for checking agent benchmark readiness under the current configuration. |
 | P0 | [AR-1213](../tasks/AR-1213-benchmark-and-shared-config.md): Benchmark run and shared-agent configuration tutorials | Unclaimed | Teach benchmark execution and extending agents with one shared configuration. | Implement syntax-checked tutorials for one benchmark run and atomic shared configuration across selected agents. |
 | P0 | [AR-1214](../tasks/AR-1214-record-replay.md): LLM response record/replay tutorial | Unclaimed | Teach privacy-safe LLM response recording and strict offline replay. | Implement the syntax-checked record/replay tutorial with synthetic cassette fixtures and no-network CI. |
 | P0 | [AR-1215](../tasks/AR-1215-result-comparison.md): Multi-agent result comparison tutorial | Unclaimed | Teach conservative comparison of multiple agents from the same benchmark. | Implement the syntax-checked tutorial for comparing two or more agents on one benchmark definition. |
@@ -46,7 +45,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (215)
+### Done (216)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -132,6 +131,7 @@
 | P0 | [AR-1264](../tasks/AR-1264-pr205-merge-integrity.md): Recover signed integration after PR #205 | Unclaimed | Recover signed protected-main integration after PR #205. | Complete: signed main 69e8b064 verified exact parents/tree/DCO; all seven post-merge workflows SUCCESS. Preserve AR-1263 traceability and recovery evidence. |
 | P0 | [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md): Authenticated replay transport foundation | Unclaimed | Land the authenticated runtime-to-CLI replay transport foundation. | Coverage repaired at signed head b1fb837: asb-core replay_transport 98.24&#37; lines and 97.53&#37; regions, above unchanged 95&#37; floor; focused core 4/4 and runtime 6/6 pass. Fmt, workspace locked tests, and clippy pass; push exact head and await fresh PR #208 checks. |
 | P0 | [AR-1285](../tasks/AR-1285-runtime-launch-factory.md): Runtime-owned strict-replay launch factory | Unclaimed | Provide a runtime-owned launch factory for authenticated strict-replay CLI execution. | Merged as signed local protected merge 2fd9055 (parents f9ddf7e and 0f876c7). Monitor exact-main post-merge workflows 35173271478/71480/71491/71497/71506/71516 to terminal; release done only after all success and verify main signature/DCO. |
+| P0 | [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md): Supervised strict-replay cassette lifecycle | Unclaimed | Execute strict-replay cassettes through the runtime-owned supervised lifecycle. | Await terminal post-merge workflows for protected main 2066e323; then verify exact merge/policy/evidence and close lifecycle acceptance. |
 | P0 | [AR-1287](../tasks/AR-1287-delegated-sandbox-runner.md): Delegated sandbox runner capability | Unclaimed | Provide a delegated runner for real strict-replay child lifecycle qualification. | No further action; protected merge 7ea3e001 exact-main workflows 35202285902/85873/85881/85905/85917/85930/85955 all green, and KVM guest passed 51 normal plus the qualified backend test. AR-1301 is promoted and active. |
 | P0 | [AR-1289](../tasks/AR-1289-formal-lock-gate.md): Repair formal lock gate | Unclaimed | Repair the stale formal Cargo.lock required by hosted exact-head gates. | Policy check 35177646319 failed only on pre-existing Gemini timing assertion; exact targeted test passed 3/3 locally. Failed hosted job rerun requested once; monitor rerun plus remaining required checks, merge only if all terminal-success. |
 | P0 | [AR-1290](../tasks/AR-1290-dependabot-dco-boundary-recovery.md): Dependabot DCO boundary recovery | Unclaimed | Recover protected-main DCO assurance for the immutable Dependabot serde commit without weakening broad policy. | Monitor exact-main post-merge workflows for c1b1860786e844adb69b8f74e39af290592a89c8 to terminal SUCCESS; verify protected main signature/DCO/tree and release AR-1290 done. |

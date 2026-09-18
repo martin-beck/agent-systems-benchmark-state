@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1286-supervised-replay-lifecycle",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-18T09:48:29+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1282",
     "AR-1285",
@@ -15,15 +15,15 @@
   "observed_branch": "feature/ar-1286-supervised-replay-lifecycle",
   "observed_dirty": 0,
   "observed_head": "eaf7fcbf42aee720a208d9d356a163d42ce30fab",
-  "owner": "root",
+  "owner": "",
   "plan": "../plans/AR-1286.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Execute strict-replay cassettes through the runtime-owned supervised lifecycle.",
-  "task_revision": 97,
+  "task_revision": 98,
   "title": "Supervised strict-replay cassette lifecycle",
-  "updated_at": "2026-09-18T09:18:32+00:00",
+  "updated_at": "2026-09-18T09:24:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1286-supervised-replay-lifecycle"
 }
 ---
@@ -320,3 +320,9 @@ do not touch or claim asb-tui behavior.
   repair PR #223 merged at 2066e323. Approved VM passed two full 15/15 native runs plus three
   repeated terminal fault-matrix runs on exact PR binaries. All PR #223 checks passed; protected
   post-merge workflows are still running.
+
+- 2026-09-18T09:24:55+00:00: Completed and verified. PR #215 exact reviewed head f17fdb3 merged as
+  1c123805; protected-main topology repair PR #223 exact head 2acc009 merged as 2066e323. Approved
+  VM passed two full 15/15 native matrix runs and three repeated terminal fault-matrix runs on exact
+  binaries. All 12 PR #223 checks and all seven protected post-merge workflows for 2066e323 passed;
+  local protected-main policy passed; state doctor green.
