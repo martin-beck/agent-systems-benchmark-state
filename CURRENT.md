@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1160](tasks/AR-1160.md): Wizard control API | Expose wizard operations. | Read the plan. | root |
+| P0 | [AR-1160](tasks/AR-1160.md): Wizard control API | Expose wizard operations. | Implement v1.8 recording campaign execution/status/coverage/offline-default operations after the merged v1.7 baseline; preserve credential-free control protocol and add TUI mutation actions. | root |
 | P0 | [AR-1307](tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Await formal run 35342513872 on exact head ab485f767; if terminal green, independently review and complete merge gates, otherwise diagnose its bounded failure before any retry. | codex-ar1307-metadata-repair-20260918 |
 
 ## Open
