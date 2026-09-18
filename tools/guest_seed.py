@@ -19,6 +19,7 @@ def build_user_data(tier: str) -> str:
     env = environment_for_tier(tier)
     timeout = env["TLC_TIMEOUT_SECONDS"]
     mode = env["TLC_CGROUP_MODE"]
+    expected_containment = "portable" if tier == "portable-smoke" else "required"
     result_name = tier.upper().replace("-", "_")
     return f'''#cloud-config
 package_update: false
@@ -48,7 +49,7 @@ write_files:
           evidence = json.load(stream)
       assert evidence["status"] == "success"
       assert evidence["profile"] == "{tier}"
-      assert evidence["containment_mode"] == "required"
+      assert evidence["containment_mode"] == "{expected_containment}"
       assert set(evidence["outcomes"].values()) == {{"success"}}
       print("{result_name}_EVIDENCE_OK")
 runcmd:

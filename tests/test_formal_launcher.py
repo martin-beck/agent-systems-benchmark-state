@@ -5,6 +5,7 @@
 
 from __future__ import annotations
 
+import tempfile
 import unittest
 from pathlib import Path
 from subprocess import DEVNULL, PIPE
@@ -45,6 +46,22 @@ class FormalLauncherTests(unittest.TestCase):
         self.assertNotIn("shell", popen.call_args.kwargs)
         self.assertIs(popen.call_args.kwargs["stdout"], DEVNULL)
         self.assertIs(popen.call_args.kwargs["stderr"], PIPE)
+
+    def test_interruption_receipt_is_bounded_and_non_success(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            with mock.patch.object(run_formal_tier, "RUNTIME_ROOT", root):
+                run_formal_tier._write_interruption_receipt(
+                    "full-exhaustive",
+                    state="interrupted",
+                    reason="launcher interruption",
+                    timeout=7800,
+                )
+            receipt = root / "receipts" / "full-exhaustive-interruption.json"
+            payload = receipt.read_text(encoding="utf-8")
+        self.assertIn('"state": "interrupted"', payload)
+        self.assertIn('"timeout_seconds": 7800', payload)
+        self.assertNotIn("attestation", payload)
 
 
 if __name__ == "__main__":
