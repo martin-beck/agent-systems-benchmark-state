@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**335 ARs tracked** across 7 active status categories.
+**335 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
+| **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 50 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
@@ -403,7 +403,7 @@ flowchart LR
         AR_1304["AR-1304 - Done"]:::status_done
         AR_1305["AR-1305 - Blocked"]:::status_blocked
         AR_1306["AR-1306 - Done"]:::status_done
-        AR_1307["AR-1307 - In progress"]:::status_in_progress
+        AR_1307["AR-1307 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1652,17 +1652,12 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | codex-ar1307-runner-repair-20260918 | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Supervision repair d0db32adf is SSH-signed/DCO, focused tests 31/31, and exact PR head. Worker state branch now fast-forwarded with signed merge 5ab4ffe2d. Obtain independent review/exact-head CI; only then rebuild pristine full fixture and rerun full-exhaustive; do not merge before terminal attestation. |
-
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Unclaimed | Repair the state-repository TLA admission runner and truthful worktree metadata. | AR-1293 remains blocked on AR-1307 PR #24 (eb0da360b6091d5a5f74decfff4da39202226eec) merge and fresh runner handoff. Old ada383cea full VM terminated with serial ending during liveness progress at 47,029,477 generated / 38,798,900 distinct states, with no FULL_EXHAUSTIVE_RC, success marker, attestation, or receipt; classify as interrupted/incomplete, not a model result. After AR-1307 is merged and handed off, rebuild fresh exact fa57625d9 image/seed and rerun required then independently reviewed full gates. |
+| P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Unclaimed | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Supervision repair d0db32adf is SSH-signed/DCO, focused tests 31/31, and exact PR head. Worker state branch now fast-forwarded with signed merge 5ab4ffe2d. Obtain independent review/exact-head CI; only then rebuild pristine full fixture and rerun full-exhaustive; do not merge before terminal attestation. |
 
 ### Blocked (50)
 
@@ -1737,3 +1732,4 @@ flowchart LR
 | P0 | [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md): Establish the professional TUI visual system | Unclaimed | Create a responsive, accessible and professional visual system for every TUI screen. | Create the standalone Ratatui visual system after the application shell is integrated. |
 | P0 | [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md): Add the standalone TUI configuration center | Unclaimed | Add a searchable configuration menu for frontend preferences and benchmark defaults. | Implement the non-secret configuration center foundation after the visual system and ASB wizard control API are stable; AR-1170 owns provider, authentication and default integration. |
 | P0 | [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md): Build recent-runs, report and comparison workspaces | Unclaimed | Add searchable recent runs, report inspection and evidence-qualified comparison workspaces. | Implement report and comparison screens after recording workflows publish stable live and strict-replay source labels. |
+| P0 | [AR-1160](../tasks/AR-1160.md): Wizard control API | Unclaimed | Expose wizard operations. | Read the plan. |

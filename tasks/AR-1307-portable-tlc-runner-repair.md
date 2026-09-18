@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1307-portable-tlc-runner-repair",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-18T04:50:17+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1302"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "codex-ar1307-runner-repair-20260918",
+  "owner": "",
   "plan": "../plans/AR-1307.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 343,
+  "task_revision": 344,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T02:50:17+00:00",
+  "updated_at": "2026-09-18T02:51:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -883,3 +883,7 @@ and protected publication sequence.
   08098435ff766eba36d91bf303fba25833569713279bcaf5c4c2bdea299c4176.
 
 - 2026-09-18T02:50:17+00:00: Heartbeat by codex-ar1307-runner-repair-20260918.
+
+- 2026-09-18T02:51:41+00:00: Recovered after worker became idle with no active process and no
+  durable progress after exact-head 22fe361. Signed/DCO repair preserved; reassignment required for
+  runner-bus bootstrap, CI rerun, and full-tier qualification.
