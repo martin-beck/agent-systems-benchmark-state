@@ -26,7 +26,7 @@
   "runner_id": "asb-state-tlc-vm-ar1308-v1",
   "vcpus": 8,
   "model_config_sha256": "af8af6a9303d7a5144df62f899b7890320b288089165c9910ee7221588131799",
-  "seed_sha256": "d45e5485a40cee5a5a531e62640357f28464d6cfa3fbe6e51e84dd6d834a0a81",
+  "seed_sha256": "2611348be0e541cbba6c3b4e3067000c0908f2784772316f6c792c2996667a38",
   "source_tree_sha256": "0bdb1a4c19f71d0b0d659e74ae47c88f00ece8834b14c2130176ce3e4824ac83",
   "validator_sha256": "abd53a8c0c5ffc123d238ba791ac713a958e4d1720ad4701df3c670a92300c3f",
   "admission_lock_id": "canonical-ar1307-admission-lock",
