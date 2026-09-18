@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Stage17 full-exhaustive was SUBPROCESS_INTERRUPTED: the handoffctl/timeout supervisor vanished and orphaned QEMU was terminated after only transient RC=0. No full attestation or clean poweroff exists. Repair the runner supervision path so the bounded supervisor cannot disappear, then rerun from a pristine verified image; do not merge.",
+  "next_action": "Supervision repair adfb775a0 is signed/DCO and focused tests pass (31). Push/update PR #24 and obtain independent review/CI. Only after review, rebuild pristine full fixture and rerun bounded full tier; do not merge before terminal evidence.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 461,
+  "task_revision": 462,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T02:29:30+00:00",
+  "updated_at": "2026-09-18T02:29:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -1480,3 +1480,10 @@ and protected publication sequence.
 
 - 2026-09-18T02:29:30+00:00: Recorded command exit 0; command argv SHA-256
   32c17406f2f8731bf5196c9716c72083a93788caba593fee7b01f45e8bbf170b.
+
+- 2026-09-18T02:29:52+00:00: Implemented runner-side bounded interruption handling in
+  tools/run_formal_tier.py: timeout and KeyboardInterrupt now terminate the process group, final
+  cleanup reaps any still-live child, and a private JSON interruption receipt is written without
+  producing success attestation. Added focused receipt contract test; formal-launcher plus TLC tests
+  pass 31/31. This addresses the runner supervision path; stage17 remains SUBPROCESS_INTERRUPTED and
+  no full success is claimed.
