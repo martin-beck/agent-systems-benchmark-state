@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Refresh stage from PR head 1a3e37665, rebuild fresh data with resolved JDK and unique seed, run portable-smoke, and inspect checkout-bound attestation under /mnt/asb-data/state/evidence. Only after validated portable evidence may higher tiers start.",
+  "next_action": "Rebuild stage9 data image sequentially from complete stage8 directory; verify debugfs root has state,jvm,tla2tools.jar before one fresh QEMU portable-smoke. Do not overlap copy/mke2fs/image commands.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 284,
+  "task_revision": 285,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T00:23:32+00:00",
+  "updated_at": "2026-09-18T00:24:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -922,3 +922,8 @@ and protected publication sequence.
 
 - 2026-09-18T00:23:32+00:00: Recorded command exit 0; command argv SHA-256
   a44fbaa64a5920adb3cddbeb43b6e80d7373c625b54ad6e8f60f693cfc6be691.
+
+- 2026-09-18T00:24:10+00:00: Stage8 build had an overlap race: mke2fs began before the JDK/JAR copy
+  completed, and debugfs proved the resulting image contained only state/jvm but lacked root
+  tla2tools.jar. No QEMU evidence accepted. Stage8 staging directory is now complete; rebuilding a
+  fresh stage9 image sequentially and verifying image contents before boot.
