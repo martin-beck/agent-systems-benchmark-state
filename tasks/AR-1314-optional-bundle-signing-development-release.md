@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1314-optional-bundle-signing",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-19T10:11:33+00:00",
+  "claim_expires": "2026-09-19T10:12:40+00:00",
   "depends_on": [],
   "id": "AR-1314",
   "next_action": "Wait for PR #232 exact-head CI after schema-v3 repair; if all required checks pass, independently review and merge through the established workflow, then reconcile AR-1314. Preserve signature-required defaults.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Optional runtime-bundle signing for development and tagged releases",
-  "updated_at": "2026-09-19T08:11:56+00:00",
+  "updated_at": "2026-09-19T08:12:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1314-optional-bundle-signing"
 }
 ---
@@ -187,3 +187,5 @@ reviewed signed input bundle and terminal attestation.
   byte-for-byte; manifest schema version 2 is represented by schema/v3 and fixture v2. Contract
   consistency with baseline and all registered conformance commands passed; focused bundle tests
   (22), Python bundle tests (3), and clippy passed. PR #232 updated; awaiting exact-head CI.
+
+- 2026-09-19T08:12:40+00:00: Heartbeat by ar1314_bundle_profile.
