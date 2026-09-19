@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Optional runtime-bundle signing for development and tagged releases",
-  "updated_at": "2026-09-19T08:07:35+00:00",
+  "updated_at": "2026-09-19T08:07:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1314-optional-bundle-signing"
 }
 ---
@@ -142,3 +142,6 @@ reviewed signed input bundle and terminal attestation.
 
 - 2026-09-19T08:07:35+00:00: Recorded command exit 1; command argv SHA-256
   62f9e03c117c4e82ab80f6025adc1b390d3e258cda91c264758b5b2770379fec.
+
+- 2026-09-19T08:07:48+00:00: Recorded command exit 0; command argv SHA-256
+  6a3893d49b36580694ab784cf24c3ed65136cfc0f671d98e0dd9b6b71d579361.
