@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-19T10:01:04+00:00",
   "depends_on": [],
   "id": "AR-1313",
-  "next_action": "Monitor PR #231 exact head 68afee8; independently review and wait all required checks green before signed protected merge and post-merge verification.",
+  "next_action": "Keep PR #231 unmerged; route one-line workspace coverage deficit to AR-1312, then rerun exact-head checks and signed recovery merge.",
   "observed_branch": "repair/ar-1313-historical-dco-909078c",
   "observed_dirty": 0,
   "observed_head": "8e5598eab3b35a56fb8997bdd73dfd73f89f5cdc",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Forward-only signed DCO recovery candidate published as PR #231.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Historical DCO merge-integrity recovery",
-  "updated_at": "2026-09-19T08:01:04+00:00",
+  "updated_at": "2026-09-19T08:04:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1313-historical-dco-909078c"
 }
 ---
@@ -58,3 +58,10 @@ blocked with the exact failure and do not weaken the policy.
   heartbeat/update recorded from main checkout.
 
 - 2026-09-19T08:01:04+00:00: Heartbeat by ar1313-dco-recovery.
+
+- 2026-09-19T08:04:11+00:00: Repository quality run 35430672372 failed only at cargo llvm-cov
+  --locked --workspace --all-targets --fail-under-lines 90. Full TOTAL: 52,704 total lines, 5,271
+  missed, displayed 90.00% but exact ratio is 89.9988615665%, so fail-under-lines correctly exited
+  1. One additional covered line would reach 90% (5,270 missed => 90.000758%). This is the known
+  post-AR-1310 baseline owned by AR-1312, not the empty-tree AR-1313 recovery. Do not weaken
+  threshold or merge.
