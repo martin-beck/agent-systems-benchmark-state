@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-19T10:01:01+00:00",
   "depends_on": [],
   "id": "AR-1314",
-  "next_action": "Add CLI/profile coverage, run full ASB gates, then review and publish the clean signed PR; formal AR-1307/1308 remain signature-required.",
+  "next_action": "Wait for AR-1313/PR-231 canonical contract migration to merge and rerun PR-232 exact-head policy gates; do not rebase or weaken the schema gate.",
   "observed_branch": "feature/ar-1314-optional-bundle-signing",
   "observed_dirty": 0,
   "observed_head": "6fc467c12566e2738b1e0a5bb20fc9671944398d",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Optional runtime-bundle signing for development and tagged releases",
-  "updated_at": "2026-09-19T08:01:01+00:00",
+  "updated_at": "2026-09-19T08:01:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1314-optional-bundle-signing"
 }
 ---
@@ -122,3 +122,9 @@ reviewed signed input bundle and terminal attestation.
   e449d0960eaf4844f9248ffbe8e9d5048a5e181fe2660b470eaaeeac8b4e9b2d.
 
 - 2026-09-19T08:01:01+00:00: Heartbeat by ar1314_bundle_profile.
+
+- 2026-09-19T08:01:13+00:00: PR #232 is published at exact signed+DCO head
+  6fc467c12566e2738b1e0a5bb20fc9671944398d. Required policy run 35430794115 failed only because
+  canonical contract consistency rejects the checked-in runtime-bundle schema/v2 change as an
+  in-place v1 schema change (909078c boundary, pending AR-1313/PR-231 recovery). Preserve PR and
+  wait; no merge or gate weakening authorized.
