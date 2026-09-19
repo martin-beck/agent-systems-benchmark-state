@@ -7,17 +7,17 @@
   "id": "AR-1314",
   "next_action": "Add CLI/profile coverage, run full ASB gates, then review and publish the clean signed PR; formal AR-1307/1308 remain signature-required.",
   "observed_branch": "feature/ar-1314-optional-bundle-signing",
-  "observed_dirty": 9,
-  "observed_head": "78a8e9fc2144623311e315fcc4e46c2831b0b2c1",
+  "observed_dirty": 0,
+  "observed_head": "6fc467c12566e2738b1e0a5bb20fc9671944398d",
   "owner": "ar1314_bundle_profile",
   "plan": "../plans/AR-1314.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Optional runtime-bundle signing for development and tagged releases",
-  "updated_at": "2026-09-19T07:59:08+00:00",
+  "updated_at": "2026-09-19T07:59:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1314-optional-bundle-signing"
 }
 ---
