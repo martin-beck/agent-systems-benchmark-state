@@ -23,7 +23,7 @@ Generated from local Git and GitHub. Do not edit.
 | #214 | `feature/ar-1286-supervised-replay-lifecycle@eaf7fcbf42ae` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(replay): integrate runtime-owned supervised replay lifecycle |
 | #231 | `repair/ar-1313-historical-dco-909078c@68afee85219a` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(policy): recover historical DCO boundary |
 | #232 | `feature/ar-1314-optional-bundle-signing@dbfecb983e7d` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(bundle): add explicit unsigned profiles |
-| #233 | `repair/ar-1312-post-merge-coverage-floor@6958f08e1f6e` | `main` | UNSTABLE | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | test: isolate instrumented child profiles |
+| #233 | `repair/ar-1312-post-merge-coverage-floor@6958f08e1f6e` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | test: isolate instrumented child profiles |
 
 ## Recent workflows
 
@@ -32,10 +32,10 @@ Generated from local Git and GitHub. Do not edit.
 | 35432483773 | `6958f08e1f6e` | pull_request | Rust verification | in_progress:- |
 | 35432483762 | `6958f08e1f6e` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 35432483750 | `6958f08e1f6e` | pull_request | Fault assurance | in_progress:- |
-| 35432483746 | `6958f08e1f6e` | pull_request | Formal assurance | queued:- |
-| 35432483741 | `6958f08e1f6e` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 35432483746 | `6958f08e1f6e` | pull_request | Formal assurance | in_progress:- |
+| 35432483741 | `6958f08e1f6e` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 35432483740 | `6958f08e1f6e` | pull_request | Repository quality | in_progress:- |
-| 35432483730 | `6958f08e1f6e` | pull_request | Huawei MIT source headers | in_progress:- |
+| 35432483730 | `6958f08e1f6e` | pull_request | Huawei MIT source headers | completed:success |
 | 35432483728 | `6958f08e1f6e` | pull_request | Hosted portability and native qualification | in_progress:- |
 | 35431342064 | `dbfecb983e7d` | pull_request | Formal assurance | completed:success |
 | 35431342021 | `dbfecb983e7d` | pull_request | Repository quality | completed:failure |
