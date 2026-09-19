@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Optional runtime-bundle signing for development and tagged releases",
-  "updated_at": "2026-09-19T07:51:51+00:00",
+  "updated_at": "2026-09-19T07:53:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1314-optional-bundle-signing"
 }
 ---
@@ -64,3 +64,6 @@ reviewed signed input bundle and terminal attestation.
 - 2026-09-19T07:51:51+00:00: Focused cargo test first exited 101 because generated schema/v2 lagged
   the new profile/status fields; regenerated the checked schema and reran cargo test -p asb-bundle
   successfully (21 verifier, 2 schema, 4 unit tests). No product failure or gate weakening.
+
+- 2026-09-19T07:53:30+00:00: Recorded command exit 0; command argv SHA-256
+  d43baaf07b37e5983d58e89055f9e3b8e7d46904dbf7bcb4724239874b87409e.
