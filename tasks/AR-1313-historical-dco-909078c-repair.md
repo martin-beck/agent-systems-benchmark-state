@@ -2,22 +2,22 @@
 {
   "branch": "repair/ar-1313-historical-dco-909078c",
   "checkpoint_commit": "68afee85219a30a9754c462042b3bc48a19a4ae9",
-  "claim_expires": "2026-09-19T10:01:04+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1313",
   "next_action": "Keep PR #231 unmerged; route one-line workspace coverage deficit to AR-1312, then rerun exact-head checks and signed recovery merge.",
   "observed_branch": "repair/ar-1313-historical-dco-909078c",
   "observed_dirty": 0,
   "observed_head": "8e5598eab3b35a56fb8997bdd73dfd73f89f5cdc",
-  "owner": "ar1313-dco-recovery",
+  "owner": "",
   "plan": "../plans/AR-1313.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Forward-only signed DCO recovery candidate published as PR #231.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Historical DCO merge-integrity recovery",
-  "updated_at": "2026-09-19T08:04:11+00:00",
+  "updated_at": "2026-09-19T08:04:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1313-historical-dco-909078c"
 }
 ---
@@ -65,3 +65,10 @@ blocked with the exact failure and do not weaken the policy.
   1. One additional covered line would reach 90% (5,270 missed => 90.000758%). This is the known
   post-AR-1310 baseline owned by AR-1312, not the empty-tree AR-1313 recovery. Do not weaken
   threshold or merge.
+
+- 2026-09-19T08:04:14+00:00: Blocked by exact hosted Repository quality run 35430672372: 52,704
+  total lines, 5,271 missed; exact 89.9988615665% below unchanged 90% floor despite rounded 90.00%.
+  One covered line is sufficient, and repair belongs to existing AR-1312. Preserve PR #231 at signed
+  head 68afee85219a30a9754c462042b3bc48a19a4ae9, base 78a8e9fc2144623311e315fcc4e46c2831b0b2c1; do
+  not merge until AR-1312 repairs coverage and all exact-head/post-merge gates are green. Historical
+  merge 909078c remains preserved; no gate weakening.
