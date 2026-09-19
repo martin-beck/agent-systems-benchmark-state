@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-19T10:19:26+00:00",
   "depends_on": [],
   "id": "AR-1312",
-  "next_action": "Coverage reproduction failed in cargo llvm-cov workspace summary at 08:13:54: three asb-cli capability-contract tests found checkout default_*.profraw files and exited 101; add coverage-mode target sink, clean generated profiles, rerun focused/full coverage and record results.",
+  "next_action": "Focused capability-contract coverage passes after target sink fix; full workspace coverage had a flaky exit 101 in control::tests::recording_campaign_plan_is_durable_idempotent_and_not_offline_ready due control state root already owned. Clean generated default_*.profraw, rerun serially, then run full gates.",
   "observed_branch": "repair/ar-1312-post-merge-coverage-floor",
   "observed_dirty": 8,
   "observed_head": "78a8e9fc2144623311e315fcc4e46c2831b0b2c1",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the post-merge workspace coverage deficit without weakening the 90% floor.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Post-merge workspace coverage floor repair",
-  "updated_at": "2026-09-19T08:19:26+00:00",
+  "updated_at": "2026-09-19T08:19:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1312-post-merge-coverage-floor"
 }
 ---
@@ -100,3 +100,8 @@ must add meaningful tests for the uncovered paths and preserve the threshold.
   18d8f5a07f67fad7823aab014130e282db17c24705925605cea19e490300976d.
 
 - 2026-09-19T08:19:26+00:00: Heartbeat by ar1312_coverage_worker.
+
+- 2026-09-19T08:19:38+00:00: Exact full coverage failure recorded: cargo llvm-cov workspace exited
+  101; one asb-cli control test failed with CliError operation control state root is already owned
+  at control.rs:3724. This is test-state contention, not a coverage-floor result.
+  Capability-contract focused run passed 12/12 under instrumentation.

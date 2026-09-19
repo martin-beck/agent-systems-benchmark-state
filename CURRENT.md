@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1312](tasks/AR-1312-post-merge-coverage-floor.md): Post-merge workspace coverage floor repair | Repair the post-merge workspace coverage deficit without weakening the 90% floor. | Coverage reproduction failed in cargo llvm-cov workspace summary at 08:13:54: three asb-cli capability-contract tests found checkout default_*.profraw files and exited 101; add coverage-mode target sink, clean generated profiles, rerun focused/full coverage and record results. | ar1312_coverage_worker |
+| P0 | [AR-1312](tasks/AR-1312-post-merge-coverage-floor.md): Post-merge workspace coverage floor repair | Repair the post-merge workspace coverage deficit without weakening the 90% floor. | Focused capability-contract coverage passes after target sink fix; full workspace coverage had a flaky exit 101 in control::tests::recording_campaign_plan_is_durable_idempotent_and_not_offline_ready due control state root already owned. Clean generated default_*.profraw, rerun serially, then run full gates. | ar1312_coverage_worker |
 | P0 | [AR-1314](tasks/AR-1314-optional-bundle-signing-development-release.md): Optional runtime-bundle signing for development and tagged releases | Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile. | Wait for PR #232 exact-head CI after schema-v3 repair; if all required checks pass, independently review and merge through the established workflow, then reconcile AR-1314. Preserve signature-required defaults. | ar1314_bundle_profile |
 
 ## Blocked
