@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-19T09:46:29+00:00",
   "depends_on": [],
   "id": "AR-1314",
-  "next_action": "Promote after task review; implement explicit unsigned development/release-bundle mode with checksums, SBOM/provenance, truthful metadata, and fail-closed default verification.",
+  "next_action": "Finish docs and CLI/profile tests, run full ASB gates, then review and publish the clean signed PR; formal AR-1307/1308 remain signature-required.",
   "observed_branch": "feature/ar-1314-optional-bundle-signing",
   "observed_dirty": 5,
   "observed_head": "78a8e9fc2144623311e315fcc4e46c2831b0b2c1",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Optional runtime-bundle signing for development and tagged releases",
-  "updated_at": "2026-09-19T07:51:34+00:00",
+  "updated_at": "2026-09-19T07:51:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1314-optional-bundle-signing"
 }
 ---
@@ -60,3 +60,7 @@ reviewed signed input bundle and terminal attestation.
 
 - 2026-09-19T07:51:34+00:00: Recorded command exit 0; command argv SHA-256
   98b14edf2a525dfaacad74b297750831f9e57ed7549e2624c0a5420cc564f3e2.
+
+- 2026-09-19T07:51:51+00:00: Focused cargo test first exited 101 because generated schema/v2 lagged
+  the new profile/status fields; regenerated the checked schema and reran cargo test -p asb-bundle
+  successfully (21 verifier, 2 schema, 4 unit tests). No product failure or gate weakening.
