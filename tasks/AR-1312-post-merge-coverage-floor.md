@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the post-merge workspace coverage deficit without weakening the 90% floor.",
-  "task_revision": 82,
+  "task_revision": 83,
   "title": "Post-merge workspace coverage floor repair",
-  "updated_at": "2026-09-19T08:36:39+00:00",
+  "updated_at": "2026-09-19T08:36:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1312-post-merge-coverage-floor"
 }
 ---
@@ -213,3 +213,6 @@ must add meaningful tests for the uncovered paths and preserve the threshold.
   capability/lifecycle/workflow tests pass; clippy and full cargo test workspace pass; cargo
   llvm-cov workspace/critical floors pass with workspace 90.48% (52,704 executed, 5,017 missed); no
   checkout default profraw artifacts remain.
+
+- 2026-09-19T08:36:56+00:00: Recorded command exit 0; command argv SHA-256
+  64f0343d6b482495132b55f4a69b419afca4d47ed8d6ba537184b0d9d51c5247.
