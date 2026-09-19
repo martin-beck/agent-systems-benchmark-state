@@ -10,11 +10,11 @@
   "plan": "../plans/AR-1314.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Optional runtime-bundle signing for development and tagged releases",
-  "updated_at": "2026-09-19T00:00:00+00:00",
+  "updated_at": "2026-09-19T07:45:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1314-optional-bundle-signing"
 }
 ---
@@ -31,3 +31,6 @@ The implementation must add versioned policy/profile metadata, positive and nega
 updated schemas/generated documentation, helpful failure messages, and an offline path. It must
 not weaken AR-1307/AR-1308 full-exhaustive formal gates: those continue to require the exact
 reviewed signed input bundle and terminal attestation.
+
+- 2026-09-19T07:45:37+00:00: Dependencies are empty; promote explicit unsigned development/release
+  profile implementation while preserving formal gates.
