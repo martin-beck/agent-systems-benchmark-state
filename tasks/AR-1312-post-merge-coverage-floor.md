@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1312-post-merge-coverage-floor",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-19T10:28:44+00:00",
+  "claim_expires": "2026-09-19T10:32:02+00:00",
   "depends_on": [],
   "id": "AR-1312",
   "next_action": "Focused capability-contract coverage passes after target sink fix; full workspace coverage had a flaky exit 101 in control::tests::recording_campaign_plan_is_durable_idempotent_and_not_offline_ready due control state root already owned. Clean generated default_*.profraw, rerun serially, then run full gates.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the post-merge workspace coverage deficit without weakening the 90% floor.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Post-merge workspace coverage floor repair",
-  "updated_at": "2026-09-19T08:31:45+00:00",
+  "updated_at": "2026-09-19T08:32:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1312-post-merge-coverage-floor"
 }
 ---
@@ -175,3 +175,5 @@ must add meaningful tests for the uncovered paths and preserve the threshold.
 
 - 2026-09-19T08:31:45+00:00: Recorded command exit 0; command argv SHA-256
   d8d143888ea5c701d6a2654dc4ca8d075093d28fe632089244a97d72b581361e.
+
+- 2026-09-19T08:32:02+00:00: Heartbeat by ar1312_coverage_worker.
