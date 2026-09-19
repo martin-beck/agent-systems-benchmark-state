@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1313-historical-dco-909078c",
   "checkpoint_commit": "68afee85219a30a9754c462042b3bc48a19a4ae9",
-  "claim_expires": "2026-09-19T09:56:42+00:00",
+  "claim_expires": "2026-09-19T10:01:04+00:00",
   "depends_on": [],
   "id": "AR-1313",
   "next_action": "Monitor PR #231 exact head 68afee8; independently review and wait all required checks green before signed protected merge and post-merge verification.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Forward-only signed DCO recovery candidate published as PR #231.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Historical DCO merge-integrity recovery",
-  "updated_at": "2026-09-19T07:57:11+00:00",
+  "updated_at": "2026-09-19T08:01:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1313-historical-dco-909078c"
 }
 ---
@@ -56,3 +56,5 @@ blocked with the exact failure and do not weaken the policy.
   Published PR #231; headers green, remaining exact-head checks in progress. Handoff command
   executed product mutation but state replication reported it requires the main checkout; state
   heartbeat/update recorded from main checkout.
+
+- 2026-09-19T08:01:04+00:00: Heartbeat by ar1313-dco-recovery.
