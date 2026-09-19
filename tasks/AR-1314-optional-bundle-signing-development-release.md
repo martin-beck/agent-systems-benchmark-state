@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1314-optional-bundle-signing",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-19T09:59:20+00:00",
+  "claim_expires": "2026-09-19T10:01:01+00:00",
   "depends_on": [],
   "id": "AR-1314",
   "next_action": "Add CLI/profile coverage, run full ASB gates, then review and publish the clean signed PR; formal AR-1307/1308 remain signature-required.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Optional runtime-bundle signing for development and tagged releases",
-  "updated_at": "2026-09-19T08:00:46+00:00",
+  "updated_at": "2026-09-19T08:01:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1314-optional-bundle-signing"
 }
 ---
@@ -120,3 +120,5 @@ reviewed signed input bundle and terminal attestation.
 
 - 2026-09-19T08:00:46+00:00: Recorded command exit 0; command argv SHA-256
   e449d0960eaf4844f9248ffbe8e9d5048a5e181fe2660b470eaaeeac8b4e9b2d.
+
+- 2026-09-19T08:01:01+00:00: Heartbeat by ar1314_bundle_profile.
