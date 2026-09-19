@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the post-merge workspace coverage deficit without weakening the 90% floor.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Post-merge workspace coverage floor repair",
-  "updated_at": "2026-09-19T08:35:35+00:00",
+  "updated_at": "2026-09-19T08:35:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1312-post-merge-coverage-floor"
 }
 ---
@@ -200,3 +200,6 @@ must add meaningful tests for the uncovered paths and preserve the threshold.
 
 - 2026-09-19T08:35:35+00:00: Recorded command exit 0; command argv SHA-256
   cbd65e40dfdb1f5ebdbc1b3973930572575af02dd1b2e82aea14835e1591703e.
+
+- 2026-09-19T08:35:54+00:00: Recorded command exit 0; command argv SHA-256
+  f82ca4798fadb186714e1d2457509452e14a243dd226f206c2df85820a179aef.
