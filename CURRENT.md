@@ -9,6 +9,12 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1314](tasks/AR-1314-optional-bundle-signing-development-release.md): Optional runtime-bundle signing for development and tagged releases | Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile. | Wait for AR-1313/PR-231 canonical contract migration to merge and rerun PR-232 exact-head policy gates; do not rebase or weaken the schema gate. | ar1314_bundle_profile |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1312](tasks/AR-1312-post-merge-coverage-floor.md): Post-merge workspace coverage floor repair | Repair the post-merge workspace coverage deficit without weakening the 90% floor. | Promote and claim the independent coverage repair; preserve AR-1310 and AR-1313 as evidence, then raise exact workspace coverage above 90% without weakening the floor. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -93,7 +99,6 @@ Never edit this file directly.
 | P0 | [AR-1216](tasks/AR-1216-tutorial-freshness-ci.md): ASB tutorial freshness CI and documentation qualification | Continuously keep ASB tutorial commands and steps syntactically current. | Implement the repository-wide tutorial discovery and syntax-freshness CI gate after all tutorial contracts are defined. | - |
 | P0 | [AR-1227](tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. | - |
 | P0 | [AR-1309](tasks/AR-1309-reviewed-capacity-or-model-reduction.md): Reviewed full-exhaustive capacity or model-reduction contract | Provide a reviewed successor contract after terminal full-exhaustive capacity OOM. | Remain planned until the coordinator reviews the AR-1308 terminal OOM evidence and selects a separately scoped capacity contract or model-reduction profile; do not rerun or widen AR-1307 limits. | - |
-| P0 | [AR-1312](tasks/AR-1312-post-merge-coverage-floor.md): Post-merge workspace coverage floor repair | Repair the post-merge workspace coverage deficit without weakening the 90% floor. | Promote and claim the independent coverage repair; preserve AR-1310 and AR-1313 as evidence, then raise exact workspace coverage above 90% without weakening the floor. | - |
 | P1 | [AR-0808](tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. | - |
 | P1 | [AR-0809](tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. | - |
 | P1 | [AR-0810](tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project's GitHub Pages site. | - |

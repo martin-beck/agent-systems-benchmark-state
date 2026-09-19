@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**343 ARs tracked** across 6 active status categories.
+**343 ARs tracked** across 7 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 51 |
-| **Planned** | Defined work awaiting promotion or dependencies | 59 |
+| **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 220 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -408,7 +408,7 @@ flowchart LR
         AR_1309["AR-1309 - Planned"]:::status_planned
         AR_1310["AR-1310 - Blocked"]:::status_blocked
         AR_1311["AR-1311 - Done"]:::status_done
-        AR_1312["AR-1312 - Planned"]:::status_planned
+        AR_1312["AR-1312 - Open"]:::status_open
         AR_1313["AR-1313 - Blocked"]:::status_blocked
         AR_1314["AR-1314 - In progress"]:::status_in_progress
         AR_1315["AR-1315 - Planned"]:::status_planned
@@ -1680,6 +1680,12 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1314](../tasks/AR-1314-optional-bundle-signing-development-release.md): Optional runtime-bundle signing for development and tagged releases | ar1314_bundle_profile | Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile. | Wait for AR-1313/PR-231 canonical contract migration to merge and rerun PR-232 exact-head policy gates; do not rebase or weaken the schema gate. |
 
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1312](../tasks/AR-1312-post-merge-coverage-floor.md): Post-merge workspace coverage floor repair | Unclaimed | Repair the post-merge workspace coverage deficit without weakening the 90&#37; floor. | Promote and claim the independent coverage repair; preserve AR-1310 and AR-1313 as evidence, then raise exact workspace coverage above 90&#37; without weakening the floor. |
+
 ### Blocked (51)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -1736,7 +1742,7 @@ flowchart LR
 | P1 | [AR-1256](../tasks/AR-1256-bundled-mockagents-isolation.md): Execute bundled MockAgents transport in isolation | Unclaimed | Execute bundled MockAgents transport in isolation. | Implement bundled in-container MockAgents transport and digest-pinned arm64 QEMU evidence. |
 | P1 | [AR-1258](../tasks/AR-1258-docker-binfmt-qemu.md): Provision Docker binfmt/QEMU capability | Unclaimed | Provision and verify Docker binfmt/QEMU for multiarch qualification. | Await an approved maintenance window with zero Docker workloads; snapshot binfmt state, apply rollback-safe F registration, then rerun pinned arm64 Alpine /bin/true with network disabled and record sanitized interpreter, digest, provenance, timeout, and rollback evidence. Keep qualification blocked. |
 
-### Planned (59)
+### Planned (58)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1749,4 +1755,3 @@ flowchart LR
 | P0 | [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md): Qualify cross-repository ASB and asb-tui integration | Unclaimed | Integrate and adversarially test the exact ASB and asb-tui revisions together. | Wait for AR-1024, AR-1025, AR-1029 and the complete standalone UI integration AR-1011, then qualify exact install, update, rollback, launch, remove and benchmark-continuity paths across both repositories. |
 | P0 | [AR-1029](../tasks/AR-1029-remove-legacy-in-tree-tui.md): Remove the legacy in-tree TUI implementation | Unclaimed | Ensure agent-systems-benchmark contains no TUI renderer or terminal application implementation. | Remove the legacy ASB renderer only after the standalone application and trusted router are complete. |
 | P0 | [AR-1031](../tasks/AR-1031-asb-tui-landing-screen.md): Build the standalone TUI landing screen | Unclaimed | Add a state-aware landing screen with primary journeys and bounded recent activity. | Implement the landing screen after the shell, visual system and first-run wizard expose stable typed routes. |
-| P0 | [AR-1032](../tasks/AR-1032-asb-tui-contextual-help.md): Add contextual hotkeys and complete action help | Unclaimed | Provide a context-fitted hotkey window, global action search and mechanically complete help. | Add the contextual action registry, search field, fitted hotkey window and complete help coverage after the user-facing screens exist. |
