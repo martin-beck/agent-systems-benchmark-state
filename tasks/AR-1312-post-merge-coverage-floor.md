@@ -7,7 +7,7 @@
   "id": "AR-1312",
   "next_action": "Focused capability-contract coverage passes after target sink fix; full workspace coverage had a flaky exit 101 in control::tests::recording_campaign_plan_is_durable_idempotent_and_not_offline_ready due control state root already owned. Clean generated default_*.profraw, rerun serially, then run full gates.",
   "observed_branch": "repair/ar-1312-post-merge-coverage-floor",
-  "observed_dirty": 8,
+  "observed_dirty": 9,
   "observed_head": "78a8e9fc2144623311e315fcc4e46c2831b0b2c1",
   "owner": "ar1312_coverage_worker",
   "plan": "../plans/AR-1312.md",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the post-merge workspace coverage deficit without weakening the 90% floor.",
-  "task_revision": 56,
+  "task_revision": 57,
   "title": "Post-merge workspace coverage floor repair",
-  "updated_at": "2026-09-19T08:27:45+00:00",
+  "updated_at": "2026-09-19T08:27:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1312-post-merge-coverage-floor"
 }
 ---
