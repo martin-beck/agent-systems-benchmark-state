@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-19T10:09:52+00:00",
   "depends_on": [],
   "id": "AR-1312",
-  "next_action": "Promote and claim the independent coverage repair; preserve AR-1310 and AR-1313 as evidence, then raise exact workspace coverage above 90% without weakening the floor.",
+  "next_action": "Coverage reproduction failed in cargo llvm-cov workspace summary at 08:13:54: three asb-cli capability-contract tests found checkout default_*.profraw files and exited 101; add coverage-mode target sink, clean generated profiles, rerun focused/full coverage and record results.",
   "observed_branch": "repair/ar-1312-post-merge-coverage-floor",
   "observed_dirty": 8,
   "observed_head": "78a8e9fc2144623311e315fcc4e46c2831b0b2c1",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the post-merge workspace coverage deficit without weakening the 90% floor.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Post-merge workspace coverage floor repair",
-  "updated_at": "2026-09-19T08:14:26+00:00",
+  "updated_at": "2026-09-19T08:14:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1312-post-merge-coverage-floor"
 }
 ---
@@ -68,3 +68,7 @@ must add meaningful tests for the uncovered paths and preserve the threshold.
 
 - 2026-09-19T08:14:17+00:00: Recorded command exit 0; command argv SHA-256
   bd4441f41964b199f749ae1a76207f14951f318de514790cde9d082946a018bc.
+
+- 2026-09-19T08:14:42+00:00: Recorded exact failure: cargo llvm-cov --locked --workspace
+  --all-targets --summary-only --fail-under-lines 90 exited 101 because capability_contract tests
+  detected generated crates/asb-cli/default_*.profraw files. No gate or floor change.
