@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-19T10:09:38+00:00",
   "depends_on": [],
   "id": "AR-1314",
-  "next_action": "Wait for AR-1313/PR-231 canonical contract migration to merge and rerun PR-232 exact-head policy gates; do not rebase or weaken the schema gate.",
+  "next_action": "Run focused/full bundle and contract gates on the versioned v3 schema repair, then commit signed+DCO and update PR #232 exact head; preserve signature-required defaults.",
   "observed_branch": "feature/ar-1314-optional-bundle-signing",
   "observed_dirty": 11,
   "observed_head": "6fc467c12566e2738b1e0a5bb20fc9671944398d",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Optional runtime-bundle signing for development and tagged releases",
-  "updated_at": "2026-09-19T08:09:38+00:00",
+  "updated_at": "2026-09-19T08:09:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1314-optional-bundle-signing"
 }
 ---
@@ -156,3 +156,8 @@ reviewed signed input bundle and terminal attestation.
   a496cffa5ec5beeabb7a500436291e149a222a1ed6ed47180b9c0f944949e839.
 
 - 2026-09-19T08:09:38+00:00: Heartbeat by ar1314_bundle_profile.
+
+- 2026-09-19T08:09:47+00:00: Repair in progress: checked-in schema/v2 and fixture v1 are restored
+  byte-for-byte to baseline 78a8e9f; new manifest schema version 2 is generated at schema/v3 with
+  fixture v2, and contract catalog/registry now enrolls v3. The earlier contract gate exit 2 is
+  explained: it correctly rejected the in-place v2 schema mutation. No gate was weakened.
