@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**343 ARs tracked** across 7 active status categories.
+**343 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 51 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
@@ -408,7 +408,7 @@ flowchart LR
         AR_1309["AR-1309 - Planned"]:::status_planned
         AR_1310["AR-1310 - Blocked"]:::status_blocked
         AR_1311["AR-1311 - Done"]:::status_done
-        AR_1312["AR-1312 - Open"]:::status_open
+        AR_1312["AR-1312 - In progress"]:::status_in_progress
         AR_1313["AR-1313 - Blocked"]:::status_blocked
         AR_1314["AR-1314 - In progress"]:::status_in_progress
         AR_1315["AR-1315 - Planned"]:::status_planned
@@ -1674,17 +1674,12 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1312](../tasks/AR-1312-post-merge-coverage-floor.md): Post-merge workspace coverage floor repair | ar1312_coverage_worker | Repair the post-merge workspace coverage deficit without weakening the 90&#37; floor. | Promote and claim the independent coverage repair; preserve AR-1310 and AR-1313 as evidence, then raise exact workspace coverage above 90&#37; without weakening the floor. |
 | P0 | [AR-1314](../tasks/AR-1314-optional-bundle-signing-development-release.md): Optional runtime-bundle signing for development and tagged releases | ar1314_bundle_profile | Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile. | Wait for AR-1313/PR-231 canonical contract migration to merge and rerun PR-232 exact-head policy gates; do not rebase or weaken the schema gate. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1312](../tasks/AR-1312-post-merge-coverage-floor.md): Post-merge workspace coverage floor repair | Unclaimed | Repair the post-merge workspace coverage deficit without weakening the 90&#37; floor. | Promote and claim the independent coverage repair; preserve AR-1310 and AR-1313 as evidence, then raise exact workspace coverage above 90&#37; without weakening the floor. |
 
 ### Blocked (51)
 

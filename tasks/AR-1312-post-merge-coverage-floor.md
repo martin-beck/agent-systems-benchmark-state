@@ -2,19 +2,19 @@
 {
   "branch": "repair/ar-1312-post-merge-coverage-floor",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-19T10:07:32+00:00",
   "depends_on": [],
   "id": "AR-1312",
   "next_action": "Promote and claim the independent coverage repair; preserve AR-1310 and AR-1313 as evidence, then raise exact workspace coverage above 90% without weakening the floor.",
-  "owner": "",
+  "owner": "ar1312_coverage_worker",
   "plan": "../plans/AR-1312.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair the post-merge workspace coverage deficit without weakening the 90% floor.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Post-merge workspace coverage floor repair",
-  "updated_at": "2026-09-19T08:06:48+00:00",
+  "updated_at": "2026-09-19T08:07:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1312-post-merge-coverage-floor"
 }
 ---
@@ -34,3 +34,5 @@ must add meaningful tests for the uncovered paths and preserve the threshold.
 
 - 2026-09-19T08:06:48+00:00: Dependency deadlock corrected: independent coverage repair authorized;
   AR-1310 remains evidence, 90% floor unchanged.
+
+- 2026-09-19T08:07:32+00:00: Claimed by ar1312_coverage_worker.
