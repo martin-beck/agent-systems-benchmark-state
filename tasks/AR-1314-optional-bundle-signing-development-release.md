@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Optional runtime-bundle signing for development and tagged releases",
-  "updated_at": "2026-09-19T08:01:13+00:00",
+  "updated_at": "2026-09-19T08:05:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1314-optional-bundle-signing"
 }
 ---
@@ -128,3 +128,6 @@ reviewed signed input bundle and terminal attestation.
   canonical contract consistency rejects the checked-in runtime-bundle schema/v2 change as an
   in-place v1 schema change (909078c boundary, pending AR-1313/PR-231 recovery). Preserve PR and
   wait; no merge or gate weakening authorized.
+
+- 2026-09-19T08:05:26+00:00: Recorded command exit 0; command argv SHA-256
+  b07c29c89007f687cab8bf5202948b9caa89cf36afaab3e41ab3f0c660d9f948.
