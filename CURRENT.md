@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1313](tasks/AR-1313-historical-dco-909078c-repair.md): Historical DCO merge-integrity recovery | Repair the historical unsigned merge that blocks exact-main policy evidence. | Promote after task review; perform a forward-only signed DCO recovery for historical merge 909078c without rewriting published history, then run exact-main policy and post-merge gates. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -87,7 +93,6 @@ Never edit this file directly.
 | P0 | [AR-1227](tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. | - |
 | P0 | [AR-1309](tasks/AR-1309-reviewed-capacity-or-model-reduction.md): Reviewed full-exhaustive capacity or model-reduction contract | Provide a reviewed successor contract after terminal full-exhaustive capacity OOM. | Remain planned until the coordinator reviews the AR-1308 terminal OOM evidence and selects a separately scoped capacity contract or model-reduction profile; do not rerun or widen AR-1307 limits. | - |
 | P0 | [AR-1312](tasks/AR-1312-post-merge-coverage-floor.md): Post-merge workspace coverage floor repair | Repair the post-merge workspace coverage deficit without weakening the 90% floor. | No supported transfer can make AR-1312 promotable: handoffctl promote requires every dependency done, and AR-1310 remains blocked by the real 89.99% post-merge coverage failure. Keep planned/ownerless; repair AR-1310's coverage blocker first, then promote at a fresh revision. | - |
-| P0 | [AR-1313](tasks/AR-1313-historical-dco-909078c-repair.md): Historical DCO merge-integrity recovery | Repair the historical unsigned merge that blocks exact-main policy evidence. | Promote after task review; perform a forward-only signed DCO recovery for historical merge 909078c without rewriting published history, then run exact-main policy and post-merge gates. | - |
 | P0 | [AR-1314](tasks/AR-1314-optional-bundle-signing-development-release.md): Optional runtime-bundle signing for development and tagged releases | Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile. | Promote after task review; implement explicit unsigned development/release-bundle mode with checksums, SBOM/provenance, truthful metadata, and fail-closed default verification. | - |
 | P1 | [AR-0808](tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. | - |
 | P1 | [AR-0809](tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. | - |

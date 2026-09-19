@@ -10,11 +10,11 @@
   "plan": "../plans/AR-1313.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Repair the historical unsigned merge that blocks exact-main policy evidence.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Historical DCO merge-integrity recovery",
-  "updated_at": "2026-09-19T00:00:00+00:00",
+  "updated_at": "2026-09-19T07:45:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1313-historical-dco-909078c"
 }
 ---
@@ -31,3 +31,6 @@ Acceptance requires a signed, DCO-bearing recovery that makes the exact current 
 green, independent review, exact-head CI, protected merge, and post-merge verification. If the
 repository policy cannot be repaired without a separate approved history mechanism, leave this AR
 blocked with the exact failure and do not weaken the policy.
+
+- 2026-09-19T07:45:35+00:00: Dependencies are empty; promote authorized historical DCO recovery
+  repair.
