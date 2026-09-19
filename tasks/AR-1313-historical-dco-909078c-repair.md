@@ -1,11 +1,11 @@
 ---
 {
   "branch": "repair/ar-1313-historical-dco-909078c",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "68afee85219a30a9754c462042b3bc48a19a4ae9",
   "claim_expires": "2026-09-19T09:56:42+00:00",
   "depends_on": [],
   "id": "AR-1313",
-  "next_action": "Promote after task review; perform a forward-only signed DCO recovery for historical merge 909078c without rewriting published history, then run exact-main policy and post-merge gates.",
+  "next_action": "Monitor PR #231 exact head 68afee8; independently review and wait all required checks green before signed protected merge and post-merge verification.",
   "observed_branch": "repair/ar-1313-historical-dco-909078c",
   "observed_dirty": 0,
   "observed_head": "8e5598eab3b35a56fb8997bdd73dfd73f89f5cdc",
@@ -14,10 +14,10 @@
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Repair the historical unsigned merge that blocks exact-main policy evidence.",
-  "task_revision": 7,
+  "summary": "Forward-only signed DCO recovery candidate published as PR #231.",
+  "task_revision": 8,
   "title": "Historical DCO merge-integrity recovery",
-  "updated_at": "2026-09-19T07:56:42+00:00",
+  "updated_at": "2026-09-19T07:57:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1313-historical-dco-909078c"
 }
 ---
@@ -46,3 +46,13 @@ blocked with the exact failure and do not weaken the policy.
 - 2026-09-19T07:49:55+00:00: Heartbeat by ar1313-dco-recovery.
 
 - 2026-09-19T07:56:42+00:00: Heartbeat by ar1313-dco-recovery.
+
+- 2026-09-19T07:57:11+00:00: Prepared empty-tree forward-only SSH-signed commit
+  68afee85219a30a9754c462042b3bc48a19a4ae9 on current main 78a8e9fc2144623311e315fcc4e46c2831b0b2c1.
+  Historical unsigned merge 909078ced21f36e5a72590c9decf41ac56452212 remains unchanged and
+  preserved. Candidate tree equals current main; matching Signed-off-by verified; repository_policy
+  --base origin/main --head HEAD passed; merge_pr focused tests passed 9/9. Initial direct unittest
+  module invocation failed due operator import form, then signature policy discovery passed 16/16.
+  Published PR #231; headers green, remaining exact-head checks in progress. Handoff command
+  executed product mutation but state replication reported it requires the main checkout; state
+  heartbeat/update recorded from main checkout.

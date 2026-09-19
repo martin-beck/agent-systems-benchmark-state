@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1313](tasks/AR-1313-historical-dco-909078c-repair.md): Historical DCO merge-integrity recovery | Repair the historical unsigned merge that blocks exact-main policy evidence. | Promote after task review; perform a forward-only signed DCO recovery for historical merge 909078c without rewriting published history, then run exact-main policy and post-merge gates. | ar1313-dco-recovery |
+| P0 | [AR-1313](tasks/AR-1313-historical-dco-909078c-repair.md): Historical DCO merge-integrity recovery | Forward-only signed DCO recovery candidate published as PR #231. | Monitor PR #231 exact head 68afee8; independently review and wait all required checks green before signed protected merge and post-merge verification. | ar1313-dco-recovery |
 | P0 | [AR-1314](tasks/AR-1314-optional-bundle-signing-development-release.md): Optional runtime-bundle signing for development and tagged releases | Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile. | Add CLI/profile coverage, run full ASB gates, then review and publish the clean signed PR; formal AR-1307/1308 remain signature-required. | ar1314_bundle_profile |
 
 ## Blocked
