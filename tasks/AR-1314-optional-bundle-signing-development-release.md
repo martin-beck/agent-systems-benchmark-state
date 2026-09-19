@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1314-optional-bundle-signing",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-19T10:01:01+00:00",
+  "claim_expires": "2026-09-19T10:07:17+00:00",
   "depends_on": [],
   "id": "AR-1314",
   "next_action": "Wait for AR-1313/PR-231 canonical contract migration to merge and rerun PR-232 exact-head policy gates; do not rebase or weaken the schema gate.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Optional runtime-bundle signing for development and tagged releases",
-  "updated_at": "2026-09-19T08:06:30+00:00",
+  "updated_at": "2026-09-19T08:07:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1314-optional-bundle-signing"
 }
 ---
@@ -134,3 +134,5 @@ reviewed signed input bundle and terminal attestation.
 
 - 2026-09-19T08:05:39+00:00: Recorded command exit 0; command argv SHA-256
   00fec45df73a1c1108d5cc91c5fc7ff8b4cb9cb0e6d7ae4be78ff5f40a5c1bb2.
+
+- 2026-09-19T08:07:17+00:00: Heartbeat by ar1314_bundle_profile.
