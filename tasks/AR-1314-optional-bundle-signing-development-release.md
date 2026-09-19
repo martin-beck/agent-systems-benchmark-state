@@ -6,7 +6,7 @@
   "depends_on": [],
   "id": "AR-1314",
   "next_action": "Promote after task review; implement explicit unsigned development/release-bundle mode with checksums, SBOM/provenance, truthful metadata, and fail-closed default verification.",
-  "observed_branch": "DETACHED",
+  "observed_branch": "feature/ar-1314-optional-bundle-signing",
   "observed_dirty": 0,
   "observed_head": "78a8e9fc2144623311e315fcc4e46c2831b0b2c1",
   "owner": "ar1314_bundle_profile",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Optional runtime-bundle signing for development and tagged releases",
-  "updated_at": "2026-09-19T07:48:13+00:00",
+  "updated_at": "2026-09-19T07:48:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1314-optional-bundle-signing"
 }
 ---
