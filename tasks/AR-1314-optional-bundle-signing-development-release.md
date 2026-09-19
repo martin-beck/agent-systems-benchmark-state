@@ -7,17 +7,17 @@
   "id": "AR-1314",
   "next_action": "Run focused/full bundle and contract gates on the versioned v3 schema repair, then commit signed+DCO and update PR #232 exact head; preserve signature-required defaults.",
   "observed_branch": "feature/ar-1314-optional-bundle-signing",
-  "observed_dirty": 11,
-  "observed_head": "6fc467c12566e2738b1e0a5bb20fc9671944398d",
+  "observed_dirty": 0,
+  "observed_head": "dbfecb983e7d0592b958778419b58973e5397d5d",
   "owner": "ar1314_bundle_profile",
   "plan": "../plans/AR-1314.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Optional runtime-bundle signing for development and tagged releases",
-  "updated_at": "2026-09-19T08:11:20+00:00",
+  "updated_at": "2026-09-19T08:11:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1314-optional-bundle-signing"
 }
 ---
