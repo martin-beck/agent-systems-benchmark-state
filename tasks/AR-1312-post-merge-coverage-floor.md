@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the post-merge workspace coverage deficit without weakening the 90% floor.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Post-merge workspace coverage floor repair",
-  "updated_at": "2026-09-19T08:19:38+00:00",
+  "updated_at": "2026-09-19T08:19:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1312-post-merge-coverage-floor"
 }
 ---
@@ -105,3 +105,6 @@ must add meaningful tests for the uncovered paths and preserve the threshold.
   101; one asb-cli control test failed with CliError operation control state root is already owned
   at control.rs:3724. This is test-state contention, not a coverage-floor result.
   Capability-contract focused run passed 12/12 under instrumentation.
+
+- 2026-09-19T08:19:56+00:00: Recorded command exit 0; command argv SHA-256
+  c24f010114290ca19c2736656870bcc6df571c0bd7e9626977009cda287f837f.
