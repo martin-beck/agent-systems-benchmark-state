@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1312-post-merge-coverage-floor",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-19T10:09:52+00:00",
+  "claim_expires": "2026-09-19T10:16:51+00:00",
   "depends_on": [],
   "id": "AR-1312",
   "next_action": "Coverage reproduction failed in cargo llvm-cov workspace summary at 08:13:54: three asb-cli capability-contract tests found checkout default_*.profraw files and exited 101; add coverage-mode target sink, clean generated profiles, rerun focused/full coverage and record results.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the post-merge workspace coverage deficit without weakening the 90% floor.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Post-merge workspace coverage floor repair",
-  "updated_at": "2026-09-19T08:16:35+00:00",
+  "updated_at": "2026-09-19T08:16:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1312-post-merge-coverage-floor"
 }
 ---
@@ -90,3 +90,5 @@ must add meaningful tests for the uncovered paths and preserve the threshold.
 
 - 2026-09-19T08:16:35+00:00: Recorded command exit 0; command argv SHA-256
   0bce4a1fd30c4118a6df1f6b7ef4f5d5b70e8bd16590ce56b5030bcb8e9c149b.
+
+- 2026-09-19T08:16:51+00:00: Heartbeat by ar1312_coverage_worker.
