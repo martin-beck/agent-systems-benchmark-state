@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1312-post-merge-coverage-floor",
   "checkpoint_commit": "6958f08e1f6e715c735ba64cbe4cd34e62538abe",
-  "claim_expires": "2026-09-19T10:37:51+00:00",
+  "claim_expires": "2026-09-19T10:41:26+00:00",
   "depends_on": [],
   "id": "AR-1312",
   "next_action": "Review signed+DCO commit 6958f08, publish PR from clean exact worktree, wait exact-head CI; then verify post-merge workspace coverage remains >=90% and release AR-1312.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the post-merge workspace coverage deficit without weakening the 90% floor.",
-  "task_revision": 89,
+  "task_revision": 90,
   "title": "Post-merge workspace coverage floor repair",
-  "updated_at": "2026-09-19T08:39:16+00:00",
+  "updated_at": "2026-09-19T08:41:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1312-post-merge-coverage-floor"
 }
 ---
@@ -233,3 +233,5 @@ must add meaningful tests for the uncovered paths and preserve the threshold.
 
 - 2026-09-19T08:39:16+00:00: Recorded command exit 8; command argv SHA-256
   f93241e35ef86cad409c9aa18e084b5897b82ea42bd3d7347d0c81469dcc849e.
+
+- 2026-09-19T08:41:26+00:00: Heartbeat by ar1312_coverage_worker.
