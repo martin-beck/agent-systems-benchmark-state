@@ -7,7 +7,7 @@
   "id": "AR-1314",
   "next_action": "Wait for AR-1313/PR-231 canonical contract migration to merge and rerun PR-232 exact-head policy gates; do not rebase or weaken the schema gate.",
   "observed_branch": "feature/ar-1314-optional-bundle-signing",
-  "observed_dirty": 10,
+  "observed_dirty": 11,
   "observed_head": "6fc467c12566e2738b1e0a5bb20fc9671944398d",
   "owner": "ar1314_bundle_profile",
   "plan": "../plans/AR-1314.md",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile.",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Optional runtime-bundle signing for development and tagged releases",
-  "updated_at": "2026-09-19T08:08:01+00:00",
+  "updated_at": "2026-09-19T08:08:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1314-optional-bundle-signing"
 }
 ---
