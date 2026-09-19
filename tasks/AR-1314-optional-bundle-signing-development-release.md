@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Optional runtime-bundle signing for development and tagged releases",
-  "updated_at": "2026-09-19T08:09:47+00:00",
+  "updated_at": "2026-09-19T08:09:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1314-optional-bundle-signing"
 }
 ---
@@ -161,3 +161,6 @@ reviewed signed input bundle and terminal attestation.
   byte-for-byte to baseline 78a8e9f; new manifest schema version 2 is generated at schema/v3 with
   fixture v2, and contract catalog/registry now enrolls v3. The earlier contract gate exit 2 is
   explained: it correctly rejected the in-place v2 schema mutation. No gate was weakened.
+
+- 2026-09-19T08:09:59+00:00: Recorded command exit 0; command argv SHA-256
+  98b14edf2a525dfaacad74b297750831f9e57ed7549e2624c0a5420cc564f3e2.
