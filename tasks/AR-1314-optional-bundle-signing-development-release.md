@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Optional runtime-bundle signing for development and tagged releases",
-  "updated_at": "2026-09-19T08:12:51+00:00",
+  "updated_at": "2026-09-19T08:12:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1314-optional-bundle-signing"
 }
 ---
@@ -193,3 +193,6 @@ reviewed signed input bundle and terminal attestation.
 - 2026-09-19T08:12:51+00:00: Post-push monitoring query hit a transient handoffctl shared-lock
   timeout; heartbeat subsequently succeeded. No product or Git mutation occurred. Continue
   exact-head PR checks.
+
+- 2026-09-19T08:12:58+00:00: Recorded command exit 8; command argv SHA-256
+  67b214146cdfd6c1c5f6170b9a3386b06f161e916f48a3df7591b761eee501dd.
