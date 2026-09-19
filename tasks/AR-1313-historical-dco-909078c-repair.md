@@ -2,19 +2,19 @@
 {
   "branch": "repair/ar-1313-historical-dco-909078c",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-19T09:46:16+00:00",
   "depends_on": [],
   "id": "AR-1313",
   "next_action": "Promote after task review; perform a forward-only signed DCO recovery for historical merge 909078c without rewriting published history, then run exact-main policy and post-merge gates.",
-  "owner": "",
+  "owner": "ar1313-dco-recovery",
   "plan": "../plans/AR-1313.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair the historical unsigned merge that blocks exact-main policy evidence.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Historical DCO merge-integrity recovery",
-  "updated_at": "2026-09-19T07:45:35+00:00",
+  "updated_at": "2026-09-19T07:46:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1313-historical-dco-909078c"
 }
 ---
@@ -34,3 +34,5 @@ blocked with the exact failure and do not weaken the policy.
 
 - 2026-09-19T07:45:35+00:00: Dependencies are empty; promote authorized historical DCO recovery
   repair.
+
+- 2026-09-19T07:46:16+00:00: Claimed by ar1313-dco-recovery.
