@@ -1,11 +1,11 @@
 ---
 {
   "branch": "repair/ar-1312-post-merge-coverage-floor",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "6958f08e1f6e715c735ba64cbe4cd34e62538abe",
   "claim_expires": "2026-09-19T10:34:27+00:00",
   "depends_on": [],
   "id": "AR-1312",
-  "next_action": "Focused capability-contract coverage passes after target sink fix; full workspace coverage had a flaky exit 101 in control::tests::recording_campaign_plan_is_durable_idempotent_and_not_offline_ready due control state root already owned. Clean generated default_*.profraw, rerun serially, then run full gates.",
+  "next_action": "Review signed+DCO commit 6958f08, publish PR from clean exact worktree, wait exact-head CI; then verify post-merge workspace coverage remains >=90% and release AR-1312.",
   "observed_branch": "repair/ar-1312-post-merge-coverage-floor",
   "observed_dirty": 0,
   "observed_head": "6958f08e1f6e715c735ba64cbe4cd34e62538abe",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the post-merge workspace coverage deficit without weakening the 90% floor.",
-  "task_revision": 81,
+  "task_revision": 82,
   "title": "Post-merge workspace coverage floor repair",
-  "updated_at": "2026-09-19T08:36:15+00:00",
+  "updated_at": "2026-09-19T08:36:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1312-post-merge-coverage-floor"
 }
 ---
@@ -206,3 +206,10 @@ must add meaningful tests for the uncovered paths and preserve the threshold.
 
 - 2026-09-19T08:36:06+00:00: Recorded command exit 0; command argv SHA-256
   9d981684375b67f44a0570e045c3ccffaf089b0e94e5d2d6be02340d30c18efa.
+
+- 2026-09-19T08:36:39+00:00: Implemented signed+DCO test-only coverage repair at 6958f08.
+  Instrumented child commands now use target-directory profraw sinks in capability, lifecycle, and
+  workflow transcript tests; coverage-mode fallback is explicit. Focused
+  capability/lifecycle/workflow tests pass; clippy and full cargo test workspace pass; cargo
+  llvm-cov workspace/critical floors pass with workspace 90.48% (52,704 executed, 5,017 missed); no
+  checkout default profraw artifacts remain.
