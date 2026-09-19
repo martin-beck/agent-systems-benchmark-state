@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1313-historical-dco-909078c",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-19T09:49:55+00:00",
+  "claim_expires": "2026-09-19T09:56:42+00:00",
   "depends_on": [],
   "id": "AR-1313",
   "next_action": "Promote after task review; perform a forward-only signed DCO recovery for historical merge 909078c without rewriting published history, then run exact-main policy and post-merge gates.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the historical unsigned merge that blocks exact-main policy evidence.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Historical DCO merge-integrity recovery",
-  "updated_at": "2026-09-19T07:49:55+00:00",
+  "updated_at": "2026-09-19T07:56:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1313-historical-dco-909078c"
 }
 ---
@@ -44,3 +44,5 @@ blocked with the exact failure and do not weaken the policy.
   511eb56bd9de734ae5158efeece7d96f728bf9a018f231415a03a8ae05e79fdd.
 
 - 2026-09-19T07:49:55+00:00: Heartbeat by ar1313-dco-recovery.
+
+- 2026-09-19T07:56:42+00:00: Heartbeat by ar1313-dco-recovery.
