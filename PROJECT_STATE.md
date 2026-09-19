@@ -21,21 +21,22 @@ Generated from local Git and GitHub. Do not edit.
 | #150 | `dependabot/cargo/tempfile-3.27.0@d4eb5ee4a62e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump tempfile from 3.22.0 to 3.27.0 |
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
 | #214 | `feature/ar-1286-supervised-replay-lifecycle@eaf7fcbf42ae` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(replay): integrate runtime-owned supervised replay lifecycle |
-| #231 | `repair/ar-1313-historical-dco-909078c@68afee85219a` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(policy): recover historical DCO boundary |
+| #231 | `repair/ar-1313-historical-dco-909078c@68afee85219a` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(policy): recover historical DCO boundary |
+| #232 | `feature/ar-1314-optional-bundle-signing@6fc467c12566` | `main` | UNSTABLE | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, QUEUED:, IN_PROGRESS:, QUEUED:, IN_PROGRESS: | feat(bundle): add explicit unsigned profiles |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 35430795547 | `6fc467c12566` | pull_request | Fault assurance | queued:- |
+| 35430795113 | `6fc467c12566` | pull_request | Huawei MIT source headers | in_progress:- |
+| 35430794130 | `6fc467c12566` | pull_request | Rust verification | in_progress:- |
+| 35430794127 | `6fc467c12566` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 35430794123 | `6fc467c12566` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 35430794116 | `6fc467c12566` | pull_request | Formal assurance | queued:- |
+| 35430794115 | `6fc467c12566` | pull_request | Repository quality | in_progress:- |
+| 35430794112 | `6fc467c12566` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 35430672412 | `68afee85219a` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 35430672391 | `68afee85219a` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 35430672385 | `68afee85219a` | pull_request | Huawei MIT source headers | completed:success |
 | 35430672372 | `68afee85219a` | pull_request | Repository quality | in_progress:- |
-| 35430672367 | `68afee85219a` | pull_request | Rust verification | in_progress:- |
-| 35430672363 | `68afee85219a` | pull_request | Fault assurance | completed:success |
-| 35430672361 | `68afee85219a` | pull_request | Hosted portability and native qualification | completed:success |
-| 35430672349 | `68afee85219a` | pull_request | Formal assurance | in_progress:- |
-| 35404039692 | `78a8e9fc2144` | workflow_dispatch | Repository quality | completed:failure |
-| 35401437351 | `e2e3574ed2bb` | pull_request | Fault assurance | completed:success |
-| 35401437295 | `e2e3574ed2bb` | pull_request | Rust verification | completed:success |
-| 35401437280 | `e2e3574ed2bb` | pull_request | Emulated aarch64 portability | completed:success |
