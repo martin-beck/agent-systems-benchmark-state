@@ -7,7 +7,7 @@
   "id": "AR-1312",
   "next_action": "Promote and claim the independent coverage repair; preserve AR-1310 and AR-1313 as evidence, then raise exact workspace coverage above 90% without weakening the floor.",
   "observed_branch": "repair/ar-1312-post-merge-coverage-floor",
-  "observed_dirty": 0,
+  "observed_dirty": 7,
   "observed_head": "78a8e9fc2144623311e315fcc4e46c2831b0b2c1",
   "owner": "ar1312_coverage_worker",
   "plan": "../plans/AR-1312.md",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the post-merge workspace coverage deficit without weakening the 90% floor.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Post-merge workspace coverage floor repair",
-  "updated_at": "2026-09-19T08:09:52+00:00",
+  "updated_at": "2026-09-19T08:10:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1312-post-merge-coverage-floor"
 }
 ---
