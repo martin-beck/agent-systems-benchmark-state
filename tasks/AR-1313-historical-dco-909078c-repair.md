@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the historical unsigned merge that blocks exact-main policy evidence.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Historical DCO merge-integrity recovery",
-  "updated_at": "2026-09-19T07:46:16+00:00",
+  "updated_at": "2026-09-19T07:46:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1313-historical-dco-909078c"
 }
 ---
@@ -36,3 +36,6 @@ blocked with the exact failure and do not weaken the policy.
   repair.
 
 - 2026-09-19T07:46:16+00:00: Claimed by ar1313-dco-recovery.
+
+- 2026-09-19T07:46:38+00:00: Recorded command exit 0; command argv SHA-256
+  511eb56bd9de734ae5158efeece7d96f728bf9a018f231415a03a8ae05e79fdd.
