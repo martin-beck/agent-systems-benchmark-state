@@ -6,15 +6,18 @@
   "depends_on": [],
   "id": "AR-1313",
   "next_action": "Promote after task review; perform a forward-only signed DCO recovery for historical merge 909078c without rewriting published history, then run exact-main policy and post-merge gates.",
+  "observed_branch": "repair/ar-1313-historical-dco-909078c",
+  "observed_dirty": 0,
+  "observed_head": "8e5598eab3b35a56fb8997bdd73dfd73f89f5cdc",
   "owner": "ar1313-dco-recovery",
   "plan": "../plans/AR-1313.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the historical unsigned merge that blocks exact-main policy evidence.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Historical DCO merge-integrity recovery",
-  "updated_at": "2026-09-19T07:46:38+00:00",
+  "updated_at": "2026-09-19T07:46:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1313-historical-dco-909078c"
 }
 ---
