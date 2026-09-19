@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-19T10:11:33+00:00",
   "depends_on": [],
   "id": "AR-1314",
-  "next_action": "Run focused/full bundle and contract gates on the versioned v3 schema repair, then commit signed+DCO and update PR #232 exact head; preserve signature-required defaults.",
+  "next_action": "Wait for PR #232 exact-head CI after schema-v3 repair; if all required checks pass, independently review and merge through the established workflow, then reconcile AR-1314. Preserve signature-required defaults.",
   "observed_branch": "feature/ar-1314-optional-bundle-signing",
   "observed_dirty": 0,
   "observed_head": "dbfecb983e7d0592b958778419b58973e5397d5d",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile.",
-  "task_revision": 62,
+  "task_revision": 63,
   "title": "Optional runtime-bundle signing for development and tagged releases",
-  "updated_at": "2026-09-19T08:11:38+00:00",
+  "updated_at": "2026-09-19T08:11:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1314-optional-bundle-signing"
 }
 ---
@@ -181,3 +181,9 @@ reviewed signed input bundle and terminal attestation.
 
 - 2026-09-19T08:11:38+00:00: Recorded command exit 0; command argv SHA-256
   098910e1578d36efb36c35bd66079047ad4caa66775cbbd6f0d734be732afa5e.
+
+- 2026-09-19T08:11:56+00:00: Schema-v3 repair committed and pushed as signed+DCO
+  dbfecb983e7d0592b958778419b58973e5397d5d. Schema/v2 and fixture v1 match baseline 78a8e9f
+  byte-for-byte; manifest schema version 2 is represented by schema/v3 and fixture v2. Contract
+  consistency with baseline and all registered conformance commands passed; focused bundle tests
+  (22), Python bundle tests (3), and clippy passed. PR #232 updated; awaiting exact-head CI.

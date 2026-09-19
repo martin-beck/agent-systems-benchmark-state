@@ -1679,7 +1679,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1312](../tasks/AR-1312-post-merge-coverage-floor.md): Post-merge workspace coverage floor repair | ar1312_coverage_worker | Repair the post-merge workspace coverage deficit without weakening the 90&#37; floor. | Promote and claim the independent coverage repair; preserve AR-1310 and AR-1313 as evidence, then raise exact workspace coverage above 90&#37; without weakening the floor. |
-| P0 | [AR-1314](../tasks/AR-1314-optional-bundle-signing-development-release.md): Optional runtime-bundle signing for development and tagged releases | ar1314_bundle_profile | Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile. | Run focused/full bundle and contract gates on the versioned v3 schema repair, then commit signed+DCO and update PR #232 exact head; preserve signature-required defaults. |
+| P0 | [AR-1314](../tasks/AR-1314-optional-bundle-signing-development-release.md): Optional runtime-bundle signing for development and tagged releases | ar1314_bundle_profile | Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile. | Wait for PR #232 exact-head CI after schema-v3 repair; if all required checks pass, independently review and merge through the established workflow, then reconcile AR-1314. Preserve signature-required defaults. |
 
 ### Blocked (51)
 
