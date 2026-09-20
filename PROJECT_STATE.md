@@ -2,8 +2,8 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `f205ff90dbc9f544417f3916f827c8c23bfa2520`
-- Local origin/main: `f205ff90dbc9f544417f3916f827c8c23bfa2520`
+- Product remote main: `c04598ec443fc98721aaa0179ba5f3f65a4f7c32`
+- Local origin/main: `c04598ec443fc98721aaa0179ba5f3f65a4f7c32`
 - Primary worktree head: `bd7d10d4a760a84fa42de2b1fa9e97e8ea85ba09`
 
 ## Open pull requests
@@ -24,21 +24,20 @@ Generated from local Git and GitHub. Do not edit.
 | #235 | `dependabot/github_actions/taiki-e/install-action-2.87.12@de0353cce59e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.6 to 2.87.12 |
 | #236 | `dependabot/cargo/toml-1.1.6spec-1.1.0@9dc09c5208ab` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump toml from 0.8.23 to 1.1.6+spec-1.1.0 |
 | #237 | `dependabot/cargo/thiserror-2.0.20@83dba9288d9c` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump thiserror from 2.0.16 to 2.0.20 |
-| #240 | `docs/ar-1211-initial-setup@6b36fb08e74d` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | docs(tutorials): add initial setup contract |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 35542485678 | `c04598ec443f` | push | Huawei MIT source headers | completed:success |
+| 35542485638 | `c04598ec443f` | push | Emulated aarch64 portability | completed:success |
+| 35542485636 | `c04598ec443f` | push | Rust verification | completed:success |
+| 35542485618 | `c04598ec443f` | push | Fault assurance | completed:success |
+| 35542485599 | `c04598ec443f` | push | Repository quality | completed:success |
+| 35542485597 | `c04598ec443f` | push | Hosted portability and native qualification | completed:success |
+| 35542485591 | `c04598ec443f` | push | Formal assurance | completed:success |
 | 35542101189 | `6b36fb08e74d` | pull_request | Hosted portability and native qualification | completed:success |
-| 35542101166 | `6b36fb08e74d` | pull_request | Repository quality | in_progress:- |
+| 35542101166 | `6b36fb08e74d` | pull_request | Repository quality | completed:success |
 | 35542101121 | `6b36fb08e74d` | pull_request | Fault assurance | completed:success |
-| 35542101101 | `6b36fb08e74d` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 35542101101 | `6b36fb08e74d` | pull_request | Emulated aarch64 portability | completed:success |
 | 35542101029 | `6b36fb08e74d` | pull_request | Huawei MIT source headers | completed:success |
-| 35542101019 | `6b36fb08e74d` | pull_request | Formal assurance | completed:success |
-| 35542101014 | `6b36fb08e74d` | pull_request | Rust verification | completed:success |
-| 35542101011 | `6b36fb08e74d` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 35541996080 | `f205ff90dbc9` | push | Repository quality | completed:success |
-| 35541996075 | `f205ff90dbc9` | push | Hosted portability and native qualification | completed:success |
-| 35541996059 | `f205ff90dbc9` | push | Huawei MIT source headers | completed:success |
-| 35541996058 | `f205ff90dbc9` | push | Fault assurance | completed:success |
