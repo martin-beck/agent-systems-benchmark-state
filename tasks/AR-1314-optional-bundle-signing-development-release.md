@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1314-optional-bundle-signing",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-19T10:12:40+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1314",
   "next_action": "Wait for PR #232 exact-head CI after schema-v3 repair; if all required checks pass, independently review and merge through the established workflow, then reconcile AR-1314. Preserve signature-required defaults.",
   "observed_branch": "feature/ar-1314-optional-bundle-signing",
   "observed_dirty": 0,
   "observed_head": "dbfecb983e7d0592b958778419b58973e5397d5d",
-  "owner": "ar1314_bundle_profile",
+  "owner": "",
   "plan": "../plans/AR-1314.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile.",
-  "task_revision": 68,
+  "task_revision": 69,
   "title": "Optional runtime-bundle signing for development and tagged releases",
-  "updated_at": "2026-09-19T08:14:30+00:00",
+  "updated_at": "2026-09-20T22:41:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1314-optional-bundle-signing"
 }
 ---
@@ -202,3 +202,7 @@ reviewed signed input bundle and terminal attestation.
 
 - 2026-09-19T08:14:30+00:00: Recorded command exit 8; command argv SHA-256
   67b214146cdfd6c1c5f6170b9a3386b06f161e916f48a3df7591b761eee501dd.
+
+- 2026-09-20T22:41:41+00:00: Recovered expired claim formerly owned by ar1314_bundle_profile.
+  Recovered expired claim for unrelated optional-bundle-signing track; preserve its existing PR
+  evidence and reconcile independently.
