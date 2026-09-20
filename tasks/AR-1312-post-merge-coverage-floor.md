@@ -2,22 +2,22 @@
 {
   "branch": "repair/ar-1312-post-merge-coverage-floor",
   "checkpoint_commit": "6958f08e1f6e715c735ba64cbe4cd34e62538abe",
-  "claim_expires": "2026-09-19T10:41:26+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1312",
   "next_action": "Review signed+DCO commit 6958f08, publish PR from clean exact worktree, wait exact-head CI; then verify post-merge workspace coverage remains >=90% and release AR-1312.",
   "observed_branch": "repair/ar-1312-post-merge-coverage-floor",
   "observed_dirty": 0,
   "observed_head": "6958f08e1f6e715c735ba64cbe4cd34e62538abe",
-  "owner": "ar1312_coverage_worker",
+  "owner": "",
   "plan": "../plans/AR-1312.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Repair the post-merge workspace coverage deficit without weakening the 90% floor.",
-  "task_revision": 91,
+  "task_revision": 92,
   "title": "Post-merge workspace coverage floor repair",
-  "updated_at": "2026-09-19T08:45:05+00:00",
+  "updated_at": "2026-09-20T22:41:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1312-post-merge-coverage-floor"
 }
 ---
@@ -238,3 +238,7 @@ must add meaningful tests for the uncovered paths and preserve the threshold.
 
 - 2026-09-19T08:45:05+00:00: Recorded command exit 0; command argv SHA-256
   6d6a1e00ce5ff6d66975f1226a53478406c3884a0137cc0638a47db96a0bf125.
+
+- 2026-09-20T22:41:38+00:00: Recovered expired claim formerly owned by ar1312_coverage_worker.
+  Recovered expired claim after PR #238 merged and post-merge coverage verification passed;
+  successor work is complete and ready for reconciliation.

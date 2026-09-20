@@ -7,8 +7,13 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1312](tasks/AR-1312-post-merge-coverage-floor.md): Post-merge workspace coverage floor repair | Repair the post-merge workspace coverage deficit without weakening the 90% floor. | Review signed+DCO commit 6958f08, publish PR from clean exact worktree, wait exact-head CI; then verify post-merge workspace coverage remains >=90% and release AR-1312. | ar1312_coverage_worker |
 | P0 | [AR-1314](tasks/AR-1314-optional-bundle-signing-development-release.md): Optional runtime-bundle signing for development and tagged releases | Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile. | Wait for PR #232 exact-head CI after schema-v3 repair; if all required checks pass, independently review and merge through the established workflow, then reconcile AR-1314. Preserve signature-required defaults. | ar1314_bundle_profile |
+
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1312](tasks/AR-1312-post-merge-coverage-floor.md): Post-merge workspace coverage floor repair | Repair the post-merge workspace coverage deficit without weakening the 90% floor. | Review signed+DCO commit 6958f08, publish PR from clean exact worktree, wait exact-head CI; then verify post-merge workspace coverage remains >=90% and release AR-1312. | - |
 
 ## Blocked
 
