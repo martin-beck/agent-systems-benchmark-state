@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1324-auth-helper-control-contract",
-  "checkpoint_commit": "5c13a1d9f1fbad7c8fe7f2ddf21f8e07e6a452e2",
+  "checkpoint_commit": "bab01b7e0fddf2db4abf74c3ba0f994d34aa9c3d",
   "claim_expires": "2026-09-21T05:31:23+00:00",
   "depends_on": [],
   "id": "AR-1324",
@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Own the ASB control and runner backend for safe credential-helper invocation.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Authenticated credential-helper control contract",
-  "updated_at": "2026-09-21T04:23:31+00:00",
+  "updated_at": "2026-09-21T04:34:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1324-auth-helper-control-contract"
 }
 ---
@@ -74,3 +74,8 @@ never receive a raw credential or execute an arbitrary path.
   sandbox fixture label, preserving runtime behavior. Focused test passes; TMPDIR-isolated coverage
   sweep reaches passing reports (workspace 93.45% lines, critical asb-replay 96.47% lines). Pushed
   signed fix as 5c13a1d.
+
+- 2026-09-21T04:34:39+00:00: Hosted coverage remained below floor at 89.87% despite socket fixture
+  correction. Added a testable registration seam and comprehensive helper success/rejection coverage
+  without unsafe environment mutation. Local isolated coverage now passes workspace 90.43% lines and
+  critical package floors; focused helper test passes. Signed commit bab01b7 pushed to PR #248.
