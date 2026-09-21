@@ -1,13 +1,13 @@
 ---
 {
-  "branch": "feature/ar-1315-authenticated-agent-catalog-producer",
+  "branch": "feature/ar-1316-authenticated-agent-catalog-producer",
   "checkpoint_commit": "",
   "claim_expires": "",
   "depends_on": ["AR-1190", "AR-1191", "AR-1227", "AR-1310"],
-  "id": "AR-1315",
+  "id": "AR-1316",
   "next_action": "Implement and publish the authenticated ASB AgentCatalog producer; keep unavailable entries explicit and prove exact TUI wizard compatibility.",
   "owner": "",
-  "plan": "../plans/AR-1315.md",
+  "plan": "../plans/AR-1316.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "open",
@@ -15,7 +15,7 @@
   "task_revision": 1,
   "title": "Authenticated agent catalog producer",
   "updated_at": "2026-09-21T00:00:00+00:00",
-  "worktree_key": "agent-systems-benchmark-ar-1315-authenticated-agent-catalog-producer"
+  "worktree_key": "agent-systems-benchmark-ar-1316-authenticated-agent-catalog-producer"
 }
 ---
 

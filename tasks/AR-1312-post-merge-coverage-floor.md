@@ -5,7 +5,7 @@
   "claim_expires": "",
   "depends_on": [],
   "id": "AR-1312",
-  "next_action": "AR complete: signed coverage repair merged as PR #238 and post-merge workspace coverage verification passed; retain evidence and continue with AR-1315.",
+  "next_action": "AR complete: signed coverage repair merged as PR #238 and post-merge workspace coverage verification passed; retain evidence and continue with AR-1316.",
   "observed_branch": "repair/ar-1312-post-merge-coverage-floor",
   "observed_dirty": 0,
   "observed_head": "6958f08e1f6e715c735ba64cbe4cd34e62538abe",

@@ -8,7 +8,7 @@
     "AR-1151"
   ],
   "id": "AR-1310",
-  "next_action": "Implementation and coverage successor are merged; retain historical DCO finding as AR-1313 and continue with authenticated agent-catalog producer AR-1315.",
+  "next_action": "Implementation and coverage successor are merged; retain historical DCO finding as AR-1313 and continue with authenticated agent-catalog producer AR-1316.",
   "observed_branch": "feature/ar-1310-provider-capture-campaign",
   "observed_dirty": 0,
   "observed_head": "9a2f313e86332e35eec40b97a692026b497d46cd",
