@@ -10,11 +10,11 @@
   "plan": "../plans/AR-1322.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Promote only completely verified agents from a signed local release index.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Authenticated agent release-index source",
-  "updated_at": "2026-09-21T02:52:00+00:00",
+  "updated_at": "2026-09-21T02:50:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1322-authenticated-release-index-source"
 }
 ---
@@ -24,3 +24,6 @@ truthful unavailable roster. This AR supplies the missing bounded signed local
 release-index reader and the complete-closure promotion path. It must reuse the
 existing package/provenance types, reject unsigned/tampered/target-mismatched
 entries, and leave incomplete entries visible but unavailable.
+
+- 2026-09-21T02:50:34+00:00: Persistence/restart fencing is already merged; this AR owns only the
+  signed source and closure promotion.
