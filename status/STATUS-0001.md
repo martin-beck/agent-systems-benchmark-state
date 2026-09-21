@@ -1694,7 +1694,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1324](../tasks/AR-1324-auth-helper-control-contract.md): Authenticated credential-helper control contract | codex-ar1324 | Own the ASB control and runner backend for safe credential-helper invocation. | Run hosted ASB quality gates on ba140f8, then integrate exact ASB/TUI heads and perform live first-user wizard acceptance. |
+| P0 | [AR-1324](../tasks/AR-1324-auth-helper-control-contract.md): Authenticated credential-helper control contract | codex-ar1324 | Own the ASB control and runner backend for safe credential-helper invocation. | Run hosted ASB quality gates on ba32bc524355420e0658f68cbd76a5c19f30c3c7, then integrate exact ASB/TUI heads and perform live first-user wizard acceptance. |
 
 ### Open (2)
 
