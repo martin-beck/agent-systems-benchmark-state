@@ -7,16 +7,16 @@
 
 ## Portfolio overview
 
-**347 ARs tracked** across 7 active status categories.
+**347 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 50 |
 | **Planned** | Defined work awaiting promotion or dependencies | 59 |
 | **Future** | Deferred roadmap work | 1 |
-| **Done** | Accepted, integrated, and durably verified | 223 |
+| **Done** | Accepted, integrated, and durably verified | 224 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 11 |
 
@@ -415,7 +415,7 @@ flowchart LR
         AR_1316["AR-1316 - Open"]:::status_open
         AR_1319["AR-1319 - Done"]:::status_done
         AR_1320["AR-1320 - Planned"]:::status_planned
-        AR_1322["AR-1322 - In progress"]:::status_in_progress
+        AR_1322["AR-1322 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1688,12 +1688,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1322](../tasks/AR-1322-authenticated-release-index-source.md): Authenticated agent release-index source | codex-ar1322 | Promote only completely verified agents from a signed local release index. | Run post-merge live ASB-to-asb-tui catalog projection with a configured signed index; keep unavailable fallback when trust configuration is absent. |
-
 ### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -1765,3 +1759,4 @@ flowchart LR
 | P0 | [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md): Qualify terminal frontend usability and isolation | Unclaimed | Qualify the standalone TUI across terminals and platforms without perturbing benchmark results. | Independently qualify terminal UX, accessibility, isolation, packaging and recovery after the complete standalone wizard passes focused assurance. |
 | P0 | [AR-0817](../tasks/AR-0817-remote-tui-workflows.md): Build remote terminal frontend workflows | Unclaimed | Make secure two-machine benchmark operation clear and efficient in the terminal frontend. | Integrate polished connection, trust, remote launch, detach, reconnect, and management journeys into the TUI. |
 | P0 | [AR-0837](../tasks/AR-0837-containerized-runner-boundary.md): Qualify containerized runner boundary | Unclaimed | Provide the containerized workflow boundary required for safe trusted runner claims. | Define and qualify a digest-pinned workflow container boundary separating operator, listener, and job principals without host mounts. |
+| P0 | [AR-0873](../tasks/AR-0873-ci-workflow-captures.md): Generate asb-tui CI workflow screenshots | Unclaimed | Produce reproducible standalone TUI screenshots and text equivalents from workflows executed in CI. | Generate privacy-safe asb-tui workflow screenshots from real synthetic CI executions. |

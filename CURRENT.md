@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1322](tasks/AR-1322-authenticated-release-index-source.md): Authenticated agent release-index source | Promote only completely verified agents from a signed local release index. | Run post-merge live ASB-to-asb-tui catalog projection with a configured signed index; keep unavailable fallback when trust configuration is absent. | codex-ar1322 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -245,6 +239,7 @@ Never edit this file directly.
 | P0 | [AR-1310](tasks/AR-1310-provider-capture-campaign.md): Runtime-owned provider capture and recording campaign qualification | Runtime-owned provider capture and recording campaign qualification. | Implementation and coverage successor are merged; retain historical DCO finding as AR-1313 and continue with authenticated agent-catalog producer AR-1316. | - |
 | P0 | [AR-1312](tasks/AR-1312-post-merge-coverage-floor.md): Post-merge workspace coverage floor repair | Repair the post-merge workspace coverage deficit without weakening the 90% floor. | AR complete: signed coverage repair merged as PR #238 and post-merge workspace coverage verification passed; retain evidence and continue with AR-1316. | - |
 | P0 | [AR-1319](tasks/AR-1319-authenticated-agent-catalog-entry-contract.md): Authenticated agent catalog entry contract | Make incomplete authenticated agent catalog entries truthful and selectable only after verification. | Completed; preserve the merged contract as the prerequisite for AR-1316 producer and future verified release-index work. | - |
+| P0 | [AR-1322](tasks/AR-1322-authenticated-release-index-source.md): Authenticated agent release-index source | Promote only completely verified agents from a signed local release index. | Run post-merge live ASB-to-asb-tui catalog projection with a configured signed index; keep unavailable fallback when trust configuration is absent. | - |
 | P1 | [AR-0002](tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. | - |
 | P1 | [AR-0003](tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. | - |
 | P1 | [AR-0004](tasks/AR-0004-ar-status-document.md): Generate the visual AR status document | Render every AR, status, and dependency as an accessible visual state document. | Await independent immutable-head review of state PR 3 at eedd311; repair findings before coordinator integration. | - |
