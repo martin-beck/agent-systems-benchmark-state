@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1324](tasks/AR-1324-auth-helper-control-contract.md): Authenticated credential-helper control contract | Own the ASB control and runner backend for safe credential-helper invocation. | Monitor manually triggered exact-head workflows for ed61f86; merge only when all required checks pass, then perform ASB↔asb-tui first-user/live-provider wizard acceptance. | codex-ar1324 |
+| P0 | [AR-1324](tasks/AR-1324-auth-helper-control-contract.md): Authenticated credential-helper control contract | Own the ASB control and runner backend for safe credential-helper invocation. | Monitor fresh exact-head workflow set (runs 35562557167, 35562558271, 35562559725, 35562560905, 35562562277, 35562563329, 35562564553, 35562565748); merge only when all required checks pass, then perform ASB↔asb-tui first-user/live-provider wizard acceptance. | codex-ar1324 |
 
 ## Open
 
