@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1324-auth-helper-control-contract",
-  "checkpoint_commit": "4c32f13f8f71865479d01b1dbe7b8ee8ebd6e9df",
+  "checkpoint_commit": "6439b824dc7a850e7488ac2a3757801d286bfc8d",
   "claim_expires": "2026-09-21T05:31:23+00:00",
   "depends_on": [],
   "id": "AR-1324",
@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Own the ASB control and runner backend for safe credential-helper invocation.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Authenticated credential-helper control contract",
-  "updated_at": "2026-09-21T04:36:32+00:00",
+  "updated_at": "2026-09-21T04:42:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1324-auth-helper-control-contract"
 }
 ---
@@ -83,3 +83,7 @@ never receive a raw credential or execute an arbitrary path.
 - 2026-09-21T04:36:32+00:00: Hosted Rust gate found two clippy needless-borrow errors in helper
   registration seam. Corrected them; focused helper test and package clippy pass locally. Signed fix
   4c32f13 pushed to PR #248.
+
+- 2026-09-21T04:42:09+00:00: Hosted coverage reached 89.96%, narrowly under the 90% floor. Added
+  focused tests for empty provider/locator, missing executable, digest mismatch, and helper
+  rejection branches. Package clippy and focused test pass locally; signed 6439b82 pushed.
