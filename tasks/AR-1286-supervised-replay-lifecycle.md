@@ -14,16 +14,16 @@
   "next_action": "Await terminal post-merge workflows for protected main 2066e323; then verify exact merge/policy/evidence and close lifecycle acceptance.",
   "observed_branch": "feature/ar-1286-supervised-replay-lifecycle",
   "observed_dirty": 0,
-  "observed_head": "eaf7fcbf42aee720a208d9d356a163d42ce30fab",
+  "observed_head": "45ba18d3b6b5bcfedaeb6540ca291afe543f9b8c",
   "owner": "",
   "plan": "../plans/AR-1286.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "done",
   "summary": "Execute strict-replay cassettes through the runtime-owned supervised lifecycle.",
-  "task_revision": 98,
+  "task_revision": 99,
   "title": "Supervised strict-replay cassette lifecycle",
-  "updated_at": "2026-09-18T09:24:55+00:00",
+  "updated_at": "2026-09-21T00:58:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1286-supervised-replay-lifecycle"
 }
 ---
