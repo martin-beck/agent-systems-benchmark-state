@@ -3,13 +3,18 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1324](tasks/AR-1324-auth-helper-control-contract.md): Authenticated credential-helper control contract | Own the ASB control and runner backend for safe credential-helper invocation. | Add a versioned helper-discovery/invocation control operation backed by the existing sealed CredentialBackend; return only bounded typed receipt/status data. | codex-ar1324 |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1314](tasks/AR-1314-optional-bundle-signing-development-release.md): Optional runtime-bundle signing for development and tagged releases | Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile. | Wait for PR #232 exact-head CI after schema-v3 repair; if all required checks pass, independently review and merge through the established workflow, then reconcile AR-1314. Preserve signature-required defaults. | - |
 | P0 | [AR-1316](tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | Publish the verified ASB agent catalog required by the first-run setup wizard. | Persist the authenticated catalog snapshot/generation and complete live ASB-to-asb-tui wizard evidence; keep all entries unavailable until a verified release closure exists. | - |
-| P0 | [AR-1324](tasks/AR-1324-auth-helper-control-contract.md): Authenticated credential-helper control contract | Own the ASB control and runner backend for safe credential-helper invocation. | Add a versioned helper-discovery/invocation control operation backed by the existing sealed CredentialBackend; return only bounded typed receipt/status data. | - |
 
 ## Blocked
 
