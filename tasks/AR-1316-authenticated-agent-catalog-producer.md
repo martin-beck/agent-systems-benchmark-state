@@ -3,7 +3,7 @@
   "branch": "feature/ar-1316-authenticated-agent-catalog-producer",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1190", "AR-1191", "AR-1310"],
+  "depends_on": ["AR-1190", "AR-1191", "AR-1310", "AR-1318"],
   "id": "AR-1316",
   "next_action": "Implement and publish the authenticated ASB AgentCatalog producer; keep unavailable entries explicit and prove exact TUI wizard compatibility.",
   "owner": "",
