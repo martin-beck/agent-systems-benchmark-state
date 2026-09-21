@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-21T05:31:23+00:00",
   "depends_on": [],
   "id": "AR-1324",
-  "next_action": "Monitor fresh exact-head workflow set (runs 35562557167, 35562558271, 35562559725, 35562560905, 35562562277, 35562563329, 35562564553, 35562565748); merge only when all required checks pass, then perform ASB\u2194asb-tui first-user/live-provider wizard acceptance.",
+  "next_action": "Monitor pull_request-context checks from reopened PR #248 (runs 35562641313, 35562641328, 35562641357, 35562641373, 35562641375, 35562641394, 35562641439, 35562641374); merge only when all required checks pass, then perform ASB\u2194asb-tui first-user/live-provider wizard acceptance.",
   "owner": "codex-ar1324",
   "plan": "../plans/AR-1324.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Own the ASB control and runner backend for safe credential-helper invocation.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Authenticated credential-helper control contract",
-  "updated_at": "2026-09-21T04:53:49+00:00",
+  "updated_at": "2026-09-21T04:55:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1324-auth-helper-control-contract"
 }
 ---
@@ -98,3 +98,8 @@ never receive a raw credential or execute an arbitrary path.
   Rust/policy/aarch64; stale runs were cancelled. A fresh complete workflow set is now running on
   the same exact head ed61f865c99d139facb813e7344699595dc7155e. No merge was attempted against stale
   or cancelled evidence.
+
+- 2026-09-21T04:55:24+00:00: Manual workflow_dispatch policy failure was correctly rejected because
+  it scans unrelated historical merge commit 909078c without DCO. Closed/reopened PR #248 to
+  regenerate authoritative pull_request-context checks on exact head ed61f865; fresh pull_request
+  runs are now executing.
