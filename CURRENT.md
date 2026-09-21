@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1324](tasks/AR-1324-auth-helper-control-contract.md): Authenticated credential-helper control contract | Own the ASB control and runner backend for safe credential-helper invocation. | Monitor PR #248 hosted gates to green, then merge exact head and perform ASB↔asb-tui first-user/live-provider wizard acceptance. | codex-ar1324 |
+| P0 | [AR-1324](tasks/AR-1324-auth-helper-control-contract.md): Authenticated credential-helper control contract | Own the ASB control and runner backend for safe credential-helper invocation. | Monitor rerun of PR #248 hosted gates to green, then merge exact head and perform ASB↔asb-tui first-user/live-provider wizard acceptance. | codex-ar1324 |
 
 ## Open
 

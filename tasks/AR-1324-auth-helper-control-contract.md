@@ -1,20 +1,20 @@
 ---
 {
   "branch": "feature/ar-1324-auth-helper-control-contract",
-  "checkpoint_commit": "ba32bc524355420e0658f68cbd76a5c19f30c3c7",
+  "checkpoint_commit": "5c13a1d9f1fbad7c8fe7f2ddf21f8e07e6a452e2",
   "claim_expires": "2026-09-21T05:31:23+00:00",
   "depends_on": [],
   "id": "AR-1324",
-  "next_action": "Monitor PR #248 hosted gates to green, then merge exact head and perform ASB\u2194asb-tui first-user/live-provider wizard acceptance.",
+  "next_action": "Monitor rerun of PR #248 hosted gates to green, then merge exact head and perform ASB\u2194asb-tui first-user/live-provider wizard acceptance.",
   "owner": "codex-ar1324",
   "plan": "../plans/AR-1324.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Own the ASB control and runner backend for safe credential-helper invocation.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Authenticated credential-helper control contract",
-  "updated_at": "2026-09-21T04:12:48+00:00",
+  "updated_at": "2026-09-21T04:23:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1324-auth-helper-control-contract"
 }
 ---
@@ -68,3 +68,9 @@ never receive a raw credential or execute an arbitrary path.
 - 2026-09-21T04:12:48+00:00: Opened PR #248 from exact checkpoint
   ba32bc524355420e0658f68cbd76a5c19f30c3c7. Hosted checks are running; local locked workspace, fmt,
   and clippy gates are green.
+
+- 2026-09-21T04:23:31+00:00: Hosted Repository quality failed only because coverage hit a Unix
+  socket path-length fixture under hosted target paths. Reproduced locally; shortened the test-only
+  sandbox fixture label, preserving runtime behavior. Focused test passes; TMPDIR-isolated coverage
+  sweep reaches passing reports (workspace 93.45% lines, critical asb-replay 96.47% lines). Pushed
+  signed fix as 5c13a1d.
