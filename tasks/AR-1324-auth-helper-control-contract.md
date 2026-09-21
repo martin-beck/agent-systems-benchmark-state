@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-21T05:31:23+00:00",
   "depends_on": [],
   "id": "AR-1324",
-  "next_action": "Resolve the independent asb-metrics kernel test failure, then run hosted quality gates and exact-head ASB\u2194asb-tui live wizard acceptance for 7165884/c3855a6.",
+  "next_action": "Run hosted ASB quality gates on ba140f8, then integrate exact ASB/TUI heads and perform live first-user wizard acceptance.",
   "owner": "codex-ar1324",
   "plan": "../plans/AR-1324.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Own the ASB control and runner backend for safe credential-helper invocation.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Authenticated credential-helper control contract",
-  "updated_at": "2026-09-21T03:59:57+00:00",
+  "updated_at": "2026-09-21T04:07:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1324-auth-helper-control-contract"
 }
 ---
@@ -53,3 +53,8 @@ never receive a raw credential or execute an arbitrary path.
   workspace sweep is blocked by reproducible pre-existing asb-metrics test
   missing_malformed_and_unsafe_configuration_fail_closed (kernel.rs line 733); no auth/catalog code
   path is implicated. Keep this defect separate and fix before release qualification.
+
+- 2026-09-21T04:07:28+00:00: Fixed two independent quality issues exposed by the isolated full
+  sweep: metrics negative test now targets fixed public /tmp instead of TMPDIR; parallel
+  mini-SWE/OpenHands test scratch roots now include atomic sequence identities. Focused metrics and
+  full asb-agents suites pass; signed/DCO commits 71b5b63 and ba140f8.
