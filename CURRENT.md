@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1324](tasks/AR-1324-auth-helper-control-contract.md): Authenticated credential-helper control contract | Own the ASB control and runner backend for safe credential-helper invocation. | Run full ASB quality gates and add the matching asb-tui AR-1323 client operation before cross-repository live acceptance. | codex-ar1324 |
+| P0 | [AR-1324](tasks/AR-1324-auth-helper-control-contract.md): Authenticated credential-helper control contract | Own the ASB control and runner backend for safe credential-helper invocation. | Implement the asb-tui AR-1323 client operation and run cross-repository live first-user acceptance against signed ASB main. | codex-ar1324 |
 
 ## Open
 
