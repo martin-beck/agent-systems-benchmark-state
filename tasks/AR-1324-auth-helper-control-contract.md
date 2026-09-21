@@ -1,20 +1,20 @@
 ---
 {
   "branch": "feature/ar-1324-auth-helper-control-contract",
-  "checkpoint_commit": "6439b824dc7a850e7488ac2a3757801d286bfc8d",
+  "checkpoint_commit": "ed61f865c99d139facb813e7344699595dc7155e",
   "claim_expires": "2026-09-21T05:31:23+00:00",
   "depends_on": [],
   "id": "AR-1324",
-  "next_action": "Monitor rerun of PR #248 hosted gates to green, then merge exact head and perform ASB\u2194asb-tui first-user/live-provider wizard acceptance.",
+  "next_action": "Monitor manually triggered exact-head workflows for ed61f86; merge only when all required checks pass, then perform ASB\u2194asb-tui first-user/live-provider wizard acceptance.",
   "owner": "codex-ar1324",
   "plan": "../plans/AR-1324.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Own the ASB control and runner backend for safe credential-helper invocation.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Authenticated credential-helper control contract",
-  "updated_at": "2026-09-21T04:42:09+00:00",
+  "updated_at": "2026-09-21T04:50:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1324-auth-helper-control-contract"
 }
 ---
@@ -87,3 +87,9 @@ never receive a raw credential or execute an arbitrary path.
 - 2026-09-21T04:42:09+00:00: Hosted coverage reached 89.96%, narrowly under the 90% floor. Added
   focused tests for empty provider/locator, missing executable, digest mismatch, and helper
   rejection branches. Package clippy and focused test pass locally; signed 6439b82 pushed.
+
+- 2026-09-21T04:50:08+00:00: Prior hosted runs were stale for over an hour and were cancelled;
+  policy had failed at 89.97% coverage. Added helper registration/deadline/error branch coverage in
+  signed commit ed61f86. Manually triggered all required workflows on exact PR head
+  ed61f865c99d139facb813e7344699595dc7155e because pull_request checks did not auto-start after the
+  push.
