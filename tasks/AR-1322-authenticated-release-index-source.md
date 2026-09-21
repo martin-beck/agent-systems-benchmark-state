@@ -3,7 +3,7 @@
   "branch": "feature/ar-1322-authenticated-release-index-source",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1320"],
+  "depends_on": [],
   "id": "AR-1322",
   "next_action": "Define and implement the bounded local signed release-index envelope, explicit trust-root configuration, hostile mutation tests, and verified closure promotion into the persisted catalog.",
   "owner": "",
