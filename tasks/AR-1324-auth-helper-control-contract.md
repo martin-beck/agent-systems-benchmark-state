@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-21T05:31:23+00:00",
   "depends_on": [],
   "id": "AR-1324",
-  "next_action": "Run hosted ASB quality gates on ba32bc524355420e0658f68cbd76a5c19f30c3c7, then integrate exact ASB/TUI heads and perform live first-user wizard acceptance.",
+  "next_action": "Monitor PR #248 hosted gates to green, then merge exact head and perform ASB\u2194asb-tui first-user/live-provider wizard acceptance.",
   "owner": "codex-ar1324",
   "plan": "../plans/AR-1324.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Own the ASB control and runner backend for safe credential-helper invocation.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Authenticated credential-helper control contract",
-  "updated_at": "2026-09-21T04:11:37+00:00",
+  "updated_at": "2026-09-21T04:12:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1324-auth-helper-control-contract"
 }
 ---
@@ -64,3 +64,7 @@ never receive a raw credential or execute an arbitrary path.
   boundaries; parallel mini-swe/OpenHands scratch roots use atomic nonces. cargo fmt --all --
   --check passes; cargo clippy --locked --workspace --all-targets -D warnings completed without
   reported diagnostics. Production validation and security boundaries unchanged.
+
+- 2026-09-21T04:12:48+00:00: Opened PR #248 from exact checkpoint
+  ba32bc524355420e0658f68cbd76a5c19f30c3c7. Hosted checks are running; local locked workspace, fmt,
+  and clippy gates are green.
