@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1324-auth-helper-control-contract",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-21T05:27:39+00:00",
+  "claim_expires": "2026-09-21T05:31:23+00:00",
   "depends_on": [],
   "id": "AR-1324",
   "next_action": "Add a versioned helper-discovery/invocation control operation backed by the existing sealed CredentialBackend; return only bounded typed receipt/status data.",
@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Own the ASB control and runner backend for safe credential-helper invocation.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Authenticated credential-helper control contract",
-  "updated_at": "2026-09-21T03:27:39+00:00",
+  "updated_at": "2026-09-21T03:31:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1324-auth-helper-control-contract"
 }
 ---
@@ -29,3 +29,5 @@ never receive a raw credential or execute an arbitrary path.
   helper contract slice.
 
 - 2026-09-21T03:27:39+00:00: Claimed by codex-ar1324.
+
+- 2026-09-21T03:31:23+00:00: Heartbeat by codex-ar1324.
