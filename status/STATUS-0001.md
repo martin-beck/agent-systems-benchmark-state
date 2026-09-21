@@ -1324,7 +1324,6 @@ flowchart LR
     AR_1314 --> AR_1315
     AR_1316 --> AR_1320
     AR_1319 --> AR_1316
-    AR_1320 --> AR_1322
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -1684,8 +1683,8 @@ flowchart LR
 | [AR-1315](../tasks/AR-1315-1307-1308-development-profile-metadata.md) | [AR-1314](../tasks/AR-1314-optional-bundle-signing-development-release.md) | None |
 | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md) | [AR-1190](../tasks/AR-1190.md), [AR-1191](../tasks/AR-1191.md), [AR-1310](../tasks/AR-1310-provider-capture-campaign.md), [AR-1319](../tasks/AR-1319-authenticated-agent-catalog-entry-contract.md) | [AR-1320](../tasks/AR-1320-persisted-agent-release-index.md) |
 | [AR-1319](../tasks/AR-1319-authenticated-agent-catalog-entry-contract.md) | [AR-1310](../tasks/AR-1310-provider-capture-campaign.md) | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md) |
-| [AR-1320](../tasks/AR-1320-persisted-agent-release-index.md) | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md) | [AR-1322](../tasks/AR-1322-authenticated-release-index-source.md) |
-| [AR-1322](../tasks/AR-1322-authenticated-release-index-source.md) | [AR-1320](../tasks/AR-1320-persisted-agent-release-index.md) | None |
+| [AR-1320](../tasks/AR-1320-persisted-agent-release-index.md) | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md) | None |
+| [AR-1322](../tasks/AR-1322-authenticated-release-index-source.md) | None | None |
 
 ## Complete AR inventory
 
