@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1322](tasks/AR-1322-authenticated-release-index-source.md): Authenticated agent release-index source | Promote only completely verified agents from a signed local release index. | Define and implement the bounded local signed release-index envelope, explicit trust-root configuration, hostile mutation tests, and verified closure promotion into the persisted catalog. | codex-ar1322 |
+| P0 | [AR-1322](tasks/AR-1322-authenticated-release-index-source.md): Authenticated agent release-index source | Promote only completely verified agents from a signed local release index. | Run post-merge live ASB-to-asb-tui catalog projection with a configured signed index; keep unavailable fallback when trust configuration is absent. | codex-ar1322 |
 
 ## Open
 

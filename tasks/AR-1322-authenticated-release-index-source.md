@@ -1,20 +1,20 @@
 ---
 {
   "branch": "feature/ar-1322-authenticated-release-index-source",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "a4934fca0b528ac90d09fb537936584f5af0f75e",
   "claim_expires": "2026-09-21T04:50:41+00:00",
   "depends_on": [],
   "id": "AR-1322",
-  "next_action": "Define and implement the bounded local signed release-index envelope, explicit trust-root configuration, hostile mutation tests, and verified closure promotion into the persisted catalog.",
+  "next_action": "Run post-merge live ASB-to-asb-tui catalog projection with a configured signed index; keep unavailable fallback when trust configuration is absent.",
   "owner": "codex-ar1322",
   "plan": "../plans/AR-1322.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Promote only completely verified agents from a signed local release index.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Authenticated agent release-index source",
-  "updated_at": "2026-09-21T02:50:41+00:00",
+  "updated_at": "2026-09-21T03:20:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1322-authenticated-release-index-source"
 }
 ---
@@ -29,3 +29,7 @@ entries, and leave incomplete entries visible but unavailable.
   signed source and closure promotion.
 
 - 2026-09-21T02:50:41+00:00: Claimed by codex-ar1322.
+
+- 2026-09-21T03:20:10+00:00: PR #247 merged via locally SSH-signed two-parent merge a4934fca; all
+  hosted checks passed, including coverage after the signed positive-path test, Rust, policy,
+  platform, fuzz, model and AWQ gates.
