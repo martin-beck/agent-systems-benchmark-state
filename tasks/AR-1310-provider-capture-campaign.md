@@ -8,7 +8,7 @@
     "AR-1151"
   ],
   "id": "AR-1310",
-  "next_action": "Historical merge 909078c lacks Signed-off-by; exact-main rerun 35404039692 failed policy before coverage. Authorize a dedicated DCO repair AR; keep AR-1312 blocked.",
+  "next_action": "Implementation and coverage successor are merged; retain historical DCO finding as AR-1313 and continue with authenticated agent-catalog producer AR-1315.",
   "observed_branch": "feature/ar-1310-provider-capture-campaign",
   "observed_dirty": 0,
   "observed_head": "9a2f313e86332e35eec40b97a692026b497d46cd",
@@ -16,7 +16,7 @@
   "plan": "../plans/AR-1310.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "done",
   "summary": "Runtime-owned provider capture and recording campaign qualification.",
   "task_revision": 119,
   "title": "Runtime-owned provider capture and recording campaign qualification",
