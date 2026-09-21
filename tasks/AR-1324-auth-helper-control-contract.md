@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-21T05:31:23+00:00",
   "depends_on": [],
   "id": "AR-1324",
-  "next_action": "Implement the asb-tui AR-1323 client operation and run cross-repository live first-user acceptance against signed ASB main.",
+  "next_action": "Re-run ASB full quality gates at commit 2953465, then align the TUI AR-1323 implementation and perform live first-user acceptance.",
   "owner": "codex-ar1324",
   "plan": "../plans/AR-1324.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Own the ASB control and runner backend for safe credential-helper invocation.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Authenticated credential-helper control contract",
-  "updated_at": "2026-09-21T03:43:34+00:00",
+  "updated_at": "2026-09-21T03:47:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1324-auth-helper-control-contract"
 }
 ---
@@ -40,3 +40,7 @@ never receive a raw credential or execute an arbitrary path.
   non-overlapping temporary base; the prior default run failed only because the worktree under /tmp
   overlaps the repository safety guard. The focused descendant-cancellation test passes with the
   safe temporary base. ASB control/auth tests and clippy pass.
+
+- 2026-09-21T03:47:44+00:00: Hardened idempotency: helper resolution now occurs inside the durable
+  mutation closure, after replay detection, so retries do not invoke the helper twice. Signed/DCO
+  commit 2953465; cargo check passes.
