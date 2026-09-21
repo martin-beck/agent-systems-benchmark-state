@@ -10,11 +10,11 @@
   "plan": "../plans/AR-1324.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Own the ASB control and runner backend for safe credential-helper invocation.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Authenticated credential-helper control contract",
-  "updated_at": "2026-09-21T03:42:00+00:00",
+  "updated_at": "2026-09-21T03:27:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1324-auth-helper-control-contract"
 }
 ---
@@ -24,3 +24,6 @@ discovery, executable identity, timeout/cancellation, generation fencing and
 secret resolution. This AR adds the versioned ASB control schema and backend
 integration using the existing sealed helper implementation. The frontend must
 never receive a raw credential or execute an arbitrary path.
+
+- 2026-09-21T03:27:36+00:00: AR-1322 exact-main post-merge gates are green; open the runner-owned
+  helper contract slice.
