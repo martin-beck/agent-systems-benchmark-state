@@ -2,8 +2,8 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `77571ff978b886e24d35e29c0febb553a90a2d65`
-- Local origin/main: `027af7ad27da13b359b3f099699c42b03c6f394d`
+- Product remote main: `a4934fca0b528ac90d09fb537936584f5af0f75e`
+- Local origin/main: `a4934fca0b528ac90d09fb537936584f5af0f75e`
 - Primary worktree head: `bd7d10d4a760a84fa42de2b1fa9e97e8ea85ba09`
 
 ## Open pull requests
@@ -18,7 +18,7 @@ Generated from local Git and GitHub. Do not edit.
 | #150 | `dependabot/cargo/tempfile-3.27.0@d4eb5ee4a62e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump tempfile from 3.22.0 to 3.27.0 |
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
 | #231 | `repair/ar-1313-historical-dco-909078c@68afee85219a` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(policy): recover historical DCO boundary |
-| #232 | `feature/ar-1314-optional-bundle-signing@dbfecb983e7d` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(bundle): add explicit unsigned profiles |
+| #232 | `feature/ar-1314-optional-bundle-signing@dbfecb983e7d` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(bundle): add explicit unsigned profiles |
 | #234 | `dependabot/github_actions/actions/setup-java-6.0.1@4a444c279f41` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump actions/setup-java from 5.0.0 to 6.0.1 |
 | #235 | `dependabot/github_actions/taiki-e/install-action-2.87.12@de0353cce59e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.6 to 2.87.12 |
 | #236 | `dependabot/cargo/toml-1.1.6spec-1.1.0@9dc09c5208ab` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump toml from 0.8.23 to 1.1.6+spec-1.1.0 |
@@ -28,15 +28,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35553730089 | `77571ff978b8` | push | Hosted portability and native qualification | completed:success |
-| 35553730069 | `77571ff978b8` | push | Emulated aarch64 portability | completed:success |
-| 35553730056 | `77571ff978b8` | push | Rust verification | completed:failure |
-| 35553730050 | `77571ff978b8` | push | Fault assurance | completed:success |
-| 35553730034 | `77571ff978b8` | push | Formal assurance | completed:success |
-| 35553730032 | `77571ff978b8` | push | Huawei MIT source headers | completed:success |
-| 35553730030 | `77571ff978b8` | push | Repository quality | completed:failure |
-| 35553250844 | `5d51df3b7213` | pull_request | Repository quality | completed:success |
-| 35553250780 | `5d51df3b7213` | pull_request | Rust verification | completed:success |
-| 35553250773 | `5d51df3b7213` | pull_request | Emulated aarch64 portability | completed:success |
-| 35553250760 | `5d51df3b7213` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 35553250759 | `5d51df3b7213` | pull_request | Formal assurance | completed:success |
+| 35557135917 | `a4934fca0b52` | push | Huawei MIT source headers | completed:success |
+| 35557135915 | `a4934fca0b52` | push | Repository quality | in_progress:- |
+| 35557135844 | `a4934fca0b52` | push | Rust verification | completed:success |
+| 35557135810 | `a4934fca0b52` | push | Formal assurance | completed:success |
+| 35557135771 | `a4934fca0b52` | push | Hosted portability and native qualification | completed:success |
+| 35557135766 | `a4934fca0b52` | push | Emulated aarch64 portability | in_progress:- |
+| 35557135764 | `a4934fca0b52` | push | Fault assurance | completed:success |
+| 35556588312 | `d4a62f342b89` | pull_request | Formal assurance | completed:success |
+| 35556588311 | `d4a62f342b89` | pull_request | Repository quality | completed:success |
+| 35556588300 | `d4a62f342b89` | pull_request | Huawei MIT source headers | completed:success |
+| 35556588274 | `d4a62f342b89` | pull_request | Emulated aarch64 portability | completed:success |
+| 35556588254 | `d4a62f342b89` | pull_request | Hosted portability and native qualification | completed:success |
