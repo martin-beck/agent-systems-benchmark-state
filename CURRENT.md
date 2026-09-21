@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1324](tasks/AR-1324-auth-helper-control-contract.md): Authenticated credential-helper control contract | Own the ASB control and runner backend for safe credential-helper invocation. | Re-run ASB full quality gates at commit 2953465, then align the TUI AR-1323 implementation and perform live first-user acceptance. | codex-ar1324 |
+| P0 | [AR-1324](tasks/AR-1324-auth-helper-control-contract.md): Authenticated credential-helper control contract | Own the ASB control and runner backend for safe credential-helper invocation. | Run the final ASB hosted quality suite for commit 7165884, then qualify TUI commit c3855a6 against the v1.10 schema and execute live first-user wizard acceptance. | codex-ar1324 |
 
 ## Open
 
