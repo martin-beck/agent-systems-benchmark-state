@@ -15,14 +15,17 @@
   "plan": "../plans/AR-1211.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Teach first-time users to initialize ASB and add the first agent connection.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Initial setup and first agent connection tutorial",
-  "updated_at": "2026-09-20T22:41:50+00:00",
+  "updated_at": "2026-09-22T14:45:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1211"
 }
 ---
 
 Implement the linked tutorial and offline syntax fixtures. Do not run the tutorial commands or
 connect to an agent service in CI.
+
+- 2026-09-22T14:45:42+00:00: Dependency AR-1210 done; initial-setup-v1.json contract merged via PR
+  #240 and current main green.
