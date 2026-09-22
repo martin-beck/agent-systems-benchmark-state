@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**348 ARs tracked** across 7 active status categories.
+**351 ARs tracked** across 7 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 50 |
-| **Planned** | Defined work awaiting promotion or dependencies | 59 |
+| **Planned** | Defined work awaiting promotion or dependencies | 62 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 224 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -417,6 +417,9 @@ flowchart LR
         AR_1320["AR-1320 - Planned"]:::status_planned
         AR_1322["AR-1322 - Done"]:::status_done
         AR_1324["AR-1324 - In progress"]:::status_in_progress
+        AR_1325["AR-1325 - Planned"]:::status_planned
+        AR_1326["AR-1326 - Planned"]:::status_planned
+        AR_1327["AR-1327 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -638,6 +641,7 @@ flowchart LR
     AR_0310 --> AR_0318
     AR_0310 --> AR_0857
     AR_0310 --> AR_0863
+    AR_0310 --> AR_1325
     AR_0311 --> AR_0313
     AR_0311 --> AR_0315
     AR_0312 --> AR_0313
@@ -652,6 +656,7 @@ flowchart LR
     AR_0313 --> AR_0879
     AR_0313 --> AR_0891
     AR_0313 --> AR_1100
+    AR_0313 --> AR_1326
     AR_0314 --> AR_0315
     AR_0314 --> AR_0804
     AR_0314 --> AR_0808
@@ -662,6 +667,7 @@ flowchart LR
     AR_0315 --> AR_0891
     AR_0315 --> AR_0903
     AR_0315 --> AR_1110
+    AR_0315 --> AR_1327
     AR_0316 --> AR_0876
     AR_0317 --> AR_0857
     AR_0317 --> AR_0863
@@ -671,6 +677,7 @@ flowchart LR
     AR_0318 --> AR_0320
     AR_0318 --> AR_0869
     AR_0318 --> AR_0876
+    AR_0318 --> AR_1325
     AR_0319 --> AR_0876
     AR_0319 --> AR_1228
     AR_0319 --> AR_1230
@@ -1325,6 +1332,9 @@ flowchart LR
     AR_1314 --> AR_1315
     AR_1316 --> AR_1320
     AR_1319 --> AR_1316
+    AR_1325 --> AR_1326
+    AR_1325 --> AR_1327
+    AR_1326 --> AR_1327
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -1362,15 +1372,15 @@ flowchart LR
 | [AR-0307](../tasks/AR-0307-agent-goose.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md) | [AR-0311](../tasks/AR-0311-provider-openai.md), [AR-0312](../tasks/AR-0312-provider-ollama.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0316](../tasks/AR-0316-agent-runtime-bundles.md), [AR-0512](../tasks/AR-0512-replay-goose.md) |
 | [AR-0308](../tasks/AR-0308-agent-mini-swe.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md) | [AR-0311](../tasks/AR-0311-provider-openai.md), [AR-0312](../tasks/AR-0312-provider-ollama.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0316](../tasks/AR-0316-agent-runtime-bundles.md), [AR-0513](../tasks/AR-0513-replay-miniswe.md), [AR-0909](../tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md) |
 | [AR-0309](../tasks/AR-0309-agent-openhands.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md) | [AR-0311](../tasks/AR-0311-provider-openai.md), [AR-0312](../tasks/AR-0312-provider-ollama.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0316](../tasks/AR-0316-agent-runtime-bundles.md), [AR-0514](../tasks/AR-0514-replay-openhands.md), [AR-0521](../tasks/AR-0521-openhands-environment-pin.md) |
-| [AR-0310](../tasks/AR-0310-provider-profile-contract.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-1001](../tasks/AR-1001-experiment-comparability.md) | [AR-0311](../tasks/AR-0311-provider-openai.md), [AR-0312](../tasks/AR-0312-provider-ollama.md), [AR-0314](../tasks/AR-0314-recording-source-choice.md), [AR-0318](../tasks/AR-0318-credential-reference-boundary.md), [AR-0857](../tasks/AR-0857-openjiuwen-provenance.md), [AR-0863](../tasks/AR-0863-workbuddy-provenance.md) |
+| [AR-0310](../tasks/AR-0310-provider-profile-contract.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-1001](../tasks/AR-1001-experiment-comparability.md) | [AR-0311](../tasks/AR-0311-provider-openai.md), [AR-0312](../tasks/AR-0312-provider-ollama.md), [AR-0314](../tasks/AR-0314-recording-source-choice.md), [AR-0318](../tasks/AR-0318-credential-reference-boundary.md), [AR-0857](../tasks/AR-0857-openjiuwen-provenance.md), [AR-0863](../tasks/AR-0863-workbuddy-provenance.md), [AR-1325](../tasks/AR-1325-provider-openrouter.md) |
 | [AR-0311](../tasks/AR-0311-provider-openai.md) | [AR-0301](../tasks/AR-0301-agent-opencode.md), [AR-0302](../tasks/AR-0302-agent-opendesk.md), [AR-0303](../tasks/AR-0303-agent-aider.md), [AR-0304](../tasks/AR-0304-agent-codex.md), [AR-0305](../tasks/AR-0305-agent-gemini.md), [AR-0306](../tasks/AR-0306-agent-qwen-code.md), [AR-0307](../tasks/AR-0307-agent-goose.md), [AR-0308](../tasks/AR-0308-agent-mini-swe.md), [AR-0309](../tasks/AR-0309-agent-openhands.md), [AR-0310](../tasks/AR-0310-provider-profile-contract.md) | [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md) |
 | [AR-0312](../tasks/AR-0312-provider-ollama.md) | [AR-0301](../tasks/AR-0301-agent-opencode.md), [AR-0302](../tasks/AR-0302-agent-opendesk.md), [AR-0303](../tasks/AR-0303-agent-aider.md), [AR-0304](../tasks/AR-0304-agent-codex.md), [AR-0305](../tasks/AR-0305-agent-gemini.md), [AR-0306](../tasks/AR-0306-agent-qwen-code.md), [AR-0307](../tasks/AR-0307-agent-goose.md), [AR-0308](../tasks/AR-0308-agent-mini-swe.md), [AR-0309](../tasks/AR-0309-agent-openhands.md), [AR-0310](../tasks/AR-0310-provider-profile-contract.md) | [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md), [AR-0891](../tasks/AR-0891-local-inference-provider-profiles.md) |
-| [AR-0313](../tasks/AR-0313-all-agents-provider.md) | [AR-0311](../tasks/AR-0311-provider-openai.md), [AR-0312](../tasks/AR-0312-provider-ollama.md) | [AR-0314](../tasks/AR-0314-recording-source-choice.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md), [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md), [AR-0891](../tasks/AR-0891-local-inference-provider-profiles.md), [AR-1100](../tasks/AR-1100.md) |
+| [AR-0313](../tasks/AR-0313-all-agents-provider.md) | [AR-0311](../tasks/AR-0311-provider-openai.md), [AR-0312](../tasks/AR-0312-provider-ollama.md) | [AR-0314](../tasks/AR-0314-recording-source-choice.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md), [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md), [AR-0891](../tasks/AR-0891-local-inference-provider-profiles.md), [AR-1100](../tasks/AR-1100.md), [AR-1326](../tasks/AR-1326-openrouter-catalog-selection.md) |
 | [AR-0314](../tasks/AR-0314-recording-source-choice.md) | [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0310](../tasks/AR-0310-provider-profile-contract.md), [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-0318](../tasks/AR-0318-credential-reference-boundary.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md) |
-| [AR-0315](../tasks/AR-0315-provider-parity-conformance.md) | [AR-0301](../tasks/AR-0301-agent-opencode.md), [AR-0302](../tasks/AR-0302-agent-opendesk.md), [AR-0303](../tasks/AR-0303-agent-aider.md), [AR-0304](../tasks/AR-0304-agent-codex.md), [AR-0305](../tasks/AR-0305-agent-gemini.md), [AR-0306](../tasks/AR-0306-agent-qwen-code.md), [AR-0307](../tasks/AR-0307-agent-goose.md), [AR-0308](../tasks/AR-0308-agent-mini-swe.md), [AR-0309](../tasks/AR-0309-agent-openhands.md), [AR-0311](../tasks/AR-0311-provider-openai.md), [AR-0312](../tasks/AR-0312-provider-ollama.md), [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-0314](../tasks/AR-0314-recording-source-choice.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md) | [AR-0857](../tasks/AR-0857-openjiuwen-provenance.md), [AR-0863](../tasks/AR-0863-workbuddy-provenance.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md), [AR-0891](../tasks/AR-0891-local-inference-provider-profiles.md), [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-1110](../tasks/AR-1110.md) |
+| [AR-0315](../tasks/AR-0315-provider-parity-conformance.md) | [AR-0301](../tasks/AR-0301-agent-opencode.md), [AR-0302](../tasks/AR-0302-agent-opendesk.md), [AR-0303](../tasks/AR-0303-agent-aider.md), [AR-0304](../tasks/AR-0304-agent-codex.md), [AR-0305](../tasks/AR-0305-agent-gemini.md), [AR-0306](../tasks/AR-0306-agent-qwen-code.md), [AR-0307](../tasks/AR-0307-agent-goose.md), [AR-0308](../tasks/AR-0308-agent-mini-swe.md), [AR-0309](../tasks/AR-0309-agent-openhands.md), [AR-0311](../tasks/AR-0311-provider-openai.md), [AR-0312](../tasks/AR-0312-provider-ollama.md), [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-0314](../tasks/AR-0314-recording-source-choice.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md) | [AR-0857](../tasks/AR-0857-openjiuwen-provenance.md), [AR-0863](../tasks/AR-0863-workbuddy-provenance.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md), [AR-0891](../tasks/AR-0891-local-inference-provider-profiles.md), [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-1110](../tasks/AR-1110.md), [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md) |
 | [AR-0316](../tasks/AR-0316-agent-runtime-bundles.md) | [AR-0301](../tasks/AR-0301-agent-opencode.md), [AR-0302](../tasks/AR-0302-agent-opendesk.md), [AR-0303](../tasks/AR-0303-agent-aider.md), [AR-0304](../tasks/AR-0304-agent-codex.md), [AR-0305](../tasks/AR-0305-agent-gemini.md), [AR-0306](../tasks/AR-0306-agent-qwen-code.md), [AR-0307](../tasks/AR-0307-agent-goose.md), [AR-0308](../tasks/AR-0308-agent-mini-swe.md), [AR-0309](../tasks/AR-0309-agent-openhands.md) | [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md) |
 | [AR-0317](../tasks/AR-0317-runtime-bundle-manifest.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0701](../tasks/AR-0701-platform-manifests.md) | [AR-0857](../tasks/AR-0857-openjiuwen-provenance.md), [AR-0863](../tasks/AR-0863-workbuddy-provenance.md), [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md) |
-| [AR-0318](../tasks/AR-0318-credential-reference-boundary.md) | [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0310](../tasks/AR-0310-provider-profile-contract.md) | [AR-0314](../tasks/AR-0314-recording-source-choice.md), [AR-0319](../tasks/AR-0319-credential-fd-helper-resolvers.md), [AR-0320](../tasks/AR-0320-provider-credential-integration.md), [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md), [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md) |
+| [AR-0318](../tasks/AR-0318-credential-reference-boundary.md) | [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0310](../tasks/AR-0310-provider-profile-contract.md) | [AR-0314](../tasks/AR-0314-recording-source-choice.md), [AR-0319](../tasks/AR-0319-credential-fd-helper-resolvers.md), [AR-0320](../tasks/AR-0320-provider-credential-integration.md), [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md), [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md), [AR-1325](../tasks/AR-1325-provider-openrouter.md) |
 | [AR-0319](../tasks/AR-0319-credential-fd-helper-resolvers.md) | [AR-0318](../tasks/AR-0318-credential-reference-boundary.md) | [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md), [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) |
 | [AR-0320](../tasks/AR-0320-provider-credential-integration.md) | [AR-0318](../tasks/AR-0318-credential-reference-boundary.md) | [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md), [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md), [AR-1120](../tasks/AR-1120.md), [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) |
 | [AR-0401](../tasks/AR-0401-engineering-workloads.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md) | [AR-0402](../tasks/AR-0402-external-code-workloads.md), [AR-0403](../tasks/AR-0403-terminal-workloads.md), [AR-0405](../tasks/AR-0405-performance-workloads.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-0506](../tasks/AR-0506-replay-opencode.md), [AR-0507](../tasks/AR-0507-replay-opendesk.md), [AR-0508](../tasks/AR-0508-replay-aider.md), [AR-0509](../tasks/AR-0509-replay-codex.md), [AR-0510](../tasks/AR-0510-replay-gemini.md), [AR-0511](../tasks/AR-0511-replay-qwen.md), [AR-0512](../tasks/AR-0512-replay-goose.md), [AR-0513](../tasks/AR-0513-replay-miniswe.md), [AR-0514](../tasks/AR-0514-replay-openhands.md), [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-0703](../tasks/AR-0703-native-platform-lab.md), [AR-0705](../tasks/AR-0705-native-debian-capacity.md), [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md), [AR-0802](../tasks/AR-0802-executable-guides.md), [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0848](../tasks/AR-0848-native-x86-capacity.md), [AR-1002](../tasks/AR-1002-verifier-integrity.md), [AR-1004](../tasks/AR-1004-reliability-fairness.md), [AR-1007](../tasks/AR-1007-benchmark-validity.md) |
@@ -1687,6 +1697,9 @@ flowchart LR
 | [AR-1320](../tasks/AR-1320-persisted-agent-release-index.md) | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md) | None |
 | [AR-1322](../tasks/AR-1322-authenticated-release-index-source.md) | None | None |
 | [AR-1324](../tasks/AR-1324-auth-helper-control-contract.md) | None | None |
+| [AR-1325](../tasks/AR-1325-provider-openrouter.md) | [AR-0310](../tasks/AR-0310-provider-profile-contract.md), [AR-0318](../tasks/AR-0318-credential-reference-boundary.md) | [AR-1326](../tasks/AR-1326-openrouter-catalog-selection.md), [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md) |
+| [AR-1326](../tasks/AR-1326-openrouter-catalog-selection.md) | [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-1325](../tasks/AR-1325-provider-openrouter.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md) |
+| [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md) | [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-1325](../tasks/AR-1325-provider-openrouter.md), [AR-1326](../tasks/AR-1326-openrouter-catalog-selection.md) | None |
 
 ## Complete AR inventory
 
@@ -1758,11 +1771,7 @@ flowchart LR
 | P1 | [AR-1256](../tasks/AR-1256-bundled-mockagents-isolation.md): Execute bundled MockAgents transport in isolation | Unclaimed | Execute bundled MockAgents transport in isolation. | Implement bundled in-container MockAgents transport and digest-pinned arm64 QEMU evidence. |
 | P1 | [AR-1258](../tasks/AR-1258-docker-binfmt-qemu.md): Provision Docker binfmt/QEMU capability | Unclaimed | Provision and verify Docker binfmt/QEMU for multiarch qualification. | Await an approved maintenance window with zero Docker workloads; snapshot binfmt state, apply rollback-safe F registration, then rerun pinned arm64 Alpine /bin/true with network disabled and record sanitized interpreter, digest, provenance, timeout, and rollback evidence. Keep qualification blocked. |
 
-### Planned (59)
+### Planned (62)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0515](../tasks/AR-0515-replay-matrix.md): Aggregate replay conformance matrix | Unclaimed | Aggregate complete per-agent replay conformance. | Aggregate per-agent replay evidence into the complete supported-agent conformance matrix. |
-| P0 | [AR-0521](../tasks/AR-0521-openhands-environment-pin.md): Reproduce and pin the OpenHands replay environment | Unclaimed | Repair OpenHands replay environment provenance and reproducibility. | Define an immutable, reproducible OpenHands environment bundle and verifier. |
-| P0 | [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md): Qualify terminal frontend usability and isolation | Unclaimed | Qualify the standalone TUI across terminals and platforms without perturbing benchmark results. | Independently qualify terminal UX, accessibility, isolation, packaging and recovery after the complete standalone wizard passes focused assurance. |
-| P0 | [AR-0817](../tasks/AR-0817-remote-tui-workflows.md): Build remote terminal frontend workflows | Unclaimed | Make secure two-machine benchmark operation clear and efficient in the terminal frontend. | Integrate polished connection, trust, remote launch, detach, reconnect, and management journeys into the TUI. |
