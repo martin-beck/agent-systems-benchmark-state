@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1325.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Define one pinned credential-free OpenRouter provider profile for compatible ASB agent adapters.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Support a shared OpenRouter provider",
-  "updated_at": "2026-09-22T09:54:42+00:00",
+  "updated_at": "2026-09-22T14:10:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1325-provider-openrouter"
 }
 ---
@@ -30,3 +30,6 @@ https://openrouter.ai/api/v1, a dated model snapshot instead of a moving alias,
 explicit transport bounds, and the credential-free `OPENROUTER_API_KEY`
 reference boundary from AR-0318. No credential value enters the profile, and
 unsupported or lossy translations fail closed.
+
+- 2026-09-22T14:10:08+00:00: Dependencies AR-0310 and AR-0318 are done; promote the OpenRouter
+  provider profile for parallel implementation.
