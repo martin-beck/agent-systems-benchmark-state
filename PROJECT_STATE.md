@@ -4,7 +4,7 @@ Generated from local Git and GitHub. Do not edit.
 
 - Product remote main: `a4934fca0b528ac90d09fb537936584f5af0f75e`
 - Local origin/main: `a4934fca0b528ac90d09fb537936584f5af0f75e`
-- Primary worktree head: `bd7d10d4a760a84fa42de2b1fa9e97e8ea85ba09`
+- Primary worktree head: `a4934fca0b528ac90d09fb537936584f5af0f75e`
 
 ## Open pull requests
 
@@ -23,20 +23,21 @@ Generated from local Git and GitHub. Do not edit.
 | #235 | `dependabot/github_actions/taiki-e/install-action-2.87.12@de0353cce59e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.6 to 2.87.12 |
 | #236 | `dependabot/cargo/toml-1.1.6spec-1.1.0@9dc09c5208ab` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump toml from 0.8.23 to 1.1.6+spec-1.1.0 |
 | #237 | `dependabot/cargo/thiserror-2.0.20@83dba9288d9c` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump thiserror from 2.0.16 to 2.0.20 |
+| #248 | `feature/ar-1324-auth-helper-control-contract@ed61f865c99d` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(control): add authenticated credential-helper contract |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35557135917 | `a4934fca0b52` | push | Huawei MIT source headers | completed:success |
-| 35557135915 | `a4934fca0b52` | push | Repository quality | in_progress:- |
-| 35557135844 | `a4934fca0b52` | push | Rust verification | completed:success |
-| 35557135810 | `a4934fca0b52` | push | Formal assurance | completed:success |
-| 35557135771 | `a4934fca0b52` | push | Hosted portability and native qualification | completed:success |
-| 35557135766 | `a4934fca0b52` | push | Emulated aarch64 portability | in_progress:- |
-| 35557135764 | `a4934fca0b52` | push | Fault assurance | completed:success |
-| 35556588312 | `d4a62f342b89` | pull_request | Formal assurance | completed:success |
-| 35556588311 | `d4a62f342b89` | pull_request | Repository quality | completed:success |
-| 35556588300 | `d4a62f342b89` | pull_request | Huawei MIT source headers | completed:success |
-| 35556588274 | `d4a62f342b89` | pull_request | Emulated aarch64 portability | completed:success |
-| 35556588254 | `d4a62f342b89` | pull_request | Hosted portability and native qualification | completed:success |
+| 35706022545 | `a4934fca0b52` | schedule | Fault assurance | completed:success |
+| 35562641439 | `ed61f865c99d` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 35562641394 | `ed61f865c99d` | pull_request | Formal assurance | completed:success |
+| 35562641375 | `ed61f865c99d` | pull_request | Repository quality | completed:failure |
+| 35562641374 | `ed61f865c99d` | pull_request | Huawei MIT source headers | completed:success |
+| 35562641373 | `ed61f865c99d` | pull_request | Emulated aarch64 portability | completed:success |
+| 35562641357 | `ed61f865c99d` | pull_request | Hosted portability and native qualification | completed:success |
+| 35562641328 | `ed61f865c99d` | pull_request | Rust verification | completed:success |
+| 35562641313 | `ed61f865c99d` | pull_request | Fault assurance | completed:success |
+| 35562565748 | `ed61f865c99d` | workflow_dispatch | Huawei MIT source headers | completed:success |
+| 35562564553 | `ed61f865c99d` | workflow_dispatch | Agent Workflow Quality shadow | completed:success |
+| 35562563329 | `ed61f865c99d` | workflow_dispatch | Hosted portability and native qualification | completed:success |
