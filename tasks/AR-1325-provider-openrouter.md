@@ -10,17 +10,17 @@
   "id": "AR-1325",
   "next_action": "Pin the OpenRouter endpoint identity, dated model snapshot, transport bounds and OPENROUTER_API_KEY credential reference, then implement the credential-free provider profile with fail-closed validation.",
   "observed_branch": "feature/ar-1325-provider-openrouter",
-  "observed_dirty": 3,
-  "observed_head": "a4934fca0b528ac90d09fb537936584f5af0f75e",
+  "observed_dirty": 0,
+  "observed_head": "f47e3728a9721ea268a730abef0f953bd2956613",
   "owner": "ar1325-openrouter",
   "plan": "../plans/AR-1325.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define one pinned credential-free OpenRouter provider profile for compatible ASB agent adapters.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Support a shared OpenRouter provider",
-  "updated_at": "2026-09-22T14:57:14+00:00",
+  "updated_at": "2026-09-22T14:57:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1325-provider-openrouter"
 }
 ---
