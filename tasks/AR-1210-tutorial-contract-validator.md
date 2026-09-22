@@ -2,22 +2,22 @@
 {
   "branch": "docs/ar-1210-tutorial-contract",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-22T16:45:23+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1210",
   "next_action": "Do not release AR-1210 yet: post-merge Repository quality run 35054743606 failed because protected merge commit 4d4a0c4 lacks Signed-off-by. Coordinate merge-integrity/DCO repair and rerun exact-main assurance; preserve merged main and all evidence.",
   "observed_branch": "docs/ar-1210-tutorial-contract",
   "observed_dirty": 0,
   "observed_head": "3e475bda8f44836a169bc8fc679b430f6c993961",
-  "owner": "asb_tui_tutorial_20260922",
+  "owner": "",
   "plan": "../plans/AR-1210.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Define offline tutorial steps and validate them against the ASB CLI grammar.",
-  "task_revision": 91,
+  "task_revision": 92,
   "title": "Tutorial contract and syntax validator",
-  "updated_at": "2026-09-22T14:45:23+00:00",
+  "updated_at": "2026-09-22T14:45:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1210"
 }
 ---
@@ -266,3 +266,7 @@ be required.
   current-main evidence range per MERGE_INTEGRITY.md.
 
 - 2026-09-22T14:45:23+00:00: Claimed by asb_tui_tutorial_20260922.
+
+- 2026-09-22T14:45:24+00:00: Verified outcome and evidence: tutorial schema+validator+metadata
+  merged (4d4a0c4), validator wired into Repository quality CI, exact-main policy green on
+  a4934fca0b52.
