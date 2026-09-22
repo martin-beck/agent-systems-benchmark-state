@@ -8,15 +8,18 @@
   ],
   "id": "AR-1212",
   "next_action": "Implement the offline tutorial for checking agent benchmark readiness under the current configuration.",
+  "observed_branch": "docs/ar-1212-benchmark-readiness",
+  "observed_dirty": 0,
+  "observed_head": "a4934fca0b528ac90d09fb537936584f5af0f75e",
   "owner": "asb_tui_tutorial_20260922",
   "plan": "../plans/AR-1212.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach users to test configured-agent benchmark eligibility without running an agent.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Agent benchmark-readiness tutorial",
-  "updated_at": "2026-09-22T14:47:12+00:00",
+  "updated_at": "2026-09-22T14:47:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1212"
 }
 ---
