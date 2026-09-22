@@ -11,7 +11,7 @@
   "id": "AR-1327",
   "next_action": "Translate the OpenRouter profile through every compatible agent adapter projection, point the credential target at OPENROUTER_API_KEY, verify egress allowances, and run hostile parity conformance with exact evidence.",
   "observed_branch": "feature/ar-1327-openrouter-adapter-parity",
-  "observed_dirty": 0,
+  "observed_dirty": 4,
   "observed_head": "a4934fca0b528ac90d09fb537936584f5af0f75e",
   "owner": "",
   "plan": "../plans/AR-1327.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "planned",
   "summary": "Wire the OpenRouter endpoint and model through every compatible agent adapter projection and prove parity with hostile conformance evidence.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "OpenRouter adapter projections and parity conformance",
-  "updated_at": "2026-09-22T14:10:56+00:00",
+  "updated_at": "2026-09-22T14:56:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1327-openrouter-adapter-parity"
 }
 ---
