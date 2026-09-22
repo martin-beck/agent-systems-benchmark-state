@@ -7,13 +7,13 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1211](tasks/AR-1211-initial-setup-first-agent.md): Initial setup and first agent connection tutorial | Teach first-time users to initialize ASB and add the first agent connection. | Implement the syntax-checked tutorial for ASB initialization, first-agent registration, and agent connection setup. | asb_tui_tutorial_20260922 |
 | P1 | [AR-1325](tasks/AR-1325-provider-openrouter.md): Support a shared OpenRouter provider | Define one pinned credential-free OpenRouter provider profile for compatible ASB agent adapters. | Pin the OpenRouter endpoint identity, dated model snapshot, transport bounds and OPENROUTER_API_KEY credential reference, then implement the credential-free provider profile with fail-closed validation. | ar1325-openrouter |
 
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1211](tasks/AR-1211-initial-setup-first-agent.md): Initial setup and first agent connection tutorial | Teach first-time users to initialize ASB and add the first agent connection. | Implement the syntax-checked tutorial for ASB initialization, first-agent registration, and agent connection setup. | - |
 | P0 | [AR-1314](tasks/AR-1314-optional-bundle-signing-development-release.md): Optional runtime-bundle signing for development and tagged releases | Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile. | Wait for PR #232 exact-head CI after schema-v3 repair; if all required checks pass, independently review and merge through the established workflow, then reconcile AR-1314. Preserve signature-required defaults. | - |
 | P0 | [AR-1316](tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | Publish the verified ASB agent catalog required by the first-run setup wizard. | Persist the authenticated catalog snapshot/generation and complete live ASB-to-asb-tui wizard evidence; keep all entries unavailable until a verified release closure exists. | - |
 | P0 | [AR-1324](tasks/AR-1324-auth-helper-control-contract.md): Authenticated credential-helper control contract | Own the ASB control and runner backend for safe credential-helper invocation. | Monitor pull_request-context checks from reopened PR #248 (runs 35562641313, 35562641328, 35562641357, 35562641373, 35562641375, 35562641394, 35562641439, 35562641374); merge only when all required checks pass, then perform ASB↔asb-tui first-user/live-provider wizard acceptance. | - |
