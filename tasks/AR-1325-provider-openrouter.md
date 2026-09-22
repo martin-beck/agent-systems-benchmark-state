@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1325-provider-openrouter",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-22T18:24:48+00:00",
+  "claim_expires": "2026-09-22T18:57:44+00:00",
   "depends_on": [
     "AR-0310",
     "AR-0318"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define one pinned credential-free OpenRouter provider profile for compatible ASB agent adapters.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Support a shared OpenRouter provider",
-  "updated_at": "2026-09-22T14:57:18+00:00",
+  "updated_at": "2026-09-22T14:57:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1325-provider-openrouter"
 }
 ---
@@ -52,3 +52,5 @@ unsupported or lossy translations fail closed.
 
 - 2026-09-22T14:57:14+00:00: Recorded command exit 0; command argv SHA-256
   0b92c53b7b9ca737e3cbdf694ed0bf2de40458a4cac4bbd44969ff14326ad8eb.
+
+- 2026-09-22T14:57:44+00:00: Heartbeat by ar1325-openrouter.
