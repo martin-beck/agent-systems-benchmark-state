@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "profiles": {
+    "portable-smoke": {
+      "exhaustive": false,
+      "models": ["HandoffctlBinding"],
+      "claims": "smoke-only; no full formal evidence or release attestation"
+    },
+    "pr-fast": {
+      "exhaustive": false,
+      "models": ["HandoffctlFast", "OracleInteractionGates"],
+      "claims": "required bounded safety-only merge gate; no liveness, full formal evidence, or release attestation"
+    },
+    "pr-publication": {
+      "exhaustive": false,
+      "models": [
+        "HandoffctlBinding",
+        "HandoffctlLocks",
+        "HandoffctlRun",
+        "HandoffctlStorage",
+        "HandoffctlPR",
+        "HandoffctlRecovery"
+      ],
+      "claims": "all invariant families with bounded lifecycle coverage; no full two-process lifecycle cross-product or release attestation"
+    },
+    "full-exhaustive": {
+      "exhaustive": true,
+      "models": [
+        "HandoffctlBinding",
+        "HandoffctlLocks",
+        "HandoffctlRun",
+        "HandoffctlStorage",
+        "Handoffctl",
+        "HandoffctlRecovery"
+      ],
+      "claims": "all tracked models, configurations, invariants, and liveness properties"
+    }
+  },
+  "required_full_inputs": [
+    "formal/handoffctl/verify.sh",
+    "formal/handoffctl/*.tla",
+    "formal/handoffctl/*.cfg",
+    "tools/tlc_runner.py",
+    "formal/evidence.json",
+    "formal/tier-evidence.json"
+  ],
+  "non_claims": [
+    "portable-smoke does not prove exhaustive model coverage",
+    "pr-publication does not prove the full two-process lifecycle cross-product",
+    "portable address-space limits are not equivalent to cgroup RSS or swap accounting",
+    "neither tier proves implementation correspondence"
+  ]
+}

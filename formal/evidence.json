@@ -1,0 +1,47 @@
+{
+  "assumptions": [
+    "All cooperating readers and writers use the repository-common coordinator lock.",
+    "The local filesystem supplies POSIX flock semantics and atomic file replacement.",
+    "SQLite processes use separate connections to one database on a supported local filesystem.",
+    "A continuously runnable process is eventually scheduled and a lock holder eventually exits its critical section.",
+    "Successful local commits and SQLite transactions have the durability described by the coordinator contract.",
+    "The pinned TLC verifier is downloaded successfully and matches its recorded SHA-256 digest.",
+    "Cgroup-contained same-repository PR and weekly TLC invocations use a 4096 MiB JVM heap, 256 MiB metaspace, 128 MiB compressed class space, 256 KiB thread stacks, 6144 MiB memory and swap limits, 200 percent CPU quota, and 64 process slots after a host-capacity preflight. Fork smoke retains a 512 MiB heap and 3072 MiB address-space limit. Ordinary PR publication has a 1200 second per-model deadline; release-sensitive and weekly full-exhaustive runs have a 6000 second per-model deadline.",
+    "Formal jobs use one canonical host-wide flock admission lock and durable per-job queue and outcome records; admission does not stop coordinator workers."
+  ],
+  "bounds": {
+    "max_actors": 2,
+    "max_processes": 3,
+    "max_projects": 2,
+    "max_revision": 2,
+    "max_tasks": 2,
+    "max_worktrees": 2,
+    "model_count": 6,
+    "tlc_workers": 2,
+    "jvm_heap_mb": 4096,
+    "hosted_portable_jvm_heap_mb": 512,
+    "memory_max_mb": 6144,
+    "swap_max_mb": 6144,
+    "cpu_quota_percent": 200,
+    "tasks_max": 64,
+    "pr_runtime_max_seconds": 1200,
+    "runtime_max_seconds": 6000
+  },
+  "correspondence": "not-proven",
+  "evidence_class": "bounded-model",
+  "limitations": [
+    "TLC explores only the finite constants declared in the six tracked model configurations.",
+    "The evidence applies only to the specifications, configurations, invariants, and temporal properties executed by formal/handoffctl/verify.sh.",
+    "Implementation tests provide separate correspondence evidence but do not turn bounded model checking into an implementation proof.",
+    "Separate clones, network filesystems, non-cooperating writers, and failures outside the documented recovery boundary are excluded.",
+    "Same-repository PR publication and weekly full-exhaustive use systemd-run user cgroups. Fork PR smoke uses the portable timeout and prlimit boundary, which is not equivalent to cgroup RSS or swap accounting."
+  ],
+  "non_claims": [
+    "This evidence does not prove the Python implementation correct.",
+    "This evidence does not prove correctness of Python, Git, GitHub, SQLite, the operating system, the kernel, or the filesystem.",
+    "This evidence does not prove correctness of arbitrary commands executed through handoffctl run.",
+    "This evidence does not establish atomicity across power loss, storage loss, or arbitrary process termination."
+  ],
+  "schema_version": 1,
+  "scope": "handoffctl-coordination-models"
+}

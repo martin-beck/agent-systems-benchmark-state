@@ -15,14 +15,56 @@ import subprocess
 import sys
 import tempfile
 import textwrap
+import threading
 import time
 import uuid
+from collections import Counter
 from collections.abc import Iterator
 from pathlib import Path
 from typing import Any, cast
 
-from sqlite_storage import Backend, SQLiteBackend, create_database
-from status_renderer import StatusRenderError, graph_errors, render_status
+if __package__:
+    from .oracle_lifecycle import (
+        ArtifactRef,
+        GateError,
+        GateStage,
+        InteractionEvent,
+        apply_event,
+        gate_errors,
+        transition_allowed,
+    )
+    from .sqlite_storage import (
+        Backend,
+        SQLiteBackend,
+        create_database,
+    )
+    from .status_renderer import (
+        StatusRenderError,
+        graph_errors,
+        render_status,
+        render_status_pages_from_text,
+    )
+else:  # pragma: no cover - direct script execution
+    from oracle_lifecycle import (  # type: ignore[import-not-found,no-redef]
+        ArtifactRef,
+        GateError,
+        GateStage,
+        InteractionEvent,
+        apply_event,
+        gate_errors,
+        transition_allowed,
+    )
+    from sqlite_storage import (  # type: ignore[import-not-found,no-redef]
+        Backend,
+        SQLiteBackend,
+        create_database,
+    )
+    from status_renderer import (  # type: ignore[import-not-found,no-redef]
+        StatusRenderError,
+        graph_errors,
+        render_status,
+        render_status_pages_from_text,
+    )
 
 ROOT = Path(__file__).resolve().parent.parent
 TASKS = ROOT / "tasks"
@@ -37,6 +79,7 @@ DATABASE = RUNTIME / "coordinator.sqlite3"
 BACKENDS = ("sqlite", "git")
 LOCK_TIMEOUT_SECONDS = 10.0
 LOCK_POLL_SECONDS = 0.05
+_GUARD_CREATION_TOKEN = object()
 SUBPROCESS_TIMEOUT_SECONDS = 30.0
 COMMAND_TIMEOUT_SECONDS = 1800.0
 OBSERVATION_ATTEMPTS = 3
@@ -74,12 +117,14 @@ FIELDS = set(REQ) | {
     "observed_branch",
     "observed_head",
     "observed_dirty",
+    "superseded_by",
+    "oracle_gate",
 }
 type Meta = dict[str, Any]
 type Task = tuple[Path, Meta, str]
 type State = dict[str, Any]
 
-COORDINATOR_VERSION = "0.3.5"
+COORDINATOR_VERSION = "0.3.14"
 DEFAULT_PROJECT_SETTINGS: Meta = {
     "schema_version": 1,
     "project_id": "00000000-0000-4000-8000-000000000000",
@@ -219,6 +264,21 @@ def _assert_storage_binding(binding: Meta) -> None:
         SQLiteBackend(DATABASE, binding, TASKS).load_tasks()
 
 
+def configured_product_checkout(binding: Meta) -> tuple[Path, Path]:
+    """Validate runtime product identity and return its root and projects directory."""
+    runtime = config()
+    configured_github = runtime.get("github_repository")
+    if configured_github and repository_slug(configured_github) != repository_slug(
+        binding["product_repository"]
+    ):
+        raise RuntimeError("runtime product repository does not match coordinator binding")
+    projects_root = Path(str(runtime["projects_root"])).resolve()
+    product = projects_root / str(runtime["product_worktree"])
+    if git_repository_slug(product) != repository_slug(binding["product_repository"]):
+        raise RuntimeError("product checkout does not match coordinator binding")
+    return projects_root, product.resolve()
+
+
 def assert_project_binding() -> None:
     """Fail closed when this initialized coordinator is called from another project."""
     settings = project_settings()
@@ -232,24 +292,97 @@ def assert_project_binding() -> None:
     if git_repository_slug(ROOT) != repository_slug(binding["state_repository"]):
         raise RuntimeError("state repository does not match coordinator binding")
     allowed = [ROOT.resolve()]
+    projects_root: Path | None = None
     if CONFIG.exists():
-        runtime = config()
-        configured_github = runtime.get("github_repository")
-        if configured_github and repository_slug(configured_github) != repository_slug(
-            binding["product_repository"]
-        ):
-            raise RuntimeError("runtime product repository does not match coordinator binding")
-        product = Path(str(runtime["projects_root"])) / str(runtime["product_worktree"])
-        if git_repository_slug(product) != repository_slug(binding["product_repository"]):
-            raise RuntimeError("product checkout does not match coordinator binding")
-        allowed.append(product.resolve())
+        projects_root, product = configured_product_checkout(binding)
+        allowed.append(product)
     current = Path.cwd().resolve()
+    if projects_root is not None and inside(current, projects_root):
+        candidate = run(
+            ["git", "-C", str(current), "rev-parse", "--show-toplevel"], check=False
+        ).stdout.strip()
+        if candidate:
+            candidate_root = Path(candidate).resolve()
+            if (
+                candidate_root != ROOT.resolve()
+                and inside(candidate_root, projects_root)
+                and git_repository_slug(candidate_root)
+                == repository_slug(binding["product_repository"])
+            ):
+                allowed.append(candidate_root)
     if not any(inside(current, root) for root in allowed):
         raise RuntimeError("handoffctl must be called from its bound state or product project")
 
 
 class LockTimeoutError(RuntimeError):
     """The coordinator lock could not be acquired within its bounded deadline."""
+
+
+class LockOwnershipError(RuntimeError):
+    """A coordinator lock capability is missing, stale, or used incorrectly."""
+
+
+class CoordinatorLockGuard:
+    """Capability proving that this process and thread hold one lock inode."""
+
+    __slots__ = (
+        "_active",
+        "_exclusive",
+        "_fd",
+        "_identity",
+        "_owner_pid",
+        "_owner_thread",
+        "_path",
+        "_path_identity",
+    )
+
+    def __init__(self, path: Path, fd: int, *, exclusive: bool, _creation_token: object) -> None:
+        if _creation_token is not _GUARD_CREATION_TOKEN:
+            raise TypeError("CoordinatorLockGuard construction is private")
+        status = path.stat()
+        self._fd = fd
+        self._identity = (status.st_dev, status.st_ino)
+        self._path_identity = (status.st_dev, status.st_ino)
+        self._exclusive = exclusive
+        self._owner_pid = os.getpid()
+        self._owner_thread = threading.get_ident()
+        self._path = path.resolve()
+        self._active = True
+
+    @classmethod
+    def _create(cls, path: Path, fd: int, *, exclusive: bool) -> "CoordinatorLockGuard":
+        return cls(path, fd, exclusive=exclusive, _creation_token=_GUARD_CREATION_TOKEN)
+
+    @property
+    def path(self) -> Path:
+        return self._path
+
+    def assert_owned(self) -> None:
+        """Fail closed unless the original owner still holds the same inode."""
+        if not self._active:
+            raise LockOwnershipError("coordinator lock guard is inactive")
+        if not self._exclusive:
+            raise LockOwnershipError("coordinator lock guard is not exclusive")
+        if self._owner_pid != os.getpid() or self._owner_thread != threading.get_ident():
+            raise LockOwnershipError("coordinator lock guard has a different owner")
+        try:
+            status = os.fstat(self._fd)
+        except OSError as error:
+            raise LockOwnershipError("coordinator lock guard descriptor is unavailable") from error
+        if (status.st_dev, status.st_ino) != self._identity:
+            raise LockOwnershipError("coordinator lock guard descriptor identity changed")
+        current_path = coordinator_lock_path().resolve()
+        if self._path != current_path:
+            raise LockOwnershipError("coordinator lock guard path changed")
+        try:
+            path_status = current_path.stat()
+        except OSError as error:
+            raise LockOwnershipError("coordinator lock guard path is unavailable") from error
+        if (path_status.st_dev, path_status.st_ino) != self._path_identity:
+            raise LockOwnershipError("coordinator lock guard path identity changed")
+
+    def _invalidate(self) -> None:
+        self._active = False
 
 
 class SubprocessTimeoutError(RuntimeError):
@@ -377,7 +510,9 @@ def coordinator_lock_path() -> Path:
 
 
 @contextlib.contextmanager
-def locked(*, exclusive: bool = True, timeout: float = LOCK_TIMEOUT_SECONDS) -> Iterator[None]:
+def locked(
+    *, exclusive: bool = True, timeout: float = LOCK_TIMEOUT_SECONDS
+) -> Iterator[CoordinatorLockGuard]:
     lock_path = coordinator_lock_path()
     lock_path.parent.mkdir(mode=0o700, parents=True, exist_ok=True)
     fd = os.open(lock_path, os.O_CREAT | os.O_RDWR, 0o600)
@@ -396,8 +531,11 @@ def locked(*, exclusive: bool = True, timeout: float = LOCK_TIMEOUT_SECONDS) -> 
                         f"LOCK_TIMEOUT after {timeout:.1f}s acquiring {mode} coordinator lock"
                     ) from error
                 time.sleep(min(LOCK_POLL_SECONDS, remaining))
-        yield
+        guard = CoordinatorLockGuard._create(lock_path, fd, exclusive=exclusive)
+        yield guard
     finally:
+        if "guard" in locals():
+            guard._invalidate()
         fcntl.flock(fd, fcntl.LOCK_UN)
         os.close(fd)
 
@@ -682,6 +820,28 @@ def privacy_errors() -> list[str]:
     return errors
 
 
+def introduced_content_errors(before: dict[Path, str | None]) -> list[str]:
+    """Reject newly introduced privacy or size findings in mutation-owned files."""
+    errors: list[str] = []
+    for path, previous in before.items():
+        if not path.exists():
+            continue
+        relative = path.relative_to(ROOT)
+        current = path.read_text()
+        previous_text = previous or ""
+        previous_size = len(previous_text.encode()) if previous is not None else 0
+        if path.stat().st_size > 200000 and previous_size <= 200000:
+            errors.append(f"{relative}: state file exceeds 200 KiB")
+        for regex, label in PRIVATE:
+            if not privacy_pattern_applies(relative, label):
+                continue
+            old_matches = Counter(match.group(0) for match in regex.finditer(previous_text))
+            new_matches = Counter(match.group(0) for match in regex.finditer(current))
+            if new_matches - old_matches:
+                errors.append(f"{relative}: newly introduced {label}")
+    return errors
+
+
 def field_errors(path: Path, meta: Meta) -> list[str]:
     errors = [f"{path.name}: missing {name}" for name in REQ if name not in meta]
     errors.extend(f"{path.name}: unknown field {name}" for name in set(meta) - FIELDS)
@@ -705,6 +865,7 @@ def value_errors(path: Path, meta: Meta) -> list[str]:
         for name in ("title", "summary", "next_action", "updated_at")
         if not isinstance(meta.get(name), str) or not meta.get(name)
     )
+    errors.extend(f"{task_id}: {error}" for error in gate_errors(meta.get("oracle_gate")))
     return errors
 
 
@@ -721,6 +882,32 @@ def reference_errors(path: Path, meta: Meta) -> list[str]:
     plan = meta.get("plan")
     if plan and not (path.parent / plan).resolve().is_file():
         errors.append(f"{task_id}: missing plan {plan}")
+    return errors
+
+
+def supersession_errors(tasks: list[Task]) -> list[str]:
+    """Validate explicitly recorded supersession pointers without weakening old data."""
+    by_id = {meta.get("id"): meta for _, meta, _ in tasks}
+    errors: list[str] = []
+    for _, meta, _ in tasks:
+        successor = meta.get("superseded_by")
+        if successor is None:
+            continue
+        task_id = str(meta.get("id", ""))
+        if meta.get("status") != "superseded":
+            errors.append(f"{task_id}: superseded_by requires superseded status")
+            continue
+        if not isinstance(successor, str) or not re.fullmatch(r"AR-\d{4}", successor):
+            errors.append(f"{task_id}: invalid superseded_by")
+            continue
+        if successor == task_id:
+            errors.append(f"{task_id}: superseded_by self reference")
+            continue
+        if successor not in by_id:
+            errors.append(f"{task_id}: missing superseded_by task {successor}")
+            continue
+        if not dependency_satisfied(successor, tasks):
+            errors.append(f"{task_id}: superseded_by chain does not end in done task")
     return errors
 
 
@@ -778,9 +965,71 @@ def claim_errors(
     return errors
 
 
+def mutation_global_errors(tasks: list[Task]) -> list[str]:
+    """Check global identities, dependency graph, and active-key uniqueness."""
+    errors: list[str] = []
+    ids: dict[str, Path] = {}
+    active: dict[str, dict[str, str]] = {
+        "owner": {},
+        "worktree_key": {},
+        "branch": {},
+    }
+    for path, meta, _ in tasks:
+        task_id = str(meta.get("id", ""))
+        if task_id in ids:
+            errors.append(f"duplicate {task_id}")
+        ids[task_id] = path
+        if meta.get("status") != "in_progress":
+            continue
+        for field, seen in active.items():
+            value = meta.get(field)
+            if value and value in seen:
+                errors.append(f"{task_id}: active {field} also used by {seen[value]}")
+            elif value:
+                seen[value] = task_id
+    errors.extend(graph_errors(tasks))
+    errors.extend(supersession_errors(tasks))
+    return errors
+
+
+def mutation_errors(path: Path, before: dict[Path, str | None]) -> list[str]:
+    """Validate a Git mutation without gating on unrelated repository findings."""
+    tasks = all_tasks()
+    selected = [meta for candidate, meta, _ in tasks if candidate == path]
+    if len(selected) != 1:
+        return [f"{path.name}: mutation target is not unique"]
+    errors = basic_task_errors(path, selected[0])
+    errors.extend(claim_errors(selected[0], {}, {}, {}))
+    errors.extend(mutation_global_errors(tasks))
+    errors.extend(generated_view_errors(tasks))
+    errors.extend(introduced_content_errors(before))
+    return errors
+
+
 def render_status_view(tasks: list[Task]) -> str:
     """Render the public task dashboard with coordinator presentation constants."""
     return render_status(tasks, STATUSES, PRIORITIES, str(project_settings()["project_title"]))
+
+
+def render_status_views(tasks: list[Task]) -> dict[str, str]:
+    """Render the complete status view through the compatibility render hook."""
+    return render_status_pages_from_text(render_status_view(tasks))
+
+
+def status_projection_errors(expected: dict[str, str]) -> list[str]:
+    """Compare status pages and report missing, changed, or orphaned files."""
+    errors = [
+        f"{relative} differs from generated tasks"
+        for relative, content in expected.items()
+        if not (ROOT / relative).exists() or (ROOT / relative).read_text() != content
+    ]
+    expected_paths = {ROOT / relative for relative in expected}
+    errors.extend(
+        f"{status.relative_to(ROOT)} is stale"
+        for status in sorted((ROOT / "status").glob("STATUS-*.md"))
+        if status not in expected_paths
+    )
+    return errors
 
 
 def generated_view_errors(tasks: list[Task]) -> list[str]:
@@ -794,13 +1043,11 @@ def generated_view_errors(tasks: list[Task]) -> list[str]:
     if not project_settings()["status_view"]:
         return errors
     try:
-        expected_status = render_status_view(tasks)
+        expected_status = render_status_views(tasks)
     except StatusRenderError as error:
         errors.extend(str(error).splitlines())
     else:
-        status = ROOT / "STATUS.md"
-        if not status.exists() or status.read_text() != expected_status:
-            errors.append("STATUS.md differs from generated tasks")
+        errors.extend(status_projection_errors(expected_status))
     return errors
 
 
@@ -819,6 +1066,7 @@ def validate(*, live: bool = False) -> list[str]:
         errors.extend(basic_task_errors(path, meta))
         errors.extend(claim_errors(meta, active_owners, active_worktrees, active_branches))
     errors.extend(graph_errors(tasks))
+    errors.extend(supersession_errors(tasks))
     errors.extend(generated_view_errors(tasks))
     errors.extend(privacy_errors())
     if live:
@@ -970,6 +1218,9 @@ def generated_paths() -> list[Path]:
     names = ["CURRENT.md", "PROJECT_STATE.md", "WORKTREES.md"]
     if project_settings()["status_view"]:
         names.append("STATUS.md")
+        names.extend(
+            str(path.relative_to(ROOT)) for path in sorted((ROOT / "status").glob("STATUS-*.md"))
+        )
     return [ROOT / name for name in names]
 
 
@@ -987,7 +1238,8 @@ def write_generated_views(tasks: list[Task], state: Meta) -> None:
     """Atomically refresh every configured generated projection."""
     atomic(ROOT / "CURRENT.md", render_current(tasks))
     if project_settings()["status_view"]:
-        atomic(ROOT / "STATUS.md", render_status_view(tasks))
+        expected = render_status_views(tasks)
+        write_status_views(expected)
     project, worktrees = live_docs(state)
     atomic(ROOT / "PROJECT_STATE.md", project)
     atomic(ROOT / "WORKTREES.md", worktrees)
@@ -1013,7 +1265,9 @@ def reconcile(*, do_commit: bool, push: bool = False) -> bool:
             errors = validate(live=False)
             if errors:
                 raise RuntimeError("validation failed:\n" + "\n".join(errors))
-            touched = changed_paths(before)
+            for path in generated_paths():
+                before.setdefault(path, None)
+            touched = changed_paths(before, include_deleted=True)
             title = project_settings()["project_title"]
             committed = commit(f"chore(state): reconcile {title}", touched) if do_commit else False
             head = run(["git", "-C", str(ROOT), "rev-parse", "HEAD"], check=False).stdout.strip()
@@ -1090,15 +1344,48 @@ def locate(task_id: str) -> Task:
     raise RuntimeError(f"unknown task {task_id}")
 
 
+def dependency_satisfied(dependency_id: str, tasks: list[Task]) -> bool:
+    """Return whether one dependency is complete or explicitly superseded.
+
+    A superseded task is not completion by itself. It satisfies a dependency
+    only when its ``superseded_by`` field names an existing task that is done,
+    or a finite chain of explicitly superseding tasks ending in one that is
+    done. Malformed, missing, self-referential, cyclic, or unfinished
+    successors therefore remain fail-closed and block the transition.
+    """
+    by_id = {meta.get("id"): meta for _, meta, _ in tasks}
+    seen: set[str] = set()
+    current = dependency_id
+    while True:
+        if current in seen:
+            return False
+        seen.add(current)
+        dependency = by_id.get(current)
+        if dependency is None:
+            return False
+        status = dependency.get("status")
+        if status == "done":
+            return True
+        if status != "superseded":
+            return False
+        successor = dependency.get("superseded_by")
+        if not isinstance(successor, str) or not re.fullmatch(r"AR-\d{4}", successor):
+            return False
+        current = successor
+
+
 def apply_claim(args: argparse.Namespace, meta: Meta, tasks: list[Task]) -> str:
     if args.lease_minutes <= 0:
         raise RuntimeError("lease must be positive")
     if meta.get("status") != "open":
         raise RuntimeError(f"{args.task} is not open")
-    states = {item["id"]: item["status"] for _, item, _ in tasks}
-    pending = [item for item in meta.get("depends_on", []) if states.get(item) != "done"]
+    pending = [item for item in meta.get("depends_on", []) if not dependency_satisfied(item, tasks)]
     if pending:
         raise RuntimeError("unfinished dependencies: " + ", ".join(pending))
+    try:
+        transition_allowed(meta, "claim")
+    except GateError as error:
+        raise RuntimeError(str(error)) from error
     held = [
         item["id"]
         for _, item, _ in tasks
@@ -1143,10 +1430,13 @@ def apply_promote(args: argparse.Namespace, meta: Meta, tasks: list[Task]) -> st
         raise RuntimeError(f"{args.task} is not planned")
     if meta.get("owner") or meta.get("claim_expires"):
         raise RuntimeError(f"{args.task} has active claim metadata")
-    states = {item["id"]: item["status"] for _, item, _ in tasks}
-    pending = [item for item in meta.get("depends_on", []) if states.get(item) != "done"]
+    pending = [item for item in meta.get("depends_on", []) if not dependency_satisfied(item, tasks)]
     if pending:
         raise RuntimeError("unfinished dependencies: " + ", ".join(pending))
+    try:
+        transition_allowed(meta, "promote")
+    except GateError as error:
+        raise RuntimeError(str(error)) from error
     if not args.note.strip():
         raise RuntimeError("promotion note must not be empty")
     meta["status"] = "open"
@@ -1196,14 +1486,14 @@ def require_promotion_preflight(kind: str) -> None:
     """Reject a promotion before writes when its source checkout is ambiguous."""
     if kind not in ("promote", "resume"):
         return
-    errors = validate(live=False)
+    errors = generated_view_errors(all_tasks())
     if errors:
         raise RuntimeError("promotion preflight failed:\n" + "\n".join(errors))
     if dirty_state_paths():
         raise RuntimeError("promotion requires a clean state repository")
 
 
-def apply_owned_change(args: argparse.Namespace, kind: str, meta: Meta) -> str:
+def apply_owned_change(args: argparse.Namespace, kind: str, meta: Meta) -> str:  # noqa: C901
     if meta.get("owner") != args.owner:
         raise RuntimeError(f"{args.task} is owned by {meta.get('owner') or 'nobody'}")
     if kind == "heartbeat":
@@ -1216,6 +1506,10 @@ def apply_owned_change(args: argparse.Namespace, kind: str, meta: Meta) -> str:
         )
         return f"Heartbeat by {args.owner}."
     if kind == "release":
+        try:
+            transition_allowed(meta, "release")
+        except GateError as error:
+            raise RuntimeError(str(error)) from error
         meta["status"] = args.status
         meta["owner"] = ""
         meta["claim_expires"] = ""
@@ -1233,12 +1527,90 @@ def apply_owned_change(args: argparse.Namespace, kind: str, meta: Meta) -> str:
     return str(args.note)
 
 
+def _artifact_values(values: list[str], label: str) -> tuple[ArtifactRef, ...]:
+    result: list[ArtifactRef] = []
+    for value in values:
+        ref, separator, digest = value.partition("=")
+        if not separator:
+            raise RuntimeError(f"{label} must use REF=DIGEST")
+        try:
+            result.append(ArtifactRef(ref, digest))
+        except GateError as error:
+            raise RuntimeError(str(error)) from error
+    return tuple(result)
+
+
+def apply_gate(args: argparse.Namespace, meta: Meta) -> str:
+    """Record one typed interaction event as the task's next revision."""
+    try:
+        try:
+            stage = GateStage(str(args.stage))
+        except ValueError as error:
+            raise GateError("unknown interaction gate stage") from error
+        event = InteractionEvent(
+            task_id=str(meta["id"]),
+            task_revision=int(args.expected_revision),
+            stage=stage,
+            action=str(args.action),
+            disposition=str(args.disposition),
+            before=_artifact_values(args.before, "--before"),
+            after=_artifact_values(args.after, "--after"),
+            public_ref=str(args.public_ref),
+            recorded_at=now(),
+        )
+        return apply_event(meta, event)
+    except (GateError, ValueError) as error:
+        raise RuntimeError(str(error)) from error
+
+
+def apply_transition(args: argparse.Namespace, kind: str, meta: Meta, tasks: list[Task]) -> str:
+    """Dispatch one typed lifecycle transition for both storage backends."""
+    if kind == "claim":
+        return apply_claim(args, meta, tasks)
+    if kind == "promote":
+        return apply_promote(args, meta, tasks)
+    if kind == "resume":
+        return apply_resume(args, meta, tasks)
+    if kind == "recover-expired":
+        return apply_recover_expired(args, meta, tasks)
+    if kind == "gate":
+        return apply_gate(args, meta)
+    return apply_owned_change(args, kind, meta)
+
+
 def rendered_task_views(tasks: list[Task]) -> dict[Path, str]:
     """Return every enabled task-derived projection for one consistent task snapshot."""
     views = {ROOT / "CURRENT.md": render_current(tasks)}
     if project_settings()["status_view"]:
-        views[ROOT / "STATUS.md"] = render_status_view(tasks)
+        views.update(
+            {ROOT / relative: content for relative, content in render_status_views(tasks).items()}
+        )
     return views
+
+
+def write_status_views(views: dict[str, str]) -> None:
+    """Atomically replace the root status index and remove obsolete shards."""
+    expected_paths = {ROOT / relative for relative in views}
+    for path in generated_paths():
+        if path not in expected_paths and (
+            path.name == "STATUS.md" or path.parent.name == "status"
+        ):
+            path.unlink(missing_ok=True)
+    for relative, content in views.items():
+        atomic(ROOT / relative, content)
+
+
+def write_rendered_task_views(views: dict[Path, str]) -> None:
+    """Write all task views while pruning obsolete status shards."""
+    status_views = {
+        str(target.relative_to(ROOT)): content
+        for target, content in views.items()
+        if target.name == "STATUS.md" or target.parent.name == "status"
+    }
+    write_status_views(status_views)
+    for target, content in views.items():
+        if target.name != "STATUS.md" and target.parent.name != "status":
+            atomic(target, content)
 
 
 def mutate(args: argparse.Namespace, kind: str) -> None:
@@ -1251,25 +1623,15 @@ def mutate(args: argparse.Namespace, kind: str) -> None:
         sync_replica_before_write()
         path, meta, body = locate(args.task)
         require_promotion_preflight(kind)
-        view_paths = rendered_task_views(all_tasks())
         before: dict[Path, str | None] = {path: path.read_text()}
         before.update(
-            {target: target.read_text() if target.exists() else None for target in view_paths}
+            {
+                target: target.read_text() if target.exists() else None
+                for target in generated_paths()
+            }
         )
         committed = False
-        note = (
-            apply_claim(args, meta, all_tasks())
-            if kind == "claim"
-            else (
-                apply_promote(args, meta, all_tasks())
-                if kind == "promote"
-                else apply_resume(args, meta, all_tasks())
-                if kind == "resume"
-                else apply_recover_expired(args, meta, all_tasks())
-                if kind == "recover-expired"
-                else apply_owned_change(args, kind, meta)
-            )
-        )
+        note = apply_transition(args, kind, meta, all_tasks())
         meta["task_revision"] += 1
         meta["updated_at"] = now()
         if note:
@@ -1288,16 +1650,14 @@ def mutate(args: argparse.Namespace, kind: str) -> None:
         try:
             write_task(path, meta, body)
             views = rendered_task_views(all_tasks())
-            for target, content in views.items():
-                atomic(target, content)
-            errors = validate(live=False)
-            # Recovering one lease may legitimately leave other expired
-            # leases until their own exact-revision recovery is applied.
-            if kind == "recover-expired":
-                errors = [error for error in errors if not error.endswith(": expired claim")]
+            write_rendered_task_views(views)
+            errors = mutation_errors(path, before)
             if errors:
                 raise RuntimeError("\n".join(errors))
-            committed = commit(f"chore(state): {kind} {args.task}", [path, *views])
+            for target in generated_paths():
+                before.setdefault(target, None)
+            touched = changed_paths(before, include_deleted=True)
+            committed = commit(f"chore(state): {kind} {args.task}", touched)
             push_replica()
         except Exception:
             # A signed local commit is already durable even when replication fails.
@@ -1339,21 +1699,15 @@ def mutate_sqlite(args: argparse.Namespace, kind: str) -> None:
     at = now()
 
     def transition(meta: Meta, tasks: list[Task]) -> tuple[str, str]:
-        note = (
-            apply_claim(args, meta, tasks)
-            if kind == "claim"
-            else apply_promote(args, meta, tasks)
-            if kind == "promote"
-            else apply_resume(args, meta, tasks)
-            if kind == "resume"
-            else apply_recover_expired(args, meta, tasks)
-            if kind == "recover-expired"
-            else apply_owned_change(args, kind, meta)
-        )
+        note = apply_transition(args, kind, meta, tasks)
         candidate = [
             (path, meta if item["id"] == args.task else item, text) for path, item, text in tasks
         ]
-        errors = basic_task_errors(selected[0], meta) + graph_errors(candidate)
+        errors = (
+            basic_task_errors(selected[0], meta)
+            + graph_errors(candidate)
+            + supersession_errors(candidate)
+        )
         if errors:
             raise RuntimeError("transition validation failed:\n" + "\n".join(errors))
         return note, _transition_note(selected[2], note, at)
@@ -1372,13 +1726,12 @@ def cmd_render_status(*, check: bool) -> None:
     if not project_settings()["status_view"]:
         raise RuntimeError("STATUS.md generation is disabled by .handoffctl.json")
     with locked(exclusive=not check):
-        expected = render_status_view(all_tasks())
-        path = ROOT / "STATUS.md"
+        expected = render_status_views(all_tasks())
         if check:
-            if not path.exists() or path.read_text() != expected:
+            if status_projection_errors(expected):
                 raise RuntimeError("STATUS.md differs from generated tasks")
             return
-        atomic(path, expected)
+        write_status_views(expected)
 
 
 def cmd_doctor(*, live: bool) -> int:
@@ -1433,6 +1786,65 @@ def require_active_owner(task_id: str, owner: str) -> None:
         errors = active_expiry_errors(task_id, meta.get("claim_expires"))
         if errors:
             raise RuntimeError(errors[0])
+        try:
+            transition_allowed(meta, "run")
+        except GateError as error:
+            raise RuntimeError(str(error)) from error
+        assert_invocation_worktree(meta)
+
+
+def invocation_worktree() -> tuple[str, str] | None:
+    """Return the product worktree identity when called from a product checkout.
+
+    The coordinator itself is normally invoked from the bound state repository, so
+    that location remains valid for state-only commands.  When a caller starts in
+    the configured product checkout, identify the actual Git root and branch so an
+    active task can be fenced to its declared worktree.
+    """
+    if not CONFIG.exists():
+        return None
+    settings = config()
+    if not {"projects_root", "product_worktree"}.issubset(settings):
+        return None
+    projects_root = Path(str(settings["projects_root"])).resolve()
+    current = Path.cwd().resolve()
+    if not inside(current, projects_root):
+        return None
+    top = Path(
+        run(["git", "-C", str(current), "rev-parse", "--show-toplevel"]).stdout.strip()
+    ).resolve()
+    if top == ROOT.resolve() or not inside(top, projects_root):
+        return None
+    branch = (
+        run(
+            ["git", "-C", str(current), "symbolic-ref", "--short", "-q", "HEAD"],
+            check=False,
+        ).stdout.strip()
+        or "DETACHED"
+    )
+    return top.name, branch
+
+
+def assert_invocation_worktree(meta: Meta) -> None:
+    """Reject product-checkout calls that do not match the active task claim."""
+    observed = invocation_worktree()
+    if observed is None:
+        return
+    expected_key = str(meta.get("worktree_key") or "")
+    expected_branch = str(meta.get("branch") or "")
+    if not expected_key or not expected_branch:
+        raise RuntimeError(f"{meta['id']}: active task lacks declared worktree and branch")
+    actual_key, actual_branch = observed
+    if actual_key != expected_key:
+        raise RuntimeError(
+            f"{meta['id']}: invocation worktree {actual_key!r} does not match declared "
+            f"worktree {expected_key!r}"
+        )
+    if actual_branch != expected_branch:
+        raise RuntimeError(
+            f"{meta['id']}: invocation branch {actual_branch!r} does not match declared "
+            f"branch {expected_branch!r}"
+        )
 
 
 def append_file_command_result(
@@ -1669,7 +2081,21 @@ def cmd_migrate(args: argparse.Namespace) -> None:
     print(f"Migrated authoritative storage from {current} to {args.to}")
 
 
-def dispatch_bound_command(args: argparse.Namespace) -> int:
+def cmd_upgrade(args: argparse.Namespace) -> int:
+    """Dispatch only the reviewed, fail-closed upgrade command boundary."""
+    if __package__:
+        from .upgrade_commands import execute_upgrade_command
+    else:
+        from upgrade_commands import (  # type: ignore[import-not-found,no-redef]
+            execute_upgrade_command,
+        )
+
+    return execute_upgrade_command(
+        str(args.upgrade_action), Path(args.contract), str(backend_selection()["backend"])
+    )
+
+
+def dispatch_bound_command(args: argparse.Namespace) -> int:  # noqa: C901
     """Dispatch a command only after the permanent project binding has passed."""
     if args.cmd == "reconcile":
         reconcile(do_commit=args.commit, push=args.push)
@@ -1687,6 +2113,7 @@ def dispatch_bound_command(args: argparse.Namespace) -> int:
         "resume",
         "recover-expired",
         "update",
+        "gate",
     ):
         mutate(args, args.cmd)
     elif args.cmd == "run":
@@ -1695,6 +2122,8 @@ def dispatch_bound_command(args: argparse.Namespace) -> int:
         return cmd_run(args)
     elif args.cmd == "migrate":
         cmd_migrate(args)
+    elif args.cmd == "upgrade":
+        return cmd_upgrade(args)
     return 0
 
 
@@ -1711,6 +2140,11 @@ def main() -> int:
     item.add_argument("--backend", choices=BACKENDS, default="sqlite")
     item = commands.add_parser("migrate")
     item.add_argument("--to", choices=BACKENDS, required=True)
+    item = commands.add_parser("upgrade")
+    upgrade_actions = item.add_subparsers(dest="upgrade_action", required=True)
+    for action in ("check", "plan", "apply", "rollback"):
+        upgrade_action = upgrade_actions.add_parser(action)
+        upgrade_action.add_argument("--contract", type=Path, required=True)
     item = commands.add_parser("reconcile")
     item.add_argument("--commit", action="store_true")
     item.add_argument("--push", action="store_true")
@@ -1752,6 +2186,17 @@ def main() -> int:
     item.add_argument("--summary")
     item.add_argument("--next-action")
     item.add_argument("--note", required=True)
+    item = commands.add_parser("gate")
+    item.add_argument("task")
+    item.add_argument("--expected-revision", type=int, required=True)
+    item.add_argument("--stage", choices=[stage.value for stage in GateStage], required=True)
+    item.add_argument("--action", choices=("open", "resolve", "reopen"), required=True)
+    item.add_argument(
+        "--disposition", choices=("accepted", "rejected", "unresolved"), required=True
+    )
+    item.add_argument("--before", action="append", default=[], required=True)
+    item.add_argument("--after", action="append", default=[], required=True)
+    item.add_argument("--public-ref", required=True)
     item = commands.add_parser("run")
     item.add_argument("task")
     item.add_argument("--owner", required=True)

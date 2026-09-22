@@ -7,25 +7,31 @@ import argparse
 import importlib.util
 import json
 import multiprocessing
+import os
+import signal
 import sqlite3
 import subprocess
 import sys
+import time
 import unittest
+from collections.abc import Callable
 from pathlib import Path
 from tempfile import TemporaryDirectory
-from typing import Any
+from typing import Any, Literal
 from unittest.mock import patch
 
-ROOT = Path(__file__).resolve().parent.parent
-TOOLS = ROOT / "tools"
-sys.path.insert(0, str(TOOLS))
-from sqlite_storage import (  # noqa: E402
+from tools.sqlite_storage import (
+    SQLiteAuthorityBinding,
     SQLiteBackend,
     StorageContentionError,
     _translate,
     create_database,
     require_local_filesystem,
 )
+
+ROOT = Path(__file__).resolve().parent.parent
+TOOLS = ROOT / "tools"
+sys.path.insert(0, str(TOOLS))
 
 SPEC = importlib.util.spec_from_file_location("handoffctl_sqlite_test", TOOLS / "handoffctl.py")
 if SPEC is None or SPEC.loader is None:
@@ -39,6 +45,45 @@ BINDING = {
     "state_repository": "owner/state",
     "product_repository": "owner/product",
 }
+
+
+# Diagnostic only: terminate an authority writer after an uncommitted WAL
+# update and verify that SQLite reopens the prior durable state. This does not
+# claim barrier admission, authority-route fencing, or formal refinement.
+_CRASHING_AUTHORITY_SCRIPT = r"""
+import os
+import signal
+import sqlite3
+import sys
+from pathlib import Path
+
+database = Path(sys.argv[1])
+ready = database.with_name(database.name + ".ready")
+connection = sqlite3.connect(database)
+connection.execute("PRAGMA journal_mode=WAL")
+connection.execute("BEGIN IMMEDIATE")
+connection.execute(
+    "UPDATE tasks SET body=?, revision=revision+1 WHERE id=?",
+    ("# crashed before commit\n", "AR-0001"),
+)
+ready.write_text("uncommitted-wal\n", encoding="utf-8")
+with ready.open("rb") as stream:
+    os.fsync(stream.fileno())
+os.kill(os.getpid(), signal.SIGKILL)
+"""
+
+
+def _commit_then_crash_before_projection(database: str, tasks_root: str) -> None:
+    """Commit the SQLite CAS, then die before disposable projections are written."""
+    CORE.DATABASE = Path(database)
+    CORE.TASKS = Path(tasks_root)
+    arguments = argparse.Namespace(task="AR-0001", owner="worker", lease_minutes=10)
+
+    def crash() -> None:
+        os.kill(os.getpid(), signal.SIGKILL)
+
+    with patch.object(CORE, "export_sqlite_projections", side_effect=crash):
+        CORE.mutate(arguments, "claim")
 
 
 def task(
@@ -112,6 +157,48 @@ def revision_stress_worker(
 
 
 class SQLiteStorageTest(unittest.TestCase):
+    def test_authority_sidecar_descriptor_failures_are_fail_closed(self) -> None:
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            root.chmod(0o700)
+            authority = root / "authority.sqlite"
+            authority.write_bytes(b"authority")
+            parent = os.open(root, os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW)
+            try:
+                with self.assertRaisesRegex(RuntimeError, "sidecar is unavailable"):
+                    SQLiteAuthorityBinding._open_retained(parent, "missing-wal", "sidecar")
+
+                hardlink_source = root / "hardlink-source"
+                hardlink_source.write_bytes(b"unsafe")
+                os.link(hardlink_source, root / "unsafe-wal")
+                with self.assertRaisesRegex(RuntimeError, "sidecar is unsafe"):
+                    SQLiteAuthorityBinding._open_retained(parent, "unsafe-wal", "sidecar")
+
+                retained = root / "retained-wal"
+                retained.write_bytes(b"retained")
+                descriptor, identity = SQLiteAuthorityBinding._open_retained(
+                    parent, retained.name, "sidecar"
+                )
+                try:
+                    retained.unlink()
+                    with self.assertRaisesRegex(RuntimeError, "sidecar is unavailable"):
+                        SQLiteAuthorityBinding._assert_retained(
+                            parent, retained.name, descriptor, identity, "sidecar"
+                        )
+                    retained.write_bytes(b"replacement")
+                    with self.assertRaisesRegex(RuntimeError, "sidecar identity changed"):
+                        SQLiteAuthorityBinding._assert_retained(
+                            parent, retained.name, descriptor, identity, "sidecar"
+                        )
+                finally:
+                    os.close(descriptor)
+
+                Path(f"{authority}-wal").write_bytes(b"wal")
+                with self.assertRaisesRegex(RuntimeError, "sidecar is unavailable"):
+                    SQLiteAuthorityBinding._open_sidecar_set(parent, authority)
+            finally:
+                os.close(parent)
+
     def setUp(self) -> None:
         self.temporary = TemporaryDirectory()
         self.root = Path(self.temporary.name)
@@ -187,6 +274,43 @@ class SQLiteStorageTest(unittest.TestCase):
         with self.assertRaisesRegex(RuntimeError, "BINDING_MISMATCH"):
             copied.load_tasks()
 
+    def test_authority_writer_death_rolls_back_uncommitted_wal_update(self) -> None:
+        """Diagnostic SQLite WAL rollback only; no fencing or refinement claim."""
+        backend = self.create()
+        ready = self.database.with_name(self.database.name + ".ready")
+        process = subprocess.Popen(  # noqa: S603 - fixed interpreter and test script
+            [sys.executable, "-c", _CRASHING_AUTHORITY_SCRIPT, str(self.database)],
+            cwd=ROOT,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+        )
+        try:
+            deadline = time.monotonic() + 10
+            while not ready.exists() and time.monotonic() < deadline:
+                if process.poll() is not None:
+                    stdout, stderr = process.communicate()
+                    self.fail(
+                        f"authority crash fixture exited early: {process.returncode}; "
+                        f"stdout={stdout!r}; stderr={stderr!r}"
+                    )
+                time.sleep(0.01)
+            self.assertTrue(ready.exists(), "authority crash fixture did not reach WAL checkpoint")
+            self.assertEqual("uncommitted-wal", ready.read_text(encoding="utf-8").strip())
+            self.assertEqual(-signal.SIGKILL, process.wait(timeout=10))
+            stdout, stderr = process.communicate()
+            self.assertEqual("", stdout)
+            self.assertEqual("", stderr)
+        finally:
+            if process.poll() is None:
+                process.kill()
+            process.communicate(timeout=5)
+
+        task_row = next(item for item in backend.load_tasks() if item[1]["id"] == "AR-0001")
+        self.assertEqual(1, task_row[1]["task_revision"])
+        self.assertEqual("# Test\n", task_row[2])
+        self.assertEqual([], backend.integrity_errors())
+
     def test_exact_revision_cas_events_and_aba_prevention(self) -> None:
         backend = self.create()
 
@@ -200,6 +324,55 @@ class SQLiteStorageTest(unittest.TestCase):
         connection = sqlite3.connect(self.database)
         self.assertEqual(2, connection.execute("SELECT revision FROM tasks").fetchone()[0])
         self.assertEqual(2, connection.execute("SELECT count(*) FROM events").fetchone()[0])
+        connection.close()
+
+    def test_every_write_route_enters_fence_before_sqlite_mutation(self) -> None:
+        ordinary = self.create()
+
+        class RejectScope:
+            def __enter__(self) -> None:
+                raise RuntimeError("mutation fence rejected")
+
+            def __exit__(self, *_args: object) -> Literal[False]:
+                return False
+
+        def reject_scope() -> RejectScope:
+            return RejectScope()
+
+        fenced = SQLiteBackend(
+            self.database,
+            BINDING,
+            self.tasks,
+            mutation_scope=reject_scope,
+        )
+
+        def transition(meta: dict[str, Any], _tasks: list[Any]) -> tuple[str, str]:
+            meta["summary"] = "must not commit"
+            return "update", "must not commit"
+
+        routes: tuple[Callable[[], None], ...] = (
+            lambda: fenced.mutate("AR-0001", 1, "update", "2026-09-08T00:01:00+00:00", transition),
+            lambda: fenced.update_observations(
+                {"": {"branch": "main", "head": "a" * 40, "dirty": False}},
+                "2026-09-08T00:01:00+00:00",
+            ),
+            lambda: fenced.append_command_result(
+                "AR-0001", "worker", "a" * 64, 0, "EXIT", "2026-09-08T00:01:00+00:00"
+            ),
+            lambda: fenced.retire(lambda _tasks: None, lambda: None),
+        )
+        for route in routes:
+            with self.assertRaisesRegex(RuntimeError, "mutation fence rejected"):
+                route()
+        self.assertEqual(1, ordinary.load_tasks()[0][1]["task_revision"])
+        connection = sqlite3.connect(self.database)
+        self.assertEqual(
+            0, connection.execute("SELECT count(*) FROM command_results").fetchone()[0]
+        )
+        self.assertEqual(
+            "active",
+            connection.execute("SELECT value FROM metadata WHERE key='state'").fetchone()[0],
+        )
         connection.close()
 
     def test_real_processes_cannot_double_claim(self) -> None:
@@ -424,6 +597,29 @@ class SQLiteStorageTest(unittest.TestCase):
                 argparse.Namespace(task="AR-0001", owner="worker", lease_minutes=10), "claim"
             )
         self.assertEqual(2, CORE.all_tasks()[0][1]["task_revision"])
+
+    def test_process_death_after_commit_before_projection_reconciles_from_authority(self) -> None:
+        self.configure_core(backend="sqlite")
+        backend = self.create()
+        CORE.export_sqlite_projections()
+        process = multiprocessing.get_context("fork").Process(
+            target=_commit_then_crash_before_projection,
+            args=(str(self.database), str(self.tasks)),
+        )
+        process.start()
+        process.join(timeout=10)
+        self.assertEqual(-signal.SIGKILL, process.exitcode)
+        self.assertFalse(process.is_alive())
+
+        committed = next(item for item in backend.load_tasks() if item[1]["id"] == "AR-0001")
+        self.assertEqual(
+            ("in_progress", 2), (committed[1]["status"], committed[1]["task_revision"])
+        )
+        stale_projection = (self.tasks / "AR-0001-test.md").read_text()
+        self.assertIn('"status": "open"', stale_projection)
+        CORE.export_sqlite_projections()
+        reconciled = (self.tasks / "AR-0001-test.md").read_text()
+        self.assertIn('"status": "in_progress"', reconciled)
 
     def test_sqlite_command_journal_snapshot_doctor_and_offline_reconcile(self) -> None:
         self.configure_core(backend="sqlite")

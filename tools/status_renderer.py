@@ -42,6 +42,13 @@ class StatusRenderError(ValueError):
     """The task graph cannot be represented safely and unambiguously."""
 
 
+# Keep a margin below the repository-wide 200 KiB privacy/size guard.  The
+# margin leaves room for the index and for future renderer metadata without
+# making a page unexpectedly cross the hard limit.
+STATUS_FILE_LIMIT = 200_000
+STATUS_PAGE_TARGET = 180_000
+
+
 def _plain(value: object) -> str:
     """Render untrusted front matter as inert, single-line Markdown text."""
     text = " ".join(str(value or "-").splitlines())
@@ -297,3 +304,83 @@ def render_status(
     lines.extend(_dependencies(tasks, filenames, reverse))
     lines.extend(_inventory(tasks, statuses, priorities, filenames))
     return "\n".join(lines).rstrip() + "\n"
+
+
+def _status_index(full: str, page_names: list[str]) -> str:
+    """Return a compact root index for a status view split across pages."""
+    lines = full.splitlines()
+    overview_end = next(
+        (index for index, line in enumerate(lines) if line == "## Dependency graph"),
+        len(lines),
+    )
+    overview = lines[:overview_end]
+    links = [
+        "",
+        "## Complete status view",
+        "",
+        "The generated status view is split into deterministic pages to keep every file below "
+        "the 200,000-byte repository limit. The linked pages preserve the complete graph, "
+        "dependency index, and AR inventory without omission.",
+        "",
+    ]
+    links.extend(f"- [{name.removesuffix('.md')}]({name})" for name in page_names)
+    return "\n".join([*overview, *links]).rstrip() + "\n"
+
+
+def _split_status(full: str) -> list[str]:
+    """Split complete status text at stable line boundaries."""
+    prefix = (
+        "<!-- This page is generated; the root STATUS.md index links the complete view. -->\n\n"
+    )
+    chunks: list[str] = []
+    current: list[str] = []
+    current_bytes = len(prefix.encode())
+    budget = STATUS_PAGE_TARGET - len(prefix.encode())
+    for line in full.splitlines(keepends=True):
+        pieces = [line]
+        while len(pieces[0].encode()) > budget:
+            encoded = pieces[0].encode()
+            cut = encoded[:budget].decode("utf-8", "ignore")
+            if not cut:
+                raise StatusRenderError("status line cannot be split within the page budget")
+            pieces[0] = cut
+            pieces.insert(1, encoded[len(cut.encode()) :].decode("utf-8"))
+        for piece in pieces:
+            line_bytes = len(piece.encode())
+            if current and current_bytes + line_bytes > STATUS_PAGE_TARGET:
+                chunks.append(prefix + "".join(current).replace("](tasks/", "](../tasks/"))
+                current = []
+                current_bytes = len(prefix.encode())
+            current.append(piece)
+            current_bytes += line_bytes
+    if current:
+        chunks.append(prefix + "".join(current).replace("](tasks/", "](../tasks/"))
+    return chunks
+
+
+def render_status_pages_from_text(full: str) -> dict[str, str]:
+    """Paginate an already rendered status document deterministically."""
+    if len(full.encode()) <= STATUS_FILE_LIMIT:
+        return {"STATUS.md": full}
+    chunks = _split_status(full)
+    page_names = [f"status/STATUS-{index:04d}.md" for index in range(1, len(chunks) + 1)]
+    pages: dict[str, str] = dict(zip(page_names, chunks, strict=True))
+    pages["STATUS.md"] = _status_index(full, page_names)
+    if any(len(content.encode()) > STATUS_FILE_LIMIT for content in pages.values()):
+        raise StatusRenderError("status projection exceeds the per-file size limit")
+    return {"STATUS.md": pages.pop("STATUS.md"), **pages}
+
+
+def render_status_pages(
+    tasks: list[Task],
+    statuses: tuple[str, ...],
+    priorities: tuple[str, ...],
+    project_title: str,
+) -> dict[str, str]:
+    """Render STATUS.md and deterministic shards when the complete view is large.
+
+    The returned keys are repository-relative paths.  Small projects retain the
+    historical single-file representation; larger projects receive a compact
+    root index and numbered pages under ``status/``.
+    """
+    return render_status_pages_from_text(render_status(tasks, statuses, priorities, project_title))
