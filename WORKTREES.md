@@ -16,5 +16,4 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-registry-profiles` | `feature/registry-profiles` | `298227a2379c` | 0 | behind 489, ahead 2 |
 | `agent-systems-benchmark-use-config` | `feature/use-config` | `e77850353011` | 0 | behind 489, ahead 7 |
 | `agent-systems-benchmark-user-config` | `feature/user-config` | `aee25937f4e3` | 0 | behind 489, ahead 1 |
-| `agent-systems-benchmark-state` | `main` | `15801d60a7f8` | 1 | behind 0, ahead 4 |
-| changed files | - | - | - | `WORKTREES.md` |
+| `agent-systems-benchmark-state` | `main` | `53b87070e8a6` | 0 | behind 0, ahead 12 |
