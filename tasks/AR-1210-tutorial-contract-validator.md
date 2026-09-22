@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1210.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Define offline tutorial steps and validate them against the ASB CLI grammar.",
-  "task_revision": 89,
+  "task_revision": 90,
   "title": "Tutorial contract and syntax validator",
-  "updated_at": "2026-09-16T04:17:24+00:00",
+  "updated_at": "2026-09-22T14:45:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1210"
 }
 ---
@@ -259,3 +259,8 @@ be required.
   Repository quality run 35054743606 failed because GitHub-generated merge commit lacks matching
   Signed-off-by. Preserve history; resume only after AR-0897/main merge-integrity repair and fresh
   exact-main post-merge assurance are green.
+
+- 2026-09-22T14:45:10+00:00: Exact-main assurance is green on current main tip a4934fca0b52 (all
+  Repository quality checks pass, including Policy-coverage-supply chain). The historical DCO gap on
+  4d4a0c4 is preserved; subsequent signed merges (PR #240, #241, #242, #243, #247) restored a green
+  current-main evidence range per MERGE_INTEGRITY.md.
