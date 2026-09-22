@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1325-provider-openrouter",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-22T18:10:18+00:00",
   "depends_on": [
     "AR-0310",
     "AR-0318"
   ],
   "id": "AR-1325",
   "next_action": "Pin the OpenRouter endpoint identity, dated model snapshot, transport bounds and OPENROUTER_API_KEY credential reference, then implement the credential-free provider profile with fail-closed validation.",
-  "owner": "",
+  "owner": "ar1325-openrouter",
   "plan": "../plans/AR-1325.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Define one pinned credential-free OpenRouter provider profile for compatible ASB agent adapters.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Support a shared OpenRouter provider",
-  "updated_at": "2026-09-22T14:10:08+00:00",
+  "updated_at": "2026-09-22T14:10:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1325-provider-openrouter"
 }
 ---
@@ -33,3 +33,5 @@ unsupported or lossy translations fail closed.
 
 - 2026-09-22T14:10:08+00:00: Dependencies AR-0310 and AR-0318 are done; promote the OpenRouter
   provider profile for parallel implementation.
+
+- 2026-09-22T14:10:18+00:00: Claimed by ar1325-openrouter.
