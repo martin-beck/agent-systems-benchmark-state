@@ -10,7 +10,7 @@
     "AR-1340"
   ],
   "id": "AR-1342",
-  "next_action": "Publish PR from signed commit 71f67e2; run exact-head CI and independent review, then verify post-merge before releasing AR-1342 and advancing AR-1329.",
+  "next_action": "Independent review and exact-head PR #259 CI are pending. Do not merge/release until every required check passes; then verify protected-main post-merge evidence and advance AR-1329.",
   "observed_branch": "feature/ar-1342-live-relay-factory-cli-integration",
   "observed_dirty": 0,
   "observed_head": "71f67e2ca22945b42672b7ad1cfc7a0eef7f4b88",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Create the runtime-owned relay factory and opaque launch context required for safe live CLI execution.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Runtime-owned live relay factory and CLI integration",
-  "updated_at": "2026-09-23T11:44:39+00:00",
+  "updated_at": "2026-09-23T11:45:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1342-live-relay-factory-cli-integration"
 }
 ---
@@ -130,3 +130,8 @@ until it is complete, live spawning remains fail-closed.
 
 - 2026-09-23T11:44:39+00:00: Recorded command exit 8; command argv SHA-256
   a5a424c23c459d6463c3de24d69a87a2fc2f50313ce6ea98fc7f7796fdff6629.
+
+- 2026-09-23T11:45:14+00:00: Published PR #259 from clean signed exact-head
+  71f67e2ca22945b42672b7ad1cfc7a0eef7f4b88. Initial gh pr checks: Exact Huawei 2026/SPDX and AWQ
+  shadow evidence passed; TLC/Alloy, fuzz, AArch64, Kani, Loom, mutation, platform, policy, retained
+  faults and Rust checks pending. Worktree clean and branch tracks origin.
