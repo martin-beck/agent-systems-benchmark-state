@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1325-provider-openrouter",
   "checkpoint_commit": "85eece9f6915c51a55ec54457dc214d743f5db00",
-  "claim_expires": "2026-09-23T07:41:17+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0310",
     "AR-0318"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1325-provider-openrouter",
   "observed_dirty": 0,
   "observed_head": "85eece9f6915c51a55ec54457dc214d743f5db00",
-  "owner": "coordinator-openrouter-audit",
+  "owner": "",
   "plan": "../plans/AR-1325.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Define one pinned credential-free OpenRouter provider profile for compatible ASB agent adapters.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Support a shared OpenRouter provider",
-  "updated_at": "2026-09-23T06:41:17+00:00",
+  "updated_at": "2026-09-23T06:44:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1325-provider-openrouter"
 }
 ---
@@ -148,3 +148,7 @@ unsupported or lossy translations fail closed.
   3644839391a076ffc11fe05f974ca301f08074e0283d539b77cb14efbc10d74f.
 
 - 2026-09-23T06:41:17+00:00: Heartbeat by coordinator-openrouter-audit.
+
+- 2026-09-23T06:44:28+00:00: AR-1325 complete after PR #249 merge 56c882a, AR-1337 repair PR #252
+  merge 8eac37c, and all exact-main post-merge workflows terminal success. OpenRouter provider
+  profile is now verified on protected main.

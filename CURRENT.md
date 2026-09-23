@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1325](tasks/AR-1325-provider-openrouter.md): Support a shared OpenRouter provider | Define one pinned credential-free OpenRouter provider profile for compatible ASB agent adapters. | Repair protected-main merge-tree admission after post-merge Repository quality failed on 56c882a: protected-main merge tree differs from reviewed topic tree; create and execute a dedicated repair AR, then rerun all exact-main workflows before treating AR-1325 as done. | coordinator-openrouter-audit |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -368,6 +362,7 @@ Never edit this file directly.
 | P1 | [AR-1288](tasks/AR-1288-certificate-chain-authz.md): Runtime certificate issuance and chain validation | Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814. | Preserve merged code; repair protected-main DCO integrity forward-only, rerun exact-main gates, then release. | - |
 | P1 | [AR-1303](tasks/AR-1303-hosted-platform-diagnostics.md): Privacy-safe hosted platform failure diagnostics | Add privacy-safe fixed diagnostics for hosted platform evidence failures. | PR #220 merged after exact-head review; verify resulting main post-merge workflows and retain terminal workflow evidence. Diagnostics remain opt-in and privacy-safe; no gate weakening. | - |
 | P1 | [AR-1311](tasks/AR-1311-planned-task-metadata-schema-repair.md): Repair planned-task metadata schema contradiction | Repair planned-task metadata that violates the current live-observation schema. | Claim this metadata-only repair, remove unsupported empty live-observation fields from planned AR-1309, regenerate views, and rerun schema and state gates. Do not alter AR-1309 meaning or claim implementation. | - |
+| P1 | [AR-1325](tasks/AR-1325-provider-openrouter.md): Support a shared OpenRouter provider | Define one pinned credential-free OpenRouter provider profile for compatible ASB agent adapters. | Repair protected-main merge-tree admission after post-merge Repository quality failed on 56c882a: protected-main merge tree differs from reviewed topic tree; create and execute a dedicated repair AR, then rerun all exact-main workflows before treating AR-1325 as done. | - |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Run final exact-main and local post-merge verification using required native x86_64 kernel evidence and applicable pinned QEMU AArch64 portability checks; record native ARM64 PMU/eBPF as optional future evidence, then release. | - |
 | P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Run final state validation/live doctor and release done after confirming clean synchronized product/state refs at signed merge a0d80e4. | - |
 | P2 | [AR-0309](tasks/AR-0309-agent-openhands.md): Implement maintained OpenHands SDK client adapter | Run a maintained MIT OpenHands SDK or canonical headless client. | Monitor PR #65 exact-head CI for fec0487, investigate any failure, and await final review; do not merge. | - |
