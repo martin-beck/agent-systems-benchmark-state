@@ -9,15 +9,18 @@
   ],
   "id": "AR-1334",
   "next_action": "Qualify the pinned free OpenRouter model under the AR-0315 conformance harness and run hostile cases such as credential bleed, endpoint mismatch, rate limits and malformed responses, all failing closed.",
+  "observed_branch": "feature/ar-1334-openrouter-conformance-qualification",
+  "observed_dirty": 0,
+  "observed_head": "96e236cb83477479e244abd7f5014725e7806b88",
   "owner": "codex-asb-ar1334-20260923",
   "plan": "../plans/AR-1334.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the pinned OpenRouter free model under conformance and hostile fail-closed testing.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "OpenRouter free-model conformance and hostile qualification",
-  "updated_at": "2026-09-23T08:54:28+00:00",
+  "updated_at": "2026-09-23T08:54:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1334-openrouter-conformance-qualification"
 }
 ---
