@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement a sandbox-owned sealed-FD credential channel for live provider children.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Sandbox-owned credential channel",
-  "updated_at": "2026-09-23T17:41:28+00:00",
+  "updated_at": "2026-09-23T17:43:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1350-sandbox-credential-channel"
 }
 ---
@@ -144,3 +144,6 @@ private runtime channel before AR-1349 can safely acquire attempts or wire
   passed; signed+DCO commit verified below.
 
 - 2026-09-23T17:41:28+00:00: Heartbeat by codex-asb-ar1350-sandbox-channel-luna56.
+
+- 2026-09-23T17:43:13+00:00: Recorded command exit 0; command argv SHA-256
+  85ed0dc31d624bd1ec22ae9d852573d00581727a6be6df7d5645e7c17298e29a.
