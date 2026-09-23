@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1340-attested-live-relay-handoff",
   "checkpoint_commit": "a70dc59a74cc7886ba84ef357e98b9bfffbfcab6",
-  "claim_expires": "2026-09-23T11:40:48+00:00",
+  "claim_expires": "2026-09-23T12:17:02+00:00",
   "depends_on": [
     "AR-1339"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind the live provider relay to an attested child namespace and integrate it without weakening offline or replay denial.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Attested live-relay namespace and child handoff",
-  "updated_at": "2026-09-23T10:16:54+00:00",
+  "updated_at": "2026-09-23T10:17:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1340-attested-live-relay-handoff"
 }
 ---
@@ -133,3 +133,5 @@ public coordination state or runtime evidence.
   Focused cargo fmt check and cargo test --locked -p asb-runtime live_namespace: 3 passed. Initial
   failures (parser, digest finalize, tempfile, socket mode, test syntax/docs) were repaired and
   rerun successfully. Scope remains API slice; runtime/CLI integration and full gates remain.
+
+- 2026-09-23T10:17:02+00:00: Heartbeat by codex-asb-ar1340-20260923.
