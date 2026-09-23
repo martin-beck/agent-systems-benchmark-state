@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1348](tasks/AR-1348-runtime-owned-live-acquisition.md): Runtime-owned live acquisition service | Provide the runtime-owned supervisor that acquires every live-provider authority and tears it down safely. | Lease lifecycle guard committed as 831a5d5. Next add runtime-owned namespace handoff and relay binding around existing validated policy/egress contracts, with launch-token attestation and revocation/duplicate/expiry negatives. Keep AR-1329 fail-closed. | codex-asb-ar1329-live-cli-luna56 |
+| P1 | [AR-1348](tasks/AR-1348-runtime-owned-live-acquisition.md): Runtime-owned live acquisition service | Provide the runtime-owned supervisor that acquires every live-provider authority and tears it down safely. | Namespace observation slice committed as 6940184 with missing-PID and runtime-PID tests. Next bind runtime-owned relay/token lifecycle using existing LiveProviderNamespaceHandoff/LiveProviderRelay/LiveLaunchFactory contracts; add expiry/revocation/duplicate negatives and teardown. AR-1329 remains fail-closed. | codex-asb-ar1329-live-cli-luna56 |
 
 ## Open
 
