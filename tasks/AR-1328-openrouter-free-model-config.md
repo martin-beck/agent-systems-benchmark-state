@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1328-openrouter-free-model-config",
-  "checkpoint_commit": "7dd39bcc7dd033506cfbe529cc8c48aacb9ef399",
+  "checkpoint_commit": "fc04ebacd2abc79b5d496f9680b431c52085872c",
   "claim_expires": "2026-09-23T10:05:56+00:00",
   "depends_on": [
     "AR-1325",
@@ -9,7 +9,7 @@
     "AR-1100"
   ],
   "id": "AR-1328",
-  "next_action": "Monitor PR #254 hosted rerun at 7dd39bc; after all required checks pass, merge via integration tooling and verify post-merge checks.",
+  "next_action": "Monitor PR #254 exact head fc04eba coverage rerun; merge only after every required check and independent review are green.",
   "observed_branch": "feature/ar-1328-openrouter-free-model-config",
   "observed_dirty": 0,
   "observed_head": "fc04ebacd2abc79b5d496f9680b431c52085872c",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist the per-user OpenRouter free-model configuration and credential-free key enrollment.",
-  "task_revision": 85,
+  "task_revision": 86,
   "title": "OpenRouter free-model user configuration and key enrollment",
-  "updated_at": "2026-09-23T08:05:56+00:00",
+  "updated_at": "2026-09-23T08:06:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1328-openrouter-free-model-config"
 }
 ---
@@ -245,3 +245,10 @@ configurations fail closed.
   79f6b894f3cd5bc3262fdfe9ae9ba65b54adccd1cc071b678d6ae2bc1f4da437.
 
 - 2026-09-23T08:05:56+00:00: Heartbeat by codex-asb-ar1328-20260923.
+
+- 2026-09-23T08:06:16+00:00: Coverage repair: signed+DCO commit 0f77c87 added persisted-config
+  positive/negative CLI tests; signed+DCO commit fc04eba added 11 OpenRouter identity/enrollment
+  rejection cases and refreshed the provenance digest. Focused asb-config 17/17 and asb-cli config
+  tests 2/2 pass. Initial hosted coverage failure was workspace 87.94% below the unchanged 90%
+  floor; a local full llvm-cov rerun was invalidated by a concurrent cargo target binary race, so
+  hosted exact-head coverage is authoritative.

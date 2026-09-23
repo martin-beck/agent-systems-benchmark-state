@@ -1753,7 +1753,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md): OpenRouter free-model user configuration and key enrollment | codex-asb-ar1328-20260923 | Persist the per-user OpenRouter free-model configuration and credential-free key enrollment. | Monitor PR #254 hosted rerun at 7dd39bc; after all required checks pass, merge via integration tooling and verify post-merge checks. |
+| P1 | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md): OpenRouter free-model user configuration and key enrollment | codex-asb-ar1328-20260923 | Persist the per-user OpenRouter free-model configuration and credential-free key enrollment. | Monitor PR #254 exact head fc04eba coverage rerun; merge only after every required check and independent review are green. |
 
 ### Open (3)
 
