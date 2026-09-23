@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime-owned API and CLI integration needed for safe live-provider attempts.",
-  "task_revision": 231,
+  "task_revision": 232,
   "title": "Runtime-owned CLI live acquisition contract",
-  "updated_at": "2026-09-23T14:22:38+00:00",
+  "updated_at": "2026-09-23T14:23:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1344-runtime-cli-acquisition-contract"
 }
 ---
@@ -616,3 +616,6 @@ contract and its tests are merged and verified.
   88.53%; floor remains red. Exact product branch is clean; no PR update pushed.
 
 - 2026-09-23T14:22:38+00:00: Heartbeat by codex-asb-ar1344-factory-refactor-20260923.
+
+- 2026-09-23T14:23:07+00:00: Recorded command exit 1; command argv SHA-256
+  c07f6574a8834610c114224af4b6446d10eb01066f3fc13fcbf1aa23b4e02305.
