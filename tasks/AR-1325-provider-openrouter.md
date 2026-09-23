@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1325-provider-openrouter",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "85eece9f6915c51a55ec54457dc214d743f5db00",
   "claim_expires": "2026-09-23T08:04:34+00:00",
   "depends_on": [
     "AR-0310",
     "AR-0318"
   ],
   "id": "AR-1325",
-  "next_action": "Repair PR #249 history so every commit uses configured allowed SSH key SHA256:a36V6yPvRZyxnQ2113tiA/MlHt7mPfJEXAGByBXVkuE, then rerun exact-head policy and dependent PR checks.",
+  "next_action": "Await exact-head PR #249 repository-policy and dependent checks on repaired head 85eece9f; merge remains unauthorized until all required checks are green.",
   "observed_branch": "feature/ar-1325-provider-openrouter",
   "observed_dirty": 0,
   "observed_head": "85eece9f6915c51a55ec54457dc214d743f5db00",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define one pinned credential-free OpenRouter provider profile for compatible ASB agent adapters.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Support a shared OpenRouter provider",
-  "updated_at": "2026-09-23T06:11:14+00:00",
+  "updated_at": "2026-09-23T06:11:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1325-provider-openrouter"
 }
 ---
@@ -123,3 +123,10 @@ unsupported or lossy translations fail closed.
 
 - 2026-09-23T06:11:14+00:00: Recorded command exit 0; command argv SHA-256
   3561b7d4d51a6347a77c916991059bff274aae2c07751226982c606becf9f03b.
+
+- 2026-09-23T06:11:52+00:00: Re-signed PR #249 commit from f47e3728 to 85eece9f with configured SSH
+  key SHA256:a36V6yPvRZyxnQ2113tiA/MlHt7mPfJEXAGByBXVkuE and matching DCO. git verify-commit and
+  local repository_policy --base origin/main --head HEAD --mode ssh-only pass. Focused OpenRouter
+  loopback: 6 passed. fmt, clippy, docs, and release build passed; full workspace test had one
+  transient control::tests::agent_catalog_refresh_is_generation_fenced_and_restart_stable ownership
+  collision, then exact rerun passed. Branch pushed with force-with-lease; no merge.
