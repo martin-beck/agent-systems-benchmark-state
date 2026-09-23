@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1357-runtime-attested-enrollment-record",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "cc8016f2846071d65362a16685762cbff9077ba6",
   "claim_expires": "2026-09-23T23:57:59+00:00",
   "depends_on": [
     "AR-1356"
   ],
   "id": "AR-1357",
-  "next_action": "Promote after AR-1356 is done, then implement the versioned control-issued enrollment record transport and opaque runtime ingestion with positive and negative tests.",
+  "next_action": "Signed commit cc8016f adds bounded versioned enrollment record encode/decode, attestation binding, freshness/nonce/replay ledger, and crate-private acquire_from_record seam. Push exact head through handoffctl, then monitor hosted CI and repair any failures. CLI run/sweep wiring remains downstream consumer work and must not fabricate authority.",
   "observed_branch": "feature/ar-1357-runtime-attested-enrollment-record",
   "observed_dirty": 0,
   "observed_head": "cc8016f2846071d65362a16685762cbff9077ba6",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Transport authenticated enrollment records into runtime without exposing authority to the CLI.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Runtime-attested enrollment record transport",
-  "updated_at": "2026-09-23T21:58:35+00:00",
+  "updated_at": "2026-09-23T21:58:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1357-runtime-attested-enrollment-record"
 }
 ---
@@ -87,3 +87,10 @@ Successor for AR-1355. AR-1356 supplies the authenticated control/runtime attest
 
 - 2026-09-23T21:58:25+00:00: Recorded command exit 0; command argv SHA-256
   571c23120f940ebbc43e13f86150b6d8211850ca85d13cf47c58474c741b8761.
+
+- 2026-09-23T21:58:47+00:00: Implementation slice complete and independently reviewed: Cargo.lock
+  diff is only the asb-runtime serde dependency; record fields are secret-free digests and public
+  target, serde denies unknown fields, 16 KiB bound, freshness max 15 minutes, deterministic nonce
+  bound to attestation, replay ledger consumes once, and acquire_from_record accepts crate-private
+  bootstrap authority only. Focused 15 live_service tests pass; clippy workspace and rustdoc -D
+  warnings pass; full workspace tests pass. Commit cc8016f is SSH-signed and DCO.

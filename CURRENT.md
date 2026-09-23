@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1357](tasks/AR-1357-runtime-attested-enrollment-record.md): Runtime-attested enrollment record transport | Transport authenticated enrollment records into runtime without exposing authority to the CLI. | Promote after AR-1356 is done, then implement the versioned control-issued enrollment record transport and opaque runtime ingestion with positive and negative tests. | codex-asb-runtime-attested-enrollment-luna56 |
+| P0 | [AR-1357](tasks/AR-1357-runtime-attested-enrollment-record.md): Runtime-attested enrollment record transport | Transport authenticated enrollment records into runtime without exposing authority to the CLI. | Signed commit cc8016f adds bounded versioned enrollment record encode/decode, attestation binding, freshness/nonce/replay ledger, and crate-private acquire_from_record seam. Push exact head through handoffctl, then monitor hosted CI and repair any failures. CLI run/sweep wiring remains downstream consumer work and must not fabricate authority. | codex-asb-runtime-attested-enrollment-luna56 |
 
 ## Open
 
