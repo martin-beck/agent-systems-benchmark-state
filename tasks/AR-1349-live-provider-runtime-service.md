@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 166,
+  "task_revision": 167,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T19:02:38+00:00",
+  "updated_at": "2026-09-23T19:03:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
@@ -503,3 +503,6 @@ qualified.
   protected-main AR-1350 versions; rebase completed cleanly at product head
   80c5e53ab51aa863e12b662121bfb4b013a0a421. No unresolved index remains. AR-1350 remains an explicit
   prerequisite and AR-1329 stays fail-closed.
+
+- 2026-09-23T19:03:00+00:00: Recorded command exit 0; command argv SHA-256
+  218f11ccb1f4ae61bc0ef34fdcace50e68f26986f96112abee61013675e949f1.
