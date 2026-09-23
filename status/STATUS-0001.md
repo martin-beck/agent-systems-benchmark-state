@@ -1810,7 +1810,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1349](../tasks/AR-1349-live-provider-runtime-service.md): Production live-provider runtime service | codex-asb-ar1329-live-cli-luna56 | Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep. | Selection/lease slice refined and committed as a22b9aee: LiveProviderRuntimeSelection groups immutable references without lint suppression. Focused live_service tests 2/2; full asb-runtime all-targets 85 passed, 1 ignored; clippy and fmt pass. Next bounded slice: compose runtime-owned pinned gate/backend, observed namespace, launch token, relay and opaque LiveProviderAttempt; preserve AR-1329 fail-closed. |
+| P1 | [AR-1349](../tasks/AR-1349-live-provider-runtime-service.md): Production live-provider runtime service | codex-asb-ar1329-live-cli-luna56 | Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep. | Attested composition slice committed as ffecd74c91bedb4cc946797b19626937ddd7a423: LiveProviderRuntimeAuthority groups runtime-issued token, denied launch input, benchmark lease, pinned backend, observed namespace and relay; compose_attempt delegates only through LiveLaunchFactory::acquire and returns opaque LiveProviderAttempt. Focused live_service 2/2, full runtime 85 passed/1 ignored, clippy and fmt pass. Next: replace caller-supplied authority bundle with production-owned gate/namespace/relay acquisition and wire the final opaque attempt into asb run/sweep; preserve AR-1329 fail-closed. |
 
 ### Open (4)
 

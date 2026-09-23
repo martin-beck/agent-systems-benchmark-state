@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1349-live-provider-runtime-service",
-  "checkpoint_commit": "a22b9aeea65a5db3d11f81a277132ade5df16795",
+  "checkpoint_commit": "ffecd74c91bedb4cc946797b19626937ddd7a423",
   "claim_expires": "2026-09-23T18:30:27+00:00",
   "depends_on": [
     "AR-1327",
@@ -11,7 +11,7 @@
     "AR-1347"
   ],
   "id": "AR-1349",
-  "next_action": "Selection/lease slice refined and committed as a22b9aee: LiveProviderRuntimeSelection groups immutable references without lint suppression. Focused live_service tests 2/2; full asb-runtime all-targets 85 passed, 1 ignored; clippy and fmt pass. Next bounded slice: compose runtime-owned pinned gate/backend, observed namespace, launch token, relay and opaque LiveProviderAttempt; preserve AR-1329 fail-closed.",
+  "next_action": "Attested composition slice committed as ffecd74c91bedb4cc946797b19626937ddd7a423: LiveProviderRuntimeAuthority groups runtime-issued token, denied launch input, benchmark lease, pinned backend, observed namespace and relay; compose_attempt delegates only through LiveLaunchFactory::acquire and returns opaque LiveProviderAttempt. Focused live_service 2/2, full runtime 85 passed/1 ignored, clippy and fmt pass. Next: replace caller-supplied authority bundle with production-owned gate/namespace/relay acquisition and wire the final opaque attempt into asb run/sweep; preserve AR-1329 fail-closed.",
   "observed_branch": "feature/ar-1349-live-provider-runtime-service",
   "observed_dirty": 0,
   "observed_head": "ffecd74c91bedb4cc946797b19626937ddd7a423",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T16:44:50+00:00",
+  "updated_at": "2026-09-23T16:45:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
@@ -165,3 +165,9 @@ qualified.
 
 - 2026-09-23T16:44:39+00:00: Recorded command exit 0; command argv SHA-256
   8eb2ae4dfaac2789a51076ff4dbb8729fb408a7f86b263caa352d2be488642b9.
+
+- 2026-09-23T16:45:09+00:00: Composition clippy first failed with too_many_arguments (8/7) on
+  compose_attempt; repaired by grouping the authority values into LiveProviderRuntimeAuthority
+  without suppressing the lint. Focused tests and clippy then passed. Existing
+  launch_factory/live_relay/live_namespace suites cover positive, expiry, revocation, duplicate and
+  teardown behavior; this slice intentionally does not enable CLI wiring yet.
