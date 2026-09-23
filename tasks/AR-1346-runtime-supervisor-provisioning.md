@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the production runtime supervisor boundary needed for safe live-provider CLI acquisition.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Runtime supervisor provisioning boundary",
-  "updated_at": "2026-09-23T15:36:45+00:00",
+  "updated_at": "2026-09-23T15:37:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1346-runtime-supervisor-provisioning"
 }
 ---
@@ -51,3 +51,6 @@ authority in `asb-cli`.
 
 - 2026-09-23T15:36:45+00:00: Recorded command exit 0; command argv SHA-256
   3928acedfc6d32e05c47078243c49c051c41ef0d31a7e2f3ad132499cc00daa8.
+
+- 2026-09-23T15:37:00+00:00: Recorded command exit 0; command argv SHA-256
+  23b2cad55d063096f1db1ccc3f3d836e4b2a7b710b948912fa96bcb9825162c3.
