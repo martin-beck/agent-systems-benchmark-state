@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime-owned API and CLI integration needed for safe live-provider attempts.",
-  "task_revision": 169,
+  "task_revision": 170,
   "title": "Runtime-owned CLI live acquisition contract",
-  "updated_at": "2026-09-23T13:46:28+00:00",
+  "updated_at": "2026-09-23T13:46:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1344-runtime-cli-acquisition-contract"
 }
 ---
@@ -444,3 +444,6 @@ contract and its tests are merged and verified.
   control::tests::state_root_is_exclusive_and_uncertain_restart_fails_closed: state root already
   owned, consistent with parallel test isolation race. Re-run cargo test -p asb-cli --lib --
   --test-threads=1 passed 100/100. fmt, clippy, runtime launch_factory, relay 7/7 remain green.
+
+- 2026-09-23T13:46:49+00:00: Recorded command exit 101; command argv SHA-256
+  62d6545f2d71d2d6f224da04c29cf83835667e0d7eb736e7c36feac7ff0fa581.
