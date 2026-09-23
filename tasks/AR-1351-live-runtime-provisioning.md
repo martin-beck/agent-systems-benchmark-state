@@ -12,7 +12,7 @@
   "id": "AR-1351",
   "next_action": "Independent review of signed commit de3fd42db25510d89aeef4d62a934965a3de40fa: verify private constructor boundary, no placeholder/synthetic authority in production, exact target allowlisting, observed namespace, lease rollback, relay teardown and no secret/path evidence. If approved, publish the clean branch through handoffctl and require exact-head CI; keep AR-1349/1329 fail-closed.",
   "observed_branch": "feature/ar-1351-live-runtime-provisioning",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "de3fd42db25510d89aeef4d62a934965a3de40fa",
   "owner": "codex-asb-runtime-acquisition-successor-luna56",
   "plan": "../plans/AR-1351-live-runtime-provisioning.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the private host/runtime provisioning seam for live acquisition.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Runtime-owned live provisioning",
-  "updated_at": "2026-09-23T19:28:58+00:00",
+  "updated_at": "2026-09-23T19:29:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1351-live-runtime-provisioning"
 }
 ---
