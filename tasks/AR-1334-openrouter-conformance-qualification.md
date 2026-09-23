@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the pinned OpenRouter free model under conformance and hostile fail-closed testing.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "OpenRouter free-model conformance and hostile qualification",
-  "updated_at": "2026-09-23T08:57:09+00:00",
+  "updated_at": "2026-09-23T08:57:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1334-openrouter-conformance-qualification"
 }
 ---
@@ -53,3 +53,6 @@ provider effect; real provider contact is opt-in and never required for CI.
 
 - 2026-09-23T08:57:09+00:00: Recorded command exit 101; command argv SHA-256
   6a2b0d8955ce8b418a058ab810f7b6d4a56db894a1be52931e8c19de22c13ad2.
+
+- 2026-09-23T08:57:34+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
