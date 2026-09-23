@@ -12,7 +12,7 @@
   "id": "AR-1343",
   "next_action": "Implement the runtime-owned bounded live provider relay service and per-attempt CLI factory acquisition; keep AR-1329 fail-closed until merged and verified.",
   "observed_branch": "feature/ar-1343-runtime-live-provider-relay",
-  "observed_dirty": 0,
+  "observed_dirty": 3,
   "observed_head": "d24221731891fb39f56118be9c5ae51364824517",
   "owner": "codex-asb-ar1343-replacement-20260923",
   "plan": "../plans/AR-1343-runtime-live-provider-relay.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime live-provider relay service and per-attempt opaque factory acquisition required by asb run and sweep.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Runtime live-provider relay service and CLI acquisition",
-  "updated_at": "2026-09-23T12:35:08+00:00",
+  "updated_at": "2026-09-23T12:35:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1343-runtime-live-provider-relay"
 }
 ---
