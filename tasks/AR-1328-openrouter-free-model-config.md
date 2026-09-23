@@ -11,7 +11,7 @@
   "id": "AR-1328",
   "next_action": "Monitor PR #254 hosted rerun at 7dd39bc; after all required checks pass, merge via integration tooling and verify post-merge checks.",
   "observed_branch": "feature/ar-1328-openrouter-free-model-config",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "0f77c87ae1bd4abdb0eecabeb1d45673ead73fd6",
   "owner": "codex-asb-ar1328-20260923",
   "plan": "../plans/AR-1328.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist the per-user OpenRouter free-model configuration and credential-free key enrollment.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "OpenRouter free-model user configuration and key enrollment",
-  "updated_at": "2026-09-23T08:04:09+00:00",
+  "updated_at": "2026-09-23T08:04:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1328-openrouter-free-model-config"
 }
 ---
