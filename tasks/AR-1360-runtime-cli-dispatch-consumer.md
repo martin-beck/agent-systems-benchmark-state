@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect authenticated runtime enrollment receipts to asb run and sweep without exposing authority.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Runtime CLI dispatch consumer",
-  "updated_at": "2026-09-23T23:00:38+00:00",
+  "updated_at": "2026-09-23T23:02:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1360-runtime-cli-dispatch-consumer"
 }
 ---
@@ -41,3 +41,6 @@ behavior, or let CLI arguments synthesize provider authority.
 
 - 2026-09-23T23:00:38+00:00: Recorded command exit 0; command argv SHA-256
   b7c438686581cf292b6cd41497ceabb3af42dfed57e04dfd6cc89efed8e2d15b.
+
+- 2026-09-23T23:02:13+00:00: Recorded command exit 0; command argv SHA-256
+  3efcb93fc4c8985c1a6fe4b3e5dff0b8822462f5ef60f4619564e0f9d85a0f23.
