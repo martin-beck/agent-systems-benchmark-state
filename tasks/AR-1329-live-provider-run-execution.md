@@ -12,16 +12,16 @@
   "next_action": "Consume the AR-1340 attested namespace-bound relay handoff; then integrate live run/sweep and complete denial/live evidence without weakening NetworkPolicy::Deny.",
   "observed_branch": "feature/ar-1329-live-provider-run-execution",
   "observed_dirty": 0,
-  "observed_head": "229941f013ad45a21e746a052bc4ae8ec531cfd7",
+  "observed_head": "2774b1d648b5c3bbda0e290e158dc352502d3768",
   "owner": "codex-asb-ar1329-20260923",
   "plan": "../plans/AR-1329.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute real agents against the selected provider through asb run and sweep with credential-free resolution.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Live-provider run execution for real agents",
-  "updated_at": "2026-09-23T11:27:37+00:00",
+  "updated_at": "2026-09-23T11:27:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1329-live-provider-run-execution"
 }
 ---
