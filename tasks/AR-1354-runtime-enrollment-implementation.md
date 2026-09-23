@@ -7,7 +7,7 @@
     "AR-1352"
   ],
   "id": "AR-1354",
-  "next_action": "Implement strict asb-config to asb-runtime enrollment, validate pinned targets/tools/relay root, and mint opaque handles for AR-1353 dispatch.",
+  "next_action": "BLOCKED on an attested runtime enrollment source: asb-runtime must receive an authority-free enrollment request and obtain concrete public target(s), pinned tool attestations, lease root, and relay root from a runtime/control-owned record; do not expose these asb-cli inputs. Add a signed/attested record transport or coordinator-owned runtime enrollment AR, then implement acquire_from_enrollment and CLI dispatch with positive/negative tests.",
   "observed_branch": "feature/ar-1354-runtime-enrollment-implementation",
   "observed_dirty": 0,
   "observed_head": "d83a85926f2c4c42317617f4f6b7b3c9a3195874",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement config-backed runtime-owned enrollment for live CLI dispatch.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Runtime enrollment implementation",
-  "updated_at": "2026-09-23T20:59:43+00:00",
+  "updated_at": "2026-09-23T21:00:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1354-runtime-enrollment-implementation"
 }
 ---
@@ -44,3 +44,9 @@ durably promoted; AR-1329 remains fail-closed.
   AR-1354 scope and reassign to replacement gpt-5.6-luna worker.
 
 - 2026-09-23T20:59:43+00:00: Claimed by codex-asb-runtime-acquisition-successor-luna56.
+
+- 2026-09-23T21:00:14+00:00: Read-only architecture audit completed. Existing LiveProviderEnrollment
+  can return only an opaque handle, while LiveProviderBootstrapSpec and LiveProviderProvisioner::new
+  are crate-private. asb-cli has only OpenRouter config/selection digests, no attested
+  target/tool/root authority. Exposing a constructor or accepting paths/targets from CLI would
+  violate the AR and fail-closed boundary, so no product diff was made.

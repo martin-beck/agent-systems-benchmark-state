@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1354](tasks/AR-1354-runtime-enrollment-implementation.md): Runtime enrollment implementation | Implement config-backed runtime-owned enrollment for live CLI dispatch. | Implement strict asb-config to asb-runtime enrollment, validate pinned targets/tools/relay root, and mint opaque handles for AR-1353 dispatch. | codex-asb-runtime-acquisition-successor-luna56 |
+| P1 | [AR-1354](tasks/AR-1354-runtime-enrollment-implementation.md): Runtime enrollment implementation | Implement config-backed runtime-owned enrollment for live CLI dispatch. | BLOCKED on an attested runtime enrollment source: asb-runtime must receive an authority-free enrollment request and obtain concrete public target(s), pinned tool attestations, lease root, and relay root from a runtime/control-owned record; do not expose these asb-cli inputs. Add a signed/attested record transport or coordinator-owned runtime enrollment AR, then implement acquire_from_enrollment and CLI dispatch with positive/negative tests. | codex-asb-runtime-acquisition-successor-luna56 |
 
 ## Open
 
