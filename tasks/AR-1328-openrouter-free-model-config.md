@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1328-openrouter-free-model-config",
   "checkpoint_commit": "96e236cb83477479e244abd7f5014725e7806b88",
-  "claim_expires": "2026-09-23T10:28:14+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1325",
     "AR-1326",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1328-openrouter-free-model-config",
   "observed_dirty": 0,
   "observed_head": "8ff10cba5637174dc9929477e2903d75218a2daf",
-  "owner": "codex-asb-ar1328-20260923",
+  "owner": "",
   "plan": "../plans/AR-1328.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Persist the per-user OpenRouter free-model configuration and credential-free key enrollment.",
-  "task_revision": 141,
+  "task_revision": 142,
   "title": "OpenRouter free-model user configuration and key enrollment",
-  "updated_at": "2026-09-23T08:41:13+00:00",
+  "updated_at": "2026-09-23T08:41:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1328-openrouter-free-model-config"
 }
 ---
@@ -382,3 +382,5 @@ configurations fail closed.
 - 2026-09-23T08:41:13+00:00: PR #254 merged at 96e236c from exact green head 8ff10cb; post-merge
   main Rust, repository-quality/coverage, formal, fault, hosted portability, aarch64, and headers
   checks all succeeded.
+
+- 2026-09-23T08:41:26+00:00: Completed and merged; post-merge main checks all green at 96e236c.

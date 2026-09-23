@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1328](tasks/AR-1328-openrouter-free-model-config.md): OpenRouter free-model user configuration and key enrollment | Persist the per-user OpenRouter free-model configuration and credential-free key enrollment. | Promote AR-1329 live-provider run execution; preserve credential-free configuration and exact-head evidence. | codex-asb-ar1328-20260923 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -369,6 +363,7 @@ Never edit this file directly.
 | P1 | [AR-1325](tasks/AR-1325-provider-openrouter.md): Support a shared OpenRouter provider | Define one pinned credential-free OpenRouter provider profile for compatible ASB agent adapters. | Repair protected-main merge-tree admission after post-merge Repository quality failed on 56c882a: protected-main merge tree differs from reviewed topic tree; create and execute a dedicated repair AR, then rerun all exact-main workflows before treating AR-1325 as done. | - |
 | P1 | [AR-1326](tasks/AR-1326-openrouter-catalog-selection.md): Select OpenRouter through the CLI provider catalog | Advertise the OpenRouter profile in the CLI provider catalog and accept it in provider-plan selection. | PR #250 merged at 8692729a58d16e5c9d5387d5d68a7daa54d6443a. Post-merge hosted workflows: Fault assurance and hosted portability passed; Rust verification failed once on timing assertion gemini::tests::malformed_ready_marker_fails_fast_and_cleans_run_root (elapsed >= 1s), while Repository quality, Formal assurance, and Emulated AArch64 remain in progress. Keep AR in progress and create/assign a repair AR or approved rerun; do not release done until all post-merge evidence is green. | - |
 | P1 | [AR-1327](tasks/AR-1327-openrouter-adapter-parity.md): OpenRouter adapter projections and parity conformance | Wire the OpenRouter endpoint and model through every compatible agent adapter projection and prove parity with hostile conformance evidence. | Verify post-merge main 5207ce478986cdf1687207967cdf517129f85624 workflows and exact OpenRouter parity evidence; then close AR-1327 and advance AR-1328. | - |
+| P1 | [AR-1328](tasks/AR-1328-openrouter-free-model-config.md): OpenRouter free-model user configuration and key enrollment | Persist the per-user OpenRouter free-model configuration and credential-free key enrollment. | Promote AR-1329 live-provider run execution; preserve credential-free configuration and exact-head evidence. | - |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Run final exact-main and local post-merge verification using required native x86_64 kernel evidence and applicable pinned QEMU AArch64 portability checks; record native ARM64 PMU/eBPF as optional future evidence, then release. | - |
 | P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Run final state validation/live doctor and release done after confirming clean synchronized product/state refs at signed merge a0d80e4. | - |
 | P2 | [AR-0309](tasks/AR-0309-agent-openhands.md): Implement maintained OpenHands SDK client adapter | Run a maintained MIT OpenHands SDK or canonical headless client. | Monitor PR #65 exact-head CI for fec0487, investigate any failure, and await final review; do not merge. | - |
