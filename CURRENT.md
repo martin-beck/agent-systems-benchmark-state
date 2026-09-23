@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1344](tasks/AR-1344-runtime-cli-acquisition-contract.md): Runtime-owned CLI live acquisition contract | Add the runtime-owned API and CLI integration needed for safe live-provider attempts. | Wire the opaque per-attempt context into CLI run/sweep once SandboxProcess lifecycle is integrated; retain fail-closed rejection until then. | codex-asb-ar1344-cli-acquisition-20260923 |
+| P1 | [AR-1344](tasks/AR-1344-runtime-cli-acquisition-contract.md): Runtime-owned CLI live acquisition contract | Add the runtime-owned API and CLI integration needed for safe live-provider attempts. | Complete live relay accept/forward lifecycle around AgentProcess::Live; do not promote until relay is actively served and cancellation/expiry teardown tests pass. | codex-asb-ar1344-cli-acquisition-20260923 |
 
 ## Open
 

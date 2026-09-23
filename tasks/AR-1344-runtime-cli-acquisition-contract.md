@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1344-runtime-cli-acquisition-contract",
-  "checkpoint_commit": "a29f38f6a1f73160bb9c3a4f760c14a7f0e75d6f",
+  "checkpoint_commit": "487bf83d802fc15d19b581e72af8ed7f4e849409",
   "claim_expires": "2026-09-23T14:57:19+00:00",
   "depends_on": [
     "AR-1339",
@@ -9,7 +9,7 @@
     "AR-1342"
   ],
   "id": "AR-1344",
-  "next_action": "Wire the opaque per-attempt context into CLI run/sweep once SandboxProcess lifecycle is integrated; retain fail-closed rejection until then.",
+  "next_action": "Complete live relay accept/forward lifecycle around AgentProcess::Live; do not promote until relay is actively served and cancellation/expiry teardown tests pass.",
   "observed_branch": "feature/ar-1344-runtime-cli-acquisition-contract",
   "observed_dirty": 0,
   "observed_head": "487bf83d802fc15d19b581e72af8ed7f4e849409",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime-owned API and CLI integration needed for safe live-provider attempts.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Runtime-owned CLI live acquisition contract",
-  "updated_at": "2026-09-23T13:03:01+00:00",
+  "updated_at": "2026-09-23T13:03:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1344-runtime-cli-acquisition-contract"
 }
 ---
@@ -118,3 +118,9 @@ contract and its tests are merged and verified.
 
 - 2026-09-23T13:02:50+00:00: Recorded command exit 0; command argv SHA-256
   4d70564f00fdc7493145f48a7ca60627d5cb64c225661a02dc4d1fb26191ed75.
+
+- 2026-09-23T13:03:10+00:00: Checkpoint 487bf83: CLI accepts an injected opaque LiveProviderAttempt
+  and retains it through SandboxProcess lifecycle; SandboxProcess now exposes pid/observation. cargo
+  check -p asb-cli passes and focused live-provider gate test passes. Remaining blocker: relay
+  accept/forward is not yet serviced by CLI/runtime supervisor, so live execution must not be
+  considered complete.
