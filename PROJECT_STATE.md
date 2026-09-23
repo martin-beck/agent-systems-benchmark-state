@@ -23,20 +23,21 @@ Generated from local Git and GitHub. Do not edit.
 | #235 | `dependabot/github_actions/taiki-e/install-action-2.87.12@de0353cce59e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.6 to 2.87.12 |
 | #236 | `dependabot/cargo/toml-1.1.6spec-1.1.0@9dc09c5208ab` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump toml from 0.8.23 to 1.1.6+spec-1.1.0 |
 | #237 | `dependabot/cargo/thiserror-2.0.20@83dba9288d9c` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump thiserror from 2.0.16 to 2.0.20 |
+| #262 | `feature/ar-1351-live-runtime-provisioning@d0b0cbefffdd` | `main` | UNSTABLE | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, QUEUED:, IN_PROGRESS: | feat(runtime): add owned live provisioning seam |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 35910007624 | `d0b0cbefffdd` | pull_request | Formal assurance | queued:- |
+| 35910007598 | `d0b0cbefffdd` | pull_request | Fault assurance | in_progress:- |
+| 35910007575 | `d0b0cbefffdd` | pull_request | Huawei MIT source headers | in_progress:- |
+| 35910007560 | `d0b0cbefffdd` | pull_request | Rust verification | in_progress:- |
+| 35910007547 | `d0b0cbefffdd` | pull_request | Repository quality | in_progress:- |
+| 35910007546 | `d0b0cbefffdd` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 35910007544 | `d0b0cbefffdd` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 35910007538 | `d0b0cbefffdd` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 35905431904 | `a6ef99b07d15` | pull_request | Huawei MIT source headers | completed:success |
 | 35905431665 | `a6ef99b07d15` | pull_request | Repository quality | completed:failure |
 | 35905431660 | `a6ef99b07d15` | pull_request | Formal assurance | completed:failure |
 | 35905431646 | `a6ef99b07d15` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 35905431632 | `a6ef99b07d15` | pull_request | Hosted portability and native qualification | completed:failure |
-| 35905431629 | `a6ef99b07d15` | pull_request | Fault assurance | completed:failure |
-| 35905431592 | `a6ef99b07d15` | pull_request | Rust verification | completed:failure |
-| 35905431577 | `a6ef99b07d15` | pull_request | Emulated aarch64 portability | completed:failure |
-| 35905311859 | `4d8f0c425a8c` | dynamic | Dependabot Updates | completed:success |
-| 35905186652 | `4d8f0c425a8c` | push | Repository quality | completed:success |
-| 35905186579 | `4d8f0c425a8c` | push | Emulated aarch64 portability | completed:success |
-| 35905186544 | `4d8f0c425a8c` | push | Fault assurance | completed:success |
