@@ -11,12 +11,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
+| **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 3 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 49 |
 | **Planned** | Defined work awaiting promotion or dependencies | 65 |
 | **Future** | Deferred roadmap work | 1 |
-| **Done** | Accepted, integrated, and durably verified | 232 |
+| **Done** | Accepted, integrated, and durably verified | 233 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 11 |
 
@@ -426,7 +426,7 @@ flowchart LR
         AR_1331["AR-1331 - Planned"]:::status_planned
         AR_1332["AR-1332 - Planned"]:::status_planned
         AR_1333["AR-1333 - Planned"]:::status_planned
-        AR_1334["AR-1334 - In progress"]:::status_in_progress
+        AR_1334["AR-1334 - Done"]:::status_done
         AR_1335["AR-1335 - Planned"]:::status_planned
         AR_1336["AR-1336 - Planned"]:::status_planned
         AR_1337["AR-1337 - Done"]:::status_done
@@ -1756,12 +1756,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md): Live-provider run execution for real agents | codex-asb-ar1329-20260923 | Execute real agents against the selected provider through asb run and sweep with credential-free resolution. | Consume AR-1339 runtime-owned authenticated provider relay; then integrate live run/sweep and complete egress denial/live evidence. |
-| P1 | [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md): OpenRouter free-model conformance and hostile qualification | codex-asb-ar1334-20260923 | Qualify the pinned OpenRouter free model under conformance and hostile fail-closed testing. | Push PR for independent review; wait exact-head required CI, repair any failures, then merge only after all checks are green and verify post-merge workflows. |
 | P1 | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md): Runtime-owned live-provider egress backend | codex-asb-ar1339-20260923 | Implement the runtime-owned authenticated backend for explicit live provider egress. | Integrate ProviderEgressRelay into the runtime-owned sandbox/CLI live launch handoff; relay now connects only authorized exact targets and bounds forwarding, with synthetic transport tests. |
 
 ### Open (3)
@@ -1809,3 +1808,4 @@ flowchart LR
 | P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Unclaimed | Repair the state-repository TLA admission runner and truthful worktree metadata. | Blocked: AR-1307 remote head ab485f767 != required 969eef058. AR-1308 preflight had 4.9 GiB free vs 16 GiB minimum and missing lock/JDK/TLC at runtime root. Reopen only with exact input bundle and passing preflight; do not run TLC locally. |
 | P0 | [AR-1305](../tasks/AR-1305-image-native-user-session.md): Image-native user-session support | Unclaimed | Qualify image-native D-Bus user-session support for required TLC containment. | Blocked: guestfish read-only inspection fails before access because /usr/bin/supermin exits 1; approved root has ~4.9 GiB free, preventing safe image repair. Reopen only with reviewed working appliance/capacity; no portable fallback, AR-1304 limit changes, or qualification. |
 | P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Unclaimed | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | AR-1308 is planned for disposable x86_64 QEMU capacity. Keep AR-1307 unqualified; after AR-1308 capacity evidence, rerun exact full-exhaustive without changing the 3G/3G contract. |
+| P0 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Unclaimed | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Clean runner ready: 64 GiB disk, x86_64 QEMU 8.2.2, 8 vCPU, 32 GiB RAM, no network/mounts. Bind exact AR-1307 bundle, pinned JDK/TLC, lock, image and seed; preflight before boot. |

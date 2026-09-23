@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1334-openrouter-conformance-qualification",
   "checkpoint_commit": "979dfe692369ad6f4fa17bdba625ade4a15187aa",
-  "claim_expires": "2026-09-23T11:16:42+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1327",
     "AR-1328"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1334-openrouter-conformance-qualification",
   "observed_dirty": 0,
   "observed_head": "979dfe692369ad6f4fa17bdba625ade4a15187aa",
-  "owner": "codex-asb-ar1334-20260923",
+  "owner": "",
   "plan": "../plans/AR-1334.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Qualify the pinned OpenRouter free model under conformance and hostile fail-closed testing.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "OpenRouter free-model conformance and hostile qualification",
-  "updated_at": "2026-09-23T09:16:42+00:00",
+  "updated_at": "2026-09-23T09:22:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1334-openrouter-conformance-qualification"
 }
 ---
@@ -123,3 +123,9 @@ provider effect; real provider contact is opt-in and never required for CI.
   0d2db8ec32680fc7fe2e8944b5cfa7590c9cf8e9fbbbdcf3bcf06c87fb64bf74.
 
 - 2026-09-23T09:16:42+00:00: Heartbeat by codex-asb-ar1334-20260923.
+
+- 2026-09-23T09:22:12+00:00: PR #255 merged at 01134c9144aa04b0d54d9cdc529d250b32de1817 from exact
+  reviewed head 979dfe692369ad6f4fa17bdba625ade4a15187aa. Post-merge Repository quality 35841662033,
+  Emulated aarch64 35841661960, Fault assurance 35841661958, Huawei MIT headers 35841661932, Hosted
+  portability 35841661916, Formal assurance 35841661914, and Rust verification 35841661913 all
+  completed successfully. Conformance and hostile credential-bleed repair evidence retained.
