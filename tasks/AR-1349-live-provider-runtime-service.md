@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1349-live-provider-runtime-service",
-  "checkpoint_commit": "baf2fa733f079a58e5956759bcf1609657f02375",
+  "checkpoint_commit": "359f15af52aa2b0b31bb091b945e7de933960006",
   "claim_expires": "2026-09-23T18:30:27+00:00",
   "depends_on": [
     "AR-1327",
@@ -11,7 +11,7 @@
     "AR-1347"
   ],
   "id": "AR-1349",
-  "next_action": "Production acquisition remains blocked at the exact missing runtime owner. Protected main has no constructor that can privately resolve pinned live gate/backend, observe namespace, issue token, construct relay, and compose LiveProviderAttempt; an attempted private resolver boundary was removed after private-interfaces/dead-code gates proved no legitimate production implementation. The signed CredentialInjection contract remains the safe cross-crate seam. CLI run/sweep stays fail-closed until a real runtime resolver exists; AR-1329 remains fail-closed.",
+  "next_action": "Implement the production runtime-owned acquisition constructor: keep LiveProviderResolver authority-free, add a private resolver implementation only once a safe final credential sink exists, then atomically acquire gate/backend, lease, target/egress, observed namespace, token, relay, and opaque attempt with rollback tests. Current resolver seam is validated; CLI run/sweep remains fail-closed.",
   "observed_branch": "feature/ar-1349-live-provider-runtime-service",
   "observed_dirty": 0,
   "observed_head": "359f15af52aa2b0b31bb091b945e7de933960006",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 101,
+  "task_revision": 102,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T17:00:06+00:00",
+  "updated_at": "2026-09-23T17:00:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
@@ -308,3 +308,10 @@ qualified.
 
 - 2026-09-23T17:00:06+00:00: Recorded command exit 0; command argv SHA-256
   8b7eaabb7c0b344d4f83f11f418e92d57616557626f32d523ad7d0066829e70f.
+
+- 2026-09-23T17:00:35+00:00: Checkpoint 359f15a adds the cross-crate trait-first
+  LiveProviderResolver seam. It accepts only LiveProviderRuntimeSelection and returns opaque
+  CredentialInjection; resolver positive and fail-closed tests pass 3/3. Remaining exact blocker:
+  CredentialInjection::inject currently receives SandboxLaunchInput but exposes no safe final
+  credential target/sink, so asb-agents cannot implement a production adapter without exposing
+  credential bytes or inventing authority. No CLI wiring added; AR-1329 remains fail-closed.

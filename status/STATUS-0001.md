@@ -1810,7 +1810,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1349](../tasks/AR-1349-live-provider-runtime-service.md): Production live-provider runtime service | codex-asb-ar1329-live-cli-luna56 | Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep. | Production acquisition remains blocked at the exact missing runtime owner. Protected main has no constructor that can privately resolve pinned live gate/backend, observe namespace, issue token, construct relay, and compose LiveProviderAttempt; an attempted private resolver boundary was removed after private-interfaces/dead-code gates proved no legitimate production implementation. The signed CredentialInjection contract remains the safe cross-crate seam. CLI run/sweep stays fail-closed until a real runtime resolver exists; AR-1329 remains fail-closed. |
+| P1 | [AR-1349](../tasks/AR-1349-live-provider-runtime-service.md): Production live-provider runtime service | codex-asb-ar1329-live-cli-luna56 | Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep. | Implement the production runtime-owned acquisition constructor: keep LiveProviderResolver authority-free, add a private resolver implementation only once a safe final credential sink exists, then atomically acquire gate/backend, lease, target/egress, observed namespace, token, relay, and opaque attempt with rollback tests. Current resolver seam is validated; CLI run/sweep remains fail-closed. |
 
 ### Open (4)
 
