@@ -17,7 +17,7 @@
   "schema_version": 1,
   "status": "planned",
   "summary": "Connect authenticated runtime enrollment receipts to asb run and sweep without exposing authority.",
-  "task_revision": 0,
+  "task_revision": 1,
   "title": "Runtime CLI dispatch consumer",
   "updated_at": "2026-09-24T00:00:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1360-runtime-cli-dispatch-consumer"
