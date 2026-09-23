@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1343-runtime-live-provider-relay",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-23T14:27:56+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1327",
     "AR-1328",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1343-runtime-live-provider-relay",
   "observed_dirty": 0,
   "observed_head": "d24221731891fb39f56118be9c5ae51364824517",
-  "owner": "codex-asb-ar1343-20260923",
+  "owner": "",
   "plan": "../plans/AR-1343-runtime-live-provider-relay.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Add the runtime live-provider relay service and per-attempt opaque factory acquisition required by asb run and sweep.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Runtime live-provider relay service and CLI acquisition",
-  "updated_at": "2026-09-23T12:28:35+00:00",
+  "updated_at": "2026-09-23T12:31:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1343-runtime-live-provider-relay"
 }
 ---
@@ -42,3 +42,7 @@ capabilities without bypassing the denied-network sandbox.
 
 - 2026-09-23T12:28:24+00:00: Recorded command exit 0; command argv SHA-256
   4ceb2c778de2adc750cc517d528e384d733c51082e7610e12c936ac8ef87bebe.
+
+- 2026-09-23T12:31:39+00:00: Worker session interrupted after clean worktree setup with no
+  implementation progress; preserve AR-1343 scope/checkpoint and hand off to replacement
+  gpt-5.6-luna worker.
