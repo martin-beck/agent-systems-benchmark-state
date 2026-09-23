@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the private runtime-owned bootstrap source for live acquisition.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Runtime-owned live bootstrap",
-  "updated_at": "2026-09-23T20:25:25+00:00",
+  "updated_at": "2026-09-23T20:25:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1352-runtime-live-bootstrap"
 }
 ---
@@ -151,3 +151,6 @@ integration. AR-1329 remains fail-closed.
   progress. No merge or AR release before independent review and all exact-head checks.
 
 - 2026-09-23T20:25:25+00:00: Heartbeat by codex-asb-runtime-acquisition-successor-luna56.
+
+- 2026-09-23T20:25:29+00:00: Recorded command exit 0; command argv SHA-256
+  7a22b94603b2373c44a68ad9df2cfa4a8ef194c48c254ea58c8dd5fb655c95d8.
