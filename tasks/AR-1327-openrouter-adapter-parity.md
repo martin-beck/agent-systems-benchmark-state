@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire the OpenRouter endpoint and model through every compatible agent adapter projection and prove parity with hostile conformance evidence.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "OpenRouter adapter projections and parity conformance",
-  "updated_at": "2026-09-23T07:10:13+00:00",
+  "updated_at": "2026-09-23T07:10:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1327-openrouter-adapter-parity"
 }
 ---
@@ -39,3 +39,6 @@ allowance must be extended explicitly, never silently.
   workflows are green. Promote OpenRouter adapter parity as next dependency-ready AR.
 
 - 2026-09-23T07:10:13+00:00: Claimed by codex-asb-ar1327-20260923.
+
+- 2026-09-23T07:10:25+00:00: Recorded command exit 0; command argv SHA-256
+  53c501452a74c3b7ca470a2f29d1f418ac76768339297ba429a62b1248181e3a.
