@@ -10,7 +10,7 @@
     "AR-1347"
   ],
   "id": "AR-1350",
-  "next_action": "PR #261 exact head remains 709dae14b3ddecc143af4bcb722c3c4250412225. Hosted Rust verification failed only at pre-existing gemini::malformed_ready_marker_fails_fast_and_cleans_run_root elapsed<1s timing assertion; report was 187 passed, 1 failed. No AR-1350 code failure or test weakening is authorized. Dispatch an exact-head verify.yml rerun, record its run ID, and monitor all required checks; merge only after the rerun and every required check is green.",
+  "next_action": "Exact-head verify.yml rerun dispatched at 709dae14b3ddecc143af4bcb722c3c4250412225: workflow run 35899655572 (https://github.com/martin-beck/agent-systems-benchmark/actions/runs/35899655572). Monitor this rerun and all PR #261 required checks; merge only after every required check is green and independent review is complete. No timing gate is weakened.",
   "observed_branch": "feature/ar-1350-sandbox-credential-channel",
   "observed_dirty": 0,
   "observed_head": "709dae14b3ddecc143af4bcb722c3c4250412225",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement a sandbox-owned sealed-FD credential channel for live provider children.",
-  "task_revision": 82,
+  "task_revision": 83,
   "title": "Sandbox-owned credential channel",
-  "updated_at": "2026-09-23T18:01:52+00:00",
+  "updated_at": "2026-09-23T18:02:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1350-sandbox-credential-channel"
 }
 ---
@@ -251,3 +251,8 @@ private runtime channel before AR-1349 can safely acquire attempts or wire
 
 - 2026-09-23T18:01:52+00:00: Recorded command exit 0; command argv SHA-256
   708168b916aee7e61240236d99e00bf9a958119c8978312556239eebf73c1430.
+
+- 2026-09-23T18:02:14+00:00: Dispatched approved exact-head Rust verification rerun via handoffctl:
+  verify.yml run 35899655572 at commit 709dae14b3ddecc143af4bcb722c3c4250412225. Prior failure
+  remains recorded as pre-existing elapsed<1s assertion in
+  gemini::malformed_ready_marker_fails_fast_and_cleans_run_root (187 passed, 1 failed).
