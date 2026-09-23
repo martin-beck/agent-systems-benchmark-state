@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1348-runtime-owned-live-acquisition",
   "checkpoint_commit": "a336d6744b1a82f36a706ec606b847c92d49cfd3",
-  "claim_expires": "",
+  "claim_expires": "2026-09-23T17:59:20+00:00",
   "depends_on": [
     "AR-1327",
     "AR-1328",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1348-runtime-owned-live-acquisition",
   "observed_dirty": 0,
   "observed_head": "a336d6744b1a82f36a706ec606b847c92d49cfd3",
-  "owner": "",
+  "owner": "codex-asb-ar1329-live-cli-luna56",
   "plan": "../plans/AR-1348-runtime-owned-live-acquisition.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide the runtime-owned supervisor that acquires every live-provider authority and tears it down safely.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Runtime-owned live acquisition service",
-  "updated_at": "2026-09-23T15:58:39+00:00",
+  "updated_at": "2026-09-23T15:59:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1348-runtime-owned-live-acquisition"
 }
 ---
@@ -61,3 +61,5 @@ this service owns acquisition instead of accepting caller-built launch authority
 
 - 2026-09-23T15:58:39+00:00: Recovering stalled worker after constructor audit; preserve audit
   evidence and reopen for replacement gpt-5.6-luna worker.
+
+- 2026-09-23T15:59:20+00:00: Claimed by codex-asb-ar1329-live-cli-luna56.
