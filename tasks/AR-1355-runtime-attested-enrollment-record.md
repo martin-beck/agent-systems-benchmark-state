@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1355-runtime-attested-enrollment-record",
   "checkpoint_commit": "d83a85926f2c4c42317617f4f6b7b3c9a3195874",
-  "claim_expires": null,
+  "claim_expires": "2026-09-23T23:02:15+00:00",
   "depends_on": [
     "AR-1352"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1355-runtime-attested-enrollment-record",
   "observed_dirty": 0,
   "observed_head": "d83a85926f2c4c42317617f4f6b7b3c9a3195874",
-  "owner": null,
+  "owner": "codex-asb-runtime-acquisition-successor-luna56",
   "plan": "../plans/AR-1355-runtime-attested-enrollment-record.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Transport runtime-attested enrollment authority without exposing it to the CLI.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Runtime-attested enrollment record transport",
-  "updated_at": "2026-09-23T21:02:13+00:00",
+  "updated_at": "2026-09-23T21:02:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1355-runtime-attested-enrollment-record"
 }
 ---
@@ -30,3 +30,5 @@ constructors or synthetic authority. AR-1329 remains fail-closed until merge.
 
 - 2026-09-23T21:02:13+00:00: Promote P0 runtime-attested enrollment record transport; AR-1354
   blocker is recorded and preserved.
+
+- 2026-09-23T21:02:15+00:00: Claimed by codex-asb-runtime-acquisition-successor-luna56.
