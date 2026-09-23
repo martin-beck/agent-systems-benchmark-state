@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1359-runtime-control-bridge",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T00:28:20+00:00",
   "depends_on": [
     "AR-1357"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "codex-asb-runtime-attested-enrollment-luna56",
   "plan": "../plans/AR-1359-runtime-control-bridge.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Bridge authenticated control enrollment into runtime-owned opaque live authority.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Runtime/control enrollment bridge",
-  "updated_at": "2026-09-23T22:28:17+00:00",
+  "updated_at": "2026-09-23T22:28:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1359-runtime-control-bridge"
 }
 ---
@@ -32,3 +32,5 @@ fail-closed behavior and do not touch asb-tui.
 
 - 2026-09-23T22:28:17+00:00: AR-1357 is done; promote the runtime-owned control bridge required by
   blocked AR-1358.
+
+- 2026-09-23T22:28:20+00:00: Claimed by codex-asb-runtime-attested-enrollment-luna56.
