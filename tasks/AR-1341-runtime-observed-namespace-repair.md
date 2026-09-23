@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair AR-1340 so live relay capabilities require runtime-observed child namespace agreement.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Runtime-observed namespace attestation repair",
-  "updated_at": "2026-09-23T10:50:17+00:00",
+  "updated_at": "2026-09-23T10:51:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1341-runtime-observed-namespace-repair"
 }
 ---
@@ -57,3 +57,6 @@ this task.
 
 - 2026-09-23T10:50:17+00:00: Recorded command exit 0; command argv SHA-256
   1b5a3c0d30f11d639cfb87a1e1a0cb344b46ce854d7ecd3479884b1d5ff94e05.
+
+- 2026-09-23T10:51:54+00:00: Recorded command exit 1; command argv SHA-256
+  6815c1900c6420e4c6b699cc18250efade4a3005213210edab34039920a38c8a.
