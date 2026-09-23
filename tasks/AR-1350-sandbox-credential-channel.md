@@ -10,7 +10,7 @@
     "AR-1347"
   ],
   "id": "AR-1350",
-  "next_action": "Targeted failures are recorded and repaired: E0369 opaque-channel test comparison was replaced with matches!; bubblewrap --ro-bind memfd produced a directory and was replaced by --ro-bind-data; then a strict unused-import failure was fixed by moving Path under cfg(test). The channel is now runtime-created only from validated LiveProviderRuntimeConfig, uses a sealed NUL-separated bubblewrap --args FD stream so the selected target variable receives the credential, and does not put secret or target in Command argv. Focused sandbox_credential tests pass 3/3; runtime clippy passes. Run workspace/full gates, independently review descriptor inheritance and cleanup, then signed+DCO commit.",
+  "next_action": "Final channel design: runtime creates it only from validated LiveProviderRuntimeConfig (private constructor), adapter capabilities can only consume that channel, and credential bytes are transferred by owned Vec then erased. Bubblewrap receives a sealed memfd via --args FD and sets the bound target variable inside the child; secret is absent from argv/evidence. Focused 3/3, runtime clippy, workspace clippy, workspace test (188+ passed with documented ignores), and formatting have passed. Run final docs/release build gates, then signed+DCO commit and independent diff review.",
   "observed_branch": "feature/ar-1350-sandbox-credential-channel",
   "observed_dirty": 6,
   "observed_head": "359f15af52aa2b0b31bb091b945e7de933960006",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement a sandbox-owned sealed-FD credential channel for live provider children.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Sandbox-owned credential channel",
-  "updated_at": "2026-09-23T17:38:41+00:00",
+  "updated_at": "2026-09-23T17:38:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1350-sandbox-credential-channel"
 }
 ---
@@ -121,3 +121,6 @@ private runtime channel before AR-1349 can safely acquire attempts or wire
   1024fc1e6cefa31b078f0b5d2ed85c7ea4586897b388bf1e308f62db58574461.
 
 - 2026-09-23T17:38:41+00:00: Heartbeat by codex-asb-ar1350-sandbox-channel-luna56.
+
+- 2026-09-23T17:38:50+00:00: Workspace cargo test --locked --workspace passed after the channel
+  delivery repair; final Vec ownership change has focused 3/3 and workspace clippy green.
