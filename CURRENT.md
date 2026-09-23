@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1343](tasks/AR-1343-runtime-live-provider-relay.md): Runtime live-provider relay service and CLI acquisition | Add the runtime live-provider relay service and per-attempt opaque factory acquisition required by asb run and sweep. | Successor dependency required: expose a reviewed runtime-owned CLI acquisition API that atomically supplies SandboxBackend, benchmark ResourceLease, runtime launch token, observed child NamespaceIdentity, and per-attempt LiveProviderRelay lifecycle. Keep spawn_verified_agent live-provider rejection and AR-1329 fail-closed until that contract is implemented and tested. | codex-asb-ar1343-replacement-20260923 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -17,6 +11,7 @@ Never edit this file directly.
 | P0 | [AR-1314](tasks/AR-1314-optional-bundle-signing-development-release.md): Optional runtime-bundle signing for development and tagged releases | Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile. | Wait for PR #232 exact-head CI after schema-v3 repair; if all required checks pass, independently review and merge through the established workflow, then reconcile AR-1314. Preserve signature-required defaults. | - |
 | P0 | [AR-1316](tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | Publish the verified ASB agent catalog required by the first-run setup wizard. | Persist the authenticated catalog snapshot/generation and complete live ASB-to-asb-tui wizard evidence; keep all entries unavailable until a verified release closure exists. | - |
 | P1 | [AR-1329](tasks/AR-1329-live-provider-run-execution.md): Live-provider run execution for real agents | Execute real agents against the selected provider through asb run and sweep with credential-free resolution. | AR-1342 LiveLaunchFactory focused tests pass, but CLI integration remains fail-closed: no runtime-owned live relay listener/request protocol, concrete egress target allowlist, credential transport, or pinned gate acquisition is exposed to asb run/sweep. Add a coordinator-owned runtime live-launch service API (per-attempt authority issuance and relay proxy) before AR-1329 product mutation; do not bypass NetworkPolicy::Deny. | - |
+| P1 | [AR-1343](tasks/AR-1343-runtime-live-provider-relay.md): Runtime live-provider relay service and CLI acquisition | Add the runtime live-provider relay service and per-attempt opaque factory acquisition required by asb run and sweep. | Successor dependency required: expose a reviewed runtime-owned CLI acquisition API that atomically supplies SandboxBackend, benchmark ResourceLease, runtime launch token, observed child NamespaceIdentity, and per-attempt LiveProviderRelay lifecycle. Keep spawn_verified_agent live-provider rejection and AR-1329 fail-closed until that contract is implemented and tested. | - |
 | P1 | [AR-1344](tasks/AR-1344-runtime-cli-acquisition-contract.md): Runtime-owned CLI live acquisition contract | Add the runtime-owned API and CLI integration needed for safe live-provider attempts. | Promote after dependencies are verified; implement the runtime-owned per-attempt CLI acquisition API and wire run/sweep without weakening live-provider fail-closed behavior. | - |
 
 ## Blocked

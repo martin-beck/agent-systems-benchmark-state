@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1343-runtime-live-provider-relay",
   "checkpoint_commit": "ce2c2db068b05092f0f63291e0d94d4dbc9cda9c",
-  "claim_expires": "2026-09-23T14:46:45+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1327",
     "AR-1328",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1343-runtime-live-provider-relay",
   "observed_dirty": 0,
   "observed_head": "ce2c2db068b05092f0f63291e0d94d4dbc9cda9c",
-  "owner": "codex-asb-ar1343-replacement-20260923",
+  "owner": "",
   "plan": "../plans/AR-1343-runtime-live-provider-relay.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Add the runtime live-provider relay service and per-attempt opaque factory acquisition required by asb run and sweep.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Runtime live-provider relay service and CLI acquisition",
-  "updated_at": "2026-09-23T12:47:00+00:00",
+  "updated_at": "2026-09-23T12:48:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1343-runtime-live-provider-relay"
 }
 ---
@@ -122,3 +122,6 @@ capabilities without bypassing the denied-network sandbox.
   SSH-signed+DCO and checkpointed. Existing SandboxBackend lacks a public discovery/acquisition API;
   CLI lacks benchmark lease, runtime token, observed child namespace, and relay lifecycle ownership.
   Inventing direct sockets or caller-built authority would violate AR scope and security boundaries.
+
+- 2026-09-23T12:48:55+00:00: Relay implementation is committed and verified at ce2c2db; CLI
+  acquisition is now isolated in promoted AR-1344. Keep AR-1329 fail-closed.
