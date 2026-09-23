@@ -25,7 +25,7 @@ Generated from local Git and GitHub. Do not edit.
 | #237 | `dependabot/cargo/thiserror-2.0.20@83dba9288d9c` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump thiserror from 2.0.16 to 2.0.20 |
 | #250 | `feature/ar-1326-openrouter-catalog-selection@0c031b985bfc` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): select OpenRouter through provider catalog and plan (AR-1326) |
 | #251 | `feature/ar-1327-openrouter-adapter-parity@5006bcf43fed` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(agents): OpenRouter adapter projections and parity conformance (AR-1327) |
-| #253 | `feature/ar-1323-auth-timeout@975f279cb69d` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(auth): honor negotiated control timeout |
+| #253 | `feature/ar-1323-auth-timeout@975f279cb69d` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(auth): honor negotiated control timeout |
 
 ## Recent workflows
 
@@ -35,7 +35,7 @@ Generated from local Git and GitHub. Do not edit.
 | 35827902819 | `975f279cb69d` | pull_request | Fault assurance | completed:success |
 | 35827902809 | `975f279cb69d` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 35827902807 | `975f279cb69d` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 35827902803 | `975f279cb69d` | pull_request | Rust verification | in_progress:- |
+| 35827902803 | `975f279cb69d` | pull_request | Rust verification | completed:success |
 | 35827902802 | `975f279cb69d` | pull_request | Formal assurance | completed:success |
 | 35827902778 | `975f279cb69d` | pull_request | Repository quality | in_progress:- |
 | 35827902767 | `975f279cb69d` | pull_request | Huawei MIT source headers | completed:success |
