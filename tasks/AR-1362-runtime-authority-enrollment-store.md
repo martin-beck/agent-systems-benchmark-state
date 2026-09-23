@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist authenticated runtime authority enrollment required for receipt issuance without exposing secrets.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Runtime authority enrollment store",
-  "updated_at": "2026-09-23T23:07:36+00:00",
+  "updated_at": "2026-09-23T23:07:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1362-runtime-authority-enrollment-store"
 }
 ---
@@ -47,3 +47,6 @@ authority from CLI/config inputs.
 
 - 2026-09-23T23:07:36+00:00: Recorded command exit 0; command argv SHA-256
   907b1b1f743859290d1b107a1971b1dbf4bfaf02a4014ca1961d94cfbbf81467.
+
+- 2026-09-23T23:07:58+00:00: Recorded command exit 0; command argv SHA-256
+  d9fa5fa9d6b1edd0744be1b0aa7351347516f8475fbf10364d8f42e7873456ab.
