@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1355-runtime-attested-enrollment-record",
   "checkpoint_commit": "d83a85926f2c4c42317617f4f6b7b3c9a3195874",
-  "claim_expires": "2026-09-23T23:03:55+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1352"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1355-runtime-attested-enrollment-record",
   "observed_dirty": 0,
   "observed_head": "d83a85926f2c4c42317617f4f6b7b3c9a3195874",
-  "owner": "codex-asb-runtime-acquisition-successor-luna56",
+  "owner": "",
   "plan": "../plans/AR-1355-runtime-attested-enrollment-record.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Transport runtime-attested enrollment authority without exposing it to the CLI.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Runtime-attested enrollment record transport",
-  "updated_at": "2026-09-23T21:04:26+00:00",
+  "updated_at": "2026-09-23T21:05:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1355-runtime-attested-enrollment-record"
 }
 ---
@@ -40,3 +40,9 @@ constructors or synthetic authority. AR-1329 remains fail-closed until merge.
 
 - 2026-09-23T21:04:26+00:00: Recorded command exit 0; command argv SHA-256
   a37d35e290b63ddfe8627f9bdb0474ef6d3f2654ade91f05cd9a55c3a713fceb.
+
+- 2026-09-23T21:05:48+00:00: Released blocked with exact evidence: baseline workspace check passed,
+  but no authenticated control-to-runtime attestation primitive exists. Existing asb-control has
+  enrollment/certificate metadata while asb-runtime lacks a verifiable capability issuer; exposing
+  record constructors would make CLI caller authority. Successor AR-1356 created for the missing
+  primitive; AR-1329 remains fail-closed.

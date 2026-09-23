@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**379 ARs tracked** across 7 active status categories.
+**380 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 4 |
-| **Blocked** | Cannot proceed until its recorded blocker clears | 50 |
-| **Planned** | Defined work awaiting promotion or dependencies | 64 |
+| **Blocked** | Cannot proceed until its recorded blocker clears | 51 |
+| **Planned** | Defined work awaiting promotion or dependencies | 65 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 243 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -447,7 +447,8 @@ flowchart LR
         AR_1352["AR-1352 - Done"]:::status_done
         AR_1353["AR-1353 - Superseded"]:::status_superseded
         AR_1354["AR-1354 - Blocked"]:::status_blocked
-        AR_1355["AR-1355 - In progress"]:::status_in_progress
+        AR_1355["AR-1355 - Blocked"]:::status_blocked
+        AR_1356["AR-1356 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1435,6 +1436,7 @@ flowchart LR
     AR_1352 --> AR_1353
     AR_1352 --> AR_1354
     AR_1352 --> AR_1355
+    AR_1352 --> AR_1356
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -1824,18 +1826,13 @@ flowchart LR
 | [AR-1349](../tasks/AR-1349-live-provider-runtime-service.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1347](../tasks/AR-1347-neutral-live-supervisor-composition.md), [AR-1350](../tasks/AR-1350-sandbox-credential-channel.md) | None |
 | [AR-1350](../tasks/AR-1350-sandbox-credential-channel.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1347](../tasks/AR-1347-neutral-live-supervisor-composition.md) | [AR-1349](../tasks/AR-1349-live-provider-runtime-service.md), [AR-1351](../tasks/AR-1351-live-runtime-provisioning.md) |
 | [AR-1351](../tasks/AR-1351-live-runtime-provisioning.md) | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1347](../tasks/AR-1347-neutral-live-supervisor-composition.md), [AR-1350](../tasks/AR-1350-sandbox-credential-channel.md) | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) |
-| [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) | [AR-1351](../tasks/AR-1351-live-runtime-provisioning.md) | [AR-1353](../tasks/AR-1353-runtime-enrollment-cli-dispatch.md), [AR-1354](../tasks/AR-1354-runtime-enrollment-implementation.md), [AR-1355](../tasks/AR-1355-runtime-attested-enrollment-record.md) |
+| [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) | [AR-1351](../tasks/AR-1351-live-runtime-provisioning.md) | [AR-1353](../tasks/AR-1353-runtime-enrollment-cli-dispatch.md), [AR-1354](../tasks/AR-1354-runtime-enrollment-implementation.md), [AR-1355](../tasks/AR-1355-runtime-attested-enrollment-record.md), [AR-1356](../tasks/AR-1356-control-runtime-attestation-primitive.md) |
 | [AR-1353](../tasks/AR-1353-runtime-enrollment-cli-dispatch.md) | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) | None |
 | [AR-1354](../tasks/AR-1354-runtime-enrollment-implementation.md) | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) | None |
 | [AR-1355](../tasks/AR-1355-runtime-attested-enrollment-record.md) | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) | None |
+| [AR-1356](../tasks/AR-1356-control-runtime-attestation-primitive.md) | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) | None |
 
 ## Complete AR inventory
-
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1355](../tasks/AR-1355-runtime-attested-enrollment-record.md): Runtime-attested enrollment record transport | codex-asb-runtime-acquisition-successor-luna56 | Transport runtime-attested enrollment authority without exposing it to the CLI. | Implement the runtime/control-owned attested enrollment-record transport, validate target/tool/lease/relay authority inside asb-runtime, mint opaque handles, then consume them in asb run/sweep with positive and negative tests. |
 
 ### Open (4)
 
@@ -1846,7 +1843,7 @@ flowchart LR
 | P0 | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | Unclaimed | Publish the verified ASB agent catalog required by the first-run setup wizard. | Persist the authenticated catalog snapshot/generation and complete live ASB-to-asb-tui wizard evidence; keep all entries unavailable until a verified release closure exists. |
 | P1 | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md): Live-provider run execution for real agents | Unclaimed | Execute real agents against the selected provider through asb run and sweep with credential-free resolution. | BLOCKED pending coordinator-created repair AR: implement runtime-owned LiveProviderRuntimeService acquisition for production asb run/sweep. Service must resolve pinned provider policy to concrete public target(s), obtain credential through enrolled environment channel without evidence disclosure, construct attested child namespace handoff and relay listener, reserve ResourceLease, create SandboxBackend with pinned live gate, attest and issue one LiveProviderAttempt per scheduler attempt, and teardown on cancellation. Then AR-1329 can wire dispatch --provider-selection/--live-provider while preserving NetworkPolicy::Deny and direct/alternate egress denial. |
 
-### Blocked (50)
+### Blocked (51)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1861,3 +1858,4 @@ flowchart LR
 | P0 | [AR-1261](../tasks/AR-1261-runtime-to-cli-replay-entrypoint.md): Runtime-to-CLI strict-replay handoff entrypoint | Unclaimed | Provide a runtime-owned entrypoint for strict-replay CLI supervision. | Reconcile coordinator view against declared runtime-cli worktree; then run focused/full gates and review exact signed head d91520f. |
 | P0 | [AR-1262](../tasks/AR-1262-runtime-owned-launch-authority.md): Runtime-owned strict-replay launch authority | Unclaimed | Issue runtime-owned authority for supervised strict-replay execution. | Do not merge PR #207; create runtime-to-CLI authority successor and rerun lifecycle, egress and no-fallback evidence. |
 | P0 | [AR-1265](../tasks/AR-1265-runtime-owned-replay-entrypoint.md): Runtime-owned strict-replay CLI entrypoint | Unclaimed | Provide a real runtime-owned strict-replay CLI entrypoint. | Runtime/CLI owner must add an authenticated context-bearing replay-plan dispatch entrypoint; then exercise cassette request/response and lifecycle/egress tests through it. |
+| P0 | [AR-1266](../tasks/AR-1266-authenticated-replay-dispatch.md): Authenticated replay dispatch context | Unclaimed | Add authenticated runtime context to the actual strict-replay CLI dispatch path. | Connect runtime context to supervised cassette execution rather than merely offline replay; add request/response, egress denial, cancellation/restart/timeout/crash cleanup and no-fallback tests. |
