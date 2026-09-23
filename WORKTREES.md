@@ -351,7 +351,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-readiness` | `DETACHED` | `78a8e9fc2144` | 0 | behind 90, ahead 0 |
 | `asb-recording-audit.vnDk3k` | `DETACHED` | `f205ff90dbc9` | 0 | behind 84, ahead 0 |
 | `pr256-review` | `DETACHED` | `0c19231abaf4` | 0 | behind 18, ahead 0 |
-| `agent-systems-benchmark-state` | `main` | `2602df7c98a8` | 3 | behind 0, ahead 0 |
+| `agent-systems-benchmark-state` | `main` | `3feac9a38c5e` | 3 | behind 0, ahead 1 |
 | changed files | - | - | - | `plans/AR-1343-runtime-live-provider-relay.md`, `plans/AR-1344-runtime-cli-acquisition-contract.md`, `tasks/AR-1344-runtime-cli-acquisition-contract.md` |
 | `agent-systems-benchmark-ar-1313-historical-dco-909078c` | `repair/ar-1313-historical-dco-909078c` | `8e5598eab3b3` | 0 | behind 1269, ahead 0 |
 | `agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity` | `feature/ar-1308-full-exhaustive-qemu-capacity` | `659030fffd7e` | 0 | behind 2690, ahead 0 |
