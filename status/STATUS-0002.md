@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Unclaimed | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | AR-1308 is planned for disposable x86_64 QEMU capacity. Keep AR-1307 unqualified; after AR-1308 capacity evidence, rerun exact full-exhaustive without changing the 3G/3G contract. |
 | P0 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Unclaimed | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Clean runner ready: 64 GiB disk, x86_64 QEMU 8.2.2, 8 vCPU, 32 GiB RAM, no network/mounts. Bind exact AR-1307 bundle, pinned JDK/TLC, lock, image and seed; preflight before boot. |
 | P0 | [AR-1313](../tasks/AR-1313-historical-dco-909078c-repair.md): Historical DCO merge-integrity recovery | Unclaimed | Forward-only signed DCO recovery candidate published as PR #231. | Keep PR #231 unmerged; route one-line workspace coverage deficit to AR-1312, then rerun exact-head checks and signed recovery merge. |
 | P1 | [AR-0604](../tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Unclaimed | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Obtain authorized native x86 runner and immutable CSB/Python evidence; rerun native_boundary and record A/B overhead. |
@@ -93,7 +92,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (234)
+### Done (235)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -202,6 +201,7 @@
 | P0 | [AR-1322](../tasks/AR-1322-authenticated-release-index-source.md): Authenticated agent release-index source | Unclaimed | Promote only completely verified agents from a signed local release index. | Run post-merge live ASB-to-asb-tui catalog projection with a configured signed index; keep unavailable fallback when trust configuration is absent. |
 | P0 | [AR-1324](../tasks/AR-1324-auth-helper-control-contract.md): Authenticated credential-helper control contract | Unclaimed | Own the ASB control and runner backend for safe credential-helper invocation. | Monitor authoritative pull_request checks for PR #248 at 5abd8c7; merge only after all required checks pass, then perform ASB↔asb-tui first-user/live-provider wizard acceptance. |
 | P0 | [AR-1337](../tasks/AR-1337-protected-main-merge-tree-repair-openrouter.md): Repair protected-main merge-tree admission after OpenRouter merge | Unclaimed | Repair the protected-main merge-tree admission defect exposed after the OpenRouter provider merge. | Await remaining PR #252 exact-head checks and independent review; then merge only via signed integration procedure at the current protected target and verify post-merge workflows. |
+| P0 | [AR-1341](../tasks/AR-1341-runtime-observed-namespace-repair.md): Runtime-observed namespace attestation repair | Unclaimed | Repair AR-1340 so live relay capabilities require runtime-observed child namespace agreement. | Monitor post-merge workflows for merge 2774b1d648b5c3bbda0e290e158dc352502d3768; after all seven exact-head workflows are green, release AR-1341 done with evidence and update AR-1340 security-hold transition. |
 | P1 | [AR-0002](../tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Unclaimed | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. |
 | P1 | [AR-0003](../tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Unclaimed | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. |
 | P1 | [AR-0004](../tasks/AR-0004-ar-status-document.md): Generate the visual AR status document | Unclaimed | Render every AR, status, and dependency as an accessible visual state document. | Await independent immutable-head review of state PR 3 at eedd311; repair findings before coordinator integration. |

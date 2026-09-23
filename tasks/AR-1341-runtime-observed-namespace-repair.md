@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1341-runtime-observed-namespace-repair",
   "checkpoint_commit": "228bcc33957d168041717f7ca347f06aa6256a64",
-  "claim_expires": "2026-09-23T13:24:49+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1339"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1341-runtime-observed-namespace-repair",
   "observed_dirty": 0,
   "observed_head": "228bcc33957d168041717f7ca347f06aa6256a64",
-  "owner": "codex-asb-ar1341-20260923",
+  "owner": "",
   "plan": "../plans/AR-1341.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Repair AR-1340 so live relay capabilities require runtime-observed child namespace agreement.",
-  "task_revision": 97,
+  "task_revision": 98,
   "title": "Runtime-observed namespace attestation repair",
-  "updated_at": "2026-09-23T11:24:57+00:00",
+  "updated_at": "2026-09-23T11:25:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1341-runtime-observed-namespace-repair"
 }
 ---
@@ -302,3 +302,9 @@ this task.
 
 - 2026-09-23T11:24:57+00:00: Recorded command exit 0; command argv SHA-256
   8b19a743076465afc56bbe4c8008c4dc84d59765d18677ef0e23d7c2fc3a2c03.
+
+- 2026-09-23T11:25:16+00:00: PR #258 merged at 2774b1d648b5c3bbda0e290e158dc352502d3768 from exact
+  head 228bcc33957d168041717f7ca347f06aa6256a64. All seven exact-head post-merge workflows green:
+  35853535895, 35853535903, 35853535928, 35853535939, 35853535966, 35853535973, 35853535986. Runtime
+  child namespace attestation, late-binding gate, copied/stale/mismatch denial tests verified;
+  clears AR-1340 security repair dependency.

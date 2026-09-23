@@ -11,12 +11,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 4 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 49 |
 | **Planned** | Defined work awaiting promotion or dependencies | 64 |
 | **Future** | Deferred roadmap work | 1 |
-| **Done** | Accepted, integrated, and durably verified | 234 |
+| **Done** | Accepted, integrated, and durably verified | 235 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 11 |
 
@@ -433,7 +433,7 @@ flowchart LR
         AR_1338["AR-1338 - Planned"]:::status_planned
         AR_1339["AR-1339 - Done"]:::status_done
         AR_1340["AR-1340 - Open"]:::status_open
-        AR_1341["AR-1341 - In progress"]:::status_in_progress
+        AR_1341["AR-1341 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1759,11 +1759,10 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1341](../tasks/AR-1341-runtime-observed-namespace-repair.md): Runtime-observed namespace attestation repair | codex-asb-ar1341-20260923 | Repair AR-1340 so live relay capabilities require runtime-observed child namespace agreement. | Monitor post-merge workflows for merge 2774b1d648b5c3bbda0e290e158dc352502d3768; after all seven exact-head workflows are green, release AR-1341 done with evidence and update AR-1340 security-hold transition. |
 | P1 | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md): Live-provider run execution for real agents | codex-asb-ar1329-20260923 | Execute real agents against the selected provider through asb run and sweep with credential-free resolution. | Consume the AR-1340 attested namespace-bound relay handoff; then integrate live run/sweep and complete denial/live evidence without weakening NetworkPolicy::Deny. |
 
 ### Open (4)
@@ -1811,3 +1810,4 @@ flowchart LR
 | P0 | [AR-1292](../tasks/AR-1292-tla-provenance-repair.md): Pinned TLA+ artifact provenance repair | Unclaimed | Repair or formally retain the pinned TLA+ artifact provenance mismatch blocking formal assurance. | Await signed or attested immutable TLA+ v1.8.0 provenance, or deterministic source-build qualification for 142d0ba; do not update hash only. |
 | P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Unclaimed | Repair the state-repository TLA admission runner and truthful worktree metadata. | Blocked: AR-1307 remote head ab485f767 != required 969eef058. AR-1308 preflight had 4.9 GiB free vs 16 GiB minimum and missing lock/JDK/TLC at runtime root. Reopen only with exact input bundle and passing preflight; do not run TLC locally. |
 | P0 | [AR-1305](../tasks/AR-1305-image-native-user-session.md): Image-native user-session support | Unclaimed | Qualify image-native D-Bus user-session support for required TLC containment. | Blocked: guestfish read-only inspection fails before access because /usr/bin/supermin exits 1; approved root has ~4.9 GiB free, preventing safe image repair. Reopen only with reviewed working appliance/capacity; no portable fallback, AR-1304 limit changes, or qualification. |
+| P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Unclaimed | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | AR-1308 is planned for disposable x86_64 QEMU capacity. Keep AR-1307 unqualified; after AR-1308 capacity evidence, rerun exact full-exhaustive without changing the 3G/3G contract. |
