@@ -29,7 +29,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35899655572 | `709dae14b3dd` | workflow_dispatch | Rust verification | in_progress:- |
+| 35899655572 | `709dae14b3dd` | workflow_dispatch | Rust verification | completed:failure |
 | 35899022339 | `709dae14b3dd` | pull_request | Repository quality | completed:failure |
 | 35899022265 | `709dae14b3dd` | pull_request | Formal assurance | completed:success |
 | 35899022239 | `709dae14b3dd` | pull_request | Fault assurance | completed:success |
