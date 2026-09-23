@@ -1358,14 +1358,15 @@ flowchart LR
     AR_1326 --> AR_1328
     AR_1327 --> AR_1329
     AR_1327 --> AR_1334
+    AR_1327 --> AR_1342
     AR_1328 --> AR_1329
     AR_1328 --> AR_1334
     AR_1328 --> AR_1338
     AR_1328 --> AR_1339
+    AR_1328 --> AR_1342
     AR_1329 --> AR_1330
     AR_1329 --> AR_1333
     AR_1329 --> AR_1338
-    AR_1329 --> AR_1342
     AR_1330 --> AR_1331
     AR_1331 --> AR_1332
     AR_1332 --> AR_1333
@@ -1745,9 +1746,9 @@ flowchart LR
 | [AR-1324](../tasks/AR-1324-auth-helper-control-contract.md) | None | None |
 | [AR-1325](../tasks/AR-1325-provider-openrouter.md) | [AR-0310](../tasks/AR-0310-provider-profile-contract.md), [AR-0318](../tasks/AR-0318-credential-reference-boundary.md) | [AR-1326](../tasks/AR-1326-openrouter-catalog-selection.md), [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md) |
 | [AR-1326](../tasks/AR-1326-openrouter-catalog-selection.md) | [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-1325](../tasks/AR-1325-provider-openrouter.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md) |
-| [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md) | [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-1325](../tasks/AR-1325-provider-openrouter.md), [AR-1326](../tasks/AR-1326-openrouter-catalog-selection.md) | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md), [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md) |
-| [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md) | [AR-1100](../tasks/AR-1100.md), [AR-1325](../tasks/AR-1325-provider-openrouter.md), [AR-1326](../tasks/AR-1326-openrouter-catalog-selection.md) | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md), [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md), [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md) |
-| [AR-1329](../tasks/AR-1329-live-provider-run-execution.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) | [AR-1330](../tasks/AR-1330-live-capture-sealed-cassette.md), [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md), [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md) |
+| [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md) | [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-1325](../tasks/AR-1325-provider-openrouter.md), [AR-1326](../tasks/AR-1326-openrouter-catalog-selection.md) | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md), [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md) |
+| [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md) | [AR-1100](../tasks/AR-1100.md), [AR-1325](../tasks/AR-1325-provider-openrouter.md), [AR-1326](../tasks/AR-1326-openrouter-catalog-selection.md) | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md), [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md), [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md) |
+| [AR-1329](../tasks/AR-1329-live-provider-run-execution.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) | [AR-1330](../tasks/AR-1330-live-capture-sealed-cassette.md), [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md), [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md) |
 | [AR-1330](../tasks/AR-1330-live-capture-sealed-cassette.md) | [AR-0502](../tasks/AR-0502-replay-cassettes.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-1329](../tasks/AR-1329-live-provider-run-execution.md) | [AR-1331](../tasks/AR-1331-runtime-replay-launch-authority.md) |
 | [AR-1331](../tasks/AR-1331-runtime-replay-launch-authority.md) | [AR-1330](../tasks/AR-1330-live-capture-sealed-cassette.md) | [AR-1332](../tasks/AR-1332-record-live-replay-offline.md) |
 | [AR-1332](../tasks/AR-1332-record-live-replay-offline.md) | [AR-1331](../tasks/AR-1331-runtime-replay-launch-authority.md) | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md), [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md) |
@@ -1760,7 +1761,7 @@ flowchart LR
 | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md) | [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1341](../tasks/AR-1341-runtime-observed-namespace-repair.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md) |
 | [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md) | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md) |
 | [AR-1341](../tasks/AR-1341-runtime-observed-namespace-repair.md) | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md) | None |
-| [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md) | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) | None |
+| [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) | None |
 
 ## Complete AR inventory
 
