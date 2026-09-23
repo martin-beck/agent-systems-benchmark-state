@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1357](tasks/AR-1357-runtime-attested-enrollment-record.md): Runtime-attested enrollment record transport | Transport authenticated enrollment records into runtime without exposing authority to the CLI. | Signed commit cc8016f adds bounded versioned enrollment record encode/decode, attestation binding, freshness/nonce/replay ledger, and crate-private acquire_from_record seam. Push exact head through handoffctl, then monitor hosted CI and repair any failures. CLI run/sweep wiring remains downstream consumer work and must not fabricate authority. | codex-asb-runtime-attested-enrollment-luna56 |
+| P0 | [AR-1357](tasks/AR-1357-runtime-attested-enrollment-record.md): Runtime-attested enrollment record transport | Transport authenticated enrollment records into runtime without exposing authority to the CLI. | PR #265 exact head cc8016f is published. Monitor all required exact-head checks; diagnose Loom failure once final logs are available, repair without weakening gates, then merge only after green. | codex-asb-runtime-attested-enrollment-luna56 |
 
 ## Open
 

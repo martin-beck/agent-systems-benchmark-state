@@ -7,7 +7,7 @@
     "AR-1356"
   ],
   "id": "AR-1357",
-  "next_action": "Signed commit cc8016f adds bounded versioned enrollment record encode/decode, attestation binding, freshness/nonce/replay ledger, and crate-private acquire_from_record seam. Push exact head through handoffctl, then monitor hosted CI and repair any failures. CLI run/sweep wiring remains downstream consumer work and must not fabricate authority.",
+  "next_action": "PR #265 exact head cc8016f is published. Monitor all required exact-head checks; diagnose Loom failure once final logs are available, repair without weakening gates, then merge only after green.",
   "observed_branch": "feature/ar-1357-runtime-attested-enrollment-record",
   "observed_dirty": 0,
   "observed_head": "cc8016f2846071d65362a16685762cbff9077ba6",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Transport authenticated enrollment records into runtime without exposing authority to the CLI.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Runtime-attested enrollment record transport",
-  "updated_at": "2026-09-23T21:59:20+00:00",
+  "updated_at": "2026-09-23T21:59:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1357-runtime-attested-enrollment-record"
 }
 ---
@@ -100,3 +100,7 @@ Successor for AR-1355. AR-1356 supplies the authenticated control/runtime attest
 
 - 2026-09-23T21:59:20+00:00: Recorded command exit 0; command argv SHA-256
   eca5cd95989f3bc496018a79915560a0985bf3ffa95db70b12c637710a443293.
+
+- 2026-09-23T21:59:45+00:00: Published PR #265 at exact head cc8016f through handoffctl. Hosted
+  checks started; AWQ and headers pass. Loom/state models currently failed while other checks remain
+  in progress; no merge action taken.
