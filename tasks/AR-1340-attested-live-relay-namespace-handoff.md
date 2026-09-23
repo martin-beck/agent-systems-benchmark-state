@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1340-attested-live-relay-handoff",
-  "checkpoint_commit": "f77aafb4f02d49bb4cb6c4d1e75de6b05f0bf6c4",
+  "checkpoint_commit": "f77aafb44b05cd04cbd642ab3d737eb4062403dc",
   "claim_expires": "2026-09-23T12:30:03+00:00",
   "depends_on": [
     "AR-1339"
   ],
   "id": "AR-1340",
-  "next_action": "Run rustdoc/build and independent review on exact clean f77aafb; publish PR only after all applicable gates pass, then wait exact-head CI.",
+  "next_action": "PR #257 is published at exact head f77aafb; wait exact-head required CI, repair any failures, independently review final diff, merge only when all required checks are green, then run post-merge verification.",
   "observed_branch": "feature/ar-1340-attested-live-relay-handoff",
   "observed_dirty": 0,
   "observed_head": "f77aafb44b05cd04cbd642ab3d737eb4062403dc",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind the live provider relay to an attested child namespace and integrate it without weakening offline or replay denial.",
-  "task_revision": 71,
+  "task_revision": 72,
   "title": "Attested live-relay namespace and child handoff",
-  "updated_at": "2026-09-23T10:30:03+00:00",
+  "updated_at": "2026-09-23T10:30:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1340-attested-live-relay-handoff"
 }
 ---
@@ -225,3 +225,9 @@ public coordination state or runtime evidence.
   f0982d22824fef1e71639054d68bfeac5d65a03ceb6a3d73f2eb6590d72c9e4c.
 
 - 2026-09-23T10:30:03+00:00: Heartbeat by codex-asb-ar1340-20260923.
+
+- 2026-09-23T10:30:14+00:00: Published PR #257 from clean exact head
+  f77aafb44b05cd04cbd642ab3d737eb4062403dc. Prepublication evidence: signed+DCO commits a70dc59,
+  c265c08, f77aafb; cargo fmt check, clippy workspace all-targets warnings denied, full workspace
+  tests, rustdoc warnings denied, and release workspace build all passed. State remains in_progress
+  pending exact-head CI and merge gates.
