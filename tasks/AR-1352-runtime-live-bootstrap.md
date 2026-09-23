@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the private runtime-owned bootstrap source for live acquisition.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Runtime-owned live bootstrap",
-  "updated_at": "2026-09-23T20:12:15+00:00",
+  "updated_at": "2026-09-23T20:13:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1352-runtime-live-bootstrap"
 }
 ---
@@ -33,3 +33,6 @@ integration. AR-1329 remains fail-closed.
   downstream-independent bootstrap repair; AR-1349 and AR-1329 remain fail-closed consumers.
 
 - 2026-09-23T20:12:15+00:00: Claimed by codex-asb-runtime-acquisition-successor-luna56.
+
+- 2026-09-23T20:13:03+00:00: Recorded command exit 0; command argv SHA-256
+  f7acdcad9de62800f0cd3f7d696dd8d9ac936cd4a475d8446b0619ef8d5aad75.
