@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1358](tasks/AR-1358-runtime-enrollment-cli-dispatch.md): Runtime enrollment CLI dispatch | Consume runtime-attested enrollment records in asb run and sweep without exposing authority. | Promote after AR-1357 is done, then wire asb run/sweep through runtime-attested enrollment records with fail-closed positive and negative tests. | codex-asb-runtime-attested-enrollment-luna56 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -58,6 +52,7 @@ Never edit this file directly.
 | P0 | [AR-1308](tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Clean runner ready: 64 GiB disk, x86_64 QEMU 8.2.2, 8 vCPU, 32 GiB RAM, no network/mounts. Bind exact AR-1307 bundle, pinned JDK/TLC, lock, image and seed; preflight before boot. | - |
 | P0 | [AR-1313](tasks/AR-1313-historical-dco-909078c-repair.md): Historical DCO merge-integrity recovery | Forward-only signed DCO recovery candidate published as PR #231. | Keep PR #231 unmerged; route one-line workspace coverage deficit to AR-1312, then rerun exact-head checks and signed recovery merge. | - |
 | P0 | [AR-1355](tasks/AR-1355-runtime-attested-enrollment-record.md): Runtime-attested enrollment record transport | Transport runtime-attested enrollment authority without exposing it to the CLI. | Implement the runtime/control-owned attested enrollment-record transport, validate target/tool/lease/relay authority inside asb-runtime, mint opaque handles, then consume them in asb run/sweep with positive and negative tests. | - |
+| P0 | [AR-1358](tasks/AR-1358-runtime-enrollment-cli-dispatch.md): Runtime enrollment CLI dispatch | Consume runtime-attested enrollment records in asb run and sweep without exposing authority. | Promote after AR-1357 is done, then wire asb run/sweep through runtime-attested enrollment records with fail-closed positive and negative tests. | - |
 | P1 | [AR-0604](tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Obtain authorized native x86 runner and immutable CSB/Python evidence; rerun native_boundary and record A/B overhead. | - |
 | P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Control genuine native platform capacity lifecycle. | PR #119 exact e2e3574 is green except quality 35401437247 at 89.99% coverage. Preserve PR; repair via AR-1312 when promotable. Do not merge or weaken 90%. | - |
 | P1 | [AR-0814](tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Create successor AR for authenticated route/ancestor authority; preserve AR-1288 evidence and AR-0814 head 29cfa193. | - |

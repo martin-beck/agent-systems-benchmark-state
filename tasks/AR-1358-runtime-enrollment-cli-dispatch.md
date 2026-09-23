@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1358-runtime-enrollment-cli-dispatch",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-24T00:26:05+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1357"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1358-runtime-enrollment-cli-dispatch",
   "observed_dirty": 0,
   "observed_head": "7862e3bb90a777e86e30d23b6af9639935671efe",
-  "owner": "codex-asb-runtime-attested-enrollment-luna56",
+  "owner": "",
   "plan": "../plans/AR-1358-runtime-enrollment-cli-dispatch.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Consume runtime-attested enrollment records in asb run and sweep without exposing authority.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Runtime enrollment CLI dispatch",
-  "updated_at": "2026-09-23T22:27:23+00:00",
+  "updated_at": "2026-09-23T22:28:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1358-runtime-enrollment-cli-dispatch"
 }
 ---
@@ -47,3 +47,11 @@ gates.
 
 - 2026-09-23T22:27:23+00:00: Recorded command exit 0; command argv SHA-256
   d9968b12c7f956de92f539f058a63496b4c6e90159a690bd701323c4d5bba02c.
+
+- 2026-09-23T22:28:09+00:00: Blocked by exact cross-crate architecture gap: AR-1357 provides
+  runtime-private record validation and acquire_from_record, but asb-cli has no safe authenticated
+  source. asb-control cannot depend on asb-runtime; attestation/bootstrap constructors are
+  intentionally private, so CLI cannot mint or fabricate authority. Existing run/sweep APIs require
+  injected opaque LiveProviderAttemptFactory and cannot consume records. Created successor
+  AR-1359-runtime-control-bridge (planned, depends on AR-1357) to implement the missing
+  runtime-owned bridge. AR-1329 remains fail-closed.
