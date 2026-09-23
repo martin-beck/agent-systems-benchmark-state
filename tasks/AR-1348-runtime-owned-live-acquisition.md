@@ -10,7 +10,7 @@
     "AR-1340"
   ],
   "id": "AR-1348",
-  "next_action": "Independent audit complete: asb-cli only accepts an injected LiveProviderAttemptFactory; no production caller constructs one. LiveLaunchFactory::acquire and SandboxBackend::attest_live_launch still require caller-supplied SandboxLaunchInput, ResourceLease, namespace handoff, token and relay. RuntimeLiveBinding similarly accepts pre-issued handoff/token/relay. Next required slice is a runtime-owned coordinator that resolves selection/policy, creates the denied SandboxLaunchInput, acquires the benchmark lease, observes namespace, issues the handoff/token, constructs the relay, and only then invokes CLI. No safe implementation is possible within current public contracts without inventing provider/credential authority; AR-1329 remains fail-closed.",
+  "next_action": "Audit is complete and AR-1348 remains in_progress only as the verified lifecycle slice. Exact missing authority: no production-owned coordinator can resolve enrolled provider policy/credential, create NetworkPolicy::Deny SandboxLaunchInput, acquire benchmark ResourceLease, observe child NamespaceIdentity, issue launch token, construct LiveProviderNamespaceHandoff and LiveProviderRelay, and invoke asb-cli per attempt. CLI exposes only injected LiveProviderAttemptFactory seams; LiveLaunchFactory and RuntimeLiveBinding accept caller-built authority. Recommend coordinator create a narrowly scoped successor AR for LiveProviderRuntimeService atomic acquisition and CLI wiring; do not add a callback wrapper or synthetic authority. AR-1329 remains fail-closed.",
   "observed_branch": "feature/ar-1348-runtime-owned-live-acquisition",
   "observed_dirty": 0,
   "observed_head": "ecc2d4c548b975d829d4f27750321f0cb64f75c2",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the runtime-owned supervisor that acquires every live-provider authority and tears it down safely.",
-  "task_revision": 73,
+  "task_revision": 74,
   "title": "Runtime-owned live acquisition service",
-  "updated_at": "2026-09-23T16:25:35+00:00",
+  "updated_at": "2026-09-23T16:26:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1348-runtime-owned-live-acquisition"
 }
 ---
@@ -238,3 +238,9 @@ this service owns acquisition instead of accepting caller-built launch authority
   run_with_live_provider_attempt are test/integration seams only; rg found no production caller.
   Existing constructors all require authority objects supplied by caller, so adding a callback
   wrapper would repeat the rejected synthetic-authority gap. No product mutation made in this audit.
+
+- 2026-09-23T16:26:02+00:00: This is a precise successor-AR recommendation, not a generic blocker:
+  the missing production owner spans provider selection/credential resolution, pinned live
+  gate/SandboxBackend, lease, observed namespace, token, relay, and CLI dispatch. Existing contracts
+  lack constructors for those inputs, so implementation here would require inventing authority and
+  violate fail-closed semantics.
