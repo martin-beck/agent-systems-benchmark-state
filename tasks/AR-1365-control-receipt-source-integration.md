@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1365-control-receipt-source-integration.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Integrate authenticated chain and authority enrollment into the versioned control receipt source.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Control receipt source integration",
-  "updated_at": "2026-09-24T00:00:00+00:00",
+  "updated_at": "2026-09-23T23:54:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1365-control-receipt-source-integration"
 }
 ---
@@ -30,3 +30,6 @@ AR-1364. Do not touch asb-tui or synthesize authority from CLI/config input.
 
 - 2026-09-24T00:00:00+00:00: Created after AR-1364 supplied authenticated
   chain enrollment materialization and all post-merge workflows passed.
+
+- 2026-09-23T23:54:21+00:00: Promote receipt-source integration after AR-1362 and AR-1364 completed
+  authority and chain primitives with all post-merge gates.
