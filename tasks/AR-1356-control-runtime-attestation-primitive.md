@@ -9,7 +9,7 @@
   "id": "AR-1356",
   "next_action": "Reuse authenticated asb-control enrollment/certificate contracts to define and verify a bounded control-to-runtime attestation, then issue the opaque runtime capability needed by AR-1355.",
   "observed_branch": "feature/ar-1356-control-runtime-attestation-primitive",
-  "observed_dirty": 0,
+  "observed_dirty": 3,
   "observed_head": "d83a85926f2c4c42317617f4f6b7b3c9a3195874",
   "owner": "codex-asb-runtime-acquisition-successor-luna56",
   "plan": "../plans/AR-1356-control-runtime-attestation-primitive.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Issue runtime-owned live enrollment capability from authenticated control attestation.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Control/runtime enrollment attestation primitive",
-  "updated_at": "2026-09-23T21:07:53+00:00",
+  "updated_at": "2026-09-23T21:08:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1356-control-runtime-attestation-primitive"
 }
 ---
