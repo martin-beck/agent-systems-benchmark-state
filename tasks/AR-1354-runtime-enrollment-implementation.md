@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement config-backed runtime-owned enrollment for live CLI dispatch.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Runtime enrollment implementation",
-  "updated_at": "2026-09-23T20:56:52+00:00",
+  "updated_at": "2026-09-23T20:57:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1354-runtime-enrollment-implementation"
 }
 ---
@@ -36,3 +36,6 @@ durably promoted; AR-1329 remains fail-closed.
 - 2026-09-23T20:55:44+00:00: Claimed by codex-asb-ar1329-live-cli-luna56.
 
 - 2026-09-23T20:56:52+00:00: Heartbeat by codex-asb-ar1329-live-cli-luna56.
+
+- 2026-09-23T20:57:31+00:00: Recorded command exit 0; command argv SHA-256
+  23fe83917a1f1717a8a94f9b6f08b545aeed4dbc52f65efb375cd87b979ef9f8.
