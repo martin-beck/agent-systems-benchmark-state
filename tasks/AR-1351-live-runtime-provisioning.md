@@ -13,16 +13,16 @@
   "next_action": "Implement the private runtime-owned host provisioning service for pinned backend/gate, authenticated egress handoff, and observed namespace; keep AR-1349 and AR-1329 downstream and fail-closed.",
   "observed_branch": "feature/ar-1351-live-runtime-provisioning",
   "observed_dirty": 0,
-  "observed_head": "d069f3eeacae914bec5d33dfbb091b945e7de933960006",
+  "observed_head": "d069f3eeacae914bec5d33dfbb575cd7e4281b2c",
   "owner": "codex-asb-runtime-acquisition-successor-luna56",
   "plan": "../plans/AR-1351-live-runtime-provisioning.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the private host/runtime provisioning seam for live acquisition.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Runtime-owned live provisioning",
-  "updated_at": "2026-09-23T19:15:08+00:00",
+  "updated_at": "2026-09-23T19:15:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1351-live-runtime-provisioning"
 }
 ---
