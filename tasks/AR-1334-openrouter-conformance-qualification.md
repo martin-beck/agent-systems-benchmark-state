@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the pinned OpenRouter free model under conformance and hostile fail-closed testing.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "OpenRouter free-model conformance and hostile qualification",
-  "updated_at": "2026-09-23T08:53:57+00:00",
+  "updated_at": "2026-09-23T08:54:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1334-openrouter-conformance-qualification"
 }
 ---
@@ -36,3 +36,6 @@ provider effect; real provider contact is opt-in and never required for CI.
   conformance and hostile fail-closed qualification.
 
 - 2026-09-23T08:53:57+00:00: Claimed by codex-asb-ar1334-20260923.
+
+- 2026-09-23T08:54:28+00:00: Recorded command exit 0; command argv SHA-256
+  d519cb52303fb28e4c29ab2600116fd60c3b0dad7ff03abd245587b56fe2feb6.
