@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Consume runtime-attested enrollment records in asb run and sweep without exposing authority.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Runtime enrollment CLI dispatch",
-  "updated_at": "2026-09-23T22:26:22+00:00",
+  "updated_at": "2026-09-23T22:26:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1358-runtime-enrollment-cli-dispatch"
 }
 ---
@@ -38,3 +38,6 @@ gates.
 
 - 2026-09-23T22:26:12+00:00: Recorded command exit 0; command argv SHA-256
   1068daf3aa96ce8739897a79927707a44394caf77b7b575a00fed63e8d9a446d.
+
+- 2026-09-23T22:26:27+00:00: Recorded command exit 0; command argv SHA-256
+  321c534968b9c456a64caf5e6d09b63780c507f97548057d2bfe31edcfd73ff4.
