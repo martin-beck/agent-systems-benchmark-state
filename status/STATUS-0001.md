@@ -12,9 +12,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 4 |
+| **Open** | Dependency-ready and available to claim | 5 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 49 |
-| **Planned** | Defined work awaiting promotion or dependencies | 65 |
+| **Planned** | Defined work awaiting promotion or dependencies | 64 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 239 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -438,7 +438,7 @@ flowchart LR
         AR_1343["AR-1343 - Superseded"]:::status_superseded
         AR_1344["AR-1344 - Done"]:::status_done
         AR_1345["AR-1345 - Done"]:::status_done
-        AR_1346["AR-1346 - Planned"]:::status_planned
+        AR_1346["AR-1346 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1787,7 +1787,7 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (4)
+### Open (5)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1795,6 +1795,7 @@ flowchart LR
 | P0 | [AR-1314](../tasks/AR-1314-optional-bundle-signing-development-release.md): Optional runtime-bundle signing for development and tagged releases | Unclaimed | Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile. | Wait for PR #232 exact-head CI after schema-v3 repair; if all required checks pass, independently review and merge through the established workflow, then reconcile AR-1314. Preserve signature-required defaults. |
 | P0 | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | Unclaimed | Publish the verified ASB agent catalog required by the first-run setup wizard. | Persist the authenticated catalog snapshot/generation and complete live ASB-to-asb-tui wizard evidence; keep all entries unavailable until a verified release closure exists. |
 | P1 | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md): Live-provider run execution for real agents | Unclaimed | Execute real agents against the selected provider through asb run and sweep with credential-free resolution. | BLOCKED pending coordinator-created repair AR: implement runtime-owned LiveProviderRuntimeService acquisition for production asb run/sweep. Service must resolve pinned provider policy to concrete public target(s), obtain credential through enrolled environment channel without evidence disclosure, construct attested child namespace handoff and relay listener, reserve ResourceLease, create SandboxBackend with pinned live gate, attest and issue one LiveProviderAttempt per scheduler attempt, and teardown on cancellation. Then AR-1329 can wire dispatch --provider-selection/--live-provider while preserving NetworkPolicy::Deny and direct/alternate egress denial. |
+| P1 | [AR-1346](../tasks/AR-1346-runtime-supervisor-provisioning.md): Runtime supervisor provisioning boundary | Unclaimed | Add the production runtime supervisor boundary needed for safe live-provider CLI acquisition. | Implement the production supervisor-owned cross-crate provisioning boundary identified by AR-1343: pinned backend/live-gate discovery, benchmark ResourceLease, concrete egress allowlist, enrolled credential transport without disclosure, runtime-observed namespace rebind, launch attestation, and per-attempt relay lifecycle. Keep AR-1329 fail-closed until merged and post-merge verified. |
 
 ### Blocked (49)
 
@@ -1824,5 +1825,3 @@ flowchart LR
 | P0 | [AR-1276](../tasks/AR-1276-primary-replay-runtime.md): Primary replay runtime integration | Unclaimed | Integrate runtime-owned operation execution into the primary strict-replay command. | Promote after dependency verification; wire the primary replay command to runtime-issued operation execution and prove supervised lifecycle behavior. |
 | P0 | [AR-1277](../tasks/AR-1277-runtime-cli-replay-transport.md): Runtime-to-CLI replay transport boundary | Unclaimed | Provide a runtime-issued transport channel for primary strict replay. | Wire ReplayTransportClient into the primary replay dispatch and connect runtime-issued cassette service; add supervised egress/lifecycle evidence. |
 | P0 | [AR-1278](../tasks/AR-1278-primary-runtime-client.md): Primary replay runtime client handoff | Unclaimed | Connect the primary replay command to the runtime-issued transport client. | Promote after dependency verification; hand the runtime-issued replay client into primary argument dispatch and prove supervised lifecycle behavior. |
-| P0 | [AR-1279](../tasks/AR-1279-end-to-end-replay-runtime.md): End-to-end primary replay runtime handoff | Unclaimed | Implement end-to-end runtime-owned execution for primary strict replay. | Promote after dependency verification; implement transport plus primary runtime-client handoff from protected main and prove full supervised lifecycle. |
-| P0 | [AR-1280](../tasks/AR-1280-cross-crate-replay-entrypoint.md): Cross-crate replay process entrypoint | Unclaimed | Implement the cross-crate runtime process entrypoint for primary strict replay. | Extend replay-plan dispatch to invoke runtime-owned supervised process with argument-level command and cassette service; preserve denied egress/no-fallback and add lifecycle fault tests. Current signed head f92a86b provides bridge/binding baseline. |
