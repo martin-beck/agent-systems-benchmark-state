@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the private runtime-owned bootstrap source for live acquisition.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Runtime-owned live bootstrap",
-  "updated_at": "2026-09-23T20:17:13+00:00",
+  "updated_at": "2026-09-23T20:17:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1352-runtime-live-bootstrap"
 }
 ---
@@ -69,3 +69,6 @@ integration. AR-1329 remains fail-closed.
   removed the unreachable variant. Then symlink-root negative test returned InvalidEnrollment
   because validation combined root/enrollment checks; separated root validation so it returns
   InvalidRelayRoot. Final focused live_service gate passes 9/9.
+
+- 2026-09-23T20:17:22+00:00: Recorded command exit 101; command argv SHA-256
+  44858bcc1bea325f8e4ec42626fdf2970d2310a4694e160101531722dea4dfa4.
