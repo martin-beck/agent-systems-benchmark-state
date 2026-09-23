@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1329-live-provider-run-execution",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-23T10:11:54+00:00",
   "depends_on": [
     "AR-1327",
     "AR-1328"
   ],
   "id": "AR-1329",
   "next_action": "Replace the digest-pinned batch-stdio-v1 execution stub in asb run/sweep with real agent execution through the selected provider, keeping credential-free environment resolution, egress enforcement and explicit opt-in live runs.",
-  "owner": "",
+  "owner": "codex-asb-ar1329-20260923",
   "plan": "../plans/AR-1329.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Execute real agents against the selected provider through asb run and sweep with credential-free resolution.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Live-provider run execution for real agents",
-  "updated_at": "2026-09-23T08:41:51+00:00",
+  "updated_at": "2026-09-23T08:41:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1329-live-provider-run-execution"
 }
 ---
@@ -33,3 +33,5 @@ the digest-pinned mode remain default and never touch the network.
 
 - 2026-09-23T08:41:51+00:00: Dependencies AR-1327 and AR-1328 are done; begin live provider
   execution implementation.
+
+- 2026-09-23T08:41:54+00:00: Claimed by codex-asb-ar1329-20260923.
