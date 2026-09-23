@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1327](tasks/AR-1327-openrouter-adapter-parity.md): OpenRouter adapter projections and parity conformance | Wire the OpenRouter endpoint and model through every compatible agent adapter projection and prove parity with hostile conformance evidence. | Await exact-head CI for signed+DCO head bdb3bf028f0ab96a7a00ffd186fbb20bfae073b2; independently review PR #251, merge through handoffctl only after every required check is green, then post-merge verify and release AR-1327. | codex-asb-ar1327-20260923 |
+| P1 | [AR-1327](tasks/AR-1327-openrouter-adapter-parity.md): OpenRouter adapter projections and parity conformance | Wire the OpenRouter endpoint and model through every compatible agent adapter projection and prove parity with hostile conformance evidence. | Verify post-merge main 5207ce478986cdf1687207967cdf517129f85624 workflows and exact OpenRouter parity evidence; then close AR-1327 and advance AR-1328. | codex-asb-ar1327-20260923 |
 
 ## Open
 

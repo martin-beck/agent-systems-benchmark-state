@@ -9,7 +9,7 @@
     "AR-1326"
   ],
   "id": "AR-1327",
-  "next_action": "Await exact-head CI for signed+DCO head bdb3bf028f0ab96a7a00ffd186fbb20bfae073b2; independently review PR #251, merge through handoffctl only after every required check is green, then post-merge verify and release AR-1327.",
+  "next_action": "Verify post-merge main 5207ce478986cdf1687207967cdf517129f85624 workflows and exact OpenRouter parity evidence; then close AR-1327 and advance AR-1328.",
   "observed_branch": "feature/ar-1327-openrouter-adapter-parity",
   "observed_dirty": 0,
   "observed_head": "bdb3bf028f0ab96a7a00ffd186fbb20bfae073b2",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire the OpenRouter endpoint and model through every compatible agent adapter projection and prove parity with hostile conformance evidence.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "OpenRouter adapter projections and parity conformance",
-  "updated_at": "2026-09-23T07:26:47+00:00",
+  "updated_at": "2026-09-23T07:29:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1327-openrouter-adapter-parity"
 }
 ---
@@ -136,3 +136,7 @@ allowance must be extended explicitly, never silently.
   92aa1616e7cc9a5355082f431c96a8b99af095288e059e14d47fb90517849660.
 
 - 2026-09-23T07:26:47+00:00: Heartbeat by codex-asb-ar1327-20260923.
+
+- 2026-09-23T07:29:26+00:00: PR #251 merged through exact protected merge-tree at 5207ce4 after all
+  PR checks passed. Post-merge main workflows are now running; retain exact-head evidence before
+  terminal closure.
