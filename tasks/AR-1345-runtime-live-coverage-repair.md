@@ -11,17 +11,17 @@
   "id": "AR-1345",
   "next_action": "Run hosted-equivalent parallel and serial policy coverage, then full focused gates; do not push until all pass.",
   "observed_branch": "feature/ar-1345-runtime-live-coverage-repair",
-  "observed_dirty": 1,
-  "observed_head": "cd2d1e60b15142665ba3b72f9404df69f5c718da",
+  "observed_dirty": 0,
+  "observed_head": "33d3153013d4b3de9328260b8eac7903cde5bf07",
   "owner": "asb-ar1345-coverage-repair-luna56",
   "plan": "../plans/AR-1345.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair runtime live-provider coverage without weakening the mandatory quality floor.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Runtime live-provider coverage repair",
-  "updated_at": "2026-09-23T14:48:30+00:00",
+  "updated_at": "2026-09-23T14:48:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1345-runtime-live-coverage-repair"
 }
 ---
