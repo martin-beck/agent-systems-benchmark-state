@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Issue runtime-owned live enrollment capability from authenticated control attestation.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Control/runtime enrollment attestation primitive",
-  "updated_at": "2026-09-23T21:24:19+00:00",
+  "updated_at": "2026-09-23T21:24:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1356-control-runtime-attestation-primitive"
 }
 ---
@@ -143,3 +143,6 @@ dispatch and do not expose caller-supplied launch authority.
 
 - 2026-09-23T21:24:19+00:00: Recorded command exit 0; command argv SHA-256
   cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
+
+- 2026-09-23T21:24:33+00:00: Recorded command exit 0; command argv SHA-256
+  5ecc83bfcb02954567c903f622ae821bfdf2e6e1e5cdc2b2db80e01f23692506.
