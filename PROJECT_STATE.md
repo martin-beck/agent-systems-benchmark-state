@@ -23,20 +23,20 @@ Generated from local Git and GitHub. Do not edit.
 | #235 | `dependabot/github_actions/taiki-e/install-action-2.87.12@de0353cce59e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.6 to 2.87.12 |
 | #236 | `dependabot/cargo/toml-1.1.6spec-1.1.0@9dc09c5208ab` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump toml from 0.8.23 to 1.1.6+spec-1.1.0 |
 | #237 | `dependabot/cargo/thiserror-2.0.20@83dba9288d9c` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump thiserror from 2.0.16 to 2.0.20 |
-| #256 | `feature/ar-1339-live-provider-egress-backend@90d50561ee76` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(runtime): add fail-closed provider egress relay boundary |
+| #256 | `feature/ar-1339-live-provider-egress-backend@90d50561ee76` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(runtime): add fail-closed provider egress relay boundary |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 35843449654 | `90d50561ee76` | pull_request | Huawei MIT source headers | completed:success |
-| 35843449602 | `90d50561ee76` | pull_request | Formal assurance | in_progress:- |
+| 35843449602 | `90d50561ee76` | pull_request | Formal assurance | completed:success |
 | 35843449474 | `90d50561ee76` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 35843449452 | `90d50561ee76` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 35843449452 | `90d50561ee76` | pull_request | Hosted portability and native qualification | completed:success |
 | 35843449450 | `90d50561ee76` | pull_request | Repository quality | in_progress:- |
 | 35843449402 | `90d50561ee76` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 35843449355 | `90d50561ee76` | pull_request | Rust verification | in_progress:- |
-| 35843449286 | `90d50561ee76` | pull_request | Fault assurance | in_progress:- |
+| 35843449355 | `90d50561ee76` | pull_request | Rust verification | completed:failure |
+| 35843449286 | `90d50561ee76` | pull_request | Fault assurance | completed:success |
 | 35842949071 | `8a2489cfdd15` | pull_request | Emulated aarch64 portability | completed:cancelled |
 | 35842949045 | `8a2489cfdd15` | pull_request | Fault assurance | completed:success |
 | 35842949028 | `8a2489cfdd15` | pull_request | Repository quality | completed:cancelled |
