@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1351-live-runtime-provisioning",
-  "checkpoint_commit": "d0b0cbefffdde0f80f51edb26f0a3d30f3a7b879",
+  "checkpoint_commit": "b710260a944e21e5b591203bdef00bdc9c0d019c",
   "claim_expires": "2026-09-23T21:46:01+00:00",
   "depends_on": [
     "AR-1339",
@@ -10,7 +10,7 @@
     "AR-1350"
   ],
   "id": "AR-1351",
-  "next_action": "Add behavioral tests for uncovered live_service/live_relay branches, rerun enforced workspace coverage and full gates, then publish a signed exact-head repair for PR #262.",
+  "next_action": "Push b710260 exact signed head to PR #262, verify head match, and monitor Repository quality plus all required checks; merge only after independent review and green exact-head CI.",
   "observed_branch": "feature/ar-1351-live-runtime-provisioning",
   "observed_dirty": 0,
   "observed_head": "b710260a944e21e5b591203bdef00bdc9c0d019c",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the private host/runtime provisioning seam for live acquisition.",
-  "task_revision": 71,
+  "task_revision": 72,
   "title": "Runtime-owned live provisioning",
-  "updated_at": "2026-09-23T19:46:01+00:00",
+  "updated_at": "2026-09-23T19:46:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1351-live-runtime-provisioning"
 }
 ---
@@ -228,3 +228,9 @@ runtime boundary; AR-1349 remains fail-closed until it is merged and verified.
   f368d8c2004d0347e73ba4c2a3eaea91352e291d1b3eb9a256bf37d39944921e.
 
 - 2026-09-23T19:46:01+00:00: Heartbeat by codex-asb-runtime-acquisition-successor-luna56.
+
+- 2026-09-23T19:46:04+00:00: Coverage repair complete: added behavioral tests for deadline overflow
+  and backend-attestation failure. Exact workspace tools/quality/check_coverage.py passed with
+  90.57% line coverage (previous PR gate was 89.95%, floor 90.0%). cargo fmt --check, cargo check -p
+  asb-runtime, workspace clippy -D warnings, and cargo test --workspace all passed. Commit b710260
+  is SSH-signed and DCO-signed; tree clean.
