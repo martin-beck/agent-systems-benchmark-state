@@ -1,20 +1,20 @@
 ---
 {
   "branch": "feature/ar-1324-auth-helper-control-contract",
-  "checkpoint_commit": "ed61f865c99d139facb813e7344699595dc7155e",
+  "checkpoint_commit": "b5f6553fed1177f5cd3dad13e1c343b647730740",
   "claim_expires": "2026-09-23T07:45:07+00:00",
   "depends_on": [],
   "id": "AR-1324",
-  "next_action": "Monitor pull_request-context checks from reopened PR #248 (runs 35562641313, 35562641328, 35562641357, 35562641373, 35562641375, 35562641394, 35562641439, 35562641374); merge only when all required checks pass, then perform ASB\u2194asb-tui first-user/live-provider wizard acceptance.",
+  "next_action": "Monitor authoritative pull_request checks for PR #248 at b5f6553; merge only after all required checks pass, then perform ASB\u2194asb-tui first-user/live-provider wizard acceptance.",
   "owner": "codex",
   "plan": "../plans/AR-1324.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Own the ASB control and runner backend for safe credential-helper invocation.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Authenticated credential-helper control contract",
-  "updated_at": "2026-09-23T05:45:07+00:00",
+  "updated_at": "2026-09-23T05:45:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1324-auth-helper-control-contract"
 }
 ---
@@ -109,3 +109,7 @@ never receive a raw credential or execute an arbitrary path.
   the AR-1328..1336 benchmark integration series.
 
 - 2026-09-23T05:45:07+00:00: Claimed by codex.
+
+- 2026-09-23T05:45:24+00:00: Added malformed-helper and missing-reference rejection coverage; local
+  cargo test and clippy pass; hosted-equivalent workspace coverage is 90.46% lines, above the 90%
+  floor. Pushed b5f6553 to PR #248; awaiting fresh pull_request-context checks.

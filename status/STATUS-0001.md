@@ -1745,7 +1745,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1212](../tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | asb_tui_tutorial_20260922 | Teach users to test configured-agent benchmark eligibility without running an agent. | Implement the offline tutorial for checking agent benchmark readiness under the current configuration. |
-| P0 | [AR-1324](../tasks/AR-1324-auth-helper-control-contract.md): Authenticated credential-helper control contract | codex | Own the ASB control and runner backend for safe credential-helper invocation. | Monitor pull_request-context checks from reopened PR #248 (runs 35562641313, 35562641328, 35562641357, 35562641373, 35562641375, 35562641394, 35562641439, 35562641374); merge only when all required checks pass, then perform ASB↔asb-tui first-user/live-provider wizard acceptance. |
+| P0 | [AR-1324](../tasks/AR-1324-auth-helper-control-contract.md): Authenticated credential-helper control contract | codex | Own the ASB control and runner backend for safe credential-helper invocation. | Monitor authoritative pull_request checks for PR #248 at b5f6553; merge only after all required checks pass, then perform ASB↔asb-tui first-user/live-provider wizard acceptance. |
 | P1 | [AR-1325](../tasks/AR-1325-provider-openrouter.md): Support a shared OpenRouter provider | ar1325-openrouter | Define one pinned credential-free OpenRouter provider profile for compatible ASB agent adapters. | Pin the OpenRouter endpoint identity, dated model snapshot, transport bounds and OPENROUTER_API_KEY credential reference, then implement the credential-free provider profile with fail-closed validation. |
 
 ### Open (2)
