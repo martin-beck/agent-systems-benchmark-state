@@ -3,7 +3,12 @@
   "branch": "feature/ar-1350-sandbox-credential-channel",
   "checkpoint_commit": "359f15af52aa2b0b31bb091b945e7de933960006",
   "claim_expires": null,
-  "depends_on": ["AR-1328", "AR-1339", "AR-1340", "AR-1347"],
+  "depends_on": [
+    "AR-1328",
+    "AR-1339",
+    "AR-1340",
+    "AR-1347"
+  ],
   "id": "AR-1350",
   "next_action": "Implement a private sealed-FD/memfd child credential channel after verifying completed relay/namespace prerequisites; AR-1349 and AR-1329 are downstream consumers and must remain fail-closed until this repair merges.",
   "observed_branch": "feature/ar-1350-sandbox-credential-channel",
@@ -13,11 +18,11 @@
   "plan": "../plans/AR-1350-sandbox-credential-channel.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Implement a sandbox-owned sealed-FD credential channel for live provider children.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Sandbox-owned credential channel",
-  "updated_at": "2026-09-23T17:20:00+00:00",
+  "updated_at": "2026-09-23T17:19:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1350-sandbox-credential-channel"
 }
 ---
@@ -29,3 +34,7 @@ private runtime channel before AR-1349 can safely acquire attempts or wire
 `asb run`/`asb sweep`; AR-1329 remains fail-closed.
 
 - 2026-09-23T17:20:00+00:00: Created from the AR-1349 evidence-backed blocker.
+
+- 2026-09-23T17:19:13+00:00: Dependencies AR-1328, AR-1339, AR-1340, and AR-1347 are completed and
+  verified; AR-1349 and AR-1329 are downstream consumers. Promote this prerequisite repair for claim
+  readiness.
