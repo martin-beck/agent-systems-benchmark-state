@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T16:48:17+00:00",
+  "updated_at": "2026-09-23T16:49:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
@@ -204,3 +204,6 @@ qualified.
   authority gap rather than a test defect. The public-field leak is repaired and the incomplete API
   removed in signed+DCO commit 97870c0. Existing CLI factory seams remain injection-only and are not
   wired into normal dispatch.
+
+- 2026-09-23T16:49:13+00:00: Recorded command exit 0; command argv SHA-256
+  7db9e0b56ba38f6ffcd94894208e1728b0c6d3c7c0c1f4ab31a8e90d511d2472.
