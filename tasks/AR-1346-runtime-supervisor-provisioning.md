@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1346-runtime-supervisor-provisioning",
   "checkpoint_commit": "a336d6744b1a82f36a706ec606b847c92d49cfd3",
-  "claim_expires": "",
+  "claim_expires": "2026-09-23T17:32:51+00:00",
   "depends_on": [
     "AR-1327",
     "AR-1328",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1346-runtime-supervisor-provisioning",
   "observed_dirty": 0,
   "observed_head": "a336d6744b1a82f36a706ec606b847c92d49cfd3",
-  "owner": "",
+  "owner": "codex-asb-ar1329-live-cli-luna56",
   "plan": "../plans/AR-1346-runtime-supervisor-provisioning.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Add the production runtime supervisor boundary needed for safe live-provider CLI acquisition.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Runtime supervisor provisioning boundary",
-  "updated_at": "2026-09-23T15:32:48+00:00",
+  "updated_at": "2026-09-23T15:32:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1346-runtime-supervisor-provisioning"
 }
 ---
@@ -35,3 +35,5 @@ authority in `asb-cli`.
 
 - 2026-09-23T15:32:48+00:00: Promote coordinator-created cross-crate runtime provisioning repair;
   dependencies are complete and AR-1329 is fail-closed pending this capability.
+
+- 2026-09-23T15:32:51+00:00: Claimed by codex-asb-ar1329-live-cli-luna56.
