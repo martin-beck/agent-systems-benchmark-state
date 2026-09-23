@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1351-live-runtime-provisioning",
   "checkpoint_commit": "d069f3eeacae914bec5d33dfbb575cd7e4281b2c",
-  "claim_expires": null,
+  "claim_expires": "2026-09-23T21:14:59+00:00",
   "depends_on": [
     "AR-1339",
     "AR-1340",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1351-live-runtime-provisioning",
   "observed_dirty": 0,
   "observed_head": "d069f3eeacae914bec5d33dfbb091b945e7de933960006",
-  "owner": null,
+  "owner": "codex-asb-runtime-acquisition-successor-luna56",
   "plan": "../plans/AR-1351-live-runtime-provisioning.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Add the private host/runtime provisioning seam for live acquisition.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Runtime-owned live provisioning",
-  "updated_at": "2026-09-23T19:13:54+00:00",
+  "updated_at": "2026-09-23T19:14:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1351-live-runtime-provisioning"
 }
 ---
@@ -34,3 +34,5 @@ runtime boundary; AR-1349 remains fail-closed until it is merged and verified.
 
 - 2026-09-23T19:13:54+00:00: Promote runtime provisioning repair: dependencies AR-1339, AR-1340,
   AR-1347, and AR-1350 are completed; AR-1349 and AR-1329 remain downstream fail-closed consumers.
+
+- 2026-09-23T19:14:59+00:00: Claimed by codex-asb-runtime-acquisition-successor-luna56.
