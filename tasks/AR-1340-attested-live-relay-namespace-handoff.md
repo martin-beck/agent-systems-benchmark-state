@@ -1,0 +1,33 @@
+---
+{
+  "branch": "feature/ar-1340-attested-live-relay-handoff",
+  "checkpoint_commit": "",
+  "claim_expires": "",
+  "depends_on": [
+    "AR-1329",
+    "AR-1339"
+  ],
+  "id": "AR-1340",
+  "next_action": "Promote only after AR-1329 and AR-1339 are done; implement the attested namespace-bound relay handoff, descendant-egress denial evidence, and guarded CLI integration.",
+  "owner": "",
+  "plan": "../plans/AR-1340.md",
+  "priority": "P1",
+  "schema_version": 1,
+  "status": "planned",
+  "summary": "Bind the live provider relay to an attested child namespace and integrate it without weakening offline or replay denial.",
+  "task_revision": 1,
+  "title": "Attested live-relay namespace and child handoff",
+  "updated_at": "2026-09-23T09:11:16+00:00",
+  "worktree_key": "agent-systems-benchmark-ar-1340-attested-live-relay-handoff"
+}
+---
+
+AR-1339 supplies a bounded runtime relay primitive, but AR-1329 still lacks the
+runtime-owned namespace and child handoff that makes the relay authoritative.
+This AR provisions an attested private loopback or Unix endpoint inside the
+approved live child namespace, keeps the live relay capability distinct from
+`NetworkPolicy::Deny`, proves denial for children and descendants, and then
+wires the guarded capability into `asb run` and `asb sweep --live-provider`.
+Offline/default and strict-replay paths must remain network-denied and must not
+receive the live capability. No API key or other credential may appear in
+public coordination state or runtime evidence.
