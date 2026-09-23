@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind the live provider relay to an attested child namespace and integrate it without weakening offline or replay denial.",
-  "task_revision": 67,
+  "task_revision": 68,
   "title": "Attested live-relay namespace and child handoff",
-  "updated_at": "2026-09-23T10:27:47+00:00",
+  "updated_at": "2026-09-23T10:28:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1340-attested-live-relay-handoff"
 }
 ---
@@ -214,3 +214,6 @@ public coordination state or runtime evidence.
   passed. Full cargo test --locked --workspace passed across all crates (all non-ignored tests
   green; expected pinned-runtime/native tests ignored). Runtime integration has positive and
   negative namespace-bound sandbox admission tests; NetworkPolicy remains Deny.
+
+- 2026-09-23T10:28:35+00:00: Recorded command exit 0; command argv SHA-256
+  a2e71b2c482b3b1c8691a3294e7021a71430a6e4c903d67d23921d60b8053a8e.
