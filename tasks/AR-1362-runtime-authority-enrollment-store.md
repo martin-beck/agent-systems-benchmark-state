@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist authenticated runtime authority enrollment required for receipt issuance without exposing secrets.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Runtime authority enrollment store",
-  "updated_at": "2026-09-23T23:09:08+00:00",
+  "updated_at": "2026-09-23T23:09:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1362-runtime-authority-enrollment-store"
 }
 ---
@@ -61,3 +61,6 @@ authority from CLI/config inputs.
   validation, receipt issuance, and positive/negative tests. Focused certificate tests 2/2, full
   asb-control tests 62+26+7+4 plus doc tests passed, workspace clippy -D warnings passed, fmt/diff
   clean. Product commit 7bf91f5 is SSH-signed+DCO and worktree clean.
+
+- 2026-09-23T23:09:16+00:00: Recorded command exit 0; command argv SHA-256
+  4ce516914a18a642d02d424723e11c693b46482e27e0a729dc2ec6d96294369f.
