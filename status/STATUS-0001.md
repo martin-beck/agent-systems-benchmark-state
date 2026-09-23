@@ -1785,7 +1785,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1345](../tasks/AR-1345-runtime-live-coverage-repair.md): Runtime live-provider coverage repair | asb-ar1345-coverage-repair-luna56 | Repair runtime live-provider coverage without weakening the mandatory quality floor. | Monitor every PR #260 check at exact head cd2d1e60; do not release/merge until all required hosted checks pass. |
+| P1 | [AR-1345](../tasks/AR-1345-runtime-live-coverage-repair.md): Runtime live-provider coverage repair | asb-ar1345-coverage-repair-luna56 | Repair runtime live-provider coverage without weakening the mandatory quality floor. | Run hosted-equivalent parallel and serial policy coverage, then full focused gates; do not push until all pass. |
 
 ### Open (6)
 

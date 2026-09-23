@@ -9,7 +9,7 @@
     "AR-1342"
   ],
   "id": "AR-1345",
-  "next_action": "Monitor every PR #260 check at exact head cd2d1e60; do not release/merge until all required hosted checks pass.",
+  "next_action": "Run hosted-equivalent parallel and serial policy coverage, then full focused gates; do not push until all pass.",
   "observed_branch": "feature/ar-1345-runtime-live-coverage-repair",
   "observed_dirty": 1,
   "observed_head": "cd2d1e60b15142665ba3b72f9404df69f5c718da",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair runtime live-provider coverage without weakening the mandatory quality floor.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Runtime live-provider coverage repair",
-  "updated_at": "2026-09-23T14:45:20+00:00",
+  "updated_at": "2026-09-23T14:45:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1345-runtime-live-coverage-repair"
 }
 ---
@@ -102,3 +102,8 @@ non-authoritative.
 
 - 2026-09-23T14:45:20+00:00: Recorded command exit 0; command argv SHA-256
   eceedc7eafcdb457e360d52564d2a84aea09078303ddd0e16f36d8d6a5df5b29.
+
+- 2026-09-23T14:45:36+00:00: Stale-socket cleanup patch initially hit two local failures: unused
+  mutable revoked binding denied by -D warnings, then moved-value compiler errors when reusing
+  non-Copy handoff/namespace/allowlist in stale-path test. Both repaired; focused live_relay::tests
+  now pass 9/9. No push made.
