@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist the per-user OpenRouter free-model configuration and credential-free key enrollment.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "OpenRouter free-model user configuration and key enrollment",
-  "updated_at": "2026-09-23T07:43:57+00:00",
+  "updated_at": "2026-09-23T07:44:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1328-openrouter-free-model-config"
 }
 ---
@@ -122,3 +122,6 @@ configurations fail closed.
   config+provider-plan smoke passed without a key or network contact. Earlier cargo test invocation
   failed transiently with exit 101 while the workspace compile was still progressing; the same
   locked command completed successfully on rerun.
+
+- 2026-09-23T07:44:02+00:00: Recorded command exit 0; command argv SHA-256
+  39129b49e499c43e82be4a8f242e7d349182433a2abf400b3a9b1361019c8649.
