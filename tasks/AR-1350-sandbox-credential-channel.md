@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement a sandbox-owned sealed-FD credential channel for live provider children.",
-  "task_revision": 81,
+  "task_revision": 82,
   "title": "Sandbox-owned credential channel",
-  "updated_at": "2026-09-23T18:01:40+00:00",
+  "updated_at": "2026-09-23T18:01:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1350-sandbox-credential-channel"
 }
 ---
@@ -248,3 +248,6 @@ private runtime channel before AR-1349 can safely acquire attempts or wire
   malformed_ready_marker_fails_fast_and_cleans_run_root failed its elapsed<1s timing assertion; 187
   passed and 1 failed. This is an existing timing-sensitive test failure, not evidence to weaken the
   gate. Exact head remains unchanged.
+
+- 2026-09-23T18:01:52+00:00: Recorded command exit 0; command argv SHA-256
+  708168b916aee7e61240236d99e00bf9a958119c8978312556239eebf73c1430.
