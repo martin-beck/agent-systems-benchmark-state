@@ -4,7 +4,7 @@ Generated from local Git and GitHub. Do not edit.
 
 - Product remote main: `a4934fca0b528ac90d09fb537936584f5af0f75e`
 - Local origin/main: `a4934fca0b528ac90d09fb537936584f5af0f75e`
-- Primary worktree head: `a4934fca0b528ac90d09fb537936584f5af0f75e`
+- Primary worktree head: `bd7d10d4a760a84fa42de2b1fa9e97e8ea85ba09`
 
 ## Open pull requests
 
@@ -23,21 +23,24 @@ Generated from local Git and GitHub. Do not edit.
 | #235 | `dependabot/github_actions/taiki-e/install-action-2.87.12@de0353cce59e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.6 to 2.87.12 |
 | #236 | `dependabot/cargo/toml-1.1.6spec-1.1.0@9dc09c5208ab` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump toml from 0.8.23 to 1.1.6+spec-1.1.0 |
 | #237 | `dependabot/cargo/thiserror-2.0.20@83dba9288d9c` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump thiserror from 2.0.16 to 2.0.20 |
-| #248 | `feature/ar-1324-auth-helper-control-contract@ed61f865c99d` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(control): add authenticated credential-helper contract |
+| #248 | `feature/ar-1324-auth-helper-control-contract@0116bf17fb5b` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(control): add authenticated credential-helper contract |
+| #249 | `feature/ar-1325-provider-openrouter@f47e3728a972` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(agents): pinned credential-free OpenRouter provider profile (AR-1325) |
+| #250 | `feature/ar-1326-openrouter-catalog-selection@0c031b985bfc` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): select OpenRouter through provider catalog and plan (AR-1326) |
+| #251 | `feature/ar-1327-openrouter-adapter-parity@5006bcf43fed` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(agents): OpenRouter adapter projections and parity conformance (AR-1327) |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35706022545 | `a4934fca0b52` | schedule | Fault assurance | completed:success |
-| 35562641439 | `ed61f865c99d` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 35562641394 | `ed61f865c99d` | pull_request | Formal assurance | completed:success |
-| 35562641375 | `ed61f865c99d` | pull_request | Repository quality | completed:failure |
-| 35562641374 | `ed61f865c99d` | pull_request | Huawei MIT source headers | completed:success |
-| 35562641373 | `ed61f865c99d` | pull_request | Emulated aarch64 portability | completed:success |
-| 35562641357 | `ed61f865c99d` | pull_request | Hosted portability and native qualification | completed:success |
-| 35562641328 | `ed61f865c99d` | pull_request | Rust verification | completed:success |
-| 35562641313 | `ed61f865c99d` | pull_request | Fault assurance | completed:success |
-| 35562565748 | `ed61f865c99d` | workflow_dispatch | Huawei MIT source headers | completed:success |
-| 35562564553 | `ed61f865c99d` | workflow_dispatch | Agent Workflow Quality shadow | completed:success |
-| 35562563329 | `ed61f865c99d` | workflow_dispatch | Hosted portability and native qualification | completed:success |
+| 35824124966 | `0116bf17fb5b` | pull_request | Fault assurance | completed:success |
+| 35824124955 | `0116bf17fb5b` | pull_request | Rust verification | in_progress:- |
+| 35824124953 | `0116bf17fb5b` | pull_request | Repository quality | completed:failure |
+| 35824124948 | `0116bf17fb5b` | pull_request | Formal assurance | completed:success |
+| 35824124945 | `0116bf17fb5b` | pull_request | Hosted portability and native qualification | completed:success |
+| 35824124941 | `0116bf17fb5b` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 35824124930 | `0116bf17fb5b` | pull_request | Huawei MIT source headers | completed:success |
+| 35824124921 | `0116bf17fb5b` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 35823672467 | `b5f6553fed11` | pull_request | Rust verification | completed:failure |
+| 35823672452 | `b5f6553fed11` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 35823672430 | `b5f6553fed11` | pull_request | Emulated aarch64 portability | completed:cancelled |
+| 35823672397 | `b5f6553fed11` | pull_request | Repository quality | completed:failure |
