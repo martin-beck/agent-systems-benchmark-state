@@ -11,7 +11,7 @@
     "AR-1347"
   ],
   "id": "AR-1349",
-  "next_action": "Added signed runtime credential-injection boundary baf2fa733f079a58e5956759bcf1609657f02375: CredentialInjection consumes opaque capability only at final SandboxLaunchInput boundary; runtime sees typed success/failure and no bytes. Focused credential_injection tests 2/2, clippy/fmt pass. Remaining production blocker is concrete LiveProviderRuntimeService acquisition of pinned gate/backend, observed namespace, launch token and relay; only then can CLI run/sweep call one opaque service entrypoint. Preserve AR-1329 fail-closed.",
+  "next_action": "Production acquisition remains blocked at the exact missing runtime owner. Protected main has no constructor that can privately resolve pinned live gate/backend, observe namespace, issue token, construct relay, and compose LiveProviderAttempt; an attempted private resolver boundary was removed after private-interfaces/dead-code gates proved no legitimate production implementation. The signed CredentialInjection contract remains the safe cross-crate seam. CLI run/sweep stays fail-closed until a real runtime resolver exists; AR-1329 remains fail-closed.",
   "observed_branch": "feature/ar-1349-live-provider-runtime-service",
   "observed_dirty": 0,
   "observed_head": "baf2fa733f079a58e5956759bcf1609657f02375",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 89,
+  "task_revision": 90,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T16:55:41+00:00",
+  "updated_at": "2026-09-23T16:55:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
@@ -274,3 +274,10 @@ qualified.
 
 - 2026-09-23T16:55:41+00:00: Recorded command exit 1; command argv SHA-256
   026476014347ae45229ab16e8f89e047318213f4513731d348b802c34bed7679.
+
+- 2026-09-23T16:55:55+00:00: Attempted LiveRuntimeResolver acquisition boundary failed clippy with
+  private_interfaces and dead_code because no production resolver or authority constructor exists.
+  Removed the uninstantiated seam without suppressing gates. Final clippy passed and
+  credential_injection tests passed 2/2. A combined cargo test invocation also failed with cargo
+  usage error because cargo accepts one filter; reran the valid credential_injection filter
+  successfully.

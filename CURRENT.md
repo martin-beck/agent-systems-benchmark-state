@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1349](tasks/AR-1349-live-provider-runtime-service.md): Production live-provider runtime service | Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep. | Added signed runtime credential-injection boundary baf2fa733f079a58e5956759bcf1609657f02375: CredentialInjection consumes opaque capability only at final SandboxLaunchInput boundary; runtime sees typed success/failure and no bytes. Focused credential_injection tests 2/2, clippy/fmt pass. Remaining production blocker is concrete LiveProviderRuntimeService acquisition of pinned gate/backend, observed namespace, launch token and relay; only then can CLI run/sweep call one opaque service entrypoint. Preserve AR-1329 fail-closed. | codex-asb-ar1329-live-cli-luna56 |
+| P1 | [AR-1349](tasks/AR-1349-live-provider-runtime-service.md): Production live-provider runtime service | Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep. | Production acquisition remains blocked at the exact missing runtime owner. Protected main has no constructor that can privately resolve pinned live gate/backend, observe namespace, issue token, construct relay, and compose LiveProviderAttempt; an attempted private resolver boundary was removed after private-interfaces/dead-code gates proved no legitimate production implementation. The signed CredentialInjection contract remains the safe cross-crate seam. CLI run/sweep stays fail-closed until a real runtime resolver exists; AR-1329 remains fail-closed. | codex-asb-ar1329-live-cli-luna56 |
 
 ## Open
 
