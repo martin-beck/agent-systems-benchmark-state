@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Advertise the OpenRouter profile in the CLI provider catalog and accept it in provider-plan selection.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Select OpenRouter through the CLI provider catalog",
-  "updated_at": "2026-09-23T06:57:31+00:00",
+  "updated_at": "2026-09-23T06:57:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1326-openrouter-catalog-selection"
 }
 ---
@@ -109,3 +109,6 @@ the fail-closed content-address checks.
 - 2026-09-23T06:57:01+00:00: Heartbeat by codex-asb-ar1326-20260923.
 
 - 2026-09-23T06:57:31+00:00: Heartbeat by codex-asb-ar1326-20260923.
+
+- 2026-09-23T06:57:54+00:00: Recorded command exit 1; command argv SHA-256
+  056bdd1dc09150649ac976e2f57ef7edb1196c17626037dd91e41566fd18f9eb.
