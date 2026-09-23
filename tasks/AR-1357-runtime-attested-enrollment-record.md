@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1357-runtime-attested-enrollment-record",
-  "checkpoint_commit": "64ea6fc6054224b09aebb47d9227f836c824e83a",
+  "checkpoint_commit": "7862e3bb90a777e86e30d23b6af9639935671efe",
   "claim_expires": "2026-09-24T00:11:10+00:00",
   "depends_on": [
     "AR-1356"
   ],
   "id": "AR-1357",
-  "next_action": "PR #265 exact head 64ea6fc includes minimal formal/Cargo.lock serde entries repairing the hosted locked formal gate. Monitor all required checks at new exact head; diagnose any further failures, then merge only after all green.",
+  "next_action": "PR #265 merged at 7862e3bb90a777e86e30d23b6af9639935671efe. Monitor all seven post-merge workflows at exact merge SHA; release AR-1357 only after every workflow terminal-success.",
   "observed_branch": "feature/ar-1357-runtime-attested-enrollment-record",
   "observed_dirty": 0,
   "observed_head": "64ea6fc6054224b09aebb47d9227f836c824e83a",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Transport authenticated enrollment records into runtime without exposing authority to the CLI.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Runtime-attested enrollment record transport",
-  "updated_at": "2026-09-23T22:15:54+00:00",
+  "updated_at": "2026-09-23T22:16:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1357-runtime-attested-enrollment-record"
 }
 ---
@@ -129,3 +129,9 @@ Successor for AR-1355. AR-1356 supplies the authenticated control/runtime attest
 
 - 2026-09-23T22:15:54+00:00: Recorded command exit 0; command argv SHA-256
   11c1d62fc39a862b5d297ddb36529608c03b1c3d07351b9c2d636b5d90d7c438.
+
+- 2026-09-23T22:16:29+00:00: Protected merge completed through handoffctl after final clean-tree
+  review, SSH signatures, DCO, and all required exact-head checks green. Merge commit
+  7862e3bb90a777e86e30d23b6af9639935671efe. Post-merge workflow IDs: Repository quality 35927352114;
+  Fault assurance 35927352115; Hosted portability/native 35927352126; headers 35927352127; Rust
+  35927352130; Formal 35927352134; AArch64 35927352153.
