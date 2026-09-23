@@ -14,11 +14,11 @@
   "plan": "../plans/AR-1328.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Persist the per-user OpenRouter free-model configuration and credential-free key enrollment.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "OpenRouter free-model user configuration and key enrollment",
-  "updated_at": "2026-09-22T13:39:37+00:00",
+  "updated_at": "2026-09-23T07:30:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1328-openrouter-free-model-config"
 }
 ---
@@ -33,3 +33,6 @@ exact free model, binds the credential reference digest to the
 `OPENROUTER_API_KEY` environment channel, and loads it through the CLI without
 ever writing a secret to disk. Unsupported, stale, or credential-bearing
 configurations fail closed.
+
+- 2026-09-23T07:30:47+00:00: Dependencies AR-1325 and AR-1326 are released; AR-1100 is done. Promote
+  next OpenRouter user-configuration AR while AR-1327 post-merge verification continues.
