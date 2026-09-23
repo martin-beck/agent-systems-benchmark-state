@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the private host/runtime provisioning seam for live acquisition.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Runtime-owned live provisioning",
-  "updated_at": "2026-09-23T19:14:59+00:00",
+  "updated_at": "2026-09-23T19:15:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1351-live-runtime-provisioning"
 }
 ---
@@ -36,3 +36,6 @@ runtime boundary; AR-1349 remains fail-closed until it is merged and verified.
   AR-1347, and AR-1350 are completed; AR-1349 and AR-1329 remain downstream fail-closed consumers.
 
 - 2026-09-23T19:14:59+00:00: Claimed by codex-asb-runtime-acquisition-successor-luna56.
+
+- 2026-09-23T19:15:08+00:00: Recorded command exit 0; command argv SHA-256
+  5c2035ffbeece03cfc30bdbded9fcc27e988dbd832629cc0e29b1651e2566fd7.
