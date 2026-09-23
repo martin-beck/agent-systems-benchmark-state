@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the runtime-owned supervisor that acquires every live-provider authority and tears it down safely.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Runtime-owned live acquisition service",
-  "updated_at": "2026-09-23T15:59:20+00:00",
+  "updated_at": "2026-09-23T16:00:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1348-runtime-owned-live-acquisition"
 }
 ---
@@ -63,3 +63,6 @@ this service owns acquisition instead of accepting caller-built launch authority
   evidence and reopen for replacement gpt-5.6-luna worker.
 
 - 2026-09-23T15:59:20+00:00: Claimed by codex-asb-ar1329-live-cli-luna56.
+
+- 2026-09-23T16:00:05+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
