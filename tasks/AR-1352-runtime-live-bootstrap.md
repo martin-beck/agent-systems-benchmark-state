@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the private runtime-owned bootstrap source for live acquisition.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Runtime-owned live bootstrap",
-  "updated_at": "2026-09-23T20:20:43+00:00",
+  "updated_at": "2026-09-23T20:21:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1352-runtime-live-bootstrap"
 }
 ---
@@ -106,3 +106,6 @@ integration. AR-1329 remains fail-closed.
 
 - 2026-09-23T20:20:43+00:00: Recorded command exit 0; command argv SHA-256
   bc70f414e08c942931b8e57ae835e6bea7bcef4472d70b4a3d7ff408ee322965.
+
+- 2026-09-23T20:21:22+00:00: Recorded command exit 0; command argv SHA-256
+  534f8613e1c316db8f0f46dd989e44e14a8ca74304a94791b4e4a1c59b2fbb1d.
