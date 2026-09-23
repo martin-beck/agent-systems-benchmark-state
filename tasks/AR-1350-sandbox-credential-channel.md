@@ -12,7 +12,7 @@
   "id": "AR-1350",
   "next_action": "Coverage repair is committed and pushed to PR #261 at exact head edd9759f982dffa30001a0ef87dafcf409280135. Added positive/negative coverage for binding validation, one-shot channel consumption, append-before-fill, debug metadata, all CredentialInjectionError variants, and bounded invalid values. Local full workspace llvm-cov now passes at 52353/57874 lines = 90.46%, above the 90% floor. fmt check, clippy -D warnings, focused tests, and full workspace tests with --test-threads=1 pass. The parallel full workspace test/coverage invocation hash 534f failed only because an existing asb-cli test reported control state root is already owned; the isolated test and serialized full suite pass. Fresh PR-triggered exact-head CI must now be monitored; do not use workflow_dispatch DCO run as merge evidence.",
   "observed_branch": "feature/ar-1350-sandbox-credential-channel",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "edd9759f982dffa30001a0ef87dafcf409280135",
   "owner": "codex-asb-ar1350-sandbox-channel-luna56",
   "plan": "../plans/AR-1350-sandbox-credential-channel.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement a sandbox-owned sealed-FD credential channel for live provider children.",
-  "task_revision": 116,
+  "task_revision": 117,
   "title": "Sandbox-owned credential channel",
-  "updated_at": "2026-09-23T18:19:43+00:00",
+  "updated_at": "2026-09-23T18:19:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1350-sandbox-credential-channel"
 }
 ---
