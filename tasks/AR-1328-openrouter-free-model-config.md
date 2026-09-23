@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist the per-user OpenRouter free-model configuration and credential-free key enrollment.",
-  "task_revision": 125,
+  "task_revision": 126,
   "title": "OpenRouter free-model user configuration and key enrollment",
-  "updated_at": "2026-09-23T08:22:18+00:00",
+  "updated_at": "2026-09-23T08:23:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1328-openrouter-free-model-config"
 }
 ---
@@ -342,3 +342,6 @@ configurations fail closed.
 - 2026-09-23T08:22:18+00:00: Concurrent signed+DCO provenance refresh c3f386f updated
   docs/examples/asb-cli-workflow-v1.provenance.json for the latest workflow transcript. The exact PR
   head changed and hosted checks restarted; no failures observed.
+
+- 2026-09-23T08:23:11+00:00: Recorded command exit 0; command argv SHA-256
+  aa75a47abb51c989607a90cde0d8370262f138508299c06ab69b5d163bb590db.
