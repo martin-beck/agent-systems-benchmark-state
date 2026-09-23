@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement a sandbox-owned sealed-FD credential channel for live provider children.",
-  "task_revision": 149,
+  "task_revision": 150,
   "title": "Sandbox-owned credential channel",
-  "updated_at": "2026-09-23T18:40:15+00:00",
+  "updated_at": "2026-09-23T18:40:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1350-sandbox-credential-channel"
 }
 ---
@@ -433,3 +433,6 @@ private runtime channel before AR-1349 can safely acquire attempts or wire
 - 2026-09-23T18:40:15+00:00: Coverage margin repair f74b7d4 adds bounded metadata/accessor/probe
   tests and raises local exact coverage to 90.54%, above hosted floor with margin. Worktree and
   observed head are clean/exact.
+
+- 2026-09-23T18:40:23+00:00: Recorded command exit 0; command argv SHA-256
+  1bbf84cd914e65b3778a30e5e52031e335c07cac0a32d141be7ea94c6d632aee.
