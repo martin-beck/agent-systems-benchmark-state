@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the private host/runtime provisioning seam for live acquisition.",
-  "task_revision": 98,
+  "task_revision": 99,
   "title": "Runtime-owned live provisioning",
-  "updated_at": "2026-09-23T20:01:00+00:00",
+  "updated_at": "2026-09-23T20:02:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1351-live-runtime-provisioning"
 }
 ---
@@ -312,4 +312,7 @@ runtime boundary; AR-1349 remains fail-closed until it is merged and verified.
 - 2026-09-23T20:00:56+00:00: Heartbeat by codex-asb-runtime-acquisition-successor-luna56.
 
 - 2026-09-23T20:01:00+00:00: Recorded command exit 0; command argv SHA-256
+  27e0b81ce9d9faa49c874b96133247a654d18bbdc3fbb3b5df4d8b53e7751914.
+
+- 2026-09-23T20:02:03+00:00: Recorded command exit 0; command argv SHA-256
   27e0b81ce9d9faa49c874b96133247a654d18bbdc3fbb3b5df4d8b53e7751914.
