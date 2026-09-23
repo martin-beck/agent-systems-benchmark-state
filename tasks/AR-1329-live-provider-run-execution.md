@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute real agents against the selected provider through asb run and sweep with credential-free resolution.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Live-provider run execution for real agents",
-  "updated_at": "2026-09-23T12:25:00+00:00",
+  "updated_at": "2026-09-23T12:25:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1329-live-provider-run-execution"
 }
 ---
@@ -139,3 +139,6 @@ the digest-pinned mode remain default and never touch the network.
   e8f1b6e696bc5011c596493b05e19e1aa1b10bd52d18175e4f2e3d69485513aa.
 
 - 2026-09-23T12:25:00+00:00: Heartbeat by codex-asb-ar1329-20260923b.
+
+- 2026-09-23T12:25:03+00:00: Recorded command exit 0; command argv SHA-256
+  a76a8bc2155da045daf9d31e4f0496b38768f63b49972ee17a8fe155ee6a123a.
