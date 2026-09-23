@@ -1866,7 +1866,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1365](../tasks/AR-1365-control-receipt-source-integration.md): Control receipt source integration | codex-asb-runtime-attested-enrollment-luna56 | Integrate authenticated chain and authority enrollment into the versioned control receipt source. | Promote after AR-1362 and AR-1364 are done, then integrate authenticated chain and authority enrollment into the versioned control receipt source. |
+| P0 | [AR-1365](../tasks/AR-1365-control-receipt-source-integration.md): Control receipt source integration | codex-asb-runtime-attested-enrollment-luna56 | Integrate authenticated chain and authority enrollment into the versioned control receipt source. | Run independent review and publish exact clean signed head 6959cc1810265e026a9af40602752fdca4dc1e18; monitor exact-head CI, repair failures without weakening gates, merge only green, then verify all seven post-merge workflows. |
 
 ### Open (4)
 

@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1365-control-receipt-source-integration",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "6959cc1810265e026a9af40602752fdca4dc1e18",
   "claim_expires": "2026-09-24T01:56:48+00:00",
   "depends_on": [
     "AR-1362",
     "AR-1364"
   ],
   "id": "AR-1365",
-  "next_action": "Promote after AR-1362 and AR-1364 are done, then integrate authenticated chain and authority enrollment into the versioned control receipt source.",
+  "next_action": "Run independent review and publish exact clean signed head 6959cc1810265e026a9af40602752fdca4dc1e18; monitor exact-head CI, repair failures without weakening gates, merge only green, then verify all seven post-merge workflows.",
   "observed_branch": "feature/ar-1365-control-receipt-source-integration",
   "observed_dirty": 0,
   "observed_head": "6959cc1810265e026a9af40602752fdca4dc1e18",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate authenticated chain and authority enrollment into the versioned control receipt source.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Control receipt source integration",
-  "updated_at": "2026-09-23T23:57:20+00:00",
+  "updated_at": "2026-09-23T23:58:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1365-control-receipt-source-integration"
 }
 ---
@@ -55,3 +55,9 @@ AR-1364. Do not touch asb-tui or synthesize authority from CLI/config input.
 
 - 2026-09-23T23:57:20+00:00: Recorded command exit 0; command argv SHA-256
   b2f7111306aa7c03c56215bdb77e1811ed87e0363612681320219865a955e4c7.
+
+- 2026-09-23T23:58:16+00:00: Implemented bounded RuntimeReceiptRequestV1 and
+  RuntimeReceiptResponseV1 contracts in asb-control: strict schema, provider/generation/nonce
+  validation, request-response binding, secret/path-free receipt fields, and positive/negative
+  tests. Full asb-control tests 66+26+7+4 plus docs pass; workspace clippy -D warnings and fmt pass.
+  Signed+DCO product commit 6959cc1810265e026a9af40602752fdca4dc1e18.
