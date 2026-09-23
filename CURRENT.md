@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1341](tasks/AR-1341-runtime-observed-namespace-repair.md): Runtime-observed namespace attestation repair | Repair AR-1340 so live relay capabilities require runtime-observed child namespace agreement. | Independently review exact clean 228bcc3 including invalid gate digest denial, then publish PR and wait for exact-head CI; do not release AR-1340 until this repair is merged and post-merge verified. | codex-asb-ar1341-20260923 |
+| P0 | [AR-1341](tasks/AR-1341-runtime-observed-namespace-repair.md): Runtime-observed namespace attestation repair | Repair AR-1340 so live relay capabilities require runtime-observed child namespace agreement. | Monitor post-merge workflows for merge 2774b1d648b5c3bbda0e290e158dc352502d3768; after all seven exact-head workflows are green, release AR-1341 done with evidence and update AR-1340 security-hold transition. | codex-asb-ar1341-20260923 |
 | P1 | [AR-1329](tasks/AR-1329-live-provider-run-execution.md): Live-provider run execution for real agents | Execute real agents against the selected provider through asb run and sweep with credential-free resolution. | Consume the AR-1340 attested namespace-bound relay handoff; then integrate live run/sweep and complete denial/live evidence without weakening NetworkPolicy::Deny. | codex-asb-ar1329-20260923 |
 
 ## Open

@@ -7,7 +7,7 @@
     "AR-1339"
   ],
   "id": "AR-1341",
-  "next_action": "Independently review exact clean 228bcc3 including invalid gate digest denial, then publish PR and wait for exact-head CI; do not release AR-1340 until this repair is merged and post-merge verified.",
+  "next_action": "Monitor post-merge workflows for merge 2774b1d648b5c3bbda0e290e158dc352502d3768; after all seven exact-head workflows are green, release AR-1341 done with evidence and update AR-1340 security-hold transition.",
   "observed_branch": "feature/ar-1341-runtime-observed-namespace-repair",
   "observed_dirty": 0,
   "observed_head": "228bcc33957d168041717f7ca347f06aa6256a64",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair AR-1340 so live relay capabilities require runtime-observed child namespace agreement.",
-  "task_revision": 88,
+  "task_revision": 89,
   "title": "Runtime-observed namespace attestation repair",
-  "updated_at": "2026-09-23T11:19:38+00:00",
+  "updated_at": "2026-09-23T11:20:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1341-runtime-observed-namespace-repair"
 }
 ---
@@ -271,3 +271,11 @@ this task.
 
 - 2026-09-23T11:19:38+00:00: Recorded command exit 0; command argv SHA-256
   631f27c87f48ca21f84566f25a95e8e3e84a41c0fa0f84e787aeaddc94851ea2.
+
+- 2026-09-23T11:20:04+00:00: PR #258 exact head 228bcc33957d168041717f7ca347f06aa6256a64 had all 12
+  required checks green and mergeState CLEAN. Earlier merge exit-8 records lacked diagnostics; one
+  captured retry with stderr returned MERGE_EXIT=0 and merged successfully at
+  2774b1d648b5c3bbda0e290e158dc352502d3768. The prior exit-8 condition is therefore
+  resolved/terminal rather than a code failure; no blind retry was used. Post-merge workflows are
+  now running: Fault 35853535928, Formal 35853535939, Headers 35853535986 (green), Rust 35853535973,
+  Hosted 35853535966 (green), Repository 35853535895, AArch64 35853535903.
