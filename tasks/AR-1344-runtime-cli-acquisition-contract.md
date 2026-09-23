@@ -9,7 +9,7 @@
     "AR-1342"
   ],
   "id": "AR-1344",
-  "next_action": "Runtime-issued factory callback coverage is added; continue relay lifecycle integration and live sweep success testing once a capability-backed synthetic attempt fixture is available.",
+  "next_action": "Factory callback test covers separate warmup/measured identities and exhaustion; relay lifecycle tests are 7/7, CLI lib tests are 100 passed, and clippy is clean. Continue with relay-integrated successful live sweep once a capability-backed synthetic attempt fixture is available.",
   "observed_branch": "feature/ar-1344-runtime-cli-acquisition-contract",
   "observed_dirty": 0,
   "observed_head": "c3c245f3de3c6612ace0de0f3cdf42ac82105406",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime-owned API and CLI integration needed for safe live-provider attempts.",
-  "task_revision": 164,
+  "task_revision": 165,
   "title": "Runtime-owned CLI live acquisition contract",
-  "updated_at": "2026-09-23T13:43:01+00:00",
+  "updated_at": "2026-09-23T13:43:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1344-runtime-cli-acquisition-contract"
 }
 ---
@@ -425,3 +425,8 @@ contract and its tests are merged and verified.
   Successful LiveProviderAttempt construction remains runtime capability-gated by the attested
   handoff/relay contract; the focused test intentionally verifies callback admission without forging
   that capability.
+
+- 2026-09-23T13:43:17+00:00: Checkpoint refreshed after signed test commit c3c245f. Full CLI lib
+  suite: 100 passed; focused runtime launch_factory: 9 passed, 1 capability-gated ignored; clippy
+  and fmt clean. Successful live attempt remains intentionally unforgeable outside runtime
+  attestation.

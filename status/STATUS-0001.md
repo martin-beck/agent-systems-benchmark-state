@@ -1780,7 +1780,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1344](../tasks/AR-1344-runtime-cli-acquisition-contract.md): Runtime-owned CLI live acquisition contract | codex-asb-ar1344-factory-refactor-20260923 | Add the runtime-owned API and CLI integration needed for safe live-provider attempts. | Runtime-issued factory callback coverage is added; continue relay lifecycle integration and live sweep success testing once a capability-backed synthetic attempt fixture is available. |
+| P1 | [AR-1344](../tasks/AR-1344-runtime-cli-acquisition-contract.md): Runtime-owned CLI live acquisition contract | codex-asb-ar1344-factory-refactor-20260923 | Add the runtime-owned API and CLI integration needed for safe live-provider attempts. | Factory callback test covers separate warmup/measured identities and exhaustion; relay lifecycle tests are 7/7, CLI lib tests are 100 passed, and clippy is clean. Continue with relay-integrated successful live sweep once a capability-backed synthetic attempt fixture is available. |
 
 ### Open (5)
 
