@@ -23,7 +23,7 @@ Generated from local Git and GitHub. Do not edit.
 | #235 | `dependabot/github_actions/taiki-e/install-action-2.87.12@de0353cce59e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.6 to 2.87.12 |
 | #236 | `dependabot/cargo/toml-1.1.6spec-1.1.0@9dc09c5208ab` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump toml from 0.8.23 to 1.1.6+spec-1.1.0 |
 | #237 | `dependabot/cargo/thiserror-2.0.20@83dba9288d9c` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump thiserror from 2.0.16 to 2.0.20 |
-| #258 | `feature/ar-1341-runtime-observed-namespace-repair@228bcc33957d` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(runtime): attest live capability at child namespace boundary |
+| #258 | `feature/ar-1341-runtime-observed-namespace-repair@228bcc33957d` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(runtime): attest live capability at child namespace boundary |
 
 ## Recent workflows
 
@@ -34,9 +34,9 @@ Generated from local Git and GitHub. Do not edit.
 | 35852497106 | `228bcc33957d` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 35852497102 | `228bcc33957d` | pull_request | Huawei MIT source headers | completed:success |
 | 35852497085 | `228bcc33957d` | pull_request | Formal assurance | completed:success |
-| 35852497083 | `228bcc33957d` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 35852497077 | `228bcc33957d` | pull_request | Rust verification | in_progress:- |
-| 35852497066 | `228bcc33957d` | pull_request | Repository quality | in_progress:- |
+| 35852497083 | `228bcc33957d` | pull_request | Emulated aarch64 portability | completed:success |
+| 35852497077 | `228bcc33957d` | pull_request | Rust verification | completed:success |
+| 35852497066 | `228bcc33957d` | pull_request | Repository quality | completed:success |
 | 35849949352 | `3406faae58f0` | push | Emulated aarch64 portability | completed:success |
 | 35849949311 | `3406faae58f0` | push | Repository quality | completed:success |
 | 35849949302 | `3406faae58f0` | push | Huawei MIT source headers | completed:success |
