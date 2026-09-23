@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1344-runtime-cli-acquisition-contract",
-  "checkpoint_commit": "487bf83d802fc15d19b581e72af8ed7f4e849409",
+  "checkpoint_commit": "c3c245f3de3c6612ace0de0f3cdf42ac82105406",
   "claim_expires": "2026-09-23T15:36:02+00:00",
   "depends_on": [
     "AR-1339",
@@ -9,7 +9,7 @@
     "AR-1342"
   ],
   "id": "AR-1344",
-  "next_action": "Complete live relay accept/forward lifecycle around AgentProcess::Live; do not promote until relay is actively served and cancellation/expiry teardown tests pass.",
+  "next_action": "Runtime-issued factory callback coverage is added; continue relay lifecycle integration and live sweep success testing once a capability-backed synthetic attempt fixture is available.",
   "observed_branch": "feature/ar-1344-runtime-cli-acquisition-contract",
   "observed_dirty": 0,
   "observed_head": "c3c245f3de3c6612ace0de0f3cdf42ac82105406",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime-owned API and CLI integration needed for safe live-provider attempts.",
-  "task_revision": 163,
+  "task_revision": 164,
   "title": "Runtime-owned CLI live acquisition contract",
-  "updated_at": "2026-09-23T13:42:41+00:00",
+  "updated_at": "2026-09-23T13:43:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1344-runtime-cli-acquisition-contract"
 }
 ---
@@ -419,3 +419,9 @@ contract and its tests are merged and verified.
 
 - 2026-09-23T13:42:41+00:00: Recorded command exit 0; command argv SHA-256
   3d4cc54827fa0ae5c402321266e4a8e9a84a69a17f7ff27b7a0f0c858d454784.
+
+- 2026-09-23T13:43:01+00:00: Added focused factory request test covering separate warmup and
+  measured identities, plus exhaustion/error behavior. Full asb-cli lib tests: 100 passed.
+  Successful LiveProviderAttempt construction remains runtime capability-gated by the attested
+  handoff/relay contract; the focused test intentionally verifies callback admission without forging
+  that capability.

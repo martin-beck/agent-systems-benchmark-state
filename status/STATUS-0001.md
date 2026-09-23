@@ -1780,7 +1780,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1344](../tasks/AR-1344-runtime-cli-acquisition-contract.md): Runtime-owned CLI live acquisition contract | codex-asb-ar1344-factory-refactor-20260923 | Add the runtime-owned API and CLI integration needed for safe live-provider attempts. | Complete live relay accept/forward lifecycle around AgentProcess::Live; do not promote until relay is actively served and cancellation/expiry teardown tests pass. |
+| P1 | [AR-1344](../tasks/AR-1344-runtime-cli-acquisition-contract.md): Runtime-owned CLI live acquisition contract | codex-asb-ar1344-factory-refactor-20260923 | Add the runtime-owned API and CLI integration needed for safe live-provider attempts. | Runtime-issued factory callback coverage is added; continue relay lifecycle integration and live sweep success testing once a capability-backed synthetic attempt fixture is available. |
 
 ### Open (5)
 
@@ -1822,4 +1822,3 @@ flowchart LR
 | P0 | [AR-1278](../tasks/AR-1278-primary-runtime-client.md): Primary replay runtime client handoff | Unclaimed | Connect the primary replay command to the runtime-issued transport client. | Promote after dependency verification; hand the runtime-issued replay client into primary argument dispatch and prove supervised lifecycle behavior. |
 | P0 | [AR-1279](../tasks/AR-1279-end-to-end-replay-runtime.md): End-to-end primary replay runtime handoff | Unclaimed | Implement end-to-end runtime-owned execution for primary strict replay. | Promote after dependency verification; implement transport plus primary runtime-client handoff from protected main and prove full supervised lifecycle. |
 | P0 | [AR-1280](../tasks/AR-1280-cross-crate-replay-entrypoint.md): Cross-crate replay process entrypoint | Unclaimed | Implement the cross-crate runtime process entrypoint for primary strict replay. | Extend replay-plan dispatch to invoke runtime-owned supervised process with argument-level command and cassette service; preserve denied egress/no-fallback and add lifecycle fault tests. Current signed head f92a86b provides bridge/binding baseline. |
-| P0 | [AR-1281](../tasks/AR-1281-supervised-cassette-lifecycle.md): Supervised cassette lifecycle execution | Unclaimed | Execute primary strict replay through a supervised runtime cassette lifecycle. | Promote after dependency verification; implement the complete supervised cassette path and lifecycle fault matrix from protected main. |
