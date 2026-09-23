@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1349-live-provider-runtime-service",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-23T18:30:27+00:00",
   "depends_on": [
     "AR-1327",
     "AR-1328",
@@ -12,15 +12,15 @@
   ],
   "id": "AR-1349",
   "next_action": "Promote after AR-1327, AR-1328, AR-1339, AR-1340 and AR-1347 are verified. AR-1348 is superseded as partial lifecycle evidence by this coordinator repair. Implement the production LiveProviderRuntimeService atomic acquisition boundary and wire asb run/sweep; keep AR-1329 fail-closed until exact-head CI and exact lifecycle evidence pass.",
-  "owner": "",
+  "owner": "codex-asb-ar1329-live-cli-luna56",
   "plan": "../plans/AR-1349-live-provider-runtime-service.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T16:30:20+00:00",
+  "updated_at": "2026-09-23T16:30:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
@@ -35,3 +35,5 @@ qualified.
 - 2026-09-23T16:30:20+00:00: Dependencies AR-1327, AR-1328, AR-1339, AR-1340 and AR-1347 are
   verified done. AR-1348 is superseded partial lifecycle evidence and intentionally removed from
   dependencies; promote this coordinator repair for claim readiness. AR-1329 remains fail-closed.
+
+- 2026-09-23T16:30:27+00:00: Claimed by codex-asb-ar1329-live-cli-luna56.
