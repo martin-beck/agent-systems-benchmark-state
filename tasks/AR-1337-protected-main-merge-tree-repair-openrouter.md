@@ -7,7 +7,7 @@
     "AR-1226"
   ],
   "id": "AR-1337",
-  "next_action": "Independent review and exact-head CI; then use signed integration procedure against the current protected target and verify post-merge workflows.",
+  "next_action": "Await remaining PR #252 exact-head checks and independent review; then merge only via signed integration procedure at the current protected target and verify post-merge workflows.",
   "observed_branch": "repair/ar-1337-openrouter-merge-tree-admission",
   "observed_dirty": 0,
   "observed_head": "8dc07a0f86a10aa6b20c87b2d67c34117adc69bc",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the protected-main merge-tree admission defect exposed after the OpenRouter provider merge.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Repair protected-main merge-tree admission after OpenRouter merge",
-  "updated_at": "2026-09-23T06:27:06+00:00",
+  "updated_at": "2026-09-23T06:30:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1337-protected-main-merge-tree-repair"
 }
 ---
@@ -52,3 +52,10 @@ remaining evidence limits without private paths or credentials.
 
 - 2026-09-23T06:27:06+00:00: Recorded command exit 0; command argv SHA-256
   7a6648f19871bcfba727d1838b42d9807516d3532946bdfcb9e2cfd09b657728.
+
+- 2026-09-23T06:30:30+00:00: Published PR #252
+  https://github.com/martin-beck/agent-systems-benchmark/pull/252 at exact head
+  8dc07a0f86a10aa6b20c87b2d67c34117adc69bc, base 56c882a06337a2b58c761bddaef2c743cba65712.
+  Exact-head checks: headers, platform, retained faults, bounded fuzz, Kani, Loom, mutation
+  sentinels and AWQ shadow SUCCESS; emulated aarch64, policy/coverage, Rust and TLC/Alloy remain
+  pending. Independent review still required; no merge performed.

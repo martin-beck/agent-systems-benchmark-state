@@ -1747,7 +1747,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1337](../tasks/AR-1337-protected-main-merge-tree-repair-openrouter.md): Repair protected-main merge-tree admission after OpenRouter merge | codex-ar1337 | Repair the protected-main merge-tree admission defect exposed after the OpenRouter provider merge. | Independent review and exact-head CI; then use signed integration procedure against the current protected target and verify post-merge workflows. |
+| P0 | [AR-1337](../tasks/AR-1337-protected-main-merge-tree-repair-openrouter.md): Repair protected-main merge-tree admission after OpenRouter merge | codex-ar1337 | Repair the protected-main merge-tree admission defect exposed after the OpenRouter provider merge. | Await remaining PR #252 exact-head checks and independent review; then merge only via signed integration procedure at the current protected target and verify post-merge workflows. |
 | P1 | [AR-1325](../tasks/AR-1325-provider-openrouter.md): Support a shared OpenRouter provider | coordinator-openrouter-audit | Define one pinned credential-free OpenRouter provider profile for compatible ASB agent adapters. | Repair protected-main merge-tree admission after post-merge Repository quality failed on 56c882a: protected-main merge tree differs from reviewed topic tree; create and execute a dedicated repair AR, then rerun all exact-main workflows before treating AR-1325 as done. |
 
 ### Open (3)
