@@ -7,7 +7,7 @@
     "AR-1339"
   ],
   "id": "AR-1340",
-  "next_action": "PR #257 is published at exact head f77aafb; wait exact-head required CI, repair any failures, independently review final diff, merge only when all required checks are green, then run post-merge verification.",
+  "next_action": "BLOCKED pending runtime-observed child namespace attestation: compare actual bwrap child /proc/self/ns/net identity to relay handoff before any live effect; prove copied/mismatched capability denial; do not merge PR #257.",
   "observed_branch": "feature/ar-1340-attested-live-relay-handoff",
   "observed_dirty": 0,
   "observed_head": "f77aafb44b05cd04cbd642ab3d737eb4062403dc",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind the live provider relay to an attested child namespace and integrate it without weakening offline or replay denial.",
-  "task_revision": 72,
+  "task_revision": 73,
   "title": "Attested live-relay namespace and child handoff",
-  "updated_at": "2026-09-23T10:30:14+00:00",
+  "updated_at": "2026-09-23T10:30:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1340-attested-live-relay-handoff"
 }
 ---
@@ -231,3 +231,9 @@ public coordination state or runtime evidence.
   c265c08, f77aafb; cargo fmt check, clippy workspace all-targets warnings denied, full workspace
   tests, rustdoc warnings denied, and release workspace build all passed. State remains in_progress
   pending exact-head CI and merge gates.
+
+- 2026-09-23T10:30:28+00:00: Security review finding recorded: NamespaceIdentity::current() is
+  unused in production; validation trusts caller-supplied identity and does not prove the handoff
+  belongs to actual child namespace. Hold PR #257 publication/merge and AR completion until
+  runtime-observed child identity comparison and fail-closed copied/stale/mismatch evidence exist.
+  Lease valid; no recovery or ownership change.

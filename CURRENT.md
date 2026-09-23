@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1329](tasks/AR-1329-live-provider-run-execution.md): Live-provider run execution for real agents | Execute real agents against the selected provider through asb run and sweep with credential-free resolution. | Consume the AR-1340 attested namespace-bound relay handoff; then integrate live run/sweep and complete denial/live evidence without weakening NetworkPolicy::Deny. | codex-asb-ar1329-20260923 |
-| P1 | [AR-1340](tasks/AR-1340-attested-live-relay-namespace-handoff.md): Attested live-relay namespace and child handoff | Bind the live provider relay to an attested child namespace and integrate it without weakening offline or replay denial. | PR #257 is published at exact head f77aafb; wait exact-head required CI, repair any failures, independently review final diff, merge only when all required checks are green, then run post-merge verification. | codex-asb-ar1340-20260923 |
+| P1 | [AR-1340](tasks/AR-1340-attested-live-relay-namespace-handoff.md): Attested live-relay namespace and child handoff | Bind the live provider relay to an attested child namespace and integrate it without weakening offline or replay denial. | BLOCKED pending runtime-observed child namespace attestation: compare actual bwrap child /proc/self/ns/net identity to relay handoff before any live effect; prove copied/mismatched capability denial; do not merge PR #257. | codex-asb-ar1340-20260923 |
 
 ## Open
 
