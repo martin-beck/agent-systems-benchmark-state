@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime live-provider relay service and per-attempt opaque factory acquisition required by asb run and sweep.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Runtime live-provider relay service and CLI acquisition",
-  "updated_at": "2026-09-23T15:29:10+00:00",
+  "updated_at": "2026-09-23T15:31:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1343-runtime-live-provider-relay"
 }
 ---
@@ -183,3 +183,6 @@ capabilities without bypassing the denied-network sandbox.
   resolution occur only in tests or unrelated CSB paths; credential transport bytes are
   crate-private in asb-agents. Reverted misleading callback-only d20e2eb as signed f22afd0. Focused
   service test passed before revert; repaired cargo invocation and clippy passed. No PR/publication.
+
+- 2026-09-23T15:31:10+00:00: Recorded command exit 0; command argv SHA-256
+  54b952fd95f4d20665acf3dcb0031607a58af7527eadb009443c3cb5687eec87.
