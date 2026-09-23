@@ -1810,7 +1810,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1349](../tasks/AR-1349-live-provider-runtime-service.md): Production live-provider runtime service | codex-asb-ar1329-live-cli-luna56 | Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep. | CLI integration remains fail-closed. Independent review found the intermediate LiveProviderRuntimeAuthority bundle could be externally constructed; 97870c0 removes that incomplete composition seam rather than suppressing dead_code. Focused live_service 2/2, clippy/fmt pass. Exact remaining blocker: no production-owned constructor exists that resolves provider selection/credential, pinned gate/backend, observed namespace, token and relay into an opaque LiveProviderAttempt. Next repair must implement that owner before asb run/sweep can call one service entrypoint; preserve offline/replay defaults and AR-1329 fail-closed. |
+| P1 | [AR-1349](../tasks/AR-1349-live-provider-runtime-service.md): Production live-provider runtime service | codex-asb-ar1329-live-cli-luna56 | Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep. | Added signed runtime credential-injection boundary baf2fa733f079a58e5956759bcf1609657f02375: CredentialInjection consumes opaque capability only at final SandboxLaunchInput boundary; runtime sees typed success/failure and no bytes. Focused credential_injection tests 2/2, clippy/fmt pass. Remaining production blocker is concrete LiveProviderRuntimeService acquisition of pinned gate/backend, observed namespace, launch token and relay; only then can CLI run/sweep call one opaque service entrypoint. Preserve AR-1329 fail-closed. |
 
 ### Open (4)
 

@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1349-live-provider-runtime-service",
-  "checkpoint_commit": "97870c00fbb8444daf8b581e2b141c4b479b719b",
+  "checkpoint_commit": "baf2fa733f079a58e5956759bcf1609657f02375",
   "claim_expires": "2026-09-23T18:30:27+00:00",
   "depends_on": [
     "AR-1327",
@@ -11,7 +11,7 @@
     "AR-1347"
   ],
   "id": "AR-1349",
-  "next_action": "CLI integration remains fail-closed. Independent review found the intermediate LiveProviderRuntimeAuthority bundle could be externally constructed; 97870c0 removes that incomplete composition seam rather than suppressing dead_code. Focused live_service 2/2, clippy/fmt pass. Exact remaining blocker: no production-owned constructor exists that resolves provider selection/credential, pinned gate/backend, observed namespace, token and relay into an opaque LiveProviderAttempt. Next repair must implement that owner before asb run/sweep can call one service entrypoint; preserve offline/replay defaults and AR-1329 fail-closed.",
+  "next_action": "Added signed runtime credential-injection boundary baf2fa733f079a58e5956759bcf1609657f02375: CredentialInjection consumes opaque capability only at final SandboxLaunchInput boundary; runtime sees typed success/failure and no bytes. Focused credential_injection tests 2/2, clippy/fmt pass. Remaining production blocker is concrete LiveProviderRuntimeService acquisition of pinned gate/backend, observed namespace, launch token and relay; only then can CLI run/sweep call one opaque service entrypoint. Preserve AR-1329 fail-closed.",
   "observed_branch": "feature/ar-1349-live-provider-runtime-service",
   "observed_dirty": 0,
   "observed_head": "baf2fa733f079a58e5956759bcf1609657f02375",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 74,
+  "task_revision": 75,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T16:51:19+00:00",
+  "updated_at": "2026-09-23T16:51:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
@@ -231,3 +231,10 @@ qualified.
 
 - 2026-09-23T16:51:09+00:00: Recorded command exit 0; command argv SHA-256
   18a65dddd9d5bfede44ca6f3b96429ae78f4628ad49be9e36c703267d445f326.
+
+- 2026-09-23T16:51:33+00:00: Cross-crate audit confirmed asb-agents can depend on this runtime-owned
+  trait without a runtime-to-agents cycle. The attempted public authority composition was removed in
+  signed 97870c after independent review found externally constructible fields; no caller-built
+  factory or CLI wiring was added. Initial credential boundary clippy failed on wrong SandboxSpec
+  import and assert_eq requiring PartialEq on SandboxLaunchInput; repaired with correct import and
+  matches!.
