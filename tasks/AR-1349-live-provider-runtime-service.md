@@ -12,7 +12,7 @@
     "AR-1350"
   ],
   "id": "AR-1349",
-  "next_action": "Adapter and sealed-channel gates are green. The remaining required production slice is not safely implementable from current public constructors: LiveProviderRuntimeService still only forwards resolver capability, while CLI run/sweep still requires caller-injected LiveProviderAttemptFactory. Implement a private runtime acquisition coordinator (backend/gate/lease/namespace/token/relay/attempt) before changing dispatch; do not synthesize authority.",
+  "next_action": "AR-1350 sealed channel and asb-agents adapter are merged/green. Runtime constructors exist for lease, relay, namespace handoff, and LiveLaunchFactory, but no production-owned coordinator currently supplies pinned SandboxBackend/live gate, authenticated ProviderEgressPolicy/Handoff, observed NamespaceIdentity, and concrete target/route inputs to compose them. Do not expose these as CLI authority; add the smallest private coordinator seam or successor repair before replacing run/sweep injected factories.",
   "observed_branch": "feature/ar-1349-live-provider-runtime-service",
   "observed_dirty": 0,
   "observed_head": "d069f3eeacae914bec5d33dfbb575cd7e4281b2c",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 185,
+  "task_revision": 186,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T19:11:04+00:00",
+  "updated_at": "2026-09-23T19:11:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
@@ -556,3 +556,9 @@ qualified.
   fail-closed.
 
 - 2026-09-23T19:11:04+00:00: Heartbeat by codex-asb-ar1329-live-cli-luna56.
+
+- 2026-09-23T19:11:43+00:00: Heartbeat renewed. Constructor audit confirms
+  LiveLaunchFactory::acquire and relay/namespace constructors are public but require
+  authority-bearing policy/handoff/backend/namespace inputs unavailable to current CLI path. No safe
+  production acquisition or CLI wiring was fabricated. Adapter commit d069f3e and prior focused/full
+  green gates remain evidence; AR-1329 stays fail-closed.

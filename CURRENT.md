@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1349](tasks/AR-1349-live-provider-runtime-service.md): Production live-provider runtime service | Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep. | Adapter and sealed-channel gates are green. The remaining required production slice is not safely implementable from current public constructors: LiveProviderRuntimeService still only forwards resolver capability, while CLI run/sweep still requires caller-injected LiveProviderAttemptFactory. Implement a private runtime acquisition coordinator (backend/gate/lease/namespace/token/relay/attempt) before changing dispatch; do not synthesize authority. | codex-asb-ar1329-live-cli-luna56 |
+| P1 | [AR-1349](tasks/AR-1349-live-provider-runtime-service.md): Production live-provider runtime service | Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep. | AR-1350 sealed channel and asb-agents adapter are merged/green. Runtime constructors exist for lease, relay, namespace handoff, and LiveLaunchFactory, but no production-owned coordinator currently supplies pinned SandboxBackend/live gate, authenticated ProviderEgressPolicy/Handoff, observed NamespaceIdentity, and concrete target/route inputs to compose them. Do not expose these as CLI authority; add the smallest private coordinator seam or successor repair before replacing run/sweep injected factories. | codex-asb-ar1329-live-cli-luna56 |
 
 ## Open
 
