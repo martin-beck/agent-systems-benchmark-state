@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1350-sandbox-credential-channel",
   "checkpoint_commit": "359f15af52aa2b0b31bb091b945e7de933960006",
-  "claim_expires": null,
+  "claim_expires": "2026-09-23T19:20:18+00:00",
   "depends_on": [
     "AR-1328",
     "AR-1339",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1350-sandbox-credential-channel",
   "observed_dirty": 0,
   "observed_head": "359f15af52aa2b0b31bb091b945e7de933960006",
-  "owner": null,
+  "owner": "codex-asb-ar1350-sandbox-channel-luna56",
   "plan": "../plans/AR-1350-sandbox-credential-channel.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Implement a sandbox-owned sealed-FD credential channel for live provider children.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Sandbox-owned credential channel",
-  "updated_at": "2026-09-23T17:19:13+00:00",
+  "updated_at": "2026-09-23T17:20:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1350-sandbox-credential-channel"
 }
 ---
@@ -38,3 +38,5 @@ private runtime channel before AR-1349 can safely acquire attempts or wire
 - 2026-09-23T17:19:13+00:00: Dependencies AR-1328, AR-1339, AR-1340, and AR-1347 are completed and
   verified; AR-1349 and AR-1329 are downstream consumers. Promote this prerequisite repair for claim
   readiness.
+
+- 2026-09-23T17:20:18+00:00: Claimed by codex-asb-ar1350-sandbox-channel-luna56.
