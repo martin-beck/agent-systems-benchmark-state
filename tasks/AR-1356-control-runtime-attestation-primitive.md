@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1356-control-runtime-attestation-primitive",
   "checkpoint_commit": "a6f1915aa5117f0296b1b8f4b9c4692a956b3d86",
-  "claim_expires": "2026-09-23T23:42:16+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1352"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1356-control-runtime-attestation-primitive",
   "observed_dirty": 0,
   "observed_head": "9e587593c2fd21347ed2b7faf544e9d5a7bf150a",
-  "owner": "codex-asb-runtime-acquisition-successor-luna56",
+  "owner": "",
   "plan": "../plans/AR-1356-control-runtime-attestation-primitive.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Issue runtime-owned live enrollment capability from authenticated control attestation.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Control/runtime enrollment attestation primitive",
-  "updated_at": "2026-09-23T21:42:16+00:00",
+  "updated_at": "2026-09-23T21:43:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1356-control-runtime-attestation-primitive"
 }
 ---
@@ -187,3 +187,10 @@ dispatch and do not expose caller-supplied launch authority.
 - 2026-09-23T21:40:01+00:00: Heartbeat by codex-asb-runtime-acquisition-successor-luna56.
 
 - 2026-09-23T21:42:16+00:00: Heartbeat by codex-asb-runtime-acquisition-successor-luna56.
+
+- 2026-09-23T21:43:28+00:00: Completed and integrated. PR #264 exact head 9e587593 merged at
+  a6f1915aa5117f0296b1b8f4b9c4692a956b3d86 after independent authority/privacy review, valid SSH
+  signature and DCO, and all required exact-head checks green. All seven post-merge workflows at
+  merge SHA are terminal SUCCESS: Rust verification 35923315447; Repository quality 35923315444;
+  Formal assurance 35923315385; Fault assurance 35923315358; Hosted portability/native 35923315486;
+  Emulated aarch64 35923315452; Huawei MIT headers 35923315448. No gate weakened.
