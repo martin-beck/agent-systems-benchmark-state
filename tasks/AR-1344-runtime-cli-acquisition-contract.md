@@ -9,7 +9,7 @@
     "AR-1342"
   ],
   "id": "AR-1344",
-  "next_action": "PR #260 remains at exact signed head 7b8d2966b8f4afb4a20f7be21eefdd01d47557b8. Exact-head CI is running: AWQ shadow evidence, headers, platform evidence, and retained faults pass; Rust, policy, emulated AArch64, formal/model, fuzz, and mutation checks remain pending. Do not merge until all required checks are green.",
+  "next_action": "PR #260 is blocked on required workspace coverage: CI cargo llvm-cov reports 88.00% lines versus 90% floor, with large new runtime files (launch_factory 78.24%, sandbox 70.70%, provider_egress 88.25%, live_namespace 87.86%). Do not weaken/exclude the floor; create or assign a coverage-repair AR before merge. Other exact-head checks continue independently.",
   "observed_branch": "feature/ar-1344-runtime-cli-acquisition-contract",
   "observed_dirty": 0,
   "observed_head": "7b8d2966b8f4afb4a20f7be21eefdd01d47557b8",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime-owned API and CLI integration needed for safe live-provider attempts.",
-  "task_revision": 188,
+  "task_revision": 189,
   "title": "Runtime-owned CLI live acquisition contract",
-  "updated_at": "2026-09-23T13:59:19+00:00",
+  "updated_at": "2026-09-23T13:59:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1344-runtime-cli-acquisition-contract"
 }
 ---
@@ -502,3 +502,9 @@ contract and its tests are merged and verified.
 
 - 2026-09-23T13:59:19+00:00: Recorded command exit 0; command argv SHA-256
   2decda0839eea5b4d0de896ce1dd7d4319b46ad1d5e5462ea07b2609df44c199.
+
+- 2026-09-23T13:59:46+00:00: Policy/coverage failure exact diagnostic: cargo llvm-cov --locked
+  --workspace --all-targets --fail-under-lines 90 returned TOTAL 87401 lines, 10488 missed, 88.00%;
+  launch_factory 78.24%, live_namespace 87.86%, live_relay 90.17%, provider_egress 88.25%, sandbox
+  70.70%. This exceeds AR-1344 focused test scope; no gate weakening or synthetic fixture forgery.
+  PR #260 remains unmerged.
