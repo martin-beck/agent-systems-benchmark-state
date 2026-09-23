@@ -13,16 +13,16 @@
   "next_action": "Promote now that provider contracts, the runtime egress backend, and attested handoff are complete; implement the factory without weakening offline/replay denial, then return to AR-1329.",
   "observed_branch": "feature/ar-1342-live-relay-factory-cli-integration",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "2774b1d648b5c3bbda0e290e158dc352502d3768",
   "owner": "codex-asb-ar1342-20260923",
   "plan": "../plans/AR-1342-live-relay-factory-cli-integration.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Create the runtime-owned relay factory and opaque launch context required for safe live CLI execution.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Runtime-owned live relay factory and CLI integration",
-  "updated_at": "2026-09-23T11:35:51+00:00",
+  "updated_at": "2026-09-23T11:36:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1342-live-relay-factory-cli-integration"
 }
 ---
