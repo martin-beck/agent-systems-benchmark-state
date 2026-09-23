@@ -9,7 +9,7 @@
     "AR-1342"
   ],
   "id": "AR-1344",
-  "next_action": "Workspace serialized cargo test --locked --workspace passes; workspace clippy --locked --workspace --all-targets -D warnings passes; fmt and focused gates pass. Exact clean signed head is 7b8d2966b8f4afb4a20f7be21eefdd01d47557b8. Proceed to independent review/PR publication, retaining capability-gated live sweep limitation.",
+  "next_action": "PR #260 is published from exact signed head 7b8d2966b8f4afb4a20f7be21eefdd01d47557b8. Monitor exact-head required CI and review; do not merge until all required checks are green. Capability-gated live sweep limitation remains explicit.",
   "observed_branch": "feature/ar-1344-runtime-cli-acquisition-contract",
   "observed_dirty": 0,
   "observed_head": "7b8d2966b8f4afb4a20f7be21eefdd01d47557b8",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime-owned API and CLI integration needed for safe live-provider attempts.",
-  "task_revision": 185,
+  "task_revision": 186,
   "title": "Runtime-owned CLI live acquisition contract",
-  "updated_at": "2026-09-23T13:53:21+00:00",
+  "updated_at": "2026-09-23T13:53:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1344-runtime-cli-acquisition-contract"
 }
 ---
@@ -490,3 +490,7 @@ contract and its tests are merged and verified.
 
 - 2026-09-23T13:53:21+00:00: Recorded command exit 0; command argv SHA-256
   b8503816b410f6b3836ae8d722a5df79f399310e19ba6420368aa37534a97827.
+
+- 2026-09-23T13:53:36+00:00: Published through handoffctl run: pushed
+  feature/ar-1344-runtime-cli-acquisition-contract and gh pr create returned
+  https://github.com/martin-beck/agent-systems-benchmark/pull/260. No merge performed.
