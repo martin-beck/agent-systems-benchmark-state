@@ -23,20 +23,21 @@ Generated from local Git and GitHub. Do not edit.
 | #235 | `dependabot/github_actions/taiki-e/install-action-2.87.12@de0353cce59e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.6 to 2.87.12 |
 | #236 | `dependabot/cargo/toml-1.1.6spec-1.1.0@9dc09c5208ab` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump toml from 0.8.23 to 1.1.6+spec-1.1.0 |
 | #237 | `dependabot/cargo/thiserror-2.0.20@83dba9288d9c` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump thiserror from 2.0.16 to 2.0.20 |
+| #261 | `feature/ar-1350-sandbox-credential-channel@709dae14b3dd` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, QUEUED:, IN_PROGRESS: | feat(runtime): add sandbox-owned credential channel |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 35899022339 | `709dae14b3dd` | pull_request | Repository quality | in_progress:- |
+| 35899022265 | `709dae14b3dd` | pull_request | Formal assurance | in_progress:- |
+| 35899022239 | `709dae14b3dd` | pull_request | Fault assurance | queued:- |
+| 35899022233 | `709dae14b3dd` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 35899022224 | `709dae14b3dd` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 35899022208 | `709dae14b3dd` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 35899022199 | `709dae14b3dd` | pull_request | Huawei MIT source headers | in_progress:- |
+| 35899022193 | `709dae14b3dd` | pull_request | Rust verification | in_progress:- |
 | 35879119685 | `a336d6744b1a` | push | Repository quality | completed:success |
 | 35879119639 | `a336d6744b1a` | push | Huawei MIT source headers | completed:success |
 | 35879119638 | `a336d6744b1a` | push | Hosted portability and native qualification | completed:success |
 | 35879119631 | `a336d6744b1a` | push | Fault assurance | completed:success |
-| 35879119619 | `a336d6744b1a` | push | Rust verification | completed:success |
-| 35879119606 | `a336d6744b1a` | push | Formal assurance | completed:success |
-| 35879119496 | `a336d6744b1a` | push | Emulated aarch64 portability | completed:success |
-| 35876973804 | `33d3153013d4` | pull_request | Rust verification | completed:success |
-| 35876973790 | `33d3153013d4` | pull_request | Repository quality | completed:success |
-| 35876973777 | `33d3153013d4` | pull_request | Huawei MIT source headers | completed:success |
-| 35876973769 | `33d3153013d4` | pull_request | Emulated aarch64 portability | completed:success |
-| 35876973739 | `33d3153013d4` | pull_request | Hosted portability and native qualification | completed:success |
