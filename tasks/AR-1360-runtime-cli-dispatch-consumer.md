@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1360-runtime-cli-dispatch-consumer.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Connect authenticated runtime enrollment receipts to asb run and sweep without exposing authority.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Runtime CLI dispatch consumer",
-  "updated_at": "2026-09-24T00:00:00+00:00",
+  "updated_at": "2026-09-23T22:58:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1360-runtime-cli-dispatch-consumer"
 }
 ---
@@ -30,3 +30,6 @@ behavior, or let CLI arguments synthesize provider authority.
 - 2026-09-24T00:00:00+00:00: Created after AR-1359 merged the authenticated
   control/runtime bridge and all post-merge workflows passed. This task owns the
   remaining asb run/sweep dispatch consumer only.
+
+- 2026-09-23T22:58:10+00:00: Dependency AR-1359 is done with merged bridge and all seven post-merge
+  workflows green; promote CLI dispatch consumer.
