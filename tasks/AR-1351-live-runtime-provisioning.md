@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the private host/runtime provisioning seam for live acquisition.",
-  "task_revision": 72,
+  "task_revision": 73,
   "title": "Runtime-owned live provisioning",
-  "updated_at": "2026-09-23T19:46:04+00:00",
+  "updated_at": "2026-09-23T19:46:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1351-live-runtime-provisioning"
 }
 ---
@@ -234,3 +234,6 @@ runtime boundary; AR-1349 remains fail-closed until it is merged and verified.
   90.57% line coverage (previous PR gate was 89.95%, floor 90.0%). cargo fmt --check, cargo check -p
   asb-runtime, workspace clippy -D warnings, and cargo test --workspace all passed. Commit b710260
   is SSH-signed and DCO-signed; tree clean.
+
+- 2026-09-23T19:46:11+00:00: Recorded command exit 0; command argv SHA-256
+  0b7b27e744db59f7dcff17ec1f3895c222f4d2deadf7a0ee389c80f6b34402e4.
