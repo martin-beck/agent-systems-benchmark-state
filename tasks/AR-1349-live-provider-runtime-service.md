@@ -12,7 +12,7 @@
     "AR-1350"
   ],
   "id": "AR-1349",
-  "next_action": "Audit and design the missing private child credential channel. Existing runtime has no pass-fd/inner-env primitive: memfd use is confined to direct helper spawn, while bubblewrap --clearenv discards outer env and argv injection is forbidden. Do not add unsafe CLI wiring; record a successor repair if no bounded runtime helper can be implemented.",
+  "next_action": "AR-1350 is now an explicit prerequisite. Read-only review found its uncommitted channel compiles but is not publishable: public trait exposes pub(crate) channel, mounted file metadata is not target env injection, no visible ResolvedCredential digest binding, and caller-owned input bytes are not erased. Keep AR-1329 fail-closed until AR-1350 repairs these findings and passes clippy/full gates.",
   "observed_branch": "feature/ar-1349-live-provider-runtime-service",
   "observed_dirty": 0,
   "observed_head": "359f15af52aa2b0b31bb091b945e7de933960006",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 157,
+  "task_revision": 158,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T17:31:51+00:00",
+  "updated_at": "2026-09-23T17:32:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
@@ -477,3 +477,7 @@ qualified.
 
 - 2026-09-23T17:31:51+00:00: Recorded command exit 0; command argv SHA-256
   23b2cad55d063096f1db1ccc3f3d836e4b2a7b710b948912fa96bcb9825162c3.
+
+- 2026-09-23T17:32:12+00:00: AR-1350 dependency added to AR-1349. Read-only cargo check passed on
+  its worktree; clippy attempt was blocked by shared coordinator LOCK_TIMEOUT after 10 seconds. No
+  AR-1350 files, claim, or worktree mutations were performed by this worker.
