@@ -12,17 +12,17 @@
   "id": "AR-1351",
   "next_action": "Review the private provisioning diff and add the positive synthetic relay lifecycle test using bind_runtime; then run workspace clippy/full tests. Constructor remains crate-private; no CLI wiring or AR-1329 enablement until exact authority/teardown evidence passes.",
   "observed_branch": "feature/ar-1351-live-runtime-provisioning",
-  "observed_dirty": 2,
-  "observed_head": "d069f3eeacae914bec5d33dfbb575cd7e4281b2c",
+  "observed_dirty": 0,
+  "observed_head": "de3fd42db25510d89aeef4d62a934965a3de40fa",
   "owner": "codex-asb-runtime-acquisition-successor-luna56",
   "plan": "../plans/AR-1351-live-runtime-provisioning.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the private host/runtime provisioning seam for live acquisition.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Runtime-owned live provisioning",
-  "updated_at": "2026-09-23T19:27:54+00:00",
+  "updated_at": "2026-09-23T19:28:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1351-live-runtime-provisioning"
 }
 ---
