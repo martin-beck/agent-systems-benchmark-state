@@ -13,17 +13,17 @@
   "id": "AR-1349",
   "next_action": "Attested composition slice committed as ffecd74c91bedb4cc946797b19626937ddd7a423: LiveProviderRuntimeAuthority groups runtime-issued token, denied launch input, benchmark lease, pinned backend, observed namespace and relay; compose_attempt delegates only through LiveLaunchFactory::acquire and returns opaque LiveProviderAttempt. Focused live_service 2/2, full runtime 85 passed/1 ignored, clippy and fmt pass. Next: replace caller-supplied authority bundle with production-owned gate/namespace/relay acquisition and wire the final opaque attempt into asb run/sweep; preserve AR-1329 fail-closed.",
   "observed_branch": "feature/ar-1349-live-provider-runtime-service",
-  "observed_dirty": 1,
-  "observed_head": "ffecd74c91bedb4cc946797b19626937ddd7a423",
+  "observed_dirty": 0,
+  "observed_head": "97870c00fbb8444daf8b581e2b141c4b479b719b",
   "owner": "codex-asb-ar1329-live-cli-luna56",
   "plan": "../plans/AR-1349-live-provider-runtime-service.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 61,
+  "task_revision": 62,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T16:47:56+00:00",
+  "updated_at": "2026-09-23T16:48:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
