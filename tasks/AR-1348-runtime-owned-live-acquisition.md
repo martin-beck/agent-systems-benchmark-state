@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the runtime-owned supervisor that acquires every live-provider authority and tears it down safely.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Runtime-owned live acquisition service",
-  "updated_at": "2026-09-23T16:03:20+00:00",
+  "updated_at": "2026-09-23T16:03:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1348-runtime-owned-live-acquisition"
 }
 ---
@@ -91,3 +91,6 @@ this service owns acquisition instead of accepting caller-built launch authority
 - 2026-09-23T16:03:20+00:00: Signed+DCO commit 46d6a2e adds CpuSet-bound lease ownership to
   LiveAcquisitionRequest. Focused live_supervisor tests pass 2/2, including duplicate reservation
   rejection and release. fmt passed. No CLI wiring or direct egress; NetworkPolicy::Deny preserved.
+
+- 2026-09-23T16:03:58+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
