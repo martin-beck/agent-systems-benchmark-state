@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1362-runtime-authority-enrollment-store",
   "checkpoint_commit": "7bf91f5e846b5a7af6a1297baf9553c29b401fa9",
-  "claim_expires": "2026-09-24T01:26:19+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1359"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1362-runtime-authority-enrollment-store",
   "observed_dirty": 0,
   "observed_head": "7bf91f5e846b5a7af6a1297baf9553c29b401fa9",
-  "owner": "codex-asb-runtime-attested-enrollment-luna56",
+  "owner": "",
   "plan": "../plans/AR-1362-runtime-authority-enrollment-store.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Persist authenticated runtime authority enrollment required for receipt issuance without exposing secrets.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Runtime authority enrollment store",
-  "updated_at": "2026-09-23T23:26:19+00:00",
+  "updated_at": "2026-09-23T23:27:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1362-runtime-authority-enrollment-store"
 }
 ---
@@ -84,3 +84,11 @@ authority from CLI/config inputs.
 - 2026-09-23T23:24:11+00:00: Heartbeat by codex-asb-runtime-attested-enrollment-luna56.
 
 - 2026-09-23T23:26:19+00:00: Heartbeat by codex-asb-runtime-attested-enrollment-luna56.
+
+- 2026-09-23T23:27:33+00:00: Completed AR-1362: signed+DCO commit 7bf91f5 added
+  RuntimeAuthorityEnrollmentV1 with strict digest-only, deny-unknown-fields,
+  chain/generation/validity/public-target validation and positive/negative tests. PR #267 passed all
+  12 exact-head checks, merged as e9d4d3d1c6a4d67d0ce0e49fa8eaf696561fe45e. All seven post-merge
+  workflows passed: 35933025054 headers, 35933025064 hosted portability, 35933025056 repository
+  quality, 35933025015 emulated AArch64, 35933025089 formal, 35933025029 Rust, 35933025074 fault
+  assurance. Lease cleared; resume blocked AR-1361/1360 only after this durable evidence.
