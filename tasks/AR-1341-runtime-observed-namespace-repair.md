@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair AR-1340 so live relay capabilities require runtime-observed child namespace agreement.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Runtime-observed namespace attestation repair",
-  "updated_at": "2026-09-23T10:56:23+00:00",
+  "updated_at": "2026-09-23T10:56:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1341-runtime-observed-namespace-repair"
 }
 ---
@@ -121,3 +121,6 @@ this task.
   gap: the current API binds the caller/current namespace into the handoff before bwrap creates the
   child namespace, so a valid child-bound capability still needs late binding through the gate
   before AR-1340 can release.
+
+- 2026-09-23T10:56:26+00:00: Recorded command exit 101; command argv SHA-256
+  154634c1a29a70e4c47120f819442fb934a0db36230e3d193c4fdce50a0d1da0.
