@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1353-runtime-enrollment-cli-dispatch",
   "checkpoint_commit": "d83a85926f2c4c42317617f4f6b7b3c9a3195874",
-  "claim_expires": "2026-09-23T22:47:51+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1352"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1353-runtime-enrollment-cli-dispatch",
   "observed_dirty": 0,
   "observed_head": "d83a85926f2c4c42317617f4f6b7b3c9a3195874",
-  "owner": "codex-asb-ar1329-live-cli-luna56",
+  "owner": "",
   "plan": "../plans/AR-1353-runtime-enrollment-cli-dispatch.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "superseded",
   "summary": "Add runtime-owned enrollment and opaque live CLI dispatch.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Runtime enrollment and CLI dispatch",
-  "updated_at": "2026-09-23T20:52:56+00:00",
+  "updated_at": "2026-09-23T20:53:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1353-runtime-enrollment-cli-dispatch"
 }
 ---
@@ -59,3 +59,6 @@ AR-1329 stays fail-closed until this seam is merged.
 
 - 2026-09-23T20:52:56+00:00: Recorded command exit 0; command argv SHA-256
   00f92e563be4ae2ec0a94b2819759b596eeb35083e15fe9ae043ae6391fb8862.
+
+- 2026-09-23T20:53:19+00:00: Superseded by AR-1354, which owns the missing config-backed enrollment
+  implementation. Preserve signed opaque transport commit d83a859 and AR-1329 fail-closed status.
