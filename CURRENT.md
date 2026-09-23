@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1329](tasks/AR-1329-live-provider-run-execution.md): Live-provider run execution for real agents | Execute real agents against the selected provider through asb run and sweep with credential-free resolution. | Consume the AR-1340 attested namespace-bound relay handoff; then integrate live run/sweep and complete denial/live evidence without weakening NetworkPolicy::Deny. | codex-asb-ar1329-20260923 |
+| P1 | [AR-1329](tasks/AR-1329-live-provider-run-execution.md): Live-provider run execution for real agents | Execute real agents against the selected provider through asb run and sweep with credential-free resolution. | Provide a runtime-owned live relay factory/launch context to asb-cli: existing AR-1340 APIs consume only a pre-issued LiveProviderNamespaceHandoff and SandboxBackend, while CLI has no relay socket/backend acquisition; keep live spawn fail-closed until that context is supplied, then wire run/sweep and denial evidence. | codex-asb-ar1329-20260923 |
 
 ## Open
 

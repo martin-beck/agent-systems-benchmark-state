@@ -9,7 +9,7 @@
     "AR-1340"
   ],
   "id": "AR-1329",
-  "next_action": "Consume the AR-1340 attested namespace-bound relay handoff; then integrate live run/sweep and complete denial/live evidence without weakening NetworkPolicy::Deny.",
+  "next_action": "Provide a runtime-owned live relay factory/launch context to asb-cli: existing AR-1340 APIs consume only a pre-issued LiveProviderNamespaceHandoff and SandboxBackend, while CLI has no relay socket/backend acquisition; keep live spawn fail-closed until that context is supplied, then wire run/sweep and denial evidence.",
   "observed_branch": "feature/ar-1329-live-provider-run-execution",
   "observed_dirty": 0,
   "observed_head": "2774b1d648b5c3bbda0e290e158dc352502d3768",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute real agents against the selected provider through asb run and sweep with credential-free resolution.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Live-provider run execution for real agents",
-  "updated_at": "2026-09-23T11:29:41+00:00",
+  "updated_at": "2026-09-23T11:30:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1329-live-provider-run-execution"
 }
 ---
@@ -79,3 +79,11 @@ the digest-pinned mode remain default and never touch the network.
   aa0321b8e6974c0520a593ecf349e83213fa5d83db2a7c8714bc93aa41a96aca.
 
 - 2026-09-23T11:29:41+00:00: Heartbeat by codex-asb-ar1329-20260923.
+
+- 2026-09-23T11:30:07+00:00: Rebased isolated worktree onto protected main
+  2774b1d648b5c3bbda0e290e158dc352502d3768 using handoffctl run. Focused cargo test -p asb-cli
+  live_provider_requires_explicit_selection_before_any_run_effects passed (0 tests due filter;
+  command exit 0). Integration audit: CLI spawn_verified_agent deliberately returns live provider
+  runtime boundary unavailable; AR-1340 runtime API requires pre-issued namespace-bound handoff and
+  SandboxBackend plus an existing validated relay socket, but no sanctioned CLI relay/backend
+  acquisition exists. Direct re-enable would bypass NetworkPolicy::Deny, so no unsafe mutation made.
