@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1329](tasks/AR-1329-live-provider-run-execution.md): Live-provider run execution for real agents | Execute real agents against the selected provider through asb run and sweep with credential-free resolution. | Replace the digest-pinned batch-stdio-v1 execution stub in asb run/sweep with real agent execution through the selected provider, keeping credential-free environment resolution, egress enforcement and explicit opt-in live runs. | codex-asb-ar1329-20260923 |
+| P1 | [AR-1329](tasks/AR-1329-live-provider-run-execution.md): Live-provider run execution for real agents | Execute real agents against the selected provider through asb run and sweep with credential-free resolution. | Route live-provider launches through the existing authenticated declared-egress runtime boundary; current commit adds explicit --live-provider gating and credential resolution but does not yet qualify network enforcement. | codex-asb-ar1329-20260923 |
 
 ## Open
 
