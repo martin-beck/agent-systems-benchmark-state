@@ -12,7 +12,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- | --- |
 | #119 | `feature/native-capacity-controller@e2e3574ed2bb` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(capacity): add bounded native lifecycle controller |
 | #125 | `fix/control-state-lock-test-isolation@8b0f9fd07d5d` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(cli): isolate control state roots |
-| #147 | `dependabot/cargo/sha2-0.11.0@a6ef99b07d15` | `main` | UNSTABLE | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | chore(deps): Bump sha2 from 0.10.9 to 0.11.0 |
+| #147 | `dependabot/cargo/sha2-0.11.0@a6ef99b07d15` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, IN_PROGRESS:, COMPLETED:FAILURE, IN_PROGRESS: | chore(deps): Bump sha2 from 0.10.9 to 0.11.0 |
 | #148 | `dependabot/github_actions/actions/upload-artifact-7.0.1@7d45f4cadff2` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump actions/upload-artifact from 4.6.2 to 7.0.1 |
 | #149 | `dependabot/cargo/url-2.5.8@a24f049e2790` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | build(deps): Bump url from 2.5.7 to 2.5.8 |
 | #150 | `dependabot/cargo/tempfile-3.27.0@d4eb5ee4a62e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump tempfile from 3.22.0 to 3.27.0 |
@@ -29,12 +29,12 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 35905431904 | `a6ef99b07d15` | pull_request | Huawei MIT source headers | completed:success |
-| 35905431665 | `a6ef99b07d15` | pull_request | Repository quality | in_progress:- |
+| 35905431665 | `a6ef99b07d15` | pull_request | Repository quality | completed:failure |
 | 35905431660 | `a6ef99b07d15` | pull_request | Formal assurance | in_progress:- |
-| 35905431646 | `a6ef99b07d15` | pull_request | Agent Workflow Quality shadow | queued:- |
-| 35905431632 | `a6ef99b07d15` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 35905431646 | `a6ef99b07d15` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 35905431632 | `a6ef99b07d15` | pull_request | Hosted portability and native qualification | completed:failure |
 | 35905431629 | `a6ef99b07d15` | pull_request | Fault assurance | in_progress:- |
-| 35905431592 | `a6ef99b07d15` | pull_request | Rust verification | queued:- |
+| 35905431592 | `a6ef99b07d15` | pull_request | Rust verification | in_progress:- |
 | 35905431577 | `a6ef99b07d15` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 35905311859 | `4d8f0c425a8c` | dynamic | Dependabot Updates | completed:success |
 | 35905186652 | `4d8f0c425a8c` | push | Repository quality | in_progress:- |
