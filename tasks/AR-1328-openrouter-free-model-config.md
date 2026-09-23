@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist the per-user OpenRouter free-model configuration and credential-free key enrollment.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "OpenRouter free-model user configuration and key enrollment",
-  "updated_at": "2026-09-23T07:38:47+00:00",
+  "updated_at": "2026-09-23T07:39:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1328-openrouter-free-model-config"
 }
 ---
@@ -77,3 +77,6 @@ configurations fail closed.
   env locator digest, and active generation; no API key material. provider-plan --use-config --agent
   codex passed with exact catalog digest and OpenRouter model. Remaining AR acceptance gap is
   --use-config wiring for plan/run/sweep (currently provider-plan only), then full locked gates/PR.
+
+- 2026-09-23T07:39:26+00:00: Recorded command exit 1; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
