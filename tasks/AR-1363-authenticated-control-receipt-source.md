@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1363-authenticated-control-receipt-source.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Deliver authenticated runtime authority receipts through the versioned control boundary without exposing secrets or caller authority.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Authenticated control receipt source",
-  "updated_at": "2026-09-24T00:00:00+00:00",
+  "updated_at": "2026-09-23T23:28:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1363-authenticated-control-receipt-source"
 }
 ---
@@ -29,3 +29,6 @@ Do not touch asb-tui, reopen stale dependencies, or synthesize authority in CLI.
 
 - 2026-09-24T00:00:00+00:00: Created after AR-1362 delivered the durable
   digest-only runtime authority enrollment contract and all post-merge gates.
+
+- 2026-09-23T23:28:50+00:00: Promote receipt source after AR-1362 completed durable authority
+  enrollment and all post-merge gates.
