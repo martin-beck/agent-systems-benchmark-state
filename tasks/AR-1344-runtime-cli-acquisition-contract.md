@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime-owned API and CLI integration needed for safe live-provider attempts.",
-  "task_revision": 219,
+  "task_revision": 220,
   "title": "Runtime-owned CLI live acquisition contract",
-  "updated_at": "2026-09-23T14:16:38+00:00",
+  "updated_at": "2026-09-23T14:17:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1344-runtime-cli-acquisition-contract"
 }
 ---
@@ -586,3 +586,6 @@ contract and its tests are merged and verified.
   --fail-under-lines 90 completed tests and reports TOTAL 87486 lines, 10057 missed, 88.50%; command
   fails floor as expected. New focused launch_factory suite: 11 passed, 1 capability-gated ignored.
   Branch clean at signed 00ec71b.
+
+- 2026-09-23T14:17:45+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
