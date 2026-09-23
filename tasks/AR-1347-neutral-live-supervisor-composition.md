@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1347-neutral-live-supervisor-composition",
-  "checkpoint_commit": "625a250b527b51994be7653e24c3825512e5f449",
+  "checkpoint_commit": "65af62331d0dffe3e282f9e074b6f59b375a19da",
   "claim_expires": "2026-09-23T17:37:59+00:00",
   "depends_on": [
     "AR-1327",
@@ -10,7 +10,7 @@
     "AR-1340"
   ],
   "id": "AR-1347",
-  "next_action": "Opaque CredentialInjection trait is implemented in asb-runtime and SandboxBackend exposes spawn_launch_with_credential without exposing bytes or changing NetworkPolicy::Deny. Add positive/negative injection tests and compose an asb-agents supervisor implementation; then wire runtime-owned live acquisition. AR-1329 remains fail-closed.",
+  "next_action": "Neutral CredentialInjection boundary and positive/negative runtime tests are merged locally. Next implement asb-agents supervisor composition against this trait and runtime-owned acquisition; keep AR-1329 fail-closed until concrete backend/lease/target/namespace/token/relay lifecycle is wired and verified.",
   "observed_branch": "feature/ar-1347-neutral-live-supervisor-composition",
   "observed_dirty": 1,
   "observed_head": "625a250b527b51994be7653e24c3825512e5f449",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the dependency-safe opaque supervisor contract needed for live-provider acquisition.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Neutral live-supervisor composition contract",
-  "updated_at": "2026-09-23T15:44:09+00:00",
+  "updated_at": "2026-09-23T15:44:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1347-neutral-live-supervisor-composition"
 }
 ---
@@ -83,3 +83,9 @@ or introduce a cyclic dependency.
 
 - 2026-09-23T15:44:09+00:00: Recorded command exit 0; command argv SHA-256
   f71975b0e0b00a780fed3410ff70f306b8004ce22f8d1aecc438b8adc79fe8e9.
+
+- 2026-09-23T15:44:48+00:00: Signed+DCO commits 625a250 and 65af623 add CredentialInjection trait,
+  SandboxBackend::spawn_launch_with_credential, and positive/negative bounded injector tests. fmt,
+  cargo check --locked --workspace, clippy --locked -p asb-runtime --all-targets -D warnings, and
+  full asb-runtime all-targets pass: 85 passed, 1 ignored. Full diff reviewed; no secret bytes or
+  NetworkPolicy changes. AR-1329 remains fail-closed.
