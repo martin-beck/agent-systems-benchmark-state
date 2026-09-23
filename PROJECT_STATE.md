@@ -25,21 +25,22 @@ Generated from local Git and GitHub. Do not edit.
 | #237 | `dependabot/cargo/thiserror-2.0.20@83dba9288d9c` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump thiserror from 2.0.16 to 2.0.20 |
 | #250 | `feature/ar-1326-openrouter-catalog-selection@0c031b985bfc` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): select OpenRouter through provider catalog and plan (AR-1326) |
 | #251 | `feature/ar-1327-openrouter-adapter-parity@5006bcf43fed` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(agents): OpenRouter adapter projections and parity conformance (AR-1327) |
-| #252 | `repair/ar-1337-openrouter-merge-tree-admission@8dc07a0f86a1` | `main` | UNSTABLE | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | test(integration): reject stale protected target |
+| #252 | `repair/ar-1337-openrouter-merge-tree-admission@8dc07a0f86a1` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(integration): reject stale protected target |
+| #253 | `feature/ar-1323-auth-timeout@eeeb05bd30b9` | `main` | UNSTABLE | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | fix(auth): honor negotiated control timeout |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35826805382 | `8dc07a0f86a1` | pull_request | Agent Workflow Quality shadow | in_progress:- |
-| 35826805355 | `8dc07a0f86a1` | pull_request | Huawei MIT source headers | queued:- |
-| 35826805349 | `8dc07a0f86a1` | pull_request | Fault assurance | in_progress:- |
-| 35826805335 | `8dc07a0f86a1` | pull_request | Hosted portability and native qualification | in_progress:- |
-| 35826805328 | `8dc07a0f86a1` | pull_request | Rust verification | in_progress:- |
-| 35826805304 | `8dc07a0f86a1` | pull_request | Formal assurance | in_progress:- |
-| 35826805275 | `8dc07a0f86a1` | pull_request | Repository quality | in_progress:- |
-| 35826805251 | `8dc07a0f86a1` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 35825987348 | `56c882a06337` | push | Huawei MIT source headers | completed:success |
-| 35825987339 | `56c882a06337` | push | Repository quality | completed:failure |
-| 35825987140 | `56c882a06337` | push | Formal assurance | completed:success |
-| 35825986988 | `56c882a06337` | push | Hosted portability and native qualification | completed:success |
+| 35827401310 | `eeeb05bd30b9` | pull_request | Huawei MIT source headers | queued:- |
+| 35827401276 | `eeeb05bd30b9` | pull_request | Formal assurance | in_progress:- |
+| 35827401244 | `eeeb05bd30b9` | pull_request | Rust verification | in_progress:- |
+| 35827401242 | `eeeb05bd30b9` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 35827401239 | `eeeb05bd30b9` | pull_request | Fault assurance | in_progress:- |
+| 35827401237 | `eeeb05bd30b9` | pull_request | Repository quality | in_progress:- |
+| 35827401224 | `eeeb05bd30b9` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 35827401214 | `eeeb05bd30b9` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 35826805382 | `8dc07a0f86a1` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 35826805355 | `8dc07a0f86a1` | pull_request | Huawei MIT source headers | completed:success |
+| 35826805349 | `8dc07a0f86a1` | pull_request | Fault assurance | completed:success |
+| 35826805335 | `8dc07a0f86a1` | pull_request | Hosted portability and native qualification | completed:success |
