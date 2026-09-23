@@ -9,17 +9,17 @@
   "id": "AR-1359",
   "next_action": "Promote after AR-1357 is done, then implement the runtime-owned asb-control enrollment bridge needed by AR-1358.",
   "observed_branch": "feature/ar-1359-runtime-control-bridge",
-  "observed_dirty": 2,
-  "observed_head": "7862e3bb90a777e86e30d23b6af9639935671efe",
+  "observed_dirty": 0,
+  "observed_head": "f5119103248ff448bea4ab0bfc4581ed43743d7d",
   "owner": "codex-asb-runtime-attested-enrollment-luna56",
   "plan": "../plans/AR-1359-runtime-control-bridge.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bridge authenticated control enrollment into runtime-owned opaque live authority.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Runtime/control enrollment bridge",
-  "updated_at": "2026-09-23T22:35:16+00:00",
+  "updated_at": "2026-09-23T22:35:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1359-runtime-control-bridge"
 }
 ---
