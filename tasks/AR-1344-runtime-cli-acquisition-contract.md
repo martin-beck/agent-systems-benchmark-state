@@ -11,7 +11,7 @@
   "id": "AR-1344",
   "next_action": "Active coverage repair checkpoint at signed head 2e1841c. Hosted policy reports 88.02% (10,472 missed / 87,432) versus 90% floor. Added launch_factory replay operation/accessor and backend-retention tests; continue targeted real branch tests, then rerun llvm-cov and push exact head. No exclusions or fake live capabilities.",
   "observed_branch": "feature/ar-1344-runtime-cli-acquisition-contract",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "2e1841c56980ac02613cdced22a3762049d388fc",
   "owner": "codex-asb-ar1344-factory-refactor-20260923",
   "plan": "../plans/AR-1344-runtime-cli-acquisition-contract.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime-owned API and CLI integration needed for safe live-provider attempts.",
-  "task_revision": 212,
+  "task_revision": 213,
   "title": "Runtime-owned CLI live acquisition contract",
-  "updated_at": "2026-09-23T14:14:23+00:00",
+  "updated_at": "2026-09-23T14:14:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1344-runtime-cli-acquisition-contract"
 }
 ---
