@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1350-sandbox-credential-channel",
-  "checkpoint_commit": "e7176fb499134286ce661f42338060eb80edb875",
+  "checkpoint_commit": "709dae14b3ddecc143af4bcb722c3c4250412225",
   "claim_expires": "2026-09-23T19:47:24+00:00",
   "depends_on": [
     "AR-1328",
@@ -10,7 +10,7 @@
     "AR-1347"
   ],
   "id": "AR-1350",
-  "next_action": "Clean-main focused test exit 101 was a neutral API dead-code diagnostic, not a runtime test failure: SandboxCredentialBinding::new/reference_sha256/target, SandboxCredentialChannel::new, and spawn_launch_with_credential were unreachable under -D dead_code because the binding had no production caller. Targeted repair makes the binding metadata constructor public (it grants no launch authority), exposes the public backend launch method, retains opaque private channel fields, and keeps credential delivery only through the runtime-created binding. Rerun focused sandbox_credential tests now; do not restore live_service or AR-1349 files.",
+  "next_action": "Clean-main independent AR-1350 candidate is 709dae14b3ddecc143af4bcb722c3c4250412225, based on protected origin/main a336d6744b1a82f36a706ec606b847c92d49cfd3. Diff contains only neutral sealed-FD credential channel/runtime files; no live_service or AR-1349 files. SandboxCredentialBinding::new is crate-private and public launch revalidates the runtime-owned binding; secrets are delivered through bubblewrap --args memfd, with target binding, input erasure, cleanup, and positive/negative tests. Focused tests, full locked workspace tests, fmt check, clippy -D warnings, rustdoc -D warnings, and release build all passed. Next: publish PR from clean exact head through handoffctl, wait for exact-head CI and independent review, then merge and post-merge verify; AR-1349 remains downstream.",
   "observed_branch": "feature/ar-1350-sandbox-credential-channel",
   "observed_dirty": 0,
   "observed_head": "709dae14b3ddecc143af4bcb722c3c4250412225",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement a sandbox-owned sealed-FD credential channel for live provider children.",
-  "task_revision": 73,
+  "task_revision": 74,
   "title": "Sandbox-owned credential channel",
-  "updated_at": "2026-09-23T17:54:58+00:00",
+  "updated_at": "2026-09-23T17:55:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1350-sandbox-credential-channel"
 }
 ---
@@ -221,3 +221,8 @@ private runtime channel before AR-1349 can safely acquire attempts or wire
 
 - 2026-09-23T17:54:47+00:00: Recorded command exit 0; command argv SHA-256
   8dc7c36eab6529c6ea46d42671987806358c8f768199aeb04a7506bfc648d20e.
+
+- 2026-09-23T17:55:38+00:00: Final clean-main repair complete: focused sandbox_credential 2 passed;
+  full locked workspace test passed; fmt, clippy, rustdoc, and release build passed. Independent
+  review confirmed no live_service files, crate-private binding constructor, SSH signature and DCO
+  on 709dae1. Old stacked e7176fb remains archived and must not be published.
