@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1348](tasks/AR-1348-runtime-owned-live-acquisition.md): Runtime-owned live acquisition service | Provide the runtime-owned supervisor that acquires every live-provider authority and tears it down safely. | Attempt lifecycle fence committed as 85d2153: one-shot consume, idempotent revoke, duplicate/revoked rejection. Next bind actual LiveProviderNamespaceHandoff/LiveProviderRelay/RuntimeLaunchToken through a runtime-owned constructor; add expiry/relay teardown negatives. AR-1329 remains fail-closed. | codex-asb-ar1329-live-cli-luna56 |
+| P1 | [AR-1348](tasks/AR-1348-runtime-owned-live-acquisition.md): Runtime-owned live acquisition service | Provide the runtime-owned supervisor that acquires every live-provider authority and tears it down safely. | Relay binding slice committed as ecc2d4c548b975d829d4f27750321f0cb64f75c2 with duplicate bind and revoke teardown coverage. Focused live_supervisor 5/5; full asb-runtime all-targets 88 passed, 1 ignored; workspace check, clippy, fmt, and workspace tests pass. Next: independently review full diff and determine whether remaining runtime-owned constructor/CLI acquisition primitives are implementable; keep AR-1329 fail-closed. | codex-asb-ar1329-live-cli-luna56 |
 
 ## Open
 

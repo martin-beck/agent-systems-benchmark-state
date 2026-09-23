@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1348-runtime-owned-live-acquisition",
-  "checkpoint_commit": "85d2153c4d0a03e9423f02388cd7ebc709de209c",
+  "checkpoint_commit": "ecc2d4c548b975d829d4f27750321f0cb64f75c2",
   "claim_expires": "2026-09-23T17:59:20+00:00",
   "depends_on": [
     "AR-1327",
@@ -10,7 +10,7 @@
     "AR-1340"
   ],
   "id": "AR-1348",
-  "next_action": "Attempt lifecycle fence committed as 85d2153: one-shot consume, idempotent revoke, duplicate/revoked rejection. Next bind actual LiveProviderNamespaceHandoff/LiveProviderRelay/RuntimeLaunchToken through a runtime-owned constructor; add expiry/relay teardown negatives. AR-1329 remains fail-closed.",
+  "next_action": "Relay binding slice committed as ecc2d4c548b975d829d4f27750321f0cb64f75c2 with duplicate bind and revoke teardown coverage. Focused live_supervisor 5/5; full asb-runtime all-targets 88 passed, 1 ignored; workspace check, clippy, fmt, and workspace tests pass. Next: independently review full diff and determine whether remaining runtime-owned constructor/CLI acquisition primitives are implementable; keep AR-1329 fail-closed.",
   "observed_branch": "feature/ar-1348-runtime-owned-live-acquisition",
   "observed_dirty": 0,
   "observed_head": "ecc2d4c548b975d829d4f27750321f0cb64f75c2",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the runtime-owned supervisor that acquires every live-provider authority and tears it down safely.",
-  "task_revision": 70,
+  "task_revision": 71,
   "title": "Runtime-owned live acquisition service",
-  "updated_at": "2026-09-23T16:23:58+00:00",
+  "updated_at": "2026-09-23T16:24:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1348-runtime-owned-live-acquisition"
 }
 ---
@@ -223,3 +223,10 @@ this service owns acquisition instead of accepting caller-built launch authority
 
 - 2026-09-23T16:23:58+00:00: Recorded command exit 0; command argv SHA-256
   0a80e5fef7a7fd1f9619dda5154f8e236f7046b2d753e8434f5dc84d2c1342d8.
+
+- 2026-09-23T16:24:25+00:00: Exact failures repaired: focused test initially failed
+  AttemptUnavailable because the handoff relay socket had been removed before
+  RuntimeLiveBinding::bind; after retaining the validation socket, the second relay fixture failed
+  with AddrInUse because its placeholder socket was not removed before LiveProviderRelay::bind. Both
+  fixture defects were repaired. Handoff exit-2 ff9297 was caused by apply_patch receiving no stdin
+  through handoffctl (usage diagnostic), not a product failure.
