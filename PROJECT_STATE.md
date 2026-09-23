@@ -31,7 +31,7 @@ Generated from local Git and GitHub. Do not edit.
 | 35912557735 | `c560cac1e3a6` | push | Hosted portability and native qualification | completed:success |
 | 35912557690 | `c560cac1e3a6` | push | Huawei MIT source headers | completed:success |
 | 35912557652 | `c560cac1e3a6` | push | Emulated aarch64 portability | in_progress:- |
-| 35912557651 | `c560cac1e3a6` | push | Rust verification | in_progress:- |
+| 35912557651 | `c560cac1e3a6` | push | Rust verification | completed:success |
 | 35912557603 | `c560cac1e3a6` | push | Fault assurance | completed:success |
 | 35912557591 | `c560cac1e3a6` | push | Repository quality | in_progress:- |
 | 35912557555 | `c560cac1e3a6` | push | Formal assurance | completed:success |
