@@ -13,16 +13,16 @@
   "next_action": "Namespace observation slice committed as 6940184 with missing-PID and runtime-PID tests. Next bind runtime-owned relay/token lifecycle using existing LiveProviderNamespaceHandoff/LiveProviderRelay/LiveLaunchFactory contracts; add expiry/revocation/duplicate negatives and teardown. AR-1329 remains fail-closed.",
   "observed_branch": "feature/ar-1348-runtime-owned-live-acquisition",
   "observed_dirty": 1,
-  "observed_head": "831a5d53f34fb92d60236340b9ff0c62900cf76d",
+  "observed_head": "6940184750376e2e374477b50741e7634d013516",
   "owner": "codex-asb-ar1329-live-cli-luna56",
   "plan": "../plans/AR-1348-runtime-owned-live-acquisition.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the runtime-owned supervisor that acquires every live-provider authority and tears it down safely.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Runtime-owned live acquisition service",
-  "updated_at": "2026-09-23T16:07:08+00:00",
+  "updated_at": "2026-09-23T16:07:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1348-runtime-owned-live-acquisition"
 }
 ---
