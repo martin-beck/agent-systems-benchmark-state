@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the private host/runtime provisioning seam for live acquisition.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Runtime-owned live provisioning",
-  "updated_at": "2026-09-23T19:54:55+00:00",
+  "updated_at": "2026-09-23T19:55:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1351-live-runtime-provisioning"
 }
 ---
@@ -271,3 +271,6 @@ runtime boundary; AR-1349 remains fail-closed until it is merged and verified.
 
 - 2026-09-23T19:54:55+00:00: Recorded command exit 0; command argv SHA-256
   4659f76946f62a25c77dc9097d5c33078049df2549670663be27ceb03df6f8ae.
+
+- 2026-09-23T19:55:14+00:00: Recorded command exit 0; command argv SHA-256
+  7910fa65494338b6b3d52ea95a2ff9aa743a9b22270bad46819d0297ae2bcd21.
