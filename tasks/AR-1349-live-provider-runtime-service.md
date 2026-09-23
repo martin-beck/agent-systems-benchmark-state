@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 176,
+  "task_revision": 177,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T19:05:45+00:00",
+  "updated_at": "2026-09-23T19:06:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
@@ -530,3 +530,6 @@ qualified.
   clippy passed. Focused live_service tests passed 3/3; sandbox_credential tests passed 3/3; full
   asb-runtime tests passed 93 passed, 1 ignored. No CLI production acquisition wiring is claimed
   complete.
+
+- 2026-09-23T19:06:20+00:00: Recorded command exit 0; command argv SHA-256
+  660b516ac703146715c0fbf38b89e4a7b97fb020a5fc74d7f5966759a3ac7720.
