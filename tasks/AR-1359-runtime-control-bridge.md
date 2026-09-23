@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bridge authenticated control enrollment into runtime-owned opaque live authority.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Runtime/control enrollment bridge",
-  "updated_at": "2026-09-23T22:32:22+00:00",
+  "updated_at": "2026-09-23T22:32:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1359-runtime-control-bridge"
 }
 ---
@@ -51,3 +51,6 @@ fail-closed behavior and do not touch asb-tui.
 
 - 2026-09-23T22:32:22+00:00: Recorded command exit 0; command argv SHA-256
   840fef93f52f8ecccfc52112d87ec726d91f86870935a18999f2dcaf059b1567.
+
+- 2026-09-23T22:32:51+00:00: Recorded command exit 0; command argv SHA-256
+  5ecc83bfcb02954567c903f622ae821bfdf2e6e1e5cdc2b2db80e01f23692506.
