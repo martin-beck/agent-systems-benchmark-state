@@ -8,7 +8,7 @@
     "AR-1325"
   ],
   "id": "AR-1326",
-  "next_action": "Monitor exact-head PR #250 checks for head 64a3a002018a542cba9a6e5844589c89417700a5; merge only after every required check is green and independent diff review is complete. Local fmt, clippy, serial full workspace tests, focused CLI tests, and focused mini_swe rerun pass. Parallel-only shared-resource failures are retained as infrastructure evidence.",
+  "next_action": "PR #250 merged at 8692729a58d16e5c9d5387d5d68a7daa54d6443a. Post-merge hosted workflows: Fault assurance and hosted portability passed; Rust verification failed once on timing assertion gemini::tests::malformed_ready_marker_fails_fast_and_cleans_run_root (elapsed >= 1s), while Repository quality, Formal assurance, and Emulated AArch64 remain in progress. Keep AR in progress and create/assign a repair AR or approved rerun; do not release done until all post-merge evidence is green.",
   "observed_branch": "feature/ar-1326-openrouter-catalog-selection",
   "observed_dirty": 0,
   "observed_head": "64a3a002018a542cba9a6e5844589c89417700a5",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Advertise the OpenRouter profile in the CLI provider catalog and accept it in provider-plan selection.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Select OpenRouter through the CLI provider catalog",
-  "updated_at": "2026-09-23T07:01:58+00:00",
+  "updated_at": "2026-09-23T07:02:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1326-openrouter-catalog-selection"
 }
 ---
@@ -129,3 +129,7 @@ the fail-closed content-address checks.
   05f37e86cfcc833d061bb9ad7ca0e27ec8426b7c252f5f4a8d579c598977de18.
 
 - 2026-09-23T07:01:58+00:00: Heartbeat by codex-asb-ar1326-20260923.
+
+- 2026-09-23T07:02:13+00:00: Post-merge transition recorded. Rust failure is an existing
+  timing-flake candidate, not an OpenRouter-specific failure; exact test passes locally serially.
+  Merge is complete but AR acceptance remains pending repair/rerun and remaining workflows.

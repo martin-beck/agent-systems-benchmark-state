@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1326](tasks/AR-1326-openrouter-catalog-selection.md): Select OpenRouter through the CLI provider catalog | Advertise the OpenRouter profile in the CLI provider catalog and accept it in provider-plan selection. | Monitor exact-head PR #250 checks for head 64a3a002018a542cba9a6e5844589c89417700a5; merge only after every required check is green and independent diff review is complete. Local fmt, clippy, serial full workspace tests, focused CLI tests, and focused mini_swe rerun pass. Parallel-only shared-resource failures are retained as infrastructure evidence. | codex-asb-ar1326-20260923 |
+| P1 | [AR-1326](tasks/AR-1326-openrouter-catalog-selection.md): Select OpenRouter through the CLI provider catalog | Advertise the OpenRouter profile in the CLI provider catalog and accept it in provider-plan selection. | PR #250 merged at 8692729a58d16e5c9d5387d5d68a7daa54d6443a. Post-merge hosted workflows: Fault assurance and hosted portability passed; Rust verification failed once on timing assertion gemini::tests::malformed_ready_marker_fails_fast_and_cleans_run_root (elapsed >= 1s), while Repository quality, Formal assurance, and Emulated AArch64 remain in progress. Keep AR in progress and create/assign a repair AR or approved rerun; do not release done until all post-merge evidence is green. | codex-asb-ar1326-20260923 |
 
 ## Open
 
