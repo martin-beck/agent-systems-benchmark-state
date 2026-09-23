@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1365-control-receipt-source-integration",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T01:54:24+00:00",
   "depends_on": [
     "AR-1362",
     "AR-1364"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1365-control-receipt-source-integration",
   "observed_dirty": 0,
   "observed_head": "3a4007be828db04f3b57492e5c5f230199cb8d5a",
-  "owner": "",
+  "owner": "codex-asb-runtime-attested-enrollment-luna56",
   "plan": "../plans/AR-1365-control-receipt-source-integration.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Integrate authenticated chain and authority enrollment into the versioned control receipt source.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Control receipt source integration",
-  "updated_at": "2026-09-23T23:54:21+00:00",
+  "updated_at": "2026-09-23T23:54:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1365-control-receipt-source-integration"
 }
 ---
@@ -33,3 +33,5 @@ AR-1364. Do not touch asb-tui or synthesize authority from CLI/config input.
 
 - 2026-09-23T23:54:21+00:00: Promote receipt-source integration after AR-1362 and AR-1364 completed
   authority and chain primitives with all post-merge gates.
+
+- 2026-09-23T23:54:24+00:00: Claimed by codex-asb-runtime-attested-enrollment-luna56.
