@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Create the runtime-owned relay factory and opaque launch context required for safe live CLI execution.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Runtime-owned live relay factory and CLI integration",
-  "updated_at": "2026-09-23T12:02:35+00:00",
+  "updated_at": "2026-09-23T12:02:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1342-live-relay-factory-cli-integration"
 }
 ---
@@ -195,3 +195,6 @@ until it is complete, live spawning remains fail-closed.
 
 - 2026-09-23T12:02:35+00:00: Recorded command exit 0; command argv SHA-256
   364ffa9c034cdef3468858c13f1ce32018babc851d223bc9c1852affa7706090.
+
+- 2026-09-23T12:02:49+00:00: Recorded command exit 1; command argv SHA-256
+  605049fa64029b1ea2ff5cc7e46644b637612d3413f6b3b98eb8943a83d86f91.
