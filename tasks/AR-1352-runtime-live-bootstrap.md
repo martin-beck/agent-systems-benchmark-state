@@ -9,17 +9,17 @@
   "id": "AR-1352",
   "next_action": "Commit the independently reviewed clean bootstrap slice with SSH signature and DCO, then publish through the reviewed PR workflow. Keep AR-1349/1329 fail-closed.",
   "observed_branch": "feature/ar-1352-runtime-live-bootstrap",
-  "observed_dirty": 1,
-  "observed_head": "2ea6e6422ea61bc9e58a0144ac56713182a72eca",
+  "observed_dirty": 0,
+  "observed_head": "e385a87bed4a78f616d8fa1254257f15931af0f7",
   "owner": "codex-asb-runtime-acquisition-successor-luna56",
   "plan": "../plans/AR-1352-runtime-live-bootstrap.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the private runtime-owned bootstrap source for live acquisition.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Runtime-owned live bootstrap",
-  "updated_at": "2026-09-23T20:22:50+00:00",
+  "updated_at": "2026-09-23T20:23:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1352-runtime-live-bootstrap"
 }
 ---
