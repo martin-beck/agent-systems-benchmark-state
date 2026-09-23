@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1341-runtime-observed-namespace-repair",
-  "checkpoint_commit": "7235c5aaee4ceaf20312d198c03193d93a6b3fb4",
+  "checkpoint_commit": "98924ff97af42d1f5571640a05b34d47bab9a7a1",
   "claim_expires": "2026-09-23T13:02:20+00:00",
   "depends_on": [
     "AR-1339"
   ],
   "id": "AR-1341",
-  "next_action": "Review and run full applicable gates for runtime-observed child namespace repair; then publish exact-head PR only after late-bound capability and gate evidence is independently reviewed.",
+  "next_action": "Independently review exact clean 98924ff, then publish PR and wait for exact-head CI; do not release AR-1340 until this repair is merged and post-merge verified.",
   "observed_branch": "feature/ar-1341-runtime-observed-namespace-repair",
   "observed_dirty": 0,
   "observed_head": "98924ff97af42d1f5571640a05b34d47bab9a7a1",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair AR-1340 so live relay capabilities require runtime-observed child namespace agreement.",
-  "task_revision": 61,
+  "task_revision": 62,
   "title": "Runtime-observed namespace attestation repair",
-  "updated_at": "2026-09-23T11:02:20+00:00",
+  "updated_at": "2026-09-23T11:02:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1341-runtime-observed-namespace-repair"
 }
 ---
@@ -190,3 +190,12 @@ this task.
   0ceb51f5979eacdfdcaace654002080d3c2ed19d7c145be04b12b2f93a113df3.
 
 - 2026-09-23T11:02:20+00:00: Heartbeat by codex-asb-ar1341-20260923.
+
+- 2026-09-23T11:02:41+00:00: Completed runtime-observed child namespace repair. Launch now blocks
+  adapter effects behind a private runtime-owned gate, observes /proc/<child>/ns/net after
+  bubblewrap creation, derives a late-bound capability from the observed namespace, and passes that
+  capability only through the gate. Copied/stale/mismatched capability, invalid digest, missing PID,
+  and gate-without-child cases fail closed; teardown quarantines lease. Signed+DCO commit 98924ff.
+  Focused live namespace tests (7) and full workspace fmt/clippy/test/doc/release build passed;
+  workspace tests reported 188 passed, 1 ignored in asb-agents and 69 passed, 1 ignored in
+  asb-runtime, with documented environment-only ignores.
