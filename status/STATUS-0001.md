@@ -7,16 +7,16 @@
 
 ## Portfolio overview
 
-**366 ARs tracked** across 7 active status categories.
+**366 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 4 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 49 |
 | **Planned** | Defined work awaiting promotion or dependencies | 64 |
 | **Future** | Deferred roadmap work | 1 |
-| **Done** | Accepted, integrated, and durably verified | 236 |
+| **Done** | Accepted, integrated, and durably verified | 237 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 11 |
 
@@ -434,7 +434,7 @@ flowchart LR
         AR_1339["AR-1339 - Done"]:::status_done
         AR_1340["AR-1340 - Done"]:::status_done
         AR_1341["AR-1341 - Done"]:::status_done
-        AR_1342["AR-1342 - In progress"]:::status_in_progress
+        AR_1342["AR-1342 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1765,12 +1765,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md): Runtime-owned live relay factory and CLI integration | codex-asb-ar1342-20260923 | Create the runtime-owned relay factory and opaque launch context required for safe live CLI execution. | PR #259 merged at d24221731891fb39f56118be9c5ae51364824517; monitor all seven exact-head post-merge workflows and release AR-1342 done only after every one is green, then promote/advance AR-1329. |
-
 ### Open (4)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -1815,3 +1809,4 @@ flowchart LR
 | P0 | [AR-1284](../tasks/AR-1284-runtime-strict-replay-lifecycle.md): Runtime-owned strict-replay lifecycle execution | Unclaimed | Connect authenticated replay transport to the runtime-owned primary strict-replay lifecycle. | Split a runtime-owned launch-factory/CLI entrypoint successor: current protected main has only caller-constructible ReplayTransportIssuer and SandboxBackend APIs, so AR-1284 cannot safely wire primary replay without fabricating authority. |
 | P0 | [AR-1292](../tasks/AR-1292-tla-provenance-repair.md): Pinned TLA+ artifact provenance repair | Unclaimed | Repair or formally retain the pinned TLA+ artifact provenance mismatch blocking formal assurance. | Await signed or attested immutable TLA+ v1.8.0 provenance, or deterministic source-build qualification for 142d0ba; do not update hash only. |
 | P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Unclaimed | Repair the state-repository TLA admission runner and truthful worktree metadata. | Blocked: AR-1307 remote head ab485f767 != required 969eef058. AR-1308 preflight had 4.9 GiB free vs 16 GiB minimum and missing lock/JDK/TLC at runtime root. Reopen only with exact input bundle and passing preflight; do not run TLC locally. |
+| P0 | [AR-1305](../tasks/AR-1305-image-native-user-session.md): Image-native user-session support | Unclaimed | Qualify image-native D-Bus user-session support for required TLC containment. | Blocked: guestfish read-only inspection fails before access because /usr/bin/supermin exits 1; approved root has ~4.9 GiB free, preventing safe image repair. Reopen only with reviewed working appliance/capacity; no portable fallback, AR-1304 limit changes, or qualification. |

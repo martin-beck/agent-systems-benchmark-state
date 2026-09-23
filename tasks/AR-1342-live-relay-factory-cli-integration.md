@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1342-live-relay-factory-cli-integration",
   "checkpoint_commit": "d24221731891fb39f56118be9c5ae51364824517",
-  "claim_expires": "2026-09-23T14:18:17+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1327",
     "AR-1328",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1342-live-relay-factory-cli-integration",
   "observed_dirty": 0,
   "observed_head": "a934168d9dc17ecb6d6d765b216869bc82cf840c",
-  "owner": "codex-asb-ar1342-20260923",
+  "owner": "",
   "plan": "../plans/AR-1342-live-relay-factory-cli-integration.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Create the runtime-owned relay factory and opaque launch context required for safe live CLI execution.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Runtime-owned live relay factory and CLI integration",
-  "updated_at": "2026-09-23T12:18:17+00:00",
+  "updated_at": "2026-09-23T12:20:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1342-live-relay-factory-cli-integration"
 }
 ---
@@ -233,3 +233,9 @@ until it is complete, live spawning remains fail-closed.
 - 2026-09-23T12:13:57+00:00: Heartbeat by codex-asb-ar1342-20260923.
 
 - 2026-09-23T12:18:17+00:00: Heartbeat by codex-asb-ar1342-20260923.
+
+- 2026-09-23T12:20:32+00:00: PR #259 exact head a934168d9dc17ecb6d6d765b216869bc82cf840c merged at
+  d24221731891fb39f56118be9c5ae51364824517. All seven exact-head post-merge workflows passed: Rust
+  35858879195, Fault 35858879191, Repository quality 35858879180, Huawei/SPDX 35858879175, Emulated
+  AArch64 35858879136, Hosted portability 35858879132, Formal assurance 35858879131. AR-1342
+  runtime-owned live relay factory and opaque launch context verified; AR-1329 may now consume it.

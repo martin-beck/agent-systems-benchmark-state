@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1342](tasks/AR-1342-live-relay-factory-cli-integration.md): Runtime-owned live relay factory and CLI integration | Create the runtime-owned relay factory and opaque launch context required for safe live CLI execution. | PR #259 merged at d24221731891fb39f56118be9c5ae51364824517; monitor all seven exact-head post-merge workflows and release AR-1342 done only after every one is green, then promote/advance AR-1329. | codex-asb-ar1342-20260923 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -373,6 +367,7 @@ Never edit this file directly.
 | P1 | [AR-1334](tasks/AR-1334-openrouter-conformance-qualification.md): OpenRouter free-model conformance and hostile qualification | Qualify the pinned OpenRouter free model under conformance and hostile fail-closed testing. | Push PR for independent review; wait exact-head required CI, repair any failures, then merge only after all checks are green and verify post-merge workflows. | - |
 | P1 | [AR-1339](tasks/AR-1339-live-provider-egress-backend.md): Runtime-owned live-provider egress backend | Implement the runtime-owned authenticated backend for explicit live provider egress. | AR-1339 backend merged and verified at protected main; AR-1340 owns namespace-bound child handoff and AR-1329 consumes it for final live CLI integration. | - |
 | P1 | [AR-1340](tasks/AR-1340-attested-live-relay-namespace-handoff.md): Attested live-relay namespace and child handoff | Bind the live provider relay to an attested child namespace and integrate it without weakening offline or replay denial. | SECURITY HOLD: AR-1341 must add runtime-observed child namespace attestation and copied/stale/mismatch denial before AR-1340 may be released or AR-1329 advanced. Do not release on green post-merge CI alone; continue collecting post-merge evidence for merge 3406faae. | - |
+| P1 | [AR-1342](tasks/AR-1342-live-relay-factory-cli-integration.md): Runtime-owned live relay factory and CLI integration | Create the runtime-owned relay factory and opaque launch context required for safe live CLI execution. | PR #259 merged at d24221731891fb39f56118be9c5ae51364824517; monitor all seven exact-head post-merge workflows and release AR-1342 done only after every one is green, then promote/advance AR-1329. | - |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Run final exact-main and local post-merge verification using required native x86_64 kernel evidence and applicable pinned QEMU AArch64 portability checks; record native ARM64 PMU/eBPF as optional future evidence, then release. | - |
 | P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Run final state validation/live doctor and release done after confirming clean synchronized product/state refs at signed merge a0d80e4. | - |
 | P2 | [AR-0309](tasks/AR-0309-agent-openhands.md): Implement maintained OpenHands SDK client adapter | Run a maintained MIT OpenHands SDK or canonical headless client. | Monitor PR #65 exact-head CI for fec0487, investigate any failure, and await final review; do not merge. | - |
