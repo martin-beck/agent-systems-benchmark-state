@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime live-provider relay service and per-attempt opaque factory acquisition required by asb run and sweep.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Runtime live-provider relay service and CLI acquisition",
-  "updated_at": "2026-09-23T15:22:52+00:00",
+  "updated_at": "2026-09-23T15:23:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1343-runtime-live-provider-relay"
 }
 ---
@@ -127,3 +127,6 @@ capabilities without bypassing the denied-network sandbox.
   acquisition is now isolated in promoted AR-1344. Keep AR-1329 fail-closed.
 
 - 2026-09-23T15:22:52+00:00: Claimed by codex-asb-ar1329-live-cli-luna56.
+
+- 2026-09-23T15:23:03+00:00: Recorded command exit 0; command argv SHA-256
+  321c534968b9c456a64caf5e6d09b63780c507f97548057d2bfe31edcfd73ff4.
