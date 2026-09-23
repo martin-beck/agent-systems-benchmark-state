@@ -10,7 +10,7 @@
     "AR-1347"
   ],
   "id": "AR-1350",
-  "next_action": "Exact-head verify.yml rerun dispatched at 709dae14b3ddecc143af4bcb722c3c4250412225: workflow run 35899655572 (https://github.com/martin-beck/agent-systems-benchmark/actions/runs/35899655572). Monitor this rerun and all PR #261 required checks; merge only after every required check is green and independent review is complete. No timing gate is weakened.",
+  "next_action": "Hosted run 35899655572 on exact head 709dae14b3ddecc143af4bcb722c3c4250412225 completed with tests, native Goose, docs, and release build green, but manual workflow_dispatch DCO certification failed because it scanned merge base commit 909078ced21f36e5a72590c9decf41ac56452212 without a Signed-off-by trailer; this is a dispatch-context failure, not the PR event DCO path. Coverage also failed at 87.95%. Add neutral positive/negative coverage tests, run local workspace coverage/full gates, commit signed+DCO, push the same PR, and rely on fresh PR-triggered exact-head checks.",
   "observed_branch": "feature/ar-1350-sandbox-credential-channel",
   "observed_dirty": 2,
   "observed_head": "709dae14b3ddecc143af4bcb722c3c4250412225",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement a sandbox-owned sealed-FD credential channel for live provider children.",
-  "task_revision": 99,
+  "task_revision": 100,
   "title": "Sandbox-owned credential channel",
-  "updated_at": "2026-09-23T18:08:29+00:00",
+  "updated_at": "2026-09-23T18:08:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1350-sandbox-credential-channel"
 }
 ---
@@ -300,3 +300,8 @@ private runtime channel before AR-1349 can safely acquire attempts or wire
 
 - 2026-09-23T18:08:29+00:00: Recorded command exit 0; command argv SHA-256
   290ded40ff5641884a15e825a31153e081c21ff906bf88b991bdc0ae4951155b.
+
+- 2026-09-23T18:08:55+00:00: Recorded second hosted rerun result: run 35899655572 failed only DCO
+  certification under workflow_dispatch context; tests (including prior timing-sensitive Gemini
+  test), native Goose, docs, and release build passed. DCO output identified unsigned historical
+  merge 909078ced21f36e5a72590c9decf41ac56452212. No source or gate weakening.
