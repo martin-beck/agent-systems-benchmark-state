@@ -13,17 +13,17 @@
   "id": "AR-1349",
   "next_action": "Promote after AR-1327, AR-1328, AR-1339, AR-1340 and AR-1347 are verified. AR-1348 is superseded as partial lifecycle evidence by this coordinator repair. Implement the production LiveProviderRuntimeService atomic acquisition boundary and wire asb run/sweep; keep AR-1329 fail-closed until exact-head CI and exact lifecycle evidence pass.",
   "observed_branch": "feature/ar-1349-live-provider-runtime-service",
-  "observed_dirty": 2,
-  "observed_head": "a336d6744b1a82f36a706ec606b847c92d49cfd3",
+  "observed_dirty": 0,
+  "observed_head": "34013a6aac8d874159b7a6e24778f8d93112ef1d",
   "owner": "codex-asb-ar1329-live-cli-luna56",
   "plan": "../plans/AR-1349-live-provider-runtime-service.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T16:36:30+00:00",
+  "updated_at": "2026-09-23T16:36:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
