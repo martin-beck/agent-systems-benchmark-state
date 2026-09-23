@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1349-live-provider-runtime-service",
-  "checkpoint_commit": "359f15af52aa2b0b31bb091b945e7de933960006",
+  "checkpoint_commit": "80c5e53ab51aa863e12b662121bfb4b013a0a421",
   "claim_expires": "2026-09-23T21:01:05+00:00",
   "depends_on": [
     "AR-1327",
@@ -12,7 +12,7 @@
     "AR-1350"
   ],
   "id": "AR-1349",
-  "next_action": "AR-1350 is now an explicit prerequisite. Read-only review found its uncommitted channel compiles but is not publishable: public trait exposes pub(crate) channel, mounted file metadata is not target env injection, no visible ResolvedCredential digest binding, and caller-owned input bytes are not erased. Keep AR-1329 fail-closed until AR-1350 repairs these findings and passes clippy/full gates.",
+  "next_action": "Rebase is clean atop protected main 4d8f0c4, which includes merged AR-1350 sealed-channel implementation. Inspect the merged channel API and wire the real runtime-owned acquisition constructor, selection/reference binding, and asb run/sweep dispatch; preserve NetworkPolicy::Deny and fail-closed defaults. Then run focused/full gates.",
   "observed_branch": "feature/ar-1349-live-provider-runtime-service",
   "observed_dirty": 0,
   "observed_head": "80c5e53ab51aa863e12b662121bfb4b013a0a421",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 165,
+  "task_revision": 166,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T19:02:06+00:00",
+  "updated_at": "2026-09-23T19:02:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
@@ -497,3 +497,9 @@ qualified.
 
 - 2026-09-23T19:01:55+00:00: Recorded command exit 0; command argv SHA-256
   8eb649656c5ebf7af20cd9950775029fac6b617c8defcbed2bd4f2faf6dd132d.
+
+- 2026-09-23T19:02:38+00:00: Rebase initially produced add/add credential_injection and lib.rs
+  conflicts while replaying the old AR-1349 stack. Resolved through handoffctl by retaining
+  protected-main AR-1350 versions; rebase completed cleanly at product head
+  80c5e53ab51aa863e12b662121bfb4b013a0a421. No unresolved index remains. AR-1350 remains an explicit
+  prerequisite and AR-1329 stays fail-closed.
