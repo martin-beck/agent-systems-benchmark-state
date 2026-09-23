@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1362-runtime-authority-enrollment-store.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Persist authenticated runtime authority enrollment required for receipt issuance without exposing secrets.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Runtime authority enrollment store",
-  "updated_at": "2026-09-24T00:00:00+00:00",
+  "updated_at": "2026-09-23T23:05:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1362-runtime-authority-enrollment-store"
 }
 ---
@@ -30,3 +30,6 @@ authority from CLI/config inputs.
 - 2026-09-24T00:00:00+00:00: Created after AR-1361 found the control catalog
   lacks authenticated certificate-chain and runtime-owned target/tool/lease/
   relay authority required to issue a receipt.
+
+- 2026-09-23T23:05:20+00:00: Promote durable runtime authority enrollment successor after AR-1361
+  found missing control-owned chain and target/tool/root state.
