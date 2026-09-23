@@ -13,7 +13,7 @@
   "id": "AR-1349",
   "next_action": "First production-owned slice committed as 34013a6: LiveProviderRuntimeConfig validates denied network policy, exact allowlisted target, bounded generation, route and credential-reference digests, and acquires one benchmark ResourceLease. Focused live_service tests pass 2/2. Next: compose this config with runtime-owned gate/backend, observed namespace, token, relay and final opaque CLI attempt; preserve AR-1329 fail-closed.",
   "observed_branch": "feature/ar-1349-live-provider-runtime-service",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "34013a6aac8d874159b7a6e24778f8d93112ef1d",
   "owner": "codex-asb-ar1329-live-cli-luna56",
   "plan": "../plans/AR-1349-live-provider-runtime-service.md",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T16:38:44+00:00",
+  "updated_at": "2026-09-23T16:38:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
