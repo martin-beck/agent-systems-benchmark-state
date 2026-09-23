@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist the per-user OpenRouter free-model configuration and credential-free key enrollment.",
-  "task_revision": 86,
+  "task_revision": 87,
   "title": "OpenRouter free-model user configuration and key enrollment",
-  "updated_at": "2026-09-23T08:06:16+00:00",
+  "updated_at": "2026-09-23T08:06:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1328-openrouter-free-model-config"
 }
 ---
@@ -252,3 +252,6 @@ configurations fail closed.
   tests 2/2 pass. Initial hosted coverage failure was workspace 87.94% below the unchanged 90%
   floor; a local full llvm-cov rerun was invalidated by a concurrent cargo target binary race, so
   hosted exact-head coverage is authoritative.
+
+- 2026-09-23T08:06:27+00:00: Recorded command exit 0; command argv SHA-256
+  aa75a47abb51c989607a90cde0d8370262f138508299c06ab69b5d163bb590db.
