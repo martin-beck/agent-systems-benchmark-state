@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1329-live-provider-run-execution",
   "checkpoint_commit": "44ddf14334ac971e8e89bda195635595cfc651ab",
-  "claim_expires": "",
+  "claim_expires": "2026-09-23T14:20:51+00:00",
   "depends_on": [
     "AR-1327",
     "AR-1328",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1329-live-provider-run-execution",
   "observed_dirty": 0,
   "observed_head": "2774b1d648b5c3bbda0e290e158dc352502d3768",
-  "owner": "",
+  "owner": "codex-asb-ar1329-20260923b",
   "plan": "../plans/AR-1329.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Execute real agents against the selected provider through asb run and sweep with credential-free resolution.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Live-provider run execution for real agents",
-  "updated_at": "2026-09-23T11:32:39+00:00",
+  "updated_at": "2026-09-23T12:20:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1329-live-provider-run-execution"
 }
 ---
@@ -108,3 +108,5 @@ the digest-pinned mode remain default and never touch the network.
   launch context. Preserve NetworkPolicy::Deny, direct/alternate egress denial, credential
   non-disclosure, cancellation/teardown, and offline default. No unsafe direct bypass. State
   reconcile doctor/snapshot currently report stale WORKTREES.md.
+
+- 2026-09-23T12:20:51+00:00: Claimed by codex-asb-ar1329-20260923b.
