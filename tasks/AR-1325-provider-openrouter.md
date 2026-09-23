@@ -8,7 +8,7 @@
     "AR-0318"
   ],
   "id": "AR-1325",
-  "next_action": "Await exact-head PR #249 repository-policy and dependent checks on repaired head 85eece9f; merge remains unauthorized until all required checks are green.",
+  "next_action": "Repair protected-main merge-tree admission after post-merge Repository quality failed on 56c882a: protected-main merge tree differs from reviewed topic tree; create and execute a dedicated repair AR, then rerun all exact-main workflows before treating AR-1325 as done.",
   "observed_branch": "feature/ar-1325-provider-openrouter",
   "observed_dirty": 0,
   "observed_head": "85eece9f6915c51a55ec54457dc214d743f5db00",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define one pinned credential-free OpenRouter provider profile for compatible ASB agent adapters.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Support a shared OpenRouter provider",
-  "updated_at": "2026-09-23T06:16:20+00:00",
+  "updated_at": "2026-09-23T06:19:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1325-provider-openrouter"
 }
 ---
@@ -135,3 +135,8 @@ unsupported or lossy translations fail closed.
 
 - 2026-09-23T06:16:20+00:00: Recorded command exit 0; command argv SHA-256
   3584cfa572473529d927816041d9b2c5a191ea5f3c0f914d39e273a897e0e7a9.
+
+- 2026-09-23T06:19:25+00:00: Post-merge verification is not green: run 35825987339 Repository
+  quality failed with protected-main merge-tree mismatch for merge 56c882a. PR #249 itself was
+  exact-head green before merge; no release/public completion claim is authorized until repair and
+  post-merge gates pass.

@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1325](tasks/AR-1325-provider-openrouter.md): Support a shared OpenRouter provider | Define one pinned credential-free OpenRouter provider profile for compatible ASB agent adapters. | Await exact-head PR #249 repository-policy and dependent checks on repaired head 85eece9f; merge remains unauthorized until all required checks are green. | coordinator-openrouter-audit |
+| P1 | [AR-1325](tasks/AR-1325-provider-openrouter.md): Support a shared OpenRouter provider | Define one pinned credential-free OpenRouter provider profile for compatible ASB agent adapters. | Repair protected-main merge-tree admission after post-merge Repository quality failed on 56c882a: protected-main merge tree differs from reviewed topic tree; create and execute a dedicated repair AR, then rerun all exact-main workflows before treating AR-1325 as done. | coordinator-openrouter-audit |
 
 ## Open
 
