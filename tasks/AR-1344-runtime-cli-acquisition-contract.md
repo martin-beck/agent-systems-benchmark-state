@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1344-runtime-cli-acquisition-contract",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "a29f38f6a1f73160bb9c3a4f760c14a7f0e75d6f",
   "claim_expires": "2026-09-23T14:53:22+00:00",
   "depends_on": [
     "AR-1339",
@@ -9,7 +9,7 @@
     "AR-1342"
   ],
   "id": "AR-1344",
-  "next_action": "Promote after dependencies are verified; implement the runtime-owned per-attempt CLI acquisition API and wire run/sweep without weakening live-provider fail-closed behavior.",
+  "next_action": "Wire the opaque per-attempt context into CLI run/sweep once SandboxProcess lifecycle is integrated; retain fail-closed rejection until then.",
   "observed_branch": "feature/ar-1344-runtime-cli-acquisition-contract",
   "observed_dirty": 0,
   "observed_head": "a29f38f5853a4f18e0a0665b34d8257a92144808",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime-owned API and CLI integration needed for safe live-provider attempts.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Runtime-owned CLI live acquisition contract",
-  "updated_at": "2026-09-23T12:56:17+00:00",
+  "updated_at": "2026-09-23T12:56:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1344-runtime-cli-acquisition-contract"
 }
 ---
@@ -71,3 +71,7 @@ contract and its tests are merged and verified.
 
 - 2026-09-23T12:56:07+00:00: Recorded command exit 0; command argv SHA-256
   d5d7089434ef0df54ed54def989b8b3524d50d99d2ad3def82c33ca65dd71f98.
+
+- 2026-09-23T12:56:28+00:00: Checkpoint a29f38f: added runtime-owned LiveProviderAttempt and
+  LiveLaunchFactory::acquire; focused asb-runtime launch_factory tests 9 passed, 1 ignored. CLI live
+  path remains fail-closed.
