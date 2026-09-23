@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1356-control-runtime-attestation-primitive",
   "checkpoint_commit": "a6f1915aa5117f0296b1b8f4b9c4692a956b3d86",
-  "claim_expires": "2026-09-23T23:37:23+00:00",
+  "claim_expires": "2026-09-23T23:40:01+00:00",
   "depends_on": [
     "AR-1352"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Issue runtime-owned live enrollment capability from authenticated control attestation.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Control/runtime enrollment attestation primitive",
-  "updated_at": "2026-09-23T21:37:23+00:00",
+  "updated_at": "2026-09-23T21:40:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1356-control-runtime-attestation-primitive"
 }
 ---
@@ -183,3 +183,5 @@ dispatch and do not expose caller-supplied launch authority.
   verification 35923315447, Huawei headers 35923315448.
 
 - 2026-09-23T21:37:23+00:00: Heartbeat by codex-asb-runtime-acquisition-successor-luna56.
+
+- 2026-09-23T21:40:01+00:00: Heartbeat by codex-asb-runtime-acquisition-successor-luna56.
