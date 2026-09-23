@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1355-runtime-attested-enrollment-record",
   "checkpoint_commit": "d83a85926f2c4c42317617f4f6b7b3c9a3195874",
-  "claim_expires": "2026-09-23T23:43:35+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1352"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1355-runtime-attested-enrollment-record",
   "observed_dirty": 0,
   "observed_head": "d83a85926f2c4c42317617f4f6b7b3c9a3195874",
-  "owner": "codex-asb-runtime-attested-enrollment-luna56",
+  "owner": "",
   "plan": "../plans/AR-1355-runtime-attested-enrollment-record.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Transport runtime-attested enrollment authority without exposing it to the CLI.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Runtime-attested enrollment record transport",
-  "updated_at": "2026-09-23T21:46:19+00:00",
+  "updated_at": "2026-09-23T21:46:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1355-runtime-attested-enrollment-record"
 }
 ---
@@ -63,3 +63,11 @@ constructors or synthetic authority. AR-1329 remains fail-closed until merge.
 
 - 2026-09-23T21:46:19+00:00: Recorded command exit 0; command argv SHA-256
   bcf80482250ce75c04e47b169cd832c5625619b5419312abc434b9878dff2c95.
+
+- 2026-09-23T21:46:32+00:00: Blocked by precise architectural gap: current branch d83a859 provides
+  only an in-process LiveProviderEnrollment trait and opaque handle, but no versioned bounded
+  authenticated enrollment record, freshness/replay validation, serialized control/runtime
+  transport, or asb run/sweep consumer. Focused live_service tests pass (9/9), but acceptance
+  criteria cannot be met without caller authority risk. Created successor
+  AR-1357-runtime-attested-enrollment-record (planned, depends on AR-1356) to implement the missing
+  transport and consumer. AR-1329 remains fail-closed.
