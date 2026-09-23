@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the runtime-owned supervisor that acquires every live-provider authority and tears it down safely.",
-  "task_revision": 74,
+  "task_revision": 75,
   "title": "Runtime-owned live acquisition service",
-  "updated_at": "2026-09-23T16:26:02+00:00",
+  "updated_at": "2026-09-23T16:27:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1348-runtime-owned-live-acquisition"
 }
 ---
@@ -244,3 +244,6 @@ this service owns acquisition instead of accepting caller-built launch authority
   gate/SandboxBackend, lease, observed namespace, token, relay, and CLI dispatch. Existing contracts
   lack constructors for those inputs, so implementation here would require inventing authority and
   violate fail-closed semantics.
+
+- 2026-09-23T16:27:26+00:00: Recorded command exit 0; command argv SHA-256
+  aafd55b1b2beca3edf40fbe80a80153f4d0d3b9ee21ad148e8b614fd862f4f3b.
