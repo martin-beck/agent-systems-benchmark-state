@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1344-runtime-cli-acquisition-contract",
-  "checkpoint_commit": "6b06b12639beb29909621a324a228976eea23b3b",
+  "checkpoint_commit": "2e1841c56980ac02613cdced22a3762049d388fc",
   "claim_expires": "2026-09-23T16:13:24+00:00",
   "depends_on": [
     "AR-1339",
@@ -9,7 +9,7 @@
     "AR-1342"
   ],
   "id": "AR-1344",
-  "next_action": "PR #260 updated to signed head 6b06b12 with targeted launch_factory coverage for backend retention and opaque factory debug. Re-run exact CI coverage; 90% floor remains mandatory and broad residual runtime deficits are documented. Do not merge while policy coverage is red.",
+  "next_action": "Active coverage repair checkpoint at signed head 2e1841c. Hosted policy reports 88.02% (10,472 missed / 87,432) versus 90% floor. Added launch_factory replay operation/accessor and backend-retention tests; continue targeted real branch tests, then rerun llvm-cov and push exact head. No exclusions or fake live capabilities.",
   "observed_branch": "feature/ar-1344-runtime-cli-acquisition-contract",
   "observed_dirty": 0,
   "observed_head": "2e1841c56980ac02613cdced22a3762049d388fc",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime-owned API and CLI integration needed for safe live-provider attempts.",
-  "task_revision": 210,
+  "task_revision": 211,
   "title": "Runtime-owned CLI live acquisition contract",
-  "updated_at": "2026-09-23T14:13:24+00:00",
+  "updated_at": "2026-09-23T14:13:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1344-runtime-cli-acquisition-contract"
 }
 ---
@@ -562,3 +562,7 @@ contract and its tests are merged and verified.
   fd391769462cffaf0d76b8bd4abe759a4f272903e594eaa3b207fb18215f991a.
 
 - 2026-09-23T14:13:24+00:00: Heartbeat by codex-asb-ar1344-factory-refactor-20260923.
+
+- 2026-09-23T14:13:41+00:00: Lease renewed by heartbeat. Current product branch is clean at 2e1841c.
+  Focused launch_factory suite is 10 passed, 1 capability-gated ignored. Hosted coverage remains
+  sole PR blocker at 88.02%; retain repair loop and no merge.

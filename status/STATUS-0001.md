@@ -1780,7 +1780,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1344](../tasks/AR-1344-runtime-cli-acquisition-contract.md): Runtime-owned CLI live acquisition contract | codex-asb-ar1344-factory-refactor-20260923 | Add the runtime-owned API and CLI integration needed for safe live-provider attempts. | PR #260 updated to signed head 6b06b12 with targeted launch_factory coverage for backend retention and opaque factory debug. Re-run exact CI coverage; 90&#37; floor remains mandatory and broad residual runtime deficits are documented. Do not merge while policy coverage is red. |
+| P1 | [AR-1344](../tasks/AR-1344-runtime-cli-acquisition-contract.md): Runtime-owned CLI live acquisition contract | codex-asb-ar1344-factory-refactor-20260923 | Add the runtime-owned API and CLI integration needed for safe live-provider attempts. | Active coverage repair checkpoint at signed head 2e1841c. Hosted policy reports 88.02&#37; (10,472 missed / 87,432) versus 90&#37; floor. Added launch_factory replay operation/accessor and backend-retention tests; continue targeted real branch tests, then rerun llvm-cov and push exact head. No exclusions or fake live capabilities. |
 
 ### Open (5)
 
