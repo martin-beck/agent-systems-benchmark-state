@@ -12,7 +12,7 @@
   "id": "AR-1348",
   "next_action": "Implement runtime-owned acquisition supervisor in asb-runtime: construct validated SandboxSpec/LaunchInput, acquire Benchmark ResourceLease, issue policy/namespace handoff from runtime-selected concrete target, bind one relay, attest the pinned live gate, issue one LiveProviderAttempt, and revoke all resources on failure/drop. First slice is a private constructor plus fail-closed negative tests; do not wire AR-1329 until lifecycle tests pass.",
   "observed_branch": "feature/ar-1348-runtime-owned-live-acquisition",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "a336d6744b1a82f36a706ec606b847c92d49cfd3",
   "owner": "codex-asb-ar1329-live-cli-luna56",
   "plan": "../plans/AR-1348-runtime-owned-live-acquisition.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the runtime-owned supervisor that acquires every live-provider authority and tears it down safely.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Runtime-owned live acquisition service",
-  "updated_at": "2026-09-23T16:00:05+00:00",
+  "updated_at": "2026-09-23T16:00:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1348-runtime-owned-live-acquisition"
 }
 ---
