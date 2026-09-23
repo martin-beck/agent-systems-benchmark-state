@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1329](tasks/AR-1329-live-provider-run-execution.md): Live-provider run execution for real agents | Execute real agents against the selected provider through asb run and sweep with credential-free resolution. | Consume the AR-1340 attested namespace-bound relay handoff; then integrate live run/sweep and complete denial/live evidence without weakening NetworkPolicy::Deny. | codex-asb-ar1329-20260923 |
-| P1 | [AR-1340](tasks/AR-1340-attested-live-relay-namespace-handoff.md): Attested live-relay namespace and child handoff | Bind the live provider relay to an attested child namespace and integrate it without weakening offline or replay denial. | Post-merge workflows for merge commit 3406faae58f0e762f70a856f6b9c6c545fcc9a37 are running; wait all seven required workflows, inspect failures, then release AR-1340 with exact evidence. | codex-asb-ar1340-20260923 |
+| P1 | [AR-1340](tasks/AR-1340-attested-live-relay-namespace-handoff.md): Attested live-relay namespace and child handoff | Bind the live provider relay to an attested child namespace and integrate it without weakening offline or replay denial. | AR-1341 is planned to repair the merged namespace gap; do not release AR-1340 or advance AR-1329 until runtime-observed child identity comparison and copied/stale/mismatch denial evidence land and pass all gates. | codex-asb-ar1340-20260923 |
 
 ## Open
 

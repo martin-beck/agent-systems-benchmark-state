@@ -7,7 +7,7 @@
     "AR-1339"
   ],
   "id": "AR-1340",
-  "next_action": "Post-merge workflows for merge commit 3406faae58f0e762f70a856f6b9c6c545fcc9a37 are running; wait all seven required workflows, inspect failures, then release AR-1340 with exact evidence.",
+  "next_action": "AR-1341 is planned to repair the merged namespace gap; do not release AR-1340 or advance AR-1329 until runtime-observed child identity comparison and copied/stale/mismatch denial evidence land and pass all gates.",
   "observed_branch": "feature/ar-1340-attested-live-relay-handoff",
   "observed_dirty": 0,
   "observed_head": "f77aafb44b05cd04cbd642ab3d737eb4062403dc",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind the live provider relay to an attested child namespace and integrate it without weakening offline or replay denial.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Attested live-relay namespace and child handoff",
-  "updated_at": "2026-09-23T10:38:57+00:00",
+  "updated_at": "2026-09-23T10:40:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1340-attested-live-relay-handoff"
 }
 ---
@@ -252,3 +252,7 @@ public coordination state or runtime evidence.
   Post-merge runs started: Rust 35849949289, Hosted portability 35849949287, Fault 35849949293,
   Formal 35849949296, Repository quality 35849949311, AArch64 35849949352, Headers 35849949302
   (headers already green). AR remains in_progress pending all post-merge gates.
+
+- 2026-09-23T10:40:23+00:00: PR #257 merged at 3406faae58f0e762f70a856f6b9c6c545fcc9a37 despite the
+  owner security review hold recorded at 10:30Z and GitHub review comment 10:31Z. AR-1341 was
+  created as the repair dependency; post-merge workflows are evidence only, not completion.
