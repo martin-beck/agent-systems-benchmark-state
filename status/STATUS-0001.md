@@ -1838,7 +1838,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1356](../tasks/AR-1356-control-runtime-attestation-primitive.md): Control/runtime enrollment attestation primitive | codex-asb-runtime-acquisition-successor-luna56 | Issue runtime-owned live enrollment capability from authenticated control attestation. | Independent review complete; local fmt check, clippy -D warnings, locked workspace tests and doc tests pass. Product commit 70f8a39 is signed+DCO and authority constructors remain private. Publish exact-head PR through coordinator workflow, require all hosted checks and post-merge workflows before release; then advance AR-1355. |
+| P0 | [AR-1356](../tasks/AR-1356-control-runtime-attestation-primitive.md): Control/runtime enrollment attestation primitive | codex-asb-runtime-acquisition-successor-luna56 | Issue runtime-owned live enrollment capability from authenticated control attestation. | PR #264 exact head 9e587593 adds formal lock repair ce7401a and coverage tests; hosted checks rerunning. Wait for every exact-head required check, repair any failures, then merge and verify all post-merge workflows before release. |
 
 ### Open (5)
 
