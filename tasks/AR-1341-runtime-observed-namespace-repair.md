@@ -9,7 +9,7 @@
   "id": "AR-1341",
   "next_action": "Independently review exact clean 98924ff, then publish PR and wait for exact-head CI; do not release AR-1340 until this repair is merged and post-merge verified.",
   "observed_branch": "feature/ar-1341-runtime-observed-namespace-repair",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "98924ff97af42d1f5571640a05b34d47bab9a7a1",
   "owner": "codex-asb-ar1341-20260923",
   "plan": "../plans/AR-1341.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair AR-1340 so live relay capabilities require runtime-observed child namespace agreement.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Runtime-observed namespace attestation repair",
-  "updated_at": "2026-09-23T11:02:50+00:00",
+  "updated_at": "2026-09-23T11:03:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1341-runtime-observed-namespace-repair"
 }
 ---
