@@ -1847,7 +1847,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1359](../tasks/AR-1359-runtime-control-bridge.md): Runtime/control enrollment bridge | codex-asb-runtime-attested-enrollment-luna56 | Bridge authenticated control enrollment into runtime-owned opaque live authority. | Promote after AR-1357 is done, then implement the runtime-owned asb-control enrollment bridge needed by AR-1358. |
+| P0 | [AR-1359](../tasks/AR-1359-runtime-control-bridge.md): Runtime/control enrollment bridge | codex-asb-runtime-attested-enrollment-luna56 | Bridge authenticated control enrollment into runtime-owned opaque live authority. | Signed commit f511910 bridges control-issued RuntimeEnrollmentReceiptV1 into runtime validation/replay protection. Publish PR through handoffctl, monitor exact-head checks, repair failures, then merge only green. |
 
 ### Open (4)
 

@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1359-runtime-control-bridge",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "f5119103248ff448bea4ab0bfc4581ed43743d7d",
   "claim_expires": "2026-09-24T00:34:55+00:00",
   "depends_on": [
     "AR-1357"
   ],
   "id": "AR-1359",
-  "next_action": "Promote after AR-1357 is done, then implement the runtime-owned asb-control enrollment bridge needed by AR-1358.",
+  "next_action": "Signed commit f511910 bridges control-issued RuntimeEnrollmentReceiptV1 into runtime validation/replay protection. Publish PR through handoffctl, monitor exact-head checks, repair failures, then merge only green.",
   "observed_branch": "feature/ar-1359-runtime-control-bridge",
   "observed_dirty": 0,
   "observed_head": "f5119103248ff448bea4ab0bfc4581ed43743d7d",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bridge authenticated control enrollment into runtime-owned opaque live authority.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Runtime/control enrollment bridge",
-  "updated_at": "2026-09-23T22:35:32+00:00",
+  "updated_at": "2026-09-23T22:36:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1359-runtime-control-bridge"
 }
 ---
@@ -74,3 +74,12 @@ fail-closed behavior and do not touch asb-tui.
 
 - 2026-09-23T22:35:32+00:00: Recorded command exit 0; command argv SHA-256
   436fd8c71eeaf5a288b68647e2e7db846b02b36791ca2422dde7b1ed94ee9497.
+
+- 2026-09-23T22:36:17+00:00: Implemented concrete bridge: asb-control issues bounded secret-free
+  RuntimeEnrollmentReceiptV1 bound to validated certificate chain, provider/public target, digests,
+  generation, freshness and deterministic nonce; private/link-local targets rejected. asb-runtime
+  LiveProviderRuntimeBridge validates receipt against opaque IssuedCertificateChainV1, constructs
+  private claims/attestation, consumes one-shot ledger, and returns only a secret-free enrollment
+  record. Positive/tamper/replay/path-free tests pass; focused control/runtime tests, clippy
+  workspace, full workspace tests, and rustdoc -D warnings pass. Commit f511910 is SSH-signed+DCO
+  and pushed.
