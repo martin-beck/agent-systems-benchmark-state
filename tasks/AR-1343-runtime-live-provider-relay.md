@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1343-runtime-live-provider-relay",
-  "checkpoint_commit": "ce2c2db068b05092f0f63291e0d94d4dbc9cda9c",
+  "checkpoint_commit": "a336d6744b1a82f36a706ec606b847c92d49cfd3",
   "claim_expires": "2026-09-23T17:22:52+00:00",
   "depends_on": [
     "AR-1327",
@@ -10,7 +10,7 @@
     "AR-1340"
   ],
   "id": "AR-1343",
-  "next_action": "Successor dependency required: expose a reviewed runtime-owned CLI acquisition API that atomically supplies SandboxBackend, benchmark ResourceLease, runtime launch token, observed child NamespaceIdentity, and per-attempt LiveProviderRelay lifecycle. Keep spawn_verified_agent live-provider rejection and AR-1329 fail-closed until that contract is implemented and tested.",
+  "next_action": "Implement runtime-owned LiveProviderRuntimeService, not caller-supplied synthetic authority: service must own pinned backend/live gate discovery, benchmark ResourceLease acquisition, concrete provider target resolution/allowlist, enrolled credential transport, runtime-observed child namespace rebind, RuntimeLaunchToken attestation, and one LiveProviderAttempt + relay lifecycle per scheduler attempt. Wire only after focused positive/negative tests; keep AR-1329 and spawn_verified_agent fail-closed.",
   "observed_branch": "feature/ar-1343-runtime-live-provider-relay",
   "observed_dirty": 0,
   "observed_head": "a336d6744b1a82f36a706ec606b847c92d49cfd3",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime live-provider relay service and per-attempt opaque factory acquisition required by asb run and sweep.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Runtime live-provider relay service and CLI acquisition",
-  "updated_at": "2026-09-23T15:23:51+00:00",
+  "updated_at": "2026-09-23T15:24:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1343-runtime-live-provider-relay"
 }
 ---
@@ -136,3 +136,9 @@ capabilities without bypassing the denied-network sandbox.
 
 - 2026-09-23T15:23:51+00:00: Recorded command exit 0; command argv SHA-256
   08d57388abeac3a1c095ff93186ee24351040d12d34ebf7d4f49c95980a5621f.
+
+- 2026-09-23T15:24:10+00:00: Claimed dependency-safe after AR-1329 release. Fast-forwarded AR-1343
+  worktree ce2c2db onto protected main a336d674 via handoffctl run. Baseline cargo test --locked -p
+  asb-runtime --all-targets passed 83, 1 capability-gated ignored. Existing APIs still require
+  caller-built input/backend/lease/handoff/relay and therefore do not satisfy production CLI
+  acquisition; no synthetic authority mutation made.

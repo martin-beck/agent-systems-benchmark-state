@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1343](tasks/AR-1343-runtime-live-provider-relay.md): Runtime live-provider relay service and CLI acquisition | Add the runtime live-provider relay service and per-attempt opaque factory acquisition required by asb run and sweep. | Successor dependency required: expose a reviewed runtime-owned CLI acquisition API that atomically supplies SandboxBackend, benchmark ResourceLease, runtime launch token, observed child NamespaceIdentity, and per-attempt LiveProviderRelay lifecycle. Keep spawn_verified_agent live-provider rejection and AR-1329 fail-closed until that contract is implemented and tested. | codex-asb-ar1329-live-cli-luna56 |
+| P1 | [AR-1343](tasks/AR-1343-runtime-live-provider-relay.md): Runtime live-provider relay service and CLI acquisition | Add the runtime live-provider relay service and per-attempt opaque factory acquisition required by asb run and sweep. | Implement runtime-owned LiveProviderRuntimeService, not caller-supplied synthetic authority: service must own pinned backend/live gate discovery, benchmark ResourceLease acquisition, concrete provider target resolution/allowlist, enrolled credential transport, runtime-observed child namespace rebind, RuntimeLaunchToken attestation, and one LiveProviderAttempt + relay lifecycle per scheduler attempt. Wire only after focused positive/negative tests; keep AR-1329 and spawn_verified_agent fail-closed. | codex-asb-ar1329-live-cli-luna56 |
 
 ## Open
 
