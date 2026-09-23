@@ -11,7 +11,7 @@
     "AR-1347"
   ],
   "id": "AR-1349",
-  "next_action": "Implement the production runtime-owned acquisition constructor: keep LiveProviderResolver authority-free, add a private resolver implementation only once a safe final credential sink exists, then atomically acquire gate/backend, lease, target/egress, observed namespace, token, relay, and opaque attempt with rollback tests. Current resolver seam is validated; CLI run/sweep remains fail-closed.",
+  "next_action": "Do not publish the current credential sink. Repair the production boundary: inject into the inner bubblewrap child environment (outer systemd-run env is discarded by --clearenv), keep sink/private authority inaccessible to CLI, bind capability to selection digest and adapter target, and wire LiveProviderRuntimeService atomic acquisition plus asb run/sweep. Current sink compile/clippy repair is local only; AR-1329 remains fail-closed.",
   "observed_branch": "feature/ar-1349-live-provider-runtime-service",
   "observed_dirty": 5,
   "observed_head": "359f15af52aa2b0b31bb091b945e7de933960006",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 144,
+  "task_revision": 145,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T17:14:13+00:00",
+  "updated_at": "2026-09-23T17:14:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
@@ -429,3 +429,11 @@ qualified.
 
 - 2026-09-23T17:14:13+00:00: Recorded command exit 0; command argv SHA-256
   caecff45df1811e9b7b1d0b7426674b16308e8441d3df922d993a212e331911b.
+
+- 2026-09-23T17:14:39+00:00: Exact independent review blockers: current std::process::Command
+  injection targets the outer systemd-run command, but bubblewrap clears that environment, so
+  credentials would not reach the provider child; public spawn_with_credential APIs permit bypass;
+  no selection-digest binding, complete atomic acquisition, or CLI wiring exists. Local repair fixed
+  the compile call-site and clippy now passes for asb-runtime/asb-agents; focused runtime credential
+  tests were 2/2 and adapter test 1/1 before the final boundary review. Worktree is intentionally
+  dirty and no product commit was made.

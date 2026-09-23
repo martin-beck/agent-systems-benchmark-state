@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1349](tasks/AR-1349-live-provider-runtime-service.md): Production live-provider runtime service | Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep. | Implement the production runtime-owned acquisition constructor: keep LiveProviderResolver authority-free, add a private resolver implementation only once a safe final credential sink exists, then atomically acquire gate/backend, lease, target/egress, observed namespace, token, relay, and opaque attempt with rollback tests. Current resolver seam is validated; CLI run/sweep remains fail-closed. | codex-asb-ar1329-live-cli-luna56 |
+| P1 | [AR-1349](tasks/AR-1349-live-provider-runtime-service.md): Production live-provider runtime service | Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep. | Do not publish the current credential sink. Repair the production boundary: inject into the inner bubblewrap child environment (outer systemd-run env is discarded by --clearenv), keep sink/private authority inaccessible to CLI, bind capability to selection digest and adapter target, and wire LiveProviderRuntimeService atomic acquisition plus asb run/sweep. Current sink compile/clippy repair is local only; AR-1329 remains fail-closed. | codex-asb-ar1329-live-cli-luna56 |
 
 ## Open
 
