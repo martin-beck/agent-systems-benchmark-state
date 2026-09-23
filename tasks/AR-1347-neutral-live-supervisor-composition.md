@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1347-neutral-live-supervisor-composition",
-  "checkpoint_commit": "65af62331d0dffe3e282f9e074b6f59b375a19da",
+  "checkpoint_commit": "45a34f955aab039c871cae2dba89029465aaaf82",
   "claim_expires": "2026-09-23T17:37:59+00:00",
   "depends_on": [
     "AR-1327",
@@ -10,7 +10,7 @@
     "AR-1340"
   ],
   "id": "AR-1347",
-  "next_action": "Neutral CredentialInjection boundary and positive/negative runtime tests are merged locally. Next implement asb-agents supervisor composition against this trait and runtime-owned acquisition; keep AR-1329 fail-closed until concrete backend/lease/target/namespace/token/relay lifecycle is wired and verified.",
+  "next_action": "BLOCKED pending successor runtime-acquisition AR: neutral credential injection is complete, but no production supervisor owns pinned SandboxBackend/live gate discovery, benchmark ResourceLease acquisition, concrete provider target DNS/allowlist, namespace handoff/rebind, launch token, or per-attempt relay. Existing LiveLaunchFactory::acquire requires caller-built authority inputs and cannot be wired safely. Keep AR-1329 fail-closed.",
   "observed_branch": "feature/ar-1347-neutral-live-supervisor-composition",
   "observed_dirty": 0,
   "observed_head": "45a34f955aab039c871cae2dba89029465aaaf82",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the dependency-safe opaque supervisor contract needed for live-provider acquisition.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Neutral live-supervisor composition contract",
-  "updated_at": "2026-09-23T15:49:36+00:00",
+  "updated_at": "2026-09-23T15:50:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1347-neutral-live-supervisor-composition"
 }
 ---
@@ -125,3 +125,10 @@ or introduce a cyclic dependency.
 
 - 2026-09-23T15:49:36+00:00: Recorded command exit 1; command argv SHA-256
   1cc34da01327137e9e2d02b2b79558bb30f5a807079db6de2bb15d1a87a4a5cb.
+
+- 2026-09-23T15:50:10+00:00: Concrete composition delivered in signed+DCO commits de595d9 and
+  45a34f9: asb-runtime CredentialInjection trait and spawn_launch_with_credential preserve opaque
+  bytes; asb-agents ResolvedCredential implements injection, erases bytes, rejects invalid targets.
+  Credential tests 19/19 plus dedicated injection test 1/1; runtime full tests 85 passed/1 ignored;
+  runtime clippy and workspace check/fmt passed. Full constructor audit found runtime-owned
+  acquisition primitive still absent; no synthetic authority or CLI wiring.
