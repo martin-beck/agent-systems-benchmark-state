@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1348-runtime-owned-live-acquisition",
-  "checkpoint_commit": "6940184750376e2e374477b50741e7634d013516",
+  "checkpoint_commit": "85d2153c4d0a03e9423f02388cd7ebc709de209c",
   "claim_expires": "2026-09-23T17:59:20+00:00",
   "depends_on": [
     "AR-1327",
@@ -10,7 +10,7 @@
     "AR-1340"
   ],
   "id": "AR-1348",
-  "next_action": "Namespace observation slice committed as 6940184 with missing-PID and runtime-PID tests. Next bind runtime-owned relay/token lifecycle using existing LiveProviderNamespaceHandoff/LiveProviderRelay/LiveLaunchFactory contracts; add expiry/revocation/duplicate negatives and teardown. AR-1329 remains fail-closed.",
+  "next_action": "Attempt lifecycle fence committed as 85d2153: one-shot consume, idempotent revoke, duplicate/revoked rejection. Next bind actual LiveProviderNamespaceHandoff/LiveProviderRelay/RuntimeLaunchToken through a runtime-owned constructor; add expiry/relay teardown negatives. AR-1329 remains fail-closed.",
   "observed_branch": "feature/ar-1348-runtime-owned-live-acquisition",
   "observed_dirty": 1,
   "observed_head": "6940184750376e2e374477b50741e7634d013516",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the runtime-owned supervisor that acquires every live-provider authority and tears it down safely.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Runtime-owned live acquisition service",
-  "updated_at": "2026-09-23T16:07:45+00:00",
+  "updated_at": "2026-09-23T16:08:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1348-runtime-owned-live-acquisition"
 }
 ---
@@ -126,3 +126,7 @@ this service owns acquisition instead of accepting caller-built launch authority
 
 - 2026-09-23T16:07:45+00:00: Recorded command exit 0; command argv SHA-256
   ced87e6d0a4431237e7ed128e66d016545d91074ec1adf4b477e67a8e70b9290.
+
+- 2026-09-23T16:08:14+00:00: Signed+DCO lifecycle slice adds LiveAttemptLifecycle with
+  consume/revoke state and focused duplicate/revoked test. live_supervisor focused suite passes 4/4;
+  fmt passes. This is a lifecycle fence only and does not fabricate relay/authority or wire CLI.
