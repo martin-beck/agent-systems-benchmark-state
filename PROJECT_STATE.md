@@ -34,7 +34,7 @@ Generated from local Git and GitHub. Do not edit.
 | 35912557651 | `c560cac1e3a6` | push | Rust verification | in_progress:- |
 | 35912557603 | `c560cac1e3a6` | push | Fault assurance | in_progress:- |
 | 35912557591 | `c560cac1e3a6` | push | Repository quality | in_progress:- |
-| 35912557555 | `c560cac1e3a6` | push | Formal assurance | queued:- |
+| 35912557555 | `c560cac1e3a6` | push | Formal assurance | in_progress:- |
 | 35911523641 | `b710260a944e` | pull_request | Rust verification | completed:success |
 | 35911523619 | `b710260a944e` | pull_request | Repository quality | completed:success |
 | 35911523608 | `b710260a944e` | pull_request | Emulated aarch64 portability | completed:success |
