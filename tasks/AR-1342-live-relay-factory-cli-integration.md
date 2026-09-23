@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Create the runtime-owned relay factory and opaque launch context required for safe live CLI execution.",
-  "task_revision": 70,
+  "task_revision": 71,
   "title": "Runtime-owned live relay factory and CLI integration",
-  "updated_at": "2026-09-23T12:07:15+00:00",
+  "updated_at": "2026-09-23T12:10:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1342-live-relay-factory-cli-integration"
 }
 ---
@@ -211,3 +211,6 @@ until it is complete, live spawning remains fail-closed.
   state-root collision.
 
 - 2026-09-23T12:07:15+00:00: Heartbeat by codex-asb-ar1342-20260923.
+
+- 2026-09-23T12:10:02+00:00: Recorded command exit 1; command argv SHA-256
+  49cb769203917aed3dbe3a755a050fe37d85adf68dd44e980d70b9f08e58a326.
