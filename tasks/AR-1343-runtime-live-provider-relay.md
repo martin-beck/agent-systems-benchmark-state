@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1343-runtime-live-provider-relay",
   "checkpoint_commit": "ce2c2db068b05092f0f63291e0d94d4dbc9cda9c",
-  "claim_expires": "",
+  "claim_expires": "2026-09-23T13:16:22+00:00",
   "depends_on": [
     "AR-1327",
     "AR-1328",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1343-runtime-live-provider-relay",
   "observed_dirty": 0,
   "observed_head": "ce2c2db068b05092f0f63291e0d94d4dbc9cda9c",
-  "owner": "",
+  "owner": "codex-asb-ar1343-replacement-20260923",
   "plan": "../plans/AR-1343-runtime-live-provider-relay.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Add the runtime live-provider relay service and per-attempt opaque factory acquisition required by asb run and sweep.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Runtime live-provider relay service and CLI acquisition",
-  "updated_at": "2026-09-23T12:45:01+00:00",
+  "updated_at": "2026-09-23T12:46:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1343-runtime-live-provider-relay"
 }
 ---
@@ -113,3 +113,5 @@ capabilities without bypassing the denied-network sandbox.
   clippy passed). Release ownerless/open for the bounded CLI acquisition follow-up; preserve
   spawn_verified_agent fail-closed until runtime backend, benchmark lease, observed namespace, and
   relay lifecycle API are implemented and verified.
+
+- 2026-09-23T12:46:22+00:00: Claimed by codex-asb-ar1343-replacement-20260923.
