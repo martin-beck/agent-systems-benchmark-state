@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1346](tasks/AR-1346-runtime-supervisor-provisioning.md): Runtime supervisor provisioning boundary | Add the production runtime supervisor boundary needed for safe live-provider CLI acquisition. | Implement the production supervisor-owned cross-crate provisioning boundary identified by AR-1343: pinned backend/live-gate discovery, benchmark ResourceLease, concrete egress allowlist, enrolled credential transport without disclosure, runtime-observed namespace rebind, launch attestation, and per-attempt relay lifecycle. Keep AR-1329 fail-closed until merged and post-merge verified. | codex-asb-ar1329-live-cli-luna56 |
+| P1 | [AR-1346](tasks/AR-1346-runtime-supervisor-provisioning.md): Runtime supervisor provisioning boundary | Add the production runtime supervisor boundary needed for safe live-provider CLI acquisition. | Cross-crate audit found the safe boundary is not yet implemented: asb-runtime cannot depend on asb-agents because asb-agents already depends on runtime; ResolvedCredential transport bytes are crate-private, while SandboxBackend::spawn_launch constructs the child command internally. Implement a new supervisor-owned composition boundary (likely dedicated crate or runtime credential injection trait) that keeps secret bytes opaque, then add CLI wiring/tests. Do not expose bytes or bypass NetworkPolicy::Deny. | codex-asb-ar1329-live-cli-luna56 |
 
 ## Open
 
