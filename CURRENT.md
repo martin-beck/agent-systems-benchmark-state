@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1343](tasks/AR-1343-runtime-live-provider-relay.md): Runtime live-provider relay service and CLI acquisition | Add the runtime live-provider relay service and per-attempt opaque factory acquisition required by asb run and sweep. | Implement the runtime-owned bounded live provider relay service and per-attempt CLI factory acquisition; keep AR-1329 fail-closed until merged and verified. | codex-asb-ar1343-replacement-20260923 |
+| P1 | [AR-1343](tasks/AR-1343-runtime-live-provider-relay.md): Runtime live-provider relay service and CLI acquisition | Add the runtime live-provider relay service and per-attempt opaque factory acquisition required by asb run and sweep. | Wire LiveProviderRelay and per-attempt LiveLaunchFactory acquisition into asb-cli run and sweep; preserve NetworkPolicy::Deny/offline/replay and cancellation teardown; then commit and run exact-head gates. | codex-asb-ar1343-replacement-20260923 |
 
 ## Open
 

@@ -10,7 +10,7 @@
     "AR-1340"
   ],
   "id": "AR-1343",
-  "next_action": "Implement the runtime-owned bounded live provider relay service and per-attempt CLI factory acquisition; keep AR-1329 fail-closed until merged and verified.",
+  "next_action": "Wire LiveProviderRelay and per-attempt LiveLaunchFactory acquisition into asb-cli run and sweep; preserve NetworkPolicy::Deny/offline/replay and cancellation teardown; then commit and run exact-head gates.",
   "observed_branch": "feature/ar-1343-runtime-live-provider-relay",
   "observed_dirty": 3,
   "observed_head": "d24221731891fb39f56118be9c5ae51364824517",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime live-provider relay service and per-attempt opaque factory acquisition required by asb run and sweep.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Runtime live-provider relay service and CLI acquisition",
-  "updated_at": "2026-09-23T12:41:36+00:00",
+  "updated_at": "2026-09-23T12:42:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1343-runtime-live-provider-relay"
 }
 ---
@@ -82,3 +82,10 @@ capabilities without bypassing the denied-network sandbox.
 
 - 2026-09-23T12:41:36+00:00: Recorded command exit 0; command argv SHA-256
   586e375516d3a41ae175d1db864f6e628fa402cb6999dc968023a2577d33a4bb.
+
+- 2026-09-23T12:42:12+00:00: Relay implementation now has bounded nonblocking accept/read,
+  authenticated exact-target forwarding, namespace and egress authorization, teardown/revoke, and 7
+  focused tests including positive synthetic TCP, malformed/oversized, expiry, revoke, timeout, and
+  duplicate cases. Full asb-runtime all-targets passed: 79 passed, 1 ignored. CLI currently has
+  live_provider flag but no LiveLaunchFactory/LiveProviderRelay call path; AR remains in progress
+  and AR-1329 fail-closed.

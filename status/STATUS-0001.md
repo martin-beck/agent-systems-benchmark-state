@@ -1775,7 +1775,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1343](../tasks/AR-1343-runtime-live-provider-relay.md): Runtime live-provider relay service and CLI acquisition | codex-asb-ar1343-replacement-20260923 | Add the runtime live-provider relay service and per-attempt opaque factory acquisition required by asb run and sweep. | Implement the runtime-owned bounded live provider relay service and per-attempt CLI factory acquisition; keep AR-1329 fail-closed until merged and verified. |
+| P1 | [AR-1343](../tasks/AR-1343-runtime-live-provider-relay.md): Runtime live-provider relay service and CLI acquisition | codex-asb-ar1343-replacement-20260923 | Add the runtime live-provider relay service and per-attempt opaque factory acquisition required by asb run and sweep. | Wire LiveProviderRelay and per-attempt LiveLaunchFactory acquisition into asb-cli run and sweep; preserve NetworkPolicy::Deny/offline/replay and cancellation teardown; then commit and run exact-head gates. |
 
 ### Open (4)
 
@@ -1819,4 +1819,3 @@ flowchart LR
 | P0 | [AR-1281](../tasks/AR-1281-supervised-cassette-lifecycle.md): Supervised cassette lifecycle execution | Unclaimed | Execute primary strict replay through a supervised runtime cassette lifecycle. | Promote after dependency verification; implement the complete supervised cassette path and lifecycle fault matrix from protected main. |
 | P0 | [AR-1283](../tasks/AR-1283-formal-lockfile.md): Formal lockfile CI drift repair | Unclaimed | Repair formal workspace lockfile drift that fails the locked CI gate. | Promote after dependency verification; regenerate and verify formal/Cargo.lock so hosted --locked formal tests do not attempt updates. |
 | P0 | [AR-1284](../tasks/AR-1284-runtime-strict-replay-lifecycle.md): Runtime-owned strict-replay lifecycle execution | Unclaimed | Connect authenticated replay transport to the runtime-owned primary strict-replay lifecycle. | Split a runtime-owned launch-factory/CLI entrypoint successor: current protected main has only caller-constructible ReplayTransportIssuer and SandboxBackend APIs, so AR-1284 cannot safely wire primary replay without fabricating authority. |
-| P0 | [AR-1292](../tasks/AR-1292-tla-provenance-repair.md): Pinned TLA+ artifact provenance repair | Unclaimed | Repair or formally retain the pinned TLA+ artifact provenance mismatch blocking formal assurance. | Await signed or attested immutable TLA+ v1.8.0 provenance, or deterministic source-build qualification for 142d0ba; do not update hash only. |
