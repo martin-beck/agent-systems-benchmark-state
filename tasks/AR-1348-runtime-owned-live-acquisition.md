@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1348-runtime-owned-live-acquisition",
-  "checkpoint_commit": "933e2d6c4bc5b86f8afdf57b59723132aaeff069",
+  "checkpoint_commit": "46d6a2e4995daa3cab815ca649565abd3f96d8bd",
   "claim_expires": "2026-09-23T17:59:20+00:00",
   "depends_on": [
     "AR-1327",
@@ -10,7 +10,7 @@
     "AR-1340"
   ],
   "id": "AR-1348",
-  "next_action": "Validation slice committed as 933e2d6. Next implement supervisor-owned lease and launch lifecycle around validated request: acquire Benchmark ResourceLease, construct only runtime-owned handoff/relay/token, revoke and release on every failure/drop. Add negative lease/gate/namespace/token/relay tests before any AR-1329 wiring; preserve NetworkPolicy::Deny.",
+  "next_action": "Supervisor now validates concrete target/identity and owns exclusive Benchmark ResourceLease acquisition/release. Next compose runtime-owned namespace handoff, launch token, relay binding, and LiveProviderAttempt teardown; add missing/stale/revoked/duplicate lifecycle tests before CLI integration. AR-1329 remains fail-closed.",
   "observed_branch": "feature/ar-1348-runtime-owned-live-acquisition",
   "observed_dirty": 1,
   "observed_head": "933e2d6c4bc5b86f8afdf57b59723132aaeff069",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the runtime-owned supervisor that acquires every live-provider authority and tears it down safely.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Runtime-owned live acquisition service",
-  "updated_at": "2026-09-23T16:02:52+00:00",
+  "updated_at": "2026-09-23T16:03:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1348-runtime-owned-live-acquisition"
 }
 ---
@@ -87,3 +87,7 @@ this service owns acquisition instead of accepting caller-built launch authority
 
 - 2026-09-23T16:02:52+00:00: Recorded command exit 0; command argv SHA-256
   ced87e6d0a4431237e7ed128e66d016545d91074ec1adf4b477e67a8e70b9290.
+
+- 2026-09-23T16:03:20+00:00: Signed+DCO commit 46d6a2e adds CpuSet-bound lease ownership to
+  LiveAcquisitionRequest. Focused live_supervisor tests pass 2/2, including duplicate reservation
+  rejection and release. fmt passed. No CLI wiring or direct egress; NetworkPolicy::Deny preserved.
