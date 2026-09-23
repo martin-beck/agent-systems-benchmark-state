@@ -7,16 +7,16 @@
 
 ## Portfolio overview
 
-**369 ARs tracked** across 7 active status categories.
+**369 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 5 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 49 |
 | **Planned** | Defined work awaiting promotion or dependencies | 64 |
 | **Future** | Deferred roadmap work | 1 |
-| **Done** | Accepted, integrated, and durably verified | 238 |
+| **Done** | Accepted, integrated, and durably verified | 239 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 11 |
 
@@ -436,7 +436,7 @@ flowchart LR
         AR_1341["AR-1341 - Done"]:::status_done
         AR_1342["AR-1342 - Done"]:::status_done
         AR_1343["AR-1343 - Open"]:::status_open
-        AR_1344["AR-1344 - In progress"]:::status_in_progress
+        AR_1344["AR-1344 - Done"]:::status_done
         AR_1345["AR-1345 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
@@ -1781,12 +1781,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1344](../tasks/AR-1344-runtime-cli-acquisition-contract.md): Runtime-owned CLI live acquisition contract | coordinator | Add the runtime-owned API and CLI integration needed for safe live-provider attempts. | Exact uncovered-line classification recorded: launch_factory misses include replay backend/authority alternate branches and LiveProviderAttempt lifecycle paths; live_relay misses are error conversion/display plus handoff/forwarding deadline branches; provider_egress misses are address-policy edge branches and relay timeout/error paths; live_namespace misses are gate/runtime observation and rebind branches; sandbox misses are live attestation/spawn/ownership teardown branches. Reachable negative/accessor branches have been covered; remaining live/sandbox branches are capability-gated or require a broad dedicated repair AR. Do not exclude files or weaken 90&#37;; PR remains unmergeable. |
-
 ### Open (5)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -1825,3 +1819,5 @@ flowchart LR
 | P0 | [AR-1276](../tasks/AR-1276-primary-replay-runtime.md): Primary replay runtime integration | Unclaimed | Integrate runtime-owned operation execution into the primary strict-replay command. | Promote after dependency verification; wire the primary replay command to runtime-issued operation execution and prove supervised lifecycle behavior. |
 | P0 | [AR-1277](../tasks/AR-1277-runtime-cli-replay-transport.md): Runtime-to-CLI replay transport boundary | Unclaimed | Provide a runtime-issued transport channel for primary strict replay. | Wire ReplayTransportClient into the primary replay dispatch and connect runtime-issued cassette service; add supervised egress/lifecycle evidence. |
 | P0 | [AR-1278](../tasks/AR-1278-primary-runtime-client.md): Primary replay runtime client handoff | Unclaimed | Connect the primary replay command to the runtime-issued transport client. | Promote after dependency verification; hand the runtime-issued replay client into primary argument dispatch and prove supervised lifecycle behavior. |
+| P0 | [AR-1279](../tasks/AR-1279-end-to-end-replay-runtime.md): End-to-end primary replay runtime handoff | Unclaimed | Implement end-to-end runtime-owned execution for primary strict replay. | Promote after dependency verification; implement transport plus primary runtime-client handoff from protected main and prove full supervised lifecycle. |
+| P0 | [AR-1280](../tasks/AR-1280-cross-crate-replay-entrypoint.md): Cross-crate replay process entrypoint | Unclaimed | Implement the cross-crate runtime process entrypoint for primary strict replay. | Extend replay-plan dispatch to invoke runtime-owned supervised process with argument-level command and cassette service; preserve denied egress/no-fallback and add lifecycle fault tests. Current signed head f92a86b provides bridge/binding baseline. |

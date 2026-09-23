@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1344-runtime-cli-acquisition-contract",
   "checkpoint_commit": "cd2d1e60b15142665ba3b72f9404df69f5c718da",
-  "claim_expires": "2026-09-23T17:17:03+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1339",
     "AR-1340",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1344-runtime-cli-acquisition-contract",
   "observed_dirty": 0,
   "observed_head": "cd2d1e60b15142665ba3b72f9404df69f5c718da",
-  "owner": "coordinator",
+  "owner": "",
   "plan": "../plans/AR-1344-runtime-cli-acquisition-contract.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Add the runtime-owned API and CLI integration needed for safe live-provider attempts.",
-  "task_revision": 238,
+  "task_revision": 239,
   "title": "Runtime-owned CLI live acquisition contract",
-  "updated_at": "2026-09-23T15:17:03+00:00",
+  "updated_at": "2026-09-23T15:17:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1344-runtime-cli-acquisition-contract"
 }
 ---
@@ -644,3 +644,8 @@ contract and its tests are merged and verified.
   owns coverage repair. Preserve fail-closed live-provider boundary and do not merge PR #260.
 
 - 2026-09-23T15:17:03+00:00: Claimed by coordinator.
+
+- 2026-09-23T15:17:08+00:00: PR #260 merged at a336d6744b1a82f36a706ec606b847c92d49cfd3; exact head
+  33d3153 signed+DCO; pre-merge checks and all seven post-merge workflows green (35879119685,
+  35879119639, 35879119638, 35879119631, 35879119496, 35879119619, 35879119606). AR-1345 coverage
+  repair completed stale-socket cleanup and 90.47% hosted-equivalent coverage.
