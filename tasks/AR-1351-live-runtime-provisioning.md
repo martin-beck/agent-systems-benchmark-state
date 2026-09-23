@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1351-live-runtime-provisioning",
   "checkpoint_commit": "c560cac1e3a691e250ee4d2f5afc2c1c3c3ec170",
-  "claim_expires": "2026-09-23T22:03:01+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1339",
     "AR-1340",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1351-live-runtime-provisioning",
   "observed_dirty": 0,
   "observed_head": "b710260a944e21e5b591203bdef00bdc9c0d019c",
-  "owner": "codex-asb-runtime-acquisition-successor-luna56",
+  "owner": "",
   "plan": "../plans/AR-1351-live-runtime-provisioning.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Add the private host/runtime provisioning seam for live acquisition.",
-  "task_revision": 103,
+  "task_revision": 104,
   "title": "Runtime-owned live provisioning",
-  "updated_at": "2026-09-23T20:04:26+00:00",
+  "updated_at": "2026-09-23T20:04:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1351-live-runtime-provisioning"
 }
 ---
@@ -329,3 +329,8 @@ runtime boundary; AR-1349 remains fail-closed until it is merged and verified.
   seven workflows passed at the exact merge SHA — Repository quality, Rust verification, Emulated
   aarch64 portability, Formal assurance, Fault assurance, Hosted portability/native qualification,
   and Huawei MIT source headers. No post-merge failures.
+
+- 2026-09-23T20:04:28+00:00: Completed: private runtime-owned live provisioning merged in protected
+  PR #262 at c560cac1 from exact signed+DCO head b710260. Pre-merge exact-head checks all green, and
+  all seven post-merge protected-main workflows passed at c560cac1. Workspace coverage repair raised
+  enforced line coverage to 90.57% without gate weakening.
