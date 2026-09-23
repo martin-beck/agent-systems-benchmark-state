@@ -12,17 +12,17 @@
   "id": "AR-1348",
   "next_action": "Validation slice committed as 933e2d6. Next implement supervisor-owned lease and launch lifecycle around validated request: acquire Benchmark ResourceLease, construct only runtime-owned handoff/relay/token, revoke and release on every failure/drop. Add negative lease/gate/namespace/token/relay tests before any AR-1329 wiring; preserve NetworkPolicy::Deny.",
   "observed_branch": "feature/ar-1348-runtime-owned-live-acquisition",
-  "observed_dirty": 2,
-  "observed_head": "a336d6744b1a82f36a706ec606b847c92d49cfd3",
+  "observed_dirty": 1,
+  "observed_head": "933e2d6c4bc5b86f8afdf57b59723132aaeff069",
   "owner": "codex-asb-ar1329-live-cli-luna56",
   "plan": "../plans/AR-1348-runtime-owned-live-acquisition.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the runtime-owned supervisor that acquires every live-provider authority and tears it down safely.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Runtime-owned live acquisition service",
-  "updated_at": "2026-09-23T16:02:13+00:00",
+  "updated_at": "2026-09-23T16:02:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1348-runtime-owned-live-acquisition"
 }
 ---
