@@ -6,6 +6,7 @@
   "depends_on": [
     "AR-1359"
   ],
+  "id": "AR-1362",
   "next_action": "Promote after AR-1359 is done, then implement durable runtime-owned authority enrollment state consumed by the control receipt source.",
   "observed_branch": "feature/ar-1362-runtime-authority-enrollment-store",
   "observed_dirty": 0,
