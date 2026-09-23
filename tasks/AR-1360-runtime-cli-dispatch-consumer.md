@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1360-runtime-cli-dispatch-consumer",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-24T00:58:13+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1359"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1360-runtime-cli-dispatch-consumer",
   "observed_dirty": 0,
   "observed_head": "be9af3d6fb22818e95f51b9640b10c5eb6e043f3",
-  "owner": "codex-asb-runtime-attested-enrollment-luna56",
+  "owner": "",
   "plan": "../plans/AR-1360-runtime-cli-dispatch-consumer.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Connect authenticated runtime enrollment receipts to asb run and sweep without exposing authority.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Runtime CLI dispatch consumer",
-  "updated_at": "2026-09-23T23:02:13+00:00",
+  "updated_at": "2026-09-23T23:02:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1360-runtime-cli-dispatch-consumer"
 }
 ---
@@ -44,3 +44,10 @@ behavior, or let CLI arguments synthesize provider authority.
 
 - 2026-09-23T23:02:13+00:00: Recorded command exit 0; command argv SHA-256
   3efcb93fc4c8985c1a6fe4b3e5dff0b8822462f5ef60f4619564e0f9d85a0f23.
+
+- 2026-09-23T23:02:32+00:00: Blocked after exact protected-main audit at be9af3d6: asb-control
+  exposes ControlClient but no receipt/validated-chain control call; asb-runtime exposes receipt
+  ingestion only, while acquire_from_record and LiveProviderBootstrapSpec remain crate-private. CLI
+  therefore cannot safely consume a runtime receipt or obtain runtime-owned policy/tools/lease/relay
+  authority. Do not expose caller-supplied authority. Create successor AR for authenticated control
+  receipt source and runtime-owned dispatch factory, then resume CLI run/sweep consumer.
