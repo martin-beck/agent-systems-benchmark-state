@@ -9,7 +9,7 @@
     "AR-1342"
   ],
   "id": "AR-1345",
-  "next_action": "Monitor PR #260 exact-head hosted CI at 33d3153013d4; do not merge or release until every required hosted check passes.",
+  "next_action": "Monitor all required hosted checks at exact head 33d3153013d4; do not merge or release until all pass.",
   "observed_branch": "feature/ar-1345-runtime-live-coverage-repair",
   "observed_dirty": 0,
   "observed_head": "33d3153013d4b3de9328260b8eac7903cde5bf07",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair runtime live-provider coverage without weakening the mandatory quality floor.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Runtime live-provider coverage repair",
-  "updated_at": "2026-09-23T14:49:39+00:00",
+  "updated_at": "2026-09-23T14:50:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1345-runtime-live-coverage-repair"
 }
 ---
@@ -144,3 +144,9 @@ non-authoritative.
 
 - 2026-09-23T14:49:39+00:00: Recorded command exit 0; command argv SHA-256
   a68152f8f4e6a7aa12b09352534b7320e51fff108468c937c665e89579dd9b92.
+
+- 2026-09-23T14:50:08+00:00: Remote branch verification: git ls-remote confirms PR #260
+  feature/ar-1344-runtime-cli-acquisition-contract at 33d3153013d4b3de9328260b8eac7903cde5bf07.
+  Commit checks page shows Rust, repository quality/policy coverage, headers, emulated aarch64,
+  hosted portability, formal, AWQ, fault, fuzz, and mutation jobs loading/starting at this exact
+  head; hosted results pending.

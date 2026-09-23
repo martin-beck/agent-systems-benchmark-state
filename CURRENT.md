@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1345](tasks/AR-1345-runtime-live-coverage-repair.md): Runtime live-provider coverage repair | Repair runtime live-provider coverage without weakening the mandatory quality floor. | Monitor PR #260 exact-head hosted CI at 33d3153013d4; do not merge or release until every required hosted check passes. | asb-ar1345-coverage-repair-luna56 |
+| P1 | [AR-1345](tasks/AR-1345-runtime-live-coverage-repair.md): Runtime live-provider coverage repair | Repair runtime live-provider coverage without weakening the mandatory quality floor. | Monitor all required hosted checks at exact head 33d3153013d4; do not merge or release until all pass. | asb-ar1345-coverage-repair-luna56 |
 
 ## Open
 
