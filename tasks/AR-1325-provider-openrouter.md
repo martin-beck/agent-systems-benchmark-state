@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define one pinned credential-free OpenRouter provider profile for compatible ASB agent adapters.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Support a shared OpenRouter provider",
-  "updated_at": "2026-09-23T06:05:33+00:00",
+  "updated_at": "2026-09-23T06:05:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1325-provider-openrouter"
 }
 ---
@@ -78,3 +78,6 @@ unsupported or lossy translations fail closed.
 
 - 2026-09-23T06:05:33+00:00: Recorded command exit 128; command argv SHA-256
   f3aaef49bba53992737bac2a744e12e1aab7ab8ac60bdfee48145262151bbb58.
+
+- 2026-09-23T06:05:55+00:00: Recorded command exit 0; command argv SHA-256
+  fe0152892fc4e958afca852964e0a4727ca3796302eec45eebca2caaad7cf763.
