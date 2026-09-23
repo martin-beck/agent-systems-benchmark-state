@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1349-live-provider-runtime-service",
   "checkpoint_commit": "359f15af52aa2b0b31bb091b945e7de933960006",
-  "claim_expires": "",
+  "claim_expires": "2026-09-23T21:01:05+00:00",
   "depends_on": [
     "AR-1327",
     "AR-1328",
@@ -16,15 +16,15 @@
   "observed_branch": "feature/ar-1349-live-provider-runtime-service",
   "observed_dirty": 0,
   "observed_head": "359f15af52aa2b0b31bb091b945e7de933960006",
-  "owner": "",
+  "owner": "codex-asb-ar1329-live-cli-luna56",
   "plan": "../plans/AR-1349-live-provider-runtime-service.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 159,
+  "task_revision": 160,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T18:33:07+00:00",
+  "updated_at": "2026-09-23T19:01:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
@@ -486,3 +486,5 @@ qualified.
   codex-asb-ar1329-live-cli-luna56. Lease expired at 2026-09-23T18:30:27Z; live audit found no
   AR-1349 process and clean checkpoint 359f15a. Recover ownerless/open while preserving AR-1350
   prerequisite and fail-closed evidence.
+
+- 2026-09-23T19:01:05+00:00: Claimed by codex-asb-ar1329-live-cli-luna56.
