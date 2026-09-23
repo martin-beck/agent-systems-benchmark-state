@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the protected-main merge-tree admission defect exposed after the OpenRouter provider merge.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Repair protected-main merge-tree admission after OpenRouter merge",
-  "updated_at": "2026-09-23T06:30:30+00:00",
+  "updated_at": "2026-09-23T06:35:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1337-protected-main-merge-tree-repair"
 }
 ---
@@ -59,3 +59,6 @@ remaining evidence limits without private paths or credentials.
   Exact-head checks: headers, platform, retained faults, bounded fuzz, Kani, Loom, mutation
   sentinels and AWQ shadow SUCCESS; emulated aarch64, policy/coverage, Rust and TLC/Alloy remain
   pending. Independent review still required; no merge performed.
+
+- 2026-09-23T06:35:51+00:00: Recorded command exit 0; command argv SHA-256
+  4557a5bdf39419249554168714ca3a7ed501fb56a58acf6a991d33e3d00b1c75.
