@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add runtime-owned enrollment and opaque live CLI dispatch.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Runtime enrollment and CLI dispatch",
-  "updated_at": "2026-09-23T20:48:38+00:00",
+  "updated_at": "2026-09-23T20:49:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1353-runtime-enrollment-cli-dispatch"
 }
 ---
@@ -39,3 +39,6 @@ AR-1329 stays fail-closed until this seam is merged.
 
 - 2026-09-23T20:48:28+00:00: Recorded command exit 0; command argv SHA-256
   7ac89627b5c72731bb3d8bca3baa4957712f574223322264931f0d213dad0070.
+
+- 2026-09-23T20:49:04+00:00: Recorded command exit 0; command argv SHA-256
+  f204ba5882f7d182e4967055864a0241f63455c29baf9adecb87d8076a507971.
