@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1358](tasks/AR-1358-runtime-enrollment-cli-dispatch.md): Runtime enrollment CLI dispatch | Consume runtime-attested enrollment records in asb run and sweep without exposing authority. | Promote after AR-1357 is done, then wire asb run/sweep through runtime-attested enrollment records with fail-closed positive and negative tests. | codex-asb-runtime-attested-enrollment-luna56 |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -10,7 +16,6 @@ Never edit this file directly.
 | P0 | [AR-1212](tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Teach users to test configured-agent benchmark eligibility without running an agent. | Implement the offline tutorial for checking agent benchmark readiness under the current configuration. | - |
 | P0 | [AR-1314](tasks/AR-1314-optional-bundle-signing-development-release.md): Optional runtime-bundle signing for development and tagged releases | Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile. | Wait for PR #232 exact-head CI after schema-v3 repair; if all required checks pass, independently review and merge through the established workflow, then reconcile AR-1314. Preserve signature-required defaults. | - |
 | P0 | [AR-1316](tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | Publish the verified ASB agent catalog required by the first-run setup wizard. | Persist the authenticated catalog snapshot/generation and complete live ASB-to-asb-tui wizard evidence; keep all entries unavailable until a verified release closure exists. | - |
-| P0 | [AR-1358](tasks/AR-1358-runtime-enrollment-cli-dispatch.md): Runtime enrollment CLI dispatch | Consume runtime-attested enrollment records in asb run and sweep without exposing authority. | Promote after AR-1357 is done, then wire asb run/sweep through runtime-attested enrollment records with fail-closed positive and negative tests. | - |
 | P1 | [AR-1329](tasks/AR-1329-live-provider-run-execution.md): Live-provider run execution for real agents | Execute real agents against the selected provider through asb run and sweep with credential-free resolution. | BLOCKED pending coordinator-created repair AR: implement runtime-owned LiveProviderRuntimeService acquisition for production asb run/sweep. Service must resolve pinned provider policy to concrete public target(s), obtain credential through enrolled environment channel without evidence disclosure, construct attested child namespace handoff and relay listener, reserve ResourceLease, create SandboxBackend with pinned live gate, attest and issue one LiveProviderAttempt per scheduler attempt, and teardown on cancellation. Then AR-1329 can wire dispatch --provider-selection/--live-provider while preserving NetworkPolicy::Deny and direct/alternate egress denial. | - |
 
 ## Blocked

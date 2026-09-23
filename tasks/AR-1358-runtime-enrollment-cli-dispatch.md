@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1358-runtime-enrollment-cli-dispatch",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T00:26:05+00:00",
   "depends_on": [
     "AR-1357"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "codex-asb-runtime-attested-enrollment-luna56",
   "plan": "../plans/AR-1358-runtime-enrollment-cli-dispatch.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Consume runtime-attested enrollment records in asb run and sweep without exposing authority.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Runtime enrollment CLI dispatch",
-  "updated_at": "2026-09-23T22:26:02+00:00",
+  "updated_at": "2026-09-23T22:26:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1358-runtime-enrollment-cli-dispatch"
 }
 ---
@@ -33,3 +33,5 @@ gates.
 
 - 2026-09-23T22:26:02+00:00: AR-1357 is done with merge and post-merge evidence; promote the
   runtime-owned CLI dispatch consumer repair.
+
+- 2026-09-23T22:26:05+00:00: Claimed by codex-asb-runtime-attested-enrollment-luna56.
