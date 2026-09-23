@@ -12,9 +12,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 4 |
+| **Open** | Dependency-ready and available to claim | 5 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 49 |
-| **Planned** | Defined work awaiting promotion or dependencies | 65 |
+| **Planned** | Defined work awaiting promotion or dependencies | 64 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 236 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -434,7 +434,7 @@ flowchart LR
         AR_1339["AR-1339 - Done"]:::status_done
         AR_1340["AR-1340 - Done"]:::status_done
         AR_1341["AR-1341 - Done"]:::status_done
-        AR_1342["AR-1342 - Planned"]:::status_planned
+        AR_1342["AR-1342 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1765,7 +1765,7 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (4)
+### Open (5)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1773,6 +1773,7 @@ flowchart LR
 | P0 | [AR-1314](../tasks/AR-1314-optional-bundle-signing-development-release.md): Optional runtime-bundle signing for development and tagged releases | Unclaimed | Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile. | Wait for PR #232 exact-head CI after schema-v3 repair; if all required checks pass, independently review and merge through the established workflow, then reconcile AR-1314. Preserve signature-required defaults. |
 | P0 | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | Unclaimed | Publish the verified ASB agent catalog required by the first-run setup wizard. | Persist the authenticated catalog snapshot/generation and complete live ASB-to-asb-tui wizard evidence; keep all entries unavailable until a verified release closure exists. |
 | P1 | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md): Live-provider run execution for real agents | Unclaimed | Execute real agents against the selected provider through asb run and sweep with credential-free resolution. | Coordinator should create proposed AR-1342 (successor dependency for AR-1329): add runtime-owned CLI live-relay launch factory/acquisition. Required API: issue validated ProviderEgressPolicy/Handoff plus relay listener, NamespaceIdentity-bound LiveProviderNamespaceHandoff, SandboxBackend, ResourceLease, and child launch context; then AR-1329 consumes it. Preserve NetworkPolicy::Deny, runtime-observed child namespace late gate, direct/alternate egress denial, credential non-disclosure, cancellation/teardown, and offline default. Until AR-1342 is complete, keep live run/sweep fail-closed. |
+| P1 | [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md): Runtime-owned live relay factory and CLI integration | Unclaimed | Create the runtime-owned relay factory and opaque launch context required for safe live CLI execution. | Promote now that provider contracts, the runtime egress backend, and attested handoff are complete; implement the factory without weakening offline/replay denial, then return to AR-1329. |
 
 ### Blocked (49)
 
@@ -1809,4 +1810,3 @@ flowchart LR
 | P0 | [AR-1284](../tasks/AR-1284-runtime-strict-replay-lifecycle.md): Runtime-owned strict-replay lifecycle execution | Unclaimed | Connect authenticated replay transport to the runtime-owned primary strict-replay lifecycle. | Split a runtime-owned launch-factory/CLI entrypoint successor: current protected main has only caller-constructible ReplayTransportIssuer and SandboxBackend APIs, so AR-1284 cannot safely wire primary replay without fabricating authority. |
 | P0 | [AR-1292](../tasks/AR-1292-tla-provenance-repair.md): Pinned TLA+ artifact provenance repair | Unclaimed | Repair or formally retain the pinned TLA+ artifact provenance mismatch blocking formal assurance. | Await signed or attested immutable TLA+ v1.8.0 provenance, or deterministic source-build qualification for 142d0ba; do not update hash only. |
 | P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Unclaimed | Repair the state-repository TLA admission runner and truthful worktree metadata. | Blocked: AR-1307 remote head ab485f767 != required 969eef058. AR-1308 preflight had 4.9 GiB free vs 16 GiB minimum and missing lock/JDK/TLC at runtime root. Reopen only with exact input bundle and passing preflight; do not run TLC locally. |
-| P0 | [AR-1305](../tasks/AR-1305-image-native-user-session.md): Image-native user-session support | Unclaimed | Qualify image-native D-Bus user-session support for required TLC containment. | Blocked: guestfish read-only inspection fails before access because /usr/bin/supermin exits 1; approved root has ~4.9 GiB free, preventing safe image repair. Reopen only with reviewed working appliance/capacity; no portable fallback, AR-1304 limit changes, or qualification. |
