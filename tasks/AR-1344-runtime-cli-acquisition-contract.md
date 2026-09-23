@@ -11,17 +11,17 @@
   "id": "AR-1344",
   "next_action": "Coverage repair is beyond AR-1344 scope: local cargo llvm-cov workspace report is 88.42% lines, still below 90%, with residual broad deficits in launch_factory 78.24%, live_namespace 87.86%, provider_egress 88.25%, sandbox 84.89%, supervisor 75.39%, and unrelated loopback_sidecar 84.50%. Plan/assign a coverage-repair successor before PR #260 can merge; do not weaken floor or forge capability fixtures.",
   "observed_branch": "feature/ar-1344-runtime-cli-acquisition-contract",
-  "observed_dirty": 1,
-  "observed_head": "7b8d2966b8f4afb4a20f7be21eefdd01d47557b8",
+  "observed_dirty": 0,
+  "observed_head": "6b06b12639beb29909621a324a228976eea23b3b",
   "owner": "codex-asb-ar1344-factory-refactor-20260923",
   "plan": "../plans/AR-1344-runtime-cli-acquisition-contract.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime-owned API and CLI integration needed for safe live-provider attempts.",
-  "task_revision": 197,
+  "task_revision": 198,
   "title": "Runtime-owned CLI live acquisition contract",
-  "updated_at": "2026-09-23T14:04:28+00:00",
+  "updated_at": "2026-09-23T14:04:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1344-runtime-cli-acquisition-contract"
 }
 ---
