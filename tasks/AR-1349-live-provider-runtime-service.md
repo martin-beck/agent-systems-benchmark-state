@@ -13,7 +13,7 @@
   "id": "AR-1349",
   "next_action": "Implement the production runtime-owned acquisition constructor: keep LiveProviderResolver authority-free, add a private resolver implementation only once a safe final credential sink exists, then atomically acquire gate/backend, lease, target/egress, observed namespace, token, relay, and opaque attempt with rollback tests. Current resolver seam is validated; CLI run/sweep remains fail-closed.",
   "observed_branch": "feature/ar-1349-live-provider-runtime-service",
-  "observed_dirty": 3,
+  "observed_dirty": 4,
   "observed_head": "359f15af52aa2b0b31bb091b945e7de933960006",
   "owner": "codex-asb-ar1329-live-cli-luna56",
   "plan": "../plans/AR-1349-live-provider-runtime-service.md",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 132,
+  "task_revision": 133,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T17:10:35+00:00",
+  "updated_at": "2026-09-23T17:10:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
