@@ -9,17 +9,17 @@
   "id": "AR-1339",
   "next_action": "Monitor PR #256 at 0c291a12a98d0b4bcd856f484eb1068361be9107 for all hosted checks and independent review; do not merge until every required check is green.",
   "observed_branch": "feature/ar-1339-live-provider-egress-backend",
-  "observed_dirty": 1,
-  "observed_head": "90d50561ee76df6711a2235c0ad4feccc55fc6e5",
+  "observed_dirty": 0,
+  "observed_head": "0c291a12a98d0b4bcd856f484eb1068361be9107",
   "owner": "codex-asb-ar1339-20260923",
   "plan": "../plans/AR-1339-live-provider-egress-backend.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the runtime-owned authenticated backend for explicit live provider egress.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Runtime-owned live-provider egress backend",
-  "updated_at": "2026-09-23T09:46:04+00:00",
+  "updated_at": "2026-09-23T09:46:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1339-live-provider-egress-backend"
 }
 ---
