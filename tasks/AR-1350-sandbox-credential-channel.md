@@ -10,7 +10,7 @@
     "AR-1347"
   ],
   "id": "AR-1350",
-  "next_action": "PR #261 is published from clean exact head 709dae14b3ddecc143af4bcb722c3c4250412225, based on protected origin/main a336d6744b1a82f36a706ec606b847c92d49cfd3. The diff contains only neutral sealed-FD credential-channel/runtime files; no live_service or AR-1349 files. SandboxCredentialBinding::new is crate-private and public launch revalidates the runtime-owned binding; bubblewrap receives only numeric --args memfd, with target binding, input erasure, cleanup, and positive/negative tests. Focused sandbox_credential (2 passed), full locked workspace tests, fmt check, clippy -D warnings, rustdoc -D warnings, and release build passed. Next: wait for exact-head CI and independent review on PR #261; merge only when required checks are green, then post-merge verify and release AR-1350. AR-1349 remains downstream.",
+  "next_action": "PR #261 exact head remains 709dae14b3ddecc143af4bcb722c3c4250412225. Hosted Rust verification failed only at pre-existing gemini::malformed_ready_marker_fails_fast_and_cleans_run_root elapsed<1s timing assertion; report was 187 passed, 1 failed. No AR-1350 code failure or test weakening is authorized. Dispatch an exact-head verify.yml rerun, record its run ID, and monitor all required checks; merge only after the rerun and every required check is green.",
   "observed_branch": "feature/ar-1350-sandbox-credential-channel",
   "observed_dirty": 0,
   "observed_head": "709dae14b3ddecc143af4bcb722c3c4250412225",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement a sandbox-owned sealed-FD credential channel for live provider children.",
-  "task_revision": 80,
+  "task_revision": 81,
   "title": "Sandbox-owned credential channel",
-  "updated_at": "2026-09-23T18:01:25+00:00",
+  "updated_at": "2026-09-23T18:01:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1350-sandbox-credential-channel"
 }
 ---
@@ -243,3 +243,8 @@ private runtime channel before AR-1349 can safely acquire attempts or wire
   18a62e49fb27394977951911cf57ef676d0247435a837d7a14867e81bf7c850a.
 
 - 2026-09-23T18:01:25+00:00: Heartbeat by codex-asb-ar1350-sandbox-channel-luna56.
+
+- 2026-09-23T18:01:40+00:00: Recorded hosted PR #261 Rust failure: gemini
+  malformed_ready_marker_fails_fast_and_cleans_run_root failed its elapsed<1s timing assertion; 187
+  passed and 1 failed. This is an existing timing-sensitive test failure, not evidence to weaken the
+  gate. Exact head remains unchanged.
