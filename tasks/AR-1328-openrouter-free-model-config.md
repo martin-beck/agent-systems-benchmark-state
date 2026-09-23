@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1328-openrouter-free-model-config",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "2aa39d98553e7d5c25a8cc85decb4a17e58242ba",
   "claim_expires": "2026-09-23T09:43:12+00:00",
   "depends_on": [
     "AR-1325",
@@ -9,7 +9,7 @@
     "AR-1100"
   ],
   "id": "AR-1328",
-  "next_action": "Add --use-config to plan/run/sweep and bind loaded OpenRouter configuration to experiment agent/model before launch; then run locked full CLI/config tests and signed PR.",
+  "next_action": "Monitor PR #254 exact-head CI; after merge verify post-merge checks and then close AR-1328 with durable evidence.",
   "observed_branch": "feature/ar-1328-openrouter-free-model-config",
   "observed_dirty": 0,
   "observed_head": "2c392a30e47da237e35f3b4e85b8342171fd55a6",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist the per-user OpenRouter free-model configuration and credential-free key enrollment.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "OpenRouter free-model user configuration and key enrollment",
-  "updated_at": "2026-09-23T07:43:39+00:00",
+  "updated_at": "2026-09-23T07:43:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1328-openrouter-free-model-config"
 }
 ---
@@ -113,3 +113,12 @@ configurations fail closed.
 
 - 2026-09-23T07:43:29+00:00: Recorded command exit 0; command argv SHA-256
   9a7d10d310c0482bfb5f5ef0dd112ea18645d6bf49884a05de2f4d79aa3367c4.
+
+- 2026-09-23T07:43:57+00:00: Implemented and pushed signed+DCO commit 2aa39d9 and opened PR #254.
+  Added credential-free OpenRouterFreeModelConfig persistence/enrollment, strict model
+  snapshot/endpoint/credential binding, config command, provider-plan --use-config, and
+  plan/run/sweep --use-config. Evidence: cargo fmt check; cargo test --locked --workspace passed;
+  focused workflow transcript and asb-cli/asb-config tests passed; isolated XDG live
+  config+provider-plan smoke passed without a key or network contact. Earlier cargo test invocation
+  failed transiently with exit 101 while the workspace compile was still progressing; the same
+  locked command completed successfully on rerun.
