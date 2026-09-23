@@ -2,19 +2,19 @@
 {
   "branch": "feature/ar-1324-auth-helper-control-contract",
   "checkpoint_commit": "5abd8c7c2d2a6a38e2d9be9340f0eb5e16f8807a",
-  "claim_expires": "2026-09-23T07:45:07+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1324",
   "next_action": "Monitor authoritative pull_request checks for PR #248 at 5abd8c7; merge only after all required checks pass, then perform ASB\u2194asb-tui first-user/live-provider wizard acceptance.",
-  "owner": "codex",
+  "owner": "",
   "plan": "../plans/AR-1324.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Own the ASB control and runner backend for safe credential-helper invocation.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Authenticated credential-helper control contract",
-  "updated_at": "2026-09-23T05:59:29+00:00",
+  "updated_at": "2026-09-23T06:10:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1324-auth-helper-control-contract"
 }
 ---
@@ -122,3 +122,6 @@ never receive a raw credential or execute an arbitrary path.
 - 2026-09-23T05:59:29+00:00: Hosted coverage remained 89.98% despite local margin, so added explicit
   tests for all helper environment binding paths through a safe injectable value seam. Targeted test
   and clippy pass; pushed 5abd8c7. Awaiting fresh PR checks.
+
+- 2026-09-23T06:10:58+00:00: PR #248 merged through signed integration flow at 6b06f0e; exact-head
+  required checks all green. Proceed to first-user wizard acceptance.
