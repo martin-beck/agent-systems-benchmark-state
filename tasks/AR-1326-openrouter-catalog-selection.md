@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Advertise the OpenRouter profile in the CLI provider catalog and accept it in provider-plan selection.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Select OpenRouter through the CLI provider catalog",
-  "updated_at": "2026-09-23T07:02:13+00:00",
+  "updated_at": "2026-09-23T07:02:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1326-openrouter-catalog-selection"
 }
 ---
@@ -133,3 +133,6 @@ the fail-closed content-address checks.
 - 2026-09-23T07:02:13+00:00: Post-merge transition recorded. Rust failure is an existing
   timing-flake candidate, not an OpenRouter-specific failure; exact test passes locally serially.
   Merge is complete but AR acceptance remains pending repair/rerun and remaining workflows.
+
+- 2026-09-23T07:02:18+00:00: Recorded command exit 1; command argv SHA-256
+  e443b09ae650958d9f0bdcb3fb298485b41ea5c90d3dad46ada881ae3623f52e.
