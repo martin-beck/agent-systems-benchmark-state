@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair AR-1340 so live relay capabilities require runtime-observed child namespace agreement.",
-  "task_revision": 62,
+  "task_revision": 63,
   "title": "Runtime-observed namespace attestation repair",
-  "updated_at": "2026-09-23T11:02:41+00:00",
+  "updated_at": "2026-09-23T11:02:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1341-runtime-observed-namespace-repair"
 }
 ---
@@ -199,3 +199,6 @@ this task.
   Focused live namespace tests (7) and full workspace fmt/clippy/test/doc/release build passed;
   workspace tests reported 188 passed, 1 ignored in asb-agents and 69 passed, 1 ignored in
   asb-runtime, with documented environment-only ignores.
+
+- 2026-09-23T11:02:50+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
