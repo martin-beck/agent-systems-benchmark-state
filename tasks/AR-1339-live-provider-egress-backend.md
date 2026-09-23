@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the runtime-owned authenticated backend for explicit live provider egress.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Runtime-owned live-provider egress backend",
-  "updated_at": "2026-09-23T09:32:52+00:00",
+  "updated_at": "2026-09-23T09:36:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1339-live-provider-egress-backend"
 }
 ---
@@ -54,3 +54,6 @@ that missing boundary so live provider execution can be enabled safely.
 - 2026-09-23T09:32:52+00:00: Observed signed security-hardening head
   90d50561ee76df6711a2235c0ad4feccc55fc6e5 for PR #256. Durable state remains in_progress pending
   hosted checks and independent review.
+
+- 2026-09-23T09:36:16+00:00: Recorded command exit 0; command argv SHA-256
+  4bb64dde06ee231ce6820b728d8edc001c8ce3c8d8c8902de75e218b411a6ab1.
