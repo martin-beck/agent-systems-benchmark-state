@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime-owned API and CLI integration needed for safe live-provider attempts.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Runtime-owned CLI live acquisition contract",
-  "updated_at": "2026-09-23T13:02:21+00:00",
+  "updated_at": "2026-09-23T13:02:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1344-runtime-cli-acquisition-contract"
 }
 ---
@@ -112,3 +112,6 @@ contract and its tests are merged and verified.
 
 - 2026-09-23T13:02:21+00:00: Recorded command exit 0; command argv SHA-256
   73d005d4c4983870f0c5405c6c97dffbf521d57825b14d75dae888988fbdcd03.
+
+- 2026-09-23T13:02:36+00:00: Recorded command exit 0; command argv SHA-256
+  66af190091b26d14bdbe2fa3e77c8512b211945518fb80bde35c524ee336f89e.
