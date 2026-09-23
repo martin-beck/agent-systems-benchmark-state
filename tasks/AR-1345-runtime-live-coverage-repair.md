@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1345-runtime-live-coverage-repair",
-  "checkpoint_commit": "cd2d1e60b15142665ba3b72f9404df69f5c718da",
+  "checkpoint_commit": "33d3153013d4b3de9328260b8eac7903cde5bf07",
   "claim_expires": "2026-09-23T16:28:39+00:00",
   "depends_on": [
     "AR-1339",
@@ -9,7 +9,7 @@
     "AR-1342"
   ],
   "id": "AR-1345",
-  "next_action": "Run hosted-equivalent parallel and serial policy coverage, then full focused gates; do not push until all pass.",
+  "next_action": "Monitor PR #260 exact-head hosted CI at 33d3153013d4; do not merge or release until every required hosted check passes.",
   "observed_branch": "feature/ar-1345-runtime-live-coverage-repair",
   "observed_dirty": 0,
   "observed_head": "33d3153013d4b3de9328260b8eac7903cde5bf07",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair runtime live-provider coverage without weakening the mandatory quality floor.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Runtime live-provider coverage repair",
-  "updated_at": "2026-09-23T14:49:02+00:00",
+  "updated_at": "2026-09-23T14:49:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1345-runtime-live-coverage-repair"
 }
 ---
@@ -131,3 +131,13 @@ non-authoritative.
 
 - 2026-09-23T14:49:02+00:00: Recorded command exit 0; command argv SHA-256
   9af6224ac05605f2b9e03915a5403e1505f64eecb3c223d94b82019fcac6b92f.
+
+- 2026-09-23T14:49:24+00:00: Repaired exact-head stale Unix socket finding. LiveProviderRelay::bind
+  now uses a bounded RAII pathname cleanup guard covering nonblocking setup, permission, namespace
+  validation, deadline, and ProviderEgressRelay::new failures; successful construction disarms it.
+  Added positive/negative tests for revoked namespace constructor cleanup, connector-constructor
+  cleanup, and stale-path reuse. Signed+DCO head 33d3153 verified clean. Hosted-equivalent parallel
+  cargo llvm-cov --locked --workspace --all-targets --fail-under-lines 90 passed at 90.47% lines
+  (57,607 covered, 5,489 missed; 88.54% regions); serial env RUST_TEST_THREADS=1 comparison also
+  passed at 90.47%. fmt, clippy, full asb-runtime tests, and focused relay tests passed.
+  Fast-forwarded PR #260 branch cd2d1e6..33d3153 without force push.
