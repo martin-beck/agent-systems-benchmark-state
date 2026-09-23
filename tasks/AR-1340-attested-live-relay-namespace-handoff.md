@@ -7,7 +7,7 @@
     "AR-1339"
   ],
   "id": "AR-1340",
-  "next_action": "Promote after AR-1339 is done; implement the attested namespace-bound relay handoff and descendant-egress denial evidence for AR-1329 to consume.",
+  "next_action": "AR-1339 is done at protected main 229941f; complete and verify the namespace-bound child handoff, descendant-egress denial, and fail-closed CLI integration for AR-1329.",
   "observed_branch": "feature/ar-1340-attested-live-relay-handoff",
   "observed_dirty": 2,
   "observed_head": "229941f013ad45a21e746a052bc4ae8ec531cfd7",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind the live provider relay to an attested child namespace and integrate it without weakening offline or replay denial.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Attested live-relay namespace and child handoff",
-  "updated_at": "2026-09-23T10:10:15+00:00",
+  "updated_at": "2026-09-23T10:10:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1340-attested-live-relay-handoff"
 }
 ---
@@ -61,3 +61,8 @@ public coordination state or runtime evidence.
 
 - 2026-09-23T10:10:15+00:00: Recorded command exit 1; command argv SHA-256
   f3a7e017c7ea861cf69643892b0c105e01a3a5d6e9265d19cf7f90044f595981.
+
+- 2026-09-23T10:10:28+00:00: Metadata correction only: AR-1339 is done and its protected merge
+  checkpoint is 229941f013ad45a21e746a052bc4ae8ec531cfd7. Lease remains valid; implementation worker
+  is active in the declared AR-1340 worktree with dirty=2 (live_namespace.rs and lib.rs), so no
+  recovery or ownership change was performed.
