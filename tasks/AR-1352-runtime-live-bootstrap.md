@@ -7,7 +7,7 @@
     "AR-1351"
   ],
   "id": "AR-1352",
-  "next_action": "Focused live_service tests now pass 9/9 after fixing the private test assertion and removing the unused InvalidToolPin variant. Run runtime/full gates, independently review the bootstrap diff, then commit signed+DCO.",
+  "next_action": "Repair or rerun the workspace gate after the recorded asb-cli state-root ownership collision; then independently review the clean bootstrap diff, commit signed+DCO, and publish.",
   "observed_branch": "feature/ar-1352-runtime-live-bootstrap",
   "observed_dirty": 1,
   "observed_head": "2ea6e6422ea61bc9e58a0144ac56713182a72eca",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the private runtime-owned bootstrap source for live acquisition.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Runtime-owned live bootstrap",
-  "updated_at": "2026-09-23T20:19:43+00:00",
+  "updated_at": "2026-09-23T20:19:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1352-runtime-live-bootstrap"
 }
 ---
@@ -90,3 +90,10 @@ integration. AR-1329 remains fail-closed.
 
 - 2026-09-23T20:19:43+00:00: Recorded command exit 101; command argv SHA-256
   534f8613e1c316db8f0f46dd989e44e14a8ca74304a94791b4e4a1c59b2fbb1d.
+
+- 2026-09-23T20:19:57+00:00: Full cargo test --locked --workspace reached 99/100 asb-cli tests; one
+  unrelated concurrent-state test failed:
+  control::tests::recording_campaign_plan_is_durable_idempotent_and_not_offline_ready panicked
+  because control state root was already owned. This is an infrastructure/concurrency failure, not a
+  bootstrap assertion. Runtime full lib 100 passed/1 ignored, cargo check and workspace clippy
+  passed after the enum-name repair.
