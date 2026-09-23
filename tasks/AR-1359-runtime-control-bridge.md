@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bridge authenticated control enrollment into runtime-owned opaque live authority.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Runtime/control enrollment bridge",
-  "updated_at": "2026-09-23T22:36:17+00:00",
+  "updated_at": "2026-09-23T22:36:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1359-runtime-control-bridge"
 }
 ---
@@ -83,3 +83,6 @@ fail-closed behavior and do not touch asb-tui.
   record. Positive/tamper/replay/path-free tests pass; focused control/runtime tests, clippy
   workspace, full workspace tests, and rustdoc -D warnings pass. Commit f511910 is SSH-signed+DCO
   and pushed.
+
+- 2026-09-23T22:36:34+00:00: Recorded command exit 0; command argv SHA-256
+  20ce11e0e7800ae7906b34c64e08db4517d0a8adc68c8cdcfc3b1947f5dace33.
