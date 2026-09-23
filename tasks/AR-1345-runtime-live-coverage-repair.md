@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1345-runtime-live-coverage-repair",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "cd2d1e60b15142665ba3b72f9404df69f5c718da",
   "claim_expires": "2026-09-23T16:28:39+00:00",
   "depends_on": [
     "AR-1339",
@@ -9,7 +9,7 @@
     "AR-1342"
   ],
   "id": "AR-1345",
-  "next_action": "Classify exact uncovered runtime lines and add bounded sandbox, relay, and provider-egress tests until policy coverage has margin above 90%.",
+  "next_action": "Monitor PR #260 exact-head hosted CI at cd2d1e60; preserve AR-1344/AR-1345 relationship and release only after hosted checks pass.",
   "observed_branch": "feature/ar-1345-runtime-live-coverage-repair",
   "observed_dirty": 0,
   "observed_head": "cd2d1e60b15142665ba3b72f9404df69f5c718da",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair runtime live-provider coverage without weakening the mandatory quality floor.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Runtime live-provider coverage repair",
-  "updated_at": "2026-09-23T14:36:55+00:00",
+  "updated_at": "2026-09-23T14:37:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1345-runtime-live-coverage-repair"
 }
 ---
@@ -73,3 +73,12 @@ non-authoritative.
 
 - 2026-09-23T14:36:55+00:00: Recorded command exit 0; command argv SHA-256
   9af6224ac05605f2b9e03915a5403e1505f64eecb3c223d94b82019fcac6b92f.
+
+- 2026-09-23T14:37:14+00:00: Verified exact tested head cd2d1e60b15142665ba3b72f9404df69f5c718da:
+  clean SSH-signed Martin Beck commit with matching DCO. Focused fmt, clippy package asb-runtime
+  all-targets, and cargo test package asb-runtime all-targets passed (81 passed, 1 capability-gated
+  ignored; boundary suites passed). Serial policy gate cargo llvm-cov --locked --workspace
+  --all-targets --fail-under-lines 90 passed at 90.45% workspace lines (57530 covered, 5496 missed;
+  88.52% regions). Fast-forwarded existing PR #260 branch
+  feature/ar-1344-runtime-cli-acquisition-contract 6b06b12..cd2d1e6 via non-force push; no duplicate
+  PR.
