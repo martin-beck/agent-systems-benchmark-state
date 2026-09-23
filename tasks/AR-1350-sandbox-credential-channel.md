@@ -12,7 +12,7 @@
   "id": "AR-1350",
   "next_action": "Implement a private sealed-FD/memfd child credential channel after verifying completed relay/namespace prerequisites; AR-1349 and AR-1329 are downstream consumers and must remain fail-closed until this repair merges.",
   "observed_branch": "feature/ar-1350-sandbox-credential-channel",
-  "observed_dirty": 0,
+  "observed_dirty": 6,
   "observed_head": "359f15af52aa2b0b31bb091b945e7de933960006",
   "owner": "codex-asb-ar1350-sandbox-channel-luna56",
   "plan": "../plans/AR-1350-sandbox-credential-channel.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement a sandbox-owned sealed-FD credential channel for live provider children.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Sandbox-owned credential channel",
-  "updated_at": "2026-09-23T17:26:38+00:00",
+  "updated_at": "2026-09-23T17:26:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1350-sandbox-credential-channel"
 }
 ---
