@@ -14,7 +14,7 @@
   "id": "AR-1349",
   "next_action": "Rebase is clean atop protected main 4d8f0c4, which includes merged AR-1350 sealed-channel implementation. Inspect the merged channel API and wire the real runtime-owned acquisition constructor, selection/reference binding, and asb run/sweep dispatch; preserve NetworkPolicy::Deny and fail-closed defaults. Then run focused/full gates.",
   "observed_branch": "feature/ar-1349-live-provider-runtime-service",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "80c5e53ab51aa863e12b662121bfb4b013a0a421",
   "owner": "codex-asb-ar1329-live-cli-luna56",
   "plan": "../plans/AR-1349-live-provider-runtime-service.md",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 169,
+  "task_revision": 170,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T19:03:53+00:00",
+  "updated_at": "2026-09-23T19:04:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
