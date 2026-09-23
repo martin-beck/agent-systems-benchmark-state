@@ -4,11 +4,10 @@
   "checkpoint_commit": "",
   "claim_expires": "",
   "depends_on": [
-    "AR-1329",
     "AR-1339"
   ],
   "id": "AR-1340",
-  "next_action": "Promote only after AR-1329 and AR-1339 are done; implement the attested namespace-bound relay handoff, descendant-egress denial evidence, and guarded CLI integration.",
+  "next_action": "Promote after AR-1339 is done; implement the attested namespace-bound relay handoff and descendant-egress denial evidence for AR-1329 to consume.",
   "owner": "",
   "plan": "../plans/AR-1340.md",
   "priority": "P1",
