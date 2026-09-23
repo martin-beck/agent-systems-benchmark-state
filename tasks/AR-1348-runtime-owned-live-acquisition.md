@@ -13,16 +13,16 @@
   "next_action": "Lease lifecycle guard committed as 831a5d5. Next add runtime-owned namespace handoff and relay binding around existing validated policy/egress contracts, with launch-token attestation and revocation/duplicate/expiry negatives. Keep AR-1329 fail-closed.",
   "observed_branch": "feature/ar-1348-runtime-owned-live-acquisition",
   "observed_dirty": 1,
-  "observed_head": "46d6a2e4995daa3cab815ca649565abd3f96d8bd",
+  "observed_head": "831a5d53f34fb92d60236340b9ff0c62900cf76d",
   "owner": "codex-asb-ar1329-live-cli-luna56",
   "plan": "../plans/AR-1348-runtime-owned-live-acquisition.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the runtime-owned supervisor that acquires every live-provider authority and tears it down safely.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Runtime-owned live acquisition service",
-  "updated_at": "2026-09-23T16:05:36+00:00",
+  "updated_at": "2026-09-23T16:05:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1348-runtime-owned-live-acquisition"
 }
 ---
