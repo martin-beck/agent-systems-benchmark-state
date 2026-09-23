@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1342](tasks/AR-1342-live-relay-factory-cli-integration.md): Runtime-owned live relay factory and CLI integration | Create the runtime-owned relay factory and opaque launch context required for safe live CLI execution. | Promote now that provider contracts, the runtime egress backend, and attested handoff are complete; implement the factory without weakening offline/replay denial, then return to AR-1329. | codex-asb-ar1342-20260923 |
+| P1 | [AR-1342](tasks/AR-1342-live-relay-factory-cli-integration.md): Runtime-owned live relay factory and CLI integration | Create the runtime-owned relay factory and opaque launch context required for safe live CLI execution. | Publish PR from signed commit 71f67e2; run exact-head CI and independent review, then verify post-merge before releasing AR-1342 and advancing AR-1329. | codex-asb-ar1342-20260923 |
 
 ## Open
 

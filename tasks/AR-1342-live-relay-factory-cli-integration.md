@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1342-live-relay-factory-cli-integration",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "71f67e2ca22945b42672b7ad1cfc7a0eef7f4b88",
   "claim_expires": "2026-09-23T13:42:06+00:00",
   "depends_on": [
     "AR-1327",
@@ -10,7 +10,7 @@
     "AR-1340"
   ],
   "id": "AR-1342",
-  "next_action": "Promote now that provider contracts, the runtime egress backend, and attested handoff are complete; implement the factory without weakening offline/replay denial, then return to AR-1329.",
+  "next_action": "Publish PR from signed commit 71f67e2; run exact-head CI and independent review, then verify post-merge before releasing AR-1342 and advancing AR-1329.",
   "observed_branch": "feature/ar-1342-live-relay-factory-cli-integration",
   "observed_dirty": 0,
   "observed_head": "71f67e2ca22945b42672b7ad1cfc7a0eef7f4b88",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Create the runtime-owned relay factory and opaque launch context required for safe live CLI execution.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Runtime-owned live relay factory and CLI integration",
-  "updated_at": "2026-09-23T11:43:08+00:00",
+  "updated_at": "2026-09-23T11:43:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1342-live-relay-factory-cli-integration"
 }
 ---
@@ -107,3 +107,11 @@ until it is complete, live spawning remains fail-closed.
 
 - 2026-09-23T11:42:57+00:00: Recorded command exit 0; command argv SHA-256
   39aa736b6f9df874683d6dccfb5bf8723d3f460fa4b2464720b1bf7bd6a9666a.
+
+- 2026-09-23T11:43:39+00:00: Implemented runtime-owned LiveLaunchFactory/Authority/Context. It binds
+  the existing attested namespace handoff, denied NetworkPolicy, benchmark lease, retained
+  SandboxBackend, observed namespace, route/adapter/credential-reference digests and expiry through
+  an opaque one-shot context; cancellation revokes the handoff. Added positive issuance and
+  expiry/copied-attestation denial tests. Focused runtime tests: 9 passed, 1 ignored; clippy -p
+  asb-runtime --all-targets -D warnings passed; cargo fmt passed. Signed DCO commit
+  71f67e2ca22945b42672b7ad1cfc7a0eef7f4b88.
