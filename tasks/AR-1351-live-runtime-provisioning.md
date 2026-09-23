@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the private host/runtime provisioning seam for live acquisition.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Runtime-owned live provisioning",
-  "updated_at": "2026-09-23T19:31:55+00:00",
+  "updated_at": "2026-09-23T19:32:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1351-live-runtime-provisioning"
 }
 ---
@@ -174,3 +174,6 @@ runtime boundary; AR-1349 remains fail-closed until it is merged and verified.
   Previous workspace clippy exit 1 was a coordinator LOCK_TIMEOUT during concurrent state mutation;
   retry passed. Invalid combined cargo test filter was corrected by running cargo test --lib (96
   passed, 1 ignored).
+
+- 2026-09-23T19:32:04+00:00: Recorded command exit 0; command argv SHA-256
+  f54f982149fcf3ef5c7630f5e5ba5dd514fd2653e3f51f36dd545c8ec6943a68.
