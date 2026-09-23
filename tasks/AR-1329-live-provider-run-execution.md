@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1329.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Execute real agents against the selected provider through asb run and sweep with credential-free resolution.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Live-provider run execution for real agents",
-  "updated_at": "2026-09-22T13:39:37+00:00",
+  "updated_at": "2026-09-23T08:41:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1329-live-provider-run-execution"
 }
 ---
@@ -30,3 +30,6 @@ and workload, resolves credentials only through the enrolled environment
 channel, enforces the declared egress allowances, and requires an explicit
 opt-in flag for any live provider contact. Offline CI, synthetic doubles, and
 the digest-pinned mode remain default and never touch the network.
+
+- 2026-09-23T08:41:51+00:00: Dependencies AR-1327 and AR-1328 are done; begin live provider
+  execution implementation.
