@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1349-live-provider-runtime-service",
   "checkpoint_commit": "359f15af52aa2b0b31bb091b945e7de933960006",
-  "claim_expires": "2026-09-23T18:30:27+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1327",
     "AR-1328",
@@ -16,15 +16,15 @@
   "observed_branch": "feature/ar-1349-live-provider-runtime-service",
   "observed_dirty": 0,
   "observed_head": "359f15af52aa2b0b31bb091b945e7de933960006",
-  "owner": "codex-asb-ar1329-live-cli-luna56",
+  "owner": "",
   "plan": "../plans/AR-1349-live-provider-runtime-service.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 158,
+  "task_revision": 159,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T17:32:12+00:00",
+  "updated_at": "2026-09-23T18:33:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
@@ -481,3 +481,8 @@ qualified.
 - 2026-09-23T17:32:12+00:00: AR-1350 dependency added to AR-1349. Read-only cargo check passed on
   its worktree; clippy attempt was blocked by shared coordinator LOCK_TIMEOUT after 10 seconds. No
   AR-1350 files, claim, or worktree mutations were performed by this worker.
+
+- 2026-09-23T18:33:07+00:00: Recovered expired claim formerly owned by
+  codex-asb-ar1329-live-cli-luna56. Lease expired at 2026-09-23T18:30:27Z; live audit found no
+  AR-1349 process and clean checkpoint 359f15a. Recover ownerless/open while preserving AR-1350
+  prerequisite and fail-closed evidence.
