@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize authenticated certificate-chain authority for control-owned runtime receipt issuance.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Authenticated chain enrollment",
-  "updated_at": "2026-09-23T23:38:48+00:00",
+  "updated_at": "2026-09-23T23:44:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1364-authenticated-chain-enrollment"
 }
 ---
@@ -74,3 +74,6 @@ asb-tui or synthesize certificate authority from CLI/config input.
 - 2026-09-23T23:37:13+00:00: Heartbeat by codex-asb-runtime-attested-enrollment-luna56.
 
 - 2026-09-23T23:38:48+00:00: Heartbeat by codex-asb-runtime-attested-enrollment-luna56.
+
+- 2026-09-23T23:44:13+00:00: Recorded command exit 0; command argv SHA-256
+  e6d1b57291ceb8593afb499ead596be1727f5492f636c90efe7df71b35e92c5c.
