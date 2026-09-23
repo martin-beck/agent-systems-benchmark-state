@@ -1421,6 +1421,7 @@ flowchart LR
     AR_1342 --> AR_1345
     AR_1347 --> AR_1349
     AR_1347 --> AR_1350
+    AR_1350 --> AR_1349
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -1807,8 +1808,8 @@ flowchart LR
 | [AR-1346](../tasks/AR-1346-runtime-supervisor-provisioning.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) | None |
 | [AR-1347](../tasks/AR-1347-neutral-live-supervisor-composition.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) | [AR-1349](../tasks/AR-1349-live-provider-runtime-service.md), [AR-1350](../tasks/AR-1350-sandbox-credential-channel.md) |
 | [AR-1348](../tasks/AR-1348-runtime-owned-live-acquisition.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) | None |
-| [AR-1349](../tasks/AR-1349-live-provider-runtime-service.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1347](../tasks/AR-1347-neutral-live-supervisor-composition.md) | None |
-| [AR-1350](../tasks/AR-1350-sandbox-credential-channel.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1347](../tasks/AR-1347-neutral-live-supervisor-composition.md) | None |
+| [AR-1349](../tasks/AR-1349-live-provider-runtime-service.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1347](../tasks/AR-1347-neutral-live-supervisor-composition.md), [AR-1350](../tasks/AR-1350-sandbox-credential-channel.md) | None |
+| [AR-1350](../tasks/AR-1350-sandbox-credential-channel.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1347](../tasks/AR-1347-neutral-live-supervisor-composition.md) | [AR-1349](../tasks/AR-1349-live-provider-runtime-service.md) |
 
 ## Complete AR inventory
 
@@ -1845,4 +1846,3 @@ flowchart LR
 | P0 | [AR-1265](../tasks/AR-1265-runtime-owned-replay-entrypoint.md): Runtime-owned strict-replay CLI entrypoint | Unclaimed | Provide a real runtime-owned strict-replay CLI entrypoint. | Runtime/CLI owner must add an authenticated context-bearing replay-plan dispatch entrypoint; then exercise cassette request/response and lifecycle/egress tests through it. |
 | P0 | [AR-1266](../tasks/AR-1266-authenticated-replay-dispatch.md): Authenticated replay dispatch context | Unclaimed | Add authenticated runtime context to the actual strict-replay CLI dispatch path. | Connect runtime context to supervised cassette execution rather than merely offline replay; add request/response, egress denial, cancellation/restart/timeout/crash cleanup and no-fallback tests. |
 | P0 | [AR-1267](../tasks/AR-1267-runtime-replay-execution.md): Runtime strict-replay execution hook | Unclaimed | Implement real runtime-owned strict-replay execution and lifecycle supervision. | Add actual replay CLI argument wiring and bounded lifecycle/egress/no-fallback tests around authenticated execution hook; then run full gates. |
-| P0 | [AR-1268](../tasks/AR-1268-replay-transport-boundary.md): Break strict-replay runtime/CLI dependency cycle | Unclaimed | Break the strict-replay runtime/CLI dependency cycle with a shared transport contract. | Await approved runtime-owned launch bundle/factory exposing SandboxLaunchInput, ResourceLease, pinned commands, and supervised lifecycle to the transport adapter; then add real child lifecycle/egress tests. |

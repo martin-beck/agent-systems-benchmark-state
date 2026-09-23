@@ -8,7 +8,8 @@
     "AR-1328",
     "AR-1339",
     "AR-1340",
-    "AR-1347"
+    "AR-1347",
+    "AR-1350"
   ],
   "id": "AR-1349",
   "next_action": "Audit and design the missing private child credential channel. Existing runtime has no pass-fd/inner-env primitive: memfd use is confined to direct helper spawn, while bubblewrap --clearenv discards outer env and argv injection is forbidden. Do not add unsafe CLI wiring; record a successor repair if no bounded runtime helper can be implemented.",
@@ -21,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 155,
+  "task_revision": 156,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T17:30:48+00:00",
+  "updated_at": "2026-09-23T17:31:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
@@ -470,3 +471,6 @@ qualified.
 
 - 2026-09-23T17:30:48+00:00: Recorded command exit 0; command argv SHA-256
   a95ab74eb237ef9116f2249f16e1cc8ffc3d6b1c9f7bd8d21ab1be36e8977f50.
+
+- 2026-09-23T17:31:30+00:00: Recorded command exit 0; command argv SHA-256
+  4276b3df67cdcbd7f7a0ff93ddd7549f702dc0626a4d0f1c5454b0bd969a57f3.
