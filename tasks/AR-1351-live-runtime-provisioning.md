@@ -12,7 +12,7 @@
   "id": "AR-1351",
   "next_action": "Add behavioral tests for uncovered live_service/live_relay branches, rerun enforced workspace coverage and full gates, then publish a signed exact-head repair for PR #262.",
   "observed_branch": "feature/ar-1351-live-runtime-provisioning",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "d0b0cbefffdde0f80f51edb26f0a3d30f3a7b879",
   "owner": "codex-asb-runtime-acquisition-successor-luna56",
   "plan": "../plans/AR-1351-live-runtime-provisioning.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the private host/runtime provisioning seam for live acquisition.",
-  "task_revision": 61,
+  "task_revision": 62,
   "title": "Runtime-owned live provisioning",
-  "updated_at": "2026-09-23T19:43:11+00:00",
+  "updated_at": "2026-09-23T19:43:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1351-live-runtime-provisioning"
 }
 ---
