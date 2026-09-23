@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define one pinned credential-free OpenRouter provider profile for compatible ASB agent adapters.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Support a shared OpenRouter provider",
-  "updated_at": "2026-09-23T06:19:25+00:00",
+  "updated_at": "2026-09-23T06:20:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1325-provider-openrouter"
 }
 ---
@@ -140,3 +140,6 @@ unsupported or lossy translations fail closed.
   quality failed with protected-main merge-tree mismatch for merge 56c882a. PR #249 itself was
   exact-head green before merge; no release/public completion claim is authorized until repair and
   post-merge gates pass.
+
+- 2026-09-23T06:20:09+00:00: Recorded command exit 0; command argv SHA-256
+  246d6f01536dc42e03f57c3fe8f0ee99b96f513c3cbf0b4de18f7cfc34737692.

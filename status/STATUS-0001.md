@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**360 ARs tracked** across 7 active status categories.
+**361 ARs tracked** across 7 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 3 |
+| **Open** | Dependency-ready and available to claim | 4 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 49 |
 | **Planned** | Defined work awaiting promotion or dependencies | 68 |
 | **Future** | Deferred roadmap work | 1 |
@@ -429,6 +429,7 @@ flowchart LR
         AR_1334["AR-1334 - Planned"]:::status_planned
         AR_1335["AR-1335 - Planned"]:::status_planned
         AR_1336["AR-1336 - Planned"]:::status_planned
+        AR_1337["AR-1337 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1201,6 +1202,7 @@ flowchart LR
     AR_1213 --> AR_1216
     AR_1214 --> AR_1216
     AR_1215 --> AR_1216
+    AR_1226 --> AR_1337
     AR_1228 --> AR_1120
     AR_1228 --> AR_1229
     AR_1229 --> AR_1120
@@ -1630,7 +1632,7 @@ flowchart LR
 | [AR-1214](../tasks/AR-1214-record-replay.md) | [AR-1213](../tasks/AR-1213-benchmark-and-shared-config.md) | [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md) |
 | [AR-1215](../tasks/AR-1215-result-comparison.md) | [AR-1213](../tasks/AR-1213-benchmark-and-shared-config.md) | [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md) |
 | [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md) | [AR-1210](../tasks/AR-1210-tutorial-contract-validator.md), [AR-1211](../tasks/AR-1211-initial-setup-first-agent.md), [AR-1212](../tasks/AR-1212-benchmark-readiness.md), [AR-1213](../tasks/AR-1213-benchmark-and-shared-config.md), [AR-1214](../tasks/AR-1214-record-replay.md), [AR-1215](../tasks/AR-1215-result-comparison.md) | None |
-| [AR-1226](../tasks/AR-1226-protected-merge-tree-remediation.md) | [AR-1200](../tasks/AR-1200-metrics-timeout-fixture-stability.md) | None |
+| [AR-1226](../tasks/AR-1226-protected-merge-tree-remediation.md) | [AR-1200](../tasks/AR-1200-metrics-timeout-fixture-stability.md) | [AR-1337](../tasks/AR-1337-protected-main-merge-tree-repair-openrouter.md) |
 | [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md) | [AR-1060](../tasks/AR-1060-authenticated-control-endpoint-handoff.md), [AR-1151](../tasks/AR-1151.md), [AR-1160](../tasks/AR-1160.md) | None |
 | [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md) | [AR-0319](../tasks/AR-0319-credential-fd-helper-resolvers.md), [AR-0320](../tasks/AR-0320-provider-credential-integration.md), [AR-1100](../tasks/AR-1100.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) | [AR-1120](../tasks/AR-1120.md), [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md) |
 | [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md) | [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) | [AR-1120](../tasks/AR-1120.md) |
@@ -1737,6 +1739,7 @@ flowchart LR
 | [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md) | [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md), [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md) |
 | [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md) | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md), [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md) | [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md) |
 | [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md) | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md), [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md), [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md) | None |
+| [AR-1337](../tasks/AR-1337-protected-main-merge-tree-repair-openrouter.md) | [AR-1226](../tasks/AR-1226-protected-merge-tree-remediation.md) | None |
 
 ## Complete AR inventory
 
@@ -1746,13 +1749,14 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1325](../tasks/AR-1325-provider-openrouter.md): Support a shared OpenRouter provider | coordinator-openrouter-audit | Define one pinned credential-free OpenRouter provider profile for compatible ASB agent adapters. | Repair protected-main merge-tree admission after post-merge Repository quality failed on 56c882a: protected-main merge tree differs from reviewed topic tree; create and execute a dedicated repair AR, then rerun all exact-main workflows before treating AR-1325 as done. |
 
-### Open (3)
+### Open (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1212](../tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Unclaimed | Teach users to test configured-agent benchmark eligibility without running an agent. | Implement the offline tutorial for checking agent benchmark readiness under the current configuration. |
 | P0 | [AR-1314](../tasks/AR-1314-optional-bundle-signing-development-release.md): Optional runtime-bundle signing for development and tagged releases | Unclaimed | Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile. | Wait for PR #232 exact-head CI after schema-v3 repair; if all required checks pass, independently review and merge through the established workflow, then reconcile AR-1314. Preserve signature-required defaults. |
 | P0 | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | Unclaimed | Publish the verified ASB agent catalog required by the first-run setup wizard. | Persist the authenticated catalog snapshot/generation and complete live ASB-to-asb-tui wizard evidence; keep all entries unavailable until a verified release closure exists. |
+| P0 | [AR-1337](../tasks/AR-1337-protected-main-merge-tree-repair-openrouter.md): Repair protected-main merge-tree admission after OpenRouter merge | Unclaimed | Repair the protected-main merge-tree admission defect exposed after the OpenRouter provider merge. | Reproduce the post-merge protected-main merge-tree mismatch from merge 56c882a, repair admission or merge procedure without weakening policy, and rerun every exact-main workflow. |
 
 ### Blocked (49)
 
@@ -1796,5 +1800,3 @@ flowchart LR
 | P1 | [AR-0604](../tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Unclaimed | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Obtain authorized native x86 runner and immutable CSB/Python evidence; rerun native_boundary and record A/B overhead. |
 | P1 | [AR-0704](../tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | PR #119 exact e2e3574 is green except quality 35401437247 at 89.99&#37; coverage. Preserve PR; repair via AR-1312 when promotable. Do not merge or weaken 90&#37;. |
 | P1 | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Unclaimed | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Create successor AR for authenticated route/ancestor authority; preserve AR-1288 evidence and AR-0814 head 29cfa193. |
-| P1 | [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md): Qualify development host ASB runner operations | Unclaimed | Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery. | Run repeated clean ASB jobs on every declared development host label and audit reset, isolation, architecture, and artifact provenance. |
-| P1 | [AR-0861](../tasks/AR-0861-openjiuwen-parity.md): Add OpenJiuwen provider parity and support matrix evidence | Unclaimed | Add OpenJiuwen provider parity and support matrix evidence. | Extend exact provider parity and the platform support matrix only for executable-qualified OpenJiuwen combinations under a serialized shared-path fence. |
