@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Issue runtime-owned live enrollment capability from authenticated control attestation.",
-  "task_revision": 55,
+  "task_revision": 56,
   "title": "Control/runtime enrollment attestation primitive",
-  "updated_at": "2026-09-23T21:34:33+00:00",
+  "updated_at": "2026-09-23T21:34:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1356-control-runtime-attestation-primitive"
 }
 ---
@@ -172,3 +172,6 @@ dispatch and do not expose caller-supplied launch authority.
   entries. Public authority constructors are absent; claims/new and attestation/from_control are
   pub(crate). HEAD 9e587593 has valid SSH signature and matching DCO. Exact-head PR #264 checks all
   pass, including Repository quality and emulated aarch64.
+
+- 2026-09-23T21:34:45+00:00: Recorded command exit 0; command argv SHA-256
+  f0832b0c6f8373363197b8ecac210e806b930e75d1f82f6f3167ac76fccb3792.
