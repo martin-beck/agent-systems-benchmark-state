@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the protected-main merge-tree admission defect exposed after the OpenRouter provider merge.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Repair protected-main merge-tree admission after OpenRouter merge",
-  "updated_at": "2026-09-23T06:26:52+00:00",
+  "updated_at": "2026-09-23T06:27:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1337-protected-main-merge-tree-repair"
 }
 ---
@@ -49,3 +49,6 @@ remaining evidence limits without private paths or credentials.
 
 - 2026-09-23T06:26:43+00:00: Recorded command exit 0; command argv SHA-256
   73ebc8b4857e2aba6ae5e051e1f1da90b69d5981a57223c16ee116b362ce5a10.
+
+- 2026-09-23T06:27:06+00:00: Recorded command exit 0; command argv SHA-256
+  7a6648f19871bcfba727d1838b42d9807516d3532946bdfcb9e2cfd09b657728.
