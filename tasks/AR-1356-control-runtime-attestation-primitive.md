@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1356-control-runtime-attestation-primitive",
-  "checkpoint_commit": "9e587593c2fd21347ed2b7faf544e9d5a7bf150a",
+  "checkpoint_commit": "a6f1915aa5117f0296b1b8f4b9c4692a956b3d86",
   "claim_expires": "2026-09-23T23:33:18+00:00",
   "depends_on": [
     "AR-1352"
   ],
   "id": "AR-1356",
-  "next_action": "All PR #264 exact-head required checks are terminal success. Protected merge now; then verify every post-merge workflow at merge SHA before releasing AR-1356.",
+  "next_action": "PR #264 merged at a6f1915aa5117f0296b1b8f4b9c4692a956b3d86. Monitor all seven post-merge workflows to terminal success; then release AR-1356 done with exact evidence and advance AR-1355 consumer.",
   "observed_branch": "feature/ar-1356-control-runtime-attestation-primitive",
   "observed_dirty": 0,
   "observed_head": "9e587593c2fd21347ed2b7faf544e9d5a7bf150a",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Issue runtime-owned live enrollment capability from authenticated control attestation.",
-  "task_revision": 56,
+  "task_revision": 57,
   "title": "Control/runtime enrollment attestation primitive",
-  "updated_at": "2026-09-23T21:34:45+00:00",
+  "updated_at": "2026-09-23T21:35:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1356-control-runtime-attestation-primitive"
 }
 ---
@@ -175,3 +175,9 @@ dispatch and do not expose caller-supplied launch authority.
 
 - 2026-09-23T21:34:45+00:00: Recorded command exit 0; command argv SHA-256
   f0832b0c6f8373363197b8ecac210e806b930e75d1f82f6f3167ac76fccb3792.
+
+- 2026-09-23T21:35:12+00:00: Protected merge completed through handoffctl after exact-head 9e587593
+  checks all passed. GitHub merge commit is a6f1915aa5117f0296b1b8f4b9c4692a956b3d86. Post-merge
+  workflows started: Fault assurance 35923315358, Emulated aarch64 portability 35923315452, Hosted
+  portability/native 35923315486, Repository quality 35923315444, Formal assurance 35923315385, Rust
+  verification 35923315447, Huawei headers 35923315448.

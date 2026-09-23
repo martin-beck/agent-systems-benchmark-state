@@ -1838,7 +1838,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1356](../tasks/AR-1356-control-runtime-attestation-primitive.md): Control/runtime enrollment attestation primitive | codex-asb-runtime-acquisition-successor-luna56 | Issue runtime-owned live enrollment capability from authenticated control attestation. | All PR #264 exact-head required checks are terminal success. Protected merge now; then verify every post-merge workflow at merge SHA before releasing AR-1356. |
+| P0 | [AR-1356](../tasks/AR-1356-control-runtime-attestation-primitive.md): Control/runtime enrollment attestation primitive | codex-asb-runtime-acquisition-successor-luna56 | Issue runtime-owned live enrollment capability from authenticated control attestation. | PR #264 merged at a6f1915aa5117f0296b1b8f4b9c4692a956b3d86. Monitor all seven post-merge workflows to terminal success; then release AR-1356 done with exact evidence and advance AR-1355 consumer. |
 
 ### Open (5)
 
