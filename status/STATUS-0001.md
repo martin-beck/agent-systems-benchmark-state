@@ -1744,7 +1744,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1324](../tasks/AR-1324-auth-helper-control-contract.md): Authenticated credential-helper control contract | codex | Own the ASB control and runner backend for safe credential-helper invocation. | Monitor authoritative pull_request checks for PR #248 at 0116bf1; merge only after all required checks pass, then perform ASB↔asb-tui first-user/live-provider wizard acceptance. |
+| P0 | [AR-1324](../tasks/AR-1324-auth-helper-control-contract.md): Authenticated credential-helper control contract | codex | Own the ASB control and runner backend for safe credential-helper invocation. | Monitor authoritative pull_request checks for PR #248 at 5abd8c7; merge only after all required checks pass, then perform ASB↔asb-tui first-user/live-provider wizard acceptance. |
 
 ### Open (4)
 

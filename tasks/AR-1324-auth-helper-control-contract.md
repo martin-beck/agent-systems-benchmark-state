@@ -1,20 +1,20 @@
 ---
 {
   "branch": "feature/ar-1324-auth-helper-control-contract",
-  "checkpoint_commit": "0116bf17fb5b1357a8592b5ec9937f12dabed9d6",
+  "checkpoint_commit": "5abd8c7c2d2a6a38e2d9be9340f0eb5e16f8807a",
   "claim_expires": "2026-09-23T07:45:07+00:00",
   "depends_on": [],
   "id": "AR-1324",
-  "next_action": "Monitor authoritative pull_request checks for PR #248 at 0116bf1; merge only after all required checks pass, then perform ASB\u2194asb-tui first-user/live-provider wizard acceptance.",
+  "next_action": "Monitor authoritative pull_request checks for PR #248 at 5abd8c7; merge only after all required checks pass, then perform ASB\u2194asb-tui first-user/live-provider wizard acceptance.",
   "owner": "codex",
   "plan": "../plans/AR-1324.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Own the ASB control and runner backend for safe credential-helper invocation.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Authenticated credential-helper control contract",
-  "updated_at": "2026-09-23T05:51:11+00:00",
+  "updated_at": "2026-09-23T05:59:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1324-auth-helper-control-contract"
 }
 ---
@@ -118,3 +118,7 @@ never receive a raw credential or execute an arbitrary path.
   worker teardown. Added bounded retry in restart-focused tests for production and recording
   backends, preserving immediate exclusivity semantics. Full asb-cli lib suite passes locally
   (90/90); pushed 0116bf1.
+
+- 2026-09-23T05:59:29+00:00: Hosted coverage remained 89.98% despite local margin, so added explicit
+  tests for all helper environment binding paths through a safe injectable value seam. Targeted test
+  and clippy pass; pushed 5abd8c7. Awaiting fresh PR checks.
