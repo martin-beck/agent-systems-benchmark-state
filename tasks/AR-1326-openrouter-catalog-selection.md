@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1326.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Advertise the OpenRouter profile in the CLI provider catalog and accept it in provider-plan selection.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Select OpenRouter through the CLI provider catalog",
-  "updated_at": "2026-09-22T14:44:39+00:00",
+  "updated_at": "2026-09-23T06:44:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1326-openrouter-catalog-selection"
 }
 ---
@@ -33,3 +33,6 @@ and `validate_provider_selection` gain the `openrouter` profile with its pinned
 model, the selection manifest carries the OpenRouter provider profile, and the
 plan/experiment binding accepts the OpenRouter model identity without weakening
 the fail-closed content-address checks.
+
+- 2026-09-23T06:44:36+00:00: Promoted after AR-1325 provider profile and protected-main repair are
+  complete and post-merge workflows are green.
