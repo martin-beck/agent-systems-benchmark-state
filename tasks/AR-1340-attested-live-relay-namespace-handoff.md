@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind the live provider relay to an attested child namespace and integrate it without weakening offline or replay denial.",
-  "task_revision": 56,
+  "task_revision": 57,
   "title": "Attested live-relay namespace and child handoff",
-  "updated_at": "2026-09-23T10:23:29+00:00",
+  "updated_at": "2026-09-23T10:23:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1340-attested-live-relay-handoff"
 }
 ---
@@ -185,3 +185,6 @@ public coordination state or runtime evidence.
   digest variables. NetworkPolicy remains Deny. Added positive/negative sandbox admission test.
   Focused live test plus full cargo test --locked -p asb-runtime pass: 64 passed, 1 ignored;
   process/sandbox/scheduler tests and doc tests pass.
+
+- 2026-09-23T10:23:52+00:00: Recorded command exit 101; command argv SHA-256
+  7fa0eb7fc2e4d3395581b3e0d3f5f5f7cef1f3b5268b8a98357d31c621c89f67.
