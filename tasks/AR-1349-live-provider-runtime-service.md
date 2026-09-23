@@ -13,17 +13,17 @@
   "id": "AR-1349",
   "next_action": "Selection/lease slice refined and committed as a22b9aee: LiveProviderRuntimeSelection groups immutable references without lint suppression. Focused live_service tests 2/2; full asb-runtime all-targets 85 passed, 1 ignored; clippy and fmt pass. Next bounded slice: compose runtime-owned pinned gate/backend, observed namespace, launch token, relay and opaque LiveProviderAttempt; preserve AR-1329 fail-closed.",
   "observed_branch": "feature/ar-1349-live-provider-runtime-service",
-  "observed_dirty": 1,
-  "observed_head": "a22b9aeea65a5db3d11f81a277132ade5df16795",
+  "observed_dirty": 0,
+  "observed_head": "ffecd74c91bedb4cc946797b19626937ddd7a423",
   "owner": "codex-asb-ar1329-live-cli-luna56",
   "plan": "../plans/AR-1349-live-provider-runtime-service.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T16:44:39+00:00",
+  "updated_at": "2026-09-23T16:44:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
