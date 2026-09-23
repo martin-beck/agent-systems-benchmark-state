@@ -24,14 +24,14 @@ Generated from local Git and GitHub. Do not edit.
 | #236 | `dependabot/cargo/toml-1.1.6spec-1.1.0@9dc09c5208ab` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump toml from 0.8.23 to 1.1.6+spec-1.1.0 |
 | #237 | `dependabot/cargo/thiserror-2.0.20@83dba9288d9c` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump thiserror from 2.0.16 to 2.0.20 |
 | #251 | `feature/ar-1327-openrouter-adapter-parity@5006bcf43fed` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(agents): OpenRouter adapter projections and parity conformance (AR-1327) |
-| #253 | `feature/ar-1323-auth-timeout@51886ff43d99` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | fix(auth): honor negotiated control timeout |
+| #253 | `feature/ar-1323-auth-timeout@51886ff43d99` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(auth): honor negotiated control timeout |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 35829419196 | `51886ff43d99` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 35829419184 | `51886ff43d99` | pull_request | Fault assurance | in_progress:- |
+| 35829419184 | `51886ff43d99` | pull_request | Fault assurance | completed:success |
 | 35829419183 | `51886ff43d99` | pull_request | Repository quality | in_progress:- |
 | 35829419174 | `51886ff43d99` | pull_request | Rust verification | completed:failure |
 | 35829419138 | `51886ff43d99` | pull_request | Huawei MIT source headers | completed:success |
@@ -40,5 +40,5 @@ Generated from local Git and GitHub. Do not edit.
 | 35829419071 | `51886ff43d99` | pull_request | Hosted portability and native qualification | completed:success |
 | 35829327962 | `8692729a58d1` | push | Hosted portability and native qualification | completed:success |
 | 35829327951 | `8692729a58d1` | push | Emulated aarch64 portability | in_progress:- |
-| 35829327929 | `8692729a58d1` | push | Rust verification | completed:failure |
+| 35829327929 | `8692729a58d1` | push | Rust verification | in_progress:- |
 | 35829327921 | `8692729a58d1` | push | Fault assurance | completed:success |
