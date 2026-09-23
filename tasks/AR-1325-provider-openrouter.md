@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1325-provider-openrouter",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-23T07:00:37+00:00",
   "depends_on": [
     "AR-0310",
     "AR-0318"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1325-provider-openrouter",
   "observed_dirty": 0,
   "observed_head": "f47e3728a9721ea268a730abef0f953bd2956613",
-  "owner": "",
+  "owner": "coordinator-openrouter-audit",
   "plan": "../plans/AR-1325.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Define one pinned credential-free OpenRouter provider profile for compatible ASB agent adapters.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Support a shared OpenRouter provider",
-  "updated_at": "2026-09-23T05:56:45+00:00",
+  "updated_at": "2026-09-23T06:00:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1325-provider-openrouter"
 }
 ---
@@ -58,3 +58,5 @@ unsupported or lossy translations fail closed.
 - 2026-09-23T05:56:45+00:00: Recovered expired claim formerly owned by ar1325-openrouter. Recovered
   expired claim after verifying no active AR-1325 worker process; existing PR #249 remains under
   review.
+
+- 2026-09-23T06:00:37+00:00: Claimed by coordinator-openrouter-audit.
