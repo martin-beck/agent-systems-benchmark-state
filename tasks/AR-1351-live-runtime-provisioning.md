@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the private host/runtime provisioning seam for live acquisition.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Runtime-owned live provisioning",
-  "updated_at": "2026-09-23T19:41:49+00:00",
+  "updated_at": "2026-09-23T19:43:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1351-live-runtime-provisioning"
 }
 ---
@@ -202,3 +202,6 @@ runtime boundary; AR-1349 remains fail-closed until it is merged and verified.
 - 2026-09-23T19:41:49+00:00: Required PR #262 Repository quality failed at workspace coverage 89.95%
   below enforced 90.0% floor (live_service/live_relay uncovered branches). No threshold or exclusion
   changes are permitted. Pending local behavioral coverage repair.
+
+- 2026-09-23T19:43:11+00:00: Recorded command exit 0; command argv SHA-256
+  428457ea9cc6a21bd46c5be6651ba2faccb5b0b07ddc2fd6f96eca730dea5ab7.
