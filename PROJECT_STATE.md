@@ -23,20 +23,21 @@ Generated from local Git and GitHub. Do not edit.
 | #235 | `dependabot/github_actions/taiki-e/install-action-2.87.12@de0353cce59e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.6 to 2.87.12 |
 | #236 | `dependabot/cargo/toml-1.1.6spec-1.1.0@9dc09c5208ab` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump toml from 0.8.23 to 1.1.6+spec-1.1.0 |
 | #237 | `dependabot/cargo/thiserror-2.0.20@83dba9288d9c` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump thiserror from 2.0.16 to 2.0.20 |
+| #266 | `feature/ar-1359-runtime-control-bridge@f5119103248f` | `main` | UNSTABLE | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(runtime): bridge control enrollment receipts |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 35929276284 | `f5119103248f` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 35929276232 | `f5119103248f` | pull_request | Rust verification | in_progress:- |
+| 35929276209 | `f5119103248f` | pull_request | Repository quality | in_progress:- |
+| 35929276164 | `f5119103248f` | pull_request | Formal assurance | in_progress:- |
+| 35929276144 | `f5119103248f` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 35929276134 | `f5119103248f` | pull_request | Fault assurance | queued:- |
+| 35929276105 | `f5119103248f` | pull_request | Huawei MIT source headers | completed:success |
+| 35929276101 | `f5119103248f` | pull_request | Agent Workflow Quality shadow | in_progress:- |
 | 35927550351 | `e841c78467a2` | pull_request | Huawei MIT source headers | completed:success |
 | 35927550257 | `e841c78467a2` | pull_request | Fault assurance | completed:failure |
 | 35927550251 | `e841c78467a2` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 35927550232 | `e841c78467a2` | pull_request | Rust verification | completed:failure |
-| 35927550207 | `e841c78467a2` | pull_request | Emulated aarch64 portability | completed:failure |
-| 35927550202 | `e841c78467a2` | pull_request | Repository quality | completed:failure |
-| 35927550193 | `e841c78467a2` | pull_request | Hosted portability and native qualification | completed:failure |
-| 35927550188 | `e841c78467a2` | pull_request | Formal assurance | completed:failure |
-| 35927450273 | `7862e3bb90a7` | dynamic | Dependabot Updates | completed:success |
-| 35927352153 | `7862e3bb90a7` | push | Emulated aarch64 portability | completed:success |
-| 35927352134 | `7862e3bb90a7` | push | Formal assurance | completed:success |
-| 35927352130 | `7862e3bb90a7` | push | Rust verification | completed:success |
