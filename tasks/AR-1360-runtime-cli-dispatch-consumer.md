@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1360-runtime-cli-dispatch-consumer",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T00:58:13+00:00",
   "depends_on": [
     "AR-1359"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1360-runtime-cli-dispatch-consumer",
   "observed_dirty": 0,
   "observed_head": "be9af3d6fb22818e95f51b9640b10c5eb6e043f3",
-  "owner": "",
+  "owner": "codex-asb-runtime-attested-enrollment-luna56",
   "plan": "../plans/AR-1360-runtime-cli-dispatch-consumer.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Connect authenticated runtime enrollment receipts to asb run and sweep without exposing authority.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Runtime CLI dispatch consumer",
-  "updated_at": "2026-09-23T22:58:10+00:00",
+  "updated_at": "2026-09-23T22:58:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1360-runtime-cli-dispatch-consumer"
 }
 ---
@@ -33,3 +33,5 @@ behavior, or let CLI arguments synthesize provider authority.
 
 - 2026-09-23T22:58:10+00:00: Dependency AR-1359 is done with merged bridge and all seven post-merge
   workflows green; promote CLI dispatch consumer.
+
+- 2026-09-23T22:58:13+00:00: Claimed by codex-asb-runtime-attested-enrollment-luna56.
