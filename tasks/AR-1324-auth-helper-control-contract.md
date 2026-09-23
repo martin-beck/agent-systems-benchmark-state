@@ -1,20 +1,20 @@
 ---
 {
   "branch": "feature/ar-1324-auth-helper-control-contract",
-  "checkpoint_commit": "b5f6553fed1177f5cd3dad13e1c343b647730740",
+  "checkpoint_commit": "0116bf17fb5b1357a8592b5ec9937f12dabed9d6",
   "claim_expires": "2026-09-23T07:45:07+00:00",
   "depends_on": [],
   "id": "AR-1324",
-  "next_action": "Monitor authoritative pull_request checks for PR #248 at b5f6553; merge only after all required checks pass, then perform ASB\u2194asb-tui first-user/live-provider wizard acceptance.",
+  "next_action": "Monitor authoritative pull_request checks for PR #248 at 0116bf1; merge only after all required checks pass, then perform ASB\u2194asb-tui first-user/live-provider wizard acceptance.",
   "owner": "codex",
   "plan": "../plans/AR-1324.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Own the ASB control and runner backend for safe credential-helper invocation.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Authenticated credential-helper control contract",
-  "updated_at": "2026-09-23T05:45:24+00:00",
+  "updated_at": "2026-09-23T05:51:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1324-auth-helper-control-contract"
 }
 ---
@@ -113,3 +113,8 @@ never receive a raw credential or execute an arbitrary path.
 - 2026-09-23T05:45:24+00:00: Added malformed-helper and missing-reference rejection coverage; local
   cargo test and clippy pass; hosted-equivalent workspace coverage is 90.46% lines, above the 90%
   floor. Pushed b5f6553 to PR #248; awaiting fresh pull_request-context checks.
+
+- 2026-09-23T05:51:11+00:00: Fresh CI exposed a restart-test race: backend lock release can lag
+  worker teardown. Added bounded retry in restart-focused tests for production and recording
+  backends, preserving immediate exclusivity semantics. Full asb-cli lib suite passes locally
+  (90/90); pushed 0116bf1.
