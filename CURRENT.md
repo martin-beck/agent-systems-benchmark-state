@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1329](tasks/AR-1329-live-provider-run-execution.md): Live-provider run execution for real agents | Execute real agents against the selected provider through asb run and sweep with credential-free resolution. | Route live-provider launches through the existing authenticated declared-egress runtime boundary; current commit adds explicit --live-provider gating and credential resolution but does not yet qualify network enforcement. | codex-asb-ar1329-20260923 |
+| P1 | [AR-1329](tasks/AR-1329-live-provider-run-execution.md): Live-provider run execution for real agents | Execute real agents against the selected provider through asb run and sweep with credential-free resolution. | Blocked pending runtime-owned authenticated provider egress boundary: asb-runtime NetworkPolicy supports Deny/unsupported Host only, and existing ReplayRelay/LoopbackSidecar are replay-only. Add a provider-egress allowlist contract plus sandbox/relay implementation and denial/live tests before enabling live-provider. | codex-asb-ar1329-20260923 |
 
 ## Open
 

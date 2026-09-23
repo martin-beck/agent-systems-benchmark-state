@@ -1,23 +1,23 @@
 ---
 {
   "branch": "feature/ar-1329-live-provider-run-execution",
-  "checkpoint_commit": "e2f8dc78b9f590836bace86ced12718a09411745",
+  "checkpoint_commit": "a438b37036e95476bef4b2c1b26b6a96745435c9",
   "claim_expires": "2026-09-23T10:42:44+00:00",
   "depends_on": [
     "AR-1327",
     "AR-1328"
   ],
   "id": "AR-1329",
-  "next_action": "Route live-provider launches through the existing authenticated declared-egress runtime boundary; current commit adds explicit --live-provider gating and credential resolution but does not yet qualify network enforcement.",
+  "next_action": "Blocked pending runtime-owned authenticated provider egress boundary: asb-runtime NetworkPolicy supports Deny/unsupported Host only, and existing ReplayRelay/LoopbackSidecar are replay-only. Add a provider-egress allowlist contract plus sandbox/relay implementation and denial/live tests before enabling live-provider.",
   "owner": "codex-asb-ar1329-20260923",
   "plan": "../plans/AR-1329.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute real agents against the selected provider through asb run and sweep with credential-free resolution.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Live-provider run execution for real agents",
-  "updated_at": "2026-09-23T08:48:27+00:00",
+  "updated_at": "2026-09-23T08:51:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1329-live-provider-run-execution"
 }
 ---
@@ -41,3 +41,7 @@ the digest-pinned mode remain default and never touch the network.
 - 2026-09-23T08:48:27+00:00: Focused CLI and workflow tests pass. Live credential transport is
   bounded and secret-free; AR remains in_progress pending authenticated relay/egress integration and
   denial tests.
+
+- 2026-09-23T08:51:09+00:00: Removed unsafe direct credential injection and now fail closed for live
+  launches. Evidence: cargo check, CLI live-gate test, and workflow transcript pass; current runtime
+  APIs have no provider endpoint allowlist or authenticated live relay.
