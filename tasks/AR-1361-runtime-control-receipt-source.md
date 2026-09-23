@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide authenticated control receipt delivery and runtime-owned dispatch composition for CLI consumers.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Runtime control receipt source",
-  "updated_at": "2026-09-23T23:03:18+00:00",
+  "updated_at": "2026-09-23T23:03:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1361-runtime-control-receipt-source"
 }
 ---
@@ -36,3 +36,6 @@ authority.
   dispatch factory; dependency AR-1359 is merged and fully verified.
 
 - 2026-09-23T23:03:18+00:00: Claimed by codex-asb-runtime-attested-enrollment-luna56.
+
+- 2026-09-23T23:03:47+00:00: Recorded command exit 0; command argv SHA-256
+  7a064b06d86f07bff0c3c51b85a1ba223dcae4dab0490c3fcddd167240a05bbe.
