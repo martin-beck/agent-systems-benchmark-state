@@ -118,7 +118,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1325-provider-openrouter` | `feature/ar-1325-provider-openrouter` | `85eece9f6915` | 0 | behind 28, ahead 0 |
 | `agent-systems-benchmark-ar-1326-openrouter-catalog-selection` | `feature/ar-1326-openrouter-catalog-selection` | `64a3a002018a` | 0 | behind 10, ahead 0 |
 | `agent-systems-benchmark-ar-1327-openrouter-adapter-parity` | `feature/ar-1327-openrouter-adapter-parity` | `bdb3bf028f0a` | 0 | behind 1, ahead 0 |
-| `agent-systems-benchmark-ar-1328-openrouter-free-model-config` | `feature/ar-1328-openrouter-free-model-config` | `7dd39bcc7dd0` | 0 | behind 0, ahead 4 |
+| `agent-systems-benchmark-ar-1328-openrouter-free-model-config` | `feature/ar-1328-openrouter-free-model-config` | `7dd39bcc7dd0` | 1 | behind 0, ahead 4 |
+| changed files | - | - | - | `crates/asb-cli/src/lib.rs` |
 | `agent-systems-benchmark-ar-1337-protected-main-merge-tree-repair` | `repair/ar-1337-openrouter-merge-tree-admission` | `8dc07a0f86a1` | 0 | behind 12, ahead 0 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 684, ahead 0 |
 | `agent-systems-benchmark-ar0704-rebase-20260918` | `feature/ar0704-formal-rebase-20260918` | `c5a7b5a0448c` | 0 | behind 50, ahead 4 |
@@ -342,8 +343,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-pr214-repair` | `repair/pr214-replay-lifecycle` | `45ba18d3b6b5` | 0 | behind 34, ahead 0 |
 | `asb-readiness` | `DETACHED` | `78a8e9fc2144` | 0 | behind 48, ahead 0 |
 | `asb-recording-audit.vnDk3k` | `DETACHED` | `f205ff90dbc9` | 0 | behind 42, ahead 0 |
-| `agent-systems-benchmark-state` | `main` | `f6a136ecdbae` | 2 | behind 0, ahead 1 |
-| changed files | - | - | - | `plans/AR-1338.md`, `tasks/AR-1338-guided-asb-command-wrapper.md` |
+| `agent-systems-benchmark-state` | `main` | `cc683988ff9e` | 0 | behind 0, ahead 3 |
 | `agent-systems-benchmark-ar-1313-historical-dco-909078c` | `repair/ar-1313-historical-dco-909078c` | `8e5598eab3b3` | 0 | behind 612, ahead 0 |
 | `agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity` | `feature/ar-1308-full-exhaustive-qemu-capacity` | `659030fffd7e` | 0 | behind 2033, ahead 0 |
 | `agent-systems-benchmark-coordination-assurance` | `feature/coordination-assurance` | `adfde31ad408` | 0 | behind 29913, ahead 0 |
