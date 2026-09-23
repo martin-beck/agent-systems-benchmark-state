@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Transport authenticated enrollment records into runtime without exposing authority to the CLI.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Runtime-attested enrollment record transport",
-  "updated_at": "2026-09-23T21:59:45+00:00",
+  "updated_at": "2026-09-23T22:03:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1357-runtime-attested-enrollment-record"
 }
 ---
@@ -104,3 +104,6 @@ Successor for AR-1355. AR-1356 supplies the authenticated control/runtime attest
 - 2026-09-23T21:59:45+00:00: Published PR #265 at exact head cc8016f through handoffctl. Hosted
   checks started; AWQ and headers pass. Loom/state models currently failed while other checks remain
   in progress; no merge action taken.
+
+- 2026-09-23T22:03:30+00:00: Recorded command exit 0; command argv SHA-256
+  5c8da9b34935360f7399b9d4b260d9a460b442f2f0ca08eddaee6e8f11776ef0.
