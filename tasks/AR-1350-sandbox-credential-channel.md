@@ -10,7 +10,7 @@
     "AR-1347"
   ],
   "id": "AR-1350",
-  "next_action": "Implement a private sealed-FD/memfd child credential channel after verifying completed relay/namespace prerequisites; AR-1349 and AR-1329 are downstream consumers and must remain fail-closed until this repair merges.",
+  "next_action": "Focused runtime test initially failed with E0369 because tests compared Result<SandboxCredentialChannel, Error> without PartialEq on the opaque file-backed channel; repaired tests to use matches!. A later bubblewrap delivery test failed because --ro-bind treated the memfd source as a directory; repaired channel and test to use bubblewrap --ro-bind-data FD DEST. Current focused sandbox_credential tests pass 3/3, formatting passes. Continue full asb-runtime/workspace gates, inspect public authority boundaries, then commit signed+DCO.",
   "observed_branch": "feature/ar-1350-sandbox-credential-channel",
   "observed_dirty": 6,
   "observed_head": "359f15af52aa2b0b31bb091b945e7de933960006",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement a sandbox-owned sealed-FD credential channel for live provider children.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Sandbox-owned credential channel",
-  "updated_at": "2026-09-23T17:28:58+00:00",
+  "updated_at": "2026-09-23T17:29:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1350-sandbox-credential-channel"
 }
 ---
@@ -67,3 +67,6 @@ private runtime channel before AR-1349 can safely acquire attempts or wire
 
 - 2026-09-23T17:28:58+00:00: Recorded command exit 0; command argv SHA-256
   cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
+
+- 2026-09-23T17:29:37+00:00: Recorded exact compiler and child-delivery failures and targeted
+  repairs; no failure was suppressed. Current source remains uncommitted pending full gates.
