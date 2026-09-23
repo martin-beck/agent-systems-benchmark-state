@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime-owned API and CLI integration needed for safe live-provider attempts.",
-  "task_revision": 192,
+  "task_revision": 193,
   "title": "Runtime-owned CLI live acquisition contract",
-  "updated_at": "2026-09-23T14:02:33+00:00",
+  "updated_at": "2026-09-23T14:03:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1344-runtime-cli-acquisition-contract"
 }
 ---
@@ -520,3 +520,6 @@ contract and its tests are merged and verified.
   factory tests are covered; remaining deficit requires broad runtime branch tests across
   AR-1342/1343 surfaces and is not safely solvable by a small AR-1344 patch. No product changes
   made; PR remains unmergeable on coverage.
+
+- 2026-09-23T14:03:36+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
