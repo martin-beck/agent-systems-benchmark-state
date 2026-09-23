@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1344-runtime-cli-acquisition-contract",
-  "checkpoint_commit": "7b8d2966b8f4afb4a20f7be21eefdd01d47557b8",
+  "checkpoint_commit": "6b06b12639beb29909621a324a228976eea23b3b",
   "claim_expires": "2026-09-23T15:51:59+00:00",
   "depends_on": [
     "AR-1339",
@@ -9,7 +9,7 @@
     "AR-1342"
   ],
   "id": "AR-1344",
-  "next_action": "Coverage repair is beyond AR-1344 scope: local cargo llvm-cov workspace report is 88.42% lines, still below 90%, with residual broad deficits in launch_factory 78.24%, live_namespace 87.86%, provider_egress 88.25%, sandbox 84.89%, supervisor 75.39%, and unrelated loopback_sidecar 84.50%. Plan/assign a coverage-repair successor before PR #260 can merge; do not weaken floor or forge capability fixtures.",
+  "next_action": "PR #260 updated to signed head 6b06b12 with targeted launch_factory coverage for backend retention and opaque factory debug. Re-run exact CI coverage; 90% floor remains mandatory and broad residual runtime deficits are documented. Do not merge while policy coverage is red.",
   "observed_branch": "feature/ar-1344-runtime-cli-acquisition-contract",
   "observed_dirty": 0,
   "observed_head": "6b06b12639beb29909621a324a228976eea23b3b",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime-owned API and CLI integration needed for safe live-provider attempts.",
-  "task_revision": 199,
+  "task_revision": 200,
   "title": "Runtime-owned CLI live acquisition contract",
-  "updated_at": "2026-09-23T14:04:55+00:00",
+  "updated_at": "2026-09-23T14:05:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1344-runtime-cli-acquisition-contract"
 }
 ---
@@ -535,3 +535,8 @@ contract and its tests are merged and verified.
 
 - 2026-09-23T14:04:55+00:00: Recorded command exit 0; command argv SHA-256
   ef1db3594e9b0d9902b9e2a786e2b9087ff98e8742696a22a6bd51244b63210e.
+
+- 2026-09-23T14:05:24+00:00: Added meaningful runtime tests without constructing live capabilities:
+  replay backend retention via issue_with_backend and opaque LiveProviderAttemptFactory Debug.
+  launch_factory focused suite now 10 passed, 1 capability-gated ignored. Pushed PR #260 update from
+  6b06b12; exact workspace coverage remains expected below 90 until CI rerun.
