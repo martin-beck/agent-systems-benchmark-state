@@ -23,7 +23,7 @@ Generated from local Git and GitHub. Do not edit.
 | #235 | `dependabot/github_actions/taiki-e/install-action-2.87.12@de0353cce59e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.6 to 2.87.12 |
 | #236 | `dependabot/cargo/toml-1.1.6spec-1.1.0@9dc09c5208ab` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump toml from 0.8.23 to 1.1.6+spec-1.1.0 |
 | #237 | `dependabot/cargo/thiserror-2.0.20@83dba9288d9c` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump thiserror from 2.0.16 to 2.0.20 |
-| #249 | `feature/ar-1325-provider-openrouter@85eece9f6915` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(agents): pinned credential-free OpenRouter provider profile (AR-1325) |
+| #249 | `feature/ar-1325-provider-openrouter@85eece9f6915` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(agents): pinned credential-free OpenRouter provider profile (AR-1325) |
 | #250 | `feature/ar-1326-openrouter-catalog-selection@0c031b985bfc` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): select OpenRouter through provider catalog and plan (AR-1326) |
 | #251 | `feature/ar-1327-openrouter-adapter-parity@5006bcf43fed` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(agents): OpenRouter adapter projections and parity conformance (AR-1327) |
 
@@ -32,7 +32,7 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 35825537759 | `6b06f0ea2346` | push | Repository quality | in_progress:- |
-| 35825537754 | `6b06f0ea2346` | push | Hosted portability and native qualification | in_progress:- |
+| 35825537754 | `6b06f0ea2346` | push | Hosted portability and native qualification | completed:success |
 | 35825537737 | `6b06f0ea2346` | push | Fault assurance | in_progress:- |
 | 35825537733 | `6b06f0ea2346` | push | Rust verification | in_progress:- |
 | 35825537729 | `6b06f0ea2346` | push | Formal assurance | in_progress:- |
@@ -40,6 +40,6 @@ Generated from local Git and GitHub. Do not edit.
 | 35825537698 | `6b06f0ea2346` | push | Huawei MIT source headers | completed:success |
 | 35825324615 | `85eece9f6915` | pull_request | Fault assurance | completed:success |
 | 35825324602 | `85eece9f6915` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 35825324600 | `85eece9f6915` | pull_request | Formal assurance | in_progress:- |
+| 35825324600 | `85eece9f6915` | pull_request | Formal assurance | completed:success |
 | 35825324591 | `85eece9f6915` | pull_request | Rust verification | in_progress:- |
 | 35825324581 | `85eece9f6915` | pull_request | Hosted portability and native qualification | completed:success |
