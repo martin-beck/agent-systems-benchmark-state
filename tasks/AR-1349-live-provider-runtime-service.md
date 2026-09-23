@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 211,
+  "task_revision": 212,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T20:42:35+00:00",
+  "updated_at": "2026-09-23T20:44:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
@@ -623,3 +623,6 @@ qualified.
 - 2026-09-23T20:42:35+00:00: Rebased onto protected main 03b830bb. AR-1352 supplies and tests
   private bootstrap, but current cross-crate API intentionally exposes no safe way for asb-cli to
   obtain the opaque provisioner. No public authority leak introduced. AR-1329 remains fail-closed.
+
+- 2026-09-23T20:44:04+00:00: Recorded command exit 0; command argv SHA-256
+  a2df30b67e2fa678f8e0aaba5c49dc0ec93363c003877afef7f262d67de6acc7.
