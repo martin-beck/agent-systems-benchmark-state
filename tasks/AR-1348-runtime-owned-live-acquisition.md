@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the runtime-owned supervisor that acquires every live-provider authority and tears it down safely.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Runtime-owned live acquisition service",
-  "updated_at": "2026-09-23T16:01:33+00:00",
+  "updated_at": "2026-09-23T16:02:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1348-runtime-owned-live-acquisition"
 }
 ---
@@ -78,3 +78,6 @@ this service owns acquisition instead of accepting caller-built launch authority
   positive target/identity and negative unlisted-target/bad-identity tests. Focused cargo test -p
   asb-runtime live_supervisor passed 2/2. Signed+DCO product commit 933e2d6; AR-1329 remains
   fail-closed.
+
+- 2026-09-23T16:02:13+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
