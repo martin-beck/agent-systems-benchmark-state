@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Issue runtime-owned live enrollment capability from authenticated control attestation.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Control/runtime enrollment attestation primitive",
-  "updated_at": "2026-09-23T21:14:21+00:00",
+  "updated_at": "2026-09-23T21:15:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1356-control-runtime-attestation-primitive"
 }
 ---
@@ -98,3 +98,6 @@ dispatch and do not expose caller-supplied launch authority.
   clippy --locked --workspace --all-targets -- -D warnings; cargo test --locked --workspace
   including doc tests. Review confirmed no public claims constructors/accessors and no CLI authority
   inputs. No native live evidence was claimed.
+
+- 2026-09-23T21:15:18+00:00: Recorded command exit 0; command argv SHA-256
+  6df23ddc4ce94a384cd18137a08d3dbc354461097bfea261cd73f5ac9bc652c5.
