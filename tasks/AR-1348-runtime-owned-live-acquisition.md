@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1348-runtime-owned-live-acquisition",
   "checkpoint_commit": "a336d6744b1a82f36a706ec606b847c92d49cfd3",
-  "claim_expires": "2026-09-23T17:53:46+00:00",
+  "claim_expires": "2026-09-23T17:55:07+00:00",
   "depends_on": [
     "AR-1327",
     "AR-1328",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the runtime-owned supervisor that acquires every live-provider authority and tears it down safely.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Runtime-owned live acquisition service",
-  "updated_at": "2026-09-23T15:54:53+00:00",
+  "updated_at": "2026-09-23T15:55:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1348-runtime-owned-live-acquisition"
 }
 ---
@@ -45,3 +45,5 @@ this service owns acquisition instead of accepting caller-built launch authority
 
 - 2026-09-23T15:54:53+00:00: Recorded command exit 0; command argv SHA-256
   1b83375ebfa817ed4499efa94dffd5af9e66b90b526114584b5217f8ee63b9ce.
+
+- 2026-09-23T15:55:07+00:00: Heartbeat by codex-asb-runtime-acquisition-successor-luna56.
