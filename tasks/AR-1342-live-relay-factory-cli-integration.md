@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1342-live-relay-factory-cli-integration",
-  "checkpoint_commit": "a934168d9dc17ecb6d6d765b216869bc82cf840c",
+  "checkpoint_commit": "d24221731891fb39f56118be9c5ae51364824517",
   "claim_expires": "2026-09-23T14:11:17+00:00",
   "depends_on": [
     "AR-1327",
@@ -10,7 +10,7 @@
     "AR-1340"
   ],
   "id": "AR-1342",
-  "next_action": "All 12 exact-head checks are green and complete diff independently reviewed; GitHub self-approval is unavailable because coordinator is PR author. Merge PR #259 through established gate, then verify all seven post-merge workflows before releasing AR-1342 and advancing AR-1329.",
+  "next_action": "PR #259 merged at d24221731891fb39f56118be9c5ae51364824517; monitor all seven exact-head post-merge workflows and release AR-1342 done only after every one is green, then promote/advance AR-1329.",
   "observed_branch": "feature/ar-1342-live-relay-factory-cli-integration",
   "observed_dirty": 0,
   "observed_head": "a934168d9dc17ecb6d6d765b216869bc82cf840c",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Create the runtime-owned relay factory and opaque launch context required for safe live CLI execution.",
-  "task_revision": 74,
+  "task_revision": 75,
   "title": "Runtime-owned live relay factory and CLI integration",
-  "updated_at": "2026-09-23T12:11:17+00:00",
+  "updated_at": "2026-09-23T12:11:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1342-live-relay-factory-cli-integration"
 }
 ---
@@ -225,3 +225,7 @@ until it is complete, live spawning remains fail-closed.
   f822c8d72fb245ae6ef16fdb66efb8b07c01afe78b7a13b46f4ce17e9a295d09.
 
 - 2026-09-23T12:11:17+00:00: Heartbeat by codex-asb-ar1342-20260923.
+
+- 2026-09-23T12:11:38+00:00: PR #259 merged after repaired head a934168 exact-head checks all green.
+  Post-merge workflows started at merge d2422173; Huawei headers green, six remaining workflows
+  pending. Preserve AR-1329 fail-closed until post-merge completion.
