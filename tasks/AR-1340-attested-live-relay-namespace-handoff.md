@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1340-attested-live-relay-handoff",
   "checkpoint_commit": "f77aafb44b05cd04cbd642ab3d737eb4062403dc",
-  "claim_expires": "2026-09-23T11:55:43+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1339"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1340-attested-live-relay-handoff",
   "observed_dirty": 0,
   "observed_head": "f77aafb44b05cd04cbd642ab3d737eb4062403dc",
-  "owner": "codex-asb-coordinator-20260923",
+  "owner": "",
   "plan": "../plans/AR-1340.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Bind the live provider relay to an attested child namespace and integrate it without weakening offline or replay denial.",
-  "task_revision": 85,
+  "task_revision": 86,
   "title": "Attested live-relay namespace and child handoff",
-  "updated_at": "2026-09-23T11:25:43+00:00",
+  "updated_at": "2026-09-23T11:25:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1340-attested-live-relay-handoff"
 }
 ---
@@ -278,3 +278,10 @@ public coordination state or runtime evidence.
   may advance.
 
 - 2026-09-23T11:25:43+00:00: Claimed by codex-asb-coordinator-20260923.
+
+- 2026-09-23T11:25:46+00:00: Security hold cleared by AR-1341. Original PR #257 merged at
+  3406faae58f0e762f70a856f6b9c6c545fcc9a37; repair PR #258 exact head
+  228bcc33957d168041717f7ca347f06aa6256a64 merged at 2774b1d648b5c3bbda0e290e158dc352502d3768.
+  Repair adds runtime-observed child namespace attestation, late-binding launch gate,
+  copied/stale/mismatch denial tests. All seven exact-head post-merge workflows for repair green:
+  35853535895, 35853535903, 35853535928, 35853535939, 35853535966, 35853535973, 35853535986.
