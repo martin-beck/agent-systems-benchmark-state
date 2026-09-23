@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1340-attested-live-relay-handoff",
-  "checkpoint_commit": "a70dc59a74cc7886ba84ef357e98b9bfffbfcab6",
+  "checkpoint_commit": "c265c085eee22b0f029f98782c15aa207e4320dc",
   "claim_expires": "2026-09-23T12:17:02+00:00",
   "depends_on": [
     "AR-1339"
   ],
   "id": "AR-1340",
-  "next_action": "Review the signed checkpoint, integrate LiveProviderNamespaceHandoff into the runtime-owned live launch path, add backend descendant namespace exercise, then run full gates and publish PR.",
+  "next_action": "Independent review of both signed checkpoints; then add/verify runtime backend descendant namespace exercise and run full workspace quality gates before PR publication.",
   "observed_branch": "feature/ar-1340-attested-live-relay-handoff",
   "observed_dirty": 0,
   "observed_head": "c265c085eee22b0f029f98782c15aa207e4320dc",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind the live provider relay to an attested child namespace and integrate it without weakening offline or replay denial.",
-  "task_revision": 55,
+  "task_revision": 56,
   "title": "Attested live-relay namespace and child handoff",
-  "updated_at": "2026-09-23T10:23:11+00:00",
+  "updated_at": "2026-09-23T10:23:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1340-attested-live-relay-handoff"
 }
 ---
@@ -177,3 +177,11 @@ public coordination state or runtime evidence.
 
 - 2026-09-23T10:23:00+00:00: Recorded command exit 0; command argv SHA-256
   7084c3e57fb96cf7262fe73aae29f4cb264205d9a1942fa4e5c2480c030c2de7.
+
+- 2026-09-23T10:23:29+00:00: Checkpoint c265c085eee22b0f029f98782c15aa207e4320dc is SSH-signed+DCO.
+  Integrated optional live capability into SandboxLaunchInput and SandboxBackend: validates
+  namespace-bound handoff at admission/spawn, binds only the attested Unix socket into the
+  unshare-all child endpoint, and sets only secret-free ASB_LIVE_PROVIDER_RELAY and capability
+  digest variables. NetworkPolicy remains Deny. Added positive/negative sandbox admission test.
+  Focused live test plus full cargo test --locked -p asb-runtime pass: 64 passed, 1 ignored;
+  process/sandbox/scheduler tests and doc tests pass.
