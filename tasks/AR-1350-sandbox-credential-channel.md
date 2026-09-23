@@ -10,7 +10,7 @@
     "AR-1347"
   ],
   "id": "AR-1350",
-  "next_action": "Clean-main independent AR-1350 candidate is 709dae14b3ddecc143af4bcb722c3c4250412225, based on protected origin/main a336d6744b1a82f36a706ec606b847c92d49cfd3. Diff contains only neutral sealed-FD credential channel/runtime files; no live_service or AR-1349 files. SandboxCredentialBinding::new is crate-private and public launch revalidates the runtime-owned binding; secrets are delivered through bubblewrap --args memfd, with target binding, input erasure, cleanup, and positive/negative tests. Focused tests, full locked workspace tests, fmt check, clippy -D warnings, rustdoc -D warnings, and release build all passed. Next: publish PR from clean exact head through handoffctl, wait for exact-head CI and independent review, then merge and post-merge verify; AR-1349 remains downstream.",
+  "next_action": "PR #261 is published from clean exact head 709dae14b3ddecc143af4bcb722c3c4250412225, based on protected origin/main a336d6744b1a82f36a706ec606b847c92d49cfd3. The diff contains only neutral sealed-FD credential-channel/runtime files; no live_service or AR-1349 files. SandboxCredentialBinding::new is crate-private and public launch revalidates the runtime-owned binding; bubblewrap receives only numeric --args memfd, with target binding, input erasure, cleanup, and positive/negative tests. Focused sandbox_credential (2 passed), full locked workspace tests, fmt check, clippy -D warnings, rustdoc -D warnings, and release build passed. Next: wait for exact-head CI and independent review on PR #261; merge only when required checks are green, then post-merge verify and release AR-1350. AR-1349 remains downstream.",
   "observed_branch": "feature/ar-1350-sandbox-credential-channel",
   "observed_dirty": 0,
   "observed_head": "709dae14b3ddecc143af4bcb722c3c4250412225",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement a sandbox-owned sealed-FD credential channel for live provider children.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Sandbox-owned credential channel",
-  "updated_at": "2026-09-23T17:56:34+00:00",
+  "updated_at": "2026-09-23T17:56:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1350-sandbox-credential-channel"
 }
 ---
@@ -234,3 +234,7 @@ private runtime channel before AR-1349 can safely acquire attempts or wire
   d8bccc1269fe3df1abe9e2f4dfac0de538597a76c4481b48478d1c9245a5b001.
 
 - 2026-09-23T17:56:34+00:00: Heartbeat by codex-asb-ar1350-sandbox-channel-luna56.
+
+- 2026-09-23T17:56:49+00:00: Published PR #261 through handoffctl from clean exact head. Signed+DCO
+  commit 709dae14b3ddecc143af4bcb722c3c4250412225 verified; old stacked e7176fb remains archived and
+  unpublished.
