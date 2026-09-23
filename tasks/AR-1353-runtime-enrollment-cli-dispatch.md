@@ -10,16 +10,16 @@
   "next_action": "Implement runtime-owned enrollment transport for opaque LiveProviderRuntimeHandle, then replace injected live factory in asb run/sweep with positive/negative dispatch tests.",
   "observed_branch": "feature/ar-1353-runtime-enrollment-cli-dispatch",
   "observed_dirty": 0,
-  "observed_head": "03b830bbec183477758877f8a2a9e00714d351c0",
+  "observed_head": "68999d4043b2ed5c6bc5440f6c50126d7db2ddce",
   "owner": "codex-asb-ar1329-live-cli-luna56",
   "plan": "../plans/AR-1353-runtime-enrollment-cli-dispatch.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add runtime-owned enrollment and opaque live CLI dispatch.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Runtime enrollment and CLI dispatch",
-  "updated_at": "2026-09-23T20:48:28+00:00",
+  "updated_at": "2026-09-23T20:48:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1353-runtime-enrollment-cli-dispatch"
 }
 ---
