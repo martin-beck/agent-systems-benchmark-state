@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1329-live-provider-run-execution",
   "checkpoint_commit": "d24221731891fb39f56118be9c5ae51364824517",
-  "claim_expires": "",
+  "claim_expires": "2026-09-23T17:19:14+00:00",
   "depends_on": [
     "AR-1327",
     "AR-1328",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1329-live-provider-run-execution",
   "observed_dirty": 0,
   "observed_head": "d24221731891fb39f56118be9c5ae51364824517",
-  "owner": "",
+  "owner": "codex-asb-ar1329-live-cli-luna56",
   "plan": "../plans/AR-1329.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Execute real agents against the selected provider through asb run and sweep with credential-free resolution.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Live-provider run execution for real agents",
-  "updated_at": "2026-09-23T12:26:55+00:00",
+  "updated_at": "2026-09-23T15:19:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1329-live-provider-run-execution"
 }
 ---
@@ -149,3 +149,5 @@ the digest-pinned mode remain default and never touch the network.
   listener/request protocol, concrete egress target allowlist acquisition, credential transport, or
   pinned live gate acquisition is available. Successor AR-1343 now provides the required scoped
   repair; preserve NetworkPolicy::Deny and direct/alternate egress denial.
+
+- 2026-09-23T15:19:14+00:00: Claimed by codex-asb-ar1329-live-cli-luna56.
