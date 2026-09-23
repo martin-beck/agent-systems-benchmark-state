@@ -10,7 +10,7 @@
     "AR-1340"
   ],
   "id": "AR-1342",
-  "next_action": "PR #259 repair pushed at a934168. Wait for rerun of policy/supply-chain and all exact-head required checks plus independent review; do not merge or release until green, then verify post-merge and advance AR-1329.",
+  "next_action": "Rust workflow 35857214480 had a one-off control state-root collision; focused control test passed in three consecutive isolated runs. Rerun workflow through handoffctl, then await all exact-head checks/review; keep PR #259 unmerged.",
   "observed_branch": "feature/ar-1342-live-relay-factory-cli-integration",
   "observed_dirty": 0,
   "observed_head": "a934168d9dc17ecb6d6d765b216869bc82cf840c",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Create the runtime-owned relay factory and opaque launch context required for safe live CLI execution.",
-  "task_revision": 62,
+  "task_revision": 63,
   "title": "Runtime-owned live relay factory and CLI integration",
-  "updated_at": "2026-09-23T12:02:02+00:00",
+  "updated_at": "2026-09-23T12:02:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1342-live-relay-factory-cli-integration"
 }
 ---
@@ -184,3 +184,9 @@ until it is complete, live spawning remains fail-closed.
 - 2026-09-23T12:01:52+00:00: Heartbeat by codex-asb-ar1342-20260923.
 
 - 2026-09-23T12:02:02+00:00: Heartbeat by codex-asb-ar1342-20260923.
+
+- 2026-09-23T12:02:20+00:00: Investigated
+  production_backend_runs_without_frontend_and_recovers_idempotency. Three consecutive
+  handoffctl-wrapped cargo test runs passed (1/1 each; ~0.21s, ~0.20s, ~0.28s). Scratch uses unique
+  process-local sequence plus nanosecond identity and Drop cleanup; no product reproduction or
+  source change indicated. Treat CI failure as runner/state collision pending workflow rerun.
