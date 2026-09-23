@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**385 ARs tracked** across 6 active status categories.
+**386 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 4 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 54 |
-| **Planned** | Defined work awaiting promotion or dependencies | 64 |
+| **Planned** | Defined work awaiting promotion or dependencies | 65 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 246 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -454,6 +454,7 @@ flowchart LR
         AR_1359["AR-1359 - Done"]:::status_done
         AR_1360["AR-1360 - Blocked"]:::status_blocked
         AR_1361["AR-1361 - Blocked"]:::status_blocked
+        AR_1362["AR-1362 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1447,6 +1448,7 @@ flowchart LR
     AR_1357 --> AR_1359
     AR_1359 --> AR_1360
     AR_1359 --> AR_1361
+    AR_1359 --> AR_1362
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -1843,9 +1845,10 @@ flowchart LR
 | [AR-1356](../tasks/AR-1356-control-runtime-attestation-primitive.md) | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) | [AR-1357](../tasks/AR-1357-runtime-attested-enrollment-record.md) |
 | [AR-1357](../tasks/AR-1357-runtime-attested-enrollment-record.md) | [AR-1356](../tasks/AR-1356-control-runtime-attestation-primitive.md) | [AR-1358](../tasks/AR-1358-runtime-enrollment-cli-dispatch.md), [AR-1359](../tasks/AR-1359-runtime-control-bridge.md) |
 | [AR-1358](../tasks/AR-1358-runtime-enrollment-cli-dispatch.md) | [AR-1357](../tasks/AR-1357-runtime-attested-enrollment-record.md) | None |
-| [AR-1359](../tasks/AR-1359-runtime-control-bridge.md) | [AR-1357](../tasks/AR-1357-runtime-attested-enrollment-record.md) | [AR-1360](../tasks/AR-1360-runtime-cli-dispatch-consumer.md), [AR-1361](../tasks/AR-1361-runtime-control-receipt-source.md) |
+| [AR-1359](../tasks/AR-1359-runtime-control-bridge.md) | [AR-1357](../tasks/AR-1357-runtime-attested-enrollment-record.md) | [AR-1360](../tasks/AR-1360-runtime-cli-dispatch-consumer.md), [AR-1361](../tasks/AR-1361-runtime-control-receipt-source.md), [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md) |
 | [AR-1360](../tasks/AR-1360-runtime-cli-dispatch-consumer.md) | [AR-1359](../tasks/AR-1359-runtime-control-bridge.md) | None |
 | [AR-1361](../tasks/AR-1361-runtime-control-receipt-source.md) | [AR-1359](../tasks/AR-1359-runtime-control-bridge.md) | None |
+| [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md) | [AR-1359](../tasks/AR-1359-runtime-control-bridge.md) | None |
 
 ## Complete AR inventory
 
