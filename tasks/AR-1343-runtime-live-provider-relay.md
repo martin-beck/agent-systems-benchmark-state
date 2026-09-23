@@ -10,7 +10,7 @@
     "AR-1340"
   ],
   "id": "AR-1343",
-  "next_action": "CLI acquisition remains a bounded follow-up: add an explicit runtime-owned per-attempt API supplying SandboxBackend, benchmark ResourceLease, observed child NamespaceIdentity, and LiveProviderRelay lifecycle; do not weaken spawn_verified_agent live-provider fail-closed guard.",
+  "next_action": "Successor dependency required: expose a reviewed runtime-owned CLI acquisition API that atomically supplies SandboxBackend, benchmark ResourceLease, runtime launch token, observed child NamespaceIdentity, and per-attempt LiveProviderRelay lifecycle. Keep spawn_verified_agent live-provider rejection and AR-1329 fail-closed until that contract is implemented and tested.",
   "observed_branch": "feature/ar-1343-runtime-live-provider-relay",
   "observed_dirty": 0,
   "observed_head": "ce2c2db068b05092f0f63291e0d94d4dbc9cda9c",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime live-provider relay service and per-attempt opaque factory acquisition required by asb run and sweep.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Runtime live-provider relay service and CLI acquisition",
-  "updated_at": "2026-09-23T12:46:45+00:00",
+  "updated_at": "2026-09-23T12:47:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1343-runtime-live-provider-relay"
 }
 ---
@@ -117,3 +117,8 @@ capabilities without bypassing the denied-network sandbox.
 - 2026-09-23T12:46:22+00:00: Claimed by codex-asb-ar1343-replacement-20260923.
 
 - 2026-09-23T12:46:45+00:00: Heartbeat by codex-asb-ar1343-replacement-20260923.
+
+- 2026-09-23T12:47:00+00:00: Reclaimed under replacement owner. Relay commit ce2c2db is
+  SSH-signed+DCO and checkpointed. Existing SandboxBackend lacks a public discovery/acquisition API;
+  CLI lacks benchmark lease, runtime token, observed child namespace, and relay lifecycle ownership.
+  Inventing direct sockets or caller-built authority would violate AR scope and security boundaries.
