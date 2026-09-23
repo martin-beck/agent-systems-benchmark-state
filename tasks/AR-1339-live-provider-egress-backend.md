@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1339-live-provider-egress-backend",
-  "checkpoint_commit": "ac74c20633bbd550924326f14630e41efce06aeb",
+  "checkpoint_commit": "5d8e1105855b41e81664b3445c284ce68b0de6a0",
   "claim_expires": "2026-09-23T10:55:16+00:00",
   "depends_on": [
     "AR-1328"
   ],
   "id": "AR-1339",
-  "next_action": "Integrate ProviderEgressRelay into runtime-owned sandbox launch and CLI live path; relay now enforces authenticated handoff, exact public target allowlist, connect/deadline/request/response bounds, and no redirects/DNS.",
+  "next_action": "Integrate ProviderEgressRelay into the runtime-owned sandbox/CLI live launch handoff; relay now connects only authorized exact targets and bounds forwarding, with synthetic transport tests.",
   "observed_branch": "feature/ar-1339-live-provider-egress-backend",
   "observed_dirty": 0,
   "observed_head": "e69dc146e2b0eb341a8791fb5d53a5276dea1dc6",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the runtime-owned authenticated backend for explicit live provider egress.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Runtime-owned live-provider egress backend",
-  "updated_at": "2026-09-23T09:05:57+00:00",
+  "updated_at": "2026-09-23T09:07:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1339-live-provider-egress-backend"
 }
 ---
@@ -43,3 +43,7 @@ that missing boundary so live provider execution can be enabled safely.
 
 - 2026-09-23T09:05:57+00:00: Added bounded relay primitive with synthetic denial tests. No external
   network tests performed; offline/replay NetworkPolicy::Deny remains unchanged.
+
+- 2026-09-23T09:07:44+00:00: Reconciled public-IP allowlist and launch-fenced authorization into
+  relay implementation. Six provider_egress tests pass; cargo check -p asb-cli passes. No
+  offline/replay network policy changes.

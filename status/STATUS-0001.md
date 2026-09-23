@@ -1758,7 +1758,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md): Live-provider run execution for real agents | codex-asb-ar1329-20260923 | Execute real agents against the selected provider through asb run and sweep with credential-free resolution. | Consume AR-1339 runtime-owned authenticated provider relay; then integrate live run/sweep and complete egress denial/live evidence. |
 | P1 | [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md): OpenRouter free-model conformance and hostile qualification | codex-asb-ar1334-20260923 | Qualify the pinned OpenRouter free model under conformance and hostile fail-closed testing. | Push PR for independent review; wait exact-head required CI, repair any failures, then merge only after all checks are green and verify post-merge workflows. |
-| P1 | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md): Runtime-owned live-provider egress backend | codex-asb-ar1339-20260923 | Implement the runtime-owned authenticated backend for explicit live provider egress. | Integrate ProviderEgressRelay into runtime-owned sandbox launch and CLI live path; relay now enforces authenticated handoff, exact public target allowlist, connect/deadline/request/response bounds, and no redirects/DNS. |
+| P1 | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md): Runtime-owned live-provider egress backend | codex-asb-ar1339-20260923 | Implement the runtime-owned authenticated backend for explicit live provider egress. | Integrate ProviderEgressRelay into the runtime-owned sandbox/CLI live launch handoff; relay now connects only authorized exact targets and bounds forwarding, with synthetic transport tests. |
 
 ### Open (3)
 
