@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1364-authenticated-chain-enrollment",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "47914d8a5f678f5b1e64b0e7f07ddfc0f92bb99e",
   "claim_expires": "2026-09-24T01:30:25+00:00",
   "depends_on": [
     "AR-1362"
   ],
   "id": "AR-1364",
-  "next_action": "Promote after AR-1362 is done, then add authenticated certificate-chain enrollment/materialization for the control receipt source.",
+  "next_action": "Run full applicable gates, independently review the chain-enrollment boundary, then publish a clean exact-head PR and monitor all required checks.",
   "observed_branch": "feature/ar-1364-authenticated-chain-enrollment",
   "observed_dirty": 0,
   "observed_head": "47914d8fd49ca5b5132c0734d3739df4502b7853",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize authenticated certificate-chain authority for control-owned runtime receipt issuance.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Authenticated chain enrollment",
-  "updated_at": "2026-09-23T23:32:36+00:00",
+  "updated_at": "2026-09-23T23:32:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1364-authenticated-chain-enrollment"
 }
 ---
@@ -46,3 +46,8 @@ asb-tui or synthesize certificate authority from CLI/config input.
 
 - 2026-09-23T23:32:26+00:00: Recorded command exit 0; command argv SHA-256
   ad07c34640072cd4977d553ab1dec38416afbfa93b1805db738c19b36a9ca5ab.
+
+- 2026-09-23T23:32:45+00:00: Implemented AuthenticatedChainEnrollmentV1: bounded public identity
+  chain, pairing digest and generation binding, strict unknown-field rejection, authority-backed
+  issue_chain validation, and positive/negative tests. Focused tests 2/2 pass; cargo fmt pass.
+  Signed+DCO product commit is 47914d8.

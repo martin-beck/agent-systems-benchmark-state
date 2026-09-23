@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1364](tasks/AR-1364-authenticated-chain-enrollment.md): Authenticated chain enrollment | Materialize authenticated certificate-chain authority for control-owned runtime receipt issuance. | Promote after AR-1362 is done, then add authenticated certificate-chain enrollment/materialization for the control receipt source. | codex-asb-runtime-attested-enrollment-luna56 |
+| P0 | [AR-1364](tasks/AR-1364-authenticated-chain-enrollment.md): Authenticated chain enrollment | Materialize authenticated certificate-chain authority for control-owned runtime receipt issuance. | Run full applicable gates, independently review the chain-enrollment boundary, then publish a clean exact-head PR and monitor all required checks. | codex-asb-runtime-attested-enrollment-luna56 |
 
 ## Open
 
