@@ -9,17 +9,17 @@
   "id": "AR-1339",
   "next_action": "Implement the runtime-issued authenticated provider relay/backend, integrate the typed AR-1329 handoff, and add denial/live synthetic tests without weakening NetworkPolicy::Deny.",
   "observed_branch": "feature/ar-1339-live-provider-egress-backend",
-  "observed_dirty": 1,
-  "observed_head": "44ddf14334ac971e8e89bda195635595cfc651ab",
+  "observed_dirty": 0,
+  "observed_head": "92ca23fee9ea75942148fa66165cd65ba1a3513a",
   "owner": "codex-asb-ar1339-20260923",
   "plan": "../plans/AR-1339-live-provider-egress-backend.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the runtime-owned authenticated backend for explicit live provider egress.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Runtime-owned live-provider egress backend",
-  "updated_at": "2026-09-23T08:56:52+00:00",
+  "updated_at": "2026-09-23T08:57:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1339-live-provider-egress-backend"
 }
 ---
