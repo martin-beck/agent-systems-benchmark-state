@@ -11,7 +11,7 @@
   "id": "AR-1345",
   "next_action": "Monitor every PR #260 check at exact head cd2d1e60; do not release/merge until all required hosted checks pass.",
   "observed_branch": "feature/ar-1345-runtime-live-coverage-repair",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "cd2d1e60b15142665ba3b72f9404df69f5c718da",
   "owner": "asb-ar1345-coverage-repair-luna56",
   "plan": "../plans/AR-1345.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair runtime live-provider coverage without weakening the mandatory quality floor.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Runtime live-provider coverage repair",
-  "updated_at": "2026-09-23T14:44:10+00:00",
+  "updated_at": "2026-09-23T14:44:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1345-runtime-live-coverage-repair"
 }
 ---
