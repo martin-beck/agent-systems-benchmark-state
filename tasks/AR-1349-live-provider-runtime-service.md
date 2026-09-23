@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 150,
+  "task_revision": 151,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T17:16:26+00:00",
+  "updated_at": "2026-09-23T17:17:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
@@ -455,3 +455,6 @@ qualified.
   after handoffctl attempted automatic state commit and git commit exited -13 with no diagnostic; no
   product mutation occurred. Existing asb-agents memfd path feeds direct RunningProcess only and
   cannot reach the bubblewrap child environment. AR-1329 remains fail-closed.
+
+- 2026-09-23T17:17:37+00:00: Recorded command exit 0; command argv SHA-256
+  49560411112d6e26209f500839fc87e28052c95e5d8957751f87a825f482662a.
