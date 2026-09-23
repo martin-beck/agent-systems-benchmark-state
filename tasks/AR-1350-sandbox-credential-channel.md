@@ -12,17 +12,17 @@
   "id": "AR-1350",
   "next_action": "Fresh PR #261 exact head is 7030e2f61c26f9de060fd1423cb2b618031bebfe, pushed after hosted quality run 35902022299 reported 89.98% (5800/57913 missed). Added deterministic successful credential sealing and launch-boundary tool-probe coverage; local full cargo llvm-cov --workspace --all-targets --fail-under-lines 90 passes at 90.52% (57954 lines, 5494 missed), with fmt check, clippy -D warnings, and focused tests green. Signed+DCO 7030e2f verified. Monitor fresh PR-triggered exact-head checks and independent review; merge only when all required gates are green. Handoffctl post-reconcile has reported unrelated expired AR-1349 claim; product push succeeded and this AR remains leased.",
   "observed_branch": "feature/ar-1350-sandbox-credential-channel",
-  "observed_dirty": 1,
-  "observed_head": "7030e2f61c26f9de060fd1423cb2b618031bebfe",
+  "observed_dirty": 0,
+  "observed_head": "f74b7d4f6f8290fcd39f47c1c65402cbbb088423",
   "owner": "codex-asb-ar1350-sandbox-channel-luna56",
   "plan": "../plans/AR-1350-sandbox-credential-channel.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement a sandbox-owned sealed-FD credential channel for live provider children.",
-  "task_revision": 145,
+  "task_revision": 146,
   "title": "Sandbox-owned credential channel",
-  "updated_at": "2026-09-23T18:39:21+00:00",
+  "updated_at": "2026-09-23T18:39:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1350-sandbox-credential-channel"
 }
 ---
