@@ -1824,7 +1824,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1349](../tasks/AR-1349-live-provider-runtime-service.md): Production live-provider runtime service | codex-asb-ar1329-live-cli-luna56 | Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep. | Successor AR-1351 is promoted to supply the missing private host/runtime provisioning seam. Preserve AR-1349 as downstream consumer: after AR-1351 merges, implement LiveProviderRuntimeService::acquire and replace injected factory requirements in asb run/sweep. Keep AR-1329 fail-closed. |
-| P1 | [AR-1351](../tasks/AR-1351-live-runtime-provisioning.md): Runtime-owned live provisioning | codex-asb-runtime-acquisition-successor-luna56 | Add the private host/runtime provisioning seam for live acquisition. | Independent review complete for d0b0cbe: constructor, acquire and bind_runtime are crate-private; production uses observed namespace and real listener, exact allowlist, benchmark lease, backend attestation and opaque attempt. Publish this clean exact head through the protected PR workflow; do not enable AR-1349/1329 until CI and post-merge gates pass. |
+| P1 | [AR-1351](../tasks/AR-1351-live-runtime-provisioning.md): Runtime-owned live provisioning | codex-asb-runtime-acquisition-successor-luna56 | Add the private host/runtime provisioning seam for live acquisition. | PR #262 is published at exact signed head d0b0cbefffdde0f80f51edb26f0a3d30f3a7b879. Obtain independent review, wait for all exact-head required checks, repair any failure, and merge only through protected policy. Then verify all post-merge workflows before releasing AR-1351; keep AR-1349/1329 fail-closed. |
 
 ### Open (4)
 

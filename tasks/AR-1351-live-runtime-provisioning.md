@@ -10,7 +10,7 @@
     "AR-1350"
   ],
   "id": "AR-1351",
-  "next_action": "Independent review complete for d0b0cbe: constructor, acquire and bind_runtime are crate-private; production uses observed namespace and real listener, exact allowlist, benchmark lease, backend attestation and opaque attempt. Publish this clean exact head through the protected PR workflow; do not enable AR-1349/1329 until CI and post-merge gates pass.",
+  "next_action": "PR #262 is published at exact signed head d0b0cbefffdde0f80f51edb26f0a3d30f3a7b879. Obtain independent review, wait for all exact-head required checks, repair any failure, and merge only through protected policy. Then verify all post-merge workflows before releasing AR-1351; keep AR-1349/1329 fail-closed.",
   "observed_branch": "feature/ar-1351-live-runtime-provisioning",
   "observed_dirty": 0,
   "observed_head": "d0b0cbefffdde0f80f51edb26f0a3d30f3a7b879",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the private host/runtime provisioning seam for live acquisition.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Runtime-owned live provisioning",
-  "updated_at": "2026-09-23T19:32:26+00:00",
+  "updated_at": "2026-09-23T19:32:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1351-live-runtime-provisioning"
 }
 ---
@@ -180,3 +180,6 @@ runtime boundary; AR-1349 remains fail-closed until it is merged and verified.
 
 - 2026-09-23T19:32:26+00:00: Recorded command exit 0; command argv SHA-256
   9b7b4f91bc02248e0c7a99c3a05f5aa65cccc1ab261530c7dde61c7ca04c8a7e.
+
+- 2026-09-23T19:32:54+00:00: Published PR #262 from clean exact head
+  d0b0cbefffdde0f80f51edb26f0a3d30f3a7b879 through handoffctl after independent diff review.
