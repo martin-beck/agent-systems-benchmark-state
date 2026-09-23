@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the dependency-safe opaque supervisor contract needed for live-provider acquisition.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Neutral live-supervisor composition contract",
-  "updated_at": "2026-09-23T15:47:12+00:00",
+  "updated_at": "2026-09-23T15:47:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1347-neutral-live-supervisor-composition"
 }
 ---
@@ -104,3 +104,6 @@ or introduce a cyclic dependency.
 
 - 2026-09-23T15:47:12+00:00: Recorded command exit 0; command argv SHA-256
   3f2cfd09286b1536e263a6a2a644d73484f5a999899392c7a1f4527f09f36771.
+
+- 2026-09-23T15:47:26+00:00: Recorded command exit 0; command argv SHA-256
+  c9ef98b693f45066c74d03f38eb22a0360a48ff832f9997ff53080e1bb77d707.
