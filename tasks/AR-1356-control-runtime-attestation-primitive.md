@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Issue runtime-owned live enrollment capability from authenticated control attestation.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Control/runtime enrollment attestation primitive",
-  "updated_at": "2026-09-23T21:06:43+00:00",
+  "updated_at": "2026-09-23T21:06:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1356-control-runtime-attestation-primitive"
 }
 ---
@@ -33,3 +33,6 @@ dispatch and do not expose caller-supplied launch authority.
 - 2026-09-23T21:06:07+00:00: Claimed by codex-asb-runtime-acquisition-successor-luna56.
 
 - 2026-09-23T21:06:43+00:00: Heartbeat by codex-asb-runtime-acquisition-successor-luna56.
+
+- 2026-09-23T21:06:46+00:00: Recorded command exit 0; command argv SHA-256
+  e332b91f34b085dd45defe28161e068116b95dc7edbf8ccdf38cfe0761a84e84.
