@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1326-openrouter-catalog-selection",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-23T09:05:23+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0313",
     "AR-1325"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1326-openrouter-catalog-selection",
   "observed_dirty": 0,
   "observed_head": "64a3a002018a542cba9a6e5844589c89417700a5",
-  "owner": "codex-asb-ar1326-20260923",
+  "owner": "",
   "plan": "../plans/AR-1326.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Advertise the OpenRouter profile in the CLI provider catalog and accept it in provider-plan selection.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Select OpenRouter through the CLI provider catalog",
-  "updated_at": "2026-09-23T07:05:23+00:00",
+  "updated_at": "2026-09-23T07:09:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1326-openrouter-catalog-selection"
 }
 ---
@@ -143,3 +143,7 @@ the fail-closed content-address checks.
 - 2026-09-23T07:03:56+00:00: Heartbeat by codex-asb-ar1326-20260923.
 
 - 2026-09-23T07:05:23+00:00: Heartbeat by codex-asb-ar1326-20260923.
+
+- 2026-09-23T07:09:19+00:00: PR #250 merged at 8692729a58d16e5c9d5387d5d68a7daa54d6443a; all seven
+  post-merge workflows terminal success, including rerun Rust verification after existing Gemini
+  timing flake; exact signed/DCO review and local focused gates recorded.
