@@ -12,7 +12,7 @@
   "id": "AR-1350",
   "next_action": "Fresh PR #261 exact head is d456c71d37af65ae5ea2b6ce59930c3241d9567f, pushed after hosted quality reported 89.94% (5825/57874 missed). Added deterministic sandbox launch injection-rejection coverage; local full cargo llvm-cov --workspace --all-targets --fail-under-lines 90 passes at 90.49% (57913 lines, 5509 missed), with fmt and clippy -D warnings green. Signed+DCO d456c71 verified. Monitor fresh PR-triggered exact-head CI and independent review; merge only when every required check is green.",
   "observed_branch": "feature/ar-1350-sandbox-credential-channel",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "d456c71d37af65ae5ea2b6ce59930c3241d9567f",
   "owner": "codex-asb-ar1350-sandbox-channel-luna56",
   "plan": "../plans/AR-1350-sandbox-credential-channel.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement a sandbox-owned sealed-FD credential channel for live provider children.",
-  "task_revision": 127,
+  "task_revision": 128,
   "title": "Sandbox-owned credential channel",
-  "updated_at": "2026-09-23T18:28:53+00:00",
+  "updated_at": "2026-09-23T18:29:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1350-sandbox-credential-channel"
 }
 ---
