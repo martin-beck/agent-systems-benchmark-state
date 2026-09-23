@@ -23,21 +23,21 @@ Generated from local Git and GitHub. Do not edit.
 | #235 | `dependabot/github_actions/taiki-e/install-action-2.87.12@de0353cce59e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.6 to 2.87.12 |
 | #236 | `dependabot/cargo/toml-1.1.6spec-1.1.0@9dc09c5208ab` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump toml from 0.8.23 to 1.1.6+spec-1.1.0 |
 | #237 | `dependabot/cargo/thiserror-2.0.20@83dba9288d9c` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump thiserror from 2.0.16 to 2.0.20 |
-| #254 | `feature/ar-1328-openrouter-free-model-config@c3f386fd879b` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(cli): persist OpenRouter free-model configuration |
+| #254 | `feature/ar-1328-openrouter-free-model-config@9bce67313a1c` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS: | feat(cli): persist OpenRouter free-model configuration |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 35836815976 | `9bce67313a1c` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 35836815946 | `9bce67313a1c` | pull_request | Rust verification | pending:- |
+| 35836815902 | `9bce67313a1c` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 35836815901 | `9bce67313a1c` | pull_request | Fault assurance | in_progress:- |
+| 35836815900 | `9bce67313a1c` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 35836815894 | `9bce67313a1c` | pull_request | Repository quality | pending:- |
+| 35836815871 | `9bce67313a1c` | pull_request | Huawei MIT source headers | completed:success |
+| 35836815786 | `9bce67313a1c` | pull_request | Formal assurance | pending:- |
 | 35836572209 | `c3f386fd879b` | pull_request | Hosted portability and native qualification | completed:success |
-| 35836572203 | `c3f386fd879b` | pull_request | Fault assurance | in_progress:- |
+| 35836572203 | `c3f386fd879b` | pull_request | Fault assurance | completed:success |
 | 35836572197 | `c3f386fd879b` | pull_request | Repository quality | in_progress:- |
-| 35836572192 | `c3f386fd879b` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 35836572187 | `c3f386fd879b` | pull_request | Huawei MIT source headers | completed:success |
-| 35836572165 | `c3f386fd879b` | pull_request | Formal assurance | in_progress:- |
-| 35836572162 | `c3f386fd879b` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 35836572157 | `c3f386fd879b` | pull_request | Rust verification | in_progress:- |
-| 35836299421 | `922dc1553f26` | pull_request | Formal assurance | completed:cancelled |
-| 35836299403 | `922dc1553f26` | pull_request | Hosted portability and native qualification | completed:success |
-| 35836299394 | `922dc1553f26` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 35836299367 | `922dc1553f26` | pull_request | Emulated aarch64 portability | completed:cancelled |
+| 35836572192 | `c3f386fd879b` | pull_request | Emulated aarch64 portability | completed:cancelled |
