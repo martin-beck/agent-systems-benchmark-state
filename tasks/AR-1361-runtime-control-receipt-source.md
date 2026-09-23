@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1361-runtime-control-receipt-source",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T01:03:18+00:00",
   "depends_on": [
     "AR-1359"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1361-runtime-control-receipt-source",
   "observed_dirty": 0,
   "observed_head": "be9af3d6fb22818e95f51b9640b10c5eb6e043f3",
-  "owner": "",
+  "owner": "codex-asb-runtime-attested-enrollment-luna56",
   "plan": "../plans/AR-1361-runtime-control-receipt-source.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide authenticated control receipt delivery and runtime-owned dispatch composition for CLI consumers.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Runtime control receipt source",
-  "updated_at": "2026-09-23T23:03:15+00:00",
+  "updated_at": "2026-09-23T23:03:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1361-runtime-control-receipt-source"
 }
 ---
@@ -34,3 +34,5 @@ authority.
 
 - 2026-09-23T23:03:15+00:00: Promote missing authenticated control receipt source and runtime-owned
   dispatch factory; dependency AR-1359 is merged and fully verified.
+
+- 2026-09-23T23:03:18+00:00: Claimed by codex-asb-runtime-attested-enrollment-luna56.
