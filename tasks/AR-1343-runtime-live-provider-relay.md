@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime live-provider relay service and per-attempt opaque factory acquisition required by asb run and sweep.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Runtime live-provider relay service and CLI acquisition",
-  "updated_at": "2026-09-23T15:27:17+00:00",
+  "updated_at": "2026-09-23T15:27:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1343-runtime-live-provider-relay"
 }
 ---
@@ -162,3 +162,6 @@ capabilities without bypassing the denied-network sandbox.
 
 - 2026-09-23T15:27:17+00:00: Recorded command exit 0; command argv SHA-256
   7b75844f7457924af2cfa7451c02a303cb2141407ce12ce2929e1bc4a6e8ff99.
+
+- 2026-09-23T15:27:39+00:00: Recorded command exit 0; command argv SHA-256
+  e8beebac0638d83321c84d952814966bbba80dc16ee7dd3d3ead10f3c2b72292.
