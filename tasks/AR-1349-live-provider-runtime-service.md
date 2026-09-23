@@ -15,16 +15,16 @@
   "next_action": "Successor AR-1351 is promoted to supply the missing private host/runtime provisioning seam. Preserve AR-1349 as downstream consumer: after AR-1351 merges, implement LiveProviderRuntimeService::acquire and replace injected factory requirements in asb run/sweep. Keep AR-1329 fail-closed.",
   "observed_branch": "feature/ar-1349-live-provider-runtime-service",
   "observed_dirty": 0,
-  "observed_head": "d069f3eeacae914bec5d33dfbb575cd7e4281b2c",
+  "observed_head": "c560cac1e3a691e250ee4d2f5afc2c1c3c3ec170",
   "owner": "codex-asb-ar1329-live-cli-luna56",
   "plan": "../plans/AR-1349-live-provider-runtime-service.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 191,
+  "task_revision": 192,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T20:05:41+00:00",
+  "updated_at": "2026-09-23T20:05:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
