@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1327-openrouter-adapter-parity",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-23T09:10:13+00:00",
   "depends_on": [
     "AR-0315",
     "AR-1325",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1327-openrouter-adapter-parity",
   "observed_dirty": 4,
   "observed_head": "a4934fca0b528ac90d09fb537936584f5af0f75e",
-  "owner": "",
+  "owner": "codex-asb-ar1327-20260923",
   "plan": "../plans/AR-1327.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Wire the OpenRouter endpoint and model through every compatible agent adapter projection and prove parity with hostile conformance evidence.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "OpenRouter adapter projections and parity conformance",
-  "updated_at": "2026-09-23T07:09:33+00:00",
+  "updated_at": "2026-09-23T07:10:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1327-openrouter-adapter-parity"
 }
 ---
@@ -37,3 +37,5 @@ allowance must be extended explicitly, never silently.
 
 - 2026-09-23T07:09:33+00:00: Dependency AR-1326 is merged and released; all seven post-merge
   workflows are green. Promote OpenRouter adapter parity as next dependency-ready AR.
+
+- 2026-09-23T07:10:13+00:00: Claimed by codex-asb-ar1327-20260923.
