@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1329](tasks/AR-1329-live-provider-run-execution.md): Live-provider run execution for real agents | Execute real agents against the selected provider through asb run and sweep with credential-free resolution. | Consume completed AR-1342 LiveLaunchFactory at merge d24221731891fb39f56118be9c5ae51364824517; wire runtime-owned live provider run/sweep, then run denial/live evidence and exact-head gates without weakening NetworkPolicy::Deny. | codex-asb-ar1329-20260923b |
+| P1 | [AR-1329](tasks/AR-1329-live-provider-run-execution.md): Live-provider run execution for real agents | Execute real agents against the selected provider through asb run and sweep with credential-free resolution. | AR-1342 LiveLaunchFactory focused tests pass, but CLI integration remains fail-closed: no runtime-owned live relay listener/request protocol, concrete egress target allowlist, credential transport, or pinned gate acquisition is exposed to asb run/sweep. Add a coordinator-owned runtime live-launch service API (per-attempt authority issuance and relay proxy) before AR-1329 product mutation; do not bypass NetworkPolicy::Deny. | codex-asb-ar1329-20260923b |
 
 ## Open
 

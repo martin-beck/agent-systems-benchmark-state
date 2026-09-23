@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1329-live-provider-run-execution",
-  "checkpoint_commit": "44ddf14334ac971e8e89bda195635595cfc651ab",
+  "checkpoint_commit": "d24221731891fb39f56118be9c5ae51364824517",
   "claim_expires": "2026-09-23T14:21:38+00:00",
   "depends_on": [
     "AR-1327",
@@ -9,7 +9,7 @@
     "AR-1340"
   ],
   "id": "AR-1329",
-  "next_action": "Consume completed AR-1342 LiveLaunchFactory at merge d24221731891fb39f56118be9c5ae51364824517; wire runtime-owned live provider run/sweep, then run denial/live evidence and exact-head gates without weakening NetworkPolicy::Deny.",
+  "next_action": "AR-1342 LiveLaunchFactory focused tests pass, but CLI integration remains fail-closed: no runtime-owned live relay listener/request protocol, concrete egress target allowlist, credential transport, or pinned gate acquisition is exposed to asb run/sweep. Add a coordinator-owned runtime live-launch service API (per-attempt authority issuance and relay proxy) before AR-1329 product mutation; do not bypass NetworkPolicy::Deny.",
   "observed_branch": "feature/ar-1329-live-provider-run-execution",
   "observed_dirty": 0,
   "observed_head": "d24221731891fb39f56118be9c5ae51364824517",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute real agents against the selected provider through asb run and sweep with credential-free resolution.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Live-provider run execution for real agents",
-  "updated_at": "2026-09-23T12:24:04+00:00",
+  "updated_at": "2026-09-23T12:24:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1329-live-provider-run-execution"
 }
 ---
@@ -125,3 +125,12 @@ the digest-pinned mode remain default and never touch the network.
 
 - 2026-09-23T12:24:04+00:00: Recorded command exit 0; command argv SHA-256
   a43f0c33e0455d600a2740a14bbe7c9bd040668bf69202bfcb0a3e00b1f5942c.
+
+- 2026-09-23T12:24:32+00:00: Rebased isolated worktree through handoffctl onto protected main
+  d24221731891fb39f56118be9c5ae51364824517. Audited execute_inner -> run_attempt ->
+  spawn_verified_agent: live_provider still returns runtime boundary unavailable. AR-1342 exports
+  LiveLaunchFactory/LiveLaunchContext and SandboxBackend::attest_live_launch, but no CLI-consumable
+  factory inputs or provider relay server exist. ProviderEgressRelay is client-only; selection
+  carries endpoint digest, not a concrete target. Focused handoffctl cargo test --locked -p
+  asb-runtime live_factory --lib passed 2/2. No unsafe product change made; NetworkPolicy::Deny and
+  direct/alternate egress denial preserved.
