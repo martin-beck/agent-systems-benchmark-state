@@ -1817,7 +1817,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1349](../tasks/AR-1349-live-provider-runtime-service.md): Production live-provider runtime service | codex-asb-ar1329-live-cli-luna56 | Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep. | Rebase is clean atop protected main 4d8f0c4, which includes merged AR-1350 sealed-channel implementation. Inspect the merged channel API and wire the real runtime-owned acquisition constructor, selection/reference binding, and asb run/sweep dispatch; preserve NetworkPolicy::Deny and fail-closed defaults. Then run focused/full gates. |
+| P1 | [AR-1349](../tasks/AR-1349-live-provider-runtime-service.md): Production live-provider runtime service | codex-asb-ar1329-live-cli-luna56 | Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep. | Protected-main rebase and baseline gates are clean. Continue implementing the missing production LiveProviderRuntimeService acquisition and actual asb run/sweep dispatch; current stack only updates the resolver test seam and does not yet wire CLI authority. Preserve sealed AR-1350 channel, selection digest binding, NetworkPolicy::Deny, and fail-closed offline/replay. Do not publish yet. |
 
 ### Open (4)
 

@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1349-live-provider-runtime-service",
-  "checkpoint_commit": "80c5e53ab51aa863e12b662121bfb4b013a0a421",
+  "checkpoint_commit": "4ed2a88129b2b709054a890c895767244d73e2e0",
   "claim_expires": "2026-09-23T21:01:05+00:00",
   "depends_on": [
     "AR-1327",
@@ -12,7 +12,7 @@
     "AR-1350"
   ],
   "id": "AR-1349",
-  "next_action": "Rebase is clean atop protected main 4d8f0c4, which includes merged AR-1350 sealed-channel implementation. Inspect the merged channel API and wire the real runtime-owned acquisition constructor, selection/reference binding, and asb run/sweep dispatch; preserve NetworkPolicy::Deny and fail-closed defaults. Then run focused/full gates.",
+  "next_action": "Protected-main rebase and baseline gates are clean. Continue implementing the missing production LiveProviderRuntimeService acquisition and actual asb run/sweep dispatch; current stack only updates the resolver test seam and does not yet wire CLI authority. Preserve sealed AR-1350 channel, selection digest binding, NetworkPolicy::Deny, and fail-closed offline/replay. Do not publish yet.",
   "observed_branch": "feature/ar-1349-live-provider-runtime-service",
   "observed_dirty": 0,
   "observed_head": "4ed2a88129b2b709054a890c895767244d73e2e0",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 175,
+  "task_revision": 176,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T19:05:19+00:00",
+  "updated_at": "2026-09-23T19:05:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
@@ -524,3 +524,9 @@ qualified.
 
 - 2026-09-23T19:05:19+00:00: Recorded command exit 0; command argv SHA-256
   643da601527dbadf4103cccdc1a9fd542e36f7b77653982cc6fb4facfd524daf.
+
+- 2026-09-23T19:05:45+00:00: Rebase resolved old AR-1349 conflicts against merged AR-1350 at
+  protected main 4d8f0c4; clean product head 4ed2a88129b2b709054a890c895767244d73e2e0. Workspace
+  clippy passed. Focused live_service tests passed 3/3; sandbox_credential tests passed 3/3; full
+  asb-runtime tests passed 93 passed, 1 ignored. No CLI production acquisition wiring is claimed
+  complete.
