@@ -342,7 +342,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-pr214-repair` | `repair/pr214-replay-lifecycle` | `45ba18d3b6b5` | 0 | behind 34, ahead 0 |
 | `asb-readiness` | `DETACHED` | `78a8e9fc2144` | 0 | behind 48, ahead 0 |
 | `asb-recording-audit.vnDk3k` | `DETACHED` | `f205ff90dbc9` | 0 | behind 42, ahead 0 |
-| `agent-systems-benchmark-state` | `main` | `52067fcaece7` | 2 | behind 0, ahead 0 |
+| `agent-systems-benchmark-state` | `main` | `f6a136ecdbae` | 2 | behind 0, ahead 1 |
 | changed files | - | - | - | `plans/AR-1338.md`, `tasks/AR-1338-guided-asb-command-wrapper.md` |
 | `agent-systems-benchmark-ar-1313-historical-dco-909078c` | `repair/ar-1313-historical-dco-909078c` | `8e5598eab3b3` | 0 | behind 612, ahead 0 |
 | `agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity` | `feature/ar-1308-full-exhaustive-qemu-capacity` | `659030fffd7e` | 0 | behind 2033, ahead 0 |
