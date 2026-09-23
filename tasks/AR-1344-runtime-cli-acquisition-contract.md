@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1344-runtime-cli-acquisition-contract",
   "checkpoint_commit": "6b06b12639beb29909621a324a228976eea23b3b",
-  "claim_expires": "2026-09-23T15:51:59+00:00",
+  "claim_expires": "2026-09-23T16:08:11+00:00",
   "depends_on": [
     "AR-1339",
     "AR-1340",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime-owned API and CLI integration needed for safe live-provider attempts.",
-  "task_revision": 200,
+  "task_revision": 201,
   "title": "Runtime-owned CLI live acquisition contract",
-  "updated_at": "2026-09-23T14:05:24+00:00",
+  "updated_at": "2026-09-23T14:08:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1344-runtime-cli-acquisition-contract"
 }
 ---
@@ -540,3 +540,5 @@ contract and its tests are merged and verified.
   replay backend retention via issue_with_backend and opaque LiveProviderAttemptFactory Debug.
   launch_factory focused suite now 10 passed, 1 capability-gated ignored. Pushed PR #260 update from
   6b06b12; exact workspace coverage remains expected below 90 until CI rerun.
+
+- 2026-09-23T14:08:11+00:00: Heartbeat by codex-asb-ar1344-factory-refactor-20260923.
