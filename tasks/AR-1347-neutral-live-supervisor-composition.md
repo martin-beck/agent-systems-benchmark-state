@@ -13,16 +13,16 @@
   "next_action": "Opaque CredentialInjection trait is implemented in asb-runtime and SandboxBackend exposes spawn_launch_with_credential without exposing bytes or changing NetworkPolicy::Deny. Add positive/negative injection tests and compose an asb-agents supervisor implementation; then wire runtime-owned live acquisition. AR-1329 remains fail-closed.",
   "observed_branch": "feature/ar-1347-neutral-live-supervisor-composition",
   "observed_dirty": 1,
-  "observed_head": "a336d6744b1a82f36a706ec606b847c92d49cfd3",
+  "observed_head": "625a250b527b51994be7653e24c3825512e5f449",
   "owner": "codex-asb-ar1329-live-cli-luna56",
   "plan": "../plans/AR-1347-neutral-live-supervisor-composition.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the dependency-safe opaque supervisor contract needed for live-provider acquisition.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Neutral live-supervisor composition contract",
-  "updated_at": "2026-09-23T15:42:57+00:00",
+  "updated_at": "2026-09-23T15:43:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1347-neutral-live-supervisor-composition"
 }
 ---
