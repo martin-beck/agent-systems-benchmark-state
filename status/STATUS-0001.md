@@ -7,18 +7,18 @@
 
 ## Portfolio overview
 
-**377 ARs tracked** across 7 active status categories.
+**377 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 5 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 49 |
 | **Planned** | Defined work awaiting promotion or dependencies | 64 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 243 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
-| **Superseded** | Replaced by another AR | 14 |
+| **Superseded** | Replaced by another AR | 15 |
 
 ## Dependency graph
 
@@ -441,7 +441,7 @@ flowchart LR
         AR_1346["AR-1346 - Superseded"]:::status_superseded
         AR_1347["AR-1347 - Done"]:::status_done
         AR_1348["AR-1348 - Superseded"]:::status_superseded
-        AR_1349["AR-1349 - In progress"]:::status_in_progress
+        AR_1349["AR-1349 - Superseded"]:::status_superseded
         AR_1350["AR-1350 - Done"]:::status_done
         AR_1351["AR-1351 - Done"]:::status_done
         AR_1352["AR-1352 - Done"]:::status_done
@@ -1825,12 +1825,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1349](../tasks/AR-1349-live-provider-runtime-service.md): Production live-provider runtime service | codex-asb-ar1329-live-cli-luna56 | Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep. | Opaque LiveProviderRuntimeHandle and public service acquire seam are now implemented without exposing policy/backend/path authority. Next wire the runtime enrollment layer to mint this handle and replace injected LiveProviderAttemptFactory in asb run/sweep; add CLI positive/negative dispatch tests and full gates. Do not expose bootstrap constructors. |
-
 ### Open (5)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -1856,3 +1850,5 @@ flowchart LR
 | P0 | [AR-1261](../tasks/AR-1261-runtime-to-cli-replay-entrypoint.md): Runtime-to-CLI strict-replay handoff entrypoint | Unclaimed | Provide a runtime-owned entrypoint for strict-replay CLI supervision. | Reconcile coordinator view against declared runtime-cli worktree; then run focused/full gates and review exact signed head d91520f. |
 | P0 | [AR-1262](../tasks/AR-1262-runtime-owned-launch-authority.md): Runtime-owned strict-replay launch authority | Unclaimed | Issue runtime-owned authority for supervised strict-replay execution. | Do not merge PR #207; create runtime-to-CLI authority successor and rerun lifecycle, egress and no-fallback evidence. |
 | P0 | [AR-1265](../tasks/AR-1265-runtime-owned-replay-entrypoint.md): Runtime-owned strict-replay CLI entrypoint | Unclaimed | Provide a real runtime-owned strict-replay CLI entrypoint. | Runtime/CLI owner must add an authenticated context-bearing replay-plan dispatch entrypoint; then exercise cassette request/response and lifecycle/egress tests through it. |
+| P0 | [AR-1266](../tasks/AR-1266-authenticated-replay-dispatch.md): Authenticated replay dispatch context | Unclaimed | Add authenticated runtime context to the actual strict-replay CLI dispatch path. | Connect runtime context to supervised cassette execution rather than merely offline replay; add request/response, egress denial, cancellation/restart/timeout/crash cleanup and no-fallback tests. |
+| P0 | [AR-1267](../tasks/AR-1267-runtime-replay-execution.md): Runtime strict-replay execution hook | Unclaimed | Implement real runtime-owned strict-replay execution and lifecycle supervision. | Add actual replay CLI argument wiring and bounded lifecycle/egress/no-fallback tests around authenticated execution hook; then run full gates. |
