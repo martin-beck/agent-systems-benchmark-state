@@ -14,17 +14,17 @@
   "id": "AR-1349",
   "next_action": "Opaque LiveProviderRuntimeHandle and public service acquire seam are now implemented without exposing policy/backend/path authority. Next wire the runtime enrollment layer to mint this handle and replace injected LiveProviderAttemptFactory in asb run/sweep; add CLI positive/negative dispatch tests and full gates. Do not expose bootstrap constructors.",
   "observed_branch": "feature/ar-1349-live-provider-runtime-service",
-  "observed_dirty": 1,
-  "observed_head": "03b830bbec183477758877f8a2a9e00714d351c0",
+  "observed_dirty": 0,
+  "observed_head": "21bd6deca45e6bce7461c3cdef20ce2390aca5bd",
   "owner": "codex-asb-ar1329-live-cli-luna56",
   "plan": "../plans/AR-1349-live-provider-runtime-service.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 218,
+  "task_revision": 219,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T20:46:54+00:00",
+  "updated_at": "2026-09-23T20:47:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
