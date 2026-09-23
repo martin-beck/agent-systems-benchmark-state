@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1325-provider-openrouter",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-22T18:57:44+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0310",
     "AR-0318"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1325-provider-openrouter",
   "observed_dirty": 0,
   "observed_head": "f47e3728a9721ea268a730abef0f953bd2956613",
-  "owner": "ar1325-openrouter",
+  "owner": "",
   "plan": "../plans/AR-1325.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Define one pinned credential-free OpenRouter provider profile for compatible ASB agent adapters.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Support a shared OpenRouter provider",
-  "updated_at": "2026-09-22T14:57:44+00:00",
+  "updated_at": "2026-09-23T05:56:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1325-provider-openrouter"
 }
 ---
@@ -54,3 +54,7 @@ unsupported or lossy translations fail closed.
   0b92c53b7b9ca737e3cbdf694ed0bf2de40458a4cac4bbd44969ff14326ad8eb.
 
 - 2026-09-22T14:57:44+00:00: Heartbeat by ar1325-openrouter.
+
+- 2026-09-23T05:56:45+00:00: Recovered expired claim formerly owned by ar1325-openrouter. Recovered
+  expired claim after verifying no active AR-1325 worker process; existing PR #249 remains under
+  review.
