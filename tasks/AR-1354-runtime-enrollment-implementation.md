@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1354-runtime-enrollment-implementation",
   "checkpoint_commit": "d83a85926f2c4c42317617f4f6b7b3c9a3195874",
-  "claim_expires": "",
+  "claim_expires": "2026-09-23T22:29:43+00:00",
   "depends_on": [
     "AR-1352"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1354-runtime-enrollment-implementation",
   "observed_dirty": 0,
   "observed_head": "d83a85926f2c4c42317617f4f6b7b3c9a3195874",
-  "owner": "",
+  "owner": "codex-asb-runtime-acquisition-successor-luna56",
   "plan": "../plans/AR-1354-runtime-enrollment-implementation.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Implement config-backed runtime-owned enrollment for live CLI dispatch.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Runtime enrollment implementation",
-  "updated_at": "2026-09-23T20:59:35+00:00",
+  "updated_at": "2026-09-23T20:59:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1354-runtime-enrollment-implementation"
 }
 ---
@@ -42,3 +42,5 @@ durably promoted; AR-1329 remains fail-closed.
 
 - 2026-09-23T20:59:35+00:00: Recovered after heartbeat-only stall with no product diff; preserve
   AR-1354 scope and reassign to replacement gpt-5.6-luna worker.
+
+- 2026-09-23T20:59:43+00:00: Claimed by codex-asb-runtime-acquisition-successor-luna56.
