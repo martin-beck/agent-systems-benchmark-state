@@ -2,22 +2,24 @@
 {
   "branch": "repair/ar-1337-openrouter-merge-tree-admission",
   "checkpoint_commit": "",
-  "claim_expires": "",
-  "depends_on": ["AR-1226"],
+  "claim_expires": "2026-09-23T08:23:11+00:00",
+  "depends_on": [
+    "AR-1226"
+  ],
   "id": "AR-1337",
   "next_action": "Reproduce the post-merge protected-main merge-tree mismatch from merge 56c882a, repair admission or merge procedure without weakening policy, and rerun every exact-main workflow.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "codex-ar1337",
   "plan": "../plans/AR-1337.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair the protected-main merge-tree admission defect exposed after the OpenRouter provider merge.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Repair protected-main merge-tree admission after OpenRouter merge",
-  "updated_at": "2026-09-23T06:20:00+00:00",
+  "updated_at": "2026-09-23T06:23:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1337-protected-main-merge-tree-repair"
 }
 ---
@@ -35,3 +37,5 @@ CI, a protected-main merge whose computed tree equals the reviewed topic tree,
 and successful post-merge Repository quality, formal, fault, portability and
 Rust workflows. Record the exact merge parents, tree IDs, run IDs and any
 remaining evidence limits without private paths or credentials.
+
+- 2026-09-23T06:23:11+00:00: Claimed by codex-ar1337.
