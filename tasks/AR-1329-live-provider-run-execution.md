@@ -9,7 +9,7 @@
     "AR-1340"
   ],
   "id": "AR-1329",
-  "next_action": "Coordinator should create proposed AR-1342 (successor dependency for AR-1329): add runtime-owned CLI live-relay launch factory/acquisition. Required API: issue validated ProviderEgressPolicy/Handoff plus relay listener, NamespaceIdentity-bound LiveProviderNamespaceHandoff, SandboxBackend, ResourceLease, and child launch context; then AR-1329 consumes it. Preserve NetworkPolicy::Deny, runtime-observed child namespace late gate, direct/alternate egress denial, credential non-disclosure, cancellation/teardown, and offline default. Until AR-1342 is complete, keep live run/sweep fail-closed.",
+  "next_action": "Consume completed AR-1342 LiveLaunchFactory at merge d24221731891fb39f56118be9c5ae51364824517; wire runtime-owned live provider run/sweep, then run denial/live evidence and exact-head gates without weakening NetworkPolicy::Deny.",
   "observed_branch": "feature/ar-1329-live-provider-run-execution",
   "observed_dirty": 0,
   "observed_head": "2774b1d648b5c3bbda0e290e158dc352502d3768",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute real agents against the selected provider through asb run and sweep with credential-free resolution.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Live-provider run execution for real agents",
-  "updated_at": "2026-09-23T12:20:51+00:00",
+  "updated_at": "2026-09-23T12:21:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1329-live-provider-run-execution"
 }
 ---
@@ -110,3 +110,7 @@ the digest-pinned mode remain default and never touch the network.
   reconcile doctor/snapshot currently report stale WORKTREES.md.
 
 - 2026-09-23T12:20:51+00:00: Claimed by codex-asb-ar1329-20260923b.
+
+- 2026-09-23T12:21:13+00:00: AR-1342 is durably done with all seven post-merge workflows green.
+  AR-1329 resumed under replacement gpt-5.6-luna medium worker; previous fail-closed boundary
+  remains until live integration evidence passes.
