@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire the OpenRouter endpoint and model through every compatible agent adapter projection and prove parity with hostile conformance evidence.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "OpenRouter adapter projections and parity conformance",
-  "updated_at": "2026-09-23T07:14:00+00:00",
+  "updated_at": "2026-09-23T07:14:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1327-openrouter-adapter-parity"
 }
 ---
@@ -74,3 +74,6 @@ allowance must be extended explicitly, never silently.
   full asb-agents tests passed (188 passed, 1 ignored plus integration suites). Rebased PR #251 onto
   protected main 8692729, preserving only AR-1327 delta; signed+DCO head is
   03749b620003f6737cc33ff2dec576a91221d4ca.
+
+- 2026-09-23T07:14:09+00:00: Recorded command exit 0; command argv SHA-256
+  127012eddafb0b76f965d87a974ac5c4d10952a2e569b269fcaa0ae92f8700ef.
