@@ -12,17 +12,17 @@
   "id": "AR-1350",
   "next_action": "Final channel design: runtime creates it only from validated LiveProviderRuntimeConfig (private constructor), adapter capabilities can only consume that channel, and credential bytes are transferred by owned Vec then erased. Bubblewrap receives a sealed memfd via --args FD and sets the bound target variable inside the child; secret is absent from argv/evidence. Focused 3/3, runtime clippy, workspace clippy, workspace test (188+ passed with documented ignores), and formatting have passed. Run final docs/release build gates, then signed+DCO commit and independent diff review.",
   "observed_branch": "feature/ar-1350-sandbox-credential-channel",
-  "observed_dirty": 6,
-  "observed_head": "359f15af52aa2b0b31bb091b945e7de933960006",
+  "observed_dirty": 0,
+  "observed_head": "e7176fb499134286ce661f42338060eb80edb875",
   "owner": "codex-asb-ar1350-sandbox-channel-luna56",
   "plan": "../plans/AR-1350-sandbox-credential-channel.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement a sandbox-owned sealed-FD credential channel for live provider children.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Sandbox-owned credential channel",
-  "updated_at": "2026-09-23T17:40:46+00:00",
+  "updated_at": "2026-09-23T17:40:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1350-sandbox-credential-channel"
 }
 ---
