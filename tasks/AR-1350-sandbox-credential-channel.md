@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1350-sandbox-credential-channel",
-  "checkpoint_commit": "edd9759f982dffa30001a0ef87dafcf409280135",
+  "checkpoint_commit": "d456c71d37af65ae5ea2b6ce59930c3241d9567f",
   "claim_expires": "2026-09-23T18:42:48+00:00",
   "depends_on": [
     "AR-1328",
@@ -10,7 +10,7 @@
     "AR-1347"
   ],
   "id": "AR-1350",
-  "next_action": "Coverage repair is committed and pushed to PR #261 at exact head edd9759f982dffa30001a0ef87dafcf409280135. Added positive/negative coverage for binding validation, one-shot channel consumption, append-before-fill, debug metadata, all CredentialInjectionError variants, and bounded invalid values. Local full workspace llvm-cov now passes at 52353/57874 lines = 90.46%, above the 90% floor. fmt check, clippy -D warnings, focused tests, and full workspace tests with --test-threads=1 pass. The parallel full workspace test/coverage invocation hash 534f failed only because an existing asb-cli test reported control state root is already owned; the isolated test and serialized full suite pass. Fresh PR-triggered exact-head CI must now be monitored; do not use workflow_dispatch DCO run as merge evidence.",
+  "next_action": "Fresh PR #261 exact head is d456c71d37af65ae5ea2b6ce59930c3241d9567f, pushed after hosted quality reported 89.94% (5825/57874 missed). Added deterministic sandbox launch injection-rejection coverage; local full cargo llvm-cov --workspace --all-targets --fail-under-lines 90 passes at 90.49% (57913 lines, 5509 missed), with fmt and clippy -D warnings green. Signed+DCO d456c71 verified. Monitor fresh PR-triggered exact-head CI and independent review; merge only when every required check is green.",
   "observed_branch": "feature/ar-1350-sandbox-credential-channel",
   "observed_dirty": 0,
   "observed_head": "d456c71d37af65ae5ea2b6ce59930c3241d9567f",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement a sandbox-owned sealed-FD credential channel for live provider children.",
-  "task_revision": 124,
+  "task_revision": 125,
   "title": "Sandbox-owned credential channel",
-  "updated_at": "2026-09-23T18:22:48+00:00",
+  "updated_at": "2026-09-23T18:23:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1350-sandbox-credential-channel"
 }
 ---
@@ -369,3 +369,7 @@ private runtime channel before AR-1349 can safely acquire attempts or wire
   5bdea314d99d18a411f4b5f8c843a7facf0c18df9cb0c73edf9ed92eeacc6d84.
 
 - 2026-09-23T18:22:48+00:00: Heartbeat by codex-asb-ar1350-sandbox-channel-luna56.
+
+- 2026-09-23T18:23:01+00:00: Hosted quality failure was 89.94% coverage; new sandbox.rs credential
+  launch rejection test raises local coverage to 90.49% without weakening floor or excluding files.
+  Commit d456c71 is SSH-signed+DCO and pushed to PR #261.
