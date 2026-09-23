@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement a sandbox-owned sealed-FD credential channel for live provider children.",
-  "task_revision": 110,
+  "task_revision": 111,
   "title": "Sandbox-owned credential channel",
-  "updated_at": "2026-09-23T18:13:13+00:00",
+  "updated_at": "2026-09-23T18:13:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1350-sandbox-credential-channel"
 }
 ---
@@ -335,3 +335,6 @@ private runtime channel before AR-1349 can safely acquire attempts or wire
   Parallel test failure was existing shared-state contention:
   recording_campaign_plan_is_durable_idempotent_and_not_offline_ready saw control state root already
   owned. Serialized full suite passed.
+
+- 2026-09-23T18:13:21+00:00: Recorded command exit 0; command argv SHA-256
+  a2eedcbc88a2931a0d8ad6d53f0dd37c061cd4235cef63d9d8611b2afe58a0c4.
