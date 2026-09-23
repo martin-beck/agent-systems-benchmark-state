@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Advertise the OpenRouter profile in the CLI provider catalog and accept it in provider-plan selection.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Select OpenRouter through the CLI provider catalog",
-  "updated_at": "2026-09-23T06:46:14+00:00",
+  "updated_at": "2026-09-23T06:46:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1326-openrouter-catalog-selection"
 }
 ---
@@ -38,3 +38,6 @@ the fail-closed content-address checks.
   complete and post-merge workflows are green.
 
 - 2026-09-23T06:46:14+00:00: Claimed by codex-asb-ar1326-20260923.
+
+- 2026-09-23T06:46:33+00:00: Recorded command exit 0; command argv SHA-256
+  f5b0c15f4770053bcb33932b08720ba3b39fe8acb9332383209242201b949ea5.
