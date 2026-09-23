@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind the live provider relay to an attested child namespace and integrate it without weakening offline or replay denial.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Attested live-relay namespace and child handoff",
-  "updated_at": "2026-09-23T10:17:02+00:00",
+  "updated_at": "2026-09-23T10:18:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1340-attested-live-relay-handoff"
 }
 ---
@@ -135,3 +135,6 @@ public coordination state or runtime evidence.
   rerun successfully. Scope remains API slice; runtime/CLI integration and full gates remain.
 
 - 2026-09-23T10:17:02+00:00: Heartbeat by codex-asb-ar1340-20260923.
+
+- 2026-09-23T10:18:22+00:00: Recorded command exit 0; command argv SHA-256
+  19f1ed727aa0dbd3ecb163cb3ec13271f6bd4f8c0e40e5f4effe80298a4083f4.
