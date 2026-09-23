@@ -12,7 +12,7 @@
     "AR-1350"
   ],
   "id": "AR-1349",
-  "next_action": "AR-1350 sealed channel and asb-agents adapter are merged/green. Runtime constructors exist for lease, relay, namespace handoff, and LiveLaunchFactory, but no production-owned coordinator currently supplies pinned SandboxBackend/live gate, authenticated ProviderEgressPolicy/Handoff, observed NamespaceIdentity, and concrete target/route inputs to compose them. Do not expose these as CLI authority; add the smallest private coordinator seam or successor repair before replacing run/sweep injected factories.",
+  "next_action": "Successor AR-1351 is promoted to supply the missing private host/runtime provisioning seam. Preserve AR-1349 as downstream consumer: after AR-1351 merges, implement LiveProviderRuntimeService::acquire and replace injected factory requirements in asb run/sweep. Keep AR-1329 fail-closed.",
   "observed_branch": "feature/ar-1349-live-provider-runtime-service",
   "observed_dirty": 0,
   "observed_head": "d069f3eeacae914bec5d33dfbb575cd7e4281b2c",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 188,
+  "task_revision": 189,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T19:13:13+00:00",
+  "updated_at": "2026-09-23T19:14:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
@@ -568,3 +568,8 @@ qualified.
 
 - 2026-09-23T19:13:13+00:00: Recorded command exit 0; command argv SHA-256
   1245e7e532b83bd6db8e753d9d345e2dce49890e6fd9e68e319604a1bbc5bc7d.
+
+- 2026-09-23T19:14:08+00:00: Created and promoted AR-1351 through handoffctl. Exact blocker: current
+  constructors require authority-bearing pinned backend/gate, authenticated egress policy/handoff,
+  and observed namespace inputs not safely available to production CLI. No synthetic authority or
+  unsafe wiring added; adapter d069f3e and green gates remain evidence.
