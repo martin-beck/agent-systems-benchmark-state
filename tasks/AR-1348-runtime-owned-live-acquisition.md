@@ -12,17 +12,17 @@
   "id": "AR-1348",
   "next_action": "Attempt lifecycle fence committed as 85d2153: one-shot consume, idempotent revoke, duplicate/revoked rejection. Next bind actual LiveProviderNamespaceHandoff/LiveProviderRelay/RuntimeLaunchToken through a runtime-owned constructor; add expiry/relay teardown negatives. AR-1329 remains fail-closed.",
   "observed_branch": "feature/ar-1348-runtime-owned-live-acquisition",
-  "observed_dirty": 1,
-  "observed_head": "46cbaaf130fa2bb06a176593be6e5ffdc799bd68",
+  "observed_dirty": 0,
+  "observed_head": "ecc2d4c548b975d829d4f27750321f0cb64f75c2",
   "owner": "codex-asb-ar1329-live-cli-luna56",
   "plan": "../plans/AR-1348-runtime-owned-live-acquisition.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the runtime-owned supervisor that acquires every live-provider authority and tears it down safely.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Runtime-owned live acquisition service",
-  "updated_at": "2026-09-23T16:21:55+00:00",
+  "updated_at": "2026-09-23T16:22:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1348-runtime-owned-live-acquisition"
 }
 ---
