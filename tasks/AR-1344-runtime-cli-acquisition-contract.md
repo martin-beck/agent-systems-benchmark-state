@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime-owned API and CLI integration needed for safe live-provider attempts.",
-  "task_revision": 165,
+  "task_revision": 166,
   "title": "Runtime-owned CLI live acquisition contract",
-  "updated_at": "2026-09-23T13:43:17+00:00",
+  "updated_at": "2026-09-23T13:45:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1344-runtime-cli-acquisition-contract"
 }
 ---
@@ -430,3 +430,6 @@ contract and its tests are merged and verified.
   suite: 100 passed; focused runtime launch_factory: 9 passed, 1 capability-gated ignored; clippy
   and fmt clean. Successful live attempt remains intentionally unforgeable outside runtime
   attestation.
+
+- 2026-09-23T13:45:13+00:00: Recorded command exit 0; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
