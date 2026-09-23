@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime-owned API and CLI integration needed for safe live-provider attempts.",
-  "task_revision": 178,
+  "task_revision": 179,
   "title": "Runtime-owned CLI live acquisition contract",
-  "updated_at": "2026-09-23T13:48:39+00:00",
+  "updated_at": "2026-09-23T13:49:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1344-runtime-cli-acquisition-contract"
 }
 ---
@@ -469,3 +469,6 @@ contract and its tests are merged and verified.
   docs/examples/asb-cli-workflow-v1.provenance.json to digest 30764f... for current lib.rs. Focused
   workflow_transcript suite now passes 3/3. Branch clean at signed
   7b8d2966b8f4afb4a20f7be21eefdd01d47557b8.
+
+- 2026-09-23T13:49:40+00:00: Recorded command exit 0; command argv SHA-256
+  7b80382008cb01e3ea6fa6e88054b624464f9801b40ed57f947b01892a686ae8.
