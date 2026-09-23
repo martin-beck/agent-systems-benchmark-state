@@ -1817,7 +1817,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1349](../tasks/AR-1349-live-provider-runtime-service.md): Production live-provider runtime service | codex-asb-ar1329-live-cli-luna56 | Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep. | Protected-main rebase and baseline gates are clean. Continue implementing the missing production LiveProviderRuntimeService acquisition and actual asb run/sweep dispatch; current stack only updates the resolver test seam and does not yet wire CLI authority. Preserve sealed AR-1350 channel, selection digest binding, NetworkPolicy::Deny, and fail-closed offline/replay. Do not publish yet. |
+| P1 | [AR-1349](../tasks/AR-1349-live-provider-runtime-service.md): Production live-provider runtime service | codex-asb-ar1329-live-cli-luna56 | Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep. | Credential adapter is now production-compiled and signed, consuming ResolvedCredential into the runtime sealed channel with byte erasure. Next implement a genuine private LiveProviderRuntimeService::acquire that constructs config/binding, SandboxBackend/gate, lease, namespace observation, token, relay, and LiveProviderAttempt; then replace injected live_factory requirement in run/sweep with that service. Do not synthesize authority or weaken offline/replay. |
 
 ### Open (4)
 

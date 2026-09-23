@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1349-live-provider-runtime-service",
-  "checkpoint_commit": "4ed2a88129b2b709054a890c895767244d73e2e0",
+  "checkpoint_commit": "d069f3eeacae914bec5d33dfbb575cd7e4281b2c",
   "claim_expires": "2026-09-23T21:01:05+00:00",
   "depends_on": [
     "AR-1327",
@@ -12,7 +12,7 @@
     "AR-1350"
   ],
   "id": "AR-1349",
-  "next_action": "Protected-main rebase and baseline gates are clean. Continue implementing the missing production LiveProviderRuntimeService acquisition and actual asb run/sweep dispatch; current stack only updates the resolver test seam and does not yet wire CLI authority. Preserve sealed AR-1350 channel, selection digest binding, NetworkPolicy::Deny, and fail-closed offline/replay. Do not publish yet.",
+  "next_action": "Credential adapter is now production-compiled and signed, consuming ResolvedCredential into the runtime sealed channel with byte erasure. Next implement a genuine private LiveProviderRuntimeService::acquire that constructs config/binding, SandboxBackend/gate, lease, namespace observation, token, relay, and LiveProviderAttempt; then replace injected live_factory requirement in run/sweep with that service. Do not synthesize authority or weaken offline/replay.",
   "observed_branch": "feature/ar-1349-live-provider-runtime-service",
   "observed_dirty": 0,
   "observed_head": "d069f3eeacae914bec5d33dfbb575cd7e4281b2c",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 181,
+  "task_revision": 182,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T19:07:10+00:00",
+  "updated_at": "2026-09-23T19:07:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
@@ -539,3 +539,9 @@ qualified.
 
 - 2026-09-23T19:06:59+00:00: Recorded command exit 0; command argv SHA-256
   e8ec04d8f65e4633b75db5e8e8cdd1c87dade76a38eb495836dbcf997b0324e9.
+
+- 2026-09-23T19:07:33+00:00: Concrete progress: signed commit d069f3e binds asb-agents
+  ResolvedCredential to runtime SandboxCredentialChannel; workspace clippy passed. Focused
+  live_service 3/3 and sandbox_credential 3/3; full asb-runtime 93 passed, 1 ignored. Current CLI
+  still requires an injected LiveProviderAttemptFactory and no runtime-owned acquisition constructor
+  exists yet, so AR-1329 remains fail-closed.
