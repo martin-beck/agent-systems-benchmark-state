@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1347](tasks/AR-1347-neutral-live-supervisor-composition.md): Neutral live-supervisor composition contract | Add the dependency-safe opaque supervisor contract needed for live-provider acquisition. | Define and implement a neutral opaque credential-injection/supervisor composition contract that avoids an asb-runtime to asb-agents dependency cycle; then complete runtime-owned live acquisition with bounded target, lease, namespace, token, relay, credential capability, and teardown tests. Keep AR-1329 fail-closed until merge and post-merge verification. | codex-asb-ar1329-live-cli-luna56 |
+| P1 | [AR-1347](tasks/AR-1347-neutral-live-supervisor-composition.md): Neutral live-supervisor composition contract | Add the dependency-safe opaque supervisor contract needed for live-provider acquisition. | Opaque CredentialInjection trait is implemented in asb-runtime and SandboxBackend exposes spawn_launch_with_credential without exposing bytes or changing NetworkPolicy::Deny. Add positive/negative injection tests and compose an asb-agents supervisor implementation; then wire runtime-owned live acquisition. AR-1329 remains fail-closed. | codex-asb-ar1329-live-cli-luna56 |
 
 ## Open
 

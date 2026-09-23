@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1347-neutral-live-supervisor-composition",
-  "checkpoint_commit": "a336d6744b1a82f36a706ec606b847c92d49cfd3",
+  "checkpoint_commit": "625a250b527b51994be7653e24c3825512e5f449",
   "claim_expires": "2026-09-23T17:37:59+00:00",
   "depends_on": [
     "AR-1327",
@@ -10,7 +10,7 @@
     "AR-1340"
   ],
   "id": "AR-1347",
-  "next_action": "Define and implement a neutral opaque credential-injection/supervisor composition contract that avoids an asb-runtime to asb-agents dependency cycle; then complete runtime-owned live acquisition with bounded target, lease, namespace, token, relay, credential capability, and teardown tests. Keep AR-1329 fail-closed until merge and post-merge verification.",
+  "next_action": "Opaque CredentialInjection trait is implemented in asb-runtime and SandboxBackend exposes spawn_launch_with_credential without exposing bytes or changing NetworkPolicy::Deny. Add positive/negative injection tests and compose an asb-agents supervisor implementation; then wire runtime-owned live acquisition. AR-1329 remains fail-closed.",
   "observed_branch": "feature/ar-1347-neutral-live-supervisor-composition",
   "observed_dirty": 1,
   "observed_head": "a336d6744b1a82f36a706ec606b847c92d49cfd3",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the dependency-safe opaque supervisor contract needed for live-provider acquisition.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Neutral live-supervisor composition contract",
-  "updated_at": "2026-09-23T15:41:59+00:00",
+  "updated_at": "2026-09-23T15:42:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1347-neutral-live-supervisor-composition"
 }
 ---
@@ -59,3 +59,12 @@ or introduce a cyclic dependency.
 
 - 2026-09-23T15:41:59+00:00: Recorded command exit 0; command argv SHA-256
   f71975b0e0b00a780fed3410ff70f306b8004ce22f8d1aecc438b8adc79fe8e9.
+
+- 2026-09-23T15:42:37+00:00: AR-1347 worktree established from a336d674. Implemented signed+DCO
+  commit 625a250: neutral CredentialInjection trait plus
+  SandboxBackend::spawn_launch_with_credential, preserving existing spawn API. Initial clippy
+  failures were repaired: too_many_arguments (allow on internal helper), needless_option_as_deref,
+  unused_mut, and one test call missing the new None argument. Latest cargo clippy --locked -p
+  asb-runtime --all-targets -- -D warnings passes; cargo check --locked --workspace and fmt check
+  pass. Product still needs positive/negative injector tests and asb-agents composition; no AR-1329
+  wiring.
