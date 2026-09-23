@@ -11,7 +11,7 @@
   "id": "AR-1328",
   "next_action": "Add --use-config to plan/run/sweep and bind loaded OpenRouter configuration to experiment agent/model before launch; then run locked full CLI/config tests and signed PR.",
   "observed_branch": "feature/ar-1328-openrouter-free-model-config",
-  "observed_dirty": 4,
+  "observed_dirty": 5,
   "observed_head": "5207ce478986cdf1687207967cdf517129f85624",
   "owner": "codex-asb-ar1328-20260923",
   "plan": "../plans/AR-1328.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist the per-user OpenRouter free-model configuration and credential-free key enrollment.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "OpenRouter free-model user configuration and key enrollment",
-  "updated_at": "2026-09-23T07:41:59+00:00",
+  "updated_at": "2026-09-23T07:42:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1328-openrouter-free-model-config"
 }
 ---

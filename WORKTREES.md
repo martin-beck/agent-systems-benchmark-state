@@ -118,8 +118,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1325-provider-openrouter` | `feature/ar-1325-provider-openrouter` | `85eece9f6915` | 0 | behind 28, ahead 0 |
 | `agent-systems-benchmark-ar-1326-openrouter-catalog-selection` | `feature/ar-1326-openrouter-catalog-selection` | `64a3a002018a` | 0 | behind 10, ahead 0 |
 | `agent-systems-benchmark-ar-1327-openrouter-adapter-parity` | `feature/ar-1327-openrouter-adapter-parity` | `bdb3bf028f0a` | 0 | behind 1, ahead 0 |
-| `agent-systems-benchmark-ar-1328-openrouter-free-model-config` | `feature/ar-1328-openrouter-free-model-config` | `5207ce478986` | 4 | behind 0, ahead 0 |
-| changed files | - | - | - | `Cargo.lock`, `crates/asb-cli/Cargo.toml`, `crates/asb-cli/src/lib.rs`, `crates/asb-config/src/lib.rs` |
+| `agent-systems-benchmark-ar-1328-openrouter-free-model-config` | `feature/ar-1328-openrouter-free-model-config` | `5207ce478986` | 5 | behind 0, ahead 0 |
+| changed files | - | - | - | `Cargo.lock`, `crates/asb-cli/Cargo.toml`, `crates/asb-cli/src/lib.rs`, `crates/asb-config/src/lib.rs`, `docs/workflows/multi-agent-provider.md` |
 | `agent-systems-benchmark-ar-1337-protected-main-merge-tree-repair` | `repair/ar-1337-openrouter-merge-tree-admission` | `8dc07a0f86a1` | 0 | behind 12, ahead 0 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 684, ahead 0 |
 | `agent-systems-benchmark-ar0704-rebase-20260918` | `feature/ar0704-formal-rebase-20260918` | `c5a7b5a0448c` | 0 | behind 50, ahead 4 |
@@ -332,8 +332,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-audit-sPabk3` | `DETACHED` | `83c3c2022712` | 0 | behind 108, ahead 0 |
 | `asb-integrate-247` | `DETACHED` | `77571ff978b8` | 0 | behind 31, ahead 0 |
 | `asb-main-audit` | `DETACHED` | `45ba18d3b6b5` | 0 | behind 34, ahead 0 |
-| `asb-main-audit.z0TQ` | `DETACHED` | `5207ce478986` | 1 | behind 0, ahead 0 |
-| changed files | - | - | - | `catalog.json` |
+| `asb-main-audit.z0TQ` | `DETACHED` | `5207ce478986` | 2 | behind 0, ahead 0 |
+| changed files | - | - | - | `catalog.json`, `selection.json` |
 | `asb-merge248` | `DETACHED` | `56c882a06337` | 1 | behind 13, ahead 0 |
 | changed files | - | - | - | `crates/asb-cli/src/lib.rs` |
 | `asb-merge251` | `DETACHED` | `551330b8ba75` | 0 | behind 3, ahead 0 |
@@ -343,38 +343,38 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-pr214-repair` | `repair/pr214-replay-lifecycle` | `45ba18d3b6b5` | 0 | behind 34, ahead 0 |
 | `asb-readiness` | `DETACHED` | `78a8e9fc2144` | 0 | behind 48, ahead 0 |
 | `asb-recording-audit.vnDk3k` | `DETACHED` | `f205ff90dbc9` | 0 | behind 42, ahead 0 |
-| `agent-systems-benchmark-state` | `main` | `47bbc6d07b0d` | 0 | behind 0, ahead 0 |
-| `agent-systems-benchmark-ar-1313-historical-dco-909078c` | `repair/ar-1313-historical-dco-909078c` | `8e5598eab3b3` | 0 | behind 541, ahead 0 |
-| `agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity` | `feature/ar-1308-full-exhaustive-qemu-capacity` | `659030fffd7e` | 0 | behind 1962, ahead 0 |
-| `agent-systems-benchmark-coordination-assurance` | `feature/coordination-assurance` | `adfde31ad408` | 0 | behind 29842, ahead 0 |
-| `agent-systems-benchmark-coordination-lint-regression` | `fix/handoffctl-apply-resume-lint` | `746042a0e55e` | 0 | behind 24585, ahead 0 |
-| `agent-systems-benchmark-coordinator-merge-attestation` | `fix/coordinator-v014-merge-attestation` | `655817806e2b` | 0 | behind 21667, ahead 0 |
-| `agent-systems-benchmark-state-ar-1293-tla-admission` | `feature/ar-1293-state-tla-admission` | `f1931686c929` | 0 | behind 5831, ahead 4 |
-| `agent-systems-benchmark-state-ar-1293-tla-admission-v2` | `feature/ar-1293-state-tla-admission-v2` | `fa57625d9d25` | 0 | behind 5550, ahead 35 |
-| `agent-systems-benchmark-state-ar-1295-vendor-fixtures` | `repair/ar-1295-vendor-fixtures` | `c8c5a25e0ba3` | 0 | behind 1324, ahead 0 |
-| `agent-systems-benchmark-state-ar-1302-portable-tlc-runner` | `feature/ar-1302-portable-tlc-runner` | `d35c18a5343b` | 1 | behind 5508, ahead 25 |
+| `agent-systems-benchmark-state` | `main` | `88e2309a4ffa` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-ar-1313-historical-dco-909078c` | `repair/ar-1313-historical-dco-909078c` | `8e5598eab3b3` | 0 | behind 544, ahead 0 |
+| `agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity` | `feature/ar-1308-full-exhaustive-qemu-capacity` | `659030fffd7e` | 0 | behind 1965, ahead 0 |
+| `agent-systems-benchmark-coordination-assurance` | `feature/coordination-assurance` | `adfde31ad408` | 0 | behind 29845, ahead 0 |
+| `agent-systems-benchmark-coordination-lint-regression` | `fix/handoffctl-apply-resume-lint` | `746042a0e55e` | 0 | behind 24588, ahead 0 |
+| `agent-systems-benchmark-coordinator-merge-attestation` | `fix/coordinator-v014-merge-attestation` | `655817806e2b` | 0 | behind 21670, ahead 0 |
+| `agent-systems-benchmark-state-ar-1293-tla-admission` | `feature/ar-1293-state-tla-admission` | `f1931686c929` | 0 | behind 5834, ahead 4 |
+| `agent-systems-benchmark-state-ar-1293-tla-admission-v2` | `feature/ar-1293-state-tla-admission-v2` | `fa57625d9d25` | 0 | behind 5553, ahead 35 |
+| `agent-systems-benchmark-state-ar-1295-vendor-fixtures` | `repair/ar-1295-vendor-fixtures` | `c8c5a25e0ba3` | 0 | behind 1327, ahead 0 |
+| `agent-systems-benchmark-state-ar-1302-portable-tlc-runner` | `feature/ar-1302-portable-tlc-runner` | `d35c18a5343b` | 1 | behind 5511, ahead 25 |
 | changed files | - | - | - | `private/` |
-| `agent-systems-benchmark-state-ar-1304-required-tier-qemu-runner` | `feature/ar-1304-required-tier-qemu-runner` | `923378246980` | 0 | behind 4239, ahead 21 |
-| `agent-systems-benchmark-state-ar-1307-portable-tlc-runner` | `DETACHED` | `7eafd883460e` | 0 | behind 3330, ahead 552 |
-| `agent-systems-benchmark-state-ar-1307-portable-tlc-runner-repair` | `feature/ar-1307-portable-tlc-runner-repair` | `91bbfd5287fd` | 2 | behind 3330, ahead 82 |
+| `agent-systems-benchmark-state-ar-1304-required-tier-qemu-runner` | `feature/ar-1304-required-tier-qemu-runner` | `923378246980` | 0 | behind 4242, ahead 21 |
+| `agent-systems-benchmark-state-ar-1307-portable-tlc-runner` | `DETACHED` | `7eafd883460e` | 0 | behind 3333, ahead 552 |
+| `agent-systems-benchmark-state-ar-1307-portable-tlc-runner-repair` | `feature/ar-1307-portable-tlc-runner-repair` | `91bbfd5287fd` | 2 | behind 3333, ahead 82 |
 | changed files | - | - | - | `tests/test_tlc_runner.py`, `tools/tlc_runner.py` |
-| `agent-systems-benchmark-state-ar-1307-signed-history` | `feature/ar-1307-signed-history` | `ab485f767fbd` | 0 | behind 2334, ahead 13 |
-| `agent-systems-benchmark-state-ar-1314-optional-bundle-signing` | `DETACHED` | `b7184f17be4d` | 0 | behind 539, ahead 0 |
-| `agent-systems-benchmark-state-ar-status-document` | `feature/ar-status-document` | `eedd3119c08b` | 0 | behind 29119, ahead 0 |
-| `agent-systems-benchmark-state-ar1061-tmux-isolation` | `docs/ar1061-tmux-live-fixture-isolation` | `51cd8f1d82da` | 1 | behind 12486, ahead 0 |
+| `agent-systems-benchmark-state-ar-1307-signed-history` | `feature/ar-1307-signed-history` | `ab485f767fbd` | 0 | behind 2337, ahead 13 |
+| `agent-systems-benchmark-state-ar-1314-optional-bundle-signing` | `DETACHED` | `b7184f17be4d` | 0 | behind 542, ahead 0 |
+| `agent-systems-benchmark-state-ar-status-document` | `feature/ar-status-document` | `eedd3119c08b` | 0 | behind 29122, ahead 0 |
+| `agent-systems-benchmark-state-ar1061-tmux-isolation` | `docs/ar1061-tmux-live-fixture-isolation` | `51cd8f1d82da` | 1 | behind 12489, ahead 0 |
 | changed files | - | - | - | `.runtime` |
-| `agent-systems-benchmark-state-formal-verification` | `fix/handoffctl-ci-dco-merge` | `dfb7061b0239` | 0 | behind 22418, ahead 0 |
-| `agent-systems-benchmark-state-huawei-mit-headers` | `fix/huawei-mit-license-headers` | `3ff44bd93d1a` | 0 | behind 19402, ahead 0 |
-| `agent-systems-benchmark-state-local-llm-testing-recommendations` | `docs/local-llm-testing-recommendations-state` | `1bd496c86c84` | 0 | behind 17723, ahead 4 |
-| `agent-systems-benchmark-state-local-llm-testing-recommendations-clean` | `docs/local-llm-testing-recommendations-state-clean` | `355dd134d222` | 0 | behind 17521, ahead 0 |
-| `agent-systems-benchmark-state-native-arm-policy` | `policy/optional-native-arm64` | `78c9ade2c3e0` | 0 | behind 16990, ahead 0 |
-| `agent-systems-benchmark-state-native-arm-task-policy` | `policy/optional-native-arm64-tasks` | `e76b58553f23` | 0 | behind 16955, ahead 0 |
-| `agent-systems-benchmark-state-promotion` | `feature/transactional-promotion` | `4e56e83d4f09` | 0 | behind 27730, ahead 0 |
-| `agent-systems-benchmark-state-shared-coordinator` | `feature/shared-workflow-coordinator` | `e4fecc1e65e6` | 0 | behind 21790, ahead 0 |
-| `agent-systems-benchmark-state-status-size-repair` | `fix/status-size-observation-cleanup` | `4288aec63ff5` | 0 | behind 12362, ahead 2 |
-| `agent-systems-benchmark-state-verify-coordination-content` | `ci/verify-coordination-content` | `431e5041cebf` | 0 | behind 17041, ahead 0 |
-| `ar1308-ar1307-source` | `DETACHED` | `ab485f767fbd` | 0 | behind 2334, ahead 13 |
-| `asb-state-ar1198` | `ar1198-catalog-digest` | `f660ec7db80c` | 2 | behind 12085, ahead 0 |
+| `agent-systems-benchmark-state-formal-verification` | `fix/handoffctl-ci-dco-merge` | `dfb7061b0239` | 0 | behind 22421, ahead 0 |
+| `agent-systems-benchmark-state-huawei-mit-headers` | `fix/huawei-mit-license-headers` | `3ff44bd93d1a` | 0 | behind 19405, ahead 0 |
+| `agent-systems-benchmark-state-local-llm-testing-recommendations` | `docs/local-llm-testing-recommendations-state` | `1bd496c86c84` | 0 | behind 17726, ahead 4 |
+| `agent-systems-benchmark-state-local-llm-testing-recommendations-clean` | `docs/local-llm-testing-recommendations-state-clean` | `355dd134d222` | 0 | behind 17524, ahead 0 |
+| `agent-systems-benchmark-state-native-arm-policy` | `policy/optional-native-arm64` | `78c9ade2c3e0` | 0 | behind 16993, ahead 0 |
+| `agent-systems-benchmark-state-native-arm-task-policy` | `policy/optional-native-arm64-tasks` | `e76b58553f23` | 0 | behind 16958, ahead 0 |
+| `agent-systems-benchmark-state-promotion` | `feature/transactional-promotion` | `4e56e83d4f09` | 0 | behind 27733, ahead 0 |
+| `agent-systems-benchmark-state-shared-coordinator` | `feature/shared-workflow-coordinator` | `e4fecc1e65e6` | 0 | behind 21793, ahead 0 |
+| `agent-systems-benchmark-state-status-size-repair` | `fix/status-size-observation-cleanup` | `4288aec63ff5` | 0 | behind 12365, ahead 2 |
+| `agent-systems-benchmark-state-verify-coordination-content` | `ci/verify-coordination-content` | `431e5041cebf` | 0 | behind 17044, ahead 0 |
+| `ar1308-ar1307-source` | `DETACHED` | `ab485f767fbd` | 0 | behind 2337, ahead 13 |
+| `asb-state-ar1198` | `ar1198-catalog-digest` | `f660ec7db80c` | 2 | behind 12088, ahead 0 |
 | changed files | - | - | - | `plans/AR-1198.md`, `tasks/AR-1198.md` |
-| `review-ar1308-e11` | `DETACHED` | `e11adae64fc3` | 0 | behind 2243, ahead 3 |
-| `asb-state-ar0806-schema-maint` | `maintenance/ar0806-next-action-20260909` | `810984b7a3b7` | 0 | behind 19598, ahead 0 |
+| `review-ar1308-e11` | `DETACHED` | `e11adae64fc3` | 0 | behind 2246, ahead 3 |
+| `asb-state-ar0806-schema-maint` | `maintenance/ar0806-next-action-20260909` | `810984b7a3b7` | 0 | behind 19601, ahead 0 |
