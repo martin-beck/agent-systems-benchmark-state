@@ -8,15 +8,18 @@
   ],
   "id": "AR-1340",
   "next_action": "Promote after AR-1339 is done; implement the attested namespace-bound relay handoff and descendant-egress denial evidence for AR-1329 to consume.",
+  "observed_branch": "feature/ar-1340-attested-live-relay-handoff",
+  "observed_dirty": 0,
+  "observed_head": "229941f013ad45a21e746a052bc4ae8ec531cfd7",
   "owner": "codex-asb-ar1340-20260923",
   "plan": "../plans/AR-1340.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind the live provider relay to an attested child namespace and integrate it without weakening offline or replay denial.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Attested live-relay namespace and child handoff",
-  "updated_at": "2026-09-23T10:00:35+00:00",
+  "updated_at": "2026-09-23T10:00:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1340-attested-live-relay-handoff"
 }
 ---
