@@ -24,7 +24,7 @@ Generated from local Git and GitHub. Do not edit.
 | #236 | `dependabot/cargo/toml-1.1.6spec-1.1.0@9dc09c5208ab` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump toml from 0.8.23 to 1.1.6+spec-1.1.0 |
 | #237 | `dependabot/cargo/thiserror-2.0.20@83dba9288d9c` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump thiserror from 2.0.16 to 2.0.20 |
 | #248 | `feature/ar-1324-auth-helper-control-contract@5abd8c7ee1c0` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(control): add authenticated credential-helper contract |
-| #249 | `feature/ar-1325-provider-openrouter@f47e3728a972` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(agents): pinned credential-free OpenRouter provider profile (AR-1325) |
+| #249 | `feature/ar-1325-provider-openrouter@85eece9f6915` | `main` | UNSTABLE | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(agents): pinned credential-free OpenRouter provider profile (AR-1325) |
 | #250 | `feature/ar-1326-openrouter-catalog-selection@0c031b985bfc` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): select OpenRouter through provider catalog and plan (AR-1326) |
 | #251 | `feature/ar-1327-openrouter-adapter-parity@5006bcf43fed` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(agents): OpenRouter adapter projections and parity conformance (AR-1327) |
 
@@ -32,15 +32,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 35825324615 | `85eece9f6915` | pull_request | Fault assurance | in_progress:- |
+| 35825324602 | `85eece9f6915` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 35825324600 | `85eece9f6915` | pull_request | Formal assurance | queued:- |
+| 35825324591 | `85eece9f6915` | pull_request | Rust verification | in_progress:- |
+| 35825324581 | `85eece9f6915` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 35825324556 | `85eece9f6915` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 35825324539 | `85eece9f6915` | pull_request | Huawei MIT source headers | in_progress:- |
+| 35825324525 | `85eece9f6915` | pull_request | Repository quality | in_progress:- |
 | 35824702248 | `5abd8c7ee1c0` | pull_request | Fault assurance | completed:success |
 | 35824702070 | `5abd8c7ee1c0` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 35824702061 | `5abd8c7ee1c0` | pull_request | Repository quality | completed:success |
 | 35824702050 | `5abd8c7ee1c0` | pull_request | Huawei MIT source headers | completed:success |
-| 35824702044 | `5abd8c7ee1c0` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 35824702033 | `5abd8c7ee1c0` | pull_request | Formal assurance | completed:success |
-| 35824702020 | `5abd8c7ee1c0` | pull_request | Hosted portability and native qualification | completed:success |
-| 35824702015 | `5abd8c7ee1c0` | pull_request | Rust verification | completed:success |
-| 35824124966 | `0116bf17fb5b` | pull_request | Fault assurance | completed:success |
-| 35824124955 | `0116bf17fb5b` | pull_request | Rust verification | completed:success |
-| 35824124953 | `0116bf17fb5b` | pull_request | Repository quality | completed:failure |
-| 35824124948 | `0116bf17fb5b` | pull_request | Formal assurance | completed:success |
