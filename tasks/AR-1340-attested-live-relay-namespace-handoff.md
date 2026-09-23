@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1340-attested-live-relay-handoff",
   "checkpoint_commit": "f77aafb44b05cd04cbd642ab3d737eb4062403dc",
-  "claim_expires": "",
+  "claim_expires": "2026-09-23T11:55:43+00:00",
   "depends_on": [
     "AR-1339"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1340-attested-live-relay-handoff",
   "observed_dirty": 0,
   "observed_head": "f77aafb44b05cd04cbd642ab3d737eb4062403dc",
-  "owner": "",
+  "owner": "codex-asb-coordinator-20260923",
   "plan": "../plans/AR-1340.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Bind the live provider relay to an attested child namespace and integrate it without weakening offline or replay denial.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Attested live-relay namespace and child handoff",
-  "updated_at": "2026-09-23T10:47:44+00:00",
+  "updated_at": "2026-09-23T11:25:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1340-attested-live-relay-handoff"
 }
 ---
@@ -276,3 +276,5 @@ public coordination state or runtime evidence.
   35849949311, 35849949352. Released open, not done, under security hold: runtime-observed child
   namespace attestation and copied/stale/mismatch denial remain required by AR-1341 before AR-1329
   may advance.
+
+- 2026-09-23T11:25:43+00:00: Claimed by codex-asb-coordinator-20260923.
