@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-1345](tasks/AR-1345-runtime-live-coverage-repair.md): Runtime live-provider coverage repair | Repair runtime live-provider coverage without weakening the mandatory quality floor. | Promote only after AR-1344 ownership is released; classify exact uncovered runtime lines and add bounded sandbox, relay, and provider-egress tests until the unchanged 90% workspace floor passes. | asb-ar1345-coverage-repair-luna56 |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -13,7 +19,6 @@ Never edit this file directly.
 | P1 | [AR-1329](tasks/AR-1329-live-provider-run-execution.md): Live-provider run execution for real agents | Execute real agents against the selected provider through asb run and sweep with credential-free resolution. | AR-1342 LiveLaunchFactory focused tests pass, but CLI integration remains fail-closed: no runtime-owned live relay listener/request protocol, concrete egress target allowlist, credential transport, or pinned gate acquisition is exposed to asb run/sweep. Add a coordinator-owned runtime live-launch service API (per-attempt authority issuance and relay proxy) before AR-1329 product mutation; do not bypass NetworkPolicy::Deny. | - |
 | P1 | [AR-1343](tasks/AR-1343-runtime-live-provider-relay.md): Runtime live-provider relay service and CLI acquisition | Add the runtime live-provider relay service and per-attempt opaque factory acquisition required by asb run and sweep. | Successor dependency required: expose a reviewed runtime-owned CLI acquisition API that atomically supplies SandboxBackend, benchmark ResourceLease, runtime launch token, observed child NamespaceIdentity, and per-attempt LiveProviderRelay lifecycle. Keep spawn_verified_agent live-provider rejection and AR-1329 fail-closed until that contract is implemented and tested. | - |
 | P1 | [AR-1344](tasks/AR-1344-runtime-cli-acquisition-contract.md): Runtime-owned CLI live acquisition contract | Add the runtime-owned API and CLI integration needed for safe live-provider attempts. | Exact uncovered-line classification recorded: launch_factory misses include replay backend/authority alternate branches and LiveProviderAttempt lifecycle paths; live_relay misses are error conversion/display plus handoff/forwarding deadline branches; provider_egress misses are address-policy edge branches and relay timeout/error paths; live_namespace misses are gate/runtime observation and rebind branches; sandbox misses are live attestation/spawn/ownership teardown branches. Reachable negative/accessor branches have been covered; remaining live/sandbox branches are capability-gated or require a broad dedicated repair AR. Do not exclude files or weaken 90%; PR remains unmergeable. | - |
-| P1 | [AR-1345](tasks/AR-1345-runtime-live-coverage-repair.md): Runtime live-provider coverage repair | Repair runtime live-provider coverage without weakening the mandatory quality floor. | Promote only after AR-1344 ownership is released; classify exact uncovered runtime lines and add bounded sandbox, relay, and provider-egress tests until the unchanged 90% workspace floor passes. | - |
 
 ## Blocked
 

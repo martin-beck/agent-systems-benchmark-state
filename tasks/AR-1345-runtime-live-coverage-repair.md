@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1345-runtime-live-coverage-repair",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-23T16:28:39+00:00",
   "depends_on": [
     "AR-1339",
     "AR-1340",
@@ -12,15 +12,15 @@
   "next_action": "Promote only after AR-1344 ownership is released; classify exact uncovered runtime lines and add bounded sandbox, relay, and provider-egress tests until the unchanged 90% workspace floor passes.",
   "observed_branch": "feature/ar-1345-runtime-live-coverage-repair",
   "observed_dirty": 0,
-  "owner": "",
+  "owner": "asb-ar1345-coverage-repair-luna56",
   "plan": "../plans/AR-1345.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair runtime live-provider coverage without weakening the mandatory quality floor.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Runtime live-provider coverage repair",
-  "updated_at": "2026-09-23T14:27:27+00:00",
+  "updated_at": "2026-09-23T14:28:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1345-runtime-live-coverage-repair"
 }
 ---
@@ -32,3 +32,5 @@ non-authoritative.
 
 - 2026-09-23T14:27:27+00:00: AR-1344 released open with hosted coverage blocker; dependencies
   AR-1339, AR-1340, AR-1342 verified done.
+
+- 2026-09-23T14:28:39+00:00: Claimed by asb-ar1345-coverage-repair-luna56.
