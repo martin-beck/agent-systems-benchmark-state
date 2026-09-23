@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 145,
+  "task_revision": 146,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T17:14:39+00:00",
+  "updated_at": "2026-09-23T17:15:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
@@ -437,3 +437,6 @@ qualified.
   the compile call-site and clippy now passes for asb-runtime/asb-agents; focused runtime credential
   tests were 2/2 and adapter test 1/1 before the final boundary review. Worktree is intentionally
   dirty and no product commit was made.
+
+- 2026-09-23T17:15:06+00:00: Recorded command exit 0; command argv SHA-256
+  0a4eb6e7a7255c9106baefa73a43e11ef6f939bd7f4725b9a678db51620e5296.
