@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1356-control-runtime-attestation-primitive",
   "checkpoint_commit": "9e587593c2fd21347ed2b7faf544e9d5a7bf150a",
-  "claim_expires": "2026-09-23T23:06:43+00:00",
+  "claim_expires": "2026-09-23T23:33:18+00:00",
   "depends_on": [
     "AR-1352"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Issue runtime-owned live enrollment capability from authenticated control attestation.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Control/runtime enrollment attestation primitive",
-  "updated_at": "2026-09-23T21:26:03+00:00",
+  "updated_at": "2026-09-23T21:33:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1356-control-runtime-attestation-primitive"
 }
 ---
@@ -164,3 +164,5 @@ dispatch and do not expose caller-supplied launch authority.
   ce7401a. Hosted quality also measured 89.95% coverage; added control issue_metadata and runtime
   attestation positive/negative tests in signed+DCO 9e58759. Focused certificate and live_service
   tests pass (8 and 12 relevant tests). Pushed exact head; PR checks restarted.
+
+- 2026-09-23T21:33:18+00:00: Heartbeat by codex-asb-runtime-acquisition-successor-luna56.
