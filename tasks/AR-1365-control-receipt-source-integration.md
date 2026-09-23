@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate authenticated chain and authority enrollment into the versioned control receipt source.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Control receipt source integration",
-  "updated_at": "2026-09-23T23:55:47+00:00",
+  "updated_at": "2026-09-23T23:56:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1365-control-receipt-source-integration"
 }
 ---
@@ -38,3 +38,6 @@ AR-1364. Do not touch asb-tui or synthesize authority from CLI/config input.
 
 - 2026-09-23T23:55:36+00:00: Recorded command exit 0; command argv SHA-256
   cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
+
+- 2026-09-23T23:56:04+00:00: Recorded command exit 0; command argv SHA-256
+  d9dd06c9e77766238089b3c04fcddb575442cf1887a2ccc06521948ea874e7cc.
