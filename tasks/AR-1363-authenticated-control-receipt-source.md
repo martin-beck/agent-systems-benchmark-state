@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Deliver authenticated runtime authority receipts through the versioned control boundary without exposing secrets or caller authority.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Authenticated control receipt source",
-  "updated_at": "2026-09-23T23:28:52+00:00",
+  "updated_at": "2026-09-23T23:29:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1363-authenticated-control-receipt-source"
 }
 ---
@@ -34,3 +34,6 @@ Do not touch asb-tui, reopen stale dependencies, or synthesize authority in CLI.
   enrollment and all post-merge gates.
 
 - 2026-09-23T23:28:52+00:00: Claimed by codex-asb-runtime-attested-enrollment-luna56.
+
+- 2026-09-23T23:29:30+00:00: Recorded command exit 0; command argv SHA-256
+  277a1936169e354dbe4c6881de500884f7d6e3cf1bd44c494d3e2099e18ee3e0.
