@@ -9,7 +9,7 @@
     "AR-1100"
   ],
   "id": "AR-1328",
-  "next_action": "Finish configure openrouter CLI command and --use-config wiring, then run locked CLI/config tests and create signed PR.",
+  "next_action": "Add --use-config to plan/run/sweep and bind loaded OpenRouter configuration to experiment agent/model before launch; then run locked full CLI/config tests and signed PR.",
   "observed_branch": "feature/ar-1328-openrouter-free-model-config",
   "observed_dirty": 4,
   "observed_head": "5207ce478986cdf1687207967cdf517129f85624",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist the per-user OpenRouter free-model configuration and credential-free key enrollment.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "OpenRouter free-model user configuration and key enrollment",
-  "updated_at": "2026-09-23T07:38:29+00:00",
+  "updated_at": "2026-09-23T07:38:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1328-openrouter-free-model-config"
 }
 ---
@@ -71,3 +71,9 @@ configurations fail closed.
 
 - 2026-09-23T07:38:29+00:00: Recorded command exit 0; command argv SHA-256
   65c6148bf907829069e536019d838d8e631fe06640051d1f5919aa7b1d29bfa9.
+
+- 2026-09-23T07:38:47+00:00: Credential-free config command was exercised live in isolated XDG
+  config: asb config openrouter persisted owner-private config with model snapshot, endpoint digest,
+  env locator digest, and active generation; no API key material. provider-plan --use-config --agent
+  codex passed with exact catalog digest and OpenRouter model. Remaining AR acceptance gap is
+  --use-config wiring for plan/run/sweep (currently provider-plan only), then full locked gates/PR.

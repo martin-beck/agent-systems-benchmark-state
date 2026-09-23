@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1328](tasks/AR-1328-openrouter-free-model-config.md): OpenRouter free-model user configuration and key enrollment | Persist the per-user OpenRouter free-model configuration and credential-free key enrollment. | Finish configure openrouter CLI command and --use-config wiring, then run locked CLI/config tests and create signed PR. | codex-asb-ar1328-20260923 |
+| P1 | [AR-1328](tasks/AR-1328-openrouter-free-model-config.md): OpenRouter free-model user configuration and key enrollment | Persist the per-user OpenRouter free-model configuration and credential-free key enrollment. | Add --use-config to plan/run/sweep and bind loaded OpenRouter configuration to experiment agent/model before launch; then run locked full CLI/config tests and signed PR. | codex-asb-ar1328-20260923 |
 
 ## Open
 
