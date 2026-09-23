@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair AR-1340 so live relay capabilities require runtime-observed child namespace agreement.",
-  "task_revision": 70,
+  "task_revision": 71,
   "title": "Runtime-observed namespace attestation repair",
-  "updated_at": "2026-09-23T11:04:10+00:00",
+  "updated_at": "2026-09-23T11:04:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1341-runtime-observed-namespace-repair"
 }
 ---
@@ -218,3 +218,6 @@ this task.
   live_namespace suite now 9 passed. Product head 228bcc33957d168041717f7ca347f06aa6256a64 is
   signed+DCO and clean. Prior full fmt, clippy, workspace tests, docs, and release build passed;
   rerun focused suite after this test.
+
+- 2026-09-23T11:04:54+00:00: Recorded command exit 0; command argv SHA-256
+  fca5e660e554a707d03ac2757460d0dd83718b0c1f5c55b4c23580f6d4a3a244.
