@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1328-openrouter-free-model-config",
-  "checkpoint_commit": "4fc4dbbe0af22756994904cdd186f99caa34c805",
+  "checkpoint_commit": "922dc1553f26af28078d9bf230835c5bd9659459",
   "claim_expires": "2026-09-23T10:19:06+00:00",
   "depends_on": [
     "AR-1325",
@@ -9,7 +9,7 @@
     "AR-1100"
   ],
   "id": "AR-1328",
-  "next_action": "Monitor PR #254 exact head 4fc4dbb hosted checks after Windows-safe symlink test repair; merge only after every required check and independent review are green.",
+  "next_action": "Monitor PR #254 exact head 922dc15 hosted checks; merge only after every required check and independent review are green, then perform post-merge verification.",
   "observed_branch": "feature/ar-1328-openrouter-free-model-config",
   "observed_dirty": 0,
   "observed_head": "922dc1553f26af28078d9bf230835c5bd9659459",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist the per-user OpenRouter free-model configuration and credential-free key enrollment.",
-  "task_revision": 117,
+  "task_revision": 118,
   "title": "OpenRouter free-model user configuration and key enrollment",
-  "updated_at": "2026-09-23T08:19:06+00:00",
+  "updated_at": "2026-09-23T08:19:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1328-openrouter-free-model-config"
 }
 ---
@@ -324,3 +324,7 @@ configurations fail closed.
   aa75a47abb51c989607a90cde0d8370262f138508299c06ab69b5d163bb590db.
 
 - 2026-09-23T08:19:06+00:00: Heartbeat by codex-asb-ar1328-20260923.
+
+- 2026-09-23T08:19:15+00:00: Concurrent AR-1328 worker added signed+DCO 922dc15 covering configured
+  provider-plan dispatch. Prior signed+DCO 4fc4dbb remains in exact ancestry and gates the Unix
+  symlink fixture test with cfg(unix). Hosted checks restarted at 922dc15; no failures yet.
