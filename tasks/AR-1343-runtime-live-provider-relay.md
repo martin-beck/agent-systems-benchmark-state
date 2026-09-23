@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1343-runtime-live-provider-relay",
   "checkpoint_commit": "ce2c2db068b05092f0f63291e0d94d4dbc9cda9c",
-  "claim_expires": "2026-09-23T14:43:26+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1327",
     "AR-1328",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1343-runtime-live-provider-relay",
   "observed_dirty": 0,
   "observed_head": "ce2c2db068b05092f0f63291e0d94d4dbc9cda9c",
-  "owner": "codex-asb-ar1343-replacement-20260923",
+  "owner": "",
   "plan": "../plans/AR-1343-runtime-live-provider-relay.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Add the runtime live-provider relay service and per-attempt opaque factory acquisition required by asb run and sweep.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Runtime live-provider relay service and CLI acquisition",
-  "updated_at": "2026-09-23T12:44:30+00:00",
+  "updated_at": "2026-09-23T12:45:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1343-runtime-live-provider-relay"
 }
 ---
@@ -107,3 +107,9 @@ capabilities without bypassing the denied-network sandbox.
   with SSH signature and DCO. Worktree clean. Runtime relay focused 7/7, full all-targets 79
   passed/1 ignored, clippy passed. Source audit confirms CLI lacks the supported runtime acquisition
   seam; AR-1329 remains fail-closed pending that bounded API.
+
+- 2026-09-23T12:45:01+00:00: Relay service delivered and verified at
+  ce2c2db068b05092f0f63291e0d94d4dbc9cda9c (focused 7/7, runtime all-targets 79 passed/1 ignored,
+  clippy passed). Release ownerless/open for the bounded CLI acquisition follow-up; preserve
+  spawn_verified_agent fail-closed until runtime backend, benchmark lease, observed namespace, and
+  relay lifecycle API are implemented and verified.
