@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1344-runtime-cli-acquisition-contract",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-23T14:51:36+00:00",
+  "claim_expires": "2026-09-23T14:51:39+00:00",
   "depends_on": [
     "AR-1339",
     "AR-1340",
@@ -16,9 +16,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime-owned API and CLI integration needed for safe live-provider attempts.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Runtime-owned CLI live acquisition contract",
-  "updated_at": "2026-09-23T12:51:36+00:00",
+  "updated_at": "2026-09-23T12:51:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1344-runtime-cli-acquisition-contract"
 }
 ---
@@ -34,3 +34,5 @@ contract and its tests are merged and verified.
 - 2026-09-23T12:49:01+00:00: Claimed by codex-asb-ar1344-cli-acquisition-20260923.
 
 - 2026-09-23T12:51:36+00:00: Heartbeat by codex-asb-ar1344-cli-acquisition-20260923.
+
+- 2026-09-23T12:51:39+00:00: Heartbeat by codex-asb-ar1344-cli-acquisition-20260923.
