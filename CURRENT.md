@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1349](tasks/AR-1349-live-provider-runtime-service.md): Production live-provider runtime service | Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep. | Bootstrap remains the exact missing private seam: LiveProviderProvisioner composes attempts once given policy, allowlist, backend, and relay root, but no runtime-owned API currently derives those from a validated CLI selection. Add a private runtime bootstrap/profile source, then expose only an opaque service handle to run/sweep; do not make provisioner construction public or retain injected factories. | codex-asb-ar1329-live-cli-luna56 |
-| P1 | [AR-1352](tasks/AR-1352-runtime-live-bootstrap.md): Runtime-owned live bootstrap | Add the private runtime-owned bootstrap source for live acquisition. | Implement private runtime bootstrap for enrolled egress policy/allowlist, pinned sandbox backend/live gate, and relay root; return only an opaque provisioner handle to AR-1349. | codex-asb-runtime-acquisition-successor-luna56 |
+| P1 | [AR-1352](tasks/AR-1352-runtime-live-bootstrap.md): Runtime-owned live bootstrap | Add the private runtime-owned bootstrap source for live acquisition. | Focused live_service tests now pass 9/9 after fixing the private test assertion and removing the unused InvalidToolPin variant. Run runtime/full gates, independently review the bootstrap diff, then commit signed+DCO. | codex-asb-runtime-acquisition-successor-luna56 |
 
 ## Open
 

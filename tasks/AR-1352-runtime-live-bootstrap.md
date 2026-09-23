@@ -7,7 +7,7 @@
     "AR-1351"
   ],
   "id": "AR-1352",
-  "next_action": "Implement private runtime bootstrap for enrolled egress policy/allowlist, pinned sandbox backend/live gate, and relay root; return only an opaque provisioner handle to AR-1349.",
+  "next_action": "Focused live_service tests now pass 9/9 after fixing the private test assertion and removing the unused InvalidToolPin variant. Run runtime/full gates, independently review the bootstrap diff, then commit signed+DCO.",
   "observed_branch": "feature/ar-1352-runtime-live-bootstrap",
   "observed_dirty": 1,
   "observed_head": "2ea6e6422ea61bc9e58a0144ac56713182a72eca",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the private runtime-owned bootstrap source for live acquisition.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Runtime-owned live bootstrap",
-  "updated_at": "2026-09-23T20:16:57+00:00",
+  "updated_at": "2026-09-23T20:17:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1352-runtime-live-bootstrap"
 }
 ---
@@ -62,3 +62,10 @@ integration. AR-1329 remains fail-closed.
 
 - 2026-09-23T20:16:57+00:00: Recorded command exit 0; command argv SHA-256
   71352aa9e9a5c05420d63d2bfca4d0a03840f7d7a85c2d83dea1376fb75a4a02.
+
+- 2026-09-23T20:17:13+00:00: Diagnosed and repaired exact failures: first focused compile failed
+  because the test accessed private SandboxBackend.live_launch_gate; removed that assertion. Next
+  compile failed because unused LiveProviderBootstrapError::InvalidToolPin violated -D warnings;
+  removed the unreachable variant. Then symlink-root negative test returned InvalidEnrollment
+  because validation combined root/enrollment checks; separated root validation so it returns
+  InvalidRelayRoot. Final focused live_service gate passes 9/9.
