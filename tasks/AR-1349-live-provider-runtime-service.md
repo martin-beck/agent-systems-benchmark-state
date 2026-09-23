@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T16:31:27+00:00",
+  "updated_at": "2026-09-23T16:31:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
@@ -40,3 +40,6 @@ qualified.
   dependencies; promote this coordinator repair for claim readiness. AR-1329 remains fail-closed.
 
 - 2026-09-23T16:30:27+00:00: Claimed by codex-asb-ar1329-live-cli-luna56.
+
+- 2026-09-23T16:31:31+00:00: Recorded command exit 0; command argv SHA-256
+  7c145cae25b02f870487e3a09450303496a9a72f7b01b10b754f5034e73197ad.
