@@ -9,7 +9,7 @@
     "AR-1342"
   ],
   "id": "AR-1344",
-  "next_action": "Local llvm-cov after namespace/egress identity tests is 88.53% (10,041 missed / 87,511), still below mandatory 90%. Focused asb-runtime tests pass 82/82 plus 1 capability-gated ignore. Continue only meaningful added-code tests for live relay/provider egress/sandbox; do not push red head.",
+  "next_action": "Exact uncovered-line classification recorded: launch_factory misses include replay backend/authority alternate branches and LiveProviderAttempt lifecycle paths; live_relay misses are error conversion/display plus handoff/forwarding deadline branches; provider_egress misses are address-policy edge branches and relay timeout/error paths; live_namespace misses are gate/runtime observation and rebind branches; sandbox misses are live attestation/spawn/ownership teardown branches. Reachable negative/accessor branches have been covered; remaining live/sandbox branches are capability-gated or require a broad dedicated repair AR. Do not exclude files or weaken 90%; PR remains unmergeable.",
   "observed_branch": "feature/ar-1344-runtime-cli-acquisition-contract",
   "observed_dirty": 0,
   "observed_head": "cd2d1e60b15142665ba3b72f9404df69f5c718da",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime-owned API and CLI integration needed for safe live-provider attempts.",
-  "task_revision": 233,
+  "task_revision": 234,
   "title": "Runtime-owned CLI live acquisition contract",
-  "updated_at": "2026-09-23T14:23:21+00:00",
+  "updated_at": "2026-09-23T14:23:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1344-runtime-cli-acquisition-contract"
 }
 ---
@@ -621,3 +621,14 @@ contract and its tests are merged and verified.
   c07f6574a8834610c114224af4b6446d10eb01066f3fc13fcbf1aa23b4e02305.
 
 - 2026-09-23T14:23:21+00:00: Heartbeat by codex-asb-ar1344-factory-refactor-20260923.
+
+- 2026-09-23T14:23:54+00:00: Coverage report classification: reachable real tests:
+  malformed/expired/revoked/duplicate relay, exact synthetic target forwarding, namespace
+  mismatch/revocation, egress policy/auth negatives, launch authority identity negatives, and
+  lifecycle accessors. Capability-gated by policy: delegated SandboxBackend
+  probe/attest_live_launch/spawn/teardown and live relay worker paths requiring real namespace
+  ownership. Pre-existing/baseline: loopback_sidecar, supervisor, relay, scheduler and unrelated
+  sandbox branches. Concrete successor scope if coordinator approves: AR
+  coverage-repair-runtime-live, covering sandbox admission/ownership transitions, relay
+  timeout/error matrices, and provider egress address/authorization branches; no exclusions. Current
+  aggregate remains 88.53% (87511/10041).
