@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the pinned OpenRouter free model under conformance and hostile fail-closed testing.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "OpenRouter free-model conformance and hostile qualification",
-  "updated_at": "2026-09-23T09:04:06+00:00",
+  "updated_at": "2026-09-23T09:04:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1334-openrouter-conformance-qualification"
 }
 ---
@@ -108,3 +108,6 @@ provider effect; real provider contact is opt-in and never required for CI.
   ignored, clippy all targets passed, workspace cargo test --quiet passed. Added hostile matrix and
   repaired credential bleed by rejecting openai_api_key and credential fields. Prior exit-101 was
   the expected negative focused run before the production repair; rerun passed.
+
+- 2026-09-23T09:04:15+00:00: Recorded command exit 0; command argv SHA-256
+  e7513194e2468894b7759dcb9dccb53f0d596f4f1460e59666fe32736593efea.
