@@ -11,7 +11,7 @@
   "id": "AR-1344",
   "next_action": "PR #260 updated to signed head 6b06b12 with targeted launch_factory coverage for backend retention and opaque factory debug. Re-run exact CI coverage; 90% floor remains mandatory and broad residual runtime deficits are documented. Do not merge while policy coverage is red.",
   "observed_branch": "feature/ar-1344-runtime-cli-acquisition-contract",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "6b06b12639beb29909621a324a228976eea23b3b",
   "owner": "codex-asb-ar1344-factory-refactor-20260923",
   "plan": "../plans/AR-1344-runtime-cli-acquisition-contract.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime-owned API and CLI integration needed for safe live-provider attempts.",
-  "task_revision": 202,
+  "task_revision": 203,
   "title": "Runtime-owned CLI live acquisition contract",
-  "updated_at": "2026-09-23T14:11:52+00:00",
+  "updated_at": "2026-09-23T14:12:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1344-runtime-cli-acquisition-contract"
 }
 ---
