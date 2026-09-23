@@ -10,7 +10,7 @@
     "AR-1350"
   ],
   "id": "AR-1351",
-  "next_action": "Push b710260 exact signed head to PR #262, verify head match, and monitor Repository quality plus all required checks; merge only after independent review and green exact-head CI.",
+  "next_action": "Monitor PR #262 new exact-head required checks and obtain independent review; merge only after all required checks are green, then verify post-merge.",
   "observed_branch": "feature/ar-1351-live-runtime-provisioning",
   "observed_dirty": 0,
   "observed_head": "b710260a944e21e5b591203bdef00bdc9c0d019c",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the private host/runtime provisioning seam for live acquisition.",
-  "task_revision": 75,
+  "task_revision": 76,
   "title": "Runtime-owned live provisioning",
-  "updated_at": "2026-09-23T19:46:43+00:00",
+  "updated_at": "2026-09-23T19:46:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1351-live-runtime-provisioning"
 }
 ---
@@ -242,3 +242,8 @@ runtime boundary; AR-1349 remains fail-closed until it is merged and verified.
   07acc13d2ccb396be52d2ccd28b3ee54b50c146d2c971e55f9814ba651829126.
 
 - 2026-09-23T19:46:43+00:00: Heartbeat by codex-asb-runtime-acquisition-successor-luna56.
+
+- 2026-09-23T19:46:46+00:00: Pushed signed+DCO coverage repair b710260 exact head. PR #262 head
+  matches b710260 and is OPEN. New required checks started: Repository quality, Rust verification,
+  formal assurance, fault assurance, portability; Huawei MIT and AWQ shadow already green. Prior
+  89.95% coverage failure is superseded pending this new-head Repository quality result.
