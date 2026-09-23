@@ -13,17 +13,17 @@
   "id": "AR-1349",
   "next_action": "CLI integration remains fail-closed. Independent review found the intermediate LiveProviderRuntimeAuthority bundle could be externally constructed; 97870c0 removes that incomplete composition seam rather than suppressing dead_code. Focused live_service 2/2, clippy/fmt pass. Exact remaining blocker: no production-owned constructor exists that resolves provider selection/credential, pinned gate/backend, observed namespace, token and relay into an opaque LiveProviderAttempt. Next repair must implement that owner before asb run/sweep can call one service entrypoint; preserve offline/replay defaults and AR-1329 fail-closed.",
   "observed_branch": "feature/ar-1349-live-provider-runtime-service",
-  "observed_dirty": 2,
-  "observed_head": "97870c00fbb8444daf8b581e2b141c4b479b719b",
+  "observed_dirty": 0,
+  "observed_head": "baf2fa733f079a58e5956759bcf1609657f02375",
   "owner": "codex-asb-ar1329-live-cli-luna56",
   "plan": "../plans/AR-1349-live-provider-runtime-service.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 73,
+  "task_revision": 74,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T16:51:09+00:00",
+  "updated_at": "2026-09-23T16:51:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
