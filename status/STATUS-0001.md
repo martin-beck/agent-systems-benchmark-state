@@ -7,18 +7,18 @@
 
 ## Portfolio overview
 
-**371 ARs tracked** across 7 active status categories.
+**371 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 4 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 49 |
 | **Planned** | Defined work awaiting promotion or dependencies | 65 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 239 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
-| **Superseded** | Replaced by another AR | 12 |
+| **Superseded** | Replaced by another AR | 13 |
 
 ## Dependency graph
 
@@ -438,7 +438,7 @@ flowchart LR
         AR_1343["AR-1343 - Superseded"]:::status_superseded
         AR_1344["AR-1344 - Done"]:::status_done
         AR_1345["AR-1345 - Done"]:::status_done
-        AR_1346["AR-1346 - In progress"]:::status_in_progress
+        AR_1346["AR-1346 - Superseded"]:::status_superseded
         AR_1347["AR-1347 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
@@ -1794,12 +1794,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1346](../tasks/AR-1346-runtime-supervisor-provisioning.md): Runtime supervisor provisioning boundary | codex-asb-ar1329-live-cli-luna56 | Add the production runtime supervisor boundary needed for safe live-provider CLI acquisition. | Cross-crate audit found the safe boundary is not yet implemented: asb-runtime cannot depend on asb-agents because asb-agents already depends on runtime; ResolvedCredential transport bytes are crate-private, while SandboxBackend::spawn_launch constructs the child command internally. Implement a new supervisor-owned composition boundary (likely dedicated crate or runtime credential injection trait) that keeps secret bytes opaque, then add CLI wiring/tests. Do not expose bytes or bypass NetworkPolicy::Deny. |
-
 ### Open (4)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -1834,3 +1828,5 @@ flowchart LR
 | P0 | [AR-1273](../tasks/AR-1273-complete-replay-context.md): Complete runtime-owned replay request context | Unclaimed | Provide complete runtime-owned context for strict-replay execution. | Integrate ReplayRequestContext into actual argument-level replay dispatch and connect runtime cassette service; add real response parity and supervised egress/no-fallback/cancel/restart/timeout/crash cleanup tests. |
 | P0 | [AR-1274](../tasks/AR-1274-runtime-cassette-executor-adapter.md): Runtime cassette operation executor adapter | Unclaimed | Provide a runtime cassette operation executor callback boundary. | Provide CLI/replay adapter over RuntimeOperationHandle and bind actual replay command; add supervised lifecycle/egress/no-fallback fixtures. |
 | P0 | [AR-1275](../tasks/AR-1275-replay-operation-injection.md): Runtime operation injection into replay dispatcher | Unclaimed | Inject runtime-owned operation handles into actual strict-replay dispatch. | Bind runtime-issued operation handle into the primary argument-level replay command; add supervised cassette response/egress/cancel/restart/timeout/crash/cleanup evidence. |
+| P0 | [AR-1276](../tasks/AR-1276-primary-replay-runtime.md): Primary replay runtime integration | Unclaimed | Integrate runtime-owned operation execution into the primary strict-replay command. | Promote after dependency verification; wire the primary replay command to runtime-issued operation execution and prove supervised lifecycle behavior. |
+| P0 | [AR-1277](../tasks/AR-1277-runtime-cli-replay-transport.md): Runtime-to-CLI replay transport boundary | Unclaimed | Provide a runtime-issued transport channel for primary strict replay. | Wire ReplayTransportClient into the primary replay dispatch and connect runtime-issued cassette service; add supervised egress/lifecycle evidence. |

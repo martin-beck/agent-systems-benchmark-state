@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1346-runtime-supervisor-provisioning",
   "checkpoint_commit": "a336d6744b1a82f36a706ec606b847c92d49cfd3",
-  "claim_expires": "2026-09-23T17:34:50+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1327",
     "AR-1328",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1346-runtime-supervisor-provisioning",
   "observed_dirty": 0,
   "observed_head": "a336d6744b1a82f36a706ec606b847c92d49cfd3",
-  "owner": "codex-asb-ar1329-live-cli-luna56",
+  "owner": "",
   "plan": "../plans/AR-1346-runtime-supervisor-provisioning.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "superseded",
   "summary": "Add the production runtime supervisor boundary needed for safe live-provider CLI acquisition.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Runtime supervisor provisioning boundary",
-  "updated_at": "2026-09-23T15:37:00+00:00",
+  "updated_at": "2026-09-23T15:37:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1346-runtime-supervisor-provisioning"
 }
 ---
@@ -54,3 +54,8 @@ authority in `asb-cli`.
 
 - 2026-09-23T15:37:00+00:00: Recorded command exit 0; command argv SHA-256
   23b2cad55d063096f1db1ccc3f3d836e4b2a7b710b948912fa96bcb9825162c3.
+
+- 2026-09-23T15:37:14+00:00: AR-1346 audit completed without product mutation. It proved the missing
+  safe primitive is a neutral opaque supervisor/credential composition contract: asb-agents already
+  depends on asb-runtime and ResolvedCredential bytes are crate-private. Superseded by AR-1347;
+  preserve AR-1329 fail-closed.

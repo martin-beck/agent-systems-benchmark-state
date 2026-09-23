@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1346](tasks/AR-1346-runtime-supervisor-provisioning.md): Runtime supervisor provisioning boundary | Add the production runtime supervisor boundary needed for safe live-provider CLI acquisition. | Cross-crate audit found the safe boundary is not yet implemented: asb-runtime cannot depend on asb-agents because asb-agents already depends on runtime; ResolvedCredential transport bytes are crate-private, while SandboxBackend::spawn_launch constructs the child command internally. Implement a new supervisor-owned composition boundary (likely dedicated crate or runtime credential injection trait) that keeps secret bytes opaque, then add CLI wiring/tests. Do not expose bytes or bypass NetworkPolicy::Deny. | codex-asb-ar1329-live-cli-luna56 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -408,3 +402,4 @@ Never edit this file directly.
 | P0 | [AR-1294](tasks/AR-1294-state-gate-baseline.md): State formal-gate baseline integrity | Restore vendor and formal admission baseline integrity needed to qualify AR-1293. | Audit the vendor lock/digest mismatch and root-owned TLC admission lock; repair only through immutable provenance and owner-safe lock handling, then rerun full state/formal gates. | - |
 | P0 | [AR-1301](tasks/AR-1301-replay-lifecycle-fault-matrix.md): Supervised replay lifecycle fault matrix | Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end. | Implement runtime-owned listener fixtures and cause-specific assertions; rerun the matrix and exact-head CI, obtain approval, merge, and reconcile. | - |
 | P1 | [AR-1343](tasks/AR-1343-runtime-live-provider-relay.md): Runtime live-provider relay service and CLI acquisition | Add the runtime live-provider relay service and per-attempt opaque factory acquisition required by asb run and sweep. | BLOCKED on concrete missing primitives: asb-runtime has no production supervisor constructor for pinned SandboxBackend/live gate and no runtime-owned target/namespace provisioning; asb-agents ResolvedCredential transport is crate-private and cannot safely cross into runtime; no CLI service can acquire lease, credential, target, namespace, token, and relay atomically. Keep AR-1329 fail-closed. Coordinator must promote a narrowly scoped cross-crate runtime provisioning repair before AR-1343 can proceed. | - |
+| P1 | [AR-1346](tasks/AR-1346-runtime-supervisor-provisioning.md): Runtime supervisor provisioning boundary | Add the production runtime supervisor boundary needed for safe live-provider CLI acquisition. | Cross-crate audit found the safe boundary is not yet implemented: asb-runtime cannot depend on asb-agents because asb-agents already depends on runtime; ResolvedCredential transport bytes are crate-private, while SandboxBackend::spawn_launch constructs the child command internally. Implement a new supervisor-owned composition boundary (likely dedicated crate or runtime credential injection trait) that keeps secret bytes opaque, then add CLI wiring/tests. Do not expose bytes or bypass NetworkPolicy::Deny. | - |
