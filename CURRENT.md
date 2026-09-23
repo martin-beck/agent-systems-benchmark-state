@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1343](tasks/AR-1343-runtime-live-provider-relay.md): Runtime live-provider relay service and CLI acquisition | Add the runtime live-provider relay service and per-attempt opaque factory acquisition required by asb run and sweep. | Blocked on missing supported CLI-to-runtime acquisition API: asb-cli spawn_verified_agent explicitly rejects live_provider and has no runtime backend/benchmark lease/namespace attestation or relay lifecycle seam. Add that API in a coordinated follow-up; keep AR-1329 fail-closed. | codex-asb-ar1343-replacement-20260923 |
+| P1 | [AR-1343](tasks/AR-1343-runtime-live-provider-relay.md): Runtime live-provider relay service and CLI acquisition | Add the runtime live-provider relay service and per-attempt opaque factory acquisition required by asb run and sweep. | CLI acquisition remains a bounded follow-up: add an explicit runtime-owned per-attempt API supplying SandboxBackend, benchmark ResourceLease, observed child NamespaceIdentity, and LiveProviderRelay lifecycle; do not weaken spawn_verified_agent live-provider fail-closed guard. | codex-asb-ar1343-replacement-20260923 |
 
 ## Open
 

@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1343-runtime-live-provider-relay",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "ce2c2db068b05092f0f63291e0d94d4dbc9cda9c",
   "claim_expires": "2026-09-23T14:43:26+00:00",
   "depends_on": [
     "AR-1327",
@@ -10,7 +10,7 @@
     "AR-1340"
   ],
   "id": "AR-1343",
-  "next_action": "Blocked on missing supported CLI-to-runtime acquisition API: asb-cli spawn_verified_agent explicitly rejects live_provider and has no runtime backend/benchmark lease/namespace attestation or relay lifecycle seam. Add that API in a coordinated follow-up; keep AR-1329 fail-closed.",
+  "next_action": "CLI acquisition remains a bounded follow-up: add an explicit runtime-owned per-attempt API supplying SandboxBackend, benchmark ResourceLease, observed child NamespaceIdentity, and LiveProviderRelay lifecycle; do not weaken spawn_verified_agent live-provider fail-closed guard.",
   "observed_branch": "feature/ar-1343-runtime-live-provider-relay",
   "observed_dirty": 0,
   "observed_head": "ce2c2db068b05092f0f63291e0d94d4dbc9cda9c",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime live-provider relay service and per-attempt opaque factory acquisition required by asb run and sweep.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Runtime live-provider relay service and CLI acquisition",
-  "updated_at": "2026-09-23T12:44:06+00:00",
+  "updated_at": "2026-09-23T12:44:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1343-runtime-live-provider-relay"
 }
 ---
@@ -102,3 +102,8 @@ capabilities without bypassing the denied-network sandbox.
 
 - 2026-09-23T12:43:56+00:00: Recorded command exit 0; command argv SHA-256
   f39ba171faca5eb0cd73a9c92322bf04853aa0d8337161d47841b645006e5230.
+
+- 2026-09-23T12:44:30+00:00: Committed relay portion as ce2c2db068b05092f0f63291e0d94d4dbc9cda9c
+  with SSH signature and DCO. Worktree clean. Runtime relay focused 7/7, full all-targets 79
+  passed/1 ignored, clippy passed. Source audit confirms CLI lacks the supported runtime acquisition
+  seam; AR-1329 remains fail-closed pending that bounded API.
