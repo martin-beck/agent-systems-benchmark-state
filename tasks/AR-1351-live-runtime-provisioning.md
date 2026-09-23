@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1351-live-runtime-provisioning",
-  "checkpoint_commit": "d069f3eeacae914bec5d33dfbb575cd7e4281b2c",
+  "checkpoint_commit": "de3fd42db25510d89aeef4d62a934965a3de40fa",
   "claim_expires": "2026-09-23T21:22:51+00:00",
   "depends_on": [
     "AR-1339",
@@ -10,7 +10,7 @@
     "AR-1350"
   ],
   "id": "AR-1351",
-  "next_action": "Review the private provisioning diff and add the positive synthetic relay lifecycle test using bind_runtime; then run workspace clippy/full tests. Constructor remains crate-private; no CLI wiring or AR-1329 enablement until exact authority/teardown evidence passes.",
+  "next_action": "Independent review of signed commit de3fd42db25510d89aeef4d62a934965a3de40fa: verify private constructor boundary, no placeholder/synthetic authority in production, exact target allowlisting, observed namespace, lease rollback, relay teardown and no secret/path evidence. If approved, publish the clean branch through handoffctl and require exact-head CI; keep AR-1349/1329 fail-closed.",
   "observed_branch": "feature/ar-1351-live-runtime-provisioning",
   "observed_dirty": 0,
   "observed_head": "de3fd42db25510d89aeef4d62a934965a3de40fa",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the private host/runtime provisioning seam for live acquisition.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Runtime-owned live provisioning",
-  "updated_at": "2026-09-23T19:28:05+00:00",
+  "updated_at": "2026-09-23T19:28:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1351-live-runtime-provisioning"
 }
 ---
@@ -125,3 +125,12 @@ runtime boundary; AR-1349 remains fail-closed until it is merged and verified.
 
 - 2026-09-23T19:27:54+00:00: Recorded command exit 0; command argv SHA-256
   c4b3b436092f3488b9044ca96415330300b34e2ba18140680d7f654cd82b2a15.
+
+- 2026-09-23T19:28:40+00:00: Signed+DCO commit de3fd42db25510d89aeef4d62a934965a3de40fa adds
+  crate-private LiveProviderProvisioner acquisition and LiveProviderRelay::bind_runtime. The service
+  owns policy/allowlist/backend/lease root, observes NamespaceIdentity::current, acquires benchmark
+  lease, binds the real listener before issuing handoff, attests the backend and returns opaque
+  LiveProviderAttempt. Negative tests reject invalid attempt and adapter identity before effects;
+  runtime-bind lifecycle test validates real socket, handoff and teardown. Gates: cargo fmt, cargo
+  check -p asb-runtime, live_service 5/5, live_relay 10/10, runtime all-targets 96 passed/1 ignored,
+  workspace clippy 0, workspace tests passed.
