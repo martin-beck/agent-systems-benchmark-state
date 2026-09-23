@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1329-live-provider-run-execution",
   "checkpoint_commit": "44ddf14334ac971e8e89bda195635595cfc651ab",
-  "claim_expires": "2026-09-23T13:31:19+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1327",
     "AR-1328",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1329-live-provider-run-execution",
   "observed_dirty": 0,
   "observed_head": "2774b1d648b5c3bbda0e290e158dc352502d3768",
-  "owner": "codex-asb-ar1329-20260923",
+  "owner": "",
   "plan": "../plans/AR-1329.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Execute real agents against the selected provider through asb run and sweep with credential-free resolution.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Live-provider run execution for real agents",
-  "updated_at": "2026-09-23T11:32:26+00:00",
+  "updated_at": "2026-09-23T11:32:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1329-live-provider-run-execution"
 }
 ---
@@ -100,3 +100,11 @@ the digest-pinned mode remain default and never touch the network.
   changes made. Heartbeat renewed. Reconcile completed state commit but doctor --live and snapshot
   both fail because generated WORKTREES.md is stale; this is recorded as an external
   state-reconciliation failure.
+
+- 2026-09-23T11:32:39+00:00: Released open, not done: live run/sweep remains fail-closed because
+  asb-cli has no runtime-owned relay/backend acquisition path. Proposed coordinator successor
+  AR-1342 must supply a validated relay listener, ProviderEgressHandoff, runtime-observed
+  NamespaceIdentity-bound LiveProviderNamespaceHandoff, SandboxBackend, ResourceLease, and child
+  launch context. Preserve NetworkPolicy::Deny, direct/alternate egress denial, credential
+  non-disclosure, cancellation/teardown, and offline default. No unsafe direct bypass. State
+  reconcile doctor/snapshot currently report stale WORKTREES.md.
