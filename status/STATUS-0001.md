@@ -7,18 +7,18 @@
 
 ## Portfolio overview
 
-**370 ARs tracked** across 7 active status categories.
+**370 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 4 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 49 |
 | **Planned** | Defined work awaiting promotion or dependencies | 65 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 239 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
-| **Superseded** | Replaced by another AR | 11 |
+| **Superseded** | Replaced by another AR | 12 |
 
 ## Dependency graph
 
@@ -435,7 +435,7 @@ flowchart LR
         AR_1340["AR-1340 - Done"]:::status_done
         AR_1341["AR-1341 - Done"]:::status_done
         AR_1342["AR-1342 - Done"]:::status_done
-        AR_1343["AR-1343 - In progress"]:::status_in_progress
+        AR_1343["AR-1343 - Superseded"]:::status_superseded
         AR_1344["AR-1344 - Done"]:::status_done
         AR_1345["AR-1345 - Done"]:::status_done
         AR_1346["AR-1346 - Planned"]:::status_planned
@@ -1787,12 +1787,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1343](../tasks/AR-1343-runtime-live-provider-relay.md): Runtime live-provider relay service and CLI acquisition | codex-asb-ar1329-live-cli-luna56 | Add the runtime live-provider relay service and per-attempt opaque factory acquisition required by asb run and sweep. | BLOCKED on concrete missing primitives: asb-runtime has no production supervisor constructor for pinned SandboxBackend/live gate and no runtime-owned target/namespace provisioning; asb-agents ResolvedCredential transport is crate-private and cannot safely cross into runtime; no CLI service can acquire lease, credential, target, namespace, token, and relay atomically. Keep AR-1329 fail-closed. Coordinator must promote a narrowly scoped cross-crate runtime provisioning repair before AR-1343 can proceed. |
-
 ### Open (4)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -1829,3 +1823,6 @@ flowchart LR
 | P0 | [AR-1275](../tasks/AR-1275-replay-operation-injection.md): Runtime operation injection into replay dispatcher | Unclaimed | Inject runtime-owned operation handles into actual strict-replay dispatch. | Bind runtime-issued operation handle into the primary argument-level replay command; add supervised cassette response/egress/cancel/restart/timeout/crash/cleanup evidence. |
 | P0 | [AR-1276](../tasks/AR-1276-primary-replay-runtime.md): Primary replay runtime integration | Unclaimed | Integrate runtime-owned operation execution into the primary strict-replay command. | Promote after dependency verification; wire the primary replay command to runtime-issued operation execution and prove supervised lifecycle behavior. |
 | P0 | [AR-1277](../tasks/AR-1277-runtime-cli-replay-transport.md): Runtime-to-CLI replay transport boundary | Unclaimed | Provide a runtime-issued transport channel for primary strict replay. | Wire ReplayTransportClient into the primary replay dispatch and connect runtime-issued cassette service; add supervised egress/lifecycle evidence. |
+| P0 | [AR-1278](../tasks/AR-1278-primary-runtime-client.md): Primary replay runtime client handoff | Unclaimed | Connect the primary replay command to the runtime-issued transport client. | Promote after dependency verification; hand the runtime-issued replay client into primary argument dispatch and prove supervised lifecycle behavior. |
+| P0 | [AR-1279](../tasks/AR-1279-end-to-end-replay-runtime.md): End-to-end primary replay runtime handoff | Unclaimed | Implement end-to-end runtime-owned execution for primary strict replay. | Promote after dependency verification; implement transport plus primary runtime-client handoff from protected main and prove full supervised lifecycle. |
+| P0 | [AR-1280](../tasks/AR-1280-cross-crate-replay-entrypoint.md): Cross-crate replay process entrypoint | Unclaimed | Implement the cross-crate runtime process entrypoint for primary strict replay. | Extend replay-plan dispatch to invoke runtime-owned supervised process with argument-level command and cassette service; preserve denied egress/no-fallback and add lifecycle fault tests. Current signed head f92a86b provides bridge/binding baseline. |
