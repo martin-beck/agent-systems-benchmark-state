@@ -9,7 +9,7 @@
     "AR-1342"
   ],
   "id": "AR-1344",
-  "next_action": "PR #260 is blocked on required workspace coverage: CI cargo llvm-cov reports 88.00% lines versus 90% floor, with large new runtime files (launch_factory 78.24%, sandbox 70.70%, provider_egress 88.25%, live_namespace 87.86%). Do not weaken/exclude the floor; create or assign a coverage-repair AR before merge. Other exact-head checks continue independently.",
+  "next_action": "Coverage repair is beyond AR-1344 scope: local cargo llvm-cov workspace report is 88.42% lines, still below 90%, with residual broad deficits in launch_factory 78.24%, live_namespace 87.86%, provider_egress 88.25%, sandbox 84.89%, supervisor 75.39%, and unrelated loopback_sidecar 84.50%. Plan/assign a coverage-repair successor before PR #260 can merge; do not weaken floor or forge capability fixtures.",
   "observed_branch": "feature/ar-1344-runtime-cli-acquisition-contract",
   "observed_dirty": 0,
   "observed_head": "7b8d2966b8f4afb4a20f7be21eefdd01d47557b8",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime-owned API and CLI integration needed for safe live-provider attempts.",
-  "task_revision": 191,
+  "task_revision": 192,
   "title": "Runtime-owned CLI live acquisition contract",
-  "updated_at": "2026-09-23T14:01:54+00:00",
+  "updated_at": "2026-09-23T14:02:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1344-runtime-cli-acquisition-contract"
 }
 ---
@@ -514,3 +514,9 @@ contract and its tests are merged and verified.
 
 - 2026-09-23T14:01:54+00:00: Recorded command exit 1; command argv SHA-256
   febf4821434c70ba265b716acf1078ae732bfb64659130ce0b0c9c0a92db2a37.
+
+- 2026-09-23T14:02:33+00:00: Ran full cargo llvm-cov --locked --workspace --all-targets --text. All
+  tests completed; report total 87401 lines, 10118 missed, 88.42%. Existing focused AR tests and new
+  factory tests are covered; remaining deficit requires broad runtime branch tests across
+  AR-1342/1343 surfaces and is not safely solvable by a small AR-1344 patch. No product changes
+  made; PR remains unmergeable on coverage.

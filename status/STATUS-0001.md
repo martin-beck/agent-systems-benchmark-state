@@ -1780,7 +1780,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1344](../tasks/AR-1344-runtime-cli-acquisition-contract.md): Runtime-owned CLI live acquisition contract | codex-asb-ar1344-factory-refactor-20260923 | Add the runtime-owned API and CLI integration needed for safe live-provider attempts. | PR #260 is blocked on required workspace coverage: CI cargo llvm-cov reports 88.00&#37; lines versus 90&#37; floor, with large new runtime files (launch_factory 78.24&#37;, sandbox 70.70&#37;, provider_egress 88.25&#37;, live_namespace 87.86&#37;). Do not weaken/exclude the floor; create or assign a coverage-repair AR before merge. Other exact-head checks continue independently. |
+| P1 | [AR-1344](../tasks/AR-1344-runtime-cli-acquisition-contract.md): Runtime-owned CLI live acquisition contract | codex-asb-ar1344-factory-refactor-20260923 | Add the runtime-owned API and CLI integration needed for safe live-provider attempts. | Coverage repair is beyond AR-1344 scope: local cargo llvm-cov workspace report is 88.42&#37; lines, still below 90&#37;, with residual broad deficits in launch_factory 78.24&#37;, live_namespace 87.86&#37;, provider_egress 88.25&#37;, sandbox 84.89&#37;, supervisor 75.39&#37;, and unrelated loopback_sidecar 84.50&#37;. Plan/assign a coverage-repair successor before PR #260 can merge; do not weaken floor or forge capability fixtures. |
 
 ### Open (5)
 
