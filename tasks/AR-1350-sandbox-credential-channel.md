@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement a sandbox-owned sealed-FD credential channel for live provider children.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Sandbox-owned credential channel",
-  "updated_at": "2026-09-23T17:38:50+00:00",
+  "updated_at": "2026-09-23T17:38:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1350-sandbox-credential-channel"
 }
 ---
@@ -124,3 +124,6 @@ private runtime channel before AR-1349 can safely acquire attempts or wire
 
 - 2026-09-23T17:38:50+00:00: Workspace cargo test --locked --workspace passed after the channel
   delivery repair; final Vec ownership change has focused 3/3 and workspace clippy green.
+
+- 2026-09-23T17:38:59+00:00: Recorded command exit 0; command argv SHA-256
+  3de884b8f156e16d317520a0fbfd8504ce8f8e10810b92713b3d0e9a85ae5bf7.
