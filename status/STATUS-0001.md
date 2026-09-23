@@ -7,18 +7,18 @@
 
 ## Portfolio overview
 
-**373 ARs tracked** across 7 active status categories.
+**373 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 4 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 49 |
 | **Planned** | Defined work awaiting promotion or dependencies | 65 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 240 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
-| **Superseded** | Replaced by another AR | 13 |
+| **Superseded** | Replaced by another AR | 14 |
 
 ## Dependency graph
 
@@ -440,7 +440,7 @@ flowchart LR
         AR_1345["AR-1345 - Done"]:::status_done
         AR_1346["AR-1346 - Superseded"]:::status_superseded
         AR_1347["AR-1347 - Done"]:::status_done
-        AR_1348["AR-1348 - In progress"]:::status_in_progress
+        AR_1348["AR-1348 - Superseded"]:::status_superseded
         AR_1349["AR-1349 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
@@ -1806,12 +1806,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1348](../tasks/AR-1348-runtime-owned-live-acquisition.md): Runtime-owned live acquisition service | codex-asb-ar1329-live-cli-luna56 | Provide the runtime-owned supervisor that acquires every live-provider authority and tears it down safely. | Audit is complete and AR-1348 remains in_progress only as the verified lifecycle slice. Exact missing authority: no production-owned coordinator can resolve enrolled provider policy/credential, create NetworkPolicy::Deny SandboxLaunchInput, acquire benchmark ResourceLease, observe child NamespaceIdentity, issue launch token, construct LiveProviderNamespaceHandoff and LiveProviderRelay, and invoke asb-cli per attempt. CLI exposes only injected LiveProviderAttemptFactory seams; LiveLaunchFactory and RuntimeLiveBinding accept caller-built authority. Recommend coordinator create a narrowly scoped successor AR for LiveProviderRuntimeService atomic acquisition and CLI wiring; do not add a callback wrapper or synthetic authority. AR-1329 remains fail-closed. |
-
 ### Open (4)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -1841,3 +1835,6 @@ flowchart LR
 | P0 | [AR-1268](../tasks/AR-1268-replay-transport-boundary.md): Break strict-replay runtime/CLI dependency cycle | Unclaimed | Break the strict-replay runtime/CLI dependency cycle with a shared transport contract. | Await approved runtime-owned launch bundle/factory exposing SandboxLaunchInput, ResourceLease, pinned commands, and supervised lifecycle to the transport adapter; then add real child lifecycle/egress tests. |
 | P0 | [AR-1269](../tasks/AR-1269-runtime-replay-launch-factory.md): Runtime-owned replay launch-bundle factory | Unclaimed | Create runtime-owned launch bundles for supervised strict replay. | Await approved runtime-issued cassette-service handle/shared transport extension; then connect it to spawn_runtime_replay and run real request/response, egress, cancellation/restart, timeout/crash cleanup, no-fallback fixtures. |
 | P0 | [AR-1270](../tasks/AR-1270-runtime-cassette-handle.md): Runtime-issued cassette-service handle | Unclaimed | Provide a runtime-issued cassette-service handle for supervised strict replay. | Expose a runtime-owned cassette operation/response handle and connect it to actual replay dispatch; add supervised lifecycle/egress/no-fallback fixtures before full gates. |
+| P0 | [AR-1271](../tasks/AR-1271-cassette-operation-contract.md): Dependency-neutral cassette operation contract | Unclaimed | Define a dependency-neutral cassette request/response operation contract. | Connect CassetteResponseSink to actual replay service and add real request/response, egress/no-fallback, cancellation/restart, timeout/crash cleanup fixtures. |
+| P0 | [AR-1272](../tasks/AR-1272-authenticated-cassette-backend.md): Authenticated immutable cassette backend | Unclaimed | Bind immutable cassette content to a runtime-authenticated replay backend handle. | Wire execute_runtime_cassette into argument-level replay command and add real response parity plus egress/no-fallback/cancel/restart/timeout/crash cleanup fixtures. |
+| P0 | [AR-1273](../tasks/AR-1273-complete-replay-context.md): Complete runtime-owned replay request context | Unclaimed | Provide complete runtime-owned context for strict-replay execution. | Integrate ReplayRequestContext into actual argument-level replay dispatch and connect runtime cassette service; add real response parity and supervised egress/no-fallback/cancel/restart/timeout/crash cleanup tests. |

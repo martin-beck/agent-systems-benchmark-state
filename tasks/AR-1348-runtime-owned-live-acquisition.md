@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1348-runtime-owned-live-acquisition",
   "checkpoint_commit": "ecc2d4c548b975d829d4f27750321f0cb64f75c2",
-  "claim_expires": "2026-09-23T18:25:22+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1327",
     "AR-1328",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1348-runtime-owned-live-acquisition",
   "observed_dirty": 0,
   "observed_head": "ecc2d4c548b975d829d4f27750321f0cb64f75c2",
-  "owner": "codex-asb-ar1329-live-cli-luna56",
+  "owner": "",
   "plan": "../plans/AR-1348-runtime-owned-live-acquisition.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "superseded",
   "summary": "Provide the runtime-owned supervisor that acquires every live-provider authority and tears it down safely.",
-  "task_revision": 79,
+  "task_revision": 80,
   "title": "Runtime-owned live acquisition service",
-  "updated_at": "2026-09-23T16:28:49+00:00",
+  "updated_at": "2026-09-23T16:29:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1348-runtime-owned-live-acquisition"
 }
 ---
@@ -259,3 +259,8 @@ this service owns acquisition instead of accepting caller-built launch authority
 
 - 2026-09-23T16:28:49+00:00: Recorded command exit 0; command argv SHA-256
   37dac51897ca86b95510e85e41e1ac3613388a135b3c5f9417d129d7a2dd5d0d.
+
+- 2026-09-23T16:29:06+00:00: Superseded by coordinator successor AR-1349. Preserve signed lifecycle
+  evidence commit ecc2d4c548b975d829d4f27750321f0cb64f75c2 and full focused/workspace gate results,
+  but do not treat AR-1348 as production-service completion. AR-1329 remains fail-closed; AR-1349
+  owns atomic LiveProviderRuntimeService acquisition and asb run/sweep wiring.
