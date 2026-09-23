@@ -13,7 +13,7 @@
   "id": "AR-1349",
   "next_action": "Do not publish the current credential sink. Repair the production boundary: inject into the inner bubblewrap child environment (outer systemd-run env is discarded by --clearenv), keep sink/private authority inaccessible to CLI, bind capability to selection digest and adapter target, and wire LiveProviderRuntimeService atomic acquisition plus asb run/sweep. Current sink compile/clippy repair is local only; AR-1329 remains fail-closed.",
   "observed_branch": "feature/ar-1349-live-provider-runtime-service",
-  "observed_dirty": 5,
+  "observed_dirty": 0,
   "observed_head": "359f15af52aa2b0b31bb091b945e7de933960006",
   "owner": "codex-asb-ar1329-live-cli-luna56",
   "plan": "../plans/AR-1349-live-provider-runtime-service.md",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 146,
+  "task_revision": 147,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T17:15:06+00:00",
+  "updated_at": "2026-09-23T17:15:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
