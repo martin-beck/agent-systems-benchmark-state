@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T16:36:52+00:00",
+  "updated_at": "2026-09-23T16:37:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
@@ -90,3 +90,6 @@ qualified.
   variant/accessor diagnostics); documentation was added. Next focused run failed because
   deterministic temp root reused a process-id-only path and returned LeaseError::Conflict(0);
   fixture now uses an atomic sequence and rerun passed 2/2. Product commit is SSH-signed with DCO.
+
+- 2026-09-23T16:37:12+00:00: Recorded command exit 0; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
