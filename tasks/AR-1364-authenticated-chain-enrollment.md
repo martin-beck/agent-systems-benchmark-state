@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize authenticated certificate-chain authority for control-owned runtime receipt issuance.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Authenticated chain enrollment",
-  "updated_at": "2026-09-23T23:33:21+00:00",
+  "updated_at": "2026-09-23T23:33:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1364-authenticated-chain-enrollment"
 }
 ---
@@ -59,3 +59,6 @@ asb-tui or synthesize certificate authority from CLI/config input.
 
 - 2026-09-23T23:33:21+00:00: Recorded command exit 0; command argv SHA-256
   d9fa5fa9d6b1edd0744be1b0aa7351347516f8475fbf10364d8f42e7873456ab.
+
+- 2026-09-23T23:33:50+00:00: Recorded command exit 0; command argv SHA-256
+  b2f7111306aa7c03c56215bdb77e1811ed87e0363612681320219865a955e4c7.
