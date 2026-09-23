@@ -9,17 +9,17 @@
   "id": "AR-1357",
   "next_action": "Promote after AR-1356 is done, then implement the versioned control-issued enrollment record transport and opaque runtime ingestion with positive and negative tests.",
   "observed_branch": "feature/ar-1357-runtime-attested-enrollment-record",
-  "observed_dirty": 3,
-  "observed_head": "a6f1915aa5117f0296b1b8f4b9c4692a956b3d86",
+  "observed_dirty": 0,
+  "observed_head": "cc8016f2846071d65362a16685762cbff9077ba6",
   "owner": "codex-asb-runtime-attested-enrollment-luna56",
   "plan": "../plans/AR-1357-runtime-attested-enrollment-record.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Transport authenticated enrollment records into runtime without exposing authority to the CLI.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Runtime-attested enrollment record transport",
-  "updated_at": "2026-09-23T21:58:25+00:00",
+  "updated_at": "2026-09-23T21:58:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1357-runtime-attested-enrollment-record"
 }
 ---
