@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the private host/runtime provisioning seam for live acquisition.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Runtime-owned live provisioning",
-  "updated_at": "2026-09-23T19:46:46+00:00",
+  "updated_at": "2026-09-23T19:46:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1351-live-runtime-provisioning"
 }
 ---
@@ -247,3 +247,6 @@ runtime boundary; AR-1349 remains fail-closed until it is merged and verified.
   matches b710260 and is OPEN. New required checks started: Repository quality, Rust verification,
   formal assurance, fault assurance, portability; Huawei MIT and AWQ shadow already green. Prior
   89.95% coverage failure is superseded pending this new-head Repository quality result.
+
+- 2026-09-23T19:46:54+00:00: Recorded command exit 0; command argv SHA-256
+  9dcc3254b28922772210142b9b3a5ab87d092ed77b5b74eca309f6a276cc8266.
