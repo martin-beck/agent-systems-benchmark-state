@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1341-runtime-observed-namespace-repair",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "7235c5aaee4ceaf20312d198c03193d93a6b3fb4",
   "claim_expires": "2026-09-23T12:55:53+00:00",
   "depends_on": [
     "AR-1339"
   ],
   "id": "AR-1341",
-  "next_action": "Promote after AR-1339 is verified done; implement runtime-observed identity comparison and copied/stale/mismatch denial evidence before AR-1340 or AR-1329 advances.",
+  "next_action": "Run complete focused and workspace gates, independently review the exact clean diff, then publish PR only after all gates pass.",
   "observed_branch": "feature/ar-1341-runtime-observed-namespace-repair",
   "observed_dirty": 0,
   "observed_head": "7235c5aaee4ceaf20312d198c03193d93a6b3fb4",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair AR-1340 so live relay capabilities require runtime-observed child namespace agreement.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Runtime-observed namespace attestation repair",
-  "updated_at": "2026-09-23T10:55:53+00:00",
+  "updated_at": "2026-09-23T10:56:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1341-runtime-observed-namespace-repair"
 }
 ---
@@ -107,3 +107,9 @@ this task.
   cb5a93267ea209521f389748a410d7ea1aed16de9bb5e5b81ba4e4414f36cfd9.
 
 - 2026-09-23T10:55:53+00:00: Heartbeat by codex-asb-ar1341-20260923.
+
+- 2026-09-23T10:56:09+00:00: Implemented runtime-observed child namespace attestation at the sandbox
+  launch boundary. Added a runtime-owned Unix launch gate so the adapter cannot start before child
+  namespace validation; reject copied capability digests, stale/mismatched identities, unavailable
+  PIDs, and preserve teardown on validation failure. Added positive/negative tests and an in-tree
+  pinned gate binary. Signed DCO commit 7235c5aaee4ceaf20312d198c03193d93a6b3fb4.
