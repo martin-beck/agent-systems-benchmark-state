@@ -9,17 +9,17 @@
   "id": "AR-1340",
   "next_action": "Independent review of both signed checkpoints; then add/verify runtime backend descendant namespace exercise and run full workspace quality gates before PR publication.",
   "observed_branch": "feature/ar-1340-attested-live-relay-handoff",
-  "observed_dirty": 1,
-  "observed_head": "c265c085eee22b0f029f98782c15aa207e4320dc",
+  "observed_dirty": 0,
+  "observed_head": "f77aafb44b05cd04cbd642ab3d737eb4062403dc",
   "owner": "codex-asb-ar1340-20260923",
   "plan": "../plans/AR-1340.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind the live provider relay to an attested child namespace and integrate it without weakening offline or replay denial.",
-  "task_revision": 62,
+  "task_revision": 63,
   "title": "Attested live-relay namespace and child handoff",
-  "updated_at": "2026-09-23T10:25:19+00:00",
+  "updated_at": "2026-09-23T10:25:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1340-attested-live-relay-handoff"
 }
 ---
