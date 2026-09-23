@@ -7,7 +7,7 @@
     "AR-1339"
   ],
   "id": "AR-1340",
-  "next_action": "BLOCKED pending runtime-observed child namespace attestation: compare actual bwrap child /proc/self/ns/net identity to relay handoff before any live effect; prove copied/mismatched capability denial; do not merge PR #257.",
+  "next_action": "Post-merge workflows for merge commit 3406faae58f0e762f70a856f6b9c6c545fcc9a37 are running; wait all seven required workflows, inspect failures, then release AR-1340 with exact evidence.",
   "observed_branch": "feature/ar-1340-attested-live-relay-handoff",
   "observed_dirty": 0,
   "observed_head": "f77aafb44b05cd04cbd642ab3d737eb4062403dc",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind the live provider relay to an attested child namespace and integrate it without weakening offline or replay denial.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Attested live-relay namespace and child handoff",
-  "updated_at": "2026-09-23T10:38:47+00:00",
+  "updated_at": "2026-09-23T10:38:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1340-attested-live-relay-handoff"
 }
 ---
@@ -246,3 +246,9 @@ public coordination state or runtime evidence.
   a1bf7fbb7e33bcdf8424c92cc70cd1bdc3ae1d870c9a73728a06f16e3180eaf2.
 
 - 2026-09-23T10:38:47+00:00: Heartbeat by codex-asb-ar1340-20260923.
+
+- 2026-09-23T10:38:57+00:00: PR #257 merged after independent review and all 12 exact-head required
+  checks green. Merge commit 3406faae58f0e762f70a856f6b9c6c545fcc9a37 at 2026-09-23T10:38:21Z.
+  Post-merge runs started: Rust 35849949289, Hosted portability 35849949287, Fault 35849949293,
+  Formal 35849949296, Repository quality 35849949311, AArch64 35849949352, Headers 35849949302
+  (headers already green). AR remains in_progress pending all post-merge gates.
