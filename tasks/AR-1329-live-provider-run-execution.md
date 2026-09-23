@@ -12,16 +12,16 @@
   "next_action": "AR-1342 LiveLaunchFactory focused tests pass, but CLI integration remains fail-closed: no runtime-owned live relay listener/request protocol, concrete egress target allowlist, credential transport, or pinned gate acquisition is exposed to asb run/sweep. Add a coordinator-owned runtime live-launch service API (per-attempt authority issuance and relay proxy) before AR-1329 product mutation; do not bypass NetworkPolicy::Deny.",
   "observed_branch": "feature/ar-1329-live-provider-run-execution",
   "observed_dirty": 0,
-  "observed_head": "d24221731891fb39f56118be9c5ae51364824517",
+  "observed_head": "a336d6744b1a82f36a706ec606b847c92d49cfd3",
   "owner": "codex-asb-ar1329-live-cli-luna56",
   "plan": "../plans/AR-1329.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute real agents against the selected provider through asb run and sweep with credential-free resolution.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Live-provider run execution for real agents",
-  "updated_at": "2026-09-23T15:20:13+00:00",
+  "updated_at": "2026-09-23T15:20:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1329-live-provider-run-execution"
 }
 ---
