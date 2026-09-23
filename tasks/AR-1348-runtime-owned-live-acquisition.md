@@ -10,7 +10,7 @@
     "AR-1340"
   ],
   "id": "AR-1348",
-  "next_action": "Relay binding slice committed as ecc2d4c548b975d829d4f27750321f0cb64f75c2 with duplicate bind and revoke teardown coverage. Focused live_supervisor 5/5; full asb-runtime all-targets 88 passed, 1 ignored; workspace check, clippy, fmt, and workspace tests pass. Next: independently review full diff and determine whether remaining runtime-owned constructor/CLI acquisition primitives are implementable; keep AR-1329 fail-closed.",
+  "next_action": "Independent audit complete: asb-cli only accepts an injected LiveProviderAttemptFactory; no production caller constructs one. LiveLaunchFactory::acquire and SandboxBackend::attest_live_launch still require caller-supplied SandboxLaunchInput, ResourceLease, namespace handoff, token and relay. RuntimeLiveBinding similarly accepts pre-issued handoff/token/relay. Next required slice is a runtime-owned coordinator that resolves selection/policy, creates the denied SandboxLaunchInput, acquires the benchmark lease, observes namespace, issues the handoff/token, constructs the relay, and only then invokes CLI. No safe implementation is possible within current public contracts without inventing provider/credential authority; AR-1329 remains fail-closed.",
   "observed_branch": "feature/ar-1348-runtime-owned-live-acquisition",
   "observed_dirty": 0,
   "observed_head": "ecc2d4c548b975d829d4f27750321f0cb64f75c2",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the runtime-owned supervisor that acquires every live-provider authority and tears it down safely.",
-  "task_revision": 72,
+  "task_revision": 73,
   "title": "Runtime-owned live acquisition service",
-  "updated_at": "2026-09-23T16:25:22+00:00",
+  "updated_at": "2026-09-23T16:25:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1348-runtime-owned-live-acquisition"
 }
 ---
@@ -232,3 +232,9 @@ this service owns acquisition instead of accepting caller-built launch authority
   through handoffctl (usage diagnostic), not a product failure.
 
 - 2026-09-23T16:25:22+00:00: Heartbeat by codex-asb-ar1329-live-cli-luna56.
+
+- 2026-09-23T16:25:35+00:00: Audited asb-runtime launch_factory/sandbox/live_supervisor/live_relay
+  and asb-cli run/sweep call graph. run_with_live_provider_factory and
+  run_with_live_provider_attempt are test/integration seams only; rg found no production caller.
+  Existing constructors all require authority objects supplied by caller, so adding a callback
+  wrapper would repeat the rejected synthetic-authority gap. No product mutation made in this audit.
