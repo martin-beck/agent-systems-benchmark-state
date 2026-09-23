@@ -12,11 +12,11 @@
   "plan": "../plans/AR-1340.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Bind the live provider relay to an attested child namespace and integrate it without weakening offline or replay denial.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Attested live-relay namespace and child handoff",
-  "updated_at": "2026-09-23T09:11:16+00:00",
+  "updated_at": "2026-09-23T09:58:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1340-attested-live-relay-handoff"
 }
 ---
@@ -30,3 +30,6 @@ wires the guarded capability into `asb run` and `asb sweep --live-provider`.
 Offline/default and strict-replay paths must remain network-denied and must not
 receive the live capability. No API key or other credential may appear in
 public coordination state or runtime evidence.
+
+- 2026-09-23T09:58:42+00:00: AR-1339 is done at protected main 229941f; promote namespace-bound
+  handoff work before final AR-1329 CLI integration.
