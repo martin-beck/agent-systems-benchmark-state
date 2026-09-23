@@ -10,17 +10,17 @@
   "id": "AR-1326",
   "next_action": "Add the openrouter profile entry to provider_catalog and provider_catalog_digest, accept it in provider_plan and validate_provider_selection, and bind plans to the pinned OpenRouter model identity.",
   "observed_branch": "feature/ar-1326-openrouter-catalog-selection",
-  "observed_dirty": 5,
-  "observed_head": "a4934fca0b528ac90d09fb537936584f5af0f75e",
+  "observed_dirty": 0,
+  "observed_head": "0c031b985bfc39deed294c531432932caef41fea",
   "owner": "codex-asb-ar1326-20260923",
   "plan": "../plans/AR-1326.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Advertise the OpenRouter profile in the CLI provider catalog and accept it in provider-plan selection.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Select OpenRouter through the CLI provider catalog",
-  "updated_at": "2026-09-23T06:46:33+00:00",
+  "updated_at": "2026-09-23T06:46:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1326-openrouter-catalog-selection"
 }
 ---
