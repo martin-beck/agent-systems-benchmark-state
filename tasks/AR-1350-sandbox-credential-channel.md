@@ -12,7 +12,7 @@
   "id": "AR-1350",
   "next_action": "Clean-main focused test exit 101 was a neutral API dead-code diagnostic, not a runtime test failure: SandboxCredentialBinding::new/reference_sha256/target, SandboxCredentialChannel::new, and spawn_launch_with_credential were unreachable under -D dead_code because the binding had no production caller. Targeted repair makes the binding metadata constructor public (it grants no launch authority), exposes the public backend launch method, retains opaque private channel fields, and keeps credential delivery only through the runtime-created binding. Rerun focused sandbox_credential tests now; do not restore live_service or AR-1349 files.",
   "observed_branch": "feature/ar-1350-sandbox-credential-channel",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "d79cb23d583b03b7b0acb400247408b5d4386763",
   "owner": "codex-asb-ar1350-sandbox-channel-luna56",
   "plan": "../plans/AR-1350-sandbox-credential-channel.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement a sandbox-owned sealed-FD credential channel for live provider children.",
-  "task_revision": 61,
+  "task_revision": 62,
   "title": "Sandbox-owned credential channel",
-  "updated_at": "2026-09-23T17:50:12+00:00",
+  "updated_at": "2026-09-23T17:50:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1350-sandbox-credential-channel"
 }
 ---
