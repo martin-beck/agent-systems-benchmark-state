@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist the per-user OpenRouter free-model configuration and credential-free key enrollment.",
-  "task_revision": 118,
+  "task_revision": 119,
   "title": "OpenRouter free-model user configuration and key enrollment",
-  "updated_at": "2026-09-23T08:19:15+00:00",
+  "updated_at": "2026-09-23T08:20:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1328-openrouter-free-model-config"
 }
 ---
@@ -328,3 +328,6 @@ configurations fail closed.
 - 2026-09-23T08:19:15+00:00: Concurrent AR-1328 worker added signed+DCO 922dc15 covering configured
   provider-plan dispatch. Prior signed+DCO 4fc4dbb remains in exact ancestry and gates the Unix
   symlink fixture test with cfg(unix). Hosted checks restarted at 922dc15; no failures yet.
+
+- 2026-09-23T08:20:20+00:00: Recorded command exit 0; command argv SHA-256
+  aa75a47abb51c989607a90cde0d8370262f138508299c06ab69b5d163bb590db.
