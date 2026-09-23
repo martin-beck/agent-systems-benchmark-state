@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1357](tasks/AR-1357-runtime-attested-enrollment-record.md): Runtime-attested enrollment record transport | Transport authenticated enrollment records into runtime without exposing authority to the CLI. | PR #265 merged at 7862e3bb90a777e86e30d23b6af9639935671efe. Monitor all seven post-merge workflows at exact merge SHA; release AR-1357 only after every workflow terminal-success. | codex-asb-runtime-attested-enrollment-luna56 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -260,6 +254,7 @@ Never edit this file directly.
 | P0 | [AR-1337](tasks/AR-1337-protected-main-merge-tree-repair-openrouter.md): Repair protected-main merge-tree admission after OpenRouter merge | Repair the protected-main merge-tree admission defect exposed after the OpenRouter provider merge. | Await remaining PR #252 exact-head checks and independent review; then merge only via signed integration procedure at the current protected target and verify post-merge workflows. | - |
 | P0 | [AR-1341](tasks/AR-1341-runtime-observed-namespace-repair.md): Runtime-observed namespace attestation repair | Repair AR-1340 so live relay capabilities require runtime-observed child namespace agreement. | Monitor post-merge workflows for merge 2774b1d648b5c3bbda0e290e158dc352502d3768; after all seven exact-head workflows are green, release AR-1341 done with evidence and update AR-1340 security-hold transition. | - |
 | P0 | [AR-1356](tasks/AR-1356-control-runtime-attestation-primitive.md): Control/runtime enrollment attestation primitive | Issue runtime-owned live enrollment capability from authenticated control attestation. | PR #264 merged at a6f1915aa5117f0296b1b8f4b9c4692a956b3d86. Monitor all seven post-merge workflows to terminal success; then release AR-1356 done with exact evidence and advance AR-1355 consumer. | - |
+| P0 | [AR-1357](tasks/AR-1357-runtime-attested-enrollment-record.md): Runtime-attested enrollment record transport | Transport authenticated enrollment records into runtime without exposing authority to the CLI. | PR #265 merged at 7862e3bb90a777e86e30d23b6af9639935671efe. Monitor all seven post-merge workflows at exact merge SHA; release AR-1357 only after every workflow terminal-success. | - |
 | P1 | [AR-0002](tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. | - |
 | P1 | [AR-0003](tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. | - |
 | P1 | [AR-0004](tasks/AR-0004-ar-status-document.md): Generate the visual AR status document | Render every AR, status, and dependency as an accessible visual state document. | Await independent immutable-head review of state PR 3 at eedd311; repair findings before coordinator integration. | - |

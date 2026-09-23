@@ -7,16 +7,16 @@
 
 ## Portfolio overview
 
-**381 ARs tracked** across 7 active status categories.
+**381 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 4 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 51 |
 | **Planned** | Defined work awaiting promotion or dependencies | 64 |
 | **Future** | Deferred roadmap work | 1 |
-| **Done** | Accepted, integrated, and durably verified | 244 |
+| **Done** | Accepted, integrated, and durably verified | 245 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 16 |
 
@@ -449,7 +449,7 @@ flowchart LR
         AR_1354["AR-1354 - Blocked"]:::status_blocked
         AR_1355["AR-1355 - Blocked"]:::status_blocked
         AR_1356["AR-1356 - Done"]:::status_done
-        AR_1357["AR-1357 - In progress"]:::status_in_progress
+        AR_1357["AR-1357 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1837,12 +1837,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1357](../tasks/AR-1357-runtime-attested-enrollment-record.md): Runtime-attested enrollment record transport | codex-asb-runtime-attested-enrollment-luna56 | Transport authenticated enrollment records into runtime without exposing authority to the CLI. | PR #265 merged at 7862e3bb90a777e86e30d23b6af9639935671efe. Monitor all seven post-merge workflows at exact merge SHA; release AR-1357 only after every workflow terminal-success. |
-
 ### Open (4)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -1866,3 +1860,4 @@ flowchart LR
 | P0 | [AR-1260](../tasks/AR-1260-runtime-owned-strict-replay-integration.md): Runtime-owned strict-replay integration | Unclaimed | Integrate strict replay with runtime-owned attestation and supervised sandbox execution. | Blocked pending runtime-owned launch context injection: CLI dispatch has no safe source for SidecarHandoff, SandboxBackend, ResourceLease, or pinned supervisor/sidecar commands. Runtime API presence alone does not authorize CLI fabrication; create a narrow runtime-to-CLI entrypoint or successor AR. |
 | P0 | [AR-1261](../tasks/AR-1261-runtime-to-cli-replay-entrypoint.md): Runtime-to-CLI strict-replay handoff entrypoint | Unclaimed | Provide a runtime-owned entrypoint for strict-replay CLI supervision. | Reconcile coordinator view against declared runtime-cli worktree; then run focused/full gates and review exact signed head d91520f. |
 | P0 | [AR-1262](../tasks/AR-1262-runtime-owned-launch-authority.md): Runtime-owned strict-replay launch authority | Unclaimed | Issue runtime-owned authority for supervised strict-replay execution. | Do not merge PR #207; create runtime-to-CLI authority successor and rerun lifecycle, egress and no-fallback evidence. |
+| P0 | [AR-1265](../tasks/AR-1265-runtime-owned-replay-entrypoint.md): Runtime-owned strict-replay CLI entrypoint | Unclaimed | Provide a real runtime-owned strict-replay CLI entrypoint. | Runtime/CLI owner must add an authenticated context-bearing replay-plan dispatch entrypoint; then exercise cassette request/response and lifecycle/egress tests through it. |

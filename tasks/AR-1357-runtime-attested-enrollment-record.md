@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1357-runtime-attested-enrollment-record",
   "checkpoint_commit": "7862e3bb90a777e86e30d23b6af9639935671efe",
-  "claim_expires": "2026-09-24T00:23:30+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1356"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1357-runtime-attested-enrollment-record",
   "observed_dirty": 0,
   "observed_head": "64ea6fc6054224b09aebb47d9227f836c824e83a",
-  "owner": "codex-asb-runtime-attested-enrollment-luna56",
+  "owner": "",
   "plan": "../plans/AR-1357-runtime-attested-enrollment-record.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Transport authenticated enrollment records into runtime without exposing authority to the CLI.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Runtime-attested enrollment record transport",
-  "updated_at": "2026-09-23T22:23:30+00:00",
+  "updated_at": "2026-09-23T22:25:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1357-runtime-attested-enrollment-record"
 }
 ---
@@ -141,3 +141,11 @@ Successor for AR-1355. AR-1356 supplies the authenticated control/runtime attest
 - 2026-09-23T22:20:17+00:00: Heartbeat by codex-asb-runtime-attested-enrollment-luna56.
 
 - 2026-09-23T22:23:30+00:00: Heartbeat by codex-asb-runtime-attested-enrollment-luna56.
+
+- 2026-09-23T22:25:08+00:00: Completed and integrated. PR #265 exact head 64ea6fc merged at
+  7862e3bb90a777e86e30d23b6af9639935671efe after independent clean-tree, SSH signature and DCO
+  review; all required exact-head checks passed. All seven post-merge workflows at merge SHA are
+  terminal SUCCESS: Repository quality 35927352114; Fault assurance 35927352115; Hosted
+  portability/native 35927352126; Huawei headers 35927352127; Rust verification 35927352130; Formal
+  assurance 35927352134; Emulated aarch64 35927352153. Enrollment record transport remains
+  runtime-owned and fail-closed.
