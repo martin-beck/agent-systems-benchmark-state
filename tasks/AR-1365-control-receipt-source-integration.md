@@ -10,7 +10,7 @@
   "id": "AR-1365",
   "next_action": "Promote after AR-1362 and AR-1364 are done, then integrate authenticated chain and authority enrollment into the versioned control receipt source.",
   "observed_branch": "feature/ar-1365-control-receipt-source-integration",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "3a4007be828db04f3b57492e5c5f230199cb8d5a",
   "owner": "codex-asb-runtime-attested-enrollment-luna56",
   "plan": "../plans/AR-1365-control-receipt-source-integration.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate authenticated chain and authority enrollment into the versioned control receipt source.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Control receipt source integration",
-  "updated_at": "2026-09-23T23:55:36+00:00",
+  "updated_at": "2026-09-23T23:55:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1365-control-receipt-source-integration"
 }
 ---
