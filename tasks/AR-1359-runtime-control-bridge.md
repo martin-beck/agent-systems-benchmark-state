@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1359-runtime-control-bridge",
   "checkpoint_commit": "f5119103248ff448bea4ab0bfc4581ed43743d7d",
-  "claim_expires": "2026-09-24T00:51:36+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1357"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1359-runtime-control-bridge",
   "observed_dirty": 0,
   "observed_head": "f5119103248ff448bea4ab0bfc4581ed43743d7d",
-  "owner": "codex-asb-runtime-attested-enrollment-luna56",
+  "owner": "",
   "plan": "../plans/AR-1359-runtime-control-bridge.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Bridge authenticated control enrollment into runtime-owned opaque live authority.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Runtime/control enrollment bridge",
-  "updated_at": "2026-09-23T22:51:36+00:00",
+  "updated_at": "2026-09-23T22:52:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1359-runtime-control-bridge"
 }
 ---
@@ -111,3 +111,10 @@ fail-closed behavior and do not touch asb-tui.
 - 2026-09-23T22:50:24+00:00: Heartbeat by codex-asb-runtime-attested-enrollment-luna56.
 
 - 2026-09-23T22:51:36+00:00: Heartbeat by codex-asb-runtime-attested-enrollment-luna56.
+
+- 2026-09-23T22:52:36+00:00: Completed AR-1359: PR #266 exact head
+  f5119103248ff448bea4ab0bfc4581ed43743d7d passed all required checks, was independently reviewed,
+  merged as be9af3d6fb22818e95f51b9640b10c5eb6e043f3, and all seven post-merge workflows
+  35930090797, 35930090766, 35930090735, 35930090715, 35930090716, 35930090782, and 35930090720
+  reached terminal success. Signed+DCO implementation and authority-boundary review retained.
+  Downstream CLI dispatch remains separately tracked.
