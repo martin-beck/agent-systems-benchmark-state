@@ -13,7 +13,7 @@
   "id": "AR-1349",
   "next_action": "Added signed runtime credential-injection boundary baf2fa733f079a58e5956759bcf1609657f02375: CredentialInjection consumes opaque capability only at final SandboxLaunchInput boundary; runtime sees typed success/failure and no bytes. Focused credential_injection tests 2/2, clippy/fmt pass. Remaining production blocker is concrete LiveProviderRuntimeService acquisition of pinned gate/backend, observed namespace, launch token and relay; only then can CLI run/sweep call one opaque service entrypoint. Preserve AR-1329 fail-closed.",
   "observed_branch": "feature/ar-1349-live-provider-runtime-service",
-  "observed_dirty": 1,
+  "observed_dirty": 0,
   "observed_head": "baf2fa733f079a58e5956759bcf1609657f02375",
   "owner": "codex-asb-ar1329-live-cli-luna56",
   "plan": "../plans/AR-1349-live-provider-runtime-service.md",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 83,
+  "task_revision": 84,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T16:54:31+00:00",
+  "updated_at": "2026-09-23T16:54:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
