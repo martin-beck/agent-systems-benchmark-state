@@ -13,7 +13,7 @@
   "id": "AR-1349",
   "next_action": "Production acquisition remains blocked at the exact missing runtime owner. Protected main has no constructor that can privately resolve pinned live gate/backend, observe namespace, issue token, construct relay, and compose LiveProviderAttempt; an attempted private resolver boundary was removed after private-interfaces/dead-code gates proved no legitimate production implementation. The signed CredentialInjection contract remains the safe cross-crate seam. CLI run/sweep stays fail-closed until a real runtime resolver exists; AR-1329 remains fail-closed.",
   "observed_branch": "feature/ar-1349-live-provider-runtime-service",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "baf2fa733f079a58e5956759bcf1609657f02375",
   "owner": "codex-asb-ar1329-live-cli-luna56",
   "plan": "../plans/AR-1349-live-provider-runtime-service.md",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 91,
+  "task_revision": 92,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T16:57:03+00:00",
+  "updated_at": "2026-09-23T16:57:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
