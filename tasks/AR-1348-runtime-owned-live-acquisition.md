@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1348-runtime-owned-live-acquisition",
-  "checkpoint_commit": "a336d6744b1a82f36a706ec606b847c92d49cfd3",
+  "checkpoint_commit": "933e2d6c4bc5b86f8afdf57b59723132aaeff069",
   "claim_expires": "2026-09-23T17:59:20+00:00",
   "depends_on": [
     "AR-1327",
@@ -10,7 +10,7 @@
     "AR-1340"
   ],
   "id": "AR-1348",
-  "next_action": "Implement runtime-owned acquisition supervisor in asb-runtime: construct validated SandboxSpec/LaunchInput, acquire Benchmark ResourceLease, issue policy/namespace handoff from runtime-selected concrete target, bind one relay, attest the pinned live gate, issue one LiveProviderAttempt, and revoke all resources on failure/drop. First slice is a private constructor plus fail-closed negative tests; do not wire AR-1329 until lifecycle tests pass.",
+  "next_action": "Validation slice committed as 933e2d6. Next implement supervisor-owned lease and launch lifecycle around validated request: acquire Benchmark ResourceLease, construct only runtime-owned handoff/relay/token, revoke and release on every failure/drop. Add negative lease/gate/namespace/token/relay tests before any AR-1329 wiring; preserve NetworkPolicy::Deny.",
   "observed_branch": "feature/ar-1348-runtime-owned-live-acquisition",
   "observed_dirty": 2,
   "observed_head": "a336d6744b1a82f36a706ec606b847c92d49cfd3",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the runtime-owned supervisor that acquires every live-provider authority and tears it down safely.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Runtime-owned live acquisition service",
-  "updated_at": "2026-09-23T16:00:53+00:00",
+  "updated_at": "2026-09-23T16:01:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1348-runtime-owned-live-acquisition"
 }
 ---
@@ -72,3 +72,9 @@ this service owns acquisition instead of accepting caller-built launch authority
 
 - 2026-09-23T16:00:53+00:00: Recorded command exit 0; command argv SHA-256
   ccae0331e89b20dd2da71f57d2890e1ed9e43be79e2ecb00b764d109fee145bc.
+
+- 2026-09-23T16:01:33+00:00: Created runtime live_supervisor module with validated absolute lease
+  root, exact allowlisted concrete target, bounded generation and lowercase route identity. Added
+  positive target/identity and negative unlisted-target/bad-identity tests. Focused cargo test -p
+  asb-runtime live_supervisor passed 2/2. Signed+DCO product commit 933e2d6; AR-1329 remains
+  fail-closed.

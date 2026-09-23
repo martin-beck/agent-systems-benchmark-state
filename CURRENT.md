@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1348](tasks/AR-1348-runtime-owned-live-acquisition.md): Runtime-owned live acquisition service | Provide the runtime-owned supervisor that acquires every live-provider authority and tears it down safely. | Implement runtime-owned acquisition supervisor in asb-runtime: construct validated SandboxSpec/LaunchInput, acquire Benchmark ResourceLease, issue policy/namespace handoff from runtime-selected concrete target, bind one relay, attest the pinned live gate, issue one LiveProviderAttempt, and revoke all resources on failure/drop. First slice is a private constructor plus fail-closed negative tests; do not wire AR-1329 until lifecycle tests pass. | codex-asb-ar1329-live-cli-luna56 |
+| P1 | [AR-1348](tasks/AR-1348-runtime-owned-live-acquisition.md): Runtime-owned live acquisition service | Provide the runtime-owned supervisor that acquires every live-provider authority and tears it down safely. | Validation slice committed as 933e2d6. Next implement supervisor-owned lease and launch lifecycle around validated request: acquire Benchmark ResourceLease, construct only runtime-owned handoff/relay/token, revoke and release on every failure/drop. Add negative lease/gate/namespace/token/relay tests before any AR-1329 wiring; preserve NetworkPolicy::Deny. | codex-asb-ar1329-live-cli-luna56 |
 
 ## Open
 
