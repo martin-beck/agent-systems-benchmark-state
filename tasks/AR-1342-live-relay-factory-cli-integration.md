@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Create the runtime-owned relay factory and opaque launch context required for safe live CLI execution.",
-  "task_revision": 72,
+  "task_revision": 73,
   "title": "Runtime-owned live relay factory and CLI integration",
-  "updated_at": "2026-09-23T12:10:30+00:00",
+  "updated_at": "2026-09-23T12:10:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1342-live-relay-factory-cli-integration"
 }
 ---
@@ -220,3 +220,6 @@ until it is complete, live spawning remains fail-closed.
   non-benchmark leases, provides one-shot context with revocation, and preserves offline/replay
   fail-closed behavior. gh self-approval was rejected by GitHub because coordinator is PR author; no
   code review issue found.
+
+- 2026-09-23T12:10:49+00:00: Recorded command exit 0; command argv SHA-256
+  f822c8d72fb245ae6ef16fdb66efb8b07c01afe78b7a13b46f4ce17e9a295d09.
