@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1339-live-provider-egress-backend",
-  "checkpoint_commit": "5d8e1105855b41e81664b3445c284ce68b0de6a0",
+  "checkpoint_commit": "90d50561ee76df6711a2235c0ad4feccc55fc6e5",
   "claim_expires": "2026-09-23T10:55:16+00:00",
   "depends_on": [
     "AR-1328"
   ],
   "id": "AR-1339",
-  "next_action": "Integrate ProviderEgressRelay into the runtime-owned sandbox/CLI live launch handoff; relay now connects only authorized exact targets and bounds forwarding, with synthetic transport tests.",
+  "next_action": "Monitor PR #256 at 90d50561ee76df6711a2235c0ad4feccc55fc6e5 for all hosted checks and independent review; do not merge until every required check is green.",
   "observed_branch": "feature/ar-1339-live-provider-egress-backend",
   "observed_dirty": 0,
   "observed_head": "90d50561ee76df6711a2235c0ad4feccc55fc6e5",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the runtime-owned authenticated backend for explicit live provider egress.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Runtime-owned live-provider egress backend",
-  "updated_at": "2026-09-23T09:32:02+00:00",
+  "updated_at": "2026-09-23T09:32:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1339-live-provider-egress-backend"
 }
 ---
@@ -50,3 +50,7 @@ that missing boundary so live provider execution can be enabled safely.
 
 - 2026-09-23T09:31:53+00:00: Recorded command exit 0; command argv SHA-256
   a939c40452ec796a264d7aa64185f5e9346c0b91b754d97dab4d11d4eab8dbc0.
+
+- 2026-09-23T09:32:52+00:00: Observed signed security-hardening head
+  90d50561ee76df6711a2235c0ad4feccc55fc6e5 for PR #256. Durable state remains in_progress pending
+  hosted checks and independent review.

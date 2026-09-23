@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1329](tasks/AR-1329-live-provider-run-execution.md): Live-provider run execution for real agents | Execute real agents against the selected provider through asb run and sweep with credential-free resolution. | Consume AR-1339 runtime-owned authenticated provider relay; then integrate live run/sweep and complete egress denial/live evidence. | codex-asb-ar1329-20260923 |
-| P1 | [AR-1339](tasks/AR-1339-live-provider-egress-backend.md): Runtime-owned live-provider egress backend | Implement the runtime-owned authenticated backend for explicit live provider egress. | Integrate ProviderEgressRelay into the runtime-owned sandbox/CLI live launch handoff; relay now connects only authorized exact targets and bounds forwarding, with synthetic transport tests. | codex-asb-ar1339-20260923 |
+| P1 | [AR-1339](tasks/AR-1339-live-provider-egress-backend.md): Runtime-owned live-provider egress backend | Implement the runtime-owned authenticated backend for explicit live provider egress. | Monitor PR #256 at 90d50561ee76df6711a2235c0ad4feccc55fc6e5 for all hosted checks and independent review; do not merge until every required check is green. | codex-asb-ar1339-20260923 |
 
 ## Open
 
