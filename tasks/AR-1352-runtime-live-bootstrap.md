@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1352-runtime-live-bootstrap",
   "checkpoint_commit": "03b830bbec183477758877f8a2a9e00714d351c0",
-  "claim_expires": "2026-09-23T22:41:11+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1351"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1352-runtime-live-bootstrap",
   "observed_dirty": 0,
   "observed_head": "e385a87bed4a78f616d8fa1254257f15931af0f7",
-  "owner": "codex-asb-runtime-acquisition-successor-luna56",
+  "owner": "",
   "plan": "../plans/AR-1352-runtime-live-bootstrap.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Add the private runtime-owned bootstrap source for live acquisition.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Runtime-owned live bootstrap",
-  "updated_at": "2026-09-23T20:41:33+00:00",
+  "updated_at": "2026-09-23T20:41:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1352-runtime-live-bootstrap"
 }
 ---
@@ -243,3 +243,11 @@ integration. AR-1329 remains fail-closed.
   passed at exact merge SHA 03b830bbec183477758877f8a2a9e00714d351c0 — Repository quality, Rust
   verification, Emulated aarch64 portability, Formal assurance, Fault assurance, Hosted
   portability/native qualification, and Huawei MIT source headers.
+
+- 2026-09-23T20:41:35+00:00: Completed AR-1352. Private runtime-owned bootstrap merged in PR #263 at
+  03b830bbec183477758877f8a2a9e00714d351c0 from exact signed+DCO head
+  e385a87bed4a78f616d8fa1254257f15931af0f7. All exact-head checks and all seven post-merge
+  protected-main workflows passed. Bootstrap enforces crate-private enrolled policy/allowlist,
+  pinned sandbox/live gate tools, canonical relay root, opaque provisioner return, and
+  positive/negative tests. AR-1349 and AR-1329 remain fail-closed until their downstream integration
+  is complete.
