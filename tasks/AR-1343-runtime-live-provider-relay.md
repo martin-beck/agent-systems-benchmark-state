@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1343-runtime-live-provider-relay",
-  "checkpoint_commit": "d20e2eb508b3600fe3ff30970edb52daaecf313e",
+  "checkpoint_commit": "f22afd0378c2039f95fe044e7b9047bacb3dccb1",
   "claim_expires": "2026-09-23T17:22:52+00:00",
   "depends_on": [
     "AR-1327",
@@ -10,7 +10,7 @@
     "AR-1340"
   ],
   "id": "AR-1343",
-  "next_action": "Service projection exists but remains insufficient for production until a runtime supervisor implementation supplies backend/lease/egress/namespace/credential provisioning. Do not wire AR-1329 or publish as complete. Next implement concrete runtime-owned provisioner using existing pinned contracts, or record a narrowly scoped successor if credential/host capability cannot safely be represented.",
+  "next_action": "BLOCKED: no safe production runtime-owned provisioner exists in current contracts. AR-1343 must either add a concrete supervisor-owned implementation for pinned backend/live gate, benchmark lease, concrete egress target, enrolled credential transport, observed namespace rebind, launch attestation and relay lifecycle, or receive a narrowly scoped successor AR. Keep AR-1329 and spawn_verified_agent fail-closed; do not publish synthetic callback wrappers.",
   "observed_branch": "feature/ar-1343-runtime-live-provider-relay",
   "observed_dirty": 0,
   "observed_head": "f22afd0378c2039f95fe044e7b9047bacb3dccb1",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime live-provider relay service and per-attempt opaque factory acquisition required by asb run and sweep.",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Runtime live-provider relay service and CLI acquisition",
-  "updated_at": "2026-09-23T15:28:15+00:00",
+  "updated_at": "2026-09-23T15:28:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1343-runtime-live-provider-relay"
 }
 ---
@@ -168,3 +168,10 @@ capabilities without bypassing the denied-network sandbox.
 
 - 2026-09-23T15:28:04+00:00: Recorded command exit 0; command argv SHA-256
   5d13fb85560ae1a4c76b1821443d621ebd0d87607e79dbaa60399582941c14ee.
+
+- 2026-09-23T15:28:30+00:00: Full diff review found d20e2eb was only an injected callback wrapper
+  and would falsely claim runtime ownership; reverted safely in signed+DCO f22afd0. Baseline focused
+  service test passed before revert; clippy passed. Initial multi-filter cargo command failed
+  because cargo test accepts one TESTNAME: exact error was `error: unexpected argument ... found`
+  and usage `cargo test [OPTIONS] [TESTNAME] [-- [ARGS...]]`; repaired by running the single focused
+  test, which passed. No PR/publication.
