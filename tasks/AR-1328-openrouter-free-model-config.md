@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist the per-user OpenRouter free-model configuration and credential-free key enrollment.",
-  "task_revision": 129,
+  "task_revision": 130,
   "title": "OpenRouter free-model user configuration and key enrollment",
-  "updated_at": "2026-09-23T08:23:53+00:00",
+  "updated_at": "2026-09-23T08:24:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1328-openrouter-free-model-config"
 }
 ---
@@ -351,3 +351,6 @@ configurations fail closed.
 - 2026-09-23T08:23:53+00:00: Concurrent signed+DCO commits 9bce673 and 34758d2 removed obsolete
   config wrappers and refreshed workflow provenance. Remote branch head is 34758d2; hosted checks
   restarted. Preserve the 4fc4dbb Unix portability fix in ancestry.
+
+- 2026-09-23T08:24:03+00:00: Recorded command exit 0; command argv SHA-256
+  3bfcedefb4eca5ac439b536c7dfadbbde81033206a0dff3b344855bf382f43cd.
