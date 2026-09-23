@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1364-authenticated-chain-enrollment",
   "checkpoint_commit": "47914d8fd49ca5b5132c0734d3739df4502b7853",
-  "claim_expires": "2026-09-24T01:52:02+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1362"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1364-authenticated-chain-enrollment",
   "observed_dirty": 0,
   "observed_head": "47914d8fd49ca5b5132c0734d3739df4502b7853",
-  "owner": "codex-asb-runtime-attested-enrollment-luna56",
+  "owner": "",
   "plan": "../plans/AR-1364-authenticated-chain-enrollment.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Materialize authenticated certificate-chain authority for control-owned runtime receipt issuance.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Authenticated chain enrollment",
-  "updated_at": "2026-09-23T23:52:02+00:00",
+  "updated_at": "2026-09-23T23:53:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1364-authenticated-chain-enrollment"
 }
 ---
@@ -90,3 +90,12 @@ asb-tui or synthesize certificate authority from CLI/config input.
 - 2026-09-23T23:50:29+00:00: Heartbeat by codex-asb-runtime-attested-enrollment-luna56.
 
 - 2026-09-23T23:52:02+00:00: Heartbeat by codex-asb-runtime-attested-enrollment-luna56.
+
+- 2026-09-23T23:53:44+00:00: Completed AR-1364: signed+DCO commit
+  47914d8fd49ca5b5132c0734d3739df4502b7853 added AuthenticatedChainEnrollmentV1 with bounded public
+  identity chains, pairing/generation binding, strict unknown-field rejection, and positive/negative
+  tests. PR #268 passed all 12 exact-head checks and merged as
+  3a4007be828db04f3b57492e5c5f230199cb8d5a. All seven post-merge workflows passed: 35935060568
+  headers, 35935060564 hosted portability, 35935060604 repository quality, 35935060566 emulated
+  AArch64, 35935060558 formal after a successful rerun of transient ExecutableFileBusy, 35935060544
+  Rust, and 35935060587 fault assurance. Lease cleared.
