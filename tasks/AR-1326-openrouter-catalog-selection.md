@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1326-openrouter-catalog-selection",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-23T08:53:36+00:00",
+  "claim_expires": "2026-09-23T08:54:40+00:00",
   "depends_on": [
     "AR-0313",
     "AR-1325"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Advertise the OpenRouter profile in the CLI provider catalog and accept it in provider-plan selection.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Select OpenRouter through the CLI provider catalog",
-  "updated_at": "2026-09-23T06:53:36+00:00",
+  "updated_at": "2026-09-23T06:54:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1326-openrouter-catalog-selection"
 }
 ---
@@ -91,3 +91,5 @@ the fail-closed content-address checks.
   passed with --test-threads=1. Hosted required checks remain in progress.
 
 - 2026-09-23T06:53:36+00:00: Heartbeat by codex-asb-ar1326-20260923.
+
+- 2026-09-23T06:54:40+00:00: Heartbeat by codex-asb-ar1326-20260923.
