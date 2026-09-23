@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the runtime-owned authenticated backend for explicit live provider egress.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Runtime-owned live-provider egress backend",
-  "updated_at": "2026-09-23T09:39:48+00:00",
+  "updated_at": "2026-09-23T09:46:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1339-live-provider-egress-backend"
 }
 ---
@@ -61,3 +61,6 @@ that missing boundary so live provider execution can be enabled safely.
 - 2026-09-23T09:39:48+00:00: Recorded signed documentation-link fix at PR #256 head
   0c291a12a98d0b4bcd856f484eb1068361be9107; local rustdoc with -D warnings passes. Keep in_progress
   pending hosted checks and independent review.
+
+- 2026-09-23T09:46:04+00:00: Recorded command exit 0; command argv SHA-256
+  d5b88e5b7a95f43f713e6c15cfc2e27d63488d340651515c39423b786b6b0476.
