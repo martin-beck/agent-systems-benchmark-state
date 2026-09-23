@@ -12,9 +12,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 4 |
+| **Open** | Dependency-ready and available to claim | 5 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 49 |
-| **Planned** | Defined work awaiting promotion or dependencies | 65 |
+| **Planned** | Defined work awaiting promotion or dependencies | 64 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 239 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -440,7 +440,7 @@ flowchart LR
         AR_1345["AR-1345 - Done"]:::status_done
         AR_1346["AR-1346 - Superseded"]:::status_superseded
         AR_1347["AR-1347 - In progress"]:::status_in_progress
-        AR_1348["AR-1348 - Planned"]:::status_planned
+        AR_1348["AR-1348 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1805,7 +1805,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1347](../tasks/AR-1347-neutral-live-supervisor-composition.md): Neutral live-supervisor composition contract | codex-asb-ar1329-live-cli-luna56 | Add the dependency-safe opaque supervisor contract needed for live-provider acquisition. | BLOCKED pending successor runtime-acquisition AR: neutral credential injection is complete, but no production supervisor owns pinned SandboxBackend/live gate discovery, benchmark ResourceLease acquisition, concrete provider target DNS/allowlist, namespace handoff/rebind, launch token, or per-attempt relay. Existing LiveLaunchFactory::acquire requires caller-built authority inputs and cannot be wired safely. Keep AR-1329 fail-closed. |
 
-### Open (4)
+### Open (5)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1813,6 +1813,7 @@ flowchart LR
 | P0 | [AR-1314](../tasks/AR-1314-optional-bundle-signing-development-release.md): Optional runtime-bundle signing for development and tagged releases | Unclaimed | Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile. | Wait for PR #232 exact-head CI after schema-v3 repair; if all required checks pass, independently review and merge through the established workflow, then reconcile AR-1314. Preserve signature-required defaults. |
 | P0 | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | Unclaimed | Publish the verified ASB agent catalog required by the first-run setup wizard. | Persist the authenticated catalog snapshot/generation and complete live ASB-to-asb-tui wizard evidence; keep all entries unavailable until a verified release closure exists. |
 | P1 | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md): Live-provider run execution for real agents | Unclaimed | Execute real agents against the selected provider through asb run and sweep with credential-free resolution. | BLOCKED pending coordinator-created repair AR: implement runtime-owned LiveProviderRuntimeService acquisition for production asb run/sweep. Service must resolve pinned provider policy to concrete public target(s), obtain credential through enrolled environment channel without evidence disclosure, construct attested child namespace handoff and relay listener, reserve ResourceLease, create SandboxBackend with pinned live gate, attest and issue one LiveProviderAttempt per scheduler attempt, and teardown on cancellation. Then AR-1329 can wire dispatch --provider-selection/--live-provider while preserving NetworkPolicy::Deny and direct/alternate egress denial. |
+| P1 | [AR-1348](../tasks/AR-1348-runtime-owned-live-acquisition.md): Runtime-owned live acquisition service | Unclaimed | Provide the runtime-owned supervisor that acquires every live-provider authority and tears it down safely. | Promote after the AR-1347 neutral credential contract is integrated or explicitly carried into this branch; then create the declared isolated worktree and implement the runtime-owned supervisor acquisition lifecycle. Keep AR-1329 fail-closed until exact-head and post-merge evidence proves the complete lifecycle. |
 
 ### Blocked (49)
 
@@ -1836,4 +1837,3 @@ flowchart LR
 | P0 | [AR-1270](../tasks/AR-1270-runtime-cassette-handle.md): Runtime-issued cassette-service handle | Unclaimed | Provide a runtime-issued cassette-service handle for supervised strict replay. | Expose a runtime-owned cassette operation/response handle and connect it to actual replay dispatch; add supervised lifecycle/egress/no-fallback fixtures before full gates. |
 | P0 | [AR-1271](../tasks/AR-1271-cassette-operation-contract.md): Dependency-neutral cassette operation contract | Unclaimed | Define a dependency-neutral cassette request/response operation contract. | Connect CassetteResponseSink to actual replay service and add real request/response, egress/no-fallback, cancellation/restart, timeout/crash cleanup fixtures. |
 | P0 | [AR-1272](../tasks/AR-1272-authenticated-cassette-backend.md): Authenticated immutable cassette backend | Unclaimed | Bind immutable cassette content to a runtime-authenticated replay backend handle. | Wire execute_runtime_cassette into argument-level replay command and add real response parity plus egress/no-fallback/cancel/restart/timeout/crash cleanup fixtures. |
-| P0 | [AR-1273](../tasks/AR-1273-complete-replay-context.md): Complete runtime-owned replay request context | Unclaimed | Provide complete runtime-owned context for strict-replay execution. | Integrate ReplayRequestContext into actual argument-level replay dispatch and connect runtime cassette service; add real response parity and supervised egress/no-fallback/cancel/restart/timeout/crash cleanup tests. |
