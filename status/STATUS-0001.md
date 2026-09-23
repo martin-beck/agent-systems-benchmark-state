@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**375 ARs tracked** across 7 active status categories.
+**376 ARs tracked** across 7 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 4 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 49 |
-| **Planned** | Defined work awaiting promotion or dependencies | 64 |
+| **Planned** | Defined work awaiting promotion or dependencies | 65 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 242 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -444,6 +444,7 @@ flowchart LR
         AR_1349["AR-1349 - In progress"]:::status_in_progress
         AR_1350["AR-1350 - Done"]:::status_done
         AR_1351["AR-1351 - Done"]:::status_done
+        AR_1352["AR-1352 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1427,6 +1428,7 @@ flowchart LR
     AR_1347 --> AR_1351
     AR_1350 --> AR_1349
     AR_1350 --> AR_1351
+    AR_1351 --> AR_1352
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -1815,7 +1817,8 @@ flowchart LR
 | [AR-1348](../tasks/AR-1348-runtime-owned-live-acquisition.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) | None |
 | [AR-1349](../tasks/AR-1349-live-provider-runtime-service.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1347](../tasks/AR-1347-neutral-live-supervisor-composition.md), [AR-1350](../tasks/AR-1350-sandbox-credential-channel.md) | None |
 | [AR-1350](../tasks/AR-1350-sandbox-credential-channel.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1347](../tasks/AR-1347-neutral-live-supervisor-composition.md) | [AR-1349](../tasks/AR-1349-live-provider-runtime-service.md), [AR-1351](../tasks/AR-1351-live-runtime-provisioning.md) |
-| [AR-1351](../tasks/AR-1351-live-runtime-provisioning.md) | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1347](../tasks/AR-1347-neutral-live-supervisor-composition.md), [AR-1350](../tasks/AR-1350-sandbox-credential-channel.md) | None |
+| [AR-1351](../tasks/AR-1351-live-runtime-provisioning.md) | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1347](../tasks/AR-1347-neutral-live-supervisor-composition.md), [AR-1350](../tasks/AR-1350-sandbox-credential-channel.md) | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) |
+| [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) | [AR-1351](../tasks/AR-1351-live-runtime-provisioning.md) | None |
 
 ## Complete AR inventory
 

@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 205,
+  "task_revision": 206,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T20:09:25+00:00",
+  "updated_at": "2026-09-23T20:10:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
@@ -608,3 +608,6 @@ qualified.
   concrete and tested, but its constructor is intentionally crate-private and requires
   policy/backend/allowlist/relay-root. Existing CLI has no safe bootstrap source for those authority
   values. No unsafe visibility or synthetic factory change made; AR-1329 remains fail-closed.
+
+- 2026-09-23T20:10:43+00:00: Recorded command exit 0; command argv SHA-256
+  7e8c0e291b187b6d91c1b849d68f962c7da2c6c4c03fedf4f3d3fe9915e2459e.
