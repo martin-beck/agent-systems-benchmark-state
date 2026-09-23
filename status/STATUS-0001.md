@@ -1780,7 +1780,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1344](../tasks/AR-1344-runtime-cli-acquisition-contract.md): Runtime-owned CLI live acquisition contract | codex-asb-ar1344-factory-refactor-20260923 | Add the runtime-owned API and CLI integration needed for safe live-provider attempts. | Local llvm-cov improved to 88.50&#37; (10,057 missed / 87,486) after real launch_factory live-context accessor/spawn-fencing tests. Still below mandatory 90&#37; floor; continue only targeted added runtime branches (live relay/provider egress/sandbox) and do not push red intermediate head. Push exact head only once local coverage reaches 90&#37;. |
+| P1 | [AR-1344](../tasks/AR-1344-runtime-cli-acquisition-contract.md): Runtime-owned CLI live acquisition contract | codex-asb-ar1344-factory-refactor-20260923 | Add the runtime-owned API and CLI integration needed for safe live-provider attempts. | Local llvm-cov after namespace/egress identity tests is 88.53&#37; (10,041 missed / 87,511), still below mandatory 90&#37;. Focused asb-runtime tests pass 82/82 plus 1 capability-gated ignore. Continue only meaningful added-code tests for live relay/provider egress/sandbox; do not push red head. |
 
 ### Open (5)
 

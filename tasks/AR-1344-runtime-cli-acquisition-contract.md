@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1344-runtime-cli-acquisition-contract",
-  "checkpoint_commit": "00ec71b67ce402b2b31420c6b961cb25c0718661",
+  "checkpoint_commit": "cd2d1e60b15142665ba3b72f9404df69f5c718da",
   "claim_expires": "2026-09-23T16:13:24+00:00",
   "depends_on": [
     "AR-1339",
@@ -9,7 +9,7 @@
     "AR-1342"
   ],
   "id": "AR-1344",
-  "next_action": "Local llvm-cov improved to 88.50% (10,057 missed / 87,486) after real launch_factory live-context accessor/spawn-fencing tests. Still below mandatory 90% floor; continue only targeted added runtime branches (live relay/provider egress/sandbox) and do not push red intermediate head. Push exact head only once local coverage reaches 90%.",
+  "next_action": "Local llvm-cov after namespace/egress identity tests is 88.53% (10,041 missed / 87,511), still below mandatory 90%. Focused asb-runtime tests pass 82/82 plus 1 capability-gated ignore. Continue only meaningful added-code tests for live relay/provider egress/sandbox; do not push red head.",
   "observed_branch": "feature/ar-1344-runtime-cli-acquisition-contract",
   "observed_dirty": 0,
   "observed_head": "cd2d1e60b15142665ba3b72f9404df69f5c718da",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime-owned API and CLI integration needed for safe live-provider attempts.",
-  "task_revision": 229,
+  "task_revision": 230,
   "title": "Runtime-owned CLI live acquisition contract",
-  "updated_at": "2026-09-23T14:20:27+00:00",
+  "updated_at": "2026-09-23T14:21:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1344-runtime-cli-acquisition-contract"
 }
 ---
@@ -610,3 +610,7 @@ contract and its tests are merged and verified.
 
 - 2026-09-23T14:20:27+00:00: Recorded command exit 0; command argv SHA-256
   11aa7892ee38d3a937558ce5f68e38a693ff8b89e160ec2c02b25ddf17ea330b.
+
+- 2026-09-23T14:21:07+00:00: Signed commit cd2d1e6 adds real namespace and provider-egress identity
+  accessor assertions. Full workspace llvm-cov completed with TOTAL 87511 lines, 10041 missed,
+  88.53%; floor remains red. Exact product branch is clean; no PR update pushed.
