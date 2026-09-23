@@ -9,7 +9,7 @@
   "id": "AR-1352",
   "next_action": "Implement private runtime bootstrap for enrolled egress policy/allowlist, pinned sandbox backend/live gate, and relay root; return only an opaque provisioner handle to AR-1349.",
   "observed_branch": "feature/ar-1352-runtime-live-bootstrap",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "2ea6e6422ea61bc9e58a0144ac56713182a72eca",
   "owner": "codex-asb-runtime-acquisition-successor-luna56",
   "plan": "../plans/AR-1352-runtime-live-bootstrap.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the private runtime-owned bootstrap source for live acquisition.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Runtime-owned live bootstrap",
-  "updated_at": "2026-09-23T20:15:10+00:00",
+  "updated_at": "2026-09-23T20:15:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1352-runtime-live-bootstrap"
 }
 ---
