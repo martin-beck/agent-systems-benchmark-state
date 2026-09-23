@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1329-live-provider-run-execution",
   "checkpoint_commit": "a336d6744b1a82f36a706ec606b847c92d49cfd3",
-  "claim_expires": "2026-09-23T17:21:52+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1327",
     "AR-1328",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1329-live-provider-run-execution",
   "observed_dirty": 0,
   "observed_head": "a336d6744b1a82f36a706ec606b847c92d49cfd3",
-  "owner": "codex-asb-ar1329-live-cli-luna56",
+  "owner": "",
   "plan": "../plans/AR-1329.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Execute real agents against the selected provider through asb run and sweep with credential-free resolution.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Live-provider run execution for real agents",
-  "updated_at": "2026-09-23T15:22:12+00:00",
+  "updated_at": "2026-09-23T15:22:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1329-live-provider-run-execution"
 }
 ---
@@ -171,3 +171,9 @@ the digest-pinned mode remain default and never touch the network.
   concrete ProviderEgressTarget + LiveProviderNamespaceHandoff + LiveProviderRelay. Constructing
   synthetic/test authority or bypassing NetworkPolicy::Deny would violate the contract. Precise
   repair scope recorded; no unsafe product mutation.
+
+- 2026-09-23T15:22:38+00:00: Released ownerless/open at protected checkpoint a336d674. Exact
+  blocker: no production runtime-owned atomic acquisition service for SandboxBackend, benchmark
+  ResourceLease, launch token, runtime-observed NamespaceIdentity, per-attempt LiveProviderRelay,
+  concrete egress target, and credential channel. AR-1343 must implement and verify this service;
+  AR-1329 remains fail-closed until then.
