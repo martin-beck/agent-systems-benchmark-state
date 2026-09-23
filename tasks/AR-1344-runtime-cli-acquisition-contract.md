@@ -11,7 +11,7 @@
   "id": "AR-1344",
   "next_action": "Complete live relay accept/forward lifecycle around AgentProcess::Live; do not promote until relay is actively served and cancellation/expiry teardown tests pass.",
   "observed_branch": "feature/ar-1344-runtime-cli-acquisition-contract",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "7eb4cdb72b01a4c3bc9105cab59f3d5fe54c0ab0",
   "owner": "codex-asb-ar1344-factory-refactor-20260923",
   "plan": "../plans/AR-1344-runtime-cli-acquisition-contract.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime-owned API and CLI integration needed for safe live-provider attempts.",
-  "task_revision": 145,
+  "task_revision": 146,
   "title": "Runtime-owned CLI live acquisition contract",
-  "updated_at": "2026-09-23T13:36:41+00:00",
+  "updated_at": "2026-09-23T13:36:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1344-runtime-cli-acquisition-contract"
 }
 ---
