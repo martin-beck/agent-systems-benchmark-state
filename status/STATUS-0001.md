@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**380 ARs tracked** across 7 active status categories.
+**381 ARs tracked** across 7 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 4 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 50 |
-| **Planned** | Defined work awaiting promotion or dependencies | 64 |
+| **Planned** | Defined work awaiting promotion or dependencies | 65 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 244 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -449,6 +449,7 @@ flowchart LR
         AR_1354["AR-1354 - Blocked"]:::status_blocked
         AR_1355["AR-1355 - In progress"]:::status_in_progress
         AR_1356["AR-1356 - Done"]:::status_done
+        AR_1357["AR-1357 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1437,6 +1438,7 @@ flowchart LR
     AR_1352 --> AR_1354
     AR_1352 --> AR_1355
     AR_1352 --> AR_1356
+    AR_1356 --> AR_1357
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -1830,7 +1832,8 @@ flowchart LR
 | [AR-1353](../tasks/AR-1353-runtime-enrollment-cli-dispatch.md) | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) | None |
 | [AR-1354](../tasks/AR-1354-runtime-enrollment-implementation.md) | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) | None |
 | [AR-1355](../tasks/AR-1355-runtime-attested-enrollment-record.md) | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) | None |
-| [AR-1356](../tasks/AR-1356-control-runtime-attestation-primitive.md) | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) | None |
+| [AR-1356](../tasks/AR-1356-control-runtime-attestation-primitive.md) | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) | [AR-1357](../tasks/AR-1357-runtime-attested-enrollment-record.md) |
+| [AR-1357](../tasks/AR-1357-runtime-attested-enrollment-record.md) | [AR-1356](../tasks/AR-1356-control-runtime-attestation-primitive.md) | None |
 
 ## Complete AR inventory
 

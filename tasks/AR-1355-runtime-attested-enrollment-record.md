@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Transport runtime-attested enrollment authority without exposing it to the CLI.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Runtime-attested enrollment record transport",
-  "updated_at": "2026-09-23T21:46:05+00:00",
+  "updated_at": "2026-09-23T21:46:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1355-runtime-attested-enrollment-record"
 }
 ---
@@ -60,3 +60,6 @@ constructors or synthetic authority. AR-1329 remains fail-closed until merge.
 
 - 2026-09-23T21:46:05+00:00: Recorded command exit 0; command argv SHA-256
   e9fba10ed2b84f18b1d48e465b5d8bff2f52f3ddd69f37257756860ba6c4e6b3.
+
+- 2026-09-23T21:46:19+00:00: Recorded command exit 0; command argv SHA-256
+  bcf80482250ce75c04e47b169cd832c5625619b5419312abc434b9878dff2c95.
