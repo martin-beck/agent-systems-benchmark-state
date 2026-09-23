@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Transport authenticated enrollment records into runtime without exposing authority to the CLI.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Runtime-attested enrollment record transport",
-  "updated_at": "2026-09-23T21:57:59+00:00",
+  "updated_at": "2026-09-23T21:58:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1357-runtime-attested-enrollment-record"
 }
 ---
@@ -81,3 +81,6 @@ Successor for AR-1355. AR-1356 supplies the authenticated control/runtime attest
   534f8613e1c316db8f0f46dd989e44e14a8ca74304a94791b4e4a1c59b2fbb1d.
 
 - 2026-09-23T21:57:59+00:00: Heartbeat by codex-asb-runtime-attested-enrollment-luna56.
+
+- 2026-09-23T21:58:11+00:00: Recorded command exit 0; command argv SHA-256
+  49baa986974e40cebc9ac051c1dab1b0e7c69748c3a20fe3103e64a6e70e2ce9.
