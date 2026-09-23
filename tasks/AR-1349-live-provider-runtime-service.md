@@ -12,7 +12,7 @@
     "AR-1350"
   ],
   "id": "AR-1349",
-  "next_action": "Credential adapter is now production-compiled and signed, consuming ResolvedCredential into the runtime sealed channel with byte erasure. Next implement a genuine private LiveProviderRuntimeService::acquire that constructs config/binding, SandboxBackend/gate, lease, namespace observation, token, relay, and LiveProviderAttempt; then replace injected live_factory requirement in run/sweep with that service. Do not synthesize authority or weaken offline/replay.",
+  "next_action": "Adapter and sealed-channel gates are green. The remaining required production slice is not safely implementable from current public constructors: LiveProviderRuntimeService still only forwards resolver capability, while CLI run/sweep still requires caller-injected LiveProviderAttemptFactory. Implement a private runtime acquisition coordinator (backend/gate/lease/namespace/token/relay/attempt) before changing dispatch; do not synthesize authority.",
   "observed_branch": "feature/ar-1349-live-provider-runtime-service",
   "observed_dirty": 0,
   "observed_head": "d069f3eeacae914bec5d33dfbb575cd7e4281b2c",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 183,
+  "task_revision": 184,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T19:08:29+00:00",
+  "updated_at": "2026-09-23T19:08:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
@@ -548,3 +548,9 @@ qualified.
 
 - 2026-09-23T19:08:29+00:00: Recorded command exit 0; command argv SHA-256
   f39ddc9090535b3b2a160bb90c4b1d5e119ca094c2325507a8605d9d70c7cc41.
+
+- 2026-09-23T19:08:53+00:00: Current focused live_service tests pass 3/3; workspace clippy passed;
+  full asb-runtime passed 93/1; signed adapter commit d069f3e binds ResolvedCredential into the
+  sealed channel. No production CLI wiring was added because existing constructors do not expose a
+  safe runtime-owned composition path for backend/gate/namespace/token/relay. AR-1329 remains
+  fail-closed.
