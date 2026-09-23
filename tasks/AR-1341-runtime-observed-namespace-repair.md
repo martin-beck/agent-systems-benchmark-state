@@ -7,7 +7,7 @@
     "AR-1339"
   ],
   "id": "AR-1341",
-  "next_action": "Run complete focused and workspace gates, independently review the exact clean diff, then publish PR only after all gates pass.",
+  "next_action": "Resolve child capability late-binding: observe the gated bwrap PID namespace, derive a fresh child-bound capability, deliver only its digest through the release handshake, then rerun focused/full gates.",
   "observed_branch": "feature/ar-1341-runtime-observed-namespace-repair",
   "observed_dirty": 0,
   "observed_head": "7235c5aaee4ceaf20312d198c03193d93a6b3fb4",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair AR-1340 so live relay capabilities require runtime-observed child namespace agreement.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Runtime-observed namespace attestation repair",
-  "updated_at": "2026-09-23T10:56:09+00:00",
+  "updated_at": "2026-09-23T10:56:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1341-runtime-observed-namespace-repair"
 }
 ---
@@ -113,3 +113,11 @@ this task.
   namespace validation; reject copied capability digests, stale/mismatched identities, unavailable
   PIDs, and preserve teardown on validation failure. Added positive/negative tests and an in-tree
   pinned gate binary. Signed DCO commit 7235c5aaee4ceaf20312d198c03193d93a6b3fb4.
+
+- 2026-09-23T10:56:23+00:00: Diagnosed prior exit-1/101/2 records: pre-gate implementation was
+  incomplete and focused checks failed before runtime-owned gate integration. Repaired with bounded
+  one-shot Unix launch gate, runtime PID namespace observation, capability digest recomputation, and
+  explicit gate tests; focused asb-runtime live_namespace tests now pass 7/7. Remaining security
+  gap: the current API binds the caller/current namespace into the handoff before bwrap creates the
+  child namespace, so a valid child-bound capability still needs late binding through the gate
+  before AR-1340 can release.
