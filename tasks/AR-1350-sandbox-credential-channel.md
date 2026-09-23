@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement a sandbox-owned sealed-FD credential channel for live provider children.",
-  "task_revision": 74,
+  "task_revision": 75,
   "title": "Sandbox-owned credential channel",
-  "updated_at": "2026-09-23T17:55:38+00:00",
+  "updated_at": "2026-09-23T17:55:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1350-sandbox-credential-channel"
 }
 ---
@@ -226,3 +226,6 @@ private runtime channel before AR-1349 can safely acquire attempts or wire
   full locked workspace test passed; fmt, clippy, rustdoc, and release build passed. Independent
   review confirmed no live_service files, crate-private binding constructor, SSH signature and DCO
   on 709dae1. Old stacked e7176fb remains archived and must not be published.
+
+- 2026-09-23T17:55:56+00:00: Recorded command exit 0; command argv SHA-256
+  78854566b32daf0ace5c00e797545c3423ed5c1465bf13aa64e3212aed99a1e3.
