@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime-owned API and CLI integration needed for safe live-provider attempts.",
-  "task_revision": 234,
+  "task_revision": 235,
   "title": "Runtime-owned CLI live acquisition contract",
-  "updated_at": "2026-09-23T14:23:54+00:00",
+  "updated_at": "2026-09-23T14:25:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1344-runtime-cli-acquisition-contract"
 }
 ---
@@ -632,3 +632,6 @@ contract and its tests are merged and verified.
   coverage-repair-runtime-live, covering sandbox admission/ownership transitions, relay
   timeout/error matrices, and provider egress address/authorization branches; no exclusions. Current
   aggregate remains 88.53% (87511/10041).
+
+- 2026-09-23T14:25:52+00:00: Recorded command exit 0; command argv SHA-256
+  6d7f1bc813571d3869f8fbe98da2ba152bc699dbcd555b22247f0bc3d0fb3e50.
