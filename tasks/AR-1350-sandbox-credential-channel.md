@@ -10,7 +10,7 @@
     "AR-1347"
   ],
   "id": "AR-1350",
-  "next_action": "Focused runtime test initially failed with E0369 because tests compared Result<SandboxCredentialChannel, Error> without PartialEq on the opaque file-backed channel; repaired tests to use matches!. A later bubblewrap delivery test failed because --ro-bind treated the memfd source as a directory; repaired channel and test to use bubblewrap --ro-bind-data FD DEST. Current focused sandbox_credential tests pass 3/3, formatting passes. Continue full asb-runtime/workspace gates, inspect public authority boundaries, then commit signed+DCO.",
+  "next_action": "Targeted failures are recorded and repaired: E0369 opaque-channel test comparison was replaced with matches!; bubblewrap --ro-bind memfd produced a directory and was replaced by --ro-bind-data; then a strict unused-import failure was fixed by moving Path under cfg(test). The channel is now runtime-created only from validated LiveProviderRuntimeConfig, uses a sealed NUL-separated bubblewrap --args FD stream so the selected target variable receives the credential, and does not put secret or target in Command argv. Focused sandbox_credential tests pass 3/3; runtime clippy passes. Run workspace/full gates, independently review descriptor inheritance and cleanup, then signed+DCO commit.",
   "observed_branch": "feature/ar-1350-sandbox-credential-channel",
   "observed_dirty": 6,
   "observed_head": "359f15af52aa2b0b31bb091b945e7de933960006",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement a sandbox-owned sealed-FD credential channel for live provider children.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Sandbox-owned credential channel",
-  "updated_at": "2026-09-23T17:35:29+00:00",
+  "updated_at": "2026-09-23T17:35:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1350-sandbox-credential-channel"
 }
 ---
@@ -101,3 +101,7 @@ private runtime channel before AR-1349 can safely acquire attempts or wire
 
 - 2026-09-23T17:35:29+00:00: Recorded command exit 0; command argv SHA-256
   e8beebac0638d83321c84d952814966bbba80dc16ee7dd3d3ead10f3c2b72292.
+
+- 2026-09-23T17:35:52+00:00: Repaired latest focused diagnostic rather than repeating unchanged
+  command; changed delivery from mounted file metadata to actual selected child environment
+  injection via sealed bubblewrap args FD.
