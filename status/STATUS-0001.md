@@ -1810,7 +1810,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1349](../tasks/AR-1349-live-provider-runtime-service.md): Production live-provider runtime service | codex-asb-ar1329-live-cli-luna56 | Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep. | Promote after AR-1327, AR-1328, AR-1339, AR-1340 and AR-1347 are verified. AR-1348 is superseded as partial lifecycle evidence by this coordinator repair. Implement the production LiveProviderRuntimeService atomic acquisition boundary and wire asb run/sweep; keep AR-1329 fail-closed until exact-head CI and exact lifecycle evidence pass. |
+| P1 | [AR-1349](../tasks/AR-1349-live-provider-runtime-service.md): Production live-provider runtime service | codex-asb-ar1329-live-cli-luna56 | Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep. | First production-owned slice committed as 34013a6: LiveProviderRuntimeConfig validates denied network policy, exact allowlisted target, bounded generation, route and credential-reference digests, and acquires one benchmark ResourceLease. Focused live_service tests pass 2/2. Next: compose this config with runtime-owned gate/backend, observed namespace, token, relay and final opaque CLI attempt; preserve AR-1329 fail-closed. |
 
 ### Open (4)
 

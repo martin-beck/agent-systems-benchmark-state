@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1349-live-provider-runtime-service",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "34013a6aac8d874159b7a6e24778f8d93112ef1d",
   "claim_expires": "2026-09-23T18:30:27+00:00",
   "depends_on": [
     "AR-1327",
@@ -11,7 +11,7 @@
     "AR-1347"
   ],
   "id": "AR-1349",
-  "next_action": "Promote after AR-1327, AR-1328, AR-1339, AR-1340 and AR-1347 are verified. AR-1348 is superseded as partial lifecycle evidence by this coordinator repair. Implement the production LiveProviderRuntimeService atomic acquisition boundary and wire asb run/sweep; keep AR-1329 fail-closed until exact-head CI and exact lifecycle evidence pass.",
+  "next_action": "First production-owned slice committed as 34013a6: LiveProviderRuntimeConfig validates denied network policy, exact allowlisted target, bounded generation, route and credential-reference digests, and acquires one benchmark ResourceLease. Focused live_service tests pass 2/2. Next: compose this config with runtime-owned gate/backend, observed namespace, token, relay and final opaque CLI attempt; preserve AR-1329 fail-closed.",
   "observed_branch": "feature/ar-1349-live-provider-runtime-service",
   "observed_dirty": 0,
   "observed_head": "34013a6aac8d874159b7a6e24778f8d93112ef1d",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T16:36:41+00:00",
+  "updated_at": "2026-09-23T16:36:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
@@ -85,3 +85,8 @@ qualified.
 
 - 2026-09-23T16:36:30+00:00: Recorded command exit 0; command argv SHA-256
   86f27a42fa21d59fa2778b589c752259a7fd0c1ad5ad46678846533bdb78d50f.
+
+- 2026-09-23T16:36:52+00:00: Focused command initially failed missing-docs (11 public
+  variant/accessor diagnostics); documentation was added. Next focused run failed because
+  deterministic temp root reused a process-id-only path and returned LeaseError::Conflict(0);
+  fixture now uses an atomic sequence and rerun passed 2/2. Product commit is SSH-signed with DCO.
