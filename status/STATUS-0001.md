@@ -1838,7 +1838,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1356](../tasks/AR-1356-control-runtime-attestation-primitive.md): Control/runtime enrollment attestation primitive | codex-asb-runtime-acquisition-successor-luna56 | Issue runtime-owned live enrollment capability from authenticated control attestation. | PR #264 exact head 9e587593 adds formal lock repair ce7401a and coverage tests; hosted checks rerunning. Wait for every exact-head required check, repair any failures, then merge and verify all post-merge workflows before release. |
+| P0 | [AR-1356](../tasks/AR-1356-control-runtime-attestation-primitive.md): Control/runtime enrollment attestation primitive | codex-asb-runtime-acquisition-successor-luna56 | Issue runtime-owned live enrollment capability from authenticated control attestation. | All PR #264 exact-head required checks are terminal success. Protected merge now; then verify every post-merge workflow at merge SHA before releasing AR-1356. |
 
 ### Open (5)
 

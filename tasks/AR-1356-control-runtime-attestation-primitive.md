@@ -7,7 +7,7 @@
     "AR-1352"
   ],
   "id": "AR-1356",
-  "next_action": "PR #264 exact head 9e587593 adds formal lock repair ce7401a and coverage tests; hosted checks rerunning. Wait for every exact-head required check, repair any failures, then merge and verify all post-merge workflows before release.",
+  "next_action": "All PR #264 exact-head required checks are terminal success. Protected merge now; then verify every post-merge workflow at merge SHA before releasing AR-1356.",
   "observed_branch": "feature/ar-1356-control-runtime-attestation-primitive",
   "observed_dirty": 0,
   "observed_head": "9e587593c2fd21347ed2b7faf544e9d5a7bf150a",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Issue runtime-owned live enrollment capability from authenticated control attestation.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Control/runtime enrollment attestation primitive",
-  "updated_at": "2026-09-23T21:33:18+00:00",
+  "updated_at": "2026-09-23T21:34:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1356-control-runtime-attestation-primitive"
 }
 ---
@@ -166,3 +166,9 @@ dispatch and do not expose caller-supplied launch authority.
   tests pass (8 and 12 relevant tests). Pushed exact head; PR checks restarted.
 
 - 2026-09-23T21:33:18+00:00: Heartbeat by codex-asb-runtime-acquisition-successor-luna56.
+
+- 2026-09-23T21:34:33+00:00: Independent final review: clean worktree; diff limited to control
+  certificate metadata binding, runtime-private attestation boundary, and deterministic Cargo.lock
+  entries. Public authority constructors are absent; claims/new and attestation/from_control are
+  pub(crate). HEAD 9e587593 has valid SSH signature and matching DCO. Exact-head PR #264 checks all
+  pass, including Repository quality and emulated aarch64.
