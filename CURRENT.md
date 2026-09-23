@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1353](tasks/AR-1353-runtime-enrollment-cli-dispatch.md): Runtime enrollment and CLI dispatch | Add runtime-owned enrollment and opaque live CLI dispatch. | Implement runtime-owned enrollment transport for opaque LiveProviderRuntimeHandle, then replace injected live factory in asb run/sweep with positive/negative dispatch tests. | codex-asb-ar1329-live-cli-luna56 |
+| P1 | [AR-1353](tasks/AR-1353-runtime-enrollment-cli-dispatch.md): Runtime enrollment and CLI dispatch | Add runtime-owned enrollment and opaque live CLI dispatch. | Wire asb-cli run/sweep to acquire through LiveProviderRuntimeService::acquire_from_enrollment, using a runtime-only enrollment implementation that mints the opaque handle; remove the production requirement for caller-injected LiveProviderAttemptFactory. Add positive/negative dispatch and offline/replay tests, then run full gates. | codex-asb-ar1329-live-cli-luna56 |
 
 ## Open
 

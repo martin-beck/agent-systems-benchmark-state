@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1353-runtime-enrollment-cli-dispatch",
-  "checkpoint_commit": "21bd6deca45e6bce7461c3cdef20ce2390aca5bd",
+  "checkpoint_commit": "d83a85926f2c4c42317617f4f6b7b3c9a3195874",
   "claim_expires": "2026-09-23T22:47:51+00:00",
   "depends_on": [
     "AR-1352"
   ],
   "id": "AR-1353",
-  "next_action": "Implement runtime-owned enrollment transport for opaque LiveProviderRuntimeHandle, then replace injected live factory in asb run/sweep with positive/negative dispatch tests.",
+  "next_action": "Wire asb-cli run/sweep to acquire through LiveProviderRuntimeService::acquire_from_enrollment, using a runtime-only enrollment implementation that mints the opaque handle; remove the production requirement for caller-injected LiveProviderAttemptFactory. Add positive/negative dispatch and offline/replay tests, then run full gates.",
   "observed_branch": "feature/ar-1353-runtime-enrollment-cli-dispatch",
   "observed_dirty": 1,
   "observed_head": "68999d4043b2ed5c6bc5440f6c50126d7db2ddce",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add runtime-owned enrollment and opaque live CLI dispatch.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Runtime enrollment and CLI dispatch",
-  "updated_at": "2026-09-23T20:49:23+00:00",
+  "updated_at": "2026-09-23T20:49:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1353-runtime-enrollment-cli-dispatch"
 }
 ---
@@ -45,3 +45,8 @@ AR-1329 stays fail-closed until this seam is merged.
 
 - 2026-09-23T20:49:23+00:00: Recorded command exit 0; command argv SHA-256
   955509a954964b88b573f399cb0ea8000cf8cdb7ab13e4197cd1005c790e7596.
+
+- 2026-09-23T20:49:54+00:00: Signed commit d83a859 adds LiveProviderEnrollment and
+  acquire_from_enrollment; only opaque LiveProviderRuntimeHandle crosses the crate boundary and
+  enrollment failures are bounded. Runtime fmt/clippy passed. CLI production dispatch is still
+  pending; AR-1329 remains fail-closed.
