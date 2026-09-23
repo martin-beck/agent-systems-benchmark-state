@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire the OpenRouter endpoint and model through every compatible agent adapter projection and prove parity with hostile conformance evidence.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "OpenRouter adapter projections and parity conformance",
-  "updated_at": "2026-09-23T07:22:21+00:00",
+  "updated_at": "2026-09-23T07:22:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1327-openrouter-adapter-parity"
 }
 ---
@@ -128,3 +128,6 @@ allowance must be extended explicitly, never silently.
   pushed head is bdb3bf028f0ab96a7a00ffd186fbb20bfae073b2.
 
 - 2026-09-23T07:22:21+00:00: Heartbeat by codex-asb-ar1327-20260923.
+
+- 2026-09-23T07:22:34+00:00: Recorded command exit 0; command argv SHA-256
+  766965901a386fdad5e19e894787f2c97dd8ee7293a46d077df468dac80c504d.
