@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**369 ARs tracked** across 6 active status categories.
+**369 ARs tracked** across 7 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 6 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 5 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 49 |
 | **Planned** | Defined work awaiting promotion or dependencies | 64 |
 | **Future** | Deferred roadmap work | 1 |
@@ -436,7 +436,7 @@ flowchart LR
         AR_1341["AR-1341 - Done"]:::status_done
         AR_1342["AR-1342 - Done"]:::status_done
         AR_1343["AR-1343 - Open"]:::status_open
-        AR_1344["AR-1344 - Open"]:::status_open
+        AR_1344["AR-1344 - In progress"]:::status_in_progress
         AR_1345["AR-1345 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
@@ -1781,7 +1781,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (6)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-1344](../tasks/AR-1344-runtime-cli-acquisition-contract.md): Runtime-owned CLI live acquisition contract | coordinator | Add the runtime-owned API and CLI integration needed for safe live-provider attempts. | Exact uncovered-line classification recorded: launch_factory misses include replay backend/authority alternate branches and LiveProviderAttempt lifecycle paths; live_relay misses are error conversion/display plus handoff/forwarding deadline branches; provider_egress misses are address-policy edge branches and relay timeout/error paths; live_namespace misses are gate/runtime observation and rebind branches; sandbox misses are live attestation/spawn/ownership teardown branches. Reachable negative/accessor branches have been covered; remaining live/sandbox branches are capability-gated or require a broad dedicated repair AR. Do not exclude files or weaken 90&#37;; PR remains unmergeable. |
+
+### Open (5)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1790,7 +1796,6 @@ flowchart LR
 | P0 | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | Unclaimed | Publish the verified ASB agent catalog required by the first-run setup wizard. | Persist the authenticated catalog snapshot/generation and complete live ASB-to-asb-tui wizard evidence; keep all entries unavailable until a verified release closure exists. |
 | P1 | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md): Live-provider run execution for real agents | Unclaimed | Execute real agents against the selected provider through asb run and sweep with credential-free resolution. | AR-1342 LiveLaunchFactory focused tests pass, but CLI integration remains fail-closed: no runtime-owned live relay listener/request protocol, concrete egress target allowlist, credential transport, or pinned gate acquisition is exposed to asb run/sweep. Add a coordinator-owned runtime live-launch service API (per-attempt authority issuance and relay proxy) before AR-1329 product mutation; do not bypass NetworkPolicy::Deny. |
 | P1 | [AR-1343](../tasks/AR-1343-runtime-live-provider-relay.md): Runtime live-provider relay service and CLI acquisition | Unclaimed | Add the runtime live-provider relay service and per-attempt opaque factory acquisition required by asb run and sweep. | Successor dependency required: expose a reviewed runtime-owned CLI acquisition API that atomically supplies SandboxBackend, benchmark ResourceLease, runtime launch token, observed child NamespaceIdentity, and per-attempt LiveProviderRelay lifecycle. Keep spawn_verified_agent live-provider rejection and AR-1329 fail-closed until that contract is implemented and tested. |
-| P1 | [AR-1344](../tasks/AR-1344-runtime-cli-acquisition-contract.md): Runtime-owned CLI live acquisition contract | Unclaimed | Add the runtime-owned API and CLI integration needed for safe live-provider attempts. | Exact uncovered-line classification recorded: launch_factory misses include replay backend/authority alternate branches and LiveProviderAttempt lifecycle paths; live_relay misses are error conversion/display plus handoff/forwarding deadline branches; provider_egress misses are address-policy edge branches and relay timeout/error paths; live_namespace misses are gate/runtime observation and rebind branches; sandbox misses are live attestation/spawn/ownership teardown branches. Reachable negative/accessor branches have been covered; remaining live/sandbox branches are capability-gated or require a broad dedicated repair AR. Do not exclude files or weaken 90&#37;; PR remains unmergeable. |
 
 ### Blocked (49)
 

@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1344-runtime-cli-acquisition-contract",
   "checkpoint_commit": "cd2d1e60b15142665ba3b72f9404df69f5c718da",
-  "claim_expires": "",
+  "claim_expires": "2026-09-23T17:17:03+00:00",
   "depends_on": [
     "AR-1339",
     "AR-1340",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1344-runtime-cli-acquisition-contract",
   "observed_dirty": 0,
   "observed_head": "cd2d1e60b15142665ba3b72f9404df69f5c718da",
-  "owner": "",
+  "owner": "coordinator",
   "plan": "../plans/AR-1344-runtime-cli-acquisition-contract.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Add the runtime-owned API and CLI integration needed for safe live-provider attempts.",
-  "task_revision": 237,
+  "task_revision": 238,
   "title": "Runtime-owned CLI live acquisition contract",
-  "updated_at": "2026-09-23T14:26:56+00:00",
+  "updated_at": "2026-09-23T15:17:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1344-runtime-cli-acquisition-contract"
 }
 ---
@@ -642,3 +642,5 @@ contract and its tests are merged and verified.
 - 2026-09-23T14:26:56+00:00: AR-1344 implementation and focused tests are complete at cd2d1e6 but PR
   #260 remains blocked by hosted workspace coverage 88.53% versus mandatory 90%; successor AR-1345
   owns coverage repair. Preserve fail-closed live-provider boundary and do not merge PR #260.
+
+- 2026-09-23T15:17:03+00:00: Claimed by coordinator.
