@@ -10,7 +10,7 @@
     "AR-1350"
   ],
   "id": "AR-1351",
-  "next_action": "PR #262 is published at exact signed head d0b0cbefffdde0f80f51edb26f0a3d30f3a7b879. Obtain independent review, wait for all exact-head required checks, repair any failure, and merge only through protected policy. Then verify all post-merge workflows before releasing AR-1351; keep AR-1349/1329 fail-closed.",
+  "next_action": "Add behavioral tests for uncovered live_service/live_relay branches, rerun enforced workspace coverage and full gates, then publish a signed exact-head repair for PR #262.",
   "observed_branch": "feature/ar-1351-live-runtime-provisioning",
   "observed_dirty": 0,
   "observed_head": "d0b0cbefffdde0f80f51edb26f0a3d30f3a7b879",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the private host/runtime provisioning seam for live acquisition.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Runtime-owned live provisioning",
-  "updated_at": "2026-09-23T19:41:41+00:00",
+  "updated_at": "2026-09-23T19:41:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1351-live-runtime-provisioning"
 }
 ---
@@ -198,3 +198,7 @@ runtime boundary; AR-1349 remains fail-closed until it is merged and verified.
   667f2107a7f32392bfbd91a9cf6a6d2ce3a0505715d95ea9381e1eeb356a90b1.
 
 - 2026-09-23T19:41:41+00:00: Heartbeat by codex-asb-runtime-acquisition-successor-luna56.
+
+- 2026-09-23T19:41:49+00:00: Required PR #262 Repository quality failed at workspace coverage 89.95%
+  below enforced 90.0% floor (live_service/live_relay uncovered branches). No threshold or exclusion
+  changes are permitted. Pending local behavioral coverage repair.

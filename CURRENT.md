@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1349](tasks/AR-1349-live-provider-runtime-service.md): Production live-provider runtime service | Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep. | Successor AR-1351 is promoted to supply the missing private host/runtime provisioning seam. Preserve AR-1349 as downstream consumer: after AR-1351 merges, implement LiveProviderRuntimeService::acquire and replace injected factory requirements in asb run/sweep. Keep AR-1329 fail-closed. | codex-asb-ar1329-live-cli-luna56 |
-| P1 | [AR-1351](tasks/AR-1351-live-runtime-provisioning.md): Runtime-owned live provisioning | Add the private host/runtime provisioning seam for live acquisition. | PR #262 is published at exact signed head d0b0cbefffdde0f80f51edb26f0a3d30f3a7b879. Obtain independent review, wait for all exact-head required checks, repair any failure, and merge only through protected policy. Then verify all post-merge workflows before releasing AR-1351; keep AR-1349/1329 fail-closed. | codex-asb-runtime-acquisition-successor-luna56 |
+| P1 | [AR-1351](tasks/AR-1351-live-runtime-provisioning.md): Runtime-owned live provisioning | Add the private host/runtime provisioning seam for live acquisition. | Add behavioral tests for uncovered live_service/live_relay branches, rerun enforced workspace coverage and full gates, then publish a signed exact-head repair for PR #262. | codex-asb-runtime-acquisition-successor-luna56 |
 
 ## Open
 
