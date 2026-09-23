@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1344-runtime-cli-acquisition-contract",
-  "checkpoint_commit": "c3c245f3de3c6612ace0de0f3cdf42ac82105406",
+  "checkpoint_commit": "7b8d2966b8f4afb4a20f7be21eefdd01d47557b8",
   "claim_expires": "2026-09-23T15:36:02+00:00",
   "depends_on": [
     "AR-1339",
@@ -9,7 +9,7 @@
     "AR-1342"
   ],
   "id": "AR-1344",
-  "next_action": "Focused gates and serial CLI workspace tests pass; one parallel full-workspace run hit the known state-root exclusivity test race. Re-run full workspace with serialized test execution before PR/publish review; retain capability-gated live sweep limitation.",
+  "next_action": "Full workspace serial gate reached workflow_transcript provenance drift after CLI source change; refreshed generated provenance and its focused suite passes 3/3. Re-run full workspace serial gate, then proceed to PR review if green; preserve capability-gated live sweep limitation.",
   "observed_branch": "feature/ar-1344-runtime-cli-acquisition-contract",
   "observed_dirty": 0,
   "observed_head": "7b8d2966b8f4afb4a20f7be21eefdd01d47557b8",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime-owned API and CLI integration needed for safe live-provider attempts.",
-  "task_revision": 177,
+  "task_revision": 178,
   "title": "Runtime-owned CLI live acquisition contract",
-  "updated_at": "2026-09-23T13:48:19+00:00",
+  "updated_at": "2026-09-23T13:48:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1344-runtime-cli-acquisition-contract"
 }
 ---
@@ -462,3 +462,10 @@ contract and its tests are merged and verified.
 
 - 2026-09-23T13:48:08+00:00: Recorded command exit 0; command argv SHA-256
   21fda4d14cf09b7b522c38f46db2a0d325c87f68bbe92a37b35e6f0c370f8dac.
+
+- 2026-09-23T13:48:39+00:00: Full workspace serial failure was
+  crates/asb-cli/tests/workflow_transcript.rs
+  provenance_binds_the_exact_cli_and_public_fixture_sources: expected old CLI source digest. Updated
+  docs/examples/asb-cli-workflow-v1.provenance.json to digest 30764f... for current lib.rs. Focused
+  workflow_transcript suite now passes 3/3. Branch clean at signed
+  7b8d2966b8f4afb4a20f7be21eefdd01d47557b8.

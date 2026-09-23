@@ -1780,7 +1780,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1344](../tasks/AR-1344-runtime-cli-acquisition-contract.md): Runtime-owned CLI live acquisition contract | codex-asb-ar1344-factory-refactor-20260923 | Add the runtime-owned API and CLI integration needed for safe live-provider attempts. | Focused gates and serial CLI workspace tests pass; one parallel full-workspace run hit the known state-root exclusivity test race. Re-run full workspace with serialized test execution before PR/publish review; retain capability-gated live sweep limitation. |
+| P1 | [AR-1344](../tasks/AR-1344-runtime-cli-acquisition-contract.md): Runtime-owned CLI live acquisition contract | codex-asb-ar1344-factory-refactor-20260923 | Add the runtime-owned API and CLI integration needed for safe live-provider attempts. | Full workspace serial gate reached workflow_transcript provenance drift after CLI source change; refreshed generated provenance and its focused suite passes 3/3. Re-run full workspace serial gate, then proceed to PR review if green; preserve capability-gated live sweep limitation. |
 
 ### Open (5)
 
