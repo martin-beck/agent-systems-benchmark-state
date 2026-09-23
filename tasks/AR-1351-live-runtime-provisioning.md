@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1351-live-runtime-provisioning",
-  "checkpoint_commit": "b710260a944e21e5b591203bdef00bdc9c0d019c",
+  "checkpoint_commit": "c560cac1e3a691e250ee4d2f5afc2c1c3c3ec170",
   "claim_expires": "2026-09-23T21:54:37+00:00",
   "depends_on": [
     "AR-1339",
@@ -10,7 +10,7 @@
     "AR-1350"
   ],
   "id": "AR-1351",
-  "next_action": "Continue monitoring PR #262 exact-head required checks and obtain independent review; merge only after all required checks are green, then verify post-merge.",
+  "next_action": "Verify all seven post-merge workflows on protected main at merge commit c560cac1e3a691e250ee4d2f5afc2c1c3c3ec170; then release AR-1351 with durable evidence and advance dependent AR-1349.",
   "observed_branch": "feature/ar-1351-live-runtime-provisioning",
   "observed_dirty": 0,
   "observed_head": "b710260a944e21e5b591203bdef00bdc9c0d019c",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the private host/runtime provisioning seam for live acquisition.",
-  "task_revision": 89,
+  "task_revision": 90,
   "title": "Runtime-owned live provisioning",
-  "updated_at": "2026-09-23T19:56:20+00:00",
+  "updated_at": "2026-09-23T19:56:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1351-live-runtime-provisioning"
 }
 ---
@@ -286,3 +286,9 @@ runtime boundary; AR-1349 remains fail-closed until it is merged and verified.
 
 - 2026-09-23T19:56:20+00:00: Recorded command exit 0; command argv SHA-256
   f5a589cdf7ff0b0c4aa322d6e6d65fbb05fd91306ad84af64030c0948de4ef59.
+
+- 2026-09-23T19:56:44+00:00: Protected PR #262 merged successfully at
+  c560cac1e3a691e250ee4d2f5afc2c1c3c3ec170 from exact reviewed signed+DCO head b710260. All 12
+  exact-head required checks were green before merge: Repository quality, Rust, aarch64 emulation,
+  formal TLC/Kani/Loom, fault retained/fuzz/mutation, hosted portability, Huawei MIT, and AWQ
+  shadow. Main ref verifies c560cac1.
