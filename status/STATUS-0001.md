@@ -12,9 +12,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 3 |
+| **Open** | Dependency-ready and available to claim | 4 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 49 |
-| **Planned** | Defined work awaiting promotion or dependencies | 65 |
+| **Planned** | Defined work awaiting promotion or dependencies | 64 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 232 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -426,7 +426,7 @@ flowchart LR
         AR_1331["AR-1331 - Planned"]:::status_planned
         AR_1332["AR-1332 - Planned"]:::status_planned
         AR_1333["AR-1333 - Planned"]:::status_planned
-        AR_1334["AR-1334 - Planned"]:::status_planned
+        AR_1334["AR-1334 - Open"]:::status_open
         AR_1335["AR-1335 - Planned"]:::status_planned
         AR_1336["AR-1336 - Planned"]:::status_planned
         AR_1337["AR-1337 - Done"]:::status_done
@@ -1755,13 +1755,14 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md): Live-provider run execution for real agents | codex-asb-ar1329-20260923 | Execute real agents against the selected provider through asb run and sweep with credential-free resolution. | Integrate ProviderEgressPolicy/ProviderEgressHandoff with a runtime-owned network-capable backend; current typed contract validates exact HTTPS host and rejects credentials/query injection, while NetworkPolicy::Deny remains unchanged and live CLI remains fail-closed until backend proof exists. |
 
-### Open (3)
+### Open (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1212](../tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Unclaimed | Teach users to test configured-agent benchmark eligibility without running an agent. | Implement the offline tutorial for checking agent benchmark readiness under the current configuration. |
 | P0 | [AR-1314](../tasks/AR-1314-optional-bundle-signing-development-release.md): Optional runtime-bundle signing for development and tagged releases | Unclaimed | Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile. | Wait for PR #232 exact-head CI after schema-v3 repair; if all required checks pass, independently review and merge through the established workflow, then reconcile AR-1314. Preserve signature-required defaults. |
 | P0 | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | Unclaimed | Publish the verified ASB agent catalog required by the first-run setup wizard. | Persist the authenticated catalog snapshot/generation and complete live ASB-to-asb-tui wizard evidence; keep all entries unavailable until a verified release closure exists. |
+| P1 | [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md): OpenRouter free-model conformance and hostile qualification | Unclaimed | Qualify the pinned OpenRouter free model under conformance and hostile fail-closed testing. | Qualify the pinned free OpenRouter model under the AR-0315 conformance harness and run hostile cases such as credential bleed, endpoint mismatch, rate limits and malformed responses, all failing closed. |
 
 ### Blocked (49)
 
@@ -1803,4 +1804,3 @@ flowchart LR
 | P0 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Unclaimed | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Clean runner ready: 64 GiB disk, x86_64 QEMU 8.2.2, 8 vCPU, 32 GiB RAM, no network/mounts. Bind exact AR-1307 bundle, pinned JDK/TLC, lock, image and seed; preflight before boot. |
 | P0 | [AR-1313](../tasks/AR-1313-historical-dco-909078c-repair.md): Historical DCO merge-integrity recovery | Unclaimed | Forward-only signed DCO recovery candidate published as PR #231. | Keep PR #231 unmerged; route one-line workspace coverage deficit to AR-1312, then rerun exact-head checks and signed recovery merge. |
 | P1 | [AR-0604](../tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Unclaimed | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Obtain authorized native x86 runner and immutable CSB/Python evidence; rerun native_boundary and record A/B overhead. |
-| P1 | [AR-0704](../tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | PR #119 exact e2e3574 is green except quality 35401437247 at 89.99&#37; coverage. Preserve PR; repair via AR-1312 when promotable. Do not merge or weaken 90&#37;. |

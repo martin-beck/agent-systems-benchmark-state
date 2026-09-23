@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1334.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Qualify the pinned OpenRouter free model under conformance and hostile fail-closed testing.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "OpenRouter free-model conformance and hostile qualification",
-  "updated_at": "2026-09-22T13:39:37+00:00",
+  "updated_at": "2026-09-23T08:53:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1334-openrouter-conformance-qualification"
 }
 ---
@@ -31,3 +31,6 @@ absent or bleeding credentials, endpoint identity confusion, rate limiting,
 timeouts, streaming and tool-call divergence, and malformed responses. Every
 negative case must fail closed with typed errors and no secret or uncertain
 provider effect; real provider contact is opt-in and never required for CI.
+
+- 2026-09-23T08:53:51+00:00: Dependencies AR-1327 and AR-1328 are done; prioritize pinned OpenRouter
+  conformance and hostile fail-closed qualification.
