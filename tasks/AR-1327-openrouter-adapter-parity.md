@@ -11,17 +11,17 @@
   "id": "AR-1327",
   "next_action": "Push rebased parity head 03749b620003f6737cc33ff2dec576a91221d4ca, wait exact-head CI, independently review PR #251, then merge through handoffctl only after all required checks green; post-merge verify and release AR-1327.",
   "observed_branch": "feature/ar-1327-openrouter-adapter-parity",
-  "observed_dirty": 4,
-  "observed_head": "a4934fca0b528ac90d09fb537936584f5af0f75e",
+  "observed_dirty": 0,
+  "observed_head": "03749b620003f6737cc33ff2dec576a91221d4ca",
   "owner": "codex-asb-ar1327-20260923",
   "plan": "../plans/AR-1327.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire the OpenRouter endpoint and model through every compatible agent adapter projection and prove parity with hostile conformance evidence.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "OpenRouter adapter projections and parity conformance",
-  "updated_at": "2026-09-23T07:16:09+00:00",
+  "updated_at": "2026-09-23T07:16:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1327-openrouter-adapter-parity"
 }
 ---
