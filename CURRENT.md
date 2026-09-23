@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1329](tasks/AR-1329-live-provider-run-execution.md): Live-provider run execution for real agents | Execute real agents against the selected provider through asb run and sweep with credential-free resolution. | AR-1342 LiveLaunchFactory focused tests pass, but CLI integration remains fail-closed: no runtime-owned live relay listener/request protocol, concrete egress target allowlist, credential transport, or pinned gate acquisition is exposed to asb run/sweep. Add a coordinator-owned runtime live-launch service API (per-attempt authority issuance and relay proxy) before AR-1329 product mutation; do not bypass NetworkPolicy::Deny. | codex-asb-ar1329-live-cli-luna56 |
+| P1 | [AR-1329](tasks/AR-1329-live-provider-run-execution.md): Live-provider run execution for real agents | Execute real agents against the selected provider through asb run and sweep with credential-free resolution. | Protected main is a336d674 after merged AR-1344/1345. CLI still has no production runtime-owned acquisition service: dispatch passes no factory, and constructing live SandboxLaunchInput/backend/relay requires unavailable credential, namespace, egress, and gate authority. Continue only with a sanctioned service seam; preserve fail-closed NetworkPolicy::Deny. | codex-asb-ar1329-live-cli-luna56 |
 
 ## Open
 

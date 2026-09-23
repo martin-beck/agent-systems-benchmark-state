@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1329-live-provider-run-execution",
-  "checkpoint_commit": "d24221731891fb39f56118be9c5ae51364824517",
+  "checkpoint_commit": "a336d6744b1a82f36a706ec606b847c92d49cfd3",
   "claim_expires": "2026-09-23T17:19:14+00:00",
   "depends_on": [
     "AR-1327",
@@ -9,7 +9,7 @@
     "AR-1340"
   ],
   "id": "AR-1329",
-  "next_action": "AR-1342 LiveLaunchFactory focused tests pass, but CLI integration remains fail-closed: no runtime-owned live relay listener/request protocol, concrete egress target allowlist, credential transport, or pinned gate acquisition is exposed to asb run/sweep. Add a coordinator-owned runtime live-launch service API (per-attempt authority issuance and relay proxy) before AR-1329 product mutation; do not bypass NetworkPolicy::Deny.",
+  "next_action": "Protected main is a336d674 after merged AR-1344/1345. CLI still has no production runtime-owned acquisition service: dispatch passes no factory, and constructing live SandboxLaunchInput/backend/relay requires unavailable credential, namespace, egress, and gate authority. Continue only with a sanctioned service seam; preserve fail-closed NetworkPolicy::Deny.",
   "observed_branch": "feature/ar-1329-live-provider-run-execution",
   "observed_dirty": 0,
   "observed_head": "a336d6744b1a82f36a706ec606b847c92d49cfd3",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute real agents against the selected provider through asb run and sweep with credential-free resolution.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Live-provider run execution for real agents",
-  "updated_at": "2026-09-23T15:20:24+00:00",
+  "updated_at": "2026-09-23T15:21:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1329-live-provider-run-execution"
 }
 ---
@@ -157,3 +157,8 @@ the digest-pinned mode remain default and never touch the network.
 
 - 2026-09-23T15:20:13+00:00: Recorded command exit 0; command argv SHA-256
   91c481d4f1a058d3265e9102b0531d1eefe09cb45e5c1807ecda5e8c8b6b67d5.
+
+- 2026-09-23T15:21:36+00:00: Rebased isolated AR-1329 worktree from stale d242217 to protected
+  origin/main a336d674 via handoffctl run. Merged AR-1344/1345 API audit confirms injected factory
+  helpers and lifecycle are present, but real asb run/sweep dispatch still has no runtime-owned
+  acquisition implementation. No product mutation made.
