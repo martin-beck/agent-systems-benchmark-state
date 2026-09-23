@@ -9,17 +9,17 @@
   "id": "AR-1341",
   "next_action": "Review and run full applicable gates for runtime-observed child namespace repair; then publish exact-head PR only after late-bound capability and gate evidence is independently reviewed.",
   "observed_branch": "feature/ar-1341-runtime-observed-namespace-repair",
-  "observed_dirty": 3,
-  "observed_head": "25027d287c65283028d6698f7c0e6321820c13d1",
+  "observed_dirty": 0,
+  "observed_head": "98924ff97af42d1f5571640a05b34d47bab9a7a1",
   "owner": "codex-asb-ar1341-20260923",
   "plan": "../plans/AR-1341.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair AR-1340 so live relay capabilities require runtime-observed child namespace agreement.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Runtime-observed namespace attestation repair",
-  "updated_at": "2026-09-23T11:02:07+00:00",
+  "updated_at": "2026-09-23T11:02:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1341-runtime-observed-namespace-repair"
 }
 ---
