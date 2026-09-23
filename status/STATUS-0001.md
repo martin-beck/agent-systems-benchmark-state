@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**386 ARs tracked** across 6 active status categories.
+**387 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 4 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 54 |
-| **Planned** | Defined work awaiting promotion or dependencies | 64 |
+| **Planned** | Defined work awaiting promotion or dependencies | 65 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 247 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -455,6 +455,7 @@ flowchart LR
         AR_1360["AR-1360 - Blocked"]:::status_blocked
         AR_1361["AR-1361 - Blocked"]:::status_blocked
         AR_1362["AR-1362 - Done"]:::status_done
+        AR_1363["AR-1363 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1449,6 +1450,7 @@ flowchart LR
     AR_1359 --> AR_1360
     AR_1359 --> AR_1361
     AR_1359 --> AR_1362
+    AR_1362 --> AR_1363
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -1848,7 +1850,8 @@ flowchart LR
 | [AR-1359](../tasks/AR-1359-runtime-control-bridge.md) | [AR-1357](../tasks/AR-1357-runtime-attested-enrollment-record.md) | [AR-1360](../tasks/AR-1360-runtime-cli-dispatch-consumer.md), [AR-1361](../tasks/AR-1361-runtime-control-receipt-source.md), [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md) |
 | [AR-1360](../tasks/AR-1360-runtime-cli-dispatch-consumer.md) | [AR-1359](../tasks/AR-1359-runtime-control-bridge.md) | None |
 | [AR-1361](../tasks/AR-1361-runtime-control-receipt-source.md) | [AR-1359](../tasks/AR-1359-runtime-control-bridge.md) | None |
-| [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md) | [AR-1359](../tasks/AR-1359-runtime-control-bridge.md) | None |
+| [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md) | [AR-1359](../tasks/AR-1359-runtime-control-bridge.md) | [AR-1363](../tasks/AR-1363-authenticated-control-receipt-source.md) |
+| [AR-1363](../tasks/AR-1363-authenticated-control-receipt-source.md) | [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md) | None |
 
 ## Complete AR inventory
 
@@ -1872,4 +1875,3 @@ flowchart LR
 | P0 | [AR-1160](../tasks/AR-1160.md): Wizard control API | Unclaimed | Wizard control API | Keep AR-1160 blocked. Create a fresh scoped AR for runtime-owned authenticated provider capture, per-tuple cassette reconciliation, and verified offline activation; preserve fail-closed gates and do not change this AR&#x27;s historical evidence. |
 | P0 | [AR-1181](../tasks/AR-1181.md): TLA admission | Unclaimed | Bound ASB TLC memory. | No independent work remains: AR-1293 owns the state-scoped runner and AR-1307/AR-1308 own qualification/capacity; preserve their blocked evidence and do not duplicate runner work. |
 | P0 | [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md): Bounded strict-replay CLI consumer contract | Unclaimed | Define the strict-replay CLI consumer contract. | Await runtime-owned launch authority, then wire replay through supervised context and add lifecycle/no-fallback tests. |
-| P0 | [AR-1260](../tasks/AR-1260-runtime-owned-strict-replay-integration.md): Runtime-owned strict-replay integration | Unclaimed | Integrate strict replay with runtime-owned attestation and supervised sandbox execution. | Blocked pending runtime-owned launch context injection: CLI dispatch has no safe source for SidecarHandoff, SandboxBackend, ResourceLease, or pinned supervisor/sidecar commands. Runtime API presence alone does not authorize CLI fabrication; create a narrow runtime-to-CLI entrypoint or successor AR. |
