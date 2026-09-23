@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1325-provider-openrouter",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-23T08:04:34+00:00",
   "depends_on": [
     "AR-0310",
     "AR-0318"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1325-provider-openrouter",
   "observed_dirty": 0,
   "observed_head": "f47e3728a9721ea268a730abef0f953bd2956613",
-  "owner": "",
+  "owner": "coordinator-openrouter-audit",
   "plan": "../plans/AR-1325.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Define one pinned credential-free OpenRouter provider profile for compatible ASB agent adapters.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Support a shared OpenRouter provider",
-  "updated_at": "2026-09-23T06:04:09+00:00",
+  "updated_at": "2026-09-23T06:04:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1325-provider-openrouter"
 }
 ---
@@ -67,3 +67,5 @@ unsupported or lossy translations fail closed.
 
 - 2026-09-23T06:04:09+00:00: Released coordinator audit claim so a dedicated worker can repair the
   signed-history blocker; preserved exact PR failure evidence in next_action.
+
+- 2026-09-23T06:04:34+00:00: Claimed by coordinator-openrouter-audit.
