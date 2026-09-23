@@ -12,17 +12,17 @@
   "id": "AR-1343",
   "next_action": "Service projection exists but remains insufficient for production until a runtime supervisor implementation supplies backend/lease/egress/namespace/credential provisioning. Do not wire AR-1329 or publish as complete. Next implement concrete runtime-owned provisioner using existing pinned contracts, or record a narrowly scoped successor if credential/host capability cannot safely be represented.",
   "observed_branch": "feature/ar-1343-runtime-live-provider-relay",
-  "observed_dirty": 1,
-  "observed_head": "a336d6744b1a82f36a706ec606b847c92d49cfd3",
+  "observed_dirty": 0,
+  "observed_head": "d20e2eb508b3600fe3ff30970edb52daaecf313e",
   "owner": "codex-asb-ar1329-live-cli-luna56",
   "plan": "../plans/AR-1343-runtime-live-provider-relay.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime live-provider relay service and per-attempt opaque factory acquisition required by asb run and sweep.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Runtime live-provider relay service and CLI acquisition",
-  "updated_at": "2026-09-23T15:26:56+00:00",
+  "updated_at": "2026-09-23T15:27:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1343-runtime-live-provider-relay"
 }
 ---
