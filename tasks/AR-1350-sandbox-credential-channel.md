@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement a sandbox-owned sealed-FD credential channel for live provider children.",
-  "task_revision": 83,
+  "task_revision": 84,
   "title": "Sandbox-owned credential channel",
-  "updated_at": "2026-09-23T18:02:14+00:00",
+  "updated_at": "2026-09-23T18:02:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1350-sandbox-credential-channel"
 }
 ---
@@ -256,3 +256,6 @@ private runtime channel before AR-1349 can safely acquire attempts or wire
   verify.yml run 35899655572 at commit 709dae14b3ddecc143af4bcb722c3c4250412225. Prior failure
   remains recorded as pre-existing elapsed<1s assertion in
   gemini::malformed_ready_marker_fails_fast_and_cleans_run_root (187 passed, 1 failed).
+
+- 2026-09-23T18:02:22+00:00: Recorded command exit 0; command argv SHA-256
+  a2eedcbc88a2931a0d8ad6d53f0dd37c061cd4235cef63d9d8611b2afe58a0c4.
