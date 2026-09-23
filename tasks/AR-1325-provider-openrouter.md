@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define one pinned credential-free OpenRouter provider profile for compatible ASB agent adapters.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Support a shared OpenRouter provider",
-  "updated_at": "2026-09-23T06:04:34+00:00",
+  "updated_at": "2026-09-23T06:04:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1325-provider-openrouter"
 }
 ---
@@ -69,3 +69,6 @@ unsupported or lossy translations fail closed.
   signed-history blocker; preserved exact PR failure evidence in next_action.
 
 - 2026-09-23T06:04:34+00:00: Claimed by coordinator-openrouter-audit.
+
+- 2026-09-23T06:04:44+00:00: Recorded command exit 128; command argv SHA-256
+  d815d2d0fd19ccf2a6217ead997857fa773d1a5a528814161ecc34c43cf12390.
