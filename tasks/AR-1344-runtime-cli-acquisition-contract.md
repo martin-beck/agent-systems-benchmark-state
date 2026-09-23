@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1344-runtime-cli-acquisition-contract",
   "checkpoint_commit": "cd2d1e60b15142665ba3b72f9404df69f5c718da",
-  "claim_expires": "2026-09-23T16:23:21+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1339",
     "AR-1340",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1344-runtime-cli-acquisition-contract",
   "observed_dirty": 0,
   "observed_head": "cd2d1e60b15142665ba3b72f9404df69f5c718da",
-  "owner": "codex-asb-ar1344-factory-refactor-20260923",
+  "owner": "",
   "plan": "../plans/AR-1344-runtime-cli-acquisition-contract.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Add the runtime-owned API and CLI integration needed for safe live-provider attempts.",
-  "task_revision": 236,
+  "task_revision": 237,
   "title": "Runtime-owned CLI live acquisition contract",
-  "updated_at": "2026-09-23T14:26:12+00:00",
+  "updated_at": "2026-09-23T14:26:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1344-runtime-cli-acquisition-contract"
 }
 ---
@@ -638,3 +638,7 @@ contract and its tests are merged and verified.
 
 - 2026-09-23T14:26:12+00:00: Recorded command exit 0; command argv SHA-256
   2390b3c51e217eab39224f5d0d74a1e543711cfbe2c1c9458d5a77ec85d419d0.
+
+- 2026-09-23T14:26:56+00:00: AR-1344 implementation and focused tests are complete at cd2d1e6 but PR
+  #260 remains blocked by hosted workspace coverage 88.53% versus mandatory 90%; successor AR-1345
+  owns coverage repair. Preserve fail-closed live-provider boundary and do not merge PR #260.
