@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist the per-user OpenRouter free-model configuration and credential-free key enrollment.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "OpenRouter free-model user configuration and key enrollment",
-  "updated_at": "2026-09-23T08:03:23+00:00",
+  "updated_at": "2026-09-23T08:04:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1328-openrouter-free-model-config"
 }
 ---
@@ -228,3 +228,6 @@ configurations fail closed.
 
 - 2026-09-23T08:03:23+00:00: Recorded command exit 1; command argv SHA-256
   b472e049a034b1e0694a8a7b5a51336302c20f4417d089abfea2589ac9b1e217.
+
+- 2026-09-23T08:04:09+00:00: Recorded command exit 0; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
