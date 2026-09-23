@@ -1785,7 +1785,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1343](../tasks/AR-1343-runtime-live-provider-relay.md): Runtime live-provider relay service and CLI acquisition | codex-asb-ar1329-live-cli-luna56 | Add the runtime live-provider relay service and per-attempt opaque factory acquisition required by asb run and sweep. | Implement runtime-owned LiveProviderRuntimeService, not caller-supplied synthetic authority: service must own pinned backend/live gate discovery, benchmark ResourceLease acquisition, concrete provider target resolution/allowlist, enrolled credential transport, runtime-observed child namespace rebind, RuntimeLaunchToken attestation, and one LiveProviderAttempt + relay lifecycle per scheduler attempt. Wire only after focused positive/negative tests; keep AR-1329 and spawn_verified_agent fail-closed. |
+| P1 | [AR-1343](../tasks/AR-1343-runtime-live-provider-relay.md): Runtime live-provider relay service and CLI acquisition | codex-asb-ar1329-live-cli-luna56 | Add the runtime live-provider relay service and per-attempt opaque factory acquisition required by asb run and sweep. | Service projection exists but remains insufficient for production until a runtime supervisor implementation supplies backend/lease/egress/namespace/credential provisioning. Do not wire AR-1329 or publish as complete. Next implement concrete runtime-owned provisioner using existing pinned contracts, or record a narrowly scoped successor if credential/host capability cannot safely be represented. |
 
 ### Open (4)
 

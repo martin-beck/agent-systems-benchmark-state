@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1343-runtime-live-provider-relay",
-  "checkpoint_commit": "a336d6744b1a82f36a706ec606b847c92d49cfd3",
+  "checkpoint_commit": "d20e2eb508b3600fe3ff30970edb52daaecf313e",
   "claim_expires": "2026-09-23T17:22:52+00:00",
   "depends_on": [
     "AR-1327",
@@ -10,7 +10,7 @@
     "AR-1340"
   ],
   "id": "AR-1343",
-  "next_action": "Implement runtime-owned LiveProviderRuntimeService, not caller-supplied synthetic authority: service must own pinned backend/live gate discovery, benchmark ResourceLease acquisition, concrete provider target resolution/allowlist, enrolled credential transport, runtime-observed child namespace rebind, RuntimeLaunchToken attestation, and one LiveProviderAttempt + relay lifecycle per scheduler attempt. Wire only after focused positive/negative tests; keep AR-1329 and spawn_verified_agent fail-closed.",
+  "next_action": "Service projection exists but remains insufficient for production until a runtime supervisor implementation supplies backend/lease/egress/namespace/credential provisioning. Do not wire AR-1329 or publish as complete. Next implement concrete runtime-owned provisioner using existing pinned contracts, or record a narrowly scoped successor if credential/host capability cannot safely be represented.",
   "observed_branch": "feature/ar-1343-runtime-live-provider-relay",
   "observed_dirty": 1,
   "observed_head": "a336d6744b1a82f36a706ec606b847c92d49cfd3",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime live-provider relay service and per-attempt opaque factory acquisition required by asb run and sweep.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Runtime live-provider relay service and CLI acquisition",
-  "updated_at": "2026-09-23T15:26:03+00:00",
+  "updated_at": "2026-09-23T15:26:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1343-runtime-live-provider-relay"
 }
 ---
@@ -151,3 +151,8 @@ capabilities without bypassing the denied-network sandbox.
 
 - 2026-09-23T15:26:03+00:00: Recorded command exit 0; command argv SHA-256
   65bd39b6e995daa8de012e38f77d7d34e17aaa7f48f7d1538e37af30d16d3784.
+
+- 2026-09-23T15:26:46+00:00: Added signed+DCO runtime LiveProviderRuntimeService projection around
+  the opaque per-attempt factory, with opaque Debug and fail-closed acquisition test. Focused test
+  and fmt pass. This is only an API projection; it does not synthesize authorities or bypass
+  NetworkPolicy::Deny. Further concrete provisioning remains required before CLI integration.
