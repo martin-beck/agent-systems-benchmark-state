@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1339-live-provider-egress-backend",
-  "checkpoint_commit": "90d50561ee76df6711a2235c0ad4feccc55fc6e5",
+  "checkpoint_commit": "0c291a12a98d0b4bcd856f484eb1068361be9107",
   "claim_expires": "2026-09-23T10:55:16+00:00",
   "depends_on": [
     "AR-1328"
   ],
   "id": "AR-1339",
-  "next_action": "Monitor PR #256 at 90d50561ee76df6711a2235c0ad4feccc55fc6e5 for all hosted checks and independent review; do not merge until every required check is green.",
+  "next_action": "Monitor PR #256 at 0c291a12a98d0b4bcd856f484eb1068361be9107 for all hosted checks and independent review; do not merge until every required check is green.",
   "observed_branch": "feature/ar-1339-live-provider-egress-backend",
   "observed_dirty": 1,
   "observed_head": "90d50561ee76df6711a2235c0ad4feccc55fc6e5",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the runtime-owned authenticated backend for explicit live provider egress.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Runtime-owned live-provider egress backend",
-  "updated_at": "2026-09-23T09:36:26+00:00",
+  "updated_at": "2026-09-23T09:39:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1339-live-provider-egress-backend"
 }
 ---
@@ -57,3 +57,7 @@ that missing boundary so live provider execution can be enabled safely.
 
 - 2026-09-23T09:36:16+00:00: Recorded command exit 0; command argv SHA-256
   4bb64dde06ee231ce6820b728d8edc001c8ce3c8d8c8902de75e218b411a6ab1.
+
+- 2026-09-23T09:39:48+00:00: Recorded signed documentation-link fix at PR #256 head
+  0c291a12a98d0b4bcd856f484eb1068361be9107; local rustdoc with -D warnings passes. Keep in_progress
+  pending hosted checks and independent review.
