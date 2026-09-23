@@ -10,7 +10,7 @@
     "AR-1340"
   ],
   "id": "AR-1343",
-  "next_action": "Wire LiveProviderRelay and per-attempt LiveLaunchFactory acquisition into asb-cli run and sweep; preserve NetworkPolicy::Deny/offline/replay and cancellation teardown; then commit and run exact-head gates.",
+  "next_action": "Blocked on missing supported CLI-to-runtime acquisition API: asb-cli spawn_verified_agent explicitly rejects live_provider and has no runtime backend/benchmark lease/namespace attestation or relay lifecycle seam. Add that API in a coordinated follow-up; keep AR-1329 fail-closed.",
   "observed_branch": "feature/ar-1343-runtime-live-provider-relay",
   "observed_dirty": 3,
   "observed_head": "d24221731891fb39f56118be9c5ae51364824517",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime live-provider relay service and per-attempt opaque factory acquisition required by asb run and sweep.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Runtime live-provider relay service and CLI acquisition",
-  "updated_at": "2026-09-23T12:42:12+00:00",
+  "updated_at": "2026-09-23T12:42:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1343-runtime-live-provider-relay"
 }
 ---
@@ -89,3 +89,8 @@ capabilities without bypassing the denied-network sandbox.
   duplicate cases. Full asb-runtime all-targets passed: 79 passed, 1 ignored. CLI currently has
   live_provider flag but no LiveLaunchFactory/LiveProviderRelay call path; AR remains in progress
   and AR-1329 fail-closed.
+
+- 2026-09-23T12:42:48+00:00: Confirmed exact integration gap by source audit: spawn_verified_agent
+  returns live provider runtime boundary is unavailable before process creation. Do not weaken this
+  guard or construct direct sockets/authority in CLI. Relay runtime implementation and tests remain
+  green: focused 7/7; full asb-runtime all-targets 79 passed, 1 ignored; clippy passed.
