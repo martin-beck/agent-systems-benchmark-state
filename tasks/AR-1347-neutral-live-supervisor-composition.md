@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the dependency-safe opaque supervisor contract needed for live-provider acquisition.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Neutral live-supervisor composition contract",
-  "updated_at": "2026-09-23T15:42:37+00:00",
+  "updated_at": "2026-09-23T15:42:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1347-neutral-live-supervisor-composition"
 }
 ---
@@ -68,3 +68,6 @@ or introduce a cyclic dependency.
   asb-runtime --all-targets -- -D warnings passes; cargo check --locked --workspace and fmt check
   pass. Product still needs positive/negative injector tests and asb-agents composition; no AR-1329
   wiring.
+
+- 2026-09-23T15:42:57+00:00: Recorded command exit 1; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
