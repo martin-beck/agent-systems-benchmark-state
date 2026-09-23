@@ -10,7 +10,7 @@
     "AR-1340"
   ],
   "id": "AR-1342",
-  "next_action": "Rust workflow 35857214480 had a one-off control state-root collision; focused control test passed in three consecutive isolated runs. Rerun workflow through handoffctl, then await all exact-head checks/review; keep PR #259 unmerged.",
+  "next_action": "Rust verification run 35857214480 was rerun through handoffctl and is in progress at the same head. Monitor its conclusion and remaining exact-head checks; keep PR #259 unmerged.",
   "observed_branch": "feature/ar-1342-live-relay-factory-cli-integration",
   "observed_dirty": 0,
   "observed_head": "a934168d9dc17ecb6d6d765b216869bc82cf840c",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Create the runtime-owned relay factory and opaque launch context required for safe live CLI execution.",
-  "task_revision": 68,
+  "task_revision": 69,
   "title": "Runtime-owned live relay factory and CLI integration",
-  "updated_at": "2026-09-23T12:03:28+00:00",
+  "updated_at": "2026-09-23T12:03:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1342-live-relay-factory-cli-integration"
 }
 ---
@@ -204,3 +204,8 @@ until it is complete, live spawning remains fail-closed.
 
 - 2026-09-23T12:03:28+00:00: Recorded command exit 0; command argv SHA-256
   3f9ed2b79ce3fd5841342b33172f16348d4a9a5cd58dbe8d945e277b309854c3.
+
+- 2026-09-23T12:03:54+00:00: Reran failed Rust verification workflow 35857214480 via handoffctl
+  after three consecutive local focused control-test passes. gh run list confirms run 35857214480
+  (Rust verification, head a934168) in_progress; no source repair warranted for the non-reproducible
+  state-root collision.

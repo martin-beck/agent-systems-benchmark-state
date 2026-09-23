@@ -1769,7 +1769,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md): Runtime-owned live relay factory and CLI integration | codex-asb-ar1342-20260923 | Create the runtime-owned relay factory and opaque launch context required for safe live CLI execution. | Rust workflow 35857214480 had a one-off control state-root collision; focused control test passed in three consecutive isolated runs. Rerun workflow through handoffctl, then await all exact-head checks/review; keep PR #259 unmerged. |
+| P1 | [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md): Runtime-owned live relay factory and CLI integration | codex-asb-ar1342-20260923 | Create the runtime-owned relay factory and opaque launch context required for safe live CLI execution. | Rust verification run 35857214480 was rerun through handoffctl and is in progress at the same head. Monitor its conclusion and remaining exact-head checks; keep PR #259 unmerged. |
 
 ### Open (4)
 
