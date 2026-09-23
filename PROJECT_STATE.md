@@ -23,23 +23,23 @@ Generated from local Git and GitHub. Do not edit.
 | #235 | `dependabot/github_actions/taiki-e/install-action-2.87.12@de0353cce59e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.6 to 2.87.12 |
 | #236 | `dependabot/cargo/toml-1.1.6spec-1.1.0@9dc09c5208ab` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump toml from 0.8.23 to 1.1.6+spec-1.1.0 |
 | #237 | `dependabot/cargo/thiserror-2.0.20@83dba9288d9c` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump thiserror from 2.0.16 to 2.0.20 |
-| #250 | `feature/ar-1326-openrouter-catalog-selection@64a3a002018a` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | feat(cli): select OpenRouter through provider catalog and plan (AR-1326) |
+| #250 | `feature/ar-1326-openrouter-catalog-selection@64a3a002018a` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | feat(cli): select OpenRouter through provider catalog and plan (AR-1326) |
 | #251 | `feature/ar-1327-openrouter-adapter-parity@5006bcf43fed` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(agents): OpenRouter adapter projections and parity conformance (AR-1327) |
-| #253 | `feature/ar-1323-auth-timeout@1fb8c0a3c15e` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | fix(auth): honor negotiated control timeout |
+| #253 | `feature/ar-1323-auth-timeout@79beb0534ed5` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | fix(auth): honor negotiated control timeout |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 35828723702 | `79beb0534ed5` | pull_request | Formal assurance | pending:- |
+| 35828723633 | `79beb0534ed5` | pull_request | Emulated aarch64 portability | pending:- |
+| 35828723622 | `79beb0534ed5` | pull_request | Huawei MIT source headers | completed:success |
+| 35828723621 | `79beb0534ed5` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 35828723619 | `79beb0534ed5` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 35828723615 | `79beb0534ed5` | pull_request | Fault assurance | pending:- |
+| 35828723612 | `79beb0534ed5` | pull_request | Rust verification | pending:- |
+| 35828723595 | `79beb0534ed5` | pull_request | Repository quality | in_progress:- |
 | 35828621090 | `1fb8c0a3c15e` | pull_request | Rust verification | in_progress:- |
 | 35828620978 | `1fb8c0a3c15e` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 35828620957 | `1fb8c0a3c15e` | pull_request | Repository quality | completed:failure |
 | 35828620953 | `1fb8c0a3c15e` | pull_request | Huawei MIT source headers | completed:success |
-| 35828620912 | `1fb8c0a3c15e` | pull_request | Formal assurance | in_progress:- |
-| 35828620895 | `1fb8c0a3c15e` | pull_request | Fault assurance | in_progress:- |
-| 35828620890 | `1fb8c0a3c15e` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 35828620873 | `1fb8c0a3c15e` | pull_request | Hosted portability and native qualification | completed:success |
-| 35828567561 | `64a3a002018a` | pull_request | Hosted portability and native qualification | completed:success |
-| 35828567531 | `64a3a002018a` | pull_request | Rust verification | in_progress:- |
-| 35828567517 | `64a3a002018a` | pull_request | Repository quality | in_progress:- |
-| 35828567516 | `64a3a002018a` | pull_request | Emulated aarch64 portability | in_progress:- |
