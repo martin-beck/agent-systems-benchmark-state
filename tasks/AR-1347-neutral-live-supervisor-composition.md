@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1347-neutral-live-supervisor-composition",
   "checkpoint_commit": "45a34f955aab039c871cae2dba89029465aaaf82",
-  "claim_expires": "2026-09-23T17:37:59+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1327",
     "AR-1328",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1347-neutral-live-supervisor-composition",
   "observed_dirty": 0,
   "observed_head": "45a34f955aab039c871cae2dba89029465aaaf82",
-  "owner": "codex-asb-ar1329-live-cli-luna56",
+  "owner": "",
   "plan": "../plans/AR-1347-neutral-live-supervisor-composition.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Add the dependency-safe opaque supervisor contract needed for live-provider acquisition.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Neutral live-supervisor composition contract",
-  "updated_at": "2026-09-23T15:53:12+00:00",
+  "updated_at": "2026-09-23T15:59:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1347-neutral-live-supervisor-composition"
 }
 ---
@@ -138,3 +138,9 @@ or introduce a cyclic dependency.
 
 - 2026-09-23T15:53:12+00:00: Recorded command exit 0; command argv SHA-256
   cffc9b396964dfe4814b0791e50ac9fa6e9650498fb846a9155b9dbd1450725d.
+
+- 2026-09-23T15:59:14+00:00: Completed neutral credential composition. Signed+DCO commits 625a250,
+  65af623, de595d9, and 45a34f9 implement opaque runtime CredentialInjection, ResolvedCredential
+  adapter, erasure/invalid-target tests. fmt, workspace check, runtime clippy, credential tests
+  19/19 plus injection 1/1, and full runtime 85 passed/1 ignored. Runtime-owned acquisition remains
+  explicitly delegated to successor AR-1348; AR-1329 stays fail-closed.
