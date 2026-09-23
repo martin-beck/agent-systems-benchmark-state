@@ -12,7 +12,7 @@
   "id": "AR-1350",
   "next_action": "Exact-head verify.yml rerun dispatched at 709dae14b3ddecc143af4bcb722c3c4250412225: workflow run 35899655572 (https://github.com/martin-beck/agent-systems-benchmark/actions/runs/35899655572). Monitor this rerun and all PR #261 required checks; merge only after every required check is green and independent review is complete. No timing gate is weakened.",
   "observed_branch": "feature/ar-1350-sandbox-credential-channel",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "709dae14b3ddecc143af4bcb722c3c4250412225",
   "owner": "codex-asb-ar1350-sandbox-channel-luna56",
   "plan": "../plans/AR-1350-sandbox-credential-channel.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement a sandbox-owned sealed-FD credential channel for live provider children.",
-  "task_revision": 91,
+  "task_revision": 92,
   "title": "Sandbox-owned credential channel",
-  "updated_at": "2026-09-23T18:06:44+00:00",
+  "updated_at": "2026-09-23T18:06:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1350-sandbox-credential-channel"
 }
 ---
