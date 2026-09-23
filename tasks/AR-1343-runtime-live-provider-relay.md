@@ -10,7 +10,7 @@
     "AR-1340"
   ],
   "id": "AR-1343",
-  "next_action": "BLOCKED: no safe production runtime-owned provisioner exists in current contracts. AR-1343 must either add a concrete supervisor-owned implementation for pinned backend/live gate, benchmark lease, concrete egress target, enrolled credential transport, observed namespace rebind, launch attestation and relay lifecycle, or receive a narrowly scoped successor AR. Keep AR-1329 and spawn_verified_agent fail-closed; do not publish synthetic callback wrappers.",
+  "next_action": "BLOCKED on concrete missing primitives: asb-runtime has no production supervisor constructor for pinned SandboxBackend/live gate and no runtime-owned target/namespace provisioning; asb-agents ResolvedCredential transport is crate-private and cannot safely cross into runtime; no CLI service can acquire lease, credential, target, namespace, token, and relay atomically. Keep AR-1329 fail-closed. Coordinator must promote a narrowly scoped cross-crate runtime provisioning repair before AR-1343 can proceed.",
   "observed_branch": "feature/ar-1343-runtime-live-provider-relay",
   "observed_dirty": 0,
   "observed_head": "f22afd0378c2039f95fe044e7b9047bacb3dccb1",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime live-provider relay service and per-attempt opaque factory acquisition required by asb run and sweep.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Runtime live-provider relay service and CLI acquisition",
-  "updated_at": "2026-09-23T15:28:37+00:00",
+  "updated_at": "2026-09-23T15:29:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1343-runtime-live-provider-relay"
 }
 ---
@@ -177,3 +177,9 @@ capabilities without bypassing the denied-network sandbox.
   test, which passed. No PR/publication.
 
 - 2026-09-23T15:28:37+00:00: Heartbeat by codex-asb-ar1329-live-cli-luna56.
+
+- 2026-09-23T15:29:10+00:00: Searched all production constructors/usages. ResourceLease::acquire,
+  SandboxBackend::new, LiveProviderNamespaceHandoff::issue, ProviderEgressTarget::new and credential
+  resolution occur only in tests or unrelated CSB paths; credential transport bytes are
+  crate-private in asb-agents. Reverted misleading callback-only d20e2eb as signed f22afd0. Focused
+  service test passed before revert; repaired cargo invocation and clippy passed. No PR/publication.

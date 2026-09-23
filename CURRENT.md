@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1343](tasks/AR-1343-runtime-live-provider-relay.md): Runtime live-provider relay service and CLI acquisition | Add the runtime live-provider relay service and per-attempt opaque factory acquisition required by asb run and sweep. | BLOCKED: no safe production runtime-owned provisioner exists in current contracts. AR-1343 must either add a concrete supervisor-owned implementation for pinned backend/live gate, benchmark lease, concrete egress target, enrolled credential transport, observed namespace rebind, launch attestation and relay lifecycle, or receive a narrowly scoped successor AR. Keep AR-1329 and spawn_verified_agent fail-closed; do not publish synthetic callback wrappers. | codex-asb-ar1329-live-cli-luna56 |
+| P1 | [AR-1343](tasks/AR-1343-runtime-live-provider-relay.md): Runtime live-provider relay service and CLI acquisition | Add the runtime live-provider relay service and per-attempt opaque factory acquisition required by asb run and sweep. | BLOCKED on concrete missing primitives: asb-runtime has no production supervisor constructor for pinned SandboxBackend/live gate and no runtime-owned target/namespace provisioning; asb-agents ResolvedCredential transport is crate-private and cannot safely cross into runtime; no CLI service can acquire lease, credential, target, namespace, token, and relay atomically. Keep AR-1329 fail-closed. Coordinator must promote a narrowly scoped cross-crate runtime provisioning repair before AR-1343 can proceed. | codex-asb-ar1329-live-cli-luna56 |
 
 ## Open
 
