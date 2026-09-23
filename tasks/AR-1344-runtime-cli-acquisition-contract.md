@@ -9,7 +9,7 @@
     "AR-1342"
   ],
   "id": "AR-1344",
-  "next_action": "Factory callback test covers separate warmup/measured identities and exhaustion; relay lifecycle tests are 7/7, CLI lib tests are 100 passed, and clippy is clean. Continue with relay-integrated successful live sweep once a capability-backed synthetic attempt fixture is available.",
+  "next_action": "Focused gates and serial CLI workspace tests pass; one parallel full-workspace run hit the known state-root exclusivity test race. Re-run full workspace with serialized test execution before PR/publish review; retain capability-gated live sweep limitation.",
   "observed_branch": "feature/ar-1344-runtime-cli-acquisition-contract",
   "observed_dirty": 0,
   "observed_head": "c3c245f3de3c6612ace0de0f3cdf42ac82105406",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime-owned API and CLI integration needed for safe live-provider attempts.",
-  "task_revision": 168,
+  "task_revision": 169,
   "title": "Runtime-owned CLI live acquisition contract",
-  "updated_at": "2026-09-23T13:46:09+00:00",
+  "updated_at": "2026-09-23T13:46:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1344-runtime-cli-acquisition-contract"
 }
 ---
@@ -439,3 +439,8 @@ contract and its tests are merged and verified.
 
 - 2026-09-23T13:46:09+00:00: Recorded command exit 0; command argv SHA-256
   e6c3c60a7af791e078ffb64c7822f84b111943ab5bb57c21b22e3362bdf94f20.
+
+- 2026-09-23T13:46:28+00:00: Full workspace cargo test first run recorded failure only in asb-cli
+  control::tests::state_root_is_exclusive_and_uncertain_restart_fails_closed: state root already
+  owned, consistent with parallel test isolation race. Re-run cargo test -p asb-cli --lib --
+  --test-threads=1 passed 100/100. fmt, clippy, runtime launch_factory, relay 7/7 remain green.

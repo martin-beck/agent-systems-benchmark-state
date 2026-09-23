@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1344](tasks/AR-1344-runtime-cli-acquisition-contract.md): Runtime-owned CLI live acquisition contract | Add the runtime-owned API and CLI integration needed for safe live-provider attempts. | Factory callback test covers separate warmup/measured identities and exhaustion; relay lifecycle tests are 7/7, CLI lib tests are 100 passed, and clippy is clean. Continue with relay-integrated successful live sweep once a capability-backed synthetic attempt fixture is available. | codex-asb-ar1344-factory-refactor-20260923 |
+| P1 | [AR-1344](tasks/AR-1344-runtime-cli-acquisition-contract.md): Runtime-owned CLI live acquisition contract | Add the runtime-owned API and CLI integration needed for safe live-provider attempts. | Focused gates and serial CLI workspace tests pass; one parallel full-workspace run hit the known state-root exclusivity test race. Re-run full workspace with serialized test execution before PR/publish review; retain capability-gated live sweep limitation. | codex-asb-ar1344-factory-refactor-20260923 |
 
 ## Open
 
