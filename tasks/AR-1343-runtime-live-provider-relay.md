@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime live-provider relay service and per-attempt opaque factory acquisition required by asb run and sweep.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Runtime live-provider relay service and CLI acquisition",
-  "updated_at": "2026-09-23T15:26:46+00:00",
+  "updated_at": "2026-09-23T15:26:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1343-runtime-live-provider-relay"
 }
 ---
@@ -156,3 +156,6 @@ capabilities without bypassing the denied-network sandbox.
   the opaque per-attempt factory, with opaque Debug and fail-closed acquisition test. Focused test
   and fmt pass. This is only an API projection; it does not synthesize authorities or bypass
   NetworkPolicy::Deny. Further concrete provisioning remains required before CLI integration.
+
+- 2026-09-23T15:26:56+00:00: Recorded command exit 1; command argv SHA-256
+  430d9ad39ba87548abd9ed6c12cec9e1dda25e13db540f44842cc1563d74d07d.
