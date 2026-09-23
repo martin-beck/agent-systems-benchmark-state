@@ -12,17 +12,17 @@
   "id": "AR-1347",
   "next_action": "Neutral CredentialInjection boundary and positive/negative runtime tests are merged locally. Next implement asb-agents supervisor composition against this trait and runtime-owned acquisition; keep AR-1329 fail-closed until concrete backend/lease/target/namespace/token/relay lifecycle is wired and verified.",
   "observed_branch": "feature/ar-1347-neutral-live-supervisor-composition",
-  "observed_dirty": 2,
-  "observed_head": "65af62331d0dffe3e282f9e074b6f59b375a19da",
+  "observed_dirty": 1,
+  "observed_head": "de595d923ec9ad41e70cfb07d848c911b9fe582d",
   "owner": "codex-asb-ar1329-live-cli-luna56",
   "plan": "../plans/AR-1347-neutral-live-supervisor-composition.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the dependency-safe opaque supervisor contract needed for live-provider acquisition.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Neutral live-supervisor composition contract",
-  "updated_at": "2026-09-23T15:47:58+00:00",
+  "updated_at": "2026-09-23T15:48:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1347-neutral-live-supervisor-composition"
 }
 ---
