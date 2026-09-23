@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1341](tasks/AR-1341-runtime-observed-namespace-repair.md): Runtime-observed namespace attestation repair | Repair AR-1340 so live relay capabilities require runtime-observed child namespace agreement. | Resolve child capability late-binding: observe the gated bwrap PID namespace, derive a fresh child-bound capability, deliver only its digest through the release handshake, then rerun focused/full gates. | codex-asb-ar1341-20260923 |
+| P0 | [AR-1341](tasks/AR-1341-runtime-observed-namespace-repair.md): Runtime-observed namespace attestation repair | Repair AR-1340 so live relay capabilities require runtime-observed child namespace agreement. | Review and run full applicable gates for runtime-observed child namespace repair; then publish exact-head PR only after late-bound capability and gate evidence is independently reviewed. | codex-asb-ar1341-20260923 |
 | P1 | [AR-1329](tasks/AR-1329-live-provider-run-execution.md): Live-provider run execution for real agents | Execute real agents against the selected provider through asb run and sweep with credential-free resolution. | Consume the AR-1340 attested namespace-bound relay handoff; then integrate live run/sweep and complete denial/live evidence without weakening NetworkPolicy::Deny. | codex-asb-ar1329-20260923 |
 
 ## Open

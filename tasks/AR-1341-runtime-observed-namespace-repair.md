@@ -7,7 +7,7 @@
     "AR-1339"
   ],
   "id": "AR-1341",
-  "next_action": "Resolve child capability late-binding: observe the gated bwrap PID namespace, derive a fresh child-bound capability, deliver only its digest through the release handshake, then rerun focused/full gates.",
+  "next_action": "Review and run full applicable gates for runtime-observed child namespace repair; then publish exact-head PR only after late-bound capability and gate evidence is independently reviewed.",
   "observed_branch": "feature/ar-1341-runtime-observed-namespace-repair",
   "observed_dirty": 3,
   "observed_head": "25027d287c65283028d6698f7c0e6321820c13d1",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair AR-1340 so live relay capabilities require runtime-observed child namespace agreement.",
-  "task_revision": 55,
+  "task_revision": 56,
   "title": "Runtime-observed namespace attestation repair",
-  "updated_at": "2026-09-23T11:00:55+00:00",
+  "updated_at": "2026-09-23T11:01:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1341-runtime-observed-namespace-repair"
 }
 ---
@@ -172,3 +172,10 @@ this task.
 
 - 2026-09-23T11:00:55+00:00: Recorded command exit 0; command argv SHA-256
   a97654adbb204beceb22b9fc14bd374f926289f61e19f20193ec933e99b7915d.
+
+- 2026-09-23T11:01:24+00:00: Diagnosed repeated exit-101 failures as compile/test API drift while
+  introducing the pre-effect gate: release() gained a capability argument, runtime rebind needed a
+  namespace accessor, and the gate protocol required exact 65-byte digest framing. Fixed by
+  late-binding capability to observed child PID, passing the digest in the bounded release
+  handshake, and updating tests. Successful rerun: cargo test --locked -p asb-runtime
+  live_namespace::tests --no-fail-fast => 8 passed, 0 failed; cargo fmt --all passed.
