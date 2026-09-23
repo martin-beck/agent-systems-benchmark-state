@@ -9,7 +9,7 @@
   "id": "AR-1341",
   "next_action": "Resolve child capability late-binding: observe the gated bwrap PID namespace, derive a fresh child-bound capability, deliver only its digest through the release handshake, then rerun focused/full gates.",
   "observed_branch": "feature/ar-1341-runtime-observed-namespace-repair",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "7235c5aaee4ceaf20312d198c03193d93a6b3fb4",
   "owner": "codex-asb-ar1341-20260923",
   "plan": "../plans/AR-1341.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair AR-1340 so live relay capabilities require runtime-observed child namespace agreement.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Runtime-observed namespace attestation repair",
-  "updated_at": "2026-09-23T10:56:39+00:00",
+  "updated_at": "2026-09-23T10:56:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1341-runtime-observed-namespace-repair"
 }
 ---
