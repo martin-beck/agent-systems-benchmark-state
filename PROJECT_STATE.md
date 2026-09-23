@@ -23,7 +23,7 @@ Generated from local Git and GitHub. Do not edit.
 | #235 | `dependabot/github_actions/taiki-e/install-action-2.87.12@de0353cce59e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.6 to 2.87.12 |
 | #236 | `dependabot/cargo/toml-1.1.6spec-1.1.0@9dc09c5208ab` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump toml from 0.8.23 to 1.1.6+spec-1.1.0 |
 | #237 | `dependabot/cargo/thiserror-2.0.20@83dba9288d9c` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump thiserror from 2.0.16 to 2.0.20 |
-| #259 | `feature/ar-1342-live-relay-factory-cli-integration@a934168d9dc1` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(runtime): add live relay launch factory |
+| #259 | `feature/ar-1342-live-relay-factory-cli-integration@a934168d9dc1` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(runtime): add live relay launch factory |
 
 ## Recent workflows
 
@@ -31,12 +31,12 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 35857214546 | `a934168d9dc1` | pull_request | Hosted portability and native qualification | completed:success |
 | 35857214517 | `a934168d9dc1` | pull_request | Huawei MIT source headers | completed:success |
-| 35857214480 | `a934168d9dc1` | pull_request | Rust verification | completed:failure |
+| 35857214480 | `a934168d9dc1` | pull_request | Rust verification | in_progress:- |
 | 35857214466 | `a934168d9dc1` | pull_request | Formal assurance | completed:success |
 | 35857214464 | `a934168d9dc1` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 35857214463 | `a934168d9dc1` | pull_request | Repository quality | in_progress:- |
+| 35857214463 | `a934168d9dc1` | pull_request | Repository quality | completed:success |
 | 35857214461 | `a934168d9dc1` | pull_request | Fault assurance | completed:success |
-| 35857214451 | `a934168d9dc1` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 35857214451 | `a934168d9dc1` | pull_request | Emulated aarch64 portability | completed:success |
 | 35856281067 | `71f67e2ca229` | pull_request | Rust verification | completed:success |
 | 35856281002 | `71f67e2ca229` | pull_request | Huawei MIT source headers | completed:success |
 | 35856280962 | `71f67e2ca229` | pull_request | Hosted portability and native qualification | completed:success |
