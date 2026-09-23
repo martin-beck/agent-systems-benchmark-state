@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 197,
+  "task_revision": 198,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T20:07:11+00:00",
+  "updated_at": "2026-09-23T20:07:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
@@ -587,3 +587,6 @@ qualified.
 
 - 2026-09-23T20:07:01+00:00: Recorded command exit 0; command argv SHA-256
   9545f115d9ce0de07006d70751f27dbb2082eafe91f3fa73b33ff848d6400182.
+
+- 2026-09-23T20:07:27+00:00: Recorded command exit 0; command argv SHA-256
+  ffd5a5daffcd392bd2ccd75e8ef0f678c5e9f0ddba29ac9400aef8c892941f9c.
