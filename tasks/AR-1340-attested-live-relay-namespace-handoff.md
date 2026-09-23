@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1340-attested-live-relay-handoff",
-  "checkpoint_commit": "c265c085eee22b0f029f98782c15aa207e4320dc",
+  "checkpoint_commit": "f77aafb4f02d49bb4cb6c4d1e75de6b05f0bf6c4",
   "claim_expires": "2026-09-23T12:27:30+00:00",
   "depends_on": [
     "AR-1339"
   ],
   "id": "AR-1340",
-  "next_action": "Independent review of both signed checkpoints; then add/verify runtime backend descendant namespace exercise and run full workspace quality gates before PR publication.",
+  "next_action": "Run rustdoc/build and independent review on exact clean f77aafb; publish PR only after all applicable gates pass, then wait exact-head CI.",
   "observed_branch": "feature/ar-1340-attested-live-relay-handoff",
   "observed_dirty": 0,
   "observed_head": "f77aafb44b05cd04cbd642ab3d737eb4062403dc",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind the live provider relay to an attested child namespace and integrate it without weakening offline or replay denial.",
-  "task_revision": 66,
+  "task_revision": 67,
   "title": "Attested live-relay namespace and child handoff",
-  "updated_at": "2026-09-23T10:27:30+00:00",
+  "updated_at": "2026-09-23T10:27:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1340-attested-live-relay-handoff"
 }
 ---
@@ -208,3 +208,9 @@ public coordination state or runtime evidence.
   79e3f095126644d7c543abf2f92e28e862647c825cf0b7dea3f44d9e94989e0c.
 
 - 2026-09-23T10:27:30+00:00: Heartbeat by codex-asb-ar1340-20260923.
+
+- 2026-09-23T10:27:47+00:00: Checkpoint f77aafb (fix lint) sits after signed+DCO c265c08 and
+  a70dc59; latest commit signed. Full cargo clippy --locked --workspace --all-targets -- -D warnings
+  passed. Full cargo test --locked --workspace passed across all crates (all non-ignored tests
+  green; expected pinned-runtime/native tests ignored). Runtime integration has positive and
+  negative namespace-bound sandbox admission tests; NetworkPolicy remains Deny.

@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1329](tasks/AR-1329-live-provider-run-execution.md): Live-provider run execution for real agents | Execute real agents against the selected provider through asb run and sweep with credential-free resolution. | Consume the AR-1340 attested namespace-bound relay handoff; then integrate live run/sweep and complete denial/live evidence without weakening NetworkPolicy::Deny. | codex-asb-ar1329-20260923 |
-| P1 | [AR-1340](tasks/AR-1340-attested-live-relay-namespace-handoff.md): Attested live-relay namespace and child handoff | Bind the live provider relay to an attested child namespace and integrate it without weakening offline or replay denial. | Independent review of both signed checkpoints; then add/verify runtime backend descendant namespace exercise and run full workspace quality gates before PR publication. | codex-asb-ar1340-20260923 |
+| P1 | [AR-1340](tasks/AR-1340-attested-live-relay-namespace-handoff.md): Attested live-relay namespace and child handoff | Bind the live provider relay to an attested child namespace and integrate it without weakening offline or replay denial. | Run rustdoc/build and independent review on exact clean f77aafb; publish PR only after all applicable gates pass, then wait exact-head CI. | codex-asb-ar1340-20260923 |
 
 ## Open
 
