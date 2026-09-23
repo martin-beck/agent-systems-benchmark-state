@@ -10,7 +10,7 @@
     "AR-1340"
   ],
   "id": "AR-1348",
-  "next_action": "Promote after the AR-1347 neutral credential contract is integrated or explicitly carried into this branch; then create the declared isolated worktree and implement the runtime-owned supervisor acquisition lifecycle. Keep AR-1329 fail-closed until exact-head and post-merge evidence proves the complete lifecycle.",
+  "next_action": "Implement runtime-owned acquisition supervisor in asb-runtime: construct validated SandboxSpec/LaunchInput, acquire Benchmark ResourceLease, issue policy/namespace handoff from runtime-selected concrete target, bind one relay, attest the pinned live gate, issue one LiveProviderAttempt, and revoke all resources on failure/drop. First slice is a private constructor plus fail-closed negative tests; do not wire AR-1329 until lifecycle tests pass.",
   "observed_branch": "feature/ar-1348-runtime-owned-live-acquisition",
   "observed_dirty": 0,
   "observed_head": "a336d6744b1a82f36a706ec606b847c92d49cfd3",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the runtime-owned supervisor that acquires every live-provider authority and tears it down safely.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Runtime-owned live acquisition service",
-  "updated_at": "2026-09-23T15:56:06+00:00",
+  "updated_at": "2026-09-23T15:56:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1348-runtime-owned-live-acquisition"
 }
 ---
@@ -52,3 +52,9 @@ this service owns acquisition instead of accepting caller-built launch authority
   221f9169421a8dd195133f03ceb5e5ce8353dba15c731f74b3edd34e4d11c4b5.
 
 - 2026-09-23T15:56:06+00:00: Heartbeat by codex-asb-runtime-acquisition-successor-luna56.
+
+- 2026-09-23T15:56:21+00:00: Constructor audit recorded: production code has only caller-supplied
+  LiveLaunchFactory::acquire inputs; ResourceLease::acquire, LiveProviderNamespaceHandoff::issue,
+  LiveProviderRelay::bind and SandboxBackend::attest_live_launch are test/primitive seams, while CLI
+  only accepts an injected factory. No runtime-owned composition service exists. Begin safe
+  supervisor slice and preserve AR-1329 fail-closed.
