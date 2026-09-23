@@ -7,16 +7,16 @@
 
 ## Portfolio overview
 
-**374 ARs tracked** across 7 active status categories.
+**374 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 5 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 49 |
 | **Planned** | Defined work awaiting promotion or dependencies | 64 |
 | **Future** | Deferred roadmap work | 1 |
-| **Done** | Accepted, integrated, and durably verified | 240 |
+| **Done** | Accepted, integrated, and durably verified | 241 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 14 |
 
@@ -442,7 +442,7 @@ flowchart LR
         AR_1347["AR-1347 - Done"]:::status_done
         AR_1348["AR-1348 - Superseded"]:::status_superseded
         AR_1349["AR-1349 - Open"]:::status_open
-        AR_1350["AR-1350 - In progress"]:::status_in_progress
+        AR_1350["AR-1350 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1813,12 +1813,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1350](../tasks/AR-1350-sandbox-credential-channel.md): Sandbox-owned credential channel | codex-asb-ar1350-sandbox-channel-luna56 | Implement a sandbox-owned sealed-FD credential channel for live provider children. | Fresh PR #261 exact head is f74b7d4f6f8290fcd39f47c1c65402cbbb088423. Hosted quality run 35903027712 failed narrowly at displayed 90.00&#37; (57954 total lines, 5796 missed), because strict fail-under-lines remained below 90&#37;; no gate weakening. Added deterministic launch metadata/accessor and backend probe coverage; local exact cargo llvm-cov --locked --workspace --all-targets --fail-under-lines 90 passes at 90.54&#37; (57982 lines, 5487 missed), with fmt check and clippy -D warnings green. Signed+DCO f74b7d4 verified and pushed. Monitor fresh PR-triggered exact-head checks and independent review; merge only after all required checks pass. AR-1349 expired-claim reconciliation remains a separate state issue. |
-
 ### Open (5)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -1846,3 +1840,5 @@ flowchart LR
 | P0 | [AR-1265](../tasks/AR-1265-runtime-owned-replay-entrypoint.md): Runtime-owned strict-replay CLI entrypoint | Unclaimed | Provide a real runtime-owned strict-replay CLI entrypoint. | Runtime/CLI owner must add an authenticated context-bearing replay-plan dispatch entrypoint; then exercise cassette request/response and lifecycle/egress tests through it. |
 | P0 | [AR-1266](../tasks/AR-1266-authenticated-replay-dispatch.md): Authenticated replay dispatch context | Unclaimed | Add authenticated runtime context to the actual strict-replay CLI dispatch path. | Connect runtime context to supervised cassette execution rather than merely offline replay; add request/response, egress denial, cancellation/restart/timeout/crash cleanup and no-fallback tests. |
 | P0 | [AR-1267](../tasks/AR-1267-runtime-replay-execution.md): Runtime strict-replay execution hook | Unclaimed | Implement real runtime-owned strict-replay execution and lifecycle supervision. | Add actual replay CLI argument wiring and bounded lifecycle/egress/no-fallback tests around authenticated execution hook; then run full gates. |
+| P0 | [AR-1268](../tasks/AR-1268-replay-transport-boundary.md): Break strict-replay runtime/CLI dependency cycle | Unclaimed | Break the strict-replay runtime/CLI dependency cycle with a shared transport contract. | Await approved runtime-owned launch bundle/factory exposing SandboxLaunchInput, ResourceLease, pinned commands, and supervised lifecycle to the transport adapter; then add real child lifecycle/egress tests. |
+| P0 | [AR-1269](../tasks/AR-1269-runtime-replay-launch-factory.md): Runtime-owned replay launch-bundle factory | Unclaimed | Create runtime-owned launch bundles for supervised strict replay. | Await approved runtime-issued cassette-service handle/shared transport extension; then connect it to spawn_runtime_replay and run real request/response, egress, cancellation/restart, timeout/crash cleanup, no-fallback fixtures. |

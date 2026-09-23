@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1350-sandbox-credential-channel",
   "checkpoint_commit": "f74b7d4f6f8290fcd39f47c1c65402cbbb088423",
-  "claim_expires": "2026-09-23T19:18:27+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1328",
     "AR-1339",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1350-sandbox-credential-channel",
   "observed_dirty": 0,
   "observed_head": "f74b7d4f6f8290fcd39f47c1c65402cbbb088423",
-  "owner": "codex-asb-ar1350-sandbox-channel-luna56",
+  "owner": "",
   "plan": "../plans/AR-1350-sandbox-credential-channel.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Implement a sandbox-owned sealed-FD credential channel for live provider children.",
-  "task_revision": 178,
+  "task_revision": 179,
   "title": "Sandbox-owned credential channel",
-  "updated_at": "2026-09-23T18:58:27+00:00",
+  "updated_at": "2026-09-23T18:58:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1350-sandbox-credential-channel"
 }
 ---
@@ -507,3 +507,8 @@ private runtime channel before AR-1349 can safely acquire attempts or wire
   a2411d9844841fb36ee3f9c08375fcd2dfc5eb11bbbf47a8ba1fe318b86d4e6f.
 
 - 2026-09-23T18:58:27+00:00: Heartbeat by codex-asb-ar1350-sandbox-channel-luna56.
+
+- 2026-09-23T18:58:33+00:00: PR #261 merged at 4d8f0c425a8c25b098e7fa45d5b7f4e645f5ff59 from exact
+  reviewed head f74b7d4f6f8290fcd39f47c1c65402cbbb088423; all PR checks green and all seven
+  post-merge workflows on protected main are green, including repository quality, Rust, emulated
+  aarch64, formal, fault, hosted portability, and source headers.
