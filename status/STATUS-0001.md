@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**364 ARs tracked** across 7 active status categories.
+**365 ARs tracked** across 7 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 3 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 49 |
-| **Planned** | Defined work awaiting promotion or dependencies | 64 |
+| **Planned** | Defined work awaiting promotion or dependencies | 65 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 234 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -433,6 +433,7 @@ flowchart LR
         AR_1338["AR-1338 - Planned"]:::status_planned
         AR_1339["AR-1339 - Done"]:::status_done
         AR_1340["AR-1340 - In progress"]:::status_in_progress
+        AR_1341["AR-1341 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1375,6 +1376,7 @@ flowchart LR
     AR_1335 --> AR_1336
     AR_1339 --> AR_1340
     AR_1340 --> AR_1329
+    AR_1340 --> AR_1341
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -1752,7 +1754,8 @@ flowchart LR
 | [AR-1337](../tasks/AR-1337-protected-main-merge-tree-repair-openrouter.md) | [AR-1226](../tasks/AR-1226-protected-merge-tree-remediation.md) | None |
 | [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1329](../tasks/AR-1329-live-provider-run-execution.md), [AR-1332](../tasks/AR-1332-record-live-replay-offline.md), [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md) | None |
 | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md) | [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) |
-| [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md) | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md) |
+| [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md) | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md), [AR-1341](../tasks/AR-1341-runtime-observed-namespace-repair.md) |
+| [AR-1341](../tasks/AR-1341-runtime-observed-namespace-repair.md) | [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) | None |
 
 ## Complete AR inventory
 
@@ -1808,4 +1811,3 @@ flowchart LR
 | P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Unclaimed | Repair the state-repository TLA admission runner and truthful worktree metadata. | Blocked: AR-1307 remote head ab485f767 != required 969eef058. AR-1308 preflight had 4.9 GiB free vs 16 GiB minimum and missing lock/JDK/TLC at runtime root. Reopen only with exact input bundle and passing preflight; do not run TLC locally. |
 | P0 | [AR-1305](../tasks/AR-1305-image-native-user-session.md): Image-native user-session support | Unclaimed | Qualify image-native D-Bus user-session support for required TLC containment. | Blocked: guestfish read-only inspection fails before access because /usr/bin/supermin exits 1; approved root has ~4.9 GiB free, preventing safe image repair. Reopen only with reviewed working appliance/capacity; no portable fallback, AR-1304 limit changes, or qualification. |
 | P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Unclaimed | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | AR-1308 is planned for disposable x86_64 QEMU capacity. Keep AR-1307 unqualified; after AR-1308 capacity evidence, rerun exact full-exhaustive without changing the 3G/3G contract. |
-| P0 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Unclaimed | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Clean runner ready: 64 GiB disk, x86_64 QEMU 8.2.2, 8 vCPU, 32 GiB RAM, no network/mounts. Bind exact AR-1307 bundle, pinned JDK/TLC, lock, image and seed; preflight before boot. |
