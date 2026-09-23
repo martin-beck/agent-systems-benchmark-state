@@ -29,7 +29,7 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 35916634961 | `03b830bbec18` | push | Formal assurance | in_progress:- |
-| 35916634923 | `03b830bbec18` | push | Hosted portability and native qualification | in_progress:- |
+| 35916634923 | `03b830bbec18` | push | Hosted portability and native qualification | completed:success |
 | 35916634890 | `03b830bbec18` | push | Rust verification | in_progress:- |
 | 35916634880 | `03b830bbec18` | push | Fault assurance | in_progress:- |
 | 35916634865 | `03b830bbec18` | push | Repository quality | in_progress:- |
