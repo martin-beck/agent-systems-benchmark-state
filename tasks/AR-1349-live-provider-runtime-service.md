@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1349-live-provider-runtime-service",
-  "checkpoint_commit": "34013a6aac8d874159b7a6e24778f8d93112ef1d",
+  "checkpoint_commit": "a22b9aeea65a5db3d11f81a277132ade5df16795",
   "claim_expires": "2026-09-23T18:30:27+00:00",
   "depends_on": [
     "AR-1327",
@@ -11,7 +11,7 @@
     "AR-1347"
   ],
   "id": "AR-1349",
-  "next_action": "First production-owned slice committed as 34013a6: LiveProviderRuntimeConfig validates denied network policy, exact allowlisted target, bounded generation, route and credential-reference digests, and acquires one benchmark ResourceLease. Focused live_service tests pass 2/2. Next: compose this config with runtime-owned gate/backend, observed namespace, token, relay and final opaque CLI attempt; preserve AR-1329 fail-closed.",
+  "next_action": "Selection/lease slice refined and committed as a22b9aee: LiveProviderRuntimeSelection groups immutable references without lint suppression. Focused live_service tests 2/2; full asb-runtime all-targets 85 passed, 1 ignored; clippy and fmt pass. Next bounded slice: compose runtime-owned pinned gate/backend, observed namespace, launch token, relay and opaque LiveProviderAttempt; preserve AR-1329 fail-closed.",
   "observed_branch": "feature/ar-1349-live-provider-runtime-service",
   "observed_dirty": 0,
   "observed_head": "a22b9aeea65a5db3d11f81a277132ade5df16795",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T16:41:28+00:00",
+  "updated_at": "2026-09-23T16:41:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
@@ -132,3 +132,9 @@ qualified.
 
 - 2026-09-23T16:41:28+00:00: Recorded command exit 0; command argv SHA-256
   643da601527dbadf4103cccdc1a9fd542e36f7b77653982cc6fb4facfd524daf.
+
+- 2026-09-23T16:41:42+00:00: Full applicable runtime gate passed after repair. First clippy failed
+  on too_many_arguments for the 8-argument config constructor; grouped selection references into
+  LiveProviderRuntimeSelection. The repair then had one compile diagnostic because not-a-digest was
+  a string slice instead of String; converted explicitly. Final clippy passed, focused tests passed
+  2/2, and full runtime tests passed 85/1.

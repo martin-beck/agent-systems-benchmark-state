@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1349](tasks/AR-1349-live-provider-runtime-service.md): Production live-provider runtime service | Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep. | First production-owned slice committed as 34013a6: LiveProviderRuntimeConfig validates denied network policy, exact allowlisted target, bounded generation, route and credential-reference digests, and acquires one benchmark ResourceLease. Focused live_service tests pass 2/2. Next: compose this config with runtime-owned gate/backend, observed namespace, token, relay and final opaque CLI attempt; preserve AR-1329 fail-closed. | codex-asb-ar1329-live-cli-luna56 |
+| P1 | [AR-1349](tasks/AR-1349-live-provider-runtime-service.md): Production live-provider runtime service | Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep. | Selection/lease slice refined and committed as a22b9aee: LiveProviderRuntimeSelection groups immutable references without lint suppression. Focused live_service tests 2/2; full asb-runtime all-targets 85 passed, 1 ignored; clippy and fmt pass. Next bounded slice: compose runtime-owned pinned gate/backend, observed namespace, launch token, relay and opaque LiveProviderAttempt; preserve AR-1329 fail-closed. | codex-asb-ar1329-live-cli-luna56 |
 
 ## Open
 
