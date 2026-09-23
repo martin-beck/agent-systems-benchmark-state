@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the runtime-owned supervisor that acquires every live-provider authority and tears it down safely.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Runtime-owned live acquisition service",
-  "updated_at": "2026-09-23T16:08:14+00:00",
+  "updated_at": "2026-09-23T16:09:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1348-runtime-owned-live-acquisition"
 }
 ---
@@ -130,3 +130,6 @@ this service owns acquisition instead of accepting caller-built launch authority
 - 2026-09-23T16:08:14+00:00: Signed+DCO lifecycle slice adds LiveAttemptLifecycle with
   consume/revoke state and focused duplicate/revoked test. live_supervisor focused suite passes 4/4;
   fmt passes. This is a lifecycle fence only and does not fabricate relay/authority or wire CLI.
+
+- 2026-09-23T16:09:16+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
