@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1341-runtime-observed-namespace-repair",
-  "checkpoint_commit": "98924ff97af42d1f5571640a05b34d47bab9a7a1",
+  "checkpoint_commit": "228bcc33957d168041717f7ca347f06aa6256a64",
   "claim_expires": "2026-09-23T13:03:52+00:00",
   "depends_on": [
     "AR-1339"
   ],
   "id": "AR-1341",
-  "next_action": "Independently review exact clean 98924ff, then publish PR and wait for exact-head CI; do not release AR-1340 until this repair is merged and post-merge verified.",
+  "next_action": "Independently review exact clean 228bcc3 including invalid gate digest denial, then publish PR and wait for exact-head CI; do not release AR-1340 until this repair is merged and post-merge verified.",
   "observed_branch": "feature/ar-1341-runtime-observed-namespace-repair",
   "observed_dirty": 0,
   "observed_head": "228bcc33957d168041717f7ca347f06aa6256a64",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair AR-1340 so live relay capabilities require runtime-observed child namespace agreement.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Runtime-observed namespace attestation repair",
-  "updated_at": "2026-09-23T11:03:52+00:00",
+  "updated_at": "2026-09-23T11:04:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1341-runtime-observed-namespace-repair"
 }
 ---
@@ -213,3 +213,8 @@ this task.
   a97654adbb204beceb22b9fc14bd374f926289f61e19f20193ec933e99b7915d.
 
 - 2026-09-23T11:03:52+00:00: Heartbeat by codex-asb-ar1341-20260923.
+
+- 2026-09-23T11:04:10+00:00: Added negative release-digest gate test after full gate run; focused
+  live_namespace suite now 9 passed. Product head 228bcc33957d168041717f7ca347f06aa6256a64 is
+  signed+DCO and clean. Prior full fmt, clippy, workspace tests, docs, and release build passed;
+  rerun focused suite after this test.
