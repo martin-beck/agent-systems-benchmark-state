@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1328-openrouter-free-model-config",
-  "checkpoint_commit": "34758d274639ee6a31bc88c34c18880509b8192c",
+  "checkpoint_commit": "8ff10cba5637174dc9929477e2903d75218a2daf",
   "claim_expires": "2026-09-23T10:24:27+00:00",
   "depends_on": [
     "AR-1325",
@@ -9,7 +9,7 @@
     "AR-1100"
   ],
   "id": "AR-1328",
-  "next_action": "Monitor PR #254 exact head 34758d2 hosted checks after config-wrapper cleanup; merge only after every required check and independent review are green, then perform post-merge verification.",
+  "next_action": "Monitor PR #254 exact head 8ff10cb hosted checks after config-backed plan/run tests; merge only after every required check and independent review are green, then perform post-merge verification.",
   "observed_branch": "feature/ar-1328-openrouter-free-model-config",
   "observed_dirty": 0,
   "observed_head": "8ff10cba5637174dc9929477e2903d75218a2daf",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist the per-user OpenRouter free-model configuration and credential-free key enrollment.",
-  "task_revision": 132,
+  "task_revision": 133,
   "title": "OpenRouter free-model user configuration and key enrollment",
-  "updated_at": "2026-09-23T08:24:27+00:00",
+  "updated_at": "2026-09-23T08:24:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1328-openrouter-free-model-config"
 }
 ---
@@ -356,3 +356,7 @@ configurations fail closed.
   3bfcedefb4eca5ac439b536c7dfadbbde81033206a0dff3b344855bf382f43cd.
 
 - 2026-09-23T08:24:27+00:00: Heartbeat by codex-asb-ar1328-20260923.
+
+- 2026-09-23T08:24:37+00:00: Concurrent signed+DCO commit 8ff10cb adds config-backed plan and run
+  path tests. Focused OpenRouter CLI tests pass (6/6); exact remote head changed and hosted checks
+  restarted. No new failure observed.
