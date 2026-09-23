@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1356](tasks/AR-1356-control-runtime-attestation-primitive.md): Control/runtime enrollment attestation primitive | Issue runtime-owned live enrollment capability from authenticated control attestation. | Signed+DCO commit 70f8a39 adds control certificate metadata issuance and private runtime claims/attestation validation with negative tests. Run full workspace gates and then let AR-1355 consume the private bridge; do not expose constructors or release live dispatch yet. | codex-asb-runtime-acquisition-successor-luna56 |
+| P0 | [AR-1356](tasks/AR-1356-control-runtime-attestation-primitive.md): Control/runtime enrollment attestation primitive | Issue runtime-owned live enrollment capability from authenticated control attestation. | Independent review complete; local fmt check, clippy -D warnings, locked workspace tests and doc tests pass. Product commit 70f8a39 is signed+DCO and authority constructors remain private. Publish exact-head PR through coordinator workflow, require all hosted checks and post-merge workflows before release; then advance AR-1355. | codex-asb-runtime-acquisition-successor-luna56 |
 
 ## Open
 

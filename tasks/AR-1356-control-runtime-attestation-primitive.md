@@ -7,7 +7,7 @@
     "AR-1352"
   ],
   "id": "AR-1356",
-  "next_action": "Signed+DCO commit 70f8a39 adds control certificate metadata issuance and private runtime claims/attestation validation with negative tests. Run full workspace gates and then let AR-1355 consume the private bridge; do not expose constructors or release live dispatch yet.",
+  "next_action": "Independent review complete; local fmt check, clippy -D warnings, locked workspace tests and doc tests pass. Product commit 70f8a39 is signed+DCO and authority constructors remain private. Publish exact-head PR through coordinator workflow, require all hosted checks and post-merge workflows before release; then advance AR-1355.",
   "observed_branch": "feature/ar-1356-control-runtime-attestation-primitive",
   "observed_dirty": 0,
   "observed_head": "70f8a3980cb0ed81bfdcb8a203f953467e319a11",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Issue runtime-owned live enrollment capability from authenticated control attestation.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Control/runtime enrollment attestation primitive",
-  "updated_at": "2026-09-23T21:13:53+00:00",
+  "updated_at": "2026-09-23T21:14:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1356-control-runtime-attestation-primitive"
 }
 ---
@@ -93,3 +93,8 @@ dispatch and do not expose caller-supplied launch authority.
 
 - 2026-09-23T21:13:53+00:00: Recorded command exit 0; command argv SHA-256
   534f8613e1c316db8f0f46dd989e44e14a8ca74304a94791b4e4a1c59b2fbb1d.
+
+- 2026-09-23T21:14:21+00:00: Full applicable local gates passed: cargo fmt --all -- --check; cargo
+  clippy --locked --workspace --all-targets -- -D warnings; cargo test --locked --workspace
+  including doc tests. Review confirmed no public claims constructors/accessors and no CLI authority
+  inputs. No native live evidence was claimed.
