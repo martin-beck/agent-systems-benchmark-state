@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1355-runtime-attested-enrollment-record.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Transport runtime-attested enrollment authority without exposing it to the CLI.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Runtime-attested enrollment record transport",
-  "updated_at": "2026-09-23T21:05:48+00:00",
+  "updated_at": "2026-09-23T21:06:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1355-runtime-attested-enrollment-record"
 }
 ---
@@ -46,3 +46,6 @@ constructors or synthetic authority. AR-1329 remains fail-closed until merge.
   enrollment/certificate metadata while asb-runtime lacks a verifiable capability issuer; exposing
   record constructors would make CLI caller authority. Successor AR-1356 created for the missing
   primitive; AR-1329 remains fail-closed.
+
+- 2026-09-23T21:06:09+00:00: Temporarily resume solely to commit successor AR-1356 state files
+  through the state workflow.
