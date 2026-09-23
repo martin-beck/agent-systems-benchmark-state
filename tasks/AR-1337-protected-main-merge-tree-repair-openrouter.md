@@ -8,18 +8,18 @@
   ],
   "id": "AR-1337",
   "next_action": "Independent review and exact-head CI; then use signed integration procedure against the current protected target and verify post-merge workflows.",
-  "observed_branch": "",
+  "observed_branch": "repair/ar-1337-openrouter-merge-tree-admission",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "8dc07a0f86a10aa6b20c87b2d67c34117adc69bc",
   "owner": "codex-ar1337",
   "plan": "../plans/AR-1337.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the protected-main merge-tree admission defect exposed after the OpenRouter provider merge.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Repair protected-main merge-tree admission after OpenRouter merge",
-  "updated_at": "2026-09-23T06:26:43+00:00",
+  "updated_at": "2026-09-23T06:26:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1337-protected-main-merge-tree-repair"
 }
 ---
