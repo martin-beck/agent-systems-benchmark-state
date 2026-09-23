@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime-owned API and CLI integration needed for safe live-provider attempts.",
-  "task_revision": 189,
+  "task_revision": 190,
   "title": "Runtime-owned CLI live acquisition contract",
-  "updated_at": "2026-09-23T13:59:46+00:00",
+  "updated_at": "2026-09-23T14:01:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1344-runtime-cli-acquisition-contract"
 }
 ---
@@ -508,3 +508,6 @@ contract and its tests are merged and verified.
   launch_factory 78.24%, live_namespace 87.86%, live_relay 90.17%, provider_egress 88.25%, sandbox
   70.70%. This exceeds AR-1344 focused test scope; no gate weakening or synthetic fixture forgery.
   PR #260 remains unmerged.
+
+- 2026-09-23T14:01:18+00:00: Recorded command exit 0; command argv SHA-256
+  c7fe22633e6f8c54b9d373ad2946cd47bae3c1c73c593e2e2658fc2d52e590bf.
