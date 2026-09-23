@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1350-sandbox-credential-channel",
-  "checkpoint_commit": "709dae14b3ddecc143af4bcb722c3c4250412225",
+  "checkpoint_commit": "edd9759f982dffa30001a0ef87dafcf409280135",
   "claim_expires": "2026-09-23T18:23:23+00:00",
   "depends_on": [
     "AR-1328",
@@ -10,7 +10,7 @@
     "AR-1347"
   ],
   "id": "AR-1350",
-  "next_action": "Hosted run 35899655572 on exact head 709dae14b3ddecc143af4bcb722c3c4250412225 completed with tests, native Goose, docs, and release build green, but manual workflow_dispatch DCO certification failed because it scanned merge base commit 909078ced21f36e5a72590c9decf41ac56452212 without a Signed-off-by trailer; this is a dispatch-context failure, not the PR event DCO path. Coverage also failed at 87.95%. Add neutral positive/negative coverage tests, run local workspace coverage/full gates, commit signed+DCO, push the same PR, and rely on fresh PR-triggered exact-head checks.",
+  "next_action": "Coverage repair is committed and pushed to PR #261 at exact head edd9759f982dffa30001a0ef87dafcf409280135. Added positive/negative coverage for binding validation, one-shot channel consumption, append-before-fill, debug metadata, all CredentialInjectionError variants, and bounded invalid values. Local full workspace llvm-cov now passes at 52353/57874 lines = 90.46%, above the 90% floor. fmt check, clippy -D warnings, focused tests, and full workspace tests with --test-threads=1 pass. The parallel full workspace test/coverage invocation hash 534f failed only because an existing asb-cli test reported control state root is already owned; the isolated test and serialized full suite pass. Fresh PR-triggered exact-head CI must now be monitored; do not use workflow_dispatch DCO run as merge evidence.",
   "observed_branch": "feature/ar-1350-sandbox-credential-channel",
   "observed_dirty": 0,
   "observed_head": "edd9759f982dffa30001a0ef87dafcf409280135",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement a sandbox-owned sealed-FD credential channel for live provider children.",
-  "task_revision": 109,
+  "task_revision": 110,
   "title": "Sandbox-owned credential channel",
-  "updated_at": "2026-09-23T18:12:52+00:00",
+  "updated_at": "2026-09-23T18:13:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1350-sandbox-credential-channel"
 }
 ---
@@ -329,3 +329,9 @@ private runtime channel before AR-1349 can safely acquire attempts or wire
 
 - 2026-09-23T18:12:52+00:00: Recorded command exit 0; command argv SHA-256
   5bdea314d99d18a411f4b5f8c843a7facf0c18df9cb0c73edf9ed92eeacc6d84.
+
+- 2026-09-23T18:13:13+00:00: Signed+DCO repair commit edd9759f982dffa30001a0ef87dafcf409280135
+  verified and pushed. Local workspace coverage is 90.46%; no policy weakening or file exclusion.
+  Parallel test failure was existing shared-state contention:
+  recording_campaign_plan_is_durable_idempotent_and_not_offline_ready saw control state root already
+  owned. Serialized full suite passed.
