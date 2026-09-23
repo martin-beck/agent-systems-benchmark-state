@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1340-attested-live-relay-handoff",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "a70dc59a74cc7886ba84ef357e98b9bfffbfcab6",
   "claim_expires": "2026-09-23T11:40:48+00:00",
   "depends_on": [
     "AR-1339"
   ],
   "id": "AR-1340",
-  "next_action": "AR-1339 is done at protected main 229941f; complete and verify the namespace-bound child handoff, descendant-egress denial, and fail-closed CLI integration for AR-1329.",
+  "next_action": "Review the signed checkpoint, integrate LiveProviderNamespaceHandoff into the runtime-owned live launch path, add backend descendant namespace exercise, then run full gates and publish PR.",
   "observed_branch": "feature/ar-1340-attested-live-relay-handoff",
   "observed_dirty": 0,
   "observed_head": "a70dc59a74cc7886ba84ef357e98b9bfffbfcab6",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind the live provider relay to an attested child namespace and integrate it without weakening offline or replay denial.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Attested live-relay namespace and child handoff",
-  "updated_at": "2026-09-23T10:16:30+00:00",
+  "updated_at": "2026-09-23T10:16:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1340-attested-live-relay-handoff"
 }
 ---
@@ -125,3 +125,11 @@ public coordination state or runtime evidence.
 
 - 2026-09-23T10:16:30+00:00: Recorded command exit 0; command argv SHA-256
   47eb4ffd8a746333cd1ef1f4ba4502742ba9d2a4b4470abfbe5fed664bc361c6.
+
+- 2026-09-23T10:16:54+00:00: Checkpoint a70dc59a74cc7886ba84ef357e98b9bfffbfcab6 is SSH-signed+DCO.
+  Added live_namespace module with namespace identity, exact provider
+  policy/generation/route/adapter/credential-reference digest binding, private mode-0600 owner
+  socket validation, child handoff, expiry/revocation, and explicit descendant direct-egress denial.
+  Focused cargo fmt check and cargo test --locked -p asb-runtime live_namespace: 3 passed. Initial
+  failures (parser, digest finalize, tempfile, socket mode, test syntax/docs) were repaired and
+  rerun successfully. Scope remains API slice; runtime/CLI integration and full gates remain.
