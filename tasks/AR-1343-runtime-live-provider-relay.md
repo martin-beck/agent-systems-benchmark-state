@@ -12,7 +12,7 @@
   "id": "AR-1343",
   "next_action": "Implement runtime-owned LiveProviderRuntimeService, not caller-supplied synthetic authority: service must own pinned backend/live gate discovery, benchmark ResourceLease acquisition, concrete provider target resolution/allowlist, enrolled credential transport, runtime-observed child namespace rebind, RuntimeLaunchToken attestation, and one LiveProviderAttempt + relay lifecycle per scheduler attempt. Wire only after focused positive/negative tests; keep AR-1329 and spawn_verified_agent fail-closed.",
   "observed_branch": "feature/ar-1343-runtime-live-provider-relay",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "a336d6744b1a82f36a706ec606b847c92d49cfd3",
   "owner": "codex-asb-ar1329-live-cli-luna56",
   "plan": "../plans/AR-1343-runtime-live-provider-relay.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime live-provider relay service and per-attempt opaque factory acquisition required by asb run and sweep.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Runtime live-provider relay service and CLI acquisition",
-  "updated_at": "2026-09-23T15:25:26+00:00",
+  "updated_at": "2026-09-23T15:25:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1343-runtime-live-provider-relay"
 }
 ---
