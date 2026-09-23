@@ -15,16 +15,16 @@
   "next_action": "Bootstrap remains the exact missing private seam: LiveProviderProvisioner composes attempts once given policy, allowlist, backend, and relay root, but no runtime-owned API currently derives those from a validated CLI selection. Add a private runtime bootstrap/profile source, then expose only an opaque service handle to run/sweep; do not make provisioner construction public or retain injected factories.",
   "observed_branch": "feature/ar-1349-live-provider-runtime-service",
   "observed_dirty": 0,
-  "observed_head": "2ea6e6422ea61bc9e58a0144ac56713182a72eca",
+  "observed_head": "03b830bbec183477758877f8a2a9e00714d351c0",
   "owner": "codex-asb-ar1329-live-cli-luna56",
   "plan": "../plans/AR-1349-live-provider-runtime-service.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 209,
+  "task_revision": 210,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T20:41:55+00:00",
+  "updated_at": "2026-09-23T20:42:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
