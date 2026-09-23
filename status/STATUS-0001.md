@@ -1375,8 +1375,8 @@ flowchart LR
     AR_1334 --> AR_1336
     AR_1335 --> AR_1336
     AR_1339 --> AR_1340
+    AR_1339 --> AR_1341
     AR_1340 --> AR_1329
-    AR_1340 --> AR_1341
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -1753,9 +1753,9 @@ flowchart LR
 | [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md) | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md), [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md), [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md) | None |
 | [AR-1337](../tasks/AR-1337-protected-main-merge-tree-repair-openrouter.md) | [AR-1226](../tasks/AR-1226-protected-merge-tree-remediation.md) | None |
 | [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1329](../tasks/AR-1329-live-provider-run-execution.md), [AR-1332](../tasks/AR-1332-record-live-replay-offline.md), [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md) | None |
-| [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md) | [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) |
-| [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md) | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md), [AR-1341](../tasks/AR-1341-runtime-observed-namespace-repair.md) |
-| [AR-1341](../tasks/AR-1341-runtime-observed-namespace-repair.md) | [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) | None |
+| [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md) | [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1341](../tasks/AR-1341-runtime-observed-namespace-repair.md) |
+| [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md) | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md) |
+| [AR-1341](../tasks/AR-1341-runtime-observed-namespace-repair.md) | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md) | None |
 
 ## Complete AR inventory
 
