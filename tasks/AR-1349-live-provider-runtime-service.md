@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1349-live-provider-runtime-service",
-  "checkpoint_commit": "d069f3eeacae914bec5d33dfbb575cd7e4281b2c",
+  "checkpoint_commit": "2ea6e6422ea61bc9e58a0144ac56713182a72eca",
   "claim_expires": "2026-09-23T22:05:38+00:00",
   "depends_on": [
     "AR-1327",
@@ -12,7 +12,7 @@
     "AR-1350"
   ],
   "id": "AR-1349",
-  "next_action": "Successor AR-1351 is promoted to supply the missing private host/runtime provisioning seam. Preserve AR-1349 as downstream consumer: after AR-1351 merges, implement LiveProviderRuntimeService::acquire and replace injected factory requirements in asb run/sweep. Keep AR-1329 fail-closed.",
+  "next_action": "Keep LiveProviderProvisioner construction/acquire crate-private. Implement the runtime-owned coordinator inside asb-runtime (opaque handle only), then add the single CLI adapter call for run/sweep without exposing policy/backend/namespace/relay authority. Current visibility repair is not completion; preserve sealed credential injection and fail-closed offline/replay.",
   "observed_branch": "feature/ar-1349-live-provider-runtime-service",
   "observed_dirty": 0,
   "observed_head": "2ea6e6422ea61bc9e58a0144ac56713182a72eca",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 202,
+  "task_revision": 203,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T20:08:02+00:00",
+  "updated_at": "2026-09-23T20:08:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
@@ -596,3 +596,8 @@ qualified.
 
 - 2026-09-23T20:08:02+00:00: Recorded command exit 0; command argv SHA-256
   0e8dce5ba5a78d9b987362d2ecd3e88d0c09e6e1e0255bb1426a359f52baf54f.
+
+- 2026-09-23T20:08:37+00:00: Independent review identified and corrected the temporary authority
+  leak: 47559ba exposed provisioner new/acquire; signed 2ea6e64 restores crate-private
+  construction/acquire. Runtime clippy passes after repair. Product worktree is clean; no production
+  CLI wiring is claimed complete.
