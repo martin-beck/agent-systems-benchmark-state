@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1326-openrouter-catalog-selection",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-23T08:46:14+00:00",
   "depends_on": [
     "AR-0313",
     "AR-1325"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1326-openrouter-catalog-selection",
   "observed_dirty": 5,
   "observed_head": "a4934fca0b528ac90d09fb537936584f5af0f75e",
-  "owner": "",
+  "owner": "codex-asb-ar1326-20260923",
   "plan": "../plans/AR-1326.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Advertise the OpenRouter profile in the CLI provider catalog and accept it in provider-plan selection.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Select OpenRouter through the CLI provider catalog",
-  "updated_at": "2026-09-23T06:44:36+00:00",
+  "updated_at": "2026-09-23T06:46:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1326-openrouter-catalog-selection"
 }
 ---
@@ -36,3 +36,5 @@ the fail-closed content-address checks.
 
 - 2026-09-23T06:44:36+00:00: Promoted after AR-1325 provider profile and protected-main repair are
   complete and post-merge workflows are green.
+
+- 2026-09-23T06:46:14+00:00: Claimed by codex-asb-ar1326-20260923.
