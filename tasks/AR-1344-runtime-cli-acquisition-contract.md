@@ -11,17 +11,17 @@
   "id": "AR-1344",
   "next_action": "Promote after dependencies are verified; implement the runtime-owned per-attempt CLI acquisition API and wire run/sweep without weakening live-provider fail-closed behavior.",
   "observed_branch": "feature/ar-1344-runtime-cli-acquisition-contract",
-  "observed_dirty": 1,
-  "observed_head": "ce2c2db068b05092f0f63291e0d94d4dbc9cda9c",
+  "observed_dirty": 0,
+  "observed_head": "a29f38f5853a4f18e0a0665b34d8257a92144808",
   "owner": "codex-asb-ar1344-cli-acquisition-20260923",
   "plan": "../plans/AR-1344-runtime-cli-acquisition-contract.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime-owned API and CLI integration needed for safe live-provider attempts.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Runtime-owned CLI live acquisition contract",
-  "updated_at": "2026-09-23T12:56:07+00:00",
+  "updated_at": "2026-09-23T12:56:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1344-runtime-cli-acquisition-contract"
 }
 ---
