@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist the per-user OpenRouter free-model configuration and credential-free key enrollment.",
-  "task_revision": 107,
+  "task_revision": 108,
   "title": "OpenRouter free-model user configuration and key enrollment",
-  "updated_at": "2026-09-23T08:14:14+00:00",
+  "updated_at": "2026-09-23T08:14:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1328-openrouter-free-model-config"
 }
 ---
@@ -303,3 +303,6 @@ configurations fail closed.
 - 2026-09-23T08:14:14+00:00: Independent review found 184f8e9 imported std::os::unix::fs::symlink in
   an unconditionally compiled test. Added signed+DCO 4fc4dbb with #[cfg(unix)] around that fixture;
   cargo fmt and asb-config 22/22 tests pass. Exact PR head is now 4fc4dbb; hosted checks restarted.
+
+- 2026-09-23T08:14:25+00:00: Recorded command exit 0; command argv SHA-256
+  aa75a47abb51c989607a90cde0d8370262f138508299c06ab69b5d163bb590db.
