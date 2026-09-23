@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1328](tasks/AR-1328-openrouter-free-model-config.md): OpenRouter free-model user configuration and key enrollment | Persist the per-user OpenRouter free-model configuration and credential-free key enrollment. | Monitor PR #254 exact-head CI; after merge verify post-merge checks and then close AR-1328 with durable evidence. | codex-asb-ar1328-20260923 |
+| P1 | [AR-1328](tasks/AR-1328-openrouter-free-model-config.md): OpenRouter free-model user configuration and key enrollment | Persist the per-user OpenRouter free-model configuration and credential-free key enrollment. | Monitor PR #254 exact-head CI at ec92cf835bb62fd6823563c17c32963b618aec16; independent review confirms signed+DCO implementation, clippy repair, and provenance fixture repair. Merge only after all required checks green, then verify all post-merge workflows before releasing AR-1328. | codex-asb-ar1328-20260923 |
 
 ## Open
 

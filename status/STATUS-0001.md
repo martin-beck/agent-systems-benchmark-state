@@ -1747,7 +1747,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md): OpenRouter free-model user configuration and key enrollment | codex-asb-ar1328-20260923 | Persist the per-user OpenRouter free-model configuration and credential-free key enrollment. | Monitor PR #254 exact-head CI; after merge verify post-merge checks and then close AR-1328 with durable evidence. |
+| P1 | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md): OpenRouter free-model user configuration and key enrollment | codex-asb-ar1328-20260923 | Persist the per-user OpenRouter free-model configuration and credential-free key enrollment. | Monitor PR #254 exact-head CI at ec92cf835bb62fd6823563c17c32963b618aec16; independent review confirms signed+DCO implementation, clippy repair, and provenance fixture repair. Merge only after all required checks green, then verify all post-merge workflows before releasing AR-1328. |
 
 ### Open (3)
 
@@ -1800,4 +1800,3 @@ flowchart LR
 | P1 | [AR-0704](../tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | PR #119 exact e2e3574 is green except quality 35401437247 at 89.99&#37; coverage. Preserve PR; repair via AR-1312 when promotable. Do not merge or weaken 90&#37;. |
 | P1 | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Unclaimed | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Create successor AR for authenticated route/ancestor authority; preserve AR-1288 evidence and AR-0814 head 29cfa193. |
 | P1 | [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md): Qualify development host ASB runner operations | Unclaimed | Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery. | Run repeated clean ASB jobs on every declared development host label and audit reset, isolation, architecture, and artifact provenance. |
-| P1 | [AR-0861](../tasks/AR-0861-openjiuwen-parity.md): Add OpenJiuwen provider parity and support matrix evidence | Unclaimed | Add OpenJiuwen provider parity and support matrix evidence. | Extend exact provider parity and the platform support matrix only for executable-qualified OpenJiuwen combinations under a serialized shared-path fence. |

@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1328-openrouter-free-model-config",
-  "checkpoint_commit": "2aa39d98553e7d5c25a8cc85decb4a17e58242ba",
+  "checkpoint_commit": "ec92cf835bb62fd6823563c17c32963b618aec16",
   "claim_expires": "2026-09-23T09:44:56+00:00",
   "depends_on": [
     "AR-1325",
@@ -9,7 +9,7 @@
     "AR-1100"
   ],
   "id": "AR-1328",
-  "next_action": "Monitor PR #254 exact-head CI; after merge verify post-merge checks and then close AR-1328 with durable evidence.",
+  "next_action": "Monitor PR #254 exact-head CI at ec92cf835bb62fd6823563c17c32963b618aec16; independent review confirms signed+DCO implementation, clippy repair, and provenance fixture repair. Merge only after all required checks green, then verify all post-merge workflows before releasing AR-1328.",
   "observed_branch": "feature/ar-1328-openrouter-free-model-config",
   "observed_dirty": 0,
   "observed_head": "ec92cf835bb62fd6823563c17c32963b618aec16",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist the per-user OpenRouter free-model configuration and credential-free key enrollment.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "OpenRouter free-model user configuration and key enrollment",
-  "updated_at": "2026-09-23T07:45:53+00:00",
+  "updated_at": "2026-09-23T07:46:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1328-openrouter-free-model-config"
 }
 ---
@@ -142,3 +142,7 @@ configurations fail closed.
 
 - 2026-09-23T07:45:53+00:00: Recorded command exit 0; command argv SHA-256
   39129b49e499c43e82be4a8f242e7d349182433a2abf400b3a9b1361019c8649.
+
+- 2026-09-23T07:46:20+00:00: Replacement worker audit complete: existing implementation commit
+  2aa39d9 was reviewed; clippy repair 2c392a3 and provenance repair ec92cf8 are signed/DCO and
+  pushed. Focused config/CLI/workflow tests pass; PR #254 exact head is ec92cf8.
