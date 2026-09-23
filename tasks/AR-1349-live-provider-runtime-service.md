@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T16:41:42+00:00",
+  "updated_at": "2026-09-23T16:42:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
@@ -138,3 +138,6 @@ qualified.
   LiveProviderRuntimeSelection. The repair then had one compile diagnostic because not-a-digest was
   a string slice instead of String; converted explicitly. Final clippy passed, focused tests passed
   2/2, and full runtime tests passed 85/1.
+
+- 2026-09-23T16:42:40+00:00: Recorded command exit 0; command argv SHA-256
+  2ce745c8b75d61c003d6a7647d034b74f89a60ef240188d94e7f32b918d43777.
