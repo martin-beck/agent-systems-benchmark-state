@@ -9,17 +9,17 @@
   "id": "AR-1362",
   "next_action": "Promote after AR-1359 is done, then implement durable runtime-owned authority enrollment state consumed by the control receipt source.",
   "observed_branch": "feature/ar-1362-runtime-authority-enrollment-store",
-  "observed_dirty": 1,
-  "observed_head": "be9af3d6fb22818e95f51b9640b10c5eb6e043f3",
+  "observed_dirty": 0,
+  "observed_head": "7bf91f5e846b5a7af6a1297baf9553c29b401fa9",
   "owner": "codex-asb-runtime-attested-enrollment-luna56",
   "plan": "../plans/AR-1362-runtime-authority-enrollment-store.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist authenticated runtime authority enrollment required for receipt issuance without exposing secrets.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Runtime authority enrollment store",
-  "updated_at": "2026-09-23T23:07:58+00:00",
+  "updated_at": "2026-09-23T23:08:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1362-runtime-authority-enrollment-store"
 }
 ---
