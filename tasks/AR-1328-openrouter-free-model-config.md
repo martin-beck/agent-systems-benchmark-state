@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1328-openrouter-free-model-config",
-  "checkpoint_commit": "ec92cf835bb62fd6823563c17c32963b618aec16",
+  "checkpoint_commit": "7dd39bcc7dd033506cfbe529cc8c48aacb9ef399",
   "claim_expires": "2026-09-23T09:50:30+00:00",
   "depends_on": [
     "AR-1325",
@@ -9,7 +9,7 @@
     "AR-1100"
   ],
   "id": "AR-1328",
-  "next_action": "Monitor PR #254 exact-head CI at ec92cf835bb62fd6823563c17c32963b618aec16; independent review confirms signed+DCO implementation, clippy repair, and provenance fixture repair. Merge only after all required checks green, then verify all post-merge workflows before releasing AR-1328.",
+  "next_action": "Monitor PR #254 hosted rerun at 7dd39bc; after all required checks pass, merge via integration tooling and verify post-merge checks.",
   "observed_branch": "feature/ar-1328-openrouter-free-model-config",
   "observed_dirty": 0,
   "observed_head": "7dd39bcc7dd033506cfbe529cc8c48aacb9ef399",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist the per-user OpenRouter free-model configuration and credential-free key enrollment.",
-  "task_revision": 55,
+  "task_revision": 56,
   "title": "OpenRouter free-model user configuration and key enrollment",
-  "updated_at": "2026-09-23T07:50:33+00:00",
+  "updated_at": "2026-09-23T07:50:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1328-openrouter-free-model-config"
 }
 ---
@@ -171,3 +171,9 @@ configurations fail closed.
 
 - 2026-09-23T07:50:33+00:00: Recorded command exit 0; command argv SHA-256
   39129b49e499c43e82be4a8f242e7d349182433a2abf400b3a9b1361019c8649.
+
+- 2026-09-23T07:50:46+00:00: Fixed hosted Rust/rustdoc failure: unresolved intra-doc link to
+  credential_environment in asb-config. Replaced with explicit OPENROUTER_API_KEY channel text.
+  Signed+DCO commit 7dd39bc pushed to PR #254. Local evidence: cargo fmt check, RUSTDOCFLAGS=-D
+  warnings cargo doc --locked --workspace --no-deps, and locked asb-cli/asb-config tests all pass.
+  Hosted rerun is active at exact head 7dd39bc; mergeState currently UNSTABLE while checks run.
