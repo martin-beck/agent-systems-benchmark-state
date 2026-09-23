@@ -29,7 +29,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35830485647 | `551330b8ba75` | push | Repository quality | in_progress:- |
+| 35830485647 | `551330b8ba75` | push | Repository quality | completed:failure |
 | 35830485636 | `551330b8ba75` | push | Rust verification | in_progress:- |
 | 35830485519 | `551330b8ba75` | push | Formal assurance | in_progress:- |
 | 35830485488 | `551330b8ba75` | push | Fault assurance | in_progress:- |
