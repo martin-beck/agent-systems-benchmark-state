@@ -11,17 +11,17 @@
   "id": "AR-1344",
   "next_action": "Focused gates and serial CLI workspace tests pass; one parallel full-workspace run hit the known state-root exclusivity test race. Re-run full workspace with serialized test execution before PR/publish review; retain capability-gated live sweep limitation.",
   "observed_branch": "feature/ar-1344-runtime-cli-acquisition-contract",
-  "observed_dirty": 1,
-  "observed_head": "c3c245f3de3c6612ace0de0f3cdf42ac82105406",
+  "observed_dirty": 0,
+  "observed_head": "7b8d2966b8f4afb4a20f7be21eefdd01d47557b8",
   "owner": "codex-asb-ar1344-factory-refactor-20260923",
   "plan": "../plans/AR-1344-runtime-cli-acquisition-contract.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime-owned API and CLI integration needed for safe live-provider attempts.",
-  "task_revision": 176,
+  "task_revision": 177,
   "title": "Runtime-owned CLI live acquisition contract",
-  "updated_at": "2026-09-23T13:48:08+00:00",
+  "updated_at": "2026-09-23T13:48:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1344-runtime-cli-acquisition-contract"
 }
 ---
