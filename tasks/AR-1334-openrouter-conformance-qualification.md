@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1334-openrouter-conformance-qualification",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "979dfe692369ad6f4fa17bdba625ade4a15187aa",
   "claim_expires": "2026-09-23T10:59:22+00:00",
   "depends_on": [
     "AR-1327",
     "AR-1328"
   ],
   "id": "AR-1334",
-  "next_action": "Qualify the pinned free OpenRouter model under the AR-0315 conformance harness and run hostile cases such as credential bleed, endpoint mismatch, rate limits and malformed responses, all failing closed.",
+  "next_action": "Push PR for independent review; wait exact-head required CI, repair any failures, then merge only after all checks are green and verify post-merge workflows.",
   "observed_branch": "feature/ar-1334-openrouter-conformance-qualification",
   "observed_dirty": 0,
   "observed_head": "979dfe692369ad6f4fa17bdba625ade4a15187aa",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the pinned OpenRouter free model under conformance and hostile fail-closed testing.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "OpenRouter free-model conformance and hostile qualification",
-  "updated_at": "2026-09-23T09:03:48+00:00",
+  "updated_at": "2026-09-23T09:04:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1334-openrouter-conformance-qualification"
 }
 ---
@@ -103,3 +103,8 @@ provider effect; real provider contact is opt-in and never required for CI.
 
 - 2026-09-23T09:03:38+00:00: Recorded command exit 0; command argv SHA-256
   863240b9b0b529220545c8c0cc7e9bb63831d32c9530bb81f484ee35bcd8c765.
+
+- 2026-09-23T09:04:06+00:00: Focused conformance 3/3, loopback 6/6, asb-agents package 188 passed/1
+  ignored, clippy all targets passed, workspace cargo test --quiet passed. Added hostile matrix and
+  repaired credential bleed by rejecting openai_api_key and credential fields. Prior exit-101 was
+  the expected negative focused run before the production repair; rerun passed.
