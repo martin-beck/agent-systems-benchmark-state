@@ -10,15 +10,18 @@
   ],
   "id": "AR-1328",
   "next_action": "Persist a per-user OpenRouter selection with a pinned free-model identity and enroll the OPENROUTER_API_KEY reference through the credential-free asb-config AuthEnrollment boundary, then wire --use-config into the CLI.",
+  "observed_branch": "feature/ar-1328-openrouter-free-model-config",
+  "observed_dirty": 0,
+  "observed_head": "5207ce478986cdf1687207967cdf517129f85624",
   "owner": "codex-asb-ar1328-20260923",
   "plan": "../plans/AR-1328.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist the per-user OpenRouter free-model configuration and credential-free key enrollment.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "OpenRouter free-model user configuration and key enrollment",
-  "updated_at": "2026-09-23T07:31:58+00:00",
+  "updated_at": "2026-09-23T07:32:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1328-openrouter-free-model-config"
 }
 ---
