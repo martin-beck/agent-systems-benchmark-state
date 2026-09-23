@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind the live provider relay to an attested child namespace and integrate it without weakening offline or replay denial.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Attested live-relay namespace and child handoff",
-  "updated_at": "2026-09-23T10:14:12+00:00",
+  "updated_at": "2026-09-23T10:14:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1340-attested-live-relay-handoff"
 }
 ---
@@ -101,3 +101,6 @@ public coordination state or runtime evidence.
 
 - 2026-09-23T10:14:12+00:00: Recorded command exit 101; command argv SHA-256
   3346fb7ed3bd8113d4b8bbe9cc45ec354bba76494392c46290fae3406954bfa5.
+
+- 2026-09-23T10:14:35+00:00: Recorded command exit 0; command argv SHA-256
+  4551c85d4c9535cac50cea58b3519bd6df6ba7ad66156f9510dff50759671a33.
