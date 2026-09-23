@@ -30,10 +30,10 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 35916634961 | `03b830bbec18` | push | Formal assurance | completed:success |
 | 35916634923 | `03b830bbec18` | push | Hosted portability and native qualification | completed:success |
-| 35916634890 | `03b830bbec18` | push | Rust verification | in_progress:- |
+| 35916634890 | `03b830bbec18` | push | Rust verification | completed:success |
 | 35916634880 | `03b830bbec18` | push | Fault assurance | completed:success |
-| 35916634865 | `03b830bbec18` | push | Repository quality | in_progress:- |
-| 35916634841 | `03b830bbec18` | push | Emulated aarch64 portability | in_progress:- |
+| 35916634865 | `03b830bbec18` | push | Repository quality | completed:success |
+| 35916634841 | `03b830bbec18` | push | Emulated aarch64 portability | completed:success |
 | 35916634839 | `03b830bbec18` | push | Huawei MIT source headers | completed:success |
 | 35915656600 | `e385a87bed4a` | pull_request | Emulated aarch64 portability | completed:success |
 | 35915656523 | `e385a87bed4a` | pull_request | Formal assurance | completed:success |
