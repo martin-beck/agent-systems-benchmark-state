@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Consume runtime-attested enrollment records in asb run and sweep without exposing authority.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Runtime enrollment CLI dispatch",
-  "updated_at": "2026-09-23T22:26:05+00:00",
+  "updated_at": "2026-09-23T22:26:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1358-runtime-enrollment-cli-dispatch"
 }
 ---
@@ -35,3 +35,6 @@ gates.
   runtime-owned CLI dispatch consumer repair.
 
 - 2026-09-23T22:26:05+00:00: Claimed by codex-asb-runtime-attested-enrollment-luna56.
+
+- 2026-09-23T22:26:12+00:00: Recorded command exit 0; command argv SHA-256
+  1068daf3aa96ce8739897a79927707a44394caf77b7b575a00fed63e8d9a446d.
