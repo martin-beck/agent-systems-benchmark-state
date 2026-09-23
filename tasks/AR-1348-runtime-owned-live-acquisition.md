@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1348-runtime-owned-live-acquisition",
   "checkpoint_commit": "a336d6744b1a82f36a706ec606b847c92d49cfd3",
-  "claim_expires": "",
+  "claim_expires": "2026-09-23T17:53:46+00:00",
   "depends_on": [
     "AR-1327",
     "AR-1328",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1348-runtime-owned-live-acquisition",
   "observed_dirty": 0,
   "observed_head": "a336d6744b1a82f36a706ec606b847c92d49cfd3",
-  "owner": "",
+  "owner": "codex-asb-runtime-acquisition-successor-luna56",
   "plan": "../plans/AR-1348-runtime-owned-live-acquisition.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide the runtime-owned supervisor that acquires every live-provider authority and tears it down safely.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Runtime-owned live acquisition service",
-  "updated_at": "2026-09-23T15:53:44+00:00",
+  "updated_at": "2026-09-23T15:53:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1348-runtime-owned-live-acquisition"
 }
 ---
@@ -37,3 +37,5 @@ this service owns acquisition instead of accepting caller-built launch authority
 - 2026-09-23T15:53:44+00:00: Dependencies AR-1327, AR-1328, AR-1339 and AR-1340 are done; promote
   successor runtime acquisition repair. AR-1347 neutral credential boundary remains an integration
   prerequisite and AR-1329 stays fail-closed.
+
+- 2026-09-23T15:53:46+00:00: Claimed by codex-asb-runtime-acquisition-successor-luna56.
