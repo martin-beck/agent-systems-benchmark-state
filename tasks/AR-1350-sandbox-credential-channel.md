@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1350-sandbox-credential-channel",
-  "checkpoint_commit": "359f15af52aa2b0b31bb091b945e7de933960006",
+  "checkpoint_commit": "e7176fb499134286ce661f42338060eb80edb875",
   "claim_expires": "2026-09-23T19:38:41+00:00",
   "depends_on": [
     "AR-1328",
@@ -10,7 +10,7 @@
     "AR-1347"
   ],
   "id": "AR-1350",
-  "next_action": "Final channel design: runtime creates it only from validated LiveProviderRuntimeConfig (private constructor), adapter capabilities can only consume that channel, and credential bytes are transferred by owned Vec then erased. Bubblewrap receives a sealed memfd via --args FD and sets the bound target variable inside the child; secret is absent from argv/evidence. Focused 3/3, runtime clippy, workspace clippy, workspace test (188+ passed with documented ignores), and formatting have passed. Run final docs/release build gates, then signed+DCO commit and independent diff review.",
+  "next_action": "Implementation committed at e7176fb499134286ce661f42338060eb80edb875. Independent review confirms channel constructor is crate-private and only receives reference/target from validated LiveProviderRuntimeConfig; adapter injection cannot construct authority, only consume the runtime-created channel. Credential delivery uses sealed memfd --args FD to set the selected child environment variable, with no secret/target in Command argv/evidence; owned Vec and temporary args are erased. Pre-spawn failures drop the channel and post-spawn parent copy closes immediately. Focused 3/3, workspace tests (all applicable passing; documented ignores), workspace clippy, rustdoc -D warnings, release build, fmt and diff checks pass. Next: coordinator review/publish/merge exact signed head, then post-merge CI; AR-1349 may consume only after merge.",
   "observed_branch": "feature/ar-1350-sandbox-credential-channel",
   "observed_dirty": 0,
   "observed_head": "e7176fb499134286ce661f42338060eb80edb875",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement a sandbox-owned sealed-FD credential channel for live provider children.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Sandbox-owned credential channel",
-  "updated_at": "2026-09-23T17:40:56+00:00",
+  "updated_at": "2026-09-23T17:41:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1350-sandbox-credential-channel"
 }
 ---
@@ -139,3 +139,6 @@ private runtime channel before AR-1349 can safely acquire attempts or wire
 
 - 2026-09-23T17:40:46+00:00: Recorded command exit 0; command argv SHA-256
   2051ed209368b63609bdd18f518922a1b3cb05cf5dd8030445b3f29e811cd6df.
+
+- 2026-09-23T17:41:21+00:00: Final source gates and independent authority/secret-erasure review
+  passed; signed+DCO commit verified below.
