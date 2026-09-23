@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist authenticated runtime authority enrollment required for receipt issuance without exposing secrets.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Runtime authority enrollment store",
-  "updated_at": "2026-09-23T23:08:19+00:00",
+  "updated_at": "2026-09-23T23:08:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1362-runtime-authority-enrollment-store"
 }
 ---
@@ -52,3 +52,6 @@ authority from CLI/config inputs.
   d9fa5fa9d6b1edd0744be1b0aa7351347516f8475fbf10364d8f42e7873456ab.
 
 - 2026-09-23T23:08:19+00:00: Heartbeat by codex-asb-runtime-attested-enrollment-luna56.
+
+- 2026-09-23T23:08:37+00:00: Recorded command exit 0; command argv SHA-256
+  b2f7111306aa7c03c56215bdb77e1811ed87e0363612681320219865a955e4c7.
