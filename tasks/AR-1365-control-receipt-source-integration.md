@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate authenticated chain and authority enrollment into the versioned control receipt source.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Control receipt source integration",
-  "updated_at": "2026-09-23T23:54:24+00:00",
+  "updated_at": "2026-09-23T23:55:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1365-control-receipt-source-integration"
 }
 ---
@@ -35,3 +35,6 @@ AR-1364. Do not touch asb-tui or synthesize authority from CLI/config input.
   authority and chain primitives with all post-merge gates.
 
 - 2026-09-23T23:54:24+00:00: Claimed by codex-asb-runtime-attested-enrollment-luna56.
+
+- 2026-09-23T23:55:36+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
