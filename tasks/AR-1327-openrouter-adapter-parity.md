@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1327-openrouter-adapter-parity",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-23T09:26:47+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0315",
     "AR-1325",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1327-openrouter-adapter-parity",
   "observed_dirty": 0,
   "observed_head": "bdb3bf028f0ab96a7a00ffd186fbb20bfae073b2",
-  "owner": "codex-asb-ar1327-20260923",
+  "owner": "",
   "plan": "../plans/AR-1327.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Wire the OpenRouter endpoint and model through every compatible agent adapter projection and prove parity with hostile conformance evidence.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "OpenRouter adapter projections and parity conformance",
-  "updated_at": "2026-09-23T07:29:26+00:00",
+  "updated_at": "2026-09-23T07:37:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1327-openrouter-adapter-parity"
 }
 ---
@@ -140,3 +140,7 @@ allowance must be extended explicitly, never silently.
 - 2026-09-23T07:29:26+00:00: PR #251 merged through exact protected merge-tree at 5207ce4 after all
   PR checks passed. Post-merge main workflows are now running; retain exact-head evidence before
   terminal closure.
+
+- 2026-09-23T07:37:40+00:00: PR #251 merged at 5207ce478986cdf1687207967cdf517129f85624; exact
+  signed/DCO head bdb3bf028, independent parity review and local gates recorded; all seven protected
+  post-merge workflows terminal success including repository quality and emulated AArch64.
