@@ -10,7 +10,7 @@
     "AR-1347"
   ],
   "id": "AR-1350",
-  "next_action": "Implementation committed at e7176fb499134286ce661f42338060eb80edb875. Independent review confirms channel constructor is crate-private and only receives reference/target from validated LiveProviderRuntimeConfig; adapter injection cannot construct authority, only consume the runtime-created channel. Credential delivery uses sealed memfd --args FD to set the selected child environment variable, with no secret/target in Command argv/evidence; owned Vec and temporary args are erased. Pre-spawn failures drop the channel and post-spawn parent copy closes immediately. Focused 3/3, workspace tests (all applicable passing; documented ignores), workspace clippy, rustdoc -D warnings, release build, fmt and diff checks pass. Next: coordinator review/publish/merge exact signed head, then post-merge CI; AR-1349 may consume only after merge.",
+  "next_action": "Clean-main focused test exit 101 was a neutral API dead-code diagnostic, not a runtime test failure: SandboxCredentialBinding::new/reference_sha256/target, SandboxCredentialChannel::new, and spawn_launch_with_credential were unreachable under -D dead_code because the binding had no production caller. Targeted repair makes the binding metadata constructor public (it grants no launch authority), exposes the public backend launch method, retains opaque private channel fields, and keeps credential delivery only through the runtime-created binding. Rerun focused sandbox_credential tests now; do not restore live_service or AR-1349 files.",
   "observed_branch": "feature/ar-1350-sandbox-credential-channel",
   "observed_dirty": 5,
   "observed_head": "a336d6744b1a82f36a706ec606b847c92d49cfd3",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement a sandbox-owned sealed-FD credential channel for live provider children.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Sandbox-owned credential channel",
-  "updated_at": "2026-09-23T17:47:46+00:00",
+  "updated_at": "2026-09-23T17:48:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1350-sandbox-credential-channel"
 }
 ---
@@ -173,3 +173,6 @@ private runtime channel before AR-1349 can safely acquire attempts or wire
 
 - 2026-09-23T17:47:46+00:00: Recorded command exit 101; command argv SHA-256
   fa81ef4bbbe11f9d7c21e97e68b5ee87a202bde759c1478aea8f757d27fa01db.
+
+- 2026-09-23T17:48:10+00:00: Recorded exact clean-main compiler diagnostic and applied a neutral
+  reachability/API repair. Current worktree remains clean-main based and excludes live_service.
