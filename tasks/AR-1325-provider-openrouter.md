@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1325-provider-openrouter",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-23T07:00:37+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0310",
     "AR-0318"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1325-provider-openrouter",
   "observed_dirty": 0,
   "observed_head": "f47e3728a9721ea268a730abef0f953bd2956613",
-  "owner": "coordinator-openrouter-audit",
+  "owner": "",
   "plan": "../plans/AR-1325.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Define one pinned credential-free OpenRouter provider profile for compatible ASB agent adapters.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Support a shared OpenRouter provider",
-  "updated_at": "2026-09-23T06:00:49+00:00",
+  "updated_at": "2026-09-23T06:04:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1325-provider-openrouter"
 }
 ---
@@ -64,3 +64,6 @@ unsupported or lossy translations fail closed.
 - 2026-09-23T06:00:49+00:00: PR #249 exact-head f47e3728a9721ea268a730abef0f953bd2956613 is
   UNSTABLE: Repository quality fails because commit is signed by unlisted
   SHA256:xZFt+Xw6eb2sqyimnU8KqX/DawY5wKZFb1b4g7nKisU. No merge authorized.
+
+- 2026-09-23T06:04:09+00:00: Released coordinator audit claim so a dedicated worker can repair the
+  signed-history blocker; preserved exact PR failure evidence in next_action.
