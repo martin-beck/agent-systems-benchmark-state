@@ -11,17 +11,17 @@
   "id": "AR-1344",
   "next_action": "Local llvm-cov improved to 88.50% (10,057 missed / 87,486) after real launch_factory live-context accessor/spawn-fencing tests. Still below mandatory 90% floor; continue only targeted added runtime branches (live relay/provider egress/sandbox) and do not push red intermediate head. Push exact head only once local coverage reaches 90%.",
   "observed_branch": "feature/ar-1344-runtime-cli-acquisition-contract",
-  "observed_dirty": 2,
-  "observed_head": "00ec71b67ce402b2b31420c6b961cb25c0718661",
+  "observed_dirty": 0,
+  "observed_head": "cd2d1e60b15142665ba3b72f9404df69f5c718da",
   "owner": "codex-asb-ar1344-factory-refactor-20260923",
   "plan": "../plans/AR-1344-runtime-cli-acquisition-contract.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime-owned API and CLI integration needed for safe live-provider attempts.",
-  "task_revision": 227,
+  "task_revision": 228,
   "title": "Runtime-owned CLI live acquisition contract",
-  "updated_at": "2026-09-23T14:19:31+00:00",
+  "updated_at": "2026-09-23T14:19:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1344-runtime-cli-acquisition-contract"
 }
 ---
