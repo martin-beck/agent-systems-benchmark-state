@@ -12,16 +12,16 @@
   "next_action": "Consume completed AR-1342 LiveLaunchFactory at merge d24221731891fb39f56118be9c5ae51364824517; wire runtime-owned live provider run/sweep, then run denial/live evidence and exact-head gates without weakening NetworkPolicy::Deny.",
   "observed_branch": "feature/ar-1329-live-provider-run-execution",
   "observed_dirty": 0,
-  "observed_head": "2774b1d648b5c3bbda0e290e158dc352502d3768",
+  "observed_head": "d24221731891fb39f56118be9c5ae51364824517",
   "owner": "codex-asb-ar1329-20260923b",
   "plan": "../plans/AR-1329.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute real agents against the selected provider through asb run and sweep with credential-free resolution.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Live-provider run execution for real agents",
-  "updated_at": "2026-09-23T12:22:45+00:00",
+  "updated_at": "2026-09-23T12:22:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1329-live-provider-run-execution"
 }
 ---
