@@ -33,9 +33,9 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 35825537759 | `6b06f0ea2346` | push | Repository quality | in_progress:- |
 | 35825537754 | `6b06f0ea2346` | push | Hosted portability and native qualification | completed:success |
-| 35825537737 | `6b06f0ea2346` | push | Fault assurance | in_progress:- |
+| 35825537737 | `6b06f0ea2346` | push | Fault assurance | completed:success |
 | 35825537733 | `6b06f0ea2346` | push | Rust verification | in_progress:- |
-| 35825537729 | `6b06f0ea2346` | push | Formal assurance | in_progress:- |
+| 35825537729 | `6b06f0ea2346` | push | Formal assurance | completed:success |
 | 35825537725 | `6b06f0ea2346` | push | Emulated aarch64 portability | in_progress:- |
 | 35825537698 | `6b06f0ea2346` | push | Huawei MIT source headers | completed:success |
 | 35825324615 | `85eece9f6915` | pull_request | Fault assurance | completed:success |
