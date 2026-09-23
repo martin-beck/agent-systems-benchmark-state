@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1328](tasks/AR-1328-openrouter-free-model-config.md): OpenRouter free-model user configuration and key enrollment | Persist the per-user OpenRouter free-model configuration and credential-free key enrollment. | Monitor PR #254 exact head fc04eba coverage rerun; merge only after every required check and independent review are green. | codex-asb-ar1328-20260923 |
+| P1 | [AR-1328](tasks/AR-1328-openrouter-free-model-config.md): OpenRouter free-model user configuration and key enrollment | Persist the per-user OpenRouter free-model configuration and credential-free key enrollment. | Monitor PR #254 exact head 4fc4dbb hosted checks after Windows-safe symlink test repair; merge only after every required check and independent review are green. | codex-asb-ar1328-20260923 |
 
 ## Open
 
