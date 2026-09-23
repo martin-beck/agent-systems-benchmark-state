@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1340-attested-live-relay-handoff",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-23T11:29:01+00:00",
+  "claim_expires": "2026-09-23T11:59:44+00:00",
   "depends_on": [
     "AR-1339"
   ],
@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind the live provider relay to an attested child namespace and integrate it without weakening offline or replay denial.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Attested live-relay namespace and child handoff",
-  "updated_at": "2026-09-23T09:59:01+00:00",
+  "updated_at": "2026-09-23T09:59:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1340-attested-live-relay-handoff"
 }
 ---
@@ -35,3 +35,5 @@ public coordination state or runtime evidence.
   handoff work before final AR-1329 CLI integration.
 
 - 2026-09-23T09:59:01+00:00: Claimed by codex-asb-ar1340-20260923.
+
+- 2026-09-23T09:59:44+00:00: Heartbeat by codex-asb-ar1340-20260923.
