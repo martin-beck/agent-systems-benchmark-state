@@ -1841,7 +1841,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1357](../tasks/AR-1357-runtime-attested-enrollment-record.md): Runtime-attested enrollment record transport | codex-asb-runtime-attested-enrollment-luna56 | Transport authenticated enrollment records into runtime without exposing authority to the CLI. | PR #265 exact head cc8016f is published. Monitor all required exact-head checks; diagnose Loom failure once final logs are available, repair without weakening gates, then merge only after green. |
+| P0 | [AR-1357](../tasks/AR-1357-runtime-attested-enrollment-record.md): Runtime-attested enrollment record transport | codex-asb-runtime-attested-enrollment-luna56 | Transport authenticated enrollment records into runtime without exposing authority to the CLI. | PR #265 exact head 64ea6fc includes minimal formal/Cargo.lock serde entries repairing the hosted locked formal gate. Monitor all required checks at new exact head; diagnose any further failures, then merge only after all green. |
 
 ### Open (4)
 

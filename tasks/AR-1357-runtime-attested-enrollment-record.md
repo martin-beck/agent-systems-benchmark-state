@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1357-runtime-attested-enrollment-record",
-  "checkpoint_commit": "cc8016f2846071d65362a16685762cbff9077ba6",
+  "checkpoint_commit": "64ea6fc6054224b09aebb47d9227f836c824e83a",
   "claim_expires": "2026-09-23T23:57:59+00:00",
   "depends_on": [
     "AR-1356"
   ],
   "id": "AR-1357",
-  "next_action": "PR #265 exact head cc8016f is published. Monitor all required exact-head checks; diagnose Loom failure once final logs are available, repair without weakening gates, then merge only after green.",
+  "next_action": "PR #265 exact head 64ea6fc includes minimal formal/Cargo.lock serde entries repairing the hosted locked formal gate. Monitor all required checks at new exact head; diagnose any further failures, then merge only after all green.",
   "observed_branch": "feature/ar-1357-runtime-attested-enrollment-record",
   "observed_dirty": 0,
   "observed_head": "64ea6fc6054224b09aebb47d9227f836c824e83a",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Transport authenticated enrollment records into runtime without exposing authority to the CLI.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Runtime-attested enrollment record transport",
-  "updated_at": "2026-09-23T22:04:21+00:00",
+  "updated_at": "2026-09-23T22:04:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1357-runtime-attested-enrollment-record"
 }
 ---
@@ -116,3 +116,9 @@ Successor for AR-1355. AR-1356 supplies the authenticated control/runtime attest
 
 - 2026-09-23T22:04:21+00:00: Recorded command exit 0; command argv SHA-256
   da4899d9d99f81663aa6d1e44abca24c29246b3e43229c278313b6dd4b798031.
+
+- 2026-09-23T22:04:45+00:00: Diagnosed hosted Formal assurance Loom job failure: formal/Cargo.lock
+  omitted new asb-runtime serde and serde_json normal dependencies, causing cargo test --locked to
+  refuse update (exit 101). Added exactly those two dependency entries; formal cargo test --locked
+  passed all tests. Commit 64ea6fc is SSH-signed and DCO; pushed through handoffctl. Previous
+  cc8016f checks are superseded by this exact head.
