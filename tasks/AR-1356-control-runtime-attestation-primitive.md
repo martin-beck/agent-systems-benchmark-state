@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1356-control-runtime-attestation-primitive",
   "checkpoint_commit": "726f4ccd1a20ce4e9bbf4abf819a1f0e3446fb15",
-  "claim_expires": "2026-09-23T23:06:07+00:00",
+  "claim_expires": "2026-09-23T23:06:43+00:00",
   "depends_on": [
     "AR-1352"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Issue runtime-owned live enrollment capability from authenticated control attestation.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Control/runtime enrollment attestation primitive",
-  "updated_at": "2026-09-23T21:06:07+00:00",
+  "updated_at": "2026-09-23T21:06:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1356-control-runtime-attestation-primitive"
 }
 ---
@@ -31,3 +31,5 @@ dispatch and do not expose caller-supplied launch authority.
   documented missing issuer and remains blocked, AR-1329 fail-closed.
 
 - 2026-09-23T21:06:07+00:00: Claimed by codex-asb-runtime-acquisition-successor-luna56.
+
+- 2026-09-23T21:06:43+00:00: Heartbeat by codex-asb-runtime-acquisition-successor-luna56.
