@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1334-openrouter-conformance-qualification",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-23T10:53:57+00:00",
   "depends_on": [
     "AR-1327",
     "AR-1328"
   ],
   "id": "AR-1334",
   "next_action": "Qualify the pinned free OpenRouter model under the AR-0315 conformance harness and run hostile cases such as credential bleed, endpoint mismatch, rate limits and malformed responses, all failing closed.",
-  "owner": "",
+  "owner": "codex-asb-ar1334-20260923",
   "plan": "../plans/AR-1334.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Qualify the pinned OpenRouter free model under conformance and hostile fail-closed testing.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "OpenRouter free-model conformance and hostile qualification",
-  "updated_at": "2026-09-23T08:53:51+00:00",
+  "updated_at": "2026-09-23T08:53:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1334-openrouter-conformance-qualification"
 }
 ---
@@ -34,3 +34,5 @@ provider effect; real provider contact is opt-in and never required for CI.
 
 - 2026-09-23T08:53:51+00:00: Dependencies AR-1327 and AR-1328 are done; prioritize pinned OpenRouter
   conformance and hostile fail-closed qualification.
+
+- 2026-09-23T08:53:57+00:00: Claimed by codex-asb-ar1334-20260923.
