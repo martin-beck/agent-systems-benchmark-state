@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the private runtime-owned bootstrap source for live acquisition.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Runtime-owned live bootstrap",
-  "updated_at": "2026-09-23T20:32:18+00:00",
+  "updated_at": "2026-09-23T20:32:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1352-runtime-live-bootstrap"
 }
 ---
@@ -189,3 +189,6 @@ integration. AR-1329 remains fail-closed.
   source headers, and AWQ shadow. PR is OPEN/CLEAN/MERGEABLE at e385a87. Independent review confirms
   crate-private authority boundary, canonical relay root, exact enrolled policy/allowlist, pinned
   tool set/live gate, no secret/path leakage, and positive/negative coverage.
+
+- 2026-09-23T20:32:26+00:00: Recorded command exit 0; command argv SHA-256
+  c6d3affef4b3163777233637c16d4169d9d710d4cd69f41c652d3dc6255680f8.
