@@ -9,7 +9,7 @@
     "AR-1342"
   ],
   "id": "AR-1344",
-  "next_action": "Full workspace serial gate reached workflow_transcript provenance drift after CLI source change; refreshed generated provenance and its focused suite passes 3/3. Re-run full workspace serial gate, then proceed to PR review if green; preserve capability-gated live sweep limitation.",
+  "next_action": "Workspace serialized cargo test --locked --workspace passes; workspace clippy --locked --workspace --all-targets -D warnings passes; fmt and focused gates pass. Exact clean signed head is 7b8d2966b8f4afb4a20f7be21eefdd01d47557b8. Proceed to independent review/PR publication, retaining capability-gated live sweep limitation.",
   "observed_branch": "feature/ar-1344-runtime-cli-acquisition-contract",
   "observed_dirty": 0,
   "observed_head": "7b8d2966b8f4afb4a20f7be21eefdd01d47557b8",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime-owned API and CLI integration needed for safe live-provider attempts.",
-  "task_revision": 180,
+  "task_revision": 181,
   "title": "Runtime-owned CLI live acquisition contract",
-  "updated_at": "2026-09-23T13:49:57+00:00",
+  "updated_at": "2026-09-23T13:50:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1344-runtime-cli-acquisition-contract"
 }
 ---
@@ -475,3 +475,8 @@ contract and its tests are merged and verified.
 
 - 2026-09-23T13:49:57+00:00: Recorded command exit 0; command argv SHA-256
   1024fc1e6cefa31b078f0b5d2ed85c7ea4586897b388bf1e308f62db58574461.
+
+- 2026-09-23T13:50:16+00:00: Full serialized workspace tests completed green (including provenance
+  after refresh) with documented capability-gated ignores. Full workspace Clippy completed green.
+  Branch is clean and exact head is signed 7b8d2966b8f4afb4a20f7be21eefdd01d47557b8; no asb-tui
+  changes.
