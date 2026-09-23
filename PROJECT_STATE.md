@@ -28,6 +28,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 35905311859 | `4d8f0c425a8c` | dynamic | Dependabot Updates | in_progress:- |
 | 35905186652 | `4d8f0c425a8c` | push | Repository quality | in_progress:- |
 | 35905186579 | `4d8f0c425a8c` | push | Emulated aarch64 portability | in_progress:- |
 | 35905186544 | `4d8f0c425a8c` | push | Fault assurance | in_progress:- |
@@ -39,4 +40,3 @@ Generated from local Git and GitHub. Do not edit.
 | 35904010889 | `f74b7d4f6f82` | pull_request | Hosted portability and native qualification | completed:success |
 | 35904010882 | `f74b7d4f6f82` | pull_request | Emulated aarch64 portability | completed:success |
 | 35904010874 | `f74b7d4f6f82` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 35904010866 | `f74b7d4f6f82` | pull_request | Formal assurance | completed:success |
