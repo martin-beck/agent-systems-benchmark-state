@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the protected-main merge-tree admission defect exposed after the OpenRouter provider merge.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Repair protected-main merge-tree admission after OpenRouter merge",
-  "updated_at": "2026-09-23T06:26:25+00:00",
+  "updated_at": "2026-09-23T06:26:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1337-protected-main-merge-tree-repair"
 }
 ---
@@ -46,3 +46,6 @@ remaining evidence limits without private paths or credentials.
   focused and full tools.integration.test_merge_pr pass. Signed+DCO commit 8dc07a0.
 
 - 2026-09-23T06:26:25+00:00: Heartbeat by codex-ar1337.
+
+- 2026-09-23T06:26:43+00:00: Recorded command exit 0; command argv SHA-256
+  73ebc8b4857e2aba6ae5e051e1f1da90b69d5981a57223c16ee116b362ce5a10.
