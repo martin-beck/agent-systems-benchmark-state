@@ -7,13 +7,13 @@
 
 ## Portfolio overview
 
-**387 ARs tracked** across 7 active status categories.
+**387 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 4 |
-| **Blocked** | Cannot proceed until its recorded blocker clears | 54 |
+| **Blocked** | Cannot proceed until its recorded blocker clears | 55 |
 | **Planned** | Defined work awaiting promotion or dependencies | 64 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 247 |
@@ -455,7 +455,7 @@ flowchart LR
         AR_1360["AR-1360 - Blocked"]:::status_blocked
         AR_1361["AR-1361 - Blocked"]:::status_blocked
         AR_1362["AR-1362 - Done"]:::status_done
-        AR_1363["AR-1363 - In progress"]:::status_in_progress
+        AR_1363["AR-1363 - Blocked"]:::status_blocked
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1855,12 +1855,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1363](../tasks/AR-1363-authenticated-control-receipt-source.md): Authenticated control receipt source | codex-asb-runtime-attested-enrollment-luna56 | Deliver authenticated runtime authority receipts through the versioned control boundary without exposing secrets or caller authority. | Promote after AR-1362 is done, then implement the bounded authenticated control receipt source consumed by runtime-owned dispatch. |
-
 ### Open (4)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -1870,7 +1864,7 @@ flowchart LR
 | P0 | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | Unclaimed | Publish the verified ASB agent catalog required by the first-run setup wizard. | Persist the authenticated catalog snapshot/generation and complete live ASB-to-asb-tui wizard evidence; keep all entries unavailable until a verified release closure exists. |
 | P1 | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md): Live-provider run execution for real agents | Unclaimed | Execute real agents against the selected provider through asb run and sweep with credential-free resolution. | BLOCKED pending coordinator-created repair AR: implement runtime-owned LiveProviderRuntimeService acquisition for production asb run/sweep. Service must resolve pinned provider policy to concrete public target(s), obtain credential through enrolled environment channel without evidence disclosure, construct attested child namespace handoff and relay listener, reserve ResourceLease, create SandboxBackend with pinned live gate, attest and issue one LiveProviderAttempt per scheduler attempt, and teardown on cancellation. Then AR-1329 can wire dispatch --provider-selection/--live-provider while preserving NetworkPolicy::Deny and direct/alternate egress denial. |
 
-### Blocked (54)
+### Blocked (55)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1880,3 +1874,4 @@ flowchart LR
 | P0 | [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md): Build the standalone asb-tui application | Unclaimed | Deliver the actual standalone interactive asb-tui application without an ASB workspace dependency. | Blocked: implementation belongs to asb-tui, but current scope forbids touching that repository; AR-1010/AR-1060 also retain unresolved publication blockers. Obtain explicit scope/dependency repair before re-opening. |
 | P0 | [AR-1160](../tasks/AR-1160.md): Wizard control API | Unclaimed | Wizard control API | Keep AR-1160 blocked. Create a fresh scoped AR for runtime-owned authenticated provider capture, per-tuple cassette reconciliation, and verified offline activation; preserve fail-closed gates and do not change this AR&#x27;s historical evidence. |
 | P0 | [AR-1181](../tasks/AR-1181.md): TLA admission | Unclaimed | Bound ASB TLC memory. | No independent work remains: AR-1293 owns the state-scoped runner and AR-1307/AR-1308 own qualification/capacity; preserve their blocked evidence and do not duplicate runner work. |
+| P0 | [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md): Bounded strict-replay CLI consumer contract | Unclaimed | Define the strict-replay CLI consumer contract. | Await runtime-owned launch authority, then wire replay through supervised context and add lifecycle/no-fallback tests. |

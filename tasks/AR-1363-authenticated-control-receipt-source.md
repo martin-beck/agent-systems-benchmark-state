@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1363-authenticated-control-receipt-source",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-24T01:28:52+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1362"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1363-authenticated-control-receipt-source",
   "observed_dirty": 0,
   "observed_head": "e9d4d3d1c6a4d67d0ce0e49fa8eaf696561fe45e",
-  "owner": "codex-asb-runtime-attested-enrollment-luna56",
+  "owner": "",
   "plan": "../plans/AR-1363-authenticated-control-receipt-source.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Deliver authenticated runtime authority receipts through the versioned control boundary without exposing secrets or caller authority.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Authenticated control receipt source",
-  "updated_at": "2026-09-23T23:29:30+00:00",
+  "updated_at": "2026-09-23T23:29:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1363-authenticated-control-receipt-source"
 }
 ---
@@ -37,3 +37,10 @@ Do not touch asb-tui, reopen stale dependencies, or synthesize authority in CLI.
 
 - 2026-09-23T23:29:30+00:00: Recorded command exit 0; command argv SHA-256
   277a1936169e354dbe4c6881de500884f7d6e3cf1bd44c494d3e2099e18ee3e0.
+
+- 2026-09-23T23:29:48+00:00: Blocked after exact protected-main audit at e9d4d3d1: ControlBackend
+  AuthRecord still contains only provider/endpoint/credential digests, generation, and status. No
+  authenticated certificate chain or runtime-owned authority issuer is available to issue
+  RuntimeEnrollmentReceiptV1; synthesizing chain or target/tool/lease/relay authority would violate
+  fail-closed policy. Create a successor for authenticated certificate-chain
+  enrollment/materialization, then resume AR-1363 and downstream AR-1360.
