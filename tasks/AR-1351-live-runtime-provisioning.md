@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1351-live-runtime-provisioning",
-  "checkpoint_commit": "de3fd42db25510d89aeef4d62a934965a3de40fa",
+  "checkpoint_commit": "d0b0cbefffdde0f80f51edb26f0a3d30f3a7b879",
   "claim_expires": "2026-09-23T21:22:51+00:00",
   "depends_on": [
     "AR-1339",
@@ -10,7 +10,7 @@
     "AR-1350"
   ],
   "id": "AR-1351",
-  "next_action": "Independent review of signed commit de3fd42db25510d89aeef4d62a934965a3de40fa: verify private constructor boundary, no placeholder/synthetic authority in production, exact target allowlisting, observed namespace, lease rollback, relay teardown and no secret/path evidence. If approved, publish the clean branch through handoffctl and require exact-head CI; keep AR-1349/1329 fail-closed.",
+  "next_action": "Independent review complete for d0b0cbe: constructor, acquire and bind_runtime are crate-private; production uses observed namespace and real listener, exact allowlist, benchmark lease, backend attestation and opaque attempt. Publish this clean exact head through the protected PR workflow; do not enable AR-1349/1329 until CI and post-merge gates pass.",
   "observed_branch": "feature/ar-1351-live-runtime-provisioning",
   "observed_dirty": 0,
   "observed_head": "d0b0cbefffdde0f80f51edb26f0a3d30f3a7b879",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the private host/runtime provisioning seam for live acquisition.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Runtime-owned live provisioning",
-  "updated_at": "2026-09-23T19:31:39+00:00",
+  "updated_at": "2026-09-23T19:31:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1351-live-runtime-provisioning"
 }
 ---
@@ -167,3 +167,10 @@ runtime boundary; AR-1349 remains fail-closed until it is merged and verified.
 
 - 2026-09-23T19:31:29+00:00: Recorded command exit 0; command argv SHA-256
   1e9d4dbcf94946461e38e19e5e5048e1458eed4cf392e19e533958b91d34fdc3.
+
+- 2026-09-23T19:31:55+00:00: Independent diff review after visibility repair: no public caller can
+  construct the provisioning service or invoke the runtime relay-binding seam; no credential bytes,
+  raw output or private paths enter evidence. Signed+DCO d0b0cbe is clean at protected base d069f3e.
+  Previous workspace clippy exit 1 was a coordinator LOCK_TIMEOUT during concurrent state mutation;
+  retry passed. Invalid combined cargo test filter was corrected by running cargo test --lib (96
+  passed, 1 ignored).
