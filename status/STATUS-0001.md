@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**367 ARs tracked** across 7 active status categories.
+**368 ARs tracked** across 7 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 4 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 49 |
-| **Planned** | Defined work awaiting promotion or dependencies | 64 |
+| **Planned** | Defined work awaiting promotion or dependencies | 65 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 237 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -436,6 +436,7 @@ flowchart LR
         AR_1341["AR-1341 - Done"]:::status_done
         AR_1342["AR-1342 - Done"]:::status_done
         AR_1343["AR-1343 - In progress"]:::status_in_progress
+        AR_1344["AR-1344 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1384,9 +1385,12 @@ flowchart LR
     AR_1339 --> AR_1341
     AR_1339 --> AR_1342
     AR_1339 --> AR_1343
+    AR_1339 --> AR_1344
     AR_1340 --> AR_1329
     AR_1340 --> AR_1342
     AR_1340 --> AR_1343
+    AR_1340 --> AR_1344
+    AR_1342 --> AR_1344
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -1763,11 +1767,12 @@ flowchart LR
 | [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md) | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md), [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md), [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md) | None |
 | [AR-1337](../tasks/AR-1337-protected-main-merge-tree-repair-openrouter.md) | [AR-1226](../tasks/AR-1226-protected-merge-tree-remediation.md) | None |
 | [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1329](../tasks/AR-1329-live-provider-run-execution.md), [AR-1332](../tasks/AR-1332-record-live-replay-offline.md), [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md) | None |
-| [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md) | [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1341](../tasks/AR-1341-runtime-observed-namespace-repair.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md), [AR-1343](../tasks/AR-1343-runtime-live-provider-relay.md) |
-| [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md) | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md), [AR-1343](../tasks/AR-1343-runtime-live-provider-relay.md) |
+| [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md) | [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1341](../tasks/AR-1341-runtime-observed-namespace-repair.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md), [AR-1343](../tasks/AR-1343-runtime-live-provider-relay.md), [AR-1344](../tasks/AR-1344-runtime-cli-acquisition-contract.md) |
+| [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md) | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md), [AR-1343](../tasks/AR-1343-runtime-live-provider-relay.md), [AR-1344](../tasks/AR-1344-runtime-cli-acquisition-contract.md) |
 | [AR-1341](../tasks/AR-1341-runtime-observed-namespace-repair.md) | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md) | None |
-| [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) | None |
+| [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) | [AR-1344](../tasks/AR-1344-runtime-cli-acquisition-contract.md) |
 | [AR-1343](../tasks/AR-1343-runtime-live-provider-relay.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) | None |
+| [AR-1344](../tasks/AR-1344-runtime-cli-acquisition-contract.md) | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md) | None |
 
 ## Complete AR inventory
 
@@ -1818,4 +1823,3 @@ flowchart LR
 | P0 | [AR-1280](../tasks/AR-1280-cross-crate-replay-entrypoint.md): Cross-crate replay process entrypoint | Unclaimed | Implement the cross-crate runtime process entrypoint for primary strict replay. | Extend replay-plan dispatch to invoke runtime-owned supervised process with argument-level command and cassette service; preserve denied egress/no-fallback and add lifecycle fault tests. Current signed head f92a86b provides bridge/binding baseline. |
 | P0 | [AR-1281](../tasks/AR-1281-supervised-cassette-lifecycle.md): Supervised cassette lifecycle execution | Unclaimed | Execute primary strict replay through a supervised runtime cassette lifecycle. | Promote after dependency verification; implement the complete supervised cassette path and lifecycle fault matrix from protected main. |
 | P0 | [AR-1283](../tasks/AR-1283-formal-lockfile.md): Formal lockfile CI drift repair | Unclaimed | Repair formal workspace lockfile drift that fails the locked CI gate. | Promote after dependency verification; regenerate and verify formal/Cargo.lock so hosted --locked formal tests do not attempt updates. |
-| P0 | [AR-1284](../tasks/AR-1284-runtime-strict-replay-lifecycle.md): Runtime-owned strict-replay lifecycle execution | Unclaimed | Connect authenticated replay transport to the runtime-owned primary strict-replay lifecycle. | Split a runtime-owned launch-factory/CLI entrypoint successor: current protected main has only caller-constructible ReplayTransportIssuer and SandboxBackend APIs, so AR-1284 cannot safely wire primary replay without fabricating authority. |
