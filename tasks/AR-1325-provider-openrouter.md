@@ -11,16 +11,16 @@
   "next_action": "Repair PR #249 history so every commit uses configured allowed SSH key SHA256:a36V6yPvRZyxnQ2113tiA/MlHt7mPfJEXAGByBXVkuE, then rerun exact-head policy and dependent PR checks.",
   "observed_branch": "feature/ar-1325-provider-openrouter",
   "observed_dirty": 0,
-  "observed_head": "f47e3728a9721ea268a730abef0f953bd2956613",
+  "observed_head": "85eece9f6915c51a55ec54457dc214d743f5db00",
   "owner": "coordinator-openrouter-audit",
   "plan": "../plans/AR-1325.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define one pinned credential-free OpenRouter provider profile for compatible ASB agent adapters.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Support a shared OpenRouter provider",
-  "updated_at": "2026-09-23T06:07:10+00:00",
+  "updated_at": "2026-09-23T06:07:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1325-provider-openrouter"
 }
 ---
