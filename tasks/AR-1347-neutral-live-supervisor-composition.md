@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the dependency-safe opaque supervisor contract needed for live-provider acquisition.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Neutral live-supervisor composition contract",
-  "updated_at": "2026-09-23T15:50:10+00:00",
+  "updated_at": "2026-09-23T15:52:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1347-neutral-live-supervisor-composition"
 }
 ---
@@ -132,3 +132,6 @@ or introduce a cyclic dependency.
   Credential tests 19/19 plus dedicated injection test 1/1; runtime full tests 85 passed/1 ignored;
   runtime clippy and workspace check/fmt passed. Full constructor audit found runtime-owned
   acquisition primitive still absent; no synthetic authority or CLI wiring.
+
+- 2026-09-23T15:52:47+00:00: Recorded command exit 0; command argv SHA-256
+  b20d4e44d78f318b39e272bc873586ea5626507027ab8a3640161a75bf910cde.
