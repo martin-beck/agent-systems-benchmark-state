@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1339-live-provider-egress-backend",
-  "checkpoint_commit": "92ca23fee9ea75942148fa66165cd65ba1a3513a",
+  "checkpoint_commit": "e69dc146e2b0eb341a8791fb5d53a5276dea1dc6",
   "claim_expires": "2026-09-23T10:55:16+00:00",
   "depends_on": [
     "AR-1328"
   ],
   "id": "AR-1339",
-  "next_action": "Integrate ProviderEgressAuthorization with a runtime-owned network-capable relay/backend and CLI live path; typed endpoint/generation/route/deadline handoff contract and denial tests now pass, but no outbound socket is permitted yet.",
+  "next_action": "Implement actual runtime-owned authenticated outbound relay: consume ProviderEgressAuthorization and ProviderEgressAllowlist, connect only prevalidated SocketAddr targets over HTTPS, reject redirects/DNS changes, and preserve NetworkPolicy::Deny offline/replay.",
   "observed_branch": "feature/ar-1339-live-provider-egress-backend",
   "observed_dirty": 0,
   "observed_head": "e69dc146e2b0eb341a8791fb5d53a5276dea1dc6",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the runtime-owned authenticated backend for explicit live provider egress.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Runtime-owned live-provider egress backend",
-  "updated_at": "2026-09-23T09:00:50+00:00",
+  "updated_at": "2026-09-23T09:01:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1339-live-provider-egress-backend"
 }
 ---
@@ -36,3 +36,7 @@ that missing boundary so live provider execution can be enabled safely.
 - 2026-09-23T08:58:06+00:00: Added launch-fenced ProviderEgressHandoff and
   ProviderEgressAuthorization. Tests cover exact HTTPS host, credential/query rejection, stale
   generation/route/deadline. NetworkPolicy::Deny remains unchanged.
+
+- 2026-09-23T09:01:14+00:00: Integrated public-IP exact allowlist types with launch-fenced handoff.
+  Four provider_egress tests and CLI check pass. Concrete next step is relay transport/backend, not
+  more policy-only work.
