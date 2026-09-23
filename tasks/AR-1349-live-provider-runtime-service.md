@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1349-live-provider-runtime-service",
-  "checkpoint_commit": "ffecd74c91bedb4cc946797b19626937ddd7a423",
+  "checkpoint_commit": "97870c00fbb8444daf8b581e2b141c4b479b719b",
   "claim_expires": "2026-09-23T18:30:27+00:00",
   "depends_on": [
     "AR-1327",
@@ -11,7 +11,7 @@
     "AR-1347"
   ],
   "id": "AR-1349",
-  "next_action": "Attested composition slice committed as ffecd74c91bedb4cc946797b19626937ddd7a423: LiveProviderRuntimeAuthority groups runtime-issued token, denied launch input, benchmark lease, pinned backend, observed namespace and relay; compose_attempt delegates only through LiveLaunchFactory::acquire and returns opaque LiveProviderAttempt. Focused live_service 2/2, full runtime 85 passed/1 ignored, clippy and fmt pass. Next: replace caller-supplied authority bundle with production-owned gate/namespace/relay acquisition and wire the final opaque attempt into asb run/sweep; preserve AR-1329 fail-closed.",
+  "next_action": "CLI integration remains fail-closed. Independent review found the intermediate LiveProviderRuntimeAuthority bundle could be externally constructed; 97870c0 removes that incomplete composition seam rather than suppressing dead_code. Focused live_service 2/2, clippy/fmt pass. Exact remaining blocker: no production-owned constructor exists that resolves provider selection/credential, pinned gate/backend, observed namespace, token and relay into an opaque LiveProviderAttempt. Next repair must implement that owner before asb run/sweep can call one service entrypoint; preserve offline/replay defaults and AR-1329 fail-closed.",
   "observed_branch": "feature/ar-1349-live-provider-runtime-service",
   "observed_dirty": 0,
   "observed_head": "97870c00fbb8444daf8b581e2b141c4b479b719b",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 62,
+  "task_revision": 63,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T16:48:07+00:00",
+  "updated_at": "2026-09-23T16:48:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
@@ -198,3 +198,9 @@ qualified.
 
 - 2026-09-23T16:47:56+00:00: Recorded command exit 0; command argv SHA-256
   0eea30cd930bf75eb2727f2831674dd7b8a58928af15d8004763b8e60c447a3e.
+
+- 2026-09-23T16:48:17+00:00: Attempted composition clippy failed because private authority fields
+  and compose_attempt had no legitimate production constructor (dead_code). This confirms the
+  authority gap rather than a test defect. The public-field leak is repaired and the incomplete API
+  removed in signed+DCO commit 97870c0. Existing CLI factory seams remain injection-only and are not
+  wired into normal dispatch.
