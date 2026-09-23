@@ -12,7 +12,7 @@
     "AR-1350"
   ],
   "id": "AR-1349",
-  "next_action": "Keep LiveProviderProvisioner construction/acquire crate-private. Implement the runtime-owned coordinator inside asb-runtime (opaque handle only), then add the single CLI adapter call for run/sweep without exposing policy/backend/namespace/relay authority. Current visibility repair is not completion; preserve sealed credential injection and fail-closed offline/replay.",
+  "next_action": "Bootstrap remains the exact missing private seam: LiveProviderProvisioner composes attempts once given policy, allowlist, backend, and relay root, but no runtime-owned API currently derives those from a validated CLI selection. Add a private runtime bootstrap/profile source, then expose only an opaque service handle to run/sweep; do not make provisioner construction public or retain injected factories.",
   "observed_branch": "feature/ar-1349-live-provider-runtime-service",
   "observed_dirty": 0,
   "observed_head": "2ea6e6422ea61bc9e58a0144ac56713182a72eca",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 204,
+  "task_revision": 205,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T20:09:12+00:00",
+  "updated_at": "2026-09-23T20:09:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
@@ -603,3 +603,8 @@ qualified.
   CLI wiring is claimed complete.
 
 - 2026-09-23T20:09:12+00:00: Heartbeat by codex-asb-ar1329-live-cli-luna56.
+
+- 2026-09-23T20:09:25+00:00: Heartbeat renewed. Reviewed merged AR-1351 provisioner: acquisition is
+  concrete and tested, but its constructor is intentionally crate-private and requires
+  policy/backend/allowlist/relay-root. Existing CLI has no safe bootstrap source for those authority
+  values. No unsafe visibility or synthetic factory change made; AR-1329 remains fail-closed.
