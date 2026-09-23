@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute real agents against the selected provider through asb run and sweep with credential-free resolution.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Live-provider run execution for real agents",
-  "updated_at": "2026-09-23T12:24:32+00:00",
+  "updated_at": "2026-09-23T12:24:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1329-live-provider-run-execution"
 }
 ---
@@ -134,3 +134,6 @@ the digest-pinned mode remain default and never touch the network.
   carries endpoint digest, not a concrete target. Focused handoffctl cargo test --locked -p
   asb-runtime live_factory --lib passed 2/2. No unsafe product change made; NetworkPolicy::Deny and
   direct/alternate egress denial preserved.
+
+- 2026-09-23T12:24:47+00:00: Recorded command exit 0; command argv SHA-256
+  e8f1b6e696bc5011c596493b05e19e1aa1b10bd52d18175e4f2e3d69485513aa.
