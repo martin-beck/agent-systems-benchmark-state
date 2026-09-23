@@ -9,7 +9,7 @@
     "AR-1340"
   ],
   "id": "AR-1329",
-  "next_action": "Provide a runtime-owned live relay factory/launch context to asb-cli: existing AR-1340 APIs consume only a pre-issued LiveProviderNamespaceHandoff and SandboxBackend, while CLI has no relay socket/backend acquisition; keep live spawn fail-closed until that context is supplied, then wire run/sweep and denial evidence.",
+  "next_action": "Coordinator should create proposed AR-1342 (successor dependency for AR-1329): add runtime-owned CLI live-relay launch factory/acquisition. Required API: issue validated ProviderEgressPolicy/Handoff plus relay listener, NamespaceIdentity-bound LiveProviderNamespaceHandoff, SandboxBackend, ResourceLease, and child launch context; then AR-1329 consumes it. Preserve NetworkPolicy::Deny, runtime-observed child namespace late gate, direct/alternate egress denial, credential non-disclosure, cancellation/teardown, and offline default. Until AR-1342 is complete, keep live run/sweep fail-closed.",
   "observed_branch": "feature/ar-1329-live-provider-run-execution",
   "observed_dirty": 0,
   "observed_head": "2774b1d648b5c3bbda0e290e158dc352502d3768",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute real agents against the selected provider through asb run and sweep with credential-free resolution.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Live-provider run execution for real agents",
-  "updated_at": "2026-09-23T11:31:19+00:00",
+  "updated_at": "2026-09-23T11:32:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1329-live-provider-run-execution"
 }
 ---
@@ -92,3 +92,11 @@ the digest-pinned mode remain default and never touch the network.
   240bd80324356f608b0a39871d69a15449eec6a61ea57561a531f72d616cb223.
 
 - 2026-09-23T11:31:19+00:00: Heartbeat by codex-asb-ar1329-20260923.
+
+- 2026-09-23T11:32:26+00:00: Follow-up repair AR creation is coordinator-owned; no task-creation
+  command exists in handoffctl, so I do not fabricate AR-1342 files or claim creation. Proposed
+  AR-1342 scope is recorded in next_action with exact missing API/call path and denial requirements.
+  AR-1329 remains in_progress and truthfully blocked on that successor capability; no product
+  changes made. Heartbeat renewed. Reconcile completed state commit but doctor --live and snapshot
+  both fail because generated WORKTREES.md is stale; this is recorded as an external
+  state-reconciliation failure.

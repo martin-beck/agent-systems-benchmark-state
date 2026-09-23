@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1329](tasks/AR-1329-live-provider-run-execution.md): Live-provider run execution for real agents | Execute real agents against the selected provider through asb run and sweep with credential-free resolution. | Provide a runtime-owned live relay factory/launch context to asb-cli: existing AR-1340 APIs consume only a pre-issued LiveProviderNamespaceHandoff and SandboxBackend, while CLI has no relay socket/backend acquisition; keep live spawn fail-closed until that context is supplied, then wire run/sweep and denial evidence. | codex-asb-ar1329-20260923 |
+| P1 | [AR-1329](tasks/AR-1329-live-provider-run-execution.md): Live-provider run execution for real agents | Execute real agents against the selected provider through asb run and sweep with credential-free resolution. | Coordinator should create proposed AR-1342 (successor dependency for AR-1329): add runtime-owned CLI live-relay launch factory/acquisition. Required API: issue validated ProviderEgressPolicy/Handoff plus relay listener, NamespaceIdentity-bound LiveProviderNamespaceHandoff, SandboxBackend, ResourceLease, and child launch context; then AR-1329 consumes it. Preserve NetworkPolicy::Deny, runtime-observed child namespace late gate, direct/alternate egress denial, credential non-disclosure, cancellation/teardown, and offline default. Until AR-1342 is complete, keep live run/sweep fail-closed. | codex-asb-ar1329-20260923 |
 
 ## Open
 
