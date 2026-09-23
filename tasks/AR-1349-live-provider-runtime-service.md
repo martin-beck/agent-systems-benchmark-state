@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 217,
+  "task_revision": 218,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T20:45:42+00:00",
+  "updated_at": "2026-09-23T20:46:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
@@ -640,3 +640,6 @@ qualified.
   plus LiveProviderRuntimeService::acquire delegating to the private provisioner. Runtime clippy
   passed. Existing bootstrap constructors remain crate-private; CLI wiring is still pending and
   AR-1329 remains fail-closed.
+
+- 2026-09-23T20:46:54+00:00: Recorded command exit 0; command argv SHA-256
+  dc0da7d15c74b521a02198723aad93c6aba902e4d2eade42cabfd2adab4816e2.
