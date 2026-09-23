@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1339-live-provider-egress-backend",
-  "checkpoint_commit": "0c291a12a98d0b4bcd856f484eb1068361be9107",
+  "checkpoint_commit": "229941f013ad45a21e746a052bc4ae8ec531cfd7",
   "claim_expires": "",
   "depends_on": [
     "AR-1328"
   ],
   "id": "AR-1339",
-  "next_action": "Monitor PR #256 at 0c291a12a98d0b4bcd856f484eb1068361be9107 for all hosted checks and independent review; do not merge until every required check is green.",
+  "next_action": "AR-1339 backend merged and verified at protected main; AR-1340 owns namespace-bound child handoff and AR-1329 consumes it for final live CLI integration.",
   "observed_branch": "feature/ar-1339-live-provider-egress-backend",
   "observed_dirty": 0,
   "observed_head": "0c291a12a98d0b4bcd856f484eb1068361be9107",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "done",
   "summary": "Implement the runtime-owned authenticated backend for explicit live provider egress.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Runtime-owned live-provider egress backend",
-  "updated_at": "2026-09-23T09:55:39+00:00",
+  "updated_at": "2026-09-23T10:06:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1339-live-provider-egress-backend"
 }
 ---
@@ -72,3 +72,9 @@ that missing boundary so live provider execution can be enabled safely.
   Rust 35844872531, Huawei MIT headers 35844872519, Repository quality 35844872514, Hosted
   portability 35844872503, Formal assurance 35844872490, Emulated AArch64 35844872482, Fault
   assurance 35844872480.
+
+- 2026-09-23T10:06:35+00:00: Reconciled completed AR metadata to protected merge
+  229941f013ad45a21e746a052bc4ae8ec531cfd7. PR #256 merged at exact head
+  0c291a12a98d0b4bcd856f484eb1068361be9107 with merge commit
+  229941f013ad45a21e746a052bc4ae8ec531cfd7; all required hosted checks passed. Preserve done state;
+  AR-1340 owns namespace handoff and AR-1329 remains fail-closed until it is delivered.
