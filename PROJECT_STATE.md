@@ -28,13 +28,13 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35935060604 | `3a4007be828d` | push | Repository quality | in_progress:- |
+| 35935060604 | `3a4007be828d` | push | Repository quality | completed:success |
 | 35935060587 | `3a4007be828d` | push | Fault assurance | completed:success |
 | 35935060568 | `3a4007be828d` | push | Huawei MIT source headers | completed:success |
-| 35935060566 | `3a4007be828d` | push | Emulated aarch64 portability | in_progress:- |
+| 35935060566 | `3a4007be828d` | push | Emulated aarch64 portability | completed:success |
 | 35935060564 | `3a4007be828d` | push | Hosted portability and native qualification | completed:success |
-| 35935060558 | `3a4007be828d` | push | Formal assurance | in_progress:- |
-| 35935060544 | `3a4007be828d` | push | Rust verification | in_progress:- |
+| 35935060558 | `3a4007be828d` | push | Formal assurance | completed:success |
+| 35935060544 | `3a4007be828d` | push | Rust verification | completed:success |
 | 35934302489 | `47914d8fd49c` | pull_request | Repository quality | completed:success |
 | 35934302459 | `47914d8fd49c` | pull_request | Fault assurance | completed:success |
 | 35934302456 | `47914d8fd49c` | pull_request | Hosted portability and native qualification | completed:success |

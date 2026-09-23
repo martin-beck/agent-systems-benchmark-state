@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**388 ARs tracked** across 6 active status categories.
+**389 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 4 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 55 |
-| **Planned** | Defined work awaiting promotion or dependencies | 64 |
+| **Planned** | Defined work awaiting promotion or dependencies | 65 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 248 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -457,6 +457,7 @@ flowchart LR
         AR_1362["AR-1362 - Done"]:::status_done
         AR_1363["AR-1363 - Blocked"]:::status_blocked
         AR_1364["AR-1364 - Done"]:::status_done
+        AR_1365["AR-1365 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1453,6 +1454,8 @@ flowchart LR
     AR_1359 --> AR_1362
     AR_1362 --> AR_1363
     AR_1362 --> AR_1364
+    AR_1362 --> AR_1365
+    AR_1364 --> AR_1365
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -1852,9 +1855,10 @@ flowchart LR
 | [AR-1359](../tasks/AR-1359-runtime-control-bridge.md) | [AR-1357](../tasks/AR-1357-runtime-attested-enrollment-record.md) | [AR-1360](../tasks/AR-1360-runtime-cli-dispatch-consumer.md), [AR-1361](../tasks/AR-1361-runtime-control-receipt-source.md), [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md) |
 | [AR-1360](../tasks/AR-1360-runtime-cli-dispatch-consumer.md) | [AR-1359](../tasks/AR-1359-runtime-control-bridge.md) | None |
 | [AR-1361](../tasks/AR-1361-runtime-control-receipt-source.md) | [AR-1359](../tasks/AR-1359-runtime-control-bridge.md) | None |
-| [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md) | [AR-1359](../tasks/AR-1359-runtime-control-bridge.md) | [AR-1363](../tasks/AR-1363-authenticated-control-receipt-source.md), [AR-1364](../tasks/AR-1364-authenticated-chain-enrollment.md) |
+| [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md) | [AR-1359](../tasks/AR-1359-runtime-control-bridge.md) | [AR-1363](../tasks/AR-1363-authenticated-control-receipt-source.md), [AR-1364](../tasks/AR-1364-authenticated-chain-enrollment.md), [AR-1365](../tasks/AR-1365-control-receipt-source-integration.md) |
 | [AR-1363](../tasks/AR-1363-authenticated-control-receipt-source.md) | [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md) | None |
-| [AR-1364](../tasks/AR-1364-authenticated-chain-enrollment.md) | [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md) | None |
+| [AR-1364](../tasks/AR-1364-authenticated-chain-enrollment.md) | [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md) | [AR-1365](../tasks/AR-1365-control-receipt-source-integration.md) |
+| [AR-1365](../tasks/AR-1365-control-receipt-source-integration.md) | [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md), [AR-1364](../tasks/AR-1364-authenticated-chain-enrollment.md) | None |
 
 ## Complete AR inventory
 
@@ -1876,4 +1880,3 @@ flowchart LR
 | P0 | [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md): Implement &#96;asb tui&#96; lifecycle routing | Unclaimed | Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend. | After AR-1010, AR-1037 and AR-1060 are done, rebase c545c33 onto protected ASB main and implement only the ASB provisioning half before regenerated evidence and trusted asb-tui pinning. |
 | P0 | [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md): Build the standalone asb-tui application | Unclaimed | Deliver the actual standalone interactive asb-tui application without an ASB workspace dependency. | Blocked: implementation belongs to asb-tui, but current scope forbids touching that repository; AR-1010/AR-1060 also retain unresolved publication blockers. Obtain explicit scope/dependency repair before re-opening. |
 | P0 | [AR-1160](../tasks/AR-1160.md): Wizard control API | Unclaimed | Wizard control API | Keep AR-1160 blocked. Create a fresh scoped AR for runtime-owned authenticated provider capture, per-tuple cassette reconciliation, and verified offline activation; preserve fail-closed gates and do not change this AR&#x27;s historical evidence. |
-| P0 | [AR-1181](../tasks/AR-1181.md): TLA admission | Unclaimed | Bound ASB TLC memory. | No independent work remains: AR-1293 owns the state-scoped runner and AR-1307/AR-1308 own qualification/capacity; preserve their blocked evidence and do not duplicate runner work. |
