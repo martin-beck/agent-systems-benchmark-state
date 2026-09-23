@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair AR-1340 so live relay capabilities require runtime-observed child namespace agreement.",
-  "task_revision": 81,
+  "task_revision": 82,
   "title": "Runtime-observed namespace attestation repair",
-  "updated_at": "2026-09-23T11:15:28+00:00",
+  "updated_at": "2026-09-23T11:15:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1341-runtime-observed-namespace-repair"
 }
 ---
@@ -250,3 +250,6 @@ this task.
   4f5f1fcc752973e1eaf9d3a061f347b2db5b7ba124d128096d1fd357427bdf1c.
 
 - 2026-09-23T11:15:28+00:00: Heartbeat by codex-asb-ar1341-20260923.
+
+- 2026-09-23T11:15:31+00:00: Recorded command exit 0; command argv SHA-256
+  9f80fd89d98fed87f538f13cc147a912ab2f914b39c26a8ce9d964f364579cf6.
