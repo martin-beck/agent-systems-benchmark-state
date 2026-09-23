@@ -7,7 +7,7 @@
     "AR-1339"
   ],
   "id": "AR-1340",
-  "next_action": "AR-1341 is planned to repair the merged namespace gap; do not release AR-1340 or advance AR-1329 until runtime-observed child identity comparison and copied/stale/mismatch denial evidence land and pass all gates.",
+  "next_action": "SECURITY HOLD: AR-1341 must add runtime-observed child namespace attestation and copied/stale/mismatch denial before AR-1340 may be released or AR-1329 advanced. Do not release on green post-merge CI alone; continue collecting post-merge evidence for merge 3406faae.",
   "observed_branch": "feature/ar-1340-attested-live-relay-handoff",
   "observed_dirty": 0,
   "observed_head": "f77aafb44b05cd04cbd642ab3d737eb4062403dc",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind the live provider relay to an attested child namespace and integrate it without weakening offline or replay denial.",
-  "task_revision": 79,
+  "task_revision": 80,
   "title": "Attested live-relay namespace and child handoff",
-  "updated_at": "2026-09-23T10:40:23+00:00",
+  "updated_at": "2026-09-23T10:40:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1340-attested-live-relay-handoff"
 }
 ---
@@ -256,3 +256,10 @@ public coordination state or runtime evidence.
 - 2026-09-23T10:40:23+00:00: PR #257 merged at 3406faae58f0e762f70a856f6b9c6c545fcc9a37 despite the
   owner security review hold recorded at 10:30Z and GitHub review comment 10:31Z. AR-1341 was
   created as the repair dependency; post-merge workflows are evidence only, not completion.
+
+- 2026-09-23T10:40:32+00:00: Coordinator security review found a material gap after merge: the live
+  capability stores a caller-supplied NamespaceIdentity and validates that value, but SandboxBackend
+  does not obtain/compare the actual child network namespace identity after unshare. A copied/stale
+  capability could therefore pass the current admission API if namespace text matches. AR-1341 was
+  created as repair dependency (state commit 2ca2e7e2e). AR-1340 remains in_progress under explicit
+  security hold; no release or downstream promotion authorized.
