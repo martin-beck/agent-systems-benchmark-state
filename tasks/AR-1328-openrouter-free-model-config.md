@@ -11,7 +11,7 @@
   "id": "AR-1328",
   "next_action": "Monitor PR #254 exact-head CI at ec92cf835bb62fd6823563c17c32963b618aec16; independent review confirms signed+DCO implementation, clippy repair, and provenance fixture repair. Merge only after all required checks green, then verify all post-merge workflows before releasing AR-1328.",
   "observed_branch": "feature/ar-1328-openrouter-free-model-config",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "ec92cf835bb62fd6823563c17c32963b618aec16",
   "owner": "codex-asb-ar1328-20260923",
   "plan": "../plans/AR-1328.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist the per-user OpenRouter free-model configuration and credential-free key enrollment.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "OpenRouter free-model user configuration and key enrollment",
-  "updated_at": "2026-09-23T07:49:37+00:00",
+  "updated_at": "2026-09-23T07:49:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1328-openrouter-free-model-config"
 }
 ---
