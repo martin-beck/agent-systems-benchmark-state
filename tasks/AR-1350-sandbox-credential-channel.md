@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement a sandbox-owned sealed-FD credential channel for live provider children.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Sandbox-owned credential channel",
-  "updated_at": "2026-09-23T17:35:15+00:00",
+  "updated_at": "2026-09-23T17:35:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1350-sandbox-credential-channel"
 }
 ---
@@ -98,3 +98,6 @@ private runtime channel before AR-1349 can safely acquire attempts or wire
 
 - 2026-09-23T17:35:15+00:00: Recorded command exit 0; command argv SHA-256
   fa81ef4bbbe11f9d7c21e97e68b5ee87a202bde759c1478aea8f757d27fa01db.
+
+- 2026-09-23T17:35:29+00:00: Recorded command exit 0; command argv SHA-256
+  e8beebac0638d83321c84d952814966bbba80dc16ee7dd3d3ead10f3c2b72292.
