@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Transport runtime-attested enrollment authority without exposing it to the CLI.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Runtime-attested enrollment record transport",
-  "updated_at": "2026-09-23T21:43:35+00:00",
+  "updated_at": "2026-09-23T21:44:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1355-runtime-attested-enrollment-record"
 }
 ---
@@ -51,3 +51,6 @@ constructors or synthetic authority. AR-1329 remains fail-closed until merge.
   through the state workflow.
 
 - 2026-09-23T21:43:35+00:00: Claimed by codex-asb-runtime-attested-enrollment-luna56.
+
+- 2026-09-23T21:44:05+00:00: Recorded command exit 0; command argv SHA-256
+  3c52814b600c7be57e74ecc7590759b6fff44f0fd8a3ea3a480c4a9fa8fc4061.
