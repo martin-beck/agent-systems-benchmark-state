@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1344-runtime-cli-acquisition-contract",
   "checkpoint_commit": "487bf83d802fc15d19b581e72af8ed7f4e849409",
-  "claim_expires": "2026-09-23T15:34:30+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1339",
     "AR-1340",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1344-runtime-cli-acquisition-contract",
   "observed_dirty": 0,
   "observed_head": "7eb4cdb72b01a4c3bc9105cab59f3d5fe54c0ab0",
-  "owner": "codex-asb-ar1344-cli-acquisition-20260923",
+  "owner": "",
   "plan": "../plans/AR-1344-runtime-cli-acquisition-contract.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Add the runtime-owned API and CLI integration needed for safe live-provider attempts.",
-  "task_revision": 141,
+  "task_revision": 142,
   "title": "Runtime-owned CLI live acquisition contract",
-  "updated_at": "2026-09-23T13:34:30+00:00",
+  "updated_at": "2026-09-23T13:35:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1344-runtime-cli-acquisition-contract"
 }
 ---
@@ -366,3 +366,7 @@ contract and its tests are merged and verified.
   a9b54dbf930e8fc50e4a85d9c6f31a270654dd6e5ca3cb0a64e198f6a79ba1d4.
 
 - 2026-09-23T13:34:30+00:00: Heartbeat by codex-asb-ar1344-cli-acquisition-20260923.
+
+- 2026-09-23T13:35:41+00:00: Prior worker stopped after delivering relay/supervisor and temporary
+  guard. Releasing ownerless/open for replacement implementation of the required per-attempt
+  factory; preserve current checkpoint and fail-closed boundary.
