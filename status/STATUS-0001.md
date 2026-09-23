@@ -1753,7 +1753,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md): OpenRouter free-model user configuration and key enrollment | codex-asb-ar1328-20260923 | Persist the per-user OpenRouter free-model configuration and credential-free key enrollment. | Monitor PR #254 exact head 8ff10cb hosted checks after config-backed plan/run tests; merge only after every required check and independent review are green, then perform post-merge verification. |
+| P1 | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md): OpenRouter free-model user configuration and key enrollment | codex-asb-ar1328-20260923 | Persist the per-user OpenRouter free-model configuration and credential-free key enrollment. | Promote AR-1329 live-provider run execution; preserve credential-free configuration and exact-head evidence. |
 
 ### Open (3)
 
@@ -1804,3 +1804,4 @@ flowchart LR
 | P0 | [AR-1313](../tasks/AR-1313-historical-dco-909078c-repair.md): Historical DCO merge-integrity recovery | Unclaimed | Forward-only signed DCO recovery candidate published as PR #231. | Keep PR #231 unmerged; route one-line workspace coverage deficit to AR-1312, then rerun exact-head checks and signed recovery merge. |
 | P1 | [AR-0604](../tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Unclaimed | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Obtain authorized native x86 runner and immutable CSB/Python evidence; rerun native_boundary and record A/B overhead. |
 | P1 | [AR-0704](../tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | PR #119 exact e2e3574 is green except quality 35401437247 at 89.99&#37; coverage. Preserve PR; repair via AR-1312 when promotable. Do not merge or weaken 90&#37;. |
+| P1 | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Unclaimed | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Create successor AR for authenticated route/ancestor authority; preserve AR-1288 evidence and AR-0814 head 29cfa193. |
