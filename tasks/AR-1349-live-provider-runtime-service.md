@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 90,
+  "task_revision": 91,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T16:55:55+00:00",
+  "updated_at": "2026-09-23T16:57:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
@@ -281,3 +281,6 @@ qualified.
   credential_injection tests passed 2/2. A combined cargo test invocation also failed with cargo
   usage error because cargo accepts one filter; reran the valid credential_injection filter
   successfully.
+
+- 2026-09-23T16:57:03+00:00: Recorded command exit 0; command argv SHA-256
+  4be9d08b47be99d60a4ea7209369f34b4a361977e5174b3f201e843401c557de.
