@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1337-openrouter-merge-tree-admission",
   "checkpoint_commit": "8dc07a0f86a10aa6b20c87b2d67c34117adc69bc",
-  "claim_expires": "2026-09-23T08:26:25+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1226"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "repair/ar-1337-openrouter-merge-tree-admission",
   "observed_dirty": 0,
   "observed_head": "8dc07a0f86a10aa6b20c87b2d67c34117adc69bc",
-  "owner": "codex-ar1337",
+  "owner": "",
   "plan": "../plans/AR-1337.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Repair the protected-main merge-tree admission defect exposed after the OpenRouter provider merge.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Repair protected-main merge-tree admission after OpenRouter merge",
-  "updated_at": "2026-09-23T06:35:51+00:00",
+  "updated_at": "2026-09-23T06:44:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1337-protected-main-merge-tree-repair"
 }
 ---
@@ -62,3 +62,7 @@ remaining evidence limits without private paths or credentials.
 
 - 2026-09-23T06:35:51+00:00: Recorded command exit 0; command argv SHA-256
   4557a5bdf39419249554168714ca3a7ed501fb56a58acf6a991d33e3d00b1c75.
+
+- 2026-09-23T06:44:18+00:00: PR #252 merged as 8eac37c; all exact-head checks passed and all seven
+  protected-main post-merge workflows, including Repository quality and emulated AArch64, are
+  terminal success.
