@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair runtime live-provider coverage without weakening the mandatory quality floor.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Runtime live-provider coverage repair",
-  "updated_at": "2026-09-23T14:34:25+00:00",
+  "updated_at": "2026-09-23T14:35:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1345-runtime-live-coverage-repair"
 }
 ---
@@ -58,3 +58,6 @@ non-authoritative.
   lines (57,530 covered, 5,497 missed; regions 88.52%). No product changes yet; next action is
   classify and add bounded sandbox admission/ownership, relay timeout/error, and provider-egress
   tests for margin above floor.
+
+- 2026-09-23T14:35:06+00:00: Recorded command exit 0; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
