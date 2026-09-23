@@ -11,7 +11,7 @@
   "id": "AR-1328",
   "next_action": "Monitor PR #254 exact head 4fc4dbb hosted checks after Windows-safe symlink test repair; merge only after every required check and independent review are green.",
   "observed_branch": "feature/ar-1328-openrouter-free-model-config",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "4fc4dbbe0af22756994904cdd186f99caa34c805",
   "owner": "codex-asb-ar1328-20260923",
   "plan": "../plans/AR-1328.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist the per-user OpenRouter free-model configuration and credential-free key enrollment.",
-  "task_revision": 112,
+  "task_revision": 113,
   "title": "OpenRouter free-model user configuration and key enrollment",
-  "updated_at": "2026-09-23T08:17:22+00:00",
+  "updated_at": "2026-09-23T08:17:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1328-openrouter-free-model-config"
 }
 ---
