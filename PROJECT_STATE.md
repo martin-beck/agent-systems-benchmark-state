@@ -23,7 +23,7 @@ Generated from local Git and GitHub. Do not edit.
 | #235 | `dependabot/github_actions/taiki-e/install-action-2.87.12@de0353cce59e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.6 to 2.87.12 |
 | #236 | `dependabot/cargo/toml-1.1.6spec-1.1.0@9dc09c5208ab` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump toml from 0.8.23 to 1.1.6+spec-1.1.0 |
 | #237 | `dependabot/cargo/thiserror-2.0.20@83dba9288d9c` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump thiserror from 2.0.16 to 2.0.20 |
-| #264 | `feature/ar-1356-control-runtime-attestation-primitive@ce7401a2c6e7` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | feat(runtime): bind live enrollment to control attestation |
+| #264 | `feature/ar-1356-control-runtime-attestation-primitive@ce7401a2c6e7` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | feat(runtime): bind live enrollment to control attestation |
 
 ## Recent workflows
 
@@ -36,7 +36,7 @@ Generated from local Git and GitHub. Do not edit.
 | 35921962161 | `ce7401a2c6e7` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 35921962075 | `ce7401a2c6e7` | pull_request | Huawei MIT source headers | completed:success |
 | 35921962053 | `ce7401a2c6e7` | pull_request | Formal assurance | in_progress:- |
-| 35921962011 | `ce7401a2c6e7` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 35921962011 | `ce7401a2c6e7` | pull_request | Hosted portability and native qualification | completed:success |
 | 35921309050 | `70f8a3980cb0` | pull_request | Rust verification | completed:cancelled |
 | 35921309049 | `70f8a3980cb0` | pull_request | Formal assurance | completed:failure |
 | 35921309046 | `70f8a3980cb0` | pull_request | Repository quality | completed:failure |
