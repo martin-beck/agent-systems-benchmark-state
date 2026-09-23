@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1342](tasks/AR-1342-live-relay-factory-cli-integration.md): Runtime-owned live relay factory and CLI integration | Create the runtime-owned relay factory and opaque launch context required for safe live CLI execution. | Independent review and exact-head PR #259 CI are pending. Do not merge/release until every required check passes; then verify protected-main post-merge evidence and advance AR-1329. | codex-asb-ar1342-20260923 |
+| P1 | [AR-1342](tasks/AR-1342-live-relay-factory-cli-integration.md): Runtime-owned live relay factory and CLI integration | Create the runtime-owned relay factory and opaque launch context required for safe live CLI execution. | PR #259 repair pushed at a934168. Wait for rerun of policy/supply-chain and all exact-head required checks plus independent review; do not merge or release until green, then verify post-merge and advance AR-1329. | codex-asb-ar1342-20260923 |
 
 ## Open
 

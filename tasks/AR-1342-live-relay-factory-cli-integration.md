@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1342-live-relay-factory-cli-integration",
-  "checkpoint_commit": "71f67e2ca22945b42672b7ad1cfc7a0eef7f4b88",
+  "checkpoint_commit": "a934168d9dc17ecb6d6d765b216869bc82cf840c",
   "claim_expires": "2026-09-23T13:54:25+00:00",
   "depends_on": [
     "AR-1327",
@@ -10,7 +10,7 @@
     "AR-1340"
   ],
   "id": "AR-1342",
-  "next_action": "Independent review and exact-head PR #259 CI are pending. Do not merge/release until every required check passes; then verify protected-main post-merge evidence and advance AR-1329.",
+  "next_action": "PR #259 repair pushed at a934168. Wait for rerun of policy/supply-chain and all exact-head required checks plus independent review; do not merge or release until green, then verify post-merge and advance AR-1329.",
   "observed_branch": "feature/ar-1342-live-relay-factory-cli-integration",
   "observed_dirty": 0,
   "observed_head": "a934168d9dc17ecb6d6d765b216869bc82cf840c",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Create the runtime-owned relay factory and opaque launch context required for safe live CLI execution.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Runtime-owned live relay factory and CLI integration",
-  "updated_at": "2026-09-23T11:54:25+00:00",
+  "updated_at": "2026-09-23T11:54:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1342-live-relay-factory-cli-integration"
 }
 ---
@@ -162,3 +162,8 @@ until it is complete, live spawning remains fail-closed.
 - 2026-09-23T11:54:21+00:00: Heartbeat by codex-asb-ar1342-20260923.
 
 - 2026-09-23T11:54:25+00:00: Heartbeat by codex-asb-ar1342-20260923.
+
+- 2026-09-23T11:54:38+00:00: Repaired deterministic copied-capability test: conditional nibble
+  toggle guarantees a changed digest even when the original begins with 0. Focused cargo test
+  --locked -p asb-runtime live_namespace --lib passed 9/9. Signed+DCO fix commit a934168 pushed to
+  PR #259. Prior policy failure was test no-op mutation, not product behavior.
