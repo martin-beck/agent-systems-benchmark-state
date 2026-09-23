@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1342](tasks/AR-1342-live-relay-factory-cli-integration.md): Runtime-owned live relay factory and CLI integration | Create the runtime-owned relay factory and opaque launch context required for safe live CLI execution. | Rust verification run 35857214480 was rerun through handoffctl and is in progress at the same head. Monitor its conclusion and remaining exact-head checks; keep PR #259 unmerged. | codex-asb-ar1342-20260923 |
+| P1 | [AR-1342](tasks/AR-1342-live-relay-factory-cli-integration.md): Runtime-owned live relay factory and CLI integration | Create the runtime-owned relay factory and opaque launch context required for safe live CLI execution. | All 12 exact-head checks are green and complete diff independently reviewed; GitHub self-approval is unavailable because coordinator is PR author. Merge PR #259 through established gate, then verify all seven post-merge workflows before releasing AR-1342 and advancing AR-1329. | codex-asb-ar1342-20260923 |
 
 ## Open
 
