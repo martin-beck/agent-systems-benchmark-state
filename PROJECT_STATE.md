@@ -30,7 +30,7 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 35830485647 | `551330b8ba75` | push | Repository quality | completed:failure |
-| 35830485636 | `551330b8ba75` | push | Rust verification | in_progress:- |
+| 35830485636 | `551330b8ba75` | push | Rust verification | completed:failure |
 | 35830485519 | `551330b8ba75` | push | Formal assurance | completed:success |
 | 35830485488 | `551330b8ba75` | push | Fault assurance | completed:success |
 | 35830485441 | `551330b8ba75` | push | Huawei MIT source headers | completed:success |
