@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1361-runtime-control-receipt-source.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Provide authenticated control receipt delivery and runtime-owned dispatch composition for CLI consumers.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Runtime control receipt source",
-  "updated_at": "2026-09-24T00:00:00+00:00",
+  "updated_at": "2026-09-23T23:03:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1361-runtime-control-receipt-source"
 }
 ---
@@ -31,3 +31,6 @@ authority.
 - 2026-09-24T00:00:00+00:00: Created after AR-1360 audit found that the merged
   receipt ingestion bridge has no authenticated ControlClient source and no
   runtime-owned cross-crate dispatch factory. AR-1360 remains blocked.
+
+- 2026-09-23T23:03:15+00:00: Promote missing authenticated control receipt source and runtime-owned
+  dispatch factory; dependency AR-1359 is merged and fully verified.
