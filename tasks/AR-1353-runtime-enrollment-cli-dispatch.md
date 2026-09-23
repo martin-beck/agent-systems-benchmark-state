@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add runtime-owned enrollment and opaque live CLI dispatch.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Runtime enrollment and CLI dispatch",
-  "updated_at": "2026-09-23T20:47:51+00:00",
+  "updated_at": "2026-09-23T20:48:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1353-runtime-enrollment-cli-dispatch"
 }
 ---
@@ -33,3 +33,6 @@ AR-1329 stays fail-closed until this seam is merged.
   downstream enrollment/CLI dispatch repair; AR-1349 and AR-1329 remain fail-closed consumers.
 
 - 2026-09-23T20:47:51+00:00: Claimed by codex-asb-ar1329-live-cli-luna56.
+
+- 2026-09-23T20:48:08+00:00: Recorded command exit 0; command argv SHA-256
+  589e2ee0b49b9b295694812f8163f3a74ad9aa8aadea9279d8a99555e676994f.
