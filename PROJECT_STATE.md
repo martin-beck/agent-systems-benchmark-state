@@ -23,21 +23,21 @@ Generated from local Git and GitHub. Do not edit.
 | #235 | `dependabot/github_actions/taiki-e/install-action-2.87.12@de0353cce59e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.6 to 2.87.12 |
 | #236 | `dependabot/cargo/toml-1.1.6spec-1.1.0@9dc09c5208ab` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump toml from 0.8.23 to 1.1.6+spec-1.1.0 |
 | #237 | `dependabot/cargo/thiserror-2.0.20@83dba9288d9c` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump thiserror from 2.0.16 to 2.0.20 |
-| #260 | `feature/ar-1344-runtime-cli-acquisition-contract@6b06b12639be` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Runtime-owned CLI live acquisition factory |
+| #260 | `feature/ar-1344-runtime-cli-acquisition-contract@cd2d1e60b151` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED: | Runtime-owned CLI live acquisition factory |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 35875485427 | `cd2d1e60b151` | pull_request | Fault assurance | queued:- |
+| 35875485361 | `cd2d1e60b151` | pull_request | Repository quality | queued:- |
+| 35875485357 | `cd2d1e60b151` | pull_request | Hosted portability and native qualification | queued:- |
+| 35875485346 | `cd2d1e60b151` | pull_request | Emulated aarch64 portability | queued:- |
+| 35875485323 | `cd2d1e60b151` | pull_request | Huawei MIT source headers | queued:- |
+| 35875485251 | `cd2d1e60b151` | pull_request | Formal assurance | queued:- |
+| 35875485250 | `cd2d1e60b151` | pull_request | Agent Workflow Quality shadow | queued:- |
+| 35875485239 | `cd2d1e60b151` | pull_request | Rust verification | queued:- |
 | 35871579348 | `6b06b12639be` | pull_request | Formal assurance | completed:success |
 | 35871579346 | `6b06b12639be` | pull_request | Repository quality | completed:failure |
 | 35871579317 | `6b06b12639be` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 35871579160 | `6b06b12639be` | pull_request | Rust verification | completed:success |
-| 35871579149 | `6b06b12639be` | pull_request | Hosted portability and native qualification | completed:success |
-| 35871579083 | `6b06b12639be` | pull_request | Emulated aarch64 portability | completed:success |
-| 35871579061 | `6b06b12639be` | pull_request | Fault assurance | completed:success |
-| 35871579047 | `6b06b12639be` | pull_request | Huawei MIT source headers | completed:success |
-| 35870232677 | `7b8d2966b8f4` | pull_request | Formal assurance | completed:success |
-| 35870232665 | `7b8d2966b8f4` | pull_request | Fault assurance | completed:success |
-| 35870232656 | `7b8d2966b8f4` | pull_request | Huawei MIT source headers | completed:success |
-| 35870232652 | `7b8d2966b8f4` | pull_request | Emulated aarch64 portability | completed:success |
