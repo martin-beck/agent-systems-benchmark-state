@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist the per-user OpenRouter free-model configuration and credential-free key enrollment.",
-  "task_revision": 133,
+  "task_revision": 134,
   "title": "OpenRouter free-model user configuration and key enrollment",
-  "updated_at": "2026-09-23T08:24:37+00:00",
+  "updated_at": "2026-09-23T08:25:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1328-openrouter-free-model-config"
 }
 ---
@@ -360,3 +360,6 @@ configurations fail closed.
 - 2026-09-23T08:24:37+00:00: Concurrent signed+DCO commit 8ff10cb adds config-backed plan and run
   path tests. Focused OpenRouter CLI tests pass (6/6); exact remote head changed and hosted checks
   restarted. No new failure observed.
+
+- 2026-09-23T08:25:31+00:00: Recorded command exit 0; command argv SHA-256
+  aa75a47abb51c989607a90cde0d8370262f138508299c06ab69b5d163bb590db.
