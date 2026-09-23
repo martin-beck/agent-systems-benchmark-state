@@ -10,16 +10,16 @@
   "next_action": "Integrate ProviderEgressRelay into the runtime-owned sandbox/CLI live launch handoff; relay now connects only authorized exact targets and bounds forwarding, with synthetic transport tests.",
   "observed_branch": "feature/ar-1339-live-provider-egress-backend",
   "observed_dirty": 0,
-  "observed_head": "5d8e1105855b41e81664b3445c284ce68b0de6a0",
+  "observed_head": "90d50561ee76df6711a2235c0ad4feccc55fc6e5",
   "owner": "codex-asb-ar1339-20260923",
   "plan": "../plans/AR-1339-live-provider-egress-backend.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the runtime-owned authenticated backend for explicit live provider egress.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Runtime-owned live-provider egress backend",
-  "updated_at": "2026-09-23T09:31:53+00:00",
+  "updated_at": "2026-09-23T09:32:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1339-live-provider-egress-backend"
 }
 ---
