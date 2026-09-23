@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1354-runtime-enrollment-implementation",
   "checkpoint_commit": "d83a85926f2c4c42317617f4f6b7b3c9a3195874",
-  "claim_expires": "2026-09-23T22:29:43+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1352"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1354-runtime-enrollment-implementation",
   "observed_dirty": 0,
   "observed_head": "d83a85926f2c4c42317617f4f6b7b3c9a3195874",
-  "owner": "codex-asb-runtime-acquisition-successor-luna56",
+  "owner": "",
   "plan": "../plans/AR-1354-runtime-enrollment-implementation.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Implement config-backed runtime-owned enrollment for live CLI dispatch.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Runtime enrollment implementation",
-  "updated_at": "2026-09-23T21:00:14+00:00",
+  "updated_at": "2026-09-23T21:01:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1354-runtime-enrollment-implementation"
 }
 ---
@@ -50,3 +50,8 @@ durably promoted; AR-1329 remains fail-closed.
   are crate-private. asb-cli has only OpenRouter config/selection digests, no attested
   target/tool/root authority. Exposing a constructor or accepting paths/targets from CLI would
   violate the AR and fail-closed boundary, so no product diff was made.
+
+- 2026-09-23T21:01:36+00:00: Released blocked with evidence: no attested runtime/control-owned
+  enrollment record can currently supply concrete target/tool/lease/relay authority without exposing
+  caller-controlled launch inputs. Successor AR-1355 created for the missing transport and
+  acceptance tests; AR-1329 remains fail-closed.
