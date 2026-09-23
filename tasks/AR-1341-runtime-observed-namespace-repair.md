@@ -9,7 +9,7 @@
   "id": "AR-1341",
   "next_action": "Promote after AR-1339 is verified done; implement runtime-observed identity comparison and copied/stale/mismatch denial evidence before AR-1340 or AR-1329 advances.",
   "observed_branch": "feature/ar-1341-runtime-observed-namespace-repair",
-  "observed_dirty": 2,
+  "observed_dirty": 3,
   "observed_head": "69ebcde1611e47b39e2329587170609862398fa4",
   "owner": "codex-asb-ar1341-20260923",
   "plan": "../plans/AR-1341.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair AR-1340 so live relay capabilities require runtime-observed child namespace agreement.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Runtime-observed namespace attestation repair",
-  "updated_at": "2026-09-23T10:51:54+00:00",
+  "updated_at": "2026-09-23T10:52:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1341-runtime-observed-namespace-repair"
 }
 ---
