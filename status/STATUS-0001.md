@@ -1747,7 +1747,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1326](../tasks/AR-1326-openrouter-catalog-selection.md): Select OpenRouter through the CLI provider catalog | codex-asb-ar1326-20260923 | Advertise the OpenRouter profile in the CLI provider catalog and accept it in provider-plan selection. | Add the openrouter profile entry to provider_catalog and provider_catalog_digest, accept it in provider_plan and validate_provider_selection, and bind plans to the pinned OpenRouter model identity. |
+| P1 | [AR-1326](../tasks/AR-1326-openrouter-catalog-selection.md): Select OpenRouter through the CLI provider catalog | codex-asb-ar1326-20260923 | Advertise the OpenRouter profile in the CLI provider catalog and accept it in provider-plan selection. | Monitor exact-head PR #250 checks for head 64a3a002018a542cba9a6e5844589c89417700a5; merge only after every required check is green and independent diff review is complete. Local fmt, clippy, focused CLI test, and focused mini_swe rerun pass; full parallel workspace test exposed three concurrent Text file busy failures and one control-state ownership collision, each passes serially, so retain these as environment-concurrency evidence. |
 
 ### Open (3)
 

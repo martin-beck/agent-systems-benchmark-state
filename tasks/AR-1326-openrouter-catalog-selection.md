@@ -8,7 +8,7 @@
     "AR-1325"
   ],
   "id": "AR-1326",
-  "next_action": "Add the openrouter profile entry to provider_catalog and provider_catalog_digest, accept it in provider_plan and validate_provider_selection, and bind plans to the pinned OpenRouter model identity.",
+  "next_action": "Monitor exact-head PR #250 checks for head 64a3a002018a542cba9a6e5844589c89417700a5; merge only after every required check is green and independent diff review is complete. Local fmt, clippy, focused CLI test, and focused mini_swe rerun pass; full parallel workspace test exposed three concurrent Text file busy failures and one control-state ownership collision, each passes serially, so retain these as environment-concurrency evidence.",
   "observed_branch": "feature/ar-1326-openrouter-catalog-selection",
   "observed_dirty": 0,
   "observed_head": "64a3a002018a542cba9a6e5844589c89417700a5",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Advertise the OpenRouter profile in the CLI provider catalog and accept it in provider-plan selection.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Select OpenRouter through the CLI provider catalog",
-  "updated_at": "2026-09-23T06:52:51+00:00",
+  "updated_at": "2026-09-23T06:53:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1326-openrouter-catalog-selection"
 }
 ---
@@ -84,3 +84,8 @@ the fail-closed content-address checks.
 
 - 2026-09-23T06:52:51+00:00: Recorded command exit 0; command argv SHA-256
   21dedc4c397aec52824556459b566d4c78dd18b5e5b27ef668d0a4193bd42895.
+
+- 2026-09-23T06:53:18+00:00: Replacement worker audit: implementation head is clean, signed+DCO;
+  local focused gates pass. Full parallel workspace and CLI runs had infrastructure concurrency
+  failures (mini_swe ExecutableFileBusy x3; control state root already owned), reproduced tests
+  passed with --test-threads=1. Hosted required checks remain in progress.
