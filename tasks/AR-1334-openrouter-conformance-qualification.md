@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the pinned OpenRouter free model under conformance and hostile fail-closed testing.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "OpenRouter free-model conformance and hostile qualification",
-  "updated_at": "2026-09-23T08:56:35+00:00",
+  "updated_at": "2026-09-23T08:56:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1334-openrouter-conformance-qualification"
 }
 ---
@@ -46,4 +46,7 @@ provider effect; real provider contact is opt-in and never required for CI.
 - 2026-09-23T08:56:23+00:00: Heartbeat by codex-asb-ar1334-20260923.
 
 - 2026-09-23T08:56:25+00:00: Recorded command exit 1; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
+
+- 2026-09-23T08:56:42+00:00: Recorded command exit 0; command argv SHA-256
   cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
