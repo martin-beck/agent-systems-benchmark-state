@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1349](tasks/AR-1349-live-provider-runtime-service.md): Production live-provider runtime service | Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep. | Bootstrap remains the exact missing private seam: LiveProviderProvisioner composes attempts once given policy, allowlist, backend, and relay root, but no runtime-owned API currently derives those from a validated CLI selection. Add a private runtime bootstrap/profile source, then expose only an opaque service handle to run/sweep; do not make provisioner construction public or retain injected factories. | codex-asb-ar1329-live-cli-luna56 |
-| P1 | [AR-1352](tasks/AR-1352-runtime-live-bootstrap.md): Runtime-owned live bootstrap | Add the private runtime-owned bootstrap source for live acquisition. | Commit the independently reviewed clean bootstrap slice with SSH signature and DCO, then publish through the reviewed PR workflow. Keep AR-1349/1329 fail-closed. | codex-asb-runtime-acquisition-successor-luna56 |
+| P1 | [AR-1352](tasks/AR-1352-runtime-live-bootstrap.md): Runtime-owned live bootstrap | Add the private runtime-owned bootstrap source for live acquisition. | Publish exact signed head e385a87 through reviewed PR workflow, obtain independent review, wait for exact-head CI, and merge only when all required checks are green. Keep AR-1349/1329 fail-closed. | codex-asb-runtime-acquisition-successor-luna56 |
 
 ## Open
 

@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1352-runtime-live-bootstrap",
-  "checkpoint_commit": "2ea6e6422ea61bc9e58a0144ac56713182a72eca",
+  "checkpoint_commit": "e385a87bed4a78f616d8fa1254257f15931af0f7",
   "claim_expires": "2026-09-23T22:15:07+00:00",
   "depends_on": [
     "AR-1351"
   ],
   "id": "AR-1352",
-  "next_action": "Commit the independently reviewed clean bootstrap slice with SSH signature and DCO, then publish through the reviewed PR workflow. Keep AR-1349/1329 fail-closed.",
+  "next_action": "Publish exact signed head e385a87 through reviewed PR workflow, obtain independent review, wait for exact-head CI, and merge only when all required checks are green. Keep AR-1349/1329 fail-closed.",
   "observed_branch": "feature/ar-1352-runtime-live-bootstrap",
   "observed_dirty": 0,
   "observed_head": "e385a87bed4a78f616d8fa1254257f15931af0f7",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the private runtime-owned bootstrap source for live acquisition.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Runtime-owned live bootstrap",
-  "updated_at": "2026-09-23T20:23:01+00:00",
+  "updated_at": "2026-09-23T20:23:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1352-runtime-live-bootstrap"
 }
 ---
@@ -129,3 +129,10 @@ integration. AR-1329 remains fail-closed.
 
 - 2026-09-23T20:22:50+00:00: Recorded command exit 0; command argv SHA-256
   42ae500d411eebc51bbaac05b9bf10f69c460cdff35e84bdb1fec07f50371c8d.
+
+- 2026-09-23T20:23:21+00:00: Signed+DCO commit e385a87 implements crate-private
+  LiveProviderBootstrapSpec: canonical non-symlink relay-root validation, enrolled exact
+  policy/allowlist/target checks, pinned ToolPin set including live launch gate, and opaque
+  provisioner construction. Full workspace tests and doc tests pass after isolated rerun; runtime
+  lib 100 passed/1 ignored, check and workspace clippy pass. Tree clean; no secrets, raw output,
+  private paths, or authority internals exposed.
