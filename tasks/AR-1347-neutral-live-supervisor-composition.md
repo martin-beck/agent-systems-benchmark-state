@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1347-neutral-live-supervisor-composition",
   "checkpoint_commit": "a336d6744b1a82f36a706ec606b847c92d49cfd3",
-  "claim_expires": "",
+  "claim_expires": "2026-09-23T17:37:59+00:00",
   "depends_on": [
     "AR-1327",
     "AR-1328",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1347-neutral-live-supervisor-composition",
   "observed_dirty": 0,
   "observed_head": "a336d6744b1a82f36a706ec606b847c92d49cfd3",
-  "owner": "",
+  "owner": "codex-asb-ar1329-live-cli-luna56",
   "plan": "../plans/AR-1347-neutral-live-supervisor-composition.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Add the dependency-safe opaque supervisor contract needed for live-provider acquisition.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Neutral live-supervisor composition contract",
-  "updated_at": "2026-09-23T15:37:56+00:00",
+  "updated_at": "2026-09-23T15:37:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1347-neutral-live-supervisor-composition"
 }
 ---
@@ -33,3 +33,5 @@ or introduce a cyclic dependency.
 
 - 2026-09-23T15:37:56+00:00: Promote neutral cross-crate supervisor composition repair from AR-1346
   audit; dependencies complete and AR-1329 remains fail-closed.
+
+- 2026-09-23T15:37:59+00:00: Claimed by codex-asb-ar1329-live-cli-luna56.
