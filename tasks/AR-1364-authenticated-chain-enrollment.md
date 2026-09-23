@@ -9,17 +9,17 @@
   "id": "AR-1364",
   "next_action": "Promote after AR-1362 is done, then add authenticated certificate-chain enrollment/materialization for the control receipt source.",
   "observed_branch": "feature/ar-1364-authenticated-chain-enrollment",
-  "observed_dirty": 1,
-  "observed_head": "e9d4d3d1c6a4d67d0ce0e49fa8eaf696561fe45e",
+  "observed_dirty": 0,
+  "observed_head": "47914d8fd49ca5b5132c0734d3739df4502b7853",
   "owner": "codex-asb-runtime-attested-enrollment-luna56",
   "plan": "../plans/AR-1364-authenticated-chain-enrollment.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize authenticated certificate-chain authority for control-owned runtime receipt issuance.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Authenticated chain enrollment",
-  "updated_at": "2026-09-23T23:32:26+00:00",
+  "updated_at": "2026-09-23T23:32:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1364-authenticated-chain-enrollment"
 }
 ---
