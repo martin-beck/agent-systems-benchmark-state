@@ -12,17 +12,17 @@
   "id": "AR-1350",
   "next_action": "Hosted run 35899655572 on exact head 709dae14b3ddecc143af4bcb722c3c4250412225 completed with tests, native Goose, docs, and release build green, but manual workflow_dispatch DCO certification failed because it scanned merge base commit 909078ced21f36e5a72590c9decf41ac56452212 without a Signed-off-by trailer; this is a dispatch-context failure, not the PR event DCO path. Coverage also failed at 87.95%. Add neutral positive/negative coverage tests, run local workspace coverage/full gates, commit signed+DCO, push the same PR, and rely on fresh PR-triggered exact-head checks.",
   "observed_branch": "feature/ar-1350-sandbox-credential-channel",
-  "observed_dirty": 2,
-  "observed_head": "709dae14b3ddecc143af4bcb722c3c4250412225",
+  "observed_dirty": 0,
+  "observed_head": "edd9759f982dffa30001a0ef87dafcf409280135",
   "owner": "codex-asb-ar1350-sandbox-channel-luna56",
   "plan": "../plans/AR-1350-sandbox-credential-channel.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement a sandbox-owned sealed-FD credential channel for live provider children.",
-  "task_revision": 107,
+  "task_revision": 108,
   "title": "Sandbox-owned credential channel",
-  "updated_at": "2026-09-23T18:12:27+00:00",
+  "updated_at": "2026-09-23T18:12:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1350-sandbox-credential-channel"
 }
 ---
