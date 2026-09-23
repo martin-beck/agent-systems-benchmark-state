@@ -28,13 +28,13 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35831952546 | `5207ce478986` | push | Formal assurance | in_progress:- |
+| 35831952546 | `5207ce478986` | push | Formal assurance | completed:success |
 | 35831952545 | `5207ce478986` | push | Repository quality | in_progress:- |
 | 35831952487 | `5207ce478986` | push | Huawei MIT source headers | completed:success |
 | 35831952482 | `5207ce478986` | push | Emulated aarch64 portability | in_progress:- |
 | 35831952461 | `5207ce478986` | push | Rust verification | in_progress:- |
 | 35831952405 | `5207ce478986` | push | Hosted portability and native qualification | completed:success |
-| 35831952393 | `5207ce478986` | push | Fault assurance | in_progress:- |
+| 35831952393 | `5207ce478986` | push | Fault assurance | completed:success |
 | 35831215558 | `bdb3bf028f0a` | pull_request | Hosted portability and native qualification | completed:success |
 | 35831215537 | `bdb3bf028f0a` | pull_request | Emulated aarch64 portability | completed:success |
 | 35831215523 | `bdb3bf028f0a` | pull_request | Agent Workflow Quality shadow | completed:success |
