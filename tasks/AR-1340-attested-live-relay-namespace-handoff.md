@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1340-attested-live-relay-handoff",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-23T11:59:44+00:00",
+  "claim_expires": "2026-09-23T11:35:32+00:00",
   "depends_on": [
     "AR-1339"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind the live provider relay to an attested child namespace and integrate it without weakening offline or replay denial.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Attested live-relay namespace and child handoff",
-  "updated_at": "2026-09-23T10:00:45+00:00",
+  "updated_at": "2026-09-23T10:05:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1340-attested-live-relay-handoff"
 }
 ---
@@ -46,3 +46,5 @@ public coordination state or runtime evidence.
 
 - 2026-09-23T10:00:35+00:00: Recorded command exit 0; command argv SHA-256
   22ed2e8a9ede04c3c203542ecdf0fb94acc5b4d57c230bdbb6069a58a69fbe1b.
+
+- 2026-09-23T10:05:32+00:00: Heartbeat by codex-asb-ar1340-20260923.
