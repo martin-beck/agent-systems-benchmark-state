@@ -8,11 +8,10 @@
     "AR-1328",
     "AR-1339",
     "AR-1340",
-    "AR-1347",
-    "AR-1348"
+    "AR-1347"
   ],
   "id": "AR-1349",
-  "next_action": "Promote after AR-1327, AR-1328, AR-1339, AR-1340, AR-1347 and AR-1348 are verified. Implement the production LiveProviderRuntimeService atomic acquisition boundary and wire asb run/sweep; keep AR-1329 fail-closed until exact-head CI and post-merge lifecycle evidence pass.",
+  "next_action": "Promote after AR-1327, AR-1328, AR-1339, AR-1340 and AR-1347 are verified. AR-1348 is superseded as partial lifecycle evidence by this coordinator repair. Implement the production LiveProviderRuntimeService atomic acquisition boundary and wire asb run/sweep; keep AR-1329 fail-closed until exact-head CI and exact lifecycle evidence pass.",
   "owner": "",
   "plan": "../plans/AR-1349-live-provider-runtime-service.md",
   "priority": "P1",
