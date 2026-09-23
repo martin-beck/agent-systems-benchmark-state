@@ -11,8 +11,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 3 |
+| **In progress** | Claimed work with a live lease | 3 |
+| **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 49 |
 | **Planned** | Defined work awaiting promotion or dependencies | 68 |
 | **Future** | Deferred roadmap work | 1 |
@@ -416,7 +416,7 @@ flowchart LR
         AR_1319["AR-1319 - Done"]:::status_done
         AR_1320["AR-1320 - Planned"]:::status_planned
         AR_1322["AR-1322 - Done"]:::status_done
-        AR_1324["AR-1324 - Open"]:::status_open
+        AR_1324["AR-1324 - In progress"]:::status_in_progress
         AR_1325["AR-1325 - In progress"]:::status_in_progress
         AR_1326["AR-1326 - Planned"]:::status_planned
         AR_1327["AR-1327 - Planned"]:::status_planned
@@ -1740,20 +1740,20 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1212](../tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | asb_tui_tutorial_20260922 | Teach users to test configured-agent benchmark eligibility without running an agent. | Implement the offline tutorial for checking agent benchmark readiness under the current configuration. |
+| P0 | [AR-1324](../tasks/AR-1324-auth-helper-control-contract.md): Authenticated credential-helper control contract | codex | Own the ASB control and runner backend for safe credential-helper invocation. | Monitor pull_request-context checks from reopened PR #248 (runs 35562641313, 35562641328, 35562641357, 35562641373, 35562641375, 35562641394, 35562641439, 35562641374); merge only when all required checks pass, then perform ASB↔asb-tui first-user/live-provider wizard acceptance. |
 | P1 | [AR-1325](../tasks/AR-1325-provider-openrouter.md): Support a shared OpenRouter provider | ar1325-openrouter | Define one pinned credential-free OpenRouter provider profile for compatible ASB agent adapters. | Pin the OpenRouter endpoint identity, dated model snapshot, transport bounds and OPENROUTER_API_KEY credential reference, then implement the credential-free provider profile with fail-closed validation. |
 
-### Open (3)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1314](../tasks/AR-1314-optional-bundle-signing-development-release.md): Optional runtime-bundle signing for development and tagged releases | Unclaimed | Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile. | Wait for PR #232 exact-head CI after schema-v3 repair; if all required checks pass, independently review and merge through the established workflow, then reconcile AR-1314. Preserve signature-required defaults. |
 | P0 | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | Unclaimed | Publish the verified ASB agent catalog required by the first-run setup wizard. | Persist the authenticated catalog snapshot/generation and complete live ASB-to-asb-tui wizard evidence; keep all entries unavailable until a verified release closure exists. |
-| P0 | [AR-1324](../tasks/AR-1324-auth-helper-control-contract.md): Authenticated credential-helper control contract | Unclaimed | Own the ASB control and runner backend for safe credential-helper invocation. | Monitor pull_request-context checks from reopened PR #248 (runs 35562641313, 35562641328, 35562641357, 35562641373, 35562641375, 35562641394, 35562641439, 35562641374); merge only when all required checks pass, then perform ASB↔asb-tui first-user/live-provider wizard acceptance. |
 
 ### Blocked (49)
 

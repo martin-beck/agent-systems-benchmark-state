@@ -2,19 +2,19 @@
 {
   "branch": "feature/ar-1324-auth-helper-control-contract",
   "checkpoint_commit": "ed61f865c99d139facb813e7344699595dc7155e",
-  "claim_expires": "",
+  "claim_expires": "2026-09-23T07:45:07+00:00",
   "depends_on": [],
   "id": "AR-1324",
   "next_action": "Monitor pull_request-context checks from reopened PR #248 (runs 35562641313, 35562641328, 35562641357, 35562641373, 35562641375, 35562641394, 35562641439, 35562641374); merge only when all required checks pass, then perform ASB\u2194asb-tui first-user/live-provider wizard acceptance.",
-  "owner": "",
+  "owner": "codex",
   "plan": "../plans/AR-1324.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Own the ASB control and runner backend for safe credential-helper invocation.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Authenticated credential-helper control contract",
-  "updated_at": "2026-09-22T13:47:03+00:00",
+  "updated_at": "2026-09-23T05:45:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1324-auth-helper-control-contract"
 }
 ---
@@ -107,3 +107,5 @@ never receive a raw credential or execute an arbitrary path.
 - 2026-09-22T13:47:03+00:00: Recovered expired claim formerly owned by codex-ar1324. Claim expired
   at 2026-09-21T05:31:23Z and no owner process exists; released to open as prerequisite for adding
   the AR-1328..1336 benchmark integration series.
+
+- 2026-09-23T05:45:07+00:00: Claimed by codex.
