@@ -23,19 +23,19 @@ Generated from local Git and GitHub. Do not edit.
 | #235 | `dependabot/github_actions/taiki-e/install-action-2.87.12@de0353cce59e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.6 to 2.87.12 |
 | #236 | `dependabot/cargo/toml-1.1.6spec-1.1.0@9dc09c5208ab` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump toml from 0.8.23 to 1.1.6+spec-1.1.0 |
 | #237 | `dependabot/cargo/thiserror-2.0.20@83dba9288d9c` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump thiserror from 2.0.16 to 2.0.20 |
-| #259 | `feature/ar-1342-live-relay-factory-cli-integration@71f67e2ca229` | `main` | UNSTABLE | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(runtime): add live relay launch factory |
+| #259 | `feature/ar-1342-live-relay-factory-cli-integration@71f67e2ca229` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(runtime): add live relay launch factory |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 35856281067 | `71f67e2ca229` | pull_request | Rust verification | in_progress:- |
-| 35856281002 | `71f67e2ca229` | pull_request | Huawei MIT source headers | in_progress:- |
+| 35856281002 | `71f67e2ca229` | pull_request | Huawei MIT source headers | completed:success |
 | 35856280962 | `71f67e2ca229` | pull_request | Hosted portability and native qualification | in_progress:- |
 | 35856280939 | `71f67e2ca229` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 35856280883 | `71f67e2ca229` | pull_request | Formal assurance | in_progress:- |
-| 35856280797 | `71f67e2ca229` | pull_request | Agent Workflow Quality shadow | in_progress:- |
-| 35856280787 | `71f67e2ca229` | pull_request | Fault assurance | queued:- |
+| 35856280797 | `71f67e2ca229` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 35856280787 | `71f67e2ca229` | pull_request | Fault assurance | in_progress:- |
 | 35856280761 | `71f67e2ca229` | pull_request | Repository quality | in_progress:- |
 | 35853535986 | `2774b1d648b5` | push | Huawei MIT source headers | completed:success |
 | 35853535973 | `2774b1d648b5` | push | Rust verification | completed:success |
