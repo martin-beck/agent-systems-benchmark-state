@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the private host/runtime provisioning seam for live acquisition.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Runtime-owned live provisioning",
-  "updated_at": "2026-09-23T19:23:03+00:00",
+  "updated_at": "2026-09-23T19:23:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1351-live-runtime-provisioning"
 }
 ---
@@ -92,3 +92,6 @@ runtime boundary; AR-1349 remains fail-closed until it is merged and verified.
   and ToolPin in tests. Latest cargo check -p asb-runtime and five live_service tests pass. Added
   bind_runtime so the real relay listener is held while the namespace handoff is issued; no
   placeholder socket remains.
+
+- 2026-09-23T19:23:46+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
