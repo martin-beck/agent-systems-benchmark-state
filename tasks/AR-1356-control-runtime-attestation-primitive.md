@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1356-control-runtime-attestation-primitive",
-  "checkpoint_commit": "726f4ccd1a20ce4e9bbf4abf819a1f0e3446fb15",
+  "checkpoint_commit": "70f8a3980cb0ed81bfdcb8a203f953467e319a11",
   "claim_expires": "2026-09-23T23:06:43+00:00",
   "depends_on": [
     "AR-1352"
   ],
   "id": "AR-1356",
-  "next_action": "Reuse authenticated asb-control enrollment/certificate contracts to define and verify a bounded control-to-runtime attestation, then issue the opaque runtime capability needed by AR-1355.",
+  "next_action": "Signed+DCO commit 70f8a39 adds control certificate metadata issuance and private runtime claims/attestation validation with negative tests. Run full workspace gates and then let AR-1355 consume the private bridge; do not expose constructors or release live dispatch yet.",
   "observed_branch": "feature/ar-1356-control-runtime-attestation-primitive",
   "observed_dirty": 0,
   "observed_head": "70f8a3980cb0ed81bfdcb8a203f953467e319a11",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Issue runtime-owned live enrollment capability from authenticated control attestation.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Control/runtime enrollment attestation primitive",
-  "updated_at": "2026-09-23T21:11:22+00:00",
+  "updated_at": "2026-09-23T21:11:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1356-control-runtime-attestation-primitive"
 }
 ---
@@ -78,3 +78,9 @@ dispatch and do not expose caller-supplied launch authority.
 
 - 2026-09-23T21:11:22+00:00: Recorded command exit 1; command argv SHA-256
   48ae495b2b5fa87b94960e175f923719bf2e7c228ec8f3c4902d92d0f444761f.
+
+- 2026-09-23T21:11:38+00:00: Implemented bounded control/runtime attestation slice. Added
+  CertificateAuthorityV1::issue_metadata endpoint/generation/revocation validation; asb-runtime now
+  binds private LiveProviderControlClaims to issued operator/administrator chain and rejects
+  malformed digests/private targets. Focused live_service tests pass 11/11; cargo check --offline
+  --workspace passes. Product commit is SSH-signed+DCO.
