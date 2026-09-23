@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind the live provider relay to an attested child namespace and integrate it without weakening offline or replay denial.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Attested live-relay namespace and child handoff",
-  "updated_at": "2026-09-23T10:10:28+00:00",
+  "updated_at": "2026-09-23T10:10:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1340-attested-live-relay-handoff"
 }
 ---
@@ -66,3 +66,6 @@ public coordination state or runtime evidence.
   checkpoint is 229941f013ad45a21e746a052bc4ae8ec531cfd7. Lease remains valid; implementation worker
   is active in the declared AR-1340 worktree with dirty=2 (live_namespace.rs and lib.rs), so no
   recovery or ownership change was performed.
+
+- 2026-09-23T10:10:35+00:00: Recorded command exit 0; command argv SHA-256
+  b5edd7418cc0dc343311b890f47f6c91cb4dacb068e627e5122d831aacefd0df.
