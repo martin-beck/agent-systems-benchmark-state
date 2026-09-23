@@ -9,17 +9,17 @@
   "id": "AR-1356",
   "next_action": "Independent review complete; local fmt check, clippy -D warnings, locked workspace tests and doc tests pass. Product commit 70f8a39 is signed+DCO and authority constructors remain private. Publish exact-head PR through coordinator workflow, require all hosted checks and post-merge workflows before release; then advance AR-1355.",
   "observed_branch": "feature/ar-1356-control-runtime-attestation-primitive",
-  "observed_dirty": 1,
-  "observed_head": "70f8a3980cb0ed81bfdcb8a203f953467e319a11",
+  "observed_dirty": 0,
+  "observed_head": "ce7401a2c6e73ac3d48003ed19d5a8e0ca65cb97",
   "owner": "codex-asb-runtime-acquisition-successor-luna56",
   "plan": "../plans/AR-1356-control-runtime-attestation-primitive.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Issue runtime-owned live enrollment capability from authenticated control attestation.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Control/runtime enrollment attestation primitive",
-  "updated_at": "2026-09-23T21:21:07+00:00",
+  "updated_at": "2026-09-23T21:21:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1356-control-runtime-attestation-primitive"
 }
 ---
