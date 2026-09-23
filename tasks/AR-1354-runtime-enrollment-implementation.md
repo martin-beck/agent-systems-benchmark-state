@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1354-runtime-enrollment-implementation",
   "checkpoint_commit": "d83a85926f2c4c42317617f4f6b7b3c9a3195874",
-  "claim_expires": null,
+  "claim_expires": "2026-09-23T22:25:44+00:00",
   "depends_on": [
     "AR-1352"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1354-runtime-enrollment-implementation",
   "observed_dirty": 0,
   "observed_head": "d83a85926f2c4c42317617f4f6b7b3c9a3195874",
-  "owner": null,
+  "owner": "codex-asb-ar1329-live-cli-luna56",
   "plan": "../plans/AR-1354-runtime-enrollment-implementation.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Implement config-backed runtime-owned enrollment for live CLI dispatch.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Runtime enrollment implementation",
-  "updated_at": "2026-09-23T20:55:39+00:00",
+  "updated_at": "2026-09-23T20:55:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1354-runtime-enrollment-implementation"
 }
 ---
@@ -32,3 +32,5 @@ durably promoted; AR-1329 remains fail-closed.
 - 2026-09-23T20:55:39+00:00: Coordinator repaired stale superseded dependency edge: AR-1353
   transport evidence remains preserved, while AR-1354 now depends directly on merged AR-1352.
   Promote config-backed enrollment implementation; AR-1329 remains fail-closed.
+
+- 2026-09-23T20:55:44+00:00: Claimed by codex-asb-ar1329-live-cli-luna56.
