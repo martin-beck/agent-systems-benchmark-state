@@ -8,7 +8,7 @@
     "AR-1328"
   ],
   "id": "AR-1329",
-  "next_action": "Integrate ProviderEgressPolicy/ProviderEgressHandoff with a runtime-owned network-capable backend; current typed contract validates exact HTTPS host and rejects credentials/query injection, while NetworkPolicy::Deny remains unchanged and live CLI remains fail-closed until backend proof exists.",
+  "next_action": "Consume AR-1339 runtime-owned authenticated provider relay; then integrate live run/sweep and complete egress denial/live evidence.",
   "observed_branch": "feature/ar-1329-live-provider-run-execution",
   "observed_dirty": 0,
   "observed_head": "44ddf14334ac971e8e89bda195635595cfc651ab",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute real agents against the selected provider through asb run and sweep with credential-free resolution.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Live-provider run execution for real agents",
-  "updated_at": "2026-09-23T08:53:25+00:00",
+  "updated_at": "2026-09-23T08:55:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1329-live-provider-run-execution"
 }
 ---
@@ -52,3 +52,7 @@ the digest-pinned mode remain default and never touch the network.
 - 2026-09-23T08:53:25+00:00: Added runtime provider_egress module and denial tests. cargo test -p
   asb-runtime provider_egress, cargo check -p asb-cli and CLI live-gate tests pass. Actual
   authenticated relay/backend integration remains required.
+
+- 2026-09-23T08:55:36+00:00: AR-1339 created and claimed to implement the missing runtime
+  provider-egress backend. AR-1329 remains in_progress with safe fail-closed CLI and typed egress
+  identity committed at 44ddf14.
