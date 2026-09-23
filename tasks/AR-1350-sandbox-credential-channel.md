@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1350-sandbox-credential-channel",
-  "checkpoint_commit": "d456c71d37af65ae5ea2b6ce59930c3241d9567f",
+  "checkpoint_commit": "7030e2f3cdb725af384d6e2cba6e55f1bd7a4c18",
   "claim_expires": "2026-09-23T18:50:57+00:00",
   "depends_on": [
     "AR-1328",
@@ -10,7 +10,7 @@
     "AR-1347"
   ],
   "id": "AR-1350",
-  "next_action": "Fresh PR #261 exact head is d456c71d37af65ae5ea2b6ce59930c3241d9567f, pushed after hosted quality reported 89.94% (5825/57874 missed). Added deterministic sandbox launch injection-rejection coverage; local full cargo llvm-cov --workspace --all-targets --fail-under-lines 90 passes at 90.49% (57913 lines, 5509 missed), with fmt and clippy -D warnings green. Signed+DCO d456c71 verified. Monitor fresh PR-triggered exact-head CI and independent review; merge only when every required check is green.",
+  "next_action": "Fresh PR #261 exact head is 7030e2f3cdb725af384d6e2cba6e55f1bd7a4c18, pushed after hosted quality run 35902022299 reported 89.98% (5800/57913 missed). Added deterministic successful credential sealing and launch-boundary tool-probe coverage; local full cargo llvm-cov --workspace --all-targets --fail-under-lines 90 passes at 90.52% (57954 lines, 5494 missed), with fmt check, clippy -D warnings, and focused tests green. Signed+DCO 7030e2f verified. Monitor fresh PR-triggered exact-head checks and independent review; merge only when all required gates are green. Handoffctl post-reconcile currently reports unrelated expired AR-1349 claim; product push succeeded and this AR remains leased.",
   "observed_branch": "feature/ar-1350-sandbox-credential-channel",
   "observed_dirty": 1,
   "observed_head": "d456c71d37af65ae5ea2b6ce59930c3241d9567f",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement a sandbox-owned sealed-FD credential channel for live provider children.",
-  "task_revision": 133,
+  "task_revision": 134,
   "title": "Sandbox-owned credential channel",
-  "updated_at": "2026-09-23T18:31:05+00:00",
+  "updated_at": "2026-09-23T18:31:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1350-sandbox-credential-channel"
 }
 ---
@@ -393,3 +393,7 @@ private runtime channel before AR-1349 can safely acquire attempts or wire
 
 - 2026-09-23T18:31:05+00:00: Recorded command exit 0; command argv SHA-256
   5bdea314d99d18a411f4b5f8c843a7facf0c18df9cb0c73edf9ed92eeacc6d84.
+
+- 2026-09-23T18:31:39+00:00: Hosted coverage failure was exactly 89.98%, two lines below the
+  required floor. Successful sealing test is environment-independent and adds coverage without
+  policy weakening. Commit 7030e2f is SSH-signed+DCO and pushed to PR #261.
