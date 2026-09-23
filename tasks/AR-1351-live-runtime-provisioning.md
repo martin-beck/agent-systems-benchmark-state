@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the private host/runtime provisioning seam for live acquisition.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Runtime-owned live provisioning",
-  "updated_at": "2026-09-23T19:28:40+00:00",
+  "updated_at": "2026-09-23T19:28:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1351-live-runtime-provisioning"
 }
 ---
@@ -134,3 +134,6 @@ runtime boundary; AR-1349 remains fail-closed until it is merged and verified.
   runtime-bind lifecycle test validates real socket, handoff and teardown. Gates: cargo fmt, cargo
   check -p asb-runtime, live_service 5/5, live_relay 10/10, runtime all-targets 96 passed/1 ignored,
   workspace clippy 0, workspace tests passed.
+
+- 2026-09-23T19:28:58+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
