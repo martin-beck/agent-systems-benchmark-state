@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement a sandbox-owned sealed-FD credential channel for live provider children.",
-  "task_revision": 100,
+  "task_revision": 101,
   "title": "Sandbox-owned credential channel",
-  "updated_at": "2026-09-23T18:08:55+00:00",
+  "updated_at": "2026-09-23T18:09:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1350-sandbox-credential-channel"
 }
 ---
@@ -305,3 +305,6 @@ private runtime channel before AR-1349 can safely acquire attempts or wire
   certification under workflow_dispatch context; tests (including prior timing-sensitive Gemini
   test), native Goose, docs, and release build passed. DCO output identified unsigned historical
   merge 909078ced21f36e5a72590c9decf41ac56452212. No source or gate weakening.
+
+- 2026-09-23T18:09:43+00:00: Recorded command exit 0; command argv SHA-256
+  65a59932fe49babb8ba0903fd14fafb2f7fb99327ec5d5e8c5f6e76f0f1a0e75.
