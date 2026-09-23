@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the runtime-owned supervisor that acquires every live-provider authority and tears it down safely.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Runtime-owned live acquisition service",
-  "updated_at": "2026-09-23T16:27:59+00:00",
+  "updated_at": "2026-09-23T16:28:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1348-runtime-owned-live-acquisition"
 }
 ---
@@ -253,3 +253,6 @@ this service owns acquisition instead of accepting caller-built launch authority
 
 - 2026-09-23T16:27:59+00:00: Recorded command exit 0; command argv SHA-256
   dcc313288396aab3860a5c099721f4ddae07d7c07086aa07cad8fd71891876b5.
+
+- 2026-09-23T16:28:24+00:00: Recorded command exit 0; command argv SHA-256
+  7c145cae25b02f870487e3a09450303496a9a72f7b01b10b754f5034e73197ad.
