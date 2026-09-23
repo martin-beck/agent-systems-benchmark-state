@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Advertise the OpenRouter profile in the CLI provider catalog and accept it in provider-plan selection.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Select OpenRouter through the CLI provider catalog",
-  "updated_at": "2026-09-23T06:52:39+00:00",
+  "updated_at": "2026-09-23T06:52:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1326-openrouter-catalog-selection"
 }
 ---
@@ -81,3 +81,6 @@ the fail-closed content-address checks.
 
 - 2026-09-23T06:52:39+00:00: Recorded command exit 101; command argv SHA-256
   22fc19d872be75a975891ff0abd53f1c305974a409b50c49c5df5d842d033e81.
+
+- 2026-09-23T06:52:51+00:00: Recorded command exit 0; command argv SHA-256
+  21dedc4c397aec52824556459b566d4c78dd18b5e5b27ef668d0a4193bd42895.
