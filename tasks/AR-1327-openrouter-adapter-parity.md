@@ -9,7 +9,7 @@
     "AR-1326"
   ],
   "id": "AR-1327",
-  "next_action": "Push rebased parity head 03749b620003f6737cc33ff2dec576a91221d4ca, wait exact-head CI, independently review PR #251, then merge through handoffctl only after all required checks green; post-merge verify and release AR-1327.",
+  "next_action": "Await exact-head CI for signed+DCO head bdb3bf028f0ab96a7a00ffd186fbb20bfae073b2; independently review PR #251, merge through handoffctl only after every required check is green, then post-merge verify and release AR-1327.",
   "observed_branch": "feature/ar-1327-openrouter-adapter-parity",
   "observed_dirty": 0,
   "observed_head": "bdb3bf028f0ab96a7a00ffd186fbb20bfae073b2",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire the OpenRouter endpoint and model through every compatible agent adapter projection and prove parity with hostile conformance evidence.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "OpenRouter adapter projections and parity conformance",
-  "updated_at": "2026-09-23T07:20:36+00:00",
+  "updated_at": "2026-09-23T07:21:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1327-openrouter-adapter-parity"
 }
 ---
@@ -119,3 +119,10 @@ allowance must be extended explicitly, never silently.
 
 - 2026-09-23T07:20:36+00:00: Recorded command exit 0; command argv SHA-256
   2264a4905a63dfdf25983e0e69c004f051ea442acac8a4f9f85c207b984716e5.
+
+- 2026-09-23T07:21:09+00:00: Rebased PR #251 onto protected main 551330b8, resolving only the CLI
+  provenance fixture against current main. Workflow transcript initially failed because
+  cli_source_sha256 was stale (expected
+  546031ad36eec3f391386c0822f30b0f0ab9a7ee2a9398decd094ebdc750b829, fixture had 661e6334); refreshed
+  the fixture in signed+DCO commit bdb3bf0. Workflow transcript 3/3 passes; worktree clean; exact
+  pushed head is bdb3bf028f0ab96a7a00ffd186fbb20bfae073b2.
