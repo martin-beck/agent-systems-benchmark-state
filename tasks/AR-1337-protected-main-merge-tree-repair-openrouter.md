@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1337-openrouter-merge-tree-admission",
   "checkpoint_commit": "8dc07a0f86a10aa6b20c87b2d67c34117adc69bc",
-  "claim_expires": "2026-09-23T08:23:11+00:00",
+  "claim_expires": "2026-09-23T08:26:25+00:00",
   "depends_on": [
     "AR-1226"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the protected-main merge-tree admission defect exposed after the OpenRouter provider merge.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Repair protected-main merge-tree admission after OpenRouter merge",
-  "updated_at": "2026-09-23T06:25:45+00:00",
+  "updated_at": "2026-09-23T06:26:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1337-protected-main-merge-tree-repair"
 }
 ---
@@ -44,3 +44,5 @@ remaining evidence limits without private paths or credentials.
   target parent was 6b06f0e, and GitHub merge tree ee822b52 differs from topic tree bdb1356c. Added
   hostile integration regression proving merge_pr rejects a protected target advanced after review;
   focused and full tools.integration.test_merge_pr pass. Signed+DCO commit 8dc07a0.
+
+- 2026-09-23T06:26:25+00:00: Heartbeat by codex-ar1337.
