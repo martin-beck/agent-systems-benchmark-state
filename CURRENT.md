@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1349](tasks/AR-1349-live-provider-runtime-service.md): Production live-provider runtime service | Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep. | Implement a safe runtime-owned child-environment sink before any credential adapter or CLI wiring: the sink must place adapter-owned bytes only in the inner bubblewrap child without exposing them to runtime command arguments, SandboxLaunchInput, authority fields, logs, or evidence; then bind selection digest/target, complete atomic acquisition and asb run/sweep. Current unsafe outer-command sink was reverted; AR-1329 remains fail-closed. | codex-asb-ar1329-live-cli-luna56 |
+| P1 | [AR-1349](tasks/AR-1349-live-provider-runtime-service.md): Production live-provider runtime service | Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep. | Audit and design the missing private child credential channel. Existing runtime has no pass-fd/inner-env primitive: memfd use is confined to direct helper spawn, while bubblewrap --clearenv discards outer env and argv injection is forbidden. Do not add unsafe CLI wiring; record a successor repair if no bounded runtime helper can be implemented. | codex-asb-ar1329-live-cli-luna56 |
 
 ## Open
 
