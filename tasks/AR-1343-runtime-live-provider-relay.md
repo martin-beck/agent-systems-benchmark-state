@@ -12,17 +12,17 @@
   "id": "AR-1343",
   "next_action": "Blocked on missing supported CLI-to-runtime acquisition API: asb-cli spawn_verified_agent explicitly rejects live_provider and has no runtime backend/benchmark lease/namespace attestation or relay lifecycle seam. Add that API in a coordinated follow-up; keep AR-1329 fail-closed.",
   "observed_branch": "feature/ar-1343-runtime-live-provider-relay",
-  "observed_dirty": 3,
-  "observed_head": "d24221731891fb39f56118be9c5ae51364824517",
+  "observed_dirty": 0,
+  "observed_head": "ce2c2db068b05092f0f63291e0d94d4dbc9cda9c",
   "owner": "codex-asb-ar1343-replacement-20260923",
   "plan": "../plans/AR-1343-runtime-live-provider-relay.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime live-provider relay service and per-attempt opaque factory acquisition required by asb run and sweep.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Runtime live-provider relay service and CLI acquisition",
-  "updated_at": "2026-09-23T12:43:56+00:00",
+  "updated_at": "2026-09-23T12:44:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1343-runtime-live-provider-relay"
 }
 ---
