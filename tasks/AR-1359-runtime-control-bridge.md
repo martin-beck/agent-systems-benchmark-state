@@ -7,7 +7,7 @@
     "AR-1357"
   ],
   "id": "AR-1359",
-  "next_action": "Signed commit f511910 bridges control-issued RuntimeEnrollmentReceiptV1 into runtime validation/replay protection. Publish PR through handoffctl, monitor exact-head checks, repair failures, then merge only green.",
+  "next_action": "PR #266 exact head f511910 is published. Monitor every exact-head required check, repair any failures without weakening gates, then merge only after all green and independent review.",
   "observed_branch": "feature/ar-1359-runtime-control-bridge",
   "observed_dirty": 0,
   "observed_head": "f5119103248ff448bea4ab0bfc4581ed43743d7d",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bridge authenticated control enrollment into runtime-owned opaque live authority.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Runtime/control enrollment bridge",
-  "updated_at": "2026-09-23T22:36:34+00:00",
+  "updated_at": "2026-09-23T22:37:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1359-runtime-control-bridge"
 }
 ---
@@ -86,3 +86,7 @@ fail-closed behavior and do not touch asb-tui.
 
 - 2026-09-23T22:36:34+00:00: Recorded command exit 0; command argv SHA-256
   20ce11e0e7800ae7906b34c64e08db4517d0a8adc68c8cdcfc3b1947f5dace33.
+
+- 2026-09-23T22:37:19+00:00: Published PR #266 at exact head f511910 through handoffctl. All
+  required hosted checks started; AWQ and headers already pass. No merge action taken while checks
+  run.
