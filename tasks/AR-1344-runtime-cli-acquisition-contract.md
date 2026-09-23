@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1344-runtime-cli-acquisition-contract",
-  "checkpoint_commit": "2e1841c56980ac02613cdced22a3762049d388fc",
+  "checkpoint_commit": "00ec71b67ce402b2b31420c6b961cb25c0718661",
   "claim_expires": "2026-09-23T16:13:24+00:00",
   "depends_on": [
     "AR-1339",
@@ -9,7 +9,7 @@
     "AR-1342"
   ],
   "id": "AR-1344",
-  "next_action": "Active coverage repair checkpoint at signed head 2e1841c. Hosted policy reports 88.02% (10,472 missed / 87,432) versus 90% floor. Added launch_factory replay operation/accessor and backend-retention tests; continue targeted real branch tests, then rerun llvm-cov and push exact head. No exclusions or fake live capabilities.",
+  "next_action": "Local llvm-cov improved to 88.50% (10,057 missed / 87,486) after real launch_factory live-context accessor/spawn-fencing tests. Still below mandatory 90% floor; continue only targeted added runtime branches (live relay/provider egress/sandbox) and do not push red intermediate head. Push exact head only once local coverage reaches 90%.",
   "observed_branch": "feature/ar-1344-runtime-cli-acquisition-contract",
   "observed_dirty": 0,
   "observed_head": "00ec71b67ce402b2b31420c6b961cb25c0718661",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime-owned API and CLI integration needed for safe live-provider attempts.",
-  "task_revision": 218,
+  "task_revision": 219,
   "title": "Runtime-owned CLI live acquisition contract",
-  "updated_at": "2026-09-23T14:16:16+00:00",
+  "updated_at": "2026-09-23T14:16:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1344-runtime-cli-acquisition-contract"
 }
 ---
@@ -581,3 +581,8 @@ contract and its tests are merged and verified.
 
 - 2026-09-23T14:16:16+00:00: Recorded command exit 0; command argv SHA-256
   11aa7892ee38d3a937558ce5f68e38a693ff8b89e160ec2c02b25ddf17ea330b.
+
+- 2026-09-23T14:16:38+00:00: Full local cargo llvm-cov --locked --workspace --all-targets
+  --fail-under-lines 90 completed tests and reports TOTAL 87486 lines, 10057 missed, 88.50%; command
+  fails floor as expected. New focused launch_factory suite: 11 passed, 1 capability-gated ignored.
+  Branch clean at signed 00ec71b.
