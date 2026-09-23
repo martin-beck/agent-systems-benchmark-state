@@ -1856,7 +1856,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md): Runtime authority enrollment store | codex-asb-runtime-attested-enrollment-luna56 | Persist authenticated runtime authority enrollment required for receipt issuance without exposing secrets. | Promote after AR-1359 is done, then implement durable runtime-owned authority enrollment state consumed by the control receipt source. |
+| P0 | [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md): Runtime authority enrollment store | codex-asb-runtime-attested-enrollment-luna56 | Persist authenticated runtime authority enrollment required for receipt issuance without exposing secrets. | Run independent review, publish exact-head PR from clean signed head 7bf91f5, monitor required CI, repair failures without weakening gates, then merge only green and verify all seven post-merge workflows. |
 
 ### Open (4)
 
@@ -1877,4 +1877,3 @@ flowchart LR
 | P0 | [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md): Build the standalone asb-tui application | Unclaimed | Deliver the actual standalone interactive asb-tui application without an ASB workspace dependency. | Blocked: implementation belongs to asb-tui, but current scope forbids touching that repository; AR-1010/AR-1060 also retain unresolved publication blockers. Obtain explicit scope/dependency repair before re-opening. |
 | P0 | [AR-1160](../tasks/AR-1160.md): Wizard control API | Unclaimed | Wizard control API | Keep AR-1160 blocked. Create a fresh scoped AR for runtime-owned authenticated provider capture, per-tuple cassette reconciliation, and verified offline activation; preserve fail-closed gates and do not change this AR&#x27;s historical evidence. |
 | P0 | [AR-1181](../tasks/AR-1181.md): TLA admission | Unclaimed | Bound ASB TLC memory. | No independent work remains: AR-1293 owns the state-scoped runner and AR-1307/AR-1308 own qualification/capacity; preserve their blocked evidence and do not duplicate runner work. |
-| P0 | [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md): Bounded strict-replay CLI consumer contract | Unclaimed | Define the strict-replay CLI consumer contract. | Await runtime-owned launch authority, then wire replay through supervised context and add lifecycle/no-fallback tests. |

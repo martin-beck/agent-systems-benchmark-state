@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1362-runtime-authority-enrollment-store",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "7bf91f5e846b5a7af6a1297baf9553c29b401fa9",
   "claim_expires": "2026-09-24T01:08:19+00:00",
   "depends_on": [
     "AR-1359"
   ],
   "id": "AR-1362",
-  "next_action": "Promote after AR-1359 is done, then implement durable runtime-owned authority enrollment state consumed by the control receipt source.",
+  "next_action": "Run independent review, publish exact-head PR from clean signed head 7bf91f5, monitor required CI, repair failures without weakening gates, then merge only green and verify all seven post-merge workflows.",
   "observed_branch": "feature/ar-1362-runtime-authority-enrollment-store",
   "observed_dirty": 0,
   "observed_head": "7bf91f5e846b5a7af6a1297baf9553c29b401fa9",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist authenticated runtime authority enrollment required for receipt issuance without exposing secrets.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Runtime authority enrollment store",
-  "updated_at": "2026-09-23T23:08:37+00:00",
+  "updated_at": "2026-09-23T23:09:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1362-runtime-authority-enrollment-store"
 }
 ---
@@ -55,3 +55,9 @@ authority from CLI/config inputs.
 
 - 2026-09-23T23:08:37+00:00: Recorded command exit 0; command argv SHA-256
   b2f7111306aa7c03c56215bdb77e1811ed87e0363612681320219865a955e4c7.
+
+- 2026-09-23T23:09:08+00:00: Bounded implementation complete: added RuntimeAuthorityEnrollmentV1 in
+  asb-control with deny-unknown-fields digest-only fields, chain/generation/validity/public-target
+  validation, receipt issuance, and positive/negative tests. Focused certificate tests 2/2, full
+  asb-control tests 62+26+7+4 plus doc tests passed, workspace clippy -D warnings passed, fmt/diff
+  clean. Product commit 7bf91f5 is SSH-signed+DCO and worktree clean.

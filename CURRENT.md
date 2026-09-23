@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1362](tasks/AR-1362-runtime-authority-enrollment-store.md): Runtime authority enrollment store | Persist authenticated runtime authority enrollment required for receipt issuance without exposing secrets. | Promote after AR-1359 is done, then implement durable runtime-owned authority enrollment state consumed by the control receipt source. | codex-asb-runtime-attested-enrollment-luna56 |
+| P0 | [AR-1362](tasks/AR-1362-runtime-authority-enrollment-store.md): Runtime authority enrollment store | Persist authenticated runtime authority enrollment required for receipt issuance without exposing secrets. | Run independent review, publish exact-head PR from clean signed head 7bf91f5, monitor required CI, repair failures without weakening gates, then merge only green and verify all seven post-merge workflows. | codex-asb-runtime-attested-enrollment-luna56 |
 
 ## Open
 
