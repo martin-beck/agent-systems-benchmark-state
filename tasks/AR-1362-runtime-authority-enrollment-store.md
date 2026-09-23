@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1362-runtime-authority-enrollment-store",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T01:05:23+00:00",
   "depends_on": [
     "AR-1359"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1362-runtime-authority-enrollment-store",
   "observed_dirty": 0,
   "observed_head": "be9af3d6fb22818e95f51b9640b10c5eb6e043f3",
-  "owner": "",
+  "owner": "codex-asb-runtime-attested-enrollment-luna56",
   "plan": "../plans/AR-1362-runtime-authority-enrollment-store.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Persist authenticated runtime authority enrollment required for receipt issuance without exposing secrets.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Runtime authority enrollment store",
-  "updated_at": "2026-09-23T23:05:20+00:00",
+  "updated_at": "2026-09-23T23:05:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1362-runtime-authority-enrollment-store"
 }
 ---
@@ -33,3 +33,5 @@ authority from CLI/config inputs.
 
 - 2026-09-23T23:05:20+00:00: Promote durable runtime authority enrollment successor after AR-1361
   found missing control-owned chain and target/tool/root state.
+
+- 2026-09-23T23:05:23+00:00: Claimed by codex-asb-runtime-attested-enrollment-luna56.
