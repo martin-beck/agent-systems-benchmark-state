@@ -10,16 +10,16 @@
   "next_action": "Promote after AR-1357 is done, then wire asb run/sweep through runtime-attested enrollment records with fail-closed positive and negative tests.",
   "observed_branch": "feature/ar-1358-runtime-enrollment-cli-dispatch",
   "observed_dirty": 0,
-  "observed_head": "a6f1915aa5117f0296b1b8f4b9c4692a956b3d86",
+  "observed_head": "7862e3bb90a777e86e30d23b6af9639935671efe",
   "owner": "codex-asb-runtime-attested-enrollment-luna56",
   "plan": "../plans/AR-1358-runtime-enrollment-cli-dispatch.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Consume runtime-attested enrollment records in asb run and sweep without exposing authority.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Runtime enrollment CLI dispatch",
-  "updated_at": "2026-09-23T22:26:40+00:00",
+  "updated_at": "2026-09-23T22:26:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1358-runtime-enrollment-cli-dispatch"
 }
 ---
