@@ -8,7 +8,7 @@
     "AR-1328"
   ],
   "id": "AR-1329",
-  "next_action": "Consume AR-1339 runtime-owned authenticated provider relay; then integrate live run/sweep and complete egress denial/live evidence.",
+  "next_action": "Consume merged AR-1339 relay from runtime-owned launch path; implement live run/sweep integration and complete denial/live evidence, then push signed PR.",
   "observed_branch": "feature/ar-1329-live-provider-run-execution",
   "observed_dirty": 0,
   "observed_head": "44ddf14334ac971e8e89bda195635595cfc651ab",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute real agents against the selected provider through asb run and sweep with credential-free resolution.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Live-provider run execution for real agents",
-  "updated_at": "2026-09-23T08:55:36+00:00",
+  "updated_at": "2026-09-23T09:56:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1329-live-provider-run-execution"
 }
 ---
@@ -56,3 +56,6 @@ the digest-pinned mode remain default and never touch the network.
 - 2026-09-23T08:55:36+00:00: AR-1339 created and claimed to implement the missing runtime
   provider-egress backend. AR-1329 remains in_progress with safe fail-closed CLI and typed egress
   identity committed at 44ddf14.
+
+- 2026-09-23T09:56:05+00:00: AR-1339 is now merged at 229941f with all seven post-merge workflows
+  green; AR-1329 is dependency-ready and should resume relay integration.
