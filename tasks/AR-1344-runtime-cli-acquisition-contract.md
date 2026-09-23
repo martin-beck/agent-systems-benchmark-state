@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime-owned API and CLI integration needed for safe live-provider attempts.",
-  "task_revision": 187,
+  "task_revision": 188,
   "title": "Runtime-owned CLI live acquisition contract",
-  "updated_at": "2026-09-23T13:54:33+00:00",
+  "updated_at": "2026-09-23T13:59:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1344-runtime-cli-acquisition-contract"
 }
 ---
@@ -499,3 +499,6 @@ contract and its tests are merged and verified.
   https://github.com/martin-beck/agent-systems-benchmark/pull/260. CI watch confirms exact-head
   checks; currently passing AWQ shadow evidence, exact headers/SPDX, platform evidence, retained
   faults, with remaining required checks pending. No merge performed.
+
+- 2026-09-23T13:59:19+00:00: Recorded command exit 0; command argv SHA-256
+  2decda0839eea5b4d0de896ce1dd7d4319b46ad1d5e5462ea07b2609df44c199.
