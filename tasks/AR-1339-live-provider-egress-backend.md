@@ -9,17 +9,17 @@
   "id": "AR-1339",
   "next_action": "Integrate ProviderEgressAuthorization with a runtime-owned network-capable relay/backend and CLI live path; typed endpoint/generation/route/deadline handoff contract and denial tests now pass, but no outbound socket is permitted yet.",
   "observed_branch": "feature/ar-1339-live-provider-egress-backend",
-  "observed_dirty": 1,
-  "observed_head": "92ca23fee9ea75942148fa66165cd65ba1a3513a",
+  "observed_dirty": 0,
+  "observed_head": "e69dc146e2b0eb341a8791fb5d53a5276dea1dc6",
   "owner": "codex-asb-ar1339-20260923",
   "plan": "../plans/AR-1339-live-provider-egress-backend.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the runtime-owned authenticated backend for explicit live provider egress.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Runtime-owned live-provider egress backend",
-  "updated_at": "2026-09-23T09:00:26+00:00",
+  "updated_at": "2026-09-23T09:00:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1339-live-provider-egress-backend"
 }
 ---
