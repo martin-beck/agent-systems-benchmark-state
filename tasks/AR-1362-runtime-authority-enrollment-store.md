@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist authenticated runtime authority enrollment required for receipt issuance without exposing secrets.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Runtime authority enrollment store",
-  "updated_at": "2026-09-23T23:05:23+00:00",
+  "updated_at": "2026-09-23T23:06:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1362-runtime-authority-enrollment-store"
 }
 ---
@@ -35,3 +35,6 @@ authority from CLI/config inputs.
   found missing control-owned chain and target/tool/root state.
 
 - 2026-09-23T23:05:23+00:00: Claimed by codex-asb-runtime-attested-enrollment-luna56.
+
+- 2026-09-23T23:06:41+00:00: Recorded command exit 0; command argv SHA-256
+  29ede43916064a98acdbde0d2d535f5b65786a0b08295ba9845de85bc001da1a.
