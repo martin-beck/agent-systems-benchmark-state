@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1343-runtime-live-provider-relay",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-23T14:32:11+00:00",
+  "claim_expires": "2026-09-23T14:35:43+00:00",
   "depends_on": [
     "AR-1327",
     "AR-1328",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime live-provider relay service and per-attempt opaque factory acquisition required by asb run and sweep.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Runtime live-provider relay service and CLI acquisition",
-  "updated_at": "2026-09-23T12:35:25+00:00",
+  "updated_at": "2026-09-23T12:35:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1343-runtime-live-provider-relay"
 }
 ---
@@ -56,3 +56,5 @@ capabilities without bypassing the denied-network sandbox.
 
 - 2026-09-23T12:35:25+00:00: Recorded command exit 0; command argv SHA-256
   7efe3114a2de0fa03cfcf4662abf7101ec4435d3e4aa92802e6182588b498e68.
+
+- 2026-09-23T12:35:43+00:00: Heartbeat by codex-asb-ar1343-replacement-20260923.
