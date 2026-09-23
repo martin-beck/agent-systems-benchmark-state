@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1359-runtime-control-bridge",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-24T00:28:20+00:00",
+  "claim_expires": "2026-09-24T00:29:03+00:00",
   "depends_on": [
     "AR-1357"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bridge authenticated control enrollment into runtime-owned opaque live authority.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Runtime/control enrollment bridge",
-  "updated_at": "2026-09-23T22:28:38+00:00",
+  "updated_at": "2026-09-23T22:29:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1359-runtime-control-bridge"
 }
 ---
@@ -37,3 +37,5 @@ fail-closed behavior and do not touch asb-tui.
 
 - 2026-09-23T22:28:27+00:00: Recorded command exit 0; command argv SHA-256
   4c0706e50abf7d121dcd89426b0b89020f8675977c744726e971f75b0d0e0363.
+
+- 2026-09-23T22:29:03+00:00: Heartbeat by codex-asb-runtime-attested-enrollment-luna56.
