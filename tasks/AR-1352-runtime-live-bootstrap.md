@@ -7,7 +7,7 @@
     "AR-1351"
   ],
   "id": "AR-1352",
-  "next_action": "Repair or rerun the workspace gate after the recorded asb-cli state-root ownership collision; then independently review the clean bootstrap diff, commit signed+DCO, and publish.",
+  "next_action": "Commit the independently reviewed clean bootstrap slice with SSH signature and DCO, then publish through the reviewed PR workflow. Keep AR-1349/1329 fail-closed.",
   "observed_branch": "feature/ar-1352-runtime-live-bootstrap",
   "observed_dirty": 1,
   "observed_head": "2ea6e6422ea61bc9e58a0144ac56713182a72eca",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the private runtime-owned bootstrap source for live acquisition.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Runtime-owned live bootstrap",
-  "updated_at": "2026-09-23T20:22:15+00:00",
+  "updated_at": "2026-09-23T20:22:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1352-runtime-live-bootstrap"
 }
 ---
@@ -115,3 +115,11 @@ integration. AR-1329 remains fail-closed.
 
 - 2026-09-23T20:22:15+00:00: Recorded command exit 0; command argv SHA-256
   d04aa803a9fcb854b247572f9b417fd1935a57ca978bb887d2e7c188e99db043.
+
+- 2026-09-23T20:22:30+00:00: Full workspace gate rerun passed after isolated reproduction of the
+  prior concurrency failure: the exact asb-cli recording_campaign_plan test passed 1/1, then cargo
+  test --locked --workspace passed including doc tests. Independent diff review: only
+  live_service.rs changed; bootstrap enrollment and errors are crate-private,
+  policy/allowlist/tools/roots remain runtime-owned, relay roots reject symlinks/noncanonical paths,
+  only an opaque provisioner handle leaves the bootstrap, no credentials/raw output/private paths
+  added, and diff --check is clean.
