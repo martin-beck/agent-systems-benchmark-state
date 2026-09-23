@@ -14,17 +14,17 @@
   "id": "AR-1349",
   "next_action": "Protected-main rebase and baseline gates are clean. Continue implementing the missing production LiveProviderRuntimeService acquisition and actual asb run/sweep dispatch; current stack only updates the resolver test seam and does not yet wire CLI authority. Preserve sealed AR-1350 channel, selection digest binding, NetworkPolicy::Deny, and fail-closed offline/replay. Do not publish yet.",
   "observed_branch": "feature/ar-1349-live-provider-runtime-service",
-  "observed_dirty": 1,
-  "observed_head": "4ed2a88129b2b709054a890c895767244d73e2e0",
+  "observed_dirty": 0,
+  "observed_head": "d069f3eeacae914bec5d33dfbb575cd7e4281b2c",
   "owner": "codex-asb-ar1329-live-cli-luna56",
   "plan": "../plans/AR-1349-live-provider-runtime-service.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 180,
+  "task_revision": 181,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T19:06:59+00:00",
+  "updated_at": "2026-09-23T19:07:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
