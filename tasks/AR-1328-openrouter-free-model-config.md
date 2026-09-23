@@ -9,7 +9,7 @@
     "AR-1100"
   ],
   "id": "AR-1328",
-  "next_action": "Persist a per-user OpenRouter selection with a pinned free-model identity and enroll the OPENROUTER_API_KEY reference through the credential-free asb-config AuthEnrollment boundary, then wire --use-config into the CLI.",
+  "next_action": "Finish configure openrouter CLI command and --use-config wiring, then run locked CLI/config tests and create signed PR.",
   "observed_branch": "feature/ar-1328-openrouter-free-model-config",
   "observed_dirty": 1,
   "observed_head": "5207ce478986cdf1687207967cdf517129f85624",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist the per-user OpenRouter free-model configuration and credential-free key enrollment.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "OpenRouter free-model user configuration and key enrollment",
-  "updated_at": "2026-09-23T07:35:43+00:00",
+  "updated_at": "2026-09-23T07:36:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1328-openrouter-free-model-config"
 }
 ---
@@ -52,3 +52,10 @@ configurations fail closed.
   31a05f46a65b4172cfcc5ef4e1ed2b4ddd54c042ac56eff6dc51f4205a4051b1.
 
 - 2026-09-23T07:35:43+00:00: Heartbeat by codex-asb-ar1328-20260923.
+
+- 2026-09-23T07:36:59+00:00: Implemented credential-free OpenRouterFreeModelConfig enrollment and
+  optional Configuration persistence with strict dated snapshot, environment locator digest,
+  enrollment binding, tamper rejection, and round-trip tests. asb-config tests pass (16/16). CLI
+  dependency and initial config dispatch are staged; CLI currently fails compile only because
+  configure_openrouter is not yet defined and imports are temporarily unused while that
+  implementation is completed.

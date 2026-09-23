@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1327](tasks/AR-1327-openrouter-adapter-parity.md): OpenRouter adapter projections and parity conformance | Wire the OpenRouter endpoint and model through every compatible agent adapter projection and prove parity with hostile conformance evidence. | Verify post-merge main 5207ce478986cdf1687207967cdf517129f85624 workflows and exact OpenRouter parity evidence; then close AR-1327 and advance AR-1328. | codex-asb-ar1327-20260923 |
-| P1 | [AR-1328](tasks/AR-1328-openrouter-free-model-config.md): OpenRouter free-model user configuration and key enrollment | Persist the per-user OpenRouter free-model configuration and credential-free key enrollment. | Persist a per-user OpenRouter selection with a pinned free-model identity and enroll the OPENROUTER_API_KEY reference through the credential-free asb-config AuthEnrollment boundary, then wire --use-config into the CLI. | codex-asb-ar1328-20260923 |
+| P1 | [AR-1328](tasks/AR-1328-openrouter-free-model-config.md): OpenRouter free-model user configuration and key enrollment | Persist the per-user OpenRouter free-model configuration and credential-free key enrollment. | Finish configure openrouter CLI command and --use-config wiring, then run locked CLI/config tests and create signed PR. | codex-asb-ar1328-20260923 |
 
 ## Open
 
