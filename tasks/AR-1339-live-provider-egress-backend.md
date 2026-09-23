@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the runtime-owned authenticated backend for explicit live provider egress.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Runtime-owned live-provider egress backend",
-  "updated_at": "2026-09-23T09:11:55+00:00",
+  "updated_at": "2026-09-23T09:31:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1339-live-provider-egress-backend"
 }
 ---
@@ -47,3 +47,6 @@ that missing boundary so live provider execution can be enabled safely.
 - 2026-09-23T09:07:44+00:00: Reconciled public-IP allowlist and launch-fenced authorization into
   relay implementation. Six provider_egress tests pass; cargo check -p asb-cli passes. No
   offline/replay network policy changes.
+
+- 2026-09-23T09:31:53+00:00: Recorded command exit 0; command argv SHA-256
+  a939c40452ec796a264d7aa64185f5e9346c0b91b754d97dab4d11d4eab8dbc0.
