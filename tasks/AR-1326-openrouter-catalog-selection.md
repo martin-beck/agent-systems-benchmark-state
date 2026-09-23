@@ -8,7 +8,7 @@
     "AR-1325"
   ],
   "id": "AR-1326",
-  "next_action": "Monitor exact-head PR #250 checks for head 64a3a002018a542cba9a6e5844589c89417700a5; merge only after every required check is green and independent diff review is complete. Local fmt, clippy, focused CLI test, and focused mini_swe rerun pass; full parallel workspace test exposed three concurrent Text file busy failures and one control-state ownership collision, each passes serially, so retain these as environment-concurrency evidence.",
+  "next_action": "Monitor exact-head PR #250 checks for head 64a3a002018a542cba9a6e5844589c89417700a5; merge only after every required check is green and independent diff review is complete. Local fmt, clippy, serial full workspace tests, focused CLI tests, and focused mini_swe rerun pass. Parallel-only shared-resource failures are retained as infrastructure evidence.",
   "observed_branch": "feature/ar-1326-openrouter-catalog-selection",
   "observed_dirty": 0,
   "observed_head": "64a3a002018a542cba9a6e5844589c89417700a5",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Advertise the OpenRouter profile in the CLI provider catalog and accept it in provider-plan selection.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Select OpenRouter through the CLI provider catalog",
-  "updated_at": "2026-09-23T06:56:30+00:00",
+  "updated_at": "2026-09-23T06:56:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1326-openrouter-catalog-selection"
 }
 ---
@@ -101,3 +101,7 @@ the fail-closed content-address checks.
 
 - 2026-09-23T06:56:30+00:00: Recorded command exit 0; command argv SHA-256
   7b80382008cb01e3ea6fa6e88054b624464f9801b40ed57f947b01892a686ae8.
+
+- 2026-09-23T06:56:52+00:00: Serial full locked workspace test completed successfully: all
+  applicable tests and doctests passed; only documented environment-dependent tests were ignored. PR
+  #250 hosted AArch64 emulation, Rust checks, and policy/supply-chain still running.
