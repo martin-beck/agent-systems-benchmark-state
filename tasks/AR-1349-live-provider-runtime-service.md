@@ -11,7 +11,7 @@
     "AR-1347"
   ],
   "id": "AR-1349",
-  "next_action": "Do not publish the current credential sink. Repair the production boundary: inject into the inner bubblewrap child environment (outer systemd-run env is discarded by --clearenv), keep sink/private authority inaccessible to CLI, bind capability to selection digest and adapter target, and wire LiveProviderRuntimeService atomic acquisition plus asb run/sweep. Current sink compile/clippy repair is local only; AR-1329 remains fail-closed.",
+  "next_action": "Implement a safe runtime-owned child-environment sink before any credential adapter or CLI wiring: the sink must place adapter-owned bytes only in the inner bubblewrap child without exposing them to runtime command arguments, SandboxLaunchInput, authority fields, logs, or evidence; then bind selection digest/target, complete atomic acquisition and asb run/sweep. Current unsafe outer-command sink was reverted; AR-1329 remains fail-closed.",
   "observed_branch": "feature/ar-1349-live-provider-runtime-service",
   "observed_dirty": 0,
   "observed_head": "359f15af52aa2b0b31bb091b945e7de933960006",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 147,
+  "task_revision": 148,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T17:15:17+00:00",
+  "updated_at": "2026-09-23T17:15:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
@@ -440,3 +440,10 @@ qualified.
 
 - 2026-09-23T17:15:06+00:00: Recorded command exit 0; command argv SHA-256
   0a4eb6e7a7255c9106baefa73a43e11ef6f939bd7f4725b9a678db51620e5296.
+
+- 2026-09-23T17:15:29+00:00: Boundary review completed and unsafe sink reverted to clean product
+  head 359f15a. Exact missing primitive: std::process::Command injection mutates outer systemd-run
+  while bubblewrap --clearenv discards it; appending secret as --setenv would expose bytes in
+  host-visible argv. Therefore no safe credential adapter or CLI wiring was committed. Focused
+  pre-review tests were runtime credential 2/2 and asb-agents adapter 1/1; clippy passed before
+  revert. This is an evidence-backed runtime primitive gap, not a gate weakening.
