@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the dependency-safe opaque supervisor contract needed for live-provider acquisition.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Neutral live-supervisor composition contract",
-  "updated_at": "2026-09-23T15:44:48+00:00",
+  "updated_at": "2026-09-23T15:46:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1347-neutral-live-supervisor-composition"
 }
 ---
@@ -89,3 +89,6 @@ or introduce a cyclic dependency.
   cargo check --locked --workspace, clippy --locked -p asb-runtime --all-targets -D warnings, and
   full asb-runtime all-targets pass: 85 passed, 1 ignored. Full diff reviewed; no secret bytes or
   NetworkPolicy changes. AR-1329 remains fail-closed.
+
+- 2026-09-23T15:46:00+00:00: Recorded command exit 1; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
