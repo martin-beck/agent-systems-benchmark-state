@@ -12,17 +12,17 @@
   "id": "AR-1342",
   "next_action": "Independent review and exact-head PR #259 CI are pending. Do not merge/release until every required check passes; then verify protected-main post-merge evidence and advance AR-1329.",
   "observed_branch": "feature/ar-1342-live-relay-factory-cli-integration",
-  "observed_dirty": 1,
-  "observed_head": "71f67e2ca22945b42672b7ad1cfc7a0eef7f4b88",
+  "observed_dirty": 0,
+  "observed_head": "a934168d9dc17ecb6d6d765b216869bc82cf840c",
   "owner": "codex-asb-ar1342-20260923",
   "plan": "../plans/AR-1342-live-relay-factory-cli-integration.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Create the runtime-owned relay factory and opaque launch context required for safe live CLI execution.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Runtime-owned live relay factory and CLI integration",
-  "updated_at": "2026-09-23T11:53:40+00:00",
+  "updated_at": "2026-09-23T11:53:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1342-live-relay-factory-cli-integration"
 }
 ---
