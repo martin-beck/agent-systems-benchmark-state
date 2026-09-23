@@ -9,7 +9,7 @@
     "AR-1342"
   ],
   "id": "AR-1345",
-  "next_action": "Promote only after AR-1344 ownership is released; classify exact uncovered runtime lines and add bounded sandbox, relay, and provider-egress tests until the unchanged 90% workspace floor passes.",
+  "next_action": "Classify exact uncovered runtime lines and add bounded sandbox, relay, and provider-egress tests until policy coverage has margin above 90%.",
   "observed_branch": "feature/ar-1345-runtime-live-coverage-repair",
   "observed_dirty": 0,
   "observed_head": "cd2d1e60b15142665ba3b72f9404df69f5c718da",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair runtime live-provider coverage without weakening the mandatory quality floor.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Runtime live-provider coverage repair",
-  "updated_at": "2026-09-23T14:33:48+00:00",
+  "updated_at": "2026-09-23T14:34:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1345-runtime-live-coverage-repair"
 }
 ---
@@ -53,3 +53,8 @@ non-authoritative.
 
 - 2026-09-23T14:33:48+00:00: Recorded command exit 0; command argv SHA-256
   b5cf56867fd8e92bb540da3aa88bd243fdf19280ddf12673319382aaa380bcaf.
+
+- 2026-09-23T14:34:25+00:00: Baseline policy-equivalent cargo llvm-cov passed at 90.44% workspace
+  lines (57,530 covered, 5,497 missed; regions 88.52%). No product changes yet; next action is
+  classify and add bounded sandbox admission/ownership, relay timeout/error, and provider-egress
+  tests for margin above floor.

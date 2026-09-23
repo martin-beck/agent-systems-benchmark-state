@@ -1785,7 +1785,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1345](../tasks/AR-1345-runtime-live-coverage-repair.md): Runtime live-provider coverage repair | asb-ar1345-coverage-repair-luna56 | Repair runtime live-provider coverage without weakening the mandatory quality floor. | Promote only after AR-1344 ownership is released; classify exact uncovered runtime lines and add bounded sandbox, relay, and provider-egress tests until the unchanged 90&#37; workspace floor passes. |
+| P1 | [AR-1345](../tasks/AR-1345-runtime-live-coverage-repair.md): Runtime live-provider coverage repair | asb-ar1345-coverage-repair-luna56 | Repair runtime live-provider coverage without weakening the mandatory quality floor. | Classify exact uncovered runtime lines and add bounded sandbox, relay, and provider-egress tests until policy coverage has margin above 90&#37;. |
 
 ### Open (6)
 
