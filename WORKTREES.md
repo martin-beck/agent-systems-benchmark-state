@@ -368,7 +368,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-readiness` | `DETACHED` | `78a8e9fc2144` | 0 | behind 143, ahead 0 |
 | `asb-recording-audit.vnDk3k` | `DETACHED` | `f205ff90dbc9` | 0 | behind 137, ahead 0 |
 | `pr256-review` | `DETACHED` | `0c19231abaf4` | 0 | behind 71, ahead 0 |
-| `agent-systems-benchmark-state` | `main` | `72816f205adb` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-state` | `main` | `ca0a1bd13cd8` | 1 | behind 0, ahead 1 |
+| changed files | - | - | - | `WORKTREES.md` |
 | `agent-systems-benchmark-ar-1313-historical-dco-909078c` | `repair/ar-1313-historical-dco-909078c` | `8e5598eab3b3` | 0 | behind 3161, ahead 0 |
 | `agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity` | `feature/ar-1308-full-exhaustive-qemu-capacity` | `659030fffd7e` | 0 | behind 4582, ahead 0 |
 | `agent-systems-benchmark-coordination-assurance` | `feature/coordination-assurance` | `adfde31ad408` | 0 | behind 32462, ahead 0 |
