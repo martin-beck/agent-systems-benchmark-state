@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1329-live-provider-run-execution",
   "checkpoint_commit": "44ddf14334ac971e8e89bda195635595cfc651ab",
-  "claim_expires": "2026-09-23T14:20:51+00:00",
+  "claim_expires": "2026-09-23T14:21:38+00:00",
   "depends_on": [
     "AR-1327",
     "AR-1328",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute real agents against the selected provider through asb run and sweep with credential-free resolution.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Live-provider run execution for real agents",
-  "updated_at": "2026-09-23T12:21:13+00:00",
+  "updated_at": "2026-09-23T12:21:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1329-live-provider-run-execution"
 }
 ---
@@ -114,3 +114,5 @@ the digest-pinned mode remain default and never touch the network.
 - 2026-09-23T12:21:13+00:00: AR-1342 is durably done with all seven post-merge workflows green.
   AR-1329 resumed under replacement gpt-5.6-luna medium worker; previous fail-closed boundary
   remains until live integration evidence passes.
+
+- 2026-09-23T12:21:38+00:00: Heartbeat by codex-asb-ar1329-20260923b.
