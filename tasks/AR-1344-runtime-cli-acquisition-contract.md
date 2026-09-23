@@ -9,7 +9,7 @@
     "AR-1342"
   ],
   "id": "AR-1344",
-  "next_action": "PR #260 is published from exact signed head 7b8d2966b8f4afb4a20f7be21eefdd01d47557b8. Monitor exact-head required CI and review; do not merge until all required checks are green. Capability-gated live sweep limitation remains explicit.",
+  "next_action": "PR #260 remains at exact signed head 7b8d2966b8f4afb4a20f7be21eefdd01d47557b8. Exact-head CI is running: AWQ shadow evidence, headers, platform evidence, and retained faults pass; Rust, policy, emulated AArch64, formal/model, fuzz, and mutation checks remain pending. Do not merge until all required checks are green.",
   "observed_branch": "feature/ar-1344-runtime-cli-acquisition-contract",
   "observed_dirty": 0,
   "observed_head": "7b8d2966b8f4afb4a20f7be21eefdd01d47557b8",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime-owned API and CLI integration needed for safe live-provider attempts.",
-  "task_revision": 186,
+  "task_revision": 187,
   "title": "Runtime-owned CLI live acquisition contract",
-  "updated_at": "2026-09-23T13:53:36+00:00",
+  "updated_at": "2026-09-23T13:54:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1344-runtime-cli-acquisition-contract"
 }
 ---
@@ -494,3 +494,8 @@ contract and its tests are merged and verified.
 - 2026-09-23T13:53:36+00:00: Published through handoffctl run: pushed
   feature/ar-1344-runtime-cli-acquisition-contract and gh pr create returned
   https://github.com/martin-beck/agent-systems-benchmark/pull/260. No merge performed.
+
+- 2026-09-23T13:54:33+00:00: Published via handoffctl push and gh pr create: PR #260
+  https://github.com/martin-beck/agent-systems-benchmark/pull/260. CI watch confirms exact-head
+  checks; currently passing AWQ shadow evidence, exact headers/SPDX, platform evidence, retained
+  faults, with remaining required checks pending. No merge performed.

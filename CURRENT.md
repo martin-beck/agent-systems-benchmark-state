@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1344](tasks/AR-1344-runtime-cli-acquisition-contract.md): Runtime-owned CLI live acquisition contract | Add the runtime-owned API and CLI integration needed for safe live-provider attempts. | PR #260 is published from exact signed head 7b8d2966b8f4afb4a20f7be21eefdd01d47557b8. Monitor exact-head required CI and review; do not merge until all required checks are green. Capability-gated live sweep limitation remains explicit. | codex-asb-ar1344-factory-refactor-20260923 |
+| P1 | [AR-1344](tasks/AR-1344-runtime-cli-acquisition-contract.md): Runtime-owned CLI live acquisition contract | Add the runtime-owned API and CLI integration needed for safe live-provider attempts. | PR #260 remains at exact signed head 7b8d2966b8f4afb4a20f7be21eefdd01d47557b8. Exact-head CI is running: AWQ shadow evidence, headers, platform evidence, and retained faults pass; Rust, policy, emulated AArch64, formal/model, fuzz, and mutation checks remain pending. Do not merge until all required checks are green. | codex-asb-ar1344-factory-refactor-20260923 |
 
 ## Open
 
