@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1329-live-provider-run-execution",
   "checkpoint_commit": "d24221731891fb39f56118be9c5ae51364824517",
-  "claim_expires": "2026-09-23T14:25:00+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1327",
     "AR-1328",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1329-live-provider-run-execution",
   "observed_dirty": 0,
   "observed_head": "d24221731891fb39f56118be9c5ae51364824517",
-  "owner": "codex-asb-ar1329-20260923b",
+  "owner": "",
   "plan": "../plans/AR-1329.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Execute real agents against the selected provider through asb run and sweep with credential-free resolution.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Live-provider run execution for real agents",
-  "updated_at": "2026-09-23T12:25:03+00:00",
+  "updated_at": "2026-09-23T12:26:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1329-live-provider-run-execution"
 }
 ---
@@ -142,3 +142,10 @@ the digest-pinned mode remain default and never touch the network.
 
 - 2026-09-23T12:25:03+00:00: Recorded command exit 0; command argv SHA-256
   a76a8bc2155da045daf9d31e4f0496b38768f63b49972ee17a8fe155ee6a123a.
+
+- 2026-09-23T12:26:55+00:00: Released ownerless and open after AR-1329 live integration audit.
+  Checkpoint protected main d24221731891fb39f56118be9c5ae51364824517. AR-1342 LiveLaunchFactory
+  focused tests pass, but CLI remains fail-closed because no runtime-owned live relay
+  listener/request protocol, concrete egress target allowlist acquisition, credential transport, or
+  pinned live gate acquisition is available. Successor AR-1343 now provides the required scoped
+  repair; preserve NetworkPolicy::Deny and direct/alternate egress denial.

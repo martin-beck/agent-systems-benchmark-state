@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**366 ARs tracked** across 7 active status categories.
+**367 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 3 |
+| **In progress** | Claimed work with a live lease | 0 |
+| **Open** | Dependency-ready and available to claim | 5 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 49 |
 | **Planned** | Defined work awaiting promotion or dependencies | 64 |
 | **Future** | Deferred roadmap work | 1 |
@@ -421,7 +421,7 @@ flowchart LR
         AR_1326["AR-1326 - Done"]:::status_done
         AR_1327["AR-1327 - Done"]:::status_done
         AR_1328["AR-1328 - Done"]:::status_done
-        AR_1329["AR-1329 - In progress"]:::status_in_progress
+        AR_1329["AR-1329 - Open"]:::status_open
         AR_1330["AR-1330 - Planned"]:::status_planned
         AR_1331["AR-1331 - Planned"]:::status_planned
         AR_1332["AR-1332 - Planned"]:::status_planned
@@ -435,6 +435,7 @@ flowchart LR
         AR_1340["AR-1340 - Done"]:::status_done
         AR_1341["AR-1341 - Done"]:::status_done
         AR_1342["AR-1342 - Done"]:::status_done
+        AR_1343["AR-1343 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1359,11 +1360,13 @@ flowchart LR
     AR_1327 --> AR_1329
     AR_1327 --> AR_1334
     AR_1327 --> AR_1342
+    AR_1327 --> AR_1343
     AR_1328 --> AR_1329
     AR_1328 --> AR_1334
     AR_1328 --> AR_1338
     AR_1328 --> AR_1339
     AR_1328 --> AR_1342
+    AR_1328 --> AR_1343
     AR_1329 --> AR_1330
     AR_1329 --> AR_1333
     AR_1329 --> AR_1338
@@ -1380,8 +1383,10 @@ flowchart LR
     AR_1339 --> AR_1340
     AR_1339 --> AR_1341
     AR_1339 --> AR_1342
+    AR_1339 --> AR_1343
     AR_1340 --> AR_1329
     AR_1340 --> AR_1342
+    AR_1340 --> AR_1343
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -1746,8 +1751,8 @@ flowchart LR
 | [AR-1324](../tasks/AR-1324-auth-helper-control-contract.md) | None | None |
 | [AR-1325](../tasks/AR-1325-provider-openrouter.md) | [AR-0310](../tasks/AR-0310-provider-profile-contract.md), [AR-0318](../tasks/AR-0318-credential-reference-boundary.md) | [AR-1326](../tasks/AR-1326-openrouter-catalog-selection.md), [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md) |
 | [AR-1326](../tasks/AR-1326-openrouter-catalog-selection.md) | [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-1325](../tasks/AR-1325-provider-openrouter.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md) |
-| [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md) | [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-1325](../tasks/AR-1325-provider-openrouter.md), [AR-1326](../tasks/AR-1326-openrouter-catalog-selection.md) | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md), [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md) |
-| [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md) | [AR-1100](../tasks/AR-1100.md), [AR-1325](../tasks/AR-1325-provider-openrouter.md), [AR-1326](../tasks/AR-1326-openrouter-catalog-selection.md) | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md), [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md), [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md) |
+| [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md) | [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-1325](../tasks/AR-1325-provider-openrouter.md), [AR-1326](../tasks/AR-1326-openrouter-catalog-selection.md) | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md), [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md), [AR-1343](../tasks/AR-1343-runtime-live-provider-relay.md) |
+| [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md) | [AR-1100](../tasks/AR-1100.md), [AR-1325](../tasks/AR-1325-provider-openrouter.md), [AR-1326](../tasks/AR-1326-openrouter-catalog-selection.md) | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md), [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md), [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md), [AR-1343](../tasks/AR-1343-runtime-live-provider-relay.md) |
 | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) | [AR-1330](../tasks/AR-1330-live-capture-sealed-cassette.md), [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md), [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md) |
 | [AR-1330](../tasks/AR-1330-live-capture-sealed-cassette.md) | [AR-0502](../tasks/AR-0502-replay-cassettes.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-1329](../tasks/AR-1329-live-provider-run-execution.md) | [AR-1331](../tasks/AR-1331-runtime-replay-launch-authority.md) |
 | [AR-1331](../tasks/AR-1331-runtime-replay-launch-authority.md) | [AR-1330](../tasks/AR-1330-live-capture-sealed-cassette.md) | [AR-1332](../tasks/AR-1332-record-live-replay-offline.md) |
@@ -1758,26 +1763,23 @@ flowchart LR
 | [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md) | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md), [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md), [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md) | None |
 | [AR-1337](../tasks/AR-1337-protected-main-merge-tree-repair-openrouter.md) | [AR-1226](../tasks/AR-1226-protected-merge-tree-remediation.md) | None |
 | [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1329](../tasks/AR-1329-live-provider-run-execution.md), [AR-1332](../tasks/AR-1332-record-live-replay-offline.md), [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md) | None |
-| [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md) | [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1341](../tasks/AR-1341-runtime-observed-namespace-repair.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md) |
-| [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md) | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md) |
+| [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md) | [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1341](../tasks/AR-1341-runtime-observed-namespace-repair.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md), [AR-1343](../tasks/AR-1343-runtime-live-provider-relay.md) |
+| [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md) | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md), [AR-1343](../tasks/AR-1343-runtime-live-provider-relay.md) |
 | [AR-1341](../tasks/AR-1341-runtime-observed-namespace-repair.md) | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md) | None |
 | [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) | None |
+| [AR-1343](../tasks/AR-1343-runtime-live-provider-relay.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) | None |
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md): Live-provider run execution for real agents | codex-asb-ar1329-20260923b | Execute real agents against the selected provider through asb run and sweep with credential-free resolution. | AR-1342 LiveLaunchFactory focused tests pass, but CLI integration remains fail-closed: no runtime-owned live relay listener/request protocol, concrete egress target allowlist, credential transport, or pinned gate acquisition is exposed to asb run/sweep. Add a coordinator-owned runtime live-launch service API (per-attempt authority issuance and relay proxy) before AR-1329 product mutation; do not bypass NetworkPolicy::Deny. |
-
-### Open (3)
+### Open (5)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1212](../tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Unclaimed | Teach users to test configured-agent benchmark eligibility without running an agent. | Implement the offline tutorial for checking agent benchmark readiness under the current configuration. |
 | P0 | [AR-1314](../tasks/AR-1314-optional-bundle-signing-development-release.md): Optional runtime-bundle signing for development and tagged releases | Unclaimed | Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile. | Wait for PR #232 exact-head CI after schema-v3 repair; if all required checks pass, independently review and merge through the established workflow, then reconcile AR-1314. Preserve signature-required defaults. |
 | P0 | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | Unclaimed | Publish the verified ASB agent catalog required by the first-run setup wizard. | Persist the authenticated catalog snapshot/generation and complete live ASB-to-asb-tui wizard evidence; keep all entries unavailable until a verified release closure exists. |
+| P1 | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md): Live-provider run execution for real agents | Unclaimed | Execute real agents against the selected provider through asb run and sweep with credential-free resolution. | AR-1342 LiveLaunchFactory focused tests pass, but CLI integration remains fail-closed: no runtime-owned live relay listener/request protocol, concrete egress target allowlist, credential transport, or pinned gate acquisition is exposed to asb run/sweep. Add a coordinator-owned runtime live-launch service API (per-attempt authority issuance and relay proxy) before AR-1329 product mutation; do not bypass NetworkPolicy::Deny. |
+| P1 | [AR-1343](../tasks/AR-1343-runtime-live-provider-relay.md): Runtime live-provider relay service and CLI acquisition | Unclaimed | Add the runtime live-provider relay service and per-attempt opaque factory acquisition required by asb run and sweep. | Implement the runtime-owned bounded live provider relay service and per-attempt CLI factory acquisition; keep AR-1329 fail-closed until merged and verified. |
 
 ### Blocked (49)
 
@@ -1813,5 +1815,3 @@ flowchart LR
 | P0 | [AR-1283](../tasks/AR-1283-formal-lockfile.md): Formal lockfile CI drift repair | Unclaimed | Repair formal workspace lockfile drift that fails the locked CI gate. | Promote after dependency verification; regenerate and verify formal/Cargo.lock so hosted --locked formal tests do not attempt updates. |
 | P0 | [AR-1284](../tasks/AR-1284-runtime-strict-replay-lifecycle.md): Runtime-owned strict-replay lifecycle execution | Unclaimed | Connect authenticated replay transport to the runtime-owned primary strict-replay lifecycle. | Split a runtime-owned launch-factory/CLI entrypoint successor: current protected main has only caller-constructible ReplayTransportIssuer and SandboxBackend APIs, so AR-1284 cannot safely wire primary replay without fabricating authority. |
 | P0 | [AR-1292](../tasks/AR-1292-tla-provenance-repair.md): Pinned TLA+ artifact provenance repair | Unclaimed | Repair or formally retain the pinned TLA+ artifact provenance mismatch blocking formal assurance. | Await signed or attested immutable TLA+ v1.8.0 provenance, or deterministic source-build qualification for 142d0ba; do not update hash only. |
-| P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Unclaimed | Repair the state-repository TLA admission runner and truthful worktree metadata. | Blocked: AR-1307 remote head ab485f767 != required 969eef058. AR-1308 preflight had 4.9 GiB free vs 16 GiB minimum and missing lock/JDK/TLC at runtime root. Reopen only with exact input bundle and passing preflight; do not run TLC locally. |
-| P0 | [AR-1305](../tasks/AR-1305-image-native-user-session.md): Image-native user-session support | Unclaimed | Qualify image-native D-Bus user-session support for required TLC containment. | Blocked: guestfish read-only inspection fails before access because /usr/bin/supermin exits 1; approved root has ~4.9 GiB free, preventing safe image repair. Reopen only with reviewed working appliance/capacity; no portable fallback, AR-1304 limit changes, or qualification. |
