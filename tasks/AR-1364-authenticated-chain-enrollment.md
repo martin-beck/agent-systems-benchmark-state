@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1364-authenticated-chain-enrollment.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Materialize authenticated certificate-chain authority for control-owned runtime receipt issuance.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Authenticated chain enrollment",
-  "updated_at": "2026-09-24T00:00:00+00:00",
+  "updated_at": "2026-09-23T23:30:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1364-authenticated-chain-enrollment"
 }
 ---
@@ -29,3 +29,6 @@ asb-tui or synthesize certificate authority from CLI/config input.
 
 - 2026-09-24T00:00:00+00:00: Created after AR-1363 found the control backend
   has no authenticated certificate-chain material or runtime-owned issuer.
+
+- 2026-09-23T23:30:22+00:00: Promote authenticated certificate-chain enrollment successor after
+  AR-1363 found no control-owned chain materialization.
