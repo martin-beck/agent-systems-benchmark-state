@@ -1753,7 +1753,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md): Live-provider run execution for real agents | codex-asb-ar1329-20260923 | Execute real agents against the selected provider through asb run and sweep with credential-free resolution. | Blocked pending runtime-owned authenticated provider egress boundary: asb-runtime NetworkPolicy supports Deny/unsupported Host only, and existing ReplayRelay/LoopbackSidecar are replay-only. Add a provider-egress allowlist contract plus sandbox/relay implementation and denial/live tests before enabling live-provider. |
+| P1 | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md): Live-provider run execution for real agents | codex-asb-ar1329-20260923 | Execute real agents against the selected provider through asb run and sweep with credential-free resolution. | Integrate ProviderEgressPolicy/ProviderEgressHandoff with a runtime-owned network-capable backend; current typed contract validates exact HTTPS host and rejects credentials/query injection, while NetworkPolicy::Deny remains unchanged and live CLI remains fail-closed until backend proof exists. |
 
 ### Open (3)
 

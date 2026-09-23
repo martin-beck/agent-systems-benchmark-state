@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1329-live-provider-run-execution",
-  "checkpoint_commit": "a438b37036e95476bef4b2c1b26b6a96745435c9",
+  "checkpoint_commit": "44ddf14334ac971e8e89bda195635595cfc651ab",
   "claim_expires": "2026-09-23T10:42:44+00:00",
   "depends_on": [
     "AR-1327",
     "AR-1328"
   ],
   "id": "AR-1329",
-  "next_action": "Blocked pending runtime-owned authenticated provider egress boundary: asb-runtime NetworkPolicy supports Deny/unsupported Host only, and existing ReplayRelay/LoopbackSidecar are replay-only. Add a provider-egress allowlist contract plus sandbox/relay implementation and denial/live tests before enabling live-provider.",
+  "next_action": "Integrate ProviderEgressPolicy/ProviderEgressHandoff with a runtime-owned network-capable backend; current typed contract validates exact HTTPS host and rejects credentials/query injection, while NetworkPolicy::Deny remains unchanged and live CLI remains fail-closed until backend proof exists.",
   "observed_branch": "feature/ar-1329-live-provider-run-execution",
   "observed_dirty": 0,
   "observed_head": "44ddf14334ac971e8e89bda195635595cfc651ab",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute real agents against the selected provider through asb run and sweep with credential-free resolution.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Live-provider run execution for real agents",
-  "updated_at": "2026-09-23T08:53:04+00:00",
+  "updated_at": "2026-09-23T08:53:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1329-live-provider-run-execution"
 }
 ---
@@ -48,3 +48,7 @@ the digest-pinned mode remain default and never touch the network.
 - 2026-09-23T08:51:09+00:00: Removed unsafe direct credential injection and now fail closed for live
   launches. Evidence: cargo check, CLI live-gate test, and workflow transcript pass; current runtime
   APIs have no provider endpoint allowlist or authenticated live relay.
+
+- 2026-09-23T08:53:25+00:00: Added runtime provider_egress module and denial tests. cargo test -p
+  asb-runtime provider_egress, cargo check -p asb-cli and CLI live-gate tests pass. Actual
+  authenticated relay/backend integration remains required.
