@@ -9,7 +9,7 @@
     "AR-1326"
   ],
   "id": "AR-1327",
-  "next_action": "Translate the OpenRouter profile through every compatible agent adapter projection, point the credential target at OPENROUTER_API_KEY, verify egress allowances, and run hostile parity conformance with exact evidence.",
+  "next_action": "Push rebased parity head 03749b620003f6737cc33ff2dec576a91221d4ca, wait exact-head CI, independently review PR #251, then merge through handoffctl only after all required checks green; post-merge verify and release AR-1327.",
   "observed_branch": "feature/ar-1327-openrouter-adapter-parity",
   "observed_dirty": 4,
   "observed_head": "a4934fca0b528ac90d09fb537936584f5af0f75e",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire the OpenRouter endpoint and model through every compatible agent adapter projection and prove parity with hostile conformance evidence.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "OpenRouter adapter projections and parity conformance",
-  "updated_at": "2026-09-23T07:13:17+00:00",
+  "updated_at": "2026-09-23T07:14:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1327-openrouter-adapter-parity"
 }
 ---
@@ -66,3 +66,11 @@ allowance must be extended explicitly, never silently.
 
 - 2026-09-23T07:13:17+00:00: Recorded command exit 0; command argv SHA-256
   90914b391c7ca82d3090af91adbb5aad6ce0bc9102a2368fe14cbd42fb1ddf25.
+
+- 2026-09-23T07:14:00+00:00: Recorded failure repair: an initial handoffctl cargo test invocation
+  exited 101 because execution starts in the state checkout and no Cargo.toml was present. No
+  product mutation occurred. Re-ran the identical focused gate with --manifest-path
+  /srv/data/projects/agent-systems-benchmark-ar-1327/Cargo.toml; provider parity 12/12 passed and
+  full asb-agents tests passed (188 passed, 1 ignored plus integration suites). Rebased PR #251 onto
+  protected main 8692729, preserving only AR-1327 delta; signed+DCO head is
+  03749b620003f6737cc33ff2dec576a91221d4ca.
