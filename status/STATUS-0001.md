@@ -1826,7 +1826,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1349](../tasks/AR-1349-live-provider-runtime-service.md): Production live-provider runtime service | codex-asb-ar1329-live-cli-luna56 | Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep. | AR-1352 bootstrap is merged but remains crate-private by design: LiveProviderBootstrapSpec::from_enrollment/provisioner are unavailable to asb-cli, and no opaque runtime handle/transport exists to deliver an enrolled provisioner into run/sweep. Add the smallest cross-crate runtime-owned handle API (no public policy/backend/path authority), then replace injected LiveProviderAttemptFactory. |
+| P1 | [AR-1349](../tasks/AR-1349-live-provider-runtime-service.md): Production live-provider runtime service | codex-asb-ar1329-live-cli-luna56 | Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep. | Opaque LiveProviderRuntimeHandle and public service acquire seam are now implemented without exposing policy/backend/path authority. Next wire the runtime enrollment layer to mint this handle and replace injected LiveProviderAttemptFactory in asb run/sweep; add CLI positive/negative dispatch tests and full gates. Do not expose bootstrap constructors. |
 
 ### Open (4)
 

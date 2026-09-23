@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1349-live-provider-runtime-service",
-  "checkpoint_commit": "2ea6e6422ea61bc9e58a0144ac56713182a72eca",
+  "checkpoint_commit": "21bd6deca45e6bce7461c3cdef20ce2390aca5bd",
   "claim_expires": "2026-09-23T22:41:51+00:00",
   "depends_on": [
     "AR-1327",
@@ -12,7 +12,7 @@
     "AR-1350"
   ],
   "id": "AR-1349",
-  "next_action": "AR-1352 bootstrap is merged but remains crate-private by design: LiveProviderBootstrapSpec::from_enrollment/provisioner are unavailable to asb-cli, and no opaque runtime handle/transport exists to deliver an enrolled provisioner into run/sweep. Add the smallest cross-crate runtime-owned handle API (no public policy/backend/path authority), then replace injected LiveProviderAttemptFactory.",
+  "next_action": "Opaque LiveProviderRuntimeHandle and public service acquire seam are now implemented without exposing policy/backend/path authority. Next wire the runtime enrollment layer to mint this handle and replace injected LiveProviderAttemptFactory in asb run/sweep; add CLI positive/negative dispatch tests and full gates. Do not expose bootstrap constructors.",
   "observed_branch": "feature/ar-1349-live-provider-runtime-service",
   "observed_dirty": 1,
   "observed_head": "03b830bbec183477758877f8a2a9e00714d351c0",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 216,
+  "task_revision": 217,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T20:45:17+00:00",
+  "updated_at": "2026-09-23T20:45:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
@@ -635,3 +635,8 @@ qualified.
 
 - 2026-09-23T20:45:17+00:00: Recorded command exit 0; command argv SHA-256
   67138335f249d78ff455f950c8e42fb8019bc5afa30cdcc6ed983cefa0fabf35.
+
+- 2026-09-23T20:45:42+00:00: Signed product commit 21bd6de adds opaque LiveProviderRuntimeHandle
+  plus LiveProviderRuntimeService::acquire delegating to the private provisioner. Runtime clippy
+  passed. Existing bootstrap constructors remain crate-private; CLI wiring is still pending and
+  AR-1329 remains fail-closed.
