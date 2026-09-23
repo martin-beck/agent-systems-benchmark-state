@@ -28,12 +28,12 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35849949352 | `3406faae58f0` | push | Emulated aarch64 portability | in_progress:- |
-| 35849949311 | `3406faae58f0` | push | Repository quality | in_progress:- |
+| 35849949352 | `3406faae58f0` | push | Emulated aarch64 portability | completed:success |
+| 35849949311 | `3406faae58f0` | push | Repository quality | completed:success |
 | 35849949302 | `3406faae58f0` | push | Huawei MIT source headers | completed:success |
-| 35849949296 | `3406faae58f0` | push | Formal assurance | in_progress:- |
+| 35849949296 | `3406faae58f0` | push | Formal assurance | completed:success |
 | 35849949293 | `3406faae58f0` | push | Fault assurance | completed:success |
-| 35849949289 | `3406faae58f0` | push | Rust verification | in_progress:- |
+| 35849949289 | `3406faae58f0` | push | Rust verification | completed:success |
 | 35849949287 | `3406faae58f0` | push | Hosted portability and native qualification | completed:success |
 | 35849115045 | `f77aafb44b05` | pull_request | Fault assurance | completed:success |
 | 35849114999 | `f77aafb44b05` | pull_request | Agent Workflow Quality shadow | completed:success |
