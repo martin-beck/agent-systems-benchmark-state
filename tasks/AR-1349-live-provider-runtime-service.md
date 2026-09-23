@@ -12,7 +12,7 @@
     "AR-1350"
   ],
   "id": "AR-1349",
-  "next_action": "Bootstrap remains the exact missing private seam: LiveProviderProvisioner composes attempts once given policy, allowlist, backend, and relay root, but no runtime-owned API currently derives those from a validated CLI selection. Add a private runtime bootstrap/profile source, then expose only an opaque service handle to run/sweep; do not make provisioner construction public or retain injected factories.",
+  "next_action": "AR-1352 bootstrap is merged but remains crate-private by design: LiveProviderBootstrapSpec::from_enrollment/provisioner are unavailable to asb-cli, and no opaque runtime handle/transport exists to deliver an enrolled provisioner into run/sweep. Add the smallest cross-crate runtime-owned handle API (no public policy/backend/path authority), then replace injected LiveProviderAttemptFactory.",
   "observed_branch": "feature/ar-1349-live-provider-runtime-service",
   "observed_dirty": 0,
   "observed_head": "03b830bbec183477758877f8a2a9e00714d351c0",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep.",
-  "task_revision": 210,
+  "task_revision": 211,
   "title": "Production live-provider runtime service",
-  "updated_at": "2026-09-23T20:42:05+00:00",
+  "updated_at": "2026-09-23T20:42:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1349-live-provider-runtime-service"
 }
 ---
@@ -619,3 +619,7 @@ qualified.
 
 - 2026-09-23T20:41:55+00:00: Recorded command exit 0; command argv SHA-256
   a397bb849161a67f26f79d7591c02038330ffa60f333d11180bf4fd04b94b7b7.
+
+- 2026-09-23T20:42:35+00:00: Rebased onto protected main 03b830bb. AR-1352 supplies and tests
+  private bootstrap, but current cross-crate API intentionally exposes no safe way for asb-cli to
+  obtain the opaque provisioner. No public authority leak introduced. AR-1329 remains fail-closed.
