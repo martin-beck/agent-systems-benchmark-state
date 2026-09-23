@@ -10,7 +10,7 @@
     "AR-1350"
   ],
   "id": "AR-1351",
-  "next_action": "Implement the private runtime-owned host provisioning service for pinned backend/gate, authenticated egress handoff, and observed namespace; keep AR-1349 and AR-1329 downstream and fail-closed.",
+  "next_action": "Review the private provisioning diff and add the positive synthetic relay lifecycle test using bind_runtime; then run workspace clippy/full tests. Constructor remains crate-private; no CLI wiring or AR-1329 enablement until exact authority/teardown evidence passes.",
   "observed_branch": "feature/ar-1351-live-runtime-provisioning",
   "observed_dirty": 2,
   "observed_head": "d069f3eeacae914bec5d33dfbb575cd7e4281b2c",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the private host/runtime provisioning seam for live acquisition.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Runtime-owned live provisioning",
-  "updated_at": "2026-09-23T19:22:51+00:00",
+  "updated_at": "2026-09-23T19:23:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1351-live-runtime-provisioning"
 }
 ---
@@ -85,3 +85,10 @@ runtime boundary; AR-1349 remains fail-closed until it is merged and verified.
   71352aa9e9a5c05420d63d2bfca4d0a03840f7d7a85c2d83dea1376fb75a4a02.
 
 - 2026-09-23T19:22:51+00:00: Heartbeat by codex-asb-runtime-acquisition-successor-luna56.
+
+- 2026-09-23T19:23:03+00:00: Repaired recorded exit-101 failures: cargo check first reported
+  duplicate valid_digest, private ProcessLimits import, unused imports; focused test then reported
+  missing ToolPin import. Removed duplicate/unused imports, imported ProcessLimits from crate root
+  and ToolPin in tests. Latest cargo check -p asb-runtime and five live_service tests pass. Added
+  bind_runtime so the real relay listener is held while the namespace handoff is issued; no
+  placeholder socket remains.

@@ -1824,7 +1824,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1349](../tasks/AR-1349-live-provider-runtime-service.md): Production live-provider runtime service | codex-asb-ar1329-live-cli-luna56 | Implement production-owned atomic live-provider acquisition and wire it into asb run and sweep. | Successor AR-1351 is promoted to supply the missing private host/runtime provisioning seam. Preserve AR-1349 as downstream consumer: after AR-1351 merges, implement LiveProviderRuntimeService::acquire and replace injected factory requirements in asb run/sweep. Keep AR-1329 fail-closed. |
-| P1 | [AR-1351](../tasks/AR-1351-live-runtime-provisioning.md): Runtime-owned live provisioning | codex-asb-runtime-acquisition-successor-luna56 | Add the private host/runtime provisioning seam for live acquisition. | Implement the private runtime-owned host provisioning service for pinned backend/gate, authenticated egress handoff, and observed namespace; keep AR-1349 and AR-1329 downstream and fail-closed. |
+| P1 | [AR-1351](../tasks/AR-1351-live-runtime-provisioning.md): Runtime-owned live provisioning | codex-asb-runtime-acquisition-successor-luna56 | Add the private host/runtime provisioning seam for live acquisition. | Review the private provisioning diff and add the positive synthetic relay lifecycle test using bind_runtime; then run workspace clippy/full tests. Constructor remains crate-private; no CLI wiring or AR-1329 enablement until exact authority/teardown evidence passes. |
 
 ### Open (4)
 
