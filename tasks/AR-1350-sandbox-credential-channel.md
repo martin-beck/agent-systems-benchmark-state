@@ -12,7 +12,7 @@
   "id": "AR-1350",
   "next_action": "Implementation committed at e7176fb499134286ce661f42338060eb80edb875. Independent review confirms channel constructor is crate-private and only receives reference/target from validated LiveProviderRuntimeConfig; adapter injection cannot construct authority, only consume the runtime-created channel. Credential delivery uses sealed memfd --args FD to set the selected child environment variable, with no secret/target in Command argv/evidence; owned Vec and temporary args are erased. Pre-spawn failures drop the channel and post-spawn parent copy closes immediately. Focused 3/3, workspace tests (all applicable passing; documented ignores), workspace clippy, rustdoc -D warnings, release build, fmt and diff checks pass. Next: coordinator review/publish/merge exact signed head, then post-merge CI; AR-1349 may consume only after merge.",
   "observed_branch": "feature/ar-1350-sandbox-credential-channel",
-  "observed_dirty": 0,
+  "observed_dirty": 5,
   "observed_head": "a336d6744b1a82f36a706ec606b847c92d49cfd3",
   "owner": "codex-asb-ar1350-sandbox-channel-luna56",
   "plan": "../plans/AR-1350-sandbox-credential-channel.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement a sandbox-owned sealed-FD credential channel for live provider children.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Sandbox-owned credential channel",
-  "updated_at": "2026-09-23T17:45:48+00:00",
+  "updated_at": "2026-09-23T17:45:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1350-sandbox-credential-channel"
 }
 ---
