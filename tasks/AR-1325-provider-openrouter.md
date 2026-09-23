@@ -8,7 +8,7 @@
     "AR-0318"
   ],
   "id": "AR-1325",
-  "next_action": "Pin the OpenRouter endpoint identity, dated model snapshot, transport bounds and OPENROUTER_API_KEY credential reference, then implement the credential-free provider profile with fail-closed validation.",
+  "next_action": "Repair PR #249 history so every commit uses configured allowed SSH key SHA256:a36V6yPvRZyxnQ2113tiA/MlHt7mPfJEXAGByBXVkuE, then rerun exact-head policy and dependent PR checks.",
   "observed_branch": "feature/ar-1325-provider-openrouter",
   "observed_dirty": 0,
   "observed_head": "f47e3728a9721ea268a730abef0f953bd2956613",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define one pinned credential-free OpenRouter provider profile for compatible ASB agent adapters.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Support a shared OpenRouter provider",
-  "updated_at": "2026-09-23T06:00:37+00:00",
+  "updated_at": "2026-09-23T06:00:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1325-provider-openrouter"
 }
 ---
@@ -60,3 +60,7 @@ unsupported or lossy translations fail closed.
   review.
 
 - 2026-09-23T06:00:37+00:00: Claimed by coordinator-openrouter-audit.
+
+- 2026-09-23T06:00:49+00:00: PR #249 exact-head f47e3728a9721ea268a730abef0f953bd2956613 is
+  UNSTABLE: Repository quality fails because commit is signed by unlisted
+  SHA256:xZFt+Xw6eb2sqyimnU8KqX/DawY5wKZFb1b4g7nKisU. No merge authorized.

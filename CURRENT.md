@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1324](tasks/AR-1324-auth-helper-control-contract.md): Authenticated credential-helper control contract | Own the ASB control and runner backend for safe credential-helper invocation. | Monitor authoritative pull_request checks for PR #248 at 5abd8c7; merge only after all required checks pass, then perform ASB↔asb-tui first-user/live-provider wizard acceptance. | codex |
-| P1 | [AR-1325](tasks/AR-1325-provider-openrouter.md): Support a shared OpenRouter provider | Define one pinned credential-free OpenRouter provider profile for compatible ASB agent adapters. | Pin the OpenRouter endpoint identity, dated model snapshot, transport bounds and OPENROUTER_API_KEY credential reference, then implement the credential-free provider profile with fail-closed validation. | coordinator-openrouter-audit |
+| P1 | [AR-1325](tasks/AR-1325-provider-openrouter.md): Support a shared OpenRouter provider | Define one pinned credential-free OpenRouter provider profile for compatible ASB agent adapters. | Repair PR #249 history so every commit uses configured allowed SSH key SHA256:a36V6yPvRZyxnQ2113tiA/MlHt7mPfJEXAGByBXVkuE, then rerun exact-head policy and dependent PR checks. | coordinator-openrouter-audit |
 
 ## Open
 
