@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1350-sandbox-credential-channel",
-  "checkpoint_commit": "7030e2f61c26f9de060fd1423cb2b618031bebfe",
+  "checkpoint_commit": "f74b7d4f6f8290fcd39f47c1c65402cbbb088423",
   "claim_expires": "2026-09-23T19:00:04+00:00",
   "depends_on": [
     "AR-1328",
@@ -10,7 +10,7 @@
     "AR-1347"
   ],
   "id": "AR-1350",
-  "next_action": "Fresh PR #261 exact head is 7030e2f61c26f9de060fd1423cb2b618031bebfe, pushed after hosted quality run 35902022299 reported 89.98% (5800/57913 missed). Added deterministic successful credential sealing and launch-boundary tool-probe coverage; local full cargo llvm-cov --workspace --all-targets --fail-under-lines 90 passes at 90.52% (57954 lines, 5494 missed), with fmt check, clippy -D warnings, and focused tests green. Signed+DCO 7030e2f verified. Monitor fresh PR-triggered exact-head checks and independent review; merge only when all required gates are green. Handoffctl post-reconcile has reported unrelated expired AR-1349 claim; product push succeeded and this AR remains leased.",
+  "next_action": "Fresh PR #261 exact head is f74b7d4f6f8290fcd39f47c1c65402cbbb088423. Hosted quality run 35903027712 failed narrowly at displayed 90.00% (57954 total lines, 5796 missed), because strict fail-under-lines remained below 90%; no gate weakening. Added deterministic launch metadata/accessor and backend probe coverage; local exact cargo llvm-cov --locked --workspace --all-targets --fail-under-lines 90 passes at 90.54% (57982 lines, 5487 missed), with fmt check and clippy -D warnings green. Signed+DCO f74b7d4 verified and pushed. Monitor fresh PR-triggered exact-head checks and independent review; merge only after all required checks pass. AR-1349 expired-claim reconciliation remains a separate state issue.",
   "observed_branch": "feature/ar-1350-sandbox-credential-channel",
   "observed_dirty": 0,
   "observed_head": "f74b7d4f6f8290fcd39f47c1c65402cbbb088423",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement a sandbox-owned sealed-FD credential channel for live provider children.",
-  "task_revision": 148,
+  "task_revision": 149,
   "title": "Sandbox-owned credential channel",
-  "updated_at": "2026-09-23T18:40:04+00:00",
+  "updated_at": "2026-09-23T18:40:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1350-sandbox-credential-channel"
 }
 ---
@@ -429,3 +429,7 @@ private runtime channel before AR-1349 can safely acquire attempts or wire
   5bdea314d99d18a411f4b5f8c843a7facf0c18df9cb0c73edf9ed92eeacc6d84.
 
 - 2026-09-23T18:40:04+00:00: Heartbeat by codex-asb-ar1350-sandbox-channel-luna56.
+
+- 2026-09-23T18:40:15+00:00: Coverage margin repair f74b7d4 adds bounded metadata/accessor/probe
+  tests and raises local exact coverage to 90.54%, above hosted floor with margin. Worktree and
+  observed head are clean/exact.
