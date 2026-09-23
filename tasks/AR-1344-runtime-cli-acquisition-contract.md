@@ -11,17 +11,17 @@
   "id": "AR-1344",
   "next_action": "Wire the opaque per-attempt context into CLI run/sweep once SandboxProcess lifecycle is integrated; retain fail-closed rejection until then.",
   "observed_branch": "feature/ar-1344-runtime-cli-acquisition-contract",
-  "observed_dirty": 2,
-  "observed_head": "a29f38f5853a4f18e0a0665b34d8257a92144808",
+  "observed_dirty": 0,
+  "observed_head": "487bf83d802fc15d19b581e72af8ed7f4e849409",
   "owner": "codex-asb-ar1344-cli-acquisition-20260923",
   "plan": "../plans/AR-1344-runtime-cli-acquisition-contract.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the runtime-owned API and CLI integration needed for safe live-provider attempts.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Runtime-owned CLI live acquisition contract",
-  "updated_at": "2026-09-23T13:02:50+00:00",
+  "updated_at": "2026-09-23T13:03:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1344-runtime-cli-acquisition-contract"
 }
 ---
