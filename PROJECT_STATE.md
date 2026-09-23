@@ -23,7 +23,7 @@ Generated from local Git and GitHub. Do not edit.
 | #235 | `dependabot/github_actions/taiki-e/install-action-2.87.12@de0353cce59e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.6 to 2.87.12 |
 | #236 | `dependabot/cargo/toml-1.1.6spec-1.1.0@9dc09c5208ab` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump toml from 0.8.23 to 1.1.6+spec-1.1.0 |
 | #237 | `dependabot/cargo/thiserror-2.0.20@83dba9288d9c` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump thiserror from 2.0.16 to 2.0.20 |
-| #250 | `feature/ar-1326-openrouter-catalog-selection@64a3a002018a` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED:, QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, QUEUED:, IN_PROGRESS:, QUEUED:, QUEUED: | feat(cli): select OpenRouter through provider catalog and plan (AR-1326) |
+| #250 | `feature/ar-1326-openrouter-catalog-selection@64a3a002018a` | `main` | UNSTABLE | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(cli): select OpenRouter through provider catalog and plan (AR-1326) |
 | #251 | `feature/ar-1327-openrouter-adapter-parity@5006bcf43fed` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(agents): OpenRouter adapter projections and parity conformance (AR-1327) |
 | #253 | `feature/ar-1323-auth-timeout@975f279cb69d` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(auth): honor negotiated control timeout |
 
@@ -35,10 +35,10 @@ Generated from local Git and GitHub. Do not edit.
 | 35828567531 | `64a3a002018a` | pull_request | Rust verification | in_progress:- |
 | 35828567517 | `64a3a002018a` | pull_request | Repository quality | in_progress:- |
 | 35828567516 | `64a3a002018a` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 35828567511 | `64a3a002018a` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 35828567511 | `64a3a002018a` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 35828567493 | `64a3a002018a` | pull_request | Huawei MIT source headers | queued:- |
-| 35828567465 | `64a3a002018a` | pull_request | Fault assurance | queued:- |
-| 35828567416 | `64a3a002018a` | pull_request | Formal assurance | queued:- |
+| 35828567465 | `64a3a002018a` | pull_request | Fault assurance | in_progress:- |
+| 35828567416 | `64a3a002018a` | pull_request | Formal assurance | in_progress:- |
 | 35827902823 | `975f279cb69d` | pull_request | Hosted portability and native qualification | completed:success |
 | 35827902819 | `975f279cb69d` | pull_request | Fault assurance | completed:success |
 | 35827902809 | `975f279cb69d` | pull_request | Agent Workflow Quality shadow | completed:success |
