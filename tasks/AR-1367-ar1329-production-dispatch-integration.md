@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1367-ar1329-production-dispatch-integration",
   "checkpoint_commit": "0c6dc52e1f4aa5854f73081711dbd9a5bc1a5d7c",
-  "claim_expires": "2026-09-24T06:24:13+00:00",
+  "claim_expires": "2026-09-24T06:26:51+00:00",
   "depends_on": [
     "AR-1366",
     "AR-1340",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Complete production asb run/sweep live-provider dispatch through runtime-owned authenticated acquisition and teardown.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "AR-1329 production dispatch integration",
-  "updated_at": "2026-09-24T05:41:16+00:00",
+  "updated_at": "2026-09-24T05:41:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1367-ar1329-production-dispatch-integration"
 }
 ---
@@ -63,3 +63,5 @@ metadata, touch asb-tui, or expose live authority through CLI/config input.
 
 - 2026-09-24T05:41:16+00:00: Recorded command exit 0; command argv SHA-256
   eee0bfe7b8074d9284501372a84dfcfb185292346be3ff70334878a6c5c469df.
+
+- 2026-09-24T05:41:51+00:00: Heartbeat by codex-asb-ar1329-repair-luna56.
