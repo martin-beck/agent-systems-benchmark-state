@@ -1,13 +1,13 @@
 ---
 {
   "branch": "codex/ar-1403-literature-external",
-  "checkpoint_commit": "b51570bbf0fa6e2ccfaddee86115c50474a168c3",
+  "checkpoint_commit": "3db36b2c289e0c7f1b6a54905df6dea5e0323981",
   "claim_expires": "2026-09-24T14:17:53+00:00",
   "depends_on": [
     "AR-1402"
   ],
   "id": "AR-1403",
-  "next_action": "PR #296 open; independently review full diff and wait for exact-head checks at base 6cef4babe3db65e22bfcd098a074da14a4630f7e/head b51570bbf0fa6e2ccfaddee86115c50474a168c3 before signed integration merge.",
+  "next_action": "PR #296 head updated to signed fix 3db36b2; rerun exact-head checks and independently review full diff before signed merge.",
   "observed_branch": "codex/ar-1403-literature-external",
   "observed_dirty": 0,
   "observed_head": "3db36b2c289e0c7f1b6a54905df6dea5e0323981",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add optional evidence-gated qualification for real literature workload sources and evaluators.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Literature workload external qualification",
-  "updated_at": "2026-09-24T13:48:44+00:00",
+  "updated_at": "2026-09-24T13:49:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1403"
 }
 ---
@@ -174,3 +174,8 @@ development, mock execution, or candidate selection.
 
 - 2026-09-24T13:48:44+00:00: Recorded command exit 0; command argv SHA-256
   af095aac309ac64d217823bb804a84ac7ec98e4e9d9a4f226d5b4181067d93e6.
+
+- 2026-09-24T13:49:09+00:00: Required checks on original head b51570b failed because the new test
+  lacked adjacent Huawei 2026 and SPDX MIT header. Added header in signed+DCO fix commit 3db36b2,
+  pushed with force-with-lease; focused qualification tests remain green. Original failure and
+  repair are durable.
