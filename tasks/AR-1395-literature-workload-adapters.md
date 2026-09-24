@@ -15,14 +15,17 @@
   "plan": "../plans/AR-1395-literature-workload-adapters.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Normalize approved literature tasks through bounded, non-vendored ASB workload adapters.",
+  "task_revision": 2,
   "title": "Literature workload adapter boundary",
-  "task_revision": 1,
-  "updated_at": "2026-09-24T07:58:00+00:00",
+  "updated_at": "2026-09-24T08:41:11+00:00",
   "worktree_key": ""
 }
 ---
 
 Adapters must preserve source semantics and never turn provenance-only entries
 into executable or qualified workloads.
+
+- 2026-09-24T08:41:11+00:00: AR-1394 registry is merged and all seven exact-main post-merge
+  workflows are green; promote adapter boundary.
