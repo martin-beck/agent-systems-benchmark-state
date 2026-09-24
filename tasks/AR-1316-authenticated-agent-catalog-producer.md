@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish the verified ASB agent catalog required by the first-run setup wizard.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Authenticated agent catalog producer",
-  "updated_at": "2026-09-24T19:02:47+00:00",
+  "updated_at": "2026-09-24T19:03:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1316"
 }
 ---
@@ -123,3 +123,6 @@ Progress evidence: ASB PR #245 merged at `027af7ad27da13b359b3f099699c42b03c6f39
   #306 stale-base diff. Current main already contains the AR-1316 producer implementation: persisted
   generation/snapshot, signed release-index source, refresh fencing, restart and negative tests.
   Bound branch is clean with no product diff; no stale PR was merged or force-pushed.
+
+- 2026-09-24T19:03:05+00:00: Recorded command exit 0; command argv SHA-256
+  bda6e479789a32dc87ec4945baa9311612b2cde91e93aa5bcec99bbb934f3ca8.
