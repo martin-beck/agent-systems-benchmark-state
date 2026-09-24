@@ -7,7 +7,7 @@
     "AR-1394"
   ],
   "id": "AR-1399",
-  "next_action": "Promote after AR-1394 remains verified; audit WORKLOADS.md and RELATED_WORK.md against the registry, add missing literature workload records with fail-closed evidence labels, and publish the reviewed change before AR-1396 selection.",
+  "next_action": "Dependency branch e63a3c6 already contains complete six executable-candidate literature records and methodology-only AgentOps/HELM; focused validator/tests pass. Await parent integration decision; no duplicate product delta.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Represent every docs-listed literature workload family in the strict ASB registry.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Literature workload registry completeness",
-  "updated_at": "2026-09-24T10:02:26+00:00",
+  "updated_at": "2026-09-24T10:02:36+00:00",
   "worktree_key": ""
 }
 ---
@@ -37,3 +37,9 @@ native evidence gates.
 - 2026-09-24T10:00:41+00:00: Claimed by ar1399_literature_registry_luna56.
 
 - 2026-09-24T10:02:26+00:00: Heartbeat by ar1399_literature_registry_luna56.
+
+- 2026-09-24T10:02:36+00:00: Audit evidence: feature/ar-1394-literature-workload-registry at e63a3c6
+  has 22 records; Harbor, Inspect AI, HAL, AgentBench, tau-bench and AgentDojo are
+  explicit-download/non-vendored executable-candidate records with planned evaluator/native
+  evidence; AgentOps, HELM and AI Agents That Matter are methodology-only. python3
+  tools/quality/validate_external_registry.py reports 22 and focused pytest reports 11 passed.
