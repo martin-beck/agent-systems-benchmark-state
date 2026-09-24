@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add an approved runtime mock-attempt adapter for deterministic local run and sweep qualification.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Runtime local mock-attempt adapter",
-  "updated_at": "2026-09-24T23:38:44+00:00",
+  "updated_at": "2026-09-24T23:39:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1434-runtime-local-mock-attempt-adapter"
 }
 ---
@@ -178,3 +178,10 @@ external provider.
 
 - 2026-09-24T23:38:44+00:00: Recorded command exit 0; command argv SHA-256
   0937f8efc0aed46c479e7f485fdc31721cbca7c16fa5667b086513f5615f540e.
+
+- 2026-09-24T23:39:25+00:00: Post-merge monitoring remains tied to exact SHA
+  4736db727b13140364b8acd32cf77b7b375eeb17. Current terminal success: Fault assurance 36073539280,
+  Hosted portability and native qualification 36073539323, Huawei MIT source headers 36073539342.
+  Still in progress: Formal assurance 36073539302, Repository quality 36073539299, Emulated aarch64
+  portability 36073539373, Rust verification 36073539282. One bounded poll recorded LOCK_TIMEOUT
+  after 10s; no conclusion inferred and retry succeeded. Keep task in progress.
