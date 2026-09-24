@@ -1,14 +1,14 @@
 ---
 {
   "branch": "codex/ar-1413-long-horizon-performance",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "f3ce434417407d64b14fb0cc1493ffc1f93f3055",
   "claim_expires": "2026-09-24T15:19:19+00:00",
   "depends_on": [
     "AR-1408",
     "AR-1401"
   ],
   "id": "AR-1413",
-  "next_action": "Claim after binding metadata; implement bounded adapters and truthful selectors for long-horizon and performance families.",
+  "next_action": "Review full diff, run focused/full applicable gates, then publish signed+DCO PR against exact protected main ea27dfb4e3a569fd429f99307e91c7629f15f65f.",
   "observed_branch": "codex/ar-1413-long-horizon-performance",
   "observed_dirty": 0,
   "observed_head": "f3ce434417407d64b14fb0cc1493ffc1f93f3055",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add truthful long-horizon, refreshed, performance, and reproducibility workload adapters.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Long-horizon and performance literature workload adapters",
-  "updated_at": "2026-09-24T14:56:33+00:00",
+  "updated_at": "2026-09-24T14:57:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1413"
 }
 ---
@@ -74,3 +74,11 @@ bounded local fixtures or LiteLLM-compatible mocks only.
 
 - 2026-09-24T14:56:33+00:00: Recorded command exit 0; command argv SHA-256
   7ca9b13f81f15fa40a0130a9634414b3b19ec3063874c873eea83a5ac5d5cafc.
+
+- 2026-09-24T14:57:00+00:00: Implemented metric_kind, evaluation_window, contamination_cutoff, and
+  archive_status in WorkloadCatalogEntry; populated explicit boundaries for SWE-rebench, SWE-Lancer,
+  SWE-Perf, SWEfficiency, Core-Bench, and all catalog records; added positive catalog tests and
+  docs. First full workspace cargo test attempt exited 101 without retained stderr; rerunning the
+  identical command exited 0, indicating an environmental/transient test flake; this was recorded
+  and not suppressed. Full workspace test rerun and clippy -D warnings passed; fmt check and diff
+  check passed. Signed+DCO commit f3ce434.
