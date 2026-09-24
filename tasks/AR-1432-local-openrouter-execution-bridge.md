@@ -15,7 +15,7 @@
   "id": "AR-1432",
   "next_action": "Implement local-only runtime-owned mock enrollment/attempt bridge in the isolated worktree; add hostile egress, teardown, cancellation, and secret non-disclosure tests. Do not synthesize production authority or contact OpenRouter.",
   "observed_branch": "feature/ar-1432-local-openrouter-execution-bridge",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "ed9076031b8278537dcd71e706464db59b8cba20",
   "owner": "codex-asb-ar1432-local-openrouter-luna56",
   "plan": "../plans/AR-1432-local-openrouter-execution-bridge.md",
@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify credential-free OpenRouter user execution through a deterministic loopback mock without external-provider access.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Local OpenRouter execution bridge",
-  "updated_at": "2026-09-24T23:07:18+00:00",
+  "updated_at": "2026-09-24T23:07:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1432-local-openrouter-execution-bridge"
 }
 ---
