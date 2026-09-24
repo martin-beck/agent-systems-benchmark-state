@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-24T13:31:37+00:00",
   "depends_on": [],
   "id": "AR-1313",
-  "next_action": "PR #290 is open at signed head 3420355 on exact base e41d4df; wait for all exact-head checks, record independent review, then merge with signed integration tool.",
+  "next_action": "All PR #290 exact-head checks are green; obtain independent review, then run signed merge_pr.py against exact base e41d4df/head 3420355/tree e1120e9 and verify seven post-merge workflows.",
   "observed_branch": "repair/ar-1313-historical-dco-909078c",
   "observed_dirty": 0,
   "observed_head": "3420355d8a0855aea696775cfe85cc628773c842",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Forward-only signed DCO recovery candidate published as PR #231.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Historical DCO merge-integrity recovery",
-  "updated_at": "2026-09-24T11:31:37+00:00",
+  "updated_at": "2026-09-24T11:31:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1313-historical-dco-909078c"
 }
 ---
@@ -111,3 +111,8 @@ blocked with the exact failure and do not weaken the policy.
 - 2026-09-24T11:26:46+00:00: Heartbeat by ar1313_recovery_luna56.
 
 - 2026-09-24T11:31:37+00:00: Heartbeat by ar1313_recovery_luna56.
+
+- 2026-09-24T11:31:48+00:00: PR #290 exact-head checks all passed: AWQ shadow, headers, Rust,
+  emulated aarch64, repository quality (coverage and defect fixtures), fault, formal, hosted. No
+  source diff; tree remains exactly e1120e9 (same as base). Independent review is still required
+  before signed integration merge.
