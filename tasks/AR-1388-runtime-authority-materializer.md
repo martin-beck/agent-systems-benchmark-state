@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1388-runtime-authority-materializer",
   "checkpoint_commit": "25548846966e37646dded8d67ed8ee5123b8bc32",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T07:41:03+00:00",
   "depends_on": [
     "AR-1385",
     "AR-1384",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1388-runtime-authority-materializer",
   "observed_dirty": 0,
   "observed_head": "25548846966e37646dded8d67ed8ee5123b8bc32",
-  "owner": "",
+  "owner": "codex-asb-ar1329-repair-luna56",
   "plan": "../plans/AR-1388-runtime-authority-materializer.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Materialize runtime-owned provider authority from authenticated receipt and chain state.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Runtime authority receipt materializer",
-  "updated_at": "2026-09-24T06:40:16+00:00",
+  "updated_at": "2026-09-24T06:41:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1388-runtime-authority-materializer"
 }
 ---
@@ -35,3 +35,5 @@ namespace identity, or launch tokens.
 
 - 2026-09-24T06:40:16+00:00: AR-1387 audit found missing receipt-chain to private bootstrap
   constructor; dependencies verified
+
+- 2026-09-24T06:41:03+00:00: Claimed by codex-asb-ar1329-repair-luna56.
