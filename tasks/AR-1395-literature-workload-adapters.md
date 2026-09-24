@@ -7,7 +7,7 @@
     "AR-1394"
   ],
   "id": "AR-1395",
-  "next_action": "Protected-main merge 130ff91ec3ac875ac9c370ab67dd9934d830ccdf is complete; wait for and verify all seven post-merge workflows before releasing AR.",
+  "next_action": "Exact merge post-merge Repository quality and Rust runs were cancelled by later main push c58b0b0a; after that main queue terminates, rerun both exact merge workflows and require success before release.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Normalize approved literature tasks through bounded, non-vendored ASB workload adapters.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Literature workload adapter boundary",
-  "updated_at": "2026-09-24T09:19:20+00:00",
+  "updated_at": "2026-09-24T09:19:44+00:00",
   "worktree_key": ""
 }
 ---
@@ -136,3 +136,8 @@ into executable or qualified workloads.
 - 2026-09-24T09:17:21+00:00: Heartbeat by codex-asb-ar1395-literature-adapters-luna56.
 
 - 2026-09-24T09:19:20+00:00: Heartbeat by codex-asb-ar1395-literature-adapters-luna56.
+
+- 2026-09-24T09:19:44+00:00: Exact merge post-merge evidence: aarch64, hosted portability, formal,
+  fault assurance, and headers passed; Repository quality and Rust were cancelled twice by
+  later-main concurrency. Later main c58b0b0a Repository quality currently failed merge-tree policy
+  and aarch64 remains active; preserve AR open until exact reruns complete.
