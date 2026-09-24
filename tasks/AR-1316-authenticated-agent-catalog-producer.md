@@ -10,7 +10,7 @@
     "AR-1319"
   ],
   "id": "AR-1316",
-  "next_action": "Rerun full workspace tests with serialized test threads after one transient control-state lock failure; then release if green.",
+  "next_action": "Release AR-1316 as satisfied by exact current main; no new product diff or PR is required because producer implementation is already merged and verified.",
   "observed_branch": "feature/ar-1316-authenticated-agent-catalog-producer",
   "observed_dirty": 0,
   "observed_head": "0dcc71705eb610e4c3ab6a9f775a9d7b9b25218a",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish the verified ASB agent catalog required by the first-run setup wizard.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Authenticated agent catalog producer",
-  "updated_at": "2026-09-24T19:06:30+00:00",
+  "updated_at": "2026-09-24T19:07:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1316"
 }
 ---
@@ -141,3 +141,10 @@ Progress evidence: ASB PR #245 merged at `027af7ad27da13b359b3f099699c42b03c6f39
 
 - 2026-09-24T19:06:30+00:00: Recorded command exit 0; command argv SHA-256
   1024fc1e6cefa31b078f0b5d2ed85c7ea4586897b388bf1e308f62db58574461.
+
+- 2026-09-24T19:07:07+00:00: Exact current-main verification passed: serialized cargo test --locked
+  --workspace -- --test-threads=1 completed all workspace tests and doc tests successfully after the
+  earlier parallel lock flake; cargo clippy --locked --workspace --all-targets -- -D warnings
+  passed. Focused agent_catalog tests passed (2/2), including signed release-index promotion,
+  unavailable roster, refresh generation fencing, restart persistence, digest and stale-generation
+  rejection. Worktree clean at origin/main 0dcc717.
