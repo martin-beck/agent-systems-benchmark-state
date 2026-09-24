@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Close literature-to-catalog gaps and make benchmark versus harness boundaries explicit.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Literature workload inventory closure",
-  "updated_at": "2026-09-24T12:41:03+00:00",
+  "updated_at": "2026-09-24T12:41:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1408"
 }
 ---
@@ -32,3 +32,6 @@ listed external evaluator, provider, native platform, or dataset is qualified.
   and make workload-versus-framework boundaries explicit.
 
 - 2026-09-24T12:41:03+00:00: Claimed by ar1408_literature_inventory_luna56b.
+
+- 2026-09-24T12:41:34+00:00: Recorded command exit 0; command argv SHA-256
+  ff6d1fa7a7185010f75fcfafe4bdc1bdd5b9804d8c2b3e7abdd8a1b96cd81c63.
