@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide offline deterministic mock execution for every documented literature workload family.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Literature workload local mock execution",
-  "updated_at": "2026-09-24T12:20:09+00:00",
+  "updated_at": "2026-09-24T12:20:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1401"
 }
 ---
@@ -105,3 +105,6 @@ record to official, native-tested, or externally qualified.
   d21a6fe72065162ea924bc453e7a667771e871c83fe8ff17f426079557265694.
 
 - 2026-09-24T12:20:09+00:00: Heartbeat by ar1401_literature_mock_luna56.
+
+- 2026-09-24T12:20:16+00:00: Recorded command exit 8; command argv SHA-256
+  45e2e6af22fec795d93dfb49e238e0224e04365c780ccfa4701b14f1cdaff6c8.
