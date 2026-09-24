@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Continuously keep ASB tutorial commands and steps syntactically current.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "ASB tutorial freshness CI and documentation qualification",
-  "updated_at": "2026-09-24T22:06:14+00:00",
+  "updated_at": "2026-09-24T22:06:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1216"
 }
 ---
@@ -81,3 +81,6 @@ tutorial command or require a provider/LLM connection.
 
 - 2026-09-24T22:06:03+00:00: Recorded command exit 0; command argv SHA-256
   b7c438686581cf292b6cd41497ceabb3af42dfed57e04dfd6cc89efed8e2d15b.
+
+- 2026-09-24T22:06:24+00:00: Recorded command exit 0; command argv SHA-256
+  045d779a2c0c67fa962dfd00531525a3701c74606d86496486a8425f6cded3eb.
