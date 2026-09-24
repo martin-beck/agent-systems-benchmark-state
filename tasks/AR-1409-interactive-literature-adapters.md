@@ -11,16 +11,16 @@
   "next_action": "Run full locked workspace quality gates, independent exact-diff review, then publish through handoffctl and monitor seven exact-main workflows.",
   "observed_branch": "codex/ar-1409-interactive-literature",
   "observed_dirty": 0,
-  "observed_head": "e4d8e7a70b2cce6f740bb8ababd145295ecc2665",
+  "observed_head": "6f93076afa1af5eca0d33a693106e60f70e4ea5b",
   "owner": "ar1409_interactive_literature_luna56",
   "plan": "../plans/AR-1409-interactive-literature-adapters.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add offline-selectable interactive and tool-use literature workload adapters.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Interactive literature workload adapters",
-  "updated_at": "2026-09-24T15:23:30+00:00",
+  "updated_at": "2026-09-24T15:23:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1409"
 }
 ---
