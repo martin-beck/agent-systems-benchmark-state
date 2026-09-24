@@ -27,7 +27,8 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35979776084 | `c58b0b0a4d90` | push | Rust verification | pending:- |
+| 35980460560 | `c58b0b0a4d90` | workflow_dispatch | Rust verification | pending:- |
+| 35979776084 | `c58b0b0a4d90` | push | Rust verification | completed:cancelled |
 | 35979776053 | `c58b0b0a4d90` | push | Formal assurance | completed:success |
 | 35979776020 | `c58b0b0a4d90` | push | Hosted portability and native qualification | completed:success |
 | 35979775942 | `c58b0b0a4d90` | push | Huawei MIT source headers | completed:success |
@@ -38,4 +39,3 @@ Generated from local Git and GitHub. Do not edit.
 | 35979100371 | `130ff91ec3ac` | push | Repository quality | in_progress:- |
 | 35979100360 | `130ff91ec3ac` | push | Formal assurance | completed:success |
 | 35979100359 | `130ff91ec3ac` | push | Hosted portability and native qualification | completed:success |
-| 35979100333 | `130ff91ec3ac` | push | Fault assurance | completed:success |
