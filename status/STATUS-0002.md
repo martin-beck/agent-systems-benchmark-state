@@ -72,7 +72,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P2 | [AR-1406](../tasks/AR-1406-action-pin-policy-migration.md): Action pin policy migration | ar1406-action-pin-recovery-luna56 | Qualify and merge remaining immutable GitHub action pin updates without weakening policy. | Bind isolated worktree before product inspection; qualify immutable action commits for PRs #235/#234/#148 and merge only after policy and exact-head gates pass. |
+| P2 | [AR-1406](../tasks/AR-1406-action-pin-policy-migration.md): Action pin policy migration | ar1406-action-pin-recovery-luna56 | Qualify and merge remaining immutable GitHub action pin updates without weakening policy. | Monitor PR #301 exact head feca69d22f3a73c643ff2150ae95d189acdb4791 against protected base c2fe732b3b50ef38893c2e3513770939de04637f; obtain independent review and all required checks before any merge, then verify post-merge seven-workflow evidence. |
 
 ### Open (2)
 
