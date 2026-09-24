@@ -8,7 +8,7 @@
   ],
   "id": "AR-1402",
   "next_action": "PR #294 exact base 0667f299/head cec6345/tree 084d869 is open; all required exact-head checks are running. Obtain independent full-diff review, wait for terminal green, then signed exact-base merge and seven post-merge verification.",
-  "observed_branch": "DETACHED",
+  "observed_branch": "codex/ar-1402-literature-cli",
   "observed_dirty": 0,
   "observed_head": "022561d8377afb8d1ff164520f9601578b21f717",
   "owner": "ar1402_literature_cli_luna56",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate literature workload catalog and adapters through all ASB CLI execution and evidence paths.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Literature workload CLI dispatch integration",
-  "updated_at": "2026-09-24T13:04:48+00:00",
+  "updated_at": "2026-09-24T13:04:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1402"
 }
 ---
