@@ -1,13 +1,13 @@
 ---
 {
   "branch": "repair/ar-1398-signed-protected-main-recovery",
-  "checkpoint_commit": "f5680de433bb15879b1ef42427d1e7843e0bff36",
+  "checkpoint_commit": "b63394b167d453738364f4eca73af76838ef1937",
   "claim_expires": "2026-09-24T12:14:38+00:00",
   "depends_on": [
     "AR-1337"
   ],
   "id": "AR-1398",
-  "next_action": "Await repository-quality rerun attempt 2 for PR #287; if green retain transient classification, otherwise reproduce locally and repair via signed descendant.",
+  "next_action": "Watch all seven exact-main workflows for merge b63394b; after terminal success, record conclusions and release AR-1398 done.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Restore signed+DCO protected-main evidence after an unsigned GitHub-generated repair merge.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Signed protected-main recovery",
-  "updated_at": "2026-09-24T10:21:07+00:00",
+  "updated_at": "2026-09-24T10:21:38+00:00",
   "worktree_key": ""
 }
 ---
@@ -165,3 +165,11 @@ providers are never required for development evidence.
 
 - 2026-09-24T10:21:07+00:00: Recorded command exit 0; command argv SHA-256
   8e70d7296333048b35eed5250ee116b3901394b2133cdbd7e2c791bf3cc5d26b.
+
+- 2026-09-24T10:21:38+00:00: Final review passed: PR #287 head f5680de is SSH Good and DCO-signed,
+  parent 123ba915, tree 5e10b6a1, zero changed files. Signed merge_pr.py ran from clean isolated
+  worktree at approved base 123ba915 and published merge b63394b167d453738364f4eca73af76838ef1937
+  with parents 123ba915 and f5680de, identical tree, Good SSH signature and matching DCO. Exact-main
+  workflows dispatched: Huawei 35986670232 (success), emulated aarch64 35986670215, fault
+  35986670237, repository quality 35986670309, hosted portability 35986670359, Rust 35986670370,
+  formal 35986670435 (remaining six in progress). Historical unsigned merge 123ba915 preserved.
