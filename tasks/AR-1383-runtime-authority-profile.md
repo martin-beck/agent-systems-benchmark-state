@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize runtime-owned live authority profile for authenticated execution.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Runtime-owned authority profile materialization",
-  "updated_at": "2026-09-24T04:53:57+00:00",
+  "updated_at": "2026-09-24T04:57:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1383-runtime-authority-profile"
 }
 ---
@@ -99,3 +99,6 @@ bootstrap inputs required by live execution.
 - 2026-09-24T04:52:42+00:00: Heartbeat by codex-asb-runtime-receipt-source-luna56.
 
 - 2026-09-24T04:53:57+00:00: Heartbeat by codex-asb-runtime-receipt-source-luna56.
+
+- 2026-09-24T04:57:54+00:00: Recorded command exit 0; command argv SHA-256
+  1748da2525535f9769137949669aa3037c8f445f64ed0e13baa203c373c3dc2d.
