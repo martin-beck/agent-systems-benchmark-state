@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1434](tasks/AR-1434-runtime-local-mock-attempt-adapter.md): Runtime local mock-attempt adapter | Add an approved runtime mock-attempt adapter for deterministic local run and sweep qualification. | Run complete applicable workspace gates and independent review of signed+DCO c1f0434; then publish exact-head PR only if the mock-only boundary remains isolated and all required checks are green. | codex-asb-ar1434-mock-adapter-luna56 |
+| P0 | [AR-1434](tasks/AR-1434-runtime-local-mock-attempt-adapter.md): Runtime local mock-attempt adapter | Add an approved runtime mock-attempt adapter for deterministic local run and sweep qualification. | Independent review required for exact signed+DCO head c1f0434877376915151a4b8946b61bf7246c6db3; then publish exact-head PR and monitor required hosted checks. Do not merge or release before review, green CI, and seven post-merge workflows. | codex-asb-ar1434-mock-adapter-luna56 |
 
 ## Blocked
 
