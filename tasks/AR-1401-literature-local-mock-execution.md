@@ -1,14 +1,14 @@
 ---
 {
   "branch": "codex/ar-1401-literature-local-mock",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "5a3b8477fc666aa3a2bcb356905d649885b8f467",
   "claim_expires": "2026-09-24T13:57:35+00:00",
   "depends_on": [
     "AR-1400",
     "AR-1395"
   ],
   "id": "AR-1401",
-  "next_action": "Promote after AR-1400 and AR-1395 are done; implement deterministic local fixture/evaluator paths for every literature workload family.",
+  "next_action": "PR #292 exact base e0b15fc/head 5a3b847 is running exact-head checks; obtain independent review, then signed merge and seven post-merge verification.",
   "observed_branch": "codex/ar-1401-literature-local-mock",
   "observed_dirty": 0,
   "observed_head": "5a3b8477fc666aa3a2bcb356905d649885b8f467",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide offline deterministic mock execution for every documented literature workload family.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Literature workload local mock execution",
-  "updated_at": "2026-09-24T11:58:58+00:00",
+  "updated_at": "2026-09-24T11:59:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1401"
 }
 ---
@@ -61,3 +61,11 @@ record to official, native-tested, or externally qualified.
 
 - 2026-09-24T11:58:58+00:00: Recorded command exit 0; command argv SHA-256
   e84c894d621da0d8bfc581626a19413c598aa5f6badf7a3b701aa0936fcb6f23.
+
+- 2026-09-24T11:59:27+00:00: Implemented deterministic offline literature local mocks for all 22
+  documented executable families. Added in-process model double, provenance-bound
+  workload/adaptation/evaluator/mock/scorer/result digests, bounded timeout/task/grader/egress
+  controls, and explicit local fixture support for SystemsPerformance plus HAL harness probes while
+  official evaluation remains unavailable. Added positive and negative tests and docs. Signed+DCO
+  commit 5a3b847; repository policy passed; focused 26 tests, full cargo test workspace, and rustdoc
+  warnings passed. PR #292 published on exact base e0b15fc; checks are running.
