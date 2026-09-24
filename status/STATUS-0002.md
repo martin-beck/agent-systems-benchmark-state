@@ -59,19 +59,19 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P1 | [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md): Literature workload local mock execution | ar1401_literature_mock_luna56 | Provide offline deterministic mock execution for every documented literature workload family. | Promote after AR-1400 and AR-1395 are done; implement deterministic local fixture/evaluator paths for every literature workload family. |
 | P1 | [AR-1405](../tasks/AR-1405-open-dependency-pr-reconciliation.md): Open dependency PR reconciliation | ar1405_dependency_pr_luna56b | Rebase, repair, verify, and truthfully resolve stale open dependency PRs. | Create one current-main replacement for safe dependency/action updates; independently assess sha2 separately; close stale PRs only after replacement evidence. |
 
-### Open (3)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1212](../tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Unclaimed | Teach users to test configured-agent benchmark eligibility without running an agent. | Implement the offline tutorial for checking agent benchmark readiness under the current configuration. |
 | P0 | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | Unclaimed | Publish the verified ASB agent catalog required by the first-run setup wizard. | Persist the authenticated catalog snapshot/generation and complete live ASB-to-asb-tui wizard evidence; keep all entries unavailable until a verified release closure exists. |
-| P1 | [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md): Literature workload local mock execution | Unclaimed | Provide offline deterministic mock execution for every documented literature workload family. | Promote after AR-1400 and AR-1395 are done; implement deterministic local fixture/evaluator paths for every literature workload family. |
 
 ### Blocked (66)
 
