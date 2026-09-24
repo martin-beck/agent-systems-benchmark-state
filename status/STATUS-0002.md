@@ -78,13 +78,12 @@
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1212](../tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | open-pr-triage-luna56 | Teach users to test configured-agent benchmark eligibility without running an agent. | PR #305 exact head 3fda4b4; CI run 36046399014 and companion workflows are in progress. Completed green: AWQ shadow, Huawei headers, retained faults, bounded fuzz, Kani, Loom, matcher/SLO, platform evidence. Pending: policy/coverage/supply chain, Rust, emulated aarch64, TLC/Alloy. No independent review yet; do not merge. |
 | P1 | [AR-1417](../tasks/AR-1417-interactive-stateful-literature-workloads.md): Interactive stateful literature workloads | ar1417-literature-luna56 | Add selectable interactive and stateful literature workloads beside built-in software-engineering fixtures. | Promote after AR-1416 is released; audit AgentBench and other docs-listed stateful task sources, then implement the bounded local/mock adapter and catalog records. |
-| P1 | [AR-1418](../tasks/AR-1418-tool-use-reliability-safety-workloads.md): Tool-use reliability and safety workloads | ar1418-tool-use-reliability-safety-luna56 | Add selectable tool-use reliability and safety workloads from the literature with separate metrics. | Release: implementation is already merged in PR #300 at c2fe732b from 6f93076; focused interactive tests, all asb-workloads targets, and clippy -D warnings pass on exact current main 0dcc717. Preserve historical exact-head CI evidence and release without duplicate PR. |
 
 ### Blocked (66)
 
@@ -237,7 +236,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (288)
+### Done (289)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -511,5 +510,6 @@
 | P1 | [AR-1413](../tasks/AR-1413-long-horizon-performance-adapters.md): Long-horizon and performance literature workload adapters | Unclaimed | Seven post-merge runs: four terminal success; aarch64, repository quality, and Rust remain actively executing on GitHub-hosted runners. | Continue monitoring post-merge IDs 36018871328/36018871323/36018871358; runner/job APIs show active in-progress steps, so do not rerun. Release only after all seven terminal success. |
 | P1 | [AR-1415](../tasks/AR-1415-literature-selector-total-coverage.md): Total literature workload selector coverage | Unclaimed | Make the complete literature workload inventory selectable beside built-in software-engineering fixtures with truthful evidence gates. | Rerun exact failed post-merge workflow 36038241138 after three green isolated Goose reproductions; wait all seven terminal SUCCESS, verify main, then release. |
 | P1 | [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md): Literature workload local-mock cross-product | Unclaimed | Prove end-to-end selectable literature workloads with deterministic local or LiteLLM-compatible mocks and no live provider dependency. | Monitor seven post-merge workflows for merge 0dcc717; release AR-1416 only after all seven terminal SUCCESS and exact-main verification. |
+| P1 | [AR-1418](../tasks/AR-1418-tool-use-reliability-safety-workloads.md): Tool-use reliability and safety workloads | Unclaimed | Add selectable tool-use reliability and safety workloads from the literature with separate metrics. | Release: implementation is already merged in PR #300 at c2fe732b from 6f93076; focused interactive tests, all asb-workloads targets, and clippy -D warnings pass on exact current main 0dcc717. Preserve historical exact-head CI evidence and release without duplicate PR. |
 | P2 | [AR-0202](../tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Unclaimed | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Run final exact-main and local post-merge verification using required native x86_64 kernel evidence and applicable pinned QEMU AArch64 portability checks; record native ARM64 PMU/eBPF as optional future evidence, then release. |
 | P2 | [AR-0308](../tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | Unclaimed | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Run final state validation/live doctor and release done after confirming clean synchronized product/state refs at signed merge a0d80e4. |

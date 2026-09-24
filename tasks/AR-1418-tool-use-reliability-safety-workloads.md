@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar-1418-tool-use-reliability-safety",
   "checkpoint_commit": "0dcc71705eb610e4c3ab6a9f775a9d7b9b25218a",
-  "claim_expires": "2026-09-24T21:16:15+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1416",
     "AR-1408"
@@ -12,15 +12,15 @@
   "observed_branch": "codex/ar-1418-tool-use-reliability-safety",
   "observed_dirty": 0,
   "observed_head": "0dcc71705eb610e4c3ab6a9f775a9d7b9b25218a",
-  "owner": "ar1418-tool-use-reliability-safety-luna56",
+  "owner": "",
   "plan": "../plans/AR-1418.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Add selectable tool-use reliability and safety workloads from the literature with separate metrics.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Tool-use reliability and safety workloads",
-  "updated_at": "2026-09-24T19:19:24+00:00",
+  "updated_at": "2026-09-24T19:19:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1418"
 }
 ---
@@ -82,3 +82,11 @@ dimensions; no aggregate score may hide unsafe or failed tool calls.
   merged c2fe732b with all required checks terminal SUCCESS. Prior identical update attempt failed
   with LOCK_TIMEOUT after 10.0s acquiring exclusive coordinator lock; this retry verifies the
   durable write.
+
+- 2026-09-24T19:19:36+00:00: Released as already satisfied on current main: implementation from PR
+  #300 (merge c2fe732b, source commit 6f93076) provides AgentBench/tau-bench/AgentDojo deterministic
+  offline adapters, separate reliability/pass@k/pass^k and utility/policy evidence, strict negative
+  controls, and selector/docs/generated-catalog parity. Exact isolated-worktree audit was clean;
+  focused 2/2 tests, package all-targets 34+2+5 tests, and clippy -D warnings passed. PR #300
+  required checks and historical merge evidence are terminal SUCCESS. No duplicate product commit
+  created.
