@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1372-topology-repair.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Repair protected-main merge topology after AR-1371 without changing product behavior.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Protected merge topology repair",
-  "updated_at": "2026-09-24T01:30:00+00:00",
+  "updated_at": "2026-09-24T01:25:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1372-topology-repair"
 }
 ---
@@ -27,3 +27,6 @@ GitHub squash merge had one parent while protected-main policy requires two.
 This repair must preserve AR-1371's product result and change only merge
 topology; no gate may be weakened.
 
+
+- 2026-09-24T01:25:50+00:00: Promote topology-only repair for AR-1371 one-parent squash merge;
+  preserve product behavior and all gates.
