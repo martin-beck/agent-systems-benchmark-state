@@ -11,16 +11,16 @@
   "next_action": "PR #119 is stale on 78a8e9f; AR-1312 coverage repair is done. Rebase the reviewed lifecycle diff onto current main 6925c3c, rerun all gates, and merge only exact-head green.",
   "observed_branch": "feature/native-capacity-controller",
   "observed_dirty": 0,
-  "observed_head": "e2e3574ed2bbc020105ffb1eb4c5a38691b299a3",
+  "observed_head": "4630f90af739fc628d2e4264a2d40fd7fe142eec",
   "owner": "ar0704-requal-luna56",
   "plan": "../plans/AR-0704.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 240,
+  "task_revision": 241,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-24T19:47:02+00:00",
+  "updated_at": "2026-09-24T19:47:49+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
