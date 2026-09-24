@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Forward-only signed DCO recovery candidate published as PR #231.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Historical DCO merge-integrity recovery",
-  "updated_at": "2026-09-24T11:31:48+00:00",
+  "updated_at": "2026-09-24T11:43:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1313-historical-dco-909078c"
 }
 ---
@@ -116,3 +116,6 @@ blocked with the exact failure and do not weaken the policy.
   emulated aarch64, repository quality (coverage and defect fixtures), fault, formal, hosted. No
   source diff; tree remains exactly e1120e9 (same as base). Independent review is still required
   before signed integration merge.
+
+- 2026-09-24T11:43:18+00:00: Recorded command exit 0; command argv SHA-256
+  acf2cc84cc0d85ef7976d2febd0320736dc0d542c34061be496fcb38aa4e6365.
