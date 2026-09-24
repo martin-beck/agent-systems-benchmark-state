@@ -7,7 +7,7 @@
     "AR-1211"
   ],
   "id": "AR-1212",
-  "next_action": "PR #305 exact head 3fda4b4; CI run 36046399014 and companion workflows are in progress. Completed green: AWQ shadow, Huawei headers, retained faults, bounded fuzz, Kani, Loom, matcher/SLO, platform evidence. Pending: policy/coverage/supply chain, Rust, emulated aarch64, TLC/Alloy. No independent review yet; do not merge.",
+  "next_action": "All PR #305 exact-head required checks are green and mergeability is CLEAN/MERGEABLE. Independent review is still required and absent; obtain review, then merge through established workflow and verify post-merge workflows before releasing AR-1212.",
   "observed_branch": "codex/ar-1212-benchmark-readiness",
   "observed_dirty": 0,
   "observed_head": "3fda4b4eb63f928cd446274d9e36af08b5579845",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach users to test configured-agent benchmark eligibility without running an agent.",
-  "task_revision": 57,
+  "task_revision": 58,
   "title": "Agent benchmark-readiness tutorial",
-  "updated_at": "2026-09-24T19:18:23+00:00",
+  "updated_at": "2026-09-24T19:20:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1212"
 }
 ---
@@ -169,3 +169,8 @@ Implement the linked tutorial and deterministic negative/positive syntax fixture
 - 2026-09-24T19:16:05+00:00: Heartbeat by open-pr-triage-luna56.
 
 - 2026-09-24T19:18:23+00:00: Heartbeat by open-pr-triage-luna56.
+
+- 2026-09-24T19:20:46+00:00: PR #305 exact head 3fda4b4 has all 12 required checks green:
+  policy/coverage, Rust, emulated aarch64, TLC/Alloy, retained faults, bounded fuzz, matcher/SLO,
+  Kani, Loom, platform evidence, AWQ shadow, and Huawei headers. No independent review yet; no merge
+  performed.
