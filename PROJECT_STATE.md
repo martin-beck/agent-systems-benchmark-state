@@ -11,8 +11,8 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #119 | `feature/native-capacity-controller@4630f90af739` | `main` | CLEAN | COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(capacity): add bounded native lifecycle controller |
-| #310 | `docs/ar-1215-result-comparison@9d97e1684ecd` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | docs(tutorials): add conservative result comparison guide |
-| #311 | `docs/ar-1214-record-replay@fe00f59becd0` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | docs: add offline record/replay tutorial |
+| #310 | `docs/ar-1215-result-comparison@9d97e1684ecd` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS: | docs(tutorials): add conservative result comparison guide |
+| #311 | `docs/ar-1214-record-replay@fe00f59becd0` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | docs: add offline record/replay tutorial |
 
 ## Recent workflows
 
@@ -28,5 +28,5 @@ Generated from local Git and GitHub. Do not edit.
 | 36059074434 | `9d97e1684ecd` | pull_request | Emulated aarch64 portability | pending:- |
 | 36058944173 | `fe00f59becd0` | pull_request | Formal assurance | in_progress:- |
 | 36058944142 | `fe00f59becd0` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 36058944124 | `fe00f59becd0` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 36058944124 | `fe00f59becd0` | pull_request | Hosted portability and native qualification | completed:success |
 | 36058944115 | `fe00f59becd0` | pull_request | Repository quality | in_progress:- |
