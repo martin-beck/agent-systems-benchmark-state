@@ -23,7 +23,7 @@ Generated from local Git and GitHub. Do not edit.
 | 35999236510 | `0667f299ce04` | push | Formal assurance | in_progress:- |
 | 35999235751 | `0667f299ce04` | push | Hosted portability and native qualification | completed:success |
 | 35999235653 | `0667f299ce04` | push | Rust verification | in_progress:- |
-| 35999235616 | `0667f299ce04` | push | Fault assurance | in_progress:- |
+| 35999235616 | `0667f299ce04` | push | Fault assurance | completed:success |
 | 35999235602 | `0667f299ce04` | push | Emulated aarch64 portability | in_progress:- |
 | 35999235596 | `0667f299ce04` | push | Repository quality | in_progress:- |
 | 35997742625 | `6c397cec918d` | pull_request | Emulated aarch64 portability | completed:success |
