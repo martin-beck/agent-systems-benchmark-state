@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish the verified ASB agent catalog required by the first-run setup wizard.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Authenticated agent catalog producer",
-  "updated_at": "2026-09-24T17:37:06+00:00",
+  "updated_at": "2026-09-24T17:37:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1316-authenticated-agent-catalog-producer"
 }
 ---
@@ -45,3 +45,8 @@ Progress evidence: ASB PR #245 merged at `027af7ad27da13b359b3f099699c42b03c6f39
   agent-systems-benchmark-ar-1316-authenticated-agent-catalog-producer resolves to legacy
   /tmp/asb-ar1316-producer. No product mutation performed. Existing branch is clean at 0b2719e;
   relocation requires coordinator metadata repair because handoffctl enforces declared basename.
+
+- 2026-09-24T17:37:28+00:00: Relocation attempt was safely read-only but failed exactly: git
+  worktree move /tmp/asb-ar1316-producer to /srv/data/projects/agent-systems-benchmark-ar-1316
+  returned Invalid cross-device link. Do not retry unchanged; coordinator must bind metadata and
+  recreate isolated worktree after preserving clean branch state.
