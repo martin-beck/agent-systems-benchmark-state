@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1388-runtime-authority-materializer",
   "checkpoint_commit": "8c88b9ec9b4f529ebe30cb230029b2575ad4e6e5",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T07:48:48+00:00",
   "depends_on": [
     "AR-1385",
     "AR-1384",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1388-runtime-authority-materializer",
   "observed_dirty": 0,
   "observed_head": "581847921990c064b5185a9e66a788a474ffcc33",
-  "owner": "",
+  "owner": "codex-asb-ar1329-repair-luna56",
   "plan": "../plans/AR-1388-runtime-authority-materializer.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Materialize runtime-owned provider authority from authenticated receipt and chain state.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Runtime authority receipt materializer",
-  "updated_at": "2026-09-24T07:08:50+00:00",
+  "updated_at": "2026-09-24T07:33:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1388-runtime-authority-materializer"
 }
 ---
@@ -119,3 +119,5 @@ namespace identity, or launch tokens.
 - 2026-09-24T07:08:50+00:00: Releasing worker lease to claim successor AR-1389; AR-1388 remains
   open/unreleased because replacement post-merge formal assurance is required after evidenced
   ETXTBSY fixture race.
+
+- 2026-09-24T07:33:48+00:00: Claimed by codex-asb-ar1329-repair-luna56.
