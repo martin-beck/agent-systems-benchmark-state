@@ -7,7 +7,7 @@
     "AR-1211"
   ],
   "id": "AR-1212",
-  "next_action": "PR #305 force-with-lease updated to exact signed/DCO head 3fda4b4. Await fresh exact-head CI and independent review; do not merge until all required checks and review are green. Prior gitleaks failure 36045051042 was repaired by branch rewrite and exact-base gitleaks now passes.",
+  "next_action": "PR #305 exact head 3fda4b4; CI run 36046399014 and companion workflows are in progress. Completed green: AWQ shadow, Huawei headers, retained faults, bounded fuzz, Kani, Loom, matcher/SLO, platform evidence. Pending: policy/coverage/supply chain, Rust, emulated aarch64, TLC/Alloy. No independent review yet; do not merge.",
   "observed_branch": "codex/ar-1212-benchmark-readiness",
   "observed_dirty": 0,
   "observed_head": "3fda4b4eb63f928cd446274d9e36af08b5579845",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach users to test configured-agent benchmark eligibility without running an agent.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Agent benchmark-readiness tutorial",
-  "updated_at": "2026-09-24T19:12:15+00:00",
+  "updated_at": "2026-09-24T19:13:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1212"
 }
 ---
@@ -159,3 +159,7 @@ Implement the linked tutorial and deterministic negative/positive syntax fixture
 - 2026-09-24T19:11:35+00:00: Heartbeat by open-pr-triage-luna56.
 
 - 2026-09-24T19:12:15+00:00: Heartbeat by open-pr-triage-luna56.
+
+- 2026-09-24T19:13:49+00:00: Current PR #305 exact-head CI is green on 8 checks and pending on 5; no
+  failures after gitleaks repair. PR #306 audit confirms stale conflicting AR-1316 branch; AR-1316
+  is already done on current main and must not be rebased or merged.
