@@ -1,6 +1,6 @@
 ---
 {
-  "branch": "",
+  "branch": "codex/ar-1427-merge-requal",
   "checkpoint_commit": "",
   "claim_expires": "2026-09-24T23:25:50+00:00",
   "depends_on": [
@@ -20,7 +20,7 @@
   "task_revision": 5,
   "title": "Protected-main merge-tree requalification repair",
   "updated_at": "2026-09-24T21:27:32+00:00",
-  "worktree_key": ""
+  "worktree_key": "agent-systems-benchmark-ar-1427-merge-requal"
 }
 ---
 
