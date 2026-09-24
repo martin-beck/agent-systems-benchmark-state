@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1383-runtime-authority-profile",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "e8af8041481c3c02731e02483847a82c3d138027",
   "claim_expires": "2026-09-24T06:41:20+00:00",
   "depends_on": [
     "AR-1377",
@@ -10,7 +10,7 @@
     "AR-1381"
   ],
   "id": "AR-1383",
-  "next_action": "Promote and claim this dependency-valid runtime authority profile successor, then implement authenticated materialization without CLI authority injection.",
+  "next_action": "Independent review of opaque authority profile complete; run full runtime gates and clippy, inspect privacy/authority diff, then publish exact-head PR.",
   "observed_branch": "feature/ar-1383-runtime-authority-profile",
   "observed_dirty": 0,
   "observed_head": "e8af8041481c3c02731e02483847a82c3d138027",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize runtime-owned live authority profile for authenticated execution.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Runtime-owned authority profile materialization",
-  "updated_at": "2026-09-24T04:46:23+00:00",
+  "updated_at": "2026-09-24T04:46:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1383-runtime-authority-profile"
 }
 ---
@@ -58,3 +58,11 @@ bootstrap inputs required by live execution.
 
 - 2026-09-24T04:46:13+00:00: Recorded command exit 0; command argv SHA-256
   c91ddac088184e1e3160dac55b4e5be937eadcbce81d216d382b4176b8b2458c.
+
+- 2026-09-24T04:46:38+00:00: Implemented LiveProviderRuntimeAuthorityProfile and
+  LiveProviderRuntimeBridge::materialize_profile. Only authenticated record+attestation can produce
+  it; bridge consumes replay ledger once; profile exposes provider/generation only and retains no
+  raw credentials or private paths. Added positive materialization and negative replay test. Initial
+  fmt check failed solely on rustfmt layout; cargo fmt repaired it. Focused test passed, cargo check
+  -p asb-runtime passed, commit e8af8041481c3c02731e02483847a82c3d138027 is SSH-signed+DCO and
+  worktree clean.

@@ -25,7 +25,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1383](../tasks/AR-1383-runtime-authority-profile.md): Runtime-owned authority profile materialization | codex-asb-runtime-receipt-source-luna56 | Materialize runtime-owned live authority profile for authenticated execution. | Promote and claim this dependency-valid runtime authority profile successor, then implement authenticated materialization without CLI authority injection. |
+| P0 | [AR-1383](../tasks/AR-1383-runtime-authority-profile.md): Runtime-owned authority profile materialization | codex-asb-runtime-receipt-source-luna56 | Materialize runtime-owned live authority profile for authenticated execution. | Independent review of opaque authority profile complete; run full runtime gates and clippy, inspect privacy/authority diff, then publish exact-head PR. |
 
 ### Open (3)
 
