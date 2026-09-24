@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist authenticated runtime certificate-chain material for live dispatch.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Runtime-owned certificate-chain store",
-  "updated_at": "2026-09-24T02:45:44+00:00",
+  "updated_at": "2026-09-24T02:45:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1377-runtime-chain-store"
 }
 ---
@@ -83,3 +83,6 @@ authority boundary and must not accept caller-built chains or synthesize trust.
   lock failure behavior, DCO/signature, and diff check. Gates: cargo test -p asb-runtime --locked
   111 passed/1 delegated ignored; cargo clippy -p asb-runtime --all-targets --locked -D warnings;
   cargo check --workspace --locked; contract_consistency --run-tests all green.
+
+- 2026-09-24T02:45:54+00:00: Recorded command exit 0; command argv SHA-256
+  9583bde42d353184173435762ea56130bb12f359f72f87a5013f77d6b7b38eb9.
