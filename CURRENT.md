@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1409](tasks/AR-1409-interactive-literature-adapters.md): Interactive literature workload adapters | Add offline-selectable interactive and tool-use literature workload adapters. | Promote after AR-1408 and AR-1401 are done; implement local deterministic adapters and catalog selection for AgentBench, tau-bench, and AgentDojo. | ar1409_interactive_literature_luna56 |
+| P1 | [AR-1409](tasks/AR-1409-interactive-literature-adapters.md): Interactive literature workload adapters | Add offline-selectable interactive and tool-use literature workload adapters. | Run full locked workspace quality gates, independent exact-diff review, then publish through handoffctl and monitor seven exact-main workflows. | ar1409_interactive_literature_luna56 |
 | P1 | [AR-1413](tasks/AR-1413-long-horizon-performance-adapters.md): Long-horizon and performance literature workload adapters | Seven post-merge runs: four terminal success; aarch64, repository quality, and Rust remain actively executing on GitHub-hosted runners. | Continue monitoring post-merge IDs 36018871328/36018871323/36018871358; runner/job APIs show active in-progress steps, so do not rerun. Release only after all seven terminal success. | ar1413_long_horizon_performance_luna56 |
 
 ## Open
