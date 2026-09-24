@@ -15,16 +15,16 @@
   "next_action": "Independently review PR #302 exact base/head, monitor required checks, then merge only after green and verify post-merge workflows.",
   "observed_branch": "codex/ar-1410-literature-selector-parity",
   "observed_dirty": 0,
-  "observed_head": "dc34be11cae443f8fbcd9f4bb7e5f2a8757770b9",
+  "observed_head": "477eeb9fb6c21d0a4a2c51ed11116f19c6b4e7e4",
   "owner": "ar1410-literature-selector-parity-luna56",
   "plan": "../plans/AR-1410-literature-selector-completeness.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Literature selector completeness and parity",
-  "updated_at": "2026-09-24T16:54:09+00:00",
+  "updated_at": "2026-09-24T16:54:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1410"
 }
 ---
