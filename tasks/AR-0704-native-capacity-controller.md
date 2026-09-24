@@ -11,16 +11,16 @@
   "next_action": "PR #119 exact head 4630f90 is rebased onto protected main 5ddac12. Fresh exact-head checks were absent immediately after force-push; close/reopen retriggered them. At last query all 12 checks are pending except AWQ shadow and SPDX headers pass. Wait for every required check terminal success; do not merge on partial/pending evidence.",
   "observed_branch": "feature/native-capacity-controller",
   "observed_dirty": 0,
-  "observed_head": "4630f90af739fc628d2e4264a2d40fd7fe142eec",
+  "observed_head": "0c7e1d4b09da2c2850fc43779f2c9f2125b7cd20",
   "owner": "ar0704-requal-luna56",
   "plan": "../plans/AR-0704.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 254,
+  "task_revision": 255,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-24T21:53:42+00:00",
+  "updated_at": "2026-09-24T21:53:53+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
