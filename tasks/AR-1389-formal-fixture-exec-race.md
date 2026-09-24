@@ -7,7 +7,7 @@
     "AR-1384"
   ],
   "id": "AR-1389",
-  "next_action": "Verify all seven post-merge workflows green at exact merge commit 10bffbf015bd7ca78d8c0d18f04cf0190195e933; then release AR-1389 and clear AR-1388 replacement gate.",
+  "next_action": "Done: atomic fixture repair merged at 10bffbf015bd7ca78d8c0d18f04cf0190195e933 and all seven post-merge workflows passed.",
   "observed_branch": "feature/ar-1389-formal-fixture-exec-race",
   "observed_dirty": 0,
   "observed_head": "444a61d603f124d12cdd6505d4ff1fab1d6d2104",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "done",
   "summary": "Repair the formal online-build fixture race that caused ETXTBSY after AR-1388 merge.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Formal fixture executable race repair",
-  "updated_at": "2026-09-24T07:33:28+00:00",
+  "updated_at": "2026-09-24T07:34:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1389-formal-fixture-exec-race"
 }
 ---
