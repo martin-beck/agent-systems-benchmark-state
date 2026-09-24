@@ -23,21 +23,21 @@ Generated from local Git and GitHub. Do not edit.
 | #236 | `dependabot/cargo/toml-1.1.6spec-1.1.0@9dc09c5208ab` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump toml from 0.8.23 to 1.1.6+spec-1.1.0 |
 | #237 | `dependabot/cargo/thiserror-2.0.20@83dba9288d9c` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump thiserror from 2.0.16 to 2.0.20 |
 | #290 | `repair/ar-1313-current-main-dco-recovery@3420355d8a08` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(policy): recover historical DCO boundary on current main |
-| #291 | `codex/ar-1405-dependency-reconcile@cec3015046bb` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, QUEUED: | chore(deps): refresh safe dependency updates on current main |
+| #291 | `codex/ar-1405-dependency-reconcile@cec3015046bb` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | chore(deps): refresh safe dependency updates on current main |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35994708482 | `cec3015046bb` | pull_request | Rust verification | pending:- |
-| 35994708466 | `cec3015046bb` | pull_request | Huawei MIT source headers | in_progress:- |
+| 35994708482 | `cec3015046bb` | pull_request | Rust verification | in_progress:- |
+| 35994708466 | `cec3015046bb` | pull_request | Huawei MIT source headers | completed:success |
 | 35994708437 | `cec3015046bb` | pull_request | Hosted portability and native qualification | in_progress:- |
-| 35994708420 | `cec3015046bb` | pull_request | Fault assurance | queued:- |
-| 35994708388 | `cec3015046bb` | pull_request | Formal assurance | pending:- |
-| 35994708334 | `cec3015046bb` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 35994708420 | `cec3015046bb` | pull_request | Fault assurance | in_progress:- |
+| 35994708388 | `cec3015046bb` | pull_request | Formal assurance | in_progress:- |
+| 35994708334 | `cec3015046bb` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 35994708327 | `cec3015046bb` | pull_request | Repository quality | in_progress:- |
-| 35994708293 | `cec3015046bb` | pull_request | Emulated aarch64 portability | pending:- |
-| 35994476212 | `fdcf2da7563b` | pull_request | Formal assurance | in_progress:- |
+| 35994708293 | `cec3015046bb` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 35994476212 | `fdcf2da7563b` | pull_request | Formal assurance | completed:cancelled |
 | 35994476149 | `fdcf2da7563b` | pull_request | Hosted portability and native qualification | completed:success |
-| 35994476108 | `fdcf2da7563b` | pull_request | Rust verification | in_progress:- |
+| 35994476108 | `fdcf2da7563b` | pull_request | Rust verification | completed:cancelled |
 | 35994476089 | `fdcf2da7563b` | pull_request | Fault assurance | completed:failure |
