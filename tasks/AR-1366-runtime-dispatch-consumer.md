@@ -1,3 +1,4 @@
+---
 {
   "branch": "feature/ar-1366-runtime-dispatch-consumer",
   "checkpoint_commit": "aa537f6a07ac3476a8c4d6443a8df3c42a1aebc1",
@@ -23,3 +24,7 @@
   "updated_at": "2026-09-24T00:10:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1366-runtime-dispatch-consumer"
 }
+---
+
+Successor for the runtime dispatch consumer chain. Do not touch asb-tui or
+synthesize authority from CLI/config input.
