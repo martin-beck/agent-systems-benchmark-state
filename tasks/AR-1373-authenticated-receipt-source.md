@@ -11,17 +11,17 @@
   "id": "AR-1373",
   "next_action": "PR #273 is published at exact head 1cc2f732. Monitor all required exact-head checks; repair failures through handoffctl, merge only after independent review and all checks green, then verify seven post-merge workflows.",
   "observed_branch": "feature/ar-1373-authenticated-receipt-source",
-  "observed_dirty": 9,
-  "observed_head": "1cc2f732b5889eec573a345ccf0c487cc638a70d",
+  "observed_dirty": 0,
+  "observed_head": "c623a006d3abb5cbdf3bb2c5dafff41b1f20833b",
   "owner": "codex-asb-runtime-receipt-source-luna56",
   "plan": "../plans/AR-1373-authenticated-receipt-source.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated ControlBackend runtime receipt source for AR-1329 production dispatch.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Authenticated runtime receipt source",
-  "updated_at": "2026-09-24T02:09:54+00:00",
+  "updated_at": "2026-09-24T02:10:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1373-authenticated-receipt-source"
 }
 ---
