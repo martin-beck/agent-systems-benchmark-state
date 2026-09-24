@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1378-live-control-adapter",
   "checkpoint_commit": "5f1902c681c9671d332ae662f0516df4d1f688df",
-  "claim_expires": "2026-09-24T05:18:13+00:00",
+  "claim_expires": "2026-09-24T05:21:59+00:00",
   "depends_on": [
     "AR-1377",
     "AR-1366",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind authenticated control receipts to runtime-owned live dispatch.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Authenticated live control adapter",
-  "updated_at": "2026-09-24T03:18:13+00:00",
+  "updated_at": "2026-09-24T03:21:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1378-live-control-adapter"
 }
 ---
@@ -80,3 +80,5 @@ chain store; this task supplies only the authenticated control operation seam.
   published clean with signed+DCO head.
 
 - 2026-09-24T03:18:13+00:00: Heartbeat by codex-asb-runtime-receipt-source-luna56.
+
+- 2026-09-24T03:21:59+00:00: Heartbeat by codex-asb-runtime-receipt-source-luna56.
