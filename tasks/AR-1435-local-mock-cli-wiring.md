@@ -9,7 +9,7 @@
   "id": "AR-1435",
   "next_action": "Run full locked workspace test with pipefail and bounded output, then workspace clippy/docs/fmt, independent review, and PR publication.",
   "observed_branch": "feature/ar-1435-local-mock-cli-wiring",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "2b47c571afc3c22cd72ca2795807d1bd53db5418",
   "owner": "codex-asb-ar1435-local-mock-luna56",
   "plan": "../plans/AR-1435-local-mock-cli-wiring.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire deterministic local mock attempts into asb run and sweep configuration qualification.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Local mock CLI wiring",
-  "updated_at": "2026-09-24T23:57:56+00:00",
+  "updated_at": "2026-09-24T23:58:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1435-local-mock-cli-wiring"
 }
 ---
