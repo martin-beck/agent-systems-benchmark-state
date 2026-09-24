@@ -24,9 +24,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a runtime-owned loopback mock authority so development never requires external provider access.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Local provider authority provisioning",
-  "updated_at": "2026-09-24T07:59:08+00:00",
+  "updated_at": "2026-09-24T07:59:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1393-local-provider-authority-provisioning"
 }
 ---
@@ -90,3 +90,6 @@ or production egress gates.
   commit 0a3817082d13f15187ea5efe4f5792664a50be99; repository_policy all checks passed. An earlier
   exit 101 was a coordinator-checkout invocation with no Cargo.toml and was immediately followed by
   the successful same-argv workspace run from the bound worktree.
+
+- 2026-09-24T07:59:21+00:00: Recorded command exit 0; command argv SHA-256
+  a2da3a7590967cc353f3c5bd30d3562efff962f984496fdb739fcae08abec891.
