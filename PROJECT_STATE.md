@@ -10,24 +10,22 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #119 | `feature/native-capacity-controller@e2e3574ed2bb` | `main` | UNKNOWN | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(capacity): add bounded native lifecycle controller |
-| #148 | `dependabot/github_actions/actions/upload-artifact-7.0.1@7d45f4cadff2` | `main` | UNKNOWN | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump actions/upload-artifact from 4.6.2 to 7.0.1 |
-| #234 | `dependabot/github_actions/actions/setup-java-6.0.1@4a444c279f41` | `main` | UNKNOWN | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump actions/setup-java from 5.0.0 to 6.0.1 |
-| #235 | `dependabot/github_actions/taiki-e/install-action-2.87.12@de0353cce59e` | `main` | UNKNOWN | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.6 to 2.87.12 |
+| #119 | `feature/native-capacity-controller@e2e3574ed2bb` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(capacity): add bounded native lifecycle controller |
+| #235 | `dependabot/github_actions/taiki-e/install-action-2.87.12@471df41aaa44` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.12 to 2.87.14 |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36023860601 | `8da098770e4a` | push | Emulated aarch64 portability | in_progress:- |
-| 36023860551 | `8da098770e4a` | push | Repository quality | in_progress:- |
-| 36023860530 | `8da098770e4a` | push | Formal assurance | queued:- |
-| 36023860525 | `8da098770e4a` | push | Fault assurance | in_progress:- |
-| 36023860510 | `8da098770e4a` | push | Huawei MIT source headers | in_progress:- |
-| 36023860504 | `8da098770e4a` | push | Rust verification | in_progress:- |
-| 36023860491 | `8da098770e4a` | push | Hosted portability and native qualification | in_progress:- |
-| 36022699746 | `feca69d22f3a` | pull_request | Huawei MIT source headers | completed:success |
-| 36022699733 | `feca69d22f3a` | pull_request | Hosted portability and native qualification | completed:success |
-| 36022699699 | `feca69d22f3a` | pull_request | Formal assurance | completed:success |
-| 36022699639 | `feca69d22f3a` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 36022699617 | `feca69d22f3a` | pull_request | Repository quality | completed:success |
+| 36024072969 | `471df41aaa44` | pull_request | Rust verification | completed:failure |
+| 36024072948 | `471df41aaa44` | pull_request | Formal assurance | completed:success |
+| 36024072829 | `471df41aaa44` | pull_request | Fault assurance | completed:success |
+| 36024072816 | `471df41aaa44` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 36024072814 | `471df41aaa44` | pull_request | Huawei MIT source headers | completed:success |
+| 36024072812 | `471df41aaa44` | pull_request | Repository quality | completed:failure |
+| 36024072797 | `471df41aaa44` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 36024072735 | `471df41aaa44` | pull_request | Hosted portability and native qualification | completed:success |
+| 36023985557 | `8da098770e4a` | dynamic | Dependabot Updates | completed:success |
+| 36023985524 | `8da098770e4a` | dynamic | Dependabot Updates | completed:success |
+| 36023985387 | `8da098770e4a` | dynamic | Dependabot Updates | completed:success |
+| 36023860601 | `8da098770e4a` | push | Emulated aarch64 portability | completed:success |

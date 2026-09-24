@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1348](../tasks/AR-1348-runtime-owned-live-acquisition.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) | None |
 | [AR-1349](../tasks/AR-1349-live-provider-runtime-service.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1347](../tasks/AR-1347-neutral-live-supervisor-composition.md), [AR-1350](../tasks/AR-1350-sandbox-credential-channel.md) | None |
 | [AR-1350](../tasks/AR-1350-sandbox-credential-channel.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1347](../tasks/AR-1347-neutral-live-supervisor-composition.md) | [AR-1349](../tasks/AR-1349-live-provider-runtime-service.md), [AR-1351](../tasks/AR-1351-live-runtime-provisioning.md) |
 | [AR-1351](../tasks/AR-1351-live-runtime-provisioning.md) | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1347](../tasks/AR-1347-neutral-live-supervisor-composition.md), [AR-1350](../tasks/AR-1350-sandbox-credential-channel.md) | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) |
@@ -57,7 +58,7 @@
 | [AR-1403](../tasks/AR-1403-literature-external-qualification.md) | [AR-1402](../tasks/AR-1402-literature-cli-dispatch-integration.md) | None |
 | [AR-1404](../tasks/AR-1404-literature-documentation-matrix.md) | [AR-1400](../tasks/AR-1400-literature-catalog-activation.md), [AR-1402](../tasks/AR-1402-literature-cli-dispatch-integration.md) | [AR-1410](../tasks/AR-1410-literature-selector-completeness.md) |
 | [AR-1405](../tasks/AR-1405-open-dependency-pr-reconciliation.md) | None | [AR-1406](../tasks/AR-1406-action-pin-policy-migration.md), [AR-1407](../tasks/AR-1407-sha2-compatibility.md) |
-| [AR-1406](../tasks/AR-1406-action-pin-policy-migration.md) | [AR-1405](../tasks/AR-1405-open-dependency-pr-reconciliation.md) | None |
+| [AR-1406](../tasks/AR-1406-action-pin-policy-migration.md) | [AR-1405](../tasks/AR-1405-open-dependency-pr-reconciliation.md) | [AR-1414](../tasks/AR-1414-action-pin-followup.md) |
 | [AR-1407](../tasks/AR-1407-sha2-compatibility.md) | [AR-1405](../tasks/AR-1405-open-dependency-pr-reconciliation.md) | None |
 | [AR-1408](../tasks/AR-1408-literature-inventory-closure.md) | [AR-1399](../tasks/AR-1399-literature-workload-registry-completeness.md), [AR-1400](../tasks/AR-1400-literature-catalog-activation.md) | [AR-1409](../tasks/AR-1409-interactive-literature-adapters.md), [AR-1411](../tasks/AR-1411-repository-terminal-adapters.md), [AR-1412](../tasks/AR-1412-code-generation-control-adapters.md), [AR-1413](../tasks/AR-1413-long-horizon-performance-adapters.md) |
 | [AR-1409](../tasks/AR-1409-interactive-literature-adapters.md) | [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md), [AR-1408](../tasks/AR-1408-literature-inventory-closure.md) | [AR-1410](../tasks/AR-1410-literature-selector-completeness.md) |
@@ -65,6 +66,7 @@
 | [AR-1411](../tasks/AR-1411-repository-terminal-adapters.md) | [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md), [AR-1408](../tasks/AR-1408-literature-inventory-closure.md) | [AR-1410](../tasks/AR-1410-literature-selector-completeness.md) |
 | [AR-1412](../tasks/AR-1412-code-generation-control-adapters.md) | [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md), [AR-1408](../tasks/AR-1408-literature-inventory-closure.md) | [AR-1410](../tasks/AR-1410-literature-selector-completeness.md) |
 | [AR-1413](../tasks/AR-1413-long-horizon-performance-adapters.md) | [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md), [AR-1408](../tasks/AR-1408-literature-inventory-closure.md) | [AR-1410](../tasks/AR-1410-literature-selector-completeness.md) |
+| [AR-1414](../tasks/AR-1414-action-pin-followup.md) | [AR-1406](../tasks/AR-1406-action-pin-policy-migration.md) | None |
 
 ## Complete AR inventory
 
@@ -146,7 +148,7 @@
 | P1 | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md): Live-provider run execution for real agents | Unclaimed | Execute real agents against the selected provider through asb run and sweep with credential-free resolution. | BLOCKED pending coordinator-created repair AR: implement runtime-owned LiveProviderRuntimeService acquisition for production asb run/sweep. Service must resolve pinned provider policy to concrete public target(s), obtain credential through enrolled environment channel without evidence disclosure, construct attested child namespace handoff and relay listener, reserve ResourceLease, create SandboxBackend with pinned live gate, attest and issue one LiveProviderAttempt per scheduler attempt, and teardown on cancellation. Then AR-1329 can wire dispatch --provider-selection/--live-provider while preserving NetworkPolicy::Deny and direct/alternate egress denial. |
 | P1 | [AR-1354](../tasks/AR-1354-runtime-enrollment-implementation.md): Runtime enrollment implementation | Unclaimed | Implement config-backed runtime-owned enrollment for live CLI dispatch. | BLOCKED on an attested runtime enrollment source: asb-runtime must receive an authority-free enrollment request and obtain concrete public target(s), pinned tool attestations, lease root, and relay root from a runtime/control-owned record; do not expose these asb-cli inputs. Add a signed/attested record transport or coordinator-owned runtime enrollment AR, then implement acquire_from_enrollment and CLI dispatch with positive/negative tests. |
 
-### Planned (68)
+### Planned (69)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -218,6 +220,7 @@
 | P2 | [AR-0903](../tasks/AR-0903-release-qualification.md): Package and qualify the first release | Unclaimed | Deliver reproducible native release artifacts with complete support and evidence statements. | Audit milestone completeness and run isolated release qualification. |
 | P2 | [AR-1016](../tasks/AR-1016-measurement-integration-audit.md): Integrate and audit measurement selection and CSB evidence | Unclaimed | Audit selectable and CSB-backed measurements across live and replay runs. | Add end-to-end live/replay comparison, release documentation, and independent audit after AR-1014 and AR-1015. |
 | P2 | [AR-1407](../tasks/AR-1407-sha2-compatibility.md): sha2 compatibility repair | Unclaimed | Qualify or repair the closed sha2 0.11 dependency update without weakening crypto or MSRV contracts. | Promote after AR-1405; reproduce the sha2 0.11 compile/MSRV failure and either repair it with digest-parity evidence or preserve the supersession. |
+| P2 | [AR-1414](../tasks/AR-1414-action-pin-followup.md): Follow-up install-action pin qualification | Unclaimed | Qualify the newer immutable install-action update reopened as PR #235. | Promote after AR-1406; audit PR #235 for the v2.87.14 immutable release pin, repair policy/check failures, and merge only after exact-head review and all required checks pass. |
 
 ### Future (1)
 
@@ -518,5 +521,3 @@
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1046](../tasks/AR-1046-serialize-emulated-aarch64-agent-tests.md): Serialize emulated AArch64 agent tests | Unclaimed | Make the emulated AArch64 asb-agents fake-node readiness fixtures deterministic without changing production semantics. | No further action: AR-1047 superseded the disproven serialization hypothesis. |
-| P0 | [AR-1048](../tasks/AR-1048-tmux-window-option-portability.md): Make tmux window-option setup portable | Unclaimed | Use an explicit tmux window-option command so trusted-main terminal qualification is portable. | No further action: AR-1049 superseded this recovery after PR #15 merged and Trusted main falsified fixed session:0 targeting. |
-| P0 | [AR-1049](../tasks/AR-1049-tmux-created-window-identity.md): Bind tmux setup to its created window | Unclaimed | Bind tmux remain-on-exit setup to the exact created window identity instead of a fixed index. | No further action: AR-1050 superseded this recovery after PR #16 merged and Trusted main exposed downstream startup readiness. |
