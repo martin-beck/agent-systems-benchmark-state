@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prevent stale-base sequential merges from passing review but failing protected-main merge-tree policy.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Protected-main stale-base merge requalification repair",
-  "updated_at": "2026-09-24T22:20:00+00:00",
+  "updated_at": "2026-09-24T22:22:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1431"
 }
 ---
@@ -30,3 +30,6 @@ that incident and must not waive the policy.
   merge-tree failure 36066329347.
 
 - 2026-09-24T22:19:23+00:00: Claimed by ar1431-stale-base-luna56.
+
+- 2026-09-24T22:22:12+00:00: Recorded command exit 0; command argv SHA-256
+  aae66aab4fdf8f873e2ba3b94e322d63ce9d5491cf6dfef4475319458372bc01.
