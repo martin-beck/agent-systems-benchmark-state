@@ -1,6 +1,6 @@
 ---
 {
-  "branch": "",
+  "branch": "codex/ar-1396-literature-selection",
   "checkpoint_commit": "",
   "claim_expires": "2026-09-24T11:42:29+00:00",
   "depends_on": [
@@ -9,19 +9,19 @@
   ],
   "id": "AR-1396",
   "next_action": "Promote after AR-1395 and AR-1399 are done, then wire every registry-backed literature family into catalog, plan validation, CLI selection, replay and reports.",
-  "observed_branch": "",
-  "observed_dirty": 0,
-  "observed_head": "0000000000000000000000000000000000000000",
+  "observed_branch": "codex/ar-1396-literature-selection",
+  "observed_dirty": 2,
+  "observed_head": "130ff91ec3ac875ac9c370ab67dd9934d830ccdf",
   "owner": "codex-asb-ar1396-literature-selection-luna56",
   "plan": "../plans/AR-1396-literature-workload-selection.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make qualified literature workload families selectable beside built-in ASB software-engineering fixtures.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Literature workload selection",
-  "updated_at": "2026-09-24T10:12:29+00:00",
-  "worktree_key": ""
+  "updated_at": "2026-09-24T10:13:47+00:00",
+  "worktree_key": "agent-systems-benchmark-ar-1396"
 }
 ---
 
