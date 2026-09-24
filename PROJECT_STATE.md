@@ -23,20 +23,21 @@ Generated from local Git and GitHub. Do not edit.
 | #236 | `dependabot/cargo/toml-1.1.6spec-1.1.0@9dc09c5208ab` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump toml from 0.8.23 to 1.1.6+spec-1.1.0 |
 | #237 | `dependabot/cargo/thiserror-2.0.20@83dba9288d9c` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump thiserror from 2.0.16 to 2.0.20 |
 | #289 | `codex/ar-1400-literature-catalog@adea44324004` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(workloads): type literature catalog activation |
+| #290 | `repair/ar-1313-current-main-dco-recovery@3420355d8a08` | `main` | UNSTABLE | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, QUEUED:, IN_PROGRESS:, QUEUED:, QUEUED: | chore(policy): recover historical DCO boundary on current main |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 35992633429 | `3420355d8a08` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 35992633416 | `3420355d8a08` | pull_request | Formal assurance | queued:- |
+| 35992633257 | `3420355d8a08` | pull_request | Repository quality | in_progress:- |
+| 35992633154 | `3420355d8a08` | pull_request | Huawei MIT source headers | in_progress:- |
+| 35992633140 | `3420355d8a08` | pull_request | Rust verification | in_progress:- |
+| 35992633120 | `3420355d8a08` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 35992633092 | `3420355d8a08` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 35992633088 | `3420355d8a08` | pull_request | Fault assurance | queued:- |
 | 35992243072 | `adea44324004` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 35992242852 | `adea44324004` | pull_request | Fault assurance | completed:success |
 | 35992242821 | `adea44324004` | pull_request | Huawei MIT source headers | completed:success |
 | 35992242796 | `adea44324004` | pull_request | Formal assurance | in_progress:- |
-| 35992242791 | `adea44324004` | pull_request | Repository quality | in_progress:- |
-| 35992242778 | `adea44324004` | pull_request | Hosted portability and native qualification | completed:success |
-| 35992242777 | `adea44324004` | pull_request | Rust verification | in_progress:- |
-| 35992242733 | `adea44324004` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 35989465164 | `e41d4df86e57` | push | Hosted portability and native qualification | completed:success |
-| 35989465162 | `e41d4df86e57` | push | Formal assurance | completed:success |
-| 35989465149 | `e41d4df86e57` | push | Huawei MIT source headers | completed:success |
-| 35989465134 | `e41d4df86e57` | push | Repository quality | completed:success |
