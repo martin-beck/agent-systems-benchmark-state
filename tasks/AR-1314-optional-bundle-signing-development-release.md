@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-24T11:13:12+00:00",
   "depends_on": [],
   "id": "AR-1314",
-  "next_action": "Do not close yet: post-merge Repository quality run 35979775718 attempt 3 must be terminal-success, but it deterministically rejects merge c58b0b0a4d9023e3831f9c750edbb9b30ab4bad4 because its protected-main tree differs from reviewed topic 83b171ca8cad35bce902a38ff3979029fa9b78d8 after AR-1395 advanced main. Create/use a narrowly scoped signed integration repair AR, then rerun all seven exact-main workflows. Follow-up docs correction 84416b52ca2f1552c251ed612c55870842b3e630 remains outside merged PR.",
+  "next_action": "Blocked on AR-1397 integration repair: post-merge Repository quality rejects c58b0b0 tree against reviewed topic after AR-1395 advanced main, and c58 Rust workflow dispatch 35980460560 was cancelled by a higher-priority waiting request for refs/heads/main. Preserve all evidence; after AR-1397 repair and queue quiescence, rerun all seven exact-main workflows including Rust.",
   "observed_branch": "feature/ar-1314-optional-bundle-signing",
   "observed_dirty": 0,
   "observed_head": "84416b52ca2f1552c251ed612c55870842b3e630",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile.",
-  "task_revision": 134,
+  "task_revision": 135,
   "title": "Optional runtime-bundle signing for development and tagged releases",
-  "updated_at": "2026-09-24T09:18:49+00:00",
+  "updated_at": "2026-09-24T09:26:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1314-optional-bundle-signing"
 }
 ---
@@ -347,3 +347,9 @@ reviewed signed input bundle and terminal attestation.
 
 - 2026-09-24T09:18:49+00:00: Recorded command exit 0; command argv SHA-256
   87ec549cbd1b9efc57f260f7fb458b2ecafea654932e643c3e0b1ff930516656.
+
+- 2026-09-24T09:26:56+00:00: Created/promoted AR-1397 (current state owner
+  ar1397-protected-main-repair-luna56) in signed state commits 7915f3a03, bb5c98427, d8f79e433,
+  388adeb3a. It covers c58b0b0 and c130ff91 merge-tree/concurrency/cancellation repair without
+  weakening gates. Exact PR checks remain all green; post-merge formal/hosted/fault/header
+  succeeded, quality failed deterministically, Rust reruns cancelled by concurrency.
