@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1417.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Add selectable interactive and stateful literature workloads beside built-in software-engineering fixtures.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Interactive stateful literature workloads",
-  "updated_at": "2026-09-24T19:10:00+00:00",
+  "updated_at": "2026-09-24T19:12:18+00:00",
   "worktree_key": ""
 }
 ---
@@ -33,3 +33,6 @@ additional stateful workload explicitly listed in the product literature docs. F
 and harnesses remain non-workloads unless an independent task protocol and grader are
 identified.
 
+
+- 2026-09-24T19:12:18+00:00: Dependencies AR-1416 and AR-1408 verified done; open interactive
+  stateful literature workload implementation.

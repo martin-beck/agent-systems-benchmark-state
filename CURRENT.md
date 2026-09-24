@@ -9,6 +9,12 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1212](tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Teach users to test configured-agent benchmark eligibility without running an agent. | PR #305 force-with-lease updated to exact signed/DCO head 3fda4b4. Await fresh exact-head CI and independent review; do not merge until all required checks and review are green. Prior gitleaks failure 36045051042 was repaired by branch rewrite and exact-base gitleaks now passes. | open-pr-triage-luna56 |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-1417](tasks/AR-1417-interactive-stateful-literature-workloads.md): Interactive stateful literature workloads | Add selectable interactive and stateful literature workloads beside built-in software-engineering fixtures. | Promote after AR-1416 is released; audit AgentBench and other docs-listed stateful task sources, then implement the bounded local/mock adapter and catalog records. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -145,7 +151,6 @@ Never edit this file directly.
 | P1 | [AR-1335](tasks/AR-1335-credential-free-benchmark-ci.md): Credential-free CI stage for the benchmark path | Add the required credential-free CI stage for the complete benchmark path. | Add the required credential-free CI stage that exercises the complete benchmark path with loopback and synthetic doubles, no secrets, no egress and no network, keeping the 90% coverage floor. | - |
 | P1 | [AR-1336](tasks/AR-1336-live-benchmark-workflow-docs.md): Live benchmark workflow documentation and support matrix | Document the live benchmark workflow and publish the supported agent and provider matrix. | Document the end-to-end live benchmark workflow and publish the supported agent by provider by model support matrix, with exact digests and evidence limits. | - |
 | P1 | [AR-1338](tasks/AR-1338-guided-asb-command-wrapper.md): Guided ASB command wrapper | Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows. | Promote after AR-1328, AR-1329, AR-1332 and AR-1333 are done; implement the catalog-driven asb easy wrapper, generated private files, documentation and offline hostile tests. | - |
-| P1 | [AR-1417](tasks/AR-1417-interactive-stateful-literature-workloads.md): Interactive stateful literature workloads | Add selectable interactive and stateful literature workloads beside built-in software-engineering fixtures. | Promote after AR-1416 is released; audit AgentBench and other docs-listed stateful task sources, then implement the bounded local/mock adapter and catalog records. | - |
 | P1 | [AR-1418](tasks/AR-1418-tool-use-reliability-safety-workloads.md): Tool-use reliability and safety workloads | Add selectable tool-use reliability and safety workloads from the literature with separate metrics. | Promote after AR-1416 is released; audit tau-bench and AgentDojo literature records, then implement separate reliability and safety workload selectors with deterministic mocks. | - |
 | P1 | [AR-1419](tasks/AR-1419-literature-framework-boundaries.md): Literature framework boundaries | Close literature documentation gaps and enforce benchmark-versus-framework selection boundaries. | Promote after the interactive and tool-use workload audits; reconcile every benchmark/framework mention in docs and prove the selectable catalog has no omitted or falsely executable entry. | - |
 | P1 | [AR-1420](tasks/AR-1420-literature-workload-campaign-integration.md): Literature workload campaign integration | Run the complete qualified literature workload matrix beside built-in software-engineering workloads. | Promote only after all literature family adapters and boundary inventory are released; extend the existing multi-agent campaign to the complete qualified literature selector set. | - |
