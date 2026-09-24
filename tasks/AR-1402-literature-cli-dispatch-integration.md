@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate literature workload catalog and adapters through all ASB CLI execution and evidence paths.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Literature workload CLI dispatch integration",
-  "updated_at": "2026-09-24T12:53:43+00:00",
+  "updated_at": "2026-09-24T12:53:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1402"
 }
 ---
@@ -84,3 +84,6 @@ external benchmark datasets or providers.
 - 2026-09-24T12:53:43+00:00: Repaired recorded provenance digest drift after CLI source changes.
   Added positive built-in/literature dispatch and negative methodology tests; all workspace tests
   pass, including workflow transcript. No external provider or network path added.
+
+- 2026-09-24T12:53:51+00:00: Recorded command exit 0; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
