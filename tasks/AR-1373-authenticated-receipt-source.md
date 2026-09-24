@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1373-authenticated-receipt-source",
-  "checkpoint_commit": "265b936d995148f8e40e36664cf68bf12affc20d",
+  "checkpoint_commit": "1cc2f732b5889eec573a345ccf0c487cc638a70d",
   "claim_expires": "2026-09-24T04:01:56+00:00",
   "depends_on": [
     "AR-1365",
@@ -9,7 +9,7 @@
     "AR-1371"
   ],
   "id": "AR-1373",
-  "next_action": "Promote and claim this dependency-valid successor, refresh an isolated worktree to protected main, and implement the authenticated ControlBackend runtime receipt operation consumed by the existing AR-1366 bridge.",
+  "next_action": "Full workspace test and clippy gates pass after repairing clippy large_enum_variant failure by documenting the intentional public wire-envelope representation. Independently review clean signed+DCO head, push exact branch, publish PR, and monitor exact-head CI.",
   "observed_branch": "feature/ar-1373-authenticated-receipt-source",
   "observed_dirty": 0,
   "observed_head": "1cc2f732b5889eec573a345ccf0c487cc638a70d",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated ControlBackend runtime receipt source for AR-1329 production dispatch.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Authenticated runtime receipt source",
-  "updated_at": "2026-09-24T02:04:16+00:00",
+  "updated_at": "2026-09-24T02:04:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1373-authenticated-receipt-source"
 }
 ---
@@ -113,3 +113,12 @@ provider support from setup metadata alone.
 
 - 2026-09-24T02:04:06+00:00: Recorded command exit 0; command argv SHA-256
   85c13e6f44f9c7a3b03f5b4907f42219777c326c3e2d251cfe480e449017fd84.
+
+- 2026-09-24T02:04:36+00:00: Readable failure diagnosis: the workspace clippy gate exited 101
+  because adding RuntimeReceipt enlarged the existing ControlSuccess::Operation variant;
+  clippy::large_enum_variant became denied. Boxing would alter the public protocol representation,
+  so the repair added a narrowly scoped allow with rationale, preserving the stable wire contract.
+  cargo fmt, cargo test --workspace --locked, and cargo clippy --workspace --all-targets --locked --
+  -D warnings now pass. Earlier recorded exit-101 causes were missing protocol type imports/inferred
+  byte type, stale generated schemas, and a moved test result borrow; each was repaired and rerun
+  green.

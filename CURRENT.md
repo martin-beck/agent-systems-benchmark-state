@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1373](tasks/AR-1373-authenticated-receipt-source.md): Authenticated runtime receipt source | Provide the authenticated ControlBackend runtime receipt source for AR-1329 production dispatch. | Promote and claim this dependency-valid successor, refresh an isolated worktree to protected main, and implement the authenticated ControlBackend runtime receipt operation consumed by the existing AR-1366 bridge. | codex-asb-runtime-receipt-source-luna56 |
+| P0 | [AR-1373](tasks/AR-1373-authenticated-receipt-source.md): Authenticated runtime receipt source | Provide the authenticated ControlBackend runtime receipt source for AR-1329 production dispatch. | Full workspace test and clippy gates pass after repairing clippy large_enum_variant failure by documenting the intentional public wire-envelope representation. Independently review clean signed+DCO head, push exact branch, publish PR, and monitor exact-head CI. | codex-asb-runtime-receipt-source-luna56 |
 
 ## Open
 
