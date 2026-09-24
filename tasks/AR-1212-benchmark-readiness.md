@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach users to test configured-agent benchmark eligibility without running an agent.",
-  "task_revision": 67,
+  "task_revision": 68,
   "title": "Agent benchmark-readiness tutorial",
-  "updated_at": "2026-09-24T19:26:38+00:00",
+  "updated_at": "2026-09-24T19:26:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1212"
 }
 ---
@@ -212,3 +212,6 @@ Implement the linked tutorial and deterministic negative/positive syntax fixture
 
 - 2026-09-24T19:26:38+00:00: Recorded command exit 0; command argv SHA-256
   7ceb2705bcffc3431a8c3a3bfcf259dc5ea9e3031ea376a064eb64030d46eac3.
+
+- 2026-09-24T19:26:59+00:00: Recorded command exit 0; command argv SHA-256
+  db38544463c9369f31531a341505a4a69e4647e70c288b1f934cbf57f9211f12.
