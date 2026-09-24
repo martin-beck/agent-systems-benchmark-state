@@ -1,13 +1,13 @@
 ---
 {
   "branch": "codex/ar-1431-stale-base",
-  "checkpoint_commit": "bd694233fd95941bfc02cdd4e7f0fd3b124d0f4e",
+  "checkpoint_commit": "ed9076031b8278537dcd71e706464db59b8cba20",
   "claim_expires": "2026-09-25T00:25:29+00:00",
   "depends_on": [
     "AR-1427"
   ],
   "id": "AR-1431",
-  "next_action": "PR #314 is open at exact head bd69423; obtain independent review and exact-head CI, then merge and verify all seven post-merge workflows before AR-1216 release.",
+  "next_action": "Monitor seven post-merge workflows for exact merge ed907603; release AR-1431 only after all seven terminal success, then coordinate AR-1216 release.",
   "observed_branch": "codex/ar-1431-stale-base",
   "observed_dirty": 0,
   "observed_head": "bd694233fd95941bfc02cdd4e7f0fd3b124d0f4e",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prevent stale-base sequential merges from passing review but failing protected-main merge-tree policy.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Protected-main stale-base merge requalification repair",
-  "updated_at": "2026-09-24T22:35:41+00:00",
+  "updated_at": "2026-09-24T22:37:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1431"
 }
 ---
@@ -81,3 +81,8 @@ that incident and must not waive the policy.
 
 - 2026-09-24T22:35:41+00:00: Recorded command exit 0; command argv SHA-256
   a6edefba690f717fc45d31be8681f40368a91e0712984d085193d06572ac663f.
+
+- 2026-09-24T22:37:12+00:00: PR #314 merged as ed907603. Exact post-merge workflow IDs: headers
+  36068309570 success; Rust 36068309609; hosted portability 36068309638; fault assurance
+  36068309725; emulated aarch64 36068309536; Repository Quality 36068309595; formal assurance
+  36068309654. Six remain in progress at observation.
