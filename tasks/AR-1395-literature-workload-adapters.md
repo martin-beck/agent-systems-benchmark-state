@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Normalize approved literature tasks through bounded, non-vendored ASB workload adapters.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Literature workload adapter boundary",
-  "updated_at": "2026-09-24T08:44:28+00:00",
+  "updated_at": "2026-09-24T08:46:48+00:00",
   "worktree_key": ""
 }
 ---
@@ -36,3 +36,6 @@ into executable or qualified workloads.
   e3d2e9fa53e551fc08c72cf1833bdcfb806cc107dad75f76721191ca46c7ff7c.
 
 - 2026-09-24T08:44:28+00:00: Heartbeat by codex-asb-ar1395-literature-adapters-luna56.
+
+- 2026-09-24T08:46:48+00:00: Recorded command exit 101; command argv SHA-256
+  e0d5947dfeba2ece518a54a1a81d72059b4bc054390bfe4f7568cd9e33728707.
