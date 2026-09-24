@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1380-runtime-scheduler-composition",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T05:34:12+00:00",
   "depends_on": [
     "AR-1378",
     "AR-1377",
@@ -15,15 +15,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "codex-asb-runtime-receipt-source-luna56",
   "plan": "../plans/AR-1380-runtime-scheduler-composition.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Compose runtime-owned live attempts for production run and sweep scheduling.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Runtime scheduler composition for live dispatch",
-  "updated_at": "2026-09-24T03:34:10+00:00",
+  "updated_at": "2026-09-24T03:34:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1380-runtime-scheduler-composition"
 }
 ---
@@ -35,3 +35,5 @@ composition gap without weakening authority boundaries.
 
 - 2026-09-24T03:34:10+00:00: Dependencies are terminal done; promote scheduler composition successor
   after AR-1379 blocker audit.
+
+- 2026-09-24T03:34:12+00:00: Claimed by codex-asb-runtime-receipt-source-luna56.
