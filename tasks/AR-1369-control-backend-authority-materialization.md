@@ -17,11 +17,11 @@
   "plan": "../plans/AR-1369-control-backend-authority-materialization.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Materialize authenticated live-provider authority in ControlBackend for runtime receipt issuance.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "ControlBackend authority materialization",
-  "updated_at": "2026-09-24T00:49:26+00:00",
+  "updated_at": "2026-09-24T00:50:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1369-control-backend-authority-materialization"
 }
 ---
@@ -45,3 +45,7 @@ touch asb-tui or synthesize authority from CLI/config input.
   exists; synthesizing RuntimeAuthorityEnrollmentV1 or an IssuedCertificateChain would violate
   fail-closed authority boundaries. No product mutation made. AR-1329 remains fail-closed pending an
   external/runtime-owned attestation issuer source.
+
+- 2026-09-24T00:50:57+00:00: AR-1288 is already merged and provides runtime certificate
+  issuance/trust-chain authority; resume AR-1369 to integrate that existing issuer into
+  ControlBackend receipt materialization rather than inventing a new external issuer.
