@@ -73,7 +73,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1411](../tasks/AR-1411-repository-terminal-adapters.md): Repository and terminal literature workload adapters | ar1411_repository_terminal_luna56 | Add selectable, provenance-preserving repository-repair and terminal benchmark adapters. | Claim after binding metadata; implement offline-selectable repository and terminal workload adapters. |
+| P1 | [AR-1411](../tasks/AR-1411-repository-terminal-adapters.md): Repository and terminal literature workload adapters | ar1411_repository_terminal_luna56 | Add selectable, provenance-preserving repository-repair and terminal benchmark adapters. | Review full diff, run focused/full applicable gates, then publish signed+DCO PR against exact protected main fc74825cb86991bb3afac6854d8cb5048118ff8f. |
 | P1 | [AR-1412](../tasks/AR-1412-code-generation-control-adapters.md): Code-generation control workload adapters | ar1412_code_generation_luna56b | Add selectable function-level and time-windowed coding controls without conflating their metrics. | Promote after AR-1408 and AR-1401 are done; implement offline-selectable code-generation control adapters. |
 
 ### Open (3)

@@ -1,14 +1,14 @@
 ---
 {
   "branch": "codex/ar-1411-repository-terminal",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "67129e7504dc28d8f8e02a6bbb955f6683917208",
   "claim_expires": "2026-09-24T14:55:08+00:00",
   "depends_on": [
     "AR-1408",
     "AR-1401"
   ],
   "id": "AR-1411",
-  "next_action": "Claim after binding metadata; implement offline-selectable repository and terminal workload adapters.",
+  "next_action": "Review full diff, run focused/full applicable gates, then publish signed+DCO PR against exact protected main fc74825cb86991bb3afac6854d8cb5048118ff8f.",
   "observed_branch": "codex/ar-1411-repository-terminal",
   "observed_dirty": 0,
   "observed_head": "67129e7504dc28d8f8e02a6bbb955f6683917208",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add selectable, provenance-preserving repository-repair and terminal benchmark adapters.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Repository and terminal literature workload adapters",
-  "updated_at": "2026-09-24T14:25:50+00:00",
+  "updated_at": "2026-09-24T14:26:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1411"
 }
 ---
@@ -109,3 +109,9 @@ bounded local fixtures or LiteLLM-compatible mocks only.
 
 - 2026-09-24T14:25:38+00:00: Recorded command exit 0; command argv SHA-256
   76dcd342caa2e34f32bc9df74c45db4798722e5aa487fa1b987152a95b681153.
+
+- 2026-09-24T14:26:04+00:00: Added stable dataset/task revision, capability tags, and attempt budget
+  to WorkloadCatalogEntry for repository-repair and terminal-system adapters; populated from
+  registry with methodology zero-budget semantics and documented provenance boundary. Focused cargo
+  test -p asb-workloads passed (28 unit, 2 public API, 5 validity, doc tests); cargo fmt check and
+  diff check passed. Signed+DCO commit 67129e7.
