@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "AR-1413 rebased unchanged signed literature metadata onto protected main 8c640e59; PR #299 exact-head checks restarted.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Long-horizon and performance literature workload adapters",
-  "updated_at": "2026-09-24T15:15:21+00:00",
+  "updated_at": "2026-09-24T15:15:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1413"
 }
 ---
@@ -129,3 +129,6 @@ bounded local fixtures or LiteLLM-compatible mocks only.
 
 - 2026-09-24T15:15:21+00:00: Recorded command exit 0; command argv SHA-256
   50edfc1b2b6937d9933c34bcafbbf3f9f21b15e1d757526659068124e531e305.
+
+- 2026-09-24T15:15:47+00:00: Recorded command exit 0; command argv SHA-256
+  6de5136a2a8f31e9888c6deac57e065004b70b2c46f3c193a8fa279a262c54bc.
