@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach conservative comparison of multiple agents from the same benchmark.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Multi-agent result comparison tutorial",
-  "updated_at": "2026-09-24T21:09:17+00:00",
+  "updated_at": "2026-09-24T21:10:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1215"
 }
 ---
@@ -144,4 +144,7 @@ commands in tutorial syntax CI.
   Rust/quality/fault/formal/portability remain in progress.
 
 - 2026-09-24T21:09:17+00:00: Recorded command exit 8; command argv SHA-256
+  d2f9f0da55fd3a56408ce9709fe9ce7ad2e4f4ce5db26dfbe3e797c5a4326dd5.
+
+- 2026-09-24T21:10:01+00:00: Recorded command exit 8; command argv SHA-256
   d2f9f0da55fd3a56408ce9709fe9ce7ad2e4f4ce5db26dfbe3e797c5a4326dd5.
