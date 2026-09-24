@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1368](tasks/AR-1368-control-receipt-runtime-source.md): Control receipt runtime source | Provide the authenticated runtime-owned ControlClient receipt source required by AR-1329 production dispatch. | Promote and claim the missing runtime-owned ControlClient receipt source, then add the authenticated control operation and production enrollment materialization without exposing authority. | codex-asb-runtime-attested-enrollment-luna56 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -63,6 +57,7 @@ Never edit this file directly.
 | P0 | [AR-1361](tasks/AR-1361-runtime-control-receipt-source.md): Runtime control receipt source | Provide authenticated control receipt delivery and runtime-owned dispatch composition for CLI consumers. | Promote after AR-1359 is done, then add an authenticated control receipt source and runtime-owned dispatch factory without exposing authority to CLI. | - |
 | P0 | [AR-1363](tasks/AR-1363-authenticated-control-receipt-source.md): Authenticated control receipt source | Deliver authenticated runtime authority receipts through the versioned control boundary without exposing secrets or caller authority. | Promote after AR-1362 is done, then implement the bounded authenticated control receipt source consumed by runtime-owned dispatch. | - |
 | P0 | [AR-1367](tasks/AR-1367-ar1329-production-dispatch-integration.md): AR-1329 production dispatch integration | Complete production asb run/sweep live-provider dispatch through runtime-owned authenticated acquisition and teardown. | Promote and claim this fresh AR-1329 successor, refresh an isolated worktree to protected main, audit the production run/sweep dispatch seam, and implement only through runtime-owned bridge inputs. | - |
+| P0 | [AR-1368](tasks/AR-1368-control-receipt-runtime-source.md): Control receipt runtime source | Provide the authenticated runtime-owned ControlClient receipt source required by AR-1329 production dispatch. | Promote and claim the missing runtime-owned ControlClient receipt source, then add the authenticated control operation and production enrollment materialization without exposing authority. | - |
 | P1 | [AR-0604](tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Obtain authorized native x86 runner and immutable CSB/Python evidence; rerun native_boundary and record A/B overhead. | - |
 | P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Control genuine native platform capacity lifecycle. | PR #119 exact e2e3574 is green except quality 35401437247 at 89.99% coverage. Preserve PR; repair via AR-1312 when promotable. Do not merge or weaken 90%. | - |
 | P1 | [AR-0814](tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Create successor AR for authenticated route/ancestor authority; preserve AR-1288 evidence and AR-0814 head 29cfa193. | - |
