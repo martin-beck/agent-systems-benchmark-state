@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add selectable tool-use reliability and safety workloads from the literature with separate metrics.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Tool-use reliability and safety workloads",
-  "updated_at": "2026-09-24T19:18:27+00:00",
+  "updated_at": "2026-09-24T19:18:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1418"
 }
 ---
@@ -70,3 +70,6 @@ dimensions; no aggregate score may hide unsafe or failed tool calls.
   --test-threads=1 passed 34 unit + 2 public API + 5 registry tests. Historical PR #300 required
   checks are terminal SUCCESS. A clippy invocation exited 1 due exact infrastructure error
   LOCK_TIMEOUT after 10.0s acquiring shared coordinator lock; rerun required.
+
+- 2026-09-24T19:18:39+00:00: Recorded command exit 0; command argv SHA-256
+  f200c3a4231be54bfa784b196959dc9f42957edd09e2a62b476236eade210248.
