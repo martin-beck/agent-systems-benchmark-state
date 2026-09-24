@@ -1,6 +1,6 @@
 ---
 {
-  "branch": "",
+  "branch": "codex/ar-1401-literature-local-mock",
   "checkpoint_commit": "",
   "claim_expires": "",
   "depends_on": ["AR-1400", "AR-1395"],
@@ -18,10 +18,9 @@
   "task_revision": 1,
   "title": "Literature workload local mock execution",
   "updated_at": "2026-09-24T00:00:00+00:00",
-  "worktree_key": ""
+  "worktree_key": "agent-systems-benchmark-ar-1401"
 }
 ---
 
 Mock execution is development evidence only. It never upgrades a registry
 record to official, native-tested, or externally qualified.
-
