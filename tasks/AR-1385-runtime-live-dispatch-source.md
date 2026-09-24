@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T06:46:29+00:00",
   "depends_on": [
     "AR-1384",
     "AR-1377",
@@ -15,15 +15,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "",
+  "owner": "codex-asb-ar1329-repair-luna56",
   "plan": "../plans/AR-1385-runtime-live-dispatch-source.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Materialize the authenticated runtime-owned live dispatch source for production asb run and sweep.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Authenticated runtime live dispatch source",
-  "updated_at": "2026-09-24T05:45:34+00:00",
+  "updated_at": "2026-09-24T05:46:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1385-runtime-live-dispatch-source"
 }
 ---
@@ -37,3 +37,5 @@ namespace identity, or launch authority.
 
 - 2026-09-24T05:45:34+00:00: AR-1384 done and audited; coordinator repair successor for
   authenticated runtime-owned live dispatch source; dependencies verified
+
+- 2026-09-24T05:46:29+00:00: Claimed by codex-asb-ar1329-repair-luna56.
