@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1383](tasks/AR-1383-runtime-authority-profile.md): Runtime-owned authority profile materialization | Materialize runtime-owned live authority profile for authenticated execution. | Independent review of opaque authority profile complete; run full runtime gates and clippy, inspect privacy/authority diff, then publish exact-head PR. | codex-asb-runtime-receipt-source-luna56 |
+| P0 | [AR-1383](tasks/AR-1383-runtime-authority-profile.md): Runtime-owned authority profile materialization | Materialize runtime-owned live authority profile for authenticated execution. | Independent review complete; full runtime tests 114 passed/1 ignored, check and clippy -D warnings passed. Publish clean exact-head PR through handoffctl, then monitor required CI. | codex-asb-runtime-receipt-source-luna56 |
 
 ## Open
 

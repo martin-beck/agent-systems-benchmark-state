@@ -10,7 +10,7 @@
     "AR-1381"
   ],
   "id": "AR-1383",
-  "next_action": "Independent review of opaque authority profile complete; run full runtime gates and clippy, inspect privacy/authority diff, then publish exact-head PR.",
+  "next_action": "Independent review complete; full runtime tests 114 passed/1 ignored, check and clippy -D warnings passed. Publish clean exact-head PR through handoffctl, then monitor required CI.",
   "observed_branch": "feature/ar-1383-runtime-authority-profile",
   "observed_dirty": 0,
   "observed_head": "e8af8041481c3c02731e02483847a82c3d138027",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize runtime-owned live authority profile for authenticated execution.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Runtime-owned authority profile materialization",
-  "updated_at": "2026-09-24T04:47:08+00:00",
+  "updated_at": "2026-09-24T04:47:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1383-runtime-authority-profile"
 }
 ---
@@ -72,3 +72,10 @@ bootstrap inputs required by live execution.
 
 - 2026-09-24T04:47:08+00:00: Recorded command exit 0; command argv SHA-256
   165b66592d52ddd4e707177d6fbd75dd46166e641fe1d35c2e6222ed3e115a0b.
+
+- 2026-09-24T04:47:36+00:00: Full cargo test -p asb-runtime passed 114 tests with one
+  capability-gated ignored test; cargo check and cargo clippy -p asb-runtime --all-targets -- -D
+  warnings passed. Diff is 61 lines in live_service only: one-shot profile materialization after
+  attestation/replay validation, safe provider/generation accessors, and replay test. No
+  credentials/private paths or caller authority constructors. Commit
+  e8af8041481c3c02731e02483847a82c3d138027 remains signed+DCO and worktree clean.
