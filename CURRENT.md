@@ -10,7 +10,12 @@ Never edit this file directly.
 | P0 | [AR-1215](tasks/AR-1215-result-comparison.md): Multi-agent result comparison tutorial | Teach conservative comparison of multiple agents from the same benchmark. | Resolve or requalify post-merge repository-quality failure for merge f51164569bf4da67a0759328b4be280385abe9a4; then rerun/monitor all seven post-merge workflows to terminal and release only after all succeed. | codex-ar1215-luna56 |
 | P0 | [AR-1427](tasks/AR-1427-protected-main-merge-tree-requalification.md): Protected-main merge-tree requalification repair | Repair exact protected-main merge-tree requalification after sequential tutorial merges. | Promote and reproduce PR #310 merge f511645 versus reviewed topic 9d97e168; repair exact protected-main merge-tree requalification, then rerun AR-1215 post-merge evidence. | ar1427-merge-requal-luna56 |
 | P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Control genuine native platform capacity lifecycle. | PR #119 exact head 4630f90 is rebased onto protected main 5ddac12. Fresh exact-head checks were absent immediately after force-push; close/reopen retriggered them. At last query all 12 checks are pending except AWQ shadow and SPDX headers pass. Wait for every required check terminal success; do not merge on partial/pending evidence. | ar0704-requal-luna56 |
-| P1 | [AR-1417](tasks/AR-1417-interactive-stateful-literature-workloads.md): Interactive stateful literature workloads | Add selectable interactive and stateful literature workloads beside built-in software-engineering fixtures. | Keep open: protected-main Repository quality run 36048870322 failed because merge tree 5ddac12 differs from reviewed topic tree 666043f (base a2a6414 vs 0dcc717); await coordinator exact-main requalification or successor repair, never weaken gate. | ar1417-literature-luna56 |
+
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-1417](tasks/AR-1417-interactive-stateful-literature-workloads.md): Interactive stateful literature workloads | Add selectable interactive and stateful literature workloads beside built-in software-engineering fixtures. | Keep open: protected-main Repository quality run 36048870322 failed because merge tree 5ddac12 differs from reviewed topic tree 666043f (base a2a6414 vs 0dcc717); await coordinator exact-main requalification or successor repair, never weaken gate. | - |
 
 ## Blocked
 
