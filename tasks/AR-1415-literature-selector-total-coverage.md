@@ -10,17 +10,17 @@
   "id": "AR-1415",
   "next_action": "Record the transient coordinator lock timeout, rerun state-recording wrapper once, then commit focused coverage audit and run remaining quality gates.",
   "observed_branch": "codex/ar-1415-literature-selector-total-coverage",
-  "observed_dirty": 2,
-  "observed_head": "6925c3c443b77aa41ec9578e49cc19b01447c869",
+  "observed_dirty": 0,
+  "observed_head": "bc0cfaff9cc126cb4f3dbadfc9a6284750dba0bc",
   "owner": "ar1415-literature-selector-total-coverage-luna56",
   "plan": "../plans/AR-1415.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make the complete literature workload inventory selectable beside built-in software-engineering fixtures with truthful evidence gates.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Total literature workload selector coverage",
-  "updated_at": "2026-09-24T17:51:02+00:00",
+  "updated_at": "2026-09-24T17:51:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1415"
 }
 ---
