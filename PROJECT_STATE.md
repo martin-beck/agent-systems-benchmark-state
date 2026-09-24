@@ -10,17 +10,17 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #119 | `feature/native-capacity-controller@e2e3574ed2bb` | `main` | UNKNOWN | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(capacity): add bounded native lifecycle controller |
-| #306 | `feature/ar-1316-authenticated-agent-catalog-producer@e0e447dcb521` | `main` | UNKNOWN | - | feat(control): persist authenticated agent catalog |
-| #307 | `codex/ar-1417-interactive-stateful-literature@666043f2c7d3` | `main` | UNKNOWN | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(workloads): cover interactive public lifecycle |
+| #119 | `feature/native-capacity-controller@e2e3574ed2bb` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(capacity): add bounded native lifecycle controller |
+| #306 | `feature/ar-1316-authenticated-agent-catalog-producer@e0e447dcb521` | `main` | DIRTY | - | feat(control): persist authenticated agent catalog |
+| #307 | `codex/ar-1417-interactive-stateful-literature@666043f2c7d3` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(workloads): cover interactive public lifecycle |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 36048088861 | `a2a641417547` | push | Rust verification | in_progress:- |
-| 36048088820 | `a2a641417547` | push | Fault assurance | queued:- |
-| 36048088790 | `a2a641417547` | push | Formal assurance | queued:- |
+| 36048088820 | `a2a641417547` | push | Fault assurance | in_progress:- |
+| 36048088790 | `a2a641417547` | push | Formal assurance | in_progress:- |
 | 36048088771 | `a2a641417547` | push | Hosted portability and native qualification | in_progress:- |
 | 36048088715 | `a2a641417547` | push | Repository quality | in_progress:- |
 | 36048088696 | `a2a641417547` | push | Huawei MIT source headers | completed:success |
