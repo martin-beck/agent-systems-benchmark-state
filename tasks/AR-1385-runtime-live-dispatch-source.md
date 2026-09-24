@@ -13,17 +13,17 @@
   "id": "AR-1385",
   "next_action": "Refresh the declared isolated worktree from protected main, materialize the authenticated runtime-owned live dispatch source consumed by asb run and sweep, and add fail-closed positive and negative tests.",
   "observed_branch": "feature/ar-1385-runtime-live-dispatch-source",
-  "observed_dirty": 2,
-  "observed_head": "5c4d5304e53d2cd9559999a00afd86cac28d29dc",
+  "observed_dirty": 0,
+  "observed_head": "fd9517edb811fc119bc252ef4edd15e350845042",
   "owner": "codex-asb-ar1329-repair-luna56",
   "plan": "../plans/AR-1385-runtime-live-dispatch-source.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize the authenticated runtime-owned live dispatch source for production asb run and sweep.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Authenticated runtime live dispatch source",
-  "updated_at": "2026-09-24T05:54:08+00:00",
+  "updated_at": "2026-09-24T05:54:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1385-runtime-live-dispatch-source"
 }
 ---
