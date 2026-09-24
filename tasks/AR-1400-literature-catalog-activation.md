@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T13:07:09+00:00",
   "depends_on": [
     "AR-1396",
     "AR-1399"
@@ -12,15 +12,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "",
+  "owner": "ar1400_catalog_activation_luna56",
   "plan": "../plans/AR-1400-literature-catalog-activation.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Expose all documented literature workloads as truthful selectable candidates beside built-in fixtures.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Literature workload catalog activation",
-  "updated_at": "2026-09-24T11:06:11+00:00",
+  "updated_at": "2026-09-24T11:07:09+00:00",
   "worktree_key": ""
 }
 ---
@@ -31,3 +31,5 @@ dataset, native-platform, or provider qualification that the registry lacks.
 
 - 2026-09-24T11:06:11+00:00: AR-1396 and AR-1399 are durably done; begin unified literature
   candidate catalog activation.
+
+- 2026-09-24T11:07:09+00:00: Claimed by ar1400_catalog_activation_luna56.
