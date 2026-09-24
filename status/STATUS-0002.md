@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1353](../tasks/AR-1353-runtime-enrollment-cli-dispatch.md) | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) | None |
 | [AR-1354](../tasks/AR-1354-runtime-enrollment-implementation.md) | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) | None |
 | [AR-1355](../tasks/AR-1355-runtime-attested-enrollment-record.md) | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) | None |
 | [AR-1356](../tasks/AR-1356-control-runtime-attestation-primitive.md) | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) | [AR-1357](../tasks/AR-1357-runtime-attested-enrollment-record.md) |
@@ -43,6 +44,7 @@
 | [AR-1394](../tasks/AR-1394-literature-workload-registry.md) | [AR-0404](../tasks/AR-0404-extended-workloads.md), [AR-0405](../tasks/AR-0405-performance-workloads.md), [AR-0406](../tasks/AR-0406-evolving-workloads.md), [AR-1007](../tasks/AR-1007-benchmark-validity.md) | [AR-1395](../tasks/AR-1395-literature-workload-adapters.md) |
 | [AR-1395](../tasks/AR-1395-literature-workload-adapters.md) | [AR-1394](../tasks/AR-1394-literature-workload-registry.md) | [AR-1396](../tasks/AR-1396-literature-workload-selection.md) |
 | [AR-1396](../tasks/AR-1396-literature-workload-selection.md) | [AR-1395](../tasks/AR-1395-literature-workload-adapters.md) | None |
+| [AR-1397](../tasks/AR-1397-protected-main-postmerge-concurrency-repair.md) | [AR-1337](../tasks/AR-1337-protected-main-merge-tree-repair-openrouter.md) | None |
 
 ## Complete AR inventory
 
@@ -132,7 +134,7 @@
 | P1 | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md): Live-provider run execution for real agents | Unclaimed | Execute real agents against the selected provider through asb run and sweep with credential-free resolution. | BLOCKED pending coordinator-created repair AR: implement runtime-owned LiveProviderRuntimeService acquisition for production asb run/sweep. Service must resolve pinned provider policy to concrete public target(s), obtain credential through enrolled environment channel without evidence disclosure, construct attested child namespace handoff and relay listener, reserve ResourceLease, create SandboxBackend with pinned live gate, attest and issue one LiveProviderAttempt per scheduler attempt, and teardown on cancellation. Then AR-1329 can wire dispatch --provider-selection/--live-provider while preserving NetworkPolicy::Deny and direct/alternate egress denial. |
 | P1 | [AR-1354](../tasks/AR-1354-runtime-enrollment-implementation.md): Runtime enrollment implementation | Unclaimed | Implement config-backed runtime-owned enrollment for live CLI dispatch. | BLOCKED on an attested runtime enrollment source: asb-runtime must receive an authority-free enrollment request and obtain concrete public target(s), pinned tool attestations, lease root, and relay root from a runtime/control-owned record; do not expose these asb-cli inputs. Add a signed/attested record transport or coordinator-owned runtime enrollment AR, then implement acquire_from_enrollment and CLI dispatch with positive/negative tests. |
 
-### Planned (67)
+### Planned (68)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -161,6 +163,7 @@
 | P0 | [AR-1320](../tasks/AR-1320-persisted-agent-release-index.md): Persisted authenticated agent release index | Unclaimed | Persist and verify the ASB agent release index used by the setup wizard. | Continue with AR-1322 for the bounded signed local release-index source and verified closure promotion; persistence/restart/refresh fencing is merged. |
 | P0 | [AR-1370](../tasks/AR-1370-runner-authority-materialization.md): Runner authority materialization | Unclaimed | Inject existing authenticated certificate authority and runtime enrollment material into RunnerBackend/Catalog for receipt issuance. | Remain planned until AR-1369 dependency is resolved; then add authenticated RunnerBackend/Catalog authority injection and receipt-source tests without synthetic authority. |
 | P0 | [AR-1375](../tasks/AR-1375-live-control-dispatch-source.md): Runtime-owned live control dispatch source | Unclaimed | Supply authenticated runtime control receipts to production live dispatch. | Wait for AR-1374 blocker resolution, then implement the runtime-owned authenticated control adapter for CLI live dispatch. |
+| P0 | [AR-1397](../tasks/AR-1397-protected-main-postmerge-concurrency-repair.md): Protected-main post-merge concurrency and tree repair | Unclaimed | Repair protected-main merge-tree admission and serialize exact post-merge evidence across concurrent main pushes. | Promote when the current main queue is quiescent; reproduce the c58b0b0 and 130ff91 post-merge tree/cancellation evidence, implement a narrowly scoped signed integration repair, and require a fresh exact-main merge with all seven terminal-success workflows. |
 | P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
 | P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
 | P1 | [AR-0810](../tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Unclaimed | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project&#x27;s GitHub Pages site. |

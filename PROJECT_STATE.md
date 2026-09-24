@@ -27,12 +27,12 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35980460560 | `c58b0b0a4d90` | workflow_dispatch | Rust verification | pending:- |
+| 35980460560 | `c58b0b0a4d90` | workflow_dispatch | Rust verification | in_progress:- |
 | 35979776084 | `c58b0b0a4d90` | push | Rust verification | completed:cancelled |
 | 35979776053 | `c58b0b0a4d90` | push | Formal assurance | completed:success |
 | 35979776020 | `c58b0b0a4d90` | push | Hosted portability and native qualification | completed:success |
 | 35979775942 | `c58b0b0a4d90` | push | Huawei MIT source headers | completed:success |
-| 35979775844 | `c58b0b0a4d90` | push | Emulated aarch64 portability | in_progress:- |
+| 35979775844 | `c58b0b0a4d90` | push | Emulated aarch64 portability | completed:success |
 | 35979775776 | `c58b0b0a4d90` | push | Fault assurance | completed:success |
 | 35979775718 | `c58b0b0a4d90` | push | Repository quality | completed:failure |
 | 35979100377 | `130ff91ec3ac` | push | Emulated aarch64 portability | completed:success |
