@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1365](tasks/AR-1365-control-receipt-source-integration.md): Control receipt source integration | Integrate authenticated chain and authority enrollment into the versioned control receipt source. | PR #269 merged as aa537f6a07ac3476a8c4d6443a8df3c42a1aebc1. Monitor seven post-merge workflows for exact merge SHA; release only after every workflow is terminal success. | codex-asb-runtime-attested-enrollment-luna56 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -268,6 +262,7 @@ Never edit this file directly.
 | P0 | [AR-1359](tasks/AR-1359-runtime-control-bridge.md): Runtime/control enrollment bridge | Bridge authenticated control enrollment into runtime-owned opaque live authority. | PR #266 exact head f511910 is published. Monitor every exact-head required check, repair any failures without weakening gates, then merge only after all green and independent review. | - |
 | P0 | [AR-1362](tasks/AR-1362-runtime-authority-enrollment-store.md): Runtime authority enrollment store | Persist authenticated runtime authority enrollment required for receipt issuance without exposing secrets. | Run independent review, publish exact-head PR from clean signed head 7bf91f5, monitor required CI, repair failures without weakening gates, then merge only green and verify all seven post-merge workflows. | - |
 | P0 | [AR-1364](tasks/AR-1364-authenticated-chain-enrollment.md): Authenticated chain enrollment | Materialize authenticated certificate-chain authority for control-owned runtime receipt issuance. | Run full applicable gates, independently review the chain-enrollment boundary, then publish a clean exact-head PR and monitor all required checks. | - |
+| P0 | [AR-1365](tasks/AR-1365-control-receipt-source-integration.md): Control receipt source integration | Integrate authenticated chain and authority enrollment into the versioned control receipt source. | PR #269 merged as aa537f6a07ac3476a8c4d6443a8df3c42a1aebc1. Monitor seven post-merge workflows for exact merge SHA; release only after every workflow is terminal success. | - |
 | P1 | [AR-0002](tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. | - |
 | P1 | [AR-0003](tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. | - |
 | P1 | [AR-0004](tasks/AR-0004-ar-status-document.md): Generate the visual AR status document | Render every AR, status, and dependency as an accessible visual state document. | Await independent immutable-head review of state PR 3 at eedd311; repair findings before coordinator integration. | - |

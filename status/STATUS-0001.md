@@ -7,16 +7,16 @@
 
 ## Portfolio overview
 
-**389 ARs tracked** across 7 active status categories.
+**389 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 4 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 55 |
 | **Planned** | Defined work awaiting promotion or dependencies | 64 |
 | **Future** | Deferred roadmap work | 1 |
-| **Done** | Accepted, integrated, and durably verified | 248 |
+| **Done** | Accepted, integrated, and durably verified | 249 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 16 |
 
@@ -457,7 +457,7 @@ flowchart LR
         AR_1362["AR-1362 - Done"]:::status_done
         AR_1363["AR-1363 - Blocked"]:::status_blocked
         AR_1364["AR-1364 - Done"]:::status_done
-        AR_1365["AR-1365 - In progress"]:::status_in_progress
+        AR_1365["AR-1365 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1862,12 +1862,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1365](../tasks/AR-1365-control-receipt-source-integration.md): Control receipt source integration | codex-asb-runtime-attested-enrollment-luna56 | Integrate authenticated chain and authority enrollment into the versioned control receipt source. | PR #269 merged as aa537f6a07ac3476a8c4d6443a8df3c42a1aebc1. Monitor seven post-merge workflows for exact merge SHA; release only after every workflow is terminal success. |
-
 ### Open (4)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -1884,3 +1878,5 @@ flowchart LR
 | P0 | [AR-0514](../tasks/AR-0514-replay-openhands.md): Qualify OpenHands replay | Unclaimed | Qualify replay conformance for OpenHands. | Recover exact approved OpenHands environment digest 63727569 from immutable provenance; otherwise schedule pin-reproduction repair before native replay. |
 | P0 | [AR-0836](../tasks/AR-0836-runner-isolation-hardening.md): Harden runner isolation and credential boundaries | Unclaimed | Harden development-host runner isolation against same-UID job tampering and diagnostic leakage. | Independently review immutable signed candidate 9b4e7084e02cdb3a1ff56dc55bbdce413ed6b1d3; keep trusted workflows blocked and AR-0836 in progress until required AR-0837 proves the digest-pinned no-host-mount job-container boundary. |
 | P0 | [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md): Implement &#96;asb tui&#96; lifecycle routing | Unclaimed | Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend. | After AR-1010, AR-1037 and AR-1060 are done, rebase c545c33 onto protected ASB main and implement only the ASB provisioning half before regenerated evidence and trusted asb-tui pinning. |
+| P0 | [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md): Build the standalone asb-tui application | Unclaimed | Deliver the actual standalone interactive asb-tui application without an ASB workspace dependency. | Blocked: implementation belongs to asb-tui, but current scope forbids touching that repository; AR-1010/AR-1060 also retain unresolved publication blockers. Obtain explicit scope/dependency repair before re-opening. |
+| P0 | [AR-1160](../tasks/AR-1160.md): Wizard control API | Unclaimed | Wizard control API | Keep AR-1160 blocked. Create a fresh scoped AR for runtime-owned authenticated provider capture, per-tuple cassette reconciliation, and verified offline activation; preserve fail-closed gates and do not change this AR&#x27;s historical evidence. |

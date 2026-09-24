@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1365-control-receipt-source-integration",
   "checkpoint_commit": "aa537f6a07ac3476a8c4d6443a8df3c42a1aebc1",
-  "claim_expires": "2026-09-24T02:12:21+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1362",
     "AR-1364"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1365-control-receipt-source-integration",
   "observed_dirty": 0,
   "observed_head": "6959cc1810265e026a9af40602752fdca4dc1e18",
-  "owner": "codex-asb-runtime-attested-enrollment-luna56",
+  "owner": "",
   "plan": "../plans/AR-1365-control-receipt-source-integration.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Integrate authenticated chain and authority enrollment into the versioned control receipt source.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Control receipt source integration",
-  "updated_at": "2026-09-24T00:12:21+00:00",
+  "updated_at": "2026-09-24T00:16:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1365-control-receipt-source-integration"
 }
 ---
@@ -95,3 +95,8 @@ AR-1364. Do not touch asb-tui or synthesize authority from CLI/config input.
 - 2026-09-24T00:10:34+00:00: Heartbeat by codex-asb-runtime-attested-enrollment-luna56.
 
 - 2026-09-24T00:12:21+00:00: Heartbeat by codex-asb-runtime-attested-enrollment-luna56.
+
+- 2026-09-24T00:16:44+00:00: Released after PR #269 exact-head
+  6959cc1810265e026a9af40602752fdca4dc1e18 merged as aa537f6a07ac3476a8c4d6443a8df3c42a1aebc1. All
+  seven post-merge workflows passed: 35936914947, 35936914714, 35936914831, 35936914845,
+  35936914836, 35936914861, 35936914824.
