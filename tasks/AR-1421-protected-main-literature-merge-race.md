@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar-1421-protected-main-race",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-24T21:37:51+00:00",
+  "claim_expires": "2026-09-24T21:44:24+00:00",
   "depends_on": [
     "AR-1416",
     "AR-1398"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair protected-main merge-tree requalification after a literature PR merges onto an advanced main.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Protected-main literature merge race repair",
-  "updated_at": "2026-09-24T19:37:51+00:00",
+  "updated_at": "2026-09-24T19:44:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1421"
 }
 ---
@@ -37,3 +37,5 @@ the merge released before fresh exact-main evidence succeeds.
 - 2026-09-24T19:37:29+00:00: Heartbeat by ar1421-protected-main-race-luna56.
 
 - 2026-09-24T19:37:51+00:00: Heartbeat by ar1421-protected-main-race-luna56.
+
+- 2026-09-24T19:44:24+00:00: Heartbeat by ar1421-protected-main-race-luna56.
