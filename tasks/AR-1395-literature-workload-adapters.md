@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Normalize approved literature tasks through bounded, non-vendored ASB workload adapters.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Literature workload adapter boundary",
-  "updated_at": "2026-09-24T08:42:24+00:00",
+  "updated_at": "2026-09-24T08:43:39+00:00",
   "worktree_key": ""
 }
 ---
@@ -31,3 +31,6 @@ into executable or qualified workloads.
   workflows are green; promote adapter boundary.
 
 - 2026-09-24T08:42:24+00:00: Claimed by codex-asb-ar1395-literature-adapters-luna56.
+
+- 2026-09-24T08:43:39+00:00: Recorded command exit 0; command argv SHA-256
+  e3d2e9fa53e551fc08c72cf1833bdcfb806cc107dad75f76721191ca46c7ff7c.
