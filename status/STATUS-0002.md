@@ -22,14 +22,19 @@
 
 ## Complete AR inventory
 
-### Open (4)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1384](../tasks/AR-1384-runtime-bootstrap-materialization.md): Runtime-owned bootstrap materialization | codex-asb-runtime-receipt-source-luna56 | Materialize the runtime-owned live bootstrap handle from authenticated authority. | Promote and claim after validating all dependencies; implement the private runtime/control conversion from the authenticated authority profile to an opaque live runtime handle, with fail-closed tests. |
+
+### Open (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1212](../tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Unclaimed | Teach users to test configured-agent benchmark eligibility without running an agent. | Implement the offline tutorial for checking agent benchmark readiness under the current configuration. |
 | P0 | [AR-1314](../tasks/AR-1314-optional-bundle-signing-development-release.md): Optional runtime-bundle signing for development and tagged releases | Unclaimed | Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile. | Wait for PR #232 exact-head CI after schema-v3 repair; if all required checks pass, independently review and merge through the established workflow, then reconcile AR-1314. Preserve signature-required defaults. |
 | P0 | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | Unclaimed | Publish the verified ASB agent catalog required by the first-run setup wizard. | Persist the authenticated catalog snapshot/generation and complete live ASB-to-asb-tui wizard evidence; keep all entries unavailable until a verified release closure exists. |
-| P0 | [AR-1384](../tasks/AR-1384-runtime-bootstrap-materialization.md): Runtime-owned bootstrap materialization | Unclaimed | Materialize the runtime-owned live bootstrap handle from authenticated authority. | Promote and claim after validating all dependencies; implement the private runtime/control conversion from the authenticated authority profile to an opaque live runtime handle, with fail-closed tests. |
 
 ### Blocked (62)
 
