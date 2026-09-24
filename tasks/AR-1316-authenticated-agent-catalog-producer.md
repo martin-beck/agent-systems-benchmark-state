@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish the verified ASB agent catalog required by the first-run setup wizard.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Authenticated agent catalog producer",
-  "updated_at": "2026-09-24T19:04:21+00:00",
+  "updated_at": "2026-09-24T19:05:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1316"
 }
 ---
@@ -135,3 +135,6 @@ Progress evidence: ASB PR #245 merged at `027af7ad27da13b359b3f099699c42b03c6f39
   control state root already owned (parallel test lock contention), while 104 asb-cli tests and
   preceding workspace suites passed. This is a deterministic test isolation/parallel-lock flake, not
   catalog logic; rerun with --test-threads=1 and record result.
+
+- 2026-09-24T19:05:48+00:00: Recorded command exit 0; command argv SHA-256
+  7b80382008cb01e3ea6fa6e88054b624464f9801b40ed57f947b01892a686ae8.
