@@ -8,7 +8,7 @@
     "AR-1401"
   ],
   "id": "AR-1411",
-  "next_action": "Independently review complete diff, publish PR against exact protected main fc74825cb86991bb3afac6854d8cb5048118ff8f, then exact-head checks and merge workflow.",
+  "next_action": "PR #297 open; verify exact base fc74825cb86991bb3afac6854d8cb5048118ff8f/head 67129e7504dc28d8f8e02a6bbb955f6683917208/tree, wait for all required checks, independently review, then signed merge.",
   "observed_branch": "codex/ar-1411-repository-terminal",
   "observed_dirty": 0,
   "observed_head": "67129e7504dc28d8f8e02a6bbb955f6683917208",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add selectable, provenance-preserving repository-repair and terminal benchmark adapters.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Repository and terminal literature workload adapters",
-  "updated_at": "2026-09-24T14:29:37+00:00",
+  "updated_at": "2026-09-24T14:30:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1411"
 }
 ---
@@ -135,3 +135,9 @@ bounded local fixtures or LiteLLM-compatible mocks only.
 
 - 2026-09-24T14:29:37+00:00: Recorded command exit 0; command argv SHA-256
   347d12e70246802694a9a6058e45dce37567cbb594e28487ea64118c7061d5a6.
+
+- 2026-09-24T14:30:08+00:00: Independent full-diff review found only the intended 45-line
+  catalog/docs change: dataset revision, capability tags, attempt budget, methodology zero-budget
+  semantics, and provenance documentation. No runtime/provider/network behavior changed. Published
+  PR #297 against exact protected main fc74825cb86991bb3afac6854d8cb5048118ff8f; branch clean,
+  signed+DCO head 67129e7.
