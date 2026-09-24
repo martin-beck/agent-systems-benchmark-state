@@ -14,16 +14,16 @@
   "next_action": "PR #276 is published at exact head 1113375. Monitor all required exact-head checks; repair failures through handoffctl, merge only after independent review and green CI, then verify seven post-merge workflows.",
   "observed_branch": "feature/ar-1380-runtime-scheduler-composition",
   "observed_dirty": 0,
-  "observed_head": "1113375a0f4f4c4eec2fb33eea20a39118fcc479",
+  "observed_head": "ab4e60cb9639d855c31f4a5f66e515859d29cf9f",
   "owner": "codex-asb-runtime-receipt-source-luna56",
   "plan": "../plans/AR-1380-runtime-scheduler-composition.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compose runtime-owned live attempts for production run and sweep scheduling.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Runtime scheduler composition for live dispatch",
-  "updated_at": "2026-09-24T03:42:48+00:00",
+  "updated_at": "2026-09-24T03:42:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1380-runtime-scheduler-composition"
 }
 ---
