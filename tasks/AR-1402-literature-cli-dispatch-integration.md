@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate literature workload catalog and adapters through all ASB CLI execution and evidence paths.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Literature workload CLI dispatch integration",
-  "updated_at": "2026-09-24T13:16:02+00:00",
+  "updated_at": "2026-09-24T13:16:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1402"
 }
 ---
@@ -172,3 +172,6 @@ external benchmark datasets or providers.
   merge_pr.py verified exact PR ref/base/head/tree, signed merge and DCO, then published main.
   Post-merge runs: Rust 36004373952, AArch64 36004374158, hosted 36004373959, fault 36004373968,
   formal 36004374133, quality 36004373951, headers 36004373961.
+
+- 2026-09-24T13:16:52+00:00: Recorded command exit 0; command argv SHA-256
+  135ac02c47873d6857368a822f9b9be7e6956e3c0e1be72bfdf62f7a4bd8b0ab.
