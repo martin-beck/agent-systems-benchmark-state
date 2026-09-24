@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Complete production asb run/sweep live-provider dispatch through runtime-owned authenticated acquisition and teardown.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "AR-1329 production dispatch integration",
-  "updated_at": "2026-09-24T05:40:01+00:00",
+  "updated_at": "2026-09-24T05:40:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1367-ar1329-production-dispatch-integration"
 }
 ---
@@ -57,3 +57,6 @@ metadata, touch asb-tui, or expose live authority through CLI/config input.
 
 - 2026-09-24T05:40:01+00:00: Recorded command exit 0; command argv SHA-256
   321c534968b9c456a64caf5e6d09b63780c507f97548057d2bfe31edcfd73ff4.
+
+- 2026-09-24T05:40:39+00:00: Recorded command exit 0; command argv SHA-256
+  b7c438686581cf292b6cd41497ceabb3af42dfed57e04dfd6cc89efed8e2d15b.
