@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Literature selector completeness and parity",
-  "updated_at": "2026-09-24T17:10:59+00:00",
+  "updated_at": "2026-09-24T17:11:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1410"
 }
 ---
@@ -260,3 +260,6 @@ does not turn external qualification or live-provider access into a prerequisite
   repository-repair (not code-generation), and Rust family uses swe-fficiency (double f). The direct
   checker invocation exit 2 was also recorded as a misuse: checker requires a CLI JSON path. No gate
   weakened.
+
+- 2026-09-24T17:11:04+00:00: Recorded command exit 1; command argv SHA-256
+  e9c36540cb25a7ec8614b44a1cfe2b10b69fbb7493832aae91658d69048efb47.
