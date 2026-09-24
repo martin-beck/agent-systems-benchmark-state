@@ -1,7 +1,7 @@
 ---
 {
-  "branch": "",
-  "checkpoint_commit": "",
+  "branch": "feature/ar-1387-runtime-control-cli-bridge",
+  "checkpoint_commit": "25548846966e37646dded8d67ed8ee5123b8bc32",
   "claim_expires": "",
   "depends_on": [
     "AR-1385",
@@ -10,10 +10,10 @@
     "AR-1377"
   ],
   "id": "AR-1387",
-  "next_action": "Promote after dependency validation; add the authenticated runtime/control bootstrap-to-CLI bridge that supplies the opaque dispatch source without caller authority injection.",
-  "observed_branch": "",
+  "next_action": "Refresh the declared isolated worktree from protected main, add the authenticated runtime/control bootstrap-to-CLI bridge, and test opaque dispatch-source transfer without caller authority injection.",
+  "observed_branch": "feature/ar-1387-runtime-control-cli-bridge",
   "observed_dirty": 0,
-  "observed_head": "0000000000000000000000000000000000000000",
+  "observed_head": "25548846966e37646dded8d67ed8ee5123b8bc32",
   "owner": "",
   "plan": "../plans/AR-1387-runtime-control-cli-bridge.md",
   "priority": "P0",
