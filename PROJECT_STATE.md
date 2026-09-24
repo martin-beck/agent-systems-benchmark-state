@@ -11,7 +11,7 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #119 | `feature/native-capacity-controller@4630f90af739` | `main` | CLEAN | COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(capacity): add bounded native lifecycle controller |
-| #310 | `docs/ar-1215-result-comparison@9d97e1684ecd` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | docs(tutorials): add conservative result comparison guide |
+| #310 | `docs/ar-1215-result-comparison@9d97e1684ecd` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | docs(tutorials): add conservative result comparison guide |
 
 ## Recent workflows
 
@@ -24,7 +24,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36060007814 | `2d64e0cdb888` | push | Formal assurance | in_progress:- |
 | 36060007813 | `2d64e0cdb888` | push | Hosted portability and native qualification | in_progress:- |
 | 36060007776 | `2d64e0cdb888` | push | Emulated aarch64 portability | in_progress:- |
-| 36059074863 | `9d97e1684ecd` | pull_request | Repository quality | in_progress:- |
+| 36059074863 | `9d97e1684ecd` | pull_request | Repository quality | completed:success |
 | 36059074767 | `9d97e1684ecd` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36059074702 | `9d97e1684ecd` | pull_request | Huawei MIT source headers | completed:success |
 | 36059074690 | `9d97e1684ecd` | pull_request | Hosted portability and native qualification | completed:success |
