@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1385-runtime-live-dispatch-source",
-  "checkpoint_commit": "fd9517edb811fc119bc252ef4edd15e350845042",
+  "checkpoint_commit": "2313d9053f77a39cb4194cef44fac31446eace77",
   "claim_expires": "2026-09-24T06:52:45+00:00",
   "depends_on": [
     "AR-1384",
@@ -11,7 +11,7 @@
     "AR-1381"
   ],
   "id": "AR-1385",
-  "next_action": "Repair PR #280 DCO trailer mismatch, force-push a new signed exact head, rerun required checks, then monitor all post-merge gates.",
+  "next_action": "PR #280 force-updated to DCO-correct signed exact head 2313d90; monitor fresh required checks, repair only evidenced failures, then merge only after independent review and all checks green.",
   "observed_branch": "feature/ar-1385-runtime-live-dispatch-source",
   "observed_dirty": 0,
   "observed_head": "2313d9053f77a39cb4194cef44fac31446eace77",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize the authenticated runtime-owned live dispatch source for production asb run and sweep.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Authenticated runtime live dispatch source",
-  "updated_at": "2026-09-24T06:00:36+00:00",
+  "updated_at": "2026-09-24T06:01:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1385-runtime-live-dispatch-source"
 }
 ---
@@ -104,3 +104,8 @@ namespace identity, or launch authority.
 
 - 2026-09-24T06:00:36+00:00: Recorded command exit 0; command argv SHA-256
   f441e836895f0d8b2a5d64b211ccd30c596494f58641897e941fd60dc89b2f38.
+
+- 2026-09-24T06:01:16+00:00: Repaired the actual policy failure: fd9517ed used a users.noreply.com
+  DCO trailer that did not match the signing identity. Amended to matching Martin Beck
+  <martin.beck2@gmx.de>, SSH-signed commit 2313d90, local repository_policy passed, and force-pushed
+  PR #280. Fresh checks are running; Huawei/AWQ pass so far.
