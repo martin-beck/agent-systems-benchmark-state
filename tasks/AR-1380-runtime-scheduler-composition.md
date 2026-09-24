@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1380-runtime-scheduler-composition",
-  "checkpoint_commit": "1113375a0f4f4c4eec2fb33eea20a39118fcc479",
+  "checkpoint_commit": "ab4e60cb9639d855c31f4a5f66e515859d29cf9f",
   "claim_expires": "2026-09-24T05:41:18+00:00",
   "depends_on": [
     "AR-1378",
@@ -11,7 +11,7 @@
     "AR-1362"
   ],
   "id": "AR-1380",
-  "next_action": "PR #276 is published at exact head 1113375. Monitor all required exact-head checks; repair failures through handoffctl, merge only after independent review and green CI, then verify seven post-merge workflows.",
+  "next_action": "PR #276 force-updated to exact head ab4e60c on protected main 16bca1f9 after policy/platform stale-base failure. Monitor fresh exact-head checks; repair any new failures, merge only green, then verify seven post-merge workflows.",
   "observed_branch": "feature/ar-1380-runtime-scheduler-composition",
   "observed_dirty": 0,
   "observed_head": "ab4e60cb9639d855c31f4a5f66e515859d29cf9f",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compose runtime-owned live attempts for production run and sweep scheduling.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Runtime scheduler composition for live dispatch",
-  "updated_at": "2026-09-24T03:43:53+00:00",
+  "updated_at": "2026-09-24T03:44:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1380-runtime-scheduler-composition"
 }
 ---
@@ -128,3 +128,9 @@ composition gap without weakening authority boundaries.
 
 - 2026-09-24T03:43:53+00:00: Recorded command exit 0; command argv SHA-256
   877556f64f7f3052680dfca9e2e0c8143d4f511d2dc816a6664210e4af9ca176.
+
+- 2026-09-24T03:44:16+00:00: Hosted PR #276 initial head 1113375 failed Repository quality because
+  it was not based on current protected main, and Platform evidence rejected stale source identity;
+  formal/other checks were still running. Rebased cleanly onto origin/main 16bca1f9, preserving the
+  signed+DCO change as ab4e60cb9639d855c31f4a5f66e515859d29cf9f. Focused scheduler tests, fmt, and
+  runtime check passed. Force-with-lease pushed exact new head.

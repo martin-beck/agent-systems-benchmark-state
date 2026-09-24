@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1380](tasks/AR-1380-runtime-scheduler-composition.md): Runtime scheduler composition for live dispatch | Compose runtime-owned live attempts for production run and sweep scheduling. | PR #276 is published at exact head 1113375. Monitor all required exact-head checks; repair failures through handoffctl, merge only after independent review and green CI, then verify seven post-merge workflows. | codex-asb-runtime-receipt-source-luna56 |
+| P0 | [AR-1380](tasks/AR-1380-runtime-scheduler-composition.md): Runtime scheduler composition for live dispatch | Compose runtime-owned live attempts for production run and sweep scheduling. | PR #276 force-updated to exact head ab4e60c on protected main 16bca1f9 after policy/platform stale-base failure. Monitor fresh exact-head checks; repair any new failures, merge only green, then verify seven post-merge workflows. | codex-asb-runtime-receipt-source-luna56 |
 
 ## Open
 
