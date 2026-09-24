@@ -18,11 +18,11 @@
   "plan": "../plans/AR-1367-ar1329-production-dispatch-integration.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Complete production asb run/sweep live-provider dispatch through runtime-owned authenticated acquisition and teardown.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "AR-1329 production dispatch integration",
-  "updated_at": "2026-09-24T00:46:04+00:00",
+  "updated_at": "2026-09-24T05:39:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1367-ar1329-production-dispatch-integration"
 }
 ---
@@ -46,3 +46,6 @@ metadata, touch asb-tui, or expose live authority through CLI/config input.
   only an in-process response validator; it cannot materialize authority. No safe product mutation
   was made. Successor AR-1368 created to add the missing authenticated ControlClient receipt source;
   AR-1329 remains fail-closed.
+
+- 2026-09-24T05:39:05+00:00: AR-1384 is terminal done; resume this previously blocked AR-1329
+  successor for runtime-owned production dispatch integration.
