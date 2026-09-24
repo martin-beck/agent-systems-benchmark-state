@@ -7,7 +7,7 @@
     "AR-1401"
   ],
   "id": "AR-1402",
-  "next_action": "Focused CLI/workloads tests compile and 103 CLI unit tests pass; workflow_transcript fails only because changed CLI source requires synchronized provenance digest. Update provenance fixture, rerun focused and full tests, then continue methodology/dispatch coverage.",
+  "next_action": "Unified built-in/literature dispatch implemented with methodology-only rejection; focused and full cargo test --locked --workspace and clippy for asb-workloads/asb-cli pass. Run local quality gates, sign+DCO commit, publish PR from clean exact tree, then exact-head review/merge.",
   "observed_branch": "codex/ar-1402-literature-cli",
   "observed_dirty": 4,
   "observed_head": "0667f299ce04ed74c8f1fc2a349df3bcb57a4838",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate literature workload catalog and adapters through all ASB CLI execution and evidence paths.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Literature workload CLI dispatch integration",
-  "updated_at": "2026-09-24T12:52:37+00:00",
+  "updated_at": "2026-09-24T12:53:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1402"
 }
 ---
@@ -80,3 +80,7 @@ external benchmark datasets or providers.
 
 - 2026-09-24T12:52:37+00:00: Recorded command exit 0; command argv SHA-256
   b5337e5898b8fb086d15532ac04a92f3211aa1558b3726864147e5bfba7e651e.
+
+- 2026-09-24T12:53:43+00:00: Repaired recorded provenance digest drift after CLI source changes.
+  Added positive built-in/literature dispatch and negative methodology tests; all workspace tests
+  pass, including workflow transcript. No external provider or network path added.
