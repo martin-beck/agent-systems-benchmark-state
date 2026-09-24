@@ -30,7 +30,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 35953331449 | `333cc3ac4d55` | push | Emulated aarch64 portability | in_progress:- |
 | 35953331372 | `333cc3ac4d55` | push | Rust verification | in_progress:- |
-| 35953331359 | `333cc3ac4d55` | push | Fault assurance | in_progress:- |
+| 35953331359 | `333cc3ac4d55` | push | Fault assurance | completed:success |
 | 35953331356 | `333cc3ac4d55` | push | Hosted portability and native qualification | completed:success |
 | 35953331318 | `333cc3ac4d55` | push | Formal assurance | in_progress:- |
 | 35953331304 | `333cc3ac4d55` | push | Repository quality | in_progress:- |
