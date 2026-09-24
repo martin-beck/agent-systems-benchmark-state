@@ -1,13 +1,13 @@
 ---
 {
   "branch": "codex/ar-1212-benchmark-readiness",
-  "checkpoint_commit": "b142bdde19bf00d0fdffcdbca3c965d2d457b808",
+  "checkpoint_commit": "3fda4b4eb63f928cd446274d9e36af08b5579845",
   "claim_expires": "2026-09-24T20:50:15+00:00",
   "depends_on": [
     "AR-1211"
   ],
   "id": "AR-1212",
-  "next_action": "PR #305 rerun is active at exact signed head b142bdd; obtain independent review, wait for all required checks, then merge and verify post-merge workflows.",
+  "next_action": "PR #305 force-with-lease updated to exact signed/DCO head 3fda4b4. Await fresh exact-head CI and independent review; do not merge until all required checks and review are green. Prior gitleaks failure 36045051042 was repaired by branch rewrite and exact-base gitleaks now passes.",
   "observed_branch": "codex/ar-1212-benchmark-readiness",
   "observed_dirty": 0,
   "observed_head": "3fda4b4eb63f928cd446274d9e36af08b5579845",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach users to test configured-agent benchmark eligibility without running an agent.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Agent benchmark-readiness tutorial",
-  "updated_at": "2026-09-24T19:11:01+00:00",
+  "updated_at": "2026-09-24T19:11:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1212"
 }
 ---
@@ -151,3 +151,7 @@ Implement the linked tutorial and deterministic negative/positive syntax fixture
 
 - 2026-09-24T19:11:01+00:00: Recorded command exit 0; command argv SHA-256
   ee34be5f2619b514ba8536790859d90b92a94a7dba3e8507e6e97855dd26422f.
+
+- 2026-09-24T19:11:29+00:00: Published repaired PR #305 head 3fda4b4 with force-with-lease after
+  exact-base gitleaks passed no leaks; focused validator, guide examples, fmt, and repository policy
+  all passed.

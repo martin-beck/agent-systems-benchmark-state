@@ -82,7 +82,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1212](../tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | open-pr-triage-luna56 | Teach users to test configured-agent benchmark eligibility without running an agent. | PR #305 rerun is active at exact signed head b142bdd; obtain independent review, wait for all required checks, then merge and verify post-merge workflows. |
+| P0 | [AR-1212](../tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | open-pr-triage-luna56 | Teach users to test configured-agent benchmark eligibility without running an agent. | PR #305 force-with-lease updated to exact signed/DCO head 3fda4b4. Await fresh exact-head CI and independent review; do not merge until all required checks and review are green. Prior gitleaks failure 36045051042 was repaired by branch rewrite and exact-base gitleaks now passes. |
 
 ### Blocked (66)
 
