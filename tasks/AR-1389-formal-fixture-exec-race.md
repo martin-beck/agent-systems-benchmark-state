@@ -1,16 +1,16 @@
 ---
 {
-  "branch": "",
-  "checkpoint_commit": "",
+  "branch": "feature/ar-1389-formal-fixture-exec-race",
+  "checkpoint_commit": "8c88b9ec9b4f529ebe30cb230029b2575ad4e6e5",
   "claim_expires": "",
   "depends_on": [
     "AR-1384"
   ],
   "id": "AR-1389",
-  "next_action": "Promote after AR-1388 release evidence is reconciled, then bind an isolated worktree and repair the evidenced formal fixture ETXTBSY race without weakening gates.",
-  "observed_branch": "",
+  "next_action": "Claim the pre-bound isolated worktree, repair the evidenced formal fixture ETXTBSY race without weakening gates, and publish a signed PR.",
+  "observed_branch": "feature/ar-1389-formal-fixture-exec-race",
   "observed_dirty": 0,
-  "observed_head": "0000000000000000000000000000000000000000",
+  "observed_head": "8c88b9ec9b4f529ebe30cb230029b2575ad4e6e5",
   "owner": "",
   "plan": "../plans/AR-1389-formal-fixture-exec-race.md",
   "priority": "P0",
@@ -20,7 +20,7 @@
   "task_revision": 2,
   "title": "Formal fixture executable race repair",
   "updated_at": "2026-09-24T07:07:39+00:00",
-  "worktree_key": ""
+  "worktree_key": "agent-systems-benchmark-ar-1389-formal-fixture-exec-race"
 }
 ---
 
