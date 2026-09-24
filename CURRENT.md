@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1434](tasks/AR-1434-runtime-local-mock-attempt-adapter.md): Runtime local mock-attempt adapter | Add an approved runtime mock-attempt adapter for deterministic local run and sweep qualification. | Monitor exact merge 4736db727b13140364b8acd32cf77b7b375eeb17 until all seven post-merge workflows are terminal success: Fault assurance, Formal assurance, Repository quality, Emulated aarch64 portability, Rust verification, Hosted portability and native qualification, Huawei MIT source headers. Then run exact-main reconciliation and release only with durable evidence. | codex-asb-ar1434-mock-adapter-luna56 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -305,6 +299,7 @@ Never edit this file directly.
 | P0 | [AR-1421](tasks/AR-1421-protected-main-literature-merge-race.md): Protected-main literature merge race repair | Repair protected-main merge-tree requalification after a literature PR merges onto an advanced main. | Release AR-1421 done: merged tree equals reviewed topic tree e5d99b7; parents are 5ddac12 and 28e3560; topic passes SSH signature and DCO. Seven exact-main workflows all terminal SUCCESS. | - |
 | P0 | [AR-1427](tasks/AR-1427-protected-main-merge-tree-requalification.md): Protected-main merge-tree requalification repair | Repair exact protected-main merge-tree requalification after sequential tutorial merges. | Promote and reproduce PR #310 merge f511645 versus reviewed topic 9d97e168; repair exact protected-main merge-tree requalification, then rerun AR-1215 post-merge evidence. | - |
 | P0 | [AR-1431](tasks/AR-1431-protected-main-stale-base-repair.md): Protected-main stale-base merge requalification repair | Prevent stale-base sequential merges from passing review but failing protected-main merge-tree policy. | Monitor seven post-merge workflows for exact merge ed907603; release AR-1431 only after all seven terminal success, then coordinate AR-1216 release. | - |
+| P0 | [AR-1434](tasks/AR-1434-runtime-local-mock-attempt-adapter.md): Runtime local mock-attempt adapter | Add an approved runtime mock-attempt adapter for deterministic local run and sweep qualification. | Monitor exact merge 4736db727b13140364b8acd32cf77b7b375eeb17 until all seven post-merge workflows are terminal success: Fault assurance, Formal assurance, Repository quality, Emulated aarch64 portability, Rust verification, Hosted portability and native qualification, Huawei MIT source headers. Then run exact-main reconciliation and release only with durable evidence. | - |
 | P1 | [AR-0002](tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. | - |
 | P1 | [AR-0003](tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. | - |
 | P1 | [AR-0004](tasks/AR-0004-ar-status-document.md): Generate the visual AR status document | Render every AR, status, and dependency as an accessible visual state document. | Await independent immutable-head review of state PR 3 at eedd311; repair findings before coordinator integration. | - |
