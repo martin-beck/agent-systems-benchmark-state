@@ -9,18 +9,18 @@
   ],
   "id": "AR-1417",
   "next_action": "Promote after AR-1416 is released; audit AgentBench and other docs-listed stateful task sources, then implement the bounded local/mock adapter and catalog records.",
-  "observed_branch": "",
+  "observed_branch": "codex/ar-1417-interactive-stateful-literature",
   "observed_dirty": 0,
-  "observed_head": "0000000000000000000000000000000000000000",
+  "observed_head": "0dcc71705eb610e4c3ab6a9f775a9d7b9b25218a",
   "owner": "ar1417-literature-luna56",
   "plan": "../plans/AR-1417.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add selectable interactive and stateful literature workloads beside built-in software-engineering fixtures.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Interactive stateful literature workloads",
-  "updated_at": "2026-09-24T19:19:00+00:00",
+  "updated_at": "2026-09-24T19:19:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1417"
 }
 ---
