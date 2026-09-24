@@ -1,27 +1,27 @@
 ---
 {
-  "branch": "",
+  "branch": "codex/ar-1412-code-generation-controls",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-24T16:25:00+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1408",
     "AR-1401"
   ],
   "id": "AR-1412",
-  "next_action": "Promote after AR-1408 and AR-1401 are done; implement offline-selectable code-generation control adapters.",
+  "next_action": "Claim after binding metadata; implement offline-selectable code-generation control adapters.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "ar1412_code_generation_luna56b",
+  "owner": "",
   "plan": "../plans/AR-1412-code-generation-control-adapters.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
-  "summary": "Add selectable function-level and time-windowed coding controls without conflating their metrics.",
-  "task_revision": 3,
+  "status": "open",
+  "summary": "Recovered an abandoned claim with malformed local-time expiry; branch/worktree are now coordinator-bound before the next claim.",
+  "task_revision": 4,
   "title": "Code-generation control workload adapters",
-  "updated_at": "2026-09-24T14:25:00+00:00",
-  "worktree_key": ""
+  "updated_at": "2026-09-24T14:27:00+00:00",
+  "worktree_key": "agent-systems-benchmark-ar-1412"
 }
 ---
 
@@ -32,3 +32,9 @@ bounded local fixtures or LiteLLM-compatible mocks only.
   adapter is dependency-ready.
 
 - 2026-09-24T14:25:00+00:00: Claimed by ar1412_code_generation_luna56b.
+
+- 2026-09-24T14:27:00+00:00: Coordinator recovery: the prior worker completed without
+  binding branch/worktree metadata and its lease encoded local CEST as a +00:00 deadline.
+  No owner process or product worktree was present. Claim cleared without product mutation;
+  isolated branch codex/ar-1412-code-generation-controls and worktree
+  agent-systems-benchmark-ar-1412 are bound for the next claim.
