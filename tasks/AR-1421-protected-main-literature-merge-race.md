@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar-1421-protected-main-race",
   "checkpoint_commit": "10b16186c8424f53f6d6d8c2797d785dea10c53b",
-  "claim_expires": "2026-09-24T22:05:02+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1416",
     "AR-1398"
@@ -12,15 +12,15 @@
   "observed_branch": "codex/ar-1421-protected-main-race",
   "observed_dirty": 0,
   "observed_head": "28e35608a2a87f53afa70732ca1b51aa57aa360b",
-  "owner": "ar1421-protected-main-race-luna56",
+  "owner": "",
   "plan": "../plans/AR-1421.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Repair protected-main merge-tree requalification after a literature PR merges onto an advanced main.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Protected-main literature merge race repair",
-  "updated_at": "2026-09-24T20:20:04+00:00",
+  "updated_at": "2026-09-24T20:20:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1421"
 }
 ---
@@ -261,3 +261,11 @@ the merge released before fresh exact-main evidence succeeds.
   seven post-merge runs terminal SUCCESS: 36052764434, 36052764446, 36052764452, 36052764458,
   36052764507, 36052764675, 36052764433. Historical failures 36048870322 and 36048870234 remain
   preserved.
+
+- 2026-09-24T20:20:13+00:00: Released done after PR #308 merge 10b16186. Repair commit 28e35608 is
+  signed SSH+DCO and independently reviewed. It requalifies target/PR refs after fetch and
+  immediately before publication, fails closed on target advancement, and adds hostile fetch-race
+  coverage without weakening the reviewed-tree invariant. Exact merged tree e5d99b7 equals topic
+  tree; parents are exact base 5ddac12 and topic 28e3560. All seven exact-main post-merge workflows
+  succeeded: 36052764434, 36052764446, 36052764452, 36052764458, 36052764507, 36052764675,
+  36052764433. Incident failures 36048870322 and 36048870234 remain immutable evidence.
