@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated ControlBackend runtime receipt source for AR-1329 production dispatch.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Authenticated runtime receipt source",
-  "updated_at": "2026-09-24T02:04:36+00:00",
+  "updated_at": "2026-09-24T02:04:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1373-authenticated-receipt-source"
 }
 ---
@@ -122,3 +122,6 @@ provider support from setup metadata alone.
   -D warnings now pass. Earlier recorded exit-101 causes were missing protocol type imports/inferred
   byte type, stale generated schemas, and a moved test result borrow; each was repaired and rerun
   green.
+
+- 2026-09-24T02:04:52+00:00: Recorded command exit 0; command argv SHA-256
+  0a4b001327ff9d32921710b6234df9b716ffe2b70cc943d202f9ac606e2a6412.
