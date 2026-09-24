@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1388-runtime-authority-materializer",
-  "checkpoint_commit": "25548846966e37646dded8d67ed8ee5123b8bc32",
+  "checkpoint_commit": "581847921990c064b5185a9e66a788a474ffcc33",
   "claim_expires": "2026-09-24T07:41:06+00:00",
   "depends_on": [
     "AR-1385",
@@ -10,7 +10,7 @@
     "AR-1377"
   ],
   "id": "AR-1388",
-  "next_action": "Refresh the declared isolated worktree from protected main, implement the production runtime authority materializer from authenticated receipt/chain into private bootstrap inputs, and add fail-closed tests.",
+  "next_action": "Publish exact-head signed+DCO PR for 581847921990c064b5185a9e66a788a474ffcc33, monitor CI, and complete post-merge gates.",
   "observed_branch": "feature/ar-1388-runtime-authority-materializer",
   "observed_dirty": 0,
   "observed_head": "581847921990c064b5185a9e66a788a474ffcc33",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize runtime-owned provider authority from authenticated receipt and chain state.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Runtime authority receipt materializer",
-  "updated_at": "2026-09-24T06:47:58+00:00",
+  "updated_at": "2026-09-24T06:48:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1388-runtime-authority-materializer"
 }
 ---
@@ -63,3 +63,9 @@ namespace identity, or launch tokens.
 
 - 2026-09-24T06:47:47+00:00: Recorded command exit 0; command argv SHA-256
   951ff1fedeb660a7044895dea700f65b853127ba0560ab5d1b926787eac06433.
+
+- 2026-09-24T06:48:33+00:00: Implemented runtime-owned receipt-to-opaque-profile materializer with
+  one-shot replay/tamper tests. Tightened control/runtime receipt nonce binding to credential, tool,
+  lease, and relay digests. Focused runtime/control tests and repository policy pass; commit is
+  SSH-signed with matching DCO. External provider remains unnecessary; tests are local
+  deterministic.

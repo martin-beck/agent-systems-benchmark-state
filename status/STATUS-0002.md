@@ -32,7 +32,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1388](../tasks/AR-1388-runtime-authority-materializer.md): Runtime authority receipt materializer | codex-asb-ar1329-repair-luna56 | Materialize runtime-owned provider authority from authenticated receipt and chain state. | Refresh the declared isolated worktree from protected main, implement the production runtime authority materializer from authenticated receipt/chain into private bootstrap inputs, and add fail-closed tests. |
+| P0 | [AR-1388](../tasks/AR-1388-runtime-authority-materializer.md): Runtime authority receipt materializer | codex-asb-ar1329-repair-luna56 | Materialize runtime-owned provider authority from authenticated receipt and chain state. | Publish exact-head signed+DCO PR for 581847921990c064b5185a9e66a788a474ffcc33, monitor CI, and complete post-merge gates. |
 
 ### Open (3)
 
