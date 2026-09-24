@@ -25,7 +25,7 @@
   "summary": "Qualify credential-free OpenRouter user execution through a deterministic loopback mock without external-provider access.",
   "task_revision": 8,
   "title": "Local OpenRouter execution bridge",
-  "updated_at": "2026-09-24T23:02:28+00:00",
+  "updated_at": "2026-09-24T23:02:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1432-local-openrouter-execution-bridge"
 }
 ---
@@ -48,5 +48,5 @@ or claim that OpenRouter is reachable. Preserve all earlier blocker evidence.
 - 2026-09-24T23:02:08+00:00: Recorded command exit 0; command argv SHA-256
   d93f4aef517b387adfba03410ad48e0c8ba7910c8cf89654f5852dc8201c72cd.
 
-- 2026-09-24T23:02:28+00:00: Recorded command exit 0; command argv SHA-256
-  53ad728eed29838f69a866d7d02c5d3dc561ab0e53a9b95439bc26d08deeaa93.
+- 2026-09-24T23:02:34+00:00: Recorded command exit 101; command argv SHA-256
+  a1dbc95b9b2a5e782cd0984c3c4ee9eccf72d8d67460a5a54b181868dce90bdf.
