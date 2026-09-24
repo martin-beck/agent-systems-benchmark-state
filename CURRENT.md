@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1313](tasks/AR-1313-historical-dco-909078c-repair.md): Historical DCO merge-integrity recovery | Forward-only signed DCO recovery candidate published as PR #231. | All PR #290 exact-head checks are green; obtain independent review, then run signed merge_pr.py against exact base e41d4df/head 3420355/tree e1120e9 and verify seven post-merge workflows. | ar1313_recovery_luna56 |
-| P1 | [AR-1400](tasks/AR-1400-literature-catalog-activation.md): Literature workload catalog activation | Expose all documented literature workloads as truthful selectable candidates beside built-in fixtures. | Promote after AR-1396 and AR-1399 are verified done; implement the unified candidate catalog and fail-closed CLI selection contract. | ar1400_catalog_activation_luna56 |
+| P1 | [AR-1400](tasks/AR-1400-literature-catalog-activation.md): Literature workload catalog activation | Expose all documented literature workloads as truthful selectable candidates beside built-in fixtures. | Post-merge seven exact-main workflows for e0b15fc are running; release only after all terminal-success results and verify the merged catalog. | ar1400_catalog_activation_luna56 |
 | P1 | [AR-1405](tasks/AR-1405-open-dependency-pr-reconciliation.md): Open dependency PR reconciliation | Rebase, repair, verify, and truthfully resolve stale open dependency PRs. | Create one current-main replacement for safe dependency/action updates; independently assess sha2 separately; close stale PRs only after replacement evidence. | ar1405_dependency_pr_luna56b |
 
 ## Open

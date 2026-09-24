@@ -1,14 +1,14 @@
 ---
 {
   "branch": "codex/ar-1400-literature-catalog",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "e0b15fc23be83eeea3882dcee39f9cdd43b45254",
   "claim_expires": "2026-09-24T13:21:35+00:00",
   "depends_on": [
     "AR-1396",
     "AR-1399"
   ],
   "id": "AR-1400",
-  "next_action": "Promote after AR-1396 and AR-1399 are verified done; implement the unified candidate catalog and fail-closed CLI selection contract.",
+  "next_action": "Post-merge seven exact-main workflows for e0b15fc are running; release only after all terminal-success results and verify the merged catalog.",
   "observed_branch": "codex/ar-1400-literature-catalog",
   "observed_dirty": 0,
   "observed_head": "adea44324004c99416ad12f62762ff47b1665408",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Expose all documented literature workloads as truthful selectable candidates beside built-in fixtures.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Literature workload catalog activation",
-  "updated_at": "2026-09-24T11:31:57+00:00",
+  "updated_at": "2026-09-24T11:35:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1400"
 }
 ---
@@ -137,3 +137,6 @@ dataset, native-platform, or provider qualification that the registry lacks.
 
 - 2026-09-24T11:31:57+00:00: Recorded command exit 0; command argv SHA-256
   f59d6c223ddcbf9d40fa63dbfdd04f3baf1d7af9b3615d77b47d113dccde83ba.
+
+- 2026-09-24T11:35:04+00:00: PR #289 independently reviewed and merged with signed integration
+  commit e0b15fc; exact-head checks passed. Await seven post-merge workflows.
