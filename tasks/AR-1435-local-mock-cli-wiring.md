@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire deterministic local mock attempts into asb run and sweep configuration qualification.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Local mock CLI wiring",
-  "updated_at": "2026-09-24T23:58:34+00:00",
+  "updated_at": "2026-09-24T23:59:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1435-local-mock-cli-wiring"
 }
 ---
@@ -98,3 +98,6 @@ it must not contact OpenRouter or any external provider, mint
   0af35b743772a529dc0bfebd976cd4725683a63a038323e6aac7b32faaa316db. Refreshed the generated
   provenance digest in signed product commit 23a7bdbd9a8eb61db68c11360472603158d02be4. No runtime
   test failure reproduced; rerun required.
+
+- 2026-09-24T23:59:09+00:00: Recorded command exit 0; command argv SHA-256
+  f1950342c76efb0da9127a64b3579ab236c38301e66ee2fedd9ed325b49216ae.
