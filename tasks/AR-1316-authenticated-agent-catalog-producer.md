@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1316-authenticated-agent-catalog-producer",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "e0e447dcb5214222b1c47353dc048abbe2dbdd75",
   "claim_expires": "2026-09-24T20:51:27+00:00",
   "depends_on": [
     "AR-1190",
@@ -10,7 +10,7 @@
     "AR-1319"
   ],
   "id": "AR-1316",
-  "next_action": "Record successful full tests despite wrapper finalization lock timeout; inspect diff and commit signed+DCO.",
+  "next_action": "Verify signature/DCO, push signed head, open exact-base PR, and monitor required checks.",
   "observed_branch": "feature/ar-1316-authenticated-agent-catalog-producer",
   "observed_dirty": 0,
   "observed_head": "e0e447dcb5214222b1c47353dc048abbe2dbdd75",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish the verified ASB agent catalog required by the first-run setup wizard.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Authenticated agent catalog producer",
-  "updated_at": "2026-09-24T18:58:04+00:00",
+  "updated_at": "2026-09-24T18:58:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1316"
 }
 ---
@@ -89,3 +89,8 @@ Progress evidence: ASB PR #245 merged at `027af7ad27da13b359b3f099699c42b03c6f39
 
 - 2026-09-24T18:58:04+00:00: Recorded command exit 0; command argv SHA-256
   6840d2f0cea6f9cf6ffce81b9b1b74dcdddaff8701fc6cc1705c309033813254.
+
+- 2026-09-24T18:58:35+00:00: Signed implementation commit e0e447dcb5214222b1c47353dc048abbe2dbdd75
+  adds durable authenticated agent-catalog snapshot persistence, refresh generation fencing, stable
+  digest handling, runner identity validation, and restart/stale-generation tests. Focused producer
+  tests and full asb-cli/asb-control gates passed.
