@@ -59,12 +59,11 @@
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1313](../tasks/AR-1313-historical-dco-909078c-repair.md): Historical DCO merge-integrity recovery | ar1313_recovery_luna56 | Forward-only signed DCO recovery candidate published as PR #231. | All PR #290 exact-head checks are green; obtain independent review, then run signed merge_pr.py against exact base e41d4df/head 3420355/tree e1120e9 and verify seven post-merge workflows. |
-| P1 | [AR-1400](../tasks/AR-1400-literature-catalog-activation.md): Literature workload catalog activation | ar1400_catalog_activation_luna56 | Expose all documented literature workloads as truthful selectable candidates beside built-in fixtures. | Post-merge seven exact-main workflows for e0b15fc are running; release only after all terminal-success results and verify the merged catalog. |
 | P1 | [AR-1405](../tasks/AR-1405-open-dependency-pr-reconciliation.md): Open dependency PR reconciliation | ar1405_dependency_pr_luna56b | Rebase, repair, verify, and truthfully resolve stale open dependency PRs. | Create one current-main replacement for safe dependency/action updates; independently assess sha2 separately; close stale PRs only after replacement evidence. |
 
 ### Open (2)
@@ -226,7 +225,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (270)
+### Done (271)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -486,6 +485,7 @@
 | P1 | [AR-1395](../tasks/AR-1395-literature-workload-adapters.md): Literature workload adapter boundary | Unclaimed | Normalize approved literature tasks through bounded, non-vendored ASB workload adapters. | Exact merge post-merge Repository quality and Rust runs were cancelled by later main push c58b0b0a; after that main queue terminates, rerun both exact merge workflows and require success before release. |
 | P1 | [AR-1396](../tasks/AR-1396-literature-workload-selection.md): Literature workload selection | Unclaimed | Make qualified literature workload families selectable beside built-in ASB software-engineering fixtures. | PR #288 exact head 58bc56f0b793c4f42e83cbe27515d63d22cfda51; fresh checks pending after CLI fail-closed validation repair. Review remaining OriginalWorkloads seams before merge. |
 | P1 | [AR-1399](../tasks/AR-1399-literature-workload-registry-completeness.md): Literature workload registry completeness | Unclaimed | Represent every docs-listed literature workload family in the strict ASB registry. | Dependency branch e63a3c6 already contains complete six executable-candidate literature records and methodology-only AgentOps/HELM; focused validator/tests pass. Await parent integration decision; no duplicate product delta. |
+| P1 | [AR-1400](../tasks/AR-1400-literature-catalog-activation.md): Literature workload catalog activation | Unclaimed | Expose all documented literature workloads as truthful selectable candidates beside built-in fixtures. | Post-merge seven exact-main workflows for e0b15fc are running; release only after all terminal-success results and verify the merged catalog. |
 | P2 | [AR-0202](../tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Unclaimed | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Run final exact-main and local post-merge verification using required native x86_64 kernel evidence and applicable pinned QEMU AArch64 portability checks; record native ARM64 PMU/eBPF as optional future evidence, then release. |
 | P2 | [AR-0308](../tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | Unclaimed | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Run final state validation/live doctor and release done after confirming clean synchronized product/state refs at signed merge a0d80e4. |
 | P2 | [AR-0309](../tasks/AR-0309-agent-openhands.md): Implement maintained OpenHands SDK client adapter | Unclaimed | Run a maintained MIT OpenHands SDK or canonical headless client. | Monitor PR #65 exact-head CI for fec0487, investigate any failure, and await final review; do not merge. |

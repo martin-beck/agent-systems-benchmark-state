@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar-1400-literature-catalog",
   "checkpoint_commit": "e0b15fc23be83eeea3882dcee39f9cdd43b45254",
-  "claim_expires": "2026-09-24T13:21:35+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1396",
     "AR-1399"
@@ -12,15 +12,15 @@
   "observed_branch": "codex/ar-1400-literature-catalog",
   "observed_dirty": 0,
   "observed_head": "adea44324004c99416ad12f62762ff47b1665408",
-  "owner": "ar1400_catalog_activation_luna56",
+  "owner": "",
   "plan": "../plans/AR-1400-literature-catalog-activation.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Expose all documented literature workloads as truthful selectable candidates beside built-in fixtures.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Literature workload catalog activation",
-  "updated_at": "2026-09-24T11:35:04+00:00",
+  "updated_at": "2026-09-24T11:40:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1400"
 }
 ---
@@ -140,3 +140,8 @@ dataset, native-platform, or provider qualification that the registry lacks.
 
 - 2026-09-24T11:35:04+00:00: PR #289 independently reviewed and merged with signed integration
   commit e0b15fc; exact-head checks passed. Await seven post-merge workflows.
+
+- 2026-09-24T11:40:44+00:00: PR #289 merged as e0b15fc; seven exact-main post-merge workflows all
+  terminal-success (Rust 35993560063, aarch64 35993560100, fault 35993560120, repository quality
+  35993560137, hosted 35993560118, formal 35993560087, headers 35993560227). Merged-commit cargo
+  test -p asb-workloads --locked passed 24 tests plus public/validity/doc tests.
