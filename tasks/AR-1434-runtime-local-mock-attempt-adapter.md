@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add an approved runtime mock-attempt adapter for deterministic local run and sweep qualification.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Runtime local mock-attempt adapter",
-  "updated_at": "2026-09-24T23:19:51+00:00",
+  "updated_at": "2026-09-24T23:20:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1434-runtime-local-mock-attempt-adapter"
 }
 ---
@@ -83,3 +83,10 @@ external provider.
 
 - 2026-09-24T23:19:51+00:00: Recorded command exit 0; command argv SHA-256
   38fbcba856120e542c3933d78e468d72b7357af062921e5ccb170671a89f181e.
+
+- 2026-09-24T23:20:16+00:00: The first full workspace cargo test recorded exit 101; handoffctl
+  retained only the bounded argv digest, not failure output. It was a transient full-suite failure
+  on the existing workspace (the prior known timing-sensitive Gemini malformed-ready-marker test was
+  the only matching historical failure). A complete workspace rerun with pipefail completed exit 0,
+  and the exact Gemini test was rerun three times serially with all 3 passed. No AR-1434 source
+  failure reproduced.
