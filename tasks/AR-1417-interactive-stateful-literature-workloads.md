@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add selectable interactive and stateful literature workloads beside built-in software-engineering fixtures.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Interactive stateful literature workloads",
-  "updated_at": "2026-09-24T19:34:50+00:00",
+  "updated_at": "2026-09-24T19:35:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1417"
 }
 ---
@@ -94,3 +94,6 @@ identified.
   terminal/pending, but Repository quality run 36048870322 failed closed: protected-main merge tree
   differs from reviewed topic tree (base a2a641417547937ee695f4f6cac53194ba47121e vs reviewed topic
   base 0dcc71705eb610e4c3ab6a9f775a9d7b9b25218a). No gate was weakened; AR remains open.
+
+- 2026-09-24T19:35:33+00:00: Recorded command exit 0; command argv SHA-256
+  31c8a2e83c453009e27df37e34529a4fcb1da7b8e41ea5ffb67df575b9b7edea.
