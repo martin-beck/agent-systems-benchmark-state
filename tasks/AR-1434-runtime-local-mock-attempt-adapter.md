@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1434-runtime-local-mock-attempt-adapter",
-  "checkpoint_commit": "c1f0434877376915151a4b8946b61bf7246c6db3",
+  "checkpoint_commit": "4736db727b13140364b8acd32cf77b7b375eeb17",
   "claim_expires": "2026-09-25T01:33:27+00:00",
   "depends_on": [
     "AR-1341",
@@ -11,7 +11,7 @@
     "AR-1393"
   ],
   "id": "AR-1434",
-  "next_action": "Merge PR #315 through tools/integration/merge_pr.py at exact head c1f0434877376915151a4b8946b61bf7246c6db3; then verify seven exact post-merge workflows before release.",
+  "next_action": "Monitor exact merge 4736db727b13140364b8acd32cf77b7b375eeb17 until all seven post-merge workflows are terminal success: Fault assurance, Formal assurance, Repository quality, Emulated aarch64 portability, Rust verification, Hosted portability and native qualification, Huawei MIT source headers. Then run exact-main reconciliation and release only with durable evidence.",
   "observed_branch": "feature/ar-1434-runtime-local-mock-attempt-adapter",
   "observed_dirty": 0,
   "observed_head": "c1f0434877376915151a4b8946b61bf7246c6db3",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add an approved runtime mock-attempt adapter for deterministic local run and sweep qualification.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Runtime local mock-attempt adapter",
-  "updated_at": "2026-09-24T23:36:44+00:00",
+  "updated_at": "2026-09-24T23:37:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1434-runtime-local-mock-attempt-adapter"
 }
 ---
@@ -160,3 +160,12 @@ external provider.
 
 - 2026-09-24T23:36:44+00:00: Recorded command exit 0; command argv SHA-256
   ac568281e4cc717175a0d26bf17eb853b6653427960a2e83609b5807699f1234.
+
+- 2026-09-24T23:37:10+00:00: PR #315 merged through documented local signed integration path.
+  Published merge 4736db727b13140364b8acd32cf77b7b375eeb17 has parents
+  ed9076031b8278537dcd71e706464db59b8cba20 and c1f0434877376915151a4b8946b61bf7246c6db3, tree
+  907c176234a33ceafcc6769594110c60a0252eb3, valid SSH signature and matching DCO. Exact-main push
+  started seven workflows: Fault assurance run 36073539280; Formal assurance 36073539302; Repository
+  quality 36073539299; Emulated aarch64 portability 36073539373; Rust verification 36073539282;
+  Hosted portability and native qualification 36073539323; Huawei MIT source headers 36073539342
+  (already success). Do not release until all seven exact merge-SHA workflows pass.

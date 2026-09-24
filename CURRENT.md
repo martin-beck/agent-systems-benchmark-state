@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1434](tasks/AR-1434-runtime-local-mock-attempt-adapter.md): Runtime local mock-attempt adapter | Add an approved runtime mock-attempt adapter for deterministic local run and sweep qualification. | Merge PR #315 through tools/integration/merge_pr.py at exact head c1f0434877376915151a4b8946b61bf7246c6db3; then verify seven exact post-merge workflows before release. | codex-asb-ar1434-mock-adapter-luna56 |
+| P0 | [AR-1434](tasks/AR-1434-runtime-local-mock-attempt-adapter.md): Runtime local mock-attempt adapter | Add an approved runtime mock-attempt adapter for deterministic local run and sweep qualification. | Monitor exact merge 4736db727b13140364b8acd32cf77b7b375eeb17 until all seven post-merge workflows are terminal success: Fault assurance, Formal assurance, Repository quality, Emulated aarch64 portability, Rust verification, Hosted portability and native qualification, Huawei MIT source headers. Then run exact-main reconciliation and release only with durable evidence. | codex-asb-ar1434-mock-adapter-luna56 |
 
 ## Blocked
 
