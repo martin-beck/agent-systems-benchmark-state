@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize runtime-owned provider authority from authenticated receipt and chain state.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Runtime authority receipt materializer",
-  "updated_at": "2026-09-24T06:45:54+00:00",
+  "updated_at": "2026-09-24T06:47:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1388-runtime-authority-materializer"
 }
 ---
@@ -54,3 +54,6 @@ namespace identity, or launch tokens.
 
 - 2026-09-24T06:45:54+00:00: Recorded command exit 0; command argv SHA-256
   f02c88e5bb416ce21eb0daa1fccdd1b97d4e98bb871cd94c90ae89cf45f701db.
+
+- 2026-09-24T06:47:11+00:00: Recorded command exit 0; command argv SHA-256
+  af984e70f12afab3393413bd30419e79ffad9c88b69d3c5c0407ee30a211c494.
