@@ -1,14 +1,14 @@
 ---
 {
   "branch": "codex/ar-1409-interactive-literature",
-  "checkpoint_commit": "6f93076afa1af5eca0d33a693106e60f70e4ea5b",
+  "checkpoint_commit": "c2fe732b3b50ef38893c2e3513770939de04637f",
   "claim_expires": "2026-09-24T18:33:04+00:00",
   "depends_on": [
     "AR-1408",
     "AR-1401"
   ],
   "id": "AR-1409",
-  "next_action": "PR #300 exact base e4d8e7a70b2cce6f740bb8ababd145295ecc2665/head 6f93076afa1af5eca0d33a693106e60f70e4ea5b published; monitor all required checks, obtain independent review, then merge only through handoffctl.",
+  "next_action": "Monitor seven post-merge workflows for merge c2fe732b3b50ef38893c2e3513770939de04637f: 36021529638,36021529745,36021529796,36021529687,36021529643,36021529787,36021529768; release only after all terminal success.",
   "observed_branch": "codex/ar-1409-interactive-literature",
   "observed_dirty": 0,
   "observed_head": "6f93076afa1af5eca0d33a693106e60f70e4ea5b",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add offline-selectable interactive and tool-use literature workload adapters.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Interactive literature workload adapters",
-  "updated_at": "2026-09-24T15:37:27+00:00",
+  "updated_at": "2026-09-24T15:38:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1409"
 }
 ---
@@ -83,3 +83,6 @@ LiteLLM-compatible mocks are the only development and CI execution path.
 
 - 2026-09-24T15:37:27+00:00: Recorded command exit 0; command argv SHA-256
   fa71ead2cee841577d3fd852a5d177e6e7b5d7e18756b15bd4a5b075c7c024cb.
+
+- 2026-09-24T15:38:39+00:00: PR #300 merged via handoffctl after exact-head checks and independent
+  review; seven post-merge workflows started.

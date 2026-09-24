@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1409](tasks/AR-1409-interactive-literature-adapters.md): Interactive literature workload adapters | Add offline-selectable interactive and tool-use literature workload adapters. | PR #300 exact base e4d8e7a70b2cce6f740bb8ababd145295ecc2665/head 6f93076afa1af5eca0d33a693106e60f70e4ea5b published; monitor all required checks, obtain independent review, then merge only through handoffctl. | ar1409_interactive_literature_luna56 |
+| P1 | [AR-1409](tasks/AR-1409-interactive-literature-adapters.md): Interactive literature workload adapters | Add offline-selectable interactive and tool-use literature workload adapters. | Monitor seven post-merge workflows for merge c2fe732b3b50ef38893c2e3513770939de04637f: 36021529638,36021529745,36021529796,36021529687,36021529643,36021529787,36021529768; release only after all terminal success. | ar1409_interactive_literature_luna56 |
 | P2 | [AR-1406](tasks/AR-1406-action-pin-policy-migration.md): Action pin policy migration | Qualify and merge remaining immutable GitHub action pin updates without weakening policy. | Bind isolated worktree before product inspection; qualify immutable action commits for PRs #235/#234/#148 and merge only after policy and exact-head gates pass. | ar1406-action-pin-recovery-luna56 |
 
 ## Open
