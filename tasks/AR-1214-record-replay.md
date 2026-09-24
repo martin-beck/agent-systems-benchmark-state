@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach privacy-safe LLM response recording and strict offline replay.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "LLM response record/replay tutorial",
-  "updated_at": "2026-09-24T20:53:54+00:00",
+  "updated_at": "2026-09-24T20:54:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1214"
 }
 ---
@@ -72,3 +72,6 @@ permitted in its CI job.
 
 - 2026-09-24T20:53:54+00:00: Implemented offline record/replay tutorial and synthetic-only
   fail-closed guide test. Focused and full guide_examples tests pass; signed DCO commit 699ddd6.
+
+- 2026-09-24T20:54:55+00:00: Recorded command exit 0; command argv SHA-256
+  0ac2acfea77fa339558b717777315884e950d9fcc8cea35128d23ffd59621f2d.
