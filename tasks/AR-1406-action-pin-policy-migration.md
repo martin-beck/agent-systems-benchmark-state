@@ -1,13 +1,13 @@
 ---
 {
-  "branch": "",
+  "branch": "codex/ar-1406-action-pin-policy",
   "checkpoint_commit": "0000000000000000000000000000000000000000",
   "claim_expires": "2026-09-24T17:28:54+00:00",
   "depends_on": [
     "AR-1405"
   ],
   "id": "AR-1406",
-  "next_action": "Promote after AR-1405; qualify immutable action commits for PRs #235/#234/#148 and merge only after policy and exact-head gates pass.",
+  "next_action": "Bind isolated worktree before product inspection; qualify immutable action commits for PRs #235/#234/#148 and merge only after policy and exact-head gates pass.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
@@ -20,7 +20,7 @@
   "task_revision": 5,
   "title": "Action pin policy migration",
   "updated_at": "2026-09-24T15:29:19+00:00",
-  "worktree_key": ""
+  "worktree_key": "agent-systems-benchmark-ar-1406"
 }
 ---
 
