@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar-1406-action-pin-policy",
   "checkpoint_commit": "0000000000000000000000000000000000000000",
-  "claim_expires": "2026-09-24T17:28:54+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1405"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "ar1406-action-pin-luna56",
+  "owner": "",
   "plan": "../plans/AR-1406-action-pin-policy-migration.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Qualify and merge remaining immutable GitHub action pin updates without weakening policy.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Action pin policy migration",
-  "updated_at": "2026-09-24T15:29:19+00:00",
+  "updated_at": "2026-09-24T15:35:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1406"
 }
 ---
@@ -36,3 +36,6 @@ No floating action reference or unverifiable release identity is acceptable.
 
 - 2026-09-24T15:29:19+00:00: Claim durable; blocked before product work because task declares no
   branch/worktree binding.
+
+- 2026-09-24T15:35:39+00:00: Previous worker stopped after safely identifying the missing binding;
+  coordinator repaired binding in 2cddc92d0/ec4e44d0b. Release stale owner for recovery worker.

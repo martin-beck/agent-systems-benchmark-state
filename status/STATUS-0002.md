@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| [AR-1348](../tasks/AR-1348-runtime-owned-live-acquisition.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) | None |
 | [AR-1349](../tasks/AR-1349-live-provider-runtime-service.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1347](../tasks/AR-1347-neutral-live-supervisor-composition.md), [AR-1350](../tasks/AR-1350-sandbox-credential-channel.md) | None |
 | [AR-1350](../tasks/AR-1350-sandbox-credential-channel.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1347](../tasks/AR-1347-neutral-live-supervisor-composition.md) | [AR-1349](../tasks/AR-1349-live-provider-runtime-service.md), [AR-1351](../tasks/AR-1351-live-runtime-provisioning.md) |
 | [AR-1351](../tasks/AR-1351-live-runtime-provisioning.md) | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1347](../tasks/AR-1347-neutral-live-supervisor-composition.md), [AR-1350](../tasks/AR-1350-sandbox-credential-channel.md) | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) |
@@ -69,19 +68,19 @@
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1409](../tasks/AR-1409-interactive-literature-adapters.md): Interactive literature workload adapters | ar1409_interactive_literature_luna56 | Add offline-selectable interactive and tool-use literature workload adapters. | PR #300 exact base e4d8e7a70b2cce6f740bb8ababd145295ecc2665/head 6f93076afa1af5eca0d33a693106e60f70e4ea5b published; monitor all required checks, obtain independent review, then merge only through handoffctl. |
-| P2 | [AR-1406](../tasks/AR-1406-action-pin-policy-migration.md): Action pin policy migration | ar1406-action-pin-luna56 | Qualify and merge remaining immutable GitHub action pin updates without weakening policy. | Bind isolated worktree before product inspection; qualify immutable action commits for PRs #235/#234/#148 and merge only after policy and exact-head gates pass. |
 
-### Open (2)
+### Open (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1212](../tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Unclaimed | Teach users to test configured-agent benchmark eligibility without running an agent. | Implement the offline tutorial for checking agent benchmark readiness under the current configuration. |
 | P0 | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | Unclaimed | Publish the verified ASB agent catalog required by the first-run setup wizard. | Persist the authenticated catalog snapshot/generation and complete live ASB-to-asb-tui wizard evidence; keep all entries unavailable until a verified release closure exists. |
+| P2 | [AR-1406](../tasks/AR-1406-action-pin-policy-migration.md): Action pin policy migration | Unclaimed | Qualify and merge remaining immutable GitHub action pin updates without weakening policy. | Bind isolated worktree before product inspection; qualify immutable action commits for PRs #235/#234/#148 and merge only after policy and exact-head gates pass. |
 
 ### Blocked (66)
 
@@ -525,3 +524,4 @@
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1046](../tasks/AR-1046-serialize-emulated-aarch64-agent-tests.md): Serialize emulated AArch64 agent tests | Unclaimed | Make the emulated AArch64 asb-agents fake-node readiness fixtures deterministic without changing production semantics. | No further action: AR-1047 superseded the disproven serialization hypothesis. |
 | P0 | [AR-1048](../tasks/AR-1048-tmux-window-option-portability.md): Make tmux window-option setup portable | Unclaimed | Use an explicit tmux window-option command so trusted-main terminal qualification is portable. | No further action: AR-1049 superseded this recovery after PR #15 merged and Trusted main falsified fixed session:0 targeting. |
+| P0 | [AR-1049](../tasks/AR-1049-tmux-created-window-identity.md): Bind tmux setup to its created window | Unclaimed | Bind tmux remain-on-exit setup to the exact created window identity instead of a fixed index. | No further action: AR-1050 superseded this recovery after PR #16 merged and Trusted main exposed downstream startup readiness. |
