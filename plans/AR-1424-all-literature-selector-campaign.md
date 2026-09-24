@@ -18,6 +18,7 @@ scores must never be collapsed into one ranking.
 ## Dependencies
 
 - AR-1423 (exhaustive docs-to-registry reconciliation)
+- AR-1430 (complete stable literature identity/catalog and selector boundary)
 - AR-1420 (literature campaign integration)
 - AR-1416 (local-mock cross-product)
 
