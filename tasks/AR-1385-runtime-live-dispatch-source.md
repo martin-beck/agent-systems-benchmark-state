@@ -11,7 +11,7 @@
     "AR-1381"
   ],
   "id": "AR-1385",
-  "next_action": "PR #280 is published at exact head fd9517ed; monitor all required exact-head checks, repair failures through handoffctl, merge only after independent review and all checks green, then verify seven post-merge workflows.",
+  "next_action": "Repair PR #280 DCO trailer mismatch, force-push a new signed exact head, rerun required checks, then monitor all post-merge gates.",
   "observed_branch": "feature/ar-1385-runtime-live-dispatch-source",
   "observed_dirty": 0,
   "observed_head": "fd9517edb811fc119bc252ef4edd15e350845042",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize the authenticated runtime-owned live dispatch source for production asb run and sweep.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Authenticated runtime live dispatch source",
-  "updated_at": "2026-09-24T05:58:42+00:00",
+  "updated_at": "2026-09-24T05:59:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1385-runtime-live-dispatch-source"
 }
 ---
@@ -87,3 +87,8 @@ namespace identity, or launch authority.
   Huawei headers and AWQ shadow pass; remaining required Rust, quality, portability, formal, and
   fault checks are pending. No external provider connection used or required; local deterministic
   mock boundary remains the acceptance path.
+
+- 2026-09-24T05:59:19+00:00: PR #280 policy/coverage/supply-chain failed because fd9517ed trailer
+  Martin Beck <martin-beck@users.noreply.github.com> did not match the signing identity accepted by
+  repository policy (Martin Beck <martin.beck2@gmx.de>). No gate weakening; repair by amending the
+  signed commit with the matching DCO trailer.

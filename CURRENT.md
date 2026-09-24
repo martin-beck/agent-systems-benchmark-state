@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1385](tasks/AR-1385-runtime-live-dispatch-source.md): Authenticated runtime live dispatch source | Materialize the authenticated runtime-owned live dispatch source for production asb run and sweep. | PR #280 is published at exact head fd9517ed; monitor all required exact-head checks, repair failures through handoffctl, merge only after independent review and all checks green, then verify seven post-merge workflows. | codex-asb-ar1329-repair-luna56 |
+| P0 | [AR-1385](tasks/AR-1385-runtime-live-dispatch-source.md): Authenticated runtime live dispatch source | Materialize the authenticated runtime-owned live dispatch source for production asb run and sweep. | Repair PR #280 DCO trailer mismatch, force-push a new signed exact head, rerun required checks, then monitor all post-merge gates. | codex-asb-ar1329-repair-luna56 |
 
 ## Open
 
