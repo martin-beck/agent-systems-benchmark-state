@@ -7,7 +7,7 @@
     "AR-1427"
   ],
   "id": "AR-1431",
-  "next_action": "Open repair PR from bd69423; obtain independent review and exact-head CI, then verify all seven post-merge workflows before AR-1216 release.",
+  "next_action": "PR #314 is open at exact head bd69423; obtain independent review and exact-head CI, then merge and verify all seven post-merge workflows before AR-1216 release.",
   "observed_branch": "codex/ar-1431-stale-base",
   "observed_dirty": 0,
   "observed_head": "bd694233fd95941bfc02cdd4e7f0fd3b124d0f4e",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prevent stale-base sequential merges from passing review but failing protected-main merge-tree policy.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Protected-main stale-base merge requalification repair",
-  "updated_at": "2026-09-24T22:26:02+00:00",
+  "updated_at": "2026-09-24T22:26:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1431"
 }
 ---
@@ -73,3 +73,8 @@ that incident and must not waive the policy.
 
 - 2026-09-24T22:26:02+00:00: Recorded command exit 0; command argv SHA-256
   ee7a0989fe741f5677bed1282d188c55e6c40942411c8fadd71a12d454cb7d7c.
+
+- 2026-09-24T22:26:16+00:00: Published PR #314 from clean exact head
+  bd694233fd95941bfc02cdd4e7f0fd3b124d0f4e. No merge or release authority exercised; preserve
+  incident failure until independent review, exact-head CI, merge, and seven post-merge workflows
+  pass.
