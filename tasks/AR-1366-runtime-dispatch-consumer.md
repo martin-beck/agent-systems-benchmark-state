@@ -17,14 +17,17 @@
   "plan": "../plans/AR-1366-runtime-dispatch-consumer.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Connect runtime-owned authenticated receipt consumption to the benchmark dispatch path without exposing authority to CLI callers.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Runtime-owned dispatch consumer",
-  "updated_at": "2026-09-24T00:10:00+00:00",
+  "updated_at": "2026-09-24T00:17:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1366-runtime-dispatch-consumer"
 }
 ---
 
 Successor for the runtime dispatch consumer chain. Do not touch asb-tui or
 synthesize authority from CLI/config input.
+
+- 2026-09-24T00:17:57+00:00: AR-1362, AR-1364, and AR-1365 are complete with merged post-merge
+  evidence; promote runtime-owned dispatch consumer.
