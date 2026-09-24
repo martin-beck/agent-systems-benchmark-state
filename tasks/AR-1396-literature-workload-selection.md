@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1396-literature-workload-selection.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Make qualified literature workload families selectable beside built-in ASB software-engineering fixtures.",
+  "task_revision": 2,
   "title": "Literature workload selection",
-  "task_revision": 1,
-  "updated_at": "2026-09-24T07:58:00+00:00",
+  "updated_at": "2026-09-24T10:04:59+00:00",
   "worktree_key": ""
 }
 ---
@@ -28,3 +28,6 @@
 This AR owns user-facing selection and evidence labeling after the registry and
 adapters exist; it does not bypass licensing, acquisition, evaluator, or
 platform gates.
+
+- 2026-09-24T10:04:59+00:00: AR-1395 and AR-1399 are done; the registry has 22 validated records.
+  Begin explicit catalog/plan/CLI/replay/report selection with fail-closed evidence labels.
