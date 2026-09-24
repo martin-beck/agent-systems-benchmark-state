@@ -17,11 +17,11 @@
   "plan": "../plans/AR-1373-authenticated-receipt-source.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Provide the authenticated ControlBackend runtime receipt source for AR-1329 production dispatch.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Authenticated runtime receipt source",
-  "updated_at": "2026-09-24T02:00:00+00:00",
+  "updated_at": "2026-09-24T01:50:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1373-authenticated-receipt-source"
 }
 ---
@@ -31,3 +31,6 @@ AR-1371 persistence boundary is now merged; this task supplies the missing
 authenticated operation without synthesizing authority or claiming live
 provider support from setup metadata alone.
 
+
+- 2026-09-24T01:50:02+00:00: Dependencies AR-1365, AR-1366 and AR-1371 are done; promote
+  authenticated ControlBackend receipt source successor.
