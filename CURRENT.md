@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1389](tasks/AR-1389-formal-fixture-exec-race.md): Formal fixture executable race repair | Repair the formal online-build fixture race that caused ETXTBSY after AR-1388 merge. | Claim the pre-bound isolated worktree, repair the evidenced formal fixture ETXTBSY race without weakening gates, and publish a signed PR. | codex-asb-ar1329-repair-luna56 |
+| P0 | [AR-1389](tasks/AR-1389-formal-fixture-exec-race.md): Formal fixture executable race repair | Repair the formal online-build fixture race that caused ETXTBSY after AR-1388 merge. | Monitor PR #282 exact-head checks; repair only evidenced failures, then merge and rerun all seven post-merge workflows for AR-1388 replacement evidence. | codex-asb-ar1329-repair-luna56 |
 
 ## Open
 

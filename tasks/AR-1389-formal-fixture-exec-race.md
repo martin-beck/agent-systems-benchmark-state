@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1389-formal-fixture-exec-race",
-  "checkpoint_commit": "8c88b9ec9b4f529ebe30cb230029b2575ad4e6e5",
+  "checkpoint_commit": "444a61d603f124d12cdd6505d4ff1fab1d6d2104",
   "claim_expires": "2026-09-24T07:53:52+00:00",
   "depends_on": [
     "AR-1384"
   ],
   "id": "AR-1389",
-  "next_action": "Claim the pre-bound isolated worktree, repair the evidenced formal fixture ETXTBSY race without weakening gates, and publish a signed PR.",
+  "next_action": "Monitor PR #282 exact-head checks; repair only evidenced failures, then merge and rerun all seven post-merge workflows for AR-1388 replacement evidence.",
   "observed_branch": "feature/ar-1389-formal-fixture-exec-race",
   "observed_dirty": 0,
   "observed_head": "444a61d603f124d12cdd6505d4ff1fab1d6d2104",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the formal online-build fixture race that caused ETXTBSY after AR-1388 merge.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Formal fixture executable race repair",
-  "updated_at": "2026-09-24T07:13:56+00:00",
+  "updated_at": "2026-09-24T07:14:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1389-formal-fixture-exec-race"
 }
 ---
@@ -59,3 +59,9 @@ privacy, offline, boundedness, and local-mock boundaries.
 
 - 2026-09-24T07:13:56+00:00: Recorded command exit 0; command argv SHA-256
   acbfb475129b944e37d165ced2a21147ce9b81007df77590e0b28eb07f88dd83.
+
+- 2026-09-24T07:14:30+00:00: Implemented atomic executable fixture publication (stage, fsync, chmod,
+  rename) and pinned /bin/bash interpreter execution; removed retry masking and added 32-iteration
+  stress coverage. Focused formal suite 9/9, SSH-signed+DCO commit 444a61d, repository policy
+  passed. Published PR #282. AR-1388 remains open/unreleased pending replacement post-merge formal
+  evidence.
