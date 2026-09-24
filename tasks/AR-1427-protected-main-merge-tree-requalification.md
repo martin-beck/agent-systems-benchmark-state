@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair exact protected-main merge-tree requalification after sequential tutorial merges.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Protected-main merge-tree requalification repair",
-  "updated_at": "2026-09-24T21:42:03+00:00",
+  "updated_at": "2026-09-24T21:42:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1427-merge-requal"
 }
 ---
@@ -119,3 +119,6 @@ incident evidence; no gate is waived.
 
 - 2026-09-24T21:42:03+00:00: Recorded command exit 0; command argv SHA-256
   765c39026547401912d817152eeeb9ee57ef3aadbb88aae2e5aa267022bfef5b.
+
+- 2026-09-24T21:42:18+00:00: Recorded command exit 0; command argv SHA-256
+  7e8254165b378afb5fd0c6618ea9cb8f955ef7007e5e305b80882360f77ee2a5.
