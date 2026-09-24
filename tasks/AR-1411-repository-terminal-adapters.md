@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar-1411-repository-terminal",
   "checkpoint_commit": "67129e7504dc28d8f8e02a6bbb955f6683917208",
-  "claim_expires": "2026-09-24T15:17:05+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1408",
     "AR-1401"
@@ -12,15 +12,15 @@
   "observed_branch": "codex/ar-1411-repository-terminal",
   "observed_dirty": 0,
   "observed_head": "67129e7504dc28d8f8e02a6bbb955f6683917208",
-  "owner": "ar1411_repository_terminal_luna56",
+  "owner": "",
   "plan": "../plans/AR-1411-repository-terminal-adapters.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Add selectable, provenance-preserving repository-repair and terminal benchmark adapters.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Repository and terminal literature workload adapters",
-  "updated_at": "2026-09-24T14:48:18+00:00",
+  "updated_at": "2026-09-24T14:48:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1411"
 }
 ---
@@ -177,3 +177,16 @@ bounded local fixtures or LiteLLM-compatible mocks only.
 
 - 2026-09-24T14:48:18+00:00: Recorded command exit 0; command argv SHA-256
   3829c27a679925a1a4c2e5fdb7dc55683a9b7aedcdfd868d4ad93a732c210e94.
+
+- 2026-09-24T14:48:33+00:00: AR-1411 complete. Added stable dataset/task revision, capability tags,
+  and attempt budget to literature catalog entries for repository-repair and terminal-system
+  adapters, preserving methodology zero-budget semantics; documented offline fixture/evidence
+  boundary. Signed+DCO commit 67129e7504dc28d8f8e02a6bbb955f6683917208, PR #297 exact base
+  fc74825cb86991bb3afac6854d8cb5048118ff8f/head 67129e7504dc28d8f8e02a6bbb955f6683917208/tree
+  1cb781cdfbcd0f2138ec24dc21e24959b6b2af15, signed integration merge
+  ea27dfb4e3a569fd429f99307e91c7629f15f65f verified SSH signature
+  SHA256:a36V6yPvRZyxnQ2113tiA/MlHt7mPfJEXAGByBXVkuE and DCO. Local focused tests, full cargo test
+  --locked --workspace, clippy --workspace --all-targets -D warnings, fmt and diff checks passed.
+  Seven exact post-merge workflows all terminal success on ea27dfb4: Rust 36014461982, quality
+  36014461657, fault 36014461646, AArch64 36014461667, formal 36014461859, headers 36014461769,
+  hosted 36014461647. No provider/network access required.
