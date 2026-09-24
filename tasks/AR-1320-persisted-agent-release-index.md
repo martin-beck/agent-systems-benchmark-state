@@ -7,16 +7,16 @@
     "AR-1316"
   ],
   "id": "AR-1320",
-  "next_action": "Run full applicable product gates in the isolated worktree, independently review the complete diff, then publish only if clean signed+DCO PR evidence exists.",
+  "next_action": "Complete independent review and repository hygiene checks; do not publish until branch diff is clean, signed, DCO-compliant, and PR/CI evidence is available.",
   "owner": "codex-ar1320-luna56",
   "plan": "../plans/AR-1320.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist and verify the ASB agent release index used by the setup wizard.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Persisted authenticated agent release index",
-  "updated_at": "2026-09-24T20:12:15+00:00",
+  "updated_at": "2026-09-24T20:12:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1320-persisted-agent-release-index"
 }
 ---
@@ -100,3 +100,10 @@ before any agent can become selectable.
 
 - 2026-09-24T20:12:15+00:00: Recorded command exit 0; command argv SHA-256
   a81cf8a43079c59c32cb5d8ee4c8e4b598b2c2e72587ffd3a6a5a932f92ebd85.
+
+- 2026-09-24T20:12:38+00:00: Full asb-cli gate initially failed one pre-existing
+  concurrency-sensitive test:
+  restart_reconciles_in_progress_capture_without_retrying_provider_effect exited 101 with control
+  state root is already owned; corrective action: reran that exact test in isolation with
+  TMPDIR=/srv/data/projects/asb-test-tmp and it passed (1 passed). The agent-catalog focused test
+  also passes. No product files changed.
