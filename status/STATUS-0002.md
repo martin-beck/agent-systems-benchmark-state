@@ -78,11 +78,12 @@
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | ar1316-authenticated-agent-catalog-producer-luna56 | Publish the verified ASB agent catalog required by the first-run setup wizard. | Coordinator must bind branch feature/ar-1316-authenticated-agent-catalog-producer to isolated worktree /srv/data/projects/agent-systems-benchmark-ar-1316 (metadata key agent-systems-benchmark-ar-1316) before product inspection. |
 
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1212](../tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Unclaimed | Teach users to test configured-agent benchmark eligibility without running an agent. | Implement the offline tutorial for checking agent benchmark readiness under the current configuration. |
+| P1 | [AR-1415](../tasks/AR-1415-literature-selector-total-coverage.md): Total literature workload selector coverage | Unclaimed | Make the complete literature workload inventory selectable beside built-in software-engineering fixtures with truthful evidence gates. | Promote after AR-1414 is done; audit every docs-listed workload against the registry, generated catalog, selector filters, and plan validation. |
 
 ### Blocked (66)
 
@@ -155,7 +156,7 @@
 | P1 | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md): Live-provider run execution for real agents | Unclaimed | Execute real agents against the selected provider through asb run and sweep with credential-free resolution. | BLOCKED pending coordinator-created repair AR: implement runtime-owned LiveProviderRuntimeService acquisition for production asb run/sweep. Service must resolve pinned provider policy to concrete public target(s), obtain credential through enrolled environment channel without evidence disclosure, construct attested child namespace handoff and relay listener, reserve ResourceLease, create SandboxBackend with pinned live gate, attest and issue one LiveProviderAttempt per scheduler attempt, and teardown on cancellation. Then AR-1329 can wire dispatch --provider-selection/--live-provider while preserving NetworkPolicy::Deny and direct/alternate egress denial. |
 | P1 | [AR-1354](../tasks/AR-1354-runtime-enrollment-implementation.md): Runtime enrollment implementation | Unclaimed | Implement config-backed runtime-owned enrollment for live CLI dispatch. | BLOCKED on an attested runtime enrollment source: asb-runtime must receive an authority-free enrollment request and obtain concrete public target(s), pinned tool attestations, lease root, and relay root from a runtime/control-owned record; do not expose these asb-cli inputs. Add a signed/attested record transport or coordinator-owned runtime enrollment AR, then implement acquire_from_enrollment and CLI dispatch with positive/negative tests. |
 
-### Planned (69)
+### Planned (68)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -220,7 +221,6 @@
 | P1 | [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md): Credential-free CI stage for the benchmark path | Unclaimed | Add the required credential-free CI stage for the complete benchmark path. | Add the required credential-free CI stage that exercises the complete benchmark path with loopback and synthetic doubles, no secrets, no egress and no network, keeping the 90&#37; coverage floor. |
 | P1 | [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md): Live benchmark workflow documentation and support matrix | Unclaimed | Document the live benchmark workflow and publish the supported agent and provider matrix. | Document the end-to-end live benchmark workflow and publish the supported agent by provider by model support matrix, with exact digests and evidence limits. |
 | P1 | [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md): Guided ASB command wrapper | Unclaimed | Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows. | Promote after AR-1328, AR-1329, AR-1332 and AR-1333 are done; implement the catalog-driven asb easy wrapper, generated private files, documentation and offline hostile tests. |
-| P1 | [AR-1415](../tasks/AR-1415-literature-selector-total-coverage.md): Total literature workload selector coverage | Unclaimed | Make the complete literature workload inventory selectable beside built-in software-engineering fixtures with truthful evidence gates. | Promote after AR-1414 is done; audit every docs-listed workload against the registry, generated catalog, selector filters, and plan validation. |
 | P1 | [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md): Literature workload local-mock cross-product | Unclaimed | Prove end-to-end selectable literature workloads with deterministic local or LiteLLM-compatible mocks and no live provider dependency. | Promote after AR-1415 is done; exercise every locally executable literature selector through plan, mock run, replay, and report paths. |
 | P2 | [AR-0602](../tasks/AR-0602-csb-monitoring-contention.md): Validate CSB monitoring and contention diagnostics | Unclaimed | Validate and integrate optional CSB resource monitoring and kernel-contention evidence without double counting or overstating support. | Audit CSB monitoring using native x86_64 oracles and required pinned QEMU AArch64 portable mapping/lifecycle checks; keep native ARM64 counters and performance as optional future evidence. |
 | P2 | [AR-0705](../tasks/AR-0705-native-debian-capacity.md): Provide native Debian capacity | Unclaimed | Qualify booted Debian on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 Debian and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
