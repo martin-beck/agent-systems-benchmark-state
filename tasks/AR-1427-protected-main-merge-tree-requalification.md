@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T23:25:50+00:00",
   "depends_on": [
     "AR-1421"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "",
+  "owner": "ar1427-merge-requal-luna56",
   "plan": "../plans/AR-1427-protected-main-merge-tree-requalification.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair exact protected-main merge-tree requalification after sequential tutorial merges.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Protected-main merge-tree requalification repair",
-  "updated_at": "2026-09-24T21:23:49+00:00",
+  "updated_at": "2026-09-24T21:25:50+00:00",
   "worktree_key": ""
 }
 ---
@@ -33,3 +33,5 @@ incident evidence; no gate is waived.
 
 - 2026-09-24T21:23:49+00:00: Promote protected-main merge-tree requalification repair after AR-1215
   post-merge policy failure 36060277237.
+
+- 2026-09-24T21:25:50+00:00: Claimed by ar1427-merge-requal-luna56.
