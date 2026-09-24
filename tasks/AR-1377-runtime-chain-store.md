@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist authenticated runtime certificate-chain material for live dispatch.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Runtime-owned certificate-chain store",
-  "updated_at": "2026-09-24T02:40:23+00:00",
+  "updated_at": "2026-09-24T02:40:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1377-runtime-chain-store"
 }
 ---
@@ -35,3 +35,6 @@ authority boundary and must not accept caller-built chains or synthesize trust.
 - 2026-09-24T02:39:49+00:00: Claimed by codex-asb-runtime-receipt-source-luna56.
 
 - 2026-09-24T02:40:23+00:00: Heartbeat by codex-asb-runtime-receipt-source-luna56.
+
+- 2026-09-24T02:40:42+00:00: Recorded command exit 0; command argv SHA-256
+  494cea0bab388bbcbe872effd620df7bea9083da0ffc4a544a356e6f615689c4.
