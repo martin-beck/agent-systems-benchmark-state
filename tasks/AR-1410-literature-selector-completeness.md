@@ -14,17 +14,17 @@
   "id": "AR-1410",
   "next_action": "Repair provenance fixture hash, rerun exact provenance and applicable focused gates, then signed commit/push and await fresh PR checks.",
   "observed_branch": "codex/ar-1410-literature-selector-parity",
-  "observed_dirty": 1,
-  "observed_head": "477eeb9fb6c21d0a4a2c51ed11116f19c6b4e7e4",
+  "observed_dirty": 0,
+  "observed_head": "8a1e031b1060ed684f499dc035bdefa179c4488b",
   "owner": "ar1410-literature-selector-parity-luna56",
   "plan": "../plans/AR-1410-literature-selector-completeness.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Literature selector completeness and parity",
-  "updated_at": "2026-09-24T17:01:46+00:00",
+  "updated_at": "2026-09-24T17:01:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1410"
 }
 ---
