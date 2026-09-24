@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1399-literature-workload-registry-completeness",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T12:00:41+00:00",
   "depends_on": [
     "AR-1394"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "",
+  "owner": "ar1399_literature_registry_luna56",
   "plan": "../plans/AR-1399-literature-workload-registry-completeness.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Represent every docs-listed literature workload family in the strict ASB registry.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Literature workload registry completeness",
-  "updated_at": "2026-09-24T09:58:10+00:00",
+  "updated_at": "2026-09-24T10:00:41+00:00",
   "worktree_key": ""
 }
 ---
@@ -33,3 +33,5 @@ native evidence gates.
 - 2026-09-24T09:58:10+00:00: AR-1394 registry is done; docs audit identifies missing Harbor, Inspect
   AI, HAL, AgentBench, tau-bench and AgentDojo records. Add strict fail-closed metadata before
   selection.
+
+- 2026-09-24T10:00:41+00:00: Claimed by ar1399_literature_registry_luna56.
