@@ -10,17 +10,17 @@
   "id": "AR-1421",
   "next_action": "Run correct full integration/policy gates after requalification repair; inspect diff, commit signed+DCO, publish exact-base PR, and wait for exact-head checks. Preserve incident runs 36048870322 and 36048870234.",
   "observed_branch": "codex/ar-1421-protected-main-race",
-  "observed_dirty": 4,
-  "observed_head": "5ddac12fc0b2d9fbff2b056af888b9ec76edeee5",
+  "observed_dirty": 0,
+  "observed_head": "28e35608a2a87f53afa70732ca1b51aa57aa360b",
   "owner": "ar1421-protected-main-race-luna56",
   "plan": "../plans/AR-1421.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair protected-main merge-tree requalification after a literature PR merges onto an advanced main.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Protected-main literature merge race repair",
-  "updated_at": "2026-09-24T19:57:37+00:00",
+  "updated_at": "2026-09-24T19:57:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1421"
 }
 ---
