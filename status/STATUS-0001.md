@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**446 ARs tracked** across 6 active status categories.
+**449 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 3 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 65 |
-| **Planned** | Defined work awaiting promotion or dependencies | 69 |
+| **Planned** | Defined work awaiting promotion or dependencies | 72 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 291 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -518,6 +518,9 @@ flowchart LR
         AR_1420["AR-1420 - Planned"]:::status_planned
         AR_1421["AR-1421 - In progress"]:::status_in_progress
         AR_1422["AR-1422 - Done"]:::status_done
+        AR_1423["AR-1423 - Planned"]:::status_planned
+        AR_1424["AR-1424 - Planned"]:::status_planned
+        AR_1425["AR-1425 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1666,6 +1669,7 @@ flowchart LR
     AR_1402 --> AR_1404
     AR_1402 --> AR_1410
     AR_1402 --> AR_1416
+    AR_1403 --> AR_1423
     AR_1404 --> AR_1410
     AR_1405 --> AR_1406
     AR_1405 --> AR_1407
@@ -1683,14 +1687,22 @@ flowchart LR
     AR_1413 --> AR_1410
     AR_1414 --> AR_1415
     AR_1415 --> AR_1416
+    AR_1415 --> AR_1423
     AR_1416 --> AR_1417
     AR_1416 --> AR_1418
     AR_1416 --> AR_1421
+    AR_1416 --> AR_1424
     AR_1417 --> AR_1419
     AR_1417 --> AR_1420
+    AR_1417 --> AR_1425
     AR_1418 --> AR_1419
     AR_1418 --> AR_1420
+    AR_1418 --> AR_1425
     AR_1419 --> AR_1420
+    AR_1419 --> AR_1423
+    AR_1420 --> AR_1424
+    AR_1423 --> AR_1424
+    AR_1424 --> AR_1425
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -2072,5 +2084,3 @@ flowchart LR
 | [AR-1341](../tasks/AR-1341-runtime-observed-namespace-repair.md) | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md) | [AR-1390](../tasks/AR-1390-runtime-live-acquisition-cli.md), [AR-1391](../tasks/AR-1391-runtime-control-bootstrap-constructor.md), [AR-1392](../tasks/AR-1392-control-authority-materializer.md), [AR-1393](../tasks/AR-1393-local-provider-authority-provisioning.md) |
 | [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) | [AR-1344](../tasks/AR-1344-runtime-cli-acquisition-contract.md), [AR-1345](../tasks/AR-1345-runtime-live-coverage-repair.md), [AR-1390](../tasks/AR-1390-runtime-live-acquisition-cli.md), [AR-1391](../tasks/AR-1391-runtime-control-bootstrap-constructor.md), [AR-1392](../tasks/AR-1392-control-authority-materializer.md), [AR-1393](../tasks/AR-1393-local-provider-authority-provisioning.md) |
 | [AR-1343](../tasks/AR-1343-runtime-live-provider-relay.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) | None |
-| [AR-1344](../tasks/AR-1344-runtime-cli-acquisition-contract.md) | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md) | None |
-| [AR-1345](../tasks/AR-1345-runtime-live-coverage-repair.md) | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md) | None |
