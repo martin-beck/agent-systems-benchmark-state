@@ -92,11 +92,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1432](../tasks/AR-1432-local-openrouter-execution-bridge.md): Local OpenRouter execution bridge | Unclaimed | Qualify credential-free OpenRouter user execution through a deterministic loopback mock without external-provider access. | Promote after every dependency is done; claim a fresh isolated worktree from protected main and qualify the loopback LiteLLM-compatible mock at the runtime-owned attempt seam. |
+| P0 | [AR-1432](../tasks/AR-1432-local-openrouter-execution-bridge.md): Local OpenRouter execution bridge | codex-asb-ar1432-local-openrouter-luna56 | Qualify credential-free OpenRouter user execution through a deterministic loopback mock without external-provider access. | Promote after every dependency is done; claim a fresh isolated worktree from protected main and qualify the loopback LiteLLM-compatible mock at the runtime-owned attempt seam. |
 
 ### Blocked (65)
 
