@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire runtime-owned live scheduler authority into production asb run and sweep.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Runtime-owned live CLI scheduler wiring",
-  "updated_at": "2026-09-24T04:09:56+00:00",
+  "updated_at": "2026-09-24T04:10:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1381-live-cli-scheduler-wiring"
 }
 ---
@@ -100,3 +100,6 @@ all fail-closed authority and privacy contracts.
   individually, indicating shared-state parallel flakiness. Combined two-filter command was invalid
   Cargo syntax (exit 1); no product failure. Commit 445a4cffa56b34e13c63b33b6a30a487d3a7381e is
   SSH-signed+DCO and worktree clean.
+
+- 2026-09-24T04:10:20+00:00: Recorded command exit 0; command argv SHA-256
+  468997647d46e467bb55c9fd914de2c3b722677c34fdcf4bd8d0cd08810e4a1f.
