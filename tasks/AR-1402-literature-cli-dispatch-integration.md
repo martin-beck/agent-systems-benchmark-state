@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate literature workload catalog and adapters through all ASB CLI execution and evidence paths.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Literature workload CLI dispatch integration",
-  "updated_at": "2026-09-24T12:55:04+00:00",
+  "updated_at": "2026-09-24T12:55:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1402"
 }
 ---
@@ -99,3 +99,6 @@ external benchmark datasets or providers.
 
 - 2026-09-24T12:55:04+00:00: Recorded command exit 1; command argv SHA-256
   23233e1e0cb34baaeb75ea08f211538997a62e6821ef44189c4ca256d91019e4.
+
+- 2026-09-24T12:55:25+00:00: Recorded command exit 0; command argv SHA-256
+  62fbeef9702977925837a698870c12a7df6d86646144cf8d85095761a5e5d593.
