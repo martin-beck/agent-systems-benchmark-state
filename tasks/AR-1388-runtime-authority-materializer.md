@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1388-runtime-authority-materializer",
   "checkpoint_commit": "8c88b9ec9b4f529ebe30cb230029b2575ad4e6e5",
-  "claim_expires": "2026-09-24T07:48:48+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1385",
     "AR-1384",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1388-runtime-authority-materializer",
   "observed_dirty": 0,
   "observed_head": "581847921990c064b5185a9e66a788a474ffcc33",
-  "owner": "codex-asb-ar1329-repair-luna56",
+  "owner": "",
   "plan": "../plans/AR-1388-runtime-authority-materializer.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Materialize runtime-owned provider authority from authenticated receipt and chain state.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Runtime authority receipt materializer",
-  "updated_at": "2026-09-24T07:33:48+00:00",
+  "updated_at": "2026-09-24T07:33:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1388-runtime-authority-materializer"
 }
 ---
@@ -121,3 +121,10 @@ namespace identity, or launch tokens.
   ETXTBSY fixture race.
 
 - 2026-09-24T07:33:48+00:00: Claimed by codex-asb-ar1329-repair-luna56.
+
+- 2026-09-24T07:33:51+00:00: Released after replacement post-merge evidence. Original AR-1388 PR
+  #281 merge commit 8c88b9ec9b4f529ebe30cb230029b2575ad4e6e5 had seven post-merge workflows with
+  Formal assurance ETXTBSY fixture failure 35967157429. Successor AR-1389 repaired only that fixture
+  race, merged PR #282 at 10bffbf015bd7ca78d8c0d18f04cf0190195e933, and all seven exact-merge
+  workflows are green: 35969417881, 35969417735, 35969417734, 35969417732, 35969417722, 35969417699,
+  35969417656. External provider remains optional; local deterministic boundary preserved.
