@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Continuously keep ASB tutorial commands and steps syntactically current.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "ASB tutorial freshness CI and documentation qualification",
-  "updated_at": "2026-09-24T21:57:14+00:00",
+  "updated_at": "2026-09-24T21:57:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1216"
 }
 ---
@@ -33,3 +33,6 @@ tutorial command or require a provider/LLM connection.
   done; promote repository-wide freshness CI implementation.
 
 - 2026-09-24T21:57:14+00:00: Claimed by ar1216-tutorial-freshness-luna56.
+
+- 2026-09-24T21:57:34+00:00: Recorded command exit 128; command argv SHA-256
+  cf431012bc31a84f18ffdc3f1ea1953efdb3d26bc2be4d23aafaba616d1a8841.
