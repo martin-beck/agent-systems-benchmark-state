@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1402](tasks/AR-1402-literature-cli-dispatch-integration.md): Literature workload CLI dispatch integration | Integrate literature workload catalog and adapters through all ASB CLI execution and evidence paths. | Signed exact-base integration merge published as 6cef4ba (base 404ddde, head 022561d, tree 4214389). Monitor seven exact-main post-merge workflows to terminal SUCCESS, verify exact tree/signature/DCO, then release AR-1402. | ar1402_literature_cli_luna56 |
+| P1 | [AR-1402](tasks/AR-1402-literature-cli-dispatch-integration.md): Literature workload CLI dispatch integration | Integrate literature workload catalog and adapters through all ASB CLI execution and evidence paths. | Post-merge quality run 36004373951 failed only at optional analyzer download: curl exit 22 after repeated HTTP 500; product tests were not reached. Rerun the exact quality workflow after transient service recovery while monitoring the other six runs; release only after all seven terminal SUCCESS. | ar1402_literature_cli_luna56 |
 
 ## Open
 

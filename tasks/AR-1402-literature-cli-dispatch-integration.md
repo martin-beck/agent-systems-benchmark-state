@@ -7,7 +7,7 @@
     "AR-1401"
   ],
   "id": "AR-1402",
-  "next_action": "Signed exact-base integration merge published as 6cef4ba (base 404ddde, head 022561d, tree 4214389). Monitor seven exact-main post-merge workflows to terminal SUCCESS, verify exact tree/signature/DCO, then release AR-1402.",
+  "next_action": "Post-merge quality run 36004373951 failed only at optional analyzer download: curl exit 22 after repeated HTTP 500; product tests were not reached. Rerun the exact quality workflow after transient service recovery while monitoring the other six runs; release only after all seven terminal SUCCESS.",
   "observed_branch": "codex/ar-1402-literature-cli",
   "observed_dirty": 0,
   "observed_head": "022561d8377afb8d1ff164520f9601578b21f717",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate literature workload catalog and adapters through all ASB CLI execution and evidence paths.",
-  "task_revision": 55,
+  "task_revision": 56,
   "title": "Literature workload CLI dispatch integration",
-  "updated_at": "2026-09-24T13:16:52+00:00",
+  "updated_at": "2026-09-24T13:17:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1402"
 }
 ---
@@ -175,3 +175,8 @@ external benchmark datasets or providers.
 
 - 2026-09-24T13:16:52+00:00: Recorded command exit 0; command argv SHA-256
   135ac02c47873d6857368a822f9b9be7e6956e3c0e1be72bfdf62f7a4bd8b0ab.
+
+- 2026-09-24T13:17:17+00:00: Recorded exact quality failure from gh run log:
+  install-external-tools.sh downloaded first analyzer, then repeated HTTP 500 with retries at
+  13:15:26-13:15:33Z; artifact_outcome classified publication-interrupted. This is external
+  transient service failure, not a product-gate result; no gate weakened.
