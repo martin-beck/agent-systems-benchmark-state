@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize the authenticated runtime-owned live dispatch source for production asb run and sweep.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Authenticated runtime live dispatch source",
-  "updated_at": "2026-09-24T06:11:26+00:00",
+  "updated_at": "2026-09-24T06:22:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1385-runtime-live-dispatch-source"
 }
 ---
@@ -133,3 +133,6 @@ namespace identity, or launch authority.
   2c760e0fafc559d6f2486c670b4157f32aaf069144e33999aeabfebed9b29216. Focused workflow_transcript
   passed 3/3; full cargo test --locked --workspace completed successfully (with only pre-existing
   capability-gated ignores). Signed+DCO repair commit 02b79f3 force-pushed to PR #280.
+
+- 2026-09-24T06:22:28+00:00: Recorded command exit 0; command argv SHA-256
+  8027bbf7322e4cceb34d31f5519780cdedd1660fd2d42e398614759451417459.
