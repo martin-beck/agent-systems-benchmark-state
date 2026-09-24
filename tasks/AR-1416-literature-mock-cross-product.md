@@ -1,7 +1,7 @@
 ---
 {
   "branch": "codex/ar-1416-literature-mock-cross-product",
-  "checkpoint_commit": "cb33964b53ae73afac0ff4dce464a0e314c9fedc",
+  "checkpoint_commit": "0dcc71705eb610e4c3ab6a9f775a9d7b9b25218a",
   "claim_expires": "2026-09-24T20:38:10+00:00",
   "depends_on": [
     "AR-1415",
@@ -9,7 +9,7 @@
     "AR-1402"
   ],
   "id": "AR-1416",
-  "next_action": "Keep lease and monitor PR #304 aarch64, policy, and Rust checks; merge only after all terminal SUCCESS.",
+  "next_action": "Monitor seven post-merge workflows for merge 0dcc717; release AR-1416 only after all seven terminal SUCCESS and exact-main verification.",
   "observed_branch": "codex/ar-1416-literature-mock-cross-product",
   "observed_dirty": 0,
   "observed_head": "cb33964b53ae73afac0ff4dce464a0e314c9fedc",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prove end-to-end selectable literature workloads with deterministic local or LiteLLM-compatible mocks and no live provider dependency.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Literature workload local-mock cross-product",
-  "updated_at": "2026-09-24T18:39:06+00:00",
+  "updated_at": "2026-09-24T18:39:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1416"
 }
 ---
@@ -169,3 +169,10 @@ exact-head CI, independent review, and all required post-merge workflows.
 
 - 2026-09-24T18:39:06+00:00: Recorded command exit 0; command argv SHA-256
   1267fbda6cd90f527ba51f17904504a9de47af18d03aeacb77a9f225185ec059.
+
+- 2026-09-24T18:39:25+00:00: PR #304 merged through handoffctl at merge commit
+  0dcc71705eb610e4c3ab6a9f775a9d7b9b25218a. Exact base c533734a/head cb33964b; all 12 PR checks
+  terminal SUCCESS. Post-merge workflow IDs: 36042650470 Fault assurance, 36042650207 Huawei MIT
+  source headers, 36042650651 Formal assurance, 36042650354 Rust verification, 36042650552 Hosted
+  portability/native qualification, 36042650237 Emulated aarch64 portability, 36042650523 Repository
+  quality. Six are in progress; header workflow already SUCCESS.

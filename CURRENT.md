@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1416](tasks/AR-1416-literature-mock-cross-product.md): Literature workload local-mock cross-product | Prove end-to-end selectable literature workloads with deterministic local or LiteLLM-compatible mocks and no live provider dependency. | Keep lease and monitor PR #304 aarch64, policy, and Rust checks; merge only after all terminal SUCCESS. | ar1416-literature-mock-cross-product-luna56 |
+| P1 | [AR-1416](tasks/AR-1416-literature-mock-cross-product.md): Literature workload local-mock cross-product | Prove end-to-end selectable literature workloads with deterministic local or LiteLLM-compatible mocks and no live provider dependency. | Monitor seven post-merge workflows for merge 0dcc717; release AR-1416 only after all seven terminal SUCCESS and exact-main verification. | ar1416-literature-mock-cross-product-luna56 |
 
 ## Open
 
