@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize runtime-owned live authority profile for authenticated execution.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Runtime-owned authority profile materialization",
-  "updated_at": "2026-09-24T04:46:38+00:00",
+  "updated_at": "2026-09-24T04:46:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1383-runtime-authority-profile"
 }
 ---
@@ -66,3 +66,6 @@ bootstrap inputs required by live execution.
   fmt check failed solely on rustfmt layout; cargo fmt repaired it. Focused test passed, cargo check
   -p asb-runtime passed, commit e8af8041481c3c02731e02483847a82c3d138027 is SSH-signed+DCO and
   worktree clean.
+
+- 2026-09-24T04:46:49+00:00: Recorded command exit 0; command argv SHA-256
+  468997647d46e467bb55c9fd914de2c3b722677c34fdcf4bd8d0cd08810e4a1f.
