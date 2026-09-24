@@ -1,6 +1,6 @@
 ---
 {
-  "branch": "",
+  "branch": "codex/ar-1409-interactive-literature",
   "checkpoint_commit": "",
   "claim_expires": "2026-09-24T18:15:18+00:00",
   "depends_on": [
@@ -21,7 +21,7 @@
   "task_revision": 3,
   "title": "Interactive literature workload adapters",
   "updated_at": "2026-09-24T15:15:18+00:00",
-  "worktree_key": ""
+  "worktree_key": "agent-systems-benchmark-ar-1409"
 }
 ---
 
