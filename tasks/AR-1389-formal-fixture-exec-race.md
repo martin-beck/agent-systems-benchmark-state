@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1389-formal-fixture-exec-race",
-  "checkpoint_commit": "444a61d603f124d12cdd6505d4ff1fab1d6d2104",
+  "checkpoint_commit": "10bffbf015bd7ca78d8c0d18f04cf0190195e933",
   "claim_expires": "2026-09-24T08:09:40+00:00",
   "depends_on": [
     "AR-1384"
   ],
   "id": "AR-1389",
-  "next_action": "Merge PR #282 through handoffctl, then verify all seven post-merge workflows at its exact merge commit.",
+  "next_action": "Verify all seven post-merge workflows green at exact merge commit 10bffbf015bd7ca78d8c0d18f04cf0190195e933; then release AR-1389 and clear AR-1388 replacement gate.",
   "observed_branch": "feature/ar-1389-formal-fixture-exec-race",
   "observed_dirty": 0,
   "observed_head": "444a61d603f124d12cdd6505d4ff1fab1d6d2104",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the formal online-build fixture race that caused ETXTBSY after AR-1388 merge.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Formal fixture executable race repair",
-  "updated_at": "2026-09-24T07:24:40+00:00",
+  "updated_at": "2026-09-24T07:24:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1389-formal-fixture-exec-race"
 }
 ---
@@ -83,3 +83,8 @@ privacy, offline, boundedness, and local-mock boundaries.
   c86cfea94cae5a358369633bf8578516f94faed64b74b5f5c9a6f7e36f18eee4.
 
 - 2026-09-24T07:24:40+00:00: Heartbeat by codex-asb-ar1329-repair-luna56.
+
+- 2026-09-24T07:24:55+00:00: PR #282 merged through handoffctl after independent review and all 12
+  exact-head checks green. Merge commit 10bffbf015bd7ca78d8c0d18f04cf0190195e933. Seven post-merge
+  workflows launched at exact merge commit; monitoring before release. Signed/DCO and local
+  deterministic provider boundary preserved.
