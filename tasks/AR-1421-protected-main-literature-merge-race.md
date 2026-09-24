@@ -8,7 +8,7 @@
     "AR-1398"
   ],
   "id": "AR-1421",
-  "next_action": "Publish signed commit 28e3560 from exact current main 5ddac12, open PR, independently review exact diff, and await all required checks. Requalification repair preserves strict tree invariant; incident runs 36048870322 and 36048870234 remain immutable evidence.",
+  "next_action": "PR #308 exact base 5ddac12/head 28e3560 is open; independent diff review passed. Await all required checks for exact head before merge. Preserve failures 36048870322/36048870234 and state reconcile push race evidence.",
   "observed_branch": "codex/ar-1421-protected-main-race",
   "observed_dirty": 0,
   "observed_head": "28e35608a2a87f53afa70732ca1b51aa57aa360b",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair protected-main merge-tree requalification after a literature PR merges onto an advanced main.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Protected-main literature merge race repair",
-  "updated_at": "2026-09-24T19:59:28+00:00",
+  "updated_at": "2026-09-24T19:59:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1421"
 }
 ---
@@ -176,3 +176,9 @@ the merge released before fresh exact-main evidence succeeds.
 
 - 2026-09-24T19:59:28+00:00: Recorded command exit 0; command argv SHA-256
   af61552e610431e14f1cc5ff5c84e8f4d6aeb74fe3e4aa6e82c1a08788204727.
+
+- 2026-09-24T19:59:42+00:00: PR #308 opened from exact base 5ddac12 to signed+DCO head
+  28e35608a2a87f53afa70732ca1b51aa57aa360b. Initial check snapshot: AWQ and headers SUCCESS;
+  remaining required checks in progress. Product push succeeded. Automatic state reconcile push
+  failed non-fast-forward because remote state main advanced from expected d5d97d8 to 7238fca; this
+  is recorded and does not affect product branch.
