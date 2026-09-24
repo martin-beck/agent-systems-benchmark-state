@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist authenticated runtime certificate-chain material for live dispatch.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Runtime-owned certificate-chain store",
-  "updated_at": "2026-09-24T02:42:59+00:00",
+  "updated_at": "2026-09-24T02:43:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1377-runtime-chain-store"
 }
 ---
@@ -55,3 +55,6 @@ authority boundary and must not accept caller-built chains or synthesize trust.
 
 - 2026-09-24T02:42:59+00:00: Recorded command exit 0; command argv SHA-256
   67739c573b579619ef3e71fb893a396c166af5a2a061ba9f37d5e424ed8b55d4.
+
+- 2026-09-24T02:43:12+00:00: Recorded command exit 0; command argv SHA-256
+  c859af506c9f59e48551e35df8dd453d23b616e70916066cf1d05f15619c55d2.
