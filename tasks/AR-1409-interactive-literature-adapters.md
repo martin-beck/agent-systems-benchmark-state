@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add offline-selectable interactive and tool-use literature workload adapters.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Interactive literature workload adapters",
-  "updated_at": "2026-09-24T15:27:24+00:00",
+  "updated_at": "2026-09-24T15:27:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1409"
 }
 ---
@@ -66,3 +66,6 @@ LiteLLM-compatible mocks are the only development and CI execution path.
   authority.is_active failure; cargo clippy -D warnings, rustdoc -D warnings, release build, focused
   adapter tests, Python workload tests (33 passed), generated catalog checks, diff check, SSH
   signature and DCO all pass.
+
+- 2026-09-24T15:27:33+00:00: Recorded command exit 0; command argv SHA-256
+  6b32ab56c8a939e0381224351287c238a8ed03efea948c76f31422174e25279f.
