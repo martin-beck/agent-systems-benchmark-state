@@ -10,17 +10,17 @@
   "id": "AR-1413",
   "next_action": "Claim after binding metadata; implement bounded adapters and truthful selectors for long-horizon and performance families.",
   "observed_branch": "codex/ar-1413-long-horizon-performance",
-  "observed_dirty": 2,
-  "observed_head": "ea27dfb4e3a569fd429f99307e91c7629f15f65f",
+  "observed_dirty": 0,
+  "observed_head": "f3ce434417407d64b14fb0cc1493ffc1f93f3055",
   "owner": "ar1413_long_horizon_performance_luna56",
   "plan": "../plans/AR-1413-long-horizon-performance-adapters.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add truthful long-horizon, refreshed, performance, and reproducibility workload adapters.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Long-horizon and performance literature workload adapters",
-  "updated_at": "2026-09-24T14:54:07+00:00",
+  "updated_at": "2026-09-24T14:54:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1413"
 }
 ---
