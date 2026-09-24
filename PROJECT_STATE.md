@@ -11,14 +11,14 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #119 | `feature/native-capacity-controller@e2e3574ed2bb` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(capacity): add bounded native lifecycle controller |
-| #304 | `codex/ar-1416-literature-mock-cross-product@cb33964b53ae` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | test: cover literature local mock cross-product |
+| #304 | `codex/ar-1416-literature-mock-cross-product@cb33964b53ae` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | test: cover literature local mock cross-product |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 36041524141 | `cb33964b53ae` | pull_request | Rust verification | in_progress:- |
-| 36041523961 | `cb33964b53ae` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 36041523961 | `cb33964b53ae` | pull_request | Hosted portability and native qualification | completed:success |
 | 36041523911 | `cb33964b53ae` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36041523816 | `cb33964b53ae` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 36041523777 | `cb33964b53ae` | pull_request | Formal assurance | in_progress:- |
