@@ -9,7 +9,7 @@
   "id": "AR-1402",
   "next_action": "Focused CLI/workloads tests compile and 103 CLI unit tests pass; workflow_transcript fails only because changed CLI source requires synchronized provenance digest. Update provenance fixture, rerun focused and full tests, then continue methodology/dispatch coverage.",
   "observed_branch": "codex/ar-1402-literature-cli",
-  "observed_dirty": 3,
+  "observed_dirty": 4,
   "observed_head": "0667f299ce04ed74c8f1fc2a349df3bcb57a4838",
   "owner": "ar1402_literature_cli_luna56",
   "plan": "../plans/AR-1402-literature-cli-dispatch-integration.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate literature workload catalog and adapters through all ASB CLI execution and evidence paths.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Literature workload CLI dispatch integration",
-  "updated_at": "2026-09-24T12:49:47+00:00",
+  "updated_at": "2026-09-24T12:49:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1402"
 }
 ---
