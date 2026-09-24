@@ -9,7 +9,7 @@
   ],
   "id": "AR-1401",
   "next_action": "PR #292 was stale at base e0b15fc; rebased signed+DCO head 6c397ce onto protected main f213b296. Force-with-lease push, rerun exact-head checks, independent review, then signed merge and seven post-merge verification.",
-  "observed_branch": "DETACHED",
+  "observed_branch": "codex/ar-1401-literature-local-mock",
   "observed_dirty": 0,
   "observed_head": "6c397cec918dddf64cfb6567d32711a64d1fa5eb",
   "owner": "ar1401_literature_mock_luna56",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide offline deterministic mock execution for every documented literature workload family.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Literature workload local mock execution",
-  "updated_at": "2026-09-24T12:13:43+00:00",
+  "updated_at": "2026-09-24T12:13:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1401"
 }
 ---
