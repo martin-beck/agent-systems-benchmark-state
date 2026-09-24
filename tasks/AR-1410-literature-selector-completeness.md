@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar-1410-literature-selector-parity",
   "checkpoint_commit": "6925c3c443b77aa41ec9578e49cc19b01447c869",
-  "claim_expires": "2026-09-24T19:32:39+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1402",
     "AR-1404",
@@ -16,15 +16,15 @@
   "observed_branch": "codex/ar-1410-literature-selector-parity",
   "observed_dirty": 0,
   "observed_head": "2fe5c77304a3e68dad31168fdd2728d1374f10f5",
-  "owner": "ar1410-literature-selector-parity-luna56",
+  "owner": "",
   "plan": "../plans/AR-1410-literature-selector-completeness.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads.",
-  "task_revision": 142,
+  "task_revision": 143,
   "title": "Literature selector completeness and parity",
-  "updated_at": "2026-09-24T17:33:25+00:00",
+  "updated_at": "2026-09-24T17:33:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1410"
 }
 ---
@@ -434,3 +434,11 @@ does not turn external qualification or live-provider access into a prerequisite
 
 - 2026-09-24T17:33:25+00:00: Recorded command exit 0; command argv SHA-256
   e441fd099c19a918351191d57a326137586bfcc1e3f55b2090d1cbe53a12fda1.
+
+- 2026-09-24T17:33:50+00:00: Released after PR #302 merge and exact-main verification. Merge commit
+  6925c3c443b77aa41ec9578e49cc19b01447c869 contains reviewed ancestor
+  2fe5c77304a3e68dad31168fdd2728d1374f10f5, whose SSH signature verified Good and DCO Signed-off-by
+  trailer verified. origin/main is exactly 6925c3c. Seven post-merge workflows terminal SUCCESS:
+  36034017499, 36034017471, 36034017528, 36034017553, 36034017539, 36034017456, 36034017548. Focused
+  selector, parity, provenance, and local gates passed; transient shared-state ownership flake and
+  corrected parity/provenance failures were recorded with repairs.

@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1410](tasks/AR-1410-literature-selector-completeness.md): Literature selector completeness and parity | Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads. | Monitor exact-main post-merge workflows 36034017499,36034017471,36034017528,36034017553,36034017539,36034017456,36034017548 until terminal success; verify merged tree then release AR-1410. | ar1410-literature-selector-parity-luna56 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -432,6 +426,7 @@ Never edit this file directly.
 | P1 | [AR-1405](tasks/AR-1405-open-dependency-pr-reconciliation.md): Open dependency PR reconciliation | Rebase, repair, verify, and truthfully resolve stale open dependency PRs. | Monitor seven post-merge workflows for exact SHA f213b296; after all green, close/supersede scoped stale PRs with exact evidence, then release AR done. Action PRs #235/#234/#148 require a future policy-pin migration AR; #147 requires separate sha2 compatibility AR. | - |
 | P1 | [AR-1408](tasks/AR-1408-literature-inventory-closure.md): Literature workload inventory closure | PR #293 merged at exact base; seven post-merge workflows running. | Wait for all seven post-merge workflows on merge 404ddde1 to reach terminal success, then release AR-1408 with evidence. | - |
 | P1 | [AR-1409](tasks/AR-1409-interactive-literature-adapters.md): Interactive literature workload adapters | Add offline-selectable interactive and tool-use literature workload adapters. | Monitor seven post-merge workflows for merge c2fe732b3b50ef38893c2e3513770939de04637f: 36021529638,36021529745,36021529796,36021529687,36021529643,36021529787,36021529768; release only after all terminal success. | - |
+| P1 | [AR-1410](tasks/AR-1410-literature-selector-completeness.md): Literature selector completeness and parity | Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads. | Monitor exact-main post-merge workflows 36034017499,36034017471,36034017528,36034017553,36034017539,36034017456,36034017548 until terminal success; verify merged tree then release AR-1410. | - |
 | P1 | [AR-1411](tasks/AR-1411-repository-terminal-adapters.md): Repository and terminal literature workload adapters | Add selectable, provenance-preserving repository-repair and terminal benchmark adapters. | PR #297 open; verify exact base fc74825cb86991bb3afac6854d8cb5048118ff8f/head 67129e7504dc28d8f8e02a6bbb955f6683917208/tree, wait for all required checks, independently review, then signed merge. | - |
 | P1 | [AR-1412](tasks/AR-1412-code-generation-control-adapters.md): Code-generation control workload adapters | Recovered an abandoned claim with malformed local-time expiry; branch/worktree are now coordinator-bound before the next claim. | Wait for fresh exact-head PR #298 checks on 0d94a2e rebased onto current main ea27dfb; independently review exact diff and merge only after all checks are green. | - |
 | P1 | [AR-1413](tasks/AR-1413-long-horizon-performance-adapters.md): Long-horizon and performance literature workload adapters | Seven post-merge runs: four terminal success; aarch64, repository quality, and Rust remain actively executing on GitHub-hosted runners. | Continue monitoring post-merge IDs 36018871328/36018871323/36018871358; runner/job APIs show active in-progress steps, so do not rerun. Release only after all seven terminal success. | - |
