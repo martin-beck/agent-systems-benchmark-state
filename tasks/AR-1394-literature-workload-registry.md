@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Catalog every documented literature benchmark with provenance and truthful qualification status.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Literature workload registry expansion",
-  "updated_at": "2026-09-24T08:23:56+00:00",
+  "updated_at": "2026-09-24T08:24:34+00:00",
   "worktree_key": ""
 }
 ---
@@ -129,4 +129,7 @@ datasets and does not claim native or evaluator qualification.
   78f4602e5c03648198ebbdd2ae54edc948e11e598b44d61a5e07ca012ba703e0.
 
 - 2026-09-24T08:23:56+00:00: Recorded command exit 8; command argv SHA-256
+  b5a782feed947d38a54e882e2db9bc94522138b09db30c4222405bbab08e5870.
+
+- 2026-09-24T08:24:34+00:00: Recorded command exit 8; command argv SHA-256
   b5a782feed947d38a54e882e2db9bc94522138b09db30c4222405bbab08e5870.
