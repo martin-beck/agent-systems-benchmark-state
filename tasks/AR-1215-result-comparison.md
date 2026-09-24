@@ -7,7 +7,7 @@
     "AR-1213"
   ],
   "id": "AR-1215",
-  "next_action": "Implement the syntax-checked tutorial for comparing two or more agents on one benchmark definition.",
+  "next_action": "Fix fixture identifiers rejected by the secret-pattern guard, rerun focused tutorial tests, then review and commit.",
   "observed_branch": "docs/ar-1215-result-comparison",
   "observed_dirty": 8,
   "observed_head": "c663d1f29d4802281476c3a71d56542b17dbab48",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach conservative comparison of multiple agents from the same benchmark.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Multi-agent result comparison tutorial",
-  "updated_at": "2026-09-24T20:51:24+00:00",
+  "updated_at": "2026-09-24T20:53:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1215"
 }
 ---
@@ -40,3 +40,7 @@ commands in tutorial syntax CI.
 
 - 2026-09-24T20:51:12+00:00: Recorded command exit 1; command argv SHA-256
   4b866a61a939ff1592762d034f882243a35f8b3ee058634868b1ba40a476710e.
+
+- 2026-09-24T20:53:09+00:00: Focused tutorial test exit 1: synthetic comparison fixture IDs
+  containing task-score were rejected by the existing sk- secret-pattern guard; no benchmark or
+  provider command ran. Corrective fixture-only identifier change is in progress.
