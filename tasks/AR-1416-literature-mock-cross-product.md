@@ -9,7 +9,7 @@
     "AR-1402"
   ],
   "id": "AR-1416",
-  "next_action": "Promote after AR-1415 is done; exercise every locally executable literature selector through plan, mock run, replay, and report paths.",
+  "next_action": "Repair methodology-only literature fail-closed boundary; add cross-product local-mock lifecycle coverage for every executable ID, then rerun focused gates.",
   "observed_branch": "codex/ar-1416-literature-mock-cross-product",
   "observed_dirty": 0,
   "observed_head": "c533734a486a8c3a8c854c1fce395b915986d874",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prove end-to-end selectable literature workloads with deterministic local or LiteLLM-compatible mocks and no live provider dependency.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Literature workload local-mock cross-product",
-  "updated_at": "2026-09-24T18:23:37+00:00",
+  "updated_at": "2026-09-24T18:24:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1416"
 }
 ---
@@ -58,3 +58,9 @@ exact-head CI, independent review, and all required post-merge workflows.
 
 - 2026-09-24T18:23:37+00:00: Recorded command exit 0; command argv SHA-256
   76772474c9878da38dc96be3b1a46d4f5b5fbc36af29341ac80d779747a141e5.
+
+- 2026-09-24T18:24:22+00:00: Recorded command failure: handoffctl run was first invoked from state
+  cwd, so cargo test resolved /srv/data/projects/agent-systems-benchmark-state and exited 101: could
+  not find Cargo.toml. Rerun from bound product worktree
+  /srv/data/projects/agent-systems-benchmark-ar-1416 completed successfully (13 literature tests
+  passed). Next action is the concrete AR-1416 repair and cross-product coverage.

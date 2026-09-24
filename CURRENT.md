@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1416](tasks/AR-1416-literature-mock-cross-product.md): Literature workload local-mock cross-product | Prove end-to-end selectable literature workloads with deterministic local or LiteLLM-compatible mocks and no live provider dependency. | Promote after AR-1415 is done; exercise every locally executable literature selector through plan, mock run, replay, and report paths. | ar1416-literature-mock-cross-product-luna56 |
+| P1 | [AR-1416](tasks/AR-1416-literature-mock-cross-product.md): Literature workload local-mock cross-product | Prove end-to-end selectable literature workloads with deterministic local or LiteLLM-compatible mocks and no live provider dependency. | Repair methodology-only literature fail-closed boundary; add cross-product local-mock lifecycle coverage for every executable ID, then rerun focused gates. | ar1416-literature-mock-cross-product-luna56 |
 
 ## Open
 
