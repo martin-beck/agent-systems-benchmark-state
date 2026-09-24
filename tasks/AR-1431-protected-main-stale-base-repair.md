@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar-1431-stale-base",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-25T00:19:23+00:00",
+  "claim_expires": "2026-09-25T00:25:29+00:00",
   "depends_on": [
     "AR-1427"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prevent stale-base sequential merges from passing review but failing protected-main merge-tree policy.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Protected-main stale-base merge requalification repair",
-  "updated_at": "2026-09-24T22:25:08+00:00",
+  "updated_at": "2026-09-24T22:25:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1431"
 }
 ---
@@ -60,3 +60,5 @@ that incident and must not waive the policy.
 
 - 2026-09-24T22:25:08+00:00: Recorded command exit 0; command argv SHA-256
   d04aa803a9fcb854b247572f9b417fd1935a57ca978bb887d2e7c188e99db043.
+
+- 2026-09-24T22:25:29+00:00: Heartbeat by ar1431-stale-base-luna56.
