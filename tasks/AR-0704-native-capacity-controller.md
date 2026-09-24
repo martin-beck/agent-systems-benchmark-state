@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/native-capacity-controller",
-  "checkpoint_commit": "e2e3574ed2bbc020105ffb1eb4c5a38691b299a3",
+  "checkpoint_commit": "4630f90af739fc628d2e4264a2d40fd7fe142eec",
   "claim_expires": "2026-09-24T21:47:02+00:00",
   "depends_on": [
     "AR-0701",
     "AR-0103"
   ],
   "id": "AR-0704",
-  "next_action": "PR #119 is stale on 78a8e9f; AR-1312 coverage repair is done. Rebase the reviewed lifecycle diff onto current main 6925c3c, rerun all gates, and merge only exact-head green.",
+  "next_action": "Rebased PR #119 lifecycle commits onto protected main 5ddac12 as 51a403f and 4630f90; focused 14-test unittest, Ruff format/check, and strict mypy pass. Push refreshed branch, require independent review and exact-head green CI before merge; preserve 90% coverage floor.",
   "observed_branch": "feature/native-capacity-controller",
   "observed_dirty": 0,
   "observed_head": "4630f90af739fc628d2e4264a2d40fd7fe142eec",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 243,
+  "task_revision": 244,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-24T19:49:19+00:00",
+  "updated_at": "2026-09-24T19:49:51+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -814,3 +814,8 @@ must not block this AR or its dependents.
 
 - 2026-09-24T19:49:19+00:00: Recorded command exit 0; command argv SHA-256
   056218495034467fb38084fb039045e843454138baff90c9e3f3d592a7625df3.
+
+- 2026-09-24T19:49:51+00:00: Rebased stale PR #119 onto current protected main 5ddac12; resulting
+  exact topic head 4630f90. Focused lifecycle suite 14/14 passed; Ruff format/check and strict mypy
+  passed. Initial unittest module invocation failed because tests/capacity is not a Python package;
+  corrected discover invocation passed. No threshold or gate changes.
