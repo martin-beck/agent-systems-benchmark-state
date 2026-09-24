@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate literature workload catalog and adapters through all ASB CLI execution and evidence paths.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Literature workload CLI dispatch integration",
-  "updated_at": "2026-09-24T12:59:02+00:00",
+  "updated_at": "2026-09-24T13:03:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1402"
 }
 ---
@@ -137,3 +137,6 @@ external benchmark datasets or providers.
 - 2026-09-24T12:59:02+00:00: PR #294 created successfully without nonexistent label. Exact
   base/head/tree recorded: 0667f299 -> cec6345, tree 084d86929388208be579fa2974d94db8f145a113. Fresh
   checks started; AWQ and headers green, remaining required checks in progress.
+
+- 2026-09-24T13:03:28+00:00: Recorded command exit 0; command argv SHA-256
+  5b35a092a612ead5431308a355cd404b21448db3f61f5fe7df7c5ad4c7fce144.
