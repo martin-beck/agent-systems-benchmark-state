@@ -1,14 +1,14 @@
 ---
 {
   "branch": "codex/ar-1404-literature-documentation",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "4c4e098ce06be3feea5afc3ecaa7af3f0b61ebcc",
   "claim_expires": "2026-09-24T15:39:49+00:00",
   "depends_on": [
     "AR-1400",
     "AR-1402"
   ],
   "id": "AR-1404",
-  "next_action": "Promote after the catalog and CLI contracts stabilize; generate documentation and add CI parity checks across docs, registry, catalog, and CLI inventory.",
+  "next_action": "Independently review PR #295, wait exact-head required checks, merge only when green, run seven post-merge workflows, then release AR-1404.",
   "observed_branch": "codex/ar-1404-literature-documentation",
   "observed_dirty": 0,
   "observed_head": "4c4e098ce06be3feea5afc3ecaa7af3f0b61ebcc",
@@ -17,10 +17,10 @@
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Generate and verify the literature workload documentation and evidence-state matrix.",
-  "task_revision": 18,
+  "summary": "Generated workload catalog and CLI parity implementation published as PR #295.",
+  "task_revision": 19,
   "title": "Literature workload documentation and matrix contract",
-  "updated_at": "2026-09-24T13:39:49+00:00",
+  "updated_at": "2026-09-24T13:40:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1404"
 }
 ---
@@ -49,3 +49,10 @@ state that diverges from the versioned catalog.
   58937d420c6e0c5fb7cf7d60b98569f20f56e2fba7442b27292e98831ecd5f9a.
 
 - 2026-09-24T13:39:49+00:00: Heartbeat by ar1404_literature_documentation_luna56b.
+
+- 2026-09-24T13:40:24+00:00: Implemented generated docs/generated/workload-catalog-v1.json and
+  WORKLOAD_CATALOG.md from the registry, added asb workload-catalog JSON output and CLI test
+  coverage, added positive/negative drift checks, and CI parity step. Updated command metadata and
+  provenance hash. Signed+DCO product commit 4c4e098 pushed; PR #295 is open from exact base
+  6cef4babe3db65e22bfcd098a074da14a4630f7e. Focused tests pass (13 Python tests; full asb-cli 105
+  tests and integration/doc suites; workspace tests passed).

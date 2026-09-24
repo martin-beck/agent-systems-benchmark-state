@@ -74,7 +74,7 @@
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P2 | [AR-1403](../tasks/AR-1403-literature-external-qualification.md): Literature workload external qualification | ar1403_external_qualification_luna56 | Add optional evidence-gated qualification for real literature workload sources and evaluators. | Claim after binding metadata repair; extend explicit external artifact/evaluator qualification without adding a default network path. |
-| P2 | [AR-1404](../tasks/AR-1404-literature-documentation-matrix.md): Literature workload documentation and matrix contract | ar1404_literature_documentation_luna56b | Generate and verify the literature workload documentation and evidence-state matrix. | Promote after the catalog and CLI contracts stabilize; generate documentation and add CI parity checks across docs, registry, catalog, and CLI inventory. |
+| P2 | [AR-1404](../tasks/AR-1404-literature-documentation-matrix.md): Literature workload documentation and matrix contract | ar1404_literature_documentation_luna56b | Generated workload catalog and CLI parity implementation published as PR #295. | Independently review PR #295, wait exact-head required checks, merge only when green, run seven post-merge workflows, then release AR-1404. |
 
 ### Open (5)
 
