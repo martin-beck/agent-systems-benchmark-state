@@ -12,16 +12,16 @@
   "next_action": "BLOCKED pending coordinator-created repair AR: implement runtime-owned LiveProviderRuntimeService acquisition for production asb run/sweep. Service must resolve pinned provider policy to concrete public target(s), obtain credential through enrolled environment channel without evidence disclosure, construct attested child namespace handoff and relay listener, reserve ResourceLease, create SandboxBackend with pinned live gate, attest and issue one LiveProviderAttempt per scheduler attempt, and teardown on cancellation. Then AR-1329 can wire dispatch --provider-selection/--live-provider while preserving NetworkPolicy::Deny and direct/alternate egress denial.",
   "observed_branch": "feature/ar-1329-live-provider-run-execution",
   "observed_dirty": 0,
-  "observed_head": "a336d6744b1a82f36a706ec606b847c92d49cfd3",
+  "observed_head": "04b4c067055073031cd6d88cf18f0d158f488ad0",
   "owner": "codex-asb-runtime-receipt-source-luna56",
   "plan": "../plans/AR-1329.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute real agents against the selected provider through asb run and sweep with credential-free resolution.",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Live-provider run execution for real agents",
-  "updated_at": "2026-09-24T04:38:12+00:00",
+  "updated_at": "2026-09-24T04:38:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1329-live-provider-run-execution"
 }
 ---
