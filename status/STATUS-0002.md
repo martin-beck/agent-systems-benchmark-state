@@ -76,7 +76,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1415](../tasks/AR-1415-literature-selector-total-coverage.md): Total literature workload selector coverage | ar1415-literature-selector-total-coverage-luna56 | Make the complete literature workload inventory selectable beside built-in software-engineering fixtures with truthful evidence gates. | Promote after AR-1414 is done; audit every docs-listed workload against the registry, generated catalog, selector filters, and plan validation. |
+| P1 | [AR-1415](../tasks/AR-1415-literature-selector-total-coverage.md): Total literature workload selector coverage | ar1415-literature-selector-total-coverage-luna56 | Make the complete literature workload inventory selectable beside built-in software-engineering fixtures with truthful evidence gates. | Record the transient coordinator lock timeout, rerun state-recording wrapper once, then commit focused coverage audit and run remaining quality gates. |
 
 ### Open (2)
 
