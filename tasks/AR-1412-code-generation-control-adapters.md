@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recovered an abandoned claim with malformed local-time expiry; branch/worktree are now coordinator-bound before the next claim.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Code-generation control workload adapters",
-  "updated_at": "2026-09-24T14:31:46+00:00",
+  "updated_at": "2026-09-24T14:32:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1412"
 }
 ---
@@ -51,3 +51,6 @@ bounded local fixtures or LiteLLM-compatible mocks only.
   failed only because the newly edited lib.rs/literature.rs formatting differed from rustfmt; no
   compiler or test failure and no source was rejected. Repaired by running cargo fmt --all through
   handoffctl; rerun check before commit.
+
+- 2026-09-24T14:32:08+00:00: Recorded command exit 0; command argv SHA-256
+  b2d5f1f7b79c15e9ddfe811d1077b753675005d630b7d6b57381bebf612b3440.
