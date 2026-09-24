@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1405-open-dependency-pr-reconciliation.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Rebase, repair, verify, and truthfully resolve stale open dependency PRs.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Open dependency PR reconciliation",
-  "updated_at": "2026-09-24T00:00:00+00:00",
+  "updated_at": "2026-09-24T11:16:06+00:00",
   "worktree_key": ""
 }
 ---
@@ -25,3 +25,6 @@
 This AR does not authorize merging stale or incompatible dependency updates;
 all changes remain subject to current exact-head gates.
 
+
+- 2026-09-24T11:16:06+00:00: Open PR audit identified stale dependency candidates requiring
+  current-main rebase and exact compatibility gates.
