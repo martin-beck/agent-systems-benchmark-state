@@ -8,7 +8,7 @@
     "AR-1414"
   ],
   "id": "AR-1415",
-  "next_action": "Monitor exact-main post-merge workflows 36038241020,36038241175,36038241094,36038241127,36038241138,36038241030,36038241174 until terminal success; verify merged tree then release AR-1415.",
+  "next_action": "Rerun exact failed post-merge workflow 36038241138 after three green isolated Goose reproductions; wait all seven terminal SUCCESS, verify main, then release.",
   "observed_branch": "codex/ar-1415-literature-selector-total-coverage",
   "observed_dirty": 0,
   "observed_head": "bc0cfaff9cc126cb4f3dbadfc9a6284750dba0bc",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make the complete literature workload inventory selectable beside built-in software-engineering fixtures with truthful evidence gates.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Total literature workload selector coverage",
-  "updated_at": "2026-09-24T18:07:56+00:00",
+  "updated_at": "2026-09-24T18:08:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1415"
 }
 ---
@@ -228,3 +228,9 @@ schema parity, and full exact-head/post-merge gates.
 
 - 2026-09-24T18:07:56+00:00: Recorded command exit 0; command argv SHA-256
   d5c46a9787e3e5457b735b04aea3e83784bf557e6bcc1f9edef67765cb2a4690.
+
+- 2026-09-24T18:08:25+00:00: Post-merge workflow 36038241138 failed only at Materialize immutable
+  aarch64 guest userspace after goose::tests::diagnostic_and_symlink_fail_closed observed unwrap_err
+  got Ok GooseOutcome Failed exit 127. Exact test passed three consecutive times in isolated
+  worktree on current merged tree; no product mutation. Treat as runner/environment flake and rerun
+  exact workflow, never waive failure.

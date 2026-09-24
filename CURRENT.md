@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1415](tasks/AR-1415-literature-selector-total-coverage.md): Total literature workload selector coverage | Make the complete literature workload inventory selectable beside built-in software-engineering fixtures with truthful evidence gates. | Monitor exact-main post-merge workflows 36038241020,36038241175,36038241094,36038241127,36038241138,36038241030,36038241174 until terminal success; verify merged tree then release AR-1415. | ar1415-literature-selector-total-coverage-luna56 |
+| P1 | [AR-1415](tasks/AR-1415-literature-selector-total-coverage.md): Total literature workload selector coverage | Make the complete literature workload inventory selectable beside built-in software-engineering fixtures with truthful evidence gates. | Rerun exact failed post-merge workflow 36038241138 after three green isolated Goose reproductions; wait all seven terminal SUCCESS, verify main, then release. | ar1415-literature-selector-total-coverage-luna56 |
 
 ## Open
 
