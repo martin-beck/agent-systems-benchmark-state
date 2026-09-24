@@ -18,14 +18,17 @@
   "plan": "../plans/AR-1367-ar1329-production-dispatch-integration.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Complete production asb run/sweep live-provider dispatch through runtime-owned authenticated acquisition and teardown.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "AR-1329 production dispatch integration",
-  "updated_at": "2026-09-24T00:45:00+00:00",
+  "updated_at": "2026-09-24T00:44:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1367-ar1329-production-dispatch-integration"
 }
 ---
 
 Successor for the blocked AR-1329 execution path. Do not resume stale AR-1329
 metadata, touch asb-tui, or expose live authority through CLI/config input.
+
+- 2026-09-24T00:44:01+00:00: Promote fresh AR-1329 successor after runtime-owned receipt consumer
+  AR-1366 completed; preserve fail-closed live execution.
