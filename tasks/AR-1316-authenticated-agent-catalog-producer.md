@@ -10,7 +10,7 @@
     "AR-1319"
   ],
   "id": "AR-1316",
-  "next_action": "Coordinator must bind branch feature/ar-1316-authenticated-agent-catalog-producer to isolated worktree /srv/data/projects/agent-systems-benchmark-ar-1316 (metadata key agent-systems-benchmark-ar-1316) before product inspection.",
+  "next_action": "Rerun focused agent-catalog tests after formatting; then run full asb-cli/asb-control gates and commit signed.",
   "observed_branch": "feature/ar-1316-authenticated-agent-catalog-producer",
   "observed_dirty": 1,
   "observed_head": "0b2719e6483b5d22cbf6e11320988a766cb64366",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish the verified ASB agent catalog required by the first-run setup wizard.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Authenticated agent catalog producer",
-  "updated_at": "2026-09-24T18:53:41+00:00",
+  "updated_at": "2026-09-24T18:54:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1316"
 }
 ---
@@ -69,3 +69,8 @@ Progress evidence: ASB PR #245 merged at `027af7ad27da13b359b3f099699c42b03c6f39
 
 - 2026-09-24T18:53:41+00:00: Recorded command exit 1; command argv SHA-256
   f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
+
+- 2026-09-24T18:54:31+00:00: Product implementation is in bound worktree. Wrapped cargo fmt mutation
+  applied formatting but finalization exited LOCK_TIMEOUT after 10.0s acquiring exclusive
+  coordinator lock; independent read-only cargo fmt --all -- --check passed. No product failure;
+  rerun focused tests and retain lock-timeout evidence.
