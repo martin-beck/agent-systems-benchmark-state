@@ -11,18 +11,18 @@
   ],
   "id": "AR-1376",
   "next_action": "Promote and claim this dependency-valid adapter successor, refresh an isolated worktree, and implement the runtime-owned control-to-live-attempt bridge.",
-  "observed_branch": "",
+  "observed_branch": "feature/ar-1376-runtime-live-adapter",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "265b936d995148f8e40e36664cf68bf12affc20d",
   "owner": "codex-asb-runtime-receipt-source-luna56",
   "plan": "../plans/AR-1376-runtime-live-adapter.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize authenticated runtime receipts into opaque live dispatch attempts.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Runtime-owned live adapter",
-  "updated_at": "2026-09-24T02:37:43+00:00",
+  "updated_at": "2026-09-24T02:37:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1376-runtime-live-adapter"
 }
 ---
