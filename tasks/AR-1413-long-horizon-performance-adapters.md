@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar-1413-long-horizon-performance",
   "checkpoint_commit": "f78fbabafb84949826d047d31b5e1770a98b8157",
-  "claim_expires": "2026-09-24T15:40:00+00:00",
+  "claim_expires": "2026-09-24T15:42:44+00:00",
   "depends_on": [
     "AR-1408",
     "AR-1401"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "AR-1413 rebased unchanged signed literature metadata onto protected main 8c640e59; PR #299 exact-head checks restarted.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Long-horizon and performance literature workload adapters",
-  "updated_at": "2026-09-24T15:10:00+00:00",
+  "updated_at": "2026-09-24T15:12:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1413"
 }
 ---
@@ -124,3 +124,5 @@ bounded local fixtures or LiteLLM-compatible mocks only.
 - 2026-09-24T15:07:42+00:00: Heartbeat by ar1413_long_horizon_performance_luna56.
 
 - 2026-09-24T15:10:00+00:00: Heartbeat by ar1413_long_horizon_performance_luna56.
+
+- 2026-09-24T15:12:44+00:00: Heartbeat by ar1413_long_horizon_performance_luna56.
