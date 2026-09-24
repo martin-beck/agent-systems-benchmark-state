@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add optional evidence-gated qualification for real literature workload sources and evaluators.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Literature workload external qualification",
-  "updated_at": "2026-09-24T13:29:34+00:00",
+  "updated_at": "2026-09-24T13:30:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1403"
 }
 ---
@@ -38,3 +38,6 @@ development, mock execution, or candidate selection.
   codex/ar-1403-literature-external and agent-systems-benchmark-ar-1403, then re-claim.
 
 - 2026-09-24T13:29:34+00:00: Claimed by ar1403_external_qualification_luna56.
+
+- 2026-09-24T13:30:07+00:00: Recorded command exit 0; command argv SHA-256
+  5345cd4b5f66285dc80cddfe59c0a95475263f9ff88d25d2639fce3c300aa4b9.
