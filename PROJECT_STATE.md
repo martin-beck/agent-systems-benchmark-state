@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #119 | `feature/native-capacity-controller@4630f90af739` | `main` | UNKNOWN | COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(capacity): add bounded native lifecycle controller |
+| #119 | `feature/native-capacity-controller@4630f90af739` | `main` | CLEAN | COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(capacity): add bounded native lifecycle controller |
 
 ## Recent workflows
 
@@ -18,9 +18,9 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 36063174963 | `d9eb6c2d6bda` | push | Repository quality | in_progress:- |
 | 36063174428 | `d9eb6c2d6bda` | push | Fault assurance | in_progress:- |
-| 36063174410 | `d9eb6c2d6bda` | push | Rust verification | queued:- |
+| 36063174410 | `d9eb6c2d6bda` | push | Rust verification | in_progress:- |
 | 36063174404 | `d9eb6c2d6bda` | push | Formal assurance | in_progress:- |
-| 36063174379 | `d9eb6c2d6bda` | push | Huawei MIT source headers | in_progress:- |
+| 36063174379 | `d9eb6c2d6bda` | push | Huawei MIT source headers | completed:success |
 | 36063174357 | `d9eb6c2d6bda` | push | Hosted portability and native qualification | in_progress:- |
 | 36063174344 | `d9eb6c2d6bda` | push | Emulated aarch64 portability | in_progress:- |
 | 36062133308 | `81f02d294dc5` | pull_request | Fault assurance | completed:success |
