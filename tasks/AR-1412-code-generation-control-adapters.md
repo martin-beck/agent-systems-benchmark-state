@@ -11,16 +11,16 @@
   "next_action": "Wait for fresh exact-head PR #298 checks on d7d035a; independently review the complete diff and merge only after every required check is green.",
   "observed_branch": "codex/ar-1412-code-generation-controls",
   "observed_dirty": 0,
-  "observed_head": "d7d035a6c09d248cc747dea4d7fb4a2dd6ab9ef2",
+  "observed_head": "0d94a2e87116a587de18ebe399ec8c4e2aaa763b",
   "owner": "ar1412_code_generation_luna56b",
   "plan": "../plans/AR-1412-code-generation-control-adapters.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recovered an abandoned claim with malformed local-time expiry; branch/worktree are now coordinator-bound before the next claim.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Code-generation control workload adapters",
-  "updated_at": "2026-09-24T14:53:14+00:00",
+  "updated_at": "2026-09-24T14:53:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1412"
 }
 ---
