@@ -50,7 +50,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1393](../tasks/AR-1393-local-provider-authority-provisioning.md): Local provider authority provisioning | codex-asb-ar1329-repair-luna56 | Provision a runtime-owned loopback mock authority so development never requires external provider access. | Claim the pre-bound isolated worktree, implement runtime-owned local-provider authority provisioning with offline mock tests, and publish a signed PR. |
+| P0 | [AR-1393](../tasks/AR-1393-local-provider-authority-provisioning.md): Local provider authority provisioning | codex-asb-ar1329-repair-luna56 | Provision a runtime-owned loopback mock authority so development never requires external provider access. | Publish signed+DCO PR from exact head 0a3817082d13f15187ea5efe4f5792664a50be99; monitor exact-head CI and independently review before merge. |
 
 ### Open (3)
 

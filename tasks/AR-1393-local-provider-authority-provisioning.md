@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1393-local-provider-authority-provisioning",
-  "checkpoint_commit": "10bffbf015bd7ca78d8c0d18f04cf0190195e933",
+  "checkpoint_commit": "0a3817082d13f15187ea5efe4f5792664a50be99",
   "claim_expires": "2026-09-24T08:42:53+00:00",
   "depends_on": [
     "AR-1388",
@@ -14,7 +14,7 @@
     "AR-1340"
   ],
   "id": "AR-1393",
-  "next_action": "Claim the pre-bound isolated worktree, implement runtime-owned local-provider authority provisioning with offline mock tests, and publish a signed PR.",
+  "next_action": "Publish signed+DCO PR from exact head 0a3817082d13f15187ea5efe4f5792664a50be99; monitor exact-head CI and independently review before merge.",
   "observed_branch": "feature/ar-1393-local-provider-authority-provisioning",
   "observed_dirty": 0,
   "observed_head": "0a3817082d13f15187ea5efe4f5792664a50be99",
@@ -24,9 +24,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a runtime-owned loopback mock authority so development never requires external provider access.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Local provider authority provisioning",
-  "updated_at": "2026-09-24T07:58:37+00:00",
+  "updated_at": "2026-09-24T07:59:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1393-local-provider-authority-provisioning"
 }
 ---
@@ -81,3 +81,12 @@ or production egress gates.
 
 - 2026-09-24T07:58:26+00:00: Recorded command exit 0; command argv SHA-256
   e5b4ec4680507112dd8fa65b5bfadd0bf689e1b30ad1aaa469c93512c75c5886.
+
+- 2026-09-24T07:59:08+00:00: Implemented zero-argument runtime-owned local deterministic authority:
+  fixed digest-pinned mock profile, loopback target, 0700 private lease/relay roots with create_dir
+  rejection of pre-existing symlink/copy, generation supersession/revocation fencing, opaque
+  Debug/evidence privacy, and drop teardown. Focused local_authority tests: 2 passed; workspace
+  cargo test --locked --workspace: passed (pre-existing environment-gated tests ignored). Signed+DCO
+  commit 0a3817082d13f15187ea5efe4f5792664a50be99; repository_policy all checks passed. An earlier
+  exit 101 was a coordinator-checkout invocation with no Cargo.toml and was immediately followed by
+  the successful same-argv workspace run from the bound worktree.
