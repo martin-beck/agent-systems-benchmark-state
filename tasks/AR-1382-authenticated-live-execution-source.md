@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1382-authenticated-live-execution-source",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-24T06:40:09+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1381",
     "AR-1380",
@@ -15,15 +15,15 @@
   "observed_branch": "feature/ar-1382-authenticated-live-execution-source",
   "observed_dirty": 0,
   "observed_head": "04b4c067055073031cd6d88cf18f0d158f488ad0",
-  "owner": "codex-asb-runtime-receipt-source-luna56",
+  "owner": "",
   "plan": "../plans/AR-1382-authenticated-live-execution-source.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Materialize authenticated runtime-owned live execution for asb run and sweep.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Authenticated live execution source",
-  "updated_at": "2026-09-24T04:40:22+00:00",
+  "updated_at": "2026-09-24T04:40:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1382-authenticated-live-execution-source"
 }
 ---
@@ -42,3 +42,10 @@ preserving the no-caller-authority and fail-closed boundaries.
 
 - 2026-09-24T04:40:12+00:00: Recorded command exit 0; command argv SHA-256
   90d50406c67713c28d05e22fd6767e828550a2c471abec654c9cb200088c9830.
+
+- 2026-09-24T04:40:32+00:00: Audit found authenticated receipt and chain contracts plus
+  request_control_receipt are merged, but LiveProviderBootstrapSpec::from_enrollment and provisioner
+  are crate-private and no runtime-owned source materializes validated tool pins, lease root, relay
+  root, provider allowlist/policy, and bootstrap handle from control-owned state. Making these
+  caller-supplied public would leak authority; synthesizing values is forbidden. Create a narrow
+  authority-materialization AR before wiring execution.
