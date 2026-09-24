@@ -12,18 +12,18 @@
   ],
   "id": "AR-1380",
   "next_action": "Promote and claim this dependency-valid scheduler composition successor, then implement runtime-owned per-attempt live dispatch inputs.",
-  "observed_branch": "",
+  "observed_branch": "feature/ar-1380-runtime-scheduler-composition",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "d4a3e14e86a75bcb0c4f004e8d997b2321bf0fb5",
   "owner": "codex-asb-runtime-receipt-source-luna56",
   "plan": "../plans/AR-1380-runtime-scheduler-composition.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compose runtime-owned live attempts for production run and sweep scheduling.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Runtime scheduler composition for live dispatch",
-  "updated_at": "2026-09-24T03:34:32+00:00",
+  "updated_at": "2026-09-24T03:34:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1380-runtime-scheduler-composition"
 }
 ---
