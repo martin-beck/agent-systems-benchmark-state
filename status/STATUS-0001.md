@@ -1895,7 +1895,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1371](../tasks/AR-1371-runner-authority-injection.md): Runner authority injection | codex-asb-runtime-attested-enrollment-luna56 | Inject existing authenticated certificate authority and runtime enrollment material into RunnerBackend/Catalog without synthetic authority. | PR #271 exact head 7c25e6e is published. Headers and AWQ shadow checks pass; all other required hosted checks are pending. gh pr checks exit 8 is the CLI pending-status code, not a gate failure. Keep lease, monitor exact-head checks, and merge only after every required check is green. |
+| P0 | [AR-1371](../tasks/AR-1371-runner-authority-injection.md): Runner authority injection | codex-asb-runtime-attested-enrollment-luna56 | Inject existing authenticated certificate authority and runtime enrollment material into RunnerBackend/Catalog without synthetic authority. | PR #271 merged as 3f0b67638647dc016f7d5abd3e246baf3ae4ec29 after all 12 exact-head checks passed. Seven post-merge workflows are running; monitor all to terminal success before releasing AR. |
 
 ### Open (4)
 

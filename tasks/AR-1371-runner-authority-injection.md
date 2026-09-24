@@ -7,7 +7,7 @@
     "AR-1288"
   ],
   "id": "AR-1371",
-  "next_action": "PR #271 exact head 7c25e6e is published. Headers and AWQ shadow checks pass; all other required hosted checks are pending. gh pr checks exit 8 is the CLI pending-status code, not a gate failure. Keep lease, monitor exact-head checks, and merge only after every required check is green.",
+  "next_action": "PR #271 merged as 3f0b67638647dc016f7d5abd3e246baf3ae4ec29 after all 12 exact-head checks passed. Seven post-merge workflows are running; monitor all to terminal success before releasing AR.",
   "observed_branch": "feature/ar-1371-runner-authority-injection",
   "observed_dirty": 0,
   "observed_head": "7c25e6ee94ff8d2efea5a3213e7f0285dc9a8ffb",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Inject existing authenticated certificate authority and runtime enrollment material into RunnerBackend/Catalog without synthetic authority.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Runner authority injection",
-  "updated_at": "2026-09-24T01:23:30+00:00",
+  "updated_at": "2026-09-24T01:24:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1371-runner-authority-injection"
 }
 ---
@@ -167,3 +167,8 @@ trust or launch authority from CLI/config input.
 
 - 2026-09-24T01:23:30+00:00: Recorded command exit 0; command argv SHA-256
   cc92bd1752fb642b6572ec989bfb37a4f4d69ca558523c2a868ac6e487c24ecf.
+
+- 2026-09-24T01:24:03+00:00: Protected merge completed through handoffctl. Post-merge workflows for
+  exact merge 3f0b6763: Formal assurance, Repository quality, Hosted portability/native
+  qualification, Fault assurance, Emulated aarch64, Rust verification in progress; Huawei MIT
+  headers already green.
