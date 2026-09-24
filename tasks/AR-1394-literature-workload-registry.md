@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Catalog every documented literature benchmark with provenance and truthful qualification status.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Literature workload registry expansion",
-  "updated_at": "2026-09-24T08:29:08+00:00",
+  "updated_at": "2026-09-24T08:29:17+00:00",
   "worktree_key": ""
 }
 ---
@@ -155,3 +155,6 @@ datasets and does not claim native or evaluator qualification.
 - 2026-09-24T08:28:20+00:00: Heartbeat by codex-asb-ar1394-literature-registry-luna56.
 
 - 2026-09-24T08:29:08+00:00: Heartbeat by codex-asb-ar1394-literature-registry-luna56.
+
+- 2026-09-24T08:29:17+00:00: Recorded command exit 0; command argv SHA-256
+  c3d25cfa4867696c88ba162a6f56c1de18e2ca3b5b60f8b6b5a504fc45c3782c.
