@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1365-control-receipt-source-integration",
-  "checkpoint_commit": "6959cc1810265e026a9af40602752fdca4dc1e18",
+  "checkpoint_commit": "aa537f6a07ac3476a8c4d6443a8df3c42a1aebc1",
   "claim_expires": "2026-09-24T02:06:02+00:00",
   "depends_on": [
     "AR-1362",
     "AR-1364"
   ],
   "id": "AR-1365",
-  "next_action": "PR #269 is open at exact head 6959cc1810265e026a9af40602752fdca4dc1e18. Monitor all required exact-head checks; diagnose and repair any failure through governed workflow, merge only after independent review and all checks green, then verify seven post-merge workflows.",
+  "next_action": "PR #269 merged as aa537f6a07ac3476a8c4d6443a8df3c42a1aebc1. Monitor seven post-merge workflows for exact merge SHA; release only after every workflow is terminal success.",
   "observed_branch": "feature/ar-1365-control-receipt-source-integration",
   "observed_dirty": 0,
   "observed_head": "6959cc1810265e026a9af40602752fdca4dc1e18",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate authenticated chain and authority enrollment into the versioned control receipt source.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Control receipt source integration",
-  "updated_at": "2026-09-24T00:07:06+00:00",
+  "updated_at": "2026-09-24T00:07:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1365-control-receipt-source-integration"
 }
 ---
@@ -83,3 +83,7 @@ AR-1364. Do not touch asb-tui or synthesize authority from CLI/config input.
 
 - 2026-09-24T00:07:06+00:00: Recorded command exit 0; command argv SHA-256
   3ac7933f60057b62db960dd03ad6259ab646e726fde5455eae4953c5614758ba.
+
+- 2026-09-24T00:07:45+00:00: Protected merge verified: PR #269 exact head
+  6959cc1810265e026a9af40602752fdca4dc1e18 merged at aa537f6a07ac3476a8c4d6443a8df3c42a1aebc1 after
+  all 12 required checks passed and final signature/DCO/diff review.

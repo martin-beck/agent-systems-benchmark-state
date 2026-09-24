@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1365](tasks/AR-1365-control-receipt-source-integration.md): Control receipt source integration | Integrate authenticated chain and authority enrollment into the versioned control receipt source. | PR #269 is open at exact head 6959cc1810265e026a9af40602752fdca4dc1e18. Monitor all required exact-head checks; diagnose and repair any failure through governed workflow, merge only after independent review and all checks green, then verify seven post-merge workflows. | codex-asb-runtime-attested-enrollment-luna56 |
+| P0 | [AR-1365](tasks/AR-1365-control-receipt-source-integration.md): Control receipt source integration | Integrate authenticated chain and authority enrollment into the versioned control receipt source. | PR #269 merged as aa537f6a07ac3476a8c4d6443a8df3c42a1aebc1. Monitor seven post-merge workflows for exact merge SHA; release only after every workflow is terminal success. | codex-asb-runtime-attested-enrollment-luna56 |
 
 ## Open
 
