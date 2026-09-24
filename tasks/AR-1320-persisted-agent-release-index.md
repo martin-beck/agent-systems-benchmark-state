@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist and verify the ASB agent release index used by the setup wizard.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Persisted authenticated agent release index",
-  "updated_at": "2026-09-24T20:06:23+00:00",
+  "updated_at": "2026-09-24T20:06:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1320-persisted-agent-release-index"
 }
 ---
@@ -48,3 +48,6 @@ before any agent can become selectable.
 
 - 2026-09-24T20:06:23+00:00: Recorded command exit 0; command argv SHA-256
   71531a0b8db072e74e1be8fcb4dcc3791a496bd6885b52fe7c3337a1437c2cce.
+
+- 2026-09-24T20:06:38+00:00: Recorded command exit 0; command argv SHA-256
+  2a19ad50a4059654290db561f3a71d2d2a757a00155e3815a39fa7078174c740.
