@@ -11,7 +11,7 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #119 | `feature/native-capacity-controller@e2e3574ed2bb` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(capacity): add bounded native lifecycle controller |
-| #302 | `codex/ar-1410-literature-selector-parity@8a1e031b1060` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(workloads): complete literature selector parity |
+| #302 | `codex/ar-1410-literature-selector-parity@8a1e031b1060` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(workloads): complete literature selector parity |
 
 ## Recent workflows
 
@@ -20,7 +20,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36031480045 | `8a1e031b1060` | pull_request | Fault assurance | in_progress:- |
 | 36031479953 | `8a1e031b1060` | pull_request | Formal assurance | in_progress:- |
 | 36031479935 | `8a1e031b1060` | pull_request | Hosted portability and native qualification | in_progress:- |
-| 36031479932 | `8a1e031b1060` | pull_request | Emulated aarch64 portability | pending:- |
+| 36031479932 | `8a1e031b1060` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 36031479925 | `8a1e031b1060` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36031479891 | `8a1e031b1060` | pull_request | Repository quality | in_progress:- |
 | 36031479882 | `8a1e031b1060` | pull_request | Huawei MIT source headers | completed:success |
