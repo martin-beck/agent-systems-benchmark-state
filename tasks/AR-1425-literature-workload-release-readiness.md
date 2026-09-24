@@ -25,3 +25,10 @@
 This is a final audit and integration gate. It never requires live providers,
 upstream dataset downloads, native hosts, or signed bundles for development
 fixtures; those remain independently labeled evidence boundaries.
+
+Its evidence table must cover the seven built-in software-engineering fixtures
+plus SWE-bench Lite/Verified and Pro, Terminal-Bench, Aider Polyglot and
+Exercism tracks, BigCodeBench, EvalPlus, LiveCodeBench, SWE-Lancer, SWE-rebench,
+SWE-Perf, SWE-fficiency, CORE-Bench, AgentBench, tau-bench, and AgentDojo.
+Harbor, Inspect AI, HAL, AgentOps, and HELM remain explicit non-workload
+boundaries unless separately proven.

@@ -9,6 +9,15 @@ the required local/mock evidence, and every non-selectable record explains its
 boundary without weakening native, evaluator, license, reproducibility, or
 privacy gates.
 
+The evidence table must enumerate the seven built-in software-engineering
+fixtures and every benchmark family named by the literature docs: SWE-bench
+Lite/Verified and Pro, Terminal-Bench, Aider Polyglot and Exercism tracks,
+BigCodeBench, EvalPlus (HumanEval+/MBPP+), LiveCodeBench, SWE-Lancer,
+SWE-rebench, SWE-Perf, SWE-fficiency, CORE-Bench, AgentBench, tau-bench, and
+AgentDojo. Harbor, Inspect AI, HAL, AgentOps, and HELM remain explicit
+non-workload boundaries unless a later AR proves a task protocol and
+independent grader.
+
 ## Dependencies
 
 - AR-1424 (complete selector and campaign matrix)
