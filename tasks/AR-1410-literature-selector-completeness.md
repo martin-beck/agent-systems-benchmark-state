@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Literature selector completeness and parity",
-  "updated_at": "2026-09-24T16:48:06+00:00",
+  "updated_at": "2026-09-24T16:48:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1410"
 }
 ---
@@ -99,3 +99,6 @@ does not turn external qualification or live-provider access into a prerequisite
   linux-x86_64:fixture-only and availability FixtureOnly. Diagnostic exact test rerun passed after
   updating the stale assertion; the broader literature suite then passed 12 tests. No failure was
   suppressed.
+
+- 2026-09-24T16:48:13+00:00: Recorded command exit 0; command argv SHA-256
+  39cc7ba0141883dda4f072a319ea07bf7c233ae3c65451a6a6612b8e7c326482.
