@@ -4,10 +4,11 @@
   "checkpoint_commit": "",
   "claim_expires": "",
   "depends_on": [
-    "AR-1395"
+    "AR-1395",
+    "AR-1399"
   ],
   "id": "AR-1396",
-  "next_action": "Promote after AR-1395 is done, then wire literature workload IDs into the catalog, plan validation, CLI selection, replay and reports.",
+  "next_action": "Promote after AR-1395 and AR-1399 are done, then wire every registry-backed literature family into catalog, plan validation, CLI selection, replay and reports.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",

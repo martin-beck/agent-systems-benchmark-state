@@ -7,6 +7,15 @@ software-engineering fixtures in the ASB workload catalog and experiment-plan
 selection flow. Selection must be explicit, reproducible, and truthful about
 availability; it must not trigger an implicit download or external provider.
 
+The selectable namespace must cover the built-in engineering fixtures plus all
+registry-backed literature families from `docs/WORKLOADS.md` and
+`docs/RELATED_WORK.md`: SWE-bench variants, Aider Polyglot and Exercism,
+Terminal-Bench, SWE-Perf, SWE-fficiency, CORE-Bench, BigCodeBench, EvalPlus,
+LiveCodeBench, SWE-Lancer, SWE-rebench, Harbor, Inspect AI, HAL-compatible
+tasks, AgentBench, tau-bench and AgentDojo. Methodology-only references such as
+AgentOps and HELM stay visible as non-selectable references unless a concrete
+workload record is later added.
+
 ## Acceptance
 
 - `list/describe/plan/run/sweep` (or their current equivalents) enumerate
