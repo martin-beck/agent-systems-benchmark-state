@@ -33,7 +33,7 @@ Generated from local Git and GitHub. Do not edit.
 | 35993560120 | `e0b15fc23be8` | push | Fault assurance | queued:- |
 | 35993560118 | `e0b15fc23be8` | push | Hosted portability and native qualification | in_progress:- |
 | 35993560100 | `e0b15fc23be8` | push | Emulated aarch64 portability | in_progress:- |
-| 35993560087 | `e0b15fc23be8` | push | Formal assurance | queued:- |
+| 35993560087 | `e0b15fc23be8` | push | Formal assurance | in_progress:- |
 | 35993560063 | `e0b15fc23be8` | push | Rust verification | in_progress:- |
 | 35992633429 | `3420355d8a08` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 35992633416 | `3420355d8a08` | pull_request | Formal assurance | completed:success |
