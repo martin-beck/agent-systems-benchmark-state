@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1329-live-provider-run-execution",
   "checkpoint_commit": "a336d6744b1a82f36a706ec606b847c92d49cfd3",
-  "claim_expires": "2026-09-24T06:37:55+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1327",
     "AR-1328",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1329-live-provider-run-execution",
   "observed_dirty": 0,
   "observed_head": "04b4c067055073031cd6d88cf18f0d158f488ad0",
-  "owner": "codex-asb-runtime-receipt-source-luna56",
+  "owner": "",
   "plan": "../plans/AR-1329.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Execute real agents against the selected provider through asb run and sweep with credential-free resolution.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Live-provider run execution for real agents",
-  "updated_at": "2026-09-24T04:38:42+00:00",
+  "updated_at": "2026-09-24T04:39:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1329-live-provider-run-execution"
 }
 ---
@@ -190,3 +190,10 @@ the digest-pinned mode remain default and never touch the network.
 
 - 2026-09-24T04:38:42+00:00: Recorded command exit 0; command argv SHA-256
   286135258494dbd54e39008e25f49688ba0cf41ce7867f34659d6993e4c009c5.
+
+- 2026-09-24T04:39:01+00:00: Re-audit after merged AR-1380/1381: runtime scheduler and CLI factory
+  wiring are present, but no atomic runtime-owned source constructs LiveProviderRuntimeHandle from
+  authenticated enrollment/control state for the actual asb run/sweep command. Existing CLI only
+  accepts an externally supplied scheduler; accepting caller authority or synthesizing
+  credentials/chain is forbidden. No safe product diff remains in AR-1329. Create successor for
+  authenticated runtime execution-source materialization.
