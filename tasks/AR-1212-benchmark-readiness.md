@@ -1,13 +1,13 @@
 ---
 {
   "branch": "codex/ar-1212-benchmark-readiness",
-  "checkpoint_commit": "0edd9935ca907aac736d3244bdd00d9a47d687e8",
+  "checkpoint_commit": "b142bdde19bf00d0fdffcdbca3c965d2d457b808",
   "claim_expires": "2026-09-24T20:50:15+00:00",
   "depends_on": [
     "AR-1211"
   ],
   "id": "AR-1212",
-  "next_action": "PR #305 is published at exact signed head; obtain independent review, wait for all required checks, then merge and verify post-merge workflows.",
+  "next_action": "PR #305 rerun is active at exact signed head b142bdd; obtain independent review, wait for all required checks, then merge and verify post-merge workflows.",
   "observed_branch": "codex/ar-1212-benchmark-readiness",
   "observed_dirty": 0,
   "observed_head": "b142bdde19bf00d0fdffcdbca3c965d2d457b808",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach users to test configured-agent benchmark eligibility without running an agent.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Agent benchmark-readiness tutorial",
-  "updated_at": "2026-09-24T18:59:22+00:00",
+  "updated_at": "2026-09-24T19:00:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1212"
 }
 ---
@@ -99,3 +99,6 @@ Implement the linked tutorial and deterministic negative/positive syntax fixture
 
 - 2026-09-24T18:59:22+00:00: Recorded command exit 0; command argv SHA-256
   4db0cac5e5fb88ac4d08cd2d0e39e37ea68089de76bebf3f581b66424312180d.
+
+- 2026-09-24T19:00:29+00:00: Corrected tutorial to pinned OpenRouter free model; signed commit
+  b142bdd pushed to PR #305. Validator 15/15 and diff check passed.

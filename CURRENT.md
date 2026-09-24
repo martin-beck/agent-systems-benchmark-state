@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1212](tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Teach users to test configured-agent benchmark eligibility without running an agent. | PR #305 is published at exact signed head; obtain independent review, wait for all required checks, then merge and verify post-merge workflows. | open-pr-triage-luna56 |
+| P0 | [AR-1212](tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Teach users to test configured-agent benchmark eligibility without running an agent. | PR #305 rerun is active at exact signed head b142bdd; obtain independent review, wait for all required checks, then merge and verify post-merge workflows. | open-pr-triage-luna56 |
 | P0 | [AR-1316](tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | Publish the verified ASB agent catalog required by the first-run setup wizard. | Open PR from exact current main base and monitor required checks. | ar1316-authenticated-agent-catalog-producer-luna56 |
 
 ## Blocked
