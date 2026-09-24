@@ -8,6 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1409](tasks/AR-1409-interactive-literature-adapters.md): Interactive literature workload adapters | Add offline-selectable interactive and tool-use literature workload adapters. | PR #300 exact base e4d8e7a70b2cce6f740bb8ababd145295ecc2665/head 6f93076afa1af5eca0d33a693106e60f70e4ea5b published; monitor all required checks, obtain independent review, then merge only through handoffctl. | ar1409_interactive_literature_luna56 |
+| P2 | [AR-1406](tasks/AR-1406-action-pin-policy-migration.md): Action pin policy migration | Qualify and merge remaining immutable GitHub action pin updates without weakening policy. | Bind isolated worktree before product inspection; qualify immutable action commits for PRs #235/#234/#148 and merge only after policy and exact-head gates pass. | ar1406-action-pin-recovery-luna56 |
 
 ## Open
 
@@ -15,7 +16,6 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1212](tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Teach users to test configured-agent benchmark eligibility without running an agent. | Implement the offline tutorial for checking agent benchmark readiness under the current configuration. | - |
 | P0 | [AR-1316](tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | Publish the verified ASB agent catalog required by the first-run setup wizard. | Persist the authenticated catalog snapshot/generation and complete live ASB-to-asb-tui wizard evidence; keep all entries unavailable until a verified release closure exists. | - |
-| P2 | [AR-1406](tasks/AR-1406-action-pin-policy-migration.md): Action pin policy migration | Qualify and merge remaining immutable GitHub action pin updates without weakening policy. | Bind isolated worktree before product inspection; qualify immutable action commits for PRs #235/#234/#148 and merge only after policy and exact-head gates pass. | - |
 
 ## Blocked
 

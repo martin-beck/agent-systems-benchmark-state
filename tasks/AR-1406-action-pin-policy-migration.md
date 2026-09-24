@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar-1406-action-pin-policy",
   "checkpoint_commit": "0000000000000000000000000000000000000000",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T17:36:47+00:00",
   "depends_on": [
     "AR-1405"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "",
+  "owner": "ar1406-action-pin-recovery-luna56",
   "plan": "../plans/AR-1406-action-pin-policy-migration.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Qualify and merge remaining immutable GitHub action pin updates without weakening policy.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Action pin policy migration",
-  "updated_at": "2026-09-24T15:35:39+00:00",
+  "updated_at": "2026-09-24T15:36:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1406"
 }
 ---
@@ -39,3 +39,5 @@ No floating action reference or unverifiable release identity is acceptable.
 
 - 2026-09-24T15:35:39+00:00: Previous worker stopped after safely identifying the missing binding;
   coordinator repaired binding in 2cddc92d0/ec4e44d0b. Release stale owner for recovery worker.
+
+- 2026-09-24T15:36:47+00:00: Claimed by ar1406-action-pin-recovery-luna56.
