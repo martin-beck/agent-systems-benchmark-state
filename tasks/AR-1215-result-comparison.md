@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach conservative comparison of multiple agents from the same benchmark.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Multi-agent result comparison tutorial",
-  "updated_at": "2026-09-24T20:58:32+00:00",
+  "updated_at": "2026-09-24T20:58:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1215"
 }
 ---
@@ -78,3 +78,6 @@ commands in tutorial syntax CI.
   ruff module.
 
 - 2026-09-24T20:58:21+00:00: Heartbeat by codex-ar1215-luna56.
+
+- 2026-09-24T20:58:35+00:00: Recorded command exit 0; command argv SHA-256
+  17b5bfc2e8d47126c0508a5c457b6c51a374b2cea4dc6b250e438259560e45e3.
