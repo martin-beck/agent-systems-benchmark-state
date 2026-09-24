@@ -8,7 +8,7 @@
     "AR-1398"
   ],
   "id": "AR-1421",
-  "next_action": "PR #308 merged as 10b16186. Monitor exact-main post-merge workflow IDs 36052764434,36052764446,36052764452,36052764458,36052764507,36052764675,36052764433 to terminal SUCCESS; then verify merged tree/signature/DCO and release.",
+  "next_action": "Release AR-1421 done: merged tree equals reviewed topic tree e5d99b7; parents are 5ddac12 and 28e3560; topic passes SSH signature and DCO. Seven exact-main workflows all terminal SUCCESS.",
   "observed_branch": "codex/ar-1421-protected-main-race",
   "observed_dirty": 0,
   "observed_head": "28e35608a2a87f53afa70732ca1b51aa57aa360b",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair protected-main merge-tree requalification after a literature PR merges onto an advanced main.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Protected-main literature merge race repair",
-  "updated_at": "2026-09-24T20:19:33+00:00",
+  "updated_at": "2026-09-24T20:20:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1421"
 }
 ---
@@ -254,3 +254,10 @@ the merge released before fresh exact-main evidence succeeds.
 
 - 2026-09-24T20:19:33+00:00: Recorded command exit 0; command argv SHA-256
   fca91ed9213d0841d5c151d7fdbec40409bf8ac6c6e019ba127ee2d0b067229b.
+
+- 2026-09-24T20:20:04+00:00: Final evidence verified: origin/main is merge 10b16186; merge tree
+  e5d99b7 equals reviewed topic tree e5d99b7; exact parents are protected base 5ddac12 and signed
+  topic 28e3560. check_dco.py certifies topic range and SSH verify-commit certifies 28e3560. All
+  seven post-merge runs terminal SUCCESS: 36052764434, 36052764446, 36052764452, 36052764458,
+  36052764507, 36052764675, 36052764433. Historical failures 36048870322 and 36048870234 remain
+  preserved.
