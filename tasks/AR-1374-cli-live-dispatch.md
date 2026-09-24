@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1374-cli-live-dispatch",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-24T04:33:24+00:00",
+  "claim_expires": "2026-09-24T04:34:44+00:00",
   "depends_on": [
     "AR-1373",
     "AR-1339",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Consume authenticated runtime receipts in production asb run and sweep dispatch.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Production live-provider dispatch",
-  "updated_at": "2026-09-24T02:33:24+00:00",
+  "updated_at": "2026-09-24T02:34:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1374-cli-live-dispatch"
 }
 ---
@@ -38,3 +38,5 @@ execution and teardown are verified.
   promote production dispatch successor.
 
 - 2026-09-24T02:33:24+00:00: Claimed by codex-asb-runtime-receipt-source-luna56.
+
+- 2026-09-24T02:34:44+00:00: Heartbeat by codex-asb-runtime-receipt-source-luna56.
