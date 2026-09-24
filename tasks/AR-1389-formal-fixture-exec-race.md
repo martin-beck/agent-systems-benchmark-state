@@ -4,7 +4,7 @@
   "checkpoint_commit": "",
   "claim_expires": "",
   "depends_on": [
-    "AR-1388"
+    "AR-1384"
   ],
   "id": "AR-1389",
   "next_action": "Promote after AR-1388 release evidence is reconciled, then bind an isolated worktree and repair the evidenced formal fixture ETXTBSY race without weakening gates.",

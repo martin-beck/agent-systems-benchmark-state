@@ -9,7 +9,8 @@ weaken offline, cache-integrity, bounded-execution, or fail-closed assertions.
 
 ## Dependencies
 
-AR-1388 is merged at `8c88b9ec9b4f529ebe30cb230029b2575ad4e6e5`, but its
+AR-1384 supplies the released product baseline. AR-1388 is merged at
+`8c88b9ec9b4f529ebe30cb230029b2575ad4e6e5`, but its
 post-merge Formal assurance workflow `35967157429` failed in
 `formal/tests/tla_artifact_acquisition.rs:332` during
 `bounded_online_build_and_verified_cache_reuse_succeed` with OS error 26,
