@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize runtime-owned provider authority from authenticated receipt and chain state.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Runtime authority receipt materializer",
-  "updated_at": "2026-09-24T06:41:06+00:00",
+  "updated_at": "2026-09-24T06:43:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1388-runtime-authority-materializer"
 }
 ---
@@ -39,3 +39,6 @@ namespace identity, or launch tokens.
 - 2026-09-24T06:41:03+00:00: Claimed by codex-asb-ar1329-repair-luna56.
 
 - 2026-09-24T06:41:06+00:00: Heartbeat by codex-asb-ar1329-repair-luna56.
+
+- 2026-09-24T06:43:47+00:00: Recorded command exit 1; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
