@@ -31,7 +31,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 35952449649 | `1113375a0f4f` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 35952449646 | `1113375a0f4f` | pull_request | Hosted portability and native qualification | completed:failure |
-| 35952449642 | `1113375a0f4f` | pull_request | Fault assurance | in_progress:- |
+| 35952449642 | `1113375a0f4f` | pull_request | Fault assurance | completed:success |
 | 35952449641 | `1113375a0f4f` | pull_request | Rust verification | in_progress:- |
 | 35952449640 | `1113375a0f4f` | pull_request | Formal assurance | in_progress:- |
 | 35952449636 | `1113375a0f4f` | pull_request | Repository quality | completed:failure |
