@@ -10,7 +10,7 @@
     "AR-1377"
   ],
   "id": "AR-1388",
-  "next_action": "Verify all seven post-merge workflows green at merge commit 8c88b9ec9b4f529ebe30cb230029b2575ad4e6e5, then release AR-1388.",
+  "next_action": "Coordinator must create/promote AR-1389 dependent on AR-1388 for the evidenced formal fixture ETXTBSY repair; do not mutate released AR-1388 branch.",
   "observed_branch": "feature/ar-1388-runtime-authority-materializer",
   "observed_dirty": 0,
   "observed_head": "581847921990c064b5185a9e66a788a474ffcc33",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize runtime-owned provider authority from authenticated receipt and chain state.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Runtime authority receipt materializer",
-  "updated_at": "2026-09-24T07:04:01+00:00",
+  "updated_at": "2026-09-24T07:04:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1388-runtime-authority-materializer"
 }
 ---
@@ -106,3 +106,10 @@ namespace identity, or launch tokens.
 
 - 2026-09-24T07:04:01+00:00: Recorded command exit 0; command argv SHA-256
   2d37d16cfddd82637fe57282d75b6bcee241010e33b23e2a5e3e500f2d1d981a.
+
+- 2026-09-24T07:04:52+00:00: Post-merge Formal assurance run 35967157429 failed in
+  formal/tests/tla_artifact_acquisition.rs:332,
+  bounded_online_build_and_verified_cache_reuse_succeed: Os code 26 ExecutableFileBusy (Text file
+  busy) launching generated fixture runner. Focused test and full 9-test tla_artifact_acquisition
+  suite pass locally, confirming transient fixture spawn race. AR-1388 merge remains valid; repair
+  requires a new AR/PR, not mutation of released branch. External provider boundary unaffected.
