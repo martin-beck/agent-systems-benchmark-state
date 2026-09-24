@@ -51,14 +51,13 @@
 
 ## Complete AR inventory
 
-### In progress (4)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1314](../tasks/AR-1314-optional-bundle-signing-development-release.md): Optional runtime-bundle signing for development and tagged releases | ar1314_bundle_profile_repair_luna56 | Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile. | Blocked on AR-1397 integration repair: post-merge Repository quality rejects c58b0b0 tree against reviewed topic after AR-1395 advanced main, and c58 Rust workflow dispatch 35980460560 was cancelled by a higher-priority waiting request for refs/heads/main. Preserve all evidence; after AR-1397 repair and queue quiescence, rerun all seven exact-main workflows including Rust. |
 | P0 | [AR-1397](../tasks/AR-1397-protected-main-postmerge-concurrency-repair.md): Protected-main post-merge concurrency and tree repair | ar1397-protected-main-repair-luna56 | Repair protected-main merge-tree admission and serialize exact post-merge evidence across concurrent main pushes. | Preserve merge 123ba915d2732ee8a6c99fae301bfd64cf0aac4f and its seven successful post-merge runs as immutable evidence; it has exact tree/parents but GitHub-generated signature E and no matching Signed-off-by trailer. Create a signed descendant repair AR through the local merge path, then rerun exact-main gates before closing AR-1314/AR-1395/AR-1397. |
 | P0 | [AR-1398](../tasks/AR-1398-signed-protected-main-recovery.md): Signed protected-main recovery | ar1398_signed_recovery_luna56 | Restore signed+DCO protected-main evidence after an unsigned GitHub-generated repair merge. | Open PR from repair/ar-1398-signed-protected-main-recovery; run independent review, exact-head gates, protected merge, and seven exact-main post-merge workflows. |
-| P1 | [AR-1399](../tasks/AR-1399-literature-workload-registry-completeness.md): Literature workload registry completeness | ar1399_literature_registry_luna56 | Represent every docs-listed literature workload family in the strict ASB registry. | Dependency branch e63a3c6 already contains complete six executable-candidate literature records and methodology-only AgentOps/HELM; focused validator/tests pass. Await parent integration decision; no duplicate product delta. |
 
 ### Open (2)
 
@@ -217,7 +216,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (265)
+### Done (266)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -472,6 +471,7 @@
 | P1 | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md): Runtime-owned live bootstrap | Unclaimed | Add the private runtime-owned bootstrap source for live acquisition. | Release AR-1352 done with merge and post-merge evidence; advance dependent AR-1349 while keeping AR-1329 fail-closed. |
 | P1 | [AR-1394](../tasks/AR-1394-literature-workload-registry.md): Literature workload registry expansion | Unclaimed | Catalog every documented literature benchmark with provenance and truthful qualification status. | Promote after the existing provenance ARs are verified, then add the strict literature workload inventory schema, entries, and generated docs. |
 | P1 | [AR-1395](../tasks/AR-1395-literature-workload-adapters.md): Literature workload adapter boundary | Unclaimed | Normalize approved literature tasks through bounded, non-vendored ASB workload adapters. | Exact merge post-merge Repository quality and Rust runs were cancelled by later main push c58b0b0a; after that main queue terminates, rerun both exact merge workflows and require success before release. |
+| P1 | [AR-1399](../tasks/AR-1399-literature-workload-registry-completeness.md): Literature workload registry completeness | Unclaimed | Represent every docs-listed literature workload family in the strict ASB registry. | Dependency branch e63a3c6 already contains complete six executable-candidate literature records and methodology-only AgentOps/HELM; focused validator/tests pass. Await parent integration decision; no duplicate product delta. |
 | P2 | [AR-0202](../tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Unclaimed | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Run final exact-main and local post-merge verification using required native x86_64 kernel evidence and applicable pinned QEMU AArch64 portability checks; record native ARM64 PMU/eBPF as optional future evidence, then release. |
 | P2 | [AR-0308](../tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | Unclaimed | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Run final state validation/live doctor and release done after confirming clean synchronized product/state refs at signed merge a0d80e4. |
 | P2 | [AR-0309](../tasks/AR-0309-agent-openhands.md): Implement maintained OpenHands SDK client adapter | Unclaimed | Run a maintained MIT OpenHands SDK or canonical headless client. | Monitor PR #65 exact-head CI for fec0487, investigate any failure, and await final review; do not merge. |

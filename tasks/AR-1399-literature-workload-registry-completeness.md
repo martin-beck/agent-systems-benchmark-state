@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1399-literature-workload-registry-completeness",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-24T12:02:26+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1394"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "ar1399_literature_registry_luna56",
+  "owner": "",
   "plan": "../plans/AR-1399-literature-workload-registry-completeness.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Represent every docs-listed literature workload family in the strict ASB registry.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Literature workload registry completeness",
-  "updated_at": "2026-09-24T10:02:36+00:00",
+  "updated_at": "2026-09-24T10:04:15+00:00",
   "worktree_key": ""
 }
 ---
@@ -43,3 +43,8 @@ native evidence gates.
   explicit-download/non-vendored executable-candidate records with planned evaluator/native
   evidence; AgentOps, HELM and AI Agents That Matter are methodology-only. python3
   tools/quality/validate_external_registry.py reports 22 and focused pytest reports 11 passed.
+
+- 2026-09-24T10:04:15+00:00: No duplicate product change: AR-1394 PR #284 merged exact signed+DCO
+  head e63a3c6, and its registry/docs already contain all AR-1399 literature records. Focused
+  validator reports 22 records; 11 focused tests pass. Six executable candidates remain
+  planned/unavailable; AgentOps/HELM methodology-only.
