@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #313 | `ci/ar-1216-tutorial-freshness@ac93654ed1f7` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | ci(tutorials): add repository freshness gate |
+| #313 | `ci/ar-1216-tutorial-freshness@ac93654ed1f7` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | ci(tutorials): add repository freshness gate |
 
 ## Recent workflows
 
@@ -27,4 +27,4 @@ Generated from local Git and GitHub. Do not edit.
 | 36065530715 | `ac93654ed1f7` | pull_request | Repository quality | in_progress:- |
 | 36065530693 | `ac93654ed1f7` | pull_request | Hosted portability and native qualification | completed:success |
 | 36065530640 | `ac93654ed1f7` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 36065530639 | `ac93654ed1f7` | pull_request | Fault assurance | in_progress:- |
+| 36065530639 | `ac93654ed1f7` | pull_request | Fault assurance | completed:success |
