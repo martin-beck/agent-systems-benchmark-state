@@ -10,21 +10,20 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #119 | `feature/native-capacity-controller@4630f90af739` | `main` | CLEAN | - | feat(capacity): add bounded native lifecycle controller |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 36050963131 | `4630f90af739` | pull_request | Repository quality | in_progress:- |
+| 36050963116 | `4630f90af739` | pull_request | Rust verification | in_progress:- |
+| 36050963114 | `4630f90af739` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 36050963083 | `4630f90af739` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 36050963067 | `4630f90af739` | pull_request | Huawei MIT source headers | completed:success |
+| 36050963066 | `4630f90af739` | pull_request | Fault assurance | in_progress:- |
+| 36050963028 | `4630f90af739` | pull_request | Formal assurance | in_progress:- |
+| 36050962997 | `4630f90af739` | pull_request | Hosted portability and native qualification | in_progress:- |
 | 36048870322 | `5ddac12fc0b2` | push | Repository quality | completed:failure |
 | 36048870321 | `5ddac12fc0b2` | push | Emulated aarch64 portability | completed:success |
 | 36048870276 | `5ddac12fc0b2` | push | Huawei MIT source headers | completed:success |
 | 36048870244 | `5ddac12fc0b2` | push | Formal assurance | completed:success |
-| 36048870234 | `5ddac12fc0b2` | push | Rust verification | completed:failure |
-| 36048870225 | `5ddac12fc0b2` | push | Fault assurance | completed:success |
-| 36048870218 | `5ddac12fc0b2` | push | Hosted portability and native qualification | completed:success |
-| 36048088861 | `a2a641417547` | push | Rust verification | completed:success |
-| 36048088820 | `a2a641417547` | push | Fault assurance | completed:success |
-| 36048088790 | `a2a641417547` | push | Formal assurance | completed:success |
-| 36048088771 | `a2a641417547` | push | Hosted portability and native qualification | completed:success |
-| 36048088715 | `a2a641417547` | push | Repository quality | completed:success |
