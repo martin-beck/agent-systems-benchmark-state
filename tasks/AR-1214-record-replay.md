@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach privacy-safe LLM response recording and strict offline replay.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "LLM response record/replay tutorial",
-  "updated_at": "2026-09-24T20:50:37+00:00",
+  "updated_at": "2026-09-24T20:50:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1214"
 }
 ---
@@ -36,3 +36,6 @@ permitted in its CI job.
 
 - 2026-09-24T20:50:26+00:00: Recorded command exit 1; command argv SHA-256
   f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
+
+- 2026-09-24T20:50:49+00:00: Recorded command exit 0; command argv SHA-256
+  2d38edf177861c5a047b027bc97b0f33013542bfed742b552267cd5e5287dad3.
