@@ -8,7 +8,7 @@
     "AR-1401"
   ],
   "id": "AR-1413",
-  "next_action": "Monitor post-merge merge=e4d8e7a70b2cce6f740bb8ababd145295ecc2665 workflows 36018871328,36018871319,36018871323,36018871335,36018871358,36018871362,36018871340; release only after all seven terminal success.",
+  "next_action": "Continue monitoring post-merge IDs 36018871328/36018871323/36018871358; runner/job APIs show active in-progress steps, so do not rerun. Release only after all seven terminal success.",
   "observed_branch": "codex/ar-1413-long-horizon-performance",
   "observed_dirty": 0,
   "observed_head": "f78fbabafb84949826d047d31b5e1770a98b8157",
@@ -17,10 +17,10 @@
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "PR #299 merged as signed exact-head e4d8e7a7 after all 12 checks succeeded; seven post-merge workflows are running.",
-  "task_revision": 42,
+  "summary": "Seven post-merge runs: four terminal success; aarch64, repository quality, and Rust remain actively executing on GitHub-hosted runners.",
+  "task_revision": 43,
   "title": "Long-horizon and performance literature workload adapters",
-  "updated_at": "2026-09-24T15:20:33+00:00",
+  "updated_at": "2026-09-24T15:22:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1413"
 }
 ---
@@ -149,3 +149,10 @@ bounded local fixtures or LiteLLM-compatible mocks only.
 - 2026-09-24T15:18:56+00:00: Heartbeat by ar1413_long_horizon_performance_luna56.
 
 - 2026-09-24T15:20:33+00:00: Heartbeat by ar1413_long_horizon_performance_luna56.
+
+- 2026-09-24T15:22:12+00:00: At 15:21Z inspection, jobs are live rather than unknown: aarch64 job
+  107698335800 on runner GitHub Actions 1000075544 actively materializing immutable guest userspace;
+  quality job 107698336176 on runner 1000075550 actively enforcing coverage floors; Rust job
+  107698335998 on runner 1000075540 actively running Release build and CLI. Formal 36018871362,
+  fault 36018871335, hosted 36018871319, and headers 36018871340 are terminal success. Preserve
+  exact evidence and wait; no rerun or gate weakening.

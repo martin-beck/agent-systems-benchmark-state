@@ -74,7 +74,7 @@
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1409](../tasks/AR-1409-interactive-literature-adapters.md): Interactive literature workload adapters | ar1409_interactive_literature_luna56 | Add offline-selectable interactive and tool-use literature workload adapters. | Promote after AR-1408 and AR-1401 are done; implement local deterministic adapters and catalog selection for AgentBench, tau-bench, and AgentDojo. |
-| P1 | [AR-1413](../tasks/AR-1413-long-horizon-performance-adapters.md): Long-horizon and performance literature workload adapters | ar1413_long_horizon_performance_luna56 | PR #299 merged as signed exact-head e4d8e7a7 after all 12 checks succeeded; seven post-merge workflows are running. | Monitor post-merge merge=e4d8e7a70b2cce6f740bb8ababd145295ecc2665 workflows 36018871328,36018871319,36018871323,36018871335,36018871358,36018871362,36018871340; release only after all seven terminal success. |
+| P1 | [AR-1413](../tasks/AR-1413-long-horizon-performance-adapters.md): Long-horizon and performance literature workload adapters | ar1413_long_horizon_performance_luna56 | Seven post-merge runs: four terminal success; aarch64, repository quality, and Rust remain actively executing on GitHub-hosted runners. | Continue monitoring post-merge IDs 36018871328/36018871323/36018871358; runner/job APIs show active in-progress steps, so do not rerun. Release only after all seven terminal success. |
 
 ### Open (3)
 
