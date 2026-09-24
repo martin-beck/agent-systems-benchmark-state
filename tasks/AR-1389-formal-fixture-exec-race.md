@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the formal online-build fixture race that caused ETXTBSY after AR-1388 merge.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Formal fixture executable race repair",
-  "updated_at": "2026-09-24T07:24:00+00:00",
+  "updated_at": "2026-09-24T07:24:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1389-formal-fixture-exec-race"
 }
 ---
@@ -78,3 +78,6 @@ privacy, offline, boundedness, and local-mock boundaries.
   32-iteration stress regression included. SSH signature and matching DCO verified. All 12
   exact-head checks green; PR mergeable. External provider remains optional/local mock boundary
   intact.
+
+- 2026-09-24T07:24:12+00:00: Recorded command exit 0; command argv SHA-256
+  c86cfea94cae5a358369633bf8578516f94faed64b74b5f5c9a6f7e36f18eee4.
