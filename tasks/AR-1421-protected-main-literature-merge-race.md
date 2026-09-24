@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair protected-main merge-tree requalification after a literature PR merges onto an advanced main.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Protected-main literature merge race repair",
-  "updated_at": "2026-09-24T19:58:22+00:00",
+  "updated_at": "2026-09-24T19:58:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1421"
 }
 ---
@@ -167,3 +167,6 @@ the merge released before fresh exact-main evidence succeeds.
   integrity fragment updated. Focused integration + signature-policy suite passed 28 tests. Earlier
   combined test command recorded ModuleNotFoundError for nonexistent
   tools.quality.test_repository_policy and was corrected.
+
+- 2026-09-24T19:58:31+00:00: Recorded command exit 0; command argv SHA-256
+  0c90409569fda4472a940e0740cdba311915d2704eca7c7ff38445375e528496.
