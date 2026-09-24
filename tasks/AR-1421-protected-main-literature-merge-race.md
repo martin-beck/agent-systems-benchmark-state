@@ -10,7 +10,7 @@
   "id": "AR-1421",
   "next_action": "Promote after AR-1417's product merge is preserved and the failed run 36048870322 is recorded; repair the protected-main merge admission/requalification path without weakening the tree invariant.",
   "observed_branch": "codex/ar-1421-protected-main-race",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "5ddac12fc0b2d9fbff2b056af888b9ec76edeee5",
   "owner": "ar1421-protected-main-race-luna56",
   "plan": "../plans/AR-1421.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair protected-main merge-tree requalification after a literature PR merges onto an advanced main.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Protected-main literature merge race repair",
-  "updated_at": "2026-09-24T19:51:14+00:00",
+  "updated_at": "2026-09-24T19:52:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1421"
 }
 ---
