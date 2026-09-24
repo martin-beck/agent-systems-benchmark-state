@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1381-live-cli-scheduler-wiring",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-24T06:03:31+00:00",
+  "claim_expires": "2026-09-24T06:04:08+00:00",
   "depends_on": [
     "AR-1380",
     "AR-1378",
@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire runtime-owned live scheduler authority into production asb run and sweep.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Runtime-owned live CLI scheduler wiring",
-  "updated_at": "2026-09-24T04:03:31+00:00",
+  "updated_at": "2026-09-24T04:04:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1381-live-cli-scheduler-wiring"
 }
 ---
@@ -38,3 +38,5 @@ all fail-closed authority and privacy contracts.
   live CLI scheduler wiring successor.
 
 - 2026-09-24T04:03:31+00:00: Claimed by codex-asb-runtime-receipt-source-luna56.
+
+- 2026-09-24T04:04:08+00:00: Heartbeat by codex-asb-runtime-receipt-source-luna56.
