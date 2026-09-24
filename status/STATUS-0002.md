@@ -14,7 +14,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1377](../tasks/AR-1377-runtime-chain-store.md): Runtime-owned certificate-chain store | codex-asb-runtime-receipt-source-luna56 | Persist authenticated runtime certificate-chain material for live dispatch. | Implementation commit 65d1ede is signed+DCO and clean. Focused live_service tests (20), full asb-runtime tests (111 passed, 1 delegated ignored), and runtime clippy -D warnings pass. Independently review opaque generation-fenced store, then publish exact-head PR and monitor CI. |
+| P0 | [AR-1377](../tasks/AR-1377-runtime-chain-store.md): Runtime-owned certificate-chain store | codex-asb-runtime-receipt-source-luna56 | Persist authenticated runtime certificate-chain material for live dispatch. | Independent review complete: opaque chain store has no secret/path/identity inputs, generation fencing and empty-store negatives pass. Full workspace check and contract consistency pass. Push exact head, publish PR, and monitor required CI. |
 
 ### Open (4)
 
