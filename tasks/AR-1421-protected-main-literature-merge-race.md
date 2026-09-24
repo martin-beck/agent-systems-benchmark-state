@@ -4,7 +4,7 @@
   "checkpoint_commit": "",
   "claim_expires": "",
   "depends_on": [
-    "AR-1417",
+    "AR-1416",
     "AR-1398"
   ],
   "id": "AR-1421",
@@ -28,4 +28,3 @@
 The failed post-merge Repository Quality result is preserved as evidence. This AR
 must not waive the exact-tree check, add a commit-specific exception, or classify
 the merge released before fresh exact-main evidence succeeds.
-
