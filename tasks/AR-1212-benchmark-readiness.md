@@ -9,7 +9,7 @@
   "id": "AR-1212",
   "next_action": "Implement the offline tutorial for checking agent benchmark readiness under the current configuration.",
   "observed_branch": "codex/ar-1212-benchmark-readiness",
-  "observed_dirty": 0,
+  "observed_dirty": 5,
   "observed_head": "0dcc71705eb610e4c3ab6a9f775a9d7b9b25218a",
   "owner": "open-pr-triage-luna56",
   "plan": "../plans/AR-1212.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach users to test configured-agent benchmark eligibility without running an agent.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Agent benchmark-readiness tutorial",
-  "updated_at": "2026-09-24T18:52:01+00:00",
+  "updated_at": "2026-09-24T18:52:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1212"
 }
 ---
