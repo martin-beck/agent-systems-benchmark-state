@@ -10,7 +10,7 @@
     "AR-1319"
   ],
   "id": "AR-1316",
-  "next_action": "Verify current-main AR-1316 producer tests and applicable full gates; if all pass, release as already satisfied by merged main without a new PR.",
+  "next_action": "Rerun full workspace tests with serialized test threads after one transient control-state lock failure; then release if green.",
   "observed_branch": "feature/ar-1316-authenticated-agent-catalog-producer",
   "observed_dirty": 0,
   "observed_head": "0dcc71705eb610e4c3ab6a9f775a9d7b9b25218a",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish the verified ASB agent catalog required by the first-run setup wizard.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Authenticated agent catalog producer",
-  "updated_at": "2026-09-24T19:03:46+00:00",
+  "updated_at": "2026-09-24T19:04:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1316"
 }
 ---
@@ -129,3 +129,9 @@ Progress evidence: ASB PR #245 merged at `027af7ad27da13b359b3f099699c42b03c6f39
 
 - 2026-09-24T19:03:46+00:00: Recorded command exit 101; command argv SHA-256
   534f8613e1c316db8f0f46dd989e44e14a8ca74304a94791b4e4a1c59b2fbb1d.
+
+- 2026-09-24T19:04:21+00:00: Current-main full workspace command cargo test --locked --workspace had
+  one failure in existing recording_campaign_plan_is_durable_idempotent_and_not_offline_ready:
+  control state root already owned (parallel test lock contention), while 104 asb-cli tests and
+  preceding workspace suites passed. This is a deterministic test isolation/parallel-lock flake, not
+  catalog logic; rerun with --test-threads=1 and record result.
