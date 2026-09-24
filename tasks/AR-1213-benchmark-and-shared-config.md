@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach benchmark execution and extending agents with one shared configuration.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Benchmark run and shared-agent configuration tutorials",
-  "updated_at": "2026-09-24T20:25:42+00:00",
+  "updated_at": "2026-09-24T20:25:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1213"
 }
 ---
@@ -103,3 +103,6 @@ run or contact an agent.
 
 - 2026-09-24T20:25:42+00:00: Recorded command exit 0; command argv SHA-256
   afc2be12b50193b7c30208f1894e8f585a6c1d74c4cd34068aff8976acf9987b.
+
+- 2026-09-24T20:25:58+00:00: Recorded command exit 0; command argv SHA-256
+  c442515f2e056f927428b4fc23d0ea82bdbb37c41f4cf0cad908e18611ee3601.
