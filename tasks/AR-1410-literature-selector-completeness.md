@@ -12,7 +12,7 @@
     "AR-1413"
   ],
   "id": "AR-1410",
-  "next_action": "Monitor PR #302 required checks at exact base 9d410f5/head 8a1e031; merge only after all required checks and independent review pass, then verify post-merge workflows.",
+  "next_action": "Regenerate catalog after aligning generator capability ordering/family IDs with Rust, run CLI-vs-generated parity and focused gates, then signed commit/push and monitor fresh CI.",
   "observed_branch": "codex/ar-1410-literature-selector-parity",
   "observed_dirty": 0,
   "observed_head": "8a1e031b1060ed684f499dc035bdefa179c4488b",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Literature selector completeness and parity",
-  "updated_at": "2026-09-24T17:10:23+00:00",
+  "updated_at": "2026-09-24T17:10:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1410"
 }
 ---
@@ -254,3 +254,9 @@ does not turn external qualification or live-provider access into a prerequisite
 
 - 2026-09-24T17:10:23+00:00: Recorded command exit 0; command argv SHA-256
   9719277f78a793bf8ac09fb3b5f3bd5baa4500c7a0af102c58b3db28d5131d9d.
+
+- 2026-09-24T17:10:59+00:00: Parity diagnosis: CLI and generated entries differed only in
+  capability_tags: Rust BTreeSet emits sorted tags (agentdojo/tau-bench), aliases are
+  repository-repair (not code-generation), and Rust family uses swe-fficiency (double f). The direct
+  checker invocation exit 2 was also recorded as a misuse: checker requires a CLI JSON path. No gate
+  weakened.
