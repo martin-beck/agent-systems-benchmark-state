@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair exact protected-main merge-tree requalification after sequential tutorial merges.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Protected-main merge-tree requalification repair",
-  "updated_at": "2026-09-24T21:26:10+00:00",
+  "updated_at": "2026-09-24T21:27:32+00:00",
   "worktree_key": ""
 }
 ---
@@ -38,3 +38,6 @@ incident evidence; no gate is waived.
 
 - 2026-09-24T21:26:10+00:00: Recorded command exit 0; command argv SHA-256
   88d86267fcba4a31b51d75f493d4981ee26856992977a659070356289f7bc042.
+
+- 2026-09-24T21:27:32+00:00: Recorded command exit 1; command argv SHA-256
+  ac99b772dd8bd62096364ead4849ecaefc960101488bf7324f352f35029df1f7.
