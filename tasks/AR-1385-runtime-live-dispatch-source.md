@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1385-runtime-live-dispatch-source",
   "checkpoint_commit": "02b79f35932c4fdfcb6f0348955b65543eca9bab",
-  "claim_expires": "2026-09-24T06:52:45+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1384",
     "AR-1377",
@@ -15,15 +15,15 @@
   "observed_branch": "feature/ar-1385-runtime-live-dispatch-source",
   "observed_dirty": 0,
   "observed_head": "02b79f35932c4fdfcb6f0348955b65543eca9bab",
-  "owner": "codex-asb-ar1329-repair-luna56",
+  "owner": "",
   "plan": "../plans/AR-1385-runtime-live-dispatch-source.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Materialize the authenticated runtime-owned live dispatch source for production asb run and sweep.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Authenticated runtime live dispatch source",
-  "updated_at": "2026-09-24T06:22:28+00:00",
+  "updated_at": "2026-09-24T06:30:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1385-runtime-live-dispatch-source"
 }
 ---
@@ -136,3 +136,10 @@ namespace identity, or launch authority.
 
 - 2026-09-24T06:22:28+00:00: Recorded command exit 0; command argv SHA-256
   8027bbf7322e4cceb34d31f5519780cdedd1660fd2d42e398614759451417459.
+
+- 2026-09-24T06:30:34+00:00: PR #280 merged as protected-main commit
+  25548846966e37646dded8d67ed8ee5123b8bc32 from signed+DCO head
+  02b79f35932c4fdfcb6f0348955b65543eca9bab. All seven exact-main post-merge workflows terminal
+  SUCCESS: Rust verification, Emulated aarch64 portability, Repository quality, Hosted portability
+  and native qualification, Formal assurance, Fault assurance, and Huawei MIT source headers.
+  Runtime dispatch source is merged; external provider execution remains optional evidence only.
