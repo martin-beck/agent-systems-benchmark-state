@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind authenticated control receipts to runtime-owned live dispatch.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Authenticated live control adapter",
-  "updated_at": "2026-09-24T03:12:01+00:00",
+  "updated_at": "2026-09-24T03:12:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1378-live-control-adapter"
 }
 ---
@@ -69,3 +69,6 @@ chain store; this task supplies only the authenticated control operation seam.
 
 - 2026-09-24T03:12:01+00:00: Recorded command exit 0; command argv SHA-256
   e210942b850b33ddbde4386c19c8f84af2ebdd24a0c9ef886eec60df32f1861c.
+
+- 2026-09-24T03:12:17+00:00: Recorded command exit 0; command argv SHA-256
+  78a02e2f11431111256149c8ca3a3ba4586f2d3710e11e6f9cbe0c5fe6efaa55.
