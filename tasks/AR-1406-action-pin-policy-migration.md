@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify and merge remaining immutable GitHub action pin updates without weakening policy.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Action pin policy migration",
-  "updated_at": "2026-09-24T15:42:17+00:00",
+  "updated_at": "2026-09-24T15:42:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1406"
 }
 ---
@@ -72,4 +72,7 @@ No floating action reference or unverifiable release identity is acceptable.
   agent-systems-benchmark-ar-1406 at e4d8e7a. Subsequent PR inspection is read-only.
 
 - 2026-09-24T15:42:06+00:00: Recorded command exit 1; command argv SHA-256
+  fb59a1d6bd3a3cb3a8ce41808e3c0f69ae223ad62544ac127932e4edebdf1d11.
+
+- 2026-09-24T15:42:44+00:00: Recorded command exit 1; command argv SHA-256
   fb59a1d6bd3a3cb3a8ce41808e3c0f69ae223ad62544ac127932e4edebdf1d11.
