@@ -2,7 +2,7 @@
 {
   "branch": "feature/native-capacity-controller",
   "checkpoint_commit": "e2e3574ed2bbc020105ffb1eb4c5a38691b299a3",
-  "claim_expires": "2026-09-24T21:46:45+00:00",
+  "claim_expires": "2026-09-24T21:47:02+00:00",
   "depends_on": [
     "AR-0701",
     "AR-0103"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 239,
+  "task_revision": 240,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-24T19:46:45+00:00",
+  "updated_at": "2026-09-24T19:47:02+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -806,3 +806,5 @@ must not block this AR or its dependents.
   #119 onto current main and rerun exact-head gates without weakening the 90% floor.
 
 - 2026-09-24T19:46:45+00:00: Claimed by ar0704-requal-luna56.
+
+- 2026-09-24T19:47:02+00:00: Heartbeat by ar0704-requal-luna56.
