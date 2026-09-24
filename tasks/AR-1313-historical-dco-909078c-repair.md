@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1313.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Forward-only signed DCO recovery candidate published as PR #231.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Historical DCO merge-integrity recovery",
-  "updated_at": "2026-09-19T08:04:14+00:00",
+  "updated_at": "2026-09-24T11:15:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1313-historical-dco-909078c"
 }
 ---
@@ -72,3 +72,7 @@ blocked with the exact failure and do not weaken the policy.
   head 68afee85219a30a9754c462042b3bc48a19a4ae9, base 78a8e9fc2144623311e315fcc4e46c2831b0b2c1; do
   not merge until AR-1312 repairs coverage and all exact-head/post-merge gates are green. Historical
   merge 909078c remains preserved; no gate weakening.
+
+- 2026-09-24T11:15:15+00:00: AR-1312 coverage repair is done and current main represents the old
+  recovery tree; refresh PR #231 against current main and revalidate whether signed recovery is
+  still required.
