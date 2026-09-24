@@ -10,7 +10,7 @@
     "AR-1377"
   ],
   "id": "AR-1388",
-  "next_action": "Publish exact-head signed+DCO PR for 581847921990c064b5185a9e66a788a474ffcc33, monitor CI, and complete post-merge gates.",
+  "next_action": "Wait for aarch64 materialization and repository-quality defect-gate jobs to reach terminal green; inspect any failure logs before repair or merge.",
   "observed_branch": "feature/ar-1388-runtime-authority-materializer",
   "observed_dirty": 0,
   "observed_head": "581847921990c064b5185a9e66a788a474ffcc33",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize runtime-owned provider authority from authenticated receipt and chain state.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Runtime authority receipt materializer",
-  "updated_at": "2026-09-24T06:56:54+00:00",
+  "updated_at": "2026-09-24T06:57:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1388-runtime-authority-materializer"
 }
 ---
@@ -76,3 +76,10 @@ namespace identity, or launch tokens.
 - 2026-09-24T06:54:41+00:00: Heartbeat by codex-asb-ar1329-repair-luna56.
 
 - 2026-09-24T06:56:54+00:00: Heartbeat by codex-asb-ar1329-repair-luna56.
+
+- 2026-09-24T06:57:27+00:00: Lease renewed. PR #281 exact head remains
+  581847921990c064b5185a9e66a788a474ffcc33. Aarch64 job 107525681491 is actively materializing
+  immutable guest userspace after setup and contract validation; repository-quality job 107525682100
+  passed policy/consistency/offline/workflow/secrets/dependency/coverage and is actively proving
+  controlled-defect gates. GitHub exposes no live logs until completion; neither is failed or
+  stalled based on active step state.
