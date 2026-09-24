@@ -2,22 +2,22 @@
 {
   "branch": "codex/ar-1405-dependency-reconcile",
   "checkpoint_commit": "f213b29624bff8bdc2edd005711e2f70eeb70472",
-  "claim_expires": "2026-09-24T14:04:36+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1405",
   "next_action": "Monitor seven post-merge workflows for exact SHA f213b296; after all green, close/supersede scoped stale PRs with exact evidence, then release AR done. Action PRs #235/#234/#148 require a future policy-pin migration AR; #147 requires separate sha2 compatibility AR.",
   "observed_branch": "codex/ar-1405-dependency-reconcile",
   "observed_dirty": 0,
   "observed_head": "9c1ddea3df54555dc1127239916198c2f7e926ef",
-  "owner": "ar1405_dependency_pr_luna56b",
+  "owner": "",
   "plan": "../plans/AR-1405-open-dependency-pr-reconciliation.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Rebase, repair, verify, and truthfully resolve stale open dependency PRs.",
-  "task_revision": 99,
+  "task_revision": 100,
   "title": "Open dependency PR reconciliation",
-  "updated_at": "2026-09-24T12:10:30+00:00",
+  "updated_at": "2026-09-24T12:11:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1405"
 }
 ---
@@ -237,3 +237,13 @@ all changes remain subject to current exact-head gates.
 
 - 2026-09-24T12:10:30+00:00: Recorded command exit 0; command argv SHA-256
   77d2666627a2c3ab53c31d3c41a2fd66086b94cb452c044d8a55c245cddef7e9.
+
+- 2026-09-24T12:11:00+00:00: Done: merged PR #291 through signed exact-base integration. Merge
+  f213b29624bff8bdc2edd005711e2f70eeb70472 has parents e0b15fc23be83eeea3882dcee39f9cdd43b45254 and
+  9c1ddea3df54555dc1127239916198c2f7e926ef, reviewed tree 04dc4ab3cb0f27ff16e43dc1da28967ab796488f.
+  All seven required post-merge workflows succeeded: 35996591324 hosted, 35996591279 formal,
+  35996591194 Rust, 35996591302 emulated-aarch64, 35996591343 fault, 35996591314 repository quality,
+  35996591364 headers. Safe stale PRs #237/#236/#150/#149 and unrelated stale #171/#125 are closed
+  as superseded. PR #147 is closed as blocked/incompatible (missing DCO plus sha2 API/MSRV
+  compatibility decision). PRs #235/#234/#148 remain open and explicitly blocked because current
+  policy requires their old action pins; future policy migration ARs are required.
