@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1383-runtime-authority-profile",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T06:41:11+00:00",
   "depends_on": [
     "AR-1377",
     "AR-1373",
@@ -14,15 +14,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "codex-asb-runtime-receipt-source-luna56",
   "plan": "../plans/AR-1383-runtime-authority-profile.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Materialize runtime-owned live authority profile for authenticated execution.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Runtime-owned authority profile materialization",
-  "updated_at": "2026-09-24T04:41:08+00:00",
+  "updated_at": "2026-09-24T04:41:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1383-runtime-authority-profile"
 }
 ---
@@ -33,3 +33,5 @@ bootstrap inputs required by live execution.
 
 - 2026-09-24T04:41:08+00:00: AR-1382 audit identified missing runtime-owned authority profile;
   promote dependency-valid profile materialization successor.
+
+- 2026-09-24T04:41:11+00:00: Claimed by codex-asb-runtime-receipt-source-luna56.
