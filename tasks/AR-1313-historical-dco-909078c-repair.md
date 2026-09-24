@@ -8,16 +8,16 @@
   "next_action": "Keep PR #231 unmerged; route one-line workspace coverage deficit to AR-1312, then rerun exact-head checks and signed recovery merge.",
   "observed_branch": "repair/ar-1313-historical-dco-909078c",
   "observed_dirty": 0,
-  "observed_head": "e41d4df86e57af5b58cc7500fcc44cec6ec2e445",
+  "observed_head": "3420355d8a0855aea696775cfe85cc628773c842",
   "owner": "ar1313_recovery_luna56",
   "plan": "../plans/AR-1313.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Forward-only signed DCO recovery candidate published as PR #231.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Historical DCO merge-integrity recovery",
-  "updated_at": "2026-09-24T11:20:52+00:00",
+  "updated_at": "2026-09-24T11:21:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1313-historical-dco-909078c"
 }
 ---
