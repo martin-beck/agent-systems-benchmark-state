@@ -451,7 +451,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-readiness` | `DETACHED` | `78a8e9fc2144` | 0 | behind 260, ahead 0 |
 | `asb-recording-audit.vnDk3k` | `DETACHED` | `f205ff90dbc9` | 0 | behind 254, ahead 0 |
 | `pr256-review` | `DETACHED` | `0c19231abaf4` | 0 | behind 188, ahead 0 |
-| `agent-systems-benchmark-state` | `main` | `38952de7730d` | 0 | behind 0, ahead 1 |
+| `agent-systems-benchmark-state` | `main` | `0a31dd9a4e36` | 0 | behind 0, ahead 2 |
 | `agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity` | `feature/ar-1308-full-exhaustive-qemu-capacity` | `659030fffd7e` | 0 | behind 8885, ahead 0 |
 | `agent-systems-benchmark-coordination-assurance` | `feature/coordination-assurance` | `adfde31ad408` | 0 | behind 36765, ahead 0 |
 | `agent-systems-benchmark-coordination-lint-regression` | `fix/handoffctl-apply-resume-lint` | `746042a0e55e` | 0 | behind 31508, ahead 0 |
