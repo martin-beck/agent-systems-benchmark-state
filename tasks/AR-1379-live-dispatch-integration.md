@@ -12,18 +12,18 @@
   ],
   "id": "AR-1379",
   "next_action": "Promote and claim this dependency-valid production dispatch successor, refresh an isolated worktree, and wire the authenticated adapter into asb run/sweep.",
-  "observed_branch": "",
+  "observed_branch": "feature/ar-1379-live-dispatch-integration",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "d4a3e14e86a75bcb0c4f004e8d997b2321bf0fb5",
   "owner": "codex-asb-runtime-receipt-source-luna56",
   "plan": "../plans/AR-1379-live-dispatch-integration.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate authenticated runtime live dispatch into asb run and sweep.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Production live dispatch integration",
-  "updated_at": "2026-09-24T03:31:22+00:00",
+  "updated_at": "2026-09-24T03:31:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1379-live-dispatch-integration"
 }
 ---
