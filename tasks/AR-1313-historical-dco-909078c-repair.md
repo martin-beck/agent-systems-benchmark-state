@@ -2,22 +2,22 @@
 {
   "branch": "repair/ar-1313-historical-dco-909078c",
   "checkpoint_commit": "68afee85219a30a9754c462042b3bc48a19a4ae9",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T13:17:43+00:00",
   "depends_on": [],
   "id": "AR-1313",
   "next_action": "Keep PR #231 unmerged; route one-line workspace coverage deficit to AR-1312, then rerun exact-head checks and signed recovery merge.",
   "observed_branch": "repair/ar-1313-historical-dco-909078c",
   "observed_dirty": 0,
   "observed_head": "8e5598eab3b35a56fb8997bdd73dfd73f89f5cdc",
-  "owner": "",
+  "owner": "ar1313_recovery_luna56",
   "plan": "../plans/AR-1313.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Forward-only signed DCO recovery candidate published as PR #231.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Historical DCO merge-integrity recovery",
-  "updated_at": "2026-09-24T11:15:15+00:00",
+  "updated_at": "2026-09-24T11:17:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1313-historical-dco-909078c"
 }
 ---
@@ -76,3 +76,5 @@ blocked with the exact failure and do not weaken the policy.
 - 2026-09-24T11:15:15+00:00: AR-1312 coverage repair is done and current main represents the old
   recovery tree; refresh PR #231 against current main and revalidate whether signed recovery is
   still required.
+
+- 2026-09-24T11:17:43+00:00: Claimed by ar1313_recovery_luna56.
