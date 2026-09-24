@@ -1,13 +1,13 @@
 ---
 {
   "branch": "repair/ar-1397-protected-main-postmerge-concurrency",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "1bcd946b30a2fa40e27174ebbbecc0af23d82b33",
   "claim_expires": "2026-09-24T11:35:34+00:00",
   "depends_on": [
     "AR-1337"
   ],
   "id": "AR-1397",
-  "next_action": "Claim with a gpt-5.6-luna medium worker once the current main queue is quiescent; reproduce c58b0b0 and 130ff91 tree mismatch/cancellation, implement the narrowly scoped signed integration repair, and require a fresh exact-main merge with all seven terminal-success workflows.",
+  "next_action": "PR #286 is published at 1bcd946b30a2fa40e27174ebbbecc0af23d82b33; independently review the exact diff, wait for all required PR checks, merge only through the protected signed path, then verify all seven terminal-success post-merge workflows and preserve durable evidence.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair protected-main merge-tree admission and serialize exact post-merge evidence across concurrent main pushes.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Protected-main post-merge concurrency and tree repair",
-  "updated_at": "2026-09-24T09:35:34+00:00",
+  "updated_at": "2026-09-24T09:35:50+00:00",
   "worktree_key": ""
 }
 ---
@@ -62,3 +62,8 @@ it must retain the default signature-required and exact-tree gates.
   dd728b78c56f26c19fbceb9adb22137c6b8a367b571fd4a11acc2f256d9e99ac.
 
 - 2026-09-24T09:35:34+00:00: Heartbeat by ar1397-protected-main-repair-luna56.
+
+- 2026-09-24T09:35:50+00:00: Implementation committed signed+DCO as
+  1bcd946b30a2fa40e27174ebbbecc0af23d82b33 and published as PR #286. Focused 11-test integration
+  suite, repository policy, fmt, Clippy, and locked workspace tests passed. PR checks are currently
+  in progress; no merge yet.
