@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add truthful long-horizon, refreshed, performance, and reproducibility workload adapters.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Long-horizon and performance literature workload adapters",
-  "updated_at": "2026-09-24T15:05:10+00:00",
+  "updated_at": "2026-09-24T15:05:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1413"
 }
 ---
@@ -105,3 +105,6 @@ bounded local fixtures or LiteLLM-compatible mocks only.
 - 2026-09-24T15:02:53+00:00: Heartbeat by ar1413_long_horizon_performance_luna56.
 
 - 2026-09-24T15:05:10+00:00: Heartbeat by ar1413_long_horizon_performance_luna56.
+
+- 2026-09-24T15:05:21+00:00: Recorded command exit 0; command argv SHA-256
+  8ac34f2087fa2c6fbc36a0adb06f84fc1e1a4ee60a2dc950616d3871be9afe5c.
