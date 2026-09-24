@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1384](tasks/AR-1384-runtime-bootstrap-materialization.md): Runtime-owned bootstrap materialization | Materialize the runtime-owned live bootstrap handle from authenticated authority. | Independent review complete; focused authority-profile tests (2), full asb-runtime tests (116 passed, 1 capability-gated ignored), fmt/check, and clippy -D warnings pass. Publish clean exact-head PR through handoffctl, then monitor exact-head CI. | codex-asb-runtime-receipt-source-luna56 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -286,6 +280,7 @@ Never edit this file directly.
 | P0 | [AR-1380](tasks/AR-1380-runtime-scheduler-composition.md): Runtime scheduler composition for live dispatch | Compose runtime-owned live attempts for production run and sweep scheduling. | PR #276 force-updated to exact head ab4e60c on protected main 16bca1f9 after policy/platform stale-base failure. Monitor fresh exact-head checks; repair any new failures, merge only green, then verify seven post-merge workflows. | - |
 | P0 | [AR-1381](tasks/AR-1381-live-cli-scheduler-wiring.md): Runtime-owned live CLI scheduler wiring | Wire runtime-owned live scheduler authority into production asb run and sweep. | PR #277 force-updated to exact head 4ba3085 after provenance fixture repair. Monitor fresh exact-head checks; repair any new failures, merge only green, then verify seven post-merge workflows. | - |
 | P0 | [AR-1383](tasks/AR-1383-runtime-authority-profile.md): Runtime-owned authority profile materialization | Materialize runtime-owned live authority profile for authenticated execution. | Independent review complete; full runtime tests 114 passed/1 ignored, check and clippy -D warnings passed. Publish clean exact-head PR through handoffctl, then monitor required CI. | - |
+| P0 | [AR-1384](tasks/AR-1384-runtime-bootstrap-materialization.md): Runtime-owned bootstrap materialization | Materialize the runtime-owned live bootstrap handle from authenticated authority. | Independent review complete; focused authority-profile tests (2), full asb-runtime tests (116 passed, 1 capability-gated ignored), fmt/check, and clippy -D warnings pass. Publish clean exact-head PR through handoffctl, then monitor exact-head CI. | - |
 | P1 | [AR-0002](tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. | - |
 | P1 | [AR-0003](tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. | - |
 | P1 | [AR-0004](tasks/AR-0004-ar-status-document.md): Generate the visual AR status document | Render every AR, status, and dependency as an accessible visual state document. | Await independent immutable-head review of state PR 3 at eedd311; repair findings before coordinator integration. | - |
