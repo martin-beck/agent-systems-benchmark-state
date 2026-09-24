@@ -7,7 +7,7 @@
     "AR-1384"
   ],
   "id": "AR-1389",
-  "next_action": "Monitor PR #282 exact-head checks; repair only evidenced failures, then merge and rerun all seven post-merge workflows for AR-1388 replacement evidence.",
+  "next_action": "Merge PR #282 through handoffctl, then verify all seven post-merge workflows at its exact merge commit.",
   "observed_branch": "feature/ar-1389-formal-fixture-exec-race",
   "observed_dirty": 0,
   "observed_head": "444a61d603f124d12cdd6505d4ff1fab1d6d2104",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the formal online-build fixture race that caused ETXTBSY after AR-1388 merge.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Formal fixture executable race repair",
-  "updated_at": "2026-09-24T07:17:29+00:00",
+  "updated_at": "2026-09-24T07:24:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1389-formal-fixture-exec-race"
 }
 ---
@@ -72,3 +72,9 @@ privacy, offline, boundedness, and local-mock boundaries.
   534f8613e1c316db8f0f46dd989e44e14a8ca74304a94791b4e4a1c59b2fbb1d.
 
 - 2026-09-24T07:17:29+00:00: Heartbeat by codex-asb-ar1329-repair-luna56.
+
+- 2026-09-24T07:24:00+00:00: Independent diff review complete: atomic stage/fsync/chmod/rename
+  covers runner and mocks; all launches use pinned /bin/bash; no retries or gate weakening;
+  32-iteration stress regression included. SSH signature and matching DCO verified. All 12
+  exact-head checks green; PR mergeable. External provider remains optional/local mock boundary
+  intact.

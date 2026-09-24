@@ -33,7 +33,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1389](../tasks/AR-1389-formal-fixture-exec-race.md): Formal fixture executable race repair | codex-asb-ar1329-repair-luna56 | Repair the formal online-build fixture race that caused ETXTBSY after AR-1388 merge. | Monitor PR #282 exact-head checks; repair only evidenced failures, then merge and rerun all seven post-merge workflows for AR-1388 replacement evidence. |
+| P0 | [AR-1389](../tasks/AR-1389-formal-fixture-exec-race.md): Formal fixture executable race repair | codex-asb-ar1329-repair-luna56 | Repair the formal online-build fixture race that caused ETXTBSY after AR-1388 merge. | Merge PR #282 through handoffctl, then verify all seven post-merge workflows at its exact merge commit. |
 
 ### Open (4)
 
