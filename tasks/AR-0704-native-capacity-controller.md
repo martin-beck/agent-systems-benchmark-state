@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 244,
+  "task_revision": 245,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-24T19:49:51+00:00",
+  "updated_at": "2026-09-24T19:50:04+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -819,3 +819,6 @@ must not block this AR or its dependents.
   exact topic head 4630f90. Focused lifecycle suite 14/14 passed; Ruff format/check and strict mypy
   passed. Initial unittest module invocation failed because tests/capacity is not a Python package;
   corrected discover invocation passed. No threshold or gate changes.
+
+- 2026-09-24T19:50:04+00:00: Recorded command exit 0; command argv SHA-256
+  84b125e56a05bd1aec2db6958a506c7c3efc438daad88978a9d29d80ddfa0cae.
