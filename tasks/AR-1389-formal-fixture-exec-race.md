@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1389-formal-fixture-exec-race",
   "checkpoint_commit": "444a61d603f124d12cdd6505d4ff1fab1d6d2104",
-  "claim_expires": "2026-09-24T07:53:52+00:00",
+  "claim_expires": "2026-09-24T08:00:26+00:00",
   "depends_on": [
     "AR-1384"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the formal online-build fixture race that caused ETXTBSY after AR-1388 merge.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Formal fixture executable race repair",
-  "updated_at": "2026-09-24T07:14:30+00:00",
+  "updated_at": "2026-09-24T07:15:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1389-formal-fixture-exec-race"
 }
 ---
@@ -65,3 +65,5 @@ privacy, offline, boundedness, and local-mock boundaries.
   stress coverage. Focused formal suite 9/9, SSH-signed+DCO commit 444a61d, repository policy
   passed. Published PR #282. AR-1388 remains open/unreleased pending replacement post-merge formal
   evidence.
+
+- 2026-09-24T07:15:26+00:00: Heartbeat by codex-asb-ar1329-repair-luna56.
