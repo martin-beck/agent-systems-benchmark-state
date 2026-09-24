@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify and merge remaining immutable GitHub action pin updates without weakening policy.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Action pin policy migration",
-  "updated_at": "2026-09-24T15:36:47+00:00",
+  "updated_at": "2026-09-24T15:37:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1406"
 }
 ---
@@ -41,3 +41,6 @@ No floating action reference or unverifiable release identity is acceptable.
   coordinator repaired binding in 2cddc92d0/ec4e44d0b. Release stale owner for recovery worker.
 
 - 2026-09-24T15:36:47+00:00: Claimed by ar1406-action-pin-recovery-luna56.
+
+- 2026-09-24T15:37:01+00:00: Recorded command exit 0; command argv SHA-256
+  e60db980da87c867654b11e27aa20446c8a7629c239a5c3d53855746174d4428.
