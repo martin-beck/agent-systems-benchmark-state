@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make qualified literature workload families selectable beside built-in ASB software-engineering fixtures.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Literature workload selection",
-  "updated_at": "2026-09-24T10:18:16+00:00",
+  "updated_at": "2026-09-24T10:18:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1396"
 }
 ---
@@ -69,3 +69,6 @@ platform gates.
   a0024df808f67ab4e1d004adfa39edc9e25de89d. Wrapped focused literature tests passed 7/7; wrapped
   cargo test --locked --workspace passed all non-ignored tests. Exact-head checks are pending except
   AWQ shadow and SPDX/header checks passed.
+
+- 2026-09-24T10:18:29+00:00: Recorded command exit 1; command argv SHA-256
+  8b33846ffb8482b3d5f465aa0701cb9a4e988a887a1d8499ea7c53a946ef5755.
