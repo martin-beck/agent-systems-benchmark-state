@@ -1,7 +1,7 @@
 ---
 {
   "branch": "",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "0000000000000000000000000000000000000000",
   "claim_expires": "2026-09-24T17:28:54+00:00",
   "depends_on": [
     "AR-1405"
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify and merge remaining immutable GitHub action pin updates without weakening policy.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Action pin policy migration",
-  "updated_at": "2026-09-24T15:28:54+00:00",
+  "updated_at": "2026-09-24T15:29:19+00:00",
   "worktree_key": ""
 }
 ---
@@ -33,3 +33,6 @@ No floating action reference or unverifiable release identity is acceptable.
 - 2026-09-24T15:28:12+00:00: Claimed by ar1406-action-pin-luna56.
 
 - 2026-09-24T15:28:54+00:00: Heartbeat by ar1406-action-pin-luna56.
+
+- 2026-09-24T15:29:19+00:00: Claim durable; blocked before product work because task declares no
+  branch/worktree binding.
