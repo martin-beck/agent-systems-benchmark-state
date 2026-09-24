@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "130ff91ec3ac875ac9c370ab67dd9934d830ccdf",
-  "claim_expires": "2026-09-24T11:19:20+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1394"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "codex-asb-ar1395-literature-adapters-luna56",
+  "owner": "",
   "plan": "../plans/AR-1395-literature-workload-adapters.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Normalize approved literature tasks through bounded, non-vendored ASB workload adapters.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Literature workload adapter boundary",
-  "updated_at": "2026-09-24T09:19:44+00:00",
+  "updated_at": "2026-09-24T09:32:39+00:00",
   "worktree_key": ""
 }
 ---
@@ -141,3 +141,8 @@ into executable or qualified workloads.
   fault assurance, and headers passed; Repository quality and Rust were cancelled twice by
   later-main concurrency. Later main c58b0b0a Repository quality currently failed merge-tree policy
   and aarch64 remains active; preserve AR open until exact reruns complete.
+
+- 2026-09-24T09:32:39+00:00: PR #285 merged at 130ff91ec3ac875ac9c370ab67dd9934d830ccdf. All 12 PR
+  checks passed; exact-main post-merge hosted, fault, headers, formal, emulated-aarch64, repository
+  quality 35979100371, and Rust rerun 35979100293 all succeeded. Cancellations were replaced by
+  terminal-success reruns.
