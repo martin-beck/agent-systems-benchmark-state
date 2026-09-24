@@ -3,7 +3,7 @@
 Generated from local Git and GitHub. Do not edit.
 
 - Product remote main: `04b4c067055073031cd6d88cf18f0d158f488ad0`
-- Local origin/main: `333cc3ac4d55171b7c0e24c5353d5b0273769140`
+- Local origin/main: `04b4c067055073031cd6d88cf18f0d158f488ad0`
 - Primary worktree head: `bd7d10d4a760a84fa42de2b1fa9e97e8ea85ba09`
 
 ## Open pull requests
@@ -33,8 +33,8 @@ Generated from local Git and GitHub. Do not edit.
 | 35955815187 | `04b4c0670550` | push | Hosted portability and native qualification | completed:success |
 | 35955815186 | `04b4c0670550` | push | Formal assurance | completed:success |
 | 35955815172 | `04b4c0670550` | push | Fault assurance | completed:success |
-| 35955815162 | `04b4c0670550` | push | Emulated aarch64 portability | in_progress:- |
-| 35955815147 | `04b4c0670550` | push | Rust verification | in_progress:- |
+| 35955815162 | `04b4c0670550` | push | Emulated aarch64 portability | completed:success |
+| 35955815147 | `04b4c0670550` | push | Rust verification | completed:success |
 | 35955089278 | `4ba3085e9544` | pull_request | Fault assurance | completed:success |
 | 35955089260 | `4ba3085e9544` | pull_request | Repository quality | completed:success |
 | 35955089238 | `4ba3085e9544` | pull_request | Rust verification | completed:success |
