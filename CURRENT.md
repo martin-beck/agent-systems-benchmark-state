@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1384](tasks/AR-1384-runtime-bootstrap-materialization.md): Runtime-owned bootstrap materialization | Materialize the runtime-owned live bootstrap handle from authenticated authority. | Promote and claim after validating all dependencies; implement the private runtime/control conversion from the authenticated authority profile to an opaque live runtime handle, with fail-closed tests. | codex-asb-runtime-receipt-source-luna56 |
+| P0 | [AR-1384](tasks/AR-1384-runtime-bootstrap-materialization.md): Runtime-owned bootstrap materialization | Materialize the runtime-owned live bootstrap handle from authenticated authority. | Independent review complete; focused authority-profile tests (2), full asb-runtime tests (116 passed, 1 capability-gated ignored), fmt/check, and clippy -D warnings pass. Publish clean exact-head PR through handoffctl, then monitor exact-head CI. | codex-asb-runtime-receipt-source-luna56 |
 
 ## Open
 

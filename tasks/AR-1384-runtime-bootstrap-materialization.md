@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1384-runtime-bootstrap-materialization",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "909c18b6cad6760e82572c335f38512ee26455ff",
   "claim_expires": "2026-09-24T07:10:18+00:00",
   "depends_on": [
     "AR-1383",
@@ -11,7 +11,7 @@
     "AR-1381"
   ],
   "id": "AR-1384",
-  "next_action": "Promote and claim after validating all dependencies; implement the private runtime/control conversion from the authenticated authority profile to an opaque live runtime handle, with fail-closed tests.",
+  "next_action": "Independent review complete; focused authority-profile tests (2), full asb-runtime tests (116 passed, 1 capability-gated ignored), fmt/check, and clippy -D warnings pass. Publish clean exact-head PR through handoffctl, then monitor exact-head CI.",
   "observed_branch": "feature/ar-1384-runtime-bootstrap-materialization",
   "observed_dirty": 0,
   "observed_head": "909c18b6cad6760e82572c335f38512ee26455ff",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize the runtime-owned live bootstrap handle from authenticated authority.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Runtime-owned bootstrap materialization",
-  "updated_at": "2026-09-24T05:16:19+00:00",
+  "updated_at": "2026-09-24T05:16:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1384-runtime-bootstrap-materialization"
 }
 ---
@@ -77,3 +77,10 @@ it must not accept caller authority or synthesize enrolled values.
 
 - 2026-09-24T05:16:08+00:00: Recorded command exit 0; command argv SHA-256
   ccc3cc69d8243a5b79db83799d9af9e59487878007644c9ddc3e6e50b1ca8dde.
+
+- 2026-09-24T05:16:35+00:00: Implemented crate-private profile-to-opaque-handle conversion. It
+  checks authenticated target, generation, and credential-reference bindings before invoking the
+  existing runtime-owned bootstrap constructor; added positive handle materialization and
+  mismatched-target fail-closed tests. Prior exit-101 causes were target type mismatch, missing test
+  helper name, and Result comparison; all repaired and rerun green. Commit 909c18b6 is
+  SSH-signed+DCO and worktree clean.
