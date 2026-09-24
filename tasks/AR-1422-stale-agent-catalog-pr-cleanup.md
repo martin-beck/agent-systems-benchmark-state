@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Close stale conflicting agent-catalog PR #306 through durable coordinator evidence.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Stale agent-catalog PR cleanup",
-  "updated_at": "2026-09-24T19:40:58+00:00",
+  "updated_at": "2026-09-24T19:41:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1422"
 }
 ---
@@ -37,3 +37,6 @@ disposition auditable and to prevent a duplicate branch from remaining open.
 
 - 2026-09-24T19:40:46+00:00: Recorded command exit 0; command argv SHA-256
   816582a9c362c48e941515ea87d7809e3bae2fda0027d1b1881adfd29b993f67.
+
+- 2026-09-24T19:41:08+00:00: Recorded command exit 0; command argv SHA-256
+  8f12187aa422152636c40f8ff56e5ec1de0f7237cb7f2e873c32f687cf617d4a.
