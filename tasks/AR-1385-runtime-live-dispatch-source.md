@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize the authenticated runtime-owned live dispatch source for production asb run and sweep.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Authenticated runtime live dispatch source",
-  "updated_at": "2026-09-24T06:01:16+00:00",
+  "updated_at": "2026-09-24T06:08:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1385-runtime-live-dispatch-source"
 }
 ---
@@ -109,3 +109,6 @@ namespace identity, or launch authority.
   DCO trailer that did not match the signing identity. Amended to matching Martin Beck
   <martin.beck2@gmx.de>, SSH-signed commit 2313d90, local repository_policy passed, and force-pushed
   PR #280. Fresh checks are running; Huawei/AWQ pass so far.
+
+- 2026-09-24T06:08:17+00:00: Recorded command exit 0; command argv SHA-256
+  6e326e004ee34fb1b144470769da07e6b4b520b8e7b5f7ec596b68d9000ca530.
