@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Inject existing authenticated certificate authority and runtime enrollment material into RunnerBackend/Catalog without synthetic authority.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Runner authority injection",
-  "updated_at": "2026-09-24T01:13:11+00:00",
+  "updated_at": "2026-09-24T01:13:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1371-runner-authority-injection"
 }
 ---
@@ -125,3 +125,6 @@ trust or launch authority from CLI/config input.
 
 - 2026-09-24T01:13:11+00:00: Recorded command exit 0; command argv SHA-256
   341e312c0532aa0e4f137a3f94aeabe37c46a8bbe85b57fa8e25dbf3ab2888c8.
+
+- 2026-09-24T01:13:34+00:00: Recorded command exit 0; command argv SHA-256
+  6120de36aaf3f41dd6cadb792c3fccfa2bc059e1af956c26b16aabbc0ee7bbd5.
