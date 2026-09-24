@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Restore signed+DCO protected-main evidence after an unsigned GitHub-generated repair merge.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Signed protected-main recovery",
-  "updated_at": "2026-09-24T10:07:03+00:00",
+  "updated_at": "2026-09-24T10:07:27+00:00",
   "worktree_key": ""
 }
 ---
@@ -93,3 +93,7 @@ providers are never required for development evidence.
 
 - 2026-09-24T10:07:03+00:00: Recorded command exit 8; command argv SHA-256
   6ee9976d1a5d4049c16287d0368110437d5838b542c5ededd08311da5aa58c3a.
+
+- 2026-09-24T10:07:27+00:00: Formal assurance run 35984949065 is now fully green: TLC/Alloy and
+  Loom/state models passed. Remaining exact-head groups are emulated aarch64 35984949129, repository
+  quality 35984949118, and Rust verification 35984949114; all other checks green.
