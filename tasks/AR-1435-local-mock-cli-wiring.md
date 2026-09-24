@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire deterministic local mock attempts into asb run and sweep configuration qualification.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Local mock CLI wiring",
-  "updated_at": "2026-09-24T23:55:05+00:00",
+  "updated_at": "2026-09-24T23:55:19+00:00",
   "worktree_key": ""
 }
 ---
@@ -58,3 +58,6 @@ it must not contact OpenRouter or any external provider, mint
 
 - 2026-09-24T23:55:05+00:00: Recorded command exit 101; command argv SHA-256
   775dd767d24cbbd9bd332791624b4e2a722d96b8733d0fe4ef750cead698ca67.
+
+- 2026-09-24T23:55:19+00:00: Recorded command exit 101; command argv SHA-256
+  fe51af2914f03b1a88a49ee24ecc1b24d6e1d159aa1279ac74719ae02d09b49d.
