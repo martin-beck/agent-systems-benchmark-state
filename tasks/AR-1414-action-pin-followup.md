@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the newer immutable install-action update reopened as PR #235.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Follow-up install-action pin qualification",
-  "updated_at": "2026-09-24T16:16:11+00:00",
+  "updated_at": "2026-09-24T16:22:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1414"
 }
 ---
@@ -73,3 +73,6 @@ v2.87.14. Do not merge while policy or exact-head checks fail.
   rerunning.
 
 - 2026-09-24T16:16:11+00:00: Heartbeat by ar1414-install-pin-recovery-luna56.
+
+- 2026-09-24T16:22:21+00:00: Recorded command exit 0; command argv SHA-256
+  447bbc2951d2fd6322dbd8cecfbeb9efc02ee4a6064e9d04c703d453dc0f0181.
