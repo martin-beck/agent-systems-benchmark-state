@@ -8,7 +8,7 @@
     "AR-1401"
   ],
   "id": "AR-1412",
-  "next_action": "Run focused cargo fmt/test after recording the failed initial fmt-check; then commit code-generation control semantics.",
+  "next_action": "Retry state replication, then run catalog/docs parity and commit the focused code-generation control changes.",
   "observed_branch": "codex/ar-1412-code-generation-controls",
   "observed_dirty": 3,
   "observed_head": "fc74825cb86991bb3afac6854d8cb5048118ff8f",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recovered an abandoned claim with malformed local-time expiry; branch/worktree are now coordinator-bound before the next claim.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Code-generation control workload adapters",
-  "updated_at": "2026-09-24T14:32:35+00:00",
+  "updated_at": "2026-09-24T14:32:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1412"
 }
 ---
@@ -57,3 +57,8 @@ bounded local fixtures or LiteLLM-compatible mocks only.
 
 - 2026-09-24T14:32:35+00:00: Recorded command exit 0; command argv SHA-256
   98c536859234878b11d9f6dc809f2a26558e4ca973a12239e10242091b757cd6.
+
+- 2026-09-24T14:32:50+00:00: Material failure: validate_external_registry.py itself exited 0 with
+  registry_sha256 98ff63b03fc10c16f258acb4be4a14a132ac6dafe6f80069f5981a6ac5b79976 and 22 records,
+  but handoffctl state replication was rejected by GitHub with transient HTTP 500 Internal Server
+  Error. No product mutation was lost; reconcile/retry state push before next checkpoint.
