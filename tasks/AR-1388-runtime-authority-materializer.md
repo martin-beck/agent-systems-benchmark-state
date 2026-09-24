@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1388-runtime-authority-materializer",
   "checkpoint_commit": "8c88b9ec9b4f529ebe30cb230029b2575ad4e6e5",
-  "claim_expires": "2026-09-24T07:46:39+00:00",
+  "claim_expires": "2026-09-24T07:48:02+00:00",
   "depends_on": [
     "AR-1385",
     "AR-1384",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize runtime-owned provider authority from authenticated receipt and chain state.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Runtime authority receipt materializer",
-  "updated_at": "2026-09-24T07:01:39+00:00",
+  "updated_at": "2026-09-24T07:03:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1388-runtime-authority-materializer"
 }
 ---
@@ -98,3 +98,5 @@ namespace identity, or launch tokens.
   External provider remains optional; local deterministic tests are acceptance evidence.
 
 - 2026-09-24T07:01:39+00:00: Heartbeat by codex-asb-ar1329-repair-luna56.
+
+- 2026-09-24T07:03:02+00:00: Heartbeat by codex-asb-ar1329-repair-luna56.
