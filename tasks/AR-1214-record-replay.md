@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach privacy-safe LLM response recording and strict offline replay.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "LLM response record/replay tutorial",
-  "updated_at": "2026-09-24T21:03:38+00:00",
+  "updated_at": "2026-09-24T21:09:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1214"
 }
 ---
@@ -103,3 +103,6 @@ permitted in its CI job.
   branch force-with-lease updated. Diff against origin/main contains only
   crates/asb-cli/tests/guide_examples.rs and docs/workflows/record-replay.md. Created PR #311.
   Post-creation state recording initially hit LOCK_TIMEOUT but retry is now durable.
+
+- 2026-09-24T21:09:02+00:00: Recorded command exit 8; command argv SHA-256
+  a28f568476b0c107e53a881d581c6dda781945e37964ef17292d0ffbf8ad92eb.
