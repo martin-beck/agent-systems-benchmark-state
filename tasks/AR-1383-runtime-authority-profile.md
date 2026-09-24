@@ -12,17 +12,17 @@
   "id": "AR-1383",
   "next_action": "Promote and claim this dependency-valid runtime authority profile successor, then implement authenticated materialization without CLI authority injection.",
   "observed_branch": "feature/ar-1383-runtime-authority-profile",
-  "observed_dirty": 1,
-  "observed_head": "04b4c067055073031cd6d88cf18f0d158f488ad0",
+  "observed_dirty": 0,
+  "observed_head": "e8af8041481c3c02731e02483847a82c3d138027",
   "owner": "codex-asb-runtime-receipt-source-luna56",
   "plan": "../plans/AR-1383-runtime-authority-profile.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize runtime-owned live authority profile for authenticated execution.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Runtime-owned authority profile materialization",
-  "updated_at": "2026-09-24T04:46:13+00:00",
+  "updated_at": "2026-09-24T04:46:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1383-runtime-authority-profile"
 }
 ---
