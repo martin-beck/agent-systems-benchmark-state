@@ -1,13 +1,13 @@
 ---
 {
   "branch": "codex/ar-1414-install-pin-policy",
-  "checkpoint_commit": "f49e67a46c3c39e7015d48112ed26afacba74738",
+  "checkpoint_commit": "9d410f531bced0318df1ecc0614916488f62f4c5",
   "claim_expires": "2026-09-24T18:16:11+00:00",
   "depends_on": [
     "AR-1406"
   ],
   "id": "AR-1414",
-  "next_action": "Monitor PR #235 exact base 8da098770e4a78e94f67cf7b13dbebbcd1c5bbac and repaired head f49e67a46c3c39e7015d48112ed26afacba74738; obtain independent review and all required checks, then merge via handoffctl and verify seven post-merge workflows.",
+  "next_action": "Monitor seven post-merge workflows for merge 9d410f531bced0318df1ecc0614916488f62f4c5: 36026896292,36026896368,36026896414,36026896308,36026896341,36026896407,36026896374; release only after all terminal success.",
   "observed_branch": "codex/ar-1414-install-pin-policy",
   "observed_dirty": 0,
   "observed_head": "f49e67a46c3c39e7015d48112ed26afacba74738",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the newer immutable install-action update reopened as PR #235.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Follow-up install-action pin qualification",
-  "updated_at": "2026-09-24T16:22:21+00:00",
+  "updated_at": "2026-09-24T16:22:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1414"
 }
 ---
@@ -76,3 +76,6 @@ v2.87.14. Do not merge while policy or exact-head checks fail.
 
 - 2026-09-24T16:22:21+00:00: Recorded command exit 0; command argv SHA-256
   447bbc2951d2fd6322dbd8cecfbeb9efc02ee4a6064e9d04c703d453dc0f0181.
+
+- 2026-09-24T16:22:54+00:00: PR #235 merged via handoffctl after exact-head review and all required
+  checks passed.

@@ -74,7 +74,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P2 | [AR-1414](../tasks/AR-1414-action-pin-followup.md): Follow-up install-action pin qualification | ar1414-install-pin-recovery-luna56 | Qualify the newer immutable install-action update reopened as PR #235. | Monitor PR #235 exact base 8da098770e4a78e94f67cf7b13dbebbcd1c5bbac and repaired head f49e67a46c3c39e7015d48112ed26afacba74738; obtain independent review and all required checks, then merge via handoffctl and verify seven post-merge workflows. |
+| P2 | [AR-1414](../tasks/AR-1414-action-pin-followup.md): Follow-up install-action pin qualification | ar1414-install-pin-recovery-luna56 | Qualify the newer immutable install-action update reopened as PR #235. | Monitor seven post-merge workflows for merge 9d410f531bced0318df1ecc0614916488f62f4c5: 36026896292,36026896368,36026896414,36026896308,36026896341,36026896407,36026896374; release only after all terminal success. |
 
 ### Open (2)
 
@@ -525,3 +525,4 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1046](../tasks/AR-1046-serialize-emulated-aarch64-agent-tests.md): Serialize emulated AArch64 agent tests | Unclaimed | Make the emulated AArch64 asb-agents fake-node readiness fixtures deterministic without changing production semantics. | No further action: AR-1047 superseded the disproven serialization hypothesis. |
