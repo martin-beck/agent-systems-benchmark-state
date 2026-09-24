@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recovered an abandoned claim with malformed local-time expiry; branch/worktree are now coordinator-bound before the next claim.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Code-generation control workload adapters",
-  "updated_at": "2026-09-24T14:34:24+00:00",
+  "updated_at": "2026-09-24T14:34:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1412"
 }
 ---
@@ -75,3 +75,6 @@ bounded local fixtures or LiteLLM-compatible mocks only.
   propagation, docs, and positive/negative tests. Focused asb-workloads tests passed (32 total
   including 13 Python parity/registry tests); two state pushes encountered transient GitHub HTTP 500
   and require reconcile retry.
+
+- 2026-09-24T14:34:42+00:00: Recorded command exit 0; command argv SHA-256
+  63af50fa0dca575d714bb388464b33f342013a7d1512e8b228f7082668772947.
