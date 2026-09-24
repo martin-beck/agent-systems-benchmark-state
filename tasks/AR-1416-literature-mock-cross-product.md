@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar-1416-literature-mock-cross-product",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T20:21:30+00:00",
   "depends_on": [
     "AR-1415",
     "AR-1401",
@@ -10,15 +10,15 @@
   ],
   "id": "AR-1416",
   "next_action": "Promote after AR-1415 is done; exercise every locally executable literature selector through plan, mock run, replay, and report paths.",
-  "owner": "",
+  "owner": "ar1416-literature-mock-cross-product-luna56",
   "plan": "../plans/AR-1416.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Prove end-to-end selectable literature workloads with deterministic local or LiteLLM-compatible mocks and no live provider dependency.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Literature workload local-mock cross-product",
-  "updated_at": "2026-09-24T18:20:25+00:00",
+  "updated_at": "2026-09-24T18:21:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1416"
 }
 ---
@@ -40,3 +40,5 @@ exact-head CI, independent review, and all required post-merge workflows.
 - 2026-09-24T18:20:25+00:00: AR-1415 is durably done at merge c533734a with all seven post-merge
   workflows successful. Dependencies AR-1401 and AR-1402 are complete; promote AR-1416 for bounded
   local-mock cross-product execution coverage with no live provider or network.
+
+- 2026-09-24T18:21:30+00:00: Claimed by ar1416-literature-mock-cross-product-luna56.
