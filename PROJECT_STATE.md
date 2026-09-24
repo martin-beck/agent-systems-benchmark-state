@@ -13,7 +13,7 @@ Generated from local Git and GitHub. Do not edit.
 | #119 | `feature/native-capacity-controller@e2e3574ed2bb` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(capacity): add bounded native lifecycle controller |
 | #305 | `codex/ar-1212-benchmark-readiness@3fda4b4eb63f` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | docs(tutorials): add offline benchmark readiness guide |
 | #306 | `feature/ar-1316-authenticated-agent-catalog-producer@e0e447dcb521` | `main` | DIRTY | - | feat(control): persist authenticated agent catalog |
-| #307 | `codex/ar-1417-interactive-stateful-literature@666043f2c7d3` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(workloads): cover interactive public lifecycle |
+| #307 | `codex/ar-1417-interactive-stateful-literature@666043f2c7d3` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(workloads): cover interactive public lifecycle |
 
 ## Recent workflows
 
@@ -26,7 +26,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36047645625 | `666043f2c7d3` | pull_request | Hosted portability and native qualification | completed:success |
 | 36047645623 | `666043f2c7d3` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36047645614 | `666043f2c7d3` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 36047645602 | `666043f2c7d3` | pull_request | Formal assurance | in_progress:- |
+| 36047645602 | `666043f2c7d3` | pull_request | Formal assurance | completed:success |
 | 36046399381 | `3fda4b4eb63f` | pull_request | Emulated aarch64 portability | completed:success |
 | 36046399194 | `3fda4b4eb63f` | pull_request | Formal assurance | completed:success |
 | 36046399107 | `3fda4b4eb63f` | pull_request | Hosted portability and native qualification | completed:success |
