@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Literature selector completeness and parity",
-  "updated_at": "2026-09-24T16:55:49+00:00",
+  "updated_at": "2026-09-24T16:55:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1410"
 }
 ---
@@ -181,3 +181,6 @@ does not turn external qualification or live-provider access into a prerequisite
   state root already owned; the other 104 CLI tests passed. The isolated exact test previously
   passed, confirming shared-state/concurrency flake rather than this change. Do not suppress or
   reinterpret it as selector failure.
+
+- 2026-09-24T16:55:56+00:00: Recorded command exit 0; command argv SHA-256
+  8aa4c676409ce0fa3549f84732e2f0f7c52a8a7d0addca54a469385ec6825808.
