@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prevent stale-base sequential merges from passing review but failing protected-main merge-tree policy.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Protected-main stale-base merge requalification repair",
-  "updated_at": "2026-09-24T22:26:16+00:00",
+  "updated_at": "2026-09-24T22:35:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1431"
 }
 ---
@@ -78,3 +78,6 @@ that incident and must not waive the policy.
   bd694233fd95941bfc02cdd4e7f0fd3b124d0f4e. No merge or release authority exercised; preserve
   incident failure until independent review, exact-head CI, merge, and seven post-merge workflows
   pass.
+
+- 2026-09-24T22:35:41+00:00: Recorded command exit 0; command argv SHA-256
+  a6edefba690f717fc45d31be8681f40368a91e0712984d085193d06572ac663f.
