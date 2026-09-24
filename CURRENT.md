@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1409](tasks/AR-1409-interactive-literature-adapters.md): Interactive literature workload adapters | Add offline-selectable interactive and tool-use literature workload adapters. | Rerun full locked workspace tests after transient asb-runtime authority failure; then run rustdoc/release build, review exact diff, and publish. | ar1409_interactive_literature_luna56 |
+| P1 | [AR-1409](tasks/AR-1409-interactive-literature-adapters.md): Interactive literature workload adapters | Add offline-selectable interactive and tool-use literature workload adapters. | Independent review complete; publish signed exact-base PR from 6f93076 against protected main, then monitor required checks. | ar1409_interactive_literature_luna56 |
 
 ## Open
 

@@ -8,7 +8,7 @@
     "AR-1401"
   ],
   "id": "AR-1409",
-  "next_action": "Rerun full locked workspace tests after transient asb-runtime authority failure; then run rustdoc/release build, review exact diff, and publish.",
+  "next_action": "Independent review complete; publish signed exact-base PR from 6f93076 against protected main, then monitor required checks.",
   "observed_branch": "codex/ar-1409-interactive-literature",
   "observed_dirty": 0,
   "observed_head": "6f93076afa1af5eca0d33a693106e60f70e4ea5b",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add offline-selectable interactive and tool-use literature workload adapters.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Interactive literature workload adapters",
-  "updated_at": "2026-09-24T15:27:05+00:00",
+  "updated_at": "2026-09-24T15:27:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1409"
 }
 ---
@@ -61,3 +61,8 @@ LiteLLM-compatible mocks are the only development and CI execution path.
 
 - 2026-09-24T15:27:05+00:00: Recorded command exit 0; command argv SHA-256
   b49a90ee600c1023cee9ee9f9e8a4f9a06c53eef8c48d3932d88e482126c7c01.
+
+- 2026-09-24T15:27:24+00:00: Rerun full cargo test --locked --workspace passed after transient
+  authority.is_active failure; cargo clippy -D warnings, rustdoc -D warnings, release build, focused
+  adapter tests, Python workload tests (33 passed), generated catalog checks, diff check, SSH
+  signature and DCO all pass.
