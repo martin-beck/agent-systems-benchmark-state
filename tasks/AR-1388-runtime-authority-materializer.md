@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize runtime-owned provider authority from authenticated receipt and chain state.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Runtime authority receipt materializer",
-  "updated_at": "2026-09-24T06:58:12+00:00",
+  "updated_at": "2026-09-24T06:58:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1388-runtime-authority-materializer"
 }
 ---
@@ -88,3 +88,6 @@ namespace identity, or launch tokens.
   binding, runtime profile materializer, and positive/tamper/replay tests changed. No secrets,
   endpoints, caller policy/roots/tools, external provider dependency, or gate weakening. SSH
   signature and matching DCO verified; all 12 exact-head checks green; PR is mergeable.
+
+- 2026-09-24T06:58:44+00:00: Recorded command exit 0; command argv SHA-256
+  d7a10560e9602ad0b878cbec49cc30f83acdb809934193003b7fcc1c1d045401.
