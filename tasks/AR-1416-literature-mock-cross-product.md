@@ -9,7 +9,7 @@
     "AR-1402"
   ],
   "id": "AR-1416",
-  "next_action": "Wait for all PR #304 checks at exact base c533734a/head cb33964b to terminal SUCCESS; then merge through handoffctl.",
+  "next_action": "Keep lease and monitor PR #304 aarch64, policy, and Rust checks; merge only after all terminal SUCCESS.",
   "observed_branch": "codex/ar-1416-literature-mock-cross-product",
   "observed_dirty": 0,
   "observed_head": "cb33964b53ae73afac0ff4dce464a0e314c9fedc",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prove end-to-end selectable literature workloads with deterministic local or LiteLLM-compatible mocks and no live provider dependency.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Literature workload local-mock cross-product",
-  "updated_at": "2026-09-24T18:36:33+00:00",
+  "updated_at": "2026-09-24T18:36:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1416"
 }
 ---
@@ -151,3 +151,7 @@ exact-head CI, independent review, and all required post-merge workflows.
 
 - 2026-09-24T18:36:33+00:00: Recorded command exit 8; command argv SHA-256
   5cac625f880c046762b4c0a941757f6e5188dbd0d4c635fd0a7709526204acfb.
+
+- 2026-09-24T18:36:55+00:00: Heartbeat attempt failed with LOCK_TIMEOUT after 10.0s acquiring
+  exclusive coordinator lock while hosted checks remain pending; no product/PR state was changed.
+  Retry heartbeat before merge.
