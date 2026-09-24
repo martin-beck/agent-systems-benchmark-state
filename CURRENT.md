@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1314](tasks/AR-1314-optional-bundle-signing-development-release.md): Optional runtime-bundle signing for development and tagged releases | Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile. | Wait for PR #232 exact-head CI after schema-v3 repair; if all required checks pass, independently review and merge through the established workflow, then reconcile AR-1314. Preserve signature-required defaults. | ar1314_bundle_profile_repair_luna56 |
-| P1 | [AR-1395](tasks/AR-1395-literature-workload-adapters.md): Literature workload adapter boundary | Normalize approved literature tasks through bounded, non-vendored ASB workload adapters. | PR #285 exact-head CI is green; merge only after final review, then verify protected-main post-merge gates and release AR. | codex-asb-ar1395-literature-adapters-luna56 |
+| P1 | [AR-1395](tasks/AR-1395-literature-workload-adapters.md): Literature workload adapter boundary | Normalize approved literature tasks through bounded, non-vendored ASB workload adapters. | Protected-main merge 130ff91ec3ac875ac9c370ab67dd9934d830ccdf is complete; wait for and verify all seven post-merge workflows before releasing AR. | codex-asb-ar1395-literature-adapters-luna56 |
 
 ## Open
 

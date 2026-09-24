@@ -1,13 +1,13 @@
 ---
 {
   "branch": "",
-  "checkpoint_commit": "3488c17c58d5bf55ea4a4b00153b98367bed2ffb",
+  "checkpoint_commit": "130ff91ec3ac875ac9c370ab67dd9934d830ccdf",
   "claim_expires": "2026-09-24T11:04:31+00:00",
   "depends_on": [
     "AR-1394"
   ],
   "id": "AR-1395",
-  "next_action": "PR #285 exact-head CI is green; merge only after final review, then verify protected-main post-merge gates and release AR.",
+  "next_action": "Protected-main merge 130ff91ec3ac875ac9c370ab67dd9934d830ccdf is complete; wait for and verify all seven post-merge workflows before releasing AR.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Normalize approved literature tasks through bounded, non-vendored ASB workload adapters.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Literature workload adapter boundary",
-  "updated_at": "2026-09-24T09:05:30+00:00",
+  "updated_at": "2026-09-24T09:06:01+00:00",
   "worktree_key": ""
 }
 ---
@@ -107,3 +107,6 @@ into executable or qualified workloads.
 - 2026-09-24T09:05:30+00:00: Implementation commit 3488c17c58d5bf55ea4a4b00153b98367bed2ffb is
   SSH-signed+DCO; PR #285 exact-head checks all green after current-main rebase. Independently
   reviewed diff and focused/full workspace gates passed.
+
+- 2026-09-24T09:06:01+00:00: PR #285 merged after all 12 exact-head checks passed. Protected-main
+  post-merge verification is in progress on merge commit 130ff91ec3ac875ac9c370ab67dd9934d830ccdf.
