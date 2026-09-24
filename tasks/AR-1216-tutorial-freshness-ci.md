@@ -2,7 +2,7 @@
 {
   "branch": "ci/ar-1216-tutorial-freshness",
   "checkpoint_commit": "f387877be93e890123404bad3dc1ba213ea34db6",
-  "claim_expires": "2026-09-25T00:57:14+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1210",
     "AR-1211",
@@ -16,15 +16,15 @@
   "observed_branch": "ci/ar-1216-tutorial-freshness",
   "observed_dirty": 0,
   "observed_head": "ac93654ed1f73f98174bce5d29395966818f107c",
-  "owner": "ar1216-tutorial-freshness-luna56",
+  "owner": "",
   "plan": "../plans/AR-1216.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Continuously keep ASB tutorial commands and steps syntactically current.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "ASB tutorial freshness CI and documentation qualification",
-  "updated_at": "2026-09-24T22:17:08+00:00",
+  "updated_at": "2026-09-24T22:17:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1216"
 }
 ---
@@ -144,3 +144,9 @@ tutorial command or require a provider/LLM connection.
 
 - 2026-09-24T22:17:08+00:00: Recorded command exit 0; command argv SHA-256
   0cb743e5e55bcc1c9ab00ec7155dfad173c82343d36daceb0d0d5b86b2d688af.
+
+- 2026-09-24T22:17:31+00:00: Feature PR #313 merged as e82e2e6 from reviewed head ac93654; local and
+  exact-head PR checks all green. Post-merge seven-workflow monitoring found Repository quality run
+  36066329347 failed protected-main integrity: merge tree differs from reviewed topic tree because
+  main advanced from d9eb6c2 to 8d1889b before merge. AR-1431 owns stale-base repair; leave AR-1216
+  open until repair and fresh seven post-merge verification succeed.
