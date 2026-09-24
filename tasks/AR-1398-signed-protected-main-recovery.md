@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1398-signed-protected-main-recovery",
   "checkpoint_commit": "f5680de433bb15879b1ef42427d1e7843e0bff36",
-  "claim_expires": "2026-09-24T12:05:02+00:00",
+  "claim_expires": "2026-09-24T12:06:20+00:00",
   "depends_on": [
     "AR-1337"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Restore signed+DCO protected-main evidence after an unsigned GitHub-generated repair merge.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Signed protected-main recovery",
-  "updated_at": "2026-09-24T10:06:09+00:00",
+  "updated_at": "2026-09-24T10:06:20+00:00",
   "worktree_key": ""
 }
 ---
@@ -82,3 +82,5 @@ providers are never required for development evidence.
   quality pending; 35984949114 Rust verification pending; 35984949065 formal assurance pending;
   35984949070 fault assurance success; 35984949047 AWQ shadow success; 35984949142 headers success;
   35984949137 platform success. No failures.
+
+- 2026-09-24T10:06:20+00:00: Heartbeat by ar1398_signed_recovery_luna56.
