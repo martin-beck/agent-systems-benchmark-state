@@ -9,18 +9,18 @@
   ],
   "id": "AR-1404",
   "next_action": "Wait for all 12 exact-head checks on b0ed118; independently verify green head, merge exact base, run post-merge workflows, release AR-1404.",
-  "observed_branch": "codex/ar-1404-literature-documentation",
+  "observed_branch": "DETACHED",
   "observed_dirty": 0,
-  "observed_head": "b0ed118cbe577827487701e35b9f3ea37027e46c",
+  "observed_head": "16c5b87177e45ca5cfcf514af8c933fd55056a5a",
   "owner": "ar1404_literature_documentation_luna56b",
   "plan": "../plans/AR-1404-literature-documentation-matrix.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "PR #295 head repaired to use temp-file parity handoff; exact checks restarted.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Literature workload documentation and matrix contract",
-  "updated_at": "2026-09-24T14:02:03+00:00",
+  "updated_at": "2026-09-24T14:02:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1404"
 }
 ---
