@@ -80,13 +80,12 @@
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1421](../tasks/AR-1421-protected-main-literature-merge-race.md): Protected-main literature merge race repair | ar1421-protected-main-race-luna56 | Repair protected-main merge-tree requalification after a literature PR merges onto an advanced main. | Promote after AR-1417&#x27;s product merge is preserved and the failed run 36048870322 is recorded; repair the protected-main merge admission/requalification path without weakening the tree invariant. |
 | P1 | [AR-1417](../tasks/AR-1417-interactive-stateful-literature-workloads.md): Interactive stateful literature workloads | ar1417-literature-luna56 | Add selectable interactive and stateful literature workloads beside built-in software-engineering fixtures. | Keep open: protected-main Repository quality run 36048870322 failed because merge tree 5ddac12 differs from reviewed topic tree 666043f (base a2a6414 vs 0dcc717); await coordinator exact-main requalification or successor repair, never weaken gate. |
-| P1 | [AR-1422](../tasks/AR-1422-stale-agent-catalog-pr-cleanup.md): Stale agent-catalog PR cleanup | open-pr-triage-luna56 | Close stale conflicting agent-catalog PR #306 through durable coordinator evidence. | Closure evidence complete. Re-run doctor --live after concurrent state-worker AR-1421 changes settle; then release AR-1422 done. Do not modify AR-1421 files. |
 
 ### Blocked (66)
 
@@ -239,7 +238,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (290)
+### Done (291)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -514,3 +513,4 @@
 | P1 | [AR-1413](../tasks/AR-1413-long-horizon-performance-adapters.md): Long-horizon and performance literature workload adapters | Unclaimed | Seven post-merge runs: four terminal success; aarch64, repository quality, and Rust remain actively executing on GitHub-hosted runners. | Continue monitoring post-merge IDs 36018871328/36018871323/36018871358; runner/job APIs show active in-progress steps, so do not rerun. Release only after all seven terminal success. |
 | P1 | [AR-1415](../tasks/AR-1415-literature-selector-total-coverage.md): Total literature workload selector coverage | Unclaimed | Make the complete literature workload inventory selectable beside built-in software-engineering fixtures with truthful evidence gates. | Rerun exact failed post-merge workflow 36038241138 after three green isolated Goose reproductions; wait all seven terminal SUCCESS, verify main, then release. |
 | P1 | [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md): Literature workload local-mock cross-product | Unclaimed | Prove end-to-end selectable literature workloads with deterministic local or LiteLLM-compatible mocks and no live provider dependency. | Monitor seven post-merge workflows for merge 0dcc717; release AR-1416 only after all seven terminal SUCCESS and exact-main verification. |
+| P1 | [AR-1418](../tasks/AR-1418-tool-use-reliability-safety-workloads.md): Tool-use reliability and safety workloads | Unclaimed | Add selectable tool-use reliability and safety workloads from the literature with separate metrics. | Release: implementation is already merged in PR #300 at c2fe732b from 6f93076; focused interactive tests, all asb-workloads targets, and clippy -D warnings pass on exact current main 0dcc717. Preserve historical exact-head CI evidence and release without duplicate PR. |

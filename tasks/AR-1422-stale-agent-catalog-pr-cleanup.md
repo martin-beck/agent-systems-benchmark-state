@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar-1422-stale-pr-cleanup",
   "checkpoint_commit": "5ddac12fc0b2d9fbff2b056af888b9ec76edeee5",
-  "claim_expires": "2026-09-24T21:38:31+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1316"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "codex/ar-1422-stale-pr-cleanup",
   "observed_dirty": 0,
   "observed_head": "5ddac12fc0b2d9fbff2b056af888b9ec76edeee5",
-  "owner": "open-pr-triage-luna56",
+  "owner": "",
   "plan": "../plans/AR-1422.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Close stale conflicting agent-catalog PR #306 through durable coordinator evidence.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Stale agent-catalog PR cleanup",
-  "updated_at": "2026-09-24T19:45:06+00:00",
+  "updated_at": "2026-09-24T19:45:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1422"
 }
 ---
@@ -58,3 +58,10 @@ disposition auditable and to prevent a duplicate branch from remaining open.
   locally modified; generated WORKTREES differs only in concurrent state-worktree revisions/behind
   counts. Plain doctor reports structure, references, privacy, and generated views consistent. No
   AR-1421 files were touched.
+
+- 2026-09-24T19:45:38+00:00: AR-1422 complete: verified PR #306 base 0dcc717, exact head e0e447d,
+  head tree eae2739 and CONFLICTING/DIRTY status; current main 5ddac12/tree 7c92855 descends from
+  AR-1316 verification point and retains the implementation plus later enhancements, with no unique
+  unmerged delta. Added public supersession comments issuecomment-5820964967 and
+  issuecomment-5820977882, closed PR #306 as superseded through handoffctl, performed no
+  rebase/force-push/merge/product edit. Reconciled state and doctor --live passed.
