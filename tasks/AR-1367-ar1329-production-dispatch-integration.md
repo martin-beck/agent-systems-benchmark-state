@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1367-ar1329-production-dispatch-integration",
   "checkpoint_commit": "0c6dc52e1f4aa5854f73081711dbd9a5bc1a5d7c",
-  "claim_expires": "2026-09-24T02:44:25+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1366",
     "AR-1340",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1367-ar1329-production-dispatch-integration",
   "observed_dirty": 0,
   "observed_head": "0c6dc52e1f4aa5854f73081711dbd9a5bc1a5d7c",
-  "owner": "codex-asb-runtime-attested-enrollment-luna56",
+  "owner": "",
   "plan": "../plans/AR-1367-ar1329-production-dispatch-integration.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Complete production asb run/sweep live-provider dispatch through runtime-owned authenticated acquisition and teardown.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "AR-1329 production dispatch integration",
-  "updated_at": "2026-09-24T00:44:27+00:00",
+  "updated_at": "2026-09-24T00:46:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1367-ar1329-production-dispatch-integration"
 }
 ---
@@ -39,3 +39,10 @@ metadata, touch asb-tui, or expose live authority through CLI/config input.
 
 - 2026-09-24T00:44:27+00:00: Recorded command exit 0; command argv SHA-256
   0f4a57e84077aa2aca93b43c7a5076f72dc40bc5f95460fbb317d7cc68fa264b.
+
+- 2026-09-24T00:46:04+00:00: Blocked truthfully after fresh production dispatch audit: CLI run/sweep
+  only accepts an injected LiveProviderAttemptFactory, and ordinary CLI has no authenticated
+  ControlClient receipt operation or runtime-owned enrollment source. Existing AR-1366 consumer is
+  only an in-process response validator; it cannot materialize authority. No safe product mutation
+  was made. Successor AR-1368 created to add the missing authenticated ControlClient receipt source;
+  AR-1329 remains fail-closed.
