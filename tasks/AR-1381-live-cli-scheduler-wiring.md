@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1381-live-cli-scheduler-wiring",
-  "checkpoint_commit": "445a4cffa56b34e13c63b33b6a30a487d3a7381e",
+  "checkpoint_commit": "4ba3085e95444fba069b129e33020f19cc7ea830",
   "claim_expires": "2026-09-24T06:12:03+00:00",
   "depends_on": [
     "AR-1380",
@@ -13,7 +13,7 @@
     "AR-1362"
   ],
   "id": "AR-1381",
-  "next_action": "PR #277 is published at exact head 445a4cf. Monitor all required exact-head checks; repair failures through handoffctl, merge only after independent review and green CI, then verify seven post-merge workflows.",
+  "next_action": "PR #277 force-updated to exact head 4ba3085 after provenance fixture repair. Monitor fresh exact-head checks; repair any new failures, merge only green, then verify seven post-merge workflows.",
   "observed_branch": "feature/ar-1381-live-cli-scheduler-wiring",
   "observed_dirty": 0,
   "observed_head": "4ba3085e95444fba069b129e33020f19cc7ea830",
@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire runtime-owned live scheduler authority into production asb run and sweep.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Runtime-owned live CLI scheduler wiring",
-  "updated_at": "2026-09-24T04:18:24+00:00",
+  "updated_at": "2026-09-24T04:18:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1381-live-cli-scheduler-wiring"
 }
 ---
@@ -140,3 +140,10 @@ all fail-closed authority and privacy contracts.
 
 - 2026-09-24T04:18:24+00:00: Recorded command exit 0; command argv SHA-256
   4d9055da4fa254b2d8ec1c166419873511391364ea1bef603b4d899166da6752.
+
+- 2026-09-24T04:18:47+00:00: Rust verification failed on the expected checked-in provenance digest
+  for crates/asb-cli/src/lib.rs after the CLI wrapper change (old 30764f..., actual f9659a...).
+  Updated only docs/examples/asb-cli-workflow-v1.provenance.json to the actual reviewed source
+  digest. Focused workflow_transcript: 3/3 passed. Full cargo test --workspace --locked completed
+  successfully (capability-gated ignores only). Signed+DCO repair commit
+  4ba3085e95444fba069b129e33020f19cc7ea830 force-pushed with lease.
