@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind authenticated control receipts to runtime-owned live dispatch.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Authenticated live control adapter",
-  "updated_at": "2026-09-24T03:11:43+00:00",
+  "updated_at": "2026-09-24T03:12:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1378-live-control-adapter"
 }
 ---
@@ -66,3 +66,6 @@ chain store; this task supplies only the authenticated control operation seam.
   retrieves the opaque chain from RuntimeCertificateChainStore, and delegates
   nonce/generation/attestation/replay validation. Errors are bounded and privacy-safe. Existing
   bridge tests cover tamper/replay/stale/unavailable; focused command green.
+
+- 2026-09-24T03:12:01+00:00: Recorded command exit 0; command argv SHA-256
+  e210942b850b33ddbde4386c19c8f84af2ebdd24a0c9ef886eec60df32f1861c.
