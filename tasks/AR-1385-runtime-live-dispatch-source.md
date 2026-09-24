@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1385-runtime-live-dispatch-source",
-  "checkpoint_commit": "5c4d5304e53d2cd9559999a00afd86cac28d29dc",
+  "checkpoint_commit": "fd9517edb811fc119bc252ef4edd15e350845042",
   "claim_expires": "2026-09-24T06:52:45+00:00",
   "depends_on": [
     "AR-1384",
@@ -11,7 +11,7 @@
     "AR-1381"
   ],
   "id": "AR-1385",
-  "next_action": "Refresh the declared isolated worktree from protected main, materialize the authenticated runtime-owned live dispatch source consumed by asb run and sweep, and add fail-closed positive and negative tests.",
+  "next_action": "Independent review complete locally; publish signed+DCO exact-head PR for fd9517ed, monitor required checks, then verify all seven post-merge workflows before advancing AR-1329.",
   "observed_branch": "feature/ar-1385-runtime-live-dispatch-source",
   "observed_dirty": 0,
   "observed_head": "fd9517edb811fc119bc252ef4edd15e350845042",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize the authenticated runtime-owned live dispatch source for production asb run and sweep.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Authenticated runtime live dispatch source",
-  "updated_at": "2026-09-24T05:54:20+00:00",
+  "updated_at": "2026-09-24T05:54:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1385-runtime-live-dispatch-source"
 }
 ---
@@ -70,3 +70,9 @@ namespace identity, or launch authority.
 
 - 2026-09-24T05:54:08+00:00: Recorded command exit 0; command argv SHA-256
   3f4f610a8694cfaaf20814f5703655690fedd5d988020f8d0ecc16560d71ba47.
+
+- 2026-09-24T05:54:43+00:00: Implemented runtime-owned LiveProviderRuntimeDispatchSource from opaque
+  authenticated handle and CLI source-consumer seam; added positive consumption/debug and
+  invalid-adapter fail-closed tests. External providers are not required; deterministic local mock
+  remains sufficient. Focused runtime tests 2/2, full asb-runtime 118 passed/1 ignored, CLI focused
+  test passed, cargo check and clippy -D warnings passed. Product commit is SSH-signed with DCO.
