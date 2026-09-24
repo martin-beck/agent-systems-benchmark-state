@@ -1,6 +1,6 @@
 ---
 {
-  "branch": "",
+  "branch": "codex/ar-1415-literature-selector-total-coverage",
   "checkpoint_commit": "",
   "claim_expires": "",
   "depends_on": [
@@ -18,7 +18,7 @@
   "task_revision": 2,
   "title": "Total literature workload selector coverage",
   "updated_at": "2026-09-24T17:42:37+00:00",
-  "worktree_key": ""
+  "worktree_key": "agent-systems-benchmark-ar-1415"
 }
 ---
 
