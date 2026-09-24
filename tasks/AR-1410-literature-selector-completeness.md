@@ -12,7 +12,7 @@
     "AR-1413"
   ],
   "id": "AR-1410",
-  "next_action": "Investigate recurring shared-state ownership flake separately; selector-focused gates are green. PR #302 rebased exact base 9d410f5 head 477eeb9; monitor hosted required checks.",
+  "next_action": "Repair provenance fixture hash, rerun exact provenance and applicable focused gates, then signed commit/push and await fresh PR checks.",
   "observed_branch": "codex/ar-1410-literature-selector-parity",
   "observed_dirty": 0,
   "observed_head": "477eeb9fb6c21d0a4a2c51ed11116f19c6b4e7e4",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Literature selector completeness and parity",
-  "updated_at": "2026-09-24T17:00:29+00:00",
+  "updated_at": "2026-09-24T17:01:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1410"
 }
 ---
@@ -201,3 +201,8 @@ does not turn external qualification or live-provider access into a prerequisite
 
 - 2026-09-24T17:00:29+00:00: Recorded command exit 0; command argv SHA-256
   58875a3ea6473409f7b50af8df9461ea8b84f6aedefa4f8083a6c7c1c8bfa0c0.
+
+- 2026-09-24T17:01:02+00:00: PR Rust checks failed on exact version-coupled provenance assertion:
+  docs/examples/asb-cli-workflow-v1.provenance.json expected cli_source_sha256 35cf5e08..., while
+  current crates/asb-cli/src/lib.rs hashes af1fb879... after the intended catalog field change.
+  Repairing only the provenance fixture to the actual source hash; no gate weakening.

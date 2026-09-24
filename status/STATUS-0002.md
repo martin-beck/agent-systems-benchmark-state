@@ -74,7 +74,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1410](../tasks/AR-1410-literature-selector-completeness.md): Literature selector completeness and parity | ar1410-literature-selector-parity-luna56 | Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads. | Investigate recurring shared-state ownership flake separately; selector-focused gates are green. PR #302 rebased exact base 9d410f5 head 477eeb9; monitor hosted required checks. |
+| P1 | [AR-1410](../tasks/AR-1410-literature-selector-completeness.md): Literature selector completeness and parity | ar1410-literature-selector-parity-luna56 | Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads. | Repair provenance fixture hash, rerun exact provenance and applicable focused gates, then signed commit/push and await fresh PR checks. |
 
 ### Open (2)
 
