@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1365-control-receipt-source-integration",
   "checkpoint_commit": "6959cc1810265e026a9af40602752fdca4dc1e18",
-  "claim_expires": "2026-09-24T01:56:48+00:00",
+  "claim_expires": "2026-09-24T02:00:12+00:00",
   "depends_on": [
     "AR-1362",
     "AR-1364"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate authenticated chain and authority enrollment into the versioned control receipt source.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Control receipt source integration",
-  "updated_at": "2026-09-24T00:00:09+00:00",
+  "updated_at": "2026-09-24T00:00:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1365-control-receipt-source-integration"
 }
 ---
@@ -70,3 +70,5 @@ AR-1364. Do not touch asb-tui or synthesize authority from CLI/config input.
 
 - 2026-09-24T00:00:09+00:00: Publication verified: clean SSH-signed+DCO commit
   6959cc1810265e026a9af40602752fdca4dc1e18 is pushed and PR #269 is open at the exact head.
+
+- 2026-09-24T00:00:12+00:00: Heartbeat by codex-asb-runtime-attested-enrollment-luna56.
