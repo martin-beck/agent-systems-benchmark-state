@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prevent stale-base sequential merges from passing review but failing protected-main merge-tree policy.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Protected-main stale-base merge requalification repair",
-  "updated_at": "2026-09-24T22:24:11+00:00",
+  "updated_at": "2026-09-24T22:24:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1431"
 }
 ---
@@ -48,3 +48,6 @@ that incident and must not waive the policy.
 
 - 2026-09-24T22:24:11+00:00: Recorded command exit 1; command argv SHA-256
   053a953a8533985d69cd596872ffe27fefa3f9ca58ceae1901a1cd4627604564.
+
+- 2026-09-24T22:24:26+00:00: Recorded command exit 0; command argv SHA-256
+  0c632280b62808e521b049b72a175972d9c44cd13a421f68a729152d7c7d42fc.
