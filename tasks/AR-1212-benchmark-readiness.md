@@ -1,13 +1,13 @@
 ---
 {
   "branch": "codex/ar-1212-benchmark-readiness",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "0edd9935ca907aac736d3244bdd00d9a47d687e8",
   "claim_expires": "2026-09-24T20:50:15+00:00",
   "depends_on": [
     "AR-1211"
   ],
   "id": "AR-1212",
-  "next_action": "Implement the offline tutorial for checking agent benchmark readiness under the current configuration.",
+  "next_action": "PR #305 is published at exact signed head; obtain independent review, wait for all required checks, then merge and verify post-merge workflows.",
   "observed_branch": "codex/ar-1212-benchmark-readiness",
   "observed_dirty": 0,
   "observed_head": "0edd9935ca907aac736d3244bdd00d9a47d687e8",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach users to test configured-agent benchmark eligibility without running an agent.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Agent benchmark-readiness tutorial",
-  "updated_at": "2026-09-24T18:57:11+00:00",
+  "updated_at": "2026-09-24T18:57:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1212"
 }
 ---
@@ -80,3 +80,7 @@ Implement the linked tutorial and deterministic negative/positive syntax fixture
 
 - 2026-09-24T18:57:11+00:00: Recorded command exit 0; command argv SHA-256
   975feb900a03f5cb79ad5f01534d646269d63e53fe22ae153d287fb9c953d1f0.
+
+- 2026-09-24T18:57:43+00:00: Published PR #305 at exact signed/DCO head
+  0edd9935ca907aac736d3244bdd00d9a47d687e8. Focused validator 15/15, guide_examples 4/4, fmt and
+  repository policy passed; no provider/agent execution.
