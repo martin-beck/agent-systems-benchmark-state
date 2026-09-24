@@ -2,7 +2,7 @@
 {
   "branch": "feature/native-capacity-controller",
   "checkpoint_commit": "4630f90af739fc628d2e4264a2d40fd7fe142eec",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T23:53:05+00:00",
   "depends_on": [
     "AR-0701",
     "AR-0103"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/native-capacity-controller",
   "observed_dirty": 0,
   "observed_head": "4630f90af739fc628d2e4264a2d40fd7fe142eec",
-  "owner": "",
+  "owner": "ar0704-requal-luna56",
   "plan": "../plans/AR-0704.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 252,
+  "task_revision": 253,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-24T21:52:19+00:00",
+  "updated_at": "2026-09-24T21:53:05+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -846,3 +846,5 @@ must not block this AR or its dependents.
 - 2026-09-24T21:52:19+00:00: Recovered expired claim formerly owned by ar0704-requal-luna56. Lease
   expired at 2026-09-24T21:52:07Z; no owner process found. Recover for safe PR #119
   rebase/requalification onto protected merge d9eb6c2.
+
+- 2026-09-24T21:53:05+00:00: Claimed by ar0704-requal-luna56.
