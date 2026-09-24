@@ -20,11 +20,11 @@
   "plan": "../plans/AR-1386-live-cli-dispatch-integration.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Integrate authenticated runtime live dispatch into production asb run and sweep.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Production live CLI dispatch integration",
-  "updated_at": "2026-09-24T06:32:00+00:00",
+  "updated_at": "2026-09-24T06:31:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1386-live-cli-dispatch-integration"
 }
 ---
@@ -34,3 +34,6 @@ the actual production CLI path. It must preserve runtime-owned authority and
 fail-closed network, credential, namespace, launch-token, lease, and teardown
 boundaries.
 
+
+- 2026-09-24T06:31:38+00:00: AR-1385 done; next coordinator repair integrates authenticated dispatch
+  into production run and sweep; dependencies verified
