@@ -8,7 +8,7 @@
     "AR-0103"
   ],
   "id": "AR-0704",
-  "next_action": "PR #119 exact e2e3574 is green except quality 35401437247 at 89.99% coverage. Preserve PR; repair via AR-1312 when promotable. Do not merge or weaken 90%.",
+  "next_action": "PR #119 is stale on 78a8e9f; AR-1312 coverage repair is done. Rebase the reviewed lifecycle diff onto current main 6925c3c, rerun all gates, and merge only exact-head green.",
   "observed_branch": "feature/native-capacity-controller",
   "observed_dirty": 0,
   "observed_head": "e2e3574ed2bbc020105ffb1eb4c5a38691b299a3",
@@ -25,6 +25,11 @@
 }
 ---
 ## AR-0704
+
+- 2026-09-24T17:46:00+00:00: Independent PR #119 audit confirmed the only historical
+  failure was 89.99% coverage on stale base 78a8e9f; current main 6925c3c and AR-1312
+  coverage repair are green. Preserve the open PR, rebase its two-file lifecycle diff,
+  and require fresh exact-head gates before merge.
 
 Define the credential-isolated reservation/provision/teardown controller for genuine Debian and
 openEuler native x86_64 cells on the authorized development host, including local resource
