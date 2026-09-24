@@ -22,20 +22,21 @@ Generated from local Git and GitHub. Do not edit.
 | #235 | `dependabot/github_actions/taiki-e/install-action-2.87.12@de0353cce59e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.6 to 2.87.12 |
 | #236 | `dependabot/cargo/toml-1.1.6spec-1.1.0@9dc09c5208ab` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump toml from 0.8.23 to 1.1.6+spec-1.1.0 |
 | #237 | `dependabot/cargo/thiserror-2.0.20@83dba9288d9c` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump thiserror from 2.0.16 to 2.0.20 |
+| #286 | `repair/ar-1397-protected-main-postmerge-concurrency@1bcd946b30a2` | `main` | UNSTABLE | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, QUEUED:, QUEUED:, IN_PROGRESS:, IN_PROGRESS: | fix(integration): preserve exact main post-merge evidence |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 35982143143 | `1bcd946b30a2` | pull_request | Huawei MIT source headers | completed:success |
+| 35982143097 | `1bcd946b30a2` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 35982143086 | `1bcd946b30a2` | pull_request | Rust verification | in_progress:- |
+| 35982143065 | `1bcd946b30a2` | pull_request | Fault assurance | queued:- |
+| 35982143020 | `1bcd946b30a2` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 35982143017 | `1bcd946b30a2` | pull_request | Formal assurance | queued:- |
+| 35982143004 | `1bcd946b30a2` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 35982142972 | `1bcd946b30a2` | pull_request | Repository quality | in_progress:- |
 | 35980460560 | `c58b0b0a4d90` | workflow_dispatch | Rust verification | completed:cancelled |
 | 35979776084 | `c58b0b0a4d90` | push | Rust verification | completed:cancelled |
 | 35979776053 | `c58b0b0a4d90` | push | Formal assurance | completed:success |
 | 35979776020 | `c58b0b0a4d90` | push | Hosted portability and native qualification | completed:success |
-| 35979775942 | `c58b0b0a4d90` | push | Huawei MIT source headers | completed:success |
-| 35979775844 | `c58b0b0a4d90` | push | Emulated aarch64 portability | completed:success |
-| 35979775776 | `c58b0b0a4d90` | push | Fault assurance | completed:success |
-| 35979775718 | `c58b0b0a4d90` | push | Repository quality | completed:failure |
-| 35979100377 | `130ff91ec3ac` | push | Emulated aarch64 portability | completed:success |
-| 35979100371 | `130ff91ec3ac` | push | Repository quality | completed:success |
-| 35979100360 | `130ff91ec3ac` | push | Formal assurance | completed:success |
-| 35979100359 | `130ff91ec3ac` | push | Hosted portability and native qualification | completed:success |
