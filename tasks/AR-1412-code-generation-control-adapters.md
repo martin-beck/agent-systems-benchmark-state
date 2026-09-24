@@ -8,7 +8,7 @@
     "AR-1401"
   ],
   "id": "AR-1412",
-  "next_action": "Run full applicable local gates, independently review the complete diff, then publish a signed DCO PR from this clean exact branch.",
+  "next_action": "Repair clippy large-enum-variant failure by boxing the literature prepared workload, rerun clippy and focused tests, then push a new signed PR head.",
   "observed_branch": "codex/ar-1412-code-generation-controls",
   "observed_dirty": 0,
   "observed_head": "dbf7883027179f92d4ca9fb7c6bd96f0e55c9060",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recovered an abandoned claim with malformed local-time expiry; branch/worktree are now coordinator-bound before the next claim.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Code-generation control workload adapters",
-  "updated_at": "2026-09-24T14:35:52+00:00",
+  "updated_at": "2026-09-24T14:36:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1412"
 }
 ---
@@ -84,3 +84,8 @@ bounded local fixtures or LiteLLM-compatible mocks only.
 
 - 2026-09-24T14:35:52+00:00: Recorded command exit 101; command argv SHA-256
   1024fc1e6cefa31b078f0b5d2ed85c7ea4586897b388bf1e308f62db58574461.
+
+- 2026-09-24T14:36:38+00:00: Focused clippy failed at crates/asb-workloads/src/lib.rs:219 with -D
+  clippy::large-enum-variant because the new code-generation metadata enlarged LiteraturePrepared
+  inside PreparedWorkloadChoice. This is a real regression in the changed type shape, not an
+  environment failure; repair by boxing the Literature variant and update the PR head.

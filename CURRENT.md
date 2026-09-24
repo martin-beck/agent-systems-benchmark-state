@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1411](tasks/AR-1411-repository-terminal-adapters.md): Repository and terminal literature workload adapters | Add selectable, provenance-preserving repository-repair and terminal benchmark adapters. | PR #297 open; verify exact base fc74825cb86991bb3afac6854d8cb5048118ff8f/head 67129e7504dc28d8f8e02a6bbb955f6683917208/tree, wait for all required checks, independently review, then signed merge. | ar1411_repository_terminal_luna56 |
-| P1 | [AR-1412](tasks/AR-1412-code-generation-control-adapters.md): Code-generation control workload adapters | Recovered an abandoned claim with malformed local-time expiry; branch/worktree are now coordinator-bound before the next claim. | Run full applicable local gates, independently review the complete diff, then publish a signed DCO PR from this clean exact branch. | ar1412_code_generation_luna56b |
+| P1 | [AR-1412](tasks/AR-1412-code-generation-control-adapters.md): Code-generation control workload adapters | Recovered an abandoned claim with malformed local-time expiry; branch/worktree are now coordinator-bound before the next claim. | Repair clippy large-enum-variant failure by boxing the literature prepared workload, rerun clippy and focused tests, then push a new signed PR head. | ar1412_code_generation_luna56b |
 
 ## Open
 
