@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T15:27:28+00:00",
   "depends_on": [
     "AR-1402"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "",
+  "owner": "ar1403_external_qualification_luna56",
   "plan": "../plans/AR-1403-literature-external-qualification.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Add optional evidence-gated qualification for real literature workload sources and evaluators.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Literature workload external qualification",
-  "updated_at": "2026-09-24T13:26:56+00:00",
+  "updated_at": "2026-09-24T13:27:28+00:00",
   "worktree_key": ""
 }
 ---
@@ -29,3 +29,5 @@ development, mock execution, or candidate selection.
 
 - 2026-09-24T13:26:56+00:00: AR-1402 unified offline CLI dispatch is done; define optional external
   qualification without adding a default network/provider path.
+
+- 2026-09-24T13:27:28+00:00: Claimed by ar1403_external_qualification_luna56.

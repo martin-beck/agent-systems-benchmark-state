@@ -3,13 +3,18 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P2 | [AR-1403](tasks/AR-1403-literature-external-qualification.md): Literature workload external qualification | Add optional evidence-gated qualification for real literature workload sources and evaluators. | Promote only after CLI integration is done; extend the explicit external artifact/evaluator qualification workflow without adding a default network path. | ar1403_external_qualification_luna56 |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1212](tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Teach users to test configured-agent benchmark eligibility without running an agent. | Implement the offline tutorial for checking agent benchmark readiness under the current configuration. | - |
 | P0 | [AR-1316](tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | Publish the verified ASB agent catalog required by the first-run setup wizard. | Persist the authenticated catalog snapshot/generation and complete live ASB-to-asb-tui wizard evidence; keep all entries unavailable until a verified release closure exists. | - |
-| P2 | [AR-1403](tasks/AR-1403-literature-external-qualification.md): Literature workload external qualification | Add optional evidence-gated qualification for real literature workload sources and evaluators. | Promote only after CLI integration is done; extend the explicit external artifact/evaluator qualification workflow without adding a default network path. | - |
 | P2 | [AR-1404](tasks/AR-1404-literature-documentation-matrix.md): Literature workload documentation and matrix contract | Generate and verify the literature workload documentation and evidence-state matrix. | Promote after the catalog and CLI contracts stabilize; generate documentation and add CI parity checks across docs, registry, catalog, and CLI inventory. | - |
 
 ## Blocked
