@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar-1427-merge-requal",
   "checkpoint_commit": "81f02d294dc51894a35c6b5273cacde2bb392ef3",
-  "claim_expires": "2026-09-24T23:25:50+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1421"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "codex/ar-1427-merge-requal",
   "observed_dirty": 0,
   "observed_head": "81f02d294dc51894a35c6b5273cacde2bb392ef3",
-  "owner": "ar1427-merge-requal-luna56",
+  "owner": "",
   "plan": "../plans/AR-1427-protected-main-merge-tree-requalification.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Repair exact protected-main merge-tree requalification after sequential tutorial merges.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Protected-main merge-tree requalification repair",
-  "updated_at": "2026-09-24T21:52:23+00:00",
+  "updated_at": "2026-09-24T21:52:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1427-merge-requal"
 }
 ---
@@ -182,3 +182,12 @@ incident evidence; no gate is waived.
 
 - 2026-09-24T21:52:23+00:00: Recorded command exit 0; command argv SHA-256
   f21578637c46aa3054474c32a260f2a02e9c782cce62f9056aea603645f0c849.
+
+- 2026-09-24T21:52:37+00:00: Released done after PR #312 merged as
+  d9eb6c2d6bdaf79c9b91179e13c3ecb1a3b37a3c. Repair commit 81f02d2 is SSH-signed and DCO; merge
+  admission previews exact protected-target/topic tree and fails closed on mismatch, with positive
+  and hostile regression coverage. All seven exact-main post-merge workflows terminal SUCCESS:
+  Repository quality 36063174963, Rust 36063174410, emulated aarch64 36063174344, hosted portability
+  36063174357, fault assurance 36063174428, formal assurance 36063174404, Huawei MIT headers
+  36063174379. Historical AR-1215 failure 36060277237 remains immutable and AR-1215 remains
+  unreleased.
