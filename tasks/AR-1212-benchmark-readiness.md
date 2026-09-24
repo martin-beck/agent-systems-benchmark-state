@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach users to test configured-agent benchmark eligibility without running an agent.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Agent benchmark-readiness tutorial",
-  "updated_at": "2026-09-24T19:04:01+00:00",
+  "updated_at": "2026-09-24T19:04:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1212"
 }
 ---
@@ -107,3 +107,6 @@ Implement the linked tutorial and deterministic negative/positive syntax fixture
   found one generic-api-key finding in the positive readiness fixture at the long provider-plan
   command line, despite no secret; repair is to reformat that JSON command array across lines
   without weakening .gitleaks.toml, then rerun gitleaks and all focused gates.
+
+- 2026-09-24T19:04:24+00:00: Recorded command exit 0; command argv SHA-256
+  839bb0953d610f5b0cbdfcd497c9821efad062e7d303a6bd50776ba865eb9f84.
