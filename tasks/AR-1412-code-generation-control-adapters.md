@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recovered an abandoned claim with malformed local-time expiry; branch/worktree are now coordinator-bound before the next claim.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Code-generation control workload adapters",
-  "updated_at": "2026-09-24T14:30:56+00:00",
+  "updated_at": "2026-09-24T14:31:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1412"
 }
 ---
@@ -43,3 +43,6 @@ bounded local fixtures or LiteLLM-compatible mocks only.
 
 - 2026-09-24T14:30:40+00:00: Recorded command exit 1; command argv SHA-256
   f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
+
+- 2026-09-24T14:31:09+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
