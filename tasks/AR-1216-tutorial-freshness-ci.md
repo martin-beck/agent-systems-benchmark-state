@@ -15,16 +15,16 @@
   "next_action": "Open reviewed PR from ci/ar-1216-tutorial-freshness; run exact-head CI and seven post-merge workflows.",
   "observed_branch": "ci/ar-1216-tutorial-freshness",
   "observed_dirty": 0,
-  "observed_head": "f387877be93e890123404bad3dc1ba213ea34db6",
+  "observed_head": "ac93654ed1f73f98174bce5d29395966818f107c",
   "owner": "ar1216-tutorial-freshness-luna56",
   "plan": "../plans/AR-1216.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Continuously keep ASB tutorial commands and steps syntactically current.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "ASB tutorial freshness CI and documentation qualification",
-  "updated_at": "2026-09-24T22:06:03+00:00",
+  "updated_at": "2026-09-24T22:06:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1216"
 }
 ---
