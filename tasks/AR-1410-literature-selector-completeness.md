@@ -1,7 +1,7 @@
 ---
 {
   "branch": "codex/ar-1410-literature-selector-parity",
-  "checkpoint_commit": "2fe5c77304a3e68dad31168fdd2728d1374f10f5",
+  "checkpoint_commit": "6925c3c443b77aa41ec9578e49cc19b01447c869",
   "claim_expires": "2026-09-24T19:21:19+00:00",
   "depends_on": [
     "AR-1402",
@@ -12,7 +12,7 @@
     "AR-1413"
   ],
   "id": "AR-1410",
-  "next_action": "Monitor fresh PR #302 checks at exact base 9d410f5/head 2fe5c77; required workflow IDs 36032873236,36032873276,36032873237,36032873224,36032873252,36032873206,36032873221 are running. Merge only after all terminal success, then verify post-merge.",
+  "next_action": "Monitor exact-main post-merge workflows 36034017499,36034017471,36034017528,36034017553,36034017539,36034017456,36034017548 until terminal success; verify merged tree then release AR-1410.",
   "observed_branch": "codex/ar-1410-literature-selector-parity",
   "observed_dirty": 0,
   "observed_head": "2fe5c77304a3e68dad31168fdd2728d1374f10f5",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads.",
-  "task_revision": 110,
+  "task_revision": 111,
   "title": "Literature selector completeness and parity",
-  "updated_at": "2026-09-24T17:24:55+00:00",
+  "updated_at": "2026-09-24T17:25:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1410"
 }
 ---
@@ -345,3 +345,8 @@ does not turn external qualification or live-provider access into a prerequisite
 
 - 2026-09-24T17:24:55+00:00: Recorded command exit 0; command argv SHA-256
   c4bd2426d583c7f0e64f0d33f871b01fb74424a483556eecf0ad7b26af0edc37.
+
+- 2026-09-24T17:25:20+00:00: PR #302 merged after independent exact-base diff/signature/DCO review
+  and all seven required PR checks passed. Merge commit 6925c3c443b77aa41ec9578e49cc19b01447c869.
+  Post-merge workflow IDs recorded; Huawei MIT source headers 36034017456 already SUCCESS, six
+  remain in progress.
