@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prove end-to-end selectable literature workloads with deterministic local or LiteLLM-compatible mocks and no live provider dependency.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Literature workload local-mock cross-product",
-  "updated_at": "2026-09-24T18:29:23+00:00",
+  "updated_at": "2026-09-24T18:29:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1416"
 }
 ---
@@ -108,3 +108,6 @@ exact-head CI, independent review, and all required post-merge workflows.
   c533734a486a8c3a8c854c1fce395b915986d874 and head cb33964b53ae73afac0ff4dce464a0e314c9fedc.
   Required checks are currently in progress; two metadata checks already SUCCESS. Push and PR
   publication completed through handoffctl.
+
+- 2026-09-24T18:29:31+00:00: Recorded command exit 0; command argv SHA-256
+  40e9b3643dd7aad71a8db8479aa677013f030cf23d6476616b21250272393137.
