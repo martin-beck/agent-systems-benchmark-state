@@ -65,7 +65,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md): Literature workload local mock execution | ar1401_literature_mock_luna56 | Provide offline deterministic mock execution for every documented literature workload family. | PR #292 was stale at base e0b15fc; rebased signed+DCO head 6c397ce onto protected main f213b296. Force-with-lease push, rerun exact-head checks, independent review, then signed merge and seven post-merge verification. |
+| P1 | [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md): Literature workload local mock execution | ar1401_literature_mock_luna56 | Provide offline deterministic mock execution for every documented literature workload family. | PR #292 base f213b296/head 6c397ce exact-head checks are all green (AWQ, headers, AArch64, fault, formal, hosted, policy/quality, Rust). Obtain independent full-diff review, then signed merge and seven post-merge verification. |
 
 ### Open (2)
 
