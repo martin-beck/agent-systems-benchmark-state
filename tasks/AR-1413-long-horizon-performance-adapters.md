@@ -8,7 +8,7 @@
     "AR-1401"
   ],
   "id": "AR-1413",
-  "next_action": "Review full diff, run focused/full applicable gates, then publish signed+DCO PR against exact protected main ea27dfb4e3a569fd429f99307e91c7629f15f65f.",
+  "next_action": "PR #299 open; independently review full diff and wait for exact-head checks at base ea27dfb4e3a569fd429f99307e91c7629f15f65f/head f3ce434417407d64b14fb0cc1493ffc1f93f3055 before signed merge.",
   "observed_branch": "codex/ar-1413-long-horizon-performance",
   "observed_dirty": 0,
   "observed_head": "f3ce434417407d64b14fb0cc1493ffc1f93f3055",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add truthful long-horizon, refreshed, performance, and reproducibility workload adapters.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Long-horizon and performance literature workload adapters",
-  "updated_at": "2026-09-24T14:58:29+00:00",
+  "updated_at": "2026-09-24T14:58:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1413"
 }
 ---
@@ -94,3 +94,8 @@ bounded local fixtures or LiteLLM-compatible mocks only.
 
 - 2026-09-24T14:58:29+00:00: Recorded command exit 0; command argv SHA-256
   39ca15da1e3486cf479250ecf7bef6193aabc9cc36146e057aa5cd2bbd50cf9b.
+
+- 2026-09-24T14:58:57+00:00: Published PR #299 against exact protected main
+  ea27dfb4e3a569fd429f99307e91c7629f15f65f. Independent diff review covers 71 lines: metric kind,
+  evaluation window, contamination cutoff, archive status, explicit
+  SWE-rebench/SWE-Lancer/performance semantics, tests/docs. Branch clean; signed+DCO head f3ce434.
