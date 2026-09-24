@@ -10,16 +10,16 @@
     "AR-1319"
   ],
   "id": "AR-1316",
-  "next_action": "Persist the authenticated catalog snapshot/generation and complete live ASB-to-asb-tui wizard evidence; keep all entries unavailable until a verified release closure exists.",
+  "next_action": "Coordinator must bind branch feature/ar-1316-authenticated-agent-catalog-producer to isolated worktree /srv/data/projects/agent-systems-benchmark-ar-1316 (metadata key agent-systems-benchmark-ar-1316) before product inspection.",
   "owner": "ar1316-authenticated-agent-catalog-producer-luna56",
   "plan": "../plans/AR-1316.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish the verified ASB agent catalog required by the first-run setup wizard.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Authenticated agent catalog producer",
-  "updated_at": "2026-09-24T17:36:13+00:00",
+  "updated_at": "2026-09-24T17:37:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1316-authenticated-agent-catalog-producer"
 }
 ---
@@ -40,3 +40,8 @@ Progress evidence: ASB PR #245 merged at `027af7ad27da13b359b3f099699c42b03c6f39
 
 - 2026-09-24T17:36:13+00:00: Recorded command exit 0; command argv SHA-256
   7568da4bf550bece93eab632d673660b73eaeb7b76a14002c5156e6754499dd2.
+
+- 2026-09-24T17:37:06+00:00: Startup audit found declared worktree key
+  agent-systems-benchmark-ar-1316-authenticated-agent-catalog-producer resolves to legacy
+  /tmp/asb-ar1316-producer. No product mutation performed. Existing branch is clean at 0b2719e;
+  relocation requires coordinator metadata repair because handoffctl enforces declared basename.

@@ -74,7 +74,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | ar1316-authenticated-agent-catalog-producer-luna56 | Publish the verified ASB agent catalog required by the first-run setup wizard. | Persist the authenticated catalog snapshot/generation and complete live ASB-to-asb-tui wizard evidence; keep all entries unavailable until a verified release closure exists. |
+| P0 | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | ar1316-authenticated-agent-catalog-producer-luna56 | Publish the verified ASB agent catalog required by the first-run setup wizard. | Coordinator must bind branch feature/ar-1316-authenticated-agent-catalog-producer to isolated worktree /srv/data/projects/agent-systems-benchmark-ar-1316 (metadata key agent-systems-benchmark-ar-1316) before product inspection. |
 
 ### Open (1)
 
@@ -525,4 +525,3 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1046](../tasks/AR-1046-serialize-emulated-aarch64-agent-tests.md): Serialize emulated AArch64 agent tests | Unclaimed | Make the emulated AArch64 asb-agents fake-node readiness fixtures deterministic without changing production semantics. | No further action: AR-1047 superseded the disproven serialization hypothesis. |
