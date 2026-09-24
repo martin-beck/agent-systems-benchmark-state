@@ -2,7 +2,7 @@
 {
   "branch": "docs/ar-1215-result-comparison",
   "checkpoint_commit": "0e08fbee769cff71e402aef07ce6fb80a9a821e2",
-  "claim_expires": "2026-09-24T22:57:37+00:00",
+  "claim_expires": "2026-09-24T22:58:21+00:00",
   "depends_on": [
     "AR-1213"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach conservative comparison of multiple agents from the same benchmark.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Multi-agent result comparison tutorial",
-  "updated_at": "2026-09-24T20:57:57+00:00",
+  "updated_at": "2026-09-24T20:58:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1215"
 }
 ---
@@ -76,3 +76,5 @@ commands in tutorial syntax CI.
   unittest suite: 21 passed; tutorial validator: valid; diff check: clean. Product commit 0e08fbee
   is SSH-signed with DCO. Ruff checks could not run because the configured Python environment has no
   ruff module.
+
+- 2026-09-24T20:58:21+00:00: Heartbeat by codex-ar1215-luna56.
