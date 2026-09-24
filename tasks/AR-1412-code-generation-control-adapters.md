@@ -8,7 +8,7 @@
     "AR-1401"
   ],
   "id": "AR-1412",
-  "next_action": "Claim after binding metadata; implement offline-selectable code-generation control adapters.",
+  "next_action": "Run focused cargo fmt/test after recording the failed initial fmt-check; then commit code-generation control semantics.",
   "observed_branch": "codex/ar-1412-code-generation-controls",
   "observed_dirty": 3,
   "observed_head": "fc74825cb86991bb3afac6854d8cb5048118ff8f",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recovered an abandoned claim with malformed local-time expiry; branch/worktree are now coordinator-bound before the next claim.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Code-generation control workload adapters",
-  "updated_at": "2026-09-24T14:31:09+00:00",
+  "updated_at": "2026-09-24T14:31:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1412"
 }
 ---
@@ -46,3 +46,8 @@ bounded local fixtures or LiteLLM-compatible mocks only.
 
 - 2026-09-24T14:31:09+00:00: Recorded command exit 0; command argv SHA-256
   cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
+
+- 2026-09-24T14:31:46+00:00: Diagnosed command exit 1 at 14:30:40Z: cargo fmt --all -- --check
+  failed only because the newly edited lib.rs/literature.rs formatting differed from rustfmt; no
+  compiler or test failure and no source was rejected. Repaired by running cargo fmt --all through
+  handoffctl; rerun check before commit.
