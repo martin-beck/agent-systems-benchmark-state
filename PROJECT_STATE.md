@@ -25,7 +25,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36011184203 | `fc74825cb869` | push | Emulated aarch64 portability | in_progress:- |
 | 36011184141 | `fc74825cb869` | push | Rust verification | in_progress:- |
 | 36011184127 | `fc74825cb869` | push | Fault assurance | completed:success |
-| 36011184112 | `fc74825cb869` | push | Formal assurance | in_progress:- |
+| 36011184112 | `fc74825cb869` | push | Formal assurance | completed:success |
 | 36009964142 | `16c5b87177e4` | pull_request | Fault assurance | completed:success |
 | 36009964139 | `16c5b87177e4` | pull_request | Formal assurance | completed:success |
 | 36009964041 | `16c5b87177e4` | pull_request | Hosted portability and native qualification | completed:success |
