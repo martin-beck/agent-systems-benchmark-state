@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1435](tasks/AR-1435-local-mock-cli-wiring.md): Local mock CLI wiring | Wire deterministic local mock attempts into asb run and sweep configuration qualification. | Verify AR-1434 is done, promote and claim, bind an isolated worktree, then wire asb run and asb sweep --use-config through the runtime-owned local mock backend with offline/default denial preserved. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -99,7 +105,6 @@ Never edit this file directly.
 | P0 | [AR-1370](tasks/AR-1370-runner-authority-materialization.md): Runner authority materialization | Inject existing authenticated certificate authority and runtime enrollment material into RunnerBackend/Catalog for receipt issuance. | Remain planned until AR-1369 dependency is resolved; then add authenticated RunnerBackend/Catalog authority injection and receipt-source tests without synthetic authority. | - |
 | P0 | [AR-1375](tasks/AR-1375-live-control-dispatch-source.md): Runtime-owned live control dispatch source | Supply authenticated runtime control receipts to production live dispatch. | Wait for AR-1374 blocker resolution, then implement the runtime-owned authenticated control adapter for CLI live dispatch. | - |
 | P0 | [AR-1433](tasks/AR-1433-runtime-mock-attempt-backend.md): Runtime mock-attempt backend | Add an approved runtime mock-attempt backend for deterministic local run and sweep qualification. | Await AR-1432 completion or coordinator-approved dependency transition; then implement the runtime-owned test/mock attempt backend without weakening ProviderEgressTarget or synthesizing LiveProviderAttempt authority. | - |
-| P0 | [AR-1435](tasks/AR-1435-local-mock-cli-wiring.md): Local mock CLI wiring | Wire deterministic local mock attempts into asb run and sweep configuration qualification. | Verify AR-1434 is done, promote and claim, bind an isolated worktree, then wire asb run and asb sweep --use-config through the runtime-owned local mock backend with offline/default denial preserved. | - |
 | P1 | [AR-0808](tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. | - |
 | P1 | [AR-0809](tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. | - |
 | P1 | [AR-0810](tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project's GitHub Pages site. | - |
