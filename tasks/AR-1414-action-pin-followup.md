@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar-1414-install-pin-policy",
   "checkpoint_commit": "9d410f531bced0318df1ecc0614916488f62f4c5",
-  "claim_expires": "2026-09-24T18:16:11+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1406"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "codex/ar-1414-install-pin-policy",
   "observed_dirty": 0,
   "observed_head": "f49e67a46c3c39e7015d48112ed26afacba74738",
-  "owner": "ar1414-install-pin-recovery-luna56",
+  "owner": "",
   "plan": "../plans/AR-1414-action-pin-followup.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Qualify the newer immutable install-action update reopened as PR #235.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Follow-up install-action pin qualification",
-  "updated_at": "2026-09-24T16:22:54+00:00",
+  "updated_at": "2026-09-24T16:31:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1414"
 }
 ---
@@ -79,3 +79,8 @@ v2.87.14. Do not merge while policy or exact-head checks fail.
 
 - 2026-09-24T16:22:54+00:00: PR #235 merged via handoffctl after exact-head review and all required
   checks passed.
+
+- 2026-09-24T16:31:44+00:00: PR #235 merge 9d410f531bced0318df1ecc0614916488f62f4c5 verified with
+  all seven post-merge workflows terminal success: 36026896292 hosted, 36026896368 Rust, 36026896414
+  repository quality, 36026896308 emulated-aarch64, 36026896341 fault, 36026896407 formal,
+  36026896374 headers. Exact head f49e67a and v2.87.14 provenance 76c2e640 verified.
