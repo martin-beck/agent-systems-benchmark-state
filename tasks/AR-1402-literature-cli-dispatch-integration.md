@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate literature workload catalog and adapters through all ASB CLI execution and evidence paths.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Literature workload CLI dispatch integration",
-  "updated_at": "2026-09-24T13:09:19+00:00",
+  "updated_at": "2026-09-24T13:14:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1402"
 }
 ---
@@ -158,3 +158,6 @@ external benchmark datasets or providers.
   base 404ddde/head 022561d. Previous PR checks are invalidated.
 
 - 2026-09-24T13:09:19+00:00: Heartbeat by ar1402_literature_cli_luna56.
+
+- 2026-09-24T13:14:38+00:00: Recorded command exit 0; command argv SHA-256
+  d121971e6fa2bc133299aea263286b2a553b5873a6471db5a075d772febbebb4.
