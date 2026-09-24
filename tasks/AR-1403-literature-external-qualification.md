@@ -9,7 +9,7 @@
   "id": "AR-1403",
   "next_action": "Claim after binding metadata repair; extend explicit external artifact/evaluator qualification without adding a default network path.",
   "observed_branch": "codex/ar-1403-literature-external",
-  "observed_dirty": 4,
+  "observed_dirty": 5,
   "observed_head": "6cef4babe3db65e22bfcd098a074da14a4630f7e",
   "owner": "ar1403_external_qualification_luna56",
   "plan": "../plans/AR-1403-literature-external-qualification.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add optional evidence-gated qualification for real literature workload sources and evaluators.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Literature workload external qualification",
-  "updated_at": "2026-09-24T13:38:30+00:00",
+  "updated_at": "2026-09-24T13:38:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1403"
 }
 ---
