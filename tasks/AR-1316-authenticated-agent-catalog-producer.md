@@ -10,7 +10,7 @@
     "AR-1319"
   ],
   "id": "AR-1316",
-  "next_action": "Open PR from exact current main base and monitor required checks.",
+  "next_action": "Independently review PR #306 exact base 0dcc717/head e0e447d; wait all required checks terminal SUCCESS before merge.",
   "observed_branch": "feature/ar-1316-authenticated-agent-catalog-producer",
   "observed_dirty": 0,
   "observed_head": "e0e447dcb5214222b1c47353dc048abbe2dbdd75",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish the verified ASB agent catalog required by the first-run setup wizard.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Authenticated agent catalog producer",
-  "updated_at": "2026-09-24T19:00:11+00:00",
+  "updated_at": "2026-09-24T19:00:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1316"
 }
 ---
@@ -105,3 +105,7 @@ Progress evidence: ASB PR #245 merged at `027af7ad27da13b359b3f099699c42b03c6f39
 
 - 2026-09-24T19:00:11+00:00: Recorded command exit 0; command argv SHA-256
   680c18077718c97610324aa1c1957e2255fa368ea4cf1fe596447a2aca7a1e35.
+
+- 2026-09-24T19:00:31+00:00: PR #306 OPEN with exact base 0dcc71705eb610e4c3ab6a9f775a9d7b9b25218a
+  and head e0e447dcb5214222b1c47353dc048abbe2dbdd75. No checks reported yet; do not merge pending
+  CI.
