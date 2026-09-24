@@ -7,7 +7,7 @@
     "AR-1337"
   ],
   "id": "AR-1398",
-  "next_action": "Open PR from repair/ar-1398-signed-protected-main-recovery; run independent review, exact-head gates, protected merge, and seven exact-main post-merge workflows.",
+  "next_action": "Await remaining exact-head PR #287 checks; obtain independent approval, protected merge, then watch all seven exact-main post-merge workflows.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Restore signed+DCO protected-main evidence after an unsigned GitHub-generated repair merge.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Signed protected-main recovery",
-  "updated_at": "2026-09-24T10:05:45+00:00",
+  "updated_at": "2026-09-24T10:06:09+00:00",
   "worktree_key": ""
 }
 ---
@@ -76,3 +76,9 @@ providers are never required for development evidence.
 
 - 2026-09-24T10:05:45+00:00: Recorded command exit 0; command argv SHA-256
   8e70d7296333048b35eed5250ee116b3901394b2133cdbd7e2c791bf3cc5d26b.
+
+- 2026-09-24T10:06:09+00:00: PR #287 exact head f5680de is based directly on 123ba915 and has no
+  file changes. Exact-head run IDs: 35984949129 emulated aarch64 pending; 35984949118 repository
+  quality pending; 35984949114 Rust verification pending; 35984949065 formal assurance pending;
+  35984949070 fault assurance success; 35984949047 AWQ shadow success; 35984949142 headers success;
+  35984949137 platform success. No failures.
