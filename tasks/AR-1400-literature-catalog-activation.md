@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Expose all documented literature workloads as truthful selectable candidates beside built-in fixtures.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Literature workload catalog activation",
-  "updated_at": "2026-09-24T11:10:10+00:00",
+  "updated_at": "2026-09-24T11:10:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1400"
 }
 ---
@@ -39,3 +39,6 @@ dataset, native-platform, or provider qualification that the registry lacks.
 - 2026-09-24T11:09:14+00:00: Heartbeat by ar1400_catalog_activation_luna56.
 
 - 2026-09-24T11:10:10+00:00: Heartbeat by ar1400_catalog_activation_luna56.
+
+- 2026-09-24T11:10:42+00:00: Recorded command exit 0; command argv SHA-256
+  d04aa803a9fcb854b247572f9b417fd1935a57ca978bb887d2e7c188e99db043.
