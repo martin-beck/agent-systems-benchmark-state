@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1397-protected-main-postmerge-concurrency",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T09:55:44+00:00",
   "depends_on": [
     "AR-1337"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "",
+  "owner": "ar1397-protected-main-repair-luna56",
   "plan": "../plans/AR-1397-protected-main-postmerge-concurrency-repair.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair protected-main merge-tree admission and serialize exact post-merge evidence across concurrent main pushes.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Protected-main post-merge concurrency and tree repair",
-  "updated_at": "2026-09-24T09:25:39+00:00",
+  "updated_at": "2026-09-24T09:25:44+00:00",
   "worktree_key": ""
 }
 ---
@@ -41,3 +41,5 @@ it must retain the default signature-required and exact-tree gates.
 - 2026-09-24T09:25:39+00:00: Promoted and pushed in signed state commits
   d8f79e433a54a5834041ec3561f9c4725d4595bd and prior AR-1397 creation evidence. Covers AR-1314 merge
   c58b0b0 and AR-1395 merge c130ff91 without altering either AR evidence.
+
+- 2026-09-24T09:25:44+00:00: Claimed by ar1397-protected-main-repair-luna56.

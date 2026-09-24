@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) | [AR-1351](../tasks/AR-1351-live-runtime-provisioning.md) | [AR-1353](../tasks/AR-1353-runtime-enrollment-cli-dispatch.md), [AR-1354](../tasks/AR-1354-runtime-enrollment-implementation.md), [AR-1355](../tasks/AR-1355-runtime-attested-enrollment-record.md), [AR-1356](../tasks/AR-1356-control-runtime-attestation-primitive.md) |
 | [AR-1353](../tasks/AR-1353-runtime-enrollment-cli-dispatch.md) | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) | None |
 | [AR-1354](../tasks/AR-1354-runtime-enrollment-implementation.md) | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) | None |
 | [AR-1355](../tasks/AR-1355-runtime-attested-enrollment-record.md) | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) | None |
@@ -48,20 +49,20 @@
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1314](../tasks/AR-1314-optional-bundle-signing-development-release.md): Optional runtime-bundle signing for development and tagged releases | ar1314_bundle_profile_repair_luna56 | Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile. | Do not close yet: post-merge Repository quality run 35979775718 attempt 3 must be terminal-success, but it deterministically rejects merge c58b0b0a4d9023e3831f9c750edbb9b30ab4bad4 because its protected-main tree differs from reviewed topic 83b171ca8cad35bce902a38ff3979029fa9b78d8 after AR-1395 advanced main. Create/use a narrowly scoped signed integration repair AR, then rerun all seven exact-main workflows. Follow-up docs correction 84416b52ca2f1552c251ed612c55870842b3e630 remains outside merged PR. |
+| P0 | [AR-1397](../tasks/AR-1397-protected-main-postmerge-concurrency-repair.md): Protected-main post-merge concurrency and tree repair | ar1397-protected-main-repair-luna56 | Repair protected-main merge-tree admission and serialize exact post-merge evidence across concurrent main pushes. | Claim with a gpt-5.6-luna medium worker once the current main queue is quiescent; reproduce c58b0b0 and 130ff91 tree mismatch/cancellation, implement the narrowly scoped signed integration repair, and require a fresh exact-main merge with all seven terminal-success workflows. |
 | P1 | [AR-1395](../tasks/AR-1395-literature-workload-adapters.md): Literature workload adapter boundary | codex-asb-ar1395-literature-adapters-luna56 | Normalize approved literature tasks through bounded, non-vendored ASB workload adapters. | Exact merge post-merge Repository quality and Rust runs were cancelled by later main push c58b0b0a; after that main queue terminates, rerun both exact merge workflows and require success before release. |
 
-### Open (3)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1212](../tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Unclaimed | Teach users to test configured-agent benchmark eligibility without running an agent. | Implement the offline tutorial for checking agent benchmark readiness under the current configuration. |
 | P0 | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | Unclaimed | Publish the verified ASB agent catalog required by the first-run setup wizard. | Persist the authenticated catalog snapshot/generation and complete live ASB-to-asb-tui wizard evidence; keep all entries unavailable until a verified release closure exists. |
-| P0 | [AR-1397](../tasks/AR-1397-protected-main-postmerge-concurrency-repair.md): Protected-main post-merge concurrency and tree repair | Unclaimed | Repair protected-main merge-tree admission and serialize exact post-merge evidence across concurrent main pushes. | Claim with a gpt-5.6-luna medium worker once the current main queue is quiescent; reproduce c58b0b0 and 130ff91 tree mismatch/cancellation, implement the narrowly scoped signed integration repair, and require a fresh exact-main merge with all seven terminal-success workflows. |
 
 ### Blocked (67)
 
