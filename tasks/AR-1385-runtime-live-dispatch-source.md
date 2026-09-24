@@ -1,7 +1,7 @@
 ---
 {
-  "branch": "",
-  "checkpoint_commit": "",
+  "branch": "feature/ar-1385-runtime-live-dispatch-source",
+  "checkpoint_commit": "5c4d5304e53d2cd9559999a00afd86cac28d29dc",
   "claim_expires": "2026-09-24T06:46:32+00:00",
   "depends_on": [
     "AR-1384",
@@ -11,10 +11,10 @@
     "AR-1381"
   ],
   "id": "AR-1385",
-  "next_action": "Promote after dependency validation; materialize the authenticated runtime-owned live dispatch source consumed by asb run and sweep, with fail-closed positive and negative tests.",
-  "observed_branch": "",
+  "next_action": "Refresh the declared isolated worktree from protected main, materialize the authenticated runtime-owned live dispatch source consumed by asb run and sweep, and add fail-closed positive and negative tests.",
+  "observed_branch": "feature/ar-1385-runtime-live-dispatch-source",
   "observed_dirty": 0,
-  "observed_head": "0000000000000000000000000000000000000000",
+  "observed_head": "5c4d5304e53d2cd9559999a00afd86cac28d29dc",
   "owner": "codex-asb-ar1329-repair-luna56",
   "plan": "../plans/AR-1385-runtime-live-dispatch-source.md",
   "priority": "P0",
