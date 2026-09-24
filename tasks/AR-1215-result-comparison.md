@@ -1,13 +1,13 @@
 ---
 {
   "branch": "docs/ar-1215-result-comparison",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "0e08fbee769cff71e402aef07ce6fb80a9a821e2",
   "claim_expires": "2026-09-24T22:57:37+00:00",
   "depends_on": [
     "AR-1213"
   ],
   "id": "AR-1215",
-  "next_action": "Fix fixture identifiers rejected by the secret-pattern guard, rerun focused tutorial tests, then review and commit.",
+  "next_action": "Obtain independent review, then publish the signed topic commit through the protected PR path; retain focused test and unavailable-ruff evidence.",
   "observed_branch": "docs/ar-1215-result-comparison",
   "observed_dirty": 10,
   "observed_head": "c663d1f29d4802281476c3a71d56542b17dbab48",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach conservative comparison of multiple agents from the same benchmark.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Multi-agent result comparison tutorial",
-  "updated_at": "2026-09-24T20:57:37+00:00",
+  "updated_at": "2026-09-24T20:57:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1215"
 }
 ---
@@ -70,3 +70,9 @@ commands in tutorial syntax CI.
   d72d5747960d0d076514ba31aa4040e3fd5730ed773929d0882200673671a2d3.
 
 - 2026-09-24T20:57:37+00:00: Heartbeat by codex-ar1215-luna56.
+
+- 2026-09-24T20:57:57+00:00: Implemented result-comparison tutorial, offline workflow docs,
+  synthetic positive reports, and negative mismatched-definition/dropped-failure fixtures. Focused
+  unittest suite: 21 passed; tutorial validator: valid; diff check: clean. Product commit 0e08fbee
+  is SSH-signed with DCO. Ruff checks could not run because the configured Python environment has no
+  ruff module.
