@@ -30,7 +30,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 35993560227 | `e0b15fc23be8` | push | Huawei MIT source headers | completed:success |
 | 35993560137 | `e0b15fc23be8` | push | Repository quality | in_progress:- |
-| 35993560120 | `e0b15fc23be8` | push | Fault assurance | in_progress:- |
+| 35993560120 | `e0b15fc23be8` | push | Fault assurance | completed:success |
 | 35993560118 | `e0b15fc23be8` | push | Hosted portability and native qualification | completed:success |
 | 35993560100 | `e0b15fc23be8` | push | Emulated aarch64 portability | in_progress:- |
 | 35993560087 | `e0b15fc23be8` | push | Formal assurance | in_progress:- |
