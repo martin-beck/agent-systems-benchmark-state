@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar-1409-interactive-literature",
   "checkpoint_commit": "c2fe732b3b50ef38893c2e3513770939de04637f",
-  "claim_expires": "2026-09-24T18:33:04+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1408",
     "AR-1401"
@@ -12,15 +12,15 @@
   "observed_branch": "codex/ar-1409-interactive-literature",
   "observed_dirty": 0,
   "observed_head": "6f93076afa1af5eca0d33a693106e60f70e4ea5b",
-  "owner": "ar1409_interactive_literature_luna56",
+  "owner": "",
   "plan": "../plans/AR-1409-interactive-literature-adapters.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Add offline-selectable interactive and tool-use literature workload adapters.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Interactive literature workload adapters",
-  "updated_at": "2026-09-24T15:38:39+00:00",
+  "updated_at": "2026-09-24T15:46:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1409"
 }
 ---
@@ -86,3 +86,8 @@ LiteLLM-compatible mocks are the only development and CI execution path.
 
 - 2026-09-24T15:38:39+00:00: PR #300 merged via handoffctl after exact-head checks and independent
   review; seven post-merge workflows started.
+
+- 2026-09-24T15:46:52+00:00: PR #300 merge c2fe732b3b50ef38893c2e3513770939de04637f verified; all
+  seven exact-main post-merge workflows terminal success:
+  36021529638,36021529745,36021529796,36021529687,36021529643,36021529787,36021529768. Product
+  commit 6f93076 signed SSH+DCO; no live provider access.
