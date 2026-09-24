@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1381-live-cli-scheduler-wiring",
   "checkpoint_commit": "4ba3085e95444fba069b129e33020f19cc7ea830",
-  "claim_expires": "2026-09-24T06:36:42+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1380",
     "AR-1378",
@@ -17,15 +17,15 @@
   "observed_branch": "feature/ar-1381-live-cli-scheduler-wiring",
   "observed_dirty": 0,
   "observed_head": "4ba3085e95444fba069b129e33020f19cc7ea830",
-  "owner": "codex-asb-runtime-receipt-source-luna56",
+  "owner": "",
   "plan": "../plans/AR-1381-live-cli-scheduler-wiring.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Wire runtime-owned live scheduler authority into production asb run and sweep.",
-  "task_revision": 79,
+  "task_revision": 80,
   "title": "Runtime-owned live CLI scheduler wiring",
-  "updated_at": "2026-09-24T04:36:42+00:00",
+  "updated_at": "2026-09-24T04:37:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1381-live-cli-scheduler-wiring"
 }
 ---
@@ -230,3 +230,8 @@ all fail-closed authority and privacy contracts.
 - 2026-09-24T04:36:38+00:00: Heartbeat by codex-asb-runtime-receipt-source-luna56.
 
 - 2026-09-24T04:36:42+00:00: Heartbeat by codex-asb-runtime-receipt-source-luna56.
+
+- 2026-09-24T04:37:00+00:00: PR #277 exact head 4ba3085e95444fba069b129e33020f19cc7ea830 merged as
+  04b4c067055073031cd6d88cf18f0d158f488ad0. All seven post-merge workflows terminal SUCCESS: Rust,
+  repository quality, formal, fault, hosted portability, emulated aarch64, and headers. CLI
+  run/sweep now consumes the runtime-owned scheduler factory without exposing authority.
