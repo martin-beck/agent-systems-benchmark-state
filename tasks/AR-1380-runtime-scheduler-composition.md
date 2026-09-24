@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compose runtime-owned live attempts for production run and sweep scheduling.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Runtime scheduler composition for live dispatch",
-  "updated_at": "2026-09-24T03:34:29+00:00",
+  "updated_at": "2026-09-24T03:34:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1380-runtime-scheduler-composition"
 }
 ---
@@ -39,3 +39,6 @@ composition gap without weakening authority boundaries.
 - 2026-09-24T03:34:12+00:00: Claimed by codex-asb-runtime-receipt-source-luna56.
 
 - 2026-09-24T03:34:29+00:00: Heartbeat by codex-asb-runtime-receipt-source-luna56.
+
+- 2026-09-24T03:34:32+00:00: Recorded command exit 0; command argv SHA-256
+  dc13cbd1c92b8a80ea0aaa9e82c0d811d6e97f2e167468b73865997f0d340986.
