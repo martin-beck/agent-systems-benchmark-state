@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recovered an abandoned claim with malformed local-time expiry; branch/worktree are now coordinator-bound before the next claim.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Code-generation control workload adapters",
-  "updated_at": "2026-09-24T14:36:38+00:00",
+  "updated_at": "2026-09-24T14:36:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1412"
 }
 ---
@@ -89,3 +89,6 @@ bounded local fixtures or LiteLLM-compatible mocks only.
   clippy::large-enum-variant because the new code-generation metadata enlarged LiteraturePrepared
   inside PreparedWorkloadChoice. This is a real regression in the changed type shape, not an
   environment failure; repair by boxing the Literature variant and update the PR head.
+
+- 2026-09-24T14:36:51+00:00: Recorded command exit 0; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
