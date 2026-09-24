@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1435](tasks/AR-1435-local-mock-cli-wiring.md): Local mock CLI wiring | Wire deterministic local mock attempts into asb run and sweep configuration qualification. | Implement and test explicit local mock asb run/sweep --use-config wiring in isolated worktree /srv/data/projects/agent-systems-benchmark-ar-1435-local-mock-cli-wiring; preserve default denial and production LiveProviderAttempt authority. | codex-asb-ar1435-local-mock-luna56 |
+| P0 | [AR-1435](tasks/AR-1435-local-mock-cli-wiring.md): Local mock CLI wiring | Wire deterministic local mock attempts into asb run and sweep configuration qualification. | Run focused CLI/runtime tests and full locked workspace gates, then review exact diff and publish signed+DCO PR. | codex-asb-ar1435-local-mock-luna56 |
 
 ## Blocked
 
