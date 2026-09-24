@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind authenticated control receipts to runtime-owned live dispatch.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Authenticated live control adapter",
-  "updated_at": "2026-09-24T03:21:59+00:00",
+  "updated_at": "2026-09-24T03:22:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1378-live-control-adapter"
 }
 ---
@@ -82,3 +82,6 @@ chain store; this task supplies only the authenticated control operation seam.
 - 2026-09-24T03:18:13+00:00: Heartbeat by codex-asb-runtime-receipt-source-luna56.
 
 - 2026-09-24T03:21:59+00:00: Heartbeat by codex-asb-runtime-receipt-source-luna56.
+
+- 2026-09-24T03:22:06+00:00: Recorded command exit 0; command argv SHA-256
+  a409afbf5587e78c6b91dbd7cf295efc5b39734c00915501fc87f570f934bc51.
