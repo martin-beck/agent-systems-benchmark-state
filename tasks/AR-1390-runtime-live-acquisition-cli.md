@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1390-runtime-live-acquisition-cli",
   "checkpoint_commit": "10bffbf015bd7ca78d8c0d18f04cf0190195e933",
-  "claim_expires": "2026-09-24T08:22:45+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1388",
     "AR-1385",
@@ -18,15 +18,15 @@
   "observed_branch": "feature/ar-1390-runtime-live-acquisition-cli",
   "observed_dirty": 1,
   "observed_head": "10bffbf015bd7ca78d8c0d18f04cf0190195e933",
-  "owner": "codex-asb-ar1329-repair-luna56",
+  "owner": "",
   "plan": "../plans/AR-1390-runtime-live-acquisition-cli.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Compose runtime-owned live provider acquisition and wire it into normal ASB run and sweep.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Runtime live acquisition and CLI bridge",
-  "updated_at": "2026-09-24T07:40:46+00:00",
+  "updated_at": "2026-09-24T07:41:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1390-runtime-live-acquisition-cli"
 }
 ---
@@ -52,3 +52,12 @@ external provider connection a development or CI requirement.
 
 - 2026-09-24T07:40:46+00:00: Recorded command exit 0; command argv SHA-256
   c92caf7f39494d198847900edc43cf7c243b341a47fb86efeccb7360fffc79cd.
+
+- 2026-09-24T07:41:33+00:00: Blocked after protected-main audit: normal asb run/sweep still has no
+  runtime/control-owned constructor that obtains an authenticated receipt/chain, resolves private
+  bootstrap policy/allowlist/lease/relay/tool authority, mints LiveProviderRuntimeHandle, and passes
+  the opaque source into the normal CLI entrypoint. Existing
+  LiveProviderRuntimeDispatchSource::from_handle and CLI source bridge require an externally
+  injected opaque handle/source; adding a handle-to-source facade would not satisfy acceptance and
+  would falsely claim AR-1329 unblocked. Worktree reverted clean at checkpoint
+  10bffbf015bd7ca78d8c0d18f04cf0190195e933. Focused existing gates pass; no commit or PR published.
