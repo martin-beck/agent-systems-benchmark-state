@@ -28,7 +28,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1385](../tasks/AR-1385-runtime-live-dispatch-source.md): Authenticated runtime live dispatch source | codex-asb-ar1329-repair-luna56 | Materialize the authenticated runtime-owned live dispatch source for production asb run and sweep. | Independent review complete locally; publish signed+DCO exact-head PR for fd9517ed, monitor required checks, then verify all seven post-merge workflows before advancing AR-1329. |
+| P0 | [AR-1385](../tasks/AR-1385-runtime-live-dispatch-source.md): Authenticated runtime live dispatch source | codex-asb-ar1329-repair-luna56 | Materialize the authenticated runtime-owned live dispatch source for production asb run and sweep. | PR #280 is published at exact head fd9517ed; monitor all required exact-head checks, repair failures through handoffctl, merge only after independent review and all checks green, then verify seven post-merge workflows. |
 
 ### Open (3)
 

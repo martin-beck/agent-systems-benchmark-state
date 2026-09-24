@@ -11,7 +11,7 @@
     "AR-1381"
   ],
   "id": "AR-1385",
-  "next_action": "Independent review complete locally; publish signed+DCO exact-head PR for fd9517ed, monitor required checks, then verify all seven post-merge workflows before advancing AR-1329.",
+  "next_action": "PR #280 is published at exact head fd9517ed; monitor all required exact-head checks, repair failures through handoffctl, merge only after independent review and all checks green, then verify seven post-merge workflows.",
   "observed_branch": "feature/ar-1385-runtime-live-dispatch-source",
   "observed_dirty": 0,
   "observed_head": "fd9517edb811fc119bc252ef4edd15e350845042",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize the authenticated runtime-owned live dispatch source for production asb run and sweep.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Authenticated runtime live dispatch source",
-  "updated_at": "2026-09-24T05:58:10+00:00",
+  "updated_at": "2026-09-24T05:58:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1385-runtime-live-dispatch-source"
 }
 ---
@@ -82,3 +82,8 @@ namespace identity, or launch authority.
 
 - 2026-09-24T05:58:10+00:00: Recorded command exit 0; command argv SHA-256
   2e34aaf55823317b3b1803bbac2ec62dc74ae4ba45c21c337b2455dd6bd3eb3d.
+
+- 2026-09-24T05:58:42+00:00: Published PR #280 from exact signed+DCO head fd9517ed. Initial checks:
+  Huawei headers and AWQ shadow pass; remaining required Rust, quality, portability, formal, and
+  fault checks are pending. No external provider connection used or required; local deterministic
+  mock boundary remains the acceptance path.
