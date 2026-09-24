@@ -2,7 +2,7 @@
 {
   "branch": "docs/ar-1214-record-replay",
   "checkpoint_commit": "fe00f59becd0b61ec654217ab8d529b25a098bf0",
-  "claim_expires": "2026-09-24T22:49:35+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1213"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "docs/ar-1214-record-replay",
   "observed_dirty": 0,
   "observed_head": "fe00f59becd0b61ec654217ab8d529b25a098bf0",
-  "owner": "ar1214_record_replay_luna56",
+  "owner": "",
   "plan": "../plans/AR-1214.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Teach privacy-safe LLM response recording and strict offline replay.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "LLM response record/replay tutorial",
-  "updated_at": "2026-09-24T21:12:54+00:00",
+  "updated_at": "2026-09-24T21:22:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1214"
 }
 ---
@@ -115,3 +115,10 @@ permitted in its CI job.
 
 - 2026-09-24T21:12:54+00:00: Recorded command exit 0; command argv SHA-256
   47ee0b7fafccdc96799b15567519fa5e186d24c163b12f23adf26a0dc39dd8bf.
+
+- 2026-09-24T21:22:17+00:00: PR #311 merged at 2d64e0cdb888eea18c9995acf62cb12461ffb120 from exact
+  head fe00f59. Independent merged-tree verification found the tutorial contract and fail-closed
+  synthetic cassette test in origin/main. Seven post-merge workflows all terminal success: formal
+  36060007814, fault 36060007861, repository 36060007816, aarch64 36060007776, Rust 36060007840,
+  headers 36060007852, hosted 36060007813. Pre-merge checks all green; focused and full replay
+  suites passed.
