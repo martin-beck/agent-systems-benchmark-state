@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1381-live-cli-scheduler-wiring",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "445a4cffa56b34e13c63b33b6a30a487d3a7381e",
   "claim_expires": "2026-09-24T06:04:08+00:00",
   "depends_on": [
     "AR-1380",
@@ -13,7 +13,7 @@
     "AR-1362"
   ],
   "id": "AR-1381",
-  "next_action": "Promote and claim this dependency-valid CLI scheduler wiring successor, then implement run/sweep runtime-owned live dispatch.",
+  "next_action": "CLI wrapper commit is signed+DCO and focused reruns pass. Run full applicable CLI/runtime gates in isolation as needed, independently review diff/privacy, then publish exact-head PR.",
   "observed_branch": "feature/ar-1381-live-cli-scheduler-wiring",
   "observed_dirty": 0,
   "observed_head": "445a4cffa56b34e13c63b33b6a30a487d3a7381e",
@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire runtime-owned live scheduler authority into production asb run and sweep.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Runtime-owned live CLI scheduler wiring",
-  "updated_at": "2026-09-24T04:09:35+00:00",
+  "updated_at": "2026-09-24T04:09:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1381-live-cli-scheduler-wiring"
 }
 ---
@@ -91,3 +91,12 @@ all fail-closed authority and privacy contracts.
 
 - 2026-09-24T04:09:35+00:00: Recorded command exit 0; command argv SHA-256
   d0e0083ec3921f7be8253355a9433d5960445ca785fe866deb83786aea856181.
+
+- 2026-09-24T04:09:56+00:00: Rebased onto protected main 333cc3ac after initial stale base caused
+  asb-runtime import failure. Added run_with_runtime_live_provider_scheduler, which consumes only
+  LiveProviderRuntimeScheduler::into_factory and delegates existing run/sweep factory path; no
+  authority arguments or secrets are exposed. cargo check -p asb-cli passed. Full parallel asb-cli
+  lib test had two unrelated control-state ownership failures; each failed test passed when rerun
+  individually, indicating shared-state parallel flakiness. Combined two-filter command was invalid
+  Cargo syntax (exit 1); no product failure. Commit 445a4cffa56b34e13c63b33b6a30a487d3a7381e is
+  SSH-signed+DCO and worktree clean.

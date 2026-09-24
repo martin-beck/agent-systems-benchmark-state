@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1381](tasks/AR-1381-live-cli-scheduler-wiring.md): Runtime-owned live CLI scheduler wiring | Wire runtime-owned live scheduler authority into production asb run and sweep. | Promote and claim this dependency-valid CLI scheduler wiring successor, then implement run/sweep runtime-owned live dispatch. | codex-asb-runtime-receipt-source-luna56 |
+| P0 | [AR-1381](tasks/AR-1381-live-cli-scheduler-wiring.md): Runtime-owned live CLI scheduler wiring | Wire runtime-owned live scheduler authority into production asb run and sweep. | CLI wrapper commit is signed+DCO and focused reruns pass. Run full applicable CLI/runtime gates in isolation as needed, independently review diff/privacy, then publish exact-head PR. | codex-asb-runtime-receipt-source-luna56 |
 
 ## Open
 
