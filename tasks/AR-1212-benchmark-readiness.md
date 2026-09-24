@@ -1,6 +1,6 @@
 ---
 {
-  "branch": "docs/ar-1212-benchmark-readiness",
+  "branch": "codex/ar-1212-benchmark-readiness",
   "checkpoint_commit": "",
   "claim_expires": "",
   "depends_on": [
