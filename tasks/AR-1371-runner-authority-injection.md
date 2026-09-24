@@ -9,17 +9,17 @@
   "id": "AR-1371",
   "next_action": "Signed+DCO implementation fb581f9 adds persisted runtime authority records to Catalog, strict digest/identity validation, and recovery-time CertificateAuthorityV1 reconstruction from owner-checked trust-anchor digests. Focused asb-control 66 tests, asb-cli 100 tests, fmt, and cargo check pass. Run full workspace gates, independently review, publish exact head, and monitor CI.",
   "observed_branch": "feature/ar-1371-runner-authority-injection",
-  "observed_dirty": 2,
-  "observed_head": "0c6dc52e1f4aa5854f73081711dbd9a5bc1a5d7c",
+  "observed_dirty": 0,
+  "observed_head": "fb581f916970a1df99c20ae2a0f58f91d33420ff",
   "owner": "codex-asb-runtime-attested-enrollment-luna56",
   "plan": "../plans/AR-1371-runner-authority-injection.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Inject existing authenticated certificate authority and runtime enrollment material into RunnerBackend/Catalog without synthetic authority.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Runner authority injection",
-  "updated_at": "2026-09-24T01:05:17+00:00",
+  "updated_at": "2026-09-24T01:05:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1371-runner-authority-injection"
 }
 ---
