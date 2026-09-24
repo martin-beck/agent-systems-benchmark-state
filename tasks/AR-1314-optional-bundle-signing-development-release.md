@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile.",
-  "task_revision": 91,
+  "task_revision": 92,
   "title": "Optional runtime-bundle signing for development and tagged releases",
-  "updated_at": "2026-09-24T08:52:38+00:00",
+  "updated_at": "2026-09-24T08:53:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1314-optional-bundle-signing"
 }
 ---
@@ -247,3 +247,6 @@ reviewed signed input bundle and terminal attestation.
   ea19fe849c07237f1cc5e6e9bdda925c19c0bd9d175f1c6001bb5d25de1a2046.
 
 - 2026-09-24T08:52:38+00:00: Heartbeat by ar1314_bundle_profile_repair_luna56.
+
+- 2026-09-24T08:53:57+00:00: Recorded command exit 1; command argv SHA-256
+  351b802fd8a867b6003775e96cc442ce5f18a71225e4f54b4af05ca45a0a85b7.
