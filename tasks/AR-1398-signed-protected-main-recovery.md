@@ -7,7 +7,7 @@
     "AR-1337"
   ],
   "id": "AR-1398",
-  "next_action": "Rerun failed repository-quality workflow for PR #287; inspect reproducibility before any repair or merge.",
+  "next_action": "Await repository-quality rerun attempt 2 for PR #287; if green retain transient classification, otherwise reproduce locally and repair via signed descendant.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Restore signed+DCO protected-main evidence after an unsigned GitHub-generated repair merge.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Signed protected-main recovery",
-  "updated_at": "2026-09-24T10:11:14+00:00",
+  "updated_at": "2026-09-24T10:11:39+00:00",
   "worktree_key": ""
 }
 ---
@@ -120,3 +120,6 @@ providers are never required for development evidence.
 
 - 2026-09-24T10:11:14+00:00: Recorded command exit 0; command argv SHA-256
   c3e0632183a1f025d901efafec5ba960247032171251b32902ae2dee400b0ced.
+
+- 2026-09-24T10:11:39+00:00: Reran failed workflow 35984949118 through handoffctl using gh run rerun
+  --failed. Same exact head f5680de, attempt 2 is currently in progress. No product changes made.
