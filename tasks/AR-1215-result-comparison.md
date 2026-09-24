@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach conservative comparison of multiple agents from the same benchmark.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Multi-agent result comparison tutorial",
-  "updated_at": "2026-09-24T21:00:04+00:00",
+  "updated_at": "2026-09-24T21:00:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1215"
 }
 ---
@@ -98,3 +98,6 @@ commands in tutorial syntax CI.
   sha blank, no commits between main and docs/ar-1215-result-comparison, and head ref must be a
   branch. Root cause was the topic branch had not yet been pushed; no PR was created. The signed
   topic branch is now pushed and ready for one corrected retry.
+
+- 2026-09-24T21:00:16+00:00: Recorded command exit 0; command argv SHA-256
+  b042ca23a076635345660c3839573ba453907a76aea37949d19c3eff9e2ef6af.
