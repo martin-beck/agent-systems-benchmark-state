@@ -10,7 +10,7 @@
     "AR-1319"
   ],
   "id": "AR-1316",
-  "next_action": "Rerun focused agent-catalog tests after formatting; then run full asb-cli/asb-control gates and commit signed.",
+  "next_action": "Record successful full tests despite wrapper finalization lock timeout; inspect diff and commit signed+DCO.",
   "observed_branch": "feature/ar-1316-authenticated-agent-catalog-producer",
   "observed_dirty": 1,
   "observed_head": "0b2719e6483b5d22cbf6e11320988a766cb64366",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish the verified ASB agent catalog required by the first-run setup wizard.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Authenticated agent catalog producer",
-  "updated_at": "2026-09-24T18:55:05+00:00",
+  "updated_at": "2026-09-24T18:57:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1316"
 }
 ---
@@ -77,3 +77,9 @@ Progress evidence: ASB PR #245 merged at `027af7ad27da13b359b3f099699c42b03c6f39
 
 - 2026-09-24T18:55:05+00:00: Recorded command exit 0; command argv SHA-256
   bda6e479789a32dc87ec4945baa9311612b2cde91e93aa5bcec99bbb934f3ca8.
+
+- 2026-09-24T18:57:25+00:00: Full package verification completed successfully before wrapper
+  finalization: cargo test --locked -p asb-cli -p asb-control passed all tests (88 asb-cli unit
+  tests, 58 asb-control unit tests, control/endpoint/schema suites, docs). Wrapper then exited
+  LOCK_TIMEOUT after 10.0s acquiring exclusive coordinator lock while recording completion; no test
+  failure occurred.

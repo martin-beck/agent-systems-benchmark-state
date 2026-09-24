@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1212](tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Teach users to test configured-agent benchmark eligibility without running an agent. | Implement the offline tutorial for checking agent benchmark readiness under the current configuration. | open-pr-triage-luna56 |
-| P0 | [AR-1316](tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | Publish the verified ASB agent catalog required by the first-run setup wizard. | Rerun focused agent-catalog tests after formatting; then run full asb-cli/asb-control gates and commit signed. | ar1316-authenticated-agent-catalog-producer-luna56 |
+| P0 | [AR-1316](tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | Publish the verified ASB agent catalog required by the first-run setup wizard. | Record successful full tests despite wrapper finalization lock timeout; inspect diff and commit signed+DCO. | ar1316-authenticated-agent-catalog-producer-luna56 |
 
 ## Blocked
 
