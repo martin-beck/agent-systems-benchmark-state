@@ -85,12 +85,11 @@
 
 ## Complete AR inventory
 
-### In progress (5)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1213](../tasks/AR-1213-benchmark-and-shared-config.md): Benchmark run and shared-agent configuration tutorials | ar1213-cli-tutorial-luna56 | Teach benchmark execution and extending agents with one shared configuration. | Implement syntax-checked tutorials for one benchmark run and atomic shared configuration across selected agents. |
-| P0 | [AR-1320](../tasks/AR-1320-persisted-agent-release-index.md): Persisted authenticated agent release index | codex-ar1320-luna56 | Persist and verify the ASB agent release index used by the setup wizard. | Do not create a new PR: origin/main already contains the AR-1320 persistence commit (77571ff), while the isolated branch is 226 commits behind and has no open PR. Release this AR with durable merged-main and verification evidence, then continue with AR-1322. |
 | P0 | [AR-1421](../tasks/AR-1421-protected-main-literature-merge-race.md): Protected-main literature merge race repair | ar1421-protected-main-race-luna56 | Repair protected-main merge-tree requalification after a literature PR merges onto an advanced main. | PR #308 merged as 10b16186. Monitor exact-main post-merge workflow IDs 36052764434,36052764446,36052764452,36052764458,36052764507,36052764675,36052764433 to terminal SUCCESS; then verify merged tree/signature/DCO and release. |
 | P1 | [AR-0704](../tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | ar0704-requal-luna56 | Control genuine native platform capacity lifecycle. | PR #119 exact head 4630f90 is rebased onto protected main 5ddac12. Fresh exact-head checks were absent immediately after force-push; close/reopen retriggered them. At last query all 12 checks are pending except AWQ shadow and SPDX headers pass. Wait for every required check terminal success; do not merge on partial/pending evidence. |
 | P1 | [AR-1417](../tasks/AR-1417-interactive-stateful-literature-workloads.md): Interactive stateful literature workloads | ar1417-literature-luna56 | Add selectable interactive and stateful literature workloads beside built-in software-engineering fixtures. | Keep open: protected-main Repository quality run 36048870322 failed because merge tree 5ddac12 differs from reviewed topic tree 666043f (base a2a6414 vs 0dcc717); await coordinator exact-main requalification or successor repair, never weaken gate. |
@@ -246,7 +245,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (291)
+### Done (292)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -356,6 +355,7 @@
 | P0 | [AR-1314](../tasks/AR-1314-optional-bundle-signing-development-release.md): Optional runtime-bundle signing for development and tagged releases | Unclaimed | Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile. | Blocked on AR-1397 integration repair: post-merge Repository quality rejects c58b0b0 tree against reviewed topic after AR-1395 advanced main, and c58 Rust workflow dispatch 35980460560 was cancelled by a higher-priority waiting request for refs/heads/main. Preserve all evidence; after AR-1397 repair and queue quiescence, rerun all seven exact-main workflows including Rust. |
 | P0 | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | Unclaimed | Publish the verified ASB agent catalog required by the first-run setup wizard. | Release AR-1316 as satisfied by exact current main; no new product diff or PR is required because producer implementation is already merged and verified. |
 | P0 | [AR-1319](../tasks/AR-1319-authenticated-agent-catalog-entry-contract.md): Authenticated agent catalog entry contract | Unclaimed | Make incomplete authenticated agent catalog entries truthful and selectable only after verification. | Completed; preserve the merged contract as the prerequisite for AR-1316 producer and future verified release-index work. |
+| P0 | [AR-1320](../tasks/AR-1320-persisted-agent-release-index.md): Persisted authenticated agent release index | Unclaimed | Persist and verify the ASB agent release index used by the setup wizard. | Do not create a new PR: origin/main already contains the AR-1320 persistence commit (77571ff), while the isolated branch is 226 commits behind and has no open PR. Release this AR with durable merged-main and verification evidence, then continue with AR-1322. |
 | P0 | [AR-1322](../tasks/AR-1322-authenticated-release-index-source.md): Authenticated agent release-index source | Unclaimed | Promote only completely verified agents from a signed local release index. | Run post-merge live ASB-to-asb-tui catalog projection with a configured signed index; keep unavailable fallback when trust configuration is absent. |
 | P0 | [AR-1324](../tasks/AR-1324-auth-helper-control-contract.md): Authenticated credential-helper control contract | Unclaimed | Own the ASB control and runner backend for safe credential-helper invocation. | Monitor authoritative pull_request checks for PR #248 at 5abd8c7; merge only after all required checks pass, then perform ASB↔asb-tui first-user/live-provider wizard acceptance. |
 | P0 | [AR-1337](../tasks/AR-1337-protected-main-merge-tree-repair-openrouter.md): Repair protected-main merge-tree admission after OpenRouter merge | Unclaimed | Repair the protected-main merge-tree admission defect exposed after the OpenRouter provider merge. | Await remaining PR #252 exact-head checks and independent review; then merge only via signed integration procedure at the current protected target and verify post-merge workflows. |

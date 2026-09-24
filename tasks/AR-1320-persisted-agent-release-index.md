@@ -2,21 +2,21 @@
 {
   "branch": "feature/ar-1320-persisted-agent-release-index",
   "checkpoint_commit": "77571ff978b886e24d35e29c0febb553a90a2d65",
-  "claim_expires": "2026-09-24T22:04:29+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1316"
   ],
   "id": "AR-1320",
   "next_action": "Do not create a new PR: origin/main already contains the AR-1320 persistence commit (77571ff), while the isolated branch is 226 commits behind and has no open PR. Release this AR with durable merged-main and verification evidence, then continue with AR-1322.",
-  "owner": "codex-ar1320-luna56",
+  "owner": "",
   "plan": "../plans/AR-1320.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Persist and verify the ASB agent release index used by the setup wizard.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Persisted authenticated agent release index",
-  "updated_at": "2026-09-24T20:16:33+00:00",
+  "updated_at": "2026-09-24T20:16:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1320-persisted-agent-release-index"
 }
 ---
@@ -133,3 +133,15 @@ before any agent can become selectable.
   refused with LOCK_TIMEOUT after 10.0s acquiring the exclusive coordinator lock while concurrent AR
   workers were reconciling; no product command executed and no product mutation occurred. Corrective
   action: waited for the lock and retried the read-only origin-main inspection successfully.
+
+- 2026-09-24T20:16:53+00:00: AR-1320 persistence/restart/refresh fencing is already merged on
+  protected ASB main as 77571ff (origin/main contains it); no new PR was opened because the isolated
+  branch is 226 commits behind and no open PR exists. Independent review: origin/main...branch is
+  exactly the one reviewed control.rs change (209 lines; 161 additions/48 deletions), diff-check
+  clean, HEAD SSH signature valid (G) with matching DCO trailer. Verification: cargo fmt
+  --manifest-path /tmp/asb-ar1320/Cargo.toml --all -- --check passed; focused generation/restart
+  test passed; full asb-cli suite passed on rerun (88 unit, 12 capability, 3 CLI E2E, 4 guide, 2
+  setup, 4 TUI lifecycle, 3 workflow transcript, doctests 0). First full run had one
+  concurrency-sensitive state-root ownership failure and was recorded with corrective isolated
+  rerun. The 20:15:20 lock-timeout exit-1 was recorded with cause/correction. Persistence acceptance
+  is complete; bounded signed source and closure promotion continue in AR-1322.
