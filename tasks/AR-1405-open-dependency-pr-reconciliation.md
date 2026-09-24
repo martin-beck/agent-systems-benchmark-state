@@ -7,7 +7,7 @@
   "id": "AR-1405",
   "next_action": "Create one current-main replacement for safe dependency/action updates; independently assess sha2 separately; close stale PRs only after replacement evidence.",
   "observed_branch": "codex/ar-1405-dependency-reconcile",
-  "observed_dirty": 0,
+  "observed_dirty": 7,
   "observed_head": "e41d4df86e57af5b58cc7500fcc44cec6ec2e445",
   "owner": "ar1405_dependency_pr_luna56b",
   "plan": "../plans/AR-1405-open-dependency-pr-reconciliation.md",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Rebase, repair, verify, and truthfully resolve stale open dependency PRs.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Open dependency PR reconciliation",
-  "updated_at": "2026-09-24T11:33:04+00:00",
+  "updated_at": "2026-09-24T11:33:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1405"
 }
 ---
