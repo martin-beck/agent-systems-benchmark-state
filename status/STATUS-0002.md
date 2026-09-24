@@ -90,11 +90,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1417](../tasks/AR-1417-interactive-stateful-literature-workloads.md): Interactive stateful literature workloads | Unclaimed | Add selectable interactive and stateful literature workloads beside built-in software-engineering fixtures. | Keep open: protected-main Repository quality run 36048870322 failed because merge tree 5ddac12 differs from reviewed topic tree 666043f (base a2a6414 vs 0dcc717); await coordinator exact-main requalification or successor repair, never weaken gate. |
+| P1 | [AR-1417](../tasks/AR-1417-interactive-stateful-literature-workloads.md): Interactive stateful literature workloads | ar1417-requal-luna56 | Add selectable interactive and stateful literature workloads beside built-in software-engineering fixtures. | Keep open: protected-main Repository quality run 36048870322 failed because merge tree 5ddac12 differs from reviewed topic tree 666043f (base a2a6414 vs 0dcc717); await coordinator exact-main requalification or successor repair, never weaken gate. |
 
 ### Blocked (65)
 

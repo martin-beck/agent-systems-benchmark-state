@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar-1417-interactive-stateful-literature",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-25T00:50:54+00:00",
   "depends_on": [
     "AR-1416",
     "AR-1408"
@@ -12,15 +12,15 @@
   "observed_branch": "codex/ar-1417-interactive-stateful-literature",
   "observed_dirty": 0,
   "observed_head": "666043f2c7d393c92d740cbc3e50490c2ef75926",
-  "owner": "",
+  "owner": "ar1417-requal-luna56",
   "plan": "../plans/AR-1417.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Add selectable interactive and stateful literature workloads beside built-in software-engineering fixtures.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Interactive stateful literature workloads",
-  "updated_at": "2026-09-24T21:32:43+00:00",
+  "updated_at": "2026-09-24T22:50:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1417"
 }
 ---
@@ -122,3 +122,5 @@ identified.
   36060277341 report protected-main merge tree differs from reviewed topic tree. Keep AR-1417 open
   for AR-1427 successor repair and exact-head requalification; PR307/308 evidence is insufficient
   for release; no gate weakened.
+
+- 2026-09-24T22:50:54+00:00: Claimed by ar1417-requal-luna56.
