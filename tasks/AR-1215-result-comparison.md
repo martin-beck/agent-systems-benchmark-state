@@ -7,7 +7,7 @@
     "AR-1213"
   ],
   "id": "AR-1215",
-  "next_action": "Monitor PR #310 required exact-head checks to terminal; obtain independent review before merge. Do not claim full gate while Ruff remains unavailable.",
+  "next_action": "Resolve or requalify post-merge repository-quality failure for merge f51164569bf4da67a0759328b4be280385abe9a4; then rerun/monitor all seven post-merge workflows to terminal and release only after all succeed.",
   "observed_branch": "docs/ar-1215-result-comparison",
   "observed_dirty": 0,
   "observed_head": "9d97e1684ecddc091b46edb0a1a65a63534175e6",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach conservative comparison of multiple agents from the same benchmark.",
-  "task_revision": 71,
+  "task_revision": 72,
   "title": "Multi-agent result comparison tutorial",
-  "updated_at": "2026-09-24T21:23:19+00:00",
+  "updated_at": "2026-09-24T21:23:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1215"
 }
 ---
@@ -222,3 +222,10 @@ commands in tutorial syntax CI.
   ae22b958187c75e53b2eb345592e58ca99eefd657d6db9a03cf1c35b451879ad.
 
 - 2026-09-24T21:23:19+00:00: Heartbeat by codex-ar1215-luna56.
+
+- 2026-09-24T21:23:28+00:00: Post-merge workflow evidence: aarch64 36060277214 pending, headers
+  36060277265 success, hosted 36060277312 in progress, repository quality 36060277237 failure, fault
+  36060277331 success, formal 36060277295 success, Rust 36060277341 pending. Repository quality
+  failed at repository policy with exact diagnostic: protected-main merge tree differs from reviewed
+  topic tree; workflow used RANGE_BASE 2d64e0cdb888eea18c9995acf62cb12461ffb120 and RANGE_HEAD
+  f51164569bf4da67a0759328b4be280385abe9a4. No release claimed.
