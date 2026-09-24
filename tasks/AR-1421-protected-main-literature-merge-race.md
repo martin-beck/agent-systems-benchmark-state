@@ -8,7 +8,7 @@
     "AR-1398"
   ],
   "id": "AR-1421",
-  "next_action": "Promote after AR-1417's product merge is preserved and the failed run 36048870322 is recorded; repair the protected-main merge admission/requalification path without weakening the tree invariant.",
+  "next_action": "Run correct full integration/policy gates after requalification repair; inspect diff, commit signed+DCO, publish exact-base PR, and wait for exact-head checks. Preserve incident runs 36048870322 and 36048870234.",
   "observed_branch": "codex/ar-1421-protected-main-race",
   "observed_dirty": 4,
   "observed_head": "5ddac12fc0b2d9fbff2b056af888b9ec76edeee5",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair protected-main merge-tree requalification after a literature PR merges onto an advanced main.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Protected-main literature merge race repair",
-  "updated_at": "2026-09-24T19:53:27+00:00",
+  "updated_at": "2026-09-24T19:53:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1421"
 }
 ---
@@ -111,3 +111,13 @@ the merge released before fresh exact-main evidence succeeds.
 
 - 2026-09-24T19:53:27+00:00: Recorded command exit 0; command argv SHA-256
   d74bb0eea616bc82160c5f72a87056d033b00b3033e14b6c91cb6936963f4394.
+
+- 2026-09-24T19:53:45+00:00: Diagnosis and repair in progress: PR #307 merge 5ddac12 has first
+  parent a2a6414 while reviewed topic was based on 0dcc717; protected-main policy correctly rejected
+  reviewed-tree versus merge-tree mismatch. merge_pr.py now explicitly requalifies target/PR refs
+  after fetch and immediately before publication, failing closed with fresh exact-main qualification
+  required. Added hostile fetch-race regression. First focused rerun had one stale expected-message
+  assertion; corrected, then python3 -m unittest tools.integration.test_merge_pr passed 12/12. A
+  combined command also failed before tests due nonexistent module
+  tools.quality.test_repository_policy (ModuleNotFoundError); merge tests in that combined command
+  ran 12 tests but overall exit 1. This is recorded as command/setup error, not product failure.
