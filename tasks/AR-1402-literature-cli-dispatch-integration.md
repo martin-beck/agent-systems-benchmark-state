@@ -1,13 +1,13 @@
 ---
 {
   "branch": "codex/ar-1402-literature-cli",
-  "checkpoint_commit": "022561d8377afb8d1ff164520f9601578b21f717",
+  "checkpoint_commit": "6cef4babe3db65e22bfcd098a074da14a4630f7e",
   "claim_expires": "2026-09-24T15:09:19+00:00",
   "depends_on": [
     "AR-1401"
   ],
   "id": "AR-1402",
-  "next_action": "PR #294 rebased after PR #293 merged: exact base 404ddde (protected main), signed head 022561d, tree 4214389. Fresh exact-head checks restarted; obtain independent review, wait all green, then signed exact-base merge and seven post-merge verification.",
+  "next_action": "Signed exact-base integration merge published as 6cef4ba (base 404ddde, head 022561d, tree 4214389). Monitor seven exact-main post-merge workflows to terminal SUCCESS, verify exact tree/signature/DCO, then release AR-1402.",
   "observed_branch": "codex/ar-1402-literature-cli",
   "observed_dirty": 0,
   "observed_head": "022561d8377afb8d1ff164520f9601578b21f717",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate literature workload catalog and adapters through all ASB CLI execution and evidence paths.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Literature workload CLI dispatch integration",
-  "updated_at": "2026-09-24T13:15:33+00:00",
+  "updated_at": "2026-09-24T13:16:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1402"
 }
 ---
@@ -167,3 +167,8 @@ external benchmark datasets or providers.
 
 - 2026-09-24T13:15:33+00:00: Recorded command exit 0; command argv SHA-256
   c98318bed23fad67672de73ee5f268d5e9eb587ca48d671ddb4ef703b5958476.
+
+- 2026-09-24T13:16:02+00:00: Independent final diff review found no merge-blocking defect.
+  merge_pr.py verified exact PR ref/base/head/tree, signed merge and DCO, then published main.
+  Post-merge runs: Rust 36004373952, AArch64 36004374158, hosted 36004373959, fault 36004373968,
+  formal 36004374133, quality 36004373951, headers 36004373961.
