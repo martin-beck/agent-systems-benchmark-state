@@ -7,16 +7,16 @@
     "AR-1316"
   ],
   "id": "AR-1320",
-  "next_action": "Continue with AR-1322 for the bounded signed local release-index source and verified closure promotion; persistence/restart/refresh fencing is merged.",
+  "next_action": "Run full applicable product gates in the isolated worktree, independently review the complete diff, then publish only if clean signed+DCO PR evidence exists.",
   "owner": "codex-ar1320-luna56",
   "plan": "../plans/AR-1320.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist and verify the ASB agent release index used by the setup wizard.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Persisted authenticated agent release index",
-  "updated_at": "2026-09-24T20:10:44+00:00",
+  "updated_at": "2026-09-24T20:11:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1320-persisted-agent-release-index"
 }
 ---
@@ -87,3 +87,13 @@ before any agent can become selectable.
 
 - 2026-09-24T20:10:44+00:00: Recorded command exit 0; command argv SHA-256
   d371733cc87877c5e30be9d9c73e811c93371b8683121de3361555a719bf0340.
+
+- 2026-09-24T20:11:33+00:00: Focused verification failures recorded: (1) cargo test -p asb-cli
+  agent_catalog_refresh_is_generation_fenced_and_restart_stable from /tmp/asb-ar1320 exited 101
+  because test scratch base overlapped the repository; corrective action: reran with
+  coordinator-created /srv/data/projects/asb-test-tmp (mode 0700), and the test passed. (2) rerun
+  with /srv/data/projects/.tmp exited 101 because test scratch base ownership or mode was unsafe;
+  corrective action: created /srv/data/projects/asb-test-tmp and set mode 0700. (3) one handoffctl
+  run attempt exited 1 because cargo fmt was invoked from the state checkout without a Cargo.toml;
+  corrective action: reran with --manifest-path /tmp/asb-ar1320/Cargo.toml. Concurrent coordinator
+  lock timeouts were observed and retried; no product mutation resulted.
