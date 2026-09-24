@@ -7,7 +7,7 @@
     "AR-1211"
   ],
   "id": "AR-1212",
-  "next_action": "Protected merge a2a641417547937ee695f4f6cac53194ba47121e is exact origin/main with Good SSH signature, matching DCO, parents 0dcc717/3fda4b4, and tree 9b4ad618. Monitor seven exact-main workflows: hosted 36048088771, aarch64 36048088687, quality 36048088715, Rust 36048088861, headers 36048088696, formal 36048088790, fault 36048088820. Release AR-1212 only after all seven terminal SUCCESS.",
+  "next_action": "Release AR-1212 as done with complete merge and post-merge evidence; then reconcile and monitor stale PR #306/AR-1316 closure.",
   "observed_branch": "codex/ar-1212-benchmark-readiness",
   "observed_dirty": 0,
   "observed_head": "3fda4b4eb63f928cd446274d9e36af08b5579845",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach users to test configured-agent benchmark eligibility without running an agent.",
-  "task_revision": 74,
+  "task_revision": 75,
   "title": "Agent benchmark-readiness tutorial",
-  "updated_at": "2026-09-24T19:32:56+00:00",
+  "updated_at": "2026-09-24T19:34:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1212"
 }
 ---
@@ -230,3 +230,9 @@ Implement the linked tutorial and deterministic negative/positive syntax fixture
 - 2026-09-24T19:31:21+00:00: Heartbeat by open-pr-triage-luna56.
 
 - 2026-09-24T19:32:56+00:00: Heartbeat by open-pr-triage-luna56.
+
+- 2026-09-24T19:34:28+00:00: All seven exact-main post-merge workflows for merge
+  a2a641417547937ee695f4f6cac53194ba47121e are terminal SUCCESS: hosted 36048088771, aarch64
+  36048088687, repository quality 36048088715, Rust 36048088861, Huawei headers 36048088696, formal
+  36048088790, fault 36048088820. Main remains exact signed merge with matching DCO, parents, and
+  tree.
