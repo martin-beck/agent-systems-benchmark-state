@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add selectable interactive and stateful literature workloads beside built-in software-engineering fixtures.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Interactive stateful literature workloads",
-  "updated_at": "2026-09-24T21:30:28+00:00",
+  "updated_at": "2026-09-24T21:30:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1417"
 }
 ---
@@ -106,3 +106,6 @@ identified.
   recovering for exact-main post-merge verification.
 
 - 2026-09-24T21:30:28+00:00: Claimed by ar1417-recovery-luna56.
+
+- 2026-09-24T21:30:56+00:00: Recorded command exit 0; command argv SHA-256
+  ff6d1fa7a7185010f75fcfafe4bdc1bdd5b9804d8c2b3e7abdd8a1b96cd81c63.
