@@ -10,7 +10,7 @@
   "id": "AR-1415",
   "next_action": "Promote after AR-1414 is done; audit every docs-listed workload against the registry, generated catalog, selector filters, and plan validation.",
   "observed_branch": "codex/ar-1415-literature-selector-total-coverage",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "6925c3c443b77aa41ec9578e49cc19b01447c869",
   "owner": "ar1415-literature-selector-total-coverage-luna56",
   "plan": "../plans/AR-1415.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make the complete literature workload inventory selectable beside built-in software-engineering fixtures with truthful evidence gates.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Total literature workload selector coverage",
-  "updated_at": "2026-09-24T17:48:08+00:00",
+  "updated_at": "2026-09-24T17:48:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1415"
 }
 ---
