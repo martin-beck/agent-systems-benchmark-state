@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind authenticated control receipts to runtime-owned live dispatch.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Authenticated live control adapter",
-  "updated_at": "2026-09-24T03:08:16+00:00",
+  "updated_at": "2026-09-24T03:08:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1378-live-control-adapter"
 }
 ---
@@ -34,3 +34,6 @@ chain store; this task supplies only the authenticated control operation seam.
   AR-1376 is audit evidence only.
 
 - 2026-09-24T03:08:16+00:00: Claimed by codex-asb-runtime-receipt-source-luna56.
+
+- 2026-09-24T03:08:51+00:00: Recorded command exit 0; command argv SHA-256
+  321c534968b9c456a64caf5e6d09b63780c507f97548057d2bfe31edcfd73ff4.
