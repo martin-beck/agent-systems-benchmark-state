@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish the verified ASB agent catalog required by the first-run setup wizard.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Authenticated agent catalog producer",
-  "updated_at": "2026-09-24T18:51:27+00:00",
+  "updated_at": "2026-09-24T18:51:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1316"
 }
 ---
@@ -63,3 +63,6 @@ Progress evidence: ASB PR #245 merged at `027af7ad27da13b359b3f099699c42b03c6f39
 - 2026-09-24T18:49:42+00:00: Heartbeat by ar1316-authenticated-agent-catalog-producer-luna56.
 
 - 2026-09-24T18:51:27+00:00: Heartbeat by ar1316-authenticated-agent-catalog-producer-luna56.
+
+- 2026-09-24T18:51:30+00:00: Recorded command exit 0; command argv SHA-256
+  ff6d1fa7a7185010f75fcfafe4bdc1bdd5b9804d8c2b3e7abdd8a1b96cd81c63.
