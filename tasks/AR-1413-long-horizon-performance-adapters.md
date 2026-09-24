@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add truthful long-horizon, refreshed, performance, and reproducibility workload adapters.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Long-horizon and performance literature workload adapters",
-  "updated_at": "2026-09-24T14:53:51+00:00",
+  "updated_at": "2026-09-24T14:54:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1413"
 }
 ---
@@ -62,3 +62,6 @@ bounded local fixtures or LiteLLM-compatible mocks only.
 
 - 2026-09-24T14:53:51+00:00: Recorded command exit 0; command argv SHA-256
   d8f61f13be49be6193fc236b2c3742fce2f58bbeb306849af6c8d8bd30bf070c.
+
+- 2026-09-24T14:54:07+00:00: Recorded command exit 0; command argv SHA-256
+  a254215de37a24040e1133a89f2f05ffb2739ecfe97eeaab32a64cdb294bfb4c.
