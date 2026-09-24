@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair protected-main merge-tree requalification after a literature PR merges onto an advanced main.",
-  "task_revision": 67,
+  "task_revision": 68,
   "title": "Protected-main literature merge race repair",
-  "updated_at": "2026-09-24T20:09:18+00:00",
+  "updated_at": "2026-09-24T20:09:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1421"
 }
 ---
@@ -224,3 +224,6 @@ the merge released before fresh exact-main evidence succeeds.
   assurance 36052764458, hosted portability 36052764507, Formal assurance 36052764675, MIT headers
   36052764433 (already SUCCESS). Merge command finalization initially hit LOCK_TIMEOUT; fresh query
   confirmed MERGED.
+
+- 2026-09-24T20:09:36+00:00: Recorded command exit 0; command argv SHA-256
+  a3590b7d997947e3afc251cecf38d22bf5830971d224aae2cb387b3c49ec1bdb.
