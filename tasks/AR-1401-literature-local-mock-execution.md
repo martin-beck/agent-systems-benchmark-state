@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide offline deterministic mock execution for every documented literature workload family.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Literature workload local mock execution",
-  "updated_at": "2026-09-24T12:12:09+00:00",
+  "updated_at": "2026-09-24T12:12:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1401"
 }
 ---
@@ -90,3 +90,6 @@ record to official, native-tested, or externally qualified.
 
 - 2026-09-24T12:12:09+00:00: Recorded command exit 0; command argv SHA-256
   5764b6e0a77eb76d1a332ced5f0b73c6fd0abb42fd073ef12e800fc84ff1df62.
+
+- 2026-09-24T12:12:28+00:00: Recorded command exit 0; command argv SHA-256
+  22bf1f8894b12648666aeb1f42464d8acd3bf108581b1d1ba7b99d3eceb2a674.
