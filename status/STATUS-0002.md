@@ -65,19 +65,19 @@
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P2 | [AR-1403](../tasks/AR-1403-literature-external-qualification.md): Literature workload external qualification | ar1403_external_qualification_luna56 | Add optional evidence-gated qualification for real literature workload sources and evaluators. | Promote only after CLI integration is done; extend the explicit external artifact/evaluator qualification workflow without adding a default network path. |
 | P2 | [AR-1404](../tasks/AR-1404-literature-documentation-matrix.md): Literature workload documentation and matrix contract | ar1404_literature_documentation_luna56b | Generate and verify the literature workload documentation and evidence-state matrix. | Promote after the catalog and CLI contracts stabilize; generate documentation and add CI parity checks across docs, registry, catalog, and CLI inventory. |
 
-### Open (2)
+### Open (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1212](../tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Unclaimed | Teach users to test configured-agent benchmark eligibility without running an agent. | Implement the offline tutorial for checking agent benchmark readiness under the current configuration. |
 | P0 | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | Unclaimed | Publish the verified ASB agent catalog required by the first-run setup wizard. | Persist the authenticated catalog snapshot/generation and complete live ASB-to-asb-tui wizard evidence; keep all entries unavailable until a verified release closure exists. |
+| P2 | [AR-1403](../tasks/AR-1403-literature-external-qualification.md): Literature workload external qualification | Unclaimed | Add optional evidence-gated qualification for real literature workload sources and evaluators. | Promote only after CLI integration is done; extend the explicit external artifact/evaluator qualification workflow without adding a default network path. |
 
 ### Blocked (66)
 

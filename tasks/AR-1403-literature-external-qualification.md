@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-24T15:27:28+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1402"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "ar1403_external_qualification_luna56",
+  "owner": "",
   "plan": "../plans/AR-1403-literature-external-qualification.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Add optional evidence-gated qualification for real literature workload sources and evaluators.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Literature workload external qualification",
-  "updated_at": "2026-09-24T13:27:28+00:00",
+  "updated_at": "2026-09-24T13:28:29+00:00",
   "worktree_key": ""
 }
 ---
@@ -31,3 +31,8 @@ development, mock execution, or candidate selection.
   qualification without adding a default network/provider path.
 
 - 2026-09-24T13:27:28+00:00: Claimed by ar1403_external_qualification_luna56.
+
+- 2026-09-24T13:28:29+00:00: Safe recovery: AR-1403 remains open because task metadata has empty
+  declared branch and worktree_key; handoffctl rejects isolated worktree setup without those
+  declarations. No product commands or changes were performed. Coordinator must bind
+  codex/ar-1403-literature-external and agent-systems-benchmark-ar-1403, then re-claim.
