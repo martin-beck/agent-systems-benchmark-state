@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair protected-main merge topology after AR-1371 without changing product behavior.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Protected merge topology repair",
-  "updated_at": "2026-09-24T01:27:41+00:00",
+  "updated_at": "2026-09-24T01:28:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1372-topology-repair"
 }
 ---
@@ -46,3 +46,6 @@ topology; no gate may be weakened.
 
 - 2026-09-24T01:27:41+00:00: Recorded command exit 1; command argv SHA-256
   b00a450c4d9b275e2e6b00bd0bd45115e1f8f91179d21394d86da1a345387b13.
+
+- 2026-09-24T01:28:02+00:00: Recorded command exit 0; command argv SHA-256
+  96284d7cbc199c9a9dba90f836eccbef715e1b24244e52ce2fa860a67c4c21ff.
