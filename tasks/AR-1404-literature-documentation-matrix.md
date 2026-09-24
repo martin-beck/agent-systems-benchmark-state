@@ -155,3 +155,7 @@ state that diverges from the versioned catalog.
   portability; 36011184141 Rust verification; 36011184365 Hosted portability and native
   qualification; 36011184127 Fault assurance; 36011184212 Huawei MIT source headers; 36011184259
   Repository quality.
+
+- 2026-09-24T14:29:00+00:00: Coordinator evidence correction: the formal assurance workflow is
+  36011184112; Huawei MIT source headers is 36011184212. The preceding completion note repeated
+  36011184212 under the formal label; no product or release evidence changed.
