@@ -12,16 +12,16 @@
   "next_action": "Promote and claim this dependency-valid successor, refresh an isolated worktree to protected main, and implement the authenticated ControlBackend runtime receipt operation consumed by the existing AR-1366 bridge.",
   "observed_branch": "feature/ar-1373-authenticated-receipt-source",
   "observed_dirty": 0,
-  "observed_head": "3f0b67638647dc016f7d5abd3e246baf3ae4ec29",
+  "observed_head": "265b936d995148f8e40e36664cf68bf12affc20d",
   "owner": "codex-asb-runtime-receipt-source-luna56",
   "plan": "../plans/AR-1373-authenticated-receipt-source.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated ControlBackend runtime receipt source for AR-1329 production dispatch.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Authenticated runtime receipt source",
-  "updated_at": "2026-09-24T01:50:57+00:00",
+  "updated_at": "2026-09-24T01:51:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1373-authenticated-receipt-source"
 }
 ---
