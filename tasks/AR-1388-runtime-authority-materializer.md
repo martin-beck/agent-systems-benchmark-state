@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize runtime-owned provider authority from authenticated receipt and chain state.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Runtime authority receipt materializer",
-  "updated_at": "2026-09-24T06:48:33+00:00",
+  "updated_at": "2026-09-24T06:48:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1388-runtime-authority-materializer"
 }
 ---
@@ -69,3 +69,6 @@ namespace identity, or launch tokens.
   lease, and relay digests. Focused runtime/control tests and repository policy pass; commit is
   SSH-signed with matching DCO. External provider remains unnecessary; tests are local
   deterministic.
+
+- 2026-09-24T06:48:44+00:00: Recorded command exit 0; command argv SHA-256
+  bab5eadef9f3f52491de83019527292da0e05b35873d8f4a414d102081573f8a.
