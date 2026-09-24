@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1384-runtime-bootstrap-materialization",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-24T07:09:24+00:00",
+  "claim_expires": "2026-09-24T07:10:18+00:00",
   "depends_on": [
     "AR-1383",
     "AR-1377",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize the runtime-owned live bootstrap handle from authenticated authority.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Runtime-owned bootstrap materialization",
-  "updated_at": "2026-09-24T05:10:15+00:00",
+  "updated_at": "2026-09-24T05:10:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1384-runtime-bootstrap-materialization"
 }
 ---
@@ -39,3 +39,5 @@ it must not accept caller authority or synthesize enrolled values.
 
 - 2026-09-24T05:10:04+00:00: Recorded command exit 0; command argv SHA-256
   ff6d1fa7a7185010f75fcfafe4bdc1bdd5b9804d8c2b3e7abdd8a1b96cd81c63.
+
+- 2026-09-24T05:10:18+00:00: Heartbeat by codex-asb-runtime-receipt-source-luna56.
