@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the newer immutable install-action update reopened as PR #235.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Follow-up install-action pin qualification",
-  "updated_at": "2026-09-24T16:13:00+00:00",
+  "updated_at": "2026-09-24T16:13:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1414"
 }
 ---
@@ -59,3 +59,6 @@ v2.87.14. Do not merge while policy or exact-head checks fail.
 
 - 2026-09-24T16:13:00+00:00: Recorded command exit 0; command argv SHA-256
   16f6e13d72ba5fe63bcbfacf0e8a422b37828611be948477f9597695efdfcd09.
+
+- 2026-09-24T16:13:24+00:00: Recorded command exit 0; command argv SHA-256
+  d21b7cdd468bf9aa335f78be9a7dff6efc99c662e9b699880faf77662db85ad6.
