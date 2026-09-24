@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1371-runner-authority-injection",
   "checkpoint_commit": "0c6dc52e1f4aa5854f73081711dbd9a5bc1a5d7c",
-  "claim_expires": "2026-09-24T02:58:27+00:00",
+  "claim_expires": "2026-09-24T02:58:36+00:00",
   "depends_on": [
     "AR-1288"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Inject existing authenticated certificate authority and runtime enrollment material into RunnerBackend/Catalog without synthetic authority.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Runner authority injection",
-  "updated_at": "2026-09-24T00:58:27+00:00",
+  "updated_at": "2026-09-24T00:58:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1371-runner-authority-injection"
 }
 ---
@@ -33,3 +33,5 @@ trust or launch authority from CLI/config input.
   integrate completed AR-1288 issuer into RunnerBackend/Catalog.
 
 - 2026-09-24T00:58:27+00:00: Claimed by codex-asb-runtime-attested-enrollment-luna56.
+
+- 2026-09-24T00:58:36+00:00: Heartbeat by codex-asb-runtime-attested-enrollment-luna56.
