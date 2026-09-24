@@ -1,7 +1,7 @@
 ---
 {
   "branch": "codex/ar-1427-merge-requal",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "81f02d294dc51894a35c6b5273cacde2bb392ef3",
   "claim_expires": "2026-09-24T23:25:50+00:00",
   "depends_on": [
     "AR-1421"
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair exact protected-main merge-tree requalification after sequential tutorial merges.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Protected-main merge-tree requalification repair",
-  "updated_at": "2026-09-24T21:46:52+00:00",
+  "updated_at": "2026-09-24T21:47:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1427-merge-requal"
 }
 ---
@@ -149,3 +149,9 @@ incident evidence; no gate is waived.
 
 - 2026-09-24T21:46:52+00:00: Recorded command exit 0; command argv SHA-256
   f21578637c46aa3054474c32a260f2a02e9c782cce62f9056aea603645f0c849.
+
+- 2026-09-24T21:47:16+00:00: PR #312 merged as d9eb6c2d6bdaf79c9b91179e13c3ecb1a3b37a3c after
+  independent review and all 12 required PR checks succeeded. Exact post-merge runs: headers
+  36063174379 success; hosted portability 36063174357 success; fault assurance 36063174428 success;
+  formal assurance 36063174404 success; Repository quality 36063174963, Rust 36063174410, and
+  emulated aarch64 36063174344 remain in progress. Do not release until all three terminal success.
