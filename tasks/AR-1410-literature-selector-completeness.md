@@ -3,7 +3,14 @@
   "branch": "",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1402", "AR-1404", "AR-1409", "AR-1411", "AR-1412", "AR-1413"],
+  "depends_on": [
+    "AR-1402",
+    "AR-1404",
+    "AR-1409",
+    "AR-1411",
+    "AR-1412",
+    "AR-1413"
+  ],
   "id": "AR-1410",
   "next_action": "Promote after dispatch, documentation, interactive, repository/terminal, code-generation, and long-horizon adapter ARs are done; verify every literature workload is selectable through all offline ASB paths.",
   "observed_branch": "",
@@ -13,14 +20,19 @@
   "plan": "../plans/AR-1410-literature-selector-completeness.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Literature selector completeness and parity",
-  "updated_at": "2026-09-24T00:00:00+00:00",
+  "updated_at": "2026-09-24T16:35:43+00:00",
   "worktree_key": ""
 }
 ---
 
 This AR is the final integration gate for literature workload selection; it
 does not turn external qualification or live-provider access into a prerequisite.
+
+- 2026-09-24T16:35:43+00:00: All literature registry, adapter, catalog, dispatch, documentation,
+  interactive, repository/terminal, code-generation, and long-horizon predecessors are done; verify
+  every docs-listed workload ID is selectable through CLI, replay, reporting, and local-mock paths
+  without upgrading planned evidence.
