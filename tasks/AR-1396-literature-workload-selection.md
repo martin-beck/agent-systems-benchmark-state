@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-24T11:36:16+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1395",
     "AR-1399"
@@ -12,15 +12,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "codex-asb-ar1396-literature-selection-luna56",
+  "owner": "",
   "plan": "../plans/AR-1396-literature-workload-selection.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Make qualified literature workload families selectable beside built-in ASB software-engineering fixtures.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Literature workload selection",
-  "updated_at": "2026-09-24T10:08:10+00:00",
+  "updated_at": "2026-09-24T10:10:49+00:00",
   "worktree_key": ""
 }
 ---
@@ -36,3 +36,6 @@ platform gates.
 
 - 2026-09-24T10:08:10+00:00: Recorded command exit 0; command argv SHA-256
   782d0973594bb9e739a49ad1b4fdd8b7152bc89f4d181b8f25550d964ca70250.
+
+- 2026-09-24T10:10:49+00:00: Reclaim from declared product worktree so coordinator branch fence is
+  established.
