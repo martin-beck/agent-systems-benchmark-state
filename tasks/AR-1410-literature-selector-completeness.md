@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads.",
-  "task_revision": 105,
+  "task_revision": 106,
   "title": "Literature selector completeness and parity",
-  "updated_at": "2026-09-24T17:23:14+00:00",
+  "updated_at": "2026-09-24T17:23:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1410"
 }
 ---
@@ -330,3 +330,6 @@ does not turn external qualification or live-provider access into a prerequisite
 
 - 2026-09-24T17:23:14+00:00: Recorded command exit 0; command argv SHA-256
   e9c36540cb25a7ec8614b44a1cfe2b10b69fbb7493832aae91658d69048efb47.
+
+- 2026-09-24T17:23:28+00:00: Recorded command exit 0; command argv SHA-256
+  a1578e0f08c670e60dc7d8664c670a0a30bd842e778f44adc6b45a5f66e90bfc.
