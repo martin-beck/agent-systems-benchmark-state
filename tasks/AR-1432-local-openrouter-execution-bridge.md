@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify credential-free OpenRouter user execution through a deterministic loopback mock without external-provider access.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Local OpenRouter execution bridge",
-  "updated_at": "2026-09-24T23:00:51+00:00",
+  "updated_at": "2026-09-24T23:01:13+00:00",
   "worktree_key": ""
 }
 ---
@@ -35,3 +35,6 @@ or claim that OpenRouter is reachable. Preserve all earlier blocker evidence.
   AR-1393 are done; promote deterministic loopback-only repair while preserving AR-1329 blocked.
 
 - 2026-09-24T23:00:51+00:00: Claimed by codex-asb-ar1432-local-openrouter-luna56.
+
+- 2026-09-24T23:01:13+00:00: Recorded command exit 0; command argv SHA-256
+  319c3e93bfc478067076a1383aaeabe840d529e07553169ea415d18b26d0e97b.
