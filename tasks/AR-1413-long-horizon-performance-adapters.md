@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "AR-1413 rebased unchanged signed literature metadata onto protected main 8c640e59; PR #299 exact-head checks restarted.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Long-horizon and performance literature workload adapters",
-  "updated_at": "2026-09-24T15:12:44+00:00",
+  "updated_at": "2026-09-24T15:15:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1413"
 }
 ---
@@ -126,3 +126,6 @@ bounded local fixtures or LiteLLM-compatible mocks only.
 - 2026-09-24T15:10:00+00:00: Heartbeat by ar1413_long_horizon_performance_luna56.
 
 - 2026-09-24T15:12:44+00:00: Heartbeat by ar1413_long_horizon_performance_luna56.
+
+- 2026-09-24T15:15:21+00:00: Recorded command exit 0; command argv SHA-256
+  50edfc1b2b6937d9933c34bcafbbf3f9f21b15e1d757526659068124e531e305.
