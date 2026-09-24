@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1393-local-provider-authority-provisioning",
   "checkpoint_commit": "10bffbf015bd7ca78d8c0d18f04cf0190195e933",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T08:34:35+00:00",
   "depends_on": [
     "AR-1388",
     "AR-1385",
@@ -18,15 +18,15 @@
   "observed_branch": "feature/ar-1393-local-provider-authority-provisioning",
   "observed_dirty": 0,
   "observed_head": "10bffbf015bd7ca78d8c0d18f04cf0190195e933",
-  "owner": "",
+  "owner": "codex-asb-ar1329-repair-luna56",
   "plan": "../plans/AR-1393-local-provider-authority-provisioning.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provision a runtime-owned loopback mock authority so development never requires external provider access.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Local provider authority provisioning",
-  "updated_at": "2026-09-24T07:48:42+00:00",
+  "updated_at": "2026-09-24T07:49:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1393-local-provider-authority-provisioning"
 }
 ---
@@ -37,3 +37,5 @@ or production egress gates.
 
 - 2026-09-24T07:48:42+00:00: Runtime authority audits show external provider authority absent;
   promote deterministic local mock provisioning to keep development credential-free.
+
+- 2026-09-24T07:49:35+00:00: Claimed by codex-asb-ar1329-repair-luna56.
