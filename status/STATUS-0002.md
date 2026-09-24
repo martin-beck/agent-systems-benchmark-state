@@ -21,7 +21,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1380](../tasks/AR-1380-runtime-scheduler-composition.md): Runtime scheduler composition for live dispatch | codex-asb-runtime-receipt-source-luna56 | Compose runtime-owned live attempts for production run and sweep scheduling. | Independent review complete for runtime scheduler seam; run workspace gates, inspect API/privacy diff, then publish exact-head PR. CLI run/sweep still needs a caller wiring AR after this runtime boundary is reviewed. |
+| P0 | [AR-1380](../tasks/AR-1380-runtime-scheduler-composition.md): Runtime scheduler composition for live dispatch | codex-asb-runtime-receipt-source-luna56 | Compose runtime-owned live attempts for production run and sweep scheduling. | PR #276 is published at exact head 1113375. Monitor all required exact-head checks; repair failures through handoffctl, merge only after independent review and green CI, then verify seven post-merge workflows. |
 
 ### Open (4)
 
