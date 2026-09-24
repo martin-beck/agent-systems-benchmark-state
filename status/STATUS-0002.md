@@ -74,7 +74,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1410](../tasks/AR-1410-literature-selector-completeness.md): Literature selector completeness and parity | ar1410-literature-selector-parity-luna56 | Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads. | Regenerate catalog after aligning generator capability ordering/family IDs with Rust, run CLI-vs-generated parity and focused gates, then signed commit/push and monitor fresh CI. |
+| P1 | [AR-1410](../tasks/AR-1410-literature-selector-completeness.md): Literature selector completeness and parity | ar1410-literature-selector-parity-luna56 | Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads. | Monitor fresh PR #302 checks at exact base 9d410f5/head 2fe5c77; required workflow IDs 36032873236,36032873276,36032873237,36032873224,36032873252,36032873206,36032873221 are running. Merge only after all terminal success, then verify post-merge. |
 
 ### Open (2)
 
@@ -525,4 +525,3 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1046](../tasks/AR-1046-serialize-emulated-aarch64-agent-tests.md): Serialize emulated AArch64 agent tests | Unclaimed | Make the emulated AArch64 asb-agents fake-node readiness fixtures deterministic without changing production semantics. | No further action: AR-1047 superseded the disproven serialization hypothesis. |

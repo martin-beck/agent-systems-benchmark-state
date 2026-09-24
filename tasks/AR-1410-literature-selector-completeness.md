@@ -1,7 +1,7 @@
 ---
 {
   "branch": "codex/ar-1410-literature-selector-parity",
-  "checkpoint_commit": "8a1e031b1060ed684f499dc035bdefa179c4488b",
+  "checkpoint_commit": "2fe5c77304a3e68dad31168fdd2728d1374f10f5",
   "claim_expires": "2026-09-24T19:17:26+00:00",
   "depends_on": [
     "AR-1402",
@@ -12,7 +12,7 @@
     "AR-1413"
   ],
   "id": "AR-1410",
-  "next_action": "Regenerate catalog after aligning generator capability ordering/family IDs with Rust, run CLI-vs-generated parity and focused gates, then signed commit/push and monitor fresh CI.",
+  "next_action": "Monitor fresh PR #302 checks at exact base 9d410f5/head 2fe5c77; required workflow IDs 36032873236,36032873276,36032873237,36032873224,36032873252,36032873206,36032873221 are running. Merge only after all terminal success, then verify post-merge.",
   "observed_branch": "codex/ar-1410-literature-selector-parity",
   "observed_dirty": 0,
   "observed_head": "2fe5c77304a3e68dad31168fdd2728d1374f10f5",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads.",
-  "task_revision": 100,
+  "task_revision": 101,
   "title": "Literature selector completeness and parity",
-  "updated_at": "2026-09-24T17:17:26+00:00",
+  "updated_at": "2026-09-24T17:19:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1410"
 }
 ---
@@ -315,3 +315,8 @@ does not turn external qualification or live-provider access into a prerequisite
   05ce2f37658399dad333367119284d918bd27f3bed398bb1a1cca005d61b2838.
 
 - 2026-09-24T17:17:26+00:00: Heartbeat by ar1410-literature-selector-parity-luna56.
+
+- 2026-09-24T17:19:23+00:00: Reconciled checkpoint after parity repair: generator/static catalog and
+  CLI parity pass, exact provenance and literature tests pass, signed+DCO fix commit 2fe5c77 is
+  pushed. Fresh CI run IDs recorded: 36032873236, 36032873276, 36032873237, 36032873224,
+  36032873252, 36032873206, 36032873221.

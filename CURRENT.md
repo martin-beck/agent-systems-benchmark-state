@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1410](tasks/AR-1410-literature-selector-completeness.md): Literature selector completeness and parity | Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads. | Regenerate catalog after aligning generator capability ordering/family IDs with Rust, run CLI-vs-generated parity and focused gates, then signed commit/push and monitor fresh CI. | ar1410-literature-selector-parity-luna56 |
+| P1 | [AR-1410](tasks/AR-1410-literature-selector-completeness.md): Literature selector completeness and parity | Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads. | Monitor fresh PR #302 checks at exact base 9d410f5/head 2fe5c77; required workflow IDs 36032873236,36032873276,36032873237,36032873224,36032873252,36032873206,36032873221 are running. Merge only after all terminal success, then verify post-merge. | ar1410-literature-selector-parity-luna56 |
 
 ## Open
 
