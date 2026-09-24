@@ -11,18 +11,18 @@
   ],
   "id": "AR-1316",
   "next_action": "Independently review PR #306 exact base 0dcc717/head e0e447d; wait all required checks terminal SUCCESS before merge.",
-  "observed_branch": "feature/ar-1316-authenticated-agent-catalog-producer",
-  "observed_dirty": 0,
-  "observed_head": "e0e447dcb5214222b1c47353dc048abbe2dbdd75",
+  "observed_branch": "DETACHED",
+  "observed_dirty": 1,
+  "observed_head": "0dcc71705eb610e4c3ab6a9f775a9d7b9b25218a",
   "owner": "ar1316-authenticated-agent-catalog-producer-luna56",
   "plan": "../plans/AR-1316.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish the verified ASB agent catalog required by the first-run setup wizard.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Authenticated agent catalog producer",
-  "updated_at": "2026-09-24T19:00:56+00:00",
+  "updated_at": "2026-09-24T19:01:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1316"
 }
 ---
