@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish the verified ASB agent catalog required by the first-run setup wizard.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Authenticated agent catalog producer",
-  "updated_at": "2026-09-24T18:57:56+00:00",
+  "updated_at": "2026-09-24T18:58:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1316"
 }
 ---
@@ -86,3 +86,6 @@ Progress evidence: ASB PR #245 merged at `027af7ad27da13b359b3f099699c42b03c6f39
 
 - 2026-09-24T18:57:45+00:00: Recorded command exit 0; command argv SHA-256
   8b4ac076c67d9a9cd7124b6739c1ebcb45483f500feb133a7be56407733a4114.
+
+- 2026-09-24T18:58:04+00:00: Recorded command exit 0; command argv SHA-256
+  6840d2f0cea6f9cf6ffce81b9b1b74dcdddaff8701fc6cc1705c309033813254.
