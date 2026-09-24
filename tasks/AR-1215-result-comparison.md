@@ -2,7 +2,7 @@
 {
   "branch": "docs/ar-1215-result-comparison",
   "checkpoint_commit": "9d97e1684ecddc091b46edb0a1a65a63534175e6",
-  "claim_expires": "2026-09-24T23:23:19+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1213"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "docs/ar-1215-result-comparison",
   "observed_dirty": 0,
   "observed_head": "9d97e1684ecddc091b46edb0a1a65a63534175e6",
-  "owner": "codex-ar1215-luna56",
+  "owner": "",
   "plan": "../plans/AR-1215.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Teach conservative comparison of multiple agents from the same benchmark.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Multi-agent result comparison tutorial",
-  "updated_at": "2026-09-24T21:54:38+00:00",
+  "updated_at": "2026-09-24T21:55:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1215"
 }
 ---
@@ -247,3 +247,13 @@ commands in tutorial syntax CI.
 
 - 2026-09-24T21:54:38+00:00: Recorded command exit 0; command argv SHA-256
   ce33fe5441846cac5407865327040d57d338e203a23e995f1064f18b71e5f850.
+
+- 2026-09-24T21:55:04+00:00: Released after protected-main repair. Product PR #310 merged as
+  f51164569bf4da67a0759328b4be280385abe9a4; reviewed topic tree
+  9d97e1684ecddc091b46edb0a1a65a63534175e6 equals merge tree. Original post-merge failures
+  36060277237 repository-quality and 36060277341 Rust DCO both rejected protected-main merge-tree
+  mismatch and are preserved. AR-1427 repair commit d9eb6c2d6bdaf79c9b91179e13c3ecb1a3b37a3c is
+  current origin/main and its fresh seven post-merge workflows all succeeded: aarch64 36063174344,
+  headers 36063174379, hosted 36063174357, repository 36063174963, fault 36063174428, formal
+  36063174404, Rust 36063174410. Topic focused tests 21 passed, tutorial syntax valid, and
+  signed+DCO topic commits verified; Ruff remained unavailable and was recorded.
