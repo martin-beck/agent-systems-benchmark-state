@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**395 ARs tracked** across 6 active status categories.
+**395 ARs tracked** across 7 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 5 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 4 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 57 |
 | **Planned** | Defined work awaiting promotion or dependencies | 65 |
 | **Future** | Deferred roadmap work | 1 |
@@ -463,7 +463,7 @@ flowchart LR
         AR_1368["AR-1368 - Blocked"]:::status_blocked
         AR_1369["AR-1369 - Superseded"]:::status_superseded
         AR_1370["AR-1370 - Planned"]:::status_planned
-        AR_1371["AR-1371 - Open"]:::status_open
+        AR_1371["AR-1371 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1891,9 +1891,14 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (5)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1371](../tasks/AR-1371-runner-authority-injection.md): Runner authority injection | codex-asb-runtime-attested-enrollment-luna56 | Inject existing authenticated certificate authority and runtime enrollment material into RunnerBackend/Catalog without synthetic authority. | Promote and claim this dependency-valid repair, then implement authenticated RunnerBackend/Catalog authority injection using existing AR-1288 issuer primitives. |
+
+### Open (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1212](../tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Unclaimed | Teach users to test configured-agent benchmark eligibility without running an agent. | Implement the offline tutorial for checking agent benchmark readiness under the current configuration. |
-| P0 | [AR-1314](../tasks/AR-1314-optional-bundle-signing-development-release.md): Optional runtime-bundle signing for development and tagged releases | Unclaimed | Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile. | Wait for PR #232 exact-head CI after schema-v3 repair; if all required checks pass, independently review and merge through the established workflow, then reconcile AR-1314. Preserve signature-required defaults. |
