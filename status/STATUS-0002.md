@@ -46,20 +46,20 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1393](../tasks/AR-1393-local-provider-authority-provisioning.md): Local provider authority provisioning | coordinator | Provision a runtime-owned loopback mock authority so development never requires external provider access. | Publish signed+DCO PR from exact head 0a3817082d13f15187ea5efe4f5792664a50be99; monitor exact-head CI and independently review before merge. |
 | P1 | [AR-1394](../tasks/AR-1394-literature-workload-registry.md): Literature workload registry expansion | codex-asb-ar1394-literature-registry-luna56 | Catalog every documented literature benchmark with provenance and truthful qualification status. | Promote after the existing provenance ARs are verified, then add the strict literature workload inventory schema, entries, and generated docs. |
 
-### Open (4)
+### Open (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1212](../tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Unclaimed | Teach users to test configured-agent benchmark eligibility without running an agent. | Implement the offline tutorial for checking agent benchmark readiness under the current configuration. |
 | P0 | [AR-1314](../tasks/AR-1314-optional-bundle-signing-development-release.md): Optional runtime-bundle signing for development and tagged releases | Unclaimed | Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile. | Wait for PR #232 exact-head CI after schema-v3 repair; if all required checks pass, independently review and merge through the established workflow, then reconcile AR-1314. Preserve signature-required defaults. |
 | P0 | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | Unclaimed | Publish the verified ASB agent catalog required by the first-run setup wizard. | Persist the authenticated catalog snapshot/generation and complete live ASB-to-asb-tui wizard evidence; keep all entries unavailable until a verified release closure exists. |
-| P0 | [AR-1393](../tasks/AR-1393-local-provider-authority-provisioning.md): Local provider authority provisioning | Unclaimed | Provision a runtime-owned loopback mock authority so development never requires external provider access. | Publish signed+DCO PR from exact head 0a3817082d13f15187ea5efe4f5792664a50be99; monitor exact-head CI and independently review before merge. |
 
 ### Blocked (67)
 

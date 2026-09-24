@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1393-local-provider-authority-provisioning",
   "checkpoint_commit": "0a3817082d13f15187ea5efe4f5792664a50be99",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T08:28:37+00:00",
   "depends_on": [
     "AR-1388",
     "AR-1385",
@@ -18,15 +18,15 @@
   "observed_branch": "feature/ar-1393-local-provider-authority-provisioning",
   "observed_dirty": 0,
   "observed_head": "0a3817082d13f15187ea5efe4f5792664a50be99",
-  "owner": "",
+  "owner": "coordinator",
   "plan": "../plans/AR-1393-local-provider-authority-provisioning.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provision a runtime-owned loopback mock authority so development never requires external provider access.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Local provider authority provisioning",
-  "updated_at": "2026-09-24T08:04:42+00:00",
+  "updated_at": "2026-09-24T08:18:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1393-local-provider-authority-provisioning"
 }
 ---
@@ -111,3 +111,5 @@ or production egress gates.
 - 2026-09-24T08:04:42+00:00: Implementation PR #283 is published at exact signed+DCO head
   0a3817082d13f15187ea5efe4f5792664a50be99; release claim while exact-head CI and merge are
   monitored.
+
+- 2026-09-24T08:18:37+00:00: Claimed by coordinator.
