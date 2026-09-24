@@ -11,13 +11,13 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #119 | `feature/native-capacity-controller@4630f90af739` | `main` | CLEAN | COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(capacity): add bounded native lifecycle controller |
-| #310 | `docs/ar-1215-result-comparison@0e08fbee769c` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | docs(tutorials): add conservative result comparison guide |
+| #310 | `docs/ar-1215-result-comparison@0e08fbee769c` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | docs(tutorials): add conservative result comparison guide |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36058621491 | `0e08fbee769c` | pull_request | Fault assurance | in_progress:- |
+| 36058621491 | `0e08fbee769c` | pull_request | Fault assurance | completed:success |
 | 36058621465 | `0e08fbee769c` | pull_request | Formal assurance | in_progress:- |
 | 36058621455 | `0e08fbee769c` | pull_request | Hosted portability and native qualification | completed:success |
 | 36058621396 | `0e08fbee769c` | pull_request | Repository quality | in_progress:- |
