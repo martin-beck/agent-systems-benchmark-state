@@ -14,7 +14,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1377](../tasks/AR-1377-runtime-chain-store.md): Runtime-owned certificate-chain store | codex-asb-runtime-receipt-source-luna56 | Persist authenticated runtime certificate-chain material for live dispatch. | Independent review complete: opaque chain store has no secret/path/identity inputs, generation fencing and empty-store negatives pass. Full workspace check and contract consistency pass. Push exact head, publish PR, and monitor required CI. |
+| P0 | [AR-1377](../tasks/AR-1377-runtime-chain-store.md): Runtime-owned certificate-chain store | codex-asb-runtime-receipt-source-luna56 | Persist authenticated runtime certificate-chain material for live dispatch. | PR #274 is published at exact head 65d1ede. Monitor all 12 required checks; repair failures through handoffctl, merge only after independent review and green exact-head CI, then verify all seven post-merge workflows. |
 
 ### Open (4)
 
