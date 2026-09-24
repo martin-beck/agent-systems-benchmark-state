@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar-1413-long-horizon-performance",
   "checkpoint_commit": "e4d8e7a70b2cce6f740bb8ababd145295ecc2665",
-  "claim_expires": "2026-09-24T15:54:11+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1408",
     "AR-1401"
@@ -12,15 +12,15 @@
   "observed_branch": "codex/ar-1413-long-horizon-performance",
   "observed_dirty": 0,
   "observed_head": "f78fbabafb84949826d047d31b5e1770a98b8157",
-  "owner": "ar1413_long_horizon_performance_luna56",
+  "owner": "",
   "plan": "../plans/AR-1413-long-horizon-performance-adapters.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Seven post-merge runs: four terminal success; aarch64, repository quality, and Rust remain actively executing on GitHub-hosted runners.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Long-horizon and performance literature workload adapters",
-  "updated_at": "2026-09-24T15:24:11+00:00",
+  "updated_at": "2026-09-24T15:25:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1413"
 }
 ---
@@ -160,3 +160,12 @@ bounded local fixtures or LiteLLM-compatible mocks only.
 - 2026-09-24T15:23:08+00:00: Heartbeat by ar1413_long_horizon_performance_luna56.
 
 - 2026-09-24T15:24:11+00:00: Heartbeat by ar1413_long_horizon_performance_luna56.
+
+- 2026-09-24T15:25:15+00:00: AR-1413 complete: signed+DCO PR #299 rebased onto protected main
+  8c640e5994f84135826553ecd7ff73e512998ef5, exact-head f78fbabafb84949826d047d31b5e1770a98b8157, all
+  12 PR checks terminal success, and signed integration merge
+  e4d8e7a70b2cce6f740bb8ababd145295ecc2665. Seven post-merge workflows all terminal SUCCESS:
+  36018871328 emulated aarch64, 36018871323 repository quality, 36018871319 hosted portability,
+  36018871335 fault assurance, 36018871358 Rust verification, 36018871362 formal assurance,
+  36018871340 Huawei MIT headers. Earlier transient full cargo test exit 101 was rerun successfully
+  and retained as environmental evidence; no gate weakened.
