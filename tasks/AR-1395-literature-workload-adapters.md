@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Normalize approved literature tasks through bounded, non-vendored ASB workload adapters.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Literature workload adapter boundary",
-  "updated_at": "2026-09-24T08:47:03+00:00",
+  "updated_at": "2026-09-24T08:47:18+00:00",
   "worktree_key": ""
 }
 ---
@@ -42,3 +42,6 @@ into executable or qualified workloads.
 
 - 2026-09-24T08:47:03+00:00: Recorded command exit 0; command argv SHA-256
   e0d5947dfeba2ece518a54a1a81d72059b4bc054390bfe4f7568cd9e33728707.
+
+- 2026-09-24T08:47:18+00:00: Recorded command exit 1; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
