@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-24T13:27:16+00:00",
   "depends_on": [],
   "id": "AR-1405",
-  "next_action": "Promote and claim; rebase each applicable open dependency PR onto protected main, repair/test it, and close only superseded or incompatible candidates with evidence.",
+  "next_action": "Create one current-main replacement for safe dependency/action updates; independently assess sha2 separately; close stale PRs only after replacement evidence.",
   "observed_branch": "codex/ar-1405-dependency-reconcile",
   "observed_dirty": 0,
   "observed_head": "e41d4df86e57af5b58cc7500fcc44cec6ec2e445",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Rebase, repair, verify, and truthfully resolve stale open dependency PRs.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Open dependency PR reconciliation",
-  "updated_at": "2026-09-24T11:27:16+00:00",
+  "updated_at": "2026-09-24T11:27:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1405"
 }
 ---
@@ -35,3 +35,6 @@ all changes remain subject to current exact-head gates.
   ff6d1fa7a7185010f75fcfafe4bdc1bdd5b9804d8c2b3e7abdd8a1b96cd81c63.
 
 - 2026-09-24T11:27:16+00:00: Heartbeat by ar1405_dependency_pr_luna56b.
+
+- 2026-09-24T11:27:25+00:00: Claimed isolated worktree; current protected main is e41d4df. Auditing
+  PRs 237,236,235,234,150,149,148,147; no stale checks will be reused.
