@@ -8,7 +8,7 @@
     "AR-1408"
   ],
   "id": "AR-1417",
-  "next_action": "Promote after AR-1416 is released; audit AgentBench and other docs-listed stateful task sources, then implement the bounded local/mock adapter and catalog records.",
+  "next_action": "Keep open: protected-main Repository quality run 36048870322 failed because merge tree 5ddac12 differs from reviewed topic tree 666043f (base a2a6414 vs 0dcc717); await coordinator exact-main requalification or successor repair, never weaken gate.",
   "observed_branch": "codex/ar-1417-interactive-stateful-literature",
   "observed_dirty": 0,
   "observed_head": "666043f2c7d393c92d740cbc3e50490c2ef75926",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add selectable interactive and stateful literature workloads beside built-in software-engineering fixtures.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Interactive stateful literature workloads",
-  "updated_at": "2026-09-24T19:34:33+00:00",
+  "updated_at": "2026-09-24T19:34:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1417"
 }
 ---
@@ -89,3 +89,8 @@ identified.
 
 - 2026-09-24T19:34:33+00:00: Recorded command exit 0; command argv SHA-256
   31c8a2e83c453009e27df37e34529a4fcb1da7b8e41ea5ffb67df575b9b7edea.
+
+- 2026-09-24T19:34:50+00:00: Merged PR #307 at exact merge 5ddac12; six post-merge workflows
+  terminal/pending, but Repository quality run 36048870322 failed closed: protected-main merge tree
+  differs from reviewed topic tree (base a2a641417547937ee695f4f6cac53194ba47121e vs reviewed topic
+  base 0dcc71705eb610e4c3ab6a9f775a9d7b9b25218a). No gate was weakened; AR remains open.
