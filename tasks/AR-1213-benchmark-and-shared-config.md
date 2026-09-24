@@ -8,15 +8,18 @@
   ],
   "id": "AR-1213",
   "next_action": "Implement syntax-checked tutorials for one benchmark run and atomic shared configuration across selected agents.",
+  "observed_branch": "docs/ar-1213-benchmark-shared-config",
+  "observed_dirty": 0,
+  "observed_head": "bd7d10d4a760a84fa42de2b1fa9e97e8ea85ba09",
   "owner": "ar1213-cli-tutorial-luna56",
   "plan": "../plans/AR-1213.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach benchmark execution and extending agents with one shared configuration.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Benchmark run and shared-agent configuration tutorials",
-  "updated_at": "2026-09-24T20:04:08+00:00",
+  "updated_at": "2026-09-24T20:04:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1213"
 }
 ---
