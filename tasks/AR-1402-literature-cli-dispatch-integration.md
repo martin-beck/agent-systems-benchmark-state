@@ -7,7 +7,7 @@
     "AR-1401"
   ],
   "id": "AR-1402",
-  "next_action": "Declared isolated worktree agent-systems-benchmark-ar-1402 at protected main 0667f29. Audit CLI execution seams, implement catalog/adapter dispatch with offline local mocks, run focused/full gates, then signed PR and exact-head review.",
+  "next_action": "Focused CLI/workloads tests compile and 103 CLI unit tests pass; workflow_transcript fails only because changed CLI source requires synchronized provenance digest. Update provenance fixture, rerun focused and full tests, then continue methodology/dispatch coverage.",
   "observed_branch": "codex/ar-1402-literature-cli",
   "observed_dirty": 3,
   "observed_head": "0667f299ce04ed74c8f1fc2a349df3bcb57a4838",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate literature workload catalog and adapters through all ASB CLI execution and evidence paths.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Literature workload CLI dispatch integration",
-  "updated_at": "2026-09-24T12:48:55+00:00",
+  "updated_at": "2026-09-24T12:49:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1402"
 }
 ---
@@ -57,3 +57,8 @@ external benchmark datasets or providers.
 
 - 2026-09-24T12:48:55+00:00: Recorded command exit 101; command argv SHA-256
   a5d1253cc61fa4b49a388cf7b3ed45bf28152120a0b4941448e68a89e5c39b65.
+
+- 2026-09-24T12:49:40+00:00: Recorded exit 101: cargo test -p asb-workloads -p asb-cli failed at
+  workflow_transcript::provenance_binds_the_exact_cli_and_public_fixture_sources; actual mismatch
+  was cli_source_sha256 expected 03457fe but computed f214ae03 after dispatch changes. No product
+  gate was bypassed.
