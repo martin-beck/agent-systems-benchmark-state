@@ -20,7 +20,7 @@
   "task_revision": 10,
   "title": "Authenticated agent catalog producer",
   "updated_at": "2026-09-24T18:49:42+00:00",
-  "worktree_key": "agent-systems-benchmark-ar-1316-authenticated-agent-catalog-producer"
+  "worktree_key": "agent-systems-benchmark-ar-1316"
 }
 ---
 
