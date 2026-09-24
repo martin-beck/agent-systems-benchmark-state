@@ -90,12 +90,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1417](../tasks/AR-1417-interactive-stateful-literature-workloads.md): Interactive stateful literature workloads | ar1417-requal-luna56 | Add selectable interactive and stateful literature workloads beside built-in software-engineering fixtures. | Keep open: protected-main Repository quality run 36048870322 failed because merge tree 5ddac12 differs from reviewed topic tree 666043f (base a2a6414 vs 0dcc717); await coordinator exact-main requalification or successor repair, never weaken gate. |
-
 ### Blocked (65)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -246,7 +240,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (300)
+### Done (301)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -515,3 +509,5 @@
 | P1 | [AR-1351](../tasks/AR-1351-live-runtime-provisioning.md): Runtime-owned live provisioning | Unclaimed | Add the private host/runtime provisioning seam for live acquisition. | Release AR-1351 done with merge and post-merge evidence; advance dependent AR-1349 while preserving its fail-closed gates. |
 | P1 | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md): Runtime-owned live bootstrap | Unclaimed | Add the private runtime-owned bootstrap source for live acquisition. | Release AR-1352 done with merge and post-merge evidence; advance dependent AR-1349 while keeping AR-1329 fail-closed. |
 | P1 | [AR-1394](../tasks/AR-1394-literature-workload-registry.md): Literature workload registry expansion | Unclaimed | Catalog every documented literature benchmark with provenance and truthful qualification status. | Promote after the existing provenance ARs are verified, then add the strict literature workload inventory schema, entries, and generated docs. |
+| P1 | [AR-1395](../tasks/AR-1395-literature-workload-adapters.md): Literature workload adapter boundary | Unclaimed | Normalize approved literature tasks through bounded, non-vendored ASB workload adapters. | Exact merge post-merge Repository quality and Rust runs were cancelled by later main push c58b0b0a; after that main queue terminates, rerun both exact merge workflows and require success before release. |
+| P1 | [AR-1396](../tasks/AR-1396-literature-workload-selection.md): Literature workload selection | Unclaimed | Make qualified literature workload families selectable beside built-in ASB software-engineering fixtures. | PR #288 exact head 58bc56f0b793c4f42e83cbe27515d63d22cfda51; fresh checks pending after CLI fail-closed validation repair. Review remaining OriginalWorkloads seams before merge. |

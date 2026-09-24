@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar-1417-interactive-stateful-literature",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-25T00:51:15+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1416",
     "AR-1408"
@@ -12,15 +12,15 @@
   "observed_branch": "codex/ar-1417-interactive-stateful-literature",
   "observed_dirty": 0,
   "observed_head": "666043f2c7d393c92d740cbc3e50490c2ef75926",
-  "owner": "ar1417-requal-luna56",
+  "owner": "",
   "plan": "../plans/AR-1417.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Add selectable interactive and stateful literature workloads beside built-in software-engineering fixtures.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Interactive stateful literature workloads",
-  "updated_at": "2026-09-24T22:55:21+00:00",
+  "updated_at": "2026-09-24T22:56:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1417"
 }
 ---
@@ -150,3 +150,15 @@ identified.
 
 - 2026-09-24T22:55:21+00:00: Recorded command exit 0; command argv SHA-256
   2e7cfb00cc40a59d6cd8b0853f07303e72172c7364a1a8733809f90cf8649dfc.
+
+- 2026-09-24T22:56:02+00:00: Requalified after protected-main policy repair. Immutable historical
+  Repository quality failure 36048870322 remains preserved: merge 5ddac12 tree differed from
+  reviewed topic 666043f (base a2a6414 vs 0dcc717), no waiver. Current origin/main ed9076031
+  includes AR-1417 and AR-1431; git diff origin/main...666043f is empty, so no source successor
+  required. Focused exact-main public_api cargo test passed 4/4; full cargo test --locked
+  --workspace passed from declared isolated AR-1417 worktree; cargo fmt --all -- --check, cargo
+  clippy --locked --workspace --all-targets -D warnings, and protected-main repository_policy
+  passed. All seven exact-main workflows at ed9076031 succeeded: Repository quality 36068309595,
+  Rust verification 36068309609, Emulated aarch64 portability 36068309536, Hosted portability/native
+  qualification 36068309638, Formal assurance 36068309654, Fault assurance 36068309725, Huawei MIT
+  source headers 36068309570. No live providers; deterministic tests only.

@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1417](tasks/AR-1417-interactive-stateful-literature-workloads.md): Interactive stateful literature workloads | Add selectable interactive and stateful literature workloads beside built-in software-engineering fixtures. | Keep open: protected-main Repository quality run 36048870322 failed because merge tree 5ddac12 differs from reviewed topic tree 666043f (base a2a6414 vs 0dcc717); await coordinator exact-main requalification or successor repair, never weaken gate. | ar1417-requal-luna56 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -443,6 +437,7 @@ Never edit this file directly.
 | P1 | [AR-1413](tasks/AR-1413-long-horizon-performance-adapters.md): Long-horizon and performance literature workload adapters | Seven post-merge runs: four terminal success; aarch64, repository quality, and Rust remain actively executing on GitHub-hosted runners. | Continue monitoring post-merge IDs 36018871328/36018871323/36018871358; runner/job APIs show active in-progress steps, so do not rerun. Release only after all seven terminal success. | - |
 | P1 | [AR-1415](tasks/AR-1415-literature-selector-total-coverage.md): Total literature workload selector coverage | Make the complete literature workload inventory selectable beside built-in software-engineering fixtures with truthful evidence gates. | Rerun exact failed post-merge workflow 36038241138 after three green isolated Goose reproductions; wait all seven terminal SUCCESS, verify main, then release. | - |
 | P1 | [AR-1416](tasks/AR-1416-literature-mock-cross-product.md): Literature workload local-mock cross-product | Prove end-to-end selectable literature workloads with deterministic local or LiteLLM-compatible mocks and no live provider dependency. | Monitor seven post-merge workflows for merge 0dcc717; release AR-1416 only after all seven terminal SUCCESS and exact-main verification. | - |
+| P1 | [AR-1417](tasks/AR-1417-interactive-stateful-literature-workloads.md): Interactive stateful literature workloads | Add selectable interactive and stateful literature workloads beside built-in software-engineering fixtures. | Keep open: protected-main Repository quality run 36048870322 failed because merge tree 5ddac12 differs from reviewed topic tree 666043f (base a2a6414 vs 0dcc717); await coordinator exact-main requalification or successor repair, never weaken gate. | - |
 | P1 | [AR-1418](tasks/AR-1418-tool-use-reliability-safety-workloads.md): Tool-use reliability and safety workloads | Add selectable tool-use reliability and safety workloads from the literature with separate metrics. | Release: implementation is already merged in PR #300 at c2fe732b from 6f93076; focused interactive tests, all asb-workloads targets, and clippy -D warnings pass on exact current main 0dcc717. Preserve historical exact-head CI evidence and release without duplicate PR. | - |
 | P1 | [AR-1422](tasks/AR-1422-stale-agent-catalog-pr-cleanup.md): Stale agent-catalog PR cleanup | Close stale conflicting agent-catalog PR #306 through durable coordinator evidence. | Closure evidence complete. Re-run doctor --live after concurrent state-worker AR-1421 changes settle; then release AR-1422 done. Do not modify AR-1421 files. | - |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Run final exact-main and local post-merge verification using required native x86_64 kernel evidence and applicable pinned QEMU AArch64 portability checks; record native ARM64 PMU/eBPF as optional future evidence, then release. | - |
