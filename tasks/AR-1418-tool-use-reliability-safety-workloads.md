@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T21:12:58+00:00",
   "depends_on": [
     "AR-1416",
     "AR-1408"
@@ -12,15 +12,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "",
+  "owner": "ar1418-tool-use-reliability-safety-luna56",
   "plan": "../plans/AR-1418.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Add selectable tool-use reliability and safety workloads from the literature with separate metrics.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Tool-use reliability and safety workloads",
-  "updated_at": "2026-09-24T19:12:21+00:00",
+  "updated_at": "2026-09-24T19:12:58+00:00",
   "worktree_key": ""
 }
 ---
@@ -34,3 +34,5 @@ dimensions; no aggregate score may hide unsafe or failed tool calls.
 
 - 2026-09-24T19:12:21+00:00: Dependencies AR-1416 and AR-1408 verified done; open tool-use
   reliability and safety workload implementation.
+
+- 2026-09-24T19:12:58+00:00: Claimed by ar1418-tool-use-reliability-safety-luna56.

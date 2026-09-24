@@ -78,18 +78,18 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1212](../tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | open-pr-triage-luna56 | Teach users to test configured-agent benchmark eligibility without running an agent. | PR #305 force-with-lease updated to exact signed/DCO head 3fda4b4. Await fresh exact-head CI and independent review; do not merge until all required checks and review are green. Prior gitleaks failure 36045051042 was repaired by branch rewrite and exact-base gitleaks now passes. |
+| P1 | [AR-1418](../tasks/AR-1418-tool-use-reliability-safety-workloads.md): Tool-use reliability and safety workloads | ar1418-tool-use-reliability-safety-luna56 | Add selectable tool-use reliability and safety workloads from the literature with separate metrics. | Promote after AR-1416 is released; audit tau-bench and AgentDojo literature records, then implement separate reliability and safety workload selectors with deterministic mocks. |
 
-### Open (2)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1417](../tasks/AR-1417-interactive-stateful-literature-workloads.md): Interactive stateful literature workloads | Unclaimed | Add selectable interactive and stateful literature workloads beside built-in software-engineering fixtures. | Promote after AR-1416 is released; audit AgentBench and other docs-listed stateful task sources, then implement the bounded local/mock adapter and catalog records. |
-| P1 | [AR-1418](../tasks/AR-1418-tool-use-reliability-safety-workloads.md): Tool-use reliability and safety workloads | Unclaimed | Add selectable tool-use reliability and safety workloads from the literature with separate metrics. | Promote after AR-1416 is released; audit tau-bench and AgentDojo literature records, then implement separate reliability and safety workload selectors with deterministic mocks. |
 
 ### Blocked (66)
 
