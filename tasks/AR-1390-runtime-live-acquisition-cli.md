@@ -1,7 +1,7 @@
 ---
 {
-  "branch": "",
-  "checkpoint_commit": "",
+  "branch": "feature/ar-1390-runtime-live-acquisition-cli",
+  "checkpoint_commit": "10bffbf015bd7ca78d8c0d18f04cf0190195e933",
   "claim_expires": "",
   "depends_on": [
     "AR-1388",
@@ -14,10 +14,10 @@
     "AR-1340"
   ],
   "id": "AR-1390",
-  "next_action": "Promote after all runtime authority dependencies are verified, then bind an isolated worktree and implement the runtime-owned live acquisition and normal CLI run/sweep bridge.",
-  "observed_branch": "",
+  "next_action": "Claim the pre-bound isolated worktree, implement the runtime-owned live acquisition and normal CLI run/sweep bridge, and publish a signed PR.",
+  "observed_branch": "feature/ar-1390-runtime-live-acquisition-cli",
   "observed_dirty": 0,
-  "observed_head": "0000000000000000000000000000000000000000",
+  "observed_head": "10bffbf015bd7ca78d8c0d18f04cf0190195e933",
   "owner": "",
   "plan": "../plans/AR-1390-runtime-live-acquisition-cli.md",
   "priority": "P0",
@@ -27,7 +27,7 @@
   "task_revision": 2,
   "title": "Runtime live acquisition and CLI bridge",
   "updated_at": "2026-09-24T07:36:40+00:00",
-  "worktree_key": ""
+  "worktree_key": "agent-systems-benchmark-ar-1390-runtime-live-acquisition-cli"
 }
 ---
 
