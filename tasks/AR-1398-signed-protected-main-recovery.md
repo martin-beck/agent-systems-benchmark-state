@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1398-signed-protected-main-recovery",
   "checkpoint_commit": "b63394b167d453738364f4eca73af76838ef1937",
-  "claim_expires": "2026-09-24T12:28:46+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1337"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "ar1398_signed_recovery_luna56",
+  "owner": "",
   "plan": "../plans/AR-1398-signed-protected-main-recovery.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Restore signed+DCO protected-main evidence after an unsigned GitHub-generated repair merge.",
-  "task_revision": 75,
+  "task_revision": 76,
   "title": "Signed protected-main recovery",
-  "updated_at": "2026-09-24T10:28:49+00:00",
+  "updated_at": "2026-09-24T10:29:31+00:00",
   "worktree_key": ""
 }
 ---
@@ -249,3 +249,13 @@ providers are never required for development evidence.
 
 - 2026-09-24T10:28:49+00:00: Recorded command exit 0; command argv SHA-256
   fbaf903bb42afac5a76db563ff8f8547411b2a4e9fe37d94e7c7eceaa6286098.
+
+- 2026-09-24T10:29:31+00:00: Completed recovery: signed merge
+  b63394b167d453738364f4eca73af76838ef1937 published by local merge_pr.py with parents
+  123ba915d2732ee8a6c99fae301bfd64cf0aac4f and f5680de433bb15879b1ef42427d1e7843e0bff36, tree
+  5e10b6a1b33f1d67a9b51b8ebb35bce5712598ca. Merge is Good SSH ED25519 and matching DCO; historical
+  unsigned 123ba915 preserved. All seven exact-main workflows succeeded: Huawei headers 35986670232;
+  emulated aarch64 35986670215; fault assurance 35986670237; repository quality 35986670309; hosted
+  portability 35986670359; Rust verification 35986670370; formal assurance 35986670435. PR #287
+  exact-head checks all terminal success, including quality rerun attempt 2; initial quality failure
+  was transient ToolMismatch fixture race. Recovery worktree clean.
