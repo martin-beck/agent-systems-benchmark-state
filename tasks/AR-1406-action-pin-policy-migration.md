@@ -1,13 +1,13 @@
 ---
 {
   "branch": "codex/ar-1406-action-pin-policy",
-  "checkpoint_commit": "0000000000000000000000000000000000000000",
+  "checkpoint_commit": "8da098770e4a78e94f67cf7b13dbebbcd1c5bbac",
   "claim_expires": "2026-09-24T17:49:53+00:00",
   "depends_on": [
     "AR-1405"
   ],
   "id": "AR-1406",
-  "next_action": "Monitor PR #301 exact head feca69d22f3a73c643ff2150ae95d189acdb4791 against protected base c2fe732b3b50ef38893c2e3513770939de04637f; obtain independent review and all required checks before any merge, then verify post-merge seven-workflow evidence.",
+  "next_action": "Monitor seven post-merge workflows for merge 8da098770e4a78e94f67cf7b13dbebbcd1c5bbac: 36023860491,36023860601,36023860551,36023860504,36023860525,36023860530,36023860510; release only after all terminal success, then close superseded PRs #235/#234/#148 with evidence.",
   "observed_branch": "codex/ar-1406-action-pin-policy",
   "observed_dirty": 0,
   "observed_head": "feca69d22f3a73c643ff2150ae95d189acdb4791",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify and merge remaining immutable GitHub action pin updates without weakening policy.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Action pin policy migration",
-  "updated_at": "2026-09-24T15:56:44+00:00",
+  "updated_at": "2026-09-24T15:57:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1406"
 }
 ---
@@ -135,3 +135,6 @@ No floating action reference or unverifiable release identity is acceptable.
 
 - 2026-09-24T15:56:44+00:00: Recorded command exit 0; command argv SHA-256
   841ffd4db557d4d67eb4cdb50ad7f66195f48c628c38e333e1d4932162add07d.
+
+- 2026-09-24T15:57:18+00:00: PR #301 merged via handoffctl after exact-head independent review and
+  all required checks passed.
