@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1381-live-cli-scheduler-wiring",
   "checkpoint_commit": "4ba3085e95444fba069b129e33020f19cc7ea830",
-  "claim_expires": "2026-09-24T06:12:03+00:00",
+  "claim_expires": "2026-09-24T06:18:54+00:00",
   "depends_on": [
     "AR-1380",
     "AR-1378",
@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire runtime-owned live scheduler authority into production asb run and sweep.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Runtime-owned live CLI scheduler wiring",
-  "updated_at": "2026-09-24T04:18:47+00:00",
+  "updated_at": "2026-09-24T04:18:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1381-live-cli-scheduler-wiring"
 }
 ---
@@ -147,3 +147,5 @@ all fail-closed authority and privacy contracts.
   digest. Focused workflow_transcript: 3/3 passed. Full cargo test --workspace --locked completed
   successfully (capability-gated ignores only). Signed+DCO repair commit
   4ba3085e95444fba069b129e33020f19cc7ea830 force-pushed with lease.
+
+- 2026-09-24T04:18:54+00:00: Heartbeat by codex-asb-runtime-receipt-source-luna56.
