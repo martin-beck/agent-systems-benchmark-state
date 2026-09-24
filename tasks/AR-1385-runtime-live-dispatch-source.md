@@ -19,11 +19,11 @@
   "plan": "../plans/AR-1385-runtime-live-dispatch-source.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Materialize the authenticated runtime-owned live dispatch source for production asb run and sweep.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Authenticated runtime live dispatch source",
-  "updated_at": "2026-09-24T05:42:00+00:00",
+  "updated_at": "2026-09-24T05:45:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1385-runtime-live-dispatch-source"
 }
 ---
@@ -34,3 +34,6 @@ control state, then provide the existing scheduler/CLI dispatch seam without
 accepting caller-supplied endpoints, credentials, policy, roots, tools,
 namespace identity, or launch authority.
 
+
+- 2026-09-24T05:45:34+00:00: AR-1384 done and audited; coordinator repair successor for
+  authenticated runtime-owned live dispatch source; dependencies verified
