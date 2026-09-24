@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1389-formal-fixture-exec-race.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Repair the formal online-build fixture race that caused ETXTBSY after AR-1388 merge.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Formal fixture executable race repair",
-  "updated_at": "2026-09-24T07:06:00+00:00",
+  "updated_at": "2026-09-24T07:07:39+00:00",
   "worktree_key": ""
 }
 ---
@@ -27,3 +27,6 @@
 This successor owns only the post-merge formal assurance failure recorded by
 AR-1388. It must use a fresh isolated worktree and preserve all authority,
 privacy, offline, boundedness, and local-mock boundaries.
+
+- 2026-09-24T07:07:39+00:00: AR-1384 baseline verified; AR-1388 merge formal failure evidence
+  reviewed; successor repair may proceed before release
