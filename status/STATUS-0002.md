@@ -32,7 +32,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1388](../tasks/AR-1388-runtime-authority-materializer.md): Runtime authority receipt materializer | codex-asb-ar1329-repair-luna56 | Materialize runtime-owned provider authority from authenticated receipt and chain state. | Wait for aarch64 materialization and repository-quality defect-gate jobs to reach terminal green; inspect any failure logs before repair or merge. |
+| P0 | [AR-1388](../tasks/AR-1388-runtime-authority-materializer.md): Runtime authority receipt materializer | codex-asb-ar1329-repair-luna56 | Materialize runtime-owned provider authority from authenticated receipt and chain state. | Merge PR #281 through handoffctl, then verify all seven post-merge workflows at exact merge commit before release. |
 
 ### Open (3)
 
