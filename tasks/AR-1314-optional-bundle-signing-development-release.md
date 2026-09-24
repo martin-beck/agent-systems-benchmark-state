@@ -1,11 +1,11 @@
 ---
 {
   "branch": "feature/ar-1314-optional-bundle-signing",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "c58b0b0a4d9023e3831f9c750edbb9b30ab4bad4",
   "claim_expires": "2026-09-24T11:13:12+00:00",
   "depends_on": [],
   "id": "AR-1314",
-  "next_action": "Wait for PR #232 exact-head CI after schema-v3 repair; if all required checks pass, independently review and merge through the established workflow, then reconcile AR-1314. Preserve signature-required defaults.",
+  "next_action": "Do not close yet: post-merge Repository quality run 35979775718 attempt 3 must be terminal-success, but it deterministically rejects merge c58b0b0a4d9023e3831f9c750edbb9b30ab4bad4 because its protected-main tree differs from reviewed topic 83b171ca8cad35bce902a38ff3979029fa9b78d8 after AR-1395 advanced main. Create/use a narrowly scoped signed integration repair AR, then rerun all seven exact-main workflows. Follow-up docs correction 84416b52ca2f1552c251ed612c55870842b3e630 remains outside merged PR.",
   "observed_branch": "feature/ar-1314-optional-bundle-signing",
   "observed_dirty": 0,
   "observed_head": "84416b52ca2f1552c251ed612c55870842b3e630",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile.",
-  "task_revision": 132,
+  "task_revision": 133,
   "title": "Optional runtime-bundle signing for development and tagged releases",
-  "updated_at": "2026-09-24T09:16:43+00:00",
+  "updated_at": "2026-09-24T09:17:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1314-optional-bundle-signing"
 }
 ---
@@ -337,3 +337,10 @@ reviewed signed input bundle and terminal attestation.
 
 - 2026-09-24T09:16:43+00:00: Recorded command exit 0; command argv SHA-256
   f3f3dc5e12f98f4c59cd0ae3de37eccf99107aadd124c9c0ad1b04359ae8d3b0.
+
+- 2026-09-24T09:17:48+00:00: PR #232 merged at c58b0b0a4d9023e3831f9c750edbb9b30ab4bad4 from exact
+  signed+DCO head 83b171ca8cad35bce902a38ff3979029fa9b78d8; all 12 PR checks passed. Post-merge:
+  formal, hosted portability, fault assurance and headers succeeded; Rust was cancelled and rerun
+  attempt 3 is active; emulated AArch64 remains active; Repository quality attempt 3 is being
+  confirmed after failure attempt 2 with protected-main merge-tree mismatch. No release/close until
+  terminal-success evidence.
