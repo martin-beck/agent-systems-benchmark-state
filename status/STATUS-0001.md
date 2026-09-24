@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**445 ARs tracked** across 6 active status categories.
+**446 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 66 |
-| **Planned** | Defined work awaiting promotion or dependencies | 69 |
+| **Planned** | Defined work awaiting promotion or dependencies | 70 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 290 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -517,6 +517,7 @@ flowchart LR
         AR_1419["AR-1419 - Planned"]:::status_planned
         AR_1420["AR-1420 - Planned"]:::status_planned
         AR_1421["AR-1421 - In progress"]:::status_in_progress
+        AR_1422["AR-1422 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1439,6 +1440,7 @@ flowchart LR
     AR_1310 --> AR_1319
     AR_1314 --> AR_1315
     AR_1316 --> AR_1320
+    AR_1316 --> AR_1422
     AR_1319 --> AR_1316
     AR_1325 --> AR_1326
     AR_1325 --> AR_1327
@@ -2046,7 +2048,7 @@ flowchart LR
 | [AR-1313](../tasks/AR-1313-historical-dco-909078c-repair.md) | None | None |
 | [AR-1314](../tasks/AR-1314-optional-bundle-signing-development-release.md) | None | [AR-1315](../tasks/AR-1315-1307-1308-development-profile-metadata.md) |
 | [AR-1315](../tasks/AR-1315-1307-1308-development-profile-metadata.md) | [AR-1314](../tasks/AR-1314-optional-bundle-signing-development-release.md) | None |
-| [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md) | [AR-1190](../tasks/AR-1190.md), [AR-1191](../tasks/AR-1191.md), [AR-1310](../tasks/AR-1310-provider-capture-campaign.md), [AR-1319](../tasks/AR-1319-authenticated-agent-catalog-entry-contract.md) | [AR-1320](../tasks/AR-1320-persisted-agent-release-index.md) |
+| [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md) | [AR-1190](../tasks/AR-1190.md), [AR-1191](../tasks/AR-1191.md), [AR-1310](../tasks/AR-1310-provider-capture-campaign.md), [AR-1319](../tasks/AR-1319-authenticated-agent-catalog-entry-contract.md) | [AR-1320](../tasks/AR-1320-persisted-agent-release-index.md), [AR-1422](../tasks/AR-1422-stale-agent-catalog-pr-cleanup.md) |
 | [AR-1319](../tasks/AR-1319-authenticated-agent-catalog-entry-contract.md) | [AR-1310](../tasks/AR-1310-provider-capture-campaign.md) | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md) |
 | [AR-1320](../tasks/AR-1320-persisted-agent-release-index.md) | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md) | None |
 | [AR-1322](../tasks/AR-1322-authenticated-release-index-source.md) | None | None |
