@@ -9,7 +9,7 @@
     "AR-1402"
   ],
   "id": "AR-1416",
-  "next_action": "Monitor PR #304 required checks at exact base c533734a and head cb33964b; independently review then merge only when all terminal SUCCESS.",
+  "next_action": "Wait for all PR #304 checks at exact base c533734a/head cb33964b to terminal SUCCESS; then merge through handoffctl.",
   "observed_branch": "codex/ar-1416-literature-mock-cross-product",
   "observed_dirty": 0,
   "observed_head": "cb33964b53ae73afac0ff4dce464a0e314c9fedc",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prove end-to-end selectable literature workloads with deterministic local or LiteLLM-compatible mocks and no live provider dependency.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Literature workload local-mock cross-product",
-  "updated_at": "2026-09-24T18:30:06+00:00",
+  "updated_at": "2026-09-24T18:30:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1416"
 }
 ---
@@ -117,3 +117,8 @@ exact-head CI, independent review, and all required post-merge workflows.
 
 - 2026-09-24T18:30:06+00:00: Recorded command exit 8; command argv SHA-256
   5cac625f880c046762b4c0a941757f6e5188dbd0d4c635fd0a7709526204acfb.
+
+- 2026-09-24T18:30:21+00:00: PR #304 check snapshot: pending Emulated aarch64 36041523816, fault
+  assurance 36041523682 (retained faults passed; fuzz/mutation pending), formal 36041523777 (Loom
+  passed; Kani pending), platform 36041523961 pending, policy 36041523708 pending, Rust 36041524141
+  pending. AWQ shadow and Huawei/SPDX header checks passed. No merge while pending.
