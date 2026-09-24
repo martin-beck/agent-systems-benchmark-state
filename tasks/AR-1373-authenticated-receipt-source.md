@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1373-authenticated-receipt-source",
   "checkpoint_commit": "c623a006d3abb5cbdf3bb2c5dafff41b1f20833b",
-  "claim_expires": "2026-09-24T04:01:56+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1365",
     "AR-1366",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1373-authenticated-receipt-source",
   "observed_dirty": 0,
   "observed_head": "c623a006d3abb5cbdf3bb2c5dafff41b1f20833b",
-  "owner": "codex-asb-runtime-receipt-source-luna56",
+  "owner": "",
   "plan": "../plans/AR-1373-authenticated-receipt-source.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Provide the authenticated ControlBackend runtime receipt source for AR-1329 production dispatch.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Authenticated runtime receipt source",
-  "updated_at": "2026-09-24T02:22:02+00:00",
+  "updated_at": "2026-09-24T02:31:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1373-authenticated-receipt-source"
 }
 ---
@@ -162,3 +162,7 @@ provider support from setup metadata alone.
 
 - 2026-09-24T02:22:02+00:00: Recorded command exit 0; command argv SHA-256
   35f7c5139a7c3b257d16740f0ad7724318c64fe8c1c329204fbc717ef145a8be.
+
+- 2026-09-24T02:31:30+00:00: PR #273 merged as 50acdcabace21ad1de31c41b2f81410cf547632c after
+  schema-policy repair; all 12 exact-head checks and all seven post-merge workflows are green.
+  Authenticated ControlBackend RuntimeReceipt operation is now merged.
