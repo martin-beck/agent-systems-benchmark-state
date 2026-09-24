@@ -1,6 +1,6 @@
 ---
 {
-  "branch": "",
+  "branch": "codex/ar-1416-literature-mock-cross-product",
   "checkpoint_commit": "",
   "claim_expires": "",
   "depends_on": [
@@ -19,7 +19,7 @@
   "task_revision": 2,
   "title": "Literature workload local-mock cross-product",
   "updated_at": "2026-09-24T18:20:25+00:00",
-  "worktree_key": ""
+  "worktree_key": "agent-systems-benchmark-ar-1416"
 }
 ---
 
