@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add an approved runtime mock-attempt adapter for deterministic local run and sweep qualification.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Runtime local mock-attempt adapter",
-  "updated_at": "2026-09-24T23:28:47+00:00",
+  "updated_at": "2026-09-24T23:29:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1434-runtime-local-mock-attempt-adapter"
 }
 ---
@@ -121,3 +121,6 @@ external provider.
 - 2026-09-24T23:28:47+00:00: Recorded command timeout; classification=SUBPROCESS_TIMEOUT;
   deadline=300.0s; command argv SHA-256
   5f73294e7d35284262801575614da082a5ba2e53da0d2a14f6be55622ca205e7.
+
+- 2026-09-24T23:29:49+00:00: Recorded command exit 8; command argv SHA-256
+  c7fd1fd0da3dc114324f45145478485a3665eed274b3e0fa7bc8a039f53c95bf.
