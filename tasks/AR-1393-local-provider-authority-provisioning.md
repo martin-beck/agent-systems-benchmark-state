@@ -16,7 +16,7 @@
   "id": "AR-1393",
   "next_action": "Claim the pre-bound isolated worktree, implement runtime-owned local-provider authority provisioning with offline mock tests, and publish a signed PR.",
   "observed_branch": "feature/ar-1393-local-provider-authority-provisioning",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "10bffbf015bd7ca78d8c0d18f04cf0190195e933",
   "owner": "codex-asb-ar1329-repair-luna56",
   "plan": "../plans/AR-1393-local-provider-authority-provisioning.md",
@@ -24,9 +24,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a runtime-owned loopback mock authority so development never requires external provider access.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Local provider authority provisioning",
-  "updated_at": "2026-09-24T07:50:46+00:00",
+  "updated_at": "2026-09-24T07:50:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1393-local-provider-authority-provisioning"
 }
 ---
