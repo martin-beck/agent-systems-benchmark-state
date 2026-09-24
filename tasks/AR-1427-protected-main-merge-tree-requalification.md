@@ -9,17 +9,17 @@
   "id": "AR-1427",
   "next_action": "Promote and reproduce PR #310 merge f511645 versus reviewed topic 9d97e168; repair exact protected-main merge-tree requalification, then rerun AR-1215 post-merge evidence.",
   "observed_branch": "codex/ar-1427-merge-requal",
-  "observed_dirty": 3,
-  "observed_head": "f51164569bf4da67a0759328b4be280385abe9a4",
+  "observed_dirty": 0,
+  "observed_head": "81f02d294dc51894a35c6b5273cacde2bb392ef3",
   "owner": "ar1427-merge-requal-luna56",
   "plan": "../plans/AR-1427-protected-main-merge-tree-requalification.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair exact protected-main merge-tree requalification after sequential tutorial merges.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Protected-main merge-tree requalification repair",
-  "updated_at": "2026-09-24T21:30:11+00:00",
+  "updated_at": "2026-09-24T21:30:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1427-merge-requal"
 }
 ---
