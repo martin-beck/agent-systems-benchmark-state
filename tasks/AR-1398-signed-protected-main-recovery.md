@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1398-signed-protected-main-recovery",
   "checkpoint_commit": "f5680de433bb15879b1ef42427d1e7843e0bff36",
-  "claim_expires": "2026-09-24T12:06:20+00:00",
+  "claim_expires": "2026-09-24T12:07:42+00:00",
   "depends_on": [
     "AR-1337"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Restore signed+DCO protected-main evidence after an unsigned GitHub-generated repair merge.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Signed protected-main recovery",
-  "updated_at": "2026-09-24T10:07:27+00:00",
+  "updated_at": "2026-09-24T10:07:42+00:00",
   "worktree_key": ""
 }
 ---
@@ -97,3 +97,5 @@ providers are never required for development evidence.
 - 2026-09-24T10:07:27+00:00: Formal assurance run 35984949065 is now fully green: TLC/Alloy and
   Loom/state models passed. Remaining exact-head groups are emulated aarch64 35984949129, repository
   quality 35984949118, and Rust verification 35984949114; all other checks green.
+
+- 2026-09-24T10:07:42+00:00: Heartbeat by ar1398_signed_recovery_luna56.
