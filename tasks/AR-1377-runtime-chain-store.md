@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1377-runtime-chain-store",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "65d1ede0baed4837dd4bdca7a5d46ada946c62c6",
   "claim_expires": "2026-09-24T04:41:46+00:00",
   "depends_on": [
     "AR-1288",
@@ -9,7 +9,7 @@
     "AR-1373"
   ],
   "id": "AR-1377",
-  "next_action": "Promote and claim this dependency-valid chain-store successor, refresh an isolated worktree, and implement runtime-owned authenticated chain materialization.",
+  "next_action": "Implementation commit 65d1ede is signed+DCO and clean. Focused live_service tests (20), full asb-runtime tests (111 passed, 1 delegated ignored), and runtime clippy -D warnings pass. Independently review opaque generation-fenced store, then publish exact-head PR and monitor CI.",
   "observed_branch": "feature/ar-1377-runtime-chain-store",
   "observed_dirty": 0,
   "observed_head": "65d1ede0baed4837dd4bdca7a5d46ada946c62c6",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist authenticated runtime certificate-chain material for live dispatch.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Runtime-owned certificate-chain store",
-  "updated_at": "2026-09-24T02:43:48+00:00",
+  "updated_at": "2026-09-24T02:44:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1377-runtime-chain-store"
 }
 ---
@@ -64,3 +64,9 @@ authority boundary and must not accept caller-built chains or synthesize trust.
 
 - 2026-09-24T02:43:48+00:00: Recorded command exit 0; command argv SHA-256
   78fbb16b3cc348d668a897b869341aa0d0b57e48b7f483f5a8dc66393f21b8f9.
+
+- 2026-09-24T02:44:06+00:00: Added RuntimeCertificateChainStore with opaque IssuedCertificateChainV1
+  storage, generation-fenced replacement, unavailable/state-failure errors, and positive/negative
+  tests. The store accepts only the validated opaque chain type; no certificate bytes, trust
+  anchors, paths, credentials, or caller-built identity enter the API. This is the smallest safe
+  source primitive pending adapter wiring.
