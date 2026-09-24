@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Generate and verify the literature workload documentation and evidence-state matrix.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Literature workload documentation and matrix contract",
-  "updated_at": "2026-09-24T13:38:53+00:00",
+  "updated_at": "2026-09-24T13:39:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1404"
 }
 ---
@@ -44,3 +44,6 @@ state that diverges from the versioned catalog.
 
 - 2026-09-24T13:38:53+00:00: Recorded command exit 0; command argv SHA-256
   e8b548866db52f532d1808a23f77df0437b9bde96140d7f2404bc134d2925072.
+
+- 2026-09-24T13:39:10+00:00: Recorded command exit 0; command argv SHA-256
+  58937d420c6e0c5fb7cf7d60b98569f20f56e2fba7442b27292e98831ecd5f9a.
