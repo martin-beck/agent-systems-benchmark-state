@@ -24,9 +24,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a runtime-owned loopback mock authority so development never requires external provider access.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Local provider authority provisioning",
-  "updated_at": "2026-09-24T07:58:12+00:00",
+  "updated_at": "2026-09-24T07:58:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1393-local-provider-authority-provisioning"
 }
 ---
@@ -78,3 +78,6 @@ or production egress gates.
 
 - 2026-09-24T07:58:12+00:00: Recorded command exit 0; command argv SHA-256
   67739c573b579619ef3e71fb893a396c166af5a2a061ba9f37d5e424ed8b55d4.
+
+- 2026-09-24T07:58:26+00:00: Recorded command exit 0; command argv SHA-256
+  e5b4ec4680507112dd8fa65b5bfadd0bf689e1b30ad1aaa469c93512c75c5886.
