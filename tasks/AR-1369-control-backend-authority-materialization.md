@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1369-control-backend-authority-materialization",
   "checkpoint_commit": "0c6dc52e1f4aa5854f73081711dbd9a5bc1a5d7c",
-  "claim_expires": "2026-09-24T02:48:28+00:00",
+  "claim_expires": "2026-09-24T02:48:42+00:00",
   "depends_on": [
     "AR-1362",
     "AR-1364",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize authenticated live-provider authority in ControlBackend for runtime receipt issuance.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "ControlBackend authority materialization",
-  "updated_at": "2026-09-24T00:48:28+00:00",
+  "updated_at": "2026-09-24T00:48:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1369-control-backend-authority-materialization"
 }
 ---
@@ -33,3 +33,5 @@ touch asb-tui or synthesize authority from CLI/config input.
   after AR-1368 source audit.
 
 - 2026-09-24T00:48:28+00:00: Claimed by codex-asb-runtime-attested-enrollment-luna56.
+
+- 2026-09-24T00:48:42+00:00: Heartbeat by codex-asb-runtime-attested-enrollment-luna56.
