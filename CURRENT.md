@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1380](tasks/AR-1380-runtime-scheduler-composition.md): Runtime scheduler composition for live dispatch | Compose runtime-owned live attempts for production run and sweep scheduling. | PR #276 force-updated to exact head ab4e60c on protected main 16bca1f9 after policy/platform stale-base failure. Monitor fresh exact-head checks; repair any new failures, merge only green, then verify seven post-merge workflows. | codex-asb-runtime-receipt-source-luna56 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -282,6 +276,7 @@ Never edit this file directly.
 | P0 | [AR-1373](tasks/AR-1373-authenticated-receipt-source.md): Authenticated runtime receipt source | Provide the authenticated ControlBackend runtime receipt source for AR-1329 production dispatch. | PR #273 force-updated to exact head c623a006 after preserving historical v1 through v1.7 schemas. Monitor all required checks from the new head; repair any failure through handoffctl, merge only after independent review and all checks green, then verify seven post-merge workflows. | - |
 | P0 | [AR-1377](tasks/AR-1377-runtime-chain-store.md): Runtime-owned certificate-chain store | Persist authenticated runtime certificate-chain material for live dispatch. | PR #274 force-updated to exact head 4163194 on current protected main 50acdcab after Repository quality base failure. Focused live_service rerun passes; monitor all required exact-head checks, repair failures, merge only green, then verify seven post-merge workflows. | - |
 | P0 | [AR-1378](tasks/AR-1378-live-control-adapter.md): Authenticated live control adapter | Bind authenticated control receipts to runtime-owned live dispatch. | PR #275 is published at exact head 5f1902c. Monitor all required checks; repair failures through handoffctl, merge only after independent review and green exact-head CI, then verify seven post-merge workflows. | - |
+| P0 | [AR-1380](tasks/AR-1380-runtime-scheduler-composition.md): Runtime scheduler composition for live dispatch | Compose runtime-owned live attempts for production run and sweep scheduling. | PR #276 force-updated to exact head ab4e60c on protected main 16bca1f9 after policy/platform stale-base failure. Monitor fresh exact-head checks; repair any new failures, merge only green, then verify seven post-merge workflows. | - |
 | P1 | [AR-0002](tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. | - |
 | P1 | [AR-0003](tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. | - |
 | P1 | [AR-0004](tasks/AR-0004-ar-status-document.md): Generate the visual AR status document | Render every AR, status, and dependency as an accessible visual state document. | Await independent immutable-head review of state PR 3 at eedd311; repair findings before coordinator integration. | - |

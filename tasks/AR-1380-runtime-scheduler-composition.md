@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1380-runtime-scheduler-composition",
   "checkpoint_commit": "ab4e60cb9639d855c31f4a5f66e515859d29cf9f",
-  "claim_expires": "2026-09-24T05:59:53+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1378",
     "AR-1377",
@@ -15,15 +15,15 @@
   "observed_branch": "feature/ar-1380-runtime-scheduler-composition",
   "observed_dirty": 0,
   "observed_head": "ab4e60cb9639d855c31f4a5f66e515859d29cf9f",
-  "owner": "codex-asb-runtime-receipt-source-luna56",
+  "owner": "",
   "plan": "../plans/AR-1380-runtime-scheduler-composition.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Compose runtime-owned live attempts for production run and sweep scheduling.",
-  "task_revision": 62,
+  "task_revision": 63,
   "title": "Runtime scheduler composition for live dispatch",
-  "updated_at": "2026-09-24T03:59:53+00:00",
+  "updated_at": "2026-09-24T04:02:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1380-runtime-scheduler-composition"
 }
 ---
@@ -196,3 +196,8 @@ composition gap without weakening authority boundaries.
 - 2026-09-24T03:59:13+00:00: Heartbeat by codex-asb-runtime-receipt-source-luna56.
 
 - 2026-09-24T03:59:53+00:00: Heartbeat by codex-asb-runtime-receipt-source-luna56.
+
+- 2026-09-24T04:02:33+00:00: PR #276 exact head ab4e60cb9639d855c31f4a5f66e515859d29cf9f merged as
+  333cc3ac4d55171b7c0e24c5353d5b0273769140. All seven post-merge workflows terminal SUCCESS: Rust,
+  repository quality, formal, fault, hosted portability, emulated aarch64, and headers. Runtime
+  scheduler composition is merged and verified.
