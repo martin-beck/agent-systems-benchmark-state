@@ -3,13 +3,18 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P2 | [AR-1414](tasks/AR-1414-action-pin-followup.md): Follow-up install-action pin qualification | Qualify the newer immutable install-action update reopened as PR #235. | Promote after AR-1406; audit PR #235 for the v2.87.14 immutable release pin, repair policy/check failures, and merge only after exact-head review and all required checks pass. | ar1414-install-pin-recovery-luna56 |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1212](tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Teach users to test configured-agent benchmark eligibility without running an agent. | Implement the offline tutorial for checking agent benchmark readiness under the current configuration. | - |
 | P0 | [AR-1316](tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | Publish the verified ASB agent catalog required by the first-run setup wizard. | Persist the authenticated catalog snapshot/generation and complete live ASB-to-asb-tui wizard evidence; keep all entries unavailable until a verified release closure exists. | - |
-| P2 | [AR-1414](tasks/AR-1414-action-pin-followup.md): Follow-up install-action pin qualification | Qualify the newer immutable install-action update reopened as PR #235. | Promote after AR-1406; audit PR #235 for the v2.87.14 immutable release pin, repair policy/check failures, and merge only after exact-head review and all required checks pass. | - |
 
 ## Blocked
 

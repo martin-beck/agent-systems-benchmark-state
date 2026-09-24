@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T18:08:09+00:00",
   "depends_on": [
     "AR-1406"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "",
+  "owner": "ar1414-install-pin-recovery-luna56",
   "plan": "../plans/AR-1414-action-pin-followup.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Qualify the newer immutable install-action update reopened as PR #235.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Follow-up install-action pin qualification",
-  "updated_at": "2026-09-24T16:06:30+00:00",
+  "updated_at": "2026-09-24T16:08:09+00:00",
   "worktree_key": ""
 }
 ---
@@ -29,3 +29,5 @@ v2.87.14. Do not merge while policy or exact-head checks fail.
 
 - 2026-09-24T16:06:30+00:00: AR-1406 completed; PR #235 reopened for install-action v2.87.14 and
   requires a fresh immutable-pin qualification.
+
+- 2026-09-24T16:08:09+00:00: Claimed by ar1414-install-pin-recovery-luna56.
