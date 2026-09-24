@@ -1,14 +1,14 @@
 ---
 {
   "branch": "codex/ar-1421-protected-main-race",
-  "checkpoint_commit": "28e35608a2a87f53afa70732ca1b51aa57aa360b",
+  "checkpoint_commit": "10b16186c8424f53f6d6d8c2797d785dea10c53b",
   "claim_expires": "2026-09-24T22:05:02+00:00",
   "depends_on": [
     "AR-1416",
     "AR-1398"
   ],
   "id": "AR-1421",
-  "next_action": "PR #308 exact base 5ddac12/head 28e3560 is open; independent diff review passed. Await all required checks for exact head before merge. Preserve failures 36048870322/36048870234 and state reconcile push race evidence.",
+  "next_action": "PR #308 merged as 10b16186. Monitor exact-main post-merge workflow IDs 36052764434,36052764446,36052764452,36052764458,36052764507,36052764675,36052764433 to terminal SUCCESS; then verify merged tree/signature/DCO and release.",
   "observed_branch": "codex/ar-1421-protected-main-race",
   "observed_dirty": 0,
   "observed_head": "28e35608a2a87f53afa70732ca1b51aa57aa360b",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair protected-main merge-tree requalification after a literature PR merges onto an advanced main.",
-  "task_revision": 66,
+  "task_revision": 67,
   "title": "Protected-main literature merge race repair",
-  "updated_at": "2026-09-24T20:08:44+00:00",
+  "updated_at": "2026-09-24T20:09:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1421"
 }
 ---
@@ -217,3 +217,10 @@ the merge released before fresh exact-main evidence succeeds.
 
 - 2026-09-24T20:08:44+00:00: Recorded command exit 0; command argv SHA-256
   71a9dfb59630a682d82029f84b04d44188ab5a7f5b662df3e4b754ca5ac1469f.
+
+- 2026-09-24T20:09:18+00:00: PR #308 merged after all 12 required checks terminal SUCCESS. Exact
+  merge 10b16186c8424f53f6d6d8c2797d785dea10c53b is now the post-merge evidence target. Seven push
+  workflows observed: Repository quality 36052764434, Rust 36052764446, aarch64 36052764452, Fault
+  assurance 36052764458, hosted portability 36052764507, Formal assurance 36052764675, MIT headers
+  36052764433 (already SUCCESS). Merge command finalization initially hit LOCK_TIMEOUT; fresh query
+  confirmed MERGED.
