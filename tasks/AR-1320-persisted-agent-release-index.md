@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist and verify the ASB agent release index used by the setup wizard.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Persisted authenticated agent release index",
-  "updated_at": "2026-09-24T20:04:29+00:00",
+  "updated_at": "2026-09-24T20:04:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1320-persisted-agent-release-index"
 }
 ---
@@ -30,3 +30,6 @@ before any agent can become selectable.
   implementation.
 
 - 2026-09-24T20:04:29+00:00: Claimed by codex-ar1320-luna56.
+
+- 2026-09-24T20:04:48+00:00: Recorded command exit 0; command argv SHA-256
+  498ccf248bc166cd8940e579a67ad12e0a07199783062cc3019459f7d310c063.
