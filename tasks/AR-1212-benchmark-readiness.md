@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach users to test configured-agent benchmark eligibility without running an agent.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Agent benchmark-readiness tutorial",
-  "updated_at": "2026-09-24T19:04:53+00:00",
+  "updated_at": "2026-09-24T19:06:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1212"
 }
 ---
@@ -113,3 +113,9 @@ Implement the linked tutorial and deterministic negative/positive syntax fixture
 
 - 2026-09-24T19:04:53+00:00: Recorded command exit 1; command argv SHA-256
   aa2bee29186962c740c9a0591591ec570976f865f5d62bb058e583f734384f12.
+
+- 2026-09-24T19:06:02+00:00: The second scan still reports one generic-api-key finding in original
+  commit 0edd9935 line 8. A later formatting commit cannot remove a historical finding because
+  quality scans all introduced commits. Rewrite this private PR branch from its merge-base, retain
+  the multiline fixture, create one fresh SSH-signed DCO commit, force-with-lease push, then rerun
+  exact-base gitleaks and gates.
