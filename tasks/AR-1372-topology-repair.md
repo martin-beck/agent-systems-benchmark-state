@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair protected-main merge topology after AR-1371 without changing product behavior.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Protected merge topology repair",
-  "updated_at": "2026-09-24T01:36:19+00:00",
+  "updated_at": "2026-09-24T01:37:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1372-topology-repair"
 }
 ---
@@ -63,3 +63,6 @@ topology; no gate may be weakened.
 - 2026-09-24T01:32:21+00:00: Heartbeat by codex-asb-topology-repair-luna56.
 
 - 2026-09-24T01:36:19+00:00: Heartbeat by codex-asb-topology-repair-luna56.
+
+- 2026-09-24T01:37:40+00:00: Recorded command exit 0; command argv SHA-256
+  97d545927e55bf8bf4b8ec5999183eeec6e46a9def72218ba376d87be2b16133.
