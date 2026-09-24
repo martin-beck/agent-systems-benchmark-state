@@ -1,14 +1,14 @@
 ---
 {
   "branch": "codex/ar-1415-literature-selector-total-coverage",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "bc0cfaff9cc126cb4f3dbadfc9a6284750dba0bc",
   "claim_expires": "2026-09-24T19:44:30+00:00",
   "depends_on": [
     "AR-1410",
     "AR-1414"
   ],
   "id": "AR-1415",
-  "next_action": "Record the transient coordinator lock timeout, rerun state-recording wrapper once, then commit focused coverage audit and run remaining quality gates.",
+  "next_action": "Independently review PR #303 exact base/head and monitor all required checks; merge only after terminal success, then verify seven post-merge workflows.",
   "observed_branch": "codex/ar-1415-literature-selector-total-coverage",
   "observed_dirty": 0,
   "observed_head": "bc0cfaff9cc126cb4f3dbadfc9a6284750dba0bc",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make the complete literature workload inventory selectable beside built-in software-engineering fixtures with truthful evidence gates.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Total literature workload selector coverage",
-  "updated_at": "2026-09-24T17:52:00+00:00",
+  "updated_at": "2026-09-24T17:52:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1415"
 }
 ---
@@ -115,3 +115,9 @@ schema parity, and full exact-head/post-merge gates.
 
 - 2026-09-24T17:52:00+00:00: Recorded command exit 0; command argv SHA-256
   7562a8d9f316aec960e43cab091a5894539b6c1aa824d8adfadb7910001f99a7.
+
+- 2026-09-24T17:52:27+00:00: Committed and pushed signed+DCO bc0cfaff: machine-checked
+  docs/registry/generated-catalog parity and explicit evidence-state coverage, including Exercism
+  Tracks documentation gap. PR #303 opened at exact branch
+  codex/ar-1415-literature-selector-total-coverage. Focused Python suite 15 passed; package Rust
+  gates passed.
