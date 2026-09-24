@@ -10,17 +10,17 @@
   "id": "AR-1400",
   "next_action": "Promote after AR-1396 and AR-1399 are verified done; implement the unified candidate catalog and fail-closed CLI selection contract.",
   "observed_branch": "codex/ar-1400-literature-catalog",
-  "observed_dirty": 2,
-  "observed_head": "e41d4df86e57af5b58cc7500fcc44cec6ec2e445",
+  "observed_dirty": 0,
+  "observed_head": "adea44324004c99416ad12f62762ff47b1665408",
   "owner": "ar1400_catalog_activation_luna56",
   "plan": "../plans/AR-1400-literature-catalog-activation.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Expose all documented literature workloads as truthful selectable candidates beside built-in fixtures.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Literature workload catalog activation",
-  "updated_at": "2026-09-24T11:17:10+00:00",
+  "updated_at": "2026-09-24T11:17:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1400"
 }
 ---
