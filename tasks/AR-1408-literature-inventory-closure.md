@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Close literature-to-catalog gaps and make benchmark versus harness boundaries explicit.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Literature workload inventory closure",
-  "updated_at": "2026-09-24T12:48:09+00:00",
+  "updated_at": "2026-09-24T12:48:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1408"
 }
 ---
@@ -64,3 +64,6 @@ listed external evaluator, provider, native platform, or dataset is qualified.
 
 - 2026-09-24T12:48:09+00:00: Recorded command exit 1; command argv SHA-256
   94d3e308af309e3ade4090e90b2f551b91b0ad7e04fc828f8a5b92d8b3742ec4.
+
+- 2026-09-24T12:48:40+00:00: Recorded command exit 0; command argv SHA-256
+  1e445d8cf3cc7bf2bedc0b7b118e9d45a5414b7659a50fe07ab47be5b4288037.
