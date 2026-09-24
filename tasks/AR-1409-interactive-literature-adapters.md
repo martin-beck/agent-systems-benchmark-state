@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add offline-selectable interactive and tool-use literature workload adapters.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Interactive literature workload adapters",
-  "updated_at": "2026-09-24T15:25:07+00:00",
+  "updated_at": "2026-09-24T15:25:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1409"
 }
 ---
@@ -52,3 +52,6 @@ LiteLLM-compatible mocks are the only development and CI execution path.
   live_service::tests::local_authority_is_runtime_owned_loopback_and_private (assertion
   authority.is_active()). Immediate exact focused rerun passed (1 test); treated as transient
   runtime test failure, not suppressed.
+
+- 2026-09-24T15:25:46+00:00: Recorded command exit 0; command argv SHA-256
+  534f8613e1c316db8f0f46dd989e44e14a8ca74304a94791b4e4a1c59b2fbb1d.
