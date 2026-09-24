@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T21:13:02+00:00",
   "depends_on": [
     "AR-1416",
     "AR-1408"
@@ -12,15 +12,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "",
+  "owner": "ar1417-literature-luna56",
   "plan": "../plans/AR-1417.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Add selectable interactive and stateful literature workloads beside built-in software-engineering fixtures.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Interactive stateful literature workloads",
-  "updated_at": "2026-09-24T19:12:18+00:00",
+  "updated_at": "2026-09-24T19:13:02+00:00",
   "worktree_key": ""
 }
 ---
@@ -36,3 +36,5 @@ identified.
 
 - 2026-09-24T19:12:18+00:00: Dependencies AR-1416 and AR-1408 verified done; open interactive
   stateful literature workload implementation.
+
+- 2026-09-24T19:13:02+00:00: Claimed by ar1417-literature-luna56.
