@@ -14,18 +14,18 @@
   ],
   "id": "AR-1381",
   "next_action": "Promote and claim this dependency-valid CLI scheduler wiring successor, then implement run/sweep runtime-owned live dispatch.",
-  "observed_branch": "",
-  "observed_dirty": 0,
-  "observed_head": "",
+  "observed_branch": "feature/ar-1381-live-cli-scheduler-wiring",
+  "observed_dirty": 1,
+  "observed_head": "16bca1f9f0dc2d5f8bc8a8709fd98db9a98f78c9",
   "owner": "codex-asb-runtime-receipt-source-luna56",
   "plan": "../plans/AR-1381-live-cli-scheduler-wiring.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire runtime-owned live scheduler authority into production asb run and sweep.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Runtime-owned live CLI scheduler wiring",
-  "updated_at": "2026-09-24T04:04:11+00:00",
+  "updated_at": "2026-09-24T04:04:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1381-live-cli-scheduler-wiring"
 }
 ---
