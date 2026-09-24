@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P2 | [AR-1414](tasks/AR-1414-action-pin-followup.md): Follow-up install-action pin qualification | Qualify the newer immutable install-action update reopened as PR #235. | Audit PR #235 v2.87.14 exact base/head and policy/Rust failures in the bound worktree; repair without weakening gates, then review and merge only after all checks pass. | ar1414-install-pin-recovery-luna56 |
+| P2 | [AR-1414](tasks/AR-1414-action-pin-followup.md): Follow-up install-action pin qualification | Qualify the newer immutable install-action update reopened as PR #235. | Monitor PR #235 exact base 8da098770e4a78e94f67cf7b13dbebbcd1c5bbac and repaired head f49e67a46c3c39e7015d48112ed26afacba74738; obtain independent review and all required checks, then merge via handoffctl and verify seven post-merge workflows. | ar1414-install-pin-recovery-luna56 |
 
 ## Open
 

@@ -1,13 +1,13 @@
 ---
 {
   "branch": "codex/ar-1414-install-pin-policy",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "f49e67a46c3c39e7015d48112ed26afacba74738",
   "claim_expires": "2026-09-24T18:10:18+00:00",
   "depends_on": [
     "AR-1406"
   ],
   "id": "AR-1414",
-  "next_action": "Audit PR #235 v2.87.14 exact base/head and policy/Rust failures in the bound worktree; repair without weakening gates, then review and merge only after all checks pass.",
+  "next_action": "Monitor PR #235 exact base 8da098770e4a78e94f67cf7b13dbebbcd1c5bbac and repaired head f49e67a46c3c39e7015d48112ed26afacba74738; obtain independent review and all required checks, then merge via handoffctl and verify seven post-merge workflows.",
   "observed_branch": "codex/ar-1414-install-pin-policy",
   "observed_dirty": 0,
   "observed_head": "f49e67a46c3c39e7015d48112ed26afacba74738",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the newer immutable install-action update reopened as PR #235.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Follow-up install-action pin qualification",
-  "updated_at": "2026-09-24T16:13:24+00:00",
+  "updated_at": "2026-09-24T16:13:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1414"
 }
 ---
@@ -62,3 +62,12 @@ v2.87.14. Do not merge while policy or exact-head checks fail.
 
 - 2026-09-24T16:13:24+00:00: Recorded command exit 0; command argv SHA-256
   d21b7cdd468bf9aa335f78be9a7dff6efc99c662e9b699880faf77662db85ad6.
+
+- 2026-09-24T16:13:56+00:00: Audited PR #235 old exact head 471df41 against base 8da0987. Policy
+  failed because manifested install-action pin 3f74d7c was unused; Rust failed DCO because
+  Dependabot head lacked matching Signed-off-by. Verified upstream taiki commit
+  76c2e6406e52637deed7160d77bded76bd83e06e resolves tag v2.87.14. Rebased latest main, updated both
+  workflow refs and config/quality-tools.json, created signed+DCO commits e3aee61 and f49e67a, local
+  repository_policy passed, and force-updated the PR head safely. PR #235 now exact base
+  8da098770e4a78e94f67cf7b13dbebbcd1c5bbac/head f49e67a46c3c39e7015d48112ed26afacba74738; checks
+  rerunning.
