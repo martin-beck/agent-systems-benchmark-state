@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add offline-selectable interactive and tool-use literature workload adapters.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Interactive literature workload adapters",
-  "updated_at": "2026-09-24T15:24:15+00:00",
+  "updated_at": "2026-09-24T15:24:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1409"
 }
 ---
@@ -44,3 +44,6 @@ LiteLLM-compatible mocks are the only development and CI execution path.
 
 - 2026-09-24T15:24:15+00:00: Recorded command exit 101; command argv SHA-256
   534f8613e1c316db8f0f46dd989e44e14a8ca74304a94791b4e4a1c59b2fbb1d.
+
+- 2026-09-24T15:24:41+00:00: Recorded command exit 0; command argv SHA-256
+  d6bd783edf83a9ef32ee909e0091fbc17b3dfc7b451dec54238ecf66ba1d590a.
