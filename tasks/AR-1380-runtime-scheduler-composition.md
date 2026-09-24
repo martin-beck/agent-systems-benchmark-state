@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compose runtime-owned live attempts for production run and sweep scheduling.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Runtime scheduler composition for live dispatch",
-  "updated_at": "2026-09-24T03:39:49+00:00",
+  "updated_at": "2026-09-24T03:40:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1380-runtime-scheduler-composition"
 }
 ---
@@ -84,3 +84,6 @@ composition gap without weakening authority boundaries.
   factory-composition and negative malformed digest/mismatched limits tests. Focused 2 tests, all
   114 asb-runtime tests, fmt, check, and clippy -D warnings passed. SSH-signed+DCO commit
   1113375a0f4f4c4eec2fb33eea20a39118fcc479; worktree clean.
+
+- 2026-09-24T03:40:24+00:00: Recorded command exit 0; command argv SHA-256
+  04279fb44fdd8b05428e236aec3837caf0691c994eb274db56a21c6cfb8e337b.
