@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1380](tasks/AR-1380-runtime-scheduler-composition.md): Runtime scheduler composition for live dispatch | Compose runtime-owned live attempts for production run and sweep scheduling. | Promote and claim this dependency-valid scheduler composition successor, then implement runtime-owned per-attempt live dispatch inputs. | codex-asb-runtime-receipt-source-luna56 |
+| P0 | [AR-1380](tasks/AR-1380-runtime-scheduler-composition.md): Runtime scheduler composition for live dispatch | Compose runtime-owned live attempts for production run and sweep scheduling. | Independent review complete for runtime scheduler seam; run workspace gates, inspect API/privacy diff, then publish exact-head PR. CLI run/sweep still needs a caller wiring AR after this runtime boundary is reviewed. | codex-asb-runtime-receipt-source-luna56 |
 
 ## Open
 

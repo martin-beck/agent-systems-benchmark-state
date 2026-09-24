@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1380-runtime-scheduler-composition",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "1113375a0f4f4c4eec2fb33eea20a39118fcc479",
   "claim_expires": "2026-09-24T05:39:22+00:00",
   "depends_on": [
     "AR-1378",
@@ -11,7 +11,7 @@
     "AR-1362"
   ],
   "id": "AR-1380",
-  "next_action": "Promote and claim this dependency-valid scheduler composition successor, then implement runtime-owned per-attempt live dispatch inputs.",
+  "next_action": "Independent review complete for runtime scheduler seam; run workspace gates, inspect API/privacy diff, then publish exact-head PR. CLI run/sweep still needs a caller wiring AR after this runtime boundary is reviewed.",
   "observed_branch": "feature/ar-1380-runtime-scheduler-composition",
   "observed_dirty": 0,
   "observed_head": "1113375a0f4f4c4eec2fb33eea20a39118fcc479",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compose runtime-owned live attempts for production run and sweep scheduling.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Runtime scheduler composition for live dispatch",
-  "updated_at": "2026-09-24T03:39:25+00:00",
+  "updated_at": "2026-09-24T03:39:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1380-runtime-scheduler-composition"
 }
 ---
@@ -77,3 +77,10 @@ composition gap without weakening authority boundaries.
 
 - 2026-09-24T03:39:25+00:00: Recorded command exit 0; command argv SHA-256
   165b66592d52ddd4e707177d6fbd75dd46166e641fe1d35c2e6222ed3e115a0b.
+
+- 2026-09-24T03:39:49+00:00: Implemented LiveProviderRuntimeScheduler::new/into_factory. It consumes
+  only opaque runtime handle plus validated SandboxLaunchInput, matching ProcessLimits, and adapter
+  digest; it binds fresh timestamped attempts through existing acquire path. Added positive
+  factory-composition and negative malformed digest/mismatched limits tests. Focused 2 tests, all
+  114 asb-runtime tests, fmt, check, and clippy -D warnings passed. SSH-signed+DCO commit
+  1113375a0f4f4c4eec2fb33eea20a39118fcc479; worktree clean.
