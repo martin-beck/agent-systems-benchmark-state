@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recovered an abandoned claim with malformed local-time expiry; branch/worktree are now coordinator-bound before the next claim.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Code-generation control workload adapters",
-  "updated_at": "2026-09-24T14:32:50+00:00",
+  "updated_at": "2026-09-24T14:33:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1412"
 }
 ---
@@ -62,3 +62,6 @@ bounded local fixtures or LiteLLM-compatible mocks only.
   registry_sha256 98ff63b03fc10c16f258acb4be4a14a132ac6dafe6f80069f5981a6ac5b79976 and 22 records,
   but handoffctl state replication was rejected by GitHub with transient HTTP 500 Internal Server
   Error. No product mutation was lost; reconcile/retry state push before next checkpoint.
+
+- 2026-09-24T14:33:25+00:00: Recorded command exit 0; command argv SHA-256
+  adb2c5e6b7182fbb03f29e3129f544e36133599e61e7ef941254896963598f89.
