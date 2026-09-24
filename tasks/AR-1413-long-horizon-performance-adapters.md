@@ -11,16 +11,16 @@
   "next_action": "PR #299 open; independently review full diff and wait for exact-head checks at base ea27dfb4e3a569fd429f99307e91c7629f15f65f/head f3ce434417407d64b14fb0cc1493ffc1f93f3055 before signed merge.",
   "observed_branch": "codex/ar-1413-long-horizon-performance",
   "observed_dirty": 0,
-  "observed_head": "f3ce434417407d64b14fb0cc1493ffc1f93f3055",
+  "observed_head": "f78fbabafb84949826d047d31b5e1770a98b8157",
   "owner": "ar1413_long_horizon_performance_luna56",
   "plan": "../plans/AR-1413-long-horizon-performance-adapters.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add truthful long-horizon, refreshed, performance, and reproducibility workload adapters.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Long-horizon and performance literature workload adapters",
-  "updated_at": "2026-09-24T15:05:45+00:00",
+  "updated_at": "2026-09-24T15:05:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1413"
 }
 ---
