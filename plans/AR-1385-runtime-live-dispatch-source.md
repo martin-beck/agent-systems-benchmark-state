@@ -25,6 +25,7 @@ coordinator repair required before AR-1329 can resume.
   denial and cancellation teardown; preserve `NetworkPolicy::Deny` defaults.
 - Run focused and full gates, independent review, signed+DCO exact-head CI,
   post-merge verification, and durable release evidence.
-- Do not claim real OpenRouter or three-agent execution until a separate live
-  run is observed and recorded with runtime-attested evidence.
-
+- All AR completion and CI tests use a local deterministic LLM/provider mock
+  service or library (LiteLLM-compatible where practical); an external
+  OpenRouter/backend connection is never a prerequisite and must not block an
+  AR. Remote execution is optional supplementary evidence only.
