@@ -1,13 +1,13 @@
 ---
 {
   "branch": "docs/ar-1214-record-replay",
-  "checkpoint_commit": "699ddd679b4108440effc3c65d600b391cd52bfb",
+  "checkpoint_commit": "fe00f59becd0b61ec654217ab8d529b25a098bf0",
   "claim_expires": "2026-09-24T22:49:35+00:00",
   "depends_on": [
     "AR-1213"
   ],
   "id": "AR-1214",
-  "next_action": "Create PR from docs/ar-1214-record-replay; require exact-head CI, independent review, merge, seven post-merge checks, and verification.",
+  "next_action": "PR #311 exists at exact head fe00f59; run independent review and exact-head CI, then merge and complete seven post-merge checks.",
   "observed_branch": "docs/ar-1214-record-replay",
   "observed_dirty": 0,
   "observed_head": "fe00f59becd0b61ec654217ab8d529b25a098bf0",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach privacy-safe LLM response recording and strict offline replay.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "LLM response record/replay tutorial",
-  "updated_at": "2026-09-24T21:02:54+00:00",
+  "updated_at": "2026-09-24T21:03:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1214"
 }
 ---
@@ -98,3 +98,8 @@ permitted in its CI job.
 
 - 2026-09-24T21:02:54+00:00: Recorded command exit 0; command argv SHA-256
   2830bd0fdb4099a3d4fdbae3703ce5c24b1b5da093b613b935ff06f1d63724b9.
+
+- 2026-09-24T21:03:38+00:00: Rebased 699ddd6 onto current origin/main c663d1f as fe00f59; origin
+  branch force-with-lease updated. Diff against origin/main contains only
+  crates/asb-cli/tests/guide_examples.rs and docs/workflows/record-replay.md. Created PR #311.
+  Post-creation state recording initially hit LOCK_TIMEOUT but retry is now durable.
