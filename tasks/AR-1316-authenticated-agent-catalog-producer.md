@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish the verified ASB agent catalog required by the first-run setup wizard.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Authenticated agent catalog producer",
-  "updated_at": "2026-09-24T18:57:25+00:00",
+  "updated_at": "2026-09-24T18:57:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1316"
 }
 ---
@@ -83,3 +83,6 @@ Progress evidence: ASB PR #245 merged at `027af7ad27da13b359b3f099699c42b03c6f39
   tests, 58 asb-control unit tests, control/endpoint/schema suites, docs). Wrapper then exited
   LOCK_TIMEOUT after 10.0s acquiring exclusive coordinator lock while recording completion; no test
   failure occurred.
+
+- 2026-09-24T18:57:45+00:00: Recorded command exit 0; command argv SHA-256
+  8b4ac076c67d9a9cd7124b6739c1ebcb45483f500feb133a7be56407733a4114.
