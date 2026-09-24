@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire runtime-owned live scheduler authority into production asb run and sweep.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Runtime-owned live CLI scheduler wiring",
-  "updated_at": "2026-09-24T04:28:45+00:00",
+  "updated_at": "2026-09-24T04:28:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1381-live-cli-scheduler-wiring"
 }
 ---
@@ -183,3 +183,6 @@ all fail-closed authority and privacy contracts.
 
 - 2026-09-24T04:28:45+00:00: Recorded command exit 0; command argv SHA-256
   a6ef2f3086f640722a49a7d02d4130a994c6b1a71ca9eed46d7a9ad3567b0063.
+
+- 2026-09-24T04:28:59+00:00: Recorded command exit 0; command argv SHA-256
+  4eaa9c7f81b2e46b9d3cef86d57f7a8cfe9fcfb9d04ab66d7c8ff720a51fb421.
