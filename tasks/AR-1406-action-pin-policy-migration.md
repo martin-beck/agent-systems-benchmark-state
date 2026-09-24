@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify and merge remaining immutable GitHub action pin updates without weakening policy.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Action pin policy migration",
-  "updated_at": "2026-09-24T15:50:05+00:00",
+  "updated_at": "2026-09-24T15:56:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1406"
 }
 ---
@@ -132,3 +132,6 @@ No floating action reference or unverifiable release identity is acceptable.
   headers, retained faults, fuzz, mutation, Kani, Loom, and platform portability checks passed;
   policy, Rust, emulated-aarch64, and TLC/Alloy jobs remain pending. GitHub reviewDecision remains
   empty. No merge or release action taken.
+
+- 2026-09-24T15:56:44+00:00: Recorded command exit 0; command argv SHA-256
+  841ffd4db557d4d67eb4cdb50ad7f66195f48c628c38e333e1d4932162add07d.
