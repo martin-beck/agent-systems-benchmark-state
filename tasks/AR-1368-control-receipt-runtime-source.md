@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1368-control-receipt-runtime-source",
   "checkpoint_commit": "0c6dc52e1f4aa5854f73081711dbd9a5bc1a5d7c",
-  "claim_expires": "2026-09-24T02:46:53+00:00",
+  "claim_expires": "2026-09-24T02:47:51+00:00",
   "depends_on": [
     "AR-1366",
     "AR-1340",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated runtime-owned ControlClient receipt source required by AR-1329 production dispatch.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Control receipt runtime source",
-  "updated_at": "2026-09-24T00:46:53+00:00",
+  "updated_at": "2026-09-24T00:47:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1368-control-receipt-runtime-source"
 }
 ---
@@ -34,3 +34,5 @@ allow CLI/config callers to synthesize receipt authority.
   dependencies AR-1366, AR-1340, AR-1339, and AR-1328 are complete.
 
 - 2026-09-24T00:46:53+00:00: Claimed by codex-asb-runtime-attested-enrollment-luna56.
+
+- 2026-09-24T00:47:51+00:00: Heartbeat by codex-asb-runtime-attested-enrollment-luna56.
