@@ -22,11 +22,11 @@
   "plan": "../plans/AR-1392-control-authority-materializer.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Resolve private live authority from authenticated control enrollment without caller injection.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Control-owned private authority materializer",
-  "updated_at": "2026-09-24T07:46:00+00:00",
+  "updated_at": "2026-09-24T07:45:20+00:00",
   "worktree_key": ""
 }
 ---
@@ -34,3 +34,6 @@
 This successor owns the control-side authority gap found by AR-1391. It must
 not touch asb-tui, expose secrets, synthesize authority, or require external
 provider connectivity in development or CI.
+
+- 2026-09-24T07:45:20+00:00: Runtime authority dependencies verified; AR-1391 audit identifies
+  missing private control authority materialization.
