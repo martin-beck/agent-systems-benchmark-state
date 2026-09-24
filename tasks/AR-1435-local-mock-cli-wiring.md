@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire deterministic local mock attempts into asb run and sweep configuration qualification.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Local mock CLI wiring",
-  "updated_at": "2026-09-24T23:54:22+00:00",
+  "updated_at": "2026-09-24T23:54:31+00:00",
   "worktree_key": ""
 }
 ---
@@ -49,3 +49,6 @@ it must not contact OpenRouter or any external provider, mint
   run/sweep test, five runtime local_mock tests, clippy, fmt, and diff-check pass. A first focused
   assertion exposed scheduler input zero versus mock identity zero rejection; corrected by mapping
   mock attempt identity to input_id + 1 while preserving scheduler evidence.
+
+- 2026-09-24T23:54:31+00:00: Recorded command exit 0; command argv SHA-256
+  f089d1c8e226eef90ba2619269a95556979cc80a88f1020c1cbb11700fa8bac9.
