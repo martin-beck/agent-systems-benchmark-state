@@ -1,7 +1,7 @@
 ---
 {
-  "branch": "",
-  "checkpoint_commit": "",
+  "branch": "feature/ar-1388-runtime-authority-materializer",
+  "checkpoint_commit": "25548846966e37646dded8d67ed8ee5123b8bc32",
   "claim_expires": "",
   "depends_on": [
     "AR-1385",
@@ -10,10 +10,10 @@
     "AR-1377"
   ],
   "id": "AR-1388",
-  "next_action": "Promote after dependency validation; implement the production runtime authority materializer from authenticated receipt/chain into private bootstrap inputs without CLI authority injection.",
-  "observed_branch": "",
+  "next_action": "Refresh the declared isolated worktree from protected main, implement the production runtime authority materializer from authenticated receipt/chain into private bootstrap inputs, and add fail-closed tests.",
+  "observed_branch": "feature/ar-1388-runtime-authority-materializer",
   "observed_dirty": 0,
-  "observed_head": "0000000000000000000000000000000000000000",
+  "observed_head": "25548846966e37646dded8d67ed8ee5123b8bc32",
   "owner": "",
   "plan": "../plans/AR-1388-runtime-authority-materializer.md",
   "priority": "P0",
