@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar-1403-literature-external",
   "checkpoint_commit": "3db36b2c289e0c7f1b6a54905df6dea5e0323981",
-  "claim_expires": "2026-09-24T14:42:45+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1402"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "codex/ar-1403-literature-external",
   "observed_dirty": 0,
   "observed_head": "3db36b2c289e0c7f1b6a54905df6dea5e0323981",
-  "owner": "ar1403_external_qualification_luna56",
+  "owner": "",
   "plan": "../plans/AR-1403-literature-external-qualification.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Add optional evidence-gated qualification for real literature workload sources and evaluators.",
-  "task_revision": 89,
+  "task_revision": 90,
   "title": "Literature workload external qualification",
-  "updated_at": "2026-09-24T14:15:24+00:00",
+  "updated_at": "2026-09-24T14:15:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1403"
 }
 ---
@@ -262,3 +262,15 @@ development, mock execution, or candidate selection.
 
 - 2026-09-24T14:15:24+00:00: Recorded command exit 0; command argv SHA-256
   68c7fe291c86543f6dec9dc2b881a1eab590fa038a837b217289f50aedb7b19b.
+
+- 2026-09-24T14:15:49+00:00: AR-1403 complete. Implemented optional explicit native
+  external-qualification evidence contract and planner gate in signed+DCO commits 3db36b2 and
+  b51570b. PR #296 exact base 6cef4babe3db65e22bfcd098a074da14a4630f7e/head
+  3db36b2c289e0c7f1b6a54905df6dea5e0323981/tree 32e13ade1cf91e46e2b760401804c4d01a78081d; signed
+  integration merge 99a1af7c2762960595d63c7b329218d1db299cc4, tree verified and DCO certified.
+  Focused workloads tests 31 passed; registry validator, diff check, py_compile passed. Seven exact
+  post-merge workflows all terminal success on 99a1af7c: repository quality 36009509259 attempt 2
+  (attempt 1 had unrelated flaky asb-metrics timeout and exact stderr recorded; rerun succeeded),
+  fault 36009509289, AArch64 36009509287, Rust 36009509363, formal 36009509334, headers 36009509408,
+  hosted 36009509255. Remote merge signature verified SSH key
+  SHA256:a36V6yPvRZyxnQ2113tiA/MlHt7mPfJEXAGByBXVkuE. No live provider/network required.

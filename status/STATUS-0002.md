@@ -69,11 +69,10 @@
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P2 | [AR-1403](../tasks/AR-1403-literature-external-qualification.md): Literature workload external qualification | ar1403_external_qualification_luna56 | Add optional evidence-gated qualification for real literature workload sources and evaluators. | Execute signed exact-base integration merge PR #296 in isolated worktree; then verify seven post-merge workflows at merge commit. |
 | P2 | [AR-1404](../tasks/AR-1404-literature-documentation-matrix.md): Literature workload documentation and matrix contract | ar1404_literature_documentation_luna56b | Rebased PR #295 onto current main 99a1af7; new exact-head checks running. | Wait for all 12 checks on rebased head 16c5b87, then merge exact base/head and run seven post-merge workflows. |
 
 ### Open (5)
@@ -238,7 +237,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (276)
+### Done (277)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -515,6 +514,7 @@
 | P2 | [AR-1005](../tasks/AR-1005-trace-interoperability.md): Export interoperable privacy-safe traces | Unclaimed | Expose stable causal ASB events and optional standards-based telemetry without binding storage to an evolving convention. | Monitor PR #75 exact head 921cf004 CI; classify any failure before repair and do not merge without coordinator authorization. |
 | P2 | [AR-1021](../tasks/AR-1021-asb-tui-release-promotion.md): Audit and promote the asb-tui release channel | Unclaimed | Audit and promote asb-tui from optional extension to verified release when eligible. | Review exact-head PR 8 hosted evidence, merge without weakening permanent protections, then obtain exact-main hosted and trusted local evidence. |
 | P2 | [AR-1200](../tasks/AR-1200-metrics-timeout-fixture-stability.md): Kernel diagnostic rejection fixture stability | Unclaimed | Remove hosted timing flakiness from the bounded kernel diagnostic rejection test. | Review and merge the isolated test-fixture stabilization after exact-head CI passes; do not modify production timeout policy. |
+| P2 | [AR-1403](../tasks/AR-1403-literature-external-qualification.md): Literature workload external qualification | Unclaimed | Add optional evidence-gated qualification for real literature workload sources and evaluators. | Execute signed exact-base integration merge PR #296 in isolated worktree; then verify seven post-merge workflows at merge commit. |
 | P3 | [AR-0404](../tasks/AR-0404-extended-workloads.md): Expand established benchmark catalogue | Unclaimed | Evaluate SWE-bench Pro, BigCodeBench, EvalPlus and LiveCodeBench as optional suites. | Add signed normal follow-up after rewritten merge so push range is resolvable; rerun exact-main post-merge workflows. |
 | P3 | [AR-0406](../tasks/AR-0406-evolving-workloads.md): Add evolving long-horizon workload sources | Unclaimed | Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation. | Monitor all required post-merge CI runs for exact main ca6e75916a8c9831b9107377cd48d731463c272a; release only after every required gate is green. |
 | P3 | [AR-1006](../tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Unclaimed | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Monitor post-merge workflows for main 4e2820b until terminal; verify exact tree/signature/DCO/policy, then release AR-1006 done. |
