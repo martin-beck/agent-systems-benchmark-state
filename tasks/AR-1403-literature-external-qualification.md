@@ -1,13 +1,13 @@
 ---
 {
   "branch": "codex/ar-1403-literature-external",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "b51570bbf0fa6e2ccfaddee86115c50474a168c3",
   "claim_expires": "2026-09-24T14:12:59+00:00",
   "depends_on": [
     "AR-1402"
   ],
   "id": "AR-1403",
-  "next_action": "Claim after binding metadata repair; extend explicit external artifact/evaluator qualification without adding a default network path.",
+  "next_action": "Open PR against exact protected main 6cef4babe3db65e22bfcd098a074da14a4630f7e; wait for exact-head checks, independent review, signed merge, seven post-merge gates, then release.",
   "observed_branch": "codex/ar-1403-literature-external",
   "observed_dirty": 0,
   "observed_head": "b51570bbf0fa6e2ccfaddee86115c50474a168c3",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add optional evidence-gated qualification for real literature workload sources and evaluators.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Literature workload external qualification",
-  "updated_at": "2026-09-24T13:45:07+00:00",
+  "updated_at": "2026-09-24T13:45:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1403"
 }
 ---
@@ -141,3 +141,9 @@ development, mock execution, or candidate selection.
 
 - 2026-09-24T13:45:07+00:00: Recorded command exit 0; command argv SHA-256
   43a23938370ddb4dd9ef5a88533ada79e2332d12b4044459bbe5bc1e740330a5.
+
+- 2026-09-24T13:45:41+00:00: Implemented opt-in external qualification evidence validator and
+  planner gate; added strict fixture/tests for immutable source/dataset/evaluator pins, separate
+  licenses, adaptation, contamination, reset, native platform, and oracle evidence. Focused
+  workloads tests 31 passed; registry validator, diff check, py_compile passed. Signed+DCO commit
+  b51570b. Existing acquisition fixture digest drift was repaired and tested.
