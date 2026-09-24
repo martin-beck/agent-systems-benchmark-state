@@ -15,6 +15,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1214](tasks/AR-1214-record-replay.md): LLM response record/replay tutorial | Teach privacy-safe LLM response recording and strict offline replay. | Implement the syntax-checked record/replay tutorial with synthetic cassette fixtures and no-network CI. | - |
+| P0 | [AR-1215](tasks/AR-1215-result-comparison.md): Multi-agent result comparison tutorial | Teach conservative comparison of multiple agents from the same benchmark. | Implement the syntax-checked tutorial for comparing two or more agents on one benchmark definition. | - |
 
 ## Blocked
 
@@ -106,7 +107,6 @@ Never edit this file directly.
 | P0 | [AR-1170](tasks/AR-1170.md): Standalone TUI wizard | Guide TUI setup through analysis. | Read the plan. | - |
 | P0 | [AR-1180](tasks/AR-1180.md): Cross-project wizard qualification | Qualify the complete wizard. | Read the plan. | - |
 | P0 | [AR-1199](tasks/AR-1199-authenticated-tui-install-router.md): Authenticated TUI install router | Expose an authenticated renderer-neutral ASB router for asb tui install and lifecycle operations. | Promote only after dependencies are independently complete; implement the renderer-neutral authenticated CLI/control route and full integration tests. | - |
-| P0 | [AR-1215](tasks/AR-1215-result-comparison.md): Multi-agent result comparison tutorial | Teach conservative comparison of multiple agents from the same benchmark. | Implement the syntax-checked tutorial for comparing two or more agents on one benchmark definition. | - |
 | P0 | [AR-1216](tasks/AR-1216-tutorial-freshness-ci.md): ASB tutorial freshness CI and documentation qualification | Continuously keep ASB tutorial commands and steps syntactically current. | Implement the repository-wide tutorial discovery and syntax-freshness CI gate after all tutorial contracts are defined. | - |
 | P0 | [AR-1227](tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. | - |
 | P0 | [AR-1309](tasks/AR-1309-reviewed-capacity-or-model-reduction.md): Reviewed full-exhaustive capacity or model-reduction contract | Provide a reviewed successor contract after terminal full-exhaustive capacity OOM. | Remain planned until the coordinator reviews the AR-1308 terminal OOM evidence and selects a separately scoped capacity contract or model-reduction profile; do not rerun or widen AR-1307 limits. | - |
