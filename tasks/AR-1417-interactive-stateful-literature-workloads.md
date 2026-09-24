@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add selectable interactive and stateful literature workloads beside built-in software-engineering fixtures.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Interactive stateful literature workloads",
-  "updated_at": "2026-09-24T19:21:09+00:00",
+  "updated_at": "2026-09-24T19:21:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1417"
 }
 ---
@@ -57,3 +57,6 @@ identified.
 
 - 2026-09-24T19:21:09+00:00: Recorded command exit 0; command argv SHA-256
   0494fba8e6fa2ba71369cf2deb3d9cdf45e0ee403eb5670062a3c5c7efb10813.
+
+- 2026-09-24T19:21:24+00:00: Recorded command exit 0; command argv SHA-256
+  f437c60917f2c02c9858fc7bac400b9dbe82c3e7d6ef4e7965f272168b750c97.
