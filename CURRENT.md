@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1431](tasks/AR-1431-protected-main-stale-base-repair.md): Protected-main stale-base merge requalification repair | Prevent stale-base sequential merges from passing review but failing protected-main merge-tree policy. | Reproduce the AR-1216 post-merge merge-tree failure and repair stale-base protected-main requalification before releasing AR-1216. | ar1431-stale-base-luna56 |
+| P0 | [AR-1431](tasks/AR-1431-protected-main-stale-base-repair.md): Protected-main stale-base merge requalification repair | Prevent stale-base sequential merges from passing review but failing protected-main merge-tree policy. | Open repair PR from bd69423; obtain independent review and exact-head CI, then verify all seven post-merge workflows before AR-1216 release. | ar1431-stale-base-luna56 |
 
 ## Open
 

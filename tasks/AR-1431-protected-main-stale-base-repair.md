@@ -1,13 +1,13 @@
 ---
 {
   "branch": "codex/ar-1431-stale-base",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "bd694233fd95941bfc02cdd4e7f0fd3b124d0f4e",
   "claim_expires": "2026-09-25T00:25:29+00:00",
   "depends_on": [
     "AR-1427"
   ],
   "id": "AR-1431",
-  "next_action": "Reproduce the AR-1216 post-merge merge-tree failure and repair stale-base protected-main requalification before releasing AR-1216.",
+  "next_action": "Open repair PR from bd69423; obtain independent review and exact-head CI, then verify all seven post-merge workflows before AR-1216 release.",
   "observed_branch": "codex/ar-1431-stale-base",
   "observed_dirty": 0,
   "observed_head": "bd694233fd95941bfc02cdd4e7f0fd3b124d0f4e",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prevent stale-base sequential merges from passing review but failing protected-main merge-tree policy.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Protected-main stale-base merge requalification repair",
-  "updated_at": "2026-09-24T22:25:29+00:00",
+  "updated_at": "2026-09-24T22:25:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1431"
 }
 ---
@@ -62,3 +62,8 @@ that incident and must not waive the policy.
   d04aa803a9fcb854b247572f9b417fd1935a57ca978bb887d2e7c188e99db043.
 
 - 2026-09-24T22:25:29+00:00: Heartbeat by ar1431-stale-base-luna56.
+
+- 2026-09-24T22:25:38+00:00: Reproduced immutable incident e82e2e6: protected-main policy now
+  reports exact base/topic/merge and reviewed-vs-merge trees. Added deterministic merge-tree preview
+  binding and bounded identity diagnostics; focused 31-test suite passed. Signed+DCO product commit
+  bd69423.
