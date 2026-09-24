@@ -10,7 +10,7 @@
   "id": "AR-1401",
   "next_action": "Promote after AR-1400 and AR-1395 are done; implement deterministic local fixture/evaluator paths for every literature workload family.",
   "observed_branch": "codex/ar-1401-literature-local-mock",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "e0b15fc23be83eeea3882dcee39f9cdd43b45254",
   "owner": "ar1401_literature_mock_luna56",
   "plan": "../plans/AR-1401-literature-local-mock-execution.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide offline deterministic mock execution for every documented literature workload family.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Literature workload local mock execution",
-  "updated_at": "2026-09-24T11:49:49+00:00",
+  "updated_at": "2026-09-24T11:52:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1401"
 }
 ---
