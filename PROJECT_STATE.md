@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #313 | `ci/ar-1216-tutorial-freshness@ac93654ed1f7` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | ci(tutorials): add repository freshness gate |
+| #313 | `ci/ar-1216-tutorial-freshness@ac93654ed1f7` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | ci(tutorials): add repository freshness gate |
 
 ## Recent workflows
 
@@ -18,7 +18,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 36065678512 | `8d1889b7a774` | push | Emulated aarch64 portability | in_progress:- |
 | 36065678507 | `8d1889b7a774` | push | Formal assurance | in_progress:- |
-| 36065678472 | `8d1889b7a774` | push | Fault assurance | in_progress:- |
+| 36065678472 | `8d1889b7a774` | push | Fault assurance | completed:success |
 | 36065678470 | `8d1889b7a774` | push | Rust verification | in_progress:- |
 | 36065678468 | `8d1889b7a774` | push | Hosted portability and native qualification | completed:success |
 | 36065678459 | `8d1889b7a774` | push | Huawei MIT source headers | completed:success |
