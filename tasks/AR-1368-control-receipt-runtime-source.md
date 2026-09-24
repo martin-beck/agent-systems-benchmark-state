@@ -5,7 +5,9 @@
   "claim_expires": "",
   "depends_on": [
     "AR-1366",
-    "AR-1367"
+    "AR-1340",
+    "AR-1339",
+    "AR-1328"
   ],
   "id": "AR-1368",
   "next_action": "Promote and claim the missing runtime-owned ControlClient receipt source, then add the authenticated control operation and production enrollment materialization without exposing authority.",
