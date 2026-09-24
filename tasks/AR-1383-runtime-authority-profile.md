@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize runtime-owned live authority profile for authenticated execution.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Runtime-owned authority profile materialization",
-  "updated_at": "2026-09-24T04:45:59+00:00",
+  "updated_at": "2026-09-24T04:46:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1383-runtime-authority-profile"
 }
 ---
@@ -55,3 +55,6 @@ bootstrap inputs required by live execution.
 
 - 2026-09-24T04:45:59+00:00: Recorded command exit 0; command argv SHA-256
   67739c573b579619ef3e71fb893a396c166af5a2a061ba9f37d5e424ed8b55d4.
+
+- 2026-09-24T04:46:13+00:00: Recorded command exit 0; command argv SHA-256
+  c91ddac088184e1e3160dac55b4e5be937eadcbce81d216d382b4176b8b2458c.
