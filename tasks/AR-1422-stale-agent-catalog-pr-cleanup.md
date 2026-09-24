@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1422.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Close stale conflicting agent-catalog PR #306 through durable coordinator evidence.",
+  "task_revision": 2,
   "title": "Stale agent-catalog PR cleanup",
-  "task_revision": 1,
-  "updated_at": "2026-09-24T19:40:00+00:00",
+  "updated_at": "2026-09-24T19:37:32+00:00",
   "worktree_key": ""
 }
 ---
@@ -27,3 +27,6 @@
 This task has no product implementation scope. It exists to make the stale PR
 disposition auditable and to prevent a duplicate branch from remaining open.
 
+
+- 2026-09-24T19:37:32+00:00: AR-1316 is terminal done; PR #306 is independently confirmed
+  conflicting and stale. Open bounded closure task without product mutation.
