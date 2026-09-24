@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Consume authenticated runtime receipts in production asb run and sweep dispatch.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Production live-provider dispatch",
-  "updated_at": "2026-09-24T02:34:44+00:00",
+  "updated_at": "2026-09-24T02:34:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1374-cli-live-dispatch"
 }
 ---
@@ -40,3 +40,6 @@ execution and teardown are verified.
 - 2026-09-24T02:33:24+00:00: Claimed by codex-asb-runtime-receipt-source-luna56.
 
 - 2026-09-24T02:34:44+00:00: Heartbeat by codex-asb-runtime-receipt-source-luna56.
+
+- 2026-09-24T02:34:47+00:00: Recorded command exit 0; command argv SHA-256
+  383490be2620f3fb3c83962ffeae4899d14503b59efacb41425befcd94b7ac7c.
