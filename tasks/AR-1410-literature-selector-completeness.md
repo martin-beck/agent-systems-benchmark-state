@@ -14,17 +14,17 @@
   "id": "AR-1410",
   "next_action": "Rerun the package gate after transient control-state ownership failure, then signed commit and PR publication.",
   "observed_branch": "codex/ar-1410-literature-selector-parity",
-  "observed_dirty": 5,
-  "observed_head": "8da098770e4a78e94f67cf7b13dbebbcd1c5bbac",
+  "observed_dirty": 0,
+  "observed_head": "dc34be11cae443f8fbcd9f4bb7e5f2a8757770b9",
   "owner": "ar1410-literature-selector-parity-luna56",
   "plan": "../plans/AR-1410-literature-selector-completeness.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Literature selector completeness and parity",
-  "updated_at": "2026-09-24T16:52:15+00:00",
+  "updated_at": "2026-09-24T16:52:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1410"
 }
 ---
