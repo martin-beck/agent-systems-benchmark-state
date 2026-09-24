@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Forward-only signed DCO recovery candidate published as PR #231.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Historical DCO merge-integrity recovery",
-  "updated_at": "2026-09-24T11:18:35+00:00",
+  "updated_at": "2026-09-24T11:20:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1313-historical-dco-909078c"
 }
 ---
@@ -80,3 +80,6 @@ blocked with the exact failure and do not weaken the policy.
 - 2026-09-24T11:17:43+00:00: Claimed by ar1313_recovery_luna56.
 
 - 2026-09-24T11:18:35+00:00: Heartbeat by ar1313_recovery_luna56.
+
+- 2026-09-24T11:20:08+00:00: Recorded command exit 0; command argv SHA-256
+  a979daf9c86f1cc8b8b2629aaa380ada763680578704964da33a301a563e2558.
