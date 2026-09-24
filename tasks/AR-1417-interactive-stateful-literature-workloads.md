@@ -1,6 +1,6 @@
 ---
 {
-  "branch": "",
+  "branch": "codex/ar-1417-interactive-stateful-literature",
   "checkpoint_commit": "",
   "claim_expires": "2026-09-24T21:13:42+00:00",
   "depends_on": [
@@ -21,7 +21,7 @@
   "task_revision": 5,
   "title": "Interactive stateful literature workloads",
   "updated_at": "2026-09-24T19:13:42+00:00",
-  "worktree_key": ""
+  "worktree_key": "agent-systems-benchmark-ar-1417"
 }
 ---
 

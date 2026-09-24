@@ -1,6 +1,6 @@
 ---
 {
-  "branch": "",
+  "branch": "codex/ar-1418-tool-use-reliability-safety",
   "checkpoint_commit": "",
   "claim_expires": "2026-09-24T21:13:45+00:00",
   "depends_on": [
@@ -21,7 +21,7 @@
   "task_revision": 5,
   "title": "Tool-use reliability and safety workloads",
   "updated_at": "2026-09-24T19:13:45+00:00",
-  "worktree_key": ""
+  "worktree_key": "agent-systems-benchmark-ar-1418"
 }
 ---
 
