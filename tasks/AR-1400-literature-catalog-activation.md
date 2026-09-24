@@ -1,6 +1,6 @@
 ---
 {
-  "branch": "",
+  "branch": "codex/ar-1400-literature-catalog",
   "checkpoint_commit": "",
   "claim_expires": "2026-09-24T13:09:14+00:00",
   "depends_on": [
@@ -21,7 +21,7 @@
   "task_revision": 5,
   "title": "Literature workload catalog activation",
   "updated_at": "2026-09-24T11:09:14+00:00",
-  "worktree_key": ""
+  "worktree_key": "agent-systems-benchmark-ar-1400"
 }
 ---
 
