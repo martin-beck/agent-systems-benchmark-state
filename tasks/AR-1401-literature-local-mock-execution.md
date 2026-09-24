@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide offline deterministic mock execution for every documented literature workload family.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Literature workload local mock execution",
-  "updated_at": "2026-09-24T12:29:08+00:00",
+  "updated_at": "2026-09-24T12:29:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1401"
 }
 ---
@@ -140,3 +140,6 @@ record to official, native-tested, or externally qualified.
   merge_pr.py verified exact base/head/tree, signed merge, DCO, and published main. Post-merge runs:
   Rust 35999235653, quality 35999235596, fault 35999235616, emulated AArch64 35999235602, headers
   35999236817, hosted 35999235751, formal 35999236510.
+
+- 2026-09-24T12:29:18+00:00: Recorded command exit 0; command argv SHA-256
+  64ec9ef32fdba757307e832069e8a82452eb94f98753f4c1a7e9064660f7e3a5.
