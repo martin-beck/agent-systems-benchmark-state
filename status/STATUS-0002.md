@@ -99,7 +99,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1435](../tasks/AR-1435-local-mock-cli-wiring.md): Local mock CLI wiring | codex-asb-ar1435-local-mock-luna56 | Wire deterministic local mock attempts into asb run and sweep configuration qualification. | Run focused CLI/runtime tests and full locked workspace gates, then review exact diff and publish signed+DCO PR. |
+| P0 | [AR-1435](../tasks/AR-1435-local-mock-cli-wiring.md): Local mock CLI wiring | codex-asb-ar1435-local-mock-luna56 | Wire deterministic local mock attempts into asb run and sweep configuration qualification. | Run full locked workspace test with pipefail and bounded output, then workspace clippy/docs/fmt, independent review, and PR publication. |
 
 ### Blocked (66)
 

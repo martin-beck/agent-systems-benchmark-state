@@ -7,7 +7,7 @@
     "AR-1434"
   ],
   "id": "AR-1435",
-  "next_action": "Run focused CLI/runtime tests and full locked workspace gates, then review exact diff and publish signed+DCO PR.",
+  "next_action": "Run full locked workspace test with pipefail and bounded output, then workspace clippy/docs/fmt, independent review, and PR publication.",
   "observed_branch": "feature/ar-1435-local-mock-cli-wiring",
   "observed_dirty": 0,
   "observed_head": "2b47c571afc3c22cd72ca2795807d1bd53db5418",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire deterministic local mock attempts into asb run and sweep configuration qualification.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Local mock CLI wiring",
-  "updated_at": "2026-09-24T23:56:51+00:00",
+  "updated_at": "2026-09-24T23:57:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1435-local-mock-cli-wiring"
 }
 ---
@@ -76,3 +76,9 @@ it must not contact OpenRouter or any external provider, mint
 
 - 2026-09-24T23:56:40+00:00: Recorded command exit 101; command argv SHA-256
   15760dacacada8a6ae6055327df44a002533e16749730432c54712b4c48cd432.
+
+- 2026-09-24T23:57:03+00:00: Diagnosed exit-101 records at 23:55:05/19/33 as operator invocations
+  run from coordination state checkout; each failed before Cargo because state has no Cargo.toml.
+  Corrected commands explicitly cd into product worktree; focused CLI config run/sweep and runtime
+  local_mock tests passed. A later exit-101 at 23:56:40 is retained for diagnosis after the bounded
+  workspace rerun. Worktree key and product checkpoint are durably bound.
