@@ -16,7 +16,7 @@
   "id": "AR-1390",
   "next_action": "Claim the pre-bound isolated worktree, implement the runtime-owned live acquisition and normal CLI run/sweep bridge, and publish a signed PR.",
   "observed_branch": "feature/ar-1390-runtime-live-acquisition-cli",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "10bffbf015bd7ca78d8c0d18f04cf0190195e933",
   "owner": "codex-asb-ar1329-repair-luna56",
   "plan": "../plans/AR-1390-runtime-live-acquisition-cli.md",
@@ -24,9 +24,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compose runtime-owned live provider acquisition and wire it into normal ASB run and sweep.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Runtime live acquisition and CLI bridge",
-  "updated_at": "2026-09-24T07:39:29+00:00",
+  "updated_at": "2026-09-24T07:39:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1390-runtime-live-acquisition-cli"
 }
 ---
