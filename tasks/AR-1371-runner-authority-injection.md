@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1371-runner-authority-injection",
   "checkpoint_commit": "fb581f916970a1df99c20ae2a0f58f91d33420ff",
-  "claim_expires": "2026-09-24T03:10:24+00:00",
+  "claim_expires": "2026-09-24T03:11:39+00:00",
   "depends_on": [
     "AR-1288"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Inject existing authenticated certificate authority and runtime enrollment material into RunnerBackend/Catalog without synthetic authority.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Runner authority injection",
-  "updated_at": "2026-09-24T01:11:26+00:00",
+  "updated_at": "2026-09-24T01:11:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1371-runner-authority-injection"
 }
 ---
@@ -111,3 +111,5 @@ trust or launch authority from CLI/config input.
 
 - 2026-09-24T01:11:26+00:00: Recorded command exit 0; command argv SHA-256
   e07f3eaf900c636bb2287c116344ecffe6d7bcc46541b58551b1a488b7a8b0b7.
+
+- 2026-09-24T01:11:39+00:00: Heartbeat by codex-asb-runtime-attested-enrollment-luna56.
