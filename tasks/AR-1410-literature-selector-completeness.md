@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T18:36:37+00:00",
   "depends_on": [
     "AR-1402",
     "AR-1404",
@@ -16,15 +16,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "",
+  "owner": "ar1410-literature-selector-parity-luna56",
   "plan": "../plans/AR-1410-literature-selector-completeness.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Literature selector completeness and parity",
-  "updated_at": "2026-09-24T16:35:43+00:00",
+  "updated_at": "2026-09-24T16:36:37+00:00",
   "worktree_key": ""
 }
 ---
@@ -36,3 +36,5 @@ does not turn external qualification or live-provider access into a prerequisite
   interactive, repository/terminal, code-generation, and long-horizon predecessors are done; verify
   every docs-listed workload ID is selectable through CLI, replay, reporting, and local-mock paths
   without upgrading planned evidence.
+
+- 2026-09-24T16:36:37+00:00: Claimed by ar1410-literature-selector-parity-luna56.
