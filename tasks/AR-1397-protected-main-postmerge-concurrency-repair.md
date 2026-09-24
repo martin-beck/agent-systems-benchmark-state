@@ -7,7 +7,7 @@
     "AR-1337"
   ],
   "id": "AR-1397",
-  "next_action": "PR #286 merged at 123ba915d2732ee8a6c99fae301bfd64cf0aac4f. Monitor exact-main post-merge runs 35983130559, 35983130497, 35983130461, 35983130427, 35983130387, 35983130338, and 35983130335 until all seven are terminal-success; then preserve evidence and release AR-1397 done.",
+  "next_action": "Preserve merge 123ba915d2732ee8a6c99fae301bfd64cf0aac4f and its seven successful post-merge runs as immutable evidence; it has exact tree/parents but GitHub-generated signature E and no matching Signed-off-by trailer. Create a signed descendant repair AR through the local merge path, then rerun exact-main gates before closing AR-1314/AR-1395/AR-1397.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair protected-main merge-tree admission and serialize exact post-merge evidence across concurrent main pushes.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Protected-main post-merge concurrency and tree repair",
-  "updated_at": "2026-09-24T09:46:35+00:00",
+  "updated_at": "2026-09-24T09:53:39+00:00",
   "worktree_key": ""
 }
 ---
@@ -81,3 +81,8 @@ it must retain the default signature-required and exact-tree gates.
   1bcd946 was merged as 123ba915. The local exact merge command had failed closed earlier when
   target advanced, preserving the invariant. Seven exact-main post-merge workflows dispatched for
   the merge; headers already succeeded.
+
+- 2026-09-24T09:53:39+00:00: Final audit found protected merge 123ba915 lacks required SSH signature
+  and matching DCO trailer despite exact tree/parents and all seven post-merge workflow successes.
+  No false completion: preserve the historical merge and evidence; signed descendant recovery is
+  required.
