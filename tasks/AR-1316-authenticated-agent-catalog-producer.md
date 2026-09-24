@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1316-authenticated-agent-catalog-producer",
   "checkpoint_commit": "0dcc71705eb610e4c3ab6a9f775a9d7b9b25218a",
-  "claim_expires": "2026-09-24T20:51:27+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1190",
     "AR-1191",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1316-authenticated-agent-catalog-producer",
   "observed_dirty": 0,
   "observed_head": "0dcc71705eb610e4c3ab6a9f775a9d7b9b25218a",
-  "owner": "ar1316-authenticated-agent-catalog-producer-luna56",
+  "owner": "",
   "plan": "../plans/AR-1316.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Publish the verified ASB agent catalog required by the first-run setup wizard.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Authenticated agent catalog producer",
-  "updated_at": "2026-09-24T19:08:19+00:00",
+  "updated_at": "2026-09-24T19:08:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1316"
 }
 ---
@@ -163,3 +163,15 @@ Progress evidence: ASB PR #245 merged at `027af7ad27da13b359b3f099699c42b03c6f39
 
 - 2026-09-24T19:08:19+00:00: Recorded command exit 0; command argv SHA-256
   391f5fecbcf4754331e14cedd4842372a8cd857bfc4a24c3c174b0bb719cc923.
+
+- 2026-09-24T19:08:50+00:00: Released as already satisfied on exact current main
+  0dcc71705eb610e4c3ab6a9f775a9d7b9b25218a; no duplicate product diff or PR created. Durable
+  authenticated agent-catalog producer is present in main: persisted generation/snapshot, signed
+  local release-index verification, target binding, unavailable-entry fail-closed behavior, refresh
+  fencing, restart persistence, and digest identity. Focused agent_catalog tests passed 2/2;
+  serialized cargo test --locked --workspace -- --test-threads=1 passed all workspace and doc tests;
+  cargo clippy --locked --workspace --all-targets -- -D warnings passed. Historical integration PRs
+  #245 (merge 027af7ad), #246 (merge 77571ff), and #247 (merge a4934fca; final signed release-index
+  source d4a62f3) are merged. PR #247 had exact base 77571ff/head d4a62f3, all required checks
+  SUCCESS, and post-merge runs SUCCESS: 35557135917, 35557135771, 35557135764, 35557135810,
+  35557135844, 35557135915, 35557135766, 35706022545.
