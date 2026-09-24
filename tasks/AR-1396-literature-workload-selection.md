@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make qualified literature workload families selectable beside built-in ASB software-engineering fixtures.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Literature workload selection",
-  "updated_at": "2026-09-24T10:15:51+00:00",
+  "updated_at": "2026-09-24T10:16:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1396"
 }
 ---
@@ -52,3 +52,6 @@ platform gates.
 
 - 2026-09-24T10:15:51+00:00: Recorded command exit 0; command argv SHA-256
   7acbfc5643fcdbb7873911f066ea0978161873ca42a6d1e5ce60fbf5ee666e26.
+
+- 2026-09-24T10:16:06+00:00: Recorded command exit 0; command argv SHA-256
+  7e95d847fbc0a65d817802508e657e3c046e6fddef969fd1dd6e6ad176f63746.
