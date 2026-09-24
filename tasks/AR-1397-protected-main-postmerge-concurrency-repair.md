@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1397-protected-main-postmerge-concurrency",
   "checkpoint_commit": "123ba915d2732ee8a6c99fae301bfd64cf0aac4f",
-  "claim_expires": "2026-09-24T11:35:34+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1337"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "ar1397-protected-main-repair-luna56",
+  "owner": "",
   "plan": "../plans/AR-1397-protected-main-postmerge-concurrency-repair.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Repair protected-main merge-tree admission and serialize exact post-merge evidence across concurrent main pushes.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Protected-main post-merge concurrency and tree repair",
-  "updated_at": "2026-09-24T09:53:39+00:00",
+  "updated_at": "2026-09-24T10:30:48+00:00",
   "worktree_key": ""
 }
 ---
@@ -86,3 +86,9 @@ it must retain the default signature-required and exact-tree gates.
   and matching DCO trailer despite exact tree/parents and all seven post-merge workflow successes.
   No false completion: preserve the historical merge and evidence; signed descendant recovery is
   required.
+
+- 2026-09-24T10:30:48+00:00: PR #286 merge 123ba915 remains preserved as unsigned historical
+  evidence. Signed descendant recovery AR-1398 merged as b63394b167d453738364f4eca73af76838ef1937
+  with exact parents (123ba915,f5680de), identical tree, valid SSH signature and matching DCO. All
+  seven exact-main post-merge workflows succeeded: 35986670232, 35986670215, 35986670237,
+  35986670309, 35986670359, 35986670370, 35986670435.
