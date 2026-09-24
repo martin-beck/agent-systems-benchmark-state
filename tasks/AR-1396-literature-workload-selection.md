@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar-1396-literature-selection",
   "checkpoint_commit": "58bc56f0b793c4f42e83cbe27515d63d22cfda51",
-  "claim_expires": "2026-09-24T12:04:58+00:00",
+  "claim_expires": "2026-09-24T12:18:05+00:00",
   "depends_on": [
     "AR-1395",
     "AR-1399"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make qualified literature workload families selectable beside built-in ASB software-engineering fixtures.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Literature workload selection",
-  "updated_at": "2026-09-24T10:38:37+00:00",
+  "updated_at": "2026-09-24T10:48:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1396"
 }
 ---
@@ -143,3 +143,5 @@ platform gates.
   unchanged. Updated workflow provenance digest. Wrapped workflow_transcript tests pass 3/3; prior
   wrapped cargo test -p asb-cli failure was exact provenance drift (old cli_source_sha256), repaired
   in 58bc56f.
+
+- 2026-09-24T10:48:05+00:00: Heartbeat by codex-asb-ar1396-literature-selection-luna56.
