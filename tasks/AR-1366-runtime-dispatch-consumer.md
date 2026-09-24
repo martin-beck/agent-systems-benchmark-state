@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect runtime-owned authenticated receipt consumption to the benchmark dispatch path without exposing authority to CLI callers.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Runtime-owned dispatch consumer",
-  "updated_at": "2026-09-24T00:20:18+00:00",
+  "updated_at": "2026-09-24T00:20:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1366-runtime-dispatch-consumer"
 }
 ---
@@ -41,3 +41,6 @@ synthesize authority from CLI/config input.
 
 - 2026-09-24T00:20:08+00:00: Recorded command exit 0; command argv SHA-256
   f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
+
+- 2026-09-24T00:20:34+00:00: Recorded command exit 0; command argv SHA-256
+  e475db482c18adafb20054d769a9af2c3bc909664f6393e66ab582dd9cb997af.
