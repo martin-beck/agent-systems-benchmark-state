@@ -9,18 +9,18 @@
   ],
   "id": "AR-1418",
   "next_action": "Promote after AR-1416 is released; audit tau-bench and AgentDojo literature records, then implement separate reliability and safety workload selectors with deterministic mocks.",
-  "observed_branch": "",
+  "observed_branch": "codex/ar-1418-tool-use-reliability-safety",
   "observed_dirty": 0,
-  "observed_head": "0000000000000000000000000000000000000000",
+  "observed_head": "0dcc71705eb610e4c3ab6a9f775a9d7b9b25218a",
   "owner": "ar1418-tool-use-reliability-safety-luna56",
   "plan": "../plans/AR-1418.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add selectable tool-use reliability and safety workloads from the literature with separate metrics.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Tool-use reliability and safety workloads",
-  "updated_at": "2026-09-24T19:14:44+00:00",
+  "updated_at": "2026-09-24T19:14:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1418"
 }
 ---
