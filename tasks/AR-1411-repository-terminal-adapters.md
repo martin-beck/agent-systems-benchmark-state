@@ -8,7 +8,7 @@
     "AR-1401"
   ],
   "id": "AR-1411",
-  "next_action": "Review full diff, run focused/full applicable gates, then publish signed+DCO PR against exact protected main fc74825cb86991bb3afac6854d8cb5048118ff8f.",
+  "next_action": "Independently review complete diff, publish PR against exact protected main fc74825cb86991bb3afac6854d8cb5048118ff8f, then exact-head checks and merge workflow.",
   "observed_branch": "codex/ar-1411-repository-terminal",
   "observed_dirty": 0,
   "observed_head": "67129e7504dc28d8f8e02a6bbb955f6683917208",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add selectable, provenance-preserving repository-repair and terminal benchmark adapters.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Repository and terminal literature workload adapters",
-  "updated_at": "2026-09-24T14:28:08+00:00",
+  "updated_at": "2026-09-24T14:28:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1411"
 }
 ---
@@ -121,3 +121,8 @@ bounded local fixtures or LiteLLM-compatible mocks only.
 
 - 2026-09-24T14:28:08+00:00: Recorded command exit 0; command argv SHA-256
   a8e83febbf9457366a6bfe2bdd8c3c88acbb2699f2dd970fa393a14adc54bf22.
+
+- 2026-09-24T14:28:35+00:00: Workspace cargo test --locked --workspace passed (full suite; one
+  pre-existing ignored native OpenHands test), cargo clippy --workspace --all-targets -D warnings
+  passed, focused asb-workloads tests passed, cargo fmt --check and diff check passed.
+  Implementation remains clean at signed+DCO 67129e7.

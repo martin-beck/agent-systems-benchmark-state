@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1411](tasks/AR-1411-repository-terminal-adapters.md): Repository and terminal literature workload adapters | Add selectable, provenance-preserving repository-repair and terminal benchmark adapters. | Review full diff, run focused/full applicable gates, then publish signed+DCO PR against exact protected main fc74825cb86991bb3afac6854d8cb5048118ff8f. | ar1411_repository_terminal_luna56 |
+| P1 | [AR-1411](tasks/AR-1411-repository-terminal-adapters.md): Repository and terminal literature workload adapters | Add selectable, provenance-preserving repository-repair and terminal benchmark adapters. | Independently review complete diff, publish PR against exact protected main fc74825cb86991bb3afac6854d8cb5048118ff8f, then exact-head checks and merge workflow. | ar1411_repository_terminal_luna56 |
 | P1 | [AR-1412](tasks/AR-1412-code-generation-control-adapters.md): Code-generation control workload adapters | Recovered an abandoned claim with malformed local-time expiry; branch/worktree are now coordinator-bound before the next claim. | Claim after binding metadata; implement offline-selectable code-generation control adapters. | ar1412_code_generation_luna56b |
 
 ## Open
