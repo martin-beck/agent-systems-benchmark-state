@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recovered an abandoned claim with malformed local-time expiry; branch/worktree are now coordinator-bound before the next claim.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Code-generation control workload adapters",
-  "updated_at": "2026-09-24T14:29:52+00:00",
+  "updated_at": "2026-09-24T14:30:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1412"
 }
 ---
@@ -40,3 +40,6 @@ bounded local fixtures or LiteLLM-compatible mocks only.
   agent-systems-benchmark-ar-1412 are bound for the next claim.
 
 - 2026-09-24T14:27:41+00:00: Claimed by ar1412_code_generation_luna56b.
+
+- 2026-09-24T14:30:40+00:00: Recorded command exit 1; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
