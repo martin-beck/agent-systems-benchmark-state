@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach users to test configured-agent benchmark eligibility without running an agent.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Agent benchmark-readiness tutorial",
-  "updated_at": "2026-09-24T19:08:53+00:00",
+  "updated_at": "2026-09-24T19:09:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1212"
 }
 ---
@@ -131,3 +131,8 @@ Implement the linked tutorial and deterministic negative/positive syntax fixture
 
 - 2026-09-24T19:08:53+00:00: Recorded command exit 0; command argv SHA-256
   aa2bee29186962c740c9a0591591ec570976f865f5d62bb058e583f734384f12.
+
+- 2026-09-24T19:09:26+00:00: Repaired PR #305 by amending the private branch to one SSH-signed DCO
+  commit 3fda4b4 with the positive fixture command formatted across lines. Exact-base gitleaks now
+  passes with no leaks; no policy/config exception was added. Focused and full applicable gates are
+  being rerun before force-with-lease publication.
