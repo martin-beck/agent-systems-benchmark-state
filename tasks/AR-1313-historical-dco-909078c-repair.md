@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Forward-only signed DCO recovery candidate published as PR #231.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Historical DCO merge-integrity recovery",
-  "updated_at": "2026-09-24T11:21:41+00:00",
+  "updated_at": "2026-09-24T11:21:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1313-historical-dco-909078c"
 }
 ---
@@ -97,3 +97,6 @@ blocked with the exact failure and do not weaken the policy.
   current-main empty signed+DCO recovery 3420355d; tree equals e41d4df, signature and DCO verified,
   repository_policy --base origin/main --head HEAD passed, and merge_pr focused tests passed 11/11.
   No history rewrite or gate weakening.
+
+- 2026-09-24T11:21:50+00:00: Recorded command exit 0; command argv SHA-256
+  8c593b651bedbbe2f5d1bc6dbe6dfe678a271993ff0d51dd317b7fcda2e962d1.
