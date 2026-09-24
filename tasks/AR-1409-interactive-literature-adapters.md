@@ -3,7 +3,10 @@
   "branch": "",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1408", "AR-1401"],
+  "depends_on": [
+    "AR-1408",
+    "AR-1401"
+  ],
   "id": "AR-1409",
   "next_action": "Promote after AR-1408 and AR-1401 are done; implement local deterministic adapters and catalog selection for AgentBench, tau-bench, and AgentDojo.",
   "observed_branch": "",
@@ -13,14 +16,17 @@
   "plan": "../plans/AR-1409-interactive-literature-adapters.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Add offline-selectable interactive and tool-use literature workload adapters.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Interactive literature workload adapters",
-  "updated_at": "2026-09-24T00:00:00+00:00",
+  "updated_at": "2026-09-24T15:09:21+00:00",
   "worktree_key": ""
 }
 ---
 
 Live provider/backend connectivity is never required. Local deterministic or
 LiteLLM-compatible mocks are the only development and CI execution path.
+
+- 2026-09-24T15:09:21+00:00: Dependencies AR-1401 and AR-1408 are done; promote interactive
+  literature adapters for local deterministic/mock execution.
