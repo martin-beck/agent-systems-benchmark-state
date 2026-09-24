@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1432](tasks/AR-1432-local-openrouter-execution-bridge.md): Local OpenRouter execution bridge | Qualify credential-free OpenRouter user execution through a deterministic loopback mock without external-provider access. | Promote after every dependency is done; claim a fresh isolated worktree from protected main and qualify the loopback LiteLLM-compatible mock at the runtime-owned attempt seam. | codex-asb-ar1432-local-openrouter-luna56 |
+| P0 | [AR-1432](tasks/AR-1432-local-openrouter-execution-bridge.md): Local OpenRouter execution bridge | Qualify credential-free OpenRouter user execution through a deterministic loopback mock without external-provider access. | Implement local-only runtime-owned mock enrollment/attempt bridge in the isolated worktree; add hostile egress, teardown, cancellation, and secret non-disclosure tests. Do not synthesize production authority or contact OpenRouter. | codex-asb-ar1432-local-openrouter-luna56 |
 
 ## Blocked
 
