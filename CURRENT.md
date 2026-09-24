@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1434](tasks/AR-1434-runtime-local-mock-attempt-adapter.md): Runtime local mock-attempt adapter | Add an approved runtime mock-attempt adapter for deterministic local run and sweep qualification. | Promote and claim after verifying the complete runtime prerequisite set; implement the mock-only attempt/backend adapter from the AR-1432 blocker evidence without changing production egress or live authority constructors. | - |
+| P0 | [AR-1434](tasks/AR-1434-runtime-local-mock-attempt-adapter.md): Runtime local mock-attempt adapter | Add an approved runtime mock-attempt adapter for deterministic local run and sweep qualification. | Promote and claim after verifying the complete runtime prerequisite set; implement the mock-only attempt/backend adapter from the AR-1432 blocker evidence without changing production egress or live authority constructors. | codex-asb-ar1434-mock-adapter-luna56 |
 
 ## Blocked
 

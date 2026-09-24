@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1434-runtime-local-mock-attempt-adapter",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-25T01:12:47+00:00",
   "depends_on": [
     "AR-1341",
     "AR-1342",
@@ -12,15 +12,15 @@
   ],
   "id": "AR-1434",
   "next_action": "Promote and claim after verifying the complete runtime prerequisite set; implement the mock-only attempt/backend adapter from the AR-1432 blocker evidence without changing production egress or live authority constructors.",
-  "owner": "",
+  "owner": "codex-asb-ar1434-mock-adapter-luna56",
   "plan": "../plans/AR-1434-runtime-local-mock-attempt-adapter.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Add an approved runtime mock-attempt adapter for deterministic local run and sweep qualification.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Runtime local mock-attempt adapter",
-  "updated_at": "2026-09-24T23:12:41+00:00",
+  "updated_at": "2026-09-24T23:12:47+00:00",
   "worktree_key": ""
 }
 ---
@@ -32,3 +32,5 @@ external provider.
 - 2026-09-24T23:12:41+00:00: Dependencies AR-1341, AR-1342, AR-1385, AR-1388, and AR-1393 are
   complete. AR-1432 is retained as blocker evidence only; this repair addresses its missing
   mock-attempt/backend seam without changing blocked predecessor state.
+
+- 2026-09-24T23:12:47+00:00: Claimed by codex-asb-ar1434-mock-adapter-luna56.
