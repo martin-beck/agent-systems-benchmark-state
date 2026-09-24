@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add truthful long-horizon, refreshed, performance, and reproducibility workload adapters.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Long-horizon and performance literature workload adapters",
-  "updated_at": "2026-09-24T14:49:19+00:00",
+  "updated_at": "2026-09-24T14:49:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1413"
 }
 ---
@@ -35,3 +35,6 @@ bounded local fixtures or LiteLLM-compatible mocks only.
   codex/ar-1413-long-horizon-performance and worktree agent-systems-benchmark-ar-1413 before claim.
 
 - 2026-09-24T14:49:19+00:00: Claimed by ar1413_long_horizon_performance_luna56.
+
+- 2026-09-24T14:49:31+00:00: Recorded command exit 0; command argv SHA-256
+  5345cd4b5f66285dc80cddfe59c0a95475263f9ff88d25d2639fce3c300aa4b9.
