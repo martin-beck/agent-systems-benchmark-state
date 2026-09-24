@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-24T03:36:19+00:00",
   "depends_on": [],
   "id": "AR-1372",
-  "next_action": "PR #272 exact head 6b682f5 is signed+DCO with a real trailer and no product diff. Three exact-head checks are pending; verify all required checks before protected non-squash merge, then monitor seven post-merge workflows.",
+  "next_action": "PR #272 merged with protected non-squash topology as 265b936d995148f8e40e36664cf68bf12affc20d. Seven post-merge workflows for exact merge are running; monitor all to terminal success, then release AR-1372 and reconcile AR-1371.",
   "observed_branch": "feature/ar-1372-topology-repair",
   "observed_dirty": 0,
   "observed_head": "6b682f5f5ff7d27b7697793417cfc4f8992095e1",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair protected-main merge topology after AR-1371 without changing product behavior.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Protected merge topology repair",
-  "updated_at": "2026-09-24T01:37:40+00:00",
+  "updated_at": "2026-09-24T01:38:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1372-topology-repair"
 }
 ---
@@ -66,3 +66,8 @@ topology; no gate may be weakened.
 
 - 2026-09-24T01:37:40+00:00: Recorded command exit 0; command argv SHA-256
   97d545927e55bf8bf4b8ec5999183eeec6e46a9def72218ba376d87be2b16133.
+
+- 2026-09-24T01:38:15+00:00: Protected merge completed after all 12 exact-head checks passed. Merge
+  commit 265b936d has two parents as required; product tree remains unchanged. Post-merge: headers
+  green; Rust, hosted portability, fault, emulated aarch64, repository quality, and formal assurance
+  in progress.

@@ -1,6 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| P0 | [AR-1372](../tasks/AR-1372-topology-repair.md): Protected merge topology repair | codex-asb-topology-repair-luna56 | Repair protected-main merge topology after AR-1371 without changing product behavior. | PR #272 exact head 6b682f5 is signed+DCO with a real trailer and no product diff. Three exact-head checks are pending; verify all required checks before protected non-squash merge, then monitor seven post-merge workflows. |
+| P0 | [AR-1372](../tasks/AR-1372-topology-repair.md): Protected merge topology repair | codex-asb-topology-repair-luna56 | Repair protected-main merge topology after AR-1371 without changing product behavior. | PR #272 merged with protected non-squash topology as 265b936d995148f8e40e36664cf68bf12affc20d. Seven post-merge workflows for exact merge are running; monitor all to terminal success, then release AR-1372 and reconcile AR-1371. |
 
 ### Open (4)
 
