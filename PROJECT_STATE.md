@@ -26,7 +26,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36009509289 | `99a1af7c2762` | push | Fault assurance | in_progress:- |
 | 36009509287 | `99a1af7c2762` | push | Emulated aarch64 portability | in_progress:- |
 | 36009509259 | `99a1af7c2762` | push | Repository quality | in_progress:- |
-| 36009509255 | `99a1af7c2762` | push | Hosted portability and native qualification | in_progress:- |
+| 36009509255 | `99a1af7c2762` | push | Hosted portability and native qualification | completed:success |
 | 36008590303 | `b0ed118cbe57` | pull_request | Rust verification | completed:success |
 | 36008590283 | `b0ed118cbe57` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36008590279 | `b0ed118cbe57` | pull_request | Hosted portability and native qualification | completed:success |
