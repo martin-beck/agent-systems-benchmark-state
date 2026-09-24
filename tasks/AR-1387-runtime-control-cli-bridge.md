@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1387-runtime-control-cli-bridge",
   "checkpoint_commit": "25548846966e37646dded8d67ed8ee5123b8bc32",
-  "claim_expires": "2026-09-24T07:37:26+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1385",
     "AR-1384",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1387-runtime-control-cli-bridge",
   "observed_dirty": 0,
   "observed_head": "25548846966e37646dded8d67ed8ee5123b8bc32",
-  "owner": "codex-asb-ar1329-repair-luna56",
+  "owner": "",
   "plan": "../plans/AR-1387-runtime-control-cli-bridge.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Bridge authenticated runtime/control bootstrap state into the production CLI dispatch path.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Authenticated runtime-control CLI bridge",
-  "updated_at": "2026-09-24T06:38:30+00:00",
+  "updated_at": "2026-09-24T06:38:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1387-runtime-control-cli-bridge"
 }
 ---
@@ -41,3 +41,13 @@ namespace identity, or launch token may become caller authority.
 
 - 2026-09-24T06:38:30+00:00: Recorded command exit 0; command argv SHA-256
   b424a9b48859c95f2c076c63eb8af7f081718e87da9bcd44a60969f81404e3fb.
+
+- 2026-09-24T06:38:54+00:00: Authenticated bridge audit remains blocked at a real authority source:
+  RunnerBackend persists only digest-bound RuntimeAuthorityRecord and serves RuntimeReceipt over
+  control, but no production runtime constructor converts the enrolled receipt/chain into
+  LiveProviderRuntimeBootstrapSpec (policy, concrete allowlist, lease/relay roots, and pinned
+  ToolPins) or transfers an opaque LiveProviderRuntimeDispatchSource to CLI. Existing profile
+  materialize_handle is crate-private and requires those caller arguments. Exposing them through
+  CLI/config or synthesizing local authority would violate fail-closed boundaries. Runtime
+  dispatch-source tests pass 2/2; no safe product diff made. Coordinator must provide the next
+  narrowly scoped runtime-owned bootstrap materialization source.
