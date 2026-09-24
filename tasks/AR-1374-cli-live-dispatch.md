@@ -3,7 +3,12 @@
   "branch": "feature/ar-1374-cli-live-dispatch",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1373", "AR-1339", "AR-1340", "AR-1328"],
+  "depends_on": [
+    "AR-1373",
+    "AR-1339",
+    "AR-1340",
+    "AR-1328"
+  ],
   "id": "AR-1374",
   "next_action": "Await dependency completion, then audit and implement runtime-owned asb run/sweep dispatch using the authenticated receipt source.",
   "observed_branch": "",
@@ -13,11 +18,11 @@
   "plan": "../plans/AR-1374-cli-live-dispatch.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Consume authenticated runtime receipts in production asb run and sweep dispatch.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Production live-provider dispatch",
-  "updated_at": "2026-09-24T02:35:00+00:00",
+  "updated_at": "2026-09-24T02:33:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1374-cli-live-dispatch"
 }
 ---
@@ -28,3 +33,6 @@ execution and teardown are verified.
 
 - 2026-09-24T02:35:00+00:00: Created as the dependency-valid successor for
   AR-1329 production run/sweep dispatch.
+
+- 2026-09-24T02:33:21+00:00: Dependencies AR-1373, AR-1339, AR-1340, and AR-1328 verified done;
+  promote production dispatch successor.
