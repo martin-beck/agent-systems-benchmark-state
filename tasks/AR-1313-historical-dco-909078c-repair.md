@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1313-historical-dco-909078c",
   "checkpoint_commit": "3420355d8a0855aea696775cfe85cc628773c842",
-  "claim_expires": "2026-09-24T13:20:41+00:00",
+  "claim_expires": "2026-09-24T13:22:45+00:00",
   "depends_on": [],
   "id": "AR-1313",
   "next_action": "Publish the current-main signed recovery candidate as a PR, run exact-head checks and independent review, then merge only after all required checks pass.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Forward-only signed DCO recovery candidate published as PR #231.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Historical DCO merge-integrity recovery",
-  "updated_at": "2026-09-24T11:21:50+00:00",
+  "updated_at": "2026-09-24T11:22:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1313-historical-dco-909078c"
 }
 ---
@@ -100,3 +100,5 @@ blocked with the exact failure and do not weaken the policy.
 
 - 2026-09-24T11:21:50+00:00: Recorded command exit 0; command argv SHA-256
   8c593b651bedbbe2f5d1bc6dbe6dfe678a271993ff0d51dd317b7fcda2e962d1.
+
+- 2026-09-24T11:22:45+00:00: Heartbeat by ar1313_recovery_luna56.
