@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Restore signed+DCO protected-main evidence after an unsigned GitHub-generated repair merge.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Signed protected-main recovery",
-  "updated_at": "2026-09-24T10:02:32+00:00",
+  "updated_at": "2026-09-24T10:03:09+00:00",
   "worktree_key": ""
 }
 ---
@@ -51,3 +51,6 @@ providers are never required for development evidence.
   tree, zero files changed. Initial push attempt omitted fully qualified refs and was rejected
   without remote effect; corrected push succeeded to repair/ar-1398-signed-protected-main-recovery.
   Continue with PR review and exact-main qualification.
+
+- 2026-09-24T10:03:09+00:00: Recorded command exit 0; command argv SHA-256
+  e104568cf8d119cf1befccb214dd9155882c8513a5c249e8b44ee403a4d84634.
