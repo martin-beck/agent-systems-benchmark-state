@@ -9,17 +9,17 @@
   "id": "AR-1389",
   "next_action": "Claim the pre-bound isolated worktree, repair the evidenced formal fixture ETXTBSY race without weakening gates, and publish a signed PR.",
   "observed_branch": "feature/ar-1389-formal-fixture-exec-race",
-  "observed_dirty": 1,
-  "observed_head": "8c88b9ec9b4f529ebe30cb230029b2575ad4e6e5",
+  "observed_dirty": 0,
+  "observed_head": "444a61d603f124d12cdd6505d4ff1fab1d6d2104",
   "owner": "codex-asb-ar1329-repair-luna56",
   "plan": "../plans/AR-1389-formal-fixture-exec-race.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the formal online-build fixture race that caused ETXTBSY after AR-1388 merge.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Formal fixture executable race repair",
-  "updated_at": "2026-09-24T07:13:29+00:00",
+  "updated_at": "2026-09-24T07:13:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1389-formal-fixture-exec-race"
 }
 ---
