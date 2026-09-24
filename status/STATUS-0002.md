@@ -17,12 +17,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1379](../tasks/AR-1379-live-dispatch-integration.md): Production live dispatch integration | codex-asb-runtime-receipt-source-luna56 | Integrate authenticated runtime live dispatch into asb run and sweep. | Promote and claim this dependency-valid production dispatch successor, refresh an isolated worktree, and wire the authenticated adapter into asb run/sweep. |
-
 ### Open (4)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -32,7 +26,7 @@
 | P0 | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | Unclaimed | Publish the verified ASB agent catalog required by the first-run setup wizard. | Persist the authenticated catalog snapshot/generation and complete live ASB-to-asb-tui wizard evidence; keep all entries unavailable until a verified release closure exists. |
 | P1 | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md): Live-provider run execution for real agents | Unclaimed | Execute real agents against the selected provider through asb run and sweep with credential-free resolution. | BLOCKED pending coordinator-created repair AR: implement runtime-owned LiveProviderRuntimeService acquisition for production asb run/sweep. Service must resolve pinned provider policy to concrete public target(s), obtain credential through enrolled environment channel without evidence disclosure, construct attested child namespace handoff and relay listener, reserve ResourceLease, create SandboxBackend with pinned live gate, attest and issue one LiveProviderAttempt per scheduler attempt, and teardown on cancellation. Then AR-1329 can wire dispatch --provider-selection/--live-provider while preserving NetworkPolicy::Deny and direct/alternate egress denial. |
 
-### Blocked (59)
+### Blocked (60)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -80,6 +74,7 @@
 | P0 | [AR-1368](../tasks/AR-1368-control-receipt-runtime-source.md): Control receipt runtime source | Unclaimed | Provide the authenticated runtime-owned ControlClient receipt source required by AR-1329 production dispatch. | Promote and claim the missing runtime-owned ControlClient receipt source, then add the authenticated control operation and production enrollment materialization without exposing authority. |
 | P0 | [AR-1374](../tasks/AR-1374-cli-live-dispatch.md): Production live-provider dispatch | Unclaimed | Consume authenticated runtime receipts in production asb run and sweep dispatch. | Await dependency completion, then audit and implement runtime-owned asb run/sweep dispatch using the authenticated receipt source. |
 | P0 | [AR-1376](../tasks/AR-1376-runtime-live-adapter.md): Runtime-owned live adapter | Unclaimed | Materialize authenticated runtime receipts into opaque live dispatch attempts. | Audit blocker: ControlClient can issue RuntimeReceipt, but no runtime-owned authenticated chain store/source is available to validate the receipt. Do not synthesize a chain or accept caller authority. Create a successor for chain enrollment materialization before adapter implementation. |
+| P0 | [AR-1379](../tasks/AR-1379-live-dispatch-integration.md): Production live dispatch integration | Unclaimed | Integrate authenticated runtime live dispatch into asb run and sweep. | Promote and claim this dependency-valid production dispatch successor, refresh an isolated worktree, and wire the authenticated adapter into asb run/sweep. |
 | P1 | [AR-0604](../tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Unclaimed | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Obtain authorized native x86 runner and immutable CSB/Python evidence; rerun native_boundary and record A/B overhead. |
 | P1 | [AR-0704](../tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | PR #119 exact e2e3574 is green except quality 35401437247 at 89.99&#37; coverage. Preserve PR; repair via AR-1312 when promotable. Do not merge or weaken 90&#37;. |
 | P1 | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Unclaimed | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Create successor AR for authenticated route/ancestor authority; preserve AR-1288 evidence and AR-0814 head 29cfa193. |

@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1379-live-dispatch-integration",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-24T05:33:05+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1378",
     "AR-1377",
@@ -15,15 +15,15 @@
   "observed_branch": "feature/ar-1379-live-dispatch-integration",
   "observed_dirty": 0,
   "observed_head": "d4a3e14e86a75bcb0c4f004e8d997b2321bf0fb5",
-  "owner": "codex-asb-runtime-receipt-source-luna56",
+  "owner": "",
   "plan": "../plans/AR-1379-live-dispatch-integration.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Integrate authenticated runtime live dispatch into asb run and sweep.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Production live dispatch integration",
-  "updated_at": "2026-09-24T03:33:35+00:00",
+  "updated_at": "2026-09-24T03:33:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1379-live-dispatch-integration"
 }
 ---
@@ -52,3 +52,9 @@ verified through the completed gates.
 
 - 2026-09-24T03:33:35+00:00: Recorded command exit 0; command argv SHA-256
   39cf5398131881d6bebfeb6940a170dba53287cbad205a984f34c80a6dbe58e7.
+
+- 2026-09-24T03:33:48+00:00: Audit complete: CLI live scheduler callback receives only input id and
+  warmup, while safe runtime acquisition requires authenticated receipt/chain, validated
+  SandboxLaunchInput, ProcessLimits, adapter identity, lease/relay/namespace/credential context,
+  cancellation, and teardown. No production integration is possible without exposing authority or
+  synthesizing inputs. Created dependency-valid AR-1380 for runtime-owned scheduler composition.
