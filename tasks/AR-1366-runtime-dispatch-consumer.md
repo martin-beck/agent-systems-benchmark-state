@@ -11,7 +11,7 @@
   "id": "AR-1366",
   "next_action": "Promote and claim this dependency-ready task, refresh an isolated worktree to protected main, then implement the runtime-owned dispatch consumer with positive and fail-closed negative tests.",
   "observed_branch": "feature/ar-1366-runtime-dispatch-consumer",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "aa537f6a07ac3476a8c4d6443a8df3c42a1aebc1",
   "owner": "codex-asb-runtime-attested-enrollment-luna56",
   "plan": "../plans/AR-1366-runtime-dispatch-consumer.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect runtime-owned authenticated receipt consumption to the benchmark dispatch path without exposing authority to CLI callers.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Runtime-owned dispatch consumer",
-  "updated_at": "2026-09-24T00:20:08+00:00",
+  "updated_at": "2026-09-24T00:20:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1366-runtime-dispatch-consumer"
 }
 ---
