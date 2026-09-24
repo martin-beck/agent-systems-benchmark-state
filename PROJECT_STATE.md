@@ -20,7 +20,7 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 36004374158 | `6cef4babe3db` | push | Emulated aarch64 portability | in_progress:- |
-| 36004374133 | `6cef4babe3db` | push | Formal assurance | in_progress:- |
+| 36004374133 | `6cef4babe3db` | push | Formal assurance | completed:success |
 | 36004373968 | `6cef4babe3db` | push | Fault assurance | completed:success |
 | 36004373961 | `6cef4babe3db` | push | Huawei MIT source headers | completed:success |
 | 36004373959 | `6cef4babe3db` | push | Hosted portability and native qualification | completed:success |
