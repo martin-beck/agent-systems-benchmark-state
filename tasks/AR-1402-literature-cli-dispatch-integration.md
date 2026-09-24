@@ -1,13 +1,13 @@
 ---
 {
-  "branch": "",
+  "branch": "codex/ar-1402-literature-cli",
   "checkpoint_commit": "",
   "claim_expires": "",
   "depends_on": [
     "AR-1401"
   ],
   "id": "AR-1402",
-  "next_action": "Promote after AR-1401 is done; replace OriginalWorkloads-only CLI seams with catalog/adapter dispatch and run end-to-end offline tests.",
+  "next_action": "Claim after binding metadata repair; create the isolated worktree, replace OriginalWorkloads-only CLI seams with catalog/adapter dispatch, and run end-to-end offline tests.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
@@ -20,7 +20,7 @@
   "task_revision": 4,
   "title": "Literature workload CLI dispatch integration",
   "updated_at": "2026-09-24T12:41:59+00:00",
-  "worktree_key": ""
+  "worktree_key": "agent-systems-benchmark-ar-1402"
 }
 ---
 
