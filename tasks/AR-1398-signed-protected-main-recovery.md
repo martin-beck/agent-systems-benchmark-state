@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1398-signed-protected-main-recovery",
   "checkpoint_commit": "b63394b167d453738364f4eca73af76838ef1937",
-  "claim_expires": "2026-09-24T12:14:38+00:00",
+  "claim_expires": "2026-09-24T12:21:51+00:00",
   "depends_on": [
     "AR-1337"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Restore signed+DCO protected-main evidence after an unsigned GitHub-generated repair merge.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Signed protected-main recovery",
-  "updated_at": "2026-09-24T10:21:38+00:00",
+  "updated_at": "2026-09-24T10:21:51+00:00",
   "worktree_key": ""
 }
 ---
@@ -173,3 +173,5 @@ providers are never required for development evidence.
   workflows dispatched: Huawei 35986670232 (success), emulated aarch64 35986670215, fault
   35986670237, repository quality 35986670309, hosted portability 35986670359, Rust 35986670370,
   formal 35986670435 (remaining six in progress). Historical unsigned merge 123ba915 preserved.
+
+- 2026-09-24T10:21:51+00:00: Heartbeat by ar1398_signed_recovery_luna56.
