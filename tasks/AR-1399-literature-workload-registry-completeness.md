@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1399-literature-workload-registry-completeness.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Represent every docs-listed literature workload family in the strict ASB registry.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Literature workload registry completeness",
-  "updated_at": "2026-09-24T10:00:00+00:00",
+  "updated_at": "2026-09-24T09:58:10+00:00",
   "worktree_key": ""
 }
 ---
@@ -29,3 +29,7 @@
 This AR owns registry/docs completeness only. It does not qualify datasets,
 run external providers, or bypass evaluator, license, reset, platform, or
 native evidence gates.
+
+- 2026-09-24T09:58:10+00:00: AR-1394 registry is done; docs audit identifies missing Harbor, Inspect
+  AI, HAL, AgentBench, tau-bench and AgentDojo records. Add strict fail-closed metadata before
+  selection.
