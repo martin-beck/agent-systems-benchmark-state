@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar-1413-long-horizon-performance",
   "checkpoint_commit": "f3ce434417407d64b14fb0cc1493ffc1f93f3055",
-  "claim_expires": "2026-09-24T15:19:19+00:00",
+  "claim_expires": "2026-09-24T15:30:22+00:00",
   "depends_on": [
     "AR-1408",
     "AR-1401"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add truthful long-horizon, refreshed, performance, and reproducibility workload adapters.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Long-horizon and performance literature workload adapters",
-  "updated_at": "2026-09-24T14:58:57+00:00",
+  "updated_at": "2026-09-24T15:00:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1413"
 }
 ---
@@ -99,3 +99,5 @@ bounded local fixtures or LiteLLM-compatible mocks only.
   ea27dfb4e3a569fd429f99307e91c7629f15f65f. Independent diff review covers 71 lines: metric kind,
   evaluation window, contamination cutoff, archive status, explicit
   SWE-rebench/SWE-Lancer/performance semantics, tests/docs. Branch clean; signed+DCO head f3ce434.
+
+- 2026-09-24T15:00:22+00:00: Heartbeat by ar1413_long_horizon_performance_luna56.
