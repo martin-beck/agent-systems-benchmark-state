@@ -7,16 +7,16 @@
     "AR-1316"
   ],
   "id": "AR-1320",
-  "next_action": "Complete independent review and repository hygiene checks; do not publish until branch diff is clean, signed, DCO-compliant, and PR/CI evidence is available.",
+  "next_action": "Do not create a new PR: origin/main already contains the AR-1320 persistence commit (77571ff), while the isolated branch is 226 commits behind and has no open PR. Release this AR with durable merged-main and verification evidence, then continue with AR-1322.",
   "owner": "codex-ar1320-luna56",
   "plan": "../plans/AR-1320.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist and verify the ASB agent release index used by the setup wizard.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Persisted authenticated agent release index",
-  "updated_at": "2026-09-24T20:15:20+00:00",
+  "updated_at": "2026-09-24T20:16:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1320-persisted-agent-release-index"
 }
 ---
@@ -128,3 +128,8 @@ before any agent can become selectable.
 
 - 2026-09-24T20:15:20+00:00: Recorded command exit 1; command argv SHA-256
   cf20770a9873ddf953a85e787a2b6338d29e543753926e013ed92358a6fec97e.
+
+- 2026-09-24T20:16:33+00:00: Additional exit-1 classification: the 20:15:20 handoffctl run was
+  refused with LOCK_TIMEOUT after 10.0s acquiring the exclusive coordinator lock while concurrent AR
+  workers were reconciling; no product command executed and no product mutation occurred. Corrective
+  action: waited for the lock and retried the read-only origin-main inspection successfully.
