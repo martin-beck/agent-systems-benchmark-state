@@ -7,7 +7,7 @@
     "AR-1211"
   ],
   "id": "AR-1212",
-  "next_action": "Protected merge published successfully as signed merge a2a641417547937ee695f4f6cac53194ba47121e. Verify origin/main exact merge, signature/DCO/tree/parents, then monitor all seven exact-main post-merge workflows. Release AR-1212 only after all seven terminal SUCCESS. Afterwards close stale PR #306 as superseded with AR-1316 evidence.",
+  "next_action": "Protected merge a2a641417547937ee695f4f6cac53194ba47121e is exact origin/main with Good SSH signature, matching DCO, parents 0dcc717/3fda4b4, and tree 9b4ad618. Monitor seven exact-main workflows: hosted 36048088771, aarch64 36048088687, quality 36048088715, Rust 36048088861, headers 36048088696, formal 36048088790, fault 36048088820. Release AR-1212 only after all seven terminal SUCCESS.",
   "observed_branch": "codex/ar-1212-benchmark-readiness",
   "observed_dirty": 0,
   "observed_head": "3fda4b4eb63f928cd446274d9e36af08b5579845",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach users to test configured-agent benchmark eligibility without running an agent.",
-  "task_revision": 68,
+  "task_revision": 69,
   "title": "Agent benchmark-readiness tutorial",
-  "updated_at": "2026-09-24T19:26:59+00:00",
+  "updated_at": "2026-09-24T19:27:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1212"
 }
 ---
@@ -215,3 +215,8 @@ Implement the linked tutorial and deterministic negative/positive syntax fixture
 
 - 2026-09-24T19:26:59+00:00: Recorded command exit 0; command argv SHA-256
   db38544463c9369f31531a341505a4a69e4647e70c288b1f934cbf57f9211f12.
+
+- 2026-09-24T19:27:26+00:00: PR #305 protected merge verified on origin/main:
+  a2a641417547937ee695f4f6cac53194ba47121e, Good SSH signature, Signed-off-by, exact
+  parents/base/head/tree. Seven post-merge workflows started; headers already SUCCESS and six remain
+  in progress.

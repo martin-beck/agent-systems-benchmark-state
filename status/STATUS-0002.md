@@ -82,7 +82,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1212](../tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | open-pr-triage-luna56 | Teach users to test configured-agent benchmark eligibility without running an agent. | Protected merge published successfully as signed merge a2a641417547937ee695f4f6cac53194ba47121e. Verify origin/main exact merge, signature/DCO/tree/parents, then monitor all seven exact-main post-merge workflows. Release AR-1212 only after all seven terminal SUCCESS. Afterwards close stale PR #306 as superseded with AR-1316 evidence. |
+| P0 | [AR-1212](../tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | open-pr-triage-luna56 | Teach users to test configured-agent benchmark eligibility without running an agent. | Protected merge a2a641417547937ee695f4f6cac53194ba47121e is exact origin/main with Good SSH signature, matching DCO, parents 0dcc717/3fda4b4, and tree 9b4ad618. Monitor seven exact-main workflows: hosted 36048088771, aarch64 36048088687, quality 36048088715, Rust 36048088861, headers 36048088696, formal 36048088790, fault 36048088820. Release AR-1212 only after all seven terminal SUCCESS. |
 | P1 | [AR-1417](../tasks/AR-1417-interactive-stateful-literature-workloads.md): Interactive stateful literature workloads | ar1417-literature-luna56 | Add selectable interactive and stateful literature workloads beside built-in software-engineering fixtures. | Promote after AR-1416 is released; audit AgentBench and other docs-listed stateful task sources, then implement the bounded local/mock adapter and catalog records. |
 
 ### Blocked (66)
