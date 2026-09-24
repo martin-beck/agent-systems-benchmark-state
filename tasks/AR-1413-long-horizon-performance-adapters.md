@@ -1,14 +1,14 @@
 ---
 {
   "branch": "codex/ar-1413-long-horizon-performance",
-  "checkpoint_commit": "f78fbabafb84949826d047d31b5e1770a98b8157",
+  "checkpoint_commit": "e4d8e7a70b2cce6f740bb8ababd145295ecc2665",
   "claim_expires": "2026-09-24T15:42:44+00:00",
   "depends_on": [
     "AR-1408",
     "AR-1401"
   ],
   "id": "AR-1413",
-  "next_action": "Independently review PR #299 at exact base 8c640e5994f84135826553ecd7ff73e512998ef5/head f78fbabafb84949826d047d31b5e1770a98b8157; wait for all required checks, then merge via handoffctl.",
+  "next_action": "Monitor post-merge merge=e4d8e7a70b2cce6f740bb8ababd145295ecc2665 workflows 36018871328,36018871319,36018871323,36018871335,36018871358,36018871362,36018871340; release only after all seven terminal success.",
   "observed_branch": "codex/ar-1413-long-horizon-performance",
   "observed_dirty": 0,
   "observed_head": "f78fbabafb84949826d047d31b5e1770a98b8157",
@@ -17,10 +17,10 @@
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "AR-1413 rebased unchanged signed literature metadata onto protected main 8c640e59; PR #299 exact-head checks restarted.",
-  "task_revision": 38,
+  "summary": "PR #299 merged as signed exact-head e4d8e7a7 after all 12 checks succeeded; seven post-merge workflows are running.",
+  "task_revision": 39,
   "title": "Long-horizon and performance literature workload adapters",
-  "updated_at": "2026-09-24T15:16:29+00:00",
+  "updated_at": "2026-09-24T15:17:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1413"
 }
 ---
@@ -135,3 +135,11 @@ bounded local fixtures or LiteLLM-compatible mocks only.
 
 - 2026-09-24T15:16:29+00:00: Recorded command exit 0; command argv SHA-256
   0bffbbae0d6adb41c1900e05616d1ef25cf5f1f64471d6ddf6a63bfd3a35e3fa.
+
+- 2026-09-24T15:17:04+00:00: Independent final review confirmed unchanged two-file diff (65 Rust
+  metadata lines and six documentation lines), clean diff, exact base
+  8c640e5994f84135826553ecd7ff73e512998ef5/head f78fbabafb84949826d047d31b5e1770a98b8157, signed+DCO
+  feature commit and all 12 exact-head PR checks terminal success. Handoffctl signed integration
+  merge produced e4d8e7a70b2cce6f740bb8ababd145295ecc2665, pushed to protected main; merge signature
+  verified SSH SHA256:a36V6yPvRZyxnQ2113tiA/MlHt7mPfJEXAGByBXVkuE and check_dco reported all commits
+  certified. Seven post-merge runs started; do not release until each terminal success.
