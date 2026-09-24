@@ -9,8 +9,9 @@ dispatch without passing `None` or accepting caller-supplied authority.
 
 ## Dependencies
 
-AR-1386, AR-1385, AR-1384, AR-1378, and AR-1377 are done. This successor is
-required before AR-1329 can resume.
+AR-1385, AR-1384, AR-1378, and AR-1377 are done. AR-1386's audit is preserved
+as a blocked predecessor; this successor supersedes its missing bridge scope
+and is required before AR-1329 can resume.
 
 ## Acceptance
 
@@ -26,4 +27,3 @@ required before AR-1329 can resume.
   AR completion or CI and is optional evidence only.
 - Signed+DCO implementation, independent review, focused/full gates,
   exact-head CI, post-merge verification, and durable release evidence pass.
-
