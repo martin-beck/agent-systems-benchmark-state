@@ -15,16 +15,16 @@
   "next_action": "Coordinator must bind branch codex/ar-1410-literature-selector-parity and worktree agent-systems-benchmark-ar-1410; then inspect and implement final literature selector parity gate.",
   "observed_branch": "codex/ar-1410-literature-selector-parity",
   "observed_dirty": 0,
-  "observed_head": "0000000000000000000000000000000000000000",
+  "observed_head": "8da098770e4a78e94f67cf7b13dbebbcd1c5bbac",
   "owner": "ar1410-literature-selector-parity-luna56",
   "plan": "../plans/AR-1410-literature-selector-completeness.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Literature selector completeness and parity",
-  "updated_at": "2026-09-24T16:38:45+00:00",
+  "updated_at": "2026-09-24T16:38:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1410"
 }
 ---
