@@ -17,7 +17,7 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 36038241175 | `c533734a486a` | push | Fault assurance | in_progress:- |
-| 36038241174 | `c533734a486a` | push | Hosted portability and native qualification | in_progress:- |
+| 36038241174 | `c533734a486a` | push | Hosted portability and native qualification | completed:success |
 | 36038241138 | `c533734a486a` | push | Emulated aarch64 portability | in_progress:- |
 | 36038241127 | `c533734a486a` | push | Formal assurance | in_progress:- |
 | 36038241094 | `c533734a486a` | push | Repository quality | in_progress:- |
