@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1378-live-control-adapter",
   "checkpoint_commit": "5f1902c681c9671d332ae662f0516df4d1f688df",
-  "claim_expires": "2026-09-24T05:24:36+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1377",
     "AR-1366",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1378-live-control-adapter",
   "observed_dirty": 0,
   "observed_head": "5f1902c681c9671d332ae662f0516df4d1f688df",
-  "owner": "codex-asb-runtime-receipt-source-luna56",
+  "owner": "",
   "plan": "../plans/AR-1378-live-control-adapter.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Bind authenticated control receipts to runtime-owned live dispatch.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Authenticated live control adapter",
-  "updated_at": "2026-09-24T03:24:36+00:00",
+  "updated_at": "2026-09-24T03:30:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1378-live-control-adapter"
 }
 ---
@@ -89,3 +89,9 @@ chain store; this task supplies only the authenticated control operation seam.
 - 2026-09-24T03:22:37+00:00: Heartbeat by codex-asb-runtime-receipt-source-luna56.
 
 - 2026-09-24T03:24:36+00:00: Heartbeat by codex-asb-runtime-receipt-source-luna56.
+
+- 2026-09-24T03:30:10+00:00: PR #275 merged as 16bca1f9f0dc2d5f8bc8a8709fd98db9a98f78c9 from
+  signed+DCO head 5f1902c681c9671d332ae662f0516df4d1f688df. All seven post-merge workflows terminal
+  success: Rust, repository quality, hosted portability, emulated aarch64, formal, fault, and
+  headers. Focused runtime tests/check/clippy were green. No end-to-end OpenRouter execution
+  evidence claimed.
