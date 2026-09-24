@@ -1,14 +1,14 @@
 ---
 {
   "branch": "codex/ar-1413-long-horizon-performance",
-  "checkpoint_commit": "f3ce434417407d64b14fb0cc1493ffc1f93f3055",
+  "checkpoint_commit": "f78fbabafb84949826d047d31b5e1770a98b8157",
   "claim_expires": "2026-09-24T15:35:10+00:00",
   "depends_on": [
     "AR-1408",
     "AR-1401"
   ],
   "id": "AR-1413",
-  "next_action": "PR #299 open; independently review full diff and wait for exact-head checks at base ea27dfb4e3a569fd429f99307e91c7629f15f65f/head f3ce434417407d64b14fb0cc1493ffc1f93f3055 before signed merge.",
+  "next_action": "Independently review PR #299 at exact base 8c640e5994f84135826553ecd7ff73e512998ef5/head f78fbabafb84949826d047d31b5e1770a98b8157; wait for all required checks, then merge via handoffctl.",
   "observed_branch": "codex/ar-1413-long-horizon-performance",
   "observed_dirty": 0,
   "observed_head": "f78fbabafb84949826d047d31b5e1770a98b8157",
@@ -17,10 +17,10 @@
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Add truthful long-horizon, refreshed, performance, and reproducibility workload adapters.",
-  "task_revision": 31,
+  "summary": "AR-1413 rebased unchanged signed literature metadata onto protected main 8c640e59; PR #299 exact-head checks restarted.",
+  "task_revision": 32,
   "title": "Long-horizon and performance literature workload adapters",
-  "updated_at": "2026-09-24T15:05:56+00:00",
+  "updated_at": "2026-09-24T15:06:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1413"
 }
 ---
@@ -111,3 +111,12 @@ bounded local fixtures or LiteLLM-compatible mocks only.
 
 - 2026-09-24T15:05:45+00:00: Recorded command exit 0; command argv SHA-256
   679edf18e0c001a216bfd501deaece7b5ab92fe76bb2b5e993469c3a86a5725b.
+
+- 2026-09-24T15:06:24+00:00: Protected main advanced via PR #298 to
+  8c640e5994f84135826553ecd7ff73e512998ef5, so stale PR #299 was not merged. Through handoffctl run,
+  fetched origin/main, rebased the unchanged AR-1413 diff, amended the rewritten commit with SSH
+  signature and DCO, and force-with-lease pushed f78fbabafb84949826d047d31b5e1770a98b8157. Existing
+  full cargo test had one unexplained exit 101 at 14:54:59Z; exact same command passed at 14:56:01Z,
+  and subsequent focused/full/clippy checks passed; classify as transient/environmental and retain
+  evidence. PR #299 now exact base 8c640e5994f84135826553ecd7ff73e512998ef5/head
+  f78fbabafb84949826d047d31b5e1770a98b8157; required checks restarted.

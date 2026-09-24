@@ -74,7 +74,7 @@
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1412](../tasks/AR-1412-code-generation-control-adapters.md): Code-generation control workload adapters | ar1412_code_generation_luna56b | Recovered an abandoned claim with malformed local-time expiry; branch/worktree are now coordinator-bound before the next claim. | Wait for fresh exact-head PR #298 checks on 0d94a2e rebased onto current main ea27dfb; independently review exact diff and merge only after all checks are green. |
-| P1 | [AR-1413](../tasks/AR-1413-long-horizon-performance-adapters.md): Long-horizon and performance literature workload adapters | ar1413_long_horizon_performance_luna56 | Add truthful long-horizon, refreshed, performance, and reproducibility workload adapters. | PR #299 open; independently review full diff and wait for exact-head checks at base ea27dfb4e3a569fd429f99307e91c7629f15f65f/head f3ce434417407d64b14fb0cc1493ffc1f93f3055 before signed merge. |
+| P1 | [AR-1413](../tasks/AR-1413-long-horizon-performance-adapters.md): Long-horizon and performance literature workload adapters | ar1413_long_horizon_performance_luna56 | AR-1413 rebased unchanged signed literature metadata onto protected main 8c640e59; PR #299 exact-head checks restarted. | Independently review PR #299 at exact base 8c640e5994f84135826553ecd7ff73e512998ef5/head f78fbabafb84949826d047d31b5e1770a98b8157; wait for all required checks, then merge via handoffctl. |
 
 ### Open (2)
 
