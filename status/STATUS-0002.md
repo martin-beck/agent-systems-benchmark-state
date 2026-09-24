@@ -65,19 +65,19 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1402](../tasks/AR-1402-literature-cli-dispatch-integration.md): Literature workload CLI dispatch integration | ar1402_literature_cli_luna56 | Integrate literature workload catalog and adapters through all ASB CLI execution and evidence paths. | Promote after AR-1401 is done; replace OriginalWorkloads-only CLI seams with catalog/adapter dispatch and run end-to-end offline tests. |
+| P1 | [AR-1408](../tasks/AR-1408-literature-inventory-closure.md): Literature workload inventory closure | ar1408_literature_inventory_luna56b | Close literature-to-catalog gaps and make benchmark versus harness boundaries explicit. | Promote after AR-1400 and AR-1399 are done; reconcile every benchmark named in docs with the catalog and record explicit framework/non-workload boundaries. |
 
-### Open (3)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1212](../tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Unclaimed | Teach users to test configured-agent benchmark eligibility without running an agent. | Implement the offline tutorial for checking agent benchmark readiness under the current configuration. |
 | P0 | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | Unclaimed | Publish the verified ASB agent catalog required by the first-run setup wizard. | Persist the authenticated catalog snapshot/generation and complete live ASB-to-asb-tui wizard evidence; keep all entries unavailable until a verified release closure exists. |
-| P1 | [AR-1408](../tasks/AR-1408-literature-inventory-closure.md): Literature workload inventory closure | Unclaimed | Close literature-to-catalog gaps and make benchmark versus harness boundaries explicit. | Promote after AR-1400 and AR-1399 are done; reconcile every benchmark named in docs with the catalog and record explicit framework/non-workload boundaries. |
 
 ### Blocked (66)
 
