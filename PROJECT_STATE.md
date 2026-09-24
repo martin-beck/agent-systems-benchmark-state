@@ -11,7 +11,7 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #119 | `feature/native-capacity-controller@4630f90af739` | `main` | CLEAN | COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:CANCELLED, COMPLETED:CANCELLED, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(capacity): add bounded native lifecycle controller |
-| #308 | `codex/ar-1421-protected-main-race@28e35608a2a8` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(integration): requalify protected target before merge |
+| #308 | `codex/ar-1421-protected-main-race@28e35608a2a8` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(integration): requalify protected target before merge |
 
 ## Recent workflows
 
@@ -19,7 +19,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 36051793231 | `28e35608a2a8` | pull_request | Formal assurance | completed:success |
 | 36051793224 | `28e35608a2a8` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 36051793194 | `28e35608a2a8` | pull_request | Repository quality | in_progress:- |
+| 36051793194 | `28e35608a2a8` | pull_request | Repository quality | completed:success |
 | 36051793189 | `28e35608a2a8` | pull_request | Huawei MIT source headers | completed:success |
 | 36051793166 | `28e35608a2a8` | pull_request | Hosted portability and native qualification | completed:success |
 | 36051793160 | `28e35608a2a8` | pull_request | Fault assurance | completed:success |
