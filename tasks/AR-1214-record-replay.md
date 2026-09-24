@@ -10,16 +10,16 @@
   "next_action": "Create PR from docs/ar-1214-record-replay; require exact-head CI, independent review, merge, seven post-merge checks, and verification.",
   "observed_branch": "docs/ar-1214-record-replay",
   "observed_dirty": 0,
-  "observed_head": "699ddd679b4108440effc3c65d600b391cd52bfb",
+  "observed_head": "fe00f59becd0b61ec654217ab8d529b25a098bf0",
   "owner": "ar1214_record_replay_luna56",
   "plan": "../plans/AR-1214.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach privacy-safe LLM response recording and strict offline replay.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "LLM response record/replay tutorial",
-  "updated_at": "2026-09-24T21:01:55+00:00",
+  "updated_at": "2026-09-24T21:02:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1214"
 }
 ---
