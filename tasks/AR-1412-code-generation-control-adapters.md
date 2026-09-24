@@ -10,17 +10,17 @@
   "id": "AR-1412",
   "next_action": "Repair clippy large-enum-variant failure by boxing the literature prepared workload, rerun clippy and focused tests, then push a new signed PR head.",
   "observed_branch": "codex/ar-1412-code-generation-controls",
-  "observed_dirty": 1,
-  "observed_head": "dbf7883027179f92d4ca9fb7c6bd96f0e55c9060",
+  "observed_dirty": 0,
+  "observed_head": "d7d035a6c09d248cc747dea4d7fb4a2dd6ab9ef2",
   "owner": "ar1412_code_generation_luna56b",
   "plan": "../plans/AR-1412-code-generation-control-adapters.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recovered an abandoned claim with malformed local-time expiry; branch/worktree are now coordinator-bound before the next claim.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Code-generation control workload adapters",
-  "updated_at": "2026-09-24T14:42:21+00:00",
+  "updated_at": "2026-09-24T14:42:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1412"
 }
 ---
