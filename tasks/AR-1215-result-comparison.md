@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach conservative comparison of multiple agents from the same benchmark.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Multi-agent result comparison tutorial",
-  "updated_at": "2026-09-24T20:48:07+00:00",
+  "updated_at": "2026-09-24T20:48:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1215"
 }
 ---
@@ -28,3 +28,6 @@ commands in tutorial syntax CI.
   comparison tutorial.
 
 - 2026-09-24T20:48:07+00:00: Claimed by codex-ar1215-luna56.
+
+- 2026-09-24T20:48:46+00:00: Recorded command exit 0; command argv SHA-256
+  5345cd4b5f66285dc80cddfe59c0a95475263f9ff88d25d2639fce3c300aa4b9.
