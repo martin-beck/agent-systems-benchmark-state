@@ -1,13 +1,13 @@
 ---
 {
   "branch": "",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "3488c17c58d5bf55ea4a4b00153b98367bed2ffb",
   "claim_expires": "2026-09-24T11:04:31+00:00",
   "depends_on": [
     "AR-1394"
   ],
   "id": "AR-1395",
-  "next_action": "Promote after AR-1394 is done, then implement family adapters and deterministic offline fixtures behind the workload lifecycle contract.",
+  "next_action": "PR #285 exact-head CI is green; merge only after final review, then verify protected-main post-merge gates and release AR.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Normalize approved literature tasks through bounded, non-vendored ASB workload adapters.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Literature workload adapter boundary",
-  "updated_at": "2026-09-24T09:04:31+00:00",
+  "updated_at": "2026-09-24T09:05:30+00:00",
   "worktree_key": ""
 }
 ---
@@ -103,3 +103,7 @@ into executable or qualified workloads.
 - 2026-09-24T09:02:56+00:00: Heartbeat by codex-asb-ar1395-literature-adapters-luna56.
 
 - 2026-09-24T09:04:31+00:00: Heartbeat by codex-asb-ar1395-literature-adapters-luna56.
+
+- 2026-09-24T09:05:30+00:00: Implementation commit 3488c17c58d5bf55ea4a4b00153b98367bed2ffb is
+  SSH-signed+DCO; PR #285 exact-head checks all green after current-main rebase. Independently
+  reviewed diff and focused/full workspace gates passed.
