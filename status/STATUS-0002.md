@@ -14,7 +14,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1377](../tasks/AR-1377-runtime-chain-store.md): Runtime-owned certificate-chain store | codex-asb-runtime-receipt-source-luna56 | Persist authenticated runtime certificate-chain material for live dispatch. | PR #274 is published at exact head 65d1ede. Monitor all 12 required checks; repair failures through handoffctl, merge only after independent review and green exact-head CI, then verify all seven post-merge workflows. |
+| P0 | [AR-1377](../tasks/AR-1377-runtime-chain-store.md): Runtime-owned certificate-chain store | codex-asb-runtime-receipt-source-luna56 | Persist authenticated runtime certificate-chain material for live dispatch. | PR #274 force-updated to exact head 4163194 on current protected main 50acdcab after Repository quality base failure. Focused live_service rerun passes; monitor all required exact-head checks, repair failures, merge only green, then verify seven post-merge workflows. |
 
 ### Open (4)
 

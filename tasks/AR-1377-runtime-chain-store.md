@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1377-runtime-chain-store",
-  "checkpoint_commit": "65d1ede0baed4837dd4bdca7a5d46ada946c62c6",
+  "checkpoint_commit": "4163194850114ef127516240d0ccf16f772c3672",
   "claim_expires": "2026-09-24T04:44:30+00:00",
   "depends_on": [
     "AR-1288",
@@ -9,7 +9,7 @@
     "AR-1373"
   ],
   "id": "AR-1377",
-  "next_action": "PR #274 is published at exact head 65d1ede. Monitor all 12 required checks; repair failures through handoffctl, merge only after independent review and green exact-head CI, then verify all seven post-merge workflows.",
+  "next_action": "PR #274 force-updated to exact head 4163194 on current protected main 50acdcab after Repository quality base failure. Focused live_service rerun passes; monitor all required exact-head checks, repair failures, merge only green, then verify seven post-merge workflows.",
   "observed_branch": "feature/ar-1377-runtime-chain-store",
   "observed_dirty": 0,
   "observed_head": "4163194850114ef127516240d0ccf16f772c3672",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist authenticated runtime certificate-chain material for live dispatch.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Runtime-owned certificate-chain store",
-  "updated_at": "2026-09-24T02:48:04+00:00",
+  "updated_at": "2026-09-24T02:48:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1377-runtime-chain-store"
 }
 ---
@@ -104,3 +104,8 @@ authority boundary and must not accept caller-built chains or synthesize trust.
 
 - 2026-09-24T02:48:04+00:00: Recorded command exit 0; command argv SHA-256
   cbc6ac207726cfbc4910677afd829fad8c22d92a551bfdd9654f9c37c9e61207.
+
+- 2026-09-24T02:48:29+00:00: Hosted Repository quality previously failed because PR head 65d1ede was
+  based on stale protected main 265b936. Fetched current main 50acdcab and rebased; resulting commit
+  4163194 retains valid SSH signature and DCO, focused 20 live_service tests pass, and
+  force-with-lease updated PR #274. No product behavior was changed by rebase.
