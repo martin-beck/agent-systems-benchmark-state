@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1410](tasks/AR-1410-literature-selector-completeness.md): Literature selector completeness and parity | Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads. | Independently review PR #302 exact base/head, monitor required checks, then merge only after green and verify post-merge workflows. | ar1410-literature-selector-parity-luna56 |
+| P1 | [AR-1410](tasks/AR-1410-literature-selector-completeness.md): Literature selector completeness and parity | Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads. | Investigate recurring shared-state ownership flake separately; selector-focused gates are green. PR #302 rebased exact base 9d410f5 head 477eeb9; monitor hosted required checks. | ar1410-literature-selector-parity-luna56 |
 
 ## Open
 

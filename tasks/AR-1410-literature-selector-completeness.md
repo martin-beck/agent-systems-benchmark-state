@@ -12,7 +12,7 @@
     "AR-1413"
   ],
   "id": "AR-1410",
-  "next_action": "Independently review PR #302 exact base/head, monitor required checks, then merge only after green and verify post-merge workflows.",
+  "next_action": "Investigate recurring shared-state ownership flake separately; selector-focused gates are green. PR #302 rebased exact base 9d410f5 head 477eeb9; monitor hosted required checks.",
   "observed_branch": "codex/ar-1410-literature-selector-parity",
   "observed_dirty": 0,
   "observed_head": "477eeb9fb6c21d0a4a2c51ed11116f19c6b4e7e4",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Literature selector completeness and parity",
-  "updated_at": "2026-09-24T16:55:27+00:00",
+  "updated_at": "2026-09-24T16:55:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1410"
 }
 ---
@@ -175,3 +175,9 @@ does not turn external qualification or live-provider access into a prerequisite
 
 - 2026-09-24T16:55:27+00:00: Recorded command exit 101; command argv SHA-256
   85dd84dd56580a2afa98117bce810d456ae12d097a2b8939972e106ed547fadc.
+
+- 2026-09-24T16:55:49+00:00: Post-rebase package rerun again had exactly one unrelated control test
+  failure: recording_campaign_plan_is_durable_idempotent_and_not_offline_ready panicked with control
+  state root already owned; the other 104 CLI tests passed. The isolated exact test previously
+  passed, confirming shared-state/concurrency flake rather than this change. Do not suppress or
+  reinterpret it as selector failure.
