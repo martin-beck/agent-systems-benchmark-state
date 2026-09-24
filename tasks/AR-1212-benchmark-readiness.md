@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar-1212-benchmark-readiness",
   "checkpoint_commit": "a2a641417547937ee695f4f6cac53194ba47121e",
-  "claim_expires": "2026-09-24T21:29:51+00:00",
+  "claim_expires": "2026-09-24T21:31:21+00:00",
   "depends_on": [
     "AR-1211"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach users to test configured-agent benchmark eligibility without running an agent.",
-  "task_revision": 72,
+  "task_revision": 73,
   "title": "Agent benchmark-readiness tutorial",
-  "updated_at": "2026-09-24T19:29:51+00:00",
+  "updated_at": "2026-09-24T19:31:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1212"
 }
 ---
@@ -226,3 +226,5 @@ Implement the linked tutorial and deterministic negative/positive syntax fixture
 - 2026-09-24T19:29:44+00:00: Heartbeat by open-pr-triage-luna56.
 
 - 2026-09-24T19:29:51+00:00: Heartbeat by open-pr-triage-luna56.
+
+- 2026-09-24T19:31:21+00:00: Heartbeat by open-pr-triage-luna56.
