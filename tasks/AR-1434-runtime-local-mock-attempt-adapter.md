@@ -14,16 +14,16 @@
   "next_action": "Promote and claim after verifying the complete runtime prerequisite set; implement the mock-only attempt/backend adapter from the AR-1432 blocker evidence without changing production egress or live authority constructors.",
   "observed_branch": "feature/ar-1434-runtime-local-mock-attempt-adapter",
   "observed_dirty": 0,
-  "observed_head": "ed9076031b8278537dcd71e706464db59b8cba20",
+  "observed_head": "089df52a71b4f558ccd7f269c55c398ff9245e4d",
   "owner": "codex-asb-ar1434-mock-adapter-luna56",
   "plan": "../plans/AR-1434-runtime-local-mock-attempt-adapter.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add an approved runtime mock-attempt adapter for deterministic local run and sweep qualification.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Runtime local mock-attempt adapter",
-  "updated_at": "2026-09-24T23:13:34+00:00",
+  "updated_at": "2026-09-24T23:13:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1434-runtime-local-mock-attempt-adapter"
 }
 ---
