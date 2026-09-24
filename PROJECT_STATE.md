@@ -15,20 +15,21 @@ Generated from local Git and GitHub. Do not edit.
 | #234 | `dependabot/github_actions/actions/setup-java-6.0.1@4a444c279f41` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump actions/setup-java from 5.0.0 to 6.0.1 |
 | #235 | `dependabot/github_actions/taiki-e/install-action-2.87.12@de0353cce59e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.6 to 2.87.12 |
 | #293 | `codex/ar-1408-literature-inventory@426933619188` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(workloads): close literature catalog boundaries |
+| #294 | `codex/ar-1402-literature-cli@cec634552876` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(cli): dispatch literature workloads through catalog |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 36002489972 | `cec634552876` | pull_request | Formal assurance | in_progress:- |
+| 36002489950 | `cec634552876` | pull_request | Repository quality | in_progress:- |
+| 36002489927 | `cec634552876` | pull_request | Fault assurance | in_progress:- |
+| 36002489913 | `cec634552876` | pull_request | Rust verification | in_progress:- |
+| 36002489806 | `cec634552876` | pull_request | Huawei MIT source headers | in_progress:- |
+| 36002489625 | `cec634552876` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 36002489599 | `cec634552876` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 36002489595 | `cec634552876` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 36001439459 | `426933619188` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36001439446 | `426933619188` | pull_request | Hosted portability and native qualification | completed:success |
 | 36001439429 | `426933619188` | pull_request | Huawei MIT source headers | completed:success |
 | 36001439423 | `426933619188` | pull_request | Rust verification | completed:success |
-| 36001439408 | `426933619188` | pull_request | Emulated aarch64 portability | completed:success |
-| 36001439397 | `426933619188` | pull_request | Formal assurance | completed:success |
-| 36001439385 | `426933619188` | pull_request | Fault assurance | completed:success |
-| 36001439383 | `426933619188` | pull_request | Repository quality | completed:success |
-| 35999236817 | `0667f299ce04` | push | Huawei MIT source headers | completed:success |
-| 35999236510 | `0667f299ce04` | push | Formal assurance | completed:success |
-| 35999235751 | `0667f299ce04` | push | Hosted portability and native qualification | completed:success |
-| 35999235653 | `0667f299ce04` | push | Rust verification | completed:success |
