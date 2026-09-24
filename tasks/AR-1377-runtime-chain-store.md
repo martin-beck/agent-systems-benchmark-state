@@ -12,16 +12,16 @@
   "next_action": "PR #274 is published at exact head 65d1ede. Monitor all 12 required checks; repair failures through handoffctl, merge only after independent review and green exact-head CI, then verify all seven post-merge workflows.",
   "observed_branch": "feature/ar-1377-runtime-chain-store",
   "observed_dirty": 0,
-  "observed_head": "65d1ede0baed4837dd4bdca7a5d46ada946c62c6",
+  "observed_head": "4163194850114ef127516240d0ccf16f772c3672",
   "owner": "codex-asb-runtime-receipt-source-luna56",
   "plan": "../plans/AR-1377-runtime-chain-store.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist authenticated runtime certificate-chain material for live dispatch.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Runtime-owned certificate-chain store",
-  "updated_at": "2026-09-24T02:47:22+00:00",
+  "updated_at": "2026-09-24T02:47:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1377-runtime-chain-store"
 }
 ---
