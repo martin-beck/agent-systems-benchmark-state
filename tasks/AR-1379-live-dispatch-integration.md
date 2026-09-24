@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1379-live-dispatch-integration",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T05:30:52+00:00",
   "depends_on": [
     "AR-1378",
     "AR-1377",
@@ -15,15 +15,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "codex-asb-runtime-receipt-source-luna56",
   "plan": "../plans/AR-1379-live-dispatch-integration.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Integrate authenticated runtime live dispatch into asb run and sweep.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Production live dispatch integration",
-  "updated_at": "2026-09-24T03:30:50+00:00",
+  "updated_at": "2026-09-24T03:30:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1379-live-dispatch-integration"
 }
 ---
@@ -34,3 +34,5 @@ verified through the completed gates.
 
 - 2026-09-24T03:30:50+00:00: Done dependencies AR-1378, AR-1377, AR-1366, AR-1364, AR-1362 verified;
   promote production dispatch integration.
+
+- 2026-09-24T03:30:52+00:00: Claimed by codex-asb-runtime-receipt-source-luna56.
