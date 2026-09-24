@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add optional evidence-gated qualification for real literature workload sources and evaluators.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Literature workload external qualification",
-  "updated_at": "2026-09-24T13:45:41+00:00",
+  "updated_at": "2026-09-24T13:46:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1403"
 }
 ---
@@ -147,3 +147,6 @@ development, mock execution, or candidate selection.
   licenses, adaptation, contamination, reset, native platform, and oracle evidence. Focused
   workloads tests 31 passed; registry validator, diff check, py_compile passed. Signed+DCO commit
   b51570b. Existing acquisition fixture digest drift was repaired and tested.
+
+- 2026-09-24T13:46:05+00:00: Recorded command exit 0; command argv SHA-256
+  5c026f431a6860835b1fd6930008c3a0c676dae3fb134c5fd57a79f42934b753.
