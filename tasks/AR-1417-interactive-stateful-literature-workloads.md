@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar-1417-interactive-stateful-literature",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-24T23:30:28+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1416",
     "AR-1408"
@@ -12,15 +12,15 @@
   "observed_branch": "codex/ar-1417-interactive-stateful-literature",
   "observed_dirty": 0,
   "observed_head": "666043f2c7d393c92d740cbc3e50490c2ef75926",
-  "owner": "ar1417-recovery-luna56",
+  "owner": "",
   "plan": "../plans/AR-1417.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Add selectable interactive and stateful literature workloads beside built-in software-engineering fixtures.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Interactive stateful literature workloads",
-  "updated_at": "2026-09-24T21:31:24+00:00",
+  "updated_at": "2026-09-24T21:32:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1417"
 }
 ---
@@ -115,3 +115,10 @@ identified.
 
 - 2026-09-24T21:31:24+00:00: Recorded command exit 0; command argv SHA-256
   e49ccd2e5bef02536286f3c85436aa912537634817303152a2c573ef5281f5c8.
+
+- 2026-09-24T21:32:43+00:00: Recovered after lease expiry at 2026-09-24T21:29:55Z. No owner process;
+  clean worktree head 666043f. Current origin/main f511645 includes PR307 and PR308 ancestry, but
+  exact current-main checks failed closed: Repository quality 36060277237 and Rust verification
+  36060277341 report protected-main merge tree differs from reviewed topic tree. Keep AR-1417 open
+  for AR-1427 successor repair and exact-head requalification; PR307/308 evidence is insufficient
+  for release; no gate weakened.
