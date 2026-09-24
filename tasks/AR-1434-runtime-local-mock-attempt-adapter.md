@@ -18,10 +18,10 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add an approved runtime mock-attempt adapter for deterministic local run and sweep qualification.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Runtime local mock-attempt adapter",
-  "updated_at": "2026-09-24T23:12:47+00:00",
-  "worktree_key": ""
+  "updated_at": "2026-09-24T23:12:57+00:00",
+  "worktree_key": "agent-systems-benchmark-ar-1434-runtime-local-mock-attempt-adapter"
 }
 ---
 
@@ -34,3 +34,6 @@ external provider.
   mock-attempt/backend seam without changing blocked predecessor state.
 
 - 2026-09-24T23:12:47+00:00: Claimed by codex-asb-ar1434-mock-adapter-luna56.
+
+- 2026-09-24T23:12:57+00:00: Recorded command exit 0; command argv SHA-256
+  b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b.
