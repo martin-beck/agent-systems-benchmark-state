@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Restore signed+DCO protected-main evidence after an unsigned GitHub-generated repair merge.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Signed protected-main recovery",
-  "updated_at": "2026-09-24T10:19:29+00:00",
+  "updated_at": "2026-09-24T10:19:51+00:00",
   "worktree_key": ""
 }
 ---
@@ -153,3 +153,6 @@ providers are never required for development evidence.
 
 - 2026-09-24T10:19:29+00:00: Recorded command exit 2; command argv SHA-256
   b914238e07f012b8983974f67200aa4c6619adcb80595382ef8e08c090e874de.
+
+- 2026-09-24T10:19:51+00:00: Recorded command exit 1; command argv SHA-256
+  bf1e8a01dbb63e7e1bd54d7b93679fd230be2aa451bbd3489256a907dcd416a6.
