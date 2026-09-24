@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #119 | `feature/native-capacity-controller@0c7e1d4b09da` | `main` | UNKNOWN | - | feat(capacity): add bounded native lifecycle controller |
+| #119 | `feature/native-capacity-controller@0c7e1d4b09da` | `main` | CLEAN | - | feat(capacity): add bounded native lifecycle controller |
 
 ## Recent workflows
 
