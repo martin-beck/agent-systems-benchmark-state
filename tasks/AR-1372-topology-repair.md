@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1372-topology-repair",
   "checkpoint_commit": "6b682f5f5ff7d27b7697793417cfc4f8992095e1",
-  "claim_expires": "2026-09-24T03:26:52+00:00",
+  "claim_expires": "2026-09-24T03:29:41+00:00",
   "depends_on": [],
   "id": "AR-1372",
   "next_action": "PR #272 exact head 6b682f5 is signed+DCO with a real trailer and no product diff. Three exact-head checks are pending; verify all required checks before protected non-squash merge, then monitor seven post-merge workflows.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair protected-main merge topology after AR-1371 without changing product behavior.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Protected merge topology repair",
-  "updated_at": "2026-09-24T01:28:37+00:00",
+  "updated_at": "2026-09-24T01:29:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1372-topology-repair"
 }
 ---
@@ -57,3 +57,5 @@ topology; no gate may be weakened.
   backslash-n characters and was not a valid DCO trailer. Recreated as 6b682f5 with actual paragraph
   separators, verified SSH signature fingerprint SHA256:a36V6yPvRZyxnQ2113tiA/MlHt7mPfJEXAGByBXVkuE,
   and force-pushed through handoffctl.
+
+- 2026-09-24T01:29:41+00:00: Heartbeat by codex-asb-topology-repair-luna56.
