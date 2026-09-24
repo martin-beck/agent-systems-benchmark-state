@@ -2,7 +2,7 @@
 {
   "branch": "feature/native-capacity-controller",
   "checkpoint_commit": "4630f90af739fc628d2e4264a2d40fd7fe142eec",
-  "claim_expires": "2026-09-24T21:52:07+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0701",
     "AR-0103"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/native-capacity-controller",
   "observed_dirty": 0,
   "observed_head": "4630f90af739fc628d2e4264a2d40fd7fe142eec",
-  "owner": "ar0704-requal-luna56",
+  "owner": "",
   "plan": "../plans/AR-0704.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 251,
+  "task_revision": 252,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-24T19:53:55+00:00",
+  "updated_at": "2026-09-24T21:52:19+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -842,3 +842,7 @@ must not block this AR or its dependents.
   exact-head query shows 12 checks: 10 pending, 2 pass (AWQ shadow and SPDX headers). Earlier
   retained-fault pending display was transient and no terminal failure remains. Continue monitoring;
   preserve 90% coverage floor.
+
+- 2026-09-24T21:52:19+00:00: Recovered expired claim formerly owned by ar0704-requal-luna56. Lease
+  expired at 2026-09-24T21:52:07Z; no owner process found. Recover for safe PR #119
+  rebase/requalification onto protected merge d9eb6c2.
