@@ -13,7 +13,7 @@
     "AR-1393"
   ],
   "id": "AR-1432",
-  "next_action": "Implement local-only runtime-owned mock enrollment/attempt bridge in the isolated worktree; add hostile egress, teardown, cancellation, and secret non-disclosure tests. Do not synthesize production authority or contact OpenRouter.",
+  "next_action": "Blocked on a safe runtime-owned loopback attempt adapter: ProviderEgressTarget intentionally rejects loopback and LiveProviderAttempt requires real SandboxBackend/relay authority. Add a dedicated runtime mock-attempt type or approved loopback backend before wiring asb run/sweep; do not synthesize LiveProviderAttempt or weaken egress.",
   "observed_branch": "feature/ar-1432-local-openrouter-execution-bridge",
   "observed_dirty": 0,
   "observed_head": "651b02606424623aab99da8431942d2519384f07",
@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify credential-free OpenRouter user execution through a deterministic loopback mock without external-provider access.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Local OpenRouter execution bridge",
-  "updated_at": "2026-09-24T23:09:14+00:00",
+  "updated_at": "2026-09-24T23:09:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1432-local-openrouter-execution-bridge"
 }
 ---
@@ -86,3 +86,10 @@ or claim that OpenRouter is reachable. Preserve all earlier blocker evidence.
 
 - 2026-09-24T23:09:03+00:00: Recorded command exit 0; command argv SHA-256
   8cbc3f9fd862c0427f16013eaa2ceb356981ab8de7c9852c210bb511339a2333.
+
+- 2026-09-24T23:09:33+00:00: Implementation commit 651b026 adds deterministic
+  LocalProviderAuthority::execute_mock_request with bounded body, model/credential/generation
+  fencing, redacted digest response, revocation, and loopback egress-negative tests. Focused
+  asb-runtime local_mock tests pass (3). Production run/sweep bridge remains blocked: existing
+  LiveProviderAttempt can only be minted through real SandboxBackend and LiveProviderRelay, while
+  ProviderEgressTarget rejects loopback by contract.

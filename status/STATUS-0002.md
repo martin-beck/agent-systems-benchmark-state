@@ -96,7 +96,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1432](../tasks/AR-1432-local-openrouter-execution-bridge.md): Local OpenRouter execution bridge | codex-asb-ar1432-local-openrouter-luna56 | Qualify credential-free OpenRouter user execution through a deterministic loopback mock without external-provider access. | Implement local-only runtime-owned mock enrollment/attempt bridge in the isolated worktree; add hostile egress, teardown, cancellation, and secret non-disclosure tests. Do not synthesize production authority or contact OpenRouter. |
+| P0 | [AR-1432](../tasks/AR-1432-local-openrouter-execution-bridge.md): Local OpenRouter execution bridge | codex-asb-ar1432-local-openrouter-luna56 | Qualify credential-free OpenRouter user execution through a deterministic loopback mock without external-provider access. | Blocked on a safe runtime-owned loopback attempt adapter: ProviderEgressTarget intentionally rejects loopback and LiveProviderAttempt requires real SandboxBackend/relay authority. Add a dedicated runtime mock-attempt type or approved loopback backend before wiring asb run/sweep; do not synthesize LiveProviderAttempt or weaken egress. |
 
 ### Blocked (65)
 
