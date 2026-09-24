@@ -9,7 +9,7 @@
   "id": "AR-1371",
   "next_action": "Promote and claim this dependency-valid repair, then implement authenticated RunnerBackend/Catalog authority injection using existing AR-1288 issuer primitives.",
   "observed_branch": "feature/ar-1371-runner-authority-injection",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "0c6dc52e1f4aa5854f73081711dbd9a5bc1a5d7c",
   "owner": "codex-asb-runtime-attested-enrollment-luna56",
   "plan": "../plans/AR-1371-runner-authority-injection.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Inject existing authenticated certificate authority and runtime enrollment material into RunnerBackend/Catalog without synthetic authority.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Runner authority injection",
-  "updated_at": "2026-09-24T00:59:51+00:00",
+  "updated_at": "2026-09-24T01:00:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1371-runner-authority-injection"
 }
 ---
