@@ -7,7 +7,7 @@
     "AR-1213"
   ],
   "id": "AR-1215",
-  "next_action": "Retry gh pr create now that docs/ar-1215-result-comparison is pushed; then record PR URL and exact-head review.",
+  "next_action": "Monitor PR #310 required exact-head checks to terminal; obtain independent review before merge. Do not claim full gate while Ruff remains unavailable.",
   "observed_branch": "docs/ar-1215-result-comparison",
   "observed_dirty": 0,
   "observed_head": "0e08fbee769cff71e402aef07ce6fb80a9a821e2",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach conservative comparison of multiple agents from the same benchmark.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Multi-agent result comparison tutorial",
-  "updated_at": "2026-09-24T21:00:35+00:00",
+  "updated_at": "2026-09-24T21:01:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1215"
 }
 ---
@@ -104,3 +104,9 @@ commands in tutorial syntax CI.
 
 - 2026-09-24T21:00:35+00:00: Recorded command exit 0; command argv SHA-256
   465fc93caeb187af4aa86de75939211bf1e42b3f0be3452677e964d717b9dbe4.
+
+- 2026-09-24T21:01:00+00:00: PR #310 opened at
+  https://github.com/martin-beck/agent-systems-benchmark/pull/310. Exact base
+  c663d1f29d4802281476c3a71d56542b17dbab48 and head 0e08fbee769cff71e402aef07ce6fb80a9a821e2
+  verified. Header and AWQ shadow checks passed; required Rust, quality, fault, formal, portability
+  checks are in progress. Independent diff review found no actionable issue.
