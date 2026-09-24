@@ -74,7 +74,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1410](../tasks/AR-1410-literature-selector-completeness.md): Literature selector completeness and parity | ar1410-literature-selector-parity-luna56 | Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads. | Align generated capability tags with Rust, run focused/full workload and CLI gates, then signed commit and PR exact-head review. |
+| P1 | [AR-1410](../tasks/AR-1410-literature-selector-completeness.md): Literature selector completeness and parity | ar1410-literature-selector-parity-luna56 | Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads. | Rerun the package gate after transient control-state ownership failure, then signed commit and PR publication. |
 
 ### Open (2)
 

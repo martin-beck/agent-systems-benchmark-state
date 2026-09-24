@@ -12,7 +12,7 @@
     "AR-1413"
   ],
   "id": "AR-1410",
-  "next_action": "Align generated capability tags with Rust, run focused/full workload and CLI gates, then signed commit and PR exact-head review.",
+  "next_action": "Rerun the package gate after transient control-state ownership failure, then signed commit and PR publication.",
   "observed_branch": "codex/ar-1410-literature-selector-parity",
   "observed_dirty": 5,
   "observed_head": "8da098770e4a78e94f67cf7b13dbebbcd1c5bbac",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Literature selector completeness and parity",
-  "updated_at": "2026-09-24T16:51:05+00:00",
+  "updated_at": "2026-09-24T16:51:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1410"
 }
 ---
@@ -129,3 +129,8 @@ does not turn external qualification or live-provider access into a prerequisite
 
 - 2026-09-24T16:51:05+00:00: Recorded command exit 101; command argv SHA-256
   85dd84dd56580a2afa98117bce810d456ae12d097a2b8939972e106ed547fadc.
+
+- 2026-09-24T16:51:30+00:00: Package gate had one unrelated control test failure:
+  recording_campaign_plan_is_durable_idempotent_and_not_offline_ready panicked because the control
+  state root was already owned. All 104 other asb-cli tests and workload tests passed; rerun exact
+  test to distinguish transient shared-state interference.
