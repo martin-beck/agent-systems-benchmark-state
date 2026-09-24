@@ -10,16 +10,16 @@
   "next_action": "Bind isolated worktree before product inspection; qualify immutable action commits for PRs #235/#234/#148 and merge only after policy and exact-head gates pass.",
   "observed_branch": "codex/ar-1406-action-pin-policy",
   "observed_dirty": 0,
-  "observed_head": "98778364d21ba1ec04d376093b794f95962ac5ef",
+  "observed_head": "feca69d22f3a73c643ff2150ae95d189acdb4791",
   "owner": "ar1406-action-pin-recovery-luna56",
   "plan": "../plans/AR-1406-action-pin-policy-migration.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify and merge remaining immutable GitHub action pin updates without weakening policy.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Action pin policy migration",
-  "updated_at": "2026-09-24T15:46:57+00:00",
+  "updated_at": "2026-09-24T15:47:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1406"
 }
 ---
