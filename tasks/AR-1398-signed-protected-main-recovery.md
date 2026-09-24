@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Restore signed+DCO protected-main evidence after an unsigned GitHub-generated repair merge.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Signed protected-main recovery",
-  "updated_at": "2026-09-24T10:00:09+00:00",
+  "updated_at": "2026-09-24T10:00:44+00:00",
   "worktree_key": ""
 }
 ---
@@ -34,3 +34,6 @@ providers are never required for development evidence.
   merge 123ba915; preserve historical evidence and restore signed+DCO exact-main proof.
 
 - 2026-09-24T10:00:09+00:00: Claimed by ar1398_signed_recovery_luna56.
+
+- 2026-09-24T10:00:44+00:00: Recorded command exit 0; command argv SHA-256
+  c725572ba4f53df0f5d848d1c6861633cd446ff51c3e8c3a06f5a000630c5f61.
