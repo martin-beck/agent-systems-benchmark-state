@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**417 ARs tracked** across 7 active status categories.
+**420 ARs tracked** across 7 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 3 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 67 |
-| **Planned** | Defined work awaiting promotion or dependencies | 66 |
+| **Planned** | Defined work awaiting promotion or dependencies | 69 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 262 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -486,6 +486,9 @@ flowchart LR
         AR_1391["AR-1391 - Blocked"]:::status_blocked
         AR_1392["AR-1392 - Blocked"]:::status_blocked
         AR_1393["AR-1393 - In progress"]:::status_in_progress
+        AR_1394["AR-1394 - Planned"]:::status_planned
+        AR_1395["AR-1395 - Planned"]:::status_planned
+        AR_1396["AR-1396 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -778,6 +781,9 @@ flowchart LR
     AR_0402 --> AR_0404
     AR_0402 --> AR_0406
     AR_0403 --> AR_0404
+    AR_0404 --> AR_1394
+    AR_0405 --> AR_1394
+    AR_0406 --> AR_1394
     AR_0501 --> AR_0502
     AR_0501 --> AR_0879
     AR_0502 --> AR_0503
@@ -1108,6 +1114,7 @@ flowchart LR
     AR_1007 --> AR_0405
     AR_1007 --> AR_0406
     AR_1007 --> AR_1016
+    AR_1007 --> AR_1394
     AR_1008 --> AR_0898
     AR_1010 --> AR_1011
     AR_1010 --> AR_1012
@@ -1604,6 +1611,8 @@ flowchart LR
     AR_1388 --> AR_1391
     AR_1388 --> AR_1392
     AR_1388 --> AR_1393
+    AR_1394 --> AR_1395
+    AR_1395 --> AR_1396
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -1655,9 +1664,9 @@ flowchart LR
 | [AR-0401](../tasks/AR-0401-engineering-workloads.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md) | [AR-0402](../tasks/AR-0402-external-code-workloads.md), [AR-0403](../tasks/AR-0403-terminal-workloads.md), [AR-0405](../tasks/AR-0405-performance-workloads.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-0506](../tasks/AR-0506-replay-opencode.md), [AR-0507](../tasks/AR-0507-replay-opendesk.md), [AR-0508](../tasks/AR-0508-replay-aider.md), [AR-0509](../tasks/AR-0509-replay-codex.md), [AR-0510](../tasks/AR-0510-replay-gemini.md), [AR-0511](../tasks/AR-0511-replay-qwen.md), [AR-0512](../tasks/AR-0512-replay-goose.md), [AR-0513](../tasks/AR-0513-replay-miniswe.md), [AR-0514](../tasks/AR-0514-replay-openhands.md), [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-0703](../tasks/AR-0703-native-platform-lab.md), [AR-0705](../tasks/AR-0705-native-debian-capacity.md), [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md), [AR-0802](../tasks/AR-0802-executable-guides.md), [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0848](../tasks/AR-0848-native-x86-capacity.md), [AR-1002](../tasks/AR-1002-verifier-integrity.md), [AR-1004](../tasks/AR-1004-reliability-fairness.md), [AR-1007](../tasks/AR-1007-benchmark-validity.md) |
 | [AR-0402](../tasks/AR-0402-external-code-workloads.md) | [AR-0401](../tasks/AR-0401-engineering-workloads.md) | [AR-0404](../tasks/AR-0404-extended-workloads.md), [AR-0406](../tasks/AR-0406-evolving-workloads.md) |
 | [AR-0403](../tasks/AR-0403-terminal-workloads.md) | [AR-0401](../tasks/AR-0401-engineering-workloads.md) | [AR-0404](../tasks/AR-0404-extended-workloads.md) |
-| [AR-0404](../tasks/AR-0404-extended-workloads.md) | [AR-0402](../tasks/AR-0402-external-code-workloads.md), [AR-0403](../tasks/AR-0403-terminal-workloads.md) | None |
-| [AR-0405](../tasks/AR-0405-performance-workloads.md) | [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0601](../tasks/AR-0601-csb-integration.md), [AR-1002](../tasks/AR-1002-verifier-integrity.md), [AR-1007](../tasks/AR-1007-benchmark-validity.md) | None |
-| [AR-0406](../tasks/AR-0406-evolving-workloads.md) | [AR-0402](../tasks/AR-0402-external-code-workloads.md), [AR-1007](../tasks/AR-1007-benchmark-validity.md) | None |
+| [AR-0404](../tasks/AR-0404-extended-workloads.md) | [AR-0402](../tasks/AR-0402-external-code-workloads.md), [AR-0403](../tasks/AR-0403-terminal-workloads.md) | [AR-1394](../tasks/AR-1394-literature-workload-registry.md) |
+| [AR-0405](../tasks/AR-0405-performance-workloads.md) | [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0601](../tasks/AR-0601-csb-integration.md), [AR-1002](../tasks/AR-1002-verifier-integrity.md), [AR-1007](../tasks/AR-1007-benchmark-validity.md) | [AR-1394](../tasks/AR-1394-literature-workload-registry.md) |
+| [AR-0406](../tasks/AR-0406-evolving-workloads.md) | [AR-0402](../tasks/AR-0402-external-code-workloads.md), [AR-1007](../tasks/AR-1007-benchmark-validity.md) | [AR-1394](../tasks/AR-1394-literature-workload-registry.md) |
 | [AR-0501](../tasks/AR-0501-replay-evaluation.md) | [AR-0001](../tasks/AR-0001-repository-bootstrap.md) | [AR-0502](../tasks/AR-0502-replay-cassettes.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md) |
 | [AR-0502](../tasks/AR-0502-replay-cassettes.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0501](../tasks/AR-0501-replay-evaluation.md) | [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0516](../tasks/AR-0516-opendesk-strict-replay-http-compatibility.md), [AR-0517](../tasks/AR-0517-redacted-request-pointer-replay.md), [AR-0518](../tasks/AR-0518-gemini-generate-content-replay.md), [AR-0520](../tasks/AR-0520-interaction-aware-redaction.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md), [AR-0901](../tasks/AR-0901-formal-assurance.md), [AR-1005](../tasks/AR-1005-trace-interoperability.md), [AR-1330](../tasks/AR-1330-live-capture-sealed-cassette.md) |
 | [AR-0503](../tasks/AR-0503-strict-replay.md) | [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0502](../tasks/AR-0502-replay-cassettes.md) | [AR-0314](../tasks/AR-0314-recording-source-choice.md), [AR-0504](../tasks/AR-0504-replay-pacing.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-0506](../tasks/AR-0506-replay-opencode.md), [AR-0507](../tasks/AR-0507-replay-opendesk.md), [AR-0508](../tasks/AR-0508-replay-aider.md), [AR-0509](../tasks/AR-0509-replay-codex.md), [AR-0510](../tasks/AR-0510-replay-gemini.md), [AR-0511](../tasks/AR-0511-replay-qwen.md), [AR-0512](../tasks/AR-0512-replay-goose.md), [AR-0513](../tasks/AR-0513-replay-miniswe.md), [AR-0514](../tasks/AR-0514-replay-openhands.md), [AR-0516](../tasks/AR-0516-opendesk-strict-replay-http-compatibility.md), [AR-0517](../tasks/AR-0517-redacted-request-pointer-replay.md), [AR-0518](../tasks/AR-0518-gemini-generate-content-replay.md), [AR-0520](../tasks/AR-0520-interaction-aware-redaction.md), [AR-0857](../tasks/AR-0857-openjiuwen-provenance.md), [AR-0863](../tasks/AR-0863-workbuddy-provenance.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md), [AR-0902](../tasks/AR-0902-fault-assurance.md), [AR-0905](../tasks/AR-0905-recovery-models.md), [AR-1330](../tasks/AR-1330-live-capture-sealed-cassette.md) |
@@ -1789,7 +1798,7 @@ flowchart LR
 | [AR-1004](../tasks/AR-1004-reliability-fairness.md) | [AR-0203](../tasks/AR-0203-statistical-analysis.md), [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md) | None |
 | [AR-1005](../tasks/AR-1005-trace-interoperability.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0502](../tasks/AR-0502-replay-cassettes.md) | None |
 | [AR-1006](../tasks/AR-1006-distributed-workers.md) | [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-1001](../tasks/AR-1001-experiment-comparability.md) | None |
-| [AR-1007](../tasks/AR-1007-benchmark-validity.md) | [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0701](../tasks/AR-0701-platform-manifests.md), [AR-1001](../tasks/AR-1001-experiment-comparability.md) | [AR-0405](../tasks/AR-0405-performance-workloads.md), [AR-0406](../tasks/AR-0406-evolving-workloads.md), [AR-1016](../tasks/AR-1016-measurement-integration-audit.md) |
+| [AR-1007](../tasks/AR-1007-benchmark-validity.md) | [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0701](../tasks/AR-0701-platform-manifests.md), [AR-1001](../tasks/AR-1001-experiment-comparability.md) | [AR-0405](../tasks/AR-0405-performance-workloads.md), [AR-0406](../tasks/AR-0406-evolving-workloads.md), [AR-1016](../tasks/AR-1016-measurement-integration-audit.md), [AR-1394](../tasks/AR-1394-literature-workload-registry.md) |
 | [AR-1008](../tasks/AR-1008.md) | None | [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md) |
 | [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md) | [AR-0803](../tasks/AR-0803-frontend-control-api.md), [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0806](../tasks/AR-0806-tui-history-analysis.md), [AR-1030](../tasks/AR-1030-ratatui-dependency-closure.md), [AR-1052](../tasks/AR-1052-tmux-server-authority-portability.md), [AR-1054](../tasks/AR-1054-tmux-socket-connect-completion.md), [AR-1056](../tasks/AR-1056-tmux-socket-connect-diagnostics.md), [AR-1058](../tasks/AR-1058-tmux-startup-observation-diagnostics.md), [AR-1061](../tasks/AR-1061-isolate-concurrent-tmux-fixtures.md), [AR-1062](../tasks/AR-1062-diagnose-nested-tmux-server-connect.md) | [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1012](../tasks/AR-1012-tui-quality-assurance.md), [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md), [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md) |
 | [AR-1011](../tasks/AR-1011-tui-ux-quality.md) | [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md), [AR-1014](../tasks/AR-1014-tui-measurement-selection.md), [AR-1031](../tasks/AR-1031-asb-tui-landing-screen.md), [AR-1032](../tasks/AR-1032-asb-tui-contextual-help.md), [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md), [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md), [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md), [AR-1170](../tasks/AR-1170.md) | [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-1012](../tasks/AR-1012-tui-quality-assurance.md), [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md) |
@@ -1995,6 +2004,3 @@ flowchart LR
 | [AR-1351](../tasks/AR-1351-live-runtime-provisioning.md) | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1347](../tasks/AR-1347-neutral-live-supervisor-composition.md), [AR-1350](../tasks/AR-1350-sandbox-credential-channel.md) | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) |
 | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) | [AR-1351](../tasks/AR-1351-live-runtime-provisioning.md) | [AR-1353](../tasks/AR-1353-runtime-enrollment-cli-dispatch.md), [AR-1354](../tasks/AR-1354-runtime-enrollment-implementation.md), [AR-1355](../tasks/AR-1355-runtime-attested-enrollment-record.md), [AR-1356](../tasks/AR-1356-control-runtime-attestation-primitive.md) |
 | [AR-1353](../tasks/AR-1353-runtime-enrollment-cli-dispatch.md) | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) | None |
-| [AR-1354](../tasks/AR-1354-runtime-enrollment-implementation.md) | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) | None |
-| [AR-1355](../tasks/AR-1355-runtime-attested-enrollment-record.md) | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) | None |
-| [AR-1356](../tasks/AR-1356-control-runtime-attestation-primitive.md) | [AR-1352](../tasks/AR-1352-runtime-live-bootstrap.md) | [AR-1357](../tasks/AR-1357-runtime-attested-enrollment-record.md) |
