@@ -1,7 +1,7 @@
 ---
 {
   "branch": "codex/ar-1410-literature-selector-parity",
-  "checkpoint_commit": "dc34be11cae443f8fbcd9f4bb7e5f2a8757770b9",
+  "checkpoint_commit": "8a1e031b1060ed684f499dc035bdefa179c4488b",
   "claim_expires": "2026-09-24T18:58:50+00:00",
   "depends_on": [
     "AR-1402",
@@ -12,7 +12,7 @@
     "AR-1413"
   ],
   "id": "AR-1410",
-  "next_action": "Repair provenance fixture hash, rerun exact provenance and applicable focused gates, then signed commit/push and await fresh PR checks.",
+  "next_action": "Monitor PR #302 required checks at exact base 9d410f5/head 8a1e031; merge only after all required checks and independent review pass, then verify post-merge workflows.",
   "observed_branch": "codex/ar-1410-literature-selector-parity",
   "observed_dirty": 0,
   "observed_head": "8a1e031b1060ed684f499dc035bdefa179c4488b",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads.",
-  "task_revision": 67,
+  "task_revision": 68,
   "title": "Literature selector completeness and parity",
-  "updated_at": "2026-09-24T17:02:37+00:00",
+  "updated_at": "2026-09-24T17:03:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1410"
 }
 ---
@@ -224,3 +224,7 @@ does not turn external qualification or live-provider access into a prerequisite
 
 - 2026-09-24T17:02:37+00:00: Recorded command exit 0; command argv SHA-256
   05ce2f37658399dad333367119284d918bd27f3bed398bb1a1cca005d61b2838.
+
+- 2026-09-24T17:03:15+00:00: Provenance fixture repaired to actual crates/asb-cli/src/lib.rs SHA
+  af1fb879...; exact workflow_transcript provenance test passes. Signed+DCO fix commit 8a1e031 is
+  pushed. PR #302 now exact base 9d410f5/head 8a1e031 with fresh checks running.

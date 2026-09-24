@@ -74,7 +74,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1410](../tasks/AR-1410-literature-selector-completeness.md): Literature selector completeness and parity | ar1410-literature-selector-parity-luna56 | Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads. | Repair provenance fixture hash, rerun exact provenance and applicable focused gates, then signed commit/push and await fresh PR checks. |
+| P1 | [AR-1410](../tasks/AR-1410-literature-selector-completeness.md): Literature selector completeness and parity | ar1410-literature-selector-parity-luna56 | Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads. | Monitor PR #302 required checks at exact base 9d410f5/head 8a1e031; merge only after all required checks and independent review pass, then verify post-merge workflows. |
 
 ### Open (2)
 
