@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize the runtime-owned live bootstrap handle from authenticated authority.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Runtime-owned bootstrap materialization",
-  "updated_at": "2026-09-24T05:16:35+00:00",
+  "updated_at": "2026-09-24T05:18:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1384-runtime-bootstrap-materialization"
 }
 ---
@@ -84,3 +84,6 @@ it must not accept caller authority or synthesize enrolled values.
   mismatched-target fail-closed tests. Prior exit-101 causes were target type mismatch, missing test
   helper name, and Result comparison; all repaired and rerun green. Commit 909c18b6 is
   SSH-signed+DCO and worktree clean.
+
+- 2026-09-24T05:18:24+00:00: Recorded command exit 0; command argv SHA-256
+  3f1cb5085240e2dc14211846100e5ecf693d95c3ce9829c1d6db69262b99ac93.
