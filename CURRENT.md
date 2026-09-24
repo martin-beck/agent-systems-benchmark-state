@@ -16,6 +16,7 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1212](tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Teach users to test configured-agent benchmark eligibility without running an agent. | Implement the offline tutorial for checking agent benchmark readiness under the current configuration. | - |
 | P0 | [AR-1316](tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | Publish the verified ASB agent catalog required by the first-run setup wizard. | Persist the authenticated catalog snapshot/generation and complete live ASB-to-asb-tui wizard evidence; keep all entries unavailable until a verified release closure exists. | - |
+| P2 | [AR-1406](tasks/AR-1406-action-pin-policy-migration.md): Action pin policy migration | Qualify and merge remaining immutable GitHub action pin updates without weakening policy. | Promote after AR-1405; qualify immutable action commits for PRs #235/#234/#148 and merge only after policy and exact-head gates pass. | - |
 
 ## Blocked
 
@@ -159,7 +160,6 @@ Never edit this file directly.
 | P2 | [AR-0706](tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. | - |
 | P2 | [AR-0903](tasks/AR-0903-release-qualification.md): Package and qualify the first release | Deliver reproducible native release artifacts with complete support and evidence statements. | Audit milestone completeness and run isolated release qualification. | - |
 | P2 | [AR-1016](tasks/AR-1016-measurement-integration-audit.md): Integrate and audit measurement selection and CSB evidence | Audit selectable and CSB-backed measurements across live and replay runs. | Add end-to-end live/replay comparison, release documentation, and independent audit after AR-1014 and AR-1015. | - |
-| P2 | [AR-1406](tasks/AR-1406-action-pin-policy-migration.md): Action pin policy migration | Qualify and merge remaining immutable GitHub action pin updates without weakening policy. | Promote after AR-1405; qualify immutable action commits for PRs #235/#234/#148 and merge only after policy and exact-head gates pass. | - |
 | P2 | [AR-1407](tasks/AR-1407-sha2-compatibility.md): sha2 compatibility repair | Qualify or repair the closed sha2 0.11 dependency update without weakening crypto or MSRV contracts. | Promote after AR-1405; reproduce the sha2 0.11 compile/MSRV failure and either repair it with digest-parity evidence or preserve the supersession. | - |
 
 ## Future
