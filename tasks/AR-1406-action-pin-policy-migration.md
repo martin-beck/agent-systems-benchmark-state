@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify and merge remaining immutable GitHub action pin updates without weakening policy.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Action pin policy migration",
-  "updated_at": "2026-09-24T15:45:50+00:00",
+  "updated_at": "2026-09-24T15:46:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1406"
 }
 ---
@@ -106,3 +106,9 @@ No floating action reference or unverifiable release identity is acceptable.
   043fb46d1a93c77aae656e7c1c64a875d1fc6a0a=v7.0.1. Created signed+DCO
   98778364d21ba1ec04d376093b794f95962ac5ef, local repository_policy passed, formal test
   toolchain_pins passed, pushed branch and opened PR #301.
+
+- 2026-09-24T15:46:04+00:00: Correction: the prior durable note used shell backtick quoting, so
+  command substitution removed the literal failure phrases; no product command was altered and the
+  coordinator commit still recorded the PR/run IDs and outcomes. Exact failure phrases are preserved
+  in the preceding user-visible diagnosis and can be re-recorded without shell metacharacters if
+  required.
