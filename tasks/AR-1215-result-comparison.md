@@ -9,7 +9,7 @@
   "id": "AR-1215",
   "next_action": "Implement the syntax-checked tutorial for comparing two or more agents on one benchmark definition.",
   "observed_branch": "docs/ar-1215-result-comparison",
-  "observed_dirty": 7,
+  "observed_dirty": 8,
   "observed_head": "c663d1f29d4802281476c3a71d56542b17dbab48",
   "owner": "codex-ar1215-luna56",
   "plan": "../plans/AR-1215.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach conservative comparison of multiple agents from the same benchmark.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Multi-agent result comparison tutorial",
-  "updated_at": "2026-09-24T20:51:12+00:00",
+  "updated_at": "2026-09-24T20:51:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1215"
 }
 ---
