@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make the complete literature workload inventory selectable beside built-in software-engineering fixtures with truthful evidence gates.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Total literature workload selector coverage",
-  "updated_at": "2026-09-24T17:45:54+00:00",
+  "updated_at": "2026-09-24T17:46:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1415"
 }
 ---
@@ -62,3 +62,6 @@ schema parity, and full exact-head/post-merge gates.
 
 - 2026-09-24T17:45:54+00:00: Recorded command exit 0; command argv SHA-256
   73d343fb1b1db6e5e62ebcb1555147e3fb3f2aeb698d7e44ffac3efc7ad50480.
+
+- 2026-09-24T17:46:08+00:00: Recorded command exit 0; command argv SHA-256
+  e6dd053754e1bbb8a92a06522822584d6e44618e0bd9be2e2e5511ba5d555182.
