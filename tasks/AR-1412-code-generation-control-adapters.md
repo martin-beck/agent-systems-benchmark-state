@@ -9,18 +9,18 @@
   ],
   "id": "AR-1412",
   "next_action": "Claim after binding metadata; implement offline-selectable code-generation control adapters.",
-  "observed_branch": "",
+  "observed_branch": "codex/ar-1412-code-generation-controls",
   "observed_dirty": 0,
-  "observed_head": "0000000000000000000000000000000000000000",
+  "observed_head": "fc74825cb86991bb3afac6854d8cb5048118ff8f",
   "owner": "ar1412_code_generation_luna56b",
   "plan": "../plans/AR-1412-code-generation-control-adapters.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recovered an abandoned claim with malformed local-time expiry; branch/worktree are now coordinator-bound before the next claim.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Code-generation control workload adapters",
-  "updated_at": "2026-09-24T14:27:41+00:00",
+  "updated_at": "2026-09-24T14:29:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1412"
 }
 ---
