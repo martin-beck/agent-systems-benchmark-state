@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist authenticated runtime certificate-chain material for live dispatch.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Runtime-owned certificate-chain store",
-  "updated_at": "2026-09-24T02:46:47+00:00",
+  "updated_at": "2026-09-24T02:47:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1377-runtime-chain-store"
 }
 ---
@@ -92,3 +92,6 @@ authority boundary and must not accept caller-built chains or synthesize trust.
 
 - 2026-09-24T02:46:47+00:00: PR #274 published after independent complete-diff review and clean
   signed+DCO verification. Product branch is clean and exact head is 65d1ede.
+
+- 2026-09-24T02:47:09+00:00: Recorded command exit 0; command argv SHA-256
+  321c534968b9c456a64caf5e6d09b63780c507f97548057d2bfe31edcfd73ff4.
