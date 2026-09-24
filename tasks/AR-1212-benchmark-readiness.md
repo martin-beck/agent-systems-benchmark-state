@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach users to test configured-agent benchmark eligibility without running an agent.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Agent benchmark-readiness tutorial",
-  "updated_at": "2026-09-24T19:23:28+00:00",
+  "updated_at": "2026-09-24T19:23:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1212"
 }
 ---
@@ -179,3 +179,6 @@ Implement the linked tutorial and deterministic negative/positive syntax fixture
   full diff is limited to tutorial/docs/fixtures, preserves offline and fail-closed semantics,
   performs no live provider or credential use, and satisfies AR-1212 scope. Review is approved for
   protected merge; all 12 required checks are terminal SUCCESS.
+
+- 2026-09-24T19:23:38+00:00: Recorded command exit 1; command argv SHA-256
+  ea9dea2f9d62beec4a1bd12bdf8a6ca1686ad6dfab495975d12719d37eb6af85.
