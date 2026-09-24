@@ -7,7 +7,7 @@
     "AR-1288"
   ],
   "id": "AR-1371",
-  "next_action": "Signed+DCO implementation 7c25e6e adds private owner-checked authority installation and restart revalidation against active enrollment, with positive injection and revocation-negative tests. Full cargo test --workspace --locked and cargo clippy --workspace --all-targets --locked -D warnings pass. Independently review clean exact head, then publish PR and monitor exact-head CI.",
+  "next_action": "PR #271 exact head 7c25e6e is published. Headers and AWQ shadow checks pass; all other required hosted checks are pending. gh pr checks exit 8 is the CLI pending-status code, not a gate failure. Keep lease, monitor exact-head checks, and merge only after every required check is green.",
   "observed_branch": "feature/ar-1371-runner-authority-injection",
   "observed_dirty": 0,
   "observed_head": "7c25e6ee94ff8d2efea5a3213e7f0285dc9a8ffb",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Inject existing authenticated certificate authority and runtime enrollment material into RunnerBackend/Catalog without synthetic authority.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Runner authority injection",
-  "updated_at": "2026-09-24T01:16:00+00:00",
+  "updated_at": "2026-09-24T01:16:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1371-runner-authority-injection"
 }
 ---
@@ -150,3 +150,8 @@ trust or launch authority from CLI/config input.
 
 - 2026-09-24T01:16:00+00:00: Recorded command exit 8; command argv SHA-256
   7badf387284201e3fc92d2ab523310dc2541100eb9b953bb0c485767d1f314b5.
+
+- 2026-09-24T01:16:13+00:00: Recorded hosted monitoring at 01:15:13Z: no failed checks; 2 passed and
+  10 pending. The private install boundary is reachable only from RunnerBackend restart recovery,
+  and it rejects absent/inactive enrollment, endpoint/credential/generation mismatch, invalid chain
+  metadata, and revoked records.

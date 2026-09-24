@@ -1895,9 +1895,10 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1371](../tasks/AR-1371-runner-authority-injection.md): Runner authority injection | codex-asb-runtime-attested-enrollment-luna56 | Inject existing authenticated certificate authority and runtime enrollment material into RunnerBackend/Catalog without synthetic authority. | Signed+DCO implementation 7c25e6e adds private owner-checked authority installation and restart revalidation against active enrollment, with positive injection and revocation-negative tests. Full cargo test --workspace --locked and cargo clippy --workspace --all-targets --locked -D warnings pass. Independently review clean exact head, then publish PR and monitor exact-head CI. |
+| P0 | [AR-1371](../tasks/AR-1371-runner-authority-injection.md): Runner authority injection | codex-asb-runtime-attested-enrollment-luna56 | Inject existing authenticated certificate authority and runtime enrollment material into RunnerBackend/Catalog without synthetic authority. | PR #271 exact head 7c25e6e is published. Headers and AWQ shadow checks pass; all other required hosted checks are pending. gh pr checks exit 8 is the CLI pending-status code, not a gate failure. Keep lease, monitor exact-head checks, and merge only after every required check is green. |
 
 ### Open (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1212](../tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Unclaimed | Teach users to test configured-agent benchmark eligibility without running an agent. | Implement the offline tutorial for checking agent benchmark readiness under the current configuration. |
