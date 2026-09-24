@@ -1,6 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| P0 | [AR-1373](../tasks/AR-1373-authenticated-receipt-source.md): Authenticated runtime receipt source | codex-asb-runtime-receipt-source-luna56 | Provide the authenticated ControlBackend runtime receipt source for AR-1329 production dispatch. | PR #273 is published at exact head 1cc2f732. Monitor all required exact-head checks; repair failures through handoffctl, merge only after independent review and all checks green, then verify seven post-merge workflows. |
+| P0 | [AR-1373](../tasks/AR-1373-authenticated-receipt-source.md): Authenticated runtime receipt source | codex-asb-runtime-receipt-source-luna56 | Provide the authenticated ControlBackend runtime receipt source for AR-1329 production dispatch. | PR #273 force-updated to exact head c623a006 after preserving historical v1 through v1.7 schemas. Monitor all required checks from the new head; repair any failure through handoffctl, merge only after independent review and all checks green, then verify seven post-merge workflows. |
 
 ### Open (4)
 

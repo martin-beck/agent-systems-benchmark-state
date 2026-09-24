@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1373-authenticated-receipt-source",
-  "checkpoint_commit": "1cc2f732b5889eec573a345ccf0c487cc638a70d",
+  "checkpoint_commit": "c623a006d3abb5cbdf3bb2c5dafff41b1f20833b",
   "claim_expires": "2026-09-24T04:01:56+00:00",
   "depends_on": [
     "AR-1365",
@@ -9,7 +9,7 @@
     "AR-1371"
   ],
   "id": "AR-1373",
-  "next_action": "PR #273 is published at exact head 1cc2f732. Monitor all required exact-head checks; repair failures through handoffctl, merge only after independent review and all checks green, then verify seven post-merge workflows.",
+  "next_action": "PR #273 force-updated to exact head c623a006 after preserving historical v1 through v1.7 schemas. Monitor all required checks from the new head; repair any failure through handoffctl, merge only after independent review and all checks green, then verify seven post-merge workflows.",
   "observed_branch": "feature/ar-1373-authenticated-receipt-source",
   "observed_dirty": 0,
   "observed_head": "c623a006d3abb5cbdf3bb2c5dafff41b1f20833b",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated ControlBackend runtime receipt source for AR-1329 production dispatch.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Authenticated runtime receipt source",
-  "updated_at": "2026-09-24T02:10:50+00:00",
+  "updated_at": "2026-09-24T02:11:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1373-authenticated-receipt-source"
 }
 ---
@@ -150,3 +150,9 @@ provider support from setup metadata alone.
 
 - 2026-09-24T02:10:50+00:00: Recorded command exit 0; command argv SHA-256
   9d632d57c0776292f82a40df66c312a011a288e0b9dd59d0affa7e7619d5a39c.
+
+- 2026-09-24T02:11:26+00:00: Hosted policy failed at prior head 1cc2f73 because generated
+  RuntimeReceipt variants modified immutable historical schema files. Repair c623a006 adds
+  runtime_receipt removal to historical schema generation and restores v1 through v1.7 byte
+  identity; local contract consistency and all schema conformance tests pass. Branch force-updated
+  safely with force-with-lease.
