@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1371-runner-authority-injection",
   "checkpoint_commit": "7c25e6ee94ff8d2efea5a3213e7f0285dc9a8ffb",
-  "claim_expires": "2026-09-24T03:22:11+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1288"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1371-runner-authority-injection",
   "observed_dirty": 0,
   "observed_head": "7c25e6ee94ff8d2efea5a3213e7f0285dc9a8ffb",
-  "owner": "codex-asb-runtime-attested-enrollment-luna56",
+  "owner": "",
   "plan": "../plans/AR-1371-runner-authority-injection.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Inject existing authenticated certificate authority and runtime enrollment material into RunnerBackend/Catalog without synthetic authority.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Runner authority injection",
-  "updated_at": "2026-09-24T01:24:03+00:00",
+  "updated_at": "2026-09-24T01:47:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1371-runner-authority-injection"
 }
 ---
@@ -172,3 +172,7 @@ trust or launch authority from CLI/config input.
   exact merge 3f0b6763: Formal assurance, Repository quality, Hosted portability/native
   qualification, Fault assurance, Emulated aarch64, Rust verification in progress; Huawei MIT
   headers already green.
+
+- 2026-09-24T01:47:52+00:00: PR #271 product merge 3f0b676 had all exact-head checks green but
+  failed post-merge Repository quality for one-parent squash topology. AR-1372 corrected this with
+  two-parent merge 265b936d and all seven post-merge workflows green; product behavior unchanged.

@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1371](tasks/AR-1371-runner-authority-injection.md): Runner authority injection | Inject existing authenticated certificate authority and runtime enrollment material into RunnerBackend/Catalog without synthetic authority. | PR #271 merged as 3f0b67638647dc016f7d5abd3e246baf3ae4ec29 after all 12 exact-head checks passed. Seven post-merge workflows are running; monitor all to terminal success before releasing AR. | codex-asb-runtime-attested-enrollment-luna56 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -273,6 +267,7 @@ Never edit this file directly.
 | P0 | [AR-1364](tasks/AR-1364-authenticated-chain-enrollment.md): Authenticated chain enrollment | Materialize authenticated certificate-chain authority for control-owned runtime receipt issuance. | Run full applicable gates, independently review the chain-enrollment boundary, then publish a clean exact-head PR and monitor all required checks. | - |
 | P0 | [AR-1365](tasks/AR-1365-control-receipt-source-integration.md): Control receipt source integration | Integrate authenticated chain and authority enrollment into the versioned control receipt source. | PR #269 merged as aa537f6a07ac3476a8c4d6443a8df3c42a1aebc1. Monitor seven post-merge workflows for exact merge SHA; release only after every workflow is terminal success. | - |
 | P0 | [AR-1366](tasks/AR-1366-runtime-dispatch-consumer.md): Runtime-owned dispatch consumer | Connect runtime-owned authenticated receipt consumption to the benchmark dispatch path without exposing authority to CLI callers. | PR #270 merged as 0c6dc52e1f4aa5854f73081711dbd9a5bc1a5d7c. Monitor seven post-merge workflows for exact merge SHA; release only after every workflow is terminal success. | - |
+| P0 | [AR-1371](tasks/AR-1371-runner-authority-injection.md): Runner authority injection | Inject existing authenticated certificate authority and runtime enrollment material into RunnerBackend/Catalog without synthetic authority. | PR #271 merged as 3f0b67638647dc016f7d5abd3e246baf3ae4ec29 after all 12 exact-head checks passed. Seven post-merge workflows are running; monitor all to terminal success before releasing AR. | - |
 | P0 | [AR-1372](tasks/AR-1372-topology-repair.md): Protected merge topology repair | Repair protected-main merge topology after AR-1371 without changing product behavior. | PR #272 merged with protected non-squash topology as 265b936d995148f8e40e36664cf68bf12affc20d. Seven post-merge workflows for exact merge are running; monitor all to terminal success, then release AR-1372 and reconcile AR-1371. | - |
 | P1 | [AR-0002](tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. | - |
 | P1 | [AR-0003](tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. | - |
