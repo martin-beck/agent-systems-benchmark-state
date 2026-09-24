@@ -18,11 +18,11 @@
   "plan": "../plans/AR-1388-runtime-authority-materializer.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Materialize runtime-owned provider authority from authenticated receipt and chain state.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Runtime authority receipt materializer",
-  "updated_at": "2026-09-24T06:40:00+00:00",
+  "updated_at": "2026-09-24T06:40:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1388-runtime-authority-materializer"
 }
 ---
@@ -32,3 +32,6 @@ authenticated receipt/chain to private bootstrap authority. It must never
 accept caller-supplied policy, allowlists, credentials, roots, tools,
 namespace identity, or launch tokens.
 
+
+- 2026-09-24T06:40:16+00:00: AR-1387 audit found missing receipt-chain to private bootstrap
+  constructor; dependencies verified
