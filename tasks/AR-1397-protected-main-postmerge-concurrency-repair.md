@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1397-protected-main-postmerge-concurrency-repair.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Repair protected-main merge-tree admission and serialize exact post-merge evidence across concurrent main pushes.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Protected-main post-merge concurrency and tree repair",
-  "updated_at": "2026-09-24T09:20:44+00:00",
+  "updated_at": "2026-09-24T09:22:58+00:00",
   "worktree_key": ""
 }
 ---
@@ -33,3 +33,7 @@ asb-tui. External providers are never required for development evidence.
 The prior ARs remain authoritative for their product diffs. This AR may add
 only the smallest coordinator/integration-flow repair and its regression tests;
 it must retain the default signature-required and exact-tree gates.
+
+- 2026-09-24T09:22:58+00:00: Promote narrowly scoped protected-main post-merge concurrency/tree
+  repair after AR-1314 merge c58b0b0 and AR-1395 merge c130ff91 failures; preserve original evidence
+  and do not weaken gates.
