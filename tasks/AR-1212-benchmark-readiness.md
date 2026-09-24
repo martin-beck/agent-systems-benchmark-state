@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach users to test configured-agent benchmark eligibility without running an agent.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Agent benchmark-readiness tutorial",
-  "updated_at": "2026-09-24T19:00:29+00:00",
+  "updated_at": "2026-09-24T19:04:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1212"
 }
 ---
@@ -102,3 +102,8 @@ Implement the linked tutorial and deterministic negative/positive syntax fixture
 
 - 2026-09-24T19:00:29+00:00: Corrected tutorial to pinned OpenRouter free model; signed commit
   b142bdd pushed to PR #305. Validator 15/15 and diff check passed.
+
+- 2026-09-24T19:04:01+00:00: PR #305 exact-head quality run 36045051042 failed: repository gitleaks
+  found one generic-api-key finding in the positive readiness fixture at the long provider-plan
+  command line, despite no secret; repair is to reformat that JSON command array across lines
+  without weakening .gitleaks.toml, then rerun gitleaks and all focused gates.
