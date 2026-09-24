@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Rebase, repair, verify, and truthfully resolve stale open dependency PRs.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Open dependency PR reconciliation",
-  "updated_at": "2026-09-24T11:53:15+00:00",
+  "updated_at": "2026-09-24T12:01:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1405"
 }
 ---
@@ -192,3 +192,6 @@ all changes remain subject to current exact-head gates.
   refresh thiserror/url transitions. Local formal cargo test passed; local cargo deny unavailable
   (cargo-deny not installed), so hosted policy/fuzz gates are authoritative. PR #291 head 9c1ddea is
   running exact checks.
+
+- 2026-09-24T12:01:44+00:00: Recorded command exit 0; command argv SHA-256
+  d9d5486ed4c4c9460e0cb6f81ea5f954ed31c258f92d05eb54decd08e3d406ca.
