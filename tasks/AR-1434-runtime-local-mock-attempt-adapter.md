@@ -10,6 +10,7 @@
     "AR-1388",
     "AR-1393"
   ],
+  "id": "AR-1434",
   "next_action": "Promote and claim after verifying the complete runtime prerequisite set; implement the mock-only attempt/backend adapter from the AR-1432 blocker evidence without changing production egress or live authority constructors.",
   "owner": "",
   "plan": "../plans/AR-1434-runtime-local-mock-attempt-adapter.md",
