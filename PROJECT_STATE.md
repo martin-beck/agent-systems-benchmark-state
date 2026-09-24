@@ -18,7 +18,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 36038241175 | `c533734a486a` | push | Fault assurance | completed:success |
 | 36038241174 | `c533734a486a` | push | Hosted portability and native qualification | completed:success |
-| 36038241138 | `c533734a486a` | push | Emulated aarch64 portability | in_progress:- |
+| 36038241138 | `c533734a486a` | push | Emulated aarch64 portability | completed:failure |
 | 36038241127 | `c533734a486a` | push | Formal assurance | completed:success |
 | 36038241094 | `c533734a486a` | push | Repository quality | in_progress:- |
 | 36038241030 | `c533734a486a` | push | Rust verification | in_progress:- |
