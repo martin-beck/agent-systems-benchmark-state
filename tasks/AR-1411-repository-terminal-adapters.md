@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add selectable, provenance-preserving repository-repair and terminal benchmark adapters.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Repository and terminal literature workload adapters",
-  "updated_at": "2026-09-24T14:26:04+00:00",
+  "updated_at": "2026-09-24T14:27:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1411"
 }
 ---
@@ -115,3 +115,6 @@ bounded local fixtures or LiteLLM-compatible mocks only.
   registry with methodology zero-budget semantics and documented provenance boundary. Focused cargo
   test -p asb-workloads passed (28 unit, 2 public API, 5 validity, doc tests); cargo fmt check and
   diff check passed. Signed+DCO commit 67129e7.
+
+- 2026-09-24T14:27:06+00:00: Recorded command exit 0; command argv SHA-256
+  4a94d24cdfb6163cc8298b763c9c2c60fa82a96c92aae2414d85ee552207e446.
