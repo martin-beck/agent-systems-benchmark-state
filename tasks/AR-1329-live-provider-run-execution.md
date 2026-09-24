@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1329-live-provider-run-execution",
   "checkpoint_commit": "a336d6744b1a82f36a706ec606b847c92d49cfd3",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T06:37:37+00:00",
   "depends_on": [
     "AR-1327",
     "AR-1328",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1329-live-provider-run-execution",
   "observed_dirty": 0,
   "observed_head": "a336d6744b1a82f36a706ec606b847c92d49cfd3",
-  "owner": "",
+  "owner": "codex-asb-runtime-receipt-source-luna56",
   "plan": "../plans/AR-1329.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Execute real agents against the selected provider through asb run and sweep with credential-free resolution.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Live-provider run execution for real agents",
-  "updated_at": "2026-09-23T15:22:38+00:00",
+  "updated_at": "2026-09-24T04:37:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1329-live-provider-run-execution"
 }
 ---
@@ -177,3 +177,5 @@ the digest-pinned mode remain default and never touch the network.
   ResourceLease, launch token, runtime-observed NamespaceIdentity, per-attempt LiveProviderRelay,
   concrete egress target, and credential channel. AR-1343 must implement and verify this service;
   AR-1329 remains fail-closed until then.
+
+- 2026-09-24T04:37:37+00:00: Claimed by codex-asb-runtime-receipt-source-luna56.
