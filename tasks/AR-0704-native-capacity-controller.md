@@ -2,7 +2,7 @@
 {
   "branch": "feature/native-capacity-controller",
   "checkpoint_commit": "4630f90af739fc628d2e4264a2d40fd7fe142eec",
-  "claim_expires": "2026-09-25T00:00:24+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0701",
     "AR-0103"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/native-capacity-controller",
   "observed_dirty": 0,
   "observed_head": "0c7e1d4b09da2c2850fc43779f2c9f2125b7cd20",
-  "owner": "ar0704-requal-luna56",
+  "owner": "",
   "plan": "../plans/AR-0704.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 265,
+  "task_revision": 266,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-24T22:08:00+00:00",
+  "updated_at": "2026-09-24T22:15:49+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -880,3 +880,8 @@ must not block this AR or its dependents.
 
 - 2026-09-24T22:08:00+00:00: Recorded command exit 0; command argv SHA-256
   c2c44c6a3a198f624d2665ba5ec4e1cf6d5b7c75351eb3e4889d90a9d44a1da2.
+
+- 2026-09-24T22:15:49+00:00: PR #119 protected merge 8d1889b7 verified: exact parents
+  d9eb6c2d+0c7e1d4b, tree ff7b3614, SSH signature and DCO valid. Seven exact-main workflows SUCCESS:
+  36065678459, 36065678468, 36065678472, 36065678507, 36065678453, 36065678512, 36065678470. Focused
+  14/14, Ruff, mypy pass.
