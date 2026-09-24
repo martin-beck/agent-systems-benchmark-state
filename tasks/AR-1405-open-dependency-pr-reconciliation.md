@@ -1,6 +1,6 @@
 ---
 {
-  "branch": "",
+  "branch": "codex/ar-1405-dependency-reconcile",
   "checkpoint_commit": "",
   "claim_expires": "2026-09-24T13:25:27+00:00",
   "depends_on": [],
@@ -18,7 +18,7 @@
   "task_revision": 3,
   "title": "Open dependency PR reconciliation",
   "updated_at": "2026-09-24T11:25:27+00:00",
-  "worktree_key": ""
+  "worktree_key": "agent-systems-benchmark-ar-1405"
 }
 ---
 
