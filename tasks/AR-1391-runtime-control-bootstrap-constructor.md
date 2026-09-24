@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1391-runtime-control-bootstrap-constructor",
   "checkpoint_commit": "10bffbf015bd7ca78d8c0d18f04cf0190195e933",
-  "claim_expires": "2026-09-24T08:28:46+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1388",
     "AR-1385",
@@ -18,15 +18,15 @@
   "observed_branch": "feature/ar-1391-runtime-control-bootstrap-constructor",
   "observed_dirty": 0,
   "observed_head": "10bffbf015bd7ca78d8c0d18f04cf0190195e933",
-  "owner": "codex-asb-ar1329-repair-luna56",
+  "owner": "",
   "plan": "../plans/AR-1391-runtime-control-bootstrap-constructor.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Materialize authenticated runtime live authority into an opaque source without caller injection.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Runtime control bootstrap constructor",
-  "updated_at": "2026-09-24T07:43:46+00:00",
+  "updated_at": "2026-09-24T07:44:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1391-runtime-control-bootstrap-constructor"
 }
 ---
@@ -39,3 +39,13 @@ external provider connection for development or CI.
   exact missing authenticated constructor.
 
 - 2026-09-24T07:43:46+00:00: Claimed by codex-asb-ar1329-repair-luna56.
+
+- 2026-09-24T07:44:12+00:00: Protected-main audit confirms no production runtime/control-owned
+  bootstrap constructor exists. asb-cli RuntimeAuthorityRecord and RuntimeReceipt expose only
+  authenticated digest metadata; no resolver supplies private lease/relay roots, egress
+  policy/allowlist, pinned tools, namespace identity, credential capability, or teardown authority.
+  Existing LiveProviderRuntimeBootstrapSpec::from_enrollment and materialize_handle are
+  crate-private and require caller-supplied private inputs; existing CLI source bridge accepts
+  externally injected opaque source. Implementing a facade would violate acceptance and fabricate
+  authority. Worktree remains clean at checkpoint 10bffbf015bd7ca78d8c0d18f04cf0190195e933; no PR
+  published.
