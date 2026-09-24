@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize the authenticated runtime-owned live dispatch source for production asb run and sweep.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Authenticated runtime live dispatch source",
-  "updated_at": "2026-09-24T05:54:43+00:00",
+  "updated_at": "2026-09-24T05:57:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1385-runtime-live-dispatch-source"
 }
 ---
@@ -76,3 +76,6 @@ namespace identity, or launch authority.
   invalid-adapter fail-closed tests. External providers are not required; deterministic local mock
   remains sufficient. Focused runtime tests 2/2, full asb-runtime 118 passed/1 ignored, CLI focused
   test passed, cargo check and clippy -D warnings passed. Product commit is SSH-signed with DCO.
+
+- 2026-09-24T05:57:47+00:00: Recorded command exit 0; command argv SHA-256
+  e8c3998ef6bee019a4fd8b5386a4a4c54d3e9356a142af463a4ffc31a9ed36db.
