@@ -9,7 +9,7 @@
   "id": "AR-1414",
   "next_action": "Audit PR #235 v2.87.14 exact base/head and policy/Rust failures in the bound worktree; repair without weakening gates, then review and merge only after all checks pass.",
   "observed_branch": "codex/ar-1414-install-pin-policy",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "e3aee6168194b110483d0b0dd3f5c0997fa6172c",
   "owner": "ar1414-install-pin-recovery-luna56",
   "plan": "../plans/AR-1414-action-pin-followup.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the newer immutable install-action update reopened as PR #235.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Follow-up install-action pin qualification",
-  "updated_at": "2026-09-24T16:12:15+00:00",
+  "updated_at": "2026-09-24T16:12:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1414"
 }
 ---
