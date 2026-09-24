@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-24T21:37:54+00:00",
+  "claim_expires": "2026-09-24T21:38:31+00:00",
   "depends_on": [
     "AR-1316"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Close stale conflicting agent-catalog PR #306 through durable coordinator evidence.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Stale agent-catalog PR cleanup",
-  "updated_at": "2026-09-24T19:37:54+00:00",
+  "updated_at": "2026-09-24T19:38:31+00:00",
   "worktree_key": ""
 }
 ---
@@ -32,3 +32,5 @@ disposition auditable and to prevent a duplicate branch from remaining open.
   conflicting and stale. Open bounded closure task without product mutation.
 
 - 2026-09-24T19:37:54+00:00: Claimed by open-pr-triage-luna56.
+
+- 2026-09-24T19:38:31+00:00: Heartbeat by open-pr-triage-luna56.
