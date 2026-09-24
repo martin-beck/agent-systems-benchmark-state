@@ -7,7 +7,7 @@
     "AR-1401"
   ],
   "id": "AR-1402",
-  "next_action": "Unified built-in/literature dispatch implemented with methodology-only rejection; focused and full cargo test --locked --workspace and clippy for asb-workloads/asb-cli pass. Run local quality gates, sign+DCO commit, publish PR from clean exact tree, then exact-head review/merge.",
+  "next_action": "Signed+DCO head cec6345 is pushed cleanly; prior PR creation exited because requested GitHub label quality does not exist and no PR was created. Recreate PR without nonexistent label against exact base 0667f299, then record exact base/head/tree and monitor checks.",
   "observed_branch": "codex/ar-1402-literature-cli",
   "observed_dirty": 0,
   "observed_head": "cec6345528764696f5a6058e8dae5dcea04684f9",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate literature workload catalog and adapters through all ASB CLI execution and evidence paths.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Literature workload CLI dispatch integration",
-  "updated_at": "2026-09-24T12:57:38+00:00",
+  "updated_at": "2026-09-24T12:58:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1402"
 }
 ---
@@ -123,3 +123,7 @@ external benchmark datasets or providers.
 
 - 2026-09-24T12:57:38+00:00: Recorded command exit 0; command argv SHA-256
   888bc90e87e322377ddff64b76387032fc1df354362bb17f64e52f0849f00383.
+
+- 2026-09-24T12:58:02+00:00: Publication failure was GitHub label validation only: gh pr create
+  returned could not add label quality: label not found; branch push succeeded and branch is present
+  remotely. Verified no PR exists for this head; safe to retry without label.

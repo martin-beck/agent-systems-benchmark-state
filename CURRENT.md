@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1402](tasks/AR-1402-literature-cli-dispatch-integration.md): Literature workload CLI dispatch integration | Integrate literature workload catalog and adapters through all ASB CLI execution and evidence paths. | Unified built-in/literature dispatch implemented with methodology-only rejection; focused and full cargo test --locked --workspace and clippy for asb-workloads/asb-cli pass. Run local quality gates, sign+DCO commit, publish PR from clean exact tree, then exact-head review/merge. | ar1402_literature_cli_luna56 |
+| P1 | [AR-1402](tasks/AR-1402-literature-cli-dispatch-integration.md): Literature workload CLI dispatch integration | Integrate literature workload catalog and adapters through all ASB CLI execution and evidence paths. | Signed+DCO head cec6345 is pushed cleanly; prior PR creation exited because requested GitHub label quality does not exist and no PR was created. Recreate PR without nonexistent label against exact base 0667f299, then record exact base/head/tree and monitor checks. | ar1402_literature_cli_luna56 |
 | P1 | [AR-1408](tasks/AR-1408-literature-inventory-closure.md): Literature workload inventory closure | Catalog audit implemented; PR #293 open for exact-head review. | Review PR #293 independently, wait exact-head required checks, merge only when green, then run post-merge verification and release AR-1408. | ar1408_literature_inventory_luna56b |
 
 ## Open
