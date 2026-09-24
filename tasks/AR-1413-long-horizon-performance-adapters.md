@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar-1413-long-horizon-performance",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T15:19:19+00:00",
   "depends_on": [
     "AR-1408",
     "AR-1401"
@@ -12,15 +12,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "",
+  "owner": "ar1413_long_horizon_performance_luna56",
   "plan": "../plans/AR-1413-long-horizon-performance-adapters.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Add truthful long-horizon, refreshed, performance, and reproducibility workload adapters.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Long-horizon and performance literature workload adapters",
-  "updated_at": "2026-09-24T13:38:06+00:00",
+  "updated_at": "2026-09-24T14:49:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1413"
 }
 ---
@@ -33,3 +33,5 @@ bounded local fixtures or LiteLLM-compatible mocks only.
 
 - 2026-09-24T14:51:00+00:00: Coordinator bound declared isolated branch
   codex/ar-1413-long-horizon-performance and worktree agent-systems-benchmark-ar-1413 before claim.
+
+- 2026-09-24T14:49:19+00:00: Claimed by ar1413_long_horizon_performance_luna56.
