@@ -7,7 +7,7 @@
     "AR-1316"
   ],
   "id": "AR-1422",
-  "next_action": "Release AR-1422 done after reconcile and live doctor; PR #306 is closed superseded with public evidence and no product mutation.",
+  "next_action": "Closure evidence complete. Re-run doctor --live after concurrent state-worker AR-1421 changes settle; then release AR-1422 done. Do not modify AR-1421 files.",
   "observed_branch": "codex/ar-1422-stale-pr-cleanup",
   "observed_dirty": 0,
   "observed_head": "5ddac12fc0b2d9fbff2b056af888b9ec76edeee5",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Close stale conflicting agent-catalog PR #306 through durable coordinator evidence.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Stale agent-catalog PR cleanup",
-  "updated_at": "2026-09-24T19:42:02+00:00",
+  "updated_at": "2026-09-24T19:45:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1422"
 }
 ---
@@ -52,3 +52,9 @@ disposition auditable and to prevent a duplicate branch from remaining open.
   implementation and later enhancements. No unique unmerged product behavior exists. Added public
   supersession comments issuecomment-5820964967 and issuecomment-5820977882, then closed PR #306 as
   superseded via handoffctl. No rebase, force-push, merge, or product edit performed.
+
+- 2026-09-24T19:45:06+00:00: Reconcile completed, but doctor --live returned `WORKTREES.md is stale`
+  because concurrent state worktree activity changed the state repository head and AR-1421 is
+  locally modified; generated WORKTREES differs only in concurrent state-worktree revisions/behind
+  counts. Plain doctor reports structure, references, privacy, and generated views consistent. No
+  AR-1421 files were touched.
