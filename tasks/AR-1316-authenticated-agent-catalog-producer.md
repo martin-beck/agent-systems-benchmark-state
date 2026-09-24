@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish the verified ASB agent catalog required by the first-run setup wizard.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Authenticated agent catalog producer",
-  "updated_at": "2026-09-24T18:54:31+00:00",
+  "updated_at": "2026-09-24T18:55:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1316"
 }
 ---
@@ -74,3 +74,6 @@ Progress evidence: ASB PR #245 merged at `027af7ad27da13b359b3f099699c42b03c6f39
   applied formatting but finalization exited LOCK_TIMEOUT after 10.0s acquiring exclusive
   coordinator lock; independent read-only cargo fmt --all -- --check passed. No product failure;
   rerun focused tests and retain lock-timeout evidence.
+
+- 2026-09-24T18:55:05+00:00: Recorded command exit 0; command argv SHA-256
+  bda6e479789a32dc87ec4945baa9311612b2cde91e93aa5bcec99bbb934f3ca8.
