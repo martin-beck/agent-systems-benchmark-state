@@ -12,17 +12,17 @@
   "id": "AR-1378",
   "next_action": "Promote and claim the dependency-valid successor, refresh an isolated worktree, and implement the authenticated ControlClient-to-runtime bridge.",
   "observed_branch": "feature/ar-1378-live-control-adapter",
-  "observed_dirty": 1,
-  "observed_head": "d4a3e14e86a75bcb0c4f004e8d997b2321bf0fb5",
+  "observed_dirty": 0,
+  "observed_head": "5f1902c681c9671d332ae662f0516df4d1f688df",
   "owner": "codex-asb-runtime-receipt-source-luna56",
   "plan": "../plans/AR-1378-live-control-adapter.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind authenticated control receipts to runtime-owned live dispatch.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Authenticated live control adapter",
-  "updated_at": "2026-09-24T03:11:00+00:00",
+  "updated_at": "2026-09-24T03:11:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1378-live-control-adapter"
 }
 ---
