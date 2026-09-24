@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1313-historical-dco-909078c",
   "checkpoint_commit": "3420355d8a0855aea696775cfe85cc628773c842",
-  "claim_expires": "2026-09-24T13:22:45+00:00",
+  "claim_expires": "2026-09-24T13:26:46+00:00",
   "depends_on": [],
   "id": "AR-1313",
   "next_action": "PR #290 is open at signed head 3420355 on exact base e41d4df; wait for all exact-head checks, record independent review, then merge with signed integration tool.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Forward-only signed DCO recovery candidate published as PR #231.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Historical DCO merge-integrity recovery",
-  "updated_at": "2026-09-24T11:22:55+00:00",
+  "updated_at": "2026-09-24T11:26:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1313-historical-dco-909078c"
 }
 ---
@@ -107,3 +107,5 @@ blocked with the exact failure and do not weaken the policy.
   Exact base e41d4df and head 3420355; initial checks are running. The handoffctl PR command
   completed remotely but state lock timed out afterward; this update reconciles the durable
   evidence.
+
+- 2026-09-24T11:26:46+00:00: Heartbeat by ar1313_recovery_luna56.
