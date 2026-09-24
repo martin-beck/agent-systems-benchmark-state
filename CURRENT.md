@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P2 | [AR-1403](tasks/AR-1403-literature-external-qualification.md): Literature workload external qualification | Add optional evidence-gated qualification for real literature workload sources and evaluators. | Open PR against exact protected main 6cef4babe3db65e22bfcd098a074da14a4630f7e; wait for exact-head checks, independent review, signed merge, seven post-merge gates, then release. | ar1403_external_qualification_luna56 |
+| P2 | [AR-1403](tasks/AR-1403-literature-external-qualification.md): Literature workload external qualification | Add optional evidence-gated qualification for real literature workload sources and evaluators. | PR #296 open; independently review full diff and wait for exact-head checks at base 6cef4babe3db65e22bfcd098a074da14a4630f7e/head b51570bbf0fa6e2ccfaddee86115c50474a168c3 before signed integration merge. | ar1403_external_qualification_luna56 |
 | P2 | [AR-1404](tasks/AR-1404-literature-documentation-matrix.md): Literature workload documentation and matrix contract | PR #295 has one unrelated flaky runtime test failure; focused reruns pass 5/5. | Wait for all PR #295 checks to be green after rerun; no product repair is warranted because the diff excludes asb-runtime. Then merge exact head and run post-merge gates. | ar1404_literature_documentation_luna56b |
 
 ## Open
