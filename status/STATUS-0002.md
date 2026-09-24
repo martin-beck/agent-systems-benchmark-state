@@ -74,7 +74,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P2 | [AR-1414](../tasks/AR-1414-action-pin-followup.md): Follow-up install-action pin qualification | ar1414-install-pin-recovery-luna56 | Qualify the newer immutable install-action update reopened as PR #235. | Coordinator must bind branch codex/ar-1414-install-pin-policy and worktree agent-systems-benchmark-ar-1414; then audit PR #235 v2.87.14 exact base/head and policy failure. |
+| P2 | [AR-1414](../tasks/AR-1414-action-pin-followup.md): Follow-up install-action pin qualification | ar1414-install-pin-recovery-luna56 | Qualify the newer immutable install-action update reopened as PR #235. | Audit PR #235 v2.87.14 exact base/head and policy/Rust failures in the bound worktree; repair without weakening gates, then review and merge only after all checks pass. |
 
 ### Open (2)
 
