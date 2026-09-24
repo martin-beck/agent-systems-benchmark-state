@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Restore signed+DCO protected-main evidence after an unsigned GitHub-generated repair merge.",
-  "task_revision": 67,
+  "task_revision": 68,
   "title": "Signed protected-main recovery",
-  "updated_at": "2026-09-24T10:26:57+00:00",
+  "updated_at": "2026-09-24T10:27:00+00:00",
   "worktree_key": ""
 }
 ---
@@ -227,3 +227,6 @@ providers are never required for development evidence.
   68844e7e177f72b9bb110d34382a2343849739bdf4b3e55b5c564b793deb47f7.
 
 - 2026-09-24T10:26:57+00:00: Heartbeat by ar1398_signed_recovery_luna56.
+
+- 2026-09-24T10:27:00+00:00: Recorded command exit 0; command argv SHA-256
+  fbaf903bb42afac5a76db563ff8f8547411b2a4e9fe37d94e7c7eceaa6286098.
