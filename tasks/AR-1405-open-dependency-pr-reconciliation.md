@@ -1,11 +1,11 @@
 ---
 {
   "branch": "codex/ar-1405-dependency-reconcile",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "9c1ddea3df54555dc1127239916198c2f7e926ef",
   "claim_expires": "2026-09-24T13:52:57+00:00",
   "depends_on": [],
   "id": "AR-1405",
-  "next_action": "Create one current-main replacement for safe dependency/action updates; independently assess sha2 separately; close stale PRs only after replacement evidence.",
+  "next_action": "Wait for PR #291 exact-head checks at 9c1ddea; if all required checks pass, obtain independent review and merge through protected path. Then close/supersede PRs #237/#236/#150/#149 with evidence; leave #235/#234/#148 action updates unresolved because policy pins are not yet authorized; assess #147 sha2 separately.",
   "observed_branch": "codex/ar-1405-dependency-reconcile",
   "observed_dirty": 0,
   "observed_head": "9c1ddea3df54555dc1127239916198c2f7e926ef",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Rebase, repair, verify, and truthfully resolve stale open dependency PRs.",
-  "task_revision": 83,
+  "task_revision": 84,
   "title": "Open dependency PR reconciliation",
-  "updated_at": "2026-09-24T11:52:57+00:00",
+  "updated_at": "2026-09-24T11:53:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1405"
 }
 ---
@@ -187,3 +187,8 @@ all changes remain subject to current exact-head gates.
   4a40d397b2e44a3308828118cf8c43157feb162ac04b944a18c3900705cda19e.
 
 - 2026-09-24T11:52:57+00:00: Heartbeat by ar1405_dependency_pr_luna56b.
+
+- 2026-09-24T11:53:15+00:00: Repaired stale lock coverage: formal/Cargo.lock and fuzz/Cargo.lock now
+  refresh thiserror/url transitions. Local formal cargo test passed; local cargo deny unavailable
+  (cargo-deny not installed), so hosted policy/fuzz gates are authoritative. PR #291 head 9c1ddea is
+  running exact checks.
