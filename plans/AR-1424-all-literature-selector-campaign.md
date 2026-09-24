@@ -15,6 +15,14 @@ windows, interactive/tool-use utility and safety, long-horizon repair,
 performance/correctness, and computational reproducibility.  Incompatible
 scores must never be collapsed into one ranking.
 
+The selector matrix must explicitly cover SWE-bench Lite/Verified/Pro,
+Terminal-Bench, Aider Polyglot, Exercism, BigCodeBench, EvalPlus
+(HumanEval+/MBPP+), LiveCodeBench, SWE-Lancer, SWE-rebench, SWE-Perf,
+SWE-fficiency, CORE-Bench, AgentBench, tau-bench, and AgentDojo, in addition
+to all seven `original.*` fixtures.  Harbor, Inspect AI, HAL, AgentOps, and
+HELM remain visible methodology/framework records and are rejected as runnable
+workloads unless a later AR supplies a task protocol and independent grader.
+
 ## Dependencies
 
 - AR-1423 (exhaustive docs-to-registry reconciliation)
@@ -39,6 +47,10 @@ scores must never be collapsed into one ranking.
   or evaluator qualification from mock/container evidence.
 - Positive and negative tests cover every family in the reconciled matrix,
   including the complete code-generation controls and performance suites.
+- Selector output is deterministic and namespaced; a user can select any
+  locally executable family by stable ID and can inspect, but not execute,
+  every provenance-only or framework-only record with its stable boundary
+  reason.
 
 ## Verification
 
