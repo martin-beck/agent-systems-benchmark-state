@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide offline deterministic mock execution for every documented literature workload family.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Literature workload local mock execution",
-  "updated_at": "2026-09-24T11:49:30+00:00",
+  "updated_at": "2026-09-24T11:49:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1401"
 }
 ---
@@ -32,3 +32,6 @@ record to official, native-tested, or externally qualified.
   deterministic local mock execution.
 
 - 2026-09-24T11:49:30+00:00: Claimed by ar1401_literature_mock_luna56.
+
+- 2026-09-24T11:49:38+00:00: Recorded command exit 0; command argv SHA-256
+  f204ff8ed81a89d711b4d54ac850f687b90d9ed258cb1d251ac8f6ff1a389b86.
