@@ -1,6 +1,6 @@
 ---
 {
-  "branch": "",
+  "branch": "codex/ar-1422-stale-pr-cleanup",
   "checkpoint_commit": "",
   "claim_expires": "2026-09-24T21:38:31+00:00",
   "depends_on": [
@@ -20,7 +20,7 @@
   "task_revision": 4,
   "title": "Stale agent-catalog PR cleanup",
   "updated_at": "2026-09-24T19:38:31+00:00",
-  "worktree_key": ""
+  "worktree_key": "agent-systems-benchmark-ar-1422"
 }
 ---
 
