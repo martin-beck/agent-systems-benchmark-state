@@ -8,7 +8,7 @@
     "AR-1408"
   ],
   "id": "AR-1418",
-  "next_action": "Existing main implementation verified: interactive.rs and literature registry cover AgentBench/tau-bench/AgentDojo offline selectors, separate reliability/utility/safety evidence, negative controls, and docs/catalog parity. Focused and package tests pass; clippy rerun after coordinator lock timeout, then release with PR #300 evidence.",
+  "next_action": "Release: implementation is already merged in PR #300 at c2fe732b from 6f93076; focused interactive tests, all asb-workloads targets, and clippy -D warnings pass on exact current main 0dcc717. Preserve historical exact-head CI evidence and release without duplicate PR.",
   "observed_branch": "codex/ar-1418-tool-use-reliability-safety",
   "observed_dirty": 0,
   "observed_head": "0dcc71705eb610e4c3ab6a9f775a9d7b9b25218a",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add selectable tool-use reliability and safety workloads from the literature with separate metrics.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Tool-use reliability and safety workloads",
-  "updated_at": "2026-09-24T19:18:39+00:00",
+  "updated_at": "2026-09-24T19:19:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1418"
 }
 ---
@@ -73,3 +73,12 @@ dimensions; no aggregate score may hide unsafe or failed tool calls.
 
 - 2026-09-24T19:18:39+00:00: Recorded command exit 0; command argv SHA-256
   f200c3a4231be54bfa784b196959dc9f42957edd09e2a62b476236eade210248.
+
+- 2026-09-24T19:19:24+00:00: Final verification: rerun cargo clippy --locked -p asb-workloads
+  --all-targets -- -D warnings passed. No product diff exists on isolated branch because requested
+  implementation is already on current main. Independent source audit confirms separate
+  reliability/utility/policy metrics, deterministic local mocks, fail-closed
+  stale/scorer/reset/tool/user/network boundaries, registry/docs/generated catalog parity. PR #300
+  merged c2fe732b with all required checks terminal SUCCESS. Prior identical update attempt failed
+  with LOCK_TIMEOUT after 10.0s acquiring exclusive coordinator lock; this retry verifies the
+  durable write.
