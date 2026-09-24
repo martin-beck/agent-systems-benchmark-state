@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar-1402-literature-cli",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T14:42:38+00:00",
   "depends_on": [
     "AR-1401"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "",
+  "owner": "ar1402_literature_cli_luna56",
   "plan": "../plans/AR-1402-literature-cli-dispatch-integration.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Integrate literature workload catalog and adapters through all ASB CLI execution and evidence paths.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Literature workload CLI dispatch integration",
-  "updated_at": "2026-09-24T12:41:59+00:00",
+  "updated_at": "2026-09-24T12:42:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1402"
 }
 ---
@@ -37,3 +37,5 @@ external benchmark datasets or providers.
   declared branch and worktree_key; handoffctl rejects isolated worktree setup without those
   declarations. No product commands or changes were performed. Coordinator must bind
   codex/ar-1402-literature-cli and agent-systems-benchmark-ar-1402, then re-claim.
+
+- 2026-09-24T12:42:38+00:00: Claimed by ar1402_literature_cli_luna56.

@@ -7,6 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
+| P1 | [AR-1402](tasks/AR-1402-literature-cli-dispatch-integration.md): Literature workload CLI dispatch integration | Integrate literature workload catalog and adapters through all ASB CLI execution and evidence paths. | Claim after binding metadata repair; create the isolated worktree, replace OriginalWorkloads-only CLI seams with catalog/adapter dispatch, and run end-to-end offline tests. | ar1402_literature_cli_luna56 |
 | P1 | [AR-1408](tasks/AR-1408-literature-inventory-closure.md): Literature workload inventory closure | Close literature-to-catalog gaps and make benchmark versus harness boundaries explicit. | Promote after AR-1400 and AR-1399 are done; reconcile every benchmark named in docs with the catalog and record explicit framework/non-workload boundaries. | ar1408_literature_inventory_luna56b |
 
 ## Open
@@ -15,7 +16,6 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1212](tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Teach users to test configured-agent benchmark eligibility without running an agent. | Implement the offline tutorial for checking agent benchmark readiness under the current configuration. | - |
 | P0 | [AR-1316](tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | Publish the verified ASB agent catalog required by the first-run setup wizard. | Persist the authenticated catalog snapshot/generation and complete live ASB-to-asb-tui wizard evidence; keep all entries unavailable until a verified release closure exists. | - |
-| P1 | [AR-1402](tasks/AR-1402-literature-cli-dispatch-integration.md): Literature workload CLI dispatch integration | Integrate literature workload catalog and adapters through all ASB CLI execution and evidence paths. | Claim after binding metadata repair; create the isolated worktree, replace OriginalWorkloads-only CLI seams with catalog/adapter dispatch, and run end-to-end offline tests. | - |
 
 ## Blocked
 
