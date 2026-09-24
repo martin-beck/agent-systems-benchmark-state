@@ -17,11 +17,11 @@
   "plan": "../plans/AR-1369-control-backend-authority-materialization.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Materialize authenticated live-provider authority in ControlBackend for runtime receipt issuance.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "ControlBackend authority materialization",
-  "updated_at": "2026-09-24T00:55:37+00:00",
+  "updated_at": "2026-09-24T00:57:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1369-control-backend-authority-materialization"
 }
 ---
@@ -62,3 +62,6 @@ touch asb-tui or synthesize authority from CLI/config input.
   state, and existing AuthEnroll/AuthHelperInvoke wire operations carry only endpoint and credential
   digests. Adding a receipt operation or synthesizing authority would be unauthenticated. No product
   mutation made; AR-1329 remains fail-closed.
+
+- 2026-09-24T00:57:12+00:00: Supersede this audit-only task with AR-1370 implementation of its
+  concrete RunnerBackend/Catalog authority gap.
