@@ -1895,7 +1895,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1371](../tasks/AR-1371-runner-authority-injection.md): Runner authority injection | codex-asb-runtime-attested-enrollment-luna56 | Inject existing authenticated certificate authority and runtime enrollment material into RunnerBackend/Catalog without synthetic authority. | Signed+DCO implementation fb581f9 adds persisted runtime authority records to Catalog, strict digest/identity validation, and recovery-time CertificateAuthorityV1 reconstruction from owner-checked trust-anchor digests. Focused asb-control 66 tests, asb-cli 100 tests, fmt, and cargo check pass. Run full workspace gates, independently review, publish exact head, and monitor CI. |
+| P0 | [AR-1371](../tasks/AR-1371-runner-authority-injection.md): Runner authority injection | codex-asb-runtime-attested-enrollment-luna56 | Inject existing authenticated certificate authority and runtime enrollment material into RunnerBackend/Catalog without synthetic authority. | Signed+DCO implementation 7c25e6e adds private owner-checked authority installation and restart revalidation against active enrollment, with positive injection and revocation-negative tests. Full cargo test --workspace --locked and cargo clippy --workspace --all-targets --locked -D warnings pass. Independently review clean exact head, then publish PR and monitor exact-head CI. |
 
 ### Open (4)
 

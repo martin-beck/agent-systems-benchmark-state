@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1371-runner-authority-injection",
-  "checkpoint_commit": "fb581f916970a1df99c20ae2a0f58f91d33420ff",
+  "checkpoint_commit": "7c25e6ee94ff8d2efea5a3213e7f0285dc9a8ffb",
   "claim_expires": "2026-09-24T03:11:39+00:00",
   "depends_on": [
     "AR-1288"
   ],
   "id": "AR-1371",
-  "next_action": "Signed+DCO implementation fb581f9 adds persisted runtime authority records to Catalog, strict digest/identity validation, and recovery-time CertificateAuthorityV1 reconstruction from owner-checked trust-anchor digests. Focused asb-control 66 tests, asb-cli 100 tests, fmt, and cargo check pass. Run full workspace gates, independently review, publish exact head, and monitor CI.",
+  "next_action": "Signed+DCO implementation 7c25e6e adds private owner-checked authority installation and restart revalidation against active enrollment, with positive injection and revocation-negative tests. Full cargo test --workspace --locked and cargo clippy --workspace --all-targets --locked -D warnings pass. Independently review clean exact head, then publish PR and monitor exact-head CI.",
   "observed_branch": "feature/ar-1371-runner-authority-injection",
   "observed_dirty": 0,
   "observed_head": "7c25e6ee94ff8d2efea5a3213e7f0285dc9a8ffb",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Inject existing authenticated certificate authority and runtime enrollment material into RunnerBackend/Catalog without synthetic authority.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Runner authority injection",
-  "updated_at": "2026-09-24T01:13:58+00:00",
+  "updated_at": "2026-09-24T01:14:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1371-runner-authority-injection"
 }
 ---
@@ -131,3 +131,8 @@ trust or launch authority from CLI/config input.
 
 - 2026-09-24T01:13:48+00:00: Recorded command exit 0; command argv SHA-256
   a6ccb937ebd0ce95c8f3f3e5db19cee75c645f587c125e35dcdbd6a993ea8404.
+
+- 2026-09-24T01:14:29+00:00: Repaired full-gate exit 101 caused by test-only CertificateIdentityV1
+  import at library scope; moved import into test module and reran full workspace tests and clippy
+  successfully. Added restart recovery rejection for stale/revoked or mismatched persisted authority
+  records; no credentials, paths, or synthetic authority cross boundary.
