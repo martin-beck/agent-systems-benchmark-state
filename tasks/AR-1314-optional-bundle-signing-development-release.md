@@ -7,17 +7,17 @@
   "id": "AR-1314",
   "next_action": "Wait for PR #232 exact-head CI after schema-v3 repair; if all required checks pass, independently review and merge through the established workflow, then reconcile AR-1314. Preserve signature-required defaults.",
   "observed_branch": "feature/ar-1314-optional-bundle-signing",
-  "observed_dirty": 3,
-  "observed_head": "83b171ca8cad35bce902a38ff3979029fa9b78d8",
+  "observed_dirty": 0,
+  "observed_head": "84416b52ca2f1552c251ed612c55870842b3e630",
   "owner": "ar1314_bundle_profile_repair_luna56",
   "plan": "../plans/AR-1314.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile.",
-  "task_revision": 125,
+  "task_revision": 126,
   "title": "Optional runtime-bundle signing for development and tagged releases",
-  "updated_at": "2026-09-24T09:11:43+00:00",
+  "updated_at": "2026-09-24T09:11:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1314-optional-bundle-signing"
 }
 ---
