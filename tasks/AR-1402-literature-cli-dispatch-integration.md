@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar-1402-literature-cli",
   "checkpoint_commit": "6cef4babe3db65e22bfcd098a074da14a4630f7e",
-  "claim_expires": "2026-09-24T15:24:05+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1401"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "codex/ar-1402-literature-cli",
   "observed_dirty": 0,
   "observed_head": "022561d8377afb8d1ff164520f9601578b21f717",
-  "owner": "ar1402_literature_cli_luna56",
+  "owner": "",
   "plan": "../plans/AR-1402-literature-cli-dispatch-integration.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Integrate literature workload catalog and adapters through all ASB CLI execution and evidence paths.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Literature workload CLI dispatch integration",
-  "updated_at": "2026-09-24T13:25:49+00:00",
+  "updated_at": "2026-09-24T13:26:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1402"
 }
 ---
@@ -217,3 +217,12 @@ external benchmark datasets or providers.
 
 - 2026-09-24T13:25:49+00:00: Recorded command exit 0; command argv SHA-256
   ba0c2c9e203b9039d41132bdf762763a56aa595811c6d177d39cd74d2b8f6a49.
+
+- 2026-09-24T13:26:24+00:00: AR-1402 complete. Signed+DCO PR #294 exact base
+  404ddde11316099421ec5599694ed05381ae2775/head 022561d8377afb8d1ff164520f9601578b21f717/tree
+  4214389067188f6615447755a9ed8bf1320228db merged as 6cef4babe3db65e22bfcd098a074da14a4630f7e.
+  merge_pr exact integrity, SSH signature G martin.beck2@gmx.de, and check_dco passed. All seven
+  exact-main post-merge workflows terminal SUCCESS: Rust 36004373952, AArch64 36004374158, hosted
+  36004373959, fault 36004373968, formal 36004374133, quality 36004373951 (successful rerun after
+  transient HTTP500), headers 36004373961. Unified catalog dispatch preserves built-ins, executes
+  literature only through offline local mocks, and rejects methodology-only records before effects.

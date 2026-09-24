@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1402](tasks/AR-1402-literature-cli-dispatch-integration.md): Literature workload CLI dispatch integration | Integrate literature workload catalog and adapters through all ASB CLI execution and evidence paths. | Post-merge quality run 36004373951 failed only at optional analyzer download: curl exit 22 after repeated HTTP 500; product tests were not reached. Rerun the exact quality workflow after transient service recovery while monitoring the other six runs; release only after all seven terminal SUCCESS. | ar1402_literature_cli_luna56 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -433,6 +427,7 @@ Never edit this file directly.
 | P1 | [AR-1399](tasks/AR-1399-literature-workload-registry-completeness.md): Literature workload registry completeness | Represent every docs-listed literature workload family in the strict ASB registry. | Dependency branch e63a3c6 already contains complete six executable-candidate literature records and methodology-only AgentOps/HELM; focused validator/tests pass. Await parent integration decision; no duplicate product delta. | - |
 | P1 | [AR-1400](tasks/AR-1400-literature-catalog-activation.md): Literature workload catalog activation | Expose all documented literature workloads as truthful selectable candidates beside built-in fixtures. | Post-merge seven exact-main workflows for e0b15fc are running; release only after all terminal-success results and verify the merged catalog. | - |
 | P1 | [AR-1401](tasks/AR-1401-literature-local-mock-execution.md): Literature workload local mock execution | Provide offline deterministic mock execution for every documented literature workload family. | Signed exact-base integration merge published as 0667f29 (base f213b296, head 6c397ce). Monitor seven exact-main post-merge workflows to terminal SUCCESS, verify exact tree/signature/DCO, then release AR-1401. | - |
+| P1 | [AR-1402](tasks/AR-1402-literature-cli-dispatch-integration.md): Literature workload CLI dispatch integration | Integrate literature workload catalog and adapters through all ASB CLI execution and evidence paths. | Post-merge quality run 36004373951 failed only at optional analyzer download: curl exit 22 after repeated HTTP 500; product tests were not reached. Rerun the exact quality workflow after transient service recovery while monitoring the other six runs; release only after all seven terminal SUCCESS. | - |
 | P1 | [AR-1405](tasks/AR-1405-open-dependency-pr-reconciliation.md): Open dependency PR reconciliation | Rebase, repair, verify, and truthfully resolve stale open dependency PRs. | Monitor seven post-merge workflows for exact SHA f213b296; after all green, close/supersede scoped stale PRs with exact evidence, then release AR done. Action PRs #235/#234/#148 require a future policy-pin migration AR; #147 requires separate sha2 compatibility AR. | - |
 | P1 | [AR-1408](tasks/AR-1408-literature-inventory-closure.md): Literature workload inventory closure | PR #293 merged at exact base; seven post-merge workflows running. | Wait for all seven post-merge workflows on merge 404ddde1 to reach terminal success, then release AR-1408 with evidence. | - |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Run final exact-main and local post-merge verification using required native x86_64 kernel evidence and applicable pinned QEMU AArch64 portability checks; record native ARM64 PMU/eBPF as optional future evidence, then release. | - |
