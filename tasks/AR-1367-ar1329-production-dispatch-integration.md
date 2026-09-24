@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1367-ar1329-production-dispatch-integration",
   "checkpoint_commit": "0c6dc52e1f4aa5854f73081711dbd9a5bc1a5d7c",
-  "claim_expires": "2026-09-24T06:26:51+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1366",
     "AR-1340",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1367-ar1329-production-dispatch-integration",
   "observed_dirty": 0,
   "observed_head": "5c4d5304e53d2cd9559999a00afd86cac28d29dc",
-  "owner": "codex-asb-ar1329-repair-luna56",
+  "owner": "",
   "plan": "../plans/AR-1367-ar1329-production-dispatch-integration.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Complete production asb run/sweep live-provider dispatch through runtime-owned authenticated acquisition and teardown.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "AR-1329 production dispatch integration",
-  "updated_at": "2026-09-24T05:41:51+00:00",
+  "updated_at": "2026-09-24T05:42:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1367-ar1329-production-dispatch-integration"
 }
 ---
@@ -65,3 +65,11 @@ metadata, touch asb-tui, or expose live authority through CLI/config input.
   eee0bfe7b8074d9284501372a84dfcfb185292346be3ff70334878a6c5c469df.
 
 - 2026-09-24T05:41:51+00:00: Heartbeat by codex-asb-ar1329-repair-luna56.
+
+- 2026-09-24T05:42:25+00:00: Post-AR-1384 audit remains blocked: asb-cli normal run/sweep has no
+  runtime-owned enrollment/source. LiveProviderRuntimeAuthorityProfile::materialize_handle is
+  crate-private and requires config, policy, allowlist, relay root, tool pins;
+  LiveProviderRuntimeService::acquire_from_enrollment still requires an externally constructed
+  LiveProviderEnrollment. Supplying these through CLI or synthesizing them violates authority
+  boundaries. Focused CLI live-gate test passes; no safe product diff. Coordinator must create a
+  narrowly scoped runtime-owned source/CLI bridge successor.
