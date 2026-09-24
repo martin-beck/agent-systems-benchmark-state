@@ -15,15 +15,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36066329434 | `e82e2e6f8a03` | push | Huawei MIT source headers | queued:- |
+| 36066329434 | `e82e2e6f8a03` | push | Huawei MIT source headers | completed:success |
 | 36066329422 | `e82e2e6f8a03` | push | Fault assurance | in_progress:- |
 | 36066329347 | `e82e2e6f8a03` | push | Repository quality | completed:failure |
 | 36066329321 | `e82e2e6f8a03` | push | Formal assurance | in_progress:- |
 | 36066329310 | `e82e2e6f8a03` | push | Hosted portability and native qualification | in_progress:- |
 | 36066329270 | `e82e2e6f8a03` | push | Emulated aarch64 portability | in_progress:- |
-| 36066329238 | `e82e2e6f8a03` | push | Rust verification | pending:- |
+| 36066329238 | `e82e2e6f8a03` | push | Rust verification | in_progress:- |
 | 36065678512 | `8d1889b7a774` | push | Emulated aarch64 portability | completed:success |
 | 36065678507 | `8d1889b7a774` | push | Formal assurance | completed:success |
 | 36065678472 | `8d1889b7a774` | push | Fault assurance | completed:success |
-| 36065678470 | `8d1889b7a774` | push | Rust verification | in_progress:- |
+| 36065678470 | `8d1889b7a774` | push | Rust verification | completed:success |
 | 36065678468 | `8d1889b7a774` | push | Hosted portability and native qualification | completed:success |
