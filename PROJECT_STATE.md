@@ -11,7 +11,7 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #119 | `feature/native-capacity-controller@e2e3574ed2bb` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(capacity): add bounded native lifecycle controller |
-| #302 | `codex/ar-1410-literature-selector-parity@2fe5c77304a3` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(workloads): complete literature selector parity |
+| #302 | `codex/ar-1410-literature-selector-parity@2fe5c77304a3` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(workloads): complete literature selector parity |
 
 ## Recent workflows
 
@@ -20,9 +20,9 @@ Generated from local Git and GitHub. Do not edit.
 | 36032873276 | `2fe5c77304a3` | pull_request | Formal assurance | completed:success |
 | 36032873261 | `2fe5c77304a3` | pull_request | Huawei MIT source headers | completed:success |
 | 36032873252 | `2fe5c77304a3` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 36032873237 | `2fe5c77304a3` | pull_request | Repository quality | in_progress:- |
-| 36032873236 | `2fe5c77304a3` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 36032873224 | `2fe5c77304a3` | pull_request | Rust verification | in_progress:- |
+| 36032873237 | `2fe5c77304a3` | pull_request | Repository quality | completed:success |
+| 36032873236 | `2fe5c77304a3` | pull_request | Emulated aarch64 portability | completed:success |
+| 36032873224 | `2fe5c77304a3` | pull_request | Rust verification | completed:success |
 | 36032873221 | `2fe5c77304a3` | pull_request | Hosted portability and native qualification | completed:success |
 | 36032873206 | `2fe5c77304a3` | pull_request | Fault assurance | completed:success |
 | 36031480045 | `8a1e031b1060` | pull_request | Fault assurance | completed:success |
