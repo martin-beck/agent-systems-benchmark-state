@@ -10,7 +10,7 @@
   "id": "AR-1404",
   "next_action": "Promote after the catalog and CLI contracts stabilize; generate documentation and add CI parity checks across docs, registry, catalog, and CLI inventory.",
   "observed_branch": "codex/ar-1404-literature-documentation",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "6cef4babe3db65e22bfcd098a074da14a4630f7e",
   "owner": "ar1404_literature_documentation_luna56b",
   "plan": "../plans/AR-1404-literature-documentation-matrix.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Generate and verify the literature workload documentation and evidence-state matrix.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Literature workload documentation and matrix contract",
-  "updated_at": "2026-09-24T13:29:50+00:00",
+  "updated_at": "2026-09-24T13:30:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1404"
 }
 ---
