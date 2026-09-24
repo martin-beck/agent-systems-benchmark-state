@@ -16,7 +16,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36063174963 | `d9eb6c2d6bda` | push | Repository quality | in_progress:- |
+| 36063174963 | `d9eb6c2d6bda` | push | Repository quality | completed:success |
 | 36063174428 | `d9eb6c2d6bda` | push | Fault assurance | completed:success |
 | 36063174410 | `d9eb6c2d6bda` | push | Rust verification | completed:success |
 | 36063174404 | `d9eb6c2d6bda` | push | Formal assurance | completed:success |
