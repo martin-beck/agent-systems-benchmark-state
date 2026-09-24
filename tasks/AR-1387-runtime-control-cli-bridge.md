@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bridge authenticated runtime/control bootstrap state into the production CLI dispatch path.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Authenticated runtime-control CLI bridge",
-  "updated_at": "2026-09-24T06:37:26+00:00",
+  "updated_at": "2026-09-24T06:38:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1387-runtime-control-cli-bridge"
 }
 ---
@@ -38,3 +38,6 @@ namespace identity, or launch token may become caller authority.
 - 2026-09-24T06:37:23+00:00: Claimed by codex-asb-ar1329-repair-luna56.
 
 - 2026-09-24T06:37:26+00:00: Heartbeat by codex-asb-ar1329-repair-luna56.
+
+- 2026-09-24T06:38:30+00:00: Recorded command exit 0; command argv SHA-256
+  b424a9b48859c95f2c076c63eb8af7f081718e87da9bcd44a60969f81404e3fb.
