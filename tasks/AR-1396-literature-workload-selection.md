@@ -10,17 +10,17 @@
   "id": "AR-1396",
   "next_action": "PR #288 exact head e1e532ea; all required exact-head checks pending after signed-main synchronization.",
   "observed_branch": "codex/ar-1396-literature-selection",
-  "observed_dirty": 2,
-  "observed_head": "e1e532ea1d4e2eceff6fa8d55c8df4ec2e8400ea",
+  "observed_dirty": 0,
+  "observed_head": "58bc56f0b793c4f42e83cbe27515d63d22cfda51",
   "owner": "codex-asb-ar1396-literature-selection-luna56",
   "plan": "../plans/AR-1396-literature-workload-selection.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make qualified literature workload families selectable beside built-in ASB software-engineering fixtures.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Literature workload selection",
-  "updated_at": "2026-09-24T10:37:37+00:00",
+  "updated_at": "2026-09-24T10:37:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1396"
 }
 ---
