@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute real agents against the selected provider through asb run and sweep with credential-free resolution.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Live-provider run execution for real agents",
-  "updated_at": "2026-09-24T04:37:59+00:00",
+  "updated_at": "2026-09-24T04:38:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1329-live-provider-run-execution"
 }
 ---
@@ -184,3 +184,6 @@ the digest-pinned mode remain default and never touch the network.
 
 - 2026-09-24T04:37:59+00:00: Recorded command exit 0; command argv SHA-256
   321c534968b9c456a64caf5e6d09b63780c507f97548057d2bfe31edcfd73ff4.
+
+- 2026-09-24T04:38:12+00:00: Recorded command exit 0; command argv SHA-256
+  b7c438686581cf292b6cd41497ceabb3af42dfed57e04dfd6cc89efed8e2d15b.
