@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add optional evidence-gated qualification for real literature workload sources and evaluators.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Literature workload external qualification",
-  "updated_at": "2026-09-24T13:42:59+00:00",
+  "updated_at": "2026-09-24T13:43:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1403"
 }
 ---
@@ -120,3 +120,6 @@ development, mock execution, or candidate selection.
   27d7164cb942ad54f460312760917cbc9feae99a9f7b3fea59f0147e4e0c08ee.
 
 - 2026-09-24T13:42:59+00:00: Heartbeat by ar1403_external_qualification_luna56.
+
+- 2026-09-24T13:43:06+00:00: Recorded command exit 0; command argv SHA-256
+  70722c1c2763cb655b00708311d86555fee480735cd4b007b85df76ce6b60ef8.
