@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1398-signed-protected-main-recovery",
   "checkpoint_commit": "f5680de433bb15879b1ef42427d1e7843e0bff36",
-  "claim_expires": "2026-09-24T12:13:11+00:00",
+  "claim_expires": "2026-09-24T12:14:38+00:00",
   "depends_on": [
     "AR-1337"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Restore signed+DCO protected-main evidence after an unsigned GitHub-generated repair merge.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Signed protected-main recovery",
-  "updated_at": "2026-09-24T10:13:36+00:00",
+  "updated_at": "2026-09-24T10:14:38+00:00",
   "worktree_key": ""
 }
 ---
@@ -145,3 +145,5 @@ providers are never required for development evidence.
 
 - 2026-09-24T10:13:36+00:00: Recorded command exit 0; command argv SHA-256
   20ff7a6bbcaeec2fea4499ec1b84d9a97da6d80610b1c92a005b89f353ac4473.
+
+- 2026-09-24T10:14:38+00:00: Heartbeat by ar1398_signed_recovery_luna56.
