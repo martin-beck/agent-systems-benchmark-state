@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair protected-main merge-tree admission and serialize exact post-merge evidence across concurrent main pushes.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Protected-main post-merge concurrency and tree repair",
-  "updated_at": "2026-09-24T09:27:29+00:00",
+  "updated_at": "2026-09-24T09:28:50+00:00",
   "worktree_key": ""
 }
 ---
@@ -45,3 +45,6 @@ it must retain the default signature-required and exact-tree gates.
 - 2026-09-24T09:25:44+00:00: Claimed by ar1397-protected-main-repair-luna56.
 
 - 2026-09-24T09:27:29+00:00: Heartbeat by ar1397-protected-main-repair-luna56.
+
+- 2026-09-24T09:28:50+00:00: Recorded command exit 0; command argv SHA-256
+  2334642cd77a45f898a2584fde2a2a6d012d9a48240a54f211bc956ddffdfcba.
