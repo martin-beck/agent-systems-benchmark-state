@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1366-runtime-dispatch-consumer",
-  "checkpoint_commit": "aa537f6a07ac3476a8c4d6443a8df3c42a1aebc1",
+  "checkpoint_commit": "e11e994e8df87a45ec64b64edfb0f3988aae0157",
   "claim_expires": "2026-09-24T02:20:04+00:00",
   "depends_on": [
     "AR-1362",
@@ -9,7 +9,7 @@
     "AR-1365"
   ],
   "id": "AR-1366",
-  "next_action": "Promote and claim this dependency-ready task, refresh an isolated worktree to protected main, then implement the runtime-owned dispatch consumer with positive and fail-closed negative tests.",
+  "next_action": "Signed+DCO implementation e11e994 adds runtime-owned response binding and replay-protected dispatch ingestion with focused/full runtime tests and clippy green. Independently review clean diff, publish exact head via handoffctl, monitor required CI, repair failures without weakening gates, then merge only green.",
   "observed_branch": "feature/ar-1366-runtime-dispatch-consumer",
   "observed_dirty": 1,
   "observed_head": "aa537f6a07ac3476a8c4d6443a8df3c42a1aebc1",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect runtime-owned authenticated receipt consumption to the benchmark dispatch path without exposing authority to CLI callers.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Runtime-owned dispatch consumer",
-  "updated_at": "2026-09-24T00:21:11+00:00",
+  "updated_at": "2026-09-24T00:21:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1366-runtime-dispatch-consumer"
 }
 ---
@@ -50,3 +50,9 @@ synthesize authority from CLI/config input.
 
 - 2026-09-24T00:21:11+00:00: Recorded command exit 0; command argv SHA-256
   78fbb16b3cc348d668a897b869341aa0d0b57e48b7f483f5a8dc66393f21b8f9.
+
+- 2026-09-24T00:21:40+00:00: Implementation checkpoint e11e994e8df87a45ec64b64edfb0f3988aae0157 is
+  SSH-signed+DCO. Added LiveProviderRuntimeBridge::ingest_control_response, validating
+  RuntimeReceiptRequestV1/RuntimeReceiptResponseV1 binding before existing authenticated receipt
+  ingestion; positive and nonce-tamper tests pass. Full asb-runtime tests (109 passed, 1 ignored)
+  and clippy -D warnings passed.

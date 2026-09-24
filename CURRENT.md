@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1366](tasks/AR-1366-runtime-dispatch-consumer.md): Runtime-owned dispatch consumer | Connect runtime-owned authenticated receipt consumption to the benchmark dispatch path without exposing authority to CLI callers. | Promote and claim this dependency-ready task, refresh an isolated worktree to protected main, then implement the runtime-owned dispatch consumer with positive and fail-closed negative tests. | codex-asb-runtime-attested-enrollment-luna56 |
+| P0 | [AR-1366](tasks/AR-1366-runtime-dispatch-consumer.md): Runtime-owned dispatch consumer | Connect runtime-owned authenticated receipt consumption to the benchmark dispatch path without exposing authority to CLI callers. | Signed+DCO implementation e11e994 adds runtime-owned response binding and replay-protected dispatch ingestion with focused/full runtime tests and clippy green. Independently review clean diff, publish exact head via handoffctl, monitor required CI, repair failures without weakening gates, then merge only green. | codex-asb-runtime-attested-enrollment-luna56 |
 
 ## Open
 
