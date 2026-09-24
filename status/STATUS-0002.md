@@ -72,12 +72,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md): Literature workload local-mock cross-product | ar1416-literature-mock-cross-product-luna56 | Prove end-to-end selectable literature workloads with deterministic local or LiteLLM-compatible mocks and no live provider dependency. | Monitor seven post-merge workflows for merge 0dcc717; release AR-1416 only after all seven terminal SUCCESS and exact-main verification. |
-
 ### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -234,7 +228,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (286)
+### Done (287)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -506,6 +500,7 @@
 | P1 | [AR-1412](../tasks/AR-1412-code-generation-control-adapters.md): Code-generation control workload adapters | Unclaimed | Recovered an abandoned claim with malformed local-time expiry; branch/worktree are now coordinator-bound before the next claim. | Wait for fresh exact-head PR #298 checks on 0d94a2e rebased onto current main ea27dfb; independently review exact diff and merge only after all checks are green. |
 | P1 | [AR-1413](../tasks/AR-1413-long-horizon-performance-adapters.md): Long-horizon and performance literature workload adapters | Unclaimed | Seven post-merge runs: four terminal success; aarch64, repository quality, and Rust remain actively executing on GitHub-hosted runners. | Continue monitoring post-merge IDs 36018871328/36018871323/36018871358; runner/job APIs show active in-progress steps, so do not rerun. Release only after all seven terminal success. |
 | P1 | [AR-1415](../tasks/AR-1415-literature-selector-total-coverage.md): Total literature workload selector coverage | Unclaimed | Make the complete literature workload inventory selectable beside built-in software-engineering fixtures with truthful evidence gates. | Rerun exact failed post-merge workflow 36038241138 after three green isolated Goose reproductions; wait all seven terminal SUCCESS, verify main, then release. |
+| P1 | [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md): Literature workload local-mock cross-product | Unclaimed | Prove end-to-end selectable literature workloads with deterministic local or LiteLLM-compatible mocks and no live provider dependency. | Monitor seven post-merge workflows for merge 0dcc717; release AR-1416 only after all seven terminal SUCCESS and exact-main verification. |
 | P2 | [AR-0202](../tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Unclaimed | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Run final exact-main and local post-merge verification using required native x86_64 kernel evidence and applicable pinned QEMU AArch64 portability checks; record native ARM64 PMU/eBPF as optional future evidence, then release. |
 | P2 | [AR-0308](../tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | Unclaimed | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Run final state validation/live doctor and release done after confirming clean synchronized product/state refs at signed merge a0d80e4. |
 | P2 | [AR-0309](../tasks/AR-0309-agent-openhands.md): Implement maintained OpenHands SDK client adapter | Unclaimed | Run a maintained MIT OpenHands SDK or canonical headless client. | Monitor PR #65 exact-head CI for fec0487, investigate any failure, and await final review; do not merge. |

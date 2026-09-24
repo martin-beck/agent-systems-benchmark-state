@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar-1416-literature-mock-cross-product",
   "checkpoint_commit": "0dcc71705eb610e4c3ab6a9f775a9d7b9b25218a",
-  "claim_expires": "2026-09-24T20:47:28+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1415",
     "AR-1401",
@@ -13,15 +13,15 @@
   "observed_branch": "codex/ar-1416-literature-mock-cross-product",
   "observed_dirty": 0,
   "observed_head": "cb33964b53ae73afac0ff4dce464a0e314c9fedc",
-  "owner": "ar1416-literature-mock-cross-product-luna56",
+  "owner": "",
   "plan": "../plans/AR-1416.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Prove end-to-end selectable literature workloads with deterministic local or LiteLLM-compatible mocks and no live provider dependency.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Literature workload local-mock cross-product",
-  "updated_at": "2026-09-24T18:47:47+00:00",
+  "updated_at": "2026-09-24T18:48:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1416"
 }
 ---
@@ -210,3 +210,11 @@ exact-head CI, independent review, and all required post-merge workflows.
 
 - 2026-09-24T18:47:47+00:00: Recorded command exit 0; command argv SHA-256
   dfbd53775d90250d9fcb10bd5e7b28c8183c7d12a41d088ecea47e2027767205.
+
+- 2026-09-24T18:48:01+00:00: Released after PR #304 merge 0dcc71705eb610e4c3ab6a9f775a9d7b9b25218a.
+  Exact base c533734a/head cb33964b; all 12 PR checks terminal SUCCESS. Verified origin/main exactly
+  equals merge commit, merged tree clean, and cb33964b SSH signature plus DCO Signed-off-by valid.
+  Seven exact-main post-merge workflows all terminal SUCCESS: 36042650207, 36042650354, 36042650237,
+  36042650523, 36042650651, 36042650552, 36042650470. Focused 14/14 and full asb-workloads/asb-cli
+  gates passed; methodology-only records fail closed and all 19 executable literature IDs have
+  deterministic lifecycle/reset coverage.
