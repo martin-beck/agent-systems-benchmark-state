@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach conservative comparison of multiple agents from the same benchmark.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Multi-agent result comparison tutorial",
-  "updated_at": "2026-09-24T20:53:09+00:00",
+  "updated_at": "2026-09-24T20:53:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1215"
 }
 ---
@@ -44,3 +44,6 @@ commands in tutorial syntax CI.
 - 2026-09-24T20:53:09+00:00: Focused tutorial test exit 1: synthetic comparison fixture IDs
   containing task-score were rejected by the existing sk- secret-pattern guard; no benchmark or
   provider command ran. Corrective fixture-only identifier change is in progress.
+
+- 2026-09-24T20:53:57+00:00: Recorded command exit 0; command argv SHA-256
+  4b866a61a939ff1592762d034f882243a35f8b3ee058634868b1ba40a476710e.
