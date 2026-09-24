@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1378-live-control-adapter",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-24T05:08:16+00:00",
+  "claim_expires": "2026-09-24T05:09:33+00:00",
   "depends_on": [
     "AR-1377",
     "AR-1366",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind authenticated control receipts to runtime-owned live dispatch.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Authenticated live control adapter",
-  "updated_at": "2026-09-24T03:09:20+00:00",
+  "updated_at": "2026-09-24T03:09:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1378-live-control-adapter"
 }
 ---
@@ -40,3 +40,5 @@ chain store; this task supplies only the authenticated control operation seam.
 
 - 2026-09-24T03:09:05+00:00: Recorded command exit 0; command argv SHA-256
   b7c438686581cf292b6cd41497ceabb3af42dfed57e04dfd6cc89efed8e2d15b.
+
+- 2026-09-24T03:09:33+00:00: Heartbeat by codex-asb-runtime-receipt-source-luna56.
