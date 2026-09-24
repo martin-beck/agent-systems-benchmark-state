@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1371-runner-authority-injection",
-  "checkpoint_commit": "0c6dc52e1f4aa5854f73081711dbd9a5bc1a5d7c",
+  "checkpoint_commit": "fb581f916970a1df99c20ae2a0f58f91d33420ff",
   "claim_expires": "2026-09-24T02:59:48+00:00",
   "depends_on": [
     "AR-1288"
   ],
   "id": "AR-1371",
-  "next_action": "Focused compile initially failed only because the new private RuntimeAuthorityRecord::issue_receipt seam was unused under -D warnings; added an explicit dead-code boundary annotation for the planned authenticated receipt operation. cargo fmt check and cargo check -p asb-cli --locked now pass. Run focused/full tests, independently review, then signed commit.",
+  "next_action": "Signed+DCO implementation fb581f9 adds persisted runtime authority records to Catalog, strict digest/identity validation, and recovery-time CertificateAuthorityV1 reconstruction from owner-checked trust-anchor digests. Focused asb-control 66 tests, asb-cli 100 tests, fmt, and cargo check pass. Run full workspace gates, independently review, publish exact head, and monitor CI.",
   "observed_branch": "feature/ar-1371-runner-authority-injection",
   "observed_dirty": 2,
   "observed_head": "0c6dc52e1f4aa5854f73081711dbd9a5bc1a5d7c",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Inject existing authenticated certificate authority and runtime enrollment material into RunnerBackend/Catalog without synthetic authority.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Runner authority injection",
-  "updated_at": "2026-09-24T01:03:46+00:00",
+  "updated_at": "2026-09-24T01:04:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1371-runner-authority-injection"
 }
 ---
@@ -68,3 +68,9 @@ trust or launch authority from CLI/config input.
 
 - 2026-09-24T01:03:46+00:00: Recorded command exit 0; command argv SHA-256
   2ade5c66b9824bc07ed15f960bd197d95d86810e01ea897ea4782da4d022a751.
+
+- 2026-09-24T01:04:31+00:00: Implementation checkpoint fb581f916970a1df99c20ae2a0f58f91d33420ff is
+  SSH-signed+DCO. Added RuntimeAuthorityRecord persistence/validation and a digest-only
+  CertificateAuthorityV1 recovery constructor; added a negative provider-mismatch/privacy test.
+  Initial dead-code lint failure was repaired with a documented private seam annotation; focused
+  gates now pass.
