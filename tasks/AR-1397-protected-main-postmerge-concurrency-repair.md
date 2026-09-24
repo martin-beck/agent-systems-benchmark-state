@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair protected-main merge-tree admission and serialize exact post-merge evidence across concurrent main pushes.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Protected-main post-merge concurrency and tree repair",
-  "updated_at": "2026-09-24T09:34:29+00:00",
+  "updated_at": "2026-09-24T09:35:01+00:00",
   "worktree_key": ""
 }
 ---
@@ -54,3 +54,6 @@ it must retain the default signature-required and exact-tree gates.
 
 - 2026-09-24T09:34:29+00:00: Recorded command exit 0; command argv SHA-256
   03fc982a4fa7c6e4f71cb0c198b141e1b339c6c8fcb3a1dca3ed2a0dc207cea4.
+
+- 2026-09-24T09:35:01+00:00: Recorded command exit 0; command argv SHA-256
+  5bd4bfb2f7842a1096a7f2696b0ff04664193b4c70be381574c8ae521d0f7cfc.
