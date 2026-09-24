@@ -7,7 +7,7 @@
     "AR-1213"
   ],
   "id": "AR-1214",
-  "next_action": "Retry reconcile and exact-base publication after coordinator lock clears; publication currently blocked by repeated LOCK_TIMEOUT.",
+  "next_action": "Create PR from docs/ar-1214-record-replay; require exact-head CI, independent review, merge, seven post-merge checks, and verification.",
   "observed_branch": "docs/ar-1214-record-replay",
   "observed_dirty": 0,
   "observed_head": "699ddd679b4108440effc3c65d600b391cd52bfb",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach privacy-safe LLM response recording and strict offline replay.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "LLM response record/replay tutorial",
-  "updated_at": "2026-09-24T20:57:35+00:00",
+  "updated_at": "2026-09-24T20:59:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1214"
 }
 ---
@@ -82,3 +82,7 @@ permitted in its CI job.
 - 2026-09-24T20:57:35+00:00: Publication retry failed: handoffctl run git push hit LOCK_TIMEOUT
   after 10s. Reconcile also hit LOCK_TIMEOUT; snapshot remains refused because WORKTREES.md is
   stale.
+
+- 2026-09-24T20:59:18+00:00: Exact-base publication succeeded: origin/docs/ar-1214-record-replay
+  points to signed head 699ddd6; reviewed range bd7d10d..699ddd6 contains only AR paths. A post-push
+  handoffctl recording attempt hit LOCK_TIMEOUT after the remote push succeeded.
