@@ -1,12 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| P0 | [AR-1372](../tasks/AR-1372-topology-repair.md): Protected merge topology repair | codex-asb-topology-repair-luna56 | Repair protected-main merge topology after AR-1371 without changing product behavior. | PR #272 merged with protected non-squash topology as 265b936d995148f8e40e36664cf68bf12affc20d. Seven post-merge workflows for exact merge are running; monitor all to terminal success, then release AR-1372 and reconcile AR-1371. |
-
-### Open (4)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1212](../tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Unclaimed | Teach users to test configured-agent benchmark eligibility without running an agent. | Implement the offline tutorial for checking agent benchmark readiness under the current configuration. |
 | P0 | [AR-1314](../tasks/AR-1314-optional-bundle-signing-development-release.md): Optional runtime-bundle signing for development and tagged releases | Unclaimed | Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile. | Wait for PR #232 exact-head CI after schema-v3 repair; if all required checks pass, independently review and merge through the established workflow, then reconcile AR-1314. Preserve signature-required defaults. |
 | P0 | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | Unclaimed | Publish the verified ASB agent catalog required by the first-run setup wizard. | Persist the authenticated catalog snapshot/generation and complete live ASB-to-asb-tui wizard evidence; keep all entries unavailable until a verified release closure exists. |
 | P1 | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md): Live-provider run execution for real agents | Unclaimed | Execute real agents against the selected provider through asb run and sweep with credential-free resolution. | BLOCKED pending coordinator-created repair AR: implement runtime-owned LiveProviderRuntimeService acquisition for production asb run/sweep. Service must resolve pinned provider policy to concrete public target(s), obtain credential through enrolled environment channel without evidence disclosure, construct attested child namespace handoff and relay listener, reserve ResourceLease, create SandboxBackend with pinned live gate, attest and issue one LiveProviderAttempt per scheduler attempt, and teardown on cancellation. Then AR-1329 can wire dispatch --provider-selection/--live-provider while preserving NetworkPolicy::Deny and direct/alternate egress denial. |
@@ -149,7 +142,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (250)
+### Done (251)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -266,6 +259,7 @@
 | P0 | [AR-1364](../tasks/AR-1364-authenticated-chain-enrollment.md): Authenticated chain enrollment | Unclaimed | Materialize authenticated certificate-chain authority for control-owned runtime receipt issuance. | Run full applicable gates, independently review the chain-enrollment boundary, then publish a clean exact-head PR and monitor all required checks. |
 | P0 | [AR-1365](../tasks/AR-1365-control-receipt-source-integration.md): Control receipt source integration | Unclaimed | Integrate authenticated chain and authority enrollment into the versioned control receipt source. | PR #269 merged as aa537f6a07ac3476a8c4d6443a8df3c42a1aebc1. Monitor seven post-merge workflows for exact merge SHA; release only after every workflow is terminal success. |
 | P0 | [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md): Runtime-owned dispatch consumer | Unclaimed | Connect runtime-owned authenticated receipt consumption to the benchmark dispatch path without exposing authority to CLI callers. | PR #270 merged as 0c6dc52e1f4aa5854f73081711dbd9a5bc1a5d7c. Monitor seven post-merge workflows for exact merge SHA; release only after every workflow is terminal success. |
+| P0 | [AR-1372](../tasks/AR-1372-topology-repair.md): Protected merge topology repair | Unclaimed | Repair protected-main merge topology after AR-1371 without changing product behavior. | PR #272 merged with protected non-squash topology as 265b936d995148f8e40e36664cf68bf12affc20d. Seven post-merge workflows for exact merge are running; monitor all to terminal success, then release AR-1372 and reconcile AR-1371. |
 | P1 | [AR-0002](../tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Unclaimed | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. |
 | P1 | [AR-0003](../tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Unclaimed | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. |
 | P1 | [AR-0004](../tasks/AR-0004-ar-status-document.md): Generate the visual AR status document | Unclaimed | Render every AR, status, and dependency as an accessible visual state document. | Await independent immutable-head review of state PR 3 at eedd311; repair findings before coordinator integration. |

@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1372-topology-repair",
   "checkpoint_commit": "6b682f5f5ff7d27b7697793417cfc4f8992095e1",
-  "claim_expires": "2026-09-24T03:45:02+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1372",
   "next_action": "PR #272 merged with protected non-squash topology as 265b936d995148f8e40e36664cf68bf12affc20d. Seven post-merge workflows for exact merge are running; monitor all to terminal success, then release AR-1372 and reconcile AR-1371.",
   "observed_branch": "feature/ar-1372-topology-repair",
   "observed_dirty": 0,
   "observed_head": "6b682f5f5ff7d27b7697793417cfc4f8992095e1",
-  "owner": "codex-asb-topology-repair-luna56",
+  "owner": "",
   "plan": "../plans/AR-1372-topology-repair.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Repair protected-main merge topology after AR-1371 without changing product behavior.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Protected merge topology repair",
-  "updated_at": "2026-09-24T01:45:02+00:00",
+  "updated_at": "2026-09-24T01:47:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1372-topology-repair"
 }
 ---
@@ -77,3 +77,7 @@ topology; no gate may be weakened.
 - 2026-09-24T01:42:23+00:00: Heartbeat by codex-asb-topology-repair-luna56.
 
 - 2026-09-24T01:45:02+00:00: Heartbeat by codex-asb-topology-repair-luna56.
+
+- 2026-09-24T01:47:50+00:00: PR #272 merged as 265b936d995148f8e40e36664cf68bf12affc20d with two
+  parents; all seven post-merge workflows green. This repaired AR-1371's squash-topology failure
+  without product changes.

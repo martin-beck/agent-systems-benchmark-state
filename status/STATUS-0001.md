@@ -11,12 +11,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 4 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 57 |
 | **Planned** | Defined work awaiting promotion or dependencies | 65 |
 | **Future** | Deferred roadmap work | 1 |
-| **Done** | Accepted, integrated, and durably verified | 250 |
+| **Done** | Accepted, integrated, and durably verified | 251 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 17 |
 
@@ -464,7 +464,7 @@ flowchart LR
         AR_1369["AR-1369 - Superseded"]:::status_superseded
         AR_1370["AR-1370 - Planned"]:::status_planned
         AR_1371["AR-1371 - In progress"]:::status_in_progress
-        AR_1372["AR-1372 - In progress"]:::status_in_progress
+        AR_1372["AR-1372 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1893,8 +1893,14 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1371](../tasks/AR-1371-runner-authority-injection.md): Runner authority injection | codex-asb-runtime-attested-enrollment-luna56 | Inject existing authenticated certificate authority and runtime enrollment material into RunnerBackend/Catalog without synthetic authority. | PR #271 merged as 3f0b67638647dc016f7d5abd3e246baf3ae4ec29 after all 12 exact-head checks passed. Seven post-merge workflows are running; monitor all to terminal success before releasing AR. |
+
+### Open (4)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1212](../tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Unclaimed | Teach users to test configured-agent benchmark eligibility without running an agent. | Implement the offline tutorial for checking agent benchmark readiness under the current configuration. |
