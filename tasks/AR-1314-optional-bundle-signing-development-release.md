@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1314-optional-bundle-signing",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-24T10:45:32+00:00",
+  "claim_expires": "2026-09-24T10:46:05+00:00",
   "depends_on": [],
   "id": "AR-1314",
   "next_action": "Wait for PR #232 exact-head CI after schema-v3 repair; if all required checks pass, independently review and merge through the established workflow, then reconcile AR-1314. Preserve signature-required defaults.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile.",
-  "task_revision": 70,
+  "task_revision": 71,
   "title": "Optional runtime-bundle signing for development and tagged releases",
-  "updated_at": "2026-09-24T08:45:32+00:00",
+  "updated_at": "2026-09-24T08:46:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1314-optional-bundle-signing"
 }
 ---
@@ -208,3 +208,5 @@ reviewed signed input bundle and terminal attestation.
   evidence and reconcile independently.
 
 - 2026-09-24T08:45:32+00:00: Claimed by ar1314_bundle_profile_repair_luna56.
+
+- 2026-09-24T08:46:05+00:00: Heartbeat by ar1314_bundle_profile_repair_luna56.
