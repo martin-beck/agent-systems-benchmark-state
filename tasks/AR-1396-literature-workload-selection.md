@@ -1,14 +1,14 @@
 ---
 {
   "branch": "codex/ar-1396-literature-selection",
-  "checkpoint_commit": "e1e532ea1d4e2eceff6fa8d55c8df4ec2e8400ea",
+  "checkpoint_commit": "58bc56f0b793c4f42e83cbe27515d63d22cfda51",
   "claim_expires": "2026-09-24T12:04:58+00:00",
   "depends_on": [
     "AR-1395",
     "AR-1399"
   ],
   "id": "AR-1396",
-  "next_action": "PR #288 exact head e1e532ea; all required exact-head checks pending after signed-main synchronization.",
+  "next_action": "PR #288 exact head 58bc56f0b793c4f42e83cbe27515d63d22cfda51; fresh checks pending after CLI fail-closed validation repair. Review remaining OriginalWorkloads seams before merge.",
   "observed_branch": "codex/ar-1396-literature-selection",
   "observed_dirty": 0,
   "observed_head": "58bc56f0b793c4f42e83cbe27515d63d22cfda51",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make qualified literature workload families selectable beside built-in ASB software-engineering fixtures.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Literature workload selection",
-  "updated_at": "2026-09-24T10:37:53+00:00",
+  "updated_at": "2026-09-24T10:38:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1396"
 }
 ---
@@ -137,3 +137,9 @@ platform gates.
 
 - 2026-09-24T10:37:53+00:00: Recorded command exit 0; command argv SHA-256
   525718d87c89898bbd0a02c059b5d0442ffcbfecfd2ff08e02ac213df258c8c6.
+
+- 2026-09-24T10:38:37+00:00: CLI validation now consults combined catalog: registry literature IDs
+  are explicitly rejected as evaluator-unavailable before preparation, while built-in behavior is
+  unchanged. Updated workflow provenance digest. Wrapped workflow_transcript tests pass 3/3; prior
+  wrapped cargo test -p asb-cli failure was exact provenance drift (old cli_source_sha256), repaired
+  in 58bc56f.

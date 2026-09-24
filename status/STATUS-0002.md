@@ -55,7 +55,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1396](../tasks/AR-1396-literature-workload-selection.md): Literature workload selection | codex-asb-ar1396-literature-selection-luna56 | Make qualified literature workload families selectable beside built-in ASB software-engineering fixtures. | PR #288 exact head e1e532ea; all required exact-head checks pending after signed-main synchronization. |
+| P1 | [AR-1396](../tasks/AR-1396-literature-workload-selection.md): Literature workload selection | codex-asb-ar1396-literature-selection-luna56 | Make qualified literature workload families selectable beside built-in ASB software-engineering fixtures. | PR #288 exact head 58bc56f0b793c4f42e83cbe27515d63d22cfda51; fresh checks pending after CLI fail-closed validation repair. Review remaining OriginalWorkloads seams before merge. |
 
 ### Open (2)
 
