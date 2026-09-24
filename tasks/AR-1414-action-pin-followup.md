@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the newer immutable install-action update reopened as PR #235.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Follow-up install-action pin qualification",
-  "updated_at": "2026-09-24T16:08:09+00:00",
+  "updated_at": "2026-09-24T16:08:25+00:00",
   "worktree_key": ""
 }
 ---
@@ -31,3 +31,6 @@ v2.87.14. Do not merge while policy or exact-head checks fail.
   requires a fresh immutable-pin qualification.
 
 - 2026-09-24T16:08:09+00:00: Claimed by ar1414-install-pin-recovery-luna56.
+
+- 2026-09-24T16:08:25+00:00: Recorded command exit 0; command argv SHA-256
+  14569e5566c147a134fa9a8a4c4b2e00e43cb9b4c6e7b05f097c14342245d052.
