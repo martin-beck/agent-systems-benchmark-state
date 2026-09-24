@@ -12,7 +12,7 @@
     "AR-1215"
   ],
   "id": "AR-1216",
-  "next_action": "Open reviewed PR from ci/ar-1216-tutorial-freshness; run exact-head CI and seven post-merge workflows.",
+  "next_action": "AR-1431 repair is required: post-merge Repository Quality run 36066329347 rejected merge e82e2e6 because protected main advanced from reviewed base d9eb6c2 to 8d1889b. Preserve the failure, requalify the stale-base boundary, then rerun required post-merge workflows before release.",
   "observed_branch": "ci/ar-1216-tutorial-freshness",
   "observed_dirty": 0,
   "observed_head": "ac93654ed1f73f98174bce5d29395966818f107c",
