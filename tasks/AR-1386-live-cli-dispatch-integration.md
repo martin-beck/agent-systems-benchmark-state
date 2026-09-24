@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1386-live-cli-dispatch-integration",
   "checkpoint_commit": "25548846966e37646dded8d67ed8ee5123b8bc32",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T07:32:29+00:00",
   "depends_on": [
     "AR-1385",
     "AR-1384",
@@ -16,15 +16,15 @@
   "observed_branch": "feature/ar-1386-live-cli-dispatch-integration",
   "observed_dirty": 0,
   "observed_head": "25548846966e37646dded8d67ed8ee5123b8bc32",
-  "owner": "",
+  "owner": "codex-asb-ar1329-repair-luna56",
   "plan": "../plans/AR-1386-live-cli-dispatch-integration.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Integrate authenticated runtime live dispatch into production asb run and sweep.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Production live CLI dispatch integration",
-  "updated_at": "2026-09-24T06:31:38+00:00",
+  "updated_at": "2026-09-24T06:32:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1386-live-cli-dispatch-integration"
 }
 ---
@@ -37,3 +37,5 @@ boundaries.
 
 - 2026-09-24T06:31:38+00:00: AR-1385 done; next coordinator repair integrates authenticated dispatch
   into production run and sweep; dependencies verified
+
+- 2026-09-24T06:32:29+00:00: Claimed by codex-asb-ar1329-repair-luna56.
