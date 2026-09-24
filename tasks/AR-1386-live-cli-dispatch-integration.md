@@ -15,16 +15,16 @@
   "next_action": "Refresh the declared isolated worktree from protected main, integrate the authenticated runtime live dispatch source into production asb run and sweep, and add local provider-mock plus fail-closed egress/teardown tests.",
   "observed_branch": "feature/ar-1386-live-cli-dispatch-integration",
   "observed_dirty": 0,
-  "observed_head": "5c4d5304e53d2cd9559999a00afd86cac28d29dc",
+  "observed_head": "25548846966e37646dded8d67ed8ee5123b8bc32",
   "owner": "codex-asb-ar1329-repair-luna56",
   "plan": "../plans/AR-1386-live-cli-dispatch-integration.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate authenticated runtime live dispatch into production asb run and sweep.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Production live CLI dispatch integration",
-  "updated_at": "2026-09-24T06:33:08+00:00",
+  "updated_at": "2026-09-24T06:33:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1386-live-cli-dispatch-integration"
 }
 ---
