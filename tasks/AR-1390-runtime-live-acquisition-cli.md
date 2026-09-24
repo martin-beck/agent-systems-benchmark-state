@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1390-runtime-live-acquisition-cli",
   "checkpoint_commit": "10bffbf015bd7ca78d8c0d18f04cf0190195e933",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T08:22:45+00:00",
   "depends_on": [
     "AR-1388",
     "AR-1385",
@@ -18,15 +18,15 @@
   "observed_branch": "feature/ar-1390-runtime-live-acquisition-cli",
   "observed_dirty": 0,
   "observed_head": "10bffbf015bd7ca78d8c0d18f04cf0190195e933",
-  "owner": "",
+  "owner": "codex-asb-ar1329-repair-luna56",
   "plan": "../plans/AR-1390-runtime-live-acquisition-cli.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Compose runtime-owned live provider acquisition and wire it into normal ASB run and sweep.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Runtime live acquisition and CLI bridge",
-  "updated_at": "2026-09-24T07:36:40+00:00",
+  "updated_at": "2026-09-24T07:37:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1390-runtime-live-acquisition-cli"
 }
 ---
@@ -38,3 +38,5 @@ external provider connection a development or CI requirement.
 - 2026-09-24T07:36:40+00:00: All runtime authority, receipt, egress, namespace, and relay
   dependencies verified done; promote production-owned live acquisition/CLI bridge successor for
   AR-1329.
+
+- 2026-09-24T07:37:45+00:00: Claimed by codex-asb-ar1329-repair-luna56.
