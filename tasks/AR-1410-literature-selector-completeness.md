@@ -12,7 +12,7 @@
     "AR-1413"
   ],
   "id": "AR-1410",
-  "next_action": "Promote after dispatch, documentation, interactive, repository/terminal, code-generation, and long-horizon adapter ARs are done; verify every literature workload is selectable through all offline ASB paths.",
+  "next_action": "Coordinator must bind branch codex/ar-1410-literature-selector-parity and worktree agent-systems-benchmark-ar-1410; then inspect and implement final literature selector parity gate.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Literature selector completeness and parity",
-  "updated_at": "2026-09-24T16:36:45+00:00",
+  "updated_at": "2026-09-24T16:37:45+00:00",
   "worktree_key": ""
 }
 ---
@@ -41,3 +41,8 @@ does not turn external qualification or live-provider access into a prerequisite
 
 - 2026-09-24T16:36:45+00:00: Recorded command exit 0; command argv SHA-256
   f3ebae9500f1a6e6db0c313b5557854f3d7d7071798896681b5f53cd0d5dc24a.
+
+- 2026-09-24T16:37:45+00:00: Claim succeeded. The handoffctl worktree creation command exited 0 and
+  created the requested product worktree, but task metadata branch and worktree_key remain empty, so
+  product wrapper commands are fenced with active task lacks declared worktree and branch. No
+  product mutation performed; pause for coordinator binding repair.

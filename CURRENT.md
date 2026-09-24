@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1410](tasks/AR-1410-literature-selector-completeness.md): Literature selector completeness and parity | Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads. | Promote after dispatch, documentation, interactive, repository/terminal, code-generation, and long-horizon adapter ARs are done; verify every literature workload is selectable through all offline ASB paths. | ar1410-literature-selector-parity-luna56 |
+| P1 | [AR-1410](tasks/AR-1410-literature-selector-completeness.md): Literature selector completeness and parity | Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads. | Coordinator must bind branch codex/ar-1410-literature-selector-parity and worktree agent-systems-benchmark-ar-1410; then inspect and implement final literature selector parity gate. | ar1410-literature-selector-parity-luna56 |
 
 ## Open
 
