@@ -51,21 +51,21 @@
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1314](../tasks/AR-1314-optional-bundle-signing-development-release.md): Optional runtime-bundle signing for development and tagged releases | ar1314_bundle_profile_repair_luna56 | Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile. | Blocked on AR-1397 integration repair: post-merge Repository quality rejects c58b0b0 tree against reviewed topic after AR-1395 advanced main, and c58 Rust workflow dispatch 35980460560 was cancelled by a higher-priority waiting request for refs/heads/main. Preserve all evidence; after AR-1397 repair and queue quiescence, rerun all seven exact-main workflows including Rust. |
 | P0 | [AR-1397](../tasks/AR-1397-protected-main-postmerge-concurrency-repair.md): Protected-main post-merge concurrency and tree repair | ar1397-protected-main-repair-luna56 | Repair protected-main merge-tree admission and serialize exact post-merge evidence across concurrent main pushes. | Preserve merge 123ba915d2732ee8a6c99fae301bfd64cf0aac4f and its seven successful post-merge runs as immutable evidence; it has exact tree/parents but GitHub-generated signature E and no matching Signed-off-by trailer. Create a signed descendant repair AR through the local merge path, then rerun exact-main gates before closing AR-1314/AR-1395/AR-1397. |
 | P0 | [AR-1398](../tasks/AR-1398-signed-protected-main-recovery.md): Signed protected-main recovery | ar1398_signed_recovery_luna56 | Restore signed+DCO protected-main evidence after an unsigned GitHub-generated repair merge. | Rerun failed repository-quality workflow for PR #287; inspect reproducibility before any repair or merge. |
+| P1 | [AR-1396](../tasks/AR-1396-literature-workload-selection.md): Literature workload selection | codex-asb-ar1396-literature-selection-luna56 | Make qualified literature workload families selectable beside built-in ASB software-engineering fixtures. | Promote after AR-1395 and AR-1399 are done, then wire every registry-backed literature family into catalog, plan validation, CLI selection, replay and reports. |
 
-### Open (3)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1212](../tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Unclaimed | Teach users to test configured-agent benchmark eligibility without running an agent. | Implement the offline tutorial for checking agent benchmark readiness under the current configuration. |
 | P0 | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | Unclaimed | Publish the verified ASB agent catalog required by the first-run setup wizard. | Persist the authenticated catalog snapshot/generation and complete live ASB-to-asb-tui wizard evidence; keep all entries unavailable until a verified release closure exists. |
-| P1 | [AR-1396](../tasks/AR-1396-literature-workload-selection.md): Literature workload selection | Unclaimed | Make qualified literature workload families selectable beside built-in ASB software-engineering fixtures. | Promote after AR-1395 and AR-1399 are done, then wire every registry-backed literature family into catalog, plan validation, CLI selection, replay and reports. |
 
 ### Blocked (67)
 
