@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire runtime-owned live scheduler authority into production asb run and sweep.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Runtime-owned live CLI scheduler wiring",
-  "updated_at": "2026-09-24T04:18:54+00:00",
+  "updated_at": "2026-09-24T04:18:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1381-live-cli-scheduler-wiring"
 }
 ---
@@ -149,3 +149,6 @@ all fail-closed authority and privacy contracts.
   4ba3085e95444fba069b129e33020f19cc7ea830 force-pushed with lease.
 
 - 2026-09-24T04:18:54+00:00: Heartbeat by codex-asb-runtime-receipt-source-luna56.
+
+- 2026-09-24T04:18:57+00:00: Recorded command exit 0; command argv SHA-256
+  f8e816cffeced3c0204cfc2cbeecd9202e184f68afb95f094754d37a1137c41b.
