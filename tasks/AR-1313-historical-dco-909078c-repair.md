@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Forward-only signed DCO recovery candidate published as PR #231.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Historical DCO merge-integrity recovery",
-  "updated_at": "2026-09-24T11:45:23+00:00",
+  "updated_at": "2026-09-24T11:45:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1313-historical-dco-909078c"
 }
 ---
@@ -134,3 +134,6 @@ blocked with the exact failure and do not weaken the policy.
 
 - 2026-09-24T11:45:23+00:00: Recorded command exit 0; command argv SHA-256
   23ca610b5b02b2651f35004a4a8beeac5bd2a42580b85788875bbdd82f52c6e9.
+
+- 2026-09-24T11:45:39+00:00: Recorded command exit 1; command argv SHA-256
+  6f866de3b981a5702ccadd00eda65446114180dad6d9a0585b71e057e1731c58.
