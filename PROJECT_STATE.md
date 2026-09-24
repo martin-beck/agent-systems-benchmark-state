@@ -11,21 +11,21 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #119 | `feature/native-capacity-controller@e2e3574ed2bb` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(capacity): add bounded native lifecycle controller |
-| #302 | `codex/ar-1410-literature-selector-parity@dc34be11cae4` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS: | feat(workloads): complete literature selector parity |
+| #302 | `codex/ar-1410-literature-selector-parity@477eeb9fb6c2` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED:, QUEUED: | feat(workloads): complete literature selector parity |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 36030655799 | `477eeb9fb6c2` | pull_request | Formal assurance | pending:- |
+| 36030655739 | `477eeb9fb6c2` | pull_request | Agent Workflow Quality shadow | queued:- |
+| 36030655672 | `477eeb9fb6c2` | pull_request | Rust verification | pending:- |
+| 36030655646 | `477eeb9fb6c2` | pull_request | Fault assurance | pending:- |
+| 36030655642 | `477eeb9fb6c2` | pull_request | Huawei MIT source headers | queued:- |
+| 36030655589 | `477eeb9fb6c2` | pull_request | Emulated aarch64 portability | pending:- |
+| 36030655585 | `477eeb9fb6c2` | pull_request | Repository quality | queued:- |
+| 36030655582 | `477eeb9fb6c2` | pull_request | Hosted portability and native qualification | queued:- |
 | 36030469591 | `dc34be11cae4` | pull_request | Formal assurance | in_progress:- |
 | 36030469560 | `dc34be11cae4` | pull_request | Repository quality | completed:failure |
 | 36030469559 | `dc34be11cae4` | pull_request | Huawei MIT source headers | completed:success |
 | 36030469545 | `dc34be11cae4` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 36030469534 | `dc34be11cae4` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 36030469506 | `dc34be11cae4` | pull_request | Hosted portability and native qualification | completed:failure |
-| 36030469504 | `dc34be11cae4` | pull_request | Fault assurance | in_progress:- |
-| 36030469503 | `dc34be11cae4` | pull_request | Rust verification | in_progress:- |
-| 36026896414 | `9d410f531bce` | push | Repository quality | completed:success |
-| 36026896407 | `9d410f531bce` | push | Formal assurance | completed:success |
-| 36026896374 | `9d410f531bce` | push | Huawei MIT source headers | completed:success |
-| 36026896368 | `9d410f531bce` | push | Rust verification | completed:success |
