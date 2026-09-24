@@ -22,7 +22,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36060007840 | `2d64e0cdb888` | push | Rust verification | in_progress:- |
 | 36060007816 | `2d64e0cdb888` | push | Repository quality | in_progress:- |
 | 36060007814 | `2d64e0cdb888` | push | Formal assurance | in_progress:- |
-| 36060007813 | `2d64e0cdb888` | push | Hosted portability and native qualification | in_progress:- |
+| 36060007813 | `2d64e0cdb888` | push | Hosted portability and native qualification | completed:success |
 | 36060007776 | `2d64e0cdb888` | push | Emulated aarch64 portability | in_progress:- |
 | 36059074863 | `9d97e1684ecd` | pull_request | Repository quality | completed:success |
 | 36059074767 | `9d97e1684ecd` | pull_request | Agent Workflow Quality shadow | completed:success |
