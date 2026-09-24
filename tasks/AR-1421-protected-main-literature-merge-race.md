@@ -1,14 +1,14 @@
 ---
 {
   "branch": "codex/ar-1421-protected-main-race",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "28e35608a2a87f53afa70732ca1b51aa57aa360b",
   "claim_expires": "2026-09-24T21:44:24+00:00",
   "depends_on": [
     "AR-1416",
     "AR-1398"
   ],
   "id": "AR-1421",
-  "next_action": "Run correct full integration/policy gates after requalification repair; inspect diff, commit signed+DCO, publish exact-base PR, and wait for exact-head checks. Preserve incident runs 36048870322 and 36048870234.",
+  "next_action": "Publish signed commit 28e3560 from exact current main 5ddac12, open PR, independently review exact diff, and await all required checks. Requalification repair preserves strict tree invariant; incident runs 36048870322 and 36048870234 remain immutable evidence.",
   "observed_branch": "codex/ar-1421-protected-main-race",
   "observed_dirty": 0,
   "observed_head": "28e35608a2a87f53afa70732ca1b51aa57aa360b",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair protected-main merge-tree requalification after a literature PR merges onto an advanced main.",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Protected-main literature merge race repair",
-  "updated_at": "2026-09-24T19:57:56+00:00",
+  "updated_at": "2026-09-24T19:58:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1421"
 }
 ---
@@ -160,3 +160,10 @@ the merge released before fresh exact-main evidence succeeds.
 
 - 2026-09-24T19:57:56+00:00: Recorded command exit 0; command argv SHA-256
   19c387515001d3fabbbaf98bd7c5aaca205f3c0e2d025aa0df986ff5be9ea33c.
+
+- 2026-09-24T19:58:22+00:00: Signed+DCO commit 28e3560 is clean and independently reviewed. It adds
+  explicit remote target/PR requalification after fetch and immediately before publication, with
+  exact ancestry/tree checks; fetch-target-race hostile regression; docs and repository-policy
+  integrity fragment updated. Focused integration + signature-policy suite passed 28 tests. Earlier
+  combined test command recorded ModuleNotFoundError for nonexistent
+  tools.quality.test_repository_policy and was corrected.
