@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate authenticated runtime live dispatch into asb run and sweep.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Production live dispatch integration",
-  "updated_at": "2026-09-24T03:31:19+00:00",
+  "updated_at": "2026-09-24T03:31:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1379-live-dispatch-integration"
 }
 ---
@@ -38,3 +38,6 @@ verified through the completed gates.
 - 2026-09-24T03:30:52+00:00: Claimed by codex-asb-runtime-receipt-source-luna56.
 
 - 2026-09-24T03:31:19+00:00: Heartbeat by codex-asb-runtime-receipt-source-luna56.
+
+- 2026-09-24T03:31:22+00:00: Recorded command exit 0; command argv SHA-256
+  8fbbfcdc7ffb21db53541f7400edafa7616aa40cc2b61ab3e3fdee6c71a52adc.
