@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Rebased PR #295 onto current main 99a1af7; new exact-head checks running.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Literature workload documentation and matrix contract",
-  "updated_at": "2026-09-24T14:12:48+00:00",
+  "updated_at": "2026-09-24T14:13:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1404"
 }
 ---
@@ -130,3 +130,6 @@ state that diverges from the versioned catalog.
 
 - 2026-09-24T14:12:48+00:00: Recorded command exit 0; command argv SHA-256
   39e7a41e563f63d6508f9befbc0bc32133fb7653373592dbc5882ca1d1ecfbc2.
+
+- 2026-09-24T14:13:08+00:00: Recorded command exit 0; command argv SHA-256
+  6f300f2864f39e37e01cab55f8e2567ff7b8bd0be1d2143cb0d7d31c83fdc251.
