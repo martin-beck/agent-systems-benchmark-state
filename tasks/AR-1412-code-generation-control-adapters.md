@@ -1,14 +1,14 @@
 ---
 {
   "branch": "codex/ar-1412-code-generation-controls",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "dbf7883027179f92d4ca9fb7c6bd96f0e55c9060",
   "claim_expires": "2026-09-24T16:27:41+00:00",
   "depends_on": [
     "AR-1408",
     "AR-1401"
   ],
   "id": "AR-1412",
-  "next_action": "Retry state replication, then run catalog/docs parity and commit the focused code-generation control changes.",
+  "next_action": "Run full applicable local gates, independently review the complete diff, then publish a signed DCO PR from this clean exact branch.",
   "observed_branch": "codex/ar-1412-code-generation-controls",
   "observed_dirty": 3,
   "observed_head": "fc74825cb86991bb3afac6854d8cb5048118ff8f",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recovered an abandoned claim with malformed local-time expiry; branch/worktree are now coordinator-bound before the next claim.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Code-generation control workload adapters",
-  "updated_at": "2026-09-24T14:33:34+00:00",
+  "updated_at": "2026-09-24T14:34:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1412"
 }
 ---
@@ -68,3 +68,10 @@ bounded local fixtures or LiteLLM-compatible mocks only.
 
 - 2026-09-24T14:33:34+00:00: Recorded command exit 0; command argv SHA-256
   8586f0a5816e7e091f3a750c47ca5b20b8818f70bbcebb5c44bf031c2018f695.
+
+- 2026-09-24T14:34:24+00:00: Product implementation committed as signed+DCO
+  dbf7883027179f92d4ca9fb7c6bd96f0e55c9060: explicit function-level/time-windowed code-generation
+  control semantics, separate comparison namespaces, contamination boundaries, local-mock result
+  propagation, docs, and positive/negative tests. Focused asb-workloads tests passed (32 total
+  including 13 Python parity/registry tests); two state pushes encountered transient GitHub HTTP 500
+  and require reconcile retry.
