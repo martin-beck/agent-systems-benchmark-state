@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1378-live-control-adapter",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "5f1902c681c9671d332ae662f0516df4d1f688df",
   "claim_expires": "2026-09-24T05:09:33+00:00",
   "depends_on": [
     "AR-1377",
@@ -10,7 +10,7 @@
     "AR-1362"
   ],
   "id": "AR-1378",
-  "next_action": "Promote and claim the dependency-valid successor, refresh an isolated worktree, and implement the authenticated ControlClient-to-runtime bridge.",
+  "next_action": "Signed+DCO implementation 5f1902c is clean. Runtime focused live_service tests (20), cargo check -p asb-runtime --locked, and clippy -p asb-runtime --all-targets --locked -D warnings pass. Independently review adapter privacy and publish exact-head PR.",
   "observed_branch": "feature/ar-1378-live-control-adapter",
   "observed_dirty": 0,
   "observed_head": "5f1902c681c9671d332ae662f0516df4d1f688df",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind authenticated control receipts to runtime-owned live dispatch.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Authenticated live control adapter",
-  "updated_at": "2026-09-24T03:11:28+00:00",
+  "updated_at": "2026-09-24T03:11:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1378-live-control-adapter"
 }
 ---
@@ -60,3 +60,9 @@ chain store; this task supplies only the authenticated control operation seam.
 
 - 2026-09-24T03:11:28+00:00: Recorded command exit 0; command argv SHA-256
   78fbb16b3cc348d668a897b869341aa0d0b57e48b7f483f5a8dc66393f21b8f9.
+
+- 2026-09-24T03:11:43+00:00: Added LiveProviderRuntimeBridge::request_control_receipt: it sends
+  RuntimeReceipt through authenticated ControlClient, accepts only typed RuntimeReceipt result,
+  retrieves the opaque chain from RuntimeCertificateChainStore, and delegates
+  nonce/generation/attestation/replay validation. Errors are bounded and privacy-safe. Existing
+  bridge tests cover tamper/replay/stale/unavailable; focused command green.

@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1378](tasks/AR-1378-live-control-adapter.md): Authenticated live control adapter | Bind authenticated control receipts to runtime-owned live dispatch. | Promote and claim the dependency-valid successor, refresh an isolated worktree, and implement the authenticated ControlClient-to-runtime bridge. | codex-asb-runtime-receipt-source-luna56 |
+| P0 | [AR-1378](tasks/AR-1378-live-control-adapter.md): Authenticated live control adapter | Bind authenticated control receipts to runtime-owned live dispatch. | Signed+DCO implementation 5f1902c is clean. Runtime focused live_service tests (20), cargo check -p asb-runtime --locked, and clippy -p asb-runtime --all-targets --locked -D warnings pass. Independently review adapter privacy and publish exact-head PR. | codex-asb-runtime-receipt-source-luna56 |
 
 ## Open
 
