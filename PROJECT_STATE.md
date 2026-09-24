@@ -18,7 +18,7 @@ Generated from local Git and GitHub. Do not edit.
 | #150 | `dependabot/cargo/tempfile-3.27.0@d4eb5ee4a62e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump tempfile from 3.22.0 to 3.27.0 |
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
 | #231 | `repair/ar-1313-historical-dco-909078c@68afee85219a` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(policy): recover historical DCO boundary |
-| #232 | `feature/ar-1314-optional-bundle-signing@dbfecb983e7d` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(bundle): add explicit unsigned profiles |
+| #232 | `feature/ar-1314-optional-bundle-signing@c481a409a9cc` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(bundle): add explicit unsigned profiles |
 | #234 | `dependabot/github_actions/actions/setup-java-6.0.1@4a444c279f41` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump actions/setup-java from 5.0.0 to 6.0.1 |
 | #235 | `dependabot/github_actions/taiki-e/install-action-2.87.12@de0353cce59e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.6 to 2.87.12 |
 | #236 | `dependabot/cargo/toml-1.1.6spec-1.1.0@9dc09c5208ab` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump toml from 0.8.23 to 1.1.6+spec-1.1.0 |
@@ -28,15 +28,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 35977791559 | `c481a409a9cc` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 35977791538 | `c481a409a9cc` | pull_request | Formal assurance | in_progress:- |
+| 35977791521 | `c481a409a9cc` | pull_request | Rust verification | in_progress:- |
+| 35977791511 | `c481a409a9cc` | pull_request | Fault assurance | in_progress:- |
+| 35977791476 | `c481a409a9cc` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 35977791467 | `c481a409a9cc` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 35977791461 | `c481a409a9cc` | pull_request | Huawei MIT source headers | in_progress:- |
+| 35977791456 | `c481a409a9cc` | pull_request | Repository quality | in_progress:- |
 | 35975739261 | `fd1ec2e4ee25` | push | Emulated aarch64 portability | completed:success |
 | 35975739207 | `fd1ec2e4ee25` | push | Huawei MIT source headers | completed:success |
 | 35975739158 | `fd1ec2e4ee25` | push | Hosted portability and native qualification | completed:success |
 | 35975739142 | `fd1ec2e4ee25` | push | Formal assurance | completed:success |
-| 35975739140 | `fd1ec2e4ee25` | push | Fault assurance | completed:success |
-| 35975739097 | `fd1ec2e4ee25` | push | Repository quality | completed:success |
-| 35975739076 | `fd1ec2e4ee25` | push | Rust verification | completed:success |
-| 35974414131 | `e63a3c6f816a` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 35974414017 | `e63a3c6f816a` | pull_request | Fault assurance | completed:success |
-| 35974414011 | `e63a3c6f816a` | pull_request | Huawei MIT source headers | completed:success |
-| 35974413995 | `e63a3c6f816a` | pull_request | Formal assurance | completed:success |
-| 35974413913 | `e63a3c6f816a` | pull_request | Repository quality | completed:success |
