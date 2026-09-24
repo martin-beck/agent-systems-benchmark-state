@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "PR #295 has one unrelated flaky runtime test failure; focused reruns pass 5/5.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Literature workload documentation and matrix contract",
-  "updated_at": "2026-09-24T13:45:37+00:00",
+  "updated_at": "2026-09-24T13:45:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1404"
 }
 ---
@@ -77,3 +77,6 @@ state that diverges from the versioned catalog.
   asb-runtime --lib live_service::tests::local_authority_is_runtime_owned_loopback_and_private --
   --exact --nocapture` passed five consecutive runs locally. Classify as environmental/flaky; do not
   weaken or repair unrelated runtime code.
+
+- 2026-09-24T13:45:48+00:00: Recorded command exit 0; command argv SHA-256
+  0303ab2d646d0c6ece22831b622e3b2f846c667cc374d693802aab08c2606229.
