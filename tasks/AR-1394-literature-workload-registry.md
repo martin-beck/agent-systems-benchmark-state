@@ -18,14 +18,17 @@
   "plan": "../plans/AR-1394-literature-workload-registry.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Catalog every documented literature benchmark with provenance and truthful qualification status.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Literature workload registry expansion",
-  "updated_at": "2026-09-24T07:58:00+00:00",
+  "updated_at": "2026-09-24T08:04:45+00:00",
   "worktree_key": ""
 }
 ---
 
 This AR owns registry/provenance only; it does not download or execute external
 datasets and does not claim native or evaluator qualification.
+
+- 2026-09-24T08:04:45+00:00: Dependencies AR-0404, AR-0405, AR-0406, and AR-1007 are durably done;
+  promote literature workload registry.
