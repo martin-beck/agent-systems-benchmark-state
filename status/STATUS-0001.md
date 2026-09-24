@@ -1564,10 +1564,10 @@ flowchart LR
     AR_1384 --> AR_1386
     AR_1384 --> AR_1387
     AR_1384 --> AR_1388
+    AR_1384 --> AR_1389
     AR_1385 --> AR_1386
     AR_1385 --> AR_1387
     AR_1385 --> AR_1388
-    AR_1388 --> AR_1389
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
