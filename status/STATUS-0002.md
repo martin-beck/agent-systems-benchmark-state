@@ -69,11 +69,10 @@
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1412](../tasks/AR-1412-code-generation-control-adapters.md): Code-generation control workload adapters | ar1412_code_generation_luna56b | Recovered an abandoned claim with malformed local-time expiry; branch/worktree are now coordinator-bound before the next claim. | Wait for fresh exact-head PR #298 checks on 0d94a2e rebased onto current main ea27dfb; independently review exact diff and merge only after all checks are green. |
 | P1 | [AR-1413](../tasks/AR-1413-long-horizon-performance-adapters.md): Long-horizon and performance literature workload adapters | ar1413_long_horizon_performance_luna56 | AR-1413 rebased unchanged signed literature metadata onto protected main 8c640e59; PR #299 exact-head checks restarted. | Independently review PR #299 at exact base 8c640e5994f84135826553ecd7ff73e512998ef5/head f78fbabafb84949826d047d31b5e1770a98b8157; wait for all required checks, then merge via handoffctl. |
 
 ### Open (3)
@@ -235,7 +234,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (279)
+### Done (280)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -502,6 +501,7 @@
 | P1 | [AR-1405](../tasks/AR-1405-open-dependency-pr-reconciliation.md): Open dependency PR reconciliation | Unclaimed | Rebase, repair, verify, and truthfully resolve stale open dependency PRs. | Monitor seven post-merge workflows for exact SHA f213b296; after all green, close/supersede scoped stale PRs with exact evidence, then release AR done. Action PRs #235/#234/#148 require a future policy-pin migration AR; #147 requires separate sha2 compatibility AR. |
 | P1 | [AR-1408](../tasks/AR-1408-literature-inventory-closure.md): Literature workload inventory closure | Unclaimed | PR #293 merged at exact base; seven post-merge workflows running. | Wait for all seven post-merge workflows on merge 404ddde1 to reach terminal success, then release AR-1408 with evidence. |
 | P1 | [AR-1411](../tasks/AR-1411-repository-terminal-adapters.md): Repository and terminal literature workload adapters | Unclaimed | Add selectable, provenance-preserving repository-repair and terminal benchmark adapters. | PR #297 open; verify exact base fc74825cb86991bb3afac6854d8cb5048118ff8f/head 67129e7504dc28d8f8e02a6bbb955f6683917208/tree, wait for all required checks, independently review, then signed merge. |
+| P1 | [AR-1412](../tasks/AR-1412-code-generation-control-adapters.md): Code-generation control workload adapters | Unclaimed | Recovered an abandoned claim with malformed local-time expiry; branch/worktree are now coordinator-bound before the next claim. | Wait for fresh exact-head PR #298 checks on 0d94a2e rebased onto current main ea27dfb; independently review exact diff and merge only after all checks are green. |
 | P2 | [AR-0202](../tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Unclaimed | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Run final exact-main and local post-merge verification using required native x86_64 kernel evidence and applicable pinned QEMU AArch64 portability checks; record native ARM64 PMU/eBPF as optional future evidence, then release. |
 | P2 | [AR-0308](../tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | Unclaimed | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Run final state validation/live doctor and release done after confirming clean synchronized product/state refs at signed merge a0d80e4. |
 | P2 | [AR-0309](../tasks/AR-0309-agent-openhands.md): Implement maintained OpenHands SDK client adapter | Unclaimed | Run a maintained MIT OpenHands SDK or canonical headless client. | Monitor PR #65 exact-head CI for fec0487, investigate any failure, and await final review; do not merge. |
