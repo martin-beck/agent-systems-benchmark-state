@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1379-live-dispatch-integration",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-24T05:30:52+00:00",
+  "claim_expires": "2026-09-24T05:31:19+00:00",
   "depends_on": [
     "AR-1378",
     "AR-1377",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate authenticated runtime live dispatch into asb run and sweep.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Production live dispatch integration",
-  "updated_at": "2026-09-24T03:30:52+00:00",
+  "updated_at": "2026-09-24T03:31:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1379-live-dispatch-integration"
 }
 ---
@@ -36,3 +36,5 @@ verified through the completed gates.
   promote production dispatch integration.
 
 - 2026-09-24T03:30:52+00:00: Claimed by codex-asb-runtime-receipt-source-luna56.
+
+- 2026-09-24T03:31:19+00:00: Heartbeat by codex-asb-runtime-receipt-source-luna56.
