@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1393-local-provider-authority-provisioning",
   "checkpoint_commit": "10bffbf015bd7ca78d8c0d18f04cf0190195e933",
-  "claim_expires": "2026-09-24T08:34:35+00:00",
+  "claim_expires": "2026-09-24T08:38:47+00:00",
   "depends_on": [
     "AR-1388",
     "AR-1385",
@@ -24,9 +24,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a runtime-owned loopback mock authority so development never requires external provider access.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Local provider authority provisioning",
-  "updated_at": "2026-09-24T07:51:32+00:00",
+  "updated_at": "2026-09-24T07:53:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1393-local-provider-authority-provisioning"
 }
 ---
@@ -48,3 +48,5 @@ or production egress gates.
 
 - 2026-09-24T07:51:32+00:00: Recorded command exit 101; command argv SHA-256
   88fda5db580208b5af117db742887f67111ccba0f991d81b5be5a0d1171273a0.
+
+- 2026-09-24T07:53:47+00:00: Heartbeat by codex-asb-ar1329-repair-luna56.
