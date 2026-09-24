@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair exact protected-main merge-tree requalification after sequential tutorial merges.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Protected-main merge-tree requalification repair",
-  "updated_at": "2026-09-24T21:25:50+00:00",
+  "updated_at": "2026-09-24T21:26:10+00:00",
   "worktree_key": ""
 }
 ---
@@ -35,3 +35,6 @@ incident evidence; no gate is waived.
   post-merge policy failure 36060277237.
 
 - 2026-09-24T21:25:50+00:00: Claimed by ar1427-merge-requal-luna56.
+
+- 2026-09-24T21:26:10+00:00: Recorded command exit 0; command argv SHA-256
+  88d86267fcba4a31b51d75f493d4981ee26856992977a659070356289f7bc042.
