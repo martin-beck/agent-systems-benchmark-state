@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar-1412-code-generation-controls",
   "checkpoint_commit": "d7d035a6c09d248cc747dea4d7fb4a2dd6ab9ef2",
-  "claim_expires": "2026-09-24T16:46:36+00:00",
+  "claim_expires": "2026-09-24T16:48:58+00:00",
   "depends_on": [
     "AR-1408",
     "AR-1401"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recovered an abandoned claim with malformed local-time expiry; branch/worktree are now coordinator-bound before the next claim.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Code-generation control workload adapters",
-  "updated_at": "2026-09-24T14:46:36+00:00",
+  "updated_at": "2026-09-24T14:48:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1412"
 }
 ---
@@ -116,3 +116,5 @@ bounded local fixtures or LiteLLM-compatible mocks only.
 - 2026-09-24T14:44:53+00:00: Heartbeat by ar1412_code_generation_luna56b.
 
 - 2026-09-24T14:46:36+00:00: Heartbeat by ar1412_code_generation_luna56b.
+
+- 2026-09-24T14:48:58+00:00: Heartbeat by ar1412_code_generation_luna56b.
