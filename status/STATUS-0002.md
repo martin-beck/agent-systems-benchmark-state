@@ -74,7 +74,7 @@
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1409](../tasks/AR-1409-interactive-literature-adapters.md): Interactive literature workload adapters | ar1409_interactive_literature_luna56 | Add offline-selectable interactive and tool-use literature workload adapters. | PR #300 exact base e4d8e7a70b2cce6f740bb8ababd145295ecc2665/head 6f93076afa1af5eca0d33a693106e60f70e4ea5b published; monitor all required checks, obtain independent review, then merge only through handoffctl. |
-| P2 | [AR-1406](../tasks/AR-1406-action-pin-policy-migration.md): Action pin policy migration | ar1406-action-pin-luna56 | Qualify and merge remaining immutable GitHub action pin updates without weakening policy. | Promote after AR-1405; qualify immutable action commits for PRs #235/#234/#148 and merge only after policy and exact-head gates pass. |
+| P2 | [AR-1406](../tasks/AR-1406-action-pin-policy-migration.md): Action pin policy migration | ar1406-action-pin-luna56 | Qualify and merge remaining immutable GitHub action pin updates without weakening policy. | Bind isolated worktree before product inspection; qualify immutable action commits for PRs #235/#234/#148 and merge only after policy and exact-head gates pass. |
 
 ### Open (2)
 
@@ -525,4 +525,3 @@
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1046](../tasks/AR-1046-serialize-emulated-aarch64-agent-tests.md): Serialize emulated AArch64 agent tests | Unclaimed | Make the emulated AArch64 asb-agents fake-node readiness fixtures deterministic without changing production semantics. | No further action: AR-1047 superseded the disproven serialization hypothesis. |
 | P0 | [AR-1048](../tasks/AR-1048-tmux-window-option-portability.md): Make tmux window-option setup portable | Unclaimed | Use an explicit tmux window-option command so trusted-main terminal qualification is portable. | No further action: AR-1049 superseded this recovery after PR #15 merged and Trusted main falsified fixed session:0 targeting. |
-| P0 | [AR-1049](../tasks/AR-1049-tmux-created-window-identity.md): Bind tmux setup to its created window | Unclaimed | Bind tmux remain-on-exit setup to the exact created window identity instead of a fixed index. | No further action: AR-1050 superseded this recovery after PR #16 merged and Trusted main exposed downstream startup readiness. |
