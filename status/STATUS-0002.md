@@ -68,12 +68,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P2 | [AR-1406](../tasks/AR-1406-action-pin-policy-migration.md): Action pin policy migration | ar1406-action-pin-recovery-luna56 | Qualify and merge remaining immutable GitHub action pin updates without weakening policy. | Monitor seven post-merge workflows for merge 8da098770e4a78e94f67cf7b13dbebbcd1c5bbac: 36023860491,36023860601,36023860551,36023860504,36023860525,36023860530,36023860510; release only after all terminal success, then close superseded PRs #235/#234/#148 with evidence. |
-
 ### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -231,7 +225,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (282)
+### Done (283)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -514,6 +508,7 @@
 | P2 | [AR-1200](../tasks/AR-1200-metrics-timeout-fixture-stability.md): Kernel diagnostic rejection fixture stability | Unclaimed | Remove hosted timing flakiness from the bounded kernel diagnostic rejection test. | Review and merge the isolated test-fixture stabilization after exact-head CI passes; do not modify production timeout policy. |
 | P2 | [AR-1403](../tasks/AR-1403-literature-external-qualification.md): Literature workload external qualification | Unclaimed | Add optional evidence-gated qualification for real literature workload sources and evaluators. | Execute signed exact-base integration merge PR #296 in isolated worktree; then verify seven post-merge workflows at merge commit. |
 | P2 | [AR-1404](../tasks/AR-1404-literature-documentation-matrix.md): Literature workload documentation and matrix contract | Unclaimed | Rebased PR #295 onto current main 99a1af7; new exact-head checks running. | Wait for all 12 checks on rebased head 16c5b87, then merge exact base/head and run seven post-merge workflows. |
+| P2 | [AR-1406](../tasks/AR-1406-action-pin-policy-migration.md): Action pin policy migration | Unclaimed | Qualify and merge remaining immutable GitHub action pin updates without weakening policy. | Monitor seven post-merge workflows for merge 8da098770e4a78e94f67cf7b13dbebbcd1c5bbac: 36023860491,36023860601,36023860551,36023860504,36023860525,36023860530,36023860510; release only after all terminal success, then close superseded PRs #235/#234/#148 with evidence. |
 | P3 | [AR-0404](../tasks/AR-0404-extended-workloads.md): Expand established benchmark catalogue | Unclaimed | Evaluate SWE-bench Pro, BigCodeBench, EvalPlus and LiveCodeBench as optional suites. | Add signed normal follow-up after rewritten merge so push range is resolvable; rerun exact-main post-merge workflows. |
 | P3 | [AR-0406](../tasks/AR-0406-evolving-workloads.md): Add evolving long-horizon workload sources | Unclaimed | Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation. | Monitor all required post-merge CI runs for exact main ca6e75916a8c9831b9107377cd48d731463c272a; release only after every required gate is green. |
 | P3 | [AR-1006](../tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Unclaimed | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Monitor post-merge workflows for main 4e2820b until terminal; verify exact tree/signature/DCO/policy, then release AR-1006 done. |

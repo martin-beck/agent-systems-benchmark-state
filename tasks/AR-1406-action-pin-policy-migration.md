@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar-1406-action-pin-policy",
   "checkpoint_commit": "8da098770e4a78e94f67cf7b13dbebbcd1c5bbac",
-  "claim_expires": "2026-09-24T17:49:53+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1405"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "codex/ar-1406-action-pin-policy",
   "observed_dirty": 0,
   "observed_head": "feca69d22f3a73c643ff2150ae95d189acdb4791",
-  "owner": "ar1406-action-pin-recovery-luna56",
+  "owner": "",
   "plan": "../plans/AR-1406-action-pin-policy-migration.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Qualify and merge remaining immutable GitHub action pin updates without weakening policy.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Action pin policy migration",
-  "updated_at": "2026-09-24T15:57:18+00:00",
+  "updated_at": "2026-09-24T16:05:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1406"
 }
 ---
@@ -138,3 +138,9 @@ No floating action reference or unverifiable release identity is acceptable.
 
 - 2026-09-24T15:57:18+00:00: PR #301 merged via handoffctl after exact-head independent review and
   all required checks passed.
+
+- 2026-09-24T16:05:26+00:00: PR #301 merge 8da098770e4a78e94f67cf7b13dbebbcd1c5bbac verified with
+  all seven post-merge workflows terminal success: 36023860491 hosted, 36023860601 emulated-aarch64,
+  36023860551 repository quality, 36023860504 Rust, 36023860525 fault, 36023860530 formal,
+  36023860510 headers. PRs #234 and #148 are closed; PR #235 reopened as a newer 2.87.14 Dependabot
+  update and requires a successor AR.
