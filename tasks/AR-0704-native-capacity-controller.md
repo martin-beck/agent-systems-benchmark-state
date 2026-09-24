@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 241,
+  "task_revision": 242,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-24T19:47:49+00:00",
+  "updated_at": "2026-09-24T19:48:50+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -808,3 +808,6 @@ must not block this AR or its dependents.
 - 2026-09-24T19:46:45+00:00: Claimed by ar0704-requal-luna56.
 
 - 2026-09-24T19:47:02+00:00: Heartbeat by ar0704-requal-luna56.
+
+- 2026-09-24T19:48:50+00:00: Recorded command exit 0; command argv SHA-256
+  b4316c740139387a900a533f5c59a5cab109492ab83882f40ba605611bb2dd9f.
