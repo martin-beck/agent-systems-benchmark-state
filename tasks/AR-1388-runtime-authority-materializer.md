@@ -12,7 +12,7 @@
   "id": "AR-1388",
   "next_action": "Refresh the declared isolated worktree from protected main, implement the production runtime authority materializer from authenticated receipt/chain into private bootstrap inputs, and add fail-closed tests.",
   "observed_branch": "feature/ar-1388-runtime-authority-materializer",
-  "observed_dirty": 1,
+  "observed_dirty": 2,
   "observed_head": "25548846966e37646dded8d67ed8ee5123b8bc32",
   "owner": "codex-asb-ar1329-repair-luna56",
   "plan": "../plans/AR-1388-runtime-authority-materializer.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize runtime-owned provider authority from authenticated receipt and chain state.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Runtime authority receipt materializer",
-  "updated_at": "2026-09-24T06:45:38+00:00",
+  "updated_at": "2026-09-24T06:45:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1388-runtime-authority-materializer"
 }
 ---
