@@ -12,17 +12,17 @@
   "id": "AR-1316",
   "next_action": "Record successful full tests despite wrapper finalization lock timeout; inspect diff and commit signed+DCO.",
   "observed_branch": "feature/ar-1316-authenticated-agent-catalog-producer",
-  "observed_dirty": 1,
-  "observed_head": "0b2719e6483b5d22cbf6e11320988a766cb64366",
+  "observed_dirty": 0,
+  "observed_head": "e0e447dcb5214222b1c47353dc048abbe2dbdd75",
   "owner": "ar1316-authenticated-agent-catalog-producer-luna56",
   "plan": "../plans/AR-1316.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish the verified ASB agent catalog required by the first-run setup wizard.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Authenticated agent catalog producer",
-  "updated_at": "2026-09-24T18:57:45+00:00",
+  "updated_at": "2026-09-24T18:57:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1316"
 }
 ---
