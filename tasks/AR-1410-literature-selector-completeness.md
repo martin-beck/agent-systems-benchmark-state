@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads.",
-  "task_revision": 111,
+  "task_revision": 112,
   "title": "Literature selector completeness and parity",
-  "updated_at": "2026-09-24T17:25:20+00:00",
+  "updated_at": "2026-09-24T17:25:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1410"
 }
 ---
@@ -350,3 +350,6 @@ does not turn external qualification or live-provider access into a prerequisite
   and all seven required PR checks passed. Merge commit 6925c3c443b77aa41ec9578e49cc19b01447c869.
   Post-merge workflow IDs recorded; Huawei MIT source headers 36034017456 already SUCCESS, six
   remain in progress.
+
+- 2026-09-24T17:25:28+00:00: Recorded command exit 0; command argv SHA-256
+  c4bd2426d583c7f0e64f0d33f871b01fb74424a483556eecf0ad7b26af0edc37.
