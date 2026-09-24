@@ -1,14 +1,14 @@
 ---
 {
   "branch": "codex/ar-1404-literature-documentation",
-  "checkpoint_commit": "4c4e098ce06be3feea5afc3ecaa7af3f0b61ebcc",
+  "checkpoint_commit": "b0ed118cbe577827487701e35b9f3ea37027e46c",
   "claim_expires": "2026-09-24T15:51:49+00:00",
   "depends_on": [
     "AR-1400",
     "AR-1402"
   ],
   "id": "AR-1404",
-  "next_action": "Wait for all PR #295 checks to be green after rerun; no product repair is warranted because the diff excludes asb-runtime. Then merge exact head and run post-merge gates.",
+  "next_action": "Wait for all 12 exact-head checks on b0ed118; independently verify green head, merge exact base, run post-merge workflows, release AR-1404.",
   "observed_branch": "codex/ar-1404-literature-documentation",
   "observed_dirty": 0,
   "observed_head": "b0ed118cbe577827487701e35b9f3ea37027e46c",
@@ -17,10 +17,10 @@
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "PR #295 has one unrelated flaky runtime test failure; focused reruns pass 5/5.",
-  "task_revision": 31,
+  "summary": "PR #295 head repaired to use temp-file parity handoff; exact checks restarted.",
+  "task_revision": 32,
   "title": "Literature workload documentation and matrix contract",
-  "updated_at": "2026-09-24T13:51:49+00:00",
+  "updated_at": "2026-09-24T13:52:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1404"
 }
 ---
@@ -93,3 +93,10 @@ state that diverges from the versioned catalog.
   39cf5398131881d6bebfeb6940a170dba53287cbad205a984f34c80a6dbe58e7.
 
 - 2026-09-24T13:51:49+00:00: Heartbeat by ar1404_literature_documentation_luna56b.
+
+- 2026-09-24T13:52:02+00:00: The first Rust rerun stalled in the Workload catalog parity step
+  because Bash process substitution used a FIFO on the hosted runner. Repaired workflow in
+  signed+DCO commit b0ed118 to write cargo workload-catalog output to RUNNER_TEMP and pass a regular
+  file to the parity checker. This removes shell/FIFO portability risk without changing product
+  behavior. PR #295 now has new exact head b0ed118 and all required checks restarted; no merge
+  occurred on stale head.
