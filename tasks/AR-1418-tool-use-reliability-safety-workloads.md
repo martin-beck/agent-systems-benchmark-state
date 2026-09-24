@@ -1,14 +1,14 @@
 ---
 {
   "branch": "codex/ar-1418-tool-use-reliability-safety",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "0dcc71705eb610e4c3ab6a9f775a9d7b9b25218a",
   "claim_expires": "2026-09-24T21:16:15+00:00",
   "depends_on": [
     "AR-1416",
     "AR-1408"
   ],
   "id": "AR-1418",
-  "next_action": "Promote after AR-1416 is released; audit tau-bench and AgentDojo literature records, then implement separate reliability and safety workload selectors with deterministic mocks.",
+  "next_action": "Existing main implementation verified: interactive.rs and literature registry cover AgentBench/tau-bench/AgentDojo offline selectors, separate reliability/utility/safety evidence, negative controls, and docs/catalog parity. Focused and package tests pass; clippy rerun after coordinator lock timeout, then release with PR #300 evidence.",
   "observed_branch": "codex/ar-1418-tool-use-reliability-safety",
   "observed_dirty": 0,
   "observed_head": "0dcc71705eb610e4c3ab6a9f775a9d7b9b25218a",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add selectable tool-use reliability and safety workloads from the literature with separate metrics.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Tool-use reliability and safety workloads",
-  "updated_at": "2026-09-24T19:18:00+00:00",
+  "updated_at": "2026-09-24T19:18:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1418"
 }
 ---
@@ -63,3 +63,10 @@ dimensions; no aggregate score may hide unsafe or failed tool calls.
 
 - 2026-09-24T19:18:00+00:00: Recorded command exit 0; command argv SHA-256
   8c626a62a8ec6a7a9c362d5ca812eaf45ab96cce531c130c2843984c9d39ba57.
+
+- 2026-09-24T19:18:27+00:00: Audit evidence: current main already contains commit 6f93076 (merged PR
+  #300, merge c2fe732b) implementing the requested interactive fixtures. cargo test --locked -p
+  asb-workloads interactive passed 2/2; cargo test --locked -p asb-workloads --all-targets --
+  --test-threads=1 passed 34 unit + 2 public API + 5 registry tests. Historical PR #300 required
+  checks are terminal SUCCESS. A clippy invocation exited 1 due exact infrastructure error
+  LOCK_TIMEOUT after 10.0s acquiring shared coordinator lock; rerun required.
