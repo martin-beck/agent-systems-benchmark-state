@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach conservative comparison of multiple agents from the same benchmark.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Multi-agent result comparison tutorial",
-  "updated_at": "2026-09-24T21:01:00+00:00",
+  "updated_at": "2026-09-24T21:03:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1215"
 }
 ---
@@ -110,3 +110,6 @@ commands in tutorial syntax CI.
   c663d1f29d4802281476c3a71d56542b17dbab48 and head 0e08fbee769cff71e402aef07ce6fb80a9a821e2
   verified. Header and AWQ shadow checks passed; required Rust, quality, fault, formal, portability
   checks are in progress. Independent diff review found no actionable issue.
+
+- 2026-09-24T21:03:09+00:00: Recorded command exit 0; command argv SHA-256
+  4b866a61a939ff1592762d034f882243a35f8b3ee058634868b1ba40a476710e.
