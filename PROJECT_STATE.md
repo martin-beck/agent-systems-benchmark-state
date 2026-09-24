@@ -23,7 +23,7 @@ Generated from local Git and GitHub. Do not edit.
 | #236 | `dependabot/cargo/toml-1.1.6spec-1.1.0@9dc09c5208ab` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump toml from 0.8.23 to 1.1.6+spec-1.1.0 |
 | #237 | `dependabot/cargo/thiserror-2.0.20@83dba9288d9c` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump thiserror from 2.0.16 to 2.0.20 |
 | #290 | `repair/ar-1313-current-main-dco-recovery@3420355d8a08` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(policy): recover historical DCO boundary on current main |
-| #291 | `codex/ar-1405-dependency-reconcile@98ee369464f3` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, IN_PROGRESS: | chore(deps): refresh safe dependency updates on current main |
+| #291 | `codex/ar-1405-dependency-reconcile@98ee369464f3` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, IN_PROGRESS: | chore(deps): refresh safe dependency updates on current main |
 
 ## Recent workflows
 
@@ -34,7 +34,7 @@ Generated from local Git and GitHub. Do not edit.
 | 35994301821 | `98ee369464f3` | pull_request | Huawei MIT source headers | completed:success |
 | 35994301805 | `98ee369464f3` | pull_request | Formal assurance | in_progress:- |
 | 35994301798 | `98ee369464f3` | pull_request | Fault assurance | in_progress:- |
-| 35994301755 | `98ee369464f3` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 35994301755 | `98ee369464f3` | pull_request | Hosted portability and native qualification | completed:success |
 | 35994301722 | `98ee369464f3` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 35994301674 | `98ee369464f3` | pull_request | Rust verification | in_progress:- |
 | 35993560227 | `e0b15fc23be8` | push | Huawei MIT source headers | completed:success |
