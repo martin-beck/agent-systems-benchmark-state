@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add selectable, provenance-preserving repository-repair and terminal benchmark adapters.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Repository and terminal literature workload adapters",
-  "updated_at": "2026-09-24T14:17:07+00:00",
+  "updated_at": "2026-09-24T14:17:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1411"
 }
 ---
@@ -35,3 +35,6 @@ bounded local fixtures or LiteLLM-compatible mocks only.
   codex/ar-1411-repository-terminal and worktree agent-systems-benchmark-ar-1411 before claim.
 
 - 2026-09-24T14:17:07+00:00: Claimed by ar1411_repository_terminal_luna56.
+
+- 2026-09-24T14:17:18+00:00: Recorded command exit 0; command argv SHA-256
+  5345cd4b5f66285dc80cddfe59c0a95475263f9ff88d25d2639fce3c300aa4b9.
