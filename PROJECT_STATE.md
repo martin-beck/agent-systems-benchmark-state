@@ -18,7 +18,7 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 36051793231 | `28e35608a2a8` | pull_request | Formal assurance | completed:success |
-| 36051793224 | `28e35608a2a8` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 36051793224 | `28e35608a2a8` | pull_request | Emulated aarch64 portability | completed:success |
 | 36051793194 | `28e35608a2a8` | pull_request | Repository quality | completed:success |
 | 36051793189 | `28e35608a2a8` | pull_request | Huawei MIT source headers | completed:success |
 | 36051793166 | `28e35608a2a8` | pull_request | Hosted portability and native qualification | completed:success |
