@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize the runtime-owned live bootstrap handle from authenticated authority.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Runtime-owned bootstrap materialization",
-  "updated_at": "2026-09-24T05:27:58+00:00",
+  "updated_at": "2026-09-24T05:28:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1384-runtime-bootstrap-materialization"
 }
 ---
@@ -110,3 +110,6 @@ it must not accept caller authority or synthesize enrolled values.
 - 2026-09-24T05:27:53+00:00: Heartbeat by codex-asb-runtime-receipt-source-luna56.
 
 - 2026-09-24T05:27:58+00:00: Heartbeat by codex-asb-runtime-receipt-source-luna56.
+
+- 2026-09-24T05:28:16+00:00: Recorded command exit 0; command argv SHA-256
+  82fa00aa758142212abd3c359b2b19e5a11e50228697cfadcc98ae77ea1a08a2.
