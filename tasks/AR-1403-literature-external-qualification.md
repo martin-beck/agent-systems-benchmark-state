@@ -9,7 +9,7 @@
   "id": "AR-1403",
   "next_action": "PR #296 open; independently review full diff and wait for exact-head checks at base 6cef4babe3db65e22bfcd098a074da14a4630f7e/head b51570bbf0fa6e2ccfaddee86115c50474a168c3 before signed integration merge.",
   "observed_branch": "codex/ar-1403-literature-external",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "b51570bbf0fa6e2ccfaddee86115c50474a168c3",
   "owner": "ar1403_external_qualification_luna56",
   "plan": "../plans/AR-1403-literature-external-qualification.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add optional evidence-gated qualification for real literature workload sources and evaluators.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Literature workload external qualification",
-  "updated_at": "2026-09-24T13:47:04+00:00",
+  "updated_at": "2026-09-24T13:47:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1403"
 }
 ---
