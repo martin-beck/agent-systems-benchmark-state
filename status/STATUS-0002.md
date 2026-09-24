@@ -28,7 +28,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1385](../tasks/AR-1385-runtime-live-dispatch-source.md): Authenticated runtime live dispatch source | codex-asb-ar1329-repair-luna56 | Materialize the authenticated runtime-owned live dispatch source for production asb run and sweep. | Promote after dependency validation; materialize the authenticated runtime-owned live dispatch source consumed by asb run and sweep, with fail-closed positive and negative tests. |
+| P0 | [AR-1385](../tasks/AR-1385-runtime-live-dispatch-source.md): Authenticated runtime live dispatch source | codex-asb-ar1329-repair-luna56 | Materialize the authenticated runtime-owned live dispatch source for production asb run and sweep. | Refresh the declared isolated worktree from protected main, materialize the authenticated runtime-owned live dispatch source consumed by asb run and sweep, and add fail-closed positive and negative tests. |
 
 ### Open (3)
 
