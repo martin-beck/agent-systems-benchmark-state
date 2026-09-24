@@ -10,7 +10,7 @@
   "id": "AR-1411",
   "next_action": "Claim after binding metadata; implement offline-selectable repository and terminal workload adapters.",
   "observed_branch": "codex/ar-1411-repository-terminal",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "fc74825cb86991bb3afac6854d8cb5048118ff8f",
   "owner": "ar1411_repository_terminal_luna56",
   "plan": "../plans/AR-1411-repository-terminal-adapters.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add selectable, provenance-preserving repository-repair and terminal benchmark adapters.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Repository and terminal literature workload adapters",
-  "updated_at": "2026-09-24T14:22:06+00:00",
+  "updated_at": "2026-09-24T14:22:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1411"
 }
 ---
