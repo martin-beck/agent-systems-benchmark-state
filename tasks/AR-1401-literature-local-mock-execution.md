@@ -9,18 +9,18 @@
   ],
   "id": "AR-1401",
   "next_action": "PR #292 exact base e0b15fc/head 5a3b847 is running exact-head checks; obtain independent review, then signed merge and seven post-merge verification.",
-  "observed_branch": "codex/ar-1401-literature-local-mock",
+  "observed_branch": "DETACHED",
   "observed_dirty": 0,
-  "observed_head": "5a3b8477fc666aa3a2bcb356905d649885b8f467",
+  "observed_head": "6c397cec918dddf64cfb6567d32711a64d1fa5eb",
   "owner": "ar1401_literature_mock_luna56",
   "plan": "../plans/AR-1401-literature-local-mock-execution.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide offline deterministic mock execution for every documented literature workload family.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Literature workload local mock execution",
-  "updated_at": "2026-09-24T12:12:28+00:00",
+  "updated_at": "2026-09-24T12:12:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1401"
 }
 ---
