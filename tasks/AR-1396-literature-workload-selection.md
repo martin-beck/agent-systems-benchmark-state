@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make qualified literature workload families selectable beside built-in ASB software-engineering fixtures.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Literature workload selection",
-  "updated_at": "2026-09-24T10:19:48+00:00",
+  "updated_at": "2026-09-24T10:29:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1396"
 }
 ---
@@ -80,3 +80,6 @@ platform gates.
   20e163e76af3bfb6b98e8d80370559b545afce3b49cbebf845384e8c12635480.
 
 - 2026-09-24T10:19:48+00:00: Heartbeat by codex-asb-ar1396-literature-selection-luna56.
+
+- 2026-09-24T10:29:16+00:00: Recorded command exit 0; command argv SHA-256
+  321c534968b9c456a64caf5e6d09b63780c507f97548057d2bfe31edcfd73ff4.
