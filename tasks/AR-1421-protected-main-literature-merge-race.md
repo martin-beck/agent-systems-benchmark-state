@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair protected-main merge-tree requalification after a literature PR merges onto an advanced main.",
-  "task_revision": 74,
+  "task_revision": 75,
   "title": "Protected-main literature merge race repair",
-  "updated_at": "2026-09-24T20:18:40+00:00",
+  "updated_at": "2026-09-24T20:19:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1421"
 }
 ---
@@ -245,3 +245,6 @@ the merge released before fresh exact-main evidence succeeds.
 
 - 2026-09-24T20:18:40+00:00: Recorded command exit 0; command argv SHA-256
   8972c978082931a68d52c41d47976e61d97d81cebfef4db3eb9950623b322fd3.
+
+- 2026-09-24T20:19:04+00:00: Recorded command exit 0; command argv SHA-256
+  a5de7f6c9e999c87257173610be5ecef92b3fc79790107a370eea9264c11a517.
