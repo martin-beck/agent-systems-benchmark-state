@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1377-runtime-chain-store",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T04:39:49+00:00",
   "depends_on": [
     "AR-1288",
     "AR-1364",
@@ -13,15 +13,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "codex-asb-runtime-receipt-source-luna56",
   "plan": "../plans/AR-1377-runtime-chain-store.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Persist authenticated runtime certificate-chain material for live dispatch.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Runtime-owned certificate-chain store",
-  "updated_at": "2026-09-24T02:39:47+00:00",
+  "updated_at": "2026-09-24T02:39:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1377-runtime-chain-store"
 }
 ---
@@ -31,3 +31,5 @@ authority boundary and must not accept caller-built chains or synthesize trust.
 
 - 2026-09-24T02:39:47+00:00: Done dependencies AR-1288, AR-1364, AR-1373 verified; blocked adapter
   tasks are audit evidence only.
+
+- 2026-09-24T02:39:49+00:00: Claimed by codex-asb-runtime-receipt-source-luna56.
