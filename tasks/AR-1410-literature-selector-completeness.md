@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Literature selector completeness and parity",
-  "updated_at": "2026-09-24T16:36:37+00:00",
+  "updated_at": "2026-09-24T16:36:45+00:00",
   "worktree_key": ""
 }
 ---
@@ -38,3 +38,6 @@ does not turn external qualification or live-provider access into a prerequisite
   without upgrading planned evidence.
 
 - 2026-09-24T16:36:37+00:00: Claimed by ar1410-literature-selector-parity-luna56.
+
+- 2026-09-24T16:36:45+00:00: Recorded command exit 0; command argv SHA-256
+  f3ebae9500f1a6e6db0c313b5557854f3d7d7071798896681b5f53cd0d5dc24a.
