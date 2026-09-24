@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach users to test configured-agent benchmark eligibility without running an agent.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Agent benchmark-readiness tutorial",
-  "updated_at": "2026-09-24T18:54:34+00:00",
+  "updated_at": "2026-09-24T18:55:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1212"
 }
 ---
@@ -57,3 +57,8 @@ Implement the linked tutorial and deterministic negative/positive syntax fixture
 
 - 2026-09-24T18:54:34+00:00: Recorded command exit 1; command argv SHA-256
   1c4aafd2e66e0c5ef7f4527dab971ff1286ec76cabc073ce635539aaaa70e25a.
+
+- 2026-09-24T18:55:19+00:00: Recorded focused gates: package-qualified tutorial validator 15/15 and
+  CLI guide_examples 4/4 passed. Repository policy invocation before commit exited 1 because the
+  uncommitted worktree produced an empty revision range; no policy defect. Commit the reviewed
+  tutorial files, then rerun repository policy against the committed base-range.
