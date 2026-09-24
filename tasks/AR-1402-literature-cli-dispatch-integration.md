@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate literature workload catalog and adapters through all ASB CLI execution and evidence paths.",
-  "task_revision": 56,
+  "task_revision": 57,
   "title": "Literature workload CLI dispatch integration",
-  "updated_at": "2026-09-24T13:17:17+00:00",
+  "updated_at": "2026-09-24T13:17:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1402"
 }
 ---
@@ -180,3 +180,6 @@ external benchmark datasets or providers.
   install-external-tools.sh downloaded first analyzer, then repeated HTTP 500 with retries at
   13:15:26-13:15:33Z; artifact_outcome classified publication-interrupted. This is external
   transient service failure, not a product-gate result; no gate weakened.
+
+- 2026-09-24T13:17:27+00:00: Recorded command exit 0; command argv SHA-256
+  af3f406a667ee8375d255354a8a3539d97f0aec3a51773cc3a44516d92d67b74.
