@@ -1,13 +1,13 @@
 ---
 {
   "branch": "codex/ar-1402-literature-cli",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "0667f299ce04ed74c8f1fc2a349df3bcb57a4838",
   "claim_expires": "2026-09-24T14:42:38+00:00",
   "depends_on": [
     "AR-1401"
   ],
   "id": "AR-1402",
-  "next_action": "Claim after binding metadata repair; create the isolated worktree, replace OriginalWorkloads-only CLI seams with catalog/adapter dispatch, and run end-to-end offline tests.",
+  "next_action": "Declared isolated worktree agent-systems-benchmark-ar-1402 at protected main 0667f29. Audit CLI execution seams, implement catalog/adapter dispatch with offline local mocks, run focused/full gates, then signed PR and exact-head review.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate literature workload catalog and adapters through all ASB CLI execution and evidence paths.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Literature workload CLI dispatch integration",
-  "updated_at": "2026-09-24T12:42:38+00:00",
+  "updated_at": "2026-09-24T12:43:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1402"
 }
 ---
@@ -39,3 +39,6 @@ external benchmark datasets or providers.
   codex/ar-1402-literature-cli and agent-systems-benchmark-ar-1402, then re-claim.
 
 - 2026-09-24T12:42:38+00:00: Claimed by ar1402_literature_cli_luna56.
+
+- 2026-09-24T12:43:02+00:00: Claimed AR-1402 and created the declared isolated branch/worktree from
+  protected main 0667f29. No asb-tui work.
