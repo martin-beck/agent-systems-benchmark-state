@@ -7,7 +7,7 @@
     "AR-1213"
   ],
   "id": "AR-1215",
-  "next_action": "Obtain independent review, then publish the signed topic commit through the protected PR path; retain focused test and unavailable-ruff evidence.",
+  "next_action": "Retry gh pr create now that docs/ar-1215-result-comparison is pushed; then record PR URL and exact-head review.",
   "observed_branch": "docs/ar-1215-result-comparison",
   "observed_dirty": 0,
   "observed_head": "0e08fbee769cff71e402aef07ce6fb80a9a821e2",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach conservative comparison of multiple agents from the same benchmark.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Multi-agent result comparison tutorial",
-  "updated_at": "2026-09-24T20:59:41+00:00",
+  "updated_at": "2026-09-24T21:00:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1215"
 }
 ---
@@ -93,3 +93,8 @@ commands in tutorial syntax CI.
 
 - 2026-09-24T20:59:41+00:00: Recorded command exit 0; command argv SHA-256
   bda245cdfbf6d645054ac31b239b63ba5c748ae2f5573dcab7439d451964de53.
+
+- 2026-09-24T21:00:04+00:00: Publication attempt exit 1: gh pr create returned GraphQL Head sha/Base
+  sha blank, no commits between main and docs/ar-1215-result-comparison, and head ref must be a
+  branch. Root cause was the topic branch had not yet been pushed; no PR was created. The signed
+  topic branch is now pushed and ready for one corrected retry.
