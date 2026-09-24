@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the formal online-build fixture race that caused ETXTBSY after AR-1388 merge.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Formal fixture executable race repair",
-  "updated_at": "2026-09-24T07:13:39+00:00",
+  "updated_at": "2026-09-24T07:13:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1389-formal-fixture-exec-race"
 }
 ---
@@ -56,3 +56,6 @@ privacy, offline, boundedness, and local-mock boundaries.
 
 - 2026-09-24T07:13:29+00:00: Recorded command exit 0; command argv SHA-256
   cc9bba193cbb444795450e05ffb2201db2a262facb4bf0c4b908e08b47ac464b.
+
+- 2026-09-24T07:13:56+00:00: Recorded command exit 0; command argv SHA-256
+  acbfb475129b944e37d165ced2a21147ce9b81007df77590e0b28eb07f88dd83.
