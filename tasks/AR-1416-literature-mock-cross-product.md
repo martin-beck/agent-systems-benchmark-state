@@ -9,7 +9,7 @@
     "AR-1402"
   ],
   "id": "AR-1416",
-  "next_action": "Repair methodology-only literature fail-closed boundary; add cross-product local-mock lifecycle coverage for every executable ID, then rerun focused gates.",
+  "next_action": "Rerun cargo fmt/check and focused literature tests after transient coordinator lock timeout; then run full applicable gates.",
   "observed_branch": "codex/ar-1416-literature-mock-cross-product",
   "observed_dirty": 1,
   "observed_head": "c533734a486a8c3a8c854c1fce395b915986d874",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prove end-to-end selectable literature workloads with deterministic local or LiteLLM-compatible mocks and no live provider dependency.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Literature workload local-mock cross-product",
-  "updated_at": "2026-09-24T18:25:01+00:00",
+  "updated_at": "2026-09-24T18:25:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1416"
 }
 ---
@@ -67,3 +67,8 @@ exact-head CI, independent review, and all required post-merge workflows.
 
 - 2026-09-24T18:24:50+00:00: Recorded command exit 1; command argv SHA-256
   f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
+
+- 2026-09-24T18:25:14+00:00: Command failure recorded: handoffctl-wrapped cargo fmt mutation
+  completed formatting, but wrapper exited with LOCK_TIMEOUT after 10.0s acquiring the shared
+  coordinator lock while finalizing evidence. Product formatting was applied; rerun verification is
+  required.
