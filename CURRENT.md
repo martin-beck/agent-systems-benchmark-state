@@ -3,12 +3,17 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1316](tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | Publish the verified ASB agent catalog required by the first-run setup wizard. | Coordinator must bind branch feature/ar-1316-authenticated-agent-catalog-producer to isolated worktree /srv/data/projects/agent-systems-benchmark-ar-1316 (metadata key agent-systems-benchmark-ar-1316) before product inspection. | ar1316-authenticated-agent-catalog-producer-luna56 |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1212](tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Teach users to test configured-agent benchmark eligibility without running an agent. | Implement the offline tutorial for checking agent benchmark readiness under the current configuration. | - |
-| P0 | [AR-1316](tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | Publish the verified ASB agent catalog required by the first-run setup wizard. | Coordinator must bind branch feature/ar-1316-authenticated-agent-catalog-producer to isolated worktree /srv/data/projects/agent-systems-benchmark-ar-1316 (metadata key agent-systems-benchmark-ar-1316) before product inspection. | - |
 
 ## Blocked
 

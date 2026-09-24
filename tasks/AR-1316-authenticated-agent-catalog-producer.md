@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1316-authenticated-agent-catalog-producer",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T20:49:29+00:00",
   "depends_on": [
     "AR-1190",
     "AR-1191",
@@ -11,15 +11,15 @@
   ],
   "id": "AR-1316",
   "next_action": "Coordinator must bind branch feature/ar-1316-authenticated-agent-catalog-producer to isolated worktree /srv/data/projects/agent-systems-benchmark-ar-1316 (metadata key agent-systems-benchmark-ar-1316) before product inspection.",
-  "owner": "",
+  "owner": "ar1316-authenticated-agent-catalog-producer-luna56",
   "plan": "../plans/AR-1316.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Publish the verified ASB agent catalog required by the first-run setup wizard.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Authenticated agent catalog producer",
-  "updated_at": "2026-09-24T17:42:52+00:00",
+  "updated_at": "2026-09-24T18:49:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1316-authenticated-agent-catalog-producer"
 }
 ---
@@ -54,3 +54,5 @@ Progress evidence: ASB PR #245 merged at `027af7ad27da13b359b3f099699c42b03c6f39
 - 2026-09-24T17:42:52+00:00: Recover inactive worker claim: no product mutation occurred; declared
   worktree remained legacy /tmp and relocation failed cross-device. Rebind isolated
   /srv/data/projects worktree before retry.
+
+- 2026-09-24T18:49:29+00:00: Claimed by ar1316-authenticated-agent-catalog-producer-luna56.
