@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Expose all documented literature workloads as truthful selectable candidates beside built-in fixtures.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Literature workload catalog activation",
-  "updated_at": "2026-09-24T11:11:54+00:00",
+  "updated_at": "2026-09-24T11:13:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1400"
 }
 ---
@@ -48,3 +48,6 @@ dataset, native-platform, or provider qualification that the registry lacks.
 
 - 2026-09-24T11:11:54+00:00: Recorded command exit 0; command argv SHA-256
   1adaf4cc7da56bc5152b50040a52b1a4f555c019ca60fa62a1f0450e25728b34.
+
+- 2026-09-24T11:13:04+00:00: Recorded command exit 0; command argv SHA-256
+  b4cc33f848828d3b7b609485ea1e82850d15c2c18a50695c782f17c151c1afc7.
