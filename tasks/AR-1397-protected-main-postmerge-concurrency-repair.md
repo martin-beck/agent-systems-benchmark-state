@@ -1,13 +1,13 @@
 ---
 {
   "branch": "repair/ar-1397-protected-main-postmerge-concurrency",
-  "checkpoint_commit": "1bcd946b30a2fa40e27174ebbbecc0af23d82b33",
+  "checkpoint_commit": "123ba915d2732ee8a6c99fae301bfd64cf0aac4f",
   "claim_expires": "2026-09-24T11:35:34+00:00",
   "depends_on": [
     "AR-1337"
   ],
   "id": "AR-1397",
-  "next_action": "PR #286 is published at 1bcd946b30a2fa40e27174ebbbecc0af23d82b33; independently review the exact diff, wait for all required PR checks, merge only through the protected signed path, then verify all seven terminal-success post-merge workflows and preserve durable evidence.",
+  "next_action": "PR #286 merged at 123ba915d2732ee8a6c99fae301bfd64cf0aac4f. Monitor exact-main post-merge runs 35983130559, 35983130497, 35983130461, 35983130427, 35983130387, 35983130338, and 35983130335 until all seven are terminal-success; then preserve evidence and release AR-1397 done.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair protected-main merge-tree admission and serialize exact post-merge evidence across concurrent main pushes.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Protected-main post-merge concurrency and tree repair",
-  "updated_at": "2026-09-24T09:45:46+00:00",
+  "updated_at": "2026-09-24T09:46:35+00:00",
   "worktree_key": ""
 }
 ---
@@ -76,3 +76,8 @@ it must retain the default signature-required and exact-tree gates.
 
 - 2026-09-24T09:45:46+00:00: Recorded command exit 1; command argv SHA-256
   7d4816ae42e593c06430c7ad06c4290cd2b679fc95d5f4362f3c42eeeff72380.
+
+- 2026-09-24T09:46:35+00:00: Protected merge observed and independently verified: PR #286 head
+  1bcd946 was merged as 123ba915. The local exact merge command had failed closed earlier when
+  target advanced, preserving the invariant. Seven exact-main post-merge workflows dispatched for
+  the merge; headers already succeeded.
