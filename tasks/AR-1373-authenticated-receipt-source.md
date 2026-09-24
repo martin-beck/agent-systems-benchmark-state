@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated ControlBackend runtime receipt source for AR-1329 production dispatch.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Authenticated runtime receipt source",
-  "updated_at": "2026-09-24T02:11:26+00:00",
+  "updated_at": "2026-09-24T02:21:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1373-authenticated-receipt-source"
 }
 ---
@@ -156,3 +156,6 @@ provider support from setup metadata alone.
   runtime_receipt removal to historical schema generation and restores v1 through v1.7 byte
   identity; local contract consistency and all schema conformance tests pass. Branch force-updated
   safely with force-with-lease.
+
+- 2026-09-24T02:21:34+00:00: Recorded command exit 1; command argv SHA-256
+  7a38a7e3ec21dd914775b4623905755d835abb88e8fc8cab19850c28aea19e40.
