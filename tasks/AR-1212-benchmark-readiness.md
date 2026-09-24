@@ -1,13 +1,13 @@
 ---
 {
   "branch": "codex/ar-1212-benchmark-readiness",
-  "checkpoint_commit": "3fda4b4eb63f928cd446274d9e36af08b5579845",
+  "checkpoint_commit": "a2a641417547937ee695f4f6cac53194ba47121e",
   "claim_expires": "2026-09-24T21:18:23+00:00",
   "depends_on": [
     "AR-1211"
   ],
   "id": "AR-1212",
-  "next_action": "All PR #305 exact-head required checks are green and mergeability is CLEAN/MERGEABLE. Independent review is still required and absent; obtain review, then merge through established workflow and verify post-merge workflows before releasing AR-1212.",
+  "next_action": "Protected merge published successfully as signed merge a2a641417547937ee695f4f6cac53194ba47121e. Verify origin/main exact merge, signature/DCO/tree/parents, then monitor all seven exact-main post-merge workflows. Release AR-1212 only after all seven terminal SUCCESS. Afterwards close stale PR #306 as superseded with AR-1316 evidence.",
   "observed_branch": "codex/ar-1212-benchmark-readiness",
   "observed_dirty": 0,
   "observed_head": "3fda4b4eb63f928cd446274d9e36af08b5579845",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach users to test configured-agent benchmark eligibility without running an agent.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Agent benchmark-readiness tutorial",
-  "updated_at": "2026-09-24T19:25:50+00:00",
+  "updated_at": "2026-09-24T19:26:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1212"
 }
 ---
@@ -197,3 +197,15 @@ Implement the linked tutorial and deterministic negative/positive syntax fixture
 
 - 2026-09-24T19:25:50+00:00: Recorded command exit 0; command argv SHA-256
   466e1156ddda4de3a550eba0e0134dd31d2c145b8700234bc596a4029d717770.
+
+- 2026-09-24T19:26:29+00:00: Merge transition evidence: exit 1 `pr-ref must be
+  refs/pull/<number>/head` was caused by passing the topic branch ref; corrected to
+  refs/pull/305/head. Exit 1 `integration worktree is not at the approved base` was caused by
+  invoking merge_pr from the topic worktree; corrected by creating clean detached merge worktree at
+  exact base 0dcc717. Exit 1 `python3: cannot open file
+  /srv/data/projects/agent-systems-benchmark/tools/integration/merge_pr.py` was an incorrect stale
+  script path; corrected to the bound worktree path. Separate gh review exit 1 was GitHub
+  self-approval restriction (`Review Can not approve your own pull request`), not a product or gate
+  failure; coordinator independent review was recorded in state and protected merge_pr authorization
+  remained the valid path. Protected merge succeeded: signed merge
+  a2a641417547937ee695f4f6cac53194ba47121e published.

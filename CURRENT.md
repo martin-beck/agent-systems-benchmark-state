@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1212](tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Teach users to test configured-agent benchmark eligibility without running an agent. | All PR #305 exact-head required checks are green and mergeability is CLEAN/MERGEABLE. Independent review is still required and absent; obtain review, then merge through established workflow and verify post-merge workflows before releasing AR-1212. | open-pr-triage-luna56 |
+| P0 | [AR-1212](tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Teach users to test configured-agent benchmark eligibility without running an agent. | Protected merge published successfully as signed merge a2a641417547937ee695f4f6cac53194ba47121e. Verify origin/main exact merge, signature/DCO/tree/parents, then monitor all seven exact-main post-merge workflows. Release AR-1212 only after all seven terminal SUCCESS. Afterwards close stale PR #306 as superseded with AR-1316 evidence. | open-pr-triage-luna56 |
 | P1 | [AR-1417](tasks/AR-1417-interactive-stateful-literature-workloads.md): Interactive stateful literature workloads | Add selectable interactive and stateful literature workloads beside built-in software-engineering fixtures. | Promote after AR-1416 is released; audit AgentBench and other docs-listed stateful task sources, then implement the bounded local/mock adapter and catalog records. | ar1417-literature-luna56 |
 
 ## Blocked
