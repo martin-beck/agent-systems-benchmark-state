@@ -28,7 +28,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35986670435 | `b63394b167d4` | push | Formal assurance | in_progress:- |
+| 35986670435 | `b63394b167d4` | push | Formal assurance | completed:success |
 | 35986670370 | `b63394b167d4` | push | Rust verification | in_progress:- |
 | 35986670359 | `b63394b167d4` | push | Hosted portability and native qualification | completed:success |
 | 35986670309 | `b63394b167d4` | push | Repository quality | in_progress:- |
