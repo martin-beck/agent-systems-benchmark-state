@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1434-runtime-local-mock-attempt-adapter",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "c1f0434e3b73b6f1f5a4b08cc8eaf15c2e8ab1c7",
   "claim_expires": "2026-09-25T01:12:47+00:00",
   "depends_on": [
     "AR-1341",
@@ -11,7 +11,7 @@
     "AR-1393"
   ],
   "id": "AR-1434",
-  "next_action": "Promote and claim after verifying the complete runtime prerequisite set; implement the mock-only attempt/backend adapter from the AR-1432 blocker evidence without changing production egress or live authority constructors.",
+  "next_action": "Run complete applicable workspace gates and independent review of signed+DCO c1f0434; then publish exact-head PR only if the mock-only boundary remains isolated and all required checks are green.",
   "observed_branch": "feature/ar-1434-runtime-local-mock-attempt-adapter",
   "observed_dirty": 0,
   "observed_head": "c1f0434877376915151a4b8946b61bf7246c6db3",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add an approved runtime mock-attempt adapter for deterministic local run and sweep qualification.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Runtime local mock-attempt adapter",
-  "updated_at": "2026-09-24T23:16:44+00:00",
+  "updated_at": "2026-09-24T23:16:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1434-runtime-local-mock-attempt-adapter"
 }
 ---
@@ -64,3 +64,10 @@ external provider.
 
 - 2026-09-24T23:16:33+00:00: Recorded command exit 0; command argv SHA-256
   86d8250b4575be7633c9f0a41f09d2532feff0bb4fe155d17ccc4f18e6548e93.
+
+- 2026-09-24T23:16:59+00:00: Signed+DCO product commit c1f0434 adds LocalProviderMockBackend and
+  non-convertible LocalProviderMockAttempt with attempt identity, cancellation, revocation, bounded
+  deterministic response, zero-attempt rejection, and secret-free debug tests. Focused asb-runtime
+  local_mock tests: 5 passed. Runtime clippy -D warnings passed. Initial rustfmt check exit 1
+  identified only formatting of issue_attempt signature; cargo fmt rerun repaired it and subsequent
+  tests passed.
