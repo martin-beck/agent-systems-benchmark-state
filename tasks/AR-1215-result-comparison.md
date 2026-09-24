@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach conservative comparison of multiple agents from the same benchmark.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Multi-agent result comparison tutorial",
-  "updated_at": "2026-09-24T21:22:21+00:00",
+  "updated_at": "2026-09-24T21:22:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1215"
 }
 ---
@@ -217,3 +217,6 @@ commands in tutorial syntax CI.
 
 - 2026-09-24T21:22:21+00:00: Recorded command exit 0; command argv SHA-256
   9b60f1237b0574da71a0c77a1bf8658ae6402e85a407e172ce90253afe94bb6e.
+
+- 2026-09-24T21:22:57+00:00: Recorded command exit 0; command argv SHA-256
+  ae22b958187c75e53b2eb345592e58ca99eefd657d6db9a03cf1c35b451879ad.
