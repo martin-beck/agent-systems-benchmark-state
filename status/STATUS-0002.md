@@ -76,12 +76,13 @@
 | P2 | [AR-1403](../tasks/AR-1403-literature-external-qualification.md): Literature workload external qualification | ar1403_external_qualification_luna56 | Add optional evidence-gated qualification for real literature workload sources and evaluators. | Claim after binding metadata repair; extend explicit external artifact/evaluator qualification without adding a default network path. |
 | P2 | [AR-1404](../tasks/AR-1404-literature-documentation-matrix.md): Literature workload documentation and matrix contract | ar1404_literature_documentation_luna56b | Generate and verify the literature workload documentation and evidence-state matrix. | Promote after the catalog and CLI contracts stabilize; generate documentation and add CI parity checks across docs, registry, catalog, and CLI inventory. |
 
-### Open (2)
+### Open (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1212](../tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Unclaimed | Teach users to test configured-agent benchmark eligibility without running an agent. | Implement the offline tutorial for checking agent benchmark readiness under the current configuration. |
 | P0 | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | Unclaimed | Publish the verified ASB agent catalog required by the first-run setup wizard. | Persist the authenticated catalog snapshot/generation and complete live ASB-to-asb-tui wizard evidence; keep all entries unavailable until a verified release closure exists. |
+| P1 | [AR-1411](../tasks/AR-1411-repository-terminal-adapters.md): Repository and terminal literature workload adapters | Unclaimed | Add selectable, provenance-preserving repository-repair and terminal benchmark adapters. | Promote after AR-1408 and AR-1401 are done; implement offline-selectable repository and terminal workload adapters. |
 
 ### Blocked (66)
 
@@ -154,7 +155,7 @@
 | P1 | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md): Live-provider run execution for real agents | Unclaimed | Execute real agents against the selected provider through asb run and sweep with credential-free resolution. | BLOCKED pending coordinator-created repair AR: implement runtime-owned LiveProviderRuntimeService acquisition for production asb run/sweep. Service must resolve pinned provider policy to concrete public target(s), obtain credential through enrolled environment channel without evidence disclosure, construct attested child namespace handoff and relay listener, reserve ResourceLease, create SandboxBackend with pinned live gate, attest and issue one LiveProviderAttempt per scheduler attempt, and teardown on cancellation. Then AR-1329 can wire dispatch --provider-selection/--live-provider while preserving NetworkPolicy::Deny and direct/alternate egress denial. |
 | P1 | [AR-1354](../tasks/AR-1354-runtime-enrollment-implementation.md): Runtime enrollment implementation | Unclaimed | Implement config-backed runtime-owned enrollment for live CLI dispatch. | BLOCKED on an attested runtime enrollment source: asb-runtime must receive an authority-free enrollment request and obtain concrete public target(s), pinned tool attestations, lease root, and relay root from a runtime/control-owned record; do not expose these asb-cli inputs. Add a signed/attested record transport or coordinator-owned runtime enrollment AR, then implement acquire_from_enrollment and CLI dispatch with positive/negative tests. |
 
-### Planned (73)
+### Planned (72)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -221,7 +222,6 @@
 | P1 | [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md): Guided ASB command wrapper | Unclaimed | Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows. | Promote after AR-1328, AR-1329, AR-1332 and AR-1333 are done; implement the catalog-driven asb easy wrapper, generated private files, documentation and offline hostile tests. |
 | P1 | [AR-1409](../tasks/AR-1409-interactive-literature-adapters.md): Interactive literature workload adapters | Unclaimed | Add offline-selectable interactive and tool-use literature workload adapters. | Promote after AR-1408 and AR-1401 are done; implement local deterministic adapters and catalog selection for AgentBench, tau-bench, and AgentDojo. |
 | P1 | [AR-1410](../tasks/AR-1410-literature-selector-completeness.md): Literature selector completeness and parity | Unclaimed | Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads. | Promote after dispatch, documentation, interactive, repository/terminal, code-generation, and long-horizon adapter ARs are done; verify every literature workload is selectable through all offline ASB paths. |
-| P1 | [AR-1411](../tasks/AR-1411-repository-terminal-adapters.md): Repository and terminal literature workload adapters | Unclaimed | Add selectable, provenance-preserving repository-repair and terminal benchmark adapters. | Promote after AR-1408 and AR-1401 are done; implement offline-selectable repository and terminal workload adapters. |
 | P1 | [AR-1412](../tasks/AR-1412-code-generation-control-adapters.md): Code-generation control workload adapters | Unclaimed | Add selectable function-level and time-windowed coding controls without conflating their metrics. | Promote after AR-1408 and AR-1401 are done; implement offline-selectable code-generation control adapters. |
 | P1 | [AR-1413](../tasks/AR-1413-long-horizon-performance-adapters.md): Long-horizon and performance literature workload adapters | Unclaimed | Add truthful long-horizon, refreshed, performance, and reproducibility workload adapters. | Promote after AR-1408 and AR-1401 are done; implement bounded adapters and truthful selectors for long-horizon and performance families. |
 | P2 | [AR-0602](../tasks/AR-0602-csb-monitoring-contention.md): Validate CSB monitoring and contention diagnostics | Unclaimed | Validate and integrate optional CSB resource monitoring and kernel-contention evidence without double counting or overstating support. | Audit CSB monitoring using native x86_64 oracles and required pinned QEMU AArch64 portable mapping/lifecycle checks; keep native ARM64 counters and performance as optional future evidence. |
