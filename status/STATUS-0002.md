@@ -51,11 +51,10 @@
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1314](../tasks/AR-1314-optional-bundle-signing-development-release.md): Optional runtime-bundle signing for development and tagged releases | ar1314_bundle_profile_repair_luna56 | Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile. | Blocked on AR-1397 integration repair: post-merge Repository quality rejects c58b0b0 tree against reviewed topic after AR-1395 advanced main, and c58 Rust workflow dispatch 35980460560 was cancelled by a higher-priority waiting request for refs/heads/main. Preserve all evidence; after AR-1397 repair and queue quiescence, rerun all seven exact-main workflows including Rust. |
 | P1 | [AR-1396](../tasks/AR-1396-literature-workload-selection.md): Literature workload selection | codex-asb-ar1396-literature-selection-luna56 | Make qualified literature workload families selectable beside built-in ASB software-engineering fixtures. | PR #288 exact head e1e532ea; all required exact-head checks pending after signed-main synchronization. |
 
 ### Open (2)
@@ -214,7 +213,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (268)
+### Done (269)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -319,6 +318,7 @@
 | P0 | [AR-1306](../tasks/AR-1306-authenticated-fault-matrix-qualification.md): Authenticated strict-replay fault-matrix qualification | Unclaimed | Qualify the real authenticated strict-replay service and fault matrix missing from PR #221. | Recheck approved exact head, merge the PR, verify post-merge state, and close AR with durable evidence. |
 | P0 | [AR-1310](../tasks/AR-1310-provider-capture-campaign.md): Runtime-owned provider capture and recording campaign qualification | Unclaimed | Runtime-owned provider capture and recording campaign qualification. | Implementation and coverage successor are merged; retain historical DCO finding as AR-1313 and continue with authenticated agent-catalog producer AR-1316. |
 | P0 | [AR-1312](../tasks/AR-1312-post-merge-coverage-floor.md): Post-merge workspace coverage floor repair | Unclaimed | Repair the post-merge workspace coverage deficit without weakening the 90&#37; floor. | AR complete: signed coverage repair merged as PR #238 and post-merge workspace coverage verification passed; retain evidence and continue with AR-1316. |
+| P0 | [AR-1314](../tasks/AR-1314-optional-bundle-signing-development-release.md): Optional runtime-bundle signing for development and tagged releases | Unclaimed | Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile. | Blocked on AR-1397 integration repair: post-merge Repository quality rejects c58b0b0 tree against reviewed topic after AR-1395 advanced main, and c58 Rust workflow dispatch 35980460560 was cancelled by a higher-priority waiting request for refs/heads/main. Preserve all evidence; after AR-1397 repair and queue quiescence, rerun all seven exact-main workflows including Rust. |
 | P0 | [AR-1319](../tasks/AR-1319-authenticated-agent-catalog-entry-contract.md): Authenticated agent catalog entry contract | Unclaimed | Make incomplete authenticated agent catalog entries truthful and selectable only after verification. | Completed; preserve the merged contract as the prerequisite for AR-1316 producer and future verified release-index work. |
 | P0 | [AR-1322](../tasks/AR-1322-authenticated-release-index-source.md): Authenticated agent release-index source | Unclaimed | Promote only completely verified agents from a signed local release index. | Run post-merge live ASB-to-asb-tui catalog projection with a configured signed index; keep unavailable fallback when trust configuration is absent. |
 | P0 | [AR-1324](../tasks/AR-1324-auth-helper-control-contract.md): Authenticated credential-helper control contract | Unclaimed | Own the ASB control and runner backend for safe credential-helper invocation. | Monitor authoritative pull_request checks for PR #248 at 5abd8c7; merge only after all required checks pass, then perform ASB↔asb-tui first-user/live-provider wizard acceptance. |

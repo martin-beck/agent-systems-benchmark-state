@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1314-optional-bundle-signing",
   "checkpoint_commit": "c58b0b0a4d9023e3831f9c750edbb9b30ab4bad4",
-  "claim_expires": "2026-09-24T11:13:12+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1314",
   "next_action": "Blocked on AR-1397 integration repair: post-merge Repository quality rejects c58b0b0 tree against reviewed topic after AR-1395 advanced main, and c58 Rust workflow dispatch 35980460560 was cancelled by a higher-priority waiting request for refs/heads/main. Preserve all evidence; after AR-1397 repair and queue quiescence, rerun all seven exact-main workflows including Rust.",
   "observed_branch": "feature/ar-1314-optional-bundle-signing",
   "observed_dirty": 0,
   "observed_head": "84416b52ca2f1552c251ed612c55870842b3e630",
-  "owner": "ar1314_bundle_profile_repair_luna56",
+  "owner": "",
   "plan": "../plans/AR-1314.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile.",
-  "task_revision": 135,
+  "task_revision": 136,
   "title": "Optional runtime-bundle signing for development and tagged releases",
-  "updated_at": "2026-09-24T09:26:56+00:00",
+  "updated_at": "2026-09-24T10:31:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1314-optional-bundle-signing"
 }
 ---
@@ -353,3 +353,10 @@ reviewed signed input bundle and terminal attestation.
   388adeb3a. It covers c58b0b0 and c130ff91 merge-tree/concurrency/cancellation repair without
   weakening gates. Exact PR checks remain all green; post-merge formal/hosted/fault/header
   succeeded, quality failed deterministically, Rust reruns cancelled by concurrency.
+
+- 2026-09-24T10:31:05+00:00: PR #232 merged c58b0b0 and its original tree-mismatch/cancellation
+  evidence are preserved. Protected-main recovery AR-1398 produced signed exact descendant
+  b63394b167d453738364f4eca73af76838ef1937 from 123ba915 with matching DCO and identical tree; all
+  seven fresh exact-main workflows succeeded (35986670232, 35986670215, 35986670237, 35986670309,
+  35986670359, 35986670370, 35986670435). Optional bundle-signing behavior is therefore verified on
+  the repaired signed main evidence path.

@@ -11,12 +11,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 67 |
 | **Planned** | Defined work awaiting promotion or dependencies | 66 |
 | **Future** | Deferred roadmap work | 1 |
-| **Done** | Accepted, integrated, and durably verified | 268 |
+| **Done** | Accepted, integrated, and durably verified | 269 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 17 |
 
@@ -410,7 +410,7 @@ flowchart LR
         AR_1311["AR-1311 - Done"]:::status_done
         AR_1312["AR-1312 - Done"]:::status_done
         AR_1313["AR-1313 - Blocked"]:::status_blocked
-        AR_1314["AR-1314 - In progress"]:::status_in_progress
+        AR_1314["AR-1314 - Done"]:::status_done
         AR_1315["AR-1315 - Planned"]:::status_planned
         AR_1316["AR-1316 - Open"]:::status_open
         AR_1319["AR-1319 - Done"]:::status_done
