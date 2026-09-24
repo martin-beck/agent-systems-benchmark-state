@@ -9,7 +9,7 @@
     "AR-1371"
   ],
   "id": "AR-1373",
-  "next_action": "Full workspace test and clippy gates pass after repairing clippy large_enum_variant failure by documenting the intentional public wire-envelope representation. Independently review clean signed+DCO head, push exact branch, publish PR, and monitor exact-head CI.",
+  "next_action": "PR #273 is published at exact head 1cc2f732. Monitor all required exact-head checks; repair failures through handoffctl, merge only after independent review and all checks green, then verify seven post-merge workflows.",
   "observed_branch": "feature/ar-1373-authenticated-receipt-source",
   "observed_dirty": 0,
   "observed_head": "1cc2f732b5889eec573a345ccf0c487cc638a70d",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated ControlBackend runtime receipt source for AR-1329 production dispatch.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Authenticated runtime receipt source",
-  "updated_at": "2026-09-24T02:05:16+00:00",
+  "updated_at": "2026-09-24T02:05:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1373-authenticated-receipt-source"
 }
 ---
@@ -128,3 +128,7 @@ provider support from setup metadata alone.
 
 - 2026-09-24T02:05:16+00:00: Recorded command exit 0; command argv SHA-256
   0135148f61844469775abacbeb7c66ddfc13d1b24bad5c789789dd281a418f98.
+
+- 2026-09-24T02:05:48+00:00: Published PR #273 after clean signed+DCO review. Full local workspace
+  tests and clippy pass; clippy large_enum_variant failure was repaired with a scoped protocol
+  representation allowance and documented in prior evidence.
