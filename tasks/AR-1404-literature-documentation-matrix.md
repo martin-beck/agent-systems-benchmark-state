@@ -10,17 +10,17 @@
   "id": "AR-1404",
   "next_action": "Wait for all PR #295 checks to be green after rerun; no product repair is warranted because the diff excludes asb-runtime. Then merge exact head and run post-merge gates.",
   "observed_branch": "codex/ar-1404-literature-documentation",
-  "observed_dirty": 1,
-  "observed_head": "4c4e098ce06be3feea5afc3ecaa7af3f0b61ebcc",
+  "observed_dirty": 0,
+  "observed_head": "b0ed118cbe577827487701e35b9f3ea37027e46c",
   "owner": "ar1404_literature_documentation_luna56b",
   "plan": "../plans/AR-1404-literature-documentation-matrix.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "PR #295 has one unrelated flaky runtime test failure; focused reruns pass 5/5.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Literature workload documentation and matrix contract",
-  "updated_at": "2026-09-24T13:51:14+00:00",
+  "updated_at": "2026-09-24T13:51:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1404"
 }
 ---
