@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Generate and verify the literature workload documentation and evidence-state matrix.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Literature workload documentation and matrix contract",
-  "updated_at": "2026-09-24T13:28:56+00:00",
+  "updated_at": "2026-09-24T13:29:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1404"
 }
 ---
@@ -32,3 +32,6 @@ state that diverges from the versioned catalog.
   literature documentation/evidence parity.
 
 - 2026-09-24T13:27:36+00:00: Claimed by ar1404_literature_documentation_luna56b.
+
+- 2026-09-24T13:29:50+00:00: Recorded command exit 0; command argv SHA-256
+  39cc7ba0141883dda4f072a319ea07bf7c233ae3c65451a6a6612b8e7c326482.
