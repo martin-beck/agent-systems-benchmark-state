@@ -9,7 +9,7 @@
   "id": "AR-1431",
   "next_action": "Reproduce the AR-1216 post-merge merge-tree failure and repair stale-base protected-main requalification before releasing AR-1216.",
   "observed_branch": "codex/ar-1431-stale-base",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "e82e2e6f8a03815fb5e39bf64c59dac9911e3312",
   "owner": "ar1431-stale-base-luna56",
   "plan": "../plans/AR-1431-protected-main-stale-base-repair.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prevent stale-base sequential merges from passing review but failing protected-main merge-tree policy.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Protected-main stale-base merge requalification repair",
-  "updated_at": "2026-09-24T22:23:34+00:00",
+  "updated_at": "2026-09-24T22:23:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1431"
 }
 ---
