@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1367-ar1329-production-dispatch-integration",
   "checkpoint_commit": "0c6dc52e1f4aa5854f73081711dbd9a5bc1a5d7c",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T06:24:13+00:00",
   "depends_on": [
     "AR-1366",
     "AR-1340",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1367-ar1329-production-dispatch-integration",
   "observed_dirty": 0,
   "observed_head": "0c6dc52e1f4aa5854f73081711dbd9a5bc1a5d7c",
-  "owner": "",
+  "owner": "codex-asb-ar1329-repair-luna56",
   "plan": "../plans/AR-1367-ar1329-production-dispatch-integration.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Complete production asb run/sweep live-provider dispatch through runtime-owned authenticated acquisition and teardown.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "AR-1329 production dispatch integration",
-  "updated_at": "2026-09-24T05:39:05+00:00",
+  "updated_at": "2026-09-24T05:39:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1367-ar1329-production-dispatch-integration"
 }
 ---
@@ -49,3 +49,5 @@ metadata, touch asb-tui, or expose live authority through CLI/config input.
 
 - 2026-09-24T05:39:05+00:00: AR-1384 is terminal done; resume this previously blocked AR-1329
   successor for runtime-owned production dispatch integration.
+
+- 2026-09-24T05:39:13+00:00: Claimed by codex-asb-ar1329-repair-luna56.
