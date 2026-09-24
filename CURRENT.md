@@ -10,6 +10,12 @@ Never edit this file directly.
 | P0 | [AR-1421](tasks/AR-1421-protected-main-literature-merge-race.md): Protected-main literature merge race repair | Repair protected-main merge-tree requalification after a literature PR merges onto an advanced main. | Promote after AR-1417's product merge is preserved and the failed run 36048870322 is recorded; repair the protected-main merge admission/requalification path without weakening the tree invariant. | ar1421-protected-main-race-luna56 |
 | P1 | [AR-1417](tasks/AR-1417-interactive-stateful-literature-workloads.md): Interactive stateful literature workloads | Add selectable interactive and stateful literature workloads beside built-in software-engineering fixtures. | Keep open: protected-main Repository quality run 36048870322 failed because merge tree 5ddac12 differs from reviewed topic tree 666043f (base a2a6414 vs 0dcc717); await coordinator exact-main requalification or successor repair, never weaken gate. | ar1417-literature-luna56 |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Control genuine native platform capacity lifecycle. | PR #119 is stale on 78a8e9f; AR-1312 coverage repair is done. Rebase the reviewed lifecycle diff onto current main 6925c3c, rerun all gates, and merge only exact-head green. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -65,7 +71,6 @@ Never edit this file directly.
 | P0 | [AR-1391](tasks/AR-1391-runtime-control-bootstrap-constructor.md): Runtime control bootstrap constructor | Materialize authenticated runtime live authority into an opaque source without caller injection. | Claim the pre-bound isolated worktree, implement the runtime/control-owned authenticated bootstrap constructor, and publish a signed PR. | - |
 | P0 | [AR-1392](tasks/AR-1392-control-authority-materializer.md): Control-owned private authority materializer | Resolve private live authority from authenticated control enrollment without caller injection. | Claim the pre-bound isolated worktree, implement the control-owned private authority resolver required by AR-1391, and publish a signed PR. | - |
 | P1 | [AR-0604](tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Obtain authorized native x86 runner and immutable CSB/Python evidence; rerun native_boundary and record A/B overhead. | - |
-| P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Control genuine native platform capacity lifecycle. | PR #119 is stale on 78a8e9f; AR-1312 coverage repair is done. Rebase the reviewed lifecycle diff onto current main 6925c3c, rerun all gates, and merge only exact-head green. | - |
 | P1 | [AR-0814](tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Create successor AR for authenticated route/ancestor authority; preserve AR-1288 evidence and AR-0814 head 29cfa193. | - |
 | P1 | [AR-0832](tasks/AR-0832-aiws-runner-qualification.md): Qualify development host ASB runner operations | Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery. | Run repeated clean ASB jobs on every declared development host label and audit reset, isolation, architecture, and artifact provenance. | - |
 | P1 | [AR-0861](tasks/AR-0861-openjiuwen-parity.md): Add OpenJiuwen provider parity and support matrix evidence | Add OpenJiuwen provider parity and support matrix evidence. | Extend exact provider parity and the platform support matrix only for executable-qualified OpenJiuwen combinations under a serialized shared-path fence. | - |

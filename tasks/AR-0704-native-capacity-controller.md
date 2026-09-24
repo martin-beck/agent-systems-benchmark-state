@@ -16,11 +16,11 @@
   "plan": "../plans/AR-0704.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 237,
+  "task_revision": 238,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-18T22:36:53+00:00",
+  "updated_at": "2026-09-24T19:46:22+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -801,3 +801,6 @@ must not block this AR or its dependents.
 
 - 2026-09-18T22:36:53+00:00: Ownerless blocked; exact CI coverage failure remains, with corrected
   concise next_action.
+
+- 2026-09-24T19:46:22+00:00: AR-1312 coverage repair is terminal done; recover AR-0704 to rebase PR
+  #119 onto current main and rerun exact-head gates without weakening the 90% floor.
