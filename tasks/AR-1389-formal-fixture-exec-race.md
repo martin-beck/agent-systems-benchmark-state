@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1389-formal-fixture-exec-race",
   "checkpoint_commit": "10bffbf015bd7ca78d8c0d18f04cf0190195e933",
-  "claim_expires": "2026-09-24T08:16:50+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1384"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1389-formal-fixture-exec-race",
   "observed_dirty": 0,
   "observed_head": "444a61d603f124d12cdd6505d4ff1fab1d6d2104",
-  "owner": "codex-asb-ar1329-repair-luna56",
+  "owner": "",
   "plan": "../plans/AR-1389-formal-fixture-exec-race.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Repair the formal online-build fixture race that caused ETXTBSY after AR-1388 merge.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Formal fixture executable race repair",
-  "updated_at": "2026-09-24T07:31:50+00:00",
+  "updated_at": "2026-09-24T07:33:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1389-formal-fixture-exec-race"
 }
 ---
@@ -94,3 +94,9 @@ privacy, offline, boundedness, and local-mock boundaries.
 - 2026-09-24T07:28:46+00:00: Heartbeat by codex-asb-ar1329-repair-luna56.
 
 - 2026-09-24T07:31:50+00:00: Heartbeat by codex-asb-ar1329-repair-luna56.
+
+- 2026-09-24T07:33:28+00:00: Released after PR #282 merge commit
+  10bffbf015bd7ca78d8c0d18f04cf0190195e933. All seven exact-merge post-merge workflows green: runs
+  35969417881, 35969417735, 35969417734, 35969417732, 35969417722, 35969417699, 35969417656.
+  Original ETXTBSY formal failure repaired with atomic fixture publication and pinned interpreter;
+  local formal suite 9/9, workspace tests, policy, signed+DCO all passed.
