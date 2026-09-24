@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Literature selector completeness and parity",
-  "updated_at": "2026-09-24T16:51:30+00:00",
+  "updated_at": "2026-09-24T16:51:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1410"
 }
 ---
@@ -134,3 +134,6 @@ does not turn external qualification or live-provider access into a prerequisite
   recording_campaign_plan_is_durable_idempotent_and_not_offline_ready panicked because the control
   state root was already owned. All 104 other asb-cli tests and workload tests passed; rerun exact
   test to distinguish transient shared-state interference.
+
+- 2026-09-24T16:51:41+00:00: Recorded command exit 0; command argv SHA-256
+  129d4efa5bd5f7d68045c796020f9346d2291b1c21b2ddbfcc2e7a7e42fa35f6.
