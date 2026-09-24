@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect runtime-owned authenticated receipt consumption to the benchmark dispatch path without exposing authority to CLI callers.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Runtime-owned dispatch consumer",
-  "updated_at": "2026-09-24T00:18:00+00:00",
+  "updated_at": "2026-09-24T00:18:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1366-runtime-dispatch-consumer"
 }
 ---
@@ -33,3 +33,6 @@ synthesize authority from CLI/config input.
   evidence; promote runtime-owned dispatch consumer.
 
 - 2026-09-24T00:18:00+00:00: Claimed by codex-asb-runtime-attested-enrollment-luna56.
+
+- 2026-09-24T00:18:31+00:00: Recorded command exit 0; command argv SHA-256
+  bcec8960cd156152520dc36b323979d8ec9270100bcf8b9ac98ebcdf7cb0161a.
