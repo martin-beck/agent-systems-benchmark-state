@@ -13,12 +13,17 @@ preserving truthful evidence states for external-only entries.
 - AR-1402 (CLI dispatch integration)
 - AR-1404 (documentation and matrix contract)
 - AR-1409 (interactive adapters)
+- AR-1411 (repository and terminal adapters)
+- AR-1412 (code-generation controls)
+- AR-1413 (long-horizon and performance adapters)
 
 ## Acceptance
 
 - `doctor` and catalog output expose a deterministic inventory containing all
   literature workload IDs, kinds, capabilities, source revisions, adapters,
-  and evidence status beside the built-in suite.
+  and evidence status beside the built-in suite, including repository/terminal,
+  interactive/tool-use, code-generation-control, and long-horizon/performance
+  families.
 - Selector filters support workload family, capability, local/mock readiness,
   evaluator availability, and platform status without silently upgrading
   `planned`, `unsupported`, or `unqualified` cells.
