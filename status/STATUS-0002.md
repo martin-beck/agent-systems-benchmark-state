@@ -73,7 +73,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1409](../tasks/AR-1409-interactive-literature-adapters.md): Interactive literature workload adapters | ar1409_interactive_literature_luna56 | Add offline-selectable interactive and tool-use literature workload adapters. | Run full locked workspace quality gates, independent exact-diff review, then publish through handoffctl and monitor seven exact-main workflows. |
+| P1 | [AR-1409](../tasks/AR-1409-interactive-literature-adapters.md): Interactive literature workload adapters | ar1409_interactive_literature_luna56 | Add offline-selectable interactive and tool-use literature workload adapters. | Rerun full locked workspace tests after transient asb-runtime authority failure; then run rustdoc/release build, review exact diff, and publish. |
 | P1 | [AR-1413](../tasks/AR-1413-long-horizon-performance-adapters.md): Long-horizon and performance literature workload adapters | ar1413_long_horizon_performance_luna56 | Seven post-merge runs: four terminal success; aarch64, repository quality, and Rust remain actively executing on GitHub-hosted runners. | Continue monitoring post-merge IDs 36018871328/36018871323/36018871358; runner/job APIs show active in-progress steps, so do not rerun. Release only after all seven terminal success. |
 
 ### Open (3)

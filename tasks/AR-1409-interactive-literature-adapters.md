@@ -8,7 +8,7 @@
     "AR-1401"
   ],
   "id": "AR-1409",
-  "next_action": "Run full locked workspace quality gates, independent exact-diff review, then publish through handoffctl and monitor seven exact-main workflows.",
+  "next_action": "Rerun full locked workspace tests after transient asb-runtime authority failure; then run rustdoc/release build, review exact diff, and publish.",
   "observed_branch": "codex/ar-1409-interactive-literature",
   "observed_dirty": 0,
   "observed_head": "6f93076afa1af5eca0d33a693106e60f70e4ea5b",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add offline-selectable interactive and tool-use literature workload adapters.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Interactive literature workload adapters",
-  "updated_at": "2026-09-24T15:24:41+00:00",
+  "updated_at": "2026-09-24T15:25:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1409"
 }
 ---
@@ -47,3 +47,8 @@ LiteLLM-compatible mocks are the only development and CI execution path.
 
 - 2026-09-24T15:24:41+00:00: Recorded command exit 0; command argv SHA-256
   d6bd783edf83a9ef32ee909e0091fbc17b3dfc7b451dec54238ecf66ba1d590a.
+
+- 2026-09-24T15:25:07+00:00: Full cargo test --locked --workspace exited 101 only at asb-runtime
+  live_service::tests::local_authority_is_runtime_owned_loopback_and_private (assertion
+  authority.is_active()). Immediate exact focused rerun passed (1 test); treated as transient
+  runtime test failure, not suppressed.
