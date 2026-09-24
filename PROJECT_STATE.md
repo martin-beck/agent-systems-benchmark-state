@@ -10,19 +10,19 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #315 | `feature/ar-1434-runtime-local-mock-attempt-adapter@c1f043487737` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, QUEUED:, QUEUED:, IN_PROGRESS:, IN_PROGRESS: | feat(runtime): add isolated local mock attempt backend |
+| #315 | `feature/ar-1434-runtime-local-mock-attempt-adapter@c1f043487737` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(runtime): add isolated local mock attempt backend |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36072452990 | `c1f043487737` | pull_request | Formal assurance | queued:- |
+| 36072452990 | `c1f043487737` | pull_request | Formal assurance | in_progress:- |
 | 36072452900 | `c1f043487737` | pull_request | Hosted portability and native qualification | in_progress:- |
 | 36072452889 | `c1f043487737` | pull_request | Rust verification | in_progress:- |
 | 36072452872 | `c1f043487737` | pull_request | Huawei MIT source headers | completed:success |
-| 36072452871 | `c1f043487737` | pull_request | Fault assurance | queued:- |
+| 36072452871 | `c1f043487737` | pull_request | Fault assurance | in_progress:- |
 | 36072452863 | `c1f043487737` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 36072452850 | `c1f043487737` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 36072452850 | `c1f043487737` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36072452833 | `c1f043487737` | pull_request | Repository quality | in_progress:- |
 | 36068309725 | `ed9076031b82` | push | Fault assurance | completed:success |
 | 36068309654 | `ed9076031b82` | push | Formal assurance | completed:success |
