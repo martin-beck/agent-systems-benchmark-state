@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated ControlBackend runtime receipt source for AR-1329 production dispatch.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Authenticated runtime receipt source",
-  "updated_at": "2026-09-24T01:50:40+00:00",
+  "updated_at": "2026-09-24T01:50:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1373-authenticated-receipt-source"
 }
 ---
@@ -38,3 +38,6 @@ provider support from setup metadata alone.
 - 2026-09-24T01:50:16+00:00: Claimed by codex-asb-runtime-receipt-source-luna56.
 
 - 2026-09-24T01:50:40+00:00: Heartbeat by codex-asb-runtime-receipt-source-luna56.
+
+- 2026-09-24T01:50:44+00:00: Recorded command exit 0; command argv SHA-256
+  321c534968b9c456a64caf5e6d09b63780c507f97548057d2bfe31edcfd73ff4.
