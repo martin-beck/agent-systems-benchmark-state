@@ -21,7 +21,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36073539302 | `4736db727b13` | push | Formal assurance | in_progress:- |
 | 36073539299 | `4736db727b13` | push | Repository quality | in_progress:- |
 | 36073539282 | `4736db727b13` | push | Rust verification | in_progress:- |
-| 36073539280 | `4736db727b13` | push | Fault assurance | in_progress:- |
+| 36073539280 | `4736db727b13` | push | Fault assurance | completed:success |
 | 36072452990 | `c1f043487737` | pull_request | Formal assurance | completed:success |
 | 36072452900 | `c1f043487737` | pull_request | Hosted portability and native qualification | completed:success |
 | 36072452889 | `c1f043487737` | pull_request | Rust verification | completed:success |
