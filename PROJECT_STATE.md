@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #119 | `feature/native-capacity-controller@4630f90af739` | `main` | CLEAN | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(capacity): add bounded native lifecycle controller |
+| #119 | `feature/native-capacity-controller@4630f90af739` | `main` | CLEAN | COMPLETED:CANCELLED, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:CANCELLED, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(capacity): add bounded native lifecycle controller |
 
 ## Recent workflows
 
