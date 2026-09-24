@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize authenticated runtime receipts into opaque live dispatch attempts.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Runtime-owned live adapter",
-  "updated_at": "2026-09-24T02:36:57+00:00",
+  "updated_at": "2026-09-24T02:37:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1376-runtime-live-adapter"
 }
 ---
@@ -35,3 +35,6 @@ this task must not invent an alternate authority model.
   AR-1374/1375 are audit evidence only.
 
 - 2026-09-24T02:36:57+00:00: Claimed by codex-asb-runtime-receipt-source-luna56.
+
+- 2026-09-24T02:37:43+00:00: Recorded command exit 0; command argv SHA-256
+  521b9fb2caf92a99b5616119c897c74d7bc6c61a3b5645975b5f6b2998e3fc32.
