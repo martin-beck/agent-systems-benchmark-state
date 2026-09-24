@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair protected-main merge-tree requalification after a literature PR merges onto an advanced main.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Protected-main literature merge race repair",
-  "updated_at": "2026-09-24T19:53:45+00:00",
+  "updated_at": "2026-09-24T19:54:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1421"
 }
 ---
@@ -121,3 +121,6 @@ the merge released before fresh exact-main evidence succeeds.
   combined command also failed before tests due nonexistent module
   tools.quality.test_repository_policy (ModuleNotFoundError); merge tests in that combined command
   ran 12 tests but overall exit 1. This is recorded as command/setup error, not product failure.
+
+- 2026-09-24T19:54:01+00:00: Recorded command exit 0; command argv SHA-256
+  db1892a26ddeb0bf09f8f135a5a66192b83eddf4ad93b00787dafa3e67ca7980.
