@@ -7,13 +7,8 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1421](tasks/AR-1421-protected-main-literature-merge-race.md): Protected-main literature merge race repair | Repair protected-main merge-tree requalification after a literature PR merges onto an advanced main. | Promote after AR-1417's product merge is preserved and the failed run 36048870322 is recorded; repair the protected-main merge admission/requalification path without weakening the tree invariant. | ar1421-protected-main-race-luna56 |
 | P1 | [AR-1417](tasks/AR-1417-interactive-stateful-literature-workloads.md): Interactive stateful literature workloads | Add selectable interactive and stateful literature workloads beside built-in software-engineering fixtures. | Keep open: protected-main Repository quality run 36048870322 failed because merge tree 5ddac12 differs from reviewed topic tree 666043f (base a2a6414 vs 0dcc717); await coordinator exact-main requalification or successor repair, never weaken gate. | ar1417-literature-luna56 |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1421](tasks/AR-1421-protected-main-literature-merge-race.md): Protected-main literature merge race repair | Repair protected-main merge-tree requalification after a literature PR merges onto an advanced main. | Promote after AR-1417's product merge is preserved and the failed run 36048870322 is recorded; repair the protected-main merge admission/requalification path without weakening the tree invariant. | - |
 
 ## Blocked
 

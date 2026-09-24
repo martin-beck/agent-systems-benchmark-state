@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T21:37:03+00:00",
   "depends_on": [
     "AR-1416",
     "AR-1398"
@@ -12,15 +12,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "",
+  "owner": "ar1421-protected-main-race-luna56",
   "plan": "../plans/AR-1421.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair protected-main merge-tree requalification after a literature PR merges onto an advanced main.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Protected-main literature merge race repair",
-  "updated_at": "2026-09-24T19:36:35+00:00",
+  "updated_at": "2026-09-24T19:37:03+00:00",
   "worktree_key": ""
 }
 ---
@@ -31,3 +31,5 @@ the merge released before fresh exact-main evidence succeeds.
 
 - 2026-09-24T19:36:35+00:00: Incident evidence recorded in AR-1417; completed AR-1416 and AR-1398
   permit this independent repair while AR-1417 remains open.
+
+- 2026-09-24T19:37:03+00:00: Claimed by ar1421-protected-main-race-luna56.
