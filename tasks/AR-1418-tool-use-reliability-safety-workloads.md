@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add selectable tool-use reliability and safety workloads from the literature with separate metrics.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Tool-use reliability and safety workloads",
-  "updated_at": "2026-09-24T19:16:33+00:00",
+  "updated_at": "2026-09-24T19:16:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1418"
 }
 ---
@@ -51,3 +51,6 @@ dimensions; no aggregate score may hide unsafe or failed tool calls.
 
 - 2026-09-24T19:16:33+00:00: Recorded command exit 0; command argv SHA-256
   90cb9e589361443eede7264fae5005d37983d2d7fef92af252159c9d98649c01.
+
+- 2026-09-24T19:16:48+00:00: Recorded command exit 0; command argv SHA-256
+  f3c1de5119dec5e4128857bf0e652e8f2e31711e7e2fe1cc4096dc568def87df.
