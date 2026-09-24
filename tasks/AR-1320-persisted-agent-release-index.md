@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist and verify the ASB agent release index used by the setup wizard.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Persisted authenticated agent release index",
-  "updated_at": "2026-09-24T20:11:33+00:00",
+  "updated_at": "2026-09-24T20:12:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1320-persisted-agent-release-index"
 }
 ---
@@ -97,3 +97,6 @@ before any agent can become selectable.
   run attempt exited 1 because cargo fmt was invoked from the state checkout without a Cargo.toml;
   corrective action: reran with --manifest-path /tmp/asb-ar1320/Cargo.toml. Concurrent coordinator
   lock timeouts were observed and retried; no product mutation resulted.
+
+- 2026-09-24T20:12:15+00:00: Recorded command exit 0; command argv SHA-256
+  a81cf8a43079c59c32cb5d8ee4c8e4b598b2c2e72587ffd3a6a5a932f92ebd85.
