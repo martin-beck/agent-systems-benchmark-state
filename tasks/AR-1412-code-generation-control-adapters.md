@@ -1,14 +1,14 @@
 ---
 {
   "branch": "codex/ar-1412-code-generation-controls",
-  "checkpoint_commit": "d7d035a6c09d248cc747dea4d7fb4a2dd6ab9ef2",
+  "checkpoint_commit": "0d94a2e87116a587de18ebe399ec8c4e2aaa763b",
   "claim_expires": "2026-09-24T16:54:22+00:00",
   "depends_on": [
     "AR-1408",
     "AR-1401"
   ],
   "id": "AR-1412",
-  "next_action": "Wait for fresh exact-head PR #298 checks on d7d035a; independently review the complete diff and merge only after every required check is green.",
+  "next_action": "Wait for fresh exact-head PR #298 checks on 0d94a2e rebased onto current main ea27dfb; independently review exact diff and merge only after all checks are green.",
   "observed_branch": "codex/ar-1412-code-generation-controls",
   "observed_dirty": 0,
   "observed_head": "0d94a2e87116a587de18ebe399ec8c4e2aaa763b",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recovered an abandoned claim with malformed local-time expiry; branch/worktree are now coordinator-bound before the next claim.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Code-generation control workload adapters",
-  "updated_at": "2026-09-24T14:54:22+00:00",
+  "updated_at": "2026-09-24T14:54:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1412"
 }
 ---
@@ -125,3 +125,9 @@ bounded local fixtures or LiteLLM-compatible mocks only.
   b7c438686581cf292b6cd41497ceabb3af42dfed57e04dfd6cc89efed8e2d15b.
 
 - 2026-09-24T14:54:22+00:00: Heartbeat by ar1412_code_generation_luna56b.
+
+- 2026-09-24T14:54:37+00:00: Protected main advanced to ea27dfb via merged PR #297 while PR #298
+  checks were green on stale base fc74825c. To preserve exact-base integration policy, rebased the
+  unchanged AR-1412 diff onto ea27dfb: new signed+DCO head 0d94a2e (tree 0b59deab), force-with-lease
+  pushed to PR #298, and fresh exact-head checks are running. The first state-wrapper push attempt
+  hit LOCK_TIMEOUT after the product push; lease heartbeat succeeded on retry.

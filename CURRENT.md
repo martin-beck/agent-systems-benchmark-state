@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1412](tasks/AR-1412-code-generation-control-adapters.md): Code-generation control workload adapters | Recovered an abandoned claim with malformed local-time expiry; branch/worktree are now coordinator-bound before the next claim. | Wait for fresh exact-head PR #298 checks on d7d035a; independently review the complete diff and merge only after every required check is green. | ar1412_code_generation_luna56b |
+| P1 | [AR-1412](tasks/AR-1412-code-generation-control-adapters.md): Code-generation control workload adapters | Recovered an abandoned claim with malformed local-time expiry; branch/worktree are now coordinator-bound before the next claim. | Wait for fresh exact-head PR #298 checks on 0d94a2e rebased onto current main ea27dfb; independently review exact diff and merge only after all checks are green. | ar1412_code_generation_luna56b |
 | P1 | [AR-1413](tasks/AR-1413-long-horizon-performance-adapters.md): Long-horizon and performance literature workload adapters | Add truthful long-horizon, refreshed, performance, and reproducibility workload adapters. | Claim after binding metadata; implement bounded adapters and truthful selectors for long-horizon and performance families. | ar1413_long_horizon_performance_luna56 |
 
 ## Open
