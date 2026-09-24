@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar-1417-interactive-stateful-literature",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T23:30:28+00:00",
   "depends_on": [
     "AR-1416",
     "AR-1408"
@@ -12,15 +12,15 @@
   "observed_branch": "codex/ar-1417-interactive-stateful-literature",
   "observed_dirty": 0,
   "observed_head": "666043f2c7d393c92d740cbc3e50490c2ef75926",
-  "owner": "",
+  "owner": "ar1417-recovery-luna56",
   "plan": "../plans/AR-1417.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Add selectable interactive and stateful literature workloads beside built-in software-engineering fixtures.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Interactive stateful literature workloads",
-  "updated_at": "2026-09-24T21:30:08+00:00",
+  "updated_at": "2026-09-24T21:30:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1417"
 }
 ---
@@ -104,3 +104,5 @@ identified.
 - 2026-09-24T21:30:08+00:00: Recovered expired claim formerly owned by ar1417-literature-luna56.
   Lease expired at 2026-09-24T21:29:48Z; no owner process; clean AR-1417 worktree at 666043f;
   recovering for exact-main post-merge verification.
+
+- 2026-09-24T21:30:28+00:00: Claimed by ar1417-recovery-luna56.
