@@ -1,14 +1,14 @@
 ---
 {
   "branch": "codex/ar-1396-literature-selection",
-  "checkpoint_commit": "a0024df808f67ab4e1d004adfa39edc9e25de89d",
+  "checkpoint_commit": "e1e532ea1d4e2eceff6fa8d55c8df4ec2e8400ea",
   "claim_expires": "2026-09-24T11:49:48+00:00",
   "depends_on": [
     "AR-1395",
     "AR-1399"
   ],
   "id": "AR-1396",
-  "next_action": "PR #288 exact head a0024df; await all required checks and independent review before guarded merge.",
+  "next_action": "PR #288 exact head e1e532ea; all required exact-head checks pending after signed-main synchronization.",
   "observed_branch": "codex/ar-1396-literature-selection",
   "observed_dirty": 0,
   "observed_head": "e1e532ea1d4e2eceff6fa8d55c8df4ec2e8400ea",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make qualified literature workload families selectable beside built-in ASB software-engineering fixtures.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Literature workload selection",
-  "updated_at": "2026-09-24T10:30:32+00:00",
+  "updated_at": "2026-09-24T10:31:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1396"
 }
 ---
@@ -92,3 +92,7 @@ platform gates.
 
 - 2026-09-24T10:30:32+00:00: Recorded command exit 8; command argv SHA-256
   8b33846ffb8482b3d5f465aa0701cb9a4e988a887a1d8499ea7c53a946ef5755.
+
+- 2026-09-24T10:31:03+00:00: Rebased PR #288 onto signed recovery main b63394 and force-with-lease
+  pushed signed+DCO head e1e532ea1d4e2eceff6fa8d55c8df4ec2e8400ea. Fresh exact-head checks started;
+  AWQ shadow and SPDX/header checks passed, remaining checks pending.
