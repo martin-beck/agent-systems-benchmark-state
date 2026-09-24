@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify and merge remaining immutable GitHub action pin updates without weakening policy.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Action pin policy migration",
-  "updated_at": "2026-09-24T15:40:33+00:00",
+  "updated_at": "2026-09-24T15:41:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1406"
 }
 ---
@@ -64,3 +64,9 @@ No floating action reference or unverifiable release identity is acceptable.
 
 - 2026-09-24T15:40:33+00:00: Recorded command exit 0; command argv SHA-256
   dfcf69101dbce6928cdfdbc7173c970286228e2fc90aef70e23b046e054dfd72.
+
+- 2026-09-24T15:41:26+00:00: Startup wrapper command exited 2 because the first handoffctl run
+  invoked git worktree add from the state checkout, producing a temporary state worktree instead of
+  the bound product worktree; removed that temporary state worktree via handoffctl run. Rerun with
+  explicit git -C on the canonical product checkout exited 0 and created
+  agent-systems-benchmark-ar-1406 at e4d8e7a. Subsequent PR inspection is read-only.
