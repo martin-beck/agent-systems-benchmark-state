@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1435-local-mock-cli-wiring",
-  "checkpoint_commit": "2b47c571afc3c22cd72ca2795807d1bd53db5418",
+  "checkpoint_commit": "23a7bdbd9a8eb61db68c11360472603158d02be4",
   "claim_expires": "2026-09-25T01:54:20+00:00",
   "depends_on": [
     "AR-1434"
   ],
   "id": "AR-1435",
-  "next_action": "Run full locked workspace test with pipefail and bounded output, then workspace clippy/docs/fmt, independent review, and PR publication.",
+  "next_action": "Rerun full locked workspace test with pipefail after provenance refresh, then workspace clippy/docs/fmt, independent review, and PR publication.",
   "observed_branch": "feature/ar-1435-local-mock-cli-wiring",
   "observed_dirty": 0,
   "observed_head": "23a7bdbd9a8eb61db68c11360472603158d02be4",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire deterministic local mock attempts into asb run and sweep configuration qualification.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Local mock CLI wiring",
-  "updated_at": "2026-09-24T23:58:21+00:00",
+  "updated_at": "2026-09-24T23:58:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1435-local-mock-cli-wiring"
 }
 ---
@@ -91,3 +91,10 @@ it must not contact OpenRouter or any external provider, mint
 
 - 2026-09-24T23:58:10+00:00: Recorded command exit 0; command argv SHA-256
   e391be5c63406ebb3a4f993a0792f36a1a5019ae203b17fb0a2c12e4d769ad4f.
+
+- 2026-09-24T23:58:34+00:00: Full workspace test reached workflow_transcript provenance gate and
+  failed only because docs/examples/asb-cli-workflow-v1.provenance.json retained the pre-change CLI
+  digest af1fb879... instead of actual
+  0af35b743772a529dc0bfebd976cd4725683a63a038323e6aac7b32faaa316db. Refreshed the generated
+  provenance digest in signed product commit 23a7bdbd9a8eb61db68c11360472603158d02be4. No runtime
+  test failure reproduced; rerun required.
