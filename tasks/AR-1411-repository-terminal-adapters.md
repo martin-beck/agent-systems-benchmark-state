@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add selectable, provenance-preserving repository-repair and terminal benchmark adapters.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Repository and terminal literature workload adapters",
-  "updated_at": "2026-09-24T14:28:35+00:00",
+  "updated_at": "2026-09-24T14:28:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1411"
 }
 ---
@@ -126,3 +126,6 @@ bounded local fixtures or LiteLLM-compatible mocks only.
   pre-existing ignored native OpenHands test), cargo clippy --workspace --all-targets -D warnings
   passed, focused asb-workloads tests passed, cargo fmt --check and diff check passed.
   Implementation remains clean at signed+DCO 67129e7.
+
+- 2026-09-24T14:28:47+00:00: Recorded command exit 0; command argv SHA-256
+  7589153041cc5408d2b7e2212a82b33836fcc42339bb51f4a49e25a7f1594ee3.
