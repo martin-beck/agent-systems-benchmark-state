@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the formal online-build fixture race that caused ETXTBSY after AR-1388 merge.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Formal fixture executable race repair",
-  "updated_at": "2026-09-24T07:08:52+00:00",
+  "updated_at": "2026-09-24T07:10:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1389-formal-fixture-exec-race"
 }
 ---
@@ -32,3 +32,6 @@ privacy, offline, boundedness, and local-mock boundaries.
   reviewed; successor repair may proceed before release
 
 - 2026-09-24T07:08:52+00:00: Claimed by codex-asb-ar1329-repair-luna56.
+
+- 2026-09-24T07:10:18+00:00: Recorded command exit 0; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
