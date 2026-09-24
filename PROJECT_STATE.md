@@ -22,22 +22,22 @@ Generated from local Git and GitHub. Do not edit.
 | #235 | `dependabot/github_actions/taiki-e/install-action-2.87.12@de0353cce59e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.6 to 2.87.12 |
 | #236 | `dependabot/cargo/toml-1.1.6spec-1.1.0@9dc09c5208ab` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump toml from 0.8.23 to 1.1.6+spec-1.1.0 |
 | #237 | `dependabot/cargo/thiserror-2.0.20@83dba9288d9c` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump thiserror from 2.0.16 to 2.0.20 |
-| #287 | `repair/ar-1398-signed-protected-main-recovery@f5680de433bb` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(integration): restore signed protected-main ancestry |
-| #288 | `codex/ar-1396-literature-selection@a0024df808f6` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(workloads): expose literature selection catalog |
+| #287 | `repair/ar-1398-signed-protected-main-recovery@f5680de433bb` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(integration): restore signed protected-main ancestry |
+| #288 | `codex/ar-1396-literature-selection@a0024df808f6` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(workloads): expose literature selection catalog |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35986361216 | `a0024df808f6` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 35986361216 | `a0024df808f6` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 35986361126 | `a0024df808f6` | pull_request | Huawei MIT source headers | completed:success |
-| 35986361086 | `a0024df808f6` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 35986361086 | `a0024df808f6` | pull_request | Hosted portability and native qualification | completed:failure |
 | 35986361049 | `a0024df808f6` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 35986361016 | `a0024df808f6` | pull_request | Formal assurance | in_progress:- |
 | 35986361014 | `a0024df808f6` | pull_request | Fault assurance | in_progress:- |
-| 35986361003 | `a0024df808f6` | pull_request | Repository quality | in_progress:- |
+| 35986361003 | `a0024df808f6` | pull_request | Repository quality | completed:failure |
 | 35986361001 | `a0024df808f6` | pull_request | Rust verification | in_progress:- |
 | 35984949142 | `f5680de433bb` | pull_request | Huawei MIT source headers | completed:success |
 | 35984949137 | `f5680de433bb` | pull_request | Hosted portability and native qualification | completed:success |
 | 35984949129 | `f5680de433bb` | pull_request | Emulated aarch64 portability | completed:success |
-| 35984949118 | `f5680de433bb` | pull_request | Repository quality | in_progress:- |
+| 35984949118 | `f5680de433bb` | pull_request | Repository quality | completed:success |
