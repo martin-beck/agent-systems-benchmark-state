@@ -11,7 +11,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1376](../tasks/AR-1376-runtime-live-adapter.md): Runtime-owned live adapter | codex-asb-runtime-receipt-source-luna56 | Materialize authenticated runtime receipts into opaque live dispatch attempts. | Promote and claim this dependency-valid adapter successor, refresh an isolated worktree, and implement the runtime-owned control-to-live-attempt bridge. |
+| P0 | [AR-1376](../tasks/AR-1376-runtime-live-adapter.md): Runtime-owned live adapter | codex-asb-runtime-receipt-source-luna56 | Materialize authenticated runtime receipts into opaque live dispatch attempts. | Audit blocker: ControlClient can issue RuntimeReceipt, but no runtime-owned authenticated chain store/source is available to validate the receipt. Do not synthesize a chain or accept caller authority. Create a successor for chain enrollment materialization before adapter implementation. |
 
 ### Open (4)
 

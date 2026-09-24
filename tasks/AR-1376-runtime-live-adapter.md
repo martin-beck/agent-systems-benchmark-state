@@ -10,7 +10,7 @@
     "AR-1362"
   ],
   "id": "AR-1376",
-  "next_action": "Promote and claim this dependency-valid adapter successor, refresh an isolated worktree, and implement the runtime-owned control-to-live-attempt bridge.",
+  "next_action": "Audit blocker: ControlClient can issue RuntimeReceipt, but no runtime-owned authenticated chain store/source is available to validate the receipt. Do not synthesize a chain or accept caller authority. Create a successor for chain enrollment materialization before adapter implementation.",
   "observed_branch": "feature/ar-1376-runtime-live-adapter",
   "observed_dirty": 0,
   "observed_head": "265b936d995148f8e40e36664cf68bf12affc20d",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize authenticated runtime receipts into opaque live dispatch attempts.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Runtime-owned live adapter",
-  "updated_at": "2026-09-24T02:37:57+00:00",
+  "updated_at": "2026-09-24T02:38:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1376-runtime-live-adapter"
 }
 ---
@@ -40,3 +40,11 @@ this task must not invent an alternate authority model.
   521b9fb2caf92a99b5616119c897c74d7bc6c61a3b5645975b5f6b2998e3fc32.
 
 - 2026-09-24T02:37:57+00:00: Heartbeat by codex-asb-runtime-receipt-source-luna56.
+
+- 2026-09-24T02:38:12+00:00: Read-only audit found ControlClient::connect/call can transport
+  RuntimeReceipt, and LiveProviderRuntimeBridge::ingest_control_response requires an
+  IssuedCertificateChainV1. That chain has private fields and no persisted runtime source in the
+  current public APIs; RuntimeAuthorityEnrollmentV1 contains only digests and cannot reconstruct it.
+  Wiring CLI directly would either accept caller-supplied authority or synthesize a chain, both
+  forbidden. AR-1374/1375 recorded the same missing source. No OpenRouter three-agent runtime
+  evidence exists.
