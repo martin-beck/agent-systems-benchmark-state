@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add selectable, provenance-preserving repository-repair and terminal benchmark adapters.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Repository and terminal literature workload adapters",
-  "updated_at": "2026-09-24T14:23:22+00:00",
+  "updated_at": "2026-09-24T14:23:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1411"
 }
 ---
@@ -86,3 +86,6 @@ bounded local fixtures or LiteLLM-compatible mocks only.
 
 - 2026-09-24T14:23:10+00:00: Recorded command exit 1; command argv SHA-256
   9c99500daefbea0346170c1cc01f8370ed4e9e4a587c674ee45cfd5871a04cd9.
+
+- 2026-09-24T14:23:34+00:00: Recorded command exit 0; command argv SHA-256
+  4818e6a7eb95ed35268503a46037c31ca38fb027c7bc4f261b815b8699d12f5b.
