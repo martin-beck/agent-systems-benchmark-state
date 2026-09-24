@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize the runtime-owned live bootstrap handle from authenticated authority.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Runtime-owned bootstrap materialization",
-  "updated_at": "2026-09-24T05:15:55+00:00",
+  "updated_at": "2026-09-24T05:16:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1384-runtime-bootstrap-materialization"
 }
 ---
@@ -74,3 +74,6 @@ it must not accept caller authority or synthesize enrolled values.
 
 - 2026-09-24T05:15:55+00:00: Recorded command exit 0; command argv SHA-256
   67739c573b579619ef3e71fb893a396c166af5a2a061ba9f37d5e424ed8b55d4.
+
+- 2026-09-24T05:16:08+00:00: Recorded command exit 0; command argv SHA-256
+  ccc3cc69d8243a5b79db83799d9af9e59487878007644c9ddc3e6e50b1ca8dde.
