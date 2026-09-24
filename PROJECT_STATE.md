@@ -17,7 +17,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 36073539373 | `4736db727b13` | push | Emulated aarch64 portability | in_progress:- |
 | 36073539342 | `4736db727b13` | push | Huawei MIT source headers | completed:success |
-| 36073539323 | `4736db727b13` | push | Hosted portability and native qualification | in_progress:- |
+| 36073539323 | `4736db727b13` | push | Hosted portability and native qualification | completed:success |
 | 36073539302 | `4736db727b13` | push | Formal assurance | in_progress:- |
 | 36073539299 | `4736db727b13` | push | Repository quality | in_progress:- |
 | 36073539282 | `4736db727b13` | push | Rust verification | in_progress:- |
