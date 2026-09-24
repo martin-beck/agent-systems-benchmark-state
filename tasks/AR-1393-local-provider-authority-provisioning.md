@@ -24,9 +24,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a runtime-owned loopback mock authority so development never requires external provider access.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Local provider authority provisioning",
-  "updated_at": "2026-09-24T07:57:53+00:00",
+  "updated_at": "2026-09-24T07:58:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1393-local-provider-authority-provisioning"
 }
 ---
@@ -75,3 +75,6 @@ or production egress gates.
   534f8613e1c316db8f0f46dd989e44e14a8ca74304a94791b4e4a1c59b2fbb1d.
 
 - 2026-09-24T07:57:53+00:00: Heartbeat by codex-asb-ar1329-repair-luna56.
+
+- 2026-09-24T07:58:12+00:00: Recorded command exit 0; command argv SHA-256
+  67739c573b579619ef3e71fb893a396c166af5a2a061ba9f37d5e424ed8b55d4.
