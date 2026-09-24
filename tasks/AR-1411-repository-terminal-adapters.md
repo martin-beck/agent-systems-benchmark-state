@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add selectable, provenance-preserving repository-repair and terminal benchmark adapters.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Repository and terminal literature workload adapters",
-  "updated_at": "2026-09-24T14:25:08+00:00",
+  "updated_at": "2026-09-24T14:25:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1411"
 }
 ---
@@ -103,3 +103,6 @@ bounded local fixtures or LiteLLM-compatible mocks only.
   2de217ef059d0035d2a7ff84ce1464985ac2c73558cc9884d16a2198c614101a.
 
 - 2026-09-24T14:25:08+00:00: Heartbeat by ar1411_repository_terminal_luna56.
+
+- 2026-09-24T14:25:16+00:00: Recorded command exit 0; command argv SHA-256
+  47f5a79088cca04a1f19bbf5745b24718538167bbc9024e19a634ae756b6be1e.
