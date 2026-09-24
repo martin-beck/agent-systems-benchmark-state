@@ -23,20 +23,21 @@ Generated from local Git and GitHub. Do not edit.
 | #235 | `dependabot/github_actions/taiki-e/install-action-2.87.12@de0353cce59e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.6 to 2.87.12 |
 | #236 | `dependabot/cargo/toml-1.1.6spec-1.1.0@9dc09c5208ab` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump toml from 0.8.23 to 1.1.6+spec-1.1.0 |
 | #237 | `dependabot/cargo/thiserror-2.0.20@83dba9288d9c` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump thiserror from 2.0.16 to 2.0.20 |
+| #277 | `feature/ar-1381-live-cli-scheduler-wiring@445a4cffa56b` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(cli): wire runtime live scheduler |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 35954596693 | `445a4cffa56b` | pull_request | Huawei MIT source headers | in_progress:- |
+| 35954596681 | `445a4cffa56b` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 35954596639 | `445a4cffa56b` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 35954596630 | `445a4cffa56b` | pull_request | Formal assurance | in_progress:- |
+| 35954596625 | `445a4cffa56b` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 35954596606 | `445a4cffa56b` | pull_request | Fault assurance | in_progress:- |
+| 35954596597 | `445a4cffa56b` | pull_request | Repository quality | in_progress:- |
+| 35954596549 | `445a4cffa56b` | pull_request | Rust verification | in_progress:- |
 | 35953331449 | `333cc3ac4d55` | push | Emulated aarch64 portability | completed:success |
 | 35953331372 | `333cc3ac4d55` | push | Rust verification | completed:success |
 | 35953331359 | `333cc3ac4d55` | push | Fault assurance | completed:success |
 | 35953331356 | `333cc3ac4d55` | push | Hosted portability and native qualification | completed:success |
-| 35953331318 | `333cc3ac4d55` | push | Formal assurance | completed:success |
-| 35953331304 | `333cc3ac4d55` | push | Repository quality | completed:success |
-| 35953331303 | `333cc3ac4d55` | push | Huawei MIT source headers | completed:success |
-| 35952670347 | `ab4e60cb9639` | pull_request | Fault assurance | completed:success |
-| 35952670314 | `ab4e60cb9639` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 35952670306 | `ab4e60cb9639` | pull_request | Huawei MIT source headers | completed:success |
-| 35952670283 | `ab4e60cb9639` | pull_request | Formal assurance | completed:success |
-| 35952670269 | `ab4e60cb9639` | pull_request | Repository quality | completed:success |
