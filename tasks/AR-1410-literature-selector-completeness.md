@@ -1,7 +1,7 @@
 ---
 {
   "branch": "codex/ar-1410-literature-selector-parity",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "dc34be11cae443f8fbcd9f4bb7e5f2a8757770b9",
   "claim_expires": "2026-09-24T18:38:30+00:00",
   "depends_on": [
     "AR-1402",
@@ -12,7 +12,7 @@
     "AR-1413"
   ],
   "id": "AR-1410",
-  "next_action": "Rerun the package gate after transient control-state ownership failure, then signed commit and PR publication.",
+  "next_action": "Independently review PR #302 exact base/head, monitor required checks, then merge only after green and verify post-merge workflows.",
   "observed_branch": "codex/ar-1410-literature-selector-parity",
   "observed_dirty": 0,
   "observed_head": "dc34be11cae443f8fbcd9f4bb7e5f2a8757770b9",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Literature selector completeness and parity",
-  "updated_at": "2026-09-24T16:53:16+00:00",
+  "updated_at": "2026-09-24T16:53:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1410"
 }
 ---
@@ -152,3 +152,8 @@ does not turn external qualification or live-provider access into a prerequisite
 
 - 2026-09-24T16:53:16+00:00: Recorded command exit 0; command argv SHA-256
   70cf1c5da7e78d6aade4ccd7e463ff80a8e43c3ba82e85e5afce26e4add88eba.
+
+- 2026-09-24T16:53:40+00:00: Signed+DCO product commit dc34be11cae443f8fbcd9f4bb7e5f2a8757770b9 is
+  pushed on codex/ar-1410-literature-selector-parity; PR #302 opened. Worktree clean. Focused and
+  package gates passed; package gate transient control-state ownership failure was isolated and
+  exact rerun passed.
