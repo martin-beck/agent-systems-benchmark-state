@@ -1,14 +1,14 @@
 ---
 {
   "branch": "codex/ar-1408-literature-inventory",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "4269336191882e34a1ff7844097fccacddc605e4",
   "claim_expires": "2026-09-24T14:49:11+00:00",
   "depends_on": [
     "AR-1400",
     "AR-1399"
   ],
   "id": "AR-1408",
-  "next_action": "Promote after AR-1400 and AR-1399 are done; reconcile every benchmark named in docs with the catalog and record explicit framework/non-workload boundaries.",
+  "next_action": "Review PR #293 independently, wait exact-head required checks, merge only when green, then run post-merge verification and release AR-1408.",
   "observed_branch": "codex/ar-1408-literature-inventory",
   "observed_dirty": 0,
   "observed_head": "4269336191882e34a1ff7844097fccacddc605e4",
@@ -17,10 +17,10 @@
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Close literature-to-catalog gaps and make benchmark versus harness boundaries explicit.",
-  "task_revision": 19,
+  "summary": "Catalog audit implemented; PR #293 open for exact-head review.",
+  "task_revision": 20,
   "title": "Literature workload inventory closure",
-  "updated_at": "2026-09-24T12:49:11+00:00",
+  "updated_at": "2026-09-24T12:49:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1408"
 }
 ---
@@ -69,3 +69,11 @@ listed external evaluator, provider, native platform, or dataset is qualified.
   1e445d8cf3cc7bf2bedc0b7b118e9d45a5414b7659a50fe07ab47be5b4288037.
 
 - 2026-09-24T12:49:11+00:00: Heartbeat by ar1408_literature_inventory_luna56b.
+
+- 2026-09-24T12:49:21+00:00: Audited all external registry identities named by WORKLOADS.md and
+  RELATED_WORK.md. AgentBench, tau-bench, and AgentDojo remain explicit-download executable
+  candidates with planned evidence. Harbor, Inspect AI, and HAL are now methodology-only harness
+  boundaries with zero attempt budget, not-applicable evaluator, and catalog selection rejection.
+  AgentOps, HELM, and AI Agents That Matter remain methodology-only. Signed+DCO product commit
+  4269336 pushed; PR #293 opened. Focused registry tests (11 passed), validator, and cargo test -p
+  asb-workloads (33 tests including docs and public API) passed.

@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1402](tasks/AR-1402-literature-cli-dispatch-integration.md): Literature workload CLI dispatch integration | Integrate literature workload catalog and adapters through all ASB CLI execution and evidence paths. | Declared isolated worktree agent-systems-benchmark-ar-1402 at protected main 0667f29. Audit CLI execution seams, implement catalog/adapter dispatch with offline local mocks, run focused/full gates, then signed PR and exact-head review. | ar1402_literature_cli_luna56 |
-| P1 | [AR-1408](tasks/AR-1408-literature-inventory-closure.md): Literature workload inventory closure | Close literature-to-catalog gaps and make benchmark versus harness boundaries explicit. | Promote after AR-1400 and AR-1399 are done; reconcile every benchmark named in docs with the catalog and record explicit framework/non-workload boundaries. | ar1408_literature_inventory_luna56b |
+| P1 | [AR-1408](tasks/AR-1408-literature-inventory-closure.md): Literature workload inventory closure | Catalog audit implemented; PR #293 open for exact-head review. | Review PR #293 independently, wait exact-head required checks, merge only when green, then run post-merge verification and release AR-1408. | ar1408_literature_inventory_luna56b |
 
 ## Open
 
