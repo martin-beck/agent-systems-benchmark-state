@@ -11,7 +11,7 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #119 | `feature/native-capacity-controller@e2e3574ed2bb` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(capacity): add bounded native lifecycle controller |
-| #302 | `codex/ar-1410-literature-selector-parity@477eeb9fb6c2` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS: | feat(workloads): complete literature selector parity |
+| #302 | `codex/ar-1410-literature-selector-parity@477eeb9fb6c2` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(workloads): complete literature selector parity |
 
 ## Recent workflows
 
@@ -20,7 +20,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36030655799 | `477eeb9fb6c2` | pull_request | Formal assurance | in_progress:- |
 | 36030655739 | `477eeb9fb6c2` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36030655672 | `477eeb9fb6c2` | pull_request | Rust verification | in_progress:- |
-| 36030655646 | `477eeb9fb6c2` | pull_request | Fault assurance | pending:- |
+| 36030655646 | `477eeb9fb6c2` | pull_request | Fault assurance | in_progress:- |
 | 36030655642 | `477eeb9fb6c2` | pull_request | Huawei MIT source headers | completed:success |
 | 36030655589 | `477eeb9fb6c2` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 36030655585 | `477eeb9fb6c2` | pull_request | Repository quality | in_progress:- |
