@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate authenticated runtime live dispatch into production asb run and sweep.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Production live CLI dispatch integration",
-  "updated_at": "2026-09-24T06:33:19+00:00",
+  "updated_at": "2026-09-24T06:34:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1386-live-cli-dispatch-integration"
 }
 ---
@@ -47,3 +47,6 @@ boundaries.
 
 - 2026-09-24T06:33:08+00:00: Recorded command exit 0; command argv SHA-256
   b7c438686581cf292b6cd41497ceabb3af42dfed57e04dfd6cc89efed8e2d15b.
+
+- 2026-09-24T06:34:27+00:00: Recorded command exit 0; command argv SHA-256
+  eee0bfe7b8074d9284501372a84dfcfb185292346be3ff70334878a6c5c469df.
