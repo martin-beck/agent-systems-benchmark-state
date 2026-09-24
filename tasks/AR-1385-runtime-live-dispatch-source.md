@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize the authenticated runtime-owned live dispatch source for production asb run and sweep.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Authenticated runtime live dispatch source",
-  "updated_at": "2026-09-24T05:48:56+00:00",
+  "updated_at": "2026-09-24T05:50:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1385-runtime-live-dispatch-source"
 }
 ---
@@ -44,3 +44,6 @@ namespace identity, or launch authority.
 
 - 2026-09-24T05:48:56+00:00: Recorded command exit 0; command argv SHA-256
   d04aa803a9fcb854b247572f9b417fd1935a57ca978bb887d2e7c188e99db043.
+
+- 2026-09-24T05:50:17+00:00: Recorded command exit 1; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
