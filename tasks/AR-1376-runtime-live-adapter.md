@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1376-runtime-live-adapter",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-24T04:36:57+00:00",
+  "claim_expires": "2026-09-24T04:37:57+00:00",
   "depends_on": [
     "AR-1373",
     "AR-1366",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize authenticated runtime receipts into opaque live dispatch attempts.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Runtime-owned live adapter",
-  "updated_at": "2026-09-24T02:37:54+00:00",
+  "updated_at": "2026-09-24T02:37:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1376-runtime-live-adapter"
 }
 ---
@@ -38,3 +38,5 @@ this task must not invent an alternate authority model.
 
 - 2026-09-24T02:37:43+00:00: Recorded command exit 0; command argv SHA-256
   521b9fb2caf92a99b5616119c897c74d7bc6c61a3b5645975b5f6b2998e3fc32.
+
+- 2026-09-24T02:37:57+00:00: Heartbeat by codex-asb-runtime-receipt-source-luna56.
