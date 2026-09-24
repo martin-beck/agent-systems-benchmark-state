@@ -10,12 +10,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1377](../tasks/AR-1377-runtime-chain-store.md): Runtime-owned certificate-chain store | codex-asb-runtime-receipt-source-luna56 | Persist authenticated runtime certificate-chain material for live dispatch. | PR #274 force-updated to exact head 4163194 on current protected main 50acdcab after Repository quality base failure. Focused live_service rerun passes; monitor all required exact-head checks, repair failures, merge only green, then verify seven post-merge workflows. |
-
 ### Open (4)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -166,7 +160,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (253)
+### Done (254)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -286,6 +280,7 @@
 | P0 | [AR-1371](../tasks/AR-1371-runner-authority-injection.md): Runner authority injection | Unclaimed | Inject existing authenticated certificate authority and runtime enrollment material into RunnerBackend/Catalog without synthetic authority. | PR #271 merged as 3f0b67638647dc016f7d5abd3e246baf3ae4ec29 after all 12 exact-head checks passed. Seven post-merge workflows are running; monitor all to terminal success before releasing AR. |
 | P0 | [AR-1372](../tasks/AR-1372-topology-repair.md): Protected merge topology repair | Unclaimed | Repair protected-main merge topology after AR-1371 without changing product behavior. | PR #272 merged with protected non-squash topology as 265b936d995148f8e40e36664cf68bf12affc20d. Seven post-merge workflows for exact merge are running; monitor all to terminal success, then release AR-1372 and reconcile AR-1371. |
 | P0 | [AR-1373](../tasks/AR-1373-authenticated-receipt-source.md): Authenticated runtime receipt source | Unclaimed | Provide the authenticated ControlBackend runtime receipt source for AR-1329 production dispatch. | PR #273 force-updated to exact head c623a006 after preserving historical v1 through v1.7 schemas. Monitor all required checks from the new head; repair any failure through handoffctl, merge only after independent review and all checks green, then verify seven post-merge workflows. |
+| P0 | [AR-1377](../tasks/AR-1377-runtime-chain-store.md): Runtime-owned certificate-chain store | Unclaimed | Persist authenticated runtime certificate-chain material for live dispatch. | PR #274 force-updated to exact head 4163194 on current protected main 50acdcab after Repository quality base failure. Focused live_service rerun passes; monitor all required exact-head checks, repair failures, merge only green, then verify seven post-merge workflows. |
 | P1 | [AR-0002](../tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Unclaimed | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. |
 | P1 | [AR-0003](../tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Unclaimed | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. |
 | P1 | [AR-0004](../tasks/AR-0004-ar-status-document.md): Generate the visual AR status document | Unclaimed | Render every AR, status, and dependency as an accessible visual state document. | Await independent immutable-head review of state PR 3 at eedd311; repair findings before coordinator integration. |

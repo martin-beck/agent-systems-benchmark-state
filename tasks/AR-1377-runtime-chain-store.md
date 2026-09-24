@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1377-runtime-chain-store",
   "checkpoint_commit": "4163194850114ef127516240d0ccf16f772c3672",
-  "claim_expires": "2026-09-24T05:03:12+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1288",
     "AR-1364",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1377-runtime-chain-store",
   "observed_dirty": 0,
   "observed_head": "4163194850114ef127516240d0ccf16f772c3672",
-  "owner": "codex-asb-runtime-receipt-source-luna56",
+  "owner": "",
   "plan": "../plans/AR-1377-runtime-chain-store.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Persist authenticated runtime certificate-chain material for live dispatch.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Runtime-owned certificate-chain store",
-  "updated_at": "2026-09-24T03:03:12+00:00",
+  "updated_at": "2026-09-24T03:06:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1377-runtime-chain-store"
 }
 ---
@@ -122,3 +122,9 @@ authority boundary and must not accept caller-built chains or synthesize trust.
 - 2026-09-24T03:01:13+00:00: Heartbeat by codex-asb-runtime-receipt-source-luna56.
 
 - 2026-09-24T03:03:12+00:00: Heartbeat by codex-asb-runtime-receipt-source-luna56.
+
+- 2026-09-24T03:06:34+00:00: PR #274 merged as d4a3e14e86a75bcb0c4f004e8d997b2321bf0fb5 from exact
+  signed+DCO head 4163194850114ef127516240d0ccf16f772c3672. All seven post-merge workflows terminal
+  success: Rust, hosted portability, emulated aarch64, repository quality, Huawei headers, fault
+  assurance, and formal assurance. Local focused/full/contract gates were green; no OpenRouter
+  three-agent runtime evidence claimed.
