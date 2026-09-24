@@ -11,7 +11,7 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #119 | `feature/native-capacity-controller@e2e3574ed2bb` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(capacity): add bounded native lifecycle controller |
-| #303 | `codex/ar-1415-literature-selector-total-coverage@bc0cfaff9cc1` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(workloads): audit total literature selector coverage |
+| #303 | `codex/ar-1415-literature-selector-total-coverage@bc0cfaff9cc1` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(workloads): audit total literature selector coverage |
 
 ## Recent workflows
 
@@ -19,7 +19,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 36037273774 | `bc0cfaff9cc1` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36037273756 | `bc0cfaff9cc1` | pull_request | Huawei MIT source headers | completed:success |
-| 36037273733 | `bc0cfaff9cc1` | pull_request | Rust verification | in_progress:- |
+| 36037273733 | `bc0cfaff9cc1` | pull_request | Rust verification | completed:success |
 | 36037273720 | `bc0cfaff9cc1` | pull_request | Hosted portability and native qualification | completed:success |
 | 36037273554 | `bc0cfaff9cc1` | pull_request | Repository quality | completed:success |
 | 36037273542 | `bc0cfaff9cc1` | pull_request | Emulated aarch64 portability | completed:success |
