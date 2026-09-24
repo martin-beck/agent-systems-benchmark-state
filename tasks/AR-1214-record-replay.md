@@ -8,15 +8,18 @@
   ],
   "id": "AR-1214",
   "next_action": "Implement the syntax-checked record/replay tutorial with synthetic cassette fixtures and no-network CI.",
+  "observed_branch": "docs/ar-1214-record-replay",
+  "observed_dirty": 2,
+  "observed_head": "bd7d10d4a760a84fa42de2b1fa9e97e8ea85ba09",
   "owner": "ar1214_record_replay_luna56",
   "plan": "../plans/AR-1214.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach privacy-safe LLM response recording and strict offline replay.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "LLM response record/replay tutorial",
-  "updated_at": "2026-09-24T20:50:26+00:00",
+  "updated_at": "2026-09-24T20:50:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1214"
 }
 ---
