@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1397-protected-main-postmerge-concurrency",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-24T09:55:44+00:00",
+  "claim_expires": "2026-09-24T11:27:29+00:00",
   "depends_on": [
     "AR-1337"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair protected-main merge-tree admission and serialize exact post-merge evidence across concurrent main pushes.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Protected-main post-merge concurrency and tree repair",
-  "updated_at": "2026-09-24T09:25:44+00:00",
+  "updated_at": "2026-09-24T09:27:29+00:00",
   "worktree_key": ""
 }
 ---
@@ -43,3 +43,5 @@ it must retain the default signature-required and exact-tree gates.
   c58b0b0 and AR-1395 merge c130ff91 without altering either AR evidence.
 
 - 2026-09-24T09:25:44+00:00: Claimed by ar1397-protected-main-repair-luna56.
+
+- 2026-09-24T09:27:29+00:00: Heartbeat by ar1397-protected-main-repair-luna56.
