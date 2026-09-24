@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1386-live-cli-dispatch-integration",
   "checkpoint_commit": "25548846966e37646dded8d67ed8ee5123b8bc32",
-  "claim_expires": "2026-09-24T07:32:32+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1385",
     "AR-1384",
@@ -16,15 +16,15 @@
   "observed_branch": "feature/ar-1386-live-cli-dispatch-integration",
   "observed_dirty": 0,
   "observed_head": "25548846966e37646dded8d67ed8ee5123b8bc32",
-  "owner": "codex-asb-ar1329-repair-luna56",
+  "owner": "",
   "plan": "../plans/AR-1386-live-cli-dispatch-integration.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Integrate authenticated runtime live dispatch into production asb run and sweep.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Production live CLI dispatch integration",
-  "updated_at": "2026-09-24T06:34:27+00:00",
+  "updated_at": "2026-09-24T06:34:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1386-live-cli-dispatch-integration"
 }
 ---
@@ -50,3 +50,12 @@ boundaries.
 
 - 2026-09-24T06:34:27+00:00: Recorded command exit 0; command argv SHA-256
   eee0bfe7b8074d9284501372a84dfcfb185292346be3ff70334878a6c5c469df.
+
+- 2026-09-24T06:34:59+00:00: Post-AR-1385 production audit: normal asb run/sweep --live-provider
+  dispatch passes no runtime source (entry -> dispatch(..., None, None)); the safe source consumer
+  exists only as run_with_runtime_live_provider_source and requires an opaque runtime-issued
+  LiveProviderRuntimeDispatchSource. No authenticated ControlClient/authority bootstrap source is
+  available in the CLI process. Adding CLI/config endpoints, credentials, policy, roots, tools, or
+  synthetic local authority would violate AR-1386. Focused live-gate test passes; no safe product
+  diff made. Coordinator must create the next narrowly scoped runtime/control bootstrap-to-CLI
+  bridge repair.
