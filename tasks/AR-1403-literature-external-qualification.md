@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add optional evidence-gated qualification for real literature workload sources and evaluators.",
-  "task_revision": 71,
+  "task_revision": 72,
   "title": "Literature workload external qualification",
-  "updated_at": "2026-09-24T13:59:22+00:00",
+  "updated_at": "2026-09-24T13:59:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1403"
 }
 ---
@@ -215,3 +215,6 @@ development, mock execution, or candidate selection.
 
 - 2026-09-24T13:59:22+00:00: Recorded command exit 0; command argv SHA-256
   74d447cb3f7617d802b8e10e6e0f1320a40637cd5fcf33d6d117778ff9fbe995.
+
+- 2026-09-24T13:59:45+00:00: Recorded command exit 0; command argv SHA-256
+  b0db7a7b2cef7171f476148d59075555f6d8c47c2d2a91a042a21d4d909846a7.
