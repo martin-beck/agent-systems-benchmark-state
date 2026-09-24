@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Inject existing authenticated certificate authority and runtime enrollment material into RunnerBackend/Catalog without synthetic authority.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Runner authority injection",
-  "updated_at": "2026-09-24T01:04:31+00:00",
+  "updated_at": "2026-09-24T01:05:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1371-runner-authority-injection"
 }
 ---
@@ -74,3 +74,6 @@ trust or launch authority from CLI/config input.
   CertificateAuthorityV1 recovery constructor; added a negative provider-mismatch/privacy test.
   Initial dead-code lint failure was repaired with a documented private seam annotation; focused
   gates now pass.
+
+- 2026-09-24T01:05:17+00:00: Recorded command exit 0; command argv SHA-256
+  12938f82fbaa9857db28f5434d0af3e082e02e4471a57c1807c2e82d77a69772.
