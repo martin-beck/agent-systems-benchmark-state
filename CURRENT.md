@@ -160,6 +160,8 @@ Never edit this file directly.
 | P2 | [AR-1016](tasks/AR-1016-measurement-integration-audit.md): Integrate and audit measurement selection and CSB evidence | Audit selectable and CSB-backed measurements across live and replay runs. | Add end-to-end live/replay comparison, release documentation, and independent audit after AR-1014 and AR-1015. | - |
 | P2 | [AR-1403](tasks/AR-1403-literature-external-qualification.md): Literature workload external qualification | Add optional evidence-gated qualification for real literature workload sources and evaluators. | Promote only after CLI integration is done; extend the explicit external artifact/evaluator qualification workflow without adding a default network path. | - |
 | P2 | [AR-1404](tasks/AR-1404-literature-documentation-matrix.md): Literature workload documentation and matrix contract | Generate and verify the literature workload documentation and evidence-state matrix. | Promote after the catalog and CLI contracts stabilize; generate documentation and add CI parity checks across docs, registry, catalog, and CLI inventory. | - |
+| P2 | [AR-1406](tasks/AR-1406-action-pin-policy-migration.md): Action pin policy migration | Qualify and merge remaining immutable GitHub action pin updates without weakening policy. | Promote after AR-1405; qualify immutable action commits for PRs #235/#234/#148 and merge only after policy and exact-head gates pass. | - |
+| P2 | [AR-1407](tasks/AR-1407-sha2-compatibility.md): sha2 compatibility repair | Qualify or repair the closed sha2 0.11 dependency update without weakening crypto or MSRV contracts. | Promote after AR-1405; reproduce the sha2 0.11 compile/MSRV failure and either repair it with digest-parity evidence or preserve the supersession. | - |
 
 ## Future
 
