@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prevent stale-base sequential merges from passing review but failing protected-main merge-tree policy.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Protected-main stale-base merge requalification repair",
-  "updated_at": "2026-09-24T22:25:38+00:00",
+  "updated_at": "2026-09-24T22:25:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1431"
 }
 ---
@@ -67,3 +67,6 @@ that incident and must not waive the policy.
   reports exact base/topic/merge and reviewed-vs-merge trees. Added deterministic merge-tree preview
   binding and bounded identity diagnostics; focused 31-test suite passed. Signed+DCO product commit
   bd69423.
+
+- 2026-09-24T22:25:47+00:00: Recorded command exit 0; command argv SHA-256
+  e47406bbe0009f768d573698a7ada7f7fcafa22c51e99ddb8503152b2f1a69b6.
