@@ -13,15 +13,18 @@
   ],
   "id": "AR-1216",
   "next_action": "Implement the repository-wide tutorial discovery and syntax-freshness CI gate after all tutorial contracts are defined.",
+  "observed_branch": "ci/ar-1216-tutorial-freshness",
+  "observed_dirty": 0,
+  "observed_head": "9d97e1684ecddc091b46edb0a1a65a63534175e6",
   "owner": "ar1216-tutorial-freshness-luna56",
   "plan": "../plans/AR-1216.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Continuously keep ASB tutorial commands and steps syntactically current.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "ASB tutorial freshness CI and documentation qualification",
-  "updated_at": "2026-09-24T21:58:13+00:00",
+  "updated_at": "2026-09-24T21:58:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1216"
 }
 ---
