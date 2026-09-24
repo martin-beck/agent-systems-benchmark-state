@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Literature selector completeness and parity",
-  "updated_at": "2026-09-24T16:53:40+00:00",
+  "updated_at": "2026-09-24T16:53:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1410"
 }
 ---
@@ -157,3 +157,6 @@ does not turn external qualification or live-provider access into a prerequisite
   pushed on codex/ar-1410-literature-selector-parity; PR #302 opened. Worktree clean. Focused and
   package gates passed; package gate transient control-state ownership failure was isolated and
   exact rerun passed.
+
+- 2026-09-24T16:53:55+00:00: Recorded command exit 0; command argv SHA-256
+  321c534968b9c456a64caf5e6d09b63780c507f97548057d2bfe31edcfd73ff4.
