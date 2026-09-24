@@ -1,13 +1,13 @@
 ---
 {
   "branch": "codex/ar-1402-literature-cli",
-  "checkpoint_commit": "0667f299ce04ed74c8f1fc2a349df3bcb57a4838",
+  "checkpoint_commit": "cec6345528764696f5a6058e8dae5dcea04684f9",
   "claim_expires": "2026-09-24T14:42:38+00:00",
   "depends_on": [
     "AR-1401"
   ],
   "id": "AR-1402",
-  "next_action": "Signed+DCO head cec6345 is pushed cleanly; prior PR creation exited because requested GitHub label quality does not exist and no PR was created. Recreate PR without nonexistent label against exact base 0667f299, then record exact base/head/tree and monitor checks.",
+  "next_action": "PR #294 exact base 0667f299/head cec6345/tree 084d869 is open; all required exact-head checks are running. Obtain independent full-diff review, wait for terminal green, then signed exact-base merge and seven post-merge verification.",
   "observed_branch": "codex/ar-1402-literature-cli",
   "observed_dirty": 0,
   "observed_head": "cec6345528764696f5a6058e8dae5dcea04684f9",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate literature workload catalog and adapters through all ASB CLI execution and evidence paths.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Literature workload CLI dispatch integration",
-  "updated_at": "2026-09-24T12:58:34+00:00",
+  "updated_at": "2026-09-24T12:59:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1402"
 }
 ---
@@ -133,3 +133,7 @@ external benchmark datasets or providers.
 
 - 2026-09-24T12:58:34+00:00: Recorded command exit 0; command argv SHA-256
   9f52a3455d6c0f0a99c52e15d28cb80a353d8f6d1998d04816ee1a831f1a534b.
+
+- 2026-09-24T12:59:02+00:00: PR #294 created successfully without nonexistent label. Exact
+  base/head/tree recorded: 0667f299 -> cec6345, tree 084d86929388208be579fa2974d94db8f145a113. Fresh
+  checks started; AWQ and headers green, remaining required checks in progress.
