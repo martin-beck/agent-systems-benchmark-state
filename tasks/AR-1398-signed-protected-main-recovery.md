@@ -7,7 +7,7 @@
     "AR-1337"
   ],
   "id": "AR-1398",
-  "next_action": "Await remaining exact-head PR #287 checks; obtain independent approval, protected merge, then watch all seven exact-main post-merge workflows.",
+  "next_action": "Rerun failed repository-quality workflow for PR #287; inspect reproducibility before any repair or merge.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Restore signed+DCO protected-main evidence after an unsigned GitHub-generated repair merge.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Signed protected-main recovery",
-  "updated_at": "2026-09-24T10:10:04+00:00",
+  "updated_at": "2026-09-24T10:10:27+00:00",
   "worktree_key": ""
 }
 ---
@@ -105,3 +105,9 @@ providers are never required for development evidence.
 
 - 2026-09-24T10:10:04+00:00: Recorded command exit 0; command argv SHA-256
   038a68313e304021cd516ea5d536b1cec3a618a993db00fefa71bb079fb1fd0a.
+
+- 2026-09-24T10:10:27+00:00: Exact failure in repository quality run 35984949118: asb-metrics
+  kernel::tests::bounded_tool_boundary_covers_success_denial_timeout_and_cleanup panicked at
+  crates/asb-metrics/src/kernel.rs:646. Expected ProbeResult value Some(12500000), got unavailable
+  ToolMismatch. 15 passed, 1 failed, 4 ignored; cargo llvm-cov exited 101. This is an existing
+  fixture/test path, not recovery-commit content. No merge permitted.
