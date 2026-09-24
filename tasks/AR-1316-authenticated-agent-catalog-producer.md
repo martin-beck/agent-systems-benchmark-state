@@ -11,15 +11,18 @@
   ],
   "id": "AR-1316",
   "next_action": "Coordinator must bind branch feature/ar-1316-authenticated-agent-catalog-producer to isolated worktree /srv/data/projects/agent-systems-benchmark-ar-1316 (metadata key agent-systems-benchmark-ar-1316) before product inspection.",
+  "observed_branch": "feature/ar-1316-authenticated-agent-catalog-producer",
+  "observed_dirty": 0,
+  "observed_head": "0b2719e6483b5d22cbf6e11320988a766cb64366",
   "owner": "ar1316-authenticated-agent-catalog-producer-luna56",
   "plan": "../plans/AR-1316.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish the verified ASB agent catalog required by the first-run setup wizard.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Authenticated agent catalog producer",
-  "updated_at": "2026-09-24T18:49:42+00:00",
+  "updated_at": "2026-09-24T18:51:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1316"
 }
 ---
