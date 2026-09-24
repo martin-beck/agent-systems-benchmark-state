@@ -25,7 +25,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36014461769 | `ea27dfb4e3a5` | push | Huawei MIT source headers | completed:success |
 | 36014461667 | `ea27dfb4e3a5` | push | Emulated aarch64 portability | in_progress:- |
 | 36014461657 | `ea27dfb4e3a5` | push | Repository quality | in_progress:- |
-| 36014461647 | `ea27dfb4e3a5` | push | Hosted portability and native qualification | in_progress:- |
+| 36014461647 | `ea27dfb4e3a5` | push | Hosted portability and native qualification | completed:success |
 | 36014461646 | `ea27dfb4e3a5` | push | Fault assurance | in_progress:- |
 | 36013850764 | `dbf788302717` | pull_request | Hosted portability and native qualification | completed:success |
 | 36013850679 | `dbf788302717` | pull_request | Repository quality | in_progress:- |
