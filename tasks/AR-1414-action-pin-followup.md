@@ -1,13 +1,13 @@
 ---
 {
-  "branch": "",
+  "branch": "codex/ar-1414-install-pin-policy",
   "checkpoint_commit": "",
   "claim_expires": "2026-09-24T18:08:09+00:00",
   "depends_on": [
     "AR-1406"
   ],
   "id": "AR-1414",
-  "next_action": "Coordinator must bind branch codex/ar-1414-install-pin-policy and worktree agent-systems-benchmark-ar-1414; then audit PR #235 v2.87.14 exact base/head and policy failure.",
+  "next_action": "Audit PR #235 v2.87.14 exact base/head and policy/Rust failures in the bound worktree; repair without weakening gates, then review and merge only after all checks pass.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
@@ -20,7 +20,7 @@
   "task_revision": 5,
   "title": "Follow-up install-action pin qualification",
   "updated_at": "2026-09-24T16:08:57+00:00",
-  "worktree_key": ""
+  "worktree_key": "agent-systems-benchmark-ar-1414"
 }
 ---
 
