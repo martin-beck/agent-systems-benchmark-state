@@ -31,7 +31,7 @@ Generated from local Git and GitHub. Do not edit.
 | 35977791559 | `c481a409a9cc` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 35977791538 | `c481a409a9cc` | pull_request | Formal assurance | in_progress:- |
 | 35977791521 | `c481a409a9cc` | pull_request | Rust verification | in_progress:- |
-| 35977791511 | `c481a409a9cc` | pull_request | Fault assurance | in_progress:- |
+| 35977791511 | `c481a409a9cc` | pull_request | Fault assurance | completed:success |
 | 35977791476 | `c481a409a9cc` | pull_request | Hosted portability and native qualification | in_progress:- |
 | 35977791467 | `c481a409a9cc` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 35977791461 | `c481a409a9cc` | pull_request | Huawei MIT source headers | completed:success |
