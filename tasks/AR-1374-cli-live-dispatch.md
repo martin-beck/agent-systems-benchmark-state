@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1374-cli-live-dispatch",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-24T04:34:44+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1373",
     "AR-1339",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1374-cli-live-dispatch",
   "observed_dirty": 0,
   "observed_head": "265b936d995148f8e40e36664cf68bf12affc20d",
-  "owner": "codex-asb-runtime-receipt-source-luna56",
+  "owner": "",
   "plan": "../plans/AR-1374-cli-live-dispatch.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Consume authenticated runtime receipts in production asb run and sweep dispatch.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Production live-provider dispatch",
-  "updated_at": "2026-09-24T02:34:58+00:00",
+  "updated_at": "2026-09-24T02:35:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1374-cli-live-dispatch"
 }
 ---
@@ -43,3 +43,9 @@ execution and teardown are verified.
 
 - 2026-09-24T02:34:47+00:00: Recorded command exit 0; command argv SHA-256
   383490be2620f3fb3c83962ffeae4899d14503b59efacb41425befcd94b7ac7c.
+
+- 2026-09-24T02:35:32+00:00: Audit complete: CLI run/sweep accepts only an opaque
+  LiveProviderAttemptFactory, and asb-runtime validates receipts only after an externally supplied
+  response/chain. No authenticated control transport/chain source connects AR-1373 RuntimeReceipt to
+  the CLI factory. No safe production implementation exists in this AR without synthesizing
+  authority; AR-1375 created for the missing runtime-owned adapter.

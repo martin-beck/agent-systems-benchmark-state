@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**398 ARs tracked** across 7 active status categories.
+**399 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 4 |
-| **Blocked** | Cannot proceed until its recorded blocker clears | 57 |
-| **Planned** | Defined work awaiting promotion or dependencies | 65 |
+| **Blocked** | Cannot proceed until its recorded blocker clears | 58 |
+| **Planned** | Defined work awaiting promotion or dependencies | 66 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 253 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -466,7 +466,8 @@ flowchart LR
         AR_1371["AR-1371 - Done"]:::status_done
         AR_1372["AR-1372 - Done"]:::status_done
         AR_1373["AR-1373 - Done"]:::status_done
-        AR_1374["AR-1374 - In progress"]:::status_in_progress
+        AR_1374["AR-1374 - Blocked"]:::status_blocked
+        AR_1375["AR-1375 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1489,6 +1490,8 @@ flowchart LR
     AR_1369 --> AR_1370
     AR_1371 --> AR_1373
     AR_1373 --> AR_1374
+    AR_1373 --> AR_1375
+    AR_1374 --> AR_1375
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -1899,4 +1902,3 @@ flowchart LR
 | [AR-1370](../tasks/AR-1370-runner-authority-materialization.md) | [AR-1288](../tasks/AR-1288-certificate-chain-authz.md), [AR-1369](../tasks/AR-1369-control-backend-authority-materialization.md) | None |
 | [AR-1371](../tasks/AR-1371-runner-authority-injection.md) | [AR-1288](../tasks/AR-1288-certificate-chain-authz.md) | [AR-1373](../tasks/AR-1373-authenticated-receipt-source.md) |
 | [AR-1372](../tasks/AR-1372-topology-repair.md) | None | None |
-| [AR-1373](../tasks/AR-1373-authenticated-receipt-source.md) | [AR-1365](../tasks/AR-1365-control-receipt-source-integration.md), [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md), [AR-1371](../tasks/AR-1371-runner-authority-injection.md) | [AR-1374](../tasks/AR-1374-cli-live-dispatch.md) |
