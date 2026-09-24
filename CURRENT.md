@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1435](tasks/AR-1435-local-mock-cli-wiring.md): Local mock CLI wiring | Wire deterministic local mock attempts into asb run and sweep configuration qualification. | Verify AR-1434 is done, promote and claim, bind an isolated worktree, then wire asb run and asb sweep --use-config through the runtime-owned local mock backend with offline/default denial preserved. | - |
+| P0 | [AR-1435](tasks/AR-1435-local-mock-cli-wiring.md): Local mock CLI wiring | Wire deterministic local mock attempts into asb run and sweep configuration qualification. | Verify AR-1434 is done, promote and claim, bind an isolated worktree, then wire asb run and asb sweep --use-config through the runtime-owned local mock backend with offline/default denial preserved. | codex-asb-ar1435-local-mock-luna56 |
 
 ## Blocked
 
