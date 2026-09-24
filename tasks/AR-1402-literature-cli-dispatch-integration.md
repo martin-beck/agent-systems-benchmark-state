@@ -9,17 +9,17 @@
   "id": "AR-1402",
   "next_action": "Unified built-in/literature dispatch implemented with methodology-only rejection; focused and full cargo test --locked --workspace and clippy for asb-workloads/asb-cli pass. Run local quality gates, sign+DCO commit, publish PR from clean exact tree, then exact-head review/merge.",
   "observed_branch": "codex/ar-1402-literature-cli",
-  "observed_dirty": 5,
-  "observed_head": "0667f299ce04ed74c8f1fc2a349df3bcb57a4838",
+  "observed_dirty": 0,
+  "observed_head": "cec6345528764696f5a6058e8dae5dcea04684f9",
   "owner": "ar1402_literature_cli_luna56",
   "plan": "../plans/AR-1402-literature-cli-dispatch-integration.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate literature workload catalog and adapters through all ASB CLI execution and evidence paths.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Literature workload CLI dispatch integration",
-  "updated_at": "2026-09-24T12:55:39+00:00",
+  "updated_at": "2026-09-24T12:55:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1402"
 }
 ---
