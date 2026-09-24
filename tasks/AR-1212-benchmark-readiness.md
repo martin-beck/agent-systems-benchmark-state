@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach users to test configured-agent benchmark eligibility without running an agent.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Agent benchmark-readiness tutorial",
-  "updated_at": "2026-09-24T18:51:11+00:00",
+  "updated_at": "2026-09-24T18:52:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1212"
 }
 ---
@@ -36,3 +36,6 @@ Implement the linked tutorial and deterministic negative/positive syntax fixture
   worktree/evidence for later reassignment.
 
 - 2026-09-24T18:50:15+00:00: Claimed by open-pr-triage-luna56.
+
+- 2026-09-24T18:52:01+00:00: Recorded command exit 0; command argv SHA-256
+  c706df3f452b25dd4f7dc86a363b1f685f7b3744a16be0070cab10aabbc44168.
