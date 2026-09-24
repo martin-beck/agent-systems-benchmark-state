@@ -11,7 +11,7 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #119 | `feature/native-capacity-controller@e2e3574ed2bb` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(capacity): add bounded native lifecycle controller |
-| #304 | `codex/ar-1416-literature-mock-cross-product@cb33964b53ae` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | test: cover literature local mock cross-product |
+| #304 | `codex/ar-1416-literature-mock-cross-product@cb33964b53ae` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test: cover literature local mock cross-product |
 
 ## Recent workflows
 
@@ -23,7 +23,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36041523816 | `cb33964b53ae` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 36041523777 | `cb33964b53ae` | pull_request | Formal assurance | in_progress:- |
 | 36041523708 | `cb33964b53ae` | pull_request | Repository quality | in_progress:- |
-| 36041523682 | `cb33964b53ae` | pull_request | Fault assurance | in_progress:- |
+| 36041523682 | `cb33964b53ae` | pull_request | Fault assurance | completed:success |
 | 36041523596 | `cb33964b53ae` | pull_request | Huawei MIT source headers | completed:success |
 | 36038241175 | `c533734a486a` | push | Fault assurance | completed:success |
 | 36038241174 | `c533734a486a` | push | Hosted portability and native qualification | completed:success |
