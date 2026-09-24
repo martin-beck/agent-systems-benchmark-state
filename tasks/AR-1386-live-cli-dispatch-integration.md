@@ -1,7 +1,7 @@
 ---
 {
-  "branch": "",
-  "checkpoint_commit": "",
+  "branch": "feature/ar-1386-live-cli-dispatch-integration",
+  "checkpoint_commit": "25548846966e37646dded8d67ed8ee5123b8bc32",
   "claim_expires": "",
   "depends_on": [
     "AR-1385",
@@ -12,10 +12,10 @@
     "AR-1377"
   ],
   "id": "AR-1386",
-  "next_action": "Promote after dependency validation; integrate the authenticated runtime live dispatch source into production asb run and sweep with local provider-mock tests and fail-closed egress/teardown checks.",
-  "observed_branch": "",
+  "next_action": "Refresh the declared isolated worktree from protected main, integrate the authenticated runtime live dispatch source into production asb run and sweep, and add local provider-mock plus fail-closed egress/teardown tests.",
+  "observed_branch": "feature/ar-1386-live-cli-dispatch-integration",
   "observed_dirty": 0,
-  "observed_head": "0000000000000000000000000000000000000000",
+  "observed_head": "25548846966e37646dded8d67ed8ee5123b8bc32",
   "owner": "",
   "plan": "../plans/AR-1386-live-cli-dispatch-integration.md",
   "priority": "P0",
