@@ -12,18 +12,18 @@
   ],
   "id": "AR-1384",
   "next_action": "Promote and claim after validating all dependencies; implement the private runtime/control conversion from the authenticated authority profile to an opaque live runtime handle, with fail-closed tests.",
-  "observed_branch": "",
+  "observed_branch": "feature/ar-1384-runtime-bootstrap-materialization",
   "observed_dirty": 0,
-  "observed_head": "0000000000000000000000000000000000000000",
+  "observed_head": "04b4c067055073031cd6d88cf18f0d158f488ad0",
   "owner": "codex-asb-runtime-receipt-source-luna56",
   "plan": "../plans/AR-1384-runtime-bootstrap-materialization.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize the runtime-owned live bootstrap handle from authenticated authority.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Runtime-owned bootstrap materialization",
-  "updated_at": "2026-09-24T05:10:04+00:00",
+  "updated_at": "2026-09-24T05:10:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1384-runtime-bootstrap-materialization"
 }
 ---
