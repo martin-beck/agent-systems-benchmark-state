@@ -30,7 +30,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 35986670435 | `b63394b167d4` | push | Formal assurance | in_progress:- |
 | 35986670370 | `b63394b167d4` | push | Rust verification | in_progress:- |
-| 35986670359 | `b63394b167d4` | push | Hosted portability and native qualification | in_progress:- |
+| 35986670359 | `b63394b167d4` | push | Hosted portability and native qualification | completed:success |
 | 35986670309 | `b63394b167d4` | push | Repository quality | in_progress:- |
 | 35986670237 | `b63394b167d4` | push | Fault assurance | in_progress:- |
 | 35986670232 | `b63394b167d4` | push | Huawei MIT source headers | completed:success |
