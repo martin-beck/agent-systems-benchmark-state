@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist and verify the ASB agent release index used by the setup wizard.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Persisted authenticated agent release index",
-  "updated_at": "2026-09-24T20:12:38+00:00",
+  "updated_at": "2026-09-24T20:12:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1320-persisted-agent-release-index"
 }
 ---
@@ -107,3 +107,6 @@ before any agent can become selectable.
   state root is already owned; corrective action: reran that exact test in isolation with
   TMPDIR=/srv/data/projects/asb-test-tmp and it passed (1 passed). The agent-catalog focused test
   also passes. No product files changed.
+
+- 2026-09-24T20:12:58+00:00: Recorded command exit 0; command argv SHA-256
+  6478143af636c558cfeb5eb65e04e5fedbb3f05f22adc162611a249a9564d090.
