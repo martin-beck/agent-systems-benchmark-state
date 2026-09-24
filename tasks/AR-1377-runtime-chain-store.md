@@ -10,18 +10,18 @@
   ],
   "id": "AR-1377",
   "next_action": "Promote and claim this dependency-valid chain-store successor, refresh an isolated worktree, and implement runtime-owned authenticated chain materialization.",
-  "observed_branch": "",
+  "observed_branch": "feature/ar-1377-runtime-chain-store",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "265b936d995148f8e40e36664cf68bf12affc20d",
   "owner": "codex-asb-runtime-receipt-source-luna56",
   "plan": "../plans/AR-1377-runtime-chain-store.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist authenticated runtime certificate-chain material for live dispatch.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Runtime-owned certificate-chain store",
-  "updated_at": "2026-09-24T02:40:42+00:00",
+  "updated_at": "2026-09-24T02:40:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1377-runtime-chain-store"
 }
 ---
