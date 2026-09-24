@@ -20,7 +20,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36007126908 | `4c4e098ce06b` | pull_request | Formal assurance | in_progress:- |
+| 36007126908 | `4c4e098ce06b` | pull_request | Formal assurance | completed:success |
 | 36007126871 | `4c4e098ce06b` | pull_request | Repository quality | in_progress:- |
 | 36007126758 | `4c4e098ce06b` | pull_request | Hosted portability and native qualification | completed:success |
 | 36007126732 | `4c4e098ce06b` | pull_request | Emulated aarch64 portability | in_progress:- |
