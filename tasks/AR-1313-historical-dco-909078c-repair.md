@@ -1,11 +1,11 @@
 ---
 {
   "branch": "repair/ar-1313-historical-dco-909078c",
-  "checkpoint_commit": "68afee85219a30a9754c462042b3bc48a19a4ae9",
+  "checkpoint_commit": "3420355d8a0855aea696775cfe85cc628773c842",
   "claim_expires": "2026-09-24T13:20:41+00:00",
   "depends_on": [],
   "id": "AR-1313",
-  "next_action": "Keep PR #231 unmerged; route one-line workspace coverage deficit to AR-1312, then rerun exact-head checks and signed recovery merge.",
+  "next_action": "Publish the current-main signed recovery candidate as a PR, run exact-head checks and independent review, then merge only after all required checks pass.",
   "observed_branch": "repair/ar-1313-historical-dco-909078c",
   "observed_dirty": 0,
   "observed_head": "3420355d8a0855aea696775cfe85cc628773c842",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Forward-only signed DCO recovery candidate published as PR #231.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Historical DCO merge-integrity recovery",
-  "updated_at": "2026-09-24T11:21:05+00:00",
+  "updated_at": "2026-09-24T11:21:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1313-historical-dco-909078c"
 }
 ---
@@ -91,3 +91,9 @@ blocked with the exact failure and do not weaken the policy.
 
 - 2026-09-24T11:20:52+00:00: Recorded command exit 0; command argv SHA-256
   fc216a16f6653c07f61e1f04f494ac4b2c5a9240ed8b94b452f47cf0b026ad3a.
+
+- 2026-09-24T11:21:41+00:00: Current protected main e41d4df was audited: historical unsigned merge
+  909078c remains an ancestor, old PR #231 head 68afee8 is not an ancestor and is stale. Created
+  current-main empty signed+DCO recovery 3420355d; tree equals e41d4df, signature and DCO verified,
+  repository_policy --base origin/main --head HEAD passed, and merge_pr focused tests passed 11/11.
+  No history rewrite or gate weakening.
