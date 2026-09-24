@@ -1,13 +1,13 @@
 ---
 {
   "branch": "repair/ar-1398-signed-protected-main-recovery",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "f5680de433bb15879b1ef42427d1e7843e0bff36",
   "claim_expires": "2026-09-24T12:00:09+00:00",
   "depends_on": [
     "AR-1337"
   ],
   "id": "AR-1398",
-  "next_action": "Promote after the integration queue is quiescent; create a signed+DCO descendant preserving PR #286 merge 123ba915 tree/parents, run independent review and all exact-main gates, then close the three affected repair records with fresh evidence.",
+  "next_action": "Open PR from repair/ar-1398-signed-protected-main-recovery; run independent review, exact-head gates, protected merge, and seven exact-main post-merge workflows.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Restore signed+DCO protected-main evidence after an unsigned GitHub-generated repair merge.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Signed protected-main recovery",
-  "updated_at": "2026-09-24T10:02:00+00:00",
+  "updated_at": "2026-09-24T10:02:32+00:00",
   "worktree_key": ""
 }
 ---
@@ -46,3 +46,8 @@ providers are never required for development evidence.
 
 - 2026-09-24T10:02:00+00:00: Recorded command exit 0; command argv SHA-256
   87cd4bb47c5cb6cbb3f94935be7cae7c1f98416231eb9de5ba30dfa616e9fda0.
+
+- 2026-09-24T10:02:32+00:00: Recovery commit f5680de is SSH-signed+DCO, parent 123ba915, identical
+  tree, zero files changed. Initial push attempt omitted fully qualified refs and was rejected
+  without remote effect; corrected push succeeded to repair/ar-1398-signed-protected-main-recovery.
+  Continue with PR review and exact-main qualification.
