@@ -9,7 +9,7 @@
   "id": "AR-1215",
   "next_action": "Monitor PR #310 required exact-head checks to terminal; obtain independent review before merge. Do not claim full gate while Ruff remains unavailable.",
   "observed_branch": "docs/ar-1215-result-comparison",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "0e08fbee769cff71e402aef07ce6fb80a9a821e2",
   "owner": "codex-ar1215-luna56",
   "plan": "../plans/AR-1215.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach conservative comparison of multiple agents from the same benchmark.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Multi-agent result comparison tutorial",
-  "updated_at": "2026-09-24T21:03:09+00:00",
+  "updated_at": "2026-09-24T21:03:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1215"
 }
 ---
