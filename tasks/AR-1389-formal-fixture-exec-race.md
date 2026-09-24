@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the formal online-build fixture race that caused ETXTBSY after AR-1388 merge.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Formal fixture executable race repair",
-  "updated_at": "2026-09-24T07:15:26+00:00",
+  "updated_at": "2026-09-24T07:15:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1389-formal-fixture-exec-race"
 }
 ---
@@ -67,3 +67,6 @@ privacy, offline, boundedness, and local-mock boundaries.
   evidence.
 
 - 2026-09-24T07:15:26+00:00: Heartbeat by codex-asb-ar1329-repair-luna56.
+
+- 2026-09-24T07:15:36+00:00: Recorded command exit 0; command argv SHA-256
+  534f8613e1c316db8f0f46dd989e44e14a8ca74304a94791b4e4a1c59b2fbb1d.
