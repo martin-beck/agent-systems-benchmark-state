@@ -9,6 +9,12 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1417](tasks/AR-1417-interactive-stateful-literature-workloads.md): Interactive stateful literature workloads | Add selectable interactive and stateful literature workloads beside built-in software-engineering fixtures. | Keep open: protected-main Repository quality run 36048870322 failed because merge tree 5ddac12 differs from reviewed topic tree 666043f (base a2a6414 vs 0dcc717); await coordinator exact-main requalification or successor repair, never weaken gate. | ar1417-literature-luna56 |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1421](tasks/AR-1421-protected-main-literature-merge-race.md): Protected-main literature merge race repair | Repair protected-main merge-tree requalification after a literature PR merges onto an advanced main. | Promote after AR-1417's product merge is preserved and the failed run 36048870322 is recorded; repair the protected-main merge admission/requalification path without weakening the tree invariant. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -109,7 +115,6 @@ Never edit this file directly.
 | P0 | [AR-1320](tasks/AR-1320-persisted-agent-release-index.md): Persisted authenticated agent release index | Persist and verify the ASB agent release index used by the setup wizard. | Continue with AR-1322 for the bounded signed local release-index source and verified closure promotion; persistence/restart/refresh fencing is merged. | - |
 | P0 | [AR-1370](tasks/AR-1370-runner-authority-materialization.md): Runner authority materialization | Inject existing authenticated certificate authority and runtime enrollment material into RunnerBackend/Catalog for receipt issuance. | Remain planned until AR-1369 dependency is resolved; then add authenticated RunnerBackend/Catalog authority injection and receipt-source tests without synthetic authority. | - |
 | P0 | [AR-1375](tasks/AR-1375-live-control-dispatch-source.md): Runtime-owned live control dispatch source | Supply authenticated runtime control receipts to production live dispatch. | Wait for AR-1374 blocker resolution, then implement the runtime-owned authenticated control adapter for CLI live dispatch. | - |
-| P0 | [AR-1421](tasks/AR-1421-protected-main-literature-merge-race.md): Protected-main literature merge race repair | Repair protected-main merge-tree requalification after a literature PR merges onto an advanced main. | Promote after AR-1417's product merge is preserved and the failed run 36048870322 is recorded; repair the protected-main merge admission/requalification path without weakening the tree invariant. | - |
 | P1 | [AR-0808](tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. | - |
 | P1 | [AR-0809](tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. | - |
 | P1 | [AR-0810](tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project's GitHub Pages site. | - |

@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1421.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Repair protected-main merge-tree requalification after a literature PR merges onto an advanced main.",
+  "task_revision": 2,
   "title": "Protected-main literature merge race repair",
-  "task_revision": 1,
-  "updated_at": "2026-09-24T19:36:00+00:00",
+  "updated_at": "2026-09-24T19:36:35+00:00",
   "worktree_key": ""
 }
 ---
@@ -28,3 +28,6 @@
 The failed post-merge Repository Quality result is preserved as evidence. This AR
 must not waive the exact-tree check, add a commit-specific exception, or classify
 the merge released before fresh exact-main evidence succeeds.
+
+- 2026-09-24T19:36:35+00:00: Incident evidence recorded in AR-1417; completed AR-1416 and AR-1398
+  permit this independent repair while AR-1417 remains open.
