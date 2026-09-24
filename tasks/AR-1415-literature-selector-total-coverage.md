@@ -1,14 +1,14 @@
 ---
 {
   "branch": "codex/ar-1415-literature-selector-total-coverage",
-  "checkpoint_commit": "bc0cfaff9cc126cb4f3dbadfc9a6284750dba0bc",
+  "checkpoint_commit": "c533734a486a8c3a8c854c1fce395b915986d874",
   "claim_expires": "2026-09-24T19:59:15+00:00",
   "depends_on": [
     "AR-1410",
     "AR-1414"
   ],
   "id": "AR-1415",
-  "next_action": "Independently review PR #303 exact base/head and monitor all required checks; merge only after terminal success, then verify seven post-merge workflows.",
+  "next_action": "Monitor exact-main post-merge workflows 36038241020,36038241175,36038241094,36038241127,36038241138,36038241030,36038241174 until terminal success; verify merged tree then release AR-1415.",
   "observed_branch": "codex/ar-1415-literature-selector-total-coverage",
   "observed_dirty": 0,
   "observed_head": "bc0cfaff9cc126cb4f3dbadfc9a6284750dba0bc",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make the complete literature workload inventory selectable beside built-in software-engineering fixtures with truthful evidence gates.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Total literature workload selector coverage",
-  "updated_at": "2026-09-24T18:01:12+00:00",
+  "updated_at": "2026-09-24T18:01:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1415"
 }
 ---
@@ -164,3 +164,7 @@ schema parity, and full exact-head/post-merge gates.
 
 - 2026-09-24T18:01:12+00:00: Recorded command exit 0; command argv SHA-256
   05e97daf385cbc62f6d9bcaa8492d316d45c36baeba9684cc9b9692c4b5b25b4.
+
+- 2026-09-24T18:01:39+00:00: PR #303 merged after exact-base review and all seven required checks
+  succeeded. Merge commit c533734a486a8c3a8c854c1fce395b915986d874. Post-merge workflow IDs
+  recorded; Huawei MIT source headers 36038241020 already SUCCESS, six remain in progress.
