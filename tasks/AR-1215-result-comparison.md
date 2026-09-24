@@ -9,17 +9,17 @@
   "id": "AR-1215",
   "next_action": "Obtain independent review, then publish the signed topic commit through the protected PR path; retain focused test and unavailable-ruff evidence.",
   "observed_branch": "docs/ar-1215-result-comparison",
-  "observed_dirty": 10,
-  "observed_head": "c663d1f29d4802281476c3a71d56542b17dbab48",
+  "observed_dirty": 0,
+  "observed_head": "0e08fbee769cff71e402aef07ce6fb80a9a821e2",
   "owner": "codex-ar1215-luna56",
   "plan": "../plans/AR-1215.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach conservative comparison of multiple agents from the same benchmark.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Multi-agent result comparison tutorial",
-  "updated_at": "2026-09-24T20:58:21+00:00",
+  "updated_at": "2026-09-24T20:58:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1215"
 }
 ---
