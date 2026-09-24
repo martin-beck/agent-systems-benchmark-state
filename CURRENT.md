@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1371](tasks/AR-1371-runner-authority-injection.md): Runner authority injection | Inject existing authenticated certificate authority and runtime enrollment material into RunnerBackend/Catalog without synthetic authority. | Promote and claim this dependency-valid repair, then implement authenticated RunnerBackend/Catalog authority injection using existing AR-1288 issuer primitives. | codex-asb-runtime-attested-enrollment-luna56 |
+| P0 | [AR-1371](tasks/AR-1371-runner-authority-injection.md): Runner authority injection | Inject existing authenticated certificate authority and runtime enrollment material into RunnerBackend/Catalog without synthetic authority. | Focused compile initially failed only because the new private RuntimeAuthorityRecord::issue_receipt seam was unused under -D warnings; added an explicit dead-code boundary annotation for the planned authenticated receipt operation. cargo fmt check and cargo check -p asb-cli --locked now pass. Run focused/full tests, independently review, then signed commit. | codex-asb-runtime-attested-enrollment-luna56 |
 
 ## Open
 

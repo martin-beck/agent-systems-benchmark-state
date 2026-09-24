@@ -1895,10 +1895,9 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1371](../tasks/AR-1371-runner-authority-injection.md): Runner authority injection | codex-asb-runtime-attested-enrollment-luna56 | Inject existing authenticated certificate authority and runtime enrollment material into RunnerBackend/Catalog without synthetic authority. | Promote and claim this dependency-valid repair, then implement authenticated RunnerBackend/Catalog authority injection using existing AR-1288 issuer primitives. |
+| P0 | [AR-1371](../tasks/AR-1371-runner-authority-injection.md): Runner authority injection | codex-asb-runtime-attested-enrollment-luna56 | Inject existing authenticated certificate authority and runtime enrollment material into RunnerBackend/Catalog without synthetic authority. | Focused compile initially failed only because the new private RuntimeAuthorityRecord::issue_receipt seam was unused under -D warnings; added an explicit dead-code boundary annotation for the planned authenticated receipt operation. cargo fmt check and cargo check -p asb-cli --locked now pass. Run focused/full tests, independently review, then signed commit. |
 
 ### Open (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1212](../tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Unclaimed | Teach users to test configured-agent benchmark eligibility without running an agent. | Implement the offline tutorial for checking agent benchmark readiness under the current configuration. |
