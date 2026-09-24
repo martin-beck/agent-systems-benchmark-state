@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-24T06:46:29+00:00",
+  "claim_expires": "2026-09-24T06:46:32+00:00",
   "depends_on": [
     "AR-1384",
     "AR-1377",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize the authenticated runtime-owned live dispatch source for production asb run and sweep.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Authenticated runtime live dispatch source",
-  "updated_at": "2026-09-24T05:46:29+00:00",
+  "updated_at": "2026-09-24T05:46:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1385-runtime-live-dispatch-source"
 }
 ---
@@ -39,3 +39,5 @@ namespace identity, or launch authority.
   authenticated runtime-owned live dispatch source; dependencies verified
 
 - 2026-09-24T05:46:29+00:00: Claimed by codex-asb-ar1329-repair-luna56.
+
+- 2026-09-24T05:46:32+00:00: Heartbeat by codex-asb-ar1329-repair-luna56.
