@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar-1404-literature-documentation",
   "checkpoint_commit": "16c5b87177e45ca5cfcf514af8c933fd55056a5a",
-  "claim_expires": "2026-09-24T16:22:42+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1400",
     "AR-1402"
@@ -12,15 +12,15 @@
   "observed_branch": "codex/ar-1404-literature-documentation",
   "observed_dirty": 0,
   "observed_head": "16c5b87177e45ca5cfcf514af8c933fd55056a5a",
-  "owner": "ar1404_literature_documentation_luna56b",
+  "owner": "",
   "plan": "../plans/AR-1404-literature-documentation-matrix.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Rebased PR #295 onto current main 99a1af7; new exact-head checks running.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Literature workload documentation and matrix contract",
-  "updated_at": "2026-09-24T14:22:42+00:00",
+  "updated_at": "2026-09-24T14:23:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1404"
 }
 ---
@@ -147,3 +147,11 @@ state that diverges from the versioned catalog.
 - 2026-09-24T14:21:54+00:00: Heartbeat by ar1404_literature_documentation_luna56b.
 
 - 2026-09-24T14:22:42+00:00: Heartbeat by ar1404_literature_documentation_luna56b.
+
+- 2026-09-24T14:23:49+00:00: Merged signed exact-base PR #295: base
+  99a1af7c2762960595d63c7b329218d1db299cc4, reviewed head 16c5b87177e45ca5cfcf514af8c933fd55056a5a,
+  tree 7865769176a4cd72ef0a012d9164917e510b6868, merge fc74825cb86991bb3afac6854d8cb5048118ff8f.
+  Post-merge terminal-success workflows: 36011184212 Formal assurance; 36011184203 Emulated aarch64
+  portability; 36011184141 Rust verification; 36011184365 Hosted portability and native
+  qualification; 36011184127 Fault assurance; 36011184212 Huawei MIT source headers; 36011184259
+  Repository quality.
