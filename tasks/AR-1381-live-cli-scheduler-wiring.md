@@ -15,17 +15,17 @@
   "id": "AR-1381",
   "next_action": "PR #277 is published at exact head 445a4cf. Monitor all required exact-head checks; repair failures through handoffctl, merge only after independent review and green CI, then verify seven post-merge workflows.",
   "observed_branch": "feature/ar-1381-live-cli-scheduler-wiring",
-  "observed_dirty": 1,
-  "observed_head": "445a4cffa56b34e13c63b33b6a30a487d3a7381e",
+  "observed_dirty": 0,
+  "observed_head": "4ba3085e95444fba069b129e33020f19cc7ea830",
   "owner": "codex-asb-runtime-receipt-source-luna56",
   "plan": "../plans/AR-1381-live-cli-scheduler-wiring.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire runtime-owned live scheduler authority into production asb run and sweep.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Runtime-owned live CLI scheduler wiring",
-  "updated_at": "2026-09-24T04:18:05+00:00",
+  "updated_at": "2026-09-24T04:18:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1381-live-cli-scheduler-wiring"
 }
 ---
