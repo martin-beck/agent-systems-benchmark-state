@@ -1,14 +1,14 @@
 ---
 {
   "branch": "codex/ar-1404-literature-documentation",
-  "checkpoint_commit": "b0ed118cbe577827487701e35b9f3ea37027e46c",
+  "checkpoint_commit": "16c5b87177e45ca5cfcf514af8c933fd55056a5a",
   "claim_expires": "2026-09-24T16:03:19+00:00",
   "depends_on": [
     "AR-1400",
     "AR-1402"
   ],
   "id": "AR-1404",
-  "next_action": "Wait for all 12 exact-head checks on b0ed118; independently verify green head, merge exact base, run post-merge workflows, release AR-1404.",
+  "next_action": "Wait for all 12 checks on rebased head 16c5b87, then merge exact base/head and run seven post-merge workflows.",
   "observed_branch": "codex/ar-1404-literature-documentation",
   "observed_dirty": 0,
   "observed_head": "16c5b87177e45ca5cfcf514af8c933fd55056a5a",
@@ -17,10 +17,10 @@
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "PR #295 head repaired to use temp-file parity handoff; exact checks restarted.",
-  "task_revision": 39,
+  "summary": "Rebased PR #295 onto current main 99a1af7; new exact-head checks running.",
+  "task_revision": 40,
   "title": "Literature workload documentation and matrix contract",
-  "updated_at": "2026-09-24T14:03:19+00:00",
+  "updated_at": "2026-09-24T14:03:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1404"
 }
 ---
@@ -113,3 +113,11 @@ state that diverges from the versioned catalog.
   4d9c43c001de4012a8e408437fc95d7a0ca51b92075036bec255401ce567de34.
 
 - 2026-09-24T14:03:19+00:00: Heartbeat by ar1404_literature_documentation_luna56b.
+
+- 2026-09-24T14:03:31+00:00: Protected main advanced to 99a1af7 via PR #296. Rebased the clean
+  AR-1404 branch with signed commits preserved, verified complete diff unchanged in scope (10
+  catalog/CLI/docs/CI files, no runtime/provider code), verified git diff --check, and
+  force-with-lease pushed new head 16c5b87. PR #295 now reports base 99a1af7 and all exact-head
+  checks restarted. Independent review reconfirmed methodology-only rejection, generated
+  JSON/Markdown parity, regular temporary-file CI handoff, no credentials/network path, and
+  positive/negative drift tests.
