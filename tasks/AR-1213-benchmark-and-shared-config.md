@@ -2,7 +2,7 @@
 {
   "branch": "docs/ar-1213-benchmark-shared-config",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-24T22:13:56+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1212"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "docs/ar-1213-benchmark-shared-config",
   "observed_dirty": 0,
   "observed_head": "a636d48ee5810f54168377e0564cb0e71b970682",
-  "owner": "ar1213-cli-tutorial-luna56",
+  "owner": "",
   "plan": "../plans/AR-1213.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Teach benchmark execution and extending agents with one shared configuration.",
-  "task_revision": 64,
+  "task_revision": 65,
   "title": "Benchmark run and shared-agent configuration tutorials",
-  "updated_at": "2026-09-24T20:40:47+00:00",
+  "updated_at": "2026-09-24T20:41:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1213"
 }
 ---
@@ -193,3 +193,11 @@ run or contact an agent.
 
 - 2026-09-24T20:40:47+00:00: Recorded command exit 0; command argv SHA-256
   e893dddaf6bf99b23e60d17f040fb77aa1fd2ba641901ffe1ec62de11e18da0c.
+
+- 2026-09-24T20:41:09+00:00: Merged PR #309 at c663d1f29d4802281476c3a71d56542b17dbab48. Topic
+  a636d48ee5810f54168377e0564cb0e71b970682 rebased onto protected main
+  10b16186c8424f53f6d6d8c2797d785dea10c53b; exact merged tree equals reviewed topic tree; topic SSH
+  signature G and DCO check passed. Seven post-merge workflows terminal success: Rust 36055140490,
+  repository quality 36055140556, aarch64 36055140518, hosted portability 36055140534, fault
+  36055140532, formal 36055140531, headers 36055140484. Initial exact-base/platform failures and
+  coordinator lock contention were corrected and recorded.
