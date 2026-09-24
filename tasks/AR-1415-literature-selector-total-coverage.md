@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar-1415-literature-selector-total-coverage",
   "checkpoint_commit": "c533734a486a8c3a8c854c1fce395b915986d874",
-  "claim_expires": "2026-09-24T20:12:10+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1410",
     "AR-1414"
@@ -12,15 +12,15 @@
   "observed_branch": "codex/ar-1415-literature-selector-total-coverage",
   "observed_dirty": 0,
   "observed_head": "bc0cfaff9cc126cb4f3dbadfc9a6284750dba0bc",
-  "owner": "ar1415-literature-selector-total-coverage-luna56",
+  "owner": "",
   "plan": "../plans/AR-1415.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Make the complete literature workload inventory selectable beside built-in software-engineering fixtures with truthful evidence gates.",
-  "task_revision": 87,
+  "task_revision": 88,
   "title": "Total literature workload selector coverage",
-  "updated_at": "2026-09-24T18:19:43+00:00",
+  "updated_at": "2026-09-24T18:20:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1415"
 }
 ---
@@ -280,3 +280,11 @@ schema parity, and full exact-head/post-merge gates.
 
 - 2026-09-24T18:19:43+00:00: Recorded command exit 0; command argv SHA-256
   56445cc797072f0babe1a7c5c1d462ddaa2240189cdf48974ab0ee05d72a8ea3.
+
+- 2026-09-24T18:20:03+00:00: Released after PR #303 merge and exact-main verification. Merge
+  c533734a486a8c3a8c854c1fce395b915986d874 is origin/main and contains reviewed signed+DCO
+  bc0cfaff9cc126cb4f3dbadfc9a6284750dba0bc (Good SSH signature, matching Signed-off-by). All seven
+  post-merge workflows terminal SUCCESS: 36038241020, 36038241175, 36038241094, 36038241127,
+  36038241138, 36038241030, 36038241174. Initial aarch64 run 36038241138 failed during guest
+  userspace materialization with Goose exit-127 diagnostic; exact Goose test passed three isolated
+  times and the authorized exact rerun succeeded at 18:17Z. No product repair was needed.
