@@ -8,7 +8,7 @@
     "AR-1402"
   ],
   "id": "AR-1404",
-  "next_action": "Wait for all 12 exact-head checks on PR #295; merge only after green, then run and verify seven post-merge workflows.",
+  "next_action": "Wait for all PR #295 checks to be green after rerun; no product repair is warranted because the diff excludes asb-runtime. Then merge exact head and run post-merge gates.",
   "observed_branch": "codex/ar-1404-literature-documentation",
   "observed_dirty": 0,
   "observed_head": "4c4e098ce06be3feea5afc3ecaa7af3f0b61ebcc",
@@ -17,10 +17,10 @@
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "PR #295 exact-head gates running; independent review found no acceptance gaps.",
-  "task_revision": 22,
+  "summary": "PR #295 has one unrelated flaky runtime test failure; focused reruns pass 5/5.",
+  "task_revision": 23,
   "title": "Literature workload documentation and matrix contract",
-  "updated_at": "2026-09-24T13:45:22+00:00",
+  "updated_at": "2026-09-24T13:45:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1404"
 }
 ---
@@ -68,3 +68,12 @@ state that diverges from the versioned catalog.
   required checks pending, with no failures.
 
 - 2026-09-24T13:45:22+00:00: Heartbeat by ar1404_literature_documentation_luna56b.
+
+- 2026-09-24T13:45:37+00:00: Failed hosted Rust run 36007126635 at 13:43:05Z had 121 passed/1 failed
+  in unrelated asb-runtime
+  live_service::tests::local_authority_is_runtime_owned_loopback_and_private, assertion
+  authority.is_active() at live_service.rs:2169. Complete PR diff touches only
+  CLI/docs/catalog/quality tooling, not asb-runtime. Correct focused command `cargo test --locked -p
+  asb-runtime --lib live_service::tests::local_authority_is_runtime_owned_loopback_and_private --
+  --exact --nocapture` passed five consecutive runs locally. Classify as environmental/flaky; do not
+  weaken or repair unrelated runtime code.
