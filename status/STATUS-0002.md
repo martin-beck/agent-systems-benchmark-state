@@ -23,7 +23,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1381](../tasks/AR-1381-live-cli-scheduler-wiring.md): Runtime-owned live CLI scheduler wiring | codex-asb-runtime-receipt-source-luna56 | Wire runtime-owned live scheduler authority into production asb run and sweep. | CLI wrapper commit is signed+DCO and focused reruns pass. Run full applicable CLI/runtime gates in isolation as needed, independently review diff/privacy, then publish exact-head PR. |
+| P0 | [AR-1381](../tasks/AR-1381-live-cli-scheduler-wiring.md): Runtime-owned live CLI scheduler wiring | codex-asb-runtime-receipt-source-luna56 | Wire runtime-owned live scheduler authority into production asb run and sweep. | PR #277 is published at exact head 445a4cf. Monitor all required exact-head checks; repair failures through handoffctl, merge only after independent review and green CI, then verify seven post-merge workflows. |
 
 ### Open (4)
 

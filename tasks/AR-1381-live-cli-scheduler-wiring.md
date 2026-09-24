@@ -13,7 +13,7 @@
     "AR-1362"
   ],
   "id": "AR-1381",
-  "next_action": "CLI wrapper commit is signed+DCO and focused reruns pass. Run full applicable CLI/runtime gates in isolation as needed, independently review diff/privacy, then publish exact-head PR.",
+  "next_action": "PR #277 is published at exact head 445a4cf. Monitor all required exact-head checks; repair failures through handoffctl, merge only after independent review and green CI, then verify seven post-merge workflows.",
   "observed_branch": "feature/ar-1381-live-cli-scheduler-wiring",
   "observed_dirty": 0,
   "observed_head": "445a4cffa56b34e13c63b33b6a30a487d3a7381e",
@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire runtime-owned live scheduler authority into production asb run and sweep.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Runtime-owned live CLI scheduler wiring",
-  "updated_at": "2026-09-24T04:11:28+00:00",
+  "updated_at": "2026-09-24T04:11:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1381-live-cli-scheduler-wiring"
 }
 ---
@@ -112,3 +112,11 @@ all fail-closed authority and privacy contracts.
 
 - 2026-09-24T04:11:28+00:00: Recorded command exit 0; command argv SHA-256
   cefaa400195f6bbe810183c1d450e2e3a304cdea2839dab01cddb69773432d60.
+
+- 2026-09-24T04:11:56+00:00: Independent review found a 14-line CLI-only wrapper delegating directly
+  to existing factory path. It accepts only opaque LiveProviderRuntimeScheduler, exposes no
+  authority arguments/secrets/private paths, and preserves run/sweep fail-closed behavior. SSH
+  signature and DCO verified. PR #277 published at exact head
+  445a4cffa56b34e13c63b33b6a30a487d3a7381e. Full asb-runtime tests passed 113/114 (1
+  capability-gated ignored); cargo check and clippy passed. Full CLI parallel test had two
+  shared-state flakes; individual reruns passed.
