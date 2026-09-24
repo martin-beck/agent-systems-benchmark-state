@@ -1,13 +1,13 @@
 ---
 {
-  "branch": "",
+  "branch": "codex/ar-1403-literature-external",
   "checkpoint_commit": "",
   "claim_expires": "",
   "depends_on": [
     "AR-1402"
   ],
   "id": "AR-1403",
-  "next_action": "Promote only after CLI integration is done; extend the explicit external artifact/evaluator qualification workflow without adding a default network path.",
+  "next_action": "Claim after binding metadata repair; extend explicit external artifact/evaluator qualification without adding a default network path.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
@@ -20,7 +20,7 @@
   "task_revision": 4,
   "title": "Literature workload external qualification",
   "updated_at": "2026-09-24T13:28:29+00:00",
-  "worktree_key": ""
+  "worktree_key": "agent-systems-benchmark-ar-1403"
 }
 ---
 
