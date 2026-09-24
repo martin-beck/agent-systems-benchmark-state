@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1376](tasks/AR-1376-runtime-live-adapter.md): Runtime-owned live adapter | Materialize authenticated runtime receipts into opaque live dispatch attempts. | Audit blocker: ControlClient can issue RuntimeReceipt, but no runtime-owned authenticated chain store/source is available to validate the receipt. Do not synthesize a chain or accept caller authority. Create a successor for chain enrollment materialization before adapter implementation. | codex-asb-runtime-receipt-source-luna56 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -65,6 +59,7 @@ Never edit this file directly.
 | P0 | [AR-1367](tasks/AR-1367-ar1329-production-dispatch-integration.md): AR-1329 production dispatch integration | Complete production asb run/sweep live-provider dispatch through runtime-owned authenticated acquisition and teardown. | Promote and claim this fresh AR-1329 successor, refresh an isolated worktree to protected main, audit the production run/sweep dispatch seam, and implement only through runtime-owned bridge inputs. | - |
 | P0 | [AR-1368](tasks/AR-1368-control-receipt-runtime-source.md): Control receipt runtime source | Provide the authenticated runtime-owned ControlClient receipt source required by AR-1329 production dispatch. | Promote and claim the missing runtime-owned ControlClient receipt source, then add the authenticated control operation and production enrollment materialization without exposing authority. | - |
 | P0 | [AR-1374](tasks/AR-1374-cli-live-dispatch.md): Production live-provider dispatch | Consume authenticated runtime receipts in production asb run and sweep dispatch. | Await dependency completion, then audit and implement runtime-owned asb run/sweep dispatch using the authenticated receipt source. | - |
+| P0 | [AR-1376](tasks/AR-1376-runtime-live-adapter.md): Runtime-owned live adapter | Materialize authenticated runtime receipts into opaque live dispatch attempts. | Audit blocker: ControlClient can issue RuntimeReceipt, but no runtime-owned authenticated chain store/source is available to validate the receipt. Do not synthesize a chain or accept caller authority. Create a successor for chain enrollment materialization before adapter implementation. | - |
 | P1 | [AR-0604](tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Obtain authorized native x86 runner and immutable CSB/Python evidence; rerun native_boundary and record A/B overhead. | - |
 | P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Control genuine native platform capacity lifecycle. | PR #119 exact e2e3574 is green except quality 35401437247 at 89.99% coverage. Preserve PR; repair via AR-1312 when promotable. Do not merge or weaken 90%. | - |
 | P1 | [AR-0814](tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Create successor AR for authenticated route/ancestor authority; preserve AR-1288 evidence and AR-0814 head 29cfa193. | - |

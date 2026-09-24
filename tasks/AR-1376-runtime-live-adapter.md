@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1376-runtime-live-adapter",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-24T04:37:57+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1373",
     "AR-1366",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1376-runtime-live-adapter",
   "observed_dirty": 0,
   "observed_head": "265b936d995148f8e40e36664cf68bf12affc20d",
-  "owner": "codex-asb-runtime-receipt-source-luna56",
+  "owner": "",
   "plan": "../plans/AR-1376-runtime-live-adapter.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Materialize authenticated runtime receipts into opaque live dispatch attempts.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Runtime-owned live adapter",
-  "updated_at": "2026-09-24T02:38:12+00:00",
+  "updated_at": "2026-09-24T02:38:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1376-runtime-live-adapter"
 }
 ---
@@ -48,3 +48,6 @@ this task must not invent an alternate authority model.
   Wiring CLI directly would either accept caller-supplied authority or synthesize a chain, both
   forbidden. AR-1374/1375 recorded the same missing source. No OpenRouter three-agent runtime
   evidence exists.
+
+- 2026-09-24T02:38:15+00:00: Blocked by missing runtime-owned authenticated certificate-chain
+  source; preserve fail-closed behavior and use a successor with valid done dependencies.
