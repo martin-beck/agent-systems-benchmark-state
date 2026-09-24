@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1393-local-provider-authority-provisioning",
   "checkpoint_commit": "0a3817082d13f15187ea5efe4f5792664a50be99",
-  "claim_expires": "2026-09-24T08:28:37+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1388",
     "AR-1385",
@@ -18,15 +18,15 @@
   "observed_branch": "feature/ar-1393-local-provider-authority-provisioning",
   "observed_dirty": 0,
   "observed_head": "0a3817082d13f15187ea5efe4f5792664a50be99",
-  "owner": "coordinator",
+  "owner": "",
   "plan": "../plans/AR-1393-local-provider-authority-provisioning.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Provision a runtime-owned loopback mock authority so development never requires external provider access.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Local provider authority provisioning",
-  "updated_at": "2026-09-24T08:18:37+00:00",
+  "updated_at": "2026-09-24T08:18:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1393-local-provider-authority-provisioning"
 }
 ---
@@ -113,3 +113,7 @@ or production egress gates.
   monitored.
 
 - 2026-09-24T08:18:37+00:00: Claimed by coordinator.
+
+- 2026-09-24T08:18:56+00:00: PR #283 merged at exact signed+DCO head
+  0a3817082d13f15187ea5efe4f5792664a50be99; merge 0206816acd2d6dd819889f1be2879e958e4fd096; all
+  seven exact-main post-merge workflows succeeded. No further action.
