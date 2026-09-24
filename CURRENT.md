@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1401](tasks/AR-1401-literature-local-mock-execution.md): Literature workload local mock execution | Provide offline deterministic mock execution for every documented literature workload family. | PR #292 exact base e0b15fc/head 5a3b847 is running exact-head checks; obtain independent review, then signed merge and seven post-merge verification. | ar1401_literature_mock_luna56 |
-| P1 | [AR-1405](tasks/AR-1405-open-dependency-pr-reconciliation.md): Open dependency PR reconciliation | Rebase, repair, verify, and truthfully resolve stale open dependency PRs. | Wait for PR #291 exact-head checks at 9c1ddea; if all required checks pass, obtain independent review and merge through protected path. Then close/supersede PRs #237/#236/#150/#149 with evidence; leave #235/#234/#148 action updates unresolved because policy pins are not yet authorized; assess #147 sha2 separately. | ar1405_dependency_pr_luna56b |
+| P1 | [AR-1405](tasks/AR-1405-open-dependency-pr-reconciliation.md): Open dependency PR reconciliation | Rebase, repair, verify, and truthfully resolve stale open dependency PRs. | Monitor seven post-merge workflows for exact SHA f213b296; after all green, close/supersede scoped stale PRs with exact evidence, then release AR done. Action PRs #235/#234/#148 require a future policy-pin migration AR; #147 requires separate sha2 compatibility AR. | ar1405_dependency_pr_luna56b |
 
 ## Open
 

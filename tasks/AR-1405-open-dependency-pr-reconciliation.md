@@ -1,11 +1,11 @@
 ---
 {
   "branch": "codex/ar-1405-dependency-reconcile",
-  "checkpoint_commit": "9c1ddea3df54555dc1127239916198c2f7e926ef",
+  "checkpoint_commit": "f213b29624bff8bdc2edd005711e2f70eeb70472",
   "claim_expires": "2026-09-24T14:04:36+00:00",
   "depends_on": [],
   "id": "AR-1405",
-  "next_action": "Wait for PR #291 exact-head checks at 9c1ddea; if all required checks pass, obtain independent review and merge through protected path. Then close/supersede PRs #237/#236/#150/#149 with evidence; leave #235/#234/#148 action updates unresolved because policy pins are not yet authorized; assess #147 sha2 separately.",
+  "next_action": "Monitor seven post-merge workflows for exact SHA f213b296; after all green, close/supersede scoped stale PRs with exact evidence, then release AR done. Action PRs #235/#234/#148 require a future policy-pin migration AR; #147 requires separate sha2 compatibility AR.",
   "observed_branch": "codex/ar-1405-dependency-reconcile",
   "observed_dirty": 0,
   "observed_head": "9c1ddea3df54555dc1127239916198c2f7e926ef",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Rebase, repair, verify, and truthfully resolve stale open dependency PRs.",
-  "task_revision": 88,
+  "task_revision": 89,
   "title": "Open dependency PR reconciliation",
-  "updated_at": "2026-09-24T12:04:36+00:00",
+  "updated_at": "2026-09-24T12:04:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1405"
 }
 ---
@@ -203,3 +203,7 @@ all changes remain subject to current exact-head gates.
   9b8be1155f7d2011866cb5ddd61c1073394ccdaa6042b220881ef690fc031766.
 
 - 2026-09-24T12:04:36+00:00: Heartbeat by ar1405_dependency_pr_luna56b.
+
+- 2026-09-24T12:04:47+00:00: PR #291 merged through signed exact-base integration: merge f213b296,
+  parents e0b15fc and 9c1ddea, tree 04dc4ab3. Seven post-merge workflows launched; headers already
+  green, six still pending.
