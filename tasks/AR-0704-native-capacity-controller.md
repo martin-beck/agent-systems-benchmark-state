@@ -2,7 +2,7 @@
 {
   "branch": "feature/native-capacity-controller",
   "checkpoint_commit": "e2e3574ed2bbc020105ffb1eb4c5a38691b299a3",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T21:46:45+00:00",
   "depends_on": [
     "AR-0701",
     "AR-0103"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/native-capacity-controller",
   "observed_dirty": 0,
   "observed_head": "e2e3574ed2bbc020105ffb1eb4c5a38691b299a3",
-  "owner": "",
+  "owner": "ar0704-requal-luna56",
   "plan": "../plans/AR-0704.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 238,
+  "task_revision": 239,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-24T19:46:22+00:00",
+  "updated_at": "2026-09-24T19:46:45+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -804,3 +804,5 @@ must not block this AR or its dependents.
 
 - 2026-09-24T19:46:22+00:00: AR-1312 coverage repair is terminal done; recover AR-0704 to rebase PR
   #119 onto current main and rerun exact-head gates without weakening the 90% floor.
+
+- 2026-09-24T19:46:45+00:00: Claimed by ar0704-requal-luna56.
