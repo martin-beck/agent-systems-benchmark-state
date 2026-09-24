@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**410 ARs tracked** across 6 active status categories.
+**411 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 3 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 63 |
-| **Planned** | Defined work awaiting promotion or dependencies | 66 |
+| **Planned** | Defined work awaiting promotion or dependencies | 67 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 260 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -479,6 +479,7 @@ flowchart LR
         AR_1384["AR-1384 - Done"]:::status_done
         AR_1385["AR-1385 - Done"]:::status_done
         AR_1386["AR-1386 - Blocked"]:::status_blocked
+        AR_1387["AR-1387 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1536,11 +1537,13 @@ flowchart LR
     AR_1377 --> AR_1384
     AR_1377 --> AR_1385
     AR_1377 --> AR_1386
+    AR_1377 --> AR_1387
     AR_1378 --> AR_1379
     AR_1378 --> AR_1380
     AR_1378 --> AR_1381
     AR_1378 --> AR_1382
     AR_1378 --> AR_1386
+    AR_1378 --> AR_1387
     AR_1380 --> AR_1381
     AR_1380 --> AR_1382
     AR_1380 --> AR_1383
@@ -1555,7 +1558,10 @@ flowchart LR
     AR_1383 --> AR_1384
     AR_1384 --> AR_1385
     AR_1384 --> AR_1386
+    AR_1384 --> AR_1387
     AR_1385 --> AR_1386
+    AR_1385 --> AR_1387
+    AR_1386 --> AR_1387
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -1957,4 +1963,3 @@ flowchart LR
 | [AR-1361](../tasks/AR-1361-runtime-control-receipt-source.md) | [AR-1359](../tasks/AR-1359-runtime-control-bridge.md) | None |
 | [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md) | [AR-1359](../tasks/AR-1359-runtime-control-bridge.md) | [AR-1363](../tasks/AR-1363-authenticated-control-receipt-source.md), [AR-1364](../tasks/AR-1364-authenticated-chain-enrollment.md), [AR-1365](../tasks/AR-1365-control-receipt-source-integration.md), [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md), [AR-1369](../tasks/AR-1369-control-backend-authority-materialization.md), [AR-1376](../tasks/AR-1376-runtime-live-adapter.md), [AR-1378](../tasks/AR-1378-live-control-adapter.md), [AR-1379](../tasks/AR-1379-live-dispatch-integration.md), [AR-1380](../tasks/AR-1380-runtime-scheduler-composition.md), [AR-1381](../tasks/AR-1381-live-cli-scheduler-wiring.md) |
 | [AR-1363](../tasks/AR-1363-authenticated-control-receipt-source.md) | [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md) | None |
-| [AR-1364](../tasks/AR-1364-authenticated-chain-enrollment.md) | [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md) | [AR-1365](../tasks/AR-1365-control-receipt-source-integration.md), [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md), [AR-1369](../tasks/AR-1369-control-backend-authority-materialization.md), [AR-1376](../tasks/AR-1376-runtime-live-adapter.md), [AR-1377](../tasks/AR-1377-runtime-chain-store.md), [AR-1378](../tasks/AR-1378-live-control-adapter.md), [AR-1379](../tasks/AR-1379-live-dispatch-integration.md), [AR-1380](../tasks/AR-1380-runtime-scheduler-composition.md), [AR-1381](../tasks/AR-1381-live-cli-scheduler-wiring.md) |
