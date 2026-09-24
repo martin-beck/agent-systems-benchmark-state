@@ -8,18 +8,18 @@
   ],
   "id": "AR-1422",
   "next_action": "Promote and claim with a coordinator worker; verify PR #306 is a stale duplicate of current main, record exact evidence, comment, and close it as superseded without merging.",
-  "observed_branch": "",
+  "observed_branch": "codex/ar-1422-stale-pr-cleanup",
   "observed_dirty": 0,
-  "observed_head": "0000000000000000000000000000000000000000",
+  "observed_head": "5ddac12fc0b2d9fbff2b056af888b9ec76edeee5",
   "owner": "open-pr-triage-luna56",
   "plan": "../plans/AR-1422.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Close stale conflicting agent-catalog PR #306 through durable coordinator evidence.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Stale agent-catalog PR cleanup",
-  "updated_at": "2026-09-24T19:40:46+00:00",
+  "updated_at": "2026-09-24T19:40:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1422"
 }
 ---
