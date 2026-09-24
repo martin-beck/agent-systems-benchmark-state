@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire deterministic local mock attempts into asb run and sweep configuration qualification.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Local mock CLI wiring",
-  "updated_at": "2026-09-24T23:57:03+00:00",
+  "updated_at": "2026-09-24T23:57:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1435-local-mock-cli-wiring"
 }
 ---
@@ -82,3 +82,6 @@ it must not contact OpenRouter or any external provider, mint
   Corrected commands explicitly cd into product worktree; focused CLI config run/sweep and runtime
   local_mock tests passed. A later exit-101 at 23:56:40 is retained for diagnosis after the bounded
   workspace rerun. Worktree key and product checkpoint are durably bound.
+
+- 2026-09-24T23:57:24+00:00: Recorded command exit 101; command argv SHA-256
+  f55a6cbd5a578a86a9ceab36c982c17dd9622f0086e482a753a9cd498776a288.
