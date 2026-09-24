@@ -17,7 +17,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1378](../tasks/AR-1378-live-control-adapter.md): Authenticated live control adapter | codex-asb-runtime-receipt-source-luna56 | Bind authenticated control receipts to runtime-owned live dispatch. | Signed+DCO implementation 5f1902c is clean. Runtime focused live_service tests (20), cargo check -p asb-runtime --locked, and clippy -p asb-runtime --all-targets --locked -D warnings pass. Independently review adapter privacy and publish exact-head PR. |
+| P0 | [AR-1378](../tasks/AR-1378-live-control-adapter.md): Authenticated live control adapter | codex-asb-runtime-receipt-source-luna56 | Bind authenticated control receipts to runtime-owned live dispatch. | PR #275 is published at exact head 5f1902c. Monitor all required checks; repair failures through handoffctl, merge only after independent review and green exact-head CI, then verify seven post-merge workflows. |
 
 ### Open (4)
 

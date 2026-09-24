@@ -10,7 +10,7 @@
     "AR-1362"
   ],
   "id": "AR-1378",
-  "next_action": "Signed+DCO implementation 5f1902c is clean. Runtime focused live_service tests (20), cargo check -p asb-runtime --locked, and clippy -p asb-runtime --all-targets --locked -D warnings pass. Independently review adapter privacy and publish exact-head PR.",
+  "next_action": "PR #275 is published at exact head 5f1902c. Monitor all required checks; repair failures through handoffctl, merge only after independent review and green exact-head CI, then verify seven post-merge workflows.",
   "observed_branch": "feature/ar-1378-live-control-adapter",
   "observed_dirty": 0,
   "observed_head": "5f1902c681c9671d332ae662f0516df4d1f688df",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind authenticated control receipts to runtime-owned live dispatch.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Authenticated live control adapter",
-  "updated_at": "2026-09-24T03:12:17+00:00",
+  "updated_at": "2026-09-24T03:12:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1378-live-control-adapter"
 }
 ---
@@ -72,3 +72,9 @@ chain store; this task supplies only the authenticated control operation seam.
 
 - 2026-09-24T03:12:17+00:00: Recorded command exit 0; command argv SHA-256
   78a02e2f11431111256149c8ca3a3ba4586f2d3710e11e6f9cbe0c5fe6efaa55.
+
+- 2026-09-24T03:12:49+00:00: Independent review passed: adapter accepts only typed RuntimeReceipt
+  responses from authenticated ControlClient and an opaque chain from RuntimeCertificateChainStore;
+  no secrets, paths, certificate bytes, caller identities, or synthetic authority cross the
+  boundary. Existing nonce/generation/replay/expiry/tamper checks remain authoritative. PR #275
+  published clean with signed+DCO head.
