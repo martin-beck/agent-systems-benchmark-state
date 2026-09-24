@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compose runtime-owned live attempts for production run and sweep scheduling.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Runtime scheduler composition for live dispatch",
-  "updated_at": "2026-09-24T03:41:18+00:00",
+  "updated_at": "2026-09-24T03:41:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1380-runtime-scheduler-composition"
 }
 ---
@@ -98,3 +98,6 @@ composition gap without weakening authority boundaries.
   secrets/private paths. SSH signature and DCO verified. PR #276 published.
 
 - 2026-09-24T03:41:18+00:00: Heartbeat by codex-asb-runtime-receipt-source-luna56.
+
+- 2026-09-24T03:41:21+00:00: Recorded command exit 1; command argv SHA-256
+  7b6cfc93a852a07a9bec638b9c7a5b86734a3f208b11a09b41c7020ded0ca41b.
