@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-24T13:22:45+00:00",
   "depends_on": [],
   "id": "AR-1313",
-  "next_action": "Publish the current-main signed recovery candidate as a PR, run exact-head checks and independent review, then merge only after all required checks pass.",
+  "next_action": "PR #290 is open at signed head 3420355 on exact base e41d4df; wait for all exact-head checks, record independent review, then merge with signed integration tool.",
   "observed_branch": "repair/ar-1313-historical-dco-909078c",
   "observed_dirty": 0,
   "observed_head": "3420355d8a0855aea696775cfe85cc628773c842",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Forward-only signed DCO recovery candidate published as PR #231.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Historical DCO merge-integrity recovery",
-  "updated_at": "2026-09-24T11:22:45+00:00",
+  "updated_at": "2026-09-24T11:22:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1313-historical-dco-909078c"
 }
 ---
@@ -102,3 +102,8 @@ blocked with the exact failure and do not weaken the policy.
   8c593b651bedbbe2f5d1bc6dbe6dfe678a271993ff0d51dd317b7fcda2e962d1.
 
 - 2026-09-24T11:22:45+00:00: Heartbeat by ar1313_recovery_luna56.
+
+- 2026-09-24T11:22:55+00:00: PR #290 created after stale PR #231 was proven based on old 78a8e9f.
+  Exact base e41d4df and head 3420355; initial checks are running. The handoffctl PR command
+  completed remotely but state lock timed out afterward; this update reconciles the durable
+  evidence.

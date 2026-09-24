@@ -63,7 +63,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1313](../tasks/AR-1313-historical-dco-909078c-repair.md): Historical DCO merge-integrity recovery | ar1313_recovery_luna56 | Forward-only signed DCO recovery candidate published as PR #231. | Publish the current-main signed recovery candidate as a PR, run exact-head checks and independent review, then merge only after all required checks pass. |
+| P0 | [AR-1313](../tasks/AR-1313-historical-dco-909078c-repair.md): Historical DCO merge-integrity recovery | ar1313_recovery_luna56 | Forward-only signed DCO recovery candidate published as PR #231. | PR #290 is open at signed head 3420355 on exact base e41d4df; wait for all exact-head checks, record independent review, then merge with signed integration tool. |
 | P1 | [AR-1400](../tasks/AR-1400-literature-catalog-activation.md): Literature workload catalog activation | ar1400_catalog_activation_luna56 | Expose all documented literature workloads as truthful selectable candidates beside built-in fixtures. | Promote after AR-1396 and AR-1399 are verified done; implement the unified candidate catalog and fail-closed CLI selection contract. |
 
 ### Open (3)
