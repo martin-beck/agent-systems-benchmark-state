@@ -19,7 +19,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36066329422 | `e82e2e6f8a03` | push | Fault assurance | in_progress:- |
 | 36066329347 | `e82e2e6f8a03` | push | Repository quality | completed:failure |
 | 36066329321 | `e82e2e6f8a03` | push | Formal assurance | in_progress:- |
-| 36066329310 | `e82e2e6f8a03` | push | Hosted portability and native qualification | in_progress:- |
+| 36066329310 | `e82e2e6f8a03` | push | Hosted portability and native qualification | completed:success |
 | 36066329270 | `e82e2e6f8a03` | push | Emulated aarch64 portability | in_progress:- |
 | 36066329238 | `e82e2e6f8a03` | push | Rust verification | in_progress:- |
 | 36065678512 | `8d1889b7a774` | push | Emulated aarch64 portability | completed:success |
