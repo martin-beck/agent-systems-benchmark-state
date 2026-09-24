@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach users to test configured-agent benchmark eligibility without running an agent.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Agent benchmark-readiness tutorial",
-  "updated_at": "2026-09-24T19:06:02+00:00",
+  "updated_at": "2026-09-24T19:06:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1212"
 }
 ---
@@ -119,3 +119,6 @@ Implement the linked tutorial and deterministic negative/positive syntax fixture
   quality scans all introduced commits. Rewrite this private PR branch from its merge-base, retain
   the multiline fixture, create one fresh SSH-signed DCO commit, force-with-lease push, then rerun
   exact-base gitleaks and gates.
+
+- 2026-09-24T19:06:15+00:00: Recorded command exit 0; command argv SHA-256
+  8d33b46cb7d9ff2de61773748f1855c407471becc7a0046f3ed37b285064dfb0.
