@@ -22,11 +22,11 @@
   "plan": "../plans/AR-1391-runtime-control-bootstrap-constructor.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Materialize authenticated runtime live authority into an opaque source without caller injection.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Runtime control bootstrap constructor",
-  "updated_at": "2026-09-24T07:43:00+00:00",
+  "updated_at": "2026-09-24T07:42:41+00:00",
   "worktree_key": ""
 }
 ---
@@ -34,3 +34,6 @@
 This narrow successor owns the missing authority source identified by the
 AR-1390 audit. It must not touch asb-tui, synthesize authority, or require an
 external provider connection for development or CI.
+
+- 2026-09-24T07:42:41+00:00: Runtime authority dependencies verified; AR-1390 audit identified this
+  exact missing authenticated constructor.
