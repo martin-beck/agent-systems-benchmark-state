@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize authenticated runtime-owned live execution for asb run and sweep.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Authenticated live execution source",
-  "updated_at": "2026-09-24T04:40:09+00:00",
+  "updated_at": "2026-09-24T04:40:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1382-authenticated-live-execution-source"
 }
 ---
@@ -39,3 +39,6 @@ preserving the no-caller-authority and fail-closed boundaries.
 - 2026-09-24T04:39:42+00:00: Claimed by codex-asb-runtime-receipt-source-luna56.
 
 - 2026-09-24T04:40:09+00:00: Heartbeat by codex-asb-runtime-receipt-source-luna56.
+
+- 2026-09-24T04:40:12+00:00: Recorded command exit 0; command argv SHA-256
+  90d50406c67713c28d05e22fd6767e828550a2c471abec654c9cb200088c9830.
