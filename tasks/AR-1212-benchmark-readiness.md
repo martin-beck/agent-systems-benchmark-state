@@ -9,17 +9,17 @@
   "id": "AR-1212",
   "next_action": "PR #305 is published at exact signed head; obtain independent review, wait for all required checks, then merge and verify post-merge workflows.",
   "observed_branch": "codex/ar-1212-benchmark-readiness",
-  "observed_dirty": 1,
-  "observed_head": "0edd9935ca907aac736d3244bdd00d9a47d687e8",
+  "observed_dirty": 0,
+  "observed_head": "b142bdde19bf00d0fdffcdbca3c965d2d457b808",
   "owner": "open-pr-triage-luna56",
   "plan": "../plans/AR-1212.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Teach users to test configured-agent benchmark eligibility without running an agent.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Agent benchmark-readiness tutorial",
-  "updated_at": "2026-09-24T18:59:06+00:00",
+  "updated_at": "2026-09-24T18:59:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1212"
 }
 ---
