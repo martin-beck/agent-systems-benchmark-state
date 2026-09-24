@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T15:27:36+00:00",
   "depends_on": [
     "AR-1400",
     "AR-1402"
@@ -12,15 +12,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "",
+  "owner": "ar1404_literature_documentation_luna56b",
   "plan": "../plans/AR-1404-literature-documentation-matrix.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Generate and verify the literature workload documentation and evidence-state matrix.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Literature workload documentation and matrix contract",
-  "updated_at": "2026-09-24T13:26:59+00:00",
+  "updated_at": "2026-09-24T13:27:36+00:00",
   "worktree_key": ""
 }
 ---
@@ -30,3 +30,5 @@ state that diverges from the versioned catalog.
 
 - 2026-09-24T13:26:59+00:00: Catalog and CLI contracts are now integrated; generate and verify
   literature documentation/evidence parity.
+
+- 2026-09-24T13:27:36+00:00: Claimed by ar1404_literature_documentation_luna56b.
