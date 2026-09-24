@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar-1212-benchmark-readiness",
   "checkpoint_commit": "a2a641417547937ee695f4f6cac53194ba47121e",
-  "claim_expires": "2026-09-24T21:32:56+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1211"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "codex/ar-1212-benchmark-readiness",
   "observed_dirty": 0,
   "observed_head": "3fda4b4eb63f928cd446274d9e36af08b5579845",
-  "owner": "open-pr-triage-luna56",
+  "owner": "",
   "plan": "../plans/AR-1212.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Teach users to test configured-agent benchmark eligibility without running an agent.",
-  "task_revision": 75,
+  "task_revision": 76,
   "title": "Agent benchmark-readiness tutorial",
-  "updated_at": "2026-09-24T19:34:28+00:00",
+  "updated_at": "2026-09-24T19:34:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1212"
 }
 ---
@@ -236,3 +236,10 @@ Implement the linked tutorial and deterministic negative/positive syntax fixture
   36048088687, repository quality 36048088715, Rust 36048088861, Huawei headers 36048088696, formal
   36048088790, fault 36048088820. Main remains exact signed merge with matching DCO, parents, and
   tree.
+
+- 2026-09-24T19:34:47+00:00: AR-1212 completed: PR #305 exact signed/DCO head 3fda4b4 independently
+  reviewed and merged via signed protected merge a2a641417547937ee695f4f6cac53194ba47121e. Verified
+  origin/main exact parents 0dcc717/3fda4b4, tree 9b4ad618, Good SSH signature and matching
+  Signed-off-by. All seven exact-main post-merge workflows terminal SUCCESS: hosted 36048088771,
+  aarch64 36048088687, quality 36048088715, Rust 36048088861, headers 36048088696, formal
+  36048088790, fault 36048088820.
