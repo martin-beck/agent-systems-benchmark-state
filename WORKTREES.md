@@ -450,7 +450,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-readiness` | `DETACHED` | `78a8e9fc2144` | 0 | behind 260, ahead 0 |
 | `asb-recording-audit.vnDk3k` | `DETACHED` | `f205ff90dbc9` | 0 | behind 254, ahead 0 |
 | `pr256-review` | `DETACHED` | `0c19231abaf4` | 0 | behind 188, ahead 0 |
-| `agent-systems-benchmark-state` | `main` | `215ee48cd038` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-state` | `main` | `a5b7b2c9bcf8` | 6 | behind 0, ahead 1 |
+| changed files | - | - | - | `STATUS.md`, `status/STATUS-0001.md`, `status/STATUS-0002.md`, `status/STATUS-0003.md`, `plans/AR-1432-local-openrouter-execution-bridge.md`, `tasks/AR-1432-local-openrouter-execution-bridge.md` |
 | `agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity` | `feature/ar-1308-full-exhaustive-qemu-capacity` | `659030fffd7e` | 0 | behind 8848, ahead 0 |
 | `agent-systems-benchmark-coordination-assurance` | `feature/coordination-assurance` | `adfde31ad408` | 0 | behind 36728, ahead 0 |
 | `agent-systems-benchmark-coordination-lint-regression` | `fix/handoffctl-apply-resume-lint` | `746042a0e55e` | 0 | behind 31471, ahead 0 |
