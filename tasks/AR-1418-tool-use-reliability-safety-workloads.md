@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1418.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Add selectable tool-use reliability and safety workloads from the literature with separate metrics.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Tool-use reliability and safety workloads",
-  "updated_at": "2026-09-24T19:10:00+00:00",
+  "updated_at": "2026-09-24T19:12:21+00:00",
   "worktree_key": ""
 }
 ---
@@ -31,3 +31,6 @@ deterministic public fixtures or a loopback LiteLLM-compatible mock.
 Reliability, utility, and policy-violation outcomes must remain separate evidence
 dimensions; no aggregate score may hide unsafe or failed tool calls.
 
+
+- 2026-09-24T19:12:21+00:00: Dependencies AR-1416 and AR-1408 verified done; open tool-use
+  reliability and safety workload implementation.
