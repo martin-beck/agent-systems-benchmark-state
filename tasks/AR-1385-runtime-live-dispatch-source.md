@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize the authenticated runtime-owned live dispatch source for production asb run and sweep.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Authenticated runtime live dispatch source",
-  "updated_at": "2026-09-24T05:59:19+00:00",
+  "updated_at": "2026-09-24T05:59:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1385-runtime-live-dispatch-source"
 }
 ---
@@ -92,3 +92,6 @@ namespace identity, or launch authority.
   Martin Beck <martin-beck@users.noreply.github.com> did not match the signing identity accepted by
   repository policy (Martin Beck <martin.beck2@gmx.de>). No gate weakening; repair by amending the
   signed commit with the matching DCO trailer.
+
+- 2026-09-24T05:59:33+00:00: Recorded command exit 0; command argv SHA-256
+  0103c0fde7949198d19cac1a97ace444dee04559a62c422aac73ac37d129b93d.
