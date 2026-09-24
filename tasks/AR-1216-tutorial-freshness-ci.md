@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Continuously keep ASB tutorial commands and steps syntactically current.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "ASB tutorial freshness CI and documentation qualification",
-  "updated_at": "2026-09-24T22:02:36+00:00",
+  "updated_at": "2026-09-24T22:03:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1216"
 }
 ---
@@ -60,3 +60,6 @@ tutorial command or require a provider/LLM connection.
   metadata, documentation references, deterministic diagnostics, renamed/removed command and option
   mutations, clean-home execution, and no process/network imports. Local 28 tutorial tests,
   freshness gate, Ruff, diff check, SSH signature and DCO passed.
+
+- 2026-09-24T22:03:32+00:00: Recorded command exit 0; command argv SHA-256
+  c2d1df31cb0d40c80075ceceb089eb0d6a02a356d52a65238ec1c5de5d48d9e5.
