@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1396](tasks/AR-1396-literature-workload-selection.md): Literature workload selection | Make qualified literature workload families selectable beside built-in ASB software-engineering fixtures. | PR #288 exact head 58bc56f0b793c4f42e83cbe27515d63d22cfda51; fresh checks pending after CLI fail-closed validation repair. Review remaining OriginalWorkloads seams before merge. | codex-asb-ar1396-literature-selection-luna56 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -423,6 +417,7 @@ Never edit this file directly.
 | P1 | [AR-1352](tasks/AR-1352-runtime-live-bootstrap.md): Runtime-owned live bootstrap | Add the private runtime-owned bootstrap source for live acquisition. | Release AR-1352 done with merge and post-merge evidence; advance dependent AR-1349 while keeping AR-1329 fail-closed. | - |
 | P1 | [AR-1394](tasks/AR-1394-literature-workload-registry.md): Literature workload registry expansion | Catalog every documented literature benchmark with provenance and truthful qualification status. | Promote after the existing provenance ARs are verified, then add the strict literature workload inventory schema, entries, and generated docs. | - |
 | P1 | [AR-1395](tasks/AR-1395-literature-workload-adapters.md): Literature workload adapter boundary | Normalize approved literature tasks through bounded, non-vendored ASB workload adapters. | Exact merge post-merge Repository quality and Rust runs were cancelled by later main push c58b0b0a; after that main queue terminates, rerun both exact merge workflows and require success before release. | - |
+| P1 | [AR-1396](tasks/AR-1396-literature-workload-selection.md): Literature workload selection | Make qualified literature workload families selectable beside built-in ASB software-engineering fixtures. | PR #288 exact head 58bc56f0b793c4f42e83cbe27515d63d22cfda51; fresh checks pending after CLI fail-closed validation repair. Review remaining OriginalWorkloads seams before merge. | - |
 | P1 | [AR-1399](tasks/AR-1399-literature-workload-registry-completeness.md): Literature workload registry completeness | Represent every docs-listed literature workload family in the strict ASB registry. | Dependency branch e63a3c6 already contains complete six executable-candidate literature records and methodology-only AgentOps/HELM; focused validator/tests pass. Await parent integration decision; no duplicate product delta. | - |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Run final exact-main and local post-merge verification using required native x86_64 kernel evidence and applicable pinned QEMU AArch64 portability checks; record native ARM64 PMU/eBPF as optional future evidence, then release. | - |
 | P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Run final state validation/live doctor and release done after confirming clean synchronized product/state refs at signed merge a0d80e4. | - |

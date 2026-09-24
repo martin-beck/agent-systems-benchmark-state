@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar-1396-literature-selection",
   "checkpoint_commit": "58bc56f0b793c4f42e83cbe27515d63d22cfda51",
-  "claim_expires": "2026-09-24T12:18:05+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1395",
     "AR-1399"
@@ -12,15 +12,15 @@
   "observed_branch": "codex/ar-1396-literature-selection",
   "observed_dirty": 0,
   "observed_head": "58bc56f0b793c4f42e83cbe27515d63d22cfda51",
-  "owner": "codex-asb-ar1396-literature-selection-luna56",
+  "owner": "",
   "plan": "../plans/AR-1396-literature-workload-selection.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Make qualified literature workload families selectable beside built-in ASB software-engineering fixtures.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Literature workload selection",
-  "updated_at": "2026-09-24T10:58:05+00:00",
+  "updated_at": "2026-09-24T10:58:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1396"
 }
 ---
@@ -202,3 +202,12 @@ platform gates.
 
 - 2026-09-24T10:58:05+00:00: Recorded command exit 0; command argv SHA-256
   3e856e62df2701236c7b10dc2a23cdac248a9b1ae1fd605ca92cdc41f6d37237.
+
+- 2026-09-24T10:58:27+00:00: Merged PR #288 through local signed integration: merge
+  e41d4df86e57af5b58cc7500fcc44cec2e445, base b63394b167d453738364f4eca73af76838ef1937, reviewed
+  head 58bc56f0b793c4f42e83cbe27515d63d22cfda51, tree e1120e9e66c6b3f542c805cefaa37850fa5d98eb. All
+  seven exact-main post-merge workflows succeeded: Repository quality 35989465134; Rust verification
+  35989465100; Emulated aarch64 35989465113; Hosted portability 35989465164; Formal assurance
+  35989465162; Fault assurance 35989465124; Huawei MIT headers 35989465149. Focused and full
+  workspace tests passed; CLI provenance repair and catalog-aware fail-closed literature plan
+  validation included.
