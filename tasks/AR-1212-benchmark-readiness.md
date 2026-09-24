@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar-1212-benchmark-readiness",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T20:50:15+00:00",
   "depends_on": [
     "AR-1211"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "docs/ar-1212-benchmark-readiness",
   "observed_dirty": 0,
   "observed_head": "a4934fca0b528ac90d09fb537936584f5af0f75e",
-  "owner": "",
+  "owner": "open-pr-triage-luna56",
   "plan": "../plans/AR-1212.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Teach users to test configured-agent benchmark eligibility without running an agent.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Agent benchmark-readiness tutorial",
-  "updated_at": "2026-09-23T05:57:19+00:00",
+  "updated_at": "2026-09-24T18:50:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1212"
 }
 ---
@@ -34,3 +34,5 @@ Implement the linked tutorial and deterministic negative/positive syntax fixture
 - 2026-09-23T05:57:19+00:00: Recovered expired claim formerly owned by asb_tui_tutorial_20260922.
   Recovered expired claim after verifying no active AR-1212 worker process; preserved tutorial
   worktree/evidence for later reassignment.
+
+- 2026-09-24T18:50:15+00:00: Claimed by open-pr-triage-luna56.
