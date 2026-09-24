@@ -1,6 +1,6 @@
 ---
 {
-  "branch": "",
+  "branch": "codex/ar-1408-literature-inventory",
   "checkpoint_commit": "",
   "claim_expires": "2026-09-24T14:41:03+00:00",
   "depends_on": [
@@ -21,7 +21,7 @@
   "task_revision": 3,
   "title": "Literature workload inventory closure",
   "updated_at": "2026-09-24T12:41:03+00:00",
-  "worktree_key": ""
+  "worktree_key": "agent-systems-benchmark-ar-1408"
 }
 ---
 
