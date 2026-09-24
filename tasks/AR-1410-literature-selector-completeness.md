@@ -12,7 +12,7 @@
     "AR-1413"
   ],
   "id": "AR-1410",
-  "next_action": "Coordinator must bind branch codex/ar-1410-literature-selector-parity and worktree agent-systems-benchmark-ar-1410; then inspect and implement final literature selector parity gate.",
+  "next_action": "Align generated capability tags with Rust, run focused/full workload and CLI gates, then signed commit and PR exact-head review.",
   "observed_branch": "codex/ar-1410-literature-selector-parity",
   "observed_dirty": 5,
   "observed_head": "8da098770e4a78e94f67cf7b13dbebbcd1c5bbac",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Literature selector completeness and parity",
-  "updated_at": "2026-09-24T16:47:23+00:00",
+  "updated_at": "2026-09-24T16:48:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1410"
 }
 ---
@@ -93,3 +93,9 @@ does not turn external qualification or live-provider access into a prerequisite
 
 - 2026-09-24T16:47:23+00:00: Recorded command exit 0; command argv SHA-256
   26ce0eb149872fe75201d224784043e0bc8f64a136cda0bc2bc5c0be03d1172d.
+
+- 2026-09-24T16:48:06+00:00: Recorded exit-101 diagnosis: focused literature test expected swe-bench
+  Err(Unavailable) after selector repair, but actual intended result was Ok with platform
+  linux-x86_64:fixture-only and availability FixtureOnly. Diagnostic exact test rerun passed after
+  updating the stale assertion; the broader literature suite then passed 12 tests. No failure was
+  suppressed.

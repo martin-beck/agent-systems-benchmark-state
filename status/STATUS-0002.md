@@ -74,7 +74,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1410](../tasks/AR-1410-literature-selector-completeness.md): Literature selector completeness and parity | ar1410-literature-selector-parity-luna56 | Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads. | Coordinator must bind branch codex/ar-1410-literature-selector-parity and worktree agent-systems-benchmark-ar-1410; then inspect and implement final literature selector parity gate. |
+| P1 | [AR-1410](../tasks/AR-1410-literature-selector-completeness.md): Literature selector completeness and parity | ar1410-literature-selector-parity-luna56 | Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads. | Align generated capability tags with Rust, run focused/full workload and CLI gates, then signed commit and PR exact-head review. |
 
 ### Open (2)
 
