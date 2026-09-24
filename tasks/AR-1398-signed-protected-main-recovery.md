@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1398-signed-protected-main-recovery",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T12:00:09+00:00",
   "depends_on": [
     "AR-1337"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "",
+  "owner": "ar1398_signed_recovery_luna56",
   "plan": "../plans/AR-1398-signed-protected-main-recovery.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Restore signed+DCO protected-main evidence after an unsigned GitHub-generated repair merge.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Signed protected-main recovery",
-  "updated_at": "2026-09-24T09:58:18+00:00",
+  "updated_at": "2026-09-24T10:00:09+00:00",
   "worktree_key": ""
 }
 ---
@@ -32,3 +32,5 @@ providers are never required for development evidence.
 
 - 2026-09-24T09:58:18+00:00: Protected-main audit requires signed descendant recovery after PR #286
   merge 123ba915; preserve historical evidence and restore signed+DCO exact-main proof.
+
+- 2026-09-24T10:00:09+00:00: Claimed by ar1398_signed_recovery_luna56.
