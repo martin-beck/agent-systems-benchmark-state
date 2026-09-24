@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1366-runtime-dispatch-consumer",
-  "checkpoint_commit": "e11e994e8df87a45ec64b64edfb0f3988aae0157",
+  "checkpoint_commit": "0c6dc52e1f4aa5854f73081711dbd9a5bc1a5d7c",
   "claim_expires": "2026-09-24T02:32:23+00:00",
   "depends_on": [
     "AR-1362",
@@ -9,7 +9,7 @@
     "AR-1365"
   ],
   "id": "AR-1366",
-  "next_action": "PR #270 is open at exact head e11e994e8df87a45ec64b64edfb0f3988aae0157. Monitor all required checks; diagnose and repair any failure through governed workflow, merge only after independent review and all checks green, then verify all seven post-merge workflows.",
+  "next_action": "PR #270 merged as 0c6dc52e1f4aa5854f73081711dbd9a5bc1a5d7c. Monitor seven post-merge workflows for exact merge SHA; release only after every workflow is terminal success.",
   "observed_branch": "feature/ar-1366-runtime-dispatch-consumer",
   "observed_dirty": 0,
   "observed_head": "e11e994e8df87a45ec64b64edfb0f3988aae0157",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect runtime-owned authenticated receipt consumption to the benchmark dispatch path without exposing authority to CLI callers.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Runtime-owned dispatch consumer",
-  "updated_at": "2026-09-24T00:33:24+00:00",
+  "updated_at": "2026-09-24T00:33:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1366-runtime-dispatch-consumer"
 }
 ---
@@ -85,3 +85,7 @@ synthesize authority from CLI/config input.
 
 - 2026-09-24T00:33:24+00:00: Recorded command exit 0; command argv SHA-256
   2b3b0bfaf075e1aa9a69a26717ec3ab1511737b95622925bc103a743eedaf107.
+
+- 2026-09-24T00:33:55+00:00: Protected merge verified: PR #270 exact head
+  e11e994e8df87a45ec64b64edfb0f3988aae0157 merged at 0c6dc52e1f4aa5854f73081711dbd9a5bc1a5d7c after
+  all 12 exact-head checks and final signature/DCO/diff review passed.

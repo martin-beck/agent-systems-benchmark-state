@@ -1871,7 +1871,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md): Runtime-owned dispatch consumer | codex-asb-runtime-attested-enrollment-luna56 | Connect runtime-owned authenticated receipt consumption to the benchmark dispatch path without exposing authority to CLI callers. | PR #270 is open at exact head e11e994e8df87a45ec64b64edfb0f3988aae0157. Monitor all required checks; diagnose and repair any failure through governed workflow, merge only after independent review and all checks green, then verify all seven post-merge workflows. |
+| P0 | [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md): Runtime-owned dispatch consumer | codex-asb-runtime-attested-enrollment-luna56 | Connect runtime-owned authenticated receipt consumption to the benchmark dispatch path without exposing authority to CLI callers. | PR #270 merged as 0c6dc52e1f4aa5854f73081711dbd9a5bc1a5d7c. Monitor seven post-merge workflows for exact merge SHA; release only after every workflow is terminal success. |
 
 ### Open (4)
 
