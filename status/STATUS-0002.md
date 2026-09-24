@@ -65,13 +65,18 @@
 
 ## Complete AR inventory
 
-### Open (3)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-1402](../tasks/AR-1402-literature-cli-dispatch-integration.md): Literature workload CLI dispatch integration | ar1402_literature_cli_luna56 | Integrate literature workload catalog and adapters through all ASB CLI execution and evidence paths. | Promote after AR-1401 is done; replace OriginalWorkloads-only CLI seams with catalog/adapter dispatch and run end-to-end offline tests. |
+
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1212](../tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Unclaimed | Teach users to test configured-agent benchmark eligibility without running an agent. | Implement the offline tutorial for checking agent benchmark readiness under the current configuration. |
 | P0 | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | Unclaimed | Publish the verified ASB agent catalog required by the first-run setup wizard. | Persist the authenticated catalog snapshot/generation and complete live ASB-to-asb-tui wizard evidence; keep all entries unavailable until a verified release closure exists. |
-| P1 | [AR-1402](../tasks/AR-1402-literature-cli-dispatch-integration.md): Literature workload CLI dispatch integration | Unclaimed | Integrate literature workload catalog and adapters through all ASB CLI execution and evidence paths. | Promote after AR-1401 is done; replace OriginalWorkloads-only CLI seams with catalog/adapter dispatch and run end-to-end offline tests. |
 
 ### Blocked (66)
 
