@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile.",
-  "task_revision": 133,
+  "task_revision": 134,
   "title": "Optional runtime-bundle signing for development and tagged releases",
-  "updated_at": "2026-09-24T09:17:48+00:00",
+  "updated_at": "2026-09-24T09:18:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1314-optional-bundle-signing"
 }
 ---
@@ -344,3 +344,6 @@ reviewed signed input bundle and terminal attestation.
   attempt 3 is active; emulated AArch64 remains active; Repository quality attempt 3 is being
   confirmed after failure attempt 2 with protected-main merge-tree mismatch. No release/close until
   terminal-success evidence.
+
+- 2026-09-24T09:18:49+00:00: Recorded command exit 0; command argv SHA-256
+  87ec549cbd1b9efc57f260f7fb458b2ecafea654932e643c3e0b1ff930516656.
