@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**395 ARs tracked** across 7 active status categories.
+**396 ARs tracked** across 7 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 4 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 57 |
-| **Planned** | Defined work awaiting promotion or dependencies | 65 |
+| **Planned** | Defined work awaiting promotion or dependencies | 66 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 250 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -464,6 +464,7 @@ flowchart LR
         AR_1369["AR-1369 - Superseded"]:::status_superseded
         AR_1370["AR-1370 - Planned"]:::status_planned
         AR_1371["AR-1371 - In progress"]:::status_in_progress
+        AR_1372["AR-1372 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1888,6 +1889,7 @@ flowchart LR
 | [AR-1369](../tasks/AR-1369-control-backend-authority-materialization.md) | [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md), [AR-1364](../tasks/AR-1364-authenticated-chain-enrollment.md), [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md) | [AR-1370](../tasks/AR-1370-runner-authority-materialization.md) |
 | [AR-1370](../tasks/AR-1370-runner-authority-materialization.md) | [AR-1288](../tasks/AR-1288-certificate-chain-authz.md), [AR-1369](../tasks/AR-1369-control-backend-authority-materialization.md) | None |
 | [AR-1371](../tasks/AR-1371-runner-authority-injection.md) | [AR-1288](../tasks/AR-1288-certificate-chain-authz.md) | None |
+| [AR-1372](../tasks/AR-1372-topology-repair.md) | None | None |
 
 ## Complete AR inventory
 
@@ -1901,4 +1903,3 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1212](../tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Unclaimed | Teach users to test configured-agent benchmark eligibility without running an agent. | Implement the offline tutorial for checking agent benchmark readiness under the current configuration. |
