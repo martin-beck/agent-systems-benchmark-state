@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair protected-main merge-tree admission and serialize exact post-merge evidence across concurrent main pushes.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Protected-main post-merge concurrency and tree repair",
-  "updated_at": "2026-09-24T09:35:50+00:00",
+  "updated_at": "2026-09-24T09:44:59+00:00",
   "worktree_key": ""
 }
 ---
@@ -67,3 +67,6 @@ it must retain the default signature-required and exact-tree gates.
   1bcd946b30a2fa40e27174ebbbecc0af23d82b33 and published as PR #286. Focused 11-test integration
   suite, repository policy, fmt, Clippy, and locked workspace tests passed. PR checks are currently
   in progress; no merge yet.
+
+- 2026-09-24T09:44:59+00:00: Recorded command exit 1; command argv SHA-256
+  c31e3e361df5c97d060f9debcf63ff3b5a82541646dcfb236a91aaecb42913dc.
