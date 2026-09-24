@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Complete production asb run/sweep live-provider dispatch through runtime-owned authenticated acquisition and teardown.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "AR-1329 production dispatch integration",
-  "updated_at": "2026-09-24T05:39:13+00:00",
+  "updated_at": "2026-09-24T05:39:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1367-ar1329-production-dispatch-integration"
 }
 ---
@@ -51,3 +51,6 @@ metadata, touch asb-tui, or expose live authority through CLI/config input.
   successor for runtime-owned production dispatch integration.
 
 - 2026-09-24T05:39:13+00:00: Claimed by codex-asb-ar1329-repair-luna56.
+
+- 2026-09-24T05:39:46+00:00: Recorded command exit 0; command argv SHA-256
+  a1159e9df3670d549d04524532629f5477ceb7deec9b45e47e8c009506ecb2c8.
