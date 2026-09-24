@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify and merge remaining immutable GitHub action pin updates without weakening policy.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Action pin policy migration",
-  "updated_at": "2026-09-24T15:46:34+00:00",
+  "updated_at": "2026-09-24T15:46:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1406"
 }
 ---
@@ -115,3 +115,6 @@ No floating action reference or unverifiable release identity is acceptable.
 
 - 2026-09-24T15:46:34+00:00: Recorded command exit 0; command argv SHA-256
   321c534968b9c456a64caf5e6d09b63780c507f97548057d2bfe31edcfd73ff4.
+
+- 2026-09-24T15:46:57+00:00: Recorded command exit 0; command argv SHA-256
+  38c4673b266fc0f84b459905853608b49650cf5f5cede2cc3516ebfc9f2a393c.
