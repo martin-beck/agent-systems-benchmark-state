@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated ControlBackend runtime receipt source for AR-1329 production dispatch.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Authenticated runtime receipt source",
-  "updated_at": "2026-09-24T02:03:52+00:00",
+  "updated_at": "2026-09-24T02:04:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1373-authenticated-receipt-source"
 }
 ---
@@ -110,3 +110,6 @@ provider support from setup metadata alone.
 
 - 2026-09-24T02:03:52+00:00: Recorded command exit 0; command argv SHA-256
   404aa6c1c38f1fe9361a453695531592b1d5abf2fb45ed0b61971133a20ddcdb.
+
+- 2026-09-24T02:04:06+00:00: Recorded command exit 0; command argv SHA-256
+  85c13e6f44f9c7a3b03f5b4907f42219777c326c3e2d251cfe480e449017fd84.
