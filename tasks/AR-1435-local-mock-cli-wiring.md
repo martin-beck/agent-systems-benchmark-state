@@ -8,15 +8,18 @@
   ],
   "id": "AR-1435",
   "next_action": "Run focused CLI/runtime tests and full locked workspace gates, then review exact diff and publish signed+DCO PR.",
+  "observed_branch": "feature/ar-1435-local-mock-cli-wiring",
+  "observed_dirty": 0,
+  "observed_head": "2b47c571afc3c22cd72ca2795807d1bd53db5418",
   "owner": "codex-asb-ar1435-local-mock-luna56",
   "plan": "../plans/AR-1435-local-mock-cli-wiring.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire deterministic local mock attempts into asb run and sweep configuration qualification.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Local mock CLI wiring",
-  "updated_at": "2026-09-24T23:56:40+00:00",
+  "updated_at": "2026-09-24T23:56:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1435-local-mock-cli-wiring"
 }
 ---
