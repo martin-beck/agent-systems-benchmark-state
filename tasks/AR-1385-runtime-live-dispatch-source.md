@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1385-runtime-live-dispatch-source",
-  "checkpoint_commit": "2313d9053f77a39cb4194cef44fac31446eace77",
+  "checkpoint_commit": "02b79f35932c4fdfcb6f0348955b65543eca9bab",
   "claim_expires": "2026-09-24T06:52:45+00:00",
   "depends_on": [
     "AR-1384",
@@ -11,7 +11,7 @@
     "AR-1381"
   ],
   "id": "AR-1385",
-  "next_action": "PR #280 force-updated to DCO-correct signed exact head 2313d90; monitor fresh required checks, repair only evidenced failures, then merge only after independent review and all checks green.",
+  "next_action": "PR #280 force-updated to signed+DCO exact head 02b79f3; monitor fresh required checks, repair only evidenced failures, then merge only after independent review and all checks green.",
   "observed_branch": "feature/ar-1385-runtime-live-dispatch-source",
   "observed_dirty": 0,
   "observed_head": "02b79f35932c4fdfcb6f0348955b65543eca9bab",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize the authenticated runtime-owned live dispatch source for production asb run and sweep.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Authenticated runtime live dispatch source",
-  "updated_at": "2026-09-24T06:10:58+00:00",
+  "updated_at": "2026-09-24T06:11:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1385-runtime-live-dispatch-source"
 }
 ---
@@ -127,3 +127,9 @@ namespace identity, or launch authority.
 
 - 2026-09-24T06:10:58+00:00: Recorded command exit 0; command argv SHA-256
   f441e836895f0d8b2a5d64b211ccd30c596494f58641897e941fd60dc89b2f38.
+
+- 2026-09-24T06:11:26+00:00: Repaired provenance fixture drift only:
+  docs/examples/asb-cli-workflow-v1.provenance.json now binds the reviewed actual CLI source digest
+  2c760e0fafc559d6f2486c670b4157f32aaf069144e33999aeabfebed9b29216. Focused workflow_transcript
+  passed 3/3; full cargo test --locked --workspace completed successfully (with only pre-existing
+  capability-gated ignores). Signed+DCO repair commit 02b79f3 force-pushed to PR #280.
