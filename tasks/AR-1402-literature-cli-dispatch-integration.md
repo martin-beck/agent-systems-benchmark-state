@@ -1,13 +1,13 @@
 ---
 {
   "branch": "codex/ar-1402-literature-cli",
-  "checkpoint_commit": "cec6345528764696f5a6058e8dae5dcea04684f9",
+  "checkpoint_commit": "022561d8377afb8d1ff164520f9601578b21f717",
   "claim_expires": "2026-09-24T14:42:38+00:00",
   "depends_on": [
     "AR-1401"
   ],
   "id": "AR-1402",
-  "next_action": "PR #294 exact base 0667f299/head cec6345/tree 084d869 is open; all required exact-head checks are running. Obtain independent full-diff review, wait for terminal green, then signed exact-base merge and seven post-merge verification.",
+  "next_action": "PR #294 rebased after PR #293 merged: exact base 404ddde (protected main), signed head 022561d, tree 4214389. Fresh exact-head checks restarted; obtain independent review, wait all green, then signed exact-base merge and seven post-merge verification.",
   "observed_branch": "codex/ar-1402-literature-cli",
   "observed_dirty": 0,
   "observed_head": "022561d8377afb8d1ff164520f9601578b21f717",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate literature workload catalog and adapters through all ASB CLI execution and evidence paths.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Literature workload CLI dispatch integration",
-  "updated_at": "2026-09-24T13:05:12+00:00",
+  "updated_at": "2026-09-24T13:05:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1402"
 }
 ---
@@ -152,3 +152,7 @@ external benchmark datasets or providers.
 
 - 2026-09-24T13:05:12+00:00: Recorded command exit 0; command argv SHA-256
   c6846d49946e8b89d8a2da291ecdc1ab8d22ffb8746bfe429a53e0ba87c7ca9c.
+
+- 2026-09-24T13:05:40+00:00: PR #293 merged as 404ddde while PR #294 checks were pending. Rebased
+  AR-1402 signed head onto 404ddde, force-with-lease pushed, and confirmed PR #294 now has exact
+  base 404ddde/head 022561d. Previous PR checks are invalidated.

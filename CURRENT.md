@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1402](tasks/AR-1402-literature-cli-dispatch-integration.md): Literature workload CLI dispatch integration | Integrate literature workload catalog and adapters through all ASB CLI execution and evidence paths. | PR #294 exact base 0667f299/head cec6345/tree 084d869 is open; all required exact-head checks are running. Obtain independent full-diff review, wait for terminal green, then signed exact-base merge and seven post-merge verification. | ar1402_literature_cli_luna56 |
+| P1 | [AR-1402](tasks/AR-1402-literature-cli-dispatch-integration.md): Literature workload CLI dispatch integration | Integrate literature workload catalog and adapters through all ASB CLI execution and evidence paths. | PR #294 rebased after PR #293 merged: exact base 404ddde (protected main), signed head 022561d, tree 4214389. Fresh exact-head checks restarted; obtain independent review, wait all green, then signed exact-base merge and seven post-merge verification. | ar1402_literature_cli_luna56 |
 | P1 | [AR-1408](tasks/AR-1408-literature-inventory-closure.md): Literature workload inventory closure | PR #293 merged at exact base; seven post-merge workflows running. | Wait for all seven post-merge workflows on merge 404ddde1 to reach terminal success, then release AR-1408 with evidence. | ar1408_literature_inventory_luna56b |
 
 ## Open
