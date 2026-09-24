@@ -14,17 +14,17 @@
   "id": "AR-1410",
   "next_action": "Regenerate catalog after aligning generator capability ordering/family IDs with Rust, run CLI-vs-generated parity and focused gates, then signed commit/push and monitor fresh CI.",
   "observed_branch": "codex/ar-1410-literature-selector-parity",
-  "observed_dirty": 2,
-  "observed_head": "8a1e031b1060ed684f499dc035bdefa179c4488b",
+  "observed_dirty": 0,
+  "observed_head": "2fe5c77304a3e68dad31168fdd2728d1374f10f5",
   "owner": "ar1410-literature-selector-parity-luna56",
   "plan": "../plans/AR-1410-literature-selector-completeness.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Verify complete catalog, CLI, documentation, and evidence-state parity for literature workloads.",
-  "task_revision": 90,
+  "task_revision": 91,
   "title": "Literature selector completeness and parity",
-  "updated_at": "2026-09-24T17:13:50+00:00",
+  "updated_at": "2026-09-24T17:14:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1410"
 }
 ---
