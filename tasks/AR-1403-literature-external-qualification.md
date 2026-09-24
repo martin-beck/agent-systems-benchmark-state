@@ -7,7 +7,7 @@
     "AR-1402"
   ],
   "id": "AR-1403",
-  "next_action": "PR #296 head updated to signed fix 3db36b2; rerun exact-head checks and independently review full diff before signed merge.",
+  "next_action": "Execute signed exact-base integration merge PR #296 in isolated worktree; then verify seven post-merge workflows at merge commit.",
   "observed_branch": "codex/ar-1403-literature-external",
   "observed_dirty": 0,
   "observed_head": "3db36b2c289e0c7f1b6a54905df6dea5e0323981",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add optional evidence-gated qualification for real literature workload sources and evaluators.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Literature workload external qualification",
-  "updated_at": "2026-09-24T13:57:17+00:00",
+  "updated_at": "2026-09-24T13:57:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1403"
 }
 ---
@@ -193,3 +193,10 @@ development, mock execution, or candidate selection.
 
 - 2026-09-24T13:57:17+00:00: Recorded command exit 0; command argv SHA-256
   0374141994927cb0f2938cfec56059ddca6697de2f096cba699951323b3ab9ac.
+
+- 2026-09-24T13:57:43+00:00: Independent final review completed for all 259 changed lines across
+  seven files. Contract is strict and fail-closed; planner requires explicit matching qualification
+  evidence; no default network/provider path; positive/negative tests cover missing evidence,
+  mutable revisions, unknown fields, and workload mismatch. Exact base
+  6cef4babe3db65e22bfcd098a074da14a4630f7e, head 3db36b2c289e0c7f1b6a54905df6dea5e0323981, tree
+  32e13ade1cf91e46e2b760401804c4d01a78081d; all 12 required PR checks green.

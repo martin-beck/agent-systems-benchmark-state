@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P2 | [AR-1403](tasks/AR-1403-literature-external-qualification.md): Literature workload external qualification | Add optional evidence-gated qualification for real literature workload sources and evaluators. | PR #296 head updated to signed fix 3db36b2; rerun exact-head checks and independently review full diff before signed merge. | ar1403_external_qualification_luna56 |
+| P2 | [AR-1403](tasks/AR-1403-literature-external-qualification.md): Literature workload external qualification | Add optional evidence-gated qualification for real literature workload sources and evaluators. | Execute signed exact-base integration merge PR #296 in isolated worktree; then verify seven post-merge workflows at merge commit. | ar1403_external_qualification_luna56 |
 | P2 | [AR-1404](tasks/AR-1404-literature-documentation-matrix.md): Literature workload documentation and matrix contract | PR #295 head repaired to use temp-file parity handoff; exact checks restarted. | Wait for all 12 exact-head checks on b0ed118; independently verify green head, merge exact base, run post-merge workflows, release AR-1404. | ar1404_literature_documentation_luna56b |
 
 ## Open
