@@ -2,7 +2,7 @@
 {
   "branch": "ci/ar-1216-tutorial-freshness",
   "checkpoint_commit": "f387877be93e890123404bad3dc1ba213ea34db6",
-  "claim_expires": "2026-09-25T00:45:50+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1210",
     "AR-1211",
@@ -16,15 +16,15 @@
   "observed_branch": "ci/ar-1216-tutorial-freshness",
   "observed_dirty": 0,
   "observed_head": "ac93654ed1f73f98174bce5d29395966818f107c",
-  "owner": "ar1216-requal-luna56",
+  "owner": "",
   "plan": "../plans/AR-1216.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Continuously keep ASB tutorial commands and steps syntactically current.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "ASB tutorial freshness CI and documentation qualification",
-  "updated_at": "2026-09-24T22:45:50+00:00",
+  "updated_at": "2026-09-24T22:47:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1216"
 }
 ---
@@ -152,3 +152,15 @@ tutorial command or require a provider/LLM connection.
   open until repair and fresh seven post-merge verification succeed.
 
 - 2026-09-24T22:45:50+00:00: Claimed by ar1216-requal-luna56.
+
+- 2026-09-24T22:47:04+00:00: Requalified after AR-1431. Preserved original PR #313 merge e82e2e6 and
+  Repository Quality failure run 36066329347; no waiver. Verified origin/main exact repaired merge
+  ed9076031b8278537dcd71e706464db59b8cba20, parents e82e2e6 and bd694233, with AR-1431 seven
+  post-merge workflows terminal-success as recorded in AR-1431. Verified tutorial merge tree
+  e6c154a3abb69fecb14bddfa73792f1d34f57f72 and repaired main tree
+  209c5f49f9e84f8d3f30e61ca47dd2b078db976. On detached exact origin/main: python3 -m unittest
+  tools.tutorials.test_validate tools.tutorials.test_freshness passed 28 tests; python3
+  tools/tutorials/check_freshness.py passed with 5 contracts validated. Re-ran repaired
+  protected-main policy boundary with base e82e2e6f8a03815fb5e39bf64c59dac9911e3312 and head
+  ed9076031b8278537dcd71e706464db59b8cba20; all checks passed. No successor/rebase required because
+  tutorial topic/tree is unchanged and policy repair is independently merged.
