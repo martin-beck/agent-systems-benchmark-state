@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1369-control-backend-authority-materialization",
   "checkpoint_commit": "0c6dc52e1f4aa5854f73081711dbd9a5bc1a5d7c",
-  "claim_expires": "2026-09-24T02:48:42+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1362",
     "AR-1364",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1369-control-backend-authority-materialization",
   "observed_dirty": 0,
   "observed_head": "0c6dc52e1f4aa5854f73081711dbd9a5bc1a5d7c",
-  "owner": "codex-asb-runtime-attested-enrollment-luna56",
+  "owner": "",
   "plan": "../plans/AR-1369-control-backend-authority-materialization.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Materialize authenticated live-provider authority in ControlBackend for runtime receipt issuance.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "ControlBackend authority materialization",
-  "updated_at": "2026-09-24T00:48:55+00:00",
+  "updated_at": "2026-09-24T00:49:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1369-control-backend-authority-materialization"
 }
 ---
@@ -38,3 +38,10 @@ touch asb-tui or synthesize authority from CLI/config input.
 
 - 2026-09-24T00:48:55+00:00: Recorded command exit 0; command argv SHA-256
   0d1d30c5ff39bf0fba573cfe8a8f48b7a75cc99fc42e665bdb77f3abfacffd0b.
+
+- 2026-09-24T00:49:26+00:00: Blocked after durable ControlBackend audit: AuthRecord persists only
+  provider, endpoint digest, credential locator digest, generation, and status. No authenticated
+  certificate-chain issuer, target/tool/lease/relay roots, or runtime-owned enrollment source
+  exists; synthesizing RuntimeAuthorityEnrollmentV1 or an IssuedCertificateChain would violate
+  fail-closed authority boundaries. No product mutation made. AR-1329 remains fail-closed pending an
+  external/runtime-owned attestation issuer source.
