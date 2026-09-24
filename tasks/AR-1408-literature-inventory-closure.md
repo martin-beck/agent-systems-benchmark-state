@@ -9,18 +9,18 @@
   ],
   "id": "AR-1408",
   "next_action": "Promote after AR-1400 and AR-1399 are done; reconcile every benchmark named in docs with the catalog and record explicit framework/non-workload boundaries.",
-  "observed_branch": "",
+  "observed_branch": "codex/ar-1408-literature-inventory",
   "observed_dirty": 0,
-  "observed_head": "0000000000000000000000000000000000000000",
+  "observed_head": "0667f299ce04ed74c8f1fc2a349df3bcb57a4838",
   "owner": "ar1408_literature_inventory_luna56b",
   "plan": "../plans/AR-1408-literature-inventory-closure.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Close literature-to-catalog gaps and make benchmark versus harness boundaries explicit.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Literature workload inventory closure",
-  "updated_at": "2026-09-24T12:41:34+00:00",
+  "updated_at": "2026-09-24T12:41:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1408"
 }
 ---
