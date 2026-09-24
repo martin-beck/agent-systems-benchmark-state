@@ -2,7 +2,7 @@
 {
   "branch": "ci/ar-1216-tutorial-freshness",
   "checkpoint_commit": "f387877be93e890123404bad3dc1ba213ea34db6",
-  "claim_expires": "",
+  "claim_expires": "2026-09-25T00:45:50+00:00",
   "depends_on": [
     "AR-1210",
     "AR-1211",
@@ -16,15 +16,15 @@
   "observed_branch": "ci/ar-1216-tutorial-freshness",
   "observed_dirty": 0,
   "observed_head": "ac93654ed1f73f98174bce5d29395966818f107c",
-  "owner": "",
+  "owner": "ar1216-requal-luna56",
   "plan": "../plans/AR-1216.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Continuously keep ASB tutorial commands and steps syntactically current.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "ASB tutorial freshness CI and documentation qualification",
-  "updated_at": "2026-09-24T22:17:31+00:00",
+  "updated_at": "2026-09-24T22:45:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1216"
 }
 ---
@@ -150,3 +150,5 @@ tutorial command or require a provider/LLM connection.
   36066329347 failed protected-main integrity: merge tree differs from reviewed topic tree because
   main advanced from d9eb6c2 to 8d1889b before merge. AR-1431 owns stale-base repair; leave AR-1216
   open until repair and fresh seven post-merge verification succeed.
+
+- 2026-09-24T22:45:50+00:00: Claimed by ar1216-requal-luna56.

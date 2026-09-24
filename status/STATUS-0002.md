@@ -90,11 +90,16 @@
 
 ## Complete AR inventory
 
-### Open (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md): ASB tutorial freshness CI and documentation qualification | Unclaimed | Continuously keep ASB tutorial commands and steps syntactically current. | AR-1431 repair is required: post-merge Repository Quality run 36066329347 rejected merge e82e2e6 because protected main advanced from reviewed base d9eb6c2 to 8d1889b. Preserve the failure, requalify the stale-base boundary, then rerun required post-merge workflows before release. |
+| P0 | [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md): ASB tutorial freshness CI and documentation qualification | ar1216-requal-luna56 | Continuously keep ASB tutorial commands and steps syntactically current. | AR-1431 repair is required: post-merge Repository Quality run 36066329347 rejected merge e82e2e6 because protected main advanced from reviewed base d9eb6c2 to 8d1889b. Preserve the failure, requalify the stale-base boundary, then rerun required post-merge workflows before release. |
+
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P1 | [AR-1417](../tasks/AR-1417-interactive-stateful-literature-workloads.md): Interactive stateful literature workloads | Unclaimed | Add selectable interactive and stateful literature workloads beside built-in software-engineering fixtures. | Keep open: protected-main Repository quality run 36048870322 failed because merge tree 5ddac12 differs from reviewed topic tree 666043f (base a2a6414 vs 0dcc717); await coordinator exact-main requalification or successor repair, never weaken gate. |
 
 ### Blocked (65)
