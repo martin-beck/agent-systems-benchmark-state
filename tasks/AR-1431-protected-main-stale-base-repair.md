@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar-1431-stale-base",
   "checkpoint_commit": "ed9076031b8278537dcd71e706464db59b8cba20",
-  "claim_expires": "2026-09-25T00:25:29+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1427"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "codex/ar-1431-stale-base",
   "observed_dirty": 0,
   "observed_head": "bd694233fd95941bfc02cdd4e7f0fd3b124d0f4e",
-  "owner": "ar1431-stale-base-luna56",
+  "owner": "",
   "plan": "../plans/AR-1431-protected-main-stale-base-repair.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Prevent stale-base sequential merges from passing review but failing protected-main merge-tree policy.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Protected-main stale-base merge requalification repair",
-  "updated_at": "2026-09-24T22:37:12+00:00",
+  "updated_at": "2026-09-24T22:44:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1431"
 }
 ---
@@ -86,3 +86,12 @@ that incident and must not waive the policy.
   36068309570 success; Rust 36068309609; hosted portability 36068309638; fault assurance
   36068309725; emulated aarch64 36068309536; Repository Quality 36068309595; formal assurance
   36068309654. Six remain in progress at observation.
+
+- 2026-09-24T22:44:50+00:00: Completed stale-base protected-main repair. PR #314 merged as
+  ed9076031b8278537dcd71e706464db59b8cba20 after independent review and exact-head green checks.
+  Repair commit bd694233fd95941bfc02cdd4e7f0fd3b124d0f4e is SSH-signed and DCO-certified. Reproduced
+  preserved incident run 36066329347 with exact base/topic/merge/tree diagnostic. All seven
+  post-merge workflows for ed907603 are terminal success: Huawei MIT headers 36068309570; Rust
+  36068309609; hosted portability 36068309638; fault assurance 36068309725; emulated aarch64
+  36068309536; Repository Quality 36068309595; formal assurance 36068309654. AR-1216 release remains
+  separately gated on this completed requalification.
