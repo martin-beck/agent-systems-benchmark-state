@@ -8,7 +8,7 @@
     "AR-1364"
   ],
   "id": "AR-1365",
-  "next_action": "Run independent review and publish exact clean signed head 6959cc1810265e026a9af40602752fdca4dc1e18; monitor exact-head CI, repair failures without weakening gates, merge only green, then verify all seven post-merge workflows.",
+  "next_action": "PR #269 is open at exact head 6959cc1810265e026a9af40602752fdca4dc1e18. Monitor all required exact-head checks; diagnose and repair any failure through governed workflow, merge only after independent review and all checks green, then verify seven post-merge workflows.",
   "observed_branch": "feature/ar-1365-control-receipt-source-integration",
   "observed_dirty": 0,
   "observed_head": "6959cc1810265e026a9af40602752fdca4dc1e18",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate authenticated chain and authority enrollment into the versioned control receipt source.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Control receipt source integration",
-  "updated_at": "2026-09-23T23:58:44+00:00",
+  "updated_at": "2026-09-24T00:00:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1365-control-receipt-source-integration"
 }
 ---
@@ -67,3 +67,6 @@ AR-1364. Do not touch asb-tui or synthesize authority from CLI/config input.
 
 - 2026-09-23T23:58:44+00:00: Recorded command exit 0; command argv SHA-256
   acf118b8a8f0abcd5b5c44edf87ecdfcd415c54f7605f3eb12c0a48b148645f7.
+
+- 2026-09-24T00:00:09+00:00: Publication verified: clean SSH-signed+DCO commit
+  6959cc1810265e026a9af40602752fdca4dc1e18 is pushed and PR #269 is open at the exact head.
