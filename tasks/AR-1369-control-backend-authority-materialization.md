@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1369-control-backend-authority-materialization",
   "checkpoint_commit": "0c6dc52e1f4aa5854f73081711dbd9a5bc1a5d7c",
-  "claim_expires": "2026-09-24T02:55:07+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1362",
     "AR-1364",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1369-control-backend-authority-materialization",
   "observed_dirty": 0,
   "observed_head": "0c6dc52e1f4aa5854f73081711dbd9a5bc1a5d7c",
-  "owner": "codex-asb-runtime-attested-enrollment-luna56",
+  "owner": "",
   "plan": "../plans/AR-1369-control-backend-authority-materialization.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Materialize authenticated live-provider authority in ControlBackend for runtime receipt issuance.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "ControlBackend authority materialization",
-  "updated_at": "2026-09-24T00:55:07+00:00",
+  "updated_at": "2026-09-24T00:55:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1369-control-backend-authority-materialization"
 }
 ---
@@ -55,3 +55,10 @@ touch asb-tui or synthesize authority from CLI/config input.
 - 2026-09-24T00:53:44+00:00: Heartbeat by codex-asb-runtime-attested-enrollment-luna56.
 
 - 2026-09-24T00:55:07+00:00: Heartbeat by codex-asb-runtime-attested-enrollment-luna56.
+
+- 2026-09-24T00:55:37+00:00: Concrete API blocker after AR-1288 integration audit:
+  CertificateAuthorityV1 exists and is merged, but RunnerBackend has no authority/chain field or
+  constructor injection, Catalog/AuthRecord persist no chain/trust-anchor/target/tool/lease/relay
+  state, and existing AuthEnroll/AuthHelperInvoke wire operations carry only endpoint and credential
+  digests. Adding a receipt operation or synthesizing authority would be unauthenticated. No product
+  mutation made; AR-1329 remains fail-closed.
