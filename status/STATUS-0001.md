@@ -1871,7 +1871,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md): Runtime-owned dispatch consumer | codex-asb-runtime-attested-enrollment-luna56 | Connect runtime-owned authenticated receipt consumption to the benchmark dispatch path without exposing authority to CLI callers. | Signed+DCO implementation e11e994 adds runtime-owned response binding and replay-protected dispatch ingestion with focused/full runtime tests and clippy green. Independently review clean diff, publish exact head via handoffctl, monitor required CI, repair failures without weakening gates, then merge only green. |
+| P0 | [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md): Runtime-owned dispatch consumer | codex-asb-runtime-attested-enrollment-luna56 | Connect runtime-owned authenticated receipt consumption to the benchmark dispatch path without exposing authority to CLI callers. | PR #270 is open at exact head e11e994e8df87a45ec64b64edfb0f3988aae0157. Monitor all required checks; diagnose and repair any failure through governed workflow, merge only after independent review and all checks green, then verify all seven post-merge workflows. |
 
 ### Open (4)
 

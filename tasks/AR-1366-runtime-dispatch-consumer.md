@@ -9,7 +9,7 @@
     "AR-1365"
   ],
   "id": "AR-1366",
-  "next_action": "Signed+DCO implementation e11e994 adds runtime-owned response binding and replay-protected dispatch ingestion with focused/full runtime tests and clippy green. Independently review clean diff, publish exact head via handoffctl, monitor required CI, repair failures without weakening gates, then merge only green.",
+  "next_action": "PR #270 is open at exact head e11e994e8df87a45ec64b64edfb0f3988aae0157. Monitor all required checks; diagnose and repair any failure through governed workflow, merge only after independent review and all checks green, then verify all seven post-merge workflows.",
   "observed_branch": "feature/ar-1366-runtime-dispatch-consumer",
   "observed_dirty": 0,
   "observed_head": "e11e994e8df87a45ec64b64edfb0f3988aae0157",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect runtime-owned authenticated receipt consumption to the benchmark dispatch path without exposing authority to CLI callers.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Runtime-owned dispatch consumer",
-  "updated_at": "2026-09-24T00:23:55+00:00",
+  "updated_at": "2026-09-24T00:24:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1366-runtime-dispatch-consumer"
 }
 ---
@@ -68,3 +68,7 @@ synthesize authority from CLI/config input.
 
 - 2026-09-24T00:23:55+00:00: Recorded command exit 0; command argv SHA-256
   44322155b25da81b76e21b133c718ff2c2d80fce95f8ec2040b0e4bea0466b99.
+
+- 2026-09-24T00:24:19+00:00: Publication verified: PR #270 is open at exact signed+DCO head
+  e11e994e8df87a45ec64b64edfb0f3988aae0157 after clean diff review, workspace tests, clippy, and fmt
+  gates.
