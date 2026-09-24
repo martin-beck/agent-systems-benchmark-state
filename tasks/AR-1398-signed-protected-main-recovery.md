@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Restore signed+DCO protected-main evidence after an unsigned GitHub-generated repair merge.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Signed protected-main recovery",
-  "updated_at": "2026-09-24T10:10:27+00:00",
+  "updated_at": "2026-09-24T10:10:35+00:00",
   "worktree_key": ""
 }
 ---
@@ -111,3 +111,6 @@ providers are never required for development evidence.
   crates/asb-metrics/src/kernel.rs:646. Expected ProbeResult value Some(12500000), got unavailable
   ToolMismatch. 15 passed, 1 failed, 4 ignored; cargo llvm-cov exited 101. This is an existing
   fixture/test path, not recovery-commit content. No merge permitted.
+
+- 2026-09-24T10:10:35+00:00: Recorded command exit 0; command argv SHA-256
+  887e131b8d79411845a5ac004cca377e14e91df405f5756ee717eb797f09e7bb.
