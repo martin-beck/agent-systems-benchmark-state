@@ -69,19 +69,19 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1411](../tasks/AR-1411-repository-terminal-adapters.md): Repository and terminal literature workload adapters | ar1411_repository_terminal_luna56 | Add selectable, provenance-preserving repository-repair and terminal benchmark adapters. | Review full diff, run focused/full applicable gates, then publish signed+DCO PR against exact protected main fc74825cb86991bb3afac6854d8cb5048118ff8f. |
+| P1 | [AR-1412](../tasks/AR-1412-code-generation-control-adapters.md): Code-generation control workload adapters | ar1412_code_generation_luna56b | Recovered an abandoned claim with malformed local-time expiry; branch/worktree are now coordinator-bound before the next claim. | Claim after binding metadata; implement offline-selectable code-generation control adapters. |
 
-### Open (4)
+### Open (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1212](../tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Unclaimed | Teach users to test configured-agent benchmark eligibility without running an agent. | Implement the offline tutorial for checking agent benchmark readiness under the current configuration. |
 | P0 | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | Unclaimed | Publish the verified ASB agent catalog required by the first-run setup wizard. | Persist the authenticated catalog snapshot/generation and complete live ASB-to-asb-tui wizard evidence; keep all entries unavailable until a verified release closure exists. |
-| P1 | [AR-1412](../tasks/AR-1412-code-generation-control-adapters.md): Code-generation control workload adapters | Unclaimed | Recovered an abandoned claim with malformed local-time expiry; branch/worktree are now coordinator-bound before the next claim. | Claim after binding metadata; implement offline-selectable code-generation control adapters. |
 | P1 | [AR-1413](../tasks/AR-1413-long-horizon-performance-adapters.md): Long-horizon and performance literature workload adapters | Unclaimed | Add truthful long-horizon, refreshed, performance, and reproducibility workload adapters. | Promote after AR-1408 and AR-1401 are done; implement bounded adapters and truthful selectors for long-horizon and performance families. |
 
 ### Blocked (66)

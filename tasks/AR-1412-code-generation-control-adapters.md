@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar-1412-code-generation-controls",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-24T16:27:41+00:00",
   "depends_on": [
     "AR-1408",
     "AR-1401"
@@ -12,15 +12,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "",
+  "owner": "ar1412_code_generation_luna56b",
   "plan": "../plans/AR-1412-code-generation-control-adapters.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Recovered an abandoned claim with malformed local-time expiry; branch/worktree are now coordinator-bound before the next claim.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Code-generation control workload adapters",
-  "updated_at": "2026-09-24T14:27:00+00:00",
+  "updated_at": "2026-09-24T14:27:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1412"
 }
 ---
@@ -38,3 +38,5 @@ bounded local fixtures or LiteLLM-compatible mocks only.
   No owner process or product worktree was present. Claim cleared without product mutation;
   isolated branch codex/ar-1412-code-generation-controls and worktree
   agent-systems-benchmark-ar-1412 are bound for the next claim.
+
+- 2026-09-24T14:27:41+00:00: Claimed by ar1412_code_generation_luna56b.
