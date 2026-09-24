@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1416](tasks/AR-1416-literature-mock-cross-product.md): Literature workload local-mock cross-product | Prove end-to-end selectable literature workloads with deterministic local or LiteLLM-compatible mocks and no live provider dependency. | Rerun cargo fmt/check and focused literature tests after transient coordinator lock timeout; then run full applicable gates. | ar1416-literature-mock-cross-product-luna56 |
+| P1 | [AR-1416](tasks/AR-1416-literature-mock-cross-product.md): Literature workload local-mock cross-product | Prove end-to-end selectable literature workloads with deterministic local or LiteLLM-compatible mocks and no live provider dependency. | Push signed cb33964b, open exact-base PR, independently review, and monitor required checks. | ar1416-literature-mock-cross-product-luna56 |
 
 ## Open
 
