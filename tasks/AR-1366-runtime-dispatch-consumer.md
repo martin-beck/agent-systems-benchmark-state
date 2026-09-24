@@ -11,17 +11,17 @@
   "id": "AR-1366",
   "next_action": "Signed+DCO implementation e11e994 adds runtime-owned response binding and replay-protected dispatch ingestion with focused/full runtime tests and clippy green. Independently review clean diff, publish exact head via handoffctl, monitor required CI, repair failures without weakening gates, then merge only green.",
   "observed_branch": "feature/ar-1366-runtime-dispatch-consumer",
-  "observed_dirty": 1,
-  "observed_head": "aa537f6a07ac3476a8c4d6443a8df3c42a1aebc1",
+  "observed_dirty": 0,
+  "observed_head": "e11e994e8df87a45ec64b64edfb0f3988aae0157",
   "owner": "codex-asb-runtime-attested-enrollment-luna56",
   "plan": "../plans/AR-1366-runtime-dispatch-consumer.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect runtime-owned authenticated receipt consumption to the benchmark dispatch path without exposing authority to CLI callers.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Runtime-owned dispatch consumer",
-  "updated_at": "2026-09-24T00:22:41+00:00",
+  "updated_at": "2026-09-24T00:22:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1366-runtime-dispatch-consumer"
 }
 ---
