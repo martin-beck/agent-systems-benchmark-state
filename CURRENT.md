@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1371](tasks/AR-1371-runner-authority-injection.md): Runner authority injection | Inject existing authenticated certificate authority and runtime enrollment material into RunnerBackend/Catalog without synthetic authority. | PR #271 merged as 3f0b67638647dc016f7d5abd3e246baf3ae4ec29 after all 12 exact-head checks passed. Seven post-merge workflows are running; monitor all to terminal success before releasing AR. | codex-asb-runtime-attested-enrollment-luna56 |
-| P0 | [AR-1372](tasks/AR-1372-topology-repair.md): Protected merge topology repair | Repair protected-main merge topology after AR-1371 without changing product behavior. | Repair AR-1371's one-parent squash merge topology without changing product behavior. Create a clean topology-only repair from current protected main, publish through handoffctl, then require all exact-head and seven post-merge gates. | codex-asb-topology-repair-luna56 |
+| P0 | [AR-1372](tasks/AR-1372-topology-repair.md): Protected merge topology repair | Repair protected-main merge topology after AR-1371 without changing product behavior. | PR #272 exact head 6b682f5 is signed+DCO with a real trailer and no product diff. Three exact-head checks are pending; verify all required checks before protected non-squash merge, then monitor seven post-merge workflows. | codex-asb-topology-repair-luna56 |
 
 ## Open
 
