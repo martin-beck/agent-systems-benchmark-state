@@ -2,22 +2,22 @@
 {
   "branch": "repair/ar-1313-historical-dco-909078c",
   "checkpoint_commit": "3420355d8a0855aea696775cfe85cc628773c842",
-  "claim_expires": "2026-09-24T13:31:37+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1313",
   "next_action": "All PR #290 exact-head checks are green; obtain independent review, then run signed merge_pr.py against exact base e41d4df/head 3420355/tree e1120e9 and verify seven post-merge workflows.",
   "observed_branch": "repair/ar-1313-historical-dco-909078c",
   "observed_dirty": 0,
   "observed_head": "3420355d8a0855aea696775cfe85cc628773c842",
-  "owner": "ar1313_recovery_luna56",
+  "owner": "",
   "plan": "../plans/AR-1313.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Forward-only signed DCO recovery candidate published as PR #231.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Historical DCO merge-integrity recovery",
-  "updated_at": "2026-09-24T11:46:43+00:00",
+  "updated_at": "2026-09-24T11:47:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1313-historical-dco-909078c"
 }
 ---
@@ -143,3 +143,9 @@ blocked with the exact failure and do not weaken the policy.
 
 - 2026-09-24T11:46:43+00:00: Recorded command exit 0; command argv SHA-256
   b61df51ad2c186cb3261570156e06c144cbb45acd43b143bd528429d2b571c74.
+
+- 2026-09-24T11:47:30+00:00: Current-main audit proved the historical unsigned merge remains
+  preserved as an ancestor and the signed empty recovery tree is identical to protected main
+  e0b15fc. PR #290 and stale PR #231 were closed as superseded because GitHub reports no commits
+  between current main and the candidate; no merge or history rewrite was required. Signature/DCO,
+  repository policy, and 11/11 merge-integrity tests remain recorded.
