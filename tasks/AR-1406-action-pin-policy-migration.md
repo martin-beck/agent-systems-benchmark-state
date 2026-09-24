@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify and merge remaining immutable GitHub action pin updates without weakening policy.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Action pin policy migration",
-  "updated_at": "2026-09-24T15:45:14+00:00",
+  "updated_at": "2026-09-24T15:45:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1406"
 }
 ---
@@ -94,3 +94,15 @@ No floating action reference or unverifiable release identity is acceptable.
 
 - 2026-09-24T15:45:14+00:00: Recorded command exit 0; command argv SHA-256
   834bca06376bdf2df55dad4689de7d750c4c6714c7524956d0baa9d2f7bbf286.
+
+- 2026-09-24T15:45:50+00:00: Diagnosed PR #235 run 35514805908: Repository quality failed exactly ;
+  Rust run 35514805931 failed
+  control::tests::production_backend_runs_without_frontend_and_recovers_idempotency with  on stale
+  PR base. PR #234 run 35514800958 failed exactly ; its formal Loom job also failed on stale base.
+  PR #148 run 34761081423 failed exactly ; Rust run 34761081444 failed DCO because Dependabot head
+  lacked matching Signed-off-by. Verified upstream release tags for requested commits: taiki
+  3f74d7c16a4242f1c95561e98edc25d36adb4375=v2.87.12; setup-java
+  de7274f081f381c8f8158605e0321c36c376e2e6=v6.0.1; upload-artifact
+  043fb46d1a93c77aae656e7c1c64a875d1fc6a0a=v7.0.1. Created signed+DCO
+  98778364d21ba1ec04d376093b794f95962ac5ef, local repository_policy passed, formal test
+  toolchain_pins passed, pushed branch and opened PR #301.
