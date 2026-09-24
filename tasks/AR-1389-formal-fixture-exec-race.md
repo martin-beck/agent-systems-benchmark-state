@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1389-formal-fixture-exec-race",
   "checkpoint_commit": "444a61d603f124d12cdd6505d4ff1fab1d6d2104",
-  "claim_expires": "2026-09-24T08:02:29+00:00",
+  "claim_expires": "2026-09-24T08:09:40+00:00",
   "depends_on": [
     "AR-1384"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the formal online-build fixture race that caused ETXTBSY after AR-1388 merge.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Formal fixture executable race repair",
-  "updated_at": "2026-09-24T07:24:12+00:00",
+  "updated_at": "2026-09-24T07:24:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1389-formal-fixture-exec-race"
 }
 ---
@@ -81,3 +81,5 @@ privacy, offline, boundedness, and local-mock boundaries.
 
 - 2026-09-24T07:24:12+00:00: Recorded command exit 0; command argv SHA-256
   c86cfea94cae5a358369633bf8578516f94faed64b74b5f5c9a6f7e36f18eee4.
+
+- 2026-09-24T07:24:40+00:00: Heartbeat by codex-asb-ar1329-repair-luna56.
