@@ -1,7 +1,7 @@
 ---
 {
   "branch": "ci/ar-1216-tutorial-freshness",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "f387877be93e890123404bad3dc1ba213ea34db6",
   "claim_expires": "2026-09-25T00:57:14+00:00",
   "depends_on": [
     "AR-1210",
@@ -12,7 +12,7 @@
     "AR-1215"
   ],
   "id": "AR-1216",
-  "next_action": "Implement the repository-wide tutorial discovery and syntax-freshness CI gate after all tutorial contracts are defined.",
+  "next_action": "Open reviewed PR from ci/ar-1216-tutorial-freshness; run exact-head CI and seven post-merge workflows.",
   "observed_branch": "ci/ar-1216-tutorial-freshness",
   "observed_dirty": 0,
   "observed_head": "f387877be93e890123404bad3dc1ba213ea34db6",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Continuously keep ASB tutorial commands and steps syntactically current.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "ASB tutorial freshness CI and documentation qualification",
-  "updated_at": "2026-09-24T22:02:11+00:00",
+  "updated_at": "2026-09-24T22:02:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1216"
 }
 ---
@@ -54,3 +54,9 @@ tutorial command or require a provider/LLM connection.
 
 - 2026-09-24T22:02:00+00:00: Recorded command exit 0; command argv SHA-256
   775c83aefed8595372e699c4c329e34f1459a5eddcb16474021603e8c3ba4acb.
+
+- 2026-09-24T22:02:36+00:00: Implemented repository-wide tutorial discovery and syntax freshness
+  gate in f387877. CI validates all five versioned tutorial contracts, strict duplicate-key
+  metadata, documentation references, deterministic diagnostics, renamed/removed command and option
+  mutations, clean-home execution, and no process/network imports. Local 28 tutorial tests,
+  freshness gate, Ruff, diff check, SSH signature and DCO passed.

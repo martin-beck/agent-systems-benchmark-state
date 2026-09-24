@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1216](tasks/AR-1216-tutorial-freshness-ci.md): ASB tutorial freshness CI and documentation qualification | Continuously keep ASB tutorial commands and steps syntactically current. | Implement the repository-wide tutorial discovery and syntax-freshness CI gate after all tutorial contracts are defined. | ar1216-tutorial-freshness-luna56 |
+| P0 | [AR-1216](tasks/AR-1216-tutorial-freshness-ci.md): ASB tutorial freshness CI and documentation qualification | Continuously keep ASB tutorial commands and steps syntactically current. | Open reviewed PR from ci/ar-1216-tutorial-freshness; run exact-head CI and seven post-merge workflows. | ar1216-tutorial-freshness-luna56 |
 | P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Control genuine native platform capacity lifecycle. | PR #119 exact head 4630f90 is rebased onto protected main 5ddac12. Fresh exact-head checks were absent immediately after force-push; close/reopen retriggered them. At last query all 12 checks are pending except AWQ shadow and SPDX headers pass. Wait for every required check terminal success; do not merge on partial/pending evidence. | ar0704-requal-luna56 |
 
 ## Open
