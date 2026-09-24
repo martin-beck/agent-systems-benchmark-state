@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-24T09:09:59+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0404",
     "AR-0405",
@@ -14,15 +14,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "codex-asb-ar1394-literature-registry-luna56",
+  "owner": "",
   "plan": "../plans/AR-1394-literature-workload-registry.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Catalog every documented literature benchmark with provenance and truthful qualification status.",
-  "task_revision": 66,
+  "task_revision": 67,
   "title": "Literature workload registry expansion",
-  "updated_at": "2026-09-24T08:40:09+00:00",
+  "updated_at": "2026-09-24T08:40:36+00:00",
   "worktree_key": ""
 }
 ---
@@ -206,3 +206,14 @@ datasets and does not claim native or evaluator qualification.
 
 - 2026-09-24T08:40:09+00:00: Recorded command exit 0; command argv SHA-256
   8c8530dd70274b17e0634928c5687e6e4b12c01d0f127358a795da6e668c78ee.
+
+- 2026-09-24T08:40:36+00:00: Completed and merged PR #284. Signed+DCO implementation commit
+  8c43c858b8963bef81d996b5503aa9629665ffb2, synchronized signed+DCO head
+  e63a3c6f816a1342a5b639725ef4476d286d5388, exact-head PR checks all green after one transient
+  pre-existing Gemini timing failure was rerun (focused test passed 10/10). Merge commit
+  fd1ec2e4ee2528eabaab41c947876ed34f1ec717. Post-merge runs 35975739076, 35975739097, 35975739140,
+  35975739142, 35975739158, 35975739207, and 35975739261 all green. Registry now has 22 strict,
+  non-vendored records: documented executable candidates plus methodology-only AgentOps/HELM/AI
+  Agents That Matter; validator and focused tests pass. Broader tests/workloads retains two
+  pre-existing untouched external-acquisition fixture digest failures, recorded as separate
+  follow-up evidence.

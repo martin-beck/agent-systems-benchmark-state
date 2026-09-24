@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1394](tasks/AR-1394-literature-workload-registry.md): Literature workload registry expansion | Catalog every documented literature benchmark with provenance and truthful qualification status. | Promote after the existing provenance ARs are verified, then add the strict literature workload inventory schema, entries, and generated docs. | codex-asb-ar1394-literature-registry-luna56 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -421,6 +415,7 @@ Never edit this file directly.
 | P1 | [AR-1350](tasks/AR-1350-sandbox-credential-channel.md): Sandbox-owned credential channel | Implement a sandbox-owned sealed-FD credential channel for live provider children. | Fresh PR #261 exact head is f74b7d4f6f8290fcd39f47c1c65402cbbb088423. Hosted quality run 35903027712 failed narrowly at displayed 90.00% (57954 total lines, 5796 missed), because strict fail-under-lines remained below 90%; no gate weakening. Added deterministic launch metadata/accessor and backend probe coverage; local exact cargo llvm-cov --locked --workspace --all-targets --fail-under-lines 90 passes at 90.54% (57982 lines, 5487 missed), with fmt check and clippy -D warnings green. Signed+DCO f74b7d4 verified and pushed. Monitor fresh PR-triggered exact-head checks and independent review; merge only after all required checks pass. AR-1349 expired-claim reconciliation remains a separate state issue. | - |
 | P1 | [AR-1351](tasks/AR-1351-live-runtime-provisioning.md): Runtime-owned live provisioning | Add the private host/runtime provisioning seam for live acquisition. | Release AR-1351 done with merge and post-merge evidence; advance dependent AR-1349 while preserving its fail-closed gates. | - |
 | P1 | [AR-1352](tasks/AR-1352-runtime-live-bootstrap.md): Runtime-owned live bootstrap | Add the private runtime-owned bootstrap source for live acquisition. | Release AR-1352 done with merge and post-merge evidence; advance dependent AR-1349 while keeping AR-1329 fail-closed. | - |
+| P1 | [AR-1394](tasks/AR-1394-literature-workload-registry.md): Literature workload registry expansion | Catalog every documented literature benchmark with provenance and truthful qualification status. | Promote after the existing provenance ARs are verified, then add the strict literature workload inventory schema, entries, and generated docs. | - |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Run final exact-main and local post-merge verification using required native x86_64 kernel evidence and applicable pinned QEMU AArch64 portability checks; record native ARM64 PMU/eBPF as optional future evidence, then release. | - |
 | P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Run final state validation/live doctor and release done after confirming clean synchronized product/state refs at signed merge a0d80e4. | - |
 | P2 | [AR-0309](tasks/AR-0309-agent-openhands.md): Implement maintained OpenHands SDK client adapter | Run a maintained MIT OpenHands SDK or canonical headless client. | Monitor PR #65 exact-head CI for fec0487, investigate any failure, and await final review; do not merge. | - |
