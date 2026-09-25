@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1452-runtime-orchestration-service",
-  "checkpoint_commit": "71ced423fa93c97e3300a4402b6f2a50e5aec00c",
+  "checkpoint_commit": "abf10aca3af06361617c8458e42f576d59d293fe",
   "claim_expires": "2026-09-25T21:12:29+00:00",
   "depends_on": [
     "AR-1357",
@@ -10,7 +10,7 @@
     "AR-1451"
   ],
   "id": "AR-1452",
-  "next_action": "PR #330 exact head 71ced42 repairs append-failure recovery: uncommitted lifecycle events are removed, status enters NeedsReconciliation, reconcile bypasses the barrier and clears it only after durable Failed append. Await exact-head CI/review; timeout and source-level cancellation remain the final lifecycle boundary.",
+  "next_action": "PR #330 exact head abf10ac adds source-level cancel hook, server-issued attempt-ID binding for local mock authority, and elapsed timeout failure/teardown checks. Await exact-head CI and independent review; runtime adapters must still honor bounded cancellation for hard timeout enforcement.",
   "observed_branch": "feature/ar-1452-runtime-orchestration-service",
   "observed_dirty": 0,
   "observed_head": "abf10aca3af06361617c8458e42f576d59d293fe",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 132,
+  "task_revision": 133,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T19:32:23+00:00",
+  "updated_at": "2026-09-25T19:32:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---
@@ -350,3 +350,8 @@ until the service can prove the complete authority chain.
 
 - 2026-09-25T19:32:23+00:00: Recorded command exit 0; command argv SHA-256
   10ffdfa0d30719f50bf21fbc01c140375702acb07cf7c4b5d8dc85839df9e3bd.
+
+- 2026-09-25T19:32:47+00:00: Addressed latest authority review: LocalMockAuthoritySource receives
+  the server-issued attempt identity through AttemptCapability; cancel invokes backend
+  revoke/reprovision; Orchestrator invokes source cancel on cancellation and timeout, and rejects
+  post-deadline outcomes. 7 tests and clippy passed; signed commit pushed.
