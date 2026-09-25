@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1315-formal-development-profile-wording",
   "checkpoint_commit": "da9c3103655c0f0d318a8b7a4c798254adb9c1fa",
-  "claim_expires": "2026-09-25T13:32:42+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1314"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "repair/ar-1315-formal-development-profile-wording",
   "observed_dirty": 0,
   "observed_head": "7390bcd2082700d0c9f04409732b48de8e9f8628",
-  "owner": "ar1315_formal_profile_repair_luna56",
+  "owner": "",
   "plan": "../plans/AR-1315.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Align formal-runner task metadata with the explicit unsigned development profile.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Formal runner development-profile metadata repair",
-  "updated_at": "2026-09-25T11:32:51+00:00",
+  "updated_at": "2026-09-25T11:34:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1315-formal-development-profile-metadata"
 }
 ---
@@ -81,3 +81,11 @@ claims.
   da9c3103655c0f0d318a8b7a4c798254adb9c1fa. Focused AR-1308 tests 22/22 and full state unittest
   suite 199/199 pass. git diff --check and SSH signature verification pass. No ASB product or
   asb-tui files changed.
+
+- 2026-09-25T11:34:41+00:00: Completed state-only AR-1307/AR-1308 development-profile repair at
+  signed+DCO da9c3103655c0f0d318a8b7a4c798254adb9c1fa. Explicit --profile unsigned-development
+  permits only pinned diagnostic fixtures and emits status diagnostic with
+  qualification_authorized=false; default signed profile retains exact signed-head checks. Focused
+  22/22 and full state 199/199 tests pass; diff check and SSH signature pass; no product/asb-tui
+  changes. Final handoffctl doctor --live was attempted and failed only on generated WORKTREES.md
+  staleness after reconcile; preserve that truthful limitation.

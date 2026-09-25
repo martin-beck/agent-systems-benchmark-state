@@ -98,12 +98,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1315](../tasks/AR-1315-1307-1308-development-profile-metadata.md): Formal runner development-profile metadata repair | ar1315_formal_profile_repair_luna56 | Align formal-runner task metadata with the explicit unsigned development profile. | Independent review of signed state commit da9c31036; publish/reconcile through handoffctl, then run doctor --live and record exact durable outcome. |
-
 ### Blocked (66)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -252,7 +246,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (308)
+### Done (309)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -508,6 +502,7 @@
 | P1 | [AR-1288](../tasks/AR-1288-certificate-chain-authz.md): Runtime certificate issuance and chain validation | Unclaimed | Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814. | Preserve merged code; repair protected-main DCO integrity forward-only, rerun exact-main gates, then release. |
 | P1 | [AR-1303](../tasks/AR-1303-hosted-platform-diagnostics.md): Privacy-safe hosted platform failure diagnostics | Unclaimed | Add privacy-safe fixed diagnostics for hosted platform evidence failures. | PR #220 merged after exact-head review; verify resulting main post-merge workflows and retain terminal workflow evidence. Diagnostics remain opt-in and privacy-safe; no gate weakening. |
 | P1 | [AR-1311](../tasks/AR-1311-planned-task-metadata-schema-repair.md): Repair planned-task metadata schema contradiction | Unclaimed | Repair planned-task metadata that violates the current live-observation schema. | Claim this metadata-only repair, remove unsupported empty live-observation fields from planned AR-1309, regenerate views, and rerun schema and state gates. Do not alter AR-1309 meaning or claim implementation. |
+| P1 | [AR-1315](../tasks/AR-1315-1307-1308-development-profile-metadata.md): Formal runner development-profile metadata repair | Unclaimed | Align formal-runner task metadata with the explicit unsigned development profile. | Independent review of signed state commit da9c31036; publish/reconcile through handoffctl, then run doctor --live and record exact durable outcome. |
 | P1 | [AR-1325](../tasks/AR-1325-provider-openrouter.md): Support a shared OpenRouter provider | Unclaimed | Define one pinned credential-free OpenRouter provider profile for compatible ASB agent adapters. | Repair protected-main merge-tree admission after post-merge Repository quality failed on 56c882a: protected-main merge tree differs from reviewed topic tree; create and execute a dedicated repair AR, then rerun all exact-main workflows before treating AR-1325 as done. |
 | P1 | [AR-1326](../tasks/AR-1326-openrouter-catalog-selection.md): Select OpenRouter through the CLI provider catalog | Unclaimed | Advertise the OpenRouter profile in the CLI provider catalog and accept it in provider-plan selection. | PR #250 merged at 8692729a58d16e5c9d5387d5d68a7daa54d6443a. Post-merge hosted workflows: Fault assurance and hosted portability passed; Rust verification failed once on timing assertion gemini::tests::malformed_ready_marker_fails_fast_and_cleans_run_root (elapsed &gt;= 1s), while Repository quality, Formal assurance, and Emulated AArch64 remain in progress. Keep AR in progress and create/assign a repair AR or approved rerun; do not release done until all post-merge evidence is green. |
 | P1 | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md): OpenRouter adapter projections and parity conformance | Unclaimed | Wire the OpenRouter endpoint and model through every compatible agent adapter projection and prove parity with hostile conformance evidence. | Verify post-merge main 5207ce478986cdf1687207967cdf517129f85624 workflows and exact OpenRouter parity evidence; then close AR-1327 and advance AR-1328. |
