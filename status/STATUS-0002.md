@@ -120,7 +120,7 @@
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1450](../tasks/AR-1450-runtime-owned-local-replay-acquisition.md): Runtime-owned local replay acquisition factory | ar1450-replay-luna56 | Keep local replay authority acquisition inside the runtime boundary. | Await PR #328 exact-head CI and independent review at 5ddf976; required replay-authority evidence is now accepted by native_evidence.py and recorded in canonical checks. |
-| P0 | [AR-1452](../tasks/AR-1452-runtime-orchestration-service.md): Implement the runtime-owned ASB orchestration service | coordinator-orchestrator-impl | Implement one service-owned authority for admission, attempts, resources, and teardown. | Exact-head PR #330 coverage rerun at 5f7bfcb; focused asb-orchestrator llvm-cov passes 91.14&#37; lines, workspace llvm-cov was retried twice but blocked by coordinator LOCK_TIMEOUT; rerun workspace coverage and hosted gates. |
+| P0 | [AR-1452](../tasks/AR-1452-runtime-orchestration-service.md): Implement the runtime-owned ASB orchestration service | coordinator-orchestrator-impl | Implement one service-owned authority for admission, attempts, resources, and teardown. | Workspace llvm-cov now passes locally at 90.68&#37; lines and focused asb-orchestrator coverage is 91.14&#37;; await PR #330 exact-head hosted policy/Rust/aarch64 checks and final independent review before protected merge. |
 
 ### Open (1)
 

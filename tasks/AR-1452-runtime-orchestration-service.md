@@ -10,7 +10,7 @@
     "AR-1451"
   ],
   "id": "AR-1452",
-  "next_action": "Exact-head PR #330 coverage rerun at 5f7bfcb; focused asb-orchestrator llvm-cov passes 91.14% lines, workspace llvm-cov was retried twice but blocked by coordinator LOCK_TIMEOUT; rerun workspace coverage and hosted gates.",
+  "next_action": "Workspace llvm-cov now passes locally at 90.68% lines and focused asb-orchestrator coverage is 91.14%; await PR #330 exact-head hosted policy/Rust/aarch64 checks and final independent review before protected merge.",
   "observed_branch": "feature/ar-1452-runtime-orchestration-service",
   "observed_dirty": 0,
   "observed_head": "5f7bfcb97e5cc001f048162743fdeac27901b4f5",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 226,
+  "task_revision": 227,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T20:26:46+00:00",
+  "updated_at": "2026-09-25T20:28:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---
@@ -603,3 +603,7 @@ until the service can prove the complete authority chain.
 
 - 2026-09-25T20:26:46+00:00: Recorded command exit 0; command argv SHA-256
   2b54becdaf55ff944eedd40f0c0e8b007070ebe8ce10ceabbf80d9762e1987c9.
+
+- 2026-09-25T20:28:42+00:00: Coverage repair commit 5f7bfcb adds meaningful lifecycle, recovery,
+  barrier, capacity, stale-handle, deadline, and evidence-limit tests. No coverage
+  floor/configuration changes.
