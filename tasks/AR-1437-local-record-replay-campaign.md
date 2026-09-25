@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1437-local-record-replay-campaign",
-  "checkpoint_commit": "a7d041bdca739f29b2e09d60f7d50924fbe6cf74",
+  "checkpoint_commit": "a7d041bcf97cec413c1447fc7910f9fc3a4c4764",
   "claim_expires": "2026-09-25T03:27:52+00:00",
   "depends_on": [
     "AR-1436",
     "AR-1328"
   ],
   "id": "AR-1437",
-  "next_action": "Run focused/full offline gates, independent exact-head review, then publish PR.",
+  "next_action": "Run full workspace tests, clippy, docs, release build and privacy gates at a7d041b; then exact independent review and PR.",
   "observed_branch": "feature/ar-1437-local-record-replay-campaign",
   "observed_dirty": 0,
   "observed_head": "a7d041bcf97cec413c1447fc7910f9fc3a4c4764",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify deterministic local record/replay and campaign journeys over the runtime mock.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Local record/replay campaign qualification",
-  "updated_at": "2026-09-25T01:32:24+00:00",
+  "updated_at": "2026-09-25T01:32:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1437-local-record-replay-campaign"
 }
 ---
@@ -63,3 +63,8 @@ campaign qualification. Require focused/full/review/PR/seven post-merge gates.
 
 - 2026-09-25T01:32:24+00:00: Recorded command exit 0; command argv SHA-256
   9499c0c9f7493c93690381ad0802155d6eee0d2965f70d5d086e271f050d0188.
+
+- 2026-09-25T01:32:52+00:00: Diagnosed exit-1 at 01:29:24: focused command used cargo fmt --check
+  after the new test invocation had an operator-formatted comma; rustfmt correctly rejected only
+  that layout. Corrected with cargo fmt, and focused campaign test then passed. No gate weakening or
+  runtime boundary change.
