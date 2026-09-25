@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize runtime-owned strict replay authority for normal CLI replay.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Runtime replay authority source",
-  "updated_at": "2026-09-25T16:08:47+00:00",
+  "updated_at": "2026-09-25T16:09:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1448-runtime-replay-authority-source"
 }
 ---
@@ -106,4 +106,7 @@ CLI and do not make external provider access a prerequisite.
   b945362378f77f64a68eb9e8d400e693e008357f0cc0d69f7bfe3bb93e47ae02.
 
 - 2026-09-25T16:08:47+00:00: Recorded command exit 8; command argv SHA-256
+  e232b91627a7f738c22304e960a70f59cb21b5a754d110d67493f2ed9f4e13d1.
+
+- 2026-09-25T16:09:24+00:00: Recorded command exit 8; command argv SHA-256
   e232b91627a7f738c22304e960a70f59cb21b5a754d110d67493f2ed9f4e13d1.
