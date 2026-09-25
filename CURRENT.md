@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1442](tasks/AR-1442-guided-setup-wizard-orchestration.md): Guided setup wizard orchestration | Unify first-run and reconfiguration of agents, providers, auth methods, models and defaults in one guided flow. | Promote after dependencies are done; implement the shared catalog-driven first-run and reconfiguration contract for CLI and TUI. | - |
+| P0 | [AR-1442](tasks/AR-1442-guided-setup-wizard-orchestration.md): Guided setup wizard orchestration | Unify first-run and reconfiguration of agents, providers, auth methods, models and defaults in one guided flow. | Promote after dependencies are done; implement the shared catalog-driven first-run and reconfiguration contract for CLI and TUI. | coordinator-ar1442 |
 
 ## Blocked
 

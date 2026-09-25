@@ -108,11 +108,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md): Guided setup wizard orchestration | Unclaimed | Unify first-run and reconfiguration of agents, providers, auth methods, models and defaults in one guided flow. | Promote after dependencies are done; implement the shared catalog-driven first-run and reconfiguration contract for CLI and TUI. |
+| P0 | [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md): Guided setup wizard orchestration | coordinator-ar1442 | Unify first-run and reconfiguration of agents, providers, auth methods, models and defaults in one guided flow. | Promote after dependencies are done; implement the shared catalog-driven first-run and reconfiguration contract for CLI and TUI. |
 
 ### Blocked (68)
 

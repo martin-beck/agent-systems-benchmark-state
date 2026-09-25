@@ -11,8 +11,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 68 |
 | **Planned** | Defined work awaiting promotion or dependencies | 65 |
 | **Future** | Deferred roadmap work | 1 |
@@ -534,7 +534,7 @@ flowchart LR
         AR_1438["AR-1438 - Done"]:::status_done
         AR_1440["AR-1440 - Done"]:::status_done
         AR_1441["AR-1441 - Done"]:::status_done
-        AR_1442["AR-1442 - Open"]:::status_open
+        AR_1442["AR-1442 - In progress"]:::status_in_progress
         AR_1443["AR-1443 - Planned"]:::status_planned
         AR_1444["AR-1444 - Planned"]:::status_planned
         AR_1445["AR-1445 - Done"]:::status_done
