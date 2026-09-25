@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1419](tasks/AR-1419-literature-framework-boundaries.md): Literature framework boundaries | Close literature documentation gaps and enforce benchmark-versus-framework selection boundaries. | Promote after the interactive and tool-use workload audits; reconcile every benchmark/framework mention in docs and prove the selectable catalog has no omitted or falsely executable entry. | ar1419-framework-boundaries-luna56 |
+| P1 | [AR-1419](tasks/AR-1419-literature-framework-boundaries.md): Literature framework boundaries | Close literature documentation gaps and enforce benchmark-versus-framework selection boundaries. | Independent review, PR, exact-head CI, merge and seven post-merge assurance workflows; then release AR-1419. | ar1419-framework-boundaries-luna56 |
 
 ## Blocked
 
