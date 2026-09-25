@@ -17,11 +17,11 @@
   "plan": "../plans/AR-0706.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional.",
-  "task_revision": 114,
+  "task_revision": 115,
   "title": "Provide native openEuler capacity",
-  "updated_at": "2026-09-25T13:39:13+00:00",
+  "updated_at": "2026-09-25T13:40:20+00:00",
   "worktree_key": "agent-systems-benchmark-native-openeuler-capacity"
 }
 ---
@@ -374,3 +374,6 @@ native identity, kernel/distribution provenance, cleanup, cost/availability boun
   and no native gate was claimed. Next action: add/review a dedicated VM-functional CI job if
   desired; preserve native qualification as unproven until an approved native x86_64 openEuler host
   exists.
+
+- 2026-09-25T13:40:20+00:00: Harden newly provisioned openEuler VM runner to exact custom labels
+  before CI attachment

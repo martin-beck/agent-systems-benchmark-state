@@ -9,6 +9,12 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1440](tasks/AR-1440-openrouter-model-refresh-local-measurements.md): Refresh OpenRouter model pin and local measurements | Refresh the stale OpenRouter free-model pin and qualify local-only benchmark measurements. | PR #323 is published at signed head f2d4999; wait for all exact-head required checks, independently review, merge only green, then verify post-merge and release AR with catalog and measurement evidence. | ar1440-model-refresh-luna56 |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P2 | [AR-0706](tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -80,7 +86,6 @@ Never edit this file directly.
 | P1 | [AR-1329](tasks/AR-1329-live-provider-run-execution.md): Local-mock run execution with optional live-provider integration | Qualify asb run and sweep through a mandatory deterministic local mock; retain optional fail-closed live integration. | BLOCKED for optional production integration only: preserve the deterministic local sub-1B/LiteLLM-compatible mock path as the mandatory development and CI qualification route. A future runtime-owned LiveProviderRuntimeService may resolve pinned provider policy, enrolled credentials, attested namespace/relay, ResourceLease, SandboxBackend, and one LiveProviderAttempt per scheduler attempt, with cancellation teardown; external reachability is optional non-gating evidence. Preserve NetworkPolicy::Deny and direct/alternate egress denial. | - |
 | P1 | [AR-1354](tasks/AR-1354-runtime-enrollment-implementation.md): Runtime enrollment implementation | Implement config-backed runtime-owned enrollment for live CLI dispatch. | BLOCKED on an attested runtime enrollment source: asb-runtime must receive an authority-free enrollment request and obtain concrete public target(s), pinned tool attestations, lease root, and relay root from a runtime/control-owned record; do not expose these asb-cli inputs. Add a signed/attested record transport or coordinator-owned runtime enrollment AR, then implement acquire_from_enrollment and CLI dispatch with positive/negative tests. | - |
 | P2 | [AR-0705](tasks/AR-0705-native-debian-capacity.md): Provide native Debian capacity | Qualify booted Debian on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 Debian and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. | - |
-| P2 | [AR-0706](tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. | - |
 
 ## Planned
 
