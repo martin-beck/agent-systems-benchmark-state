@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1454.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Repair the protected-main tree mismatch after the runtime replay merge.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Protected-main tree-equality repair for runtime replay",
-  "updated_at": "2026-09-25T20:54:00+00:00",
+  "updated_at": "2026-09-25T20:57:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1454-protected-main-tree-repair-runtime-replay"
 }
 ---
@@ -40,3 +40,6 @@ After successful post-merge verification, update AR-1450 with the repair and
 failure evidence and release both AR-1450 and this repair AR only when the
 runtime replay capability remains covered by its original tests and no gate is
 waived. Keep asb-tui out of scope.
+
+- 2026-09-25T20:57:31+00:00: Post-merge policy rejected PR #328 because stale topic tree differed
+  from protected-main merge tree; current-main descendant repair is dependency-safe.
