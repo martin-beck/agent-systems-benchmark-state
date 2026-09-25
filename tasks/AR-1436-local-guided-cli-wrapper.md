@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a catalog-driven guided CLI wrapper for deterministic local mock qualification.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Local guided CLI wrapper",
-  "updated_at": "2026-09-25T00:49:19+00:00",
+  "updated_at": "2026-09-25T00:49:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1436-local-guided-cli-wrapper"
 }
 ---
@@ -73,3 +73,6 @@ weakening. Require focused/full/review/PR/seven post-merge gates.
   explicit asb easy run|sweep PATH --use-config --local-mock delegation, hostile option/absence
   tests, positive catalog-bound local mock run test, help/completion entries, and workflow
   documentation. Focused two-test gate passes; no live provider or external endpoint path added.
+
+- 2026-09-25T00:49:53+00:00: Recorded command exit 101; command argv SHA-256
+  88f7af68d2ecc3638bfd9fff251cc79e4f54fee616e0c550b931fe77cecde9a1.
