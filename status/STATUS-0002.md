@@ -98,6 +98,12 @@
 
 ## Complete AR inventory
 
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P2 | [AR-1407](../tasks/AR-1407-sha2-compatibility.md): sha2 compatibility repair | Unclaimed | Qualify or repair the closed sha2 0.11 dependency update without weakening crypto or MSRV contracts. | Promote after AR-1405; reproduce the sha2 0.11 compile/MSRV failure and either repair it with digest-parity evidence or preserve the supersession. |
+
 ### Blocked (66)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -169,7 +175,7 @@
 | P1 | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md): Local-mock run execution with optional live-provider integration | Unclaimed | Qualify asb run and sweep through a mandatory deterministic local mock; retain optional fail-closed live integration. | BLOCKED for optional production integration only: preserve the deterministic local sub-1B/LiteLLM-compatible mock path as the mandatory development and CI qualification route. A future runtime-owned LiveProviderRuntimeService may resolve pinned provider policy, enrolled credentials, attested namespace/relay, ResourceLease, SandboxBackend, and one LiveProviderAttempt per scheduler attempt, with cancellation teardown; external reachability is optional non-gating evidence. Preserve NetworkPolicy::Deny and direct/alternate egress denial. |
 | P1 | [AR-1354](../tasks/AR-1354-runtime-enrollment-implementation.md): Runtime enrollment implementation | Unclaimed | Implement config-backed runtime-owned enrollment for live CLI dispatch. | BLOCKED on an attested runtime enrollment source: asb-runtime must receive an authority-free enrollment request and obtain concrete public target(s), pinned tool attestations, lease root, and relay root from a runtime/control-owned record; do not expose these asb-cli inputs. Add a signed/attested record transport or coordinator-owned runtime enrollment AR, then implement acquire_from_enrollment and CLI dispatch with positive/negative tests. |
 
-### Planned (66)
+### Planned (65)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -238,7 +244,6 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-0903](../tasks/AR-0903-release-qualification.md): Package and qualify the first release | Unclaimed | Deliver reproducible native release artifacts with complete support and evidence statements. | Audit milestone completeness and run isolated release qualification. |
 | P2 | [AR-1016](../tasks/AR-1016-measurement-integration-audit.md): Integrate and audit measurement selection and CSB evidence | Unclaimed | Audit selectable and CSB-backed measurements across live and replay runs. | Add end-to-end live/replay comparison, release documentation, and independent audit after AR-1014 and AR-1015. |
-| P2 | [AR-1407](../tasks/AR-1407-sha2-compatibility.md): sha2 compatibility repair | Unclaimed | Qualify or repair the closed sha2 0.11 dependency update without weakening crypto or MSRV contracts. | Promote after AR-1405; reproduce the sha2 0.11 compile/MSRV failure and either repair it with digest-parity evidence or preserve the supersession. |
 
 ### Future (1)
 

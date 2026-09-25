@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1407-sha2-compatibility.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Qualify or repair the closed sha2 0.11 dependency update without weakening crypto or MSRV contracts.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "sha2 compatibility repair",
-  "updated_at": "2026-09-25T11:38:40+00:00",
+  "updated_at": "2026-09-25T11:41:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1407-sha2-compatibility"
 }
 ---
@@ -36,3 +36,5 @@ compatibility and digest parity are proven.
 - 2026-09-25T11:38:40+00:00: Blocked before product qualification: promoted task has empty
   branch/worktree_key metadata; handoffctl correctly refuses wrapped product command. Coordinator
   metadata repair required before claim.
+
+- 2026-09-25T11:41:39+00:00: Promote compatibility repair after generated state reconciliation.
