@@ -2,7 +2,7 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `84b587ec2ddd28ce33df9f12775b3e32f6ae000d`
+- Product remote main: `5871de7cad4ee7e496ffce1c5e1fe51862660bfc`
 - Local origin/main: `84b587ec2ddd28ce33df9f12775b3e32f6ae000d`
 - Primary worktree head: `bd7d10d4a760a84fa42de2b1fa9e97e8ea85ba09`
 
@@ -10,21 +10,20 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #324 | `repair/ar-1445-protected-main-topology-repair-openrouter@10686db7ceb5` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | docs: repair protected-main merge topology |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 36145976341 | `5871de7cad4e` | push | Formal assurance | in_progress:- |
+| 36145976337 | `5871de7cad4e` | push | Repository quality | in_progress:- |
+| 36145976326 | `5871de7cad4e` | push | Emulated aarch64 portability | in_progress:- |
+| 36145976266 | `5871de7cad4e` | push | Fault assurance | in_progress:- |
+| 36145976239 | `5871de7cad4e` | push | Huawei MIT source headers | completed:success |
+| 36145976238 | `5871de7cad4e` | push | Hosted portability and native qualification | in_progress:- |
+| 36145976223 | `5871de7cad4e` | push | Rust verification | in_progress:- |
 | 36144953609 | `10686db7ceb5` | pull_request | Formal assurance | completed:success |
 | 36144953550 | `10686db7ceb5` | pull_request | Hosted portability and native qualification | completed:success |
-| 36144953427 | `10686db7ceb5` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 36144953427 | `10686db7ceb5` | pull_request | Emulated aarch64 portability | completed:success |
 | 36144953418 | `10686db7ceb5` | pull_request | Huawei MIT source headers | completed:success |
 | 36144953361 | `10686db7ceb5` | pull_request | Fault assurance | completed:success |
-| 36144953315 | `10686db7ceb5` | pull_request | Rust verification | in_progress:- |
-| 36144953298 | `10686db7ceb5` | pull_request | Repository quality | in_progress:- |
-| 36144953152 | `10686db7ceb5` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 36144090436 | `84b587ec2ddd` | push | Rust verification | completed:failure |
-| 36144090413 | `84b587ec2ddd` | push | Formal assurance | completed:success |
-| 36144090389 | `84b587ec2ddd` | push | Fault assurance | completed:success |
-| 36144090160 | `84b587ec2ddd` | push | Repository quality | completed:failure |
