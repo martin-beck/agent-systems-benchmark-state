@@ -2,22 +2,22 @@
 {
   "branch": "repair/ar-1445-protected-main-topology-repair-openrouter",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-25T14:29:47+00:00",
   "depends_on": [],
   "id": "AR-1445",
   "next_action": "Create a signed+DCO reviewed descendant PR whose GitHub merge has two parents and preserves the exact current main tree/contract; require exact-head CI and all seven post-merge workflows before closing AR-1440.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "",
+  "owner": "ar1445-topology-repair-luna56",
   "plan": "../plans/AR-1445.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair the single-parent protected-main merge produced for the OpenRouter model refresh.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Protected-main topology repair for OpenRouter refresh",
-  "updated_at": "2026-09-25T13:59:37+00:00",
+  "updated_at": "2026-09-25T13:59:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1445-protected-main-topology-repair-openrouter"
 }
 ---
@@ -39,3 +39,5 @@ measurement evidence.
 
 - 2026-09-25T13:59:37+00:00: Post-merge policy run 36144090160 proved PR 323 merged as single-parent
   84b587ec; begin reviewed topology repair without weakening gates.
+
+- 2026-09-25T13:59:47+00:00: Claimed by ar1445-topology-repair-luna56.

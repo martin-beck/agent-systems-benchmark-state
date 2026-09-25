@@ -106,17 +106,12 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1445](../tasks/AR-1445-protected-main-topology-repair-openrouter.md): Protected-main topology repair for OpenRouter refresh | ar1445-topology-repair-luna56 | Repair the single-parent protected-main merge produced for the OpenRouter model refresh. | Create a signed+DCO reviewed descendant PR whose GitHub merge has two parents and preserves the exact current main tree/contract; require exact-head CI and all seven post-merge workflows before closing AR-1440. |
 | P1 | [AR-1440](../tasks/AR-1440-openrouter-model-refresh-local-measurements.md): Refresh OpenRouter model pin and local measurements | ar1440-model-refresh-luna56 | Refresh the stale OpenRouter free-model pin and qualify local-only benchmark measurements. | Post-merge policy run 36144090160 failed because PR #323 was squash-merged into single-parent 84b587e; create/merge an explicit two-parent topology-repair PR, rerun all exact-main gates, verify green, then release AR-1440. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1445](../tasks/AR-1445-protected-main-topology-repair-openrouter.md): Protected-main topology repair for OpenRouter refresh | Unclaimed | Repair the single-parent protected-main merge produced for the OpenRouter model refresh. | Create a signed+DCO reviewed descendant PR whose GitHub merge has two parents and preserves the exact current main tree/contract; require exact-head CI and all seven post-merge workflows before closing AR-1440. |
 
 ### Blocked (68)
 
