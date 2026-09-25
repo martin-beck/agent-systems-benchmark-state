@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize runtime-owned strict replay authority for normal CLI replay.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Runtime replay authority source",
-  "updated_at": "2026-09-25T15:52:13+00:00",
+  "updated_at": "2026-09-25T15:52:39+00:00",
   "worktree_key": "agent-systems-benchmark"
 }
 ---
@@ -32,3 +32,6 @@ CLI and do not make external provider access a prerequisite.
   replay authority source. Promote this ASB-only repair; no live provider or asb-tui dependency.
 
 - 2026-09-25T15:52:13+00:00: Claimed by coordinator-ar1448.
+
+- 2026-09-25T15:52:39+00:00: Recorded command exit 0; command argv SHA-256
+  c50ebcf13872ea281f11a42f41a2dd9cdeb289092ade8d36d346e13a0a9f753e.
