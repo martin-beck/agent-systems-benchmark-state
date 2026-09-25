@@ -9,17 +9,17 @@
   "id": "AR-1450",
   "next_action": "Exact-head local gates pass (runtime 130 tests, sandbox boundary 15 tests, clippy, workspace libraries, doctests). Await all PR #328 checks and independent review at exact head 185062d before protected merge.",
   "observed_branch": "feature/ar-1450-runtime-owned-local-replay-acquisition",
-  "observed_dirty": 1,
-  "observed_head": "185062d7345880d8d345172914cffc58585621a1",
+  "observed_dirty": 0,
+  "observed_head": "58609e6b887b43d38f21d729b00a326b2868a6e7",
   "owner": "ar1450-replay-luna56",
   "plan": "../plans/AR-1450.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep local replay authority acquisition inside the runtime boundary.",
-  "task_revision": 92,
+  "task_revision": 93,
   "title": "Runtime-owned local replay acquisition factory",
-  "updated_at": "2026-09-25T20:07:38+00:00",
+  "updated_at": "2026-09-25T20:07:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1450-runtime-owned-local-replay-acquisition"
 }
 ---
