@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1437-local-record-replay-campaign",
   "checkpoint_commit": "ede3f032428c366769f1bdd5bc0988b87a14de83",
-  "claim_expires": "2026-09-25T03:27:52+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1436",
     "AR-1328"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1437-local-record-replay-campaign",
   "observed_dirty": 0,
   "observed_head": "a7d041bcf97cec413c1447fc7910f9fc3a4c4764",
-  "owner": "codex-asb-ar1437-local-record-luna56",
+  "owner": "",
   "plan": "../plans/AR-1437-local-record-replay-campaign.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Qualify deterministic local record/replay and campaign journeys over the runtime mock.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Local record/replay campaign qualification",
-  "updated_at": "2026-09-25T01:59:34+00:00",
+  "updated_at": "2026-09-25T02:00:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1437-local-record-replay-campaign"
 }
 ---
@@ -237,3 +237,15 @@ campaign qualification. Require focused/full/review/PR/seven post-merge gates.
 
 - 2026-09-25T01:59:34+00:00: Recorded command exit 0; command argv SHA-256
   2616dabfaf132150785ee726d40095d12128047aedd3541c92fc75bfd5c0008a.
+
+- 2026-09-25T02:00:05+00:00: Released after exact-main verification.
+  origin/main=ede3f032428c366769f1bdd5bc0988b87a14de83;
+  tree=c2159ba965c5f357fa204e51778f0067eca5c671;
+  parents=18a0df9b4312e49196c1c8202b48a183ed83b073,a7d041bcf97cec413c1447fc7910f9fc3a4c4764; merge
+  signature=G; DCO=Signed-off-by: Martin Beck <martin.beck2@gmx.de>. Seven exact-main post-merge
+  workflows terminal success: 36083606817, 36083606766, 36083606748, 36083606699, 36083606686,
+  36083606680, 36083606673. Focused and full offline tests, clippy, rustdoc, release build, fmt,
+  diff-check, independent review, privacy scan, and exact-head PR checks passed. Preserved prior
+  exit-1 diagnosis: cargo fmt check caught a malformed comma in a newly edited hostile test at
+  01:29:24; corrected with cargo fmt and reran green. Local mock-only boundary preserved; no live
+  provider access or live AR dependencies resumed.
