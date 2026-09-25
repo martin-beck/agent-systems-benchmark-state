@@ -17,7 +17,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 36125427665 | `7390bcd20827` | push | Formal assurance | completed:success |
 | 36125427645 | `7390bcd20827` | push | Hosted portability and native qualification | completed:success |
-| 36125427635 | `7390bcd20827` | push | Rust verification | in_progress:- |
+| 36125427635 | `7390bcd20827` | push | Rust verification | completed:success |
 | 36125427604 | `7390bcd20827` | push | Repository quality | in_progress:- |
 | 36125427601 | `7390bcd20827` | push | Emulated aarch64 portability | in_progress:- |
 | 36125427599 | `7390bcd20827` | push | Fault assurance | completed:success |
