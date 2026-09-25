@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Unify first-run and reconfiguration of agents, providers, auth methods, models and defaults in one guided flow.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Guided setup wizard orchestration",
-  "updated_at": "2026-09-25T15:21:20+00:00",
+  "updated_at": "2026-09-25T15:22:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1442"
 }
 ---
@@ -42,3 +42,6 @@ enrollment and remain safe when the provider is not reachable.
 
 - 2026-09-25T15:21:20+00:00: Recorded command exit 0; command argv SHA-256
   952c230617030cdb9ac7cccad9580e9e872536ff13620701c6f7dde17602e980.
+
+- 2026-09-25T15:22:19+00:00: Recorded command exit 0; command argv SHA-256
+  4437157c2910dd27cf5a92a2d8bf16b93f23354fadb4ffcbcd0bd71ee4100d2c.
