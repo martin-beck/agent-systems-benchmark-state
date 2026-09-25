@@ -7,7 +7,7 @@
     "AR-1434"
   ],
   "id": "AR-1435",
-  "next_action": "Rerun corrected independent exact-head review (privacy scan must invert rg status correctly), then push exact head and publish PR.",
+  "next_action": "Confirm PR #316 exact head and all hosted checks; do not merge until every check is green, then local signed integration and seven post-merge workflows.",
   "observed_branch": "feature/ar-1435-local-mock-cli-wiring",
   "observed_dirty": 0,
   "observed_head": "23a7bdbd9a8eb61db68c11360472603158d02be4",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire deterministic local mock attempts into asb run and sweep configuration qualification.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Local mock CLI wiring",
-  "updated_at": "2026-09-25T00:02:58+00:00",
+  "updated_at": "2026-09-25T00:03:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1435-local-mock-cli-wiring"
 }
 ---
@@ -131,3 +131,9 @@ it must not contact OpenRouter or any external provider, mint
 
 - 2026-09-25T00:02:58+00:00: Recorded command exit 0; command argv SHA-256
   b79903743b3c4d54d39ea44b518ec5260b9c60c6eb1c67aa03ca70fbd244d6ff.
+
+- 2026-09-25T00:03:34+00:00: Diagnosed 00:02:10 exit 1 as an independent-review assertion mistake:
+  the branch contains two product commits (2b47c57 and 23a7bdb), but the review command incorrectly
+  required three matching DCO trailers. The corrected review at 00:02:32 used count=2 and passed
+  signatures, diff-check, clean tree, and privacy scan; PR #316 was published at exact head after
+  that correction. Local focused/full/fmt/clippy/rustdoc/release gates remain green.
