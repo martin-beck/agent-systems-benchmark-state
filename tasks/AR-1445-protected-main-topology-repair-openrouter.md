@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1445.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Repair the single-parent protected-main merge produced for the OpenRouter model refresh.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Protected-main topology repair for OpenRouter refresh",
-  "updated_at": "2026-09-25T00:00:00+00:00",
+  "updated_at": "2026-09-25T13:59:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1445-protected-main-topology-repair-openrouter"
 }
 ---
@@ -36,3 +36,6 @@ guarantees unchanged. Require signed+DCO commits, exact-head required checks,
 independent review, and all seven exact-main post-merge workflows. After the
 repair is green, update and release AR-1440 with both merge-topology and
 measurement evidence.
+
+- 2026-09-25T13:59:37+00:00: Post-merge policy run 36144090160 proved PR 323 merged as single-parent
+  84b587ec; begin reviewed topology repair without weakening gates.
