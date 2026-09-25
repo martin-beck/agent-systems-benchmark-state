@@ -1,6 +1,6 @@
 ---
 {
-  "branch": "feature/ar-1443-guided-benchmark-capture-comparison",
+  "branch": "main",
   "checkpoint_commit": "",
   "claim_expires": "2026-09-25T16:32:47+00:00",
   "depends_on": [
