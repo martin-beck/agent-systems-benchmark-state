@@ -1521,7 +1521,6 @@ flowchart LR
     AR_1336 --> AR_1446
     AR_1337 --> AR_1397
     AR_1337 --> AR_1398
-    AR_1338 --> AR_1447
     AR_1339 --> AR_1340
     AR_1339 --> AR_1341
     AR_1339 --> AR_1342
@@ -2152,4 +2151,4 @@ flowchart LR
 | [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md) | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md), [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md) | [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md) |
 | [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md) | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md), [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md), [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md) | [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md) |
 | [AR-1337](../tasks/AR-1337-protected-main-merge-tree-repair-openrouter.md) | [AR-1226](../tasks/AR-1226-protected-merge-tree-remediation.md) | [AR-1397](../tasks/AR-1397-protected-main-postmerge-concurrency-repair.md), [AR-1398](../tasks/AR-1398-signed-protected-main-recovery.md) |
-| [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1329](../tasks/AR-1329-live-provider-run-execution.md), [AR-1332](../tasks/AR-1332-record-live-replay-offline.md), [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md) | [AR-1447](../tasks/AR-1447-asb-local-campaign-qualification.md) |
+| [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1329](../tasks/AR-1329-live-provider-run-execution.md), [AR-1332](../tasks/AR-1332-record-live-replay-offline.md), [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md) | None |
