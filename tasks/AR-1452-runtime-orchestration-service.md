@@ -12,7 +12,7 @@
   "id": "AR-1452",
   "next_action": "PR #330 exact head 6c5771e fences restart preparation behind RecoveryDecision, restores next IDs from durable runs, adds schema event identity, and preserves restart idempotency. Await independent re-review and exact-head CI; local deterministic adapter and explicit reconciliation remain adapter/service follow-up boundaries.",
   "observed_branch": "feature/ar-1452-runtime-orchestration-service",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "6c5771e47abf71923cc53e50360543eb7eae919b",
   "owner": "coordinator-orchestrator-impl",
   "plan": "../plans/AR-1452.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T19:02:21+00:00",
+  "updated_at": "2026-09-25T19:02:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---
