@@ -3,7 +3,11 @@
   "branch": "feature/ar-1440-openrouter-model-refresh-local-measurements",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1328", "AR-1436", "AR-1437"],
+  "depends_on": [
+    "AR-1328",
+    "AR-1436",
+    "AR-1437"
+  ],
   "id": "AR-1440",
   "next_action": "Refresh the dated OpenRouter free-model pin only after a live catalog probe identifies an available zero-cost model; update every profile/config/fixture/doc identity, add positive and negative pin tests, and run a bounded local measurement campaign without adding CI network access or persisting credentials/responses.",
   "observed_branch": "",
@@ -13,11 +17,11 @@
   "plan": "../plans/AR-1440.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Refresh the stale OpenRouter free-model pin and qualify local-only benchmark measurements.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Refresh OpenRouter model pin and local measurements",
-  "updated_at": "2026-09-25T00:00:00+00:00",
+  "updated_at": "2026-09-25T13:19:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1440-openrouter-model-refresh-local-measurements"
 }
 ---
@@ -36,3 +40,6 @@ typed outcomes; never persist keys, prompts, responses, headers or private
 paths. Do not add network access to CI and do not claim completion of the
 blocked runtime-owned AR-1329 live `asb run` path. Include hostile negative
 tests for stale/mismatched model identities and unavailable pins.
+
+- 2026-09-25T13:19:22+00:00: Dependencies AR-1328, AR-1436 and AR-1437 are released; begin exact
+  model refresh and operator-only measurements without resuming blocked AR-1329.
