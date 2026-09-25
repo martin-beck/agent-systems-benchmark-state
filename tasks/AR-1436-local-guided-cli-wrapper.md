@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1436-local-guided-cli-wrapper",
-  "checkpoint_commit": "ae48046d980237d078dd2a5aa155400d20330059",
+  "checkpoint_commit": "18a0df9b4312e49196c1c8202b48a183ed83b073",
   "claim_expires": "2026-09-25T02:43:20+00:00",
   "depends_on": [
     "AR-1435",
     "AR-1328"
   ],
   "id": "AR-1436",
-  "next_action": "Monitor PR #317 exact head ae48046 until all required checks pass; merge only after CLEAN state and exact-head verification.",
+  "next_action": "Monitor seven exact-main workflows for merge 18a0df9b4312e49196c1c8202b48a183ed83b073; verify all terminal success and exact remote tree/signature before release.",
   "observed_branch": "feature/ar-1436-local-guided-cli-wrapper",
   "observed_dirty": 0,
   "observed_head": "ae48046d980237d078dd2a5aa155400d20330059",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a catalog-driven guided CLI wrapper for deterministic local mock qualification.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Local guided CLI wrapper",
-  "updated_at": "2026-09-25T01:11:12+00:00",
+  "updated_at": "2026-09-25T01:11:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1436-local-guided-cli-wrapper"
 }
 ---
@@ -226,3 +226,9 @@ weakening. Require focused/full/review/PR/seven post-merge gates.
 
 - 2026-09-25T01:11:12+00:00: Recorded command exit 0; command argv SHA-256
   b4f48e3dce6ac39a9ea9d8983d05201ab07fe62bd81f49d6325d316582b5eb5c.
+
+- 2026-09-25T01:11:37+00:00: PR #317 merged through local integration with exact base cc82333a, head
+  ae48046d, tree 313effc. Remote origin/main is exact merge 18a0df9b with parents base and PR head,
+  valid SSH signature and DCO trailer. Seven post-merge workflows launched: Rust 36080877987; Hosted
+  portability/native 36080878008; Fault 36080877975; aarch64 36080877989; Repository quality
+  36080877969; Huawei headers 36080877995; Formal assurance 36080877977.

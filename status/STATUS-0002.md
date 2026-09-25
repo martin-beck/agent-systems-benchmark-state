@@ -101,7 +101,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1436](../tasks/AR-1436-local-guided-cli-wrapper.md): Local guided CLI wrapper | codex-asb-ar1436-local-guided-luna56 | Add a catalog-driven guided CLI wrapper for deterministic local mock qualification. | Monitor PR #317 exact head ae48046 until all required checks pass; merge only after CLEAN state and exact-head verification. |
+| P1 | [AR-1436](../tasks/AR-1436-local-guided-cli-wrapper.md): Local guided CLI wrapper | codex-asb-ar1436-local-guided-luna56 | Add a catalog-driven guided CLI wrapper for deterministic local mock qualification. | Monitor seven exact-main workflows for merge 18a0df9b4312e49196c1c8202b48a183ed83b073; verify all terminal success and exact remote tree/signature before release. |
 
 ### Blocked (66)
 
