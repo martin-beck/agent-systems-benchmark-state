@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Refresh the stale OpenRouter free-model pin and qualify local-only benchmark measurements.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Refresh OpenRouter model pin and local measurements",
-  "updated_at": "2026-09-25T13:20:57+00:00",
+  "updated_at": "2026-09-25T13:21:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1440-openrouter-model-refresh-local-measurements"
 }
 ---
@@ -45,3 +45,6 @@ tests for stale/mismatched model identities and unavailable pins.
   model refresh and operator-only measurements without resuming blocked AR-1329.
 
 - 2026-09-25T13:20:57+00:00: Claimed by ar1440-model-refresh-luna56.
+
+- 2026-09-25T13:21:36+00:00: Recorded command exit 0; command argv SHA-256
+  2b8a69c43832ade4c74b8cf69adae82656f18cec0459c3a5f5733a6e6f4b59ad.
