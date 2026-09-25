@@ -20,7 +20,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36080877989 | `18a0df9b4312` | push | Emulated aarch64 portability | in_progress:- |
 | 36080877987 | `18a0df9b4312` | push | Rust verification | in_progress:- |
 | 36080877977 | `18a0df9b4312` | push | Formal assurance | in_progress:- |
-| 36080877975 | `18a0df9b4312` | push | Fault assurance | in_progress:- |
+| 36080877975 | `18a0df9b4312` | push | Fault assurance | completed:success |
 | 36080877969 | `18a0df9b4312` | push | Repository quality | in_progress:- |
 | 36080084245 | `ae48046d9802` | pull_request | Hosted portability and native qualification | completed:success |
 | 36080084171 | `ae48046d9802` | pull_request | Huawei MIT source headers | completed:success |
