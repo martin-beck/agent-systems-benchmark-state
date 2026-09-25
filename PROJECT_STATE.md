@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #324 | `repair/ar-1445-protected-main-topology-repair-openrouter@10686db7ceb5` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | docs: repair protected-main merge topology |
+| #324 | `repair/ar-1445-protected-main-topology-repair-openrouter@10686db7ceb5` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | docs: repair protected-main merge topology |
 
 ## Recent workflows
 
@@ -23,8 +23,8 @@ Generated from local Git and GitHub. Do not edit.
 | 36144953361 | `10686db7ceb5` | pull_request | Fault assurance | in_progress:- |
 | 36144953315 | `10686db7ceb5` | pull_request | Rust verification | in_progress:- |
 | 36144953298 | `10686db7ceb5` | pull_request | Repository quality | in_progress:- |
-| 36144953152 | `10686db7ceb5` | pull_request | Agent Workflow Quality shadow | in_progress:- |
-| 36144090436 | `84b587ec2ddd` | push | Rust verification | in_progress:- |
+| 36144953152 | `10686db7ceb5` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 36144090436 | `84b587ec2ddd` | push | Rust verification | completed:failure |
 | 36144090413 | `84b587ec2ddd` | push | Formal assurance | completed:success |
 | 36144090389 | `84b587ec2ddd` | push | Fault assurance | completed:success |
 | 36144090160 | `84b587ec2ddd` | push | Repository quality | completed:failure |
