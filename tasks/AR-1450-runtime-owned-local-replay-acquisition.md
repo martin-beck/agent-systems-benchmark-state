@@ -9,17 +9,17 @@
   "id": "AR-1450",
   "next_action": "Await PR #328 exact-head CI and independent review at 5ddf976; required replay-authority evidence is now accepted by native_evidence.py and recorded in canonical checks.",
   "observed_branch": "feature/ar-1450-runtime-owned-local-replay-acquisition",
-  "observed_dirty": 1,
-  "observed_head": "5ddf976b30658ffa8d5daa191301ac9a85cabd00",
+  "observed_dirty": 0,
+  "observed_head": "30d477ee389ba1a1736810ecd1b2facab725cd92",
   "owner": "ar1450-replay-luna56",
   "plan": "../plans/AR-1450.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep local replay authority acquisition inside the runtime boundary.",
-  "task_revision": 110,
+  "task_revision": 111,
   "title": "Runtime-owned local replay acquisition factory",
-  "updated_at": "2026-09-25T20:28:47+00:00",
+  "updated_at": "2026-09-25T20:29:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1450-runtime-owned-local-replay-acquisition"
 }
 ---
