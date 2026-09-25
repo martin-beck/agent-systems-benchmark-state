@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep local replay authority acquisition inside the runtime boundary.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Runtime-owned local replay acquisition factory",
-  "updated_at": "2026-09-25T19:38:06+00:00",
+  "updated_at": "2026-09-25T19:40:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1450-runtime-owned-local-replay-acquisition"
 }
 ---
@@ -173,3 +173,6 @@ Requirements:
   uses the sandbox child relay endpoint, and exposes typed validated cassette identity. Focused
   runtime all-target tests and Clippy pass; push succeeded. Coverage/exact-head requalification
   remains pending; no merge.
+
+- 2026-09-25T19:40:29+00:00: Recorded command exit 0; command argv SHA-256
+  428457ea9cc6a21bd46c5be6651ba2faccb5b0b07ddc2fd6f96eca730dea5ab7.
