@@ -12,7 +12,7 @@
   "id": "AR-1451",
   "next_action": "PR #329 exact head e6e433a includes closed mode-aware schema, operation handles, hostile vector test, lifecycle/recovery, migration, portability, and privacy bounds. Await re-review and exact-head checks; merge only when green.",
   "observed_branch": "feature/ar-1451-central-orchestration-authority-design",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "e6e433ab2d0840e763fd9c136964b9e343a92b5e",
   "owner": "coordinator-orchestration",
   "plan": "../plans/AR-1451.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Freeze one runtime-owned orchestration authority for every ASB run and attempt.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Central orchestration authority contract and ASB redesign",
-  "updated_at": "2026-09-25T17:44:34+00:00",
+  "updated_at": "2026-09-25T17:44:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1451-central-orchestration-authority-design"
 }
 ---
