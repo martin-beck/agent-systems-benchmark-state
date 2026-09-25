@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1452-runtime-orchestration-service",
-  "checkpoint_commit": "69331c9f5e303e9b6385d58041786e3e0e49c83f",
+  "checkpoint_commit": "6374c3e1b33f86fc7f3a47c6e7e07077aad0578e",
   "claim_expires": "2026-09-25T21:12:29+00:00",
   "depends_on": [
     "AR-1357",
@@ -10,7 +10,7 @@
     "AR-1451"
   ],
   "id": "AR-1452",
-  "next_action": "PR #330 exact head 69331c9 adds service-level local mock execution coverage, restores fenced identities during journal rehydration, and places an explicit durability barrier on append failure. Await exact-head CI and independent re-review; strict replay adapter remains AR-1450 follow-up.",
+  "next_action": "PR #330 exact head 6374c3e repairs Repository quality dependency policy: deny.toml now skips the actual syn 3.0.6 and duplicate synstructure lines and removes unmatched Unicode-3.0 allowance. Await exact-head CI; remaining review P1s are timeout/authority cancellation fencing and bounded terminal capacity.",
   "observed_branch": "feature/ar-1452-runtime-orchestration-service",
   "observed_dirty": 0,
   "observed_head": "6374c3e1b33f86fc7f3a47c6e7e07077aad0578e",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 105,
+  "task_revision": 106,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T19:20:54+00:00",
+  "updated_at": "2026-09-25T19:21:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---
@@ -284,3 +284,7 @@ until the service can prove the complete authority chain.
 
 - 2026-09-25T19:20:54+00:00: Recorded command exit 0; command argv SHA-256
   10ffdfa0d30719f50bf21fbc01c140375702acb07cf7c4b5d8dc85839df9e3bd.
+
+- 2026-09-25T19:21:19+00:00: Repository quality failed on duplicate syn/synstructure and unmatched
+  license allowance after adding asb-runtime; policy is now explicit for the actual locked versions.
+  Signed DCO commit pushed. Do not merge until policy gate and review are green.
