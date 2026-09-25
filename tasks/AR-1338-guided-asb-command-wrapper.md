@@ -10,7 +10,7 @@
     "AR-1446"
   ],
   "id": "AR-1338",
-  "next_action": "PR #327 updated at exact head 76524a7 after focused/full CLI gates and independent review. Hosted exact-head checks and review remain pending. Guided setup now enforces catalog provider/model pairs and absolute non-traversal paths; plain CLI replay remains fail-closed until a runtime-owned authority acquisition successor is delivered. Do not merge until CI/review are green.",
+  "next_action": "PR #327 updated at exact head 4d42f59 after campaign-path hardening, full CLI tests, workflow provenance, formatting, and clippy. Hosted exact-head checks restarted; independent review confirms setup and record/replay path checks fixed, but plain CLI easy replay still cannot complete without runtime-injected authority. Keep open until checks/review are green and the replay-authority boundary is resolved or an explicitly accepted successor AR is recorded.",
   "observed_branch": "feature/ar-1338-guided-asb-command-wrapper",
   "observed_dirty": 0,
   "observed_head": "4d42f598127d014d2ed33f7f33fef82d3f3b8036",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows.",
-  "task_revision": 72,
+  "task_revision": 73,
   "title": "Guided ASB command wrapper",
-  "updated_at": "2026-09-25T16:51:21+00:00",
+  "updated_at": "2026-09-25T16:51:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1338-guided-asb-command-wrapper"
 }
 ---
@@ -224,3 +224,6 @@ reachability.
 
 - 2026-09-25T16:51:21+00:00: Recorded command exit 0; command argv SHA-256
   486041c3ec0b604a209ad09e256ea791b8661a595ff1e1847631491ee6f946dc.
+
+- 2026-09-25T16:51:47+00:00: Added absolute/non-traversal validation for easy record-campaign and
+  regression coverage.
