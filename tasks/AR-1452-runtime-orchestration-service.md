@@ -12,7 +12,7 @@
   "id": "AR-1452",
   "next_action": "PR #330 exact head 71ced42 repairs append-failure recovery: uncommitted lifecycle events are removed, status enters NeedsReconciliation, reconcile bypasses the barrier and clears it only after durable Failed append. Await exact-head CI/review; timeout and source-level cancellation remain the final lifecycle boundary.",
   "observed_branch": "feature/ar-1452-runtime-orchestration-service",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "71ced423fa93c97e3300a4402b6f2a50e5aec00c",
   "owner": "coordinator-orchestrator-impl",
   "plan": "../plans/AR-1452.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 123,
+  "task_revision": 124,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T19:29:22+00:00",
+  "updated_at": "2026-09-25T19:29:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---
