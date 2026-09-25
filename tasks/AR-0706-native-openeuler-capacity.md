@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Provide native openEuler capacity",
-  "updated_at": "2026-09-25T12:54:25+00:00",
+  "updated_at": "2026-09-25T12:54:41+00:00",
   "worktree_key": "agent-systems-benchmark-native-openeuler-capacity"
 }
 ---
@@ -163,3 +163,6 @@ native identity, kernel/distribution provenance, cleanup, cost/availability boun
 
 - 2026-09-25T12:54:25+00:00: Recorded command exit 0; command argv SHA-256
   d4faa284e0cab8b432ae148b96fb3b0c557eba6b5118ad39ced5de265bfd9e04.
+
+- 2026-09-25T12:54:41+00:00: Recorded command exit 0; command argv SHA-256
+  01464eed72053fec93841b13c8d8d5e1920205b135705fc1bfebe87d0e797f6f.
