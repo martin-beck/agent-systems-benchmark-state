@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the protected-main tree mismatch after the runtime replay merge.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Protected-main tree-equality repair for runtime replay",
-  "updated_at": "2026-09-25T20:58:42+00:00",
+  "updated_at": "2026-09-25T20:59:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1454-protected-main-tree-repair-runtime-replay"
 }
 ---
@@ -51,3 +51,6 @@ waived. Keep asb-tui out of scope.
 
 - 2026-09-25T20:58:30+00:00: Recorded command exit 0; command argv SHA-256
   9aa3466d2d462a54f89eb40d1d6e1d6aa9e3b6dab8e663cd2648350e21bffc02.
+
+- 2026-09-25T20:59:23+00:00: Recorded command exit 0; command argv SHA-256
+  659ae3fef4e9302596946ae052a25928ba9bab439f57b79c879227dbc54e1104.
