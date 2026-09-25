@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T21:20:49+00:00",
+  "updated_at": "2026-09-25T21:24:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
@@ -164,3 +164,6 @@ asb-control protocol after this AR is complete.
   cassette digest, so StrictReplay is not actually replay-authority/network-denied; execute_until
   ignores its deadline and can exceed RunLimits.timeout_ms. Repair work started on existing PR
   branch; no merge.
+
+- 2026-09-25T21:24:02+00:00: Recorded command exit 1; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
