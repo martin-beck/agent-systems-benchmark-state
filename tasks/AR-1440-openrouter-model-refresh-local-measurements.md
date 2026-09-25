@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1440-openrouter-model-refresh-local-measurements",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-25T15:44:26+00:00",
+  "claim_expires": "2026-09-25T15:45:46+00:00",
   "depends_on": [
     "AR-1328",
     "AR-1436",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Refresh the stale OpenRouter free-model pin and qualify local-only benchmark measurements.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Refresh OpenRouter model pin and local measurements",
-  "updated_at": "2026-09-25T13:44:26+00:00",
+  "updated_at": "2026-09-25T13:45:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1440-openrouter-model-refresh-local-measurements"
 }
 ---
@@ -95,3 +95,5 @@ tests for stale/mismatched model identities and unavailable pins.
   terminal only; no prompts/responses/credentials persisted.
 
 - 2026-09-25T13:44:26+00:00: Heartbeat by ar1440-model-refresh-luna56.
+
+- 2026-09-25T13:45:46+00:00: Heartbeat by ar1440-model-refresh-luna56.
