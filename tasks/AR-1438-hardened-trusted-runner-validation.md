@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make protected trusted-runner lifecycle validation compatible with hardened rootless execution.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Hardened trusted-runner validation repair",
-  "updated_at": "2026-09-25T12:09:24+00:00",
+  "updated_at": "2026-09-25T12:10:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1438-hardened-trusted-runner-validation"
 }
 ---
@@ -46,3 +46,6 @@ trusted workflow on the exact merge commit.
   validation repair
 
 - 2026-09-25T12:09:24+00:00: Claimed by ar1438_runner_validation_luna56.
+
+- 2026-09-25T12:10:13+00:00: Recorded command exit 0; command argv SHA-256
+  9fd0e1d25ed0b077815a89b939f78e941e2586e12cd57ac45708f03c8c3b9013.
