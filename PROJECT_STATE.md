@@ -11,8 +11,8 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #327 | `feature/ar-1338-guided-asb-command-wrapper@4d42f598127d` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): extend guided ASB workflow |
-| #328 | `feature/ar-1450-runtime-owned-local-replay-acquisition@58609e6b887b` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(runtime): add local replay provisioning boundary |
-| #330 | `feature/ar-1452-runtime-orchestration-service@3c8f7e41edf5` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(orchestrator): add runtime-owned admission service |
+| #328 | `feature/ar-1450-runtime-owned-local-replay-acquisition@58609e6b887b` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(runtime): add local replay provisioning boundary |
+| #330 | `feature/ar-1452-runtime-orchestration-service@3c8f7e41edf5` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(orchestrator): add runtime-owned admission service |
 
 ## Recent workflows
 
@@ -20,8 +20,8 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 36183900336 | `58609e6b887b` | pull_request | Rust verification | in_progress:- |
 | 36183900331 | `58609e6b887b` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 36183900308 | `58609e6b887b` | pull_request | Fault assurance | in_progress:- |
-| 36183900307 | `58609e6b887b` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 36183900308 | `58609e6b887b` | pull_request | Fault assurance | completed:success |
+| 36183900307 | `58609e6b887b` | pull_request | Hosted portability and native qualification | completed:success |
 | 36183900296 | `58609e6b887b` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 36183900281 | `58609e6b887b` | pull_request | Huawei MIT source headers | completed:success |
 | 36183900237 | `58609e6b887b` | pull_request | Formal assurance | in_progress:- |
