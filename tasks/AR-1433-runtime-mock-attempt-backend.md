@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add an approved runtime mock-attempt backend for deterministic local run and sweep qualification.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Runtime mock-attempt backend",
-  "updated_at": "2026-09-25T14:46:14+00:00",
+  "updated_at": "2026-09-25T14:47:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1433"
 }
 ---
@@ -62,4 +62,7 @@ access or to bypass runtime-owned launch authority.
   c3f9678d3206e0fbf13f2d34754ef97ba70edb240f3eb5508653b98109335725.
 
 - 2026-09-25T14:46:14+00:00: Recorded command exit 101; command argv SHA-256
+  1fc2e0933ef2da90f5c36356e45664e38695687fe7687d1309911a1c12ffae13.
+
+- 2026-09-25T14:47:01+00:00: Recorded command exit 0; command argv SHA-256
   1fc2e0933ef2da90f5c36356e45664e38695687fe7687d1309911a1c12ffae13.
