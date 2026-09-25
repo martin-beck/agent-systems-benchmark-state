@@ -10,16 +10,16 @@
   "next_action": "Repair PR #333 required Rust deadline failure and bound PlanAuthoritySource cancellation state; preserve failed CI/review evidence, then rerun local and exact-head hosted gates.",
   "observed_branch": "feature/ar-1453-frontend-orchestration-wiring",
   "observed_dirty": 0,
-  "observed_head": "c17254a9db622d8e9801084071afa009fc7cedf1",
+  "observed_head": "88fd1067ae7e04da0cc641b033bdcc32b63dce8b",
   "owner": "ar1453-frontend-orchestration-luna56",
   "plan": "../plans/AR-1453.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 97,
+  "task_revision": 98,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T22:00:52+00:00",
+  "updated_at": "2026-09-25T22:01:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
