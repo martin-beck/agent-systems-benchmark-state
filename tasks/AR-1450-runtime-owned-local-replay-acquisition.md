@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1450-runtime-owned-local-replay-acquisition",
-  "checkpoint_commit": "185062d7345880d8d345172914cffc58585621a1",
+  "checkpoint_commit": "58609e6b887b43d38f21d729b00a326b2868a6e7",
   "claim_expires": "2026-09-25T21:44:43+00:00",
   "depends_on": [
     "AR-1448"
   ],
   "id": "AR-1450",
-  "next_action": "Exact-head local gates pass (runtime 130 tests, sandbox boundary 15 tests, clippy, workspace libraries, doctests). Await all PR #328 checks and independent review at exact head 185062d before protected merge.",
+  "next_action": "Await PR #328 exact-head CI at 58609e6 and independent review of the positive LocalReplayProvisioner acquisition integration test; merge only after all required checks are green.",
   "observed_branch": "feature/ar-1450-runtime-owned-local-replay-acquisition",
   "observed_dirty": 0,
   "observed_head": "58609e6b887b43d38f21d729b00a326b2868a6e7",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep local replay authority acquisition inside the runtime boundary.",
-  "task_revision": 94,
+  "task_revision": 95,
   "title": "Runtime-owned local replay acquisition factory",
-  "updated_at": "2026-09-25T20:07:58+00:00",
+  "updated_at": "2026-09-25T20:08:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1450-runtime-owned-local-replay-acquisition"
 }
 ---
@@ -257,3 +257,7 @@ Requirements:
 
 - 2026-09-25T20:07:58+00:00: Recorded command exit 0; command argv SHA-256
   a32c66f397c1b8766afbcad9ae8c63c9ca5406422d5f40f652f687ef9cf61695.
+
+- 2026-09-25T20:08:26+00:00: Positive end-to-end owned acquisition test added in signed+DCO commit
+  58609e6, covering provisioner acquire through opaque authority and spawn_owned. Hosted checks
+  restarted at exact head.
