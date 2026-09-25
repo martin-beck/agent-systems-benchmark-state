@@ -12,17 +12,17 @@
   "id": "AR-1452",
   "next_action": "Repair AR-1452 coverage on PR #330: hosted workspace coverage failed at 87.85% because asb-orchestrator is 52.13%; add meaningful lifecycle/recovery/barrier/cancellation/evidence tests without weakening floors, then rerun exact-head gates.",
   "observed_branch": "feature/ar-1452-runtime-orchestration-service",
-  "observed_dirty": 1,
-  "observed_head": "3c8f7e41edf5c797ffb655588a14e9a059eab9aa",
+  "observed_dirty": 0,
+  "observed_head": "5f7bfcb97e5cc001f048162743fdeac27901b4f5",
   "owner": "coordinator-orchestrator-impl",
   "plan": "../plans/AR-1452.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 221,
+  "task_revision": 222,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T20:24:00+00:00",
+  "updated_at": "2026-09-25T20:24:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---
