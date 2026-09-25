@@ -16,9 +16,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make benchmark, offline capture/replay, and result comparison a single guided workflow.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Guided benchmark capture and comparison",
-  "updated_at": "2026-09-25T15:32:47+00:00",
+  "updated_at": "2026-09-25T15:33:55+00:00",
   "worktree_key": "agent-systems-benchmark"
 }
 ---
@@ -31,3 +31,6 @@ be independently identifiable as replay.
   guided capture/replay/comparison qualification. Optional live capture remains separate.
 
 - 2026-09-25T15:32:47+00:00: Claimed by coordinator-ar1443.
+
+- 2026-09-25T15:33:55+00:00: Recorded command exit 0; command argv SHA-256
+  732f90ed0f523aee0478a418c338d1238c21c4ba977cf6d7d7b4ae2d231c6398.
