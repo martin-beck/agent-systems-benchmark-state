@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1331-runtime-replay-launch-authority",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-25T17:47:57+00:00",
   "depends_on": [
     "AR-1443",
     "AR-1446"
   ],
   "id": "AR-1331",
   "next_action": "Promote and claim the ASB-local runtime replay authority repair. Provide runtime-owned ReplayLaunchAuthority for strict offline cassette replay, prove the CLI cannot fabricate one, and keep optional live capture AR-1330 separate.",
-  "owner": "",
+  "owner": "coordinator-ar1331",
   "plan": "../plans/AR-1331.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Deliver the runtime-owned strict-replay launch authority required by the replay CLI contract.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Runtime-owned strict-replay launch authority",
-  "updated_at": "2026-09-25T15:47:55+00:00",
+  "updated_at": "2026-09-25T15:47:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1331-runtime-replay-launch-authority"
 }
 ---
@@ -46,3 +46,5 @@ reachability.
 
 - 2026-09-25T15:47:55+00:00: ASB-local dependencies AR-1443 and AR-1446 are done; promote
   runtime-owned strict replay authority. Optional live capture AR-1330 remains separate.
+
+- 2026-09-25T15:47:57+00:00: Claimed by coordinator-ar1331.
