@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1423-literature-reconciliation",
   "checkpoint_commit": "ac10f5b0875d986b0dcff112a3aada96ebeff3f6",
-  "claim_expires": "2026-09-25T12:27:33+00:00",
+  "claim_expires": "2026-09-25T12:29:32+00:00",
   "depends_on": [
     "AR-1415",
     "AR-1419",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Reconcile all literature benchmark mentions with strict registry identities and framework boundaries.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Exhaustive literature docs-to-registry reconciliation",
-  "updated_at": "2026-09-25T10:29:17+00:00",
+  "updated_at": "2026-09-25T10:29:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1423-literature-reconciliation"
 }
 ---
@@ -46,3 +46,5 @@ workloads.
   because this claim has empty branch/worktree metadata.
 
 - 2026-09-25T10:27:33+00:00: Heartbeat by ar1423_literature_reconciliation_luna56.
+
+- 2026-09-25T10:29:32+00:00: Heartbeat by ar1423_literature_reconciliation_luna56.
