@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify ASB in a disposable first-customer production-like environment.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "First-customer production qualification",
-  "updated_at": "2026-09-25T15:42:04+00:00",
+  "updated_at": "2026-09-25T15:42:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1446-first-customer-production"
 }
 ---
@@ -56,3 +56,6 @@ This is the customer-facing integration gate. The deterministic local mock path 
 
 - 2026-09-25T15:42:04+00:00: Recorded command exit 0; command argv SHA-256
   008f3a8824b64ae468ae900d7bbac2a871a8d29892d84aba5b02a0cc1c0aedff.
+
+- 2026-09-25T15:42:43+00:00: Recorded command exit 0; command argv SHA-256
+  b945362378f77f64a68eb9e8d400e693e008357f0cc0d69f7bfe3bb93e47ae02.
