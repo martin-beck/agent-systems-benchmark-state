@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the protected-main tree mismatch after the runtime replay merge.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Protected-main tree-equality repair for runtime replay",
-  "updated_at": "2026-09-25T20:58:07+00:00",
+  "updated_at": "2026-09-25T20:58:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1454-protected-main-tree-repair-runtime-replay"
 }
 ---
@@ -45,3 +45,6 @@ waived. Keep asb-tui out of scope.
   from protected-main merge tree; current-main descendant repair is dependency-safe.
 
 - 2026-09-25T20:57:51+00:00: Claimed by ar1454-tree-repair-luna56.
+
+- 2026-09-25T20:58:15+00:00: Recorded command exit 0; command argv SHA-256
+  c48d7a2b6eb2c7a3cf586ce50944e144176d55f9b5bac23cc76692e0ab07979b.
