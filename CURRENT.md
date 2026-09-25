@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1450](tasks/AR-1450-runtime-owned-local-replay-acquisition.md): Runtime-owned local replay acquisition factory | Keep local replay authority acquisition inside the runtime boundary. | Await PR #328 exact-head CI and independent review at d73bdb8; native qualification now requires ASB_REQUIRE_NATIVE_SANDBOX=1 local_bootstrap_positive_acquires_and_spawns_owned_authority, while general sandbox evidence remains optional. | ar1450-replay-luna56 |
+| P0 | [AR-1450](tasks/AR-1450-runtime-owned-local-replay-acquisition.md): Runtime-owned local replay acquisition factory | Keep local replay authority acquisition inside the runtime boundary. | Await PR #328 exact-head CI and independent review at 5ddf976; required replay-authority evidence is now accepted by native_evidence.py and recorded in canonical checks. | ar1450-replay-luna56 |
 | P0 | [AR-1452](tasks/AR-1452-runtime-orchestration-service.md): Implement the runtime-owned ASB orchestration service | Implement one service-owned authority for admission, attempts, resources, and teardown. | Repair AR-1452 coverage on PR #330: hosted workspace coverage failed at 87.85% because asb-orchestrator is 52.13%; add meaningful lifecycle/recovery/barrier/cancellation/evidence tests without weakening floors, then rerun exact-head gates. | coordinator-orchestrator-impl |
 
 ## Open
