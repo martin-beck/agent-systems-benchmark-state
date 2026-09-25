@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify deterministic local record/replay and campaign journeys over the runtime mock.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Local record/replay campaign qualification",
-  "updated_at": "2026-09-25T01:33:34+00:00",
+  "updated_at": "2026-09-25T01:33:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1437-local-record-replay-campaign"
 }
 ---
@@ -71,3 +71,6 @@ campaign qualification. Require focused/full/review/PR/seven post-merge gates.
 
 - 2026-09-25T01:33:34+00:00: Recorded command exit 0; command argv SHA-256
   9499c0c9f7493c93690381ad0802155d6eee0d2965f70d5d086e271f050d0188.
+
+- 2026-09-25T01:33:49+00:00: Recorded command exit 0; command argv SHA-256
+  6fe58efc06eee2e329977a46ea220da899a13a06768449da89b74f6a4b9da1a9.
