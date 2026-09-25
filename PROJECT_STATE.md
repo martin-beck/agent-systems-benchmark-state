@@ -10,13 +10,13 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #316 | `feature/ar-1435-local-mock-cli-wiring@dc52ca99aaea` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Wire configured run and sweep through local mock attempts |
+| #316 | `feature/ar-1435-local-mock-cli-wiring@dc52ca99aaea` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Wire configured run and sweep through local mock attempts |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36076913528 | `dc52ca99aaea` | pull_request | Rust verification | in_progress:- |
+| 36076913528 | `dc52ca99aaea` | pull_request | Rust verification | completed:success |
 | 36076913503 | `dc52ca99aaea` | pull_request | Fault assurance | completed:success |
 | 36076913468 | `dc52ca99aaea` | pull_request | Emulated aarch64 portability | completed:success |
 | 36076913460 | `dc52ca99aaea` | pull_request | Hosted portability and native qualification | completed:success |
