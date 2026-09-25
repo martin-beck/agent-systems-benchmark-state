@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1452-runtime-orchestration-service",
   "checkpoint_commit": "a5eb7e680a3c71813d9d1aae3328a385d6812a95",
-  "claim_expires": "2026-09-25T22:11:44+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1357",
     "AR-1433",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1452-runtime-orchestration-service",
   "observed_dirty": 0,
   "observed_head": "5f7bfcb97e5cc001f048162743fdeac27901b4f5",
-  "owner": "coordinator-orchestrator-impl",
+  "owner": "",
   "plan": "../plans/AR-1452.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 230,
+  "task_revision": 231,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T20:34:32+00:00",
+  "updated_at": "2026-09-25T20:40:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---
@@ -617,3 +617,8 @@ until the service can prove the complete authority chain.
 - 2026-09-25T20:34:32+00:00: Protected merge succeeded after exact-head CI and independent review.
   Post-merge formal, Rust, fault, quality, hosted portability, and aarch64 workflows are in
   progress.
+
+- 2026-09-25T20:40:16+00:00: PR #330 merged at exact main a5eb7e680a3c71813d9d1aae3328a385d6812a95.
+  All seven post-merge workflows passed: formal, Rust, fault, repository quality, hosted
+  portability/native, emulated aarch64, and MIT headers. Local focused and workspace coverage gates
+  passed (91.14% crate, 90.68% workspace). Independent review clean. Promote AR-1453.
