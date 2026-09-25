@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1452-runtime-orchestration-service",
-  "checkpoint_commit": "6374c3e1b33f86fc7f3a47c6e7e07077aad0578e",
+  "checkpoint_commit": "1be9fc41b860260c277969aacb9f09974a28a5c6",
   "claim_expires": "2026-09-25T21:12:29+00:00",
   "depends_on": [
     "AR-1357",
@@ -10,7 +10,7 @@
     "AR-1451"
   ],
   "id": "AR-1452",
-  "next_action": "PR #330 exact head 6374c3e repairs Repository quality dependency policy: deny.toml now skips the actual syn 3.0.6 and duplicate synstructure lines and removes unmatched Unicode-3.0 allowance. Await exact-head CI; remaining review P1s are timeout/authority cancellation fencing and bounded terminal capacity.",
+  "next_action": "PR #330 exact head 1be9fc4 counts only nonterminal runs for bounded capacity. Await exact-head CI and independent re-review; timeout/cancellation authority fencing still requires a runtime adapter contract before merge.",
   "observed_branch": "feature/ar-1452-runtime-orchestration-service",
   "observed_dirty": 0,
   "observed_head": "1be9fc41b860260c277969aacb9f09974a28a5c6",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 113,
+  "task_revision": 114,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T19:22:54+00:00",
+  "updated_at": "2026-09-25T19:23:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---
@@ -303,3 +303,7 @@ until the service can prove the complete authority chain.
 
 - 2026-09-25T19:22:54+00:00: Recorded command exit 0; command argv SHA-256
   10ffdfa0d30719f50bf21fbc01c140375702acb07cf7c4b5d8dc85839df9e3bd.
+
+- 2026-09-25T19:23:19+00:00: Fixed terminal-record capacity leak; 7 orchestrator tests pass after
+  fmt. Signed DCO commit pushed. Repository policy gate is rerunning on the updated dependency skip
+  configuration.
