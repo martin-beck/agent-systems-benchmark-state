@@ -2,7 +2,7 @@
 {
   "branch": "feature/native-openeuler-capacity",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-25T15:39:02+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0704",
     "AR-0201",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/native-openeuler-capacity",
   "observed_dirty": 0,
   "observed_head": "7390bcd2082700d0c9f04409732b48de8e9f8628",
-  "owner": "ar0706_capacity_requal_luna56",
+  "owner": "",
   "plan": "../plans/AR-0706.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional.",
-  "task_revision": 113,
+  "task_revision": 114,
   "title": "Provide native openEuler capacity",
-  "updated_at": "2026-09-25T13:39:02+00:00",
+  "updated_at": "2026-09-25T13:39:13+00:00",
   "worktree_key": "agent-systems-benchmark-native-openeuler-capacity"
 }
 ---
@@ -363,3 +363,14 @@ native identity, kernel/distribution provenance, cleanup, cost/availability boun
   bf9c7359def1cf2ab281973dd4c14b9d5dedbc65bea2ec7f3f84af9c3df690eb.
 
 - 2026-09-25T13:39:02+00:00: Heartbeat by ar0706_capacity_requal_luna56.
+
+- 2026-09-25T13:39:13+00:00: Provisioned and verified local disposable openEuler VM under
+  /srv/data/projects/asb-openeuler-vm: official openEuler 24.03 LTS-SP2 x86_64 qcow2 booted under
+  KVM/QEMU; guest reports /etc/openEuler-release='openEuler release 24.03 (LTS-SP2)' and kernel
+  6.6.0-98.0.0.103.oe2403sp2.x86_64. GitHub Actions self-hosted runner 26 is online with labels
+  self-hosted,Linux,X64,asb-openeuler-24.03-sp2,asb-qemu-x86_64 and an active guest systemd runner
+  service. This is functional VM capacity only: docs/PLATFORMS.md explicitly reject QEMU as
+  native-kernel evidence and native performance baseline. No native openEuler host was available,
+  and no native gate was claimed. Next action: add/review a dedicated VM-functional CI job if
+  desired; preserve native qualification as unproven until an approved native x86_64 openEuler host
+  exists.
