@@ -12,7 +12,7 @@
   "id": "AR-1452",
   "next_action": "PR #330 exact head 0e9e1e1 removes obsolete deny.toml skip that caused Repository quality bans failure. Await new exact-head CI and independent re-review; do not merge while local execution/reconciliation P1s remain.",
   "observed_branch": "feature/ar-1452-runtime-orchestration-service",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "0e9e1e15647903b9bd806b7b6eaeac21fc2a23bc",
   "owner": "coordinator-orchestrator-impl",
   "plan": "../plans/AR-1452.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T19:05:04+00:00",
+  "updated_at": "2026-09-25T19:05:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---
