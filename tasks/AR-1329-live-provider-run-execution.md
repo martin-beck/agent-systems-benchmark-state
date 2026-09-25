@@ -9,7 +9,7 @@
     "AR-1340"
   ],
   "id": "AR-1329",
-  "next_action": "BLOCKED at two explicit boundaries: AR-1432/AR-1433 must supply the runtime-owned deterministic mock-attempt adapter for mandatory local run/sweep qualification; the optional production live path still needs an atomic LiveProviderRuntimeService resolving pinned policy, enrolled credentials, attested namespace/relay, concrete egress target, ResourceLease, SandboxBackend, and one LiveProviderAttempt per scheduler attempt with cancellation teardown. Do not use external reachability as a CI gate; preserve NetworkPolicy::Deny and direct/alternate egress denial. AR-1446 consumes this only after its required execution and customer-journey dependencies are released.",
+  "next_action": "Local deterministic mock run/sweep qualification is delivered by AR-1433 (PR #325, merge 2872a31f, all exact-main gates green). AR-1329 remains blocked only for optional production live-provider integration: an atomic runtime-owned LiveProviderRuntimeService must resolve pinned policy, enrolled credentials, attested namespace/relay, concrete egress target, ResourceLease, SandboxBackend, and one LiveProviderAttempt per scheduler attempt with cancellation teardown. Do not use external reachability as a CI gate; preserve NetworkPolicy::Deny and direct/alternate egress denial. AR-1446 may consume the local path without waiting for this optional boundary.",
   "observed_branch": "feature/ar-1329-live-provider-run-execution",
   "observed_dirty": 0,
   "observed_head": "04b4c067055073031cd6d88cf18f0d158f488ad0",
@@ -199,6 +199,11 @@ doubles, and the digest-pinned mode remain default and never touch the network.
   authenticated runtime execution-source materialization.
 
 - 2026-09-25T15:00:00+00:00: Coordinator production-readiness audit clarified that the mandatory local execution boundary remains AR-1432/AR-1433, while the optional production live boundary remains runtime-owned and fail-closed. Created AR-1446 for disposable first-customer install/configure/benchmark/replay/recovery/cleanup qualification; no live-provider or CI gate was weakened.
+
+- 2026-09-25T17:15:00+00:00: AR-1433 delivered and post-merge verified the runtime-owned
+  deterministic mock-attempt path. The mandatory local boundary is no longer blocked;
+  only the optional production live-provider service remains blocked. AR-1446 can use
+  the local path independently.
 
 ## Current development and CI qualification boundary
 
