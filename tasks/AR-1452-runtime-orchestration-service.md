@@ -12,17 +12,17 @@
   "id": "AR-1452",
   "next_action": "PR #330 exact head c2d799e adds runtime-owned LocalMockAuthoritySource backed by asb-runtime LocalProviderMockBackend and explicit reconcile() for NeedsReconciliation attempts. Await exact-head CI and independent re-review; inspect storage-barrier semantics before merge.",
   "observed_branch": "feature/ar-1452-runtime-orchestration-service",
-  "observed_dirty": 1,
-  "observed_head": "c2d799e4f9d7859e6462d60886c9255d5df9f37e",
+  "observed_dirty": 0,
+  "observed_head": "69331c9f5e303e9b6385d58041786e3e0e49c83f",
   "owner": "coordinator-orchestrator-impl",
   "plan": "../plans/AR-1452.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 97,
+  "task_revision": 98,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T19:15:51+00:00",
+  "updated_at": "2026-09-25T19:16:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---
