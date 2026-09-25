@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify ASB in a disposable first-customer production-like environment.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "First-customer production qualification",
-  "updated_at": "2026-09-25T15:38:30+00:00",
+  "updated_at": "2026-09-25T15:38:51+00:00",
   "worktree_key": "agent-systems-benchmark"
 }
 ---
@@ -45,3 +45,6 @@ This is the customer-facing integration gate. The deterministic local mock path 
   qualification.
 
 - 2026-09-25T15:38:30+00:00: Claimed by coordinator-ar1446.
+
+- 2026-09-25T15:38:51+00:00: Recorded command exit 0; command argv SHA-256
+  ca95b856be82e838da8e97f906281cede2302b242d9cc8057278f96ec4a512c0.
