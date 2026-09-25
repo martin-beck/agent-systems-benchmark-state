@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1451-central-orchestration-authority-design",
   "checkpoint_commit": "071167df4fe23165978b51de5eaf3541244f63ff",
-  "claim_expires": "2026-09-25T19:32:06+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1341",
     "AR-1357",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1451-central-orchestration-authority-design",
   "observed_dirty": 0,
   "observed_head": "979102f3b56dcfc4b7023e92a712f7c2c71bdb00",
-  "owner": "coordinator-orchestration",
+  "owner": "",
   "plan": "../plans/AR-1451.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Freeze one runtime-owned orchestration authority for every ASB run and attempt.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Central orchestration authority contract and ASB redesign",
-  "updated_at": "2026-09-25T18:10:43+00:00",
+  "updated_at": "2026-09-25T18:11:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1451-central-orchestration-authority-design"
 }
 ---
@@ -139,3 +139,9 @@ provider access.
 
 - 2026-09-25T18:10:43+00:00: Recorded command exit 0; command argv SHA-256
   108ab97d65b79627d1c00e8a1057112d5fed03ab091c46863ed4b5794a9f3d1c.
+
+- 2026-09-25T18:11:12+00:00: PR #329 exact-head 979102f merged through signed protected merge as
+  071167df4fe23165978b51de5eaf3541244f63ff. Independent review found no P0/P1/P2. Exact-head checks
+  all green; seven post-merge workflows 36170798957, 36170798948, 36170798971, 36170798901,
+  36170798918, 36170798954, 36170798887 terminal-success. Post-merge local Draft 2020-12
+  orchestration schema vectors passed on clean merge tree.
