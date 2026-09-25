@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1450-runtime-owned-local-replay-acquisition",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-25T19:08:23+00:00",
   "depends_on": [
     "AR-1448"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1450-runtime-owned-local-replay-acquisition",
   "observed_dirty": 1,
   "observed_head": "e4d2c821d160256df4e00df4f165aa69a54d69e6",
-  "owner": "",
+  "owner": "ar1450-replay-luna56",
   "plan": "../plans/AR-1450.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Keep local replay authority acquisition inside the runtime boundary.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Runtime-owned local replay acquisition factory",
-  "updated_at": "2026-09-25T17:07:42+00:00",
+  "updated_at": "2026-09-25T17:08:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1450-runtime-owned-local-replay-acquisition"
 }
 ---
@@ -49,3 +49,5 @@ Requirements:
   constructor accepting SandboxLaunchInput, ResourceLease and SandboxBackend would preserve the
   AR-1449 boundary violation. Current AR-1448 primitives lack a runtime-owned provisioning
   entrypoint; no product change published.
+
+- 2026-09-25T17:08:23+00:00: Claimed by ar1450-replay-luna56.

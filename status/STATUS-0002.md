@@ -112,11 +112,16 @@
 
 ## Complete AR inventory
 
-### Open (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1450](../tasks/AR-1450-runtime-owned-local-replay-acquisition.md): Runtime-owned local replay acquisition factory | Unclaimed | Keep local replay authority acquisition inside the runtime boundary. | Implement runtime-owned bootstrap/provisioner using existing LiveProviderProvisioner pattern; own relay/lease roots, tool pins, sandbox construction, attestation and teardown internally. |
+| P0 | [AR-1450](../tasks/AR-1450-runtime-owned-local-replay-acquisition.md): Runtime-owned local replay acquisition factory | ar1450-replay-luna56 | Keep local replay authority acquisition inside the runtime boundary. | Implement runtime-owned bootstrap/provisioner using existing LiveProviderProvisioner pattern; own relay/lease roots, tool pins, sandbox construction, attestation and teardown internally. |
+
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P1 | [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md): Guided ASB command wrapper | Unclaimed | Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows. | PR #327 head 4d42f59 has green exact-head hosted checks and complete local gates. AR-1449 and AR-1450 audits both confirmed the remaining P1: AR-1448 lacks a runtime-owned provisioning entrypoint, so ordinary CLI easy replay cannot safely acquire authority. Keep PR unmerged and do not weaken fail-closed replay; promote a reviewed runtime provisioning design before integrating and rerunning gates. |
 
 ### Blocked (69)
