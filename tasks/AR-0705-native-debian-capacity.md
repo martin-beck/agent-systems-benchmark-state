@@ -17,11 +17,11 @@
   "plan": "../plans/AR-0705.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Qualify booted Debian on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Provide native Debian capacity",
-  "updated_at": "2026-09-25T11:52:18+00:00",
+  "updated_at": "2026-09-25T12:10:49+00:00",
   "worktree_key": "agent-systems-benchmark-native-debian-capacity"
 }
 ---
@@ -71,3 +71,6 @@ native identity, kernel/distribution provenance, cleanup, cost/availability boun
   reports zero self-hosted runners. No native Debian or QEMU AArch64 evidence claimed. Resume only
   with authorized disposable Debian capacity, credential isolation, cost/quota bounds, or approved
   native runner; containerized Debian is a non-native alternative and cannot satisfy native gates.
+
+- 2026-09-25T12:10:49+00:00: QEMU system emulator is now installed; re-audit pinned emulated AArch64
+  and booted Debian capacity without claiming native ARM64.
