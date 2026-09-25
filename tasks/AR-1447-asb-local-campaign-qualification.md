@@ -10,18 +10,18 @@
   ],
   "id": "AR-1447",
   "next_action": "Remain planned until local mock AR-1433, recording/replay AR-1437, and ASB setup AR-1442 are released; then qualify the existing bounded easy run/sweep and offline local campaign journey. The broader AR-1338 interactive wrapper remains a separate enhancement.",
-  "observed_branch": "",
-  "observed_dirty": 0,
-  "observed_head": "",
+  "observed_branch": "main",
+  "observed_dirty": 7,
+  "observed_head": "bd7d10d4a760a84fa42de2b1fa9e97e8ea85ba09",
   "owner": "coordinator-ar1447",
   "plan": "../plans/AR-1447.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the complete credential-free ASB local campaign and replay journey.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "ASB local campaign qualification",
-  "updated_at": "2026-09-25T15:27:34+00:00",
+  "updated_at": "2026-09-25T15:27:49+00:00",
   "worktree_key": "agent-systems-benchmark"
 }
 ---
