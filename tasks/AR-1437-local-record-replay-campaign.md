@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify deterministic local record/replay and campaign journeys over the runtime mock.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Local record/replay campaign qualification",
-  "updated_at": "2026-09-25T01:27:52+00:00",
+  "updated_at": "2026-09-25T01:28:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1437-local-record-replay-campaign"
 }
 ---
@@ -37,3 +37,6 @@ campaign qualification. Require focused/full/review/PR/seven post-merge gates.
   and AR-1329/1338 remain untouched. Preserve offline/default denial and no live provider authority.
 
 - 2026-09-25T01:27:52+00:00: Claimed by codex-asb-ar1437-local-record-luna56.
+
+- 2026-09-25T01:28:00+00:00: Recorded command exit 0; command argv SHA-256
+  796ef0e547da4a0a8917d2b28477bfd5b901b97bc40a404ac48e361aabe02249.
