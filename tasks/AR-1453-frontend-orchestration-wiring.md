@@ -10,16 +10,16 @@
   "next_action": "Repair P1 cancellation lifecycle: propagate direct authority cancellation as durable Cancelled instead of Completed/NeedsReconciliation; restore true in-flight concurrent cancellation regression test. Preserve 0fd27d4 hosted evidence and rerun all gates/review.",
   "observed_branch": "feature/ar-1453-frontend-orchestration-wiring",
   "observed_dirty": 0,
-  "observed_head": "0fd27d4c7d8c256acb6a6e301f0acbf080b4e5e4",
+  "observed_head": "d83c451950850db357d08959f3a97ce28fd386e3",
   "owner": "ar1453-frontend-orchestration-luna56",
   "plan": "../plans/AR-1453.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 111,
+  "task_revision": 112,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T22:14:25+00:00",
+  "updated_at": "2026-09-25T22:14:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
