@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1452-runtime-orchestration-service",
-  "checkpoint_commit": "2cd5b3d97341d39f82d5d1b5039ac224ad8149a2",
+  "checkpoint_commit": "693eb7c0d846151180a22d3d0cc273c23f6ac862",
   "claim_expires": "2026-09-25T21:12:29+00:00",
   "depends_on": [
     "AR-1357",
@@ -10,7 +10,7 @@
     "AR-1451"
   ],
   "id": "AR-1452",
-  "next_action": "PR #330 exact head 2cd5b3d passes a cooperative deadline into AuthoritySource::execute_until; timeout failures invoke per-attempt cancel and fail closed. Await exact-head CI and review; adapters must implement bounded interruption at the runtime boundary.",
+  "next_action": "PR #330 exact head 693eb7c requires AuthoritySource implementations to provide deadline-aware execute_until, fails closed when teardown hooks fail, invokes teardown on successful completion and all failure paths, and preserves NeedsReconciliation on failed recovery append. Await exact-head CI/review.",
   "observed_branch": "feature/ar-1452-runtime-orchestration-service",
   "observed_dirty": 0,
   "observed_head": "693eb7c0d846151180a22d3d0cc273c23f6ac862",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 173,
+  "task_revision": 174,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T19:51:49+00:00",
+  "updated_at": "2026-09-25T19:52:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---
@@ -456,3 +456,8 @@ until the service can prove the complete authority chain.
 
 - 2026-09-25T19:51:49+00:00: Recorded command exit 0; command argv SHA-256
   10ffdfa0d30719f50bf21fbc01c140375702acb07cf7c4b5d8dc85839df9e3bd.
+
+- 2026-09-25T19:52:18+00:00: Addressed latest review: execute_until is now a required trait hook (no
+  unbounded default); cleanup errors enter reconciliation barrier; successful complete/execute
+  invoke source cancellation/teardown; runtime local cancellation is per attempt. 7 focused tests
+  and clippy passed; signed commit pushed.

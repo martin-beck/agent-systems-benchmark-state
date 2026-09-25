@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1450](tasks/AR-1450-runtime-owned-local-replay-acquisition.md): Runtime-owned local replay acquisition factory | Keep local replay authority acquisition inside the runtime boundary. | Obtain independent review of PR #328 at exact head dc2e077; if review is clean, coordinator may perform protected merge. Do not force-update the published branch or merge from this worker. | ar1450-replay-luna56 |
-| P0 | [AR-1452](tasks/AR-1452-runtime-orchestration-service.md): Implement the runtime-owned ASB orchestration service | Implement one service-owned authority for admission, attempts, resources, and teardown. | PR #330 exact head 2cd5b3d passes a cooperative deadline into AuthoritySource::execute_until; timeout failures invoke per-attempt cancel and fail closed. Await exact-head CI and review; adapters must implement bounded interruption at the runtime boundary. | coordinator-orchestrator-impl |
+| P0 | [AR-1452](tasks/AR-1452-runtime-orchestration-service.md): Implement the runtime-owned ASB orchestration service | Implement one service-owned authority for admission, attempts, resources, and teardown. | PR #330 exact head 693eb7c requires AuthoritySource implementations to provide deadline-aware execute_until, fails closed when teardown hooks fail, invokes teardown on successful completion and all failure paths, and preserves NeedsReconciliation on failed recovery append. Await exact-head CI/review. | coordinator-orchestrator-impl |
 
 ## Open
 
