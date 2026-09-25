@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #316 | `feature/ar-1435-local-mock-cli-wiring@23a7bdbd9a8e` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | Wire configured run and sweep through local mock attempts |
+| #316 | `feature/ar-1435-local-mock-cli-wiring@23a7bdbd9a8e` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Wire configured run and sweep through local mock attempts |
 
 ## Recent workflows
 
@@ -22,7 +22,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36075699775 | `23a7bdbd9a8e` | pull_request | Rust verification | in_progress:- |
 | 36075699767 | `23a7bdbd9a8e` | pull_request | Formal assurance | in_progress:- |
 | 36075699729 | `23a7bdbd9a8e` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 36075699715 | `23a7bdbd9a8e` | pull_request | Fault assurance | in_progress:- |
+| 36075699715 | `23a7bdbd9a8e` | pull_request | Fault assurance | completed:success |
 | 36075699702 | `23a7bdbd9a8e` | pull_request | Huawei MIT source headers | completed:success |
 | 36073539373 | `4736db727b13` | push | Emulated aarch64 portability | completed:success |
 | 36073539342 | `4736db727b13` | push | Huawei MIT source headers | completed:success |
