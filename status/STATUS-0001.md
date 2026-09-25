@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**459 ARs tracked** across 5 active status categories.
+**460 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 68 |
-| **Planned** | Defined work awaiting promotion or dependencies | 63 |
+| **Planned** | Defined work awaiting promotion or dependencies | 64 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 310 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -531,6 +531,7 @@ flowchart LR
         AR_1435["AR-1435 - Done"]:::status_done
         AR_1436["AR-1436 - Done"]:::status_done
         AR_1437["AR-1437 - Done"]:::status_done
+        AR_1438["AR-1438 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1028,6 +1029,7 @@ flowchart LR
     AR_0830 --> AR_0834
     AR_0830 --> AR_0835
     AR_0830 --> AR_0836
+    AR_0830 --> AR_1438
     AR_0831 --> AR_0832
     AR_0831 --> AR_0835
     AR_0831 --> AR_0836
@@ -1847,7 +1849,7 @@ flowchart LR
 | [AR-0821](../tasks/AR-0821-one-line-local-install.md) | [AR-0803](../tasks/AR-0803-frontend-control-api.md), [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0820](../tasks/AR-0820-verifiable-install-artifacts.md) | [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0822](../tasks/AR-0822-install-upgrade-rollback.md), [AR-0823](../tasks/AR-0823-installation-qualification.md), [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md) |
 | [AR-0822](../tasks/AR-0822-install-upgrade-rollback.md) | [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0820](../tasks/AR-0820-verifiable-install-artifacts.md), [AR-0821](../tasks/AR-0821-one-line-local-install.md) | [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0823](../tasks/AR-0823-installation-qualification.md), [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md) |
 | [AR-0823](../tasks/AR-0823-installation-qualification.md) | [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-0821](../tasks/AR-0821-one-line-local-install.md), [AR-0822](../tasks/AR-0822-install-upgrade-rollback.md), [AR-1012](../tasks/AR-1012-tui-quality-assurance.md), [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md), [AR-1140](../tasks/AR-1140.md), [AR-1170](../tasks/AR-1170.md) | [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-1027](../tasks/AR-1027-asb-tui-verified-release.md) |
-| [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md) | [AR-0002](../tasks/AR-0002-coordination-assurance.md), [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md) | [AR-0831](../tasks/AR-0831-aiws-workflow-routing.md), [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md), [AR-0833](../tasks/AR-0833-aiws-runner-reboot-lifecycle.md), [AR-0834](../tasks/AR-0834-handoffctl-lint-regression.md), [AR-0835](../tasks/AR-0835-runner-privacy-guard-remediation.md), [AR-0836](../tasks/AR-0836-runner-isolation-hardening.md) |
+| [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md) | [AR-0002](../tasks/AR-0002-coordination-assurance.md), [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md) | [AR-0831](../tasks/AR-0831-aiws-workflow-routing.md), [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md), [AR-0833](../tasks/AR-0833-aiws-runner-reboot-lifecycle.md), [AR-0834](../tasks/AR-0834-handoffctl-lint-regression.md), [AR-0835](../tasks/AR-0835-runner-privacy-guard-remediation.md), [AR-0836](../tasks/AR-0836-runner-isolation-hardening.md), [AR-1438](../tasks/AR-1438-hardened-trusted-runner-validation.md) |
 | [AR-0831](../tasks/AR-0831-aiws-workflow-routing.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md) | [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md), [AR-0835](../tasks/AR-0835-runner-privacy-guard-remediation.md), [AR-0836](../tasks/AR-0836-runner-isolation-hardening.md), [AR-0845](../tasks/AR-0845-ci-artifact-quota-resilience.md) |
 | [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md) | [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md), [AR-0831](../tasks/AR-0831-aiws-workflow-routing.md) | [AR-0833](../tasks/AR-0833-aiws-runner-reboot-lifecycle.md) |
 | [AR-0833](../tasks/AR-0833-aiws-runner-reboot-lifecycle.md) | [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md), [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md) | None |
