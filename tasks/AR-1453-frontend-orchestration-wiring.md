@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 92,
+  "task_revision": 93,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T21:55:10+00:00",
+  "updated_at": "2026-09-25T21:55:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
@@ -297,3 +297,6 @@ asb-control protocol after this AR is complete.
   orchestration dependency/authority constructor and durable status-by-idempotency projection.
   Cargo.lock is included. Focused lifecycle tests, 110 asb-cli lib tests, fmt, and clippy -D
   warnings pass.
+
+- 2026-09-25T21:55:21+00:00: Recorded command exit 0; command argv SHA-256
+  25f7d90f0c59f5d2e3dc33b845a46e2605101953ef42e82e76be01852055156c.
