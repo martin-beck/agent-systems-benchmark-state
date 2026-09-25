@@ -108,6 +108,12 @@
 
 ## Complete AR inventory
 
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1441](../tasks/AR-1441-first-class-install-bootstrap.md): First-class install and bootstrap | Unclaimed | Provide a verified one-command install and first-run bootstrap for ASB CLI/runtime bundles. | Promote and claim against the completed ASB install/lifecycle primitives AR-0821 and AR-0822; implement and qualify the ASB CLI/runtime-bundle clean-install/bootstrap path. Preserve AR-0823 as the separate cross-repository/UI audit. |
+
 ### Blocked (68)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -181,7 +187,7 @@
 | P2 | [AR-0705](../tasks/AR-0705-native-debian-capacity.md): Provide native Debian capacity | Unclaimed | Qualify booted Debian on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 Debian and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 
-### Planned (67)
+### Planned (66)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -205,7 +211,6 @@
 | P0 | [AR-1309](../tasks/AR-1309-reviewed-capacity-or-model-reduction.md): Reviewed full-exhaustive capacity or model-reduction contract | Unclaimed | Provide a reviewed successor contract after terminal full-exhaustive capacity OOM. | Remain planned until the coordinator reviews the AR-1308 terminal OOM evidence and selects a separately scoped capacity contract or model-reduction profile; do not rerun or widen AR-1307 limits. |
 | P0 | [AR-1370](../tasks/AR-1370-runner-authority-materialization.md): Runner authority materialization | Unclaimed | Inject existing authenticated certificate authority and runtime enrollment material into RunnerBackend/Catalog for receipt issuance. | Remain planned until AR-1369 dependency is resolved; then add authenticated RunnerBackend/Catalog authority injection and receipt-source tests without synthetic authority. |
 | P0 | [AR-1375](../tasks/AR-1375-live-control-dispatch-source.md): Runtime-owned live control dispatch source | Unclaimed | Supply authenticated runtime control receipts to production live dispatch. | Wait for AR-1374 blocker resolution, then implement the runtime-owned authenticated control adapter for CLI live dispatch. |
-| P0 | [AR-1441](../tasks/AR-1441-first-class-install-bootstrap.md): First-class install and bootstrap | Unclaimed | Provide a verified one-command install and first-run bootstrap for ASB CLI/runtime bundles. | Promote and claim against the completed ASB install/lifecycle primitives AR-0821 and AR-0822; implement and qualify the ASB CLI/runtime-bundle clean-install/bootstrap path. Preserve AR-0823 as the separate cross-repository/UI audit. |
 | P0 | [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md): Guided setup wizard orchestration | Unclaimed | Unify first-run and reconfiguration of agents, providers, auth methods, models and defaults in one guided flow. | Promote after dependencies are done; implement the shared catalog-driven first-run and reconfiguration contract for CLI and TUI. |
 | P0 | [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md): Guided benchmark capture and comparison | Unclaimed | Make benchmark, offline capture/replay, and result comparison a single guided workflow. | Promote after dependencies are done; implement the selection-driven benchmark, capture/replay, and comparison journey over the existing campaign contracts. |
 | P0 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Make the complete install-to-comparison journey a cross-repository release qualification gate. | Promote after AR-1443 and paired asb-tui AR-1327 are done; run the disposable cross-repository journey and publish the support/release gate. |
@@ -507,4 +512,3 @@
 | P1 | [AR-1013](../tasks/AR-1013-measurement-catalog-semantics.md): Version the measurement catalog and semantic groups | Unclaimed | Define selectable ASB measurements grouped by stable semantic meaning. | Independently review immutable PR #131 exact head 78c63febc0ce6c4724bf4d14121e9ae178e2a020 tree 9303272ac7070a742249722c0f9e13568c3ed660; require all exact-head CI terminal green and approval; do not merge. |
 | P1 | [AR-1017](../tasks/AR-1017-asb-tui-separate-repository.md): Create the standalone asb-tui extension repository | Unclaimed | Build asb-tui as an isolated optional repository and extension. | Publication and exact-head verification complete; no further AR-1017 action. |
 | P1 | [AR-1018](../tasks/AR-1018-asb-tui-compatibility-detection.md): Add asb-tui compatibility and terminal capability detection | Unclaimed | Detect whether an asb-tui bundle is compatible before installation or launch. | Await coordinator independent validation of exact-main attestation, post-merge CI, restored protections, and divergent local empty attestation; do not release. |
-| P1 | [AR-1019](../tasks/AR-1019-asb-tui-bundle-verification.md): Verify signed asb-tui extension bundles | Unclaimed | Verify asb-tui bundles before installation or execution. | Publish exact clean 67839598 after final privacy review; open focused PR and require exact-head hosted CI before merge. |
