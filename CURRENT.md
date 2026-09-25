@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1450](tasks/AR-1450-runtime-owned-local-replay-acquisition.md): Runtime-owned local replay acquisition factory | Keep local replay authority acquisition inside the runtime boundary. | Await PR #328 exact-head checks and independent review at 30d477e; native evidence diagnostics now preserve exact contract wording and required replay-authority qualification. | ar1450-replay-luna56 |
-| P0 | [AR-1452](tasks/AR-1452-runtime-orchestration-service.md): Implement the runtime-owned ASB orchestration service | Implement one service-owned authority for admission, attempts, resources, and teardown. | Workspace llvm-cov now passes locally at 90.68% lines and focused asb-orchestrator coverage is 91.14%; await PR #330 exact-head hosted policy/Rust/aarch64 checks and final independent review before protected merge. | coordinator-orchestrator-impl |
+| P0 | [AR-1452](tasks/AR-1452-runtime-orchestration-service.md): Implement the runtime-owned ASB orchestration service | Implement one service-owned authority for admission, attempts, resources, and teardown. | PR #330 merged at exact main a5eb7e6; wait for all seven post-merge workflows, then run exact-main verification and release AR-1452 done before promoting AR-1453. | coordinator-orchestrator-impl |
 
 ## Open
 

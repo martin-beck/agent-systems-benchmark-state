@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1452-runtime-orchestration-service",
-  "checkpoint_commit": "5f7bfcb97e5cc001f048162743fdeac27901b4f5",
+  "checkpoint_commit": "a5eb7e680a3c71813d9d1aae3328a385d6812a95",
   "claim_expires": "2026-09-25T22:11:44+00:00",
   "depends_on": [
     "AR-1357",
@@ -10,7 +10,7 @@
     "AR-1451"
   ],
   "id": "AR-1452",
-  "next_action": "Workspace llvm-cov now passes locally at 90.68% lines and focused asb-orchestrator coverage is 91.14%; await PR #330 exact-head hosted policy/Rust/aarch64 checks and final independent review before protected merge.",
+  "next_action": "PR #330 merged at exact main a5eb7e6; wait for all seven post-merge workflows, then run exact-main verification and release AR-1452 done before promoting AR-1453.",
   "observed_branch": "feature/ar-1452-runtime-orchestration-service",
   "observed_dirty": 0,
   "observed_head": "5f7bfcb97e5cc001f048162743fdeac27901b4f5",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 229,
+  "task_revision": 230,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T20:33:54+00:00",
+  "updated_at": "2026-09-25T20:34:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---
@@ -613,3 +613,7 @@ until the service can prove the complete authority chain.
 
 - 2026-09-25T20:33:54+00:00: Recorded command exit 0; command argv SHA-256
   0beccaa118c54bfa2dbce8ae53c1f11916c613ef7163f834235b05ab210dbdae.
+
+- 2026-09-25T20:34:32+00:00: Protected merge succeeded after exact-head CI and independent review.
+  Post-merge formal, Rust, fault, quality, hosted portability, and aarch64 workflows are in
+  progress.
