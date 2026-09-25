@@ -2,7 +2,7 @@
 {
   "branch": "qualification/ar-1443-guided-benchmark-capture-comparison",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-25T16:32:47+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1442",
     "AR-1447",
@@ -13,15 +13,15 @@
   "observed_branch": "qualification/ar-1443-guided-benchmark-capture-comparison",
   "observed_dirty": 0,
   "observed_head": "2872a31f2ee90ac5df1a47203b2a618b1829cfec",
-  "owner": "coordinator-ar1443",
+  "owner": "",
   "plan": "../plans/AR-1443.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Make benchmark, offline capture/replay, and result comparison a single guided workflow.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Guided benchmark capture and comparison",
-  "updated_at": "2026-09-25T15:36:16+00:00",
+  "updated_at": "2026-09-25T15:36:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1443-guided-benchmark-capture-comparison"
 }
 ---
@@ -46,3 +46,9 @@ be independently identifiable as replay.
 
 - 2026-09-25T15:36:16+00:00: Recorded command exit 0; command argv SHA-256
   008f3a8824b64ae468ae900d7bbac2a871a8d29892d84aba5b02a0cc1c0aedff.
+
+- 2026-09-25T15:36:30+00:00: ASB-only guided capture/replay/comparison qualification complete on
+  protected merge 2872a31f2ee90ac5df1a47203b2a618b1829cfec. workflow_transcript 3/3, guide_examples
+  5/5, and cargo test --locked -p asb-cli --tests passed: 107 unit + 12 capability + 3 CLI E2E + 5
+  guide + 2 setup + 4 lifecycle + 3 transcript. No product diff was required; optional live capture
+  and asb-tui remain separate.
