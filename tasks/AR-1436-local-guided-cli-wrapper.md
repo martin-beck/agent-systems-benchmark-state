@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a catalog-driven guided CLI wrapper for deterministic local mock qualification.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Local guided CLI wrapper",
-  "updated_at": "2026-09-25T00:56:07+00:00",
+  "updated_at": "2026-09-25T00:56:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1436-local-guided-cli-wrapper"
 }
 ---
@@ -124,3 +124,6 @@ weakening. Require focused/full/review/PR/seven post-merge gates.
 
 - 2026-09-25T00:56:07+00:00: Recorded command exit 0; command argv SHA-256
   81fdfca6bb17c874795965cd83bc5fb0d9485a90aa5c7bc7d016cba9e8b84107.
+
+- 2026-09-25T00:56:21+00:00: Recorded command exit 0; command argv SHA-256
+  b8aa4d9423c48391fdb37551ba52798ece46a7d1a1aa62d23241d5b58ecdc408.
