@@ -9,15 +9,18 @@
   ],
   "id": "AR-1437",
   "next_action": "Promote and claim after completed dependency check; implement deterministic local record/replay or campaign qualification without live-provider dependencies.",
+  "observed_branch": "feature/ar-1437-local-record-replay-campaign",
+  "observed_dirty": 0,
+  "observed_head": "18a0df9b4312e49196c1c8202b48a183ed83b073",
   "owner": "codex-asb-ar1437-local-record-luna56",
   "plan": "../plans/AR-1437-local-record-replay-campaign.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify deterministic local record/replay and campaign journeys over the runtime mock.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Local record/replay campaign qualification",
-  "updated_at": "2026-09-25T01:28:00+00:00",
+  "updated_at": "2026-09-25T01:28:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1437-local-record-replay-campaign"
 }
 ---
