@@ -8,7 +8,7 @@
     "AR-1446"
   ],
   "id": "AR-1448",
-  "next_action": "PR #326 is open at exact head 1b70b4691a4464e44ccc091705194e67a6024dc0. Focused runtime/CLI gates pass; monitor the three remaining exact-head checks (Rust, Repository quality, Emulated AArch64) and independent review. Merge only after all required checks are green; then run post-merge gates.",
+  "next_action": "Done: signed PR #326 merged as f03d9e484d6ca73eacdbd5476980bf33ca737540; all seven exact-main post-merge workflows and local runtime/CLI verification passed.",
   "observed_branch": "feature/ar-1448-runtime-replay-authority-source",
   "observed_dirty": 0,
   "observed_head": "1b70b4691a4464e44ccc091705194e67a6024dc0",
