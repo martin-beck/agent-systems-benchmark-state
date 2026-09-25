@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 114,
+  "task_revision": 115,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T19:23:19+00:00",
+  "updated_at": "2026-09-25T19:25:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---
@@ -307,3 +307,6 @@ until the service can prove the complete authority chain.
 - 2026-09-25T19:23:19+00:00: Fixed terminal-record capacity leak; 7 orchestrator tests pass after
   fmt. Signed DCO commit pushed. Repository policy gate is rerunning on the updated dependency skip
   configuration.
+
+- 2026-09-25T19:25:03+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
