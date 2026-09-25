@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1450-runtime-owned-local-replay-acquisition",
-  "checkpoint_commit": "dc2e077de96133cd1ef180e5a883faff0e5a9411",
+  "checkpoint_commit": "b1429d70a57e3d609d697a339875fb21b6299f37",
   "claim_expires": "2026-09-25T21:44:43+00:00",
   "depends_on": [
     "AR-1448"
   ],
   "id": "AR-1450",
-  "next_action": "Obtain independent review of PR #328 at exact head dc2e077; if review is clean, coordinator may perform protected merge. Do not force-update the published branch or merge from this worker.",
+  "next_action": "Run focused and full applicable gates on exact head b1429d7; verify legacy authority constructors and backend-substitution paths are inaccessible, then refresh PR #328 CI and obtain independent review before merge.",
   "observed_branch": "feature/ar-1450-runtime-owned-local-replay-acquisition",
   "observed_dirty": 0,
   "observed_head": "b1429d70a57e3d609d697a339875fb21b6299f37",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep local replay authority acquisition inside the runtime boundary.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Runtime-owned local replay acquisition factory",
-  "updated_at": "2026-09-25T20:00:09+00:00",
+  "updated_at": "2026-09-25T20:01:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1450-runtime-owned-local-replay-acquisition"
 }
 ---
@@ -220,3 +220,6 @@ Requirements:
 
 - 2026-09-25T20:00:09+00:00: Recorded command exit 0; command argv SHA-256
   a32c66f397c1b8766afbcad9ae8c63c9ca5406422d5f40f652f687ef9cf61695.
+
+- 2026-09-25T20:01:48+00:00: Independent review found two P1 public bypasses; worker repaired them
+  in signed+DCO commit b1429d7. Push reports remote branch at b1429d7; no merge attempted.
