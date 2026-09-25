@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 115,
+  "task_revision": 116,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T22:20:31+00:00",
+  "updated_at": "2026-09-25T22:22:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
@@ -377,3 +377,6 @@ asb-control protocol after this AR is complete.
   removed (timing race) at control.rs:6716. Rust and other checks were still pending; no merge.
 
 - 2026-09-25T22:20:31+00:00: Heartbeat by ar1453-frontend-orchestration-luna56.
+
+- 2026-09-25T22:22:25+00:00: Recorded command exit 0; command argv SHA-256
+  1da6321d70012989f6655d997ef1afb35b40d703360ea84e5c78729bf3a4110d.
