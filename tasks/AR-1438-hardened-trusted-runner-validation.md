@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1438-hardened-trusted-runner-validation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-25T14:24:50+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0830"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "repair/ar-1438-hardened-trusted-runner-validation",
   "observed_dirty": 0,
   "observed_head": "35d2b86e8eebcf318043a832ab3ea6e98aab3b7b",
-  "owner": "ar1438_runner_validation_luna56",
+  "owner": "",
   "plan": "../plans/AR-1438-hardened-trusted-runner-validation.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Make protected trusted-runner lifecycle validation compatible with hardened rootless execution.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Hardened trusted-runner validation repair",
-  "updated_at": "2026-09-25T12:24:50+00:00",
+  "updated_at": "2026-09-25T12:43:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1438-hardened-trusted-runner-validation"
 }
 ---
@@ -118,3 +118,9 @@ trusted workflow on the exact merge commit.
   c3a9c0d15393665ad49911926835f60c6c32f11027642f72b1bccdd9fbb7d04e.
 
 - 2026-09-25T12:24:50+00:00: Heartbeat by ar1438_runner_validation_luna56.
+
+- 2026-09-25T12:43:24+00:00: Completed in PR #322 merged at 40c5c411. Signed+DCO commit
+  35d2b86e8eebcf318043a832ab3ea6e98aab3b7b; focused rootless positive/negative fixtures, cargo fmt,
+  locked workspace tests, Clippy, rustdoc, and release build passed. Exact-head required CI passed,
+  and trusted development-host workflow 36136409110 passed on exact merge commit. NoNewPrivileges
+  and isolation guards preserved.
