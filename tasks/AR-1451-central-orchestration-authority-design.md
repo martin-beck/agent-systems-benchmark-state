@@ -12,17 +12,17 @@
   "id": "AR-1451",
   "next_action": "PR #329 is open at exact head 6e20258. Wait for independent review and all required exact-head checks; merge only after green review, then promote AR-1452.",
   "observed_branch": "feature/ar-1451-central-orchestration-authority-design",
-  "observed_dirty": 2,
-  "observed_head": "6e202585947c744ec1b995cc9886c380a05aa3da",
+  "observed_dirty": 0,
+  "observed_head": "1c5ae1bf6f38c9e5311f0e282d7b282812b75058",
   "owner": "coordinator-orchestration",
   "plan": "../plans/AR-1451.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Freeze one runtime-owned orchestration authority for every ASB run and attempt.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Central orchestration authority contract and ASB redesign",
-  "updated_at": "2026-09-25T17:38:37+00:00",
+  "updated_at": "2026-09-25T17:38:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1451-central-orchestration-authority-design"
 }
 ---
