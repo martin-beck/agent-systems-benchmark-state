@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a catalog-driven guided CLI wrapper for deterministic local mock qualification.",
-  "task_revision": 74,
+  "task_revision": 75,
   "title": "Local guided CLI wrapper",
-  "updated_at": "2026-09-25T01:16:27+00:00",
+  "updated_at": "2026-09-25T01:16:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1436-local-guided-cli-wrapper"
 }
 ---
@@ -260,3 +260,6 @@ weakening. Require focused/full/review/PR/seven post-merge gates.
   ProbeResult value Some(12500000), got TimedOut. Coverage command exited 101; wrapper tests were
   not implicated. Preserve exact evidence and rerun the exact workflow; do not waive or attribute to
   this change.
+
+- 2026-09-25T01:16:35+00:00: Recorded command exit 0; command argv SHA-256
+  b0a2cd91e87fe6aa66d6946d218b2c78a50bc892181de86f903a291d6dfda60e.
