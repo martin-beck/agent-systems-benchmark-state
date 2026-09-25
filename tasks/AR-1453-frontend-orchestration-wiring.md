@@ -7,7 +7,7 @@
     "AR-1452"
   ],
   "id": "AR-1453",
-  "next_action": "PR #333 exact head 88fd1067ae7e04da0cc641b033bdcc32b63dce8b is running replacement hosted checks; require independent review and all required checks before merge. Preserve PR332 and prior PR333 failure evidence.",
+  "next_action": "Repair P1 cancellation mutex deadlock: do not hold orchestration lock across execute_plan; add in-flight cancel regression evidence, then rerun exact-head gates and independent review. Preserve all prior failures.",
   "observed_branch": "feature/ar-1453-frontend-orchestration-wiring",
   "observed_dirty": 0,
   "observed_head": "88fd1067ae7e04da0cc641b033bdcc32b63dce8b",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 100,
+  "task_revision": 101,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T22:03:15+00:00",
+  "updated_at": "2026-09-25T22:03:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
@@ -320,3 +320,8 @@ asb-control protocol after this AR is complete.
   -D warnings, and fmt pass.
 
 - 2026-09-25T22:03:15+00:00: Heartbeat by ar1453-frontend-orchestration-luna56.
+
+- 2026-09-25T22:03:29+00:00: Independent re-review of PR #333 head 88fd1067 found cancellation
+  cannot interrupt in-flight execution because ControlCall::Run holds orchestration mutex across
+  service.execute_plan while Cancel requires same lock. This is a P1 lifecycle regression; worker
+  assigned repair.

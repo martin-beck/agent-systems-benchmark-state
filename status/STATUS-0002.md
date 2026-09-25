@@ -120,7 +120,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1453](../tasks/AR-1453-frontend-orchestration-wiring.md): Route ASB frontends through central orchestration | ar1453-frontend-orchestration-luna56 | Make CLI and control use the central service for every run lifecycle. | PR #333 exact head 88fd1067ae7e04da0cc641b033bdcc32b63dce8b is running replacement hosted checks; require independent review and all required checks before merge. Preserve PR332 and prior PR333 failure evidence. |
+| P0 | [AR-1453](../tasks/AR-1453-frontend-orchestration-wiring.md): Route ASB frontends through central orchestration | ar1453-frontend-orchestration-luna56 | Make CLI and control use the central service for every run lifecycle. | Repair P1 cancellation mutex deadlock: do not hold orchestration lock across execute_plan; add in-flight cancel regression evidence, then rerun exact-head gates and independent review. Preserve all prior failures. |
 
 ### Open (1)
 
