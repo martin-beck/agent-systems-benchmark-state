@@ -10,21 +10,21 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #320 | `feature/ar-1423-literature-reconciliation@ac10f5b0875d` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | feat(workloads): reconcile literature docs with registry |
+| #320 | `feature/ar-1423-literature-reconciliation@fe02c9ccb4e0` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(workloads): reconcile literature docs with registry |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 36124538367 | `fe02c9ccb4e0` | pull_request | Repository quality | in_progress:- |
+| 36124538365 | `fe02c9ccb4e0` | pull_request | Formal assurance | pending:- |
+| 36124538347 | `fe02c9ccb4e0` | pull_request | Emulated aarch64 portability | pending:- |
+| 36124538309 | `fe02c9ccb4e0` | pull_request | Huawei MIT source headers | in_progress:- |
+| 36124538308 | `fe02c9ccb4e0` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 36124538284 | `fe02c9ccb4e0` | pull_request | Rust verification | pending:- |
+| 36124538110 | `fe02c9ccb4e0` | pull_request | Fault assurance | in_progress:- |
+| 36124538103 | `fe02c9ccb4e0` | pull_request | Agent Workflow Quality shadow | in_progress:- |
 | 36124327163 | `ac10f5b0875d` | pull_request | Hosted portability and native qualification | completed:failure |
 | 36124327111 | `ac10f5b0875d` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 36124327098 | `ac10f5b0875d` | pull_request | Formal assurance | in_progress:- |
 | 36124327086 | `ac10f5b0875d` | pull_request | Huawei MIT source headers | completed:success |
-| 36124327056 | `ac10f5b0875d` | pull_request | Fault assurance | in_progress:- |
-| 36124327048 | `ac10f5b0875d` | pull_request | Rust verification | in_progress:- |
-| 36124327027 | `ac10f5b0875d` | pull_request | Repository quality | completed:failure |
-| 36124327021 | `ac10f5b0875d` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 36122369365 | `c3480e79ce3f` | push | Hosted portability and native qualification | completed:success |
-| 36122369363 | `c3480e79ce3f` | push | Repository quality | completed:success |
-| 36122369277 | `c3480e79ce3f` | push | Emulated aarch64 portability | completed:success |
-| 36122369261 | `c3480e79ce3f` | push | Rust verification | completed:success |
