@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1435-local-mock-cli-wiring",
   "checkpoint_commit": "cc82333a53e03147ea95cc21ca697647dc27db1f",
-  "claim_expires": "2026-09-25T02:39:37+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1434"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1435-local-mock-cli-wiring",
   "observed_dirty": 0,
   "observed_head": "dc52ca99aaea35468ba96405ce744941a8983699",
-  "owner": "codex-asb-ar1435-local-mock-luna56",
+  "owner": "",
   "plan": "../plans/AR-1435-local-mock-cli-wiring.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Wire deterministic local mock attempts into asb run and sweep configuration qualification.",
-  "task_revision": 123,
+  "task_revision": 124,
   "title": "Local mock CLI wiring",
-  "updated_at": "2026-09-25T00:40:15+00:00",
+  "updated_at": "2026-09-25T00:40:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1435-local-mock-cli-wiring"
 }
 ---
@@ -407,3 +407,14 @@ it must not contact OpenRouter or any external provider, mint
 
 - 2026-09-25T00:40:15+00:00: Recorded command exit 0; command argv SHA-256
   e7039b815c2dbb9d4651fc6fa9ec8147226fe6e6b8d6d243bb1fc72f3e53e1c3.
+
+- 2026-09-25T00:40:41+00:00: Released done after exact remote verification. PR #316 merged as
+  cc82333a53e03147ea95cc21ca697647dc27db1f with exact base 4736db727b13140364b8acd32cf77b7b375eeb17,
+  head dc52ca99aaea35468ba96405ce744941a8983699, tree 0639d40ba80019b8db64b995379e19bf6b04891a;
+  origin/main matches, merge has valid SSH signature and DCO trailer. All seven exact-main workflows
+  terminal success: Fault assurance 36077914480; Formal assurance 36077914501; Repository quality
+  36077914599; Emulated aarch64 portability 36077914619; Rust verification 36077914513; Hosted
+  portability and native qualification 36077914490; Huawei MIT source headers 36077914555. Local
+  focused/full gates, independent review, and privacy boundary passed. AR-1329 and AR-1432 remain
+  blocked and untouched. Prior hosted Rust failures and transient handoff lock timeout are preserved
+  with diagnoses.
