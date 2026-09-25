@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep local replay authority acquisition inside the runtime boundary.",
-  "task_revision": 74,
+  "task_revision": 75,
   "title": "Runtime-owned local replay acquisition factory",
-  "updated_at": "2026-09-25T19:59:33+00:00",
+  "updated_at": "2026-09-25T19:59:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1450-runtime-owned-local-replay-acquisition"
 }
 ---
@@ -211,3 +211,6 @@ Requirements:
   checks pass. A clean rebase onto current main was tested locally but not force-pushed because the
   published PR branch must not be force-updated. Independent review and protected merge remain
   coordinator actions; AR stays in progress.
+
+- 2026-09-25T19:59:36+00:00: Recorded command exit 0; command argv SHA-256
+  65bd39b6e995daa8de012e38f77d7d34e17aaa7f48f7d1538e37af30d16d3784.
