@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T20:41:53+00:00",
+  "updated_at": "2026-09-25T20:41:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
@@ -33,3 +33,6 @@ asb-control protocol after this AR is complete.
   service; keep asb-tui out of scope.
 
 - 2026-09-25T20:40:46+00:00: Claimed by ar1453-frontend-orchestration-luna56.
+
+- 2026-09-25T20:41:57+00:00: Recorded command exit 0; command argv SHA-256
+  fa1ab7baafb93a5c0e7df68703a8dc54e6405b9feac8f96ae2133eb43e768cd5.
