@@ -21,3 +21,16 @@ the Repository quality policy sees the required two-parent merge shape.
 - Repository quality and every required exact-head check green.
 - Seven post-merge workflows for the repair merge terminal success.
 - Durable evidence records the one-parent failure and repaired two-parent merge.
+
+## Current development and CI qualification boundary
+
+The mandatory development and CI qualification path for this AR is a deterministic
+local provider/LLM mock (LiteLLM-compatible where practical), including hostile
+negative tests and offline replay where applicable. External/live OpenRouter or
+other provider reachability is optional supplementary evidence only; it is never a
+completion, dependency-readiness, or CI gate. Production egress policy, credential
+non-disclosure, runtime-owned authority, namespace/relay attestation, cancellation
+and teardown, and fail-closed denial of unapproved external traffic remain required
+contracts. Existing live-provider dependency edges describe production integration
+ordering only and must not be used to block local qualification or to claim external
+reachability.

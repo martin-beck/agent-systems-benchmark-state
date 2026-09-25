@@ -62,3 +62,16 @@ AR-1329 stays fail-closed until this seam is merged.
 
 - 2026-09-23T20:53:19+00:00: Superseded by AR-1354, which owns the missing config-backed enrollment
   implementation. Preserve signed opaque transport commit d83a859 and AR-1329 fail-closed status.
+
+## Current development and CI qualification boundary
+
+The mandatory development and CI qualification path for this AR is a deterministic
+local provider/LLM mock (LiteLLM-compatible where practical), including hostile
+negative tests and offline replay where applicable. External/live OpenRouter or
+other provider reachability is optional supplementary evidence only; it is never a
+completion, dependency-readiness, or CI gate. Production egress policy, credential
+non-disclosure, runtime-owned authority, namespace/relay attestation, cancellation
+and teardown, and fail-closed denial of unapproved external traffic remain required
+contracts. Existing live-provider dependency edges describe production integration
+ordering only and must not be used to block local qualification or to claim external
+reachability.

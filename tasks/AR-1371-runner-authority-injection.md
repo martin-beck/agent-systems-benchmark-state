@@ -176,3 +176,16 @@ trust or launch authority from CLI/config input.
 - 2026-09-24T01:47:52+00:00: PR #271 product merge 3f0b676 had all exact-head checks green but
   failed post-merge Repository quality for one-parent squash topology. AR-1372 corrected this with
   two-parent merge 265b936d and all seven post-merge workflows green; product behavior unchanged.
+
+## Current development and CI qualification boundary
+
+The mandatory development and CI qualification path for this AR is a deterministic
+local provider/LLM mock (LiteLLM-compatible where practical), including hostile
+negative tests and offline replay where applicable. External/live OpenRouter or
+other provider reachability is optional supplementary evidence only; it is never a
+completion, dependency-readiness, or CI gate. Production egress policy, credential
+non-disclosure, runtime-owned authority, namespace/relay attestation, cancellation
+and teardown, and fail-closed denial of unapproved external traffic remain required
+contracts. Existing live-provider dependency edges describe production integration
+ordering only and must not be used to block local qualification or to claim external
+reachability.

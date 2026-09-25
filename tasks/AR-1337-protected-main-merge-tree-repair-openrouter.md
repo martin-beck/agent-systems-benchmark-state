@@ -66,3 +66,16 @@ remaining evidence limits without private paths or credentials.
 - 2026-09-23T06:44:18+00:00: PR #252 merged as 8eac37c; all exact-head checks passed and all seven
   protected-main post-merge workflows, including Repository quality and emulated AArch64, are
   terminal success.
+
+## Current development and CI qualification boundary
+
+The mandatory development and CI qualification path for this AR is a deterministic
+local provider/LLM mock (LiteLLM-compatible where practical), including hostile
+negative tests and offline replay where applicable. External/live OpenRouter or
+other provider reachability is optional supplementary evidence only; it is never a
+completion, dependency-readiness, or CI gate. Production egress policy, credential
+non-disclosure, runtime-owned authority, namespace/relay attestation, cancellation
+and teardown, and fail-closed denial of unapproved external traffic remain required
+contracts. Existing live-provider dependency edges describe production integration
+ordering only and must not be used to block local qualification or to claim external
+reachability.

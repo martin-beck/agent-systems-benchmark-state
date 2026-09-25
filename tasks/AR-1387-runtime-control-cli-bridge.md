@@ -51,3 +51,16 @@ namespace identity, or launch token may become caller authority.
   CLI/config or synthesizing local authority would violate fail-closed boundaries. Runtime
   dispatch-source tests pass 2/2; no safe product diff made. Coordinator must provide the next
   narrowly scoped runtime-owned bootstrap materialization source.
+
+## Current development and CI qualification boundary
+
+The mandatory development and CI qualification path for this AR is a deterministic
+local provider/LLM mock (LiteLLM-compatible where practical), including hostile
+negative tests and offline replay where applicable. External/live OpenRouter or
+other provider reachability is optional supplementary evidence only; it is never a
+completion, dependency-readiness, or CI gate. Production egress policy, credential
+non-disclosure, runtime-owned authority, namespace/relay attestation, cancellation
+and teardown, and fail-closed denial of unapproved external traffic remain required
+contracts. Existing live-provider dependency edges describe production integration
+ordering only and must not be used to block local qualification or to claim external
+reachability.

@@ -334,3 +334,16 @@ runtime boundary; AR-1349 remains fail-closed until it is merged and verified.
   PR #262 at c560cac1 from exact signed+DCO head b710260. Pre-merge exact-head checks all green, and
   all seven post-merge protected-main workflows passed at c560cac1. Workspace coverage repair raised
   enforced line coverage to 90.57% without gate weakening.
+
+## Current development and CI qualification boundary
+
+The mandatory development and CI qualification path for this AR is a deterministic
+local provider/LLM mock (LiteLLM-compatible where practical), including hostile
+negative tests and offline replay where applicable. External/live OpenRouter or
+other provider reachability is optional supplementary evidence only; it is never a
+completion, dependency-readiness, or CI gate. Production egress policy, credential
+non-disclosure, runtime-owned authority, namespace/relay attestation, cancellation
+and teardown, and fail-closed denial of unapproved external traffic remain required
+contracts. Existing live-provider dependency edges describe production integration
+ordering only and must not be used to block local qualification or to claim external
+reachability.

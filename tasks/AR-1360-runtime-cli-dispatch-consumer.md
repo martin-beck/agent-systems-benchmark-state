@@ -51,3 +51,16 @@ behavior, or let CLI arguments synthesize provider authority.
   therefore cannot safely consume a runtime receipt or obtain runtime-owned policy/tools/lease/relay
   authority. Do not expose caller-supplied authority. Create successor AR for authenticated control
   receipt source and runtime-owned dispatch factory, then resume CLI run/sweep consumer.
+
+## Current development and CI qualification boundary
+
+The mandatory development and CI qualification path for this AR is a deterministic
+local provider/LLM mock (LiteLLM-compatible where practical), including hostile
+negative tests and offline replay where applicable. External/live OpenRouter or
+other provider reachability is optional supplementary evidence only; it is never a
+completion, dependency-readiness, or CI gate. Production egress policy, credential
+non-disclosure, runtime-owned authority, namespace/relay attestation, cancellation
+and teardown, and fail-closed denial of unapproved external traffic remain required
+contracts. Existing live-provider dependency edges describe production integration
+ordering only and must not be used to block local qualification or to claim external
+reachability.

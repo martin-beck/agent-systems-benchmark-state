@@ -144,3 +144,16 @@ or introduce a cyclic dependency.
   adapter, erasure/invalid-target tests. fmt, workspace check, runtime clippy, credential tests
   19/19 plus injection 1/1, and full runtime 85 passed/1 ignored. Runtime-owned acquisition remains
   explicitly delegated to successor AR-1348; AR-1329 stays fail-closed.
+
+## Current development and CI qualification boundary
+
+The mandatory development and CI qualification path for this AR is a deterministic
+local provider/LLM mock (LiteLLM-compatible where practical), including hostile
+negative tests and offline replay where applicable. External/live OpenRouter or
+other provider reachability is optional supplementary evidence only; it is never a
+completion, dependency-readiness, or CI gate. Production egress policy, credential
+non-disclosure, runtime-owned authority, namespace/relay attestation, cancellation
+and teardown, and fail-closed denial of unapproved external traffic remain required
+contracts. Existing live-provider dependency edges describe production integration
+ordering only and must not be used to block local qualification or to claim external
+reachability.

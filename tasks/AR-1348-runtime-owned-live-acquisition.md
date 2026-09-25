@@ -264,3 +264,16 @@ this service owns acquisition instead of accepting caller-built launch authority
   evidence commit ecc2d4c548b975d829d4f27750321f0cb64f75c2 and full focused/workspace gate results,
   but do not treat AR-1348 as production-service completion. AR-1329 remains fail-closed; AR-1349
   owns atomic LiveProviderRuntimeService acquisition and asb run/sweep wiring.
+
+## Current development and CI qualification boundary
+
+The mandatory development and CI qualification path for this AR is a deterministic
+local provider/LLM mock (LiteLLM-compatible where practical), including hostile
+negative tests and offline replay where applicable. External/live OpenRouter or
+other provider reachability is optional supplementary evidence only; it is never a
+completion, dependency-readiness, or CI gate. Production egress policy, credential
+non-disclosure, runtime-owned authority, namespace/relay attestation, cancellation
+and teardown, and fail-closed denial of unapproved external traffic remain required
+contracts. Existing live-provider dependency edges describe production integration
+ordering only and must not be used to block local qualification or to claim external
+reachability.

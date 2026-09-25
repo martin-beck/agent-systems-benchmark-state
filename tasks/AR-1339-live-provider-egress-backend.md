@@ -78,3 +78,16 @@ that missing boundary so live provider execution can be enabled safely.
   0c291a12a98d0b4bcd856f484eb1068361be9107 with merge commit
   229941f013ad45a21e746a052bc4ae8ec531cfd7; all required hosted checks passed. Preserve done state;
   AR-1340 owns namespace handoff and AR-1329 remains fail-closed until it is delivered.
+
+## Current development and CI qualification boundary
+
+The mandatory development and CI qualification path for this AR is a deterministic
+local provider/LLM mock (LiteLLM-compatible where practical), including hostile
+negative tests and offline replay where applicable. External/live OpenRouter or
+other provider reachability is optional supplementary evidence only; it is never a
+completion, dependency-readiness, or CI gate. Production egress policy, credential
+non-disclosure, runtime-owned authority, namespace/relay attestation, cancellation
+and teardown, and fail-closed denial of unapproved external traffic remain required
+contracts. Existing live-provider dependency edges describe production integration
+ordering only and must not be used to block local qualification or to claim external
+reachability.

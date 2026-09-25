@@ -61,3 +61,16 @@ external provider connection a development or CI requirement.
   injected opaque handle/source; adding a handle-to-source facade would not satisfy acceptance and
   would falsely claim AR-1329 unblocked. Worktree reverted clean at checkpoint
   10bffbf015bd7ca78d8c0d18f04cf0190195e933. Focused existing gates pass; no commit or PR published.
+
+## Current development and CI qualification boundary
+
+The mandatory development and CI qualification path for this AR is a deterministic
+local provider/LLM mock (LiteLLM-compatible where practical), including hostile
+negative tests and offline replay where applicable. External/live OpenRouter or
+other provider reachability is optional supplementary evidence only; it is never a
+completion, dependency-readiness, or CI gate. Production egress policy, credential
+non-disclosure, runtime-owned authority, namespace/relay attestation, cancellation
+and teardown, and fail-closed denial of unapproved external traffic remain required
+contracts. Existing live-provider dependency edges describe production integration
+ordering only and must not be used to block local qualification or to claim external
+reachability.

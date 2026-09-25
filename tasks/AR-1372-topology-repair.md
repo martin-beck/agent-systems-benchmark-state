@@ -81,3 +81,16 @@ topology; no gate may be weakened.
 - 2026-09-24T01:47:50+00:00: PR #272 merged as 265b936d995148f8e40e36664cf68bf12affc20d with two
   parents; all seven post-merge workflows green. This repaired AR-1371's squash-topology failure
   without product changes.
+
+## Current development and CI qualification boundary
+
+The mandatory development and CI qualification path for this AR is a deterministic
+local provider/LLM mock (LiteLLM-compatible where practical), including hostile
+negative tests and offline replay where applicable. External/live OpenRouter or
+other provider reachability is optional supplementary evidence only; it is never a
+completion, dependency-readiness, or CI gate. Production egress policy, credential
+non-disclosure, runtime-owned authority, namespace/relay attestation, cancellation
+and teardown, and fail-closed denial of unapproved external traffic remain required
+contracts. Existing live-provider dependency edges describe production integration
+ordering only and must not be used to block local qualification or to claim external
+reachability.

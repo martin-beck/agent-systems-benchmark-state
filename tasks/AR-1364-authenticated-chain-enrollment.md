@@ -99,3 +99,16 @@ asb-tui or synthesize certificate authority from CLI/config input.
   headers, 35935060564 hosted portability, 35935060604 repository quality, 35935060566 emulated
   AArch64, 35935060558 formal after a successful rerun of transient ExecutableFileBusy, 35935060544
   Rust, and 35935060587 fault assurance. Lease cleared.
+
+## Current development and CI qualification boundary
+
+The mandatory development and CI qualification path for this AR is a deterministic
+local provider/LLM mock (LiteLLM-compatible where practical), including hostile
+negative tests and offline replay where applicable. External/live OpenRouter or
+other provider reachability is optional supplementary evidence only; it is never a
+completion, dependency-readiness, or CI gate. Production egress policy, credential
+non-disclosure, runtime-owned authority, namespace/relay attestation, cancellation
+and teardown, and fail-closed denial of unapproved external traffic remain required
+contracts. Existing live-provider dependency edges describe production integration
+ordering only and must not be used to block local qualification or to claim external
+reachability.

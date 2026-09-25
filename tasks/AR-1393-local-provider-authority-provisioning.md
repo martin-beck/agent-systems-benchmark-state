@@ -117,3 +117,16 @@ or production egress gates.
 - 2026-09-24T08:18:56+00:00: PR #283 merged at exact signed+DCO head
   0a3817082d13f15187ea5efe4f5792664a50be99; merge 0206816acd2d6dd819889f1be2879e958e4fd096; all
   seven exact-main post-merge workflows succeeded. No further action.
+
+## Current development and CI qualification boundary
+
+The mandatory development and CI qualification path for this AR is a deterministic
+local provider/LLM mock (LiteLLM-compatible where practical), including hostile
+negative tests and offline replay where applicable. External/live OpenRouter or
+other provider reachability is optional supplementary evidence only; it is never a
+completion, dependency-readiness, or CI gate. Production egress policy, credential
+non-disclosure, runtime-owned authority, namespace/relay attestation, cancellation
+and teardown, and fail-closed denial of unapproved external traffic remain required
+contracts. Existing live-provider dependency edges describe production integration
+ordering only and must not be used to block local qualification or to claim external
+reachability.
