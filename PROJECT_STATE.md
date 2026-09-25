@@ -11,8 +11,8 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #327 | `feature/ar-1338-guided-asb-command-wrapper@4d42f598127d` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): extend guided ASB workflow |
-| #328 | `feature/ar-1450-runtime-owned-local-replay-acquisition@dc2e077de961` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(runtime): add local replay provisioning boundary |
-| #330 | `feature/ar-1452-runtime-orchestration-service@d1c5b506ca09` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(orchestrator): add runtime-owned admission service |
+| #328 | `feature/ar-1450-runtime-owned-local-replay-acquisition@dc2e077de961` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(runtime): add local replay provisioning boundary |
+| #330 | `feature/ar-1452-runtime-orchestration-service@d1c5b506ca09` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(orchestrator): add runtime-owned admission service |
 
 ## Recent workflows
 
@@ -25,7 +25,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36180858726 | `d1c5b506ca09` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 36180858710 | `d1c5b506ca09` | pull_request | Rust verification | in_progress:- |
 | 36180858694 | `d1c5b506ca09` | pull_request | Formal assurance | in_progress:- |
-| 36180858679 | `d1c5b506ca09` | pull_request | Repository quality | in_progress:- |
+| 36180858679 | `d1c5b506ca09` | pull_request | Repository quality | completed:failure |
 | 36180810727 | `dc2e077de961` | pull_request | Hosted portability and native qualification | completed:success |
 | 36180810706 | `dc2e077de961` | pull_request | Rust verification | in_progress:- |
 | 36180810644 | `dc2e077de961` | pull_request | Fault assurance | completed:success |
