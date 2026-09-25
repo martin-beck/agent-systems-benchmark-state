@@ -10,16 +10,16 @@
   "next_action": "Independently review PR #328 at dc2e077, then wait for exact-head checks; rework any review or gate failures before merge.",
   "observed_branch": "feature/ar-1450-runtime-owned-local-replay-acquisition",
   "observed_dirty": 0,
-  "observed_head": "dc2e077de96133cd1ef180e5a883faff0e5a9411",
+  "observed_head": "98dadc748497a54e77bfe24fe887eedec4a12517",
   "owner": "ar1450-replay-luna56",
   "plan": "../plans/AR-1450.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep local replay authority acquisition inside the runtime boundary.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Runtime-owned local replay acquisition factory",
-  "updated_at": "2026-09-25T19:45:42+00:00",
+  "updated_at": "2026-09-25T19:45:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1450-runtime-owned-local-replay-acquisition"
 }
 ---
