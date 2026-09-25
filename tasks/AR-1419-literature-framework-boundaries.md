@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Close literature documentation gaps and enforce benchmark-versus-framework selection boundaries.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Literature framework boundaries",
-  "updated_at": "2026-09-25T10:08:43+00:00",
+  "updated_at": "2026-09-25T10:09:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1419"
 }
 ---
@@ -71,3 +71,6 @@ separate workload protocol and grader are proven.
 
 - 2026-09-25T10:08:43+00:00: Recorded command exit 1; command argv SHA-256
   67362ecaf127333e7b06283911708ed5f0092b0196fdf3e24b9e384bf8adcbbf.
+
+- 2026-09-25T10:09:03+00:00: Recorded command exit 0; command argv SHA-256
+  c47dc914eecea28e8ccc8f0ebd2176288053ec26fcb3781f5072bb6f4d4bb6eb.
