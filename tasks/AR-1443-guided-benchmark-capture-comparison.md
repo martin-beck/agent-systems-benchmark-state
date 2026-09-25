@@ -1,6 +1,6 @@
 ---
 {
-  "branch": "main",
+  "branch": "qualification/ar-1443-guided-benchmark-capture-comparison",
   "checkpoint_commit": "",
   "claim_expires": "2026-09-25T16:32:47+00:00",
   "depends_on": [
@@ -10,9 +10,9 @@
   ],
   "id": "AR-1443",
   "next_action": "Promote after AR-1442, AR-1447 and AR-1437 are released; implement and qualify the ASB-only selection-driven benchmark, local capture/replay, and comparison journey. Optional live capture AR-1332/AR-1333 remains separate.",
-  "observed_branch": "main",
-  "observed_dirty": 7,
-  "observed_head": "bd7d10d4a760a84fa42de2b1fa9e97e8ea85ba09",
+  "observed_branch": "qualification/ar-1443-guided-benchmark-capture-comparison",
+  "observed_dirty": 0,
+  "observed_head": "2872a31f2ee90ac5df1a47203b2a618b1829cfec",
   "owner": "coordinator-ar1443",
   "plan": "../plans/AR-1443.md",
   "priority": "P0",
@@ -22,7 +22,7 @@
   "task_revision": 5,
   "title": "Guided benchmark capture and comparison",
   "updated_at": "2026-09-25T15:34:07+00:00",
-  "worktree_key": "agent-systems-benchmark"
+  "worktree_key": "agent-systems-benchmark-ar-1443-guided-benchmark-capture-comparison"
 }
 ---
 
