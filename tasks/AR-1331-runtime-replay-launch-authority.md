@@ -9,15 +9,18 @@
   ],
   "id": "AR-1331",
   "next_action": "Promote and claim the ASB-local runtime replay authority repair. Provide runtime-owned ReplayLaunchAuthority for strict offline cassette replay, prove the CLI cannot fabricate one, and keep optional live capture AR-1330 separate.",
+  "observed_branch": "main",
+  "observed_dirty": 7,
+  "observed_head": "bd7d10d4a760a84fa42de2b1fa9e97e8ea85ba09",
   "owner": "coordinator-ar1331",
   "plan": "../plans/AR-1331.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Deliver the runtime-owned strict-replay launch authority required by the replay CLI contract.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Runtime-owned strict-replay launch authority",
-  "updated_at": "2026-09-25T15:48:16+00:00",
+  "updated_at": "2026-09-25T15:48:30+00:00",
   "worktree_key": "agent-systems-benchmark"
 }
 ---
