@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 100,
+  "task_revision": 101,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T19:16:38+00:00",
+  "updated_at": "2026-09-25T19:20:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---
@@ -275,3 +275,6 @@ until the service can prove the complete authority chain.
   tested through Orchestrator lifecycle, restart events retain run/attempt handles, lifecycle append
   failures enter NeedsReconciliation barrier. 7 orchestrator tests pass and clippy -D warnings
   passes; signed commit pushed.
+
+- 2026-09-25T19:20:08+00:00: Recorded command exit 0; command argv SHA-256
+  6ad3e0bdbd274cbcdcce5a9aaabd36471a69f733d416161e18f20c21139fa2c8.
