@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1449-runtime-owned-local-replay-cli",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-25T19:55:07+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1443",
     "AR-1448"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1449-runtime-owned-local-replay-cli",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "ar1449-replay-luna56",
+  "owner": "",
   "plan": "../plans/AR-1449.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide fail-closed runtime-owned local replay authority for the guided CLI wrapper.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Runtime-owned local replay CLI authority",
-  "updated_at": "2026-09-25T16:55:07+00:00",
+  "updated_at": "2026-09-25T16:56:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1449-runtime-owned-local-replay-cli"
 }
 ---
@@ -38,3 +38,8 @@ Requirements:
 Do not weaken AR-1448 or make live provider reachability a prerequisite.
 
 - 2026-09-25T16:55:07+00:00: Claimed by ar1449-replay-luna56.
+
+- 2026-09-25T16:56:36+00:00: Independent audit: AR-1448 ReplayAuthoritySource::issue requires
+  caller-built SandboxLaunchInput, benchmark ResourceLease, SandboxBackend and relay attestation;
+  ordinary CLI cannot safely acquire these. Promote a runtime-owned local replay acquisition factory
+  successor; no product changes made.
