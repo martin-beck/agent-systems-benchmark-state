@@ -12,7 +12,7 @@
   "id": "AR-1452",
   "next_action": "PR #330 exact head 1be9fc4 counts only nonterminal runs for bounded capacity. Await exact-head CI and independent re-review; timeout/cancellation authority fencing still requires a runtime adapter contract before merge.",
   "observed_branch": "feature/ar-1452-runtime-orchestration-service",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "1be9fc41b860260c277969aacb9f09974a28a5c6",
   "owner": "coordinator-orchestrator-impl",
   "plan": "../plans/AR-1452.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 115,
+  "task_revision": 116,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T19:25:03+00:00",
+  "updated_at": "2026-09-25T19:25:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---
