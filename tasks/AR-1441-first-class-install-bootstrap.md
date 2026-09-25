@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1441-first-class-install-bootstrap",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-25T17:17:30+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0821",
     "AR-0822"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1441-first-class-install-bootstrap",
   "observed_dirty": 0,
   "observed_head": "2872a31f2ee90ac5df1a47203b2a618b1829cfec",
-  "owner": "coordinator-ar1441",
+  "owner": "",
   "plan": "../plans/AR-1441.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Provide a verified one-command install and first-run bootstrap for ASB CLI/runtime bundles.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "First-class install and bootstrap",
-  "updated_at": "2026-09-25T15:19:06+00:00",
+  "updated_at": "2026-09-25T15:19:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1441"
 }
 ---
@@ -40,3 +40,10 @@ a second package registry or bypass signed artifact and credential boundaries.
 
 - 2026-09-25T15:18:50+00:00: Recorded command exit 0; command argv SHA-256
   38b2da1a2a7a8a2d72e901aedee845bb5a52337aa930fb6c17e0b27c7e0e7606.
+
+- 2026-09-25T15:19:25+00:00: ASB-only install/bootstrap qualification complete against protected
+  merge 2872a31f. Independently reviewed existing tools/install/bootstrap.sh, lifecycle.sh, and
+  docs/workflows/cli-first-run.md. tests/install/test_bootstrap.sh passed negative URL/digest checks
+  and positive disposable install: exact manifest/artifact/signature digest fencing, private roots,
+  doctor health, lifecycle status/backup/repair/uninstall. No product mutation was required; AR-0823
+  remains separate UI/cross-repository audit.
