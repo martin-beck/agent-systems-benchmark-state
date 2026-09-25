@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1436-local-guided-cli-wrapper",
-  "checkpoint_commit": "3e80aa3d6ae99ee9fc3418ed2a7cfbfe9550eb91",
+  "checkpoint_commit": "4b1213d7e58aa3ed8591ac2d1ac6e9484db86cc6",
   "claim_expires": "2026-09-25T02:43:20+00:00",
   "depends_on": [
     "AR-1435",
     "AR-1328"
   ],
   "id": "AR-1436",
-  "next_action": "Rerun full workspace tests and all applicable offline gates at 3e80aa3; then independent review and exact-head PR.",
+  "next_action": "Rerun full workspace tests and applicable offline gates at 4b1213d; then independent review and exact-head PR.",
   "observed_branch": "feature/ar-1436-local-guided-cli-wrapper",
   "observed_dirty": 0,
   "observed_head": "3e80aa3a61dac73f758cceaa6daf9f7098b45169",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a catalog-driven guided CLI wrapper for deterministic local mock qualification.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Local guided CLI wrapper",
-  "updated_at": "2026-09-25T00:50:55+00:00",
+  "updated_at": "2026-09-25T00:51:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1436-local-guided-cli-wrapper"
 }
 ---
@@ -85,3 +85,9 @@ weakening. Require focused/full/review/PR/seven post-merge gates.
 
 - 2026-09-25T00:50:44+00:00: Recorded command exit 101; command argv SHA-256
   88f7af68d2ecc3638bfd9fff251cc79e4f54fee616e0c550b931fe77cecde9a1.
+
+- 2026-09-25T00:51:28+00:00: Diagnosed full-test exit 101 at 00:50:44: workflow_transcript
+  provenance guard detected stale CLI source digest after the completion-order fix (actual
+  d09919d1e5025c5e43dfd3a057b9ccad62510107e7952004636dce68124121f versus recorded 0af35b...).
+  Refreshed docs/examples/asb-cli-workflow-v1.provenance.json in signed+DCO 4b1213d and pushed. No
+  gate suppression or runtime boundary change.
