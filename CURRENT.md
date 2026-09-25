@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1447](tasks/AR-1447-asb-local-campaign-qualification.md): ASB local campaign qualification | Qualify the complete credential-free ASB local campaign and replay journey. | Remain planned until local mock AR-1433, recording/replay AR-1437, and ASB setup AR-1442 are released; then qualify the existing bounded easy run/sweep and offline local campaign journey. The broader AR-1338 interactive wrapper remains a separate enhancement. | - |
+| P0 | [AR-1447](tasks/AR-1447-asb-local-campaign-qualification.md): ASB local campaign qualification | Qualify the complete credential-free ASB local campaign and replay journey. | Remain planned until local mock AR-1433, recording/replay AR-1437, and ASB setup AR-1442 are released; then qualify the existing bounded easy run/sweep and offline local campaign journey. The broader AR-1338 interactive wrapper remains a separate enhancement. | coordinator-ar1447 |
 
 ## Blocked
 
