@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the single-parent protected-main merge produced for the OpenRouter model refresh.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Protected-main topology repair for OpenRouter refresh",
-  "updated_at": "2026-09-25T14:03:04+00:00",
+  "updated_at": "2026-09-25T14:03:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1445-protected-main-topology-repair-openrouter"
 }
 ---
@@ -52,3 +52,6 @@ measurement evidence.
 
 - 2026-09-25T14:02:45+00:00: Recorded command exit 0; command argv SHA-256
   a24a8b3d94321101903d50d02906f5a04eac026c5e782c2b70c439ba9ac4e8af.
+
+- 2026-09-25T14:03:07+00:00: Recorded command exit 0; command argv SHA-256
+  d7cc2db8c6cffa19a9b0bb23e79987a3a6d13bb553cda1f29de43addf8b6c9b5.
