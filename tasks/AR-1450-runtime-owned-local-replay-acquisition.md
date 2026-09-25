@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1450-runtime-owned-local-replay-acquisition",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-25T21:24:41+00:00",
   "depends_on": [
     "AR-1448"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1450-runtime-owned-local-replay-acquisition",
   "observed_dirty": 0,
   "observed_head": "7c1a93a6f4dfb1482f0a40e84554eb702aac6a21",
-  "owner": "",
+  "owner": "ar1450-replay-luna56",
   "plan": "../plans/AR-1450.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Keep local replay authority acquisition inside the runtime boundary.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Runtime-owned local replay acquisition factory",
-  "updated_at": "2026-09-25T19:24:38+00:00",
+  "updated_at": "2026-09-25T19:24:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1450-runtime-owned-local-replay-acquisition"
 }
 ---
@@ -131,3 +131,5 @@ Requirements:
 - 2026-09-25T19:24:38+00:00: Recovered expired claim formerly owned by ar1450-replay-luna56.
   Recovered expired AR-1450 lease before continuation; preserving branch 7c1a93a and prior evidence
   for replay-runtime repair.
+
+- 2026-09-25T19:24:41+00:00: Claimed by ar1450-replay-luna56.
