@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify or repair the closed sha2 0.11 dependency update without weakening crypto or MSRV contracts.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "sha2 compatibility repair",
-  "updated_at": "2026-09-25T11:43:08+00:00",
+  "updated_at": "2026-09-25T11:43:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1407-sha2-compatibility"
 }
 ---
@@ -54,3 +54,6 @@ compatibility and digest parity are proven.
   52f92cf852962461f85285a350842e59a09d20fdc1eccdb6ede9e2f55bd71325.
 
 - 2026-09-25T11:43:08+00:00: Heartbeat by ar1407_sha2_compat_luna56.
+
+- 2026-09-25T11:43:15+00:00: Recorded command exit 0; command argv SHA-256
+  9cb360e8a40e5a2162b4324c5ce8eec1b353d40bfb59b28b51f16237df2b31ba.
