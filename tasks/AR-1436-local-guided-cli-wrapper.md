@@ -9,15 +9,18 @@
   ],
   "id": "AR-1436",
   "next_action": "Promote and claim when completed dependencies are confirmed; implement the offline catalog-driven local mock wrapper and preserve AR-1329/AR-1338 blocked and AR-1332/AR-1333 planned.",
+  "observed_branch": "feature/ar-1436-local-guided-cli-wrapper",
+  "observed_dirty": 0,
+  "observed_head": "cc82333a53e03147ea95cc21ca697647dc27db1f",
   "owner": "codex-asb-ar1436-local-guided-luna56",
   "plan": "../plans/AR-1436-local-guided-cli-wrapper.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a catalog-driven guided CLI wrapper for deterministic local mock qualification.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Local guided CLI wrapper",
-  "updated_at": "2026-09-25T00:43:33+00:00",
+  "updated_at": "2026-09-25T00:43:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1436-local-guided-cli-wrapper"
 }
 ---
