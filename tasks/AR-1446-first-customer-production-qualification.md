@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "planned",
   "summary": "Qualify ASB in a disposable first-customer production-like environment.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "First-customer production qualification",
-  "updated_at": "2026-09-25T15:00:00+00:00",
+  "updated_at": "2026-09-25T15:12:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1446-first-customer-production"
 }
 ---

@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "blocked",
   "summary": "Qualify asb run and sweep through a mandatory deterministic local mock; retain optional fail-closed live integration.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Local-mock run execution with optional live-provider integration",
-  "updated_at": "2026-09-24T04:39:01+00:00",
+  "updated_at": "2026-09-25T15:12:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1329-live-provider-run-execution"
 }
 ---
