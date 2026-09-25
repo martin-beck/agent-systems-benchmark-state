@@ -12,7 +12,7 @@
   "id": "AR-1338",
   "next_action": "PR #327 updated at exact head 76524a7 after focused/full CLI gates and independent review. Hosted exact-head checks and review remain pending. Guided setup now enforces catalog provider/model pairs and absolute non-traversal paths; plain CLI replay remains fail-closed until a runtime-owned authority acquisition successor is delivered. Do not merge until CI/review are green.",
   "observed_branch": "feature/ar-1338-guided-asb-command-wrapper",
-  "observed_dirty": 1,
+  "observed_dirty": 2,
   "observed_head": "76524a7e081946391143b5225412f428bf73a5fc",
   "owner": "coordinator-ar1338",
   "plan": "../plans/AR-1338.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows.",
-  "task_revision": 62,
+  "task_revision": 63,
   "title": "Guided ASB command wrapper",
-  "updated_at": "2026-09-25T16:48:45+00:00",
+  "updated_at": "2026-09-25T16:48:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1338-guided-asb-command-wrapper"
 }
 ---
