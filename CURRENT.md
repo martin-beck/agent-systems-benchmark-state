@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1423](tasks/AR-1423-literature-docs-registry-reconciliation.md): Exhaustive literature docs-to-registry reconciliation | Reconcile all literature benchmark mentions with strict registry identities and framework boundaries. | Promote after AR-1419 and AR-1403 are released; reconcile every docs-listed benchmark against one registry identity and an explicit framework boundary. | - |
+| P1 | [AR-1423](tasks/AR-1423-literature-docs-registry-reconciliation.md): Exhaustive literature docs-to-registry reconciliation | Reconcile all literature benchmark mentions with strict registry identities and framework boundaries. | Promote after AR-1419 and AR-1403 are released; reconcile every docs-listed benchmark against one registry identity and an explicit framework boundary. | ar1423_literature_reconciliation_luna56 |
 
 ## Blocked
 
