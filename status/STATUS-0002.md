@@ -120,7 +120,7 @@
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1450](../tasks/AR-1450-runtime-owned-local-replay-acquisition.md): Runtime-owned local replay acquisition factory | ar1450-replay-luna56 | Keep local replay authority acquisition inside the runtime boundary. | Implement runtime-owned bootstrap/provisioner using existing LiveProviderProvisioner pattern; own relay/lease roots, tool pins, sandbox construction, attestation and teardown internally. |
-| P0 | [AR-1451](../tasks/AR-1451-central-orchestration-authority-design.md): Central orchestration authority contract and ASB redesign | coordinator-orchestration | Freeze one runtime-owned orchestration authority for every ASB run and attempt. | Promote after reconciling AR-1450 and review the authority matrix, schemas, lifecycle, threat model, and migration design. |
+| P0 | [AR-1451](../tasks/AR-1451-central-orchestration-authority-design.md): Central orchestration authority contract and ASB redesign | coordinator-orchestration | Freeze one runtime-owned orchestration authority for every ASB run and attempt. | PR #329 is open at exact head 6e20258. Wait for independent review and all required exact-head checks; merge only after green review, then promote AR-1452. |
 
 ### Open (1)
 

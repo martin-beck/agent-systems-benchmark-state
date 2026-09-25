@@ -10,7 +10,7 @@
     "AR-1448"
   ],
   "id": "AR-1451",
-  "next_action": "Promote after reconciling AR-1450 and review the authority matrix, schemas, lifecycle, threat model, and migration design.",
+  "next_action": "PR #329 is open at exact head 6e20258. Wait for independent review and all required exact-head checks; merge only after green review, then promote AR-1452.",
   "observed_branch": "feature/ar-1451-central-orchestration-authority-design",
   "observed_dirty": 0,
   "observed_head": "6e202585947c744ec1b995cc9886c380a05aa3da",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Freeze one runtime-owned orchestration authority for every ASB run and attempt.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Central orchestration authority contract and ASB redesign",
-  "updated_at": "2026-09-25T17:35:30+00:00",
+  "updated_at": "2026-09-25T17:36:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1451-central-orchestration-authority-design"
 }
 ---
@@ -61,3 +61,5 @@ provider access.
 
 - 2026-09-25T17:35:30+00:00: Recorded command exit 0; command argv SHA-256
   9e743ee116d93e6fecd73ce5af87b846bfe09995baef4e11f4edda2d8dfa3732.
+
+- 2026-09-25T17:36:12+00:00: Architecture contract implemented and published for review.
