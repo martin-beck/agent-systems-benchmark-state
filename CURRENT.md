@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1315](tasks/AR-1315-1307-1308-development-profile-metadata.md): Formal runner development-profile metadata repair | Align formal-runner task metadata with the explicit unsigned development profile. | Promote after AR-1314 is done; update AR-1307/AR-1308 wording and validators to permit diagnostic unsigned fixtures while retaining signed full qualification gates. | ar1315_formal_profile_metadata_luna56 |
+| P1 | [AR-1315](tasks/AR-1315-1307-1308-development-profile-metadata.md): Formal runner development-profile metadata repair | Align formal-runner task metadata with the explicit unsigned development profile. | Promote after AR-1314 is done; update AR-1307/AR-1308 wording and validators to permit diagnostic unsigned fixtures while retaining signed full qualification gates. | - |
 
 ## Blocked
 

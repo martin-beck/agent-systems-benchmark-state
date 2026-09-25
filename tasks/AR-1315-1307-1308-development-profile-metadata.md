@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1315-formal-development-profile-wording",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-25T13:20:54+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1314"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "repair/ar-1315-formal-development-profile-wording",
   "observed_dirty": 0,
   "observed_head": "7390bcd2082700d0c9f04409732b48de8e9f8628",
-  "owner": "ar1315_formal_profile_metadata_luna56",
+  "owner": "",
   "plan": "../plans/AR-1315.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Align formal-runner task metadata with the explicit unsigned development profile.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Formal runner development-profile metadata repair",
-  "updated_at": "2026-09-25T11:21:50+00:00",
+  "updated_at": "2026-09-25T11:25:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1315-formal-development-profile-metadata"
 }
 ---
@@ -41,3 +41,7 @@ claims.
 
 - 2026-09-25T11:21:39+00:00: Recorded command exit 0; command argv SHA-256
   8ed88295f9acb0ffa158a957bba6a2e17ae1da14256ec88badf23abbbd7b3d2b.
+
+- 2026-09-25T11:25:14+00:00: Recovered idle worker after no implementation progress; no product or
+  state changes were lost. Reassign with declared worktree and preserve the explicit unsigned
+  development-profile scope.
