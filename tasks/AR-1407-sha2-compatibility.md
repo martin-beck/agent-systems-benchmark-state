@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1407-sha2-compatibility",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-25T12:11:42+00:00",
   "depends_on": [
     "AR-1405"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "",
+  "owner": "ar1407_sha2_compat_luna56",
   "plan": "../plans/AR-1407-sha2-compatibility.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Qualify or repair the closed sha2 0.11 dependency update without weakening crypto or MSRV contracts.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "sha2 compatibility repair",
-  "updated_at": "2026-09-25T11:41:39+00:00",
+  "updated_at": "2026-09-25T11:41:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1407-sha2-compatibility"
 }
 ---
@@ -38,3 +38,5 @@ compatibility and digest parity are proven.
   metadata repair required before claim.
 
 - 2026-09-25T11:41:39+00:00: Promote compatibility repair after generated state reconciliation.
+
+- 2026-09-25T11:41:42+00:00: Claimed by ar1407_sha2_compat_luna56.
