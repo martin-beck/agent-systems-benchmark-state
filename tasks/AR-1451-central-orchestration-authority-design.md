@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1451-central-orchestration-authority-design",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "1c5ae1bf6f38c9e5311f0e282d7b282812b75058",
   "claim_expires": "2026-09-25T19:32:06+00:00",
   "depends_on": [
     "AR-1341",
@@ -10,7 +10,7 @@
     "AR-1448"
   ],
   "id": "AR-1451",
-  "next_action": "PR #329 is open at exact head 6e20258. Wait for independent review and all required exact-head checks; merge only after green review, then promote AR-1452.",
+  "next_action": "PR #329 exact head 1c5ae1b adds closed v1 schema, ownership, recovery, migration, portability, and privacy bounds. Await independent re-review and all exact-head checks; merge only when green.",
   "observed_branch": "feature/ar-1451-central-orchestration-authority-design",
   "observed_dirty": 0,
   "observed_head": "1c5ae1bf6f38c9e5311f0e282d7b282812b75058",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Freeze one runtime-owned orchestration authority for every ASB run and attempt.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Central orchestration authority contract and ASB redesign",
-  "updated_at": "2026-09-25T17:38:54+00:00",
+  "updated_at": "2026-09-25T17:39:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1451-central-orchestration-authority-design"
 }
 ---
@@ -72,3 +72,6 @@ provider access.
 
 - 2026-09-25T17:38:54+00:00: Recorded command exit 0; command argv SHA-256
   79cfce0176776fe09db388b9fb6464db37385bddd01ae9c1191b033fa82139a0.
+
+- 2026-09-25T17:39:25+00:00: Addressed independent review P1/P2 findings with explicit schema and
+  recovery/migration contracts.

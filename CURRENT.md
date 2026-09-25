@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1450](tasks/AR-1450-runtime-owned-local-replay-acquisition.md): Runtime-owned local replay acquisition factory | Keep local replay authority acquisition inside the runtime boundary. | Implement runtime-owned bootstrap/provisioner using existing LiveProviderProvisioner pattern; own relay/lease roots, tool pins, sandbox construction, attestation and teardown internally. | ar1450-replay-luna56 |
-| P0 | [AR-1451](tasks/AR-1451-central-orchestration-authority-design.md): Central orchestration authority contract and ASB redesign | Freeze one runtime-owned orchestration authority for every ASB run and attempt. | PR #329 is open at exact head 6e20258. Wait for independent review and all required exact-head checks; merge only after green review, then promote AR-1452. | coordinator-orchestration |
+| P0 | [AR-1451](tasks/AR-1451-central-orchestration-authority-design.md): Central orchestration authority contract and ASB redesign | Freeze one runtime-owned orchestration authority for every ASB run and attempt. | PR #329 exact head 1c5ae1b adds closed v1 schema, ownership, recovery, migration, portability, and privacy bounds. Await independent re-review and all exact-head checks; merge only when green. | coordinator-orchestration |
 
 ## Open
 
