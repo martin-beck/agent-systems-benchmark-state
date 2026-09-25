@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 102,
+  "task_revision": 103,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T22:05:36+00:00",
+  "updated_at": "2026-09-25T22:06:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
@@ -330,3 +330,6 @@ asb-control protocol after this AR is complete.
   state_root_is_exclusive_and_uncertain_restart_fails_closed: first ControlBackend::new unexpectedly
   reports state root already owned at control.rs:6737. Deadline test now passes; cancellation P1
   remains open. Worker assigned diagnosis.
+
+- 2026-09-25T22:06:28+00:00: Recorded command exit 0; command argv SHA-256
+  1da6321d70012989f6655d997ef1afb35b40d703360ea84e5c78729bf3a4110d.
