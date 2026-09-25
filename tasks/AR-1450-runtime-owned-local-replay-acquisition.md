@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep local replay authority acquisition inside the runtime boundary.",
-  "task_revision": 107,
+  "task_revision": 108,
   "title": "Runtime-owned local replay acquisition factory",
-  "updated_at": "2026-09-25T20:15:34+00:00",
+  "updated_at": "2026-09-25T20:28:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1450-runtime-owned-local-replay-acquisition"
 }
 ---
@@ -285,3 +285,6 @@ Requirements:
 
 - 2026-09-25T20:15:34+00:00: Native evidence contract, workflow, and platform documentation now
   agree. No merge attempted while checks are running.
+
+- 2026-09-25T20:28:16+00:00: Recorded command exit 0; command argv SHA-256
+  11e14dd43d6e4195885d7a970861e19e0b5a3a3529e83b3adf03be7e98bcdc7e.
