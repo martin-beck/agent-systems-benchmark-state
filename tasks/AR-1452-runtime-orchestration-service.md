@@ -12,17 +12,17 @@
   "id": "AR-1452",
   "next_action": "PR #330 exact head 693eb7c requires AuthoritySource implementations to provide deadline-aware execute_until, fails closed when teardown hooks fail, invokes teardown on successful completion and all failure paths, and preserves NeedsReconciliation on failed recovery append. Await exact-head CI/review.",
   "observed_branch": "feature/ar-1452-runtime-orchestration-service",
-  "observed_dirty": 1,
-  "observed_head": "693eb7c0d846151180a22d3d0cc273c23f6ac862",
+  "observed_dirty": 0,
+  "observed_head": "91fd6051cea7612b23c574a4b8d7a4671ceb2330",
   "owner": "coordinator-orchestrator-impl",
   "plan": "../plans/AR-1452.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 180,
+  "task_revision": 181,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T19:55:42+00:00",
+  "updated_at": "2026-09-25T19:55:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---
