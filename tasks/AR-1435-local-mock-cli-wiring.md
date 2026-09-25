@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1435-local-mock-cli-wiring",
-  "checkpoint_commit": "8a4ab336b89b1026ca644cc28badc6ab95de7ae2",
+  "checkpoint_commit": "dc52ca99aaea35468ba96405ce744941a8983699",
   "claim_expires": "2026-09-25T02:06:09+00:00",
   "depends_on": [
     "AR-1434"
   ],
   "id": "AR-1435",
-  "next_action": "Monitor PR #316 fresh exact head 8a4ab336b89b1026ca644cc28badc6ab95de7ae2 until all hosted checks pass; then merge through local signed integration and run seven post-merge workflows.",
+  "next_action": "Monitor PR #316 exact head dc52ca99aaea35468ba96405ce744941a8983699 until all hosted checks pass; then merge through local signed integration and run seven post-merge workflows.",
   "observed_branch": "feature/ar-1435-local-mock-cli-wiring",
   "observed_dirty": 0,
   "observed_head": "dc52ca99aaea35468ba96405ce744941a8983699",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire deterministic local mock attempts into asb run and sweep configuration qualification.",
-  "task_revision": 74,
+  "task_revision": 75,
   "title": "Local mock CLI wiring",
-  "updated_at": "2026-09-25T00:18:29+00:00",
+  "updated_at": "2026-09-25T00:18:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1435-local-mock-cli-wiring"
 }
 ---
@@ -249,3 +249,13 @@ it must not contact OpenRouter or any external provider, mint
 
 - 2026-09-25T00:18:29+00:00: Recorded command exit 0; command argv SHA-256
   8ec614a03621af22ff0ec1cc63b4aa0c31f6902e27ba04858642629a1343e8e3.
+
+- 2026-09-25T00:18:44+00:00: Fresh PR Rust failure 36076453046 diagnosed:
+  local_mock_rejects_stale_credentials_bad_model_oversize_and_revocation asserted RequestTooLarge
+  after a parallel authority generation had become inactive. Corrected execute_mock_request
+  validation order to deterministically reject invalid attempt/model/credential/oversize before the
+  active-generation fence; valid revoked requests still return Inactive. Signed+DCO correction
+  dc52ca99aaea35468ba96405ce744941a8983699 pushed to PR #316. Focused five local_mock tests,
+  repeated hostile test, full workspace test pipefail, workspace clippy, rustdoc, fmt, release
+  build, and diff-check pass. A 00:15:24 log-inspection exit 1 was an rg -E syntax operator error;
+  corrected inspection passed.
