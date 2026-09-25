@@ -120,7 +120,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1453](../tasks/AR-1453-frontend-orchestration-wiring.md): Route ASB frontends through central orchestration | ar1453-frontend-orchestration-luna56 | Make CLI and control use the central service for every run lifecycle. | Create replacement PR from remote branch feature/ar-1453-frontend-orchestration-wiring-requal at c17254a9db622d8e9801084071afa009fc7cedf1; run exact-head hosted checks and independent review. PR332 remains immutable failed evidence; do not merge until all required gates pass. |
+| P0 | [AR-1453](../tasks/AR-1453-frontend-orchestration-wiring.md): Route ASB frontends through central orchestration | ar1453-frontend-orchestration-luna56 | Make CLI and control use the central service for every run lifecycle. | Repair PR #333 required Rust deadline failure and bound PlanAuthoritySource cancellation state; preserve failed CI/review evidence, then rerun local and exact-head hosted gates. |
 
 ### Open (1)
 

@@ -7,7 +7,7 @@
     "AR-1452"
   ],
   "id": "AR-1453",
-  "next_action": "Create replacement PR from remote branch feature/ar-1453-frontend-orchestration-wiring-requal at c17254a9db622d8e9801084071afa009fc7cedf1; run exact-head hosted checks and independent review. PR332 remains immutable failed evidence; do not merge until all required gates pass.",
+  "next_action": "Repair PR #333 required Rust deadline failure and bound PlanAuthoritySource cancellation state; preserve failed CI/review evidence, then rerun local and exact-head hosted gates.",
   "observed_branch": "feature/ar-1453-frontend-orchestration-wiring",
   "observed_dirty": 0,
   "observed_head": "c17254a9db622d8e9801084071afa009fc7cedf1",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 95,
+  "task_revision": 96,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T21:58:00+00:00",
+  "updated_at": "2026-09-25T21:58:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
@@ -304,3 +304,8 @@ asb-control protocol after this AR is complete.
 - 2026-09-25T21:56:10+00:00: Heartbeat by ar1453-frontend-orchestration-luna56.
 
 - 2026-09-25T21:58:00+00:00: Heartbeat by ar1453-frontend-orchestration-luna56.
+
+- 2026-09-25T21:58:44+00:00: Independent review found P1: strict replay future-deadline test returns
+  success instead of AuthorityError::Timeout; required Rust check failed run 36194111089. Review
+  also found P2: cancelled BTreeMap grows without removal. Worker assigned repair on existing
+  replacement branch.
