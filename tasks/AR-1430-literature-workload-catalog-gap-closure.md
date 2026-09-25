@@ -10,7 +10,7 @@
   "id": "AR-1430",
   "next_action": "Promote after AR-1423 and AR-1416 are released; add the complete stable literature workload identity/catalog and fail-closed selector boundary.",
   "observed_branch": "feature/ar-1430-literature-workload-catalog",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "7390bcd2082700d0c9f04409732b48de8e9f8628",
   "owner": "ar1430_literature_workload_catalog_luna56",
   "plan": "../plans/AR-1430-literature-workload-catalog-gap-closure.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Close documented literature workload identity and selector gaps without enabling live providers or external acquisition.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Literature workload catalog gap closure",
-  "updated_at": "2026-09-25T10:55:34+00:00",
+  "updated_at": "2026-09-25T10:55:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1430-literature-workload-catalog"
 }
 ---
