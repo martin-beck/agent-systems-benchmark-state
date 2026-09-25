@@ -15,13 +15,13 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36122369365 | `c3480e79ce3f` | push | Hosted portability and native qualification | in_progress:- |
-| 36122369363 | `c3480e79ce3f` | push | Repository quality | in_progress:- |
-| 36122369277 | `c3480e79ce3f` | push | Emulated aarch64 portability | in_progress:- |
-| 36122369261 | `c3480e79ce3f` | push | Rust verification | in_progress:- |
-| 36122369220 | `c3480e79ce3f` | push | Fault assurance | in_progress:- |
+| 36122369365 | `c3480e79ce3f` | push | Hosted portability and native qualification | completed:success |
+| 36122369363 | `c3480e79ce3f` | push | Repository quality | completed:success |
+| 36122369277 | `c3480e79ce3f` | push | Emulated aarch64 portability | completed:success |
+| 36122369261 | `c3480e79ce3f` | push | Rust verification | completed:success |
+| 36122369220 | `c3480e79ce3f` | push | Fault assurance | completed:success |
 | 36122369211 | `c3480e79ce3f` | push | Huawei MIT source headers | completed:success |
-| 36122369129 | `c3480e79ce3f` | push | Formal assurance | in_progress:- |
+| 36122369129 | `c3480e79ce3f` | push | Formal assurance | completed:success |
 | 36121478220 | `6e30115e97e5` | pull_request | Emulated aarch64 portability | completed:success |
 | 36121478199 | `6e30115e97e5` | pull_request | Repository quality | completed:success |
 | 36121478148 | `6e30115e97e5` | pull_request | Hosted portability and native qualification | completed:success |
