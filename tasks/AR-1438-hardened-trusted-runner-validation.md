@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1438-hardened-trusted-runner-validation.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Make protected trusted-runner lifecycle validation compatible with hardened rootless execution.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Hardened trusted-runner validation repair",
-  "updated_at": "2026-09-25T12:08:00+00:00",
+  "updated_at": "2026-09-25T12:09:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1438-hardened-trusted-runner-validation"
 }
 ---
@@ -41,3 +41,6 @@ Add positive and negative tests, update development documentation if needed,
 run focused and full applicable gates, publish a signed+DCO PR, wait for exact
 head CI, merge only after green required checks, and verify the protected
 trusted workflow on the exact merge commit.
+
+- 2026-09-25T12:09:21+00:00: dependencies verified: AR-0830 done; begin hardened rootless runner
+  validation repair
