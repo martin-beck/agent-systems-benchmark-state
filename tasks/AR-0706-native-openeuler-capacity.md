@@ -10,15 +10,18 @@
   ],
   "id": "AR-0706",
   "next_action": "Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence.",
+  "observed_branch": "feature/native-openeuler-capacity",
+  "observed_dirty": 0,
+  "observed_head": "7390bcd2082700d0c9f04409732b48de8e9f8628",
   "owner": "ar0706_native_openeuler_luna56",
   "plan": "../plans/AR-0706.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Provide native openEuler capacity",
-  "updated_at": "2026-09-25T11:53:37+00:00",
+  "updated_at": "2026-09-25T11:53:49+00:00",
   "worktree_key": "agent-systems-benchmark-native-openeuler-capacity"
 }
 ---
