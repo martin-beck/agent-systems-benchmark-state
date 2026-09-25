@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make protected trusted-runner lifecycle validation compatible with hardened rootless execution.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Hardened trusted-runner validation repair",
-  "updated_at": "2026-09-25T12:20:16+00:00",
+  "updated_at": "2026-09-25T12:20:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1438-hardened-trusted-runner-validation"
 }
 ---
@@ -89,3 +89,6 @@ trusted workflow on the exact merge commit.
 
 - 2026-09-25T12:20:16+00:00: Recorded command exit 0; command argv SHA-256
   ab8734517a4b79055e8d85a8d8b0982326ceb622a2977baf18ef0dbceec35820.
+
+- 2026-09-25T12:20:31+00:00: Recorded command exit 0; command argv SHA-256
+  ffa27f93ad06927aff250785daec8ed1c1f9f33b28cf0592fb431eac5c0c1136.
