@@ -9,17 +9,17 @@
   "id": "AR-1453",
   "next_action": "Repair follow-up required before pushing PR #332: focused control tests pass for strict replay and deadline regressions, but the full control test subset still fails in active_worker_retains_exclusive_state_ownership_until_terminal_commit and unix_frontend_disconnect_does_not_stop_real_run after strict replay became authority-only. Diagnose/update those lifecycle tests or implementation, then rerun full gates; current repair commit remains unpublished.",
   "observed_branch": "feature/ar-1453-frontend-orchestration-wiring",
-  "observed_dirty": 1,
-  "observed_head": "6bf03b57601ccbbdccbee7beda2d9512f1060a1e",
+  "observed_dirty": 0,
+  "observed_head": "4db5c4d781a27401ebe895c94400325b7c3647e6",
   "owner": "ar1453-frontend-orchestration-luna56",
   "plan": "../plans/AR-1453.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 79,
+  "task_revision": 80,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T21:40:45+00:00",
+  "updated_at": "2026-09-25T21:40:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
