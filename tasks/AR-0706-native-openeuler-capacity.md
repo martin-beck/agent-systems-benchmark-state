@@ -2,7 +2,7 @@
 {
   "branch": "feature/native-openeuler-capacity",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-25T15:42:51+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0704",
     "AR-0201",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/native-openeuler-capacity",
   "observed_dirty": 0,
   "observed_head": "7390bcd2082700d0c9f04409732b48de8e9f8628",
-  "owner": "ar0706_capacity_requal_luna56",
+  "owner": "",
   "plan": "../plans/AR-0706.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional.",
-  "task_revision": 122,
+  "task_revision": 123,
   "title": "Provide native openEuler capacity",
-  "updated_at": "2026-09-25T13:42:51+00:00",
+  "updated_at": "2026-09-25T13:43:01+00:00",
   "worktree_key": "agent-systems-benchmark-native-openeuler-capacity"
 }
 ---
@@ -396,3 +396,14 @@ native identity, kernel/distribution provenance, cleanup, cost/availability boun
   bf9c7359def1cf2ab281973dd4c14b9d5dedbc65bea2ec7f3f84af9c3df690eb.
 
 - 2026-09-25T13:42:51+00:00: Heartbeat by ar0706_capacity_requal_luna56.
+
+- 2026-09-25T13:43:01+00:00: Requalified local capacity. Official openEuler 24.03 LTS-SP2 x86_64
+  qcow2 is booted under KVM/QEMU at /srv/data/projects/asb-openeuler-vm; guest identity verified via
+  /etc/openEuler-release and uname. GitHub runner 27 is online for this repository, active under
+  guest systemd as least-privilege asb-ci-runner, and registered with no default labels; exact
+  labels are asb-openeuler-24.03-sp2 and asb-qemu-x86_64. This provides isolated VM functional CI
+  capacity. It does not provide native-kernel evidence: docs/PLATFORMS.md explicitly reject QEMU as
+  native evidence and performance baseline, and no native openEuler x86_64 host exists. No native
+  gate was claimed. Next action: add a reviewed workflow job targeting the exact custom label for
+  VM-functional openEuler checks; retain native qualification as unproven until approved native host
+  capacity.
