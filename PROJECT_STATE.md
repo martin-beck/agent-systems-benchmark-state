@@ -10,20 +10,20 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #321 | `feature/ar-1430-literature-workload-catalog@a0459dea5c59` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, QUEUED:, IN_PROGRESS: | fix(workloads): expose all framework literature identities |
+| #321 | `feature/ar-1430-literature-workload-catalog@a0459dea5c59` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | fix(workloads): expose all framework literature identities |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36126902512 | `a0459dea5c59` | pull_request | Huawei MIT source headers | in_progress:- |
+| 36126902512 | `a0459dea5c59` | pull_request | Huawei MIT source headers | completed:success |
 | 36126902485 | `a0459dea5c59` | pull_request | Fault assurance | in_progress:- |
 | 36126902476 | `a0459dea5c59` | pull_request | Rust verification | in_progress:- |
 | 36126902434 | `a0459dea5c59` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 36126902431 | `a0459dea5c59` | pull_request | Hosted portability and native qualification | in_progress:- |
 | 36126902410 | `a0459dea5c59` | pull_request | Repository quality | in_progress:- |
-| 36126902407 | `a0459dea5c59` | pull_request | Agent Workflow Quality shadow | in_progress:- |
-| 36126902405 | `a0459dea5c59` | pull_request | Formal assurance | queued:- |
+| 36126902407 | `a0459dea5c59` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 36126902405 | `a0459dea5c59` | pull_request | Formal assurance | in_progress:- |
 | 36125427665 | `7390bcd20827` | push | Formal assurance | completed:success |
 | 36125427645 | `7390bcd20827` | push | Hosted portability and native qualification | completed:success |
 | 36125427635 | `7390bcd20827` | push | Rust verification | completed:success |
