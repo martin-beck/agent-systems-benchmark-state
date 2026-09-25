@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #317 | `feature/ar-1436-local-guided-cli-wrapper@ae48046d9802` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | Add guided local mock CLI wrapper |
+| #317 | `feature/ar-1436-local-guided-cli-wrapper@ae48046d9802` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | Add guided local mock CLI wrapper |
 
 ## Recent workflows
 
@@ -22,7 +22,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36080084152 | `ae48046d9802` | pull_request | Fault assurance | in_progress:- |
 | 36080084148 | `ae48046d9802` | pull_request | Repository quality | in_progress:- |
 | 36080084124 | `ae48046d9802` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 36080084120 | `ae48046d9802` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 36080084120 | `ae48046d9802` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36080084118 | `ae48046d9802` | pull_request | Rust verification | in_progress:- |
 | 36077914619 | `cc82333a53e0` | push | Emulated aarch64 portability | completed:success |
 | 36077914599 | `cc82333a53e0` | push | Repository quality | completed:success |
