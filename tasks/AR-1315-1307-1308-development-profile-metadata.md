@@ -7,7 +7,7 @@
     "AR-1314"
   ],
   "id": "AR-1315",
-  "next_action": "Promote after AR-1314 is done; update AR-1307/AR-1308 wording and validators to permit diagnostic unsigned fixtures while retaining signed full qualification gates.",
+  "next_action": "Commit signed+DCO state-only wording and validator repair; run focused and full state gates, then obtain independent review and publish only through handoffctl.",
   "observed_branch": "repair/ar-1315-formal-development-profile-wording",
   "observed_dirty": 0,
   "observed_head": "7390bcd2082700d0c9f04409732b48de8e9f8628",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Align formal-runner task metadata with the explicit unsigned development profile.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Formal runner development-profile metadata repair",
-  "updated_at": "2026-09-25T11:29:43+00:00",
+  "updated_at": "2026-09-25T11:30:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1315-formal-development-profile-metadata"
 }
 ---
@@ -59,3 +59,9 @@ claims.
 
 - 2026-09-25T11:29:43+00:00: Recorded command exit 0; command argv SHA-256
   74d8c075f7e3bad67ed41753a1fd1deebbd83367ee51beff18efe0c24e0b27f9.
+
+- 2026-09-25T11:30:41+00:00: Recorded failure: governed python -m unittest
+  tests.test_ar1308_capacity ran from the product root and failed to import the state test module.
+  Absolute-path rerun passed; corrected focused AR-1308 suite passes 22/22. State-only diff now adds
+  explicit signed versus unsigned-development validator profiles, diagnostic labelling, and
+  AR-1307/AR-1308 wording.
