@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire deterministic local mock attempts into asb run and sweep configuration qualification.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Local mock CLI wiring",
-  "updated_at": "2026-09-25T00:10:52+00:00",
+  "updated_at": "2026-09-25T00:11:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1435-local-mock-cli-wiring"
 }
 ---
@@ -191,3 +191,6 @@ it must not contact OpenRouter or any external provider, mint
   records 00:03:58 through 00:06:52 were coordinator lock timeouts during polling and remain
   preserved. Signed correction 8a4ab336 removes only the redundant race-prone assertion; dedicated
   generation-fence semantics remain tested. Full local rerun follows.
+
+- 2026-09-25T00:11:27+00:00: Recorded command exit 0; command argv SHA-256
+  d52981ef29332d6b5e3a0e875e06594651a5ae8e37ddc86cacd08c3d3438087f.
