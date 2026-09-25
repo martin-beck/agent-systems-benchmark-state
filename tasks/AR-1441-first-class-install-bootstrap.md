@@ -1,6 +1,6 @@
 ---
 {
-  "branch": "main",
+  "branch": "feature/ar-1441-first-class-install-bootstrap",
   "checkpoint_commit": "",
   "claim_expires": "2026-09-25T17:17:30+00:00",
   "depends_on": [
@@ -21,7 +21,7 @@
   "task_revision": 6,
   "title": "First-class install and bootstrap",
   "updated_at": "2026-09-25T15:18:09+00:00",
-  "worktree_key": "agent-systems-benchmark"
+  "worktree_key": "agent-systems-benchmark-ar-1441"
 }
 ---
 
