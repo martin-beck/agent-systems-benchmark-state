@@ -2,7 +2,7 @@
 {
   "branch": "codex/ar-1419-literature-framework",
   "checkpoint_commit": "6e30115e97e5aedc5ce82a04eda2766215018b07",
-  "claim_expires": "2026-09-25T13:12:07+00:00",
+  "claim_expires": "2026-09-25T13:13:44+00:00",
   "depends_on": [
     "AR-1417",
     "AR-1418"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Close literature documentation gaps and enforce benchmark-versus-framework selection boundaries.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Literature framework boundaries",
-  "updated_at": "2026-09-25T10:12:07+00:00",
+  "updated_at": "2026-09-25T10:13:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1419"
 }
 ---
@@ -78,3 +78,5 @@ separate workload protocol and grader are proven.
 - 2026-09-25T10:10:49+00:00: Heartbeat by ar1419-framework-boundaries-luna56.
 
 - 2026-09-25T10:12:07+00:00: Heartbeat by ar1419-framework-boundaries-luna56.
+
+- 2026-09-25T10:13:44+00:00: Heartbeat by ar1419-framework-boundaries-luna56.
