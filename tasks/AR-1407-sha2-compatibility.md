@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-25T13:38:10+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1405"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "ar1407_sha2_compat_luna56",
+  "owner": "",
   "plan": "../plans/AR-1407-sha2-compatibility.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Qualify or repair the closed sha2 0.11 dependency update without weakening crypto or MSRV contracts.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "sha2 compatibility repair",
-  "updated_at": "2026-09-25T11:38:10+00:00",
+  "updated_at": "2026-09-25T11:38:40+00:00",
   "worktree_key": ""
 }
 ---
@@ -32,3 +32,7 @@ compatibility and digest parity are proven.
   workflows; promote bounded sha2 compatibility qualification
 
 - 2026-09-25T11:38:10+00:00: Claimed by ar1407_sha2_compat_luna56.
+
+- 2026-09-25T11:38:40+00:00: Blocked before product qualification: promoted task has empty
+  branch/worktree_key metadata; handoffctl correctly refuses wrapped product command. Coordinator
+  metadata repair required before claim.

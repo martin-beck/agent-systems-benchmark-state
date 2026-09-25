@@ -98,11 +98,11 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P2 | [AR-1407](../tasks/AR-1407-sha2-compatibility.md): sha2 compatibility repair | ar1407_sha2_compat_luna56 | Qualify or repair the closed sha2 0.11 dependency update without weakening crypto or MSRV contracts. | Promote after AR-1405; reproduce the sha2 0.11 compile/MSRV failure and either repair it with digest-parity evidence or preserve the supersession. |
+| P2 | [AR-1407](../tasks/AR-1407-sha2-compatibility.md): sha2 compatibility repair | Unclaimed | Qualify or repair the closed sha2 0.11 dependency update without weakening crypto or MSRV contracts. | Promote after AR-1405; reproduce the sha2 0.11 compile/MSRV failure and either repair it with digest-parity evidence or preserve the supersession. |
 
 ### Blocked (66)
 
