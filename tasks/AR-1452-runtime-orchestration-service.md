@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1452-runtime-orchestration-service",
-  "checkpoint_commit": "0e9e1e15647903b9bd806b7b6eaeac21fc2a23bc",
+  "checkpoint_commit": "c2d799e4f9d7859e6462d60886c9255d5df9f37e",
   "claim_expires": "2026-09-25T21:12:29+00:00",
   "depends_on": [
     "AR-1357",
@@ -10,7 +10,7 @@
     "AR-1451"
   ],
   "id": "AR-1452",
-  "next_action": "PR #330 exact head 0e9e1e1 removes obsolete deny.toml skip that caused Repository quality bans failure. Await new exact-head CI and independent re-review; do not merge while local execution/reconciliation P1s remain.",
+  "next_action": "PR #330 exact head c2d799e adds runtime-owned LocalMockAuthoritySource backed by asb-runtime LocalProviderMockBackend and explicit reconcile() for NeedsReconciliation attempts. Await exact-head CI and independent re-review; inspect storage-barrier semantics before merge.",
   "observed_branch": "feature/ar-1452-runtime-orchestration-service",
   "observed_dirty": 0,
   "observed_head": "c2d799e4f9d7859e6462d60886c9255d5df9f37e",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T19:10:29+00:00",
+  "updated_at": "2026-09-25T19:10:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---
@@ -229,3 +229,8 @@ until the service can prove the complete authority chain.
 
 - 2026-09-25T19:10:29+00:00: Recorded command exit 0; command argv SHA-256
   10ffdfa0d30719f50bf21fbc01c140375702acb07cf7c4b5d8dc85839df9e3bd.
+
+- 2026-09-25T19:10:55+00:00: Added executable local mock path through runtime-owned
+  lease/relay-fenced backend, with positive test (6 orchestrator tests pass). Added reconcile
+  operation to terminate interrupted journal state after supervisor inspection. cargo fmt, offline
+  tests, and clippy passed; signed commit pushed.
