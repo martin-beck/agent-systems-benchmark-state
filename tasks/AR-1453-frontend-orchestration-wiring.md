@@ -9,17 +9,17 @@
   "id": "AR-1453",
   "next_action": "Repair P1 review blockers on PR #332: enforce strict replay through runtime-issued cassette authority with digest consumption and enforce execute_until deadline; add positive/negative tests, then rerun gates and push a new signed+DCO head for fresh review.",
   "observed_branch": "feature/ar-1453-frontend-orchestration-wiring",
-  "observed_dirty": 2,
-  "observed_head": "ceac822ad15da1747fc8b7ad824a68928de663a0",
+  "observed_dirty": 0,
+  "observed_head": "6bf03b57601ccbbdccbee7beda2d9512f1060a1e",
   "owner": "ar1453-frontend-orchestration-luna56",
   "plan": "../plans/AR-1453.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 62,
+  "task_revision": 63,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T21:31:40+00:00",
+  "updated_at": "2026-09-25T21:31:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
