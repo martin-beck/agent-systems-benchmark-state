@@ -9,17 +9,17 @@
   "id": "AR-1450",
   "next_action": "Implement a runtime-owned local replay acquisition factory that accepts only validated cassette identity and returns opaque one-shot authority.",
   "observed_branch": "feature/ar-1450-runtime-owned-local-replay-acquisition",
-  "observed_dirty": 0,
-  "observed_head": "",
+  "observed_dirty": 1,
+  "observed_head": "f03d9e484d6ca73eacdbd5476980bf33ca737540",
   "owner": "ar1450-replay-luna56",
   "plan": "../plans/AR-1450.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep local replay authority acquisition inside the runtime boundary.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Runtime-owned local replay acquisition factory",
-  "updated_at": "2026-09-25T17:00:26+00:00",
+  "updated_at": "2026-09-25T17:00:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1450-runtime-owned-local-replay-acquisition"
 }
 ---
