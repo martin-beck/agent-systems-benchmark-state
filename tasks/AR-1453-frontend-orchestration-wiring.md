@@ -9,7 +9,7 @@
   "id": "AR-1453",
   "next_action": "Promote after AR-1452 post-merge verification and wire run, sweep, replay, cancellation, and status through the service.",
   "observed_branch": "feature/ar-1453-frontend-orchestration-wiring",
-  "observed_dirty": 0,
+  "observed_dirty": 4,
   "observed_head": "a5eb7e680a3c71813d9d1aae3328a385d6812a95",
   "owner": "ar1453-frontend-orchestration-luna56",
   "plan": "../plans/AR-1453.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T20:50:14+00:00",
+  "updated_at": "2026-09-25T20:50:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
