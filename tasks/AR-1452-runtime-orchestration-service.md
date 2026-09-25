@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T18:36:26+00:00",
+  "updated_at": "2026-09-25T18:38:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---
@@ -147,3 +147,6 @@ until the service can prove the complete authority chain.
   NeedsReconciliation; deterministic outcome carries artifact count/size; evidence failures durably
   fail and clear capability; complete requires AttemptHandle; capacity lookup follows idempotency.
   Offline tests and clippy passed.
+
+- 2026-09-25T18:38:39+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
