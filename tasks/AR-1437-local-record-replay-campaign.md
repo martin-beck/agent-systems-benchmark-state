@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify deterministic local record/replay and campaign journeys over the runtime mock.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Local record/replay campaign qualification",
-  "updated_at": "2026-09-25T01:30:45+00:00",
+  "updated_at": "2026-09-25T01:31:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1437-local-record-replay-campaign"
 }
 ---
@@ -54,3 +54,6 @@ campaign qualification. Require focused/full/review/PR/seven post-merge gates.
   `asb easy record-campaign MANIFEST.json --local-mock` over existing bounded record-campaign
   sealing, with hostile live/config option rejection, positive campaign test, docs, and final CLI
   provenance digest. No provider capture, live authority, or replay fallback added.
+
+- 2026-09-25T01:31:32+00:00: Recorded command exit 0; command argv SHA-256
+  9499c0c9f7493c93690381ad0802155d6eee0d2965f70d5d086e271f050d0188.
