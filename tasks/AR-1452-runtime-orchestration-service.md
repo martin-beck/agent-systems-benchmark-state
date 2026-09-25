@@ -12,7 +12,7 @@
   "id": "AR-1452",
   "next_action": "PR #330 exact head 69331c9 adds service-level local mock execution coverage, restores fenced identities during journal rehydration, and places an explicit durability barrier on append failure. Await exact-head CI and independent re-review; strict replay adapter remains AR-1450 follow-up.",
   "observed_branch": "feature/ar-1452-runtime-orchestration-service",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "69331c9f5e303e9b6385d58041786e3e0e49c83f",
   "owner": "coordinator-orchestrator-impl",
   "plan": "../plans/AR-1452.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 101,
+  "task_revision": 102,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T19:20:08+00:00",
+  "updated_at": "2026-09-25T19:20:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---
