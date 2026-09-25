@@ -116,13 +116,12 @@
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1450](../tasks/AR-1450-runtime-owned-local-replay-acquisition.md): Runtime-owned local replay acquisition factory | ar1450-replay-luna56 | Keep local replay authority acquisition inside the runtime boundary. | Await PR #328 exact-head CI and independent review at 2832912; required replay-authority enforcement now has positive CLI forwarding and negative missing-check tests. |
 | P0 | [AR-1453](../tasks/AR-1453-frontend-orchestration-wiring.md): Route ASB frontends through central orchestration | ar1453-frontend-orchestration-luna56 | Make CLI and control use the central service for every run lifecycle. | PR #332 is published at exact head ceac822 on base 452f3ca. Await independent review and exact-head required CI; do not merge until review and all required checks are green. Then perform post-merge verification. |
-| P0 | [AR-1454](../tasks/AR-1454-protected-main-tree-repair-runtime-replay.md): Protected-main tree-equality repair for runtime replay | ar1454-tree-repair-luna56 | Repair the protected-main tree mismatch after the runtime replay merge. | Post-merge verification complete: all seven workflows succeeded; release AR-1454 and propagate repair evidence to AR-1450. |
 
 ### Open (1)
 
@@ -276,7 +275,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (323)
+### Done (324)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -432,6 +431,7 @@
 | P0 | [AR-1448](../tasks/AR-1448-runtime-replay-authority-source.md): Runtime replay authority source | Unclaimed | Materialize runtime-owned strict replay authority for normal CLI replay. | Done: signed PR #326 merged as f03d9e484d6ca73eacdbd5476980bf33ca737540; all seven exact-main post-merge workflows and local runtime/CLI verification passed. |
 | P0 | [AR-1451](../tasks/AR-1451-central-orchestration-authority-design.md): Central orchestration authority contract and ASB redesign | Unclaimed | Freeze one runtime-owned orchestration authority for every ASB run and attempt. | PR #329 merged as 071167d. Monitor seven exact-main post-merge workflows 36170798957, 36170798948, 36170798971, 36170798901, 36170798918, 36170798954, 36170798887 to terminal success; then release AR-1451 and promote AR-1452. |
 | P0 | [AR-1452](../tasks/AR-1452-runtime-orchestration-service.md): Implement the runtime-owned ASB orchestration service | Unclaimed | Implement one service-owned authority for admission, attempts, resources, and teardown. | PR #330 merged at exact main a5eb7e6; wait for all seven post-merge workflows, then run exact-main verification and release AR-1452 done before promoting AR-1453. |
+| P0 | [AR-1454](../tasks/AR-1454-protected-main-tree-repair-runtime-replay.md): Protected-main tree-equality repair for runtime replay | Unclaimed | Repair the protected-main tree mismatch after the runtime replay merge. | Post-merge verification complete: all seven workflows succeeded; release AR-1454 and propagate repair evidence to AR-1450. |
 | P1 | [AR-0002](../tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Unclaimed | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. |
 | P1 | [AR-0003](../tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Unclaimed | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. |
 | P1 | [AR-0004](../tasks/AR-0004-ar-status-document.md): Generate the visual AR status document | Unclaimed | Render every AR, status, and dependency as an accessible visual state document. | Await independent immutable-head review of state PR 3 at eedd311; repair findings before coordinator integration. |

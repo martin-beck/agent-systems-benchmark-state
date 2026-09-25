@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1454-protected-main-tree-repair-runtime-replay",
   "checkpoint_commit": "a0bd63d3edc539ad1aeefba2e80c76ac3a6ebb9c",
-  "claim_expires": "2026-09-25T23:14:00+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1451",
     "AR-1452"
@@ -12,15 +12,15 @@
   "observed_branch": "repair/ar-1454-protected-main-tree-repair-runtime-replay",
   "observed_dirty": 0,
   "observed_head": "a8ad4224b4fb0d601089457ce7be44dfebaec042",
-  "owner": "ar1454-tree-repair-luna56",
+  "owner": "",
   "plan": "../plans/AR-1454.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Repair the protected-main tree mismatch after the runtime replay merge.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Protected-main tree-equality repair for runtime replay",
-  "updated_at": "2026-09-25T21:19:38+00:00",
+  "updated_at": "2026-09-25T21:19:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1454-protected-main-tree-repair-runtime-replay"
 }
 ---
@@ -71,3 +71,7 @@ waived. Keep asb-tui out of scope.
 
 - 2026-09-25T21:19:38+00:00: PR #331 merged as two-parent tree-equal commit a0bd63d3; exact-head
   review was clean, all 12 PR checks and all seven post-merge workflows succeeded.
+
+- 2026-09-25T21:19:44+00:00: AR-1454 complete: PR #331 exact-head checks, independent review,
+  two-parent tree-equal merge a0bd63d, and all seven post-merge workflows succeeded. Protected-main
+  tree mismatch is repaired without weakening gates.
