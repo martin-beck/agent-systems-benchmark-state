@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 85,
+  "task_revision": 86,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T21:49:48+00:00",
+  "updated_at": "2026-09-25T21:50:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
@@ -276,3 +276,6 @@ asb-control protocol after this AR is complete.
 
 - 2026-09-25T21:49:48+00:00: Recorded command exit 0; command argv SHA-256
   d117a7741fcc133444534ecec6079500e111b48bd4327805566605d0f5fdf990.
+
+- 2026-09-25T21:50:06+00:00: Recorded command exit 0; command argv SHA-256
+  ce5c6d95697a4f394a04b1ed95fd29ad0e31626250cb43454d3d8191b6ee7224.
