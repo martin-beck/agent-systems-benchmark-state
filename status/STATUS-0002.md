@@ -98,6 +98,12 @@
 
 ## Complete AR inventory
 
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-1315](../tasks/AR-1315-1307-1308-development-profile-metadata.md): Formal runner development-profile metadata repair | Unclaimed | Align formal-runner task metadata with the explicit unsigned development profile. | Promote after AR-1314 is done; update AR-1307/AR-1308 wording and validators to permit diagnostic unsigned fixtures while retaining signed full qualification gates. |
+
 ### Blocked (66)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -169,7 +175,7 @@
 | P1 | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md): Local-mock run execution with optional live-provider integration | Unclaimed | Qualify asb run and sweep through a mandatory deterministic local mock; retain optional fail-closed live integration. | BLOCKED for optional production integration only: preserve the deterministic local sub-1B/LiteLLM-compatible mock path as the mandatory development and CI qualification route. A future runtime-owned LiveProviderRuntimeService may resolve pinned provider policy, enrolled credentials, attested namespace/relay, ResourceLease, SandboxBackend, and one LiveProviderAttempt per scheduler attempt, with cancellation teardown; external reachability is optional non-gating evidence. Preserve NetworkPolicy::Deny and direct/alternate egress denial. |
 | P1 | [AR-1354](../tasks/AR-1354-runtime-enrollment-implementation.md): Runtime enrollment implementation | Unclaimed | Implement config-backed runtime-owned enrollment for live CLI dispatch. | BLOCKED on an attested runtime enrollment source: asb-runtime must receive an authority-free enrollment request and obtain concrete public target(s), pinned tool attestations, lease root, and relay root from a runtime/control-owned record; do not expose these asb-cli inputs. Add a signed/attested record transport or coordinator-owned runtime enrollment AR, then implement acquire_from_enrollment and CLI dispatch with positive/negative tests. |
 
-### Planned (67)
+### Planned (66)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -222,7 +228,6 @@
 | P1 | [AR-1027](../tasks/AR-1027-asb-tui-verified-release.md): Publish the verified asb-tui release | Unclaimed | Create and independently promote the first installable signed asb-tui release channel. | Publish the first verified asb-tui release only after ASB release, complete UI/install qualification and exact cross-repository evidence are done. |
 | P1 | [AR-1255](../tasks/AR-1255-bundled-mockagents-qemu-runner.md): Bundle MockAgents transport and QEMU runner | Unclaimed | Bundle MockAgents transport and QEMU runner. | Provision a digest-pinned bundled transport/QEMU runner and implement real in-container evidence. |
 | P1 | [AR-1257](../tasks/AR-1257-mockagents-qemu-image.md): Qualify digest-pinned multiarch MockAgents image | Unclaimed | Qualify a digest-pinned multiarch MockAgents OCI image for QEMU isolation. | Read the complete plan and verify official digest-pinned multiarch image, signature, license, and QEMU capability before any support claim. |
-| P1 | [AR-1315](../tasks/AR-1315-1307-1308-development-profile-metadata.md): Formal runner development-profile metadata repair | Unclaimed | Align formal-runner task metadata with the explicit unsigned development profile. | Promote after AR-1314 is done; update AR-1307/AR-1308 wording and validators to permit diagnostic unsigned fixtures while retaining signed full qualification gates. |
 | P1 | [AR-1330](../tasks/AR-1330-live-capture-sealed-cassette.md): Live provider capture into a sealed cassette | Unclaimed | Capture and seal a real authenticated provider exchange as a content-addressed cassette. | Invoke the existing StrictReplayService::capture_authenticated_connection boundary from the live run path and seal the sanitized, redacted provider exchange as a content-addressed cassette. |
 | P1 | [AR-1331](../tasks/AR-1331-runtime-replay-launch-authority.md): Runtime-owned strict-replay launch authority | Unclaimed | Deliver the runtime-owned strict-replay launch authority required by the replay CLI contract. | Provide the runtime-owned ReplayLaunchAuthority so asb replay can invoke strict replay of sealed cassettes, and prove the CLI cannot fabricate one. |
 | P1 | [AR-1332](../tasks/AR-1332-record-live-replay-offline.md): Record-live to replay-offline workflow | Unclaimed | Add the record-live then replay-offline end-to-end CLI workflow. | Add the record-live then replay-offline CLI workflow that seals cassettes from an opt-in live run and replays them strictly offline without provider fallback. |

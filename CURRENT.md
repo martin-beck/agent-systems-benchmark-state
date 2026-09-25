@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-1315](tasks/AR-1315-1307-1308-development-profile-metadata.md): Formal runner development-profile metadata repair | Align formal-runner task metadata with the explicit unsigned development profile. | Promote after AR-1314 is done; update AR-1307/AR-1308 wording and validators to permit diagnostic unsigned fixtures while retaining signed full qualification gates. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -127,7 +133,6 @@ Never edit this file directly.
 | P1 | [AR-1027](tasks/AR-1027-asb-tui-verified-release.md): Publish the verified asb-tui release | Create and independently promote the first installable signed asb-tui release channel. | Publish the first verified asb-tui release only after ASB release, complete UI/install qualification and exact cross-repository evidence are done. | - |
 | P1 | [AR-1255](tasks/AR-1255-bundled-mockagents-qemu-runner.md): Bundle MockAgents transport and QEMU runner | Bundle MockAgents transport and QEMU runner. | Provision a digest-pinned bundled transport/QEMU runner and implement real in-container evidence. | - |
 | P1 | [AR-1257](tasks/AR-1257-mockagents-qemu-image.md): Qualify digest-pinned multiarch MockAgents image | Qualify a digest-pinned multiarch MockAgents OCI image for QEMU isolation. | Read the complete plan and verify official digest-pinned multiarch image, signature, license, and QEMU capability before any support claim. | - |
-| P1 | [AR-1315](tasks/AR-1315-1307-1308-development-profile-metadata.md): Formal runner development-profile metadata repair | Align formal-runner task metadata with the explicit unsigned development profile. | Promote after AR-1314 is done; update AR-1307/AR-1308 wording and validators to permit diagnostic unsigned fixtures while retaining signed full qualification gates. | - |
 | P1 | [AR-1330](tasks/AR-1330-live-capture-sealed-cassette.md): Live provider capture into a sealed cassette | Capture and seal a real authenticated provider exchange as a content-addressed cassette. | Invoke the existing StrictReplayService::capture_authenticated_connection boundary from the live run path and seal the sanitized, redacted provider exchange as a content-addressed cassette. | - |
 | P1 | [AR-1331](tasks/AR-1331-runtime-replay-launch-authority.md): Runtime-owned strict-replay launch authority | Deliver the runtime-owned strict-replay launch authority required by the replay CLI contract. | Provide the runtime-owned ReplayLaunchAuthority so asb replay can invoke strict replay of sealed cassettes, and prove the CLI cannot fabricate one. | - |
 | P1 | [AR-1332](tasks/AR-1332-record-live-replay-offline.md): Record-live to replay-offline workflow | Add the record-live then replay-offline end-to-end CLI workflow. | Add the record-live then replay-offline CLI workflow that seals cassettes from an opt-in live run and replays them strictly offline without provider fallback. | - |
