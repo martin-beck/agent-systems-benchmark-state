@@ -8,7 +8,7 @@
     "AR-1446"
   ],
   "id": "AR-1448",
-  "next_action": "Promote and claim this dependency-ready successor. Implement the bounded control/runtime materializer without exposing replay authority to the CLI.",
+  "next_action": "Claim an isolated worktree and implement the missing bounded control/runtime materializer: compose validated replay launch input, benchmark lease, cassette binding, runtime token, and backend internally, then inject only opaque authority into asb-cli. Preserve CLI-only fail-closed behavior and strict offline denial.",
   "observed_branch": "feature/ar-1448-runtime-replay-authority-source",
   "observed_dirty": 0,
   "observed_head": "2872a31f2ee90ac5df1a47203b2a618b1829cfec",
