@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a catalog-driven guided CLI wrapper for deterministic local mock qualification.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Local guided CLI wrapper",
-  "updated_at": "2026-09-25T00:59:41+00:00",
+  "updated_at": "2026-09-25T00:59:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1436-local-guided-cli-wrapper"
 }
 ---
@@ -150,3 +150,6 @@ weakening. Require focused/full/review/PR/seven post-merge gates.
   supplied four mistyped/truncated commit IDs to git verify-commit; the first commit verified before
   those IDs failed. No product or gate issue. Correct commit IDs are now taken directly from git log
   and review is being rerun.
+
+- 2026-09-25T00:59:53+00:00: Recorded command exit 0; command argv SHA-256
+  f42bd652a687adb2c854f0a13fcb38de2fe455173a2b3e909446b2c5b8fa8bab.
