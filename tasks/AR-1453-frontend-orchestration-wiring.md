@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1453-frontend-orchestration-wiring",
-  "checkpoint_commit": "6bf03b57601ccbbdccbee7beda2d9512f1060a1e",
+  "checkpoint_commit": "4db5c4d781a27401ebe895c94400325b7c3647e6",
   "claim_expires": "2026-09-25T23:14:03+00:00",
   "depends_on": [
     "AR-1452"
   ],
   "id": "AR-1453",
-  "next_action": "Repair follow-up required before pushing PR #332: focused control tests pass for strict replay and deadline regressions, but the full control test subset still fails in active_worker_retains_exclusive_state_ownership_until_terminal_commit and unix_frontend_disconnect_does_not_stop_real_run after strict replay became authority-only. Diagnose/update those lifecycle tests or implementation, then rerun full gates; current repair commit remains unpublished.",
+  "next_action": "Lifecycle repair remains incomplete; do not push PR #332. Strict replay/deadline tests pass, but isolated active-worker and unix-disconnect tests still end in non-terminal/NeedsReconciliation state, and production idempotency test times out at 30s. Diagnose why completed strict replay catalog state is not preserved across worker/recovery and why production wait hangs; then rerun focused/full gates.",
   "observed_branch": "feature/ar-1453-frontend-orchestration-wiring",
   "observed_dirty": 0,
   "observed_head": "4db5c4d781a27401ebe895c94400325b7c3647e6",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 80,
+  "task_revision": 81,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T21:40:58+00:00",
+  "updated_at": "2026-09-25T21:41:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
@@ -259,3 +259,11 @@ asb-control protocol after this AR is complete.
 
 - 2026-09-25T21:40:45+00:00: Recorded command exit 0; command argv SHA-256
   4c7008506dd55cc81e6f6942f72895fe63c002f3303fe016409e02d62fdb7b3f.
+
+- 2026-09-25T21:41:17+00:00: Isolated reproductions after authority-only strict replay:
+  active_worker_retains_exclusive_state_ownership_until_terminal_commit fails final expected
+  Completed (observed non-completed state); unix_frontend_disconnect_does_not_stop_real_run fails
+  its nonterminal-state assertion; production_backend_runs_without_frontend_and_recovers_idempotency
+  reaches test timeout (30s). Added signed+DCO commit 4db5c4d attempting to preserve completed
+  strict replay across recovery without fabricating artifacts, but these regressions remain. No push
+  or PR update made.

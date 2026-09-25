@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1453](tasks/AR-1453-frontend-orchestration-wiring.md): Route ASB frontends through central orchestration | Make CLI and control use the central service for every run lifecycle. | Repair follow-up required before pushing PR #332: focused control tests pass for strict replay and deadline regressions, but the full control test subset still fails in active_worker_retains_exclusive_state_ownership_until_terminal_commit and unix_frontend_disconnect_does_not_stop_real_run after strict replay became authority-only. Diagnose/update those lifecycle tests or implementation, then rerun full gates; current repair commit remains unpublished. | ar1453-frontend-orchestration-luna56 |
+| P0 | [AR-1453](tasks/AR-1453-frontend-orchestration-wiring.md): Route ASB frontends through central orchestration | Make CLI and control use the central service for every run lifecycle. | Lifecycle repair remains incomplete; do not push PR #332. Strict replay/deadline tests pass, but isolated active-worker and unix-disconnect tests still end in non-terminal/NeedsReconciliation state, and production idempotency test times out at 30s. Diagnose why completed strict replay catalog state is not preserved across worker/recovery and why production wait hangs; then rerun focused/full gates. | ar1453-frontend-orchestration-luna56 |
 
 ## Open
 
