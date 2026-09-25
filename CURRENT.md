@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1453](tasks/AR-1453-frontend-orchestration-wiring.md): Route ASB frontends through central orchestration | Make CLI and control use the central service for every run lifecycle. | PR #332 is published at exact head ceac822 on base 452f3ca. Await independent review and exact-head required CI; do not merge until review and all required checks are green. Then perform post-merge verification. | ar1453-frontend-orchestration-luna56 |
+| P0 | [AR-1453](tasks/AR-1453-frontend-orchestration-wiring.md): Route ASB frontends through central orchestration | Make CLI and control use the central service for every run lifecycle. | Repair P1 review blockers on PR #332: enforce strict replay through runtime-issued cassette authority with digest consumption and enforce execute_until deadline; add positive/negative tests, then rerun gates and push a new signed+DCO head for fresh review. | ar1453-frontend-orchestration-luna56 |
 
 ## Open
 

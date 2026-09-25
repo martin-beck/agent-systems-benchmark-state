@@ -7,7 +7,7 @@
     "AR-1452"
   ],
   "id": "AR-1453",
-  "next_action": "PR #332 is published at exact head ceac822 on base 452f3ca. Await independent review and exact-head required CI; do not merge until review and all required checks are green. Then perform post-merge verification.",
+  "next_action": "Repair P1 review blockers on PR #332: enforce strict replay through runtime-issued cassette authority with digest consumption and enforce execute_until deadline; add positive/negative tests, then rerun gates and push a new signed+DCO head for fresh review.",
   "observed_branch": "feature/ar-1453-frontend-orchestration-wiring",
   "observed_dirty": 0,
   "observed_head": "ceac822ad15da1747fc8b7ad824a68928de663a0",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T21:14:03+00:00",
+  "updated_at": "2026-09-25T21:20:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
@@ -158,3 +158,9 @@ asb-control protocol after this AR is complete.
   3ea06150297690e3ebf34ff22524675b021adcd9c417bb6e275ae371d8b601a9.
 
 - 2026-09-25T21:14:03+00:00: Heartbeat by ar1453-frontend-orchestration-luna56.
+
+- 2026-09-25T21:20:49+00:00: Independent review identified two P1 blockers:
+  PlanAuthoritySource::execute currently calls generic run_point without consuming/matching the
+  cassette digest, so StrictReplay is not actually replay-authority/network-denied; execute_until
+  ignores its deadline and can exceed RunLimits.timeout_ms. Repair work started on existing PR
+  branch; no merge.
