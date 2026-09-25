@@ -1,6 +1,6 @@
 ---
 {
-  "branch": "feature/ar-1448-runtime-replay-authority-source",
+  "branch": "main",
   "checkpoint_commit": "",
   "claim_expires": "2026-09-25T17:52:13+00:00",
   "depends_on": [
@@ -21,7 +21,7 @@
   "task_revision": 3,
   "title": "Runtime replay authority source",
   "updated_at": "2026-09-25T15:52:13+00:00",
-  "worktree_key": "agent-systems-benchmark-ar-1448-runtime-replay-authority-source"
+  "worktree_key": "agent-systems-benchmark"
 }
 ---
 
