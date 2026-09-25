@@ -12,7 +12,7 @@
   "id": "AR-1452",
   "next_action": "PR #330 exact head 7d256fe adds asb-orchestrator with closed requests, local/replay authority, live fail-closed source, idempotency, fenced handles, lifecycle, cancellation, and 5 tests. Await independent review and all exact-head checks.",
   "observed_branch": "feature/ar-1452-runtime-orchestration-service",
-  "observed_dirty": 2,
+  "observed_dirty": 3,
   "observed_head": "7d256fef7e8beb39a8c36df2f94d1d309d46cd75",
   "owner": "coordinator-orchestrator-impl",
   "plan": "../plans/AR-1452.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T18:27:55+00:00",
+  "updated_at": "2026-09-25T18:28:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---
