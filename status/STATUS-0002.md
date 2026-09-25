@@ -108,11 +108,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1441](../tasks/AR-1441-first-class-install-bootstrap.md): First-class install and bootstrap | Unclaimed | Provide a verified one-command install and first-run bootstrap for ASB CLI/runtime bundles. | Promote and claim against the completed ASB install/lifecycle primitives AR-0821 and AR-0822; implement and qualify the ASB CLI/runtime-bundle clean-install/bootstrap path. Preserve AR-0823 as the separate cross-repository/UI audit. |
+| P0 | [AR-1441](../tasks/AR-1441-first-class-install-bootstrap.md): First-class install and bootstrap | coordinator-ar1441 | Provide a verified one-command install and first-run bootstrap for ASB CLI/runtime bundles. | Promote and claim against the completed ASB install/lifecycle primitives AR-0821 and AR-0822; implement and qualify the ASB CLI/runtime-bundle clean-install/bootstrap path. Preserve AR-0823 as the separate cross-repository/UI audit. |
 
 ### Blocked (68)
 

@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1441](tasks/AR-1441-first-class-install-bootstrap.md): First-class install and bootstrap | Provide a verified one-command install and first-run bootstrap for ASB CLI/runtime bundles. | Promote and claim against the completed ASB install/lifecycle primitives AR-0821 and AR-0822; implement and qualify the ASB CLI/runtime-bundle clean-install/bootstrap path. Preserve AR-0823 as the separate cross-repository/UI audit. | - |
+| P0 | [AR-1441](tasks/AR-1441-first-class-install-bootstrap.md): First-class install and bootstrap | Provide a verified one-command install and first-run bootstrap for ASB CLI/runtime bundles. | Promote and claim against the completed ASB install/lifecycle primitives AR-0821 and AR-0822; implement and qualify the ASB CLI/runtime-bundle clean-install/bootstrap path. Preserve AR-0823 as the separate cross-repository/UI audit. | coordinator-ar1441 |
 
 ## Blocked
 
