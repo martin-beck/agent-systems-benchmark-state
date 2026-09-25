@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the complete credential-free ASB local campaign and replay journey.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "ASB local campaign qualification",
-  "updated_at": "2026-09-25T15:27:16+00:00",
+  "updated_at": "2026-09-25T15:27:34+00:00",
   "worktree_key": "agent-systems-benchmark"
 }
 ---
@@ -36,3 +36,6 @@ close the optional live capture chain AR-1330 through AR-1333.
   and ASB CLI setup AR-1442 are released. Optional live capture and broad wrapper remain separate.
 
 - 2026-09-25T15:27:16+00:00: Claimed by coordinator-ar1447.
+
+- 2026-09-25T15:27:34+00:00: Recorded command exit 0; command argv SHA-256
+  b90815e56704d6579354b40d8bbf8af9f68ad57bc438b40ba42c594845b7247d.
