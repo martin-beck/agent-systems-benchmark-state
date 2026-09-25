@@ -4,6 +4,7 @@
   "checkpoint_commit": "",
   "claim_expires": "2026-09-25T17:45:20+00:00",
   "depends_on": [
+    "AR-1331",
     "AR-1442",
     "AR-1443",
     "AR-1446"

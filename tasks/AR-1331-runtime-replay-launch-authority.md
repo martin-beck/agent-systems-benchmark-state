@@ -4,10 +4,11 @@
   "checkpoint_commit": "",
   "claim_expires": "",
   "depends_on": [
-    "AR-1330"
+    "AR-1443",
+    "AR-1446"
   ],
   "id": "AR-1331",
-  "next_action": "Provide the runtime-owned ReplayLaunchAuthority so asb replay can invoke strict replay of sealed cassettes, and prove the CLI cannot fabricate one.",
+  "next_action": "Promote and claim the ASB-local runtime replay authority repair. Provide runtime-owned ReplayLaunchAuthority for strict offline cassette replay, prove the CLI cannot fabricate one, and keep optional live capture AR-1330 separate.",
   "owner": "",
   "plan": "../plans/AR-1331.md",
   "priority": "P1",
