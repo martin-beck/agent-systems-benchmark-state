@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1452-runtime-orchestration-service",
-  "checkpoint_commit": "daf958aa46a7c77b7d58c36c53b2010da8749a72",
+  "checkpoint_commit": "b4c6be832922e5b17599e4da1dc376101b59a15e",
   "claim_expires": "2026-09-25T21:12:29+00:00",
   "depends_on": [
     "AR-1357",
@@ -10,7 +10,7 @@
     "AR-1451"
   ],
   "id": "AR-1452",
-  "next_action": "PR #330 is updated at exact head daf958a with durable journal, schema serde, bounded deterministic execution, and attempt-fenced cancellation. Await independent re-review and exact-head CI; do not merge until review is clean.",
+  "next_action": "PR #330 exact head b4c6be8 now adds restart rehydration, durable idempotency, recovery-state mapping, attempt-fenced complete, evidence limit failure cleanup, artifact count/size enforcement, and idempotency-before-capacity. Await independent re-review and exact-head CI.",
   "observed_branch": "feature/ar-1452-runtime-orchestration-service",
   "observed_dirty": 0,
   "observed_head": "b4c6be832922e5b17599e4da1dc376101b59a15e",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T18:35:56+00:00",
+  "updated_at": "2026-09-25T18:36:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---
@@ -141,3 +141,9 @@ until the service can prove the complete authority chain.
 
 - 2026-09-25T18:35:56+00:00: Recorded command exit 0; command argv SHA-256
   10ffdfa0d30719f50bf21fbc01c140375702acb07cf7c4b5d8dc85839df9e3bd.
+
+- 2026-09-25T18:36:26+00:00: Re-review findings addressed: AtomicStore lists durable run IDs;
+  Orchestrator::open rehydrates manifests/journals and idempotency; interrupted states map to
+  NeedsReconciliation; deterministic outcome carries artifact count/size; evidence failures durably
+  fail and clear capability; complete requires AttemptHandle; capacity lookup follows idempotency.
+  Offline tests and clippy passed.

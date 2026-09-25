@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1450](tasks/AR-1450-runtime-owned-local-replay-acquisition.md): Runtime-owned local replay acquisition factory | Keep local replay authority acquisition inside the runtime boundary. | Implement runtime-owned bootstrap/provisioner using existing LiveProviderProvisioner pattern; own relay/lease roots, tool pins, sandbox construction, attestation and teardown internally. | ar1450-replay-luna56 |
-| P0 | [AR-1452](tasks/AR-1452-runtime-orchestration-service.md): Implement the runtime-owned ASB orchestration service | Implement one service-owned authority for admission, attempts, resources, and teardown. | PR #330 is updated at exact head daf958a with durable journal, schema serde, bounded deterministic execution, and attempt-fenced cancellation. Await independent re-review and exact-head CI; do not merge until review is clean. | coordinator-orchestrator-impl |
+| P0 | [AR-1452](tasks/AR-1452-runtime-orchestration-service.md): Implement the runtime-owned ASB orchestration service | Implement one service-owned authority for admission, attempts, resources, and teardown. | PR #330 exact head b4c6be8 now adds restart rehydration, durable idempotency, recovery-state mapping, attempt-fenced complete, evidence limit failure cleanup, artifact count/size enforcement, and idempotency-before-capacity. Await independent re-review and exact-head CI. | coordinator-orchestrator-impl |
 
 ## Open
 
