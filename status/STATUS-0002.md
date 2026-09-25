@@ -98,11 +98,11 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1423](../tasks/AR-1423-literature-docs-registry-reconciliation.md): Exhaustive literature docs-to-registry reconciliation | ar1423_literature_reconciliation_luna56 | Reconcile all literature benchmark mentions with strict registry identities and framework boundaries. | Promote after AR-1419 and AR-1403 are released; reconcile every docs-listed benchmark against one registry identity and an explicit framework boundary. |
+| P1 | [AR-1423](../tasks/AR-1423-literature-docs-registry-reconciliation.md): Exhaustive literature docs-to-registry reconciliation | Unclaimed | Reconcile all literature benchmark mentions with strict registry identities and framework boundaries. | Promote after AR-1419 and AR-1403 are released; reconcile every docs-listed benchmark against one registry identity and an explicit framework boundary. |
 
 ### Blocked (66)
 

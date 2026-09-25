@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-25T12:19:41+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1415",
     "AR-1419",
@@ -13,15 +13,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "ar1423_literature_reconciliation_luna56",
+  "owner": "",
   "plan": "../plans/AR-1423-literature-docs-registry-reconciliation.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Reconcile all literature benchmark mentions with strict registry identities and framework boundaries.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Exhaustive literature docs-to-registry reconciliation",
-  "updated_at": "2026-09-25T10:19:41+00:00",
+  "updated_at": "2026-09-25T10:20:38+00:00",
   "worktree_key": ""
 }
 ---
@@ -34,3 +34,5 @@ workloads.
   literature reconciliation
 
 - 2026-09-25T10:19:41+00:00: Claimed by ar1423_literature_reconciliation_luna56.
+
+- 2026-09-25T10:20:38+00:00: Releasing state-only claim to re-claim from declared product worktree
