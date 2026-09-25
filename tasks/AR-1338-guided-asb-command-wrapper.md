@@ -10,7 +10,7 @@
     "AR-1446"
   ],
   "id": "AR-1338",
-  "next_action": "PR #327 updated at exact head 4d42f59 after campaign-path hardening, full CLI tests, workflow provenance, formatting, and clippy. Hosted exact-head checks restarted; independent review confirms setup and record/replay path checks fixed, but plain CLI easy replay still cannot complete without runtime-injected authority. Keep open until checks/review are green and the replay-authority boundary is resolved or an explicitly accepted successor AR is recorded.",
+  "next_action": "PR #327 latest signed head 4d42f59 has full local gates and hosted checks green after campaign path hardening. Do not merge yet: independent review confirms the remaining P1 is ordinary CLI replay authority acquisition. Successor AR-1449 is now open to provide the runtime-owned local replay authority; after AR-1449 merges, rebase/integrate this wrapper, rerun exact-head CI, then complete AR-1338.",
   "observed_branch": "feature/ar-1338-guided-asb-command-wrapper",
   "observed_dirty": 0,
   "observed_head": "4d42f598127d014d2ed33f7f33fef82d3f3b8036",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Guided ASB command wrapper",
-  "updated_at": "2026-09-25T16:54:21+00:00",
+  "updated_at": "2026-09-25T16:54:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1338-guided-asb-command-wrapper"
 }
 ---
@@ -242,3 +242,6 @@ reachability.
 
 - 2026-09-25T16:54:21+00:00: Recorded command exit 0; command argv SHA-256
   eaf2472e4b0ec29bac3303a6d46474c99be3c0ab077feca87b1c3650d4745e53.
+
+- 2026-09-25T16:54:49+00:00: Created successor AR-1449 for the unresolved runtime-owned replay
+  authority boundary; no synthetic authority or gate weakening.

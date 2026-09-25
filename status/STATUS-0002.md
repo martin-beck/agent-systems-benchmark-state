@@ -115,7 +115,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md): Guided ASB command wrapper | coordinator-ar1338 | Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows. | PR #327 updated at exact head 4d42f59 after campaign-path hardening, full CLI tests, workflow provenance, formatting, and clippy. Hosted exact-head checks restarted; independent review confirms setup and record/replay path checks fixed, but plain CLI easy replay still cannot complete without runtime-injected authority. Keep open until checks/review are green and the replay-authority boundary is resolved or an explicitly accepted successor AR is recorded. |
+| P1 | [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md): Guided ASB command wrapper | coordinator-ar1338 | Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows. | PR #327 latest signed head 4d42f59 has full local gates and hosted checks green after campaign path hardening. Do not merge yet: independent review confirms the remaining P1 is ordinary CLI replay authority acquisition. Successor AR-1449 is now open to provide the runtime-owned local replay authority; after AR-1449 merges, rebase/integrate this wrapper, rerun exact-head CI, then complete AR-1338. |
 
 ### Open (1)
 
