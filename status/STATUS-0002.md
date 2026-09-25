@@ -120,7 +120,7 @@
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1450](../tasks/AR-1450-runtime-owned-local-replay-acquisition.md): Runtime-owned local replay acquisition factory | ar1450-replay-luna56 | Keep local replay authority acquisition inside the runtime boundary. | Independently review PR #328 at dc2e077, then wait for exact-head checks; rework any review or gate failures before merge. |
-| P0 | [AR-1452](../tasks/AR-1452-runtime-orchestration-service.md): Implement the runtime-owned ASB orchestration service | coordinator-orchestrator-impl | Implement one service-owned authority for admission, attempts, resources, and teardown. | PR #330 exact head abf10ac adds source-level cancel hook, server-issued attempt-ID binding for local mock authority, and elapsed timeout failure/teardown checks. Await exact-head CI and independent review; runtime adapters must still honor bounded cancellation for hard timeout enforcement. |
+| P0 | [AR-1452](../tasks/AR-1452-runtime-orchestration-service.md): Implement the runtime-owned ASB orchestration service | coordinator-orchestrator-impl | Implement one service-owned authority for admission, attempts, resources, and teardown. | PR #330 exact head d1c5b50 blocks cancel on NeedsReconciliation and requires source-level reconcile/cancel hooks before marking interrupted attempts Failed. Await exact-head CI and review; hard timeout still depends on cooperative runtime cancellation semantics. |
 
 ### Open (1)
 
