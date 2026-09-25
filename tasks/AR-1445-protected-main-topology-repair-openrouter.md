@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the single-parent protected-main merge produced for the OpenRouter model refresh.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Protected-main topology repair for OpenRouter refresh",
-  "updated_at": "2026-09-25T13:59:47+00:00",
+  "updated_at": "2026-09-25T14:00:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1445-protected-main-topology-repair-openrouter"
 }
 ---
@@ -41,3 +41,6 @@ measurement evidence.
   84b587ec; begin reviewed topology repair without weakening gates.
 
 - 2026-09-25T13:59:47+00:00: Claimed by ar1445-topology-repair-luna56.
+
+- 2026-09-25T14:00:09+00:00: Recorded command exit 0; command argv SHA-256
+  e9528bf8d96b5e6e0d3ac7b08a1584c099ecd0a19e62a4d150fdbf1defcf78ae.
