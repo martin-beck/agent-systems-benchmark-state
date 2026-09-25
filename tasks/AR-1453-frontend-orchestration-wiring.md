@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T21:05:02+00:00",
+  "updated_at": "2026-09-25T21:06:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
@@ -141,3 +141,6 @@ asb-control protocol after this AR is complete.
   452f3ca29390ab37cf3aff8c813b92b54b163b20; branch head ceac822ad15da1747fc8b7ad824a68928de663a0;
   clean and intentionally unpublished. Prior PR #328 post-merge topology/base mismatch is addressed
   by this exact-base rebase. No independent review or hosted CI is claimed yet.
+
+- 2026-09-25T21:06:51+00:00: Recorded command exit 0; command argv SHA-256
+  2de0599724ad2ddf9fedf7c82d84ebb43b6c13b8e88bdf2336b7f2bebfe85079.
