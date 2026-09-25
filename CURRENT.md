@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P2 | [AR-1407](tasks/AR-1407-sha2-compatibility.md): sha2 compatibility repair | Qualify or repair the closed sha2 0.11 dependency update without weakening crypto or MSRV contracts. | Promote after AR-1405; reproduce the sha2 0.11 compile/MSRV failure and either repair it with digest-parity evidence or preserve the supersession. | - |
+| P2 | [AR-1407](tasks/AR-1407-sha2-compatibility.md): sha2 compatibility repair | Qualify or repair the closed sha2 0.11 dependency update without weakening crypto or MSRV contracts. | Promote after AR-1405; reproduce the sha2 0.11 compile/MSRV failure and either repair it with digest-parity evidence or preserve the supersession. | ar1407_sha2_compat_luna56 |
 
 ## Blocked
 
