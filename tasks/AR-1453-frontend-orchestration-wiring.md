@@ -10,16 +10,16 @@
   "next_action": "Push signed commit 082b0624abe2944bb46a00330bccf84a655f7ae7 through handoffctl for fresh PR checks and review; do not merge until exact-head CI and review pass.",
   "observed_branch": "feature/ar-1453-frontend-orchestration-wiring",
   "observed_dirty": 0,
-  "observed_head": "082b0624abe2944bb46a00330bccf84a655f7ae7",
+  "observed_head": "c17254a9db622d8e9801084071afa009fc7cedf1",
   "owner": "ar1453-frontend-orchestration-luna56",
   "plan": "../plans/AR-1453.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 90,
+  "task_revision": 91,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T21:54:48+00:00",
+  "updated_at": "2026-09-25T21:55:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
