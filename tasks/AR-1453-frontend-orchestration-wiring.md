@@ -10,16 +10,16 @@
   "next_action": "Repair Hosted Policy cancellation test race: synchronize explicit in-flight state before cancel; preserve durable Cancelled lifecycle and bounded state, then rerun all gates and review.",
   "observed_branch": "feature/ar-1453-frontend-orchestration-wiring",
   "observed_dirty": 0,
-  "observed_head": "d83c451950850db357d08959f3a97ce28fd386e3",
+  "observed_head": "37d9517317ed68ea299229d0bf7b1dc8d447f60b",
   "owner": "ar1453-frontend-orchestration-luna56",
   "plan": "../plans/AR-1453.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 116,
+  "task_revision": 117,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T22:22:25+00:00",
+  "updated_at": "2026-09-25T22:22:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
