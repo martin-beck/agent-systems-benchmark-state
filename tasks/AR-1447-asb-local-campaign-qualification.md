@@ -1,6 +1,6 @@
 ---
 {
-  "branch": "qualification/ar-1447-asb-local-campaign",
+  "branch": "main",
   "checkpoint_commit": "",
   "claim_expires": "2026-09-25T17:27:16+00:00",
   "depends_on": [
@@ -22,7 +22,7 @@
   "task_revision": 3,
   "title": "ASB local campaign qualification",
   "updated_at": "2026-09-25T15:27:16+00:00",
-  "worktree_key": "agent-systems-benchmark-ar-1447-asb-local-campaign"
+  "worktree_key": "agent-systems-benchmark"
 }
 ---
 
