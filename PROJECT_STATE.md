@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #327 | `feature/ar-1338-guided-asb-command-wrapper@4d42f598127d` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): extend guided ASB workflow |
+| #327 | `feature/ar-1338-guided-asb-command-wrapper@4d42f598127d` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): extend guided ASB workflow |
 
 ## Recent workflows
 
@@ -21,7 +21,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36163415912 | `4d42f598127d` | pull_request | Hosted portability and native qualification | completed:success |
 | 36163415910 | `4d42f598127d` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36163415900 | `4d42f598127d` | pull_request | Repository quality | in_progress:- |
-| 36163415880 | `4d42f598127d` | pull_request | Formal assurance | in_progress:- |
+| 36163415880 | `4d42f598127d` | pull_request | Formal assurance | completed:success |
 | 36163415853 | `4d42f598127d` | pull_request | Huawei MIT source headers | completed:success |
 | 36163415838 | `4d42f598127d` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 36161928603 | `76524a7e0819` | pull_request | Fault assurance | completed:success |

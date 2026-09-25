@@ -11,16 +11,16 @@
   "next_action": "Implement and verify a runtime-owned local replay authority acquisition path for the ordinary ASB CLI, then integrate it into AR-1338 without synthetic authority or native-host gating.",
   "observed_branch": "feature/ar-1449-runtime-owned-local-replay-cli",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "f03d9e484d6ca73eacdbd5476980bf33ca737540",
   "owner": "",
   "plan": "../plans/AR-1449.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "blocked",
   "summary": "Provide fail-closed runtime-owned local replay authority for the guided CLI wrapper.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Runtime-owned local replay CLI authority",
-  "updated_at": "2026-09-25T16:56:36+00:00",
+  "updated_at": "2026-09-25T16:57:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1449-runtime-owned-local-replay-cli"
 }
 ---
