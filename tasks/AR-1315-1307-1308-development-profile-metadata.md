@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Align formal-runner task metadata with the explicit unsigned development profile.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Formal runner development-profile metadata repair",
-  "updated_at": "2026-09-25T11:30:41+00:00",
+  "updated_at": "2026-09-25T11:31:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1315-formal-development-profile-metadata"
 }
 ---
@@ -65,3 +65,6 @@ claims.
   Absolute-path rerun passed; corrected focused AR-1308 suite passes 22/22. State-only diff now adds
   explicit signed versus unsigned-development validator profiles, diagnostic labelling, and
   AR-1307/AR-1308 wording.
+
+- 2026-09-25T11:31:17+00:00: Recorded command exit 0; command argv SHA-256
+  520beaed37a4e80434fecfd1da022e1a781d92a49dadd36bb8b0338454b765ab.
