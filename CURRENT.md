@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1450](tasks/AR-1450-runtime-owned-local-replay-acquisition.md): Runtime-owned local replay acquisition factory | Keep local replay authority acquisition inside the runtime boundary. | Exact-head local gates pass (runtime 130 tests, sandbox boundary 15 tests, clippy, workspace libraries, doctests). Await all PR #328 checks and independent review at exact head 185062d before protected merge. | ar1450-replay-luna56 |
-| P0 | [AR-1452](tasks/AR-1452-runtime-orchestration-service.md): Implement the runtime-owned ASB orchestration service | Implement one service-owned authority for admission, attempts, resources, and teardown. | PR #330 exact head 3c8f7e4 includes the policy-license correction after hosted cargo-deny rejected Unicode-3.0; await exact-head CI and independent review. | coordinator-orchestrator-impl |
+| P0 | [AR-1452](tasks/AR-1452-runtime-orchestration-service.md): Implement the runtime-owned ASB orchestration service | Implement one service-owned authority for admission, attempts, resources, and teardown. | Repair AR-1452 coverage on PR #330: hosted workspace coverage failed at 87.85% because asb-orchestrator is 52.13%; add meaningful lifecycle/recovery/barrier/cancellation/evidence tests without weakening floors, then rerun exact-head gates. | coordinator-orchestrator-impl |
 
 ## Open
 

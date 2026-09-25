@@ -10,7 +10,7 @@
     "AR-1451"
   ],
   "id": "AR-1452",
-  "next_action": "PR #330 exact head 3c8f7e4 includes the policy-license correction after hosted cargo-deny rejected Unicode-3.0; await exact-head CI and independent review.",
+  "next_action": "Repair AR-1452 coverage on PR #330: hosted workspace coverage failed at 87.85% because asb-orchestrator is 52.13%; add meaningful lifecycle/recovery/barrier/cancellation/evidence tests without weakening floors, then rerun exact-head gates.",
   "observed_branch": "feature/ar-1452-runtime-orchestration-service",
   "observed_dirty": 0,
   "observed_head": "3c8f7e41edf5c797ffb655588a14e9a059eab9aa",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 190,
+  "task_revision": 191,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T20:01:40+00:00",
+  "updated_at": "2026-09-25T20:07:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---
@@ -498,3 +498,7 @@ until the service can prove the complete authority chain.
 - 2026-09-25T20:01:40+00:00: Focused orchestrator tests/clippy passed. Hosted policy gate failed
   only because deny.toml lacked the locked Unicode-3.0 dependency license; corrected and pushed
   signed+DCO. No merge until all exact-head checks are green.
+
+- 2026-09-25T20:07:54+00:00: All other current PR #330 checks are green or pending; policy failure
+  is a real coverage shortfall introduced by the new crate, not infrastructure. Independent review
+  remains clean for lifecycle correctness.
