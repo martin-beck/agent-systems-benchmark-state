@@ -110,11 +110,16 @@
 
 ## Complete AR inventory
 
-### Open (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1448](../tasks/AR-1448-runtime-replay-authority-source.md): Runtime replay authority source | Unclaimed | Materialize runtime-owned strict replay authority for normal CLI replay. | Claim an isolated worktree and implement the missing bounded control/runtime materializer: compose validated replay launch input, benchmark lease, cassette binding, runtime token, and backend internally, then inject only opaque authority into asb-cli. Preserve CLI-only fail-closed behavior and strict offline denial. |
+| P0 | [AR-1448](../tasks/AR-1448-runtime-replay-authority-source.md): Runtime replay authority source | coordinator-ar1448 | Materialize runtime-owned strict replay authority for normal CLI replay. | Claim an isolated worktree and implement the missing bounded control/runtime materializer: compose validated replay launch input, benchmark lease, cassette binding, runtime token, and backend internally, then inject only opaque authority into asb-cli. Preserve CLI-only fail-closed behavior and strict offline denial. |
+
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P1 | [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md): Guided ASB command wrapper | Unclaimed | Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows. | Open after AR-1448 supplies the runtime-owned strict replay authority. Then extend the existing bounded easy path to catalog-driven setup/selection, plan/run/sweep, report/compare, record/replay, generated private files, documentation, and offline hostile tests; optional live-provider capture remains separate. |
 
 ### Blocked (69)

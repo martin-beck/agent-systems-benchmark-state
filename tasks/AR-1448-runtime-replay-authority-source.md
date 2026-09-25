@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1448-runtime-replay-authority-source",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-25T17:55:21+00:00",
   "depends_on": [
     "AR-1443",
     "AR-1446"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1448-runtime-replay-authority-source",
   "observed_dirty": 0,
   "observed_head": "2872a31f2ee90ac5df1a47203b2a618b1829cfec",
-  "owner": "",
+  "owner": "coordinator-ar1448",
   "plan": "../plans/AR-1448-runtime-replay-authority-source.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Materialize runtime-owned strict replay authority for normal CLI replay.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Runtime replay authority source",
-  "updated_at": "2026-09-25T15:54:09+00:00",
+  "updated_at": "2026-09-25T15:55:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1448-runtime-replay-authority-source"
 }
 ---
@@ -40,3 +40,5 @@ CLI and do not make external provider access a prerequisite.
   ReplayLaunchFactory/ReplayOperation primitives and sandbox attestation are present, but no
   production control/runtime constructor composes them for normal CLI replay. No product mutation
   made; task remains open for implementation of the bounded runtime-owned materializer.
+
+- 2026-09-25T15:55:21+00:00: Claimed by coordinator-ar1448.
