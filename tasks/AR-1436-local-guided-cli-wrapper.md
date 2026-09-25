@@ -8,7 +8,7 @@
     "AR-1328"
   ],
   "id": "AR-1436",
-  "next_action": "Monitor seven exact-main workflows for merge 18a0df9b4312e49196c1c8202b48a183ed83b073; verify all terminal success and exact remote tree/signature before release.",
+  "next_action": "Preserve failed Repository quality run 36080877969; rerun that exact post-merge workflow and require success, while monitoring remaining workflows.",
   "observed_branch": "feature/ar-1436-local-guided-cli-wrapper",
   "observed_dirty": 0,
   "observed_head": "ae48046d980237d078dd2a5aa155400d20330059",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a catalog-driven guided CLI wrapper for deterministic local mock qualification.",
-  "task_revision": 73,
+  "task_revision": 74,
   "title": "Local guided CLI wrapper",
-  "updated_at": "2026-09-25T01:15:58+00:00",
+  "updated_at": "2026-09-25T01:16:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1436-local-guided-cli-wrapper"
 }
 ---
@@ -253,3 +253,10 @@ weakening. Require focused/full/review/PR/seven post-merge gates.
 
 - 2026-09-25T01:15:58+00:00: Recorded command exit 0; command argv SHA-256
   e19ed47ca9e9e7f93af0f8d497f4af735f1e5f7b892bbe452e615fe531c70fc5.
+
+- 2026-09-25T01:16:27+00:00: Repository quality workflow 36080877969 failed in unrelated
+  pre-existing asb-metrics timing test
+  kernel::tests::bounded_tool_boundary_covers_success_denial_timeout_and_cleanup: expected
+  ProbeResult value Some(12500000), got TimedOut. Coverage command exited 101; wrapper tests were
+  not implicated. Preserve exact evidence and rerun the exact workflow; do not waive or attribute to
+  this change.
