@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1436-local-guided-cli-wrapper",
-  "checkpoint_commit": "2dbbfd89adce0fbf7358e557495654a05552f30b",
+  "checkpoint_commit": "3e80aa3d6ae99ee9fc3418ed2a7cfbfe9550eb91",
   "claim_expires": "2026-09-25T02:43:20+00:00",
   "depends_on": [
     "AR-1435",
     "AR-1328"
   ],
   "id": "AR-1436",
-  "next_action": "Run full applicable offline gates, independent review, then publish exact-head PR and await all checks.",
+  "next_action": "Rerun full workspace tests and all applicable offline gates at 3e80aa3; then independent review and exact-head PR.",
   "observed_branch": "feature/ar-1436-local-guided-cli-wrapper",
   "observed_dirty": 0,
   "observed_head": "2dbbfd89adce0fbf7358e557495654a05552f30b",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a catalog-driven guided CLI wrapper for deterministic local mock qualification.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Local guided CLI wrapper",
-  "updated_at": "2026-09-25T00:50:04+00:00",
+  "updated_at": "2026-09-25T00:50:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1436-local-guided-cli-wrapper"
 }
 ---
@@ -76,3 +76,9 @@ weakening. Require focused/full/review/PR/seven post-merge gates.
 
 - 2026-09-25T00:49:53+00:00: Recorded command exit 101; command argv SHA-256
   88f7af68d2ecc3638bfd9fff251cc79e4f54fee616e0c550b931fe77cecde9a1.
+
+- 2026-09-25T00:50:19+00:00: Full workspace test at 2dbbfd8 failed only
+  capability_contract::command_ignores_hostile_environment_and_help_completion_are_explicit because
+  adding easy between setup and capabilities changed the stable completion token sequence. Corrected
+  in signed+DCO 3e80aa3 by appending easy after the existing sequence; no behavior or security
+  boundary weakened.
