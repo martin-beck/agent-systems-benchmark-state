@@ -7,7 +7,7 @@
     "AR-1448"
   ],
   "id": "AR-1450",
-  "next_action": "Run full runtime and workspace gates on exact head 185062d; refresh PR #328 exact-head CI, then obtain independent review before merge.",
+  "next_action": "Exact-head local gates pass (runtime 130 tests, sandbox boundary 15 tests, clippy, workspace libraries, doctests). Await all PR #328 checks and independent review at exact head 185062d before protected merge.",
   "observed_branch": "feature/ar-1450-runtime-owned-local-replay-acquisition",
   "observed_dirty": 0,
   "observed_head": "185062d7345880d8d345172914cffc58585621a1",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep local replay authority acquisition inside the runtime boundary.",
-  "task_revision": 88,
+  "task_revision": 89,
   "title": "Runtime-owned local replay acquisition factory",
-  "updated_at": "2026-09-25T20:06:01+00:00",
+  "updated_at": "2026-09-25T20:06:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1450-runtime-owned-local-replay-acquisition"
 }
 ---
@@ -245,3 +245,6 @@ Requirements:
 
 - 2026-09-25T20:06:01+00:00: Recorded command exit 0; command argv SHA-256
   87d381ebe306635a49f21685c52743a570d44d70bb7777b6b5c299876032fa9b.
+
+- 2026-09-25T20:06:15+00:00: AR-1450 authority-boundary repair is fully locally qualified; no merge
+  or release attempted while hosted checks remain pending.
