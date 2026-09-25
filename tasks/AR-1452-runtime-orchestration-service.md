@@ -12,17 +12,17 @@
   "id": "AR-1452",
   "next_action": "PR #330 exact head abf10ac adds source-level cancel hook, server-issued attempt-ID binding for local mock authority, and elapsed timeout failure/teardown checks. Await exact-head CI and independent review; runtime adapters must still honor bounded cancellation for hard timeout enforcement.",
   "observed_branch": "feature/ar-1452-runtime-orchestration-service",
-  "observed_dirty": 1,
-  "observed_head": "abf10aca3af06361617c8458e42f576d59d293fe",
+  "observed_dirty": 0,
+  "observed_head": "d1c5b506ca09e0f47a0602e4a260a61fd760ecfa",
   "owner": "coordinator-orchestrator-impl",
   "plan": "../plans/AR-1452.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 138,
+  "task_revision": 139,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T19:37:19+00:00",
+  "updated_at": "2026-09-25T19:37:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---
