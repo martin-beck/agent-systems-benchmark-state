@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1338-guided-asb-command-wrapper",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-25T17:32:04+00:00",
   "depends_on": [
     "AR-1331",
     "AR-1442",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1338-guided-asb-command-wrapper",
   "observed_dirty": 0,
   "observed_head": "4d42f598127d014d2ed33f7f33fef82d3f3b8036",
-  "owner": "",
+  "owner": "coordinator-ar1338",
   "plan": "../plans/AR-1338.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows.",
-  "task_revision": 86,
+  "task_revision": 87,
   "title": "Guided ASB command wrapper",
-  "updated_at": "2026-09-25T16:58:43+00:00",
+  "updated_at": "2026-09-25T17:02:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1338-guided-asb-command-wrapper"
 }
 ---
@@ -265,3 +265,5 @@ reachability.
 
 - 2026-09-25T16:58:43+00:00: Successor AR-1450 created for runtime-owned local replay acquisition;
   AR-1338 remains open with PR #327 pending successor integration.
+
+- 2026-09-25T17:02:04+00:00: Claimed by coordinator-ar1338.
