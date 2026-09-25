@@ -3,7 +3,12 @@
   "branch": "qualification/ar-1446-first-customer-production",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1433", "AR-1441", "AR-1442", "AR-1443"],
+  "depends_on": [
+    "AR-1433",
+    "AR-1441",
+    "AR-1442",
+    "AR-1443"
+  ],
   "id": "AR-1446",
   "next_action": "Promote and claim this ASB-only disposable first-customer qualification gate. Verify clean install/bootstrap, setup/reconfiguration, local benchmark matrix, strict offline replay, recovery, cleanup, rollback, and bounded readiness evidence. AR-0903's broad release package and AR-1336's optional live-provider documentation remain separate; AR-1444/asb-tui and AR-1329 external-provider integration must not block this gate.",
   "observed_branch": "",
@@ -13,11 +18,11 @@
   "plan": "../plans/AR-1446.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Qualify ASB in a disposable first-customer production-like environment.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "First-customer production qualification",
-  "updated_at": "2026-09-25T15:20:00+00:00",
+  "updated_at": "2026-09-25T15:38:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1446-first-customer-production"
 }
 ---
@@ -34,3 +39,7 @@ This is the customer-facing integration gate. The deterministic local mock path 
 - 2026-09-25T17:20:00+00:00: Scope clarified as ASB-only. Removed the separate
   cross-repository AR-1444/asb-tui qualification from this gate's dependencies;
   that UI gate remains independently tracked and is not modified here.
+
+- 2026-09-25T15:38:27+00:00: ASB-only dependencies AR-1433, AR-1441, AR-1442, and AR-1443 are done.
+  Removed broad AR-0903 and optional live-doc AR-1336 blockers; promote disposable first-customer
+  qualification.
