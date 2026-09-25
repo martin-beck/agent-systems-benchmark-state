@@ -12,17 +12,17 @@
   "id": "AR-1452",
   "next_action": "PR #330 exact head 2cd5b3d passes a cooperative deadline into AuthoritySource::execute_until; timeout failures invoke per-attempt cancel and fail closed. Await exact-head CI and review; adapters must implement bounded interruption at the runtime boundary.",
   "observed_branch": "feature/ar-1452-runtime-orchestration-service",
-  "observed_dirty": 1,
-  "observed_head": "2cd5b3d97341d39f82d5d1b5039ac224ad8149a2",
+  "observed_dirty": 0,
+  "observed_head": "693eb7c0d846151180a22d3d0cc273c23f6ac862",
   "owner": "coordinator-orchestrator-impl",
   "plan": "../plans/AR-1452.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 171,
+  "task_revision": 172,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T19:51:19+00:00",
+  "updated_at": "2026-09-25T19:51:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---
