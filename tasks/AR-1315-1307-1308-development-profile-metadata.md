@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Align formal-runner task metadata with the explicit unsigned development profile.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Formal runner development-profile metadata repair",
-  "updated_at": "2026-09-25T11:20:54+00:00",
+  "updated_at": "2026-09-25T11:21:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1315-formal-development-profile-metadata"
 }
 ---
@@ -35,3 +35,6 @@ claims.
 - 2026-09-25T11:20:38+00:00: Claimed by ar1315_formal_profile_metadata_luna56.
 
 - 2026-09-25T11:20:54+00:00: Heartbeat by ar1315_formal_profile_metadata_luna56.
+
+- 2026-09-25T11:21:39+00:00: Recorded command exit 0; command argv SHA-256
+  8ed88295f9acb0ffa158a957bba6a2e17ae1da14256ec88badf23abbbd7b3d2b.
