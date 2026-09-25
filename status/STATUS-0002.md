@@ -120,7 +120,7 @@
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1450](../tasks/AR-1450-runtime-owned-local-replay-acquisition.md): Runtime-owned local replay acquisition factory | ar1450-replay-luna56 | Keep local replay authority acquisition inside the runtime boundary. | Implement runtime-owned bootstrap/provisioner using existing LiveProviderProvisioner pattern; own relay/lease roots, tool pins, sandbox construction, attestation and teardown internally. |
-| P0 | [AR-1452](../tasks/AR-1452-runtime-orchestration-service.md): Implement the runtime-owned ASB orchestration service | coordinator-orchestrator-impl | Implement one service-owned authority for admission, attempts, resources, and teardown. | PR #330 exact head c2d799e adds runtime-owned LocalMockAuthoritySource backed by asb-runtime LocalProviderMockBackend and explicit reconcile() for NeedsReconciliation attempts. Await exact-head CI and independent re-review; inspect storage-barrier semantics before merge. |
+| P0 | [AR-1452](../tasks/AR-1452-runtime-orchestration-service.md): Implement the runtime-owned ASB orchestration service | coordinator-orchestrator-impl | Implement one service-owned authority for admission, attempts, resources, and teardown. | PR #330 exact head 69331c9 adds service-level local mock execution coverage, restores fenced identities during journal rehydration, and places an explicit durability barrier on append failure. Await exact-head CI and independent re-review; strict replay adapter remains AR-1450 follow-up. |
 
 ### Open (1)
 

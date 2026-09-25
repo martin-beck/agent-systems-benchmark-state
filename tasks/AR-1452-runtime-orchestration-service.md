@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1452-runtime-orchestration-service",
-  "checkpoint_commit": "c2d799e4f9d7859e6462d60886c9255d5df9f37e",
+  "checkpoint_commit": "69331c9f5e303e9b6385d58041786e3e0e49c83f",
   "claim_expires": "2026-09-25T21:12:29+00:00",
   "depends_on": [
     "AR-1357",
@@ -10,7 +10,7 @@
     "AR-1451"
   ],
   "id": "AR-1452",
-  "next_action": "PR #330 exact head c2d799e adds runtime-owned LocalMockAuthoritySource backed by asb-runtime LocalProviderMockBackend and explicit reconcile() for NeedsReconciliation attempts. Await exact-head CI and independent re-review; inspect storage-barrier semantics before merge.",
+  "next_action": "PR #330 exact head 69331c9 adds service-level local mock execution coverage, restores fenced identities during journal rehydration, and places an explicit durability barrier on append failure. Await exact-head CI and independent re-review; strict replay adapter remains AR-1450 follow-up.",
   "observed_branch": "feature/ar-1452-runtime-orchestration-service",
   "observed_dirty": 0,
   "observed_head": "69331c9f5e303e9b6385d58041786e3e0e49c83f",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 99,
+  "task_revision": 100,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T19:16:12+00:00",
+  "updated_at": "2026-09-25T19:16:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---
@@ -270,3 +270,8 @@ until the service can prove the complete authority chain.
 
 - 2026-09-25T19:16:12+00:00: Recorded command exit 0; command argv SHA-256
   10ffdfa0d30719f50bf21fbc01c140375702acb07cf7c4b5d8dc85839df9e3bd.
+
+- 2026-09-25T19:16:38+00:00: Independent review findings addressed where in-scope: local mock now
+  tested through Orchestrator lifecycle, restart events retain run/attempt handles, lifecycle append
+  failures enter NeedsReconciliation barrier. 7 orchestrator tests pass and clippy -D warnings
+  passes; signed commit pushed.
