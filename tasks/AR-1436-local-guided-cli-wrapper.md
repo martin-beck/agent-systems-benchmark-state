@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a catalog-driven guided CLI wrapper for deterministic local mock qualification.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Local guided CLI wrapper",
-  "updated_at": "2026-09-25T00:50:19+00:00",
+  "updated_at": "2026-09-25T00:50:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1436-local-guided-cli-wrapper"
 }
 ---
@@ -82,3 +82,6 @@ weakening. Require focused/full/review/PR/seven post-merge gates.
   adding easy between setup and capabilities changed the stable completion token sequence. Corrected
   in signed+DCO 3e80aa3 by appending easy after the existing sequence; no behavior or security
   boundary weakened.
+
+- 2026-09-25T00:50:44+00:00: Recorded command exit 101; command argv SHA-256
+  88f7af68d2ecc3638bfd9fff251cc79e4f54fee616e0c550b931fe77cecde9a1.
