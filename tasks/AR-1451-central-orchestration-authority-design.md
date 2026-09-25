@@ -12,17 +12,17 @@
   "id": "AR-1451",
   "next_action": "Promote after reconciling AR-1450 and review the authority matrix, schemas, lifecycle, threat model, and migration design.",
   "observed_branch": "feature/ar-1451-central-orchestration-authority-design",
-  "observed_dirty": 2,
-  "observed_head": "f03d9e484d6ca73eacdbd5476980bf33ca737540",
+  "observed_dirty": 0,
+  "observed_head": "6e202585947c744ec1b995cc9886c380a05aa3da",
   "owner": "coordinator-orchestration",
   "plan": "../plans/AR-1451.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Freeze one runtime-owned orchestration authority for every ASB run and attempt.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Central orchestration authority contract and ASB redesign",
-  "updated_at": "2026-09-25T17:34:22+00:00",
+  "updated_at": "2026-09-25T17:34:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1451-central-orchestration-authority-design"
 }
 ---
