@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1452-runtime-orchestration-service",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-25T21:12:29+00:00",
   "depends_on": [
     "AR-1357",
     "AR-1433",
@@ -11,15 +11,15 @@
   ],
   "id": "AR-1452",
   "next_action": "Promote after AR-1451 is reviewed and merged; add the asb-orchestrator crate without exposing caller-built authority.",
-  "owner": "",
+  "owner": "coordinator-orchestrator-impl",
   "plan": "../plans/AR-1452.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T18:12:22+00:00",
+  "updated_at": "2026-09-25T18:12:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---
@@ -31,3 +31,5 @@ until the service can prove the complete authority chain.
 - 2026-09-25T18:12:22+00:00: AR-1451 architecture and authority contract merged and post-merge
   verified at 071167d; local mock/replay implementation can proceed against verified AR-1448 without
   waiting on optional AR-1450 replay hardening.
+
+- 2026-09-25T18:12:29+00:00: Claimed by coordinator-orchestrator-impl.
