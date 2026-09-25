@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1452-runtime-orchestration-service",
-  "checkpoint_commit": "bed7bb3ae5183f891cba14b539371d2f78147b91",
+  "checkpoint_commit": "2cd5b3d97341d39f82d5d1b5039ac224ad8149a2",
   "claim_expires": "2026-09-25T21:12:29+00:00",
   "depends_on": [
     "AR-1357",
@@ -10,7 +10,7 @@
     "AR-1451"
   ],
   "id": "AR-1452",
-  "next_action": "PR #330 exact head bed7bb3 scopes local cancellation to the server-issued attempt ID, adds runtime per-attempt cancellation tracking, and invokes cleanup on ordinary execution/evidence failures. Await exact-head CI/review; timeout remains cooperative adapter contract.",
+  "next_action": "PR #330 exact head 2cd5b3d passes a cooperative deadline into AuthoritySource::execute_until; timeout failures invoke per-attempt cancel and fail closed. Await exact-head CI and review; adapters must implement bounded interruption at the runtime boundary.",
   "observed_branch": "feature/ar-1452-runtime-orchestration-service",
   "observed_dirty": 0,
   "observed_head": "2cd5b3d97341d39f82d5d1b5039ac224ad8149a2",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 161,
+  "task_revision": 162,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T19:46:38+00:00",
+  "updated_at": "2026-09-25T19:47:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---
@@ -425,3 +425,7 @@ until the service can prove the complete authority chain.
 
 - 2026-09-25T19:46:38+00:00: Recorded command exit 0; command argv SHA-256
   10ffdfa0d30719f50bf21fbc01c140375702acb07cf7c4b5d8dc85839df9e3bd.
+
+- 2026-09-25T19:47:11+00:00: Added explicit deadline-aware authority hook and Timeout error;
+  orchestrator starts a monotonic deadline and invokes cleanup on expiry. Local cancellation remains
+  per-attempt through runtime cancellation tracking. 7 tests/clippy pass; signed commit pushed.
