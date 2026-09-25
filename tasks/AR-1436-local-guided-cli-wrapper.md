@@ -8,7 +8,7 @@
     "AR-1328"
   ],
   "id": "AR-1436",
-  "next_action": "Promote and claim when completed dependencies are confirmed; implement the offline catalog-driven local mock wrapper and preserve AR-1329/AR-1338 blocked and AR-1332/AR-1333 planned.",
+  "next_action": "Finish hostile/positive local wrapper tests, then run focused/full offline gates and exact review.",
   "observed_branch": "feature/ar-1436-local-guided-cli-wrapper",
   "observed_dirty": 1,
   "observed_head": "cc82333a53e03147ea95cc21ca697647dc27db1f",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a catalog-driven guided CLI wrapper for deterministic local mock qualification.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Local guided CLI wrapper",
-  "updated_at": "2026-09-25T00:46:32+00:00",
+  "updated_at": "2026-09-25T00:47:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1436-local-guided-cli-wrapper"
 }
 ---
@@ -53,3 +53,9 @@ weakening. Require focused/full/review/PR/seven post-merge gates.
 
 - 2026-09-25T00:46:32+00:00: Recorded command exit 0; command argv SHA-256
   2b5b77c523555f81a83fb1ed2aaa818f88f25b6db436c1330b5c91c185b2f167.
+
+- 2026-09-25T00:47:03+00:00: Diagnosed prior exit-1 records: 00:45:36 cargo fmt was invoked from the
+  coordination state checkout, which has no Cargo.toml; corrected by running through handoffctl in
+  the bound product worktree. 00:45:55 cargo fmt --check correctly found only rustfmt layout changes
+  in the new dispatch/parser code; applied cargo fmt and continued. No product gate was weakened and
+  live-provider boundaries remain fail-closed.
