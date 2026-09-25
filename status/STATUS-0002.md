@@ -98,12 +98,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1423](../tasks/AR-1423-literature-docs-registry-reconciliation.md): Exhaustive literature docs-to-registry reconciliation | ar1423_literature_reconciliation_luna56 | Reconcile all literature benchmark mentions with strict registry identities and framework boundaries. | Publish PR from exact clean head, obtain independent review and required CI, then merge and complete post-merge assurance workflows. |
-
 ### Blocked (66)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -254,7 +248,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (306)
+### Done (307)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -517,3 +511,4 @@
 | P1 | [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md): OpenRouter free-model conformance and hostile qualification | Unclaimed | Qualify the pinned OpenRouter free model under conformance and hostile fail-closed testing. | Push PR for independent review; wait exact-head required CI, repair any failures, then merge only after all checks are green and verify post-merge workflows. |
 | P1 | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md): Runtime-owned live-provider egress backend | Unclaimed | Implement the runtime-owned authenticated backend for explicit live provider egress. | AR-1339 backend merged and verified at protected main; AR-1340 owns namespace-bound child handoff and AR-1329 consumes it for final live CLI integration. |
 | P1 | [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md): Attested live-relay namespace and child handoff | Unclaimed | Bind the live provider relay to an attested child namespace and integrate it without weakening offline or replay denial. | SECURITY HOLD: AR-1341 must add runtime-observed child namespace attestation and copied/stale/mismatch denial before AR-1340 may be released or AR-1329 advanced. Do not release on green post-merge CI alone; continue collecting post-merge evidence for merge 3406faae. |
+| P1 | [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md): Runtime-owned live relay factory and CLI integration | Unclaimed | Create the runtime-owned relay factory and opaque launch context required for safe live CLI execution. | PR #259 merged at d24221731891fb39f56118be9c5ae51364824517; monitor all seven exact-head post-merge workflows and release AR-1342 done only after every one is green, then promote/advance AR-1329. |
