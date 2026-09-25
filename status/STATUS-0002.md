@@ -106,8 +106,9 @@
 | [AR-1445](../tasks/AR-1445-protected-main-topology-repair-openrouter.md) | None | None |
 | [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md) | [AR-1433](../tasks/AR-1433-runtime-mock-attempt-backend.md), [AR-1441](../tasks/AR-1441-first-class-install-bootstrap.md), [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md), [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md) | [AR-1331](../tasks/AR-1331-runtime-replay-launch-authority.md), [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md), [AR-1448](../tasks/AR-1448-runtime-replay-authority-source.md) |
 | [AR-1447](../tasks/AR-1447-asb-local-campaign-qualification.md) | [AR-1433](../tasks/AR-1433-runtime-mock-attempt-backend.md), [AR-1437](../tasks/AR-1437-local-record-replay-campaign.md), [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md) | [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md) |
-| [AR-1448](../tasks/AR-1448-runtime-replay-authority-source.md) | [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md), [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md) | [AR-1449](../tasks/AR-1449-runtime-owned-local-replay-cli.md) |
+| [AR-1448](../tasks/AR-1448-runtime-replay-authority-source.md) | [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md), [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md) | [AR-1449](../tasks/AR-1449-runtime-owned-local-replay-cli.md), [AR-1450](../tasks/AR-1450-runtime-owned-local-replay-acquisition.md) |
 | [AR-1449](../tasks/AR-1449-runtime-owned-local-replay-cli.md) | [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md), [AR-1448](../tasks/AR-1448-runtime-replay-authority-source.md) | None |
+| [AR-1450](../tasks/AR-1450-runtime-owned-local-replay-acquisition.md) | [AR-1448](../tasks/AR-1448-runtime-replay-authority-source.md) | None |
 
 ## Complete AR inventory
 
@@ -116,6 +117,12 @@
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md): Guided ASB command wrapper | coordinator-ar1338 | Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows. | PR #327 latest signed head 4d42f59 has full local gates and hosted checks green after campaign path hardening. Do not merge yet: independent review confirms the remaining P1 is ordinary CLI replay authority acquisition. Successor AR-1449 is now open to provide the runtime-owned local replay authority; after AR-1449 merges, rebase/integrate this wrapper, rerun exact-head CI, then complete AR-1338. |
+
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1450](../tasks/AR-1450-runtime-owned-local-replay-acquisition.md): Runtime-owned local replay acquisition factory | Unclaimed | Keep local replay authority acquisition inside the runtime boundary. | Implement a runtime-owned local replay acquisition factory that accepts only validated cassette identity and returns opaque one-shot authority. |
 
 ### Blocked (69)
 
@@ -509,5 +516,3 @@
 | P1 | [AR-0908](../tasks/AR-0908-control-state-lock-test-isolation.md): Harden control-state lock test isolation | Unclaimed | Harden asb-cli control-state lock test isolation and deterministic reopen coverage. | Post-merge verification is complete; release AR-0908 done against the merged PR #173 implementation. |
 | P1 | [AR-0909](../tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | Unclaimed | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Post-merge verified: PR127 change is present in signed protected main merge 7d43c1e; retain merge-attestation evidence and continue normal coordinator monitoring. |
 | P1 | [AR-1001](../tasks/AR-1001-experiment-comparability.md): Define experiment identity and comparability | Unclaimed | Make every comparison content-addressed and explicit about agent, model, workload and platform confounders. | Await coordinator integration authorization for independently approved exact PR #17 head eb5e849; do not merge or release. Cargo workspace/lock and experiment-schema fence remains held by AR-1001. |
-| P1 | [AR-1002](../tasks/AR-1002-verifier-integrity.md): Protect verifiers and support offline rescoring | Unclaimed | Separate immutable graders from agent work and version scoring independently of execution. | Monitor PR #62 exact head 3fc65ea73badcea31497e53644fdad8778115870 quality, emulated-aarch64, fault, Rust x86_64/aarch64, and formal runs; investigate failures and do not merge without authorization. |
-| P1 | [AR-1003](../tasks/AR-1003-execution-budgets.md): Enforce cost token and action budgets | Unclaimed | Bound and report wall time, actions, tokens and monetary cost without treating unavailable telemetry as zero. | Await coordinator merge review and explicit serialized integration authorization for all-green PR 74; do not change head. |
