@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a catalog-driven guided CLI wrapper for deterministic local mock qualification.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Local guided CLI wrapper",
-  "updated_at": "2026-09-25T00:47:03+00:00",
+  "updated_at": "2026-09-25T00:47:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1436-local-guided-cli-wrapper"
 }
 ---
@@ -59,3 +59,6 @@ weakening. Require focused/full/review/PR/seven post-merge gates.
   the bound product worktree. 00:45:55 cargo fmt --check correctly found only rustfmt layout changes
   in the new dispatch/parser code; applied cargo fmt and continued. No product gate was weakened and
   live-provider boundaries remain fail-closed.
+
+- 2026-09-25T00:47:12+00:00: Recorded command exit 0; command argv SHA-256
+  61f8fd0e64a80ce461c03f246c8626084bffdf38268a3f72045ff85a809d9f03.
