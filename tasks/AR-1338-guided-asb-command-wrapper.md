@@ -1,6 +1,6 @@
 ---
 {
-  "branch": "main",
+  "branch": "feature/ar-1338-guided-asb-command-wrapper",
   "checkpoint_commit": "",
   "claim_expires": "2026-09-25T17:45:20+00:00",
   "depends_on": [
@@ -10,9 +10,9 @@
   ],
   "id": "AR-1338",
   "next_action": "Promote and claim the ASB-only wrapper implementation. Extend the existing bounded easy path to catalog-driven setup/selection, plan/run/sweep, report/compare, record/replay, generated private files, documentation, and offline hostile tests; optional live-provider capture remains separate.",
-  "observed_branch": "main",
-  "observed_dirty": 7,
-  "observed_head": "bd7d10d4a760a84fa42de2b1fa9e97e8ea85ba09",
+  "observed_branch": "feature/ar-1338-guided-asb-command-wrapper",
+  "observed_dirty": 0,
+  "observed_head": "2872a31f2ee90ac5df1a47203b2a618b1829cfec",
   "owner": "coordinator-ar1338",
   "plan": "../plans/AR-1338.md",
   "priority": "P1",
@@ -22,7 +22,7 @@
   "task_revision": 5,
   "title": "Guided ASB command wrapper",
   "updated_at": "2026-09-25T15:45:56+00:00",
-  "worktree_key": "agent-systems-benchmark"
+  "worktree_key": "agent-systems-benchmark-ar-1338-guided-asb-command-wrapper"
 }
 ---
 
