@@ -9,17 +9,17 @@
   "id": "AR-1450",
   "next_action": "Await PR #328 exact-head CI and independent review at d73bdb8; native qualification now requires ASB_REQUIRE_NATIVE_SANDBOX=1 local_bootstrap_positive_acquires_and_spawns_owned_authority, while general sandbox evidence remains optional.",
   "observed_branch": "feature/ar-1450-runtime-owned-local-replay-acquisition",
-  "observed_dirty": 2,
-  "observed_head": "d73bdb8681677405e4969e2b2a615073df3640e3",
+  "observed_dirty": 0,
+  "observed_head": "5ddf976b30658ffa8d5daa191301ac9a85cabd00",
   "owner": "ar1450-replay-luna56",
   "plan": "../plans/AR-1450.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep local replay authority acquisition inside the runtime boundary.",
-  "task_revision": 104,
+  "task_revision": 105,
   "title": "Runtime-owned local replay acquisition factory",
-  "updated_at": "2026-09-25T20:14:04+00:00",
+  "updated_at": "2026-09-25T20:14:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1450-runtime-owned-local-replay-acquisition"
 }
 ---
