@@ -14,18 +14,18 @@
   ],
   "id": "AR-1433",
   "next_action": "Promote and claim after the coordinator-approved dependency transition. Implement a runtime-owned deterministic mock-attempt backend and wire local run/sweep qualification without weakening ProviderEgressTarget or synthesizing LiveProviderAttempt authority. Preserve AR-1432's separate production live-bridge blocker.",
-  "observed_branch": "main",
-  "observed_dirty": 7,
-  "observed_head": "bd7d10d4a760a84fa42de2b1fa9e97e8ea85ba09",
+  "observed_branch": "feature/ar-1433-runtime-mock-attempt-backend",
+  "observed_dirty": 0,
+  "observed_head": "5871de7cad4ee7e496ffce1c5e1fe51862660bfc",
   "owner": "coordinator-ar1433",
   "plan": "../plans/AR-1433-runtime-mock-attempt-backend.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add an approved runtime mock-attempt backend for deterministic local run and sweep qualification.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Runtime mock-attempt backend",
-  "updated_at": "2026-09-25T14:44:46+00:00",
+  "updated_at": "2026-09-25T14:44:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1433"
 }
 ---
