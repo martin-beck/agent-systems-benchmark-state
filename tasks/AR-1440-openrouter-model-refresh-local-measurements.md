@@ -11,17 +11,17 @@
   "id": "AR-1440",
   "next_action": "Refresh the dated free-model pin from a live catalog; update every identity and test; retain provider-catalog/provider-plan as the sole provider/model/agent selection authority with stale and mixed-selection rejection; run bounded operator-only local measurements without CI network or persisted credentials/prompts/responses; publish exact-head evidence.",
   "observed_branch": "feature/ar-1440-openrouter-model-refresh-local-measurements",
-  "observed_dirty": 8,
-  "observed_head": "40c5c4118356df0e35d26df6933ddb07d2b4f517",
+  "observed_dirty": 0,
+  "observed_head": "f2d4999ef09e3ebe3da720209a36954e6090f4b9",
   "owner": "ar1440-model-refresh-luna56",
   "plan": "../plans/AR-1440.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Refresh the stale OpenRouter free-model pin and qualify local-only benchmark measurements.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Refresh OpenRouter model pin and local measurements",
-  "updated_at": "2026-09-25T13:32:24+00:00",
+  "updated_at": "2026-09-25T13:32:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1440-openrouter-model-refresh-local-measurements"
 }
 ---
