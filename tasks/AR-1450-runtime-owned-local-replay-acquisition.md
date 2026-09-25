@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1450-runtime-owned-local-replay-acquisition",
   "checkpoint_commit": "a0bd63d3edc539ad1aeefba2e80c76ac3a6ebb9c",
-  "claim_expires": "2026-09-25T23:14:06+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1448"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1450-runtime-owned-local-replay-acquisition",
   "observed_dirty": 0,
   "observed_head": "283291200b3b30164c6bd4df8b11eafae82189c3",
-  "owner": "ar1450-replay-luna56",
+  "owner": "",
   "plan": "../plans/AR-1450.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Keep local replay authority acquisition inside the runtime boundary.",
-  "task_revision": 131,
+  "task_revision": 132,
   "title": "Runtime-owned local replay acquisition factory",
-  "updated_at": "2026-09-25T21:19:56+00:00",
+  "updated_at": "2026-09-25T21:20:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1450-runtime-owned-local-replay-acquisition"
 }
 ---
@@ -339,3 +339,8 @@ Requirements:
   #328. Preserve PR #328 exact-head evidence, merge 452f3ca, failed workflows 36188339692 and
   36188339854, repair PR #331, merge a0bd63d, and seven successful post-merge workflows. Runtime
   replay tests and policy remain green.
+
+- 2026-09-25T21:20:03+00:00: AR-1450 complete: runtime-owned local replay acquisition merged at
+  452f3ca, exact-head checks and independent review passed, protected-main merge repaired by AR-1454
+  at a0bd63d, and all seven post-merge workflows passed. No live provider/native host requirement
+  was introduced.
