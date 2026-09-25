@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire deterministic local mock attempts into asb run and sweep configuration qualification.",
-  "task_revision": 107,
+  "task_revision": 108,
   "title": "Local mock CLI wiring",
-  "updated_at": "2026-09-25T00:32:57+00:00",
+  "updated_at": "2026-09-25T00:33:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1435-local-mock-cli-wiring"
 }
 ---
@@ -360,4 +360,7 @@ it must not contact OpenRouter or any external provider, mint
   native qualification 36077914490, Huawei MIT source headers 36077914555 (terminal success).
 
 - 2026-09-25T00:32:57+00:00: Recorded command exit 0; command argv SHA-256
+  d016d476317eccef95d48ac8c39cb7004b3efcf15c444b129c246a3bce129ff0.
+
+- 2026-09-25T00:33:42+00:00: Recorded command exit 0; command argv SHA-256
   d016d476317eccef95d48ac8c39cb7004b3efcf15c444b129c246a3bce129ff0.
