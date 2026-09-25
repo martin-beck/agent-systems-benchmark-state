@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep local replay authority acquisition inside the runtime boundary.",
-  "task_revision": 96,
+  "task_revision": 97,
   "title": "Runtime-owned local replay acquisition factory",
-  "updated_at": "2026-09-25T20:10:45+00:00",
+  "updated_at": "2026-09-25T20:10:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1450-runtime-owned-local-replay-acquisition"
 }
 ---
@@ -261,3 +261,6 @@ Requirements:
 - 2026-09-25T20:08:26+00:00: Positive end-to-end owned acquisition test added in signed+DCO commit
   58609e6, covering provisioner acquire through opaque authority and spawn_owned. Hosted checks
   restarted at exact head.
+
+- 2026-09-25T20:10:53+00:00: Recorded command exit 0; command argv SHA-256
+  0b64b502877b692e6ec06c09c401731abae2491470ebdf27c39ddce877313941.
