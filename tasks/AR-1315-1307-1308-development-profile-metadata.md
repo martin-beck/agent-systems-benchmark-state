@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1315-formal-development-profile-wording",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-25T13:20:38+00:00",
+  "claim_expires": "2026-09-25T13:20:54+00:00",
   "depends_on": [
     "AR-1314"
   ],
@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Align formal-runner task metadata with the explicit unsigned development profile.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Formal runner development-profile metadata repair",
-  "updated_at": "2026-09-25T11:20:38+00:00",
+  "updated_at": "2026-09-25T11:20:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1315-formal-development-profile-metadata"
 }
 ---
@@ -33,3 +33,5 @@ claims.
   metadata repair.
 
 - 2026-09-25T11:20:38+00:00: Claimed by ar1315_formal_profile_metadata_luna56.
+
+- 2026-09-25T11:20:54+00:00: Heartbeat by ar1315_formal_profile_metadata_luna56.
