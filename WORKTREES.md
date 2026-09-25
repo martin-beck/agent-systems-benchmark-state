@@ -466,7 +466,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-merge251` | `DETACHED` | `551330b8ba75` | 0 | behind 296, ahead 0 |
 | `asb-merge253` | `DETACHED` | `8692729a58d1` | 0 | behind 302, ahead 0 |
 | `pr256-review` | `DETACHED` | `0c19231abaf4` | 0 | behind 269, ahead 0 |
-| `agent-systems-benchmark-state` | `main` | `94b945919fe1` | 2 | behind 0, ahead 0 |
+| `agent-systems-benchmark-state` | `main` | `fc92cdb0ff25` | 2 | behind 0, ahead 1 |
 | changed files | - | - | - | `plans/AR-1455-runtime-owned-guided-replay-entrypoint.md`, `tasks/AR-1455-runtime-owned-guided-replay-entrypoint.md` |
 | `agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity` | `feature/ar-1308-full-exhaustive-qemu-capacity` | `659030fffd7e` | 0 | behind 11419, ahead 0 |
 | `agent-systems-benchmark-coordination-assurance` | `feature/coordination-assurance` | `adfde31ad408` | 0 | behind 39299, ahead 0 |
