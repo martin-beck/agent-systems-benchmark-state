@@ -2,22 +2,25 @@
 {
   "branch": "feature/ar-1449-runtime-owned-local-replay-cli",
   "checkpoint_commit": "",
-  "claim_expires": "",
-  "depends_on": ["AR-1443", "AR-1448"],
+  "claim_expires": "2026-09-25T19:55:07+00:00",
+  "depends_on": [
+    "AR-1443",
+    "AR-1448"
+  ],
   "id": "AR-1449",
   "next_action": "Implement and verify a runtime-owned local replay authority acquisition path for the ordinary ASB CLI, then integrate it into AR-1338 without synthetic authority or native-host gating.",
   "observed_branch": "feature/ar-1449-runtime-owned-local-replay-cli",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "ar1449-replay-luna56",
   "plan": "../plans/AR-1449.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide fail-closed runtime-owned local replay authority for the guided CLI wrapper.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Runtime-owned local replay CLI authority",
-  "updated_at": "2026-09-25T16:50:00+00:00",
+  "updated_at": "2026-09-25T16:55:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1449-runtime-owned-local-replay-cli"
 }
 ---
@@ -33,3 +36,5 @@ Requirements:
 - use local deterministic fixtures or LiteLLM-compatible mocks only; external providers and native hosts are not required.
 
 Do not weaken AR-1448 or make live provider reachability a prerequisite.
+
+- 2026-09-25T16:55:07+00:00: Claimed by ar1449-replay-luna56.
