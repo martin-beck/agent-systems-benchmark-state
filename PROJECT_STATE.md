@@ -10,17 +10,17 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #324 | `repair/ar-1445-protected-main-topology-repair-openrouter@10686db7ceb5` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | docs: repair protected-main merge topology |
+| #324 | `repair/ar-1445-protected-main-topology-repair-openrouter@10686db7ceb5` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | docs: repair protected-main merge topology |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36144953609 | `10686db7ceb5` | pull_request | Formal assurance | in_progress:- |
+| 36144953609 | `10686db7ceb5` | pull_request | Formal assurance | completed:success |
 | 36144953550 | `10686db7ceb5` | pull_request | Hosted portability and native qualification | completed:success |
 | 36144953427 | `10686db7ceb5` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 36144953418 | `10686db7ceb5` | pull_request | Huawei MIT source headers | completed:success |
-| 36144953361 | `10686db7ceb5` | pull_request | Fault assurance | in_progress:- |
+| 36144953361 | `10686db7ceb5` | pull_request | Fault assurance | completed:success |
 | 36144953315 | `10686db7ceb5` | pull_request | Rust verification | in_progress:- |
 | 36144953298 | `10686db7ceb5` | pull_request | Repository quality | in_progress:- |
 | 36144953152 | `10686db7ceb5` | pull_request | Agent Workflow Quality shadow | completed:success |
