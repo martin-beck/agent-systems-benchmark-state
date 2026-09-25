@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the protected-main tree mismatch after the runtime replay merge.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Protected-main tree-equality repair for runtime replay",
-  "updated_at": "2026-09-25T21:09:45+00:00",
+  "updated_at": "2026-09-25T21:10:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1454-protected-main-tree-repair-runtime-replay"
 }
 ---
@@ -63,3 +63,6 @@ waived. Keep asb-tui out of scope.
   --check clean; commit SSH-signed with matching DCO; all 12 PR checks terminal SUCCESS; merge state
   CLEAN. Record accurately preserves failed workflow 36188339692 and merge 452f3ca without weakening
   gates.
+
+- 2026-09-25T21:10:12+00:00: Recorded command exit 0; command argv SHA-256
+  b9414187a60c607083820afa3c4830bfadaaa7220d647cca39ed74dc35ca2aa9.
