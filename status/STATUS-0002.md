@@ -98,11 +98,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1315](../tasks/AR-1315-1307-1308-development-profile-metadata.md): Formal runner development-profile metadata repair | Unclaimed | Align formal-runner task metadata with the explicit unsigned development profile. | Promote after AR-1314 is done; update AR-1307/AR-1308 wording and validators to permit diagnostic unsigned fixtures while retaining signed full qualification gates. |
+| P1 | [AR-1315](../tasks/AR-1315-1307-1308-development-profile-metadata.md): Formal runner development-profile metadata repair | ar1315_formal_profile_repair_luna56 | Align formal-runner task metadata with the explicit unsigned development profile. | Promote after AR-1314 is done; update AR-1307/AR-1308 wording and validators to permit diagnostic unsigned fixtures while retaining signed full qualification gates. |
 
 ### Blocked (66)
 

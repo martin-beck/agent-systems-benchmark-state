@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1315-formal-development-profile-wording",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-25T13:26:53+00:00",
   "depends_on": [
     "AR-1314"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "repair/ar-1315-formal-development-profile-wording",
   "observed_dirty": 0,
   "observed_head": "7390bcd2082700d0c9f04409732b48de8e9f8628",
-  "owner": "",
+  "owner": "ar1315_formal_profile_repair_luna56",
   "plan": "../plans/AR-1315.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Align formal-runner task metadata with the explicit unsigned development profile.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Formal runner development-profile metadata repair",
-  "updated_at": "2026-09-25T11:25:14+00:00",
+  "updated_at": "2026-09-25T11:26:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1315-formal-development-profile-metadata"
 }
 ---
@@ -45,3 +45,5 @@ claims.
 - 2026-09-25T11:25:14+00:00: Recovered idle worker after no implementation progress; no product or
   state changes were lost. Reassign with declared worktree and preserve the explicit unsigned
   development-profile scope.
+
+- 2026-09-25T11:26:53+00:00: Claimed by ar1315_formal_profile_repair_luna56.
