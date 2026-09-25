@@ -9,7 +9,7 @@
     "AR-1340"
   ],
   "id": "AR-1329",
-  "next_action": "BLOCKED for optional production integration only: preserve the deterministic local sub-1B/LiteLLM-compatible mock path as the mandatory development and CI qualification route. A future runtime-owned LiveProviderRuntimeService may resolve pinned provider policy, enrolled credentials, attested namespace/relay, ResourceLease, SandboxBackend, and one LiveProviderAttempt per scheduler attempt, with cancellation teardown; external reachability is optional non-gating evidence. Preserve NetworkPolicy::Deny and direct/alternate egress denial.",
+  "next_action": "BLOCKED at two explicit boundaries: AR-1432/AR-1433 must supply the runtime-owned deterministic mock-attempt adapter for mandatory local run/sweep qualification; the optional production live path still needs an atomic LiveProviderRuntimeService resolving pinned policy, enrolled credentials, attested namespace/relay, concrete egress target, ResourceLease, SandboxBackend, and one LiveProviderAttempt per scheduler attempt with cancellation teardown. Do not use external reachability as a CI gate; preserve NetworkPolicy::Deny and direct/alternate egress denial. AR-1446 consumes this only after its required execution and customer-journey dependencies are released.",
   "observed_branch": "feature/ar-1329-live-provider-run-execution",
   "observed_dirty": 0,
   "observed_head": "04b4c067055073031cd6d88cf18f0d158f488ad0",
@@ -197,6 +197,8 @@ doubles, and the digest-pinned mode remain default and never touch the network.
   accepts an externally supplied scheduler; accepting caller authority or synthesizing
   credentials/chain is forbidden. No safe product diff remains in AR-1329. Create successor for
   authenticated runtime execution-source materialization.
+
+- 2026-09-25T15:00:00+00:00: Coordinator production-readiness audit clarified that the mandatory local execution boundary remains AR-1432/AR-1433, while the optional production live boundary remains runtime-owned and fail-closed. Created AR-1446 for disposable first-customer install/configure/benchmark/replay/recovery/cleanup qualification; no live-provider or CI gate was weakened.
 
 ## Current development and CI qualification boundary
 
