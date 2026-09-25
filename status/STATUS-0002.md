@@ -109,11 +109,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md): Guided benchmark capture and comparison | Unclaimed | Make benchmark, offline capture/replay, and result comparison a single guided workflow. | Promote after AR-1442, AR-1447 and AR-1437 are released; implement and qualify the ASB-only selection-driven benchmark, local capture/replay, and comparison journey. Optional live capture AR-1332/AR-1333 remains separate. |
+| P0 | [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md): Guided benchmark capture and comparison | coordinator-ar1443 | Make benchmark, offline capture/replay, and result comparison a single guided workflow. | Promote after AR-1442, AR-1447 and AR-1437 are released; implement and qualify the ASB-only selection-driven benchmark, local capture/replay, and comparison journey. Optional live capture AR-1332/AR-1333 remains separate. |
 
 ### Blocked (68)
 

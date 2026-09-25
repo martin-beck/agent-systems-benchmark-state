@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1443](tasks/AR-1443-guided-benchmark-capture-comparison.md): Guided benchmark capture and comparison | Make benchmark, offline capture/replay, and result comparison a single guided workflow. | Promote after AR-1442, AR-1447 and AR-1437 are released; implement and qualify the ASB-only selection-driven benchmark, local capture/replay, and comparison journey. Optional live capture AR-1332/AR-1333 remains separate. | - |
+| P0 | [AR-1443](tasks/AR-1443-guided-benchmark-capture-comparison.md): Guided benchmark capture and comparison | Make benchmark, offline capture/replay, and result comparison a single guided workflow. | Promote after AR-1442, AR-1447 and AR-1437 are released; implement and qualify the ASB-only selection-driven benchmark, local capture/replay, and comparison journey. Optional live capture AR-1332/AR-1333 remains separate. | coordinator-ar1443 |
 
 ## Blocked
 
