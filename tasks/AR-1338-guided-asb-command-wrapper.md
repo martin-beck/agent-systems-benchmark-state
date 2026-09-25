@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1338-guided-asb-command-wrapper",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-25T17:45:20+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1331",
     "AR-1442",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1338-guided-asb-command-wrapper",
   "observed_dirty": 0,
   "observed_head": "2872a31f2ee90ac5df1a47203b2a618b1829cfec",
-  "owner": "coordinator-ar1338",
+  "owner": "",
   "plan": "../plans/AR-1338.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Guided ASB command wrapper",
-  "updated_at": "2026-09-25T15:45:56+00:00",
+  "updated_at": "2026-09-25T15:53:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1338-guided-asb-command-wrapper"
 }
 ---
@@ -55,3 +55,9 @@ reachability.
 
 - 2026-09-25T15:45:44+00:00: Recorded command exit 0; command argv SHA-256
   62cc414e2aff2ff6a6ecedac52ecb1c1bf9777c8f4628e29597d8cf0016bb0e2.
+
+- 2026-09-25T15:53:33+00:00: Audit of protected merge 2872a31f: existing bounded easy
+  run/sweep/record-campaign path is present and full CLI/customer gates are green, but the complete
+  wrapper acceptance is not met because normal CLI replay still requires runtime-issued
+  ReplayLaunchAuthority. AR-1448 now owns the missing runtime/control authority source; no wrapper
+  mutation or authority weakening made.
