@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire deterministic local mock attempts into asb run and sweep configuration qualification.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Local mock CLI wiring",
-  "updated_at": "2026-09-25T00:03:34+00:00",
+  "updated_at": "2026-09-25T00:03:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1435-local-mock-cli-wiring"
 }
 ---
@@ -137,3 +137,6 @@ it must not contact OpenRouter or any external provider, mint
   required three matching DCO trailers. The corrected review at 00:02:32 used count=2 and passed
   signatures, diff-check, clean tree, and privacy scan; PR #316 was published at exact head after
   that correction. Local focused/full/fmt/clippy/rustdoc/release gates remain green.
+
+- 2026-09-25T00:03:42+00:00: Recorded command exit 0; command argv SHA-256
+  6cb838ac4a9980815e284a8554233a1d9dc41bb9c1af20afb9f91cc4aa712fbb.
