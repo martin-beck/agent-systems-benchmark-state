@@ -106,12 +106,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1440](../tasks/AR-1440-openrouter-model-refresh-local-measurements.md): Refresh OpenRouter model pin and local measurements | ar1440-model-refresh-luna56 | Refresh the stale OpenRouter free-model pin and qualify local-only benchmark measurements. | Release complete after PR #323 product head 8d2a99d and two-parent topology repair PR #324 merge 5871de7cad4ee7e496ffce1c5e1fe51862660bfc; seven exact-main workflows all green. GitHub has no independent review record for PR #324; preserved as an evidence gap, not fabricated. |
-
 ### Blocked (68)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -263,7 +257,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (312)
+### Done (313)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -518,3 +512,5 @@
 | P1 | [AR-1253](../tasks/AR-1253-pinned-python-transport-runtime.md): Provision pinned Python transport fixture runtime | Unclaimed | Provision pinned Python transport fixture runtime. | Monitor post-merge workflows for exact main a0befc0 until all seven terminal SUCCESS; verify exact tree/signature/DCO/policy, then release AR-1253 done. |
 | P1 | [AR-1263](../tasks/AR-1263-sandbox-scope-classification-stability.md): Stabilize sandbox scope classification gate | Unclaimed | Stabilize intermittent sandbox scope classification in the quality gate. | Complete: feature 0acbc1d tree equals signed protected main 69e8b064; AR-1264 recovery and all seven exact-main workflows SUCCESS. Preserve PR205 and recovery traceability. |
 | P1 | [AR-1288](../tasks/AR-1288-certificate-chain-authz.md): Runtime certificate issuance and chain validation | Unclaimed | Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814. | Preserve merged code; repair protected-main DCO integrity forward-only, rerun exact-main gates, then release. |
+| P1 | [AR-1303](../tasks/AR-1303-hosted-platform-diagnostics.md): Privacy-safe hosted platform failure diagnostics | Unclaimed | Add privacy-safe fixed diagnostics for hosted platform evidence failures. | PR #220 merged after exact-head review; verify resulting main post-merge workflows and retain terminal workflow evidence. Diagnostics remain opt-in and privacy-safe; no gate weakening. |
+| P1 | [AR-1311](../tasks/AR-1311-planned-task-metadata-schema-repair.md): Repair planned-task metadata schema contradiction | Unclaimed | Repair planned-task metadata that violates the current live-observation schema. | Claim this metadata-only repair, remove unsupported empty live-observation fields from planned AR-1309, regenerate views, and rerun schema and state gates. Do not alter AR-1309 meaning or claim implementation. |

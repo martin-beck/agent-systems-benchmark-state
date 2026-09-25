@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1440-openrouter-model-refresh-local-measurements",
   "checkpoint_commit": "5871de7cad4ee7e496ffce1c5e1fe51862660bfc",
-  "claim_expires": "2026-09-25T16:13:57+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1328",
     "AR-1436",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1440-openrouter-model-refresh-local-measurements",
   "observed_dirty": 0,
   "observed_head": "8d2a99d3fbaa3e4d86e3e54c7f82c735ff466fdd",
-  "owner": "ar1440-model-refresh-luna56",
+  "owner": "",
   "plan": "../plans/AR-1440.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Refresh the stale OpenRouter free-model pin and qualify local-only benchmark measurements.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Refresh OpenRouter model pin and local measurements",
-  "updated_at": "2026-09-25T14:22:14+00:00",
+  "updated_at": "2026-09-25T14:22:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1440-openrouter-model-refresh-local-measurements"
 }
 ---
@@ -131,3 +131,7 @@ tests for stale/mismatched model identities and unavailable pins.
   failure; PR #324 merged non-squash with parents 84b587e and 10686db. Exact-main green:
   36145976341, 36145976337, 36145976326, 36145976266, 36145976239, 36145976238, 36145976223.
   LOCK_TIMEOUT publication attempts recovered by retry.
+
+- 2026-09-25T14:22:22+00:00: Release AR-1440 done: exact product commit 8d2a99d qualified and
+  protected-main topology repair 5871de7 completed with two parents; all seven exact-main post-merge
+  workflows green. Measurement and review-gap evidence preserved in task history.
