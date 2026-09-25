@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1452-runtime-orchestration-service",
-  "checkpoint_commit": "b4c6be832922e5b17599e4da1dc376101b59a15e",
+  "checkpoint_commit": "6c5771e47abf71923cc53e50360543eb7eae919b",
   "claim_expires": "2026-09-25T21:12:29+00:00",
   "depends_on": [
     "AR-1357",
@@ -10,7 +10,7 @@
     "AR-1451"
   ],
   "id": "AR-1452",
-  "next_action": "PR #330 exact head b4c6be8 now adds restart rehydration, durable idempotency, recovery-state mapping, attempt-fenced complete, evidence limit failure cleanup, artifact count/size enforcement, and idempotency-before-capacity. Await independent re-review and exact-head CI.",
+  "next_action": "PR #330 exact head 6c5771e fences restart preparation behind RecoveryDecision, restores next IDs from durable runs, adds schema event identity, and preserves restart idempotency. Await independent re-review and exact-head CI; local deterministic adapter and explicit reconciliation remain adapter/service follow-up boundaries.",
   "observed_branch": "feature/ar-1452-runtime-orchestration-service",
   "observed_dirty": 0,
   "observed_head": "6c5771e47abf71923cc53e50360543eb7eae919b",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 55,
+  "task_revision": 56,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T18:40:00+00:00",
+  "updated_at": "2026-09-25T18:40:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---
@@ -162,3 +162,7 @@ until the service can prove the complete authority chain.
 
 - 2026-09-25T18:40:00+00:00: Recorded command exit 0; command argv SHA-256
   10ffdfa0d30719f50bf21fbc01c140375702acb07cf7c4b5d8dc85839df9e3bd.
+
+- 2026-09-25T18:40:27+00:00: Addressed latest review: open checks recovery before prepare and
+  restores allocation monotonicity; RunEvent now carries fenced run/attempt identity and kind. cargo
+  fmt and offline cargo test -p asb-orchestrator (5 passed) passed; signed commit pushed.
