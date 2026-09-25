@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1452-runtime-orchestration-service",
-  "checkpoint_commit": "91fd6051cea7612b23c574a4b8d7a4671ceb2330",
+  "checkpoint_commit": "3c8f7e41edf5c797ffb655588a14e9a059eab9aa",
   "claim_expires": "2026-09-25T21:12:29+00:00",
   "depends_on": [
     "AR-1357",
@@ -10,7 +10,7 @@
     "AR-1451"
   ],
   "id": "AR-1452",
-  "next_action": "PR #330 exact head 91fd605 is ready for exact-head CI and independent review; lifecycle validation now precedes teardown and reconciliation preserves NeedsReconciliation when persistence fails.",
+  "next_action": "PR #330 exact head 3c8f7e4 includes the policy-license correction after hosted cargo-deny rejected Unicode-3.0; await exact-head CI and independent review.",
   "observed_branch": "feature/ar-1452-runtime-orchestration-service",
   "observed_dirty": 0,
   "observed_head": "3c8f7e41edf5c797ffb655588a14e9a059eab9aa",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 189,
+  "task_revision": 190,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T20:01:12+00:00",
+  "updated_at": "2026-09-25T20:01:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---
@@ -494,3 +494,7 @@ until the service can prove the complete authority chain.
 
 - 2026-09-25T20:01:12+00:00: Recorded command exit 0; command argv SHA-256
   10ffdfa0d30719f50bf21fbc01c140375702acb07cf7c4b5d8dc85839df9e3bd.
+
+- 2026-09-25T20:01:40+00:00: Focused orchestrator tests/clippy passed. Hosted policy gate failed
+  only because deny.toml lacked the locked Unicode-3.0 dependency license; corrected and pushed
+  signed+DCO. No merge until all exact-head checks are green.
