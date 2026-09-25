@@ -9,17 +9,17 @@
   "id": "AR-1450",
   "next_action": "Implement runtime-owned bootstrap/provisioner using existing LiveProviderProvisioner pattern; own relay/lease roots, tool pins, sandbox construction, attestation and teardown internally.",
   "observed_branch": "feature/ar-1450-runtime-owned-local-replay-acquisition",
-  "observed_dirty": 1,
-  "observed_head": "735d3a2e655499491dc5fdd380ffdd215a2a062b",
+  "observed_dirty": 0,
+  "observed_head": "7c1a93a6f4dfb1482f0a40e84554eb702aac6a21",
   "owner": "ar1450-replay-luna56",
   "plan": "../plans/AR-1450.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep local replay authority acquisition inside the runtime boundary.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Runtime-owned local replay acquisition factory",
-  "updated_at": "2026-09-25T17:24:23+00:00",
+  "updated_at": "2026-09-25T17:24:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1450-runtime-owned-local-replay-acquisition"
 }
 ---
