@@ -23,7 +23,7 @@
   "task_revision": 3,
   "title": "Runtime mock-attempt backend",
   "updated_at": "2026-09-25T14:41:03+00:00",
-  "worktree_key": "agent-systems-benchmark-ar-1433-runtime-mock-attempt-backend"
+  "worktree_key": "agent-systems-benchmark"
 }
 ---
 
