@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire deterministic local mock attempts into asb run and sweep configuration qualification.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Local mock CLI wiring",
-  "updated_at": "2026-09-25T00:12:46+00:00",
+  "updated_at": "2026-09-25T00:12:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1435-local-mock-cli-wiring"
 }
 ---
@@ -213,3 +213,6 @@ it must not contact OpenRouter or any external provider, mint
   (pipefail), workspace clippy -D warnings, rustdoc -D warnings, fmt, release build, diff-check all
   pass after correction. Branch force-free push advanced PR #316 to exact fresh head; hosted checks
   restarted. No production authority or external provider access.
+
+- 2026-09-25T00:12:59+00:00: Recorded command exit 0; command argv SHA-256
+  c98d51049b3b3c7500782bf630a590cccc0c83ee24520b4f040aa1aeb18c8083.
