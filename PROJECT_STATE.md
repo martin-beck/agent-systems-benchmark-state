@@ -12,7 +12,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- | --- |
 | #327 | `feature/ar-1338-guided-asb-command-wrapper@4d42f598127d` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): extend guided ASB workflow |
 | #328 | `feature/ar-1450-runtime-owned-local-replay-acquisition@dc2e077de961` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(runtime): add local replay provisioning boundary |
-| #330 | `feature/ar-1452-runtime-orchestration-service@d1c5b506ca09` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | feat(orchestrator): add runtime-owned admission service |
+| #330 | `feature/ar-1452-runtime-orchestration-service@d1c5b506ca09` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(orchestrator): add runtime-owned admission service |
 
 ## Recent workflows
 
@@ -20,7 +20,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 36180858771 | `d1c5b506ca09` | pull_request | Hosted portability and native qualification | completed:success |
 | 36180858769 | `d1c5b506ca09` | pull_request | Huawei MIT source headers | completed:success |
-| 36180858728 | `d1c5b506ca09` | pull_request | Fault assurance | in_progress:- |
+| 36180858728 | `d1c5b506ca09` | pull_request | Fault assurance | completed:success |
 | 36180858727 | `d1c5b506ca09` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36180858726 | `d1c5b506ca09` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 36180858710 | `d1c5b506ca09` | pull_request | Rust verification | in_progress:- |
