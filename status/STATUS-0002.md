@@ -98,11 +98,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1430](../tasks/AR-1430-literature-workload-catalog-gap-closure.md): Literature workload catalog gap closure | Unclaimed | Close documented literature workload identity and selector gaps without enabling live providers or external acquisition. | Promote after AR-1423 and AR-1416 are released; add the complete stable literature workload identity/catalog and fail-closed selector boundary. |
+| P1 | [AR-1430](../tasks/AR-1430-literature-workload-catalog-gap-closure.md): Literature workload catalog gap closure | ar1430_literature_workload_catalog_luna56 | Close documented literature workload identity and selector gaps without enabling live providers or external acquisition. | Promote after AR-1423 and AR-1416 are released; add the complete stable literature workload identity/catalog and fail-closed selector boundary. |
 
 ### Blocked (66)
 
