@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1453](tasks/AR-1453-frontend-orchestration-wiring.md): Route ASB frontends through central orchestration | Make CLI and control use the central service for every run lifecycle. | PR #333 exact head 841351bc55d67ae07178002154a4201f2eabae8f is running hosted checks and review; require all terminal-success checks before merge. Hosted state-root failure was not reproducible locally (default and serial suites pass); preserve it as historical evidence. | ar1453-frontend-orchestration-luna56 |
+| P0 | [AR-1453](tasks/AR-1453-frontend-orchestration-wiring.md): Route ASB frontends through central orchestration | Make CLI and control use the central service for every run lifecycle. | Repair hosted Rust failure in new in-flight cancellation test: Option::unwrap at control.rs:6708; make cancellation test deterministic while preserving authority semantics, then rerun all gates and review. | ar1453-frontend-orchestration-luna56 |
 
 ## Open
 

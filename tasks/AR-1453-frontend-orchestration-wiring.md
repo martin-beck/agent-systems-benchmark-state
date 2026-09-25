@@ -7,7 +7,7 @@
     "AR-1452"
   ],
   "id": "AR-1453",
-  "next_action": "PR #333 exact head 841351bc55d67ae07178002154a4201f2eabae8f is running hosted checks and review; require all terminal-success checks before merge. Hosted state-root failure was not reproducible locally (default and serial suites pass); preserve it as historical evidence.",
+  "next_action": "Repair hosted Rust failure in new in-flight cancellation test: Option::unwrap at control.rs:6708; make cancellation test deterministic while preserving authority semantics, then rerun all gates and review.",
   "observed_branch": "feature/ar-1453-frontend-orchestration-wiring",
   "observed_dirty": 0,
   "observed_head": "841351bc55d67ae07178002154a4201f2eabae8f",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 105,
+  "task_revision": 106,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T22:06:55+00:00",
+  "updated_at": "2026-09-25T22:10:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
@@ -341,3 +341,8 @@ asb-control protocol after this AR is complete.
   lifecycle/deadline tests pass; serial full asb-cli lib 111 passed; workflow transcript, clippy -D
   warnings, fmt pass. State-root exclusivity test passes individually and in default/serial full
   suites.
+
+- 2026-09-25T22:10:52+00:00: Hosted Rust run 36195059313 failed
+  in_flight_authority_cancellation_is_observed_without_service_lock with Option::unwrap at
+  control.rs:6708 (110 passed). Prior state-root failure did not recur; deadline and other lifecycle
+  tests passed. Worker assigned repair; no merge.
