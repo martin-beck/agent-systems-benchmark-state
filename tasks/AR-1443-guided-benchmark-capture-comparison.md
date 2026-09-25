@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make benchmark, offline capture/replay, and result comparison a single guided workflow.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Guided benchmark capture and comparison",
-  "updated_at": "2026-09-25T15:35:38+00:00",
+  "updated_at": "2026-09-25T15:35:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1443-guided-benchmark-capture-comparison"
 }
 ---
@@ -40,3 +40,6 @@ be independently identifiable as replay.
 
 - 2026-09-25T15:35:38+00:00: Recorded command exit 0; command argv SHA-256
   ef19043205064ea87bec66574bfe246191c9311bc8c404cd8e347d08fbdc44f0.
+
+- 2026-09-25T15:35:54+00:00: Recorded command exit 0; command argv SHA-256
+  50b61ac7aab8474303a8b6b86c974ff581a536e716cf0a20eafbddd30a747214.
