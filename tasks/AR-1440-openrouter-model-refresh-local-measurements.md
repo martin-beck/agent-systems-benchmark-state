@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1440-openrouter-model-refresh-local-measurements",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-25T15:20:57+00:00",
   "depends_on": [
     "AR-1328",
     "AR-1436",
@@ -13,15 +13,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "",
+  "owner": "ar1440-model-refresh-luna56",
   "plan": "../plans/AR-1440.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Refresh the stale OpenRouter free-model pin and qualify local-only benchmark measurements.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Refresh OpenRouter model pin and local measurements",
-  "updated_at": "2026-09-25T13:19:22+00:00",
+  "updated_at": "2026-09-25T13:20:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1440-openrouter-model-refresh-local-measurements"
 }
 ---
@@ -43,3 +43,5 @@ tests for stale/mismatched model identities and unavailable pins.
 
 - 2026-09-25T13:19:22+00:00: Dependencies AR-1328, AR-1436 and AR-1437 are released; begin exact
   model refresh and operator-only measurements without resuming blocked AR-1329.
+
+- 2026-09-25T13:20:57+00:00: Claimed by ar1440-model-refresh-luna56.
