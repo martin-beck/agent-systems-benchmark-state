@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the complete credential-free ASB local campaign and replay journey.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "ASB local campaign qualification",
-  "updated_at": "2026-09-25T15:28:52+00:00",
+  "updated_at": "2026-09-25T15:30:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1447"
 }
 ---
@@ -42,3 +42,6 @@ close the optional live capture chain AR-1330 through AR-1333.
 
 - 2026-09-25T15:28:39+00:00: Recorded command exit 0; command argv SHA-256
   3d4cc54827fa0ae5c402321266e4a8e9a84a69a17f7ff27b7a0f0c858d454784.
+
+- 2026-09-25T15:30:19+00:00: Recorded command exit 0; command argv SHA-256
+  c3f9678d3206e0fbf13f2d34754ef97ba70edb240f3eb5508653b98109335725.
