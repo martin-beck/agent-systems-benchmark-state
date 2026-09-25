@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Freeze one runtime-owned orchestration authority for every ASB run and attempt.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Central orchestration authority contract and ASB redesign",
-  "updated_at": "2026-09-25T17:50:37+00:00",
+  "updated_at": "2026-09-25T18:00:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1451-central-orchestration-authority-design"
 }
 ---
@@ -121,3 +121,6 @@ provider access.
 
 - 2026-09-25T17:50:37+00:00: Closed final schema-review findings with executable jsonschema
   validation, scorer/artifact bounds, fenced handles, and immutable schema identity.
+
+- 2026-09-25T18:00:21+00:00: Recorded command exit 1; command argv SHA-256
+  40180ea039fd18d47beab3405081fc432a1c34b488cf1cf8ed992ab60a0cf70f.
