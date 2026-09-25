@@ -9,7 +9,7 @@
     "AR-1437"
   ],
   "id": "AR-1440",
-  "next_action": "Refresh the dated OpenRouter free-model pin only after a live catalog probe identifies an available zero-cost model; update every profile/config/fixture/doc identity, add positive and negative pin tests, and run a bounded local measurement campaign without adding CI network access or persisting credentials/responses.",
+  "next_action": "Refresh the dated free-model pin from a live catalog; update every identity and test; retain provider-catalog/provider-plan as the sole provider/model/agent selection authority with stale and mixed-selection rejection; run bounded operator-only local measurements without CI network or persisted credentials/prompts/responses; publish exact-head evidence.",
   "observed_branch": "feature/ar-1440-openrouter-model-refresh-local-measurements",
   "observed_dirty": 8,
   "observed_head": "40c5c4118356df0e35d26df6933ddb07d2b4f517",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Refresh the stale OpenRouter free-model pin and qualify local-only benchmark measurements.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Refresh OpenRouter model pin and local measurements",
-  "updated_at": "2026-09-25T13:26:24+00:00",
+  "updated_at": "2026-09-25T13:27:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1440-openrouter-model-refresh-local-measurements"
 }
 ---
@@ -56,3 +56,6 @@ tests for stale/mismatched model identities and unavailable pins.
 
 - 2026-09-25T13:26:24+00:00: Recorded command exit 0; command argv SHA-256
   e4cf7907c5843af9e8e4d812ac349bfbe43737f1e85e65137977b0ab471c76cf.
+
+- 2026-09-25T13:27:38+00:00: Scope extended to make provider, model, and selected agent changes
+  catalog-driven and easy to regenerate without a second registry.
