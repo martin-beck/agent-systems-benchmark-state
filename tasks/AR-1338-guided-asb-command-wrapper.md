@@ -10,15 +10,18 @@
   ],
   "id": "AR-1338",
   "next_action": "Promote and claim the ASB-only wrapper implementation. Extend the existing bounded easy path to catalog-driven setup/selection, plan/run/sweep, report/compare, record/replay, generated private files, documentation, and offline hostile tests; optional live-provider capture remains separate.",
+  "observed_branch": "main",
+  "observed_dirty": 7,
+  "observed_head": "bd7d10d4a760a84fa42de2b1fa9e97e8ea85ba09",
   "owner": "coordinator-ar1338",
   "plan": "../plans/AR-1338.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Guided ASB command wrapper",
-  "updated_at": "2026-09-25T15:45:44+00:00",
+  "updated_at": "2026-09-25T15:45:56+00:00",
   "worktree_key": "agent-systems-benchmark"
 }
 ---
