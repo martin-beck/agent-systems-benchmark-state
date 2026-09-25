@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Deliver the runtime-owned strict-replay launch authority required by the replay CLI contract.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Runtime-owned strict-replay launch authority",
-  "updated_at": "2026-09-25T15:47:57+00:00",
+  "updated_at": "2026-09-25T15:48:16+00:00",
   "worktree_key": "agent-systems-benchmark"
 }
 ---
@@ -48,3 +48,6 @@ reachability.
   runtime-owned strict replay authority. Optional live capture AR-1330 remains separate.
 
 - 2026-09-25T15:47:57+00:00: Claimed by coordinator-ar1331.
+
+- 2026-09-25T15:48:16+00:00: Recorded command exit 0; command argv SHA-256
+  019774536693c0853a036a3a6fafb2fb59bf34f301bd785dea167af8c4561e75.
