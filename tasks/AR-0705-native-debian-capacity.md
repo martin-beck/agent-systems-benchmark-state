@@ -10,15 +10,18 @@
   ],
   "id": "AR-0705",
   "next_action": "Qualify native x86_64 Debian and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence.",
+  "observed_branch": "feature/native-debian-capacity",
+  "observed_dirty": 0,
+  "observed_head": "7390bcd2082700d0c9f04409732b48de8e9f8628",
   "owner": "ar0705_native_debian_luna56",
   "plan": "../plans/AR-0705.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify booted Debian on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Provide native Debian capacity",
-  "updated_at": "2026-09-25T11:49:35+00:00",
+  "updated_at": "2026-09-25T11:49:46+00:00",
   "worktree_key": "agent-systems-benchmark-native-debian-capacity"
 }
 ---
