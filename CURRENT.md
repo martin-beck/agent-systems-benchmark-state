@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1450](tasks/AR-1450-runtime-owned-local-replay-acquisition.md): Runtime-owned local replay acquisition factory | Keep local replay authority acquisition inside the runtime boundary. | Await PR #328 exact-head CI and independent review at 2791b63; native_evidence now requires process, metrics, and replay-authority for native qualification, with a negative missing-authority test. | ar1450-replay-luna56 |
+| P0 | [AR-1450](tasks/AR-1450-runtime-owned-local-replay-acquisition.md): Runtime-owned local replay acquisition factory | Keep local replay authority acquisition inside the runtime boundary. | Await PR #328 exact-head CI and independent review at 2832912; required replay-authority enforcement now has positive CLI forwarding and negative missing-check tests. | ar1450-replay-luna56 |
 | P0 | [AR-1453](tasks/AR-1453-frontend-orchestration-wiring.md): Route ASB frontends through central orchestration | Make CLI and control use the central service for every run lifecycle. | Promote after AR-1452 post-merge verification and wire run, sweep, replay, cancellation, and status through the service. | ar1453-frontend-orchestration-luna56 |
 
 ## Open

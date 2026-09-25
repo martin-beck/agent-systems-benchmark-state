@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1450-runtime-owned-local-replay-acquisition",
-  "checkpoint_commit": "2791b6328e206b946e3b45e18ee812d5f4423158",
+  "checkpoint_commit": "283291200b3b30164c6bd4df8b11eafae82189c3",
   "claim_expires": "2026-09-25T21:44:43+00:00",
   "depends_on": [
     "AR-1448"
   ],
   "id": "AR-1450",
-  "next_action": "Await PR #328 exact-head CI and independent review at 2791b63; native_evidence now requires process, metrics, and replay-authority for native qualification, with a negative missing-authority test.",
+  "next_action": "Await PR #328 exact-head CI and independent review at 2832912; required replay-authority enforcement now has positive CLI forwarding and negative missing-check tests.",
   "observed_branch": "feature/ar-1450-runtime-owned-local-replay-acquisition",
   "observed_dirty": 0,
   "observed_head": "283291200b3b30164c6bd4df8b11eafae82189c3",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep local replay authority acquisition inside the runtime boundary.",
-  "task_revision": 125,
+  "task_revision": 126,
   "title": "Runtime-owned local replay acquisition factory",
-  "updated_at": "2026-09-25T20:42:47+00:00",
+  "updated_at": "2026-09-25T20:43:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1450-runtime-owned-local-replay-acquisition"
 }
 ---
@@ -322,3 +322,6 @@ Requirements:
 
 - 2026-09-25T20:42:47+00:00: Recorded command exit 0; command argv SHA-256
   ac8d760cfb6a78974698c21ecd1eb9ce19436797be4405ca140009809f82a66c.
+
+- 2026-09-25T20:43:04+00:00: Native evidence tests now pass 22; staged test changes committed
+  signed+DCO and pushed. No merge attempted.
