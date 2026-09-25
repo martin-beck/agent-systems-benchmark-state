@@ -10,17 +10,17 @@
   "id": "AR-1437",
   "next_action": "Run focused/full offline gates, independent exact-head review, then publish PR.",
   "observed_branch": "feature/ar-1437-local-record-replay-campaign",
-  "observed_dirty": 2,
-  "observed_head": "18a0df9b4312e49196c1c8202b48a183ed83b073",
+  "observed_dirty": 0,
+  "observed_head": "a7d041bcf97cec413c1447fc7910f9fc3a4c4764",
   "owner": "codex-asb-ar1437-local-record-luna56",
   "plan": "../plans/AR-1437-local-record-replay-campaign.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify deterministic local record/replay and campaign journeys over the runtime mock.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Local record/replay campaign qualification",
-  "updated_at": "2026-09-25T01:31:32+00:00",
+  "updated_at": "2026-09-25T01:31:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1437-local-record-replay-campaign"
 }
 ---
