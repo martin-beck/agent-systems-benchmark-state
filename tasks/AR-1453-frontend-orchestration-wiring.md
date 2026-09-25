@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T21:07:42+00:00",
+  "updated_at": "2026-09-25T21:07:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
@@ -153,3 +153,6 @@ asb-control protocol after this AR is complete.
   ceac822ad15da1747fc8b7ad824a68928de663a0; exact base origin/main
   452f3ca29390ab37cf3aff8c813b92b54b163b20. Push and PR creation completed through handoffctl run.
   No review or hosted CI result is claimed yet.
+
+- 2026-09-25T21:07:51+00:00: Recorded command exit 0; command argv SHA-256
+  3ea06150297690e3ebf34ff22524675b021adcd9c417bb6e275ae371d8b601a9.
