@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #316 | `feature/ar-1435-local-mock-cli-wiring@dc52ca99aaea` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | Wire configured run and sweep through local mock attempts |
+| #316 | `feature/ar-1435-local-mock-cli-wiring@dc52ca99aaea` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | Wire configured run and sweep through local mock attempts |
 
 ## Recent workflows
 
@@ -18,13 +18,13 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 36076913528 | `dc52ca99aaea` | pull_request | Rust verification | in_progress:- |
 | 36076913503 | `dc52ca99aaea` | pull_request | Fault assurance | in_progress:- |
-| 36076913468 | `dc52ca99aaea` | pull_request | Emulated aarch64 portability | pending:- |
+| 36076913468 | `dc52ca99aaea` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 36076913460 | `dc52ca99aaea` | pull_request | Hosted portability and native qualification | in_progress:- |
-| 36076913458 | `dc52ca99aaea` | pull_request | Agent Workflow Quality shadow | in_progress:- |
-| 36076913453 | `dc52ca99aaea` | pull_request | Repository quality | pending:- |
-| 36076913447 | `dc52ca99aaea` | pull_request | Huawei MIT source headers | in_progress:- |
+| 36076913458 | `dc52ca99aaea` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 36076913453 | `dc52ca99aaea` | pull_request | Repository quality | in_progress:- |
+| 36076913447 | `dc52ca99aaea` | pull_request | Huawei MIT source headers | completed:success |
 | 36076913431 | `dc52ca99aaea` | pull_request | Formal assurance | in_progress:- |
 | 36076453046 | `8a4ab336b89b` | pull_request | Rust verification | completed:failure |
-| 36076453025 | `8a4ab336b89b` | pull_request | Repository quality | in_progress:- |
+| 36076453025 | `8a4ab336b89b` | pull_request | Repository quality | completed:cancelled |
 | 36076452997 | `8a4ab336b89b` | pull_request | Formal assurance | completed:success |
-| 36076452992 | `8a4ab336b89b` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 36076452992 | `8a4ab336b89b` | pull_request | Emulated aarch64 portability | completed:cancelled |
