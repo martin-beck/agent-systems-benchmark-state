@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify or repair the closed sha2 0.11 dependency update without weakening crypto or MSRV contracts.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "sha2 compatibility repair",
-  "updated_at": "2026-09-25T11:46:48+00:00",
+  "updated_at": "2026-09-25T11:46:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1407-sha2-compatibility"
 }
 ---
@@ -81,3 +81,6 @@ compatibility and digest parity are proven.
 
 - 2026-09-25T11:46:36+00:00: Recorded command exit 0; command argv SHA-256
   7a03f3b05d79b94b2e4e2555fd57095edfeb2564035e4e4879ce5de5c9c30b71.
+
+- 2026-09-25T11:46:51+00:00: Recorded command exit 0; command argv SHA-256
+  ff6d1fa7a7185010f75fcfafe4bdc1bdd5b9804d8c2b3e7abdd8a1b96cd81c63.
