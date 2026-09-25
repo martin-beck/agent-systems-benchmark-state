@@ -11,16 +11,16 @@
   "next_action": "Rerun full workspace tests and all applicable offline gates at 3e80aa3; then independent review and exact-head PR.",
   "observed_branch": "feature/ar-1436-local-guided-cli-wrapper",
   "observed_dirty": 0,
-  "observed_head": "2dbbfd89adce0fbf7358e557495654a05552f30b",
+  "observed_head": "3e80aa3a61dac73f758cceaa6daf9f7098b45169",
   "owner": "codex-asb-ar1436-local-guided-luna56",
   "plan": "../plans/AR-1436-local-guided-cli-wrapper.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a catalog-driven guided CLI wrapper for deterministic local mock qualification.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Local guided CLI wrapper",
-  "updated_at": "2026-09-25T00:50:44+00:00",
+  "updated_at": "2026-09-25T00:50:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1436-local-guided-cli-wrapper"
 }
 ---
