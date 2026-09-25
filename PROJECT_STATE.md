@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #327 | `feature/ar-1338-guided-asb-command-wrapper@76524a7e0819` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | feat(cli): extend guided ASB workflow |
+| #327 | `feature/ar-1338-guided-asb-command-wrapper@76524a7e0819` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): extend guided ASB workflow |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36161928603 | `76524a7e0819` | pull_request | Fault assurance | in_progress:- |
-| 36161928262 | `76524a7e0819` | pull_request | Formal assurance | in_progress:- |
+| 36161928603 | `76524a7e0819` | pull_request | Fault assurance | completed:success |
+| 36161928262 | `76524a7e0819` | pull_request | Formal assurance | completed:success |
 | 36161928258 | `76524a7e0819` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36161928229 | `76524a7e0819` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 36161928208 | `76524a7e0819` | pull_request | Rust verification | in_progress:- |
