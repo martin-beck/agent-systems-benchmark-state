@@ -9,7 +9,7 @@
     "AR-1437"
   ],
   "id": "AR-1443",
-  "next_action": "Promote after AR-1442, AR-1447 and AR-1437 are released; implement and qualify the ASB-only selection-driven benchmark, local capture/replay, and comparison journey. Optional live capture AR-1332/AR-1333 remains separate.",
+  "next_action": "Done: ASB-only guided capture/replay/comparison qualification verified on protected merge 2872a31f2ee90ac5df1a47203b2a618b1829cfec. CLI tests passed (107 unit, 12 capability, 3 CLI E2E, 5 guide, 2 setup, 4 lifecycle, 3 transcript); optional live capture and asb-tui remain separate.",
   "observed_branch": "qualification/ar-1443-guided-benchmark-capture-comparison",
   "observed_dirty": 0,
   "observed_head": "2872a31f2ee90ac5df1a47203b2a618b1829cfec",
