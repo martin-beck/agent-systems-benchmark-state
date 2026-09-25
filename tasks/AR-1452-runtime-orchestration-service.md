@@ -12,17 +12,17 @@
   "id": "AR-1452",
   "next_action": "PR #330 exact head d1c5b50 blocks cancel on NeedsReconciliation and requires source-level reconcile/cancel hooks before marking interrupted attempts Failed. Await exact-head CI and review; hard timeout still depends on cooperative runtime cancellation semantics.",
   "observed_branch": "feature/ar-1452-runtime-orchestration-service",
-  "observed_dirty": 2,
-  "observed_head": "d1c5b506ca09e0f47a0602e4a260a61fd760ecfa",
+  "observed_dirty": 0,
+  "observed_head": "bed7bb3ae5183f891cba14b539371d2f78147b91",
   "owner": "coordinator-orchestrator-impl",
   "plan": "../plans/AR-1452.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 150,
+  "task_revision": 151,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T19:43:00+00:00",
+  "updated_at": "2026-09-25T19:43:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---
