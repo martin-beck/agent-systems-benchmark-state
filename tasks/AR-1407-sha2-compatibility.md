@@ -8,18 +8,18 @@
   ],
   "id": "AR-1407",
   "next_action": "Promote after AR-1405; reproduce the sha2 0.11 compile/MSRV failure and either repair it with digest-parity evidence or preserve the supersession.",
-  "observed_branch": "",
+  "observed_branch": "repair/ar-1407-sha2-compatibility",
   "observed_dirty": 0,
-  "observed_head": "0000000000000000000000000000000000000000",
+  "observed_head": "7390bcd2082700d0c9f04409732b48de8e9f8628",
   "owner": "ar1407_sha2_compat_luna56",
   "plan": "../plans/AR-1407-sha2-compatibility.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify or repair the closed sha2 0.11 dependency update without weakening crypto or MSRV contracts.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "sha2 compatibility repair",
-  "updated_at": "2026-09-25T11:41:49+00:00",
+  "updated_at": "2026-09-25T11:42:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1407-sha2-compatibility"
 }
 ---
