@@ -12,7 +12,7 @@
   "id": "AR-1338",
   "next_action": "Open after AR-1448 supplies the runtime-owned strict replay authority. Then extend the existing bounded easy path to catalog-driven setup/selection, plan/run/sweep, report/compare, record/replay, generated private files, documentation, and offline hostile tests; optional live-provider capture remains separate.",
   "observed_branch": "feature/ar-1338-guided-asb-command-wrapper",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "f03d9e484d6ca73eacdbd5476980bf33ca737540",
   "owner": "coordinator-ar1338",
   "plan": "../plans/AR-1338.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Guided ASB command wrapper",
-  "updated_at": "2026-09-25T16:19:04+00:00",
+  "updated_at": "2026-09-25T16:19:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1338-guided-asb-command-wrapper"
 }
 ---
