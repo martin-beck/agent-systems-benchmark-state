@@ -109,12 +109,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md): First-customer production qualification | coordinator-ar1446 | Qualify ASB in a disposable first-customer production-like environment. | Promote and claim this ASB-only disposable first-customer qualification gate. Verify clean install/bootstrap, setup/reconfiguration, local benchmark matrix, strict offline replay, recovery, cleanup, rollback, and bounded readiness evidence. AR-0903&#x27;s broad release package and AR-1336&#x27;s optional live-provider documentation remain separate; AR-1444/asb-tui and AR-1329 external-provider integration must not block this gate. |
-
 ### Blocked (68)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -262,7 +256,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (318)
+### Done (319)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -413,6 +407,7 @@
 | P0 | [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md): Guided setup wizard orchestration | Unclaimed | Qualify ASB CLI first-run and reconfiguration of agents, providers, auth methods, models and defaults. | Done: ASB CLI setup/reconfiguration contract and full CLI qualification passed against protected merge 2872a31f; preserve standalone TUI wiring as separate downstream work. |
 | P0 | [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md): Guided benchmark capture and comparison | Unclaimed | Make benchmark, offline capture/replay, and result comparison a single guided workflow. | Done: ASB-only guided capture/replay/comparison qualification verified on protected merge 2872a31f2ee90ac5df1a47203b2a618b1829cfec. CLI tests passed (107 unit, 12 capability, 3 CLI E2E, 5 guide, 2 setup, 4 lifecycle, 3 transcript); optional live capture and asb-tui remain separate. |
 | P0 | [AR-1445](../tasks/AR-1445-protected-main-topology-repair-openrouter.md): Protected-main topology repair for OpenRouter refresh | Unclaimed | Repair the single-parent protected-main merge produced for the OpenRouter model refresh. | PR #324 merged as two-parent 5871de7cad4ee7e496ffce1c5e1fe51862660bfc; monitor seven exact-main workflows 36145976341, 36145976337, 36145976326, 36145976266, 36145976239, 36145976238, 36145976223 to terminal success. Record that GitHub has no independent review record, then update/release AR-1440 only after all seven pass. |
+| P0 | [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md): First-customer production qualification | Unclaimed | Qualify ASB in a disposable first-customer production-like environment. | Promote and claim this ASB-only disposable first-customer qualification gate. Verify clean install/bootstrap, setup/reconfiguration, local benchmark matrix, strict offline replay, recovery, cleanup, rollback, and bounded readiness evidence. AR-0903&#x27;s broad release package and AR-1336&#x27;s optional live-provider documentation remain separate; AR-1444/asb-tui and AR-1329 external-provider integration must not block this gate. |
 | P0 | [AR-1447](../tasks/AR-1447-asb-local-campaign-qualification.md): ASB local campaign qualification | Unclaimed | Qualify the complete credential-free ASB local campaign and replay journey. | Done: ASB-only local campaign qualification verified on protected merge 2872a31f2ee90ac5df1a47203b2a618b1829cfec. Targeted guided-local and exact-campaign tests plus full asb-cli library tests (107/107) passed; AR-1338 remains a separate enhancement. |
 | P1 | [AR-0002](../tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Unclaimed | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. |
 | P1 | [AR-0003](../tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Unclaimed | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. |

@@ -2,7 +2,7 @@
 {
   "branch": "qualification/ar-1446-first-customer-production",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-25T17:11:34+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1433",
     "AR-1441",
@@ -14,15 +14,15 @@
   "observed_branch": "qualification/ar-1446-first-customer-production",
   "observed_dirty": 0,
   "observed_head": "2872a31f2ee90ac5df1a47203b2a618b1829cfec",
-  "owner": "coordinator-ar1446",
+  "owner": "",
   "plan": "../plans/AR-1446.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Qualify ASB in a disposable first-customer production-like environment.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "First-customer production qualification",
-  "updated_at": "2026-09-25T15:43:16+00:00",
+  "updated_at": "2026-09-25T15:43:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1446-first-customer-production"
 }
 ---
@@ -62,3 +62,12 @@ This is the customer-facing integration gate. The deterministic local mock path 
 
 - 2026-09-25T15:43:16+00:00: Recorded command exit 0; command argv SHA-256
   58ad9b03710727e55f9300c6ae75874f499c788bfe1a1c8715b5d87cd762e594.
+
+- 2026-09-25T15:43:44+00:00: ASB-only first-customer production-like qualification complete on
+  protected merge 2872a31f2ee90ac5df1a47203b2a618b1829cfec. Disposable bootstrap/lifecycle test
+  passed; cargo test --locked -p asb-cli --tests passed 107 unit + 12 capability + 3 CLI E2E + 5
+  guide + 2 setup + 4 lifecycle + 3 transcript; cargo test --locked -p asb-runtime --lib passed 127
+  with 1 capability-gated ignore; cargo test --locked --workspace --lib passed all workspace library
+  suites including 35 workload/literature tests. A transient no-space build failure was recorded,
+  explicit stale target caches were cleaned, and the exact gate reran green. No credentials or
+  live-provider reachability were required.
