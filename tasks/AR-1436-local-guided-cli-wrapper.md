@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1436-local-guided-cli-wrapper",
-  "checkpoint_commit": "671bb7e6e3b50bcbe62f731feecb6761df39d2b5",
+  "checkpoint_commit": "671bb7e83c61785c2bdd1c3c94b962d90f9e0ec7",
   "claim_expires": "2026-09-25T02:43:20+00:00",
   "depends_on": [
     "AR-1435",
     "AR-1328"
   ],
   "id": "AR-1436",
-  "next_action": "Rerun full workspace tests, clippy, docs, release build and privacy gates at 671bb7e; then independent review and exact-head PR.",
+  "next_action": "Rerun full workspace tests serially to distinguish existing state-root race; then clippy/docs/release/privacy gates.",
   "observed_branch": "feature/ar-1436-local-guided-cli-wrapper",
   "observed_dirty": 0,
   "observed_head": "671bb7e83c61785c2bdd1c3c94b962d90f9e0ec7",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a catalog-driven guided CLI wrapper for deterministic local mock qualification.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Local guided CLI wrapper",
-  "updated_at": "2026-09-25T00:53:34+00:00",
+  "updated_at": "2026-09-25T00:53:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1436-local-guided-cli-wrapper"
 }
 ---
@@ -104,3 +104,9 @@ weakening. Require focused/full/review/PR/seven post-merge gates.
 
 - 2026-09-25T00:53:23+00:00: Recorded command exit 101; command argv SHA-256
   11bd125eca1a90017ea3ff21b22e028ea8405e6387607e767fde008f6bf77b8d.
+
+- 2026-09-25T00:53:49+00:00: Diagnosed full test exit 101 at 00:53:23: two pre-existing control
+  tests failed under parallel workspace execution with control state root already owned
+  (state_root_is_exclusive_and_uncertain_restart_fails_closed;
+  recording_campaign_plan_is_durable_idempotent_and_not_offline_ready). Guided wrapper tests passed;
+  no wrapper or live-boundary failure. Preserve evidence and rerun serially before publication.

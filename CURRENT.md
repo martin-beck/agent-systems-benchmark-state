@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1436](tasks/AR-1436-local-guided-cli-wrapper.md): Local guided CLI wrapper | Add a catalog-driven guided CLI wrapper for deterministic local mock qualification. | Rerun full workspace tests, clippy, docs, release build and privacy gates at 671bb7e; then independent review and exact-head PR. | codex-asb-ar1436-local-guided-luna56 |
+| P1 | [AR-1436](tasks/AR-1436-local-guided-cli-wrapper.md): Local guided CLI wrapper | Add a catalog-driven guided CLI wrapper for deterministic local mock qualification. | Rerun full workspace tests serially to distinguish existing state-root race; then clippy/docs/release/privacy gates. | codex-asb-ar1436-local-guided-luna56 |
 
 ## Blocked
 
