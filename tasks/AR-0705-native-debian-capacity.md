@@ -2,7 +2,7 @@
 {
   "branch": "feature/native-debian-capacity",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-25T14:10:57+00:00",
   "depends_on": [
     "AR-0704",
     "AR-0201",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/native-debian-capacity",
   "observed_dirty": 0,
   "observed_head": "7390bcd2082700d0c9f04409732b48de8e9f8628",
-  "owner": "",
+  "owner": "ar0705_capacity_requal_luna56",
   "plan": "../plans/AR-0705.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Qualify booted Debian on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Provide native Debian capacity",
-  "updated_at": "2026-09-25T12:10:49+00:00",
+  "updated_at": "2026-09-25T12:10:57+00:00",
   "worktree_key": "agent-systems-benchmark-native-debian-capacity"
 }
 ---
@@ -74,3 +74,5 @@ native identity, kernel/distribution provenance, cleanup, cost/availability boun
 
 - 2026-09-25T12:10:49+00:00: QEMU system emulator is now installed; re-audit pinned emulated AArch64
   and booted Debian capacity without claiming native ARM64.
+
+- 2026-09-25T12:10:57+00:00: Claimed by ar0705_capacity_requal_luna56.

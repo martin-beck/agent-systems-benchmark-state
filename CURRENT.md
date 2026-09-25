@@ -8,12 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1438](tasks/AR-1438-hardened-trusted-runner-validation.md): Hardened trusted-runner validation repair | Make protected trusted-runner lifecycle validation compatible with hardened rootless execution. | Promote and repair the trusted development-host validation so it passes under the approved NoNewPrivileges runner hardening without weakening isolation or skipping lifecycle checks. | ar1438_runner_validation_luna56 |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P2 | [AR-0705](tasks/AR-0705-native-debian-capacity.md): Provide native Debian capacity | Qualify booted Debian on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 Debian and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. | - |
+| P2 | [AR-0705](tasks/AR-0705-native-debian-capacity.md): Provide native Debian capacity | Qualify booted Debian on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 Debian and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. | ar0705_capacity_requal_luna56 |
 
 ## Blocked
 
