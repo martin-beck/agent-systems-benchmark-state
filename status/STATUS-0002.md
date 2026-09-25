@@ -120,7 +120,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1453](../tasks/AR-1453-frontend-orchestration-wiring.md): Route ASB frontends through central orchestration | ar1453-frontend-orchestration-luna56 | Make CLI and control use the central service for every run lifecycle. | PR #333 exact head 37d9517317ed68ea299229d0bf7b1dc8d447f60b is running hosted checks and independent review; require terminal-success checks and review before merge. Preserve failed 36195718695 evidence. |
+| P0 | [AR-1453](../tasks/AR-1453-frontend-orchestration-wiring.md): Route ASB frontends through central orchestration | ar1453-frontend-orchestration-luna56 | Make CLI and control use the central service for every run lifecycle. | Monitor seven exact-main post-merge workflows for merge 23b2fb5f241934168131efe6cd5173d5d316a857; verify all green before releasing AR-1453. |
 
 ### Open (1)
 
