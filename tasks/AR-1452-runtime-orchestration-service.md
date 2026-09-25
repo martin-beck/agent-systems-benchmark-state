@@ -12,7 +12,7 @@
   "id": "AR-1452",
   "next_action": "PR #330 exact head bed7bb3 scopes local cancellation to the server-issued attempt ID, adds runtime per-attempt cancellation tracking, and invokes cleanup on ordinary execution/evidence failures. Await exact-head CI/review; timeout remains cooperative adapter contract.",
   "observed_branch": "feature/ar-1452-runtime-orchestration-service",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "bed7bb3ae5183f891cba14b539371d2f78147b91",
   "owner": "coordinator-orchestrator-impl",
   "plan": "../plans/AR-1452.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 154,
+  "task_revision": 155,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T19:44:26+00:00",
+  "updated_at": "2026-09-25T19:44:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---

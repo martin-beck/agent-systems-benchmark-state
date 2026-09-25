@@ -12,7 +12,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- | --- |
 | #327 | `feature/ar-1338-guided-asb-command-wrapper@4d42f598127d` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): extend guided ASB workflow |
 | #328 | `feature/ar-1450-runtime-owned-local-replay-acquisition@dc2e077de961` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(runtime): add local replay provisioning boundary |
-| #330 | `feature/ar-1452-runtime-orchestration-service@bed7bb3ae518` | `main` | UNSTABLE | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(orchestrator): add runtime-owned admission service |
+| #330 | `feature/ar-1452-runtime-orchestration-service@bed7bb3ae518` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(orchestrator): add runtime-owned admission service |
 
 ## Recent workflows
 
@@ -22,7 +22,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36181428242 | `bed7bb3ae518` | pull_request | Rust verification | in_progress:- |
 | 36181428239 | `bed7bb3ae518` | pull_request | Hosted portability and native qualification | in_progress:- |
 | 36181428236 | `bed7bb3ae518` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 36181428179 | `bed7bb3ae518` | pull_request | Formal assurance | queued:- |
+| 36181428179 | `bed7bb3ae518` | pull_request | Formal assurance | in_progress:- |
 | 36181428127 | `bed7bb3ae518` | pull_request | Fault assurance | in_progress:- |
 | 36181428125 | `bed7bb3ae518` | pull_request | Huawei MIT source headers | completed:success |
 | 36181428118 | `bed7bb3ae518` | pull_request | Agent Workflow Quality shadow | completed:success |
