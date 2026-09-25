@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1448](tasks/AR-1448-runtime-replay-authority-source.md): Runtime replay authority source | Materialize runtime-owned strict replay authority for normal CLI replay. | Claim an isolated worktree and implement the missing bounded control/runtime materializer: compose validated replay launch input, benchmark lease, cassette binding, runtime token, and backend internally, then inject only opaque authority into asb-cli. Preserve CLI-only fail-closed behavior and strict offline denial. | coordinator-ar1448 |
+| P0 | [AR-1448](tasks/AR-1448-runtime-replay-authority-source.md): Runtime replay authority source | Materialize runtime-owned strict replay authority for normal CLI replay. | PR #326 is open at exact head 1b70b4691a4464e44ccc091705194e67a6024dc0. Focused runtime/CLI gates pass; monitor the three remaining exact-head checks (Rust, Repository quality, Emulated AArch64) and independent review. Merge only after all required checks are green; then run post-merge gates. | coordinator-ar1448 |
 
 ## Open
 

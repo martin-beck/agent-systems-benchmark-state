@@ -8,7 +8,7 @@
     "AR-1446"
   ],
   "id": "AR-1448",
-  "next_action": "Claim an isolated worktree and implement the missing bounded control/runtime materializer: compose validated replay launch input, benchmark lease, cassette binding, runtime token, and backend internally, then inject only opaque authority into asb-cli. Preserve CLI-only fail-closed behavior and strict offline denial.",
+  "next_action": "PR #326 is open at exact head 1b70b4691a4464e44ccc091705194e67a6024dc0. Focused runtime/CLI gates pass; monitor the three remaining exact-head checks (Rust, Repository quality, Emulated AArch64) and independent review. Merge only after all required checks are green; then run post-merge gates.",
   "observed_branch": "feature/ar-1448-runtime-replay-authority-source",
   "observed_dirty": 0,
   "observed_head": "1b70b4691a4464e44ccc091705194e67a6024dc0",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize runtime-owned strict replay authority for normal CLI replay.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Runtime replay authority source",
-  "updated_at": "2026-09-25T16:08:03+00:00",
+  "updated_at": "2026-09-25T16:08:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1448-runtime-replay-authority-source"
 }
 ---
@@ -98,3 +98,6 @@ CLI and do not make external provider access a prerequisite.
   e232b91627a7f738c22304e960a70f59cb21b5a754d110d67493f2ed9f4e13d1.
 
 - 2026-09-25T16:08:03+00:00: Heartbeat by coordinator-ar1448.
+
+- 2026-09-25T16:08:16+00:00: Implementation and signed PR published; hosted checks remain in
+  progress.
