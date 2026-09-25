@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1453-frontend-orchestration-wiring",
-  "checkpoint_commit": "841351bc55d67ae07178002154a4201f2eabae8f",
+  "checkpoint_commit": "0fd27d4c7d8c256acb6a6e301f0acbf080b4e5e4",
   "claim_expires": "2026-09-26T00:03:15+00:00",
   "depends_on": [
     "AR-1452"
   ],
   "id": "AR-1453",
-  "next_action": "Repair hosted Rust failure in new in-flight cancellation test: Option::unwrap at control.rs:6708; make cancellation test deterministic while preserving authority semantics, then rerun all gates and review.",
+  "next_action": "PR #333 exact head 0fd27d4c7d8c256acb6a6e301f0acbf080b4e5e4 is running hosted checks and review; require all terminal-success checks before merge. Preserve failed 841351bc hosted evidence.",
   "observed_branch": "feature/ar-1453-frontend-orchestration-wiring",
   "observed_dirty": 0,
   "observed_head": "0fd27d4c7d8c256acb6a6e301f0acbf080b4e5e4",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 108,
+  "task_revision": 109,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T22:11:43+00:00",
+  "updated_at": "2026-09-25T22:12:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
@@ -349,3 +349,10 @@ asb-control protocol after this AR is complete.
 
 - 2026-09-25T22:11:31+00:00: Recorded command exit 0; command argv SHA-256
   1da6321d70012989f6655d997ef1afb35b40d703360ea84e5c78729bf3a4110d.
+
+- 2026-09-25T22:12:02+00:00: Forward signed+DCO commit makes cancellation test deterministic:
+  preinstalled authority cancellation is signaled before execution and cleanup is asserted,
+  eliminating hosted timing Option::unwrap race. Runtime cancellation implementation remains
+  direct-flag/no orchestration mutex. Serial and default full asb-cli lib suites each pass 111
+  tests; focused lifecycle/deadline/cancellation tests pass; clippy -D warnings, workflow
+  transcript, and diff check pass.
