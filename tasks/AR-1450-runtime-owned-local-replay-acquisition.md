@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1450-runtime-owned-local-replay-acquisition",
-  "checkpoint_commit": "283291200b3b30164c6bd4df8b11eafae82189c3",
+  "checkpoint_commit": "a0bd63d3edc539ad1aeefba2e80c76ac3a6ebb9c",
   "claim_expires": "2026-09-25T23:14:06+00:00",
   "depends_on": [
     "AR-1448"
   ],
   "id": "AR-1450",
-  "next_action": "Await PR #328 exact-head CI and independent review at 2832912; required replay-authority enforcement now has positive CLI forwarding and negative missing-check tests.",
+  "next_action": "Release-ready: PR #328 head 2832912 passed exact-head checks and independent review; merge 452f3ca was repaired by AR-1454 merge a0bd63d3 with all seven post-merge workflows green.",
   "observed_branch": "feature/ar-1450-runtime-owned-local-replay-acquisition",
   "observed_dirty": 0,
   "observed_head": "283291200b3b30164c6bd4df8b11eafae82189c3",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep local replay authority acquisition inside the runtime boundary.",
-  "task_revision": 130,
+  "task_revision": 131,
   "title": "Runtime-owned local replay acquisition factory",
-  "updated_at": "2026-09-25T21:14:06+00:00",
+  "updated_at": "2026-09-25T21:19:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1450-runtime-owned-local-replay-acquisition"
 }
 ---
@@ -334,3 +334,8 @@ Requirements:
   c837e530a3d77ba038acbbfef2f0be37140811fb2b8a37f33a08a1e8120b1d6c.
 
 - 2026-09-25T21:14:06+00:00: Heartbeat by ar1450-replay-luna56.
+
+- 2026-09-25T21:19:56+00:00: AR-1454 repaired the only post-merge tree-policy/DCO failure after PR
+  #328. Preserve PR #328 exact-head evidence, merge 452f3ca, failed workflows 36188339692 and
+  36188339854, repair PR #331, merge a0bd63d, and seven successful post-merge workflows. Runtime
+  replay tests and policy remain green.
