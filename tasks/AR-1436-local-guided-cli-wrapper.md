@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a catalog-driven guided CLI wrapper for deterministic local mock qualification.",
-  "task_revision": 67,
+  "task_revision": 68,
   "title": "Local guided CLI wrapper",
-  "updated_at": "2026-09-25T01:11:46+00:00",
+  "updated_at": "2026-09-25T01:12:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1436-local-guided-cli-wrapper"
 }
 ---
@@ -234,4 +234,7 @@ weakening. Require focused/full/review/PR/seven post-merge gates.
   36080877969; Huawei headers 36080877995; Formal assurance 36080877977.
 
 - 2026-09-25T01:11:46+00:00: Recorded command exit 0; command argv SHA-256
+  fdddc6853989821ec06923ed9fef6d8c6a2b91ac37153f9408583fba8bb9b4aa.
+
+- 2026-09-25T01:12:40+00:00: Recorded command exit 0; command argv SHA-256
   fdddc6853989821ec06923ed9fef6d8c6a2b91ac37153f9408583fba8bb9b4aa.
