@@ -19,7 +19,7 @@
   "task_revision": 3,
   "title": "Guided benchmark capture and comparison",
   "updated_at": "2026-09-25T15:32:47+00:00",
-  "worktree_key": "agent-systems-benchmark-ar-1443-guided-benchmark-capture-comparison"
+  "worktree_key": "agent-systems-benchmark"
 }
 ---
 
