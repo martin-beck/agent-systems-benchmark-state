@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1452-runtime-orchestration-service",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "7d256fef7e8beb39a8c36df2f94d1d309d46cd75",
   "claim_expires": "2026-09-25T21:12:29+00:00",
   "depends_on": [
     "AR-1357",
@@ -10,7 +10,7 @@
     "AR-1451"
   ],
   "id": "AR-1452",
-  "next_action": "Promote after AR-1451 is reviewed and merged; add the asb-orchestrator crate without exposing caller-built authority.",
+  "next_action": "PR #330 exact head 7d256fe adds asb-orchestrator with closed requests, local/replay authority, live fail-closed source, idempotency, fenced handles, lifecycle, cancellation, and 5 tests. Await independent review and all exact-head checks.",
   "observed_branch": "feature/ar-1452-runtime-orchestration-service",
   "observed_dirty": 0,
   "observed_head": "7d256fef7e8beb39a8c36df2f94d1d309d46cd75",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T18:21:00+00:00",
+  "updated_at": "2026-09-25T18:21:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---
@@ -72,3 +72,6 @@ until the service can prove the complete authority chain.
 
 - 2026-09-25T18:21:00+00:00: Recorded command exit 0; command argv SHA-256
   92b1c3f7c4ccb616d28af6c062f4105fef593d4b29c9aa307049f9763d029b8d.
+
+- 2026-09-25T18:21:34+00:00: Central orchestration implementation published; AR-1450 replay
+  hardening remains a later adapter dependency, not a blocker for this service core.

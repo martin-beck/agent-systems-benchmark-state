@@ -120,7 +120,7 @@
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1450](../tasks/AR-1450-runtime-owned-local-replay-acquisition.md): Runtime-owned local replay acquisition factory | ar1450-replay-luna56 | Keep local replay authority acquisition inside the runtime boundary. | Implement runtime-owned bootstrap/provisioner using existing LiveProviderProvisioner pattern; own relay/lease roots, tool pins, sandbox construction, attestation and teardown internally. |
-| P0 | [AR-1452](../tasks/AR-1452-runtime-orchestration-service.md): Implement the runtime-owned ASB orchestration service | coordinator-orchestrator-impl | Implement one service-owned authority for admission, attempts, resources, and teardown. | Promote after AR-1451 is reviewed and merged; add the asb-orchestrator crate without exposing caller-built authority. |
+| P0 | [AR-1452](../tasks/AR-1452-runtime-orchestration-service.md): Implement the runtime-owned ASB orchestration service | coordinator-orchestrator-impl | Implement one service-owned authority for admission, attempts, resources, and teardown. | PR #330 exact head 7d256fe adds asb-orchestrator with closed requests, local/replay authority, live fail-closed source, idempotency, fenced handles, lifecycle, cancellation, and 5 tests. Await independent review and all exact-head checks. |
 
 ### Open (1)
 
