@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify deterministic local record/replay and campaign journeys over the runtime mock.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Local record/replay campaign qualification",
-  "updated_at": "2026-09-25T01:32:52+00:00",
+  "updated_at": "2026-09-25T01:33:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1437-local-record-replay-campaign"
 }
 ---
@@ -68,3 +68,6 @@ campaign qualification. Require focused/full/review/PR/seven post-merge gates.
   after the new test invocation had an operator-formatted comma; rustfmt correctly rejected only
   that layout. Corrected with cargo fmt, and focused campaign test then passed. No gate weakening or
   runtime boundary change.
+
+- 2026-09-25T01:33:34+00:00: Recorded command exit 0; command argv SHA-256
+  9499c0c9f7493c93690381ad0802155d6eee0d2965f70d5d086e271f050d0188.
