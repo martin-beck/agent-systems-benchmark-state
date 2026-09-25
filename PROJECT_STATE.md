@@ -11,7 +11,7 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #327 | `feature/ar-1338-guided-asb-command-wrapper@4d42f598127d` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): extend guided ASB workflow |
-| #331 | `repair/ar-1454-protected-main-tree-repair-runtime-replay@a8ad4224b4fb` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | docs: record protected-main tree equality repair |
+| #331 | `repair/ar-1454-protected-main-tree-repair-runtime-replay@a8ad4224b4fb` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | docs: record protected-main tree equality repair |
 
 ## Recent workflows
 
