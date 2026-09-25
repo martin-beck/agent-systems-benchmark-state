@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Refresh the stale OpenRouter free-model pin and qualify local-only benchmark measurements.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Refresh OpenRouter model pin and local measurements",
-  "updated_at": "2026-09-25T13:36:55+00:00",
+  "updated_at": "2026-09-25T13:39:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1440-openrouter-model-refresh-local-measurements"
 }
 ---
@@ -84,3 +84,6 @@ tests for stale/mismatched model identities and unavailable pins.
 
 - 2026-09-25T13:36:55+00:00: Recorded command exit 0; command argv SHA-256
   a8426538f8aee4fe565454d79d52b8959ec7487e5e1cc44bad12c57737aee1cf.
+
+- 2026-09-25T13:39:48+00:00: Recorded command exit 0; command argv SHA-256
+  35abcb769b06f6997f763aac99d009d76a673c57e27aeb6d8fa5c49501611c17.
