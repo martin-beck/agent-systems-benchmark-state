@@ -1774,7 +1774,6 @@ flowchart LR
     AR_1442 --> AR_1446
     AR_1443 --> AR_1444
     AR_1443 --> AR_1446
-    AR_1444 --> AR_1446
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
