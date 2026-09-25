@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 224,
+  "task_revision": 225,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T20:25:00+00:00",
+  "updated_at": "2026-09-25T20:25:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---
@@ -597,3 +597,6 @@ until the service can prove the complete authority chain.
   --all-targets --fail-under-lines 90 passed at 91.14% lines. Workspace llvm-cov could not start
   after two retries because handoffctl reported shared coordinator LOCK_TIMEOUT; no floor/config
   changes. Signed+DCO commit 5f7bfcb pushed to PR branch.
+
+- 2026-09-25T20:25:08+00:00: Recorded command exit 0; command argv SHA-256
+  0b92d75758da12df64c2c77003a52de212cb2ab09a59edc1dfce9b06e7949fd6.
