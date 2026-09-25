@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 81,
+  "task_revision": 82,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T21:41:17+00:00",
+  "updated_at": "2026-09-25T21:41:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
@@ -267,3 +267,6 @@ asb-control protocol after this AR is complete.
   reaches test timeout (30s). Added signed+DCO commit 4db5c4d attempting to preserve completed
   strict replay across recovery without fabricating artifacts, but these regressions remain. No push
   or PR update made.
+
+- 2026-09-25T21:41:38+00:00: Recorded command exit 101; command argv SHA-256
+  d8e2b1c482230f0ea8fd18ac2ec12432d76f8a7a962adbf31b389682cad34c5c.
