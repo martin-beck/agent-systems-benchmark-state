@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1453-frontend-orchestration-wiring",
-  "checkpoint_commit": "082b0624abe2944bb46a00330bccf84a655f7ae7",
+  "checkpoint_commit": "c17254a9db622d8e9801084071afa009fc7cedf1",
   "claim_expires": "2026-09-25T23:14:03+00:00",
   "depends_on": [
     "AR-1452"
   ],
   "id": "AR-1453",
-  "next_action": "Push signed commit 082b0624abe2944bb46a00330bccf84a655f7ae7 through handoffctl for fresh PR checks and review; do not merge until exact-head CI and review pass.",
+  "next_action": "Create replacement PR from remote branch feature/ar-1453-frontend-orchestration-wiring-requal at c17254a9db622d8e9801084071afa009fc7cedf1; run exact-head hosted checks and independent review. PR332 remains immutable failed evidence; do not merge until all required gates pass.",
   "observed_branch": "feature/ar-1453-frontend-orchestration-wiring",
   "observed_dirty": 0,
   "observed_head": "c17254a9db622d8e9801084071afa009fc7cedf1",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 91,
+  "task_revision": 92,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T21:55:01+00:00",
+  "updated_at": "2026-09-25T21:55:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
@@ -291,3 +291,9 @@ asb-control protocol after this AR is complete.
 
 - 2026-09-25T21:54:48+00:00: Recorded command exit 0; command argv SHA-256
   1da6321d70012989f6655d997ef1afb35b40d703360ea84e5c78729bf3a4110d.
+
+- 2026-09-25T21:55:10+00:00: PR332 policy failure preserved: 082b062 lacked matching DCO trailer.
+  Replacement is current-main descendant a0bd63d with one signed+DCO commit c17254a. Added missing
+  orchestration dependency/authority constructor and durable status-by-idempotency projection.
+  Cargo.lock is included. Focused lifecycle tests, 110 asb-cli lib tests, fmt, and clippy -D
+  warnings pass.
