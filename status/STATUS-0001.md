@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**461 ARs tracked** across 6 active status categories.
+**465 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 67 |
-| **Planned** | Defined work awaiting promotion or dependencies | 63 |
+| **Planned** | Defined work awaiting promotion or dependencies | 67 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 311 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -533,6 +533,10 @@ flowchart LR
         AR_1437["AR-1437 - Done"]:::status_done
         AR_1438["AR-1438 - Done"]:::status_done
         AR_1440["AR-1440 - In progress"]:::status_in_progress
+        AR_1441["AR-1441 - Planned"]:::status_planned
+        AR_1442["AR-1442 - Planned"]:::status_planned
+        AR_1443["AR-1443 - Planned"]:::status_planned
+        AR_1444["AR-1444 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1018,12 +1022,15 @@ flowchart LR
     AR_0821 --> AR_0822
     AR_0821 --> AR_0823
     AR_0821 --> AR_1024
+    AR_0821 --> AR_1441
     AR_0822 --> AR_0808
     AR_0822 --> AR_0809
     AR_0822 --> AR_0823
     AR_0822 --> AR_1024
+    AR_0822 --> AR_1441
     AR_0823 --> AR_0903
     AR_0823 --> AR_1027
+    AR_0823 --> AR_1441
     AR_0830 --> AR_0831
     AR_0830 --> AR_0832
     AR_0830 --> AR_0833
@@ -1457,6 +1464,7 @@ flowchart LR
     AR_1314 --> AR_1315
     AR_1316 --> AR_1320
     AR_1316 --> AR_1422
+    AR_1316 --> AR_1442
     AR_1319 --> AR_1316
     AR_1325 --> AR_1326
     AR_1325 --> AR_1327
@@ -1490,6 +1498,7 @@ flowchart LR
     AR_1328 --> AR_1436
     AR_1328 --> AR_1437
     AR_1328 --> AR_1440
+    AR_1328 --> AR_1442
     AR_1329 --> AR_1330
     AR_1329 --> AR_1333
     AR_1329 --> AR_1338
@@ -1497,10 +1506,12 @@ flowchart LR
     AR_1331 --> AR_1332
     AR_1332 --> AR_1333
     AR_1332 --> AR_1338
+    AR_1332 --> AR_1443
     AR_1333 --> AR_1335
     AR_1333 --> AR_1336
     AR_1333 --> AR_1338
     AR_1333 --> AR_1420
+    AR_1333 --> AR_1443
     AR_1334 --> AR_1335
     AR_1334 --> AR_1336
     AR_1335 --> AR_1336
@@ -1743,7 +1754,12 @@ flowchart LR
     AR_1435 --> AR_1436
     AR_1436 --> AR_1437
     AR_1436 --> AR_1440
+    AR_1436 --> AR_1442
     AR_1437 --> AR_1440
+    AR_1437 --> AR_1443
+    AR_1441 --> AR_1442
+    AR_1442 --> AR_1443
+    AR_1443 --> AR_1444
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -1850,9 +1866,9 @@ flowchart LR
 | [AR-0818](../tasks/AR-0818-remote-control-security-audit.md) | [AR-0813](../tasks/AR-0813-remote-control-transport.md), [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md), [AR-0815](../tasks/AR-0815-remote-run-lifecycle.md), [AR-0816](../tasks/AR-0816-cross-platform-remote-interoperability.md), [AR-0817](../tasks/AR-0817-remote-tui-workflows.md), [AR-0819](../tasks/AR-0819-ssh-remote-bootstrap.md) | [AR-0903](../tasks/AR-0903-release-qualification.md) |
 | [AR-0819](../tasks/AR-0819-ssh-remote-bootstrap.md) | [AR-0803](../tasks/AR-0803-frontend-control-api.md), [AR-0804](../tasks/AR-0804-tui-settings-wizard.md) | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0815](../tasks/AR-0815-remote-run-lifecycle.md), [AR-0816](../tasks/AR-0816-cross-platform-remote-interoperability.md), [AR-0817](../tasks/AR-0817-remote-tui-workflows.md), [AR-0818](../tasks/AR-0818-remote-control-security-audit.md) |
 | [AR-0820](../tasks/AR-0820-verifiable-install-artifacts.md) | [AR-0701](../tasks/AR-0701-platform-manifests.md), [AR-0801](../tasks/AR-0801-terminal-interface.md), [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0812](../tasks/AR-0812-modern-terminal-rendering.md) | [AR-0821](../tasks/AR-0821-one-line-local-install.md), [AR-0822](../tasks/AR-0822-install-upgrade-rollback.md), [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md) |
-| [AR-0821](../tasks/AR-0821-one-line-local-install.md) | [AR-0803](../tasks/AR-0803-frontend-control-api.md), [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0820](../tasks/AR-0820-verifiable-install-artifacts.md) | [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0822](../tasks/AR-0822-install-upgrade-rollback.md), [AR-0823](../tasks/AR-0823-installation-qualification.md), [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md) |
-| [AR-0822](../tasks/AR-0822-install-upgrade-rollback.md) | [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0820](../tasks/AR-0820-verifiable-install-artifacts.md), [AR-0821](../tasks/AR-0821-one-line-local-install.md) | [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0823](../tasks/AR-0823-installation-qualification.md), [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md) |
-| [AR-0823](../tasks/AR-0823-installation-qualification.md) | [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-0821](../tasks/AR-0821-one-line-local-install.md), [AR-0822](../tasks/AR-0822-install-upgrade-rollback.md), [AR-1012](../tasks/AR-1012-tui-quality-assurance.md), [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md), [AR-1140](../tasks/AR-1140.md), [AR-1170](../tasks/AR-1170.md) | [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-1027](../tasks/AR-1027-asb-tui-verified-release.md) |
+| [AR-0821](../tasks/AR-0821-one-line-local-install.md) | [AR-0803](../tasks/AR-0803-frontend-control-api.md), [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0820](../tasks/AR-0820-verifiable-install-artifacts.md) | [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0822](../tasks/AR-0822-install-upgrade-rollback.md), [AR-0823](../tasks/AR-0823-installation-qualification.md), [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md), [AR-1441](../tasks/AR-1441-first-class-install-bootstrap.md) |
+| [AR-0822](../tasks/AR-0822-install-upgrade-rollback.md) | [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0820](../tasks/AR-0820-verifiable-install-artifacts.md), [AR-0821](../tasks/AR-0821-one-line-local-install.md) | [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0823](../tasks/AR-0823-installation-qualification.md), [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md), [AR-1441](../tasks/AR-1441-first-class-install-bootstrap.md) |
+| [AR-0823](../tasks/AR-0823-installation-qualification.md) | [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-0821](../tasks/AR-0821-one-line-local-install.md), [AR-0822](../tasks/AR-0822-install-upgrade-rollback.md), [AR-1012](../tasks/AR-1012-tui-quality-assurance.md), [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md), [AR-1140](../tasks/AR-1140.md), [AR-1170](../tasks/AR-1170.md) | [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-1027](../tasks/AR-1027-asb-tui-verified-release.md), [AR-1441](../tasks/AR-1441-first-class-install-bootstrap.md) |
 | [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md) | [AR-0002](../tasks/AR-0002-coordination-assurance.md), [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md) | [AR-0831](../tasks/AR-0831-aiws-workflow-routing.md), [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md), [AR-0833](../tasks/AR-0833-aiws-runner-reboot-lifecycle.md), [AR-0834](../tasks/AR-0834-handoffctl-lint-regression.md), [AR-0835](../tasks/AR-0835-runner-privacy-guard-remediation.md), [AR-0836](../tasks/AR-0836-runner-isolation-hardening.md), [AR-1438](../tasks/AR-1438-hardened-trusted-runner-validation.md) |
 | [AR-0831](../tasks/AR-0831-aiws-workflow-routing.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md) | [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md), [AR-0835](../tasks/AR-0835-runner-privacy-guard-remediation.md), [AR-0836](../tasks/AR-0836-runner-isolation-hardening.md), [AR-0845](../tasks/AR-0845-ci-artifact-quota-resilience.md) |
 | [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md) | [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md), [AR-0831](../tasks/AR-0831-aiws-workflow-routing.md) | [AR-0833](../tasks/AR-0833-aiws-runner-reboot-lifecycle.md) |
@@ -2101,7 +2117,7 @@ flowchart LR
 | [AR-1313](../tasks/AR-1313-historical-dco-909078c-repair.md) | None | None |
 | [AR-1314](../tasks/AR-1314-optional-bundle-signing-development-release.md) | None | [AR-1315](../tasks/AR-1315-1307-1308-development-profile-metadata.md) |
 | [AR-1315](../tasks/AR-1315-1307-1308-development-profile-metadata.md) | [AR-1314](../tasks/AR-1314-optional-bundle-signing-development-release.md) | None |
-| [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md) | [AR-1190](../tasks/AR-1190.md), [AR-1191](../tasks/AR-1191.md), [AR-1310](../tasks/AR-1310-provider-capture-campaign.md), [AR-1319](../tasks/AR-1319-authenticated-agent-catalog-entry-contract.md) | [AR-1320](../tasks/AR-1320-persisted-agent-release-index.md), [AR-1422](../tasks/AR-1422-stale-agent-catalog-pr-cleanup.md) |
+| [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md) | [AR-1190](../tasks/AR-1190.md), [AR-1191](../tasks/AR-1191.md), [AR-1310](../tasks/AR-1310-provider-capture-campaign.md), [AR-1319](../tasks/AR-1319-authenticated-agent-catalog-entry-contract.md) | [AR-1320](../tasks/AR-1320-persisted-agent-release-index.md), [AR-1422](../tasks/AR-1422-stale-agent-catalog-pr-cleanup.md), [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md) |
 | [AR-1319](../tasks/AR-1319-authenticated-agent-catalog-entry-contract.md) | [AR-1310](../tasks/AR-1310-provider-capture-campaign.md) | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md) |
 | [AR-1320](../tasks/AR-1320-persisted-agent-release-index.md) | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md) | None |
 | [AR-1322](../tasks/AR-1322-authenticated-release-index-source.md) | None | None |
@@ -2109,12 +2125,12 @@ flowchart LR
 | [AR-1325](../tasks/AR-1325-provider-openrouter.md) | [AR-0310](../tasks/AR-0310-provider-profile-contract.md), [AR-0318](../tasks/AR-0318-credential-reference-boundary.md) | [AR-1326](../tasks/AR-1326-openrouter-catalog-selection.md), [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md) |
 | [AR-1326](../tasks/AR-1326-openrouter-catalog-selection.md) | [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-1325](../tasks/AR-1325-provider-openrouter.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md) |
 | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md) | [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-1325](../tasks/AR-1325-provider-openrouter.md), [AR-1326](../tasks/AR-1326-openrouter-catalog-selection.md) | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md), [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md), [AR-1343](../tasks/AR-1343-runtime-live-provider-relay.md), [AR-1346](../tasks/AR-1346-runtime-supervisor-provisioning.md), [AR-1347](../tasks/AR-1347-neutral-live-supervisor-composition.md), [AR-1348](../tasks/AR-1348-runtime-owned-live-acquisition.md), [AR-1349](../tasks/AR-1349-live-provider-runtime-service.md), [AR-1432](../tasks/AR-1432-local-openrouter-execution-bridge.md) |
-| [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md) | [AR-1100](../tasks/AR-1100.md), [AR-1325](../tasks/AR-1325-provider-openrouter.md), [AR-1326](../tasks/AR-1326-openrouter-catalog-selection.md) | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md), [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md), [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md), [AR-1343](../tasks/AR-1343-runtime-live-provider-relay.md), [AR-1346](../tasks/AR-1346-runtime-supervisor-provisioning.md), [AR-1347](../tasks/AR-1347-neutral-live-supervisor-composition.md), [AR-1348](../tasks/AR-1348-runtime-owned-live-acquisition.md), [AR-1349](../tasks/AR-1349-live-provider-runtime-service.md), [AR-1350](../tasks/AR-1350-sandbox-credential-channel.md), [AR-1367](../tasks/AR-1367-ar1329-production-dispatch-integration.md), [AR-1368](../tasks/AR-1368-control-receipt-runtime-source.md), [AR-1374](../tasks/AR-1374-cli-live-dispatch.md), [AR-1432](../tasks/AR-1432-local-openrouter-execution-bridge.md), [AR-1436](../tasks/AR-1436-local-guided-cli-wrapper.md), [AR-1437](../tasks/AR-1437-local-record-replay-campaign.md), [AR-1440](../tasks/AR-1440-openrouter-model-refresh-local-measurements.md) |
+| [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md) | [AR-1100](../tasks/AR-1100.md), [AR-1325](../tasks/AR-1325-provider-openrouter.md), [AR-1326](../tasks/AR-1326-openrouter-catalog-selection.md) | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md), [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md), [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md), [AR-1343](../tasks/AR-1343-runtime-live-provider-relay.md), [AR-1346](../tasks/AR-1346-runtime-supervisor-provisioning.md), [AR-1347](../tasks/AR-1347-neutral-live-supervisor-composition.md), [AR-1348](../tasks/AR-1348-runtime-owned-live-acquisition.md), [AR-1349](../tasks/AR-1349-live-provider-runtime-service.md), [AR-1350](../tasks/AR-1350-sandbox-credential-channel.md), [AR-1367](../tasks/AR-1367-ar1329-production-dispatch-integration.md), [AR-1368](../tasks/AR-1368-control-receipt-runtime-source.md), [AR-1374](../tasks/AR-1374-cli-live-dispatch.md), [AR-1432](../tasks/AR-1432-local-openrouter-execution-bridge.md), [AR-1436](../tasks/AR-1436-local-guided-cli-wrapper.md), [AR-1437](../tasks/AR-1437-local-record-replay-campaign.md), [AR-1440](../tasks/AR-1440-openrouter-model-refresh-local-measurements.md), [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md) |
 | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md) | [AR-1330](../tasks/AR-1330-live-capture-sealed-cassette.md), [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md), [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md) |
 | [AR-1330](../tasks/AR-1330-live-capture-sealed-cassette.md) | [AR-0502](../tasks/AR-0502-replay-cassettes.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-1329](../tasks/AR-1329-live-provider-run-execution.md) | [AR-1331](../tasks/AR-1331-runtime-replay-launch-authority.md) |
 | [AR-1331](../tasks/AR-1331-runtime-replay-launch-authority.md) | [AR-1330](../tasks/AR-1330-live-capture-sealed-cassette.md) | [AR-1332](../tasks/AR-1332-record-live-replay-offline.md) |
-| [AR-1332](../tasks/AR-1332-record-live-replay-offline.md) | [AR-1331](../tasks/AR-1331-runtime-replay-launch-authority.md) | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md), [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md) |
-| [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md) | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md), [AR-1332](../tasks/AR-1332-record-live-replay-offline.md) | [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md), [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md), [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md), [AR-1420](../tasks/AR-1420-literature-workload-campaign-integration.md) |
+| [AR-1332](../tasks/AR-1332-record-live-replay-offline.md) | [AR-1331](../tasks/AR-1331-runtime-replay-launch-authority.md) | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md), [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md), [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md) |
+| [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md) | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md), [AR-1332](../tasks/AR-1332-record-live-replay-offline.md) | [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md), [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md), [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md), [AR-1420](../tasks/AR-1420-literature-workload-campaign-integration.md), [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md) |
 | [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md) | [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md), [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md) |
 | [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md) | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md), [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md) | [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md) |
 | [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md) | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md), [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md), [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md) | None |
