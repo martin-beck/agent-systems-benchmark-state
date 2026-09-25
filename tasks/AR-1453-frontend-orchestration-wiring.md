@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1453-frontend-orchestration-wiring",
-  "checkpoint_commit": "0fd27d4c7d8c256acb6a6e301f0acbf080b4e5e4",
+  "checkpoint_commit": "d83c451950850db357d08959f3a97ce28fd386e3",
   "claim_expires": "2026-09-26T00:03:15+00:00",
   "depends_on": [
     "AR-1452"
   ],
   "id": "AR-1453",
-  "next_action": "Repair P1 cancellation lifecycle: propagate direct authority cancellation as durable Cancelled instead of Completed/NeedsReconciliation; restore true in-flight concurrent cancellation regression test. Preserve 0fd27d4 hosted evidence and rerun all gates/review.",
+  "next_action": "PR #333 exact head d83c451950850db357d08959f3a97ce28fd386e3 is running hosted checks/review; require all terminal-success checks before merge. Preserve failed 841351bc/0fd27d4 evidence.",
   "observed_branch": "feature/ar-1453-frontend-orchestration-wiring",
   "observed_dirty": 0,
   "observed_head": "d83c451950850db357d08959f3a97ce28fd386e3",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 112,
+  "task_revision": 113,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T22:14:37+00:00",
+  "updated_at": "2026-09-25T22:14:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
@@ -364,3 +364,10 @@ asb-control protocol after this AR is complete.
 
 - 2026-09-25T22:14:25+00:00: Recorded command exit 0; command argv SHA-256
   1da6321d70012989f6655d997ef1afb35b40d703360ea84e5c78729bf3a4110d.
+
+- 2026-09-25T22:14:53+00:00: Cancellation lifecycle P1 repaired in signed+DCO forward commit. Added
+  AuthorityError::Cancelled and orchestrator durable Cancelled transition; execute_until propagates
+  direct cancellation instead of returning successful outcome. Restored true concurrent cancellation
+  test with long-running fixture and in-flight authority flag, asserting Cancelled and map cleanup.
+  Focused tests, default/serial 111-test asb-cli suites, clippy, workflow transcript, and fmt/diff
+  checks pass.
