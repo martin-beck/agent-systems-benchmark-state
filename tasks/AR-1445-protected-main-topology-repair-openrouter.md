@@ -6,18 +6,18 @@
   "depends_on": [],
   "id": "AR-1445",
   "next_action": "Create a signed+DCO reviewed descendant PR whose GitHub merge has two parents and preserves the exact current main tree/contract; require exact-head CI and all seven post-merge workflows before closing AR-1440.",
-  "observed_branch": "",
-  "observed_dirty": 0,
-  "observed_head": "0000000000000000000000000000000000000000",
+  "observed_branch": "repair/ar-1445-protected-main-topology-repair-openrouter",
+  "observed_dirty": 1,
+  "observed_head": "84b587ec2ddd28ce33df9f12775b3e32f6ae000d",
   "owner": "ar1445-topology-repair-luna56",
   "plan": "../plans/AR-1445.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the single-parent protected-main merge produced for the OpenRouter model refresh.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Protected-main topology repair for OpenRouter refresh",
-  "updated_at": "2026-09-25T14:02:23+00:00",
+  "updated_at": "2026-09-25T14:02:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1445-protected-main-topology-repair-openrouter"
 }
 ---
