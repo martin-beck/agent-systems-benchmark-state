@@ -3,16 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1448](tasks/AR-1448-runtime-replay-authority-source.md): Runtime replay authority source | Materialize runtime-owned strict replay authority for normal CLI replay. | Promote and claim this dependency-ready successor. Implement the bounded control/runtime materializer without exposing replay authority to the CLI. | coordinator-ar1448 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1448](tasks/AR-1448-runtime-replay-authority-source.md): Runtime replay authority source | Materialize runtime-owned strict replay authority for normal CLI replay. | Promote and claim this dependency-ready successor. Implement the bounded control/runtime materializer without exposing replay authority to the CLI. | - |
 | P1 | [AR-1338](tasks/AR-1338-guided-asb-command-wrapper.md): Guided ASB command wrapper | Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows. | Open after AR-1448 supplies the runtime-owned strict replay authority. Then extend the existing bounded easy path to catalog-driven setup/selection, plan/run/sweep, report/compare, record/replay, generated private files, documentation, and offline hostile tests; optional live-provider capture remains separate. | - |
 
 ## Blocked
