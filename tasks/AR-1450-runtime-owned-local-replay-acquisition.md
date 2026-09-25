@@ -7,22 +7,23 @@
     "AR-1448"
   ],
   "id": "AR-1450",
-  "next_action": "Blocked: a public factory accepting SandboxLaunchInput, ResourceLease and SandboxBackend would violate runtime ownership. Promote a reviewed runtime-owned provisioning design; no product change was published.",
+  "next_action": "Implement runtime-owned bootstrap/provisioner using existing LiveProviderProvisioner pattern; own relay/lease roots, tool pins, sandbox construction, attestation and teardown internally.",
   "observed_branch": "feature/ar-1450-runtime-owned-local-replay-acquisition",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "e4d2c821d160256df4e00df4f165aa69a54d69e6",
   "owner": "",
   "plan": "../plans/AR-1450.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Keep local replay authority acquisition inside the runtime boundary.",
-  "task_revision": 8,
+  "task_revision": 10,
   "title": "Runtime-owned local replay acquisition factory",
-  "updated_at": "2026-09-25T17:01:55+00:00",
+  "updated_at": "2026-09-25T17:07:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1450-runtime-owned-local-replay-acquisition"
 }
 ---
+
 AR-1449 proved that the ordinary CLI cannot safely call AR-1448 because authority issuance still requires caller-built sandbox, lease, backend and relay objects. This task moves only their acquisition into asb-runtime.
 
 Requirements:
