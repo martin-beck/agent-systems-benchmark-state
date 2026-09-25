@@ -2,7 +2,7 @@
 {
   "branch": "feature/native-openeuler-capacity",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-25T13:53:24+00:00",
   "depends_on": [
     "AR-0704",
     "AR-0201",
@@ -10,15 +10,15 @@
   ],
   "id": "AR-0706",
   "next_action": "Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence.",
-  "owner": "",
+  "owner": "ar0706_native_openeuler_luna56",
   "plan": "../plans/AR-0706.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Provide native openEuler capacity",
-  "updated_at": "2026-09-25T11:53:21+00:00",
+  "updated_at": "2026-09-25T11:53:24+00:00",
   "worktree_key": "agent-systems-benchmark-native-openeuler-capacity"
 }
 ---
@@ -31,3 +31,5 @@ native identity, kernel/distribution provenance, cleanup, cost/availability boun
 
 - 2026-09-25T11:53:21+00:00: Dependencies AR-0704, AR-0201, and AR-0401 are done; begin fail-closed
   openEuler capacity qualification.
+
+- 2026-09-25T11:53:24+00:00: Claimed by ar0706_native_openeuler_luna56.
