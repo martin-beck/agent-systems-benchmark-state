@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1453-frontend-orchestration-wiring",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-25T22:40:46+00:00",
+  "claim_expires": "2026-09-25T22:47:57+00:00",
   "depends_on": [
     "AR-1452"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T20:42:26+00:00",
+  "updated_at": "2026-09-25T20:47:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
@@ -39,3 +39,5 @@ asb-control protocol after this AR is complete.
 
 - 2026-09-25T20:42:13+00:00: Recorded command exit 0; command argv SHA-256
   b832bab19dcb37de05dfb7ee61d7c27c2ee176c07f0b9f98580db5cbf41548d2.
+
+- 2026-09-25T20:47:57+00:00: Heartbeat by ar1453-frontend-orchestration-luna56.
