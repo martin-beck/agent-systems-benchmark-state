@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 106,
+  "task_revision": 107,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T22:10:52+00:00",
+  "updated_at": "2026-09-25T22:11:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
@@ -346,3 +346,6 @@ asb-control protocol after this AR is complete.
   in_flight_authority_cancellation_is_observed_without_service_lock with Option::unwrap at
   control.rs:6708 (110 passed). Prior state-root failure did not recur; deadline and other lifecycle
   tests passed. Worker assigned repair; no merge.
+
+- 2026-09-25T22:11:31+00:00: Recorded command exit 0; command argv SHA-256
+  1da6321d70012989f6655d997ef1afb35b40d703360ea84e5c78729bf3a4110d.
