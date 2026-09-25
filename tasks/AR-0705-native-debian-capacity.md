@@ -2,7 +2,7 @@
 {
   "branch": "feature/native-debian-capacity",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-25T14:10:57+00:00",
+  "claim_expires": "2026-09-25T14:24:33+00:00",
   "depends_on": [
     "AR-0704",
     "AR-0201",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify booted Debian on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Provide native Debian capacity",
-  "updated_at": "2026-09-25T12:22:31+00:00",
+  "updated_at": "2026-09-25T12:24:33+00:00",
   "worktree_key": "agent-systems-benchmark-native-debian-capacity"
 }
 ---
@@ -130,3 +130,5 @@ native identity, kernel/distribution provenance, cleanup, cost/availability boun
 
 - 2026-09-25T12:22:31+00:00: Recorded command exit 0; command argv SHA-256
   2fb423474ad310904180c4cb70601253094bba230e9291165a46aab675969959.
+
+- 2026-09-25T12:24:33+00:00: Heartbeat by ar0705_capacity_requal_luna56.
