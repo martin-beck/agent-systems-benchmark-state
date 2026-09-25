@@ -9,18 +9,18 @@
   ],
   "id": "AR-1419",
   "next_action": "Promote after the interactive and tool-use workload audits; reconcile every benchmark/framework mention in docs and prove the selectable catalog has no omitted or falsely executable entry.",
-  "observed_branch": "",
-  "observed_dirty": 0,
-  "observed_head": "0000000000000000000000000000000000000000",
+  "observed_branch": "codex/ar-1419-literature-framework",
+  "observed_dirty": 5,
+  "observed_head": "ede3f032428c366769f1bdd5bc0988b87a14de83",
   "owner": "ar1419-framework-boundaries-luna56",
   "plan": "../plans/AR-1419.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Close literature documentation gaps and enforce benchmark-versus-framework selection boundaries.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Literature framework boundaries",
-  "updated_at": "2026-09-25T09:54:06+00:00",
+  "updated_at": "2026-09-25T09:54:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1419"
 }
 ---
