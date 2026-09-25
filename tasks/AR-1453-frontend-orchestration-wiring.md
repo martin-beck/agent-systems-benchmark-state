@@ -9,17 +9,17 @@
   "id": "AR-1453",
   "next_action": "Complete control lifecycle integration and focused tests, then synchronize the signed branch onto current origin/main 452f3ca before publication; preserve exact-base evidence.",
   "observed_branch": "feature/ar-1453-frontend-orchestration-wiring",
-  "observed_dirty": 4,
-  "observed_head": "a5eb7e680a3c71813d9d1aae3328a385d6812a95",
+  "observed_dirty": 0,
+  "observed_head": "660efd2ab0059fab22b0564ed80594d40fa4fa10",
   "owner": "ar1453-frontend-orchestration-luna56",
   "plan": "../plans/AR-1453.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T20:57:33+00:00",
+  "updated_at": "2026-09-25T20:57:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
