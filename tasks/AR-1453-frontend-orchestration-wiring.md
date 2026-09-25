@@ -7,7 +7,7 @@
     "AR-1452"
   ],
   "id": "AR-1453",
-  "next_action": "Promote after AR-1452 post-merge verification and wire run, sweep, replay, cancellation, and status through the service.",
+  "next_action": "Finish compiling and test the central control adapter; then wire status/recovery and add declarative negative fixtures before signed commit.",
   "observed_branch": "feature/ar-1453-frontend-orchestration-wiring",
   "observed_dirty": 4,
   "observed_head": "a5eb7e680a3c71813d9d1aae3328a385d6812a95",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T20:51:06+00:00",
+  "updated_at": "2026-09-25T20:51:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
@@ -49,3 +49,9 @@ asb-control protocol after this AR is complete.
   69487790cd46864562a51f207e108eea84da8519a17023da666d53127f8fc1e6.
 
 - 2026-09-25T20:51:06+00:00: Heartbeat by ar1453-frontend-orchestration-luna56.
+
+- 2026-09-25T20:51:16+00:00: Initial implementation in isolated worktree adds asb-orchestrator
+  dependency, a runtime-owned PlanAuthoritySource, and FrontendOrchestration
+  admission/execute/cancel bridge. Focused cargo check first exposed missing execute_until and moved
+  Arc/request errors; both are repaired, rerunning now. Worktree remains dirty and no commit is
+  published.
