@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1437-local-record-replay-campaign",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "a7d041bdca739f29b2e09d60f7d50924fbe6cf74",
   "claim_expires": "2026-09-25T03:27:52+00:00",
   "depends_on": [
     "AR-1436",
     "AR-1328"
   ],
   "id": "AR-1437",
-  "next_action": "Promote and claim after completed dependency check; implement deterministic local record/replay or campaign qualification without live-provider dependencies.",
+  "next_action": "Run focused/full offline gates, independent exact-head review, then publish PR.",
   "observed_branch": "feature/ar-1437-local-record-replay-campaign",
   "observed_dirty": 2,
   "observed_head": "18a0df9b4312e49196c1c8202b48a183ed83b073",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify deterministic local record/replay and campaign journeys over the runtime mock.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Local record/replay campaign qualification",
-  "updated_at": "2026-09-25T01:30:00+00:00",
+  "updated_at": "2026-09-25T01:30:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1437-local-record-replay-campaign"
 }
 ---
@@ -49,3 +49,8 @@ campaign qualification. Require focused/full/review/PR/seven post-merge gates.
 
 - 2026-09-25T01:30:00+00:00: Recorded command exit 0; command argv SHA-256
   c9ee46ef8a96e739304c9e2c58592afc92894b3d6ae6bc27e969acc8e8c4b624.
+
+- 2026-09-25T01:30:45+00:00: Implementation committed/pushed as signed+DCO a7d041b. Added explicit
+  `asb easy record-campaign MANIFEST.json --local-mock` over existing bounded record-campaign
+  sealing, with hostile live/config option rejection, positive campaign test, docs, and final CLI
+  provenance digest. No provider capture, live authority, or replay fallback added.

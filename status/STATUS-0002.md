@@ -102,7 +102,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1437](../tasks/AR-1437-local-record-replay-campaign.md): Local record/replay campaign qualification | codex-asb-ar1437-local-record-luna56 | Qualify deterministic local record/replay and campaign journeys over the runtime mock. | Promote and claim after completed dependency check; implement deterministic local record/replay or campaign qualification without live-provider dependencies. |
+| P1 | [AR-1437](../tasks/AR-1437-local-record-replay-campaign.md): Local record/replay campaign qualification | codex-asb-ar1437-local-record-luna56 | Qualify deterministic local record/replay and campaign journeys over the runtime mock. | Run focused/full offline gates, independent exact-head review, then publish PR. |
 
 ### Blocked (66)
 
