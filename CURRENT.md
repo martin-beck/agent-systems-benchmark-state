@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1446](tasks/AR-1446-first-customer-production-qualification.md): First-customer production qualification | Qualify ASB in a disposable first-customer production-like environment. | Promote and claim this ASB-only disposable first-customer qualification gate. Verify clean install/bootstrap, setup/reconfiguration, local benchmark matrix, strict offline replay, recovery, cleanup, rollback, and bounded readiness evidence. AR-0903's broad release package and AR-1336's optional live-provider documentation remain separate; AR-1444/asb-tui and AR-1329 external-provider integration must not block this gate. | - |
+| P0 | [AR-1446](tasks/AR-1446-first-customer-production-qualification.md): First-customer production qualification | Qualify ASB in a disposable first-customer production-like environment. | Promote and claim this ASB-only disposable first-customer qualification gate. Verify clean install/bootstrap, setup/reconfiguration, local benchmark matrix, strict offline replay, recovery, cleanup, rollback, and bounded readiness evidence. AR-0903's broad release package and AR-1336's optional live-provider documentation remain separate; AR-1444/asb-tui and AR-1329 external-provider integration must not block this gate. | coordinator-ar1446 |
 
 ## Blocked
 

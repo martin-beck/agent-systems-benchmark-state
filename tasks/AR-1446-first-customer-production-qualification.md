@@ -2,7 +2,7 @@
 {
   "branch": "qualification/ar-1446-first-customer-production",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-25T17:08:30+00:00",
   "depends_on": [
     "AR-1433",
     "AR-1441",
@@ -14,15 +14,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "coordinator-ar1446",
   "plan": "../plans/AR-1446.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Qualify ASB in a disposable first-customer production-like environment.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "First-customer production qualification",
-  "updated_at": "2026-09-25T15:38:27+00:00",
+  "updated_at": "2026-09-25T15:38:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1446-first-customer-production"
 }
 ---
@@ -43,3 +43,5 @@ This is the customer-facing integration gate. The deterministic local mock path 
 - 2026-09-25T15:38:27+00:00: ASB-only dependencies AR-1433, AR-1441, AR-1442, and AR-1443 are done.
   Removed broad AR-0903 and optional live-doc AR-1336 blockers; promote disposable first-customer
   qualification.
+
+- 2026-09-25T15:38:30+00:00: Claimed by coordinator-ar1446.

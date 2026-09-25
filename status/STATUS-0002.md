@@ -109,11 +109,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md): First-customer production qualification | Unclaimed | Qualify ASB in a disposable first-customer production-like environment. | Promote and claim this ASB-only disposable first-customer qualification gate. Verify clean install/bootstrap, setup/reconfiguration, local benchmark matrix, strict offline replay, recovery, cleanup, rollback, and bounded readiness evidence. AR-0903&#x27;s broad release package and AR-1336&#x27;s optional live-provider documentation remain separate; AR-1444/asb-tui and AR-1329 external-provider integration must not block this gate. |
+| P0 | [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md): First-customer production qualification | coordinator-ar1446 | Qualify ASB in a disposable first-customer production-like environment. | Promote and claim this ASB-only disposable first-customer qualification gate. Verify clean install/bootstrap, setup/reconfiguration, local benchmark matrix, strict offline replay, recovery, cleanup, rollback, and bounded readiness evidence. AR-0903&#x27;s broad release package and AR-1336&#x27;s optional live-provider documentation remain separate; AR-1444/asb-tui and AR-1329 external-provider integration must not block this gate. |
 
 ### Blocked (68)
 
