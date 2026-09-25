@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1453-frontend-orchestration-wiring",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "ceac822ad15da1747fc8b7ad824a68928de663a0",
   "claim_expires": "2026-09-25T23:00:46+00:00",
   "depends_on": [
     "AR-1452"
   ],
   "id": "AR-1453",
-  "next_action": "Complete control lifecycle integration and focused tests, then synchronize the signed branch onto current origin/main 452f3ca before publication; preserve exact-base evidence.",
+  "next_action": "Run workspace fmt, clippy, tests, docs and build from exact base 452f3ca; then publish signed branch for independent review. Product branch remains unpublished until all applicable gates pass.",
   "observed_branch": "feature/ar-1453-frontend-orchestration-wiring",
   "observed_dirty": 0,
   "observed_head": "ceac822ad15da1747fc8b7ad824a68928de663a0",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T21:00:46+00:00",
+  "updated_at": "2026-09-25T21:00:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
@@ -113,3 +113,9 @@ asb-control protocol after this AR is complete.
   8a3f3751a6180c02aa3a46876347518068a6e55412026870dbe48ec3a935de35.
 
 - 2026-09-25T21:00:46+00:00: Heartbeat by ar1453-frontend-orchestration-luna56.
+
+- 2026-09-25T21:00:49+00:00: AR-1453 central control adapter implemented in signed+DCO commit
+  ceac822. RunnerBackend now admits and executes PlanFile runs via asb-orchestrator, cancellation
+  invokes the service, strict-replay/local plans remain declarative, live mode fails closed. Focused
+  control suite 42/42 and clippy -p asb-cli pass after exact rebase onto origin/main 452f3ca;
+  worktree clean and branch unpublished.
