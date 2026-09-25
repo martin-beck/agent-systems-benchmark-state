@@ -7,7 +7,7 @@
     "AR-1452"
   ],
   "id": "AR-1453",
-  "next_action": "PR #333 exact head 0fd27d4c7d8c256acb6a6e301f0acbf080b4e5e4 is running hosted checks and review; require all terminal-success checks before merge. Preserve failed 841351bc hosted evidence.",
+  "next_action": "Repair P1 cancellation lifecycle: propagate direct authority cancellation as durable Cancelled instead of Completed/NeedsReconciliation; restore true in-flight concurrent cancellation regression test. Preserve 0fd27d4 hosted evidence and rerun all gates/review.",
   "observed_branch": "feature/ar-1453-frontend-orchestration-wiring",
   "observed_dirty": 0,
   "observed_head": "0fd27d4c7d8c256acb6a6e301f0acbf080b4e5e4",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 109,
+  "task_revision": 110,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T22:12:02+00:00",
+  "updated_at": "2026-09-25T22:12:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
@@ -356,3 +356,8 @@ asb-control protocol after this AR is complete.
   direct-flag/no orchestration mutex. Serial and default full asb-cli lib suites each pass 111
   tests; focused lifecycle/deadline/cancellation tests pass; clippy -D warnings, workflow
   transcript, and diff check pass.
+
+- 2026-09-25T22:12:39+00:00: Independent re-review found direct cancellation only sets a flag, while
+  Orchestrator::execute records Completed on Ok(PointOutput); cancel can hang and become
+  NeedsReconciliation. Replacement test pre-signals flag and is not an in-flight test. Worker
+  assigned lifecycle-correct repair.
