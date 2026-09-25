@@ -10,20 +10,21 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #320 | `feature/ar-1423-literature-reconciliation@ac10f5b0875d` | `main` | UNSTABLE | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(workloads): reconcile literature docs with registry |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 36124327163 | `ac10f5b0875d` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 36124327111 | `ac10f5b0875d` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 36124327098 | `ac10f5b0875d` | pull_request | Formal assurance | in_progress:- |
+| 36124327086 | `ac10f5b0875d` | pull_request | Huawei MIT source headers | in_progress:- |
+| 36124327056 | `ac10f5b0875d` | pull_request | Fault assurance | queued:- |
+| 36124327048 | `ac10f5b0875d` | pull_request | Rust verification | in_progress:- |
+| 36124327027 | `ac10f5b0875d` | pull_request | Repository quality | in_progress:- |
+| 36124327021 | `ac10f5b0875d` | pull_request | Agent Workflow Quality shadow | in_progress:- |
 | 36122369365 | `c3480e79ce3f` | push | Hosted portability and native qualification | completed:success |
 | 36122369363 | `c3480e79ce3f` | push | Repository quality | completed:success |
 | 36122369277 | `c3480e79ce3f` | push | Emulated aarch64 portability | completed:success |
 | 36122369261 | `c3480e79ce3f` | push | Rust verification | completed:success |
-| 36122369220 | `c3480e79ce3f` | push | Fault assurance | completed:success |
-| 36122369211 | `c3480e79ce3f` | push | Huawei MIT source headers | completed:success |
-| 36122369129 | `c3480e79ce3f` | push | Formal assurance | completed:success |
-| 36121478220 | `6e30115e97e5` | pull_request | Emulated aarch64 portability | completed:success |
-| 36121478199 | `6e30115e97e5` | pull_request | Repository quality | completed:success |
-| 36121478148 | `6e30115e97e5` | pull_request | Hosted portability and native qualification | completed:success |
-| 36121478140 | `6e30115e97e5` | pull_request | Formal assurance | completed:success |
-| 36121478111 | `6e30115e97e5` | pull_request | Rust verification | completed:success |
