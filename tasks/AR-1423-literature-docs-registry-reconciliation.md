@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Reconcile all literature benchmark mentions with strict registry identities and framework boundaries.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Exhaustive literature docs-to-registry reconciliation",
-  "updated_at": "2026-09-25T10:38:13+00:00",
+  "updated_at": "2026-09-25T10:38:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1423-literature-reconciliation"
 }
 ---
@@ -101,4 +101,7 @@ workloads.
   e322b24b844c15129ed00cb2977924e55e44d551b855b091f02b826df5f42943.
 
 - 2026-09-25T10:38:13+00:00: Recorded command exit 8; command argv SHA-256
+  e322b24b844c15129ed00cb2977924e55e44d551b855b091f02b826df5f42943.
+
+- 2026-09-25T10:38:29+00:00: Recorded command exit 8; command argv SHA-256
   e322b24b844c15129ed00cb2977924e55e44d551b855b091f02b826df5f42943.
