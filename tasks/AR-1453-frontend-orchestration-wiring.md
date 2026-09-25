@@ -7,7 +7,7 @@
     "AR-1452"
   ],
   "id": "AR-1453",
-  "next_action": "PR #333 exact head d83c451950850db357d08959f3a97ce28fd386e3 is running hosted checks/review; require all terminal-success checks before merge. Preserve failed 841351bc/0fd27d4 evidence.",
+  "next_action": "Repair Hosted Policy cancellation test race: synchronize explicit in-flight state before cancel; preserve durable Cancelled lifecycle and bounded state, then rerun all gates and review.",
   "observed_branch": "feature/ar-1453-frontend-orchestration-wiring",
   "observed_dirty": 0,
   "observed_head": "d83c451950850db357d08959f3a97ce28fd386e3",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 113,
+  "task_revision": 114,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T22:14:53+00:00",
+  "updated_at": "2026-09-25T22:19:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
@@ -371,3 +371,7 @@ asb-control protocol after this AR is complete.
   test with long-running fixture and in-flight authority flag, asserting Cancelled and map cleanup.
   Focused tests, default/serial 111-test asb-cli suites, clippy, workflow transcript, and fmt/diff
   checks pass.
+
+- 2026-09-25T22:19:51+00:00: Hosted Policy run 36195718695 failed
+  in_flight_authority_cancellation_is_durable_and_bounded because test observed authority already
+  removed (timing race) at control.rs:6716. Rust and other checks were still pending; no merge.
