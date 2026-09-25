@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a verified one-command install and first-run bootstrap for ASB CLI/runtime bundles.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "First-class install and bootstrap",
-  "updated_at": "2026-09-25T15:17:30+00:00",
+  "updated_at": "2026-09-25T15:17:56+00:00",
   "worktree_key": "agent-systems-benchmark"
 }
 ---
@@ -31,3 +31,6 @@ a second package registry or bypass signed artifact and credential boundaries.
   from this CLI/runtime-bundle gate; preserve AR-0823 independently.
 
 - 2026-09-25T15:17:30+00:00: Claimed by coordinator-ar1441.
+
+- 2026-09-25T15:17:56+00:00: Recorded command exit 0; command argv SHA-256
+  4637d84ec00d072c019f8a3f5692356eac8f8f82c4e0ce09fe38d36e5298ed4c.
