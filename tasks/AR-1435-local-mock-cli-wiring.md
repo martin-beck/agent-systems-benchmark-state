@@ -7,7 +7,7 @@
     "AR-1434"
   ],
   "id": "AR-1435",
-  "next_action": "Rerun full locked workspace test with pipefail after provenance refresh, then workspace clippy/docs/fmt, independent review, and PR publication.",
+  "next_action": "Rerun corrected independent exact-head review (privacy scan must invert rg status correctly), then push exact head and publish PR.",
   "observed_branch": "feature/ar-1435-local-mock-cli-wiring",
   "observed_dirty": 0,
   "observed_head": "23a7bdbd9a8eb61db68c11360472603158d02be4",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire deterministic local mock attempts into asb run and sweep configuration qualification.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Local mock CLI wiring",
-  "updated_at": "2026-09-25T00:00:57+00:00",
+  "updated_at": "2026-09-25T00:01:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1435-local-mock-cli-wiring"
 }
 ---
@@ -116,3 +116,9 @@ it must not contact OpenRouter or any external provider, mint
 
 - 2026-09-25T00:00:57+00:00: Recorded command exit 1; command argv SHA-256
   898640b1e39aae66e9f33122a82e97c0ff6285c23412c2655e439c6a2d0f87e6.
+
+- 2026-09-25T00:01:55+00:00: Diagnosed 00:00:57 exit 1 as review-shell operator bug: the final
+  no-sensitive-material pipeline used `! git diff | rg`, so rg correctly returned 1 for no matches
+  but shell precedence propagated failure. Diff output itself showed only intended local mock
+  CLI/runtime/provenance changes and no sensitive material. Rerun the privacy assertion with `if git
+  diff | rg ...; then exit 1; fi` before publication.
