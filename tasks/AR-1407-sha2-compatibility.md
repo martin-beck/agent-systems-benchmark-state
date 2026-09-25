@@ -7,7 +7,7 @@
     "AR-1405"
   ],
   "id": "AR-1407",
-  "next_action": "Promote after AR-1405; reproduce the sha2 0.11 compile/MSRV failure and either repair it with digest-parity evidence or preserve the supersession.",
+  "next_action": "Keep current sha2 0.10.9 implementation authoritative; PR #147 sha2 0.11.0 remains superseded unless a separately reviewed compatibility migration addresses all digest formatting sites and proves exact parity.",
   "observed_branch": "repair/ar-1407-sha2-compatibility",
   "observed_dirty": 0,
   "observed_head": "7390bcd2082700d0c9f04409732b48de8e9f8628",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify or repair the closed sha2 0.11 dependency update without weakening crypto or MSRV contracts.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "sha2 compatibility repair",
-  "updated_at": "2026-09-25T11:46:51+00:00",
+  "updated_at": "2026-09-25T11:47:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1407-sha2-compatibility"
 }
 ---
@@ -84,3 +84,10 @@ compatibility and digest parity are proven.
 
 - 2026-09-25T11:46:51+00:00: Recorded command exit 0; command argv SHA-256
   ff6d1fa7a7185010f75fcfafe4bdc1bdd5b9804d8c2b3e7abdd8a1b96cd81c63.
+
+- 2026-09-25T11:47:19+00:00: Reproduced PR #147 head f130ffe4e5735438f3e048c323b1069f148bd15e under
+  Rust 1.93.0 with locked workspace check. sha2 0.11.0 upgrades digest to 0.11.3/hybrid-array and
+  removes LowerHex from digest output; cargo check fails in asb-config at lib.rs:404,502,561,1157,
+  then asb-protocol at experiment.rs:461, measurement.rs:542,917, provider.rs:770. Failure is
+  API-wide across digest formatting, not an isolated MSRV issue. Restored clean worktree; no crypto
+  patch or gate weakening made.
