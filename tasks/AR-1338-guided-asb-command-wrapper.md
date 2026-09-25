@@ -3,18 +3,22 @@
   "branch": "feature/ar-1338-guided-asb-command-wrapper",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1442", "AR-1443", "AR-1446"],
+  "depends_on": [
+    "AR-1442",
+    "AR-1443",
+    "AR-1446"
+  ],
   "id": "AR-1338",
   "next_action": "Promote and claim the ASB-only wrapper implementation. Extend the existing bounded easy path to catalog-driven setup/selection, plan/run/sweep, report/compare, record/replay, generated private files, documentation, and offline hostile tests; optional live-provider capture remains separate.",
   "owner": "",
   "plan": "../plans/AR-1338.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Guided ASB command wrapper",
-  "updated_at": "2026-09-23T00:00:00+00:00",
+  "updated_at": "2026-09-25T15:45:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1338-guided-asb-command-wrapper"
 }
 ---
@@ -38,3 +42,7 @@ and teardown, and fail-closed denial of unapproved external traffic remain requi
 contracts. Existing live-provider dependency edges describe production integration
 ordering only and must not be used to block local qualification or to claim external
 reachability.
+
+- 2026-09-25T15:45:17+00:00: ASB-only wrapper dependencies AR-1442, AR-1443, and AR-1446 are done.
+  Optional live capture and asb-tui remain separate; promote full catalog-driven wrapper
+  implementation.

@@ -108,6 +108,12 @@
 
 ## Complete AR inventory
 
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md): Guided ASB command wrapper | Unclaimed | Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows. | Promote and claim the ASB-only wrapper implementation. Extend the existing bounded easy path to catalog-driven setup/selection, plan/run/sweep, report/compare, record/replay, generated private files, documentation, and offline hostile tests; optional live-provider capture remains separate. |
+
 ### Blocked (68)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -181,7 +187,7 @@
 | P2 | [AR-0705](../tasks/AR-0705-native-debian-capacity.md): Provide native Debian capacity | Unclaimed | Qualify booted Debian on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 Debian and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 
-### Planned (63)
+### Planned (62)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -240,7 +246,6 @@
 | P1 | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md): Multi-agent by workload benchmark campaign | Unclaimed | Run the multi-agent by workload benchmark campaign with per-tuple evidence and offline replay. | Add the benchmark campaign mode that runs the compatible agent matrix against the workload suite under one pinned free model, with per-tuple records, sealed cassettes and strict offline replay. |
 | P1 | [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md): Credential-free CI stage for the benchmark path | Unclaimed | Add the required credential-free CI stage for the complete benchmark path. | Add the required credential-free CI stage that exercises the complete benchmark path with loopback and synthetic doubles, no secrets, no egress and no network, keeping the 90&#37; coverage floor. |
 | P1 | [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md): Live benchmark workflow documentation and support matrix | Unclaimed | Document the live benchmark workflow and publish the supported agent and provider matrix. | Document the end-to-end live benchmark workflow and publish the supported agent by provider by model support matrix, with exact digests and evidence limits. |
-| P1 | [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md): Guided ASB command wrapper | Unclaimed | Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows. | Promote and claim the ASB-only wrapper implementation. Extend the existing bounded easy path to catalog-driven setup/selection, plan/run/sweep, report/compare, record/replay, generated private files, documentation, and offline hostile tests; optional live-provider capture remains separate. |
 | P1 | [AR-1420](../tasks/AR-1420-literature-workload-campaign-integration.md): Literature workload campaign integration | Unclaimed | Run the complete qualified literature workload matrix beside built-in software-engineering workloads. | Promote only after all literature family adapters and boundary inventory are released; extend the existing multi-agent campaign to the complete qualified literature selector set. |
 | P1 | [AR-1424](../tasks/AR-1424-all-literature-selector-campaign.md): Complete literature selector and local campaign matrix | Unclaimed | Make all locally executable literature workloads selectable and campaignable beside built-in fixtures. | Promote after AR-1423, AR-1430, AR-1420, and AR-1416 are released; implement the complete local-mock literature selector and campaign matrix. |
 | P1 | [AR-1425](../tasks/AR-1425-literature-workload-release-readiness.md): Literature workload release-readiness gate | Unclaimed | Independently verify release readiness of the complete built-in and literature workload surface. | Promote only after AR-1424, AR-1417, and AR-1418 are released; independently verify the complete built-in plus literature workload surface and all release gates. |
