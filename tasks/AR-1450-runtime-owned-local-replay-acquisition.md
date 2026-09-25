@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep local replay authority acquisition inside the runtime boundary.",
-  "task_revision": 79,
+  "task_revision": 80,
   "title": "Runtime-owned local replay acquisition factory",
-  "updated_at": "2026-09-25T20:01:48+00:00",
+  "updated_at": "2026-09-25T20:03:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1450-runtime-owned-local-replay-acquisition"
 }
 ---
@@ -223,3 +223,6 @@ Requirements:
 
 - 2026-09-25T20:01:48+00:00: Independent review found two P1 public bypasses; worker repaired them
   in signed+DCO commit b1429d7. Push reports remote branch at b1429d7; no merge attempted.
+
+- 2026-09-25T20:03:37+00:00: Recorded command exit 0; command argv SHA-256
+  e0e814b48e1909b50ccabd4bb0699237298e6f32cf543810dd57274837794bd9.
