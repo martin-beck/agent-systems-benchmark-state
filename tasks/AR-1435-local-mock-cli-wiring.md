@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1435-local-mock-cli-wiring",
-  "checkpoint_commit": "dc52ca99aaea35468ba96405ce744941a8983699",
+  "checkpoint_commit": "cc82333a53e03147ea95cc21ca697647dc27db1f",
   "claim_expires": "2026-09-25T02:27:33+00:00",
   "depends_on": [
     "AR-1434"
   ],
   "id": "AR-1435",
-  "next_action": "Merge PR #316 only after exact-head review is recorded; then verify seven exact-main post-merge workflows before release.",
+  "next_action": "Monitor seven exact-main workflows for merge cc82333a53e03147ea95cc21ca697647dc27db1f to terminal success; verify exact tree/signature/DCO and release only afterward.",
   "observed_branch": "feature/ar-1435-local-mock-cli-wiring",
   "observed_dirty": 0,
   "observed_head": "dc52ca99aaea35468ba96405ce744941a8983699",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire deterministic local mock attempts into asb run and sweep configuration qualification.",
-  "task_revision": 105,
+  "task_revision": 106,
   "title": "Local mock CLI wiring",
-  "updated_at": "2026-09-25T00:31:51+00:00",
+  "updated_at": "2026-09-25T00:32:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1435-local-mock-cli-wiring"
 }
 ---
@@ -351,3 +351,10 @@ it must not contact OpenRouter or any external provider, mint
 
 - 2026-09-25T00:31:51+00:00: Recorded command exit 0; command argv SHA-256
   d016d476317eccef95d48ac8c39cb7004b3efcf15c444b129c246a3bce129ff0.
+
+- 2026-09-25T00:32:24+00:00: PR #316 merged through local integration with exact base 4736db727b,
+  head dc52ca99, tree 0639d40b. Remote origin/main is exact merge cc82333a; parents are base and PR
+  head, SSH signature G, matching DCO trailer. Seven required workflows launched for this exact
+  commit: Fault assurance 36077914480, Formal assurance 36077914501, Repository quality 36077914599,
+  Emulated aarch64 portability 36077914619, Rust verification 36077914513, Hosted portability and
+  native qualification 36077914490, Huawei MIT source headers 36077914555 (terminal success).
