@@ -10,20 +10,21 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #318 | `feature/ar-1437-local-record-replay-campaign@a7d041bcf97c` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, QUEUED:, IN_PROGRESS: | Qualify local record-campaign sealing |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 36082816442 | `a7d041bcf97c` | pull_request | Huawei MIT source headers | in_progress:- |
+| 36082816440 | `a7d041bcf97c` | pull_request | Rust verification | in_progress:- |
+| 36082816435 | `a7d041bcf97c` | pull_request | Repository quality | in_progress:- |
+| 36082816425 | `a7d041bcf97c` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 36082816424 | `a7d041bcf97c` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 36082816399 | `a7d041bcf97c` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 36082816392 | `a7d041bcf97c` | pull_request | Formal assurance | queued:- |
+| 36082816363 | `a7d041bcf97c` | pull_request | Fault assurance | in_progress:- |
 | 36080878008 | `18a0df9b4312` | push | Hosted portability and native qualification | completed:success |
 | 36080877995 | `18a0df9b4312` | push | Huawei MIT source headers | completed:success |
 | 36080877989 | `18a0df9b4312` | push | Emulated aarch64 portability | completed:success |
 | 36080877987 | `18a0df9b4312` | push | Rust verification | completed:success |
-| 36080877977 | `18a0df9b4312` | push | Formal assurance | completed:success |
-| 36080877975 | `18a0df9b4312` | push | Fault assurance | completed:success |
-| 36080877969 | `18a0df9b4312` | push | Repository quality | completed:success |
-| 36080084245 | `ae48046d9802` | pull_request | Hosted portability and native qualification | completed:success |
-| 36080084171 | `ae48046d9802` | pull_request | Huawei MIT source headers | completed:success |
-| 36080084161 | `ae48046d9802` | pull_request | Formal assurance | completed:success |
-| 36080084152 | `ae48046d9802` | pull_request | Fault assurance | completed:success |
-| 36080084148 | `ae48046d9802` | pull_request | Repository quality | completed:success |
