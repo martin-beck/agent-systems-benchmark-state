@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep local replay authority acquisition inside the runtime boundary.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Runtime-owned local replay acquisition factory",
-  "updated_at": "2026-09-25T17:19:19+00:00",
+  "updated_at": "2026-09-25T17:19:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1450-runtime-owned-local-replay-acquisition"
 }
 ---
@@ -95,3 +95,6 @@ Requirements:
 
 - 2026-09-25T17:19:19+00:00: Recorded command exit 0; command argv SHA-256
   bb0e08dd82ef2580192c57b32b12ba31a207c11aa628611d50d374a78d40bdbc.
+
+- 2026-09-25T17:19:54+00:00: Recorded command exit 0; command argv SHA-256
+  1d4a6ad66d99635aea146be56ba18ef2a754d7dc6feb79785bbcd2dff7351269.
