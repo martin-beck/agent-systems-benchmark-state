@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1453-frontend-orchestration-wiring",
-  "checkpoint_commit": "c17254a9db622d8e9801084071afa009fc7cedf1",
+  "checkpoint_commit": "88fd1067ae7e04da0cc641b033bdcc32b63dce8b",
   "claim_expires": "2026-09-25T23:58:00+00:00",
   "depends_on": [
     "AR-1452"
   ],
   "id": "AR-1453",
-  "next_action": "Repair PR #333 required Rust deadline failure and bound PlanAuthoritySource cancellation state; preserve failed CI/review evidence, then rerun local and exact-head hosted gates.",
+  "next_action": "PR #333 exact head 88fd1067ae7e04da0cc641b033bdcc32b63dce8b is running replacement hosted checks; require independent review and all required checks before merge. Preserve PR332 and prior PR333 failure evidence.",
   "observed_branch": "feature/ar-1453-frontend-orchestration-wiring",
   "observed_dirty": 0,
   "observed_head": "88fd1067ae7e04da0cc641b033bdcc32b63dce8b",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 98,
+  "task_revision": 99,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T22:01:04+00:00",
+  "updated_at": "2026-09-25T22:01:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
@@ -312,3 +312,9 @@ asb-control protocol after this AR is complete.
 
 - 2026-09-25T22:00:52+00:00: Recorded command exit 0; command argv SHA-256
   1da6321d70012989f6655d997ef1afb35b40d703360ea84e5c78729bf3a4110d.
+
+- 2026-09-25T22:01:18+00:00: Forward signed+DCO repair commit pushed to existing replacement branch.
+  execute_until now clamps to request timeout and caller deadline, making expired budgets fail
+  closed; strict replay does not allocate cancellation state; local cancellation bindings are
+  removed after execution/cancel. Focused lifecycle tests, serial full 110 asb-cli lib tests, clippy
+  -D warnings, and fmt pass.

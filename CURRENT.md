@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1453](tasks/AR-1453-frontend-orchestration-wiring.md): Route ASB frontends through central orchestration | Make CLI and control use the central service for every run lifecycle. | Repair PR #333 required Rust deadline failure and bound PlanAuthoritySource cancellation state; preserve failed CI/review evidence, then rerun local and exact-head hosted gates. | ar1453-frontend-orchestration-luna56 |
+| P0 | [AR-1453](tasks/AR-1453-frontend-orchestration-wiring.md): Route ASB frontends through central orchestration | Make CLI and control use the central service for every run lifecycle. | PR #333 exact head 88fd1067ae7e04da0cc641b033bdcc32b63dce8b is running replacement hosted checks; require independent review and all required checks before merge. Preserve PR332 and prior PR333 failure evidence. | ar1453-frontend-orchestration-luna56 |
 
 ## Open
 
