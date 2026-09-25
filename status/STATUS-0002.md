@@ -108,12 +108,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1433](../tasks/AR-1433-runtime-mock-attempt-backend.md): Runtime mock-attempt backend | coordinator-ar1433 | Add an approved runtime mock-attempt backend for deterministic local run and sweep qualification. | Promote and claim after the coordinator-approved dependency transition. Implement a runtime-owned deterministic mock-attempt backend and wire local run/sweep qualification without weakening ProviderEgressTarget or synthesizing LiveProviderAttempt authority. Preserve AR-1432&#x27;s separate production live-bridge blocker. |
-
 ### Blocked (68)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -265,7 +259,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (313)
+### Done (314)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -409,6 +403,7 @@
 | P0 | [AR-1421](../tasks/AR-1421-protected-main-literature-merge-race.md): Protected-main literature merge race repair | Unclaimed | Repair protected-main merge-tree requalification after a literature PR merges onto an advanced main. | Release AR-1421 done: merged tree equals reviewed topic tree e5d99b7; parents are 5ddac12 and 28e3560; topic passes SSH signature and DCO. Seven exact-main workflows all terminal SUCCESS. |
 | P0 | [AR-1427](../tasks/AR-1427-protected-main-merge-tree-requalification.md): Protected-main merge-tree requalification repair | Unclaimed | Repair exact protected-main merge-tree requalification after sequential tutorial merges. | Promote and reproduce PR #310 merge f511645 versus reviewed topic 9d97e168; repair exact protected-main merge-tree requalification, then rerun AR-1215 post-merge evidence. |
 | P0 | [AR-1431](../tasks/AR-1431-protected-main-stale-base-repair.md): Protected-main stale-base merge requalification repair | Unclaimed | Prevent stale-base sequential merges from passing review but failing protected-main merge-tree policy. | Monitor seven post-merge workflows for exact merge ed907603; release AR-1431 only after all seven terminal success, then coordinate AR-1216 release. |
+| P0 | [AR-1433](../tasks/AR-1433-runtime-mock-attempt-backend.md): Runtime mock-attempt backend | Unclaimed | Add an approved runtime mock-attempt backend for deterministic local run and sweep qualification. | Promote and claim after the coordinator-approved dependency transition. Implement a runtime-owned deterministic mock-attempt backend and wire local run/sweep qualification without weakening ProviderEgressTarget or synthesizing LiveProviderAttempt authority. Preserve AR-1432&#x27;s separate production live-bridge blocker. |
 | P0 | [AR-1434](../tasks/AR-1434-runtime-local-mock-attempt-adapter.md): Runtime local mock-attempt adapter | Unclaimed | Add an approved runtime mock-attempt adapter for deterministic local run and sweep qualification. | Monitor exact merge 4736db727b13140364b8acd32cf77b7b375eeb17 until all seven post-merge workflows are terminal success: Fault assurance, Formal assurance, Repository quality, Emulated aarch64 portability, Rust verification, Hosted portability and native qualification, Huawei MIT source headers. Then run exact-main reconciliation and release only with durable evidence. |
 | P0 | [AR-1435](../tasks/AR-1435-local-mock-cli-wiring.md): Local mock CLI wiring | Unclaimed | Wire deterministic local mock attempts into asb run and sweep configuration qualification. | Monitor seven exact-main workflows for merge cc82333a53e03147ea95cc21ca697647dc27db1f to terminal success; verify exact tree/signature/DCO and release only afterward. |
 | P0 | [AR-1445](../tasks/AR-1445-protected-main-topology-repair-openrouter.md): Protected-main topology repair for OpenRouter refresh | Unclaimed | Repair the single-parent protected-main merge produced for the OpenRouter model refresh. | PR #324 merged as two-parent 5871de7cad4ee7e496ffce1c5e1fe51862660bfc; monitor seven exact-main workflows 36145976341, 36145976337, 36145976326, 36145976266, 36145976239, 36145976238, 36145976223 to terminal success. Record that GitHub has no independent review record, then update/release AR-1440 only after all seven pass. |

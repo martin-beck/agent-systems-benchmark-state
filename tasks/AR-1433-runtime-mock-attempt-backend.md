@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1433-runtime-mock-attempt-backend",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-25T17:07:01+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1327",
     "AR-1328",
@@ -17,15 +17,15 @@
   "observed_branch": "feature/ar-1433-runtime-mock-attempt-backend",
   "observed_dirty": 0,
   "observed_head": "4c970e08377bd8e94d50c92ef7e88fee9b85cd4d",
-  "owner": "coordinator-ar1433",
+  "owner": "",
   "plan": "../plans/AR-1433-runtime-mock-attempt-backend.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Add an approved runtime mock-attempt backend for deterministic local run and sweep qualification.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Runtime mock-attempt backend",
-  "updated_at": "2026-09-25T15:09:38+00:00",
+  "updated_at": "2026-09-25T15:10:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1433"
 }
 ---
@@ -107,3 +107,13 @@ access or to bypass runtime-owned launch authority.
 
 - 2026-09-25T15:09:38+00:00: Recorded command exit 0; command argv SHA-256
   6d10f1d80f337299ee295cca7a71484e044dbad658ec200714e46cecf41434a4.
+
+- 2026-09-25T15:10:00+00:00: Completed runtime-owned deterministic local mock qualification. Fixed
+  concurrent authority generation invalidation in signed+DCO commit
+  4c970e08377bd8e94d50c92ef7e88fee9b85cd4d. Focused runtime local_mock tests 5/5, full asb-runtime
+  127 passed/1 ignored, full asb-cli 107 passed. PR #325 exact head merged via signed two-parent
+  merge 2872a31f2ee90ac5df1a47203b2a618b1829cfec; parents 5871de7 and 4c970e0, exact tree 68b75c76;
+  signature verified and DCO present. All seven exact-main workflows 36151266047, 36151266230,
+  36151266352, 36151266146, 36151265891, 36151265789, 36151265860 succeeded. Post-merge runtime
+  local_mock tests 5/5 passed on exact merge. AR-1432 optional production live bridge remains
+  blocked and unchanged.
