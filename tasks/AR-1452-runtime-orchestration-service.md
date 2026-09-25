@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 194,
+  "task_revision": 195,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T20:11:44+00:00",
+  "updated_at": "2026-09-25T20:11:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---
@@ -509,3 +509,6 @@ until the service can prove the complete authority chain.
   d3a8d95b702d461679df5cf31be1e01c5249a74000dfdb67429b64d64618f49d.
 
 - 2026-09-25T20:11:44+00:00: Heartbeat by coordinator-orchestrator-impl.
+
+- 2026-09-25T20:11:47+00:00: Recorded command exit 1; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
