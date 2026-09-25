@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows.",
-  "task_revision": 73,
+  "task_revision": 74,
   "title": "Guided ASB command wrapper",
-  "updated_at": "2026-09-25T16:51:47+00:00",
+  "updated_at": "2026-09-25T16:52:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1338-guided-asb-command-wrapper"
 }
 ---
@@ -227,3 +227,6 @@ reachability.
 
 - 2026-09-25T16:51:47+00:00: Added absolute/non-traversal validation for easy record-campaign and
   regression coverage.
+
+- 2026-09-25T16:52:36+00:00: Recorded command exit 0; command argv SHA-256
+  7962fb367e7b789ab577d1560cc6088fb0fc44c859eff1837289f1b7fa08b5eb.
