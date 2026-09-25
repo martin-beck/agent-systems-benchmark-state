@@ -2,22 +2,22 @@
 {
   "branch": "repair/ar-1445-protected-main-topology-repair-openrouter",
   "checkpoint_commit": "5871de7cad4ee7e496ffce1c5e1fe51862660bfc",
-  "claim_expires": "2026-09-25T16:21:04+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1445",
   "next_action": "PR #324 merged as two-parent 5871de7cad4ee7e496ffce1c5e1fe51862660bfc; monitor seven exact-main workflows 36145976341, 36145976337, 36145976326, 36145976266, 36145976239, 36145976238, 36145976223 to terminal success. Record that GitHub has no independent review record, then update/release AR-1440 only after all seven pass.",
   "observed_branch": "repair/ar-1445-protected-main-topology-repair-openrouter",
   "observed_dirty": 0,
   "observed_head": "10686db7ceb5f023aaef13cd1ed1b6cc58118a55",
-  "owner": "ar1445-topology-repair-luna56",
+  "owner": "",
   "plan": "../plans/AR-1445.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Repair the single-parent protected-main merge produced for the OpenRouter model refresh.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Protected-main topology repair for OpenRouter refresh",
-  "updated_at": "2026-09-25T14:21:04+00:00",
+  "updated_at": "2026-09-25T14:21:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1445-protected-main-topology-repair-openrouter"
 }
 ---
@@ -119,3 +119,8 @@ measurement evidence.
 - 2026-09-25T14:18:14+00:00: Heartbeat by ar1445-topology-repair-luna56.
 
 - 2026-09-25T14:21:04+00:00: Heartbeat by ar1445-topology-repair-luna56.
+
+- 2026-09-25T14:21:27+00:00: AR-1445 complete: protected-main topology repaired by reviewed PR #324,
+  exact two-parent merge 5871de7cad4ee7e496ffce1c5e1fe51862660bfc, tree equality verified, all seven
+  exact-main post-merge workflows terminal success. Preserve failed PR #323 evidence 36144090160 and
+  single-parent 84b587ec.
