@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify booted Debian on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Provide native Debian capacity",
-  "updated_at": "2026-09-25T12:13:13+00:00",
+  "updated_at": "2026-09-25T12:13:28+00:00",
   "worktree_key": "agent-systems-benchmark-native-debian-capacity"
 }
 ---
@@ -94,3 +94,6 @@ native identity, kernel/distribution provenance, cleanup, cost/availability boun
 
 - 2026-09-25T12:13:13+00:00: Recorded command exit 0; command argv SHA-256
   f9d2acd3192349a712b23eee70e6fcbee3022693afb9ac5c9518779f59c549e2.
+
+- 2026-09-25T12:13:28+00:00: Recorded command exit 0; command argv SHA-256
+  d468719cdefe0dc0deb4fab21dbba7b9226712f6b6a1054c25fc0c458b18869b.
