@@ -3,17 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1338](tasks/AR-1338-guided-asb-command-wrapper.md): Guided ASB command wrapper | Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows. | PR #327 latest signed head 4d42f59 has full local gates and hosted checks green after campaign path hardening. Do not merge yet: independent review confirms the remaining P1 is ordinary CLI replay authority acquisition. Successor AR-1449 is now open to provide the runtime-owned local replay authority; after AR-1449 merges, rebase/integrate this wrapper, rerun exact-head CI, then complete AR-1338. | coordinator-ar1338 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1450](tasks/AR-1450-runtime-owned-local-replay-acquisition.md): Runtime-owned local replay acquisition factory | Keep local replay authority acquisition inside the runtime boundary. | Implement a runtime-owned local replay acquisition factory that accepts only validated cassette identity and returns opaque one-shot authority. | - |
+| P1 | [AR-1338](tasks/AR-1338-guided-asb-command-wrapper.md): Guided ASB command wrapper | Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows. | PR #327 latest signed head 4d42f59 has full local gates and hosted checks green after campaign path hardening. Do not merge yet: independent review confirms the remaining P1 is ordinary CLI replay authority acquisition. Successor AR-1449 is now open to provide the runtime-owned local replay authority; after AR-1449 merges, rebase/integrate this wrapper, rerun exact-head CI, then complete AR-1338. | - |
 
 ## Blocked
 
