@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire deterministic local mock attempts into asb run and sweep configuration qualification.",
-  "task_revision": 95,
+  "task_revision": 96,
   "title": "Local mock CLI wiring",
-  "updated_at": "2026-09-25T00:28:43+00:00",
+  "updated_at": "2026-09-25T00:28:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1435-local-mock-cli-wiring"
 }
 ---
@@ -321,3 +321,6 @@ it must not contact OpenRouter or any external provider, mint
   all 12 hosted checks pass and merge state is CLEAN. Prior Rust failures remain preserved:
   generation-fence assertion race fixed by removing non-contractual active assertion; hostile
   validation ordering fixed to classify malformed requests before valid-request inactivity.
+
+- 2026-09-25T00:28:51+00:00: Recorded command exit 0; command argv SHA-256
+  683cf27dd4af2bd5584b177ad6f3ff7b430551a044066aa39f6bf5541b93e758.
