@@ -2,7 +2,7 @@
 {
   "branch": "feature/native-debian-capacity",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-25T14:24:33+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0704",
     "AR-0201",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/native-debian-capacity",
   "observed_dirty": 0,
   "observed_head": "7390bcd2082700d0c9f04409732b48de8e9f8628",
-  "owner": "ar0705_capacity_requal_luna56",
+  "owner": "",
   "plan": "../plans/AR-0705.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Qualify booted Debian on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Provide native Debian capacity",
-  "updated_at": "2026-09-25T12:24:33+00:00",
+  "updated_at": "2026-09-25T12:24:56+00:00",
   "worktree_key": "agent-systems-benchmark-native-debian-capacity"
 }
 ---
@@ -132,3 +132,15 @@ native identity, kernel/distribution provenance, cleanup, cost/availability boun
   2fb423474ad310904180c4cb70601253094bba230e9291165a46aab675969959.
 
 - 2026-09-25T12:24:33+00:00: Heartbeat by ar0705_capacity_requal_luna56.
+
+- 2026-09-25T12:24:56+00:00: Requalification complete: installed exact qemu-user
+  1:8.2.2+ds-0ubuntu1.18, qemu-user-binfmt 1:8.2.2+ds-0ubuntu1.18, gcc-aarch64-linux-gnu
+  4:13.2.0-7ubuntu1, libc6-dev-arm64-cross 2.39-0ubuntu8cross1; pinned Ubuntu arm64 image digest
+  probe/closed-report validation passed; cross-compiled aarch64 workspace and ran
+  protocol/replay/bundle tests (all green) under qemu-aarch64; release CLI ran asb 0.1.0; exact
+  development self-hosted runner asb-development-v1-x86_64-ubuntu2404-local registered online with
+  labels asb-development-v1-x86_64-ubuntu2404,asb-qemu-aarch64; canary workflow 36134428061 and
+  trusted workflow 36134621437 green. Host remains Ubuntu 24.04.4 x86_64, not Debian; no booted
+  Debian x86_64 cell was available, so no native-Debian claim. Next action: provide authorized
+  disposable booted Debian 13.6/trixie x86_64 runner/VM with immutable provenance and cleanup, then
+  rerun Debian qualification; native ARM64 remains optional.
