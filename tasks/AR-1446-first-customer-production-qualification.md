@@ -2,7 +2,7 @@
 {
   "branch": "qualification/ar-1446-first-customer-production",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-25T17:08:30+00:00",
+  "claim_expires": "2026-09-25T17:11:34+00:00",
   "depends_on": [
     "AR-1433",
     "AR-1441",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify ASB in a disposable first-customer production-like environment.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "First-customer production qualification",
-  "updated_at": "2026-09-25T15:39:35+00:00",
+  "updated_at": "2026-09-25T15:41:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1446-first-customer-production"
 }
 ---
@@ -51,3 +51,5 @@ This is the customer-facing integration gate. The deterministic local mock path 
 
 - 2026-09-25T15:39:35+00:00: Recorded command exit 0; command argv SHA-256
   3d5811df1ef4712c2f0b86ccd1a7ae38494283569f69b0a201f79d19ec456381.
+
+- 2026-09-25T15:41:34+00:00: Heartbeat by coordinator-ar1446.
