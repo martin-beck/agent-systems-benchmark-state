@@ -1,6 +1,6 @@
 ---
 {
-  "branch": "feature/ar-1442-guided-setup-wizard-orchestration",
+  "branch": "main",
   "checkpoint_commit": "",
   "claim_expires": "2026-09-25T17:20:10+00:00",
   "depends_on": [
@@ -20,7 +20,7 @@
   "task_revision": 3,
   "title": "Guided setup wizard orchestration",
   "updated_at": "2026-09-25T15:20:10+00:00",
-  "worktree_key": "agent-systems-benchmark-ar-1442-guided-setup-wizard-orchestration"
+  "worktree_key": "agent-systems-benchmark"
 }
 ---
 
