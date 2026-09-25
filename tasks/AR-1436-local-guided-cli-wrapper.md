@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1436-local-guided-cli-wrapper",
-  "checkpoint_commit": "671bb7e83c61785c2bdd1c3c94b962d90f9e0ec7",
+  "checkpoint_commit": "ae48046d82efecb02ff2f54addb2d322b71339a7",
   "claim_expires": "2026-09-25T02:43:20+00:00",
   "depends_on": [
     "AR-1435",
     "AR-1328"
   ],
   "id": "AR-1436",
-  "next_action": "Rerun full workspace tests serially to distinguish existing state-root race; then clippy/docs/release/privacy gates.",
+  "next_action": "Rerun serial full tests and parallel applicable gates at ae48046; then independent review and exact-head PR.",
   "observed_branch": "feature/ar-1436-local-guided-cli-wrapper",
   "observed_dirty": 0,
   "observed_head": "671bb7e83c61785c2bdd1c3c94b962d90f9e0ec7",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a catalog-driven guided CLI wrapper for deterministic local mock qualification.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Local guided CLI wrapper",
-  "updated_at": "2026-09-25T00:54:17+00:00",
+  "updated_at": "2026-09-25T00:54:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1436-local-guided-cli-wrapper"
 }
 ---
@@ -113,3 +113,8 @@ weakening. Require focused/full/review/PR/seven post-merge gates.
 
 - 2026-09-25T00:54:17+00:00: Recorded command exit 101; command argv SHA-256
   24610b46a7959f76b8edc7911bb3f62d348b8bfa908d3c54d7e8e2bec6530733.
+
+- 2026-09-25T00:54:50+00:00: Serial rerun confirmed the parallel state-root ownership failures were
+  environmental test contention, but provenance also changed after the final clippy fix (actual CLI
+  digest ab38037e...). Refreshed provenance to ab38037e in signed+DCO ae48046; run provenance only
+  after all source edits are final.
