@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1448-runtime-replay-authority-source",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-25T17:52:13+00:00",
   "depends_on": [
     "AR-1443",
     "AR-1446"
@@ -12,15 +12,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "coordinator-ar1448",
   "plan": "../plans/AR-1448-runtime-replay-authority-source.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Materialize runtime-owned strict replay authority for normal CLI replay.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Runtime replay authority source",
-  "updated_at": "2026-09-25T15:52:10+00:00",
+  "updated_at": "2026-09-25T15:52:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1448-runtime-replay-authority-source"
 }
 ---
@@ -30,3 +30,5 @@ CLI and do not make external provider access a prerequisite.
 
 - 2026-09-25T15:52:10+00:00: AR-1331 audit confirmed the dependency-ready missing runtime/control
   replay authority source. Promote this ASB-only repair; no live provider or asb-tui dependency.
+
+- 2026-09-25T15:52:13+00:00: Claimed by coordinator-ar1448.
