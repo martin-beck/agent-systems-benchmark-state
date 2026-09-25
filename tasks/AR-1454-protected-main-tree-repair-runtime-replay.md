@@ -10,17 +10,17 @@
   "id": "AR-1454",
   "next_action": "Promote a current-main descendant repair, preserve the failed post-merge policy evidence, and require exact two-parent tree-equal merge plus seven post-merge successes.",
   "observed_branch": "repair/ar-1454-protected-main-tree-repair-runtime-replay",
-  "observed_dirty": 1,
-  "observed_head": "452f3ca29390ab37cf3aff8c813b92b54b163b20",
+  "observed_dirty": 0,
+  "observed_head": "a8ad4224b4fb0d601089457ce7be44dfebaec042",
   "owner": "ar1454-tree-repair-luna56",
   "plan": "../plans/AR-1454.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the protected-main tree mismatch after the runtime replay merge.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Protected-main tree-equality repair for runtime replay",
-  "updated_at": "2026-09-25T20:58:30+00:00",
+  "updated_at": "2026-09-25T20:58:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1454-protected-main-tree-repair-runtime-replay"
 }
 ---
