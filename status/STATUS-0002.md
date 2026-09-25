@@ -98,12 +98,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1430](../tasks/AR-1430-literature-workload-catalog-gap-closure.md): Literature workload catalog gap closure | ar1430_literature_workload_catalog_luna56 | Close documented literature workload identity and selector gaps without enabling live providers or external acquisition. | Run full local quality gates, publish exact-head PR, obtain independent review, merge, monitor seven post-merge workflows, then release. |
-
 ### Blocked (66)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -253,7 +247,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (307)
+### Done (308)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
