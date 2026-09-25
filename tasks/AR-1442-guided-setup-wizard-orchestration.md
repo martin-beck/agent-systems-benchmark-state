@@ -10,7 +10,7 @@
     "AR-1436"
   ],
   "id": "AR-1442",
-  "next_action": "Complete ASB CLI catalog-driven setup/reconfiguration qualification against the existing versioned contracts; preserve separate TUI wiring as downstream cross-repository work.",
+  "next_action": "Done: ASB CLI setup/reconfiguration contract and full CLI qualification passed against protected merge 2872a31f; preserve standalone TUI wiring as separate downstream work.",
   "observed_branch": "feature/ar-1442-guided-setup-wizard-orchestration",
   "observed_dirty": 0,
   "observed_head": "2872a31f2ee90ac5df1a47203b2a618b1829cfec",
