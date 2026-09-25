@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 174,
+  "task_revision": 175,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T19:52:18+00:00",
+  "updated_at": "2026-09-25T19:54:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---
@@ -461,3 +461,6 @@ until the service can prove the complete authority chain.
   unbounded default); cleanup errors enter reconciliation barrier; successful complete/execute
   invoke source cancellation/teardown; runtime local cancellation is per attempt. 7 focused tests
   and clippy passed; signed commit pushed.
+
+- 2026-09-25T19:54:21+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
