@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1451-central-orchestration-authority-design",
-  "checkpoint_commit": "a536121fc23ae521e7232be02eabb60eb9e984fc",
+  "checkpoint_commit": "979102f3b56dcfc4b7023e92a712f7c2c71bdb00",
   "claim_expires": "2026-09-25T19:32:06+00:00",
   "depends_on": [
     "AR-1341",
@@ -10,7 +10,7 @@
     "AR-1448"
   ],
   "id": "AR-1451",
-  "next_action": "PR #329 exact head a536121 adds mode-aware identity, scorer revision, opaque fenced handles, operation schemas, artifact byte bounds, and contract vectors. Await independent re-review and all exact-head checks; merge only when green.",
+  "next_action": "PR #329 exact head 979102f executes Draft 2020-12 schema validation for positive, mode, operation, and hostile vectors and uses immutable schema ID. Await final review and all exact-head checks; merge only when green.",
   "observed_branch": "feature/ar-1451-central-orchestration-authority-design",
   "observed_dirty": 0,
   "observed_head": "979102f3b56dcfc4b7023e92a712f7c2c71bdb00",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Freeze one runtime-owned orchestration authority for every ASB run and attempt.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Central orchestration authority contract and ASB redesign",
-  "updated_at": "2026-09-25T17:50:06+00:00",
+  "updated_at": "2026-09-25T17:50:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1451-central-orchestration-authority-design"
 }
 ---
@@ -118,3 +118,6 @@ provider access.
 
 - 2026-09-25T17:50:06+00:00: Recorded command exit 0; command argv SHA-256
   79cfce0176776fe09db388b9fb6464db37385bddd01ae9c1191b033fa82139a0.
+
+- 2026-09-25T17:50:37+00:00: Closed final schema-review findings with executable jsonschema
+  validation, scorer/artifact bounds, fenced handles, and immutable schema identity.
