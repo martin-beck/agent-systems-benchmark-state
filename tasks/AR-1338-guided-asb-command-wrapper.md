@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1338-guided-asb-command-wrapper",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-25T17:18:04+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1331",
     "AR-1442",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1338-guided-asb-command-wrapper",
   "observed_dirty": 0,
   "observed_head": "4d42f598127d014d2ed33f7f33fef82d3f3b8036",
-  "owner": "coordinator-ar1338",
+  "owner": "",
   "plan": "../plans/AR-1338.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows.",
-  "task_revision": 93,
+  "task_revision": 94,
   "title": "Guided ASB command wrapper",
-  "updated_at": "2026-09-25T17:04:26+00:00",
+  "updated_at": "2026-09-25T17:04:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1338-guided-asb-command-wrapper"
 }
 ---
@@ -283,3 +283,6 @@ reachability.
 
 - 2026-09-25T17:04:26+00:00: Recorded command exit 0; command argv SHA-256
   eaf2472e4b0ec29bac3303a6d46474c99be3c0ab077feca87b1c3650d4745e53.
+
+- 2026-09-25T17:04:47+00:00: Repaired successor task front matter and persisted exact blocked next
+  actions.
