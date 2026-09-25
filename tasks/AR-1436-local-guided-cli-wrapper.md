@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1436-local-guided-cli-wrapper",
-  "checkpoint_commit": "4b1213d7e58aa3ed8591ac2d1ac6e9484db86cc6",
+  "checkpoint_commit": "671bb7e6e3b50bcbe62f731feecb6761df39d2b5",
   "claim_expires": "2026-09-25T02:43:20+00:00",
   "depends_on": [
     "AR-1435",
     "AR-1328"
   ],
   "id": "AR-1436",
-  "next_action": "Rerun full workspace tests and applicable offline gates at 4b1213d; then independent review and exact-head PR.",
+  "next_action": "Rerun full workspace tests, clippy, docs, release build and privacy gates at 671bb7e; then independent review and exact-head PR.",
   "observed_branch": "feature/ar-1436-local-guided-cli-wrapper",
   "observed_dirty": 0,
   "observed_head": "4b1213d089833a78fa73a3402c16576611415e5f",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a catalog-driven guided CLI wrapper for deterministic local mock qualification.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Local guided CLI wrapper",
-  "updated_at": "2026-09-25T00:52:31+00:00",
+  "updated_at": "2026-09-25T00:53:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1436-local-guided-cli-wrapper"
 }
 ---
@@ -97,3 +97,7 @@ weakening. Require focused/full/review/PR/seven post-merge gates.
 
 - 2026-09-25T00:52:31+00:00: Recorded command exit 101; command argv SHA-256
   000f7c77b968663638076c946bf0f392f0cbc82d5f370a66d5405fe755f41a42.
+
+- 2026-09-25T00:53:02+00:00: Clippy gate after provenance refresh found one real lint: needless
+  borrow in guided_local_at SelectionSource::Config(&store). Corrected to pass the existing
+  reference in signed+DCO 671bb7e; no allow or gate weakening.
