@@ -15,7 +15,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36134621437 | `058b6b320897` | workflow_dispatch | Trusted development host validation | queued:- |
+| 36134621437 | `058b6b320897` | workflow_dispatch | Trusted development host validation | completed:success |
 | 36134428061 | `058b6b320897` | workflow_dispatch | Development host runner canary | completed:success |
 | 36132910260 | `058b6b320897` | workflow_dispatch | Trusted development host validation | completed:failure |
 | 36132823525 | `058b6b320897` | workflow_dispatch | Development host runner canary | completed:success |
