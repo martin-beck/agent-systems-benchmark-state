@@ -1,6 +1,6 @@
 ---
 {
-  "branch": "feature/ar-1338-guided-asb-command-wrapper",
+  "branch": "main",
   "checkpoint_commit": "",
   "claim_expires": "2026-09-25T17:45:20+00:00",
   "depends_on": [
@@ -19,7 +19,7 @@
   "task_revision": 3,
   "title": "Guided ASB command wrapper",
   "updated_at": "2026-09-25T15:45:20+00:00",
-  "worktree_key": "agent-systems-benchmark-ar-1338-guided-asb-command-wrapper"
+  "worktree_key": "agent-systems-benchmark"
 }
 ---
 
