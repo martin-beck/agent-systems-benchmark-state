@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a catalog-driven guided CLI wrapper for deterministic local mock qualification.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Local guided CLI wrapper",
-  "updated_at": "2026-09-25T00:53:02+00:00",
+  "updated_at": "2026-09-25T00:53:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1436-local-guided-cli-wrapper"
 }
 ---
@@ -101,3 +101,6 @@ weakening. Require focused/full/review/PR/seven post-merge gates.
 - 2026-09-25T00:53:02+00:00: Clippy gate after provenance refresh found one real lint: needless
   borrow in guided_local_at SelectionSource::Config(&store). Corrected to pass the existing
   reference in signed+DCO 671bb7e; no allow or gate weakening.
+
+- 2026-09-25T00:53:23+00:00: Recorded command exit 101; command argv SHA-256
+  11bd125eca1a90017ea3ff21b22e028ea8405e6387607e767fde008f6bf77b8d.
