@@ -108,6 +108,12 @@
 
 ## Complete AR inventory
 
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1433](../tasks/AR-1433-runtime-mock-attempt-backend.md): Runtime mock-attempt backend | Unclaimed | Add an approved runtime mock-attempt backend for deterministic local run and sweep qualification. | Promote and claim after the coordinator-approved dependency transition. Implement a runtime-owned deterministic mock-attempt backend and wire local run/sweep qualification without weakening ProviderEgressTarget or synthesizing LiveProviderAttempt authority. Preserve AR-1432&#x27;s separate production live-bridge blocker. |
+
 ### Blocked (68)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -181,7 +187,7 @@
 | P2 | [AR-0705](../tasks/AR-0705-native-debian-capacity.md): Provide native Debian capacity | Unclaimed | Qualify booted Debian on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 Debian and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 
-### Planned (68)
+### Planned (67)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -205,7 +211,6 @@
 | P0 | [AR-1309](../tasks/AR-1309-reviewed-capacity-or-model-reduction.md): Reviewed full-exhaustive capacity or model-reduction contract | Unclaimed | Provide a reviewed successor contract after terminal full-exhaustive capacity OOM. | Remain planned until the coordinator reviews the AR-1308 terminal OOM evidence and selects a separately scoped capacity contract or model-reduction profile; do not rerun or widen AR-1307 limits. |
 | P0 | [AR-1370](../tasks/AR-1370-runner-authority-materialization.md): Runner authority materialization | Unclaimed | Inject existing authenticated certificate authority and runtime enrollment material into RunnerBackend/Catalog for receipt issuance. | Remain planned until AR-1369 dependency is resolved; then add authenticated RunnerBackend/Catalog authority injection and receipt-source tests without synthetic authority. |
 | P0 | [AR-1375](../tasks/AR-1375-live-control-dispatch-source.md): Runtime-owned live control dispatch source | Unclaimed | Supply authenticated runtime control receipts to production live dispatch. | Wait for AR-1374 blocker resolution, then implement the runtime-owned authenticated control adapter for CLI live dispatch. |
-| P0 | [AR-1433](../tasks/AR-1433-runtime-mock-attempt-backend.md): Runtime mock-attempt backend | Unclaimed | Add an approved runtime mock-attempt backend for deterministic local run and sweep qualification. | Promote and claim after the coordinator-approved dependency transition. Implement a runtime-owned deterministic mock-attempt backend and wire local run/sweep qualification without weakening ProviderEgressTarget or synthesizing LiveProviderAttempt authority. Preserve AR-1432&#x27;s separate production live-bridge blocker. |
 | P0 | [AR-1441](../tasks/AR-1441-first-class-install-bootstrap.md): First-class install and bootstrap | Unclaimed | Provide a verified one-command install and first-run bootstrap for ASB and its optional TUI. | Promote after AR-0821, AR-0822 and AR-0823 are done; implement the single clean-install/bootstrap path and disposable install qualification. |
 | P0 | [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md): Guided setup wizard orchestration | Unclaimed | Unify first-run and reconfiguration of agents, providers, auth methods, models and defaults in one guided flow. | Promote after dependencies are done; implement the shared catalog-driven first-run and reconfiguration contract for CLI and TUI. |
 | P0 | [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md): Guided benchmark capture and comparison | Unclaimed | Make benchmark, offline capture/replay, and result comparison a single guided workflow. | Promote after dependencies are done; implement the selection-driven benchmark, capture/replay, and comparison journey over the existing campaign contracts. |

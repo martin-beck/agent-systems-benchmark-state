@@ -18,11 +18,11 @@
   "plan": "../plans/AR-1433-runtime-mock-attempt-backend.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Add an approved runtime mock-attempt backend for deterministic local run and sweep qualification.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Runtime mock-attempt backend",
-  "updated_at": "2026-09-25T00:00:00+00:00",
+  "updated_at": "2026-09-25T14:40:56+00:00",
   "worktree_key": ""
 }
 ---
@@ -36,3 +36,7 @@ access or to bypass runtime-owned launch authority.
   production run/sweep bridge is intentionally blocked. AR-1433 now depends on
   AR-1432's completed prerequisites so it can implement the missing runtime-owned
   mock-attempt backend without circularly waiting on the production bridge.
+
+- 2026-09-25T14:40:56+00:00: Coordinator-approved dependency transition: AR-1432 local authority
+  boundary is complete; remaining production bridge stays separately blocked. Promote mock backend
+  repair against completed prerequisites.
