@@ -11,7 +11,7 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #327 | `feature/ar-1338-guided-asb-command-wrapper@4d42f598127d` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): extend guided ASB workflow |
-| #328 | `feature/ar-1450-runtime-owned-local-replay-acquisition@7c1a93a6f4df` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(runtime): add local replay provisioning boundary |
+| #328 | `feature/ar-1450-runtime-owned-local-replay-acquisition@7c1a93a6f4df` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(runtime): add local replay provisioning boundary |
 
 ## Recent workflows
 
@@ -24,7 +24,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36167000113 | `7c1a93a6f4df` | pull_request | Rust verification | in_progress:- |
 | 36166999993 | `7c1a93a6f4df` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 36166999980 | `7c1a93a6f4df` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 36166999845 | `7c1a93a6f4df` | pull_request | Repository quality | in_progress:- |
+| 36166999845 | `7c1a93a6f4df` | pull_request | Repository quality | completed:failure |
 | 36166443681 | `735d3a2e6554` | pull_request | Huawei MIT source headers | completed:success |
 | 36166443664 | `735d3a2e6554` | pull_request | Hosted portability and native qualification | completed:success |
 | 36166443626 | `735d3a2e6554` | pull_request | Formal assurance | completed:success |
