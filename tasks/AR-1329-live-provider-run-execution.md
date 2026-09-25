@@ -27,13 +27,13 @@
 ---
 
 `asb run` and `asb sweep` currently execute a digest-pinned `batch-stdio-v1`
-runtime stub instead of a real agent, so no benchmark can produce live evidence.
-This AR wires the AR-1327 OpenRouter adapter projections into the execution path
-so `run` and `sweep` launch a real agent process against the selected provider
-and workload, resolves credentials only through the enrolled environment
-channel, enforces the declared egress allowances, and requires an explicit
-opt-in flag for any live provider contact. Offline CI, synthetic doubles, and
-the digest-pinned mode remain default and never touch the network.
+runtime stub rather than the deterministic local sub-1B/LiteLLM-compatible mock
+agent path. This AR qualifies that local path as the mandatory development and
+CI route, wiring the AR-1327 projections into execution while preserving
+credential non-disclosure and declared-egress denial. Optional production live
+provider contact remains explicitly gated by runtime-owned authority and is
+never required for benchmark qualification or completion. Offline CI, synthetic
+doubles, and the digest-pinned mode remain default and never touch the network.
 
 - 2026-09-23T08:41:51+00:00: Dependencies AR-1327 and AR-1328 are done; begin live provider
   execution implementation.
