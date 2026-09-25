@@ -11,8 +11,8 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #327 | `feature/ar-1338-guided-asb-command-wrapper@4d42f598127d` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): extend guided ASB workflow |
-| #331 | `repair/ar-1454-protected-main-tree-repair-runtime-replay@a8ad4224b4fb` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | docs: record protected-main tree equality repair |
-| #332 | `feature/ar-1453-frontend-orchestration-wiring@ceac822ad15d` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat: route ASB frontends through central orchestration |
+| #331 | `repair/ar-1454-protected-main-tree-repair-runtime-replay@a8ad4224b4fb` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | docs: record protected-main tree equality repair |
+| #332 | `feature/ar-1453-frontend-orchestration-wiring@ceac822ad15d` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: route ASB frontends through central orchestration |
 
 ## Recent workflows
 
@@ -20,10 +20,10 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 36189762606 | `ceac822ad15d` | pull_request | Repository quality | in_progress:- |
 | 36189762593 | `ceac822ad15d` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 36189762527 | `ceac822ad15d` | pull_request | Fault assurance | in_progress:- |
+| 36189762527 | `ceac822ad15d` | pull_request | Fault assurance | completed:success |
 | 36189762525 | `ceac822ad15d` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36189762433 | `ceac822ad15d` | pull_request | Formal assurance | in_progress:- |
-| 36189762385 | `ceac822ad15d` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 36189762385 | `ceac822ad15d` | pull_request | Hosted portability and native qualification | completed:success |
 | 36189762382 | `ceac822ad15d` | pull_request | Rust verification | in_progress:- |
 | 36189762379 | `ceac822ad15d` | pull_request | Huawei MIT source headers | completed:success |
 | 36188991822 | `a8ad4224b4fb` | pull_request | Rust verification | completed:success |
