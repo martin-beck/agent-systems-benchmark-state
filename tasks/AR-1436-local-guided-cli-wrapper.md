@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a catalog-driven guided CLI wrapper for deterministic local mock qualification.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Local guided CLI wrapper",
-  "updated_at": "2026-09-25T00:51:28+00:00",
+  "updated_at": "2026-09-25T00:52:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1436-local-guided-cli-wrapper"
 }
 ---
@@ -91,3 +91,6 @@ weakening. Require focused/full/review/PR/seven post-merge gates.
   d09919d1e5025c5e43dfd3a057b9ccad62510107e7952004636dce68124121f versus recorded 0af35b...).
   Refreshed docs/examples/asb-cli-workflow-v1.provenance.json in signed+DCO 4b1213d and pushed. No
   gate suppression or runtime boundary change.
+
+- 2026-09-25T00:52:02+00:00: Recorded command exit 0; command argv SHA-256
+  88f7af68d2ecc3638bfd9fff251cc79e4f54fee616e0c550b931fe77cecde9a1.
