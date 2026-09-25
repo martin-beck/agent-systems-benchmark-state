@@ -7,8 +7,13 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1338](tasks/AR-1338-guided-asb-command-wrapper.md): Guided ASB command wrapper | Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows. | PR #327 latest signed head 4d42f59 has full local gates and hosted checks green after campaign path hardening. Do not merge yet: independent review confirms the remaining P1 is ordinary CLI replay authority acquisition. Successor AR-1449 is now open to provide the runtime-owned local replay authority; after AR-1449 merges, rebase/integrate this wrapper, rerun exact-head CI, then complete AR-1338. | coordinator-ar1338 |
 | P1 | [AR-1449](tasks/AR-1449-runtime-owned-local-replay-cli.md): Runtime-owned local replay CLI authority | Provide fail-closed runtime-owned local replay authority for the guided CLI wrapper. | Implement and verify a runtime-owned local replay authority acquisition path for the ordinary ASB CLI, then integrate it into AR-1338 without synthetic authority or native-host gating. | ar1449-replay-luna56 |
+
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-1338](tasks/AR-1338-guided-asb-command-wrapper.md): Guided ASB command wrapper | Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows. | PR #327 latest signed head 4d42f59 has full local gates and hosted checks green after campaign path hardening. Do not merge yet: independent review confirms the remaining P1 is ordinary CLI replay authority acquisition. Successor AR-1449 is now open to provide the runtime-owned local replay authority; after AR-1449 merges, rebase/integrate this wrapper, rerun exact-head CI, then complete AR-1338. | - |
 
 ## Blocked
 
