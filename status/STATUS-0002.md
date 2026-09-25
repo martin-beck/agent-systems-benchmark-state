@@ -98,6 +98,12 @@
 
 ## Complete AR inventory
 
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-1430](../tasks/AR-1430-literature-workload-catalog-gap-closure.md): Literature workload catalog gap closure | Unclaimed | Close documented literature workload identity and selector gaps without enabling live providers or external acquisition. | Promote after AR-1423 and AR-1416 are released; add the complete stable literature workload identity/catalog and fail-closed selector boundary. |
+
 ### Blocked (66)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -169,7 +175,7 @@
 | P1 | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md): Local-mock run execution with optional live-provider integration | Unclaimed | Qualify asb run and sweep through a mandatory deterministic local mock; retain optional fail-closed live integration. | BLOCKED for optional production integration only: preserve the deterministic local sub-1B/LiteLLM-compatible mock path as the mandatory development and CI qualification route. A future runtime-owned LiveProviderRuntimeService may resolve pinned provider policy, enrolled credentials, attested namespace/relay, ResourceLease, SandboxBackend, and one LiveProviderAttempt per scheduler attempt, with cancellation teardown; external reachability is optional non-gating evidence. Preserve NetworkPolicy::Deny and direct/alternate egress denial. |
 | P1 | [AR-1354](../tasks/AR-1354-runtime-enrollment-implementation.md): Runtime enrollment implementation | Unclaimed | Implement config-backed runtime-owned enrollment for live CLI dispatch. | BLOCKED on an attested runtime enrollment source: asb-runtime must receive an authority-free enrollment request and obtain concrete public target(s), pinned tool attestations, lease root, and relay root from a runtime/control-owned record; do not expose these asb-cli inputs. Add a signed/attested record transport or coordinator-owned runtime enrollment AR, then implement acquire_from_enrollment and CLI dispatch with positive/negative tests. |
 
-### Planned (68)
+### Planned (67)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -234,7 +240,6 @@
 | P1 | [AR-1424](../tasks/AR-1424-all-literature-selector-campaign.md): Complete literature selector and local campaign matrix | Unclaimed | Make all locally executable literature workloads selectable and campaignable beside built-in fixtures. | Promote after AR-1423, AR-1430, AR-1420, and AR-1416 are released; implement the complete local-mock literature selector and campaign matrix. |
 | P1 | [AR-1425](../tasks/AR-1425-literature-workload-release-readiness.md): Literature workload release-readiness gate | Unclaimed | Independently verify release readiness of the complete built-in and literature workload surface. | Promote only after AR-1424, AR-1417, and AR-1418 are released; independently verify the complete built-in plus literature workload surface and all release gates. |
 | P1 | [AR-1426](../tasks/AR-1426-evolving-literature-window-refresh.md): Evolving literature workload window refresh | Unclaimed | Refresh evolving literature benchmark windows without stale or incomparable results. | Promote after AR-1423 and AR-1425 are released; implement content-addressed refresh manifests and fail-closed window validation for LiveCodeBench and SWE-rebench. |
-| P1 | [AR-1430](../tasks/AR-1430-literature-workload-catalog-gap-closure.md): Literature workload catalog gap closure | Unclaimed | Close documented literature workload identity and selector gaps without enabling live providers or external acquisition. | Promote after AR-1423 and AR-1416 are released; add the complete stable literature workload identity/catalog and fail-closed selector boundary. |
 | P2 | [AR-0602](../tasks/AR-0602-csb-monitoring-contention.md): Validate CSB monitoring and contention diagnostics | Unclaimed | Validate and integrate optional CSB resource monitoring and kernel-contention evidence without double counting or overstating support. | Audit CSB monitoring using native x86_64 oracles and required pinned QEMU AArch64 portable mapping/lifecycle checks; keep native ARM64 counters and performance as optional future evidence. |
 | P2 | [AR-0705](../tasks/AR-0705-native-debian-capacity.md): Provide native Debian capacity | Unclaimed | Qualify booted Debian on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 Debian and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
