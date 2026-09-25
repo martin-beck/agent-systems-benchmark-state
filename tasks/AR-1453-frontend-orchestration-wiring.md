@@ -2,21 +2,21 @@
 {
   "branch": "feature/ar-1453-frontend-orchestration-wiring",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-25T22:40:46+00:00",
   "depends_on": [
     "AR-1452"
   ],
   "id": "AR-1453",
   "next_action": "Promote after AR-1452 post-merge verification and wire run, sweep, replay, cancellation, and status through the service.",
-  "owner": "",
+  "owner": "ar1453-frontend-orchestration-luna56",
   "plan": "../plans/AR-1453.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T20:40:23+00:00",
+  "updated_at": "2026-09-25T20:40:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
@@ -28,3 +28,5 @@ asb-control protocol after this AR is complete.
 - 2026-09-25T20:40:23+00:00: AR-1452 is merged and all seven exact-main post-merge workflows passed.
   Promote AR-1453 to implement CLI/control routing through the central runtime-owned orchestration
   service; keep asb-tui out of scope.
+
+- 2026-09-25T20:40:46+00:00: Claimed by ar1453-frontend-orchestration-luna56.

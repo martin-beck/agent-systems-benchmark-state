@@ -8,12 +8,12 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1450](tasks/AR-1450-runtime-owned-local-replay-acquisition.md): Runtime-owned local replay acquisition factory | Keep local replay authority acquisition inside the runtime boundary. | Await PR #328 exact-head CI and independent review at 2791b63; native_evidence now requires process, metrics, and replay-authority for native qualification, with a negative missing-authority test. | ar1450-replay-luna56 |
+| P0 | [AR-1453](tasks/AR-1453-frontend-orchestration-wiring.md): Route ASB frontends through central orchestration | Make CLI and control use the central service for every run lifecycle. | Promote after AR-1452 post-merge verification and wire run, sweep, replay, cancellation, and status through the service. | ar1453-frontend-orchestration-luna56 |
 
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1453](tasks/AR-1453-frontend-orchestration-wiring.md): Route ASB frontends through central orchestration | Make CLI and control use the central service for every run lifecycle. | Promote after AR-1452 post-merge verification and wire run, sweep, replay, cancellation, and status through the service. | - |
 | P1 | [AR-1338](tasks/AR-1338-guided-asb-command-wrapper.md): Guided ASB command wrapper | Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows. | PR #327 head 4d42f59 has green exact-head hosted checks and complete local gates. AR-1449 and AR-1450 audits both confirmed the remaining P1: AR-1448 lacks a runtime-owned provisioning entrypoint, so ordinary CLI easy replay cannot safely acquire authority. Keep PR unmerged and do not weaken fail-closed replay; promote a reviewed runtime provisioning design before integrating and rerunning gates. | - |
 
 ## Blocked
