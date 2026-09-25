@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #323 | `feature/ar-1440-openrouter-model-refresh-local-measurements@f2d4999ef09e` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(openrouter): refresh free model and local measurement |
+| #323 | `feature/ar-1440-openrouter-model-refresh-local-measurements@f2d4999ef09e` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | feat(openrouter): refresh free model and local measurement |
 
 ## Recent workflows
 
@@ -20,7 +20,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36142140856 | `f2d4999ef09e` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 36142140836 | `f2d4999ef09e` | pull_request | Rust verification | in_progress:- |
 | 36142140826 | `f2d4999ef09e` | pull_request | Repository quality | in_progress:- |
-| 36142140799 | `f2d4999ef09e` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 36142140799 | `f2d4999ef09e` | pull_request | Hosted portability and native qualification | completed:success |
 | 36142140791 | `f2d4999ef09e` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36142140778 | `f2d4999ef09e` | pull_request | Formal assurance | in_progress:- |
 | 36142140776 | `f2d4999ef09e` | pull_request | Huawei MIT source headers | completed:success |
