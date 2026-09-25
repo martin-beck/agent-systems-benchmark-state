@@ -7,7 +7,7 @@
     "AR-1434"
   ],
   "id": "AR-1435",
-  "next_action": "Confirm PR #316 exact head and all hosted checks; do not merge until every check is green, then local signed integration and seven post-merge workflows.",
+  "next_action": "Monitor PR #316 fresh exact head 8a4ab336b89b1026ca644cc28badc6ab95de7ae2 until all hosted checks pass; then merge through local signed integration and run seven post-merge workflows.",
   "observed_branch": "feature/ar-1435-local-mock-cli-wiring",
   "observed_dirty": 0,
   "observed_head": "8a4ab336b89b1026ca644cc28badc6ab95de7ae2",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire deterministic local mock attempts into asb run and sweep configuration qualification.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Local mock CLI wiring",
-  "updated_at": "2026-09-25T00:12:32+00:00",
+  "updated_at": "2026-09-25T00:12:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1435-local-mock-cli-wiring"
 }
 ---
@@ -206,3 +206,10 @@ it must not contact OpenRouter or any external provider, mint
 
 - 2026-09-25T00:12:32+00:00: Recorded command exit 0; command argv SHA-256
   54dfcf4ea7da5f9c66590951e85047d92648fcae8e286307fa7236e91e6f9d1b.
+
+- 2026-09-25T00:12:46+00:00: Rust PR failure 36075699775 diagnosed as parallel generation-fence test
+  race; corrected only redundant assertion in signed+DCO commit
+  8a4ab336b89b1026ca644cc28badc6ab95de7ae2. Focused runtime tests, full workspace cargo test
+  (pipefail), workspace clippy -D warnings, rustdoc -D warnings, fmt, release build, diff-check all
+  pass after correction. Branch force-free push advanced PR #316 to exact fresh head; hosted checks
+  restarted. No production authority or external provider access.

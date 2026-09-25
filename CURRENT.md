@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1435](tasks/AR-1435-local-mock-cli-wiring.md): Local mock CLI wiring | Wire deterministic local mock attempts into asb run and sweep configuration qualification. | Confirm PR #316 exact head and all hosted checks; do not merge until every check is green, then local signed integration and seven post-merge workflows. | codex-asb-ar1435-local-mock-luna56 |
+| P0 | [AR-1435](tasks/AR-1435-local-mock-cli-wiring.md): Local mock CLI wiring | Wire deterministic local mock attempts into asb run and sweep configuration qualification. | Monitor PR #316 fresh exact head 8a4ab336b89b1026ca644cc28badc6ab95de7ae2 until all hosted checks pass; then merge through local signed integration and run seven post-merge workflows. | codex-asb-ar1435-local-mock-luna56 |
 
 ## Blocked
 
