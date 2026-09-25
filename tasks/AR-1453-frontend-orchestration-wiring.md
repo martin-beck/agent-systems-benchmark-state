@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T20:54:35+00:00",
+  "updated_at": "2026-09-25T20:54:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
@@ -78,3 +78,6 @@ asb-control protocol after this AR is complete.
   calls the service. One initial rejection was repaired by binding workload/scorer content digests.
   Worktree remains dirty; no product commit yet. Coordinator reports PR328 post-merge tree repair at
   452f3ca, so this branch must rebase before PR.
+
+- 2026-09-25T20:54:44+00:00: Recorded command exit 0; command argv SHA-256
+  d14685a76261418fffc0205bec68cecb43459972ecb2bbaad05a7b94c04c8325.
