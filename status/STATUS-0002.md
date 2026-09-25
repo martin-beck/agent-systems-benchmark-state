@@ -109,7 +109,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1440](../tasks/AR-1440-openrouter-model-refresh-local-measurements.md): Refresh OpenRouter model pin and local measurements | ar1440-model-refresh-luna56 | Refresh the stale OpenRouter free-model pin and qualify local-only benchmark measurements. | PR #323 is published at signed head f2d4999; wait for all exact-head required checks, independently review, merge only green, then verify post-merge and release AR with catalog and measurement evidence. |
+| P1 | [AR-1440](../tasks/AR-1440-openrouter-model-refresh-local-measurements.md): Refresh OpenRouter model pin and local measurements | ar1440-model-refresh-luna56 | Refresh the stale OpenRouter free-model pin and qualify local-only benchmark measurements. | PR #323 is published at signed head 8d2a99d; wait for all exact-head required checks, independently review, merge only green, then verify post-merge and release AR with catalog and measurement evidence. |
 
 ### Blocked (68)
 

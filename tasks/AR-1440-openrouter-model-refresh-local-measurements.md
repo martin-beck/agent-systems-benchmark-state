@@ -9,7 +9,7 @@
     "AR-1437"
   ],
   "id": "AR-1440",
-  "next_action": "PR #323 is published at signed head f2d4999; wait for all exact-head required checks, independently review, merge only green, then verify post-merge and release AR with catalog and measurement evidence.",
+  "next_action": "PR #323 is published at signed head 8d2a99d; wait for all exact-head required checks, independently review, merge only green, then verify post-merge and release AR with catalog and measurement evidence.",
   "observed_branch": "feature/ar-1440-openrouter-model-refresh-local-measurements",
   "observed_dirty": 0,
   "observed_head": "8d2a99d3fbaa3e4d86e3e54c7f82c735ff466fdd",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Refresh the stale OpenRouter free-model pin and qualify local-only benchmark measurements.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Refresh OpenRouter model pin and local measurements",
-  "updated_at": "2026-09-25T13:47:29+00:00",
+  "updated_at": "2026-09-25T13:48:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1440-openrouter-model-refresh-local-measurements"
 }
 ---
@@ -102,3 +102,6 @@ tests for stale/mismatched model identities and unavailable pins.
   f4045333c6bb5f136738a08ee06903583e3c2d67896dbb3fc756a582ebaa1235.
 
 - 2026-09-25T13:47:29+00:00: Heartbeat by ar1440-model-refresh-luna56.
+
+- 2026-09-25T13:48:00+00:00: Amended signed commit only corrected the helper documentation wording;
+  exact PR head and observed head are now 8d2a99d3fbaa3e4d86e3e54c7f82c735ff466fdd.
