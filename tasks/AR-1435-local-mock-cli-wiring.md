@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire deterministic local mock attempts into asb run and sweep configuration qualification.",
-  "task_revision": 75,
+  "task_revision": 76,
   "title": "Local mock CLI wiring",
-  "updated_at": "2026-09-25T00:18:44+00:00",
+  "updated_at": "2026-09-25T00:18:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1435-local-mock-cli-wiring"
 }
 ---
@@ -259,3 +259,6 @@ it must not contact OpenRouter or any external provider, mint
   repeated hostile test, full workspace test pipefail, workspace clippy, rustdoc, fmt, release
   build, and diff-check pass. A 00:15:24 log-inspection exit 1 was an rg -E syntax operator error;
   corrected inspection passed.
+
+- 2026-09-25T00:18:53+00:00: Recorded command exit 0; command argv SHA-256
+  c98d51049b3b3c7500782bf630a590cccc0c83ee24520b4f040aa1aeb18c8083.
