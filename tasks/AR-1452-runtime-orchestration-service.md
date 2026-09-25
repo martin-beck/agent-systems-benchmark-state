@@ -12,7 +12,7 @@
   "id": "AR-1452",
   "next_action": "PR #330 is updated at exact head daf958a with durable journal, schema serde, bounded deterministic execution, and attempt-fenced cancellation. Await independent re-review and exact-head CI; do not merge until review is clean.",
   "observed_branch": "feature/ar-1452-runtime-orchestration-service",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "daf958aa46a7c77b7d58c36c53b2010da8749a72",
   "owner": "coordinator-orchestrator-impl",
   "plan": "../plans/AR-1452.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T18:33:44+00:00",
+  "updated_at": "2026-09-25T18:33:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---
