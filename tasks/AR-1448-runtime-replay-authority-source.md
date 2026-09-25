@@ -9,18 +9,18 @@
   ],
   "id": "AR-1448",
   "next_action": "Promote and claim this dependency-ready successor. Implement the bounded control/runtime materializer without exposing replay authority to the CLI.",
-  "observed_branch": "",
-  "observed_dirty": 0,
-  "observed_head": "",
+  "observed_branch": "main",
+  "observed_dirty": 7,
+  "observed_head": "bd7d10d4a760a84fa42de2b1fa9e97e8ea85ba09",
   "owner": "coordinator-ar1448",
   "plan": "../plans/AR-1448-runtime-replay-authority-source.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize runtime-owned strict replay authority for normal CLI replay.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Runtime replay authority source",
-  "updated_at": "2026-09-25T15:52:39+00:00",
+  "updated_at": "2026-09-25T15:52:51+00:00",
   "worktree_key": "agent-systems-benchmark"
 }
 ---
