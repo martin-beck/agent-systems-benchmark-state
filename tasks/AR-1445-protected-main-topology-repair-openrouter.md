@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the single-parent protected-main merge produced for the OpenRouter model refresh.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Protected-main topology repair for OpenRouter refresh",
-  "updated_at": "2026-09-25T14:06:28+00:00",
+  "updated_at": "2026-09-25T14:06:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1445-protected-main-topology-repair-openrouter"
 }
 ---
@@ -71,3 +71,6 @@ measurement evidence.
   891af4f9fded10365bc1af4f288ec3151c7ea63a61bf22a66998fe89803c39f7.
 
 - 2026-09-25T14:06:28+00:00: Heartbeat by ar1445-topology-repair-luna56.
+
+- 2026-09-25T14:06:32+00:00: Recorded command exit 0; command argv SHA-256
+  891af4f9fded10365bc1af4f288ec3151c7ea63a61bf22a66998fe89803c39f7.
