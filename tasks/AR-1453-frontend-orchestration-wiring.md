@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1453-frontend-orchestration-wiring",
   "checkpoint_commit": "23b2fb5f241934168131efe6cd5173d5d316a857",
-  "claim_expires": "2026-09-26T01:20:31+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1452"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1453-frontend-orchestration-wiring",
   "observed_dirty": 0,
   "observed_head": "37d9517317ed68ea299229d0bf7b1dc8d447f60b",
-  "owner": "ar1453-frontend-orchestration-luna56",
+  "owner": "",
   "plan": "../plans/AR-1453.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 121,
+  "task_revision": 122,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T22:41:46+00:00",
+  "updated_at": "2026-09-25T22:41:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
@@ -398,3 +398,7 @@ asb-control protocol after this AR is complete.
 - 2026-09-25T22:41:46+00:00: All seven post-merge workflows for exact merge head
   23b2fb5f241934168131efe6cd5173d5d316a857 passed: Huawei, Hosted portability, Emulated aarch64,
   Fault, Formal, Repository quality, Rust.
+
+- 2026-09-25T22:41:53+00:00: AR-1453 complete: PR #333 merged at
+  23b2fb5f241934168131efe6cd5173d5d316a857; independent review clean; all 12 PR checks and seven
+  exact-main post-merge workflows passed.
