@@ -9,18 +9,18 @@
   ],
   "id": "AR-1441",
   "next_action": "Promote and claim against the completed ASB install/lifecycle primitives AR-0821 and AR-0822; implement and qualify the ASB CLI/runtime-bundle clean-install/bootstrap path. Preserve AR-0823 as the separate cross-repository/UI audit.",
-  "observed_branch": "main",
-  "observed_dirty": 7,
-  "observed_head": "bd7d10d4a760a84fa42de2b1fa9e97e8ea85ba09",
+  "observed_branch": "feature/ar-1441-first-class-install-bootstrap",
+  "observed_dirty": 0,
+  "observed_head": "2872a31f2ee90ac5df1a47203b2a618b1829cfec",
   "owner": "coordinator-ar1441",
   "plan": "../plans/AR-1441.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a verified one-command install and first-run bootstrap for ASB CLI/runtime bundles.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "First-class install and bootstrap",
-  "updated_at": "2026-09-25T15:18:50+00:00",
+  "updated_at": "2026-09-25T15:19:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1441"
 }
 ---
