@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1453-frontend-orchestration-wiring",
   "checkpoint_commit": "d83c451950850db357d08959f3a97ce28fd386e3",
-  "claim_expires": "2026-09-26T00:03:15+00:00",
+  "claim_expires": "2026-09-26T01:20:31+00:00",
   "depends_on": [
     "AR-1452"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 114,
+  "task_revision": 115,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T22:19:51+00:00",
+  "updated_at": "2026-09-25T22:20:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
@@ -375,3 +375,5 @@ asb-control protocol after this AR is complete.
 - 2026-09-25T22:19:51+00:00: Hosted Policy run 36195718695 failed
   in_flight_authority_cancellation_is_durable_and_bounded because test observed authority already
   removed (timing race) at control.rs:6716. Rust and other checks were still pending; no merge.
+
+- 2026-09-25T22:20:31+00:00: Heartbeat by ar1453-frontend-orchestration-luna56.
