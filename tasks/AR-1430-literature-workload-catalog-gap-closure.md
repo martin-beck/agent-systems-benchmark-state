@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Close documented literature workload identity and selector gaps without enabling live providers or external acquisition.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Literature workload catalog gap closure",
-  "updated_at": "2026-09-25T10:59:22+00:00",
+  "updated_at": "2026-09-25T11:00:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1430-literature-workload-catalog"
 }
 ---
@@ -74,3 +74,6 @@ mock only.
 
 - 2026-09-25T10:59:22+00:00: Recorded command exit 0; command argv SHA-256
   f6627a3bacc7853f94bbcfa7b6ec86f5bb1fcbc8e4f0a1c8b31b7c80b4df1797.
+
+- 2026-09-25T11:00:18+00:00: Recorded command exit 8; command argv SHA-256
+  2cc588d42d607c51ac7f747b7605836cdfdf6e6caf6b539960c82ee170064836.
