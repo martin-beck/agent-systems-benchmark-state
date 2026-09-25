@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1436-local-guided-cli-wrapper",
   "checkpoint_commit": "18a0df9b4312e49196c1c8202b48a183ed83b073",
-  "claim_expires": "2026-09-25T02:43:20+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1435",
     "AR-1328"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1436-local-guided-cli-wrapper",
   "observed_dirty": 0,
   "observed_head": "ae48046d980237d078dd2a5aa155400d20330059",
-  "owner": "codex-asb-ar1436-local-guided-luna56",
+  "owner": "",
   "plan": "../plans/AR-1436-local-guided-cli-wrapper.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Add a catalog-driven guided CLI wrapper for deterministic local mock qualification.",
-  "task_revision": 95,
+  "task_revision": 96,
   "title": "Local guided CLI wrapper",
-  "updated_at": "2026-09-25T01:26:23+00:00",
+  "updated_at": "2026-09-25T01:26:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1436-local-guided-cli-wrapper"
 }
 ---
@@ -323,3 +323,13 @@ weakening. Require focused/full/review/PR/seven post-merge gates.
 
 - 2026-09-25T01:26:23+00:00: Recorded command exit 0; command argv SHA-256
   cedbb08014b9e872a06146c62c26b86eb9069ac75aed60e6412dd7fe635bfd94.
+
+- 2026-09-25T01:26:38+00:00: Released done after durable exact-main verification. PR #317 merged as
+  18a0df9b4312e49196c1c8202b48a183ed83b073 with exact base cc82333a53e03147ea95cc21ca697647dc27db1f,
+  head ae48046d980237d078dd2a5aa155400d20330059, tree 313effcddd992f9e764fe7a14f0e5917eb01e100;
+  origin/main matches, parents/signature G/DCO verified. All seven exact-main workflows succeeded:
+  Fault 36080877975, Formal 36080877977, Repository quality 36080877969 (passed on rerun after
+  preserved unrelated asb-metrics timing failure), Emulated aarch64 36080877989, Rust 36080877987,
+  Hosted portability/native 36080878008, Huawei headers 36080877995. Local serial/full tests,
+  clippy, docs, release build, independent review and privacy scan passed. AR-1329/AR-1338 remain
+  untouched; AR-1332/AR-1333 remain planned future references.
