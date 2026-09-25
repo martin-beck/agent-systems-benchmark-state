@@ -12,7 +12,7 @@
   "id": "AR-1452",
   "next_action": "Promote after AR-1451 is reviewed and merged; add the asb-orchestrator crate without exposing caller-built authority.",
   "observed_branch": "feature/ar-1452-runtime-orchestration-service",
-  "observed_dirty": 3,
+  "observed_dirty": 4,
   "observed_head": "071167df4fe23165978b51de5eaf3541244f63ff",
   "owner": "coordinator-orchestrator-impl",
   "plan": "../plans/AR-1452.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T18:19:52+00:00",
+  "updated_at": "2026-09-25T18:20:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---
