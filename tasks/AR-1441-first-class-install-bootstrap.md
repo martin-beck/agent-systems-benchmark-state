@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a verified one-command install and first-run bootstrap for ASB CLI/runtime bundles.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "First-class install and bootstrap",
-  "updated_at": "2026-09-25T15:18:09+00:00",
+  "updated_at": "2026-09-25T15:18:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1441"
 }
 ---
@@ -37,3 +37,6 @@ a second package registry or bypass signed artifact and credential boundaries.
 
 - 2026-09-25T15:17:56+00:00: Recorded command exit 0; command argv SHA-256
   4637d84ec00d072c019f8a3f5692356eac8f8f82c4e0ce09fe38d36e5298ed4c.
+
+- 2026-09-25T15:18:50+00:00: Recorded command exit 0; command argv SHA-256
+  38b2da1a2a7a8a2d72e901aedee845bb5a52337aa930fb6c17e0b27c7e0e7606.
