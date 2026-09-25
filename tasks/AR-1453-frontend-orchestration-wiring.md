@@ -7,7 +7,7 @@
     "AR-1452"
   ],
   "id": "AR-1453",
-  "next_action": "Finish compiling and test the central control adapter; then wire status/recovery and add declarative negative fixtures before signed commit.",
+  "next_action": "Complete control lifecycle integration and focused tests, then synchronize the signed branch onto current origin/main 452f3ca before publication; preserve exact-base evidence.",
   "observed_branch": "feature/ar-1453-frontend-orchestration-wiring",
   "observed_dirty": 4,
   "observed_head": "a5eb7e680a3c71813d9d1aae3328a385d6812a95",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T20:54:32+00:00",
+  "updated_at": "2026-09-25T20:54:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
@@ -72,3 +72,9 @@ asb-control protocol after this AR is complete.
   6d0fda30bd06d4d3815684128be84386abaeeaf63ae599bb44640c6b9eacf93a.
 
 - 2026-09-25T20:54:32+00:00: Heartbeat by ar1453-frontend-orchestration-luna56.
+
+- 2026-09-25T20:54:35+00:00: Central adapter now compiles and the production backend idempotency
+  lifecycle test passes. The worker source executes PlanFile through Orchestrator and cancellation
+  calls the service. One initial rejection was repaired by binding workload/scorer content digests.
+  Worktree remains dirty; no product commit yet. Coordinator reports PR328 post-merge tree repair at
+  452f3ca, so this branch must rebase before PR.
