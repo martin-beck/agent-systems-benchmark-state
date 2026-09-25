@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a catalog-driven guided CLI wrapper for deterministic local mock qualification.",
-  "task_revision": 66,
+  "task_revision": 67,
   "title": "Local guided CLI wrapper",
-  "updated_at": "2026-09-25T01:11:37+00:00",
+  "updated_at": "2026-09-25T01:11:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1436-local-guided-cli-wrapper"
 }
 ---
@@ -232,3 +232,6 @@ weakening. Require focused/full/review/PR/seven post-merge gates.
   valid SSH signature and DCO trailer. Seven post-merge workflows launched: Rust 36080877987; Hosted
   portability/native 36080878008; Fault 36080877975; aarch64 36080877989; Repository quality
   36080877969; Huawei headers 36080877995; Formal assurance 36080877977.
+
+- 2026-09-25T01:11:46+00:00: Recorded command exit 0; command argv SHA-256
+  fdddc6853989821ec06923ed9fef6d8c6a2b91ac37153f9408583fba8bb9b4aa.
