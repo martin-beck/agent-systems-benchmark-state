@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1433-runtime-mock-attempt-backend",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-25T16:41:03+00:00",
   "depends_on": [
     "AR-1327",
     "AR-1328",
@@ -14,15 +14,15 @@
   ],
   "id": "AR-1433",
   "next_action": "Promote and claim after the coordinator-approved dependency transition. Implement a runtime-owned deterministic mock-attempt backend and wire local run/sweep qualification without weakening ProviderEgressTarget or synthesizing LiveProviderAttempt authority. Preserve AR-1432's separate production live-bridge blocker.",
-  "owner": "",
+  "owner": "coordinator-ar1433",
   "plan": "../plans/AR-1433-runtime-mock-attempt-backend.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Add an approved runtime mock-attempt backend for deterministic local run and sweep qualification.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Runtime mock-attempt backend",
-  "updated_at": "2026-09-25T14:40:56+00:00",
+  "updated_at": "2026-09-25T14:41:03+00:00",
   "worktree_key": ""
 }
 ---
@@ -40,3 +40,5 @@ access or to bypass runtime-owned launch authority.
 - 2026-09-25T14:40:56+00:00: Coordinator-approved dependency transition: AR-1432 local authority
   boundary is complete; remaining production bridge stays separately blocked. Promote mock backend
   repair against completed prerequisites.
+
+- 2026-09-25T14:41:03+00:00: Claimed by coordinator-ar1433.

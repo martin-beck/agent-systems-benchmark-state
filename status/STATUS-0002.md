@@ -108,11 +108,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1433](../tasks/AR-1433-runtime-mock-attempt-backend.md): Runtime mock-attempt backend | Unclaimed | Add an approved runtime mock-attempt backend for deterministic local run and sweep qualification. | Promote and claim after the coordinator-approved dependency transition. Implement a runtime-owned deterministic mock-attempt backend and wire local run/sweep qualification without weakening ProviderEgressTarget or synthesizing LiveProviderAttempt authority. Preserve AR-1432&#x27;s separate production live-bridge blocker. |
+| P0 | [AR-1433](../tasks/AR-1433-runtime-mock-attempt-backend.md): Runtime mock-attempt backend | coordinator-ar1433 | Add an approved runtime mock-attempt backend for deterministic local run and sweep qualification. | Promote and claim after the coordinator-approved dependency transition. Implement a runtime-owned deterministic mock-attempt backend and wire local run/sweep qualification without weakening ProviderEgressTarget or synthesizing LiveProviderAttempt authority. Preserve AR-1432&#x27;s separate production live-bridge blocker. |
 
 ### Blocked (68)
 

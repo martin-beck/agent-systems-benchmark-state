@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1433](tasks/AR-1433-runtime-mock-attempt-backend.md): Runtime mock-attempt backend | Add an approved runtime mock-attempt backend for deterministic local run and sweep qualification. | Promote and claim after the coordinator-approved dependency transition. Implement a runtime-owned deterministic mock-attempt backend and wire local run/sweep qualification without weakening ProviderEgressTarget or synthesizing LiveProviderAttempt authority. Preserve AR-1432's separate production live-bridge blocker. | - |
+| P0 | [AR-1433](tasks/AR-1433-runtime-mock-attempt-backend.md): Runtime mock-attempt backend | Add an approved runtime mock-attempt backend for deterministic local run and sweep qualification. | Promote and claim after the coordinator-approved dependency transition. Implement a runtime-owned deterministic mock-attempt backend and wire local run/sweep qualification without weakening ProviderEgressTarget or synthesizing LiveProviderAttempt authority. Preserve AR-1432's separate production live-bridge blocker. | coordinator-ar1433 |
 
 ## Blocked
 
