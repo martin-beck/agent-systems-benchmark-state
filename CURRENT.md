@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1448](tasks/AR-1448-runtime-replay-authority-source.md): Runtime replay authority source | Materialize runtime-owned strict replay authority for normal CLI replay. | PR #326 is open at exact head 1b70b4691a4464e44ccc091705194e67a6024dc0. Focused runtime/CLI gates pass; monitor the three remaining exact-head checks (Rust, Repository quality, Emulated AArch64) and independent review. Merge only after all required checks are green; then run post-merge gates. | coordinator-ar1448 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -314,6 +308,7 @@ Never edit this file directly.
 | P0 | [AR-1445](tasks/AR-1445-protected-main-topology-repair-openrouter.md): Protected-main topology repair for OpenRouter refresh | Repair the single-parent protected-main merge produced for the OpenRouter model refresh. | PR #324 merged as two-parent 5871de7cad4ee7e496ffce1c5e1fe51862660bfc; monitor seven exact-main workflows 36145976341, 36145976337, 36145976326, 36145976266, 36145976239, 36145976238, 36145976223 to terminal success. Record that GitHub has no independent review record, then update/release AR-1440 only after all seven pass. | - |
 | P0 | [AR-1446](tasks/AR-1446-first-customer-production-qualification.md): First-customer production qualification | Qualify ASB in a disposable first-customer production-like environment. | Done: ASB-only first-customer production-like qualification verified on protected merge 2872a31f2ee90ac5df1a47203b2a618b1829cfec. Disposable bootstrap passed; CLI, runtime, and workspace-library gates passed, including literature/local-mock coverage. No live-provider or asb-tui dependency was required; AR-0903 and AR-1336 remain separate. | - |
 | P0 | [AR-1447](tasks/AR-1447-asb-local-campaign-qualification.md): ASB local campaign qualification | Qualify the complete credential-free ASB local campaign and replay journey. | Done: ASB-only local campaign qualification verified on protected merge 2872a31f2ee90ac5df1a47203b2a618b1829cfec. Targeted guided-local and exact-campaign tests plus full asb-cli library tests (107/107) passed; AR-1338 remains a separate enhancement. | - |
+| P0 | [AR-1448](tasks/AR-1448-runtime-replay-authority-source.md): Runtime replay authority source | Materialize runtime-owned strict replay authority for normal CLI replay. | PR #326 is open at exact head 1b70b4691a4464e44ccc091705194e67a6024dc0. Focused runtime/CLI gates pass; monitor the three remaining exact-head checks (Rust, Repository quality, Emulated AArch64) and independent review. Merge only after all required checks are green; then run post-merge gates. | - |
 | P1 | [AR-0002](tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. | - |
 | P1 | [AR-0003](tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. | - |
 | P1 | [AR-0004](tasks/AR-0004-ar-status-document.md): Generate the visual AR status document | Render every AR, status, and dependency as an accessible visual state document. | Await independent immutable-head review of state PR 3 at eedd311; repair findings before coordinator integration. | - |

@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1448-runtime-replay-authority-source",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-25T18:09:46+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1443",
     "AR-1446"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1448-runtime-replay-authority-source",
   "observed_dirty": 0,
   "observed_head": "1b70b4691a4464e44ccc091705194e67a6024dc0",
-  "owner": "coordinator-ar1448",
+  "owner": "",
   "plan": "../plans/AR-1448-runtime-replay-authority-source.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Materialize runtime-owned strict replay authority for normal CLI replay.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Runtime replay authority source",
-  "updated_at": "2026-09-25T16:15:35+00:00",
+  "updated_at": "2026-09-25T16:15:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1448-runtime-replay-authority-source"
 }
 ---
@@ -151,3 +151,11 @@ CLI and do not make external provider access a prerequisite.
 
 - 2026-09-25T16:15:35+00:00: Recorded command exit 0; command argv SHA-256
   938e367aae1219784c0539113dce3c399a76db237fdb7ab388293cd7a4826ac5.
+
+- 2026-09-25T16:15:52+00:00: AR-1448 implementation merged as signed two-parent PR #326 at
+  f03d9e484d6ca73eacdbd5476980bf33ca737540, exact reviewed tree
+  3c626c20b1345ec57970935742e7937ce54036fe. All seven post-merge workflows succeeded: Repository
+  quality 36159240852, Fault assurance 36159235664, Rust verification 36159235797, Formal assurance
+  36159235905, Huawei headers 36159235851, Hosted portability 36159235616, Emulated AArch64
+  36159235957. Post-merge runtime 128 passed/1 capability-gated ignore and CLI guide/transcript 8
+  passed.
