@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 118,
+  "task_revision": 119,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T22:22:57+00:00",
+  "updated_at": "2026-09-25T22:32:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
@@ -387,3 +387,6 @@ asb-control protocol after this AR is complete.
   assumption. Focused cancellation test, default 111-test asb-cli lib suite, clippy -D warnings,
   fmt, and diff check pass. Serial suite had one pre-existing production idempotency lock-isolation
   failure in one run; isolated rerun passed; preserve as evidence until hosted result.
+
+- 2026-09-25T22:32:45+00:00: Recorded command exit 0; command argv SHA-256
+  6d3d099a76ce32bb027665e78b7662341bf4ea00857ac291b2880345087ae7dd.
