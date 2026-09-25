@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Deliver the runtime-owned strict-replay launch authority required by the replay CLI contract.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Runtime-owned strict-replay launch authority",
-  "updated_at": "2026-09-25T15:48:30+00:00",
+  "updated_at": "2026-09-25T15:49:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1331-runtime-replay-launch-authority"
 }
 ---
@@ -54,3 +54,6 @@ reachability.
 
 - 2026-09-25T15:48:16+00:00: Recorded command exit 0; command argv SHA-256
   019774536693c0853a036a3a6fafb2fb59bf34f301bd785dea167af8c4561e75.
+
+- 2026-09-25T15:49:30+00:00: Recorded command exit 0; command argv SHA-256
+  70f00fbfb55e500b653e236cbd5112375a0e7b0e67e03b689e99160a0664371f.
