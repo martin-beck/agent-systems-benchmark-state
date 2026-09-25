@@ -2,7 +2,7 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `a5eb7e680a3c71813d9d1aae3328a385d6812a95`
+- Product remote main: `452f3ca29390ab37cf3aff8c813b92b54b163b20`
 - Local origin/main: `a5eb7e680a3c71813d9d1aae3328a385d6812a95`
 - Primary worktree head: `bd7d10d4a760a84fa42de2b1fa9e97e8ea85ba09`
 
@@ -10,22 +10,21 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #327 | `feature/ar-1338-guided-asb-command-wrapper@4d42f598127d` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): extend guided ASB workflow |
-| #328 | `feature/ar-1450-runtime-owned-local-replay-acquisition@283291200b3b` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(runtime): add local replay provisioning boundary |
+| #327 | `feature/ar-1338-guided-asb-command-wrapper@4d42f598127d` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): extend guided ASB workflow |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 36188339854 | `452f3ca29390` | push | Rust verification | in_progress:- |
+| 36188339764 | `452f3ca29390` | push | Huawei MIT source headers | completed:success |
+| 36188339707 | `452f3ca29390` | push | Emulated aarch64 portability | in_progress:- |
+| 36188339697 | `452f3ca29390` | push | Formal assurance | queued:- |
+| 36188339692 | `452f3ca29390` | push | Repository quality | in_progress:- |
+| 36188339686 | `452f3ca29390` | push | Hosted portability and native qualification | in_progress:- |
+| 36188339668 | `452f3ca29390` | push | Fault assurance | in_progress:- |
 | 36187401521 | `283291200b3b` | pull_request | Formal assurance | completed:success |
 | 36187401507 | `283291200b3b` | pull_request | Fault assurance | completed:success |
 | 36187401498 | `283291200b3b` | pull_request | Hosted portability and native qualification | completed:success |
 | 36187401476 | `283291200b3b` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36187401468 | `283291200b3b` | pull_request | Emulated aarch64 portability | completed:success |
-| 36187401467 | `283291200b3b` | pull_request | Huawei MIT source headers | completed:success |
-| 36187401449 | `283291200b3b` | pull_request | Rust verification | completed:success |
-| 36187401441 | `283291200b3b` | pull_request | Repository quality | completed:success |
-| 36186994171 | `2791b6328e20` | pull_request | Formal assurance | completed:success |
-| 36186994059 | `2791b6328e20` | pull_request | Rust verification | completed:cancelled |
-| 36186993905 | `2791b6328e20` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 36186993891 | `2791b6328e20` | pull_request | Emulated aarch64 portability | completed:cancelled |
