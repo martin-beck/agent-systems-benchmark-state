@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Refresh the stale OpenRouter free-model pin and qualify local-only benchmark measurements.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Refresh OpenRouter model pin and local measurements",
-  "updated_at": "2026-09-25T13:27:38+00:00",
+  "updated_at": "2026-09-25T13:27:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1440-openrouter-model-refresh-local-measurements"
 }
 ---
@@ -59,3 +59,6 @@ tests for stale/mismatched model identities and unavailable pins.
 
 - 2026-09-25T13:27:38+00:00: Scope extended to make provider, model, and selected agent changes
   catalog-driven and easy to regenerate without a second registry.
+
+- 2026-09-25T13:27:48+00:00: Recorded command exit 1; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
