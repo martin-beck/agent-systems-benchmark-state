@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep local replay authority acquisition inside the runtime boundary.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Runtime-owned local replay acquisition factory",
-  "updated_at": "2026-09-25T16:59:00+00:00",
+  "updated_at": "2026-09-25T17:00:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1450-runtime-owned-local-replay-acquisition"
 }
 ---
@@ -35,3 +35,6 @@ Requirements:
 - expose a narrow API that asb-cli can consume without constructing authority.
 
 - 2026-09-25T16:59:00+00:00: Claimed by ar1450-replay-luna56.
+
+- 2026-09-25T17:00:26+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
