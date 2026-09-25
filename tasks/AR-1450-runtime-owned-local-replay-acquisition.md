@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep local replay authority acquisition inside the runtime boundary.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Runtime-owned local replay acquisition factory",
-  "updated_at": "2026-09-25T17:23:11+00:00",
+  "updated_at": "2026-09-25T17:23:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1450-runtime-owned-local-replay-acquisition"
 }
 ---
@@ -103,3 +103,6 @@ Requirements:
   bc2f198ba42ab908661264a20c4b64e85c25e1181c5fdd5fea87a200426a4cc2.
 
 - 2026-09-25T17:23:11+00:00: Heartbeat by ar1450-replay-luna56.
+
+- 2026-09-25T17:23:46+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
