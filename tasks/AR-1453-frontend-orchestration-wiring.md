@@ -7,7 +7,7 @@
     "AR-1452"
   ],
   "id": "AR-1453",
-  "next_action": "Product branch is clean and unpublished at ceac822 on exact origin/main base 452f3ca. Workspace fmt, clippy, tests, docs, and release build pass. Next: parent/coordinator authorization, publish signed branch for independent review; do not publish or merge before review.",
+  "next_action": "PR #332 is published at exact head ceac822 on base 452f3ca. Await independent review and exact-head required CI; do not merge until review and all required checks are green. Then perform post-merge verification.",
   "observed_branch": "feature/ar-1453-frontend-orchestration-wiring",
   "observed_dirty": 0,
   "observed_head": "ceac822ad15da1747fc8b7ad824a68928de663a0",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T21:07:16+00:00",
+  "updated_at": "2026-09-25T21:07:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
@@ -147,3 +147,9 @@ asb-control protocol after this AR is complete.
 
 - 2026-09-25T21:07:16+00:00: Recorded command exit 0; command argv SHA-256
   0693d4efce5c7265b1c239efcded91fea3eb3ee256a8ddb4252ead25aee4889f.
+
+- 2026-09-25T21:07:42+00:00: Published PR #332:
+  https://github.com/martin-beck/agent-systems-benchmark/pull/332. Remote branch exact head
+  ceac822ad15da1747fc8b7ad824a68928de663a0; exact base origin/main
+  452f3ca29390ab37cf3aff8c813b92b54b163b20. Push and PR creation completed through handoffctl run.
+  No review or hosted CI result is claimed yet.
