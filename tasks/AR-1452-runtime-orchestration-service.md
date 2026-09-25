@@ -12,17 +12,17 @@
   "id": "AR-1452",
   "next_action": "PR #330 exact head b4c6be8 now adds restart rehydration, durable idempotency, recovery-state mapping, attempt-fenced complete, evidence limit failure cleanup, artifact count/size enforcement, and idempotency-before-capacity. Await independent re-review and exact-head CI.",
   "observed_branch": "feature/ar-1452-runtime-orchestration-service",
-  "observed_dirty": 1,
-  "observed_head": "b4c6be832922e5b17599e4da1dc376101b59a15e",
+  "observed_dirty": 0,
+  "observed_head": "6c5771e47abf71923cc53e50360543eb7eae919b",
   "owner": "coordinator-orchestrator-impl",
   "plan": "../plans/AR-1452.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T18:39:29+00:00",
+  "updated_at": "2026-09-25T18:39:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---
