@@ -12,17 +12,17 @@
   "id": "AR-1452",
   "next_action": "PR #330 exact head 6374c3e repairs Repository quality dependency policy: deny.toml now skips the actual syn 3.0.6 and duplicate synstructure lines and removes unmatched Unicode-3.0 allowance. Await exact-head CI; remaining review P1s are timeout/authority cancellation fencing and bounded terminal capacity.",
   "observed_branch": "feature/ar-1452-runtime-orchestration-service",
-  "observed_dirty": 1,
-  "observed_head": "6374c3e1b33f86fc7f3a47c6e7e07077aad0578e",
+  "observed_dirty": 0,
+  "observed_head": "1be9fc41b860260c277969aacb9f09974a28a5c6",
   "owner": "coordinator-orchestrator-impl",
   "plan": "../plans/AR-1452.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 111,
+  "task_revision": 112,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T19:22:23+00:00",
+  "updated_at": "2026-09-25T19:22:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---
