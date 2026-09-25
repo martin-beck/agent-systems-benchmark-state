@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1453-frontend-orchestration-wiring",
-  "checkpoint_commit": "d83c451950850db357d08959f3a97ce28fd386e3",
+  "checkpoint_commit": "37d9517317ed68ea299229d0bf7b1dc8d447f60b",
   "claim_expires": "2026-09-26T01:20:31+00:00",
   "depends_on": [
     "AR-1452"
   ],
   "id": "AR-1453",
-  "next_action": "Repair Hosted Policy cancellation test race: synchronize explicit in-flight state before cancel; preserve durable Cancelled lifecycle and bounded state, then rerun all gates and review.",
+  "next_action": "PR #333 exact head 37d9517317ed68ea299229d0bf7b1dc8d447f60b is running hosted checks and independent review; require terminal-success checks and review before merge. Preserve failed 36195718695 evidence.",
   "observed_branch": "feature/ar-1453-frontend-orchestration-wiring",
   "observed_dirty": 0,
   "observed_head": "37d9517317ed68ea299229d0bf7b1dc8d447f60b",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 117,
+  "task_revision": 118,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T22:22:37+00:00",
+  "updated_at": "2026-09-25T22:22:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
@@ -380,3 +380,10 @@ asb-control protocol after this AR is complete.
 
 - 2026-09-25T22:22:25+00:00: Recorded command exit 0; command argv SHA-256
   1da6321d70012989f6655d997ef1afb35b40d703360ea84e5c78729bf3a4110d.
+
+- 2026-09-25T22:22:57+00:00: Hosted race repair in signed+DCO commit adds an internal
+  execution_started signal. The LocalMock test now waits for actual run_point entry before asserting
+  authority registration and signalling cancellation, replacing the invalid sleep-based timing
+  assumption. Focused cancellation test, default 111-test asb-cli lib suite, clippy -D warnings,
+  fmt, and diff check pass. Serial suite had one pre-existing production idempotency lock-isolation
+  failure in one run; isolated rerun passed; preserve as evidence until hosted result.

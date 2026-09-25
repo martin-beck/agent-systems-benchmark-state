@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1453](tasks/AR-1453-frontend-orchestration-wiring.md): Route ASB frontends through central orchestration | Make CLI and control use the central service for every run lifecycle. | Repair Hosted Policy cancellation test race: synchronize explicit in-flight state before cancel; preserve durable Cancelled lifecycle and bounded state, then rerun all gates and review. | ar1453-frontend-orchestration-luna56 |
+| P0 | [AR-1453](tasks/AR-1453-frontend-orchestration-wiring.md): Route ASB frontends through central orchestration | Make CLI and control use the central service for every run lifecycle. | PR #333 exact head 37d9517317ed68ea299229d0bf7b1dc8d447f60b is running hosted checks and independent review; require terminal-success checks and review before merge. Preserve failed 36195718695 evidence. | ar1453-frontend-orchestration-luna56 |
 
 ## Open
 
