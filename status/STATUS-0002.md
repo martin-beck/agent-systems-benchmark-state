@@ -102,7 +102,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1437](../tasks/AR-1437-local-record-replay-campaign.md): Local record/replay campaign qualification | codex-asb-ar1437-local-record-luna56 | Qualify deterministic local record/replay and campaign journeys over the runtime mock. | Publish exact-head PR for a7d041b and wait for all required checks before merge. |
+| P1 | [AR-1437](../tasks/AR-1437-local-record-replay-campaign.md): Local record/replay campaign qualification | codex-asb-ar1437-local-record-luna56 | Qualify deterministic local record/replay and campaign journeys over the runtime mock. | Monitor seven exact-main workflows for merge ede3f032428c366769f1bdd5bc0988b87a14de83; verify terminal success and release only after exact remote checks. |
 
 ### Blocked (66)
 

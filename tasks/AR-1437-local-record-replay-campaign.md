@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1437-local-record-replay-campaign",
-  "checkpoint_commit": "a7d041bcf97cec413c1447fc7910f9fc3a4c4764",
+  "checkpoint_commit": "ede3f032428c366769f1bdd5bc0988b87a14de83",
   "claim_expires": "2026-09-25T03:27:52+00:00",
   "depends_on": [
     "AR-1436",
     "AR-1328"
   ],
   "id": "AR-1437",
-  "next_action": "Publish exact-head PR for a7d041b and wait for all required checks before merge.",
+  "next_action": "Monitor seven exact-main workflows for merge ede3f032428c366769f1bdd5bc0988b87a14de83; verify terminal success and release only after exact remote checks.",
   "observed_branch": "feature/ar-1437-local-record-replay-campaign",
   "observed_dirty": 0,
   "observed_head": "a7d041bcf97cec413c1447fc7910f9fc3a4c4764",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify deterministic local record/replay and campaign journeys over the runtime mock.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Local record/replay campaign qualification",
-  "updated_at": "2026-09-25T01:48:48+00:00",
+  "updated_at": "2026-09-25T01:49:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1437-local-record-replay-campaign"
 }
 ---
@@ -168,3 +168,9 @@ campaign qualification. Require focused/full/review/PR/seven post-merge gates.
 
 - 2026-09-25T01:48:48+00:00: Recorded command exit 0; command argv SHA-256
   c06ba0ab5832e56afbf87f28f2c9ab3b68573b4d9e63bb35f52f33238c557fa4.
+
+- 2026-09-25T01:49:14+00:00: PR #318 merged through local integration with exact base 18a0df9b, head
+  a7d041b, tree c2159ba9. Remote origin/main is exact merge ede3f032 with parents base and PR head,
+  valid SSH signature and DCO trailer. Seven post-merge workflows launched: aarch64 36083606686;
+  Rust 36083606748; Repository quality 36083606766; Formal 36083606673; Fault 36083606699; Hosted
+  portability/native 36083606680; Huawei headers 36083606817.
