@@ -10,7 +10,7 @@
     "AR-1446"
   ],
   "id": "AR-1338",
-  "next_action": "Promote and claim the ASB-only wrapper implementation. Extend the existing bounded easy path to catalog-driven setup/selection, plan/run/sweep, report/compare, record/replay, generated private files, documentation, and offline hostile tests; optional live-provider capture remains separate.",
+  "next_action": "Open after AR-1448 supplies the runtime-owned strict replay authority. Then extend the existing bounded easy path to catalog-driven setup/selection, plan/run/sweep, report/compare, record/replay, generated private files, documentation, and offline hostile tests; optional live-provider capture remains separate.",
   "observed_branch": "feature/ar-1338-guided-asb-command-wrapper",
   "observed_dirty": 0,
   "observed_head": "2872a31f2ee90ac5df1a47203b2a618b1829cfec",
