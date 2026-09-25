@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #318 | `feature/ar-1437-local-record-replay-campaign@a7d041bcf97c` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Qualify local record-campaign sealing |
+| #318 | `feature/ar-1437-local-record-replay-campaign@a7d041bcf97c` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Qualify local record-campaign sealing |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 36082816442 | `a7d041bcf97c` | pull_request | Huawei MIT source headers | completed:success |
-| 36082816440 | `a7d041bcf97c` | pull_request | Rust verification | in_progress:- |
+| 36082816440 | `a7d041bcf97c` | pull_request | Rust verification | completed:success |
 | 36082816435 | `a7d041bcf97c` | pull_request | Repository quality | in_progress:- |
 | 36082816425 | `a7d041bcf97c` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 36082816424 | `a7d041bcf97c` | pull_request | Hosted portability and native qualification | completed:success |
