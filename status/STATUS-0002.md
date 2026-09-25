@@ -98,11 +98,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1437](../tasks/AR-1437-local-record-replay-campaign.md): Local record/replay campaign qualification | Unclaimed | Qualify deterministic local record/replay and campaign journeys over the runtime mock. | Promote and claim after completed dependency check; implement deterministic local record/replay or campaign qualification without live-provider dependencies. |
+| P1 | [AR-1437](../tasks/AR-1437-local-record-replay-campaign.md): Local record/replay campaign qualification | codex-asb-ar1437-local-record-luna56 | Qualify deterministic local record/replay and campaign journeys over the runtime mock. | Promote and claim after completed dependency check; implement deterministic local record/replay or campaign qualification without live-provider dependencies. |
 
 ### Blocked (66)
 

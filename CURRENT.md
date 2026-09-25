@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1437](tasks/AR-1437-local-record-replay-campaign.md): Local record/replay campaign qualification | Qualify deterministic local record/replay and campaign journeys over the runtime mock. | Promote and claim after completed dependency check; implement deterministic local record/replay or campaign qualification without live-provider dependencies. | - |
+| P1 | [AR-1437](tasks/AR-1437-local-record-replay-campaign.md): Local record/replay campaign qualification | Qualify deterministic local record/replay and campaign journeys over the runtime mock. | Promote and claim after completed dependency check; implement deterministic local record/replay or campaign qualification without live-provider dependencies. | codex-asb-ar1437-local-record-luna56 |
 
 ## Blocked
 
