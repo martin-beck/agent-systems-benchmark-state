@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1438](tasks/AR-1438-hardened-trusted-runner-validation.md): Hardened trusted-runner validation repair | Make protected trusted-runner lifecycle validation compatible with hardened rootless execution. | Promote and repair the trusted development-host validation so it passes under the approved NoNewPrivileges runner hardening without weakening isolation or skipping lifecycle checks. | - |
+| P1 | [AR-1438](tasks/AR-1438-hardened-trusted-runner-validation.md): Hardened trusted-runner validation repair | Make protected trusted-runner lifecycle validation compatible with hardened rootless execution. | Promote and repair the trusted development-host validation so it passes under the approved NoNewPrivileges runner hardening without weakening isolation or skipping lifecycle checks. | ar1438_runner_validation_luna56 |
 
 ## Blocked
 

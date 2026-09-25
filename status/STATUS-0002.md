@@ -99,11 +99,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1438](../tasks/AR-1438-hardened-trusted-runner-validation.md): Hardened trusted-runner validation repair | Unclaimed | Make protected trusted-runner lifecycle validation compatible with hardened rootless execution. | Promote and repair the trusted development-host validation so it passes under the approved NoNewPrivileges runner hardening without weakening isolation or skipping lifecycle checks. |
+| P1 | [AR-1438](../tasks/AR-1438-hardened-trusted-runner-validation.md): Hardened trusted-runner validation repair | ar1438_runner_validation_luna56 | Make protected trusted-runner lifecycle validation compatible with hardened rootless execution. | Promote and repair the trusted development-host validation so it passes under the approved NoNewPrivileges runner hardening without weakening isolation or skipping lifecycle checks. |
 
 ### Blocked (68)
 

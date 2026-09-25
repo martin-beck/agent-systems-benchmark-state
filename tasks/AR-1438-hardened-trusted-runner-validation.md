@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1438-hardened-trusted-runner-validation",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-25T14:09:24+00:00",
   "depends_on": [
     "AR-0830"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "",
+  "owner": "ar1438_runner_validation_luna56",
   "plan": "../plans/AR-1438-hardened-trusted-runner-validation.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Make protected trusted-runner lifecycle validation compatible with hardened rootless execution.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Hardened trusted-runner validation repair",
-  "updated_at": "2026-09-25T12:09:21+00:00",
+  "updated_at": "2026-09-25T12:09:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1438-hardened-trusted-runner-validation"
 }
 ---
@@ -44,3 +44,5 @@ trusted workflow on the exact merge commit.
 
 - 2026-09-25T12:09:21+00:00: dependencies verified: AR-0830 done; begin hardened rootless runner
   validation repair
+
+- 2026-09-25T12:09:24+00:00: Claimed by ar1438_runner_validation_luna56.
