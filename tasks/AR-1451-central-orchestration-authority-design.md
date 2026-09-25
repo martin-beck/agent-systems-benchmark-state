@@ -12,17 +12,17 @@
   "id": "AR-1451",
   "next_action": "PR #329 exact head 1c5ae1b adds closed v1 schema, ownership, recovery, migration, portability, and privacy bounds. Await independent re-review and all exact-head checks; merge only when green.",
   "observed_branch": "feature/ar-1451-central-orchestration-authority-design",
-  "observed_dirty": 5,
-  "observed_head": "1c5ae1bf6f38c9e5311f0e282d7b282812b75058",
+  "observed_dirty": 0,
+  "observed_head": "e6e433ab2d0840e763fd9c136964b9e343a92b5e",
   "owner": "coordinator-orchestration",
   "plan": "../plans/AR-1451.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Freeze one runtime-owned orchestration authority for every ASB run and attempt.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Central orchestration authority contract and ASB redesign",
-  "updated_at": "2026-09-25T17:43:12+00:00",
+  "updated_at": "2026-09-25T17:43:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1451-central-orchestration-authority-design"
 }
 ---
