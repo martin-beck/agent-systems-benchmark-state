@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1453](tasks/AR-1453-frontend-orchestration-wiring.md): Route ASB frontends through central orchestration | Make CLI and control use the central service for every run lifecycle. | Repair P1 review blockers on PR #332: enforce strict replay through runtime-issued cassette authority with digest consumption and enforce execute_until deadline; add positive/negative tests, then rerun gates and push a new signed+DCO head for fresh review. | ar1453-frontend-orchestration-luna56 |
+| P0 | [AR-1453](tasks/AR-1453-frontend-orchestration-wiring.md): Route ASB frontends through central orchestration | Make CLI and control use the central service for every run lifecycle. | Repair follow-up required before pushing PR #332: focused control tests pass for strict replay and deadline regressions, but the full control test subset still fails in active_worker_retains_exclusive_state_ownership_until_terminal_commit and unix_frontend_disconnect_does_not_stop_real_run after strict replay became authority-only. Diagnose/update those lifecycle tests or implementation, then rerun full gates; current repair commit remains unpublished. | ar1453-frontend-orchestration-luna56 |
 
 ## Open
 

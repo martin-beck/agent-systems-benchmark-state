@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1453-frontend-orchestration-wiring",
-  "checkpoint_commit": "ceac822ad15da1747fc8b7ad824a68928de663a0",
+  "checkpoint_commit": "6bf03b57601ccbbdccbee7beda2d9512f1060a1e",
   "claim_expires": "2026-09-25T23:14:03+00:00",
   "depends_on": [
     "AR-1452"
   ],
   "id": "AR-1453",
-  "next_action": "Repair P1 review blockers on PR #332: enforce strict replay through runtime-issued cassette authority with digest consumption and enforce execute_until deadline; add positive/negative tests, then rerun gates and push a new signed+DCO head for fresh review.",
+  "next_action": "Repair follow-up required before pushing PR #332: focused control tests pass for strict replay and deadline regressions, but the full control test subset still fails in active_worker_retains_exclusive_state_ownership_until_terminal_commit and unix_frontend_disconnect_does_not_stop_real_run after strict replay became authority-only. Diagnose/update those lifecycle tests or implementation, then rerun full gates; current repair commit remains unpublished.",
   "observed_branch": "feature/ar-1453-frontend-orchestration-wiring",
   "observed_dirty": 0,
   "observed_head": "6bf03b57601ccbbdccbee7beda2d9512f1060a1e",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T21:31:51+00:00",
+  "updated_at": "2026-09-25T21:32:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
@@ -206,3 +206,13 @@ asb-control protocol after this AR is complete.
 
 - 2026-09-25T21:31:40+00:00: Recorded command exit 0; command argv SHA-256
   7767d939d679aff4591a037b2342797bb19eb9cbe89589821b972e032ad8d8ac.
+
+- 2026-09-25T21:32:09+00:00: Repair implementation committed signed+DCO as
+  6bf03b57601ccbbdccbee7beda2d9512f1060a1e. Added declarative replay_cassette_path, authenticated
+  cassette digest verification/consumption via StrictReplayService, authority-only strict replay
+  execution, deadline watchdog cancellation, and positive/negative tests. New strict-replay tests
+  pass. Focused control suite command cargo test -p asb-cli --lib control::tests:: --offline did not
+  terminate cleanly: active_worker_retains_exclusive_state_ownership_until_terminal_commit and
+  unix_frontend_disconnect_does_not_stop_real_run failed, and
+  production_backend_runs_without_frontend_and_recovers_idempotency exceeded 60s before manual
+  interruption. Do not push or request review until these regressions are repaired.
