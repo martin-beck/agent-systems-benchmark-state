@@ -2,7 +2,7 @@
 {
   "branch": "qualification/ar-1447-asb-local-campaign",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-25T17:27:16+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1433",
     "AR-1437",
@@ -13,15 +13,15 @@
   "observed_branch": "qualification/ar-1447-asb-local-campaign",
   "observed_dirty": 0,
   "observed_head": "2872a31f2ee90ac5df1a47203b2a618b1829cfec",
-  "owner": "coordinator-ar1447",
+  "owner": "",
   "plan": "../plans/AR-1447.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Qualify the complete credential-free ASB local campaign and replay journey.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "ASB local campaign qualification",
-  "updated_at": "2026-09-25T15:30:54+00:00",
+  "updated_at": "2026-09-25T15:31:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1447"
 }
 ---
@@ -51,3 +51,8 @@ close the optional live capture chain AR-1330 through AR-1333.
 
 - 2026-09-25T15:30:54+00:00: Recorded command exit 0; command argv SHA-256
   3d4cc54827fa0ae5c402321266e4a8e9a84a69a17f7ff27b7a0f0c858d454784.
+
+- 2026-09-25T15:31:12+00:00: ASB-only local campaign qualification complete on protected merge
+  2872a31f2ee90ac5df1a47203b2a618b1829cfec. Targeted guided-local and exact-campaign tests passed;
+  full cargo test --locked -p asb-cli --lib passed 107/107. Qualification is credential-free,
+  local-mock, offline replay capable, and does not depend on live-provider reachability.
