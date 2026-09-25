@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1452-runtime-orchestration-service",
-  "checkpoint_commit": "d1c5b506ca09e0f47a0602e4a260a61fd760ecfa",
+  "checkpoint_commit": "bed7bb3ae5183f891cba14b539371d2f78147b91",
   "claim_expires": "2026-09-25T21:12:29+00:00",
   "depends_on": [
     "AR-1357",
@@ -10,7 +10,7 @@
     "AR-1451"
   ],
   "id": "AR-1452",
-  "next_action": "PR #330 exact head d1c5b50 blocks cancel on NeedsReconciliation and requires source-level reconcile/cancel hooks before marking interrupted attempts Failed. Await exact-head CI and review; hard timeout still depends on cooperative runtime cancellation semantics.",
+  "next_action": "PR #330 exact head bed7bb3 scopes local cancellation to the server-issued attempt ID, adds runtime per-attempt cancellation tracking, and invokes cleanup on ordinary execution/evidence failures. Await exact-head CI/review; timeout remains cooperative adapter contract.",
   "observed_branch": "feature/ar-1452-runtime-orchestration-service",
   "observed_dirty": 0,
   "observed_head": "bed7bb3ae5183f891cba14b539371d2f78147b91",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 152,
+  "task_revision": 153,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T19:43:32+00:00",
+  "updated_at": "2026-09-25T19:43:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---
@@ -402,3 +402,8 @@ until the service can prove the complete authority chain.
 
 - 2026-09-25T19:43:32+00:00: Recorded command exit 0; command argv SHA-256
   10ffdfa0d30719f50bf21fbc01c140375702acb07cf7c4b5d8dc85839df9e3bd.
+
+- 2026-09-25T19:43:59+00:00: Addressed latest review: LocalProviderAuthority now tracks cancelled
+  attempt IDs rather than revoking the shared generation; orchestrator failure paths call
+  source.cancel. 7 tests and clippy passed; signed commit pushed. Hard timeout still requires
+  cooperative source cancellation because AuthoritySource execution is synchronous.
