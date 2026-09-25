@@ -9,17 +9,17 @@
   "id": "AR-1453",
   "next_action": "Lifecycle repair remains incomplete; do not push PR #332. Strict replay/deadline tests pass, but isolated active-worker and unix-disconnect tests still end in non-terminal/NeedsReconciliation state, and production idempotency test times out at 30s. Diagnose why completed strict replay catalog state is not preserved across worker/recovery and why production wait hangs; then rerun focused/full gates.",
   "observed_branch": "feature/ar-1453-frontend-orchestration-wiring",
-  "observed_dirty": 3,
-  "observed_head": "4db5c4d781a27401ebe895c94400325b7c3647e6",
+  "observed_dirty": 0,
+  "observed_head": "082b0624abe2944bb46a00330bccf84a655f7ae7",
   "owner": "ar1453-frontend-orchestration-luna56",
   "plan": "../plans/AR-1453.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 86,
+  "task_revision": 87,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T21:50:06+00:00",
+  "updated_at": "2026-09-25T21:50:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
