@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1430](tasks/AR-1430-literature-workload-catalog-gap-closure.md): Literature workload catalog gap closure | Close documented literature workload identity and selector gaps without enabling live providers or external acquisition. | Promote after AR-1423 and AR-1416 are released; add the complete stable literature workload identity/catalog and fail-closed selector boundary. | ar1430_literature_workload_catalog_luna56 |
+| P1 | [AR-1430](tasks/AR-1430-literature-workload-catalog-gap-closure.md): Literature workload catalog gap closure | Close documented literature workload identity and selector gaps without enabling live providers or external acquisition. | Run full local quality gates, publish exact-head PR, obtain independent review, merge, monitor seven post-merge workflows, then release. | ar1430_literature_workload_catalog_luna56 |
 
 ## Blocked
 
