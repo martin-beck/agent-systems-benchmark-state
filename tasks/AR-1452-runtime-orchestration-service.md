@@ -15,11 +15,10 @@
   "branch": "feature/ar-1452-runtime-orchestration-service",
   "checkpoint_commit": "",
   "plan": "../plans/AR-1452.md",
-  "depends_on": ["AR-1451", "AR-1450"]
+  "depends_on": ["AR-1357", "AR-1433", "AR-1448", "AR-1451"]
 }
 ---
 
 Implement the central service. The mandatory path is local deterministic mock
 and strict replay; real-provider connectivity remains optional and fail-closed
 until the service can prove the complete authority chain.
-
