@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1419.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Close literature documentation gaps and enforce benchmark-versus-framework selection boundaries.",
+  "task_revision": 2,
   "title": "Literature framework boundaries",
-  "task_revision": 1,
-  "updated_at": "2026-09-24T19:10:00+00:00",
+  "updated_at": "2026-09-25T09:50:12+00:00",
   "worktree_key": ""
 }
 ---
@@ -29,3 +29,6 @@ This is a catalog/documentation contract task. Harbor, Inspect AI, HAL, AgentOps
 and HELM remain framework, harness, scorer, or observability references unless a
 separate workload protocol and grader are proven.
 
+
+- 2026-09-25T09:50:12+00:00: Dependencies AR-1417 and AR-1418 have completed implementation audits;
+  promote framework-boundary contract work.

@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-1419](tasks/AR-1419-literature-framework-boundaries.md): Literature framework boundaries | Close literature documentation gaps and enforce benchmark-versus-framework selection boundaries. | Promote after the interactive and tool-use workload audits; reconcile every benchmark/framework mention in docs and prove the selectable catalog has no omitted or falsely executable entry. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -135,7 +141,6 @@ Never edit this file directly.
 | P1 | [AR-1335](tasks/AR-1335-credential-free-benchmark-ci.md): Credential-free CI stage for the benchmark path | Add the required credential-free CI stage for the complete benchmark path. | Add the required credential-free CI stage that exercises the complete benchmark path with loopback and synthetic doubles, no secrets, no egress and no network, keeping the 90% coverage floor. | - |
 | P1 | [AR-1336](tasks/AR-1336-live-benchmark-workflow-docs.md): Live benchmark workflow documentation and support matrix | Document the live benchmark workflow and publish the supported agent and provider matrix. | Document the end-to-end live benchmark workflow and publish the supported agent by provider by model support matrix, with exact digests and evidence limits. | - |
 | P1 | [AR-1338](tasks/AR-1338-guided-asb-command-wrapper.md): Guided ASB command wrapper | Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows. | Promote after AR-1328, AR-1329, AR-1332 and AR-1333 are done; implement the catalog-driven asb easy wrapper, generated private files, documentation and offline hostile tests. | - |
-| P1 | [AR-1419](tasks/AR-1419-literature-framework-boundaries.md): Literature framework boundaries | Close literature documentation gaps and enforce benchmark-versus-framework selection boundaries. | Promote after the interactive and tool-use workload audits; reconcile every benchmark/framework mention in docs and prove the selectable catalog has no omitted or falsely executable entry. | - |
 | P1 | [AR-1420](tasks/AR-1420-literature-workload-campaign-integration.md): Literature workload campaign integration | Run the complete qualified literature workload matrix beside built-in software-engineering workloads. | Promote only after all literature family adapters and boundary inventory are released; extend the existing multi-agent campaign to the complete qualified literature selector set. | - |
 | P1 | [AR-1423](tasks/AR-1423-literature-docs-registry-reconciliation.md): Exhaustive literature docs-to-registry reconciliation | Reconcile all literature benchmark mentions with strict registry identities and framework boundaries. | Promote after AR-1419 and AR-1403 are released; reconcile every docs-listed benchmark against one registry identity and an explicit framework boundary. | - |
 | P1 | [AR-1424](tasks/AR-1424-all-literature-selector-campaign.md): Complete literature selector and local campaign matrix | Make all locally executable literature workloads selectable and campaignable beside built-in fixtures. | Promote after AR-1423, AR-1430, AR-1420, and AR-1416 are released; implement the complete local-mock literature selector and campaign matrix. | - |
