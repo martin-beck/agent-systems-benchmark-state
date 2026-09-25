@@ -12,16 +12,16 @@
   "next_action": "PR #323 is published at signed head f2d4999; wait for all exact-head required checks, independently review, merge only green, then verify post-merge and release AR with catalog and measurement evidence.",
   "observed_branch": "feature/ar-1440-openrouter-model-refresh-local-measurements",
   "observed_dirty": 0,
-  "observed_head": "f2d4999ef09e3ebe3da720209a36954e6090f4b9",
+  "observed_head": "8d2a99d3fbaa3e4d86e3e54c7f82c735ff466fdd",
   "owner": "ar1440-model-refresh-luna56",
   "plan": "../plans/AR-1440.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Refresh the stale OpenRouter free-model pin and qualify local-only benchmark measurements.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Refresh OpenRouter model pin and local measurements",
-  "updated_at": "2026-09-25T13:46:06+00:00",
+  "updated_at": "2026-09-25T13:46:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1440-openrouter-model-refresh-local-measurements"
 }
 ---

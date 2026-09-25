@@ -10,21 +10,21 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #323 | `feature/ar-1440-openrouter-model-refresh-local-measurements@f2d4999ef09e` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(openrouter): refresh free model and local measurement |
+| #323 | `feature/ar-1440-openrouter-model-refresh-local-measurements@8d2a99d3fbaa` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(openrouter): refresh free model and local measurement |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 36143072896 | `8d2a99d3fbaa` | pull_request | Huawei MIT source headers | in_progress:- |
+| 36143071600 | `8d2a99d3fbaa` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 36143071587 | `8d2a99d3fbaa` | pull_request | Formal assurance | in_progress:- |
+| 36143071575 | `8d2a99d3fbaa` | pull_request | Fault assurance | in_progress:- |
+| 36143071487 | `8d2a99d3fbaa` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 36143071479 | `8d2a99d3fbaa` | pull_request | Rust verification | in_progress:- |
+| 36143071472 | `8d2a99d3fbaa` | pull_request | Repository quality | in_progress:- |
+| 36143071467 | `8d2a99d3fbaa` | pull_request | Agent Workflow Quality shadow | in_progress:- |
 | 36142140886 | `f2d4999ef09e` | pull_request | Fault assurance | completed:success |
-| 36142140856 | `f2d4999ef09e` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 36142140836 | `f2d4999ef09e` | pull_request | Rust verification | in_progress:- |
-| 36142140826 | `f2d4999ef09e` | pull_request | Repository quality | in_progress:- |
-| 36142140799 | `f2d4999ef09e` | pull_request | Hosted portability and native qualification | completed:success |
-| 36142140791 | `f2d4999ef09e` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 36142140778 | `f2d4999ef09e` | pull_request | Formal assurance | completed:success |
-| 36142140776 | `f2d4999ef09e` | pull_request | Huawei MIT source headers | completed:success |
-| 36136409110 | `40c5c4118356` | workflow_dispatch | Trusted development host validation | completed:success |
-| 36135523795 | `40c5c4118356` | push | Huawei MIT source headers | completed:success |
-| 36135523776 | `40c5c4118356` | push | Hosted portability and native qualification | completed:success |
-| 36135523767 | `40c5c4118356` | push | Emulated aarch64 portability | completed:success |
+| 36142140856 | `f2d4999ef09e` | pull_request | Emulated aarch64 portability | completed:success |
+| 36142140836 | `f2d4999ef09e` | pull_request | Rust verification | completed:success |
+| 36142140826 | `f2d4999ef09e` | pull_request | Repository quality | completed:success |
