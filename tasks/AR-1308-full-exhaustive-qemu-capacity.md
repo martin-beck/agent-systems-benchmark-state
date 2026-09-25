@@ -36,6 +36,15 @@ The dependency on AR-1304 provides the reviewed required-tier QEMU runner and us
 The run must consume the exact signed AR-1307 head and pinned TLC/JDK/model inputs, without changing
 source code or treating a capacity failure as a model result.
 
+Local `unsigned-development` fixtures are limited to labelled diagnostic
+preflight/capacity checks. They cannot qualify the full-exhaustive liveness
+run or provide formal, publication, or release evidence. The run must reject
+missing, unsigned, stale, or mismatched signed AR-1307 inputs and never
+replace them with synthetic authority or a weaker resource contract.
+The preflight defaults to the signed qualification profile. An explicit
+`unsigned-development` invocation may validate only a diagnostic fixture and
+must report `qualification_authorized: false`.
+
 
 - 2026-09-18T13:45:32+00:00: AR-1304 is done; promote capacity follow-on to open for independent
   worker assignment. Preserve AR-1307 3G/3G contract and exact-head dependency.

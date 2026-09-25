@@ -102,6 +102,42 @@ class Ar1308CapacityTests(unittest.TestCase):
         candidate["pinned_inputs"]["ar1307_commit"] = "deadbeef0"
         self.assertIn("exact signed AR-1307 head", " ".join(validator.validate_receipt(candidate)))
 
+    def test_unsigned_development_profile_is_explicit_and_diagnostic(self) -> None:
+        candidate = copy.deepcopy(RECEIPT)
+        candidate["pinned_inputs"]["ar1307_commit"] = "a" * 40
+        self.assertEqual(validator.validate_receipt(candidate, "unsigned-development"), [])
+        self.assertTrue(validator.validate_receipt(candidate))
+
+    def test_unsigned_development_source_must_match_pin(self) -> None:
+        from tempfile import TemporaryDirectory
+
+        with TemporaryDirectory() as directory:
+            source = Path(directory)
+            (source / ".git").mkdir()
+            with patch.object(
+                validator,
+                "_run",
+                side_effect=[
+                    validator.subprocess.CompletedProcess([], 0, "a" * 40, ""),
+                    validator.subprocess.CompletedProcess([], 1, "", ""),
+                    validator.subprocess.CompletedProcess([], 0, "", ""),
+                    validator.subprocess.CompletedProcess([], 0, "a" * 40, ""),
+                    validator.subprocess.CompletedProcess([], 0, "", ""),
+                    validator.subprocess.CompletedProcess([], 0, "", ""),
+                ],
+            ):
+                candidate = copy.deepcopy(RECEIPT)
+                candidate["pinned_inputs"]["ar1307_commit"] = "a" * 40
+                candidate["source_tree_sha256"] = validator.hashlib.sha256(b"").hexdigest()
+                self.assertEqual(
+                    validator._validate_source(candidate, source, "unsigned-development"), []
+                )
+                candidate["pinned_inputs"]["ar1307_commit"] = "b" * 40
+                self.assertIn(
+                    "does not match",
+                    " ".join(validator._validate_source(candidate, source, "unsigned-development")),
+                )
+
     def test_network_and_mounts_fail_closed(self) -> None:
         candidate = copy.deepcopy(RECEIPT)
         candidate["network"] = "user"
@@ -289,6 +325,34 @@ class Ar1308CapacityTests(unittest.TestCase):
                 ):
                     args.extend((f"--{name}", str(receipt)))
                 self.assertEqual(validator.main(args), 2)
+
+    def test_main_labels_unsigned_development_as_diagnostic(self) -> None:
+        from tempfile import TemporaryDirectory
+
+        with TemporaryDirectory() as directory:
+            receipt = Path(directory) / "receipt.json"
+            candidate = copy.deepcopy(RECEIPT)
+            candidate["pinned_inputs"]["ar1307_commit"] = "a" * 40
+            receipt.write_text(json.dumps(candidate), encoding="utf-8")
+            args = ["--receipt", str(receipt), "--profile", "unsigned-development"]
+            for name in (
+                "runtime-root",
+                "image",
+                "overlay",
+                "source",
+                "model",
+                "seed",
+                "jdk",
+                "tlc-jar",
+                "admission-lock",
+            ):
+                args.extend((f"--{name}", str(receipt)))
+            with patch.object(validator, "validate_live", return_value=[]):
+                with patch("builtins.print") as printed:
+                    self.assertEqual(validator.main(args), 0)
+                    output = json.loads(printed.call_args.args[0])
+            self.assertEqual(output["status"], "diagnostic")
+            self.assertFalse(output["qualification_authorized"])
 
     def test_live_validators_cover_bound_inputs_and_capacity_branches(self) -> None:
         from tempfile import TemporaryDirectory

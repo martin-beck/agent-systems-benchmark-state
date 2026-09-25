@@ -38,6 +38,16 @@ AR-1293 remains blocked until the repaired runner is merged and handed off.
 See `../plans/AR-1307.md` for the complete scope, gates, evidence contract,
 and protected publication sequence.
 
+The `unsigned-development` profile is diagnostic-only: local unsigned
+fixtures may exercise preflight and bounded runner plumbing, but cannot be
+reported as formal qualification, canonical full attestation, publication
+evidence, or release evidence. Full-tier preflight must reject missing,
+unsigned, stale, or profile-mismatched inputs and must require the exact
+reviewed signed bundle.
+The validator's `signed` profile is the default and the only profile that may
+authorize qualification, publication, or release evidence; selecting
+`unsigned-development` must produce a labelled diagnostic result.
+
 - 2026-09-17T23:55:00+00:00: Created as the repair successor after independent exact-head review
   found AR-1302's runner bypassed canonical admission/attestation and lacked required bounded
   execution, profile alignment, provenance, and clean publication evidence. Depends only on done

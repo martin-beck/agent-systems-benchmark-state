@@ -19,6 +19,7 @@ GIB = 1024**3
 REQUIRED_COMMIT = "ab485f767fbddbd8adfc27b5120f3df0a045b762"
 REQUIRED_IMAGE_SHA256 = "612b2c0cc1bc413a6cb8c38fd611794caf0f2b436c50013d8b3794db12ad7354"
 REQUIRED_TLC_SHA256 = "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88"
+PROFILES = {"signed", "unsigned-development"}
 MIN_GUEST_MEMORY = 48 * GIB
 MIN_HOST_MEMORY = 56 * GIB
 MIN_HOST_DISK = 16 * GIB
@@ -99,11 +100,17 @@ def _validate_capacity(receipt: dict[str, Any]) -> list[str]:
     return issues
 
 
-def _validate_inputs(receipt: dict[str, Any]) -> list[str]:
+def _validate_inputs(receipt: dict[str, Any], profile: str = "signed") -> list[str]:
     issues: list[str] = []
     inputs = receipt.get("pinned_inputs")
-    if not isinstance(inputs, dict) or inputs.get("ar1307_commit") != REQUIRED_COMMIT:
-        issues.append("pinned input is not the exact signed AR-1307 head")
+    commit = inputs.get("ar1307_commit") if isinstance(inputs, dict) else None
+    if profile == "signed":
+        if commit != REQUIRED_COMMIT:
+            issues.append("pinned input is not the exact signed AR-1307 head")
+    elif not isinstance(commit, str) or len(commit) != 40 or any(
+        char not in "0123456789abcdef" for char in commit
+    ):
+        issues.append("diagnostic pinned input must name a lowercase Git commit")
     if not isinstance(inputs, dict) or inputs.get("jdk_major") != 17:
         issues.append("pinned JDK must be major version 17")
     if not isinstance(inputs, dict) or inputs.get("tlc_jar_sha256") != REQUIRED_TLC_SHA256:
@@ -125,14 +132,16 @@ def _validate_inputs(receipt: dict[str, Any]) -> list[str]:
     return issues
 
 
-def validate_receipt(receipt: dict[str, Any]) -> list[str]:
+def validate_receipt(receipt: dict[str, Any], profile: str = "signed") -> list[str]:
     """Validate the closed receipt schema and unchanged process contract."""
     issues: list[str] = []
+    if profile not in PROFILES:
+        issues.append("profile must be signed or unsigned-development")
     if set(receipt) - RECEIPT_KEYS:
         issues.append("receipt contains unknown fields")
     issues.extend(_validate_isolation(receipt))
     issues.extend(_validate_capacity(receipt))
-    issues.extend(_validate_inputs(receipt))
+    issues.extend(_validate_inputs(receipt, profile))
     if receipt.get("process_contract") != CONTRACT:
         issues.append("process contract must remain 8G AS, 3G/3G, 200%, 2 workers, 7200 seconds")
     if (
@@ -210,15 +219,22 @@ def _validate_vm(image: Path, overlay: Path) -> list[str]:
     return issues
 
 
-def _validate_source(receipt: dict[str, Any], source: Path) -> list[str]:
+def _validate_source(
+    receipt: dict[str, Any], source: Path, profile: str = "signed"
+) -> list[str]:
     issues: list[str] = []
     if not source.is_dir() or not (source / ".git").exists():
         return ["exact source checkout is missing Git metadata"]
     head = _run(["git", "-C", str(source), "rev-parse", "HEAD"])
     tree = _run(["git", "-C", str(source), "ls-tree", "-r", "--full-tree", "HEAD"])
+    pinned_inputs = receipt.get("pinned_inputs")
+    expected = pinned_inputs.get("ar1307_commit") if isinstance(pinned_inputs, dict) else None
     verified = _run(["git", "-C", str(source), "verify-commit", "HEAD"])
-    if head.stdout.strip() != REQUIRED_COMMIT or verified.returncode != 0:
-        issues.append("source is not the exact signed AR-1307 commit")
+    if profile == "signed":
+        if head.stdout.strip() != REQUIRED_COMMIT or verified.returncode != 0:
+            issues.append("source is not the exact signed AR-1307 commit")
+    elif head.stdout.strip() != expected:
+        issues.append("diagnostic source does not match its pinned Git commit")
     if hashlib.sha256(tree.stdout.encode()).hexdigest() != _string(receipt, "source_tree_sha256"):
         issues.append("source tree identity does not match the receipt")
     return issues
@@ -256,11 +272,12 @@ def validate_live(
     jdk: Path,
     jar: Path,
     lock: Path,
+    profile: str = "signed",
 ) -> list[str]:
     """Bind receipt identities to the actual immutable live inputs."""
     issues = validate_host(host_capacity(root))
     issues.extend(_validate_vm(image, overlay))
-    issues.extend(_validate_source(receipt, source))
+    issues.extend(_validate_source(receipt, source, profile))
     issues.extend(_validate_artifacts(receipt, model, seed, jdk, jar, lock))
     return issues
 
@@ -280,6 +297,12 @@ def main(argv: list[str] | None = None) -> int:
         "admission-lock",
     ):
         parser.add_argument(f"--{name}", type=Path, required=True)
+    parser.add_argument(
+        "--profile",
+        choices=sorted(PROFILES),
+        default="signed",
+        help="explicitly select signed qualification or diagnostic unsigned development",
+    )
     args = parser.parse_args(argv)
     try:
         receipt = json.loads(args.receipt.read_text(encoding="utf-8"))
@@ -287,7 +310,7 @@ def main(argv: list[str] | None = None) -> int:
         print(f"AR-1308 preflight failed: unreadable receipt ({error})")
         return 2
     issues = (
-        validate_receipt(receipt)
+        validate_receipt(receipt, args.profile)
         if isinstance(receipt, dict)
         else ["receipt must be a JSON object"]
     )
@@ -304,12 +327,19 @@ def main(argv: list[str] | None = None) -> int:
                 args.jdk,
                 args.tlc_jar,
                 args.admission_lock,
+                args.profile,
             )
         )
     if issues:
         print("AR-1308 preflight failed: " + "; ".join(issues))
         return 1
-    print(json.dumps({"status": "ready", "runner_id": receipt["runner_id"]}, sort_keys=True))
+    result = {
+        "profile": args.profile,
+        "qualification_authorized": args.profile == "signed",
+        "runner_id": receipt["runner_id"],
+        "status": "ready" if args.profile == "signed" else "diagnostic",
+    }
+    print(json.dumps(result, sort_keys=True))
     return 0
 
 
