@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1407-sha2-compatibility",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-25T13:43:08+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1405"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "repair/ar-1407-sha2-compatibility",
   "observed_dirty": 0,
   "observed_head": "7390bcd2082700d0c9f04409732b48de8e9f8628",
-  "owner": "ar1407_sha2_compat_luna56",
+  "owner": "",
   "plan": "../plans/AR-1407-sha2-compatibility.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Qualify or repair the closed sha2 0.11 dependency update without weakening crypto or MSRV contracts.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "sha2 compatibility repair",
-  "updated_at": "2026-09-25T11:47:19+00:00",
+  "updated_at": "2026-09-25T11:47:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1407-sha2-compatibility"
 }
 ---
@@ -91,3 +91,9 @@ compatibility and digest parity are proven.
   then asb-protocol at experiment.rs:461, measurement.rs:542,917, provider.rs:770. Failure is
   API-wide across digest formatting, not an isolated MSRV issue. Restored clean worktree; no crypto
   patch or gate weakening made.
+
+- 2026-09-25T11:47:30+00:00: Qualified and preserved supersession: PR #147 head
+  f130ffe4e5735438f3e048c323b1069f148bd15e with sha2 0.11.0 fails locked Rust 1.93 workspace compile
+  because digest 0.11.3 output no longer implements LowerHex; exact failures recorded in task
+  evidence at asb-config and asb-protocol. Worktree clean; current sha2 0.10.9 remains
+  authoritative. No product PR.
