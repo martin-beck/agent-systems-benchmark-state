@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Align formal-runner task metadata with the explicit unsigned development profile.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Formal runner development-profile metadata repair",
-  "updated_at": "2026-09-25T11:28:44+00:00",
+  "updated_at": "2026-09-25T11:29:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1315-formal-development-profile-metadata"
 }
 ---
@@ -53,3 +53,6 @@ claims.
 
 - 2026-09-25T11:28:44+00:00: Recorded command exit 0; command argv SHA-256
   887bde0dd3a7e9bd9787aeab87f68dee906b770772ba294b6bb310d8c327a3f1.
+
+- 2026-09-25T11:29:17+00:00: Recorded command exit 1; command argv SHA-256
+  74d8c075f7e3bad67ed41753a1fd1deebbd83367ee51beff18efe0c24e0b27f9.
