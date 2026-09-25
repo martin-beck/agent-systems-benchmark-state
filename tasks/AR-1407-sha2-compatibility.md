@@ -1,6 +1,6 @@
 ---
 {
-  "branch": "",
+  "branch": "repair/ar-1407-sha2-compatibility",
   "checkpoint_commit": "",
   "claim_expires": "",
   "depends_on": [
@@ -15,12 +15,12 @@
   "plan": "../plans/AR-1407-sha2-compatibility.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "open",
+  "status": "planned",
   "summary": "Qualify or repair the closed sha2 0.11 dependency update without weakening crypto or MSRV contracts.",
   "task_revision": 4,
   "title": "sha2 compatibility repair",
   "updated_at": "2026-09-25T11:38:40+00:00",
-  "worktree_key": ""
+  "worktree_key": "agent-systems-benchmark-ar-1407-sha2-compatibility"
 }
 ---
 
