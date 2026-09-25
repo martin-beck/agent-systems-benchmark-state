@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 207,
+  "task_revision": 208,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T20:19:15+00:00",
+  "updated_at": "2026-09-25T20:19:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---
@@ -545,3 +545,6 @@ until the service can prove the complete authority chain.
 
 - 2026-09-25T20:19:15+00:00: Recorded command exit 101; command argv SHA-256
   ae27f9a52ab63db8509b862b6aa4aa64ffb35b6e0e5c87de1ddffbe044803b5a.
+
+- 2026-09-25T20:19:30+00:00: Recorded command exit 101; command argv SHA-256
+  d3a8d95b702d461679df5cf31be1e01c5249a74000dfdb67429b64d64618f49d.
