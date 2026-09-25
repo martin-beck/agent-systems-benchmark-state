@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #317 | `feature/ar-1436-local-guided-cli-wrapper@ae48046d9802` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Add guided local mock CLI wrapper |
+| #317 | `feature/ar-1436-local-guided-cli-wrapper@ae48046d9802` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Add guided local mock CLI wrapper |
 
 ## Recent workflows
 
@@ -21,9 +21,9 @@ Generated from local Git and GitHub. Do not edit.
 | 36080084161 | `ae48046d9802` | pull_request | Formal assurance | completed:success |
 | 36080084152 | `ae48046d9802` | pull_request | Fault assurance | completed:success |
 | 36080084148 | `ae48046d9802` | pull_request | Repository quality | in_progress:- |
-| 36080084124 | `ae48046d9802` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 36080084124 | `ae48046d9802` | pull_request | Emulated aarch64 portability | completed:success |
 | 36080084120 | `ae48046d9802` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 36080084118 | `ae48046d9802` | pull_request | Rust verification | in_progress:- |
+| 36080084118 | `ae48046d9802` | pull_request | Rust verification | completed:success |
 | 36077914619 | `cc82333a53e0` | push | Emulated aarch64 portability | completed:success |
 | 36077914599 | `cc82333a53e0` | push | Repository quality | completed:success |
 | 36077914555 | `cc82333a53e0` | push | Huawei MIT source headers | completed:success |
