@@ -9,7 +9,7 @@
     "AR-1437"
   ],
   "id": "AR-1440",
-  "next_action": "PR #323 is published at signed head 8d2a99d; wait for all exact-head required checks, independently review, merge only green, then verify post-merge and release AR with catalog and measurement evidence.",
+  "next_action": "Post-merge policy run 36144090160 failed because PR #323 was squash-merged into single-parent 84b587e; create/merge an explicit two-parent topology-repair PR, rerun all exact-main gates, verify green, then release AR-1440.",
   "observed_branch": "feature/ar-1440-openrouter-model-refresh-local-measurements",
   "observed_dirty": 0,
   "observed_head": "8d2a99d3fbaa3e4d86e3e54c7f82c735ff466fdd",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Refresh the stale OpenRouter free-model pin and qualify local-only benchmark measurements.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Refresh OpenRouter model pin and local measurements",
-  "updated_at": "2026-09-25T13:57:17+00:00",
+  "updated_at": "2026-09-25T13:57:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1440-openrouter-model-refresh-local-measurements"
 }
 ---
@@ -115,3 +115,7 @@ tests for stale/mismatched model identities and unavailable pins.
   16f6e85a0223b3c267f37898e402085e2e433acc8657906fcf895d1d483c20a2.
 
 - 2026-09-25T13:57:17+00:00: Heartbeat by ar1440-model-refresh-luna56.
+
+- 2026-09-25T13:57:29+00:00: Exact post-merge failure: repository_policy.py protected-main reports
+  merge topology or first parent differs. Product checks and all PR #323 checks were green; no
+  product defect identified.

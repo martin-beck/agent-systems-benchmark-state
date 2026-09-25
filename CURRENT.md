@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1440](tasks/AR-1440-openrouter-model-refresh-local-measurements.md): Refresh OpenRouter model pin and local measurements | Refresh the stale OpenRouter free-model pin and qualify local-only benchmark measurements. | PR #323 is published at signed head 8d2a99d; wait for all exact-head required checks, independently review, merge only green, then verify post-merge and release AR with catalog and measurement evidence. | ar1440-model-refresh-luna56 |
+| P1 | [AR-1440](tasks/AR-1440-openrouter-model-refresh-local-measurements.md): Refresh OpenRouter model pin and local measurements | Refresh the stale OpenRouter free-model pin and qualify local-only benchmark measurements. | Post-merge policy run 36144090160 failed because PR #323 was squash-merged into single-parent 84b587e; create/merge an explicit two-parent topology-repair PR, rerun all exact-main gates, verify green, then release AR-1440. | ar1440-model-refresh-luna56 |
 
 ## Blocked
 
