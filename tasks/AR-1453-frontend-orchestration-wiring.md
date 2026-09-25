@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T20:51:16+00:00",
+  "updated_at": "2026-09-25T20:51:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
@@ -55,3 +55,6 @@ asb-control protocol after this AR is complete.
   admission/execute/cancel bridge. Focused cargo check first exposed missing execute_until and moved
   Arc/request errors; both are repaired, rerunning now. Worktree remains dirty and no commit is
   published.
+
+- 2026-09-25T20:51:24+00:00: Recorded command exit 101; command argv SHA-256
+  69487790cd46864562a51f207e108eea84da8519a17023da666d53127f8fc1e6.
