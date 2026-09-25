@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #327 | `feature/ar-1338-guided-asb-command-wrapper@76524a7e0819` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): extend guided ASB workflow |
+| #327 | `feature/ar-1338-guided-asb-command-wrapper@76524a7e0819` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): extend guided ASB workflow |
 
 ## Recent workflows
 
