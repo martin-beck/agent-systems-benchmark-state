@@ -120,7 +120,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1453](../tasks/AR-1453-frontend-orchestration-wiring.md): Route ASB frontends through central orchestration | ar1453-frontend-orchestration-luna56 | Make CLI and control use the central service for every run lifecycle. | Repair in-flight cancellation mutex P1 and nondeterministic state-root ownership test failure at hosted head 88fd1067; preserve prior evidence, then rerun focused/full and exact-head gates with independent review. |
+| P0 | [AR-1453](../tasks/AR-1453-frontend-orchestration-wiring.md): Route ASB frontends through central orchestration | ar1453-frontend-orchestration-luna56 | Make CLI and control use the central service for every run lifecycle. | PR #333 exact head 841351bc55d67ae07178002154a4201f2eabae8f is running hosted checks and review; require all terminal-success checks before merge. Hosted state-root failure was not reproducible locally (default and serial suites pass); preserve it as historical evidence. |
 
 ### Open (1)
 

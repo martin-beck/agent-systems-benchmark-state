@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1453-frontend-orchestration-wiring",
-  "checkpoint_commit": "88fd1067ae7e04da0cc641b033bdcc32b63dce8b",
+  "checkpoint_commit": "841351bc55d67ae07178002154a4201f2eabae8f",
   "claim_expires": "2026-09-26T00:03:15+00:00",
   "depends_on": [
     "AR-1452"
   ],
   "id": "AR-1453",
-  "next_action": "Repair in-flight cancellation mutex P1 and nondeterministic state-root ownership test failure at hosted head 88fd1067; preserve prior evidence, then rerun focused/full and exact-head gates with independent review.",
+  "next_action": "PR #333 exact head 841351bc55d67ae07178002154a4201f2eabae8f is running hosted checks and review; require all terminal-success checks before merge. Hosted state-root failure was not reproducible locally (default and serial suites pass); preserve it as historical evidence.",
   "observed_branch": "feature/ar-1453-frontend-orchestration-wiring",
   "observed_dirty": 0,
   "observed_head": "841351bc55d67ae07178002154a4201f2eabae8f",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 104,
+  "task_revision": 105,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T22:06:43+00:00",
+  "updated_at": "2026-09-25T22:06:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
@@ -333,3 +333,11 @@ asb-control protocol after this AR is complete.
 
 - 2026-09-25T22:06:28+00:00: Recorded command exit 0; command argv SHA-256
   1da6321d70012989f6655d997ef1afb35b40d703360ea84e5c78729bf3a4110d.
+
+- 2026-09-25T22:06:55+00:00: P1 cancellation repair committed signed+DCO and pushed forward-only.
+  Cancel now signals the preinstalled runtime authority flag directly without taking orchestration
+  mutex; worker/service ownership remains serialized. Added deterministic in-flight cancellation
+  test; cancellation state remains bounded and cleaned after execution/cancel. Focused
+  lifecycle/deadline tests pass; serial full asb-cli lib 111 passed; workflow transcript, clippy -D
+  warnings, fmt pass. State-root exclusivity test passes individually and in default/serial full
+  suites.
