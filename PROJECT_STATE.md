@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #327 | `feature/ar-1338-guided-asb-command-wrapper@328f768221cc` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): extend guided ASB workflow |
+| #327 | `feature/ar-1338-guided-asb-command-wrapper@328f768221cc` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): extend guided ASB workflow |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 36160797121 | `328f768221cc` | pull_request | Fault assurance | completed:success |
-| 36160797048 | `328f768221cc` | pull_request | Repository quality | in_progress:- |
+| 36160797048 | `328f768221cc` | pull_request | Repository quality | completed:success |
 | 36160797017 | `328f768221cc` | pull_request | Hosted portability and native qualification | completed:success |
 | 36160797010 | `328f768221cc` | pull_request | Emulated aarch64 portability | completed:success |
 | 36160797008 | `328f768221cc` | pull_request | Rust verification | completed:success |
