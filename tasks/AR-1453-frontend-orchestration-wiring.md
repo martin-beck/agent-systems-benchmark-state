@@ -10,16 +10,16 @@
   "next_action": "Repair in-flight cancellation mutex P1 and nondeterministic state-root ownership test failure at hosted head 88fd1067; preserve prior evidence, then rerun focused/full and exact-head gates with independent review.",
   "observed_branch": "feature/ar-1453-frontend-orchestration-wiring",
   "observed_dirty": 0,
-  "observed_head": "88fd1067ae7e04da0cc641b033bdcc32b63dce8b",
+  "observed_head": "841351bc55d67ae07178002154a4201f2eabae8f",
   "owner": "ar1453-frontend-orchestration-luna56",
   "plan": "../plans/AR-1453.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 103,
+  "task_revision": 104,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T22:06:28+00:00",
+  "updated_at": "2026-09-25T22:06:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
