@@ -1,6 +1,6 @@
 ---
 {
-  "branch": "feature/ar-1331-runtime-replay-launch-authority",
+  "branch": "main",
   "checkpoint_commit": "",
   "claim_expires": "2026-09-25T17:47:57+00:00",
   "depends_on": [
@@ -18,7 +18,7 @@
   "task_revision": 3,
   "title": "Runtime-owned strict-replay launch authority",
   "updated_at": "2026-09-25T15:47:57+00:00",
-  "worktree_key": "agent-systems-benchmark-ar-1331-runtime-replay-launch-authority"
+  "worktree_key": "agent-systems-benchmark"
 }
 ---
 
