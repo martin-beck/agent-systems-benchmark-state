@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-1436](tasks/AR-1436-local-guided-cli-wrapper.md): Local guided CLI wrapper | Add a catalog-driven guided CLI wrapper for deterministic local mock qualification. | Promote and claim when completed dependencies are confirmed; implement the offline catalog-driven local mock wrapper and preserve AR-1329/AR-1338 blocked and AR-1332/AR-1333 planned. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -142,7 +148,6 @@ Never edit this file directly.
 | P1 | [AR-1425](tasks/AR-1425-literature-workload-release-readiness.md): Literature workload release-readiness gate | Independently verify release readiness of the complete built-in and literature workload surface. | Promote only after AR-1424, AR-1417, and AR-1418 are released; independently verify the complete built-in plus literature workload surface and all release gates. | - |
 | P1 | [AR-1426](tasks/AR-1426-evolving-literature-window-refresh.md): Evolving literature workload window refresh | Refresh evolving literature benchmark windows without stale or incomparable results. | Promote after AR-1423 and AR-1425 are released; implement content-addressed refresh manifests and fail-closed window validation for LiveCodeBench and SWE-rebench. | - |
 | P1 | [AR-1430](tasks/AR-1430-literature-workload-catalog-gap-closure.md): Literature workload catalog gap closure | Close documented literature workload identity and selector gaps without enabling live providers or external acquisition. | Promote after AR-1423 and AR-1416 are released; add the complete stable literature workload identity/catalog and fail-closed selector boundary. | - |
-| P1 | [AR-1436](tasks/AR-1436-local-guided-cli-wrapper.md): Local guided CLI wrapper | Add a catalog-driven guided CLI wrapper for deterministic local mock qualification. | Promote and claim when completed dependencies are confirmed; implement the offline catalog-driven local mock wrapper and preserve AR-1329/AR-1338 blocked and AR-1332/AR-1333 planned. | - |
 | P2 | [AR-0602](tasks/AR-0602-csb-monitoring-contention.md): Validate CSB monitoring and contention diagnostics | Validate and integrate optional CSB resource monitoring and kernel-contention evidence without double counting or overstating support. | Audit CSB monitoring using native x86_64 oracles and required pinned QEMU AArch64 portable mapping/lifecycle checks; keep native ARM64 counters and performance as optional future evidence. | - |
 | P2 | [AR-0705](tasks/AR-0705-native-debian-capacity.md): Provide native Debian capacity | Qualify booted Debian on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 Debian and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. | - |
 | P2 | [AR-0706](tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. | - |
