@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1436](tasks/AR-1436-local-guided-cli-wrapper.md): Local guided CLI wrapper | Add a catalog-driven guided CLI wrapper for deterministic local mock qualification. | Finish hostile/positive local wrapper tests, then run focused/full offline gates and exact review. | codex-asb-ar1436-local-guided-luna56 |
+| P1 | [AR-1436](tasks/AR-1436-local-guided-cli-wrapper.md): Local guided CLI wrapper | Add a catalog-driven guided CLI wrapper for deterministic local mock qualification. | Run full applicable offline gates, independent review, then publish exact-head PR and await all checks. | codex-asb-ar1436-local-guided-luna56 |
 
 ## Blocked
 

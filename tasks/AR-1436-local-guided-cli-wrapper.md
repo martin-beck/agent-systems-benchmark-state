@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1436-local-guided-cli-wrapper",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "2dbbfd89adce0fbf7358e557495654a05552f30b",
   "claim_expires": "2026-09-25T02:43:20+00:00",
   "depends_on": [
     "AR-1435",
     "AR-1328"
   ],
   "id": "AR-1436",
-  "next_action": "Finish hostile/positive local wrapper tests, then run focused/full offline gates and exact review.",
+  "next_action": "Run full applicable offline gates, independent review, then publish exact-head PR and await all checks.",
   "observed_branch": "feature/ar-1436-local-guided-cli-wrapper",
   "observed_dirty": 1,
   "observed_head": "cc82333a53e03147ea95cc21ca697647dc27db1f",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a catalog-driven guided CLI wrapper for deterministic local mock qualification.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Local guided CLI wrapper",
-  "updated_at": "2026-09-25T00:48:30+00:00",
+  "updated_at": "2026-09-25T00:49:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1436-local-guided-cli-wrapper"
 }
 ---
@@ -68,3 +68,8 @@ weakening. Require focused/full/review/PR/seven post-merge gates.
 
 - 2026-09-25T00:48:30+00:00: Recorded command exit 0; command argv SHA-256
   2b5b77c523555f81a83fb1ed2aaa818f88f25b6db436c1330b5c91c185b2f167.
+
+- 2026-09-25T00:49:19+00:00: Implementation committed and pushed as signed+DCO 2dbbfd8. Added
+  explicit asb easy run|sweep PATH --use-config --local-mock delegation, hostile option/absence
+  tests, positive catalog-bound local mock run test, help/completion entries, and workflow
+  documentation. Focused two-test gate passes; no live provider or external endpoint path added.
