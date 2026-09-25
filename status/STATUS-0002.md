@@ -102,7 +102,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1315](../tasks/AR-1315-1307-1308-development-profile-metadata.md): Formal runner development-profile metadata repair | ar1315_formal_profile_repair_luna56 | Align formal-runner task metadata with the explicit unsigned development profile. | Commit signed+DCO state-only wording and validator repair; run focused and full state gates, then obtain independent review and publish only through handoffctl. |
+| P1 | [AR-1315](../tasks/AR-1315-1307-1308-development-profile-metadata.md): Formal runner development-profile metadata repair | ar1315_formal_profile_repair_luna56 | Align formal-runner task metadata with the explicit unsigned development profile. | Independent review of signed state commit da9c31036; publish/reconcile through handoffctl, then run doctor --live and record exact durable outcome. |
 
 ### Blocked (66)
 

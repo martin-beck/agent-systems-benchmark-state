@@ -1,13 +1,13 @@
 ---
 {
   "branch": "repair/ar-1315-formal-development-profile-wording",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "da9c3103655c0f0d318a8b7a4c798254adb9c1fa",
   "claim_expires": "2026-09-25T13:32:42+00:00",
   "depends_on": [
     "AR-1314"
   ],
   "id": "AR-1315",
-  "next_action": "Commit signed+DCO state-only wording and validator repair; run focused and full state gates, then obtain independent review and publish only through handoffctl.",
+  "next_action": "Independent review of signed state commit da9c31036; publish/reconcile through handoffctl, then run doctor --live and record exact durable outcome.",
   "observed_branch": "repair/ar-1315-formal-development-profile-wording",
   "observed_dirty": 0,
   "observed_head": "7390bcd2082700d0c9f04409732b48de8e9f8628",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Align formal-runner task metadata with the explicit unsigned development profile.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Formal runner development-profile metadata repair",
-  "updated_at": "2026-09-25T11:32:42+00:00",
+  "updated_at": "2026-09-25T11:32:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1315-formal-development-profile-metadata"
 }
 ---
@@ -76,3 +76,8 @@ claims.
   af3e7f714667ee8b17a2fb703a7ccd922ef9e566ba9e1550a1daf82f0a37f40f.
 
 - 2026-09-25T11:32:42+00:00: Heartbeat by ar1315_formal_profile_repair_luna56.
+
+- 2026-09-25T11:32:51+00:00: Implementation committed state-only as signed+DCO
+  da9c3103655c0f0d318a8b7a4c798254adb9c1fa. Focused AR-1308 tests 22/22 and full state unittest
+  suite 199/199 pass. git diff --check and SSH signature verification pass. No ASB product or
+  asb-tui files changed.
