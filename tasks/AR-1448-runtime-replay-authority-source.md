@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize runtime-owned strict replay authority for normal CLI replay.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Runtime replay authority source",
-  "updated_at": "2026-09-25T15:55:21+00:00",
+  "updated_at": "2026-09-25T15:57:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1448-runtime-replay-authority-source"
 }
 ---
@@ -42,3 +42,6 @@ CLI and do not make external provider access a prerequisite.
   made; task remains open for implementation of the bounded runtime-owned materializer.
 
 - 2026-09-25T15:55:21+00:00: Claimed by coordinator-ar1448.
+
+- 2026-09-25T15:57:10+00:00: Recorded command exit 1; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
