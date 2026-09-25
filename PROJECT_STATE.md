@@ -10,13 +10,13 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #323 | `feature/ar-1440-openrouter-model-refresh-local-measurements@f2d4999ef09e` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | feat(openrouter): refresh free model and local measurement |
+| #323 | `feature/ar-1440-openrouter-model-refresh-local-measurements@f2d4999ef09e` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(openrouter): refresh free model and local measurement |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36142140886 | `f2d4999ef09e` | pull_request | Fault assurance | in_progress:- |
+| 36142140886 | `f2d4999ef09e` | pull_request | Fault assurance | completed:success |
 | 36142140856 | `f2d4999ef09e` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 36142140836 | `f2d4999ef09e` | pull_request | Rust verification | in_progress:- |
 | 36142140826 | `f2d4999ef09e` | pull_request | Repository quality | in_progress:- |
