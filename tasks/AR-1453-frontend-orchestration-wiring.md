@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 64,
+  "task_revision": 65,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T21:32:09+00:00",
+  "updated_at": "2026-09-25T21:34:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
@@ -216,3 +216,6 @@ asb-control protocol after this AR is complete.
   unix_frontend_disconnect_does_not_stop_real_run failed, and
   production_backend_runs_without_frontend_and_recovers_idempotency exceeded 60s before manual
   interruption. Do not push or request review until these regressions are repaired.
+
+- 2026-09-25T21:34:32+00:00: Recorded command exit 101; command argv SHA-256
+  7bf1fd2597db0f35be8dcb7308a30c3f3bdc255c2bd88e06e9fd14d0a2e169df.
