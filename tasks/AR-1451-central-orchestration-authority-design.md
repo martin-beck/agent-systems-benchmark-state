@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1451-central-orchestration-authority-design",
-  "checkpoint_commit": "979102f3b56dcfc4b7023e92a712f7c2c71bdb00",
+  "checkpoint_commit": "071167df4fe23165978b51de5eaf3541244f63ff",
   "claim_expires": "2026-09-25T19:32:06+00:00",
   "depends_on": [
     "AR-1341",
@@ -10,7 +10,7 @@
     "AR-1448"
   ],
   "id": "AR-1451",
-  "next_action": "PR #329 exact head 979102f executes Draft 2020-12 schema validation for positive, mode, operation, and hostile vectors and uses immutable schema ID. Await final review and all exact-head checks; merge only when green.",
+  "next_action": "PR #329 merged as 071167d. Monitor seven exact-main post-merge workflows 36170798957, 36170798948, 36170798971, 36170798901, 36170798918, 36170798954, 36170798887 to terminal success; then release AR-1451 and promote AR-1452.",
   "observed_branch": "feature/ar-1451-central-orchestration-authority-design",
   "observed_dirty": 0,
   "observed_head": "979102f3b56dcfc4b7023e92a712f7c2c71bdb00",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Freeze one runtime-owned orchestration authority for every ASB run and attempt.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Central orchestration authority contract and ASB redesign",
-  "updated_at": "2026-09-25T18:01:36+00:00",
+  "updated_at": "2026-09-25T18:02:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1451-central-orchestration-authority-design"
 }
 ---
@@ -133,3 +133,6 @@ provider access.
 
 - 2026-09-25T18:01:36+00:00: Recorded command exit 0; command argv SHA-256
   8d425bd0b7e837656d8bb080b9c1785f101f308d23515d7029c1bb46ec58a572.
+
+- 2026-09-25T18:02:13+00:00: Signed protected merge published after exact-head review and all PR
+  checks passed.

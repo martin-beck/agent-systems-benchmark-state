@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1450](tasks/AR-1450-runtime-owned-local-replay-acquisition.md): Runtime-owned local replay acquisition factory | Keep local replay authority acquisition inside the runtime boundary. | Implement runtime-owned bootstrap/provisioner using existing LiveProviderProvisioner pattern; own relay/lease roots, tool pins, sandbox construction, attestation and teardown internally. | ar1450-replay-luna56 |
-| P0 | [AR-1451](tasks/AR-1451-central-orchestration-authority-design.md): Central orchestration authority contract and ASB redesign | Freeze one runtime-owned orchestration authority for every ASB run and attempt. | PR #329 exact head 979102f executes Draft 2020-12 schema validation for positive, mode, operation, and hostile vectors and uses immutable schema ID. Await final review and all exact-head checks; merge only when green. | coordinator-orchestration |
+| P0 | [AR-1451](tasks/AR-1451-central-orchestration-authority-design.md): Central orchestration authority contract and ASB redesign | Freeze one runtime-owned orchestration authority for every ASB run and attempt. | PR #329 merged as 071167d. Monitor seven exact-main post-merge workflows 36170798957, 36170798948, 36170798971, 36170798901, 36170798918, 36170798954, 36170798887 to terminal success; then release AR-1451 and promote AR-1452. | coordinator-orchestration |
 
 ## Open
 
