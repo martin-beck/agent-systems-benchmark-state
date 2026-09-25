@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1452-runtime-orchestration-service",
-  "checkpoint_commit": "3c8f7e41edf5c797ffb655588a14e9a059eab9aa",
+  "checkpoint_commit": "5f7bfcb97e5cc001f048162743fdeac27901b4f5",
   "claim_expires": "2026-09-25T22:11:44+00:00",
   "depends_on": [
     "AR-1357",
@@ -10,7 +10,7 @@
     "AR-1451"
   ],
   "id": "AR-1452",
-  "next_action": "Repair AR-1452 coverage on PR #330: hosted workspace coverage failed at 87.85% because asb-orchestrator is 52.13%; add meaningful lifecycle/recovery/barrier/cancellation/evidence tests without weakening floors, then rerun exact-head gates.",
+  "next_action": "Exact-head PR #330 coverage rerun at 5f7bfcb; focused asb-orchestrator llvm-cov passes 91.14% lines, workspace llvm-cov was retried twice but blocked by coordinator LOCK_TIMEOUT; rerun workspace coverage and hosted gates.",
   "observed_branch": "feature/ar-1452-runtime-orchestration-service",
   "observed_dirty": 0,
   "observed_head": "5f7bfcb97e5cc001f048162743fdeac27901b4f5",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 223,
+  "task_revision": 224,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T20:24:26+00:00",
+  "updated_at": "2026-09-25T20:25:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---
@@ -590,3 +590,10 @@ until the service can prove the complete authority chain.
 
 - 2026-09-25T20:24:26+00:00: Recorded command exit 0; command argv SHA-256
   759150beaca966faa2fe692c9da893291d5dc2828b6385569df827e07bad514f.
+
+- 2026-09-25T20:25:00+00:00: Added 11 meaningful lifecycle, validation, recovery, barrier,
+  cancellation, deadline, evidence-limit, capacity, serialization, source-mode, and store-path
+  tests. Focused cargo test passed 18 tests; focused cargo llvm-cov --package asb-orchestrator
+  --all-targets --fail-under-lines 90 passed at 91.14% lines. Workspace llvm-cov could not start
+  after two retries because handoffctl reported shared coordinator LOCK_TIMEOUT; no floor/config
+  changes. Signed+DCO commit 5f7bfcb pushed to PR branch.
