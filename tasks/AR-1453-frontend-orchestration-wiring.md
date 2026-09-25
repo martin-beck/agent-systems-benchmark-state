@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 96,
+  "task_revision": 97,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T21:58:44+00:00",
+  "updated_at": "2026-09-25T22:00:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
@@ -309,3 +309,6 @@ asb-control protocol after this AR is complete.
   success instead of AuthorityError::Timeout; required Rust check failed run 36194111089. Review
   also found P2: cancelled BTreeMap grows without removal. Worker assigned repair on existing
   replacement branch.
+
+- 2026-09-25T22:00:52+00:00: Recorded command exit 0; command argv SHA-256
+  1da6321d70012989f6655d997ef1afb35b40d703360ea84e5c78729bf3a4110d.
