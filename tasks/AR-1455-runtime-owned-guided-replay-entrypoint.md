@@ -10,15 +10,18 @@
   ],
   "id": "AR-1455",
   "next_action": "Promote after dependency verification; implement the central-service-owned guided local replay entrypoint, then publish a signed PR with focused and full gates.",
+  "observed_branch": "feature/ar-1455-runtime-owned-guided-replay-entrypoint",
+  "observed_dirty": 0,
+  "observed_head": "23b2fb5f241934168131efe6cd5173d5d316a857",
   "owner": "ar1455-guided-replay-luna56",
   "plan": "../plans/AR-1455-runtime-owned-guided-replay-entrypoint.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the runtime-owned guided local replay entrypoint needed by AR-1338.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Runtime-owned guided replay entrypoint",
-  "updated_at": "2026-09-25T22:48:12+00:00",
+  "updated_at": "2026-09-25T22:48:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1455-runtime-owned-guided-replay-entrypoint"
 }
 ---
