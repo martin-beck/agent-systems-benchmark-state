@@ -3,14 +3,14 @@
 Generated from local Git and GitHub. Do not edit.
 
 - Product remote main: `452f3ca29390ab37cf3aff8c813b92b54b163b20`
-- Local origin/main: `a5eb7e680a3c71813d9d1aae3328a385d6812a95`
+- Local origin/main: `452f3ca29390ab37cf3aff8c813b92b54b163b20`
 - Primary worktree head: `bd7d10d4a760a84fa42de2b1fa9e97e8ea85ba09`
 
 ## Open pull requests
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #327 | `feature/ar-1338-guided-asb-command-wrapper@4d42f598127d` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): extend guided ASB workflow |
+| #327 | `feature/ar-1338-guided-asb-command-wrapper@4d42f598127d` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): extend guided ASB workflow |
 
 ## Recent workflows
 
@@ -19,8 +19,8 @@ Generated from local Git and GitHub. Do not edit.
 | 36188339854 | `452f3ca29390` | push | Rust verification | in_progress:- |
 | 36188339764 | `452f3ca29390` | push | Huawei MIT source headers | completed:success |
 | 36188339707 | `452f3ca29390` | push | Emulated aarch64 portability | in_progress:- |
-| 36188339697 | `452f3ca29390` | push | Formal assurance | queued:- |
-| 36188339692 | `452f3ca29390` | push | Repository quality | in_progress:- |
+| 36188339697 | `452f3ca29390` | push | Formal assurance | in_progress:- |
+| 36188339692 | `452f3ca29390` | push | Repository quality | completed:failure |
 | 36188339686 | `452f3ca29390` | push | Hosted portability and native qualification | in_progress:- |
 | 36188339668 | `452f3ca29390` | push | Fault assurance | in_progress:- |
 | 36187401521 | `283291200b3b` | pull_request | Formal assurance | completed:success |
