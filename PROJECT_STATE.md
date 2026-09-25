@@ -10,20 +10,21 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #319 | `codex/ar-1419-literature-framework@6e30115e97e5` | `main` | UNSTABLE | QUEUED:, QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | Enforce literature framework selection boundaries |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 36121478220 | `6e30115e97e5` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 36121478199 | `6e30115e97e5` | pull_request | Repository quality | in_progress:- |
+| 36121478148 | `6e30115e97e5` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 36121478140 | `6e30115e97e5` | pull_request | Formal assurance | queued:- |
+| 36121478111 | `6e30115e97e5` | pull_request | Rust verification | in_progress:- |
+| 36121478018 | `6e30115e97e5` | pull_request | Huawei MIT source headers | in_progress:- |
+| 36121478010 | `6e30115e97e5` | pull_request | Fault assurance | queued:- |
+| 36121478009 | `6e30115e97e5` | pull_request | Agent Workflow Quality shadow | in_progress:- |
 | 36083606817 | `ede3f032428c` | push | Huawei MIT source headers | completed:success |
 | 36083606766 | `ede3f032428c` | push | Repository quality | completed:success |
 | 36083606748 | `ede3f032428c` | push | Rust verification | completed:success |
 | 36083606699 | `ede3f032428c` | push | Fault assurance | completed:success |
-| 36083606686 | `ede3f032428c` | push | Emulated aarch64 portability | completed:success |
-| 36083606680 | `ede3f032428c` | push | Hosted portability and native qualification | completed:success |
-| 36083606673 | `ede3f032428c` | push | Formal assurance | completed:success |
-| 36082816442 | `a7d041bcf97c` | pull_request | Huawei MIT source headers | completed:success |
-| 36082816440 | `a7d041bcf97c` | pull_request | Rust verification | completed:success |
-| 36082816435 | `a7d041bcf97c` | pull_request | Repository quality | completed:success |
-| 36082816425 | `a7d041bcf97c` | pull_request | Emulated aarch64 portability | completed:success |
-| 36082816424 | `a7d041bcf97c` | pull_request | Hosted portability and native qualification | completed:success |
