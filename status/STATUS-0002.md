@@ -114,7 +114,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md): Guided ASB command wrapper | coordinator-ar1338 | Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows. | Open after AR-1448 supplies the runtime-owned strict replay authority. Then extend the existing bounded easy path to catalog-driven setup/selection, plan/run/sweep, report/compare, record/replay, generated private files, documentation, and offline hostile tests; optional live-provider capture remains separate. |
+| P1 | [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md): Guided ASB command wrapper | coordinator-ar1338 | Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows. | PR #327 updated at exact head 76524a7 after focused/full CLI gates and independent review. Hosted exact-head checks and review remain pending. Guided setup now enforces catalog provider/model pairs and absolute non-traversal paths; plain CLI replay remains fail-closed until a runtime-owned authority acquisition successor is delivered. Do not merge until CI/review are green. |
 
 ### Blocked (68)
 
