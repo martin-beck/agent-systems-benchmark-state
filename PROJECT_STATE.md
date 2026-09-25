@@ -3,14 +3,14 @@
 Generated from local Git and GitHub. Do not edit.
 
 - Product remote main: `c3480e79ce3f914c2cc727a621af8c79dc36045e`
-- Local origin/main: `ede3f032428c366769f1bdd5bc0988b87a14de83`
+- Local origin/main: `c3480e79ce3f914c2cc727a621af8c79dc36045e`
 - Primary worktree head: `bd7d10d4a760a84fa42de2b1fa9e97e8ea85ba09`
 
 ## Open pull requests
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #320 | `feature/ar-1423-literature-reconciliation@ac10f5b0875d` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS: | feat(workloads): reconcile literature docs with registry |
+| #320 | `feature/ar-1423-literature-reconciliation@ac10f5b0875d` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | feat(workloads): reconcile literature docs with registry |
 
 ## Recent workflows
 
