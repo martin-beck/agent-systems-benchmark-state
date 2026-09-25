@@ -8,7 +8,7 @@
     "AR-1446"
   ],
   "id": "AR-1331",
-  "next_action": "Blocked after audit: existing runtime launch_factory tests pass, but no normal control/runtime source materializes ReplayLaunchAuthority inputs for asb replay. Successor AR-1448 owns that missing source; keep CLI replay fail-closed and optional live capture AR-1330 separate.",
+  "next_action": "Done via successor AR-1448: runtime-owned replay authority source merged and post-merge verified at f03d9e484d6ca73eacdbd5476980bf33ca737540. Preserve strict CLI-only fail-closed behavior and keep optional live capture AR-1330 separate.",
   "observed_branch": "feature/ar-1331-runtime-replay-launch-authority",
   "observed_dirty": 0,
   "observed_head": "2872a31f2ee90ac5df1a47203b2a618b1829cfec",
@@ -16,9 +16,9 @@
   "plan": "../plans/AR-1331.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "done",
   "summary": "Deliver the runtime-owned strict-replay launch authority required by the replay CLI contract.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Runtime-owned strict-replay launch authority",
   "updated_at": "2026-09-25T15:50:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1331-runtime-replay-launch-authority"
