@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1445-protected-main-topology-repair-openrouter",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-25T16:07:58+00:00",
+  "claim_expires": "2026-09-25T16:08:36+00:00",
   "depends_on": [],
   "id": "AR-1445",
   "next_action": "Create a signed+DCO reviewed descendant PR whose GitHub merge has two parents and preserves the exact current main tree/contract; require exact-head CI and all seven post-merge workflows before closing AR-1440.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the single-parent protected-main merge produced for the OpenRouter model refresh.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Protected-main topology repair for OpenRouter refresh",
-  "updated_at": "2026-09-25T14:07:58+00:00",
+  "updated_at": "2026-09-25T14:08:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1445-protected-main-topology-repair-openrouter"
 }
 ---
@@ -81,3 +81,5 @@ measurement evidence.
   96bdc606463622281bd8ba5d7838a9cb9445a0fb6a357a36d7a53a3fd3f43b0b.
 
 - 2026-09-25T14:07:58+00:00: Heartbeat by ar1445-topology-repair-luna56.
+
+- 2026-09-25T14:08:36+00:00: Heartbeat by ar1445-topology-repair-luna56.
