@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Close literature documentation gaps and enforce benchmark-versus-framework selection boundaries.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Literature framework boundaries",
-  "updated_at": "2026-09-25T09:51:54+00:00",
+  "updated_at": "2026-09-25T09:54:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1419"
 }
 ---
@@ -42,3 +42,6 @@ separate workload protocol and grader are proven.
   66c4fb8942c528702e635c4c8de99120961d203461e57c511bc8bbb2ba53b6dc.
 
 - 2026-09-25T09:51:54+00:00: Heartbeat by ar1419-framework-boundaries-luna56.
+
+- 2026-09-25T09:54:06+00:00: Recorded command exit 0; command argv SHA-256
+  7a58b355a8642c38aeb928751246c0355de19a42dce4768395e9afb2dc12541e.
