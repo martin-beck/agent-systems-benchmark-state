@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep local replay authority acquisition inside the runtime boundary.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Runtime-owned local replay acquisition factory",
-  "updated_at": "2026-09-25T19:40:29+00:00",
+  "updated_at": "2026-09-25T19:42:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1450-runtime-owned-local-replay-acquisition"
 }
 ---
@@ -176,3 +176,8 @@ Requirements:
 
 - 2026-09-25T19:40:29+00:00: Recorded command exit 0; command argv SHA-256
   428457ea9cc6a21bd46c5be6651ba2faccb5b0b07ddc2fd6f96eca730dea5ab7.
+
+- 2026-09-25T19:42:20+00:00: Full local quality coverage command passed: workspace line coverage
+  90.58%, critical asb-core 99.61%, asb-protocol 96.49%, asb-replay 96.47%. Focused runtime
+  all-target tests and Clippy remain green. Exact-head hosted checks are running on dc2e077; no
+  merge.
