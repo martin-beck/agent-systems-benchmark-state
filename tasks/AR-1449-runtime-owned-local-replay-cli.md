@@ -8,7 +8,7 @@
     "AR-1448"
   ],
   "id": "AR-1449",
-  "next_action": "Implement and verify a runtime-owned local replay authority acquisition path for the ordinary ASB CLI, then integrate it into AR-1338 without synthetic authority or native-host gating.",
+  "next_action": "Blocked: AR-1448 exposes issuance only and requires caller-built sandbox, lease, backend and relay. A runtime-owned provisioning successor is required; no product change was published.",
   "observed_branch": "feature/ar-1449-runtime-owned-local-replay-cli",
   "observed_dirty": 0,
   "observed_head": "f03d9e484d6ca73eacdbd5476980bf33ca737540",
@@ -24,7 +24,6 @@
   "worktree_key": "agent-systems-benchmark-ar-1449-runtime-owned-local-replay-cli"
 }
 ---
-
 AR-1338 exposes the guided replay route, but the normal argument-only CLI intentionally receives no ReplayLaunchAuthority. This successor must provide a runtime-owned local deterministic replay acquisition boundary using the existing AR-1448 source and AR-1443 replay contracts.
 
 Requirements:

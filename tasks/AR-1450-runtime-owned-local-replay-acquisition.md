@@ -7,7 +7,7 @@
     "AR-1448"
   ],
   "id": "AR-1450",
-  "next_action": "Implement a runtime-owned local replay acquisition factory that accepts only validated cassette identity and returns opaque one-shot authority.",
+  "next_action": "Blocked: a public factory accepting SandboxLaunchInput, ResourceLease and SandboxBackend would violate runtime ownership. Promote a reviewed runtime-owned provisioning design; no product change was published.",
   "observed_branch": "feature/ar-1450-runtime-owned-local-replay-acquisition",
   "observed_dirty": 0,
   "observed_head": "e4d2c821d160256df4e00df4f165aa69a54d69e6",
@@ -23,7 +23,6 @@
   "worktree_key": "agent-systems-benchmark-ar-1450-runtime-owned-local-replay-acquisition"
 }
 ---
-
 AR-1449 proved that the ordinary CLI cannot safely call AR-1448 because authority issuance still requires caller-built sandbox, lease, backend and relay objects. This task moves only their acquisition into asb-runtime.
 
 Requirements:
