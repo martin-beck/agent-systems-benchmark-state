@@ -13,7 +13,7 @@
     "AR-1393"
   ],
   "id": "AR-1433",
-  "next_action": "Promote and claim after the coordinator-approved dependency transition. Implement a runtime-owned deterministic mock-attempt backend and wire local run/sweep qualification without weakening ProviderEgressTarget or synthesizing LiveProviderAttempt authority. Preserve AR-1432's separate production live-bridge blocker.",
+  "next_action": "Done: signed+DCO PR #325 merged as 2872a31f with all seven exact-main workflows green and post-merge local-mock verification complete. Preserve AR-1432's separate optional production live-bridge blocker.",
   "observed_branch": "feature/ar-1433-runtime-mock-attempt-backend",
   "observed_dirty": 0,
   "observed_head": "4c970e08377bd8e94d50c92ef7e88fee9b85cd4d",
