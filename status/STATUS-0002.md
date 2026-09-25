@@ -97,11 +97,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1436](../tasks/AR-1436-local-guided-cli-wrapper.md): Local guided CLI wrapper | Unclaimed | Add a catalog-driven guided CLI wrapper for deterministic local mock qualification. | Promote and claim when completed dependencies are confirmed; implement the offline catalog-driven local mock wrapper and preserve AR-1329/AR-1338 blocked and AR-1332/AR-1333 planned. |
+| P1 | [AR-1436](../tasks/AR-1436-local-guided-cli-wrapper.md): Local guided CLI wrapper | codex-asb-ar1436-local-guided-luna56 | Add a catalog-driven guided CLI wrapper for deterministic local mock qualification. | Promote and claim when completed dependencies are confirmed; implement the offline catalog-driven local mock wrapper and preserve AR-1329/AR-1338 blocked and AR-1332/AR-1333 planned. |
 
 ### Blocked (66)
 
