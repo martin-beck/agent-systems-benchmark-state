@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1452-runtime-orchestration-service",
-  "checkpoint_commit": "7d256fef7e8beb39a8c36df2f94d1d309d46cd75",
+  "checkpoint_commit": "daf958aa46a7c77b7d58c36c53b2010da8749a72",
   "claim_expires": "2026-09-25T21:12:29+00:00",
   "depends_on": [
     "AR-1357",
@@ -10,7 +10,7 @@
     "AR-1451"
   ],
   "id": "AR-1452",
-  "next_action": "PR #330 exact head 7d256fe adds asb-orchestrator with closed requests, local/replay authority, live fail-closed source, idempotency, fenced handles, lifecycle, cancellation, and 5 tests. Await independent review and all exact-head checks.",
+  "next_action": "PR #330 is updated at exact head daf958a with durable journal, schema serde, bounded deterministic execution, and attempt-fenced cancellation. Await independent re-review and exact-head CI; do not merge until review is clean.",
   "observed_branch": "feature/ar-1452-runtime-orchestration-service",
   "observed_dirty": 0,
   "observed_head": "daf958aa46a7c77b7d58c36c53b2010da8749a72",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement one service-owned authority for admission, attempts, resources, and teardown.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Implement the runtime-owned ASB orchestration service",
-  "updated_at": "2026-09-25T18:31:08+00:00",
+  "updated_at": "2026-09-25T18:31:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1452-runtime-orchestration-service"
 }
 ---
@@ -111,3 +111,9 @@ until the service can prove the complete authority chain.
 
 - 2026-09-25T18:31:08+00:00: Recorded command exit 0; command argv SHA-256
   10ffdfa0d30719f50bf21fbc01c140375702acb07cf7c4b5d8dc85839df9e3bd.
+
+- 2026-09-25T18:31:50+00:00: Updated implementation: asb-store manifest/journal
+  intent-before-effects, recovery inspection, local mock/replay execute outcome, live fail-closed,
+  serde-compatible handles/status/events, request-bound output/event/artifact ceilings, attempt
+  fencing, and tests. cargo fmt, offline cargo test -p asb-orchestrator (5 passed), and offline
+  clippy -D warnings passed. Push verified at daf958a.
