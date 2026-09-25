@@ -9,7 +9,7 @@
   "id": "AR-1450",
   "next_action": "Await PR #328 exact-head checks and independent review at 30d477e; native evidence diagnostics now preserve exact contract wording and required replay-authority qualification.",
   "observed_branch": "feature/ar-1450-runtime-owned-local-replay-acquisition",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "30d477ee389ba1a1736810ecd1b2facab725cd92",
   "owner": "ar1450-replay-luna56",
   "plan": "../plans/AR-1450.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep local replay authority acquisition inside the runtime boundary.",
-  "task_revision": 114,
+  "task_revision": 115,
   "title": "Runtime-owned local replay acquisition factory",
-  "updated_at": "2026-09-25T20:37:58+00:00",
+  "updated_at": "2026-09-25T20:38:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1450-runtime-owned-local-replay-acquisition"
 }
 ---
