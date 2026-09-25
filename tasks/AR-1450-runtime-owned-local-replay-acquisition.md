@@ -9,17 +9,17 @@
   "id": "AR-1450",
   "next_action": "Run focused and full applicable gates on exact head b1429d7; verify legacy authority constructors and backend-substitution paths are inaccessible, then refresh PR #328 CI and obtain independent review before merge.",
   "observed_branch": "feature/ar-1450-runtime-owned-local-replay-acquisition",
-  "observed_dirty": 1,
-  "observed_head": "b1429d70a57e3d609d697a339875fb21b6299f37",
+  "observed_dirty": 0,
+  "observed_head": "185062d7345880d8d345172914cffc58585621a1",
   "owner": "ar1450-replay-luna56",
   "plan": "../plans/AR-1450.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep local replay authority acquisition inside the runtime boundary.",
-  "task_revision": 82,
+  "task_revision": 83,
   "title": "Runtime-owned local replay acquisition factory",
-  "updated_at": "2026-09-25T20:03:53+00:00",
+  "updated_at": "2026-09-25T20:04:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1450-runtime-owned-local-replay-acquisition"
 }
 ---
