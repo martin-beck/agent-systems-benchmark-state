@@ -114,6 +114,12 @@
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md): Guided ASB command wrapper | coordinator-ar1338 | Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows. | Promote and claim the ASB-only wrapper implementation. Extend the existing bounded easy path to catalog-driven setup/selection, plan/run/sweep, report/compare, record/replay, generated private files, documentation, and offline hostile tests; optional live-provider capture remains separate. |
 
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-1331](../tasks/AR-1331-runtime-replay-launch-authority.md): Runtime-owned strict-replay launch authority | Unclaimed | Deliver the runtime-owned strict-replay launch authority required by the replay CLI contract. | Promote and claim the ASB-local runtime replay authority repair. Provide runtime-owned ReplayLaunchAuthority for strict offline cassette replay, prove the CLI cannot fabricate one, and keep optional live capture AR-1330 separate. |
+
 ### Blocked (68)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -187,7 +193,7 @@
 | P2 | [AR-0705](../tasks/AR-0705-native-debian-capacity.md): Provide native Debian capacity | Unclaimed | Qualify booted Debian on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 Debian and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 
-### Planned (62)
+### Planned (61)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -241,7 +247,6 @@
 | P1 | [AR-1255](../tasks/AR-1255-bundled-mockagents-qemu-runner.md): Bundle MockAgents transport and QEMU runner | Unclaimed | Bundle MockAgents transport and QEMU runner. | Provision a digest-pinned bundled transport/QEMU runner and implement real in-container evidence. |
 | P1 | [AR-1257](../tasks/AR-1257-mockagents-qemu-image.md): Qualify digest-pinned multiarch MockAgents image | Unclaimed | Qualify a digest-pinned multiarch MockAgents OCI image for QEMU isolation. | Read the complete plan and verify official digest-pinned multiarch image, signature, license, and QEMU capability before any support claim. |
 | P1 | [AR-1330](../tasks/AR-1330-live-capture-sealed-cassette.md): Live provider capture into a sealed cassette | Unclaimed | Capture and seal a real authenticated provider exchange as a content-addressed cassette. | Invoke the existing StrictReplayService::capture_authenticated_connection boundary from the live run path and seal the sanitized, redacted provider exchange as a content-addressed cassette. |
-| P1 | [AR-1331](../tasks/AR-1331-runtime-replay-launch-authority.md): Runtime-owned strict-replay launch authority | Unclaimed | Deliver the runtime-owned strict-replay launch authority required by the replay CLI contract. | Promote and claim the ASB-local runtime replay authority repair. Provide runtime-owned ReplayLaunchAuthority for strict offline cassette replay, prove the CLI cannot fabricate one, and keep optional live capture AR-1330 separate. |
 | P1 | [AR-1332](../tasks/AR-1332-record-live-replay-offline.md): Record-live to replay-offline workflow | Unclaimed | Add the record-live then replay-offline end-to-end CLI workflow. | Add the record-live then replay-offline CLI workflow that seals cassettes from an opt-in live run and replays them strictly offline without provider fallback. |
 | P1 | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md): Multi-agent by workload benchmark campaign | Unclaimed | Run the multi-agent by workload benchmark campaign with per-tuple evidence and offline replay. | Add the benchmark campaign mode that runs the compatible agent matrix against the workload suite under one pinned free model, with per-tuple records, sealed cassettes and strict offline replay. |
 | P1 | [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md): Credential-free CI stage for the benchmark path | Unclaimed | Add the required credential-free CI stage for the complete benchmark path. | Add the required credential-free CI stage that exercises the complete benchmark path with loopback and synthetic doubles, no secrets, no egress and no network, keeping the 90&#37; coverage floor. |

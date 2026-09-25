@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1331.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Deliver the runtime-owned strict-replay launch authority required by the replay CLI contract.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Runtime-owned strict-replay launch authority",
-  "updated_at": "2026-09-22T13:39:37+00:00",
+  "updated_at": "2026-09-25T15:47:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1331-runtime-replay-launch-authority"
 }
 ---
@@ -43,3 +43,6 @@ and teardown, and fail-closed denial of unapproved external traffic remain requi
 contracts. Existing live-provider dependency edges describe production integration
 ordering only and must not be used to block local qualification or to claim external
 reachability.
+
+- 2026-09-25T15:47:55+00:00: ASB-local dependencies AR-1443 and AR-1446 are done; promote
+  runtime-owned strict replay authority. Optional live capture AR-1330 remains separate.
