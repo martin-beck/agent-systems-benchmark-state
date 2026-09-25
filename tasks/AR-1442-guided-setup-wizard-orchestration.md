@@ -11,18 +11,18 @@
   ],
   "id": "AR-1442",
   "next_action": "Promote after dependencies are done; implement the shared catalog-driven first-run and reconfiguration contract for CLI and TUI.",
-  "observed_branch": "main",
-  "observed_dirty": 7,
-  "observed_head": "bd7d10d4a760a84fa42de2b1fa9e97e8ea85ba09",
+  "observed_branch": "feature/ar-1442-guided-setup-wizard-orchestration",
+  "observed_dirty": 0,
+  "observed_head": "2872a31f2ee90ac5df1a47203b2a618b1829cfec",
   "owner": "coordinator-ar1442",
   "plan": "../plans/AR-1442.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Unify first-run and reconfiguration of agents, providers, auth methods, models and defaults in one guided flow.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Guided setup wizard orchestration",
-  "updated_at": "2026-09-25T15:22:19+00:00",
+  "updated_at": "2026-09-25T15:22:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1442"
 }
 ---
