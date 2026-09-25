@@ -242,7 +242,6 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1450-runtime-owned-local-replay-acquisition` | `feature/ar-1450-runtime-owned-local-replay-acquisition` | `283291200b3b` | 0 | behind 37, ahead 0 |
 | `agent-systems-benchmark-ar-1451-central-orchestration-authority-design` | `feature/ar-1451-central-orchestration-authority-design` | `979102f3b56d` | 0 | behind 44, ahead 0 |
 | `agent-systems-benchmark-ar-1452-runtime-orchestration-service` | `feature/ar-1452-runtime-orchestration-service` | `5f7bfcb97e5c` | 0 | behind 24, ahead 0 |
-| `agent-systems-benchmark-ar-1453-frontend-orchestration-wiring` | `feature/ar-1453-frontend-orchestration-wiring` | `37d9517317ed` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-ar-1454-protected-main-tree-repair-runtime-replay` | `repair/ar-1454-protected-main-tree-repair-runtime-replay` | `a8ad4224b4fb` | 0 | behind 8, ahead 0 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 977, ahead 0 |
 | `agent-systems-benchmark-ar0704-rebase-20260918` | `feature/ar0704-formal-rebase-20260918` | `c5a7b5a0448c` | 0 | behind 343, ahead 4 |
@@ -466,7 +465,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-merge251` | `DETACHED` | `551330b8ba75` | 0 | behind 296, ahead 0 |
 | `asb-merge253` | `DETACHED` | `8692729a58d1` | 0 | behind 302, ahead 0 |
 | `pr256-review` | `DETACHED` | `0c19231abaf4` | 0 | behind 269, ahead 0 |
-| `agent-systems-benchmark-state` | `main` | `c63e37555a26` | 0 | behind 0, ahead 3 |
+| `agent-systems-benchmark-state` | `main` | `5d79680002eb` | 0 | behind 0, ahead 4 |
 | `agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity` | `feature/ar-1308-full-exhaustive-qemu-capacity` | `659030fffd7e` | 0 | behind 11419, ahead 0 |
 | `agent-systems-benchmark-coordination-assurance` | `feature/coordination-assurance` | `adfde31ad408` | 0 | behind 39299, ahead 0 |
 | `agent-systems-benchmark-coordination-lint-regression` | `fix/handoffctl-apply-resume-lint` | `746042a0e55e` | 0 | behind 34042, ahead 0 |
