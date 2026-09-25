@@ -7,7 +7,7 @@
     "AR-1434"
   ],
   "id": "AR-1435",
-  "next_action": "Monitor PR #316 exact head dc52ca99aaea35468ba96405ce744941a8983699 until all hosted checks pass; then merge through local signed integration and run seven post-merge workflows.",
+  "next_action": "Merge PR #316 only after exact-head review is recorded; then verify seven exact-main post-merge workflows before release.",
   "observed_branch": "feature/ar-1435-local-mock-cli-wiring",
   "observed_dirty": 0,
   "observed_head": "dc52ca99aaea35468ba96405ce744941a8983699",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire deterministic local mock attempts into asb run and sweep configuration qualification.",
-  "task_revision": 94,
+  "task_revision": 95,
   "title": "Local mock CLI wiring",
-  "updated_at": "2026-09-25T00:28:03+00:00",
+  "updated_at": "2026-09-25T00:28:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1435-local-mock-cli-wiring"
 }
 ---
@@ -314,3 +314,10 @@ it must not contact OpenRouter or any external provider, mint
 
 - 2026-09-25T00:28:03+00:00: Recorded command exit 0; command argv SHA-256
   01438ea8324a9901d49db57587e6b71402d8bb694973b404cc4d64bf5780892b.
+
+- 2026-09-25T00:28:43+00:00: Independent post-fix review passed at exact head dc52ca99: clean tree,
+  diff-check, four SSH-signed commits, four matching DCO trailers, and privacy scan with no
+  credentials/authorization/response-body leakage. PR #316 base 4736db7 and head dc52ca99 are exact;
+  all 12 hosted checks pass and merge state is CLEAN. Prior Rust failures remain preserved:
+  generation-fence assertion race fixed by removing non-contractual active assertion; hostile
+  validation ordering fixed to classify malformed requests before valid-request inactivity.
