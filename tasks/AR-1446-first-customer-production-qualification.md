@@ -1,6 +1,6 @@
 ---
 {
-  "branch": "qualification/ar-1446-first-customer-production",
+  "branch": "main",
   "checkpoint_commit": "",
   "claim_expires": "2026-09-25T17:08:30+00:00",
   "depends_on": [
@@ -23,7 +23,7 @@
   "task_revision": 5,
   "title": "First-customer production qualification",
   "updated_at": "2026-09-25T15:38:30+00:00",
-  "worktree_key": "agent-systems-benchmark-ar-1446-first-customer-production"
+  "worktree_key": "agent-systems-benchmark"
 }
 ---
 
