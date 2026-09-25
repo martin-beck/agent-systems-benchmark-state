@@ -2,7 +2,7 @@
 {
   "branch": "feature/native-openeuler-capacity",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-25T15:40:23+00:00",
   "depends_on": [
     "AR-0704",
     "AR-0201",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/native-openeuler-capacity",
   "observed_dirty": 0,
   "observed_head": "7390bcd2082700d0c9f04409732b48de8e9f8628",
-  "owner": "",
+  "owner": "ar0706_capacity_requal_luna56",
   "plan": "../plans/AR-0706.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional.",
-  "task_revision": 115,
+  "task_revision": 116,
   "title": "Provide native openEuler capacity",
-  "updated_at": "2026-09-25T13:40:20+00:00",
+  "updated_at": "2026-09-25T13:40:23+00:00",
   "worktree_key": "agent-systems-benchmark-native-openeuler-capacity"
 }
 ---
@@ -377,3 +377,5 @@ native identity, kernel/distribution provenance, cleanup, cost/availability boun
 
 - 2026-09-25T13:40:20+00:00: Harden newly provisioned openEuler VM runner to exact custom labels
   before CI attachment
+
+- 2026-09-25T13:40:23+00:00: Claimed by ar0706_capacity_requal_luna56.
