@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1443](tasks/AR-1443-guided-benchmark-capture-comparison.md): Guided benchmark capture and comparison | Make benchmark, offline capture/replay, and result comparison a single guided workflow. | Promote after AR-1442, AR-1447 and AR-1437 are released; implement and qualify the ASB-only selection-driven benchmark, local capture/replay, and comparison journey. Optional live capture AR-1332/AR-1333 remains separate. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -100,7 +106,6 @@ Never edit this file directly.
 | P0 | [AR-1309](tasks/AR-1309-reviewed-capacity-or-model-reduction.md): Reviewed full-exhaustive capacity or model-reduction contract | Provide a reviewed successor contract after terminal full-exhaustive capacity OOM. | Remain planned until the coordinator reviews the AR-1308 terminal OOM evidence and selects a separately scoped capacity contract or model-reduction profile; do not rerun or widen AR-1307 limits. | - |
 | P0 | [AR-1370](tasks/AR-1370-runner-authority-materialization.md): Runner authority materialization | Inject existing authenticated certificate authority and runtime enrollment material into RunnerBackend/Catalog for receipt issuance. | Remain planned until AR-1369 dependency is resolved; then add authenticated RunnerBackend/Catalog authority injection and receipt-source tests without synthetic authority. | - |
 | P0 | [AR-1375](tasks/AR-1375-live-control-dispatch-source.md): Runtime-owned live control dispatch source | Supply authenticated runtime control receipts to production live dispatch. | Wait for AR-1374 blocker resolution, then implement the runtime-owned authenticated control adapter for CLI live dispatch. | - |
-| P0 | [AR-1443](tasks/AR-1443-guided-benchmark-capture-comparison.md): Guided benchmark capture and comparison | Make benchmark, offline capture/replay, and result comparison a single guided workflow. | Promote after AR-1442, AR-1447 and AR-1437 are released; implement and qualify the ASB-only selection-driven benchmark, local capture/replay, and comparison journey. Optional live capture AR-1332/AR-1333 remains separate. | - |
 | P0 | [AR-1444](tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Make the complete install-to-comparison journey a cross-repository release qualification gate. | Promote after AR-1443 and paired asb-tui AR-1327 are done; run the disposable cross-repository journey and publish the support/release gate. | - |
 | P0 | [AR-1446](tasks/AR-1446-first-customer-production-qualification.md): First-customer production qualification | Qualify ASB in a disposable first-customer production-like environment. | Remain planned until AR-0903, AR-1336, AR-1441, AR-1442, and AR-1443 are independently released; deterministic runtime mock dependency AR-1433 is complete. Then qualify the ASB-only disposable first-customer environment and publish the bounded readiness report. The cross-repository AR-1444/asb-tui gate is separate; AR-1329 optional external-provider integration must not block this local production-like gate. | - |
 | P1 | [AR-0808](tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. | - |
