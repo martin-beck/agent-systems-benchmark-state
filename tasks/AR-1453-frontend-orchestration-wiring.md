@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1453-frontend-orchestration-wiring",
-  "checkpoint_commit": "4db5c4d781a27401ebe895c94400325b7c3647e6",
+  "checkpoint_commit": "082b0624abe2944bb46a00330bccf84a655f7ae7",
   "claim_expires": "2026-09-25T23:14:03+00:00",
   "depends_on": [
     "AR-1452"
   ],
   "id": "AR-1453",
-  "next_action": "Lifecycle repair remains incomplete; do not push PR #332. Strict replay/deadline tests pass, but isolated active-worker and unix-disconnect tests still end in non-terminal/NeedsReconciliation state, and production idempotency test times out at 30s. Diagnose why completed strict replay catalog state is not preserved across worker/recovery and why production wait hangs; then rerun focused/full gates.",
+  "next_action": "Push signed commit 082b0624abe2944bb46a00330bccf84a655f7ae7 through handoffctl for fresh PR checks and review; do not merge until exact-head CI and review pass.",
   "observed_branch": "feature/ar-1453-frontend-orchestration-wiring",
   "observed_dirty": 0,
   "observed_head": "082b0624abe2944bb46a00330bccf84a655f7ae7",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 87,
+  "task_revision": 88,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T21:50:19+00:00",
+  "updated_at": "2026-09-25T21:50:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
@@ -279,3 +279,9 @@ asb-control protocol after this AR is complete.
 
 - 2026-09-25T21:50:06+00:00: Recorded command exit 0; command argv SHA-256
   ce5c6d95697a4f394a04b1ed95fd29ad0e31626250cb43454d3d8191b6ee7224.
+
+- 2026-09-25T21:50:29+00:00: Durable orchestrator status repair committed signed+DCO.
+  status_for_idempotency_key now rehydrates terminal lifecycle state; control worker, refresh,
+  reconcile, and reopen project it. Focused active-worker, unix-disconnect, and production
+  idempotency tests pass; all 110 asb-cli lib tests, workflow provenance tests, rustfmt, and clippy
+  -D warnings pass. Historical commits 6bf03b5 and 4db5c4d preserved.

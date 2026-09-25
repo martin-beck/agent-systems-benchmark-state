@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1453](tasks/AR-1453-frontend-orchestration-wiring.md): Route ASB frontends through central orchestration | Make CLI and control use the central service for every run lifecycle. | Lifecycle repair remains incomplete; do not push PR #332. Strict replay/deadline tests pass, but isolated active-worker and unix-disconnect tests still end in non-terminal/NeedsReconciliation state, and production idempotency test times out at 30s. Diagnose why completed strict replay catalog state is not preserved across worker/recovery and why production wait hangs; then rerun focused/full gates. | ar1453-frontend-orchestration-luna56 |
+| P0 | [AR-1453](tasks/AR-1453-frontend-orchestration-wiring.md): Route ASB frontends through central orchestration | Make CLI and control use the central service for every run lifecycle. | Push signed commit 082b0624abe2944bb46a00330bccf84a655f7ae7 through handoffctl for fresh PR checks and review; do not merge until exact-head CI and review pass. | ar1453-frontend-orchestration-luna56 |
 
 ## Open
 
