@@ -119,7 +119,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1450](../tasks/AR-1450-runtime-owned-local-replay-acquisition.md): Runtime-owned local replay acquisition factory | ar1450-replay-luna56 | Keep local replay authority acquisition inside the runtime boundary. | Run focused and full applicable gates on exact head b1429d7; verify legacy authority constructors and backend-substitution paths are inaccessible, then refresh PR #328 CI and obtain independent review before merge. |
+| P0 | [AR-1450](../tasks/AR-1450-runtime-owned-local-replay-acquisition.md): Runtime-owned local replay acquisition factory | ar1450-replay-luna56 | Keep local replay authority acquisition inside the runtime boundary. | Run full runtime and workspace gates on exact head 185062d; refresh PR #328 exact-head CI, then obtain independent review before merge. |
 | P0 | [AR-1452](../tasks/AR-1452-runtime-orchestration-service.md): Implement the runtime-owned ASB orchestration service | coordinator-orchestrator-impl | Implement one service-owned authority for admission, attempts, resources, and teardown. | PR #330 exact head 3c8f7e4 includes the policy-license correction after hosted cargo-deny rejected Unicode-3.0; await exact-head CI and independent review. |
 
 ### Open (1)

@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1450-runtime-owned-local-replay-acquisition",
-  "checkpoint_commit": "b1429d70a57e3d609d697a339875fb21b6299f37",
+  "checkpoint_commit": "185062d7345880d8d345172914cffc58585621a1",
   "claim_expires": "2026-09-25T21:44:43+00:00",
   "depends_on": [
     "AR-1448"
   ],
   "id": "AR-1450",
-  "next_action": "Run focused and full applicable gates on exact head b1429d7; verify legacy authority constructors and backend-substitution paths are inaccessible, then refresh PR #328 CI and obtain independent review before merge.",
+  "next_action": "Run full runtime and workspace gates on exact head 185062d; refresh PR #328 exact-head CI, then obtain independent review before merge.",
   "observed_branch": "feature/ar-1450-runtime-owned-local-replay-acquisition",
   "observed_dirty": 0,
   "observed_head": "185062d7345880d8d345172914cffc58585621a1",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep local replay authority acquisition inside the runtime boundary.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Runtime-owned local replay acquisition factory",
-  "updated_at": "2026-09-25T20:04:11+00:00",
+  "updated_at": "2026-09-25T20:04:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1450-runtime-owned-local-replay-acquisition"
 }
 ---
@@ -232,3 +232,7 @@ Requirements:
 
 - 2026-09-25T20:04:11+00:00: Recorded command exit 0; command argv SHA-256
   a32c66f397c1b8766afbcad9ae8c63c9ca5406422d5f40f652f687ef9cf61695.
+
+- 2026-09-25T20:04:38+00:00: Integration tests now use the public SandboxBackend::spawn_launch
+  boundary; legacy authority issuance and backend substitution remain crate-private. Focused sandbox
+  compile passes. Remote branch resolves to exact head 185062d.
