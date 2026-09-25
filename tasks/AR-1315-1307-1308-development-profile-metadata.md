@@ -8,15 +8,18 @@
   ],
   "id": "AR-1315",
   "next_action": "Promote after AR-1314 is done; update AR-1307/AR-1308 wording and validators to permit diagnostic unsigned fixtures while retaining signed full qualification gates.",
+  "observed_branch": "repair/ar-1315-formal-development-profile-wording",
+  "observed_dirty": 0,
+  "observed_head": "7390bcd2082700d0c9f04409732b48de8e9f8628",
   "owner": "ar1315_formal_profile_metadata_luna56",
   "plan": "../plans/AR-1315.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Align formal-runner task metadata with the explicit unsigned development profile.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Formal runner development-profile metadata repair",
-  "updated_at": "2026-09-25T11:21:39+00:00",
+  "updated_at": "2026-09-25T11:21:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1315-formal-development-profile-metadata"
 }
 ---
