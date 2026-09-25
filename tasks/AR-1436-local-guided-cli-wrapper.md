@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a catalog-driven guided CLI wrapper for deterministic local mock qualification.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Local guided CLI wrapper",
-  "updated_at": "2026-09-25T00:54:50+00:00",
+  "updated_at": "2026-09-25T00:55:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1436-local-guided-cli-wrapper"
 }
 ---
@@ -118,3 +118,6 @@ weakening. Require focused/full/review/PR/seven post-merge gates.
   environmental test contention, but provenance also changed after the final clippy fix (actual CLI
   digest ab38037e...). Refreshed provenance to ab38037e in signed+DCO ae48046; run provenance only
   after all source edits are final.
+
+- 2026-09-25T00:55:37+00:00: Recorded command exit 0; command argv SHA-256
+  2bdf430229143084d857d5758bce071c8591b34978263e4c2ff495a656da7663.
