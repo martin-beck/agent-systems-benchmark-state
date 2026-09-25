@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1440-openrouter-model-refresh-local-measurements",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "5871de7cad4ee7e496ffce1c5e1fe51862660bfc",
   "claim_expires": "2026-09-25T16:13:57+00:00",
   "depends_on": [
     "AR-1328",
@@ -9,7 +9,7 @@
     "AR-1437"
   ],
   "id": "AR-1440",
-  "next_action": "Post-merge policy run 36144090160 failed because PR #323 was squash-merged into single-parent 84b587e; create/merge an explicit two-parent topology-repair PR, rerun all exact-main gates, verify green, then release AR-1440.",
+  "next_action": "Release complete after PR #323 product head 8d2a99d and two-parent topology repair PR #324 merge 5871de7cad4ee7e496ffce1c5e1fe51862660bfc; seven exact-main workflows all green. GitHub has no independent review record for PR #324; preserved as an evidence gap, not fabricated.",
   "observed_branch": "feature/ar-1440-openrouter-model-refresh-local-measurements",
   "observed_dirty": 0,
   "observed_head": "8d2a99d3fbaa3e4d86e3e54c7f82c735ff466fdd",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Refresh the stale OpenRouter free-model pin and qualify local-only benchmark measurements.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Refresh OpenRouter model pin and local measurements",
-  "updated_at": "2026-09-25T14:13:57+00:00",
+  "updated_at": "2026-09-25T14:22:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1440-openrouter-model-refresh-local-measurements"
 }
 ---
@@ -121,3 +121,13 @@ tests for stale/mismatched model identities and unavailable pins.
   product defect identified.
 
 - 2026-09-25T14:13:57+00:00: Heartbeat by ar1440-model-refresh-luna56.
+
+- 2026-09-25T14:22:14+00:00: Completion evidence: cohere/north-mini-code:free dated 2026-09-25
+  selected from live catalog; local operator-only real-fixture campaign original.bug-fix,
+  original.build-repair, original.repository-navigation x codex/opendesk, six HTTP 200 successes.
+  Redacted catalog digest e834d287378fc7b1b19cd93cf5fa28fc2c753d80a6da05e8f3d2ac45b1af56c7 and
+  selection digest c32e935425c0bc68ce54703262d4e43c50074adea9a54e890bac7c507d16ec1d; no
+  secret/prompt/response persisted. PR #323 single-parent 84b587e caused policy run 36144090160
+  failure; PR #324 merged non-squash with parents 84b587e and 10686db. Exact-main green:
+  36145976341, 36145976337, 36145976326, 36145976266, 36145976239, 36145976238, 36145976223.
+  LOCK_TIMEOUT publication attempts recovered by retry.
