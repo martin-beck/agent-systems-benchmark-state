@@ -1,11 +1,11 @@
 ---
 {
   "branch": "repair/ar-1445-protected-main-topology-repair-openrouter",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "5871de7cad4ee7e496ffce1c5e1fe51862660bfc",
   "claim_expires": "2026-09-25T16:12:14+00:00",
   "depends_on": [],
   "id": "AR-1445",
-  "next_action": "Create a signed+DCO reviewed descendant PR whose GitHub merge has two parents and preserves the exact current main tree/contract; require exact-head CI and all seven post-merge workflows before closing AR-1440.",
+  "next_action": "PR #324 merged as two-parent 5871de7cad4ee7e496ffce1c5e1fe51862660bfc; monitor seven exact-main workflows 36145976341, 36145976337, 36145976326, 36145976266, 36145976239, 36145976238, 36145976223 to terminal success. Record that GitHub has no independent review record, then update/release AR-1440 only after all seven pass.",
   "observed_branch": "repair/ar-1445-protected-main-topology-repair-openrouter",
   "observed_dirty": 0,
   "observed_head": "10686db7ceb5f023aaef13cd1ed1b6cc58118a55",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the single-parent protected-main merge produced for the OpenRouter model refresh.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Protected-main topology repair for OpenRouter refresh",
-  "updated_at": "2026-09-25T14:12:54+00:00",
+  "updated_at": "2026-09-25T14:13:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1445-protected-main-topology-repair-openrouter"
 }
 ---
@@ -98,3 +98,8 @@ measurement evidence.
 
 - 2026-09-25T14:12:54+00:00: Recorded command exit 0; command argv SHA-256
   2153747b4362d8ea21043e80706f0431d1220e10db45ba6da26564753d2c0d77.
+
+- 2026-09-25T14:13:47+00:00: Material coordination failure: two handoffctl run attempts hit
+  LOCK_TIMEOUT while state was contended; push and PR creation completed after retry. PR #324 merged
+  non-squash with two parents; no independent GitHub review record is present and remains explicit
+  evidence gap.
