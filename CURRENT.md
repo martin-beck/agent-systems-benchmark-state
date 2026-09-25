@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1448](tasks/AR-1448-runtime-replay-authority-source.md): Runtime replay authority source | Materialize runtime-owned strict replay authority for normal CLI replay. | Promote and claim this dependency-ready successor. Implement the bounded control/runtime materializer without exposing replay authority to the CLI. | - |
+| P0 | [AR-1448](tasks/AR-1448-runtime-replay-authority-source.md): Runtime replay authority source | Materialize runtime-owned strict replay authority for normal CLI replay. | Claim an isolated worktree and implement the missing bounded control/runtime materializer: compose validated replay launch input, benchmark lease, cassette binding, runtime token, and backend internally, then inject only opaque authority into asb-cli. Preserve CLI-only fail-closed behavior and strict offline denial. | - |
 | P1 | [AR-1338](tasks/AR-1338-guided-asb-command-wrapper.md): Guided ASB command wrapper | Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows. | Open after AR-1448 supplies the runtime-owned strict replay authority. Then extend the existing bounded easy path to catalog-driven setup/selection, plan/run/sweep, report/compare, record/replay, generated private files, documentation, and offline hostile tests; optional live-provider capture remains separate. | - |
 
 ## Blocked
