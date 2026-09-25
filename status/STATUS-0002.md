@@ -109,7 +109,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1440](../tasks/AR-1440-openrouter-model-refresh-local-measurements.md): Refresh OpenRouter model pin and local measurements | ar1440-model-refresh-luna56 | Refresh the stale OpenRouter free-model pin and qualify local-only benchmark measurements. | Refresh the dated free-model pin from a live catalog; update every identity and test; retain provider-catalog/provider-plan as the sole provider/model/agent selection authority with stale and mixed-selection rejection; run bounded operator-only local measurements without CI network or persisted credentials/prompts/responses; publish exact-head evidence. |
+| P1 | [AR-1440](../tasks/AR-1440-openrouter-model-refresh-local-measurements.md): Refresh OpenRouter model pin and local measurements | ar1440-model-refresh-luna56 | Refresh the stale OpenRouter free-model pin and qualify local-only benchmark measurements. | PR #323 is published at signed head f2d4999; wait for all exact-head required checks, independently review, merge only green, then verify post-merge and release AR with catalog and measurement evidence. |
 
 ### Blocked (68)
 
@@ -517,3 +517,4 @@
 | P1 | [AR-1263](../tasks/AR-1263-sandbox-scope-classification-stability.md): Stabilize sandbox scope classification gate | Unclaimed | Stabilize intermittent sandbox scope classification in the quality gate. | Complete: feature 0acbc1d tree equals signed protected main 69e8b064; AR-1264 recovery and all seven exact-main workflows SUCCESS. Preserve PR205 and recovery traceability. |
 | P1 | [AR-1288](../tasks/AR-1288-certificate-chain-authz.md): Runtime certificate issuance and chain validation | Unclaimed | Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814. | Preserve merged code; repair protected-main DCO integrity forward-only, rerun exact-main gates, then release. |
 | P1 | [AR-1303](../tasks/AR-1303-hosted-platform-diagnostics.md): Privacy-safe hosted platform failure diagnostics | Unclaimed | Add privacy-safe fixed diagnostics for hosted platform evidence failures. | PR #220 merged after exact-head review; verify resulting main post-merge workflows and retain terminal workflow evidence. Diagnostics remain opt-in and privacy-safe; no gate weakening. |
+| P1 | [AR-1311](../tasks/AR-1311-planned-task-metadata-schema-repair.md): Repair planned-task metadata schema contradiction | Unclaimed | Repair planned-task metadata that violates the current live-observation schema. | Claim this metadata-only repair, remove unsupported empty live-observation fields from planned AR-1309, regenerate views, and rerun schema and state gates. Do not alter AR-1309 meaning or claim implementation. |

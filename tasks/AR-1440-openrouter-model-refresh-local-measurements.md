@@ -9,7 +9,7 @@
     "AR-1437"
   ],
   "id": "AR-1440",
-  "next_action": "Refresh the dated free-model pin from a live catalog; update every identity and test; retain provider-catalog/provider-plan as the sole provider/model/agent selection authority with stale and mixed-selection rejection; run bounded operator-only local measurements without CI network or persisted credentials/prompts/responses; publish exact-head evidence.",
+  "next_action": "PR #323 is published at signed head f2d4999; wait for all exact-head required checks, independently review, merge only green, then verify post-merge and release AR with catalog and measurement evidence.",
   "observed_branch": "feature/ar-1440-openrouter-model-refresh-local-measurements",
   "observed_dirty": 0,
   "observed_head": "f2d4999ef09e3ebe3da720209a36954e6090f4b9",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Refresh the stale OpenRouter free-model pin and qualify local-only benchmark measurements.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Refresh OpenRouter model pin and local measurements",
-  "updated_at": "2026-09-25T13:39:48+00:00",
+  "updated_at": "2026-09-25T13:40:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1440-openrouter-model-refresh-local-measurements"
 }
 ---
@@ -87,3 +87,9 @@ tests for stale/mismatched model identities and unavailable pins.
 
 - 2026-09-25T13:39:48+00:00: Recorded command exit 0; command argv SHA-256
   35abcb769b06f6997f763aac99d009d76a673c57e27aeb6d8fa5c49501611c17.
+
+- 2026-09-25T13:40:07+00:00: Catalog-bound operator campaign passed: original.bug-fix,
+  original.build-repair, original.repository-navigation; selected agents codex and opendesk;
+  provider openrouter; model cohere/north-mini-code:free; all 6 trials HTTP 200 with prompt tokens
+  41/44/56, completion tokens 128, timings 1413-4415ms; catalog and selection digests recorded in
+  terminal only; no prompts/responses/credentials persisted.
