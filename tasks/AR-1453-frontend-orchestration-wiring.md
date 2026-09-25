@@ -7,7 +7,7 @@
     "AR-1452"
   ],
   "id": "AR-1453",
-  "next_action": "Repair P1 cancellation mutex deadlock: do not hold orchestration lock across execute_plan; add in-flight cancel regression evidence, then rerun exact-head gates and independent review. Preserve all prior failures.",
+  "next_action": "Repair in-flight cancellation mutex P1 and nondeterministic state-root ownership test failure at hosted head 88fd1067; preserve prior evidence, then rerun focused/full and exact-head gates with independent review.",
   "observed_branch": "feature/ar-1453-frontend-orchestration-wiring",
   "observed_dirty": 0,
   "observed_head": "88fd1067ae7e04da0cc641b033bdcc32b63dce8b",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make CLI and control use the central service for every run lifecycle.",
-  "task_revision": 101,
+  "task_revision": 102,
   "title": "Route ASB frontends through central orchestration",
-  "updated_at": "2026-09-25T22:03:29+00:00",
+  "updated_at": "2026-09-25T22:05:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1453-frontend-orchestration-wiring"
 }
 ---
@@ -325,3 +325,8 @@ asb-control protocol after this AR is complete.
   cannot interrupt in-flight execution because ControlCall::Run holds orchestration mutex across
   service.execute_plan while Cancel requires same lock. This is a P1 lifecycle regression; worker
   assigned repair.
+
+- 2026-09-25T22:05:36+00:00: Hosted Rust run 36194577726 failed
+  state_root_is_exclusive_and_uncertain_restart_fails_closed: first ControlBackend::new unexpectedly
+  reports state root already owned at control.rs:6737. Deadline test now passes; cancellation P1
+  remains open. Worker assigned diagnosis.

@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1453](tasks/AR-1453-frontend-orchestration-wiring.md): Route ASB frontends through central orchestration | Make CLI and control use the central service for every run lifecycle. | Repair P1 cancellation mutex deadlock: do not hold orchestration lock across execute_plan; add in-flight cancel regression evidence, then rerun exact-head gates and independent review. Preserve all prior failures. | ar1453-frontend-orchestration-luna56 |
+| P0 | [AR-1453](tasks/AR-1453-frontend-orchestration-wiring.md): Route ASB frontends through central orchestration | Make CLI and control use the central service for every run lifecycle. | Repair in-flight cancellation mutex P1 and nondeterministic state-root ownership test failure at hosted head 88fd1067; preserve prior evidence, then rerun focused/full and exact-head gates with independent review. | ar1453-frontend-orchestration-luna56 |
 
 ## Open
 
