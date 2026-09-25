@@ -11,18 +11,18 @@
   ],
   "id": "AR-1446",
   "next_action": "Promote and claim this ASB-only disposable first-customer qualification gate. Verify clean install/bootstrap, setup/reconfiguration, local benchmark matrix, strict offline replay, recovery, cleanup, rollback, and bounded readiness evidence. AR-0903's broad release package and AR-1336's optional live-provider documentation remain separate; AR-1444/asb-tui and AR-1329 external-provider integration must not block this gate.",
-  "observed_branch": "",
-  "observed_dirty": 0,
-  "observed_head": "",
+  "observed_branch": "main",
+  "observed_dirty": 7,
+  "observed_head": "bd7d10d4a760a84fa42de2b1fa9e97e8ea85ba09",
   "owner": "coordinator-ar1446",
   "plan": "../plans/AR-1446.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify ASB in a disposable first-customer production-like environment.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "First-customer production qualification",
-  "updated_at": "2026-09-25T15:38:51+00:00",
+  "updated_at": "2026-09-25T15:39:03+00:00",
   "worktree_key": "agent-systems-benchmark"
 }
 ---
