@@ -10,20 +10,21 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #327 | `feature/ar-1338-guided-asb-command-wrapper@328f768221cc` | `main` | UNSTABLE | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(cli): extend guided ASB workflow |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 36160797121 | `328f768221cc` | pull_request | Fault assurance | queued:- |
+| 36160797048 | `328f768221cc` | pull_request | Repository quality | in_progress:- |
+| 36160797017 | `328f768221cc` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 36160797010 | `328f768221cc` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 36160797008 | `328f768221cc` | pull_request | Rust verification | in_progress:- |
+| 36160796992 | `328f768221cc` | pull_request | Formal assurance | in_progress:- |
+| 36160796991 | `328f768221cc` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 36160796987 | `328f768221cc` | pull_request | Huawei MIT source headers | completed:success |
 | 36159240852 | `f03d9e484d6c` | push | Repository quality | completed:success |
 | 36159235957 | `f03d9e484d6c` | push | Emulated aarch64 portability | completed:success |
 | 36159235905 | `f03d9e484d6c` | push | Formal assurance | completed:success |
 | 36159235851 | `f03d9e484d6c` | push | Huawei MIT source headers | completed:success |
-| 36159235797 | `f03d9e484d6c` | push | Rust verification | completed:success |
-| 36159235664 | `f03d9e484d6c` | push | Fault assurance | completed:success |
-| 36159235616 | `f03d9e484d6c` | push | Hosted portability and native qualification | completed:success |
-| 36158100415 | `1b70b4691a44` | pull_request | Huawei MIT source headers | completed:success |
-| 36158100377 | `1b70b4691a44` | pull_request | Formal assurance | completed:success |
-| 36158100373 | `1b70b4691a44` | pull_request | Fault assurance | completed:success |
-| 36158100355 | `1b70b4691a44` | pull_request | Repository quality | completed:success |
-| 36158100337 | `1b70b4691a44` | pull_request | Agent Workflow Quality shadow | completed:success |
