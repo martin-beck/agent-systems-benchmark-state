@@ -8,7 +8,7 @@
     "AR-1446"
   ],
   "id": "AR-1331",
-  "next_action": "Promote and claim the ASB-local runtime replay authority repair. Provide runtime-owned ReplayLaunchAuthority for strict offline cassette replay, prove the CLI cannot fabricate one, and keep optional live capture AR-1330 separate.",
+  "next_action": "Blocked after audit: existing runtime launch_factory tests pass, but no normal control/runtime source materializes ReplayLaunchAuthority inputs for asb replay. Successor AR-1448 owns that missing source; keep CLI replay fail-closed and optional live capture AR-1330 separate.",
   "observed_branch": "feature/ar-1331-runtime-replay-launch-authority",
   "observed_dirty": 0,
   "observed_head": "2872a31f2ee90ac5df1a47203b2a618b1829cfec",
