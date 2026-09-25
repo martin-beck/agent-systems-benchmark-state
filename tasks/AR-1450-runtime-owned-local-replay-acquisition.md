@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1450-runtime-owned-local-replay-acquisition",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "dc2e077de96133cd1ef180e5a883faff0e5a9411",
   "claim_expires": "2026-09-25T21:37:39+00:00",
   "depends_on": [
     "AR-1448"
   ],
   "id": "AR-1450",
-  "next_action": "Implement runtime-owned bootstrap/provisioner using existing LiveProviderProvisioner pattern; own relay/lease roots, tool pins, sandbox construction, attestation and teardown internally.",
+  "next_action": "Independently review PR #328 at dc2e077, then wait for exact-head checks; rework any review or gate failures before merge.",
   "observed_branch": "feature/ar-1450-runtime-owned-local-replay-acquisition",
   "observed_dirty": 0,
   "observed_head": "dc2e077de96133cd1ef180e5a883faff0e5a9411",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Keep local replay authority acquisition inside the runtime boundary.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Runtime-owned local replay acquisition factory",
-  "updated_at": "2026-09-25T19:37:39+00:00",
+  "updated_at": "2026-09-25T19:38:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1450-runtime-owned-local-replay-acquisition"
 }
 ---
@@ -167,3 +167,9 @@ Requirements:
   b4a7af114128f94f16245e5b0a8bd9555fe62b177b7ec122d25f47b12ed7054a.
 
 - 2026-09-25T19:37:39+00:00: Heartbeat by ar1450-replay-luna56.
+
+- 2026-09-25T19:38:06+00:00: Published signed+DCO dc2e077: runtime bootstrap now validates private
+  roots and executable digests before effects, carries pinned supervisor/sidecar/adapter commands,
+  uses the sandbox child relay endpoint, and exposes typed validated cassette identity. Focused
+  runtime all-target tests and Clippy pass; push succeeded. Coverage/exact-head requalification
+  remains pending; no merge.

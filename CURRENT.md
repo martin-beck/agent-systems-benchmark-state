@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1450](tasks/AR-1450-runtime-owned-local-replay-acquisition.md): Runtime-owned local replay acquisition factory | Keep local replay authority acquisition inside the runtime boundary. | Implement runtime-owned bootstrap/provisioner using existing LiveProviderProvisioner pattern; own relay/lease roots, tool pins, sandbox construction, attestation and teardown internally. | ar1450-replay-luna56 |
+| P0 | [AR-1450](tasks/AR-1450-runtime-owned-local-replay-acquisition.md): Runtime-owned local replay acquisition factory | Keep local replay authority acquisition inside the runtime boundary. | Independently review PR #328 at dc2e077, then wait for exact-head checks; rework any review or gate failures before merge. | ar1450-replay-luna56 |
 | P0 | [AR-1452](tasks/AR-1452-runtime-orchestration-service.md): Implement the runtime-owned ASB orchestration service | Implement one service-owned authority for admission, attempts, resources, and teardown. | PR #330 exact head abf10ac adds source-level cancel hook, server-issued attempt-ID binding for local mock authority, and elapsed timeout failure/teardown checks. Await exact-head CI and independent review; runtime adapters must still honor bounded cancellation for hard timeout enforcement. | coordinator-orchestrator-impl |
 
 ## Open
