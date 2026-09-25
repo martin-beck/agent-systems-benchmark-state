@@ -9,7 +9,7 @@
   "id": "AR-1438",
   "next_action": "Promote and repair the trusted development-host validation so it passes under the approved NoNewPrivileges runner hardening without weakening isolation or skipping lifecycle checks.",
   "observed_branch": "repair/ar-1438-hardened-trusted-runner-validation",
-  "observed_dirty": 2,
+  "observed_dirty": 3,
   "observed_head": "058b6b3208972f89226439f4d642019726beaad7",
   "owner": "ar1438_runner_validation_luna56",
   "plan": "../plans/AR-1438-hardened-trusted-runner-validation.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make protected trusted-runner lifecycle validation compatible with hardened rootless execution.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Hardened trusted-runner validation repair",
-  "updated_at": "2026-09-25T12:13:40+00:00",
+  "updated_at": "2026-09-25T12:13:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1438-hardened-trusted-runner-validation"
 }
 ---
