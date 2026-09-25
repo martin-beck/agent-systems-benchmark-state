@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1331-runtime-replay-launch-authority",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-25T17:47:57+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1443",
     "AR-1446"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1331-runtime-replay-launch-authority",
   "observed_dirty": 0,
   "observed_head": "2872a31f2ee90ac5df1a47203b2a618b1829cfec",
-  "owner": "coordinator-ar1331",
+  "owner": "",
   "plan": "../plans/AR-1331.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Deliver the runtime-owned strict-replay launch authority required by the replay CLI contract.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Runtime-owned strict-replay launch authority",
-  "updated_at": "2026-09-25T15:50:08+00:00",
+  "updated_at": "2026-09-25T15:50:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1331-runtime-replay-launch-authority"
 }
 ---
@@ -60,3 +60,11 @@ reachability.
 
 - 2026-09-25T15:50:08+00:00: Recorded command exit 0; command argv SHA-256
   0a04c68761f71e965b15beaf5cbdcf057bc08c233a31fd47310d9e8b1b3479f4.
+
+- 2026-09-25T15:50:40+00:00: Audit complete on protected merge
+  2872a31f2ee90ac5df1a47203b2a618b1829cfec: launch_factory focused tests 11/11 plus one
+  capability-gated ignore passed; CLI replay fail-closed test passed. Existing ReplayLaunchFactory
+  requires runtime-owned token, SandboxLaunchInput, benchmark ResourceLease, cassette binding, and
+  backend, but no normal control/runtime source materializes these for asb replay. No safe product
+  mutation made. Successor AR-1448 created for the missing authority source; preserve strict offline
+  denial.
