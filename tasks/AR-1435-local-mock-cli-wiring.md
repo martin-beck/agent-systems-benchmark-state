@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire deterministic local mock attempts into asb run and sweep configuration qualification.",
-  "task_revision": 121,
+  "task_revision": 122,
   "title": "Local mock CLI wiring",
-  "updated_at": "2026-09-25T00:39:37+00:00",
+  "updated_at": "2026-09-25T00:39:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1435-local-mock-cli-wiring"
 }
 ---
@@ -401,3 +401,6 @@ it must not contact OpenRouter or any external provider, mint
   d016d476317eccef95d48ac8c39cb7004b3efcf15c444b129c246a3bce129ff0.
 
 - 2026-09-25T00:39:37+00:00: Heartbeat by codex-asb-ar1435-local-mock-luna56.
+
+- 2026-09-25T00:39:54+00:00: Recorded command exit 0; command argv SHA-256
+  bdb5485f8eb7a5569b891d28b2011154da56a092aafc206da2a882b5a003f48b.
