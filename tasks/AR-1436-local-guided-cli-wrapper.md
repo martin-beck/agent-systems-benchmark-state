@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1436-local-guided-cli-wrapper",
-  "checkpoint_commit": "ae48046d82efecb02ff2f54addb2d322b71339a7",
+  "checkpoint_commit": "ae48046d980237d078dd2a5aa155400d20330059",
   "claim_expires": "2026-09-25T02:43:20+00:00",
   "depends_on": [
     "AR-1435",
     "AR-1328"
   ],
   "id": "AR-1436",
-  "next_action": "Rerun serial full tests and parallel applicable gates at ae48046; then independent review and exact-head PR.",
+  "next_action": "Complete independent exact-head review with corrected commit IDs; then publish exact-head PR.",
   "observed_branch": "feature/ar-1436-local-guided-cli-wrapper",
   "observed_dirty": 0,
   "observed_head": "ae48046d980237d078dd2a5aa155400d20330059",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a catalog-driven guided CLI wrapper for deterministic local mock qualification.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Local guided CLI wrapper",
-  "updated_at": "2026-09-25T00:59:11+00:00",
+  "updated_at": "2026-09-25T00:59:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1436-local-guided-cli-wrapper"
 }
 ---
@@ -145,3 +145,8 @@ weakening. Require focused/full/review/PR/seven post-merge gates.
 
 - 2026-09-25T00:59:11+00:00: Recorded command exit 1; command argv SHA-256
   ef4f054ead02151d61872b693b6e93e55373cf9b15abb03438d03411b2f9b846.
+
+- 2026-09-25T00:59:41+00:00: Independent review attempt recorded exit 1 because the operator
+  supplied four mistyped/truncated commit IDs to git verify-commit; the first commit verified before
+  those IDs failed. No product or gate issue. Correct commit IDs are now taken directly from git log
+  and review is being rerun.
