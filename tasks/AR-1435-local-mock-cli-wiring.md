@@ -9,7 +9,7 @@
   "id": "AR-1435",
   "next_action": "Confirm PR #316 exact head and all hosted checks; do not merge until every check is green, then local signed integration and seven post-merge workflows.",
   "observed_branch": "feature/ar-1435-local-mock-cli-wiring",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "23a7bdbd9a8eb61db68c11360472603158d02be4",
   "owner": "codex-asb-ar1435-local-mock-luna56",
   "plan": "../plans/AR-1435-local-mock-cli-wiring.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire deterministic local mock attempts into asb run and sweep configuration qualification.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Local mock CLI wiring",
-  "updated_at": "2026-09-25T00:08:39+00:00",
+  "updated_at": "2026-09-25T00:08:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1435-local-mock-cli-wiring"
 }
 ---
