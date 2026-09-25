@@ -12,16 +12,16 @@
   "next_action": "Publish PR from exact clean head, obtain independent review and required CI, then merge and complete post-merge assurance workflows.",
   "observed_branch": "feature/ar-1423-literature-reconciliation",
   "observed_dirty": 0,
-  "observed_head": "ac10f5b0875d986b0dcff112a3aada96ebeff3f6",
+  "observed_head": "fe02c9ccb4e079b8fffd52604e52d6af939ae992",
   "owner": "ar1423_literature_reconciliation_luna56",
   "plan": "../plans/AR-1423-literature-docs-registry-reconciliation.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Reconcile all literature benchmark mentions with strict registry identities and framework boundaries.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Exhaustive literature docs-to-registry reconciliation",
-  "updated_at": "2026-09-25T10:31:50+00:00",
+  "updated_at": "2026-09-25T10:32:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1423-literature-reconciliation"
 }
 ---
