@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Freeze one runtime-owned orchestration authority for every ASB run and attempt.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Central orchestration authority contract and ASB redesign",
-  "updated_at": "2026-09-25T18:00:46+00:00",
+  "updated_at": "2026-09-25T18:01:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1451-central-orchestration-authority-design"
 }
 ---
@@ -127,3 +127,6 @@ provider access.
 
 - 2026-09-25T18:00:46+00:00: Recorded command exit 1; command argv SHA-256
   e220e21ac7005bcbe593fec0d4b71a0e79dfb459c6d0c760709e1778ab62b571.
+
+- 2026-09-25T18:01:07+00:00: Recorded command exit 0; command argv SHA-256
+  d52a2d8e868988b02dd7fed311daeb847162c5fc2cf0cb6c7ea4f965810621c3.
