@@ -9,7 +9,7 @@
     "AR-1403"
   ],
   "id": "AR-1423",
-  "next_action": "Repair declared branch/worktree metadata, then independently review ac10f5b, open exact-head PR, run required CI and post-merge workflows.",
+  "next_action": "Publish PR from exact clean head, obtain independent review and required CI, then merge and complete post-merge assurance workflows.",
   "observed_branch": "feature/ar-1423-literature-reconciliation",
   "observed_dirty": 0,
   "observed_head": "ac10f5b0875d986b0dcff112a3aada96ebeff3f6",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Reconcile all literature benchmark mentions with strict registry identities and framework boundaries.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Exhaustive literature docs-to-registry reconciliation",
-  "updated_at": "2026-09-25T10:29:32+00:00",
+  "updated_at": "2026-09-25T10:29:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1423-literature-reconciliation"
 }
 ---
@@ -48,3 +48,6 @@ workloads.
 - 2026-09-25T10:27:33+00:00: Heartbeat by ar1423_literature_reconciliation_luna56.
 
 - 2026-09-25T10:29:32+00:00: Heartbeat by ar1423_literature_reconciliation_luna56.
+
+- 2026-09-25T10:29:40+00:00: Checkpoint ac10f5b is signed+DCO; focused tests, registry validation,
+  parity checks, and diff review passed.

@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1423](tasks/AR-1423-literature-docs-registry-reconciliation.md): Exhaustive literature docs-to-registry reconciliation | Reconcile all literature benchmark mentions with strict registry identities and framework boundaries. | Repair declared branch/worktree metadata, then independently review ac10f5b, open exact-head PR, run required CI and post-merge workflows. | ar1423_literature_reconciliation_luna56 |
+| P1 | [AR-1423](tasks/AR-1423-literature-docs-registry-reconciliation.md): Exhaustive literature docs-to-registry reconciliation | Reconcile all literature benchmark mentions with strict registry identities and framework boundaries. | Publish PR from exact clean head, obtain independent review and required CI, then merge and complete post-merge assurance workflows. | ar1423_literature_reconciliation_luna56 |
 
 ## Blocked
 
