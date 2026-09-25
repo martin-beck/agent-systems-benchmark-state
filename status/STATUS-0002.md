@@ -98,11 +98,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1419](../tasks/AR-1419-literature-framework-boundaries.md): Literature framework boundaries | Unclaimed | Close literature documentation gaps and enforce benchmark-versus-framework selection boundaries. | Promote after the interactive and tool-use workload audits; reconcile every benchmark/framework mention in docs and prove the selectable catalog has no omitted or falsely executable entry. |
+| P1 | [AR-1419](../tasks/AR-1419-literature-framework-boundaries.md): Literature framework boundaries | ar1419-framework-boundaries-luna56 | Close literature documentation gaps and enforce benchmark-versus-framework selection boundaries. | Promote after the interactive and tool-use workload audits; reconcile every benchmark/framework mention in docs and prove the selectable catalog has no omitted or falsely executable entry. |
 
 ### Blocked (66)
 
