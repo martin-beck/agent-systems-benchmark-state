@@ -99,7 +99,13 @@
 
 ## Complete AR inventory
 
-### Blocked (68)
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
+
+### Blocked (67)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -170,7 +176,6 @@
 | P1 | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md): Local-mock run execution with optional live-provider integration | Unclaimed | Qualify asb run and sweep through a mandatory deterministic local mock; retain optional fail-closed live integration. | BLOCKED for optional production integration only: preserve the deterministic local sub-1B/LiteLLM-compatible mock path as the mandatory development and CI qualification route. A future runtime-owned LiveProviderRuntimeService may resolve pinned provider policy, enrolled credentials, attested namespace/relay, ResourceLease, SandboxBackend, and one LiveProviderAttempt per scheduler attempt, with cancellation teardown; external reachability is optional non-gating evidence. Preserve NetworkPolicy::Deny and direct/alternate egress denial. |
 | P1 | [AR-1354](../tasks/AR-1354-runtime-enrollment-implementation.md): Runtime enrollment implementation | Unclaimed | Implement config-backed runtime-owned enrollment for live CLI dispatch. | BLOCKED on an attested runtime enrollment source: asb-runtime must receive an authority-free enrollment request and obtain concrete public target(s), pinned tool attestations, lease root, and relay root from a runtime/control-owned record; do not expose these asb-cli inputs. Add a signed/attested record transport or coordinator-owned runtime enrollment AR, then implement acquire_from_enrollment and CLI dispatch with positive/negative tests. |
 | P2 | [AR-0705](../tasks/AR-0705-native-debian-capacity.md): Provide native Debian capacity | Unclaimed | Qualify booted Debian on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 Debian and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
-| P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 
 ### Planned (63)
 
@@ -511,4 +516,3 @@
 | P1 | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md): Runtime-owned live-provider egress backend | Unclaimed | Implement the runtime-owned authenticated backend for explicit live provider egress. | AR-1339 backend merged and verified at protected main; AR-1340 owns namespace-bound child handoff and AR-1329 consumes it for final live CLI integration. |
 | P1 | [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md): Attested live-relay namespace and child handoff | Unclaimed | Bind the live provider relay to an attested child namespace and integrate it without weakening offline or replay denial. | SECURITY HOLD: AR-1341 must add runtime-observed child namespace attestation and copied/stale/mismatch denial before AR-1340 may be released or AR-1329 advanced. Do not release on green post-merge CI alone; continue collecting post-merge evidence for merge 3406faae. |
 | P1 | [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md): Runtime-owned live relay factory and CLI integration | Unclaimed | Create the runtime-owned relay factory and opaque launch context required for safe live CLI execution. | PR #259 merged at d24221731891fb39f56118be9c5ae51364824517; monitor all seven exact-head post-merge workflows and release AR-1342 done only after every one is green, then promote/advance AR-1329. |
-| P1 | [AR-1344](../tasks/AR-1344-runtime-cli-acquisition-contract.md): Runtime-owned CLI live acquisition contract | Unclaimed | Add the runtime-owned API and CLI integration needed for safe live-provider attempts. | Exact uncovered-line classification recorded: launch_factory misses include replay backend/authority alternate branches and LiveProviderAttempt lifecycle paths; live_relay misses are error conversion/display plus handoff/forwarding deadline branches; provider_egress misses are address-policy edge branches and relay timeout/error paths; live_namespace misses are gate/runtime observation and rebind branches; sandbox misses are live attestation/spawn/ownership teardown branches. Reachable negative/accessor branches have been covered; remaining live/sandbox branches are capability-gated or require a broad dedicated repair AR. Do not exclude files or weaken 90&#37;; PR remains unmergeable. |

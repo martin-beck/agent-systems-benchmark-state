@@ -17,11 +17,11 @@
   "plan": "../plans/AR-0706.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Provide native openEuler capacity",
-  "updated_at": "2026-09-25T11:54:52+00:00",
+  "updated_at": "2026-09-25T12:44:16+00:00",
   "worktree_key": "agent-systems-benchmark-native-openeuler-capacity"
 }
 ---
@@ -56,3 +56,6 @@ native identity, kernel/distribution provenance, cleanup, cost/availability boun
   only with authorized disposable openEuler capacity, credential isolation, cost/quota bounds, or an
   approved native runner; containerized openEuler is a non-native alternative and cannot satisfy
   native gates.
+
+- 2026-09-25T12:44:16+00:00: Requalify after local runner and QEMU capacity audit requested by
+  coordinator
