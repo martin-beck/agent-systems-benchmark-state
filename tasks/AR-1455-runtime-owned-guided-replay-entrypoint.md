@@ -1,0 +1,28 @@
+---
+{
+  "branch": "feature/ar-1455-runtime-owned-guided-replay-entrypoint",
+  "checkpoint_commit": "",
+  "claim_expires": "",
+  "depends_on": [
+    "AR-1448",
+    "AR-1450",
+    "AR-1453"
+  ],
+  "id": "AR-1455",
+  "next_action": "Promote after dependency verification; implement the central-service-owned guided local replay entrypoint, then publish a signed PR with focused and full gates.",
+  "owner": "",
+  "plan": "../plans/AR-1455-runtime-owned-guided-replay-entrypoint.md",
+  "priority": "P0",
+  "schema_version": 1,
+  "status": "planned",
+  "summary": "Provide the runtime-owned guided local replay entrypoint needed by AR-1338.",
+  "task_revision": 1,
+  "title": "Runtime-owned guided replay entrypoint",
+  "updated_at": "2026-09-25T22:43:00+00:00",
+  "worktree_key": "agent-systems-benchmark-ar-1455-runtime-owned-guided-replay-entrypoint"
+}
+---
+
+AR-1338 remains fail-closed until this entrypoint is reviewed and merged. The
+central orchestration service is the sole authority for provisioning and
+lifecycle; the guided wrapper is only a bounded client.
