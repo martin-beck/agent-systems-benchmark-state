@@ -120,7 +120,7 @@
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1450](../tasks/AR-1450-runtime-owned-local-replay-acquisition.md): Runtime-owned local replay acquisition factory | ar1450-replay-luna56 | Keep local replay authority acquisition inside the runtime boundary. | Implement runtime-owned bootstrap/provisioner using existing LiveProviderProvisioner pattern; own relay/lease roots, tool pins, sandbox construction, attestation and teardown internally. |
-| P0 | [AR-1452](../tasks/AR-1452-runtime-orchestration-service.md): Implement the runtime-owned ASB orchestration service | coordinator-orchestrator-impl | Implement one service-owned authority for admission, attempts, resources, and teardown. | PR #330 exact head 6c5771e fences restart preparation behind RecoveryDecision, restores next IDs from durable runs, adds schema event identity, and preserves restart idempotency. Await independent re-review and exact-head CI; local deterministic adapter and explicit reconciliation remain adapter/service follow-up boundaries. |
+| P0 | [AR-1452](../tasks/AR-1452-runtime-orchestration-service.md): Implement the runtime-owned ASB orchestration service | coordinator-orchestrator-impl | Implement one service-owned authority for admission, attempts, resources, and teardown. | PR #330 exact head 0e9e1e1 removes obsolete deny.toml skip that caused Repository quality bans failure. Await new exact-head CI and independent re-review; do not merge while local execution/reconciliation P1s remain. |
 
 ### Open (1)
 
