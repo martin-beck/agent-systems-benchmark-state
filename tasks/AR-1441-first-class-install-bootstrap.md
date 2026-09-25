@@ -8,7 +8,7 @@
     "AR-0822"
   ],
   "id": "AR-1441",
-  "next_action": "Promote and claim against the completed ASB install/lifecycle primitives AR-0821 and AR-0822; implement and qualify the ASB CLI/runtime-bundle clean-install/bootstrap path. Preserve AR-0823 as the separate cross-repository/UI audit.",
+  "next_action": "Done: ASB-only bootstrap and lifecycle qualification passed against protected merge 2872a31f; preserve AR-0823 as the separate cross-repository/UI audit.",
   "observed_branch": "feature/ar-1441-first-class-install-bootstrap",
   "observed_dirty": 0,
   "observed_head": "2872a31f2ee90ac5df1a47203b2a618b1829cfec",
