@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1454-protected-main-tree-repair-runtime-replay",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-25T23:57:51+00:00",
   "depends_on": [
     "AR-1451",
     "AR-1452"
@@ -12,15 +12,15 @@
   "observed_branch": "repair/ar-1454-protected-main-tree-repair-runtime-replay",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "ar1454-tree-repair-luna56",
   "plan": "../plans/AR-1454.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair the protected-main tree mismatch after the runtime replay merge.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Protected-main tree-equality repair for runtime replay",
-  "updated_at": "2026-09-25T20:57:31+00:00",
+  "updated_at": "2026-09-25T20:57:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1454-protected-main-tree-repair-runtime-replay"
 }
 ---
@@ -43,3 +43,5 @@ waived. Keep asb-tui out of scope.
 
 - 2026-09-25T20:57:31+00:00: Post-merge policy rejected PR #328 because stale topic tree differed
   from protected-main merge tree; current-main descendant repair is dependency-safe.
+
+- 2026-09-25T20:57:51+00:00: Claimed by ar1454-tree-repair-luna56.
