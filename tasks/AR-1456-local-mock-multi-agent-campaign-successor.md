@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Local/mock multi-agent campaign successor",
-  "updated_at": "2026-09-26T18:08:55+00:00",
+  "updated_at": "2026-09-26T18:09:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1456-local-mock-multi-agent-campaign-successor"
 }
 ---
@@ -285,3 +285,6 @@ for local development, CI, or this AR's completion.
   --nocapture` => 1/1. An earlier filter omitted `--lib` and ran 0 tests (exit 0), not treated as
   evidence. Exact-head workflow rerun command `gh run rerun 36261183708 --failed` was blocked by
   handoffctl shared-lock timeout after 10s and did not mutate GitHub; retry required.
+
+- 2026-09-26T18:09:03+00:00: Recorded command exit 0; command argv SHA-256
+  4cb36a94fc376eac12573381e0bfd15a7f568c9bd57157de3f8209279610ab5a.
