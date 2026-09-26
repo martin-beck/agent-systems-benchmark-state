@@ -475,8 +475,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-merge251` | `DETACHED` | `551330b8ba75` | 0 | behind 324, ahead 0 |
 | `asb-merge253` | `DETACHED` | `8692729a58d1` | 0 | behind 330, ahead 0 |
 | `pr256-review` | `DETACHED` | `0c19231abaf4` | 0 | behind 297, ahead 0 |
-| `agent-systems-benchmark-state` | `main` | `725686c95b8c` | 4 | behind 0, ahead 0 |
-| changed files | - | - | - | `PROJECT_STATE.md`, `WORKTREES.md`, `plans/AR-1469-ar1392-protected-topology-repair.md`, `tasks/AR-1469-ar1392-protected-topology-repair.md` |
+| `agent-systems-benchmark-state` | `main` | `cb09bcf54a67` | 2 | behind 0, ahead 1 |
+| changed files | - | - | - | `plans/AR-1469-ar1392-protected-topology-repair.md`, `tasks/AR-1469-ar1392-protected-topology-repair.md` |
 | `agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity` | `feature/ar-1308-full-exhaustive-qemu-capacity` | `659030fffd7e` | 0 | behind 13068, ahead 0 |
 | `agent-systems-benchmark-coordination-assurance` | `feature/coordination-assurance` | `adfde31ad408` | 0 | behind 40948, ahead 0 |
 | `agent-systems-benchmark-coordination-lint-regression` | `fix/handoffctl-apply-resume-lint` | `746042a0e55e` | 0 | behind 35691, ahead 0 |
