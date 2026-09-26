@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the runtime-owned guided local replay entrypoint needed by AR-1338.",
-  "task_revision": 56,
+  "task_revision": 57,
   "title": "Runtime-owned guided replay entrypoint",
-  "updated_at": "2026-09-26T15:35:56+00:00",
+  "updated_at": "2026-09-26T15:36:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1455-runtime-owned-guided-replay-entrypoint"
 }
 ---
@@ -192,3 +192,6 @@ lifecycle; the guided wrapper is only a bounded client.
   exactly one dependency line. Signed+DCO commit 43eaa29 refreshes formal/Cargo.lock; formal test
   suite now passes all 41 tests. Remote PR branch verifies exact head
   43eaa298272ec2e615ae6c09b67ac459846ef65d.
+
+- 2026-09-26T15:36:03+00:00: Recorded command exit 8; command argv SHA-256
+  feb6f75920378f715aea2cb32658e47debb03dc2b56957fe625dba6a1cb661ab.
