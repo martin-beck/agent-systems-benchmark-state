@@ -10,11 +10,11 @@
   "plan": "../plans/AR-1464.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provisioned exact signed source, reviewed Ubuntu image, 64 GiB overlay and canonical lock; signed preflight remains blocked only by exhausted host swap and unavailable exact seed digest.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Formal capacity and signed-input provisioning repair",
-  "updated_at": "2026-09-26T21:24:35+00:00",
+  "updated_at": "2026-09-26T21:32:21+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1464-formal-capacity-input-provisioning"
 }
 ---
@@ -150,3 +150,7 @@ scope.
   b3383756b5cd357f58d923216effea33be35b793034de321c3c9ce460ece4b28 is unavailable; existing fixtures
   do not match. No synthetic seed, swap mutation, QEMU boot or TLC run. Next action: obtain exact
   seed and safe swap capacity, rerun preflight, then hand off to AR-1308.
+
+- 2026-09-26T21:32:21+00:00: Coordinator resumed bounded swap-recovery audit; only AR-specific stale
+  swap files may be reclaimed after ownership and process checks, and exact seed remains
+  fail-closed.
