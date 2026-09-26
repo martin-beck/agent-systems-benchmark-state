@@ -139,7 +139,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1469](../tasks/AR-1469-ar1392-protected-topology-repair.md): AR-1392 protected-main topology repair | ar1332_record_replay_luna56 | Repair the single-parent protected merge for AR-1392 without changing its reviewed implementation. | Promote and claim the topology repair, create the reviewed two-parent protected merge, and rerun all exact-head and post-merge gates. |
+| P0 | [AR-1469](../tasks/AR-1469-ar1392-protected-topology-repair.md): AR-1392 protected-main topology repair | ar1332_record_replay_luna56 | Repair the single-parent protected merge for AR-1392 without changing its reviewed implementation. | Publish PR from exact empty signed repair commit; require exact-head checks, then normal non-squash merge. |
 
 ### Blocked (70)
 

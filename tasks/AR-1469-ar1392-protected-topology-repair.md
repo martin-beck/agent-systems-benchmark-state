@@ -1,11 +1,11 @@
 ---
 {
   "branch": "repair/ar-1469-ar1392-protected-topology-repair",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "beb399681ad6ebcd9274f6fcea3b471da715afd8",
   "claim_expires": "2026-09-27T02:36:41+00:00",
   "depends_on": [],
   "id": "AR-1469",
-  "next_action": "Promote and claim the topology repair, create the reviewed two-parent protected merge, and rerun all exact-head and post-merge gates.",
+  "next_action": "Publish PR from exact empty signed repair commit; require exact-head checks, then normal non-squash merge.",
   "observed_branch": "repair/ar-1469-ar1392-protected-topology-repair",
   "observed_dirty": 0,
   "observed_head": "beb399681ad6ebcd9274f6fcea3b471da715afd8",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the single-parent protected merge for AR-1392 without changing its reviewed implementation.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "AR-1392 protected-main topology repair",
-  "updated_at": "2026-09-26T23:38:05+00:00",
+  "updated_at": "2026-09-26T23:38:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1469-ar1392-protected-topology-repair"
 }
 ---
@@ -61,3 +61,11 @@ green exact-head checks; the failed squash topology remains part of the record.
 
 - 2026-09-26T23:38:05+00:00: Recorded command exit 0; command argv SHA-256
   ffd7e5d5789959be7c0d0a2c0cd99a5e2a2123e1f22a4236fb05fa642fc48f76.
+
+- 2026-09-26T23:38:32+00:00: Setup evidence: initial worktree existence check exited 1 because
+  declared path was absent; bounded show-ref check exited 128 because origin repair branch did not
+  yet exist. Provisioned isolated worktree from reviewed AR-1392 head 78ab92b; created empty
+  signed+DCO commit beb399681ad6ebcd9274f6fcea3b471da715afd8. git diff 78ab92b..HEAD is empty,
+  preserving implementation tree exactly. Normal two-parent merge is possible: PR branch will be
+  based on reviewed tree with empty repair commit; GitHub merge must use --merge, never squash,
+  yielding current main first parent and repair topic second parent.
