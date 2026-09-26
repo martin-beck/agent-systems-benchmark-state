@@ -9,7 +9,7 @@
     "AR-1447"
   ],
   "id": "AR-1456",
-  "next_action": "Run cargo fmt --all check, full asb-cli offline tests, provenance/privacy gates, then independent review and signed+DCO commit.",
+  "next_action": "Rerun cargo fmt --all check, then full asb-cli offline tests and provenance/privacy gates; independently review and sign commit.",
   "observed_branch": "DETACHED",
   "observed_dirty": 2,
   "observed_head": "28730b61572f463e9cf1e6b5f1cf20fd198ef7e8",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Local/mock multi-agent campaign successor",
-  "updated_at": "2026-09-26T17:51:49+00:00",
+  "updated_at": "2026-09-26T17:52:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1456-local-mock-multi-agent-campaign-successor"
 }
 ---
@@ -99,3 +99,8 @@ for local development, CI, or this AR's completion.
 
 - 2026-09-26T17:51:49+00:00: Recorded command exit 1; command argv SHA-256
   95e75af2f17ad457c403e824091094cd2bbccb54310101200517a063b063bc98.
+
+- 2026-09-26T17:52:05+00:00: Recorded formatting gate failure: `cargo fmt --all ... -- --check`
+  identified one rustfmt-only line wrapping in the newly added hostile test; no semantic failure.
+  Corrected that formatting in the isolated worktree. Next action: rerun fmt check, then full
+  offline CLI/provenance gates.
