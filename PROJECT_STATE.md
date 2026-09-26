@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #327 | `feature/ar-1338-guided-asb-command-wrapper@36d94ff1237c` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | feat(cli): extend guided ASB workflow |
+| #327 | `feature/ar-1338-guided-asb-command-wrapper@36d94ff1237c` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | feat(cli): extend guided ASB workflow |
 | #332 | `feature/ar-1453-frontend-orchestration-wiring@082b0624abe2` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: route ASB frontends through central orchestration |
 
 ## Recent workflows
@@ -24,7 +24,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36255450657 | `36d94ff1237c` | pull_request | Repository quality | in_progress:- |
 | 36255450656 | `36d94ff1237c` | pull_request | Huawei MIT source headers | completed:success |
 | 36255450651 | `36d94ff1237c` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 36255450646 | `36d94ff1237c` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 36255450646 | `36d94ff1237c` | pull_request | Hosted portability and native qualification | completed:success |
 | 36254857071 | `69f3d3800be0` | pull_request | Emulated aarch64 portability | completed:success |
 | 36254857064 | `69f3d3800be0` | pull_request | Rust verification | completed:failure |
 | 36254857037 | `69f3d3800be0` | pull_request | Repository quality | completed:failure |
