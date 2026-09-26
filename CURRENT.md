@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1444](tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Make the complete install-to-comparison journey a cross-repository release qualification gate. | Promote after AR-1443 and paired asb-tui AR-1327 are done; run the disposable cross-repository journey and publish the support/release gate. | ar1444-journey-qualification-luna56 |
+| P0 | [AR-1444](tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Make the complete install-to-comparison journey a cross-repository release qualification gate. | Blocked pending paired asb-tui AR-1327: obtain exact pinned acceptance revision/artifact and credential-free journey transcript, then rerun cross-repository qualification. | ar1444-journey-qualification-luna56 |
 
 ## Blocked
 
