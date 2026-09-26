@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1390](tasks/AR-1390-runtime-live-acquisition-cli.md): Runtime live acquisition and CLI bridge | Compose runtime-owned live provider acquisition and wire it into normal ASB run and sweep. | Claim the pre-bound isolated worktree, implement the runtime-owned live acquisition and normal CLI run/sweep bridge, and publish a signed PR. | - |
+| P0 | [AR-1390](tasks/AR-1390-runtime-live-acquisition-cli.md): Runtime live acquisition and CLI bridge | Compose runtime-owned live provider acquisition and wire it into normal ASB run and sweep. | Claim the pre-bound isolated worktree, implement the runtime-owned live acquisition and normal CLI run/sweep bridge, and publish a signed PR. | coordinator-ar1390-live-acquisition-luna56 |
 
 ## Blocked
 

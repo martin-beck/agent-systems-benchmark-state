@@ -132,11 +132,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1390](../tasks/AR-1390-runtime-live-acquisition-cli.md): Runtime live acquisition and CLI bridge | Unclaimed | Compose runtime-owned live provider acquisition and wire it into normal ASB run and sweep. | Claim the pre-bound isolated worktree, implement the runtime-owned live acquisition and normal CLI run/sweep bridge, and publish a signed PR. |
+| P0 | [AR-1390](../tasks/AR-1390-runtime-live-acquisition-cli.md): Runtime live acquisition and CLI bridge | coordinator-ar1390-live-acquisition-luna56 | Compose runtime-owned live provider acquisition and wire it into normal ASB run and sweep. | Claim the pre-bound isolated worktree, implement the runtime-owned live acquisition and normal CLI run/sweep bridge, and publish a signed PR. |
 
 ### Blocked (69)
 

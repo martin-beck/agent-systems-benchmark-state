@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1390-runtime-live-acquisition-cli",
   "checkpoint_commit": "10bffbf015bd7ca78d8c0d18f04cf0190195e933",
-  "claim_expires": "",
+  "claim_expires": "2026-09-27T00:35:00+00:00",
   "depends_on": [
     "AR-1388",
     "AR-1385",
@@ -18,15 +18,15 @@
   "observed_branch": "feature/ar-1390-runtime-live-acquisition-cli",
   "observed_dirty": 0,
   "observed_head": "10bffbf015bd7ca78d8c0d18f04cf0190195e933",
-  "owner": "",
+  "owner": "coordinator-ar1390-live-acquisition-luna56",
   "plan": "../plans/AR-1390-runtime-live-acquisition-cli.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Compose runtime-owned live provider acquisition and wire it into normal ASB run and sweep.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Runtime live acquisition and CLI bridge",
-  "updated_at": "2026-09-26T22:34:55+00:00",
+  "updated_at": "2026-09-26T22:35:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1390-runtime-live-acquisition-cli"
 }
 ---
@@ -79,3 +79,5 @@ reachability.
   declared worktree is clean at 10bffbf015bd7ca78d8c0d18f04cf0190195e933, and the runtime-owned live
   acquisition/CLI bridge is independently actionable with local/mock qualification only. Preserve
   fail-closed authority and egress gates; no live provider, seed, or asb-tui.
+
+- 2026-09-26T22:35:00+00:00: Claimed by coordinator-ar1390-live-acquisition-luna56.
