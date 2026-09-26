@@ -122,7 +122,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md): Local/mock multi-agent campaign successor | ar1456-local-campaign-luna56 | Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution. | Close/reopen PR #336 through handoffctl as authorized trigger; verify base ad4f96a/head f4b0361 and poll exact-head checks, no merge while unknown. |
+| P1 | [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md): Local/mock multi-agent campaign successor | ar1456-local-campaign-luna56 | Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution. | Monitor fresh post-reopen PR #336 exact-head checks to terminal SUCCESS; map each required workflow run ID and merge only after all green. |
 
 ### Open (1)
 

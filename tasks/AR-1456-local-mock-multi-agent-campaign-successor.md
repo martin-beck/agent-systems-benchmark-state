@@ -9,7 +9,7 @@
     "AR-1447"
   ],
   "id": "AR-1456",
-  "next_action": "Close/reopen PR #336 through handoffctl as authorized trigger; verify base ad4f96a/head f4b0361 and poll exact-head checks, no merge while unknown.",
+  "next_action": "Monitor fresh post-reopen PR #336 exact-head checks to terminal SUCCESS; map each required workflow run ID and merge only after all green.",
   "observed_branch": "feature/ar-1456-local-mock-multi-agent-campaign-successor",
   "observed_dirty": 0,
   "observed_head": "f4b03611afb70cb6b6abc7ff95ae16815822891a",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution.",
-  "task_revision": 70,
+  "task_revision": 71,
   "title": "Local/mock multi-agent campaign successor",
-  "updated_at": "2026-09-26T18:03:30+00:00",
+  "updated_at": "2026-09-26T18:03:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1456-local-mock-multi-agent-campaign-successor"
 }
 ---
@@ -254,3 +254,11 @@ for local development, CI, or this AR's completion.
 
 - 2026-09-26T18:03:30+00:00: Recorded command exit 0; command argv SHA-256
   a74836842611d919502ca9e92422481b1e63a7324d916aa6fd8174923e7a8bb8.
+
+- 2026-09-26T18:03:55+00:00: Authorized close/reopen trigger completed through handoffctl: PR #336
+  closed then reopened successfully. Exact base ad4f96ab3f7e57916208406b2f56aa9ec4e54885 and head
+  f4b03611afb70cb6b6abc7ff95ae16815822891a verified. Fresh exact-head runs now triggered: Huawei
+  36261183829, hosted 36261183790, fault 36261138299 (fresh rerun pending/active alongside
+  pre-reopen cancelled), formal 36261138341, Rust 36261183708, AArch64 36261183632, repository
+  quality 36261138341? (check workflow API for exact run mapping before merge). Old pre-reopen runs
+  cancelled; do not count them. PR remains OPEN/UNSTABLE; no merge.
