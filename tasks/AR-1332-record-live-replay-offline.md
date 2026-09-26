@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the record-live then replay-offline end-to-end CLI workflow.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Record-live to replay-offline workflow",
-  "updated_at": "2026-09-26T17:13:19+00:00",
+  "updated_at": "2026-09-26T17:14:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1332-record-live-replay-offline"
 }
 ---
@@ -252,3 +252,6 @@ reachability.
   docs in signed+DCO commit cbfe6e4; focused guide_examples and workflow_transcript/provenance pass.
   Force-with-lease updated PR #335 to cbfe6e42870e902c18808c87275d45b012547841. New exact-head CI is
   in progress; merge remains withheld.
+
+- 2026-09-26T17:14:02+00:00: Recorded command exit 0; command argv SHA-256
+  3cf66074dc3f3c6d3b00df3552dce0f33ae577584b22a5b6861cf3fac6b51496.
