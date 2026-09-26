@@ -9,7 +9,7 @@
     "AR-1447"
   ],
   "id": "AR-1456",
-  "next_action": "Continue polling PR #336 exact-head checks after GitHub workflow trigger; merge only when every required check is terminal SUCCESS.",
+  "next_action": "Wait for GitHub to trigger PR #336 checks; refresh exact-head status, and merge only after every required check is terminal SUCCESS.",
   "observed_branch": "feature/ar-1456-local-mock-multi-agent-campaign-successor",
   "observed_dirty": 0,
   "observed_head": "b6a3d5f22f1087fa4352eed760185cc745403ad9",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Local/mock multi-agent campaign successor",
-  "updated_at": "2026-09-26T17:57:05+00:00",
+  "updated_at": "2026-09-26T17:57:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1456-local-mock-multi-agent-campaign-successor"
 }
 ---
@@ -177,3 +177,11 @@ for local development, CI, or this AR's completion.
 
 - 2026-09-26T17:57:05+00:00: Recorded command exit 0; command argv SHA-256
   4c5bd764b2f680e6ff9945ab731d32b1a16907347d2b91fd6603c5531cb8d1a8.
+
+- 2026-09-26T17:57:36+00:00: PR #336 exact-head b6a3d5f22f1087fa4352eed760185cc745403ad9 is pushed
+  and clean, but GitHub has not triggered branch workflows: `gh run list -R
+  martin-beck/agent-systems-benchmark --branch
+  feature/ar-1456-local-mock-multi-agent-campaign-successor` returned `[]`; `gh pr view`
+  statusCheckRollup remains empty and mergeStateStatus DIRTY. This is an external CI-trigger state
+  blocker, not a product failure. Next action: wait/refresh workflow trigger, then require every
+  exact-head check terminal SUCCESS before merge.

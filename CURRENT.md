@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1456](tasks/AR-1456-local-mock-multi-agent-campaign-successor.md): Local/mock multi-agent campaign successor | Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution. | Continue polling PR #336 exact-head checks after GitHub workflow trigger; merge only when every required check is terminal SUCCESS. | ar1456-local-campaign-luna56 |
+| P1 | [AR-1456](tasks/AR-1456-local-mock-multi-agent-campaign-successor.md): Local/mock multi-agent campaign successor | Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution. | Wait for GitHub to trigger PR #336 checks; refresh exact-head status, and merge only after every required check is terminal SUCCESS. | ar1456-local-campaign-luna56 |
 
 ## Open
 
