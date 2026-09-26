@@ -10,11 +10,11 @@
   "plan": "../plans/AR-1469-ar1392-protected-topology-repair.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Repair the single-parent protected merge for AR-1392 without changing its reviewed implementation.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "AR-1392 protected-main topology repair",
-  "updated_at": "2026-09-27T00:00:00+00:00",
+  "updated_at": "2026-09-26T23:34:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1469-ar1392-protected-topology-repair"
 }
 ---
@@ -22,3 +22,6 @@
 This repair is limited to merge topology and exact evidence. It must preserve
 the AR-1392 implementation tree, signatures, DCO, privacy boundaries, and all
 green exact-head checks; the failed squash topology remains part of the record.
+
+- 2026-09-26T23:34:24+00:00: Promote topology-only repair for merged AR-1392 single-parent protected
+  history; preserve immutable evidence and require normal two-parent merge.
