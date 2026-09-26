@@ -7,16 +7,16 @@
     "AR-1443"
   ],
   "id": "AR-1444",
-  "next_action": "Blocked pending paired asb-tui AR-1327: obtain exact pinned acceptance revision/artifact and credential-free journey transcript, then rerun cross-repository qualification.",
+  "next_action": "Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository.",
   "owner": "coordinator-ar1444-reclass",
   "plan": "../plans/AR-1444.md",
-  "priority": "P0",
+  "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Make the complete install-to-comparison journey a cross-repository release qualification gate.",
-  "task_revision": 9,
+  "summary": "Optional cross-repository journey evidence; never an ASB release blocker.",
+  "task_revision": 10,
   "title": "First-class journey qualification",
-  "updated_at": "2026-09-26T18:45:15+00:00",
+  "updated_at": "2026-09-26T18:45:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1444-first-class-journey-qualification"
 }
 ---
@@ -58,3 +58,6 @@ reachability from local mocks or replay evidence.
   separate and must not block ASB.
 
 - 2026-09-26T18:45:15+00:00: Claimed by coordinator-ar1444-reclass.
+
+- 2026-09-26T18:45:26+00:00: Clarified optional P2 integration boundary after ASB-only AR-1458
+  first-customer requalification passed on exact main.
