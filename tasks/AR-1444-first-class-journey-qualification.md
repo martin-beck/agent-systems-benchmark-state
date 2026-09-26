@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Optional cross-repository journey evidence; never an ASB release blocker.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "First-class journey qualification",
-  "updated_at": "2026-09-26T22:30:48+00:00",
+  "updated_at": "2026-09-26T22:30:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1444-first-class-journey-qualification"
 }
 ---
@@ -67,3 +67,6 @@ reachability from local mocks or replay evidence.
   exact-main production-like qualification; no asb-tui changes made.
 
 - 2026-09-26T22:30:48+00:00: Claimed by coordinator-ar1444-dependency-audit.
+
+- 2026-09-26T22:30:50+00:00: Recorded command exit 0; command argv SHA-256
+  45132dbe85bdf19448c279fe287163b09db0b90a909a637af778cc4e6bbc1164.
