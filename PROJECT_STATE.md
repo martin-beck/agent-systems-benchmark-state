@@ -11,7 +11,7 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #332 | `feature/ar-1453-frontend-orchestration-wiring@082b0624abe2` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: route ASB frontends through central orchestration |
-| #335 | `feature/ar-1332-record-live-replay-offline@cbfe6e42870e` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(cli): add explicit record-live replay-offline workflow |
+| #335 | `feature/ar-1332-record-live-replay-offline@cbfe6e42870e` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | feat(cli): add explicit record-live replay-offline workflow |
 
 ## Recent workflows
 
@@ -22,7 +22,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36258203135 | `cbfe6e42870e` | pull_request | Repository quality | in_progress:- |
 | 36258203115 | `cbfe6e42870e` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 36258203113 | `cbfe6e42870e` | pull_request | Fault assurance | in_progress:- |
-| 36258203111 | `cbfe6e42870e` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 36258203111 | `cbfe6e42870e` | pull_request | Hosted portability and native qualification | completed:success |
 | 36258203104 | `cbfe6e42870e` | pull_request | Huawei MIT source headers | completed:success |
 | 36258203102 | `cbfe6e42870e` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36257756861 | `97d9bbc3b6a9` | pull_request | Rust verification | completed:failure |
