@@ -12,16 +12,16 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- | --- |
 | #327 | `feature/ar-1338-guided-asb-command-wrapper@4d42f598127d` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): extend guided ASB workflow |
 | #332 | `feature/ar-1453-frontend-orchestration-wiring@082b0624abe2` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: route ASB frontends through central orchestration |
-| #334 | `feature/ar-1455-runtime-owned-guided-replay-entrypoint@43eaa298272e` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | feat(runtime): own guided local replay entrypoint |
+| #334 | `feature/ar-1455-runtime-owned-guided-replay-entrypoint@43eaa298272e` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(runtime): own guided local replay entrypoint |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 36252419973 | `43eaa298272e` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 36252419950 | `43eaa298272e` | pull_request | Fault assurance | in_progress:- |
+| 36252419950 | `43eaa298272e` | pull_request | Fault assurance | completed:success |
 | 36252419947 | `43eaa298272e` | pull_request | Hosted portability and native qualification | completed:success |
-| 36252419945 | `43eaa298272e` | pull_request | Formal assurance | in_progress:- |
+| 36252419945 | `43eaa298272e` | pull_request | Formal assurance | completed:success |
 | 36252419942 | `43eaa298272e` | pull_request | Rust verification | in_progress:- |
 | 36252419939 | `43eaa298272e` | pull_request | Huawei MIT source headers | completed:success |
 | 36252419935 | `43eaa298272e` | pull_request | Emulated aarch64 portability | in_progress:- |
