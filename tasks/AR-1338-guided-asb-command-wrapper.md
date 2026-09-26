@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows.",
-  "task_revision": 131,
+  "task_revision": 132,
   "title": "Guided ASB command wrapper",
-  "updated_at": "2026-09-26T16:21:47+00:00",
+  "updated_at": "2026-09-26T16:22:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1338-guided-asb-command-wrapper"
 }
 ---
@@ -389,3 +389,6 @@ reachability.
 
 - 2026-09-26T16:21:47+00:00: Recorded command exit 0; command argv SHA-256
   1eeffe7b3c160f37fc29c824212d99789d9ad637070ab6e868f3d106c1ed3195.
+
+- 2026-09-26T16:22:18+00:00: Recorded command exit 0; command argv SHA-256
+  ef19043205064ea87bec66574bfe246191c9311bc8c404cd8e347d08fbdc44f0.
