@@ -10,11 +10,11 @@
   "plan": "../plans/AR-1464.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Provision the missing signed formal inputs and disposable capacity required by AR-1308.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Formal capacity and signed-input provisioning repair",
-  "updated_at": "2026-09-26T21:12:00+00:00",
+  "updated_at": "2026-09-26T21:12:35+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1464-formal-capacity-input-provisioning"
 }
 ---
@@ -32,3 +32,6 @@ scope.
   28 KiB host swap free, no reviewed Ubuntu image, ~3.5 GiB overlay instead of
   64 GiB, missing exact signed AR-1307 `ab485f767` source/tree, seed and
   canonical admission lock. No VM/TLC run was attempted.
+
+- 2026-09-26T21:12:35+00:00: Provision exact formal inputs and disposable capacity identified by
+  AR-1308 preflight.
