@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the runtime-owned guided local replay entrypoint needed by AR-1338.",
-  "task_revision": 82,
+  "task_revision": 83,
   "title": "Runtime-owned guided replay entrypoint",
-  "updated_at": "2026-09-26T15:48:33+00:00",
+  "updated_at": "2026-09-26T15:48:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1455-runtime-owned-guided-replay-entrypoint"
 }
 ---
@@ -267,3 +267,6 @@ lifecycle; the guided wrapper is only a bounded client.
   timeout cases; assert_clean excludes only this named fixture while still requiring all staged
   sidecars removed. Focused normal test passed 5/5; coverage-instrumented focused test passed.
   Signed+DCO d7a08e3 pushed; remote exact head verified.
+
+- 2026-09-26T15:48:43+00:00: Recorded command exit 8; command argv SHA-256
+  feb6f75920378f715aea2cb32658e47debb03dc2b56957fe625dba6a1cb661ab.
