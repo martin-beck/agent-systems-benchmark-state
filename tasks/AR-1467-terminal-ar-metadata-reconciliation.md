@@ -2,19 +2,19 @@
 {
   "branch": "repair/ar-1467-terminal-ar-metadata-reconciliation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-26T23:25:07+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1467",
   "next_action": "No further action; terminal metadata was reconciled without changing implementation or gates.",
-  "owner": "coordinator-ar1467-terminal-metadata",
+  "owner": "",
   "plan": "../plans/AR-1467-terminal-ar-metadata-reconciliation.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Remove stale historical next-action text from recently completed ASB AR records without changing implementation or gates.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Terminal AR metadata reconciliation",
-  "updated_at": "2026-09-26T22:27:21+00:00",
+  "updated_at": "2026-09-26T22:27:24+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1467-terminal-ar-metadata-reconciliation"
 }
 ---
@@ -33,3 +33,6 @@ ASB release dependency.
 
 - 2026-09-26T22:27:21+00:00: Verified ten recently completed ARs against recorded immutable
   merge/release evidence and corrected only stale next-action text.
+
+- 2026-09-26T22:27:24+00:00: AR-1467 complete: terminal metadata is truthful, generated views
+  reconcile, and no product or formal gate changed.
