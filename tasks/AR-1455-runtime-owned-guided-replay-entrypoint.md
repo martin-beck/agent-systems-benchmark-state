@@ -9,7 +9,7 @@
     "AR-1453"
   ],
   "id": "AR-1455",
-  "next_action": "Open exact-head PR for e12a411; independently review diff, then await 12 required checks and protected merge before post-merge gates.",
+  "next_action": "Wait for Formal assurance run 36252100752 terminal state, retrieve Loom job logs, reproduce/fix only if attributable; do not merge while any required check fails.",
   "observed_branch": "feature/ar-1455-runtime-owned-guided-replay-entrypoint",
   "observed_dirty": 0,
   "observed_head": "e12a4111c29e219bf2cea921133bde8870e36d0f",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the runtime-owned guided local replay entrypoint needed by AR-1338.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Runtime-owned guided replay entrypoint",
-  "updated_at": "2026-09-26T15:31:40+00:00",
+  "updated_at": "2026-09-26T15:32:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1455-runtime-owned-guided-replay-entrypoint"
 }
 ---
@@ -146,3 +146,9 @@ lifecycle; the guided wrapper is only a bounded client.
 
 - 2026-09-26T15:31:40+00:00: Recorded command exit 0; command argv SHA-256
   3416fb5a2f65233ed20874b790eb70593e2f95e60f1d6389bcd46a3b09925e78.
+
+- 2026-09-26T15:32:05+00:00: PR #334 exact head e12a411 has required Formal assurance workflow run
+  36252100752 still in progress; Kani passed, TLC/Alloy pending, Loom/state models failed (job
+  108431927088, exit 101). Failure logs are unavailable until workflow completion. No merge
+  attempted; awaiting terminal logs before determining whether failure is pre-existing or caused by
+  this diff.
