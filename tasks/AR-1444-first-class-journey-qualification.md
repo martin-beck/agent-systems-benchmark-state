@@ -2,21 +2,21 @@
 {
   "branch": "feature/ar-1444-first-class-journey-qualification",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-26T19:05:15+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1443"
   ],
   "id": "AR-1444",
   "next_action": "Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository.",
-  "owner": "coordinator-ar1444-reclass",
+  "owner": "",
   "plan": "../plans/AR-1444.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Optional cross-repository journey evidence; never an ASB release blocker.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "First-class journey qualification",
-  "updated_at": "2026-09-26T18:45:26+00:00",
+  "updated_at": "2026-09-26T18:45:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1444-first-class-journey-qualification"
 }
 ---
@@ -61,3 +61,7 @@ reachability from local mocks or replay evidence.
 
 - 2026-09-26T18:45:26+00:00: Clarified optional P2 integration boundary after ASB-only AR-1458
   first-customer requalification passed on exact main.
+
+- 2026-09-26T18:45:34+00:00: Optional P2 integration AR retained open for external asb-tui evidence
+  only. It is explicitly not an ASB release or first-customer blocker. ASB-only AR-1458 passed
+  exact-main production-like qualification; no asb-tui changes made.
