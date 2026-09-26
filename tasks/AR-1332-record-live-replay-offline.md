@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the record-live then replay-offline end-to-end CLI workflow.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Record-live to replay-offline workflow",
-  "updated_at": "2026-09-26T16:50:47+00:00",
+  "updated_at": "2026-09-26T16:51:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1332-record-live-replay-offline"
 }
 ---
@@ -67,3 +67,6 @@ reachability.
 - 2026-09-26T16:49:06+00:00: Heartbeat by ar1332-record-replay-luna56.
 
 - 2026-09-26T16:50:47+00:00: Heartbeat by ar1332-record-replay-luna56.
+
+- 2026-09-26T16:51:09+00:00: Recorded command exit 0; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
