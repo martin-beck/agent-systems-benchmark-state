@@ -5,16 +5,16 @@
   "claim_expires": "",
   "depends_on": [],
   "id": "AR-1466",
-  "next_action": "Release AR-1466 done with the exact merge-head CI and local gate evidence; no further repair remains.",
+  "next_action": "No further action; AR-1466 is complete and exact-main state CI is green.",
   "owner": "",
   "plan": "../plans/AR-1466-state-ci-format-repair.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "done",
   "summary": "State CI repair is complete at exact protected-main head 932a91a: formatter/lint and schema compatibility repairs pass local gates, focused AR-1308 tests pass, and Coordination verification run 36274807110 succeeded.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "State CI formatting repair",
-  "updated_at": "2026-09-26T22:02:55+00:00",
+  "updated_at": "2026-09-26T22:03:13+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1466-state-ci-format-repair"
 }
 ---
@@ -102,3 +102,5 @@ reports `tools/validate_ar1308_capacity.py` as the only unformatted file.
   subtest; Ruff format/check and mypy passed; schema validation passed; exact-main Coordination
   verification 36274807110 succeeded at 932a91affb6876e9a4a22b3a0f019f2bd2d4dd6f. No
   product/formal/asb-tui scope changed.
+
+- 2026-09-26T22:03:13+00:00: Corrected stale next_action after release; no work remains.
