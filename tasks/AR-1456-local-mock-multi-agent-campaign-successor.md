@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Local/mock multi-agent campaign successor",
-  "updated_at": "2026-09-26T17:50:46+00:00",
+  "updated_at": "2026-09-26T17:50:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1456-local-mock-multi-agent-campaign-successor"
 }
 ---
@@ -82,3 +82,6 @@ for local development, CI, or this AR's completion.
   second test filter. This is command selection/setup, not a product failure; no product files
   changed. Next action: run the two focused tests as separate handoffctl commands
   (`record_campaign`, then `guide_examples`).
+
+- 2026-09-26T17:50:55+00:00: Recorded command exit 0; command argv SHA-256
+  dd9385c4e2041a75312b68f0022e8ee378f89dd3e0bb6af947f5d2f422f183ca.
