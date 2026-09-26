@@ -9,7 +9,7 @@
     "AR-1447"
   ],
   "id": "AR-1456",
-  "next_action": "Monitor fresh post-reopen PR #336 exact-head checks to terminal SUCCESS; map each required workflow run ID and merge only after all green.",
+  "next_action": "Rerun failed Rust workflow 36261183708 at unchanged exact head f4b03611; require terminal SUCCESS plus remaining workflows before merge.",
   "observed_branch": "feature/ar-1456-local-mock-multi-agent-campaign-successor",
   "observed_dirty": 0,
   "observed_head": "f4b03611afb70cb6b6abc7ff95ae16815822891a",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution.",
-  "task_revision": 72,
+  "task_revision": 73,
   "title": "Local/mock multi-agent campaign successor",
-  "updated_at": "2026-09-26T18:07:38+00:00",
+  "updated_at": "2026-09-26T18:08:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1456-local-mock-multi-agent-campaign-successor"
 }
 ---
@@ -265,3 +265,10 @@ for local development, CI, or this AR's completion.
 
 - 2026-09-26T18:07:38+00:00: Recorded command exit 0; command argv SHA-256
   e0c63df0e730890a68d52feab3e2105152fa753085c44fa4d40bd5b3a61ade52.
+
+- 2026-09-26T18:08:01+00:00: Fresh Rust PR check 36261183708 failed exit 101 in unrelated existing
+  control test `control::tests::production_backend_runs_without_frontend_and_recovers_idempotency`:
+  crates/asb-cli/src/control.rs:6530 unwrap saw `CliError { code: operation, message: control state
+  root is already owned }`. The same workflow had 112 tests pass; campaign test and all changed-path
+  checks passed. This is a shared-state/flaky test failure, not caused by AR-1456 diff. Next action:
+  rerun failed workflow at exact unchanged head; merge only if rerun terminal SUCCESS.
