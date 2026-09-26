@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1468-control-authority-materialization-successor",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-27T01:44:43+00:00",
   "depends_on": [
     "AR-1288",
     "AR-1362",
@@ -11,15 +11,15 @@
   ],
   "id": "AR-1468",
   "next_action": "Promote and claim the corrected-dependency successor, then implement the owner-checked control authority materializer through the reviewed workflow.",
-  "owner": "",
+  "owner": "coordinator-ar1468-authority-materialization",
   "plan": "../plans/AR-1468-control-authority-materialization-successor.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Implement the control-owned authority materializer without the superseded AR-1369 dependency deadlock.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Control authority materialization successor",
-  "updated_at": "2026-09-26T22:44:37+00:00",
+  "updated_at": "2026-09-26T22:44:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1468-control-authority-materialization-successor"
 }
 ---
@@ -31,3 +31,5 @@ external provider access is optional and never a CI or completion requirement.
 
 - 2026-09-26T22:44:37+00:00: Corrected successor depends only on completed authority foundations;
   begin implementation.
+
+- 2026-09-26T22:44:43+00:00: Claimed by coordinator-ar1468-authority-materialization.

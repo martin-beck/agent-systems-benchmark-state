@@ -134,11 +134,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1468](../tasks/AR-1468-control-authority-materialization-successor.md): Control authority materialization successor | Unclaimed | Implement the control-owned authority materializer without the superseded AR-1369 dependency deadlock. | Promote and claim the corrected-dependency successor, then implement the owner-checked control authority materializer through the reviewed workflow. |
+| P0 | [AR-1468](../tasks/AR-1468-control-authority-materialization-successor.md): Control authority materialization successor | coordinator-ar1468-authority-materialization | Implement the control-owned authority materializer without the superseded AR-1369 dependency deadlock. | Promote and claim the corrected-dependency successor, then implement the owner-checked control authority materializer through the reviewed workflow. |
 
 ### Blocked (70)
 
@@ -513,4 +513,3 @@
 | P1 | [AR-0849](../tasks/AR-0849-ar0801-documentation-repair.md): Repair AR-0801 documentation consistency | Unclaimed | Repair stale AR-0801 implementation and CLI documentation claims. | Align AR-0801 task text, generated status next_action, and product README with the implemented and merged CLI command surface; verify links and exact command examples. |
 | P1 | [AR-0851](../tasks/AR-0851-shared-workflow-coordinator.md): Adopt shared workflow coordinator | Unclaimed | Adopt the canonical coordinator as a pinned offline-capable vendor artifact while preserving ASB extensions. | Rebase the immutable v0.1.3 integration tree onto current state main under coordinator serialization, rerun exact-tree gates, and present a signed review candidate; do not publish or merge before review. |
 | P1 | [AR-0852](../tasks/AR-0852-coordinator-path-isolation.md): Adopt coordinator path isolation fix | Unclaimed | Adopt the path-exclusive coordinator commit fix discovered during live integration. | Preserve merged v0.1.4 effect e52ce3aa without history rewrite; complete a focused signed+DCO repair or documented signed state replacement under AR-0853, then re-audit live main before releasing AR-0852. |
-| P1 | [AR-0854](../tasks/AR-0854-coordinator-v020-upgrade.md): Upgrade shared workflow coordinator to v0.2.0 | Unclaimed | Adopt coordinator v0.2.0 concurrency, recovery, durable-run, replica, and vendor hardening. | Promote and claim the upgrade, vendor signed v0.2.0 in an isolated worktree, and publish only after exact-head gates pass. |

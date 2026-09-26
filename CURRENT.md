@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1468](tasks/AR-1468-control-authority-materialization-successor.md): Control authority materialization successor | Implement the control-owned authority materializer without the superseded AR-1369 dependency deadlock. | Promote and claim the corrected-dependency successor, then implement the owner-checked control authority materializer through the reviewed workflow. | - |
+| P0 | [AR-1468](tasks/AR-1468-control-authority-materialization-successor.md): Control authority materialization successor | Implement the control-owned authority materializer without the superseded AR-1369 dependency deadlock. | Promote and claim the corrected-dependency successor, then implement the owner-checked control authority materializer through the reviewed workflow. | coordinator-ar1468-authority-materialization |
 
 ## Blocked
 
