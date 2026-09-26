@@ -2,21 +2,21 @@
 {
   "branch": "feature/ar-1444-first-class-journey-qualification",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-26T19:35:49+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1443"
   ],
   "id": "AR-1444",
   "next_action": "Blocked pending paired asb-tui AR-1327: obtain exact pinned acceptance revision/artifact and credential-free journey transcript, then rerun cross-repository qualification.",
-  "owner": "ar1444-journey-qualification-luna56",
+  "owner": "",
   "plan": "../plans/AR-1444.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Make the complete install-to-comparison journey a cross-repository release qualification gate.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "First-class journey qualification",
-  "updated_at": "2026-09-26T17:36:03+00:00",
+  "updated_at": "2026-09-26T17:36:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1444-first-class-journey-qualification"
 }
 ---
@@ -42,3 +42,11 @@ reachability from local mocks or replay evidence.
   asb-tui changes made. Next action: wait for paired AR-1327 to be promoted/completed with exact
   pinned revision and credential-free acceptance evidence, then rerun AR-1444 qualification and
   release gate.
+
+- 2026-09-26T17:36:35+00:00: Released open because required paired dependency is not ready.
+  Authoritative asb-tui-state AR-1327 remains planned/ownerless with empty checkpoint_commit and no
+  pinned acceptance artifact or credential-free
+  install->wizard->benchmark->offline-replay->comparison transcript; its state snapshot also fails
+  on missing worktree /tmp/asb-tui-e21d938. Resume after paired AR-1327 is promoted/completed and
+  supplies exact pinned revision plus journey evidence. ASB AR-1443 is ASB-only; no asb-tui changes
+  made.
