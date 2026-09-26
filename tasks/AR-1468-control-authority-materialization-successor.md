@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the control-owned authority materializer without the superseded AR-1369 dependency deadlock.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Control authority materialization successor",
-  "updated_at": "2026-09-26T22:47:09+00:00",
+  "updated_at": "2026-09-26T22:47:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1468-control-authority-materialization-successor"
 }
 ---
@@ -53,3 +53,6 @@ external provider access is optional and never a CI or completion requirement.
 
 - 2026-09-26T22:47:09+00:00: Recorded command exit 0; command argv SHA-256
   05960e0e87afe23a19c5fd4d96895ef341fcad227a3d514730be2d9a96f1529e.
+
+- 2026-09-26T22:47:32+00:00: Recorded command exit 0; command argv SHA-256
+  2cc8e4b7cbc9aac60bf084cbe8e00e3f61294c75e1fe484fb8f8b3a986144809.
