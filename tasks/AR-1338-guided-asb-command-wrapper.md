@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1338-guided-asb-command-wrapper",
-  "checkpoint_commit": "f94013b9a1e644b4ca49a0522811435151d9bb57",
+  "checkpoint_commit": "69f3d3800be0e3e0ad097e471f8e9f51483524e4",
   "claim_expires": "2026-09-26T18:09:07+00:00",
   "depends_on": [
     "AR-1331",
@@ -10,7 +10,7 @@
     "AR-1446"
   ],
   "id": "AR-1338",
-  "next_action": "Independent review and focused/full gates on rebased f94013b; then publish exact-head PR update without overwriting stale remote history.",
+  "next_action": "Force-update PR #327 from verified remote 4d42f598 to rebased exact-head 69f3d38; monitor all required checks.",
   "observed_branch": "feature/ar-1338-guided-asb-command-wrapper",
   "observed_dirty": 0,
   "observed_head": "69f3d3800be0e3e0ad097e471f8e9f51483524e4",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows.",
-  "task_revision": 126,
+  "task_revision": 127,
   "title": "Guided ASB command wrapper",
-  "updated_at": "2026-09-26T16:15:37+00:00",
+  "updated_at": "2026-09-26T16:16:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1338-guided-asb-command-wrapper"
 }
 ---
@@ -369,3 +369,11 @@ reachability.
 
 - 2026-09-26T16:15:37+00:00: Recorded command exit 0; command argv SHA-256
   4e40c93f406f52cb28f476b2dec50ce9c2010aca6c4c9c8c544d5d90c43c0641.
+
+- 2026-09-26T16:16:05+00:00: Independent review of rebased wrapper found and repaired one P1
+  functional mismatch: guided setup accepted catalog openrouter model then delegated to setup, whose
+  canonical compatibility table omitted openrouter and rejected it. Added exact OPENROUTER_MODEL
+  compatibility and positive/negative regression test in signed+DCO 69f3d38. Local gates pass: 113
+  asb-cli lib tests, focused test, clippy -p asb-cli all-targets -D warnings, fmt check, diff check.
+  Branch base is exact 0bfea96; verified remote stale PR branch is exactly 4d42f598 before force
+  update.
