@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Local/mock multi-agent campaign successor",
-  "updated_at": "2026-09-26T17:58:34+00:00",
+  "updated_at": "2026-09-26T17:58:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1456-local-mock-multi-agent-campaign-successor"
 }
 ---
@@ -198,3 +198,6 @@ for local development, CI, or this AR's completion.
   mergeable=false/dirty; no checks/workflows reported. Commit-status API poll was blocked by
   handoffctl shared-lock timeout after 10s, so status remains unknown rather than green. Do not
   force-update or merge; next action remains workflow trigger/refresh.
+
+- 2026-09-26T17:58:43+00:00: Recorded command exit 0; command argv SHA-256
+  9b2437da101f78b0826911501bda84173c3a14cf02f1c801481c6486ae2dc36a.
