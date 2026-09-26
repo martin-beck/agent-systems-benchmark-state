@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1456](tasks/AR-1456-local-mock-multi-agent-campaign-successor.md): Local/mock multi-agent campaign successor | Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution. | Retry gh run rerun 36261183708 --failed through handoffctl after lock release; monitor rerun and remaining exact-head checks. | ar1456-local-campaign-luna56 |
+| P1 | [AR-1456](tasks/AR-1456-local-mock-multi-agent-campaign-successor.md): Local/mock multi-agent campaign successor | Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution. | Merge PR #336 now that all exact-head checks are green; record merge SHA, then launch and monitor seven exact-main post-merge workflows. | ar1456-local-campaign-luna56 |
 
 ## Open
 

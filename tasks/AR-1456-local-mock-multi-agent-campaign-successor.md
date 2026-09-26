@@ -9,7 +9,7 @@
     "AR-1447"
   ],
   "id": "AR-1456",
-  "next_action": "Retry gh run rerun 36261183708 --failed through handoffctl after lock release; monitor rerun and remaining exact-head checks.",
+  "next_action": "Merge PR #336 now that all exact-head checks are green; record merge SHA, then launch and monitor seven exact-main post-merge workflows.",
   "observed_branch": "feature/ar-1456-local-mock-multi-agent-campaign-successor",
   "observed_dirty": 0,
   "observed_head": "f4b03611afb70cb6b6abc7ff95ae16815822891a",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution.",
-  "task_revision": 94,
+  "task_revision": 95,
   "title": "Local/mock multi-agent campaign successor",
-  "updated_at": "2026-09-26T18:16:55+00:00",
+  "updated_at": "2026-09-26T18:17:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1456-local-mock-multi-agent-campaign-successor"
 }
 ---
@@ -338,3 +338,10 @@ for local development, CI, or this AR's completion.
 
 - 2026-09-26T18:16:55+00:00: Recorded command exit 0; command argv SHA-256
   2341186315bb1a5ce8988f9598a72683387104e4ab3897c294869d448d605b57.
+
+- 2026-09-26T18:17:15+00:00: Fresh PR #336 exact-head matrix is fully green at base
+  ad4f96ab3f7e57916208406b2f56aa9ec4e54885/head f4b03611afb70cb6b6abc7ff95ae16815822891a: AWQ
+  36261183752, Huawei 36261183829, fault 36261183722, formal 36261183691, hosted 36261183790,
+  AArch64 36261183632, repository quality 36261183850, and Rust rerun 36261183708/job 108458137638.
+  The initial Rust failure was the known state-root race and rerun passed. Merge is now authorized
+  by green exact-head checks.
