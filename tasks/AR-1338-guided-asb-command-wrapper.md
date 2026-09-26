@@ -12,7 +12,7 @@
   "id": "AR-1338",
   "next_action": "Force-update PR #327 from verified remote 4d42f598 to rebased exact-head 69f3d38; monitor all required checks.",
   "observed_branch": "feature/ar-1338-guided-asb-command-wrapper",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "69f3d3800be0e3e0ad097e471f8e9f51483524e4",
   "owner": "ar1338-guided-wrapper-luna56",
   "plan": "../plans/AR-1338.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows.",
-  "task_revision": 132,
+  "task_revision": 133,
   "title": "Guided ASB command wrapper",
-  "updated_at": "2026-09-26T16:22:18+00:00",
+  "updated_at": "2026-09-26T16:22:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1338-guided-asb-command-wrapper"
 }
 ---
