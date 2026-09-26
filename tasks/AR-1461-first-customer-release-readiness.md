@@ -9,15 +9,18 @@
   ],
   "id": "AR-1461",
   "next_action": "Audit the established ASB release workflow against exact qualified main 36d4bdf35a644a36a8acfdb31078eb7f668a17c4, build the reproducible first-customer bundle, run release gates, and publish only if all required checks and release evidence pass; otherwise create a precise repair AR.",
+  "observed_branch": "release/ar-1461-first-customer-release-readiness",
+  "observed_dirty": 0,
+  "observed_head": "36d4bdf35a644a36a8acfdb31078eb7f668a17c4",
   "owner": "coordinator-ar1461-release",
   "plan": "../plans/AR-1461.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prepare and publish the first-customer ASB release from the currently qualified main.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "First-customer release readiness and publication",
-  "updated_at": "2026-09-26T19:05:58+00:00",
+  "updated_at": "2026-09-26T19:06:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1461-first-customer-release-readiness"
 }
 ---
