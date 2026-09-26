@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Local/mock multi-agent campaign successor",
-  "updated_at": "2026-09-26T17:54:02+00:00",
+  "updated_at": "2026-09-26T17:54:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1456-local-mock-multi-agent-campaign-successor"
 }
 ---
@@ -131,3 +131,6 @@ for local development, CI, or this AR's completion.
   expected 425ad70e72067316ecd9b466859b97f5e1f382984455805756a3f40aa9f83d0c. Refreshed only
   cli_source_sha256; focused workflow_transcript rerun is now 3/3 green. Next action: commit exact
   reviewed diff signed+DCO.
+
+- 2026-09-26T17:54:09+00:00: Recorded command exit 0; command argv SHA-256
+  8a1018f5c43f7077bcd20387e881a3b66f941c444355cb0fed87ba4eb69fe6bc.
