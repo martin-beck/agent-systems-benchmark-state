@@ -2,7 +2,7 @@
 {
   "branch": "release/ar-1462-pinned-release-toolchain-bundle-workflow",
   "checkpoint_commit": "0a85123785c3e5e293fee02df757f494ac3423fe",
-  "claim_expires": "2026-09-26T21:52:30+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1460"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "release/ar-1462-pinned-release-toolchain-bundle-workflow",
   "observed_dirty": 0,
   "observed_head": "76f099487da31b0ee7d7d29b9561785ccbb4e11f",
-  "owner": "coordinator-ar1462-release-tooling",
+  "owner": "",
   "plan": "../plans/AR-1462.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Establish reproducible supply-chain checks and first-customer release bundle publication workflow.",
-  "task_revision": 79,
+  "task_revision": 80,
   "title": "Pinned release toolchain and first-customer bundle workflow",
-  "updated_at": "2026-09-26T19:54:48+00:00",
+  "updated_at": "2026-09-26T19:55:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1462-pinned-release-toolchain-bundle-workflow"
 }
 ---
@@ -225,3 +225,8 @@ all integrity, provenance, privacy and exact-head checks remain mandatory.
   corrected unsupported tool CLI forms; successful reruns recorded. Rebase continuation briefly
   required direct Git because handoffctl rejects DETACHED during interactive rebase; branch was then
   force-with-lease updated through handoffctl and exact-head CI passed.
+
+- 2026-09-26T19:55:04+00:00: AR-1462 complete: PR #337 merged at
+  0a85123785c3e5e293fee02df757f494ac3423fe from exact head 76f099487da31b0ee7d7d29b9561785ccbb4e11f;
+  all seven exact-main post-merge workflows green (36267124368, 36267124413, 36267124396,
+  36267124398, 36267124390, 36267124403, 36267124417).
