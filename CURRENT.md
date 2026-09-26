@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1332](tasks/AR-1332-record-live-replay-offline.md): Record-live to replay-offline workflow | Add the record-live then replay-offline end-to-end CLI workflow. | Open reviewed PR from exact signed head, then run exact-head CI and protected-main publication gates. | ar1332-record-replay-luna56 |
+| P1 | [AR-1332](tasks/AR-1332-record-live-replay-offline.md): Record-live to replay-offline workflow | Add the record-live then replay-offline end-to-end CLI workflow. | Monitor PR #335 exact-head CI; do not merge until all required checks are green. | ar1332-record-replay-luna56 |
 
 ## Blocked
 

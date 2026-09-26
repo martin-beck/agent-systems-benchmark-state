@@ -7,7 +7,7 @@
     "AR-1331"
   ],
   "id": "AR-1332",
-  "next_action": "Open reviewed PR from exact signed head, then run exact-head CI and protected-main publication gates.",
+  "next_action": "Monitor PR #335 exact-head CI; do not merge until all required checks are green.",
   "observed_branch": "feature/ar-1332-record-live-replay-offline",
   "observed_dirty": 0,
   "observed_head": "97d9bbc3b6a9e0f793ac6a5a4ba3103e85f5e4a7",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the record-live then replay-offline end-to-end CLI workflow.",
-  "task_revision": 55,
+  "task_revision": 56,
   "title": "Record-live to replay-offline workflow",
-  "updated_at": "2026-09-26T17:05:31+00:00",
+  "updated_at": "2026-09-26T17:05:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1332-record-live-replay-offline"
 }
 ---
@@ -188,3 +188,8 @@ reachability.
   938500e2b3d4d91a8e10791c4c98e26ace6a65de04b7881e534898b8580e59a8.
 
 - 2026-09-26T17:05:31+00:00: Heartbeat by ar1332-record-replay-luna56.
+
+- 2026-09-26T17:05:33+00:00: Verified clean signed local and remote topic head
+  97d9bbc3b6a9e0f793ac6a5a4ba3103e85f5e4a7; parent-provided alternate SHA was incorrect. Opened
+  reviewed PR #335 from that exact head. Await exact-head required checks; merge is not authorized
+  until all required checks pass.
