@@ -2,19 +2,19 @@
 {
   "branch": "repair/ar-1464-formal-capacity-input-provisioning",
   "checkpoint_commit": "ab485f767fbddbd8adfc27b5120f3df0a045b762",
-  "claim_expires": "2026-09-26T22:32:23+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1464",
   "next_action": "Obtain or restore the reviewed full-exhaustive seed with SHA-256 b3383756b5cd357f58d923216effea33be35b793034de321c3c9ce460ece4b28. Do not regenerate or substitute a different seed. Then rerun the signed preflight, hand inputs to AR-1308, and remove/revert only the temporary AR-specific swap after the runner lifecycle.",
-  "owner": "coordinator-ar1464-swap-recovery",
+  "owner": "",
   "plan": "../plans/AR-1464.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Exact signed source, reviewed image, 64 GiB overlay, JDK/TLC/model and canonical lock are provisioned. Reclaimed the three stale AR-specific swap files and activated two fresh AR-specific swap files; repeated signed preflight now passes every gate except the unavailable exact seed digest.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Formal capacity and signed-input provisioning repair",
-  "updated_at": "2026-09-26T21:39:49+00:00",
+  "updated_at": "2026-09-26T21:39:59+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1464-formal-capacity-input-provisioning"
 }
 ---
@@ -206,3 +206,8 @@ scope.
   AR-specific swap files were safely deactivated; two fresh 2 GiB AR-specific swap files are active.
   Preflight rerun with correct image/source/model/JDK/TLC/lock reports only seed input missing or
   wrong digest. No QEMU/TLC boot or qualification was attempted.
+
+- 2026-09-26T21:39:59+00:00: Released after bounded swap recovery. Two fresh AR-specific swap files
+  provide >1 GiB free swap and the signed preflight now fails only on the missing exact reviewed
+  seed digest b3383756b5cd357f58d923216effea33be35b793034de321c3c9ce460ece4b28. Preserve fail-closed
+  state; no synthetic seed or TLC run.
