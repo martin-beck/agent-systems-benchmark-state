@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 527,
+  "task_revision": 528,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-18T22:52:48+00:00",
+  "updated_at": "2026-09-26T18:50:40+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1588,3 +1588,6 @@ must report `qualification_authorized: false`.
 
 - 2026-09-18T22:52:48+00:00: Runner metadata is valid and capacity contract is recorded. Exact
   AR-1307 runtime bundle and pinned inputs remain unavailable; no qualification claimed.
+
+- 2026-09-26T18:50:40+00:00: Reopen for bounded preflight audit of the prepared offline QEMU runner
+  and exact AR-1307 input bundle; do not claim formal qualification without all signed inputs.
