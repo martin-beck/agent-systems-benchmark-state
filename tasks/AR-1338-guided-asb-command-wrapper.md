@@ -10,7 +10,7 @@
     "AR-1446"
   ],
   "id": "AR-1338",
-  "next_action": "Continue monitoring PR #327 exact head 36d94ff1237cf0188b98ed1c969e3d40cd190b3f; required checks are still pending; do not merge until all are green.",
+  "next_action": "Merge PR #327 through the protected path now that all 12 exact-head checks are green; then verify seven exact-main post-merge workflows.",
   "observed_branch": "feature/ar-1338-guided-asb-command-wrapper",
   "observed_dirty": 0,
   "observed_head": "36d94ff1237cf0188b98ed1c969e3d40cd190b3f",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows.",
-  "task_revision": 153,
+  "task_revision": 154,
   "title": "Guided ASB command wrapper",
-  "updated_at": "2026-09-26T16:29:02+00:00",
+  "updated_at": "2026-09-26T16:34:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1338-guided-asb-command-wrapper"
 }
 ---
@@ -457,3 +457,6 @@ reachability.
   #327 base main=0bfea96fcac83998b42ac8ae5afb8764d175369d. Current checks: Retained faults, bounded
   fuzz, headers, Kani, platform evidence, AWQ shadow, Loom pass; Emulated aarch64, Rust, matcher/SLO
   sentinels, policy/coverage/supply chain, TLC/Alloy pending. Worktree clean.
+
+- 2026-09-26T16:34:38+00:00: PR #327 exact head 36d94ff is clean and all 12 required checks are
+  terminal SUCCESS; independent review clean.
