@@ -11,21 +11,21 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #332 | `feature/ar-1453-frontend-orchestration-wiring@082b0624abe2` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: route ASB frontends through central orchestration |
-| #335 | `feature/ar-1332-record-live-replay-offline@97d9bbc3b6a9` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add explicit record-live replay-offline workflow |
+| #335 | `feature/ar-1332-record-live-replay-offline@cbfe6e42870e` | `main` | UNSTABLE | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(cli): add explicit record-live replay-offline workflow |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 36258203222 | `cbfe6e42870e` | pull_request | Rust verification | in_progress:- |
+| 36258203204 | `cbfe6e42870e` | pull_request | Formal assurance | in_progress:- |
+| 36258203135 | `cbfe6e42870e` | pull_request | Repository quality | in_progress:- |
+| 36258203115 | `cbfe6e42870e` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 36258203113 | `cbfe6e42870e` | pull_request | Fault assurance | in_progress:- |
+| 36258203111 | `cbfe6e42870e` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 36258203104 | `cbfe6e42870e` | pull_request | Huawei MIT source headers | in_progress:- |
+| 36258203102 | `cbfe6e42870e` | pull_request | Agent Workflow Quality shadow | queued:- |
 | 36257756861 | `97d9bbc3b6a9` | pull_request | Rust verification | completed:failure |
 | 36257756840 | `97d9bbc3b6a9` | pull_request | Formal assurance | completed:success |
 | 36257756837 | `97d9bbc3b6a9` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36257756796 | `97d9bbc3b6a9` | pull_request | Emulated aarch64 portability | completed:success |
-| 36257756751 | `97d9bbc3b6a9` | pull_request | Fault assurance | completed:success |
-| 36257756737 | `97d9bbc3b6a9` | pull_request | Huawei MIT source headers | completed:success |
-| 36257756709 | `97d9bbc3b6a9` | pull_request | Hosted portability and native qualification | completed:success |
-| 36257756702 | `97d9bbc3b6a9` | pull_request | Repository quality | completed:failure |
-| 36255958468 | `28730b61572f` | push | Emulated aarch64 portability | completed:success |
-| 36255958451 | `28730b61572f` | push | Huawei MIT source headers | completed:success |
-| 36255958449 | `28730b61572f` | push | Repository quality | completed:success |
-| 36255958437 | `28730b61572f` | push | Hosted portability and native qualification | completed:success |
