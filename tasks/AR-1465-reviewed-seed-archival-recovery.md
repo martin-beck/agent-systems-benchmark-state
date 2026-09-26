@@ -10,11 +10,11 @@
   "plan": "../plans/AR-1465-reviewed-seed-archival-recovery.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Follow-on recovery for the exact reviewed AR-1308 full-exhaustive seed, which is absent from current approved runner roots and Git objects.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Reviewed full-exhaustive seed archival recovery",
-  "updated_at": "2026-09-26T00:00:00+00:00",
+  "updated_at": "2026-09-26T22:05:42+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1465-reviewed-seed-archival-recovery"
 }
 ---
@@ -26,3 +26,6 @@ needed by AR-1308. It must not weaken formal gates or invent equivalent input.
   digest is absent from the approved second-disk runner roots and state Git
   objects; existing fixtures have different digests. No QEMU/TLC run is
   authorized until the exact bytes are independently recovered.
+
+- 2026-09-26T22:05:42+00:00: Archival seed recovery is independently actionable; AR-1464 capacity
+  provisioning is complete except seed availability and need not block the search.
