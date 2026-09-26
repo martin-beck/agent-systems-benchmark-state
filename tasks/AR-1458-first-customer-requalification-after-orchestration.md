@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Requalify the first-customer production-like journey after central orchestration became authoritative.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "First-customer requalification after central orchestration",
-  "updated_at": "2026-09-26T18:43:06+00:00",
+  "updated_at": "2026-09-26T18:43:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1458-first-customer-requalification-after-orchestration"
 }
 ---
@@ -95,3 +95,6 @@ and separately classified.
 
 - 2026-09-26T18:43:06+00:00: Recorded command exit 0; command argv SHA-256
   28358b8048b4bb42bab1e7207a4a518f3d4ff0440c49f39ac36d99fbcd1c0854.
+
+- 2026-09-26T18:43:51+00:00: Recorded command exit 0; command argv SHA-256
+  b49a90ee600c1023cee9ee9f9e8a4f9a06c53eef8c48d3932d88e482126c7c01.
