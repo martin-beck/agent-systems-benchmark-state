@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Requalify first-customer readiness after the latest local-mock campaign merge.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Current-main first-customer requalification",
-  "updated_at": "2026-09-26T19:02:30+00:00",
+  "updated_at": "2026-09-26T19:03:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1460-current-main-first-customer-requalification"
 }
 ---
@@ -87,3 +87,6 @@ narrow repair AR; no release claim is made from stale evidence.
 
 - 2026-09-26T19:02:30+00:00: Recorded command exit 0; command argv SHA-256
   8f020a8266d9eda8e0ed704996e99736ad1cf29c0294cefaaa456dc2d9fb4d92.
+
+- 2026-09-26T19:03:15+00:00: Recorded command exit 0; command argv SHA-256
+  b49a90ee600c1023cee9ee9f9e8a4f9a06c53eef8c48d3932d88e482126c7c01.
