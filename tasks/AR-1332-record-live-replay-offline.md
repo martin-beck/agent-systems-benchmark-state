@@ -9,17 +9,17 @@
   "id": "AR-1332",
   "next_action": "Add the record-live then replay-offline CLI workflow that seals cassettes from an opt-in live run and replays them strictly offline without provider fallback.",
   "observed_branch": "feature/ar-1332-record-live-replay-offline",
-  "observed_dirty": 4,
-  "observed_head": "28730b61572f463e9cf1e6b5f1cf20fd198ef7e8",
+  "observed_dirty": 0,
+  "observed_head": "705f0c807dc7fb02dff5e488a7af296cbe79e344",
   "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1332.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the record-live then replay-offline end-to-end CLI workflow.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Record-live to replay-offline workflow",
-  "updated_at": "2026-09-26T16:58:48+00:00",
+  "updated_at": "2026-09-26T16:59:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1332-record-live-replay-offline"
 }
 ---
