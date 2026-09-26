@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Local/mock multi-agent campaign successor",
-  "updated_at": "2026-09-26T17:51:42+00:00",
+  "updated_at": "2026-09-26T17:51:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1456-local-mock-multi-agent-campaign-successor"
 }
 ---
@@ -96,3 +96,6 @@ for local development, CI, or this AR's completion.
   .../Cargo.toml -- --check` exited nonzero with `Failed to find targets` because the workspace
   manifest requires `--all`; no source files changed. Next action: rerun as `cargo fmt --all
   --manifest-path .../Cargo.toml -- --check`, then full offline CLI tests.
+
+- 2026-09-26T17:51:49+00:00: Recorded command exit 1; command argv SHA-256
+  95e75af2f17ad457c403e824091094cd2bbccb54310101200517a063b063bc98.
