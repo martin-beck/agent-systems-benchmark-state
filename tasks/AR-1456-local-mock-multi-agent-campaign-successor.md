@@ -9,7 +9,7 @@
     "AR-1447"
   ],
   "id": "AR-1456",
-  "next_action": "Run record_campaign and guide_examples as separate focused tests through handoffctl, then full offline CLI quality and review.",
+  "next_action": "Run cargo fmt --all check, full asb-cli offline tests, provenance/privacy gates, then independent review and signed+DCO commit.",
   "observed_branch": "DETACHED",
   "observed_dirty": 2,
   "observed_head": "28730b61572f463e9cf1e6b5f1cf20fd198ef7e8",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Local/mock multi-agent campaign successor",
-  "updated_at": "2026-09-26T17:51:24+00:00",
+  "updated_at": "2026-09-26T17:51:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1456-local-mock-multi-agent-campaign-successor"
 }
 ---
@@ -91,3 +91,8 @@ for local development, CI, or this AR's completion.
 
 - 2026-09-26T17:51:24+00:00: Recorded command exit 1; command argv SHA-256
   268d23556ef34ac88476a38f6b1399600a956b46dd2af87973be362f24d2b466.
+
+- 2026-09-26T17:51:42+00:00: Recorded focused formatting setup failure: `cargo fmt --manifest-path
+  .../Cargo.toml -- --check` exited nonzero with `Failed to find targets` because the workspace
+  manifest requires `--all`; no source files changed. Next action: rerun as `cargo fmt --all
+  --manifest-path .../Cargo.toml -- --check`, then full offline CLI tests.

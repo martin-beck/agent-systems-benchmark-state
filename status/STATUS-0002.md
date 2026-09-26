@@ -122,7 +122,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md): Local/mock multi-agent campaign successor | ar1456-local-campaign-luna56 | Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution. | Run record_campaign and guide_examples as separate focused tests through handoffctl, then full offline CLI quality and review. |
+| P1 | [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md): Local/mock multi-agent campaign successor | ar1456-local-campaign-luna56 | Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution. | Run cargo fmt --all check, full asb-cli offline tests, provenance/privacy gates, then independent review and signed+DCO commit. |
 
 ### Open (1)
 
