@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1456-local-mock-multi-agent-campaign-successor",
   "checkpoint_commit": "36d4bdf35a644a36a8acfdb31078eb7f668a17c4",
-  "claim_expires": "2026-09-26T20:23:19+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1332",
     "AR-1433",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1456-local-mock-multi-agent-campaign-successor",
   "observed_dirty": 0,
   "observed_head": "f4b03611afb70cb6b6abc7ff95ae16815822891a",
-  "owner": "ar1456-local-campaign-luna56",
+  "owner": "",
   "plan": "../plans/AR-1456.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution.",
-  "task_revision": 123,
+  "task_revision": 124,
   "title": "Local/mock multi-agent campaign successor",
-  "updated_at": "2026-09-26T18:26:41+00:00",
+  "updated_at": "2026-09-26T18:26:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1456-local-mock-multi-agent-campaign-successor"
 }
 ---
@@ -432,3 +432,12 @@ for local development, CI, or this AR's completion.
 
 - 2026-09-26T18:26:41+00:00: Recorded command exit 0; command argv SHA-256
   f26643a1c2dfeeae7197387a02d7edd0ce608fe5937dd067edd4848894febb8c.
+
+- 2026-09-26T18:26:56+00:00: Completed AR-1456. PR #336 merged at exact protected-main SHA
+  36d4bdf35a644a36a8acfdb31078eb7f668a17c4 from signed+DCO head
+  f4b03611afb70cb6b6abc7ff95ae16815822891a. Exact remote main verified via git ls-remote. All seven
+  exact-main post-merge workflows terminal SUCCESS: Huawei 36262014360; Hosted 36262014372; Fault
+  36262014299; Formal 36262014306; AArch64 36262014316; Rust 36262014432; Repository quality
+  36262014331. Local evidence: campaign 1/1, guide 5/5, workflow transcript 3/3, full asb-cli
+  all-targets passed after provenance refresh; transient Rust state-root race rerun passed. Scope
+  remained ASB-only; no asb-tui changes and no AR-1329/live-provider requirement.

@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1456](tasks/AR-1456-local-mock-multi-agent-campaign-successor.md): Local/mock multi-agent campaign successor | Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution. | Monitor post-merge workflows 36262014306,36262014372,36262014331,36262014316,36262014432,36262014299 to terminal SUCCESS; then verify exact main and release done. | ar1456-local-campaign-luna56 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -473,6 +467,7 @@ Never edit this file directly.
 | P1 | [AR-1437](tasks/AR-1437-local-record-replay-campaign.md): Local record/replay campaign qualification | Qualify deterministic local record/replay and campaign journeys over the runtime mock. | Monitor seven exact-main workflows for merge ede3f032428c366769f1bdd5bc0988b87a14de83; verify terminal success and release only after exact remote checks. | - |
 | P1 | [AR-1438](tasks/AR-1438-hardened-trusted-runner-validation.md): Hardened trusted-runner validation repair | Make protected trusted-runner lifecycle validation compatible with hardened rootless execution. | Promote and repair the trusted development-host validation so it passes under the approved NoNewPrivileges runner hardening without weakening isolation or skipping lifecycle checks. | - |
 | P1 | [AR-1440](tasks/AR-1440-openrouter-model-refresh-local-measurements.md): Refresh OpenRouter model pin and local measurements | Refresh the stale OpenRouter free-model pin and qualify local-only benchmark measurements. | Release complete after PR #323 product head 8d2a99d and two-parent topology repair PR #324 merge 5871de7cad4ee7e496ffce1c5e1fe51862660bfc; seven exact-main workflows all green. GitHub has no independent review record for PR #324; preserved as an evidence gap, not fabricated. | - |
+| P1 | [AR-1456](tasks/AR-1456-local-mock-multi-agent-campaign-successor.md): Local/mock multi-agent campaign successor | Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution. | Monitor post-merge workflows 36262014306,36262014372,36262014331,36262014316,36262014432,36262014299 to terminal SUCCESS; then verify exact main and release done. | - |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Run final exact-main and local post-merge verification using required native x86_64 kernel evidence and applicable pinned QEMU AArch64 portability checks; record native ARM64 PMU/eBPF as optional future evidence, then release. | - |
 | P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Run final state validation/live doctor and release done after confirming clean synchronized product/state refs at signed merge a0d80e4. | - |
 | P2 | [AR-0309](tasks/AR-0309-agent-openhands.md): Implement maintained OpenHands SDK client adapter | Run a maintained MIT OpenHands SDK or canonical headless client. | Monitor PR #65 exact-head CI for fec0487, investigate any failure, and await final review; do not merge. | - |
