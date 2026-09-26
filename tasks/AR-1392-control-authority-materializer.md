@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1392-control-authority-materializer",
-  "checkpoint_commit": "10bffbf015bd7ca78d8c0d18f04cf0190195e933",
+  "checkpoint_commit": "739b67d9888e8aced90a13cab79fb67291b297de",
   "claim_expires": "2026-09-27T01:52:14+00:00",
   "depends_on": [
     "AR-1388",
@@ -14,7 +14,7 @@
     "AR-1340"
   ],
   "id": "AR-1392",
-  "next_action": "Claim the pre-bound isolated worktree, implement the control-owned private authority resolver required by AR-1391, and publish a signed PR.",
+  "next_action": "Publish signed PR from reviewed exact head; require exact-head CI before merge.",
   "observed_branch": "feature/ar-1392-control-authority-materializer",
   "observed_dirty": 0,
   "observed_head": "739b67d9888e8aced90a13cab79fb67291b297de",
@@ -24,9 +24,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve private live authority from authenticated control enrollment without caller injection.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Control-owned private authority materializer",
-  "updated_at": "2026-09-26T23:00:50+00:00",
+  "updated_at": "2026-09-26T23:01:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1392-control-authority-materializer"
 }
 ---
@@ -151,3 +151,13 @@ reachability.
 
 - 2026-09-26T23:00:50+00:00: Recorded command exit 0; command argv SHA-256
   bbffd26e88e50797d59654edbf9141196ff37c63c14854f27cc07eb7ef63c9ef.
+
+- 2026-09-26T23:01:21+00:00: Implemented control-owned receipt materializer over AR-1371: every
+  RuntimeReceipt revalidates active auth status, endpoint digest, credential reference, and
+  generation before issuing; revoked/rotated enrollment fails closed. Added hostile local test
+  covering receipt issuance then revocation. Focused authority/receipt tests, 103 asb-cli + 66
+  asb-control library tests (successful rerun after transient state-root ownership race), cargo fmt
+  --all --check, and clippy -D warnings passed. Initial cargo fmt invocation failed with cargo
+  'Failed to find targets' because --all was omitted; corrected command passed. Independent diff
+  review: one-file scoped change, no caller-provided authority, no secrets/asb-tui/live provider.
+  Signed+DCO commit 739b67d9888e8aced90a13cab79fb67291b297de; worktree clean.

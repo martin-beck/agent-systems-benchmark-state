@@ -138,7 +138,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1392](../tasks/AR-1392-control-authority-materializer.md): Control-owned private authority materializer | coordinator-ar1392-control-materializer | Resolve private live authority from authenticated control enrollment without caller injection. | Claim the pre-bound isolated worktree, implement the control-owned private authority resolver required by AR-1391, and publish a signed PR. |
+| P0 | [AR-1392](../tasks/AR-1392-control-authority-materializer.md): Control-owned private authority materializer | coordinator-ar1392-control-materializer | Resolve private live authority from authenticated control enrollment without caller injection. | Publish signed PR from reviewed exact head; require exact-head CI before merge. |
 
 ### Blocked (69)
 
