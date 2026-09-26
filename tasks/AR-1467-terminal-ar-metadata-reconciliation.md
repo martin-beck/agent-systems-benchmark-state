@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Remove stale historical next-action text from recently completed ASB AR records without changing implementation or gates.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Terminal AR metadata reconciliation",
-  "updated_at": "2026-09-26T22:25:07+00:00",
+  "updated_at": "2026-09-26T22:25:37+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1467-terminal-ar-metadata-reconciliation"
 }
 ---
@@ -27,3 +27,6 @@ ASB release dependency.
 - 2026-09-26T22:25:00+00:00: Dependencies are empty; begin bounded terminal metadata audit.
 
 - 2026-09-26T22:25:07+00:00: Claimed by coordinator-ar1467-terminal-metadata.
+
+- 2026-09-26T22:25:37+00:00: Recorded command exit 1; command argv SHA-256
+  0841562c8b213c4adc8ac9bfabdd15b6692ae2e0af1e17930d34073c695c141e.
