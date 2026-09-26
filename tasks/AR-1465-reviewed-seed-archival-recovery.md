@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Follow-on recovery for the exact reviewed AR-1308 full-exhaustive seed, which is absent from current approved runner roots and Git objects.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Reviewed full-exhaustive seed archival recovery",
-  "updated_at": "2026-09-26T22:07:41+00:00",
+  "updated_at": "2026-09-26T22:08:07+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1465-reviewed-seed-archival-recovery"
 }
 ---
@@ -42,3 +42,6 @@ needed by AR-1308. It must not weaken formal gates or invent equivalent input.
 
 - 2026-09-26T22:07:41+00:00: Recorded command exit 141; command argv SHA-256
   75d3e5f7bf9e67b272b14f2397b163c26904e3c27e42f2f3eba1ff8eeb3eb0d6.
+
+- 2026-09-26T22:08:07+00:00: Recorded command exit 0; command argv SHA-256
+  ae1072da9427bc49ea362550926e7e36be089dc78cf265192b1a281fccae5045.
