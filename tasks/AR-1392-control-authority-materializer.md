@@ -24,9 +24,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve private live authority from authenticated control enrollment without caller injection.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Control-owned private authority materializer",
-  "updated_at": "2026-09-26T23:02:44+00:00",
+  "updated_at": "2026-09-26T23:03:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1392-control-authority-materializer"
 }
 ---
@@ -173,3 +173,6 @@ reachability.
 
 - 2026-09-26T23:02:44+00:00: Recorded command exit 0; command argv SHA-256
   39d7bf24a637c2d98c79c0adc029468e33bea0ae0bad9d50c3a5a3ad0c4ac7d4.
+
+- 2026-09-26T23:03:05+00:00: Recorded command exit 0; command argv SHA-256
+  6e1469bfd3603f64c6d7a647a1775177c983aad23d3b75fa73f0674fb2f7ddb4.
