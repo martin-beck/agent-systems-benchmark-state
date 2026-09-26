@@ -2,21 +2,21 @@
 {
   "branch": "release/ar-1462-pinned-release-toolchain-bundle-workflow",
   "checkpoint_commit": "36d4bdf35a644a36a8acfdb31078eb7f668a17c4",
-  "claim_expires": "",
+  "claim_expires": "2026-09-26T21:17:03+00:00",
   "depends_on": [
     "AR-1460"
   ],
   "id": "AR-1462",
   "next_action": "Promote and implement the pinned offline-capable cargo-deny/cargo-audit toolchain and reviewed first-customer bundle/tag workflow, then rerun release readiness against exact protected main.",
-  "owner": "",
+  "owner": "coordinator-ar1462-release-tooling",
   "plan": "../plans/AR-1462.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Establish reproducible supply-chain checks and first-customer release bundle publication workflow.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Pinned release toolchain and first-customer bundle workflow",
-  "updated_at": "2026-09-26T19:17:00+00:00",
+  "updated_at": "2026-09-26T19:17:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1462-pinned-release-toolchain-bundle-workflow"
 }
 ---
@@ -37,3 +37,5 @@ all integrity, provenance, privacy and exact-head checks remain mandatory.
 
 - 2026-09-26T19:17:00+00:00: AR-1460 is done; AR-1461 identified the release-tooling blocker;
   promote bounded P0 repair.
+
+- 2026-09-26T19:17:03+00:00: Claimed by coordinator-ar1462-release-tooling.

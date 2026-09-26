@@ -3,11 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1462](tasks/AR-1462-pinned-release-toolchain-bundle-workflow.md): Pinned release toolchain and first-customer bundle workflow | Establish reproducible supply-chain checks and first-customer release bundle publication workflow. | Promote and implement the pinned offline-capable cargo-deny/cargo-audit toolchain and reviewed first-customer bundle/tag workflow, then rerun release readiness against exact protected main. | coordinator-ar1462-release-tooling |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1462](tasks/AR-1462-pinned-release-toolchain-bundle-workflow.md): Pinned release toolchain and first-customer bundle workflow | Establish reproducible supply-chain checks and first-customer release bundle publication workflow. | Promote and implement the pinned offline-capable cargo-deny/cargo-audit toolchain and reviewed first-customer bundle/tag workflow, then rerun release readiness against exact protected main. | - |
 | P2 | [AR-1444](tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. | - |
 
 ## Blocked
