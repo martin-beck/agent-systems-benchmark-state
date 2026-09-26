@@ -9,7 +9,7 @@
   "id": "AR-1332",
   "next_action": "Monitor PR #335 exact-head CI; do not merge until all required checks are green.",
   "observed_branch": "feature/ar-1332-record-live-replay-offline",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "97d9bbc3b6a9e0f793ac6a5a4ba3103e85f5e4a7",
   "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1332.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the record-live then replay-offline end-to-end CLI workflow.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Record-live to replay-offline workflow",
-  "updated_at": "2026-09-26T17:10:11+00:00",
+  "updated_at": "2026-09-26T17:10:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1332-record-live-replay-offline"
 }
 ---
