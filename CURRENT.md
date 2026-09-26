@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1338](tasks/AR-1338-guided-asb-command-wrapper.md): Guided ASB command wrapper | Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows. | PR #327 head 4d42f59 has green exact-head hosted checks and complete local gates. AR-1449 and AR-1450 audits both confirmed the remaining P1: AR-1448 lacks a runtime-owned provisioning entrypoint, so ordinary CLI easy replay cannot safely acquire authority. Keep PR unmerged and do not weaken fail-closed replay; promote a reviewed runtime provisioning design before integrating and rerunning gates. | ar1338-guided-wrapper-luna56 |
+| P1 | [AR-1338](tasks/AR-1338-guided-asb-command-wrapper.md): Guided ASB command wrapper | Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows. | Independent review and focused/full gates on rebased f94013b; then publish exact-head PR update without overwriting stale remote history. | ar1338-guided-wrapper-luna56 |
 
 ## Blocked
 
