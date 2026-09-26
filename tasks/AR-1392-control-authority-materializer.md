@@ -16,17 +16,17 @@
   "id": "AR-1392",
   "next_action": "Claim the pre-bound isolated worktree, implement the control-owned private authority resolver required by AR-1391, and publish a signed PR.",
   "observed_branch": "feature/ar-1392-control-authority-materializer",
-  "observed_dirty": 1,
-  "observed_head": "10bffbf015bd7ca78d8c0d18f04cf0190195e933",
+  "observed_dirty": 0,
+  "observed_head": "739b67d9888e8aced90a13cab79fb67291b297de",
   "owner": "coordinator-ar1392-control-materializer",
   "plan": "../plans/AR-1392-control-authority-materializer.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve private live authority from authenticated control enrollment without caller injection.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Control-owned private authority materializer",
-  "updated_at": "2026-09-26T23:00:29+00:00",
+  "updated_at": "2026-09-26T23:00:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1392-control-authority-materializer"
 }
 ---
