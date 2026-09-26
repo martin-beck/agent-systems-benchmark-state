@@ -5,10 +5,11 @@
   "claim_expires": "",
   "depends_on": [
     "AR-1329",
-    "AR-1332"
+    "AR-1332",
+    "AR-1456"
   ],
   "id": "AR-1333",
-  "next_action": "Add the benchmark campaign mode that runs the compatible agent matrix against the workload suite under one pinned free model, with per-tuple records, sealed cassettes and strict offline replay.",
+  "next_action": "Keep AR-1333 as the optional production/live campaign successor; implement the mandatory credential-free local/mock campaign through AR-1456 and do not wait on AR-1329 for local qualification.",
   "owner": "",
   "plan": "../plans/AR-1333.md",
   "priority": "P1",
@@ -24,13 +25,10 @@
 
 The single-run and capture/replay pieces deliver evidence per execution, but
 benchmarking different agents under specific workloads requires a campaign that
-drives the whole matrix. This AR adds a campaign mode that, for every selected
-agent and workload tuple, executes the agent under the pinned OpenRouter
-free-model selection, captures and seals each cassette, and produces a per-tuple
-record with the agent, workload, model, digest, result and replay outcome. The
-campaign persists intent before provider effects, reconciles interrupted tuples
-to stale without repeating paid work, and supports offline replay of the sealed
-matrix for reproducible comparison.
+drives the whole matrix. The mandatory credential-free local/mock path is now
+owned by AR-1456. This AR remains the optional production/live successor for
+provider-backed campaign execution and must not be used to block local
+development, CI, or first-customer mock qualification.
 
 ## Current development and CI qualification boundary
 
