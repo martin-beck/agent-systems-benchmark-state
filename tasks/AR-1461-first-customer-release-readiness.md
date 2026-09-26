@@ -8,7 +8,7 @@
     "AR-1460"
   ],
   "id": "AR-1461",
-  "next_action": "Release done after public tag/release and fresh consumption verification.",
+  "next_action": "No further action; v0.1.0 was published and fresh customer-consumption verification is recorded.",
   "observed_branch": "release/ar-1461-first-customer-release-readiness",
   "observed_dirty": 0,
   "observed_head": "0a85123785c3e5e293fee02df757f494ac3423fe",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "done",
   "summary": "Prepare and publish the first-customer ASB release from the currently qualified main.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "First-customer release readiness and publication",
-  "updated_at": "2026-09-26T20:06:23+00:00",
+  "updated_at": "2026-09-26T22:26:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1461-first-customer-release-readiness"
 }
 ---
@@ -189,3 +189,5 @@ no gate may be weakened. No asb-tui or remote-provider dependency is added.
   qualified, tag v0.1.0 and public release published, archive
   a4eaebdf422c5fa57f0bca182502416cc8c68aa08faf7588c622e953906c36ed freshly consumed with
   checksum/SBOM/source-revision verification.
+
+- 2026-09-26T22:26:46+00:00: AR-1467 verified the terminal merge/release evidence and replaced stale next-action text; no implementation or gate change.

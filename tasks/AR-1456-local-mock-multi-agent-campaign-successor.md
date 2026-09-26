@@ -9,7 +9,7 @@
     "AR-1447"
   ],
   "id": "AR-1456",
-  "next_action": "Monitor post-merge workflows 36262014306,36262014372,36262014331,36262014316,36262014432,36262014299 to terminal SUCCESS; then verify exact main and release done.",
+  "next_action": "No further action; PR #336 merged and all recorded exact-main post-merge workflows are green.",
   "observed_branch": "feature/ar-1456-local-mock-multi-agent-campaign-successor",
   "observed_dirty": 0,
   "observed_head": "f4b03611afb70cb6b6abc7ff95ae16815822891a",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "done",
   "summary": "Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution.",
-  "task_revision": 124,
+  "task_revision": 125,
   "title": "Local/mock multi-agent campaign successor",
-  "updated_at": "2026-09-26T18:26:56+00:00",
+  "updated_at": "2026-09-26T22:26:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1456-local-mock-multi-agent-campaign-successor"
 }
 ---
@@ -441,3 +441,5 @@ for local development, CI, or this AR's completion.
   36262014331. Local evidence: campaign 1/1, guide 5/5, workflow transcript 3/3, full asb-cli
   all-targets passed after provenance refresh; transient Rust state-root race rerun passed. Scope
   remained ASB-only; no asb-tui changes and no AR-1329/live-provider requirement.
+
+- 2026-09-26T22:26:46+00:00: AR-1467 verified the terminal merge/release evidence and replaced stale next-action text; no implementation or gate change.

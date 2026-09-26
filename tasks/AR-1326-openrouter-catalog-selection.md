@@ -8,7 +8,7 @@
     "AR-1325"
   ],
   "id": "AR-1326",
-  "next_action": "PR #250 merged at 8692729a58d16e5c9d5387d5d68a7daa54d6443a. Post-merge hosted workflows: Fault assurance and hosted portability passed; Rust verification failed once on timing assertion gemini::tests::malformed_ready_marker_fails_fast_and_cleans_run_root (elapsed >= 1s), while Repository quality, Formal assurance, and Emulated AArch64 remain in progress. Keep AR in progress and create/assign a repair AR or approved rerun; do not release done until all post-merge evidence is green.",
+  "next_action": "No further action; merged PR #250 and all seven post-merge workflows are recorded green.",
   "observed_branch": "feature/ar-1326-openrouter-catalog-selection",
   "observed_dirty": 0,
   "observed_head": "64a3a002018a542cba9a6e5844589c89417700a5",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "done",
   "summary": "Advertise the OpenRouter profile in the CLI provider catalog and accept it in provider-plan selection.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Select OpenRouter through the CLI provider catalog",
-  "updated_at": "2026-09-23T07:09:19+00:00",
+  "updated_at": "2026-09-26T22:26:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1326-openrouter-catalog-selection"
 }
 ---
@@ -147,3 +147,5 @@ the fail-closed content-address checks.
 - 2026-09-23T07:09:19+00:00: PR #250 merged at 8692729a58d16e5c9d5387d5d68a7daa54d6443a; all seven
   post-merge workflows terminal success, including rerun Rust verification after existing Gemini
   timing flake; exact signed/DCO review and local focused gates recorded.
+
+- 2026-09-26T22:26:46+00:00: AR-1467 verified the terminal merge/release evidence and replaced stale next-action text; no implementation or gate change.

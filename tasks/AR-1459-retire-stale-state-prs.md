@@ -7,16 +7,16 @@
     "AR-1457"
   ],
   "id": "AR-1459",
-  "next_action": "Close stale state PRs #20, #21, and #27 as superseded after confirming their proposed AR metadata is already represented by current state; leave blocked formal PR #25 open and record exact outcomes.",
+  "next_action": "No further action; stale state PRs were closed and blocked formal PR #25 remains intentionally open.",
   "owner": "",
   "plan": "../plans/AR-1459.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "done",
   "summary": "Retire obsolete state-repository pull requests without changing product or formal gates.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Retire stale state-repository pull requests",
-  "updated_at": "2026-09-26T18:50:11+00:00",
+  "updated_at": "2026-09-26T22:26:46+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1459-retire-stale-state-prs"
 }
 ---
@@ -46,3 +46,5 @@ asb-tui source changes are in scope.
   are now CLOSED and their historical evidence is preserved. PR #25 remains OPEN because AR-1307
   formal qualification is blocked by truthful Java OOM/capacity evidence. No product or asb-tui
   changes.
+
+- 2026-09-26T22:26:46+00:00: AR-1467 verified the terminal merge/release evidence and replaced stale next-action text; no implementation or gate change.

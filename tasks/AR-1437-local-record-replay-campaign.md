@@ -8,7 +8,7 @@
     "AR-1328"
   ],
   "id": "AR-1437",
-  "next_action": "Monitor seven exact-main workflows for merge ede3f032428c366769f1bdd5bc0988b87a14de83; verify terminal success and release only after exact remote checks.",
+  "next_action": "No further action; PR #318 merged and the recorded seven-workflow qualification is complete.",
   "observed_branch": "feature/ar-1437-local-record-replay-campaign",
   "observed_dirty": 0,
   "observed_head": "a7d041bcf97cec413c1447fc7910f9fc3a4c4764",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "done",
   "summary": "Qualify deterministic local record/replay and campaign journeys over the runtime mock.",
-  "task_revision": 70,
+  "task_revision": 71,
   "title": "Local record/replay campaign qualification",
-  "updated_at": "2026-09-25T02:00:05+00:00",
+  "updated_at": "2026-09-26T22:26:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1437-local-record-replay-campaign"
 }
 ---
@@ -249,3 +249,5 @@ campaign qualification. Require focused/full/review/PR/seven post-merge gates.
   exit-1 diagnosis: cargo fmt check caught a malformed comma in a newly edited hostile test at
   01:29:24; corrected with cargo fmt and reran green. Local mock-only boundary preserved; no live
   provider access or live AR dependencies resumed.
+
+- 2026-09-26T22:26:46+00:00: AR-1467 verified the terminal merge/release evidence and replaced stale next-action text; no implementation or gate change.

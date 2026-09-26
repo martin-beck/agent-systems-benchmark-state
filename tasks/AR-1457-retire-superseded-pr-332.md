@@ -7,16 +7,16 @@
     "AR-1453"
   ],
   "id": "AR-1457",
-  "next_action": "Close obsolete PR #332 as superseded by merged PR #333, then verify the repository has no stale open PR for AR-1453 and release this maintenance AR with durable evidence.",
+  "next_action": "No further action; obsolete PR #332 was closed and authoritative PR #333 remains verified.",
   "owner": "",
   "plan": "../plans/AR-1457.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "done",
   "summary": "Retire the obsolete pre-repair AR-1453 pull request without changing product code.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Retire superseded AR-1453 pull request",
-  "updated_at": "2026-09-26T18:35:41+00:00",
+  "updated_at": "2026-09-26T22:26:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1457-retire-superseded-pr-332"
 }
 ---
@@ -40,3 +40,5 @@ asb-tui, or release changes are in scope.
   merged. PR #333 remains the authoritative AR-1453 merge at
   23b2fb5f241934168131efe6cd5173d5d316a857 with all seven exact-main workflows green. No product or
   asb-tui changes.
+
+- 2026-09-26T22:26:46+00:00: AR-1467 verified the terminal merge/release evidence and replaced stale next-action text; no implementation or gate change.

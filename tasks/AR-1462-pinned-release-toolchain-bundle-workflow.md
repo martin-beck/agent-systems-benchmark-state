@@ -7,7 +7,7 @@
     "AR-1460"
   ],
   "id": "AR-1462",
-  "next_action": "Release done after recording all seven green exact-main workflows.",
+  "next_action": "No further action; PR #337 merged and all seven exact-main post-merge workflows are green.",
   "observed_branch": "release/ar-1462-pinned-release-toolchain-bundle-workflow",
   "observed_dirty": 0,
   "observed_head": "76f099487da31b0ee7d7d29b9561785ccbb4e11f",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "done",
   "summary": "Establish reproducible supply-chain checks and first-customer release bundle publication workflow.",
-  "task_revision": 80,
+  "task_revision": 81,
   "title": "Pinned release toolchain and first-customer bundle workflow",
-  "updated_at": "2026-09-26T19:55:04+00:00",
+  "updated_at": "2026-09-26T22:26:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1462-pinned-release-toolchain-bundle-workflow"
 }
 ---
@@ -230,3 +230,5 @@ all integrity, provenance, privacy and exact-head checks remain mandatory.
   0a85123785c3e5e293fee02df757f494ac3423fe from exact head 76f099487da31b0ee7d7d29b9561785ccbb4e11f;
   all seven exact-main post-merge workflows green (36267124368, 36267124413, 36267124396,
   36267124398, 36267124390, 36267124403, 36267124417).
+
+- 2026-09-26T22:26:46+00:00: AR-1467 verified the terminal merge/release evidence and replaced stale next-action text; no implementation or gate change.

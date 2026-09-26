@@ -8,7 +8,7 @@
     "AR-1328"
   ],
   "id": "AR-1436",
-  "next_action": "Preserve failed Repository quality run 36080877969; rerun that exact post-merge workflow and require success, while monitoring remaining workflows.",
+  "next_action": "No further action; PR #317 merged and the recorded post-merge qualification is complete.",
   "observed_branch": "feature/ar-1436-local-guided-cli-wrapper",
   "observed_dirty": 0,
   "observed_head": "ae48046d980237d078dd2a5aa155400d20330059",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "done",
   "summary": "Add a catalog-driven guided CLI wrapper for deterministic local mock qualification.",
-  "task_revision": 96,
+  "task_revision": 97,
   "title": "Local guided CLI wrapper",
-  "updated_at": "2026-09-25T01:26:38+00:00",
+  "updated_at": "2026-09-26T22:26:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1436-local-guided-cli-wrapper"
 }
 ---
@@ -333,3 +333,5 @@ weakening. Require focused/full/review/PR/seven post-merge gates.
   Hosted portability/native 36080878008, Huawei headers 36080877995. Local serial/full tests,
   clippy, docs, release build, independent review and privacy scan passed. AR-1329/AR-1338 remain
   untouched; AR-1332/AR-1333 remain planned future references.
+
+- 2026-09-26T22:26:46+00:00: AR-1467 verified the terminal merge/release evidence and replaced stale next-action text; no implementation or gate change.
