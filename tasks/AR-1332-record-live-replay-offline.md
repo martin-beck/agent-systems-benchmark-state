@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the record-live then replay-offline end-to-end CLI workflow.",
-  "task_revision": 56,
+  "task_revision": 57,
   "title": "Record-live to replay-offline workflow",
-  "updated_at": "2026-09-26T17:05:33+00:00",
+  "updated_at": "2026-09-26T17:05:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1332-record-live-replay-offline"
 }
 ---
@@ -193,3 +193,6 @@ reachability.
   97d9bbc3b6a9e0f793ac6a5a4ba3103e85f5e4a7; parent-provided alternate SHA was incorrect. Opened
   reviewed PR #335 from that exact head. Await exact-head required checks; merge is not authorized
   until all required checks pass.
+
+- 2026-09-26T17:05:42+00:00: Recorded command exit 0; command argv SHA-256
+  abf3449193f8b5a675360a669752df39a6a890d0ce28ca6ebbc120bf1a6249af.
