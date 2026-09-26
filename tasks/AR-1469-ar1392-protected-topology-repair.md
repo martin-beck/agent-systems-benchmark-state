@@ -8,16 +8,16 @@
   "next_action": "Publish PR from exact empty signed repair commit; require exact-head checks, then normal non-squash merge.",
   "observed_branch": "repair/ar-1469-ar1392-protected-topology-repair",
   "observed_dirty": 0,
-  "observed_head": "beb399681ad6ebcd9274f6fcea3b471da715afd8",
+  "observed_head": "e39d27d83939f77b619adcb0350b941da746d7d2",
   "owner": "ar1332_record_replay_luna56",
   "plan": "../plans/AR-1469-ar1392-protected-topology-repair.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the single-parent protected merge for AR-1392 without changing its reviewed implementation.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "AR-1392 protected-main topology repair",
-  "updated_at": "2026-09-26T23:41:07+00:00",
+  "updated_at": "2026-09-26T23:41:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1469-ar1392-protected-topology-repair"
 }
 ---
