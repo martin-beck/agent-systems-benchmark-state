@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Follow-on recovery for the exact reviewed AR-1308 full-exhaustive seed, which is absent from current approved runner roots and Git objects.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Reviewed full-exhaustive seed archival recovery",
-  "updated_at": "2026-09-26T22:08:50+00:00",
+  "updated_at": "2026-09-26T22:09:09+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1465-reviewed-seed-archival-recovery"
 }
 ---
@@ -51,3 +51,7 @@ needed by AR-1308. It must not weaken formal gates or invent equivalent input.
 
 - 2026-09-26T22:08:50+00:00: Recorded command exit 0; command argv SHA-256
   9b9f439ce68b4ac49af79db13ff7dfe1becf9d45d654b34fb72e92da2de0bfe8.
+
+- 2026-09-26T22:09:09+00:00: Classified command exit 141: bounded pipeline used head, causing
+  upstream SIGPIPE after output truncation; no search failure or candidate match. Next action:
+  continue bounded archival/hash searches with non-SIGPIPE output handling.
