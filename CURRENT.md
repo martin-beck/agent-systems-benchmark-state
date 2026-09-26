@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1338](tasks/AR-1338-guided-asb-command-wrapper.md): Guided ASB command wrapper | Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows. | Monitor PR #327 at exact head 36d94ff1237cf0188b98ed1c969e3d40cd190b3f; do not merge until every required check is green. | ar1338-guided-wrapper-luna56 |
+| P1 | [AR-1338](tasks/AR-1338-guided-asb-command-wrapper.md): Guided ASB command wrapper | Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows. | Continue monitoring PR #327 exact head 36d94ff1237cf0188b98ed1c969e3d40cd190b3f; required checks are still pending; do not merge until all are green. | ar1338-guided-wrapper-luna56 |
 
 ## Blocked
 

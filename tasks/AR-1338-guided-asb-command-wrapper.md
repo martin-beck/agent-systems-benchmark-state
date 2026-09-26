@@ -10,7 +10,7 @@
     "AR-1446"
   ],
   "id": "AR-1338",
-  "next_action": "Monitor PR #327 at exact head 36d94ff1237cf0188b98ed1c969e3d40cd190b3f; do not merge until every required check is green.",
+  "next_action": "Continue monitoring PR #327 exact head 36d94ff1237cf0188b98ed1c969e3d40cd190b3f; required checks are still pending; do not merge until all are green.",
   "observed_branch": "feature/ar-1338-guided-asb-command-wrapper",
   "observed_dirty": 0,
   "observed_head": "36d94ff1237cf0188b98ed1c969e3d40cd190b3f",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows.",
-  "task_revision": 152,
+  "task_revision": 153,
   "title": "Guided ASB command wrapper",
-  "updated_at": "2026-09-26T16:28:36+00:00",
+  "updated_at": "2026-09-26T16:29:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1338-guided-asb-command-wrapper"
 }
 ---
@@ -451,3 +451,9 @@ reachability.
 
 - 2026-09-26T16:28:36+00:00: Recorded command exit 8; command argv SHA-256
   b2524a2bfd053eeff28aa529f064980f98ccaa0deb56a6d3e19bf174d24173cd.
+
+- 2026-09-26T16:29:02+00:00: Remote exact-head verification:
+  refs/heads/feature/ar-1338-guided-asb-command-wrapper=36d94ff1237cf0188b98ed1c969e3d40cd190b3f; PR
+  #327 base main=0bfea96fcac83998b42ac8ae5afb8764d175369d. Current checks: Retained faults, bounded
+  fuzz, headers, Kani, platform evidence, AWQ shadow, Loom pass; Emulated aarch64, Rust, matcher/SLO
+  sentinels, policy/coverage/supply chain, TLC/Alloy pending. Worktree clean.
