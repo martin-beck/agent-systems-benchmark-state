@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-26T22:32:23+00:00",
   "depends_on": [],
   "id": "AR-1464",
-  "next_action": "Obtain the reviewed full-exhaustive seed whose SHA-256 is b3383756b5cd357f58d923216effea33be35b793034de321c3c9ce460ece4b28 and a safe runner-local or authorized host swap arrangement with at least 1 GiB free; rerun signed preflight, then hand inputs to AR-1308. Do not boot TLC before both pass.",
+  "next_action": "Obtain or restore the reviewed full-exhaustive seed with SHA-256 b3383756b5cd357f58d923216effea33be35b793034de321c3c9ce460ece4b28. Do not regenerate or substitute a different seed. Then rerun the signed preflight, hand inputs to AR-1308, and remove/revert only the temporary AR-specific swap after the runner lifecycle.",
   "owner": "coordinator-ar1464-swap-recovery",
   "plan": "../plans/AR-1464.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Provisioned exact signed source, reviewed Ubuntu image, 64 GiB overlay and canonical lock; signed preflight remains blocked only by exhausted host swap and unavailable exact seed digest.",
-  "task_revision": 52,
+  "summary": "Exact signed source, reviewed image, 64 GiB overlay, JDK/TLC/model and canonical lock are provisioned. Reclaimed the three stale AR-specific swap files and activated two fresh AR-specific swap files; repeated signed preflight now passes every gate except the unavailable exact seed digest.",
+  "task_revision": 53,
   "title": "Formal capacity and signed-input provisioning repair",
-  "updated_at": "2026-09-26T21:39:11+00:00",
+  "updated_at": "2026-09-26T21:39:49+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1464-formal-capacity-input-provisioning"
 }
 ---
@@ -201,3 +201,8 @@ scope.
 
 - 2026-09-26T21:39:11+00:00: Recorded command exit 0; command argv SHA-256
   01a9418ce42e065206a46c8be7e9ee4e222538ffa85caa7a1da360a747a8d563.
+
+- 2026-09-26T21:39:49+00:00: Swap recovery completed under the claimed AR. The three stale
+  AR-specific swap files were safely deactivated; two fresh 2 GiB AR-specific swap files are active.
+  Preflight rerun with correct image/source/model/JDK/TLC/lock reports only seed input missing or
+  wrong digest. No QEMU/TLC boot or qualification was attempted.
