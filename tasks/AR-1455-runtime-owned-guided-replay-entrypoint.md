@@ -11,17 +11,17 @@
   "id": "AR-1455",
   "next_action": "Audit complete: current main has easy run/sweep local-mock path but it bypasses central orchestration and strict replay; implement runtime-owned guided replay entrypoint using control service/runtime authority, with negative and lifecycle tests before PR.",
   "observed_branch": "feature/ar-1455-runtime-owned-guided-replay-entrypoint",
-  "observed_dirty": 4,
-  "observed_head": "23b2fb5f241934168131efe6cd5173d5d316a857",
+  "observed_dirty": 0,
+  "observed_head": "1b79609c3be59f31fb1d58655e8091da532ba0f4",
   "owner": "ar1455-guided-replay-review-luna56",
   "plan": "../plans/AR-1455-runtime-owned-guided-replay-entrypoint.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the runtime-owned guided local replay entrypoint needed by AR-1338.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Runtime-owned guided replay entrypoint",
-  "updated_at": "2026-09-26T15:24:49+00:00",
+  "updated_at": "2026-09-26T15:25:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1455-runtime-owned-guided-replay-entrypoint"
 }
 ---
