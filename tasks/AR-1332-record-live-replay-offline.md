@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1332-record-live-replay-offline",
-  "checkpoint_commit": "cbfe6e42870e902c18808c87275d45b012547841",
+  "checkpoint_commit": "ad4f96ab3f7e57916208406b2f56aa9ec4e54885",
   "claim_expires": "2026-09-26T19:27:54+00:00",
   "depends_on": [
     "AR-1331"
   ],
   "id": "AR-1332",
-  "next_action": "Monitor PR #335 exact-head CI; do not merge until all required checks are green.",
+  "next_action": "Monitor seven exact-main post-merge workflows for merge SHA ad4f96ab3f7e57916208406b2f56aa9ec4e54885; release only after all are green and post-merge verification is durable.",
   "observed_branch": "feature/ar-1332-record-live-replay-offline",
   "observed_dirty": 0,
   "observed_head": "cbfe6e42870e902c18808c87275d45b012547841",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the record-live then replay-offline end-to-end CLI workflow.",
-  "task_revision": 93,
+  "task_revision": 94,
   "title": "Record-live to replay-offline workflow",
-  "updated_at": "2026-09-26T17:27:54+00:00",
+  "updated_at": "2026-09-26T17:27:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1332-record-live-replay-offline"
 }
 ---
@@ -298,3 +298,8 @@ reachability.
   138d234dd3b5bc4ef6ba29683ed8a69b88541f2d4393eec43e1f90ae4c302f2d.
 
 - 2026-09-26T17:27:54+00:00: Heartbeat by ar1332-record-replay-luna56.
+
+- 2026-09-26T17:27:56+00:00: PR #335 merged after all required exact-head checks passed. Merge SHA
+  ad4f96ab3f7e57916208406b2f56aa9ec4e54885. Exact-main workflows: headers and hosted portability
+  green; fault assurance and formal assurance green; repository quality, emulated aarch64, and Rust
+  verification remain in progress. AR release withheld.
