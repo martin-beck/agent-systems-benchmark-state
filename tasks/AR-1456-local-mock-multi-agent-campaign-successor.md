@@ -11,17 +11,17 @@
   "id": "AR-1456",
   "next_action": "Commit the reviewed three-file explicit local-mock opt-in patch signed+DCO; then publish only from the exact clean head.",
   "observed_branch": "feature/ar-1456-local-mock-multi-agent-campaign-successor",
-  "observed_dirty": 3,
-  "observed_head": "28730b61572f463e9cf1e6b5f1cf20fd198ef7e8",
+  "observed_dirty": 0,
+  "observed_head": "b6a3d5f22f1087fa4352eed760185cc745403ad9",
   "owner": "ar1456-local-campaign-luna56",
   "plan": "../plans/AR-1456.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Local/mock multi-agent campaign successor",
-  "updated_at": "2026-09-26T17:54:24+00:00",
+  "updated_at": "2026-09-26T17:54:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1456-local-mock-multi-agent-campaign-successor"
 }
 ---
