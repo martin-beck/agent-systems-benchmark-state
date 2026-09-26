@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prepare and publish the first-customer ASB release from the currently qualified main.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "First-customer release readiness and publication",
-  "updated_at": "2026-09-26T20:00:21+00:00",
+  "updated_at": "2026-09-26T20:01:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1461-first-customer-release-readiness"
 }
 ---
@@ -136,3 +136,6 @@ no gate may be weakened. No asb-tui or remote-provider dependency is added.
 
 - 2026-09-26T20:00:21+00:00: Recorded command exit 0; command argv SHA-256
   ab86a6c31434a53260d930880fc61b83fa040b6cd7a01b15358d80f5f29ece93.
+
+- 2026-09-26T20:01:50+00:00: Recorded command exit 0; command argv SHA-256
+  428457ea9cc6a21bd46c5be6651ba2faccb5b0b07ddc2fd6f96eca730dea5ab7.
