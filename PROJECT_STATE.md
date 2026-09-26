@@ -22,7 +22,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36262014331 | `36d4bdf35a64` | push | Repository quality | in_progress:- |
 | 36262014316 | `36d4bdf35a64` | push | Emulated aarch64 portability | in_progress:- |
 | 36262014306 | `36d4bdf35a64` | push | Formal assurance | in_progress:- |
-| 36262014299 | `36d4bdf35a64` | push | Fault assurance | in_progress:- |
+| 36262014299 | `36d4bdf35a64` | push | Fault assurance | completed:success |
 | 36261183850 | `f4b03611afb7` | pull_request | Repository quality | completed:success |
 | 36261183829 | `f4b03611afb7` | pull_request | Huawei MIT source headers | completed:success |
 | 36261183790 | `f4b03611afb7` | pull_request | Hosted portability and native qualification | completed:success |
