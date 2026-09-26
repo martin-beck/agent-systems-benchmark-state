@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1455-runtime-owned-guided-replay-entrypoint",
-  "checkpoint_commit": "d7a08e391fce78ee52811dc4e41fb3f6ed77413f",
+  "checkpoint_commit": "0bfea96fcac83998b42ac8ae5afb8764d175369d",
   "claim_expires": "2026-09-26T17:56:10+00:00",
   "depends_on": [
     "AR-1448",
@@ -9,7 +9,7 @@
     "AR-1453"
   ],
   "id": "AR-1455",
-  "next_action": "Merge PR #334 through the protected path now that all 12 exact-head checks are green; then verify exact-main post-merge workflows.",
+  "next_action": "Verify all seven exact-main post-merge workflows for merge 0bfea96; release AR-1455 only after every workflow is terminal SUCCESS and state doctor is clean.",
   "observed_branch": "feature/ar-1455-runtime-owned-guided-replay-entrypoint",
   "observed_dirty": 0,
   "observed_head": "d7a08e391fce78ee52811dc4e41fb3f6ed77413f",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the runtime-owned guided local replay entrypoint needed by AR-1338.",
-  "task_revision": 88,
+  "task_revision": 89,
   "title": "Runtime-owned guided replay entrypoint",
-  "updated_at": "2026-09-26T15:58:12+00:00",
+  "updated_at": "2026-09-26T15:58:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1455-runtime-owned-guided-replay-entrypoint"
 }
 ---
@@ -283,3 +283,6 @@ lifecycle; the guided wrapper is only a bounded client.
 
 - 2026-09-26T15:58:12+00:00: Recorded command exit 0; command argv SHA-256
   6194f3fdd64f871afb8e90689d5d82358ec7eace6ee5aea19fabbf7cf5680993.
+
+- 2026-09-26T15:58:48+00:00: PR #334 merged at 0bfea96fcac83998b42ac8ae5afb8764d175369d after all 12
+  exact-head checks passed. Seven post-merge workflows started.

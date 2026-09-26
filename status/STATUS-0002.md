@@ -121,7 +121,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1455](../tasks/AR-1455-runtime-owned-guided-replay-entrypoint.md): Runtime-owned guided replay entrypoint | ar1455-guided-replay-review-luna56 | Provide the runtime-owned guided local replay entrypoint needed by AR-1338. | Merge PR #334 through the protected path now that all 12 exact-head checks are green; then verify exact-main post-merge workflows. |
+| P0 | [AR-1455](../tasks/AR-1455-runtime-owned-guided-replay-entrypoint.md): Runtime-owned guided replay entrypoint | ar1455-guided-replay-review-luna56 | Provide the runtime-owned guided local replay entrypoint needed by AR-1338. | Verify all seven exact-main post-merge workflows for merge 0bfea96; release AR-1455 only after every workflow is terminal SUCCESS and state doctor is clean. |
 
 ### Open (1)
 
