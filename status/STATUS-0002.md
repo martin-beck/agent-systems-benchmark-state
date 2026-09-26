@@ -128,6 +128,7 @@
 | [AR-1464](../tasks/AR-1464-formal-capacity-input-provisioning.md) | None | None |
 | [AR-1465](../tasks/AR-1465-reviewed-seed-archival-recovery.md) | None | None |
 | [AR-1466](../tasks/AR-1466-state-ci-format-repair.md) | None | None |
+| [AR-1467](../tasks/AR-1467-terminal-ar-metadata-reconciliation.md) | None | None |
 
 ## Complete AR inventory
 
@@ -211,7 +212,7 @@
 | P2 | [AR-0705](../tasks/AR-0705-native-debian-capacity.md): Provide native Debian capacity | Unclaimed | Qualify booted Debian on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 Debian and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 
-### Planned (57)
+### Planned (58)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -269,6 +270,7 @@
 | P1 | [AR-1424](../tasks/AR-1424-all-literature-selector-campaign.md): Complete literature selector and local campaign matrix | Unclaimed | Make all locally executable literature workloads selectable and campaignable beside built-in fixtures. | Promote after AR-1423, AR-1430, AR-1420, and AR-1416 are released; implement the complete local-mock literature selector and campaign matrix. |
 | P1 | [AR-1425](../tasks/AR-1425-literature-workload-release-readiness.md): Literature workload release-readiness gate | Unclaimed | Independently verify release readiness of the complete built-in and literature workload surface. | Promote only after AR-1424, AR-1417, and AR-1418 are released; independently verify the complete built-in plus literature workload surface and all release gates. |
 | P1 | [AR-1426](../tasks/AR-1426-evolving-literature-window-refresh.md): Evolving literature workload window refresh | Unclaimed | Refresh evolving literature benchmark windows without stale or incomparable results. | Promote after AR-1423 and AR-1425 are released; implement content-addressed refresh manifests and fail-closed window validation for LiveCodeBench and SWE-rebench. |
+| P1 | [AR-1467](../tasks/AR-1467-terminal-ar-metadata-reconciliation.md): Terminal AR metadata reconciliation | Unclaimed | Remove stale historical next-action text from recently completed ASB AR records without changing implementation or gates. | Promote after reviewing the listed completed ARs and verifying each terminal claim against immutable evidence. |
 | P2 | [AR-0602](../tasks/AR-0602-csb-monitoring-contention.md): Validate CSB monitoring and contention diagnostics | Unclaimed | Validate and integrate optional CSB resource monitoring and kernel-contention evidence without double counting or overstating support. | Audit CSB monitoring using native x86_64 oracles and required pinned QEMU AArch64 portable mapping/lifecycle checks; keep native ARM64 counters and performance as optional future evidence. |
 | P2 | [AR-0903](../tasks/AR-0903-release-qualification.md): Package and qualify the first release | Unclaimed | Deliver reproducible native release artifacts with complete support and evidence statements. | Audit milestone completeness and run isolated release qualification. |
 | P2 | [AR-1016](../tasks/AR-1016-measurement-integration-audit.md): Integrate and audit measurement selection and CSB evidence | Unclaimed | Audit selectable and CSB-backed measurements across live and replay runs. | Add end-to-end live/replay comparison, release documentation, and independent audit after AR-1014 and AR-1015. |
@@ -512,5 +514,3 @@
 | P1 | [AR-0854](../tasks/AR-0854-coordinator-v020-upgrade.md): Upgrade shared workflow coordinator to v0.2.0 | Unclaimed | Adopt coordinator v0.2.0 concurrency, recovery, durable-run, replica, and vendor hardening. | Promote and claim the upgrade, vendor signed v0.2.0 in an isolated worktree, and publish only after exact-head gates pass. |
 | P1 | [AR-0855](../tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | Unclaimed | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Complete; no further action. |
 | P1 | [AR-0857](../tasks/AR-0857-openjiuwen-provenance.md): Pin OpenJiuwen source, package, and license provenance | Unclaimed | Pin OpenJiuwen source, package, and license provenance. | Integrate signed no-ff PR #97 onto current main, then run and verify all exact-main post-merge workflows before release. |
-| P1 | [AR-0858](../tasks/AR-0858-openjiuwen-adapter.md): Implement the OpenJiuwen contract and capability adapter | Unclaimed | Implement the OpenJiuwen contract and capability adapter. | Monitor all required post-merge CI runs for exact main 096dc4f275c05ad81772f443b6f22dddfb92da3d; release only after every required gate is green. |
-| P1 | [AR-0859](../tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Unclaimed | Qualify pinned OpenJiuwen live execution. | No further action; live qualification and protected-main recovery are complete. |
