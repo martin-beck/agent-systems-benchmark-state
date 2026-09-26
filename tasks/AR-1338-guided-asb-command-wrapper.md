@@ -12,17 +12,17 @@
   "id": "AR-1338",
   "next_action": "Independent review and focused/full gates on rebased f94013b; then publish exact-head PR update without overwriting stale remote history.",
   "observed_branch": "feature/ar-1338-guided-asb-command-wrapper",
-  "observed_dirty": 1,
-  "observed_head": "f94013b8de1e524b61164b8832c6cf64cacc7af9",
+  "observed_dirty": 0,
+  "observed_head": "69f3d3800be0e3e0ad097e471f8e9f51483524e4",
   "owner": "ar1338-guided-wrapper-luna56",
   "plan": "../plans/AR-1338.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows.",
-  "task_revision": 118,
+  "task_revision": 119,
   "title": "Guided ASB command wrapper",
-  "updated_at": "2026-09-26T16:13:29+00:00",
+  "updated_at": "2026-09-26T16:13:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1338-guided-asb-command-wrapper"
 }
 ---
