@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "checkpoint_commit": "df0e402f442468e43e06b7c1acb3c3667277fb75",
-  "claim_expires": "2026-09-26T20:51:06+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1304"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
-  "owner": "coordinator-ar1308-preflight",
+  "owner": "",
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 544,
+  "task_revision": 545,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-26T18:54:33+00:00",
+  "updated_at": "2026-09-26T18:55:26+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1637,3 +1637,13 @@ must report `qualification_authorized: false`.
 
 - 2026-09-26T18:54:33+00:00: Recorded command exit 0; command argv SHA-256
   32fbf6984f41d97f2eb740c122a2be7992620ee90f685c790e8fe5baebf5bedc.
+
+- 2026-09-26T18:55:26+00:00: Bounded preflight only; no QEMU/TLC boot. Prepared runner receipt
+  validates x86_64 QEMU 8.2.2, q35 KVM-or-TCG, 8 vCPU, 32768 MiB guest RAM, 16384 MiB guest swap, 64
+  GiB virtual data disk, no network, no host mounts, and unchanged AR-1307 3G memory/3G
+  swap/2-worker/2-core/8G address-space/7200s process contract. Fail-closed blocker: runner receipt
+  exact_input_status remains pending AR-1307 969eef058 signed bundle, pinned JDK/TLC, admission lock
+  and seed; targeted searches in prepared source/stage roots found no JAR, seed, or lock inputs.
+  AR-1307 is currently blocked with no qualification attestation. No source, ASB product, or asb-tui
+  changes; no long TLC run attempted. Next action: provision and bind the exact signed bundle and
+  pinned inputs, then rerun bounded preflight before any VM boot.
