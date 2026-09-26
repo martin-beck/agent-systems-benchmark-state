@@ -11,17 +11,17 @@
   "id": "AR-1455",
   "next_action": "Monitor PR #334 exact head 43eaa29 checks; independent diff remains clean. Do not merge until all 12 required checks green.",
   "observed_branch": "feature/ar-1455-runtime-owned-guided-replay-entrypoint",
-  "observed_dirty": 1,
-  "observed_head": "43eaa298272ec2e615ae6c09b67ac459846ef65d",
+  "observed_dirty": 0,
+  "observed_head": "d7a08e391fce78ee52811dc4e41fb3f6ed77413f",
   "owner": "ar1455-guided-replay-review-luna56",
   "plan": "../plans/AR-1455-runtime-owned-guided-replay-entrypoint.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the runtime-owned guided local replay entrypoint needed by AR-1338.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Runtime-owned guided replay entrypoint",
-  "updated_at": "2026-09-26T15:47:24+00:00",
+  "updated_at": "2026-09-26T15:47:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1455-runtime-owned-guided-replay-entrypoint"
 }
 ---
