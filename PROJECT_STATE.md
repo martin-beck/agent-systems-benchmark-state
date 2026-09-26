@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #339 | `feature/ar-1392-control-authority-materializer@78ab92bdb876` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(control): revalidate authority before receipt materialization |
+| #339 | `feature/ar-1392-control-authority-materializer@78ab92bdb876` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(control): revalidate authority before receipt materialization |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 36278328980 | `78ab92bdb876` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 36278328736 | `78ab92bdb876` | pull_request | Formal assurance | in_progress:- |
+| 36278328736 | `78ab92bdb876` | pull_request | Formal assurance | completed:success |
 | 36278328701 | `78ab92bdb876` | pull_request | Hosted portability and native qualification | completed:success |
 | 36278328688 | `78ab92bdb876` | pull_request | Repository quality | in_progress:- |
 | 36278328683 | `78ab92bdb876` | pull_request | Fault assurance | completed:success |
