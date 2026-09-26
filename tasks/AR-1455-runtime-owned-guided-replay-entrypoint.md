@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1455-runtime-owned-guided-replay-entrypoint",
-  "checkpoint_commit": "e12a4111c29e219bf2cea921133bde8870e36d0f",
+  "checkpoint_commit": "43eaa298272ec2e615ae6c09b67ac459846ef65d",
   "claim_expires": "2026-09-26T17:19:18+00:00",
   "depends_on": [
     "AR-1448",
@@ -9,7 +9,7 @@
     "AR-1453"
   ],
   "id": "AR-1455",
-  "next_action": "Wait for Formal assurance run 36252100752 terminal state, retrieve Loom job logs, reproduce/fix only if attributable; do not merge while any required check fails.",
+  "next_action": "Monitor PR #334 exact head 43eaa29 checks; independent diff remains clean. Do not merge until all 12 required checks green.",
   "observed_branch": "feature/ar-1455-runtime-owned-guided-replay-entrypoint",
   "observed_dirty": 0,
   "observed_head": "43eaa298272ec2e615ae6c09b67ac459846ef65d",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the runtime-owned guided local replay entrypoint needed by AR-1338.",
-  "task_revision": 55,
+  "task_revision": 56,
   "title": "Runtime-owned guided replay entrypoint",
-  "updated_at": "2026-09-26T15:35:29+00:00",
+  "updated_at": "2026-09-26T15:35:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1455-runtime-owned-guided-replay-entrypoint"
 }
 ---
@@ -185,3 +185,10 @@ lifecycle; the guided wrapper is only a bounded client.
 
 - 2026-09-26T15:35:29+00:00: Recorded command exit 0; command argv SHA-256
   ff6d1fa7a7185010f75fcfafe4bdc1bdd5b9804d8c2b3e7abdd8a1b96cd81c63.
+
+- 2026-09-26T15:35:56+00:00: Formal workflow failure reproduced locally exactly: cargo test --locked
+  --manifest-path formal/Cargo.toml initially failed because formal/Cargo.lock lacked the newly
+  required asb-replay dependency from runtime Cargo.toml. Offline cargo generate-lockfile changed
+  exactly one dependency line. Signed+DCO commit 43eaa29 refreshes formal/Cargo.lock; formal test
+  suite now passes all 41 tests. Remote PR branch verifies exact head
+  43eaa298272ec2e615ae6c09b67ac459846ef65d.

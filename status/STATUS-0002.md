@@ -121,7 +121,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1455](../tasks/AR-1455-runtime-owned-guided-replay-entrypoint.md): Runtime-owned guided replay entrypoint | ar1455-guided-replay-review-luna56 | Provide the runtime-owned guided local replay entrypoint needed by AR-1338. | Wait for Formal assurance run 36252100752 terminal state, retrieve Loom job logs, reproduce/fix only if attributable; do not merge while any required check fails. |
+| P0 | [AR-1455](../tasks/AR-1455-runtime-owned-guided-replay-entrypoint.md): Runtime-owned guided replay entrypoint | ar1455-guided-replay-review-luna56 | Provide the runtime-owned guided local replay entrypoint needed by AR-1338. | Monitor PR #334 exact head 43eaa29 checks; independent diff remains clean. Do not merge until all 12 required checks green. |
 
 ### Open (1)
 
