@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-26T22:48:21+00:00",
   "depends_on": [],
   "id": "AR-1465",
-  "next_action": "Search approved durable archives for the exact reviewed seed digest b3383756b5cd357f58d923216effea33be35b793034de321c3c9ce460ece4b28; do not regenerate or substitute a different seed.",
+  "next_action": "External operator must supply reviewed immutable seed bytes with exact SHA-256 b3383756b5cd357f58d923216effea33be35b793034de321c3c9ce460ece4b28 and provenance; independently verify them, bind them to AR-1308, and rerun signed preflight. Do not regenerate or substitute.",
   "owner": "coordinator-ar1465-metadata",
   "plan": "../plans/AR-1465-reviewed-seed-archival-recovery.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Follow-on recovery for the exact reviewed AR-1308 full-exhaustive seed, which is absent from current approved runner roots and Git objects.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Reviewed full-exhaustive seed archival recovery",
-  "updated_at": "2026-09-26T22:18:21+00:00",
+  "updated_at": "2026-09-26T22:18:23+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1465-reviewed-seed-archival-recovery"
 }
 ---
@@ -91,3 +91,6 @@ needed by AR-1308. It must not weaken formal gates or invent equivalent input.
   durable next action, not to bypass the missing exact seed.
 
 - 2026-09-26T22:18:21+00:00: Claimed by coordinator-ar1465-metadata.
+
+- 2026-09-26T22:18:23+00:00: Corrected stale next action after AR-1465 archival audit found zero
+  exact matches across all approved roots and Git objects.
