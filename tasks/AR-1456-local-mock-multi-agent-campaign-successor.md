@@ -11,7 +11,7 @@
   "id": "AR-1456",
   "next_action": "Refresh PR #336 checks after workflow trigger; merge only once every required exact-head check is terminal SUCCESS.",
   "observed_branch": "DETACHED",
-  "observed_dirty": 3,
+  "observed_dirty": 2,
   "observed_head": "ad4f96ab3f7e57916208406b2f56aa9ec4e54885",
   "owner": "ar1456-local-campaign-luna56",
   "plan": "../plans/AR-1456.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Local/mock multi-agent campaign successor",
-  "updated_at": "2026-09-26T18:00:05+00:00",
+  "updated_at": "2026-09-26T18:00:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1456-local-mock-multi-agent-campaign-successor"
 }
 ---
