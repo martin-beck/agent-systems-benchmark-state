@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1461.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Prepare and publish the first-customer ASB release from the currently qualified main.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "First-customer release readiness and publication",
-  "updated_at": "2026-09-26T19:12:37+00:00",
+  "updated_at": "2026-09-26T19:56:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1461-first-customer-release-readiness"
 }
 ---
@@ -111,3 +111,6 @@ no gate may be weakened. No asb-tui or remote-provider dependency is added.
   published. Next action is a reviewed repair AR providing pinned supply-chain tools and an
   established signed bundle/tag/publication workflow; no task file fabricated because handoffctl has
   no create-task command.
+
+- 2026-09-26T19:56:21+00:00: AR-1462 is complete at merge 0a85123785c3e5e293fee02df757f494ac3423fe;
+  resume release readiness against the new exact protected main.
