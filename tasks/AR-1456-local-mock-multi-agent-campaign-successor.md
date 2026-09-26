@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1456-local-mock-multi-agent-campaign-successor",
-  "checkpoint_commit": "b6a3d5f22f1087fa4352eed760185cc745403ad9",
+  "checkpoint_commit": "f4b03611afb70cb6b6abc7ff95ae16815822891a",
   "claim_expires": "2026-09-26T19:45:29+00:00",
   "depends_on": [
     "AR-1332",
@@ -9,7 +9,7 @@
     "AR-1447"
   ],
   "id": "AR-1456",
-  "next_action": "Refresh PR #336 checks after workflow trigger; merge only once every required exact-head check is terminal SUCCESS.",
+  "next_action": "Close/reopen PR #336 through handoffctl as authorized trigger; verify base ad4f96a/head f4b0361 and poll exact-head checks, no merge while unknown.",
   "observed_branch": "feature/ar-1456-local-mock-multi-agent-campaign-successor",
   "observed_dirty": 0,
   "observed_head": "f4b03611afb70cb6b6abc7ff95ae16815822891a",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution.",
-  "task_revision": 66,
+  "task_revision": 67,
   "title": "Local/mock multi-agent campaign successor",
-  "updated_at": "2026-09-26T18:02:24+00:00",
+  "updated_at": "2026-09-26T18:02:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1456-local-mock-multi-agent-campaign-successor"
 }
 ---
@@ -237,3 +237,11 @@ for local development, CI, or this AR's completion.
 
 - 2026-09-26T18:02:24+00:00: Recorded command exit 0; command argv SHA-256
   c4998fd1f02c82f3d13e63c42c890a72ad2cb8f50036bc5b40fffef7904763ed.
+
+- 2026-09-26T18:02:47+00:00: Publication anomaly repair: PR #336 originally based on main 28730b6
+  while current protected main is ad4f96a, causing same-file conflict/mergeState DIRTY and zero
+  checks. Rebased preserving AR-1332 record-live/replay-offline changes plus AR-1456 campaign
+  opt-in; signed+DCO head is now f4b03611afb70cb6b6abc7ff95ae16815822891a. Force-with-lease used
+  exact old remote b6a3d5f. Pull-events endpoint returned 404 and main branch protection endpoint
+  reports unprotected; no established trigger until coordinator authorized close/reopen. Next
+  action: close/reopen PR #336, verify exact base/head, poll checks.
