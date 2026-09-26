@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Capture and seal runtime-authorized provider exchanges; deterministic local/mock qualification is sufficient and external reachability is optional.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Live provider capture into a sealed cassette",
-  "updated_at": "2026-09-26T20:29:28+00:00",
+  "updated_at": "2026-09-26T20:29:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1330-live-capture-sealed-cassette"
 }
 ---
@@ -120,3 +120,6 @@ reachability.
 
 - 2026-09-26T20:29:28+00:00: Recorded command exit 0; command argv SHA-256
   537bf877aa9d2b66aa3284c41e6acb412e9b3091f4c9a6964977b249303d19bd.
+
+- 2026-09-26T20:29:48+00:00: Recorded command exit 0; command argv SHA-256
+  b886d6a429452dfa802c6545d7b6637c4e35e2c6f3bcd9bbdfb34072b65e587a.
