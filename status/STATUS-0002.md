@@ -135,7 +135,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1465](../tasks/AR-1465-reviewed-seed-archival-recovery.md): Reviewed full-exhaustive seed archival recovery | coordinator-ar1465-expanded-audit | Follow-on recovery for the exact reviewed AR-1308 full-exhaustive seed, which is absent from current approved runner roots and Git objects. | External operator must supply reviewed immutable seed bytes with exact SHA-256 b3383756b5cd357f58d923216effea33be35b793034de321c3c9ce460ece4b28 and provenance; independently verify them, bind them to AR-1308, and rerun signed preflight. Do not regenerate or substitute. |
+| P0 | [AR-1465](../tasks/AR-1465-reviewed-seed-archival-recovery.md): Reviewed full-exhaustive seed archival recovery | coordinator-ar1465-expanded-audit | Expanded archival audit found no exact reviewed seed in approved state/runner roots, Git objects, the ASB product tree, seed-named second-disk files, or available GitHub Actions artifacts. | External operator must supply reviewed immutable seed bytes with exact SHA-256 b3383756b5cd357f58d923216effea33be35b793034de321c3c9ce460ece4b28 and provenance; independently verify them, bind them to AR-1308, and rerun signed preflight. Do not regenerate or substitute. |
 
 ### Open (1)
 
