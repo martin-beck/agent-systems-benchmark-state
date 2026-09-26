@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1330-live-capture-sealed-cassette",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-26T22:11:10+00:00",
   "depends_on": [
     "AR-0502",
     "AR-0503",
@@ -10,15 +10,15 @@
   ],
   "id": "AR-1330",
   "next_action": "Invoke the existing StrictReplayService::capture_authenticated_connection boundary from the live run path and seal the sanitized, redacted provider exchange as a content-addressed cassette.",
-  "owner": "",
+  "owner": "coordinator-ar1330-capture",
   "plan": "../plans/AR-1330.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Capture and seal a real authenticated provider exchange as a content-addressed cassette.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Live provider capture into a sealed cassette",
-  "updated_at": "2026-09-26T20:11:07+00:00",
+  "updated_at": "2026-09-26T20:11:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1330-live-capture-sealed-cassette"
 }
 ---
@@ -49,3 +49,5 @@ reachability.
 - 2026-09-26T20:11:07+00:00: Dependencies are done; implement capture through the existing
   runtime-owned seam using deterministic local/mock qualification, with external provider access
   optional.
+
+- 2026-09-26T20:11:10+00:00: Claimed by coordinator-ar1330-capture.
