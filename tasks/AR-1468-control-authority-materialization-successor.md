@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1468-control-authority-materialization-successor",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-27T01:45:14+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1288",
     "AR-1362",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1468-control-authority-materialization-successor",
   "observed_dirty": 0,
   "observed_head": "01b70e87ce8e7913f614447c0c530cb22e235256",
-  "owner": "coordinator-ar1468-authority-materialization",
+  "owner": "",
   "plan": "../plans/AR-1468-control-authority-materialization-successor.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "superseded",
   "summary": "Implement the control-owned authority materializer without the superseded AR-1369 dependency deadlock.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Control authority materialization successor",
-  "updated_at": "2026-09-26T22:48:45+00:00",
+  "updated_at": "2026-09-26T22:49:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1468-control-authority-materialization-successor"
 }
 ---
@@ -59,3 +59,16 @@ external provider access is optional and never a CI or completion requirement.
 
 - 2026-09-26T22:48:45+00:00: Recorded command exit 0; command argv SHA-256
   908649c1562ecd8fe983d00496be2b8e7353cfc325052056c6a352f7c075c92f.
+
+- 2026-09-26T22:49:18+00:00: Bounded current-main audit complete; no implementation delta remains.
+  Declared worktree was missing and was safely provisioned at
+  /srv/data/projects/agent-systems-benchmark-ar-1468-control-authority-materialization-successor
+  from origin/main 01b70e8; canonical product checkout had unrelated dirty edits left untouched.
+  Existing merged AR-1371 implementation already provides the requested owner-side
+  RuntimeAuthorityRecord persistence/validation, digest-bound CertificateAuthorityV1 recovery,
+  provider/endpoint/credential/generation binding, restart recovery rejection, revocation fencing,
+  digest-only receipt issuance, and hostile privacy/provider-mismatch tests. Focused authority tests
+  pass 2/2; runtime receipt fail-closed test passes 1/1; clippy for asb-cli/asb-control all targets
+  passes. No asb-tui, live provider, AR-1308 seed, or product mutation. Superseded by AR-1371 merge
+  3f0b676 with corrected post-merge topology 265b936d; retain AR-1468 as dependency-successor audit
+  evidence rather than duplicate code.
