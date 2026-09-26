@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the runtime-owned guided local replay entrypoint needed by AR-1338.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Runtime-owned guided replay entrypoint",
-  "updated_at": "2026-09-26T15:29:05+00:00",
+  "updated_at": "2026-09-26T15:29:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1455-runtime-owned-guided-replay-entrypoint"
 }
 ---
@@ -134,3 +134,6 @@ lifecycle; the guided wrapper is only a bounded client.
   warnings passed after fixing initial clippy result-unit-err failure with typed LocalReplayError.
   Independent local diff review: no P1/P2 findings; both commits SSH-signed with matching DCO.
   Branch pushed at exact head e12a4111c29e219bf2cea921133bde8870e36d0f.
+
+- 2026-09-26T15:29:14+00:00: Recorded command exit 0; command argv SHA-256
+  34f37d21bc2fed422bd4ac461bd95a9c6feec835894dbdde42d9a9277257b234.
