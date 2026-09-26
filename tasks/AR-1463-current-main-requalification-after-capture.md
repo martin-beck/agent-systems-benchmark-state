@@ -8,7 +8,7 @@
     "AR-1461"
   ],
   "id": "AR-1463",
-  "next_action": "Promote and qualify exact protected main after AR-1330 across the first-customer install, local/mock benchmark, capture/replay, recovery, privacy and release gates; publish no release unless all gates pass.",
+  "next_action": "No new release publication; retain v0.1.0 as the verified customer release and repeat qualification only for a later protected-main revision.",
   "observed_branch": "qualification/ar-1463-current-main-requalification-after-capture",
   "observed_dirty": 0,
   "observed_head": "01b70e87ce8e7913f614447c0c530cb22e235256",
@@ -17,10 +17,10 @@
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Requalify current protected main for first-customer production-like use after capture/replay integration.",
-  "task_revision": 31,
+  "summary": "Exact protected main is requalified for first-customer production-like use: install/build, local/mock workloads, capture redaction and content-addressed sealing, strict offline replay, recovery/privacy/egress denial, coverage and deterministic/formal gates pass; existing v0.1.0 remains the verified release.",
+  "task_revision": 32,
   "title": "Current-main first-customer requalification after capture integration",
-  "updated_at": "2026-09-26T21:02:24+00:00",
+  "updated_at": "2026-09-26T21:02:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1463-current-main-requalification-after-capture"
 }
 ---
@@ -120,3 +120,17 @@ required. Any release decision must remain fail-closed and exact-head bound.
   834fc7db89bcfa4bc26491cd80a3548be4f56075d780500a3912826a4268c0d0.
 
 - 2026-09-26T21:02:24+00:00: Heartbeat by coordinator-ar1463-requal.
+
+- 2026-09-26T21:02:54+00:00: Qualified exact protected main 01b70e87ce8e7913f614447c0c530cb22e235256
+  in isolated branch qualification/ar-1463-current-main-requalification-after-capture. Passed cargo
+  fmt --check, clippy locked workspace warnings denied, full cargo test workspace, rustdoc -D
+  warnings, release build, focused capture/redaction/content-addressed cassette and strict replay
+  tests, CLI network-denial/local-mock/cancellation tests, cargo llvm coverage (workspace and
+  critical crates above floors), repository policy, pinned actionlint 1.7.12, zizmor 1.30.0,
+  gitleaks 8.30.1, failure-path suite, signature policy, and formal/Cargo model tests. Exact-main
+  hosted workflows all green at this SHA: Huawei 36269742977, hosted 36269743033, fault 36269743013,
+  formal 36269743068, AArch64 36269743143, repository quality 36269743049, Rust 36269743060. Local
+  cargo-deny 0.20.2, cargo-audit 0.22.2 and cargo-kani 0.67.0 executables are unavailable; no gate
+  was weakened or skipped because exact-main CI evidence is green. Existing public v0.1.0 release
+  verified via gh release view with artifact asb-v0.1.0.tar.gz; no new tag/release published. No
+  live provider, native ARM, asb-tui or external signing required.

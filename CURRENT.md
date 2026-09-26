@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1463](tasks/AR-1463-current-main-requalification-after-capture.md): Current-main first-customer requalification after capture integration | Requalify current protected main for first-customer production-like use after capture/replay integration. | Promote and qualify exact protected main after AR-1330 across the first-customer install, local/mock benchmark, capture/replay, recovery, privacy and release gates; publish no release unless all gates pass. | coordinator-ar1463-requal |
+| P0 | [AR-1463](tasks/AR-1463-current-main-requalification-after-capture.md): Current-main first-customer requalification after capture integration | Exact protected main is requalified for first-customer production-like use: install/build, local/mock workloads, capture redaction and content-addressed sealing, strict offline replay, recovery/privacy/egress denial, coverage and deterministic/formal gates pass; existing v0.1.0 remains the verified release. | No new release publication; retain v0.1.0 as the verified customer release and repeat qualification only for a later protected-main revision. | coordinator-ar1463-requal |
 
 ## Open
 
