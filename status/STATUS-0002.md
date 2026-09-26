@@ -124,7 +124,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | coordinator-ar1307-audit | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | AR-1308 is planned for disposable x86_64 QEMU capacity. Keep AR-1307 unqualified; after AR-1308 capacity evidence, rerun exact full-exhaustive without changing the 3G/3G contract. |
+| P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | coordinator-ar1307-audit | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | PR #25 is open at exact signed+DCO head ab485f767, but full-exhaustive formal CI run 35342513872 failed truthfully after Java OOM during liveness checking at the unchanged 3G/3G/2-worker contract. AR-1308 provides the prepared 32 GiB/64 GiB offline QEMU capacity; bind the exact signed bundle and rerun only after its seed/JDK/TLC preflight passes. Do not qualify or weaken the contract. |
 
 ### Open (1)
 
@@ -515,4 +515,3 @@
 | P1 | [AR-0878](../tasks/AR-0878-tla-source-build-provenance.md): Qualify immutable TLA tool provenance | Unclaimed | Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build. | Release AR-0878 done after final state reconcile, snapshot, and live doctor; exact-main product verification is complete. |
 | P1 | [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md): Plan deterministic LLM doubles and local inference | Unclaimed | Research deterministic LLM test doubles and local inference options, document ASB recommendations, and create implementation-ready follow-up ARs. | Obtain independent exact-head review of green product PR 107 at bda6cc8a and state PR 16 at 9de11a52; state global schema remains pre-existingly blocked only by active AR-0878 next_action length. |
 | P1 | [AR-0880](../tasks/AR-0880-openjiuwen-runtime-closure.md): Repair OpenJiuwen runtime closure | Unclaimed | Repair the incomplete pinned OpenJiuwen Python runtime closure required by live qualification. | Durable release and exact-main verification are complete; no further AR-0880 action. AR-0859 owns live loopback qualification. |
-| P1 | [AR-0888](../tasks/AR-0888-llm-double-conformance-spike.md): Spike deterministic LLM double conformance | Unclaimed | Measure deterministic LLM test doubles against one hostile ASB protocol and isolation suite before selecting any dependency. | Build the isolated OpenAI and Anthropic conformance spike, execute exact pinned candidates, and publish pass, fail, unsupported, and untested evidence. |

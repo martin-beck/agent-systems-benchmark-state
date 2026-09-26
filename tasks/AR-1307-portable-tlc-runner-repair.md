@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1307-portable-tlc-runner-repair",
-  "checkpoint_commit": "beafa965e61b0f09d9ed5f10ffcd621b0cf3e5b2",
+  "checkpoint_commit": "ab485f767fbddbd8adfc27b5120f3df0a045b762",
   "claim_expires": "2026-09-26T19:07:24+00:00",
   "depends_on": [
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "AR-1308 is planned for disposable x86_64 QEMU capacity. Keep AR-1307 unqualified; after AR-1308 capacity evidence, rerun exact full-exhaustive without changing the 3G/3G contract.",
+  "next_action": "PR #25 is open at exact signed+DCO head ab485f767, but full-exhaustive formal CI run 35342513872 failed truthfully after Java OOM during liveness checking at the unchanged 3G/3G/2-worker contract. AR-1308 provides the prepared 32 GiB/64 GiB offline QEMU capacity; bind the exact signed bundle and rerun only after its seed/JDK/TLC preflight passes. Do not qualify or weaken the contract.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "969eef05834a4ce5f711bbafaa5798549abd95c8",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 735,
+  "task_revision": 736,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-26T18:47:24+00:00",
+  "updated_at": "2026-09-26T18:47:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -2099,3 +2099,6 @@ authorize qualification, publication, or release evidence; selecting
   Java OOM. Refresh exact dependency and preserve fail-closed status.
 
 - 2026-09-26T18:47:24+00:00: Claimed by coordinator-ar1307-audit.
+
+- 2026-09-26T18:47:39+00:00: Coordinator audit refreshed current PR and formal failure evidence; no
+  source mutation and no qualification claim.
