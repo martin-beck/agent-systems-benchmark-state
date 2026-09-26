@@ -12,11 +12,11 @@
   "plan": "../plans/AR-1462.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Establish reproducible supply-chain checks and first-customer release bundle publication workflow.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Pinned release toolchain and first-customer bundle workflow",
-  "updated_at": "2026-09-26T19:20:00+00:00",
+  "updated_at": "2026-09-26T19:17:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1462-pinned-release-toolchain-bundle-workflow"
 }
 ---
@@ -34,3 +34,6 @@ all integrity, provenance, privacy and exact-head checks remain mandatory.
 - 2026-09-26T19:20:00+00:00: Created from AR-1461's exact blocker: cargo-deny and
   cargo-audit are absent, and no checked-in release/tag/bundle/SBOM/provenance
   workflow exists. AR-1460's exact protected-main qualification is the input.
+
+- 2026-09-26T19:17:00+00:00: AR-1460 is done; AR-1461 identified the release-tooling blocker;
+  promote bounded P0 repair.
