@@ -117,6 +117,12 @@
 
 ## Complete AR inventory
 
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-1332](../tasks/AR-1332-record-live-replay-offline.md): Record-live to replay-offline workflow | Unclaimed | Add the record-live then replay-offline end-to-end CLI workflow. | Add the record-live then replay-offline CLI workflow that seals cassettes from an opt-in live run and replays them strictly offline without provider fallback. |
+
 ### Blocked (69)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -191,7 +197,7 @@
 | P2 | [AR-0705](../tasks/AR-0705-native-debian-capacity.md): Provide native Debian capacity | Unclaimed | Qualify booted Debian on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 Debian and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 
-### Planned (61)
+### Planned (60)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -245,7 +251,6 @@
 | P1 | [AR-1255](../tasks/AR-1255-bundled-mockagents-qemu-runner.md): Bundle MockAgents transport and QEMU runner | Unclaimed | Bundle MockAgents transport and QEMU runner. | Provision a digest-pinned bundled transport/QEMU runner and implement real in-container evidence. |
 | P1 | [AR-1257](../tasks/AR-1257-mockagents-qemu-image.md): Qualify digest-pinned multiarch MockAgents image | Unclaimed | Qualify a digest-pinned multiarch MockAgents OCI image for QEMU isolation. | Read the complete plan and verify official digest-pinned multiarch image, signature, license, and QEMU capability before any support claim. |
 | P1 | [AR-1330](../tasks/AR-1330-live-capture-sealed-cassette.md): Live provider capture into a sealed cassette | Unclaimed | Capture and seal a real authenticated provider exchange as a content-addressed cassette. | Invoke the existing StrictReplayService::capture_authenticated_connection boundary from the live run path and seal the sanitized, redacted provider exchange as a content-addressed cassette. |
-| P1 | [AR-1332](../tasks/AR-1332-record-live-replay-offline.md): Record-live to replay-offline workflow | Unclaimed | Add the record-live then replay-offline end-to-end CLI workflow. | Add the record-live then replay-offline CLI workflow that seals cassettes from an opt-in live run and replays them strictly offline without provider fallback. |
 | P1 | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md): Multi-agent by workload benchmark campaign | Unclaimed | Run the multi-agent by workload benchmark campaign with per-tuple evidence and offline replay. | Add the benchmark campaign mode that runs the compatible agent matrix against the workload suite under one pinned free model, with per-tuple records, sealed cassettes and strict offline replay. |
 | P1 | [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md): Credential-free CI stage for the benchmark path | Unclaimed | Add the required credential-free CI stage for the complete benchmark path. | Add the required credential-free CI stage that exercises the complete benchmark path with loopback and synthetic doubles, no secrets, no egress and no network, keeping the 90&#37; coverage floor. |
 | P1 | [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md): Live benchmark workflow documentation and support matrix | Unclaimed | Document the live benchmark workflow and publish the supported agent and provider matrix. | Document the end-to-end live benchmark workflow and publish the supported agent by provider by model support matrix, with exact digests and evidence limits. |
@@ -506,4 +511,3 @@
 | P1 | [AR-0889](../tasks/AR-0889-llm-fixture-scenario-contract.md): Define the LLM fixture and scenario contract | Unclaimed | Define generated synthetic LLM scenarios without weakening the existing content-addressed cassette replay contract. | Specify and implement the selected synthetic fixture and scenario contract with strict evidence labels, privacy bounds, and fail-closed validation. |
 | P1 | [AR-0891](../tasks/AR-0891-local-inference-provider-profiles.md): Qualify local inference provider profiles | Unclaimed | Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server. | Wait for and verify all six post-merge exact-main workflows on adac76558387cb0bdd09e2ba6cbfe49b9bc205be, then release AR-0891 and promote the next dependency-ready AR. |
 | P1 | [AR-0895](../tasks/AR-0895-verify-coordination-content.md): Verify every coordination-content pull request | Unclaimed | Close the workflow path-filter gap that lets coordination-content pull requests skip strict state consistency and DCO checks. | Rebase the approved three-path patch onto current repaired/licensed state main, preserve exact scope/signature/DCO, guarded force-with-lease PR #17, and require fresh exact-head CI before merge. |
-| P1 | [AR-0901](../tasks/AR-0901-formal-assurance.md): Prove critical state and concurrency invariants | Unclaimed | Use bounded proofs and model tests for safety-critical domain logic. | Await independent immutable-head review of PR 14 at 2a495a99; repair any findings without merging or releasing. |

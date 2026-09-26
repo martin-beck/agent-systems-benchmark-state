@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-1332](tasks/AR-1332-record-live-replay-offline.md): Record-live to replay-offline workflow | Add the record-live then replay-offline end-to-end CLI workflow. | Add the record-live then replay-offline CLI workflow that seals cassettes from an opt-in live run and replays them strictly offline without provider fallback. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -131,7 +137,6 @@ Never edit this file directly.
 | P1 | [AR-1255](tasks/AR-1255-bundled-mockagents-qemu-runner.md): Bundle MockAgents transport and QEMU runner | Bundle MockAgents transport and QEMU runner. | Provision a digest-pinned bundled transport/QEMU runner and implement real in-container evidence. | - |
 | P1 | [AR-1257](tasks/AR-1257-mockagents-qemu-image.md): Qualify digest-pinned multiarch MockAgents image | Qualify a digest-pinned multiarch MockAgents OCI image for QEMU isolation. | Read the complete plan and verify official digest-pinned multiarch image, signature, license, and QEMU capability before any support claim. | - |
 | P1 | [AR-1330](tasks/AR-1330-live-capture-sealed-cassette.md): Live provider capture into a sealed cassette | Capture and seal a real authenticated provider exchange as a content-addressed cassette. | Invoke the existing StrictReplayService::capture_authenticated_connection boundary from the live run path and seal the sanitized, redacted provider exchange as a content-addressed cassette. | - |
-| P1 | [AR-1332](tasks/AR-1332-record-live-replay-offline.md): Record-live to replay-offline workflow | Add the record-live then replay-offline end-to-end CLI workflow. | Add the record-live then replay-offline CLI workflow that seals cassettes from an opt-in live run and replays them strictly offline without provider fallback. | - |
 | P1 | [AR-1333](tasks/AR-1333-multi-agent-workload-campaign.md): Multi-agent by workload benchmark campaign | Run the multi-agent by workload benchmark campaign with per-tuple evidence and offline replay. | Add the benchmark campaign mode that runs the compatible agent matrix against the workload suite under one pinned free model, with per-tuple records, sealed cassettes and strict offline replay. | - |
 | P1 | [AR-1335](tasks/AR-1335-credential-free-benchmark-ci.md): Credential-free CI stage for the benchmark path | Add the required credential-free CI stage for the complete benchmark path. | Add the required credential-free CI stage that exercises the complete benchmark path with loopback and synthetic doubles, no secrets, no egress and no network, keeping the 90% coverage floor. | - |
 | P1 | [AR-1336](tasks/AR-1336-live-benchmark-workflow-docs.md): Live benchmark workflow documentation and support matrix | Document the live benchmark workflow and publish the supported agent and provider matrix. | Document the end-to-end live benchmark workflow and publish the supported agent by provider by model support matrix, with exact digests and evidence limits. | - |
