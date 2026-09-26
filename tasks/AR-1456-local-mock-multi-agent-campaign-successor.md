@@ -9,7 +9,7 @@
     "AR-1447"
   ],
   "id": "AR-1456",
-  "next_action": "Wait for GitHub to trigger PR #336 checks; refresh exact-head status, and merge only after every required check is terminal SUCCESS.",
+  "next_action": "Refresh PR #336 checks after workflow trigger; merge only once every required exact-head check is terminal SUCCESS.",
   "observed_branch": "feature/ar-1456-local-mock-multi-agent-campaign-successor",
   "observed_dirty": 0,
   "observed_head": "b6a3d5f22f1087fa4352eed760185cc745403ad9",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Local/mock multi-agent campaign successor",
-  "updated_at": "2026-09-26T17:58:01+00:00",
+  "updated_at": "2026-09-26T17:58:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1456-local-mock-multi-agent-campaign-successor"
 }
 ---
@@ -191,3 +191,10 @@ for local development, CI, or this AR's completion.
 
 - 2026-09-26T17:58:01+00:00: Recorded command exit 0; command argv SHA-256
   4ae7b089a15d3b5e72b156057616ec6b2e0aab185d6678cb80874501c56b9cbe.
+
+- 2026-09-26T17:58:34+00:00: Remote publication audit: `git ls-remote` confirms main
+  ad4f96ab3f7e57916208406b2f56aa9ec4e54885 and feature branch
+  b6a3d5f22f1087fa4352eed760185cc745403ad9. PR API confirms open, base/main exact, head exact,
+  mergeable=false/dirty; no checks/workflows reported. Commit-status API poll was blocked by
+  handoffctl shared-lock timeout after 10s, so status remains unknown rather than green. Do not
+  force-update or merge; next action remains workflow trigger/refresh.
