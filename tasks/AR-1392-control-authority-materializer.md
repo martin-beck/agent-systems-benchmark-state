@@ -24,9 +24,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve private live authority from authenticated control enrollment without caller injection.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Control-owned private authority materializer",
-  "updated_at": "2026-09-26T23:05:39+00:00",
+  "updated_at": "2026-09-26T23:05:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1392-control-authority-materializer"
 }
 ---
@@ -205,3 +205,6 @@ reachability.
   45 insertions/8 deletions; worktree clean; force-with-lease updated remote branch. The original
   platform source-identity failure is an integrity gate being rechecked on the rebased exact head,
   not bypassed.
+
+- 2026-09-26T23:05:47+00:00: Recorded command exit 0; command argv SHA-256
+  18b0117fd34663839eb1c200771ba236a438f304eac511ad276cb645d34de064.
