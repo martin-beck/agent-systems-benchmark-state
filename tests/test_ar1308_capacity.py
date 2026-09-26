@@ -347,10 +347,12 @@ class Ar1308CapacityTests(unittest.TestCase):
                 "admission-lock",
             ):
                 args.extend((f"--{name}", str(receipt)))
-            with patch.object(validator, "validate_live", return_value=[]):
-                with patch("builtins.print") as printed:
-                    self.assertEqual(validator.main(args), 0)
-                    output = json.loads(printed.call_args.args[0])
+            with (
+                patch.object(validator, "validate_live", return_value=[]),
+                patch("builtins.print") as printed,
+            ):
+                self.assertEqual(validator.main(args), 0)
+                output = json.loads(printed.call_args.args[0])
             self.assertEqual(output["status"], "diagnostic")
             self.assertFalse(output["qualification_authorized"])
 

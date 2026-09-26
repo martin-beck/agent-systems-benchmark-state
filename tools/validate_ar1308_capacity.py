@@ -107,8 +107,10 @@ def _validate_inputs(receipt: dict[str, Any], profile: str = "signed") -> list[s
     if profile == "signed":
         if commit != REQUIRED_COMMIT:
             issues.append("pinned input is not the exact signed AR-1307 head")
-    elif not isinstance(commit, str) or len(commit) != 40 or any(
-        char not in "0123456789abcdef" for char in commit
+    elif (
+        not isinstance(commit, str)
+        or len(commit) != 40
+        or any(char not in "0123456789abcdef" for char in commit)
     ):
         issues.append("diagnostic pinned input must name a lowercase Git commit")
     if not isinstance(inputs, dict) or inputs.get("jdk_major") != 17:
@@ -219,9 +221,7 @@ def _validate_vm(image: Path, overlay: Path) -> list[str]:
     return issues
 
 
-def _validate_source(
-    receipt: dict[str, Any], source: Path, profile: str = "signed"
-) -> list[str]:
+def _validate_source(receipt: dict[str, Any], source: Path, profile: str = "signed") -> list[str]:
     issues: list[str] = []
     if not source.is_dir() or not (source / ".git").exists():
         return ["exact source checkout is missing Git metadata"]
