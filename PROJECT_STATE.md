@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #340 | `repair/ar-1469-ar1392-protected-topology-repair@e39d27d83939` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore: repair AR-1392 protected merge topology |
+| #340 | `repair/ar-1469-ar1392-protected-topology-repair@e39d27d83939` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore: repair AR-1392 protected merge topology |
 
 ## Recent workflows
 
@@ -23,7 +23,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36280242297 | `e39d27d83939` | pull_request | Fault assurance | completed:success |
 | 36280242268 | `e39d27d83939` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36280242245 | `e39d27d83939` | pull_request | Formal assurance | in_progress:- |
-| 36280242232 | `e39d27d83939` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 36280242232 | `e39d27d83939` | pull_request | Hosted portability and native qualification | completed:success |
 | 36280109806 | `beb399681ad6` | pull_request | Formal assurance | completed:cancelled |
 | 36280109768 | `beb399681ad6` | pull_request | Huawei MIT source headers | completed:success |
 | 36280109763 | `beb399681ad6` | pull_request | Rust verification | completed:cancelled |
