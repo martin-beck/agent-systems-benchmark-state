@@ -2,21 +2,21 @@
 {
   "branch": "maintenance/ar-1457-retire-superseded-pr-332",
   "checkpoint_commit": "23b2fb5f241934168131efe6cd5173d5d316a857",
-  "claim_expires": "2026-09-26T19:04:55+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1453"
   ],
   "id": "AR-1457",
   "next_action": "Close obsolete PR #332 as superseded by merged PR #333, then verify the repository has no stale open PR for AR-1453 and release this maintenance AR with durable evidence.",
-  "owner": "coordinator-ar1457-pr-cleanup",
+  "owner": "",
   "plan": "../plans/AR-1457.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Retire the obsolete pre-repair AR-1453 pull request without changing product code.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Retire superseded AR-1453 pull request",
-  "updated_at": "2026-09-26T18:35:11+00:00",
+  "updated_at": "2026-09-26T18:35:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1457-retire-superseded-pr-332"
 }
 ---
@@ -35,3 +35,8 @@ asb-tui, or release changes are in scope.
 
 - 2026-09-26T18:35:11+00:00: Recorded command exit 0; command argv SHA-256
   9e799162e677a0c54a6af38eefe58fa9a09113f496e12b8bca308ed26bbcc14f.
+
+- 2026-09-26T18:35:41+00:00: PR #332 is closed at 2026-09-26T18:35:10Z as superseded; it was never
+  merged. PR #333 remains the authoritative AR-1453 merge at
+  23b2fb5f241934168131efe6cd5173d5d316a857 with all seven exact-main workflows green. No product or
+  asb-tui changes.

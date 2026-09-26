@@ -119,12 +119,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P2 | [AR-1457](../tasks/AR-1457-retire-superseded-pr-332.md): Retire superseded AR-1453 pull request | coordinator-ar1457-pr-cleanup | Retire the obsolete pre-repair AR-1453 pull request without changing product code. | Close obsolete PR #332 as superseded by merged PR #333, then verify the repository has no stale open PR for AR-1453 and release this maintenance AR with durable evidence. |
-
 ### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -275,7 +269,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (330)
+### Done (331)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -516,3 +510,4 @@
 | P1 | [AR-0880](../tasks/AR-0880-openjiuwen-runtime-closure.md): Repair OpenJiuwen runtime closure | Unclaimed | Repair the incomplete pinned OpenJiuwen Python runtime closure required by live qualification. | Durable release and exact-main verification are complete; no further AR-0880 action. AR-0859 owns live loopback qualification. |
 | P1 | [AR-0888](../tasks/AR-0888-llm-double-conformance-spike.md): Spike deterministic LLM double conformance | Unclaimed | Measure deterministic LLM test doubles against one hostile ASB protocol and isolation suite before selecting any dependency. | Build the isolated OpenAI and Anthropic conformance spike, execute exact pinned candidates, and publish pass, fail, unsupported, and untested evidence. |
 | P1 | [AR-0889](../tasks/AR-0889-llm-fixture-scenario-contract.md): Define the LLM fixture and scenario contract | Unclaimed | Define generated synthetic LLM scenarios without weakening the existing content-addressed cassette replay contract. | Specify and implement the selected synthetic fixture and scenario contract with strict evidence labels, privacy bounds, and fail-closed validation. |
+| P1 | [AR-0891](../tasks/AR-0891-local-inference-provider-profiles.md): Qualify local inference provider profiles | Unclaimed | Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server. | Wait for and verify all six post-merge exact-main workflows on adac76558387cb0bdd09e2ba6cbfe49b9bc205be, then release AR-0891 and promote the next dependency-ready AR. |
