@@ -14,7 +14,7 @@
     "AR-1340"
   ],
   "id": "AR-1392",
-  "next_action": "Monitor PR #339 exact-head checks; merge only after all required checks pass.",
+  "next_action": "Resolve unrelated Rust CI failure or obtain coordinator-approved retry; do not merge PR #339 until every exact-head check is green.",
   "observed_branch": "feature/ar-1392-control-authority-materializer",
   "observed_dirty": 0,
   "observed_head": "78ab92bdb87645ac5567fb3341b1b0b73dba5029",
@@ -24,9 +24,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve private live authority from authenticated control enrollment without caller injection.",
-  "task_revision": 85,
+  "task_revision": 86,
   "title": "Control-owned private authority materializer",
-  "updated_at": "2026-09-26T23:16:27+00:00",
+  "updated_at": "2026-09-26T23:16:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1392-control-authority-materializer"
 }
 ---
@@ -305,3 +305,11 @@ reachability.
 
 - 2026-09-26T23:16:27+00:00: Recorded command exit 0; command argv SHA-256
   a52c2db125ac76bf7a79fbe290b51e90b09416e54026c136aed69ae059d834da.
+
+- 2026-09-26T23:16:59+00:00: Rust rerun 36278328681 failed again, now in unrelated asb-metrics
+  kernel::tests::missing_malformed_and_unsafe_configuration_fail_closed: expected MalformedEvidence,
+  observed ProbeRejected. This is outside the one-file AR-1392 diff. Focused local reproduction
+  through handoffctl passed 1/1, indicating CI/environment-sensitive failure; no product change
+  made. All other PR checks are green at exact head 78ab92b (AArch64, hosted, faults, formal,
+  repository quality, Huawei, AWQ). PR #339 remains unmergeable pending a clean exact-head Rust
+  result; do not weaken gates.

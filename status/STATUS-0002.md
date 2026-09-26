@@ -138,7 +138,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1392](../tasks/AR-1392-control-authority-materializer.md): Control-owned private authority materializer | coordinator-ar1392-control-materializer | Resolve private live authority from authenticated control enrollment without caller injection. | Monitor PR #339 exact-head checks; merge only after all required checks pass. |
+| P0 | [AR-1392](../tasks/AR-1392-control-authority-materializer.md): Control-owned private authority materializer | coordinator-ar1392-control-materializer | Resolve private live authority from authenticated control enrollment without caller injection. | Resolve unrelated Rust CI failure or obtain coordinator-approved retry; do not merge PR #339 until every exact-head check is green. |
 
 ### Blocked (69)
 
