@@ -9,17 +9,17 @@
   "id": "AR-1332",
   "next_action": "Obtain independent review, then run exact-head CI and protected-main publication gates.",
   "observed_branch": "feature/ar-1332-record-live-replay-offline",
-  "observed_dirty": 4,
-  "observed_head": "705f0c807dc7fb02dff5e488a7af296cbe79e344",
+  "observed_dirty": 0,
+  "observed_head": "97d9bbc3b6a9e0f793ac6a5a4ba3103e85f5e4a7",
   "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1332.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the record-live then replay-offline end-to-end CLI workflow.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Record-live to replay-offline workflow",
-  "updated_at": "2026-09-26T17:01:53+00:00",
+  "updated_at": "2026-09-26T17:02:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1332-record-live-replay-offline"
 }
 ---
