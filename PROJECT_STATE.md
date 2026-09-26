@@ -12,20 +12,21 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- | --- |
 | #327 | `feature/ar-1338-guided-asb-command-wrapper@4d42f598127d` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): extend guided ASB workflow |
 | #332 | `feature/ar-1453-frontend-orchestration-wiring@082b0624abe2` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: route ASB frontends through central orchestration |
+| #334 | `feature/ar-1455-runtime-owned-guided-replay-entrypoint@e12a4111c29e` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(runtime): own guided local replay entrypoint |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 36252100786 | `e12a4111c29e` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 36252100754 | `e12a4111c29e` | pull_request | Repository quality | in_progress:- |
+| 36252100752 | `e12a4111c29e` | pull_request | Formal assurance | in_progress:- |
+| 36252100733 | `e12a4111c29e` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 36252100726 | `e12a4111c29e` | pull_request | Huawei MIT source headers | completed:success |
+| 36252100722 | `e12a4111c29e` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 36252100713 | `e12a4111c29e` | pull_request | Rust verification | in_progress:- |
+| 36252100711 | `e12a4111c29e` | pull_request | Fault assurance | in_progress:- |
 | 36197223726 | `23b2fb5f2419` | push | Hosted portability and native qualification | completed:success |
 | 36197223714 | `23b2fb5f2419` | push | Rust verification | completed:success |
 | 36197223674 | `23b2fb5f2419` | push | Repository quality | completed:success |
 | 36197223642 | `23b2fb5f2419` | push | Huawei MIT source headers | completed:success |
-| 36197223638 | `23b2fb5f2419` | push | Emulated aarch64 portability | completed:success |
-| 36197223624 | `23b2fb5f2419` | push | Formal assurance | completed:success |
-| 36197223619 | `23b2fb5f2419` | push | Fault assurance | completed:success |
-| 36196384834 | `37d9517317ed` | pull_request | Hosted portability and native qualification | completed:success |
-| 36196384815 | `37d9517317ed` | pull_request | Repository quality | completed:success |
-| 36196384814 | `37d9517317ed` | pull_request | Huawei MIT source headers | completed:success |
-| 36196384811 | `37d9517317ed` | pull_request | Fault assurance | completed:success |
-| 36196384805 | `37d9517317ed` | pull_request | Rust verification | completed:success |
