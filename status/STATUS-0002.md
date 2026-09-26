@@ -122,12 +122,17 @@
 
 ## Complete AR inventory
 
-### Open (2)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P2 | [AR-1459](../tasks/AR-1459-retire-stale-state-prs.md): Retire stale state-repository pull requests | coordinator-ar1459-state-pr-cleanup | Retire obsolete state-repository pull requests without changing product or formal gates. | Close stale state PRs #20, #21, and #27 as superseded after confirming their proposed AR metadata is already represented by current state; leave blocked formal PR #25 open and record exact outcomes. |
+
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
-| P2 | [AR-1459](../tasks/AR-1459-retire-stale-state-prs.md): Retire stale state-repository pull requests | Unclaimed | Retire obsolete state-repository pull requests without changing product or formal gates. | Close stale state PRs #20, #21, and #27 as superseded after confirming their proposed AR metadata is already represented by current state; leave blocked formal PR #25 open and record exact outcomes. |
 
 ### Blocked (69)
 
