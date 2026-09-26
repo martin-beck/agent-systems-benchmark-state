@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1455-runtime-owned-guided-replay-entrypoint",
   "checkpoint_commit": "23b2fb5f241934168131efe6cd5173d5d316a857",
-  "claim_expires": "2026-09-26T01:47:53+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1448",
     "AR-1450",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1455-runtime-owned-guided-replay-entrypoint",
   "observed_dirty": 0,
   "observed_head": "23b2fb5f241934168131efe6cd5173d5d316a857",
-  "owner": "ar1455-guided-replay-luna56",
+  "owner": "",
   "plan": "../plans/AR-1455-runtime-owned-guided-replay-entrypoint.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Provide the runtime-owned guided local replay entrypoint needed by AR-1338.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Runtime-owned guided replay entrypoint",
-  "updated_at": "2026-09-25T22:48:53+00:00",
+  "updated_at": "2026-09-26T15:17:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1455-runtime-owned-guided-replay-entrypoint"
 }
 ---
@@ -51,3 +51,7 @@ lifecycle; the guided wrapper is only a bounded client.
   product mutations yet. AR-1338 acceptance requires central-service-owned opaque authority,
   deterministic replay, fail-closed stale/path/network/unknown-option handling, idempotency,
   disconnect/cancel/teardown evidence.
+
+- 2026-09-26T15:17:45+00:00: Recovered expired claim formerly owned by ar1455-guided-replay-luna56.
+  Previous worker session errored with 401 Unauthorized and lease expired at 01:47Z. Preserve audit
+  evidence and recover ownerless for a replacement worker; no product mutations were made.
