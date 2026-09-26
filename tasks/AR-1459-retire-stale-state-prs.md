@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Retire obsolete state-repository pull requests without changing product or formal gates.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Retire stale state-repository pull requests",
-  "updated_at": "2026-09-26T18:49:00+00:00",
+  "updated_at": "2026-09-26T18:49:09+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1459-retire-stale-state-prs"
 }
 ---
@@ -32,3 +32,6 @@ asb-tui source changes are in scope.
   #27; promote bounded cleanup while preserving blocked formal PR #25.
 
 - 2026-09-26T18:49:00+00:00: Claimed by coordinator-ar1459-state-pr-cleanup.
+
+- 2026-09-26T18:49:09+00:00: Recorded command exit 0; command argv SHA-256
+  ca490c67e611f58bee3455454857377f87dd2ed32e2448780a7cdbb698c4bf56.
