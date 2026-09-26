@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Local/mock multi-agent campaign successor",
-  "updated_at": "2026-09-26T17:54:52+00:00",
+  "updated_at": "2026-09-26T17:55:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1456-local-mock-multi-agent-campaign-successor"
 }
 ---
@@ -144,3 +144,6 @@ for local development, CI, or this AR's completion.
   b6a3d5f22f1087fa4352eed760185cc745403ad9. Focused campaign 1/1, guide 5/5, workflow transcript
   3/3, fmt check, and full asb-cli --all-targets otherwise green (113 unit + all integration
   suites).
+
+- 2026-09-26T17:55:01+00:00: Recorded command exit 0; command argv SHA-256
+  87ed6edacd35924c8ac5fc340e39a36cf7b054f50d2cf108035eb0ebc1a35e40.
