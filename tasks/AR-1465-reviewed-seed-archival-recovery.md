@@ -2,19 +2,19 @@
 {
   "branch": "repair/ar-1465-reviewed-seed-archival-recovery",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-26T22:48:21+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1465",
   "next_action": "External operator must supply reviewed immutable seed bytes with exact SHA-256 b3383756b5cd357f58d923216effea33be35b793034de321c3c9ce460ece4b28 and provenance; independently verify them, bind them to AR-1308, and rerun signed preflight. Do not regenerate or substitute.",
-  "owner": "coordinator-ar1465-metadata",
+  "owner": "",
   "plan": "../plans/AR-1465-reviewed-seed-archival-recovery.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Follow-on recovery for the exact reviewed AR-1308 full-exhaustive seed, which is absent from current approved runner roots and Git objects.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Reviewed full-exhaustive seed archival recovery",
-  "updated_at": "2026-09-26T22:18:23+00:00",
+  "updated_at": "2026-09-26T22:18:26+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1465-reviewed-seed-archival-recovery"
 }
 ---
@@ -94,3 +94,6 @@ needed by AR-1308. It must not weaken formal gates or invent equivalent input.
 
 - 2026-09-26T22:18:23+00:00: Corrected stale next action after AR-1465 archival audit found zero
   exact matches across all approved roots and Git objects.
+
+- 2026-09-26T22:18:26+00:00: Returned to blocked/ownerless with the accurate external seed-recovery
+  action; exact seed remains unavailable and no gate was weakened.
