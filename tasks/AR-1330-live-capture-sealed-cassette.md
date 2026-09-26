@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1330-live-capture-sealed-cassette",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-26T22:24:36+00:00",
+  "claim_expires": "2026-09-26T22:26:31+00:00",
   "depends_on": [
     "AR-0502",
     "AR-0503",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Capture and seal runtime-authorized provider exchanges; deterministic local/mock qualification is sufficient and external reachability is optional.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Live provider capture into a sealed cassette",
-  "updated_at": "2026-09-26T20:26:12+00:00",
+  "updated_at": "2026-09-26T20:26:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1330-live-capture-sealed-cassette"
 }
 ---
@@ -109,3 +109,5 @@ reachability.
 
 - 2026-09-26T20:26:12+00:00: Recorded command exit 0; command argv SHA-256
   d29c27a94415f41af805aaca566505f5c0bf8bfbded240b2a5c64923e61213b2.
+
+- 2026-09-26T20:26:31+00:00: Heartbeat by coordinator-ar1330-capture.
