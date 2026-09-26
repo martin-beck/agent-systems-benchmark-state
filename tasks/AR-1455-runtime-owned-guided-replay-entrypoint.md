@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the runtime-owned guided local replay entrypoint needed by AR-1338.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Runtime-owned guided replay entrypoint",
-  "updated_at": "2026-09-26T15:20:37+00:00",
+  "updated_at": "2026-09-26T15:21:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1455-runtime-owned-guided-replay-entrypoint"
 }
 ---
@@ -74,3 +74,6 @@ lifecycle; the guided wrapper is only a bounded client.
 
 - 2026-09-26T15:20:37+00:00: Recorded command exit 0; command argv SHA-256
   029139fdb97b23f4d92e1d91c8d616342b5c7382bb6925caea2d9d5a4e0a1874.
+
+- 2026-09-26T15:21:02+00:00: Recorded command exit 0; command argv SHA-256
+  d9d26def810a630cc68997250d78b2c15223bfc5b59568a8c2af5ee2882d9101.
