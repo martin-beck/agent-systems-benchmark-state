@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution.",
-  "task_revision": 71,
+  "task_revision": 72,
   "title": "Local/mock multi-agent campaign successor",
-  "updated_at": "2026-09-26T18:03:55+00:00",
+  "updated_at": "2026-09-26T18:07:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1456-local-mock-multi-agent-campaign-successor"
 }
 ---
@@ -262,3 +262,6 @@ for local development, CI, or this AR's completion.
   pre-reopen cancelled), formal 36261138341, Rust 36261183708, AArch64 36261183632, repository
   quality 36261138341? (check workflow API for exact run mapping before merge). Old pre-reopen runs
   cancelled; do not count them. PR remains OPEN/UNSTABLE; no merge.
+
+- 2026-09-26T18:07:38+00:00: Recorded command exit 0; command argv SHA-256
+  e0c63df0e730890a68d52feab3e2105152fa753085c44fa4d40bd5b3a61ade52.
