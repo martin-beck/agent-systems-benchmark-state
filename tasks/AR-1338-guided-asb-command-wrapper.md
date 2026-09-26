@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows.",
-  "task_revision": 146,
+  "task_revision": 147,
   "title": "Guided ASB command wrapper",
-  "updated_at": "2026-09-26T16:26:48+00:00",
+  "updated_at": "2026-09-26T16:26:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1338-guided-asb-command-wrapper"
 }
 ---
@@ -433,3 +433,6 @@ reachability.
   passed. Full asb-cli lib test initially had one unrelated state-root exclusivity lock race (112
   passed, 1 failed); isolated test rerun passed 1/1. Signed+DCO commit 36d94ff pushed to PR #327;
   monitor exact-head checks.
+
+- 2026-09-26T16:26:56+00:00: Recorded command exit 0; command argv SHA-256
+  4e40c93f406f52cb28f476b2dec50ce9c2010aca6c4c9c8c544d5d90c43c0641.
