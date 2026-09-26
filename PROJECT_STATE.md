@@ -21,7 +21,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36279474867 | `3cd6a5a84493` | push | Rust verification | in_progress:- |
 | 36279474854 | `3cd6a5a84493` | push | Huawei MIT source headers | completed:success |
 | 36279474851 | `3cd6a5a84493` | push | Repository quality | completed:failure |
-| 36279474799 | `3cd6a5a84493` | push | Hosted portability and native qualification | in_progress:- |
+| 36279474799 | `3cd6a5a84493` | push | Hosted portability and native qualification | completed:success |
 | 36278328980 | `78ab92bdb876` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36278328736 | `78ab92bdb876` | pull_request | Formal assurance | completed:success |
 | 36278328701 | `78ab92bdb876` | pull_request | Hosted portability and native qualification | completed:success |
