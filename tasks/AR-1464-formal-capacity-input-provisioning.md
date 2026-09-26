@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision the missing signed formal inputs and disposable capacity required by AR-1308.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Formal capacity and signed-input provisioning repair",
-  "updated_at": "2026-09-26T21:21:45+00:00",
+  "updated_at": "2026-09-26T21:22:04+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1464-formal-capacity-input-provisioning"
 }
 ---
@@ -108,3 +108,6 @@ scope.
 
 - 2026-09-26T21:21:45+00:00: Recorded command exit 0; command argv SHA-256
   03175676ed2d5f498c8f8e136e68432e263c8d3b744f32495e2b1a809b9bded8.
+
+- 2026-09-26T21:22:04+00:00: Recorded command exit 0; command argv SHA-256
+  4315fa2c0a4f74078e12ca0be050b65f0f97597bc9b1d613f5d18fd8a65896a2.
