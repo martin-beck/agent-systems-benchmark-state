@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P2 | [AR-1444](tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. | coordinator-ar1444-dependency-audit |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -82,6 +76,7 @@ Never edit this file directly.
 | P1 | [AR-1449](tasks/AR-1449-runtime-owned-local-replay-cli.md): Runtime-owned local replay CLI authority | Provide fail-closed runtime-owned local replay authority for the guided CLI wrapper. | Blocked: AR-1448 exposes issuance only and requires caller-built sandbox, lease, backend and relay. A runtime-owned provisioning successor is required; no product change was published. | - |
 | P2 | [AR-0705](tasks/AR-0705-native-debian-capacity.md): Provide native Debian capacity | Qualify booted Debian on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 Debian and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. | - |
 | P2 | [AR-0706](tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. | - |
+| P2 | [AR-1444](tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. | - |
 
 ## Planned
 

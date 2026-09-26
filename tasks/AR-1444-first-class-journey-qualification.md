@@ -2,21 +2,21 @@
 {
   "branch": "feature/ar-1444-first-class-journey-qualification",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-26T23:00:48+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1443"
   ],
   "id": "AR-1444",
   "next_action": "Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository.",
-  "owner": "coordinator-ar1444-dependency-audit",
+  "owner": "",
   "plan": "../plans/AR-1444.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Optional cross-repository journey evidence; never an ASB release blocker.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "First-class journey qualification",
-  "updated_at": "2026-09-26T22:30:50+00:00",
+  "updated_at": "2026-09-26T22:31:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1444-first-class-journey-qualification"
 }
 ---
@@ -70,3 +70,7 @@ reachability from local mocks or replay evidence.
 
 - 2026-09-26T22:30:50+00:00: Recorded command exit 0; command argv SHA-256
   45132dbe85bdf19448c279fe287163b09db0b90a909a637af778cc4e6bbc1164.
+
+- 2026-09-26T22:31:04+00:00: Verified external asb-tui AR-1327 remains planned/ownerless with no
+  pinned acceptance artifact or journey transcript. AR-1444 is optional and not an ASB
+  first-customer blocker; no asb-tui changes made.
