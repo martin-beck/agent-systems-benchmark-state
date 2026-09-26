@@ -2,21 +2,21 @@
 {
   "branch": "maintenance/ar-1459-retire-stale-state-prs",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-26T19:19:00+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1457"
   ],
   "id": "AR-1459",
   "next_action": "Close stale state PRs #20, #21, and #27 as superseded after confirming their proposed AR metadata is already represented by current state; leave blocked formal PR #25 open and record exact outcomes.",
-  "owner": "coordinator-ar1459-state-pr-cleanup",
+  "owner": "",
   "plan": "../plans/AR-1459.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Retire obsolete state-repository pull requests without changing product or formal gates.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Retire stale state-repository pull requests",
-  "updated_at": "2026-09-26T18:49:42+00:00",
+  "updated_at": "2026-09-26T18:50:11+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1459-retire-stale-state-prs"
 }
 ---
@@ -41,3 +41,8 @@ asb-tui source changes are in scope.
 
 - 2026-09-26T18:49:42+00:00: Recorded command exit 0; command argv SHA-256
   d686c08fdd6aec122e343f0e0d6d7d067318db1f324b667e5cbfcc6d3a30d2fd.
+
+- 2026-09-26T18:50:11+00:00: Closed stale state PRs #20, #21, and #27 through handoffctl run; all
+  are now CLOSED and their historical evidence is preserved. PR #25 remains OPEN because AR-1307
+  formal qualification is blocked by truthful Java OOM/capacity evidence. No product or asb-tui
+  changes.
