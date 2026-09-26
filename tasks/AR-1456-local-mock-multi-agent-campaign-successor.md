@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Local/mock multi-agent campaign successor",
-  "updated_at": "2026-09-26T17:52:05+00:00",
+  "updated_at": "2026-09-26T17:52:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1456-local-mock-multi-agent-campaign-successor"
 }
 ---
@@ -104,3 +104,6 @@ for local development, CI, or this AR's completion.
   identified one rustfmt-only line wrapping in the newly added hostile test; no semantic failure.
   Corrected that formatting in the isolated worktree. Next action: rerun fmt check, then full
   offline CLI/provenance gates.
+
+- 2026-09-26T17:52:13+00:00: Recorded command exit 0; command argv SHA-256
+  95e75af2f17ad457c403e824091094cd2bbccb54310101200517a063b063bc98.
