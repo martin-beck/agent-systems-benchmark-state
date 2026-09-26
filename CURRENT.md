@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1467](tasks/AR-1467-terminal-ar-metadata-reconciliation.md): Terminal AR metadata reconciliation | Remove stale historical next-action text from recently completed ASB AR records without changing implementation or gates. | Promote after reviewing the listed completed ARs and verifying each terminal claim against immutable evidence. | coordinator-ar1467-terminal-metadata |
+| P1 | [AR-1467](tasks/AR-1467-terminal-ar-metadata-reconciliation.md): Terminal AR metadata reconciliation | Remove stale historical next-action text from recently completed ASB AR records without changing implementation or gates. | No further action; terminal metadata was reconciled without changing implementation or gates. | coordinator-ar1467-terminal-metadata |
 
 ## Open
 
