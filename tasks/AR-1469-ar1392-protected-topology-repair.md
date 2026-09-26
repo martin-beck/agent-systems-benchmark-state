@@ -1,11 +1,11 @@
 ---
 {
   "branch": "repair/ar-1469-ar1392-protected-topology-repair",
-  "checkpoint_commit": "beb399681ad6ebcd9274f6fcea3b471da715afd8",
+  "checkpoint_commit": "e39d27d83939f77b619adcb0350b941da746d7d2",
   "claim_expires": "2026-09-27T02:36:41+00:00",
   "depends_on": [],
   "id": "AR-1469",
-  "next_action": "Publish PR from exact empty signed repair commit; require exact-head checks, then normal non-squash merge.",
+  "next_action": "Monitor PR #340 exact-head checks after synchronized topic; merge only normal two-parent and all checks green.",
   "observed_branch": "repair/ar-1469-ar1392-protected-topology-repair",
   "observed_dirty": 0,
   "observed_head": "e39d27d83939f77b619adcb0350b941da746d7d2",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the single-parent protected merge for AR-1392 without changing its reviewed implementation.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "AR-1392 protected-main topology repair",
-  "updated_at": "2026-09-26T23:41:45+00:00",
+  "updated_at": "2026-09-26T23:42:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1469-ar1392-protected-topology-repair"
 }
 ---
@@ -99,3 +99,10 @@ green exact-head checks; the failed squash topology remains part of the record.
 
 - 2026-09-26T23:41:45+00:00: Recorded command exit 0; command argv SHA-256
   cb125311c15a35598c27e66817d832d3e4d3dbece3984f521d9de17c471f1a6e.
+
+- 2026-09-26T23:42:10+00:00: PR #340 initial exact-head failures 36280109701/36280109702 were
+  integrity-only: topic beb3996 was based on reviewed 78ab rather than current protected base
+  3cd6a5a, and hosted source identity rejected the PR merge ref. Repaired by signed+DCO non-squash
+  merge commit e39d27d with parents beb3996 (reviewed AR-1392 tree) and 3cd6a5a (current
+  origin/main); implementation tree remains unchanged. Force-with-lease pushed branch; PR #340 now
+  points at e39d27d. Recheck exact-head gates; no policy weakening or rewrite.
