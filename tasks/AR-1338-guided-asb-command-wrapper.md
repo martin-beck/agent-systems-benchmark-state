@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows.",
-  "task_revision": 101,
+  "task_revision": 102,
   "title": "Guided ASB command wrapper",
-  "updated_at": "2026-09-26T16:09:07+00:00",
+  "updated_at": "2026-09-26T16:09:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1338-guided-asb-command-wrapper"
 }
 ---
@@ -304,3 +304,6 @@ reachability.
 - 2026-09-26T16:08:44+00:00: Claimed by ar1338-guided-wrapper-luna56.
 
 - 2026-09-26T16:09:07+00:00: Heartbeat by ar1338-guided-wrapper-luna56.
+
+- 2026-09-26T16:09:10+00:00: Recorded command exit 0; command argv SHA-256
+  346d2d4e5d13d401a4684806734270c281fac2ed34d79b5da4d43f113110b00d.
