@@ -10,16 +10,16 @@
   "next_action": "Promote and implement the pinned offline-capable cargo-deny/cargo-audit toolchain and reviewed first-customer bundle/tag workflow, then rerun release readiness against exact protected main.",
   "observed_branch": "release/ar-1462-pinned-release-toolchain-bundle-workflow",
   "observed_dirty": 0,
-  "observed_head": "3283bc9e3e5306f1b2a979fdcae607c65b08e5f3",
+  "observed_head": "3143344cd16c1f27a72a87d1cf448c6417b8b369",
   "owner": "coordinator-ar1462-release-tooling",
   "plan": "../plans/AR-1462.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Establish reproducible supply-chain checks and first-customer release bundle publication workflow.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Pinned release toolchain and first-customer bundle workflow",
-  "updated_at": "2026-09-26T19:26:12+00:00",
+  "updated_at": "2026-09-26T19:26:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1462-pinned-release-toolchain-bundle-workflow"
 }
 ---
