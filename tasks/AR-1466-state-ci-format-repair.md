@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Ruff formatting and SIM117 lint repairs are committed at 53dad057; focused formatting, Ruff and mypy gates pass locally. Exact-main CI is running.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "State CI formatting repair",
-  "updated_at": "2026-09-26T21:54:19+00:00",
+  "updated_at": "2026-09-26T21:55:15+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1466-state-ci-format-repair"
 }
 ---
@@ -78,3 +78,6 @@ reports `tools/validate_ar1308_capacity.py` as the only unformatted file.
 
 - 2026-09-26T21:54:19+00:00: Recorded command exit 2; command argv SHA-256
   036ec92e7b7811778dcedfff4daf4cd1fad91618462d24999403e2c3baf24afe.
+
+- 2026-09-26T21:55:15+00:00: Recorded command exit 0; command argv SHA-256
+  648d45cf8d061d60c946ae25adb0cc04d2034a809149b8cc19a94123260343e0.
