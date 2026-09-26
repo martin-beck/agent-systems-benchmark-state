@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provisioned exact signed source, reviewed Ubuntu image, 64 GiB overlay and canonical lock; signed preflight remains blocked only by exhausted host swap and unavailable exact seed digest.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Formal capacity and signed-input provisioning repair",
-  "updated_at": "2026-09-26T21:34:28+00:00",
+  "updated_at": "2026-09-26T21:34:55+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1464-formal-capacity-input-provisioning"
 }
 ---
@@ -165,3 +165,6 @@ scope.
 
 - 2026-09-26T21:34:28+00:00: Recorded command exit 0; command argv SHA-256
   3e3392fe84e6bbdce6e53f005d2af6901009e5ca916c3d9266df8990764025af.
+
+- 2026-09-26T21:34:55+00:00: Recorded command exit 0; command argv SHA-256
+  0ebe481f443cf8fd02eae44636b8a3323b561081036b6a65c444ac409ff204d3.
