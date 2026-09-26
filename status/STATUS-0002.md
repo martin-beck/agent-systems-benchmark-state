@@ -135,7 +135,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1466](../tasks/AR-1466-state-ci-format-repair.md): State CI formatting repair | coordinator-ar1466-format | Repair the current state branch&#x27;s deterministic formatting failure without changing validator behavior. | Claim the repair, apply only the required Ruff formatting to tools/validate_ar1308_capacity.py, run all applicable state gates, and publish through exact-head CI. |
+| P1 | [AR-1466](../tasks/AR-1466-state-ci-format-repair.md): State CI formatting repair | coordinator-ar1466-format | Ruff formatting and SIM117 lint repairs are committed at 53dad057; focused formatting, Ruff and mypy gates pass locally. Exact-main CI is running. | Wait for every exact-main required state workflow on 53dad057 to finish; inspect and repair any failure, then release AR-1466 done with durable evidence. |
 
 ### Open (1)
 

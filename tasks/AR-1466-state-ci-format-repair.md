@@ -1,20 +1,20 @@
 ---
 {
   "branch": "repair/ar-1466-state-ci-format-repair",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "53dad0574741548c6acc8c4cac729ac32edfa423",
   "claim_expires": "2026-09-26T22:47:23+00:00",
   "depends_on": [],
   "id": "AR-1466",
-  "next_action": "Claim the repair, apply only the required Ruff formatting to tools/validate_ar1308_capacity.py, run all applicable state gates, and publish through exact-head CI.",
+  "next_action": "Wait for every exact-main required state workflow on 53dad057 to finish; inspect and repair any failure, then release AR-1466 done with durable evidence.",
   "owner": "coordinator-ar1466-format",
   "plan": "../plans/AR-1466-state-ci-format-repair.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Repair the current state branch's deterministic formatting failure without changing validator behavior.",
-  "task_revision": 12,
+  "summary": "Ruff formatting and SIM117 lint repairs are committed at 53dad057; focused formatting, Ruff and mypy gates pass locally. Exact-main CI is running.",
+  "task_revision": 13,
   "title": "State CI formatting repair",
-  "updated_at": "2026-09-26T21:49:29+00:00",
+  "updated_at": "2026-09-26T21:50:23+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1466-state-ci-format-repair"
 }
 ---
@@ -53,3 +53,7 @@ reports `tools/validate_ar1308_capacity.py` as the only unformatted file.
 
 - 2026-09-26T21:49:29+00:00: Recorded command exit 0; command argv SHA-256
   cb057cab814f1c973462923bf8dbc81ddec5313dbc2df7f9fa107a43e034d360.
+
+- 2026-09-26T21:50:23+00:00: Fixed only deterministic formatting in
+  tools/validate_ar1308_capacity.py and the existing nested patch test context. No validator
+  behavior or formal contract changed.
