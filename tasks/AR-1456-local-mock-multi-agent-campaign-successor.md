@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Local/mock multi-agent campaign successor",
-  "updated_at": "2026-09-26T17:50:19+00:00",
+  "updated_at": "2026-09-26T17:50:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1456-local-mock-multi-agent-campaign-successor"
 }
 ---
@@ -73,3 +73,6 @@ for local development, CI, or this AR's completion.
   already passed (1/1). Correct opt-in patch is now present in the isolated AR-1456 worktree: direct
   record-campaign requires --local-mock, help/docs updated, and a negative no-opt-in test added.
   Next action: rerun focused tests and inspect diff before signed commit.
+
+- 2026-09-26T17:50:26+00:00: Recorded command exit 1; command argv SHA-256
+  cbad6c12d1f10dda80a556273794b2f225aadff59ee5f1a9607285a3390eccc4.
