@@ -120,11 +120,11 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | coordinator-ar1444-reclass | Make the complete install-to-comparison journey a cross-repository release qualification gate. | Blocked pending paired asb-tui AR-1327: obtain exact pinned acceptance revision/artifact and credential-free journey transcript, then rerun cross-repository qualification. |
+| P0 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Make the complete install-to-comparison journey a cross-repository release qualification gate. | Blocked pending paired asb-tui AR-1327: obtain exact pinned acceptance revision/artifact and credential-free journey transcript, then rerun cross-repository qualification. |
 
 ### Blocked (69)
 

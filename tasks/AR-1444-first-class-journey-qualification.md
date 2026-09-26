@@ -2,21 +2,21 @@
 {
   "branch": "feature/ar-1444-first-class-journey-qualification",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-26T19:04:48+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1443"
   ],
   "id": "AR-1444",
   "next_action": "Blocked pending paired asb-tui AR-1327: obtain exact pinned acceptance revision/artifact and credential-free journey transcript, then rerun cross-repository qualification.",
-  "owner": "coordinator-ar1444-reclass",
+  "owner": "",
   "plan": "../plans/AR-1444.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Make the complete install-to-comparison journey a cross-repository release qualification gate.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "First-class journey qualification",
-  "updated_at": "2026-09-26T18:44:48+00:00",
+  "updated_at": "2026-09-26T18:45:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1444-first-class-journey-qualification"
 }
 ---
@@ -52,3 +52,7 @@ reachability from local mocks or replay evidence.
   made.
 
 - 2026-09-26T18:44:48+00:00: Claimed by coordinator-ar1444-reclass.
+
+- 2026-09-26T18:45:12+00:00: Reclassified from active P0 release gate to optional integration work;
+  ASB-only first-customer qualification is complete in AR-1458. External asb-tui evidence remains
+  separate and must not block ASB.
