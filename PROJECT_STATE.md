@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #339 | `feature/ar-1392-control-authority-materializer@739b67d9888e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | fix(control): revalidate authority before receipt materialization |
+| #339 | `feature/ar-1392-control-authority-materializer@739b67d9888e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS: | fix(control): revalidate authority before receipt materialization |
 
 ## Recent workflows
 
