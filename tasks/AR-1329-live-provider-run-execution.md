@@ -17,11 +17,11 @@
   "plan": "../plans/AR-1329.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Qualify asb run and sweep through a mandatory deterministic local mock; retain optional fail-closed live integration.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Local-mock run execution with optional live-provider integration",
-  "updated_at": "2026-09-25T15:12:31+00:00",
+  "updated_at": "2026-09-26T20:09:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1329-live-provider-run-execution"
 }
 ---
@@ -217,3 +217,7 @@ and teardown, and fail-closed denial of unapproved external traffic remain requi
 contracts. Existing live-provider dependency edges describe production integration
 ordering only and must not be used to block local qualification or to claim external
 reachability.
+
+- 2026-09-26T20:09:57+00:00: Local deterministic mock boundary is complete via AR-1433 and current
+  first-customer qualification; external provider reachability is explicitly optional and cannot
+  block this AR.
