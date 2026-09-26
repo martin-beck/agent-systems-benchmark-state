@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1456](tasks/AR-1456-local-mock-multi-agent-campaign-successor.md): Local/mock multi-agent campaign successor | Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution. | Merge PR #336 now that all exact-head checks are green; record merge SHA, then launch and monitor seven exact-main post-merge workflows. | ar1456-local-campaign-luna56 |
+| P1 | [AR-1456](tasks/AR-1456-local-mock-multi-agent-campaign-successor.md): Local/mock multi-agent campaign successor | Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution. | Monitor post-merge workflows 36262014306,36262014372,36262014331,36262014316,36262014432,36262014299 to terminal SUCCESS; then verify exact main and release done. | ar1456-local-campaign-luna56 |
 
 ## Open
 

@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1456-local-mock-multi-agent-campaign-successor",
-  "checkpoint_commit": "f4b03611afb70cb6b6abc7ff95ae16815822891a",
+  "checkpoint_commit": "36d4bdf35a644a36a8acfdb31078eb7f668a17c4",
   "claim_expires": "2026-09-26T20:16:10+00:00",
   "depends_on": [
     "AR-1332",
@@ -9,7 +9,7 @@
     "AR-1447"
   ],
   "id": "AR-1456",
-  "next_action": "Merge PR #336 now that all exact-head checks are green; record merge SHA, then launch and monitor seven exact-main post-merge workflows.",
+  "next_action": "Monitor post-merge workflows 36262014306,36262014372,36262014331,36262014316,36262014432,36262014299 to terminal SUCCESS; then verify exact main and release done.",
   "observed_branch": "feature/ar-1456-local-mock-multi-agent-campaign-successor",
   "observed_dirty": 0,
   "observed_head": "f4b03611afb70cb6b6abc7ff95ae16815822891a",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution.",
-  "task_revision": 98,
+  "task_revision": 99,
   "title": "Local/mock multi-agent campaign successor",
-  "updated_at": "2026-09-26T18:18:07+00:00",
+  "updated_at": "2026-09-26T18:18:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1456-local-mock-multi-agent-campaign-successor"
 }
 ---
@@ -354,3 +354,10 @@ for local development, CI, or this AR's completion.
 
 - 2026-09-26T18:18:07+00:00: Recorded command exit 0; command argv SHA-256
   fe6ef13ddcae11583fb5252d94a23900aa4071cd72933ee68c5808b0c53182f3.
+
+- 2026-09-26T18:18:31+00:00: PR #336 merged after all fresh exact-head checks green. Merge SHA
+  36d4bdf35a644a36a8acfdb31078eb7f668a17c4; reviewed head f4b03611afb70cb6b6abc7ff95ae16815822891a;
+  base ad4f96ab3f7e57916208406b2f56aa9ec4e54885. Seven exact-main workflows launched: Formal
+  36262014306, Hosted 36262014372, Repository quality 36262014331, AArch64 36262014316, Rust
+  36262014432, Fault 36262014299, Huawei 36262014360 (already success). Monitor remaining six to
+  terminal success.
