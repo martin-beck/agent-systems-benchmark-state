@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1392-control-authority-materializer",
-  "checkpoint_commit": "739b67d9888e8aced90a13cab79fb67291b297de",
+  "checkpoint_commit": "78ab92bdb87645ac5567fb3341b1b0b73dba5029",
   "claim_expires": "2026-09-27T01:52:14+00:00",
   "depends_on": [
     "AR-1388",
@@ -14,7 +14,7 @@
     "AR-1340"
   ],
   "id": "AR-1392",
-  "next_action": "Publish signed PR from reviewed exact head; require exact-head CI before merge.",
+  "next_action": "Monitor PR #339 exact-head checks; merge only after all required checks pass.",
   "observed_branch": "feature/ar-1392-control-authority-materializer",
   "observed_dirty": 0,
   "observed_head": "78ab92bdb87645ac5567fb3341b1b0b73dba5029",
@@ -24,9 +24,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve private live authority from authenticated control enrollment without caller injection.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Control-owned private authority materializer",
-  "updated_at": "2026-09-26T23:05:09+00:00",
+  "updated_at": "2026-09-26T23:05:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1392-control-authority-materializer"
 }
 ---
@@ -197,3 +197,11 @@ reachability.
 
 - 2026-09-26T23:05:09+00:00: Recorded command exit 0; command argv SHA-256
   7cd50436b7d19267cfdb4b0fbb58465253bde870718f9a0ff962fdc67affa551.
+
+- 2026-09-26T23:05:39+00:00: Publication repair: PR #339 checks correctly rejected the prior topic
+  because it was behind protected main and hosted source identity was not immutable. Fetched
+  origin/main and rebased the single scoped signed+DCO change; new exact head
+  78ab92bdb87645ac5567fb3341b1b0b73dba5029, based on protected merge 01b70e8. Diff remains one file,
+  45 insertions/8 deletions; worktree clean; force-with-lease updated remote branch. The original
+  platform source-identity failure is an integrity gate being rechecked on the rebased exact head,
+  not bypassed.

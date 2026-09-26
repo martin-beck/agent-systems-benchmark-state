@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1392](tasks/AR-1392-control-authority-materializer.md): Control-owned private authority materializer | Resolve private live authority from authenticated control enrollment without caller injection. | Publish signed PR from reviewed exact head; require exact-head CI before merge. | coordinator-ar1392-control-materializer |
+| P0 | [AR-1392](tasks/AR-1392-control-authority-materializer.md): Control-owned private authority materializer | Resolve private live authority from authenticated control enrollment without caller injection. | Monitor PR #339 exact-head checks; merge only after all required checks pass. | coordinator-ar1392-control-materializer |
 
 ## Blocked
 
