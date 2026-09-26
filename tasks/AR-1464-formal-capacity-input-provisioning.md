@@ -2,19 +2,19 @@
 {
   "branch": "repair/ar-1464-formal-capacity-input-provisioning",
   "checkpoint_commit": "ab485f767fbddbd8adfc27b5120f3df0a045b762",
-  "claim_expires": "2026-09-26T23:12:57+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1464",
   "next_action": "Obtain the reviewed full-exhaustive seed whose SHA-256 is b3383756b5cd357f58d923216effea33be35b793034de321c3c9ce460ece4b28 and a safe runner-local or authorized host swap arrangement with at least 1 GiB free; rerun signed preflight, then hand inputs to AR-1308. Do not boot TLC before both pass.",
-  "owner": "coordinator-ar1464-formal-capacity",
+  "owner": "",
   "plan": "../plans/AR-1464.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provisioned exact signed source, reviewed Ubuntu image, 64 GiB overlay and canonical lock; signed preflight remains blocked only by exhausted host swap and unavailable exact seed digest.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Formal capacity and signed-input provisioning repair",
-  "updated_at": "2026-09-26T21:24:22+00:00",
+  "updated_at": "2026-09-26T21:24:35+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1464-formal-capacity-input-provisioning"
 }
 ---
@@ -142,3 +142,11 @@ scope.
   b3383756b5cd357f58d923216effea33be35b793034de321c3c9ce460ece4b28. No synthetic seed, unsigned
   input, swap mutation, QEMU boot or TLC run was attempted; exact 3G/3G/2-worker/2-core/8G/7200s
   contract preserved.
+
+- 2026-09-26T21:24:35+00:00: Blocked after bounded provisioning. Exact signed source ab485f767,
+  reviewed image SHA-256 612b2c0c..., 64 GiB overlay, JDK/TLC/model and canonical owner-private lock
+  are provisioned and cross-validated. Signed preflight still fails only because host swap free is
+  ~28 KiB (<1 GiB) and required full-exhaustive seed SHA-256
+  b3383756b5cd357f58d923216effea33be35b793034de321c3c9ce460ece4b28 is unavailable; existing fixtures
+  do not match. No synthetic seed, swap mutation, QEMU boot or TLC run. Next action: obtain exact
+  seed and safe swap capacity, rerun preflight, then hand off to AR-1308.
