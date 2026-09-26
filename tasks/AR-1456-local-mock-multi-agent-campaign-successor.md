@@ -16,9 +16,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Local/mock multi-agent campaign successor",
-  "updated_at": "2026-09-26T17:45:29+00:00",
+  "updated_at": "2026-09-26T17:45:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1456-local-mock-multi-agent-campaign-successor"
 }
 ---
@@ -38,3 +38,6 @@ for local development, CI, or this AR's completion.
   AR-1433, and AR-1447 are done. AR-1329 remains optional live integration.
 
 - 2026-09-26T17:45:29+00:00: Claimed by ar1456-local-campaign-luna56.
+
+- 2026-09-26T17:45:41+00:00: Recorded command exit 0; command argv SHA-256
+  a1159e9df3670d549d04524532629f5477ceb7deec9b45e47e8c009506ecb2c8.
