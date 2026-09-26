@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1464](tasks/AR-1464-formal-capacity-input-provisioning.md): Formal capacity and signed-input provisioning repair | Provision the missing signed formal inputs and disposable capacity required by AR-1308. | Provision and verify the exact signed AR-1307 source bundle, reviewed Ubuntu image, canonical seed and admission lock, 64 GiB overlay and at least 1 GiB available host swap; then hand the immutable inputs to AR-1308. | coordinator-ar1464-formal-capacity |
+| P0 | [AR-1464](tasks/AR-1464-formal-capacity-input-provisioning.md): Formal capacity and signed-input provisioning repair | Provisioned exact signed source, reviewed Ubuntu image, 64 GiB overlay and canonical lock; signed preflight remains blocked only by exhausted host swap and unavailable exact seed digest. | Obtain the reviewed full-exhaustive seed whose SHA-256 is b3383756b5cd357f58d923216effea33be35b793034de321c3c9ce460ece4b28 and a safe runner-local or authorized host swap arrangement with at least 1 GiB free; rerun signed preflight, then hand inputs to AR-1308. Do not boot TLC before both pass. | coordinator-ar1464-formal-capacity |
 
 ## Open
 

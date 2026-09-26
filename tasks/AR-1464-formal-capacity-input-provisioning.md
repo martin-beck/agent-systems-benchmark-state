@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-26T23:12:57+00:00",
   "depends_on": [],
   "id": "AR-1464",
-  "next_action": "Provision and verify the exact signed AR-1307 source bundle, reviewed Ubuntu image, canonical seed and admission lock, 64 GiB overlay and at least 1 GiB available host swap; then hand the immutable inputs to AR-1308.",
+  "next_action": "Obtain the reviewed full-exhaustive seed whose SHA-256 is b3383756b5cd357f58d923216effea33be35b793034de321c3c9ce460ece4b28 and a safe runner-local or authorized host swap arrangement with at least 1 GiB free; rerun signed preflight, then hand inputs to AR-1308. Do not boot TLC before both pass.",
   "owner": "coordinator-ar1464-formal-capacity",
   "plan": "../plans/AR-1464.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Provision the missing signed formal inputs and disposable capacity required by AR-1308.",
-  "task_revision": 33,
+  "summary": "Provisioned exact signed source, reviewed Ubuntu image, 64 GiB overlay and canonical lock; signed preflight remains blocked only by exhausted host swap and unavailable exact seed digest.",
+  "task_revision": 34,
   "title": "Formal capacity and signed-input provisioning repair",
-  "updated_at": "2026-09-26T21:23:43+00:00",
+  "updated_at": "2026-09-26T21:24:22+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1464-formal-capacity-input-provisioning"
 }
 ---
@@ -126,3 +126,19 @@ scope.
 
 - 2026-09-26T21:23:43+00:00: Recorded command exit 0; command argv SHA-256
   d5c5f9c96e03a912fd140c4fda18b7e54847c9c5a87cd0e2159034bb97239be3.
+
+- 2026-09-26T21:24:22+00:00: Bounded provisioning/audit completed without QEMU/TLC execution. Exact
+  AR-1307 source `/srv/data/projects/ar1308-ar1307-source` is ab485f767 with valid SSH signature and
+  matching DCO; source/tree preflight passes. Reviewed Ubuntu image copied from
+  `/srv/data/projects/asb-replay-vm/noble-server-cloudimg-amd64.img` and verified SHA-256
+  612b2c0cc1bc413a6cb8c38fd611794caf0f2b436c50013d8b3794db12ad7354. Created
+  `/srv/data/projects/asb-state-tlc-vm-ar1308-clean-v1/root-overlay-64g.qcow2` with 64 GiB virtual
+  size and the verified image as qcow2 backing. Existing JDK 17, TLC digest
+  936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88, model digest and canonical
+  `/srv/data/projects/.asb-tlc/admission.lock` pass preflight. Final signed preflight exit 1 reports
+  only host available swap below 1 GiB and seed missing/wrong digest. All active swap devices are
+  fully consumed (about 28 KiB free); available historical/user-data fixtures hash 66acede7... and
+  generated current full-exhaustive seed hashes 7e1128a..., neither matches required receipt digest
+  b3383756b5cd357f58d923216effea33be35b793034de321c3c9ce460ece4b28. No synthetic seed, unsigned
+  input, swap mutation, QEMU boot or TLC run was attempted; exact 3G/3G/2-worker/2-core/8G/7200s
+  contract preserved.
