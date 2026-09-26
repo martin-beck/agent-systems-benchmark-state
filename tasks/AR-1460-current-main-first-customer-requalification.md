@@ -9,15 +9,18 @@
   ],
   "id": "AR-1460",
   "next_action": "Run the complete ASB-only first-customer production-like qualification against current protected main 36d4bdf35a644a36a8acfdb31078eb7f668a17c4; release only after local/mock campaign, replay, recovery, cleanup, privacy, full gates, and exact-main evidence pass.",
+  "observed_branch": "qualification/ar-1460-current-main-first-customer-requalification",
+  "observed_dirty": 0,
+  "observed_head": "36d4bdf35a644a36a8acfdb31078eb7f668a17c4",
   "owner": "coordinator-ar1460-current-main",
   "plan": "../plans/AR-1460.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Requalify first-customer readiness after the latest local-mock campaign merge.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Current-main first-customer requalification",
-  "updated_at": "2026-09-26T18:57:52+00:00",
+  "updated_at": "2026-09-26T18:58:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1460-current-main-first-customer-requalification"
 }
 ---
