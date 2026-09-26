@@ -16,9 +16,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Capture and seal runtime-authorized provider exchanges; deterministic local/mock qualification is sufficient and external reachability is optional.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Live provider capture into a sealed cassette",
-  "updated_at": "2026-09-26T20:11:43+00:00",
+  "updated_at": "2026-09-26T20:15:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1330-live-capture-sealed-cassette"
 }
 ---
@@ -55,3 +55,6 @@ reachability.
 - 2026-09-26T20:11:43+00:00: Reconciled acceptance wording: mandatory evidence is deterministic
   local/mock capture plus offline strict replay; a real external provider exchange is optional
   supplementary evidence and never a completion or dependency gate.
+
+- 2026-09-26T20:15:08+00:00: Recorded command exit 101; command argv SHA-256
+  8732e4f605cd1c68a55f4fb6195496a2ba4c83413af5fb11646a3c357034d697.
