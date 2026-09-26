@@ -11,17 +11,17 @@
   "id": "AR-1330",
   "next_action": "Wire runtime-owned StrictReplayService::capture_authenticated_connection into the live path, qualify with deterministic local/mock fixtures, and preserve fail-closed optional external reachability.",
   "observed_branch": "feature/ar-1330-live-capture-sealed-cassette",
-  "observed_dirty": 2,
-  "observed_head": "0a85123785c3e5e293fee02df757f494ac3423fe",
+  "observed_dirty": 0,
+  "observed_head": "8242efe50f4ddcc3a736e5cf84bc679c407468d4",
   "owner": "coordinator-ar1330-capture",
   "plan": "../plans/AR-1330.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Capture and seal runtime-authorized provider exchanges; deterministic local/mock qualification is sufficient and external reachability is optional.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Live provider capture into a sealed cassette",
-  "updated_at": "2026-09-26T20:17:08+00:00",
+  "updated_at": "2026-09-26T20:17:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1330-live-capture-sealed-cassette"
 }
 ---
