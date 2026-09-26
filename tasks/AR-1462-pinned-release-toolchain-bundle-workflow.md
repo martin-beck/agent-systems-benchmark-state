@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Establish reproducible supply-chain checks and first-customer release bundle publication workflow.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Pinned release toolchain and first-customer bundle workflow",
-  "updated_at": "2026-09-26T19:17:03+00:00",
+  "updated_at": "2026-09-26T19:17:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1462-pinned-release-toolchain-bundle-workflow"
 }
 ---
@@ -39,3 +39,6 @@ all integrity, provenance, privacy and exact-head checks remain mandatory.
   promote bounded P0 repair.
 
 - 2026-09-26T19:17:03+00:00: Claimed by coordinator-ar1462-release-tooling.
+
+- 2026-09-26T19:17:35+00:00: Recorded command exit 0; command argv SHA-256
+  032da1cbce6ee6ab9b84a18cde263eec8332a57d995e1c47d0fe0c574ab0955f.
