@@ -111,10 +111,11 @@
 | [AR-1450](../tasks/AR-1450-runtime-owned-local-replay-acquisition.md) | [AR-1448](../tasks/AR-1448-runtime-replay-authority-source.md) | [AR-1455](../tasks/AR-1455-runtime-owned-guided-replay-entrypoint.md) |
 | [AR-1451](../tasks/AR-1451-central-orchestration-authority-design.md) | [AR-1341](../tasks/AR-1341-runtime-observed-namespace-repair.md), [AR-1357](../tasks/AR-1357-runtime-attested-enrollment-record.md), [AR-1433](../tasks/AR-1433-runtime-mock-attempt-backend.md), [AR-1448](../tasks/AR-1448-runtime-replay-authority-source.md) | [AR-1452](../tasks/AR-1452-runtime-orchestration-service.md), [AR-1454](../tasks/AR-1454-protected-main-tree-repair-runtime-replay.md) |
 | [AR-1452](../tasks/AR-1452-runtime-orchestration-service.md) | [AR-1357](../tasks/AR-1357-runtime-attested-enrollment-record.md), [AR-1433](../tasks/AR-1433-runtime-mock-attempt-backend.md), [AR-1448](../tasks/AR-1448-runtime-replay-authority-source.md), [AR-1451](../tasks/AR-1451-central-orchestration-authority-design.md) | [AR-1453](../tasks/AR-1453-frontend-orchestration-wiring.md), [AR-1454](../tasks/AR-1454-protected-main-tree-repair-runtime-replay.md) |
-| [AR-1453](../tasks/AR-1453-frontend-orchestration-wiring.md) | [AR-1452](../tasks/AR-1452-runtime-orchestration-service.md) | [AR-1455](../tasks/AR-1455-runtime-owned-guided-replay-entrypoint.md) |
+| [AR-1453](../tasks/AR-1453-frontend-orchestration-wiring.md) | [AR-1452](../tasks/AR-1452-runtime-orchestration-service.md) | [AR-1455](../tasks/AR-1455-runtime-owned-guided-replay-entrypoint.md), [AR-1457](../tasks/AR-1457-retire-superseded-pr-332.md) |
 | [AR-1454](../tasks/AR-1454-protected-main-tree-repair-runtime-replay.md) | [AR-1451](../tasks/AR-1451-central-orchestration-authority-design.md), [AR-1452](../tasks/AR-1452-runtime-orchestration-service.md) | None |
 | [AR-1455](../tasks/AR-1455-runtime-owned-guided-replay-entrypoint.md) | [AR-1448](../tasks/AR-1448-runtime-replay-authority-source.md), [AR-1450](../tasks/AR-1450-runtime-owned-local-replay-acquisition.md), [AR-1453](../tasks/AR-1453-frontend-orchestration-wiring.md) | None |
 | [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md) | [AR-1332](../tasks/AR-1332-record-live-replay-offline.md), [AR-1433](../tasks/AR-1433-runtime-mock-attempt-backend.md), [AR-1447](../tasks/AR-1447-asb-local-campaign-qualification.md) | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md) |
+| [AR-1457](../tasks/AR-1457-retire-superseded-pr-332.md) | [AR-1453](../tasks/AR-1453-frontend-orchestration-wiring.md) | None |
 
 ## Complete AR inventory
 
@@ -198,7 +199,7 @@
 | P2 | [AR-0705](../tasks/AR-0705-native-debian-capacity.md): Provide native Debian capacity | Unclaimed | Qualify booted Debian on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 Debian and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 
-### Planned (59)
+### Planned (60)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -261,6 +262,7 @@
 | P2 | [AR-0602](../tasks/AR-0602-csb-monitoring-contention.md): Validate CSB monitoring and contention diagnostics | Unclaimed | Validate and integrate optional CSB resource monitoring and kernel-contention evidence without double counting or overstating support. | Audit CSB monitoring using native x86_64 oracles and required pinned QEMU AArch64 portable mapping/lifecycle checks; keep native ARM64 counters and performance as optional future evidence. |
 | P2 | [AR-0903](../tasks/AR-0903-release-qualification.md): Package and qualify the first release | Unclaimed | Deliver reproducible native release artifacts with complete support and evidence statements. | Audit milestone completeness and run isolated release qualification. |
 | P2 | [AR-1016](../tasks/AR-1016-measurement-integration-audit.md): Integrate and audit measurement selection and CSB evidence | Unclaimed | Audit selectable and CSB-backed measurements across live and replay runs. | Add end-to-end live/replay comparison, release documentation, and independent audit after AR-1014 and AR-1015. |
+| P2 | [AR-1457](../tasks/AR-1457-retire-superseded-pr-332.md): Retire superseded AR-1453 pull request | Unclaimed | Retire the obsolete pre-repair AR-1453 pull request without changing product code. | Close obsolete PR #332 as superseded by merged PR #333, then verify the repository has no stale open PR for AR-1453 and release this maintenance AR with durable evidence. |
 
 ### Future (1)
 
@@ -510,4 +512,3 @@
 | P1 | [AR-0888](../tasks/AR-0888-llm-double-conformance-spike.md): Spike deterministic LLM double conformance | Unclaimed | Measure deterministic LLM test doubles against one hostile ASB protocol and isolation suite before selecting any dependency. | Build the isolated OpenAI and Anthropic conformance spike, execute exact pinned candidates, and publish pass, fail, unsupported, and untested evidence. |
 | P1 | [AR-0889](../tasks/AR-0889-llm-fixture-scenario-contract.md): Define the LLM fixture and scenario contract | Unclaimed | Define generated synthetic LLM scenarios without weakening the existing content-addressed cassette replay contract. | Specify and implement the selected synthetic fixture and scenario contract with strict evidence labels, privacy bounds, and fail-closed validation. |
 | P1 | [AR-0891](../tasks/AR-0891-local-inference-provider-profiles.md): Qualify local inference provider profiles | Unclaimed | Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server. | Wait for and verify all six post-merge exact-main workflows on adac76558387cb0bdd09e2ba6cbfe49b9bc205be, then release AR-0891 and promote the next dependency-ready AR. |
-| P1 | [AR-0895](../tasks/AR-0895-verify-coordination-content.md): Verify every coordination-content pull request | Unclaimed | Close the workflow path-filter gap that lets coordination-content pull requests skip strict state consistency and DCO checks. | Rebase the approved three-path patch onto current repaired/licensed state main, preserve exact scope/signature/DCO, guarded force-with-lease PR #17, and require fresh exact-head CI before merge. |
