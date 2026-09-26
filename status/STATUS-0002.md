@@ -122,7 +122,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md): Local/mock multi-agent campaign successor | ar1456-local-campaign-luna56 | Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution. | Commit the reviewed three-file explicit local-mock opt-in patch signed+DCO; then publish only from the exact clean head. |
+| P1 | [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md): Local/mock multi-agent campaign successor | ar1456-local-campaign-luna56 | Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution. | Publish reviewed signed head b6a3d5f22f1087fa4352eed760185cc745403ad9 through handoffctl; require exact-head CI before merge. |
 
 ### Open (1)
 

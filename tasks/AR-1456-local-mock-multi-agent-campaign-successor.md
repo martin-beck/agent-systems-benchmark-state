@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1456-local-mock-multi-agent-campaign-successor",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "b6a3d5f22f1087fa4352eed760185cc745403ad9",
   "claim_expires": "2026-09-26T19:45:29+00:00",
   "depends_on": [
     "AR-1332",
@@ -9,7 +9,7 @@
     "AR-1447"
   ],
   "id": "AR-1456",
-  "next_action": "Commit the reviewed three-file explicit local-mock opt-in patch signed+DCO; then publish only from the exact clean head.",
+  "next_action": "Publish reviewed signed head b6a3d5f22f1087fa4352eed760185cc745403ad9 through handoffctl; require exact-head CI before merge.",
   "observed_branch": "feature/ar-1456-local-mock-multi-agent-campaign-successor",
   "observed_dirty": 0,
   "observed_head": "b6a3d5f22f1087fa4352eed760185cc745403ad9",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Local/mock multi-agent campaign successor",
-  "updated_at": "2026-09-26T17:54:36+00:00",
+  "updated_at": "2026-09-26T17:54:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1456-local-mock-multi-agent-campaign-successor"
 }
 ---
@@ -137,3 +137,10 @@ for local development, CI, or this AR's completion.
 
 - 2026-09-26T17:54:24+00:00: Recorded command exit 0; command argv SHA-256
   27c7b21f20530c13940e265527a3d369df3eda565d1e96cdf4443dbfc69a774f.
+
+- 2026-09-26T17:54:52+00:00: Independent diff review complete: exact three-file delta only; direct
+  record-campaign now requires explicit --local-mock, no-provider hostile test covers omission, docs
+  state the boundary, and provenance matches source. Product worktree clean at signed+DCO
+  b6a3d5f22f1087fa4352eed760185cc745403ad9. Focused campaign 1/1, guide 5/5, workflow transcript
+  3/3, fmt check, and full asb-cli --all-targets otherwise green (113 unit + all integration
+  suites).
