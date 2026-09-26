@@ -12,7 +12,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- | --- |
 | #327 | `feature/ar-1338-guided-asb-command-wrapper@4d42f598127d` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): extend guided ASB workflow |
 | #332 | `feature/ar-1453-frontend-orchestration-wiring@082b0624abe2` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: route ASB frontends through central orchestration |
-| #334 | `feature/ar-1455-runtime-owned-guided-replay-entrypoint@43eaa298272e` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(runtime): own guided local replay entrypoint |
+| #334 | `feature/ar-1455-runtime-owned-guided-replay-entrypoint@43eaa298272e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(runtime): own guided local replay entrypoint |
 
 ## Recent workflows
 
@@ -24,7 +24,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36252419945 | `43eaa298272e` | pull_request | Formal assurance | completed:success |
 | 36252419942 | `43eaa298272e` | pull_request | Rust verification | completed:success |
 | 36252419939 | `43eaa298272e` | pull_request | Huawei MIT source headers | completed:success |
-| 36252419935 | `43eaa298272e` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 36252419935 | `43eaa298272e` | pull_request | Emulated aarch64 portability | completed:success |
 | 36252419933 | `43eaa298272e` | pull_request | Repository quality | completed:failure |
 | 36252100786 | `e12a4111c29e` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36252100754 | `e12a4111c29e` | pull_request | Repository quality | completed:failure |
