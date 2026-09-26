@@ -117,11 +117,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Make the complete install-to-comparison journey a cross-repository release qualification gate. | Promote after AR-1443 and paired asb-tui AR-1327 are done; run the disposable cross-repository journey and publish the support/release gate. |
+| P0 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | ar1444-journey-qualification-luna56 | Make the complete install-to-comparison journey a cross-repository release qualification gate. | Promote after AR-1443 and paired asb-tui AR-1327 are done; run the disposable cross-repository journey and publish the support/release gate. |
 
 ### Blocked (69)
 
