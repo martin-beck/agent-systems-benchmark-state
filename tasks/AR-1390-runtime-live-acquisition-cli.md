@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1390-runtime-live-acquisition-cli",
   "checkpoint_commit": "10bffbf015bd7ca78d8c0d18f04cf0190195e933",
-  "claim_expires": "2026-09-27T00:39:04+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1388",
     "AR-1385",
@@ -18,15 +18,15 @@
   "observed_branch": "feature/ar-1390-runtime-live-acquisition-cli",
   "observed_dirty": 0,
   "observed_head": "10bffbf015bd7ca78d8c0d18f04cf0190195e933",
-  "owner": "coordinator-ar1390-live-acquisition-luna56",
+  "owner": "",
   "plan": "../plans/AR-1390-runtime-live-acquisition-cli.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Compose runtime-owned live provider acquisition and wire it into normal ASB run and sweep.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Runtime live acquisition and CLI bridge",
-  "updated_at": "2026-09-26T22:41:28+00:00",
+  "updated_at": "2026-09-26T22:41:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1390-runtime-live-acquisition-cli"
 }
 ---
@@ -122,3 +122,19 @@ reachability.
 
 - 2026-09-26T22:41:28+00:00: Recorded command exit 0; command argv SHA-256
   baf830ba4c3650609791e2845627c3fb07425f83ab11e0c0920004694c0ef32f.
+
+- 2026-09-26T22:41:54+00:00: Bounded AR-1390 audit and baseline gates complete. Verified all eight
+  dependencies done and declared worktree clean at 10bffbf015bd7ca78d8c0d18f04cf0190195e933.
+  Existing runtime live_service authenticated receipt/profile materializer, opaque handle and
+  dispatch source are present; focused asb-runtime live_service tests pass 29/29, CLI live-provider
+  guard passes 1/1, and clippy for asb-runtime/asb-cli all targets passes. Exact blocker: normal
+  binary asb run/sweep still dispatches only through injected LiveProviderAttemptFactory; public
+  runtime source helpers are library-only. Control RuntimeReceipt response exposes receipt metadata
+  but no reconstructible authenticated chain; concrete lease-root, relay-root, tool pins,
+  policy/allowlist and bootstrap constructor remain runtime/control-owned/private. Adding a
+  CLI/config/env constructor or synthetic local authority would violate fail-closed authority and
+  egress contracts. No product edits, no asb-tui, no live provider, no AR-1308 seed, no commit/PR.
+  Next action: create and review a narrowly scoped runtime/control protocol successor that returns
+  an opaque runtime-owned dispatch source, including authenticated chain binding and concrete
+  lease/relay/tool bootstrap, to normal asb run/sweep; then resume AR-1390 without weakening egress
+  gates.

@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1390](tasks/AR-1390-runtime-live-acquisition-cli.md): Runtime live acquisition and CLI bridge | Compose runtime-owned live provider acquisition and wire it into normal ASB run and sweep. | Claim the pre-bound isolated worktree, implement the runtime-owned live acquisition and normal CLI run/sweep bridge, and publish a signed PR. | coordinator-ar1390-live-acquisition-luna56 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -60,6 +54,7 @@ Never edit this file directly.
 | P0 | [AR-1382](tasks/AR-1382-authenticated-live-execution-source.md): Authenticated live execution source | Materialize authenticated runtime-owned live execution for asb run and sweep. | Promote and claim this dependency-valid authenticated execution-source successor, then implement runtime-owned scheduler materialization. | - |
 | P0 | [AR-1386](tasks/AR-1386-live-cli-dispatch-integration.md): Production live CLI dispatch integration | Integrate authenticated runtime live dispatch into production asb run and sweep. | Refresh the declared isolated worktree from protected main, integrate the authenticated runtime live dispatch source into production asb run and sweep, and add local provider-mock plus fail-closed egress/teardown tests. | - |
 | P0 | [AR-1387](tasks/AR-1387-runtime-control-cli-bridge.md): Authenticated runtime-control CLI bridge | Bridge authenticated runtime/control bootstrap state into the production CLI dispatch path. | Refresh the declared isolated worktree from protected main, add the authenticated runtime/control bootstrap-to-CLI bridge, and test opaque dispatch-source transfer without caller authority injection. | - |
+| P0 | [AR-1390](tasks/AR-1390-runtime-live-acquisition-cli.md): Runtime live acquisition and CLI bridge | Compose runtime-owned live provider acquisition and wire it into normal ASB run and sweep. | Claim the pre-bound isolated worktree, implement the runtime-owned live acquisition and normal CLI run/sweep bridge, and publish a signed PR. | - |
 | P0 | [AR-1391](tasks/AR-1391-runtime-control-bootstrap-constructor.md): Runtime control bootstrap constructor | Materialize authenticated runtime live authority into an opaque source without caller injection. | Claim the pre-bound isolated worktree, implement the runtime/control-owned authenticated bootstrap constructor, and publish a signed PR. | - |
 | P0 | [AR-1392](tasks/AR-1392-control-authority-materializer.md): Control-owned private authority materializer | Resolve private live authority from authenticated control enrollment without caller injection. | Claim the pre-bound isolated worktree, implement the control-owned private authority resolver required by AR-1391, and publish a signed PR. | - |
 | P0 | [AR-1464](tasks/AR-1464-formal-capacity-input-provisioning.md): Formal capacity and signed-input provisioning repair | Exact signed source, reviewed image, 64 GiB overlay, JDK/TLC/model and canonical lock are provisioned. Reclaimed the three stale AR-specific swap files and activated two fresh AR-specific swap files; repeated signed preflight now passes every gate except the unavailable exact seed digest. | Obtain or restore the reviewed full-exhaustive seed with SHA-256 b3383756b5cd357f58d923216effea33be35b793034de321c3c9ce460ece4b28. Do not regenerate or substitute a different seed. Then rerun the signed preflight, hand inputs to AR-1308, and remove/revert only the temporary AR-specific swap after the runner lifecycle. | - |
