@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1469](tasks/AR-1469-ar1392-protected-topology-repair.md): AR-1392 protected-main topology repair | Repair the single-parent protected merge for AR-1392 without changing its reviewed implementation. | Promote and claim the topology repair, create the reviewed two-parent protected merge, and rerun all exact-head and post-merge gates. | - |
+| P0 | [AR-1469](tasks/AR-1469-ar1392-protected-topology-repair.md): AR-1392 protected-main topology repair | Repair the single-parent protected merge for AR-1392 without changing its reviewed implementation. | Promote and claim the topology repair, create the reviewed two-parent protected merge, and rerun all exact-head and post-merge gates. | ar1332_record_replay_luna56 |
 
 ## Blocked
 
