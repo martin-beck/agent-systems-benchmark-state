@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1330](tasks/AR-1330-live-capture-sealed-cassette.md): Live provider capture into a sealed cassette | Runtime-authorized capture now seals redacted content-addressed cassettes through StrictReplayService; deterministic local/mock qualification is sufficient and external provider reachability remains optional. | No further implementation action; preserve local/mock and strict-replay evidence for future production integration. | coordinator-ar1330-capture |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -437,6 +431,7 @@ Never edit this file directly.
 | P1 | [AR-1327](tasks/AR-1327-openrouter-adapter-parity.md): OpenRouter adapter projections and parity conformance | Wire the OpenRouter endpoint and model through every compatible agent adapter projection and prove parity with hostile conformance evidence. | Verify post-merge main 5207ce478986cdf1687207967cdf517129f85624 workflows and exact OpenRouter parity evidence; then close AR-1327 and advance AR-1328. | - |
 | P1 | [AR-1328](tasks/AR-1328-openrouter-free-model-config.md): OpenRouter free-model user configuration and key enrollment | Persist the per-user OpenRouter free-model configuration and credential-free key enrollment. | Promote AR-1329 live-provider run execution; preserve credential-free configuration and exact-head evidence. | - |
 | P1 | [AR-1329](tasks/AR-1329-live-provider-run-execution.md): Local-mock run execution with optional live-provider integration | Qualify asb run and sweep through a mandatory deterministic local mock; retain optional fail-closed live integration. | Local deterministic mock run/sweep qualification is delivered by AR-1433 (PR #325, merge 2872a31f, all exact-main gates green). AR-1329 remains blocked only for optional production live-provider integration: an atomic runtime-owned LiveProviderRuntimeService must resolve pinned policy, enrolled credentials, attested namespace/relay, concrete egress target, ResourceLease, SandboxBackend, and one LiveProviderAttempt per scheduler attempt with cancellation teardown. Do not use external reachability as a CI gate; preserve NetworkPolicy::Deny and direct/alternate egress denial. AR-1446 may consume the local path without waiting for this optional boundary. | - |
+| P1 | [AR-1330](tasks/AR-1330-live-capture-sealed-cassette.md): Live provider capture into a sealed cassette | Runtime-authorized capture now seals redacted content-addressed cassettes through StrictReplayService; deterministic local/mock qualification is sufficient and external provider reachability remains optional. | No further implementation action; preserve local/mock and strict-replay evidence for future production integration. | - |
 | P1 | [AR-1331](tasks/AR-1331-runtime-replay-launch-authority.md): Runtime-owned strict-replay launch authority | Deliver the runtime-owned strict-replay launch authority required by the replay CLI contract. | Done via successor AR-1448: runtime-owned replay authority source merged and post-merge verified at f03d9e484d6ca73eacdbd5476980bf33ca737540. Preserve strict CLI-only fail-closed behavior and keep optional live capture AR-1330 separate. | - |
 | P1 | [AR-1332](tasks/AR-1332-record-live-replay-offline.md): Record-live to replay-offline workflow | Add the record-live then replay-offline end-to-end CLI workflow. | Monitor seven exact-main post-merge workflows for merge SHA ad4f96ab3f7e57916208406b2f56aa9ec4e54885; release only after all are green and post-merge verification is durable. | - |
 | P1 | [AR-1334](tasks/AR-1334-openrouter-conformance-qualification.md): OpenRouter free-model conformance and hostile qualification | Qualify the pinned OpenRouter free model under conformance and hostile fail-closed testing. | Push PR for independent review; wait exact-head required CI, repair any failures, then merge only after all checks are green and verify post-merge workflows. | - |
