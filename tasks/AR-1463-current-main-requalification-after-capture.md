@@ -9,15 +9,18 @@
   ],
   "id": "AR-1463",
   "next_action": "Promote and qualify exact protected main after AR-1330 across the first-customer install, local/mock benchmark, capture/replay, recovery, privacy and release gates; publish no release unless all gates pass.",
+  "observed_branch": "qualification/ar-1463-current-main-requalification-after-capture",
+  "observed_dirty": 0,
+  "observed_head": "01b70e87ce8e7913f614447c0c530cb22e235256",
   "owner": "coordinator-ar1463-requal",
   "plan": "../plans/AR-1463.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Requalify current protected main for first-customer production-like use after capture/replay integration.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Current-main first-customer requalification after capture integration",
-  "updated_at": "2026-09-26T20:49:00+00:00",
+  "updated_at": "2026-09-26T20:49:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1463-current-main-requalification-after-capture"
 }
 ---
