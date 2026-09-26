@@ -2,7 +2,7 @@
 {
   "branch": "qualification/ar-1458-first-customer-requalification-after-orchestration",
   "checkpoint_commit": "ad4f96ab3f7e57916208406b2f56aa9ec4e54885",
-  "claim_expires": "2026-09-26T20:37:08+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1446",
     "AR-1453",
@@ -13,15 +13,15 @@
   "observed_branch": "qualification/ar-1458-first-customer-requalification-after-orchestration",
   "observed_dirty": 0,
   "observed_head": "ad4f96ab3f7e57916208406b2f56aa9ec4e54885",
-  "owner": "coordinator-ar1458-requal",
+  "owner": "",
   "plan": "../plans/AR-1458.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Requalify the first-customer production-like journey after central orchestration became authoritative.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "First-customer requalification after central orchestration",
-  "updated_at": "2026-09-26T18:44:12+00:00",
+  "updated_at": "2026-09-26T18:44:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1458-first-customer-requalification-after-orchestration"
 }
 ---
@@ -111,3 +111,10 @@ and separately classified.
   fixture, strict replay, cancellation/restart, cleanup/privacy boundaries are covered by passing
   guide, CLI, orchestrator, replay, workloads, and full workspace tests. No remote provider
   contacted, no asb-tui changes, no deterministic failure, no repair AR required.
+
+- 2026-09-26T18:44:20+00:00: AR-1458 complete: exact protected-main ASB-only first-customer
+  requalification passed in clean isolated worktree at ad4f96ab3f7e57916208406b2f56aa9ec4e54885.
+  Credential-free local/mock install/bootstrap/config, multi-agent and literature fixture paths,
+  strict offline replay, cancellation/restart recovery, cleanup/privacy evidence, focused/full
+  tests, fmt, clippy, rustdoc, and release build all passed. No remote provider contacted; no
+  asb-tui changes; no deterministic repair AR required.
