@@ -10,15 +10,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #337 | `release/ar-1462-pinned-release-toolchain-bundle-workflow@b8dcc57b648d` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | AR-1462: pinned offline release tooling and bundle workflow |
+| #337 | `release/ar-1462-pinned-release-toolchain-bundle-workflow@b8dcc57b648d` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | AR-1462: pinned offline release tooling and bundle workflow |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 36266325369 | `b8dcc57b648d` | pull_request | Hosted portability and native qualification | in_progress:- |
-| 36266325126 | `b8dcc57b648d` | pull_request | Repository quality | in_progress:- |
-| 36266325125 | `b8dcc57b648d` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 36266325126 | `b8dcc57b648d` | pull_request | Repository quality | completed:failure |
+| 36266325125 | `b8dcc57b648d` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36266325123 | `b8dcc57b648d` | pull_request | Huawei MIT source headers | completed:failure |
 | 36266325116 | `b8dcc57b648d` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 36266325115 | `b8dcc57b648d` | pull_request | Formal assurance | in_progress:- |
