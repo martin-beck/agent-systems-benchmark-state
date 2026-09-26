@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1338-guided-asb-command-wrapper",
-  "checkpoint_commit": "69f3d3800be0e3e0ad097e471f8e9f51483524e4",
+  "checkpoint_commit": "36d94ff1237cf0188b98ed1c969e3d40cd190b3f",
   "claim_expires": "2026-09-26T18:09:07+00:00",
   "depends_on": [
     "AR-1331",
@@ -10,7 +10,7 @@
     "AR-1446"
   ],
   "id": "AR-1338",
-  "next_action": "Force-update PR #327 from verified remote 4d42f598 to rebased exact-head 69f3d38; monitor all required checks.",
+  "next_action": "Monitor PR #327 at exact head 36d94ff1237cf0188b98ed1c969e3d40cd190b3f; do not merge until every required check is green.",
   "observed_branch": "feature/ar-1338-guided-asb-command-wrapper",
   "observed_dirty": 0,
   "observed_head": "36d94ff1237cf0188b98ed1c969e3d40cd190b3f",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows.",
-  "task_revision": 145,
+  "task_revision": 146,
   "title": "Guided ASB command wrapper",
-  "updated_at": "2026-09-26T16:26:15+00:00",
+  "updated_at": "2026-09-26T16:26:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1338-guided-asb-command-wrapper"
 }
 ---
@@ -425,3 +425,11 @@ reachability.
 
 - 2026-09-26T16:26:15+00:00: Recorded command exit 0; command argv SHA-256
   5f8929cb44b78ae5a104115e324ece5cf1a34fe8a359778b802fd9d06880063c.
+
+- 2026-09-26T16:26:48+00:00: Repaired deterministic provenance drift only:
+  docs/examples/asb-cli-workflow-v1.provenance.json now binds
+  cli_source_sha256=425ad70e72067316ecd9b466859b97f5e1f382984455805756a3f40aa9f83d0c, matching
+  current crates/asb-cli/src/lib.rs. Focused workflow_transcript tests passed 3/3 and git diff check
+  passed. Full asb-cli lib test initially had one unrelated state-root exclusivity lock race (112
+  passed, 1 failed); isolated test rerun passed 1/1. Signed+DCO commit 36d94ff pushed to PR #327;
+  monitor exact-head checks.

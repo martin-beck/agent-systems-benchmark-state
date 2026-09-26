@@ -121,7 +121,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md): Guided ASB command wrapper | ar1338-guided-wrapper-luna56 | Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows. | Force-update PR #327 from verified remote 4d42f598 to rebased exact-head 69f3d38; monitor all required checks. |
+| P1 | [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md): Guided ASB command wrapper | ar1338-guided-wrapper-luna56 | Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows. | Monitor PR #327 at exact head 36d94ff1237cf0188b98ed1c969e3d40cd190b3f; do not merge until every required check is green. |
 
 ### Blocked (69)
 
