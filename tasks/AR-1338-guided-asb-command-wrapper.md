@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1338-guided-asb-command-wrapper",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-26T18:08:44+00:00",
   "depends_on": [
     "AR-1331",
     "AR-1442",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1338-guided-asb-command-wrapper",
   "observed_dirty": 0,
   "observed_head": "4d42f598127d014d2ed33f7f33fef82d3f3b8036",
-  "owner": "",
+  "owner": "ar1338-guided-wrapper-luna56",
   "plan": "../plans/AR-1338.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows.",
-  "task_revision": 99,
+  "task_revision": 100,
   "title": "Guided ASB command wrapper",
-  "updated_at": "2026-09-25T17:08:17+00:00",
+  "updated_at": "2026-09-26T16:08:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1338-guided-asb-command-wrapper"
 }
 ---
@@ -300,3 +300,5 @@ reachability.
 
 - 2026-09-25T17:08:17+00:00: Reopened AR-1450 for a concrete runtime-owned bootstrap/provisioner
   implementation attempt.
+
+- 2026-09-26T16:08:44+00:00: Claimed by ar1338-guided-wrapper-luna56.
