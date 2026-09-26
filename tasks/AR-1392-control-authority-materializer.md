@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1392-control-authority-materializer",
   "checkpoint_commit": "78ab92bdb87645ac5567fb3341b1b0b73dba5029",
-  "claim_expires": "2026-09-27T02:28:43+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1388",
     "AR-1385",
@@ -18,15 +18,15 @@
   "observed_branch": "feature/ar-1392-control-authority-materializer",
   "observed_dirty": 0,
   "observed_head": "78ab92bdb87645ac5567fb3341b1b0b73dba5029",
-  "owner": "coordinator-ar1392-control-materializer",
+  "owner": "",
   "plan": "../plans/AR-1392-control-authority-materializer.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Resolve private live authority from authenticated control enrollment without caller injection.",
-  "task_revision": 121,
+  "task_revision": 122,
   "title": "Control-owned private authority materializer",
-  "updated_at": "2026-09-26T23:29:28+00:00",
+  "updated_at": "2026-09-26T23:30:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1392-control-authority-materializer"
 }
 ---
@@ -415,3 +415,12 @@ reachability.
 
 - 2026-09-26T23:29:28+00:00: Recorded command exit 0; command argv SHA-256
   49572412bbbe30c402dca1457996ea8cd519499d1a26f601ef5714d48548ca46.
+
+- 2026-09-26T23:30:03+00:00: Terminal post-merge evidence: merge
+  3cd6a5a84493842e402dff55e1c2c266f2454752 is single-parent; repository quality workflow 36279474851
+  failed protected-main policy with 'merge topology or first parent differs'. This is immutable
+  merge topology, not a product/test failure. PR exact head 78ab92b and all 12 PR checks were green;
+  post-merge hosted, fault, Huawei, and other workflows are green or still completing. AR-1392 is
+  blocked/ownerless pending a separate topology-repair successor; next action is create that
+  successor using a non-squash protected-main merge topology and rerun all seven workflows. No code
+  or unrelated metrics changes.
