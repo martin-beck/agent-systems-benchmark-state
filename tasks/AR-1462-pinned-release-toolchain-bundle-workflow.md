@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Establish reproducible supply-chain checks and first-customer release bundle publication workflow.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Pinned release toolchain and first-customer bundle workflow",
-  "updated_at": "2026-09-26T19:30:24+00:00",
+  "updated_at": "2026-09-26T19:30:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1462-pinned-release-toolchain-bundle-workflow"
 }
 ---
@@ -111,3 +111,6 @@ all integrity, provenance, privacy and exact-head checks remain mandatory.
 
 - 2026-09-26T19:30:24+00:00: Recorded command exit 1; command argv SHA-256
   78a65e32de36a78a3ec5905fc689b11d5c3df89ceb27dd5872a5922fa05f26bf.
+
+- 2026-09-26T19:30:38+00:00: Recorded command exit 0; command argv SHA-256
+  9cd2d0774db259487f5447b84a3f2b28f0483ff22f943f59e32a6283ec79bb04.
