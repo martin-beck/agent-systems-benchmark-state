@@ -11,15 +11,18 @@
   ],
   "id": "AR-1468",
   "next_action": "Promote and claim the corrected-dependency successor, then implement the owner-checked control authority materializer through the reviewed workflow.",
+  "observed_branch": "feature/ar-1468-control-authority-materialization-successor",
+  "observed_dirty": 0,
+  "observed_head": "01b70e87ce8e7913f614447c0c530cb22e235256",
   "owner": "coordinator-ar1468-authority-materialization",
   "plan": "../plans/AR-1468-control-authority-materialization-successor.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the control-owned authority materializer without the superseded AR-1369 dependency deadlock.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Control authority materialization successor",
-  "updated_at": "2026-09-26T22:46:18+00:00",
+  "updated_at": "2026-09-26T22:46:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1468-control-authority-materialization-successor"
 }
 ---
