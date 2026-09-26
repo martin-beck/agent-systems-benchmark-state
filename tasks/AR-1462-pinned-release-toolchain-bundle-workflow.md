@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Establish reproducible supply-chain checks and first-customer release bundle publication workflow.",
-  "task_revision": 73,
+  "task_revision": 74,
   "title": "Pinned release toolchain and first-customer bundle workflow",
-  "updated_at": "2026-09-26T19:48:33+00:00",
+  "updated_at": "2026-09-26T19:50:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1462-pinned-release-toolchain-bundle-workflow"
 }
 ---
@@ -200,4 +200,7 @@ all integrity, provenance, privacy and exact-head checks remain mandatory.
 - 2026-09-26T19:47:11+00:00: Heartbeat by coordinator-ar1462-release-tooling.
 
 - 2026-09-26T19:48:33+00:00: Recorded command exit 0; command argv SHA-256
+  41e0c42307a0247ff5197ecad0cb9ac7c967ea4a36464dd6b30e7550e888903d.
+
+- 2026-09-26T19:50:13+00:00: Recorded command exit 0; command argv SHA-256
   41e0c42307a0247ff5197ecad0cb9ac7c967ea4a36464dd6b30e7550e888903d.
