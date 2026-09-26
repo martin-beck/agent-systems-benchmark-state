@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "checkpoint_commit": "df0e402f442468e43e06b7c1acb3c3667277fb75",
-  "claim_expires": "2026-09-26T23:06:13+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1304"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
-  "owner": "coordinator-ar1308-input-provision",
+  "owner": "",
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Bounded signed preflight failed closed: prepared runner receipt and JDK/TLC/model are present, but host swap, image, overlay capacity, exact source tree, seed and admission lock are missing.",
-  "task_revision": 552,
+  "task_revision": 553,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-26T21:10:26+00:00",
+  "updated_at": "2026-09-26T21:10:39+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1676,3 +1676,9 @@ must report `qualification_authorized: false`.
   digest 936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88 and model digest were
   available. Do not synthesize inputs, use unsigned authority, weaken limits, boot QEMU or run TLC.
   Next action is provision the exact missing artifacts and swap, then rerun signed preflight.
+
+- 2026-09-26T21:10:39+00:00: Blocked after signed preflight exit 1. Missing/invalid: >=1 GiB host
+  swap (only 28,672 bytes free), reviewed Ubuntu image, >=64 GiB overlay, exact signed AR-1307
+  ab485f767 source/tree, matching seed, and canonical admission lock. Present: JDK 17, pinned TLC
+  digest, model digest, prepared QEMU receipt and unchanged 3G/3G/2-worker/2-core/8G/7200s contract.
+  Do not run QEMU/TLC. Next action: provision those exact inputs and swap, rerun signed preflight.

@@ -127,19 +127,13 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | coordinator-ar1308-input-provision | Bounded signed preflight failed closed: prepared runner receipt and JDK/TLC/model are present, but host swap, image, overlay capacity, exact source tree, seed and admission lock are missing. | Provision the reviewed Ubuntu 24.04 image and &gt;=64 GiB overlay, exact signed AR-1307 ab485f767 source checkout/tree, matching seed and canonical admission lock, then restore &gt;=1 GiB host swap and rerun the signed preflight before any QEMU/TLC boot. |
-
 ### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Blocked (66)
+### Blocked (67)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -176,6 +170,7 @@
 | P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Unclaimed | Repair the state-repository TLA admission runner and truthful worktree metadata. | Blocked: AR-1307 remote head ab485f767 != required 969eef058. AR-1308 preflight had 4.9 GiB free vs 16 GiB minimum and missing lock/JDK/TLC at runtime root. Reopen only with exact input bundle and passing preflight; do not run TLC locally. |
 | P0 | [AR-1305](../tasks/AR-1305-image-native-user-session.md): Image-native user-session support | Unclaimed | Qualify image-native D-Bus user-session support for required TLC containment. | Blocked: guestfish read-only inspection fails before access because /usr/bin/supermin exits 1; approved root has ~4.9 GiB free, preventing safe image repair. Reopen only with reviewed working appliance/capacity; no portable fallback, AR-1304 limit changes, or qualification. |
 | P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Unclaimed | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | PR #25 is open at exact signed+DCO head ab485f767, but full-exhaustive formal CI run 35342513872 failed truthfully after Java OOM during liveness checking at the unchanged 3G/3G/2-worker contract. AR-1308 provides the prepared 32 GiB/64 GiB offline QEMU capacity; bind the exact signed bundle and rerun only after its seed/JDK/TLC preflight passes. Do not qualify or weaken the contract. |
+| P0 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Unclaimed | Bounded signed preflight failed closed: prepared runner receipt and JDK/TLC/model are present, but host swap, image, overlay capacity, exact source tree, seed and admission lock are missing. | Provision the reviewed Ubuntu 24.04 image and &gt;=64 GiB overlay, exact signed AR-1307 ab485f767 source checkout/tree, matching seed and canonical admission lock, then restore &gt;=1 GiB host swap and rerun the signed preflight before any QEMU/TLC boot. |
 | P0 | [AR-1355](../tasks/AR-1355-runtime-attested-enrollment-record.md): Runtime-attested enrollment record transport | Unclaimed | Transport runtime-attested enrollment authority without exposing it to the CLI. | Implement the runtime/control-owned attested enrollment-record transport, validate target/tool/lease/relay authority inside asb-runtime, mint opaque handles, then consume them in asb run/sweep with positive and negative tests. |
 | P0 | [AR-1358](../tasks/AR-1358-runtime-enrollment-cli-dispatch.md): Runtime enrollment CLI dispatch | Unclaimed | Consume runtime-attested enrollment records in asb run and sweep without exposing authority. | Promote after AR-1357 is done, then wire asb run/sweep through runtime-attested enrollment records with fail-closed positive and negative tests. |
 | P0 | [AR-1360](../tasks/AR-1360-runtime-cli-dispatch-consumer.md): Runtime CLI dispatch consumer | Unclaimed | Connect authenticated runtime enrollment receipts to asb run and sweep without exposing authority. | Promote after AR-1359 is done, then implement the production asb run/sweep consumer for authenticated runtime enrollment receipts with fail-closed tests. |
@@ -518,3 +513,4 @@
 | P1 | [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md): Add TUI multi-agent provider selection | Unclaimed | Choose several agents and one preconfigured provider for all of them from negotiated TUI selection lists. | Push signed repair b3c19b1 with force-with-lease, then rerun exact-head PR checks; do not merge until all required jobs pass. |
 | P1 | [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md): Deliver record and replay user workflows | Unclaimed | Make recording and strict replay complete, explicit, privacy-safe user workflows in both CLI and TUI. | Deliver executable CLI and TUI journeys for recording LLM responses and replaying an exact compatible cassette. |
 | P1 | [AR-0875](../tasks/AR-0875-control-history-analysis-contract.md): Extend control history and analysis protocol | Unclaimed | Extend frontend history and analysis contracts with bounded provenance, integrity, outcome, compatibility, and confounder evidence. | After AR-0806 completes, define the versioned history and analysis protocol extension before serialized CLI backend integration. |
+| P1 | [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md): Wire provider-aware agent launches | Unclaimed | Apply validated provider selections at the authoritative agent launch boundary and reject conflicting runtime configuration. | Create signed+DCO follow-up parented bc071fd, force-with-lease origin/main 32562e8, rerun exact-main postmerge workflows. |
