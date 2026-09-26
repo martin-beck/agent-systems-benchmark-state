@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the single-parent protected merge for AR-1392 without changing its reviewed implementation.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "AR-1392 protected-main topology repair",
-  "updated_at": "2026-09-26T23:42:10+00:00",
+  "updated_at": "2026-09-26T23:42:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1469-ar1392-protected-topology-repair"
 }
 ---
@@ -106,3 +106,6 @@ green exact-head checks; the failed squash topology remains part of the record.
   merge commit e39d27d with parents beb3996 (reviewed AR-1392 tree) and 3cd6a5a (current
   origin/main); implementation tree remains unchanged. Force-with-lease pushed branch; PR #340 now
   points at e39d27d. Recheck exact-head gates; no policy weakening or rewrite.
+
+- 2026-09-26T23:42:18+00:00: Recorded command exit 0; command argv SHA-256
+  1388780ea3a11b3fec965d3ed12189e16f8b87ff5cbc05434e47bc081c6834f2.
