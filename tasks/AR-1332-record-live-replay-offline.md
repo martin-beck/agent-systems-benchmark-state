@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1332-record-live-replay-offline",
-  "checkpoint_commit": "705f0c807dc7fb02dff5e488a7af296cbe79e344",
+  "checkpoint_commit": "97d9bbc3b6a9e0f793ac6a5a4ba3103e85f5e4a7",
   "claim_expires": "2026-09-26T19:02:19+00:00",
   "depends_on": [
     "AR-1331"
   ],
   "id": "AR-1332",
-  "next_action": "Obtain independent review, then run exact-head CI and protected-main publication gates.",
+  "next_action": "Open reviewed PR from exact signed head, then run exact-head CI and protected-main publication gates.",
   "observed_branch": "feature/ar-1332-record-live-replay-offline",
   "observed_dirty": 0,
   "observed_head": "97d9bbc3b6a9e0f793ac6a5a4ba3103e85f5e4a7",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the record-live then replay-offline end-to-end CLI workflow.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Record-live to replay-offline workflow",
-  "updated_at": "2026-09-26T17:02:19+00:00",
+  "updated_at": "2026-09-26T17:02:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1332-record-live-replay-offline"
 }
 ---
@@ -152,3 +152,11 @@ reachability.
   83b909925984aadeeb44f46ac4ff96e83640a26e446249d2e9c167bd94db8b0a.
 
 - 2026-09-26T17:02:19+00:00: Heartbeat by ar1332-record-replay-luna56.
+
+- 2026-09-26T17:02:22+00:00: Independent review gates addressed: local/mock qualification is
+  explicitly documented as the required boundary; production provider capture is separately
+  supervised/deferred. record-live requires both --local-mock and --confirm-record; replay-offline
+  consumes the existing one-shot runtime authority, cassette digest binding, network-denied strict
+  service, and no-fallback error path. Duplicate fallback wording removed. Follow-up signed+DCO
+  commit 97d9bbc updates help/docs/provenance. Workflow transcript/provenance, focused tests, fmt
+  and clippy remain green.
