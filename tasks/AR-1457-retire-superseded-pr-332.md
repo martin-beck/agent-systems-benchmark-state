@@ -12,11 +12,11 @@
   "plan": "../plans/AR-1457.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Retire the obsolete pre-repair AR-1453 pull request without changing product code.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Retire superseded AR-1453 pull request",
-  "updated_at": "2026-09-26T20:00:00+00:00",
+  "updated_at": "2026-09-26T18:34:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1457-retire-superseded-pr-332"
 }
 ---
@@ -27,3 +27,6 @@ head with a DCO failure and a timing-sensitive test failure; it must not be
 merged or amended. Close it as superseded, verify PR #333 remains the
 authoritative merged head, and record the exact observations. No product,
 asb-tui, or release changes are in scope.
+
+- 2026-09-26T18:34:36+00:00: AR-1453 is done; promote narrowly scoped Git hygiene repair for
+  obsolete PR #332.
