@@ -15,12 +15,12 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36267124417 | `0a85123785c3` | push | Repository quality | in_progress:- |
+| 36267124417 | `0a85123785c3` | push | Repository quality | completed:success |
 | 36267124413 | `0a85123785c3` | push | Hosted portability and native qualification | completed:success |
-| 36267124403 | `0a85123785c3` | push | Emulated aarch64 portability | in_progress:- |
+| 36267124403 | `0a85123785c3` | push | Emulated aarch64 portability | completed:success |
 | 36267124398 | `0a85123785c3` | push | Formal assurance | completed:success |
 | 36267124396 | `0a85123785c3` | push | Fault assurance | completed:success |
-| 36267124390 | `0a85123785c3` | push | Rust verification | in_progress:- |
+| 36267124390 | `0a85123785c3` | push | Rust verification | completed:success |
 | 36267124368 | `0a85123785c3` | push | Huawei MIT source headers | completed:success |
 | 36266605523 | `76f099487da3` | pull_request | Rust verification | completed:success |
 | 36266605516 | `76f099487da3` | pull_request | Agent Workflow Quality shadow | completed:success |
