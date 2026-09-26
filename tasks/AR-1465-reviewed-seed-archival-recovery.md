@@ -2,19 +2,19 @@
 {
   "branch": "repair/ar-1465-reviewed-seed-archival-recovery",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-27T00:07:19+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1465",
   "next_action": "Search approved durable archives for the exact reviewed seed digest b3383756b5cd357f58d923216effea33be35b793034de321c3c9ce460ece4b28; do not regenerate or substitute a different seed.",
-  "owner": "coordinator-ar1465-seed-recovery",
+  "owner": "",
   "plan": "../plans/AR-1465-reviewed-seed-archival-recovery.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Follow-on recovery for the exact reviewed AR-1308 full-exhaustive seed, which is absent from current approved runner roots and Git objects.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Reviewed full-exhaustive seed archival recovery",
-  "updated_at": "2026-09-26T22:11:57+00:00",
+  "updated_at": "2026-09-26T22:12:19+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1465-reviewed-seed-archival-recovery"
 }
 ---
@@ -73,3 +73,16 @@ needed by AR-1308. It must not weaken formal gates or invent equivalent input.
 
 - 2026-09-26T22:11:57+00:00: Recorded command exit 0; command argv SHA-256
   70a8d94f205daa130e86c69dc11b36161e3c38c900395c8843f82c2cd7fbc021.
+
+- 2026-09-26T22:12:19+00:00: Blocked: bounded archival audit complete. Refreshed origin and searched
+  all 64 state refs; literal history matches only AR-1465/AR-1464 metadata and no seed object.
+  Hashed 99 unreachable state Git blobs and 14,756 files <=20 MiB across approved state, AR-1307
+  stage/seed, retained runner, vendor-fixture, AR-1308 runner/mount and clean capacity roots: zero
+  exact digest matches for b3383756b5cd357f58d923216effea33be35b793034de321c3c9ce460ece4b28.
+  Seed-like ISO candidates ar1307-b8-seed.img and ar1307-b8-seed-stage7.img are cidata images with
+  SHA-256 d0dc34540b393e8d2a5578b753cf23d1048a52e42ae960040e417954227dc7a7 and
+  d941da246a66fdae58fe7c5ffefb4747ab4dcc469eb73faf954680da32cfb626; neither matches. No
+  product/asb-tui edits, regeneration, QEMU/TLC boot, or formal qualification. Prior preflight also
+  records host swap below 1 GiB; AR-1308 remains blocked. Next action: external operator supplies
+  reviewed immutable seed bytes from an approved durable archive with exact digest and provenance;
+  independently verify, bind to AR-1308, rerun signed preflight. Do not regenerate/substitute.
