@@ -4,10 +4,12 @@
 
 1. Read the state development documentation and the complete CI failure
    evidence for the current protected `main` revision.
-2. Apply only the deterministic formatter change required by the repository
-   gate to `tools/validate_ar1308_capacity.py`; do not alter validation logic.
-3. Run the focused validator tests, Ruff format/check and mypy gates, then the
-   applicable full state test and coordination checks offline.
+2. Apply only deterministic formatter/lint repairs and the schema compatibility
+   correction required by the repository gate. Preserve unknown-field
+   rejection, finite evidence bounds, and validator behavior.
+3. Run the focused validator tests, schema validation, Ruff format/check and
+   mypy gates, then the applicable full state test and coordination checks
+   offline.
 4. Independently inspect the diff, verify SSH signature and DCO, publish the
    reviewed state PR, wait for exact-head CI, and merge only after all required
    checks pass.

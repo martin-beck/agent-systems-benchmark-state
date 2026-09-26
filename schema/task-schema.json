@@ -39,8 +39,8 @@
       ]
     },
     "priority": {"enum": ["P0", "P1", "P2", "P3", "P4"]},
-    "summary": {"type": "string", "minLength": 1, "maxLength": 300},
-    "next_action": {"type": "string", "minLength": 1, "maxLength": 300},
+    "summary": {"type": "string", "minLength": 1, "maxLength": 800},
+    "next_action": {"type": "string", "minLength": 1, "maxLength": 800},
     "task_revision": {"type": "integer", "minimum": 1},
     "updated_at": {"type": "string", "format": "date-time"},
     "owner": {"type": "string", "maxLength": 80},
@@ -51,14 +51,14 @@
     },
     "branch": {"type": "string", "maxLength": 160},
     "checkpoint_commit": {"type": "string", "pattern": "^(|[0-9a-f]{40})$"},
-    "plan": {"type": "string", "pattern": "^(|\\.\\./plans/AR-[0-9]{4}\\.md)$"},
+    "plan": {"type": "string", "pattern": "^(|\\.\\./plans/AR-[0-9]{4}(?:-[a-z0-9-]+)?\\.md)$"},
     "depends_on": {
       "type": "array",
       "uniqueItems": true,
       "items": {"type": "string", "pattern": "^AR-[0-9]{4}$"}
     },
     "observed_branch": {"type": "string", "maxLength": 160},
-    "observed_head": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "observed_head": {"type": "string", "pattern": "^(|[0-9a-f]{40})$"},
     "superseded_by": {"type": "string", "pattern": "^AR-[0-9]{4}$"},
     "observed_dirty": {"type": "integer", "minimum": 0}
   },
