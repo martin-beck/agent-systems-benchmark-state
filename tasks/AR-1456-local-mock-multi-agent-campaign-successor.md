@@ -9,7 +9,7 @@
     "AR-1447"
   ],
   "id": "AR-1456",
-  "next_action": "Promote after dependencies are verified; implement the credential-free local/mock multi-agent campaign successor and keep optional live integration separate.",
+  "next_action": "Rerun focused local campaign/guide tests on the corrected explicit --local-mock patch, then independently review and commit signed+DCO.",
   "observed_branch": "DETACHED",
   "observed_dirty": 0,
   "observed_head": "28730b61572f463e9cf1e6b5f1cf20fd198ef7e8",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Local/mock multi-agent campaign successor",
-  "updated_at": "2026-09-26T17:49:18+00:00",
+  "updated_at": "2026-09-26T17:50:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1456-local-mock-multi-agent-campaign-successor"
 }
 ---
@@ -65,3 +65,11 @@ for local development, CI, or this AR's completion.
 
 - 2026-09-26T17:49:18+00:00: Recorded command exit 2; command argv SHA-256
   1ed118a69d4bd77845918893052b37ad69ffb8689191d1d60017707e2d21534e.
+
+- 2026-09-26T17:50:19+00:00: Recorded setup/argument failure, not missing implementation:
+  handoffctl-wrapped patch command exited 2 because the attempted bash heredoc/JSON quoting expanded
+  backticks and passed a malformed patch (bash syntax error near unexpected token '('); no product
+  files were changed by that failed command. Baseline focused asb-cli record_campaign test had
+  already passed (1/1). Correct opt-in patch is now present in the isolated AR-1456 worktree: direct
+  record-campaign requires --local-mock, help/docs updated, and a negative no-opt-in test added.
+  Next action: rerun focused tests and inspect diff before signed commit.

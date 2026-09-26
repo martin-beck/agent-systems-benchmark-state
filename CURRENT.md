@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1456](tasks/AR-1456-local-mock-multi-agent-campaign-successor.md): Local/mock multi-agent campaign successor | Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution. | Promote after dependencies are verified; implement the credential-free local/mock multi-agent campaign successor and keep optional live integration separate. | ar1456-local-campaign-luna56 |
+| P1 | [AR-1456](tasks/AR-1456-local-mock-multi-agent-campaign-successor.md): Local/mock multi-agent campaign successor | Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution. | Rerun focused local campaign/guide tests on the corrected explicit --local-mock patch, then independently review and commit signed+DCO. | ar1456-local-campaign-luna56 |
 
 ## Open
 
