@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1307-portable-tlc-runner-repair",
   "checkpoint_commit": "beafa965e61b0f09d9ed5f10ffcd621b0cf3e5b2",
-  "claim_expires": "",
+  "claim_expires": "2026-09-26T19:07:24+00:00",
   "depends_on": [
     "AR-1302"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "969eef05834a4ce5f711bbafaa5798549abd95c8",
-  "owner": "",
+  "owner": "coordinator-ar1307-audit",
   "plan": "../plans/AR-1307.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 734,
+  "task_revision": 735,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-26T18:47:21+00:00",
+  "updated_at": "2026-09-26T18:47:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -2097,3 +2097,5 @@ authorize qualification, publication, or release evidence; selecting
 - 2026-09-26T18:47:21+00:00: Reopen for coordinator audit: current PR #25 head is ab485f767, while
   prior metadata expected 969eef058; hosted formal still fails only at full-exhaustive liveness due
   Java OOM. Refresh exact dependency and preserve fail-closed status.
+
+- 2026-09-26T18:47:24+00:00: Claimed by coordinator-ar1307-audit.
