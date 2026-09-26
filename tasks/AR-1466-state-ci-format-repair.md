@@ -10,14 +10,17 @@
   "plan": "../plans/AR-1466-state-ci-format-repair.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Repair the current state branch's deterministic formatting failure without changing validator behavior.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "State CI formatting repair",
-  "updated_at": "2026-09-26T00:00:00+00:00",
+  "updated_at": "2026-09-26T21:47:20+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1466-state-ci-format-repair"
 }
 ---
 
 Created from the exact CI failure on current protected `main`: Ruff format
 reports `tools/validate_ar1308_capacity.py` as the only unformatted file.
+
+- 2026-09-26T21:47:20+00:00: Promoted independent P1 repair for the exact state CI formatting
+  failure; no dependencies.
