@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the record-live then replay-offline end-to-end CLI workflow.",
-  "task_revision": 64,
+  "task_revision": 65,
   "title": "Record-live to replay-offline workflow",
-  "updated_at": "2026-09-26T17:10:23+00:00",
+  "updated_at": "2026-09-26T17:10:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1332-record-live-replay-offline"
 }
 ---
@@ -214,3 +214,6 @@ reachability.
 
 - 2026-09-26T17:10:11+00:00: Recorded command exit 0; command argv SHA-256
   5e3d7817f0afba28e5aaab104bd49513090d0424642bd97634a5373b02bde924.
+
+- 2026-09-26T17:10:26+00:00: Recorded command exit 0; command argv SHA-256
+  65b187fffb8d15b430c4a6abb6c9b57647249f140e8ef8f05b2c79466df6e418.
