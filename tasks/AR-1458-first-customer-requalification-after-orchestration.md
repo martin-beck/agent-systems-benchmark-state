@@ -2,7 +2,7 @@
 {
   "branch": "qualification/ar-1458-first-customer-requalification-after-orchestration",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-26T19:21:45+00:00",
+  "claim_expires": "2026-09-26T20:37:08+00:00",
   "depends_on": [
     "AR-1446",
     "AR-1453",
@@ -16,9 +16,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Requalify the first-customer production-like journey after central orchestration became authoritative.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "First-customer requalification after central orchestration",
-  "updated_at": "2026-09-26T18:36:45+00:00",
+  "updated_at": "2026-09-26T18:37:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1458-first-customer-requalification-after-orchestration"
 }
 ---
@@ -36,3 +36,5 @@ and separately classified.
   qualification; requalify the customer journey on the updated exact main.
 
 - 2026-09-26T18:36:45+00:00: Claimed by coordinator-ar1458-requal.
+
+- 2026-09-26T18:37:08+00:00: Heartbeat by coordinator-ar1458-requal.
