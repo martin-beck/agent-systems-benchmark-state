@@ -1,14 +1,14 @@
 ---
 {
   "branch": "qualification/ar-1460-current-main-first-customer-requalification",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "36d4bdf35a644a36a8acfdb31078eb7f668a17c4",
   "claim_expires": "2026-09-26T20:57:20+00:00",
   "depends_on": [
     "AR-1456",
     "AR-1458"
   ],
   "id": "AR-1460",
-  "next_action": "Run the complete ASB-only first-customer production-like qualification against current protected main 36d4bdf35a644a36a8acfdb31078eb7f668a17c4; release only after local/mock campaign, replay, recovery, cleanup, privacy, full gates, and exact-main evidence pass.",
+  "next_action": "Release done: current protected-main first-customer qualification passed with credential-free local/mock and strict-replay evidence; no deterministic repair AR.",
   "observed_branch": "qualification/ar-1460-current-main-first-customer-requalification",
   "observed_dirty": 0,
   "observed_head": "36d4bdf35a644a36a8acfdb31078eb7f668a17c4",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Requalify first-customer readiness after the latest local-mock campaign merge.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Current-main first-customer requalification",
-  "updated_at": "2026-09-26T19:03:44+00:00",
+  "updated_at": "2026-09-26T19:04:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1460-current-main-first-customer-requalification"
 }
 ---
@@ -96,3 +96,14 @@ narrow repair AR; no release claim is made from stale evidence.
 
 - 2026-09-26T19:03:44+00:00: Recorded command exit 0; command argv SHA-256
   6840d2f0cea6f9cf6ffce81b9b1b74dcdddaff8701fc6cc1705c309033813254.
+
+- 2026-09-26T19:04:10+00:00: AR-1460 current-main requalification passed on exact protected
+  origin/main 36d4bdf35a644a36a8acfdb31078eb7f668a17c4 in clean isolated worktree
+  qualification/ar-1460-current-main-first-customer-requalification. Evidence: cargo build --locked
+  --workspace; doctor and capabilities; guide_examples 5/5; asb-cli control tests 45/45; setup
+  contract 2/2; CLI cancellation/recovery E2E 3/3; privacy-safe workflow transcript 3/3; full cargo
+  test --locked --workspace passed with only explicitly environment-dependent provider/native tests
+  ignored; cargo fmt --all -- --check; cargo clippy --locked --workspace --all-targets -- -D
+  warnings; env RUSTDOCFLAGS=-D warnings cargo doc --locked --workspace --no-deps; cargo build
+  --locked --workspace --release; final worktree clean at exact head. No remote provider contacted,
+  no asb-tui changes, no deterministic failure, no repair AR required.

@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1460](tasks/AR-1460-current-main-first-customer-requalification.md): Current-main first-customer requalification | Requalify first-customer readiness after the latest local-mock campaign merge. | Run the complete ASB-only first-customer production-like qualification against current protected main 36d4bdf35a644a36a8acfdb31078eb7f668a17c4; release only after local/mock campaign, replay, recovery, cleanup, privacy, full gates, and exact-main evidence pass. | coordinator-ar1460-current-main |
+| P0 | [AR-1460](tasks/AR-1460-current-main-first-customer-requalification.md): Current-main first-customer requalification | Requalify first-customer readiness after the latest local-mock campaign merge. | Release done: current protected-main first-customer qualification passed with credential-free local/mock and strict-replay evidence; no deterministic repair AR. | coordinator-ar1460-current-main |
 
 ## Open
 
