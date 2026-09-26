@@ -8,7 +8,7 @@
     "AR-1460"
   ],
   "id": "AR-1461",
-  "next_action": "Audit the established ASB release workflow against exact qualified main 36d4bdf35a644a36a8acfdb31078eb7f668a17c4, build the reproducible first-customer bundle, run release gates, and publish only if all required checks and release evidence pass; otherwise create a precise repair AR.",
+  "next_action": "Create/execute a reviewed release-tooling repair: provide pinned cargo-deny and cargo-audit, establish the documented bundle/tag/publication workflow, then rerun exact-head release gates against 36d4bdf35a644a36a8acfdb31078eb7f668a17c4.",
   "observed_branch": "release/ar-1461-first-customer-release-readiness",
   "observed_dirty": 0,
   "observed_head": "36d4bdf35a644a36a8acfdb31078eb7f668a17c4",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prepare and publish the first-customer ASB release from the currently qualified main.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "First-customer release readiness and publication",
-  "updated_at": "2026-09-26T19:12:03+00:00",
+  "updated_at": "2026-09-26T19:12:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1461-first-customer-release-readiness"
 }
 ---
@@ -88,3 +88,17 @@ no gate may be weakened. No asb-tui or remote-provider dependency is added.
 
 - 2026-09-26T19:12:03+00:00: Recorded command exit 0; command argv SHA-256
   6840d2f0cea6f9cf6ffce81b9b1b74dcdddaff8701fc6cc1705c309033813254.
+
+- 2026-09-26T19:12:29+00:00: Release audit against exact qualified main
+  36d4bdf35a644a36a8acfdb31078eb7f668a17c4 completed in clean isolated worktree. Version is
+  workspace 0.1.0; no release tags exist, no release workflow exists under .github/workflows, and no
+  checked-in release/bundle/SBOM/provenance packaging tool was found. Deterministic gates passed:
+  cargo fmt --all -- --check; cargo clippy --locked --workspace --all-targets -- -D warnings; cargo
+  coverage script completed with required test matrix and coverage report; env RUSTDOCFLAGS=-D
+  warnings cargo doc --locked --workspace --no-deps; cargo build --locked --workspace --release.
+  Required supply-chain gates are unavailable: cargo deny --locked check exits 101 with cargo error
+  no such command deny; cargo audit --deny warnings exits 101 with cargo error no such command
+  audit. No publication, tag, force update, remote provider contact, or asb-tui change. Publication
+  is fail-closed. A narrowly scoped repair AR is required for pinned tool installation plus reviewed
+  release/bundle/tag workflow; handoffctl exposes no task-create command, so no task file was
+  fabricated.
