@@ -125,13 +125,14 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1432](../tasks/AR-1432-local-openrouter-execution-bridge.md): Local OpenRouter execution bridge | Unclaimed | Qualify credential-free OpenRouter user execution through a deterministic loopback mock without external-provider access. | Local deterministic mock-attempt backend is delivered by AR-1433 (PR #325, merge 2872a31f) and is no longer blocked for development qualification. Preserve this AR&#x27;s remaining optional production live-bridge boundary: do not synthesize LiveProviderAttempt or weaken ProviderEgressTarget; runtime-owned relay/backend acquisition remains separately fail-closed. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Blocked (68)
+### Blocked (67)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -185,7 +186,6 @@
 | P0 | [AR-1390](../tasks/AR-1390-runtime-live-acquisition-cli.md): Runtime live acquisition and CLI bridge | Unclaimed | Compose runtime-owned live provider acquisition and wire it into normal ASB run and sweep. | Claim the pre-bound isolated worktree, implement the runtime-owned live acquisition and normal CLI run/sweep bridge, and publish a signed PR. |
 | P0 | [AR-1391](../tasks/AR-1391-runtime-control-bootstrap-constructor.md): Runtime control bootstrap constructor | Unclaimed | Materialize authenticated runtime live authority into an opaque source without caller injection. | Claim the pre-bound isolated worktree, implement the runtime/control-owned authenticated bootstrap constructor, and publish a signed PR. |
 | P0 | [AR-1392](../tasks/AR-1392-control-authority-materializer.md): Control-owned private authority materializer | Unclaimed | Resolve private live authority from authenticated control enrollment without caller injection. | Claim the pre-bound isolated worktree, implement the control-owned private authority resolver required by AR-1391, and publish a signed PR. |
-| P0 | [AR-1432](../tasks/AR-1432-local-openrouter-execution-bridge.md): Local OpenRouter execution bridge | Unclaimed | Qualify credential-free OpenRouter user execution through a deterministic loopback mock without external-provider access. | Local deterministic mock-attempt backend is delivered by AR-1433 (PR #325, merge 2872a31f) and is no longer blocked for development qualification. Preserve this AR&#x27;s remaining optional production live-bridge boundary: do not synthesize LiveProviderAttempt or weaken ProviderEgressTarget; runtime-owned relay/backend acquisition remains separately fail-closed. |
 | P1 | [AR-0604](../tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Unclaimed | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Obtain authorized native x86 runner and immutable CSB/Python evidence; rerun native_boundary and record A/B overhead. |
 | P1 | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Unclaimed | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Create successor AR for authenticated route/ancestor authority; preserve AR-1288 evidence and AR-0814 head 29cfa193. |
 | P1 | [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md): Qualify development host ASB runner operations | Unclaimed | Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery. | Run repeated clean ASB jobs on every declared development host label and audit reset, isolation, architecture, and artifact provenance. |
