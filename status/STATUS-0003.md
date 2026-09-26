@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| P1 | [AR-0858](../tasks/AR-0858-openjiuwen-adapter.md): Implement the OpenJiuwen contract and capability adapter | Unclaimed | Implement the OpenJiuwen contract and capability adapter. | Monitor all required post-merge CI runs for exact main 096dc4f275c05ad81772f443b6f22dddfb92da3d; release only after every required gate is green. |
 | P1 | [AR-0859](../tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Unclaimed | Qualify pinned OpenJiuwen live execution. | No further action; live qualification and protected-main recovery are complete. |
 | P1 | [AR-0860](../tasks/AR-0860-openjiuwen-replay.md): Qualify strict OpenJiuwen replay | Unclaimed | Qualify strict OpenJiuwen replay. | Monitor draft PR #189 exact-head CI and request independent review; do not merge until all gates/review green. Head c894a34. |
 | P1 | [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md): Add CLI multi-agent provider selection | Unclaimed | Select several agents and apply one preconfigured provider profile through inspectable command-line options. | Complete; no further action. |

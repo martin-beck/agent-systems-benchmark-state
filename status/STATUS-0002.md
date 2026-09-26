@@ -131,11 +131,16 @@
 
 ## Complete AR inventory
 
-### Open (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1466](../tasks/AR-1466-state-ci-format-repair.md): State CI formatting repair | Unclaimed | Repair the current state branch&#x27;s deterministic formatting failure without changing validator behavior. | Claim the repair, apply only the required Ruff formatting to tools/validate_ar1308_capacity.py, run all applicable state gates, and publish through exact-head CI. |
+| P1 | [AR-1466](../tasks/AR-1466-state-ci-format-repair.md): State CI formatting repair | coordinator-ar1466-format | Repair the current state branch&#x27;s deterministic formatting failure without changing validator behavior. | Claim the repair, apply only the required Ruff formatting to tools/validate_ar1308_capacity.py, run all applicable state gates, and publish through exact-head CI. |
+
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
 ### Blocked (68)
@@ -513,4 +518,3 @@
 | P1 | [AR-0854](../tasks/AR-0854-coordinator-v020-upgrade.md): Upgrade shared workflow coordinator to v0.2.0 | Unclaimed | Adopt coordinator v0.2.0 concurrency, recovery, durable-run, replica, and vendor hardening. | Promote and claim the upgrade, vendor signed v0.2.0 in an isolated worktree, and publish only after exact-head gates pass. |
 | P1 | [AR-0855](../tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | Unclaimed | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Complete; no further action. |
 | P1 | [AR-0857](../tasks/AR-0857-openjiuwen-provenance.md): Pin OpenJiuwen source, package, and license provenance | Unclaimed | Pin OpenJiuwen source, package, and license provenance. | Integrate signed no-ff PR #97 onto current main, then run and verify all exact-main post-merge workflows before release. |
-| P1 | [AR-0858](../tasks/AR-0858-openjiuwen-adapter.md): Implement the OpenJiuwen contract and capability adapter | Unclaimed | Implement the OpenJiuwen contract and capability adapter. | Monitor all required post-merge CI runs for exact main 096dc4f275c05ad81772f443b6f22dddfb92da3d; release only after every required gate is green. |
