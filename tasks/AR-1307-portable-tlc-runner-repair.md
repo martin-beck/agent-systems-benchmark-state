@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1307.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 733,
+  "task_revision": 734,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-18T16:26:41+00:00",
+  "updated_at": "2026-09-26T18:47:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -2093,3 +2093,7 @@ authorize qualification, publication, or release evidence; selecting
   qualification claim. Next action: wait for AR-1308 to repair and validate the disposable x86_64
   QEMU fixture and produce exact AR-1307-head capacity evidence, then rerun canonical
   full-exhaustive through verify.sh/tlc_runner.py without changing limits.
+
+- 2026-09-26T18:47:21+00:00: Reopen for coordinator audit: current PR #25 head is ab485f767, while
+  prior metadata expected 969eef058; hosted formal still fails only at full-exhaustive liveness due
+  Java OOM. Refresh exact dependency and preserve fail-closed status.
