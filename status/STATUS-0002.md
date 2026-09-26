@@ -129,7 +129,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1330](../tasks/AR-1330-live-capture-sealed-cassette.md): Live provider capture into a sealed cassette | coordinator-ar1330-capture | Capture and seal a real authenticated provider exchange as a content-addressed cassette. | Invoke the existing StrictReplayService::capture_authenticated_connection boundary from the live run path and seal the sanitized, redacted provider exchange as a content-addressed cassette. |
+| P1 | [AR-1330](../tasks/AR-1330-live-capture-sealed-cassette.md): Live provider capture into a sealed cassette | coordinator-ar1330-capture | Capture and seal runtime-authorized provider exchanges; deterministic local/mock qualification is sufficient and external reachability is optional. | Wire runtime-owned StrictReplayService::capture_authenticated_connection into the live path, qualify with deterministic local/mock fixtures, and preserve fail-closed optional external reachability. |
 
 ### Open (1)
 

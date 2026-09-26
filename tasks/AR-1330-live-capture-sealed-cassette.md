@@ -9,16 +9,16 @@
     "AR-1329"
   ],
   "id": "AR-1330",
-  "next_action": "Invoke the existing StrictReplayService::capture_authenticated_connection boundary from the live run path and seal the sanitized, redacted provider exchange as a content-addressed cassette.",
+  "next_action": "Wire runtime-owned StrictReplayService::capture_authenticated_connection into the live path, qualify with deterministic local/mock fixtures, and preserve fail-closed optional external reachability.",
   "owner": "coordinator-ar1330-capture",
   "plan": "../plans/AR-1330.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Capture and seal a real authenticated provider exchange as a content-addressed cassette.",
-  "task_revision": 3,
+  "summary": "Capture and seal runtime-authorized provider exchanges; deterministic local/mock qualification is sufficient and external reachability is optional.",
+  "task_revision": 4,
   "title": "Live provider capture into a sealed cassette",
-  "updated_at": "2026-09-26T20:11:10+00:00",
+  "updated_at": "2026-09-26T20:11:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1330-live-capture-sealed-cassette"
 }
 ---
@@ -51,3 +51,7 @@ reachability.
   optional.
 
 - 2026-09-26T20:11:10+00:00: Claimed by coordinator-ar1330-capture.
+
+- 2026-09-26T20:11:43+00:00: Reconciled acceptance wording: mandatory evidence is deterministic
+  local/mock capture plus offline strict replay; a real external provider exchange is optional
+  supplementary evidence and never a completion or dependency gate.
