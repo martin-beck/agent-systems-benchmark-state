@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the single-parent protected merge for AR-1392 without changing its reviewed implementation.",
-  "task_revision": 64,
+  "task_revision": 65,
   "title": "AR-1392 protected-main topology repair",
-  "updated_at": "2026-09-26T23:54:01+00:00",
+  "updated_at": "2026-09-26T23:54:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1469-ar1392-protected-topology-repair"
 }
 ---
@@ -205,3 +205,6 @@ green exact-head checks; the failed squash topology remains part of the record.
 
 - 2026-09-26T23:54:01+00:00: Recorded command exit 0; command argv SHA-256
   c83e3028295bad12c250fdfb6ad9aff4c0d8135a3b565796d472712781d019b7.
+
+- 2026-09-26T23:54:20+00:00: Recorded command exit 0; command argv SHA-256
+  3bbaa93e4fda09b7008797fd1fda29a2f524311568df629afc8297799058f041.
