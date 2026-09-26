@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Retire obsolete state-repository pull requests without changing product or formal gates.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Retire stale state-repository pull requests",
-  "updated_at": "2026-09-26T18:49:25+00:00",
+  "updated_at": "2026-09-26T18:49:42+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1459-retire-stale-state-prs"
 }
 ---
@@ -38,3 +38,6 @@ asb-tui source changes are in scope.
 
 - 2026-09-26T18:49:25+00:00: Recorded command exit 0; command argv SHA-256
   58f8018f10338c80b30a370a8c499a9223ef8552b9d1219173ada0882050eb76.
+
+- 2026-09-26T18:49:42+00:00: Recorded command exit 0; command argv SHA-256
+  d686c08fdd6aec122e343f0e0d6d7d067318db1f324b667e5cbfcc6d3a30d2fd.
