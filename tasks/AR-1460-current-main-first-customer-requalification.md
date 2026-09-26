@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1460.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Requalify first-customer readiness after the latest local-mock campaign merge.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Current-main first-customer requalification",
-  "updated_at": "2026-09-26T20:25:00+00:00",
+  "updated_at": "2026-09-26T18:56:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1460-current-main-first-customer-requalification"
 }
 ---
@@ -29,3 +29,6 @@ local/mock campaign selection, literature workloads, strict offline replay,
 cancellation/restart recovery, cleanup and privacy-safe evidence. It must not
 contact a remote provider or modify asb-tui. Any deterministic failure gets a
 narrow repair AR; no release claim is made from stale evidence.
+
+- 2026-09-26T18:56:57+00:00: Origin/main advanced to AR-1456 merge 36d4bdf after AR-1458 evidence;
+  require fresh first-customer qualification against current main.
