@@ -125,8 +125,8 @@
 | [AR-1461](../tasks/AR-1461-first-customer-release-readiness.md) | [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md), [AR-1460](../tasks/AR-1460-current-main-first-customer-requalification.md) | [AR-1463](../tasks/AR-1463-current-main-requalification-after-capture.md) |
 | [AR-1462](../tasks/AR-1462-pinned-release-toolchain-bundle-workflow.md) | [AR-1460](../tasks/AR-1460-current-main-first-customer-requalification.md) | None |
 | [AR-1463](../tasks/AR-1463-current-main-requalification-after-capture.md) | [AR-1330](../tasks/AR-1330-live-capture-sealed-cassette.md), [AR-1461](../tasks/AR-1461-first-customer-release-readiness.md) | None |
-| [AR-1464](../tasks/AR-1464-formal-capacity-input-provisioning.md) | None | [AR-1465](../tasks/AR-1465-reviewed-seed-archival-recovery.md) |
-| [AR-1465](../tasks/AR-1465-reviewed-seed-archival-recovery.md) | [AR-1464](../tasks/AR-1464-formal-capacity-input-provisioning.md) | None |
+| [AR-1464](../tasks/AR-1464-formal-capacity-input-provisioning.md) | None | None |
+| [AR-1465](../tasks/AR-1465-reviewed-seed-archival-recovery.md) | None | None |
 | [AR-1466](../tasks/AR-1466-state-ci-format-repair.md) | None | None |
 
 ## Complete AR inventory
@@ -514,3 +514,4 @@
 | P1 | [AR-0857](../tasks/AR-0857-openjiuwen-provenance.md): Pin OpenJiuwen source, package, and license provenance | Unclaimed | Pin OpenJiuwen source, package, and license provenance. | Integrate signed no-ff PR #97 onto current main, then run and verify all exact-main post-merge workflows before release. |
 | P1 | [AR-0858](../tasks/AR-0858-openjiuwen-adapter.md): Implement the OpenJiuwen contract and capability adapter | Unclaimed | Implement the OpenJiuwen contract and capability adapter. | Monitor all required post-merge CI runs for exact main 096dc4f275c05ad81772f443b6f22dddfb92da3d; release only after every required gate is green. |
 | P1 | [AR-0859](../tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Unclaimed | Qualify pinned OpenJiuwen live execution. | No further action; live qualification and protected-main recovery are complete. |
+| P1 | [AR-0860](../tasks/AR-0860-openjiuwen-replay.md): Qualify strict OpenJiuwen replay | Unclaimed | Qualify strict OpenJiuwen replay. | Monitor draft PR #189 exact-head CI and request independent review; do not merge until all gates/review green. Head c894a34. |

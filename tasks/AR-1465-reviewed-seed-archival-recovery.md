@@ -3,7 +3,7 @@
   "branch": "repair/ar-1465-reviewed-seed-archival-recovery",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1464"],
+  "depends_on": [],
   "id": "AR-1465",
   "next_action": "Search approved durable archives for the exact reviewed seed digest b3383756b5cd357f58d923216effea33be35b793034de321c3c9ce460ece4b28; do not regenerate or substitute a different seed.",
   "owner": "",
