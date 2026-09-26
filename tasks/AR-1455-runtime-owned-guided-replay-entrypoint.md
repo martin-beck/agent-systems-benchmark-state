@@ -11,17 +11,17 @@
   "id": "AR-1455",
   "next_action": "Run independent diff review and full mandatory local gates; then publish exact-head PR if all pass.",
   "observed_branch": "feature/ar-1455-runtime-owned-guided-replay-entrypoint",
-  "observed_dirty": 1,
-  "observed_head": "1b79609c3be59f31fb1d58655e8091da532ba0f4",
+  "observed_dirty": 0,
+  "observed_head": "e12a4111c29e219bf2cea921133bde8870e36d0f",
   "owner": "ar1455-guided-replay-review-luna56",
   "plan": "../plans/AR-1455-runtime-owned-guided-replay-entrypoint.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the runtime-owned guided local replay entrypoint needed by AR-1338.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Runtime-owned guided replay entrypoint",
-  "updated_at": "2026-09-26T15:28:05+00:00",
+  "updated_at": "2026-09-26T15:28:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1455-runtime-owned-guided-replay-entrypoint"
 }
 ---
