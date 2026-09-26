@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1307-portable-tlc-runner-repair",
   "checkpoint_commit": "ab485f767fbddbd8adfc27b5120f3df0a045b762",
-  "claim_expires": "2026-09-26T19:07:24+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1302"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "969eef05834a4ce5f711bbafaa5798549abd95c8",
-  "owner": "coordinator-ar1307-audit",
+  "owner": "",
   "plan": "../plans/AR-1307.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 736,
+  "task_revision": 737,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-26T18:47:39+00:00",
+  "updated_at": "2026-09-26T18:47:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -2102,3 +2102,9 @@ authorize qualification, publication, or release evidence; selecting
 
 - 2026-09-26T18:47:39+00:00: Coordinator audit refreshed current PR and formal failure evidence; no
   source mutation and no qualification claim.
+
+- 2026-09-26T18:47:47+00:00: Refreshed evidence: PR #25 exact head ab485f767 is signed+DCO but
+  full-exhaustive formal run 35342513872 failed only because Java OOM during liveness under
+  unchanged 3G memory/3G swap/2-worker contract. Prepared AR-1308 QEMU capacity exists but remains
+  unqualified pending exact signed bundle, seed, JDK/TLC and preflight. Preserve fail-closed formal
+  gate; no source mutation.
