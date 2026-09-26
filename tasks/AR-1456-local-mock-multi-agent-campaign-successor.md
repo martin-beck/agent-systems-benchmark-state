@@ -9,7 +9,7 @@
     "AR-1447"
   ],
   "id": "AR-1456",
-  "next_action": "Rerun cargo fmt --all check, then full asb-cli offline tests and provenance/privacy gates; independently review and sign commit.",
+  "next_action": "Commit the reviewed three-file explicit local-mock opt-in patch signed+DCO; then publish only from the exact clean head.",
   "observed_branch": "feature/ar-1456-local-mock-multi-agent-campaign-successor",
   "observed_dirty": 3,
   "observed_head": "28730b61572f463e9cf1e6b5f1cf20fd198ef7e8",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Local/mock multi-agent campaign successor",
-  "updated_at": "2026-09-26T17:53:55+00:00",
+  "updated_at": "2026-09-26T17:54:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1456-local-mock-multi-agent-campaign-successor"
 }
 ---
@@ -122,3 +122,12 @@ for local development, CI, or this AR's completion.
 
 - 2026-09-26T17:53:42+00:00: Recorded command exit 0; command argv SHA-256
   d58ea5022abc7124ad108f91be9ed2105234ccd006cc4621d606a57f508ee346.
+
+- 2026-09-26T17:54:02+00:00: Recorded exit-101 cause: full `cargo test -p asb-cli --all-targets` had
+  112 tests green, but
+  `workflow_transcript::provenance_binds_the_exact_cli_and_public_fixture_sources` failed because
+  the changed crates/asb-cli/src/lib.rs digest was
+  c52230457c1d0ad890d2286e7b1ff010ec32e2abfe22f5bcd6da46cbf3ceeffb while checked-in provenance still
+  expected 425ad70e72067316ecd9b466859b97f5e1f382984455805756a3f40aa9f83d0c. Refreshed only
+  cli_source_sha256; focused workflow_transcript rerun is now 3/3 green. Next action: commit exact
+  reviewed diff signed+DCO.
