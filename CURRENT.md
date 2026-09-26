@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1463](tasks/AR-1463-current-main-requalification-after-capture.md): Current-main first-customer requalification after capture integration | Exact protected main is requalified for first-customer production-like use: install/build, local/mock workloads, capture redaction and content-addressed sealing, strict offline replay, recovery/privacy/egress denial, coverage and deterministic/formal gates pass; existing v0.1.0 remains the verified release. | No new release publication; retain v0.1.0 as the verified customer release and repeat qualification only for a later protected-main revision. | coordinator-ar1463-requal |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -320,6 +314,7 @@ Never edit this file directly.
 | P0 | [AR-1460](tasks/AR-1460-current-main-first-customer-requalification.md): Current-main first-customer requalification | Requalify first-customer readiness after the latest local-mock campaign merge. | Release done: current protected-main first-customer qualification passed with credential-free local/mock and strict-replay evidence; no deterministic repair AR. | - |
 | P0 | [AR-1461](tasks/AR-1461-first-customer-release-readiness.md): First-customer release readiness and publication | Prepare and publish the first-customer ASB release from the currently qualified main. | Release done after public tag/release and fresh consumption verification. | - |
 | P0 | [AR-1462](tasks/AR-1462-pinned-release-toolchain-bundle-workflow.md): Pinned release toolchain and first-customer bundle workflow | Establish reproducible supply-chain checks and first-customer release bundle publication workflow. | Release done after recording all seven green exact-main workflows. | - |
+| P0 | [AR-1463](tasks/AR-1463-current-main-requalification-after-capture.md): Current-main first-customer requalification after capture integration | Exact protected main is requalified for first-customer production-like use: install/build, local/mock workloads, capture redaction and content-addressed sealing, strict offline replay, recovery/privacy/egress denial, coverage and deterministic/formal gates pass; existing v0.1.0 remains the verified release. | No new release publication; retain v0.1.0 as the verified customer release and repeat qualification only for a later protected-main revision. | - |
 | P1 | [AR-0002](tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. | - |
 | P1 | [AR-0003](tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. | - |
 | P1 | [AR-0004](tasks/AR-0004-ar-status-document.md): Generate the visual AR status document | Render every AR, status, and dependency as an accessible visual state document. | Await independent immutable-head review of state PR 3 at eedd311; repair findings before coordinator integration. | - |

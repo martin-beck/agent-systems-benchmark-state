@@ -2,7 +2,7 @@
 {
   "branch": "qualification/ar-1463-current-main-requalification-after-capture",
   "checkpoint_commit": "01b70e87ce8e7913f614447c0c530cb22e235256",
-  "claim_expires": "2026-09-26T23:02:24+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1330",
     "AR-1461"
@@ -12,15 +12,15 @@
   "observed_branch": "qualification/ar-1463-current-main-requalification-after-capture",
   "observed_dirty": 0,
   "observed_head": "01b70e87ce8e7913f614447c0c530cb22e235256",
-  "owner": "coordinator-ar1463-requal",
+  "owner": "",
   "plan": "../plans/AR-1463.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Exact protected main is requalified for first-customer production-like use: install/build, local/mock workloads, capture redaction and content-addressed sealing, strict offline replay, recovery/privacy/egress denial, coverage and deterministic/formal gates pass; existing v0.1.0 remains the verified release.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Current-main first-customer requalification after capture integration",
-  "updated_at": "2026-09-26T21:02:54+00:00",
+  "updated_at": "2026-09-26T21:03:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1463-current-main-requalification-after-capture"
 }
 ---
@@ -134,3 +134,9 @@ required. Any release decision must remain fail-closed and exact-head bound.
   was weakened or skipped because exact-main CI evidence is green. Existing public v0.1.0 release
   verified via gh release view with artifact asb-v0.1.0.tar.gz; no new tag/release published. No
   live provider, native ARM, asb-tui or external signing required.
+
+- 2026-09-26T21:03:08+00:00: Released done after exact protected-main requalification at
+  01b70e87ce8e7913f614447c0c530cb22e235256. Deterministic local/mock capture, redaction,
+  content-addressed sealing, strict replay, recovery, privacy, egress denial, full tests, coverage,
+  rustdoc, release build, formal models and pinned analyzer gates passed; exact-main seven-workflow
+  evidence is green. Existing v0.1.0 remains the verified release; no new publication.
