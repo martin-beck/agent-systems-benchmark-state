@@ -9,7 +9,7 @@
     "AR-1447"
   ],
   "id": "AR-1456",
-  "next_action": "Publish reviewed signed head b6a3d5f22f1087fa4352eed760185cc745403ad9 through handoffctl; require exact-head CI before merge.",
+  "next_action": "Monitor PR #336 exact-head b6a3d5f22f1087fa4352eed760185cc745403ad9 required checks; merge only after all green.",
   "observed_branch": "feature/ar-1456-local-mock-multi-agent-campaign-successor",
   "observed_dirty": 0,
   "observed_head": "b6a3d5f22f1087fa4352eed760185cc745403ad9",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Local/mock multi-agent campaign successor",
-  "updated_at": "2026-09-26T17:55:33+00:00",
+  "updated_at": "2026-09-26T17:55:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1456-local-mock-multi-agent-campaign-successor"
 }
 ---
@@ -153,3 +153,9 @@ for local development, CI, or this AR's completion.
 
 - 2026-09-26T17:55:33+00:00: Recorded command exit 0; command argv SHA-256
   ae62836c955260a2896cfaa639f4350b426f1d166c1ac9f1a0d1282c87ec2d58.
+
+- 2026-09-26T17:55:49+00:00: Published PR #336 from exact clean signed+DCO head
+  b6a3d5f22f1087fa4352eed760185cc745403ad9. First gh invocation omitted repository and correctly
+  failed against state repo with no commits; retried with explicit -R
+  martin-beck/agent-systems-benchmark and opened PR successfully. Monitor exact-head checks; do not
+  merge before all required checks green.
