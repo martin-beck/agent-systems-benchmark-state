@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1333-multi-agent-workload-campaign",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-26T21:44:55+00:00",
   "depends_on": [
     "AR-1329",
     "AR-1332",
@@ -10,15 +10,15 @@
   ],
   "id": "AR-1333",
   "next_action": "Keep AR-1333 as the optional production/live campaign successor; implement the mandatory credential-free local/mock campaign through AR-1456 and do not wait on AR-1329 for local qualification.",
-  "owner": "",
+  "owner": "coordinator-ar1333-supersede",
   "plan": "../plans/AR-1333.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Run the multi-agent by workload benchmark campaign with per-tuple evidence and offline replay.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Multi-agent by workload benchmark campaign",
-  "updated_at": "2026-09-26T20:44:52+00:00",
+  "updated_at": "2026-09-26T20:44:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1333-multi-agent-workload-campaign"
 }
 ---
@@ -45,3 +45,5 @@ reachability.
 
 - 2026-09-26T20:44:52+00:00: Mandatory local/mock campaign is complete through AR-1456; retain no
   live-provider requirement and retire the duplicate optional campaign AR.
+
+- 2026-09-26T20:44:55+00:00: Claimed by coordinator-ar1333-supersede.
