@@ -135,7 +135,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1466](../tasks/AR-1466-state-ci-format-repair.md): State CI formatting repair | coordinator-ar1466-format | Ruff formatting and SIM117 lint repairs are committed at 53dad057; focused formatting, Ruff and mypy gates pass locally. Exact-main CI is running. | Wait for every exact-main required state workflow on 53dad057 to finish; inspect and repair any failure, then release AR-1466 done with durable evidence. |
+| P1 | [AR-1466](../tasks/AR-1466-state-ci-format-repair.md): State CI formatting repair | coordinator-ar1466-format | State CI repair is complete at exact protected-main head 932a91a: formatter/lint and schema compatibility repairs pass local gates, focused AR-1308 tests pass, and Coordination verification run 36274807110 succeeded. | Release AR-1466 done with the exact merge-head CI and local gate evidence; no further repair remains. |
 
 ### Open (1)
 

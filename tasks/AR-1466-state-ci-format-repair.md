@@ -1,20 +1,20 @@
 ---
 {
   "branch": "repair/ar-1466-state-ci-format-repair",
-  "checkpoint_commit": "53dad0574741548c6acc8c4cac729ac32edfa423",
+  "checkpoint_commit": "932a91affb6876e9a4a22b3a0f019f2bd2d4dd6f",
   "claim_expires": "2026-09-26T22:59:58+00:00",
   "depends_on": [],
   "id": "AR-1466",
-  "next_action": "Wait for every exact-main required state workflow on 53dad057 to finish; inspect and repair any failure, then release AR-1466 done with durable evidence.",
+  "next_action": "Release AR-1466 done with the exact merge-head CI and local gate evidence; no further repair remains.",
   "owner": "coordinator-ar1466-format",
   "plan": "../plans/AR-1466-state-ci-format-repair.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Ruff formatting and SIM117 lint repairs are committed at 53dad057; focused formatting, Ruff and mypy gates pass locally. Exact-main CI is running.",
-  "task_revision": 24,
+  "summary": "State CI repair is complete at exact protected-main head 932a91a: formatter/lint and schema compatibility repairs pass local gates, focused AR-1308 tests pass, and Coordination verification run 36274807110 succeeded.",
+  "task_revision": 25,
   "title": "State CI formatting repair",
-  "updated_at": "2026-09-26T21:59:58+00:00",
+  "updated_at": "2026-09-26T22:02:46+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1466-state-ci-format-repair"
 }
 ---
@@ -89,3 +89,9 @@ reports `tools/validate_ar1308_capacity.py` as the only unformatted file.
   cb383b9491e8112729232b4b11c712df05d06815e979e54e846b94bc2cca4fa2.
 
 - 2026-09-26T21:59:58+00:00: Heartbeat by coordinator-ar1466-format.
+
+- 2026-09-26T22:02:46+00:00: Exact-main CI terminal success: Coordination verification 36274807110.
+  It passed formatting/typing, complexity, fault tests/coverage, schema/generated state, source
+  headers, DCO and pinned coordinator checks. Schema compatibility preserves unknown-field rejection
+  and finite bounds while accepting existing descriptive plan filenames and unobserved planned
+  heads.
