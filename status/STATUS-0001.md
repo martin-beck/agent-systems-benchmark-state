@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**488 ARs tracked** across 5 active status categories.
+**489 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 70 |
-| **Planned** | Defined work awaiting promotion or dependencies | 57 |
+| **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 342 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -560,6 +560,7 @@ flowchart LR
         AR_1465["AR-1465 - Blocked"]:::status_blocked
         AR_1466["AR-1466 - Done"]:::status_done
         AR_1467["AR-1467 - Done"]:::status_done
+        AR_1468["AR-1468 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1473,6 +1474,7 @@ flowchart LR
     AR_1288 --> AR_1370
     AR_1288 --> AR_1371
     AR_1288 --> AR_1377
+    AR_1288 --> AR_1468
     AR_1300 --> AR_1301
     AR_1300 --> AR_1306
     AR_1302 --> AR_1304
@@ -1619,6 +1621,7 @@ flowchart LR
     AR_1362 --> AR_1379
     AR_1362 --> AR_1380
     AR_1362 --> AR_1381
+    AR_1362 --> AR_1468
     AR_1364 --> AR_1365
     AR_1364 --> AR_1366
     AR_1364 --> AR_1369
@@ -1628,6 +1631,7 @@ flowchart LR
     AR_1364 --> AR_1379
     AR_1364 --> AR_1380
     AR_1364 --> AR_1381
+    AR_1364 --> AR_1468
     AR_1365 --> AR_1366
     AR_1365 --> AR_1373
     AR_1366 --> AR_1367
@@ -1643,6 +1647,7 @@ flowchart LR
     AR_1366 --> AR_1391
     AR_1366 --> AR_1392
     AR_1366 --> AR_1393
+    AR_1366 --> AR_1468
     AR_1369 --> AR_1370
     AR_1371 --> AR_1373
     AR_1373 --> AR_1374
@@ -2159,7 +2164,7 @@ flowchart LR
 | [AR-1285](../tasks/AR-1285-runtime-launch-factory.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md), [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md) | [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md), [AR-1300](../tasks/AR-1300-runtime-cassette-dispatch-seam.md) |
 | [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md), [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md), [AR-1285](../tasks/AR-1285-runtime-launch-factory.md) | None |
 | [AR-1287](../tasks/AR-1287-delegated-sandbox-runner.md) | None | [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md), [AR-1306](../tasks/AR-1306-authenticated-fault-matrix-qualification.md) |
-| [AR-1288](../tasks/AR-1288-certificate-chain-authz.md) | [AR-0813](../tasks/AR-0813-remote-control-transport.md) | [AR-1370](../tasks/AR-1370-runner-authority-materialization.md), [AR-1371](../tasks/AR-1371-runner-authority-injection.md), [AR-1377](../tasks/AR-1377-runtime-chain-store.md) |
+| [AR-1288](../tasks/AR-1288-certificate-chain-authz.md) | [AR-0813](../tasks/AR-0813-remote-control-transport.md) | [AR-1370](../tasks/AR-1370-runner-authority-materialization.md), [AR-1371](../tasks/AR-1371-runner-authority-injection.md), [AR-1377](../tasks/AR-1377-runtime-chain-store.md), [AR-1468](../tasks/AR-1468-control-authority-materialization-successor.md) |
 | [AR-1289](../tasks/AR-1289-formal-lock-gate.md) | None | None |
 | [AR-1290](../tasks/AR-1290-dependabot-dco-boundary-recovery.md) | None | None |
 | [AR-1291](../tasks/AR-1291-superseded-pointer-repair.md) | None | None |
@@ -2202,4 +2207,3 @@ flowchart LR
 | [AR-1332](../tasks/AR-1332-record-live-replay-offline.md) | [AR-1331](../tasks/AR-1331-runtime-replay-launch-authority.md) | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md), [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md) |
 | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md) | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md), [AR-1332](../tasks/AR-1332-record-live-replay-offline.md), [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md) | [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md), [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md), [AR-1420](../tasks/AR-1420-literature-workload-campaign-integration.md) |
 | [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md) | [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md), [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md) |
-| [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md) | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md), [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md) | [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md) |
