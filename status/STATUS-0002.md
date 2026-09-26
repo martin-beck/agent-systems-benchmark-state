@@ -117,12 +117,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1332](../tasks/AR-1332-record-live-replay-offline.md): Record-live to replay-offline workflow | ar1332-record-replay-luna56 | Add the record-live then replay-offline end-to-end CLI workflow. | Monitor seven exact-main post-merge workflows for merge SHA ad4f96ab3f7e57916208406b2f56aa9ec4e54885; release only after all are green and post-merge verification is durable. |
-
 ### Blocked (69)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -268,7 +262,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (328)
+### Done (329)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -511,3 +505,5 @@
 | P1 | [AR-0889](../tasks/AR-0889-llm-fixture-scenario-contract.md): Define the LLM fixture and scenario contract | Unclaimed | Define generated synthetic LLM scenarios without weakening the existing content-addressed cassette replay contract. | Specify and implement the selected synthetic fixture and scenario contract with strict evidence labels, privacy bounds, and fail-closed validation. |
 | P1 | [AR-0891](../tasks/AR-0891-local-inference-provider-profiles.md): Qualify local inference provider profiles | Unclaimed | Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server. | Wait for and verify all six post-merge exact-main workflows on adac76558387cb0bdd09e2ba6cbfe49b9bc205be, then release AR-0891 and promote the next dependency-ready AR. |
 | P1 | [AR-0895](../tasks/AR-0895-verify-coordination-content.md): Verify every coordination-content pull request | Unclaimed | Close the workflow path-filter gap that lets coordination-content pull requests skip strict state consistency and DCO checks. | Rebase the approved three-path patch onto current repaired/licensed state main, preserve exact scope/signature/DCO, guarded force-with-lease PR #17, and require fresh exact-head CI before merge. |
+| P1 | [AR-0901](../tasks/AR-0901-formal-assurance.md): Prove critical state and concurrency invariants | Unclaimed | Use bounded proofs and model tests for safety-critical domain logic. | Await independent immutable-head review of PR 14 at 2a495a99; repair any findings without merging or releasing. |
+| P1 | [AR-0902](../tasks/AR-0902-fault-assurance.md): Add fuzz mutation and lifecycle fault campaigns | Unclaimed | Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection. | Run final coordination reconcile/snapshot/live doctor/full validation and release AR-0902 done only if clean synchronized state remains exact. |

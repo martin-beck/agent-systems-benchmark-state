@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1332-record-live-replay-offline",
   "checkpoint_commit": "ad4f96ab3f7e57916208406b2f56aa9ec4e54885",
-  "claim_expires": "2026-09-26T19:27:54+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1331"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1332-record-live-replay-offline",
   "observed_dirty": 0,
   "observed_head": "cbfe6e42870e902c18808c87275d45b012547841",
-  "owner": "ar1332-record-replay-luna56",
+  "owner": "",
   "plan": "../plans/AR-1332.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Add the record-live then replay-offline end-to-end CLI workflow.",
-  "task_revision": 95,
+  "task_revision": 96,
   "title": "Record-live to replay-offline workflow",
-  "updated_at": "2026-09-26T17:28:57+00:00",
+  "updated_at": "2026-09-26T17:31:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1332-record-live-replay-offline"
 }
 ---
@@ -306,3 +306,11 @@ reachability.
 
 - 2026-09-26T17:28:57+00:00: Recorded command exit 0; command argv SHA-256
   138d234dd3b5bc4ef6ba29683ed8a69b88541f2d4393eec43e1f90ae4c302f2d.
+
+- 2026-09-26T17:31:43+00:00: PR #335 merged at ad4f96ab3f7e57916208406b2f56aa9ec4e54885 from exact
+  signed head cbfe6e42870e902c18808c87275d45b012547841. All seven exact-main post-merge workflows
+  green: Huawei headers 36258713256; hosted portability/native 36258713283; fault assurance
+  36258713279; formal assurance 36258713228; Rust verification 36258713254; emulated aarch64
+  36258713249; repository quality 36258713252. State reconcile completed; live doctor reports
+  generated WORKTREES.md stale after reconcile, preserved as known projection race/self-reference
+  note.
