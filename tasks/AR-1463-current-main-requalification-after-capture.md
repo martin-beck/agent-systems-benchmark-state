@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1463.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Requalify current protected main for first-customer production-like use after capture/replay integration.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Current-main first-customer requalification after capture integration",
-  "updated_at": "2026-09-26T20:48:00+00:00",
+  "updated_at": "2026-09-26T20:47:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1463-current-main-requalification-after-capture"
 }
 ---
@@ -33,3 +33,6 @@ required. Any release decision must remain fail-closed and exact-head bound.
 - 2026-09-26T20:48:00+00:00: Created because AR-1330 merged after the v0.1.0
   release; prior first-customer evidence did not cover the new protected-main
   capture/replay implementation.
+
+- 2026-09-26T20:47:02+00:00: AR-1330 capture integration is merged; promote current-main
+  first-customer requalification at exact merge 01b70e87ce8e7913f614447c0c530cb22e235256.
