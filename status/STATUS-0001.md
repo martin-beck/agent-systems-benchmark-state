@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**479 ARs tracked** across 6 active status categories.
+**480 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 69 |
-| **Planned** | Defined work awaiting promotion or dependencies | 59 |
+| **Planned** | Defined work awaiting promotion or dependencies | 60 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 332 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -551,6 +551,7 @@ flowchart LR
         AR_1456["AR-1456 - Done"]:::status_done
         AR_1457["AR-1457 - Done"]:::status_done
         AR_1458["AR-1458 - Done"]:::status_done
+        AR_1459["AR-1459 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1813,6 +1814,7 @@ flowchart LR
     AR_1453 --> AR_1458
     AR_1456 --> AR_1333
     AR_1456 --> AR_1458
+    AR_1457 --> AR_1459
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -2188,4 +2190,3 @@ flowchart LR
 | [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md) | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md), [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md) | [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md) |
 | [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md) | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md), [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md), [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md) | None |
 | [AR-1337](../tasks/AR-1337-protected-main-merge-tree-repair-openrouter.md) | [AR-1226](../tasks/AR-1226-protected-merge-tree-remediation.md) | [AR-1397](../tasks/AR-1397-protected-main-postmerge-concurrency-repair.md), [AR-1398](../tasks/AR-1398-signed-protected-main-recovery.md) |
-| [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md) | [AR-1331](../tasks/AR-1331-runtime-replay-launch-authority.md), [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md), [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md), [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md) | None |
