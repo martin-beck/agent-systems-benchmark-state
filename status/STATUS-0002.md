@@ -131,7 +131,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | coordinator-ar1308-input-provision | Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification. | Clean runner ready: 64 GiB disk, x86_64 QEMU 8.2.2, 8 vCPU, 32 GiB RAM, no network/mounts. Bind exact AR-1307 bundle, pinned JDK/TLC, lock, image and seed; preflight before boot. |
+| P0 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | coordinator-ar1308-input-provision | Bounded signed preflight failed closed: prepared runner receipt and JDK/TLC/model are present, but host swap, image, overlay capacity, exact source tree, seed and admission lock are missing. | Provision the reviewed Ubuntu 24.04 image and &gt;=64 GiB overlay, exact signed AR-1307 ab485f767 source checkout/tree, matching seed and canonical admission lock, then restore &gt;=1 GiB host swap and rerun the signed preflight before any QEMU/TLC boot. |
 
 ### Open (1)
 
@@ -518,4 +518,3 @@
 | P1 | [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md): Add TUI multi-agent provider selection | Unclaimed | Choose several agents and one preconfigured provider for all of them from negotiated TUI selection lists. | Push signed repair b3c19b1 with force-with-lease, then rerun exact-head PR checks; do not merge until all required jobs pass. |
 | P1 | [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md): Deliver record and replay user workflows | Unclaimed | Make recording and strict replay complete, explicit, privacy-safe user workflows in both CLI and TUI. | Deliver executable CLI and TUI journeys for recording LLM responses and replaying an exact compatible cassette. |
 | P1 | [AR-0875](../tasks/AR-0875-control-history-analysis-contract.md): Extend control history and analysis protocol | Unclaimed | Extend frontend history and analysis contracts with bounded provenance, integrity, outcome, compatibility, and confounder evidence. | After AR-0806 completes, define the versioned history and analysis protocol extension before serialized CLI backend integration. |
-| P1 | [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md): Wire provider-aware agent launches | Unclaimed | Apply validated provider selections at the authoritative agent launch boundary and reject conflicting runtime configuration. | Create signed+DCO follow-up parented bc071fd, force-with-lease origin/main 32562e8, rerun exact-main postmerge workflows. |

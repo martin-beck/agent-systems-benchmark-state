@@ -7,7 +7,7 @@
     "AR-1304"
   ],
   "id": "AR-1308",
-  "next_action": "Clean runner ready: 64 GiB disk, x86_64 QEMU 8.2.2, 8 vCPU, 32 GiB RAM, no network/mounts. Bind exact AR-1307 bundle, pinned JDK/TLC, lock, image and seed; preflight before boot.",
+  "next_action": "Provision the reviewed Ubuntu 24.04 image and >=64 GiB overlay, exact signed AR-1307 ab485f767 source checkout/tree, matching seed and canonical admission lock, then restore >=1 GiB host swap and rerun the signed preflight before any QEMU/TLC boot.",
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
@@ -16,10 +16,10 @@
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 551,
+  "summary": "Bounded signed preflight failed closed: prepared runner receipt and JDK/TLC/model are present, but host swap, image, overlay capacity, exact source tree, seed and admission lock are missing.",
+  "task_revision": 552,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-26T21:09:24+00:00",
+  "updated_at": "2026-09-26T21:10:26+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1665,3 +1665,14 @@ must report `qualification_authorized: false`.
 
 - 2026-09-26T21:09:24+00:00: Recorded command exit 1; command argv SHA-256
   f6058602dbee957cce47c353088ca98d988f779dd67bba31220115c8a600e1cc.
+
+- 2026-09-26T21:10:26+00:00: Bounded audit completed without VM boot or TLC execution. Canonical
+  signed preflight exit 1 reported: host available swap below 1 GiB (free 28,672 bytes); reviewed
+  image file missing/wrong digest; overlay virtual size 3,758,096,384 bytes versus required 64 GiB;
+  source is not exact signed AR-1307 ab485f767 and tree digest mismatches; seed input missing/wrong
+  digest; admission-lock input missing. Prepared receipt confirms x86_64 QEMU 8.2.2, 8 vCPU, 32 GiB
+  guest RAM, 16 GiB guest swap, 64 GiB data image, no network/host mounts and unchanged
+  3G/3G/2-worker/2-core/8G/7200s process contract, but remains prepared-not-qualified. JDK 17, TLC
+  digest 936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88 and model digest were
+  available. Do not synthesize inputs, use unsigned authority, weaken limits, boot QEMU or run TLC.
+  Next action is provision the exact missing artifacts and swap, then rerun signed preflight.
