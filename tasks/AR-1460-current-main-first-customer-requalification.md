@@ -2,7 +2,7 @@
 {
   "branch": "qualification/ar-1460-current-main-first-customer-requalification",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-26T19:42:00+00:00",
+  "claim_expires": "2026-09-26T20:57:20+00:00",
   "depends_on": [
     "AR-1456",
     "AR-1458"
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Requalify first-customer readiness after the latest local-mock campaign merge.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Current-main first-customer requalification",
-  "updated_at": "2026-09-26T18:57:00+00:00",
+  "updated_at": "2026-09-26T18:57:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1460-current-main-first-customer-requalification"
 }
 ---
@@ -34,3 +34,5 @@ narrow repair AR; no release claim is made from stale evidence.
   require fresh first-customer qualification against current main.
 
 - 2026-09-26T18:57:00+00:00: Claimed by coordinator-ar1460-current-main.
+
+- 2026-09-26T18:57:20+00:00: Heartbeat by coordinator-ar1460-current-main.
