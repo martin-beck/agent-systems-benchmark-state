@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1332-record-live-replay-offline",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-26T18:47:28+00:00",
+  "claim_expires": "2026-09-26T18:48:52+00:00",
   "depends_on": [
     "AR-1331"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the record-live then replay-offline end-to-end CLI workflow.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Record-live to replay-offline workflow",
-  "updated_at": "2026-09-26T16:48:37+00:00",
+  "updated_at": "2026-09-26T16:48:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1332-record-live-replay-offline"
 }
 ---
@@ -61,3 +61,5 @@ reachability.
 
 - 2026-09-26T16:48:37+00:00: Recorded command exit 0; command argv SHA-256
   b04e51d6a8a1cd1d991d96d1b0eeb7f5236f1056ccb95c8f404b26c181dc4797.
+
+- 2026-09-26T16:48:52+00:00: Heartbeat by ar1332-record-replay-luna56.
