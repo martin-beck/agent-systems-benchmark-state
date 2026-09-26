@@ -2,19 +2,19 @@
 {
   "branch": "repair/ar-1466-state-ci-format-repair",
   "checkpoint_commit": "932a91affb6876e9a4a22b3a0f019f2bd2d4dd6f",
-  "claim_expires": "2026-09-26T22:59:58+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1466",
   "next_action": "Release AR-1466 done with the exact merge-head CI and local gate evidence; no further repair remains.",
-  "owner": "coordinator-ar1466-format",
+  "owner": "",
   "plan": "../plans/AR-1466-state-ci-format-repair.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "State CI repair is complete at exact protected-main head 932a91a: formatter/lint and schema compatibility repairs pass local gates, focused AR-1308 tests pass, and Coordination verification run 36274807110 succeeded.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "State CI formatting repair",
-  "updated_at": "2026-09-26T22:02:46+00:00",
+  "updated_at": "2026-09-26T22:02:55+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1466-state-ci-format-repair"
 }
 ---
@@ -95,3 +95,10 @@ reports `tools/validate_ar1308_capacity.py` as the only unformatted file.
   headers, DCO and pinned coordinator checks. Schema compatibility preserves unknown-field rejection
   and finite bounds while accepting existing descriptive plan filenames and unobserved planned
   heads.
+
+- 2026-09-26T22:02:55+00:00: Completed state CI repair. Signed/DCO changes preserve validator
+  behavior, add deterministic formatter/lint fixes, and reconcile task schema compatibility without
+  weakening unknown-field rejection or finite bounds. Focused AR-1308 tests: 22 passed plus 1
+  subtest; Ruff format/check and mypy passed; schema validation passed; exact-main Coordination
+  verification 36274807110 succeeded at 932a91affb6876e9a4a22b3a0f019f2bd2d4dd6f. No
+  product/formal/asb-tui scope changed.
