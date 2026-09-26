@@ -11,7 +11,7 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #332 | `feature/ar-1453-frontend-orchestration-wiring@082b0624abe2` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: route ASB frontends through central orchestration |
-| #335 | `feature/ar-1332-record-live-replay-offline@97d9bbc3b6a9` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add explicit record-live replay-offline workflow |
+| #335 | `feature/ar-1332-record-live-replay-offline@97d9bbc3b6a9` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add explicit record-live replay-offline workflow |
 
 ## Recent workflows
 
@@ -24,7 +24,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36257756751 | `97d9bbc3b6a9` | pull_request | Fault assurance | completed:success |
 | 36257756737 | `97d9bbc3b6a9` | pull_request | Huawei MIT source headers | completed:success |
 | 36257756709 | `97d9bbc3b6a9` | pull_request | Hosted portability and native qualification | completed:success |
-| 36257756702 | `97d9bbc3b6a9` | pull_request | Repository quality | in_progress:- |
+| 36257756702 | `97d9bbc3b6a9` | pull_request | Repository quality | completed:failure |
 | 36255958468 | `28730b61572f` | push | Emulated aarch64 portability | completed:success |
 | 36255958451 | `28730b61572f` | push | Huawei MIT source headers | completed:success |
 | 36255958449 | `28730b61572f` | push | Repository quality | completed:success |
