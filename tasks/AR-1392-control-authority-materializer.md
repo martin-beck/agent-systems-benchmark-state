@@ -24,9 +24,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve private live authority from authenticated control enrollment without caller injection.",
-  "task_revision": 89,
+  "task_revision": 90,
   "title": "Control-owned private authority materializer",
-  "updated_at": "2026-09-26T23:18:16+00:00",
+  "updated_at": "2026-09-26T23:18:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1392-control-authority-materializer"
 }
 ---
@@ -320,3 +320,6 @@ reachability.
 - 2026-09-26T23:17:34+00:00: Heartbeat by coordinator-ar1392-control-materializer.
 
 - 2026-09-26T23:18:16+00:00: Heartbeat by coordinator-ar1392-control-materializer.
+
+- 2026-09-26T23:18:19+00:00: Recorded command exit 0; command argv SHA-256
+  603b3156771a6019000b9188b6d87d7b97a486296d9e3d228121b844763b2628.
