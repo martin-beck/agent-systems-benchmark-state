@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1329-live-provider-run-execution",
   "checkpoint_commit": "a336d6744b1a82f36a706ec606b847c92d49cfd3",
-  "claim_expires": "",
+  "claim_expires": "2026-09-26T21:10:04+00:00",
   "depends_on": [
     "AR-1327",
     "AR-1328",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1329-live-provider-run-execution",
   "observed_dirty": 0,
   "observed_head": "04b4c067055073031cd6d88cf18f0d158f488ad0",
-  "owner": "",
+  "owner": "coordinator-ar1329-local-completion",
   "plan": "../plans/AR-1329.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Qualify asb run and sweep through a mandatory deterministic local mock; retain optional fail-closed live integration.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Local-mock run execution with optional live-provider integration",
-  "updated_at": "2026-09-26T20:09:57+00:00",
+  "updated_at": "2026-09-26T20:10:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1329-live-provider-run-execution"
 }
 ---
@@ -221,3 +221,5 @@ reachability.
 - 2026-09-26T20:09:57+00:00: Local deterministic mock boundary is complete via AR-1433 and current
   first-customer qualification; external provider reachability is explicitly optional and cannot
   block this AR.
+
+- 2026-09-26T20:10:04+00:00: Claimed by coordinator-ar1329-local-completion.

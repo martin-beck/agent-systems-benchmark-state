@@ -125,11 +125,16 @@
 
 ## Complete AR inventory
 
-### Open (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md): Local-mock run execution with optional live-provider integration | Unclaimed | Qualify asb run and sweep through a mandatory deterministic local mock; retain optional fail-closed live integration. | Local deterministic mock run/sweep qualification is delivered by AR-1433 (PR #325, merge 2872a31f, all exact-main gates green). AR-1329 remains blocked only for optional production live-provider integration: an atomic runtime-owned LiveProviderRuntimeService must resolve pinned policy, enrolled credentials, attested namespace/relay, concrete egress target, ResourceLease, SandboxBackend, and one LiveProviderAttempt per scheduler attempt with cancellation teardown. Do not use external reachability as a CI gate; preserve NetworkPolicy::Deny and direct/alternate egress denial. AR-1446 may consume the local path without waiting for this optional boundary. |
+| P1 | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md): Local-mock run execution with optional live-provider integration | coordinator-ar1329-local-completion | Qualify asb run and sweep through a mandatory deterministic local mock; retain optional fail-closed live integration. | Local deterministic mock run/sweep qualification is delivered by AR-1433 (PR #325, merge 2872a31f, all exact-main gates green). AR-1329 remains blocked only for optional production live-provider integration: an atomic runtime-owned LiveProviderRuntimeService must resolve pinned policy, enrolled credentials, attested namespace/relay, concrete egress target, ResourceLease, SandboxBackend, and one LiveProviderAttempt per scheduler attempt with cancellation teardown. Do not use external reachability as a CI gate; preserve NetworkPolicy::Deny and direct/alternate egress denial. AR-1446 may consume the local path without waiting for this optional boundary. |
+
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
 ### Blocked (68)
