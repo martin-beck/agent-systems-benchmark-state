@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1455-runtime-owned-guided-replay-entrypoint",
-  "checkpoint_commit": "1b79609c3be59f31fb1d58655e8091da532ba0f4",
+  "checkpoint_commit": "e12a4111c29e219bf2cea921133bde8870e36d0f",
   "claim_expires": "2026-09-26T17:19:18+00:00",
   "depends_on": [
     "AR-1448",
@@ -9,7 +9,7 @@
     "AR-1453"
   ],
   "id": "AR-1455",
-  "next_action": "Run independent diff review and full mandatory local gates; then publish exact-head PR if all pass.",
+  "next_action": "Open exact-head PR for e12a411; independently review diff, then await 12 required checks and protected merge before post-merge gates.",
   "observed_branch": "feature/ar-1455-runtime-owned-guided-replay-entrypoint",
   "observed_dirty": 0,
   "observed_head": "e12a4111c29e219bf2cea921133bde8870e36d0f",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the runtime-owned guided local replay entrypoint needed by AR-1338.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Runtime-owned guided replay entrypoint",
-  "updated_at": "2026-09-26T15:28:34+00:00",
+  "updated_at": "2026-09-26T15:29:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1455-runtime-owned-guided-replay-entrypoint"
 }
 ---
@@ -127,3 +127,10 @@ lifecycle; the guided wrapper is only a bounded client.
 
 - 2026-09-26T15:28:34+00:00: Recorded command exit 0; command argv SHA-256
   ff6d1fa7a7185010f75fcfafe4bdc1bdd5b9804d8c2b3e7abdd8a1b96cd81c63.
+
+- 2026-09-26T15:29:05+00:00: Focused tests passed after implementation: cargo test -p asb-runtime -p
+  asb-cli --lib (asb-runtime 131 passed/1 ignored delegated capability; asb-cli 111 passed). cargo
+  fmt --all -- --check and cargo clippy --locked -p asb-runtime -p asb-cli --all-targets -- -D
+  warnings passed after fixing initial clippy result-unit-err failure with typed LocalReplayError.
+  Independent local diff review: no P1/P2 findings; both commits SSH-signed with matching DCO.
+  Branch pushed at exact head e12a4111c29e219bf2cea921133bde8870e36d0f.
