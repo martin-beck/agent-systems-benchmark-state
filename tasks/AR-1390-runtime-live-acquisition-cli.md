@@ -24,9 +24,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compose runtime-owned live provider acquisition and wire it into normal ASB run and sweep.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Runtime live acquisition and CLI bridge",
-  "updated_at": "2026-09-26T22:35:48+00:00",
+  "updated_at": "2026-09-26T22:36:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1390-runtime-live-acquisition-cli"
 }
 ---
@@ -90,3 +90,6 @@ reachability.
 
 - 2026-09-26T22:35:48+00:00: Recorded command exit 0; command argv SHA-256
   90fbc68c4f62416b7759de46bedef89b7f91624ee075900c3bcb2ec415868a12.
+
+- 2026-09-26T22:36:07+00:00: Recorded command exit 0; command argv SHA-256
+  ecab7acaea85899c89ac2eb533d546dda7146f21690aa0c8f37cd8323e44734a.
