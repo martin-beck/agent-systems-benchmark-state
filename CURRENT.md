@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1444](tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Make the complete install-to-comparison journey a cross-repository release qualification gate. | Blocked pending paired asb-tui AR-1327: obtain exact pinned acceptance revision/artifact and credential-free journey transcript, then rerun cross-repository qualification. | - |
+| P0 | [AR-1444](tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Make the complete install-to-comparison journey a cross-repository release qualification gate. | Blocked pending paired asb-tui AR-1327: obtain exact pinned acceptance revision/artifact and credential-free journey transcript, then rerun cross-repository qualification. | coordinator-ar1444-reclass |
 
 ## Blocked
 
