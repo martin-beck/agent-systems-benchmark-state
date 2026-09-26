@@ -6,15 +6,18 @@
   "depends_on": [],
   "id": "AR-1469",
   "next_action": "Promote and claim the topology repair, create the reviewed two-parent protected merge, and rerun all exact-head and post-merge gates.",
+  "observed_branch": "repair/ar-1469-ar1392-protected-topology-repair",
+  "observed_dirty": 0,
+  "observed_head": "78ab92bdb87645ac5567fb3341b1b0b73dba5029",
   "owner": "ar1332_record_replay_luna56",
   "plan": "../plans/AR-1469-ar1392-protected-topology-repair.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the single-parent protected merge for AR-1392 without changing its reviewed implementation.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "AR-1392 protected-main topology repair",
-  "updated_at": "2026-09-26T23:37:16+00:00",
+  "updated_at": "2026-09-26T23:37:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1469-ar1392-protected-topology-repair"
 }
 ---
