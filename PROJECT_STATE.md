@@ -11,14 +11,14 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #332 | `feature/ar-1453-frontend-orchestration-wiring@082b0624abe2` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: route ASB frontends through central orchestration |
-| #335 | `feature/ar-1332-record-live-replay-offline@97d9bbc3b6a9` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add explicit record-live replay-offline workflow |
+| #335 | `feature/ar-1332-record-live-replay-offline@97d9bbc3b6a9` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): add explicit record-live replay-offline workflow |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 36257756861 | `97d9bbc3b6a9` | pull_request | Rust verification | in_progress:- |
-| 36257756840 | `97d9bbc3b6a9` | pull_request | Formal assurance | in_progress:- |
+| 36257756840 | `97d9bbc3b6a9` | pull_request | Formal assurance | completed:success |
 | 36257756837 | `97d9bbc3b6a9` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36257756796 | `97d9bbc3b6a9` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 36257756751 | `97d9bbc3b6a9` | pull_request | Fault assurance | completed:success |
