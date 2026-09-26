@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows.",
-  "task_revision": 127,
+  "task_revision": 128,
   "title": "Guided ASB command wrapper",
-  "updated_at": "2026-09-26T16:16:05+00:00",
+  "updated_at": "2026-09-26T16:16:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1338-guided-asb-command-wrapper"
 }
 ---
@@ -377,3 +377,6 @@ reachability.
   asb-cli lib tests, focused test, clippy -p asb-cli all-targets -D warnings, fmt check, diff check.
   Branch base is exact 0bfea96; verified remote stale PR branch is exactly 4d42f598 before force
   update.
+
+- 2026-09-26T16:16:14+00:00: Recorded command exit 0; command argv SHA-256
+  9d87c96e3886e4d88beb58ded50c3391412da034293d3840ad98f5fa0e7f1f02.
