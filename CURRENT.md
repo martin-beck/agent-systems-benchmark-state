@@ -3,11 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1463](tasks/AR-1463-current-main-requalification-after-capture.md): Current-main first-customer requalification after capture integration | Requalify current protected main for first-customer production-like use after capture/replay integration. | Promote and qualify exact protected main after AR-1330 across the first-customer install, local/mock benchmark, capture/replay, recovery, privacy and release gates; publish no release unless all gates pass. | coordinator-ar1463-requal |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1463](tasks/AR-1463-current-main-requalification-after-capture.md): Current-main first-customer requalification after capture integration | Requalify current protected main for first-customer production-like use after capture/replay integration. | Promote and qualify exact protected main after AR-1330 across the first-customer install, local/mock benchmark, capture/replay, recovery, privacy and release gates; publish no release unless all gates pass. | - |
 | P2 | [AR-1444](tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. | - |
 
 ## Blocked
