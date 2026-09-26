@@ -121,7 +121,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md): Guided ASB command wrapper | ar1338-guided-wrapper-luna56 | Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows. | Verify all seven exact-main post-merge workflows for merge 28730b6; release AR-1338 only after every workflow is terminal SUCCESS and state doctor is clean. |
+| P1 | [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md): Guided ASB command wrapper | ar1338-guided-wrapper-luna56 | Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows. | Run state reconcile and live doctor, then release AR-1338 done with exact post-merge workflow evidence. |
 
 ### Blocked (69)
 

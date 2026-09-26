@@ -10,7 +10,7 @@
     "AR-1446"
   ],
   "id": "AR-1338",
-  "next_action": "Verify all seven exact-main post-merge workflows for merge 28730b6; release AR-1338 only after every workflow is terminal SUCCESS and state doctor is clean.",
+  "next_action": "Run state reconcile and live doctor, then release AR-1338 done with exact post-merge workflow evidence.",
   "observed_branch": "feature/ar-1338-guided-asb-command-wrapper",
   "observed_dirty": 0,
   "observed_head": "36d94ff1237cf0188b98ed1c969e3d40cd190b3f",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows.",
-  "task_revision": 156,
+  "task_revision": 157,
   "title": "Guided ASB command wrapper",
-  "updated_at": "2026-09-26T16:35:19+00:00",
+  "updated_at": "2026-09-26T16:43:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1338-guided-asb-command-wrapper"
 }
 ---
@@ -466,3 +466,8 @@ reachability.
 
 - 2026-09-26T16:35:19+00:00: PR #327 merged at 28730b61572f463e9cf1e6b5f1cf20fd198ef7e8 after all 12
   exact-head checks passed. Seven post-merge workflows started.
+
+- 2026-09-26T16:43:31+00:00: All seven exact-main post-merge workflows succeeded for 28730b6:
+  Repository quality 36255958449; Emulated aarch64 36255958468; Huawei headers 36255958451; Hosted
+  portability 36255958437; Fault assurance 36255958428; Formal assurance 36255958427; Rust
+  verification 36255958435.
