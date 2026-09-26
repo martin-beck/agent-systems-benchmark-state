@@ -14,11 +14,11 @@
   "plan": "../plans/AR-1456.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Local/mock multi-agent campaign successor",
-  "updated_at": "2026-09-26T19:40:20+02:00",
+  "updated_at": "2026-09-26T17:45:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1456-local-mock-multi-agent-campaign-successor"
 }
 ---
@@ -33,3 +33,6 @@ for local development, CI, or this AR's completion.
   completed ASB local campaign qualifications (AR-1437 and AR-1447) already
   prove the deterministic path while AR-1333 still incorrectly depends on the
   blocked optional live AR-1329.
+
+- 2026-09-26T17:45:13+00:00: Promote ASB-only local/mock multi-agent campaign successor; AR-1332,
+  AR-1433, and AR-1447 are done. AR-1329 remains optional live integration.
