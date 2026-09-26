@@ -22,11 +22,11 @@
   "plan": "../plans/AR-1392-control-authority-materializer.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Resolve private live authority from authenticated control enrollment without caller injection.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Control-owned private authority materializer",
-  "updated_at": "2026-09-24T07:46:33+00:00",
+  "updated_at": "2026-09-26T22:50:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1392-control-authority-materializer"
 }
 ---
@@ -60,3 +60,7 @@ and teardown, and fail-closed denial of unapproved external traffic remain requi
 contracts. Existing live-provider dependency edges describe production integration
 ordering only and must not be used to block local qualification or to claim external
 reachability.
+
+- 2026-09-26T22:50:12+00:00: AR-1371 is durably done and provides the owner-checked authenticated
+  authority injection; resume AR-1392 for the remaining control-side materializer/receipt-source
+  integration.
