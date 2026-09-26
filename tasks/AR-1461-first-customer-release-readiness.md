@@ -2,7 +2,7 @@
 {
   "branch": "release/ar-1461-first-customer-release-readiness",
   "checkpoint_commit": "36d4bdf35a644a36a8acfdb31078eb7f668a17c4",
-  "claim_expires": "2026-09-26T20:05:21+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1456",
     "AR-1460"
@@ -12,15 +12,15 @@
   "observed_branch": "release/ar-1461-first-customer-release-readiness",
   "observed_dirty": 0,
   "observed_head": "36d4bdf35a644a36a8acfdb31078eb7f668a17c4",
-  "owner": "coordinator-ar1461-release",
+  "owner": "",
   "plan": "../plans/AR-1461.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Prepare and publish the first-customer ASB release from the currently qualified main.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "First-customer release readiness and publication",
-  "updated_at": "2026-09-26T19:12:29+00:00",
+  "updated_at": "2026-09-26T19:12:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1461-first-customer-release-readiness"
 }
 ---
@@ -102,3 +102,12 @@ no gate may be weakened. No asb-tui or remote-provider dependency is added.
   is fail-closed. A narrowly scoped repair AR is required for pinned tool installation plus reviewed
   release/bundle/tag workflow; handoffctl exposes no task-create command, so no task file was
   fabricated.
+
+- 2026-09-26T19:12:37+00:00: AR-1461 publication blocked truthfully. Exact qualified main
+  36d4bdf35a644a36a8acfdb31078eb7f668a17c4 is clean and deterministic
+  build/format/Clippy/coverage/rustdoc/release-build gates pass, but required cargo-deny and
+  cargo-audit commands are absent (both exit 101), and repository lacks release tags, release
+  workflow, and checked-in bundle/SBOM/provenance packaging workflow. No release or tag was
+  published. Next action is a reviewed repair AR providing pinned supply-chain tools and an
+  established signed bundle/tag/publication workflow; no task file fabricated because handoffctl has
+  no create-task command.

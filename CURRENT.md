@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1461](tasks/AR-1461-first-customer-release-readiness.md): First-customer release readiness and publication | Prepare and publish the first-customer ASB release from the currently qualified main. | Create/execute a reviewed release-tooling repair: provide pinned cargo-deny and cargo-audit, establish the documented bundle/tag/publication workflow, then rerun exact-head release gates against 36d4bdf35a644a36a8acfdb31078eb7f668a17c4. | coordinator-ar1461-release |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -70,6 +64,7 @@ Never edit this file directly.
 | P0 | [AR-1391](tasks/AR-1391-runtime-control-bootstrap-constructor.md): Runtime control bootstrap constructor | Materialize authenticated runtime live authority into an opaque source without caller injection. | Claim the pre-bound isolated worktree, implement the runtime/control-owned authenticated bootstrap constructor, and publish a signed PR. | - |
 | P0 | [AR-1392](tasks/AR-1392-control-authority-materializer.md): Control-owned private authority materializer | Resolve private live authority from authenticated control enrollment without caller injection. | Claim the pre-bound isolated worktree, implement the control-owned private authority resolver required by AR-1391, and publish a signed PR. | - |
 | P0 | [AR-1432](tasks/AR-1432-local-openrouter-execution-bridge.md): Local OpenRouter execution bridge | Qualify credential-free OpenRouter user execution through a deterministic loopback mock without external-provider access. | Local deterministic mock-attempt backend is delivered by AR-1433 (PR #325, merge 2872a31f) and is no longer blocked for development qualification. Preserve this AR's remaining optional production live-bridge boundary: do not synthesize LiveProviderAttempt or weaken ProviderEgressTarget; runtime-owned relay/backend acquisition remains separately fail-closed. | - |
+| P0 | [AR-1461](tasks/AR-1461-first-customer-release-readiness.md): First-customer release readiness and publication | Prepare and publish the first-customer ASB release from the currently qualified main. | Create/execute a reviewed release-tooling repair: provide pinned cargo-deny and cargo-audit, establish the documented bundle/tag/publication workflow, then rerun exact-head release gates against 36d4bdf35a644a36a8acfdb31078eb7f668a17c4. | - |
 | P1 | [AR-0604](tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Obtain authorized native x86 runner and immutable CSB/Python evidence; rerun native_boundary and record A/B overhead. | - |
 | P1 | [AR-0814](tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Create successor AR for authenticated route/ancestor authority; preserve AR-1288 evidence and AR-0814 head 29cfa193. | - |
 | P1 | [AR-0832](tasks/AR-0832-aiws-runner-qualification.md): Qualify development host ASB runner operations | Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery. | Run repeated clean ASB jobs on every declared development host label and audit reset, isolation, architecture, and artifact provenance. | - |
