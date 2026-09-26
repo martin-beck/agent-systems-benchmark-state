@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Retire the obsolete pre-repair AR-1453 pull request without changing product code.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Retire superseded AR-1453 pull request",
-  "updated_at": "2026-09-26T18:34:55+00:00",
+  "updated_at": "2026-09-26T18:35:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1457-retire-superseded-pr-332"
 }
 ---
@@ -32,3 +32,6 @@ asb-tui, or release changes are in scope.
   obsolete PR #332.
 
 - 2026-09-26T18:34:55+00:00: Claimed by coordinator-ar1457-pr-cleanup.
+
+- 2026-09-26T18:35:11+00:00: Recorded command exit 0; command argv SHA-256
+  9e799162e677a0c54a6af38eefe58fa9a09113f496e12b8bca308ed26bbcc14f.
