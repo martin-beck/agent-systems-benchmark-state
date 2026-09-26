@@ -22,11 +22,11 @@
   "plan": "../plans/AR-1390-runtime-live-acquisition-cli.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Compose runtime-owned live provider acquisition and wire it into normal ASB run and sweep.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Runtime live acquisition and CLI bridge",
-  "updated_at": "2026-09-24T07:42:38+00:00",
+  "updated_at": "2026-09-26T22:34:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1390-runtime-live-acquisition-cli"
 }
 ---
@@ -74,3 +74,8 @@ and teardown, and fail-closed denial of unapproved external traffic remain requi
 contracts. Existing live-provider dependency edges describe production integration
 ordering only and must not be used to block local qualification or to claim external
 reachability.
+
+- 2026-09-26T22:34:55+00:00: Coordinator-authorized resume: all eight dependencies are done,
+  declared worktree is clean at 10bffbf015bd7ca78d8c0d18f04cf0190195e933, and the runtime-owned live
+  acquisition/CLI bridge is independently actionable with local/mock qualification only. Preserve
+  fail-closed authority and egress gates; no live provider, seed, or asb-tui.
