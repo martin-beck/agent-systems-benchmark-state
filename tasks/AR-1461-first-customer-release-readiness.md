@@ -2,7 +2,7 @@
 {
   "branch": "release/ar-1461-first-customer-release-readiness",
   "checkpoint_commit": "0a85123785c3e5e293fee02df757f494ac3423fe",
-  "claim_expires": "2026-09-26T21:57:17+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1456",
     "AR-1460"
@@ -12,15 +12,15 @@
   "observed_branch": "release/ar-1461-first-customer-release-readiness",
   "observed_dirty": 0,
   "observed_head": "0a85123785c3e5e293fee02df757f494ac3423fe",
-  "owner": "coordinator-ar1461-release",
+  "owner": "",
   "plan": "../plans/AR-1461.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Prepare and publish the first-customer ASB release from the currently qualified main.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "First-customer release readiness and publication",
-  "updated_at": "2026-09-26T20:06:11+00:00",
+  "updated_at": "2026-09-26T20:06:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1461-first-customer-release-readiness"
 }
 ---
@@ -184,3 +184,8 @@ no gate may be weakened. No asb-tui or remote-provider dependency is added.
   remote provider or asb-tui changes. One chained privacy command false-alarmed on intentional
   provenance key credentials:none; corrected absolute-path privacy scan passed. Historical exit-101
   records remain the pre-AR-1462 missing-tool evidence.
+
+- 2026-09-26T20:06:23+00:00: AR-1461 complete: exact-main 0a85123785c3e5e293fee02df757f494ac3423fe
+  qualified, tag v0.1.0 and public release published, archive
+  a4eaebdf422c5fa57f0bca182502416cc8c68aa08faf7588c622e953906c36ed freshly consumed with
+  checksum/SBOM/source-revision verification.

@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1461](tasks/AR-1461-first-customer-release-readiness.md): First-customer release readiness and publication | Prepare and publish the first-customer ASB release from the currently qualified main. | Release done after public tag/release and fresh consumption verification. | coordinator-ar1461-release |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -321,6 +315,7 @@ Never edit this file directly.
 | P0 | [AR-1455](tasks/AR-1455-runtime-owned-guided-replay-entrypoint.md): Runtime-owned guided replay entrypoint | Provide the runtime-owned guided local replay entrypoint needed by AR-1338. | Run state reconcile and live doctor, then release AR-1455 done with exact post-merge workflow evidence. | - |
 | P0 | [AR-1458](tasks/AR-1458-first-customer-requalification-after-orchestration.md): First-customer requalification after central orchestration | Requalify the first-customer production-like journey after central orchestration became authoritative. | Release done: exact protected-main requalification passed with credential-free local/mock and strict-replay evidence; no deterministic repair AR. | - |
 | P0 | [AR-1460](tasks/AR-1460-current-main-first-customer-requalification.md): Current-main first-customer requalification | Requalify first-customer readiness after the latest local-mock campaign merge. | Release done: current protected-main first-customer qualification passed with credential-free local/mock and strict-replay evidence; no deterministic repair AR. | - |
+| P0 | [AR-1461](tasks/AR-1461-first-customer-release-readiness.md): First-customer release readiness and publication | Prepare and publish the first-customer ASB release from the currently qualified main. | Release done after public tag/release and fresh consumption verification. | - |
 | P0 | [AR-1462](tasks/AR-1462-pinned-release-toolchain-bundle-workflow.md): Pinned release toolchain and first-customer bundle workflow | Establish reproducible supply-chain checks and first-customer release bundle publication workflow. | Release done after recording all seven green exact-main workflows. | - |
 | P1 | [AR-0002](tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. | - |
 | P1 | [AR-0003](tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. | - |
