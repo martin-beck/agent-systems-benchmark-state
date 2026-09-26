@@ -10,11 +10,11 @@
   "plan": "../plans/AR-1465-reviewed-seed-archival-recovery.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Follow-on recovery for the exact reviewed AR-1308 full-exhaustive seed, which is absent from current approved runner roots and Git objects.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Reviewed full-exhaustive seed archival recovery",
-  "updated_at": "2026-09-26T22:12:19+00:00",
+  "updated_at": "2026-09-26T22:18:18+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1465-reviewed-seed-archival-recovery"
 }
 ---
@@ -86,3 +86,6 @@ needed by AR-1308. It must not weaken formal gates or invent equivalent input.
   records host swap below 1 GiB; AR-1308 remains blocked. Next action: external operator supplies
   reviewed immutable seed bytes from an approved durable archive with exact digest and provenance;
   independently verify, bind to AR-1308, rerun signed preflight. Do not regenerate/substitute.
+
+- 2026-09-26T22:18:18+00:00: Exhaustive archival search is complete; reopen only to correct the
+  durable next action, not to bypass the missing exact seed.
