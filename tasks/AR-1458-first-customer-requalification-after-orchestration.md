@@ -10,15 +10,18 @@
   ],
   "id": "AR-1458",
   "next_action": "Promote and run the disposable first-customer install/configure/local-mock benchmark/strict-replay/recovery/cleanup qualification against the exact current protected main after the central orchestration merge; publish a privacy-safe readiness report or record any deterministic repair AR.",
+  "observed_branch": "qualification/ar-1458-first-customer-requalification-after-orchestration",
+  "observed_dirty": 0,
+  "observed_head": "ad4f96ab3f7e57916208406b2f56aa9ec4e54885",
   "owner": "coordinator-ar1458-requal",
   "plan": "../plans/AR-1458.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Requalify the first-customer production-like journey after central orchestration became authoritative.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "First-customer requalification after central orchestration",
-  "updated_at": "2026-09-26T18:37:43+00:00",
+  "updated_at": "2026-09-26T18:37:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1458-first-customer-requalification-after-orchestration"
 }
 ---
