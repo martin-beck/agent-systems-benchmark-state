@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1338-guided-asb-command-wrapper",
   "checkpoint_commit": "28730b61572f463e9cf1e6b5f1cf20fd198ef7e8",
-  "claim_expires": "2026-09-26T18:09:07+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1331",
     "AR-1442",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1338-guided-asb-command-wrapper",
   "observed_dirty": 0,
   "observed_head": "36d94ff1237cf0188b98ed1c969e3d40cd190b3f",
-  "owner": "ar1338-guided-wrapper-luna56",
+  "owner": "",
   "plan": "../plans/AR-1338.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows.",
-  "task_revision": 157,
+  "task_revision": 158,
   "title": "Guided ASB command wrapper",
-  "updated_at": "2026-09-26T16:43:31+00:00",
+  "updated_at": "2026-09-26T16:44:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1338-guided-asb-command-wrapper"
 }
 ---
@@ -471,3 +471,9 @@ reachability.
   Repository quality 36255958449; Emulated aarch64 36255958468; Huawei headers 36255958451; Hosted
   portability 36255958437; Fault assurance 36255958428; Formal assurance 36255958427; Rust
   verification 36255958435.
+
+- 2026-09-26T16:44:12+00:00: Released after merge 28730b61572f463e9cf1e6b5f1cf20fd198ef7e8 and all
+  seven exact-main post-merge workflows succeeded: Repository quality 36255958449; Emulated aarch64
+  36255958468; Huawei headers 36255958451; Hosted portability 36255958437; Fault assurance
+  36255958428; Formal assurance 36255958427; Rust verification 36255958435. Static doctor passed;
+  live doctor reports known self-referential WORKTREES.md staleness after state commits.
