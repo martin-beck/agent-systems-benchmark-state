@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1468-control-authority-materialization-successor",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-27T01:44:43+00:00",
+  "claim_expires": "2026-09-27T01:45:14+00:00",
   "depends_on": [
     "AR-1288",
     "AR-1362",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the control-owned authority materializer without the superseded AR-1369 dependency deadlock.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Control authority materialization successor",
-  "updated_at": "2026-09-26T22:44:43+00:00",
+  "updated_at": "2026-09-26T22:45:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1468-control-authority-materialization-successor"
 }
 ---
@@ -33,3 +33,5 @@ external provider access is optional and never a CI or completion requirement.
   begin implementation.
 
 - 2026-09-26T22:44:43+00:00: Claimed by coordinator-ar1468-authority-materialization.
+
+- 2026-09-26T22:45:14+00:00: Heartbeat by coordinator-ar1468-authority-materialization.
