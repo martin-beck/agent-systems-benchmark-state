@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1338](tasks/AR-1338-guided-asb-command-wrapper.md): Guided ASB command wrapper | Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows. | Merge PR #327 through the protected path now that all 12 exact-head checks are green; then verify seven exact-main post-merge workflows. | ar1338-guided-wrapper-luna56 |
+| P1 | [AR-1338](tasks/AR-1338-guided-asb-command-wrapper.md): Guided ASB command wrapper | Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows. | Verify all seven exact-main post-merge workflows for merge 28730b6; release AR-1338 only after every workflow is terminal SUCCESS and state doctor is clean. | ar1338-guided-wrapper-luna56 |
 
 ## Blocked
 

@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1338-guided-asb-command-wrapper",
-  "checkpoint_commit": "36d94ff1237cf0188b98ed1c969e3d40cd190b3f",
+  "checkpoint_commit": "28730b61572f463e9cf1e6b5f1cf20fd198ef7e8",
   "claim_expires": "2026-09-26T18:09:07+00:00",
   "depends_on": [
     "AR-1331",
@@ -10,7 +10,7 @@
     "AR-1446"
   ],
   "id": "AR-1338",
-  "next_action": "Merge PR #327 through the protected path now that all 12 exact-head checks are green; then verify seven exact-main post-merge workflows.",
+  "next_action": "Verify all seven exact-main post-merge workflows for merge 28730b6; release AR-1338 only after every workflow is terminal SUCCESS and state doctor is clean.",
   "observed_branch": "feature/ar-1338-guided-asb-command-wrapper",
   "observed_dirty": 0,
   "observed_head": "36d94ff1237cf0188b98ed1c969e3d40cd190b3f",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows.",
-  "task_revision": 155,
+  "task_revision": 156,
   "title": "Guided ASB command wrapper",
-  "updated_at": "2026-09-26T16:34:47+00:00",
+  "updated_at": "2026-09-26T16:35:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1338-guided-asb-command-wrapper"
 }
 ---
@@ -463,3 +463,6 @@ reachability.
 
 - 2026-09-26T16:34:47+00:00: Recorded command exit 0; command argv SHA-256
   ba12d3cc76e8c4e62e10ee800d0017a40fb764cb85add7088a4d6c353e15e1b9.
+
+- 2026-09-26T16:35:19+00:00: PR #327 merged at 28730b61572f463e9cf1e6b5f1cf20fd198ef7e8 after all 12
+  exact-head checks passed. Seven post-merge workflows started.
