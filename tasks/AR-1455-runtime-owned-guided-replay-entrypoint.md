@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1455-runtime-owned-guided-replay-entrypoint",
   "checkpoint_commit": "0bfea96fcac83998b42ac8ae5afb8764d175369d",
-  "claim_expires": "2026-09-26T18:00:51+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1448",
     "AR-1450",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1455-runtime-owned-guided-replay-entrypoint",
   "observed_dirty": 0,
   "observed_head": "d7a08e391fce78ee52811dc4e41fb3f6ed77413f",
-  "owner": "ar1455-guided-replay-review-luna56",
+  "owner": "",
   "plan": "../plans/AR-1455-runtime-owned-guided-replay-entrypoint.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Provide the runtime-owned guided local replay entrypoint needed by AR-1338.",
-  "task_revision": 91,
+  "task_revision": 92,
   "title": "Runtime-owned guided replay entrypoint",
-  "updated_at": "2026-09-26T16:06:53+00:00",
+  "updated_at": "2026-09-26T16:08:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1455-runtime-owned-guided-replay-entrypoint"
 }
 ---
@@ -293,3 +293,9 @@ lifecycle; the guided wrapper is only a bounded client.
   Repository quality 36253771470; Emulated aarch64 36253771461; Huawei headers 36253771522; Hosted
   portability 36253771492; Fault assurance 36253771499; Formal assurance 36253771494; Rust
   verification 36253771525.
+
+- 2026-09-26T16:08:27+00:00: Released after merge 0bfea96fcac83998b42ac8ae5afb8764d175369d and all
+  seven exact-main post-merge workflows succeeded: Repository quality 36253771470; Emulated aarch64
+  36253771461; Huawei headers 36253771522; Hosted portability 36253771492; Fault assurance
+  36253771499; Formal assurance 36253771494; Rust verification 36253771525. Static doctor passed;
+  live doctor reports known self-referential WORKTREES.md staleness after state commits.
