@@ -14,11 +14,11 @@
   "plan": "../plans/AR-1333.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Run the multi-agent by workload benchmark campaign with per-tuple evidence and offline replay.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Multi-agent by workload benchmark campaign",
-  "updated_at": "2026-09-22T13:39:37+00:00",
+  "updated_at": "2026-09-26T20:44:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1333-multi-agent-workload-campaign"
 }
 ---
@@ -42,3 +42,6 @@ and teardown, and fail-closed denial of unapproved external traffic remain requi
 contracts. Existing live-provider dependency edges describe production integration
 ordering only and must not be used to block local qualification or to claim external
 reachability.
+
+- 2026-09-26T20:44:52+00:00: Mandatory local/mock campaign is complete through AR-1456; retain no
+  live-provider requirement and retire the duplicate optional campaign AR.
