@@ -130,7 +130,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1461](../tasks/AR-1461-first-customer-release-readiness.md): First-customer release readiness and publication | coordinator-ar1461-release | Prepare and publish the first-customer ASB release from the currently qualified main. | Create/execute a reviewed release-tooling repair: provide pinned cargo-deny and cargo-audit, establish the documented bundle/tag/publication workflow, then rerun exact-head release gates against 36d4bdf35a644a36a8acfdb31078eb7f668a17c4. |
+| P0 | [AR-1461](../tasks/AR-1461-first-customer-release-readiness.md): First-customer release readiness and publication | coordinator-ar1461-release | Prepare and publish the first-customer ASB release from the currently qualified main. | Release done after public tag/release and fresh consumption verification. |
 
 ### Open (1)
 

@@ -1,14 +1,14 @@
 ---
 {
   "branch": "release/ar-1461-first-customer-release-readiness",
-  "checkpoint_commit": "36d4bdf35a644a36a8acfdb31078eb7f668a17c4",
+  "checkpoint_commit": "0a85123785c3e5e293fee02df757f494ac3423fe",
   "claim_expires": "2026-09-26T21:57:17+00:00",
   "depends_on": [
     "AR-1456",
     "AR-1460"
   ],
   "id": "AR-1461",
-  "next_action": "Create/execute a reviewed release-tooling repair: provide pinned cargo-deny and cargo-audit, establish the documented bundle/tag/publication workflow, then rerun exact-head release gates against 36d4bdf35a644a36a8acfdb31078eb7f668a17c4.",
+  "next_action": "Release done after public tag/release and fresh consumption verification.",
   "observed_branch": "release/ar-1461-first-customer-release-readiness",
   "observed_dirty": 0,
   "observed_head": "0a85123785c3e5e293fee02df757f494ac3423fe",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prepare and publish the first-customer ASB release from the currently qualified main.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "First-customer release readiness and publication",
-  "updated_at": "2026-09-26T20:05:37+00:00",
+  "updated_at": "2026-09-26T20:06:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1461-first-customer-release-readiness"
 }
 ---
@@ -169,3 +169,18 @@ no gate may be weakened. No asb-tui or remote-provider dependency is added.
 
 - 2026-09-26T20:05:37+00:00: Recorded command exit 0; command argv SHA-256
   af0ee60cbe5953bea27e0c28608c49b341f193a0e9f4ada9f451ac91b0887ce0.
+
+- 2026-09-26T20:06:11+00:00: Resumed against exact protected origin/main
+  0a85123785c3e5e293fee02df757f494ac3423fe after AR-1462. Full gates passed: cargo fmt --all --
+  --check; cargo clippy --locked --workspace --all-targets -- -D warnings; cargo test --locked
+  --workspace; RUSTDOCFLAGS=-D warnings cargo doc --locked --workspace --no-deps; cargo build
+  --locked --workspace --release; coverage (all required matrix/floors); source-header policy;
+  pinned offline cargo-deny 0.20.2 and cargo-audit 0.22.2 with exact digests. Generated
+  unsigned-release bundle manifest with SPDX/CycloneDX SBOM, provenance, and SHA256SUMS; archive
+  SHA256 a4eaebdf422c5fa57f0bca182502416cc8c68aa08faf7588c622e953906c36ed. Created and pushed tag
+  v0.1.0 at exact main, published non-draft GitHub release
+  https://github.com/martin-beck/agent-systems-benchmark/releases/tag/v0.1.0, and freshly
+  downloaded/extracted asset with all checksums and source_revision/profile assertions passing. No
+  remote provider or asb-tui changes. One chained privacy command false-alarmed on intentional
+  provenance key credentials:none; corrected absolute-path privacy scan passed. Historical exit-101
+  records remain the pre-AR-1462 missing-tool evidence.
