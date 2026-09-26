@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1332-record-live-replay-offline",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "705f0c807dc7fb02dff5e488a7af296cbe79e344",
   "claim_expires": "2026-09-26T18:59:55+00:00",
   "depends_on": [
     "AR-1331"
   ],
   "id": "AR-1332",
-  "next_action": "Add the record-live then replay-offline CLI workflow that seals cassettes from an opt-in live run and replays them strictly offline without provider fallback.",
+  "next_action": "Obtain independent review, then run exact-head CI and protected-main publication gates.",
   "observed_branch": "feature/ar-1332-record-live-replay-offline",
   "observed_dirty": 0,
   "observed_head": "705f0c807dc7fb02dff5e488a7af296cbe79e344",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the record-live then replay-offline end-to-end CLI workflow.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Record-live to replay-offline workflow",
-  "updated_at": "2026-09-26T16:59:55+00:00",
+  "updated_at": "2026-09-26T16:59:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1332-record-live-replay-offline"
 }
 ---
@@ -132,3 +132,9 @@ reachability.
   a6a5efdb86c85189ff80d01586394470aa8cf22450cb65e795bbb78f2ea3af7e.
 
 - 2026-09-26T16:59:55+00:00: Heartbeat by ar1332-record-replay-luna56.
+
+- 2026-09-26T16:59:58+00:00: Implementation commit 705f0c8 is SSH-signed with matching DCO. Added
+  explicit record-live --local-mock --confirm-record and authority-bound replay-offline aliases,
+  hostile tests, docs, and refreshed CLI provenance. Focused tests, guide_examples, workflow
+  transcript/provenance, workspace tests, fmt, and clippy passed. Await independent review and
+  exact-head CI.
