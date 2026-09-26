@@ -11,16 +11,16 @@
   "next_action": "Create/execute a reviewed release-tooling repair: provide pinned cargo-deny and cargo-audit, establish the documented bundle/tag/publication workflow, then rerun exact-head release gates against 36d4bdf35a644a36a8acfdb31078eb7f668a17c4.",
   "observed_branch": "release/ar-1461-first-customer-release-readiness",
   "observed_dirty": 0,
-  "observed_head": "36d4bdf35a644a36a8acfdb31078eb7f668a17c4",
+  "observed_head": "0a85123785c3e5e293fee02df757f494ac3423fe",
   "owner": "coordinator-ar1461-release",
   "plan": "../plans/AR-1461.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prepare and publish the first-customer ASB release from the currently qualified main.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "First-customer release readiness and publication",
-  "updated_at": "2026-09-26T19:57:47+00:00",
+  "updated_at": "2026-09-26T19:57:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1461-first-customer-release-readiness"
 }
 ---
