@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 530,
+  "task_revision": 531,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-26T18:51:06+00:00",
+  "updated_at": "2026-09-26T18:51:09+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1595,3 +1595,6 @@ must report `qualification_authorized: false`.
 - 2026-09-26T18:50:43+00:00: Claimed by coordinator-ar1308-preflight.
 
 - 2026-09-26T18:51:06+00:00: Heartbeat by coordinator-ar1308-preflight.
+
+- 2026-09-26T18:51:09+00:00: Recorded command exit 0; command argv SHA-256
+  56fc20b745597869b6079538c2ce4f8c8e81575664f4e107ac98e15a5ef7bb3d.
