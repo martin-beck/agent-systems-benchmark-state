@@ -11,18 +11,18 @@
   ],
   "id": "AR-1338",
   "next_action": "PR #327 head 4d42f59 has green exact-head hosted checks and complete local gates. AR-1449 and AR-1450 audits both confirmed the remaining P1: AR-1448 lacks a runtime-owned provisioning entrypoint, so ordinary CLI easy replay cannot safely acquire authority. Keep PR unmerged and do not weaken fail-closed replay; promote a reviewed runtime provisioning design before integrating and rerunning gates.",
-  "observed_branch": "DETACHED",
-  "observed_dirty": 3,
-  "observed_head": "c72a0a1ea5837625443b429e1196f457956da6f7",
+  "observed_branch": "feature/ar-1338-guided-asb-command-wrapper",
+  "observed_dirty": 0,
+  "observed_head": "f94013b8de1e524b61164b8832c6cf64cacc7af9",
   "owner": "ar1338-guided-wrapper-luna56",
   "plan": "../plans/AR-1338.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows.",
-  "task_revision": 108,
+  "task_revision": 109,
   "title": "Guided ASB command wrapper",
-  "updated_at": "2026-09-26T16:10:39+00:00",
+  "updated_at": "2026-09-26T16:10:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1338-guided-asb-command-wrapper"
 }
 ---
