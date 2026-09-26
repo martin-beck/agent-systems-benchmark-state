@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the current state branch's deterministic formatting failure without changing validator behavior.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "State CI formatting repair",
-  "updated_at": "2026-09-26T21:47:29+00:00",
+  "updated_at": "2026-09-26T21:47:49+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1466-state-ci-format-repair"
 }
 ---
@@ -29,3 +29,6 @@ reports `tools/validate_ar1308_capacity.py` as the only unformatted file.
 
 - 2026-09-26T21:47:29+00:00: Recorded command exit 0; command argv SHA-256
   d8bbfec3e5af51fb6711a1bf0789cc7d6f19b61722c746b2ab0fda371f655527.
+
+- 2026-09-26T21:47:49+00:00: Recorded command exit 0; command argv SHA-256
+  5fee026f8e9a7f506fee8acb40e6d7ba17ca1871cd06c4470eab260e3070f672.
