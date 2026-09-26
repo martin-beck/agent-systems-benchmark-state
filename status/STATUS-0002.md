@@ -122,7 +122,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md): Local/mock multi-agent campaign successor | ar1456-local-campaign-luna56 | Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution. | Rerun failed Rust workflow 36261183708 at unchanged exact head f4b03611; require terminal SUCCESS plus remaining workflows before merge. |
+| P1 | [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md): Local/mock multi-agent campaign successor | ar1456-local-campaign-luna56 | Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution. | Retry gh run rerun 36261183708 --failed through handoffctl after lock release; monitor rerun and remaining exact-head checks. |
 
 ### Open (1)
 

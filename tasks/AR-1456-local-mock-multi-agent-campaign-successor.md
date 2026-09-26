@@ -9,7 +9,7 @@
     "AR-1447"
   ],
   "id": "AR-1456",
-  "next_action": "Rerun failed Rust workflow 36261183708 at unchanged exact head f4b03611; require terminal SUCCESS plus remaining workflows before merge.",
+  "next_action": "Retry gh run rerun 36261183708 --failed through handoffctl after lock release; monitor rerun and remaining exact-head checks.",
   "observed_branch": "feature/ar-1456-local-mock-multi-agent-campaign-successor",
   "observed_dirty": 0,
   "observed_head": "f4b03611afb70cb6b6abc7ff95ae16815822891a",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution.",
-  "task_revision": 75,
+  "task_revision": 76,
   "title": "Local/mock multi-agent campaign successor",
-  "updated_at": "2026-09-26T18:08:29+00:00",
+  "updated_at": "2026-09-26T18:08:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1456-local-mock-multi-agent-campaign-successor"
 }
 ---
@@ -278,3 +278,10 @@ for local development, CI, or this AR's completion.
 
 - 2026-09-26T18:08:29+00:00: Recorded command exit 0; command argv SHA-256
   87c9afe463d6a23d85c7332e25fe9f377d93d56125a292665cd2b05a07233036.
+
+- 2026-09-26T18:08:55+00:00: Focused reproduction with correct target selection passed: `cargo test
+  ... -p asb-cli --lib
+  control::tests::production_backend_runs_without_frontend_and_recovers_idempotency -- --exact
+  --nocapture` => 1/1. An earlier filter omitted `--lib` and ran 0 tests (exit 0), not treated as
+  evidence. Exact-head workflow rerun command `gh run rerun 36261183708 --failed` was blocked by
+  handoffctl shared-lock timeout after 10s and did not mutate GitHub; retry required.
