@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1455](tasks/AR-1455-runtime-owned-guided-replay-entrypoint.md): Runtime-owned guided replay entrypoint | Provide the runtime-owned guided local replay entrypoint needed by AR-1338. | Audit complete: current main has easy run/sweep local-mock path but it bypasses central orchestration and strict replay; implement runtime-owned guided replay entrypoint using control service/runtime authority, with negative and lifecycle tests before PR. | ar1455-guided-replay-review-luna56 |
+| P0 | [AR-1455](tasks/AR-1455-runtime-owned-guided-replay-entrypoint.md): Runtime-owned guided replay entrypoint | Provide the runtime-owned guided local replay entrypoint needed by AR-1338. | Run independent diff review and full mandatory local gates; then publish exact-head PR if all pass. | ar1455-guided-replay-review-luna56 |
 
 ## Open
 

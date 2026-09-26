@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1455-runtime-owned-guided-replay-entrypoint",
-  "checkpoint_commit": "23b2fb5f241934168131efe6cd5173d5d316a857",
+  "checkpoint_commit": "1b79609c3be59f31fb1d58655e8091da532ba0f4",
   "claim_expires": "2026-09-26T17:19:18+00:00",
   "depends_on": [
     "AR-1448",
@@ -9,7 +9,7 @@
     "AR-1453"
   ],
   "id": "AR-1455",
-  "next_action": "Audit complete: current main has easy run/sweep local-mock path but it bypasses central orchestration and strict replay; implement runtime-owned guided replay entrypoint using control service/runtime authority, with negative and lifecycle tests before PR.",
+  "next_action": "Run independent diff review and full mandatory local gates; then publish exact-head PR if all pass.",
   "observed_branch": "feature/ar-1455-runtime-owned-guided-replay-entrypoint",
   "observed_dirty": 0,
   "observed_head": "1b79609c3be59f31fb1d58655e8091da532ba0f4",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the runtime-owned guided local replay entrypoint needed by AR-1338.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Runtime-owned guided replay entrypoint",
-  "updated_at": "2026-09-26T15:25:03+00:00",
+  "updated_at": "2026-09-26T15:25:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1455-runtime-owned-guided-replay-entrypoint"
 }
 ---
@@ -95,3 +95,8 @@ lifecycle; the guided wrapper is only a bounded client.
 
 - 2026-09-26T15:25:03+00:00: Recorded command exit 0; command argv SHA-256
   977b3517652c6eb7399d09b1f90a213dc88b5616afda7d27f3a88542e2562c3d.
+
+- 2026-09-26T15:25:43+00:00: Implementation commit 1b79609 is signed+DCO. Added runtime-owned
+  guided_replay::execute_local_strict_replay with regular-file/size/digest validation and no
+  provider fallback; central asb-cli PlanAuthoritySource now delegates strict replay to it. Focused
+  tests passed: asb-runtime 131 passed/1 ignored delegated capability; asb-cli 111 passed.
