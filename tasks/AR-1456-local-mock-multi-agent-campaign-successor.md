@@ -11,7 +11,7 @@
   "id": "AR-1456",
   "next_action": "Rerun cargo fmt --all check, then full asb-cli offline tests and provenance/privacy gates; independently review and sign commit.",
   "observed_branch": "DETACHED",
-  "observed_dirty": 2,
+  "observed_dirty": 3,
   "observed_head": "28730b61572f463e9cf1e6b5f1cf20fd198ef7e8",
   "owner": "ar1456-local-campaign-luna56",
   "plan": "../plans/AR-1456.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Local/mock multi-agent campaign successor",
-  "updated_at": "2026-09-26T17:53:11+00:00",
+  "updated_at": "2026-09-26T17:53:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1456-local-mock-multi-agent-campaign-successor"
 }
 ---
