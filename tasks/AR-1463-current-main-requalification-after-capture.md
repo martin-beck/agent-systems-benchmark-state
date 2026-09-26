@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Requalify current protected main for first-customer production-like use after capture/replay integration.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Current-main first-customer requalification after capture integration",
-  "updated_at": "2026-09-26T20:53:06+00:00",
+  "updated_at": "2026-09-26T20:53:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1463-current-main-requalification-after-capture"
 }
 ---
@@ -67,3 +67,6 @@ required. Any release decision must remain fail-closed and exact-head bound.
 
 - 2026-09-26T20:53:06+00:00: Recorded command exit 0; command argv SHA-256
   f87a67bde50298a74ae4792b80439510a590dc0e09c5a89367566c896ccea7ae.
+
+- 2026-09-26T20:53:38+00:00: Recorded command exit 0; command argv SHA-256
+  18d00fc6101ee5d875113b525b19360d83ad223b1702bc53e4fc0d7f7c6448f7.
