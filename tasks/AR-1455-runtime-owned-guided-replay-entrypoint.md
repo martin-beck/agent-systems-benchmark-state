@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1455-runtime-owned-guided-replay-entrypoint",
-  "checkpoint_commit": "43eaa298272ec2e615ae6c09b67ac459846ef65d",
+  "checkpoint_commit": "d7a08e391fce78ee52811dc4e41fb3f6ed77413f",
   "claim_expires": "2026-09-26T17:40:53+00:00",
   "depends_on": [
     "AR-1448",
@@ -9,7 +9,7 @@
     "AR-1453"
   ],
   "id": "AR-1455",
-  "next_action": "Monitor PR #334 exact head 43eaa29 checks; independent diff remains clean. Do not merge until all 12 required checks green.",
+  "next_action": "Monitor PR #334 rerun at d7a08e3; all required checks must be green before merge.",
   "observed_branch": "feature/ar-1455-runtime-owned-guided-replay-entrypoint",
   "observed_dirty": 0,
   "observed_head": "d7a08e391fce78ee52811dc4e41fb3f6ed77413f",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the runtime-owned guided local replay entrypoint needed by AR-1338.",
-  "task_revision": 81,
+  "task_revision": 82,
   "title": "Runtime-owned guided replay entrypoint",
-  "updated_at": "2026-09-26T15:48:06+00:00",
+  "updated_at": "2026-09-26T15:48:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1455-runtime-owned-guided-replay-entrypoint"
 }
 ---
@@ -259,3 +259,11 @@ lifecycle; the guided wrapper is only a bounded client.
 
 - 2026-09-26T15:48:06+00:00: Recorded command exit 0; command argv SHA-256
   29f6fa6fcf7754f7e6bb8e85c0133da62f1b54fe603e32b59ff469f1f330b9fe.
+
+- 2026-09-26T15:48:33+00:00: Repository quality failure reproduced locally in both normal and cargo
+  llvm-cov focused runs: pinned current test executable produced ToolMismatch in
+  bounded_tool_boundary_covers_success_denial_timeout_and_cleanup. Replaced coverage-sensitive
+  current_exe harness fixture with a private bounded shell fixture serving --list, success, and
+  timeout cases; assert_clean excludes only this named fixture while still requiring all staged
+  sidecars removed. Focused normal test passed 5/5; coverage-instrumented focused test passed.
+  Signed+DCO d7a08e3 pushed; remote exact head verified.
