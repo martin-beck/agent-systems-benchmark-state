@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1461.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Prepare and publish the first-customer ASB release from the currently qualified main.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "First-customer release readiness and publication",
-  "updated_at": "2026-09-26T20:35:00+00:00",
+  "updated_at": "2026-09-26T19:05:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1461-first-customer-release-readiness"
 }
 ---
@@ -29,3 +29,6 @@ reproducible bundle, run the established source, privacy, formal, supply-chain
 and artifact checks, and publish only through the documented release workflow.
 External signing authority is optional where the established workflow permits;
 no gate may be weakened. No asb-tui or remote-provider dependency is added.
+
+- 2026-09-26T19:05:18+00:00: Current-main AR-1460 qualification is green at exact 36d4bdf; audit
+  established release workflow before publication.
