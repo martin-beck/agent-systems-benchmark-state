@@ -19,8 +19,8 @@ Generated from local Git and GitHub. Do not edit.
 | 36269743068 | `01b70e87ce8e` | push | Formal assurance | in_progress:- |
 | 36269743060 | `01b70e87ce8e` | push | Rust verification | in_progress:- |
 | 36269743049 | `01b70e87ce8e` | push | Repository quality | in_progress:- |
-| 36269743033 | `01b70e87ce8e` | push | Hosted portability and native qualification | in_progress:- |
-| 36269743013 | `01b70e87ce8e` | push | Fault assurance | in_progress:- |
+| 36269743033 | `01b70e87ce8e` | push | Hosted portability and native qualification | completed:success |
+| 36269743013 | `01b70e87ce8e` | push | Fault assurance | completed:success |
 | 36269742977 | `01b70e87ce8e` | push | Huawei MIT source headers | completed:success |
 | 36269130403 | `8242efe50f4d` | pull_request | Fault assurance | completed:success |
 | 36269130351 | `8242efe50f4d` | pull_request | Huawei MIT source headers | completed:success |
