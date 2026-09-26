@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| P1 | [AR-0855](../tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | Unclaimed | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Complete; no further action. |
 | P1 | [AR-0857](../tasks/AR-0857-openjiuwen-provenance.md): Pin OpenJiuwen source, package, and license provenance | Unclaimed | Pin OpenJiuwen source, package, and license provenance. | Integrate signed no-ff PR #97 onto current main, then run and verify all exact-main post-merge workflows before release. |
 | P1 | [AR-0858](../tasks/AR-0858-openjiuwen-adapter.md): Implement the OpenJiuwen contract and capability adapter | Unclaimed | Implement the OpenJiuwen contract and capability adapter. | Monitor all required post-merge CI runs for exact main 096dc4f275c05ad81772f443b6f22dddfb92da3d; release only after every required gate is green. |
 | P1 | [AR-0859](../tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Unclaimed | Qualify pinned OpenJiuwen live execution. | No further action; live qualification and protected-main recovery are complete. |
