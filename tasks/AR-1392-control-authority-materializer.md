@@ -17,16 +17,16 @@
   "next_action": "Publish signed PR from reviewed exact head; require exact-head CI before merge.",
   "observed_branch": "feature/ar-1392-control-authority-materializer",
   "observed_dirty": 0,
-  "observed_head": "739b67d9888e8aced90a13cab79fb67291b297de",
+  "observed_head": "78ab92bdb87645ac5567fb3341b1b0b73dba5029",
   "owner": "coordinator-ar1392-control-materializer",
   "plan": "../plans/AR-1392-control-authority-materializer.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve private live authority from authenticated control enrollment without caller injection.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Control-owned private authority materializer",
-  "updated_at": "2026-09-26T23:04:32+00:00",
+  "updated_at": "2026-09-26T23:04:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1392-control-authority-materializer"
 }
 ---
