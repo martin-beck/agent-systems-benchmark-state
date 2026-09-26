@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1460](tasks/AR-1460-current-main-first-customer-requalification.md): Current-main first-customer requalification | Requalify first-customer readiness after the latest local-mock campaign merge. | Release done: current protected-main first-customer qualification passed with credential-free local/mock and strict-replay evidence; no deterministic repair AR. | coordinator-ar1460-current-main |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -320,6 +314,7 @@ Never edit this file directly.
 | P0 | [AR-1454](tasks/AR-1454-protected-main-tree-repair-runtime-replay.md): Protected-main tree-equality repair for runtime replay | Repair the protected-main tree mismatch after the runtime replay merge. | Post-merge verification complete: all seven workflows succeeded; release AR-1454 and propagate repair evidence to AR-1450. | - |
 | P0 | [AR-1455](tasks/AR-1455-runtime-owned-guided-replay-entrypoint.md): Runtime-owned guided replay entrypoint | Provide the runtime-owned guided local replay entrypoint needed by AR-1338. | Run state reconcile and live doctor, then release AR-1455 done with exact post-merge workflow evidence. | - |
 | P0 | [AR-1458](tasks/AR-1458-first-customer-requalification-after-orchestration.md): First-customer requalification after central orchestration | Requalify the first-customer production-like journey after central orchestration became authoritative. | Release done: exact protected-main requalification passed with credential-free local/mock and strict-replay evidence; no deterministic repair AR. | - |
+| P0 | [AR-1460](tasks/AR-1460-current-main-first-customer-requalification.md): Current-main first-customer requalification | Requalify first-customer readiness after the latest local-mock campaign merge. | Release done: current protected-main first-customer qualification passed with credential-free local/mock and strict-replay evidence; no deterministic repair AR. | - |
 | P1 | [AR-0002](tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. | - |
 | P1 | [AR-0003](tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. | - |
 | P1 | [AR-0004](tasks/AR-0004-ar-status-document.md): Generate the visual AR status document | Render every AR, status, and dependency as an accessible visual state document. | Await independent immutable-head review of state PR 3 at eedd311; repair findings before coordinator integration. | - |

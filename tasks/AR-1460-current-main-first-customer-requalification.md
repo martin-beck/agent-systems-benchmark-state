@@ -2,7 +2,7 @@
 {
   "branch": "qualification/ar-1460-current-main-first-customer-requalification",
   "checkpoint_commit": "36d4bdf35a644a36a8acfdb31078eb7f668a17c4",
-  "claim_expires": "2026-09-26T20:57:20+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1456",
     "AR-1458"
@@ -12,15 +12,15 @@
   "observed_branch": "qualification/ar-1460-current-main-first-customer-requalification",
   "observed_dirty": 0,
   "observed_head": "36d4bdf35a644a36a8acfdb31078eb7f668a17c4",
-  "owner": "coordinator-ar1460-current-main",
+  "owner": "",
   "plan": "../plans/AR-1460.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Requalify first-customer readiness after the latest local-mock campaign merge.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Current-main first-customer requalification",
-  "updated_at": "2026-09-26T19:04:10+00:00",
+  "updated_at": "2026-09-26T19:04:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1460-current-main-first-customer-requalification"
 }
 ---
@@ -107,3 +107,10 @@ narrow repair AR; no release claim is made from stale evidence.
   warnings; env RUSTDOCFLAGS=-D warnings cargo doc --locked --workspace --no-deps; cargo build
   --locked --workspace --release; final worktree clean at exact head. No remote provider contacted,
   no asb-tui changes, no deterministic failure, no repair AR required.
+
+- 2026-09-26T19:04:17+00:00: AR-1460 complete: exact protected-main
+  36d4bdf35a644a36a8acfdb31078eb7f668a17c4 first-customer ASB-only requalification passed in a clean
+  isolated worktree. Local/mock multi-agent and literature paths, strict offline replay,
+  cancellation/restart, cleanup/privacy, focused/full workspace tests, formatting, Clippy, rustdoc,
+  and release build all passed. No remote provider contacted; no asb-tui changes; no deterministic
+  repair AR required.
