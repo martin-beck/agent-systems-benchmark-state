@@ -24,9 +24,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compose runtime-owned live provider acquisition and wire it into normal ASB run and sweep.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Runtime live acquisition and CLI bridge",
-  "updated_at": "2026-09-26T22:35:00+00:00",
+  "updated_at": "2026-09-26T22:35:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1390-runtime-live-acquisition-cli"
 }
 ---
@@ -81,3 +81,6 @@ reachability.
   fail-closed authority and egress gates; no live provider, seed, or asb-tui.
 
 - 2026-09-26T22:35:00+00:00: Claimed by coordinator-ar1390-live-acquisition-luna56.
+
+- 2026-09-26T22:35:08+00:00: Recorded command exit 0; command argv SHA-256
+  1737fad3cccac8e5a54da248e3711496dab03a0533c65152f0e9a3402137c8ff.
