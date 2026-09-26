@@ -10,19 +10,19 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #337 | `release/ar-1462-pinned-release-toolchain-bundle-workflow@52c5108a17fc` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | AR-1462: pinned offline release tooling and bundle workflow |
+| #337 | `release/ar-1462-pinned-release-toolchain-bundle-workflow@52c5108a17fc` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | AR-1462: pinned offline release tooling and bundle workflow |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36266426609 | `52c5108a17fc` | pull_request | Emulated aarch64 portability | pending:- |
-| 36266426587 | `52c5108a17fc` | pull_request | Repository quality | in_progress:- |
+| 36266426609 | `52c5108a17fc` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 36266426587 | `52c5108a17fc` | pull_request | Repository quality | completed:failure |
 | 36266426586 | `52c5108a17fc` | pull_request | Agent Workflow Quality shadow | in_progress:- |
-| 36266426566 | `52c5108a17fc` | pull_request | Rust verification | pending:- |
-| 36266426561 | `52c5108a17fc` | pull_request | Formal assurance | pending:- |
-| 36266426542 | `52c5108a17fc` | pull_request | Huawei MIT source headers | in_progress:- |
-| 36266426510 | `52c5108a17fc` | pull_request | Fault assurance | pending:- |
+| 36266426566 | `52c5108a17fc` | pull_request | Rust verification | in_progress:- |
+| 36266426561 | `52c5108a17fc` | pull_request | Formal assurance | in_progress:- |
+| 36266426542 | `52c5108a17fc` | pull_request | Huawei MIT source headers | completed:success |
+| 36266426510 | `52c5108a17fc` | pull_request | Fault assurance | in_progress:- |
 | 36266426497 | `52c5108a17fc` | pull_request | Hosted portability and native qualification | in_progress:- |
 | 36266325369 | `b8dcc57b648d` | pull_request | Hosted portability and native qualification | completed:success |
 | 36266325126 | `b8dcc57b648d` | pull_request | Repository quality | completed:failure |
