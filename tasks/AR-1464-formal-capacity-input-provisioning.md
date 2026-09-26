@@ -2,19 +2,19 @@
 {
   "branch": "repair/ar-1464-formal-capacity-input-provisioning",
   "checkpoint_commit": "ab485f767fbddbd8adfc27b5120f3df0a045b762",
-  "claim_expires": "",
+  "claim_expires": "2026-09-26T22:32:23+00:00",
   "depends_on": [],
   "id": "AR-1464",
   "next_action": "Obtain the reviewed full-exhaustive seed whose SHA-256 is b3383756b5cd357f58d923216effea33be35b793034de321c3c9ce460ece4b28 and a safe runner-local or authorized host swap arrangement with at least 1 GiB free; rerun signed preflight, then hand inputs to AR-1308. Do not boot TLC before both pass.",
-  "owner": "",
+  "owner": "coordinator-ar1464-swap-recovery",
   "plan": "../plans/AR-1464.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provisioned exact signed source, reviewed Ubuntu image, 64 GiB overlay and canonical lock; signed preflight remains blocked only by exhausted host swap and unavailable exact seed digest.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Formal capacity and signed-input provisioning repair",
-  "updated_at": "2026-09-26T21:32:21+00:00",
+  "updated_at": "2026-09-26T21:32:23+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1464-formal-capacity-input-provisioning"
 }
 ---
@@ -154,3 +154,5 @@ scope.
 - 2026-09-26T21:32:21+00:00: Coordinator resumed bounded swap-recovery audit; only AR-specific stale
   swap files may be reclaimed after ownership and process checks, and exact seed remains
   fail-closed.
+
+- 2026-09-26T21:32:23+00:00: Claimed by coordinator-ar1464-swap-recovery.
