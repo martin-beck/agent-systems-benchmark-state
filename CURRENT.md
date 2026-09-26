@@ -3,12 +3,17 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1458](tasks/AR-1458-first-customer-requalification-after-orchestration.md): First-customer requalification after central orchestration | Requalify the first-customer production-like journey after central orchestration became authoritative. | Promote and run the disposable first-customer install/configure/local-mock benchmark/strict-replay/recovery/cleanup qualification against the exact current protected main after the central orchestration merge; publish a privacy-safe readiness report or record any deterministic repair AR. | coordinator-ar1458-requal |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1444](tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Make the complete install-to-comparison journey a cross-repository release qualification gate. | Blocked pending paired asb-tui AR-1327: obtain exact pinned acceptance revision/artifact and credential-free journey transcript, then rerun cross-repository qualification. | - |
-| P0 | [AR-1458](tasks/AR-1458-first-customer-requalification-after-orchestration.md): First-customer requalification after central orchestration | Requalify the first-customer production-like journey after central orchestration became authoritative. | Promote and run the disposable first-customer install/configure/local-mock benchmark/strict-replay/recovery/cleanup qualification against the exact current protected main after the central orchestration merge; publish a privacy-safe readiness report or record any deterministic repair AR. | - |
 
 ## Blocked
 
