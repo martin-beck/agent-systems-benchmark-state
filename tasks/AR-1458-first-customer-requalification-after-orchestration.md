@@ -14,11 +14,11 @@
   "plan": "../plans/AR-1458.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Requalify the first-customer production-like journey after central orchestration became authoritative.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "First-customer requalification after central orchestration",
-  "updated_at": "2026-09-26T20:10:00+00:00",
+  "updated_at": "2026-09-26T18:36:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1458-first-customer-requalification-after-orchestration"
 }
 ---
@@ -31,3 +31,6 @@ multi-agent workload execution, evidence inspection, strict offline replay,
 cancellation/restart recovery, and cleanup/rollback. It must not contact a
 remote provider or modify asb-tui. Any live-provider evidence remains optional
 and separately classified.
+
+- 2026-09-26T18:36:36+00:00: Current main now includes central orchestration after AR-1446
+  qualification; requalify the customer journey on the updated exact main.
