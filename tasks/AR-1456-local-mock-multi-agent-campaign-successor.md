@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1456-local-mock-multi-agent-campaign-successor",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-26T19:45:29+00:00",
   "depends_on": [
     "AR-1332",
     "AR-1433",
@@ -10,15 +10,15 @@
   ],
   "id": "AR-1456",
   "next_action": "Promote after dependencies are verified; implement the credential-free local/mock multi-agent campaign successor and keep optional live integration separate.",
-  "owner": "",
+  "owner": "ar1456-local-campaign-luna56",
   "plan": "../plans/AR-1456.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Local/mock multi-agent campaign successor",
-  "updated_at": "2026-09-26T17:45:13+00:00",
+  "updated_at": "2026-09-26T17:45:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1456-local-mock-multi-agent-campaign-successor"
 }
 ---
@@ -36,3 +36,5 @@ for local development, CI, or this AR's completion.
 
 - 2026-09-26T17:45:13+00:00: Promote ASB-only local/mock multi-agent campaign successor; AR-1332,
   AR-1433, and AR-1447 are done. AR-1329 remains optional live integration.
+
+- 2026-09-26T17:45:29+00:00: Claimed by ar1456-local-campaign-luna56.

@@ -118,12 +118,17 @@
 
 ## Complete AR inventory
 
-### Open (2)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md): Local/mock multi-agent campaign successor | ar1456-local-campaign-luna56 | Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution. | Promote after dependencies are verified; implement the credential-free local/mock multi-agent campaign successor and keep optional live integration separate. |
+
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Make the complete install-to-comparison journey a cross-repository release qualification gate. | Blocked pending paired asb-tui AR-1327: obtain exact pinned acceptance revision/artifact and credential-free journey transcript, then rerun cross-repository qualification. |
-| P1 | [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md): Local/mock multi-agent campaign successor | Unclaimed | Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution. | Promote after dependencies are verified; implement the credential-free local/mock multi-agent campaign successor and keep optional live integration separate. |
 
 ### Blocked (69)
 
