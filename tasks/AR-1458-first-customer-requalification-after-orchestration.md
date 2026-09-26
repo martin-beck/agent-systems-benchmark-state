@@ -1,7 +1,7 @@
 ---
 {
   "branch": "qualification/ar-1458-first-customer-requalification-after-orchestration",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "ad4f96ab3f7e57916208406b2f56aa9ec4e54885",
   "claim_expires": "2026-09-26T20:37:08+00:00",
   "depends_on": [
     "AR-1446",
@@ -9,7 +9,7 @@
     "AR-1456"
   ],
   "id": "AR-1458",
-  "next_action": "Promote and run the disposable first-customer install/configure/local-mock benchmark/strict-replay/recovery/cleanup qualification against the exact current protected main after the central orchestration merge; publish a privacy-safe readiness report or record any deterministic repair AR.",
+  "next_action": "Release done: exact protected-main requalification passed with credential-free local/mock and strict-replay evidence; no deterministic repair AR.",
   "observed_branch": "qualification/ar-1458-first-customer-requalification-after-orchestration",
   "observed_dirty": 0,
   "observed_head": "ad4f96ab3f7e57916208406b2f56aa9ec4e54885",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Requalify the first-customer production-like journey after central orchestration became authoritative.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "First-customer requalification after central orchestration",
-  "updated_at": "2026-09-26T18:43:51+00:00",
+  "updated_at": "2026-09-26T18:44:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1458-first-customer-requalification-after-orchestration"
 }
 ---
@@ -98,3 +98,16 @@ and separately classified.
 
 - 2026-09-26T18:43:51+00:00: Recorded command exit 0; command argv SHA-256
   b49a90ee600c1023cee9ee9f9e8a4f9a06c53eef8c48d3932d88e482126c7c01.
+
+- 2026-09-26T18:44:12+00:00: Requalification complete on exact protected main
+  ad4f96ab3f7e57916208406b2f56aa9ec4e54885 in isolated worktree
+  agent-systems-benchmark-ar-1458-first-customer-requalification-after-orchestration; clean and
+  unchanged. Evidence: cargo build --locked --workspace; doctor/capabilities; guide_examples 5/5;
+  control tests 45/45; setup contract 2/2; CLI E2E cancellation/recovery 3/3; workflow privacy
+  transcript 3/3; full cargo test --locked --workspace passed (explicit environment-dependent
+  provider/native cases remained ignored); cargo fmt --all -- --check; cargo clippy --locked
+  --workspace --all-targets -- -D warnings; RUSTDOCFLAGS=-D warnings cargo doc --locked --workspace
+  --no-deps; cargo build --locked --workspace --release. Local/mock multi-agent and literature
+  fixture, strict replay, cancellation/restart, cleanup/privacy boundaries are covered by passing
+  guide, CLI, orchestrator, replay, workloads, and full workspace tests. No remote provider
+  contacted, no asb-tui changes, no deterministic failure, no repair AR required.
