@@ -24,9 +24,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve private live authority from authenticated control enrollment without caller injection.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Control-owned private authority materializer",
-  "updated_at": "2026-09-26T23:01:21+00:00",
+  "updated_at": "2026-09-26T23:01:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1392-control-authority-materializer"
 }
 ---
@@ -161,3 +161,6 @@ reachability.
   'Failed to find targets' because --all was omitted; corrected command passed. Independent diff
   review: one-file scoped change, no caller-provided authority, no secrets/asb-tui/live provider.
   Signed+DCO commit 739b67d9888e8aced90a13cab79fb67291b297de; worktree clean.
+
+- 2026-09-26T23:01:31+00:00: Recorded command exit 0; command argv SHA-256
+  6451f045bd9829abc6348f8b68c81713b1aabe9b49756c3ed9dc0d58f35acf78.
