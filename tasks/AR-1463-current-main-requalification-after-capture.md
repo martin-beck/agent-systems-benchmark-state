@@ -2,7 +2,7 @@
 {
   "branch": "qualification/ar-1463-current-main-requalification-after-capture",
   "checkpoint_commit": "01b70e87ce8e7913f614447c0c530cb22e235256",
-  "claim_expires": "2026-09-26T22:47:57+00:00",
+  "claim_expires": "2026-09-26T23:02:24+00:00",
   "depends_on": [
     "AR-1330",
     "AR-1461"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Requalify current protected main for first-customer production-like use after capture/replay integration.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Current-main first-customer requalification after capture integration",
-  "updated_at": "2026-09-26T21:02:02+00:00",
+  "updated_at": "2026-09-26T21:02:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1463-current-main-requalification-after-capture"
 }
 ---
@@ -118,3 +118,5 @@ required. Any release decision must remain fail-closed and exact-head bound.
 
 - 2026-09-26T21:02:02+00:00: Recorded command exit 0; command argv SHA-256
   834fc7db89bcfa4bc26491cd80a3548be4f56075d780500a3912826a4268c0d0.
+
+- 2026-09-26T21:02:24+00:00: Heartbeat by coordinator-ar1463-requal.
