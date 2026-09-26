@@ -9,7 +9,7 @@
     "AR-1447"
   ],
   "id": "AR-1456",
-  "next_action": "Rerun focused local campaign/guide tests on the corrected explicit --local-mock patch, then independently review and commit signed+DCO.",
+  "next_action": "Run record_campaign and guide_examples as separate focused tests through handoffctl, then full offline CLI quality and review.",
   "observed_branch": "DETACHED",
   "observed_dirty": 2,
   "observed_head": "28730b61572f463e9cf1e6b5f1cf20fd198ef7e8",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Local/mock multi-agent campaign successor",
-  "updated_at": "2026-09-26T17:50:38+00:00",
+  "updated_at": "2026-09-26T17:50:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1456-local-mock-multi-agent-campaign-successor"
 }
 ---
@@ -76,3 +76,9 @@ for local development, CI, or this AR's completion.
 
 - 2026-09-26T17:50:26+00:00: Recorded command exit 1; command argv SHA-256
   cbad6c12d1f10dda80a556273794b2f225aadff59ee5f1a9607285a3390eccc4.
+
+- 2026-09-26T17:50:46+00:00: Recorded setup/argument failure before retry: cargo test exited 2
+  because Cargo accepts only one positional TESTNAME and rejected `guide_examples` as an unexpected
+  second test filter. This is command selection/setup, not a product failure; no product files
+  changed. Next action: run the two focused tests as separate handoffctl commands
+  (`record_campaign`, then `guide_examples`).
