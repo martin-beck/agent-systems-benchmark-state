@@ -2,19 +2,19 @@
 {
   "branch": "repair/ar-1467-terminal-ar-metadata-reconciliation",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-26T23:25:07+00:00",
   "depends_on": [],
   "id": "AR-1467",
   "next_action": "Promote after reviewing the listed completed ARs and verifying each terminal claim against immutable evidence.",
-  "owner": "",
+  "owner": "coordinator-ar1467-terminal-metadata",
   "plan": "../plans/AR-1467-terminal-ar-metadata-reconciliation.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Remove stale historical next-action text from recently completed ASB AR records without changing implementation or gates.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Terminal AR metadata reconciliation",
-  "updated_at": "2026-09-26T22:25:00+00:00",
+  "updated_at": "2026-09-26T22:25:07+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1467-terminal-ar-metadata-reconciliation"
 }
 ---
@@ -25,3 +25,5 @@ replace missing formal evidence, or turn optional cross-repository work into an
 ASB release dependency.
 
 - 2026-09-26T22:25:00+00:00: Dependencies are empty; begin bounded terminal metadata audit.
+
+- 2026-09-26T22:25:07+00:00: Claimed by coordinator-ar1467-terminal-metadata.

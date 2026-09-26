@@ -132,11 +132,16 @@
 
 ## Complete AR inventory
 
-### Open (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1467](../tasks/AR-1467-terminal-ar-metadata-reconciliation.md): Terminal AR metadata reconciliation | Unclaimed | Remove stale historical next-action text from recently completed ASB AR records without changing implementation or gates. | Promote after reviewing the listed completed ARs and verifying each terminal claim against immutable evidence. |
+| P1 | [AR-1467](../tasks/AR-1467-terminal-ar-metadata-reconciliation.md): Terminal AR metadata reconciliation | coordinator-ar1467-terminal-metadata | Remove stale historical next-action text from recently completed ASB AR records without changing implementation or gates. | Promote after reviewing the listed completed ARs and verifying each terminal claim against immutable evidence. |
+
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
 ### Blocked (69)
