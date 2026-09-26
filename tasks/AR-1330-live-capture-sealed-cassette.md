@@ -14,11 +14,11 @@
   "plan": "../plans/AR-1330.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Capture and seal a real authenticated provider exchange as a content-addressed cassette.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Live provider capture into a sealed cassette",
-  "updated_at": "2026-09-22T13:39:37+00:00",
+  "updated_at": "2026-09-26T20:11:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1330-live-capture-sealed-cassette"
 }
 ---
@@ -45,3 +45,7 @@ and teardown, and fail-closed denial of unapproved external traffic remain requi
 contracts. Existing live-provider dependency edges describe production integration
 ordering only and must not be used to block local qualification or to claim external
 reachability.
+
+- 2026-09-26T20:11:07+00:00: Dependencies are done; implement capture through the existing
+  runtime-owned seam using deterministic local/mock qualification, with external provider access
+  optional.
