@@ -130,7 +130,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1462](../tasks/AR-1462-pinned-release-toolchain-bundle-workflow.md): Pinned release toolchain and first-customer bundle workflow | coordinator-ar1462-release-tooling | Establish reproducible supply-chain checks and first-customer release bundle publication workflow. | Promote and implement the pinned offline-capable cargo-deny/cargo-audit toolchain and reviewed first-customer bundle/tag workflow, then rerun release readiness against exact protected main. |
+| P0 | [AR-1462](../tasks/AR-1462-pinned-release-toolchain-bundle-workflow.md): Pinned release toolchain and first-customer bundle workflow | coordinator-ar1462-release-tooling | Establish reproducible supply-chain checks and first-customer release bundle publication workflow. | Release done after recording all seven green exact-main workflows. |
 
 ### Open (1)
 

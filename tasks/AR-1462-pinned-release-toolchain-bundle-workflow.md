@@ -1,13 +1,13 @@
 ---
 {
   "branch": "release/ar-1462-pinned-release-toolchain-bundle-workflow",
-  "checkpoint_commit": "36d4bdf35a644a36a8acfdb31078eb7f668a17c4",
+  "checkpoint_commit": "0a85123785c3e5e293fee02df757f494ac3423fe",
   "claim_expires": "2026-09-26T21:52:30+00:00",
   "depends_on": [
     "AR-1460"
   ],
   "id": "AR-1462",
-  "next_action": "Promote and implement the pinned offline-capable cargo-deny/cargo-audit toolchain and reviewed first-customer bundle/tag workflow, then rerun release readiness against exact protected main.",
+  "next_action": "Release done after recording all seven green exact-main workflows.",
   "observed_branch": "release/ar-1462-pinned-release-toolchain-bundle-workflow",
   "observed_dirty": 0,
   "observed_head": "76f099487da31b0ee7d7d29b9561785ccbb4e11f",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Establish reproducible supply-chain checks and first-customer release bundle publication workflow.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Pinned release toolchain and first-customer bundle workflow",
-  "updated_at": "2026-09-26T19:54:06+00:00",
+  "updated_at": "2026-09-26T19:54:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1462-pinned-release-toolchain-bundle-workflow"
 }
 ---
@@ -214,3 +214,14 @@ all integrity, provenance, privacy and exact-head checks remain mandatory.
 
 - 2026-09-26T19:54:06+00:00: Recorded command exit 0; command argv SHA-256
   41e0c42307a0247ff5197ecad0cb9ac7c967ea4a36464dd6b30e7550e888903d.
+
+- 2026-09-26T19:54:48+00:00: Merged PR #337 from exact signed+DCO head
+  76f099487da31b0ee7d7d29b9561785ccbb4e11f at merge SHA 0a85123785c3e5e293fee02df757f494ac3423fe.
+  Exact-main post-merge workflows all green: Huawei headers 36267124368; hosted 36267124413; fault
+  36267124396; formal 36267124398; Rust 36267124390; emulated AArch64 36267124403; repository
+  quality 36267124417. Local gates: cargo test --workspace --locked, release tests 3/3, source
+  policy, pinned offline cargo-deny/audit, release build and SBOM/provenance/checksum manifest.
+  Historical nonzero records classified as invocation/import-path, transient state lock, and
+  corrected unsupported tool CLI forms; successful reruns recorded. Rebase continuation briefly
+  required direct Git because handoffctl rejects DETACHED during interactive rebase; branch was then
+  force-with-lease updated through handoffctl and exact-head CI passed.
