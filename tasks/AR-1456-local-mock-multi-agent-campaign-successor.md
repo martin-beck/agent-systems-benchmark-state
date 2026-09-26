@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution.",
-  "task_revision": 122,
+  "task_revision": 123,
   "title": "Local/mock multi-agent campaign successor",
-  "updated_at": "2026-09-26T18:26:25+00:00",
+  "updated_at": "2026-09-26T18:26:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1456-local-mock-multi-agent-campaign-successor"
 }
 ---
@@ -429,3 +429,6 @@ for local development, CI, or this AR's completion.
 
 - 2026-09-26T18:26:25+00:00: Recorded command exit 0; command argv SHA-256
   2867d478a7054ac87bdf6b7dc7353a8bffce3d8de8a840fb209a7012af445a31.
+
+- 2026-09-26T18:26:41+00:00: Recorded command exit 0; command argv SHA-256
+  f26643a1c2dfeeae7197387a02d7edd0ce608fe5937dd067edd4848894febb8c.
