@@ -9,7 +9,7 @@
     "AR-1447"
   ],
   "id": "AR-1456",
-  "next_action": "Monitor PR #336 exact-head b6a3d5f22f1087fa4352eed760185cc745403ad9 required checks; merge only after all green.",
+  "next_action": "Continue polling PR #336 exact-head checks after GitHub workflow trigger; merge only when every required check is terminal SUCCESS.",
   "observed_branch": "feature/ar-1456-local-mock-multi-agent-campaign-successor",
   "observed_dirty": 0,
   "observed_head": "b6a3d5f22f1087fa4352eed760185cc745403ad9",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Decouple mandatory local/mock multi-agent campaign qualification from optional live-provider execution.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Local/mock multi-agent campaign successor",
-  "updated_at": "2026-09-26T17:56:31+00:00",
+  "updated_at": "2026-09-26T17:56:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1456-local-mock-multi-agent-campaign-successor"
 }
 ---
@@ -168,3 +168,9 @@ for local development, CI, or this AR's completion.
 
 - 2026-09-26T17:56:31+00:00: Recorded command exit 0; command argv SHA-256
   9d7652348f8548fa954a0a2c62bb488261c53a32199a6eaba317a2152b9f8944.
+
+- 2026-09-26T17:56:58+00:00: PR #336 exact-head verification: headRefOid remains
+  b6a3d5f22f1087fa4352eed760185cc745403ad9; GitHub statusCheckRollup is empty and mergeStateStatus
+  DIRTY, so no required check is green or mergeable yet. gh checks watch reported no checks on the
+  branch. A concurrent gh run-list poll then hit handoffctl shared-lock timeout after 10s; this is
+  coordination polling, not product/CI evidence. Continue polling after lock release; do not merge.
