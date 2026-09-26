@@ -124,11 +124,16 @@
 
 ## Complete AR inventory
 
-### Open (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1461](../tasks/AR-1461-first-customer-release-readiness.md): First-customer release readiness and publication | Unclaimed | Prepare and publish the first-customer ASB release from the currently qualified main. | Audit the established ASB release workflow against exact qualified main 36d4bdf35a644a36a8acfdb31078eb7f668a17c4, build the reproducible first-customer bundle, run release gates, and publish only if all required checks and release evidence pass; otherwise create a precise repair AR. |
+| P0 | [AR-1461](../tasks/AR-1461-first-customer-release-readiness.md): First-customer release readiness and publication | coordinator-ar1461-release | Prepare and publish the first-customer ASB release from the currently qualified main. | Audit the established ASB release workflow against exact qualified main 36d4bdf35a644a36a8acfdb31078eb7f668a17c4, build the reproducible first-customer bundle, run release gates, and publish only if all required checks and release evidence pass; otherwise create a precise repair AR. |
+
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
 ### Blocked (69)
