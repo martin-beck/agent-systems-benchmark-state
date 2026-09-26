@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provide governed disposable capacity for exact full-exhaustive TLC liveness qualification.",
-  "task_revision": 545,
+  "task_revision": 546,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-26T18:55:26+00:00",
+  "updated_at": "2026-09-26T21:06:11+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1647,3 +1647,7 @@ must report `qualification_authorized: false`.
   AR-1307 is currently blocked with no qualification attestation. No source, ASB product, or asb-tui
   changes; no long TLC run attempted. Next action: provision and bind the exact signed bundle and
   pinned inputs, then rerun bounded preflight before any VM boot.
+
+- 2026-09-26T21:06:11+00:00: Reopen bounded input-provisioning audit: locate or build the exact
+  signed AR-1307 bundle and pinned JDK/TLC/seed/lock under approved root; never run without passing
+  preflight.
