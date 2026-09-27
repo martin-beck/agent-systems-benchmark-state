@@ -10,20 +10,21 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #345 | `feature/ar-1474-runtime-authority-input-resolver@56d284c2d292` | `main` | UNSTABLE | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, QUEUED:, IN_PROGRESS:, QUEUED:, IN_PROGRESS: | feat(runtime): resolve persisted authority inputs |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 36292250172 | `56d284c2d292` | pull_request | Repository quality | in_progress:- |
+| 36292250132 | `56d284c2d292` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 36292250115 | `56d284c2d292` | pull_request | Agent Workflow Quality shadow | queued:- |
+| 36292250104 | `56d284c2d292` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 36292250091 | `56d284c2d292` | pull_request | Huawei MIT source headers | in_progress:- |
+| 36292250080 | `56d284c2d292` | pull_request | Formal assurance | queued:- |
+| 36292250053 | `56d284c2d292` | pull_request | Rust verification | in_progress:- |
+| 36292250040 | `56d284c2d292` | pull_request | Fault assurance | in_progress:- |
 | 36290395029 | `1e2c59119820` | push | Formal assurance | completed:success |
 | 36290395006 | `1e2c59119820` | push | Repository quality | completed:success |
 | 36290395005 | `1e2c59119820` | push | Emulated aarch64 portability | completed:success |
 | 36290395002 | `1e2c59119820` | push | Fault assurance | completed:success |
-| 36290394999 | `1e2c59119820` | push | Huawei MIT source headers | completed:success |
-| 36290394979 | `1e2c59119820` | push | Hosted portability and native qualification | completed:success |
-| 36290394972 | `1e2c59119820` | push | Rust verification | completed:success |
-| 36289923797 | `8e22be0fb901` | pull_request | Fault assurance | completed:success |
-| 36289923787 | `8e22be0fb901` | pull_request | Emulated aarch64 portability | completed:success |
-| 36289923778 | `8e22be0fb901` | pull_request | Formal assurance | completed:success |
-| 36289923770 | `8e22be0fb901` | pull_request | Repository quality | completed:success |
-| 36289923769 | `8e22be0fb901` | pull_request | Huawei MIT source headers | completed:success |
