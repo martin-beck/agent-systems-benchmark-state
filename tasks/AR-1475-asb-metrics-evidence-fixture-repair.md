@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1475-asb-metrics-evidence-fixture-repair",
   "checkpoint_commit": "1dada31c763f1929666011f82d2f33c90d2985b3",
-  "claim_expires": "2026-09-27T06:18:36+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1200",
     "AR-1379",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1475-asb-metrics-evidence-fixture-repair",
   "observed_dirty": 0,
   "observed_head": "02aa58f1490237190f67d0a225f352473be5b3d8",
-  "owner": "ar1332-record-replay-luna56",
+  "owner": "",
   "plan": "../plans/AR-1475-asb-metrics-evidence-fixture-repair.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Repair the deterministic ProbeRejected versus MalformedEvidence fixture failure blocking PR #345.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Repair asb-metrics evidence fixture classification",
-  "updated_at": "2026-09-27T04:21:45+00:00",
+  "updated_at": "2026-09-27T04:21:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1475-asb-metrics-evidence-fixture-repair"
 }
 ---
@@ -211,3 +211,7 @@ classification or fixture behavior before changing code.
 - 2026-09-27T04:21:45+00:00: Post-merge exact-main SHA 1dada31c763f1929666011f82d2f33c90d2985b3 all
   seven SUCCESS: Huawei 36293580429, hosted 36293580432, fault 36293580440, formal 36293580469, Rust
   36293580412, emulated AArch64 36293580424, repository quality 36293580439.
+
+- 2026-09-27T04:21:48+00:00: Done: signed repair 02aa58f merged via PR #346 to
+  1dada31c763f1929666011f82d2f33c90d2985b3; all seven exact-main post-merge workflows green with
+  recorded IDs. Known doctor caveat: generated WORKTREES.md projection stale.
