@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #350 | `feature/ar-1420-literature-workload-campaign-integration@8966e447b68a` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | feat: integrate literature workload campaigns |
+| #350 | `feature/ar-1420-literature-workload-campaign-integration@8966e447b68a` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: integrate literature workload campaigns |
 
 ## Recent workflows
 
@@ -24,7 +24,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36301989443 | `8966e447b68a` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36301989442 | `8966e447b68a` | pull_request | Credential-free benchmark path | completed:success |
 | 36301989441 | `8966e447b68a` | pull_request | Formal assurance | in_progress:- |
-| 36301989436 | `8966e447b68a` | pull_request | Fault assurance | in_progress:- |
+| 36301989436 | `8966e447b68a` | pull_request | Fault assurance | completed:success |
 | 36301840987 | `26f03d3f52da` | pull_request | Rust verification | completed:failure |
 | 36301840974 | `26f03d3f52da` | pull_request | Emulated aarch64 portability | completed:cancelled |
 | 36301840963 | `26f03d3f52da` | pull_request | Credential-free benchmark path | completed:success |
