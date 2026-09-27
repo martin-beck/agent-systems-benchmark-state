@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stage a deterministic customer bundle and provide an explicit external signing handoff and verifier.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Customer bundle signing handoff",
-  "updated_at": "2026-09-27T16:40:34+00:00",
+  "updated_at": "2026-09-27T16:40:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1492-customer-bundle-signing-handoff"
 }
 ---
@@ -222,3 +222,6 @@ detached signature.
   started.elapsed() < 750ms under llvm-cov (120 passed, 1 failed). Isolated serial cargo test on
   exact worktree passed 1/1 in 0.07s. This supports a coverage timing flake; no AR-1492 product
   failure. One approved exact workflow rerun is the remaining gate.
+
+- 2026-09-27T16:40:42+00:00: Recorded command exit 0; command argv SHA-256
+  39ee76da1db9e5b657a9b9aa13cebdd783d7300abdbc4ae8b1bbc1057304675e.
