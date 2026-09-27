@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Owner-backed first-customer user journey",
-  "updated_at": "2026-09-27T14:38:56+00:00",
+  "updated_at": "2026-09-27T14:38:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1488-owner-backed-user-journey"
 }
 ---
@@ -47,3 +47,6 @@ live provider.
   2a49f4ad575e26df1ecd178dd82e94779c61e8d8fc5ee6da6d5c567ee07ca26c.
 
 - 2026-09-27T14:38:56+00:00: Heartbeat by ar1332-record-replay-luna56.
+
+- 2026-09-27T14:38:59+00:00: Recorded command exit 0; command argv SHA-256
+  bde320a5974c28e527e2ae4ff9242cc99ba442b5d58bf852a02156d3677c209b.
