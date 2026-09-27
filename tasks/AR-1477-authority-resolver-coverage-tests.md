@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Raise exact hosted coverage above the enforced 90 percent floor for the authority resolver.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Cover authority resolver behavior",
-  "updated_at": "2026-09-27T05:18:48+00:00",
+  "updated_at": "2026-09-27T05:18:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1477-authority-resolver-coverage-tests"
 }
 ---
@@ -110,3 +110,6 @@ the coverage floor remains unchanged.
   ee9aac0d84565a98ae13a0efcc31b792f49e0b61e86b8f257124d1079e9dcfb5.
 
 - 2026-09-27T05:18:48+00:00: Heartbeat by ar1332-record-replay-luna56.
+
+- 2026-09-27T05:18:51+00:00: Recorded command exit 0; command argv SHA-256
+  ee9aac0d84565a98ae13a0efcc31b792f49e0b61e86b8f257124d1079e9dcfb5.
