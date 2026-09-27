@@ -11,7 +11,7 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #345 | `feature/ar-1474-runtime-authority-input-resolver@56d284c2d292` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(runtime): resolve persisted authority inputs |
-| #346 | `feature/ar-1475-asb-metrics-evidence-fixture-repair@02aa58f14902` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(metrics): retry bounded probe spawn contention |
+| #346 | `feature/ar-1475-asb-metrics-evidence-fixture-repair@02aa58f14902` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(metrics): retry bounded probe spawn contention |
 
 ## Recent workflows
 
@@ -21,7 +21,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36293087762 | `02aa58f14902` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36293087749 | `02aa58f14902` | pull_request | Repository quality | in_progress:- |
 | 36293087742 | `02aa58f14902` | pull_request | Hosted portability and native qualification | completed:success |
-| 36293087739 | `02aa58f14902` | pull_request | Formal assurance | in_progress:- |
+| 36293087739 | `02aa58f14902` | pull_request | Formal assurance | completed:success |
 | 36293087730 | `02aa58f14902` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 36293087723 | `02aa58f14902` | pull_request | Fault assurance | completed:success |
 | 36293087716 | `02aa58f14902` | pull_request | Huawei MIT source headers | completed:success |
