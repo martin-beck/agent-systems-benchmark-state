@@ -18,7 +18,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36298610696 | `fac11a22a93c` | push | Emulated aarch64 portability | in_progress:- |
 | 36298610690 | `fac11a22a93c` | push | Huawei MIT source headers | completed:success |
 | 36298610685 | `fac11a22a93c` | push | Rust verification | in_progress:- |
-| 36298610671 | `fac11a22a93c` | push | Fault assurance | in_progress:- |
+| 36298610671 | `fac11a22a93c` | push | Fault assurance | completed:success |
 | 36298610658 | `fac11a22a93c` | push | Repository quality | in_progress:- |
 | 36298610655 | `fac11a22a93c` | push | Formal assurance | in_progress:- |
 | 36298610650 | `fac11a22a93c` | push | Hosted portability and native qualification | completed:success |
