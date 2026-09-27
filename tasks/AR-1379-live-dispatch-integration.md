@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate authenticated runtime live dispatch into asb run and sweep.",
-  "task_revision": 70,
+  "task_revision": 71,
   "title": "Production live dispatch integration",
-  "updated_at": "2026-09-27T02:35:30+00:00",
+  "updated_at": "2026-09-27T02:35:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1379-live-dispatch-integration"
 }
 ---
@@ -240,3 +240,6 @@ verified through the completed gates.
   docs/examples/asb-cli-workflow-v1.provenance.json; focused workflow_transcript 3/3 and diff check
   passed. Signed+DCO provenance repair d988838 pushed, remote PR head advanced 11f3db5 -> d988838.
   Do not merge until rerun checks green.
+
+- 2026-09-27T02:35:39+00:00: Recorded command exit 0; command argv SHA-256
+  b64b1376d1c92a38b9508c4f4d91d56ed1f6e484924837d9c8921a9b27304a0b.
