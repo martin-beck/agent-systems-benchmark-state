@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run the complete qualified literature workload matrix beside built-in software-engineering workloads.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Literature workload campaign integration",
-  "updated_at": "2026-09-27T07:00:13+00:00",
+  "updated_at": "2026-09-27T07:00:34+00:00",
   "worktree_key": ""
 }
 ---
@@ -170,3 +170,6 @@ tasks or require any live provider.
   passed. Commit 26f03d3f52dab9c9667b0b8d09d69fc835c5b647 is SSH-signed with DCO. Worktree is clean.
 
 - 2026-09-27T07:00:13+00:00: Heartbeat by ar1332-record-replay-luna56.
+
+- 2026-09-27T07:00:34+00:00: Recorded command exit 0; command argv SHA-256
+  56de089f0b23a40481898f56d6c95d7217086f6a2eb0c5e6b282112562d3b302.
