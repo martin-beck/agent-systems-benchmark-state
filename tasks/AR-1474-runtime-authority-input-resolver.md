@@ -10,7 +10,7 @@
     "AR-1379"
   ],
   "id": "AR-1474",
-  "next_action": "Retry exact-head Rust workflow once for unrelated asb-metrics failure; keep other checks monitored.",
+  "next_action": "Await exact-head Rust retry and repair/retry repository quality coverage failure; do not merge until all checks green.",
   "observed_branch": "feature/ar-1474-runtime-authority-input-resolver",
   "observed_dirty": 0,
   "observed_head": "56d284c2d292163e2724318b0443f53211b4f9e4",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority.",
-  "task_revision": 64,
+  "task_revision": 65,
   "title": "Runtime-owned authority-input resolver",
-  "updated_at": "2026-09-27T03:52:02+00:00",
+  "updated_at": "2026-09-27T03:52:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1474-runtime-authority-input-resolver"
 }
 ---
@@ -211,3 +211,7 @@ authority, privacy, lifecycle, formal, or egress contracts.
   9aefbfa6b63061e3e503ee6fb08ec20a7a184998accc6dcc4b95d71f9981a100.
 
 - 2026-09-27T03:52:02+00:00: Heartbeat by ar1332_record_replay_luna56.
+
+- 2026-09-27T03:52:05+00:00: Rust initial run failed unrelated existing asb-metrics assertion;
+  approved exact-head rerun 36292250053 is still running after clippy success. Repository quality
+  36292250172 failed workspace coverage at 88.04% and must be diagnosed/retried; no gate waived.
