@@ -7,7 +7,7 @@
     "AR-1362"
   ],
   "id": "AR-1363",
-  "next_action": "Continue bounded polling of PR #342 required checks; merge normally only after mergeStateStatus CLEAN and all required checks green.",
+  "next_action": "Continue bounded polling of PR #342; merge normally only after all required checks are green and mergeStateStatus is CLEAN.",
   "observed_branch": "feature/ar-1363-authenticated-control-receipt-source",
   "observed_dirty": 0,
   "observed_head": "29d27a91ad6a4eff455f62ae25eb952fec45fcf5",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Deliver authenticated runtime authority receipts through the versioned control boundary without exposing secrets or caller authority.",
-  "task_revision": 71,
+  "task_revision": 72,
   "title": "Authenticated control receipt source",
-  "updated_at": "2026-09-27T01:16:19+00:00",
+  "updated_at": "2026-09-27T01:16:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1363-authenticated-control-receipt-source"
 }
 ---
@@ -253,3 +253,10 @@ reachability.
 
 - 2026-09-27T01:16:19+00:00: Recorded command exit 0; command argv SHA-256
   0400894a8fb04528b541596044b098cf3fa6c69097907f04a4516b92624960dd.
+
+- 2026-09-27T01:16:47+00:00: Bounded polling at 2026-09-27T01:16Z: PR #342 exact head 29d27a91;
+  mergeStateStatus UNSTABLE. Completed SUCCESS: Huawei 36284742897, Hosted 36284742907, Fault
+  retained 36284742879, Formal TLC/Kani/Loom 36284742887, AWQ shadow 36284742871. Still IN_PROGRESS:
+  Emulated AArch64 36284742939, Repository quality 36284742895, Rust verification 36284742908. Fault
+  fuzz and mutation and Formal models are all SUCCESS. No failure or hang evidence; continue bounded
+  polling with heartbeat.
