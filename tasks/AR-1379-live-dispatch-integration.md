@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate authenticated runtime live dispatch into asb run and sweep.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Production live dispatch integration",
-  "updated_at": "2026-09-27T02:27:06+00:00",
+  "updated_at": "2026-09-27T02:27:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1379-live-dispatch-integration"
 }
 ---
@@ -155,3 +155,6 @@ verified through the completed gates.
   isolated rerun passed 1/1. Independent diff review clean: one CLI file, opaque source-only
   entrypoint and --use-config --live-provider run/sweep dispatch, ordinary CLI remains fail-closed,
   no asb-tui/live-provider changes. Commit 11f3db5 SSH-signed+DCO verified.
+
+- 2026-09-27T02:27:15+00:00: Recorded command exit 0; command argv SHA-256
+  a6ef7f9dc8262075bca3cef74db6990556c7c5c391fa6b3c815e3057ea4508a0.
