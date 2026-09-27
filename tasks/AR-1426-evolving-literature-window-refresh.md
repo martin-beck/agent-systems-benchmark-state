@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "5e577e6a4b278fc79dc8b695cd6b3723d04cc609",
-  "claim_expires": "2026-09-27T12:28:15+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1423",
     "AR-1425"
@@ -12,15 +12,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "ar1332-record-replay-luna56",
+  "owner": "",
   "plan": "../plans/AR-1426-evolving-literature-window-refresh.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Refresh evolving literature benchmark windows without stale or incomparable results.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Evolving literature workload window refresh",
-  "updated_at": "2026-09-27T10:39:38+00:00",
+  "updated_at": "2026-09-27T10:40:11+00:00",
   "worktree_key": ""
 }
 ---
@@ -228,3 +228,12 @@ requires live providers or upstream downloads during development or CI.
   benchmark path 36312453110; Hosted portability/native qualification 36312453113. PR #355 closed
   merged, reviewed exact head 73b5fd1d14fa0343a7f3cc6d73acc91187d46333. No live provider, network,
   credentials, or asb-tui changes.
+
+- 2026-09-27T10:40:11+00:00: AR-1426 complete. PR #355 merged as
+  5e577e6a4b278fc79dc8b695cd6b3723d04cc609 from signed+DCO head
+  73b5fd1d14fa0343a7f3cc6d73acc91187d46333. All eight exact-main post-merge workflows SUCCESS:
+  36312453082 Huawei headers; 36312453077 Rust; 36312453084 Emulated AArch64 attempt 2 (attempt 1
+  had unrelated goose symlink runner-sensitive failure, focused reproduction passed); 36312453087
+  Formal; 36312453096 Repository quality; 36312453109 Fault; 36312453110 Credential-free;
+  36312453113 Hosted. Reconcile succeeded; doctor --live reported known generated WORKTREES.md stale
+  projection caveat.

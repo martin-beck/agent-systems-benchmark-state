@@ -149,12 +149,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1426](../tasks/AR-1426-evolving-literature-window-refresh.md): Evolving literature workload window refresh | ar1332-record-replay-luna56 | Refresh evolving literature benchmark windows without stale or incomparable results. | Reconcile and doctor state, then release AR-1426 done. |
-
 ### Blocked (71)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -293,7 +287,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (357)
+### Done (358)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -514,3 +508,4 @@
 | P1 | [AR-0805](../tasks/AR-0805-tui-run-control.md): Add terminal run control and status | Unclaimed | Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI. | Complete; no further action. |
 | P1 | [AR-0806](../tasks/AR-0806-tui-history-analysis.md): Add terminal history and analysis | Unclaimed | Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI. | Repair merge DCO trailer and add a signed normal ancestry commit; rerun exact-main gates. |
 | P1 | [AR-0812](../tasks/AR-0812-modern-terminal-rendering.md): Deliver modern adaptive terminal rendering | Unclaimed | Use modern terminal capabilities for polished visual fidelity with robust SSH/multiplexer fallbacks. | Implement capability-aware premium rendering, channel detection, and resize-safe responsive layouts. |
+| P1 | [AR-0813](../tasks/AR-0813-remote-control-transport.md): Add secure remote control transport | Unclaimed | Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client. | AR-1259 remains open after unsigned recovery merge 8b81be4; await repository-level signed protected-main recovery and exact-main policy before closing AR-0813. |
