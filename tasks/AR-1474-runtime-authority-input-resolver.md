@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1474-runtime-authority-input-resolver",
   "checkpoint_commit": "c21d1ce5d1eca0ad80c28f0a0c5ebda5fd6a3603",
-  "claim_expires": "",
+  "claim_expires": "2026-09-27T08:06:26+00:00",
   "depends_on": [
     "AR-1362",
     "AR-1471",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1474-runtime-authority-input-resolver",
   "observed_dirty": 0,
   "observed_head": "c21d1ce5d1eca0ad80c28f0a0c5ebda5fd6a3603",
-  "owner": "",
+  "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1474-runtime-authority-input-resolver.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority.",
-  "task_revision": 158,
+  "task_revision": 159,
   "title": "Runtime-owned authority-input resolver",
-  "updated_at": "2026-09-27T06:06:04+00:00",
+  "updated_at": "2026-09-27T06:06:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1474-runtime-authority-input-resolver"
 }
 ---
@@ -500,3 +500,5 @@ authority, privacy, lifecycle, formal, or egress contracts.
 - 2026-09-27T06:06:04+00:00: AR-1477 coverage tests and AR-1478 topology repair are merged with all
   required/post-merge gates green; resume PR #345 and synchronize to current protected main
   fac11a22.
+
+- 2026-09-27T06:06:26+00:00: Claimed by ar1332-record-replay-luna56.

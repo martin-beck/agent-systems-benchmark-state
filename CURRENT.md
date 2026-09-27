@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1474](tasks/AR-1474-runtime-authority-input-resolver.md): Runtime-owned authority-input resolver | Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority. | Create a narrow successor to raise clean CI workspace line coverage from 89.88% to at least 90%; do not waive coverage or merge PR #345. Preserve control state-root race as unrelated transient evidence. | - |
+| P0 | [AR-1474](tasks/AR-1474-runtime-authority-input-resolver.md): Runtime-owned authority-input resolver | Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority. | Create a narrow successor to raise clean CI workspace line coverage from 89.88% to at least 90%; do not waive coverage or merge PR #345. Preserve control state-root race as unrelated transient evidence. | ar1332-record-replay-luna56 |
 
 ## Blocked
 
