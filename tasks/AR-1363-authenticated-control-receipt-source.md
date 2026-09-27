@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Deliver authenticated runtime authority receipts through the versioned control boundary without exposing secrets or caller authority.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Authenticated control receipt source",
-  "updated_at": "2026-09-27T01:17:57+00:00",
+  "updated_at": "2026-09-27T01:18:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1363-authenticated-control-receipt-source"
 }
 ---
@@ -280,3 +280,6 @@ reachability.
   workflows are Repository quality 36284742895 and Rust verification 36284742908. Huawei, Hosted,
   Fault (all three cells), Formal (all three cells), and AWQ are SUCCESS. No failures; next action
   is bounded poll with heartbeat.
+
+- 2026-09-27T01:18:04+00:00: Recorded command exit 0; command argv SHA-256
+  0400894a8fb04528b541596044b098cf3fa6c69097907f04a4516b92624960dd.
