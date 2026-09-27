@@ -17,7 +17,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 36283100172 | `cb9bce4dd991` | push | Fault assurance | completed:success |
 | 36283100159 | `cb9bce4dd991` | push | Formal assurance | completed:success |
-| 36283100128 | `cb9bce4dd991` | push | Rust verification | in_progress:- |
+| 36283100128 | `cb9bce4dd991` | push | Rust verification | completed:success |
 | 36283100126 | `cb9bce4dd991` | push | Emulated aarch64 portability | completed:success |
 | 36283100105 | `cb9bce4dd991` | push | Huawei MIT source headers | completed:success |
 | 36283100101 | `cb9bce4dd991` | push | Hosted portability and native qualification | completed:success |
