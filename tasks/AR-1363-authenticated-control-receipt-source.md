@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Deliver authenticated runtime authority receipts through the versioned control boundary without exposing secrets or caller authority.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Authenticated control receipt source",
-  "updated_at": "2026-09-27T00:55:30+00:00",
+  "updated_at": "2026-09-27T00:56:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1363-authenticated-control-receipt-source"
 }
 ---
@@ -62,3 +62,6 @@ reachability.
   resume downstream receipt-source integration without caller authority.
 
 - 2026-09-27T00:55:30+00:00: Claimed by ar1332_record_replay_luna56.
+
+- 2026-09-27T00:56:02+00:00: Recorded command exit 0; command argv SHA-256
+  ff6d1fa7a7185010f75fcfafe4bdc1bdd5b9804d8c2b3e7abdd8a1b96cd81c63.
