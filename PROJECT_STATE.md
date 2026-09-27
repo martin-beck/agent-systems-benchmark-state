@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #348 | `feature/ar-1478-topic-synchronization-topology-repair@d1456b88d511` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore: repair protected topic synchronization topology |
+| #348 | `feature/ar-1478-topic-synchronization-topology-repair@d1456b88d511` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore: repair protected topic synchronization topology |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 36297781208 | `d1456b88d511` | pull_request | Repository quality | completed:success |
-| 36297781114 | `d1456b88d511` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 36297781114 | `d1456b88d511` | pull_request | Emulated aarch64 portability | completed:success |
 | 36297781109 | `d1456b88d511` | pull_request | Fault assurance | completed:success |
 | 36297781103 | `d1456b88d511` | pull_request | Hosted portability and native qualification | completed:success |
 | 36297781093 | `d1456b88d511` | pull_request | Huawei MIT source headers | completed:success |
