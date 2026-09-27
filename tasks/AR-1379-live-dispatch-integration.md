@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate authenticated runtime live dispatch into asb run and sweep.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Production live dispatch integration",
-  "updated_at": "2026-09-27T02:23:32+00:00",
+  "updated_at": "2026-09-27T02:24:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1379-live-dispatch-integration"
 }
 ---
@@ -123,3 +123,6 @@ verified through the completed gates.
   delegating only the opaque runtime-owned source factory. Ordinary argument-only CLI remains
   fail-closed. Added negative selection-boundary test; focused live-provider tests 2/2 and fmt/diff
   checks pass. Signed+DCO commit 11f3db5.
+
+- 2026-09-27T02:24:05+00:00: Recorded command exit 101; command argv SHA-256
+  534f8613e1c316db8f0f46dd989e44e14a8ca74304a94791b4e4a1c59b2fbb1d.
