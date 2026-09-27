@@ -11,7 +11,7 @@
   "id": "AR-1492",
   "next_action": "Promote and claim, then stage a deterministic customer bundle and document the external signature handoff/validation boundary.",
   "observed_branch": "release/ar-1492-customer-bundle-signing-handoff",
-  "observed_dirty": 0,
+  "observed_dirty": 3,
   "observed_head": "b048fef92f4bdb4eedd5379d645f4288a4b6ab20",
   "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1492-customer-bundle-signing-handoff.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stage a deterministic customer bundle and provide an explicit external signing handoff and verifier.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Customer bundle signing handoff",
-  "updated_at": "2026-09-27T16:15:51+00:00",
+  "updated_at": "2026-09-27T16:16:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1492-customer-bundle-signing-handoff"
 }
 ---
