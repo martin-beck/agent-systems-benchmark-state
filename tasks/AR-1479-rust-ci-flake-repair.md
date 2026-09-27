@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-27T09:25:33+00:00",
+  "claim_expires": "2026-09-27T09:26:42+00:00",
   "depends_on": [],
   "id": "AR-1479",
   "next_action": "Promote and claim the isolated repair worktree; reproduce both exact Rust failures before changing any test or synchronization code.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the unrelated Rust state-root collision and malformed-ready-marker timing flakes blocking AR-1420 exact-head CI.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Rust CI timing and state-root flake repair",
-  "updated_at": "2026-09-27T07:26:13+00:00",
+  "updated_at": "2026-09-27T07:26:42+00:00",
   "worktree_key": ""
 }
 ---
@@ -58,3 +58,5 @@ requalified. Preserve fail-closed cleanup and bounded execution semantics.
 
 - 2026-09-27T07:26:13+00:00: Recorded command exit 255; command argv SHA-256
   587ef4ad51083fae44373424ed93844d16930c0066b574a9a91b072f6013e9ec.
+
+- 2026-09-27T07:26:42+00:00: Heartbeat by ar1332-record-replay-luna56.
