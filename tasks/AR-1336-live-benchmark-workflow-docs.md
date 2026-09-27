@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Document the live benchmark workflow and publish the supported agent and provider matrix.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Live benchmark workflow documentation and support matrix",
-  "updated_at": "2026-09-27T09:43:35+00:00",
+  "updated_at": "2026-09-27T09:44:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1336-live-benchmark-workflow-docs"
 }
 ---
@@ -115,3 +115,6 @@ reachability.
   93712ee0cdc4b98c960953969456d4b6685276bbc191627636ee84bd4c3abe42.
 
 - 2026-09-27T09:43:35+00:00: Heartbeat by ar1332-record-replay-luna56.
+
+- 2026-09-27T09:44:14+00:00: Recorded command exit 0; command argv SHA-256
+  38e7740b2e6e0a6dc4871f34316789210c1efc3f768feb6f788686116b3ffe87.
