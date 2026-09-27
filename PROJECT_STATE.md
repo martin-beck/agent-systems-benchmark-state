@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #356 | `feature/ar-1473-runtime-owned-enrollment-source@4a29c3431d23` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | Runtime-owned authenticated enrollment source |
+| #356 | `feature/ar-1473-runtime-owned-enrollment-source@4a29c3431d23` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Runtime-owned authenticated enrollment source |
 
 ## Recent workflows
 
@@ -23,8 +23,8 @@ Generated from local Git and GitHub. Do not edit.
 | 36313923603 | `4a29c3431d23` | pull_request | Credential-free benchmark path | completed:success |
 | 36313923563 | `4a29c3431d23` | pull_request | Rust verification | in_progress:- |
 | 36313923556 | `4a29c3431d23` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 36313923542 | `4a29c3431d23` | pull_request | Fault assurance | in_progress:- |
-| 36313923511 | `4a29c3431d23` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 36313923542 | `4a29c3431d23` | pull_request | Fault assurance | completed:success |
+| 36313923511 | `4a29c3431d23` | pull_request | Hosted portability and native qualification | completed:success |
 | 36312453113 | `5e577e6a4b27` | push | Hosted portability and native qualification | completed:success |
 | 36312453110 | `5e577e6a4b27` | push | Credential-free benchmark path | completed:success |
 | 36312453109 | `5e577e6a4b27` | push | Fault assurance | completed:success |
