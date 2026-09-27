@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1492](tasks/AR-1492-customer-bundle-signing-handoff.md): Customer bundle signing handoff | Stage a deterministic customer bundle and provide an explicit external signing handoff and verifier. | Monitor PR #371 synchronized exact head 050b298; merge only after all required checks and independent review are green. | ar1332-record-replay-luna56 |
+| P0 | [AR-1492](tasks/AR-1492-customer-bundle-signing-handoff.md): Customer bundle signing handoff | Stage a deterministic customer bundle and provide an explicit external signing handoff and verifier. | Classify Repository Quality run 36333580327 failure; rerun only if approved after confirming timing-flake, while Rust 36333580319 and AArch64 36333580303 remain in progress. | ar1332-record-replay-luna56 |
 
 ## Blocked
 

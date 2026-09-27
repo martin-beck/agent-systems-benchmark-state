@@ -1,7 +1,7 @@
 ---
 {
   "branch": "release/ar-1492-customer-bundle-signing-handoff",
-  "checkpoint_commit": "050b298c99724f7265e8dec47c6e801b3fb53e85",
+  "checkpoint_commit": "a2d9be3eb3c77331a7a3498fdec8e54fb74ae8d6",
   "claim_expires": "2026-09-27T18:39:02+00:00",
   "depends_on": [
     "AR-1461",
@@ -9,7 +9,7 @@
     "AR-1491"
   ],
   "id": "AR-1492",
-  "next_action": "Monitor PR #371 synchronized exact head 050b298; merge only after all required checks and independent review are green.",
+  "next_action": "Classify Repository Quality run 36333580327 failure; rerun only if approved after confirming timing-flake, while Rust 36333580319 and AArch64 36333580303 remain in progress.",
   "observed_branch": "release/ar-1492-customer-bundle-signing-handoff",
   "observed_dirty": 0,
   "observed_head": "050b298c99724f7265e8dec47c6e801b3fb53e85",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stage a deterministic customer bundle and provide an explicit external signing handoff and verifier.",
-  "task_revision": 55,
+  "task_revision": 56,
   "title": "Customer bundle signing handoff",
-  "updated_at": "2026-09-27T16:39:02+00:00",
+  "updated_at": "2026-09-27T16:39:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1492-customer-bundle-signing-handoff"
 }
 ---
@@ -198,3 +198,10 @@ detached signature.
   246e218d4f0eef61a33b81ef1db24c3247fb29746a4a807d151f834335d23ca6.
 
 - 2026-09-27T16:39:02+00:00: Heartbeat by ar1332-record-replay-luna56.
+
+- 2026-09-27T16:39:25+00:00: Post-merge Repository Quality 36333580327 failed only because existing
+  control::tests::strict_replay_requires_a_cassette_path_and_expired_deadline_fails_closed exceeded
+  its test wall-clock assertion (started.elapsed() < 750ms) under llvm-cov; 120 passed, 1 failed.
+  This is an existing timing-sensitive test, not a bundle/signing assertion. Preserve immutable
+  failure; classify with isolated serial reproduction before any retry. Rust and AArch64 remain
+  active; other six workflows are terminal SUCCESS.
