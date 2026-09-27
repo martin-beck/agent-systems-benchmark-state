@@ -18,11 +18,11 @@
   "plan": "../plans/AR-1493-release-authority-enrollment-handoff.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Define and validate the external release-authority enrollment and signed-bundle verification handoff.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Release-authority enrollment handoff",
-  "updated_at": "2026-09-27T16:52:00+00:00",
+  "updated_at": "2026-09-27T16:52:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1493-release-authority-enrollment-handoff"
 }
 ---
@@ -46,3 +46,7 @@ The next action after promotion is to audit the existing AR-1492 output and add
 only deterministic repository-side checks/docs. If the external authority
 inputs remain absent, release AR-1493 blocked with those exact missing inputs
 and preserve AR-1490 as the customer-release blocker.
+
+- 2026-09-27T16:52:40+00:00: Dependencies AR-1461, AR-1462, AR-1491, and AR-1492 are complete.
+  Promote the repository-side release-authority enrollment/verification handoff while preserving
+  AR-1490 external signed-package blocker.
