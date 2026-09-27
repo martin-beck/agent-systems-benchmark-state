@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1472](tasks/AR-1472-authenticated-live-dispatch-adapter.md): Authenticated live-dispatch adapter | Connect authenticated control receipts to runtime-owned CLI live dispatch without a dependency cycle. | Monitor seven exact-main post-merge workflows for 363b21f81d5c5ab364c2e2a923bd82676feaf343; release done only after all terminal SUCCESS and doctor verification. | ar1332_record_replay_luna56 |
+| P0 | [AR-1472](tasks/AR-1472-authenticated-live-dispatch-adapter.md): Authenticated live-dispatch adapter | Connect authenticated control receipts to runtime-owned CLI live dispatch without a dependency cycle. | Monitor remaining exact-main workflows Repository quality 36287167781 and Emulated aarch64 36287168007; release done only after both terminal SUCCESS and doctor verification. | ar1332_record_replay_luna56 |
 
 ## Blocked
 

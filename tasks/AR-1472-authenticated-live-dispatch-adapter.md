@@ -8,7 +8,7 @@
     "AR-1363"
   ],
   "id": "AR-1472",
-  "next_action": "Monitor seven exact-main post-merge workflows for 363b21f81d5c5ab364c2e2a923bd82676feaf343; release done only after all terminal SUCCESS and doctor verification.",
+  "next_action": "Monitor remaining exact-main workflows Repository quality 36287167781 and Emulated aarch64 36287168007; release done only after both terminal SUCCESS and doctor verification.",
   "observed_branch": "feature/ar-1472-authenticated-live-dispatch-adapter",
   "observed_dirty": 0,
   "observed_head": "5f785dab598f24c2221272cf53b9366a10625413",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect authenticated control receipts to runtime-owned CLI live dispatch without a dependency cycle.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Authenticated live-dispatch adapter",
-  "updated_at": "2026-09-27T02:06:57+00:00",
+  "updated_at": "2026-09-27T02:07:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1472-authenticated-live-dispatch-adapter"
 }
 ---
@@ -272,3 +272,9 @@ authority. Mandatory qualification is deterministic local/mock or replay.
 
 - 2026-09-27T02:06:57+00:00: Recorded command exit 0; command argv SHA-256
   225d830ee286c36840f6543c2ba26d591f472ff2b7bfef13a9164ef7b9948ce7.
+
+- 2026-09-27T02:07:22+00:00: Post-merge poll at 02:06Z: Rust verification 36287167783 SUCCESS with
+  formatting, clippy, tests, native journey, docs, release build, DCO and clean generated state.
+  Formal, hosted, fault, Huawei also SUCCESS. Repository quality 36287167781 remains in progress at
+  controlled-defect gate; Emulated aarch64 36287168007 remains in progress materializing immutable
+  guest userspace. No failures.
