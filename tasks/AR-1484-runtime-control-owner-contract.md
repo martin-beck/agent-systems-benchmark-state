@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define stable runtime/control process-owner lifecycle and opaque handoff contract.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Runtime/control process-owner contract",
-  "updated_at": "2026-09-27T12:25:26+00:00",
+  "updated_at": "2026-09-27T12:26:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1484-runtime-control-owner-contract"
 }
 ---
@@ -126,3 +126,6 @@ authority.
 - 2026-09-27T12:25:26+00:00: PR #358 exact-head poll: TLC/Alloy and Matcher/SLO now SUCCESS. Ten
   checks terminal-success; remaining IN_PROGRESS only Emulated aarch64, Policy/coverage/supply
   chain, and Rust. No failures; exact head 7ce533ea9b0524c5b317cc2db8fad0aff8ecedc3 unchanged.
+
+- 2026-09-27T12:26:26+00:00: Recorded command exit 0; command argv SHA-256
+  6465c093ae36ec8adb4cbfff3a4cc0345e175a4ac1370aa32e02509c1ccade45.
