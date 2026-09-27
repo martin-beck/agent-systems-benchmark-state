@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1387-runtime-control-cli-bridge",
   "checkpoint_commit": "25548846966e37646dded8d67ed8ee5123b8bc32",
-  "claim_expires": "",
+  "claim_expires": "2026-09-27T04:31:58+00:00",
   "depends_on": [
     "AR-1385",
     "AR-1384",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1387-runtime-control-cli-bridge",
   "observed_dirty": 0,
   "observed_head": "25548846966e37646dded8d67ed8ee5123b8bc32",
-  "owner": "",
+  "owner": "ar1332_record_replay_luna56",
   "plan": "../plans/AR-1387-runtime-control-cli-bridge.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Bridge authenticated runtime/control bootstrap state into the production CLI dispatch path.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Authenticated runtime-control CLI bridge",
-  "updated_at": "2026-09-27T02:31:33+00:00",
+  "updated_at": "2026-09-27T02:31:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1387-runtime-control-cli-bridge"
 }
 ---
@@ -69,3 +69,5 @@ reachability.
   Resume the concrete successor for authenticated runtime/control bootstrap-to-CLI transfer; AR-1382
   audit confirms this is the remaining missing seam. No caller authority, live provider, or asb-tui
   required.
+
+- 2026-09-27T02:31:58+00:00: Claimed by ar1332_record_replay_luna56.
