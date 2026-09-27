@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #350 | `feature/ar-1420-literature-workload-campaign-integration@8966e447b68a` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: integrate literature workload campaigns |
+| #350 | `feature/ar-1420-literature-workload-campaign-integration@8966e447b68a` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: integrate literature workload campaigns |
 
 ## Recent workflows
 
@@ -19,7 +19,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36301989462 | `8966e447b68a` | pull_request | Hosted portability and native qualification | completed:success |
 | 36301989460 | `8966e447b68a` | pull_request | Huawei MIT source headers | completed:success |
 | 36301989455 | `8966e447b68a` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 36301989451 | `8966e447b68a` | pull_request | Repository quality | in_progress:- |
+| 36301989451 | `8966e447b68a` | pull_request | Repository quality | completed:failure |
 | 36301989445 | `8966e447b68a` | pull_request | Rust verification | completed:failure |
 | 36301989443 | `8966e447b68a` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36301989442 | `8966e447b68a` | pull_request | Credential-free benchmark path | completed:success |
