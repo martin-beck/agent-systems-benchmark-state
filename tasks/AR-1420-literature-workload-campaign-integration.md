@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run the complete qualified literature workload matrix beside built-in software-engineering workloads.",
-  "task_revision": 145,
+  "task_revision": 146,
   "title": "Literature workload campaign integration",
-  "updated_at": "2026-09-27T08:17:46+00:00",
+  "updated_at": "2026-09-27T08:17:54+00:00",
   "worktree_key": ""
 }
 ---
@@ -496,3 +496,6 @@ tasks or require any live provider.
   and importing both serial CI guards. actionlint, cargo fmt, focused asb-cli 116 tests, and full
   serial workspace tests passed locally. No provenance changes needed; worktree clean. Independent
   review confirms only the reviewed literature diff plus CI synchronization.
+
+- 2026-09-27T08:17:54+00:00: Recorded command exit 0; command argv SHA-256
+  da82c61e2555d76437ce8a39bd287c1481d29b82cc9fa865589b09d20149f5d5.
