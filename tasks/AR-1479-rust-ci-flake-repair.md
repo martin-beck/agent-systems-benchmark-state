@@ -2,22 +2,22 @@
 {
   "branch": "",
   "checkpoint_commit": "1015a4613a27d0344476a65ccdec3962a17892b7",
-  "claim_expires": "2026-09-27T10:04:44+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1479",
   "next_action": "Monitor exact-main post-merge workflows for 1015a461; after all seven green, release AR-1479 and requalify AR-1420 PR #350 head 2884508.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "ar1332-record-replay-luna56",
+  "owner": "",
   "plan": "../plans/AR-1479-rust-ci-flake-repair.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Repair the unrelated Rust state-root collision and malformed-ready-marker timing flakes blocking AR-1420 exact-head CI.",
-  "task_revision": 102,
+  "task_revision": 103,
   "title": "Rust CI timing and state-root flake repair",
-  "updated_at": "2026-09-27T08:05:51+00:00",
+  "updated_at": "2026-09-27T08:06:22+00:00",
   "worktree_key": ""
 }
 ---
@@ -336,3 +336,6 @@ requalified. Preserve fail-closed cleanup and bounded execution semantics.
 
 - 2026-09-27T08:05:51+00:00: Recorded command exit 0; command argv SHA-256
   80c9b61a4900372de615dc8ec2b8e050f3ba3e6a75b242d318101bb0ac53c2b5.
+
+- 2026-09-27T08:06:22+00:00: Completed at merge 1015a461; all eight exact-main post-merge workflows
+  green; requalify AR-1420 PR #350 head 2884508 next.
