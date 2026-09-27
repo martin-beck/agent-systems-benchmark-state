@@ -18,11 +18,11 @@
   "plan": "../plans/AR-1374-cli-live-dispatch.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Consume authenticated runtime receipts in production asb run and sweep dispatch.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Production live-provider dispatch",
-  "updated_at": "2026-09-27T01:32:45+00:00",
+  "updated_at": "2026-09-27T02:11:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1374-cli-live-dispatch"
 }
 ---
@@ -113,3 +113,7 @@ reachability.
   runtime bridge/bootstrap constructors remain crate-private and dead_code pending the missing
   adapter. AR-1375 is planned for this exact cross-crate adapter. Next action: implement/promote
   AR-1375, then resume AR-1374 and qualify local/mock run and sweep.
+
+- 2026-09-27T02:11:02+00:00: AR-1472 is complete at merge 363b21f with all seven exact-main
+  workflows green and supplies the authenticated runtime adapter that resolved AR-1374 prior
+  blocker. Reopen for current-main requalification audit; no live provider or asb-tui changes.
