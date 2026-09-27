@@ -153,7 +153,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1420](../tasks/AR-1420-literature-workload-campaign-integration.md): Literature workload campaign integration | ar1332-record-replay-luna56 | Run the complete qualified literature workload matrix beside built-in software-engineering workloads. | Monitor PR #350 exact head ce42952 checks; merge only when every required check is green, then verify all post-merge workflows. |
+| P1 | [AR-1420](../tasks/AR-1420-literature-workload-campaign-integration.md): Literature workload campaign integration | ar1332-record-replay-luna56 | Run the complete qualified literature workload matrix beside built-in software-engineering workloads. | Merge PR #350 normally; verify merge SHA and all exact-main post-merge workflows, then release AR-1420 done. |
 
 ### Blocked (71)
 
@@ -512,3 +512,4 @@
 | P1 | [AR-0702](../tasks/AR-0702-native-platforms.md): Validate native Linux kernels and architectures | Unclaimed | Qualify native x86_64 and required emulated AArch64 portability; track native ARM64 as optional future evidence. | Rebase PR #31, replace native ARM64 completion gates with the pinned QEMU AArch64 lane where applicable, document native ARM64 as optional future qualification, and rerun exact-head checks. |
 | P1 | [AR-0704](../tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | PR #119 exact head 4630f90 is rebased onto protected main 5ddac12. Fresh exact-head checks were absent immediately after force-push; close/reopen retriggered them. At last query all 12 checks are pending except AWQ shadow and SPDX headers pass. Wait for every required check terminal success; do not merge on partial/pending evidence. |
 | P1 | [AR-0707](../tasks/AR-0707-emulated-aarch64-portability.md): Qualify emulated aarch64 portability | Unclaimed | Add explicit emulated-aarch64 portability qualification without claiming native support. | Provide a reproducible x86_64-hosted aarch64 VM/emulation lane for userspace portability and negative qualification only. |
+| P1 | [AR-0801](../tasks/AR-0801-terminal-interface.md): Implement terminal and automation interfaces | Unclaimed | Provide doctor, plan, run, sweep, compare and report with stable JSON output. | No further AR-0801 action; preserve the verified doctor, plan, run, sweep, compare, report, and serve surface, with record and replay explicitly unsupported. |
