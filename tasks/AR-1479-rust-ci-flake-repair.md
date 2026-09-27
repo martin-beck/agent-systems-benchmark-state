@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the unrelated Rust state-root collision and malformed-ready-marker timing flakes blocking AR-1420 exact-head CI.",
-  "task_revision": 90,
+  "task_revision": 91,
   "title": "Rust CI timing and state-root flake repair",
-  "updated_at": "2026-09-27T08:00:23+00:00",
+  "updated_at": "2026-09-27T08:00:30+00:00",
   "worktree_key": ""
 }
 ---
@@ -299,3 +299,6 @@ requalified. Preserve fail-closed cleanup and bounded execution semantics.
   PR #352 exact head 52368cd required checks all SUCCESS: Rust, credential-free,
   policy/coverage/supply-chain, platform, AArch64, formal, Loom, Kani, TLC, fault, fuzz,
   matcher/SLO, AWQ, Huawei.
+
+- 2026-09-27T08:00:30+00:00: Recorded command exit 0; command argv SHA-256
+  419e8f2037791d4888b9f5082fdd8c9847f9c46ed98c89365dbe605f72cbecfc.
