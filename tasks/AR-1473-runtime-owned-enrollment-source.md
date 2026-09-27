@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve authenticated control enrollment into an opaque runtime-owned source for normal ASB run and sweep.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Runtime-owned authenticated enrollment source",
-  "updated_at": "2026-09-27T10:43:38+00:00",
+  "updated_at": "2026-09-27T10:44:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1473-runtime-owned-enrollment-source"
 }
 ---
@@ -77,3 +77,6 @@ the existing fail-closed authority boundaries.
   not wired (materialize_handle_from_resolver remains dead-code and no source implementation
   exists). Scope remains implement the smallest private runtime-owned enrollment source; no caller
   authority or live provider.
+
+- 2026-09-27T10:44:31+00:00: Recorded command exit 0; command argv SHA-256
+  80f686c9e284663d0b87b5005cd228e41b5a79e718cd27a9a4001e8a688e0170.
