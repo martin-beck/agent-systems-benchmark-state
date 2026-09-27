@@ -10,7 +10,7 @@
     "AR-1416"
   ],
   "id": "AR-1424",
-  "next_action": "Classify bounded full-workspace state-root race with isolated asb-cli serial rerun; continue focused/full gates, signed commit and PR if no product regression.",
+  "next_action": "Commit signed/DCO AR-1424 changes, independently review, publish PR and monitor exact-head CI.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make all locally executable literature workloads selectable and campaignable beside built-in fixtures.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Complete literature selector and local campaign matrix",
-  "updated_at": "2026-09-27T08:46:15+00:00",
+  "updated_at": "2026-09-27T08:46:58+00:00",
   "worktree_key": ""
 }
 ---
@@ -78,3 +78,9 @@ dataset downloads are never requirements for this AR.
 
 - 2026-09-27T08:46:15+00:00: Recorded command exit 0; command argv SHA-256
   668ba78b3fe79b15f1a1dedf65a2ff0a41abefa4e72a4bdd9a37694f7a75a49d.
+
+- 2026-09-27T08:46:58+00:00: Focused and full gates now pass. Isolated CARGO_BUILD_JOBS=1 rerun of
+  production_backend... passed 1/1; full CARGO_BUILD_JOBS=1 cargo test --locked --workspace --
+  --test-threads=1 completed successfully (all unit/integration/doc tests). Initial unbounded local
+  workspace attempt had the known state-root contention; preserved as environment evidence and did
+  not weaken tests.
