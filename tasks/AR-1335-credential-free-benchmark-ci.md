@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1335-credential-free-benchmark-ci",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-27T08:11:24+00:00",
   "depends_on": [
     "AR-1333",
     "AR-1334"
   ],
   "id": "AR-1335",
   "next_action": "Add the required credential-free CI stage that exercises the complete benchmark path with loopback and synthetic doubles, no secrets, no egress and no network, keeping the 90% coverage floor.",
-  "owner": "",
+  "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1335.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Add the required credential-free CI stage for the complete benchmark path.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Credential-free CI stage for the benchmark path",
-  "updated_at": "2026-09-27T06:11:11+00:00",
+  "updated_at": "2026-09-27T06:11:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1335-credential-free-benchmark-ci"
 }
 ---
@@ -46,3 +46,5 @@ reachability.
 
 - 2026-09-27T06:11:11+00:00: AR-1333 supersession now explicitly points to completed AR-1456;
   AR-1334 is done. Promote credential-free benchmark CI stage.
+
+- 2026-09-27T06:11:24+00:00: Claimed by ar1332-record-replay-luna56.
