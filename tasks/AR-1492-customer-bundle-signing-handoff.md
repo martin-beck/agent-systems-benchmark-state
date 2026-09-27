@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stage a deterministic customer bundle and provide an explicit external signing handoff and verifier.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Customer bundle signing handoff",
-  "updated_at": "2026-09-27T16:16:04+00:00",
+  "updated_at": "2026-09-27T16:16:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1492-customer-bundle-signing-handoff"
 }
 ---
@@ -56,3 +56,6 @@ detached signature.
 
 - 2026-09-27T16:15:51+00:00: Recorded command exit 0; command argv SHA-256
   e501325c2f00e14e73d45ed23a843b3da31b59f73801b77c791316dc6a8bd116.
+
+- 2026-09-27T16:16:08+00:00: Recorded command exit 1; command argv SHA-256
+  606808e88963abca5725c993a1e1dff7625a0cdcf0b18d08476614e429169a15.
