@@ -152,7 +152,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md): Credential-free CI stage for the benchmark path | ar1332-record-replay-luna56 | Add the required credential-free CI stage for the complete benchmark path. | Monitor PR #349 exact head 16e4bf8 through all required checks; merge only after every check is SUCCESS. |
+| P1 | [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md): Credential-free CI stage for the benchmark path | ar1332-record-replay-luna56 | Add the required credential-free CI stage for the complete benchmark path. | Monitor remaining exact-main workflows for merge 8361a8dd; release AR-1335 only after all eight terminal SUCCESS. |
 
 ### Blocked (71)
 

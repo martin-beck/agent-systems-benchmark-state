@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1335-credential-free-benchmark-ci",
-  "checkpoint_commit": "16e4bf8405b98c229bda49f82253f21784d82d51",
+  "checkpoint_commit": "8361a8ddd2cda97d9f6e03af811840bbe41b7af3",
   "claim_expires": "2026-09-27T08:38:29+00:00",
   "depends_on": [
     "AR-1333",
     "AR-1334"
   ],
   "id": "AR-1335",
-  "next_action": "Monitor PR #349 exact head 16e4bf8 through all required checks; merge only after every check is SUCCESS.",
+  "next_action": "Monitor remaining exact-main workflows for merge 8361a8dd; release AR-1335 only after all eight terminal SUCCESS.",
   "observed_branch": "feature/ar-1335-credential-free-benchmark-ci",
   "observed_dirty": 0,
   "observed_head": "16e4bf8405b98c229bda49f82253f21784d82d51",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the required credential-free CI stage for the complete benchmark path.",
-  "task_revision": 106,
+  "task_revision": 107,
   "title": "Credential-free CI stage for the benchmark path",
-  "updated_at": "2026-09-27T06:38:32+00:00",
+  "updated_at": "2026-09-27T06:38:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1335-credential-free-benchmark-ci"
 }
 ---
@@ -340,3 +340,11 @@ reachability.
 
 - 2026-09-27T06:38:32+00:00: Recorded command exit 0; command argv SHA-256
   9915bc8cf2321435a24f4eb1d47b3eebdbeb79c06ad84b68d9c4e02028127c93.
+
+- 2026-09-27T06:38:57+00:00: PR #349 exact-head snapshot before merge: all 13 named checks SUCCESS,
+  including Credential-free benchmark path, Rust, AArch64, policy/coverage, TLC, Huawei, retained
+  faults, platform, AWQ, fuzz, Kani, matcher and Loom. PR merged normally to 8361a8dd. Post-merge
+  exact-main snapshot: Credential-free 36300553894 SUCCESS; Huawei 36300554023 SUCCESS; hosted
+  36300553958 SUCCESS; fault 36300554039 SUCCESS; Rust 36300553949 IN_PROGRESS; repository quality
+  36300553983 IN_PROGRESS; AArch64 36300553906 IN_PROGRESS; formal 36300553987 IN_PROGRESS. No
+  failures; four workflows remain active.
