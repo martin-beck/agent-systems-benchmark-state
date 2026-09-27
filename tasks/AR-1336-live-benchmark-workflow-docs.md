@@ -12,16 +12,16 @@
   "next_action": "Document the end-to-end live benchmark workflow and publish the supported agent by provider by model support matrix, with exact digests and evidence limits.",
   "observed_branch": "feature/ar-1336-live-benchmark-workflow-docs",
   "observed_dirty": 0,
-  "observed_head": "1489b4e1fed481556611ea4090ee17973bb95729",
+  "observed_head": "f817af5ae921f941a4410f1e1cd20edd79986f66",
   "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1336.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Document the live benchmark workflow and publish the supported agent and provider matrix.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Live benchmark workflow documentation and support matrix",
-  "updated_at": "2026-09-27T09:38:28+00:00",
+  "updated_at": "2026-09-27T09:38:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1336-live-benchmark-workflow-docs"
 }
 ---
