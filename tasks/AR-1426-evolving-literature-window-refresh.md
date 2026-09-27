@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Refresh evolving literature benchmark windows without stale or incomparable results.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Evolving literature workload window refresh",
-  "updated_at": "2026-09-27T10:24:36+00:00",
+  "updated_at": "2026-09-27T10:24:49+00:00",
   "worktree_key": ""
 }
 ---
@@ -134,3 +134,6 @@ requires live providers or upstream downloads during development or CI.
   identity, rejects unknown/tampered/incomplete/cross-window inputs, and has positive/negative
   tests. No asb-tui, provider, network, or credential changes. PR #355 exact-head all 13 required
   checks SUCCESS.
+
+- 2026-09-27T10:24:49+00:00: Recorded command exit 0; command argv SHA-256
+  20f3f61fe754a0f00783e9c2be0917d9cdf06374c5c05671e10718108086a4c5.
