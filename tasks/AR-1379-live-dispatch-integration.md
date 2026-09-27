@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1379-live-dispatch-integration",
-  "checkpoint_commit": "8e22be0fb90169a96f268079d8435dfe053e9fb9",
+  "checkpoint_commit": "1e2c59119820bc073ea4c6736782f5041a395a28",
   "claim_expires": "2026-09-27T04:39:35+00:00",
   "depends_on": [
     "AR-1378",
@@ -11,7 +11,7 @@
     "AR-1362"
   ],
   "id": "AR-1379",
-  "next_action": "Continue polling PR #344 exact head 8e22be0; Rust, emulated-aarch64, and Policy/coverage/supply-chain workflows are in_progress. Merge only after all named checks terminal SUCCESS.",
+  "next_action": "Monitor all seven post-merge workflows on main SHA 1e2c591; release AR-1379 only after all seven terminal SUCCESS with exact SHA.",
   "observed_branch": "feature/ar-1379-live-dispatch-integration",
   "observed_dirty": 0,
   "observed_head": "8e22be0fb90169a96f268079d8435dfe053e9fb9",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate authenticated runtime live dispatch into asb run and sweep.",
-  "task_revision": 127,
+  "task_revision": 128,
   "title": "Production live dispatch integration",
-  "updated_at": "2026-09-27T03:06:39+00:00",
+  "updated_at": "2026-09-27T03:07:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1379-live-dispatch-integration"
 }
 ---
@@ -410,3 +410,9 @@ verified through the completed gates.
 
 - 2026-09-27T03:06:39+00:00: Recorded command exit 0; command argv SHA-256
   a6acce5e0449209bfab4ac9732b5b776857fe084d6202ac541889af7eac86b72.
+
+- 2026-09-27T03:07:03+00:00: PR #344 merged after all 12 exact-head required checks passed. Merge
+  commit 1e2c59119820bc073ea4c6736782f5041a395a28 is current origin/main. Seven post-merge workflows
+  started at this exact SHA: Emulated aarch64, Rust verification, Fault assurance, Formal assurance,
+  Hosted portability/native qualification, Huawei MIT headers, Repository quality. At first
+  post-merge poll, six in_progress and headers success; no release yet.
