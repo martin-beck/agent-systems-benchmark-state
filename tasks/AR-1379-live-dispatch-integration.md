@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate authenticated runtime live dispatch into asb run and sweep.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Production live dispatch integration",
-  "updated_at": "2026-09-27T02:28:57+00:00",
+  "updated_at": "2026-09-27T02:29:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1379-live-dispatch-integration"
 }
 ---
@@ -175,3 +175,6 @@ verified through the completed gates.
   11f3db5078dfa122c1c9c8b533de4a53732424f4 against main 363b21f81d5c5ab364c2e2a923bd82676feaf343.
   Initial checks: Huawei headers and AWQ shadow pass; remaining required checks pending;
   mergeStateStatus UNSTABLE. No merge attempted.
+
+- 2026-09-27T02:29:07+00:00: Recorded command exit 8; command argv SHA-256
+  a91c4272839ebb8d62b277b17ab68e00a0e36aee9d398c1f9f2541004fdf4aa2.
