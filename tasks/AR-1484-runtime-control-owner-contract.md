@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1484-runtime-control-owner-contract",
-  "checkpoint_commit": "f2eab98d0cb0c09c2d84c109d71c5ddbedc782fa",
+  "checkpoint_commit": "7ce533ea9b0524c5b317cc2db8fad0aff8ecedc3",
   "claim_expires": "2026-09-27T14:09:06+00:00",
   "depends_on": [
     "AR-1472",
@@ -9,7 +9,7 @@
     "AR-1480"
   ],
   "id": "AR-1484",
-  "next_action": "Publish exact signed head f2eab98d0cb0c09c2d84c109d71c5ddbedc782fa, monitor required CI, merge only all green.",
+  "next_action": "Monitor PR #358 exact head 7ce533ea9b0524c5b317cc2db8fad0aff8ecedc3 until all required checks are SUCCESS; merge only then.",
   "observed_branch": "feature/ar-1484-runtime-control-owner-contract",
   "observed_dirty": 0,
   "observed_head": "7ce533ea9b0524c5b317cc2db8fad0aff8ecedc3",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define stable runtime/control process-owner lifecycle and opaque handoff contract.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Runtime/control process-owner contract",
-  "updated_at": "2026-09-27T12:21:24+00:00",
+  "updated_at": "2026-09-27T12:22:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1484-runtime-control-owner-contract"
 }
 ---
@@ -98,3 +98,9 @@ authority.
 
 - 2026-09-27T12:21:24+00:00: Recorded command exit 0; command argv SHA-256
   f0a5ebdbf287d4a768060d3adc409337fa616b59da07287110ed6d7d62392bdd.
+
+- 2026-09-27T12:22:07+00:00: PR #358 initial head f2eab98 failed Exact Huawei 2026/SPDX header check
+  because new Rust module lacked required source header. Corrected with signed+DCO fix commit
+  7ce533ea9b0524c5b317cc2db8fad0aff8ecedc3 (SSH signature verified), focused contract tests 3/3 and
+  source-header policy pass, then force-with-lease updated PR #358. Previous substantive gates
+  remain green; checks must rerun at exact new head.
