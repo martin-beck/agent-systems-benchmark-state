@@ -139,7 +139,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1469](../tasks/AR-1469-ar1392-protected-topology-repair.md): AR-1392 protected-main topology repair | ar1332_record_replay_luna56 | Repair the single-parent protected merge for AR-1392 without changing its reviewed implementation. | Monitor PR #340 exact-head checks after synchronized topic; merge only normal two-parent and all checks green. |
+| P0 | [AR-1469](../tasks/AR-1469-ar1392-protected-topology-repair.md): AR-1392 protected-main topology repair | ar1332_record_replay_luna56 | Repair the single-parent protected merge for AR-1392 without changing its reviewed implementation. | Reconcile and doctor state after seven green exact-main workflows; topology repair complete. |
 
 ### Blocked (70)
 

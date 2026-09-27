@@ -1,11 +1,11 @@
 ---
 {
   "branch": "repair/ar-1469-ar1392-protected-topology-repair",
-  "checkpoint_commit": "e39d27d83939f77b619adcb0350b941da746d7d2",
+  "checkpoint_commit": "b9d7b6ee251b3a119496d3c16f65ffc971704f3a",
   "claim_expires": "2026-09-27T03:00:02+00:00",
   "depends_on": [],
   "id": "AR-1469",
-  "next_action": "Monitor PR #340 exact-head checks after synchronized topic; merge only normal two-parent and all checks green.",
+  "next_action": "Reconcile and doctor state after seven green exact-main workflows; topology repair complete.",
   "observed_branch": "repair/ar-1469-ar1392-protected-topology-repair",
   "observed_dirty": 0,
   "observed_head": "e39d27d83939f77b619adcb0350b941da746d7d2",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the single-parent protected merge for AR-1392 without changing its reviewed implementation.",
-  "task_revision": 83,
+  "task_revision": 84,
   "title": "AR-1392 protected-main topology repair",
-  "updated_at": "2026-09-27T00:00:10+00:00",
+  "updated_at": "2026-09-27T00:00:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1469-ar1392-protected-topology-repair"
 }
 ---
@@ -260,3 +260,13 @@ green exact-head checks; the failed squash topology remains part of the record.
 
 - 2026-09-27T00:00:10+00:00: Recorded command exit 0; command argv SHA-256
   a7e81b89e906b38cad6455a453805e9934984252780f78df0de40b728f023bf6.
+
+- 2026-09-27T00:00:38+00:00: Completed PR #340 topology repair. Independent review passed for exact
+  head e39d27d83939f77b619adcb0350b941da746d7d2; all 12 PR checks green. Normal merge produced
+  b9d7b6ee251b3a119496d3c16f65ffc971704f3a with parents 3cd6a5a84493842e402dff55e1c2c266f2454752
+  (protected main first parent) and e39d27d83939f77b619adcb0350b941da746d7d2 (repair topic second
+  parent); no squash. Product tree diff 78ab92b..origin/main is empty. Seven exact-main workflows
+  green: Huawei 36280737608, Hosted 36280737609, Fault 36280737591, Formal 36280737585, Rust
+  36280737589, Emulated AArch64 36280737580, Repository quality 36280737659. Preserved initial PR
+  #340 integrity failures before synchronization and obsolete AR-1392 single-parent failure
+  36279474851 as immutable evidence.
