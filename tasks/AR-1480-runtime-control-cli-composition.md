@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compose authenticated runtime enrollment into opaque normal CLI run and sweep dispatch.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Runtime-control CLI composition",
-  "updated_at": "2026-09-27T11:25:35+00:00",
+  "updated_at": "2026-09-27T11:26:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1480-runtime-control-cli-composition"
 }
 ---
@@ -76,3 +76,6 @@ and never gates local qualification.
 
 - 2026-09-27T11:25:35+00:00: Recorded command exit 101; command argv SHA-256
   d6ece9b50bad2e5bcf4979b15480d66d38cc94e188f9c1155f51ca9f32af5728.
+
+- 2026-09-27T11:26:08+00:00: Recorded command exit 0; command argv SHA-256
+  a7f68e4c0b3fa94122973819ed7485fa9cfc8473bfd3fa2043727b74f6172a40.
