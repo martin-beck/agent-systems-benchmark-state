@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #360 | `feature/ar-1486-runtime-owner-cli-entry-wiring@a5f9ad27b967` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): wire runtime owner into local mock entry |
+| #360 | `feature/ar-1486-runtime-owner-cli-entry-wiring@a5f9ad27b967` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): wire runtime owner into local mock entry |
 
 ## Recent workflows
 
@@ -19,7 +19,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36322926146 | `a5f9ad27b967` | pull_request | Repository quality | in_progress:- |
 | 36322926132 | `a5f9ad27b967` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36322926118 | `a5f9ad27b967` | pull_request | Huawei MIT source headers | completed:success |
-| 36322926085 | `a5f9ad27b967` | pull_request | Rust verification | in_progress:- |
+| 36322926085 | `a5f9ad27b967` | pull_request | Rust verification | completed:success |
 | 36322926083 | `a5f9ad27b967` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 36322926079 | `a5f9ad27b967` | pull_request | Hosted portability and native qualification | completed:success |
 | 36322926059 | `a5f9ad27b967` | pull_request | Fault assurance | completed:success |
