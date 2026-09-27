@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1477-authority-resolver-coverage-tests",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "3b8b2001b7fe19f1fdd47dedfa2156eca8a8a6cb",
   "claim_expires": "2026-09-27T07:18:48+00:00",
   "depends_on": [
     "AR-1200",
@@ -9,7 +9,7 @@
     "AR-1472"
   ],
   "id": "AR-1477",
-  "next_action": "Promote after validating completed dependencies, then reproduce the 89.88 percent exact-head coverage failure and add behavioral tests.",
+  "next_action": "Monitor PR #347 exact head 3b8b2001; merge only after all required checks are SUCCESS, then verify post-merge workflows and rerun PR #345 validation.",
   "observed_branch": "feature/ar-1477-authority-resolver-coverage-tests",
   "observed_dirty": 0,
   "observed_head": "3b8b2001b7fe19f1fdd47dedfa2156eca8a8a6cb",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Raise exact hosted coverage above the enforced 90 percent floor for the authority resolver.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Cover authority resolver behavior",
-  "updated_at": "2026-09-27T05:21:41+00:00",
+  "updated_at": "2026-09-27T05:22:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1477-authority-resolver-coverage-tests"
 }
 ---
@@ -140,3 +140,10 @@ the coverage floor remains unchanged.
 
 - 2026-09-27T05:21:41+00:00: Recorded command exit 0; command argv SHA-256
   942af07ea81f542042894ab0b2d37af034d29e18719ce6a5e025c3b6d2131aae.
+
+- 2026-09-27T05:22:06+00:00: Added 3 deterministic authority-resolver tests in
+  crates/asb-runtime/src/live_service.rs covering persistence/digest-only record, owner/generation
+  fencing, cancellation and teardown revocation, invalid enrollment inputs, and private-input
+  non-disclosure. Focused resolver tests pass 3/3. Full local workspace coverage passes at 90.56%
+  lines (65045 instrumented, 6139 missed) with 90% floor unchanged. Signed+DCO commit
+  3b8b2001b7fe19f1fdd47dedfa2156eca8a8a6cb pushed; PR #347 opened.
