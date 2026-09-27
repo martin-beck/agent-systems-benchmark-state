@@ -9,7 +9,7 @@
     "AR-1485"
   ],
   "id": "AR-1486",
-  "next_action": "Refresh docs/asb-cli-workflow-v1.provenance.json to exact current CLI hash through handoffctl, then rerun full gates.",
+  "next_action": "Rerun full workspace/docs/privacy/release/policy/clean gates after owner-backed local mock execution fix and provenance refresh.",
   "observed_branch": "feature/ar-1486-runtime-owner-cli-entry-wiring",
   "observed_dirty": 4,
   "observed_head": "a6f43eb2a651fcfa3c0abe3b9e4dddaea78b6a80",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire the runtime-owned local/mock process owner into ordinary CLI run and sweep.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Runtime-owner CLI entry wiring",
-  "updated_at": "2026-09-27T13:32:10+00:00",
+  "updated_at": "2026-09-27T13:32:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1486-cli-owner-wiring"
 }
 ---
@@ -87,3 +87,9 @@ authority.
 
 - 2026-09-27T13:32:10+00:00: Recorded command exit 0; command argv SHA-256
   b2e8c8ec212c0b36fdca4044142a1c00adecd8df3887d22fd859551bb8e09c65.
+
+- 2026-09-27T13:32:44+00:00: Additional focused retry had one compile exit-101: borrowed
+  local_mock_owner reference escaped into Scheduler::run_with_context closure requiring static
+  lifetime (E0521). Corrected by moving the owner into Arc<Mutex<LocalMockRuntimeControlOwner>> and
+  passing cloned opaque ownership into the scheduler; focused run/sweep and teardown-reuse tests now
+  pass. Current CLI source digest is 2087e80f... and provenance fixture was refreshed accordingly.

@@ -163,7 +163,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1486](../tasks/AR-1486-runtime-owner-cli-entry-wiring.md): Runtime-owner CLI entry wiring | ar1332-record-replay-luna56 | Wire the runtime-owned local/mock process owner into ordinary CLI run and sweep. | Refresh docs/asb-cli-workflow-v1.provenance.json to exact current CLI hash through handoffctl, then rerun full gates. |
+| P0 | [AR-1486](../tasks/AR-1486-runtime-owner-cli-entry-wiring.md): Runtime-owner CLI entry wiring | ar1332-record-replay-luna56 | Wire the runtime-owned local/mock process owner into ordinary CLI run and sweep. | Rerun full workspace/docs/privacy/release/policy/clean gates after owner-backed local mock execution fix and provenance refresh. |
 
 ### Blocked (73)
 
