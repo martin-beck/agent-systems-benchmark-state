@@ -12,7 +12,7 @@
   "id": "AR-1487",
   "next_action": "Promote and claim, then qualify the owner-backed credential-free local/mock/replay journey on current protected main.",
   "observed_branch": "feature/ar-1487-owner-backed-first-customer-qualification",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "79f88d3ca03120fd7d69f67cb292c96051a5e770",
   "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1487-owner-backed-first-customer-qualification.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the owner-backed credential-free local/mock/replay first-customer journey.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Owner-backed first-customer qualification",
-  "updated_at": "2026-09-27T14:02:02+00:00",
+  "updated_at": "2026-09-27T14:02:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1487-owner-backed-qualification"
 }
 ---
