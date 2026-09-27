@@ -13,16 +13,16 @@
   "next_action": "Unblock after AR-1375 supplies the authenticated runtime control adapter and cross-crate bootstrap seam; then requalify run/sweep locally before any publication.",
   "observed_branch": "feature/ar-1374-cli-live-dispatch",
   "observed_dirty": 0,
-  "observed_head": "4ee5a4ed843c7dd7dda0b92dbe392f3787b4039f",
+  "observed_head": "363b21f81d5c5ab364c2e2a923bd82676feaf343",
   "owner": "ar1374-dispatch-requal-luna56",
   "plan": "../plans/AR-1374-cli-live-dispatch.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Consume authenticated runtime receipts in production asb run and sweep dispatch.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Production live-provider dispatch",
-  "updated_at": "2026-09-27T02:12:31+00:00",
+  "updated_at": "2026-09-27T02:12:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1374-cli-live-dispatch"
 }
 ---
