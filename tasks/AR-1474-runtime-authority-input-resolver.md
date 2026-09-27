@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Runtime-owned authority-input resolver",
-  "updated_at": "2026-09-27T03:52:05+00:00",
+  "updated_at": "2026-09-27T03:52:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1474-runtime-authority-input-resolver"
 }
 ---
@@ -215,3 +215,6 @@ authority, privacy, lifecycle, formal, or egress contracts.
 - 2026-09-27T03:52:05+00:00: Rust initial run failed unrelated existing asb-metrics assertion;
   approved exact-head rerun 36292250053 is still running after clippy success. Repository quality
   36292250172 failed workspace coverage at 88.04% and must be diagnosed/retried; no gate waived.
+
+- 2026-09-27T03:52:13+00:00: Recorded command exit 0; command argv SHA-256
+  9aefbfa6b63061e3e503ee6fb08ec20a7a184998accc6dcc4b95d71f9981a100.
