@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the unrelated Rust state-root collision and malformed-ready-marker timing flakes blocking AR-1420 exact-head CI.",
-  "task_revision": 94,
+  "task_revision": 95,
   "title": "Rust CI timing and state-root flake repair",
-  "updated_at": "2026-09-27T08:01:41+00:00",
+  "updated_at": "2026-09-27T08:01:50+00:00",
   "worktree_key": ""
 }
 ---
@@ -313,3 +313,6 @@ requalified. Preserve fail-closed cleanup and bounded execution semantics.
   SHA 1015a461. Post-merge exact-main runs started: Credential-free 36304800227, Rust 36304800214,
   Formal 36304800212, Hosted 36304800202, Repository quality 36304800200, Huawei 36304800192
   (SUCCESS), Fault 36304800189, Emulated AArch64 36304800188. Merge was normal and non-squash.
+
+- 2026-09-27T08:01:50+00:00: Recorded command exit 0; command argv SHA-256
+  71072dfd602e002e171efd265db4298d396d0b23a5adc4e35306a6adc839ccd1.
