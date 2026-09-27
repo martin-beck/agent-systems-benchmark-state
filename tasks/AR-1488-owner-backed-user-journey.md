@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Owner-backed first-customer user journey",
-  "updated_at": "2026-09-27T14:46:45+00:00",
+  "updated_at": "2026-09-27T14:47:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1488-owner-backed-user-journey"
 }
 ---
@@ -108,3 +108,6 @@ live provider.
   UNSTABLE. Green: AWQ shadow evidence and Huawei MIT headers. In progress/queued: credential-free,
   AArch64, retained faults, TLC/Alloy, platform, policy/coverage/supply chain, Rust, fuzz, Kani,
   mutation, Loom.
+
+- 2026-09-27T14:47:50+00:00: Recorded command exit 0; command argv SHA-256
+  c2abe0496c095ad1c9e87eeb7faf626ba38d6ec50de1dd16251ffa35f4a1bcc4.
