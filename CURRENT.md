@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1477](tasks/AR-1477-authority-resolver-coverage-tests.md): Cover authority resolver behavior | Raise exact hosted coverage above the enforced 90 percent floor for the authority resolver. | Merge PR #347 normally now that all 12 required checks are SUCCESS; then verify seven exact-main post-merge workflows. | ar1332-record-replay-luna56 |
+| P0 | [AR-1477](tasks/AR-1477-authority-resolver-coverage-tests.md): Cover authority resolver behavior | Raise exact hosted coverage above the enforced 90 percent floor for the authority resolver. | Create a narrow protected-main topology repair successor for merge 67fa0d1; repository policy requires topic synchronization merge at tip. Preserve all six other post-merge results and do not waive policy. | ar1332-record-replay-luna56 |
 
 ## Blocked
 

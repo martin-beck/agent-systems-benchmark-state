@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1477-authority-resolver-coverage-tests",
-  "checkpoint_commit": "3b8b2001b7fe19f1fdd47dedfa2156eca8a8a6cb",
+  "checkpoint_commit": "67fa0d1a7ff90a9d3a38dadf7d69101e8c70d32a",
   "claim_expires": "2026-09-27T07:28:59+00:00",
   "depends_on": [
     "AR-1200",
@@ -9,7 +9,7 @@
     "AR-1472"
   ],
   "id": "AR-1477",
-  "next_action": "Merge PR #347 normally now that all 12 required checks are SUCCESS; then verify seven exact-main post-merge workflows.",
+  "next_action": "Create a narrow protected-main topology repair successor for merge 67fa0d1; repository policy requires topic synchronization merge at tip. Preserve all six other post-merge results and do not waive policy.",
   "observed_branch": "feature/ar-1477-authority-resolver-coverage-tests",
   "observed_dirty": 0,
   "observed_head": "3b8b2001b7fe19f1fdd47dedfa2156eca8a8a6cb",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Raise exact hosted coverage above the enforced 90 percent floor for the authority resolver.",
-  "task_revision": 73,
+  "task_revision": 74,
   "title": "Cover authority resolver behavior",
-  "updated_at": "2026-09-27T05:31:40+00:00",
+  "updated_at": "2026-09-27T05:32:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1477-authority-resolver-coverage-tests"
 }
 ---
@@ -238,3 +238,9 @@ the coverage floor remains unchanged.
 
 - 2026-09-27T05:31:40+00:00: Recorded command exit 0; command argv SHA-256
   0bc5412b78565ee78ac5e6fe4aef18f0a9fa30152580d2c48e2211adc8237235.
+
+- 2026-09-27T05:32:12+00:00: PR #347 merged normally at 2026-09-27T05:30:07Z into protected main as
+  merge 67fa0d1a7ff90a9d3a38dadf7d69101e8c70d32a; implementation tree includes resolver tests.
+  Post-merge repository quality run 36297383090 terminal FAILURE: repository_policy.py reports
+  protected-main topic synchronization merge must be at the tip. This is a protected-main topology
+  gate failure; no waiver. Other six exact-main workflows remain monitored.
