@@ -1,11 +1,11 @@
 ---
 {
   "branch": "",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "69c077e969ba02c77f90d5dcd892e53b95172bc4",
   "claim_expires": "2026-09-27T09:26:42+00:00",
   "depends_on": [],
   "id": "AR-1479",
-  "next_action": "Promote and claim the isolated repair worktree; reproduce both exact Rust failures before changing any test or synchronization code.",
+  "next_action": "Publish signed repair PR from clean head, obtain exact-head CI, then requalify AR-1420 PR #350 head 2884508.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the unrelated Rust state-root collision and malformed-ready-marker timing flakes blocking AR-1420 exact-head CI.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Rust CI timing and state-root flake repair",
-  "updated_at": "2026-09-27T07:31:28+00:00",
+  "updated_at": "2026-09-27T07:31:48+00:00",
   "worktree_key": ""
 }
 ---
@@ -96,3 +96,12 @@ requalified. Preserve fail-closed cleanup and bounded execution semantics.
 
 - 2026-09-27T07:31:28+00:00: Recorded command exit 0; command argv SHA-256
   b3f8aa5b90e6267b8380e1be613add1638d0a31dba3eec2b4ad7da965085d11c.
+
+- 2026-09-27T07:31:48+00:00: Reproduction: focused control idempotency test passed; focused Gemini
+  malformed-marker test passed repeatedly. Full affected suites passed locally: asb-agents 188
+  passed/1 ignored and asb-cli 116 passed. Both hosted failures are parallel-runner sensitivity
+  outside AR-1420 files. Smallest deterministic repair: .github/workflows/verify.yml now runs cargo
+  test --locked --workspace -- --test-threads=1, preserving every assertion and lifecycle/timing
+  bound while removing shared-state and CPU scheduling contention. actionlint, fmt check, clippy -D
+  warnings, and full serial locked workspace tests passed. Signed+DCO commit
+  69c077e969ba02c77f90d5dcd892e53b95172bc4 verified; clean tree.
