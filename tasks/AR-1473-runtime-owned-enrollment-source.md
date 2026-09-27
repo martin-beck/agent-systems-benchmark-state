@@ -9,7 +9,7 @@
     "AR-1379"
   ],
   "id": "AR-1473",
-  "next_action": "Await AArch64 36314444926, Rust 36314444940, Repository quality 36314444954; all other five post-merge workflows SUCCESS. Release done after these three SUCCESS.",
+  "next_action": "Reconcile/doctor live state, then release AR-1473 done.",
   "observed_branch": "feature/ar-1473-runtime-owned-enrollment-source",
   "observed_dirty": 0,
   "observed_head": "4a29c3431d236cc9766c47408dab8de998a31a3b",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve authenticated control enrollment into an opaque runtime-owned source for normal ASB run and sweep.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Runtime-owned authenticated enrollment source",
-  "updated_at": "2026-09-27T11:11:23+00:00",
+  "updated_at": "2026-09-27T11:11:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1473-runtime-owned-enrollment-source"
 }
 ---
@@ -197,3 +197,11 @@ the existing fail-closed authority boundaries.
 
 - 2026-09-27T11:11:23+00:00: Recorded command exit 0; command argv SHA-256
   70c68eaec76c0a74d99fa54a5ae92a8d0e946cfec384add83146166562127260.
+
+- 2026-09-27T11:11:56+00:00: Final post-merge verification complete: merge
+  59323f41ed2d10a952a1276107459260ebdf409a from signed+DCO head
+  4a29c3431d236cc9766c47408dab8de998a31a3b; all eight exact-main workflows terminal SUCCESS:
+  Credential-free 36314444913; Emulated AArch64 36314444926; Formal 36314444936; Rust 36314444940;
+  Hosted portability 36314444948; Repository quality 36314444954; Fault assurance 36314444956;
+  Huawei headers 36314444973. PR #356 closed merged. Runtime source change remained ASB-only,
+  private, local/mock-tested, no live provider/asb-tui.

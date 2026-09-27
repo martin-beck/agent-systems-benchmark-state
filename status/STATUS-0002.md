@@ -153,7 +153,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1473](../tasks/AR-1473-runtime-owned-enrollment-source.md): Runtime-owned authenticated enrollment source | ar1332-record-replay-luna56 | Resolve authenticated control enrollment into an opaque runtime-owned source for normal ASB run and sweep. | Await AArch64 36314444926, Rust 36314444940, Repository quality 36314444954; all other five post-merge workflows SUCCESS. Release done after these three SUCCESS. |
+| P0 | [AR-1473](../tasks/AR-1473-runtime-owned-enrollment-source.md): Runtime-owned authenticated enrollment source | ar1332-record-replay-luna56 | Resolve authenticated control enrollment into an opaque runtime-owned source for normal ASB run and sweep. | Reconcile/doctor live state, then release AR-1473 done. |
 
 ### Blocked (70)
 
