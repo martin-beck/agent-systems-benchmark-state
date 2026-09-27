@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run fresh package first-customer runtime acceptance and produce an explicit readiness report.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Fresh package runtime acceptance",
-  "updated_at": "2026-09-27T15:36:29+00:00",
+  "updated_at": "2026-09-27T15:36:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1490-fresh-package-runtime-acceptance"
 }
 ---
@@ -39,3 +39,6 @@ when exact package or clean-environment inputs are absent.
   fresh ASB package/runtime acceptance with local/mock/replay-only readiness evidence.
 
 - 2026-09-27T15:36:29+00:00: Claimed by ar1332-record-replay-luna56.
+
+- 2026-09-27T15:36:38+00:00: Recorded command exit 0; command argv SHA-256
+  13f4f9c5f67aa4aed2c2b85c387264f5d51709a5131bd7ca39d58e9e03b0f72d.
