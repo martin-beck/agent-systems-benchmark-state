@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve authenticated control enrollment into an opaque runtime-owned source for normal ASB run and sweep.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Runtime-owned authenticated enrollment source",
-  "updated_at": "2026-09-27T10:47:39+00:00",
+  "updated_at": "2026-09-27T10:50:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1473-runtime-owned-enrollment-source"
 }
 ---
@@ -105,3 +105,6 @@ the existing fail-closed authority boundaries.
   full runtime clippy exit 101 was new-source dead-code lint; fixed with scoped allowance matching
   existing private resolver. Signed SSH+DCO commit 4a29c3431d236cc9766c47408dab8de998a31a3b. No
   asb-tui/live-provider authority changes.
+
+- 2026-09-27T10:50:48+00:00: Recorded command exit 0; command argv SHA-256
+  93d9b153ca69f1ef9e0239282911bf620a82c296540d11205da622ee95b808ac.
