@@ -10,15 +10,18 @@
   ],
   "id": "AR-1473",
   "next_action": "Promote after validating completed dependencies, then claim the isolated worktree and implement the narrow runtime-owned enrollment source.",
+  "observed_branch": "feature/ar-1473-runtime-owned-enrollment-source",
+  "observed_dirty": 0,
+  "observed_head": "1e2c59119820bc073ea4c6736782f5041a395a28",
   "owner": "ar1332_record_replay_luna56",
   "plan": "../plans/AR-1473-runtime-owned-enrollment-source.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve authenticated control enrollment into an opaque runtime-owned source for normal ASB run and sweep.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Runtime-owned authenticated enrollment source",
-  "updated_at": "2026-09-27T03:24:17+00:00",
+  "updated_at": "2026-09-27T03:24:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1473-runtime-owned-enrollment-source"
 }
 ---
