@@ -1926,7 +1926,6 @@ flowchart LR
     AR_1488 --> AR_1491
     AR_1489 --> AR_1490
     AR_1489 --> AR_1491
-    AR_1490 --> AR_1491
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
