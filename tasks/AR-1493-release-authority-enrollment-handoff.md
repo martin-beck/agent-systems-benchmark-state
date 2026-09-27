@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define and validate the external release-authority enrollment and signed-bundle verification handoff.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Release-authority enrollment handoff",
-  "updated_at": "2026-09-27T16:59:17+00:00",
+  "updated_at": "2026-09-27T16:59:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1493-release-authority-enrollment-handoff"
 }
 ---
@@ -100,3 +100,6 @@ and preserve AR-1490 as the customer-release blocker.
   Signed+DCO commit 6f5dfd5c3292fd177a8f627c661e68ef30c40c65 verified SSH signature. One concurrent
   cargo invocation recorded LOCK_TIMEOUT and was rerun successfully; invalid check_source_headers
   path was a command/setup error (file absent), not product failure.
+
+- 2026-09-27T16:59:27+00:00: Recorded command exit 0; command argv SHA-256
+  579ef7db444bc7988a1f404a41609d04b7d18de014db18bae75b6c79862893c3.
