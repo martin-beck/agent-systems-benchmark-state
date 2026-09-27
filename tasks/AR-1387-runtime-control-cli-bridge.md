@@ -18,11 +18,11 @@
   "plan": "../plans/AR-1387-runtime-control-cli-bridge.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Bridge authenticated runtime/control bootstrap state into the production CLI dispatch path.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Authenticated runtime-control CLI bridge",
-  "updated_at": "2026-09-27T02:39:39+00:00",
+  "updated_at": "2026-09-27T02:41:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1387-runtime-control-cli-bridge"
 }
 ---
@@ -95,3 +95,6 @@ reachability.
   product edits, no asb-tui, no live provider. Next action: resume the narrowest successor AR-1391
   (runtime-control bootstrap constructor) after updating its stale blocked audit, then wire the
   resulting opaque source into normal run/sweep; preserve AR-1329 as optional/live.
+
+- 2026-09-27T02:41:01+00:00: Metadata repair only: set next action to the already identified AR-1391
+  successor; no AR-1387 implementation.
