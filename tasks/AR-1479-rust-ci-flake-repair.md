@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the unrelated Rust state-root collision and malformed-ready-marker timing flakes blocking AR-1420 exact-head CI.",
-  "task_revision": 71,
+  "task_revision": 72,
   "title": "Rust CI timing and state-root flake repair",
-  "updated_at": "2026-09-27T07:51:06+00:00",
+  "updated_at": "2026-09-27T07:51:09+00:00",
   "worktree_key": ""
 }
 ---
@@ -236,3 +236,6 @@ requalified. Preserve fail-closed cleanup and bounded execution semantics.
   8c76fc47b29d63339a6f424d7ae90869fd4db357dde919e336f5aa68581b160e.
 
 - 2026-09-27T07:51:06+00:00: Heartbeat by ar1332-record-replay-luna56.
+
+- 2026-09-27T07:51:09+00:00: Recorded command exit 0; command argv SHA-256
+  91c65cba568bb6883606c8d884a7c1528adf70bcfe9a0f1a83066b3f2ca757de.
