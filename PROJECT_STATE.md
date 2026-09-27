@@ -11,7 +11,7 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #350 | `feature/ar-1420-literature-workload-campaign-integration@2884508a6236` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: integrate literature workload campaigns |
-| #351 | `repair/ar-1479-rust-ci-flake-repair@69c077e969ba` | `main` | UNSTABLE | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, QUEUED:, IN_PROGRESS: | ci: serialize workspace Rust tests for deterministic flakes |
+| #351 | `repair/ar-1479-rust-ci-flake-repair@69c077e969ba` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | ci: serialize workspace Rust tests for deterministic flakes |
 
 ## Recent workflows
 
@@ -19,12 +19,12 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 36303404627 | `69c077e969ba` | pull_request | Repository quality | in_progress:- |
 | 36303404625 | `69c077e969ba` | pull_request | Rust verification | in_progress:- |
-| 36303404611 | `69c077e969ba` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 36303404611 | `69c077e969ba` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36303404609 | `69c077e969ba` | pull_request | Credential-free benchmark path | in_progress:- |
 | 36303404607 | `69c077e969ba` | pull_request | Fault assurance | in_progress:- |
 | 36303404606 | `69c077e969ba` | pull_request | Hosted portability and native qualification | in_progress:- |
 | 36303404599 | `69c077e969ba` | pull_request | Huawei MIT source headers | completed:success |
-| 36303404592 | `69c077e969ba` | pull_request | Formal assurance | queued:- |
+| 36303404592 | `69c077e969ba` | pull_request | Formal assurance | in_progress:- |
 | 36303404581 | `69c077e969ba` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 36302307481 | `2884508a6236` | pull_request | Rust verification | completed:failure |
 | 36302307422 | `2884508a6236` | pull_request | Agent Workflow Quality shadow | completed:success |
