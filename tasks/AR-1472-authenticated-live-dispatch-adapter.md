@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1472-authenticated-live-dispatch-adapter",
   "checkpoint_commit": "363b21f81d5c5ab364c2e2a923bd82676feaf343",
-  "claim_expires": "2026-09-27T03:57:49+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1373",
     "AR-1363"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1472-authenticated-live-dispatch-adapter",
   "observed_dirty": 0,
   "observed_head": "5f785dab598f24c2221272cf53b9366a10625413",
-  "owner": "ar1332_record_replay_luna56",
+  "owner": "",
   "plan": "../plans/AR-1472-authenticated-live-dispatch-adapter.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Connect authenticated control receipts to runtime-owned CLI live dispatch without a dependency cycle.",
-  "task_revision": 83,
+  "task_revision": 84,
   "title": "Authenticated live-dispatch adapter",
-  "updated_at": "2026-09-27T02:08:58+00:00",
+  "updated_at": "2026-09-27T02:09:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1472-authenticated-live-dispatch-adapter"
 }
 ---
@@ -295,3 +295,11 @@ authority. Mandatory qualification is deterministic local/mock or replay.
   363b21f81d5c5ab364c2e2a923bd82676feaf343: Huawei 36287167788; Hosted 36287167856; Fault
   36287167886; Formal 36287167839; Rust 36287167783; Emulated aarch64 36287168007; Repository
   quality 36287167781. Exact merge parents and implementation tree were verified; no failures.
+
+- 2026-09-27T02:09:54+00:00: AR-1472 complete. PR #343 merged normally at 2026-09-27T01:59:12Z to
+  363b21f81d5c5ab364c2e2a923bd82676feaf343 with parents 4ee5a4ed843c7dd7dda0b92dbe392f3787b4039f and
+  5f785dab598f24c2221272cf53b9366a10625413; implementation tree verified. All seven exact-main
+  workflows green: Huawei 36287167788, Hosted 36287167856, Fault 36287167886, Formal 36287167839,
+  Rust 36287167783, Emulated aarch64 36287168007, Repository quality 36287167781. Final doctor
+  --live reported known stale WORKTREES.md projection only; reconcile completed before release.
+  Claim cleared ownerless.
