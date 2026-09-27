@@ -11,7 +11,7 @@
     "AR-1362"
   ],
   "id": "AR-1379",
-  "next_action": "Independent review complete; publish exact signed head 11f3db5 and monitor required CI. Merge only after exact-head review/checks green.",
+  "next_action": "Monitor PR #344 exact head 11f3db5; merge only after independent review and all required checks terminal-green, then verify seven exact-main workflows.",
   "observed_branch": "feature/ar-1379-live-dispatch-integration",
   "observed_dirty": 0,
   "observed_head": "11f3db5078dfa122c1c9c8b533de4a53732424f4",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate authenticated runtime live dispatch into asb run and sweep.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Production live dispatch integration",
-  "updated_at": "2026-09-27T02:28:34+00:00",
+  "updated_at": "2026-09-27T02:28:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1379-live-dispatch-integration"
 }
 ---
@@ -170,3 +170,8 @@ verified through the completed gates.
 
 - 2026-09-27T02:28:34+00:00: Recorded command exit 8; command argv SHA-256
   a91c4272839ebb8d62b277b17ab68e00a0e36aee9d398c1f9f2541004fdf4aa2.
+
+- 2026-09-27T02:28:57+00:00: PR #344 published from exact signed head
+  11f3db5078dfa122c1c9c8b533de4a53732424f4 against main 363b21f81d5c5ab364c2e2a923bd82676feaf343.
+  Initial checks: Huawei headers and AWQ shadow pass; remaining required checks pending;
+  mergeStateStatus UNSTABLE. No merge attempted.

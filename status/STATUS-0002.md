@@ -143,7 +143,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1379](../tasks/AR-1379-live-dispatch-integration.md): Production live dispatch integration | ar1379-live-dispatch-luna56 | Integrate authenticated runtime live dispatch into asb run and sweep. | Independent review complete; publish exact signed head 11f3db5 and monitor required CI. Merge only after exact-head review/checks green. |
+| P0 | [AR-1379](../tasks/AR-1379-live-dispatch-integration.md): Production live dispatch integration | ar1379-live-dispatch-luna56 | Integrate authenticated runtime live dispatch into asb run and sweep. | Monitor PR #344 exact head 11f3db5; merge only after independent review and all required checks terminal-green, then verify seven exact-main workflows. |
 
 ### Blocked (69)
 
