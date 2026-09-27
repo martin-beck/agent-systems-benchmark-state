@@ -12,17 +12,17 @@
   "id": "AR-1487",
   "next_action": "Rerun full workspace serially after unrelated metrics fixture race; then release build/policy/clean gates, review and commit.",
   "observed_branch": "feature/ar-1487-owner-backed-first-customer-qualification",
-  "observed_dirty": 3,
-  "observed_head": "79f88d3ca03120fd7d69f67cb292c96051a5e770",
+  "observed_dirty": 0,
+  "observed_head": "4b94dcd7be505ebb5b34580db5023b95de7db8fd",
   "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1487-owner-backed-first-customer-qualification.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the owner-backed credential-free local/mock/replay first-customer journey.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Owner-backed first-customer qualification",
-  "updated_at": "2026-09-27T14:13:49+00:00",
+  "updated_at": "2026-09-27T14:14:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1487-owner-backed-qualification"
 }
 ---
