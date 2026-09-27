@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1484-runtime-control-owner-contract",
   "checkpoint_commit": "eff9984fd11bec55e1e23366b3bba0bcb717826a",
-  "claim_expires": "2026-09-27T14:35:48+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1472",
     "AR-1473",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1484-runtime-control-owner-contract",
   "observed_dirty": 0,
   "observed_head": "7ce533ea9b0524c5b317cc2db8fad0aff8ecedc3",
-  "owner": "ar1332-record-replay-luna56",
+  "owner": "",
   "plan": "../plans/AR-1484-runtime-control-owner-contract.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Define stable runtime/control process-owner lifecycle and opaque handoff contract.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Runtime/control process-owner contract",
-  "updated_at": "2026-09-27T12:41:09+00:00",
+  "updated_at": "2026-09-27T12:41:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1484-runtime-control-owner-contract"
 }
 ---
@@ -204,3 +204,11 @@ authority.
   Formal 36319234706; Fault 36319234658; Repository quality 36319234629; Huawei MIT headers
   36319234614; Credential-free 36319234609; Rust 36319234605; Hosted portability/native 36319234571.
   Ready for final reconcile/doctor/release.
+
+- 2026-09-27T12:41:25+00:00: AR-1484 complete. PR #358 merged from exact signed head
+  7ce533ea9b0524c5b317cc2db8fad0aff8ecedc3 as merge SHA eff9984fd11bec55e1e23366b3bba0bcb717826a.
+  Initial Huawei/SPDX failure was corrected with signed header fix and exact-head CI rerun. All 13
+  PR checks SUCCESS. All eight post-merge workflows SUCCESS: Emulated aarch64 36319234719; Formal
+  36319234706; Fault 36319234658; Repository quality 36319234629; Huawei MIT headers 36319234614;
+  Credential-free 36319234609; Rust 36319234605; Hosted portability/native 36319234571. Owner/lease
+  cleared.
