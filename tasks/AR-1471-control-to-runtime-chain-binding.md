@@ -11,17 +11,17 @@
   "id": "AR-1471",
   "next_action": "Promote and claim the control-to-runtime chain-binding successor; implement authenticated enrollment materialization and normal dispatch wiring.",
   "observed_branch": "feature/ar-1471-control-to-runtime-chain-binding",
-  "observed_dirty": 8,
-  "observed_head": "b9d7b6ee251b3a119496d3c16f65ffc971704f3a",
+  "observed_dirty": 0,
+  "observed_head": "d76d099dcaa551c14c97e89c524e83bec6facd93",
   "owner": "ar1332_record_replay_luna56",
   "plan": "../plans/AR-1471-control-to-runtime-chain-binding.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind authenticated control enrollment to runtime certificate-chain storage and live dispatch.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Control-to-runtime certificate-chain binding",
-  "updated_at": "2026-09-27T00:27:15+00:00",
+  "updated_at": "2026-09-27T00:27:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1471-control-to-runtime-chain-binding"
 }
 ---
