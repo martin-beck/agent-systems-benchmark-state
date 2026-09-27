@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1483-authenticated-control-process-owner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-27T14:06:58+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1472",
     "AR-1473",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1483-authenticated-control-process-owner",
   "observed_dirty": 0,
   "observed_head": "fdc7f59f83f647ce099439b003848291e81dd3bb",
-  "owner": "ar1332-record-replay-luna56",
+  "owner": "",
   "plan": "../plans/AR-1483-authenticated-control-process-owner.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Own authenticated control session and lifecycle while minting opaque CLI dispatch sources.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Authenticated control process owner",
-  "updated_at": "2026-09-27T12:07:22+00:00",
+  "updated_at": "2026-09-27T12:07:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1483-authenticated-control-process-owner"
 }
 ---
@@ -39,3 +39,14 @@ caller authority or modify asb-tui.
 
 - 2026-09-27T12:07:10+00:00: Recorded command exit 0; command argv SHA-256
   c6c8093c7cf4e0b4ea8a5ad0a9cff49ae242d2f261912b03f65c36bd5548101d.
+
+- 2026-09-27T12:07:37+00:00: AR-1483 audit at protected main
+  fdc7f59f83f647ce099439b003848291e81dd3bb found no bounded safe implementation slice. Runtime
+  exposes receipt validation/request APIs only with caller-supplied ControlClient and chain store;
+  RuntimeAuthorityInputResolver and RuntimeOwnedEnrollmentSource constructors remain pub(crate), and
+  asb-cli entry/run still dispatches with None,None. The missing contract is an actual
+  runtime/control process owner that owns authenticated socket/session, chain store, private
+  authority inputs, cancellation, and teardown, then invokes AR-1480 opaque source. Adding a public
+  wrapper or CLI/config authority would violate fail-closed boundaries. Worktree clean; no code
+  changes. Next successor must define/provide that process owner/backend lifecycle; do not revive
+  AR-1374/1375.
