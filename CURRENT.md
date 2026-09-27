@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1484](tasks/AR-1484-runtime-control-owner-contract.md): Runtime/control process-owner contract | Define stable runtime/control process-owner lifecycle and opaque handoff contract. | Promote and claim, then inspect protocol/runtime identifiers and add the smallest stable owner contract with local/mock/replay tests. | ar1332-record-replay-luna56 |
+| P0 | [AR-1484](tasks/AR-1484-runtime-control-owner-contract.md): Runtime/control process-owner contract | Define stable runtime/control process-owner lifecycle and opaque handoff contract. | Publish exact signed head f2eab98d0cb0c09c2d84c109d71c5ddbedc782fa, monitor required CI, merge only all green. | ar1332-record-replay-luna56 |
 
 ## Blocked
 

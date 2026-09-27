@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1484-runtime-control-owner-contract",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "f2eab98d0cb0c09c2d84c109d71c5ddbedc782fa",
   "claim_expires": "2026-09-27T14:09:06+00:00",
   "depends_on": [
     "AR-1472",
@@ -9,7 +9,7 @@
     "AR-1480"
   ],
   "id": "AR-1484",
-  "next_action": "Promote and claim, then inspect protocol/runtime identifiers and add the smallest stable owner contract with local/mock/replay tests.",
+  "next_action": "Publish exact signed head f2eab98d0cb0c09c2d84c109d71c5ddbedc782fa, monitor required CI, merge only all green.",
   "observed_branch": "feature/ar-1484-runtime-control-owner-contract",
   "observed_dirty": 0,
   "observed_head": "f2eab98d0cb0c09c2d84c109d71c5ddbedc782fa",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define stable runtime/control process-owner lifecycle and opaque handoff contract.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Runtime/control process-owner contract",
-  "updated_at": "2026-09-27T12:18:10+00:00",
+  "updated_at": "2026-09-27T12:18:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1484-runtime-control-owner-contract"
 }
 ---
@@ -63,3 +63,14 @@ authority.
 
 - 2026-09-27T12:18:10+00:00: Recorded command exit 0; command argv SHA-256
   2bf60254e3012389c378045204c8538ea36bc5527904a611d872dbca7d1124e3.
+
+- 2026-09-27T12:18:39+00:00: Implemented stable runtime/control owner contract in
+  crates/asb-runtime/src/control_owner_contract.rs and exported it from asb-runtime; added
+  docs/RUNTIME_CONTROL_OWNER.md. Contract defines schema v1 owner/generation/chain/nonce
+  identifiers, prepared->enrolled->issued lifecycle, terminal
+  cancellation/revocation/expiry/disconnect/teardown, bounded encode/decode with
+  deny_unknown_fields, and hostile tests. Focused tests pass 3/3; full workspace tests, clippy -D
+  warnings, rustdoc -D warnings, locked release build, repository policy and 23 quality tests,
+  diff/clean-tree checks all exit 0. Independent review confirms scoped ASB-only diff, no
+  credentials/live provider/asb-tui, no authority exposure. Signed+DCO commit
+  f2eab98d0cb0c09c2d84c109d71c5ddbedc782fa verified.
