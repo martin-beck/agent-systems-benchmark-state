@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1379-live-dispatch-integration",
-  "checkpoint_commit": "11f3db5e58a0fd9a0e9fc5e1c949312a7706bc86",
+  "checkpoint_commit": "11f3db5078dfa122c1c9c8b533de4a53732424f4",
   "claim_expires": "2026-09-27T04:14:57+00:00",
   "depends_on": [
     "AR-1378",
@@ -11,7 +11,7 @@
     "AR-1362"
   ],
   "id": "AR-1379",
-  "next_action": "Run focused and full qualification, independently review exact diff, then publish signed PR from 11f3db5 if gates remain green.",
+  "next_action": "Independent review complete; publish exact signed head 11f3db5 and monitor required CI. Merge only after exact-head review/checks green.",
   "observed_branch": "feature/ar-1379-live-dispatch-integration",
   "observed_dirty": 0,
   "observed_head": "11f3db5078dfa122c1c9c8b533de4a53732424f4",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate authenticated runtime live dispatch into asb run and sweep.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Production live dispatch integration",
-  "updated_at": "2026-09-27T02:26:51+00:00",
+  "updated_at": "2026-09-27T02:27:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1379-live-dispatch-integration"
 }
 ---
@@ -147,3 +147,11 @@ verified through the completed gates.
 
 - 2026-09-27T02:26:51+00:00: Recorded command exit 0; command argv SHA-256
   b570f48c211224b4b09da96ca0032508faf560dd1afdcf3b1f7b1014d4c77a5d.
+
+- 2026-09-27T02:27:06+00:00: Local qualification: focused live-provider tests 2/2; cargo fmt check
+  passed; cargo clippy --locked --workspace --all-targets -D warnings passed; rustdoc -D warnings
+  workspace passed; cargo build --locked --workspace --release passed. Full workspace tests passed
+  except known unrelated state-root ownership race (114 CLI tests passed, one control test failed);
+  isolated rerun passed 1/1. Independent diff review clean: one CLI file, opaque source-only
+  entrypoint and --use-config --live-provider run/sweep dispatch, ordinary CLI remains fail-closed,
+  no asb-tui/live-provider changes. Commit 11f3db5 SSH-signed+DCO verified.
