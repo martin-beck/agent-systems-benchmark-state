@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1488-owner-backed-user-journey",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "f06b2d1b01d33ec367760e02c0f19c88a1ed4166",
   "claim_expires": "2026-09-27T16:38:56+00:00",
   "depends_on": [
     "AR-1441",
@@ -11,7 +11,7 @@
     "AR-1487"
   ],
   "id": "AR-1488",
-  "next_action": "Run runtime replay/recovery focused gates and full workspace/docs/privacy/release/policy gates; independently review and commit.",
+  "next_action": "Publish signed exact head through handoffctl; monitor required PR checks and merge only when all green.",
   "observed_branch": "feature/ar-1488-owner-backed-user-journey",
   "observed_dirty": 0,
   "observed_head": "f06b2d1b01d33ec367760e02c0f19c88a1ed4166",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Owner-backed first-customer user journey",
-  "updated_at": "2026-09-27T14:45:00+00:00",
+  "updated_at": "2026-09-27T14:45:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1488-owner-backed-user-journey"
 }
 ---
@@ -86,3 +86,10 @@ live provider.
 
 - 2026-09-27T14:45:00+00:00: Recorded command exit 0; command argv SHA-256
   2d2a242af886c84dc2b2a9d9837f42e7eeb185b97994f41e09c024683671379a.
+
+- 2026-09-27T14:45:28+00:00: AR-1488 implementation is docs-only composition: added owner-backed
+  first-customer journey workflow and README route. Existing install/setup, owner run/sweep, strict
+  replay, recovery, comparison, and teardown contracts were audited. Focused owner 4/4, guide 5/5,
+  workflow transcript 3/3, clippy, serial workspace tests, rustdoc, release build, policy,
+  signature, and clean-tree gates passed. Signed SSH+DCO head
+  f06b2d1b01d33ec367760e02c0f19c88a1ed4166.

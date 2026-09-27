@@ -165,7 +165,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1488](../tasks/AR-1488-owner-backed-user-journey.md): Owner-backed first-customer user journey | ar1332-record-replay-luna56 | Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey. | Run runtime replay/recovery focused gates and full workspace/docs/privacy/release/policy gates; independently review and commit. |
+| P0 | [AR-1488](../tasks/AR-1488-owner-backed-user-journey.md): Owner-backed first-customer user journey | ar1332-record-replay-luna56 | Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey. | Publish signed exact head through handoffctl; monitor required PR checks and merge only when all green. |
 
 ### Blocked (73)
 
