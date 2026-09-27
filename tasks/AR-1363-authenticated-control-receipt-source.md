@@ -7,7 +7,7 @@
     "AR-1362"
   ],
   "id": "AR-1363",
-  "next_action": "Continue bounded polling of PR #342; merge normally only after all required checks are green and mergeStateStatus is CLEAN.",
+  "next_action": "Poll PR #342 again after the bounded CI interval; merge normally only once AArch64, Repository quality, Rust, and all required checks are green with CLEAN merge state.",
   "observed_branch": "feature/ar-1363-authenticated-control-receipt-source",
   "observed_dirty": 0,
   "observed_head": "29d27a91ad6a4eff455f62ae25eb952fec45fcf5",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Deliver authenticated runtime authority receipts through the versioned control boundary without exposing secrets or caller authority.",
-  "task_revision": 73,
+  "task_revision": 74,
   "title": "Authenticated control receipt source",
-  "updated_at": "2026-09-27T01:16:55+00:00",
+  "updated_at": "2026-09-27T01:17:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1363-authenticated-control-receipt-source"
 }
 ---
@@ -263,3 +263,9 @@ reachability.
 
 - 2026-09-27T01:16:55+00:00: Recorded command exit 0; command argv SHA-256
   0400894a8fb04528b541596044b098cf3fa6c69097907f04a4516b92624960dd.
+
+- 2026-09-27T01:17:20+00:00: Fresh status sample at 2026-09-27T01:17Z: PR #342 remains OPEN, exact
+  head 29d27a91, mergeStateStatus UNSTABLE. Active jobs unchanged: Emulated aarch64 portability run
+  36284742939; Repository quality run 36284742895; Rust verification run 36284742908. All other
+  required workflows and AWQ shadow are SUCCESS; no failure or API error. Next action is bounded
+  poll after CI interval, with heartbeat before lease expiry.

@@ -142,7 +142,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1363](../tasks/AR-1363-authenticated-control-receipt-source.md): Authenticated control receipt source | ar1332_record_replay_luna56 | Deliver authenticated runtime authority receipts through the versioned control boundary without exposing secrets or caller authority. | Continue bounded polling of PR #342; merge normally only after all required checks are green and mergeStateStatus is CLEAN. |
+| P0 | [AR-1363](../tasks/AR-1363-authenticated-control-receipt-source.md): Authenticated control receipt source | ar1332_record_replay_luna56 | Deliver authenticated runtime authority receipts through the versioned control boundary without exposing secrets or caller authority. | Poll PR #342 again after the bounded CI interval; merge normally only once AArch64, Repository quality, Rust, and all required checks are green with CLEAN merge state. |
 
 ### Blocked (70)
 
