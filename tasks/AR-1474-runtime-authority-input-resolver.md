@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority.",
-  "task_revision": 85,
+  "task_revision": 86,
   "title": "Runtime-owned authority-input resolver",
-  "updated_at": "2026-09-27T04:29:05+00:00",
+  "updated_at": "2026-09-27T04:29:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1474-runtime-authority-input-resolver"
 }
 ---
@@ -280,3 +280,6 @@ authority, privacy, lifecycle, formal, or egress contracts.
   control::tests::production_backend_runs_without_frontend_and_recovers_idempotency at
   control.rs:6593: control state root already owned; 115 passed/1 failed. One bounded retry to
   classify transient race.
+
+- 2026-09-27T04:29:09+00:00: Recorded command exit 0; command argv SHA-256
+  67b1c99e6da7eec6e1f4e16321199e22d08b54c7ad13f0c0129a17f874593342.
