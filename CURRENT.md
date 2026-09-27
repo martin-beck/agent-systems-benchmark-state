@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-1426](tasks/AR-1426-evolving-literature-window-refresh.md): Evolving literature workload window refresh | Refresh evolving literature benchmark windows without stale or incomparable results. | Promote after AR-1423 and AR-1425 are released; implement content-addressed refresh manifests and fail-closed window validation for LiveCodeBench and SWE-rebench. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -131,7 +137,6 @@ Never edit this file directly.
 | P1 | [AR-1027](tasks/AR-1027-asb-tui-verified-release.md): Publish the verified asb-tui release | Create and independently promote the first installable signed asb-tui release channel. | Publish the first verified asb-tui release only after ASB release, complete UI/install qualification and exact cross-repository evidence are done. | - |
 | P1 | [AR-1255](tasks/AR-1255-bundled-mockagents-qemu-runner.md): Bundle MockAgents transport and QEMU runner | Bundle MockAgents transport and QEMU runner. | Provision a digest-pinned bundled transport/QEMU runner and implement real in-container evidence. | - |
 | P1 | [AR-1257](tasks/AR-1257-mockagents-qemu-image.md): Qualify digest-pinned multiarch MockAgents image | Qualify a digest-pinned multiarch MockAgents OCI image for QEMU isolation. | Read the complete plan and verify official digest-pinned multiarch image, signature, license, and QEMU capability before any support claim. | - |
-| P1 | [AR-1426](tasks/AR-1426-evolving-literature-window-refresh.md): Evolving literature workload window refresh | Refresh evolving literature benchmark windows without stale or incomparable results. | Promote after AR-1423 and AR-1425 are released; implement content-addressed refresh manifests and fail-closed window validation for LiveCodeBench and SWE-rebench. | - |
 | P2 | [AR-0602](tasks/AR-0602-csb-monitoring-contention.md): Validate CSB monitoring and contention diagnostics | Validate and integrate optional CSB resource monitoring and kernel-contention evidence without double counting or overstating support. | Audit CSB monitoring using native x86_64 oracles and required pinned QEMU AArch64 portable mapping/lifecycle checks; keep native ARM64 counters and performance as optional future evidence. | - |
 | P2 | [AR-0903](tasks/AR-0903-release-qualification.md): Package and qualify the first release | Deliver reproducible native release artifacts with complete support and evidence statements. | Audit milestone completeness and run isolated release qualification. | - |
 | P2 | [AR-1016](tasks/AR-1016-measurement-integration-audit.md): Integrate and audit measurement selection and CSB evidence | Audit selectable and CSB-backed measurements across live and replay runs. | Add end-to-end live/replay comparison, release documentation, and independent audit after AR-1014 and AR-1015. | - |

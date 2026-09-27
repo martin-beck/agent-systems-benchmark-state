@@ -3,7 +3,10 @@
   "branch": "",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1423", "AR-1425"],
+  "depends_on": [
+    "AR-1423",
+    "AR-1425"
+  ],
   "id": "AR-1426",
   "next_action": "Promote after AR-1423 and AR-1425 are released; implement content-addressed refresh manifests and fail-closed window validation for LiveCodeBench and SWE-rebench.",
   "observed_branch": "",
@@ -13,11 +16,11 @@
   "plan": "../plans/AR-1426-evolving-literature-window-refresh.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Refresh evolving literature benchmark windows without stale or incomparable results.",
+  "task_revision": 2,
   "title": "Evolving literature workload window refresh",
-  "task_revision": 1,
-  "updated_at": "2026-09-24T00:00:00+00:00",
+  "updated_at": "2026-09-27T10:05:16+00:00",
   "worktree_key": ""
 }
 ---
@@ -29,3 +32,6 @@ requires live providers or upstream downloads during development or CI.
 - 2026-09-24: Added after the literature audit identified stale-window risk for
   LiveCodeBench and SWE-rebench. Existing built-in and stable literature IDs are
   unaffected; every refresh is a new content-addressed identity.
+
+- 2026-09-27T10:05:16+00:00: AR-1423 and AR-1425 are released done; promote the dependency-ready
+  offline refresh-manifest implementation.
