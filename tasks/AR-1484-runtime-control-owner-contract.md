@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1484-runtime-control-owner-contract",
-  "checkpoint_commit": "7ce533ea9b0524c5b317cc2db8fad0aff8ecedc3",
+  "checkpoint_commit": "eff9984fd11bec55e1e23366b3bba0bcb717826a",
   "claim_expires": "2026-09-27T14:26:42+00:00",
   "depends_on": [
     "AR-1472",
@@ -9,7 +9,7 @@
     "AR-1480"
   ],
   "id": "AR-1484",
-  "next_action": "Merge PR #358 normally, then monitor eight exact-main post-merge workflows before release.",
+  "next_action": "Monitor eight exact-main post-merge workflows for eff9984fd11bec55e1e23366b3bba0bcb717826a to terminal SUCCESS; then reconcile/doctor/release.",
   "observed_branch": "feature/ar-1484-runtime-control-owner-contract",
   "observed_dirty": 0,
   "observed_head": "7ce533ea9b0524c5b317cc2db8fad0aff8ecedc3",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define stable runtime/control process-owner lifecycle and opaque handoff contract.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Runtime/control process-owner contract",
-  "updated_at": "2026-09-27T12:31:14+00:00",
+  "updated_at": "2026-09-27T12:31:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1484-runtime-control-owner-contract"
 }
 ---
@@ -154,3 +154,10 @@ authority.
 
 - 2026-09-27T12:31:14+00:00: Recorded command exit 0; command argv SHA-256
   31c4c2e951a92e605919e59e35b1a6fe4f3bb79db18aba31965226ac57084ef5.
+
+- 2026-09-27T12:31:41+00:00: PR #358 merged normally at 2026-09-27T12:30:48Z. Merge SHA
+  eff9984fd11bec55e1e23366b3bba0bcb717826a; PR head 7ce533ea9b0524c5b317cc2db8fad0aff8ecedc3.
+  Exact-main workflows: Emulated aarch64 36319234719; Formal 36319234706; Fault assurance
+  36319234658; Repository quality 36319234629; Huawei headers 36319234614 SUCCESS; Credential-free
+  36319234609; Rust 36319234605; Hosted portability/native 36319234571. Remaining seven are in
+  progress.
