@@ -1,7 +1,7 @@
 ---
 {
   "branch": "",
-  "checkpoint_commit": "8966e447b68ab672ee06d2c7effd5ce7887e5b8d",
+  "checkpoint_commit": "2884508a6236d1219386edeb428ba0c39ce9bd3c",
   "claim_expires": "2026-09-27T09:08:48+00:00",
   "depends_on": [
     "AR-1417",
@@ -10,7 +10,7 @@
     "AR-1333"
   ],
   "id": "AR-1420",
-  "next_action": "Continue monitoring PR #350 exact head 8966e44; merge only after all 13 required checks are terminal SUCCESS.",
+  "next_action": "Recheck PR #350 exact head 2884508 after provenance repair; merge only after every required check is terminal SUCCESS.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run the complete qualified literature workload matrix beside built-in software-engineering workloads.",
-  "task_revision": 90,
+  "task_revision": 91,
   "title": "Literature workload campaign integration",
-  "updated_at": "2026-09-27T07:11:01+00:00",
+  "updated_at": "2026-09-27T07:11:21+00:00",
   "worktree_key": ""
 }
 ---
@@ -307,3 +307,13 @@ tasks or require any live provider.
 
 - 2026-09-27T07:11:01+00:00: Recorded command exit 0; command argv SHA-256
   f523554c00e7a9aeba4b436010b27341a9314eb5a9f7fce23b79b4c96ac3c072.
+
+- 2026-09-27T07:11:21+00:00: Exact-head CI diagnostics: Rust run 36301989445 failed workspace test
+  provenance_binds_the_exact_cli_and_public_fixture_sources because
+  docs/examples/asb-cli-workflow-v1.provenance.json retained the old cli_source_sha256 after the
+  intentional lib.rs change (expected old 0ba214..., actual 4696aee...). Policy/coverage run
+  36301989451 failed on the same provenance drift. Focused workflow_transcript provenance test
+  passed after refreshing the JSON digest to
+  4696aeea2b6b65041876874f769211886c68da577c226805c4f8c2db96123678. Added signed+DCO commit
+  2884508a6236d1219386edeb428ba0c39ce9bd3c and force-with-lease updated PR #350; recheck exact head
+  2884508. No production semantics changed.
