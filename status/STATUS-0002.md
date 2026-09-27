@@ -139,11 +139,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1379](../tasks/AR-1379-live-dispatch-integration.md): Production live dispatch integration | Unclaimed | Integrate authenticated runtime live dispatch into asb run and sweep. | Promote and claim this dependency-valid production dispatch successor, refresh an isolated worktree, and wire the authenticated adapter into asb run/sweep. |
+| P0 | [AR-1379](../tasks/AR-1379-live-dispatch-integration.md): Production live dispatch integration | ar1379-live-dispatch-luna56 | Integrate authenticated runtime live dispatch into asb run and sweep. | Promote and claim this dependency-valid production dispatch successor, refresh an isolated worktree, and wire the authenticated adapter into asb run/sweep. |
 
 ### Blocked (69)
 

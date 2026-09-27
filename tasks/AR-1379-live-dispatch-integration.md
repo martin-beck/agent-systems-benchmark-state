@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1379-live-dispatch-integration",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-27T04:14:57+00:00",
   "depends_on": [
     "AR-1378",
     "AR-1377",
@@ -15,15 +15,15 @@
   "observed_branch": "feature/ar-1379-live-dispatch-integration",
   "observed_dirty": 0,
   "observed_head": "d4a3e14e86a75bcb0c4f004e8d997b2321bf0fb5",
-  "owner": "",
+  "owner": "ar1379-live-dispatch-luna56",
   "plan": "../plans/AR-1379-live-dispatch-integration.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Integrate authenticated runtime live dispatch into asb run and sweep.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Production live dispatch integration",
-  "updated_at": "2026-09-27T02:14:55+00:00",
+  "updated_at": "2026-09-27T02:14:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1379-live-dispatch-integration"
 }
 ---
@@ -63,3 +63,5 @@ verified through the completed gates.
   terminal done; AR-1380 scheduler composition and AR-1472 authenticated adapter are also merged.
   Reopen this exact integration successor to wire production asb run/sweep without CLI authority,
   using deterministic mock/replay tests.
+
+- 2026-09-27T02:14:57+00:00: Claimed by ar1379-live-dispatch-luna56.

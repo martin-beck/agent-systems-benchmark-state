@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1379](tasks/AR-1379-live-dispatch-integration.md): Production live dispatch integration | Integrate authenticated runtime live dispatch into asb run and sweep. | Promote and claim this dependency-valid production dispatch successor, refresh an isolated worktree, and wire the authenticated adapter into asb run/sweep. | - |
+| P0 | [AR-1379](tasks/AR-1379-live-dispatch-integration.md): Production live dispatch integration | Integrate authenticated runtime live dispatch into asb run and sweep. | Promote and claim this dependency-valid production dispatch successor, refresh an isolated worktree, and wire the authenticated adapter into asb run/sweep. | ar1379-live-dispatch-luna56 |
 
 ## Blocked
 
