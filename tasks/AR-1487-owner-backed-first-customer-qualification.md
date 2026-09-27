@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the owner-backed credential-free local/mock/replay first-customer journey.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Owner-backed first-customer qualification",
-  "updated_at": "2026-09-27T14:09:41+00:00",
+  "updated_at": "2026-09-27T14:10:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1487-owner-backed-qualification"
 }
 ---
@@ -118,3 +118,6 @@ runtime-owned CLI; it excludes live providers and asb-tui.
   kernel::tests::bounded_tool_boundary_covers_success_denial_timeout_and_cleanup failure: expected
   value 12500000, got ProbeRejected. No AR-1487 path involved. Exact focused serial reproduction
   passed 1/1 with --test-threads=1; classify runner contention/flakiness, no code change.
+
+- 2026-09-27T14:10:26+00:00: Recorded command exit 0; command argv SHA-256
+  71a97fed592dbf078b11704117b8eda3bc91f6dbd4685557de8eb1b0adcb5aab.
