@@ -19,11 +19,11 @@
   "plan": "../plans/AR-1488-owner-backed-user-journey.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Owner-backed first-customer user journey",
-  "updated_at": "2026-09-27T14:40:00+00:00",
+  "updated_at": "2026-09-27T14:38:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1488-owner-backed-user-journey"
 }
 ---
@@ -36,3 +36,7 @@ live provider.
   run/sweep, replay, evidence, recovery, and teardown qualification. This
   successor composes the supported install/setup and user-facing workflow into
   one bounded first-customer acceptance path.
+
+- 2026-09-27T14:38:20+00:00: Dependencies AR-1441, AR-1442, AR-1450, AR-1455, and AR-1487 are done.
+  Promote ASB-only owner-backed first-customer install/setup/run/sweep/replay/evidence
+  qualification; no asb-tui or live provider.
