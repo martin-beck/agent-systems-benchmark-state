@@ -10,7 +10,7 @@
     "AR-1486"
   ],
   "id": "AR-1487",
-  "next_action": "Continue polling PR #367 exact head 4b94dcd7 until all 13 required checks terminal SUCCESS; then independent review and normal merge.",
+  "next_action": "Continue polling PR #367 exact head 4b94dcd7; merge only after Emulated AArch64, TLC/Alloy, Policy/coverage/supply-chain, and Rust all SUCCESS.",
   "observed_branch": "feature/ar-1487-owner-backed-first-customer-qualification",
   "observed_dirty": 0,
   "observed_head": "4b94dcd7be505ebb5b34580db5023b95de7db8fd",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the owner-backed credential-free local/mock/replay first-customer journey.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Owner-backed first-customer qualification",
-  "updated_at": "2026-09-27T14:17:38+00:00",
+  "updated_at": "2026-09-27T14:18:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1487-owner-backed-qualification"
 }
 ---
@@ -178,3 +178,8 @@ runtime-owned CLI; it excludes live providers and asb-tui.
 
 - 2026-09-27T14:17:38+00:00: Recorded command exit 0; command argv SHA-256
   104e8ca5470cfb77bb7507c3b4a36b94f512b90759b0e0ceaa639cde3eb5f6b9.
+
+- 2026-09-27T14:18:03+00:00: PR #367 exact head unchanged and mergeState UNSTABLE. Terminal SUCCESS:
+  Credential-free, Platform evidence, AWQ shadow, retained faults, Huawei/SPDX, bounded fuzz, Kani,
+  Matcher/SLO mutation, Loom/state models. Still IN_PROGRESS: Emulated aarch64, TLC/Alloy recovery,
+  Policy/coverage/supply chain, Rust checks.
