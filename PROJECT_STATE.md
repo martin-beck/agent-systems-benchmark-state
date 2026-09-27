@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #354 | `feature/ar-1336-live-benchmark-workflow-docs@f817af5ae921` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | docs: document end-to-end benchmark workflow |
+| #354 | `feature/ar-1336-live-benchmark-workflow-docs@f817af5ae921` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | docs: document end-to-end benchmark workflow |
 
 ## Recent workflows
 
@@ -19,7 +19,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36310039129 | `f817af5ae921` | pull_request | Credential-free benchmark path | completed:success |
 | 36310039105 | `f817af5ae921` | pull_request | Fault assurance | completed:success |
 | 36310039096 | `f817af5ae921` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 36310039087 | `f817af5ae921` | pull_request | Formal assurance | in_progress:- |
+| 36310039087 | `f817af5ae921` | pull_request | Formal assurance | completed:success |
 | 36310039068 | `f817af5ae921` | pull_request | Hosted portability and native qualification | completed:success |
 | 36310039056 | `f817af5ae921` | pull_request | Rust verification | in_progress:- |
 | 36310039034 | `f817af5ae921` | pull_request | Emulated aarch64 portability | in_progress:- |
