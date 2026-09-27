@@ -1,14 +1,14 @@
 ---
 {
   "branch": "",
-  "checkpoint_commit": "73b5fd1d14fa0343a7f3cc6d73acc91187d46333",
+  "checkpoint_commit": "5e577e6a4b278fc79dc8b695cd6b3723d04cc609",
   "claim_expires": "2026-09-27T12:28:15+00:00",
   "depends_on": [
     "AR-1423",
     "AR-1425"
   ],
   "id": "AR-1426",
-  "next_action": "Merge PR #355 after independent review; then verify eight exact-main workflows and release done.",
+  "next_action": "Wait for Rust 36312453077, Emulated AArch64 36312453084, and Repository quality 36312453096; then record all eight green workflows and release done.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Refresh evolving literature benchmark windows without stale or incomparable results.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Evolving literature workload window refresh",
-  "updated_at": "2026-09-27T10:30:06+00:00",
+  "updated_at": "2026-09-27T10:30:34+00:00",
   "worktree_key": ""
 }
 ---
@@ -166,3 +166,11 @@ requires live providers or upstream downloads during development or CI.
 
 - 2026-09-27T10:30:06+00:00: Recorded command exit 0; command argv SHA-256
   355b6f244f6fc49a19b63a7fc3bf5420a18ec5561b988f2500454c7166ebf44e.
+
+- 2026-09-27T10:30:34+00:00: PR #355 is merged normally: merge SHA
+  5e577e6a4b278fc79dc8b695cd6b3723d04cc609, reviewed head 73b5fd1d14fa0343a7f3cc6d73acc91187d46333,
+  base a36b86b49a347b3e5e32154c465c3ef3e9a03a11. Exact-main post-merge runs: Huawei 36312453082
+  SUCCESS; Formal 36312453087 SUCCESS; Fault 36312453109 SUCCESS; Credential-free 36312453110
+  SUCCESS; Hosted 36312453113 SUCCESS; Rust 36312453077, Emulated AArch64 36312453084, Repository
+  quality 36312453096 remain in progress. The earlier exit-2 record was only malformed jq quoting in
+  a run-list query; merge API had already returned merged=true.
