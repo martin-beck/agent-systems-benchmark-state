@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a self-contained non-production package qualification fixture using the offline verifier test-key pattern.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Self-contained package qualification fixture",
-  "updated_at": "2026-09-27T16:01:08+00:00",
+  "updated_at": "2026-09-27T16:01:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1491-self-contained-package-qualification-fixture"
 }
 ---
@@ -171,3 +171,6 @@ No live-provider or release-signing input may be fabricated.
   verifier test-key pattern; no production signing policy, runtime behavior, asb-tui, provider,
   credential, or network changes. PR #370 exact head b4f5328 CLEAN with all 13 required checks
   terminal SUCCESS.
+
+- 2026-09-27T16:01:20+00:00: Recorded command exit 0; command argv SHA-256
+  06acdb6024b83d1e7b36ead1059f91a262a8493c84c9e5df5504867cedb8fa44.
