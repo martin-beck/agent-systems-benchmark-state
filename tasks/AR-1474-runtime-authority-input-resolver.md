@@ -10,7 +10,7 @@
     "AR-1379"
   ],
   "id": "AR-1474",
-  "next_action": "Create narrow asb-metrics repair successor for repeated ProbeRejected versus MalformedEvidence failure; keep PR #345 unmerged.",
+  "next_action": "Retry PR #345 Rust once for existing state-root ownership race; monitor repository quality.",
   "observed_branch": "feature/ar-1474-runtime-authority-input-resolver",
   "observed_dirty": 0,
   "observed_head": "56d284c2d292163e2724318b0443f53211b4f9e4",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Runtime-owned authority-input resolver",
-  "updated_at": "2026-09-27T04:28:31+00:00",
+  "updated_at": "2026-09-27T04:29:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1474-runtime-authority-input-resolver"
 }
 ---
@@ -274,3 +274,9 @@ authority, privacy, lifecycle, formal, or egress contracts.
 
 - 2026-09-27T04:28:31+00:00: Recorded command exit 0; command argv SHA-256
   b9170a4cdc54c56fddaa8c182e27784034c45764409e7979e4d0968ae8115813.
+
+- 2026-09-27T04:29:05+00:00: Repair rerun 36292250053 cleared original asb-metrics failure but
+  failed existing asb-cli
+  control::tests::production_backend_runs_without_frontend_and_recovers_idempotency at
+  control.rs:6593: control state root already owned; 115 passed/1 failed. One bounded retry to
+  classify transient race.
