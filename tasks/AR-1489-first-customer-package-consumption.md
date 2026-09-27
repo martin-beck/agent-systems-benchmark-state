@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Verify first-customer release package installation and owner-backed local/mock/replay consumption.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "First-customer package consumption",
-  "updated_at": "2026-09-27T15:15:42+00:00",
+  "updated_at": "2026-09-27T15:15:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1489-first-customer-package-consumption"
 }
 ---
@@ -84,3 +84,6 @@ touching asb-tui or requiring a live provider.
   bundle and lifecycle contracts audited. Focused guide 5/5, transcript 3/3, bundle schema 2/2,
   clippy, rustdoc, release build, serial workspace tests, policy, signature, and clean-tree gates
   passed. Signed SSH+DCO head c4578eecd93183eaadaf9c34defbc4137ba03657.
+
+- 2026-09-27T15:15:56+00:00: Recorded command exit 0; command argv SHA-256
+  e84482ef76dc4486a872ddc324daba82f7bbeba993b6b7f883f57bf0e2a86aea.
