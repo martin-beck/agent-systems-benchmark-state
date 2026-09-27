@@ -10,17 +10,17 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #342 | `feature/ar-1363-authenticated-control-receipt-source@29d27a91ad6a` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(control): validate authenticated runtime receipt source |
+| #342 | `feature/ar-1363-authenticated-control-receipt-source@29d27a91ad6a` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(control): validate authenticated runtime receipt source |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36284742939 | `29d27a91ad6a` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 36284742939 | `29d27a91ad6a` | pull_request | Emulated aarch64 portability | completed:success |
 | 36284742908 | `29d27a91ad6a` | pull_request | Rust verification | in_progress:- |
 | 36284742907 | `29d27a91ad6a` | pull_request | Hosted portability and native qualification | completed:success |
 | 36284742897 | `29d27a91ad6a` | pull_request | Huawei MIT source headers | completed:success |
-| 36284742895 | `29d27a91ad6a` | pull_request | Repository quality | in_progress:- |
+| 36284742895 | `29d27a91ad6a` | pull_request | Repository quality | completed:success |
 | 36284742887 | `29d27a91ad6a` | pull_request | Formal assurance | completed:success |
 | 36284742879 | `29d27a91ad6a` | pull_request | Fault assurance | completed:success |
 | 36284742871 | `29d27a91ad6a` | pull_request | Agent Workflow Quality shadow | completed:success |
