@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority.",
-  "task_revision": 165,
+  "task_revision": 166,
   "title": "Runtime-owned authority-input resolver",
-  "updated_at": "2026-09-27T06:08:08+00:00",
+  "updated_at": "2026-09-27T06:08:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1474-runtime-authority-input-resolver"
 }
 ---
@@ -519,3 +519,6 @@ authority, privacy, lifecycle, formal, or egress contracts.
   a3f5882ae0ed9c79173495eefb329a763165aa707c25c3ef7e88ac2923a1daf5.
 
 - 2026-09-27T06:08:08+00:00: Heartbeat by ar1332-record-replay-luna56.
+
+- 2026-09-27T06:08:11+00:00: Recorded command exit 0; command argv SHA-256
+  aedbe6248a9baf95462c22a571142f628bf7e0f7f582ba7863578b068c44a3b4.
