@@ -10,7 +10,7 @@
     "AR-1486"
   ],
   "id": "AR-1487",
-  "next_action": "Monitor eight exact-main post-merge workflows for merge 0dc766a4; release done only after all terminal SUCCESS.",
+  "next_action": "Continue monitoring Repository quality 36325841032, Emulated AArch64 36325841029, Rust 36325841109; release only after all eight terminal SUCCESS.",
   "observed_branch": "feature/ar-1487-owner-backed-first-customer-qualification",
   "observed_dirty": 0,
   "observed_head": "4b94dcd7be505ebb5b34580db5023b95de7db8fd",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the owner-backed credential-free local/mock/replay first-customer journey.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Owner-backed first-customer qualification",
-  "updated_at": "2026-09-27T14:28:50+00:00",
+  "updated_at": "2026-09-27T14:29:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1487-owner-backed-qualification"
 }
 ---
@@ -243,3 +243,8 @@ runtime-owned CLI; it excludes live providers and asb-tui.
 
 - 2026-09-27T14:28:50+00:00: Recorded command exit 0; command argv SHA-256
   03184fe308919755a72eb52438cd19d340e3a7205ba779265c0ff321ad43a973.
+
+- 2026-09-27T14:29:14+00:00: Post-merge workflow update for 0dc766a4: Huawei 36325841010,
+  Credential-free 36325841041, Hosted 36325841050, Fault 36325841097, Formal 36325841072 terminal
+  SUCCESS. Remaining in progress: Repository quality 36325841032, Emulated AArch64 36325841029, Rust
+  36325841109.
