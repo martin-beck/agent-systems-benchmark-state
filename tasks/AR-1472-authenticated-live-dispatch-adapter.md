@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect authenticated control receipts to runtime-owned CLI live dispatch without a dependency cycle.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Authenticated live-dispatch adapter",
-  "updated_at": "2026-09-27T02:07:22+00:00",
+  "updated_at": "2026-09-27T02:07:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1472-authenticated-live-dispatch-adapter"
 }
 ---
@@ -278,3 +278,6 @@ authority. Mandatory qualification is deterministic local/mock or replay.
   Formal, hosted, fault, Huawei also SUCCESS. Repository quality 36287167781 remains in progress at
   controlled-defect gate; Emulated aarch64 36287168007 remains in progress materializing immutable
   guest userspace. No failures.
+
+- 2026-09-27T02:07:32+00:00: Recorded command exit 0; command argv SHA-256
+  8918ecd09069a03137dc78f4b9416217375afd5133733ee604ffe3b5c05aa500.
