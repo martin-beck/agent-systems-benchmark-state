@@ -10,7 +10,7 @@
     "AR-1377"
   ],
   "id": "AR-1387",
-  "next_action": "Refresh the declared isolated worktree from protected main, add the authenticated runtime/control bootstrap-to-CLI bridge, and test opaque dispatch-source transfer without caller authority injection.",
+  "next_action": "Resume AR-1391 runtime-control bootstrap constructor; AR-1387 remains blocked pending that successor and has no safe in-scope product diff.",
   "observed_branch": "feature/ar-1387-runtime-control-cli-bridge",
   "observed_dirty": 0,
   "observed_head": "25548846966e37646dded8d67ed8ee5123b8bc32",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bridge authenticated runtime/control bootstrap state into the production CLI dispatch path.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Authenticated runtime-control CLI bridge",
-  "updated_at": "2026-09-27T02:41:48+00:00",
+  "updated_at": "2026-09-27T02:42:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1387-runtime-control-cli-bridge"
 }
 ---
@@ -100,3 +100,7 @@ reachability.
   successor; no AR-1387 implementation.
 
 - 2026-09-27T02:41:48+00:00: Claimed by ar1332_record_replay_luna56.
+
+- 2026-09-27T02:42:08+00:00: Metadata correction after lock recovery: AR-1387 audit is complete and
+  implementation remains blocked by the missing runtime-owned bootstrap constructor. Successor
+  AR-1391 is the next scoped action; no product changes made.

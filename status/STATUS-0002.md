@@ -144,7 +144,7 @@
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1379](../tasks/AR-1379-live-dispatch-integration.md): Production live dispatch integration | ar1379-live-dispatch-luna56 | Integrate authenticated runtime live dispatch into asb run and sweep. | Monitor PR #344 rerun at exact head d988838; all required checks must be green before merge. Provenance repair was generated from current lib.rs digest. |
-| P0 | [AR-1387](../tasks/AR-1387-runtime-control-cli-bridge.md): Authenticated runtime-control CLI bridge | ar1332_record_replay_luna56 | Bridge authenticated runtime/control bootstrap state into the production CLI dispatch path. | Refresh the declared isolated worktree from protected main, add the authenticated runtime/control bootstrap-to-CLI bridge, and test opaque dispatch-source transfer without caller authority injection. |
+| P0 | [AR-1387](../tasks/AR-1387-runtime-control-cli-bridge.md): Authenticated runtime-control CLI bridge | ar1332_record_replay_luna56 | Bridge authenticated runtime/control bootstrap state into the production CLI dispatch path. | Resume AR-1391 runtime-control bootstrap constructor; AR-1387 remains blocked pending that successor and has no safe in-scope product diff. |
 
 ### Blocked (68)
 
@@ -514,3 +514,4 @@
 | P1 | [AR-0840](../tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | Unclaimed | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. |
 | P1 | [AR-0841](../tasks/AR-0841-frontend-local-transport.md): Implement frontend local transport | Unclaimed | Implement the local frontend control transport and authorization boundary. | Implement bounded owner-only Unix-socket transport with peer checks and fail-closed framing. |
 | P1 | [AR-0842](../tasks/AR-0842-frontend-run-lifecycle.md): Implement frontend run lifecycle | Unclaimed | Define and implement frontend-independent run lifecycle semantics. | Implement idempotent launch, cancellation, status reconnect, history, and recovery semantics. |
+| P1 | [AR-0843](../tasks/AR-0843-frontend-privacy-assurance.md): Assure frontend privacy and faults | Unclaimed | Qualify frontend privacy, artifact access, and fault behavior. | Monitor PR #69 exact-head CI at cca49ec3bea429a90a267600acf821cebe45c138; investigate any failure and do not merge without coordinator authorization. |
