@@ -3,7 +3,11 @@
   "branch": "release/ar-1492-customer-bundle-signing-handoff",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1461", "AR-1462", "AR-1491"],
+  "depends_on": [
+    "AR-1461",
+    "AR-1462",
+    "AR-1491"
+  ],
   "id": "AR-1492",
   "next_action": "Promote and claim, then stage a deterministic customer bundle and document the external signature handoff/validation boundary.",
   "observed_branch": "release/ar-1492-customer-bundle-signing-handoff",
@@ -13,11 +17,11 @@
   "plan": "../plans/AR-1492-customer-bundle-signing-handoff.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Stage a deterministic customer bundle and provide an explicit external signing handoff and verifier.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Customer bundle signing handoff",
-  "updated_at": "2026-09-27T16:15:00+00:00",
+  "updated_at": "2026-09-27T16:13:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1492-customer-bundle-signing-handoff"
 }
 ---
@@ -36,3 +40,6 @@ without fabricating a signature or claiming customer acceptance.
 The resulting staging artifact is not a release and cannot satisfy AR-1490
 until an authorized external signer supplies and independently validates the
 detached signature.
+
+- 2026-09-27T16:13:21+00:00: Dependencies complete; prepare deterministic customer bundle staging
+  and explicit external signing handoff without fabricating release authority.
