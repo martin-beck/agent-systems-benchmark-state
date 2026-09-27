@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1470-runtime-certificate-chain-enrollment",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "b9d7b6ee251b3a119496d3c16f65ffc971704f3a",
   "claim_expires": "2026-09-27T03:06:33+00:00",
   "depends_on": [
     "AR-1357",
@@ -9,7 +9,7 @@
     "AR-1362"
   ],
   "id": "AR-1470",
-  "next_action": "Promote and claim the runtime certificate-chain enrollment successor; implement and verify the smallest authenticated authority source.",
+  "next_action": "Coordinator must create/promote a narrow successor for authenticated runtime certificate-chain enrollment source: bind control-owned enrollment to RuntimeCertificateChainStore without caller-supplied authority, then wire normal live dispatch. Do not fabricate authority.",
   "observed_branch": "feature/ar-1470-runtime-certificate-chain-enrollment",
   "observed_dirty": 0,
   "observed_head": "b9d7b6ee251b3a119496d3c16f65ffc971704f3a",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize runtime-owned certificate-chain enrollment authority for live dispatch.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Runtime certificate-chain enrollment materialization",
-  "updated_at": "2026-09-27T00:09:50+00:00",
+  "updated_at": "2026-09-27T00:11:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1470-runtime-certificate-chain-enrollment"
 }
 ---
@@ -55,3 +55,19 @@ actually consumed by the downstream adapters.
 
 - 2026-09-27T00:09:50+00:00: Recorded command exit 0; command argv SHA-256
   c28cde0d5833f2ea48d7cac1909747e3263dfed970acfccc78f12eafb987e3e6.
+
+- 2026-09-27T00:11:19+00:00: Bounded AR-1470 audit on protected main b9d7b6ee: declared worktree was
+  initially absent (setup command exit 128), then provisioned cleanly from origin/main. Focused
+  cargo test --locked -p asb-control -p asb-runtime -p asb-cli passed (all tests green). Existing
+  contracts are present: AuthenticatedChainEnrollmentV1, RuntimeAuthorityEnrollmentV1,
+  RuntimeReceipt RPC, RuntimeCertificateChainStore, and LiveProviderRuntimeBridge receipt
+  validation/replay fencing. Concrete gap remains: RuntimeCertificateChainStore::install accepts a
+  caller-provided opaque IssuedCertificateChainV1; no authenticated control/runtime enrollment
+  operation populates it. RuntimeAuthorityRecord/install_runtime_authority is only restart recovery
+  and unit-test code, while AuthHelperInvoke persists provider/endpoint/credential digests only.
+  Normal live dispatch therefore cannot obtain a runtime-owned chain without caller injection.
+  Existing runtime_receipt_source_fails_closed_without_injected_authority test confirms fail-closed
+  behavior. Do not synthesize chain/authority or touch asb-tui. State task creation is unavailable:
+  handoffctl help exposes no create/promote-successor command; coordinator must create the narrowest
+  successor through normal state workflow. A bounded rg|head audit pipeline recorded exit
+  -13/SIGPIPE; no product mutation resulted.
