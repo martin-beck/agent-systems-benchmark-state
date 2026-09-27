@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Verify first-customer release package installation and owner-backed local/mock/replay consumption.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "First-customer package consumption",
-  "updated_at": "2026-09-27T15:26:49+00:00",
+  "updated_at": "2026-09-27T15:27:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1489-first-customer-package-consumption"
 }
 ---
@@ -153,3 +153,6 @@ touching asb-tui or requiring a live provider.
   b048fef92f4bdb4eedd5379d645f4288a4b6ab20; reviewed head c4578eec. Exact-main workflows launched:
   Huawei 36329496606 SUCCESS, Hosted 36329496670, Credential-free 36329496593, Formal 36329496626,
   AArch64 36329496650, Repository quality 36329496635, Rust 36329496563, Fault 36329496583.
+
+- 2026-09-27T15:27:54+00:00: Recorded command exit 0; command argv SHA-256
+  d4b21b9fa84bddbff736766a979ee6bd6f7610dbdc4da1c43b6e9d69758f5d31.
