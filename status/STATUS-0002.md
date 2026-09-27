@@ -152,7 +152,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1420](../tasks/AR-1420-literature-workload-campaign-integration.md): Literature workload campaign integration | ar1332-record-replay-luna56 | Run the complete qualified literature workload matrix beside built-in software-engineering workloads. | Promote only after all literature family adapters and boundary inventory are released; extend the existing multi-agent campaign to the complete qualified literature selector set. |
+| P1 | [AR-1420](../tasks/AR-1420-literature-workload-campaign-integration.md): Literature workload campaign integration | ar1332-record-replay-luna56 | Run the complete qualified literature workload matrix beside built-in software-engineering workloads. | Run independent diff review and full applicable gates, then publish the signed exact head through handoffctl. |
 
 ### Blocked (71)
 

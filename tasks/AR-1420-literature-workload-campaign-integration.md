@@ -1,7 +1,7 @@
 ---
 {
   "branch": "",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "26f03d3f52dab9c9667b0b8d09d69fc835c5b647",
   "claim_expires": "2026-09-27T08:56:54+00:00",
   "depends_on": [
     "AR-1417",
@@ -10,7 +10,7 @@
     "AR-1333"
   ],
   "id": "AR-1420",
-  "next_action": "Promote only after all literature family adapters and boundary inventory are released; extend the existing multi-agent campaign to the complete qualified literature selector set.",
+  "next_action": "Run independent diff review and full applicable gates, then publish the signed exact head through handoffctl.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run the complete qualified literature workload matrix beside built-in software-engineering workloads.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Literature workload campaign integration",
-  "updated_at": "2026-09-27T06:59:28+00:00",
+  "updated_at": "2026-09-27T07:00:09+00:00",
   "worktree_key": ""
 }
 ---
@@ -158,3 +158,13 @@ tasks or require any live provider.
 
 - 2026-09-27T06:59:28+00:00: Recorded command exit 1; command argv SHA-256
   0709fe38cdee4ef680604cf40aee1ed4de6059695efbcd37d22a80f029aef6f4.
+
+- 2026-09-27T07:00:09+00:00: Implementation checkpoint: record-campaign now resolves every workload
+  ID through select_workload on linux-x86_64 before capture, preserving fail-closed rejection of
+  methodology-only/unavailable records. Added positive built-in plus literature swe-bench campaign
+  coverage and cassette assertion; documented validated catalog selection and
+  no-download/no-provider boundary. Focused asb-workloads (41 tests total including integration/doc
+  tests) and asb-cli record_campaign_requires_exact_matrix_before_offline_ready passed; cargo fmt
+  --check passed. Earlier exit 1 at 06:57:13 was the malformed handoffctl run invocation carrying
+  --lease-minutes (run accepts timeout only), not a product/test failure; corrected invocation
+  passed. Commit 26f03d3f52dab9c9667b0b8d09d69fc835c5b647 is SSH-signed with DCO. Worktree is clean.
