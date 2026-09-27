@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stage a deterministic customer bundle and provide an explicit external signing handoff and verifier.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Customer bundle signing handoff",
-  "updated_at": "2026-09-27T16:42:41+00:00",
+  "updated_at": "2026-09-27T16:42:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1492-customer-bundle-signing-handoff"
 }
 ---
@@ -240,3 +240,6 @@ detached signature.
   at 16:40:45Z and is IN_PROGRESS at 16:42:26Z. Job 108661578872 has completed policy setup
   successfully and is enforcing canonical contracts; remaining steps pending. Prior failure remains
   preserved as existing llvm-cov timing assertion; isolated serial reproduction passed.
+
+- 2026-09-27T16:42:49+00:00: Recorded command exit 0; command argv SHA-256
+  e0012b1c856579e08d997f68bace8ffa03309651e0986677b2860979a36f667c.
