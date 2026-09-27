@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire the runtime-owned local/mock process owner into ordinary CLI run and sweep.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Runtime-owner CLI entry wiring",
-  "updated_at": "2026-09-27T13:42:27+00:00",
+  "updated_at": "2026-09-27T13:42:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1486-cli-owner-wiring"
 }
 ---
@@ -141,3 +141,6 @@ authority.
   SUCCESS. Rust, Policy/coverage/supply chain, and Emulated AArch64 are IN_PROGRESS. The 300-second
   gh watch exited 124 due observation timeout, not a check result; direct gh pr view confirms all
   three jobs still running and no failures/head change.
+
+- 2026-09-27T13:42:58+00:00: Recorded command exit 0; command argv SHA-256
+  8d2b724c19739aacee5abbd9eb3d525003e615b4f0cdb663bcf4378655fc7ee2.
