@@ -9,7 +9,7 @@
     "AR-1472"
   ],
   "id": "AR-1477",
-  "next_action": "Monitor PR #347 exact head 3b8b2001; merge only after all required checks are SUCCESS, then verify post-merge workflows and rerun PR #345 validation.",
+  "next_action": "Merge PR #347 normally now that all 12 required checks are SUCCESS; then verify seven exact-main post-merge workflows.",
   "observed_branch": "feature/ar-1477-authority-resolver-coverage-tests",
   "observed_dirty": 0,
   "observed_head": "3b8b2001b7fe19f1fdd47dedfa2156eca8a8a6cb",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Raise exact hosted coverage above the enforced 90 percent floor for the authority resolver.",
-  "task_revision": 67,
+  "task_revision": 68,
   "title": "Cover authority resolver behavior",
-  "updated_at": "2026-09-27T05:29:32+00:00",
+  "updated_at": "2026-09-27T05:29:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1477-authority-resolver-coverage-tests"
 }
 ---
@@ -214,3 +214,12 @@ the coverage floor remains unchanged.
 
 - 2026-09-27T05:29:32+00:00: Recorded command exit 0; command argv SHA-256
   8917685081e9b9651ec5fcc2db85e83241771d246226d6b2856e4741627104c8.
+
+- 2026-09-27T05:29:58+00:00: Independent review complete: one scoped test-only file
+  (crates/asb-runtime/src/live_service.rs), 169 added lines; tests exercise resolver persistence,
+  digest-only record, owner/generation fences, cancellation/teardown revocation, invalid enrollment,
+  and private-input non-disclosure. No production semantics, threshold, egress, provider, or asb-tui
+  changes. PR #347 exact head 3b8b2001 has all 12 required checks terminal SUCCESS: policy/coverage
+  108557527445, Rust 108557527581, AArch64 108557527366, matcher 108557527536, platform
+  108557527477, faults 108557527680, fuzz 108557527715, Kani 108557527573, Loom 108557527598, TLC
+  108557527440, Huawei 108557527523, AWQ 108557527565.
