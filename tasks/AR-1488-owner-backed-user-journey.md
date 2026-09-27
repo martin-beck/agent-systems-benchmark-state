@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Owner-backed first-customer user journey",
-  "updated_at": "2026-09-27T14:45:28+00:00",
+  "updated_at": "2026-09-27T14:45:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1488-owner-backed-user-journey"
 }
 ---
@@ -93,3 +93,6 @@ live provider.
   workflow transcript 3/3, clippy, serial workspace tests, rustdoc, release build, policy,
   signature, and clean-tree gates passed. Signed SSH+DCO head
   f06b2d1b01d33ec367760e02c0f19c88a1ed4166.
+
+- 2026-09-27T14:45:43+00:00: Recorded command exit 0; command argv SHA-256
+  e9b65c7e33493656564be6504f2079c074c5d6405423870d97b7a1c1a1b4d04f.
