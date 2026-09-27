@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1472-authenticated-live-dispatch-adapter",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-27T03:34:43+00:00",
   "depends_on": [
     "AR-1373",
     "AR-1363"
@@ -12,15 +12,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "ar1332_record_replay_luna56",
   "plan": "../plans/AR-1472-authenticated-live-dispatch-adapter.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Connect authenticated control receipts to runtime-owned CLI live dispatch without a dependency cycle.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Authenticated live-dispatch adapter",
-  "updated_at": "2026-09-27T01:34:40+00:00",
+  "updated_at": "2026-09-27T01:34:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1472-authenticated-live-dispatch-adapter"
 }
 ---
@@ -35,3 +35,5 @@ authority. Mandatory qualification is deterministic local/mock or replay.
 
 - 2026-09-27T01:34:40+00:00: Circular AR-1374/AR-1375 dependency repaired; dependencies AR-1373 and
   AR-1363 are done. Implement the narrow authenticated adapter successor.
+
+- 2026-09-27T01:34:43+00:00: Claimed by ar1332_record_replay_luna56.

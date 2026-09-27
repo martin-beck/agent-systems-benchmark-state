@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1472](tasks/AR-1472-authenticated-live-dispatch-adapter.md): Authenticated live-dispatch adapter | Connect authenticated control receipts to runtime-owned CLI live dispatch without a dependency cycle. | Promote and implement the authenticated control-to-runtime live-dispatch adapter with local/mock tests; do not synthesize authority. | - |
+| P0 | [AR-1472](tasks/AR-1472-authenticated-live-dispatch-adapter.md): Authenticated live-dispatch adapter | Connect authenticated control receipts to runtime-owned CLI live dispatch without a dependency cycle. | Promote and implement the authenticated control-to-runtime live-dispatch adapter with local/mock tests; do not synthesize authority. | ar1332_record_replay_luna56 |
 
 ## Blocked
 
