@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1471](tasks/AR-1471-control-to-runtime-chain-binding.md): Control-to-runtime certificate-chain binding | Bind authenticated control enrollment to runtime certificate-chain storage and live dispatch. | Promote and claim the control-to-runtime chain-binding successor; implement authenticated enrollment materialization and normal dispatch wiring. | - |
+| P0 | [AR-1471](tasks/AR-1471-control-to-runtime-chain-binding.md): Control-to-runtime certificate-chain binding | Bind authenticated control enrollment to runtime certificate-chain storage and live dispatch. | Promote and claim the control-to-runtime chain-binding successor; implement authenticated enrollment materialization and normal dispatch wiring. | ar1332_record_replay_luna56 |
 
 ## Blocked
 
