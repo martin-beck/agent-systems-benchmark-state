@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1478-topic-synchronization-topology-repair",
-  "checkpoint_commit": "d1456b88d511d9c5ccd8ef4e693713ca706d9949",
+  "checkpoint_commit": "fac11a22a93c1a075d7d528f2c6c20d426c66ba4",
   "claim_expires": "2026-09-27T07:55:06+00:00",
   "depends_on": [
     "AR-1475",
@@ -9,7 +9,7 @@
     "AR-1379"
   ],
   "id": "AR-1478",
-  "next_action": "Await exact-head Rust rerun job 108560375889 terminal conclusion; then merge PR #348 only if SUCCESS.",
+  "next_action": "Monitor seven exact-main workflows for merge fac11a22; release only after all terminal SUCCESS.",
   "observed_branch": "feature/ar-1478-topic-synchronization-topology-repair",
   "observed_dirty": 0,
   "observed_head": "d1456b88d511d9c5ccd8ef4e693713ca706d9949",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair protected-main topic synchronization topology after AR-1477 merge policy failure.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Repair topic synchronization topology",
-  "updated_at": "2026-09-27T05:57:56+00:00",
+  "updated_at": "2026-09-27T05:58:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1478-topic-synchronization-topology-repair"
 }
 ---
@@ -251,3 +251,12 @@ or synchronization topology permitted by the policy.
 
 - 2026-09-27T05:57:56+00:00: Recorded command exit 0; command argv SHA-256
   aedbe6248a9baf95462c22a571142f628bf7e0f7f582ba7863578b068c44a3b4.
+
+- 2026-09-27T05:58:23+00:00: PR #348 merged at fac11a22a93c1a075d7d528f2c6c20d426c66ba4. Git show
+  via state checkout produced exit 128 bad object because that checkout tracks the state repository,
+  not product; this is a tooling/context error, not product failure. Retried with GitHub API: merge
+  has parents 67fa0d1a7ff90a9d3a38dadf7d69101e8c70d32a and d1456b88d511d9c5ccd8ef4e693713ca706d9949,
+  tree 7b91861029d0903863b860f680cebf852137a42b. Seven exact-main workflows: Huawei 36298610690
+  SUCCESS; hosted 36298610650 SUCCESS; Rust 36298610685 IN_PROGRESS; repository quality 36298610658
+  IN_PROGRESS; fault 36298610671 IN_PROGRESS; AArch64 36298610696 IN_PROGRESS; formal 36298610655
+  IN_PROGRESS.
