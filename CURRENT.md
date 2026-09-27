@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1480](tasks/AR-1480-runtime-control-cli-composition.md): Runtime-control CLI composition | Compose authenticated runtime enrollment into opaque normal CLI run and sweep dispatch. | Run workspace/docs/privacy/release gates excluding pre-commit clean-tree assertion, then review and sign commit. | ar1332-record-replay-luna56 |
+| P0 | [AR-1480](tasks/AR-1480-runtime-control-cli-composition.md): Runtime-control CLI composition | Compose authenticated runtime enrollment into opaque normal CLI run and sweep dispatch. | Publish exact signed head 440a06427d6e6fe2aacaebc2a50c5f924527dd04, monitor required CI, merge only all green. | ar1332-record-replay-luna56 |
 
 ## Blocked
 
