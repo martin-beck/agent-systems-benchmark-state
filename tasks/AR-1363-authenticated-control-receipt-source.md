@@ -9,17 +9,17 @@
   "id": "AR-1363",
   "next_action": "Promote after AR-1362 is done, then implement the bounded authenticated control receipt source consumed by runtime-owned dispatch.",
   "observed_branch": "feature/ar-1363-authenticated-control-receipt-source",
-  "observed_dirty": 1,
-  "observed_head": "cb9bce4dd99194ba44f65655d7f7e2e21fc8b408",
+  "observed_dirty": 0,
+  "observed_head": "29d27a91ad6a4eff455f62ae25eb952fec45fcf5",
   "owner": "ar1332_record_replay_luna56",
   "plan": "../plans/AR-1363-authenticated-control-receipt-source.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Deliver authenticated runtime authority receipts through the versioned control boundary without exposing secrets or caller authority.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Authenticated control receipt source",
-  "updated_at": "2026-09-27T01:06:15+00:00",
+  "updated_at": "2026-09-27T01:06:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1363-authenticated-control-receipt-source"
 }
 ---
