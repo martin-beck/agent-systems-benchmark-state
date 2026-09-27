@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make all locally executable literature workloads selectable and campaignable beside built-in fixtures.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Complete literature selector and local campaign matrix",
-  "updated_at": "2026-09-27T09:07:24+00:00",
+  "updated_at": "2026-09-27T09:07:29+00:00",
   "worktree_key": ""
 }
 ---
@@ -195,3 +195,6 @@ dataset downloads are never requirements for this AR.
   ff6f9a606707a22c65946c6354d0783e01f08e63: signed/DCO Exercism selector implementation plus
   generated catalog parity repair, no provider/network/asb-tui dependency. All 13 required checks
   SUCCESS, including Rust and policy/coverage/supply-chain.
+
+- 2026-09-27T09:07:29+00:00: Recorded command exit 0; command argv SHA-256
+  486c150faf7ad8ca17c7e52a8af0148d633893420b9c20a3cb012a606964460b.
