@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #350 | `feature/ar-1420-literature-workload-campaign-integration@ce42952fe367` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: integrate literature workload campaigns |
+| #350 | `feature/ar-1420-literature-workload-campaign-integration@ce42952fe367` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: integrate literature workload campaigns |
 
 ## Recent workflows
 
@@ -22,7 +22,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36305668518 | `ce42952fe367` | pull_request | Formal assurance | completed:success |
 | 36305668505 | `ce42952fe367` | pull_request | Huawei MIT source headers | completed:success |
 | 36305668501 | `ce42952fe367` | pull_request | Fault assurance | completed:success |
-| 36305668500 | `ce42952fe367` | pull_request | Rust verification | in_progress:- |
+| 36305668500 | `ce42952fe367` | pull_request | Rust verification | completed:success |
 | 36305668498 | `ce42952fe367` | pull_request | Hosted portability and native qualification | completed:success |
 | 36305668496 | `ce42952fe367` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36304800227 | `1015a4613a27` | push | Credential-free benchmark path | completed:success |
