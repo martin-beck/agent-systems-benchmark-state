@@ -147,11 +147,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1477](../tasks/AR-1477-authority-resolver-coverage-tests.md): Cover authority resolver behavior | Unclaimed | Raise exact hosted coverage above the enforced 90 percent floor for the authority resolver. | Promote after validating completed dependencies, then reproduce the 89.88 percent exact-head coverage failure and add behavioral tests. |
+| P0 | [AR-1477](../tasks/AR-1477-authority-resolver-coverage-tests.md): Cover authority resolver behavior | ar1332-record-replay-luna56 | Raise exact hosted coverage above the enforced 90 percent floor for the authority resolver. | Promote after validating completed dependencies, then reproduce the 89.88 percent exact-head coverage failure and add behavioral tests. |
 
 ### Blocked (71)
 

@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1477](tasks/AR-1477-authority-resolver-coverage-tests.md): Cover authority resolver behavior | Raise exact hosted coverage above the enforced 90 percent floor for the authority resolver. | Promote after validating completed dependencies, then reproduce the 89.88 percent exact-head coverage failure and add behavioral tests. | - |
+| P0 | [AR-1477](tasks/AR-1477-authority-resolver-coverage-tests.md): Cover authority resolver behavior | Raise exact hosted coverage above the enforced 90 percent floor for the authority resolver. | Promote after validating completed dependencies, then reproduce the 89.88 percent exact-head coverage failure and add behavioral tests. | ar1332-record-replay-luna56 |
 
 ## Blocked
 
