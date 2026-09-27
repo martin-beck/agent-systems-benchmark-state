@@ -2,7 +2,7 @@
 {
   "branch": "qualification/ar-1491-self-contained-package-qualification-fixture",
   "checkpoint_commit": "b4f532821cfdc10dc38aee856d8297e65dd9a2ba",
-  "claim_expires": "2026-09-27T17:59:48+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1461",
     "AR-1462",
@@ -14,15 +14,15 @@
   "observed_branch": "qualification/ar-1491-self-contained-package-qualification-fixture",
   "observed_dirty": 0,
   "observed_head": "b4f532821cfdc10dc38aee856d8297e65dd9a2ba",
-  "owner": "ar1332-record-replay-luna56",
+  "owner": "",
   "plan": "../plans/AR-1491-self-contained-package-qualification-fixture.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Add a self-contained non-production package qualification fixture using the offline verifier test-key pattern.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Self-contained package qualification fixture",
-  "updated_at": "2026-09-27T16:11:33+00:00",
+  "updated_at": "2026-09-27T16:11:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1491-self-contained-package-qualification-fixture"
 }
 ---
@@ -229,3 +229,9 @@ No live-provider or release-signing input may be fabricated.
   Huawei headers 36331674456, Fault 36331674445, Emulated aarch64 36331674468, Hosted 36331674447,
   Credential-free 36331674444, Rust 36331674435. Fixture remains non-production qualification only;
   signed external package gate for AR-1490 unchanged.
+
+- 2026-09-27T16:11:36+00:00: AR-1491 complete: deterministic offline verifier test-key fixture
+  boundary, isolated owner-only CLI doctor/setup harness, local/mock/replay documentation, signed PR
+  #370 and exact-main merge 5f4e286f051d09bc9706085ca21f68459fc10eb4; all 8 post-merge workflows
+  green. This is not customer release evidence; AR-1490 remains blocked on exact external signed
+  package/signing inputs.
