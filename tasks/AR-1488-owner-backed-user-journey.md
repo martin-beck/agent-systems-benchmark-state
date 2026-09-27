@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Owner-backed first-customer user journey",
-  "updated_at": "2026-09-27T14:57:29+00:00",
+  "updated_at": "2026-09-27T14:58:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1488-owner-backed-user-journey"
 }
 ---
@@ -171,3 +171,6 @@ live provider.
   Credential-free 36327707814, Hosted 36327707822, Repository quality 36327707913, Rust 36327707907,
   Emulated AArch64 36327707890, Fault 36327707933, Huawei headers 36327707905 SUCCESS, Formal
   36327707818.
+
+- 2026-09-27T14:58:34+00:00: Recorded command exit 0; command argv SHA-256
+  e28e51d732f1df6ef4cb4e80bc37d515bd1d54909545bc79d4ee41082e2d1e19.
