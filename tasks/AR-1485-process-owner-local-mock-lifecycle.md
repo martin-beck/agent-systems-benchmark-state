@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1485-process-owner-local-mock-lifecycle",
   "checkpoint_commit": "a6f43eb2a651fcfa3c0abe3b9e4dddaea78b6a80",
-  "claim_expires": "2026-09-27T15:07:06+00:00",
+  "claim_expires": "2026-09-27T15:11:02+00:00",
   "depends_on": [
     "AR-1472",
     "AR-1473",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement runtime-owned local/mock process lifecycle and opaque-source handoff.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Process-owner local/mock lifecycle",
-  "updated_at": "2026-09-27T13:10:47+00:00",
+  "updated_at": "2026-09-27T13:11:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1485-process-owner-local-mock-lifecycle"
 }
 ---
@@ -148,3 +148,5 @@ authority.
 
 - 2026-09-27T13:10:47+00:00: Recorded command exit 0; command argv SHA-256
   bbffc6585b5f57d9bcfc93ea11df4c85ca472b51f0d8eca02d095c728286fbdb.
+
+- 2026-09-27T13:11:02+00:00: Heartbeat by ar1332-record-replay-luna56.
