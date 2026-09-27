@@ -143,7 +143,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1472](../tasks/AR-1472-authenticated-live-dispatch-adapter.md): Authenticated live-dispatch adapter | ar1332_record_replay_luna56 | Connect authenticated control receipts to runtime-owned CLI live dispatch without a dependency cycle. | Monitor PR #343 Repository quality at exact head 5f785dab598f24c2221272cf53b9366a10625413; merge immediately only after terminal SUCCESS. |
+| P0 | [AR-1472](../tasks/AR-1472-authenticated-live-dispatch-adapter.md): Authenticated live-dispatch adapter | ar1332_record_replay_luna56 | Connect authenticated control receipts to runtime-owned CLI live dispatch without a dependency cycle. | Monitor seven exact-main post-merge workflows for 363b21f81d5c5ab364c2e2a923bd82676feaf343; release done only after all terminal SUCCESS and doctor verification. |
 
 ### Blocked (70)
 

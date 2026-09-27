@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1472-authenticated-live-dispatch-adapter",
-  "checkpoint_commit": "5f785dab598f24c2221272cf53b9366a10625413",
+  "checkpoint_commit": "363b21f81d5c5ab364c2e2a923bd82676feaf343",
   "claim_expires": "2026-09-27T03:57:49+00:00",
   "depends_on": [
     "AR-1373",
     "AR-1363"
   ],
   "id": "AR-1472",
-  "next_action": "Monitor PR #343 Repository quality at exact head 5f785dab598f24c2221272cf53b9366a10625413; merge immediately only after terminal SUCCESS.",
+  "next_action": "Monitor seven exact-main post-merge workflows for 363b21f81d5c5ab364c2e2a923bd82676feaf343; release done only after all terminal SUCCESS and doctor verification.",
   "observed_branch": "feature/ar-1472-authenticated-live-dispatch-adapter",
   "observed_dirty": 0,
   "observed_head": "5f785dab598f24c2221272cf53b9366a10625413",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect authenticated control receipts to runtime-owned CLI live dispatch without a dependency cycle.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Authenticated live-dispatch adapter",
-  "updated_at": "2026-09-27T02:00:46+00:00",
+  "updated_at": "2026-09-27T02:01:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1472-authenticated-live-dispatch-adapter"
 }
 ---
@@ -232,3 +232,10 @@ authority. Mandatory qualification is deterministic local/mock or replay.
 
 - 2026-09-27T02:00:46+00:00: Recorded command exit 0; command argv SHA-256
   8918ecd09069a03137dc78f4b9416217375afd5133733ee604ffe3b5c05aa500.
+
+- 2026-09-27T02:01:14+00:00: PR #343 merged 2026-09-27T01:59:12Z. Merge SHA
+  363b21f81d5c5ab364c2e2a923bd82676feaf343 has parents 4ee5a4ed843c7dd7dda0b92dbe392f3787b4039f and
+  5f785dab598f24c2221272cf53b9366a10625413; implementation tree verified via diff. Post-merge
+  exact-main runs: Huawei MIT source headers 36287167788 SUCCESS; Repository quality 36287167781,
+  Emulated aarch64 36287168007, Rust verification 36287167783, Hosted portability 36287167856, Fault
+  assurance 36287167886, Formal assurance 36287167839 IN_PROGRESS.
