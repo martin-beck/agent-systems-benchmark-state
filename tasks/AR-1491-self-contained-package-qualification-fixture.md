@@ -1,7 +1,7 @@
 ---
 {
   "branch": "qualification/ar-1491-self-contained-package-qualification-fixture",
-  "checkpoint_commit": "b4f5328a4c64551380fcfce6a701168393ff1f3e",
+  "checkpoint_commit": "b4f532821cfdc10dc38aee856d8297e65dd9a2ba",
   "claim_expires": "2026-09-27T17:47:05+00:00",
   "depends_on": [
     "AR-1461",
@@ -10,7 +10,7 @@
     "AR-1489"
   ],
   "id": "AR-1491",
-  "next_action": "Run repository policy/privacy/clean and serial workspace gates, then independent review and publish exact signed head.",
+  "next_action": "Independent review, publish exact signed head, monitor all required checks; never treat fixture as customer-release evidence.",
   "observed_branch": "qualification/ar-1491-self-contained-package-qualification-fixture",
   "observed_dirty": 0,
   "observed_head": "b4f532821cfdc10dc38aee856d8297e65dd9a2ba",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a self-contained non-production package qualification fixture using the offline verifier test-key pattern.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Self-contained package qualification fixture",
-  "updated_at": "2026-09-27T15:50:58+00:00",
+  "updated_at": "2026-09-27T15:51:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1491-self-contained-package-qualification-fixture"
 }
 ---
@@ -99,3 +99,9 @@ No live-provider or release-signing input may be fabricated.
 
 - 2026-09-27T15:50:58+00:00: Recorded command exit 0; command argv SHA-256
   696ccffb362fbd22f3cf456543615063a8a848aef35a8ca8f7d287ad2664d075.
+
+- 2026-09-27T15:51:29+00:00: Complete gates passed at exact head b4f5328: cargo fmt, focused
+  verifier 22/22, package fixture 2/2, workflow transcript 3/3, workspace clippy all-targets with -D
+  warnings, serial cargo test workspace all-targets (all non-ignored green), rustdoc workspace,
+  release build, diff/clean checks, and tools/quality/repository_policy.py against origin/main.
+  Fixture remains explicitly non-production; AR-1490 signed-package gate is preserved.
