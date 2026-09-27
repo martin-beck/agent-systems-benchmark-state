@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1485-process-owner-local-mock-lifecycle",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-27T14:45:41+00:00",
   "depends_on": [
     "AR-1472",
     "AR-1473",
@@ -14,15 +14,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1485-process-owner-local-mock-lifecycle.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Implement runtime-owned local/mock process lifecycle and opaque-source handoff.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Process-owner local/mock lifecycle",
-  "updated_at": "2026-09-27T12:45:39+00:00",
+  "updated_at": "2026-09-27T12:45:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1485-process-owner-local-mock-lifecycle"
 }
 ---
@@ -34,3 +34,5 @@ authority.
 
 - 2026-09-27T12:45:39+00:00: Dependency-safe local/mock process-owner implementation over completed
   AR-1472, AR-1473, AR-1480, and AR-1484 contracts; excludes AR-1374/1375 and live provider.
+
+- 2026-09-27T12:45:41+00:00: Claimed by ar1332-record-replay-luna56.

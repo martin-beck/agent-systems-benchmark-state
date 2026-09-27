@@ -157,11 +157,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1485](../tasks/AR-1485-process-owner-local-mock-lifecycle.md): Process-owner local/mock lifecycle | Unclaimed | Implement runtime-owned local/mock process lifecycle and opaque-source handoff. | Promote and claim, then audit the merged owner contract and implement the provider-free owner lifecycle slice. |
+| P0 | [AR-1485](../tasks/AR-1485-process-owner-local-mock-lifecycle.md): Process-owner local/mock lifecycle | ar1332-record-replay-luna56 | Implement runtime-owned local/mock process lifecycle and opaque-source handoff. | Promote and claim, then audit the merged owner contract and implement the provider-free owner lifecycle slice. |
 
 ### Blocked (73)
 
