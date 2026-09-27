@@ -14,16 +14,16 @@
   "next_action": "Monitor PR #344 at exact head fa855fc1; require all named checks terminal SUCCESS before merge, then verify seven post-merge workflows.",
   "observed_branch": "feature/ar-1379-live-dispatch-integration",
   "observed_dirty": 0,
-  "observed_head": "fa855fc1ad02a8d68777dfe41e1ef5238eaa0546",
+  "observed_head": "8e22be0fb90169a96f268079d8435dfe053e9fb9",
   "owner": "ar1379-live-dispatch-luna56",
   "plan": "../plans/AR-1379-live-dispatch-integration.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate authenticated runtime live dispatch into asb run and sweep.",
-  "task_revision": 104,
+  "task_revision": 105,
   "title": "Production live dispatch integration",
-  "updated_at": "2026-09-27T02:55:37+00:00",
+  "updated_at": "2026-09-27T02:55:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1379-live-dispatch-integration"
 }
 ---
