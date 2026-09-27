@@ -2,7 +2,7 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `eff9984fd11bec55e1e23366b3bba0bcb717826a`
+- Product remote main: `a6f43eb2a651fcfa3c0abe3b9e4dddaea78b6a80`
 - Local origin/main: `eff9984fd11bec55e1e23366b3bba0bcb717826a`
 - Primary worktree head: `bd7d10d4a760a84fa42de2b1fa9e97e8ea85ba09`
 
@@ -10,21 +10,20 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #359 | `feature/ar-1485-process-owner-local-mock-lifecycle@f01b7b11b5dc` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(runtime): add local mock process owner lifecycle |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 36321084452 | `a6f43eb2a651` | push | Credential-free benchmark path | in_progress:- |
+| 36321084352 | `a6f43eb2a651` | push | Repository quality | in_progress:- |
+| 36321084324 | `a6f43eb2a651` | push | Rust verification | in_progress:- |
+| 36321084289 | `a6f43eb2a651` | push | Formal assurance | queued:- |
+| 36321084287 | `a6f43eb2a651` | push | Fault assurance | in_progress:- |
+| 36321084255 | `a6f43eb2a651` | push | Huawei MIT source headers | queued:- |
+| 36321084195 | `a6f43eb2a651` | push | Emulated aarch64 portability | in_progress:- |
+| 36321084193 | `a6f43eb2a651` | push | Hosted portability and native qualification | in_progress:- |
 | 36320627555 | `f01b7b11b5dc` | pull_request | Credential-free benchmark path | completed:success |
 | 36320627548 | `f01b7b11b5dc` | pull_request | Repository quality | completed:success |
 | 36320627534 | `f01b7b11b5dc` | pull_request | Huawei MIT source headers | completed:success |
 | 36320627532 | `f01b7b11b5dc` | pull_request | Emulated aarch64 portability | completed:success |
-| 36320627518 | `f01b7b11b5dc` | pull_request | Formal assurance | completed:success |
-| 36320627514 | `f01b7b11b5dc` | pull_request | Hosted portability and native qualification | completed:success |
-| 36320627504 | `f01b7b11b5dc` | pull_request | Rust verification | completed:success |
-| 36320627493 | `f01b7b11b5dc` | pull_request | Fault assurance | completed:success |
-| 36320627484 | `f01b7b11b5dc` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 36319234719 | `eff9984fd11b` | push | Emulated aarch64 portability | completed:success |
-| 36319234706 | `eff9984fd11b` | push | Formal assurance | completed:success |
-| 36319234658 | `eff9984fd11b` | push | Fault assurance | completed:success |
