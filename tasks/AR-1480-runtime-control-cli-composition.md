@@ -11,16 +11,16 @@
   "next_action": "Promote after validating AR-1473 and AR-1472, then claim the isolated worktree and implement the opaque runtime-control CLI composition.",
   "observed_branch": "feature/ar-1480-runtime-control-cli-composition",
   "observed_dirty": 0,
-  "observed_head": "a53c1cfb817e627b7d573405a669a246625026d3",
+  "observed_head": "5e577e6a4b278fc79dc8b695cd6b3723d04cc609",
   "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1480-runtime-control-cli-composition.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compose authenticated runtime enrollment into opaque normal CLI run and sweep dispatch.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Runtime-control CLI composition",
-  "updated_at": "2026-09-27T11:18:08+00:00",
+  "updated_at": "2026-09-27T11:18:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1480-runtime-control-cli-composition"
 }
 ---
