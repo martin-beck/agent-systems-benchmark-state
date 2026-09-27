@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #349 | `feature/ar-1335-credential-free-benchmark-ci@16e4bf8405b9` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS: | ci: add credential-free benchmark path stage |
+| #349 | `feature/ar-1335-credential-free-benchmark-ci@16e4bf8405b9` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | ci: add credential-free benchmark path stage |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 36300089789 | `16e4bf8405b9` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 36300089621 | `16e4bf8405b9` | pull_request | Credential-free benchmark path | in_progress:- |
+| 36300089621 | `16e4bf8405b9` | pull_request | Credential-free benchmark path | completed:success |
 | 36300089598 | `16e4bf8405b9` | pull_request | Repository quality | in_progress:- |
 | 36300089591 | `16e4bf8405b9` | pull_request | Rust verification | in_progress:- |
 | 36300089590 | `16e4bf8405b9` | pull_request | Hosted portability and native qualification | completed:success |
