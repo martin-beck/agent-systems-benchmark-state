@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire the runtime-owned local/mock process owner into ordinary CLI run and sweep.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Runtime-owner CLI entry wiring",
-  "updated_at": "2026-09-27T13:43:15+00:00",
+  "updated_at": "2026-09-27T13:43:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1486-cli-owner-wiring"
 }
 ---
@@ -146,3 +146,6 @@ authority.
   8d2b724c19739aacee5abbd9eb3d525003e615b4f0cdb663bcf4378655fc7ee2.
 
 - 2026-09-27T13:43:15+00:00: Heartbeat by ar1332-record-replay-luna56.
+
+- 2026-09-27T13:43:40+00:00: Recorded command exit 0; command argv SHA-256
+  8d2b724c19739aacee5abbd9eb3d525003e615b4f0cdb663bcf4378655fc7ee2.
