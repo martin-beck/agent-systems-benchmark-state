@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1471-control-to-runtime-chain-binding",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "d76d099dcaa551c14c97e89c524e83bec6facd93",
   "claim_expires": "2026-09-27T03:24:29+00:00",
   "depends_on": [
     "AR-1357",
@@ -9,7 +9,7 @@
     "AR-1362"
   ],
   "id": "AR-1471",
-  "next_action": "Promote and claim the control-to-runtime chain-binding successor; implement authenticated enrollment materialization and normal dispatch wiring.",
+  "next_action": "Run independent review, publish exact signed head, monitor required checks, and merge only after all green.",
   "observed_branch": "feature/ar-1471-control-to-runtime-chain-binding",
   "observed_dirty": 0,
   "observed_head": "d76d099dcaa551c14c97e89c524e83bec6facd93",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind authenticated control enrollment to runtime certificate-chain storage and live dispatch.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Control-to-runtime certificate-chain binding",
-  "updated_at": "2026-09-27T00:27:27+00:00",
+  "updated_at": "2026-09-27T00:27:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1471-control-to-runtime-chain-binding"
 }
 ---
@@ -113,3 +113,15 @@ authority.
 
 - 2026-09-27T00:27:15+00:00: Recorded command exit 0; command argv SHA-256
   d0cef0e3c71fa5e52969e8f967cc48b078347f6acaede3d03cb9768f1bd8fd24.
+
+- 2026-09-27T00:27:44+00:00: Implemented smallest control-owned chain binding.
+  RuntimeReceiptResponseV1 now carries AuthenticatedChainEnrollmentV1 public metadata and validates
+  the receipt chain digest against canonical metadata. Control emits the persisted authority chain;
+  runtime reconstructs the opaque chain through issue_runtime_chain only from the control response,
+  installs it into RuntimeCertificateChainStore, and the store install API is crate-private so
+  callers cannot inject chains. Existing generation/freshness/target/tool/lease/relay/nonce/replay
+  checks remain enforced. Added positive reconstruction and tampered generation tests, corrected
+  response fixtures, regenerated v1.5/v1.6/v1.7 schemas, and documented the boundary. Focused tests:
+  asb-control 67, asb-runtime 132, asb-cli 113; schema conformance 4; full workspace locked tests
+  green; clippy -D warnings, rustdoc -D warnings, release build and diff-check green. Product commit
+  d76d099dcaa551c14c97e89c524e83bec6facd93 is SSH-signed and DCO.
