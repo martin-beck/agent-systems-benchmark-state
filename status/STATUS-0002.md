@@ -153,7 +153,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1479](../tasks/AR-1479-rust-ci-flake-repair.md): Rust CI timing and state-root flake repair | ar1332-record-replay-luna56 | Repair the unrelated Rust state-root collision and malformed-ready-marker timing flakes blocking AR-1420 exact-head CI. | Monitor PR #351 exact head 69c077e checks; merge only after all required checks green, then requalify AR-1420 PR #350 head 2884508. |
+| P0 | [AR-1479](../tasks/AR-1479-rust-ci-flake-repair.md): Rust CI timing and state-root flake repair | ar1332-record-replay-luna56 | Repair the unrelated Rust state-root collision and malformed-ready-marker timing flakes blocking AR-1420 exact-head CI. | Monitor PR #352 exact head 52368cd; merge only after all required checks green, then verify AR-1479 post-merge and requalify AR-1420 PR #350 head 2884508. |
 
 ### Blocked (72)
 

@@ -1,11 +1,11 @@
 ---
 {
   "branch": "",
-  "checkpoint_commit": "69c077e969ba02c77f90d5dcd892e53b95172bc4",
+  "checkpoint_commit": "52368cd91d9b961c1a28ccb5142cdd1537d06779",
   "claim_expires": "2026-09-27T09:57:32+00:00",
   "depends_on": [],
   "id": "AR-1479",
-  "next_action": "Monitor PR #351 exact head 69c077e checks; merge only after all required checks green, then requalify AR-1420 PR #350 head 2884508.",
+  "next_action": "Monitor PR #352 exact head 52368cd; merge only after all required checks green, then verify AR-1479 post-merge and requalify AR-1420 PR #350 head 2884508.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the unrelated Rust state-root collision and malformed-ready-marker timing flakes blocking AR-1420 exact-head CI.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Rust CI timing and state-root flake repair",
-  "updated_at": "2026-09-27T07:57:32+00:00",
+  "updated_at": "2026-09-27T07:57:52+00:00",
   "worktree_key": ""
 }
 ---
@@ -274,3 +274,10 @@ requalified. Preserve fail-closed cleanup and bounded execution semantics.
   18372e552c84b52dc4159dbf95c7649986b182d094a7203c11dda76e4b9cf509.
 
 - 2026-09-27T07:57:32+00:00: Heartbeat by ar1332-record-replay-luna56.
+
+- 2026-09-27T07:57:52+00:00: Scope clarification: PR #352 is not a new product repair; it completes
+  AR-1479s same two CI flake contract by applying the identical serial test-runner guard to the
+  credential-free workflow, where post-merge run 36303930945 reproduced the state-root ownership
+  failure. Signed/DCO repair commit 52368cd is based on protected main 4a8f946; policy/identity
+  failures on superseded 031f2bc were corrected by matching author/DCO and current-main ancestry. PR
+  #352 remains unmerged pending exact-head checks.
