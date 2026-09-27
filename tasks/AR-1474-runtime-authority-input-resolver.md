@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority.",
-  "task_revision": 56,
+  "task_revision": 57,
   "title": "Runtime-owned authority-input resolver",
-  "updated_at": "2026-09-27T03:48:30+00:00",
+  "updated_at": "2026-09-27T03:48:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1474-runtime-authority-input-resolver"
 }
 ---
@@ -188,3 +188,6 @@ authority, privacy, lifecycle, formal, or egress contracts.
   kernel::tests::missing_malformed_and_unsafe_configuration_fail_closed: expected MalformedEvidence,
   got ProbeRejected; AR-1474 code tests passed. Treat as unrelated deterministic runner-sensitive
   failure; one approved exact-head retry.
+
+- 2026-09-27T03:48:33+00:00: Recorded command exit 0; command argv SHA-256
+  67b1c99e6da7eec6e1f4e16321199e22d08b54c7ad13f0c0129a17f874593342.
