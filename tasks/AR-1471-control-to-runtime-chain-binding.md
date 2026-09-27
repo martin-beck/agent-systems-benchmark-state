@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind authenticated control enrollment to runtime certificate-chain storage and live dispatch.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Control-to-runtime certificate-chain binding",
-  "updated_at": "2026-09-27T00:22:45+00:00",
+  "updated_at": "2026-09-27T00:22:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1471-control-to-runtime-chain-binding"
 }
 ---
@@ -87,3 +87,6 @@ authority.
 
 - 2026-09-27T00:22:34+00:00: Recorded command exit 0; command argv SHA-256
   ef1046126e0853167171fb6e0bc4c5bbf98c0acfb6e4fd09e7a7a9a1d76fae62.
+
+- 2026-09-27T00:22:53+00:00: Recorded command exit 0; command argv SHA-256
+  197a0d2cc50e88864281b3ee6506ef4427debef55f125f99596502e874512adb.
