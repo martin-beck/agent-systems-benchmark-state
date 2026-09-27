@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate authenticated runtime live dispatch into asb run and sweep.",
-  "task_revision": 128,
+  "task_revision": 129,
   "title": "Production live dispatch integration",
-  "updated_at": "2026-09-27T03:07:03+00:00",
+  "updated_at": "2026-09-27T03:07:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1379-live-dispatch-integration"
 }
 ---
@@ -416,3 +416,6 @@ verified through the completed gates.
   started at this exact SHA: Emulated aarch64, Rust verification, Fault assurance, Formal assurance,
   Hosted portability/native qualification, Huawei MIT headers, Repository quality. At first
   post-merge poll, six in_progress and headers success; no release yet.
+
+- 2026-09-27T03:07:12+00:00: Recorded command exit 0; command argv SHA-256
+  a91c4272839ebb8d62b277b17ab68e00a0e36aee9d398c1f9f2541004fdf4aa2.
