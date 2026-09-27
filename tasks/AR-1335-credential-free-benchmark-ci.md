@@ -8,7 +8,7 @@
     "AR-1334"
   ],
   "id": "AR-1335",
-  "next_action": "Monitor remaining exact-main workflows for merge 8361a8dd; release AR-1335 only after all eight terminal SUCCESS.",
+  "next_action": "Approved one-time Rust failed-job rerun for known state-root ownership race; monitor rerun and remaining post-merge workflows.",
   "observed_branch": "feature/ar-1335-credential-free-benchmark-ci",
   "observed_dirty": 0,
   "observed_head": "16e4bf8405b98c229bda49f82253f21784d82d51",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the required credential-free CI stage for the complete benchmark path.",
-  "task_revision": 111,
+  "task_revision": 112,
   "title": "Credential-free CI stage for the benchmark path",
-  "updated_at": "2026-09-27T06:40:03+00:00",
+  "updated_at": "2026-09-27T06:40:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1335-credential-free-benchmark-ci"
 }
 ---
@@ -359,3 +359,10 @@ reachability.
 
 - 2026-09-27T06:40:03+00:00: Recorded command exit 0; command argv SHA-256
   dabf2283aeb70b0de28e925cc0ae4ef498108b14214832f9211f46c209e7e429.
+
+- 2026-09-27T06:40:33+00:00: Post-merge Rust run 36300553949 failed only existing
+  control::tests::production_backend_runs_without_frontend_and_recovers_idempotency: control state
+  root is already owned at crates/asb-cli/src/control.rs:6593; 115 passed, 1 failed. This is the
+  known CI state-root concurrency race, unrelated to the workflow-only diff. Other exact-main
+  workflows: Huawei, hosted, credential-free, fault, formal SUCCESS; repository quality and AArch64
+  IN_PROGRESS. Approved one exact-head failed-job rerun before release.
