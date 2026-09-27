@@ -11,7 +11,7 @@
     "AR-1487"
   ],
   "id": "AR-1488",
-  "next_action": "Publish signed exact head through handoffctl; monitor required PR checks and merge only when all green.",
+  "next_action": "Monitor PR #368 exact head f06b2d1b; merge only after every required check and independent review are green.",
   "observed_branch": "feature/ar-1488-owner-backed-user-journey",
   "observed_dirty": 0,
   "observed_head": "f06b2d1b01d33ec367760e02c0f19c88a1ed4166",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Owner-backed first-customer user journey",
-  "updated_at": "2026-09-27T14:45:43+00:00",
+  "updated_at": "2026-09-27T14:46:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1488-owner-backed-user-journey"
 }
 ---
@@ -96,3 +96,7 @@ live provider.
 
 - 2026-09-27T14:45:43+00:00: Recorded command exit 0; command argv SHA-256
   e9b65c7e33493656564be6504f2079c074c5d6405423870d97b7a1c1a1b4d04f.
+
+- 2026-09-27T14:46:10+00:00: Published PR #368 from exact signed/DCO head
+  f06b2d1b01d33ec367760e02c0f19c88a1ed4166; branch feature/ar-1488-owner-backed-user-journey pushed
+  successfully.
