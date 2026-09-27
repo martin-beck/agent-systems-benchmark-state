@@ -24,9 +24,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize authenticated runtime live authority into an opaque source without caller injection.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Runtime control bootstrap constructor",
-  "updated_at": "2026-09-27T03:17:52+00:00",
+  "updated_at": "2026-09-27T03:18:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1391-runtime-control-bootstrap-constructor"
 }
 ---
@@ -99,3 +99,6 @@ reachability.
   protected-main audit of runtime-owned bootstrap constructor availability before implementation.
 
 - 2026-09-27T03:17:52+00:00: Claimed by ar1332_record_replay_luna56.
+
+- 2026-09-27T03:18:10+00:00: Recorded command exit 0; command argv SHA-256
+  db10c2b810ca2a05a2807fc1e3f072719794d3ac7ccc14bb48853c9d8e22e508.
