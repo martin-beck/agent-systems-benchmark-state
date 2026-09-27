@@ -9,7 +9,7 @@
     "AR-1379"
   ],
   "id": "AR-1473",
-  "next_action": "Promote after validating completed dependencies, then claim the isolated worktree and implement the narrow runtime-owned enrollment source.",
+  "next_action": "Implement runtime-owned enrollment source over existing authenticated profile/resolver; add hostile local tests, then focused/full gates.",
   "observed_branch": "feature/ar-1473-runtime-owned-enrollment-source",
   "observed_dirty": 0,
   "observed_head": "5e577e6a4b278fc79dc8b695cd6b3723d04cc609",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve authenticated control enrollment into an opaque runtime-owned source for normal ASB run and sweep.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Runtime-owned authenticated enrollment source",
-  "updated_at": "2026-09-27T10:43:36+00:00",
+  "updated_at": "2026-09-27T10:43:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1473-runtime-owned-enrollment-source"
 }
 ---
@@ -70,3 +70,10 @@ the existing fail-closed authority boundaries.
   b24e1452d90408fbeca79860cd9c189a296605391fbad89fe6d6492354892a4f.
 
 - 2026-09-27T10:43:36+00:00: Heartbeat by ar1332-record-replay-luna56.
+
+- 2026-09-27T10:43:38+00:00: Re-audit after resume and refresh to protected main 5e577e6:
+  AR-1471/1472/1379 are done; existing RuntimeAuthorityInputResolver persists digest-only metadata
+  and fences owner/generation/cancel/teardown, but its profile-to-LiveProviderEnrollment source is
+  not wired (materialize_handle_from_resolver remains dead-code and no source implementation
+  exists). Scope remains implement the smallest private runtime-owned enrollment source; no caller
+  authority or live provider.
