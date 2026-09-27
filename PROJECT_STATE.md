@@ -10,20 +10,21 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #343 | `feature/ar-1472-authenticated-live-dispatch-adapter@5f785dab598f` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(runtime): bridge authenticated enrollment to dispatch source |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 36286710461 | `5f785dab598f` | pull_request | Repository quality | in_progress:- |
+| 36286710453 | `5f785dab598f` | pull_request | Huawei MIT source headers | completed:success |
+| 36286710443 | `5f785dab598f` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 36286710441 | `5f785dab598f` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 36286710433 | `5f785dab598f` | pull_request | Fault assurance | in_progress:- |
+| 36286710421 | `5f785dab598f` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 36286710418 | `5f785dab598f` | pull_request | Formal assurance | in_progress:- |
+| 36286710406 | `5f785dab598f` | pull_request | Rust verification | in_progress:- |
 | 36285156746 | `4ee5a4ed843c` | push | Formal assurance | completed:success |
 | 36285156729 | `4ee5a4ed843c` | push | Huawei MIT source headers | completed:success |
 | 36285156725 | `4ee5a4ed843c` | push | Hosted portability and native qualification | completed:success |
 | 36285156701 | `4ee5a4ed843c` | push | Repository quality | completed:success |
-| 36285156661 | `4ee5a4ed843c` | push | Rust verification | completed:success |
-| 36285156656 | `4ee5a4ed843c` | push | Emulated aarch64 portability | completed:success |
-| 36285156628 | `4ee5a4ed843c` | push | Fault assurance | completed:success |
-| 36284742939 | `29d27a91ad6a` | pull_request | Emulated aarch64 portability | completed:success |
-| 36284742908 | `29d27a91ad6a` | pull_request | Rust verification | completed:success |
-| 36284742907 | `29d27a91ad6a` | pull_request | Hosted portability and native qualification | completed:success |
-| 36284742897 | `29d27a91ad6a` | pull_request | Huawei MIT source headers | completed:success |
-| 36284742895 | `29d27a91ad6a` | pull_request | Repository quality | completed:success |
