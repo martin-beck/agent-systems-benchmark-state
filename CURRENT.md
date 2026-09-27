@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1472](tasks/AR-1472-authenticated-live-dispatch-adapter.md): Authenticated live-dispatch adapter | Connect authenticated control receipts to runtime-owned CLI live dispatch without a dependency cycle. | Run full workspace gates, then independent review and publish exact signed head through handoffctl. | ar1332_record_replay_luna56 |
+| P0 | [AR-1472](tasks/AR-1472-authenticated-live-dispatch-adapter.md): Authenticated live-dispatch adapter | Connect authenticated control receipts to runtime-owned CLI live dispatch without a dependency cycle. | Complete release build and independent diff review, then publish exact signed head through handoffctl. | ar1332_record_replay_luna56 |
 
 ## Blocked
 

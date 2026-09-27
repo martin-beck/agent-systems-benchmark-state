@@ -8,7 +8,7 @@
     "AR-1363"
   ],
   "id": "AR-1472",
-  "next_action": "Run full workspace gates, then independent review and publish exact signed head through handoffctl.",
+  "next_action": "Complete release build and independent diff review, then publish exact signed head through handoffctl.",
   "observed_branch": "feature/ar-1472-authenticated-live-dispatch-adapter",
   "observed_dirty": 0,
   "observed_head": "5f785dab598f24c2221272cf53b9366a10625413",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect authenticated control receipts to runtime-owned CLI live dispatch without a dependency cycle.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Authenticated live-dispatch adapter",
-  "updated_at": "2026-09-27T01:46:15+00:00",
+  "updated_at": "2026-09-27T01:46:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1472-authenticated-live-dispatch-adapter"
 }
 ---
@@ -117,3 +117,10 @@ authority. Mandatory qualification is deterministic local/mock or replay.
 
 - 2026-09-27T01:46:15+00:00: Recorded command exit 0; command argv SHA-256
   5c65734e6538cf9e4793a7b2544e7ef4effba6047efc156c8474d0017efc7be6.
+
+- 2026-09-27T01:46:45+00:00: Formatting failure at 2026-09-27T01:44Z classified: cargo fmt was
+  invoked from the state checkout, which has no Cargo.toml; Cargo reported could not find Cargo.toml
+  in /srv/data/projects/agent-systems-benchmark-state. Corrected by invoking through handoffctl from
+  declared product worktree; cargo fmt --all -- --check passed. Focused cargo test --locked -p
+  asb-runtime -p asb-cli passed (114 CLI unit tests and all integration/doc tests, exit 0). No
+  product diff from the failed invocation.
