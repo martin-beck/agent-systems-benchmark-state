@@ -146,7 +146,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1474](../tasks/AR-1474-runtime-authority-input-resolver.md): Runtime-owned authority-input resolver | ar1332_record_replay_luna56 | Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority. | Await exact-head Rust retry and repair/retry repository quality coverage failure; do not merge until all checks green. |
+| P0 | [AR-1474](../tasks/AR-1474-runtime-authority-input-resolver.md): Runtime-owned authority-input resolver | ar1332_record_replay_luna56 | Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority. | Create narrow asb-metrics repair successor for repeated ProbeRejected versus MalformedEvidence failure; keep PR #345 unmerged. |
 
 ### Blocked (70)
 

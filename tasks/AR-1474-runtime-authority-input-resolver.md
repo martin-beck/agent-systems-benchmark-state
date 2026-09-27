@@ -10,7 +10,7 @@
     "AR-1379"
   ],
   "id": "AR-1474",
-  "next_action": "Await exact-head Rust retry and repair/retry repository quality coverage failure; do not merge until all checks green.",
+  "next_action": "Create narrow asb-metrics repair successor for repeated ProbeRejected versus MalformedEvidence failure; keep PR #345 unmerged.",
   "observed_branch": "feature/ar-1474-runtime-authority-input-resolver",
   "observed_dirty": 0,
   "observed_head": "56d284c2d292163e2724318b0443f53211b4f9e4",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority.",
-  "task_revision": 67,
+  "task_revision": 68,
   "title": "Runtime-owned authority-input resolver",
-  "updated_at": "2026-09-27T03:52:34+00:00",
+  "updated_at": "2026-09-27T03:53:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1474-runtime-authority-input-resolver"
 }
 ---
@@ -221,3 +221,9 @@ authority, privacy, lifecycle, formal, or egress contracts.
 
 - 2026-09-27T03:52:34+00:00: Recorded command exit 0; command argv SHA-256
   b9170a4cdc54c56fddaa8c182e27784034c45764409e7979e4d0968ae8115813.
+
+- 2026-09-27T03:53:08+00:00: Approved Rust rerun 36292250053 failed identically: existing
+  asb-metrics kernel::tests::missing_malformed_and_unsafe_configuration_fail_closed at
+  kernel.rs:718, expected MalformedEvidence but got ProbeRejected. First run and retry both fail;
+  unrelated to AR-1474 files. Repository quality 36292250172 also failed coverage after workspace
+  tests aborted. Do not waive gates or merge PR #345.
