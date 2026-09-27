@@ -18,11 +18,11 @@
   "plan": "../plans/AR-1420.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Run the complete qualified literature workload matrix beside built-in software-engineering workloads.",
-  "task_revision": 124,
+  "task_revision": 125,
   "title": "Literature workload campaign integration",
-  "updated_at": "2026-09-27T07:20:47+00:00",
+  "updated_at": "2026-09-27T08:07:32+00:00",
   "worktree_key": ""
 }
 ---
@@ -427,3 +427,6 @@ tasks or require any live provider.
   <1s). No AR-1420 files are implicated. Next action: create/assign a narrowly scoped repair AR for
   the nondeterministic existing Rust tests, then revalidate PR #350 exact head; do not waive or
   weaken Rust.
+
+- 2026-09-27T08:07:32+00:00: AR-1479 repaired both CI flakes and merged 1015a461 with all eight
+  post-merge workflows green; requalify PR #350 exact head 2884508.
