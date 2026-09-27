@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make all locally executable literature workloads selectable and campaignable beside built-in fixtures.",
-  "task_revision": 57,
+  "task_revision": 58,
   "title": "Complete literature selector and local campaign matrix",
-  "updated_at": "2026-09-27T09:08:43+00:00",
+  "updated_at": "2026-09-27T09:08:55+00:00",
   "worktree_key": ""
 }
 ---
@@ -209,3 +209,6 @@ dataset downloads are never requirements for this AR.
   exact-main runs started: AArch64 36308369675, hosted 36308369648, repository quality 36308369618,
   Huawei 36308369609 SUCCESS, formal 36308369594, Rust 36308369583, fault 36308369579,
   credential-free 36308369573.
+
+- 2026-09-27T09:08:55+00:00: Recorded command exit 0; command argv SHA-256
+  b6f3b5e825f2de78b42426034c9b7120bdeb12aeb74d66d97693a230504a49a8.
