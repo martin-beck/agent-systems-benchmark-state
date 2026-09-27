@@ -10,7 +10,7 @@
     "AR-1492"
   ],
   "id": "AR-1493",
-  "next_action": "Monitor eight exact-main post-merge workflows for e1be259c; release AR-1493 done only after all terminal SUCCESS.",
+  "next_action": "Reconcile and doctor state, then release AR-1493 done ownerless with complete merge and post-merge evidence.",
   "observed_branch": "release/ar-1493-release-authority-enrollment-handoff",
   "observed_dirty": 0,
   "observed_head": "9d2b22a80cfe9c6d9a01daec1e257fd93b99d37d",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define and validate the external release-authority enrollment and signed-bundle verification handoff.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Release-authority enrollment handoff",
-  "updated_at": "2026-09-27T17:21:22+00:00",
+  "updated_at": "2026-09-27T17:21:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1493-release-authority-enrollment-handoff"
 }
 ---
@@ -231,3 +231,11 @@ and preserve AR-1490 as the customer-release blocker.
 
 - 2026-09-27T17:21:22+00:00: Recorded command exit 0; command argv SHA-256
   65c48537df954c87b1d88d29f6fc784ec1946325f89a10c698d249fe7fdf9686.
+
+- 2026-09-27T17:21:51+00:00: All eight exact-main post-merge workflows for merge
+  e1be259c9abb2a901998d3ca9b82521edd3fa2f8 are terminal SUCCESS: Huawei 36336026608; hosted
+  36336026588; credential-free 36336026586; fault 36336026566; formal 36336026579; Rust 36336026563;
+  emulated AArch64 36336026554; Repository Quality 36336026573 (job 108666918457). PR #372 merged
+  normally at 17:11:45Z from reviewed signed/DCO head 9d2b22a80cfe9c6d9a01daec1e257fd93b99d37d.
+  External signing authority was not generated or assumed; AR-1490 remains blocked on authorized
+  customer signing inputs.

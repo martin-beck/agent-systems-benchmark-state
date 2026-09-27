@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1493](tasks/AR-1493-release-authority-enrollment-handoff.md): Release-authority enrollment handoff | Define and validate the external release-authority enrollment and signed-bundle verification handoff. | Monitor eight exact-main post-merge workflows for e1be259c; release AR-1493 done only after all terminal SUCCESS. | ar1332-record-replay-luna56 |
+| P0 | [AR-1493](tasks/AR-1493-release-authority-enrollment-handoff.md): Release-authority enrollment handoff | Define and validate the external release-authority enrollment and signed-bundle verification handoff. | Reconcile and doctor state, then release AR-1493 done ownerless with complete merge and post-merge evidence. | ar1332-record-replay-luna56 |
 
 ## Blocked
 
