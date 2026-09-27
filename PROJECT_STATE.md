@@ -10,13 +10,13 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #344 | `feature/ar-1379-live-dispatch-integration@11f3db5078df` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): integrate runtime-owned live dispatch |
+| #344 | `feature/ar-1379-live-dispatch-integration@11f3db5078df` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): integrate runtime-owned live dispatch |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36288588450 | `11f3db5078df` | pull_request | Rust verification | in_progress:- |
+| 36288588450 | `11f3db5078df` | pull_request | Rust verification | completed:failure |
 | 36288588427 | `11f3db5078df` | pull_request | Hosted portability and native qualification | completed:success |
 | 36288588395 | `11f3db5078df` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36288588351 | `11f3db5078df` | pull_request | Huawei MIT source headers | completed:success |
