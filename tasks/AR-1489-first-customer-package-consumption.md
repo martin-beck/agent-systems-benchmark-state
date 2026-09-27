@@ -17,11 +17,11 @@
   "plan": "../plans/AR-1489-first-customer-package-consumption.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Verify first-customer release package installation and owner-backed local/mock/replay consumption.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "First-customer package consumption",
-  "updated_at": "2026-09-27T15:05:00+00:00",
+  "updated_at": "2026-09-27T15:08:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1489-first-customer-package-consumption"
 }
 ---
@@ -32,3 +32,6 @@ touching asb-tui or requiring a live provider.
 
 - 2026-09-27T15:05:00+00:00: Created after AR-1488 completion to close the
   remaining fresh package installation and consumption evidence gap.
+
+- 2026-09-27T15:08:05+00:00: Dependencies AR-1461, AR-1462, and AR-1488 are done. Promote ASB-only
+  first-customer package/install consumption qualification with local/mock/replay evidence.
