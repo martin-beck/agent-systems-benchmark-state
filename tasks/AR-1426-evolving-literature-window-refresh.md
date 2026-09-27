@@ -8,7 +8,7 @@
     "AR-1425"
   ],
   "id": "AR-1426",
-  "next_action": "Await AArch64 run 36312453084 attempt 2; all other seven post-merge workflows are SUCCESS. Release done after AArch64 attempt 2 SUCCESS.",
+  "next_action": "Reconcile and doctor state, then release AR-1426 done.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Refresh evolving literature benchmark windows without stale or incomparable results.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Evolving literature workload window refresh",
-  "updated_at": "2026-09-27T10:39:08+00:00",
+  "updated_at": "2026-09-27T10:39:38+00:00",
   "worktree_key": ""
 }
 ---
@@ -219,3 +219,12 @@ requires live providers or upstream downloads during development or CI.
 
 - 2026-09-27T10:39:08+00:00: Recorded command exit 0; command argv SHA-256
   311b09ec52bea446d699802bd8475f4023a2438f23fdb5cc50229d9a57e80476.
+
+- 2026-09-27T10:39:38+00:00: Final exact-main verification complete on merge
+  5e577e6a4b278fc79dc8b695cd6b3723d04cc609. All eight required workflows terminal SUCCESS: Huawei
+  MIT source headers 36312453082; Rust verification 36312453077; Emulated AArch64 portability
+  36312453084 attempt 2 SUCCESS after focused local reproduction passed; Formal assurance
+  36312453087; Repository quality 36312453096; Fault assurance 36312453109; Credential-free
+  benchmark path 36312453110; Hosted portability/native qualification 36312453113. PR #355 closed
+  merged, reviewed exact head 73b5fd1d14fa0343a7f3cc6d73acc91187d46333. No live provider, network,
+  credentials, or asb-tui changes.

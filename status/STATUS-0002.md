@@ -153,7 +153,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1426](../tasks/AR-1426-evolving-literature-window-refresh.md): Evolving literature workload window refresh | ar1332-record-replay-luna56 | Refresh evolving literature benchmark windows without stale or incomparable results. | Await AArch64 run 36312453084 attempt 2; all other seven post-merge workflows are SUCCESS. Release done after AArch64 attempt 2 SUCCESS. |
+| P1 | [AR-1426](../tasks/AR-1426-evolving-literature-window-refresh.md): Evolving literature workload window refresh | ar1332-record-replay-luna56 | Refresh evolving literature benchmark windows without stale or incomparable results. | Reconcile and doctor state, then release AR-1426 done. |
 
 ### Blocked (71)
 
