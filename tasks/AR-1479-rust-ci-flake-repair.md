@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-27T09:57:32+00:00",
   "depends_on": [],
   "id": "AR-1479",
-  "next_action": "Monitor PR #352 exact head 52368cd; merge only after all required checks green, then verify AR-1479 post-merge and requalify AR-1420 PR #350 head 2884508.",
+  "next_action": "Merge PR #352 normally; verify merge SHA and all seven exact-main workflows, then requalify AR-1420 PR #350 head 2884508.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the unrelated Rust state-root collision and malformed-ready-marker timing flakes blocking AR-1420 exact-head CI.",
-  "task_revision": 89,
+  "task_revision": 90,
   "title": "Rust CI timing and state-root flake repair",
-  "updated_at": "2026-09-27T07:59:49+00:00",
+  "updated_at": "2026-09-27T08:00:23+00:00",
   "worktree_key": ""
 }
 ---
@@ -293,3 +293,9 @@ requalified. Preserve fail-closed cleanup and bounded execution semantics.
 
 - 2026-09-27T07:59:49+00:00: Recorded command exit 0; command argv SHA-256
   419e8f2037791d4888b9f5082fdd8c9847f9c46ed98c89365dbe605f72cbecfc.
+
+- 2026-09-27T08:00:23+00:00: Independent review: one-line workflow-only diff, based directly on
+  protected main 4a8f946, signed commit author/DCO match verified, no production semantics changed.
+  PR #352 exact head 52368cd required checks all SUCCESS: Rust, credential-free,
+  policy/coverage/supply-chain, platform, AArch64, formal, Loom, Kani, TLC, fault, fuzz,
+  matcher/SLO, AWQ, Huawei.
