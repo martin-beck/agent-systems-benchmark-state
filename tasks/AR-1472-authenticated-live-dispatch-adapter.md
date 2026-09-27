@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1472-authenticated-live-dispatch-adapter",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "5f785dab598f24c2221272cf53b9366a10625413",
   "claim_expires": "2026-09-27T03:34:43+00:00",
   "depends_on": [
     "AR-1373",
     "AR-1363"
   ],
   "id": "AR-1472",
-  "next_action": "Promote and implement the authenticated control-to-runtime live-dispatch adapter with local/mock tests; do not synthesize authority.",
+  "next_action": "Run full workspace gates, then independent review and publish exact signed head through handoffctl.",
   "observed_branch": "feature/ar-1472-authenticated-live-dispatch-adapter",
   "observed_dirty": 0,
   "observed_head": "5f785dab598f24c2221272cf53b9366a10625413",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect authenticated control receipts to runtime-owned CLI live dispatch without a dependency cycle.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Authenticated live-dispatch adapter",
-  "updated_at": "2026-09-27T01:41:28+00:00",
+  "updated_at": "2026-09-27T01:41:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1472-authenticated-live-dispatch-adapter"
 }
 ---
@@ -82,3 +82,11 @@ authority. Mandatory qualification is deterministic local/mock or replay.
 
 - 2026-09-27T01:41:16+00:00: Recorded command exit 0; command argv SHA-256
   0c3a5150207f73fcd896f8d69bcd72b4bab205cdeca8aa41f1a41b6ef0ed74a8.
+
+- 2026-09-27T01:41:37+00:00: Current main 4ee5a4ed isolated worktree. Implemented narrow runtime
+  adapter: LiveProviderRuntimeDispatchSource::from_enrollment consumes only opaque
+  LiveProviderEnrollment and delegates to existing validated from_handle path; enrollment failures
+  map to InvalidConfiguration before scheduler exposure. Added deterministic positive one-shot
+  opaque-enrollment test and unavailable-enrollment negative test. No asb-tui/live-provider changes.
+  Focused runtime/CLI tests pass (133 passed, 1 ignored), fmt/diff clean, signed+DCO commit 5f785dab
+  verified.
