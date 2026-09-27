@@ -9,7 +9,7 @@
     "AR-1491"
   ],
   "id": "AR-1492",
-  "next_action": "Classify Repository Quality run 36333580327 failure; rerun only if approved after confirming timing-flake, while Rust 36333580319 and AArch64 36333580303 remain in progress.",
+  "next_action": "Repository Quality 36333580327 is an existing timing-flake; focused serial reproduction passed. Request/perform one exact merge-SHA workflow rerun, then verify all eight terminal SUCCESS before release.",
   "observed_branch": "release/ar-1492-customer-bundle-signing-handoff",
   "observed_dirty": 0,
   "observed_head": "050b298c99724f7265e8dec47c6e801b3fb53e85",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stage a deterministic customer bundle and provide an explicit external signing handoff and verifier.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Customer bundle signing handoff",
-  "updated_at": "2026-09-27T16:40:23+00:00",
+  "updated_at": "2026-09-27T16:40:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1492-customer-bundle-signing-handoff"
 }
 ---
@@ -213,3 +213,12 @@ detached signature.
   8a616e50dd73778f41c21c04bf2989cd68b252dc8916ac97341bd0bb77b82890.
 
 - 2026-09-27T16:40:23+00:00: Heartbeat by ar1332-record-replay-luna56.
+
+- 2026-09-27T16:40:34+00:00: Post-merge final status for a2d9be3: Huawei 36333580424 SUCCESS;
+  credential-free 36333580338 SUCCESS; hosted 36333580340 SUCCESS; fault 36333580354 SUCCESS; formal
+  36333580517 SUCCESS; Rust 36333580319 SUCCESS; emulated AArch64 36333580303 SUCCESS. Repository
+  Quality 36333580327 FAILURE only at existing
+  strict_replay_requires_a_cassette_path_and_expired_deadline_fails_closed timing assertion
+  started.elapsed() < 750ms under llvm-cov (120 passed, 1 failed). Isolated serial cargo test on
+  exact worktree passed 1/1 in 0.07s. This supports a coverage timing flake; no AR-1492 product
+  failure. One approved exact workflow rerun is the remaining gate.
