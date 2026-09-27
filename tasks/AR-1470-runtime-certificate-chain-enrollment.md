@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1470-runtime-certificate-chain-enrollment",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-27T01:06:06+00:00",
   "depends_on": [
     "AR-1357",
     "AR-1359",
@@ -10,15 +10,15 @@
   ],
   "id": "AR-1470",
   "next_action": "Promote and claim the runtime certificate-chain enrollment successor; implement and verify the smallest authenticated authority source.",
-  "owner": "",
+  "owner": "ar1332_record_replay_luna56",
   "plan": "../plans/AR-1470-runtime-certificate-chain-enrollment.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Materialize runtime-owned certificate-chain enrollment authority for live dispatch.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Runtime certificate-chain enrollment materialization",
-  "updated_at": "2026-09-27T00:06:00+00:00",
+  "updated_at": "2026-09-27T00:06:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1470-runtime-certificate-chain-enrollment"
 }
 ---
@@ -30,3 +30,5 @@ actually consumed by the downstream adapters.
 
 - 2026-09-27T00:06:00+00:00: Dependencies AR-1357, AR-1359 and AR-1362 are done; promote successor
   for missing authenticated certificate-chain authority source.
+
+- 2026-09-27T00:06:06+00:00: Claimed by ar1332_record_replay_luna56.
