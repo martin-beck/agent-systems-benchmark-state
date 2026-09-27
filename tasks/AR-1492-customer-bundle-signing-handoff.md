@@ -2,7 +2,7 @@
 {
   "branch": "release/ar-1492-customer-bundle-signing-handoff",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-27T18:13:23+00:00",
   "depends_on": [
     "AR-1461",
     "AR-1462",
@@ -13,15 +13,15 @@
   "observed_branch": "release/ar-1492-customer-bundle-signing-handoff",
   "observed_dirty": 0,
   "observed_head": "5f4e286f051d09bc9706085ca21f68459fc10eb4",
-  "owner": "",
+  "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1492-customer-bundle-signing-handoff.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Stage a deterministic customer bundle and provide an explicit external signing handoff and verifier.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Customer bundle signing handoff",
-  "updated_at": "2026-09-27T16:13:21+00:00",
+  "updated_at": "2026-09-27T16:13:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1492-customer-bundle-signing-handoff"
 }
 ---
@@ -43,3 +43,5 @@ detached signature.
 
 - 2026-09-27T16:13:21+00:00: Dependencies complete; prepare deterministic customer bundle staging
   and explicit external signing handoff without fabricating release authority.
+
+- 2026-09-27T16:13:23+00:00: Claimed by ar1332-record-replay-luna56.
