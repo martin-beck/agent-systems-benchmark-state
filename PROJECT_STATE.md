@@ -22,7 +22,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36331102740 | `b4f532821cfd` | pull_request | Formal assurance | in_progress:- |
+| 36331102740 | `b4f532821cfd` | pull_request | Formal assurance | completed:success |
 | 36331102639 | `b4f532821cfd` | pull_request | Rust verification | in_progress:- |
 | 36331102628 | `b4f532821cfd` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36331102609 | `b4f532821cfd` | pull_request | Fault assurance | completed:success |
