@@ -1,7 +1,7 @@
 ---
 {
   "branch": "release/ar-1492-customer-bundle-signing-handoff",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "1836d0f0bff012a9941085f61cac6fdc1cfead64",
   "claim_expires": "2026-09-27T18:13:26+00:00",
   "depends_on": [
     "AR-1461",
@@ -9,7 +9,7 @@
     "AR-1491"
   ],
   "id": "AR-1492",
-  "next_action": "Promote and claim, then stage a deterministic customer bundle and document the external signature handoff/validation boundary.",
+  "next_action": "Run serial workspace tests/release build, independently review exact diff, then publish signed PR; do not claim customer release.",
   "observed_branch": "release/ar-1492-customer-bundle-signing-handoff",
   "observed_dirty": 0,
   "observed_head": "1836d0f0bff012a9941085f61cac6fdc1cfead64",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stage a deterministic customer bundle and provide an explicit external signing handoff and verifier.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Customer bundle signing handoff",
-  "updated_at": "2026-09-27T16:17:11+00:00",
+  "updated_at": "2026-09-27T16:17:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1492-customer-bundle-signing-handoff"
 }
 ---
@@ -65,3 +65,10 @@ detached signature.
 
 - 2026-09-27T16:17:11+00:00: Recorded command exit 0; command argv SHA-256
   972fcda574e08779fba36c338d13a11d0f55846c66db9737d83a247c321fe1de.
+
+- 2026-09-27T16:17:32+00:00: Implemented prepare_signing_handoff.py: deterministic helper/LICENSE
+  staging, signed-profile manifest/SBOM metadata, bounded handoff JSON with SSHSIG
+  namespace/principal/ssh-keygen digest/verifier command, and no detached signature fabrication.
+  Added positive/negative Python tests. Focused gates green: Python bundle tests 5/5, offline
+  verifier 22/22, clippy workspace all-targets, rustdoc workspace, repository policy,
+  fmt/diff/clean. Product head 1836d0f0 is SSH-signed+DCO.

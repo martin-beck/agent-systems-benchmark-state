@@ -169,7 +169,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1492](../tasks/AR-1492-customer-bundle-signing-handoff.md): Customer bundle signing handoff | ar1332-record-replay-luna56 | Stage a deterministic customer bundle and provide an explicit external signing handoff and verifier. | Promote and claim, then stage a deterministic customer bundle and document the external signature handoff/validation boundary. |
+| P0 | [AR-1492](../tasks/AR-1492-customer-bundle-signing-handoff.md): Customer bundle signing handoff | ar1332-record-replay-luna56 | Stage a deterministic customer bundle and provide an explicit external signing handoff and verifier. | Run serial workspace tests/release build, independently review exact diff, then publish signed PR; do not claim customer release. |
 
 ### Blocked (74)
 
