@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire the runtime-owned local/mock process owner into ordinary CLI run and sweep.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Runtime-owner CLI entry wiring",
-  "updated_at": "2026-09-27T13:35:13+00:00",
+  "updated_at": "2026-09-27T13:35:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1486-cli-owner-wiring"
 }
 ---
@@ -110,3 +110,6 @@ authority.
   Focused run/sweep/reuse/unavailable and runtime contract tests pass; full workspace tests, clippy,
   rustdoc, release build, source policy, diff check all exit 0. SSH-signed DCO commit a5f9ad27
   verified.
+
+- 2026-09-27T13:35:28+00:00: Recorded command exit 0; command argv SHA-256
+  acd1982bc3840d76eb1d71941baa5283c34c7d3843f426522d5d159c4ebe1f25.
