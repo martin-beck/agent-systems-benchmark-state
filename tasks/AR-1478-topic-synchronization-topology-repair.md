@@ -9,7 +9,7 @@
     "AR-1379"
   ],
   "id": "AR-1478",
-  "next_action": "Approved one-time rerun of failed Rust workflow; monitor rerun and remaining PR #348 checks.",
+  "next_action": "Await exact-head Rust rerun job 108560375889 terminal conclusion; then merge PR #348 only if SUCCESS.",
   "observed_branch": "feature/ar-1478-topic-synchronization-topology-repair",
   "observed_dirty": 0,
   "observed_head": "d1456b88d511d9c5ccd8ef4e693713ca706d9949",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair protected-main topic synchronization topology after AR-1477 merge policy failure.",
-  "task_revision": 62,
+  "task_revision": 63,
   "title": "Repair topic synchronization topology",
-  "updated_at": "2026-09-27T05:49:16+00:00",
+  "updated_at": "2026-09-27T05:49:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1478-topic-synchronization-topology-repair"
 }
 ---
@@ -204,3 +204,10 @@ or synchronization topology permitted by the policy.
 
 - 2026-09-27T05:49:16+00:00: Recorded command exit 0; command argv SHA-256
   b67ad1221464e866814ab3bbc0ae92dad8f2d34e9798fa12d22f2bafc12542ed.
+
+- 2026-09-27T05:49:42+00:00: Current PR #348 exact-head rollup: 11 SUCCESS (policy/coverage
+  108559718081, AArch64 108559717416, Kani 108559717424, matcher 108559717550, retained
+  108559717708, platform 108559717560, AWQ 108559717551, TLC 108559717749, Huawei 108559717537, fuzz
+  108559717692, Loom 108559717489). Rust original failure 36297781047 was the known state-root
+  ownership race; approved failed-job rerun is job 108560375889, still IN_PROGRESS since
+  2026-09-27T05:43:28Z, with no conclusion. No merge while pending.
