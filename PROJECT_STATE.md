@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #350 | `feature/ar-1420-literature-workload-campaign-integration@2884508a6236` | `main` | UNKNOWN | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: integrate literature workload campaigns |
+| #350 | `feature/ar-1420-literature-workload-campaign-integration@2884508a6236` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: integrate literature workload campaigns |
 
 ## Recent workflows
 
@@ -22,7 +22,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36303930863 | `4a8f946d87cc` | push | Emulated aarch64 portability | in_progress:- |
 | 36303930860 | `4a8f946d87cc` | push | Hosted portability and native qualification | in_progress:- |
 | 36303930857 | `4a8f946d87cc` | push | Rust verification | in_progress:- |
-| 36303930854 | `4a8f946d87cc` | push | Formal assurance | queued:- |
+| 36303930854 | `4a8f946d87cc` | push | Formal assurance | in_progress:- |
 | 36303930848 | `4a8f946d87cc` | push | Repository quality | in_progress:- |
 | 36303404627 | `69c077e969ba` | pull_request | Repository quality | completed:success |
 | 36303404625 | `69c077e969ba` | pull_request | Rust verification | completed:success |
