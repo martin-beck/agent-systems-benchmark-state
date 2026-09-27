@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Owner-backed first-customer user journey",
-  "updated_at": "2026-09-27T14:49:03+00:00",
+  "updated_at": "2026-09-27T14:50:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1488-owner-backed-user-journey"
 }
 ---
@@ -113,4 +113,7 @@ live provider.
   c2abe0496c095ad1c9e87eeb7faf626ba38d6ec50de1dd16251ffa35f4a1bcc4.
 
 - 2026-09-27T14:49:03+00:00: Recorded command exit 0; command argv SHA-256
+  c2abe0496c095ad1c9e87eeb7faf626ba38d6ec50de1dd16251ffa35f4a1bcc4.
+
+- 2026-09-27T14:50:15+00:00: Recorded command exit 0; command argv SHA-256
   c2abe0496c095ad1c9e87eeb7faf626ba38d6ec50de1dd16251ffa35f4a1bcc4.
