@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**491 ARs tracked** across 5 active status categories.
+**492 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 71 |
-| **Planned** | Defined work awaiting promotion or dependencies | 57 |
+| **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 343 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -563,6 +563,7 @@ flowchart LR
         AR_1468["AR-1468 - Superseded"]:::status_superseded
         AR_1469["AR-1469 - Done"]:::status_done
         AR_1470["AR-1470 - Blocked"]:::status_blocked
+        AR_1471["AR-1471 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1611,10 +1612,12 @@ flowchart LR
     AR_1357 --> AR_1451
     AR_1357 --> AR_1452
     AR_1357 --> AR_1470
+    AR_1357 --> AR_1471
     AR_1359 --> AR_1360
     AR_1359 --> AR_1361
     AR_1359 --> AR_1362
     AR_1359 --> AR_1470
+    AR_1359 --> AR_1471
     AR_1362 --> AR_1363
     AR_1362 --> AR_1364
     AR_1362 --> AR_1365
@@ -1627,6 +1630,7 @@ flowchart LR
     AR_1362 --> AR_1381
     AR_1362 --> AR_1468
     AR_1362 --> AR_1470
+    AR_1362 --> AR_1471
     AR_1364 --> AR_1365
     AR_1364 --> AR_1366
     AR_1364 --> AR_1369
@@ -2211,4 +2215,3 @@ flowchart LR
 | [AR-1331](../tasks/AR-1331-runtime-replay-launch-authority.md) | [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md), [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md) | [AR-1332](../tasks/AR-1332-record-live-replay-offline.md), [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md) |
 | [AR-1332](../tasks/AR-1332-record-live-replay-offline.md) | [AR-1331](../tasks/AR-1331-runtime-replay-launch-authority.md) | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md), [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md) |
 | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md) | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md), [AR-1332](../tasks/AR-1332-record-live-replay-offline.md), [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md) | [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md), [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md), [AR-1420](../tasks/AR-1420-literature-workload-campaign-integration.md) |
-| [AR-1334](../tasks/AR-1334-openrouter-conformance-qualification.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md) | [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md), [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md) |
