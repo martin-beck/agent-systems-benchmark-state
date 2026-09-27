@@ -10,7 +10,7 @@
     "AR-1489"
   ],
   "id": "AR-1491",
-  "next_action": "Monitor PR #370 exact head b4f5328 until all 13 required checks and independent review are green; merge only then.",
+  "next_action": "Merge PR #370 normally, then monitor all eight exact-main post-merge workflows and release only after terminal SUCCESS.",
   "observed_branch": "qualification/ar-1491-self-contained-package-qualification-fixture",
   "observed_dirty": 0,
   "observed_head": "b4f532821cfdc10dc38aee856d8297e65dd9a2ba",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a self-contained non-production package qualification fixture using the offline verifier test-key pattern.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Self-contained package qualification fixture",
-  "updated_at": "2026-09-27T16:00:51+00:00",
+  "updated_at": "2026-09-27T16:01:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1491-self-contained-package-qualification-fixture"
 }
 ---
@@ -165,3 +165,9 @@ No live-provider or release-signing input may be fabricated.
 
 - 2026-09-27T16:00:51+00:00: Recorded command exit 0; command argv SHA-256
   664a120e76495934d33f2ac2cc92a27a2efcdb3c12432149028c59374092722e.
+
+- 2026-09-27T16:01:08+00:00: Independent review passed: three-file docs/test-only diff adds isolated
+  owner-only doctor/setup fixture and workflow documentation; reuses existing asb-bundle offline
+  verifier test-key pattern; no production signing policy, runtime behavior, asb-tui, provider,
+  credential, or network changes. PR #370 exact head b4f5328 CLEAN with all 13 required checks
+  terminal SUCCESS.
