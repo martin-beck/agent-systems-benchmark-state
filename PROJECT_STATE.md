@@ -18,11 +18,11 @@ Generated from local Git and GitHub. Do not edit.
 | 36314444973 | `59323f41ed2d` | push | Huawei MIT source headers | completed:success |
 | 36314444956 | `59323f41ed2d` | push | Fault assurance | in_progress:- |
 | 36314444954 | `59323f41ed2d` | push | Repository quality | in_progress:- |
-| 36314444948 | `59323f41ed2d` | push | Hosted portability and native qualification | in_progress:- |
+| 36314444948 | `59323f41ed2d` | push | Hosted portability and native qualification | completed:success |
 | 36314444940 | `59323f41ed2d` | push | Rust verification | in_progress:- |
 | 36314444936 | `59323f41ed2d` | push | Formal assurance | in_progress:- |
 | 36314444926 | `59323f41ed2d` | push | Emulated aarch64 portability | in_progress:- |
-| 36314444913 | `59323f41ed2d` | push | Credential-free benchmark path | in_progress:- |
+| 36314444913 | `59323f41ed2d` | push | Credential-free benchmark path | completed:success |
 | 36313923677 | `4a29c3431d23` | pull_request | Formal assurance | completed:success |
 | 36313923631 | `4a29c3431d23` | pull_request | Repository quality | completed:success |
 | 36313923628 | `4a29c3431d23` | pull_request | Agent Workflow Quality shadow | completed:success |
