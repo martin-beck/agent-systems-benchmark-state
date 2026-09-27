@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compose authenticated runtime enrollment into opaque normal CLI run and sweep dispatch.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Runtime-control CLI composition",
-  "updated_at": "2026-09-27T11:17:30+00:00",
+  "updated_at": "2026-09-27T11:17:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1480-runtime-control-cli-composition"
 }
 ---
@@ -37,3 +37,6 @@ and never gates local qualification.
   composition successor with no circular AR-1374/1375 edge.
 
 - 2026-09-27T11:17:30+00:00: Claimed by ar1332-record-replay-luna56.
+
+- 2026-09-27T11:17:41+00:00: Recorded command exit 0; command argv SHA-256
+  31ef8dba69cadb96f0eab7a54672aa35e58192283fa68f6c82d04e7f76edc9be.
