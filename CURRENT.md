@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1474](tasks/AR-1474-runtime-authority-input-resolver.md): Runtime-owned authority-input resolver | Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority. | Promote after validating completed dependencies, then claim the isolated worktree and implement the bounded runtime-owned resolver. | - |
+| P0 | [AR-1474](tasks/AR-1474-runtime-authority-input-resolver.md): Runtime-owned authority-input resolver | Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority. | Promote after validating completed dependencies, then claim the isolated worktree and implement the bounded runtime-owned resolver. | ar1332_record_replay_luna56 |
 
 ## Blocked
 

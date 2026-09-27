@@ -142,11 +142,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1474](../tasks/AR-1474-runtime-authority-input-resolver.md): Runtime-owned authority-input resolver | Unclaimed | Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority. | Promote after validating completed dependencies, then claim the isolated worktree and implement the bounded runtime-owned resolver. |
+| P0 | [AR-1474](../tasks/AR-1474-runtime-authority-input-resolver.md): Runtime-owned authority-input resolver | ar1332_record_replay_luna56 | Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority. | Promote after validating completed dependencies, then claim the isolated worktree and implement the bounded runtime-owned resolver. |
 
 ### Blocked (70)
 
