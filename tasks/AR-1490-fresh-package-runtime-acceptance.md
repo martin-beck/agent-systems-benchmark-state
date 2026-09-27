@@ -2,7 +2,7 @@
 {
   "branch": "qualification/ar-1490-fresh-package-runtime-acceptance",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-27T17:36:29+00:00",
+  "claim_expires": "2026-09-27T17:37:02+00:00",
   "depends_on": [
     "AR-1461",
     "AR-1462",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run fresh package first-customer runtime acceptance and produce an explicit readiness report.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Fresh package runtime acceptance",
-  "updated_at": "2026-09-27T15:36:51+00:00",
+  "updated_at": "2026-09-27T15:37:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1490-fresh-package-runtime-acceptance"
 }
 ---
@@ -42,3 +42,5 @@ when exact package or clean-environment inputs are absent.
 
 - 2026-09-27T15:36:38+00:00: Recorded command exit 0; command argv SHA-256
   13f4f9c5f67aa4aed2c2b85c387264f5d51709a5131bd7ca39d58e9e03b0f72d.
+
+- 2026-09-27T15:37:02+00:00: Heartbeat by ar1332-record-replay-luna56.
