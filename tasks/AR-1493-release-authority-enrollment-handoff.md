@@ -1,7 +1,7 @@
 ---
 {
   "branch": "release/ar-1493-release-authority-enrollment-handoff",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "6f5dfd5c3292fd177a8f627c661e68ef30c40c65",
   "claim_expires": "2026-09-27T18:52:55+00:00",
   "depends_on": [
     "AR-1461",
@@ -10,7 +10,7 @@
     "AR-1492"
   ],
   "id": "AR-1493",
-  "next_action": "Promote and claim after the state commit; audit AR-1492 handoff and implement only repository-side enrollment/verification checks and docs.",
+  "next_action": "Independent review complete; publish exact signed head 6f5dfd5, monitor required CI, merge only all green, then verify post-merge gates. External authority remains unavailable.",
   "observed_branch": "release/ar-1493-release-authority-enrollment-handoff",
   "observed_dirty": 0,
   "observed_head": "6f5dfd5c3292fd177a8f627c661e68ef30c40c65",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define and validate the external release-authority enrollment and signed-bundle verification handoff.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Release-authority enrollment handoff",
-  "updated_at": "2026-09-27T16:58:39+00:00",
+  "updated_at": "2026-09-27T16:59:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1493-release-authority-enrollment-handoff"
 }
 ---
@@ -90,3 +90,13 @@ and preserve AR-1490 as the customer-release blocker.
 
 - 2026-09-27T16:58:39+00:00: Recorded command exit 0; command argv SHA-256
   392420e7a4ff6bcfb3efd61977a3faaf0f2cd3dcced6d949c8cccc5550b6781d.
+
+- 2026-09-27T16:59:17+00:00: Implemented narrow repository-side release-authority handoff validation
+  and docs. validate_authority_inputs now fail-closes malformed principal and
+  non-lowercase/non-64-char ssh-keygen digest without deciding trusted identity. Added positive and
+  negative tests; Python bundle tests 7/7 pass, asb-bundle offline verifier 22/22 pass, repository
+  policy passes, diff check passes. Independent diff review: exactly docs/RUNTIME_BUNDLES.md,
+  tools/bundle/prepare_signing_handoff.py, and its test file; no asb-tui/provider changes.
+  Signed+DCO commit 6f5dfd5c3292fd177a8f627c661e68ef30c40c65 verified SSH signature. One concurrent
+  cargo invocation recorded LOCK_TIMEOUT and was rerun successfully; invalid check_source_headers
+  path was a command/setup error (file absent), not product failure.
