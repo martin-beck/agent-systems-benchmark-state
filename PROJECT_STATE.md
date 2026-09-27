@@ -3,7 +3,7 @@
 Generated from local Git and GitHub. Do not edit.
 
 - Product remote main: `6baa7acfb1cc3616c9737118a6345b1813b291f1`
-- Local origin/main: `bb7efb395ee0c8f7d997ce2b928fb9c90907537b`
+- Local origin/main: `6baa7acfb1cc3616c9737118a6345b1813b291f1`
 - Primary worktree head: `bd7d10d4a760a84fa42de2b1fa9e97e8ea85ba09`
 
 ## Open pull requests
