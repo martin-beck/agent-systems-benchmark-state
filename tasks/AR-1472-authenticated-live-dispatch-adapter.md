@@ -8,7 +8,7 @@
     "AR-1363"
   ],
   "id": "AR-1472",
-  "next_action": "Monitor remaining exact-main workflows Repository quality 36287167781 and Emulated aarch64 36287168007; release done only after both terminal SUCCESS and doctor verification.",
+  "next_action": "Run reconcile and doctor --live, then release AR-1472 done with merge and seven-workflow evidence.",
   "observed_branch": "feature/ar-1472-authenticated-live-dispatch-adapter",
   "observed_dirty": 0,
   "observed_head": "5f785dab598f24c2221272cf53b9366a10625413",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect authenticated control receipts to runtime-owned CLI live dispatch without a dependency cycle.",
-  "task_revision": 82,
+  "task_revision": 83,
   "title": "Authenticated live-dispatch adapter",
-  "updated_at": "2026-09-27T02:08:31+00:00",
+  "updated_at": "2026-09-27T02:08:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1472-authenticated-live-dispatch-adapter"
 }
 ---
@@ -290,3 +290,8 @@ authority. Mandatory qualification is deterministic local/mock or replay.
 
 - 2026-09-27T02:08:31+00:00: Recorded command exit 0; command argv SHA-256
   8918ecd09069a03137dc78f4b9416217375afd5133733ee604ffe3b5c05aa500.
+
+- 2026-09-27T02:08:58+00:00: All seven exact-main post-merge workflows terminal SUCCESS on merge SHA
+  363b21f81d5c5ab364c2e2a923bd82676feaf343: Huawei 36287167788; Hosted 36287167856; Fault
+  36287167886; Formal 36287167839; Rust 36287167783; Emulated aarch64 36287168007; Repository
+  quality 36287167781. Exact merge parents and implementation tree were verified; no failures.
