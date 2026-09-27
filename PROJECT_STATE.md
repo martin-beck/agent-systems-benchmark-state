@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #345 | `feature/ar-1474-runtime-authority-input-resolver@56d284c2d292` | `main` | UNKNOWN | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(runtime): resolve persisted authority inputs |
+| #345 | `feature/ar-1474-runtime-authority-input-resolver@56d284c2d292` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(runtime): resolve persisted authority inputs |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 36293580469 | `1dada31c763f` | push | Formal assurance | in_progress:- |
-| 36293580440 | `1dada31c763f` | push | Fault assurance | queued:- |
+| 36293580440 | `1dada31c763f` | push | Fault assurance | in_progress:- |
 | 36293580439 | `1dada31c763f` | push | Repository quality | in_progress:- |
 | 36293580432 | `1dada31c763f` | push | Hosted portability and native qualification | in_progress:- |
 | 36293580429 | `1dada31c763f` | push | Huawei MIT source headers | completed:success |
