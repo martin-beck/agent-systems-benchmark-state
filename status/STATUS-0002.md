@@ -143,7 +143,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1379](../tasks/AR-1379-live-dispatch-integration.md): Production live dispatch integration | ar1379-live-dispatch-luna56 | Integrate authenticated runtime live dispatch into asb run and sweep. | Monitor PR #344 exact head 11f3db5; merge only after independent review and all required checks terminal-green, then verify seven exact-main workflows. |
+| P0 | [AR-1379](../tasks/AR-1379-live-dispatch-integration.md): Production live dispatch integration | ar1379-live-dispatch-luna56 | Integrate authenticated runtime live dispatch into asb run and sweep. | Continue monitoring PR #344 exact head 11f3db5; Emulated aarch64, Rust, and policy/coverage/supply-chain remain pending. Merge only after every required check is terminal-green. |
 | P0 | [AR-1387](../tasks/AR-1387-runtime-control-cli-bridge.md): Authenticated runtime-control CLI bridge | ar1332_record_replay_luna56 | Bridge authenticated runtime/control bootstrap state into the production CLI dispatch path. | Refresh the declared isolated worktree from protected main, add the authenticated runtime/control bootstrap-to-CLI bridge, and test opaque dispatch-source transfer without caller authority injection. |
 
 ### Blocked (68)
