@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Verify first-customer release package installation and owner-backed local/mock/replay consumption.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "First-customer package consumption",
-  "updated_at": "2026-09-27T15:27:54+00:00",
+  "updated_at": "2026-09-27T15:28:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1489-first-customer-package-consumption"
 }
 ---
@@ -155,4 +155,7 @@ touching asb-tui or requiring a live provider.
   AArch64 36329496650, Repository quality 36329496635, Rust 36329496563, Fault 36329496583.
 
 - 2026-09-27T15:27:54+00:00: Recorded command exit 0; command argv SHA-256
+  d4b21b9fa84bddbff736766a979ee6bd6f7610dbdc4da1c43b6e9d69758f5d31.
+
+- 2026-09-27T15:28:13+00:00: Recorded command exit 0; command argv SHA-256
   d4b21b9fa84bddbff736766a979ee6bd6f7610dbdc4da1c43b6e9d69758f5d31.
