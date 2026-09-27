@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1363](tasks/AR-1363-authenticated-control-receipt-source.md): Authenticated control receipt source | Deliver authenticated runtime authority receipts through the versioned control boundary without exposing secrets or caller authority. | Continue bounded polling of PR #342; merge normally only after Repository quality and Rust verification complete successfully and mergeStateStatus is CLEAN. | ar1332_record_replay_luna56 |
+| P0 | [AR-1363](tasks/AR-1363-authenticated-control-receipt-source.md): Authenticated control receipt source | Deliver authenticated runtime authority receipts through the versioned control boundary without exposing secrets or caller authority. | Release completed AR-1363 after exact protected-main verification; no further product action. | ar1332_record_replay_luna56 |
 
 ## Blocked
 

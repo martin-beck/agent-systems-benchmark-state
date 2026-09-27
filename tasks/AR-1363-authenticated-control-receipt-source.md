@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1363-authenticated-control-receipt-source",
-  "checkpoint_commit": "29d27a91ad6a4eff455f62ae25eb952fec45fcf5",
+  "checkpoint_commit": "4ee5a4ed843c7dd7dda0b92dbe392f3787b4039f",
   "claim_expires": "2026-09-27T03:24:10+00:00",
   "depends_on": [
     "AR-1362"
   ],
   "id": "AR-1363",
-  "next_action": "Continue bounded polling of PR #342; merge normally only after Repository quality and Rust verification complete successfully and mergeStateStatus is CLEAN.",
+  "next_action": "Release completed AR-1363 after exact protected-main verification; no further product action.",
   "observed_branch": "feature/ar-1363-authenticated-control-receipt-source",
   "observed_dirty": 0,
   "observed_head": "29d27a91ad6a4eff455f62ae25eb952fec45fcf5",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Deliver authenticated runtime authority receipts through the versioned control boundary without exposing secrets or caller authority.",
-  "task_revision": 100,
+  "task_revision": 101,
   "title": "Authenticated control receipt source",
-  "updated_at": "2026-09-27T01:25:00+00:00",
+  "updated_at": "2026-09-27T01:25:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1363-authenticated-control-receipt-source"
 }
 ---
@@ -346,3 +346,11 @@ reachability.
 
 - 2026-09-27T01:25:00+00:00: Recorded command exit 0; command argv SHA-256
   6684b0e2ab5024f85c8c450a359d7cb542752f5c65069bd4573df5dda68f2a40.
+
+- 2026-09-27T01:25:38+00:00: Post-merge completion: PR #342 merged normally at
+  4ee5a4ed843c7dd7dda0b92dbe392f3787b4039f with parents cb9bce4dd99194ba44f65655d7f7e2e21fc8b408 and
+  29d27a91ad6a4eff455f62ae25eb952fec45fcf5; protected-main tree matched reviewed head.
+  Coordinator-authoritative post-merge evidence is green for all seven workflows: Huawei
+  36285156729, Hosted 36285156725, Fault 36285156628, Formal 36285156746, Rust 36285156661 after
+  approved rerun/serial reproduction of known state-root ownership race, Emulated AArch64
+  36285156656, Repository quality 36285156701. No asb-tui/live-provider changes.
