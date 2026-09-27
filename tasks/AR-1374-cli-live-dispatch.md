@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1374-cli-live-dispatch",
   "checkpoint_commit": "4ee5a4ed843c7dd7dda0b92dbe392f3787b4039f",
-  "claim_expires": "",
+  "claim_expires": "2026-09-27T04:11:08+00:00",
   "depends_on": [
     "AR-1373",
     "AR-1339",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1374-cli-live-dispatch",
   "observed_dirty": 0,
   "observed_head": "4ee5a4ed843c7dd7dda0b92dbe392f3787b4039f",
-  "owner": "",
+  "owner": "ar1374-dispatch-requal-luna56",
   "plan": "../plans/AR-1374-cli-live-dispatch.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Consume authenticated runtime receipts in production asb run and sweep dispatch.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Production live-provider dispatch",
-  "updated_at": "2026-09-27T02:11:02+00:00",
+  "updated_at": "2026-09-27T02:11:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1374-cli-live-dispatch"
 }
 ---
@@ -117,3 +117,5 @@ reachability.
 - 2026-09-27T02:11:02+00:00: AR-1472 is complete at merge 363b21f with all seven exact-main
   workflows green and supplies the authenticated runtime adapter that resolved AR-1374 prior
   blocker. Reopen for current-main requalification audit; no live provider or asb-tui changes.
+
+- 2026-09-27T02:11:08+00:00: Claimed by ar1374-dispatch-requal-luna56.
