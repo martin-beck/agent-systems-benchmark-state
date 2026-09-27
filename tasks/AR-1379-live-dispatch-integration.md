@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1379-live-dispatch-integration",
-  "checkpoint_commit": "11f3db5078dfa122c1c9c8b533de4a53732424f4",
+  "checkpoint_commit": "d9888386d0987323a30dbe7240d7d4239f92cb61",
   "claim_expires": "2026-09-27T04:14:57+00:00",
   "depends_on": [
     "AR-1378",
@@ -11,7 +11,7 @@
     "AR-1362"
   ],
   "id": "AR-1379",
-  "next_action": "Continue monitoring PR #344 exact head 11f3db5; Emulated aarch64, Rust, and policy/coverage/supply-chain remain pending. Merge only after every required check is terminal-green.",
+  "next_action": "Monitor PR #344 rerun at exact head d988838; all required checks must be green before merge. Provenance repair was generated from current lib.rs digest.",
   "observed_branch": "feature/ar-1379-live-dispatch-integration",
   "observed_dirty": 0,
   "observed_head": "d9888386d0987323a30dbe7240d7d4239f92cb61",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate authenticated runtime live dispatch into asb run and sweep.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Production live dispatch integration",
-  "updated_at": "2026-09-27T02:35:06+00:00",
+  "updated_at": "2026-09-27T02:35:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1379-live-dispatch-integration"
 }
 ---
@@ -233,3 +233,10 @@ verified through the completed gates.
 
 - 2026-09-27T02:35:06+00:00: Recorded command exit 0; command argv SHA-256
   a6ef7f9dc8262075bca3cef74db6990556c7c5c391fa6b3c815e3057ea4508a0.
+
+- 2026-09-27T02:35:30+00:00: Required Rust CI failed only on deterministic provenance drift:
+  workflow_transcript expected recorded lib.rs digest 712bf57e... while actual current source digest
+  was d5eee49230554cd8c1d540afa11733a4d51d47e9edc4380e88bc429f37acf1c4. Updated only
+  docs/examples/asb-cli-workflow-v1.provenance.json; focused workflow_transcript 3/3 and diff check
+  passed. Signed+DCO provenance repair d988838 pushed, remote PR head advanced 11f3db5 -> d988838.
+  Do not merge until rerun checks green.
