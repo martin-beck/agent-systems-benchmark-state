@@ -10,13 +10,13 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #355 | `feature/ar-1426-evolving-literature-window-refresh@73b5fd1d14fa` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: add evolving workload refresh manifests |
+| #355 | `feature/ar-1426-evolving-literature-window-refresh@73b5fd1d14fa` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: add evolving workload refresh manifests |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36311969649 | `73b5fd1d14fa` | pull_request | Rust verification | in_progress:- |
+| 36311969649 | `73b5fd1d14fa` | pull_request | Rust verification | completed:success |
 | 36311969645 | `73b5fd1d14fa` | pull_request | Huawei MIT source headers | completed:success |
 | 36311969636 | `73b5fd1d14fa` | pull_request | Emulated aarch64 portability | completed:success |
 | 36311969631 | `73b5fd1d14fa` | pull_request | Repository quality | in_progress:- |
