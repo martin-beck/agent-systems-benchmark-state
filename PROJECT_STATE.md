@@ -16,7 +16,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36303930945 | `4a8f946d87cc` | push | Credential-free benchmark path | in_progress:- |
+| 36303930945 | `4a8f946d87cc` | push | Credential-free benchmark path | completed:failure |
 | 36303930880 | `4a8f946d87cc` | push | Huawei MIT source headers | completed:success |
 | 36303930866 | `4a8f946d87cc` | push | Fault assurance | in_progress:- |
 | 36303930863 | `4a8f946d87cc` | push | Emulated aarch64 portability | in_progress:- |
