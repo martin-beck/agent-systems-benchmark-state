@@ -18,11 +18,11 @@
   "plan": "../plans/AR-1490-fresh-package-runtime-acceptance.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Run fresh package first-customer runtime acceptance and produce an explicit readiness report.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Fresh package runtime acceptance",
-  "updated_at": "2026-09-27T15:35:00+00:00",
+  "updated_at": "2026-09-27T15:36:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1490-fresh-package-runtime-acceptance"
 }
 ---
@@ -34,3 +34,6 @@ when exact package or clean-environment inputs are absent.
 
 - 2026-09-27T15:35:00+00:00: Created after AR-1489 completion to produce fresh
   package execution evidence and an explicit first-customer readiness report.
+
+- 2026-09-27T15:36:26+00:00: Dependencies AR-1461, AR-1462, AR-1488, and AR-1489 are done. Promote
+  fresh ASB package/runtime acceptance with local/mock/replay-only readiness evidence.
