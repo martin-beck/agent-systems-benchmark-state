@@ -139,17 +139,12 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1379](../tasks/AR-1379-live-dispatch-integration.md): Production live dispatch integration | ar1379-live-dispatch-luna56 | Integrate authenticated runtime live dispatch into asb run and sweep. | Implement the narrow runtime-owned control-session/source injection seam: production run/sweep must receive only LiveProviderRuntimeDispatchSource; add positive and fail-closed CLI tests, then run focused/full gates. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1382](../tasks/AR-1382-authenticated-live-execution-source.md): Authenticated live execution source | Unclaimed | Materialize authenticated runtime-owned live execution for asb run and sweep. | Promote and claim this dependency-valid authenticated execution-source successor, then implement runtime-owned scheduler materialization. |
+| P0 | [AR-1382](../tasks/AR-1382-authenticated-live-execution-source.md): Authenticated live execution source | ar1332_record_replay_luna56 | Materialize authenticated runtime-owned live execution for asb run and sweep. | Promote and claim this dependency-valid authenticated execution-source successor, then implement runtime-owned scheduler materialization. |
 
 ### Blocked (68)
 

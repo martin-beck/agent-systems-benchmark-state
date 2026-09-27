@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1382-authenticated-live-execution-source",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-27T04:17:52+00:00",
   "depends_on": [
     "AR-1381",
     "AR-1380",
@@ -15,15 +15,15 @@
   "observed_branch": "feature/ar-1382-authenticated-live-execution-source",
   "observed_dirty": 0,
   "observed_head": "04b4c067055073031cd6d88cf18f0d158f488ad0",
-  "owner": "",
+  "owner": "ar1332_record_replay_luna56",
   "plan": "../plans/AR-1382-authenticated-live-execution-source.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Materialize authenticated runtime-owned live execution for asb run and sweep.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Authenticated live execution source",
-  "updated_at": "2026-09-27T02:17:45+00:00",
+  "updated_at": "2026-09-27T02:17:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1382-authenticated-live-execution-source"
 }
 ---
@@ -53,3 +53,5 @@ preserving the no-caller-authority and fail-closed boundaries.
 - 2026-09-27T02:17:45+00:00: Dependencies AR-1381, AR-1380, AR-1378, AR-1377, and AR-1373 are
   durably done; resume the blocked successor for implementation of runtime-owned authenticated
   execution-source materialization. AR-1329 remains optional/blocked and is not required.
+
+- 2026-09-27T02:17:52+00:00: Claimed by ar1332_record_replay_luna56.
