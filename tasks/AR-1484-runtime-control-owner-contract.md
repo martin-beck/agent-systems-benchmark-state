@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define stable runtime/control process-owner lifecycle and opaque handoff contract.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Runtime/control process-owner contract",
-  "updated_at": "2026-09-27T12:33:02+00:00",
+  "updated_at": "2026-09-27T12:34:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1484-runtime-control-owner-contract"
 }
 ---
@@ -169,3 +169,6 @@ authority.
   Huawei headers 36319234614, Credential-free 36319234609, and Hosted portability/native 36319234571
   SUCCESS. Repository quality 36319234629, Fault 36319234658, Formal 36319234706, Rust 36319234605,
   Emulated aarch64 36319234719 remain IN_PROGRESS; no failures.
+
+- 2026-09-27T12:34:02+00:00: Recorded command exit 0; command argv SHA-256
+  83aec619498254d8b1f791e04c6c48117b744728946e29bc061d7bf4ab9a0744.
