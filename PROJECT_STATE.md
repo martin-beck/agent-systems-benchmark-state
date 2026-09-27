@@ -10,20 +10,21 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #355 | `feature/ar-1426-evolving-literature-window-refresh@73b5fd1d14fa` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat: add evolving workload refresh manifests |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 36311969649 | `73b5fd1d14fa` | pull_request | Rust verification | in_progress:- |
+| 36311969645 | `73b5fd1d14fa` | pull_request | Huawei MIT source headers | completed:success |
+| 36311969636 | `73b5fd1d14fa` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 36311969631 | `73b5fd1d14fa` | pull_request | Repository quality | in_progress:- |
+| 36311969616 | `73b5fd1d14fa` | pull_request | Formal assurance | in_progress:- |
+| 36311969615 | `73b5fd1d14fa` | pull_request | Fault assurance | in_progress:- |
+| 36311969606 | `73b5fd1d14fa` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 36311969599 | `73b5fd1d14fa` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 36311969597 | `73b5fd1d14fa` | pull_request | Credential-free benchmark path | in_progress:- |
 | 36310794666 | `a36b86b49a34` | push | Huawei MIT source headers | completed:success |
 | 36310794604 | `a36b86b49a34` | push | Emulated aarch64 portability | completed:success |
 | 36310794576 | `a36b86b49a34` | push | Credential-free benchmark path | completed:success |
-| 36310794574 | `a36b86b49a34` | push | Formal assurance | completed:success |
-| 36310794563 | `a36b86b49a34` | push | Repository quality | completed:success |
-| 36310794557 | `a36b86b49a34` | push | Rust verification | completed:success |
-| 36310794556 | `a36b86b49a34` | push | Fault assurance | completed:success |
-| 36310794536 | `a36b86b49a34` | push | Hosted portability and native qualification | completed:success |
-| 36310242581 | `312f811b3a77` | pull_request | Credential-free benchmark path | completed:success |
-| 36310242498 | `312f811b3a77` | pull_request | Fault assurance | completed:success |
-| 36310242485 | `312f811b3a77` | pull_request | Rust verification | completed:success |
-| 36310242473 | `312f811b3a77` | pull_request | Agent Workflow Quality shadow | completed:success |
