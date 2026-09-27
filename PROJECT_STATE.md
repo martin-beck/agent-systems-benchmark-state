@@ -19,7 +19,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36312453110 | `5e577e6a4b27` | push | Credential-free benchmark path | completed:success |
 | 36312453109 | `5e577e6a4b27` | push | Fault assurance | completed:success |
 | 36312453096 | `5e577e6a4b27` | push | Repository quality | in_progress:- |
-| 36312453087 | `5e577e6a4b27` | push | Formal assurance | in_progress:- |
+| 36312453087 | `5e577e6a4b27` | push | Formal assurance | completed:success |
 | 36312453084 | `5e577e6a4b27` | push | Emulated aarch64 portability | in_progress:- |
 | 36312453082 | `5e577e6a4b27` | push | Huawei MIT source headers | completed:success |
 | 36312453077 | `5e577e6a4b27` | push | Rust verification | in_progress:- |
