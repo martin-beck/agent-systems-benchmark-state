@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire the runtime-owned local/mock process owner into ordinary CLI run and sweep.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Runtime-owner CLI entry wiring",
-  "updated_at": "2026-09-27T13:32:44+00:00",
+  "updated_at": "2026-09-27T13:34:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1486-cli-owner-wiring"
 }
 ---
@@ -93,3 +93,6 @@ authority.
   lifetime (E0521). Corrected by moving the owner into Arc<Mutex<LocalMockRuntimeControlOwner>> and
   passing cloned opaque ownership into the scheduler; focused run/sweep and teardown-reuse tests now
   pass. Current CLI source digest is 2087e80f... and provenance fixture was refreshed accordingly.
+
+- 2026-09-27T13:34:03+00:00: Recorded command exit 0; command argv SHA-256
+  35b3c6b149f8166ded7be4161415243b72079f462532dc00a578c14090a7b683.
