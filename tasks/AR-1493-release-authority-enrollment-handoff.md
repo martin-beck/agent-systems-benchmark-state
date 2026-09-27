@@ -10,7 +10,7 @@
     "AR-1492"
   ],
   "id": "AR-1493",
-  "next_action": "Monitor PR #372 synchronized exact signed head 9d2b22a; record required CI matrix, merge only all green, then post-merge verify.",
+  "next_action": "Continue monitoring PR #372 exact head 9d2b22a; required checks are active, merge only after all terminal SUCCESS and independent review.",
   "observed_branch": "release/ar-1493-release-authority-enrollment-handoff",
   "observed_dirty": 0,
   "observed_head": "9d2b22a80cfe9c6d9a01daec1e257fd93b99d37d",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define and validate the external release-authority enrollment and signed-bundle verification handoff.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Release-authority enrollment handoff",
-  "updated_at": "2026-09-27T17:03:00+00:00",
+  "updated_at": "2026-09-27T17:03:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1493-release-authority-enrollment-handoff"
 }
 ---
@@ -137,3 +137,8 @@ and preserve AR-1490 as the customer-release blocker.
 
 - 2026-09-27T17:03:00+00:00: Recorded command exit 0; command argv SHA-256
   1e0cdedfa4e644b0209bca0064770f5f4fc10dac81816c82d4e3db1b4e8b2468.
+
+- 2026-09-27T17:03:28+00:00: PR #372 exact signed head 9d2b22a80cfe9c6d9a01daec1e257fd93b99d37d is
+  OPEN/UNSTABLE while CI runs. AWQ shadow and Huawei headers are SUCCESS; credential-free, AArch64,
+  fault, formal, hosted, Repository Quality, and Rust are IN_PROGRESS; Kani is now IN_PROGRESS. No
+  new failure after DCO-history repair.
