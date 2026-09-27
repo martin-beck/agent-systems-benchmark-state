@@ -165,7 +165,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1488](../tasks/AR-1488-owner-backed-user-journey.md): Owner-backed first-customer user journey | ar1332-record-replay-luna56 | Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey. | Continue polling PR #368 exact head f06b2d1b until AArch64, Policy/coverage/supply-chain, and Rust terminal SUCCESS; then merge. |
+| P0 | [AR-1488](../tasks/AR-1488-owner-backed-user-journey.md): Owner-backed first-customer user journey | ar1332-record-replay-luna56 | Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey. | Wait for final Policy, coverage, and supply chain check on PR #368; merge only after SUCCESS and CLEAN. |
 
 ### Blocked (73)
 
