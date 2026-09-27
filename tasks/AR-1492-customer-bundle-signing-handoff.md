@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stage a deterministic customer bundle and provide an explicit external signing handoff and verifier.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Customer bundle signing handoff",
-  "updated_at": "2026-09-27T16:17:32+00:00",
+  "updated_at": "2026-09-27T16:19:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1492-customer-bundle-signing-handoff"
 }
 ---
@@ -72,3 +72,6 @@ detached signature.
   Added positive/negative Python tests. Focused gates green: Python bundle tests 5/5, offline
   verifier 22/22, clippy workspace all-targets, rustdoc workspace, repository policy,
   fmt/diff/clean. Product head 1836d0f0 is SSH-signed+DCO.
+
+- 2026-09-27T16:19:11+00:00: Recorded command exit 0; command argv SHA-256
+  2dc75c71065c01bd6ae8b26b0898f48c3c4a43881e4ff64ae8d8a66daa40913b.
