@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Raise exact hosted coverage above the enforced 90 percent floor for the authority resolver.",
-  "task_revision": 62,
+  "task_revision": 63,
   "title": "Cover authority resolver behavior",
-  "updated_at": "2026-09-27T05:27:40+00:00",
+  "updated_at": "2026-09-27T05:28:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1477-authority-resolver-coverage-tests"
 }
 ---
@@ -200,3 +200,6 @@ the coverage floor remains unchanged.
 
 - 2026-09-27T05:27:40+00:00: Recorded command exit 8; command argv SHA-256
   8917685081e9b9651ec5fcc2db85e83241771d246226d6b2856e4741627104c8.
+
+- 2026-09-27T05:28:06+00:00: Recorded command exit 0; command argv SHA-256
+  c005ea64cce8a9e7eab7302b9d9e353a70c219c4ebe24c770e660566c96f5d92.
