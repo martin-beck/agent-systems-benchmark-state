@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compose authenticated runtime enrollment into opaque normal CLI run and sweep dispatch.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Runtime-control CLI composition",
-  "updated_at": "2026-09-27T11:26:58+00:00",
+  "updated_at": "2026-09-27T11:28:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1480-runtime-control-cli-composition"
 }
 ---
@@ -89,3 +89,6 @@ and never gates local qualification.
   docs/examples/asb-cli-workflow-v1.provenance.json through handoffctl product run to the exact
   current hash; focused provenance test now passes 1/1. Preserve this deterministic
   provenance-refresh evidence before full rerun.
+
+- 2026-09-27T11:28:37+00:00: Recorded command exit 1; command argv SHA-256
+  8aec24a200be13f45450c587096d341e2afdfa97823b21330001e5162e0de7c2.
