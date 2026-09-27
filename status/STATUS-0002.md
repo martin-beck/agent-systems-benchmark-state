@@ -149,12 +149,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1479](../tasks/AR-1479-rust-ci-flake-repair.md): Rust CI timing and state-root flake repair | coordinator | Repair the unrelated Rust state-root collision and malformed-ready-marker timing flakes blocking AR-1420 exact-head CI. | Promote and claim the isolated repair worktree; reproduce both exact Rust failures before changing any test or synchronization code. |
-
 ### Blocked (72)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -232,7 +226,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (55)
+### Planned (56)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -256,6 +250,7 @@
 | P0 | [AR-1309](../tasks/AR-1309-reviewed-capacity-or-model-reduction.md): Reviewed full-exhaustive capacity or model-reduction contract | Unclaimed | Provide a reviewed successor contract after terminal full-exhaustive capacity OOM. | Remain planned until the coordinator reviews the AR-1308 terminal OOM evidence and selects a separately scoped capacity contract or model-reduction profile; do not rerun or widen AR-1307 limits. |
 | P0 | [AR-1370](../tasks/AR-1370-runner-authority-materialization.md): Runner authority materialization | Unclaimed | Inject existing authenticated certificate authority and runtime enrollment material into RunnerBackend/Catalog for receipt issuance. | Remain planned until AR-1369 dependency is resolved; then add authenticated RunnerBackend/Catalog authority injection and receipt-source tests without synthetic authority. |
 | P0 | [AR-1375](../tasks/AR-1375-live-control-dispatch-source.md): Runtime-owned live control dispatch source | Unclaimed | Supply authenticated runtime control receipts to production live dispatch. | Wait for AR-1374 blocker resolution, then implement the runtime-owned authenticated control adapter for CLI live dispatch. |
+| P0 | [AR-1479](../tasks/AR-1479-rust-ci-flake-repair.md): Rust CI timing and state-root flake repair | Unclaimed | Repair the unrelated Rust state-root collision and malformed-ready-marker timing flakes blocking AR-1420 exact-head CI. | Promote and claim the isolated repair worktree; reproduce both exact Rust failures before changing any test or synchronization code. |
 | P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
 | P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
 | P1 | [AR-0810](../tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Unclaimed | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project&#x27;s GitHub Pages site. |
@@ -512,3 +507,4 @@
 | P1 | [AR-0702](../tasks/AR-0702-native-platforms.md): Validate native Linux kernels and architectures | Unclaimed | Qualify native x86_64 and required emulated AArch64 portability; track native ARM64 as optional future evidence. | Rebase PR #31, replace native ARM64 completion gates with the pinned QEMU AArch64 lane where applicable, document native ARM64 as optional future qualification, and rerun exact-head checks. |
 | P1 | [AR-0704](../tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | PR #119 exact head 4630f90 is rebased onto protected main 5ddac12. Fresh exact-head checks were absent immediately after force-push; close/reopen retriggered them. At last query all 12 checks are pending except AWQ shadow and SPDX headers pass. Wait for every required check terminal success; do not merge on partial/pending evidence. |
 | P1 | [AR-0707](../tasks/AR-0707-emulated-aarch64-portability.md): Qualify emulated aarch64 portability | Unclaimed | Add explicit emulated-aarch64 portability qualification without claiming native support. | Provide a reproducible x86_64-hosted aarch64 VM/emulation lane for userspace portability and negative qualification only. |
+| P1 | [AR-0801](../tasks/AR-0801-terminal-interface.md): Implement terminal and automation interfaces | Unclaimed | Provide doctor, plan, run, sweep, compare and report with stable JSON output. | No further AR-0801 action; preserve the verified doctor, plan, run, sweep, compare, report, and serve surface, with record and replay explicitly unsupported. |

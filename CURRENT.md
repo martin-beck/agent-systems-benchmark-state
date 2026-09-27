@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1479](tasks/AR-1479-rust-ci-flake-repair.md): Rust CI timing and state-root flake repair | Repair the unrelated Rust state-root collision and malformed-ready-marker timing flakes blocking AR-1420 exact-head CI. | Promote and claim the isolated repair worktree; reproduce both exact Rust failures before changing any test or synchronization code. | coordinator |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -110,6 +104,7 @@ Never edit this file directly.
 | P0 | [AR-1309](tasks/AR-1309-reviewed-capacity-or-model-reduction.md): Reviewed full-exhaustive capacity or model-reduction contract | Provide a reviewed successor contract after terminal full-exhaustive capacity OOM. | Remain planned until the coordinator reviews the AR-1308 terminal OOM evidence and selects a separately scoped capacity contract or model-reduction profile; do not rerun or widen AR-1307 limits. | - |
 | P0 | [AR-1370](tasks/AR-1370-runner-authority-materialization.md): Runner authority materialization | Inject existing authenticated certificate authority and runtime enrollment material into RunnerBackend/Catalog for receipt issuance. | Remain planned until AR-1369 dependency is resolved; then add authenticated RunnerBackend/Catalog authority injection and receipt-source tests without synthetic authority. | - |
 | P0 | [AR-1375](tasks/AR-1375-live-control-dispatch-source.md): Runtime-owned live control dispatch source | Supply authenticated runtime control receipts to production live dispatch. | Wait for AR-1374 blocker resolution, then implement the runtime-owned authenticated control adapter for CLI live dispatch. | - |
+| P0 | [AR-1479](tasks/AR-1479-rust-ci-flake-repair.md): Rust CI timing and state-root flake repair | Repair the unrelated Rust state-root collision and malformed-ready-marker timing flakes blocking AR-1420 exact-head CI. | Promote and claim the isolated repair worktree; reproduce both exact Rust failures before changing any test or synchronization code. | - |
 | P1 | [AR-0808](tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. | - |
 | P1 | [AR-0809](tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. | - |
 | P1 | [AR-0810](tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project's GitHub Pages site. | - |
