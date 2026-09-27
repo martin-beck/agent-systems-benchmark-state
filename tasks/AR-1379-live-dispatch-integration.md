@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1379-live-dispatch-integration",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "363b21f81d5c5ab364c2e2a923bd82676feaf343",
   "claim_expires": "2026-09-27T04:14:57+00:00",
   "depends_on": [
     "AR-1378",
@@ -11,7 +11,7 @@
     "AR-1362"
   ],
   "id": "AR-1379",
-  "next_action": "Promote and claim this dependency-valid production dispatch successor, refresh an isolated worktree, and wire the authenticated adapter into asb run/sweep.",
+  "next_action": "Implement the narrow runtime-owned control-session/source injection seam: production run/sweep must receive only LiveProviderRuntimeDispatchSource; add positive and fail-closed CLI tests, then run focused/full gates.",
   "observed_branch": "feature/ar-1379-live-dispatch-integration",
   "observed_dirty": 0,
   "observed_head": "363b21f81d5c5ab364c2e2a923bd82676feaf343",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate authenticated runtime live dispatch into asb run and sweep.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Production live dispatch integration",
-  "updated_at": "2026-09-27T02:16:01+00:00",
+  "updated_at": "2026-09-27T02:17:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1379-live-dispatch-integration"
 }
 ---
@@ -77,3 +77,10 @@ verified through the completed gates.
 
 - 2026-09-27T02:16:01+00:00: Recorded command exit 0; command argv SHA-256
   91c481d4f1a058d3265e9102b0531d1eefe09cb45e5c1807ecda5e8c8b6b67d5.
+
+- 2026-09-27T02:17:14+00:00: Current-main refresh complete at
+  origin/main=363b21f81d5c5ab364c2e2a923bd82676feaf343; declared worktree
+  feature/ar-1379-live-dispatch-integration is clean and fast-forwarded. Audit confirms AR-1472
+  runtime source exists, but no CLI source-aware entrypoint or public runtime-owned
+  control-session/bootstrap composition reaches production run/sweep. No product changes yet; design
+  is scoped to opaque source injection, never caller authority.
