@@ -9,7 +9,7 @@
     "AR-1491"
   ],
   "id": "AR-1492",
-  "next_action": "Monitor Repository Quality rerun 36333580327 (job 108661578872) to terminal SUCCESS; then verify all eight exact-merge workflows and release.",
+  "next_action": "Run state reconcile and doctor, then release AR-1492 done ownerless with merge and eight-workflow evidence.",
   "observed_branch": "release/ar-1492-customer-bundle-signing-handoff",
   "observed_dirty": 0,
   "observed_head": "050b298c99724f7265e8dec47c6e801b3fb53e85",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stage a deterministic customer bundle and provide an explicit external signing handoff and verifier.",
-  "task_revision": 70,
+  "task_revision": 71,
   "title": "Customer bundle signing handoff",
-  "updated_at": "2026-09-27T16:47:50+00:00",
+  "updated_at": "2026-09-27T16:48:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1492-customer-bundle-signing-handoff"
 }
 ---
@@ -254,3 +254,11 @@ detached signature.
 
 - 2026-09-27T16:47:50+00:00: Recorded command exit 0; command argv SHA-256
   8a616e50dd73778f41c21c04bf2989cd68b252dc8916ac97341bd0bb77b82890.
+
+- 2026-09-27T16:48:20+00:00: Post-merge verification complete for exact merge
+  a2d9be3eb3c77331a7a3498fdec8e54fb74ae8d6. All eight exact-main workflows are terminal SUCCESS:
+  Huawei 36333580424; credential-free 36333580338; hosted 36333580340; fault 36333580354; formal
+  36333580517; Rust 36333580319; emulated AArch64 36333580303; Repository Quality rerun 36333580327
+  (job 108661578872) SUCCESS at 16:47:25Z after isolated timing-flake reproduction passed. PR #371
+  merged normally at a2d9be3. No signature fabricated; external signing remains the AR-1490
+  boundary.

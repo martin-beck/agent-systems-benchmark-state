@@ -169,7 +169,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1492](../tasks/AR-1492-customer-bundle-signing-handoff.md): Customer bundle signing handoff | ar1332-record-replay-luna56 | Stage a deterministic customer bundle and provide an explicit external signing handoff and verifier. | Monitor Repository Quality rerun 36333580327 (job 108661578872) to terminal SUCCESS; then verify all eight exact-merge workflows and release. |
+| P0 | [AR-1492](../tasks/AR-1492-customer-bundle-signing-handoff.md): Customer bundle signing handoff | ar1332-record-replay-luna56 | Stage a deterministic customer bundle and provide an explicit external signing handoff and verifier. | Run state reconcile and doctor, then release AR-1492 done ownerless with merge and eight-workflow evidence. |
 
 ### Blocked (74)
 
