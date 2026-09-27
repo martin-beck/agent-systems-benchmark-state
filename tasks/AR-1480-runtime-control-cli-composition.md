@@ -8,7 +8,7 @@
     "AR-1472"
   ],
   "id": "AR-1480",
-  "next_action": "Monitor eight exact-main post-merge workflows for fdc7f59f83f647ce099439b003848291e81dd3bb to terminal SUCCESS; then reconcile/doctor and release done.",
+  "next_action": "Run reconcile and doctor --live, then release AR-1480 done ownerless with complete merge/post-merge evidence.",
   "observed_branch": "feature/ar-1480-runtime-control-cli-composition",
   "observed_dirty": 0,
   "observed_head": "440a06427d6e6fe2aacaebc2a50c5f924527dd04",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compose authenticated runtime enrollment into opaque normal CLI run and sweep dispatch.",
-  "task_revision": 71,
+  "task_revision": 72,
   "title": "Runtime-control CLI composition",
-  "updated_at": "2026-09-27T11:53:49+00:00",
+  "updated_at": "2026-09-27T11:54:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1480-runtime-control-cli-composition"
 }
 ---
@@ -265,3 +265,10 @@ and never gates local qualification.
 
 - 2026-09-27T11:53:49+00:00: Recorded command exit 0; command argv SHA-256
   ad4444b0126de6a5a24acb41006f4c0ede7cff63cc27673a50874efa968fdf93.
+
+- 2026-09-27T11:54:18+00:00: All eight exact-main post-merge workflows for merge SHA
+  fdc7f59f83f647ce099439b003848291e81dd3bb are terminal SUCCESS: Repository quality 36316693442;
+  Credential-free benchmark path 36316693423; Huawei MIT headers 36316693365; Fault assurance
+  36316693349; Rust verification 36316693344; Emulated aarch64 portability 36316693340; Formal
+  assurance 36316693339; Hosted portability/native qualification 36316693310. Protected main exact
+  SHA verified by workflow head SHA. Ready for reconcile/doctor/release.
