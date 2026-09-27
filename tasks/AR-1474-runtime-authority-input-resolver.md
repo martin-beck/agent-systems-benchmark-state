@@ -18,11 +18,11 @@
   "plan": "../plans/AR-1474-runtime-authority-input-resolver.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority.",
-  "task_revision": 157,
+  "task_revision": 158,
   "title": "Runtime-owned authority-input resolver",
-  "updated_at": "2026-09-27T05:06:45+00:00",
+  "updated_at": "2026-09-27T06:06:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1474-runtime-authority-input-resolver"
 }
 ---
@@ -496,3 +496,7 @@ authority, privacy, lifecycle, formal, or egress contracts.
   Clean local attempt separately hit known control state-root ownership race (115 passed/1 failed),
   not a coverage result. Next action: create narrow coverage/test successor, then rerun exact-head
   checks; never waive the floor.
+
+- 2026-09-27T06:06:04+00:00: AR-1477 coverage tests and AR-1478 topology repair are merged with all
+  required/post-merge gates green; resume PR #345 and synchronize to current protected main
+  fac11a22.
