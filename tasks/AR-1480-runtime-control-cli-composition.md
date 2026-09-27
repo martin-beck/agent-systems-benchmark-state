@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1480-runtime-control-cli-composition",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-27T13:17:30+00:00",
+  "claim_expires": "2026-09-27T13:20:14+00:00",
   "depends_on": [
     "AR-1473",
     "AR-1472"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compose authenticated runtime enrollment into opaque normal CLI run and sweep dispatch.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Runtime-control CLI composition",
-  "updated_at": "2026-09-27T11:18:21+00:00",
+  "updated_at": "2026-09-27T11:20:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1480-runtime-control-cli-composition"
 }
 ---
@@ -43,3 +43,5 @@ and never gates local qualification.
 
 - 2026-09-27T11:18:08+00:00: Recorded command exit 0; command argv SHA-256
   e5e483509179e2d1e0604ee0f63271ced6232cbfb60eb6ccdf9fe0c6ad23a76a.
+
+- 2026-09-27T11:20:14+00:00: Heartbeat by ar1332-record-replay-luna56.
