@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-27T09:26:42+00:00",
   "depends_on": [],
   "id": "AR-1479",
-  "next_action": "Publish signed repair PR from clean head, obtain exact-head CI, then requalify AR-1420 PR #350 head 2884508.",
+  "next_action": "Monitor PR #351 exact head 69c077e checks; merge only after all required checks green, then requalify AR-1420 PR #350 head 2884508.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the unrelated Rust state-root collision and malformed-ready-marker timing flakes blocking AR-1420 exact-head CI.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Rust CI timing and state-root flake repair",
-  "updated_at": "2026-09-27T07:32:14+00:00",
+  "updated_at": "2026-09-27T07:32:30+00:00",
   "worktree_key": ""
 }
 ---
@@ -111,3 +111,9 @@ requalified. Preserve fail-closed cleanup and bounded execution semantics.
 
 - 2026-09-27T07:32:14+00:00: Recorded command exit 0; command argv SHA-256
   7fd74bf70c457ec659fc777909951ad6d70f22140982dea1ddea345e572533e6.
+
+- 2026-09-27T07:32:30+00:00: Published PR #351 at exact signed head
+  69c077e969ba02c77f90d5dcd892e53b95172bc4:
+  https://github.com/martin-beck/agent-systems-benchmark/pull/351. Diff is one workflow command:
+  serial workspace Rust tests. No product semantics, assertions, timing bounds, or AR-1420 files
+  changed. Monitor exact-head required checks; do not merge until all green.
