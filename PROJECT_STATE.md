@@ -10,20 +10,21 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #350 | `feature/ar-1420-literature-workload-campaign-integration@26f03d3f52da` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, QUEUED:, IN_PROGRESS:, QUEUED:, IN_PROGRESS: | feat: integrate literature workload campaigns |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 36301840987 | `26f03d3f52da` | pull_request | Rust verification | in_progress:- |
+| 36301840974 | `26f03d3f52da` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 36301840963 | `26f03d3f52da` | pull_request | Credential-free benchmark path | in_progress:- |
+| 36301840952 | `26f03d3f52da` | pull_request | Fault assurance | in_progress:- |
+| 36301840951 | `26f03d3f52da` | pull_request | Formal assurance | queued:- |
+| 36301840950 | `26f03d3f52da` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 36301840949 | `26f03d3f52da` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 36301840943 | `26f03d3f52da` | pull_request | Repository quality | in_progress:- |
+| 36301840942 | `26f03d3f52da` | pull_request | Huawei MIT source headers | in_progress:- |
 | 36300554039 | `8361a8ddd2cd` | push | Fault assurance | completed:success |
 | 36300554023 | `8361a8ddd2cd` | push | Huawei MIT source headers | completed:success |
 | 36300553987 | `8361a8ddd2cd` | push | Formal assurance | completed:success |
-| 36300553983 | `8361a8ddd2cd` | push | Repository quality | completed:success |
-| 36300553958 | `8361a8ddd2cd` | push | Hosted portability and native qualification | completed:success |
-| 36300553949 | `8361a8ddd2cd` | push | Rust verification | completed:success |
-| 36300553906 | `8361a8ddd2cd` | push | Emulated aarch64 portability | completed:success |
-| 36300553894 | `8361a8ddd2cd` | push | Credential-free benchmark path | completed:success |
-| 36300089789 | `16e4bf8405b9` | pull_request | Emulated aarch64 portability | completed:success |
-| 36300089621 | `16e4bf8405b9` | pull_request | Credential-free benchmark path | completed:success |
-| 36300089598 | `16e4bf8405b9` | pull_request | Repository quality | completed:success |
-| 36300089591 | `16e4bf8405b9` | pull_request | Rust verification | completed:success |
