@@ -15,9 +15,9 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36312453113 | `5e577e6a4b27` | push | Hosted portability and native qualification | in_progress:- |
-| 36312453110 | `5e577e6a4b27` | push | Credential-free benchmark path | in_progress:- |
-| 36312453109 | `5e577e6a4b27` | push | Fault assurance | in_progress:- |
+| 36312453113 | `5e577e6a4b27` | push | Hosted portability and native qualification | completed:success |
+| 36312453110 | `5e577e6a4b27` | push | Credential-free benchmark path | completed:success |
+| 36312453109 | `5e577e6a4b27` | push | Fault assurance | completed:success |
 | 36312453096 | `5e577e6a4b27` | push | Repository quality | in_progress:- |
 | 36312453087 | `5e577e6a4b27` | push | Formal assurance | in_progress:- |
 | 36312453084 | `5e577e6a4b27` | push | Emulated aarch64 portability | in_progress:- |
