@@ -2,7 +2,7 @@
 {
   "branch": "release/ar-1493-release-authority-enrollment-handoff",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-27T18:52:46+00:00",
   "depends_on": [
     "AR-1461",
     "AR-1462",
@@ -14,15 +14,15 @@
   "observed_branch": "release/ar-1493-release-authority-enrollment-handoff",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1493-release-authority-enrollment-handoff.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Define and validate the external release-authority enrollment and signed-bundle verification handoff.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Release-authority enrollment handoff",
-  "updated_at": "2026-09-27T16:52:40+00:00",
+  "updated_at": "2026-09-27T16:52:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1493-release-authority-enrollment-handoff"
 }
 ---
@@ -50,3 +50,5 @@ and preserve AR-1490 as the customer-release blocker.
 - 2026-09-27T16:52:40+00:00: Dependencies AR-1461, AR-1462, AR-1491, and AR-1492 are complete.
   Promote the repository-side release-authority enrollment/verification handoff while preserving
   AR-1490 external signed-package blocker.
+
+- 2026-09-27T16:52:46+00:00: Claimed by ar1332-record-replay-luna56.

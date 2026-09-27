@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1493](tasks/AR-1493-release-authority-enrollment-handoff.md): Release-authority enrollment handoff | Define and validate the external release-authority enrollment and signed-bundle verification handoff. | Promote and claim after the state commit; audit AR-1492 handoff and implement only repository-side enrollment/verification checks and docs. | - |
+| P0 | [AR-1493](tasks/AR-1493-release-authority-enrollment-handoff.md): Release-authority enrollment handoff | Define and validate the external release-authority enrollment and signed-bundle verification handoff. | Promote and claim after the state commit; audit AR-1492 handoff and implement only repository-side enrollment/verification checks and docs. | ar1332-record-replay-luna56 |
 
 ## Blocked
 
