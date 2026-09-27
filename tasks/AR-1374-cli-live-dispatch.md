@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Consume authenticated runtime receipts in production asb run and sweep dispatch.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Production live-provider dispatch",
-  "updated_at": "2026-09-27T01:30:45+00:00",
+  "updated_at": "2026-09-27T01:31:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1374-cli-live-dispatch"
 }
 ---
@@ -83,3 +83,6 @@ reachability.
 
 - 2026-09-27T01:30:45+00:00: Recorded command exit 0; command argv SHA-256
   d23f4a5f69552ee49d9a62b798284de57e12a57f0ad13eb5943cbcbb095c8d85.
+
+- 2026-09-27T01:31:00+00:00: Recorded command exit 0; command argv SHA-256
+  2888e5f4ddd794c45d079dbd0ab18f822d5749d4074df37eae09d1d02a4159c1.
