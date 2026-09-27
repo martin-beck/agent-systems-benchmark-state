@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the owner-backed credential-free local/mock/replay first-customer journey.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Owner-backed first-customer qualification",
-  "updated_at": "2026-09-27T13:56:32+00:00",
+  "updated_at": "2026-09-27T13:56:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1487-owner-backed-qualification"
 }
 ---
@@ -37,3 +37,6 @@ runtime-owned CLI; it excludes live providers and asb-tui.
   the credential-free owner-backed first-customer qualification slice.
 
 - 2026-09-27T13:56:32+00:00: Claimed by ar1332-record-replay-luna56.
+
+- 2026-09-27T13:56:44+00:00: Recorded command exit 0; command argv SHA-256
+  6936a57ee401fff955b9362c97becc9646e89d508d0f94b4de9c8aa0967a8fff.
