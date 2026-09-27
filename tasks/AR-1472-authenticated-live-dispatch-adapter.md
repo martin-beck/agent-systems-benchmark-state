@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect authenticated control receipts to runtime-owned CLI live dispatch without a dependency cycle.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Authenticated live-dispatch adapter",
-  "updated_at": "2026-09-27T01:41:37+00:00",
+  "updated_at": "2026-09-27T01:42:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1472-authenticated-live-dispatch-adapter"
 }
 ---
@@ -90,3 +90,6 @@ authority. Mandatory qualification is deterministic local/mock or replay.
   opaque-enrollment test and unavailable-enrollment negative test. No asb-tui/live-provider changes.
   Focused runtime/CLI tests pass (133 passed, 1 ignored), fmt/diff clean, signed+DCO commit 5f785dab
   verified.
+
+- 2026-09-27T01:42:19+00:00: Recorded command exit 0; command argv SHA-256
+  534f8613e1c316db8f0f46dd989e44e14a8ca74304a94791b4e4a1c59b2fbb1d.
