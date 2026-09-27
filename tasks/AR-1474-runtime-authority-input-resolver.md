@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority.",
-  "task_revision": 159,
+  "task_revision": 160,
   "title": "Runtime-owned authority-input resolver",
-  "updated_at": "2026-09-27T06:06:26+00:00",
+  "updated_at": "2026-09-27T06:06:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1474-runtime-authority-input-resolver"
 }
 ---
@@ -502,3 +502,6 @@ authority, privacy, lifecycle, formal, or egress contracts.
   fac11a22.
 
 - 2026-09-27T06:06:26+00:00: Claimed by ar1332-record-replay-luna56.
+
+- 2026-09-27T06:06:38+00:00: Recorded command exit 0; command argv SHA-256
+  992414cfc7ec018445c1c274d761535b846f4275d49f22ab529e234b7f74f899.
