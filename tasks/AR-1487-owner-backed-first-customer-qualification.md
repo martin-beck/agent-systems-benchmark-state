@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the owner-backed credential-free local/mock/replay first-customer journey.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Owner-backed first-customer qualification",
-  "updated_at": "2026-09-27T13:58:15+00:00",
+  "updated_at": "2026-09-27T13:58:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1487-owner-backed-qualification"
 }
 ---
@@ -45,3 +45,6 @@ runtime-owned CLI; it excludes live providers and asb-tui.
   4a1df304b069d9e4bea2e44713d22471c2c32f3ad92ac852ab55fe308dc2f8ac.
 
 - 2026-09-27T13:58:15+00:00: Heartbeat by ar1332-record-replay-luna56.
+
+- 2026-09-27T13:58:29+00:00: Recorded command exit 0; command argv SHA-256
+  c61765a6be73421ca67aa5405a1969afcc8f800401d6f948fbad362b55833373.
