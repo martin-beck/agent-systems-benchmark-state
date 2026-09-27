@@ -11,7 +11,7 @@
     "AR-1487"
   ],
   "id": "AR-1488",
-  "next_action": "Monitor PR #368 exact head f06b2d1b; merge only after every required check and independent review are green.",
+  "next_action": "Monitor PR #368 exact head f06b2d1b until all 13 required checks terminal SUCCESS; merge only when CLEAN.",
   "observed_branch": "feature/ar-1488-owner-backed-user-journey",
   "observed_dirty": 0,
   "observed_head": "f06b2d1b01d33ec367760e02c0f19c88a1ed4166",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Owner-backed first-customer user journey",
-  "updated_at": "2026-09-27T14:46:19+00:00",
+  "updated_at": "2026-09-27T14:46:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1488-owner-backed-user-journey"
 }
 ---
@@ -103,3 +103,8 @@ live provider.
 
 - 2026-09-27T14:46:19+00:00: Recorded command exit 0; command argv SHA-256
   4769643398702d3a531862e4555486fbb7a4d2923d0ca3c633b9aafb42de98dd.
+
+- 2026-09-27T14:46:45+00:00: PR #368 exact head f06b2d1b confirmed, base main, OPEN, mergeState
+  UNSTABLE. Green: AWQ shadow evidence and Huawei MIT headers. In progress/queued: credential-free,
+  AArch64, retained faults, TLC/Alloy, platform, policy/coverage/supply chain, Rust, fuzz, Kani,
+  mutation, Loom.

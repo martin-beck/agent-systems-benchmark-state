@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1488](tasks/AR-1488-owner-backed-user-journey.md): Owner-backed first-customer user journey | Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey. | Monitor PR #368 exact head f06b2d1b; merge only after every required check and independent review are green. | ar1332-record-replay-luna56 |
+| P0 | [AR-1488](tasks/AR-1488-owner-backed-user-journey.md): Owner-backed first-customer user journey | Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey. | Monitor PR #368 exact head f06b2d1b until all 13 required checks terminal SUCCESS; merge only when CLEAN. | ar1332-record-replay-luna56 |
 
 ## Blocked
 
