@@ -9,7 +9,7 @@
     "AR-1379"
   ],
   "id": "AR-1473",
-  "next_action": "Run full workspace/docs/privacy gates and independent review; publish signed exact head if clean.",
+  "next_action": "Publish signed head via PR; monitor exact-head required checks, merge only all green, then eight post-merge workflows.",
   "observed_branch": "feature/ar-1473-runtime-owned-enrollment-source",
   "observed_dirty": 0,
   "observed_head": "4a29c3431d236cc9766c47408dab8de998a31a3b",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve authenticated control enrollment into an opaque runtime-owned source for normal ASB run and sweep.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Runtime-owned authenticated enrollment source",
-  "updated_at": "2026-09-27T10:51:33+00:00",
+  "updated_at": "2026-09-27T10:52:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1473-runtime-owned-enrollment-source"
 }
 ---
@@ -111,3 +111,11 @@ the existing fail-closed authority boundaries.
 
 - 2026-09-27T10:51:33+00:00: Recorded command exit 0; command argv SHA-256
   f2d44d52f550fa2792f69934b78ed1adeb45f7364e2ce0640b2220d66732940a.
+
+- 2026-09-27T10:52:06+00:00: Independent diff review: one scoped file
+  crates/asb-runtime/src/live_service.rs, 90 added lines; private RuntimeOwnedEnrollmentSource
+  consumes only authenticated profile/resolver and emits opaque handle, revalidates
+  owner/generation/cancel/teardown, has positive and two hostile tests. No asb-tui, CLI authority
+  inputs, credentials, provider/network, or handoffctl changes. Full workspace tests, clippy,
+  rustdoc, release build, fmt and diff checks exit 0. Clean SSH-signed+DCO head
+  4a29c3431d236cc9766c47408dab8de998a31a3b.
