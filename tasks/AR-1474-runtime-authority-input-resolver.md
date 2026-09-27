@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1474-runtime-authority-input-resolver",
   "checkpoint_commit": "c21d1ce5d1eca0ad80c28f0a0c5ebda5fd6a3603",
-  "claim_expires": "2026-09-27T07:03:43+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1362",
     "AR-1471",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1474-runtime-authority-input-resolver",
   "observed_dirty": 0,
   "observed_head": "c21d1ce5d1eca0ad80c28f0a0c5ebda5fd6a3603",
-  "owner": "ar1332-record-replay-luna56",
+  "owner": "",
   "plan": "../plans/AR-1474-runtime-authority-input-resolver.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority.",
-  "task_revision": 156,
+  "task_revision": 157,
   "title": "Runtime-owned authority-input resolver",
-  "updated_at": "2026-09-27T05:06:37+00:00",
+  "updated_at": "2026-09-27T05:06:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1474-runtime-authority-input-resolver"
 }
 ---
@@ -490,3 +490,9 @@ authority, privacy, lifecycle, formal, or egress contracts.
   control::tests::production_backend_runs_without_frontend_and_recovers_idempotency state-root
   ownership race (115 passed, 1 failed, exit 101), so it is not coverage evidence. Do not merge;
   create narrow coverage repair successor.
+
+- 2026-09-27T05:06:45+00:00: PR #345 exact head c21d1ce remains unmergeable. Authoritative CI job
+  108554587959 failed workspace coverage at 89.88% (98431 lines, 11780 missed) against 90% floor.
+  Clean local attempt separately hit known control state-root ownership race (115 passed/1 failed),
+  not a coverage result. Next action: create narrow coverage/test successor, then rerun exact-head
+  checks; never waive the floor.
