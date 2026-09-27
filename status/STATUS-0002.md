@@ -154,7 +154,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1480](../tasks/AR-1480-runtime-control-cli-composition.md): Runtime-control CLI composition | ar1332-record-replay-luna56 | Compose authenticated runtime enrollment into opaque normal CLI run and sweep dispatch. | Complete active workspace tests/clippy/rustdoc/release gates, then independent review and signed commit. |
+| P0 | [AR-1480](../tasks/AR-1480-runtime-control-cli-composition.md): Runtime-control CLI composition | ar1332-record-replay-luna56 | Compose authenticated runtime enrollment into opaque normal CLI run and sweep dispatch. | Rerun full workspace/docs/privacy gates after provenance refresh, then independent review and signed commit. |
 
 ### Blocked (70)
 

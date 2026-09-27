@@ -8,7 +8,7 @@
     "AR-1472"
   ],
   "id": "AR-1480",
-  "next_action": "Complete active workspace tests/clippy/rustdoc/release gates, then independent review and signed commit.",
+  "next_action": "Rerun full workspace/docs/privacy gates after provenance refresh, then independent review and signed commit.",
   "observed_branch": "feature/ar-1480-runtime-control-cli-composition",
   "observed_dirty": 3,
   "observed_head": "59323f41ed2d10a952a1276107459260ebdf409a",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compose authenticated runtime enrollment into opaque normal CLI run and sweep dispatch.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Runtime-control CLI composition",
-  "updated_at": "2026-09-27T11:26:30+00:00",
+  "updated_at": "2026-09-27T11:26:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1480-runtime-control-cli-composition"
 }
 ---
@@ -82,3 +82,10 @@ and never gates local qualification.
 
 - 2026-09-27T11:26:30+00:00: Recorded command exit 0; command argv SHA-256
   19d47c10c4c4e824f5a4b03933e6b89ad4378dcfbd931f0f6da06e7d709b71a8.
+
+- 2026-09-27T11:26:58+00:00: Full workspace test initially exited 101 on existing provenance
+  contract test crates/asb-cli/tests/workflow_transcript.rs: expected cli_source_sha256 4696... but
+  current lib hash was f5ee7317... due this intentional CLI change. No behavioral failure. Updated
+  docs/examples/asb-cli-workflow-v1.provenance.json through handoffctl product run to the exact
+  current hash; focused provenance test now passes 1/1. Preserve this deterministic
+  provenance-refresh evidence before full rerun.
