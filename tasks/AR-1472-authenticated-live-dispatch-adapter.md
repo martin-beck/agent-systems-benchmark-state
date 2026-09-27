@@ -8,7 +8,7 @@
     "AR-1363"
   ],
   "id": "AR-1472",
-  "next_action": "Continue monitoring PR #343 exact-head Rust and Repository quality checks; merge only after both and all required checks are green.",
+  "next_action": "Monitor PR #343 Repository quality at exact head 5f785dab598f24c2221272cf53b9366a10625413; merge immediately only after terminal SUCCESS.",
   "observed_branch": "feature/ar-1472-authenticated-live-dispatch-adapter",
   "observed_dirty": 0,
   "observed_head": "5f785dab598f24c2221272cf53b9366a10625413",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect authenticated control receipts to runtime-owned CLI live dispatch without a dependency cycle.",
-  "task_revision": 57,
+  "task_revision": 58,
   "title": "Authenticated live-dispatch adapter",
-  "updated_at": "2026-09-27T01:57:49+00:00",
+  "updated_at": "2026-09-27T01:58:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1472-authenticated-live-dispatch-adapter"
 }
 ---
@@ -207,3 +207,7 @@ authority. Mandatory qualification is deterministic local/mock or replay.
   f793d1cd1d99f831ddf78a3a8957ab72d1079c8331b3cebdc8220fc98381b9bb.
 
 - 2026-09-27T01:57:49+00:00: Heartbeat by ar1332_record_replay_luna56.
+
+- 2026-09-27T01:58:01+00:00: Final pre-merge poll: Rust verification turned SUCCESS at 01:56:57Z;
+  every check except Repository quality is SUCCESS. Repository quality remains IN_PROGRESS; PR
+  OPEN/UNSTABLE, exact head unchanged. Heartbeat renewed 120 minutes; merge correctly deferred.
