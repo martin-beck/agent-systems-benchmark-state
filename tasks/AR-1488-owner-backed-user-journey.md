@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Owner-backed first-customer user journey",
-  "updated_at": "2026-09-27T14:46:10+00:00",
+  "updated_at": "2026-09-27T14:46:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1488-owner-backed-user-journey"
 }
 ---
@@ -100,3 +100,6 @@ live provider.
 - 2026-09-27T14:46:10+00:00: Published PR #368 from exact signed/DCO head
   f06b2d1b01d33ec367760e02c0f19c88a1ed4166; branch feature/ar-1488-owner-backed-user-journey pushed
   successfully.
+
+- 2026-09-27T14:46:19+00:00: Recorded command exit 0; command argv SHA-256
+  4769643398702d3a531862e4555486fbb7a4d2923d0ca3c633b9aafb42de98dd.
