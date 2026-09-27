@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Owner-backed first-customer user journey",
-  "updated_at": "2026-09-27T14:54:32+00:00",
+  "updated_at": "2026-09-27T14:54:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1488-owner-backed-user-journey"
 }
 ---
@@ -145,3 +145,6 @@ live provider.
 - 2026-09-27T14:54:32+00:00: PR #368 exact head f06b2d1b unchanged. Emulated AArch64 and Rust
   transitioned SUCCESS; 12 of 13 named checks terminal SUCCESS. Only Policy, coverage and supply
   chain remains IN_PROGRESS.
+
+- 2026-09-27T14:54:47+00:00: Recorded command exit 0; command argv SHA-256
+  c2abe0496c095ad1c9e87eeb7faf626ba38d6ec50de1dd16251ffa35f4a1bcc4.
