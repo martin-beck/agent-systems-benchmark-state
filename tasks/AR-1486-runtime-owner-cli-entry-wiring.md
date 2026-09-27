@@ -9,7 +9,7 @@
     "AR-1485"
   ],
   "id": "AR-1486",
-  "next_action": "Monitor PR #360 exact head a5f9ad27; merge only after all required checks and independent review are green, then verify eight post-merge workflows.",
+  "next_action": "Continue monitoring PR #360 exact head a5f9ad27; merge only after all 13 required checks terminal SUCCESS and review passes.",
   "observed_branch": "feature/ar-1486-runtime-owner-cli-entry-wiring",
   "observed_dirty": 0,
   "observed_head": "a5f9ad27b967371511b0981aad29d3aa65a7fcab",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire the runtime-owned local/mock process owner into ordinary CLI run and sweep.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Runtime-owner CLI entry wiring",
-  "updated_at": "2026-09-27T13:36:02+00:00",
+  "updated_at": "2026-09-27T13:36:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1486-cli-owner-wiring"
 }
 ---
@@ -121,3 +121,7 @@ authority.
 
 - 2026-09-27T13:36:02+00:00: Recorded command exit 0; command argv SHA-256
   9297093e4c8b5665a10032d8ee809f162e60927d6b714f0d27cef2b3f730af24.
+
+- 2026-09-27T13:36:28+00:00: Initial PR #360 rollup: exact head a5f9ad27, base main,
+  mergeStateStatus UNSTABLE while 11 named checks are IN_PROGRESS; AWQ shadow and Huawei/SPDX checks
+  SUCCESS. No failures or head changes.
