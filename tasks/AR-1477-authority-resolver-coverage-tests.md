@@ -1,21 +1,25 @@
 ---
 {
-  "schema_version": 1,
-  "id": "AR-1477",
-  "title": "Cover authority resolver behavior",
-  "status": "planned",
-  "priority": "P0",
-  "summary": "Raise exact hosted coverage above the enforced 90 percent floor for the authority resolver.",
-  "next_action": "Promote after validating completed dependencies, then reproduce the 89.88 percent exact-head coverage failure and add behavioral tests.",
-  "task_revision": 1,
-  "updated_at": "2026-09-27T05:08:00+00:00",
-  "owner": "",
-  "claim_expires": "",
-  "worktree_key": "agent-systems-benchmark-ar-1477-authority-resolver-coverage-tests",
   "branch": "feature/ar-1477-authority-resolver-coverage-tests",
   "checkpoint_commit": "",
+  "claim_expires": "",
+  "depends_on": [
+    "AR-1200",
+    "AR-1379",
+    "AR-1472"
+  ],
+  "id": "AR-1477",
+  "next_action": "Promote after validating completed dependencies, then reproduce the 89.88 percent exact-head coverage failure and add behavioral tests.",
+  "owner": "",
   "plan": "../plans/AR-1477-authority-resolver-coverage-tests.md",
-  "depends_on": ["AR-1200", "AR-1379", "AR-1472"]
+  "priority": "P0",
+  "schema_version": 1,
+  "status": "open",
+  "summary": "Raise exact hosted coverage above the enforced 90 percent floor for the authority resolver.",
+  "task_revision": 2,
+  "title": "Cover authority resolver behavior",
+  "updated_at": "2026-09-27T05:07:41+00:00",
+  "worktree_key": "agent-systems-benchmark-ar-1477-authority-resolver-coverage-tests"
 }
 ---
 
@@ -25,3 +29,6 @@ the coverage floor remains unchanged.
 
 - 2026-09-27T05:08:00+00:00: Created after job 108554587959 reported 89.88%
   coverage at exact synchronized head `c21d1ce5`, below the required 90%.
+
+- 2026-09-27T05:07:41+00:00: Dependencies AR-1200, AR-1379, and AR-1472 are done; promote the
+  exact-head authority-resolver coverage successor.
