@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the required credential-free CI stage for the complete benchmark path.",
-  "task_revision": 89,
+  "task_revision": 90,
   "title": "Credential-free CI stage for the benchmark path",
-  "updated_at": "2026-09-27T06:33:39+00:00",
+  "updated_at": "2026-09-27T06:33:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1335-credential-free-benchmark-ci"
 }
 ---
@@ -294,3 +294,6 @@ reachability.
 
 - 2026-09-27T06:33:39+00:00: Recorded command exit 0; command argv SHA-256
   e61ff8b94013678fbbf8c520f62500262a35ea69a415c3c7aab160737607686f.
+
+- 2026-09-27T06:33:54+00:00: Recorded command exit 0; command argv SHA-256
+  6874917f71e88f74e66e7a18c1e0d790b28b4cacd6753d208e306d021798c8b1.
