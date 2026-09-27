@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire the runtime-owned local/mock process owner into ordinary CLI run and sweep.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Runtime-owner CLI entry wiring",
-  "updated_at": "2026-09-27T13:24:36+00:00",
+  "updated_at": "2026-09-27T13:26:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1486-cli-owner-wiring"
 }
 ---
@@ -69,3 +69,6 @@ authority.
 
 - 2026-09-27T13:24:24+00:00: Recorded command exit 0; command argv SHA-256
   58a3af1d9482da5077e08de409021946fc194bbc3d93a7f92dda6c19b0b341bc.
+
+- 2026-09-27T13:26:27+00:00: Recorded command exit 0; command argv SHA-256
+  74c07c4805d2bbfccedbd1feb31cb856847674f6f6932c9bdb2adc0671a9a48f.
