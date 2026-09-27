@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1336-live-benchmark-workflow-docs",
   "checkpoint_commit": "a36b86b49a347b3e5e32154c465c3ef3e9a03a11",
-  "claim_expires": "2026-09-27T12:02:25+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1333",
     "AR-1334",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1336-live-benchmark-workflow-docs",
   "observed_dirty": 0,
   "observed_head": "312f811b3a77bb30c80ba8216071b69132f0477c",
-  "owner": "ar1332-record-replay-luna56",
+  "owner": "",
   "plan": "../plans/AR-1336.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Document the live benchmark workflow and publish the supported agent and provider matrix.",
-  "task_revision": 68,
+  "task_revision": 69,
   "title": "Live benchmark workflow documentation and support matrix",
-  "updated_at": "2026-09-27T10:04:19+00:00",
+  "updated_at": "2026-09-27T10:04:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1336-live-benchmark-workflow-docs"
 }
 ---
@@ -240,3 +240,7 @@ reachability.
   issue on new test; no product semantics changed. Independent review confirmed docs-only scope,
   exact catalog digest matrix, local/mock/replay boundary, optional live provider, and no
   credentials/asb-tui.
+
+- 2026-09-27T10:04:27+00:00: AR-1336 complete: end-to-end benchmark workflow docs and
+  digest-anchored support matrix merged at a36b86b; all eight post-merge workflows green. Durable
+  evidence is in the final checkpoint.
