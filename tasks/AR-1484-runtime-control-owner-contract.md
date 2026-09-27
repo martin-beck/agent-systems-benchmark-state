@@ -11,7 +11,7 @@
   "id": "AR-1484",
   "next_action": "Publish exact signed head f2eab98d0cb0c09c2d84c109d71c5ddbedc782fa, monitor required CI, merge only all green.",
   "observed_branch": "feature/ar-1484-runtime-control-owner-contract",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "f2eab98d0cb0c09c2d84c109d71c5ddbedc782fa",
   "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1484-runtime-control-owner-contract.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define stable runtime/control process-owner lifecycle and opaque handoff contract.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Runtime/control process-owner contract",
-  "updated_at": "2026-09-27T12:20:08+00:00",
+  "updated_at": "2026-09-27T12:20:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1484-runtime-control-owner-contract"
 }
 ---
