@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run the complete qualified literature workload matrix beside built-in software-engineering workloads.",
-  "task_revision": 120,
+  "task_revision": 121,
   "title": "Literature workload campaign integration",
-  "updated_at": "2026-09-27T07:19:50+00:00",
+  "updated_at": "2026-09-27T07:19:54+00:00",
   "worktree_key": ""
 }
 ---
@@ -403,3 +403,6 @@ tasks or require any live provider.
   1a5a3d9e988cbdca5a4a409ba6cf72c30bb055a37ab179ea4c4dc44a09ca6827.
 
 - 2026-09-27T07:19:50+00:00: Heartbeat by ar1332-record-replay-luna56.
+
+- 2026-09-27T07:19:54+00:00: Recorded command exit 1; command argv SHA-256
+  20a3b5c9a22f01eaf717c06542061b448b2010507f13315f3dd8d682a6ec62ac.
