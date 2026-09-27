@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1374-cli-live-dispatch",
   "checkpoint_commit": "4ee5a4ed843c7dd7dda0b92dbe392f3787b4039f",
-  "claim_expires": "",
+  "claim_expires": "2026-09-27T13:14:11+00:00",
   "depends_on": [
     "AR-1373",
     "AR-1339",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1374-cli-live-dispatch",
   "observed_dirty": 0,
   "observed_head": "363b21f81d5c5ab364c2e2a923bd82676feaf343",
-  "owner": "",
+  "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1374-cli-live-dispatch.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Consume authenticated runtime receipts in production asb run and sweep dispatch.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Production live-provider dispatch",
-  "updated_at": "2026-09-27T11:14:08+00:00",
+  "updated_at": "2026-09-27T11:14:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1374-cli-live-dispatch"
 }
 ---
@@ -154,3 +154,5 @@ reachability.
 - 2026-09-27T11:14:08+00:00: Current protected main 59323f41 includes AR-1473 private
   RuntimeOwnedEnrollmentSource, but normal CLI run/sweep still have no control/runtime construction
   path; resume bounded re-audit to record exact remaining adapter gap.
+
+- 2026-09-27T11:14:11+00:00: Claimed by ar1332-record-replay-luna56.
