@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #355 | `feature/ar-1426-evolving-literature-window-refresh@73b5fd1d14fa` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: add evolving workload refresh manifests |
+| #355 | `feature/ar-1426-evolving-literature-window-refresh@73b5fd1d14fa` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: add evolving workload refresh manifests |
 
 ## Recent workflows
 
@@ -20,7 +20,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36311969645 | `73b5fd1d14fa` | pull_request | Huawei MIT source headers | completed:success |
 | 36311969636 | `73b5fd1d14fa` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 36311969631 | `73b5fd1d14fa` | pull_request | Repository quality | in_progress:- |
-| 36311969616 | `73b5fd1d14fa` | pull_request | Formal assurance | in_progress:- |
+| 36311969616 | `73b5fd1d14fa` | pull_request | Formal assurance | completed:success |
 | 36311969615 | `73b5fd1d14fa` | pull_request | Fault assurance | completed:success |
 | 36311969606 | `73b5fd1d14fa` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36311969599 | `73b5fd1d14fa` | pull_request | Hosted portability and native qualification | completed:success |
