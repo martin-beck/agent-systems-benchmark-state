@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1488-owner-backed-user-journey",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-27T16:38:22+00:00",
   "depends_on": [
     "AR-1441",
     "AR-1442",
@@ -15,15 +15,15 @@
   "observed_branch": "feature/ar-1488-owner-backed-user-journey",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1488-owner-backed-user-journey.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Owner-backed first-customer user journey",
-  "updated_at": "2026-09-27T14:38:20+00:00",
+  "updated_at": "2026-09-27T14:38:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1488-owner-backed-user-journey"
 }
 ---
@@ -40,3 +40,5 @@ live provider.
 - 2026-09-27T14:38:20+00:00: Dependencies AR-1441, AR-1442, AR-1450, AR-1455, and AR-1487 are done.
   Promote ASB-only owner-backed first-customer install/setup/run/sweep/replay/evidence
   qualification; no asb-tui or live provider.
+
+- 2026-09-27T14:38:22+00:00: Claimed by ar1332-record-replay-luna56.

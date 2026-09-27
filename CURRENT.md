@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1488](tasks/AR-1488-owner-backed-user-journey.md): Owner-backed first-customer user journey | Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey. | Promote and claim, then qualify the owner-backed install/setup/run/sweep/replay/evidence journey on current protected main. | - |
+| P0 | [AR-1488](tasks/AR-1488-owner-backed-user-journey.md): Owner-backed first-customer user journey | Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey. | Promote and claim, then qualify the owner-backed install/setup/run/sweep/replay/evidence journey on current protected main. | ar1332-record-replay-luna56 |
 
 ## Blocked
 

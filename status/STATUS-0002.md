@@ -161,11 +161,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1488](../tasks/AR-1488-owner-backed-user-journey.md): Owner-backed first-customer user journey | Unclaimed | Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey. | Promote and claim, then qualify the owner-backed install/setup/run/sweep/replay/evidence journey on current protected main. |
+| P0 | [AR-1488](../tasks/AR-1488-owner-backed-user-journey.md): Owner-backed first-customer user journey | ar1332-record-replay-luna56 | Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey. | Promote and claim, then qualify the owner-backed install/setup/run/sweep/replay/evidence journey on current protected main. |
 
 ### Blocked (73)
 
