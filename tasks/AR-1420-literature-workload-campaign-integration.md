@@ -10,7 +10,7 @@
     "AR-1333"
   ],
   "id": "AR-1420",
-  "next_action": "Monitor PR #350 exact head 8966e44 checks; merge only after every required check is green, then verify all post-merge workflows.",
+  "next_action": "Continue monitoring PR #350 exact head 8966e44; merge only after all 13 required checks are terminal SUCCESS.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run the complete qualified literature workload matrix beside built-in software-engineering workloads.",
-  "task_revision": 67,
+  "task_revision": 68,
   "title": "Literature workload campaign integration",
-  "updated_at": "2026-09-27T07:05:40+00:00",
+  "updated_at": "2026-09-27T07:05:54+00:00",
   "worktree_key": ""
 }
 ---
@@ -238,3 +238,9 @@ tasks or require any live provider.
   20a3b5c9a22f01eaf717c06542061b448b2010507f13315f3dd8d682a6ec62ac.
 
 - 2026-09-27T07:05:40+00:00: Heartbeat by ar1332-record-replay-luna56.
+
+- 2026-09-27T07:05:54+00:00: PR #350 exact-head recheck is running after deterministic
+  pinned-rustfmt repair. Current named rollup: Huawei and AWQ PASS; retained faults PASS; bounded
+  fuzz, credential-free, Kani, Loom/state, policy/coverage/supply-chain, AArch64, platform evidence,
+  TLC/Alloy, matcher/SLO, Rust pending. gh pr checks --watch returned exit 8 because checks were
+  still pending; observation status, not a gate failure. Heartbeat renewed for 120 minutes.

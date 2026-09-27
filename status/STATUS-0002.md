@@ -152,7 +152,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1420](../tasks/AR-1420-literature-workload-campaign-integration.md): Literature workload campaign integration | ar1332-record-replay-luna56 | Run the complete qualified literature workload matrix beside built-in software-engineering workloads. | Monitor PR #350 exact head 8966e44 checks; merge only after every required check is green, then verify all post-merge workflows. |
+| P1 | [AR-1420](../tasks/AR-1420-literature-workload-campaign-integration.md): Literature workload campaign integration | ar1332-record-replay-luna56 | Run the complete qualified literature workload matrix beside built-in software-engineering workloads. | Continue monitoring PR #350 exact head 8966e44; merge only after all 13 required checks are terminal SUCCESS. |
 
 ### Blocked (71)
 
