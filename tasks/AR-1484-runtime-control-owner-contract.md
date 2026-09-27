@@ -9,7 +9,7 @@
     "AR-1480"
   ],
   "id": "AR-1484",
-  "next_action": "Monitor PR #358 exact head 7ce533ea9b0524c5b317cc2db8fad0aff8ecedc3 until all required checks are SUCCESS; merge only then.",
+  "next_action": "Merge PR #358 normally, then monitor eight exact-main post-merge workflows before release.",
   "observed_branch": "feature/ar-1484-runtime-control-owner-contract",
   "observed_dirty": 0,
   "observed_head": "7ce533ea9b0524c5b317cc2db8fad0aff8ecedc3",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define stable runtime/control process-owner lifecycle and opaque handoff contract.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Runtime/control process-owner contract",
-  "updated_at": "2026-09-27T12:30:12+00:00",
+  "updated_at": "2026-09-27T12:30:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1484-runtime-control-owner-contract"
 }
 ---
@@ -144,3 +144,7 @@ authority.
 
 - 2026-09-27T12:30:12+00:00: Recorded command exit 0; command argv SHA-256
   6465c093ae36ec8adb4cbfff3a4cc0345e175a4ac1370aa32e02509c1ccade45.
+
+- 2026-09-27T12:30:39+00:00: PR #358 exact-head final matrix fully green: all 13 required checks
+  SUCCESS at signed head 7ce533ea9b0524c5b317cc2db8fad0aff8ecedc3; mergeStateStatus CLEAN.
+  Independent review and header-fix evidence recorded; ready for normal merge.

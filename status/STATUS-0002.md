@@ -160,7 +160,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1484](../tasks/AR-1484-runtime-control-owner-contract.md): Runtime/control process-owner contract | ar1332-record-replay-luna56 | Define stable runtime/control process-owner lifecycle and opaque handoff contract. | Monitor PR #358 exact head 7ce533ea9b0524c5b317cc2db8fad0aff8ecedc3 until all required checks are SUCCESS; merge only then. |
+| P0 | [AR-1484](../tasks/AR-1484-runtime-control-owner-contract.md): Runtime/control process-owner contract | ar1332-record-replay-luna56 | Define stable runtime/control process-owner lifecycle and opaque handoff contract. | Merge PR #358 normally, then monitor eight exact-main post-merge workflows before release. |
 
 ### Blocked (73)
 
