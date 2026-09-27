@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the owner-backed credential-free local/mock/replay first-customer journey.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Owner-backed first-customer qualification",
-  "updated_at": "2026-09-27T14:23:33+00:00",
+  "updated_at": "2026-09-27T14:24:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1487-owner-backed-qualification"
 }
 ---
@@ -211,3 +211,6 @@ runtime-owned CLI; it excludes live providers and asb-tui.
 - 2026-09-27T14:23:33+00:00: PR #367 exact head unchanged. Emulated AArch64 and Rust transitioned
   SUCCESS; 12 of 13 named checks terminal SUCCESS. Only Policy, coverage, and supply chain remains
   IN_PROGRESS; mergeState remains UNSTABLE.
+
+- 2026-09-27T14:24:38+00:00: Recorded command exit 0; command argv SHA-256
+  104e8ca5470cfb77bb7507c3b4a36b94f512b90759b0e0ceaa639cde3eb5f6b9.
