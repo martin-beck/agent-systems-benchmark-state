@@ -10,7 +10,7 @@
     "AR-1333"
   ],
   "id": "AR-1420",
-  "next_action": "Recheck PR #350 exact head 2884508 after provenance repair; merge only after every required check is terminal SUCCESS.",
+  "next_action": "Monitor the approved Rust retry and remaining PR #350 checks at exact head 2884508; merge only after all required checks are green.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run the complete qualified literature workload matrix beside built-in software-engineering workloads.",
-  "task_revision": 112,
+  "task_revision": 113,
   "title": "Literature workload campaign integration",
-  "updated_at": "2026-09-27T07:17:35+00:00",
+  "updated_at": "2026-09-27T07:17:54+00:00",
   "worktree_key": ""
 }
 ---
@@ -377,3 +377,10 @@ tasks or require any live provider.
 
 - 2026-09-27T07:17:35+00:00: Recorded command exit 8; command argv SHA-256
   20a3b5c9a22f01eaf717c06542061b448b2010507f13315f3dd8d682a6ec62ac.
+
+- 2026-09-27T07:17:54+00:00: Rust rerun 36302307481 initially failed only the known unrelated
+  state-root concurrency race in
+  control::tests::production_backend_runs_without_frontend_and_recovers_idempotency: 115 passed, 1
+  failed with control state root already owned. Approved one failed-workflow retry was launched;
+  retry job 108572843071 is pending. Emulated AArch64 and policy/coverage checks are also pending on
+  the same exact head. No code change for the race.

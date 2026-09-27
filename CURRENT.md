@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1420](tasks/AR-1420-literature-workload-campaign-integration.md): Literature workload campaign integration | Run the complete qualified literature workload matrix beside built-in software-engineering workloads. | Recheck PR #350 exact head 2884508 after provenance repair; merge only after every required check is terminal SUCCESS. | ar1332-record-replay-luna56 |
+| P1 | [AR-1420](tasks/AR-1420-literature-workload-campaign-integration.md): Literature workload campaign integration | Run the complete qualified literature workload matrix beside built-in software-engineering workloads. | Monitor the approved Rust retry and remaining PR #350 checks at exact head 2884508; merge only after all required checks are green. | ar1332-record-replay-luna56 |
 
 ## Blocked
 
