@@ -11,7 +11,7 @@
     "AR-1362"
   ],
   "id": "AR-1379",
-  "next_action": "Monitor PR #344 exact head 8e22be0; policy must pass with matching DCO trailer, then all required checks must be terminal SUCCESS before merge.",
+  "next_action": "Continue polling PR #344 exact head 8e22be0; Rust, emulated-aarch64, and Policy/coverage/supply-chain remain pending. Merge only after every named check terminal SUCCESS.",
   "observed_branch": "feature/ar-1379-live-dispatch-integration",
   "observed_dirty": 0,
   "observed_head": "8e22be0fb90169a96f268079d8435dfe053e9fb9",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate authenticated runtime live dispatch into asb run and sweep.",
-  "task_revision": 113,
+  "task_revision": 114,
   "title": "Production live dispatch integration",
-  "updated_at": "2026-09-27T02:59:56+00:00",
+  "updated_at": "2026-09-27T03:00:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1379-live-dispatch-integration"
 }
 ---
@@ -362,3 +362,8 @@ verified through the completed gates.
 
 - 2026-09-27T02:59:56+00:00: Recorded command exit 8; command argv SHA-256
   a91c4272839ebb8d62b277b17ab68e00a0e36aee9d398c1f9f2541004fdf4aa2.
+
+- 2026-09-27T03:00:11+00:00: Exact-head poll: base 363b21f, head 8e22be0, OPEN/UNSTABLE. Passed AWQ
+  shadow, Huawei headers, Kani, Loom, matcher/SLO, platform evidence, retained faults, TLC/Alloy,
+  bounded fuzz. Rust, emulated aarch64, and Policy/coverage/supply chain pending; no merge
+  attempted.
