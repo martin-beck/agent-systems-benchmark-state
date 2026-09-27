@@ -149,7 +149,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1474](../tasks/AR-1474-runtime-authority-input-resolver.md): Runtime-owned authority-input resolver | ar1332-record-replay-luna56 | Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority. | Monitor new exact-head CI for PR #345 at c21d1ce; merge only after all 12 required checks are SUCCESS. |
+| P0 | [AR-1474](../tasks/AR-1474-runtime-authority-input-resolver.md): Runtime-owned authority-input resolver | ar1332-record-replay-luna56 | Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority. | Create a narrow successor to raise clean CI workspace line coverage from 89.88&#37; to at least 90&#37;; do not waive coverage or merge PR #345. Preserve control state-root race as unrelated transient evidence. |
 
 ### Blocked (70)
 
@@ -512,4 +512,3 @@
 | P1 | [AR-0805](../tasks/AR-0805-tui-run-control.md): Add terminal run control and status | Unclaimed | Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI. | Complete; no further action. |
 | P1 | [AR-0806](../tasks/AR-0806-tui-history-analysis.md): Add terminal history and analysis | Unclaimed | Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI. | Repair merge DCO trailer and add a signed normal ancestry commit; rerun exact-main gates. |
 | P1 | [AR-0812](../tasks/AR-0812-modern-terminal-rendering.md): Deliver modern adaptive terminal rendering | Unclaimed | Use modern terminal capabilities for polished visual fidelity with robust SSH/multiplexer fallbacks. | Implement capability-aware premium rendering, channel detection, and resize-safe responsive layouts. |
-| P1 | [AR-0813](../tasks/AR-0813-remote-control-transport.md): Add secure remote control transport | Unclaimed | Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client. | AR-1259 remains open after unsigned recovery merge 8b81be4; await repository-level signed protected-main recovery and exact-main policy before closing AR-0813. |

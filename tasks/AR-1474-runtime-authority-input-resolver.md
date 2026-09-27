@@ -10,7 +10,7 @@
     "AR-1379"
   ],
   "id": "AR-1474",
-  "next_action": "Monitor new exact-head CI for PR #345 at c21d1ce; merge only after all 12 required checks are SUCCESS.",
+  "next_action": "Create a narrow successor to raise clean CI workspace line coverage from 89.88% to at least 90%; do not waive coverage or merge PR #345. Preserve control state-root race as unrelated transient evidence.",
   "observed_branch": "feature/ar-1474-runtime-authority-input-resolver",
   "observed_dirty": 0,
   "observed_head": "c21d1ce5d1eca0ad80c28f0a0c5ebda5fd6a3603",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority.",
-  "task_revision": 155,
+  "task_revision": 156,
   "title": "Runtime-owned authority-input resolver",
-  "updated_at": "2026-09-27T05:06:09+00:00",
+  "updated_at": "2026-09-27T05:06:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1474-runtime-authority-input-resolver"
 }
 ---
@@ -482,3 +482,11 @@ authority, privacy, lifecycle, formal, or egress contracts.
 
 - 2026-09-27T05:06:09+00:00: Recorded command exit 0; command argv SHA-256
   1ded01f7a285c8a073b2249b299a9f57275c118a711e7d41a20133bad5f6f362.
+
+- 2026-09-27T05:06:37+00:00: Fresh exact-head CI for synchronized c21d1ce terminally failed Policy,
+  coverage, and supply chain job 108554587959: workspace TOTAL 98431 lines, 11780 missed, 89.88%;
+  cargo llvm-cov --locked --workspace --all-targets --fail-under-lines 90 exited 1. Local clean
+  coverage attempt was interrupted by known unrelated
+  control::tests::production_backend_runs_without_frontend_and_recovers_idempotency state-root
+  ownership race (115 passed, 1 failed, exit 101), so it is not coverage evidence. Do not merge;
+  create narrow coverage repair successor.
