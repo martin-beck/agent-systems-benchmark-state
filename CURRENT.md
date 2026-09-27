@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1379](tasks/AR-1379-live-dispatch-integration.md): Production live dispatch integration | Integrate authenticated runtime live dispatch into asb run and sweep. | Continue polling PR #344 exact head 8e22be0; Rust, emulated-aarch64, and Policy/coverage/supply-chain remain pending. Merge only after every named check terminal SUCCESS. | ar1379-live-dispatch-luna56 |
+| P0 | [AR-1379](tasks/AR-1379-live-dispatch-integration.md): Production live dispatch integration | Integrate authenticated runtime live dispatch into asb run and sweep. | Continue polling PR #344 exact head 8e22be0; Rust, emulated-aarch64, and Policy/coverage/supply-chain workflows are in_progress. Merge only after all named checks terminal SUCCESS. | ar1379-live-dispatch-luna56 |
 
 ## Blocked
 

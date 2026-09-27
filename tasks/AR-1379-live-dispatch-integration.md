@@ -11,7 +11,7 @@
     "AR-1362"
   ],
   "id": "AR-1379",
-  "next_action": "Continue polling PR #344 exact head 8e22be0; Rust, emulated-aarch64, and Policy/coverage/supply-chain remain pending. Merge only after every named check terminal SUCCESS.",
+  "next_action": "Continue polling PR #344 exact head 8e22be0; Rust, emulated-aarch64, and Policy/coverage/supply-chain workflows are in_progress. Merge only after all named checks terminal SUCCESS.",
   "observed_branch": "feature/ar-1379-live-dispatch-integration",
   "observed_dirty": 0,
   "observed_head": "8e22be0fb90169a96f268079d8435dfe053e9fb9",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate authenticated runtime live dispatch into asb run and sweep.",
-  "task_revision": 120,
+  "task_revision": 121,
   "title": "Production live dispatch integration",
-  "updated_at": "2026-09-27T03:03:49+00:00",
+  "updated_at": "2026-09-27T03:04:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1379-live-dispatch-integration"
 }
 ---
@@ -385,3 +385,10 @@ verified through the completed gates.
 
 - 2026-09-27T03:03:49+00:00: Recorded command exit 0; command argv SHA-256
   48f96c466d03b923288745e53b00d4cf0011c091374a52e8b9264409b2f330ed.
+
+- 2026-09-27T03:04:15+00:00: Exact-head poll confirms base 363b21f, head 8e22be0, OPEN/UNSTABLE.
+  Named checks remain passed: AWQ shadow, Huawei headers, Kani, Loom, matcher/SLO, platform
+  evidence, retained faults, TLC/Alloy, bounded fuzz. Rust run 36289923746, emulated-aarch64 run
+  36289923787, and repository quality run 36289923770 are in_progress; gh checks displays pending.
+  One transient coordinator LOCK_TIMEOUT occurred while inspecting repository quality, then retry
+  succeeded. No merge attempted.
