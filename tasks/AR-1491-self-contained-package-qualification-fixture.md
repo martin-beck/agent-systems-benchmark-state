@@ -2,7 +2,7 @@
 {
   "branch": "qualification/ar-1491-self-contained-package-qualification-fixture",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-27T17:42:47+00:00",
+  "claim_expires": "2026-09-27T17:42:54+00:00",
   "depends_on": [
     "AR-1461",
     "AR-1462",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a self-contained non-production package qualification fixture using the offline verifier test-key pattern.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Self-contained package qualification fixture",
-  "updated_at": "2026-09-27T15:42:47+00:00",
+  "updated_at": "2026-09-27T15:42:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1491-self-contained-package-qualification-fixture"
 }
 ---
@@ -45,3 +45,5 @@ No live-provider or release-signing input may be fabricated.
   successor for missing external package inputs.
 
 - 2026-09-27T15:42:47+00:00: Claimed by ar1332-record-replay-luna56.
+
+- 2026-09-27T15:42:54+00:00: Heartbeat by ar1332-record-replay-luna56.
