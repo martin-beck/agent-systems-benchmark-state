@@ -143,7 +143,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1379](../tasks/AR-1379-live-dispatch-integration.md): Production live dispatch integration | ar1379-live-dispatch-luna56 | Integrate authenticated runtime live dispatch into asb run and sweep. | Monitor all seven post-merge workflows on main SHA 1e2c591; release AR-1379 only after all seven terminal SUCCESS with exact SHA. |
+| P0 | [AR-1379](../tasks/AR-1379-live-dispatch-integration.md): Production live dispatch integration | ar1379-live-dispatch-luna56 | Integrate authenticated runtime live dispatch into asb run and sweep. | Monitor rerun of post-merge Rust workflow and remaining six workflows at exact main SHA 1e2c591; release only after all seven terminal SUCCESS. |
 
 ### Blocked (69)
 

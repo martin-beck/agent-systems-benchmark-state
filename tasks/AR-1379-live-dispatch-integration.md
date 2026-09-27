@@ -11,7 +11,7 @@
     "AR-1362"
   ],
   "id": "AR-1379",
-  "next_action": "Monitor all seven post-merge workflows on main SHA 1e2c591; release AR-1379 only after all seven terminal SUCCESS with exact SHA.",
+  "next_action": "Monitor rerun of post-merge Rust workflow and remaining six workflows at exact main SHA 1e2c591; release only after all seven terminal SUCCESS.",
   "observed_branch": "feature/ar-1379-live-dispatch-integration",
   "observed_dirty": 0,
   "observed_head": "8e22be0fb90169a96f268079d8435dfe053e9fb9",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate authenticated runtime live dispatch into asb run and sweep.",
-  "task_revision": 134,
+  "task_revision": 135,
   "title": "Production live dispatch integration",
-  "updated_at": "2026-09-27T03:10:00+00:00",
+  "updated_at": "2026-09-27T03:10:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1379-live-dispatch-integration"
 }
 ---
@@ -434,3 +434,8 @@ verified through the completed gates.
 
 - 2026-09-27T03:10:00+00:00: Recorded command exit 0; command argv SHA-256
   93f1a5cfeef23be5751cb14c1ddb9dce3180f64eaa7d7446b408a484333049dc.
+
+- 2026-09-27T03:10:26+00:00: Post-merge Rust workflow 36290394972 failed in unrelated pre-existing
+  asb-metrics fixture race: bounded_tool_boundary_covers_success_denial_timeout_and_cleanup at
+  kernel.rs:651 observed ProbeRejected/None instead of Some(12500000). Exact PR Rust check had
+  passed. Preserved failure; no product changes; reran workflow via gh run rerun 36290394972.
