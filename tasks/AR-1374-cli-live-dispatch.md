@@ -18,11 +18,11 @@
   "plan": "../plans/AR-1374-cli-live-dispatch.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Consume authenticated runtime receipts in production asb run and sweep dispatch.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Production live-provider dispatch",
-  "updated_at": "2026-09-24T02:35:32+00:00",
+  "updated_at": "2026-09-27T01:28:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1374-cli-live-dispatch"
 }
 ---
@@ -62,3 +62,7 @@ and teardown, and fail-closed denial of unapproved external traffic remain requi
 contracts. Existing live-provider dependency edges describe production integration
 ordering only and must not be used to block local qualification or to claim external
 reachability.
+
+- 2026-09-27T01:28:49+00:00: All declared dependencies AR-1373, AR-1339, AR-1340, and AR-1328 are
+  done; AR-1363/1471 now provide authenticated control receipt binding. Resume runtime-owned
+  dispatch audit.
