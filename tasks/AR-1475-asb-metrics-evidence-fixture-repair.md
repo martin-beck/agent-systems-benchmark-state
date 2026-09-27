@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1475-asb-metrics-evidence-fixture-repair",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "02aa58f1490237190f67d0a225f352473be5b3d8",
   "claim_expires": "2026-09-27T06:00:37+00:00",
   "depends_on": [
     "AR-1200",
@@ -9,7 +9,7 @@
     "AR-1472"
   ],
   "id": "AR-1475",
-  "next_action": "Promote after validating the repair dependencies, then reproduce and fix the asb-metrics classification failure on an isolated worktree.",
+  "next_action": "Publish repair PR from signed exact head and monitor required CI.",
   "observed_branch": "feature/ar-1475-asb-metrics-evidence-fixture-repair",
   "observed_dirty": 0,
   "observed_head": "02aa58f1490237190f67d0a225f352473be5b3d8",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the deterministic ProbeRejected versus MalformedEvidence fixture failure blocking PR #345.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Repair asb-metrics evidence fixture classification",
-  "updated_at": "2026-09-27T04:00:37+00:00",
+  "updated_at": "2026-09-27T04:00:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1475-asb-metrics-evidence-fixture-repair"
 }
 ---
@@ -80,3 +80,8 @@ classification or fixture behavior before changing code.
   d1839ee6c0e556385ce24834f8d7ef08fc30d8e75e3fff8f28ab9d914abf1149.
 
 - 2026-09-27T04:00:37+00:00: Heartbeat by ar1332-record-replay-luna56.
+
+- 2026-09-27T04:00:50+00:00: Protected-main reproduction passed serially and 10 repeated focused
+  runs; full package tests passed. Added bounded retry (3 attempts, 10ms) only for WouldBlock
+  process-spawn contention, preserving malformed/unsafe classification. Signed+DCO head
+  02aa58f1490237190f67d0a225f352473be5b3d8; fmt, focused/full asb-metrics tests, clippy pass.
