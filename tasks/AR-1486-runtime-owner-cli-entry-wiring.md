@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1486-runtime-owner-cli-entry-wiring",
   "checkpoint_commit": "79f88d3ca03120fd7d69f67cb292c96051a5e770",
-  "claim_expires": "2026-09-27T15:53:32+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1480",
     "AR-1484",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1486-runtime-owner-cli-entry-wiring",
   "observed_dirty": 0,
   "observed_head": "a5f9ad27b967371511b0981aad29d3aa65a7fcab",
-  "owner": "ar1332-record-replay-luna56",
+  "owner": "",
   "plan": "../plans/AR-1486-runtime-owner-cli-entry-wiring.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Wire the runtime-owned local/mock process owner into ordinary CLI run and sweep.",
-  "task_revision": 56,
+  "task_revision": 57,
   "title": "Runtime-owner CLI entry wiring",
-  "updated_at": "2026-09-27T13:54:18+00:00",
+  "updated_at": "2026-09-27T13:54:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1486-cli-owner-wiring"
 }
 ---
@@ -204,3 +204,8 @@ authority.
   portability/native 36323460175 SUCCESS; Formal assurance 36323460271 SUCCESS; Rust verification
   36323460223 SUCCESS; Fault assurance 36323460250 SUCCESS; Huawei MIT source headers 36323460242
   SUCCESS. All eight terminal green.
+
+- 2026-09-27T13:54:20+00:00: Done: merged PR #360 at 79f88d3ca03120fd7d69f67cb292c96051a5e770 from
+  signed/DCO a5f9ad27; all 13 PR checks and all eight exact-main post-merge workflows green.
+  Runtime-owned local/mock owner now supplies bounded run/sweep attempts, enforces
+  enrollment/teardown, and fails closed on reuse; no live provider/asb-tui.
