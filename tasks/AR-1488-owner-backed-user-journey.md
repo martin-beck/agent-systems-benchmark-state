@@ -13,7 +13,7 @@
   "id": "AR-1488",
   "next_action": "Promote and claim, then qualify the owner-backed install/setup/run/sweep/replay/evidence journey on current protected main.",
   "observed_branch": "feature/ar-1488-owner-backed-user-journey",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "0dc766a481788783a8748a5c1f1e24835c1174c3",
   "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1488-owner-backed-user-journey.md",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Owner-backed first-customer user journey",
-  "updated_at": "2026-09-27T14:40:35+00:00",
+  "updated_at": "2026-09-27T14:40:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1488-owner-backed-user-journey"
 }
 ---
