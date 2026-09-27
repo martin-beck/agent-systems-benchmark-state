@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**508 ARs tracked** across 5 active status categories.
+**509 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 73 |
-| **Planned** | Defined work awaiting promotion or dependencies | 51 |
+| **Planned** | Defined work awaiting promotion or dependencies | 52 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 364 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -580,6 +580,7 @@ flowchart LR
         AR_1485["AR-1485 - Done"]:::status_done
         AR_1486["AR-1486 - Done"]:::status_done
         AR_1487["AR-1487 - Done"]:::status_done
+        AR_1488["AR-1488 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1834,10 +1835,12 @@ flowchart LR
     AR_1437 --> AR_1447
     AR_1441 --> AR_1442
     AR_1441 --> AR_1446
+    AR_1441 --> AR_1488
     AR_1442 --> AR_1338
     AR_1442 --> AR_1443
     AR_1442 --> AR_1446
     AR_1442 --> AR_1447
+    AR_1442 --> AR_1488
     AR_1443 --> AR_1331
     AR_1443 --> AR_1338
     AR_1443 --> AR_1444
@@ -1858,6 +1861,7 @@ flowchart LR
     AR_1448 --> AR_1455
     AR_1450 --> AR_1455
     AR_1450 --> AR_1487
+    AR_1450 --> AR_1488
     AR_1451 --> AR_1452
     AR_1451 --> AR_1454
     AR_1452 --> AR_1453
@@ -1866,6 +1870,7 @@ flowchart LR
     AR_1453 --> AR_1457
     AR_1453 --> AR_1458
     AR_1455 --> AR_1487
+    AR_1455 --> AR_1488
     AR_1456 --> AR_1333
     AR_1456 --> AR_1458
     AR_1456 --> AR_1460
@@ -1906,6 +1911,7 @@ flowchart LR
     AR_1484 --> AR_1486
     AR_1485 --> AR_1486
     AR_1486 --> AR_1487
+    AR_1487 --> AR_1488
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
