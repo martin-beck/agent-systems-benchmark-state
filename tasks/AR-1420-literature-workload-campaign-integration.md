@@ -18,11 +18,11 @@
   "plan": "../plans/AR-1420.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Run the complete qualified literature workload matrix beside built-in software-engineering workloads.",
-  "task_revision": 139,
+  "task_revision": 140,
   "title": "Literature workload campaign integration",
-  "updated_at": "2026-09-27T08:14:17+00:00",
+  "updated_at": "2026-09-27T08:15:16+00:00",
   "worktree_key": ""
 }
 ---
@@ -476,3 +476,6 @@ tasks or require any live provider.
   crates/asb-agents/src/gemini.rs:2308 (187 passed, 1 failed; elapsed <1s assertion). AR-1479 serial
   guards cannot affect unchanged PR head. Next action: synchronize PR #350 with repaired main or
   create narrow follow-up carrying the workflow guard, then rerun exact-head CI before merge.
+
+- 2026-09-27T08:15:16+00:00: AR-1479 is merged and green; resume to synchronize PR #350 with
+  repaired main workflow guard and requalify exact head.
