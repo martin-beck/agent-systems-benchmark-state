@@ -10,7 +10,7 @@
     "AR-1492"
   ],
   "id": "AR-1493",
-  "next_action": "Independent review complete; publish exact signed head 6f5dfd5, monitor required CI, merge only all green, then verify post-merge gates. External authority remains unavailable.",
+  "next_action": "Monitor PR #372 exact head 6f5dfd5; merge only after every required check and independent review are green, then verify post-merge workflows.",
   "observed_branch": "release/ar-1493-release-authority-enrollment-handoff",
   "observed_dirty": 0,
   "observed_head": "6f5dfd5c3292fd177a8f627c661e68ef30c40c65",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define and validate the external release-authority enrollment and signed-bundle verification handoff.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Release-authority enrollment handoff",
-  "updated_at": "2026-09-27T16:59:52+00:00",
+  "updated_at": "2026-09-27T17:00:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1493-release-authority-enrollment-handoff"
 }
 ---
@@ -106,3 +106,9 @@ and preserve AR-1490 as the customer-release blocker.
 
 - 2026-09-27T16:59:52+00:00: Recorded command exit 0; command argv SHA-256
   6daaf30e44aa3ce6c5d4418a43d5daf6bd2f9a339087430d658652bd62cdb1dc.
+
+- 2026-09-27T17:00:19+00:00: Published exact SSH-signed/DCO head
+  6f5dfd5c3292fd177a8f627c661e68ef30c40c65 as PR #372:
+  https://github.com/martin-beck/agent-systems-benchmark/pull/372. Scope is three ASB files only; no
+  asb-tui/provider changes. External authority remains operator-supplied and AR-1490 remains blocked
+  until signed customer package inputs exist.

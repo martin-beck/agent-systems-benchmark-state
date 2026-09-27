@@ -170,7 +170,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1493](../tasks/AR-1493-release-authority-enrollment-handoff.md): Release-authority enrollment handoff | ar1332-record-replay-luna56 | Define and validate the external release-authority enrollment and signed-bundle verification handoff. | Independent review complete; publish exact signed head 6f5dfd5, monitor required CI, merge only all green, then verify post-merge gates. External authority remains unavailable. |
+| P0 | [AR-1493](../tasks/AR-1493-release-authority-enrollment-handoff.md): Release-authority enrollment handoff | ar1332-record-replay-luna56 | Define and validate the external release-authority enrollment and signed-bundle verification handoff. | Monitor PR #372 exact head 6f5dfd5; merge only after every required check and independent review are green, then verify post-merge workflows. |
 
 ### Blocked (74)
 
