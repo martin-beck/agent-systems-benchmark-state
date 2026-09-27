@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1335-credential-free-benchmark-ci",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "16e4bf8405b98c229bda49f82253f21784d82d51",
   "claim_expires": "2026-09-27T08:24:58+00:00",
   "depends_on": [
     "AR-1333",
     "AR-1334"
   ],
   "id": "AR-1335",
-  "next_action": "Add the required credential-free CI stage that exercises the complete benchmark path with loopback and synthetic doubles, no secrets, no egress and no network, keeping the 90% coverage floor.",
+  "next_action": "Run independent diff review and publish signed exact head through handoffctl.",
   "observed_branch": "feature/ar-1335-credential-free-benchmark-ci",
   "observed_dirty": 0,
   "observed_head": "16e4bf8405b98c229bda49f82253f21784d82d51",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the required credential-free CI stage for the complete benchmark path.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Credential-free CI stage for the benchmark path",
-  "updated_at": "2026-09-27T06:24:58+00:00",
+  "updated_at": "2026-09-27T06:25:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1335-credential-free-benchmark-ci"
 }
 ---
@@ -189,3 +189,10 @@ reachability.
   d2c043202a90139076cc596c6fdab8558b60343eb7e299c46d415c5e60f9df06.
 
 - 2026-09-27T06:24:58+00:00: Heartbeat by ar1332-record-replay-luna56.
+
+- 2026-09-27T06:25:07+00:00: Implemented .github/workflows/credential-free-benchmark.yml. Required
+  stage pins checkout/toolchain, clears provider credentials, asserts deny-network environment, runs
+  provider-selection plan/run/sweep/compare, capture/replay, sealing/campaign lifecycle and hostile
+  fail-closed tests, then full asb-cli tests. Focused complete-path test passed; full asb-cli suite
+  passed 116/116; cargo fmt, diff check, and actionlint diagnostics [] passed. Signed+DCO commit
+  16e4bf8405b98c229bda49f82253f21784d82d51.

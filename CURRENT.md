@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1335](tasks/AR-1335-credential-free-benchmark-ci.md): Credential-free CI stage for the benchmark path | Add the required credential-free CI stage for the complete benchmark path. | Add the required credential-free CI stage that exercises the complete benchmark path with loopback and synthetic doubles, no secrets, no egress and no network, keeping the 90% coverage floor. | ar1332-record-replay-luna56 |
+| P1 | [AR-1335](tasks/AR-1335-credential-free-benchmark-ci.md): Credential-free CI stage for the benchmark path | Add the required credential-free CI stage for the complete benchmark path. | Run independent diff review and publish signed exact head through handoffctl. | ar1332-record-replay-luna56 |
 
 ## Blocked
 
