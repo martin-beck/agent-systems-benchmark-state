@@ -12,7 +12,7 @@
   "id": "AR-1474",
   "next_action": "Await repository-quality rerun 36292250172; merge PR #345 only after SUCCESS.",
   "observed_branch": "feature/ar-1474-runtime-authority-input-resolver",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "56d284c2d292163e2724318b0443f53211b4f9e4",
   "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1474-runtime-authority-input-resolver.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority.",
-  "task_revision": 130,
+  "task_revision": 131,
   "title": "Runtime-owned authority-input resolver",
-  "updated_at": "2026-09-27T04:58:45+00:00",
+  "updated_at": "2026-09-27T04:58:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1474-runtime-authority-input-resolver"
 }
 ---
