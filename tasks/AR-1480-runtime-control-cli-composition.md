@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compose authenticated runtime enrollment into opaque normal CLI run and sweep dispatch.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Runtime-control CLI composition",
-  "updated_at": "2026-09-27T11:32:52+00:00",
+  "updated_at": "2026-09-27T11:33:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1480-runtime-control-cli-composition"
 }
 ---
@@ -123,3 +123,6 @@ and never gates local qualification.
   test/clippy/rustdoc/release build, repository policy/contract/signature/verify tests, provenance
   test, and diff check exited 0. Signed+DCO commit 440a06427d6e6fe2aacaebc2a50c5f924527dd04 verified
   with SSH signature.
+
+- 2026-09-27T11:33:24+00:00: Recorded command exit 0; command argv SHA-256
+  b1707df17cb53b6b197afd0b19bcff87c5a010c73a97a7713f682652ea99c53f.
