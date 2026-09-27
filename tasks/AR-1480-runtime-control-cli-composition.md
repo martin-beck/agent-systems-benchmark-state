@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1480-runtime-control-cli-composition",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-27T13:17:30+00:00",
   "depends_on": [
     "AR-1473",
     "AR-1472"
@@ -12,15 +12,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1480-runtime-control-cli-composition.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Compose authenticated runtime enrollment into opaque normal CLI run and sweep dispatch.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Runtime-control CLI composition",
-  "updated_at": "2026-09-27T11:17:28+00:00",
+  "updated_at": "2026-09-27T11:17:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1480-runtime-control-cli-composition"
 }
 ---
@@ -35,3 +35,5 @@ and never gates local qualification.
 
 - 2026-09-27T11:17:28+00:00: AR-1473 and AR-1472 are durably done; promote dependency-safe CLI
   composition successor with no circular AR-1374/1375 edge.
+
+- 2026-09-27T11:17:30+00:00: Claimed by ar1332-record-replay-luna56.
