@@ -28,7 +28,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36331674447 | `5f4e286f051d` | push | Hosted portability and native qualification | completed:success |
 | 36331674445 | `5f4e286f051d` | push | Fault assurance | completed:success |
 | 36331674444 | `5f4e286f051d` | push | Credential-free benchmark path | completed:success |
-| 36331674435 | `5f4e286f051d` | push | Rust verification | in_progress:- |
+| 36331674435 | `5f4e286f051d` | push | Rust verification | completed:success |
 | 36331102740 | `b4f532821cfd` | pull_request | Formal assurance | completed:success |
 | 36331102639 | `b4f532821cfd` | pull_request | Rust verification | completed:success |
 | 36331102628 | `b4f532821cfd` | pull_request | Agent Workflow Quality shadow | completed:success |
