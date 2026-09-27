@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire the runtime-owned local/mock process owner into ordinary CLI run and sweep.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Runtime-owner CLI entry wiring",
-  "updated_at": "2026-09-27T13:16:33+00:00",
+  "updated_at": "2026-09-27T13:16:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1486-cli-owner-wiring"
 }
 ---
@@ -37,3 +37,6 @@ authority.
   bounded runtime-owner CLI wiring slice.
 
 - 2026-09-27T13:16:33+00:00: Claimed by ar1332-record-replay-luna56.
+
+- 2026-09-27T13:16:48+00:00: Recorded command exit 0; command argv SHA-256
+  85f6f5bdec1d3d5b02af978c751492fe38f43e95ace30556957b871bda11de63.
