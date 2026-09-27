@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect authenticated control receipts to runtime-owned CLI live dispatch without a dependency cycle.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Authenticated live-dispatch adapter",
-  "updated_at": "2026-09-27T01:43:02+00:00",
+  "updated_at": "2026-09-27T01:43:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1472-authenticated-live-dispatch-adapter"
 }
 ---
@@ -99,3 +99,6 @@ authority. Mandatory qualification is deterministic local/mock or replay.
 
 - 2026-09-27T01:43:02+00:00: Recorded command exit 0; command argv SHA-256
   83eea80a9d087ff8892cb2661bf0e6f7ab62f8c8288f14697126e2ebaafdf975.
+
+- 2026-09-27T01:43:50+00:00: Recorded command exit 0; command argv SHA-256
+  b49a90ee600c1023cee9ee9f9e8a4f9a06c53eef8c48d3932d88e482126c7c01.
