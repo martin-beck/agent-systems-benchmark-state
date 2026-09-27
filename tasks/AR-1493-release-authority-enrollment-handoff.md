@@ -2,7 +2,7 @@
 {
   "branch": "release/ar-1493-release-authority-enrollment-handoff",
   "checkpoint_commit": "e1be259c9abb2a901998d3ca9b82521edd3fa2f8",
-  "claim_expires": "2026-09-27T19:05:09+00:00",
+  "claim_expires": "2026-09-27T19:13:10+00:00",
   "depends_on": [
     "AR-1461",
     "AR-1462",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define and validate the external release-authority enrollment and signed-bundle verification handoff.",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Release-authority enrollment handoff",
-  "updated_at": "2026-09-27T17:13:01+00:00",
+  "updated_at": "2026-09-27T17:13:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1493-release-authority-enrollment-handoff"
 }
 ---
@@ -191,3 +191,5 @@ and preserve AR-1490 as the customer-release blocker.
   Post-merge runs launched on exact merge: Rust 36336026563, Repository Quality 36336026573, AArch64
   36336026554, Formal 36336026579, credential-free 36336026586, hosted 36336026588, fault
   36336026566 are IN_PROGRESS; Huawei 36336026608 SUCCESS.
+
+- 2026-09-27T17:13:10+00:00: Heartbeat by ar1332-record-replay-luna56.
