@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the deterministic ProbeRejected versus MalformedEvidence fixture failure blocking PR #345.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Repair asb-metrics evidence fixture classification",
-  "updated_at": "2026-09-27T03:59:36+00:00",
+  "updated_at": "2026-09-27T03:59:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1475-asb-metrics-evidence-fixture-repair"
 }
 ---
@@ -69,3 +69,6 @@ classification or fixture behavior before changing code.
 
 - 2026-09-27T03:59:36+00:00: Recorded command exit 0; command argv SHA-256
   b7619a2a3ac784eaab2808fa905f5ddcee7512ac7f56f225b40ddacab5967447.
+
+- 2026-09-27T03:59:52+00:00: Recorded command exit 0; command argv SHA-256
+  b696e93b9588e0cf4ced90f3a13fba6067e0475c0c7485a863c9f5100a38339f.
