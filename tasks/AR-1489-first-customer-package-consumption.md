@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Verify first-customer release package installation and owner-backed local/mock/replay consumption.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "First-customer package consumption",
-  "updated_at": "2026-09-27T15:31:43+00:00",
+  "updated_at": "2026-09-27T15:32:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1489-first-customer-package-consumption"
 }
 ---
@@ -175,4 +175,7 @@ touching asb-tui or requiring a live provider.
   d4b21b9fa84bddbff736766a979ee6bd6f7610dbdc4da1c43b6e9d69758f5d31.
 
 - 2026-09-27T15:31:43+00:00: Recorded command exit 0; command argv SHA-256
+  d4b21b9fa84bddbff736766a979ee6bd6f7610dbdc4da1c43b6e9d69758f5d31.
+
+- 2026-09-27T15:32:16+00:00: Recorded command exit 0; command argv SHA-256
   d4b21b9fa84bddbff736766a979ee6bd6f7610dbdc4da1c43b6e9d69758f5d31.
