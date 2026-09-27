@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| P1 | [AR-0803](../tasks/AR-0803-frontend-control-api.md): Define the frontend control API | Unclaimed | Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary. | Await coordinator authorization to integrate exact green PR #63 head 8d7d90014dbcf4df2f08be90b08392776d702a11; do not rewrite or merge meanwhile. |
 | P1 | [AR-0804](../tasks/AR-0804-tui-settings-wizard.md): Build the terminal settings wizard | Unclaimed | Guide users through agents, providers, workloads, resources, replay, metrics, and output settings. | Complete; no further action. |
 | P1 | [AR-0805](../tasks/AR-0805-tui-run-control.md): Add terminal run control and status | Unclaimed | Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI. | Complete; no further action. |
 | P1 | [AR-0806](../tasks/AR-0806-tui-history-analysis.md): Add terminal history and analysis | Unclaimed | Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI. | Repair merge DCO trailer and add a signed normal ancestry commit; rerun exact-main gates. |

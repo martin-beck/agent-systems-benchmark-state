@@ -10,7 +10,7 @@
     "AR-1416"
   ],
   "id": "AR-1424",
-  "next_action": "Monitor PR #353 exact head ff6f9a6 checks; merge only after all required checks green, then post-merge verify and release AR-1424.",
+  "next_action": "Merge PR #353 normally; verify merge SHA and all exact-main post-merge workflows, then release AR-1424 done.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make all locally executable literature workloads selectable and campaignable beside built-in fixtures.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Complete literature selector and local campaign matrix",
-  "updated_at": "2026-09-27T09:06:51+00:00",
+  "updated_at": "2026-09-27T09:07:24+00:00",
   "worktree_key": ""
 }
 ---
@@ -190,3 +190,8 @@ dataset downloads are never requirements for this AR.
 
 - 2026-09-27T09:06:51+00:00: Recorded command exit 0; command argv SHA-256
   d2b5b2de8470d2fd54b68fef1dbb4b5ce4ba6e1f96b51766213ce01260d61418.
+
+- 2026-09-27T09:07:24+00:00: Independent review passed for exact head
+  ff6f9a606707a22c65946c6354d0783e01f08e63: signed/DCO Exercism selector implementation plus
+  generated catalog parity repair, no provider/network/asb-tui dependency. All 13 required checks
+  SUCCESS, including Rust and policy/coverage/supply-chain.
