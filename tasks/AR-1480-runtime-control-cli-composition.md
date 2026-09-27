@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compose authenticated runtime enrollment into opaque normal CLI run and sweep dispatch.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Runtime-control CLI composition",
-  "updated_at": "2026-09-27T11:24:25+00:00",
+  "updated_at": "2026-09-27T11:24:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1480-runtime-control-cli-composition"
 }
 ---
@@ -70,3 +70,6 @@ and never gates local qualification.
   runtime-owned source remains private. Added hostile unavailable-source test and docs/workflow
   boundary note. After refreshing clean worktree to protected main 59323f41, focused runtime source
   and CLI fail-closed tests pass. Full workspace gates are currently running under handoffctl.
+
+- 2026-09-27T11:24:40+00:00: Recorded command exit 101; command argv SHA-256
+  e1c351c46494fcbac29ac31b75b8949233e665b6ae0d88686ef9580974dee8dc.
