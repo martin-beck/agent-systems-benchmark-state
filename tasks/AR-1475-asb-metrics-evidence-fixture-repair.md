@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1475-asb-metrics-evidence-fixture-repair",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-27T05:55:07+00:00",
+  "claim_expires": "2026-09-27T05:55:10+00:00",
   "depends_on": [
     "AR-1200",
     "AR-1379",
@@ -16,9 +16,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the deterministic ProbeRejected versus MalformedEvidence fixture failure blocking PR #345.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Repair asb-metrics evidence fixture classification",
-  "updated_at": "2026-09-27T03:55:07+00:00",
+  "updated_at": "2026-09-27T03:55:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1475-asb-metrics-evidence-fixture-repair"
 }
 ---
@@ -34,3 +34,5 @@ classification or fixture behavior before changing code.
   independent asb-metrics fixture repair.
 
 - 2026-09-27T03:55:07+00:00: Claimed by ar1332-record-replay-luna56.
+
+- 2026-09-27T03:55:10+00:00: Heartbeat by ar1332-record-replay-luna56.
