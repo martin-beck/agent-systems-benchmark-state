@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Raise exact hosted coverage above the enforced 90 percent floor for the authority resolver.",
-  "task_revision": 68,
+  "task_revision": 69,
   "title": "Cover authority resolver behavior",
-  "updated_at": "2026-09-27T05:29:58+00:00",
+  "updated_at": "2026-09-27T05:30:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1477-authority-resolver-coverage-tests"
 }
 ---
@@ -223,3 +223,6 @@ the coverage floor remains unchanged.
   108557527445, Rust 108557527581, AArch64 108557527366, matcher 108557527536, platform
   108557527477, faults 108557527680, fuzz 108557527715, Kani 108557527573, Loom 108557527598, TLC
   108557527440, Huawei 108557527523, AWQ 108557527565.
+
+- 2026-09-27T05:30:09+00:00: Recorded command exit 0; command argv SHA-256
+  10ced37cff1f5e4d4693566325fcf05788f41b16794a0d88b125407698308d4e.
