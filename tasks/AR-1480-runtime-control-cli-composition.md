@@ -8,7 +8,7 @@
     "AR-1472"
   ],
   "id": "AR-1480",
-  "next_action": "Run focused CLI/runtime tests and full gates for opaque runtime-control composition.",
+  "next_action": "Complete active workspace tests/clippy/rustdoc/release gates, then independent review and signed commit.",
   "observed_branch": "feature/ar-1480-runtime-control-cli-composition",
   "observed_dirty": 2,
   "observed_head": "59323f41ed2d10a952a1276107459260ebdf409a",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compose authenticated runtime enrollment into opaque normal CLI run and sweep dispatch.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Runtime-control CLI composition",
-  "updated_at": "2026-09-27T11:22:34+00:00",
+  "updated_at": "2026-09-27T11:24:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1480-runtime-control-cli-composition"
 }
 ---
@@ -63,3 +63,10 @@ and never gates local qualification.
 
 - 2026-09-27T11:22:34+00:00: Recorded command exit 0; command argv SHA-256
   c44ed960f90bd281b4395dd1445881d59d09fa681f7e317ba9f0254abb8780d1.
+
+- 2026-09-27T11:24:25+00:00: Implementation checkpoint: AR-1480 adds RuntimeControlDispatchSource
+  and run_with_runtime_control_source to asb-cli. The runtime/control seam resolves only an opaque
+  LiveProviderRuntimeDispatchSource and returns bounded Unavailable before CLI effects; existing
+  runtime-owned source remains private. Added hostile unavailable-source test and docs/workflow
+  boundary note. After refreshing clean worktree to protected main 59323f41, focused runtime source
+  and CLI fail-closed tests pass. Full workspace gates are currently running under handoffctl.
