@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1483-authenticated-control-process-owner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-27T14:43:12+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1472",
     "AR-1473",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1483-authenticated-control-process-owner",
   "observed_dirty": 0,
   "observed_head": "eff9984fd11bec55e1e23366b3bba0bcb717826a",
-  "owner": "ar1332-record-replay-luna56",
+  "owner": "",
   "plan": "../plans/AR-1483-authenticated-control-process-owner.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Own authenticated control session and lifecycle while minting opaque CLI dispatch sources.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Authenticated control process owner",
-  "updated_at": "2026-09-27T12:43:59+00:00",
+  "updated_at": "2026-09-27T12:44:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1483-authenticated-control-process-owner"
 }
 ---
@@ -62,3 +62,12 @@ caller authority or modify asb-tui.
 
 - 2026-09-27T12:43:59+00:00: Recorded command exit 0; command argv SHA-256
   308fee743c66f14b035b6bbdde102c9b6a81124b893dff991ca0a6b66ddd0c4a.
+
+- 2026-09-27T12:44:21+00:00: Re-audit after AR-1484 merge at exact main
+  eff9984fd11bec55e1e23366b3bba0bcb717826a: RuntimeControlOwnerContractV1 now supplies stable
+  lifecycle identifiers and fail-closed transitions, but no process owner exists.
+  request_control_receipt still requires caller-supplied ControlClient and chain store;
+  RuntimeAuthorityInputResolver and RuntimeOwnedEnrollmentSource remain pub(crate); asb-cli
+  entry/run still dispatches with None,None. Worktree clean; no safe duplicate or authority-exposing
+  slice. Remaining next action is a backend-owned process launcher/session that constructs these
+  private inputs and injects only AR-1480 opaque source.
