@@ -152,7 +152,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1478](../tasks/AR-1478-topic-synchronization-topology-repair.md): Repair topic synchronization topology | ar1332-record-replay-luna56 | Repair protected-main topic synchronization topology after AR-1477 merge policy failure. | Continue polling PR #348 exact-head checks; merge only after all 12 are terminal SUCCESS. |
+| P0 | [AR-1478](../tasks/AR-1478-topic-synchronization-topology-repair.md): Repair topic synchronization topology | ar1332-record-replay-luna56 | Repair protected-main topic synchronization topology after AR-1477 merge policy failure. | Approved one-time rerun of failed Rust workflow; monitor rerun and remaining PR #348 checks. |
 
 ### Blocked (72)
 

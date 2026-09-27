@@ -9,7 +9,7 @@
     "AR-1379"
   ],
   "id": "AR-1478",
-  "next_action": "Continue polling PR #348 exact-head checks; merge only after all 12 are terminal SUCCESS.",
+  "next_action": "Approved one-time rerun of failed Rust workflow; monitor rerun and remaining PR #348 checks.",
   "observed_branch": "feature/ar-1478-topic-synchronization-topology-repair",
   "observed_dirty": 0,
   "observed_head": "d1456b88d511d9c5ccd8ef4e693713ca706d9949",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair protected-main topic synchronization topology after AR-1477 merge policy failure.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Repair topic synchronization topology",
-  "updated_at": "2026-09-27T05:42:44+00:00",
+  "updated_at": "2026-09-27T05:43:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1478-topic-synchronization-topology-repair"
 }
 ---
@@ -127,3 +127,10 @@ or synchronization topology permitted by the policy.
 
 - 2026-09-27T05:42:44+00:00: Recorded command exit 0; command argv SHA-256
   f212cb4bc0e274f152a0508a288c50d9d451776f42ed9309f706b68907085544.
+
+- 2026-09-27T05:43:19+00:00: PR #348 Rust workflow 36297781047 failed with unrelated existing
+  control::tests::production_backend_runs_without_frontend_and_recovers_idempotency: control state
+  root is already owned at crates/asb-cli/src/control.rs:6593; 115 passed, 1 failed. This matches
+  the previously observed isolated state-root concurrency race; no topology/product files are
+  involved. Policy 108559718081 and AArch64 108559717416 remained in progress; other checks green.
+  Next: one exact-head failed-job rerun, then reassess.
