@@ -2,22 +2,22 @@
 {
   "branch": "repair/ar-1469-ar1392-protected-topology-repair",
   "checkpoint_commit": "b9d7b6ee251b3a119496d3c16f65ffc971704f3a",
-  "claim_expires": "2026-09-27T03:00:02+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1469",
   "next_action": "Reconcile and doctor state after seven green exact-main workflows; topology repair complete.",
   "observed_branch": "repair/ar-1469-ar1392-protected-topology-repair",
   "observed_dirty": 0,
   "observed_head": "e39d27d83939f77b619adcb0350b941da746d7d2",
-  "owner": "ar1332_record_replay_luna56",
+  "owner": "",
   "plan": "../plans/AR-1469-ar1392-protected-topology-repair.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Repair the single-parent protected merge for AR-1392 without changing its reviewed implementation.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "AR-1392 protected-main topology repair",
-  "updated_at": "2026-09-27T00:00:38+00:00",
+  "updated_at": "2026-09-27T00:01:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1469-ar1392-protected-topology-repair"
 }
 ---
@@ -270,3 +270,12 @@ green exact-head checks; the failed squash topology remains part of the record.
   36280737589, Emulated AArch64 36280737580, Repository quality 36280737659. Preserved initial PR
   #340 integrity failures before synchronization and obsolete AR-1392 single-parent failure
   36279474851 as immutable evidence.
+
+- 2026-09-27T00:01:16+00:00: Topology-only repair complete and independently verified. PR #340 exact
+  head e39d27d had all 12 checks green and merged normally as
+  b9d7b6ee251b3a119496d3c16f65ffc971704f3a. Protected main has two parents
+  3cd6a5a84493842e402dff55e1c2c266f2454752 then e39d27d83939f77b619adcb0350b941da746d7d2; reviewed
+  implementation tree 78ab92b is unchanged. Seven exact-main workflows green: Huawei 36280737608,
+  Hosted 36280737609, Fault 36280737591, Formal 36280737585, Rust 36280737589, Emulated AArch64
+  36280737580, Repository quality 36280737659. Reconcile completed. doctor --live retains known
+  WORKTREES.md stale projection note.
