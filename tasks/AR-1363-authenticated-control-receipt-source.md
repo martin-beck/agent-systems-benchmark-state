@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1363-authenticated-control-receipt-source",
   "checkpoint_commit": "29d27a91ad6a4eff455f62ae25eb952fec45fcf5",
-  "claim_expires": "2026-09-27T03:14:35+00:00",
+  "claim_expires": "2026-09-27T03:17:26+00:00",
   "depends_on": [
     "AR-1362"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Deliver authenticated runtime authority receipts through the versioned control boundary without exposing secrets or caller authority.",
-  "task_revision": 74,
+  "task_revision": 75,
   "title": "Authenticated control receipt source",
-  "updated_at": "2026-09-27T01:17:20+00:00",
+  "updated_at": "2026-09-27T01:17:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1363-authenticated-control-receipt-source"
 }
 ---
@@ -269,3 +269,5 @@ reachability.
   36284742939; Repository quality run 36284742895; Rust verification run 36284742908. All other
   required workflows and AWQ shadow are SUCCESS; no failure or API error. Next action is bounded
   poll after CI interval, with heartbeat before lease expiry.
+
+- 2026-09-27T01:17:26+00:00: Heartbeat by ar1332_record_replay_luna56.
