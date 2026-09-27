@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**493 ARs tracked** across 5 active status categories.
+**494 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 69 |
-| **Planned** | Defined work awaiting promotion or dependencies | 57 |
+| **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 347 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -565,6 +565,7 @@ flowchart LR
         AR_1470["AR-1470 - Blocked"]:::status_blocked
         AR_1471["AR-1471 - Done"]:::status_done
         AR_1472["AR-1472 - Done"]:::status_done
+        AR_1473["AR-1473 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1694,6 +1695,7 @@ flowchart LR
     AR_1378 --> AR_1386
     AR_1378 --> AR_1387
     AR_1378 --> AR_1388
+    AR_1379 --> AR_1473
     AR_1380 --> AR_1381
     AR_1380 --> AR_1382
     AR_1380 --> AR_1383
@@ -1847,6 +1849,8 @@ flowchart LR
     AR_1460 --> AR_1461
     AR_1460 --> AR_1462
     AR_1461 --> AR_1463
+    AR_1471 --> AR_1473
+    AR_1472 --> AR_1473
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -2217,4 +2221,3 @@ flowchart LR
 | [AR-1330](../tasks/AR-1330-live-capture-sealed-cassette.md) | [AR-0502](../tasks/AR-0502-replay-cassettes.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-1329](../tasks/AR-1329-live-provider-run-execution.md) | [AR-1463](../tasks/AR-1463-current-main-requalification-after-capture.md) |
 | [AR-1331](../tasks/AR-1331-runtime-replay-launch-authority.md) | [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md), [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md) | [AR-1332](../tasks/AR-1332-record-live-replay-offline.md), [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md) |
 | [AR-1332](../tasks/AR-1332-record-live-replay-offline.md) | [AR-1331](../tasks/AR-1331-runtime-replay-launch-authority.md) | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md), [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md) |
-| [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md) | [AR-1329](../tasks/AR-1329-live-provider-run-execution.md), [AR-1332](../tasks/AR-1332-record-live-replay-offline.md), [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md) | [AR-1335](../tasks/AR-1335-credential-free-benchmark-ci.md), [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md), [AR-1420](../tasks/AR-1420-literature-workload-campaign-integration.md) |
