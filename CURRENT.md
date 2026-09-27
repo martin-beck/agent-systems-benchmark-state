@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1424](tasks/AR-1424-all-literature-selector-campaign.md): Complete literature selector and local campaign matrix | Make all locally executable literature workloads selectable and campaignable beside built-in fixtures. | Merge PR #353 normally; verify merge SHA and all exact-main post-merge workflows, then release AR-1424 done. | ar1332-record-replay-luna56 |
+| P1 | [AR-1424](tasks/AR-1424-all-literature-selector-campaign.md): Complete literature selector and local campaign matrix | Make all locally executable literature workloads selectable and campaignable beside built-in fixtures. | Monitor exact-main post-merge workflows for 6baa7ac; after all eight green, release AR-1424 done. | ar1332-record-replay-luna56 |
 
 ## Blocked
 

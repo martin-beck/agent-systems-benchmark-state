@@ -1,7 +1,7 @@
 ---
 {
   "branch": "",
-  "checkpoint_commit": "ff6f9a606707a22c65946c6354d0783e01f08e63",
+  "checkpoint_commit": "6baa7acfb1cc3616c9737118a6345b1813b291f1",
   "claim_expires": "2026-09-27T10:58:03+00:00",
   "depends_on": [
     "AR-1423",
@@ -10,7 +10,7 @@
     "AR-1416"
   ],
   "id": "AR-1424",
-  "next_action": "Merge PR #353 normally; verify merge SHA and all exact-main post-merge workflows, then release AR-1424 done.",
+  "next_action": "Monitor exact-main post-merge workflows for 6baa7ac; after all eight green, release AR-1424 done.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make all locally executable literature workloads selectable and campaignable beside built-in fixtures.",
-  "task_revision": 56,
+  "task_revision": 57,
   "title": "Complete literature selector and local campaign matrix",
-  "updated_at": "2026-09-27T09:08:11+00:00",
+  "updated_at": "2026-09-27T09:08:43+00:00",
   "worktree_key": ""
 }
 ---
@@ -204,3 +204,8 @@ dataset downloads are never requirements for this AR.
 
 - 2026-09-27T09:08:11+00:00: Recorded command exit 0; command argv SHA-256
   09980536b757e0c456783081e605ea716e6f76cd5e16372dccc0dad038f241ee.
+
+- 2026-09-27T09:08:43+00:00: PR #353 merged at 2026-09-27T09:07:28Z, head ff6f9a6. Post-merge
+  exact-main runs started: AArch64 36308369675, hosted 36308369648, repository quality 36308369618,
+  Huawei 36308369609 SUCCESS, formal 36308369594, Rust 36308369583, fault 36308369579,
+  credential-free 36308369573.
