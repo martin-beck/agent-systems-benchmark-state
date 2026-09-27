@@ -10,7 +10,7 @@
     "AR-1486"
   ],
   "id": "AR-1487",
-  "next_action": "Run full workspace, docs, privacy, release and clean-tree gates; then independent review and signed commit.",
+  "next_action": "Rerun full workspace serially after unrelated metrics fixture race; then release build/policy/clean gates, review and commit.",
   "observed_branch": "feature/ar-1487-owner-backed-first-customer-qualification",
   "observed_dirty": 3,
   "observed_head": "79f88d3ca03120fd7d69f67cb292c96051a5e770",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the owner-backed credential-free local/mock/replay first-customer journey.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Owner-backed first-customer qualification",
-  "updated_at": "2026-09-27T14:09:18+00:00",
+  "updated_at": "2026-09-27T14:09:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1487-owner-backed-qualification"
 }
 ---
@@ -113,3 +113,8 @@ runtime-owned CLI; it excludes live providers and asb-tui.
 
 - 2026-09-27T14:09:18+00:00: Recorded command exit 0; command argv SHA-256
   df61eb83593d92c77e72d10278d9d8ff48f124c6052747cbfd9777bf783a1491.
+
+- 2026-09-27T14:09:41+00:00: Full workspace first rerun had one unrelated asb-metrics
+  kernel::tests::bounded_tool_boundary_covers_success_denial_timeout_and_cleanup failure: expected
+  value 12500000, got ProbeRejected. No AR-1487 path involved. Exact focused serial reproduction
+  passed 1/1 with --test-threads=1; classify runner contention/flakiness, no code change.

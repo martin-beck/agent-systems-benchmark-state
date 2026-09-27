@@ -164,7 +164,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1487](../tasks/AR-1487-owner-backed-first-customer-qualification.md): Owner-backed first-customer qualification | ar1332-record-replay-luna56 | Qualify the owner-backed credential-free local/mock/replay first-customer journey. | Run full workspace, docs, privacy, release and clean-tree gates; then independent review and signed commit. |
+| P0 | [AR-1487](../tasks/AR-1487-owner-backed-first-customer-qualification.md): Owner-backed first-customer qualification | ar1332-record-replay-luna56 | Qualify the owner-backed credential-free local/mock/replay first-customer journey. | Rerun full workspace serially after unrelated metrics fixture race; then release build/policy/clean gates, review and commit. |
 
 ### Blocked (73)
 
