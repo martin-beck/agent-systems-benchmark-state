@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1476-workspace-coverage-floor-repair",
   "checkpoint_commit": "c7f290a07c9c2064c79c6b0f98ad2d0c0d6b195a",
-  "claim_expires": "2026-09-27T06:51:19+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1200",
     "AR-1379",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1476-workspace-coverage-floor-repair",
   "observed_dirty": 0,
   "observed_head": "c7f290a07c9c2064c79c6b0f98ad2d0c0d6b195a",
-  "owner": "ar1332-record-replay-luna56",
+  "owner": "",
   "plan": "../plans/AR-1476-workspace-coverage-floor-repair.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Restore the enforced 90 percent workspace coverage floor blocking exact AR-1474 validation.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Repair workspace coverage floor",
-  "updated_at": "2026-09-27T04:51:44+00:00",
+  "updated_at": "2026-09-27T04:52:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1476-workspace-coverage-floor-repair"
 }
 ---
@@ -91,3 +91,10 @@ not a weakened gate.
 
 - 2026-09-27T04:51:44+00:00: Recorded command exit 0; command argv SHA-256
   8b6d1b595ead5c84200a8c0ea45d52fe556d14542f135b0df8e8818e6973dd61.
+
+- 2026-09-27T04:52:08+00:00: Repair audit complete: exact AR-1474 tree on protected main 1dada31c
+  reproduces workspace coverage at 90.35% lines (98431 total, 6265 missed), and
+  tools/quality/check_coverage.py exits 0. No code/test/exclusion change was justified; the original
+  88.05% failure was stale-base CI before AR-1475 merge. PR #345 repository-quality rerun
+  36292250172 was re-triggered against current main; current job 108553511224 is in progress. Next
+  action is monitor that exact-head validation, then merge only if every required check is green.

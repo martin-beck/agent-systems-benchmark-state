@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1476](tasks/AR-1476-workspace-coverage-floor-repair.md): Repair workspace coverage floor | Restore the enforced 90 percent workspace coverage floor blocking exact AR-1474 validation. | Rerun PR #345 exact-head validation against current protected main 1dada31c; no repair diff is required unless the current-base gate regresses. | ar1332-record-replay-luna56 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -325,6 +319,7 @@ Never edit this file directly.
 | P0 | [AR-1471](tasks/AR-1471-control-to-runtime-chain-binding.md): Control-to-runtime certificate-chain binding | Bind authenticated control enrollment to runtime certificate-chain storage and live dispatch. | Reconcile and doctor live state, then release AR-1471 done with merge and seven exact-main workflow evidence. | - |
 | P0 | [AR-1472](tasks/AR-1472-authenticated-live-dispatch-adapter.md): Authenticated live-dispatch adapter | Connect authenticated control receipts to runtime-owned CLI live dispatch without a dependency cycle. | Run reconcile and doctor --live, then release AR-1472 done with merge and seven-workflow evidence. | - |
 | P0 | [AR-1475](tasks/AR-1475-asb-metrics-evidence-fixture-repair.md): Repair asb-metrics evidence fixture classification | Repair the deterministic ProbeRejected versus MalformedEvidence fixture failure blocking PR #345. | Release done after final reconcile; then rerun PR #345 exact-head validation. | - |
+| P0 | [AR-1476](tasks/AR-1476-workspace-coverage-floor-repair.md): Repair workspace coverage floor | Restore the enforced 90 percent workspace coverage floor blocking exact AR-1474 validation. | Rerun PR #345 exact-head validation against current protected main 1dada31c; no repair diff is required unless the current-base gate regresses. | - |
 | P1 | [AR-0002](tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. | - |
 | P1 | [AR-0003](tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. | - |
 | P1 | [AR-0004](tasks/AR-0004-ar-status-document.md): Generate the visual AR status document | Render every AR, status, and dependency as an accessible visual state document. | Await independent immutable-head review of state PR 3 at eedd311; repair findings before coordinator integration. | - |
