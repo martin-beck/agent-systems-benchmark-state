@@ -21,7 +21,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36298610671 | `fac11a22a93c` | push | Fault assurance | in_progress:- |
 | 36298610658 | `fac11a22a93c` | push | Repository quality | in_progress:- |
 | 36298610655 | `fac11a22a93c` | push | Formal assurance | in_progress:- |
-| 36298610650 | `fac11a22a93c` | push | Hosted portability and native qualification | in_progress:- |
+| 36298610650 | `fac11a22a93c` | push | Hosted portability and native qualification | completed:success |
 | 36297781208 | `d1456b88d511` | pull_request | Repository quality | completed:success |
 | 36297781114 | `d1456b88d511` | pull_request | Emulated aarch64 portability | completed:success |
 | 36297781109 | `d1456b88d511` | pull_request | Fault assurance | completed:success |
