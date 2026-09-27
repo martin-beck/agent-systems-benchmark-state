@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement runtime-owned local/mock process lifecycle and opaque-source handoff.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Process-owner local/mock lifecycle",
-  "updated_at": "2026-09-27T13:04:53+00:00",
+  "updated_at": "2026-09-27T13:05:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1485-process-owner-local-mock-lifecycle"
 }
 ---
@@ -131,3 +131,6 @@ authority.
   (reviewed implementation); origin/main matches. A verification query first exited 1 because gh pr
   view does not support JSON field merged; corrected query confirmed state MERGED and exact parents.
   This was query syntax only, not a merge/check failure.
+
+- 2026-09-27T13:05:03+00:00: Recorded command exit 1; command argv SHA-256
+  7a298c298ddb375d751ec82cb177d8facea0f35d57b57a36d7d55e3f07c9daa5.
