@@ -3,7 +3,7 @@
   "branch": "qualification/ar-1491-self-contained-package-qualification-fixture",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1461", "AR-1462", "AR-1488", "AR-1489", "AR-1490"],
+  "depends_on": ["AR-1461", "AR-1462", "AR-1488", "AR-1489"],
   "id": "AR-1491",
   "next_action": "Promote and claim, then implement the non-production signed-test-key package qualification fixture and local/mock/replay harness.",
   "observed_branch": "qualification/ar-1491-self-contained-package-qualification-fixture",
