@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compose authenticated runtime enrollment into opaque normal CLI run and sweep dispatch.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Runtime-control CLI composition",
-  "updated_at": "2026-09-27T11:20:31+00:00",
+  "updated_at": "2026-09-27T11:21:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1480-runtime-control-cli-composition"
 }
 ---
@@ -51,3 +51,6 @@ and never gates local qualification.
   The seam resolves only an opaque LiveProviderRuntimeDispatchSource from runtime/control and fails
   closed before CLI effects when unavailable; docs state ordinary process run/sweep cannot construct
   authority. Added hostile unavailable-source test; no asb-tui/live provider.
+
+- 2026-09-27T11:21:04+00:00: Recorded command exit 0; command argv SHA-256
+  b2f3fb06dee43d704705616108ddb13e7dcca021834cb50f5a41e895d2b16eff.
