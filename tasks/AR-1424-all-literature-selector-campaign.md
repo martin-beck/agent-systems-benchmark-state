@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "6baa7acfb1cc3616c9737118a6345b1813b291f1",
-  "claim_expires": "2026-09-27T11:13:30+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1423",
     "AR-1430",
@@ -14,15 +14,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "ar1332-record-replay-luna56",
+  "owner": "",
   "plan": "../plans/AR-1424-all-literature-selector-campaign.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Make all locally executable literature workloads selectable and campaignable beside built-in fixtures.",
-  "task_revision": 67,
+  "task_revision": 68,
   "title": "Complete literature selector and local campaign matrix",
-  "updated_at": "2026-09-27T09:16:14+00:00",
+  "updated_at": "2026-09-27T09:16:37+00:00",
   "worktree_key": ""
 }
 ---
@@ -238,3 +238,11 @@ dataset downloads are never requirements for this AR.
 
 - 2026-09-27T09:16:14+00:00: Recorded command exit 0; command argv SHA-256
   b6f3b5e825f2de78b42426034c9b7120bdeb12aeb74d66d97693a230504a49a8.
+
+- 2026-09-27T09:16:37+00:00: AR-1424 complete. PR #353 head ff6f9a606707a22c65946c6354d0783e01f08e63
+  merged normally as 6baa7acfb1cc3616c9737118a6345b1813b291f1 after all 13 exact-head checks
+  SUCCESS. All eight exact-main post-merge workflows SUCCESS: Huawei 36308369609, hosted
+  36308369648, credential-free 36308369573, fault 36308369579, formal 36308369594, repository
+  quality 36308369618, Rust 36308369583, emulated AArch64 36308369675. Reconciled Exercism selector
+  and generated catalog parity; local focused/full gates passed with isolated CARGO_BUILD_JOBS=1
+  after preserving the known shared state-root race evidence.
