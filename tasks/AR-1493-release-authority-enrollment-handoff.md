@@ -2,7 +2,7 @@
 {
   "branch": "release/ar-1493-release-authority-enrollment-handoff",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-27T18:52:46+00:00",
+  "claim_expires": "2026-09-27T18:52:55+00:00",
   "depends_on": [
     "AR-1461",
     "AR-1462",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define and validate the external release-authority enrollment and signed-bundle verification handoff.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Release-authority enrollment handoff",
-  "updated_at": "2026-09-27T16:52:46+00:00",
+  "updated_at": "2026-09-27T16:52:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1493-release-authority-enrollment-handoff"
 }
 ---
@@ -52,3 +52,5 @@ and preserve AR-1490 as the customer-release blocker.
   AR-1490 external signed-package blocker.
 
 - 2026-09-27T16:52:46+00:00: Claimed by ar1332-record-replay-luna56.
+
+- 2026-09-27T16:52:55+00:00: Heartbeat by ar1332-record-replay-luna56.
