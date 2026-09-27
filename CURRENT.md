@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-1424](tasks/AR-1424-all-literature-selector-campaign.md): Complete literature selector and local campaign matrix | Make all locally executable literature workloads selectable and campaignable beside built-in fixtures. | Promote after AR-1423, AR-1430, AR-1420, and AR-1416 are released; implement the complete local-mock literature selector and campaign matrix. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -132,7 +138,6 @@ Never edit this file directly.
 | P1 | [AR-1255](tasks/AR-1255-bundled-mockagents-qemu-runner.md): Bundle MockAgents transport and QEMU runner | Bundle MockAgents transport and QEMU runner. | Provision a digest-pinned bundled transport/QEMU runner and implement real in-container evidence. | - |
 | P1 | [AR-1257](tasks/AR-1257-mockagents-qemu-image.md): Qualify digest-pinned multiarch MockAgents image | Qualify a digest-pinned multiarch MockAgents OCI image for QEMU isolation. | Read the complete plan and verify official digest-pinned multiarch image, signature, license, and QEMU capability before any support claim. | - |
 | P1 | [AR-1336](tasks/AR-1336-live-benchmark-workflow-docs.md): Live benchmark workflow documentation and support matrix | Document the live benchmark workflow and publish the supported agent and provider matrix. | Document the end-to-end live benchmark workflow and publish the supported agent by provider by model support matrix, with exact digests and evidence limits. | - |
-| P1 | [AR-1424](tasks/AR-1424-all-literature-selector-campaign.md): Complete literature selector and local campaign matrix | Make all locally executable literature workloads selectable and campaignable beside built-in fixtures. | Promote after AR-1423, AR-1430, AR-1420, and AR-1416 are released; implement the complete local-mock literature selector and campaign matrix. | - |
 | P1 | [AR-1425](tasks/AR-1425-literature-workload-release-readiness.md): Literature workload release-readiness gate | Independently verify release readiness of the complete built-in and literature workload surface. | Promote only after AR-1424, AR-1417, and AR-1418 are released; independently verify the complete built-in plus literature workload surface and all release gates. | - |
 | P1 | [AR-1426](tasks/AR-1426-evolving-literature-window-refresh.md): Evolving literature workload window refresh | Refresh evolving literature benchmark windows without stale or incomparable results. | Promote after AR-1423 and AR-1425 are released; implement content-addressed refresh manifests and fail-closed window validation for LiveCodeBench and SWE-rebench. | - |
 | P2 | [AR-0602](tasks/AR-0602-csb-monitoring-contention.md): Validate CSB monitoring and contention diagnostics | Validate and integrate optional CSB resource monitoring and kernel-contention evidence without double counting or overstating support. | Audit CSB monitoring using native x86_64 oracles and required pinned QEMU AArch64 portable mapping/lifecycle checks; keep native ARM64 counters and performance as optional future evidence. | - |
