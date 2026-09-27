@@ -10,13 +10,13 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #343 | `feature/ar-1472-authenticated-live-dispatch-adapter@5f785dab598f` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(runtime): bridge authenticated enrollment to dispatch source |
+| #343 | `feature/ar-1472-authenticated-live-dispatch-adapter@5f785dab598f` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(runtime): bridge authenticated enrollment to dispatch source |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36286710461 | `5f785dab598f` | pull_request | Repository quality | in_progress:- |
+| 36286710461 | `5f785dab598f` | pull_request | Repository quality | completed:success |
 | 36286710453 | `5f785dab598f` | pull_request | Huawei MIT source headers | completed:success |
 | 36286710443 | `5f785dab598f` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36286710441 | `5f785dab598f` | pull_request | Hosted portability and native qualification | completed:success |
