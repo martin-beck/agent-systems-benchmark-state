@@ -22,11 +22,11 @@
   "plan": "../plans/AR-1391-runtime-control-bootstrap-constructor.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Materialize authenticated runtime live authority into an opaque source without caller injection.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Runtime control bootstrap constructor",
-  "updated_at": "2026-09-27T02:44:27+00:00",
+  "updated_at": "2026-09-27T03:16:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1391-runtime-control-bootstrap-constructor"
 }
 ---
@@ -94,3 +94,6 @@ reachability.
   live provider. Next action: after AR-1379 integration PR #344 is merged, re-audit current main and
   implement the narrow constructor only if runtime-owned inputs are available; otherwise create the
   next precise control/runtime source successor.
+
+- 2026-09-27T03:16:59+00:00: AR-1379 merge 1e2c5911 is reported complete; resume for a fresh
+  protected-main audit of runtime-owned bootstrap constructor availability before implementation.
