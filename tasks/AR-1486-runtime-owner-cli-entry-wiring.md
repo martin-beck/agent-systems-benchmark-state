@@ -9,7 +9,7 @@
     "AR-1485"
   ],
   "id": "AR-1486",
-  "next_action": "Focused gates passed after moving test-only RuntimeControlOwnerState import; run full workspace/docs/privacy/release gates.",
+  "next_action": "Refresh docs/asb-cli-workflow-v1.provenance.json to exact current CLI hash through handoffctl, then rerun full gates.",
   "observed_branch": "feature/ar-1486-runtime-owner-cli-entry-wiring",
   "observed_dirty": 2,
   "observed_head": "a6f43eb2a651fcfa3c0abe3b9e4dddaea78b6a80",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire the runtime-owned local/mock process owner into ordinary CLI run and sweep.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Runtime-owner CLI entry wiring",
-  "updated_at": "2026-09-27T13:23:29+00:00",
+  "updated_at": "2026-09-27T13:23:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1486-cli-owner-wiring"
 }
 ---
@@ -59,3 +59,10 @@ authority.
 
 - 2026-09-27T13:23:29+00:00: Recorded command exit 101; command argv SHA-256
   35b3c6b149f8166ded7be4161415243b72079f462532dc00a578c14090a7b683.
+
+- 2026-09-27T13:23:58+00:00: Full workspace gate exited 101 only at
+  crates/asb-cli/tests/workflow_transcript.rs::provenance_binds_the_exact_cli_and_public_fixture_sources.
+  Exact mismatch: left current crates/asb-cli/src/lib.rs hash
+  ec113df51a8f56dcd11ba6ddb46059508cf71b0d93021907347ccb3f0686fe88; fixture expected
+  f5ee73176c0587def7d01e56e3b07091faf99678c6f14f4a9769e0d0eaea726d. This is expected provenance
+  drift from the intentional CLI wiring diff, not a runtime assertion failure.
