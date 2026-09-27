@@ -22,7 +22,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36310794563 | `a36b86b49a34` | push | Repository quality | in_progress:- |
 | 36310794557 | `a36b86b49a34` | push | Rust verification | in_progress:- |
 | 36310794556 | `a36b86b49a34` | push | Fault assurance | in_progress:- |
-| 36310794536 | `a36b86b49a34` | push | Hosted portability and native qualification | in_progress:- |
+| 36310794536 | `a36b86b49a34` | push | Hosted portability and native qualification | completed:success |
 | 36310242581 | `312f811b3a77` | pull_request | Credential-free benchmark path | completed:success |
 | 36310242498 | `312f811b3a77` | pull_request | Fault assurance | completed:success |
 | 36310242485 | `312f811b3a77` | pull_request | Rust verification | completed:success |
