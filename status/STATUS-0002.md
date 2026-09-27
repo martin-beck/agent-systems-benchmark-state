@@ -154,7 +154,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1480](../tasks/AR-1480-runtime-control-cli-composition.md): Runtime-control CLI composition | ar1332-record-replay-luna56 | Compose authenticated runtime enrollment into opaque normal CLI run and sweep dispatch. | Promote after validating AR-1473 and AR-1472, then claim the isolated worktree and implement the opaque runtime-control CLI composition. |
+| P0 | [AR-1480](../tasks/AR-1480-runtime-control-cli-composition.md): Runtime-control CLI composition | ar1332-record-replay-luna56 | Compose authenticated runtime enrollment into opaque normal CLI run and sweep dispatch. | Run focused CLI/runtime tests and full gates for opaque runtime-control composition. |
 
 ### Blocked (70)
 

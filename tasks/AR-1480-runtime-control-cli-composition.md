@@ -8,7 +8,7 @@
     "AR-1472"
   ],
   "id": "AR-1480",
-  "next_action": "Promote after validating AR-1473 and AR-1472, then claim the isolated worktree and implement the opaque runtime-control CLI composition.",
+  "next_action": "Run focused CLI/runtime tests and full gates for opaque runtime-control composition.",
   "observed_branch": "feature/ar-1480-runtime-control-cli-composition",
   "observed_dirty": 0,
   "observed_head": "5e577e6a4b278fc79dc8b695cd6b3723d04cc609",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compose authenticated runtime enrollment into opaque normal CLI run and sweep dispatch.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Runtime-control CLI composition",
-  "updated_at": "2026-09-27T11:20:14+00:00",
+  "updated_at": "2026-09-27T11:20:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1480-runtime-control-cli-composition"
 }
 ---
@@ -45,3 +45,9 @@ and never gates local qualification.
   e5e483509179e2d1e0604ee0f63271ced6232cbfb60eb6ccdf9fe0c6ad23a76a.
 
 - 2026-09-27T11:20:14+00:00: Heartbeat by ar1332-record-replay-luna56.
+
+- 2026-09-27T11:20:31+00:00: After complete AR-1480 plan/docs review and current-main audit,
+  implementation adds RuntimeControlDispatchSource and run_with_runtime_control_source in asb-cli.
+  The seam resolves only an opaque LiveProviderRuntimeDispatchSource from runtime/control and fails
+  closed before CLI effects when unavailable; docs state ordinary process run/sweep cannot construct
+  authority. Added hostile unavailable-source test; no asb-tui/live provider.
