@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1382-authenticated-live-execution-source",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-27T04:17:52+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1381",
     "AR-1380",
@@ -15,15 +15,15 @@
   "observed_branch": "feature/ar-1382-authenticated-live-execution-source",
   "observed_dirty": 0,
   "observed_head": "363b21f81d5c5ab364c2e2a923bd82676feaf343",
-  "owner": "ar1332_record_replay_luna56",
+  "owner": "",
   "plan": "../plans/AR-1382-authenticated-live-execution-source.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Materialize authenticated runtime-owned live execution for asb run and sweep.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Authenticated live execution source",
-  "updated_at": "2026-09-27T02:19:38+00:00",
+  "updated_at": "2026-09-27T02:21:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1382-authenticated-live-execution-source"
 }
 ---
@@ -67,3 +67,12 @@ preserving the no-caller-authority and fail-closed boundaries.
 
 - 2026-09-27T02:19:26+00:00: Recorded command exit 0; command argv SHA-256
   36a6c251e10617767a697c6073f79adcedeccaf21e19de8e508b3065500e4f1b.
+
+- 2026-09-27T02:21:30+00:00: Blocked truthfully after protected-main audit: AR-1383 authority
+  profile and AR-1384 bootstrap materialization are already merged, but AR-1382 has no safe in-scope
+  change because the remaining missing seam is production runtime/control bootstrap-to-CLI transfer.
+  Existing private materialize_handle requires runtime-owned config, policy, allowlist, lease/relay
+  roots, and tool pins; exposing or synthesizing these through CLI would violate authority
+  boundaries. Next action: resume/promote AR-1387, whose concrete contract is authenticated
+  runtime/control bootstrap-to-CLI bridge consuming only opaque LiveProviderRuntimeDispatchSource,
+  with hostile local/mock tests; preserve AR-1329/live provider as optional.
