@@ -166,7 +166,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1489](../tasks/AR-1489-first-customer-package-consumption.md): First-customer package consumption | ar1332-record-replay-luna56 | Verify first-customer release package installation and owner-backed local/mock/replay consumption. | Monitor eight exact-main post-merge workflows for merge b048fef9; release done only after all terminal SUCCESS. |
+| P0 | [AR-1489](../tasks/AR-1489-first-customer-package-consumption.md): First-customer package consumption | ar1332-record-replay-luna56 | Verify first-customer release package installation and owner-backed local/mock/replay consumption. | Reconcile and doctor state projection; retain known generated WORKTREES/PROJECT_STATE caveat if reported. |
 
 ### Blocked (73)
 

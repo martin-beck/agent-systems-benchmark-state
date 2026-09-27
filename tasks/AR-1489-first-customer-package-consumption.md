@@ -9,7 +9,7 @@
     "AR-1488"
   ],
   "id": "AR-1489",
-  "next_action": "Monitor eight exact-main post-merge workflows for merge b048fef9; release done only after all terminal SUCCESS.",
+  "next_action": "Reconcile and doctor state projection; retain known generated WORKTREES/PROJECT_STATE caveat if reported.",
   "observed_branch": "feature/ar-1489-first-customer-package-consumption",
   "observed_dirty": 0,
   "observed_head": "c4578eecd93183eaadaf9c34defbc4137ba03657",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Verify first-customer release package installation and owner-backed local/mock/replay consumption.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "First-customer package consumption",
-  "updated_at": "2026-09-27T15:34:51+00:00",
+  "updated_at": "2026-09-27T15:35:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1489-first-customer-package-consumption"
 }
 ---
@@ -196,3 +196,9 @@ touching asb-tui or requiring a live provider.
 
 - 2026-09-27T15:34:51+00:00: Recorded command exit 0; command argv SHA-256
   d4b21b9fa84bddbff736766a979ee6bd6f7610dbdc4da1c43b6e9d69758f5d31.
+
+- 2026-09-27T15:35:07+00:00: Final verification: PR #369 merged 2026-09-27T15:25:29Z; merge b048fef9
+  with parents protected base 2aef4b15 and reviewed head c4578eec; tree 42940cd9. All eight
+  exact-main workflows SUCCESS: Huawei 36329496606, Hosted 36329496670, Credential-free 36329496593,
+  Fault 36329496583, Formal 36329496626, Rust 36329496563, Repository quality 36329496635, Emulated
+  AArch64 36329496650.
