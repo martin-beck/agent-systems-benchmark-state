@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire the runtime-owned local/mock process owner into ordinary CLI run and sweep.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Runtime-owner CLI entry wiring",
-  "updated_at": "2026-09-27T13:44:38+00:00",
+  "updated_at": "2026-09-27T13:44:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1486-cli-owner-wiring"
 }
 ---
@@ -157,3 +157,6 @@ authority.
   a5f9ad27b967371511b0981aad29d3aa65a7fcab; mergeStateStatus CLEAN. Independent review confirms
   runtime-owned local/mock backend is actually used for scheduler attempts, enrollment/teardown
   fencing is preserved, no caller authority/live provider/asb-tui, and provenance is exact.
+
+- 2026-09-27T13:44:48+00:00: Recorded command exit 0; command argv SHA-256
+  b0e195d5ea3e9cfea57edf317c7387989bf5228dab7680eabc945ef1d5712120.
