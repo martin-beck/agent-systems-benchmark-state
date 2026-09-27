@@ -11,7 +11,7 @@
     "AR-1487"
   ],
   "id": "AR-1488",
-  "next_action": "Promote and claim, then qualify the owner-backed install/setup/run/sweep/replay/evidence journey on current protected main.",
+  "next_action": "Run runtime replay/recovery focused gates and full workspace/docs/privacy/release/policy gates; independently review and commit.",
   "observed_branch": "feature/ar-1488-owner-backed-user-journey",
   "observed_dirty": 2,
   "observed_head": "0dc766a481788783a8748a5c1f1e24835c1174c3",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Owner-backed first-customer user journey",
-  "updated_at": "2026-09-27T14:40:47+00:00",
+  "updated_at": "2026-09-27T14:40:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1488-owner-backed-user-journey"
 }
 ---
@@ -56,3 +56,9 @@ live provider.
 
 - 2026-09-27T14:40:35+00:00: Recorded command exit 0; command argv SHA-256
   b690f5cee2f527b5f6b1d0812cb7d890904d25189a0240c0af15a20497ff298c.
+
+- 2026-09-27T14:40:58+00:00: AR-1488 claimed on protected main 0dc766a4 in isolated worktree. Audit
+  found existing install/setup, owner-backed run/sweep, strict replay, comparison, and recovery
+  contracts already present. Added docs/workflows/owner-backed-first-customer-journey.md and README
+  route link; focused owner tests 4/4, guide examples 5/5, workflow transcript 3/3, fmt check
+  passed. No production semantics changed.
