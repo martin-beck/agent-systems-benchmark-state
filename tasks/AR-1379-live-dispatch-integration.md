@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate authenticated runtime live dispatch into asb run and sweep.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Production live dispatch integration",
-  "updated_at": "2026-09-27T02:24:05+00:00",
+  "updated_at": "2026-09-27T02:24:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1379-live-dispatch-integration"
 }
 ---
@@ -126,3 +126,6 @@ verified through the completed gates.
 
 - 2026-09-27T02:24:05+00:00: Recorded command exit 101; command argv SHA-256
   534f8613e1c316db8f0f46dd989e44e14a8ca74304a94791b4e4a1c59b2fbb1d.
+
+- 2026-09-27T02:24:21+00:00: Recorded command exit 0; command argv SHA-256
+  d8cfac2d3bc713c25018cf8594eb5cbc2904af2986b88c3df6896de75ed11dfc.
