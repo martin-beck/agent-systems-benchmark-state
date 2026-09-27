@@ -1,7 +1,7 @@
 ---
 {
   "branch": "",
-  "checkpoint_commit": "26f03d3f52dab9c9667b0b8d09d69fc835c5b647",
+  "checkpoint_commit": "8966e447b68ab672ee06d2c7effd5ce7887e5b8d",
   "claim_expires": "2026-09-27T09:00:13+00:00",
   "depends_on": [
     "AR-1417",
@@ -10,7 +10,7 @@
     "AR-1333"
   ],
   "id": "AR-1420",
-  "next_action": "Monitor PR #350 exact head checks; merge only after every required check is green, then verify all post-merge workflows.",
+  "next_action": "Monitor PR #350 exact head 8966e44 checks; merge only after every required check is green, then verify all post-merge workflows.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run the complete qualified literature workload matrix beside built-in software-engineering workloads.",
-  "task_revision": 62,
+  "task_revision": 63,
   "title": "Literature workload campaign integration",
-  "updated_at": "2026-09-27T07:04:30+00:00",
+  "updated_at": "2026-09-27T07:04:47+00:00",
   "worktree_key": ""
 }
 ---
@@ -221,3 +221,10 @@ tasks or require any live provider.
 
 - 2026-09-27T07:04:30+00:00: Recorded command exit 0; command argv SHA-256
   f523554c00e7a9aeba4b436010b27341a9314eb5a9f7fce23b79b4c96ac3c072.
+
+- 2026-09-27T07:04:47+00:00: PR #350 Rust check 36301840987 failed at pinned CI formatting: rustfmt
+  required collapsing the select_workload map_err into one line in crates/asb-cli/src/lib.rs. This
+  is a deterministic formatting-only failure, not a test/product failure. Ran pinned-compatible
+  cargo fmt, amended the same signed+DCO commit to 8966e447b68ab672ee06d2c7effd5ce7887e5b8d,
+  verified clean tree/signature, and force-with-lease updated the PR branch. Recheck exact head
+  8966e44; do not merge until all required checks are green.
