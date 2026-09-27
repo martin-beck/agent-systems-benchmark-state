@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run the complete qualified literature workload matrix beside built-in software-engineering workloads.",
-  "task_revision": 162,
+  "task_revision": 163,
   "title": "Literature workload campaign integration",
-  "updated_at": "2026-09-27T08:26:08+00:00",
+  "updated_at": "2026-09-27T08:26:13+00:00",
   "worktree_key": ""
 }
 ---
@@ -549,3 +549,6 @@ tasks or require any live provider.
   serial CI guards. All 13 required checks SUCCESS, including Rust, policy/coverage/supply-chain,
   AArch64, credential-free, formal, TLC, Kani, Loom, fault, fuzz, matcher/SLO, platform, AWQ,
   Huawei.
+
+- 2026-09-27T08:26:13+00:00: Recorded command exit 0; command argv SHA-256
+  99573ed20ce718c0db863209ef7822d93f0b4a920635963c5526e37b2b3111b4.
