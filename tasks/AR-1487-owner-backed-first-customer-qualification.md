@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the owner-backed credential-free local/mock/replay first-customer journey.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Owner-backed first-customer qualification",
-  "updated_at": "2026-09-27T14:07:24+00:00",
+  "updated_at": "2026-09-27T14:07:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1487-owner-backed-qualification"
 }
 ---
@@ -101,3 +101,6 @@ runtime-owned CLI; it excludes live providers and asb-tui.
 
 - 2026-09-27T14:07:24+00:00: Recorded command exit 101; command argv SHA-256
   3ef945c92f95b131c6b267f5e76d643dec9016da6c34e4c335df7edd64d62a03.
+
+- 2026-09-27T14:07:44+00:00: Recorded command exit 0; command argv SHA-256
+  d274c9cca57462546e15deb1189292475d5de92df8a631e09d86ac0fd8a94f5e.
