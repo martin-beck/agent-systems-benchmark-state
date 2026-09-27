@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair protected-main topic synchronization topology after AR-1477 merge policy failure.",
-  "task_revision": 93,
+  "task_revision": 94,
   "title": "Repair topic synchronization topology",
-  "updated_at": "2026-09-27T06:01:57+00:00",
+  "updated_at": "2026-09-27T06:02:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1478-topic-synchronization-topology-repair"
 }
 ---
@@ -299,4 +299,7 @@ or synchronization topology permitted by the policy.
 - 2026-09-27T06:01:53+00:00: Heartbeat by ar1332-record-replay-luna56.
 
 - 2026-09-27T06:01:57+00:00: Recorded command exit 0; command argv SHA-256
+  aedbe6248a9baf95462c22a571142f628bf7e0f7f582ba7863578b068c44a3b4.
+
+- 2026-09-27T06:02:17+00:00: Recorded command exit 0; command argv SHA-256
   aedbe6248a9baf95462c22a571142f628bf7e0f7f582ba7863578b068c44a3b4.
