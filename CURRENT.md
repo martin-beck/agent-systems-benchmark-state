@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1379](tasks/AR-1379-live-dispatch-integration.md): Production live dispatch integration | Integrate authenticated runtime live dispatch into asb run and sweep. | Implement the narrow runtime-owned control-session/source injection seam: production run/sweep must receive only LiveProviderRuntimeDispatchSource; add positive and fail-closed CLI tests, then run focused/full gates. | ar1379-live-dispatch-luna56 |
+| P0 | [AR-1379](tasks/AR-1379-live-dispatch-integration.md): Production live dispatch integration | Integrate authenticated runtime live dispatch into asb run and sweep. | Run focused and full qualification, independently review exact diff, then publish signed PR from 11f3db5 if gates remain green. | ar1379-live-dispatch-luna56 |
 
 ## Blocked
 

@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1379-live-dispatch-integration",
-  "checkpoint_commit": "363b21f81d5c5ab364c2e2a923bd82676feaf343",
+  "checkpoint_commit": "11f3db5e58a0fd9a0e9fc5e1c949312a7706bc86",
   "claim_expires": "2026-09-27T04:14:57+00:00",
   "depends_on": [
     "AR-1378",
@@ -11,7 +11,7 @@
     "AR-1362"
   ],
   "id": "AR-1379",
-  "next_action": "Implement the narrow runtime-owned control-session/source injection seam: production run/sweep must receive only LiveProviderRuntimeDispatchSource; add positive and fail-closed CLI tests, then run focused/full gates.",
+  "next_action": "Run focused and full qualification, independently review exact diff, then publish signed PR from 11f3db5 if gates remain green.",
   "observed_branch": "feature/ar-1379-live-dispatch-integration",
   "observed_dirty": 0,
   "observed_head": "11f3db5078dfa122c1c9c8b533de4a53732424f4",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate authenticated runtime live dispatch into asb run and sweep.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Production live dispatch integration",
-  "updated_at": "2026-09-27T02:23:16+00:00",
+  "updated_at": "2026-09-27T02:23:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1379-live-dispatch-integration"
 }
 ---
@@ -117,3 +117,9 @@ verified through the completed gates.
 
 - 2026-09-27T02:23:03+00:00: Recorded command exit 0; command argv SHA-256
   46bfa68d2afb9f59dafdfb8dc906842a0d57a7730962d2d0f284972c3f3aa0d3.
+
+- 2026-09-27T02:23:32+00:00: Implemented narrow CLI integration: added source-aware
+  entry_with_runtime_live_provider_source and run/sweep --use-config --live-provider dispatch,
+  delegating only the opaque runtime-owned source factory. Ordinary argument-only CLI remains
+  fail-closed. Added negative selection-boundary test; focused live-provider tests 2/2 and fmt/diff
+  checks pass. Signed+DCO commit 11f3db5.
