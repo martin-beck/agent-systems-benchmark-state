@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #354 | `feature/ar-1336-live-benchmark-workflow-docs@f817af5ae921` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | docs: document end-to-end benchmark workflow |
+| #354 | `feature/ar-1336-live-benchmark-workflow-docs@f817af5ae921` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | docs: document end-to-end benchmark workflow |
 
 ## Recent workflows
 
@@ -19,12 +19,12 @@ Generated from local Git and GitHub. Do not edit.
 | 36310039129 | `f817af5ae921` | pull_request | Credential-free benchmark path | in_progress:- |
 | 36310039105 | `f817af5ae921` | pull_request | Fault assurance | in_progress:- |
 | 36310039096 | `f817af5ae921` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 36310039087 | `f817af5ae921` | pull_request | Formal assurance | queued:- |
+| 36310039087 | `f817af5ae921` | pull_request | Formal assurance | in_progress:- |
 | 36310039068 | `f817af5ae921` | pull_request | Hosted portability and native qualification | in_progress:- |
 | 36310039056 | `f817af5ae921` | pull_request | Rust verification | in_progress:- |
 | 36310039034 | `f817af5ae921` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 36310039030 | `f817af5ae921` | pull_request | Huawei MIT source headers | completed:failure |
-| 36310039009 | `f817af5ae921` | pull_request | Repository quality | in_progress:- |
+| 36310039009 | `f817af5ae921` | pull_request | Repository quality | completed:failure |
 | 36308369675 | `6baa7acfb1cc` | push | Emulated aarch64 portability | completed:success |
 | 36308369648 | `6baa7acfb1cc` | push | Hosted portability and native qualification | completed:success |
 | 36308369618 | `6baa7acfb1cc` | push | Repository quality | completed:success |
