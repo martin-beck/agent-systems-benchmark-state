@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the unrelated Rust state-root collision and malformed-ready-marker timing flakes blocking AR-1420 exact-head CI.",
-  "task_revision": 67,
+  "task_revision": 68,
   "title": "Rust CI timing and state-root flake repair",
-  "updated_at": "2026-09-27T07:49:33+00:00",
+  "updated_at": "2026-09-27T07:49:48+00:00",
   "worktree_key": ""
 }
 ---
@@ -225,3 +225,6 @@ requalified. Preserve fail-closed cleanup and bounded execution semantics.
 
 - 2026-09-27T07:49:33+00:00: Recorded command exit 0; command argv SHA-256
   fd0307e15835b563838fd77c6d9b7b101d10f151fe8c96e1a5c411b29e30add4.
+
+- 2026-09-27T07:49:48+00:00: Recorded command exit 0; command argv SHA-256
+  a7eb7e7aac0a8202f02e7e32e09377ec4adcf6ab3c6795dbeee0992cf6cafe84.
