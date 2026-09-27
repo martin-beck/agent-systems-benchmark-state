@@ -18,10 +18,10 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 36293580469 | `1dada31c763f` | push | Formal assurance | completed:success |
 | 36293580440 | `1dada31c763f` | push | Fault assurance | completed:success |
-| 36293580439 | `1dada31c763f` | push | Repository quality | in_progress:- |
+| 36293580439 | `1dada31c763f` | push | Repository quality | completed:success |
 | 36293580432 | `1dada31c763f` | push | Hosted portability and native qualification | completed:success |
 | 36293580429 | `1dada31c763f` | push | Huawei MIT source headers | completed:success |
-| 36293580424 | `1dada31c763f` | push | Emulated aarch64 portability | in_progress:- |
+| 36293580424 | `1dada31c763f` | push | Emulated aarch64 portability | completed:success |
 | 36293580412 | `1dada31c763f` | push | Rust verification | completed:success |
 | 36293087768 | `02aa58f14902` | pull_request | Rust verification | completed:success |
 | 36293087762 | `02aa58f14902` | pull_request | Agent Workflow Quality shadow | completed:success |
