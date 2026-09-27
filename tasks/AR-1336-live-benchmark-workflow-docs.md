@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1336-live-benchmark-workflow-docs",
-  "checkpoint_commit": "312f811b3a77bb30c80ba8216071b69132f0477c",
+  "checkpoint_commit": "a36b86b49a347b3e5e32154c465c3ef3e9a03a11",
   "claim_expires": "2026-09-27T12:02:25+00:00",
   "depends_on": [
     "AR-1333",
@@ -9,7 +9,7 @@
     "AR-1335"
   ],
   "id": "AR-1336",
-  "next_action": "PR #354 all required checks green; merge normally, then verify all eight protected-main workflows and release done.",
+  "next_action": "All eight post-merge workflows green; release AR-1336 done and reconcile/doctor.",
   "observed_branch": "feature/ar-1336-live-benchmark-workflow-docs",
   "observed_dirty": 0,
   "observed_head": "312f811b3a77bb30c80ba8216071b69132f0477c",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Document the live benchmark workflow and publish the supported agent and provider matrix.",
-  "task_revision": 67,
+  "task_revision": 68,
   "title": "Live benchmark workflow documentation and support matrix",
-  "updated_at": "2026-09-27T10:04:02+00:00",
+  "updated_at": "2026-09-27T10:04:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1336-live-benchmark-workflow-docs"
 }
 ---
@@ -230,3 +230,13 @@ reachability.
 
 - 2026-09-27T10:04:02+00:00: Recorded command exit 0; command argv SHA-256
   e35763ff710b57083bc2a72c3674a7ffc45bf6bfd05dfc442a6fbea5b733ed2a.
+
+- 2026-09-27T10:04:19+00:00: PR #354 merged normally at a36b86b49a347b3e5e32154c465c3ef3e9a03a11
+  from reviewed signed/DCO head 312f811b3a77bb30c80ba8216071b69132f0477c. Exact-main post-merge
+  workflows all terminal SUCCESS: Huawei MIT source headers 36310794666; Hosted portability/native
+  qualification 36310794536; Fault assurance 36310794556; Rust verification 36310794557; Repository
+  quality 36310794563; Formal assurance 36310794574; Credential-free benchmark path 36310794576;
+  Emulated AArch64 portability 36310794604. Initial PR failure was corrected header-policy-only
+  issue on new test; no product semantics changed. Independent review confirmed docs-only scope,
+  exact catalog digest matrix, local/mock/replay boundary, optional live provider, and no
+  credentials/asb-tui.

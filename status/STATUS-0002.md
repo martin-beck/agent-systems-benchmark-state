@@ -153,7 +153,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md): Live benchmark workflow documentation and support matrix | ar1332-record-replay-luna56 | Document the live benchmark workflow and publish the supported agent and provider matrix. | PR #354 all required checks green; merge normally, then verify all eight protected-main workflows and release done. |
+| P1 | [AR-1336](../tasks/AR-1336-live-benchmark-workflow-docs.md): Live benchmark workflow documentation and support matrix | ar1332-record-replay-luna56 | Document the live benchmark workflow and publish the supported agent and provider matrix. | All eight post-merge workflows green; release AR-1336 done and reconcile/doctor. |
 
 ### Blocked (71)
 
