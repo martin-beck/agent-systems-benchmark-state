@@ -9,7 +9,7 @@
     "AR-1485"
   ],
   "id": "AR-1486",
-  "next_action": "Push signed head a5f9ad27, open PR, monitor exact-head checks; merge only all green, then verify eight post-merge workflows.",
+  "next_action": "Monitor PR #360 exact head a5f9ad27; merge only after all required checks and independent review are green, then verify eight post-merge workflows.",
   "observed_branch": "feature/ar-1486-runtime-owner-cli-entry-wiring",
   "observed_dirty": 0,
   "observed_head": "a5f9ad27b967371511b0981aad29d3aa65a7fcab",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire the runtime-owned local/mock process owner into ordinary CLI run and sweep.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Runtime-owner CLI entry wiring",
-  "updated_at": "2026-09-27T13:35:28+00:00",
+  "updated_at": "2026-09-27T13:35:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1486-cli-owner-wiring"
 }
 ---
@@ -113,3 +113,8 @@ authority.
 
 - 2026-09-27T13:35:28+00:00: Recorded command exit 0; command argv SHA-256
   acd1982bc3840d76eb1d71941baa5283c34c7d3843f426522d5d159c4ebe1f25.
+
+- 2026-09-27T13:35:54+00:00: Published PR #360:
+  https://github.com/martin-beck/agent-systems-benchmark/pull/360 from exact signed/DCO head
+  a5f9ad27b967371511b0981aad29d3aa65a7fcab. Base is protected main; clean tree and focused/full
+  gates passed before push.
