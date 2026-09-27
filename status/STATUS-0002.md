@@ -165,7 +165,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1488](../tasks/AR-1488-owner-backed-user-journey.md): Owner-backed first-customer user journey | ar1332-record-replay-luna56 | Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey. | Wait for final Policy, coverage, and supply chain check on PR #368; merge only after SUCCESS and CLEAN. |
+| P0 | [AR-1488](../tasks/AR-1488-owner-backed-user-journey.md): Owner-backed first-customer user journey | ar1332-record-replay-luna56 | Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey. | Merge PR #368 normal non-squash from exact head f06b2d1b; monitor eight post-merge workflows and release only after all green. |
 
 ### Blocked (73)
 

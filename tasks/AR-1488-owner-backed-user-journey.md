@@ -11,7 +11,7 @@
     "AR-1487"
   ],
   "id": "AR-1488",
-  "next_action": "Wait for final Policy, coverage, and supply chain check on PR #368; merge only after SUCCESS and CLEAN.",
+  "next_action": "Merge PR #368 normal non-squash from exact head f06b2d1b; monitor eight post-merge workflows and release only after all green.",
   "observed_branch": "feature/ar-1488-owner-backed-user-journey",
   "observed_dirty": 0,
   "observed_head": "f06b2d1b01d33ec367760e02c0f19c88a1ed4166",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Owner-backed first-customer user journey",
-  "updated_at": "2026-09-27T14:55:40+00:00",
+  "updated_at": "2026-09-27T14:56:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1488-owner-backed-user-journey"
 }
 ---
@@ -151,3 +151,8 @@ live provider.
 
 - 2026-09-27T14:55:40+00:00: Recorded command exit 0; command argv SHA-256
   c2abe0496c095ad1c9e87eeb7faf626ba38d6ec50de1dd16251ffa35f4a1bcc4.
+
+- 2026-09-27T14:56:00+00:00: Independent exact-head review passed: two-file docs-only diff adds the
+  owner-backed first-customer journey and README route, preserving no-live-provider/asb-tui
+  boundary. Signed SSH+DCO head f06b2d1b. PR #368 exact head confirmed, mergeState CLEAN, all 13
+  named checks terminal SUCCESS.
