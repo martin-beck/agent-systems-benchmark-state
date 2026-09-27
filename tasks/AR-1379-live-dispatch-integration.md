@@ -19,11 +19,11 @@
   "plan": "../plans/AR-1379-live-dispatch-integration.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Integrate authenticated runtime live dispatch into asb run and sweep.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Production live dispatch integration",
-  "updated_at": "2026-09-24T03:33:48+00:00",
+  "updated_at": "2026-09-27T02:14:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1379-live-dispatch-integration"
 }
 ---
@@ -58,3 +58,8 @@ verified through the completed gates.
   SandboxLaunchInput, ProcessLimits, adapter identity, lease/relay/namespace/credential context,
   cancellation, and teardown. No production integration is possible without exposing authority or
   synthesizing inputs. Created dependency-valid AR-1380 for runtime-owned scheduler composition.
+
+- 2026-09-27T02:14:55+00:00: Dependencies AR-1378, AR-1377, AR-1366, AR-1364, and AR-1362 are
+  terminal done; AR-1380 scheduler composition and AR-1472 authenticated adapter are also merged.
+  Reopen this exact integration successor to wire production asb run/sweep without CLI authority,
+  using deterministic mock/replay tests.

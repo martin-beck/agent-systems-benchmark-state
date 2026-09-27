@@ -139,7 +139,13 @@
 
 ## Complete AR inventory
 
-### Blocked (70)
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1379](../tasks/AR-1379-live-dispatch-integration.md): Production live dispatch integration | Unclaimed | Integrate authenticated runtime live dispatch into asb run and sweep. | Promote and claim this dependency-valid production dispatch successor, refresh an isolated worktree, and wire the authenticated adapter into asb run/sweep. |
+
+### Blocked (69)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -185,7 +191,6 @@
 | P0 | [AR-1368](../tasks/AR-1368-control-receipt-runtime-source.md): Control receipt runtime source | Unclaimed | Provide the authenticated runtime-owned ControlClient receipt source required by AR-1329 production dispatch. | Promote and claim the missing runtime-owned ControlClient receipt source, then add the authenticated control operation and production enrollment materialization without exposing authority. |
 | P0 | [AR-1374](../tasks/AR-1374-cli-live-dispatch.md): Production live-provider dispatch | Unclaimed | Consume authenticated runtime receipts in production asb run and sweep dispatch. | Unblock after AR-1375 supplies the authenticated runtime control adapter and cross-crate bootstrap seam; then requalify run/sweep locally before any publication. |
 | P0 | [AR-1376](../tasks/AR-1376-runtime-live-adapter.md): Runtime-owned live adapter | Unclaimed | Materialize authenticated runtime receipts into opaque live dispatch attempts. | Audit blocker: ControlClient can issue RuntimeReceipt, but no runtime-owned authenticated chain store/source is available to validate the receipt. Do not synthesize a chain or accept caller authority. Create a successor for chain enrollment materialization before adapter implementation. |
-| P0 | [AR-1379](../tasks/AR-1379-live-dispatch-integration.md): Production live dispatch integration | Unclaimed | Integrate authenticated runtime live dispatch into asb run and sweep. | Promote and claim this dependency-valid production dispatch successor, refresh an isolated worktree, and wire the authenticated adapter into asb run/sweep. |
 | P0 | [AR-1382](../tasks/AR-1382-authenticated-live-execution-source.md): Authenticated live execution source | Unclaimed | Materialize authenticated runtime-owned live execution for asb run and sweep. | Promote and claim this dependency-valid authenticated execution-source successor, then implement runtime-owned scheduler materialization. |
 | P0 | [AR-1386](../tasks/AR-1386-live-cli-dispatch-integration.md): Production live CLI dispatch integration | Unclaimed | Integrate authenticated runtime live dispatch into production asb run and sweep. | Refresh the declared isolated worktree from protected main, integrate the authenticated runtime live dispatch source into production asb run and sweep, and add local provider-mock plus fail-closed egress/teardown tests. |
 | P0 | [AR-1387](../tasks/AR-1387-runtime-control-cli-bridge.md): Authenticated runtime-control CLI bridge | Unclaimed | Bridge authenticated runtime/control bootstrap state into the production CLI dispatch path. | Refresh the declared isolated worktree from protected main, add the authenticated runtime/control bootstrap-to-CLI bridge, and test opaque dispatch-source transfer without caller authority injection. |
@@ -509,4 +514,3 @@
 | P1 | [AR-0840](../tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | Unclaimed | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. |
 | P1 | [AR-0841](../tasks/AR-0841-frontend-local-transport.md): Implement frontend local transport | Unclaimed | Implement the local frontend control transport and authorization boundary. | Implement bounded owner-only Unix-socket transport with peer checks and fail-closed framing. |
 | P1 | [AR-0842](../tasks/AR-0842-frontend-run-lifecycle.md): Implement frontend run lifecycle | Unclaimed | Define and implement frontend-independent run lifecycle semantics. | Implement idempotent launch, cancellation, status reconnect, history, and recovery semantics. |
-| P1 | [AR-0843](../tasks/AR-0843-frontend-privacy-assurance.md): Assure frontend privacy and faults | Unclaimed | Qualify frontend privacy, artifact access, and fault behavior. | Monitor PR #69 exact-head CI at cca49ec3bea429a90a267600acf821cebe45c138; investigate any failure and do not merge without coordinator authorization. |
