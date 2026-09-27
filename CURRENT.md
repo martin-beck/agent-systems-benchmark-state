@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1426](tasks/AR-1426-evolving-literature-window-refresh.md): Evolving literature workload window refresh | Refresh evolving literature benchmark windows without stale or incomparable results. | Wait for Rust 36312453077, Emulated AArch64 36312453084, and Repository quality 36312453096; then record all eight green workflows and release done. | ar1332-record-replay-luna56 |
+| P1 | [AR-1426](tasks/AR-1426-evolving-literature-window-refresh.md): Evolving literature workload window refresh | Refresh evolving literature benchmark windows without stale or incomparable results. | Rerun failed AArch64 workflow 36312453084 once; then finish Rust/Repository Quality and all post-merge green verification. | ar1332-record-replay-luna56 |
 
 ## Blocked
 
