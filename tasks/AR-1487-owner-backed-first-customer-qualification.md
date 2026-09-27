@@ -10,7 +10,7 @@
     "AR-1486"
   ],
   "id": "AR-1487",
-  "next_action": "Run runtime replay/recovery focused gates, then full workspace/docs/privacy/release gates; independently review and commit.",
+  "next_action": "Run full workspace, docs, privacy, release and clean-tree gates; then independent review and signed commit.",
   "observed_branch": "feature/ar-1487-owner-backed-first-customer-qualification",
   "observed_dirty": 2,
   "observed_head": "79f88d3ca03120fd7d69f67cb292c96051a5e770",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the owner-backed credential-free local/mock/replay first-customer journey.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Owner-backed first-customer qualification",
-  "updated_at": "2026-09-27T14:05:05+00:00",
+  "updated_at": "2026-09-27T14:05:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1487-owner-backed-qualification"
 }
 ---
@@ -85,3 +85,8 @@ runtime-owned CLI; it excludes live providers and asb-tui.
 
 - 2026-09-27T14:05:05+00:00: Recorded command exit 0; command argv SHA-256
   83911413733d1821dd1056f35cfe01f02db8ea4f95317fc2775b5548f3e0594a.
+
+- 2026-09-27T14:05:34+00:00: Focused runtime qualification passed: asb-runtime control_owner 4/4,
+  launch_factory 15 passed/1 capability-ignored, live_service 43/43; asb-cli replay 4 tests plus
+  guide replay tutorial passed. One earlier combined cargo filter command exited 1 due invalid
+  multiple-filter syntax; rerun split serial filters passed.
