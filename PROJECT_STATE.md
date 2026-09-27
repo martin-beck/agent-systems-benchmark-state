@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #341 | `feature/ar-1471-control-to-runtime-chain-binding@d76d099dcaa5` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Bind control enrollment to runtime certificate chain |
+| #341 | `feature/ar-1471-control-to-runtime-chain-binding@d76d099dcaa5` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Bind control enrollment to runtime certificate chain |
 
 ## Recent workflows
 
@@ -18,7 +18,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 36282594622 | `d76d099dcaa5` | pull_request | Repository quality | completed:success |
 | 36282594593 | `d76d099dcaa5` | pull_request | Huawei MIT source headers | completed:success |
-| 36282594521 | `d76d099dcaa5` | pull_request | Rust verification | in_progress:- |
+| 36282594521 | `d76d099dcaa5` | pull_request | Rust verification | completed:success |
 | 36282594510 | `d76d099dcaa5` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36282594471 | `d76d099dcaa5` | pull_request | Formal assurance | completed:success |
 | 36282594454 | `d76d099dcaa5` | pull_request | Fault assurance | completed:success |
