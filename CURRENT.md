@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1492](tasks/AR-1492-customer-bundle-signing-handoff.md): Customer bundle signing handoff | Stage a deterministic customer bundle and provide an explicit external signing handoff and verifier. | Independent review, publish exact signed head, monitor required checks; merge only green. External signature handoff remains non-production. | ar1332-record-replay-luna56 |
+| P0 | [AR-1492](tasks/AR-1492-customer-bundle-signing-handoff.md): Customer bundle signing handoff | Stage a deterministic customer bundle and provide an explicit external signing handoff and verifier. | Monitor PR #371 exact head 1836d0f; merge only after all required checks and independent review are green. Do not claim customer release without external signature. | ar1332-record-replay-luna56 |
 
 ## Blocked
 

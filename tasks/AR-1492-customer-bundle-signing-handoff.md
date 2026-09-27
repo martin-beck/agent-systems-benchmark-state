@@ -9,7 +9,7 @@
     "AR-1491"
   ],
   "id": "AR-1492",
-  "next_action": "Independent review, publish exact signed head, monitor required checks; merge only green. External signature handoff remains non-production.",
+  "next_action": "Monitor PR #371 exact head 1836d0f; merge only after all required checks and independent review are green. Do not claim customer release without external signature.",
   "observed_branch": "release/ar-1492-customer-bundle-signing-handoff",
   "observed_dirty": 0,
   "observed_head": "1836d0f0bff012a9941085f61cac6fdc1cfead64",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stage a deterministic customer bundle and provide an explicit external signing handoff and verifier.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Customer bundle signing handoff",
-  "updated_at": "2026-09-27T16:19:56+00:00",
+  "updated_at": "2026-09-27T16:20:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1492-customer-bundle-signing-handoff"
 }
 ---
@@ -84,3 +84,8 @@ detached signature.
 
 - 2026-09-27T16:19:56+00:00: Recorded command exit 0; command argv SHA-256
   cf86b6fc7867072c3ef946b511b5bcf11a9af7b10d94f84dbe35ebfa76f7b1cb.
+
+- 2026-09-27T16:20:21+00:00: Independent review passed: three-file release-tooling/docs/test diff;
+  reuses existing deterministic builder primitives, refuses existing output/bad helpers, emits no
+  signature or private path, and preserves signed verifier/customer-release gate. Published PR #371
+  from exact SSH-signed+DCO head 1836d0f0bff012a9941085f61cac6fdc1cfead64.
