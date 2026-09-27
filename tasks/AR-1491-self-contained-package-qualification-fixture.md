@@ -12,17 +12,17 @@
   "id": "AR-1491",
   "next_action": "Promote and claim, then implement the non-production signed-test-key package qualification fixture and local/mock/replay harness.",
   "observed_branch": "qualification/ar-1491-self-contained-package-qualification-fixture",
-  "observed_dirty": 3,
-  "observed_head": "b048fef92f4bdb4eedd5379d645f4288a4b6ab20",
+  "observed_dirty": 0,
+  "observed_head": "f85435064f4a73c45ea1619d9a673bf67192457f",
   "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1491-self-contained-package-qualification-fixture.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a self-contained non-production package qualification fixture using the offline verifier test-key pattern.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Self-contained package qualification fixture",
-  "updated_at": "2026-09-27T15:46:35+00:00",
+  "updated_at": "2026-09-27T15:46:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1491-self-contained-package-qualification-fixture"
 }
 ---
