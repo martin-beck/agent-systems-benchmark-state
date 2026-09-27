@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1487-owner-backed-first-customer-qualification",
-  "checkpoint_commit": "4b94dcd7be505ebb5b34580db5023b95de7db8fd",
+  "checkpoint_commit": "0dc766a481788783a8748a5c1f1e24835c1174c3",
   "claim_expires": "2026-09-27T16:20:55+00:00",
   "depends_on": [
     "AR-1446",
@@ -10,7 +10,7 @@
     "AR-1486"
   ],
   "id": "AR-1487",
-  "next_action": "Merge PR #367 normal non-squash from exact head 4b94dcd7; then verify eight exact-main post-merge workflows.",
+  "next_action": "Monitor eight exact-main post-merge workflows for merge 0dc766a4; release done only after all terminal SUCCESS.",
   "observed_branch": "feature/ar-1487-owner-backed-first-customer-qualification",
   "observed_dirty": 0,
   "observed_head": "4b94dcd7be505ebb5b34580db5023b95de7db8fd",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the owner-backed credential-free local/mock/replay first-customer journey.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Owner-backed first-customer qualification",
-  "updated_at": "2026-09-27T14:25:56+00:00",
+  "updated_at": "2026-09-27T14:26:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1487-owner-backed-qualification"
 }
 ---
@@ -229,3 +229,9 @@ runtime-owned CLI; it excludes live providers and asb-tui.
 
 - 2026-09-27T14:25:56+00:00: Recorded command exit 0; command argv SHA-256
   2aa5c7ea9b63561f6f6903b517d296ae7d2b64f7055e142dea6bf66f76f672d9.
+
+- 2026-09-27T14:26:23+00:00: PR #367 merged at 2026-09-27T14:25:09Z. Merge commit
+  0dc766a481788783a8748a5c1f1e24835c1174c3; reviewed head 4b94dcd7. Exact-main workflows launched:
+  Emulated AArch64 36325841029, Hosted portability/native 36325841050, Rust 36325841109, Fault
+  36325841097, Huawei headers 36325841010 (SUCCESS), Credential-free 36325841041, Formal
+  36325841072, Repository quality 36325841032.
