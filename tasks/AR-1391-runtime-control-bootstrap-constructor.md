@@ -24,9 +24,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize authenticated runtime live authority into an opaque source without caller injection.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Runtime control bootstrap constructor",
-  "updated_at": "2026-09-27T02:42:28+00:00",
+  "updated_at": "2026-09-27T02:42:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1391-runtime-control-bootstrap-constructor"
 }
 ---
@@ -70,3 +70,6 @@ reachability.
   provider, or asb-tui.
 
 - 2026-09-27T02:42:28+00:00: Claimed by ar1332_record_replay_luna56.
+
+- 2026-09-27T02:42:44+00:00: Recorded command exit 0; command argv SHA-256
+  ff6d1fa7a7185010f75fcfafe4bdc1bdd5b9804d8c2b3e7abdd8a1b96cd81c63.
