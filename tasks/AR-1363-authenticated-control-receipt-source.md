@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Deliver authenticated runtime authority receipts through the versioned control boundary without exposing secrets or caller authority.",
-  "task_revision": 72,
+  "task_revision": 73,
   "title": "Authenticated control receipt source",
-  "updated_at": "2026-09-27T01:16:47+00:00",
+  "updated_at": "2026-09-27T01:16:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1363-authenticated-control-receipt-source"
 }
 ---
@@ -260,3 +260,6 @@ reachability.
   Emulated AArch64 36284742939, Repository quality 36284742895, Rust verification 36284742908. Fault
   fuzz and mutation and Formal models are all SUCCESS. No failure or hang evidence; continue bounded
   polling with heartbeat.
+
+- 2026-09-27T01:16:55+00:00: Recorded command exit 0; command argv SHA-256
+  0400894a8fb04528b541596044b098cf3fa6c69097907f04a4516b92624960dd.
