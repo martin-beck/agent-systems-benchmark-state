@@ -166,7 +166,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1489](../tasks/AR-1489-first-customer-package-consumption.md): First-customer package consumption | ar1332-record-replay-luna56 | Verify first-customer release package installation and owner-backed local/mock/replay consumption. | Publish signed exact head through handoffctl; monitor required PR checks and merge only when all green. |
+| P0 | [AR-1489](../tasks/AR-1489-first-customer-package-consumption.md): First-customer package consumption | ar1332-record-replay-luna56 | Verify first-customer release package installation and owner-backed local/mock/replay consumption. | Monitor PR #369 exact head c4578eec; merge only after all required checks and independent review are green. |
 
 ### Blocked (73)
 

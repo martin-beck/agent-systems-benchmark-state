@@ -9,7 +9,7 @@
     "AR-1488"
   ],
   "id": "AR-1489",
-  "next_action": "Publish signed exact head through handoffctl; monitor required PR checks and merge only when all green.",
+  "next_action": "Monitor PR #369 exact head c4578eec; merge only after all required checks and independent review are green.",
   "observed_branch": "feature/ar-1489-first-customer-package-consumption",
   "observed_dirty": 0,
   "observed_head": "c4578eecd93183eaadaf9c34defbc4137ba03657",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Verify first-customer release package installation and owner-backed local/mock/replay consumption.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "First-customer package consumption",
-  "updated_at": "2026-09-27T15:15:56+00:00",
+  "updated_at": "2026-09-27T15:16:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1489-first-customer-package-consumption"
 }
 ---
@@ -87,3 +87,7 @@ touching asb-tui or requiring a live provider.
 
 - 2026-09-27T15:15:56+00:00: Recorded command exit 0; command argv SHA-256
   e84482ef76dc4486a872ddc324daba82f7bbeba993b6b7f883f57bf0e2a86aea.
+
+- 2026-09-27T15:16:22+00:00: Published PR #369 from exact signed/DCO head
+  c4578eecd93183eaadaf9c34defbc4137ba03657; branch
+  feature/ar-1489-first-customer-package-consumption pushed successfully.
