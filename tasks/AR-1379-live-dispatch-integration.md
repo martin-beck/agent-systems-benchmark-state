@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate authenticated runtime live dispatch into asb run and sweep.",
-  "task_revision": 57,
+  "task_revision": 58,
   "title": "Production live dispatch integration",
-  "updated_at": "2026-09-27T02:32:03+00:00",
+  "updated_at": "2026-09-27T02:32:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1379-live-dispatch-integration"
 }
 ---
@@ -203,3 +203,6 @@ verified through the completed gates.
 - 2026-09-27T02:32:03+00:00: PR #344 exact-head poll: passed Bounded fuzz, AWQ shadow, Kani, Loom,
   matcher/SLO, retained faults, TLC/Alloy, Huawei headers, and platform evidence. Emulated aarch64,
   Rust checks, and Policy/coverage/supply chain remain pending; no failures; no merge attempted.
+
+- 2026-09-27T02:32:11+00:00: Recorded command exit 1; command argv SHA-256
+  a91c4272839ebb8d62b277b17ab68e00a0e36aee9d398c1f9f2541004fdf4aa2.
