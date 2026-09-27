@@ -164,7 +164,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1487](../tasks/AR-1487-owner-backed-first-customer-qualification.md): Owner-backed first-customer qualification | ar1332-record-replay-luna56 | Qualify the owner-backed credential-free local/mock/replay first-customer journey. | Publish signed exact head through handoffctl; monitor required PR checks, then merge only if all green and verify eight post-merge workflows. |
+| P0 | [AR-1487](../tasks/AR-1487-owner-backed-first-customer-qualification.md): Owner-backed first-customer qualification | ar1332-record-replay-luna56 | Qualify the owner-backed credential-free local/mock/replay first-customer journey. | Monitor PR #367 exact head 4b94dcd7; record all required checks and independent review. Merge only when all green. |
 
 ### Blocked (73)
 

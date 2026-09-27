@@ -10,7 +10,7 @@
     "AR-1486"
   ],
   "id": "AR-1487",
-  "next_action": "Publish signed exact head through handoffctl; monitor required PR checks, then merge only if all green and verify eight post-merge workflows.",
+  "next_action": "Monitor PR #367 exact head 4b94dcd7; record all required checks and independent review. Merge only when all green.",
   "observed_branch": "feature/ar-1487-owner-backed-first-customer-qualification",
   "observed_dirty": 0,
   "observed_head": "4b94dcd7be505ebb5b34580db5023b95de7db8fd",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the owner-backed credential-free local/mock/replay first-customer journey.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Owner-backed first-customer qualification",
-  "updated_at": "2026-09-27T14:14:57+00:00",
+  "updated_at": "2026-09-27T14:15:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1487-owner-backed-qualification"
 }
 ---
@@ -158,3 +158,7 @@ runtime-owned CLI; it excludes live providers and asb-tui.
 
 - 2026-09-27T14:14:57+00:00: Recorded command exit 0; command argv SHA-256
   d9d3dd72959431fa17ca205ee8c0675a1ef25c3821177f06f9489aeb27a78c46.
+
+- 2026-09-27T14:15:25+00:00: Published PR #367 from exact signed/DCO head
+  4b94dcd7be505ebb5b34580db5023b95de7db8fd; branch
+  feature/ar-1487-owner-backed-first-customer-qualification pushed successfully.
