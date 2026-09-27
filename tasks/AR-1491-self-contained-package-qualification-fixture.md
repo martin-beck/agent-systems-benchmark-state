@@ -10,7 +10,7 @@
     "AR-1489"
   ],
   "id": "AR-1491",
-  "next_action": "Monitor PR #370 exact head b4f5328; merge only after all required checks and independent review are green, then verify eight post-merge workflows.",
+  "next_action": "Monitor PR #370 exact head b4f5328 until all 13 required checks and independent review are green; merge only then.",
   "observed_branch": "qualification/ar-1491-self-contained-package-qualification-fixture",
   "observed_dirty": 0,
   "observed_head": "b4f532821cfdc10dc38aee856d8297e65dd9a2ba",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a self-contained non-production package qualification fixture using the offline verifier test-key pattern.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Self-contained package qualification fixture",
-  "updated_at": "2026-09-27T15:52:33+00:00",
+  "updated_at": "2026-09-27T15:53:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1491-self-contained-package-qualification-fixture"
 }
 ---
@@ -119,3 +119,9 @@ No live-provider or release-signing input may be fabricated.
 
 - 2026-09-27T15:52:33+00:00: Recorded command exit 0; command argv SHA-256
   482511722c98150e1cfc0d86730c6025f997f1a30a8227f89497edea70c5e901.
+
+- 2026-09-27T15:53:00+00:00: Publication anomaly: immediate gh pr view by number returned GraphQL
+  PullRequest-not-found; retry by canonical PR URL succeeded. PR #370 OPEN, exact head
+  b4f532821cfdc10dc38aee856d8297e65dd9a2ba, mergeState UNSTABLE while checks run. 6 named checks are
+  in progress plus fault/formal child jobs; completed SUCCESS: AWQ shadow, retained faults, Huawei
+  headers. No merge attempted.
