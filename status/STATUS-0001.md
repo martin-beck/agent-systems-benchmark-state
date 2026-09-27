@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**500 ARs tracked** across 5 active status categories.
+**500 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 72 |
-| **Planned** | Defined work awaiting promotion or dependencies | 56 |
+| **Planned** | Defined work awaiting promotion or dependencies | 55 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 352 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -571,7 +571,7 @@ flowchart LR
         AR_1476["AR-1476 - Done"]:::status_done
         AR_1477["AR-1477 - Blocked"]:::status_blocked
         AR_1478["AR-1478 - Done"]:::status_done
-        AR_1479["AR-1479 - Planned"]:::status_planned
+        AR_1479["AR-1479 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003

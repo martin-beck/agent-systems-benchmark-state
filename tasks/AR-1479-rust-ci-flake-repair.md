@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1479-rust-ci-flake-repair.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Repair the unrelated Rust state-root collision and malformed-ready-marker timing flakes blocking AR-1420 exact-head CI.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Rust CI timing and state-root flake repair",
-  "updated_at": "2026-09-27T07:24:59+00:00",
+  "updated_at": "2026-09-27T07:25:06+00:00",
   "worktree_key": ""
 }
 ---
@@ -44,3 +44,6 @@ requalified. Preserve fail-closed cleanup and bounded execution semantics.
 - 2026-09-27T07:24:56+00:00: Claimed by coordinator.
 
 - 2026-09-27T07:24:59+00:00: Ready for worker promotion.
+
+- 2026-09-27T07:25:06+00:00: Promote the narrowly scoped Rust flake repair before AR-1420
+  requalification; reproduce both failures first.
