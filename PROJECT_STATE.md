@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #344 | `feature/ar-1379-live-dispatch-integration@8e22be0fb901` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): integrate runtime-owned live dispatch |
+| #344 | `feature/ar-1379-live-dispatch-integration@8e22be0fb901` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): integrate runtime-owned live dispatch |
 
 ## Recent workflows
 
@@ -19,7 +19,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36289923797 | `8e22be0fb901` | pull_request | Fault assurance | completed:success |
 | 36289923787 | `8e22be0fb901` | pull_request | Emulated aarch64 portability | completed:success |
 | 36289923778 | `8e22be0fb901` | pull_request | Formal assurance | completed:success |
-| 36289923770 | `8e22be0fb901` | pull_request | Repository quality | in_progress:- |
+| 36289923770 | `8e22be0fb901` | pull_request | Repository quality | completed:success |
 | 36289923769 | `8e22be0fb901` | pull_request | Huawei MIT source headers | completed:success |
 | 36289923761 | `8e22be0fb901` | pull_request | Hosted portability and native qualification | completed:success |
 | 36289923757 | `8e22be0fb901` | pull_request | Agent Workflow Quality shadow | completed:success |
