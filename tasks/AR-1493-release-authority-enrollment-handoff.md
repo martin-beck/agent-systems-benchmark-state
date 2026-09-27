@@ -1,7 +1,7 @@
 ---
 {
   "branch": "release/ar-1493-release-authority-enrollment-handoff",
-  "checkpoint_commit": "9d2b22a80cfe9c6d9a01daec1e257fd93b99d37d",
+  "checkpoint_commit": "e1be259c9abb2a901998d3ca9b82521edd3fa2f8",
   "claim_expires": "2026-09-27T19:05:09+00:00",
   "depends_on": [
     "AR-1461",
@@ -10,7 +10,7 @@
     "AR-1492"
   ],
   "id": "AR-1493",
-  "next_action": "Continue monitoring PR #372 exact head 9d2b22a; required checks are active, merge only after all terminal SUCCESS and independent review.",
+  "next_action": "Monitor eight exact-main post-merge workflows for e1be259c; release AR-1493 done only after all terminal SUCCESS.",
   "observed_branch": "release/ar-1493-release-authority-enrollment-handoff",
   "observed_dirty": 0,
   "observed_head": "9d2b22a80cfe9c6d9a01daec1e257fd93b99d37d",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define and validate the external release-authority enrollment and signed-bundle verification handoff.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Release-authority enrollment handoff",
-  "updated_at": "2026-09-27T17:12:32+00:00",
+  "updated_at": "2026-09-27T17:13:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1493-release-authority-enrollment-handoff"
 }
 ---
@@ -185,3 +185,9 @@ and preserve AR-1490 as the customer-release blocker.
 
 - 2026-09-27T17:12:32+00:00: Recorded command exit 0; command argv SHA-256
   65c48537df954c87b1d88d29f6fc784ec1946325f89a10c698d249fe7fdf9686.
+
+- 2026-09-27T17:13:01+00:00: PR #372 merged normally at 2026-09-27T17:11:45Z. Reviewed topic head
+  9d2b22a80cfe9c6d9a01daec1e257fd93b99d37d; merge SHA e1be259c9abb2a901998d3ca9b82521edd3fa2f8.
+  Post-merge runs launched on exact merge: Rust 36336026563, Repository Quality 36336026573, AArch64
+  36336026554, Formal 36336026579, credential-free 36336026586, hosted 36336026588, fault
+  36336026566 are IN_PROGRESS; Huawei 36336026608 SUCCESS.
