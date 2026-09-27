@@ -18,7 +18,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 36304800227 | `1015a4613a27` | push | Credential-free benchmark path | completed:success |
 | 36304800214 | `1015a4613a27` | push | Rust verification | in_progress:- |
-| 36304800212 | `1015a4613a27` | push | Formal assurance | in_progress:- |
+| 36304800212 | `1015a4613a27` | push | Formal assurance | completed:success |
 | 36304800202 | `1015a4613a27` | push | Hosted portability and native qualification | completed:success |
 | 36304800200 | `1015a4613a27` | push | Repository quality | in_progress:- |
 | 36304800192 | `1015a4613a27` | push | Huawei MIT source headers | completed:success |
