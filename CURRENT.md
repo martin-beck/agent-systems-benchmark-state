@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1492](tasks/AR-1492-customer-bundle-signing-handoff.md): Customer bundle signing handoff | Stage a deterministic customer bundle and provide an explicit external signing handoff and verifier. | Repository Quality 36333580327 is an existing timing-flake; focused serial reproduction passed. Request/perform one exact merge-SHA workflow rerun, then verify all eight terminal SUCCESS before release. | ar1332-record-replay-luna56 |
+| P0 | [AR-1492](tasks/AR-1492-customer-bundle-signing-handoff.md): Customer bundle signing handoff | Stage a deterministic customer bundle and provide an explicit external signing handoff and verifier. | Monitor Repository Quality rerun 36333580327 (job 108661578872) to terminal SUCCESS; then verify all eight exact-merge workflows and release. | ar1332-record-replay-luna56 |
 
 ## Blocked
 

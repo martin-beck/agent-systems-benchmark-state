@@ -9,7 +9,7 @@
     "AR-1491"
   ],
   "id": "AR-1492",
-  "next_action": "Repository Quality 36333580327 is an existing timing-flake; focused serial reproduction passed. Request/perform one exact merge-SHA workflow rerun, then verify all eight terminal SUCCESS before release.",
+  "next_action": "Monitor Repository Quality rerun 36333580327 (job 108661578872) to terminal SUCCESS; then verify all eight exact-merge workflows and release.",
   "observed_branch": "release/ar-1492-customer-bundle-signing-handoff",
   "observed_dirty": 0,
   "observed_head": "050b298c99724f7265e8dec47c6e801b3fb53e85",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stage a deterministic customer bundle and provide an explicit external signing handoff and verifier.",
-  "task_revision": 64,
+  "task_revision": 65,
   "title": "Customer bundle signing handoff",
-  "updated_at": "2026-09-27T16:42:26+00:00",
+  "updated_at": "2026-09-27T16:42:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1492-customer-bundle-signing-handoff"
 }
 ---
@@ -235,3 +235,8 @@ detached signature.
 - 2026-09-27T16:42:26+00:00: Recorded command timeout; classification=SUBPROCESS_TIMEOUT;
   deadline=60.0s; command argv SHA-256
   f5b2c6a707ee8428e0c1473bcf4a39108f7db11889edc2b035681f0e366791db.
+
+- 2026-09-27T16:42:41+00:00: Approved rerun of Repository Quality on exact merge SHA a2d9be3 started
+  at 16:40:45Z and is IN_PROGRESS at 16:42:26Z. Job 108661578872 has completed policy setup
+  successfully and is enforcing canonical contracts; remaining steps pending. Prior failure remains
+  preserved as existing llvm-cov timing assertion; isolated serial reproduction passed.
