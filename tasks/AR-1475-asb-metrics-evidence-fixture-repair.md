@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the deterministic ProbeRejected versus MalformedEvidence fixture failure blocking PR #345.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Repair asb-metrics evidence fixture classification",
-  "updated_at": "2026-09-27T04:10:45+00:00",
+  "updated_at": "2026-09-27T04:11:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1475-asb-metrics-evidence-fixture-repair"
 }
 ---
@@ -149,4 +149,7 @@ classification or fixture behavior before changing code.
   Only Emulated aarch64 portability 36293087730 remains IN_PROGRESS; no merge yet.
 
 - 2026-09-27T04:10:45+00:00: Recorded command exit 0; command argv SHA-256
+  2afe1526c628bf8033846554cc2a00ad779c8770e06a45617af3ce97c9bf8e93.
+
+- 2026-09-27T04:11:02+00:00: Recorded command exit 0; command argv SHA-256
   2afe1526c628bf8033846554cc2a00ad779c8770e06a45617af3ce97c9bf8e93.
