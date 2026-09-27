@@ -149,11 +149,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1424](../tasks/AR-1424-all-literature-selector-campaign.md): Complete literature selector and local campaign matrix | Unclaimed | Make all locally executable literature workloads selectable and campaignable beside built-in fixtures. | Promote after AR-1423, AR-1430, AR-1420, and AR-1416 are released; implement the complete local-mock literature selector and campaign matrix. |
+| P1 | [AR-1424](../tasks/AR-1424-all-literature-selector-campaign.md): Complete literature selector and local campaign matrix | ar1332-record-replay-luna56 | Make all locally executable literature workloads selectable and campaignable beside built-in fixtures. | Promote after AR-1423, AR-1430, AR-1420, and AR-1416 are released; implement the complete local-mock literature selector and campaign matrix. |
 
 ### Blocked (71)
 
@@ -512,4 +512,3 @@
 | P1 | [AR-0704](../tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | PR #119 exact head 4630f90 is rebased onto protected main 5ddac12. Fresh exact-head checks were absent immediately after force-push; close/reopen retriggered them. At last query all 12 checks are pending except AWQ shadow and SPDX headers pass. Wait for every required check terminal success; do not merge on partial/pending evidence. |
 | P1 | [AR-0707](../tasks/AR-0707-emulated-aarch64-portability.md): Qualify emulated aarch64 portability | Unclaimed | Add explicit emulated-aarch64 portability qualification without claiming native support. | Provide a reproducible x86_64-hosted aarch64 VM/emulation lane for userspace portability and negative qualification only. |
 | P1 | [AR-0801](../tasks/AR-0801-terminal-interface.md): Implement terminal and automation interfaces | Unclaimed | Provide doctor, plan, run, sweep, compare and report with stable JSON output. | No further AR-0801 action; preserve the verified doctor, plan, run, sweep, compare, report, and serve surface, with record and replay explicitly unsupported. |
-| P1 | [AR-0803](../tasks/AR-0803-frontend-control-api.md): Define the frontend control API | Unclaimed | Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary. | Await coordinator authorization to integrate exact green PR #63 head 8d7d90014dbcf4df2f08be90b08392776d702a11; do not rewrite or merge meanwhile. |
