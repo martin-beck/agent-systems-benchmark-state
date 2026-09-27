@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1387-runtime-control-cli-bridge",
   "checkpoint_commit": "25548846966e37646dded8d67ed8ee5123b8bc32",
-  "claim_expires": "2026-09-27T04:41:48+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1385",
     "AR-1384",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1387-runtime-control-cli-bridge",
   "observed_dirty": 0,
   "observed_head": "25548846966e37646dded8d67ed8ee5123b8bc32",
-  "owner": "ar1332_record_replay_luna56",
+  "owner": "",
   "plan": "../plans/AR-1387-runtime-control-cli-bridge.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Bridge authenticated runtime/control bootstrap state into the production CLI dispatch path.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Authenticated runtime-control CLI bridge",
-  "updated_at": "2026-09-27T02:42:08+00:00",
+  "updated_at": "2026-09-27T02:42:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1387-runtime-control-cli-bridge"
 }
 ---
@@ -104,3 +104,10 @@ reachability.
 - 2026-09-27T02:42:08+00:00: Metadata correction after lock recovery: AR-1387 audit is complete and
   implementation remains blocked by the missing runtime-owned bootstrap constructor. Successor
   AR-1391 is the next scoped action; no product changes made.
+
+- 2026-09-27T02:42:16+00:00: AR-1387 remains blocked and is now ownerless. Protected-main audit
+  found no safe in-scope bridge: normal CLI run/sweep still has no authenticated runtime source;
+  private materialize_handle requires runtime-owned policy/allowlist, lease/relay roots, tool pins,
+  credential capability, namespace, and teardown inputs. Do not expose or synthesize authority. Next
+  action is AR-1391 runtime-control bootstrap constructor with the concrete authenticated
+  chain-bound opaque-source contract; preserve AR-1329/live provider optional.
