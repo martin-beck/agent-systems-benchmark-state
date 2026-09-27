@@ -10,18 +10,18 @@
   ],
   "id": "AR-1484",
   "next_action": "Promote and claim, then inspect protocol/runtime identifiers and add the smallest stable owner contract with local/mock/replay tests.",
-  "observed_branch": "",
-  "observed_dirty": 0,
-  "observed_head": "",
+  "observed_branch": "feature/ar-1484-runtime-control-owner-contract",
+  "observed_dirty": 3,
+  "observed_head": "fdc7f59f83f647ce099439b003848291e81dd3bb",
   "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1484-runtime-control-owner-contract.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define stable runtime/control process-owner lifecycle and opaque handoff contract.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Runtime/control process-owner contract",
-  "updated_at": "2026-09-27T12:10:42+00:00",
+  "updated_at": "2026-09-27T12:10:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1484-runtime-control-owner-contract"
 }
 ---
