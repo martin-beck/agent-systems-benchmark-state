@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1425](tasks/AR-1425-literature-workload-release-readiness.md): Literature workload release-readiness gate | Independently verify release readiness of the complete built-in and literature workload surface. | Release done after independent audit; no successor required. Future native/official qualification remains separately gated. | ar1332-record-replay-luna56 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -479,6 +473,7 @@ Never edit this file directly.
 | P1 | [AR-1422](tasks/AR-1422-stale-agent-catalog-pr-cleanup.md): Stale agent-catalog PR cleanup | Close stale conflicting agent-catalog PR #306 through durable coordinator evidence. | Closure evidence complete. Re-run doctor --live after concurrent state-worker AR-1421 changes settle; then release AR-1422 done. Do not modify AR-1421 files. | - |
 | P1 | [AR-1423](tasks/AR-1423-literature-docs-registry-reconciliation.md): Exhaustive literature docs-to-registry reconciliation | Reconcile all literature benchmark mentions with strict registry identities and framework boundaries. | Publish PR from exact clean head, obtain independent review and required CI, then merge and complete post-merge assurance workflows. | - |
 | P1 | [AR-1424](tasks/AR-1424-all-literature-selector-campaign.md): Complete literature selector and local campaign matrix | Make all locally executable literature workloads selectable and campaignable beside built-in fixtures. | Monitor exact-main post-merge workflows for 6baa7ac; after all eight green, release AR-1424 done. | - |
+| P1 | [AR-1425](tasks/AR-1425-literature-workload-release-readiness.md): Literature workload release-readiness gate | Independently verify release readiness of the complete built-in and literature workload surface. | Release done after independent audit; no successor required. Future native/official qualification remains separately gated. | - |
 | P1 | [AR-1430](tasks/AR-1430-literature-workload-catalog-gap-closure.md): Literature workload catalog gap closure | Close documented literature workload identity and selector gaps without enabling live providers or external acquisition. | Run full local quality gates, publish exact-head PR, obtain independent review, merge, monitor seven post-merge workflows, then release. | - |
 | P1 | [AR-1436](tasks/AR-1436-local-guided-cli-wrapper.md): Local guided CLI wrapper | Add a catalog-driven guided CLI wrapper for deterministic local mock qualification. | No further action; PR #317 merged and the recorded post-merge qualification is complete. | - |
 | P1 | [AR-1437](tasks/AR-1437-local-record-replay-campaign.md): Local record/replay campaign qualification | Qualify deterministic local record/replay and campaign journeys over the runtime mock. | No further action; PR #318 merged and the recorded seven-workflow qualification is complete. | - |
