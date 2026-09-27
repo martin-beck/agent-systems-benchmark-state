@@ -149,11 +149,11 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1479](../tasks/AR-1479-rust-ci-flake-repair.md): Rust CI timing and state-root flake repair | coordinator | Repair the unrelated Rust state-root collision and malformed-ready-marker timing flakes blocking AR-1420 exact-head CI. | Promote and claim the isolated repair worktree; reproduce both exact Rust failures before changing any test or synchronization code. |
+| P0 | [AR-1479](../tasks/AR-1479-rust-ci-flake-repair.md): Rust CI timing and state-root flake repair | Unclaimed | Repair the unrelated Rust state-root collision and malformed-ready-marker timing flakes blocking AR-1420 exact-head CI. | Promote and claim the isolated repair worktree; reproduce both exact Rust failures before changing any test or synchronization code. |
 
 ### Blocked (72)
 

@@ -2,22 +2,22 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-27T07:53:57+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1479",
   "next_action": "Promote and claim the isolated repair worktree; reproduce both exact Rust failures before changing any test or synchronization code.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "coordinator",
+  "owner": "",
   "plan": "../plans/AR-1479-rust-ci-flake-repair.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Repair the unrelated Rust state-root collision and malformed-ready-marker timing flakes blocking AR-1420 exact-head CI.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Rust CI timing and state-root flake repair",
-  "updated_at": "2026-09-27T07:24:27+00:00",
+  "updated_at": "2026-09-27T07:24:42+00:00",
   "worktree_key": ""
 }
 ---
@@ -37,3 +37,6 @@ requalified. Preserve fail-closed cleanup and bounded execution semantics.
 
 - 2026-09-27T07:24:27+00:00: Recorded command exit 0; command argv SHA-256
   5e37231cb5ae60ecf4b241f423986a1be9e7e3d7aa0bb2f8583b1a5d8201d379.
+
+- 2026-09-27T07:24:42+00:00: Created detailed plan and task for unrelated Rust state-root and
+  malformed-ready-marker flakes; release coordinator claim for worker promotion.
