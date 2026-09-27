@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1474-runtime-authority-input-resolver",
   "checkpoint_commit": "56d284c2d292163e2724318b0443f53211b4f9e4",
-  "claim_expires": "2026-09-27T05:52:02+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1362",
     "AR-1471",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1474-runtime-authority-input-resolver",
   "observed_dirty": 0,
   "observed_head": "56d284c2d292163e2724318b0443f53211b4f9e4",
-  "owner": "ar1332_record_replay_luna56",
+  "owner": "",
   "plan": "../plans/AR-1474-runtime-authority-input-resolver.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority.",
-  "task_revision": 68,
+  "task_revision": 69,
   "title": "Runtime-owned authority-input resolver",
-  "updated_at": "2026-09-27T03:53:08+00:00",
+  "updated_at": "2026-09-27T03:53:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1474-runtime-authority-input-resolver"
 }
 ---
@@ -227,3 +227,9 @@ authority, privacy, lifecycle, formal, or egress contracts.
   kernel.rs:718, expected MalformedEvidence but got ProbeRejected. First run and retry both fail;
   unrelated to AR-1474 files. Repository quality 36292250172 also failed coverage after workspace
   tests aborted. Do not waive gates or merge PR #345.
+
+- 2026-09-27T03:53:10+00:00: Blocked/ownerless: exact-head PR #345 cannot merge because Rust
+  workflow 36292250053 reproduced the same unrelated asb-metrics assertion twice (expected
+  MalformedEvidence, got ProbeRejected at crates/asb-metrics/src/kernel.rs:718); repository quality
+  coverage also failed after workspace interruption. Next action: create narrow asb-metrics repair
+  successor, then rerun PR validation.
