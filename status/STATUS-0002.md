@@ -163,11 +163,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1490](../tasks/AR-1490-fresh-package-runtime-acceptance.md): Fresh package runtime acceptance | Unclaimed | Run fresh package first-customer runtime acceptance and produce an explicit readiness report. | Promote and claim, then audit exact package and clean-environment inputs before executing the local/mock/replay readiness run. |
+| P0 | [AR-1490](../tasks/AR-1490-fresh-package-runtime-acceptance.md): Fresh package runtime acceptance | ar1332-record-replay-luna56 | Run fresh package first-customer runtime acceptance and produce an explicit readiness report. | Promote and claim, then audit exact package and clean-environment inputs before executing the local/mock/replay readiness run. |
 
 ### Blocked (73)
 

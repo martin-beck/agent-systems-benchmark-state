@@ -2,7 +2,7 @@
 {
   "branch": "qualification/ar-1490-fresh-package-runtime-acceptance",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-27T17:36:29+00:00",
   "depends_on": [
     "AR-1461",
     "AR-1462",
@@ -14,15 +14,15 @@
   "observed_branch": "qualification/ar-1490-fresh-package-runtime-acceptance",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1490-fresh-package-runtime-acceptance.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Run fresh package first-customer runtime acceptance and produce an explicit readiness report.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Fresh package runtime acceptance",
-  "updated_at": "2026-09-27T15:36:26+00:00",
+  "updated_at": "2026-09-27T15:36:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1490-fresh-package-runtime-acceptance"
 }
 ---
@@ -37,3 +37,5 @@ when exact package or clean-environment inputs are absent.
 
 - 2026-09-27T15:36:26+00:00: Dependencies AR-1461, AR-1462, AR-1488, and AR-1489 are done. Promote
   fresh ASB package/runtime acceptance with local/mock/replay-only readiness evidence.
+
+- 2026-09-27T15:36:29+00:00: Claimed by ar1332-record-replay-luna56.

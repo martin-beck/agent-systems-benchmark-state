@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1490](tasks/AR-1490-fresh-package-runtime-acceptance.md): Fresh package runtime acceptance | Run fresh package first-customer runtime acceptance and produce an explicit readiness report. | Promote and claim, then audit exact package and clean-environment inputs before executing the local/mock/replay readiness run. | - |
+| P0 | [AR-1490](tasks/AR-1490-fresh-package-runtime-acceptance.md): Fresh package runtime acceptance | Run fresh package first-customer runtime acceptance and produce an explicit readiness report. | Promote and claim, then audit exact package and clean-environment inputs before executing the local/mock/replay readiness run. | ar1332-record-replay-luna56 |
 
 ## Blocked
 
