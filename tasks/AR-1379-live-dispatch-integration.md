@@ -13,17 +13,17 @@
   "id": "AR-1379",
   "next_action": "Implement the narrow runtime-owned control-session/source injection seam: production run/sweep must receive only LiveProviderRuntimeDispatchSource; add positive and fail-closed CLI tests, then run focused/full gates.",
   "observed_branch": "feature/ar-1379-live-dispatch-integration",
-  "observed_dirty": 1,
-  "observed_head": "363b21f81d5c5ab364c2e2a923bd82676feaf343",
+  "observed_dirty": 0,
+  "observed_head": "11f3db5078dfa122c1c9c8b533de4a53732424f4",
   "owner": "ar1379-live-dispatch-luna56",
   "plan": "../plans/AR-1379-live-dispatch-integration.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate authenticated runtime live dispatch into asb run and sweep.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Production live dispatch integration",
-  "updated_at": "2026-09-27T02:23:03+00:00",
+  "updated_at": "2026-09-27T02:23:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1379-live-dispatch-integration"
 }
 ---
