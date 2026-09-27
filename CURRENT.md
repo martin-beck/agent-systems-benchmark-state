@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1487](tasks/AR-1487-owner-backed-first-customer-qualification.md): Owner-backed first-customer qualification | Qualify the owner-backed credential-free local/mock/replay first-customer journey. | Promote and claim, then qualify the owner-backed credential-free local/mock/replay journey on current protected main. | - |
+| P0 | [AR-1487](tasks/AR-1487-owner-backed-first-customer-qualification.md): Owner-backed first-customer qualification | Qualify the owner-backed credential-free local/mock/replay first-customer journey. | Promote and claim, then qualify the owner-backed credential-free local/mock/replay journey on current protected main. | ar1332-record-replay-luna56 |
 
 ## Blocked
 

@@ -160,11 +160,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1487](../tasks/AR-1487-owner-backed-first-customer-qualification.md): Owner-backed first-customer qualification | Unclaimed | Qualify the owner-backed credential-free local/mock/replay first-customer journey. | Promote and claim, then qualify the owner-backed credential-free local/mock/replay journey on current protected main. |
+| P0 | [AR-1487](../tasks/AR-1487-owner-backed-first-customer-qualification.md): Owner-backed first-customer qualification | ar1332-record-replay-luna56 | Qualify the owner-backed credential-free local/mock/replay first-customer journey. | Promote and claim, then qualify the owner-backed credential-free local/mock/replay journey on current protected main. |
 
 ### Blocked (73)
 
