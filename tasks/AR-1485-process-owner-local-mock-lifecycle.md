@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement runtime-owned local/mock process lifecycle and opaque-source handoff.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Process-owner local/mock lifecycle",
-  "updated_at": "2026-09-27T12:56:07+00:00",
+  "updated_at": "2026-09-27T12:56:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1485-process-owner-local-mock-lifecycle"
 }
 ---
@@ -85,3 +85,6 @@ authority.
   https://github.com/martin-beck/agent-systems-benchmark/pull/359 from signed/DCO head
   f01b7b11b5dcd0152482f26663fcc36c98da7cbe. Base is protected main; clean tree and focused/full
   gates passed before push.
+
+- 2026-09-27T12:56:23+00:00: Recorded command exit 0; command argv SHA-256
+  46168962d8afc0906a1dfe110cd2187d5a65b7af3bb773bc41e3b9c18cfdb493.
