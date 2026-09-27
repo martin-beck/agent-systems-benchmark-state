@@ -18,11 +18,11 @@
   "plan": "../plans/AR-1474-runtime-authority-input-resolver.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority.",
-  "task_revision": 113,
+  "task_revision": 114,
   "title": "Runtime-owned authority-input resolver",
-  "updated_at": "2026-09-27T04:43:22+00:00",
+  "updated_at": "2026-09-27T04:53:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1474-runtime-authority-input-resolver"
 }
 ---
@@ -366,3 +366,6 @@ authority, privacy, lifecycle, formal, or egress contracts.
   state-root retry passed in Rust job 108550561928, so this is a separate deterministic coverage
   gate. Next action: create a narrow coverage-floor repair successor for PR #345 and rerun
   exact-head validation; do not waive or merge.
+
+- 2026-09-27T04:53:19+00:00: AR-1476 current-base coverage requalification is 90.35% and
+  repository-quality rerun 108553511224 is active; resume PR validation.
