@@ -11,7 +11,7 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #350 | `feature/ar-1420-literature-workload-campaign-integration@2884508a6236` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: integrate literature workload campaigns |
-| #352 | `repair/ar-1479-rust-ci-flake-repair@52368cd91d9b` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | ci: serialize credential-free workspace tests |
+| #352 | `repair/ar-1479-rust-ci-flake-repair@52368cd91d9b` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | ci: serialize credential-free workspace tests |
 
 ## Recent workflows
 
@@ -25,7 +25,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36304356181 | `52368cd91d9b` | pull_request | Credential-free benchmark path | completed:success |
 | 36304356164 | `52368cd91d9b` | pull_request | Rust verification | in_progress:- |
 | 36304356147 | `52368cd91d9b` | pull_request | Fault assurance | completed:success |
-| 36304356118 | `52368cd91d9b` | pull_request | Formal assurance | in_progress:- |
+| 36304356118 | `52368cd91d9b` | pull_request | Formal assurance | completed:success |
 | 36304246863 | `031f2bc803af` | pull_request | Credential-free benchmark path | completed:success |
 | 36304246759 | `031f2bc803af` | pull_request | Repository quality | completed:failure |
 | 36304246754 | `031f2bc803af` | pull_request | Rust verification | completed:cancelled |
