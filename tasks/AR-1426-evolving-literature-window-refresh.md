@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Refresh evolving literature benchmark windows without stale or incomparable results.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Evolving literature workload window refresh",
-  "updated_at": "2026-09-27T10:30:34+00:00",
+  "updated_at": "2026-09-27T10:31:19+00:00",
   "worktree_key": ""
 }
 ---
@@ -174,3 +174,6 @@ requires live providers or upstream downloads during development or CI.
   SUCCESS; Hosted 36312453113 SUCCESS; Rust 36312453077, Emulated AArch64 36312453084, Repository
   quality 36312453096 remain in progress. The earlier exit-2 record was only malformed jq quoting in
   a run-list query; merge API had already returned merged=true.
+
+- 2026-09-27T10:31:19+00:00: Recorded command exit 0; command argv SHA-256
+  355b6f244f6fc49a19b63a7fc3bf5420a18ec5561b988f2500454c7166ebf44e.
