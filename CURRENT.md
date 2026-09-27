@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1488](tasks/AR-1488-owner-backed-user-journey.md): Owner-backed first-customer user journey | Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey. | Merge PR #368 normal non-squash from exact head f06b2d1b; monitor eight post-merge workflows and release only after all green. | ar1332-record-replay-luna56 |
+| P0 | [AR-1488](tasks/AR-1488-owner-backed-user-journey.md): Owner-backed first-customer user journey | Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey. | Monitor eight exact-main post-merge workflows for merge 2aef4b15; release done only after all terminal SUCCESS. | ar1332-record-replay-luna56 |
 
 ## Blocked
 

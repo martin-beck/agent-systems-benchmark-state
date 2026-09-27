@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1488-owner-backed-user-journey",
-  "checkpoint_commit": "f06b2d1b01d33ec367760e02c0f19c88a1ed4166",
+  "checkpoint_commit": "2aef4b15f650238f1141503ecf8597eaa57a6724",
   "claim_expires": "2026-09-27T16:50:32+00:00",
   "depends_on": [
     "AR-1441",
@@ -11,7 +11,7 @@
     "AR-1487"
   ],
   "id": "AR-1488",
-  "next_action": "Merge PR #368 normal non-squash from exact head f06b2d1b; monitor eight post-merge workflows and release only after all green.",
+  "next_action": "Monitor eight exact-main post-merge workflows for merge 2aef4b15; release done only after all terminal SUCCESS.",
   "observed_branch": "feature/ar-1488-owner-backed-user-journey",
   "observed_dirty": 0,
   "observed_head": "f06b2d1b01d33ec367760e02c0f19c88a1ed4166",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Owner-backed first-customer user journey",
-  "updated_at": "2026-09-27T14:56:54+00:00",
+  "updated_at": "2026-09-27T14:57:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1488-owner-backed-user-journey"
 }
 ---
@@ -165,3 +165,9 @@ live provider.
 
 - 2026-09-27T14:56:54+00:00: Recorded command exit 0; command argv SHA-256
   e28e51d732f1df6ef4cb4e80bc37d515bd1d54909545bc79d4ee41082e2d1e19.
+
+- 2026-09-27T14:57:29+00:00: PR #368 merged at 2026-09-27T14:56:08Z. Merge commit
+  2aef4b15f650238f1141503ecf8597eaa57a6724; reviewed head f06b2d1b. Exact-main workflows launched:
+  Credential-free 36327707814, Hosted 36327707822, Repository quality 36327707913, Rust 36327707907,
+  Emulated AArch64 36327707890, Fault 36327707933, Huawei headers 36327707905 SUCCESS, Formal
+  36327707818.
