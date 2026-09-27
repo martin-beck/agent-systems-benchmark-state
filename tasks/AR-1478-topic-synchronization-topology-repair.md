@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair protected-main topic synchronization topology after AR-1477 merge policy failure.",
-  "task_revision": 72,
+  "task_revision": 73,
   "title": "Repair topic synchronization topology",
-  "updated_at": "2026-09-27T05:56:33+00:00",
+  "updated_at": "2026-09-27T05:56:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1478-topic-synchronization-topology-repair"
 }
 ---
@@ -236,3 +236,6 @@ or synchronization topology permitted by the policy.
 
 - 2026-09-27T05:56:33+00:00: Recorded command exit 0; command argv SHA-256
   321c534968b9c456a64caf5e6d09b63780c507f97548057d2bfe31edcfd73ff4.
+
+- 2026-09-27T05:56:48+00:00: Recorded command exit 128; command argv SHA-256
+  927251a03060637157baece936c7ab59249ea0afcbc71cf5369f0ee0adcade82.
