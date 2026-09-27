@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compose authenticated runtime enrollment into opaque normal CLI run and sweep dispatch.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Runtime-control CLI composition",
-  "updated_at": "2026-09-27T11:37:57+00:00",
+  "updated_at": "2026-09-27T11:38:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1480-runtime-control-cli-composition"
 }
 ---
@@ -178,3 +178,6 @@ and never gates local qualification.
 - 2026-09-27T11:37:57+00:00: PR #357 poll: TLC and Alloy recovery models completed SUCCESS.
   Remaining IN_PROGRESS are Emulated aarch64, Policy/coverage/supply chain, and Rust checks; all
   other checks terminal SUCCESS. Exact head unchanged; no failures or merge.
+
+- 2026-09-27T11:38:26+00:00: Recorded command exit 0; command argv SHA-256
+  36858f90dedbb97237067ef509fb80b72c2131f33bbf313a3da978919a9b4667.
