@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define stable runtime/control process-owner lifecycle and opaque handoff contract.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Runtime/control process-owner contract",
-  "updated_at": "2026-09-27T12:23:38+00:00",
+  "updated_at": "2026-09-27T12:24:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1484-runtime-control-owner-contract"
 }
 ---
@@ -114,3 +114,8 @@ authority.
 
 - 2026-09-27T12:23:38+00:00: Recorded command exit 0; command argv SHA-256
   6465c093ae36ec8adb4cbfff3a4cc0345e175a4ac1370aa32e02509c1ccade45.
+
+- 2026-09-27T12:24:05+00:00: PR #358 exact-head poll: SUCCESS now includes Credential-free, Retained
+  faults, Platform evidence, Bounded fuzz, Kani, Loom/state, AWQ, Huawei/SPDX. Remaining
+  IN_PROGRESS: Emulated aarch64, TLC/Alloy, Policy/coverage/supply chain, Rust, Matcher/SLO. No
+  failures; exact head unchanged.
