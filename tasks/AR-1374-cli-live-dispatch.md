@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1374-cli-live-dispatch",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-27T02:58:51+00:00",
   "depends_on": [
     "AR-1373",
     "AR-1339",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1374-cli-live-dispatch",
   "observed_dirty": 0,
   "observed_head": "265b936d995148f8e40e36664cf68bf12affc20d",
-  "owner": "",
+  "owner": "ar1332_record_replay_luna56",
   "plan": "../plans/AR-1374-cli-live-dispatch.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Consume authenticated runtime receipts in production asb run and sweep dispatch.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Production live-provider dispatch",
-  "updated_at": "2026-09-27T01:28:49+00:00",
+  "updated_at": "2026-09-27T01:28:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1374-cli-live-dispatch"
 }
 ---
@@ -66,3 +66,5 @@ reachability.
 - 2026-09-27T01:28:49+00:00: All declared dependencies AR-1373, AR-1339, AR-1340, and AR-1328 are
   done; AR-1363/1471 now provide authenticated control receipt binding. Resume runtime-owned
   dispatch audit.
+
+- 2026-09-27T01:28:51+00:00: Claimed by ar1332_record_replay_luna56.
