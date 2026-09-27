@@ -138,11 +138,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1363](../tasks/AR-1363-authenticated-control-receipt-source.md): Authenticated control receipt source | Unclaimed | Deliver authenticated runtime authority receipts through the versioned control boundary without exposing secrets or caller authority. | Promote after AR-1362 is done, then implement the bounded authenticated control receipt source consumed by runtime-owned dispatch. |
+| P0 | [AR-1363](../tasks/AR-1363-authenticated-control-receipt-source.md): Authenticated control receipt source | ar1332_record_replay_luna56 | Deliver authenticated runtime authority receipts through the versioned control boundary without exposing secrets or caller authority. | Promote after AR-1362 is done, then implement the bounded authenticated control receipt source consumed by runtime-owned dispatch. |
 
 ### Blocked (70)
 

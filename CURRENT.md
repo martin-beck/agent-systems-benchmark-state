@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1363](tasks/AR-1363-authenticated-control-receipt-source.md): Authenticated control receipt source | Deliver authenticated runtime authority receipts through the versioned control boundary without exposing secrets or caller authority. | Promote after AR-1362 is done, then implement the bounded authenticated control receipt source consumed by runtime-owned dispatch. | - |
+| P0 | [AR-1363](tasks/AR-1363-authenticated-control-receipt-source.md): Authenticated control receipt source | Deliver authenticated runtime authority receipts through the versioned control boundary without exposing secrets or caller authority. | Promote after AR-1362 is done, then implement the bounded authenticated control receipt source consumed by runtime-owned dispatch. | ar1332_record_replay_luna56 |
 
 ## Blocked
 

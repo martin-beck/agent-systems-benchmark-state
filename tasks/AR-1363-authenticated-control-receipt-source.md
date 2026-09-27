@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1363-authenticated-control-receipt-source",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-27T01:55:30+00:00",
   "depends_on": [
     "AR-1362"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1363-authenticated-control-receipt-source",
   "observed_dirty": 0,
   "observed_head": "e9d4d3d1c6a4d67d0ce0e49fa8eaf696561fe45e",
-  "owner": "",
+  "owner": "ar1332_record_replay_luna56",
   "plan": "../plans/AR-1363-authenticated-control-receipt-source.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Deliver authenticated runtime authority receipts through the versioned control boundary without exposing secrets or caller authority.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Authenticated control receipt source",
-  "updated_at": "2026-09-27T00:55:24+00:00",
+  "updated_at": "2026-09-27T00:55:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1363-authenticated-control-receipt-source"
 }
 ---
@@ -60,3 +60,5 @@ reachability.
 
 - 2026-09-27T00:55:24+00:00: AR-1471 now provides authenticated control-to-runtime chain binding;
   resume downstream receipt-source integration without caller authority.
+
+- 2026-09-27T00:55:30+00:00: Claimed by ar1332_record_replay_luna56.
