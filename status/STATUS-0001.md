@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**495 ARs tracked** across 5 active status categories.
+**496 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 71 |
-| **Planned** | Defined work awaiting promotion or dependencies | 57 |
+| **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 347 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -567,6 +567,7 @@ flowchart LR
         AR_1472["AR-1472 - Done"]:::status_done
         AR_1473["AR-1473 - Blocked"]:::status_blocked
         AR_1474["AR-1474 - Blocked"]:::status_blocked
+        AR_1475["AR-1475 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1335,6 +1336,7 @@ flowchart LR
     AR_1191 --> AR_1199
     AR_1191 --> AR_1316
     AR_1200 --> AR_1226
+    AR_1200 --> AR_1475
     AR_1210 --> AR_1211
     AR_1210 --> AR_1216
     AR_1211 --> AR_1212
@@ -1699,6 +1701,7 @@ flowchart LR
     AR_1378 --> AR_1388
     AR_1379 --> AR_1473
     AR_1379 --> AR_1474
+    AR_1379 --> AR_1475
     AR_1380 --> AR_1381
     AR_1380 --> AR_1382
     AR_1380 --> AR_1383
@@ -1856,6 +1859,7 @@ flowchart LR
     AR_1471 --> AR_1474
     AR_1472 --> AR_1473
     AR_1472 --> AR_1474
+    AR_1472 --> AR_1475
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -2115,7 +2119,7 @@ flowchart LR
 | [AR-1197](../tasks/AR-1197-control-scratch-isolation-current-main.md) | None | None |
 | [AR-1198](../tasks/AR-1198.md) | [AR-1190](../tasks/AR-1190.md) | None |
 | [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md) | [AR-1018](../tasks/AR-1018-asb-tui-compatibility-detection.md), [AR-1019](../tasks/AR-1019-asb-tui-bundle-verification.md), [AR-1020](../tasks/AR-1020-asb-tui-install-selftest.md), [AR-1160](../tasks/AR-1160.md), [AR-1190](../tasks/AR-1190.md), [AR-1191](../tasks/AR-1191.md) | None |
-| [AR-1200](../tasks/AR-1200-metrics-timeout-fixture-stability.md) | None | [AR-1226](../tasks/AR-1226-protected-merge-tree-remediation.md) |
+| [AR-1200](../tasks/AR-1200-metrics-timeout-fixture-stability.md) | None | [AR-1226](../tasks/AR-1226-protected-merge-tree-remediation.md), [AR-1475](../tasks/AR-1475-asb-metrics-evidence-fixture-repair.md) |
 | [AR-1210](../tasks/AR-1210-tutorial-contract-validator.md) | None | [AR-1211](../tasks/AR-1211-initial-setup-first-agent.md), [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md) |
 | [AR-1211](../tasks/AR-1211-initial-setup-first-agent.md) | [AR-1210](../tasks/AR-1210-tutorial-contract-validator.md) | [AR-1212](../tasks/AR-1212-benchmark-readiness.md), [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md) |
 | [AR-1212](../tasks/AR-1212-benchmark-readiness.md) | [AR-1211](../tasks/AR-1211-initial-setup-first-agent.md) | [AR-1213](../tasks/AR-1213-benchmark-and-shared-config.md), [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md) |
