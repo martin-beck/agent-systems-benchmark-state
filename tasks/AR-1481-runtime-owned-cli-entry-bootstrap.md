@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire runtime-owned authenticated dispatch into the ordinary CLI entry path.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Runtime-owned CLI entry bootstrap",
-  "updated_at": "2026-09-27T12:00:30+00:00",
+  "updated_at": "2026-09-27T12:00:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1481-runtime-owned-cli-entry-bootstrap"
 }
 ---
@@ -40,3 +40,6 @@ provider, accept caller-built authority, or weaken fail-closed boundaries.
 
 - 2026-09-27T12:00:17+00:00: Recorded command exit 0; command argv SHA-256
   1fc84059ed837e70b9c932779a129de0d2a6a5628085d897779904dc1235c023.
+
+- 2026-09-27T12:00:54+00:00: Recorded command exit 0; command argv SHA-256
+  fcee275835bec8e5ec624f14558cdfed6753069b2e0edb8af59f27d90de94690.
