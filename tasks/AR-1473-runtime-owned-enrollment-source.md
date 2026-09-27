@@ -17,11 +17,11 @@
   "plan": "../plans/AR-1473-runtime-owned-enrollment-source.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Resolve authenticated control enrollment into an opaque runtime-owned source for normal ASB run and sweep.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Runtime-owned authenticated enrollment source",
-  "updated_at": "2026-09-27T03:25:56+00:00",
+  "updated_at": "2026-09-27T10:41:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1473-runtime-owned-enrollment-source"
 }
 ---
@@ -57,3 +57,6 @@ the existing fail-closed authority boundaries.
   coordinator must create a narrowly scoped private authority-source successor defining the owner
   and persistence of those bootstrap inputs before wiring normal dispatch; do not synthesize or
   expose authority.
+
+- 2026-09-27T10:41:34+00:00: Dependencies AR-1471, AR-1472, and AR-1379 are now durably done; resume
+  stale blocked AR-1473 for its existing narrow runtime-owned enrollment-source scope.
