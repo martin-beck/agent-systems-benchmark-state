@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #353 | `feature/ar-1424-all-literature-selector-campaign@54fc1b7e3062` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: cover the reconciled Exercism literature workload |
+| #353 | `feature/ar-1424-all-literature-selector-campaign@54fc1b7e3062` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: cover the reconciled Exercism literature workload |
 
 ## Recent workflows
 
@@ -24,7 +24,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36307327957 | `54fc1b7e3062` | pull_request | Repository quality | in_progress:- |
 | 36307327952 | `54fc1b7e3062` | pull_request | Fault assurance | completed:success |
 | 36307327950 | `54fc1b7e3062` | pull_request | Formal assurance | completed:success |
-| 36307327946 | `54fc1b7e3062` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 36307327946 | `54fc1b7e3062` | pull_request | Emulated aarch64 portability | completed:success |
 | 36306189416 | `bb7efb395ee0` | push | Rust verification | completed:success |
 | 36306189404 | `bb7efb395ee0` | push | Fault assurance | completed:success |
 | 36306189400 | `bb7efb395ee0` | push | Repository quality | completed:success |
