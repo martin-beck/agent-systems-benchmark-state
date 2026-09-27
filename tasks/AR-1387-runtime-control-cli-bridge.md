@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1387-runtime-control-cli-bridge",
   "checkpoint_commit": "25548846966e37646dded8d67ed8ee5123b8bc32",
-  "claim_expires": "2026-09-27T04:31:58+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1385",
     "AR-1384",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1387-runtime-control-cli-bridge",
   "observed_dirty": 0,
   "observed_head": "25548846966e37646dded8d67ed8ee5123b8bc32",
-  "owner": "ar1332_record_replay_luna56",
+  "owner": "",
   "plan": "../plans/AR-1387-runtime-control-cli-bridge.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Bridge authenticated runtime/control bootstrap state into the production CLI dispatch path.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Authenticated runtime-control CLI bridge",
-  "updated_at": "2026-09-27T02:39:00+00:00",
+  "updated_at": "2026-09-27T02:39:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1387-runtime-control-cli-bridge"
 }
 ---
@@ -83,3 +83,15 @@ reachability.
 
 - 2026-09-27T02:39:00+00:00: Recorded command exit 0; command argv SHA-256
   58d1b1ef63ab2176f6704f62286c8c0953f5026d37109f098dc3ddd101d7e269.
+
+- 2026-09-27T02:39:39+00:00: Bounded protected-main audit complete: declared worktree is clean at
+  25548846966dded8d67ed8ee5123b8bc32 but behind origin/main 363b21f by 203 commits. Current CLI
+  entry still dispatches normal run/sweep with no injected live factory/source; only the library
+  helper run_with_runtime_live_provider_source exists. Runtime live_service has private
+  materialize_handle and profile/receipt validation, but no runtime/control-owned constructor
+  transfers an authenticated chain-bound opaque dispatch source with concrete lease/relay roots,
+  policy/allowlist, tool pins, credential capability, namespace and teardown authority. A
+  CLI/config/env constructor or synthetic local authority would violate fail-closed contracts. No
+  product edits, no asb-tui, no live provider. Next action: resume the narrowest successor AR-1391
+  (runtime-control bootstrap constructor) after updating its stale blocked audit, then wire the
+  resulting opaque source into normal run/sweep; preserve AR-1329 as optional/live.
