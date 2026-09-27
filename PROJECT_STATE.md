@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #345 | `feature/ar-1474-runtime-authority-input-resolver@56d284c2d292` | `main` | UNSTABLE | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, QUEUED:, IN_PROGRESS:, QUEUED:, IN_PROGRESS: | feat(runtime): resolve persisted authority inputs |
+| #345 | `feature/ar-1474-runtime-authority-input-resolver@56d284c2d292` | `main` | UNSTABLE | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(runtime): resolve persisted authority inputs |
 
 ## Recent workflows
 
@@ -20,7 +20,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36292250132 | `56d284c2d292` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 36292250115 | `56d284c2d292` | pull_request | Agent Workflow Quality shadow | queued:- |
 | 36292250104 | `56d284c2d292` | pull_request | Hosted portability and native qualification | in_progress:- |
-| 36292250091 | `56d284c2d292` | pull_request | Huawei MIT source headers | in_progress:- |
+| 36292250091 | `56d284c2d292` | pull_request | Huawei MIT source headers | completed:success |
 | 36292250080 | `56d284c2d292` | pull_request | Formal assurance | queued:- |
 | 36292250053 | `56d284c2d292` | pull_request | Rust verification | in_progress:- |
 | 36292250040 | `56d284c2d292` | pull_request | Fault assurance | in_progress:- |
