@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1391-runtime-control-bootstrap-constructor",
   "checkpoint_commit": "10bffbf015bd7ca78d8c0d18f04cf0190195e933",
-  "claim_expires": "2026-09-27T05:17:52+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1388",
     "AR-1385",
@@ -18,15 +18,15 @@
   "observed_branch": "feature/ar-1391-runtime-control-bootstrap-constructor",
   "observed_dirty": 0,
   "observed_head": "10bffbf015bd7ca78d8c0d18f04cf0190195e933",
-  "owner": "ar1332_record_replay_luna56",
+  "owner": "",
   "plan": "../plans/AR-1391-runtime-control-bootstrap-constructor.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Materialize authenticated runtime live authority into an opaque source without caller injection.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Runtime control bootstrap constructor",
-  "updated_at": "2026-09-27T03:18:53+00:00",
+  "updated_at": "2026-09-27T03:19:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1391-runtime-control-bootstrap-constructor"
 }
 ---
@@ -108,3 +108,15 @@ reachability.
 
 - 2026-09-27T03:18:53+00:00: Recorded command exit 0; command argv SHA-256
   8b2ab5e036f3d871625ce0fad918b320e4250fe3e6f3989f8fe9ff888f148056.
+
+- 2026-09-27T03:19:28+00:00: Fresh audit after protected-main merge
+  1e2c59119820bc073ea4c6736782f5041a395a28: current CLI still dispatches normal run/sweep with no
+  runtime/control source; only run_with_runtime_live_provider_source accepts an externally injected
+  opaque source. asb-runtime still exposes only crate-private
+  LiveProviderRuntimeAuthorityProfile::materialize_handle requiring policy/allowlist, lease/relay
+  roots, tool pins, credential capability, namespace and teardown inputs; RuntimeAuthorityRecord
+  remains digest metadata without a resolver for those private inputs. AR-1379 merge did not supply
+  the missing runtime-owned bootstrap constructor. No product/asb-tui/live-provider edits. Next
+  action: create/promote a new narrow runtime/control enrollment-source successor defining the owner
+  of concrete bootstrap inputs and opaque transfer, then re-audit normal run/sweep; do not weaken
+  authority gates.
