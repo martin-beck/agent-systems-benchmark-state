@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Deliver authenticated runtime authority receipts through the versioned control boundary without exposing secrets or caller authority.",
-  "task_revision": 56,
+  "task_revision": 57,
   "title": "Authenticated control receipt source",
-  "updated_at": "2026-09-27T01:11:54+00:00",
+  "updated_at": "2026-09-27T01:12:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1363-authenticated-control-receipt-source"
 }
 ---
@@ -204,4 +204,7 @@ reachability.
 - 2026-09-27T01:11:47+00:00: Heartbeat by ar1332_record_replay_luna56.
 
 - 2026-09-27T01:11:54+00:00: Recorded command exit 0; command argv SHA-256
+  001cc326119bd8281c9d2a12fde3dd3a3a6aadc0b95b65e833da8ce413346aae.
+
+- 2026-09-27T01:12:14+00:00: Recorded command exit 0; command argv SHA-256
   001cc326119bd8281c9d2a12fde3dd3a3a6aadc0b95b65e833da8ce413346aae.
