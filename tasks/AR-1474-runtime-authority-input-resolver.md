@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority.",
-  "task_revision": 83,
+  "task_revision": 84,
   "title": "Runtime-owned authority-input resolver",
-  "updated_at": "2026-09-27T04:28:07+00:00",
+  "updated_at": "2026-09-27T04:28:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1474-runtime-authority-input-resolver"
 }
 ---
@@ -271,3 +271,6 @@ authority, privacy, lifecycle, formal, or egress contracts.
 
 - 2026-09-27T04:28:07+00:00: Recorded command exit 0; command argv SHA-256
   9aefbfa6b63061e3e503ee6fb08ec20a7a184998accc6dcc4b95d71f9981a100.
+
+- 2026-09-27T04:28:31+00:00: Recorded command exit 0; command argv SHA-256
+  b9170a4cdc54c56fddaa8c182e27784034c45764409e7979e4d0968ae8115813.
