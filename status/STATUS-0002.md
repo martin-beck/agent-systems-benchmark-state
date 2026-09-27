@@ -165,7 +165,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1488](../tasks/AR-1488-owner-backed-user-journey.md): Owner-backed first-customer user journey | ar1332-record-replay-luna56 | Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey. | Monitor eight exact-main post-merge workflows for merge 2aef4b15; release done only after all terminal SUCCESS. |
+| P0 | [AR-1488](../tasks/AR-1488-owner-backed-user-journey.md): Owner-backed first-customer user journey | ar1332-record-replay-luna56 | Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey. | Continue monitoring Repository quality 36327707913, Rust 36327707907, and Emulated AArch64 36327707890; release only after all eight SUCCESS. |
 
 ### Blocked (73)
 
