@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-27T08:45:56+00:00",
   "depends_on": [
     "AR-1417",
     "AR-1418",
@@ -14,15 +14,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "",
+  "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1420.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Run the complete qualified literature workload matrix beside built-in software-engineering workloads.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Literature workload campaign integration",
-  "updated_at": "2026-09-27T06:45:45+00:00",
+  "updated_at": "2026-09-27T06:45:56+00:00",
   "worktree_key": ""
 }
 ---
@@ -34,3 +34,5 @@ tasks or require any live provider.
 
 - 2026-09-27T06:45:45+00:00: Literature adapters AR-1417/1418/1419 and the superseded AR-1333
   successor AR-1456 are complete; promote the complete literature workload campaign.
+
+- 2026-09-27T06:45:56+00:00: Claimed by ar1332-record-replay-luna56.
