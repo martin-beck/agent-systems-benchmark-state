@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Refresh evolving literature benchmark windows without stale or incomparable results.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Evolving literature workload window refresh",
-  "updated_at": "2026-09-27T10:08:57+00:00",
+  "updated_at": "2026-09-27T10:09:45+00:00",
   "worktree_key": ""
 }
 ---
@@ -51,3 +51,6 @@ requires live providers or upstream downloads during development or CI.
 
 - 2026-09-27T10:08:57+00:00: Recorded command exit 0; command argv SHA-256
   013aecd2ab27d39f6fd6e04aac60832985368c7c4d7bbf9e4477a1d59b2bc05a.
+
+- 2026-09-27T10:09:45+00:00: Recorded command exit 0; command argv SHA-256
+  dee750d0a840ceafafe8ca38552c64951e15258468c0e24c7c53a2d274663b85.
