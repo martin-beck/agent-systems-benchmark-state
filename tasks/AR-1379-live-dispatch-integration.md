@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate authenticated runtime live dispatch into asb run and sweep.",
-  "task_revision": 121,
+  "task_revision": 122,
   "title": "Production live dispatch integration",
-  "updated_at": "2026-09-27T03:04:15+00:00",
+  "updated_at": "2026-09-27T03:04:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1379-live-dispatch-integration"
 }
 ---
@@ -392,3 +392,6 @@ verified through the completed gates.
   36289923787, and repository quality run 36289923770 are in_progress; gh checks displays pending.
   One transient coordinator LOCK_TIMEOUT occurred while inspecting repository quality, then retry
   succeeded. No merge attempted.
+
+- 2026-09-27T03:04:56+00:00: Recorded command exit 0; command argv SHA-256
+  a91c4272839ebb8d62b277b17ab68e00a0e36aee9d398c1f9f2541004fdf4aa2.
