@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Owner-backed first-customer user journey",
-  "updated_at": "2026-09-27T14:40:58+00:00",
+  "updated_at": "2026-09-27T14:41:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1488-owner-backed-user-journey"
 }
 ---
@@ -62,3 +62,6 @@ live provider.
   contracts already present. Added docs/workflows/owner-backed-first-customer-journey.md and README
   route link; focused owner tests 4/4, guide examples 5/5, workflow transcript 3/3, fmt check
   passed. No production semantics changed.
+
+- 2026-09-27T14:41:23+00:00: Recorded command exit 0; command argv SHA-256
+  050b5f313956b18b12e7949094ef5cc651004ce5656f621e24e90d827cd6994b.
