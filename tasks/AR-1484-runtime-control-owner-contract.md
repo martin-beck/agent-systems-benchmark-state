@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define stable runtime/control process-owner lifecycle and opaque handoff contract.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Runtime/control process-owner contract",
-  "updated_at": "2026-09-27T12:22:07+00:00",
+  "updated_at": "2026-09-27T12:22:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1484-runtime-control-owner-contract"
 }
 ---
@@ -104,3 +104,6 @@ authority.
   7ce533ea9b0524c5b317cc2db8fad0aff8ecedc3 (SSH signature verified), focused contract tests 3/3 and
   source-header policy pass, then force-with-lease updated PR #358. Previous substantive gates
   remain green; checks must rerun at exact new head.
+
+- 2026-09-27T12:22:16+00:00: Recorded command exit 0; command argv SHA-256
+  76b7a3dc660fdc8321d14ec9bcdb6ca7dfca8eb7c39767e3a86f5813c83018f9.
