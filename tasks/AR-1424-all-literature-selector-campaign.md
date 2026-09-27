@@ -1,7 +1,7 @@
 ---
 {
   "branch": "",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "ff6f9a606707a22c65946c6354d0783e01f08e63",
   "claim_expires": "2026-09-27T10:48:07+00:00",
   "depends_on": [
     "AR-1423",
@@ -10,7 +10,7 @@
     "AR-1416"
   ],
   "id": "AR-1424",
-  "next_action": "Commit signed/DCO AR-1424 changes, independently review, publish PR and monitor exact-head CI.",
+  "next_action": "Monitor PR #353 exact head ff6f9a6 checks; merge only after all required checks green, then post-merge verify and release AR-1424.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make all locally executable literature workloads selectable and campaignable beside built-in fixtures.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Complete literature selector and local campaign matrix",
-  "updated_at": "2026-09-27T08:57:14+00:00",
+  "updated_at": "2026-09-27T08:57:53+00:00",
   "worktree_key": ""
 }
 ---
@@ -143,3 +143,9 @@ dataset downloads are never requirements for this AR.
 
 - 2026-09-27T08:57:14+00:00: Recorded command exit 0; command argv SHA-256
   e55e8e68470df1554a10cfdd9c93944e32c0688b090dc4bda338acc7f85c05c8.
+
+- 2026-09-27T08:57:53+00:00: CI parity repair: initial Rust workflow failed only generated catalog
+  parity because generator capability tags omitted the newly executable reconciled Exercism
+  identity. Added exercism-tracks to tools/quality/generate_workload_catalog.py and refreshed
+  docs/generated/workload-catalog-v1.json in signed/DCO commit ff6f9a6. Local generator, literature
+  reconciliation (25 entries), CLI catalog output, and parity check now pass.

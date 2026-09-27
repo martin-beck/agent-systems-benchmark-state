@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1424](tasks/AR-1424-all-literature-selector-campaign.md): Complete literature selector and local campaign matrix | Make all locally executable literature workloads selectable and campaignable beside built-in fixtures. | Commit signed/DCO AR-1424 changes, independently review, publish PR and monitor exact-head CI. | ar1332-record-replay-luna56 |
+| P1 | [AR-1424](tasks/AR-1424-all-literature-selector-campaign.md): Complete literature selector and local campaign matrix | Make all locally executable literature workloads selectable and campaignable beside built-in fixtures. | Monitor PR #353 exact head ff6f9a6 checks; merge only after all required checks green, then post-merge verify and release AR-1424. | ar1332-record-replay-luna56 |
 
 ## Blocked
 
