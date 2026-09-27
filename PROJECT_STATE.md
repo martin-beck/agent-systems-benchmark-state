@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #358 | `feature/ar-1484-runtime-control-owner-contract@f2eab98d0cb0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | feat(runtime): define control owner lifecycle contract |
+| #358 | `feature/ar-1484-runtime-control-owner-contract@f2eab98d0cb0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | feat(runtime): define control owner lifecycle contract |
 
 ## Recent workflows
 
@@ -20,7 +20,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36318589549 | `f2eab98d0cb0` | pull_request | Hosted portability and native qualification | completed:success |
 | 36318589540 | `f2eab98d0cb0` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36318589539 | `f2eab98d0cb0` | pull_request | Fault assurance | in_progress:- |
-| 36318589537 | `f2eab98d0cb0` | pull_request | Credential-free benchmark path | in_progress:- |
+| 36318589537 | `f2eab98d0cb0` | pull_request | Credential-free benchmark path | completed:success |
 | 36318589524 | `f2eab98d0cb0` | pull_request | Formal assurance | in_progress:- |
 | 36318589514 | `f2eab98d0cb0` | pull_request | Repository quality | completed:failure |
 | 36318589506 | `f2eab98d0cb0` | pull_request | Emulated aarch64 portability | in_progress:- |
