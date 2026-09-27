@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize authenticated runtime-owned live execution for asb run and sweep.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Authenticated live execution source",
-  "updated_at": "2026-09-27T02:18:40+00:00",
+  "updated_at": "2026-09-27T02:19:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1382-authenticated-live-execution-source"
 }
 ---
@@ -64,3 +64,6 @@ preserving the no-caller-authority and fail-closed boundaries.
 
 - 2026-09-27T02:18:40+00:00: Recorded command exit 0; command argv SHA-256
   86667e06265df1af9012fb65d9a754cca0f760fddea5205e3f5e4211aec3c27c.
+
+- 2026-09-27T02:19:26+00:00: Recorded command exit 0; command argv SHA-256
+  36a6c251e10617767a697c6073f79adcedeccaf21e19de8e508b3065500e4f1b.
