@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a self-contained non-production package qualification fixture using the offline verifier test-key pattern.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Self-contained package qualification fixture",
-  "updated_at": "2026-09-27T15:55:51+00:00",
+  "updated_at": "2026-09-27T15:56:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1491-self-contained-package-qualification-fixture"
 }
 ---
@@ -138,4 +138,7 @@ No live-provider or release-signing input may be fabricated.
 - 2026-09-27T15:55:13+00:00: Heartbeat by ar1332-record-replay-luna56.
 
 - 2026-09-27T15:55:51+00:00: Recorded command exit 0; command argv SHA-256
+  664a120e76495934d33f2ac2cc92a27a2efcdb3c12432149028c59374092722e.
+
+- 2026-09-27T15:56:27+00:00: Recorded command exit 0; command argv SHA-256
   664a120e76495934d33f2ac2cc92a27a2efcdb3c12432149028c59374092722e.
