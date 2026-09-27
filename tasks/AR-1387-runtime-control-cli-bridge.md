@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bridge authenticated runtime/control bootstrap state into the production CLI dispatch path.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Authenticated runtime-control CLI bridge",
-  "updated_at": "2026-09-27T02:38:09+00:00",
+  "updated_at": "2026-09-27T02:38:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1387-runtime-control-cli-bridge"
 }
 ---
@@ -74,3 +74,6 @@ reachability.
 
 - 2026-09-27T02:38:09+00:00: Recorded command exit 0; command argv SHA-256
   ff6d1fa7a7185010f75fcfafe4bdc1bdd5b9804d8c2b3e7abdd8a1b96cd81c63.
+
+- 2026-09-27T02:38:25+00:00: Recorded command exit 0; command argv SHA-256
+  b04e51d6a8a1cd1d991d96d1b0eeb7f5236f1056ccb95c8f404b26c181dc4797.
