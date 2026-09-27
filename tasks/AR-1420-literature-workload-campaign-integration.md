@@ -10,7 +10,7 @@
     "AR-1333"
   ],
   "id": "AR-1420",
-  "next_action": "Run independent diff review and full applicable gates, then publish the signed exact head through handoffctl.",
+  "next_action": "Monitor PR #350 exact head checks; merge only after every required check is green, then verify all post-merge workflows.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run the complete qualified literature workload matrix beside built-in software-engineering workloads.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Literature workload campaign integration",
-  "updated_at": "2026-09-27T07:01:36+00:00",
+  "updated_at": "2026-09-27T07:01:51+00:00",
   "worktree_key": ""
 }
 ---
@@ -182,3 +182,12 @@ tasks or require any live provider.
 
 - 2026-09-27T07:01:36+00:00: Recorded command exit 0; command argv SHA-256
   07a6fd120bf073162ee61bc121e32138a7285ef84f8f92709de307404de60f65.
+
+- 2026-09-27T07:01:51+00:00: Published PR #350 at exact signed head
+  26f03d3f52dab9c9667b0b8d09d69fc835c5b647:
+  https://github.com/martin-beck/agent-systems-benchmark/pull/350. Independent diff review scope is
+  one CLI source file, one focused positive campaign test extension, and one workflow documentation
+  paragraph; no asb-tui/live-provider changes. Initial gh create without --repo failed because
+  handoffctl runs from the state checkout and GitHub resolved the wrong repository; retry with
+  explicit --repo succeeded. Clippy rerun passed after an earlier exit 1 whose output was truncated
+  during first compile; no diagnostic persisted, and no code change was made for it.
