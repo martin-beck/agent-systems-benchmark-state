@@ -9,7 +9,7 @@
     "AR-1485"
   ],
   "id": "AR-1486",
-  "next_action": "Promote and claim, then audit the protected-main CLI entry path and implement the bounded runtime-owner wiring slice.",
+  "next_action": "Focused gates passed after moving test-only RuntimeControlOwnerState import; run full workspace/docs/privacy/release gates.",
   "observed_branch": "feature/ar-1486-runtime-owner-cli-entry-wiring",
   "observed_dirty": 2,
   "observed_head": "a6f43eb2a651fcfa3c0abe3b9e4dddaea78b6a80",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire the runtime-owned local/mock process owner into ordinary CLI run and sweep.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Runtime-owner CLI entry wiring",
-  "updated_at": "2026-09-27T13:21:32+00:00",
+  "updated_at": "2026-09-27T13:21:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1486-cli-owner-wiring"
 }
 ---
@@ -49,3 +49,10 @@ authority.
 
 - 2026-09-27T13:21:32+00:00: Recorded command exit 0; command argv SHA-256
   9f5cdbd5f405e7bf61ee7ae45b3499cebe025388a45cdbff9b8772bd8af7dcab.
+
+- 2026-09-27T13:21:57+00:00: Classified the 13:20:31 exit-101: product compile failure in asb-cli
+  due unused top-level RuntimeControlOwnerState import under -D warnings
+  (crates/asb-cli/src/lib.rs:34). Moved that import into the cfg(test) module; no runtime behavior
+  or authority semantics changed. Corrected focused rerun exited 0: two local/mock run+sweep
+  positive tests, one teardown-reuse negative, unavailable-source negative, and four runtime
+  contract tests.

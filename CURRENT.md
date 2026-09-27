@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1486](tasks/AR-1486-runtime-owner-cli-entry-wiring.md): Runtime-owner CLI entry wiring | Wire the runtime-owned local/mock process owner into ordinary CLI run and sweep. | Promote and claim, then audit the protected-main CLI entry path and implement the bounded runtime-owner wiring slice. | ar1332-record-replay-luna56 |
+| P0 | [AR-1486](tasks/AR-1486-runtime-owner-cli-entry-wiring.md): Runtime-owner CLI entry wiring | Wire the runtime-owned local/mock process owner into ordinary CLI run and sweep. | Focused gates passed after moving test-only RuntimeControlOwnerState import; run full workspace/docs/privacy/release gates. | ar1332-record-replay-luna56 |
 
 ## Blocked
 
