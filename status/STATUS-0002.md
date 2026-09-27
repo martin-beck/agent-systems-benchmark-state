@@ -153,7 +153,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1420](../tasks/AR-1420-literature-workload-campaign-integration.md): Literature workload campaign integration | ar1332-record-replay-luna56 | Run the complete qualified literature workload matrix beside built-in software-engineering workloads. | PR #350 is not mergeable: preserve Rust retry failure and await coordinator decision/create repair for unrelated existing asb-agents timing flake; do not merge or weaken checks. |
+| P1 | [AR-1420](../tasks/AR-1420-literature-workload-campaign-integration.md): Literature workload campaign integration | ar1332-record-replay-luna56 | Run the complete qualified literature workload matrix beside built-in software-engineering workloads. | Monitor PR #350 exact head ce42952 checks; merge only when every required check is green, then verify all post-merge workflows. |
 
 ### Blocked (71)
 

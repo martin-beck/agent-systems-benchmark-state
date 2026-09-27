@@ -1,7 +1,7 @@
 ---
 {
   "branch": "",
-  "checkpoint_commit": "2884508a6236d1219386edeb428ba0c39ce9bd3c",
+  "checkpoint_commit": "ce42952fe3670dfa508fd4970d0d7e7feeaaade5",
   "claim_expires": "2026-09-27T10:15:32+00:00",
   "depends_on": [
     "AR-1417",
@@ -10,7 +10,7 @@
     "AR-1333"
   ],
   "id": "AR-1420",
-  "next_action": "PR #350 is not mergeable: preserve Rust retry failure and await coordinator decision/create repair for unrelated existing asb-agents timing flake; do not merge or weaken checks.",
+  "next_action": "Monitor PR #350 exact head ce42952 checks; merge only when every required check is green, then verify all post-merge workflows.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run the complete qualified literature workload matrix beside built-in software-engineering workloads.",
-  "task_revision": 144,
+  "task_revision": 145,
   "title": "Literature workload campaign integration",
-  "updated_at": "2026-09-27T08:17:28+00:00",
+  "updated_at": "2026-09-27T08:17:46+00:00",
   "worktree_key": ""
 }
 ---
@@ -490,3 +490,9 @@ tasks or require any live provider.
 
 - 2026-09-27T08:17:28+00:00: Recorded command exit 0; command argv SHA-256
   a7dfdfe06877ca2d1d2875b9169dbbc48c50177689989fd0ddfa2985bcd44423.
+
+- 2026-09-27T08:17:46+00:00: Synchronized PR #350 topic with protected main 1015a461 via signed/DCO
+  two-parent merge ce42952fe3670dfa508fd4970d0d7e7feeaaade5, preserving literature implementation
+  and importing both serial CI guards. actionlint, cargo fmt, focused asb-cli 116 tests, and full
+  serial workspace tests passed locally. No provenance changes needed; worktree clean. Independent
+  review confirms only the reviewed literature diff plus CI synchronization.
