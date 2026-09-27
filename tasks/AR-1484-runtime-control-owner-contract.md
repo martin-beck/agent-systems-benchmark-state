@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define stable runtime/control process-owner lifecycle and opaque handoff contract.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Runtime/control process-owner contract",
-  "updated_at": "2026-09-27T12:18:39+00:00",
+  "updated_at": "2026-09-27T12:18:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1484-runtime-control-owner-contract"
 }
 ---
@@ -74,3 +74,6 @@ authority.
   diff/clean-tree checks all exit 0. Independent review confirms scoped ASB-only diff, no
   credentials/live provider/asb-tui, no authority exposure. Signed+DCO commit
   f2eab98d0cb0c09c2d84c109d71c5ddbedc782fa verified.
+
+- 2026-09-27T12:18:49+00:00: Recorded command exit 0; command argv SHA-256
+  f880cc8b77ff7c812b51314b537ddbe480356c69e2e39a2f3456a989e1700334.
