@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the owner-backed credential-free local/mock/replay first-customer journey.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Owner-backed first-customer qualification",
-  "updated_at": "2026-09-27T14:14:42+00:00",
+  "updated_at": "2026-09-27T14:14:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1487-owner-backed-qualification"
 }
 ---
@@ -155,3 +155,6 @@ runtime-owned CLI; it excludes live providers and asb-tui.
   repository policy, signature policy. Parallel workspace test had unrelated asb-metrics
   ProbeRejected fixture race; exact serial focused rerun passed 1/1 and full workspace serial
   completed green. Signed SSH+DCO commit 4b94dcd7be505ebb5b34580db5023b95de7db8fd.
+
+- 2026-09-27T14:14:57+00:00: Recorded command exit 0; command argv SHA-256
+  d9d3dd72959431fa17ca205ee8c0675a1ef25c3821177f06f9489aeb27a78c46.
