@@ -10,7 +10,7 @@
     "AR-1486"
   ],
   "id": "AR-1487",
-  "next_action": "Wait for final Policy, coverage, and supply chain check on PR #367 exact head 4b94dcd7; merge only after SUCCESS, then verify eight post-merge workflows.",
+  "next_action": "Merge PR #367 normal non-squash from exact head 4b94dcd7; then verify eight exact-main post-merge workflows.",
   "observed_branch": "feature/ar-1487-owner-backed-first-customer-qualification",
   "observed_dirty": 0,
   "observed_head": "4b94dcd7be505ebb5b34580db5023b95de7db8fd",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the owner-backed credential-free local/mock/replay first-customer journey.",
-  "task_revision": 61,
+  "task_revision": 62,
   "title": "Owner-backed first-customer qualification",
-  "updated_at": "2026-09-27T14:24:38+00:00",
+  "updated_at": "2026-09-27T14:24:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1487-owner-backed-qualification"
 }
 ---
@@ -214,3 +214,9 @@ runtime-owned CLI; it excludes live providers and asb-tui.
 
 - 2026-09-27T14:24:38+00:00: Recorded command exit 0; command argv SHA-256
   104e8ca5470cfb77bb7507c3b4a36b94f512b90759b0e0ceaa639cde3eb5f6b9.
+
+- 2026-09-27T14:24:57+00:00: Independent exact-head review passed: three-file scoped diff (two
+  owner-backed CLI tests, provenance hash, qualification doc), signed SSH+DCO commit, no
+  asb-tui/live-provider changes or authority weakening. PR #367 exact head 4b94dcd7, base main,
+  mergeState CLEAN; all 13 named checks terminal SUCCESS including Policy/coverage/supply chain,
+  Rust, and Emulated AArch64.

@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1487](tasks/AR-1487-owner-backed-first-customer-qualification.md): Owner-backed first-customer qualification | Qualify the owner-backed credential-free local/mock/replay first-customer journey. | Wait for final Policy, coverage, and supply chain check on PR #367 exact head 4b94dcd7; merge only after SUCCESS, then verify eight post-merge workflows. | ar1332-record-replay-luna56 |
+| P0 | [AR-1487](tasks/AR-1487-owner-backed-first-customer-qualification.md): Owner-backed first-customer qualification | Qualify the owner-backed credential-free local/mock/replay first-customer journey. | Merge PR #367 normal non-squash from exact head 4b94dcd7; then verify eight exact-main post-merge workflows. | ar1332-record-replay-luna56 |
 
 ## Blocked
 
