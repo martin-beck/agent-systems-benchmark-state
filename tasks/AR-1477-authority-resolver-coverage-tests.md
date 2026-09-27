@@ -11,7 +11,7 @@
   "id": "AR-1477",
   "next_action": "Promote after validating completed dependencies, then reproduce the 89.88 percent exact-head coverage failure and add behavioral tests.",
   "observed_branch": "feature/ar-1477-authority-resolver-coverage-tests",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "c21d1ce5d1eca0ad80c28f0a0c5ebda5fd6a3603",
   "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1477-authority-resolver-coverage-tests.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Raise exact hosted coverage above the enforced 90 percent floor for the authority resolver.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Cover authority resolver behavior",
-  "updated_at": "2026-09-27T05:13:55+00:00",
+  "updated_at": "2026-09-27T05:14:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1477-authority-resolver-coverage-tests"
 }
 ---
