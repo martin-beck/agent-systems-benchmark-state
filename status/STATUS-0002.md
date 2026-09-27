@@ -152,7 +152,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1478](../tasks/AR-1478-topic-synchronization-topology-repair.md): Repair topic synchronization topology | ar1332-record-replay-luna56 | Repair protected-main topic synchronization topology after AR-1477 merge policy failure. | Monitor seven exact-main workflows for merge fac11a22; release only after all terminal SUCCESS. |
+| P0 | [AR-1478](../tasks/AR-1478-topic-synchronization-topology-repair.md): Repair topic synchronization topology | ar1332-record-replay-luna56 | Repair protected-main topic synchronization topology after AR-1477 merge policy failure. | Reconcile and doctor state; release AR-1478 done with complete merge and seven-workflow evidence. |
 
 ### Blocked (72)
 

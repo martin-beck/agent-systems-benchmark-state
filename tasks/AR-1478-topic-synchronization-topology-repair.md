@@ -9,7 +9,7 @@
     "AR-1379"
   ],
   "id": "AR-1478",
-  "next_action": "Monitor seven exact-main workflows for merge fac11a22; release only after all terminal SUCCESS.",
+  "next_action": "Reconcile and doctor state; release AR-1478 done with complete merge and seven-workflow evidence.",
   "observed_branch": "feature/ar-1478-topic-synchronization-topology-repair",
   "observed_dirty": 0,
   "observed_head": "d1456b88d511d9c5ccd8ef4e693713ca706d9949",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair protected-main topic synchronization topology after AR-1477 merge policy failure.",
-  "task_revision": 104,
+  "task_revision": 105,
   "title": "Repair topic synchronization topology",
-  "updated_at": "2026-09-27T06:04:46+00:00",
+  "updated_at": "2026-09-27T06:05:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1478-topic-synchronization-topology-repair"
 }
 ---
@@ -330,3 +330,11 @@ or synchronization topology permitted by the policy.
 
 - 2026-09-27T06:04:46+00:00: Recorded command exit 0; command argv SHA-256
   aedbe6248a9baf95462c22a571142f628bf7e0f7f582ba7863578b068c44a3b4.
+
+- 2026-09-27T06:05:16+00:00: All seven exact-main post-merge workflows for fac11a22 are terminal
+  SUCCESS: Huawei 36298610690; hosted 36298610650; fault 36298610671; formal 36298610655; Rust
+  36298610685; repository quality 36298610658; emulated AArch64 36298610696. Protected merge
+  parents/tree independently verified via GitHub API: parents
+  67fa0d1a7ff90a9d3a38dadf7d69101e8c70d32a and d1456b88d511d9c5ccd8ef4e693713ca706d9949; tree
+  7b91861029d0903863b860f680cebf852137a42b. PR #348 exact head d1456b88 had all 12 required checks
+  SUCCESS. Release is authorized after reconcile/doctor.
