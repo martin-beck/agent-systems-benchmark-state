@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1474](tasks/AR-1474-runtime-authority-input-resolver.md): Runtime-owned authority-input resolver | Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority. | Await repository-quality rerun 36292250172; merge PR #345 only after SUCCESS. | ar1332-record-replay-luna56 |
+| P0 | [AR-1474](tasks/AR-1474-runtime-authority-input-resolver.md): Runtime-owned authority-input resolver | Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority. | Monitor new exact-head CI for PR #345 at c21d1ce; merge only after all 12 required checks are SUCCESS. | ar1332-record-replay-luna56 |
 
 ## Blocked
 

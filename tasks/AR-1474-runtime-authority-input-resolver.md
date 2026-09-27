@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1474-runtime-authority-input-resolver",
-  "checkpoint_commit": "56d284c2d292163e2724318b0443f53211b4f9e4",
+  "checkpoint_commit": "c21d1ce5d1eca0ad80c28f0a0c5ebda5fd6a3603",
   "claim_expires": "2026-09-27T06:57:44+00:00",
   "depends_on": [
     "AR-1362",
@@ -10,7 +10,7 @@
     "AR-1379"
   ],
   "id": "AR-1474",
-  "next_action": "Await repository-quality rerun 36292250172; merge PR #345 only after SUCCESS.",
+  "next_action": "Monitor new exact-head CI for PR #345 at c21d1ce; merge only after all 12 required checks are SUCCESS.",
   "observed_branch": "feature/ar-1474-runtime-authority-input-resolver",
   "observed_dirty": 0,
   "observed_head": "c21d1ce5d1eca0ad80c28f0a0c5ebda5fd6a3603",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority.",
-  "task_revision": 137,
+  "task_revision": 138,
   "title": "Runtime-owned authority-input resolver",
-  "updated_at": "2026-09-27T05:00:23+00:00",
+  "updated_at": "2026-09-27T05:00:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1474-runtime-authority-input-resolver"
 }
 ---
@@ -429,3 +429,9 @@ authority, privacy, lifecycle, formal, or egress contracts.
 
 - 2026-09-27T05:00:23+00:00: Recorded command exit 8; command argv SHA-256
   f6310c9434af926098a15812caed943365cabcf83900080009194765b70fad0c.
+
+- 2026-09-27T05:00:48+00:00: CI coverage rerun 36292250172 terminally failed at stale head 56d284c
+  with workspace line coverage 88.04% (98414 total, 11766 missed). Local current-main integration
+  was 90.35%; synchronized PR topic with protected main 1dada31c via signed+DCO non-squash merge
+  c21d1ce5d1eca0ad80c28f0a0c5ebda5fd6a3603. Pushed with force-with-lease. PR #345 now points at
+  c21d1ce; fresh exact-head checks are pending (all 12 named checks triggered). No gate waived.
