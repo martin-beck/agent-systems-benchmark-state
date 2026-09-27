@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #355 | `feature/ar-1426-evolving-literature-window-refresh@73b5fd1d14fa` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat: add evolving workload refresh manifests |
+| #355 | `feature/ar-1426-evolving-literature-window-refresh@73b5fd1d14fa` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat: add evolving workload refresh manifests |
 
 ## Recent workflows
 
@@ -22,7 +22,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36311969631 | `73b5fd1d14fa` | pull_request | Repository quality | in_progress:- |
 | 36311969616 | `73b5fd1d14fa` | pull_request | Formal assurance | in_progress:- |
 | 36311969615 | `73b5fd1d14fa` | pull_request | Fault assurance | in_progress:- |
-| 36311969606 | `73b5fd1d14fa` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 36311969606 | `73b5fd1d14fa` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36311969599 | `73b5fd1d14fa` | pull_request | Hosted portability and native qualification | in_progress:- |
 | 36311969597 | `73b5fd1d14fa` | pull_request | Credential-free benchmark path | in_progress:- |
 | 36310794666 | `a36b86b49a34` | push | Huawei MIT source headers | completed:success |
