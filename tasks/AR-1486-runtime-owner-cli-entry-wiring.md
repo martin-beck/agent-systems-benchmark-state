@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire the runtime-owned local/mock process owner into ordinary CLI run and sweep.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Runtime-owner CLI entry wiring",
-  "updated_at": "2026-09-27T13:35:54+00:00",
+  "updated_at": "2026-09-27T13:36:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1486-cli-owner-wiring"
 }
 ---
@@ -118,3 +118,6 @@ authority.
   https://github.com/martin-beck/agent-systems-benchmark/pull/360 from exact signed/DCO head
   a5f9ad27b967371511b0981aad29d3aa65a7fcab. Base is protected main; clean tree and focused/full
   gates passed before push.
+
+- 2026-09-27T13:36:02+00:00: Recorded command exit 0; command argv SHA-256
+  9297093e4c8b5665a10032d8ee809f162e60927d6b714f0d27cef2b3f730af24.
