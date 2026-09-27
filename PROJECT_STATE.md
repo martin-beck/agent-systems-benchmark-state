@@ -18,9 +18,9 @@ Generated from local Git and GitHub. Do not edit.
 | 36306189416 | `bb7efb395ee0` | push | Rust verification | in_progress:- |
 | 36306189404 | `bb7efb395ee0` | push | Fault assurance | in_progress:- |
 | 36306189400 | `bb7efb395ee0` | push | Repository quality | in_progress:- |
-| 36306189395 | `bb7efb395ee0` | push | Credential-free benchmark path | in_progress:- |
+| 36306189395 | `bb7efb395ee0` | push | Credential-free benchmark path | completed:success |
 | 36306189381 | `bb7efb395ee0` | push | Emulated aarch64 portability | in_progress:- |
-| 36306189360 | `bb7efb395ee0` | push | Hosted portability and native qualification | in_progress:- |
+| 36306189360 | `bb7efb395ee0` | push | Hosted portability and native qualification | completed:success |
 | 36306189358 | `bb7efb395ee0` | push | Huawei MIT source headers | completed:success |
 | 36306189331 | `bb7efb395ee0` | push | Formal assurance | in_progress:- |
 | 36305668583 | `ce42952fe367` | pull_request | Credential-free benchmark path | completed:success |
