@@ -2,7 +2,7 @@
 {
   "branch": "release/ar-1492-customer-bundle-signing-handoff",
   "checkpoint_commit": "a2d9be3eb3c77331a7a3498fdec8e54fb74ae8d6",
-  "claim_expires": "2026-09-27T18:43:09+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1461",
     "AR-1462",
@@ -13,15 +13,15 @@
   "observed_branch": "release/ar-1492-customer-bundle-signing-handoff",
   "observed_dirty": 0,
   "observed_head": "050b298c99724f7265e8dec47c6e801b3fb53e85",
-  "owner": "ar1332-record-replay-luna56",
+  "owner": "",
   "plan": "../plans/AR-1492-customer-bundle-signing-handoff.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Stage a deterministic customer bundle and provide an explicit external signing handoff and verifier.",
-  "task_revision": 71,
+  "task_revision": 72,
   "title": "Customer bundle signing handoff",
-  "updated_at": "2026-09-27T16:48:20+00:00",
+  "updated_at": "2026-09-27T16:49:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1492-customer-bundle-signing-handoff"
 }
 ---
@@ -262,3 +262,13 @@ detached signature.
   (job 108661578872) SUCCESS at 16:47:25Z after isolated timing-flake reproduction passed. PR #371
   merged normally at a2d9be3. No signature fabricated; external signing remains the AR-1490
   boundary.
+
+- 2026-09-27T16:49:17+00:00: AR-1492 complete. PR #371 merged normally at exact reviewed head
+  050b298c99724f7265e8dec47c6e801b3fb53e85, merge SHA a2d9be3eb3c77331a7a3498fdec8e54fb74ae8d6. All
+  eight exact-main post-merge workflows SUCCESS: Huawei 36333580424, credential-free 36333580338,
+  hosted 36333580340, fault 36333580354, formal 36333580517, Rust 36333580319, emulated AArch64
+  36333580303, Repository Quality rerun 36333580327 / job 108661578872. Initial Repository Quality
+  timing assertion failure was reproduced as an isolated serial pass and exact workflow rerun
+  succeeded. Reconcile completed. doctor --live still reports known generated WORKTREES.md stale
+  projection caveat. External signing remains intentionally unperformed and AR-1490 remains blocked
+  on authorized signed customer package inputs.
