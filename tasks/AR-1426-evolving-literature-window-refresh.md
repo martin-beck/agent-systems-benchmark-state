@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Refresh evolving literature benchmark windows without stale or incomparable results.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Evolving literature workload window refresh",
-  "updated_at": "2026-09-27T10:22:27+00:00",
+  "updated_at": "2026-09-27T10:22:52+00:00",
   "worktree_key": ""
 }
 ---
@@ -113,4 +113,7 @@ requires live providers or upstream downloads during development or CI.
 - 2026-09-27T10:21:57+00:00: Heartbeat by ar1332-record-replay-luna56.
 
 - 2026-09-27T10:22:27+00:00: Recorded command exit 0; command argv SHA-256
+  8ec3ee45c8f35ca2a6cf3d091364dfa70255937997638eafe23e0681633b7382.
+
+- 2026-09-27T10:22:52+00:00: Recorded command exit 0; command argv SHA-256
   8ec3ee45c8f35ca2a6cf3d091364dfa70255937997638eafe23e0681633b7382.
