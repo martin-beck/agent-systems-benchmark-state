@@ -143,7 +143,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1379](../tasks/AR-1379-live-dispatch-integration.md): Production live dispatch integration | ar1379-live-dispatch-luna56 | Integrate authenticated runtime live dispatch into asb run and sweep. | Monitor PR #344 rerun at exact head d988838; all required checks must be green before merge. Provenance repair was generated from current lib.rs digest. |
+| P0 | [AR-1379](../tasks/AR-1379-live-dispatch-integration.md): Production live dispatch integration | ar1379-live-dispatch-luna56 | Integrate authenticated runtime live dispatch into asb run and sweep. | Monitor PR #344 at exact head fa855fc1; require all named checks terminal SUCCESS before merge, then verify seven post-merge workflows. |
 
 ### Blocked (69)
 

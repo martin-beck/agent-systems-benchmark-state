@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1379-live-dispatch-integration",
-  "checkpoint_commit": "d9888386d0987323a30dbe7240d7d4239f92cb61",
+  "checkpoint_commit": "fa855fc1ad02a8d68777dfe41e1ef5238eaa0546",
   "claim_expires": "2026-09-27T04:39:35+00:00",
   "depends_on": [
     "AR-1378",
@@ -11,7 +11,7 @@
     "AR-1362"
   ],
   "id": "AR-1379",
-  "next_action": "Monitor PR #344 rerun at exact head d988838; all required checks must be green before merge. Provenance repair was generated from current lib.rs digest.",
+  "next_action": "Monitor PR #344 at exact head fa855fc1; require all named checks terminal SUCCESS before merge, then verify seven post-merge workflows.",
   "observed_branch": "feature/ar-1379-live-dispatch-integration",
   "observed_dirty": 0,
   "observed_head": "fa855fc1ad02a8d68777dfe41e1ef5238eaa0546",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate authenticated runtime live dispatch into asb run and sweep.",
-  "task_revision": 99,
+  "task_revision": 100,
   "title": "Production live dispatch integration",
-  "updated_at": "2026-09-27T02:54:09+00:00",
+  "updated_at": "2026-09-27T02:54:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1379-live-dispatch-integration"
 }
 ---
@@ -317,3 +317,10 @@ verified through the completed gates.
 
 - 2026-09-27T02:53:56+00:00: Recorded command exit 0; command argv SHA-256
   a6ef7f9dc8262075bca3cef74db6990556c7c5c391fa6b3c815e3057ea4508a0.
+
+- 2026-09-27T02:54:26+00:00: Diagnosed prior exit-101 as workflow_transcript provenance drift after
+  lib.rs coverage repair: expected d5eee492..., actual 0ba214ddd.... Updated only
+  docs/examples/asb-cli-workflow-v1.provenance.json to sha256
+  0ba214ddd8225aa5525f995b1559170254d0cbaf0390b4d4c5be94615bac032d. Focused workflow_transcript 3/3
+  passed; live_provider focused tests 3/3 passed; workspace coverage command exit 0 at 02:53:14.
+  Signed+DCO commit fa855fc pushed; PR exact head advanced d988838 -> fa855fc.
