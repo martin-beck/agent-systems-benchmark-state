@@ -8,7 +8,7 @@
     "AR-1363"
   ],
   "id": "AR-1472",
-  "next_action": "Continue monitoring PR #343 exact-head required checks at 5f785dab598f24c2221272cf53b9366a10625413; merge only after all required checks are green.",
+  "next_action": "Continue monitoring PR #343 exact-head Rust and Repository quality checks; merge only after both and all required checks are green.",
   "observed_branch": "feature/ar-1472-authenticated-live-dispatch-adapter",
   "observed_dirty": 0,
   "observed_head": "5f785dab598f24c2221272cf53b9366a10625413",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect authenticated control receipts to runtime-owned CLI live dispatch without a dependency cycle.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Authenticated live-dispatch adapter",
-  "updated_at": "2026-09-27T01:55:49+00:00",
+  "updated_at": "2026-09-27T01:56:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1472-authenticated-live-dispatch-adapter"
 }
 ---
@@ -194,3 +194,8 @@ authority. Mandatory qualification is deterministic local/mock or replay.
   f793d1cd1d99f831ddf78a3a8957ab72d1079c8331b3cebdc8220fc98381b9bb.
 
 - 2026-09-27T01:55:49+00:00: Heartbeat by ar1332_record_replay_luna56.
+
+- 2026-09-27T01:56:04+00:00: PR #343 exact-head poll: emulated aarch64, formal TLC/Kani/Loom,
+  hosted, Huawei, fault retained/bounded fuzz/matcher, and AWQ shadow all SUCCESS. Only Rust
+  verification and Repository quality remain IN_PROGRESS; mergeStateStatus UNSTABLE, no failures, no
+  merge attempted. Heartbeat renewed 120 minutes.
