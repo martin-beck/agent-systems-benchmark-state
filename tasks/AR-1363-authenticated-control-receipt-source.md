@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1363-authenticated-control-receipt-source.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Deliver authenticated runtime authority receipts through the versioned control boundary without exposing secrets or caller authority.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Authenticated control receipt source",
-  "updated_at": "2026-09-23T23:29:48+00:00",
+  "updated_at": "2026-09-27T00:55:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1363-authenticated-control-receipt-source"
 }
 ---
@@ -57,3 +57,6 @@ and teardown, and fail-closed denial of unapproved external traffic remain requi
 contracts. Existing live-provider dependency edges describe production integration
 ordering only and must not be used to block local qualification or to claim external
 reachability.
+
+- 2026-09-27T00:55:24+00:00: AR-1471 now provides authenticated control-to-runtime chain binding;
+  resume downstream receipt-source integration without caller authority.
