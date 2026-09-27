@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define and validate the external release-authority enrollment and signed-bundle verification handoff.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Release-authority enrollment handoff",
-  "updated_at": "2026-09-27T17:14:13+00:00",
+  "updated_at": "2026-09-27T17:18:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1493-release-authority-enrollment-handoff"
 }
 ---
@@ -204,3 +204,7 @@ and preserve AR-1490 as the customer-release blocker.
 
 - 2026-09-27T17:14:13+00:00: Recorded command exit 0; command argv SHA-256
   65c48537df954c87b1d88d29f6fc784ec1946325f89a10c698d249fe7fdf9686.
+
+- 2026-09-27T17:18:33+00:00: Recorded command timeout; classification=SUBPROCESS_TIMEOUT;
+  deadline=240.0s; command argv SHA-256
+  683564a812cccd0b491118c2d393d9764a2ca37204d0175a091d21e28705f8a2.
