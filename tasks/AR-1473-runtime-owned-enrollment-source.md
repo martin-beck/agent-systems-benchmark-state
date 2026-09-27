@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1473-runtime-owned-enrollment-source",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-27T12:41:40+00:00",
+  "claim_expires": "2026-09-27T12:43:36+00:00",
   "depends_on": [
     "AR-1471",
     "AR-1472",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve authenticated control enrollment into an opaque runtime-owned source for normal ASB run and sweep.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Runtime-owned authenticated enrollment source",
-  "updated_at": "2026-09-27T10:42:27+00:00",
+  "updated_at": "2026-09-27T10:43:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1473-runtime-owned-enrollment-source"
 }
 ---
@@ -68,3 +68,5 @@ the existing fail-closed authority boundaries.
 
 - 2026-09-27T10:42:14+00:00: Recorded command exit 0; command argv SHA-256
   b24e1452d90408fbeca79860cd9c189a296605391fbad89fe6d6492354892a4f.
+
+- 2026-09-27T10:43:36+00:00: Heartbeat by ar1332-record-replay-luna56.
