@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Verify first-customer release package installation and owner-backed local/mock/replay consumption.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "First-customer package consumption",
-  "updated_at": "2026-09-27T15:08:07+00:00",
+  "updated_at": "2026-09-27T15:08:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1489-first-customer-package-consumption"
 }
 ---
@@ -37,3 +37,6 @@ touching asb-tui or requiring a live provider.
   first-customer package/install consumption qualification with local/mock/replay evidence.
 
 - 2026-09-27T15:08:07+00:00: Claimed by ar1332-record-replay-luna56.
+
+- 2026-09-27T15:08:18+00:00: Recorded command exit 0; command argv SHA-256
+  1e11db425c6c6e86fb3846c57ea38401e187d9f08872a074c431e074467f14a4.
