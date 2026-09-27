@@ -142,7 +142,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1374](../tasks/AR-1374-cli-live-dispatch.md): Production live-provider dispatch | ar1332_record_replay_luna56 | Consume authenticated runtime receipts in production asb run and sweep dispatch. | Await dependency completion, then audit and implement runtime-owned asb run/sweep dispatch using the authenticated receipt source. |
+| P0 | [AR-1374](../tasks/AR-1374-cli-live-dispatch.md): Production live-provider dispatch | ar1332_record_replay_luna56 | Consume authenticated runtime receipts in production asb run and sweep dispatch. | Unblock after AR-1375 supplies the authenticated runtime control adapter and cross-crate bootstrap seam; then requalify run/sweep locally before any publication. |
 
 ### Blocked (69)
 

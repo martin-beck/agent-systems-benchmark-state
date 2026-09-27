@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1374-cli-live-dispatch",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "4ee5a4ed843c7dd7dda0b92dbe392f3787b4039f",
   "claim_expires": "2026-09-27T02:58:51+00:00",
   "depends_on": [
     "AR-1373",
@@ -10,7 +10,7 @@
     "AR-1328"
   ],
   "id": "AR-1374",
-  "next_action": "Await dependency completion, then audit and implement runtime-owned asb run/sweep dispatch using the authenticated receipt source.",
+  "next_action": "Unblock after AR-1375 supplies the authenticated runtime control adapter and cross-crate bootstrap seam; then requalify run/sweep locally before any publication.",
   "observed_branch": "feature/ar-1374-cli-live-dispatch",
   "observed_dirty": 0,
   "observed_head": "4ee5a4ed843c7dd7dda0b92dbe392f3787b4039f",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Consume authenticated runtime receipts in production asb run and sweep dispatch.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Production live-provider dispatch",
-  "updated_at": "2026-09-27T01:32:03+00:00",
+  "updated_at": "2026-09-27T01:32:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1374-cli-live-dispatch"
 }
 ---
@@ -98,3 +98,12 @@ reachability.
 
 - 2026-09-27T01:32:03+00:00: Recorded command exit 0; command argv SHA-256
   1ec03fda1f74c803bb5a7b097a8f588c73590e7033be466e85d2130fee8ac000.
+
+- 2026-09-27T01:32:36+00:00: Bounded current-main audit at 4ee5a4ed: CLI exposes
+  run_with_runtime_live_provider_source and runtime has LiveProviderRuntimeDispatchSource, but no
+  authenticated control transport/chain source constructs it. Safe bridge-to-handle/bootstrap
+  methods materialize_handle, LiveProviderBootstrapSpec::from_enrollment, and provisioner are
+  pub(crate), and are marked dead_code pending the authenticated caller. Existing AR-1374 history
+  already identifies this exact missing adapter; AR-1375 is the planned successor. No product
+  changes made, no asb-tui/live-provider dependency introduced, and no authority fabricated. Release
+  blocked with precise next action: implement AR-1375 adapter/cross-crate seam, then resume AR-1374.
