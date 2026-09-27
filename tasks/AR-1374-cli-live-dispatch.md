@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Consume authenticated runtime receipts in production asb run and sweep dispatch.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Production live-provider dispatch",
-  "updated_at": "2026-09-27T02:11:08+00:00",
+  "updated_at": "2026-09-27T02:11:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1374-cli-live-dispatch"
 }
 ---
@@ -119,3 +119,6 @@ reachability.
   blocker. Reopen for current-main requalification audit; no live provider or asb-tui changes.
 
 - 2026-09-27T02:11:08+00:00: Claimed by ar1374-dispatch-requal-luna56.
+
+- 2026-09-27T02:11:17+00:00: Recorded command exit 0; command argv SHA-256
+  321c534968b9c456a64caf5e6d09b63780c507f97548057d2bfe31edcfd73ff4.
