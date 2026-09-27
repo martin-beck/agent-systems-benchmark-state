@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-1335](tasks/AR-1335-credential-free-benchmark-ci.md): Credential-free CI stage for the benchmark path | Add the required credential-free CI stage for the complete benchmark path. | Add the required credential-free CI stage that exercises the complete benchmark path with loopback and synthetic doubles, no secrets, no egress and no network, keeping the 90% coverage floor. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -131,7 +137,6 @@ Never edit this file directly.
 | P1 | [AR-1027](tasks/AR-1027-asb-tui-verified-release.md): Publish the verified asb-tui release | Create and independently promote the first installable signed asb-tui release channel. | Publish the first verified asb-tui release only after ASB release, complete UI/install qualification and exact cross-repository evidence are done. | - |
 | P1 | [AR-1255](tasks/AR-1255-bundled-mockagents-qemu-runner.md): Bundle MockAgents transport and QEMU runner | Bundle MockAgents transport and QEMU runner. | Provision a digest-pinned bundled transport/QEMU runner and implement real in-container evidence. | - |
 | P1 | [AR-1257](tasks/AR-1257-mockagents-qemu-image.md): Qualify digest-pinned multiarch MockAgents image | Qualify a digest-pinned multiarch MockAgents OCI image for QEMU isolation. | Read the complete plan and verify official digest-pinned multiarch image, signature, license, and QEMU capability before any support claim. | - |
-| P1 | [AR-1335](tasks/AR-1335-credential-free-benchmark-ci.md): Credential-free CI stage for the benchmark path | Add the required credential-free CI stage for the complete benchmark path. | Add the required credential-free CI stage that exercises the complete benchmark path with loopback and synthetic doubles, no secrets, no egress and no network, keeping the 90% coverage floor. | - |
 | P1 | [AR-1336](tasks/AR-1336-live-benchmark-workflow-docs.md): Live benchmark workflow documentation and support matrix | Document the live benchmark workflow and publish the supported agent and provider matrix. | Document the end-to-end live benchmark workflow and publish the supported agent by provider by model support matrix, with exact digests and evidence limits. | - |
 | P1 | [AR-1420](tasks/AR-1420-literature-workload-campaign-integration.md): Literature workload campaign integration | Run the complete qualified literature workload matrix beside built-in software-engineering workloads. | Promote only after all literature family adapters and boundary inventory are released; extend the existing multi-agent campaign to the complete qualified literature selector set. | - |
 | P1 | [AR-1424](tasks/AR-1424-all-literature-selector-campaign.md): Complete literature selector and local campaign matrix | Make all locally executable literature workloads selectable and campaignable beside built-in fixtures. | Promote after AR-1423, AR-1430, AR-1420, and AR-1416 are released; implement the complete local-mock literature selector and campaign matrix. | - |

@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1335.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Add the required credential-free CI stage for the complete benchmark path.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Credential-free CI stage for the benchmark path",
-  "updated_at": "2026-09-22T13:39:37+00:00",
+  "updated_at": "2026-09-27T06:11:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1335-credential-free-benchmark-ci"
 }
 ---
@@ -43,3 +43,6 @@ and teardown, and fail-closed denial of unapproved external traffic remain requi
 contracts. Existing live-provider dependency edges describe production integration
 ordering only and must not be used to block local qualification or to claim external
 reachability.
+
+- 2026-09-27T06:11:11+00:00: AR-1333 supersession now explicitly points to completed AR-1456;
+  AR-1334 is done. Promote credential-free benchmark CI stage.
