@@ -8,7 +8,7 @@
     "AR-1472"
   ],
   "id": "AR-1480",
-  "next_action": "Monitor PR #357 exact head 440a06427d6e6fe2aacaebc2a50c5f924527dd04 until all 13 required checks are SUCCESS; merge only then.",
+  "next_action": "Merge PR #357 normally, then monitor all eight exact-main post-merge workflows before release.",
   "observed_branch": "feature/ar-1480-runtime-control-cli-composition",
   "observed_dirty": 0,
   "observed_head": "440a06427d6e6fe2aacaebc2a50c5f924527dd04",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compose authenticated runtime enrollment into opaque normal CLI run and sweep dispatch.",
-  "task_revision": 55,
+  "task_revision": 56,
   "title": "Runtime-control CLI composition",
-  "updated_at": "2026-09-27T11:43:35+00:00",
+  "updated_at": "2026-09-27T11:43:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1480-runtime-control-cli-composition"
 }
 ---
@@ -204,3 +204,7 @@ and never gates local qualification.
 
 - 2026-09-27T11:43:35+00:00: Recorded command exit 0; command argv SHA-256
   36858f90dedbb97237067ef509fb80b72c2131f33bbf313a3da978919a9b4667.
+
+- 2026-09-27T11:43:59+00:00: PR #357 exact-head final matrix is fully green: all 13 required checks
+  SUCCESS at signed head 440a06427d6e6fe2aacaebc2a50c5f924527dd04; mergeStateStatus CLEAN.
+  Independent review already recorded; authorized to merge normally.
