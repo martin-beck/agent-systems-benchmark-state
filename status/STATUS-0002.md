@@ -168,7 +168,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1491](../tasks/AR-1491-self-contained-package-qualification-fixture.md): Self-contained package qualification fixture | ar1332-record-replay-luna56 | Add a self-contained non-production package qualification fixture using the offline verifier test-key pattern. | Run clippy, docs/privacy/policy/release/clean gates, then independent review and publish the exact signed head. |
+| P0 | [AR-1491](../tasks/AR-1491-self-contained-package-qualification-fixture.md): Self-contained package qualification fixture | ar1332-record-replay-luna56 | Add a self-contained non-production package qualification fixture using the offline verifier test-key pattern. | Run repository policy/privacy/clean and serial workspace gates, then independent review and publish exact signed head. |
 
 ### Blocked (74)
 

@@ -1,7 +1,7 @@
 ---
 {
   "branch": "qualification/ar-1491-self-contained-package-qualification-fixture",
-  "checkpoint_commit": "f85435064f4a73c45ea1619d9a673bf67192457f",
+  "checkpoint_commit": "b4f5328a4c64551380fcfce6a701168393ff1f3e",
   "claim_expires": "2026-09-27T17:47:05+00:00",
   "depends_on": [
     "AR-1461",
@@ -10,7 +10,7 @@
     "AR-1489"
   ],
   "id": "AR-1491",
-  "next_action": "Run clippy, docs/privacy/policy/release/clean gates, then independent review and publish the exact signed head.",
+  "next_action": "Run repository policy/privacy/clean and serial workspace gates, then independent review and publish exact signed head.",
   "observed_branch": "qualification/ar-1491-self-contained-package-qualification-fixture",
   "observed_dirty": 0,
   "observed_head": "b4f532821cfdc10dc38aee856d8297e65dd9a2ba",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a self-contained non-production package qualification fixture using the offline verifier test-key pattern.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Self-contained package qualification fixture",
-  "updated_at": "2026-09-27T15:48:47+00:00",
+  "updated_at": "2026-09-27T15:49:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1491-self-contained-package-qualification-fixture"
 }
 ---
@@ -89,3 +89,7 @@ No live-provider or release-signing input may be fabricated.
 
 - 2026-09-27T15:48:34+00:00: Recorded command exit 0; command argv SHA-256
   9ade7080144a71fd7ecdb617b0e015d27ac4eb80ea924a4d5023b5259af099e0.
+
+- 2026-09-27T15:49:00+00:00: Clippy workspace all-targets passed after correcting
+  clippy::format-in-format-args in the fixture temp-root name. Product head amended and remains
+  SSH-signed+DCO as b4f5328. Focused verifier/CLI/transcript gates remain green.
