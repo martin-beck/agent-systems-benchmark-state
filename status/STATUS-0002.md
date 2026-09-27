@@ -163,7 +163,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1486](../tasks/AR-1486-runtime-owner-cli-entry-wiring.md): Runtime-owner CLI entry wiring | ar1332-record-replay-luna56 | Wire the runtime-owned local/mock process owner into ordinary CLI run and sweep. | Continue monitoring same PR #360 exact-head runs for Rust, policy/coverage/supply-chain, and emulated AArch64; merge only when all 13 are SUCCESS. |
+| P0 | [AR-1486](../tasks/AR-1486-runtime-owner-cli-entry-wiring.md): Runtime-owner CLI entry wiring | ar1332-record-replay-luna56 | Wire the runtime-owned local/mock process owner into ordinary CLI run and sweep. | Merge PR #360 normally, then verify exact merge and eight post-merge workflows before release. |
 
 ### Blocked (73)
 

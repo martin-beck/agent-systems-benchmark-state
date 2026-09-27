@@ -9,7 +9,7 @@
     "AR-1485"
   ],
   "id": "AR-1486",
-  "next_action": "Continue monitoring same PR #360 exact-head runs for Rust, policy/coverage/supply-chain, and emulated AArch64; merge only when all 13 are SUCCESS.",
+  "next_action": "Merge PR #360 normally, then verify exact merge and eight post-merge workflows before release.",
   "observed_branch": "feature/ar-1486-runtime-owner-cli-entry-wiring",
   "observed_dirty": 0,
   "observed_head": "a5f9ad27b967371511b0981aad29d3aa65a7fcab",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire the runtime-owned local/mock process owner into ordinary CLI run and sweep.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Runtime-owner CLI entry wiring",
-  "updated_at": "2026-09-27T13:44:16+00:00",
+  "updated_at": "2026-09-27T13:44:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1486-cli-owner-wiring"
 }
 ---
@@ -152,3 +152,8 @@ authority.
 
 - 2026-09-27T13:44:16+00:00: Recorded command exit 0; command argv SHA-256
   d61540da7249125e1e73cf2dad2c5560d99329e960c33b84eabbb613215d87aa.
+
+- 2026-09-27T13:44:38+00:00: PR #360 exact-head final matrix: all 13 required checks SUCCESS at
+  a5f9ad27b967371511b0981aad29d3aa65a7fcab; mergeStateStatus CLEAN. Independent review confirms
+  runtime-owned local/mock backend is actually used for scheduler attempts, enrollment/teardown
+  fencing is preserved, no caller authority/live provider/asb-tui, and provenance is exact.
