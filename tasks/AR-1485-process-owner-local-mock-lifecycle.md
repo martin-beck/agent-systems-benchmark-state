@@ -10,7 +10,7 @@
     "AR-1484"
   ],
   "id": "AR-1485",
-  "next_action": "Wait for Policy, coverage, and supply chain on PR #359 exact head f01b7b11; when terminal SUCCESS and independent review remains clean, merge normally, then verify eight post-merge workflows.",
+  "next_action": "Merge PR #359 normally, then verify exact merge and all eight post-merge workflows before release.",
   "observed_branch": "feature/ar-1485-process-owner-local-mock-lifecycle",
   "observed_dirty": 0,
   "observed_head": "f01b7b11b5dcd0152482f26663fcc36c98da7cbe",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement runtime-owned local/mock process lifecycle and opaque-source handoff.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Process-owner local/mock lifecycle",
-  "updated_at": "2026-09-27T13:03:01+00:00",
+  "updated_at": "2026-09-27T13:03:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1485-process-owner-local-mock-lifecycle"
 }
 ---
@@ -112,3 +112,7 @@ authority.
 
 - 2026-09-27T13:03:01+00:00: Recorded command exit 0; command argv SHA-256
   892cddded65dab9ad40e5ec3fdbc4ca6d0d5aa6a24a6d432967025a83c6c434a.
+
+- 2026-09-27T13:03:23+00:00: Independent exact-head review passed: scoped two-file diff, signed/DCO
+  head f01b7b11, runtime-owned ephemeral local/mock backend, enrollment and teardown fences, no
+  caller authority/live provider; all 13 required PR checks SUCCESS and mergeStateStatus CLEAN.
