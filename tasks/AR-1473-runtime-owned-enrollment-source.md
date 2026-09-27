@@ -1,21 +1,25 @@
 ---
 {
-  "schema_version": 1,
-  "id": "AR-1473",
-  "title": "Runtime-owned authenticated enrollment source",
-  "status": "planned",
-  "priority": "P0",
-  "summary": "Resolve authenticated control enrollment into an opaque runtime-owned source for normal ASB run and sweep.",
-  "next_action": "Promote after validating completed dependencies, then claim the isolated worktree and implement the narrow runtime-owned enrollment source.",
-  "task_revision": 1,
-  "updated_at": "2026-09-27T03:23:00+00:00",
-  "owner": "",
-  "claim_expires": "",
-  "worktree_key": "agent-systems-benchmark-ar-1473-runtime-owned-enrollment-source",
   "branch": "feature/ar-1473-runtime-owned-enrollment-source",
   "checkpoint_commit": "",
+  "claim_expires": "",
+  "depends_on": [
+    "AR-1471",
+    "AR-1472",
+    "AR-1379"
+  ],
+  "id": "AR-1473",
+  "next_action": "Promote after validating completed dependencies, then claim the isolated worktree and implement the narrow runtime-owned enrollment source.",
+  "owner": "",
   "plan": "../plans/AR-1473-runtime-owned-enrollment-source.md",
-  "depends_on": ["AR-1471", "AR-1472", "AR-1379"]
+  "priority": "P0",
+  "schema_version": 1,
+  "status": "open",
+  "summary": "Resolve authenticated control enrollment into an opaque runtime-owned source for normal ASB run and sweep.",
+  "task_revision": 2,
+  "title": "Runtime-owned authenticated enrollment source",
+  "updated_at": "2026-09-27T03:23:34+00:00",
+  "worktree_key": "agent-systems-benchmark-ar-1473-runtime-owned-enrollment-source"
 }
 ---
 
@@ -27,3 +31,6 @@ the existing fail-closed authority boundaries.
   `1e2c5911` confirmed that certificate-chain storage and adapter integration
   exist but no runtime-owned enrollment operation populates the source used by
   normal `run`/`sweep`.
+
+- 2026-09-27T03:23:34+00:00: Dependencies AR-1471, AR-1472, and AR-1379 are done at protected main;
+  promote runtime-owned enrollment source successor.
