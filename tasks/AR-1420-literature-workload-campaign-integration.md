@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run the complete qualified literature workload matrix beside built-in software-engineering workloads.",
-  "task_revision": 113,
+  "task_revision": 114,
   "title": "Literature workload campaign integration",
-  "updated_at": "2026-09-27T07:17:54+00:00",
+  "updated_at": "2026-09-27T07:18:01+00:00",
   "worktree_key": ""
 }
 ---
@@ -384,3 +384,6 @@ tasks or require any live provider.
   failed with control state root already owned. Approved one failed-workflow retry was launched;
   retry job 108572843071 is pending. Emulated AArch64 and policy/coverage checks are also pending on
   the same exact head. No code change for the race.
+
+- 2026-09-27T07:18:01+00:00: Recorded command exit 8; command argv SHA-256
+  20a3b5c9a22f01eaf717c06542061b448b2010507f13315f3dd8d682a6ec62ac.
