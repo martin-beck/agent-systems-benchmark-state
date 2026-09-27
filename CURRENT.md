@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1473](tasks/AR-1473-runtime-owned-enrollment-source.md): Runtime-owned authenticated enrollment source | Resolve authenticated control enrollment into an opaque runtime-owned source for normal ASB run and sweep. | Reconcile/doctor live state, then release AR-1473 done. | ar1332-record-replay-luna56 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -317,6 +311,7 @@ Never edit this file directly.
 | P0 | [AR-1469](tasks/AR-1469-ar1392-protected-topology-repair.md): AR-1392 protected-main topology repair | Repair the single-parent protected merge for AR-1392 without changing its reviewed implementation. | Reconcile and doctor state after seven green exact-main workflows; topology repair complete. | - |
 | P0 | [AR-1471](tasks/AR-1471-control-to-runtime-chain-binding.md): Control-to-runtime certificate-chain binding | Bind authenticated control enrollment to runtime certificate-chain storage and live dispatch. | Reconcile and doctor live state, then release AR-1471 done with merge and seven exact-main workflow evidence. | - |
 | P0 | [AR-1472](tasks/AR-1472-authenticated-live-dispatch-adapter.md): Authenticated live-dispatch adapter | Connect authenticated control receipts to runtime-owned CLI live dispatch without a dependency cycle. | Run reconcile and doctor --live, then release AR-1472 done with merge and seven-workflow evidence. | - |
+| P0 | [AR-1473](tasks/AR-1473-runtime-owned-enrollment-source.md): Runtime-owned authenticated enrollment source | Resolve authenticated control enrollment into an opaque runtime-owned source for normal ASB run and sweep. | Reconcile/doctor live state, then release AR-1473 done. | - |
 | P0 | [AR-1474](tasks/AR-1474-runtime-authority-input-resolver.md): Runtime-owned authority-input resolver | Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority. | Release AR-1474 done; old PR coverage failure superseded by AR-1477 tests and AR-1478 topology repair. | - |
 | P0 | [AR-1475](tasks/AR-1475-asb-metrics-evidence-fixture-repair.md): Repair asb-metrics evidence fixture classification | Repair the deterministic ProbeRejected versus MalformedEvidence fixture failure blocking PR #345. | Release done after final reconcile; then rerun PR #345 exact-head validation. | - |
 | P0 | [AR-1476](tasks/AR-1476-workspace-coverage-floor-repair.md): Repair workspace coverage floor | Restore the enforced 90 percent workspace coverage floor blocking exact AR-1474 validation. | Rerun PR #345 exact-head validation against current protected main 1dada31c; no repair diff is required unless the current-base gate regresses. | - |

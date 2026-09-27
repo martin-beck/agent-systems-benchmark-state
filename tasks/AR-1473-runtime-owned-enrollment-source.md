@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1473-runtime-owned-enrollment-source",
   "checkpoint_commit": "59323f41ed2d10a952a1276107459260ebdf409a",
-  "claim_expires": "2026-09-27T13:09:27+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1471",
     "AR-1472",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1473-runtime-owned-enrollment-source",
   "observed_dirty": 0,
   "observed_head": "4a29c3431d236cc9766c47408dab8de998a31a3b",
-  "owner": "ar1332-record-replay-luna56",
+  "owner": "",
   "plan": "../plans/AR-1473-runtime-owned-enrollment-source.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Resolve authenticated control enrollment into an opaque runtime-owned source for normal ASB run and sweep.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Runtime-owned authenticated enrollment source",
-  "updated_at": "2026-09-27T11:11:56+00:00",
+  "updated_at": "2026-09-27T11:12:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1473-runtime-owned-enrollment-source"
 }
 ---
@@ -205,3 +205,10 @@ the existing fail-closed authority boundaries.
   Hosted portability 36314444948; Repository quality 36314444954; Fault assurance 36314444956;
   Huawei headers 36314444973. PR #356 closed merged. Runtime source change remained ASB-only,
   private, local/mock-tested, no live provider/asb-tui.
+
+- 2026-09-27T11:12:27+00:00: AR-1473 complete. PR #356 merged as
+  59323f41ed2d10a952a1276107459260ebdf409a from signed+DCO head
+  4a29c3431d236cc9766c47408dab8de998a31a3b. All eight exact-main workflows SUCCESS: Credential-free
+  36314444913; AArch64 36314444926; Formal 36314444936; Rust 36314444940; Hosted 36314444948;
+  Repository quality 36314444954; Fault 36314444956; Huawei headers 36314444973. Reconcile
+  succeeded; doctor --live retained known generated WORKTREES.md stale projection caveat.
