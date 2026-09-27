@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1474](tasks/AR-1474-runtime-authority-input-resolver.md): Runtime-owned authority-input resolver | Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority. | Create a narrow successor to raise clean CI workspace line coverage from 89.88% to at least 90%; do not waive coverage or merge PR #345. Preserve control state-root race as unrelated transient evidence. | ar1332-record-replay-luna56 |
+| P0 | [AR-1474](tasks/AR-1474-runtime-authority-input-resolver.md): Runtime-owned authority-input resolver | Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority. | Release AR-1474 done; old PR coverage failure superseded by AR-1477 tests and AR-1478 topology repair. | ar1332-record-replay-luna56 |
 
 ## Blocked
 

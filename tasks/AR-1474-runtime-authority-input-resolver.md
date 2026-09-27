@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1474-runtime-authority-input-resolver",
-  "checkpoint_commit": "c21d1ce5d1eca0ad80c28f0a0c5ebda5fd6a3603",
+  "checkpoint_commit": "fac11a22a93c1a075d7d528f2c6c20d426c66ba4",
   "claim_expires": "2026-09-27T08:08:08+00:00",
   "depends_on": [
     "AR-1362",
@@ -10,7 +10,7 @@
     "AR-1379"
   ],
   "id": "AR-1474",
-  "next_action": "Create a narrow successor to raise clean CI workspace line coverage from 89.88% to at least 90%; do not waive coverage or merge PR #345. Preserve control state-root race as unrelated transient evidence.",
+  "next_action": "Release AR-1474 done; old PR coverage failure superseded by AR-1477 tests and AR-1478 topology repair.",
   "observed_branch": "feature/ar-1474-runtime-authority-input-resolver",
   "observed_dirty": 0,
   "observed_head": "c21d1ce5d1eca0ad80c28f0a0c5ebda5fd6a3603",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority.",
-  "task_revision": 166,
+  "task_revision": 167,
   "title": "Runtime-owned authority-input resolver",
-  "updated_at": "2026-09-27T06:08:11+00:00",
+  "updated_at": "2026-09-27T06:08:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1474-runtime-authority-input-resolver"
 }
 ---
@@ -522,3 +522,10 @@ authority, privacy, lifecycle, formal, or egress contracts.
 
 - 2026-09-27T06:08:11+00:00: Recorded command exit 0; command argv SHA-256
   aedbe6248a9baf95462c22a571142f628bf7e0f7f582ba7863578b068c44a3b4.
+
+- 2026-09-27T06:08:53+00:00: PR 345 is already MERGED at c21d1ce5 with parents 56d284c2 and
+  1dada31c. Historical Policy Coverage failure 108554587959 was 89.88 percent on the pre-AR-1477
+  tree. Protected main fac11a22 includes AR-1477 coverage tests and AR-1478 topology repair. All
+  seven exact-main workflows are SUCCESS: Huawei 36298610690, hosted 36298610650, fault 36298610671,
+  formal 36298610655, Rust 36298610685, repository quality 36298610658, emulated AArch64
+  36298610696. No new synchronization or product change is needed.
