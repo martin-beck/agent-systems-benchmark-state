@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1336-live-benchmark-workflow-docs",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-27T11:30:47+00:00",
   "depends_on": [
     "AR-1333",
     "AR-1334",
@@ -10,15 +10,15 @@
   ],
   "id": "AR-1336",
   "next_action": "Document the end-to-end live benchmark workflow and publish the supported agent by provider by model support matrix, with exact digests and evidence limits.",
-  "owner": "",
+  "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1336.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Document the live benchmark workflow and publish the supported agent and provider matrix.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Live benchmark workflow documentation and support matrix",
-  "updated_at": "2026-09-27T09:30:32+00:00",
+  "updated_at": "2026-09-27T09:30:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1336-live-benchmark-workflow-docs"
 }
 ---
@@ -48,3 +48,5 @@ reachability.
 
 - 2026-09-27T09:30:32+00:00: AR-1333, AR-1334, and AR-1335 are done; promote documentation/support
   matrix with optional live-provider boundary.
+
+- 2026-09-27T09:30:47+00:00: Claimed by ar1332-record-replay-luna56.
