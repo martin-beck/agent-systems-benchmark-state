@@ -155,11 +155,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1483](../tasks/AR-1483-authenticated-control-process-owner.md): Authenticated control process owner | Unclaimed | Own authenticated control session and lifecycle while minting opaque CLI dispatch sources. | Promote and claim, then audit whether the runtime/control owner contract can be implemented without caller authority. |
+| P0 | [AR-1483](../tasks/AR-1483-authenticated-control-process-owner.md): Authenticated control process owner | ar1332-record-replay-luna56 | Own authenticated control session and lifecycle while minting opaque CLI dispatch sources. | Promote and claim, then audit whether the runtime/control owner contract can be implemented without caller authority. |
 
 ### Blocked (72)
 

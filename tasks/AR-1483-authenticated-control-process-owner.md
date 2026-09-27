@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1483-authenticated-control-process-owner",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-27T14:06:58+00:00",
   "depends_on": [
     "AR-1472",
     "AR-1473",
@@ -13,15 +13,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1483-authenticated-control-process-owner.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Own authenticated control session and lifecycle while minting opaque CLI dispatch sources.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Authenticated control process owner",
-  "updated_at": "2026-09-27T12:06:55+00:00",
+  "updated_at": "2026-09-27T12:06:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1483-authenticated-control-process-owner"
 }
 ---
@@ -34,3 +34,5 @@ caller authority or modify asb-tui.
 - 2026-09-27T12:06:55+00:00: Smallest dependency-safe process-owner successor for AR-1482. Depends
   only on completed AR-1472, AR-1473, and AR-1480; owns authenticated control session, chain store,
   resolver, and lifecycle without AR-1374/1375.
+
+- 2026-09-27T12:06:58+00:00: Claimed by ar1332-record-replay-luna56.
