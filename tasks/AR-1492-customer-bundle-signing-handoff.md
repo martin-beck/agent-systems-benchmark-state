@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stage a deterministic customer bundle and provide an explicit external signing handoff and verifier.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Customer bundle signing handoff",
-  "updated_at": "2026-09-27T16:22:34+00:00",
+  "updated_at": "2026-09-27T16:22:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1492-customer-bundle-signing-handoff"
 }
 ---
@@ -107,3 +107,6 @@ detached signature.
   b048fef instead of protected main 5f4e286. Repaired by fetching origin/main and creating signed
   non-squash merge commit 050b298, preserving the reviewed implementation tree; force-with-lease
   updated the branch. Re-run exact-head checks; no product semantics changed.
+
+- 2026-09-27T16:22:53+00:00: Recorded command exit 0; command argv SHA-256
+  7ea0d13c9417ccae5efd80f809914c8b60a39553bd48f033de3896fce4750f4f.
