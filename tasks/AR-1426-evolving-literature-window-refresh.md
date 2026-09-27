@@ -8,7 +8,7 @@
     "AR-1425"
   ],
   "id": "AR-1426",
-  "next_action": "Rerun failed AArch64 workflow 36312453084 once; then finish Rust/Repository Quality and all post-merge green verification.",
+  "next_action": "Await AArch64 run 36312453084 attempt 2; all other seven post-merge workflows are SUCCESS. Release done after AArch64 attempt 2 SUCCESS.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Refresh evolving literature benchmark windows without stale or incomparable results.",
-  "task_revision": 56,
+  "task_revision": 57,
   "title": "Evolving literature workload window refresh",
-  "updated_at": "2026-09-27T10:37:49+00:00",
+  "updated_at": "2026-09-27T10:38:14+00:00",
   "worktree_key": ""
 }
 ---
@@ -210,3 +210,9 @@ requires live providers or upstream downloads during development or CI.
 
 - 2026-09-27T10:37:49+00:00: Recorded command exit 0; command argv SHA-256
   1cdef511c02d6c41abd9e62231f3c2af96bde31a21ea789087971315c9836c1e.
+
+- 2026-09-27T10:38:14+00:00: Approved rerun already launched via handoffctl: gh run rerun
+  36312453084 --failed. Current exact-main status: AArch64 run 36312453084 attempt 2 in_progress;
+  Rust 36312453077 SUCCESS; Repository quality 36312453096 SUCCESS; Huawei 36312453082, Formal
+  36312453087, Fault 36312453109, Credential-free 36312453110, Hosted 36312453113 SUCCESS. No second
+  retry authorized.
