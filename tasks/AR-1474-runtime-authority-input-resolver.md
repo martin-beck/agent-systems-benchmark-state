@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1474-runtime-authority-input-resolver",
   "checkpoint_commit": "56d284c2d292163e2724318b0443f53211b4f9e4",
-  "claim_expires": "2026-09-27T06:41:51+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1362",
     "AR-1471",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1474-runtime-authority-input-resolver",
   "observed_dirty": 0,
   "observed_head": "56d284c2d292163e2724318b0443f53211b4f9e4",
-  "owner": "ar1332-record-replay-luna56",
+  "owner": "",
   "plan": "../plans/AR-1474-runtime-authority-input-resolver.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority.",
-  "task_revision": 112,
+  "task_revision": 113,
   "title": "Runtime-owned authority-input resolver",
-  "updated_at": "2026-09-27T04:42:29+00:00",
+  "updated_at": "2026-09-27T04:43:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1474-runtime-authority-input-resolver"
 }
 ---
@@ -358,3 +358,11 @@ authority, privacy, lifecycle, formal, or egress contracts.
 
 - 2026-09-27T04:42:29+00:00: Recorded command exit 0; command argv SHA-256
   32501e0cf4fcad6ccdfa0e933c613d4be3bed5763180c15f010f6cefa8034f3e.
+
+- 2026-09-27T04:43:22+00:00: Repository-quality workflow 36292250172, job 108551545207, terminal
+  FAILURE on exact head 56d284c2. Enforce coverage floors ran cargo llvm-cov --locked --workspace
+  --all-targets --fail-under-lines 90 and reported TOTAL 98414 lines, 11761 missed, 88.05%; exit 1.
+  Optional evidence classification also exited 1 because publication was interrupted. The asb-cli
+  state-root retry passed in Rust job 108550561928, so this is a separate deterministic coverage
+  gate. Next action: create a narrow coverage-floor repair successor for PR #345 and rerun
+  exact-head validation; do not waive or merge.
