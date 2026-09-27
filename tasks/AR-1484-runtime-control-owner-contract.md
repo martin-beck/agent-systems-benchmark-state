@@ -9,7 +9,7 @@
     "AR-1480"
   ],
   "id": "AR-1484",
-  "next_action": "Monitor eight exact-main post-merge workflows for eff9984fd11bec55e1e23366b3bba0bcb717826a to terminal SUCCESS; then reconcile/doctor/release.",
+  "next_action": "Reconcile/doctor, then release AR-1484 done ownerless with complete merge/post-merge evidence.",
   "observed_branch": "feature/ar-1484-runtime-control-owner-contract",
   "observed_dirty": 0,
   "observed_head": "7ce533ea9b0524c5b317cc2db8fad0aff8ecedc3",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define stable runtime/control process-owner lifecycle and opaque handoff contract.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Runtime/control process-owner contract",
-  "updated_at": "2026-09-27T12:40:42+00:00",
+  "updated_at": "2026-09-27T12:41:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1484-runtime-control-owner-contract"
 }
 ---
@@ -198,3 +198,9 @@ authority.
 
 - 2026-09-27T12:40:42+00:00: Recorded command exit 0; command argv SHA-256
   7b1a408ee45a737250d08f491fbaf56cd850241ad783be5f133e2e7aa5b95821.
+
+- 2026-09-27T12:41:09+00:00: All eight exact-main post-merge workflows for merge SHA
+  eff9984fd11bec55e1e23366b3bba0bcb717826a are terminal SUCCESS: Emulated aarch64 36319234719;
+  Formal 36319234706; Fault 36319234658; Repository quality 36319234629; Huawei MIT headers
+  36319234614; Credential-free 36319234609; Rust 36319234605; Hosted portability/native 36319234571.
+  Ready for final reconcile/doctor/release.
