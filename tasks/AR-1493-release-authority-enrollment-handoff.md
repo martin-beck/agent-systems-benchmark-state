@@ -2,7 +2,7 @@
 {
   "branch": "release/ar-1493-release-authority-enrollment-handoff",
   "checkpoint_commit": "e1be259c9abb2a901998d3ca9b82521edd3fa2f8",
-  "claim_expires": "2026-09-27T19:19:21+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1461",
     "AR-1462",
@@ -14,15 +14,15 @@
   "observed_branch": "release/ar-1493-release-authority-enrollment-handoff",
   "observed_dirty": 0,
   "observed_head": "9d2b22a80cfe9c6d9a01daec1e257fd93b99d37d",
-  "owner": "ar1332-record-replay-luna56",
+  "owner": "",
   "plan": "../plans/AR-1493-release-authority-enrollment-handoff.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Define and validate the external release-authority enrollment and signed-bundle verification handoff.",
-  "task_revision": 64,
+  "task_revision": 65,
   "title": "Release-authority enrollment handoff",
-  "updated_at": "2026-09-27T17:21:51+00:00",
+  "updated_at": "2026-09-27T17:22:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1493-release-authority-enrollment-handoff"
 }
 ---
@@ -239,3 +239,13 @@ and preserve AR-1490 as the customer-release blocker.
   normally at 17:11:45Z from reviewed signed/DCO head 9d2b22a80cfe9c6d9a01daec1e257fd93b99d37d.
   External signing authority was not generated or assumed; AR-1490 remains blocked on authorized
   customer signing inputs.
+
+- 2026-09-27T17:22:31+00:00: AR-1493 complete. PR #372 merged normally at merge SHA
+  e1be259c9abb2a901998d3ca9b82521edd3fa2f8 from reviewed signed/DCO head
+  9d2b22a80cfe9c6d9a01daec1e257fd93b99d37d. All eight exact-main post-merge workflows SUCCESS:
+  Huawei 36336026608, hosted 36336026588, credential-free 36336026586, fault 36336026566, formal
+  36336026579, Rust 36336026563, emulated AArch64 36336026554, Repository Quality 36336026573/job
+  108666918457. Repository-side authority-input shape validation and explicit operator handoff docs
+  are integrated; no key/signature/principal authority was fabricated or assumed. Reconcile
+  completed. doctor --live reports known generated WORKTREES.md stale projection caveat. AR-1490
+  remains truthfully blocked on authorized external signed customer package inputs.
