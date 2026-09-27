@@ -10,20 +10,21 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #349 | `feature/ar-1335-credential-free-benchmark-ci@16e4bf8405b9` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, QUEUED:, IN_PROGRESS: | ci: add credential-free benchmark path stage |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 36300089789 | `16e4bf8405b9` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 36300089621 | `16e4bf8405b9` | pull_request | Credential-free benchmark path | in_progress:- |
+| 36300089598 | `16e4bf8405b9` | pull_request | Repository quality | in_progress:- |
+| 36300089591 | `16e4bf8405b9` | pull_request | Rust verification | in_progress:- |
+| 36300089590 | `16e4bf8405b9` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 36300089573 | `16e4bf8405b9` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 36300089558 | `16e4bf8405b9` | pull_request | Formal assurance | in_progress:- |
+| 36300089525 | `16e4bf8405b9` | pull_request | Huawei MIT source headers | completed:success |
+| 36300089501 | `16e4bf8405b9` | pull_request | Fault assurance | queued:- |
 | 36298610696 | `fac11a22a93c` | push | Emulated aarch64 portability | completed:success |
 | 36298610690 | `fac11a22a93c` | push | Huawei MIT source headers | completed:success |
 | 36298610685 | `fac11a22a93c` | push | Rust verification | completed:success |
-| 36298610671 | `fac11a22a93c` | push | Fault assurance | completed:success |
-| 36298610658 | `fac11a22a93c` | push | Repository quality | completed:success |
-| 36298610655 | `fac11a22a93c` | push | Formal assurance | completed:success |
-| 36298610650 | `fac11a22a93c` | push | Hosted portability and native qualification | completed:success |
-| 36297781208 | `d1456b88d511` | pull_request | Repository quality | completed:success |
-| 36297781114 | `d1456b88d511` | pull_request | Emulated aarch64 portability | completed:success |
-| 36297781109 | `d1456b88d511` | pull_request | Fault assurance | completed:success |
-| 36297781103 | `d1456b88d511` | pull_request | Hosted portability and native qualification | completed:success |
-| 36297781093 | `d1456b88d511` | pull_request | Huawei MIT source headers | completed:success |
