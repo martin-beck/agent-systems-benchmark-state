@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make all locally executable literature workloads selectable and campaignable beside built-in fixtures.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Complete literature selector and local campaign matrix",
-  "updated_at": "2026-09-27T08:43:47+00:00",
+  "updated_at": "2026-09-27T08:43:56+00:00",
   "worktree_key": ""
 }
 ---
@@ -69,3 +69,6 @@ dataset downloads are never requirements for this AR.
   crates/asb-cli/src/control.rs:6593 with CliError operation/control state root is already owned.
   Focused asb-cli serial run passed earlier; classify as known shared state-root runner contention
   before any code change.
+
+- 2026-09-27T08:43:56+00:00: Recorded command exit 101; command argv SHA-256
+  8e889f800e8d65493cb14f24e8d04f20b48cf560391d8cf136bc4545d693f9d9.
