@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the required credential-free CI stage for the complete benchmark path.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Credential-free CI stage for the benchmark path",
-  "updated_at": "2026-09-27T06:25:07+00:00",
+  "updated_at": "2026-09-27T06:25:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1335-credential-free-benchmark-ci"
 }
 ---
@@ -196,3 +196,6 @@ reachability.
   fail-closed tests, then full asb-cli tests. Focused complete-path test passed; full asb-cli suite
   passed 116/116; cargo fmt, diff check, and actionlint diagnostics [] passed. Signed+DCO commit
   16e4bf8405b98c229bda49f82253f21784d82d51.
+
+- 2026-09-27T06:25:16+00:00: Recorded command exit 0; command argv SHA-256
+  70392db4184023112e6a260bdfbfaf8b989773661bfb3d746f6bdb24913b46c6.
