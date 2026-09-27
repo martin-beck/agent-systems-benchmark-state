@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #359 | `feature/ar-1485-process-owner-local-mock-lifecycle@f01b7b11b5dc` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, QUEUED:, IN_PROGRESS: | feat(runtime): add local mock process owner lifecycle |
+| #359 | `feature/ar-1485-process-owner-local-mock-lifecycle@f01b7b11b5dc` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(runtime): add local mock process owner lifecycle |
 
 ## Recent workflows
 
@@ -23,8 +23,8 @@ Generated from local Git and GitHub. Do not edit.
 | 36320627518 | `f01b7b11b5dc` | pull_request | Formal assurance | in_progress:- |
 | 36320627514 | `f01b7b11b5dc` | pull_request | Hosted portability and native qualification | in_progress:- |
 | 36320627504 | `f01b7b11b5dc` | pull_request | Rust verification | in_progress:- |
-| 36320627493 | `f01b7b11b5dc` | pull_request | Fault assurance | queued:- |
-| 36320627484 | `f01b7b11b5dc` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 36320627493 | `f01b7b11b5dc` | pull_request | Fault assurance | in_progress:- |
+| 36320627484 | `f01b7b11b5dc` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36319234719 | `eff9984fd11b` | push | Emulated aarch64 portability | completed:success |
 | 36319234706 | `eff9984fd11b` | push | Formal assurance | completed:success |
 | 36319234658 | `eff9984fd11b` | push | Fault assurance | completed:success |
