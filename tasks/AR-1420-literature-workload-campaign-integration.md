@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run the complete qualified literature workload matrix beside built-in software-engineering workloads.",
-  "task_revision": 87,
+  "task_revision": 88,
   "title": "Literature workload campaign integration",
-  "updated_at": "2026-09-27T07:10:16+00:00",
+  "updated_at": "2026-09-27T07:10:31+00:00",
   "worktree_key": ""
 }
 ---
@@ -298,3 +298,6 @@ tasks or require any live provider.
 
 - 2026-09-27T07:10:16+00:00: Recorded command exit 0; command argv SHA-256
   a02b93e0d0a87a7047534b7b8a1e3d642c9b7708cf624bf1c7b6b1819592370a.
+
+- 2026-09-27T07:10:31+00:00: Recorded command exit 0; command argv SHA-256
+  551fd1c66fd8cdbe140b50e8925b0158c18a474c097f7f9b1a7f114628366710.
