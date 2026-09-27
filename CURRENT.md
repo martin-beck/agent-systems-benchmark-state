@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1420](tasks/AR-1420-literature-workload-campaign-integration.md): Literature workload campaign integration | Run the complete qualified literature workload matrix beside built-in software-engineering workloads. | PR #350 is not mergeable: preserve Rust retry failure and await coordinator decision/create repair for unrelated existing asb-agents timing flake; do not merge or weaken checks. | - |
+| P1 | [AR-1420](tasks/AR-1420-literature-workload-campaign-integration.md): Literature workload campaign integration | Run the complete qualified literature workload matrix beside built-in software-engineering workloads. | PR #350 is not mergeable: preserve Rust retry failure and await coordinator decision/create repair for unrelated existing asb-agents timing flake; do not merge or weaken checks. | ar1332-record-replay-luna56 |
 
 ## Blocked
 
