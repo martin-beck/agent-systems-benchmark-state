@@ -18,11 +18,11 @@
   "plan": "../plans/AR-1420.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Run the complete qualified literature workload matrix beside built-in software-engineering workloads.",
+  "task_revision": 2,
   "title": "Literature workload campaign integration",
-  "task_revision": 1,
-  "updated_at": "2026-09-24T19:10:00+00:00",
+  "updated_at": "2026-09-27T06:45:45+00:00",
   "worktree_key": ""
 }
 ---
@@ -31,3 +31,6 @@ This integration must use deterministic local/mock or strict-replay evidence in
 development and CI. It must not turn unavailable literature records into runnable
 tasks or require any live provider.
 
+
+- 2026-09-27T06:45:45+00:00: Literature adapters AR-1417/1418/1419 and the superseded AR-1333
+  successor AR-1456 are complete; promote the complete literature workload campaign.
