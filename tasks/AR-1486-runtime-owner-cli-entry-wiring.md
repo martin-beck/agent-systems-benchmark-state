@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire the runtime-owned local/mock process owner into ordinary CLI run and sweep.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Runtime-owner CLI entry wiring",
-  "updated_at": "2026-09-27T13:23:58+00:00",
+  "updated_at": "2026-09-27T13:24:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1486-cli-owner-wiring"
 }
 ---
@@ -66,3 +66,6 @@ authority.
   ec113df51a8f56dcd11ba6ddb46059508cf71b0d93021907347ccb3f0686fe88; fixture expected
   f5ee73176c0587def7d01e56e3b07091faf99678c6f14f4a9769e0d0eaea726d. This is expected provenance
   drift from the intentional CLI wiring diff, not a runtime assertion failure.
+
+- 2026-09-27T13:24:24+00:00: Recorded command exit 0; command argv SHA-256
+  58a3af1d9482da5077e08de409021946fc194bbc3d93a7f92dda6c19b0b341bc.
