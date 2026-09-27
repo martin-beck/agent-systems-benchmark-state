@@ -10,7 +10,7 @@
     "AR-1489"
   ],
   "id": "AR-1491",
-  "next_action": "Merge PR #370 normally, then monitor all eight exact-main post-merge workflows and release only after terminal SUCCESS.",
+  "next_action": "Reconcile and doctor state projection; retain generated WORKTREES/PROJECT_STATE caveat if reported.",
   "observed_branch": "qualification/ar-1491-self-contained-package-qualification-fixture",
   "observed_dirty": 0,
   "observed_head": "b4f532821cfdc10dc38aee856d8297e65dd9a2ba",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a self-contained non-production package qualification fixture using the offline verifier test-key pattern.",
-  "task_revision": 62,
+  "task_revision": 63,
   "title": "Self-contained package qualification fixture",
-  "updated_at": "2026-09-27T16:11:07+00:00",
+  "updated_at": "2026-09-27T16:11:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1491-self-contained-package-qualification-fixture"
 }
 ---
@@ -222,3 +222,10 @@ No live-provider or release-signing input may be fabricated.
 
 - 2026-09-27T16:11:07+00:00: Recorded command exit 0; command argv SHA-256
   016b0a2776a7feb1db5428548280541f2576e942f89fbfd28a2be67be2f10511.
+
+- 2026-09-27T16:11:33+00:00: Post-merge verification complete. PR #370 merged normally: reviewed
+  head b4f532821cfdc10dc38aee856d8297e65dd9a2ba, merge 5f4e286f051d09bc9706085ca21f68459fc10eb4. All
+  8 exact-main workflows terminal SUCCESS: Formal 36331674502, Repository Quality 36331674455,
+  Huawei headers 36331674456, Fault 36331674445, Emulated aarch64 36331674468, Hosted 36331674447,
+  Credential-free 36331674444, Rust 36331674435. Fixture remains non-production qualification only;
+  signed external package gate for AR-1490 unchanged.

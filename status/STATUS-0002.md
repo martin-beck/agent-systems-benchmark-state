@@ -168,7 +168,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1491](../tasks/AR-1491-self-contained-package-qualification-fixture.md): Self-contained package qualification fixture | ar1332-record-replay-luna56 | Add a self-contained non-production package qualification fixture using the offline verifier test-key pattern. | Merge PR #370 normally, then monitor all eight exact-main post-merge workflows and release only after terminal SUCCESS. |
+| P0 | [AR-1491](../tasks/AR-1491-self-contained-package-qualification-fixture.md): Self-contained package qualification fixture | ar1332-record-replay-luna56 | Add a self-contained non-production package qualification fixture using the offline verifier test-key pattern. | Reconcile and doctor state projection; retain generated WORKTREES/PROJECT_STATE caveat if reported. |
 
 ### Blocked (74)
 
