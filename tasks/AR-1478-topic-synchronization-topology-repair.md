@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1478-topic-synchronization-topology-repair",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "d1456b88d511d9c5ccd8ef4e693713ca706d9949",
   "claim_expires": "2026-09-27T07:33:28+00:00",
   "depends_on": [
     "AR-1475",
@@ -9,7 +9,7 @@
     "AR-1379"
   ],
   "id": "AR-1478",
-  "next_action": "Promote after validating completed dependencies, inspect exact merge ancestry, and apply only the smallest policy-compliant topology repair.",
+  "next_action": "Monitor PR #348 exact head d1456b8; merge only after all required checks SUCCESS, then verify seven post-merge workflows.",
   "observed_branch": "feature/ar-1478-topic-synchronization-topology-repair",
   "observed_dirty": 0,
   "observed_head": "d1456b88d511d9c5ccd8ef4e693713ca706d9949",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair protected-main topic synchronization topology after AR-1477 merge policy failure.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Repair topic synchronization topology",
-  "updated_at": "2026-09-27T05:38:20+00:00",
+  "updated_at": "2026-09-27T05:38:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1478-topic-synchronization-topology-repair"
 }
 ---
@@ -80,3 +80,10 @@ or synchronization topology permitted by the policy.
 
 - 2026-09-27T05:38:20+00:00: Recorded command exit 0; command argv SHA-256
   56294f9f88b5c689787dd4643d755a1c27df5e39dbdafdae11691a71bac7ba7c.
+
+- 2026-09-27T05:38:43+00:00: Inspected PR #347 merge 67fa0d1 parents: first 1dada31 protected main,
+  second 3b8b200 reviewed topic. Repository-quality 36297383090 rejected because topic
+  synchronization merge was not at tip. Created topology-only repair: signed+DCO empty marker
+  d0939e2, then signed+DCO merge d1456b8 with parents d0939e2 and protected 67fa0d1; diff against
+  origin/main is empty, preserving reviewed tree and changing no product files. Pushed and opened PR
+  #348.
