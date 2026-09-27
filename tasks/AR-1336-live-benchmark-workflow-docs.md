@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1336-live-benchmark-workflow-docs",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "312f811b3a77bb30c80ba8216071b69132f0477c",
   "claim_expires": "2026-09-27T11:51:17+00:00",
   "depends_on": [
     "AR-1333",
@@ -9,7 +9,7 @@
     "AR-1335"
   ],
   "id": "AR-1336",
-  "next_action": "Document the end-to-end live benchmark workflow and publish the supported agent by provider by model support matrix, with exact digests and evidence limits.",
+  "next_action": "PR #354 all required checks green; merge normally, then verify all eight protected-main workflows and release done.",
   "observed_branch": "feature/ar-1336-live-benchmark-workflow-docs",
   "observed_dirty": 0,
   "observed_head": "312f811b3a77bb30c80ba8216071b69132f0477c",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Document the live benchmark workflow and publish the supported agent and provider matrix.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Live benchmark workflow documentation and support matrix",
-  "updated_at": "2026-09-27T09:52:19+00:00",
+  "updated_at": "2026-09-27T09:52:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1336-live-benchmark-workflow-docs"
 }
 ---
@@ -158,3 +158,12 @@ reachability.
 
 - 2026-09-27T09:52:19+00:00: Recorded command exit 0; command argv SHA-256
   38e7740b2e6e0a6dc4871f34316789210c1efc3f768feb6f788686116b3ffe87.
+
+- 2026-09-27T09:52:44+00:00: Independent diff review: documentation-only six-file change; removes
+  stale CLI capability claims, adds workflow guide, digest-anchored provider/model/agent matrix, and
+  credential-free docs consistency test. No product/runtime semantics, credentials, asb-tui, or
+  live-provider dependency introduced. Initial exact-head CI failure was header-policy only on the
+  new Python test; corrected with exact Huawei 2026/SPDX MIT header in signed/DCO amended head
+  312f811. Final PR #354 exact head has all 13 required checks SUCCESS: AWQ, fuzz, credential-free,
+  emulated AArch64, header policy, Kani, Loom, mutation, platform, policy/coverage/supply-chain,
+  retained faults, Rust, TLC/Alloy.
