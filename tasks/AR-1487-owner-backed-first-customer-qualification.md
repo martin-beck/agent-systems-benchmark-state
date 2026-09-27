@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the owner-backed credential-free local/mock/replay first-customer journey.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Owner-backed first-customer qualification",
-  "updated_at": "2026-09-27T14:04:19+00:00",
+  "updated_at": "2026-09-27T14:04:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1487-owner-backed-qualification"
 }
 ---
@@ -79,3 +79,6 @@ runtime-owned CLI; it excludes live providers and asb-tui.
   --locked -p asb-cli runtime_local_mock_owner now pass 4/4. Added bounded/private-output and
   unqualified-entry negative coverage plus docs/workflows/owner-backed-first-customer.md. No live
   provider, network, credentials, or asb-tui.
+
+- 2026-09-27T14:04:26+00:00: Recorded command exit 1; command argv SHA-256
+  8bdbab7259d7a557bd14a8e8728e3bb309059a8b251e6eaac82c9db411467251.
