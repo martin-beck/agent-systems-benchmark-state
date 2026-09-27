@@ -10,7 +10,7 @@
   "id": "AR-1480",
   "next_action": "Complete active workspace tests/clippy/rustdoc/release gates, then independent review and signed commit.",
   "observed_branch": "feature/ar-1480-runtime-control-cli-composition",
-  "observed_dirty": 2,
+  "observed_dirty": 3,
   "observed_head": "59323f41ed2d10a952a1276107459260ebdf409a",
   "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1480-runtime-control-cli-composition.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compose authenticated runtime enrollment into opaque normal CLI run and sweep dispatch.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Runtime-control CLI composition",
-  "updated_at": "2026-09-27T11:26:08+00:00",
+  "updated_at": "2026-09-27T11:26:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1480-runtime-control-cli-composition"
 }
 ---
