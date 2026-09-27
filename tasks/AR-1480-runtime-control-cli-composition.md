@@ -8,7 +8,7 @@
     "AR-1472"
   ],
   "id": "AR-1480",
-  "next_action": "Rerun full workspace/docs/privacy gates after provenance refresh, then independent review and signed commit.",
+  "next_action": "Run workspace/docs/privacy/release gates excluding pre-commit clean-tree assertion, then review and sign commit.",
   "observed_branch": "feature/ar-1480-runtime-control-cli-composition",
   "observed_dirty": 3,
   "observed_head": "59323f41ed2d10a952a1276107459260ebdf409a",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compose authenticated runtime enrollment into opaque normal CLI run and sweep dispatch.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Runtime-control CLI composition",
-  "updated_at": "2026-09-27T11:29:47+00:00",
+  "updated_at": "2026-09-27T11:29:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1480-runtime-control-cli-composition"
 }
 ---
@@ -97,3 +97,9 @@ and never gates local qualification.
   e6f9d6dc8581eb1ebfccd6a34944eb45eca27527ddac007d7ae2bf727be4d15f.
 
 - 2026-09-27T11:29:47+00:00: Heartbeat by ar1332-record-replay-luna56.
+
+- 2026-09-27T11:29:59+00:00: Classified full-gate exit 1 at 11:28:37: test -z git status failed
+  because intended AR-1480 edits remained uncommitted (crates/asb-cli/src/lib.rs,
+  docs/workflows/live-benchmark.md, docs/examples/asb-cli-workflow-v1.provenance.json); git diff
+  --check passed. No product/test failure. Next action is run all substantive gates, then commit and
+  re-run clean-tree gate.
