@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compose authenticated control enrollment into the ordinary CLI process bootstrap.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Control-runtime process bootstrap",
-  "updated_at": "2026-09-27T12:03:29+00:00",
+  "updated_at": "2026-09-27T12:04:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1482-control-runtime-process-bootstrap"
 }
 ---
@@ -36,3 +36,6 @@ providers, accept caller-built authority, or weaken fail-closed boundaries.
   dispatch without AR-1374/1375.
 
 - 2026-09-27T12:03:29+00:00: Claimed by ar1332-record-replay-luna56.
+
+- 2026-09-27T12:04:15+00:00: Recorded command exit 0; command argv SHA-256
+  9db94754ecef5e87fe72a8fe92c43c909ec3e90e5c6e6b2dcce52758a9dca08e.
