@@ -16,9 +16,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve authenticated control enrollment into an opaque runtime-owned source for normal ASB run and sweep.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Runtime-owned authenticated enrollment source",
-  "updated_at": "2026-09-27T03:23:50+00:00",
+  "updated_at": "2026-09-27T03:24:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1473-runtime-owned-enrollment-source"
 }
 ---
@@ -36,3 +36,6 @@ the existing fail-closed authority boundaries.
   promote runtime-owned enrollment source successor.
 
 - 2026-09-27T03:23:50+00:00: Claimed by ar1332_record_replay_luna56.
+
+- 2026-09-27T03:24:17+00:00: Recorded command exit 0; command argv SHA-256
+  5c670d69ab763357b1a5368abe8f9729e0d00e33fbedd2be82f26a36c0aad7f5.
