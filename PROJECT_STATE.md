@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #345 | `feature/ar-1474-runtime-authority-input-resolver@c21d1ce5d1ec` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(runtime): resolve persisted authority inputs |
+| #345 | `feature/ar-1474-runtime-authority-input-resolver@c21d1ce5d1ec` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | feat(runtime): resolve persisted authority inputs |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 36295904407 | `c21d1ce5d1ec` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 36295904405 | `c21d1ce5d1ec` | pull_request | Huawei MIT source headers | in_progress:- |
+| 36295904405 | `c21d1ce5d1ec` | pull_request | Huawei MIT source headers | completed:success |
 | 36295904393 | `c21d1ce5d1ec` | pull_request | Repository quality | in_progress:- |
 | 36295904390 | `c21d1ce5d1ec` | pull_request | Formal assurance | in_progress:- |
 | 36295904381 | `c21d1ce5d1ec` | pull_request | Rust verification | in_progress:- |
