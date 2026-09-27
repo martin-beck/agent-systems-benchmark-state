@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1425](tasks/AR-1425-literature-workload-release-readiness.md): Literature workload release-readiness gate | Independently verify release readiness of the complete built-in and literature workload surface. | Promote only after AR-1424, AR-1417, and AR-1418 are released; independently verify the complete built-in plus literature workload surface and all release gates. | - |
+| P1 | [AR-1425](tasks/AR-1425-literature-workload-release-readiness.md): Literature workload release-readiness gate | Independently verify release readiness of the complete built-in and literature workload surface. | Promote only after AR-1424, AR-1417, and AR-1418 are released; independently verify the complete built-in plus literature workload surface and all release gates. | ar1332-record-replay-luna56 |
 
 ## Blocked
 

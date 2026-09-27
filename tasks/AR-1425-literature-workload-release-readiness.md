@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-27T11:17:36+00:00",
   "depends_on": [
     "AR-1424",
     "AR-1417",
@@ -13,15 +13,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "",
+  "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1425-literature-workload-release-readiness.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Independently verify release readiness of the complete built-in and literature workload surface.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Literature workload release-readiness gate",
-  "updated_at": "2026-09-27T09:17:19+00:00",
+  "updated_at": "2026-09-27T09:17:36+00:00",
   "worktree_key": ""
 }
 ---
@@ -39,3 +39,5 @@ boundaries unless separately proven.
 
 - 2026-09-27T09:17:19+00:00: AR-1424, AR-1417, and AR-1418 are done; promote independent full
   literature workload release-readiness audit.
+
+- 2026-09-27T09:17:36+00:00: Claimed by ar1332-record-replay-luna56.
