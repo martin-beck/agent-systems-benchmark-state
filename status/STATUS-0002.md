@@ -145,11 +145,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1474](../tasks/AR-1474-runtime-authority-input-resolver.md): Runtime-owned authority-input resolver | Unclaimed | Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority. | Await repository-quality rerun 36292250172; merge PR #345 only after SUCCESS. |
+| P0 | [AR-1474](../tasks/AR-1474-runtime-authority-input-resolver.md): Runtime-owned authority-input resolver | ar1332-record-replay-luna56 | Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority. | Await repository-quality rerun 36292250172; merge PR #345 only after SUCCESS. |
 
 ### Blocked (70)
 

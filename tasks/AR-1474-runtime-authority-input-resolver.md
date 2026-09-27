@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1474-runtime-authority-input-resolver",
   "checkpoint_commit": "56d284c2d292163e2724318b0443f53211b4f9e4",
-  "claim_expires": "",
+  "claim_expires": "2026-09-27T06:53:30+00:00",
   "depends_on": [
     "AR-1362",
     "AR-1471",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1474-runtime-authority-input-resolver",
   "observed_dirty": 0,
   "observed_head": "56d284c2d292163e2724318b0443f53211b4f9e4",
-  "owner": "",
+  "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1474-runtime-authority-input-resolver.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority.",
-  "task_revision": 114,
+  "task_revision": 115,
   "title": "Runtime-owned authority-input resolver",
-  "updated_at": "2026-09-27T04:53:19+00:00",
+  "updated_at": "2026-09-27T04:53:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1474-runtime-authority-input-resolver"
 }
 ---
@@ -369,3 +369,5 @@ authority, privacy, lifecycle, formal, or egress contracts.
 
 - 2026-09-27T04:53:19+00:00: AR-1476 current-base coverage requalification is 90.35% and
   repository-quality rerun 108553511224 is active; resume PR validation.
+
+- 2026-09-27T04:53:30+00:00: Claimed by ar1332-record-replay-luna56.
