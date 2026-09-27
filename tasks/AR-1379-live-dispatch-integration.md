@@ -13,17 +13,17 @@
   "id": "AR-1379",
   "next_action": "Continue monitoring PR #344 exact head 11f3db5; Emulated aarch64, Rust, and policy/coverage/supply-chain remain pending. Merge only after every required check is terminal-green.",
   "observed_branch": "feature/ar-1379-live-dispatch-integration",
-  "observed_dirty": 1,
-  "observed_head": "11f3db5078dfa122c1c9c8b533de4a53732424f4",
+  "observed_dirty": 0,
+  "observed_head": "d9888386d0987323a30dbe7240d7d4239f92cb61",
   "owner": "ar1379-live-dispatch-luna56",
   "plan": "../plans/AR-1379-live-dispatch-integration.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate authenticated runtime live dispatch into asb run and sweep.",
-  "task_revision": 66,
+  "task_revision": 67,
   "title": "Production live dispatch integration",
-  "updated_at": "2026-09-27T02:34:31+00:00",
+  "updated_at": "2026-09-27T02:34:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1379-live-dispatch-integration"
 }
 ---
