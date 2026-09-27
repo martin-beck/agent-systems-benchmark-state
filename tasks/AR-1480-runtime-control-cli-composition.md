@@ -10,17 +10,17 @@
   "id": "AR-1480",
   "next_action": "Run workspace/docs/privacy/release gates excluding pre-commit clean-tree assertion, then review and sign commit.",
   "observed_branch": "feature/ar-1480-runtime-control-cli-composition",
-  "observed_dirty": 3,
-  "observed_head": "59323f41ed2d10a952a1276107459260ebdf409a",
+  "observed_dirty": 0,
+  "observed_head": "440a06427d6e6fe2aacaebc2a50c5f924527dd04",
   "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1480-runtime-control-cli-composition.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compose authenticated runtime enrollment into opaque normal CLI run and sweep dispatch.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Runtime-control CLI composition",
-  "updated_at": "2026-09-27T11:32:04+00:00",
+  "updated_at": "2026-09-27T11:32:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1480-runtime-control-cli-composition"
 }
 ---
