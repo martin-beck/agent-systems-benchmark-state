@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run the complete qualified literature workload matrix beside built-in software-engineering workloads.",
-  "task_revision": 126,
+  "task_revision": 127,
   "title": "Literature workload campaign integration",
-  "updated_at": "2026-09-27T08:07:35+00:00",
+  "updated_at": "2026-09-27T08:07:46+00:00",
   "worktree_key": ""
 }
 ---
@@ -432,3 +432,6 @@ tasks or require any live provider.
   post-merge workflows green; requalify PR #350 exact head 2884508.
 
 - 2026-09-27T08:07:35+00:00: Claimed by ar1332-record-replay-luna56.
+
+- 2026-09-27T08:07:46+00:00: Recorded command exit 0; command argv SHA-256
+  79e04818103a8710df92e20a4a41ef211150ac8bcd177883f7dde428ca1f5345.
