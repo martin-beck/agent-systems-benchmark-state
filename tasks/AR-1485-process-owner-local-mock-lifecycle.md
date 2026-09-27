@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement runtime-owned local/mock process lifecycle and opaque-source handoff.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Process-owner local/mock lifecycle",
-  "updated_at": "2026-09-27T12:55:27+00:00",
+  "updated_at": "2026-09-27T12:55:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1485-process-owner-local-mock-lifecycle"
 }
 ---
@@ -77,3 +77,6 @@ authority.
   before issue, revokes on teardown, and rejects issue after teardown; no caller authority or live
   provider. Focused 4/4 passed; full serialized workspace test/clippy/rustdoc/release/policy/diff
   gate exited 0; commit is SSH-signed with DCO.
+
+- 2026-09-27T12:55:40+00:00: Recorded command exit 0; command argv SHA-256
+  ad04baa559ef0b4e1dad1a4ff9a9fee40d140b8062293f1d04d331a810cda4ca.
