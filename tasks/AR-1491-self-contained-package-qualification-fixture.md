@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a self-contained non-production package qualification fixture using the offline verifier test-key pattern.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Self-contained package qualification fixture",
-  "updated_at": "2026-09-27T15:51:29+00:00",
+  "updated_at": "2026-09-27T15:51:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1491-self-contained-package-qualification-fixture"
 }
 ---
@@ -105,3 +105,6 @@ No live-provider or release-signing input may be fabricated.
   warnings, serial cargo test workspace all-targets (all non-ignored green), rustdoc workspace,
   release build, diff/clean checks, and tools/quality/repository_policy.py against origin/main.
   Fixture remains explicitly non-production; AR-1490 signed-package gate is preserved.
+
+- 2026-09-27T15:51:42+00:00: Recorded command exit 0; command argv SHA-256
+  355eca78e125772576bd0823960825e83bb3eec3e6fb89fc330793c02ffdbbf8.
