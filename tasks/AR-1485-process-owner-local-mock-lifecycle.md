@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement runtime-owned local/mock process lifecycle and opaque-source handoff.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Process-owner local/mock lifecycle",
-  "updated_at": "2026-09-27T13:03:23+00:00",
+  "updated_at": "2026-09-27T13:03:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1485-process-owner-local-mock-lifecycle"
 }
 ---
@@ -116,3 +116,6 @@ authority.
 - 2026-09-27T13:03:23+00:00: Independent exact-head review passed: scoped two-file diff, signed/DCO
   head f01b7b11, runtime-owned ephemeral local/mock backend, enrollment and teardown fences, no
   caller authority/live provider; all 13 required PR checks SUCCESS and mergeStateStatus CLEAN.
+
+- 2026-09-27T13:03:36+00:00: Recorded command exit 0; command argv SHA-256
+  f3b11b2392e5e80c4c33e33b0a9ff9ecda3bee8dfe3654d783885279edae0837.
