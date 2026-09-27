@@ -22,10 +22,10 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 36325841109 | `0dc766a48178` | push | Rust verification | in_progress:- |
-| 36325841097 | `0dc766a48178` | push | Fault assurance | in_progress:- |
+| 36325841097 | `0dc766a48178` | push | Fault assurance | completed:success |
 | 36325841072 | `0dc766a48178` | push | Formal assurance | in_progress:- |
-| 36325841050 | `0dc766a48178` | push | Hosted portability and native qualification | in_progress:- |
-| 36325841041 | `0dc766a48178` | push | Credential-free benchmark path | in_progress:- |
+| 36325841050 | `0dc766a48178` | push | Hosted portability and native qualification | completed:success |
+| 36325841041 | `0dc766a48178` | push | Credential-free benchmark path | completed:success |
 | 36325841032 | `0dc766a48178` | push | Repository quality | in_progress:- |
 | 36325841029 | `0dc766a48178` | push | Emulated aarch64 portability | in_progress:- |
 | 36325841010 | `0dc766a48178` | push | Huawei MIT source headers | completed:success |
