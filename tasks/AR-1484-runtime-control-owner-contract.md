@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define stable runtime/control process-owner lifecycle and opaque handoff contract.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Runtime/control process-owner contract",
-  "updated_at": "2026-09-27T12:39:33+00:00",
+  "updated_at": "2026-09-27T12:40:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1484-runtime-control-owner-contract"
 }
 ---
@@ -195,3 +195,6 @@ authority.
 - 2026-09-27T12:39:33+00:00: Post-merge poll exact SHA eff9984fd11bec55e1e23366b3bba0bcb717826a:
   Emulated aarch64 36319234719 and Rust 36319234605 completed SUCCESS. Seven of eight workflows
   green; only Repository quality 36319234629 remains IN_PROGRESS. No failures.
+
+- 2026-09-27T12:40:42+00:00: Recorded command exit 0; command argv SHA-256
+  7b1a408ee45a737250d08f491fbaf56cd850241ad783be5f133e2e7aa5b95821.
