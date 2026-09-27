@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compose authenticated runtime enrollment into opaque normal CLI run and sweep dispatch.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Runtime-control CLI composition",
-  "updated_at": "2026-09-27T11:34:56+00:00",
+  "updated_at": "2026-09-27T11:35:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1480-runtime-control-cli-composition"
 }
 ---
@@ -143,3 +143,9 @@ and never gates local qualification.
 
 - 2026-09-27T11:34:56+00:00: Recorded command exit 0; command argv SHA-256
   36858f90dedbb97237067ef509fb80b72c2131f33bbf313a3da978919a9b4667.
+
+- 2026-09-27T11:35:22+00:00: PR #357 poll at exact head 440a06427d6e6fe2aacaebc2a50c5f924527dd04
+  remains UNSTABLE with required checks pending. Newly terminal SUCCESS: Retained faults and
+  Loom/state models; AWQ shadow and Huawei/SPDX headers remain SUCCESS. Still IN_PROGRESS:
+  Credential-free, Emulated aarch64, TLC/Alloy, Platform evidence, Policy/coverage/supply chain,
+  Rust, Bounded fuzz, Kani, Matcher/SLO. No failures; continue bounded polling.
