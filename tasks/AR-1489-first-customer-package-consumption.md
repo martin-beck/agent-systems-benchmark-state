@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1489-first-customer-package-consumption",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-27T17:08:07+00:00",
+  "claim_expires": "2026-09-27T17:08:42+00:00",
   "depends_on": [
     "AR-1461",
     "AR-1462",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Verify first-customer release package installation and owner-backed local/mock/replay consumption.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "First-customer package consumption",
-  "updated_at": "2026-09-27T15:08:31+00:00",
+  "updated_at": "2026-09-27T15:08:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1489-first-customer-package-consumption"
 }
 ---
@@ -40,3 +40,5 @@ touching asb-tui or requiring a live provider.
 
 - 2026-09-27T15:08:18+00:00: Recorded command exit 0; command argv SHA-256
   1e11db425c6c6e86fb3846c57ea38401e187d9f08872a074c431e074467f14a4.
+
+- 2026-09-27T15:08:42+00:00: Heartbeat by ar1332-record-replay-luna56.
