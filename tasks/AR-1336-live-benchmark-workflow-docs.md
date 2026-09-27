@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Document the live benchmark workflow and publish the supported agent and provider matrix.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Live benchmark workflow documentation and support matrix",
-  "updated_at": "2026-09-27T09:40:56+00:00",
+  "updated_at": "2026-09-27T09:41:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1336-live-benchmark-workflow-docs"
 }
 ---
@@ -98,3 +98,6 @@ reachability.
 
 - 2026-09-27T09:40:56+00:00: Recorded command exit 0; command argv SHA-256
   1640b24f90bddc1131f499cc5056b1375b2405cad1d0d6141c0177602b5f2248.
+
+- 2026-09-27T09:41:28+00:00: Recorded command exit 0; command argv SHA-256
+  d0563adc24a492666784b2c4d16bad41cf4b1b9ad93dc857738eeaf1b4956260.
