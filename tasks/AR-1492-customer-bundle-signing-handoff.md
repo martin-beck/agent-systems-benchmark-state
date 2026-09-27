@@ -1,7 +1,7 @@
 ---
 {
   "branch": "release/ar-1492-customer-bundle-signing-handoff",
-  "checkpoint_commit": "1836d0f0bff012a9941085f61cac6fdc1cfead64",
+  "checkpoint_commit": "050b298c99724f7265e8dec47c6e801b3fb53e85",
   "claim_expires": "2026-09-27T18:13:26+00:00",
   "depends_on": [
     "AR-1461",
@@ -9,7 +9,7 @@
     "AR-1491"
   ],
   "id": "AR-1492",
-  "next_action": "Monitor PR #371 exact head 1836d0f; merge only after all required checks and independent review are green. Do not claim customer release without external signature.",
+  "next_action": "Monitor PR #371 synchronized exact head 050b298; merge only after all required checks and independent review are green.",
   "observed_branch": "release/ar-1492-customer-bundle-signing-handoff",
   "observed_dirty": 0,
   "observed_head": "050b298c99724f7265e8dec47c6e801b3fb53e85",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stage a deterministic customer bundle and provide an explicit external signing handoff and verifier.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Customer bundle signing handoff",
-  "updated_at": "2026-09-27T16:21:57+00:00",
+  "updated_at": "2026-09-27T16:22:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1492-customer-bundle-signing-handoff"
 }
 ---
@@ -101,3 +101,9 @@ detached signature.
 
 - 2026-09-27T16:21:57+00:00: Recorded command exit 0; command argv SHA-256
   b4e7d83f347295781a7a8fc5edb4e5c4ef944ad210da005f850eebb8ddac4a53.
+
+- 2026-09-27T16:22:34+00:00: PR #371 initial head 1836d0f failed Platform evidence 36332843012 with
+  source identity not immutable and Repository Quality 36332843017 because topic was based on stale
+  b048fef instead of protected main 5f4e286. Repaired by fetching origin/main and creating signed
+  non-squash merge commit 050b298, preserving the reviewed implementation tree; force-with-lease
+  updated the branch. Re-run exact-head checks; no product semantics changed.
