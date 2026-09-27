@@ -11,14 +11,14 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #350 | `feature/ar-1420-literature-workload-campaign-integration@2884508a6236` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: integrate literature workload campaigns |
-| #351 | `repair/ar-1479-rust-ci-flake-repair@69c077e969ba` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | ci: serialize workspace Rust tests for deterministic flakes |
+| #351 | `repair/ar-1479-rust-ci-flake-repair@69c077e969ba` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | ci: serialize workspace Rust tests for deterministic flakes |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 36303404627 | `69c077e969ba` | pull_request | Repository quality | in_progress:- |
-| 36303404625 | `69c077e969ba` | pull_request | Rust verification | in_progress:- |
+| 36303404625 | `69c077e969ba` | pull_request | Rust verification | completed:success |
 | 36303404611 | `69c077e969ba` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36303404609 | `69c077e969ba` | pull_request | Credential-free benchmark path | completed:success |
 | 36303404607 | `69c077e969ba` | pull_request | Fault assurance | completed:success |
