@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1485](tasks/AR-1485-process-owner-local-mock-lifecycle.md): Process-owner local/mock lifecycle | Implement runtime-owned local/mock process lifecycle and opaque-source handoff. | Release complete; retain exact merge and eight workflow evidence. | ar1332-record-replay-luna56 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -328,6 +322,7 @@ Never edit this file directly.
 | P0 | [AR-1479](tasks/AR-1479-rust-ci-flake-repair.md): Rust CI timing and state-root flake repair | Repair the unrelated Rust state-root collision and malformed-ready-marker timing flakes blocking AR-1420 exact-head CI. | Monitor exact-main post-merge workflows for 1015a461; after all seven green, release AR-1479 and requalify AR-1420 PR #350 head 2884508. | - |
 | P0 | [AR-1480](tasks/AR-1480-runtime-control-cli-composition.md): Runtime-control CLI composition | Compose authenticated runtime enrollment into opaque normal CLI run and sweep dispatch. | Run reconcile and doctor --live, then release AR-1480 done ownerless with complete merge/post-merge evidence. | - |
 | P0 | [AR-1484](tasks/AR-1484-runtime-control-owner-contract.md): Runtime/control process-owner contract | Define stable runtime/control process-owner lifecycle and opaque handoff contract. | Reconcile/doctor, then release AR-1484 done ownerless with complete merge/post-merge evidence. | - |
+| P0 | [AR-1485](tasks/AR-1485-process-owner-local-mock-lifecycle.md): Process-owner local/mock lifecycle | Implement runtime-owned local/mock process lifecycle and opaque-source handoff. | Release complete; retain exact merge and eight workflow evidence. | - |
 | P1 | [AR-0002](tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. | - |
 | P1 | [AR-0003](tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. | - |
 | P1 | [AR-0004](tasks/AR-0004-ar-status-document.md): Generate the visual AR status document | Render every AR, status, and dependency as an accessible visual state document. | Await independent immutable-head review of state PR 3 at eedd311; repair findings before coordinator integration. | - |

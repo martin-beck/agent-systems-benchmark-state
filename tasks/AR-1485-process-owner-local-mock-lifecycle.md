@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1485-process-owner-local-mock-lifecycle",
   "checkpoint_commit": "a6f43eb2a651fcfa3c0abe3b9e4dddaea78b6a80",
-  "claim_expires": "2026-09-27T15:11:02+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1472",
     "AR-1473",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1485-process-owner-local-mock-lifecycle",
   "observed_dirty": 0,
   "observed_head": "f01b7b11b5dcd0152482f26663fcc36c98da7cbe",
-  "owner": "ar1332-record-replay-luna56",
+  "owner": "",
   "plan": "../plans/AR-1485-process-owner-local-mock-lifecycle.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Implement runtime-owned local/mock process lifecycle and opaque-source handoff.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Process-owner local/mock lifecycle",
-  "updated_at": "2026-09-27T13:12:58+00:00",
+  "updated_at": "2026-09-27T13:13:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1485-process-owner-local-mock-lifecycle"
 }
 ---
@@ -165,3 +165,8 @@ authority.
   36321084452 SUCCESS; hosted portability/native 36321084193 SUCCESS; fault 36321084287 SUCCESS;
   formal 36321084289 SUCCESS; emulated AArch64 36321084195 SUCCESS; Rust 36321084324 SUCCESS;
   repository quality 36321084352 SUCCESS. All eight terminal green.
+
+- 2026-09-27T13:13:00+00:00: Done: merged PR #359 at a6f43eb2a651fcfa3c0abe3b9e4dddaea78b6a80 from
+  signed/DCO f01b7b11; focused/full gates and all 13 PR checks green; all eight exact-main
+  post-merge workflows green. LocalMockRuntimeControlOwner is provider-free, enrollment/teardown
+  fenced, and cannot mint production authority.
