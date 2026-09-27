@@ -2,7 +2,7 @@
 {
   "branch": "qualification/ar-1490-fresh-package-runtime-acceptance",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-27T17:37:02+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1461",
     "AR-1462",
@@ -14,15 +14,15 @@
   "observed_branch": "qualification/ar-1490-fresh-package-runtime-acceptance",
   "observed_dirty": 0,
   "observed_head": "b048fef92f4bdb4eedd5379d645f4288a4b6ab20",
-  "owner": "ar1332-record-replay-luna56",
+  "owner": "",
   "plan": "../plans/AR-1490-fresh-package-runtime-acceptance.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Run fresh package first-customer runtime acceptance and produce an explicit readiness report.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Fresh package runtime acceptance",
-  "updated_at": "2026-09-27T15:37:28+00:00",
+  "updated_at": "2026-09-27T15:38:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1490-fresh-package-runtime-acceptance"
 }
 ---
@@ -50,3 +50,12 @@ when exact package or clean-environment inputs are absent.
 
 - 2026-09-27T15:37:28+00:00: Recorded command exit 0; command argv SHA-256
   a82b9d78dcb8d4efcf094a688a35b769dde348a2e6f10888f6ea9e7219af138d.
+
+- 2026-09-27T15:38:50+00:00: BLOCKED by missing external qualification inputs, not product failure.
+  Approved bounded search via handoffctl covered current worktree and /srv/data/projects for runtime
+  bundle archives/manifests; no ASB runtime tar archive or verified release package found.
+  docs/RUNTIME_BUNDLES.md and build_runtime_bundle.py require supervisor/sidecar plus signing key,
+  allowed-signers, principal, ssh-keygen digest; none are provisioned. Unsigned-development output
+  would not be first-customer release evidence and was not substituted. Next action: provision exact
+  signed package and rerun clean install/doctor/setup/run/sweep/replay/cleanup acceptance. No
+  product/asb-tui/provider changes made.
