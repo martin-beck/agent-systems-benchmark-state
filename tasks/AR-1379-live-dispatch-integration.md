@@ -13,17 +13,17 @@
   "id": "AR-1379",
   "next_action": "Monitor PR #344 rerun at exact head d988838; all required checks must be green before merge. Provenance repair was generated from current lib.rs digest.",
   "observed_branch": "feature/ar-1379-live-dispatch-integration",
-  "observed_dirty": 2,
-  "observed_head": "d9888386d0987323a30dbe7240d7d4239f92cb61",
+  "observed_dirty": 0,
+  "observed_head": "fa855fc1ad02a8d68777dfe41e1ef5238eaa0546",
   "owner": "ar1379-live-dispatch-luna56",
   "plan": "../plans/AR-1379-live-dispatch-integration.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate authenticated runtime live dispatch into asb run and sweep.",
-  "task_revision": 98,
+  "task_revision": 99,
   "title": "Production live dispatch integration",
-  "updated_at": "2026-09-27T02:53:56+00:00",
+  "updated_at": "2026-09-27T02:54:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1379-live-dispatch-integration"
 }
 ---
