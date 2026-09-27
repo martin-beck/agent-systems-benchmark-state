@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1426](tasks/AR-1426-evolving-literature-window-refresh.md): Evolving literature workload window refresh | Refresh evolving literature benchmark windows without stale or incomparable results. | Promote after AR-1423 and AR-1425 are released; implement content-addressed refresh manifests and fail-closed window validation for LiveCodeBench and SWE-rebench. | ar1332-record-replay-luna56 |
+| P1 | [AR-1426](tasks/AR-1426-evolving-literature-window-refresh.md): Evolving literature workload window refresh | Refresh evolving literature benchmark windows without stale or incomparable results. | Run full workspace/docs/privacy gates, independent review, then publish signed PR. | ar1332-record-replay-luna56 |
 
 ## Blocked
 
