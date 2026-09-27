@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire the runtime-owned local/mock process owner into ordinary CLI run and sweep.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Runtime-owner CLI entry wiring",
-  "updated_at": "2026-09-27T13:45:44+00:00",
+  "updated_at": "2026-09-27T13:45:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1486-cli-owner-wiring"
 }
 ---
@@ -167,3 +167,6 @@ authority.
 - 2026-09-27T13:45:44+00:00: PR #360 merged normally at 2026-09-27T13:44:47Z. Merge SHA
   79f88d3ca03120fd7d69f67cb292c96051a5e770 has two parents a6f43eb2 (protected main) and a5f9ad27
   (reviewed signed/DCO implementation); origin/main matches. Verification query succeeded.
+
+- 2026-09-27T13:45:57+00:00: Recorded command exit 0; command argv SHA-256
+  29dc18f5271408b84d48625f254c6453fdb23d93d0f9784429589899081c3ff8.
