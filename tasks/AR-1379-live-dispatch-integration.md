@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1379-live-dispatch-integration",
-  "checkpoint_commit": "fa855fc1ad02a8d68777dfe41e1ef5238eaa0546",
+  "checkpoint_commit": "8e22be0fb90169a96f268079d8435dfe053e9fb9",
   "claim_expires": "2026-09-27T04:39:35+00:00",
   "depends_on": [
     "AR-1378",
@@ -11,7 +11,7 @@
     "AR-1362"
   ],
   "id": "AR-1379",
-  "next_action": "Monitor PR #344 at exact head fa855fc1; require all named checks terminal SUCCESS before merge, then verify seven post-merge workflows.",
+  "next_action": "Monitor PR #344 exact head 8e22be0; policy must pass with matching DCO trailer, then all required checks must be terminal SUCCESS before merge.",
   "observed_branch": "feature/ar-1379-live-dispatch-integration",
   "observed_dirty": 0,
   "observed_head": "8e22be0fb90169a96f268079d8435dfe053e9fb9",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate authenticated runtime live dispatch into asb run and sweep.",
-  "task_revision": 105,
+  "task_revision": 106,
   "title": "Production live dispatch integration",
-  "updated_at": "2026-09-27T02:55:49+00:00",
+  "updated_at": "2026-09-27T02:56:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1379-live-dispatch-integration"
 }
 ---
@@ -336,3 +336,8 @@ verified through the completed gates.
 
 - 2026-09-27T02:55:37+00:00: Recorded command exit 0; command argv SHA-256
   6179136cad6ef76ce4d26509ef87507c2fc28ec34030ac7b8e49b7096f57da6c.
+
+- 2026-09-27T02:56:03+00:00: PR head fa855fc policy failure diagnosed from hosted log: author
+  martin.beck2@gmx.de had nonmatching Signed-off-by martin.beck@huawei.com. Amended signed commit
+  trailer to matching author identity; new exact head 8e22be0 pushed with force-with-lease. No
+  product content changed in this metadata repair.

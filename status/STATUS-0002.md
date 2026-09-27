@@ -143,7 +143,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1379](../tasks/AR-1379-live-dispatch-integration.md): Production live dispatch integration | ar1379-live-dispatch-luna56 | Integrate authenticated runtime live dispatch into asb run and sweep. | Monitor PR #344 at exact head fa855fc1; require all named checks terminal SUCCESS before merge, then verify seven post-merge workflows. |
+| P0 | [AR-1379](../tasks/AR-1379-live-dispatch-integration.md): Production live dispatch integration | ar1379-live-dispatch-luna56 | Integrate authenticated runtime live dispatch into asb run and sweep. | Monitor PR #344 exact head 8e22be0; policy must pass with matching DCO trailer, then all required checks must be terminal SUCCESS before merge. |
 
 ### Blocked (69)
 
