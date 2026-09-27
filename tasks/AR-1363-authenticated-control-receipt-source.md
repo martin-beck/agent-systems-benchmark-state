@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Deliver authenticated runtime authority receipts through the versioned control boundary without exposing secrets or caller authority.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Authenticated control receipt source",
-  "updated_at": "2026-09-27T01:09:28+00:00",
+  "updated_at": "2026-09-27T01:09:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1363-authenticated-control-receipt-source"
 }
 ---
@@ -179,3 +179,6 @@ reachability.
   workspace tests pass, clippy -D warnings pass, rustdoc -D warnings pass, release workspace build
   pass. One initial clippy attempt hit shared coordinator LOCK_TIMEOUT and was retried successfully;
   initial patch heredoc failed due wrapper escaping and was corrected via base64 apply_patch.
+
+- 2026-09-27T01:09:38+00:00: Recorded command exit 0; command argv SHA-256
+  7dfa8e4180973619ad63008ca55c1cdb60a77d1e72bc16077bde392345beacad.
