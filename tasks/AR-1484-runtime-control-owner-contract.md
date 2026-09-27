@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define stable runtime/control process-owner lifecycle and opaque handoff contract.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Runtime/control process-owner contract",
-  "updated_at": "2026-09-27T12:30:39+00:00",
+  "updated_at": "2026-09-27T12:30:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1484-runtime-control-owner-contract"
 }
 ---
@@ -148,3 +148,6 @@ authority.
 - 2026-09-27T12:30:39+00:00: PR #358 exact-head final matrix fully green: all 13 required checks
   SUCCESS at signed head 7ce533ea9b0524c5b317cc2db8fad0aff8ecedc3; mergeStateStatus CLEAN.
   Independent review and header-fix evidence recorded; ready for normal merge.
+
+- 2026-09-27T12:30:49+00:00: Recorded command exit 0; command argv SHA-256
+  6e543cedb27c96a97157ab196ff5e55c38fd32954cc07454c4c7f3a1f7bf256d.
