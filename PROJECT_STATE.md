@@ -10,20 +10,21 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #357 | `feature/ar-1480-runtime-control-cli-composition@440a06427d6e` | `main` | UNSTABLE | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(cli): compose runtime control dispatch source |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 36316133679 | `440a06427d6e` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 36316133636 | `440a06427d6e` | pull_request | Formal assurance | queued:- |
+| 36316133608 | `440a06427d6e` | pull_request | Credential-free benchmark path | in_progress:- |
+| 36316133598 | `440a06427d6e` | pull_request | Fault assurance | in_progress:- |
+| 36316133589 | `440a06427d6e` | pull_request | Huawei MIT source headers | completed:success |
+| 36316133567 | `440a06427d6e` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 36316133558 | `440a06427d6e` | pull_request | Repository quality | in_progress:- |
+| 36316133548 | `440a06427d6e` | pull_request | Rust verification | in_progress:- |
+| 36316133512 | `440a06427d6e` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 36314444973 | `59323f41ed2d` | push | Huawei MIT source headers | completed:success |
 | 36314444956 | `59323f41ed2d` | push | Fault assurance | completed:success |
 | 36314444954 | `59323f41ed2d` | push | Repository quality | completed:success |
-| 36314444948 | `59323f41ed2d` | push | Hosted portability and native qualification | completed:success |
-| 36314444940 | `59323f41ed2d` | push | Rust verification | completed:success |
-| 36314444936 | `59323f41ed2d` | push | Formal assurance | completed:success |
-| 36314444926 | `59323f41ed2d` | push | Emulated aarch64 portability | completed:success |
-| 36314444913 | `59323f41ed2d` | push | Credential-free benchmark path | completed:success |
-| 36313923677 | `4a29c3431d23` | pull_request | Formal assurance | completed:success |
-| 36313923631 | `4a29c3431d23` | pull_request | Repository quality | completed:success |
-| 36313923628 | `4a29c3431d23` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 36313923616 | `4a29c3431d23` | pull_request | Huawei MIT source headers | completed:success |
