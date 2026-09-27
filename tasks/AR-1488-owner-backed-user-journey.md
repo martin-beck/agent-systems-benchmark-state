@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Owner-backed first-customer user journey",
-  "updated_at": "2026-09-27T14:38:22+00:00",
+  "updated_at": "2026-09-27T14:38:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1488-owner-backed-user-journey"
 }
 ---
@@ -42,3 +42,6 @@ live provider.
   qualification; no asb-tui or live provider.
 
 - 2026-09-27T14:38:22+00:00: Claimed by ar1332-record-replay-luna56.
+
+- 2026-09-27T14:38:32+00:00: Recorded command exit 0; command argv SHA-256
+  2a49f4ad575e26df1ecd178dd82e94779c61e8d8fc5ee6da6d5c567ee07ca26c.
