@@ -7,7 +7,7 @@
     "AR-1362"
   ],
   "id": "AR-1363",
-  "next_action": "Poll PR #342 again after the bounded CI interval; merge normally only once AArch64, Repository quality, Rust, and all required checks are green with CLEAN merge state.",
+  "next_action": "Continue bounded polling of PR #342; merge normally only after Repository quality and Rust verification complete successfully and mergeStateStatus is CLEAN.",
   "observed_branch": "feature/ar-1363-authenticated-control-receipt-source",
   "observed_dirty": 0,
   "observed_head": "29d27a91ad6a4eff455f62ae25eb952fec45fcf5",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Deliver authenticated runtime authority receipts through the versioned control boundary without exposing secrets or caller authority.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Authenticated control receipt source",
-  "updated_at": "2026-09-27T01:17:32+00:00",
+  "updated_at": "2026-09-27T01:17:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1363-authenticated-control-receipt-source"
 }
 ---
@@ -274,3 +274,9 @@ reachability.
 
 - 2026-09-27T01:17:32+00:00: Recorded command exit 0; command argv SHA-256
   0400894a8fb04528b541596044b098cf3fa6c69097907f04a4516b92624960dd.
+
+- 2026-09-27T01:17:57+00:00: Fresh exact-head rollup at 2026-09-27T01:17Z: PR #342 remains UNSTABLE
+  at 29d27a91. Emulated AArch64 36284742939 has now completed SUCCESS. Remaining active required
+  workflows are Repository quality 36284742895 and Rust verification 36284742908. Huawei, Hosted,
+  Fault (all three cells), Formal (all three cells), and AWQ are SUCCESS. No failures; next action
+  is bounded poll with heartbeat.
