@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1478](tasks/AR-1478-topic-synchronization-topology-repair.md): Repair topic synchronization topology | Repair protected-main topic synchronization topology after AR-1477 merge policy failure. | Monitor PR #348 exact head d1456b8; merge only after all required checks SUCCESS, then verify seven post-merge workflows. | ar1332-record-replay-luna56 |
+| P0 | [AR-1478](tasks/AR-1478-topic-synchronization-topology-repair.md): Repair topic synchronization topology | Repair protected-main topic synchronization topology after AR-1477 merge policy failure. | Continue polling PR #348 exact-head checks; merge only after all 12 are terminal SUCCESS. | ar1332-record-replay-luna56 |
 
 ## Blocked
 

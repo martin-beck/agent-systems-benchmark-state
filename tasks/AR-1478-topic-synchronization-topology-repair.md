@@ -9,7 +9,7 @@
     "AR-1379"
   ],
   "id": "AR-1478",
-  "next_action": "Monitor PR #348 exact head d1456b8; merge only after all required checks SUCCESS, then verify seven post-merge workflows.",
+  "next_action": "Continue polling PR #348 exact-head checks; merge only after all 12 are terminal SUCCESS.",
   "observed_branch": "feature/ar-1478-topic-synchronization-topology-repair",
   "observed_dirty": 0,
   "observed_head": "d1456b88d511d9c5ccd8ef4e693713ca706d9949",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair protected-main topic synchronization topology after AR-1477 merge policy failure.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Repair topic synchronization topology",
-  "updated_at": "2026-09-27T05:41:16+00:00",
+  "updated_at": "2026-09-27T05:41:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1478-topic-synchronization-topology-repair"
 }
 ---
@@ -108,3 +108,9 @@ or synchronization topology permitted by the policy.
 
 - 2026-09-27T05:41:16+00:00: Recorded command exit 0; command argv SHA-256
   36dd12eaa03b3c0097ac518b93dd5edd5276b29fd2ac5b6f25409cf0a31014ce.
+
+- 2026-09-27T05:41:46+00:00: Heartbeat/poll: PR #348 exact head d1456b88. SUCCESS: Kani
+  108559717424; matcher 108559717550; retained faults 108559717708; platform 108559717560; AWQ
+  108559717551; Huawei 108559717537; bounded fuzz 108559717692; Loom 108559717489. IN_PROGRESS:
+  policy/coverage/supply-chain 108559718081; emulated aarch64 108559717416; TLC/Alloy 108559717749;
+  Rust 108559717478. No failures.
