@@ -162,11 +162,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1489](../tasks/AR-1489-first-customer-package-consumption.md): First-customer package consumption | Unclaimed | Verify first-customer release package installation and owner-backed local/mock/replay consumption. | Promote and claim, then verify exact release package installation and credential-free owner-backed local/mock/replay consumption. |
+| P0 | [AR-1489](../tasks/AR-1489-first-customer-package-consumption.md): First-customer package consumption | ar1332-record-replay-luna56 | Verify first-customer release package installation and owner-backed local/mock/replay consumption. | Promote and claim, then verify exact release package installation and credential-free owner-backed local/mock/replay consumption. |
 
 ### Blocked (73)
 

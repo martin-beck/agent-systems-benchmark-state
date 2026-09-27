@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1489](tasks/AR-1489-first-customer-package-consumption.md): First-customer package consumption | Verify first-customer release package installation and owner-backed local/mock/replay consumption. | Promote and claim, then verify exact release package installation and credential-free owner-backed local/mock/replay consumption. | - |
+| P0 | [AR-1489](tasks/AR-1489-first-customer-package-consumption.md): First-customer package consumption | Verify first-customer release package installation and owner-backed local/mock/replay consumption. | Promote and claim, then verify exact release package installation and credential-free owner-backed local/mock/replay consumption. | ar1332-record-replay-luna56 |
 
 ## Blocked
 
