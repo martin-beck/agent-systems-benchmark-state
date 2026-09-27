@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the deterministic ProbeRejected versus MalformedEvidence fixture failure blocking PR #345.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Repair asb-metrics evidence fixture classification",
-  "updated_at": "2026-09-27T04:00:50+00:00",
+  "updated_at": "2026-09-27T04:00:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1475-asb-metrics-evidence-fixture-repair"
 }
 ---
@@ -85,3 +85,6 @@ classification or fixture behavior before changing code.
   runs; full package tests passed. Added bounded retry (3 attempts, 10ms) only for WouldBlock
   process-spawn contention, preserving malformed/unsafe classification. Signed+DCO head
   02aa58f1490237190f67d0a225f352473be5b3d8; fmt, focused/full asb-metrics tests, clippy pass.
+
+- 2026-09-27T04:00:55+00:00: Recorded command exit 0; command argv SHA-256
+  cc64aad2ca3ecdb209fc0e557bc4640f4e893e9e50ea103f2fb8c73539577493.
