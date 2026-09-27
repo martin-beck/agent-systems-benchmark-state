@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #345 | `feature/ar-1474-runtime-authority-input-resolver@56d284c2d292` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(runtime): resolve persisted authority inputs |
+| #345 | `feature/ar-1474-runtime-authority-input-resolver@56d284c2d292` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(runtime): resolve persisted authority inputs |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36292250172 | `56d284c2d292` | pull_request | Repository quality | in_progress:- |
-| 36292250132 | `56d284c2d292` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 36292250172 | `56d284c2d292` | pull_request | Repository quality | completed:failure |
+| 36292250132 | `56d284c2d292` | pull_request | Emulated aarch64 portability | completed:success |
 | 36292250115 | `56d284c2d292` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36292250104 | `56d284c2d292` | pull_request | Hosted portability and native qualification | completed:success |
 | 36292250091 | `56d284c2d292` | pull_request | Huawei MIT source headers | completed:success |
