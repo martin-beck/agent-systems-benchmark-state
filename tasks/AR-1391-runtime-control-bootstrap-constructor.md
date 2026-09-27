@@ -22,11 +22,11 @@
   "plan": "../plans/AR-1391-runtime-control-bootstrap-constructor.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Materialize authenticated runtime live authority into an opaque source without caller injection.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Runtime control bootstrap constructor",
-  "updated_at": "2026-09-24T07:44:12+00:00",
+  "updated_at": "2026-09-27T02:42:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1391-runtime-control-bootstrap-constructor"
 }
 ---
@@ -63,3 +63,8 @@ and teardown, and fail-closed denial of unapproved external traffic remain requi
 contracts. Existing live-provider dependency edges describe production integration
 ordering only and must not be used to block local qualification or to claim external
 reachability.
+
+- 2026-09-27T02:42:23+00:00: Dependencies AR-1388, AR-1385, AR-1373, AR-1366, AR-1341, AR-1342,
+  AR-1339, and AR-1340 are durably done. Resume this narrow successor for the runtime/control-owned
+  authenticated bootstrap constructor identified by AR-1387; no CLI authority exposure, live
+  provider, or asb-tui.
