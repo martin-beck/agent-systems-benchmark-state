@@ -13,16 +13,16 @@
   "next_action": "Monitor PR #372 exact head 6f5dfd5; merge only after every required check and independent review are green, then verify post-merge workflows.",
   "observed_branch": "release/ar-1493-release-authority-enrollment-handoff",
   "observed_dirty": 0,
-  "observed_head": "6f5dfd5c3292fd177a8f627c661e68ef30c40c65",
+  "observed_head": "9d2b22a80cfe9c6d9a01daec1e257fd93b99d37d",
   "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1493-release-authority-enrollment-handoff.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define and validate the external release-authority enrollment and signed-bundle verification handoff.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Release-authority enrollment handoff",
-  "updated_at": "2026-09-27T17:01:24+00:00",
+  "updated_at": "2026-09-27T17:01:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1493-release-authority-enrollment-handoff"
 }
 ---
