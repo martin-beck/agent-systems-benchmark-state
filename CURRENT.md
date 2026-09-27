@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1489](tasks/AR-1489-first-customer-package-consumption.md): First-customer package consumption | Verify first-customer release package installation and owner-backed local/mock/replay consumption. | Promote and claim, then verify exact release package installation and credential-free owner-backed local/mock/replay consumption. | ar1332-record-replay-luna56 |
+| P0 | [AR-1489](tasks/AR-1489-first-customer-package-consumption.md): First-customer package consumption | Verify first-customer release package installation and owner-backed local/mock/replay consumption. | Publish signed exact head through handoffctl; monitor required PR checks and merge only when all green. | ar1332-record-replay-luna56 |
 
 ## Blocked
 

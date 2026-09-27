@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1489-first-customer-package-consumption",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "c4578eecd93183eaadaf9c34defbc4137ba03657",
   "claim_expires": "2026-09-27T17:08:42+00:00",
   "depends_on": [
     "AR-1461",
@@ -9,7 +9,7 @@
     "AR-1488"
   ],
   "id": "AR-1489",
-  "next_action": "Promote and claim, then verify exact release package installation and credential-free owner-backed local/mock/replay consumption.",
+  "next_action": "Publish signed exact head through handoffctl; monitor required PR checks and merge only when all green.",
   "observed_branch": "feature/ar-1489-first-customer-package-consumption",
   "observed_dirty": 0,
   "observed_head": "c4578eecd93183eaadaf9c34defbc4137ba03657",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Verify first-customer release package installation and owner-backed local/mock/replay consumption.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "First-customer package consumption",
-  "updated_at": "2026-09-27T15:15:15+00:00",
+  "updated_at": "2026-09-27T15:15:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1489-first-customer-package-consumption"
 }
 ---
@@ -78,3 +78,9 @@ touching asb-tui or requiring a live provider.
 
 - 2026-09-27T15:15:15+00:00: Recorded command exit 0; command argv SHA-256
   2e837e3d8f24778e834d0b7beb81cbefd79cf9e0f1911c185be1b418d6e7f89f.
+
+- 2026-09-27T15:15:42+00:00: AR-1489 package-consumption qualification is docs-only: added bundle
+  verification/install/doctor/setup/local-mock/replay/cleanup walkthrough and README route. Existing
+  bundle and lifecycle contracts audited. Focused guide 5/5, transcript 3/3, bundle schema 2/2,
+  clippy, rustdoc, release build, serial workspace tests, policy, signature, and clean-tree gates
+  passed. Signed SSH+DCO head c4578eecd93183eaadaf9c34defbc4137ba03657.
