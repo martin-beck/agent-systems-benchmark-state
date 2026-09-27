@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stage a deterministic customer bundle and provide an explicit external signing handoff and verifier.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Customer bundle signing handoff",
-  "updated_at": "2026-09-27T16:13:26+00:00",
+  "updated_at": "2026-09-27T16:13:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1492-customer-bundle-signing-handoff"
 }
 ---
@@ -47,3 +47,6 @@ detached signature.
 - 2026-09-27T16:13:23+00:00: Claimed by ar1332-record-replay-luna56.
 
 - 2026-09-27T16:13:26+00:00: Heartbeat by ar1332-record-replay-luna56.
+
+- 2026-09-27T16:13:35+00:00: Recorded command exit 0; command argv SHA-256
+  1be3df8ac8a124a6199760f3e1a120392451859acb9b8a94d858d5fd026f1c18.
