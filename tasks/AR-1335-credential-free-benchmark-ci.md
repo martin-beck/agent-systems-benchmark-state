@@ -10,17 +10,17 @@
   "id": "AR-1335",
   "next_action": "Add the required credential-free CI stage that exercises the complete benchmark path with loopback and synthetic doubles, no secrets, no egress and no network, keeping the 90% coverage floor.",
   "observed_branch": "feature/ar-1335-credential-free-benchmark-ci",
-  "observed_dirty": 1,
-  "observed_head": "fac11a22a93c1a075d7d528f2c6c20d426c66ba4",
+  "observed_dirty": 0,
+  "observed_head": "16e4bf8405b98c229bda49f82253f21784d82d51",
   "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1335.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the required credential-free CI stage for the complete benchmark path.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Credential-free CI stage for the benchmark path",
-  "updated_at": "2026-09-27T06:23:46+00:00",
+  "updated_at": "2026-09-27T06:23:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1335-credential-free-benchmark-ci"
 }
 ---
