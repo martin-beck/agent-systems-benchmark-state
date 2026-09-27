@@ -168,7 +168,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1491](../tasks/AR-1491-self-contained-package-qualification-fixture.md): Self-contained package qualification fixture | ar1332-record-replay-luna56 | Add a self-contained non-production package qualification fixture using the offline verifier test-key pattern. | Independent review, publish exact signed head, monitor all required checks; never treat fixture as customer-release evidence. |
+| P0 | [AR-1491](../tasks/AR-1491-self-contained-package-qualification-fixture.md): Self-contained package qualification fixture | ar1332-record-replay-luna56 | Add a self-contained non-production package qualification fixture using the offline verifier test-key pattern. | Monitor PR #370 exact head b4f5328; merge only after all required checks and independent review are green, then verify eight post-merge workflows. |
 
 ### Blocked (74)
 
