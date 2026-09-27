@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1480-runtime-control-cli-composition",
   "checkpoint_commit": "fdc7f59f83f647ce099439b003848291e81dd3bb",
-  "claim_expires": "2026-09-27T13:51:46+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1473",
     "AR-1472"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1480-runtime-control-cli-composition",
   "observed_dirty": 0,
   "observed_head": "440a06427d6e6fe2aacaebc2a50c5f924527dd04",
-  "owner": "ar1332-record-replay-luna56",
+  "owner": "",
   "plan": "../plans/AR-1480-runtime-control-cli-composition.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Compose authenticated runtime enrollment into opaque normal CLI run and sweep dispatch.",
-  "task_revision": 72,
+  "task_revision": 73,
   "title": "Runtime-control CLI composition",
-  "updated_at": "2026-09-27T11:54:18+00:00",
+  "updated_at": "2026-09-27T11:55:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1480-runtime-control-cli-composition"
 }
 ---
@@ -272,3 +272,11 @@ and never gates local qualification.
   36316693349; Rust verification 36316693344; Emulated aarch64 portability 36316693340; Formal
   assurance 36316693339; Hosted portability/native qualification 36316693310. Protected main exact
   SHA verified by workflow head SHA. Ready for reconcile/doctor/release.
+
+- 2026-09-27T11:55:05+00:00: AR-1480 complete. PR #357 merged from exact signed+DCO head
+  440a06427d6e6fe2aacaebc2a50c5f924527dd04 as merge SHA fdc7f59f83f647ce099439b003848291e81dd3bb.
+  All 13 PR checks SUCCESS. All eight exact-main post-merge workflows SUCCESS: Repository quality
+  36316693442; Credential-free 36316693423; Huawei MIT headers 36316693365; Fault assurance
+  36316693349; Rust 36316693344; Emulated aarch64 36316693340; Formal assurance 36316693339; Hosted
+  portability/native 36316693310. Reconcile completed. doctor --live reports known generated
+  WORKTREES.md stale projection caveat only; no product or CI failure. Owner/lease cleared.
