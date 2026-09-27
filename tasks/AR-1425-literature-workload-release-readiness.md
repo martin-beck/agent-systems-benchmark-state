@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Independently verify release readiness of the complete built-in and literature workload surface.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Literature workload release-readiness gate",
-  "updated_at": "2026-09-27T09:19:21+00:00",
+  "updated_at": "2026-09-27T09:19:49+00:00",
   "worktree_key": ""
 }
 ---
@@ -46,3 +46,6 @@ boundaries unless separately proven.
 
 - 2026-09-27T09:19:21+00:00: Recorded command exit 0; command argv SHA-256
   7f89bfbd11f4ca8df54390e7ebbe4b54efcbbc44076738596f5c512d5c85e617.
+
+- 2026-09-27T09:19:49+00:00: Recorded command exit 0; command argv SHA-256
+  bdaca9bf3f7580dbe5c50125ae88cde6aba63ba1a333ffb6bb5538b6d94f691a.
