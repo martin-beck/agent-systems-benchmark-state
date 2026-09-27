@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1391-runtime-control-bootstrap-constructor",
   "checkpoint_commit": "10bffbf015bd7ca78d8c0d18f04cf0190195e933",
-  "claim_expires": "",
+  "claim_expires": "2026-09-27T04:42:28+00:00",
   "depends_on": [
     "AR-1388",
     "AR-1385",
@@ -18,15 +18,15 @@
   "observed_branch": "feature/ar-1391-runtime-control-bootstrap-constructor",
   "observed_dirty": 0,
   "observed_head": "10bffbf015bd7ca78d8c0d18f04cf0190195e933",
-  "owner": "",
+  "owner": "ar1332_record_replay_luna56",
   "plan": "../plans/AR-1391-runtime-control-bootstrap-constructor.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Materialize authenticated runtime live authority into an opaque source without caller injection.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Runtime control bootstrap constructor",
-  "updated_at": "2026-09-27T02:42:23+00:00",
+  "updated_at": "2026-09-27T02:42:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1391-runtime-control-bootstrap-constructor"
 }
 ---
@@ -68,3 +68,5 @@ reachability.
   AR-1339, and AR-1340 are durably done. Resume this narrow successor for the runtime/control-owned
   authenticated bootstrap constructor identified by AR-1387; no CLI authority exposure, live
   provider, or asb-tui.
+
+- 2026-09-27T02:42:28+00:00: Claimed by ar1332_record_replay_luna56.
