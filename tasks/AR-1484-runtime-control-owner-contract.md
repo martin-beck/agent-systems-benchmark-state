@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1484-runtime-control-owner-contract",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-27T14:09:06+00:00",
   "depends_on": [
     "AR-1472",
     "AR-1473",
@@ -13,15 +13,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1484-runtime-control-owner-contract.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Define stable runtime/control process-owner lifecycle and opaque handoff contract.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Runtime/control process-owner contract",
-  "updated_at": "2026-09-27T12:09:02+00:00",
+  "updated_at": "2026-09-27T12:09:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1484-runtime-control-owner-contract"
 }
 ---
@@ -34,3 +34,5 @@ authority.
 - 2026-09-27T12:09:02+00:00: Design/contract slice for missing runtime/control process owner.
   Depends only on completed AR-1472, AR-1473, AR-1480; defines stable lifecycle/identifiers and
   excludes AR-1374/1375.
+
+- 2026-09-27T12:09:06+00:00: Claimed by ar1332-record-replay-luna56.

@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1484](tasks/AR-1484-runtime-control-owner-contract.md): Runtime/control process-owner contract | Define stable runtime/control process-owner lifecycle and opaque handoff contract. | Promote and claim, then inspect protocol/runtime identifiers and add the smallest stable owner contract with local/mock/replay tests. | - |
+| P0 | [AR-1484](tasks/AR-1484-runtime-control-owner-contract.md): Runtime/control process-owner contract | Define stable runtime/control process-owner lifecycle and opaque handoff contract. | Promote and claim, then inspect protocol/runtime identifiers and add the smallest stable owner contract with local/mock/replay tests. | ar1332-record-replay-luna56 |
 
 ## Blocked
 
