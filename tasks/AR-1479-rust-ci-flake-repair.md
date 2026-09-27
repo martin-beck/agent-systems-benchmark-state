@@ -2,22 +2,22 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-27T09:25:33+00:00",
   "depends_on": [],
   "id": "AR-1479",
   "next_action": "Promote and claim the isolated repair worktree; reproduce both exact Rust failures before changing any test or synchronization code.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "",
+  "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1479-rust-ci-flake-repair.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair the unrelated Rust state-root collision and malformed-ready-marker timing flakes blocking AR-1420 exact-head CI.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Rust CI timing and state-root flake repair",
-  "updated_at": "2026-09-27T07:25:06+00:00",
+  "updated_at": "2026-09-27T07:25:33+00:00",
   "worktree_key": ""
 }
 ---
@@ -47,3 +47,5 @@ requalified. Preserve fail-closed cleanup and bounded execution semantics.
 
 - 2026-09-27T07:25:06+00:00: Promote the narrowly scoped Rust flake repair before AR-1420
   requalification; reproduce both failures first.
+
+- 2026-09-27T07:25:33+00:00: Claimed by ar1332-record-replay-luna56.
