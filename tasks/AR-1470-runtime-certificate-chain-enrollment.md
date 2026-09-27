@@ -10,15 +10,18 @@
   ],
   "id": "AR-1470",
   "next_action": "Promote and claim the runtime certificate-chain enrollment successor; implement and verify the smallest authenticated authority source.",
+  "observed_branch": "feature/ar-1470-runtime-certificate-chain-enrollment",
+  "observed_dirty": 0,
+  "observed_head": "b9d7b6ee251b3a119496d3c16f65ffc971704f3a",
   "owner": "ar1332_record_replay_luna56",
   "plan": "../plans/AR-1470-runtime-certificate-chain-enrollment.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize runtime-owned certificate-chain enrollment authority for live dispatch.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Runtime certificate-chain enrollment materialization",
-  "updated_at": "2026-09-27T00:07:23+00:00",
+  "updated_at": "2026-09-27T00:07:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1470-runtime-certificate-chain-enrollment"
 }
 ---
