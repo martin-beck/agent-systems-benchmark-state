@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1483](tasks/AR-1483-authenticated-control-process-owner.md): Authenticated control process owner | Own authenticated control session and lifecycle while minting opaque CLI dispatch sources. | Promote and claim, then audit whether the runtime/control owner contract can be implemented without caller authority. | - |
+| P0 | [AR-1483](tasks/AR-1483-authenticated-control-process-owner.md): Authenticated control process owner | Own authenticated control session and lifecycle while minting opaque CLI dispatch sources. | Promote and claim, then audit whether the runtime/control owner contract can be implemented without caller authority. | ar1332-record-replay-luna56 |
 
 ## Blocked
 

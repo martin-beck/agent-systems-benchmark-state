@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1483-authenticated-control-process-owner",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-27T14:43:12+00:00",
   "depends_on": [
     "AR-1472",
     "AR-1473",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1483-authenticated-control-process-owner",
   "observed_dirty": 0,
   "observed_head": "fdc7f59f83f647ce099439b003848291e81dd3bb",
-  "owner": "",
+  "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1483-authenticated-control-process-owner.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Own authenticated control session and lifecycle while minting opaque CLI dispatch sources.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Authenticated control process owner",
-  "updated_at": "2026-09-27T12:43:09+00:00",
+  "updated_at": "2026-09-27T12:43:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1483-authenticated-control-process-owner"
 }
 ---
@@ -54,3 +54,5 @@ caller authority or modify asb-tui.
 - 2026-09-27T12:43:09+00:00: AR-1484 merged the stable owner lifecycle contract. Re-audit AR-1483
   and implement the smallest owner integration slice over that contract; preserve fail-closed
   boundaries and do not fabricate control backend authority.
+
+- 2026-09-27T12:43:12+00:00: Claimed by ar1332-record-replay-luna56.
