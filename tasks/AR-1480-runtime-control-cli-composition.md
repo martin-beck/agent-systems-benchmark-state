@@ -8,7 +8,7 @@
     "AR-1472"
   ],
   "id": "AR-1480",
-  "next_action": "Publish exact signed head 440a06427d6e6fe2aacaebc2a50c5f924527dd04, monitor required CI, merge only all green.",
+  "next_action": "Monitor PR #357 exact head 440a06427d6e6fe2aacaebc2a50c5f924527dd04 until all 13 required checks are SUCCESS; merge only then.",
   "observed_branch": "feature/ar-1480-runtime-control-cli-composition",
   "observed_dirty": 0,
   "observed_head": "440a06427d6e6fe2aacaebc2a50c5f924527dd04",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compose authenticated runtime enrollment into opaque normal CLI run and sweep dispatch.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Runtime-control CLI composition",
-  "updated_at": "2026-09-27T11:34:13+00:00",
+  "updated_at": "2026-09-27T11:34:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1480-runtime-control-cli-composition"
 }
 ---
@@ -132,3 +132,11 @@ and never gates local qualification.
 
 - 2026-09-27T11:34:13+00:00: Recorded command exit 0; command argv SHA-256
   19ee90ebc11b82d6cb7b9f45925314fc8a4733cdf91f0613cea620cc6e4ebb5d.
+
+- 2026-09-27T11:34:45+00:00: Published PR #357:
+  https://github.com/martin-beck/agent-systems-benchmark/pull/357 at exact signed head
+  440a06427d6e6fe2aacaebc2a50c5f924527dd04, base main. Initial statusCheckRollup: 13 required checks
+  IN_PROGRESS (Credential-free benchmark path; Emulated aarch64; Retained faults; TLC/Alloy;
+  Platform evidence; Policy/coverage/supply chain; Rust; Bounded fuzz; Kani; Matcher/SLO; Loom/state
+  models), plus AWQ shadow and Huawei/SPDX header checks SUCCESS. PR remains OPEN/UNSTABLE; no merge
+  attempted.
