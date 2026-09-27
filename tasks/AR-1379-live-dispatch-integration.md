@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate authenticated runtime live dispatch into asb run and sweep.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Production live dispatch integration",
-  "updated_at": "2026-09-27T02:18:37+00:00",
+  "updated_at": "2026-09-27T02:18:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1379-live-dispatch-integration"
 }
 ---
@@ -84,3 +84,6 @@ verified through the completed gates.
   runtime source exists, but no CLI source-aware entrypoint or public runtime-owned
   control-session/bootstrap composition reaches production run/sweep. No product changes yet; design
   is scoped to opaque source injection, never caller authority.
+
+- 2026-09-27T02:18:56+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
