@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1363](tasks/AR-1363-authenticated-control-receipt-source.md): Authenticated control receipt source | Deliver authenticated runtime authority receipts through the versioned control boundary without exposing secrets or caller authority. | Promote after AR-1362 is done, then implement the bounded authenticated control receipt source consumed by runtime-owned dispatch. | ar1332_record_replay_luna56 |
+| P0 | [AR-1363](tasks/AR-1363-authenticated-control-receipt-source.md): Authenticated control receipt source | Deliver authenticated runtime authority receipts through the versioned control boundary without exposing secrets or caller authority. | Run independent diff review, publish exact signed head, monitor required checks, and merge only after all green. | ar1332_record_replay_luna56 |
 
 ## Blocked
 

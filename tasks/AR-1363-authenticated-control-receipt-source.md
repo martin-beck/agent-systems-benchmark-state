@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1363-authenticated-control-receipt-source",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "29d27a91ad6a4eff455f62ae25eb952fec45fcf5",
   "claim_expires": "2026-09-27T03:07:39+00:00",
   "depends_on": [
     "AR-1362"
   ],
   "id": "AR-1363",
-  "next_action": "Promote after AR-1362 is done, then implement the bounded authenticated control receipt source consumed by runtime-owned dispatch.",
+  "next_action": "Run independent diff review, publish exact signed head, monitor required checks, and merge only after all green.",
   "observed_branch": "feature/ar-1363-authenticated-control-receipt-source",
   "observed_dirty": 0,
   "observed_head": "29d27a91ad6a4eff455f62ae25eb952fec45fcf5",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Deliver authenticated runtime authority receipts through the versioned control boundary without exposing secrets or caller authority.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Authenticated control receipt source",
-  "updated_at": "2026-09-27T01:09:13+00:00",
+  "updated_at": "2026-09-27T01:09:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1363-authenticated-control-receipt-source"
 }
 ---
@@ -169,3 +169,13 @@ reachability.
 
 - 2026-09-27T01:09:13+00:00: Recorded command exit 0; command argv SHA-256
   b49a90ee600c1023cee9ee9f9e8a4f9a06c53eef8c48d3932d88e482126c7c01.
+
+- 2026-09-27T01:09:28+00:00: Rebased clean declared worktree onto protected main
+  cb9bce4dd99194ba44f65655d7f7e2e21fc8b408. Implemented narrow control receipt-source hardening in
+  crates/asb-cli/src/control.rs: RuntimeReceipt requests validate schema/provider/generation/nonce
+  before authority lookup; constructed response validates exact request/chain/receipt binding before
+  emission. Added hostile malformed-request test. No asb-tui/live-provider changes. Signed+DCO
+  commit 29d27a91 verified; focused control/runtime/CLI tests pass (including new negative), full
+  workspace tests pass, clippy -D warnings pass, rustdoc -D warnings pass, release workspace build
+  pass. One initial clippy attempt hit shared coordinator LOCK_TIMEOUT and was retried successfully;
+  initial patch heredoc failed due wrapper escaping and was corrected via base64 apply_patch.
