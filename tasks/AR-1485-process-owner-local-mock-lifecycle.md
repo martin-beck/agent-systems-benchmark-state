@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1485-process-owner-local-mock-lifecycle",
-  "checkpoint_commit": "f01b7b11b5dcd0152482f26663fcc36c98da7cbe",
+  "checkpoint_commit": "a6f43eb2a651fcfa3c0abe3b9e4dddaea78b6a80",
   "claim_expires": "2026-09-27T15:01:10+00:00",
   "depends_on": [
     "AR-1472",
@@ -10,7 +10,7 @@
     "AR-1484"
   ],
   "id": "AR-1485",
-  "next_action": "Merge PR #359 normally, then verify exact merge and all eight post-merge workflows before release.",
+  "next_action": "Monitor eight exact-main post-merge workflows for merge a6f43eb; release done only after all terminal SUCCESS.",
   "observed_branch": "feature/ar-1485-process-owner-local-mock-lifecycle",
   "observed_dirty": 0,
   "observed_head": "f01b7b11b5dcd0152482f26663fcc36c98da7cbe",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement runtime-owned local/mock process lifecycle and opaque-source handoff.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Process-owner local/mock lifecycle",
-  "updated_at": "2026-09-27T13:04:19+00:00",
+  "updated_at": "2026-09-27T13:04:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1485-process-owner-local-mock-lifecycle"
 }
 ---
@@ -125,3 +125,9 @@ authority.
 
 - 2026-09-27T13:04:19+00:00: Recorded command exit 0; command argv SHA-256
   bc1e6d1923e7b46de50d83a2e07198853a542612bea345a790b5f9931d08ae26.
+
+- 2026-09-27T13:04:53+00:00: PR #359 merged normally at 2026-09-27T13:03:34Z. Merge SHA
+  a6f43eb2a651fcfa3c0abe3b9e4dddaea78b6a80 has two parents eff9984f (protected main) and f01b7b11
+  (reviewed implementation); origin/main matches. A verification query first exited 1 because gh pr
+  view does not support JSON field merged; corrected query confirmed state MERGED and exact parents.
+  This was query syntax only, not a merge/check failure.

@@ -161,7 +161,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1485](../tasks/AR-1485-process-owner-local-mock-lifecycle.md): Process-owner local/mock lifecycle | ar1332-record-replay-luna56 | Implement runtime-owned local/mock process lifecycle and opaque-source handoff. | Merge PR #359 normally, then verify exact merge and all eight post-merge workflows before release. |
+| P0 | [AR-1485](../tasks/AR-1485-process-owner-local-mock-lifecycle.md): Process-owner local/mock lifecycle | ar1332-record-replay-luna56 | Implement runtime-owned local/mock process lifecycle and opaque-source handoff. | Monitor eight exact-main post-merge workflows for merge a6f43eb; release done only after all terminal SUCCESS. |
 
 ### Blocked (73)
 
