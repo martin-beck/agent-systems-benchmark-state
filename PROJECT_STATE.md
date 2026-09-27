@@ -21,14 +21,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36327707933 | `2aef4b15f650` | push | Fault assurance | in_progress:- |
+| 36327707933 | `2aef4b15f650` | push | Fault assurance | completed:success |
 | 36327707913 | `2aef4b15f650` | push | Repository quality | in_progress:- |
 | 36327707907 | `2aef4b15f650` | push | Rust verification | in_progress:- |
 | 36327707905 | `2aef4b15f650` | push | Huawei MIT source headers | completed:success |
 | 36327707890 | `2aef4b15f650` | push | Emulated aarch64 portability | in_progress:- |
-| 36327707822 | `2aef4b15f650` | push | Hosted portability and native qualification | in_progress:- |
+| 36327707822 | `2aef4b15f650` | push | Hosted portability and native qualification | completed:success |
 | 36327707818 | `2aef4b15f650` | push | Formal assurance | in_progress:- |
-| 36327707814 | `2aef4b15f650` | push | Credential-free benchmark path | in_progress:- |
+| 36327707814 | `2aef4b15f650` | push | Credential-free benchmark path | completed:success |
 | 36327090361 | `f06b2d1b01d3` | pull_request | Credential-free benchmark path | completed:success |
 | 36327090360 | `f06b2d1b01d3` | pull_request | Emulated aarch64 portability | completed:success |
 | 36327090357 | `f06b2d1b01d3` | pull_request | Repository quality | completed:success |
