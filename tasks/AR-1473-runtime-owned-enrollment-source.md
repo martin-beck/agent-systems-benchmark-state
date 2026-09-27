@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1473-runtime-owned-enrollment-source",
-  "checkpoint_commit": "4a29c3431d236cc9766c47408dab8de998a31a3b",
+  "checkpoint_commit": "59323f41ed2d10a952a1276107459260ebdf409a",
   "claim_expires": "2026-09-27T12:56:22+00:00",
   "depends_on": [
     "AR-1471",
@@ -9,7 +9,7 @@
     "AR-1379"
   ],
   "id": "AR-1473",
-  "next_action": "Merge PR #356 normally; then verify eight exact-main workflows and release done after all green.",
+  "next_action": "Await AArch64 36314444926, Rust 36314444940, Repository quality 36314444954; all other five post-merge workflows SUCCESS. Release done after these three SUCCESS.",
   "observed_branch": "feature/ar-1473-runtime-owned-enrollment-source",
   "observed_dirty": 0,
   "observed_head": "4a29c3431d236cc9766c47408dab8de998a31a3b",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve authenticated control enrollment into an opaque runtime-owned source for normal ASB run and sweep.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Runtime-owned authenticated enrollment source",
-  "updated_at": "2026-09-27T11:06:32+00:00",
+  "updated_at": "2026-09-27T11:06:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1473-runtime-owned-enrollment-source"
 }
 ---
@@ -177,3 +177,9 @@ the existing fail-closed authority boundaries.
 
 - 2026-09-27T11:06:32+00:00: Recorded command exit 0; command argv SHA-256
   25c82a763f06acbe3882cc80e2d73d2ad0c6623cfb23ad84b87ef18a7c4bcad7.
+
+- 2026-09-27T11:06:59+00:00: Post-merge exact-main job-level matrix at
+  59323f41ed2d10a952a1276107459260ebdf409a: Credential-free 36314444913 SUCCESS; Huawei headers
+  36314444973 SUCCESS; Formal 36314444936 SUCCESS; Hosted 36314444948 SUCCESS; Fault 36314444956
+  SUCCESS. Pending: Emulated AArch64 36314444926 job in_progress; Rust 36314444940 job in_progress;
+  Repository quality 36314444954 job in_progress. No failures.
