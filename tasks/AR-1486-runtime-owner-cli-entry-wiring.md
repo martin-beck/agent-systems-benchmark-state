@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1486-runtime-owner-cli-entry-wiring",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-27T15:16:33+00:00",
   "depends_on": [
     "AR-1480",
     "AR-1484",
@@ -13,15 +13,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1486-runtime-owner-cli-entry-wiring.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Wire the runtime-owned local/mock process owner into ordinary CLI run and sweep.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Runtime-owner CLI entry wiring",
-  "updated_at": "2026-09-27T13:16:26+00:00",
+  "updated_at": "2026-09-27T13:16:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1486-cli-owner-wiring"
 }
 ---
@@ -35,3 +35,5 @@ authority.
 
 - 2026-09-27T13:16:26+00:00: Dependencies AR-1480, AR-1484, and AR-1485 are done; promote the
   bounded runtime-owner CLI wiring slice.
+
+- 2026-09-27T13:16:33+00:00: Claimed by ar1332-record-replay-luna56.

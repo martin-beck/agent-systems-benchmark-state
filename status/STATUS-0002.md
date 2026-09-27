@@ -159,11 +159,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1486](../tasks/AR-1486-runtime-owner-cli-entry-wiring.md): Runtime-owner CLI entry wiring | Unclaimed | Wire the runtime-owned local/mock process owner into ordinary CLI run and sweep. | Promote and claim, then audit the protected-main CLI entry path and implement the bounded runtime-owner wiring slice. |
+| P0 | [AR-1486](../tasks/AR-1486-runtime-owner-cli-entry-wiring.md): Runtime-owner CLI entry wiring | ar1332-record-replay-luna56 | Wire the runtime-owned local/mock process owner into ordinary CLI run and sweep. | Promote and claim, then audit the protected-main CLI entry path and implement the bounded runtime-owner wiring slice. |
 
 ### Blocked (73)
 
