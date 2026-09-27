@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1489-first-customer-package-consumption",
   "checkpoint_commit": "b048fef92f4bdb4eedd5379d645f4288a4b6ab20",
-  "claim_expires": "2026-09-27T17:33:12+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1461",
     "AR-1462",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1489-first-customer-package-consumption",
   "observed_dirty": 0,
   "observed_head": "c4578eecd93183eaadaf9c34defbc4137ba03657",
-  "owner": "ar1332-record-replay-luna56",
+  "owner": "",
   "plan": "../plans/AR-1489-first-customer-package-consumption.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Verify first-customer release package installation and owner-backed local/mock/replay consumption.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "First-customer package consumption",
-  "updated_at": "2026-09-27T15:35:07+00:00",
+  "updated_at": "2026-09-27T15:35:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1489-first-customer-package-consumption"
 }
 ---
@@ -202,3 +202,7 @@ touching asb-tui or requiring a live provider.
   exact-main workflows SUCCESS: Huawei 36329496606, Hosted 36329496670, Credential-free 36329496593,
   Fault 36329496583, Formal 36329496626, Rust 36329496563, Repository quality 36329496635, Emulated
   AArch64 36329496650.
+
+- 2026-09-27T15:35:10+00:00: AR-1489 complete: ASB-only first-customer package
+  verification/install/doctor/setup/local-mock/replay/cleanup documentation merged; PR #369 and all
+  13 PR checks plus eight post-merge workflows green.
