@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #345 | `feature/ar-1474-runtime-authority-input-resolver@c21d1ce5d1ec` | `main` | UNSTABLE | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, QUEUED:, IN_PROGRESS: | feat(runtime): resolve persisted authority inputs |
+| #345 | `feature/ar-1474-runtime-authority-input-resolver@c21d1ce5d1ec` | `main` | UNSTABLE | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(runtime): resolve persisted authority inputs |
 
 ## Recent workflows
 
@@ -21,9 +21,9 @@ Generated from local Git and GitHub. Do not edit.
 | 36295904393 | `c21d1ce5d1ec` | pull_request | Repository quality | in_progress:- |
 | 36295904390 | `c21d1ce5d1ec` | pull_request | Formal assurance | in_progress:- |
 | 36295904381 | `c21d1ce5d1ec` | pull_request | Rust verification | in_progress:- |
-| 36295904375 | `c21d1ce5d1ec` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 36295904375 | `c21d1ce5d1ec` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36295904374 | `c21d1ce5d1ec` | pull_request | Hosted portability and native qualification | in_progress:- |
-| 36295904364 | `c21d1ce5d1ec` | pull_request | Fault assurance | queued:- |
+| 36295904364 | `c21d1ce5d1ec` | pull_request | Fault assurance | in_progress:- |
 | 36293580469 | `1dada31c763f` | push | Formal assurance | completed:success |
 | 36293580440 | `1dada31c763f` | push | Fault assurance | completed:success |
 | 36293580439 | `1dada31c763f` | push | Repository quality | completed:success |
