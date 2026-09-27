@@ -15,6 +15,7 @@
   "priority": "P1",
   "schema_version": 1,
   "status": "superseded",
+  "superseded_by": "AR-1456",
   "summary": "Run the multi-agent by workload benchmark campaign with per-tuple evidence and offline replay.",
   "task_revision": 4,
   "title": "Multi-agent by workload benchmark campaign",
