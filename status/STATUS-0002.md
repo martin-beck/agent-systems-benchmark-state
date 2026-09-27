@@ -143,11 +143,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1474](../tasks/AR-1474-runtime-authority-input-resolver.md): Runtime-owned authority-input resolver | Unclaimed | Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority. | Create narrow asb-metrics repair successor for repeated ProbeRejected versus MalformedEvidence failure; keep PR #345 unmerged. |
+| P0 | [AR-1474](../tasks/AR-1474-runtime-authority-input-resolver.md): Runtime-owned authority-input resolver | ar1332-record-replay-luna56 | Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority. | Create narrow asb-metrics repair successor for repeated ProbeRejected versus MalformedEvidence failure; keep PR #345 unmerged. |
 
 ### Blocked (70)
 
@@ -512,4 +512,3 @@
 | P1 | [AR-0813](../tasks/AR-0813-remote-control-transport.md): Add secure remote control transport | Unclaimed | Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client. | AR-1259 remains open after unsigned recovery merge 8b81be4; await repository-level signed protected-main recovery and exact-main policy before closing AR-0813. |
 | P1 | [AR-0819](../tasks/AR-0819-ssh-remote-bootstrap.md): Add SSH remote discovery and bootstrap | Unclaimed | Use configured SSH hosts as the safe default path to a remote runner and help establish dedicated key authentication. | Integrate signed no-ff PR #98 onto current main, then run and verify all exact-main post-merge workflows before release. |
 | P1 | [AR-0820](../tasks/AR-0820-verifiable-install-artifacts.md): Publish verifiable installation artifacts | Unclaimed | Publish verifiable native bundles and metadata that a small bootstrapper can select safely. | Build signed platform manifests and relocatable ASB plus asb-tui installation bundles. |
-| P1 | [AR-0821](../tasks/AR-0821-one-line-local-install.md): Add guided one-line local installation | Unclaimed | Turn a single documented command into a safe guided local ASB and TUI first run. | Monitor all required post-merge CI runs for exact main 513c1d926458f1cb6a26d3f7277dc7d9b1496df3; release only after every gate is green. |

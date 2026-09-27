@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1474-runtime-authority-input-resolver",
   "checkpoint_commit": "56d284c2d292163e2724318b0443f53211b4f9e4",
-  "claim_expires": "",
+  "claim_expires": "2026-09-27T06:22:50+00:00",
   "depends_on": [
     "AR-1362",
     "AR-1471",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1474-runtime-authority-input-resolver",
   "observed_dirty": 0,
   "observed_head": "56d284c2d292163e2724318b0443f53211b4f9e4",
-  "owner": "",
+  "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1474-runtime-authority-input-resolver.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority.",
-  "task_revision": 70,
+  "task_revision": 71,
   "title": "Runtime-owned authority-input resolver",
-  "updated_at": "2026-09-27T04:22:37+00:00",
+  "updated_at": "2026-09-27T04:22:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1474-runtime-authority-input-resolver"
 }
 ---
@@ -236,3 +236,5 @@ authority, privacy, lifecycle, formal, or egress contracts.
 
 - 2026-09-27T04:22:37+00:00: AR-1475 repair merged at 1dada31c with all seven post-merge workflows
   green; resume exact-head PR validation.
+
+- 2026-09-27T04:22:50+00:00: Claimed by ar1332-record-replay-luna56.
