@@ -16,9 +16,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair protected-main topic synchronization topology after AR-1477 merge policy failure.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Repair topic synchronization topology",
-  "updated_at": "2026-09-27T05:33:28+00:00",
+  "updated_at": "2026-09-27T05:33:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1478-topic-synchronization-topology-repair"
 }
 ---
@@ -35,3 +35,6 @@ or synchronization topology permitted by the policy.
   protected-main topology repair.
 
 - 2026-09-27T05:33:28+00:00: Claimed by ar1332-record-replay-luna56.
+
+- 2026-09-27T05:33:40+00:00: Recorded command exit 0; command argv SHA-256
+  105763bc7615b3f32bbf9a6c0cedee9b5bbc3e1925f532e3c75f7ffb64f5a092.
