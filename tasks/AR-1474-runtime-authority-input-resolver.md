@@ -18,11 +18,11 @@
   "plan": "../plans/AR-1474-runtime-authority-input-resolver.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Runtime-owned authority-input resolver",
-  "updated_at": "2026-09-27T03:53:10+00:00",
+  "updated_at": "2026-09-27T04:22:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1474-runtime-authority-input-resolver"
 }
 ---
@@ -233,3 +233,6 @@ authority, privacy, lifecycle, formal, or egress contracts.
   MalformedEvidence, got ProbeRejected at crates/asb-metrics/src/kernel.rs:718); repository quality
   coverage also failed after workspace interruption. Next action: create narrow asb-metrics repair
   successor, then rerun PR validation.
+
+- 2026-09-27T04:22:37+00:00: AR-1475 repair merged at 1dada31c with all seven post-merge workflows
+  green; resume exact-head PR validation.
