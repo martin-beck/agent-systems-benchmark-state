@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1486-runtime-owner-cli-entry-wiring",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "a5f9ad27b967371511b0981aad29d3aa65a7fcab",
   "claim_expires": "2026-09-27T15:16:33+00:00",
   "depends_on": [
     "AR-1480",
@@ -9,7 +9,7 @@
     "AR-1485"
   ],
   "id": "AR-1486",
-  "next_action": "Rerun full workspace/docs/privacy/release/policy/clean gates after owner-backed local mock execution fix and provenance refresh.",
+  "next_action": "Push signed head a5f9ad27, open PR, monitor exact-head checks; merge only all green, then verify eight post-merge workflows.",
   "observed_branch": "feature/ar-1486-runtime-owner-cli-entry-wiring",
   "observed_dirty": 0,
   "observed_head": "a5f9ad27b967371511b0981aad29d3aa65a7fcab",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire the runtime-owned local/mock process owner into ordinary CLI run and sweep.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Runtime-owner CLI entry wiring",
-  "updated_at": "2026-09-27T13:34:57+00:00",
+  "updated_at": "2026-09-27T13:35:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1486-cli-owner-wiring"
 }
 ---
@@ -102,3 +102,11 @@ authority.
 
 - 2026-09-27T13:34:45+00:00: Recorded command exit 0; command argv SHA-256
   0cd628ee84d69a7683fb90242da4bd061485e1832af043f7bf63d7ae14698a1a.
+
+- 2026-09-27T13:35:13+00:00: Final scoped review passed: asb-cli now accepts only a runtime-owned
+  LocalMockRuntimeControlOwner for provider-free run/sweep, executes attempts through the owner
+  backend, and tears down before return; reuse/unavailable entry fails before result roots. Runtime
+  contract adds owner-backed mock execution without production authority. Docs/provenance updated.
+  Focused run/sweep/reuse/unavailable and runtime contract tests pass; full workspace tests, clippy,
+  rustdoc, release build, source policy, diff check all exit 0. SSH-signed DCO commit a5f9ad27
+  verified.
