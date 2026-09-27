@@ -149,13 +149,7 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1420](../tasks/AR-1420-literature-workload-campaign-integration.md): Literature workload campaign integration | ar1332-record-replay-luna56 | Run the complete qualified literature workload matrix beside built-in software-engineering workloads. | PR #350 is not mergeable: preserve Rust retry failure and await coordinator decision/create repair for unrelated existing asb-agents timing flake; do not merge or weaken checks. |
-
-### Blocked (71)
+### Blocked (72)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -226,6 +220,7 @@
 | P1 | [AR-1256](../tasks/AR-1256-bundled-mockagents-isolation.md): Execute bundled MockAgents transport in isolation | Unclaimed | Execute bundled MockAgents transport in isolation. | Implement bundled in-container MockAgents transport and digest-pinned arm64 QEMU evidence. |
 | P1 | [AR-1258](../tasks/AR-1258-docker-binfmt-qemu.md): Provision Docker binfmt/QEMU capability | Unclaimed | Provision and verify Docker binfmt/QEMU for multiarch qualification. | Await an approved maintenance window with zero Docker workloads; snapshot binfmt state, apply rollback-safe F registration, then rerun pinned arm64 Alpine /bin/true with network disabled and record sanitized interpreter, digest, provenance, timeout, and rollback evidence. Keep qualification blocked. |
 | P1 | [AR-1354](../tasks/AR-1354-runtime-enrollment-implementation.md): Runtime enrollment implementation | Unclaimed | Implement config-backed runtime-owned enrollment for live CLI dispatch. | BLOCKED on an attested runtime enrollment source: asb-runtime must receive an authority-free enrollment request and obtain concrete public target(s), pinned tool attestations, lease root, and relay root from a runtime/control-owned record; do not expose these asb-cli inputs. Add a signed/attested record transport or coordinator-owned runtime enrollment AR, then implement acquire_from_enrollment and CLI dispatch with positive/negative tests. |
+| P1 | [AR-1420](../tasks/AR-1420-literature-workload-campaign-integration.md): Literature workload campaign integration | Unclaimed | Run the complete qualified literature workload matrix beside built-in software-engineering workloads. | PR #350 is not mergeable: preserve Rust retry failure and await coordinator decision/create repair for unrelated existing asb-agents timing flake; do not merge or weaken checks. |
 | P1 | [AR-1449](../tasks/AR-1449-runtime-owned-local-replay-cli.md): Runtime-owned local replay CLI authority | Unclaimed | Provide fail-closed runtime-owned local replay authority for the guided CLI wrapper. | Blocked: AR-1448 exposes issuance only and requires caller-built sandbox, lease, backend and relay. A runtime-owned provisioning successor is required; no product change was published. |
 | P2 | [AR-0705](../tasks/AR-0705-native-debian-capacity.md): Provide native Debian capacity | Unclaimed | Qualify booted Debian on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 Debian and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
@@ -512,3 +507,4 @@
 | P1 | [AR-0702](../tasks/AR-0702-native-platforms.md): Validate native Linux kernels and architectures | Unclaimed | Qualify native x86_64 and required emulated AArch64 portability; track native ARM64 as optional future evidence. | Rebase PR #31, replace native ARM64 completion gates with the pinned QEMU AArch64 lane where applicable, document native ARM64 as optional future qualification, and rerun exact-head checks. |
 | P1 | [AR-0704](../tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | PR #119 exact head 4630f90 is rebased onto protected main 5ddac12. Fresh exact-head checks were absent immediately after force-push; close/reopen retriggered them. At last query all 12 checks are pending except AWQ shadow and SPDX headers pass. Wait for every required check terminal success; do not merge on partial/pending evidence. |
 | P1 | [AR-0707](../tasks/AR-0707-emulated-aarch64-portability.md): Qualify emulated aarch64 portability | Unclaimed | Add explicit emulated-aarch64 portability qualification without claiming native support. | Provide a reproducible x86_64-hosted aarch64 VM/emulation lane for userspace portability and negative qualification only. |
+| P1 | [AR-0801](../tasks/AR-0801-terminal-interface.md): Implement terminal and automation interfaces | Unclaimed | Provide doctor, plan, run, sweep, compare and report with stable JSON output. | No further AR-0801 action; preserve the verified doctor, plan, run, sweep, compare, report, and serve surface, with record and replay explicitly unsupported. |

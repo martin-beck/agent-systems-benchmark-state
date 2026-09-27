@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "2884508a6236d1219386edeb428ba0c39ce9bd3c",
-  "claim_expires": "2026-09-27T10:07:35+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1417",
     "AR-1418",
@@ -14,15 +14,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "ar1332-record-replay-luna56",
+  "owner": "",
   "plan": "../plans/AR-1420.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Run the complete qualified literature workload matrix beside built-in software-engineering workloads.",
-  "task_revision": 138,
+  "task_revision": 139,
   "title": "Literature workload campaign integration",
-  "updated_at": "2026-09-27T08:13:33+00:00",
+  "updated_at": "2026-09-27T08:14:17+00:00",
   "worktree_key": ""
 }
 ---
@@ -468,3 +468,11 @@ tasks or require any live provider.
 
 - 2026-09-27T08:13:33+00:00: Recorded command exit 0; command argv SHA-256
   10039d3b8cba2a092ee1a004cbf98af0e3261e2d394440b5d71ac42b2a11ebd0.
+
+- 2026-09-27T08:14:17+00:00: Requalification after AR-1479 merge 1015a461: PR #350 exact head
+  2884508 has 12 non-Rust checks SUCCESS, but approved Rust rerun 36302307481 still executes cargo
+  test --locked --workspace from unchanged PR workflow and deterministically fails
+  gemini::tests::malformed_ready_marker_fails_fast_and_cleans_run_root at
+  crates/asb-agents/src/gemini.rs:2308 (187 passed, 1 failed; elapsed <1s assertion). AR-1479 serial
+  guards cannot affect unchanged PR head. Next action: synchronize PR #350 with repaired main or
+  create narrow follow-up carrying the workflow guard, then rerun exact-head CI before merge.
