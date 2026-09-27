@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1476](tasks/AR-1476-workspace-coverage-floor-repair.md): Repair workspace coverage floor | Restore the enforced 90 percent workspace coverage floor blocking exact AR-1474 validation. | Promote after validating completed dependencies, then reproduce the 88.05 percent coverage result and add justified tests or exclusions. | ar1332-record-replay-luna56 |
+| P0 | [AR-1476](tasks/AR-1476-workspace-coverage-floor-repair.md): Repair workspace coverage floor | Restore the enforced 90 percent workspace coverage floor blocking exact AR-1474 validation. | Rerun PR #345 exact-head validation against current protected main 1dada31c; no repair diff is required unless the current-base gate regresses. | ar1332-record-replay-luna56 |
 
 ## Blocked
 
