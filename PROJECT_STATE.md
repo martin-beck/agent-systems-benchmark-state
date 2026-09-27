@@ -17,7 +17,7 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 36304800227 | `1015a4613a27` | push | Credential-free benchmark path | completed:success |
-| 36304800214 | `1015a4613a27` | push | Rust verification | in_progress:- |
+| 36304800214 | `1015a4613a27` | push | Rust verification | completed:success |
 | 36304800212 | `1015a4613a27` | push | Formal assurance | completed:success |
 | 36304800202 | `1015a4613a27` | push | Hosted portability and native qualification | completed:success |
 | 36304800200 | `1015a4613a27` | push | Repository quality | completed:success |
