@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stage a deterministic customer bundle and provide an explicit external signing handoff and verifier.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Customer bundle signing handoff",
-  "updated_at": "2026-09-27T16:19:34+00:00",
+  "updated_at": "2026-09-27T16:19:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1492-customer-bundle-signing-handoff"
 }
 ---
@@ -81,3 +81,6 @@ detached signature.
   workspace, release build, repository policy, fmt/diff/clean. prepare_signing_handoff stages
   signed-profile metadata but intentionally emits no detached signature; handoff records external
   SSHSIG requirements and verifier command. No customer-release claim.
+
+- 2026-09-27T16:19:56+00:00: Recorded command exit 0; command argv SHA-256
+  cf86b6fc7867072c3ef946b511b5bcf11a9af7b10d94f84dbe35ebfa76f7b1cb.
