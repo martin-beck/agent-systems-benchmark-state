@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define stable runtime/control process-owner lifecycle and opaque handoff contract.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Runtime/control process-owner contract",
-  "updated_at": "2026-09-27T12:22:16+00:00",
+  "updated_at": "2026-09-27T12:22:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1484-runtime-control-owner-contract"
 }
 ---
@@ -107,3 +107,7 @@ authority.
 
 - 2026-09-27T12:22:16+00:00: Recorded command exit 0; command argv SHA-256
   76b7a3dc660fdc8321d14ec9bcdb6ca7dfca8eb7c39767e3a86f5813c83018f9.
+
+- 2026-09-27T12:22:41+00:00: PR #358 recheck at exact head 7ce533ea9b0524c5b317cc2db8fad0aff8ecedc3:
+  Huawei/SPDX and AWQ shadow SUCCESS; remaining 11 required checks IN_PROGRESS. PR #358
+  OPEN/UNSTABLE; no failures at corrected head and no merge attempted.
