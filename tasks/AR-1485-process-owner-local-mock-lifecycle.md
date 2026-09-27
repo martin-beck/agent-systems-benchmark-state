@@ -10,7 +10,7 @@
     "AR-1484"
   ],
   "id": "AR-1485",
-  "next_action": "Monitor PR #359 exact head f01b7b11; merge only after all required checks and independent review are green, then verify eight post-merge workflows.",
+  "next_action": "Continue monitoring PR #359 exact head f01b7b11; merge only after all 13 required checks terminal SUCCESS and review passes.",
   "observed_branch": "feature/ar-1485-process-owner-local-mock-lifecycle",
   "observed_dirty": 0,
   "observed_head": "f01b7b11b5dcd0152482f26663fcc36c98da7cbe",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement runtime-owned local/mock process lifecycle and opaque-source handoff.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Process-owner local/mock lifecycle",
-  "updated_at": "2026-09-27T12:56:23+00:00",
+  "updated_at": "2026-09-27T12:56:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1485-process-owner-local-mock-lifecycle"
 }
 ---
@@ -88,3 +88,8 @@ authority.
 
 - 2026-09-27T12:56:23+00:00: Recorded command exit 0; command argv SHA-256
   46168962d8afc0906a1dfe110cd2187d5a65b7af3bb773bc41e3b9c18cfdb493.
+
+- 2026-09-27T12:56:49+00:00: Initial PR #359 rollup recorded: exact head f01b7b11, base main,
+  mergeStateStatus UNSTABLE while 11 named checks remain IN_PROGRESS; AWQ shadow and Huawei/SPDX
+  checks SUCCESS. One first poll command had shell-quoting exit 2; corrected query returned this
+  matrix.
