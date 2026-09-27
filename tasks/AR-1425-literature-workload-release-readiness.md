@@ -1,7 +1,7 @@
 ---
 {
   "branch": "",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "6baa7acfb1cc3616c9737118a6345b1813b291f1",
   "claim_expires": "2026-09-27T11:27:47+00:00",
   "depends_on": [
     "AR-1424",
@@ -9,7 +9,7 @@
     "AR-1418"
   ],
   "id": "AR-1425",
-  "next_action": "Promote only after AR-1424, AR-1417, and AR-1418 are released; independently verify the complete built-in plus literature workload surface and all release gates.",
+  "next_action": "Release done after independent audit; no successor required. Future native/official qualification remains separately gated.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Independently verify release readiness of the complete built-in and literature workload surface.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Literature workload release-readiness gate",
-  "updated_at": "2026-09-27T09:28:36+00:00",
+  "updated_at": "2026-09-27T09:29:26+00:00",
   "worktree_key": ""
 }
 ---
@@ -83,3 +83,17 @@ boundaries unless separately proven.
 
 - 2026-09-27T09:28:36+00:00: Recorded command exit 0; command argv SHA-256
   7494c67e63576e88249ee4e8dc156055ca13a4856ecdedef3573544d1703be88.
+
+- 2026-09-27T09:29:26+00:00: Independent AR-1425 audit complete on clean isolated worktree exact
+  origin/main 6baa7acfb1cc3616c9737118a6345b1813b291f1. Registry: 7 built-ins plus 22 external
+  records; all documented families represented, methodology boundaries and unavailable reasons
+  explicit, selectors fail closed. Focused Rust 35/35 asb-workloads lib + 4/4 public API; workload
+  Python 36/36; catalog parity 5/5 and CLI parity passed; generated catalog SHA-256
+  2ff05e9b06bc07bca986834b8213c19242c8efc557e76497280f5c21293108. Full serial workspace tests
+  passed; fmt, clippy -D warnings, rustdoc -D warnings passed. Coverage passed: workspace 90.56%
+  lines, critical asb-replay 96.52% and asb-core 99.61%, asb-workloads 93.44%. Privacy/redaction,
+  strict replay, egress denial, negative paths and formal/release evidence covered by
+  tests/current-main post-merge. AR-1424 current-main post-merge workflows green: Huawei 36308369609
+  hosted 36308369648 credential-free 36308369573 fault 36308369579 formal 36308369594
+  repository-quality 36308369618 Rust 36308369583 AArch64 36308369675. No
+  product/asb-tui/live-provider change.

@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1425](tasks/AR-1425-literature-workload-release-readiness.md): Literature workload release-readiness gate | Independently verify release readiness of the complete built-in and literature workload surface. | Promote only after AR-1424, AR-1417, and AR-1418 are released; independently verify the complete built-in plus literature workload surface and all release gates. | ar1332-record-replay-luna56 |
+| P1 | [AR-1425](tasks/AR-1425-literature-workload-release-readiness.md): Literature workload release-readiness gate | Independently verify release readiness of the complete built-in and literature workload surface. | Release done after independent audit; no successor required. Future native/official qualification remains separately gated. | ar1332-record-replay-luna56 |
 
 ## Blocked
 
