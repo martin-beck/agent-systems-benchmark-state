@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make all locally executable literature workloads selectable and campaignable beside built-in fixtures.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Complete literature selector and local campaign matrix",
-  "updated_at": "2026-09-27T08:35:55+00:00",
+  "updated_at": "2026-09-27T08:36:36+00:00",
   "worktree_key": ""
 }
 ---
@@ -35,3 +35,6 @@ dataset downloads are never requirements for this AR.
   local-mock literature selector/campaign matrix.
 
 - 2026-09-27T08:35:55+00:00: Claimed by ar1332-record-replay-luna56.
+
+- 2026-09-27T08:36:36+00:00: Recorded command exit 0; command argv SHA-256
+  16151857340c021ef75f820af39f95a844ef65ad346d97eb8e34ece3ddd10ce4.
