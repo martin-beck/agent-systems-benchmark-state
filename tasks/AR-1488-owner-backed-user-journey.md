@@ -13,17 +13,17 @@
   "id": "AR-1488",
   "next_action": "Run runtime replay/recovery focused gates and full workspace/docs/privacy/release/policy gates; independently review and commit.",
   "observed_branch": "feature/ar-1488-owner-backed-user-journey",
-  "observed_dirty": 2,
-  "observed_head": "0dc766a481788783a8748a5c1f1e24835c1174c3",
+  "observed_dirty": 0,
+  "observed_head": "f06b2d1b01d33ec367760e02c0f19c88a1ed4166",
   "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1488-owner-backed-user-journey.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Owner-backed first-customer user journey",
-  "updated_at": "2026-09-27T14:44:35+00:00",
+  "updated_at": "2026-09-27T14:44:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1488-owner-backed-user-journey"
 }
 ---
