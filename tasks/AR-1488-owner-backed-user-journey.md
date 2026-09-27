@@ -11,7 +11,7 @@
     "AR-1487"
   ],
   "id": "AR-1488",
-  "next_action": "Continue monitoring Repository quality 36327707913, Rust 36327707907, and Emulated AArch64 36327707890; release only after all eight SUCCESS.",
+  "next_action": "Reconcile and doctor state projection; retain known generated WORKTREES/PROJECT_STATE caveat if reported.",
   "observed_branch": "feature/ar-1488-owner-backed-user-journey",
   "observed_dirty": 0,
   "observed_head": "f06b2d1b01d33ec367760e02c0f19c88a1ed4166",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Owner-backed first-customer user journey",
-  "updated_at": "2026-09-27T15:06:07+00:00",
+  "updated_at": "2026-09-27T15:06:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1488-owner-backed-user-journey"
 }
 ---
@@ -218,3 +218,9 @@ live provider.
 
 - 2026-09-27T15:06:07+00:00: Recorded command exit 0; command argv SHA-256
   e28e51d732f1df6ef4cb4e80bc37d515bd1d54909545bc79d4ee41082e2d1e19.
+
+- 2026-09-27T15:06:23+00:00: Final verification: PR #368 merged 2026-09-27T14:56:08Z; merge 2aef4b15
+  with parents protected base 0dc766a4 and reviewed head f06b2d1b; merge tree eed324aa. All eight
+  exact-main workflows SUCCESS: Huawei 36327707905, Hosted 36327707822, Credential-free 36327707814,
+  Fault 36327707933, Formal 36327707818, Repository quality 36327707913, Rust 36327707907, Emulated
+  AArch64 36327707890.

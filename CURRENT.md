@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1488](tasks/AR-1488-owner-backed-user-journey.md): Owner-backed first-customer user journey | Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey. | Continue monitoring Repository quality 36327707913, Rust 36327707907, and Emulated AArch64 36327707890; release only after all eight SUCCESS. | ar1332-record-replay-luna56 |
+| P0 | [AR-1488](tasks/AR-1488-owner-backed-user-journey.md): Owner-backed first-customer user journey | Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey. | Reconcile and doctor state projection; retain known generated WORKTREES/PROJECT_STATE caveat if reported. | ar1332-record-replay-luna56 |
 
 ## Blocked
 
