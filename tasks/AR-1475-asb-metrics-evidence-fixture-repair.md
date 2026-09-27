@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1475-asb-metrics-evidence-fixture-repair",
-  "checkpoint_commit": "02aa58f1490237190f67d0a225f352473be5b3d8",
+  "checkpoint_commit": "1dada31c763f1929666011f82d2f33c90d2985b3",
   "claim_expires": "2026-09-27T06:18:36+00:00",
   "depends_on": [
     "AR-1200",
@@ -9,7 +9,7 @@
     "AR-1472"
   ],
   "id": "AR-1475",
-  "next_action": "Await final emulated-aarch64 check on PR #346 exact head; merge only after terminal SUCCESS.",
+  "next_action": "Release done after final reconcile; then rerun PR #345 exact-head validation.",
   "observed_branch": "feature/ar-1475-asb-metrics-evidence-fixture-repair",
   "observed_dirty": 0,
   "observed_head": "02aa58f1490237190f67d0a225f352473be5b3d8",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the deterministic ProbeRejected versus MalformedEvidence fixture failure blocking PR #345.",
-  "task_revision": 64,
+  "task_revision": 65,
   "title": "Repair asb-metrics evidence fixture classification",
-  "updated_at": "2026-09-27T04:20:50+00:00",
+  "updated_at": "2026-09-27T04:21:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1475-asb-metrics-evidence-fixture-repair"
 }
 ---
@@ -207,3 +207,7 @@ classification or fixture behavior before changing code.
 
 - 2026-09-27T04:20:50+00:00: Recorded command exit 0; command argv SHA-256
   6a6217532239f5a4f9091c021627065021271987fe27927193d83d4776f6f1b5.
+
+- 2026-09-27T04:21:45+00:00: Post-merge exact-main SHA 1dada31c763f1929666011f82d2f33c90d2985b3 all
+  seven SUCCESS: Huawei 36293580429, hosted 36293580432, fault 36293580440, formal 36293580469, Rust
+  36293580412, emulated AArch64 36293580424, repository quality 36293580439.

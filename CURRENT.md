@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1475](tasks/AR-1475-asb-metrics-evidence-fixture-repair.md): Repair asb-metrics evidence fixture classification | Repair the deterministic ProbeRejected versus MalformedEvidence fixture failure blocking PR #345. | Await final emulated-aarch64 check on PR #346 exact head; merge only after terminal SUCCESS. | ar1332-record-replay-luna56 |
+| P0 | [AR-1475](tasks/AR-1475-asb-metrics-evidence-fixture-repair.md): Repair asb-metrics evidence fixture classification | Repair the deterministic ProbeRejected versus MalformedEvidence fixture failure blocking PR #345. | Release done after final reconcile; then rerun PR #345 exact-head validation. | ar1332-record-replay-luna56 |
 
 ## Blocked
 
