@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire runtime-owned authenticated dispatch into the ordinary CLI entry path.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Runtime-owned CLI entry bootstrap",
-  "updated_at": "2026-09-27T11:59:44+00:00",
+  "updated_at": "2026-09-27T12:00:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1481-runtime-owned-cli-entry-bootstrap"
 }
 ---
@@ -37,3 +37,6 @@ provider, accept caller-built authority, or weaken fail-closed boundaries.
   and AR-1480; avoids circular AR-1374/1375.
 
 - 2026-09-27T11:59:44+00:00: Claimed by ar1332-record-replay-luna56.
+
+- 2026-09-27T12:00:17+00:00: Recorded command exit 0; command argv SHA-256
+  1fc84059ed837e70b9c932779a129de0d2a6a5628085d897779904dc1235c023.
