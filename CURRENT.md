@@ -8,12 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1379](tasks/AR-1379-live-dispatch-integration.md): Production live dispatch integration | Integrate authenticated runtime live dispatch into asb run and sweep. | Monitor rerun of post-merge Rust workflow and remaining six workflows at exact main SHA 1e2c591; release only after all seven terminal SUCCESS. | ar1379-live-dispatch-luna56 |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1391](tasks/AR-1391-runtime-control-bootstrap-constructor.md): Runtime control bootstrap constructor | Materialize authenticated runtime live authority into an opaque source without caller injection. | Claim the pre-bound isolated worktree, implement the runtime/control-owned authenticated bootstrap constructor, and publish a signed PR. | - |
+| P0 | [AR-1391](tasks/AR-1391-runtime-control-bootstrap-constructor.md): Runtime control bootstrap constructor | Materialize authenticated runtime live authority into an opaque source without caller injection. | Claim the pre-bound isolated worktree, implement the runtime/control-owned authenticated bootstrap constructor, and publish a signed PR. | ar1332_record_replay_luna56 |
 
 ## Blocked
 
