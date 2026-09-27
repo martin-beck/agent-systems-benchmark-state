@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize authenticated runtime-owned live execution for asb run and sweep.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Authenticated live execution source",
-  "updated_at": "2026-09-27T02:17:52+00:00",
+  "updated_at": "2026-09-27T02:18:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1382-authenticated-live-execution-source"
 }
 ---
@@ -55,3 +55,6 @@ preserving the no-caller-authority and fail-closed boundaries.
   execution-source materialization. AR-1329 remains optional/blocked and is not required.
 
 - 2026-09-27T02:17:52+00:00: Claimed by ar1332_record_replay_luna56.
+
+- 2026-09-27T02:18:10+00:00: Recorded command exit 0; command argv SHA-256
+  321c534968b9c456a64caf5e6d09b63780c507f97548057d2bfe31edcfd73ff4.
