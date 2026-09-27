@@ -21,7 +21,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36325841109 | `0dc766a48178` | push | Rust verification | in_progress:- |
+| 36325841109 | `0dc766a48178` | push | Rust verification | completed:success |
 | 36325841097 | `0dc766a48178` | push | Fault assurance | completed:success |
 | 36325841072 | `0dc766a48178` | push | Formal assurance | completed:success |
 | 36325841050 | `0dc766a48178` | push | Hosted portability and native qualification | completed:success |
