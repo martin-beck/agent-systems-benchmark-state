@@ -17,11 +17,11 @@
   "plan": "../plans/AR-1483-authenticated-control-process-owner.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Own authenticated control session and lifecycle while minting opaque CLI dispatch sources.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Authenticated control process owner",
-  "updated_at": "2026-09-27T12:07:37+00:00",
+  "updated_at": "2026-09-27T12:43:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1483-authenticated-control-process-owner"
 }
 ---
@@ -50,3 +50,7 @@ caller authority or modify asb-tui.
   wrapper or CLI/config authority would violate fail-closed boundaries. Worktree clean; no code
   changes. Next successor must define/provide that process owner/backend lifecycle; do not revive
   AR-1374/1375.
+
+- 2026-09-27T12:43:09+00:00: AR-1484 merged the stable owner lifecycle contract. Re-audit AR-1483
+  and implement the smallest owner integration slice over that contract; preserve fail-closed
+  boundaries and do not fabricate control backend authority.
