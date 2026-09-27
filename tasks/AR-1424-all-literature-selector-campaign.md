@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make all locally executable literature workloads selectable and campaignable beside built-in fixtures.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Complete literature selector and local campaign matrix",
-  "updated_at": "2026-09-27T08:58:03+00:00",
+  "updated_at": "2026-09-27T08:58:07+00:00",
   "worktree_key": ""
 }
 ---
@@ -151,3 +151,6 @@ dataset downloads are never requirements for this AR.
   reconciliation (25 entries), CLI catalog output, and parity check now pass.
 
 - 2026-09-27T08:58:03+00:00: Heartbeat by ar1332-record-replay-luna56.
+
+- 2026-09-27T08:58:07+00:00: Recorded command exit 0; command argv SHA-256
+  53fbcdbc3213a97c851cf9e2fa96c1ae5bee35c198357e2c1fb40c7fa801facb.
