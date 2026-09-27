@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Consume authenticated runtime receipts in production asb run and sweep dispatch.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Production live-provider dispatch",
-  "updated_at": "2026-09-27T11:14:11+00:00",
+  "updated_at": "2026-09-27T11:14:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1374-cli-live-dispatch"
 }
 ---
@@ -156,3 +156,6 @@ reachability.
   path; resume bounded re-audit to record exact remaining adapter gap.
 
 - 2026-09-27T11:14:11+00:00: Claimed by ar1332-record-replay-luna56.
+
+- 2026-09-27T11:14:21+00:00: Recorded command exit 0; command argv SHA-256
+  c21f15a4a25878c93d5140131c30bb7d188876ac9733e1cac6562030ed2ba8f9.
