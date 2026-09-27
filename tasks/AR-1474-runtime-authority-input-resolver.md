@@ -10,7 +10,7 @@
     "AR-1379"
   ],
   "id": "AR-1474",
-  "next_action": "Retry PR #345 Rust once for existing state-root ownership race; monitor repository quality.",
+  "next_action": "Await repository-quality rerun 36292250172; merge PR #345 only after SUCCESS.",
   "observed_branch": "feature/ar-1474-runtime-authority-input-resolver",
   "observed_dirty": 0,
   "observed_head": "56d284c2d292163e2724318b0443f53211b4f9e4",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority.",
-  "task_revision": 99,
+  "task_revision": 100,
   "title": "Runtime-owned authority-input resolver",
-  "updated_at": "2026-09-27T04:36:55+00:00",
+  "updated_at": "2026-09-27T04:37:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1474-runtime-authority-input-resolver"
 }
 ---
@@ -321,3 +321,7 @@ authority, privacy, lifecycle, formal, or egress contracts.
 
 - 2026-09-27T04:36:55+00:00: Recorded command exit 0; command argv SHA-256
   41f48f74f75000e556302063e4868ce4bf9ca59b875d70fcdf4b30256f7c39fa.
+
+- 2026-09-27T04:37:24+00:00: PR #345 Rust rerun 36292250053 terminal SUCCESS at 04:35:11Z after
+  transient asb-cli state-root ownership failure. The prior original metrics failure is also cleared
+  by AR-1475. Repository-quality rerun 36292250172 is IN_PROGRESS; exact head remains 56d284c2.
