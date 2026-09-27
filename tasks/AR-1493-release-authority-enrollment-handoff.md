@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define and validate the external release-authority enrollment and signed-bundle verification handoff.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Release-authority enrollment handoff",
-  "updated_at": "2026-09-27T17:14:02+00:00",
+  "updated_at": "2026-09-27T17:14:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1493-release-authority-enrollment-handoff"
 }
 ---
@@ -201,3 +201,6 @@ and preserve AR-1490 as the customer-release blocker.
   65c48537df954c87b1d88d29f6fc784ec1946325f89a10c698d249fe7fdf9686.
 
 - 2026-09-27T17:14:02+00:00: Heartbeat by ar1332-record-replay-luna56.
+
+- 2026-09-27T17:14:13+00:00: Recorded command exit 0; command argv SHA-256
+  65c48537df954c87b1d88d29f6fc784ec1946325f89a10c698d249fe7fdf9686.
