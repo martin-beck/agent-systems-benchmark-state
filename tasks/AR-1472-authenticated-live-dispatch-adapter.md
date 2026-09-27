@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect authenticated control receipts to runtime-owned CLI live dispatch without a dependency cycle.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Authenticated live-dispatch adapter",
-  "updated_at": "2026-09-27T01:58:01+00:00",
+  "updated_at": "2026-09-27T01:58:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1472-authenticated-live-dispatch-adapter"
 }
 ---
@@ -211,3 +211,6 @@ authority. Mandatory qualification is deterministic local/mock or replay.
 - 2026-09-27T01:58:01+00:00: Final pre-merge poll: Rust verification turned SUCCESS at 01:56:57Z;
   every check except Repository quality is SUCCESS. Repository quality remains IN_PROGRESS; PR
   OPEN/UNSTABLE, exact head unchanged. Heartbeat renewed 120 minutes; merge correctly deferred.
+
+- 2026-09-27T01:58:49+00:00: Recorded command exit 0; command argv SHA-256
+  f793d1cd1d99f831ddf78a3a8957ab72d1079c8331b3cebdc8220fc98381b9bb.
