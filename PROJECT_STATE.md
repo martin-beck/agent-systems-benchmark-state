@@ -19,10 +19,10 @@ Generated from local Git and GitHub. Do not edit.
 | 36300554023 | `8361a8ddd2cd` | push | Huawei MIT source headers | completed:success |
 | 36300553987 | `8361a8ddd2cd` | push | Formal assurance | in_progress:- |
 | 36300553983 | `8361a8ddd2cd` | push | Repository quality | in_progress:- |
-| 36300553958 | `8361a8ddd2cd` | push | Hosted portability and native qualification | in_progress:- |
+| 36300553958 | `8361a8ddd2cd` | push | Hosted portability and native qualification | completed:success |
 | 36300553949 | `8361a8ddd2cd` | push | Rust verification | in_progress:- |
 | 36300553906 | `8361a8ddd2cd` | push | Emulated aarch64 portability | in_progress:- |
-| 36300553894 | `8361a8ddd2cd` | push | Credential-free benchmark path | in_progress:- |
+| 36300553894 | `8361a8ddd2cd` | push | Credential-free benchmark path | completed:success |
 | 36300089789 | `16e4bf8405b9` | pull_request | Emulated aarch64 portability | completed:success |
 | 36300089621 | `16e4bf8405b9` | pull_request | Credential-free benchmark path | completed:success |
 | 36300089598 | `16e4bf8405b9` | pull_request | Repository quality | completed:success |
