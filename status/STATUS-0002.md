@@ -164,7 +164,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1487](../tasks/AR-1487-owner-backed-first-customer-qualification.md): Owner-backed first-customer qualification | ar1332-record-replay-luna56 | Qualify the owner-backed credential-free local/mock/replay first-customer journey. | Continue monitoring Repository quality 36325841032, Emulated AArch64 36325841029, Rust 36325841109; release only after all eight terminal SUCCESS. |
+| P0 | [AR-1487](../tasks/AR-1487-owner-backed-first-customer-qualification.md): Owner-backed first-customer qualification | ar1332-record-replay-luna56 | Qualify the owner-backed credential-free local/mock/replay first-customer journey. | Monitor final Repository quality 36325841032 and Emulated AArch64 36325841029; release done only after SUCCESS. |
 
 ### Blocked (73)
 

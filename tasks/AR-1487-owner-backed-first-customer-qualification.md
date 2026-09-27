@@ -10,7 +10,7 @@
     "AR-1486"
   ],
   "id": "AR-1487",
-  "next_action": "Continue monitoring Repository quality 36325841032, Emulated AArch64 36325841029, Rust 36325841109; release only after all eight terminal SUCCESS.",
+  "next_action": "Monitor final Repository quality 36325841032 and Emulated AArch64 36325841029; release done only after SUCCESS.",
   "observed_branch": "feature/ar-1487-owner-backed-first-customer-qualification",
   "observed_dirty": 0,
   "observed_head": "4b94dcd7be505ebb5b34580db5023b95de7db8fd",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the owner-backed credential-free local/mock/replay first-customer journey.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Owner-backed first-customer qualification",
-  "updated_at": "2026-09-27T14:32:58+00:00",
+  "updated_at": "2026-09-27T14:33:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1487-owner-backed-qualification"
 }
 ---
@@ -265,3 +265,7 @@ runtime-owned CLI; it excludes live providers and asb-tui.
 
 - 2026-09-27T14:32:58+00:00: Recorded command exit 0; command argv SHA-256
   03184fe308919755a72eb52438cd19d340e3a7205ba779265c0ff321ad43a973.
+
+- 2026-09-27T14:33:17+00:00: Post-merge 0dc766a4 update: Rust 36325841109 transitioned SUCCESS. Six
+  of eight workflows terminal SUCCESS; Repository quality 36325841032 and Emulated AArch64
+  36325841029 remain in progress with no failures.
