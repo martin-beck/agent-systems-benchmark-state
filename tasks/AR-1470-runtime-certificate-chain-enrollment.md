@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize runtime-owned certificate-chain enrollment authority for live dispatch.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Runtime certificate-chain enrollment materialization",
-  "updated_at": "2026-09-27T03:20:58+00:00",
+  "updated_at": "2026-09-27T03:21:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1470-runtime-certificate-chain-enrollment"
 }
 ---
@@ -90,3 +90,6 @@ actually consumed by the downstream adapters.
 
 - 2026-09-27T03:20:58+00:00: Recorded command exit 0; command argv SHA-256
   db10c2b810ca2a05a2807fc1e3f072719794d3ac7ccc14bb48853c9d8e22e508.
+
+- 2026-09-27T03:21:13+00:00: Recorded command exit 0; command argv SHA-256
+  b68a1ff5731165bada7303799d9eb0058c28050c8f787f4dc8021a1a97a92023.
