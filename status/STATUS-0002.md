@@ -142,7 +142,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1471](../tasks/AR-1471-control-to-runtime-chain-binding.md): Control-to-runtime certificate-chain binding | ar1332_record_replay_luna56 | Bind authenticated control enrollment to runtime certificate-chain storage and live dispatch. | Run independent review, publish exact signed head, monitor required checks, and merge only after all green. |
+| P0 | [AR-1471](../tasks/AR-1471-control-to-runtime-chain-binding.md): Control-to-runtime certificate-chain binding | ar1332_record_replay_luna56 | Bind authenticated control enrollment to runtime certificate-chain storage and live dispatch. | Reconcile and doctor live state, then release AR-1471 done with merge and seven exact-main workflow evidence. |
 
 ### Blocked (71)
 

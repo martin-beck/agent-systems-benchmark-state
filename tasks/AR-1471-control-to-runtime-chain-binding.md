@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1471-control-to-runtime-chain-binding",
-  "checkpoint_commit": "d76d099dcaa551c14c97e89c524e83bec6facd93",
+  "checkpoint_commit": "cb9bce4dd99194ba44f65655d7f7e2e21fc8b408",
   "claim_expires": "2026-09-27T03:48:04+00:00",
   "depends_on": [
     "AR-1357",
@@ -9,7 +9,7 @@
     "AR-1362"
   ],
   "id": "AR-1471",
-  "next_action": "Run independent review, publish exact signed head, monitor required checks, and merge only after all green.",
+  "next_action": "Reconcile and doctor live state, then release AR-1471 done with merge and seven exact-main workflow evidence.",
   "observed_branch": "feature/ar-1471-control-to-runtime-chain-binding",
   "observed_dirty": 0,
   "observed_head": "d76d099dcaa551c14c97e89c524e83bec6facd93",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind authenticated control enrollment to runtime certificate-chain storage and live dispatch.",
-  "task_revision": 111,
+  "task_revision": 112,
   "title": "Control-to-runtime certificate-chain binding",
-  "updated_at": "2026-09-27T00:51:49+00:00",
+  "updated_at": "2026-09-27T00:52:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1471-control-to-runtime-chain-binding"
 }
 ---
@@ -338,3 +338,16 @@ authority.
 
 - 2026-09-27T00:51:49+00:00: Recorded command exit 0; command argv SHA-256
   2b9355f710ab80338789575dad8108353c2034371b5c9446b6090d6a6b359e35.
+
+- 2026-09-27T00:52:28+00:00: PR #341 merged normally (non-squash) at
+  cb9bce4dd99194ba44f65655d7f7e2e21fc8b408; parents b9b7b6ee251b3a119496d3c16f65ffc971704f3a and
+  d76d099dcaa551c14c97e89c524e83bec6facd93; protected-main tree diff against reviewed head was
+  empty. Independent review found scoped signed+DCO implementation, control-authenticated chain
+  metadata reconstruction, crate-private runtime store installation, positive/negative tests,
+  schemas/docs, no asb-tui/live-provider changes. Post-merge exact-head workflows all green: Huawei
+  MIT source headers 36283100105; Hosted portability and native qualification 36283100101; Fault
+  assurance 36283100172; Formal assurance 36283100159; Rust verification rerun 36283100128 (initial
+  failure was the pre-existing state-root ownership race in
+  production_backend_runs_without_frontend_and_recovers_idempotency; serial isolated reproduction
+  passed 1/1, approved failed-job rerun green); Emulated aarch64 portability 36283100126; Repository
+  quality 36283100097.
