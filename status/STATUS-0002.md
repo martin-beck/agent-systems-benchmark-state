@@ -146,7 +146,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1474](../tasks/AR-1474-runtime-authority-input-resolver.md): Runtime-owned authority-input resolver | ar1332_record_replay_luna56 | Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority. | Monitor PR #345 exact head 56d284c; merge only after every required check green. |
+| P0 | [AR-1474](../tasks/AR-1474-runtime-authority-input-resolver.md): Runtime-owned authority-input resolver | ar1332_record_replay_luna56 | Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority. | Retry exact-head Rust workflow once for unrelated asb-metrics failure; keep other checks monitored. |
 
 ### Blocked (70)
 

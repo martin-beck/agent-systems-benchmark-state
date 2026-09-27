@@ -10,7 +10,7 @@
     "AR-1379"
   ],
   "id": "AR-1474",
-  "next_action": "Monitor PR #345 exact head 56d284c; merge only after every required check green.",
+  "next_action": "Retry exact-head Rust workflow once for unrelated asb-metrics failure; keep other checks monitored.",
   "observed_branch": "feature/ar-1474-runtime-authority-input-resolver",
   "observed_dirty": 0,
   "observed_head": "56d284c2d292163e2724318b0443f53211b4f9e4",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority.",
-  "task_revision": 55,
+  "task_revision": 56,
   "title": "Runtime-owned authority-input resolver",
-  "updated_at": "2026-09-27T03:48:02+00:00",
+  "updated_at": "2026-09-27T03:48:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1474-runtime-authority-input-resolver"
 }
 ---
@@ -183,3 +183,8 @@ authority, privacy, lifecycle, formal, or egress contracts.
 
 - 2026-09-27T03:48:02+00:00: Recorded command exit 0; command argv SHA-256
   b9170a4cdc54c56fddaa8c182e27784034c45764409e7979e4d0968ae8115813.
+
+- 2026-09-27T03:48:30+00:00: Rust workflow 36292250053 failed only existing asb-metrics
+  kernel::tests::missing_malformed_and_unsafe_configuration_fail_closed: expected MalformedEvidence,
+  got ProbeRejected; AR-1474 code tests passed. Treat as unrelated deterministic runner-sensitive
+  failure; one approved exact-head retry.
