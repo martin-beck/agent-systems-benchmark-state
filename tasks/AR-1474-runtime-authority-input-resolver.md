@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1474-runtime-authority-input-resolver",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "56d284c2d292163e2724318b0443f53211b4f9e4",
   "claim_expires": "2026-09-27T05:42:40+00:00",
   "depends_on": [
     "AR-1362",
@@ -10,7 +10,7 @@
     "AR-1379"
   ],
   "id": "AR-1474",
-  "next_action": "Promote after validating completed dependencies, then claim the isolated worktree and implement the bounded runtime-owned resolver.",
+  "next_action": "Independent review, push signed exact head, publish PR after clippy/full gates; clippy currently pending shared lock.",
   "observed_branch": "feature/ar-1474-runtime-authority-input-resolver",
   "observed_dirty": 0,
   "observed_head": "56d284c2d292163e2724318b0443f53211b4f9e4",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Runtime-owned authority-input resolver",
-  "updated_at": "2026-09-27T03:42:40+00:00",
+  "updated_at": "2026-09-27T03:42:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1474-runtime-authority-input-resolver"
 }
 ---
@@ -138,3 +138,9 @@ authority, privacy, lifecycle, formal, or egress contracts.
   c1c0766665e5d5f432acbb347a8667905b0f9a1ae70a18d38ad7f41feb19011f.
 
 - 2026-09-27T03:42:40+00:00: Heartbeat by ar1332_record_replay_luna56.
+
+- 2026-09-27T03:42:49+00:00: Scoped signed+DCO commit 56d284c adds digest-only persisted runtime
+  authority input record, owner/generation/cancel/teardown fenced resolver, authenticated profile
+  resolver constructor, and ToolPin identity accessor. Focused asb-runtime live_service tests: 38
+  passed. cargo fmt applied. One clippy attempt was blocked by LOCK_TIMEOUT from concurrent AR-1379
+  shared lock; retry when lock is free.
