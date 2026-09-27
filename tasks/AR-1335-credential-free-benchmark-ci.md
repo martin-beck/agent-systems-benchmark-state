@@ -8,7 +8,7 @@
     "AR-1334"
   ],
   "id": "AR-1335",
-  "next_action": "Approved one-time Rust failed-job rerun for known state-root ownership race; monitor rerun and remaining post-merge workflows.",
+  "next_action": "Reconcile and doctor state; release AR-1335 done with PR, rerun, and eight post-merge workflow evidence.",
   "observed_branch": "feature/ar-1335-credential-free-benchmark-ci",
   "observed_dirty": 0,
   "observed_head": "16e4bf8405b98c229bda49f82253f21784d82d51",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the required credential-free CI stage for the complete benchmark path.",
-  "task_revision": 125,
+  "task_revision": 126,
   "title": "Credential-free CI stage for the benchmark path",
-  "updated_at": "2026-09-27T06:44:20+00:00",
+  "updated_at": "2026-09-27T06:44:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1335-credential-free-benchmark-ci"
 }
 ---
@@ -401,3 +401,12 @@ reachability.
 
 - 2026-09-27T06:44:20+00:00: Recorded command exit 0; command argv SHA-256
   bdfe2556464e78a523d12285c56ec2d68c301488b8ee7fd81fcc3a42a4da88da.
+
+- 2026-09-27T06:44:56+00:00: AR-1335 complete. PR #349 signed head
+  16e4bf8405b98c229bda49f82253f21784d82d51 merged normally as
+  8361a8ddd2cda97d9f6e03af811840bbe41b7af3 after all 13 exact-head checks SUCCESS, including
+  credential-free benchmark path. Post-merge exact-main workflows all SUCCESS: hosted 36300553958;
+  Rust 36300553949 (approved rerun SUCCESS after known state-root ownership race); repository
+  quality 36300553983; credential-free benchmark path 36300553894; AArch64 36300553906; fault
+  36300554039; Huawei 36300554023; formal 36300553987. No gate weakened; no credentials or live
+  provider used.

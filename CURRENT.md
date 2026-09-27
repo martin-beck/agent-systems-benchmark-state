@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1335](tasks/AR-1335-credential-free-benchmark-ci.md): Credential-free CI stage for the benchmark path | Add the required credential-free CI stage for the complete benchmark path. | Approved one-time Rust failed-job rerun for known state-root ownership race; monitor rerun and remaining post-merge workflows. | ar1332-record-replay-luna56 |
+| P1 | [AR-1335](tasks/AR-1335-credential-free-benchmark-ci.md): Credential-free CI stage for the benchmark path | Add the required credential-free CI stage for the complete benchmark path. | Reconcile and doctor state; release AR-1335 done with PR, rerun, and eight post-merge workflow evidence. | ar1332-record-replay-luna56 |
 
 ## Blocked
 
