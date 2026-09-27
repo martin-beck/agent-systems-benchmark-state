@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1471-control-to-runtime-chain-binding",
   "checkpoint_commit": "cb9bce4dd99194ba44f65655d7f7e2e21fc8b408",
-  "claim_expires": "2026-09-27T03:48:04+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1357",
     "AR-1359",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1471-control-to-runtime-chain-binding",
   "observed_dirty": 0,
   "observed_head": "d76d099dcaa551c14c97e89c524e83bec6facd93",
-  "owner": "ar1332_record_replay_luna56",
+  "owner": "",
   "plan": "../plans/AR-1471-control-to-runtime-chain-binding.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Bind authenticated control enrollment to runtime certificate-chain storage and live dispatch.",
-  "task_revision": 112,
+  "task_revision": 113,
   "title": "Control-to-runtime certificate-chain binding",
-  "updated_at": "2026-09-27T00:52:28+00:00",
+  "updated_at": "2026-09-27T00:53:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1471-control-to-runtime-chain-binding"
 }
 ---
@@ -351,3 +351,14 @@ authority.
   production_backend_runs_without_frontend_and_recovers_idempotency; serial isolated reproduction
   passed 1/1, approved failed-job rerun green); Emulated aarch64 portability 36283100126; Repository
   quality 36283100097.
+
+- 2026-09-27T00:53:37+00:00: Completed: PR #341 exact signed head
+  d76d099dcaa551c14c97e89c524e83bec6facd93 merged normally at
+  cb9bce4dd99194ba44f65655d7f7e2e21fc8b408 with two parents
+  (b9b7b6ee251b3a119496d3c16f65ffc971704f3a, d76d099dcaa551c14c97e89c524e83bec6facd93);
+  protected-main tree matched reviewed head. All seven exact-main workflows green: Huawei
+  36283100105, Hosted 36283100101, Fault 36283100172, Formal 36283100159, Rust 36283100128 after
+  serial reproduction of the known state-root ownership race and approved rerun, Emulated AArch64
+  36283100126, Repository quality 36283100097. Reconcile completed. doctor --live reported stale
+  generated WORKTREES.md projection; preserve as known projection note and refresh in next state
+  maintenance pass.
