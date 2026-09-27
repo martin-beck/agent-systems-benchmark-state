@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1335](tasks/AR-1335-credential-free-benchmark-ci.md): Credential-free CI stage for the benchmark path | Add the required credential-free CI stage for the complete benchmark path. | Reconcile and doctor state; release AR-1335 done with PR, rerun, and eight post-merge workflow evidence. | ar1332-record-replay-luna56 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -447,6 +441,7 @@ Never edit this file directly.
 | P1 | [AR-1331](tasks/AR-1331-runtime-replay-launch-authority.md): Runtime-owned strict-replay launch authority | Deliver the runtime-owned strict-replay launch authority required by the replay CLI contract. | Done via successor AR-1448: runtime-owned replay authority source merged and post-merge verified at f03d9e484d6ca73eacdbd5476980bf33ca737540. Preserve strict CLI-only fail-closed behavior and keep optional live capture AR-1330 separate. | - |
 | P1 | [AR-1332](tasks/AR-1332-record-live-replay-offline.md): Record-live to replay-offline workflow | Add the record-live then replay-offline end-to-end CLI workflow. | Monitor seven exact-main post-merge workflows for merge SHA ad4f96ab3f7e57916208406b2f56aa9ec4e54885; release only after all are green and post-merge verification is durable. | - |
 | P1 | [AR-1334](tasks/AR-1334-openrouter-conformance-qualification.md): OpenRouter free-model conformance and hostile qualification | Qualify the pinned OpenRouter free model under conformance and hostile fail-closed testing. | No further action; merged PR #255 and its exact qualification evidence are recorded. | - |
+| P1 | [AR-1335](tasks/AR-1335-credential-free-benchmark-ci.md): Credential-free CI stage for the benchmark path | Add the required credential-free CI stage for the complete benchmark path. | Reconcile and doctor state; release AR-1335 done with PR, rerun, and eight post-merge workflow evidence. | - |
 | P1 | [AR-1338](tasks/AR-1338-guided-asb-command-wrapper.md): Guided ASB command wrapper | Add a catalog-driven friendly wrapper for setup, selection and benchmark workflows. | Run state reconcile and live doctor, then release AR-1338 done with exact post-merge workflow evidence. | - |
 | P1 | [AR-1339](tasks/AR-1339-live-provider-egress-backend.md): Runtime-owned live-provider egress backend | Implement the runtime-owned authenticated backend for explicit live provider egress. | AR-1339 backend merged and verified at protected main; AR-1340 owns namespace-bound child handoff and AR-1329 consumes it for final live CLI integration. | - |
 | P1 | [AR-1340](tasks/AR-1340-attested-live-relay-namespace-handoff.md): Attested live-relay namespace and child handoff | Bind the live provider relay to an attested child namespace and integrate it without weakening offline or replay denial. | SECURITY HOLD: AR-1341 must add runtime-observed child namespace attestation and copied/stale/mismatch denial before AR-1340 may be released or AR-1329 advanced. Do not release on green post-merge CI alone; continue collecting post-merge evidence for merge 3406faae. | - |

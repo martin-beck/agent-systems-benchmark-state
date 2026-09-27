@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1335-credential-free-benchmark-ci",
   "checkpoint_commit": "8361a8ddd2cda97d9f6e03af811840bbe41b7af3",
-  "claim_expires": "2026-09-27T08:43:52+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1333",
     "AR-1334"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1335-credential-free-benchmark-ci",
   "observed_dirty": 0,
   "observed_head": "16e4bf8405b98c229bda49f82253f21784d82d51",
-  "owner": "ar1332-record-replay-luna56",
+  "owner": "",
   "plan": "../plans/AR-1335.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Add the required credential-free CI stage for the complete benchmark path.",
-  "task_revision": 126,
+  "task_revision": 127,
   "title": "Credential-free CI stage for the benchmark path",
-  "updated_at": "2026-09-27T06:44:56+00:00",
+  "updated_at": "2026-09-27T06:45:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1335-credential-free-benchmark-ci"
 }
 ---
@@ -410,3 +410,9 @@ reachability.
   quality 36300553983; credential-free benchmark path 36300553894; AArch64 36300553906; fault
   36300554039; Huawei 36300554023; formal 36300553987. No gate weakened; no credentials or live
   provider used.
+
+- 2026-09-27T06:45:18+00:00: AR-1335 done. Signed+DCO workflow commit
+  16e4bf8405b98c229bda49f82253f21784d82d51 merged as 8361a8ddd2cda97d9f6e03af811840bbe41b7af3. All
+  13 PR checks and all eight exact-main post-merge workflows green, including credential-free
+  benchmark path 36300553894. Rust known state-root race was preserved and approved rerun succeeded.
+  Preserve known WORKTREES.md stale projection caveat if doctor reports it.
