@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1374-cli-live-dispatch",
   "checkpoint_commit": "4ee5a4ed843c7dd7dda0b92dbe392f3787b4039f",
-  "claim_expires": "2026-09-27T02:58:51+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1373",
     "AR-1339",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1374-cli-live-dispatch",
   "observed_dirty": 0,
   "observed_head": "4ee5a4ed843c7dd7dda0b92dbe392f3787b4039f",
-  "owner": "ar1332_record_replay_luna56",
+  "owner": "",
   "plan": "../plans/AR-1374-cli-live-dispatch.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Consume authenticated runtime receipts in production asb run and sweep dispatch.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Production live-provider dispatch",
-  "updated_at": "2026-09-27T01:32:36+00:00",
+  "updated_at": "2026-09-27T01:32:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1374-cli-live-dispatch"
 }
 ---
@@ -107,3 +107,9 @@ reachability.
   already identifies this exact missing adapter; AR-1375 is the planned successor. No product
   changes made, no asb-tui/live-provider dependency introduced, and no authority fabricated. Release
   blocked with precise next action: implement AR-1375 adapter/cross-crate seam, then resume AR-1374.
+
+- 2026-09-27T01:32:45+00:00: Blocked after bounded current-main audit at 4ee5a4ed: no authenticated
+  control transport/chain source can construct the runtime-owned CLI dispatch source. Required
+  runtime bridge/bootstrap constructors remain crate-private and dead_code pending the missing
+  adapter. AR-1375 is planned for this exact cross-crate adapter. Next action: implement/promote
+  AR-1375, then resume AR-1374 and qualify local/mock run and sweep.
