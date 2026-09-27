@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1374-cli-live-dispatch",
   "checkpoint_commit": "4ee5a4ed843c7dd7dda0b92dbe392f3787b4039f",
-  "claim_expires": "2026-09-27T04:11:08+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1373",
     "AR-1339",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1374-cli-live-dispatch",
   "observed_dirty": 0,
   "observed_head": "363b21f81d5c5ab364c2e2a923bd82676feaf343",
-  "owner": "ar1374-dispatch-requal-luna56",
+  "owner": "",
   "plan": "../plans/AR-1374-cli-live-dispatch.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Consume authenticated runtime receipts in production asb run and sweep dispatch.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Production live-provider dispatch",
-  "updated_at": "2026-09-27T02:12:45+00:00",
+  "updated_at": "2026-09-27T02:14:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1374-cli-live-dispatch"
 }
 ---
@@ -140,3 +140,13 @@ reachability.
 
 - 2026-09-27T02:12:45+00:00: Recorded command exit 0; command argv SHA-256
   ff6d1fa7a7185010f75fcfafe4bdc1bdd5b9804d8c2b3e7abdd8a1b96cd81c63.
+
+- 2026-09-27T02:14:10+00:00: Current-main audit at 363b21f81d5c5ab364c2e2a923bd82676feaf343 after
+  AR-1472 merge: runtime now exposes authenticated
+  LiveProviderRuntimeDispatchSource::from_enrollment/from_handle and tests, but asb-cli only exposes
+  injected run_with_runtime_live_provider_source; crates/asb-cli/src/main.rs still calls
+  argument-only entry, and no production control/enrollment adapter invokes the source for
+  run/sweep. AR-1374 acceptance is not met; no safe product change belongs here. Existing AR-1379 is
+  the exact integration successor; AR-1380 scheduler composition is done. Next action: resume
+  AR-1379 (or create narrowly scoped replacement) to wire the adapter into production run/sweep with
+  deterministic mock/replay qualification. No asb-tui/live-provider changes.

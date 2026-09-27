@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1374](tasks/AR-1374-cli-live-dispatch.md): Production live-provider dispatch | Consume authenticated runtime receipts in production asb run and sweep dispatch. | Unblock after AR-1375 supplies the authenticated runtime control adapter and cross-crate bootstrap seam; then requalify run/sweep locally before any publication. | ar1374-dispatch-requal-luna56 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -53,6 +47,7 @@ Never edit this file directly.
 | P0 | [AR-1361](tasks/AR-1361-runtime-control-receipt-source.md): Runtime control receipt source | Provide authenticated control receipt delivery and runtime-owned dispatch composition for CLI consumers. | Promote after AR-1359 is done, then add an authenticated control receipt source and runtime-owned dispatch factory without exposing authority to CLI. | - |
 | P0 | [AR-1367](tasks/AR-1367-ar1329-production-dispatch-integration.md): AR-1329 production dispatch integration | Complete production asb run/sweep live-provider dispatch through runtime-owned authenticated acquisition and teardown. | Promote and claim this fresh AR-1329 successor, refresh an isolated worktree to protected main, audit the production run/sweep dispatch seam, and implement only through runtime-owned bridge inputs. | - |
 | P0 | [AR-1368](tasks/AR-1368-control-receipt-runtime-source.md): Control receipt runtime source | Provide the authenticated runtime-owned ControlClient receipt source required by AR-1329 production dispatch. | Promote and claim the missing runtime-owned ControlClient receipt source, then add the authenticated control operation and production enrollment materialization without exposing authority. | - |
+| P0 | [AR-1374](tasks/AR-1374-cli-live-dispatch.md): Production live-provider dispatch | Consume authenticated runtime receipts in production asb run and sweep dispatch. | Unblock after AR-1375 supplies the authenticated runtime control adapter and cross-crate bootstrap seam; then requalify run/sweep locally before any publication. | - |
 | P0 | [AR-1376](tasks/AR-1376-runtime-live-adapter.md): Runtime-owned live adapter | Materialize authenticated runtime receipts into opaque live dispatch attempts. | Audit blocker: ControlClient can issue RuntimeReceipt, but no runtime-owned authenticated chain store/source is available to validate the receipt. Do not synthesize a chain or accept caller authority. Create a successor for chain enrollment materialization before adapter implementation. | - |
 | P0 | [AR-1379](tasks/AR-1379-live-dispatch-integration.md): Production live dispatch integration | Integrate authenticated runtime live dispatch into asb run and sweep. | Promote and claim this dependency-valid production dispatch successor, refresh an isolated worktree, and wire the authenticated adapter into asb run/sweep. | - |
 | P0 | [AR-1382](tasks/AR-1382-authenticated-live-execution-source.md): Authenticated live execution source | Materialize authenticated runtime-owned live execution for asb run and sweep. | Promote and claim this dependency-valid authenticated execution-source successor, then implement runtime-owned scheduler materialization. | - |
