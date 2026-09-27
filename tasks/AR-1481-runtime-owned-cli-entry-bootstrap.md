@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1481-runtime-owned-cli-entry-bootstrap",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-27T13:59:44+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1472",
     "AR-1473",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1481-runtime-owned-cli-entry-bootstrap",
   "observed_dirty": 0,
   "observed_head": "fdc7f59f83f647ce099439b003848291e81dd3bb",
-  "owner": "ar1332-record-replay-luna56",
+  "owner": "",
   "plan": "../plans/AR-1481-runtime-owned-cli-entry-bootstrap.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Wire runtime-owned authenticated dispatch into the ordinary CLI entry path.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Runtime-owned CLI entry bootstrap",
-  "updated_at": "2026-09-27T12:00:54+00:00",
+  "updated_at": "2026-09-27T12:01:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1481-runtime-owned-cli-entry-bootstrap"
 }
 ---
@@ -43,3 +43,13 @@ provider, accept caller-built authority, or weaken fail-closed boundaries.
 
 - 2026-09-27T12:00:54+00:00: Recorded command exit 0; command argv SHA-256
   fcee275835bec8e5ec624f14558cdfed6753069b2e0edb8af59f27d90de94690.
+
+- 2026-09-27T12:01:35+00:00: AR-1481 bounded protected-main audit at
+  fdc7f59f83f647ce099439b003848291e81dd3bb: asb-cli entry() calls run(), and run() still dispatches
+  with None, None. AR-1480 provides only run_with_runtime_control_source(control, ...), not process
+  composition. asb-runtime RuntimeOwnedEnrollmentSource, materialize_handle, and
+  materialize_handle_from_resolver remain pub(crate); no control-session/bootstrap owner or public
+  runtime factory transfers an opaque source to the binary. Worktree is clean; no safe in-scope
+  product change exists without fabricating authority or accepting CLI/config inputs. AR-1374/1375
+  remain stale/circular. Next action: create a narrow control-runtime process bootstrap successor
+  supplying authenticated receipt/chain and opaque source.
