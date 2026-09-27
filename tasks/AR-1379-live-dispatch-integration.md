@@ -14,16 +14,16 @@
   "next_action": "Monitor rerun of post-merge Rust workflow and remaining six workflows at exact main SHA 1e2c591; release only after all seven terminal SUCCESS.",
   "observed_branch": "feature/ar-1379-live-dispatch-integration",
   "observed_dirty": 0,
-  "observed_head": "8e22be0fb90169a96f268079d8435dfe053e9fb9",
+  "observed_head": "1e2c59119820bc073ea4c6736782f5041a395a28",
   "owner": "ar1379-live-dispatch-luna56",
   "plan": "../plans/AR-1379-live-dispatch-integration.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate authenticated runtime live dispatch into asb run and sweep.",
-  "task_revision": 147,
+  "task_revision": 148,
   "title": "Production live dispatch integration",
-  "updated_at": "2026-09-27T03:17:55+00:00",
+  "updated_at": "2026-09-27T03:18:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1379-live-dispatch-integration"
 }
 ---
