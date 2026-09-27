@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compose authenticated runtime enrollment into opaque normal CLI run and sweep dispatch.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Runtime-control CLI composition",
-  "updated_at": "2026-09-27T11:36:35+00:00",
+  "updated_at": "2026-09-27T11:36:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1480-runtime-control-cli-composition"
 }
 ---
@@ -166,3 +166,6 @@ and never gates local qualification.
   SUCCESS. Remaining IN_PROGRESS only Emulated aarch64, TLC/Alloy recovery models,
   Policy/coverage/supply chain, Rust checks. All other required checks terminal SUCCESS; no
   failures; PR remains UNSTABLE pending these four.
+
+- 2026-09-27T11:36:46+00:00: Recorded command exit 0; command argv SHA-256
+  36858f90dedbb97237067ef509fb80b72c2131f33bbf313a3da978919a9b4667.
