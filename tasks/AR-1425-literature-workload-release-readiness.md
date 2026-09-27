@@ -3,7 +3,11 @@
   "branch": "",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1424", "AR-1417", "AR-1418"],
+  "depends_on": [
+    "AR-1424",
+    "AR-1417",
+    "AR-1418"
+  ],
   "id": "AR-1425",
   "next_action": "Promote only after AR-1424, AR-1417, and AR-1418 are released; independently verify the complete built-in plus literature workload surface and all release gates.",
   "observed_branch": "",
@@ -13,11 +17,11 @@
   "plan": "../plans/AR-1425-literature-workload-release-readiness.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Independently verify release readiness of the complete built-in and literature workload surface.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Literature workload release-readiness gate",
-  "updated_at": "2026-09-24T20:00:00+00:00",
+  "updated_at": "2026-09-27T09:17:19+00:00",
   "worktree_key": ""
 }
 ---
@@ -32,3 +36,6 @@ Exercism tracks, BigCodeBench, EvalPlus, LiveCodeBench, SWE-Lancer, SWE-rebench,
 SWE-Perf, SWE-fficiency, CORE-Bench, AgentBench, tau-bench, and AgentDojo.
 Harbor, Inspect AI, HAL, AgentOps, and HELM remain explicit non-workload
 boundaries unless separately proven.
+
+- 2026-09-27T09:17:19+00:00: AR-1424, AR-1417, and AR-1418 are done; promote independent full
+  literature workload release-readiness audit.
