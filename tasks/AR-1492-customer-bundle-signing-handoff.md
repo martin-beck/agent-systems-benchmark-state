@@ -9,7 +9,7 @@
     "AR-1491"
   ],
   "id": "AR-1492",
-  "next_action": "Run serial workspace tests/release build, independently review exact diff, then publish signed PR; do not claim customer release.",
+  "next_action": "Independent review, publish exact signed head, monitor required checks; merge only green. External signature handoff remains non-production.",
   "observed_branch": "release/ar-1492-customer-bundle-signing-handoff",
   "observed_dirty": 0,
   "observed_head": "1836d0f0bff012a9941085f61cac6fdc1cfead64",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stage a deterministic customer bundle and provide an explicit external signing handoff and verifier.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Customer bundle signing handoff",
-  "updated_at": "2026-09-27T16:19:11+00:00",
+  "updated_at": "2026-09-27T16:19:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1492-customer-bundle-signing-handoff"
 }
 ---
@@ -75,3 +75,9 @@ detached signature.
 
 - 2026-09-27T16:19:11+00:00: Recorded command exit 0; command argv SHA-256
   2dc75c71065c01bd6ae8b26b0898f48c3c4a43881e4ff64ae8d8a66daa40913b.
+
+- 2026-09-27T16:19:34+00:00: Full gates passed at 1836d0f: Python bundle tests 5/5, offline verifier
+  22/22, workspace clippy all-targets, serial cargo test workspace all-targets (green), rustdoc
+  workspace, release build, repository policy, fmt/diff/clean. prepare_signing_handoff stages
+  signed-profile metadata but intentionally emits no detached signature; handoff records external
+  SSHSIG requirements and verifier command. No customer-release claim.
