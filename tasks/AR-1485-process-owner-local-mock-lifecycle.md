@@ -11,18 +11,18 @@
   ],
   "id": "AR-1485",
   "next_action": "Promote and claim, then audit the merged owner contract and implement the provider-free owner lifecycle slice.",
-  "observed_branch": "",
-  "observed_dirty": 0,
-  "observed_head": "",
+  "observed_branch": "feature/ar-1485-process-owner-local-mock-lifecycle",
+  "observed_dirty": 1,
+  "observed_head": "eff9984fd11bec55e1e23366b3bba0bcb717826a",
   "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1485-process-owner-local-mock-lifecycle.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement runtime-owned local/mock process lifecycle and opaque-source handoff.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Process-owner local/mock lifecycle",
-  "updated_at": "2026-09-27T12:46:55+00:00",
+  "updated_at": "2026-09-27T12:47:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1485-process-owner-local-mock-lifecycle"
 }
 ---
