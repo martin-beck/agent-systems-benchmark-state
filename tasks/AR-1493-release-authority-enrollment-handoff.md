@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define and validate the external release-authority enrollment and signed-bundle verification handoff.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Release-authority enrollment handoff",
-  "updated_at": "2026-09-27T17:13:10+00:00",
+  "updated_at": "2026-09-27T17:13:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1493-release-authority-enrollment-handoff"
 }
 ---
@@ -193,3 +193,6 @@ and preserve AR-1490 as the customer-release blocker.
   36336026566 are IN_PROGRESS; Huawei 36336026608 SUCCESS.
 
 - 2026-09-27T17:13:10+00:00: Heartbeat by ar1332-record-replay-luna56.
+
+- 2026-09-27T17:13:19+00:00: Recorded command exit 0; command argv SHA-256
+  65c48537df954c87b1d88d29f6fc784ec1946325f89a10c698d249fe7fdf9686.
