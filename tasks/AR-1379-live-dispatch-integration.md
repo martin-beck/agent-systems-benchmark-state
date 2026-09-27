@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate authenticated runtime live dispatch into asb run and sweep.",
-  "task_revision": 106,
+  "task_revision": 107,
   "title": "Production live dispatch integration",
-  "updated_at": "2026-09-27T02:56:03+00:00",
+  "updated_at": "2026-09-27T02:56:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1379-live-dispatch-integration"
 }
 ---
@@ -341,3 +341,6 @@ verified through the completed gates.
   martin.beck2@gmx.de had nonmatching Signed-off-by martin.beck@huawei.com. Amended signed commit
   trailer to matching author identity; new exact head 8e22be0 pushed with force-with-lease. No
   product content changed in this metadata repair.
+
+- 2026-09-27T02:56:11+00:00: Recorded command exit 0; command argv SHA-256
+  b64b1376d1c92a38b9508c4f4d91d56ed1f6e484924837d9c8921a9b27304a0b.
