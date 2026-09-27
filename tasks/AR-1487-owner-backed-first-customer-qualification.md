@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the owner-backed credential-free local/mock/replay first-customer journey.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Owner-backed first-customer qualification",
-  "updated_at": "2026-09-27T14:19:29+00:00",
+  "updated_at": "2026-09-27T14:20:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1487-owner-backed-qualification"
 }
 ---
@@ -193,3 +193,6 @@ runtime-owned CLI; it excludes live providers and asb-tui.
 - 2026-09-27T14:19:29+00:00: PR #367 unchanged exact head and UNSTABLE pending. TLC/Alloy
   transitioned to SUCCESS. Remaining IN_PROGRESS: Emulated aarch64, Policy/coverage/supply chain,
   Rust checks. All other named checks terminal SUCCESS.
+
+- 2026-09-27T14:20:22+00:00: Recorded command exit 0; command argv SHA-256
+  104e8ca5470cfb77bb7507c3b4a36b94f512b90759b0e0ceaa639cde3eb5f6b9.
