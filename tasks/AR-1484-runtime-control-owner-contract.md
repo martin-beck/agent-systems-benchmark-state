@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define stable runtime/control process-owner lifecycle and opaque handoff contract.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Runtime/control process-owner contract",
-  "updated_at": "2026-09-27T12:29:18+00:00",
+  "updated_at": "2026-09-27T12:30:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1484-runtime-control-owner-contract"
 }
 ---
@@ -141,3 +141,6 @@ authority.
 - 2026-09-27T12:29:18+00:00: PR #358 exact-head poll: Rust and Emulated aarch64 completed SUCCESS.
   12/13 checks terminal-success; only Policy, coverage, and supply chain remains IN_PROGRESS. Exact
   head 7ce533ea9b0524c5b317cc2db8fad0aff8ecedc3 unchanged; no failures.
+
+- 2026-09-27T12:30:12+00:00: Recorded command exit 0; command argv SHA-256
+  6465c093ae36ec8adb4cbfff3a4cc0345e175a4ac1370aa32e02509c1ccade45.
