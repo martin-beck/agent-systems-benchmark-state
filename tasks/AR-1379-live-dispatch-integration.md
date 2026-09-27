@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1379-live-dispatch-integration",
   "checkpoint_commit": "1e2c59119820bc073ea4c6736782f5041a395a28",
-  "claim_expires": "2026-09-27T04:39:35+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1378",
     "AR-1377",
@@ -15,15 +15,15 @@
   "observed_branch": "feature/ar-1379-live-dispatch-integration",
   "observed_dirty": 0,
   "observed_head": "1e2c59119820bc073ea4c6736782f5041a395a28",
-  "owner": "ar1379-live-dispatch-luna56",
+  "owner": "",
   "plan": "../plans/AR-1379-live-dispatch-integration.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Integrate authenticated runtime live dispatch into asb run and sweep.",
-  "task_revision": 148,
+  "task_revision": 149,
   "title": "Production live dispatch integration",
-  "updated_at": "2026-09-27T03:18:07+00:00",
+  "updated_at": "2026-09-27T03:19:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1379-live-dispatch-integration"
 }
 ---
@@ -475,3 +475,12 @@ verified through the completed gates.
 
 - 2026-09-27T03:17:55+00:00: Recorded command exit 0; command argv SHA-256
   91c481d4f1a058d3265e9102b0531d1eefe09cb45e5c1807ecda5e8c8b6b67d5.
+
+- 2026-09-27T03:19:57+00:00: Post-merge exact main SHA 1e2c59119820bc073ea4c6736782f5041a395a28
+  verified with all seven terminal-success workflows: Emulated aarch64 36290395005; Rust rerun
+  36290394972 passed after initial known asb-metrics fixture race; Fault assurance 36290395002;
+  Formal assurance 36290395029; Hosted portability/native qualification 36290394979; Huawei MIT
+  headers 36290394999; Repository quality 36290395006. PR #344 merged 2026-09-27T03:05:20Z.
+  Reconcile committed/pushed. doctor --live reports WORKTREES.md stale only because unrelated
+  central checkout is dirty/stale; task worktree and WORKTREES entry are clean/current at exact main
+  SHA. Failure preserved, not waived.
