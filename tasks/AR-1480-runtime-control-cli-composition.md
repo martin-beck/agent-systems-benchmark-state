@@ -10,7 +10,7 @@
   "id": "AR-1480",
   "next_action": "Run focused CLI/runtime tests and full gates for opaque runtime-control composition.",
   "observed_branch": "feature/ar-1480-runtime-control-cli-composition",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "5e577e6a4b278fc79dc8b695cd6b3723d04cc609",
   "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1480-runtime-control-cli-composition.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compose authenticated runtime enrollment into opaque normal CLI run and sweep dispatch.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Runtime-control CLI composition",
-  "updated_at": "2026-09-27T11:21:04+00:00",
+  "updated_at": "2026-09-27T11:21:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1480-runtime-control-cli-composition"
 }
 ---
