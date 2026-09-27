@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1420](tasks/AR-1420-literature-workload-campaign-integration.md): Literature workload campaign integration | Run the complete qualified literature workload matrix beside built-in software-engineering workloads. | Merge PR #350 normally; verify merge SHA and all exact-main post-merge workflows, then release AR-1420 done. | ar1332-record-replay-luna56 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -477,6 +471,7 @@ Never edit this file directly.
 | P1 | [AR-1417](tasks/AR-1417-interactive-stateful-literature-workloads.md): Interactive stateful literature workloads | Add selectable interactive and stateful literature workloads beside built-in software-engineering fixtures. | Keep open: protected-main Repository quality run 36048870322 failed because merge tree 5ddac12 differs from reviewed topic tree 666043f (base a2a6414 vs 0dcc717); await coordinator exact-main requalification or successor repair, never weaken gate. | - |
 | P1 | [AR-1418](tasks/AR-1418-tool-use-reliability-safety-workloads.md): Tool-use reliability and safety workloads | Add selectable tool-use reliability and safety workloads from the literature with separate metrics. | Release: implementation is already merged in PR #300 at c2fe732b from 6f93076; focused interactive tests, all asb-workloads targets, and clippy -D warnings pass on exact current main 0dcc717. Preserve historical exact-head CI evidence and release without duplicate PR. | - |
 | P1 | [AR-1419](tasks/AR-1419-literature-framework-boundaries.md): Literature framework boundaries | Close literature documentation gaps and enforce benchmark-versus-framework selection boundaries. | Independent review, PR, exact-head CI, merge and seven post-merge assurance workflows; then release AR-1419. | - |
+| P1 | [AR-1420](tasks/AR-1420-literature-workload-campaign-integration.md): Literature workload campaign integration | Run the complete qualified literature workload matrix beside built-in software-engineering workloads. | Merge PR #350 normally; verify merge SHA and all exact-main post-merge workflows, then release AR-1420 done. | - |
 | P1 | [AR-1422](tasks/AR-1422-stale-agent-catalog-pr-cleanup.md): Stale agent-catalog PR cleanup | Close stale conflicting agent-catalog PR #306 through durable coordinator evidence. | Closure evidence complete. Re-run doctor --live after concurrent state-worker AR-1421 changes settle; then release AR-1422 done. Do not modify AR-1421 files. | - |
 | P1 | [AR-1423](tasks/AR-1423-literature-docs-registry-reconciliation.md): Exhaustive literature docs-to-registry reconciliation | Reconcile all literature benchmark mentions with strict registry identities and framework boundaries. | Publish PR from exact clean head, obtain independent review and required CI, then merge and complete post-merge assurance workflows. | - |
 | P1 | [AR-1430](tasks/AR-1430-literature-workload-catalog-gap-closure.md): Literature workload catalog gap closure | Close documented literature workload identity and selector gaps without enabling live providers or external acquisition. | Run full local quality gates, publish exact-head PR, obtain independent review, merge, monitor seven post-merge workflows, then release. | - |
