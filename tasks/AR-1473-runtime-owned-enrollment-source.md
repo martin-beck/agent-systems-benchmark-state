@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1473-runtime-owned-enrollment-source",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "4a29c3431d236cc9766c47408dab8de998a31a3b",
   "claim_expires": "2026-09-27T12:43:36+00:00",
   "depends_on": [
     "AR-1471",
@@ -9,7 +9,7 @@
     "AR-1379"
   ],
   "id": "AR-1473",
-  "next_action": "Implement runtime-owned enrollment source over existing authenticated profile/resolver; add hostile local tests, then focused/full gates.",
+  "next_action": "Run full workspace/docs/privacy gates and independent review; publish signed exact head if clean.",
   "observed_branch": "feature/ar-1473-runtime-owned-enrollment-source",
   "observed_dirty": 0,
   "observed_head": "4a29c3431d236cc9766c47408dab8de998a31a3b",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve authenticated control enrollment into an opaque runtime-owned source for normal ASB run and sweep.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Runtime-owned authenticated enrollment source",
-  "updated_at": "2026-09-27T10:47:25+00:00",
+  "updated_at": "2026-09-27T10:47:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1473-runtime-owned-enrollment-source"
 }
 ---
@@ -95,3 +95,13 @@ the existing fail-closed authority boundaries.
 
 - 2026-09-27T10:47:12+00:00: Recorded command exit 0; command argv SHA-256
   b91d1465ef337c801835bcff5ebce9d57e4bd823efb2d732bf0528eefeb788ea.
+
+- 2026-09-27T10:47:39+00:00: Implemented smallest AR-1473 seam in
+  crates/asb-runtime/src/live_service.rs: private RuntimeOwnedEnrollmentSource implements
+  LiveProviderEnrollment over authenticated LiveProviderRuntimeAuthorityProfile +
+  RuntimeAuthorityInputResolver, revalidating owner/generation/cancel/teardown before minting opaque
+  handles. Added positive mint/revocation-negative and wrong-owner-negative tests. Focused tests and
+  full 139-test asb-runtime suite pass (138 passed, 1 ignored); fmt and runtime clippy pass. Initial
+  full runtime clippy exit 101 was new-source dead-code lint; fixed with scoped allowance matching
+  existing private resolver. Signed SSH+DCO commit 4a29c3431d236cc9766c47408dab8de998a31a3b. No
+  asb-tui/live-provider authority changes.
