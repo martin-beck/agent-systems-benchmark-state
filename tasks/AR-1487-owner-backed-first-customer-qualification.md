@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1487-owner-backed-first-customer-qualification",
   "checkpoint_commit": "0dc766a481788783a8748a5c1f1e24835c1174c3",
-  "claim_expires": "2026-09-27T16:31:54+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1446",
     "AR-1450",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1487-owner-backed-first-customer-qualification",
   "observed_dirty": 0,
   "observed_head": "4b94dcd7be505ebb5b34580db5023b95de7db8fd",
-  "owner": "ar1332-record-replay-luna56",
+  "owner": "",
   "plan": "../plans/AR-1487-owner-backed-first-customer-qualification.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Qualify the owner-backed credential-free local/mock/replay first-customer journey.",
-  "task_revision": 83,
+  "task_revision": 84,
   "title": "Owner-backed first-customer qualification",
-  "updated_at": "2026-09-27T14:36:08+00:00",
+  "updated_at": "2026-09-27T14:36:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1487-owner-backed-qualification"
 }
 ---
@@ -290,3 +290,7 @@ runtime-owned CLI; it excludes live providers and asb-tui.
   merge tree 982941f1. All eight exact-main workflows SUCCESS: Huawei 36325841010, credential-free
   36325841041, hosted 36325841050, fault 36325841097, formal 36325841072, Rust 36325841109,
   repository quality 36325841032, emulated AArch64 36325841029.
+
+- 2026-09-27T14:36:10+00:00: AR-1487 complete: owner-backed credential-free local/mock run+sweep,
+  strict offline replay/recovery/receipt/teardown qualification docs and negative tests merged at
+  0dc766a4; PR #367 and all 13 PR checks plus eight post-merge workflows green.
