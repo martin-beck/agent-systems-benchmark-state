@@ -11,17 +11,17 @@
   "id": "AR-1486",
   "next_action": "Rerun full workspace/docs/privacy/release/policy/clean gates after owner-backed local mock execution fix and provenance refresh.",
   "observed_branch": "feature/ar-1486-runtime-owner-cli-entry-wiring",
-  "observed_dirty": 4,
-  "observed_head": "a6f43eb2a651fcfa3c0abe3b9e4dddaea78b6a80",
+  "observed_dirty": 0,
+  "observed_head": "a5f9ad27b967371511b0981aad29d3aa65a7fcab",
   "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1486-runtime-owner-cli-entry-wiring.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire the runtime-owned local/mock process owner into ordinary CLI run and sweep.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Runtime-owner CLI entry wiring",
-  "updated_at": "2026-09-27T13:34:45+00:00",
+  "updated_at": "2026-09-27T13:34:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1486-cli-owner-wiring"
 }
 ---
