@@ -17,11 +17,11 @@
   "plan": "../plans/AR-1470-runtime-certificate-chain-enrollment.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Materialize runtime-owned certificate-chain enrollment authority for live dispatch.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Runtime certificate-chain enrollment materialization",
-  "updated_at": "2026-09-27T00:11:28+00:00",
+  "updated_at": "2026-09-27T03:20:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1470-runtime-certificate-chain-enrollment"
 }
 ---
@@ -79,3 +79,6 @@ actually consumed by the downstream adapters.
   prohibited. Do not fabricate authority. Next action: coordinator creates/promotes a narrow
   successor that binds control-owned enrollment to runtime chain storage and normal live dispatch.
   handoffctl has no task-create command, so no successor file was fabricated.
+
+- 2026-09-27T03:20:24+00:00: AR-1471 is durably done; re-audit AR-1470 against protected main
+  1e2c5911 for the remaining runtime-owned enrollment-source gap.
