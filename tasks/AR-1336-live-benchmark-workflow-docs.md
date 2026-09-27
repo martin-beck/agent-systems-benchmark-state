@@ -14,11 +14,11 @@
   "plan": "../plans/AR-1336.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Document the live benchmark workflow and publish the supported agent and provider matrix.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Live benchmark workflow documentation and support matrix",
-  "updated_at": "2026-09-22T13:39:37+00:00",
+  "updated_at": "2026-09-27T09:30:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1336-live-benchmark-workflow-docs"
 }
 ---
@@ -45,3 +45,6 @@ and teardown, and fail-closed denial of unapproved external traffic remain requi
 contracts. Existing live-provider dependency edges describe production integration
 ordering only and must not be used to block local qualification or to claim external
 reachability.
+
+- 2026-09-27T09:30:32+00:00: AR-1333, AR-1334, and AR-1335 are done; promote documentation/support
+  matrix with optional live-provider boundary.
