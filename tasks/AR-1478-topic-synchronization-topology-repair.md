@@ -12,16 +12,16 @@
   "next_action": "Promote after validating completed dependencies, inspect exact merge ancestry, and apply only the smallest policy-compliant topology repair.",
   "observed_branch": "feature/ar-1478-topic-synchronization-topology-repair",
   "observed_dirty": 0,
-  "observed_head": "d0939e229154d8c19302b566770bd4cd1ea858a2",
+  "observed_head": "d1456b88d511d9c5ccd8ef4e693713ca706d9949",
   "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1478-topic-synchronization-topology-repair.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair protected-main topic synchronization topology after AR-1477 merge policy failure.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Repair topic synchronization topology",
-  "updated_at": "2026-09-27T05:37:20+00:00",
+  "updated_at": "2026-09-27T05:37:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1478-topic-synchronization-topology-repair"
 }
 ---
