@@ -10,13 +10,13 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #354 | `feature/ar-1336-live-benchmark-workflow-docs@312f811b3a77` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | docs: document end-to-end benchmark workflow |
+| #354 | `feature/ar-1336-live-benchmark-workflow-docs@312f811b3a77` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | docs: document end-to-end benchmark workflow |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36310242581 | `312f811b3a77` | pull_request | Credential-free benchmark path | in_progress:- |
+| 36310242581 | `312f811b3a77` | pull_request | Credential-free benchmark path | completed:success |
 | 36310242498 | `312f811b3a77` | pull_request | Fault assurance | in_progress:- |
 | 36310242485 | `312f811b3a77` | pull_request | Rust verification | in_progress:- |
 | 36310242473 | `312f811b3a77` | pull_request | Agent Workflow Quality shadow | completed:success |
