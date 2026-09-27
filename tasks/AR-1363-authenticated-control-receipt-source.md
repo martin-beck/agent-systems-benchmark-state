@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1363-authenticated-control-receipt-source",
   "checkpoint_commit": "4ee5a4ed843c7dd7dda0b92dbe392f3787b4039f",
-  "claim_expires": "2026-09-27T03:24:10+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1362"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1363-authenticated-control-receipt-source",
   "observed_dirty": 0,
   "observed_head": "29d27a91ad6a4eff455f62ae25eb952fec45fcf5",
-  "owner": "ar1332_record_replay_luna56",
+  "owner": "",
   "plan": "../plans/AR-1363-authenticated-control-receipt-source.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Deliver authenticated runtime authority receipts through the versioned control boundary without exposing secrets or caller authority.",
-  "task_revision": 101,
+  "task_revision": 102,
   "title": "Authenticated control receipt source",
-  "updated_at": "2026-09-27T01:25:38+00:00",
+  "updated_at": "2026-09-27T01:25:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1363-authenticated-control-receipt-source"
 }
 ---
@@ -354,3 +354,9 @@ reachability.
   36285156729, Hosted 36285156725, Fault 36285156628, Formal 36285156746, Rust 36285156661 after
   approved rerun/serial reproduction of known state-root ownership race, Emulated AArch64
   36285156656, Repository quality 36285156701. No asb-tui/live-provider changes.
+
+- 2026-09-27T01:25:46+00:00: Released done after PR #342 merge 4ee5a4ed, exact protected-main
+  tree/parent verification, and coordinator-authoritative green seven-workflow post-merge evidence:
+  Huawei 36285156729; Hosted 36285156725; Fault 36285156628; Formal 36285156746; Rust 36285156661
+  after approved rerun and serial race reproduction; Emulated AArch64 36285156656; Repository
+  quality 36285156701. Exact reviewed head was 29d27a91. No asb-tui/live-provider changes.

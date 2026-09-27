@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1363](tasks/AR-1363-authenticated-control-receipt-source.md): Authenticated control receipt source | Deliver authenticated runtime authority receipts through the versioned control boundary without exposing secrets or caller authority. | Release completed AR-1363 after exact protected-main verification; no further product action. | ar1332_record_replay_luna56 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -275,6 +269,7 @@ Never edit this file directly.
 | P0 | [AR-1357](tasks/AR-1357-runtime-attested-enrollment-record.md): Runtime-attested enrollment record transport | Transport authenticated enrollment records into runtime without exposing authority to the CLI. | PR #265 merged at 7862e3bb90a777e86e30d23b6af9639935671efe. Monitor all seven post-merge workflows at exact merge SHA; release AR-1357 only after every workflow terminal-success. | - |
 | P0 | [AR-1359](tasks/AR-1359-runtime-control-bridge.md): Runtime/control enrollment bridge | Bridge authenticated control enrollment into runtime-owned opaque live authority. | PR #266 exact head f511910 is published. Monitor every exact-head required check, repair any failures without weakening gates, then merge only after all green and independent review. | - |
 | P0 | [AR-1362](tasks/AR-1362-runtime-authority-enrollment-store.md): Runtime authority enrollment store | Persist authenticated runtime authority enrollment required for receipt issuance without exposing secrets. | Run independent review, publish exact-head PR from clean signed head 7bf91f5, monitor required CI, repair failures without weakening gates, then merge only green and verify all seven post-merge workflows. | - |
+| P0 | [AR-1363](tasks/AR-1363-authenticated-control-receipt-source.md): Authenticated control receipt source | Deliver authenticated runtime authority receipts through the versioned control boundary without exposing secrets or caller authority. | Release completed AR-1363 after exact protected-main verification; no further product action. | - |
 | P0 | [AR-1364](tasks/AR-1364-authenticated-chain-enrollment.md): Authenticated chain enrollment | Materialize authenticated certificate-chain authority for control-owned runtime receipt issuance. | Run full applicable gates, independently review the chain-enrollment boundary, then publish a clean exact-head PR and monitor all required checks. | - |
 | P0 | [AR-1365](tasks/AR-1365-control-receipt-source-integration.md): Control receipt source integration | Integrate authenticated chain and authority enrollment into the versioned control receipt source. | PR #269 merged as aa537f6a07ac3476a8c4d6443a8df3c42a1aebc1. Monitor seven post-merge workflows for exact merge SHA; release only after every workflow is terminal success. | - |
 | P0 | [AR-1366](tasks/AR-1366-runtime-dispatch-consumer.md): Runtime-owned dispatch consumer | Connect runtime-owned authenticated receipt consumption to the benchmark dispatch path without exposing authority to CLI callers. | PR #270 merged as 0c6dc52e1f4aa5854f73081711dbd9a5bc1a5d7c. Monitor seven post-merge workflows for exact merge SHA; release only after every workflow is terminal success. | - |
