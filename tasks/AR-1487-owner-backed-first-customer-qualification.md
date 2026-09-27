@@ -10,7 +10,7 @@
     "AR-1486"
   ],
   "id": "AR-1487",
-  "next_action": "Promote and claim, then qualify the owner-backed credential-free local/mock/replay journey on current protected main.",
+  "next_action": "Run runtime replay/recovery focused gates, then full workspace/docs/privacy/release gates; independently review and commit.",
   "observed_branch": "feature/ar-1487-owner-backed-first-customer-qualification",
   "observed_dirty": 2,
   "observed_head": "79f88d3ca03120fd7d69f67cb292c96051a5e770",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the owner-backed credential-free local/mock/replay first-customer journey.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Owner-backed first-customer qualification",
-  "updated_at": "2026-09-27T14:03:45+00:00",
+  "updated_at": "2026-09-27T14:04:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1487-owner-backed-qualification"
 }
 ---
@@ -72,3 +72,10 @@ runtime-owned CLI; it excludes live providers and asb-tui.
 
 - 2026-09-27T14:03:45+00:00: Recorded command exit 0; command argv SHA-256
   d2999ab926ff51f407baca509a55795d4c1d158f43d41b7ae60abbf4db80427e.
+
+- 2026-09-27T14:04:19+00:00: Focused AR-1487 owner-backed CLI tests: initial exit 101 was
+  test-assumption failure (success emits bounded stderr progress; malformed entry returns validation
+  exit 3 with JSON error, not exit 2/no output). Corrected assertions; cargo fmt and cargo test
+  --locked -p asb-cli runtime_local_mock_owner now pass 4/4. Added bounded/private-output and
+  unqualified-entry negative coverage plus docs/workflows/owner-backed-first-customer.md. No live
+  provider, network, credentials, or asb-tui.
