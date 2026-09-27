@@ -11,7 +11,7 @@
   "id": "AR-1486",
   "next_action": "Promote and claim, then audit the protected-main CLI entry path and implement the bounded runtime-owner wiring slice.",
   "observed_branch": "feature/ar-1486-runtime-owner-cli-entry-wiring",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "a6f43eb2a651fcfa3c0abe3b9e4dddaea78b6a80",
   "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1486-runtime-owner-cli-entry-wiring.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire the runtime-owned local/mock process owner into ordinary CLI run and sweep.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Runtime-owner CLI entry wiring",
-  "updated_at": "2026-09-27T13:20:31+00:00",
+  "updated_at": "2026-09-27T13:20:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1486-cli-owner-wiring"
 }
 ---
