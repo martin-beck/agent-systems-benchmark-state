@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1475-asb-metrics-evidence-fixture-repair",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-27T05:55:10+00:00",
+  "claim_expires": "2026-09-27T06:00:37+00:00",
   "depends_on": [
     "AR-1200",
     "AR-1379",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the deterministic ProbeRejected versus MalformedEvidence fixture failure blocking PR #345.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Repair asb-metrics evidence fixture classification",
-  "updated_at": "2026-09-27T04:00:34+00:00",
+  "updated_at": "2026-09-27T04:00:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1475-asb-metrics-evidence-fixture-repair"
 }
 ---
@@ -78,3 +78,5 @@ classification or fixture behavior before changing code.
 
 - 2026-09-27T04:00:22+00:00: Recorded command exit 0; command argv SHA-256
   d1839ee6c0e556385ce24834f8d7ef08fc30d8e75e3fff8f28ab9d914abf1149.
+
+- 2026-09-27T04:00:37+00:00: Heartbeat by ar1332-record-replay-luna56.
