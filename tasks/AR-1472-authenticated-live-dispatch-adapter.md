@@ -8,7 +8,7 @@
     "AR-1363"
   ],
   "id": "AR-1472",
-  "next_action": "Push exact signed head, open PR, and monitor required exact-head checks; merge only when all required checks are green.",
+  "next_action": "Monitor PR #343 exact-head required checks at 5f785dab598f24c2221272cf53b9366a10625413; merge only after every required check is green.",
   "observed_branch": "feature/ar-1472-authenticated-live-dispatch-adapter",
   "observed_dirty": 0,
   "observed_head": "5f785dab598f24c2221272cf53b9366a10625413",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect authenticated control receipts to runtime-owned CLI live dispatch without a dependency cycle.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Authenticated live-dispatch adapter",
-  "updated_at": "2026-09-27T01:50:15+00:00",
+  "updated_at": "2026-09-27T01:50:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1472-authenticated-live-dispatch-adapter"
 }
 ---
@@ -164,3 +164,9 @@ authority. Mandatory qualification is deterministic local/mock or replay.
 
 - 2026-09-27T01:50:15+00:00: Recorded command exit 0; command argv SHA-256
   aec67357fc2b1aa1bad879d03445f2194dd1098f92223a186a40687402ef3d77.
+
+- 2026-09-27T01:50:40+00:00: Opened PR #343 from exact signed head
+  5f785dab598f24c2221272cf53b9366a10625413 against base 4ee5a4ed843c7dd7dda0b92dbe392f3787b4039f.
+  Initial rollup: Huawei MIT headers SUCCESS, AWQ shadow SUCCESS; Rust, Repository quality, Hosted
+  portability, Fault assurance, Formal assurance, Emulated aarch64 are IN_PROGRESS; mergeStateStatus
+  UNSTABLE. No merge attempted.
