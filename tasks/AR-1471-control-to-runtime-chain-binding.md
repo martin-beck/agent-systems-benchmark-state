@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1471-control-to-runtime-chain-binding",
   "checkpoint_commit": "d76d099dcaa551c14c97e89c524e83bec6facd93",
-  "claim_expires": "2026-09-27T03:32:46+00:00",
+  "claim_expires": "2026-09-27T03:34:07+00:00",
   "depends_on": [
     "AR-1357",
     "AR-1359",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind authenticated control enrollment to runtime certificate-chain storage and live dispatch.",
-  "task_revision": 56,
+  "task_revision": 57,
   "title": "Control-to-runtime certificate-chain binding",
-  "updated_at": "2026-09-27T00:33:48+00:00",
+  "updated_at": "2026-09-27T00:34:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1471-control-to-runtime-chain-binding"
 }
 ---
@@ -179,3 +179,5 @@ authority.
 
 - 2026-09-27T00:33:48+00:00: Recorded command exit 0; command argv SHA-256
   059e791c96f2b8c0f950ecbf58ff521c20b24dc792dcd031e92a99e3f8ed1c2f.
+
+- 2026-09-27T00:34:07+00:00: Heartbeat by ar1332_record_replay_luna56.
