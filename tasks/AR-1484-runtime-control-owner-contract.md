@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define stable runtime/control process-owner lifecycle and opaque handoff contract.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Runtime/control process-owner contract",
-  "updated_at": "2026-09-27T12:27:43+00:00",
+  "updated_at": "2026-09-27T12:28:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1484-runtime-control-owner-contract"
 }
 ---
@@ -133,4 +133,7 @@ authority.
 - 2026-09-27T12:26:42+00:00: Heartbeat by ar1332-record-replay-luna56.
 
 - 2026-09-27T12:27:43+00:00: Recorded command exit 0; command argv SHA-256
+  6465c093ae36ec8adb4cbfff3a4cc0345e175a4ac1370aa32e02509c1ccade45.
+
+- 2026-09-27T12:28:59+00:00: Recorded command exit 0; command argv SHA-256
   6465c093ae36ec8adb4cbfff3a4cc0345e175a4ac1370aa32e02509c1ccade45.
