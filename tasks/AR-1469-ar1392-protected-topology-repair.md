@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the single-parent protected merge for AR-1392 without changing its reviewed implementation.",
-  "task_revision": 82,
+  "task_revision": 83,
   "title": "AR-1392 protected-main topology repair",
-  "updated_at": "2026-09-27T00:00:02+00:00",
+  "updated_at": "2026-09-27T00:00:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1469-ar1392-protected-topology-repair"
 }
 ---
@@ -257,3 +257,6 @@ green exact-head checks; the failed squash topology remains part of the record.
   a7e81b89e906b38cad6455a453805e9934984252780f78df0de40b728f023bf6.
 
 - 2026-09-27T00:00:02+00:00: Heartbeat by ar1332_record_replay_luna56.
+
+- 2026-09-27T00:00:10+00:00: Recorded command exit 0; command argv SHA-256
+  a7e81b89e906b38cad6455a453805e9934984252780f78df0de40b728f023bf6.
