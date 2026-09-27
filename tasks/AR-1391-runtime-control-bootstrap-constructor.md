@@ -24,9 +24,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize authenticated runtime live authority into an opaque source without caller injection.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Runtime control bootstrap constructor",
-  "updated_at": "2026-09-27T02:43:05+00:00",
+  "updated_at": "2026-09-27T02:43:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1391-runtime-control-bootstrap-constructor"
 }
 ---
@@ -76,3 +76,6 @@ reachability.
 
 - 2026-09-27T02:43:05+00:00: Recorded command exit 0; command argv SHA-256
   9c86c49433e8910ce448b09860062c402216cfc3a7a8bab60a0474bcb3073a8e.
+
+- 2026-09-27T02:43:20+00:00: Recorded command exit 0; command argv SHA-256
+  97149e1fed9062e061094f8d0a0d921c8b355d8216f566ba7202ede70be3c2aa.
