@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #357 | `feature/ar-1480-runtime-control-cli-composition@440a06427d6e` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): compose runtime control dispatch source |
+| #357 | `feature/ar-1480-runtime-control-cli-composition@440a06427d6e` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): compose runtime control dispatch source |
 
 ## Recent workflows
 
@@ -23,7 +23,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36316133589 | `440a06427d6e` | pull_request | Huawei MIT source headers | completed:success |
 | 36316133567 | `440a06427d6e` | pull_request | Hosted portability and native qualification | completed:success |
 | 36316133558 | `440a06427d6e` | pull_request | Repository quality | in_progress:- |
-| 36316133548 | `440a06427d6e` | pull_request | Rust verification | in_progress:- |
+| 36316133548 | `440a06427d6e` | pull_request | Rust verification | completed:success |
 | 36316133512 | `440a06427d6e` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 36314444973 | `59323f41ed2d` | push | Huawei MIT source headers | completed:success |
 | 36314444956 | `59323f41ed2d` | push | Fault assurance | completed:success |
