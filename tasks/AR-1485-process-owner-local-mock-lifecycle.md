@@ -10,7 +10,7 @@
     "AR-1484"
   ],
   "id": "AR-1485",
-  "next_action": "Monitor eight exact-main post-merge workflows for merge a6f43eb; release done only after all terminal SUCCESS.",
+  "next_action": "Release complete; retain exact merge and eight workflow evidence.",
   "observed_branch": "feature/ar-1485-process-owner-local-mock-lifecycle",
   "observed_dirty": 0,
   "observed_head": "f01b7b11b5dcd0152482f26663fcc36c98da7cbe",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement runtime-owned local/mock process lifecycle and opaque-source handoff.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Process-owner local/mock lifecycle",
-  "updated_at": "2026-09-27T13:12:38+00:00",
+  "updated_at": "2026-09-27T13:12:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1485-process-owner-local-mock-lifecycle"
 }
 ---
@@ -159,3 +159,9 @@ authority.
 
 - 2026-09-27T13:12:38+00:00: Recorded command exit 0; command argv SHA-256
   3d5a242dc328f0e6db47c9dd1130badee1713b08f3d30747c15b346c5c698c19.
+
+- 2026-09-27T13:12:58+00:00: Post-merge verification complete for exact main
+  a6f43eb2a651fcfa3c0abe3b9e4dddaea78b6a80: Huawei MIT 36321084255 SUCCESS; credential-free
+  36321084452 SUCCESS; hosted portability/native 36321084193 SUCCESS; fault 36321084287 SUCCESS;
+  formal 36321084289 SUCCESS; emulated AArch64 36321084195 SUCCESS; Rust 36321084324 SUCCESS;
+  repository quality 36321084352 SUCCESS. All eight terminal green.
