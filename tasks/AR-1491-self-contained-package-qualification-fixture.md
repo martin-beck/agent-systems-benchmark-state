@@ -2,7 +2,7 @@
 {
   "branch": "qualification/ar-1491-self-contained-package-qualification-fixture",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-27T17:42:47+00:00",
   "depends_on": [
     "AR-1461",
     "AR-1462",
@@ -14,15 +14,15 @@
   "observed_branch": "qualification/ar-1491-self-contained-package-qualification-fixture",
   "observed_dirty": 0,
   "observed_head": "b048fef92f4bdb4eedd5379d645f4288a4b6ab20",
-  "owner": "",
+  "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1491-self-contained-package-qualification-fixture.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Add a self-contained non-production package qualification fixture using the offline verifier test-key pattern.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Self-contained package qualification fixture",
-  "updated_at": "2026-09-27T15:42:45+00:00",
+  "updated_at": "2026-09-27T15:42:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1491-self-contained-package-qualification-fixture"
 }
 ---
@@ -43,3 +43,5 @@ No live-provider or release-signing input may be fabricated.
 
 - 2026-09-27T15:42:45+00:00: Dependencies complete; deterministic non-production test-key fixture
   successor for missing external package inputs.
+
+- 2026-09-27T15:42:47+00:00: Claimed by ar1332-record-replay-luna56.

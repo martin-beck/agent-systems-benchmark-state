@@ -164,11 +164,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1491](../tasks/AR-1491-self-contained-package-qualification-fixture.md): Self-contained package qualification fixture | Unclaimed | Add a self-contained non-production package qualification fixture using the offline verifier test-key pattern. | Promote and claim, then implement the non-production signed-test-key package qualification fixture and local/mock/replay harness. |
+| P0 | [AR-1491](../tasks/AR-1491-self-contained-package-qualification-fixture.md): Self-contained package qualification fixture | ar1332-record-replay-luna56 | Add a self-contained non-production package qualification fixture using the offline verifier test-key pattern. | Promote and claim, then implement the non-production signed-test-key package qualification fixture and local/mock/replay harness. |
 
 ### Blocked (74)
 
