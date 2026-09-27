@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compose authenticated runtime enrollment into opaque normal CLI run and sweep dispatch.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Runtime-control CLI composition",
-  "updated_at": "2026-09-27T11:29:59+00:00",
+  "updated_at": "2026-09-27T11:30:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1480-runtime-control-cli-composition"
 }
 ---
@@ -103,3 +103,6 @@ and never gates local qualification.
   docs/workflows/live-benchmark.md, docs/examples/asb-cli-workflow-v1.provenance.json); git diff
   --check passed. No product/test failure. Next action is run all substantive gates, then commit and
   re-run clean-tree gate.
+
+- 2026-09-27T11:30:53+00:00: Recorded command exit 0; command argv SHA-256
+  d6ed271cd6406f5cd02bcbd13ceedf92e245ea54caa56c28331cc3096e6b4a73.
