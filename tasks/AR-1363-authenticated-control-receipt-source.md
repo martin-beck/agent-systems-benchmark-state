@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Deliver authenticated runtime authority receipts through the versioned control boundary without exposing secrets or caller authority.",
-  "task_revision": 75,
+  "task_revision": 76,
   "title": "Authenticated control receipt source",
-  "updated_at": "2026-09-27T01:17:26+00:00",
+  "updated_at": "2026-09-27T01:17:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1363-authenticated-control-receipt-source"
 }
 ---
@@ -271,3 +271,6 @@ reachability.
   poll after CI interval, with heartbeat before lease expiry.
 
 - 2026-09-27T01:17:26+00:00: Heartbeat by ar1332_record_replay_luna56.
+
+- 2026-09-27T01:17:32+00:00: Recorded command exit 0; command argv SHA-256
+  0400894a8fb04528b541596044b098cf3fa6c69097907f04a4516b92624960dd.
