@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve authenticated control enrollment into an opaque runtime-owned source for normal ASB run and sweep.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Runtime-owned authenticated enrollment source",
-  "updated_at": "2026-09-27T10:46:00+00:00",
+  "updated_at": "2026-09-27T10:46:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1473-runtime-owned-enrollment-source"
 }
 ---
@@ -89,3 +89,6 @@ the existing fail-closed authority boundaries.
 
 - 2026-09-27T10:46:00+00:00: Recorded command exit 101; command argv SHA-256
   134f5031c902fed628660ebc0b777565ef06679d617f64673d7f138365a103d9.
+
+- 2026-09-27T10:46:45+00:00: Recorded command exit 0; command argv SHA-256
+  593f2e290e2f46e223dd42eea080eaac227ba1ea00eb95442da9022770b01ed1.
