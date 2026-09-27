@@ -9,7 +9,7 @@
     "AR-1472"
   ],
   "id": "AR-1475",
-  "next_action": "Publish repair PR from signed exact head and monitor required CI.",
+  "next_action": "Await final emulated-aarch64 check on PR #346 exact head; merge only after terminal SUCCESS.",
   "observed_branch": "feature/ar-1475-asb-metrics-evidence-fixture-repair",
   "observed_dirty": 0,
   "observed_head": "02aa58f1490237190f67d0a225f352473be5b3d8",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the deterministic ProbeRejected versus MalformedEvidence fixture failure blocking PR #345.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Repair asb-metrics evidence fixture classification",
-  "updated_at": "2026-09-27T04:09:39+00:00",
+  "updated_at": "2026-09-27T04:10:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1475-asb-metrics-evidence-fixture-repair"
 }
 ---
@@ -143,3 +143,7 @@ classification or fixture behavior before changing code.
 
 - 2026-09-27T04:09:39+00:00: Recorded command exit 0; command argv SHA-256
   05b2b6042d711efea6ed4e522596b0cda812d39461ffae3a288fd571e63128f8.
+
+- 2026-09-27T04:10:03+00:00: PR #346 exact head 02aa58f1490237190f67d0a225f352473be5b3d8 rollup:
+  Huawei, AWQ, faults, formal (TLC/Kani/Loom), platform, repository quality, and Rust all SUCCESS.
+  Only Emulated aarch64 portability 36293087730 remains IN_PROGRESS; no merge yet.
