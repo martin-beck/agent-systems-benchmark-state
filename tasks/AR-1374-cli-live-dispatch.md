@@ -13,16 +13,16 @@
   "next_action": "Await dependency completion, then audit and implement runtime-owned asb run/sweep dispatch using the authenticated receipt source.",
   "observed_branch": "feature/ar-1374-cli-live-dispatch",
   "observed_dirty": 0,
-  "observed_head": "265b936d995148f8e40e36664cf68bf12affc20d",
+  "observed_head": "4ee5a4ed843c7dd7dda0b92dbe392f3787b4039f",
   "owner": "ar1332_record_replay_luna56",
   "plan": "../plans/AR-1374-cli-live-dispatch.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Consume authenticated runtime receipts in production asb run and sweep dispatch.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Production live-provider dispatch",
-  "updated_at": "2026-09-27T01:30:02+00:00",
+  "updated_at": "2026-09-27T01:30:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1374-cli-live-dispatch"
 }
 ---
