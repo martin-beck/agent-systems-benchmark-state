@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1481-runtime-owned-cli-entry-bootstrap",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-27T13:59:44+00:00",
   "depends_on": [
     "AR-1472",
     "AR-1473",
@@ -13,15 +13,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1481-runtime-owned-cli-entry-bootstrap.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Wire runtime-owned authenticated dispatch into the ordinary CLI entry path.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Runtime-owned CLI entry bootstrap",
-  "updated_at": "2026-09-27T11:59:36+00:00",
+  "updated_at": "2026-09-27T11:59:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1481-runtime-owned-cli-entry-bootstrap"
 }
 ---
@@ -35,3 +35,5 @@ provider, accept caller-built authority, or weaken fail-closed boundaries.
 - 2026-09-27T11:59:36+00:00: Dependency-safe successor for concrete AR-1480 gap: ordinary asb-cli
   entry still dispatches with no runtime/control source. Depends only on completed AR-1472, AR-1473,
   and AR-1480; avoids circular AR-1374/1375.
+
+- 2026-09-27T11:59:44+00:00: Claimed by ar1332-record-replay-luna56.
