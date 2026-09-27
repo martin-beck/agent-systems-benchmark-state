@@ -9,7 +9,7 @@
     "AR-1379"
   ],
   "id": "AR-1473",
-  "next_action": "Publish signed head via PR; monitor exact-head required checks, merge only all green, then eight post-merge workflows.",
+  "next_action": "Merge PR #356 normally; then verify eight exact-main workflows and release done after all green.",
   "observed_branch": "feature/ar-1473-runtime-owned-enrollment-source",
   "observed_dirty": 0,
   "observed_head": "4a29c3431d236cc9766c47408dab8de998a31a3b",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve authenticated control enrollment into an opaque runtime-owned source for normal ASB run and sweep.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Runtime-owned authenticated enrollment source",
-  "updated_at": "2026-09-27T11:01:36+00:00",
+  "updated_at": "2026-09-27T11:02:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1473-runtime-owned-enrollment-source"
 }
 ---
@@ -154,3 +154,8 @@ the existing fail-closed authority boundaries.
 
 - 2026-09-27T11:01:36+00:00: Recorded command exit 0; command argv SHA-256
   5fda3c1e9f6e4571e2a85aae86fb0eae97e5a9dc6bc91bf0eb3e96c4f872ffff.
+
+- 2026-09-27T11:02:08+00:00: PR #356 exact head 4a29c3431d236cc9766c47408dab8de998a31a3b has all 13
+  required checks terminal SUCCESS: AWQ, bounded fuzz, credential-free, Emulated AArch64, Huawei
+  headers, Kani, Loom, mutation, platform, policy/coverage/supply-chain, retained faults, Rust, and
+  TLC/Alloy. Independent review remains clean and scoped.

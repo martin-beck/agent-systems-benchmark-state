@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1473](tasks/AR-1473-runtime-owned-enrollment-source.md): Runtime-owned authenticated enrollment source | Resolve authenticated control enrollment into an opaque runtime-owned source for normal ASB run and sweep. | Publish signed head via PR; monitor exact-head required checks, merge only all green, then eight post-merge workflows. | ar1332-record-replay-luna56 |
+| P0 | [AR-1473](tasks/AR-1473-runtime-owned-enrollment-source.md): Runtime-owned authenticated enrollment source | Resolve authenticated control enrollment into an opaque runtime-owned source for normal ASB run and sweep. | Merge PR #356 normally; then verify eight exact-main workflows and release done after all green. | ar1332-record-replay-luna56 |
 
 ## Blocked
 
