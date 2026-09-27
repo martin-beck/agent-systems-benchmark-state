@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1487](tasks/AR-1487-owner-backed-first-customer-qualification.md): Owner-backed first-customer qualification | Qualify the owner-backed credential-free local/mock/replay first-customer journey. | Continue polling PR #367 exact head 4b94dcd7; merge only after Emulated AArch64, TLC/Alloy, Policy/coverage/supply-chain, and Rust all SUCCESS. | ar1332-record-replay-luna56 |
+| P0 | [AR-1487](tasks/AR-1487-owner-backed-first-customer-qualification.md): Owner-backed first-customer qualification | Qualify the owner-backed credential-free local/mock/replay first-customer journey. | Continue polling PR #367 exact head 4b94dcd7; merge only after AArch64, Policy/coverage/supply-chain, and Rust SUCCESS. | ar1332-record-replay-luna56 |
 
 ## Blocked
 
