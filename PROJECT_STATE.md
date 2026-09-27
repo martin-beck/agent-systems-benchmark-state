@@ -22,8 +22,8 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 36329496670 | `b048fef92f4b` | push | Hosted portability and native qualification | completed:success |
-| 36329496650 | `b048fef92f4b` | push | Emulated aarch64 portability | in_progress:- |
-| 36329496635 | `b048fef92f4b` | push | Repository quality | in_progress:- |
+| 36329496650 | `b048fef92f4b` | push | Emulated aarch64 portability | completed:success |
+| 36329496635 | `b048fef92f4b` | push | Repository quality | completed:success |
 | 36329496626 | `b048fef92f4b` | push | Formal assurance | completed:success |
 | 36329496606 | `b048fef92f4b` | push | Huawei MIT source headers | completed:success |
 | 36329496593 | `b048fef92f4b` | push | Credential-free benchmark path | completed:success |
