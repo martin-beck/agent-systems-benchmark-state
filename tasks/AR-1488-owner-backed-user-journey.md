@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Owner-backed first-customer user journey",
-  "updated_at": "2026-09-27T14:56:00+00:00",
+  "updated_at": "2026-09-27T14:56:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1488-owner-backed-user-journey"
 }
 ---
@@ -156,3 +156,6 @@ live provider.
   owner-backed first-customer journey and README route, preserving no-live-provider/asb-tui
   boundary. Signed SSH+DCO head f06b2d1b. PR #368 exact head confirmed, mergeState CLEAN, all 13
   named checks terminal SUCCESS.
+
+- 2026-09-27T14:56:09+00:00: Recorded command exit 0; command argv SHA-256
+  6b97dbf8fbfd8cd71ca9b7c4a7ee14b536ff2a51ac8d7618d758064459c615b0.
