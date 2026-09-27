@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1470-runtime-certificate-chain-enrollment",
   "checkpoint_commit": "b9d7b6ee251b3a119496d3c16f65ffc971704f3a",
-  "claim_expires": "2026-09-27T03:06:33+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1357",
     "AR-1359",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1470-runtime-certificate-chain-enrollment",
   "observed_dirty": 0,
   "observed_head": "b9d7b6ee251b3a119496d3c16f65ffc971704f3a",
-  "owner": "ar1332_record_replay_luna56",
+  "owner": "",
   "plan": "../plans/AR-1470-runtime-certificate-chain-enrollment.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Materialize runtime-owned certificate-chain enrollment authority for live dispatch.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Runtime certificate-chain enrollment materialization",
-  "updated_at": "2026-09-27T00:11:19+00:00",
+  "updated_at": "2026-09-27T00:11:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1470-runtime-certificate-chain-enrollment"
 }
 ---
@@ -71,3 +71,11 @@ actually consumed by the downstream adapters.
   handoffctl help exposes no create/promote-successor command; coordinator must create the narrowest
   successor through normal state workflow. A bounded rg|head audit pipeline recorded exit
   -13/SIGPIPE; no product mutation resulted.
+
+- 2026-09-27T00:11:28+00:00: AR-1470 blocked after protected-main audit. Existing
+  certificate-chain/receipt contracts and focused tests are green, but no authenticated
+  runtime-owned enrollment source populates RuntimeCertificateChainStore for normal dispatch. The
+  only authority install path is restart recovery/unit tests; caller-supplied chain injection is
+  prohibited. Do not fabricate authority. Next action: coordinator creates/promotes a narrow
+  successor that binds control-owned enrollment to runtime chain storage and normal live dispatch.
+  handoffctl has no task-create command, so no successor file was fabricated.
