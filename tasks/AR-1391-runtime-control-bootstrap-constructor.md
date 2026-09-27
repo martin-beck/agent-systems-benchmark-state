@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1391-runtime-control-bootstrap-constructor",
   "checkpoint_commit": "10bffbf015bd7ca78d8c0d18f04cf0190195e933",
-  "claim_expires": "2026-09-27T04:42:28+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1388",
     "AR-1385",
@@ -18,15 +18,15 @@
   "observed_branch": "feature/ar-1391-runtime-control-bootstrap-constructor",
   "observed_dirty": 0,
   "observed_head": "10bffbf015bd7ca78d8c0d18f04cf0190195e933",
-  "owner": "ar1332_record_replay_luna56",
+  "owner": "",
   "plan": "../plans/AR-1391-runtime-control-bootstrap-constructor.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Materialize authenticated runtime live authority into an opaque source without caller injection.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Runtime control bootstrap constructor",
-  "updated_at": "2026-09-27T02:43:35+00:00",
+  "updated_at": "2026-09-27T02:44:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1391-runtime-control-bootstrap-constructor"
 }
 ---
@@ -82,3 +82,15 @@ reachability.
 
 - 2026-09-27T02:43:35+00:00: Recorded command exit 0; command argv SHA-256
   90d4d1fa26d86e71088cdeec2884e6f897ae597a058c5f04622551a8cf66e888.
+
+- 2026-09-27T02:44:27+00:00: Bounded current-main audit complete: declared worktree is clean at
+  10bffbf and protected origin/main is 363b21f. Current main contains authenticated
+  receipt/profile/bootstrap internals, but no runtime/control-owned production constructor transfers
+  a chain-bound opaque dispatch source to normal CLI run/sweep.
+  LiveProviderRuntimeAuthorityProfile::materialize_handle remains crate-private and requires
+  concrete policy/allowlist, lease/relay roots, pinned tools, credential capability, namespace and
+  teardown authority; CLI only exposes injected-source helpers. Adding CLI/config/env inputs or
+  synthetic local authority would violate fail-closed contracts. No product edits, no asb-tui, no
+  live provider. Next action: after AR-1379 integration PR #344 is merged, re-audit current main and
+  implement the narrow constructor only if runtime-owned inputs are available; otherwise create the
+  next precise control/runtime source successor.
