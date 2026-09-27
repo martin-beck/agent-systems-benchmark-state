@@ -9,7 +9,7 @@
     "AR-1485"
   ],
   "id": "AR-1486",
-  "next_action": "Continue monitoring PR #360 exact head a5f9ad27; merge only after all 13 required checks terminal SUCCESS and review passes.",
+  "next_action": "Continue monitoring same PR #360 exact-head runs for Rust, policy/coverage/supply-chain, and emulated AArch64; merge only when all 13 are SUCCESS.",
   "observed_branch": "feature/ar-1486-runtime-owner-cli-entry-wiring",
   "observed_dirty": 0,
   "observed_head": "a5f9ad27b967371511b0981aad29d3aa65a7fcab",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire the runtime-owned local/mock process owner into ordinary CLI run and sweep.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Runtime-owner CLI entry wiring",
-  "updated_at": "2026-09-27T13:41:58+00:00",
+  "updated_at": "2026-09-27T13:42:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1486-cli-owner-wiring"
 }
 ---
@@ -136,3 +136,8 @@ authority.
 
 - 2026-09-27T13:41:58+00:00: Recorded command exit 0; command argv SHA-256
   c1ca3c441843fa26f224c8d10969366056e4902d045e0b22e6152b994a9c1185.
+
+- 2026-09-27T13:42:27+00:00: PR #360 remains exact head a5f9ad27 with 10/13 required checks terminal
+  SUCCESS. Rust, Policy/coverage/supply chain, and Emulated AArch64 are IN_PROGRESS. The 300-second
+  gh watch exited 124 due observation timeout, not a check result; direct gh pr view confirms all
+  three jobs still running and no failures/head change.
