@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1473-runtime-owned-enrollment-source",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-27T12:41:40+00:00",
   "depends_on": [
     "AR-1471",
     "AR-1472",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1473-runtime-owned-enrollment-source",
   "observed_dirty": 0,
   "observed_head": "1e2c59119820bc073ea4c6736782f5041a395a28",
-  "owner": "",
+  "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1473-runtime-owned-enrollment-source.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Resolve authenticated control enrollment into an opaque runtime-owned source for normal ASB run and sweep.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Runtime-owned authenticated enrollment source",
-  "updated_at": "2026-09-27T10:41:34+00:00",
+  "updated_at": "2026-09-27T10:41:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1473-runtime-owned-enrollment-source"
 }
 ---
@@ -60,3 +60,5 @@ the existing fail-closed authority boundaries.
 
 - 2026-09-27T10:41:34+00:00: Dependencies AR-1471, AR-1472, and AR-1379 are now durably done; resume
   stale blocked AR-1473 for its existing narrow runtime-owned enrollment-source scope.
+
+- 2026-09-27T10:41:40+00:00: Claimed by ar1332-record-replay-luna56.

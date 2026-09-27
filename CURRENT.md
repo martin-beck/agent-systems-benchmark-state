@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1473](tasks/AR-1473-runtime-owned-enrollment-source.md): Runtime-owned authenticated enrollment source | Resolve authenticated control enrollment into an opaque runtime-owned source for normal ASB run and sweep. | Promote after validating completed dependencies, then claim the isolated worktree and implement the narrow runtime-owned enrollment source. | - |
+| P0 | [AR-1473](tasks/AR-1473-runtime-owned-enrollment-source.md): Runtime-owned authenticated enrollment source | Resolve authenticated control enrollment into an opaque runtime-owned source for normal ASB run and sweep. | Promote after validating completed dependencies, then claim the isolated worktree and implement the narrow runtime-owned enrollment source. | ar1332-record-replay-luna56 |
 
 ## Blocked
 
