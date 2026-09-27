@@ -10,15 +10,18 @@
   ],
   "id": "AR-1475",
   "next_action": "Promote after validating the repair dependencies, then reproduce and fix the asb-metrics classification failure on an isolated worktree.",
+  "observed_branch": "feature/ar-1475-asb-metrics-evidence-fixture-repair",
+  "observed_dirty": 0,
+  "observed_head": "1e2c59119820bc073ea4c6736782f5041a395a28",
   "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1475-asb-metrics-evidence-fixture-repair.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the deterministic ProbeRejected versus MalformedEvidence fixture failure blocking PR #345.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Repair asb-metrics evidence fixture classification",
-  "updated_at": "2026-09-27T03:55:17+00:00",
+  "updated_at": "2026-09-27T03:55:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1475-asb-metrics-evidence-fixture-repair"
 }
 ---
