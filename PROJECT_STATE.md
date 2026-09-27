@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #358 | `feature/ar-1484-runtime-control-owner-contract@7ce533ea9b05` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | feat(runtime): define control owner lifecycle contract |
+| #358 | `feature/ar-1484-runtime-control-owner-contract@7ce533ea9b05` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(runtime): define control owner lifecycle contract |
 
 ## Recent workflows
 
@@ -18,11 +18,11 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 36318713186 | `7ce533ea9b05` | pull_request | Huawei MIT source headers | completed:success |
 | 36318713179 | `7ce533ea9b05` | pull_request | Credential-free benchmark path | completed:success |
-| 36318713145 | `7ce533ea9b05` | pull_request | Formal assurance | in_progress:- |
+| 36318713145 | `7ce533ea9b05` | pull_request | Formal assurance | completed:success |
 | 36318713143 | `7ce533ea9b05` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36318713140 | `7ce533ea9b05` | pull_request | Rust verification | in_progress:- |
 | 36318713134 | `7ce533ea9b05` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 36318713130 | `7ce533ea9b05` | pull_request | Fault assurance | in_progress:- |
+| 36318713130 | `7ce533ea9b05` | pull_request | Fault assurance | completed:success |
 | 36318713127 | `7ce533ea9b05` | pull_request | Repository quality | in_progress:- |
 | 36318713126 | `7ce533ea9b05` | pull_request | Hosted portability and native qualification | completed:success |
 | 36318589563 | `f2eab98d0cb0` | pull_request | Huawei MIT source headers | completed:failure |
