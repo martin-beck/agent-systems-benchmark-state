@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define stable runtime/control process-owner lifecycle and opaque handoff contract.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Runtime/control process-owner contract",
-  "updated_at": "2026-09-27T12:19:14+00:00",
+  "updated_at": "2026-09-27T12:19:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1484-runtime-control-owner-contract"
 }
 ---
@@ -80,3 +80,6 @@ authority.
 
 - 2026-09-27T12:19:14+00:00: Recorded command exit 0; command argv SHA-256
   16379c5b9b03c9d62f9d194877656a189c3642e970d4eb572bc1d675cadfad60.
+
+- 2026-09-27T12:19:37+00:00: Recorded command exit 0; command argv SHA-256
+  45e6d75e955c8a027549b69d808b3b5060e3704048833c52d53e1f44dcda7dfb.
