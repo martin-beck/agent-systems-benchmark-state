@@ -153,7 +153,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1426](../tasks/AR-1426-evolving-literature-window-refresh.md): Evolving literature workload window refresh | ar1332-record-replay-luna56 | Refresh evolving literature benchmark windows without stale or incomparable results. | Run full workspace/docs/privacy gates, independent review, then publish signed PR. |
+| P1 | [AR-1426](../tasks/AR-1426-evolving-literature-window-refresh.md): Evolving literature workload window refresh | ar1332-record-replay-luna56 | Refresh evolving literature benchmark windows without stale or incomparable results. | Merge PR #355 after independent review; then verify eight exact-main workflows and release done. |
 
 ### Blocked (71)
 

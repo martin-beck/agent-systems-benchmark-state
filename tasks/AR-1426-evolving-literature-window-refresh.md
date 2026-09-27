@@ -8,7 +8,7 @@
     "AR-1425"
   ],
   "id": "AR-1426",
-  "next_action": "Run full workspace/docs/privacy gates, independent review, then publish signed PR.",
+  "next_action": "Merge PR #355 after independent review; then verify eight exact-main workflows and release done.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Refresh evolving literature benchmark windows without stale or incomparable results.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Evolving literature workload window refresh",
-  "updated_at": "2026-09-27T10:24:00+00:00",
+  "updated_at": "2026-09-27T10:24:36+00:00",
   "worktree_key": ""
 }
 ---
@@ -126,3 +126,11 @@ requires live providers or upstream downloads during development or CI.
 
 - 2026-09-27T10:24:00+00:00: Recorded command exit 0; command argv SHA-256
   8ec3ee45c8f35ca2a6cf3d091364dfa70255937997638eafe23e0681633b7382.
+
+- 2026-09-27T10:24:36+00:00: Independent review complete: one scoped ASB-only change in
+  crates/asb-workloads/src/refresh.rs plus docs/WORKLOADS.md; signed+DCO head
+  73b5fd1d14fa0343a7f3cc6d73acc91187d46333. Strict content-addressed LiveCodeBench/SWE-rebench
+  manifest validates source/dataset/window/cutoff/split/evaluator/image/SBOM/license/evidence
+  identity, rejects unknown/tampered/incomplete/cross-window inputs, and has positive/negative
+  tests. No asb-tui, provider, network, or credential changes. PR #355 exact-head all 13 required
+  checks SUCCESS.
