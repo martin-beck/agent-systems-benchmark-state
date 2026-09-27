@@ -3,7 +3,12 @@
   "branch": "qualification/ar-1491-self-contained-package-qualification-fixture",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1461", "AR-1462", "AR-1488", "AR-1489"],
+  "depends_on": [
+    "AR-1461",
+    "AR-1462",
+    "AR-1488",
+    "AR-1489"
+  ],
   "id": "AR-1491",
   "next_action": "Promote and claim, then implement the non-production signed-test-key package qualification fixture and local/mock/replay harness.",
   "observed_branch": "qualification/ar-1491-self-contained-package-qualification-fixture",
@@ -13,11 +18,11 @@
   "plan": "../plans/AR-1491-self-contained-package-qualification-fixture.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Add a self-contained non-production package qualification fixture using the offline verifier test-key pattern.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Self-contained package qualification fixture",
-  "updated_at": "2026-09-27T15:45:00+00:00",
+  "updated_at": "2026-09-27T15:42:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1491-self-contained-package-qualification-fixture"
 }
 ---
@@ -35,3 +40,6 @@ evidence without pretending to be a production release.
   and customer publication.
 
 No live-provider or release-signing input may be fabricated.
+
+- 2026-09-27T15:42:45+00:00: Dependencies complete; deterministic non-production test-key fixture
+  successor for missing external package inputs.
