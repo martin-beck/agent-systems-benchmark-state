@@ -11,13 +11,13 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #350 | `feature/ar-1420-literature-workload-campaign-integration@2884508a6236` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: integrate literature workload campaigns |
-| #352 | `repair/ar-1479-rust-ci-flake-repair@52368cd91d9b` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | ci: serialize credential-free workspace tests |
+| #352 | `repair/ar-1479-rust-ci-flake-repair@52368cd91d9b` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | ci: serialize credential-free workspace tests |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36304356315 | `52368cd91d9b` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 36304356315 | `52368cd91d9b` | pull_request | Emulated aarch64 portability | completed:success |
 | 36304356285 | `52368cd91d9b` | pull_request | Hosted portability and native qualification | completed:success |
 | 36304356246 | `52368cd91d9b` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36304356239 | `52368cd91d9b` | pull_request | Huawei MIT source headers | completed:success |
