@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run the complete qualified literature workload matrix beside built-in software-engineering workloads.",
-  "task_revision": 122,
+  "task_revision": 123,
   "title": "Literature workload campaign integration",
-  "updated_at": "2026-09-27T07:20:09+00:00",
+  "updated_at": "2026-09-27T07:20:26+00:00",
   "worktree_key": ""
 }
 ---
@@ -414,3 +414,6 @@ tasks or require any live provider.
   AR-1420 files, following the prior control state-root ownership race. No product change made. PR
   #350 remains unmergeable until a separately approved repair/retry path addresses the unrelated
   Rust gate; policy/coverage and AArch64 terminal results must also remain green.
+
+- 2026-09-27T07:20:26+00:00: Recorded command exit 1; command argv SHA-256
+  20a3b5c9a22f01eaf717c06542061b448b2010507f13315f3dd8d682a6ec62ac.
