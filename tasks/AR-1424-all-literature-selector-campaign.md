@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-27T10:35:55+00:00",
+  "claim_expires": "2026-09-27T10:48:07+00:00",
   "depends_on": [
     "AR-1423",
     "AR-1430",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make all locally executable literature workloads selectable and campaignable beside built-in fixtures.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Complete literature selector and local campaign matrix",
-  "updated_at": "2026-09-27T08:47:50+00:00",
+  "updated_at": "2026-09-27T08:48:07+00:00",
   "worktree_key": ""
 }
 ---
@@ -93,3 +93,5 @@ dataset downloads are never requirements for this AR.
 
 - 2026-09-27T08:47:50+00:00: Recorded command exit 0; command argv SHA-256
   b3c485d1c23aaa943a8505a6bb9b9e50ebc5a0f32cc1c63ff26102b783e80f06.
+
+- 2026-09-27T08:48:07+00:00: Heartbeat by ar1332-record-replay-luna56.
