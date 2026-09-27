@@ -12,16 +12,16 @@
   "next_action": "Promote and claim, then verify exact release package installation and credential-free owner-backed local/mock/replay consumption.",
   "observed_branch": "feature/ar-1489-first-customer-package-consumption",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "2aef4b15f650238f1141503ecf8597eaa57a6724",
   "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1489-first-customer-package-consumption.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Verify first-customer release package installation and owner-backed local/mock/replay consumption.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "First-customer package consumption",
-  "updated_at": "2026-09-27T15:08:18+00:00",
+  "updated_at": "2026-09-27T15:08:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1489-first-customer-package-consumption"
 }
 ---
