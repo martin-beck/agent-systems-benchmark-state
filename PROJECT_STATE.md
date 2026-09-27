@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #353 | `feature/ar-1424-all-literature-selector-campaign@54fc1b7e3062` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: cover the reconciled Exercism literature workload |
+| #353 | `feature/ar-1424-all-literature-selector-campaign@54fc1b7e3062` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: cover the reconciled Exercism literature workload |
 
 ## Recent workflows
 
@@ -21,7 +21,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36307327971 | `54fc1b7e3062` | pull_request | Hosted portability and native qualification | completed:success |
 | 36307327970 | `54fc1b7e3062` | pull_request | Rust verification | completed:failure |
 | 36307327963 | `54fc1b7e3062` | pull_request | Credential-free benchmark path | completed:success |
-| 36307327957 | `54fc1b7e3062` | pull_request | Repository quality | in_progress:- |
+| 36307327957 | `54fc1b7e3062` | pull_request | Repository quality | completed:success |
 | 36307327952 | `54fc1b7e3062` | pull_request | Fault assurance | completed:success |
 | 36307327950 | `54fc1b7e3062` | pull_request | Formal assurance | completed:success |
 | 36307327946 | `54fc1b7e3062` | pull_request | Emulated aarch64 portability | completed:success |
