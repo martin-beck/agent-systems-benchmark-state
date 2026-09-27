@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #353 | `feature/ar-1424-all-literature-selector-campaign@54fc1b7e3062` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat: cover the reconciled Exercism literature workload |
+| #353 | `feature/ar-1424-all-literature-selector-campaign@54fc1b7e3062` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | feat: cover the reconciled Exercism literature workload |
 
 ## Recent workflows
 
@@ -18,7 +18,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 36307327991 | `54fc1b7e3062` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36307327976 | `54fc1b7e3062` | pull_request | Huawei MIT source headers | completed:success |
-| 36307327971 | `54fc1b7e3062` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 36307327971 | `54fc1b7e3062` | pull_request | Hosted portability and native qualification | completed:success |
 | 36307327970 | `54fc1b7e3062` | pull_request | Rust verification | in_progress:- |
 | 36307327963 | `54fc1b7e3062` | pull_request | Credential-free benchmark path | in_progress:- |
 | 36307327957 | `54fc1b7e3062` | pull_request | Repository quality | in_progress:- |
