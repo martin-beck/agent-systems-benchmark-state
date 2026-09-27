@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1374-cli-live-dispatch",
   "checkpoint_commit": "4ee5a4ed843c7dd7dda0b92dbe392f3787b4039f",
-  "claim_expires": "2026-09-27T13:14:11+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1373",
     "AR-1339",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1374-cli-live-dispatch",
   "observed_dirty": 0,
   "observed_head": "363b21f81d5c5ab364c2e2a923bd82676feaf343",
-  "owner": "ar1332-record-replay-luna56",
+  "owner": "",
   "plan": "../plans/AR-1374-cli-live-dispatch.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Consume authenticated runtime receipts in production asb run and sweep dispatch.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Production live-provider dispatch",
-  "updated_at": "2026-09-27T11:14:21+00:00",
+  "updated_at": "2026-09-27T11:14:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1374-cli-live-dispatch"
 }
 ---
@@ -159,3 +159,13 @@ reachability.
 
 - 2026-09-27T11:14:21+00:00: Recorded command exit 0; command argv SHA-256
   c21f15a4a25878c93d5140131c30bb7d188876ac9733e1cac6562030ed2ba8f9.
+
+- 2026-09-27T11:14:58+00:00: Re-audit against protected-main lineage including AR-1473: ordinary
+  crates/asb-cli/src/lib.rs run() calls dispatch(..., None, None), and run/sweep live-provider
+  branches require an injected LiveProviderAttemptFactory. The public
+  entry_with_runtime_live_provider_source accepts an externally constructed opaque source, but
+  RuntimeOwnedEnrollmentSource and RuntimeAuthorityInputResolver constructors remain crate-private
+  in asb-runtime; no control-session/receipt/chain/bootstrap composition constructs the source for
+  normal CLI run/sweep. AR-1375 remains circular because it depends on AR-1374. No safe in-scope
+  product change can complete this adapter without a new dependency-safe successor; no authority
+  fabricated, no asb-tui/live provider.
