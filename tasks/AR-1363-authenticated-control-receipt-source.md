@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Deliver authenticated runtime authority receipts through the versioned control boundary without exposing secrets or caller authority.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Authenticated control receipt source",
-  "updated_at": "2026-09-27T00:56:21+00:00",
+  "updated_at": "2026-09-27T00:56:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1363-authenticated-control-receipt-source"
 }
 ---
@@ -68,3 +68,6 @@ reachability.
 
 - 2026-09-27T00:56:21+00:00: Recorded command exit 0; command argv SHA-256
   321c534968b9c456a64caf5e6d09b63780c507f97548057d2bfe31edcfd73ff4.
+
+- 2026-09-27T00:56:40+00:00: Recorded command exit 0; command argv SHA-256
+  d5cae6ce302d8ca5200c4e447362453e14f36935e3149fe0cdd926322eb8e984.
