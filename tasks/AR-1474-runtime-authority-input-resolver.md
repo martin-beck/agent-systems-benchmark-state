@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority.",
-  "task_revision": 138,
+  "task_revision": 139,
   "title": "Runtime-owned authority-input resolver",
-  "updated_at": "2026-09-27T05:00:48+00:00",
+  "updated_at": "2026-09-27T05:01:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1474-runtime-authority-input-resolver"
 }
 ---
@@ -435,3 +435,6 @@ authority, privacy, lifecycle, formal, or egress contracts.
   was 90.35%; synchronized PR topic with protected main 1dada31c via signed+DCO non-squash merge
   c21d1ce5d1eca0ad80c28f0a0c5ebda5fd6a3603. Pushed with force-with-lease. PR #345 now points at
   c21d1ce; fresh exact-head checks are pending (all 12 named checks triggered). No gate waived.
+
+- 2026-09-27T05:01:00+00:00: Recorded command exit 8; command argv SHA-256
+  f6310c9434af926098a15812caed943365cabcf83900080009194765b70fad0c.
