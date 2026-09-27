@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1476-workspace-coverage-floor-repair",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-27T06:44:24+00:00",
   "depends_on": [
     "AR-1200",
     "AR-1379",
@@ -10,15 +10,15 @@
   ],
   "id": "AR-1476",
   "next_action": "Promote after validating completed dependencies, then reproduce the 88.05 percent coverage result and add justified tests or exclusions.",
-  "owner": "",
+  "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1476-workspace-coverage-floor-repair.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Restore the enforced 90 percent workspace coverage floor blocking exact AR-1474 validation.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Repair workspace coverage floor",
-  "updated_at": "2026-09-27T04:44:12+00:00",
+  "updated_at": "2026-09-27T04:44:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1476-workspace-coverage-floor-repair"
 }
 ---
@@ -33,3 +33,5 @@ not a weakened gate.
 
 - 2026-09-27T04:44:12+00:00: Dependencies AR-1200, AR-1379, and AR-1472 are done; promote the
   independent coverage-floor repair.
+
+- 2026-09-27T04:44:24+00:00: Claimed by ar1332-record-replay-luna56.

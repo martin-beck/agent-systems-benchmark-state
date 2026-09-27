@@ -145,11 +145,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1476](../tasks/AR-1476-workspace-coverage-floor-repair.md): Repair workspace coverage floor | Unclaimed | Restore the enforced 90 percent workspace coverage floor blocking exact AR-1474 validation. | Promote after validating completed dependencies, then reproduce the 88.05 percent coverage result and add justified tests or exclusions. |
+| P0 | [AR-1476](../tasks/AR-1476-workspace-coverage-floor-repair.md): Repair workspace coverage floor | ar1332-record-replay-luna56 | Restore the enforced 90 percent workspace coverage floor blocking exact AR-1474 validation. | Promote after validating completed dependencies, then reproduce the 88.05 percent coverage result and add justified tests or exclusions. |
 
 ### Blocked (71)
 
