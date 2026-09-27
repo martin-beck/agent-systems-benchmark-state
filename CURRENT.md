@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1480](tasks/AR-1480-runtime-control-cli-composition.md): Runtime-control CLI composition | Compose authenticated runtime enrollment into opaque normal CLI run and sweep dispatch. | Merge PR #357 normally, then monitor all eight exact-main post-merge workflows before release. | ar1332-record-replay-luna56 |
+| P0 | [AR-1480](tasks/AR-1480-runtime-control-cli-composition.md): Runtime-control CLI composition | Compose authenticated runtime enrollment into opaque normal CLI run and sweep dispatch. | Monitor eight exact-main post-merge workflows for fdc7f59f83f647ce099439b003848291e81dd3bb to terminal SUCCESS; then reconcile/doctor and release done. | ar1332-record-replay-luna56 |
 
 ## Blocked
 

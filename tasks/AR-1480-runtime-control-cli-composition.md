@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1480-runtime-control-cli-composition",
-  "checkpoint_commit": "440a06427d6e6fe2aacaebc2a50c5f924527dd04",
+  "checkpoint_commit": "fdc7f59f83f647ce099439b003848291e81dd3bb",
   "claim_expires": "2026-09-27T13:41:21+00:00",
   "depends_on": [
     "AR-1473",
     "AR-1472"
   ],
   "id": "AR-1480",
-  "next_action": "Merge PR #357 normally, then monitor all eight exact-main post-merge workflows before release.",
+  "next_action": "Monitor eight exact-main post-merge workflows for fdc7f59f83f647ce099439b003848291e81dd3bb to terminal SUCCESS; then reconcile/doctor and release done.",
   "observed_branch": "feature/ar-1480-runtime-control-cli-composition",
   "observed_dirty": 0,
   "observed_head": "440a06427d6e6fe2aacaebc2a50c5f924527dd04",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compose authenticated runtime enrollment into opaque normal CLI run and sweep dispatch.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Runtime-control CLI composition",
-  "updated_at": "2026-09-27T11:44:35+00:00",
+  "updated_at": "2026-09-27T11:45:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1480-runtime-control-cli-composition"
 }
 ---
@@ -214,3 +214,11 @@ and never gates local qualification.
 
 - 2026-09-27T11:44:35+00:00: Recorded command exit 0; command argv SHA-256
   2a163713d1f19f267be05b465a32c8af5ad692ecc87892e8ac14e8d1b1e8ad1c.
+
+- 2026-09-27T11:45:04+00:00: PR #357 merged normally at 2026-09-27T11:44:10Z. Merge SHA
+  fdc7f59f83f647ce099439b003848291e81dd3bb; PR head was 440a06427d6e6fe2aacaebc2a50c5f924527dd04.
+  Exact-main workflows launched: Repository quality 36316693442, Credential-free benchmark path
+  36316693423, Huawei MIT source headers 36316693365 (SUCCESS), Fault assurance 36316693349
+  (QUEUED), Rust verification 36316693344, Emulated aarch64 portability 36316693340, Formal
+  assurance 36316693339, Hosted portability/native qualification 36316693310 (remaining
+  IN_PROGRESS/QUEUED). No release yet.
