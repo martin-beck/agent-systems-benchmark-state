@@ -19,11 +19,11 @@
   "plan": "../plans/AR-1382-authenticated-live-execution-source.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Materialize authenticated runtime-owned live execution for asb run and sweep.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Authenticated live execution source",
-  "updated_at": "2026-09-24T04:40:32+00:00",
+  "updated_at": "2026-09-27T02:17:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1382-authenticated-live-execution-source"
 }
 ---
@@ -49,3 +49,7 @@ preserving the no-caller-authority and fail-closed boundaries.
   root, provider allowlist/policy, and bootstrap handle from control-owned state. Making these
   caller-supplied public would leak authority; synthesizing values is forbidden. Create a narrow
   authority-materialization AR before wiring execution.
+
+- 2026-09-27T02:17:45+00:00: Dependencies AR-1381, AR-1380, AR-1378, AR-1377, and AR-1373 are
+  durably done; resume the blocked successor for implementation of runtime-owned authenticated
+  execution-source materialization. AR-1329 remains optional/blocked and is not required.
