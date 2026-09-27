@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1478](tasks/AR-1478-topic-synchronization-topology-repair.md): Repair topic synchronization topology | Repair protected-main topic synchronization topology after AR-1477 merge policy failure. | Promote after validating completed dependencies, inspect exact merge ancestry, and apply only the smallest policy-compliant topology repair. | - |
+| P0 | [AR-1478](tasks/AR-1478-topic-synchronization-topology-repair.md): Repair topic synchronization topology | Repair protected-main topic synchronization topology after AR-1477 merge policy failure. | Promote after validating completed dependencies, inspect exact merge ancestry, and apply only the smallest policy-compliant topology repair. | ar1332-record-replay-luna56 |
 
 ## Blocked
 

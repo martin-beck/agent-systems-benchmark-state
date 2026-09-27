@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1478-topic-synchronization-topology-repair",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-27T07:33:28+00:00",
   "depends_on": [
     "AR-1475",
     "AR-1476",
@@ -10,15 +10,15 @@
   ],
   "id": "AR-1478",
   "next_action": "Promote after validating completed dependencies, inspect exact merge ancestry, and apply only the smallest policy-compliant topology repair.",
-  "owner": "",
+  "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1478-topic-synchronization-topology-repair.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair protected-main topic synchronization topology after AR-1477 merge policy failure.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Repair topic synchronization topology",
-  "updated_at": "2026-09-27T05:33:17+00:00",
+  "updated_at": "2026-09-27T05:33:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1478-topic-synchronization-topology-repair"
 }
 ---
@@ -33,3 +33,5 @@ or synchronization topology permitted by the policy.
 
 - 2026-09-27T05:33:17+00:00: Dependencies AR-1475, AR-1476, and AR-1379 are done; promote the
   protected-main topology repair.
+
+- 2026-09-27T05:33:28+00:00: Claimed by ar1332-record-replay-luna56.

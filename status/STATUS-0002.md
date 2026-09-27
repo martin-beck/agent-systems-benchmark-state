@@ -148,11 +148,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1478](../tasks/AR-1478-topic-synchronization-topology-repair.md): Repair topic synchronization topology | Unclaimed | Repair protected-main topic synchronization topology after AR-1477 merge policy failure. | Promote after validating completed dependencies, inspect exact merge ancestry, and apply only the smallest policy-compliant topology repair. |
+| P0 | [AR-1478](../tasks/AR-1478-topic-synchronization-topology-repair.md): Repair topic synchronization topology | ar1332-record-replay-luna56 | Repair protected-main topic synchronization topology after AR-1477 merge policy failure. | Promote after validating completed dependencies, inspect exact merge ancestry, and apply only the smallest policy-compliant topology repair. |
 
 ### Blocked (72)
 
