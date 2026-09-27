@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1473-runtime-owned-enrollment-source",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-27T05:23:50+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1471",
     "AR-1472",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1473-runtime-owned-enrollment-source",
   "observed_dirty": 0,
   "observed_head": "1e2c59119820bc073ea4c6736782f5041a395a28",
-  "owner": "ar1332_record_replay_luna56",
+  "owner": "",
   "plan": "../plans/AR-1473-runtime-owned-enrollment-source.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Resolve authenticated control enrollment into an opaque runtime-owned source for normal ASB run and sweep.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Runtime-owned authenticated enrollment source",
-  "updated_at": "2026-09-27T03:25:25+00:00",
+  "updated_at": "2026-09-27T03:25:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1473-runtime-owned-enrollment-source"
 }
 ---
@@ -45,3 +45,15 @@ the existing fail-closed authority boundaries.
 
 - 2026-09-27T03:25:25+00:00: Recorded command exit 0; command argv SHA-256
   5c65734e6538cf9e4793a7b2544e7ef4effba6047efc156c8474d0017efc7be6.
+
+- 2026-09-27T03:25:56+00:00: Protected-main audit at 1e2c59119820bc073ea4c6736782f5041a395a28:
+  existing AR-1471 receipt/chain validation and AR-1472 opaque adapter are present, but no
+  runtime-owned enrollment source can resolve concrete policy/allowlist, lease/relay roots, pinned
+  tools, credential capability, namespace, cancellation or teardown inputs.
+  RuntimeCertificateChainStore::install and LiveProviderRuntimeBridge::request_control_receipt still
+  require caller/runtime-provided stores; RuntimeAuthorityRecord persists only digest metadata.
+  Normal CLI run/sweep remains fail-closed without an injected source. Focused cargo test --locked
+  -p asb-runtime -p asb-cli passes all tests; no product/asb-tui/live-provider changes. Next action:
+  coordinator must create a narrowly scoped private authority-source successor defining the owner
+  and persistence of those bootstrap inputs before wiring normal dispatch; do not synthesize or
+  expose authority.
