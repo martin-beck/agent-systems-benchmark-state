@@ -10,7 +10,7 @@
     "AR-1416"
   ],
   "id": "AR-1424",
-  "next_action": "Promote after AR-1423, AR-1430, AR-1420, and AR-1416 are released; implement the complete local-mock literature selector and campaign matrix.",
+  "next_action": "Classify bounded full-workspace state-root race with isolated asb-cli serial rerun; continue focused/full gates, signed commit and PR if no product regression.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make all locally executable literature workloads selectable and campaignable beside built-in fixtures.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Complete literature selector and local campaign matrix",
-  "updated_at": "2026-09-27T08:43:11+00:00",
+  "updated_at": "2026-09-27T08:43:47+00:00",
   "worktree_key": ""
 }
 ---
@@ -62,3 +62,10 @@ dataset downloads are never requirements for this AR.
 
 - 2026-09-27T08:43:11+00:00: Recorded command exit 101; command argv SHA-256
   1124fc06955ac3dbff1911b51f2c52bd157b83a977f0c022625063b35693a601.
+
+- 2026-09-27T08:43:47+00:00: Recorded full gate failure: cargo test --locked --workspace --
+  --test-threads=1 exited 101 after 115/116 asb-cli tests;
+  control::tests::production_backend_runs_without_frontend_and_recovers_idempotency failed at
+  crates/asb-cli/src/control.rs:6593 with CliError operation/control state root is already owned.
+  Focused asb-cli serial run passed earlier; classify as known shared state-root runner contention
+  before any code change.

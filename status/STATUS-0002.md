@@ -153,7 +153,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1424](../tasks/AR-1424-all-literature-selector-campaign.md): Complete literature selector and local campaign matrix | ar1332-record-replay-luna56 | Make all locally executable literature workloads selectable and campaignable beside built-in fixtures. | Promote after AR-1423, AR-1430, AR-1420, and AR-1416 are released; implement the complete local-mock literature selector and campaign matrix. |
+| P1 | [AR-1424](../tasks/AR-1424-all-literature-selector-campaign.md): Complete literature selector and local campaign matrix | ar1332-record-replay-luna56 | Make all locally executable literature workloads selectable and campaignable beside built-in fixtures. | Classify bounded full-workspace state-root race with isolated asb-cli serial rerun; continue focused/full gates, signed commit and PR if no product regression. |
 
 ### Blocked (71)
 
