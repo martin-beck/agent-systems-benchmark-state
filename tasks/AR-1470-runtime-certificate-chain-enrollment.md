@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize runtime-owned certificate-chain enrollment authority for live dispatch.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Runtime certificate-chain enrollment materialization",
-  "updated_at": "2026-09-27T03:20:30+00:00",
+  "updated_at": "2026-09-27T03:20:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1470-runtime-certificate-chain-enrollment"
 }
 ---
@@ -84,3 +84,6 @@ actually consumed by the downstream adapters.
   1e2c5911 for the remaining runtime-owned enrollment-source gap.
 
 - 2026-09-27T03:20:30+00:00: Claimed by ar1332_record_replay_luna56.
+
+- 2026-09-27T03:20:43+00:00: Recorded command exit 0; command argv SHA-256
+  321c534968b9c456a64caf5e6d09b63780c507f97548057d2bfe31edcfd73ff4.
