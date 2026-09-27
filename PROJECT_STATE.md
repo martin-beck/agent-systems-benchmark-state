@@ -16,7 +16,7 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 36306189416 | `bb7efb395ee0` | push | Rust verification | in_progress:- |
-| 36306189404 | `bb7efb395ee0` | push | Fault assurance | queued:- |
+| 36306189404 | `bb7efb395ee0` | push | Fault assurance | in_progress:- |
 | 36306189400 | `bb7efb395ee0` | push | Repository quality | in_progress:- |
 | 36306189395 | `bb7efb395ee0` | push | Credential-free benchmark path | in_progress:- |
 | 36306189381 | `bb7efb395ee0` | push | Emulated aarch64 portability | in_progress:- |
