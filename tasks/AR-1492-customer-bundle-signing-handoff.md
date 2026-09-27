@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stage a deterministic customer bundle and provide an explicit external signing handoff and verifier.",
-  "task_revision": 56,
+  "task_revision": 57,
   "title": "Customer bundle signing handoff",
-  "updated_at": "2026-09-27T16:39:25+00:00",
+  "updated_at": "2026-09-27T16:39:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1492-customer-bundle-signing-handoff"
 }
 ---
@@ -205,3 +205,6 @@ detached signature.
   This is an existing timing-sensitive test, not a bundle/signing assertion. Preserve immutable
   failure; classify with isolated serial reproduction before any retry. Rust and AArch64 remain
   active; other six workflows are terminal SUCCESS.
+
+- 2026-09-27T16:39:35+00:00: Recorded command exit 0; command argv SHA-256
+  df755fa4914630a24cb2c47b1572fa371c6450ce9026e803d07053879d61307d.
