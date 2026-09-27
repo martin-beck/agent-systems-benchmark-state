@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1474-runtime-authority-input-resolver",
   "checkpoint_commit": "fac11a22a93c1a075d7d528f2c6c20d426c66ba4",
-  "claim_expires": "2026-09-27T08:08:08+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1362",
     "AR-1471",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1474-runtime-authority-input-resolver",
   "observed_dirty": 0,
   "observed_head": "c21d1ce5d1eca0ad80c28f0a0c5ebda5fd6a3603",
-  "owner": "ar1332-record-replay-luna56",
+  "owner": "",
   "plan": "../plans/AR-1474-runtime-authority-input-resolver.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority.",
-  "task_revision": 167,
+  "task_revision": 168,
   "title": "Runtime-owned authority-input resolver",
-  "updated_at": "2026-09-27T06:08:53+00:00",
+  "updated_at": "2026-09-27T06:08:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1474-runtime-authority-input-resolver"
 }
 ---
@@ -529,3 +529,7 @@ authority, privacy, lifecycle, formal, or egress contracts.
   seven exact-main workflows are SUCCESS: Huawei 36298610690, hosted 36298610650, fault 36298610671,
   formal 36298610655, Rust 36298610685, repository quality 36298610658, emulated AArch64
   36298610696. No new synchronization or product change is needed.
+
+- 2026-09-27T06:08:55+00:00: AR-1474 done. PR 345 implementation merged at c21d1ce5; historical
+  coverage failure superseded by AR-1477 coverage tests and AR-1478 topology repair. Current
+  protected main fac11a22 has all seven exact-main workflows green.

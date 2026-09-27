@@ -148,12 +148,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1474](../tasks/AR-1474-runtime-authority-input-resolver.md): Runtime-owned authority-input resolver | ar1332-record-replay-luna56 | Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority. | Release AR-1474 done; old PR coverage failure superseded by AR-1477 tests and AR-1478 topology repair. |
-
 ### Blocked (71)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -298,7 +292,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (350)
+### Done (351)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -469,6 +463,7 @@
 | P0 | [AR-1469](../tasks/AR-1469-ar1392-protected-topology-repair.md): AR-1392 protected-main topology repair | Unclaimed | Repair the single-parent protected merge for AR-1392 without changing its reviewed implementation. | Reconcile and doctor state after seven green exact-main workflows; topology repair complete. |
 | P0 | [AR-1471](../tasks/AR-1471-control-to-runtime-chain-binding.md): Control-to-runtime certificate-chain binding | Unclaimed | Bind authenticated control enrollment to runtime certificate-chain storage and live dispatch. | Reconcile and doctor live state, then release AR-1471 done with merge and seven exact-main workflow evidence. |
 | P0 | [AR-1472](../tasks/AR-1472-authenticated-live-dispatch-adapter.md): Authenticated live-dispatch adapter | Unclaimed | Connect authenticated control receipts to runtime-owned CLI live dispatch without a dependency cycle. | Run reconcile and doctor --live, then release AR-1472 done with merge and seven-workflow evidence. |
+| P0 | [AR-1474](../tasks/AR-1474-runtime-authority-input-resolver.md): Runtime-owned authority-input resolver | Unclaimed | Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority. | Release AR-1474 done; old PR coverage failure superseded by AR-1477 tests and AR-1478 topology repair. |
 | P0 | [AR-1475](../tasks/AR-1475-asb-metrics-evidence-fixture-repair.md): Repair asb-metrics evidence fixture classification | Unclaimed | Repair the deterministic ProbeRejected versus MalformedEvidence fixture failure blocking PR #345. | Release done after final reconcile; then rerun PR #345 exact-head validation. |
 | P0 | [AR-1476](../tasks/AR-1476-workspace-coverage-floor-repair.md): Repair workspace coverage floor | Unclaimed | Restore the enforced 90 percent workspace coverage floor blocking exact AR-1474 validation. | Rerun PR #345 exact-head validation against current protected main 1dada31c; no repair diff is required unless the current-base gate regresses. |
 | P0 | [AR-1478](../tasks/AR-1478-topic-synchronization-topology-repair.md): Repair topic synchronization topology | Unclaimed | Repair protected-main topic synchronization topology after AR-1477 merge policy failure. | Reconcile and doctor state; release AR-1478 done with complete merge and seven-workflow evidence. |
@@ -511,3 +506,4 @@
 | P1 | [AR-0702](../tasks/AR-0702-native-platforms.md): Validate native Linux kernels and architectures | Unclaimed | Qualify native x86_64 and required emulated AArch64 portability; track native ARM64 as optional future evidence. | Rebase PR #31, replace native ARM64 completion gates with the pinned QEMU AArch64 lane where applicable, document native ARM64 as optional future qualification, and rerun exact-head checks. |
 | P1 | [AR-0704](../tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | PR #119 exact head 4630f90 is rebased onto protected main 5ddac12. Fresh exact-head checks were absent immediately after force-push; close/reopen retriggered them. At last query all 12 checks are pending except AWQ shadow and SPDX headers pass. Wait for every required check terminal success; do not merge on partial/pending evidence. |
 | P1 | [AR-0707](../tasks/AR-0707-emulated-aarch64-portability.md): Qualify emulated aarch64 portability | Unclaimed | Add explicit emulated-aarch64 portability qualification without claiming native support. | Provide a reproducible x86_64-hosted aarch64 VM/emulation lane for userspace portability and negative qualification only. |
+| P1 | [AR-0801](../tasks/AR-0801-terminal-interface.md): Implement terminal and automation interfaces | Unclaimed | Provide doctor, plan, run, sweep, compare and report with stable JSON output. | No further AR-0801 action; preserve the verified doctor, plan, run, sweep, compare, report, and serve surface, with record and replay explicitly unsupported. |
