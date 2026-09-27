@@ -1,7 +1,7 @@
 ---
 {
   "branch": "qualification/ar-1491-self-contained-package-qualification-fixture",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "f85435064f4a73c45ea1619d9a673bf67192457f",
   "claim_expires": "2026-09-27T17:47:05+00:00",
   "depends_on": [
     "AR-1461",
@@ -10,7 +10,7 @@
     "AR-1489"
   ],
   "id": "AR-1491",
-  "next_action": "Promote and claim, then implement the non-production signed-test-key package qualification fixture and local/mock/replay harness.",
+  "next_action": "Run clippy, docs/privacy/policy/release/clean gates, then independent review and publish the exact signed head.",
   "observed_branch": "qualification/ar-1491-self-contained-package-qualification-fixture",
   "observed_dirty": 0,
   "observed_head": "f85435064f4a73c45ea1619d9a673bf67192457f",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a self-contained non-production package qualification fixture using the offline verifier test-key pattern.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Self-contained package qualification fixture",
-  "updated_at": "2026-09-27T15:47:05+00:00",
+  "updated_at": "2026-09-27T15:47:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1491-self-contained-package-qualification-fixture"
 }
 ---
@@ -73,3 +73,10 @@ No live-provider or release-signing input may be fabricated.
   353049195a78ecd9de968903f8312c566839a6e5e03869db3be4764b624a115c.
 
 - 2026-09-27T15:47:05+00:00: Heartbeat by ar1332-record-replay-luna56.
+
+- 2026-09-27T15:47:39+00:00: Failure classification: exit 1 was cargo fmt check only (assertion
+  formatting), corrected by cargo fmt. Exit 101 was harness compilation due to unavailable tempfile
+  crate in asb-cli dev dependencies; replaced with stdlib owner-only temp root. Two focused
+  assertion failures then exposed an incorrect setup JSON shape assumption and phrase matching; both
+  corrected. Focused rerun is green: offline_verifier 22/22, package_qualification_fixture 2/2,
+  workflow_transcript 3/3.
