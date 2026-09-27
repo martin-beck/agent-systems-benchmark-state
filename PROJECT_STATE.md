@@ -10,20 +10,21 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #342 | `feature/ar-1363-authenticated-control-receipt-source@29d27a91ad6a` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | fix(control): validate authenticated runtime receipt source |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 36284742939 | `29d27a91ad6a` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 36284742908 | `29d27a91ad6a` | pull_request | Rust verification | in_progress:- |
+| 36284742907 | `29d27a91ad6a` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 36284742897 | `29d27a91ad6a` | pull_request | Huawei MIT source headers | in_progress:- |
+| 36284742895 | `29d27a91ad6a` | pull_request | Repository quality | in_progress:- |
+| 36284742887 | `29d27a91ad6a` | pull_request | Formal assurance | queued:- |
+| 36284742879 | `29d27a91ad6a` | pull_request | Fault assurance | in_progress:- |
+| 36284742871 | `29d27a91ad6a` | pull_request | Agent Workflow Quality shadow | in_progress:- |
 | 36283100172 | `cb9bce4dd991` | push | Fault assurance | completed:success |
 | 36283100159 | `cb9bce4dd991` | push | Formal assurance | completed:success |
 | 36283100128 | `cb9bce4dd991` | push | Rust verification | completed:success |
 | 36283100126 | `cb9bce4dd991` | push | Emulated aarch64 portability | completed:success |
-| 36283100105 | `cb9bce4dd991` | push | Huawei MIT source headers | completed:success |
-| 36283100101 | `cb9bce4dd991` | push | Hosted portability and native qualification | completed:success |
-| 36283100097 | `cb9bce4dd991` | push | Repository quality | completed:success |
-| 36282594622 | `d76d099dcaa5` | pull_request | Repository quality | completed:success |
-| 36282594593 | `d76d099dcaa5` | pull_request | Huawei MIT source headers | completed:success |
-| 36282594521 | `d76d099dcaa5` | pull_request | Rust verification | completed:success |
-| 36282594510 | `d76d099dcaa5` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 36282594471 | `d76d099dcaa5` | pull_request | Formal assurance | completed:success |
