@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the owner-backed credential-free local/mock/replay first-customer journey.",
-  "task_revision": 66,
+  "task_revision": 67,
   "title": "Owner-backed first-customer qualification",
-  "updated_at": "2026-09-27T14:26:23+00:00",
+  "updated_at": "2026-09-27T14:27:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1487-owner-backed-qualification"
 }
 ---
@@ -235,3 +235,6 @@ runtime-owned CLI; it excludes live providers and asb-tui.
   Emulated AArch64 36325841029, Hosted portability/native 36325841050, Rust 36325841109, Fault
   36325841097, Huawei headers 36325841010 (SUCCESS), Credential-free 36325841041, Formal
   36325841072, Repository quality 36325841032.
+
+- 2026-09-27T14:27:28+00:00: Recorded command exit 0; command argv SHA-256
+  03184fe308919755a72eb52438cd19d340e3a7205ba779265c0ff321ad43a973.
