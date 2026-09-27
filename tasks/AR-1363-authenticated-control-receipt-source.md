@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Deliver authenticated runtime authority receipts through the versioned control boundary without exposing secrets or caller authority.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Authenticated control receipt source",
-  "updated_at": "2026-09-27T01:14:11+00:00",
+  "updated_at": "2026-09-27T01:14:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1363-authenticated-control-receipt-source"
 }
 ---
@@ -230,3 +230,6 @@ reachability.
   mutation IN_PROGRESS; Formal assurance Kani SUCCESS, Loom SUCCESS, TLC/Alloy IN_PROGRESS; Rust
   verification IN_PROGRESS; Repository quality IN_PROGRESS. AWQ shadow SUCCESS. No failures;
   continue polling.
+
+- 2026-09-27T01:14:17+00:00: Recorded command exit 0; command argv SHA-256
+  0400894a8fb04528b541596044b098cf3fa6c69097907f04a4516b92624960dd.
