@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1470-runtime-certificate-chain-enrollment",
   "checkpoint_commit": "b9d7b6ee251b3a119496d3c16f65ffc971704f3a",
-  "claim_expires": "",
+  "claim_expires": "2026-09-27T05:20:30+00:00",
   "depends_on": [
     "AR-1357",
     "AR-1359",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1470-runtime-certificate-chain-enrollment",
   "observed_dirty": 0,
   "observed_head": "b9d7b6ee251b3a119496d3c16f65ffc971704f3a",
-  "owner": "",
+  "owner": "ar1332_record_replay_luna56",
   "plan": "../plans/AR-1470-runtime-certificate-chain-enrollment.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Materialize runtime-owned certificate-chain enrollment authority for live dispatch.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Runtime certificate-chain enrollment materialization",
-  "updated_at": "2026-09-27T03:20:24+00:00",
+  "updated_at": "2026-09-27T03:20:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1470-runtime-certificate-chain-enrollment"
 }
 ---
@@ -82,3 +82,5 @@ actually consumed by the downstream adapters.
 
 - 2026-09-27T03:20:24+00:00: AR-1471 is durably done; re-audit AR-1470 against protected main
   1e2c5911 for the remaining runtime-owned enrollment-source gap.
+
+- 2026-09-27T03:20:30+00:00: Claimed by ar1332_record_replay_luna56.
