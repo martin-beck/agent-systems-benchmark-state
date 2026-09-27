@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement runtime-owned local/mock process lifecycle and opaque-source handoff.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Process-owner local/mock lifecycle",
-  "updated_at": "2026-09-27T13:07:06+00:00",
+  "updated_at": "2026-09-27T13:09:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1485-process-owner-local-mock-lifecycle"
 }
 ---
@@ -139,3 +139,6 @@ authority.
   033b4574216e146c6bed1853fab366911b932f1d57cd82825135917eb6410234.
 
 - 2026-09-27T13:07:06+00:00: Heartbeat by ar1332-record-replay-luna56.
+
+- 2026-09-27T13:09:39+00:00: Recorded command exit 0; command argv SHA-256
+  1f3dc77d004ea5d2ebdedf4b3a1c05c665bdec9c352b132dd0fac48463564c72.
