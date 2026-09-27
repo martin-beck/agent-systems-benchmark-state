@@ -1,7 +1,7 @@
 ---
 {
   "branch": "release/ar-1493-release-authority-enrollment-handoff",
-  "checkpoint_commit": "6f5dfd5c3292fd177a8f627c661e68ef30c40c65",
+  "checkpoint_commit": "9d2b22a80cfe9c6d9a01daec1e257fd93b99d37d",
   "claim_expires": "2026-09-27T18:52:55+00:00",
   "depends_on": [
     "AR-1461",
@@ -10,7 +10,7 @@
     "AR-1492"
   ],
   "id": "AR-1493",
-  "next_action": "Monitor PR #372 exact head 6f5dfd5; merge only after every required check and independent review are green, then verify post-merge workflows.",
+  "next_action": "Monitor PR #372 synchronized exact signed head 9d2b22a; record required CI matrix, merge only all green, then post-merge verify.",
   "observed_branch": "release/ar-1493-release-authority-enrollment-handoff",
   "observed_dirty": 0,
   "observed_head": "9d2b22a80cfe9c6d9a01daec1e257fd93b99d37d",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define and validate the external release-authority enrollment and signed-bundle verification handoff.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Release-authority enrollment handoff",
-  "updated_at": "2026-09-27T17:01:51+00:00",
+  "updated_at": "2026-09-27T17:02:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1493-release-authority-enrollment-handoff"
 }
 ---
@@ -124,3 +124,10 @@ and preserve AR-1490 as the customer-release blocker.
 
 - 2026-09-27T17:01:51+00:00: Recorded command exit 0; command argv SHA-256
   a80d3e6c9375f79d90f80e477f5b38541068960f70f244d87a0a4853c8d25cd1.
+
+- 2026-09-27T17:02:28+00:00: Repository Quality run 36335270389 failed because synchronization merge
+  ba222bbbdad190fd9e66ad2ee9e62fc1969722c lacked a matching Signed-off-by trailer. This was a
+  publication-history defect, not product behavior. Safely rebased the single implementation commit
+  onto current protected main a2d9be3, amended/recreated signed+DCO head
+  9d2b22a80cfe9c6d9a01daec1e257fd93b99d37d, and force-with-lease updated PR #372. Prior failure
+  preserved; all product diff remains the same three ASB files.
