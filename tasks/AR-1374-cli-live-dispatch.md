@@ -18,11 +18,11 @@
   "plan": "../plans/AR-1374-cli-live-dispatch.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Consume authenticated runtime receipts in production asb run and sweep dispatch.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Production live-provider dispatch",
-  "updated_at": "2026-09-27T02:14:10+00:00",
+  "updated_at": "2026-09-27T11:14:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1374-cli-live-dispatch"
 }
 ---
@@ -150,3 +150,7 @@ reachability.
   the exact integration successor; AR-1380 scheduler composition is done. Next action: resume
   AR-1379 (or create narrowly scoped replacement) to wire the adapter into production run/sweep with
   deterministic mock/replay qualification. No asb-tui/live-provider changes.
+
+- 2026-09-27T11:14:08+00:00: Current protected main 59323f41 includes AR-1473 private
+  RuntimeOwnedEnrollmentSource, but normal CLI run/sweep still have no control/runtime construction
+  path; resume bounded re-audit to record exact remaining adapter gap.
