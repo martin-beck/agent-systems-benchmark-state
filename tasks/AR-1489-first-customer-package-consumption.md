@@ -9,7 +9,7 @@
     "AR-1488"
   ],
   "id": "AR-1489",
-  "next_action": "Monitor PR #369 exact head c4578eec; merge only after all required checks and independent review are green.",
+  "next_action": "Merge PR #369 normal non-squash from exact head c4578eec; verify eight post-merge workflows and release done only after all green.",
   "observed_branch": "feature/ar-1489-first-customer-package-consumption",
   "observed_dirty": 0,
   "observed_head": "c4578eecd93183eaadaf9c34defbc4137ba03657",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Verify first-customer release package installation and owner-backed local/mock/replay consumption.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "First-customer package consumption",
-  "updated_at": "2026-09-27T15:24:24+00:00",
+  "updated_at": "2026-09-27T15:24:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1489-first-customer-package-consumption"
 }
 ---
@@ -131,3 +131,8 @@ touching asb-tui or requiring a live provider.
 
 - 2026-09-27T15:24:24+00:00: Recorded command exit 0; command argv SHA-256
   f0ad34729e67608e492af228eaa5ad1666818002a44b4197d67c3b26b3f41317.
+
+- 2026-09-27T15:24:46+00:00: Independent exact-head review passed: two-file docs-only
+  package-consumption walkthrough and README route, preserving verifier/install/authority
+  boundaries; signed SSH+DCO head c4578eecd93183eaadaf9c34defbc4137ba03657. PR #369 exact head
+  confirmed, mergeState CLEAN, all 13 required checks terminal SUCCESS.
