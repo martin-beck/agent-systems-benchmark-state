@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate authenticated runtime live dispatch into asb run and sweep.",
-  "task_revision": 135,
+  "task_revision": 136,
   "title": "Production live dispatch integration",
-  "updated_at": "2026-09-27T03:10:26+00:00",
+  "updated_at": "2026-09-27T03:10:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1379-live-dispatch-integration"
 }
 ---
@@ -439,3 +439,6 @@ verified through the completed gates.
   asb-metrics fixture race: bounded_tool_boundary_covers_success_denial_timeout_and_cleanup at
   kernel.rs:651 observed ProbeRejected/None instead of Some(12500000). Exact PR Rust check had
   passed. Preserved failure; no product changes; reran workflow via gh run rerun 36290394972.
+
+- 2026-09-27T03:10:35+00:00: Recorded command exit 0; command argv SHA-256
+  a6acce5e0449209bfab4ac9732b5b776857fe084d6202ac541889af7eac86b72.
