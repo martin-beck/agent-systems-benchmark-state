@@ -10,18 +10,18 @@
   ],
   "id": "AR-1481",
   "next_action": "Promote and claim, then inspect the protected-main entrypoint and runtime/control bootstrap inputs.",
-  "observed_branch": "",
+  "observed_branch": "feature/ar-1481-runtime-owned-cli-entry-bootstrap",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "fdc7f59f83f647ce099439b003848291e81dd3bb",
   "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1481-runtime-owned-cli-entry-bootstrap.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire runtime-owned authenticated dispatch into the ordinary CLI entry path.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Runtime-owned CLI entry bootstrap",
-  "updated_at": "2026-09-27T12:00:17+00:00",
+  "updated_at": "2026-09-27T12:00:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1481-runtime-owned-cli-entry-bootstrap"
 }
 ---
