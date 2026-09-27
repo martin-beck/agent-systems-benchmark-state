@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve authenticated control enrollment into an opaque runtime-owned source for normal ASB run and sweep.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Runtime-owned authenticated enrollment source",
-  "updated_at": "2026-09-27T10:52:06+00:00",
+  "updated_at": "2026-09-27T10:52:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1473-runtime-owned-enrollment-source"
 }
 ---
@@ -119,3 +119,6 @@ the existing fail-closed authority boundaries.
   inputs, credentials, provider/network, or handoffctl changes. Full workspace tests, clippy,
   rustdoc, release build, fmt and diff checks exit 0. Clean SSH-signed+DCO head
   4a29c3431d236cc9766c47408dab8de998a31a3b.
+
+- 2026-09-27T10:52:21+00:00: Recorded command exit 0; command argv SHA-256
+  3e0210acaeb7e5620d1abd6cf023f880602991da7568cb915133c985a4d02d43.
