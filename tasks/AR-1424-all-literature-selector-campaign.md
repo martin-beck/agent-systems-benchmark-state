@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make all locally executable literature workloads selectable and campaignable beside built-in fixtures.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Complete literature selector and local campaign matrix",
-  "updated_at": "2026-09-27T08:58:07+00:00",
+  "updated_at": "2026-09-27T08:58:24+00:00",
   "worktree_key": ""
 }
 ---
@@ -154,3 +154,6 @@ dataset downloads are never requirements for this AR.
 
 - 2026-09-27T08:58:07+00:00: Recorded command exit 0; command argv SHA-256
   53fbcdbc3213a97c851cf9e2fa96c1ae5bee35c198357e2c1fb40c7fa801facb.
+
+- 2026-09-27T08:58:24+00:00: Recorded command exit 0; command argv SHA-256
+  d2b5b2de8470d2fd54b68fef1dbb4b5ce4ba6e1f96b51766213ce01260d61418.
