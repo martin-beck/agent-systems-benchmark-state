@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-27T12:05:18+00:00",
   "depends_on": [
     "AR-1423",
     "AR-1425"
@@ -12,15 +12,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "",
+  "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1426-evolving-literature-window-refresh.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Refresh evolving literature benchmark windows without stale or incomparable results.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Evolving literature workload window refresh",
-  "updated_at": "2026-09-27T10:05:16+00:00",
+  "updated_at": "2026-09-27T10:05:18+00:00",
   "worktree_key": ""
 }
 ---
@@ -35,3 +35,5 @@ requires live providers or upstream downloads during development or CI.
 
 - 2026-09-27T10:05:16+00:00: AR-1423 and AR-1425 are released done; promote the dependency-ready
   offline refresh-manifest implementation.
+
+- 2026-09-27T10:05:18+00:00: Claimed by ar1332-record-replay-luna56.
