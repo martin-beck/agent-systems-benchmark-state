@@ -10,18 +10,18 @@
   ],
   "id": "AR-1482",
   "next_action": "Promote and claim, then inspect control/runtime process bootstrap APIs on protected main.",
-  "observed_branch": "",
+  "observed_branch": "feature/ar-1482-control-runtime-process-bootstrap",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "fdc7f59f83f647ce099439b003848291e81dd3bb",
   "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1482-control-runtime-process-bootstrap.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compose authenticated control enrollment into the ordinary CLI process bootstrap.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Control-runtime process bootstrap",
-  "updated_at": "2026-09-27T12:04:15+00:00",
+  "updated_at": "2026-09-27T12:04:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1482-control-runtime-process-bootstrap"
 }
 ---
