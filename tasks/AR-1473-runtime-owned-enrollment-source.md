@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve authenticated control enrollment into an opaque runtime-owned source for normal ASB run and sweep.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Runtime-owned authenticated enrollment source",
-  "updated_at": "2026-09-27T11:02:08+00:00",
+  "updated_at": "2026-09-27T11:02:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1473-runtime-owned-enrollment-source"
 }
 ---
@@ -159,3 +159,6 @@ the existing fail-closed authority boundaries.
   required checks terminal SUCCESS: AWQ, bounded fuzz, credential-free, Emulated AArch64, Huawei
   headers, Kani, Loom, mutation, platform, policy/coverage/supply-chain, retained faults, Rust, and
   TLC/Alloy. Independent review remains clean and scoped.
+
+- 2026-09-27T11:02:21+00:00: Recorded command exit 0; command argv SHA-256
+  85ab67987a6860787d942d9ff69022f91f8fbacb3f5e41924a58df59f29cc3ee.
