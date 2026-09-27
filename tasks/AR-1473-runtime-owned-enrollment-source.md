@@ -11,17 +11,17 @@
   "id": "AR-1473",
   "next_action": "Implement runtime-owned enrollment source over existing authenticated profile/resolver; add hostile local tests, then focused/full gates.",
   "observed_branch": "feature/ar-1473-runtime-owned-enrollment-source",
-  "observed_dirty": 1,
-  "observed_head": "5e577e6a4b278fc79dc8b695cd6b3723d04cc609",
+  "observed_dirty": 0,
+  "observed_head": "4a29c3431d236cc9766c47408dab8de998a31a3b",
   "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1473-runtime-owned-enrollment-source.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve authenticated control enrollment into an opaque runtime-owned source for normal ASB run and sweep.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Runtime-owned authenticated enrollment source",
-  "updated_at": "2026-09-27T10:47:12+00:00",
+  "updated_at": "2026-09-27T10:47:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1473-runtime-owned-enrollment-source"
 }
 ---
