@@ -10,7 +10,7 @@
     "AR-1486"
   ],
   "id": "AR-1487",
-  "next_action": "Monitor PR #367 exact head 4b94dcd7; record all required checks and independent review. Merge only when all green.",
+  "next_action": "Continue polling PR #367 exact head 4b94dcd7 until all 13 required checks terminal SUCCESS; then independent review and normal merge.",
   "observed_branch": "feature/ar-1487-owner-backed-first-customer-qualification",
   "observed_dirty": 0,
   "observed_head": "4b94dcd7be505ebb5b34580db5023b95de7db8fd",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the owner-backed credential-free local/mock/replay first-customer journey.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Owner-backed first-customer qualification",
-  "updated_at": "2026-09-27T14:16:01+00:00",
+  "updated_at": "2026-09-27T14:16:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1487-owner-backed-qualification"
 }
 ---
@@ -168,3 +168,7 @@ runtime-owned CLI; it excludes live providers and asb-tui.
 
 - 2026-09-27T14:16:01+00:00: Recorded command exit 0; command argv SHA-256
   1961dfa5e92666b22515d0f30615e4eb26ec8925ef2ea81c63086da2689a0966.
+
+- 2026-09-27T14:16:21+00:00: PR #367 exact head confirmed 4b94dcd7be505ebb5b34580db5023b95de7db8fd,
+  base main, OPEN, mergeState UNSTABLE while 10 required checks are IN_PROGRESS. Completed green:
+  AWQ shadow evidence, retained faults, Huawei/SPDX headers. No merge while pending.

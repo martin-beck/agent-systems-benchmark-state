@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1487](tasks/AR-1487-owner-backed-first-customer-qualification.md): Owner-backed first-customer qualification | Qualify the owner-backed credential-free local/mock/replay first-customer journey. | Monitor PR #367 exact head 4b94dcd7; record all required checks and independent review. Merge only when all green. | ar1332-record-replay-luna56 |
+| P0 | [AR-1487](tasks/AR-1487-owner-backed-first-customer-qualification.md): Owner-backed first-customer qualification | Qualify the owner-backed credential-free local/mock/replay first-customer journey. | Continue polling PR #367 exact head 4b94dcd7 until all 13 required checks terminal SUCCESS; then independent review and normal merge. | ar1332-record-replay-luna56 |
 
 ## Blocked
 
