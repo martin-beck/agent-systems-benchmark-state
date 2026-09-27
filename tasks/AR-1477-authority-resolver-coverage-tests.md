@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1477-authority-resolver-coverage-tests",
   "checkpoint_commit": "67fa0d1a7ff90a9d3a38dadf7d69101e8c70d32a",
-  "claim_expires": "2026-09-27T07:28:59+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1200",
     "AR-1379",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1477-authority-resolver-coverage-tests",
   "observed_dirty": 0,
   "observed_head": "3b8b2001b7fe19f1fdd47dedfa2156eca8a8a6cb",
-  "owner": "ar1332-record-replay-luna56",
+  "owner": "",
   "plan": "../plans/AR-1477-authority-resolver-coverage-tests.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Raise exact hosted coverage above the enforced 90 percent floor for the authority resolver.",
-  "task_revision": 74,
+  "task_revision": 75,
   "title": "Cover authority resolver behavior",
-  "updated_at": "2026-09-27T05:32:12+00:00",
+  "updated_at": "2026-09-27T05:32:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1477-authority-resolver-coverage-tests"
 }
 ---
@@ -244,3 +244,8 @@ the coverage floor remains unchanged.
   Post-merge repository quality run 36297383090 terminal FAILURE: repository_policy.py reports
   protected-main topic synchronization merge must be at the tip. This is a protected-main topology
   gate failure; no waiver. Other six exact-main workflows remain monitored.
+
+- 2026-09-27T05:32:20+00:00: AR-1477 implementation merged as 67fa0d1, but protected-main repository
+  quality run 36297383090 failed policy: protected-main topic synchronization merge must be at the
+  tip. Preserve this immutable failure and create a narrow topology repair successor; do not release
+  done or waive policy. Six other post-merge workflows are being monitored separately.
