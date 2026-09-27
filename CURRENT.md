@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1489](tasks/AR-1489-first-customer-package-consumption.md): First-customer package consumption | Verify first-customer release package installation and owner-backed local/mock/replay consumption. | Merge PR #369 normal non-squash from exact head c4578eec; verify eight post-merge workflows and release done only after all green. | ar1332-record-replay-luna56 |
+| P0 | [AR-1489](tasks/AR-1489-first-customer-package-consumption.md): First-customer package consumption | Verify first-customer release package installation and owner-backed local/mock/replay consumption. | Monitor eight exact-main post-merge workflows for merge b048fef9; release done only after all terminal SUCCESS. | ar1332-record-replay-luna56 |
 
 ## Blocked
 

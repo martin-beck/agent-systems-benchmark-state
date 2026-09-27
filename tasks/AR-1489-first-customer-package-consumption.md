@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1489-first-customer-package-consumption",
-  "checkpoint_commit": "c4578eecd93183eaadaf9c34defbc4137ba03657",
+  "checkpoint_commit": "b048fef92f4bdb4eedd5379d645f4288a4b6ab20",
   "claim_expires": "2026-09-27T17:23:13+00:00",
   "depends_on": [
     "AR-1461",
@@ -9,7 +9,7 @@
     "AR-1488"
   ],
   "id": "AR-1489",
-  "next_action": "Merge PR #369 normal non-squash from exact head c4578eec; verify eight post-merge workflows and release done only after all green.",
+  "next_action": "Monitor eight exact-main post-merge workflows for merge b048fef9; release done only after all terminal SUCCESS.",
   "observed_branch": "feature/ar-1489-first-customer-package-consumption",
   "observed_dirty": 0,
   "observed_head": "c4578eecd93183eaadaf9c34defbc4137ba03657",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Verify first-customer release package installation and owner-backed local/mock/replay consumption.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "First-customer package consumption",
-  "updated_at": "2026-09-27T15:26:20+00:00",
+  "updated_at": "2026-09-27T15:26:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1489-first-customer-package-consumption"
 }
 ---
@@ -148,3 +148,8 @@ touching asb-tui or requiring a live provider.
 
 - 2026-09-27T15:26:20+00:00: Recorded command exit 0; command argv SHA-256
   d4b21b9fa84bddbff736766a979ee6bd6f7610dbdc4da1c43b6e9d69758f5d31.
+
+- 2026-09-27T15:26:49+00:00: PR #369 merged 2026-09-27T15:25:29Z. Merge
+  b048fef92f4bdb4eedd5379d645f4288a4b6ab20; reviewed head c4578eec. Exact-main workflows launched:
+  Huawei 36329496606 SUCCESS, Hosted 36329496670, Credential-free 36329496593, Formal 36329496626,
+  AArch64 36329496650, Repository quality 36329496635, Rust 36329496563, Fault 36329496583.
