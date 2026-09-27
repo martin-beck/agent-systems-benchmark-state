@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Document the live benchmark workflow and publish the supported agent and provider matrix.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Live benchmark workflow documentation and support matrix",
-  "updated_at": "2026-09-27T09:52:44+00:00",
+  "updated_at": "2026-09-27T09:52:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1336-live-benchmark-workflow-docs"
 }
 ---
@@ -167,3 +167,6 @@ reachability.
   312f811. Final PR #354 exact head has all 13 required checks SUCCESS: AWQ, fuzz, credential-free,
   emulated AArch64, header policy, Kani, Loom, mutation, platform, policy/coverage/supply-chain,
   retained faults, Rust, TLC/Alloy.
+
+- 2026-09-27T09:52:57+00:00: Recorded command exit 0; command argv SHA-256
+  0220a3cf70ea926b82c71e1859d0d95dc44e7cbdd1e8f9d92bd8016925d73d53.
