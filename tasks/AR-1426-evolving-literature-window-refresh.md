@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Refresh evolving literature benchmark windows without stale or incomparable results.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Evolving literature workload window refresh",
-  "updated_at": "2026-09-27T10:33:12+00:00",
+  "updated_at": "2026-09-27T10:33:21+00:00",
   "worktree_key": ""
 }
 ---
@@ -192,3 +192,6 @@ requires live providers or upstream downloads during development or CI.
   received an Ok GooseOutcome with redacted failed RPC and exit 127. Isolated serial focused
   reproduction in AR-1426 worktree passed 1/1, confirming runner-sensitive flake; no AR-1426 path
   involved. Preserve failure and retry exact failed workflow once; do not waive.
+
+- 2026-09-27T10:33:21+00:00: Recorded command exit 0; command argv SHA-256
+  b5e5ed59f8f840d4b53252fbba5ce93102a11c2cccc6064998028e323102f992.
