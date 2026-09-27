@@ -12,17 +12,17 @@
   "id": "AR-1474",
   "next_action": "Promote after validating completed dependencies, then claim the isolated worktree and implement the bounded runtime-owned resolver.",
   "observed_branch": "feature/ar-1474-runtime-authority-input-resolver",
-  "observed_dirty": 2,
-  "observed_head": "1e2c59119820bc073ea4c6736782f5041a395a28",
+  "observed_dirty": 0,
+  "observed_head": "56d284c2d292163e2724318b0443f53211b4f9e4",
   "owner": "ar1332_record_replay_luna56",
   "plan": "../plans/AR-1474-runtime-authority-input-resolver.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Runtime-owned authority-input resolver",
-  "updated_at": "2026-09-27T03:42:12+00:00",
+  "updated_at": "2026-09-27T03:42:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1474-runtime-authority-input-resolver"
 }
 ---
