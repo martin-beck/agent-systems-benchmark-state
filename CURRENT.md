@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1475](tasks/AR-1475-asb-metrics-evidence-fixture-repair.md): Repair asb-metrics evidence fixture classification | Repair the deterministic ProbeRejected versus MalformedEvidence fixture failure blocking PR #345. | Promote after validating the repair dependencies, then reproduce and fix the asb-metrics classification failure on an isolated worktree. | - |
+| P0 | [AR-1475](tasks/AR-1475-asb-metrics-evidence-fixture-repair.md): Repair asb-metrics evidence fixture classification | Repair the deterministic ProbeRejected versus MalformedEvidence fixture failure blocking PR #345. | Promote after validating the repair dependencies, then reproduce and fix the asb-metrics classification failure on an isolated worktree. | ar1332-record-replay-luna56 |
 
 ## Blocked
 

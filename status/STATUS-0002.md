@@ -143,11 +143,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1475](../tasks/AR-1475-asb-metrics-evidence-fixture-repair.md): Repair asb-metrics evidence fixture classification | Unclaimed | Repair the deterministic ProbeRejected versus MalformedEvidence fixture failure blocking PR #345. | Promote after validating the repair dependencies, then reproduce and fix the asb-metrics classification failure on an isolated worktree. |
+| P0 | [AR-1475](../tasks/AR-1475-asb-metrics-evidence-fixture-repair.md): Repair asb-metrics evidence fixture classification | ar1332-record-replay-luna56 | Repair the deterministic ProbeRejected versus MalformedEvidence fixture failure blocking PR #345. | Promote after validating the repair dependencies, then reproduce and fix the asb-metrics classification failure on an isolated worktree. |
 
 ### Blocked (71)
 
