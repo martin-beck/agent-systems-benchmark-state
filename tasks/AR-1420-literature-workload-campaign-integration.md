@@ -10,7 +10,7 @@
     "AR-1333"
   ],
   "id": "AR-1420",
-  "next_action": "Monitor the approved Rust retry and remaining PR #350 checks at exact head 2884508; merge only after all required checks are green.",
+  "next_action": "PR #350 is not mergeable: preserve Rust retry failure and await coordinator decision/create repair for unrelated existing asb-agents timing flake; do not merge or weaken checks.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run the complete qualified literature workload matrix beside built-in software-engineering workloads.",
-  "task_revision": 121,
+  "task_revision": 122,
   "title": "Literature workload campaign integration",
-  "updated_at": "2026-09-27T07:19:54+00:00",
+  "updated_at": "2026-09-27T07:20:09+00:00",
   "worktree_key": ""
 }
 ---
@@ -406,3 +406,11 @@ tasks or require any live provider.
 
 - 2026-09-27T07:19:54+00:00: Recorded command exit 1; command argv SHA-256
   20a3b5c9a22f01eaf717c06542061b448b2010507f13315f3dd8d682a6ec62ac.
+
+- 2026-09-27T07:20:09+00:00: Approved Rust retry job 108572843071 also failed, but on a different
+  unrelated existing asb-agents test:
+  gemini::tests::malformed_ready_marker_fails_fast_and_cleans_run_root asserted elapsed <1s and
+  failed; 187 tests passed, 1 failed. This is an environment/timing-sensitive failure outside
+  AR-1420 files, following the prior control state-root ownership race. No product change made. PR
+  #350 remains unmergeable until a separately approved repair/retry path addresses the unrelated
+  Rust gate; policy/coverage and AArch64 terminal results must also remain green.
