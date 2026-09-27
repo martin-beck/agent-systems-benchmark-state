@@ -18,11 +18,11 @@
   "plan": "../plans/AR-1387-runtime-control-cli-bridge.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Bridge authenticated runtime/control bootstrap state into the production CLI dispatch path.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Authenticated runtime-control CLI bridge",
-  "updated_at": "2026-09-24T06:38:54+00:00",
+  "updated_at": "2026-09-27T02:31:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1387-runtime-control-cli-bridge"
 }
 ---
@@ -64,3 +64,8 @@ and teardown, and fail-closed denial of unapproved external traffic remain requi
 contracts. Existing live-provider dependency edges describe production integration
 ordering only and must not be used to block local qualification or to claim external
 reachability.
+
+- 2026-09-27T02:31:33+00:00: Dependencies AR-1385, AR-1384, AR-1378, and AR-1377 are durably done.
+  Resume the concrete successor for authenticated runtime/control bootstrap-to-CLI transfer; AR-1382
+  audit confirms this is the remaining missing seam. No caller authority, live provider, or asb-tui
+  required.
