@@ -8,7 +8,7 @@
     "AR-1363"
   ],
   "id": "AR-1472",
-  "next_action": "Complete release build and independent diff review, then publish exact signed head through handoffctl.",
+  "next_action": "Push exact signed head, open PR, and monitor required exact-head checks; merge only when all required checks are green.",
   "observed_branch": "feature/ar-1472-authenticated-live-dispatch-adapter",
   "observed_dirty": 0,
   "observed_head": "5f785dab598f24c2221272cf53b9366a10625413",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect authenticated control receipts to runtime-owned CLI live dispatch without a dependency cycle.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Authenticated live-dispatch adapter",
-  "updated_at": "2026-09-27T01:48:46+00:00",
+  "updated_at": "2026-09-27T01:49:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1472-authenticated-live-dispatch-adapter"
 }
 ---
@@ -147,3 +147,11 @@ authority. Mandatory qualification is deterministic local/mock or replay.
 
 - 2026-09-27T01:48:46+00:00: Recorded command exit 0; command argv SHA-256
   d04aa803a9fcb854b247572f9b417fd1935a57ca978bb887d2e7c188e99db043.
+
+- 2026-09-27T01:49:12+00:00: Independent review complete at exact head
+  5f785dab598f24c2221272cf53b9366a10625413: one-file runtime-only diff (74 insertions),
+  from_enrollment consumes opaque LiveProviderEnrollment and delegates validated from_handle;
+  unavailable enrollment fails closed before scheduler; tests cover positive opaque-handle
+  construction and negative unavailable enrollment; no authority/credential leakage or asb-tui
+  changes. cargo fmt check, focused tests, full workspace tests, clippy, rustdoc, release build,
+  diff check all passed. Commit SSH signature and DCO verified.
