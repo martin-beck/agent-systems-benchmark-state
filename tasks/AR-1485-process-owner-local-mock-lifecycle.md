@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement runtime-owned local/mock process lifecycle and opaque-source handoff.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Process-owner local/mock lifecycle",
-  "updated_at": "2026-09-27T13:03:36+00:00",
+  "updated_at": "2026-09-27T13:03:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1485-process-owner-local-mock-lifecycle"
 }
 ---
@@ -119,3 +119,6 @@ authority.
 
 - 2026-09-27T13:03:36+00:00: Recorded command exit 0; command argv SHA-256
   f3b11b2392e5e80c4c33e33b0a9ff9ecda3bee8dfe3654d783885279edae0837.
+
+- 2026-09-27T13:03:57+00:00: Recorded command exit 1; command argv SHA-256
+  0082e13a88f9ef90718ebbdd0a8eb86f31498d9a2abd5da1c8f11483eefa6c57.
