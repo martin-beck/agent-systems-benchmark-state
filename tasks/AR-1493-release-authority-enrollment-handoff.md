@@ -13,16 +13,16 @@
   "next_action": "Promote and claim after the state commit; audit AR-1492 handoff and implement only repository-side enrollment/verification checks and docs.",
   "observed_branch": "release/ar-1493-release-authority-enrollment-handoff",
   "observed_dirty": 0,
-  "observed_head": "5f4e286f051d09bc9706085ca21f68459fc10eb4",
+  "observed_head": "ba222bbbdad190fd9e66ad2ee9e62fc1969722c5",
   "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1493-release-authority-enrollment-handoff.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define and validate the external release-authority enrollment and signed-bundle verification handoff.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Release-authority enrollment handoff",
-  "updated_at": "2026-09-27T16:54:19+00:00",
+  "updated_at": "2026-09-27T16:54:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1493-release-authority-enrollment-handoff"
 }
 ---
