@@ -1,11 +1,11 @@
 ---
 {
   "branch": "",
-  "checkpoint_commit": "52368cd91d9b961c1a28ccb5142cdd1537d06779",
+  "checkpoint_commit": "1015a4613a27d0344476a65ccdec3962a17892b7",
   "claim_expires": "2026-09-27T09:57:32+00:00",
   "depends_on": [],
   "id": "AR-1479",
-  "next_action": "Merge PR #352 normally; verify merge SHA and all seven exact-main workflows, then requalify AR-1420 PR #350 head 2884508.",
+  "next_action": "Monitor exact-main post-merge workflows for 1015a461; after all seven green, release AR-1479 and requalify AR-1420 PR #350 head 2884508.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the unrelated Rust state-root collision and malformed-ready-marker timing flakes blocking AR-1420 exact-head CI.",
-  "task_revision": 93,
+  "task_revision": 94,
   "title": "Rust CI timing and state-root flake repair",
-  "updated_at": "2026-09-27T08:01:09+00:00",
+  "updated_at": "2026-09-27T08:01:41+00:00",
   "worktree_key": ""
 }
 ---
@@ -308,3 +308,8 @@ requalified. Preserve fail-closed cleanup and bounded execution semantics.
 
 - 2026-09-27T08:01:09+00:00: Recorded command exit 0; command argv SHA-256
   96ab59bd958343226ea85e4b61ef90c3fa236d0d7119f5e0c408685a59da5aba.
+
+- 2026-09-27T08:01:41+00:00: PR #352 merged at 2026-09-27T07:59:48Z, preserving head 52368cd. Merge
+  SHA 1015a461. Post-merge exact-main runs started: Credential-free 36304800227, Rust 36304800214,
+  Formal 36304800212, Hosted 36304800202, Repository quality 36304800200, Huawei 36304800192
+  (SUCCESS), Fault 36304800189, Emulated AArch64 36304800188. Merge was normal and non-squash.

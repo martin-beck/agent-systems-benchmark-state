@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1479](tasks/AR-1479-rust-ci-flake-repair.md): Rust CI timing and state-root flake repair | Repair the unrelated Rust state-root collision and malformed-ready-marker timing flakes blocking AR-1420 exact-head CI. | Merge PR #352 normally; verify merge SHA and all seven exact-main workflows, then requalify AR-1420 PR #350 head 2884508. | ar1332-record-replay-luna56 |
+| P0 | [AR-1479](tasks/AR-1479-rust-ci-flake-repair.md): Rust CI timing and state-root flake repair | Repair the unrelated Rust state-root collision and malformed-ready-marker timing flakes blocking AR-1420 exact-head CI. | Monitor exact-main post-merge workflows for 1015a461; after all seven green, release AR-1479 and requalify AR-1420 PR #350 head 2884508. | ar1332-record-replay-luna56 |
 
 ## Blocked
 
