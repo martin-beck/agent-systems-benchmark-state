@@ -10,17 +10,17 @@
   "id": "AR-1472",
   "next_action": "Promote and implement the authenticated control-to-runtime live-dispatch adapter with local/mock tests; do not synthesize authority.",
   "observed_branch": "feature/ar-1472-authenticated-live-dispatch-adapter",
-  "observed_dirty": 1,
-  "observed_head": "4ee5a4ed843c7dd7dda0b92dbe392f3787b4039f",
+  "observed_dirty": 0,
+  "observed_head": "5f785dab598f24c2221272cf53b9366a10625413",
   "owner": "ar1332_record_replay_luna56",
   "plan": "../plans/AR-1472-authenticated-live-dispatch-adapter.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect authenticated control receipts to runtime-owned CLI live dispatch without a dependency cycle.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Authenticated live-dispatch adapter",
-  "updated_at": "2026-09-27T01:41:16+00:00",
+  "updated_at": "2026-09-27T01:41:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1472-authenticated-live-dispatch-adapter"
 }
 ---
