@@ -14,16 +14,16 @@
   "next_action": "Promote and claim this dependency-valid authenticated execution-source successor, then implement runtime-owned scheduler materialization.",
   "observed_branch": "feature/ar-1382-authenticated-live-execution-source",
   "observed_dirty": 0,
-  "observed_head": "04b4c067055073031cd6d88cf18f0d158f488ad0",
+  "observed_head": "363b21f81d5c5ab364c2e2a923bd82676feaf343",
   "owner": "ar1332_record_replay_luna56",
   "plan": "../plans/AR-1382-authenticated-live-execution-source.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize authenticated runtime-owned live execution for asb run and sweep.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Authenticated live execution source",
-  "updated_at": "2026-09-27T02:19:26+00:00",
+  "updated_at": "2026-09-27T02:19:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1382-authenticated-live-execution-source"
 }
 ---
