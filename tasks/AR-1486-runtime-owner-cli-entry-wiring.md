@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1486-runtime-owner-cli-entry-wiring",
-  "checkpoint_commit": "a5f9ad27b967371511b0981aad29d3aa65a7fcab",
+  "checkpoint_commit": "79f88d3ca03120fd7d69f67cb292c96051a5e770",
   "claim_expires": "2026-09-27T15:43:15+00:00",
   "depends_on": [
     "AR-1480",
@@ -9,7 +9,7 @@
     "AR-1485"
   ],
   "id": "AR-1486",
-  "next_action": "Merge PR #360 normally, then verify exact merge and eight post-merge workflows before release.",
+  "next_action": "Monitor eight exact-main post-merge workflows for merge 79f88d3; release done only after all terminal SUCCESS.",
   "observed_branch": "feature/ar-1486-runtime-owner-cli-entry-wiring",
   "observed_dirty": 0,
   "observed_head": "a5f9ad27b967371511b0981aad29d3aa65a7fcab",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wire the runtime-owned local/mock process owner into ordinary CLI run and sweep.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Runtime-owner CLI entry wiring",
-  "updated_at": "2026-09-27T13:45:11+00:00",
+  "updated_at": "2026-09-27T13:45:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1486-cli-owner-wiring"
 }
 ---
@@ -163,3 +163,7 @@ authority.
 
 - 2026-09-27T13:45:11+00:00: Recorded command exit 0; command argv SHA-256
   6ab9c0b6ab2ebb3e3e04a2c9d65228c8284feae73dc1247cb5c865212fe3752d.
+
+- 2026-09-27T13:45:44+00:00: PR #360 merged normally at 2026-09-27T13:44:47Z. Merge SHA
+  79f88d3ca03120fd7d69f67cb292c96051a5e770 has two parents a6f43eb2 (protected main) and a5f9ad27
+  (reviewed signed/DCO implementation); origin/main matches. Verification query succeeded.
