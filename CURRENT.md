@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1498](tasks/AR-1498-authenticated-lifecycle-executor.md): Authenticated lifecycle artifact executor | Provide the authenticated artifact executor and activation authority behind the ASB agent lifecycle router. | Promote after coordinator review; define and implement the authenticated artifact executor and activation authority required by ASB lifecycle calls, with fail-closed restart-safe tests. | ar1498-repair-luna56 |
+| P0 | [AR-1498](tasks/AR-1498-authenticated-lifecycle-executor.md): Authenticated lifecycle artifact executor | Provide the authenticated artifact executor and activation authority behind the ASB agent lifecycle router. | Publish signed commit 75a2575085b65325b9e2245677f2db730fcf09b2 for independent review; require exact-head CI, merge integrity, post-merge verification, then release AR-1498 durably. | ar1498-repair-luna56 |
 
 ## Blocked
 
