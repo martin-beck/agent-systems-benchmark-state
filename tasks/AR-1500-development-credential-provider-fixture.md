@@ -10,7 +10,7 @@
   "id": "AR-1500",
   "next_action": "Monitor PR #379 exact-head required checks; independently review complete diff; merge only after all required checks are green, then run post-merge smoke and release AR durably.",
   "observed_branch": "feature/ar-1500-development-credential-provider-fixture",
-  "observed_dirty": 4,
+  "observed_dirty": 2,
   "observed_head": "e4f932a018795a6d707050a24a24ba55e734707e",
   "owner": "ar1500-provider-fixture-luna56",
   "plan": "../plans/AR-1500-development-credential-provider-fixture.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify generated development credentials through provider, capture and replay flows.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Development credential/provider lifecycle fixture",
-  "updated_at": "2026-09-28T19:22:52+00:00",
+  "updated_at": "2026-09-28T19:23:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1500"
 }
 ---
