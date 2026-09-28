@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**514 ARs tracked** across 5 active status categories.
+**515 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 74 |
-| **Planned** | Defined work awaiting promotion or dependencies | 51 |
+| **Planned** | Defined work awaiting promotion or dependencies | 52 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 369 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -586,6 +586,7 @@ flowchart LR
         AR_1491["AR-1491 - Done"]:::status_done
         AR_1492["AR-1492 - Done"]:::status_done
         AR_1493["AR-1493 - Done"]:::status_done
+        AR_1495["AR-1495 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1514,6 +1515,7 @@ flowchart LR
     AR_1310 --> AR_1316
     AR_1310 --> AR_1319
     AR_1314 --> AR_1315
+    AR_1314 --> AR_1495
     AR_1316 --> AR_1320
     AR_1316 --> AR_1422
     AR_1316 --> AR_1442
@@ -1767,6 +1769,7 @@ flowchart LR
     AR_1395 --> AR_1396
     AR_1395 --> AR_1401
     AR_1396 --> AR_1400
+    AR_1397 --> AR_1495
     AR_1398 --> AR_1421
     AR_1399 --> AR_1396
     AR_1399 --> AR_1400
@@ -1934,7 +1937,9 @@ flowchart LR
     AR_1489 --> AR_1491
     AR_1491 --> AR_1492
     AR_1491 --> AR_1493
+    AR_1491 --> AR_1495
     AR_1492 --> AR_1493
+    AR_1493 --> AR_1495
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -2290,7 +2295,7 @@ flowchart LR
 | [AR-1311](../tasks/AR-1311-planned-task-metadata-schema-repair.md) | None | None |
 | [AR-1312](../tasks/AR-1312-post-merge-coverage-floor.md) | None | None |
 | [AR-1313](../tasks/AR-1313-historical-dco-909078c-repair.md) | None | None |
-| [AR-1314](../tasks/AR-1314-optional-bundle-signing-development-release.md) | None | [AR-1315](../tasks/AR-1315-1307-1308-development-profile-metadata.md) |
+| [AR-1314](../tasks/AR-1314-optional-bundle-signing-development-release.md) | None | [AR-1315](../tasks/AR-1315-1307-1308-development-profile-metadata.md), [AR-1495](../tasks/AR-1495-development-unverified-bundle-profile.md) |
 | [AR-1315](../tasks/AR-1315-1307-1308-development-profile-metadata.md) | [AR-1314](../tasks/AR-1314-optional-bundle-signing-development-release.md) | None |
 | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md) | [AR-1190](../tasks/AR-1190.md), [AR-1191](../tasks/AR-1191.md), [AR-1310](../tasks/AR-1310-provider-capture-campaign.md), [AR-1319](../tasks/AR-1319-authenticated-agent-catalog-entry-contract.md) | [AR-1320](../tasks/AR-1320-persisted-agent-release-index.md), [AR-1422](../tasks/AR-1422-stale-agent-catalog-pr-cleanup.md), [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md) |
 | [AR-1319](../tasks/AR-1319-authenticated-agent-catalog-entry-contract.md) | [AR-1310](../tasks/AR-1310-provider-capture-campaign.md) | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md) |
