@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-28T23:31:54+00:00",
+  "updated_at": "2026-09-28T23:32:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -335,3 +335,6 @@ public credential/socket paths, or weakening fail-closed gates.
   bash: line 1: cd: /srv/data/projects/agent-systems-benchmark-ar-1505-control-plane-authority: No
   such file or directory. No product mutation occurred and no gate result was affected. Correcting
   only the path before retry.
+
+- 2026-09-28T23:32:02+00:00: Recorded command exit 0; command argv SHA-256
+  5bf9b678ef9bd9bd90dd8c3756e86d82e8d2162299719008b009433131f5a2f0.
