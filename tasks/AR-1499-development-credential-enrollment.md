@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair merged development credential selection binding",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Development credential enrollment contract",
-  "updated_at": "2026-09-28T18:35:18+00:00",
+  "updated_at": "2026-09-28T18:36:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1499"
 }
 ---
@@ -203,3 +203,6 @@ labelled and isolated.
   65bcdf3, preserving corrective commits 51c57d4 and 7bdda85. Dedicated repair branch
   repair/ar-1499-selection-binding updated and verified at the same head; merge-base equals
   protected base. Full local check/clippy/test/doc/release gates completed without failure.
+
+- 2026-09-28T18:36:03+00:00: Recorded command exit 0; command argv SHA-256
+  8cd9b016b39d30333e7922444bf9480c1e8183cb97a8b4f5ae560d2d2a6a7a6f.
