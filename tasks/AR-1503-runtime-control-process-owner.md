@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1503-runtime-control-process-owner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-29T00:39:06+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1473",
     "AR-1474",
@@ -16,15 +16,15 @@
   "observed_branch": "feature/ar-1503-runtime-control-process-owner",
   "observed_dirty": 3,
   "observed_head": "3c6af6b351e0c32ee8f5e48716654d854dcbbac2",
-  "owner": "ar1503-repair-luna56",
+  "owner": "",
   "plan": "../plans/AR-1503-runtime-control-process-owner.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Own the authenticated control session and hand off only an opaque live dispatch source.",
-  "task_revision": 73,
+  "task_revision": 74,
   "title": "Runtime/control process owner",
-  "updated_at": "2026-09-28T22:39:06+00:00",
+  "updated_at": "2026-09-28T22:39:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1503-runtime-control-process-owner"
 }
 ---
@@ -263,3 +263,12 @@ asb-tui, synthesize authority, or accept caller-built runtime inputs.
   08d57388abeac3a1c095ff93186ee24351040d12d34ebf7d4f49c95980a5621f.
 
 - 2026-09-28T22:39:06+00:00: Heartbeat by ar1503-repair-luna56.
+
+- 2026-09-28T22:39:31+00:00: Repair gate evidence: focused process_owner 2/2, full asb-runtime 151
+  passed/1 ignored, fmt and runtime clippy passed. Independent review found
+  RuntimeControlOwnerBootstrap and RuntimeControlProcessOwner::from_platform referenced only by
+  process_owner.rs tests; no production runtime/platform launcher/session discovery constructs or
+  invokes them. CLI entry/run/sweep still passes None,None. Existing dead_code allowances mask
+  test-only façade. Acceptance explicitly requires real launcher, so AR remains blocked; create
+  successor for launcher seam. Full workspace parallel state-root failures were unrelated and
+  serialized affected tests passed.
