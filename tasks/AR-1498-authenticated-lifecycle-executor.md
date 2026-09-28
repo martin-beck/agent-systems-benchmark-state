@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated artifact executor and activation authority behind the ASB agent lifecycle router.",
-  "task_revision": 61,
+  "task_revision": 62,
   "title": "Authenticated lifecycle artifact executor",
-  "updated_at": "2026-09-28T17:15:19+00:00",
+  "updated_at": "2026-09-28T17:15:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1498"
 }
 ---
@@ -218,3 +218,6 @@ protocol/schema fixtures consumed by AR-1199 and downstream asb-tui.
   existing control test lock race (configuration_apply restart saw state root already owned) before
   summary. Next action: rerun serialized focused/full local tests and amend signed commit; do not
   weaken coverage gates.
+
+- 2026-09-28T17:15:29+00:00: Recorded command exit 101; command argv SHA-256
+  1ce4bbab37f31afb1c8715251c46923e9874b1a457dcaf9ba15107c275797929.
