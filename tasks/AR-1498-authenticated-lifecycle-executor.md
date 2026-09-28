@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1498-authenticated-lifecycle-executor",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-28T17:03:11+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1018",
     "AR-1019",
@@ -16,15 +16,15 @@
   "observed_branch": "feature/ar-1498-authenticated-lifecycle-executor",
   "observed_dirty": 1,
   "observed_head": "8c53a4a62ecaa6fecc9eb195a105fc368a3395c8",
-  "owner": "ar1498-lifecycle-executor",
+  "owner": "",
   "plan": "../plans/AR-1498.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Provide the authenticated artifact executor and activation authority behind the ASB agent lifecycle router.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Authenticated lifecycle artifact executor",
-  "updated_at": "2026-09-28T15:06:28+00:00",
+  "updated_at": "2026-09-28T16:42:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1498"
 }
 ---
@@ -50,3 +50,7 @@ protocol/schema fixtures consumed by AR-1199 and downstream asb-tui.
 
 - 2026-09-28T15:04:22+00:00: Recorded command exit 0; command argv SHA-256
   9535b5c71d4da7776f57501570e066f9abc80c9403a1abe7a165e323102ef2c4.
+
+- 2026-09-28T16:42:24+00:00: Coordinator-authorized takeover: owner process absent; partial attempt
+  independently reviewed as incomplete/non-compiling. Release claim for repair worker without
+  deleting worktree or evidence.
