@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supply the runtime-owned authenticated bootstrap authority required for normal live dispatch.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Runtime-owned bootstrap authority",
-  "updated_at": "2026-09-28T21:24:01+00:00",
+  "updated_at": "2026-09-28T21:24:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1502"
 }
 ---
@@ -182,3 +182,9 @@ dependency-safe and must not synthesize authority or accept caller-built input.
 
 - 2026-09-28T21:24:01+00:00: Recorded command exit 0; command argv SHA-256
   f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
+
+- 2026-09-28T21:24:26+00:00: Formatting gate initially exited 1 only for rustfmt wrapping at
+  live_service.rs:317; coordinator-wrapped cargo fmt --all applied it, and the subsequent cargo fmt
+  --all -- --check exited 0. A concurrently started clippy command exited with LOCK_TIMEOUT after
+  10s acquiring the coordinator lock (coordination serialization, not a Rust failure); rerun clippy
+  serially next.
