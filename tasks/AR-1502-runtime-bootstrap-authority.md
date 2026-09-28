@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supply the runtime-owned authenticated bootstrap authority required for normal live dispatch.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Runtime-owned bootstrap authority",
-  "updated_at": "2026-09-28T21:19:35+00:00",
+  "updated_at": "2026-09-28T21:19:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1502"
 }
 ---
@@ -133,3 +133,9 @@ dependency-safe and must not synthesize authority or accept caller-built input.
 
 - 2026-09-28T21:19:35+00:00: Recorded command exit 0; command argv SHA-256
   5e71927274445dfb278b1b0a6beff73cb590c4b98443fd397ac7b5512a356d1a.
+
+- 2026-09-28T21:19:58+00:00: Exact wrapper outcomes: exit 1 at 21:19:04 was the second apply_patch
+  attempt, rejected because the expected context differed (the prior failed patch had not changed
+  product; no product mutation). Exit 0 at 21:19:35 was the safely quoted apply_patch, which added
+  the sealed RuntimeBootstrapAuthoritySource and RuntimeCertificateAuthoritySource adapter; focused
+  tests are next.
