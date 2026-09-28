@@ -8,7 +8,7 @@
     "AR-1500"
   ],
   "id": "AR-1501",
-  "next_action": "Obtain independent review of PR #380, verify exact-head required checks and DCO/signature, then merge only through protected signed merge workflow if all gates are green.",
+  "next_action": "Add explicit bounded provider/auth/reference fields to RemoteVerificationRequestV1, call enrollment validation before verify_remote, add positive and tamper tests, then commit signed corrective revision and rerun gates.",
   "observed_branch": "feature/ar-1501-production-credential-hardening",
   "observed_dirty": 0,
   "observed_head": "c16eed3ce8683d764ff4d6756df36fcc30d3db7c",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Track production credential secrecy and authentication hardening after the prototype.",
-  "task_revision": 57,
+  "task_revision": 58,
   "title": "Production credential hardening follow-up",
-  "updated_at": "2026-09-28T20:15:15+00:00",
+  "updated_at": "2026-09-28T20:15:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1501"
 }
 ---
@@ -190,3 +190,8 @@ This AR is intentionally not required for the development build cycle.
 
 - 2026-09-28T20:15:15+00:00: Recorded command exit 8; command argv SHA-256
   28804214794126f12c55a4726beb81b50b24699fa9524a150149c5ac68eea688.
+
+- 2026-09-28T20:15:46+00:00: Independent review of PR #380 found remote-verification request omitted
+  provider family, auth method, and secret-reference identity, preventing adapter-side enforcement
+  without ambient lookup. Repair request fields, validate persisted enrollment before dispatch, add
+  exact-binding assertions, rerun focused/full gates.

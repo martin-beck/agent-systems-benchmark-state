@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| P0 | [AR-1484](../tasks/AR-1484-runtime-control-owner-contract.md): Runtime/control process-owner contract | Unclaimed | Define stable runtime/control process-owner lifecycle and opaque handoff contract. | Reconcile/doctor, then release AR-1484 done ownerless with complete merge/post-merge evidence. |
 | P0 | [AR-1485](../tasks/AR-1485-process-owner-local-mock-lifecycle.md): Process-owner local/mock lifecycle | Unclaimed | Implement runtime-owned local/mock process lifecycle and opaque-source handoff. | Release complete; retain exact merge and eight workflow evidence. |
 | P0 | [AR-1486](../tasks/AR-1486-runtime-owner-cli-entry-wiring.md): Runtime-owner CLI entry wiring | Unclaimed | Wire the runtime-owned local/mock process owner into ordinary CLI run and sweep. | Release complete; retain exact merge and eight workflow evidence. |
 | P0 | [AR-1487](../tasks/AR-1487-owner-backed-first-customer-qualification.md): Owner-backed first-customer qualification | Unclaimed | Qualify the owner-backed credential-free local/mock/replay first-customer journey. | Reconcile and doctor state projection; retain known generated WORKTREES/PROJECT_STATE caveat if reported. |
