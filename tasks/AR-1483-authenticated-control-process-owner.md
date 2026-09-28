@@ -12,16 +12,16 @@
   "next_action": "Promote and claim, then audit whether the runtime/control owner contract can be implemented without caller authority.",
   "observed_branch": "feature/ar-1483-authenticated-control-process-owner",
   "observed_dirty": 0,
-  "observed_head": "eff9984fd11bec55e1e23366b3bba0bcb717826a",
+  "observed_head": "3c6af6b351e0c32ee8f5e48716654d854dcbbac2",
   "owner": "ar1483-owner-integration-luna56",
   "plan": "../plans/AR-1483-authenticated-control-process-owner.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Own authenticated control session and lifecycle while minting opaque CLI dispatch sources.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Authenticated control process owner",
-  "updated_at": "2026-09-28T21:59:05+00:00",
+  "updated_at": "2026-09-28T21:59:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1483-authenticated-control-process-owner"
 }
 ---
