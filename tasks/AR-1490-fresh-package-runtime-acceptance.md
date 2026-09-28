@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run fresh package first-customer runtime acceptance and produce an explicit readiness report.",
-  "task_revision": 88,
+  "task_revision": 89,
   "title": "Fresh package runtime acceptance",
-  "updated_at": "2026-09-28T15:15:32+00:00",
+  "updated_at": "2026-09-28T15:15:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1490-fresh-package-runtime-acceptance"
 }
 ---
@@ -321,3 +321,6 @@ when exact package or clean-environment inputs are absent.
   bin/ar1490-fixture-agent helpers, so enumeration correctly failed closed. This is an
   acceptance-root contamination error, not a product defect. Next action: extract the exact archive
   into a separate clean verifier root and keep runtime helpers in the execution install root only.
+
+- 2026-09-28T15:15:45+00:00: Recorded command exit 0; command argv SHA-256
+  0274a5a12f6e2c37e68f3fd7620064f997863c5b1a0f6edc72fd15735f175b7d.
