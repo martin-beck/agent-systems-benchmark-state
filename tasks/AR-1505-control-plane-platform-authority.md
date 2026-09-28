@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-28T23:10:58+00:00",
+  "updated_at": "2026-09-28T23:11:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -137,3 +137,6 @@ public credential/socket paths, or weakening fail-closed gates.
   tests.
 
 - 2026-09-28T23:10:58+00:00: Heartbeat by ar1505-control-plane-luna56.
+
+- 2026-09-28T23:11:17+00:00: Recorded command exit 0; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
