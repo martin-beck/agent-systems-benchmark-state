@@ -10,7 +10,7 @@
     "AR-1489"
   ],
   "id": "AR-1490",
-  "next_action": "Re-run the development verifier smoke test with the exact accepted profile arguments after classifying the exit-2 invocation; then continue cleanup and final gates.",
+  "next_action": "Create a clean verifier root from the exact development bundle archive, leaving installed CLI and fixture helpers outside that root; rerun unsigned-development verification with the bounded placeholder signature, then remove temporary helpers and run final gates.",
   "observed_branch": "qualification/ar-1490-fresh-package-runtime-acceptance",
   "observed_dirty": 3,
   "observed_head": "45df6590cbf9ab75f07dcc0b753335949e28d937",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run fresh package first-customer runtime acceptance and produce an explicit readiness report.",
-  "task_revision": 87,
+  "task_revision": 88,
   "title": "Fresh package runtime acceptance",
-  "updated_at": "2026-09-28T15:14:59+00:00",
+  "updated_at": "2026-09-28T15:15:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1490-fresh-package-runtime-acceptance"
 }
 ---
@@ -312,3 +312,12 @@ when exact package or clean-environment inputs are absent.
 
 - 2026-09-28T15:14:59+00:00: Recorded command exit 2; command argv SHA-256
   0ea33d8e77fb93f7bba377fb23d135003b4f010654080aa5fdb5b04249115f0f.
+
+- 2026-09-28T15:15:32+00:00: 2026-09-28T15:14:59+00:00: Reproduced the prior exit-2 exactly. The
+  installed verifier reached content validation and reported: bundle verification failed: runtime
+  bundle content mismatch: signed inventory does not equal bundle files. The clean bundle manifest
+  inventories LICENSE, bin/asb_loopback_sidecar, bin/asb_loopback_supervisor, sbom.spdx.json, and
+  sbom.cdx.json; the acceptance install root also contained non-bundle bin/asb and
+  bin/ar1490-fixture-agent helpers, so enumeration correctly failed closed. This is an
+  acceptance-root contamination error, not a product defect. Next action: extract the exact archive
+  into a separate clean verifier root and keep runtime helpers in the execution install root only.
