@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-28T23:26:00+00:00",
+  "updated_at": "2026-09-28T23:26:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -267,3 +267,10 @@ public credential/socket paths, or weakening fail-closed gates.
   /srv/data/projects/agent-systems-benchmark-state and emitted  (exit 101). This was a
   command-cwd/setup error, not a product compiler or test failure; the corrected explicit
   product-worktree cd command passed 4/4 serial.
+
+- 2026-09-28T23:26:11+00:00: Correction: the prior exact-disposition note lost the stderr token due
+  shell backtick expansion while recording. Exact stderr for
+  ccfc6f0a1e826328dbed13f5b9f2f71a67021bc3e60e7ea80709f3429f90299a was: error: could not find
+  Cargo.toml in /srv/data/projects/agent-systems-benchmark-state or any parent directory. No product
+  gate ran in that invocation; explicit product-worktree cd then passed schema_conformance 4/4
+  serial.
