@@ -14,17 +14,17 @@
   "id": "AR-1498",
   "next_action": "Promote after coordinator review; define and implement the authenticated artifact executor and activation authority required by ASB lifecycle calls, with fail-closed restart-safe tests.",
   "observed_branch": "feature/ar-1498-authenticated-lifecycle-executor",
-  "observed_dirty": 2,
-  "observed_head": "8c53a4a62ecaa6fecc9eb195a105fc368a3395c8",
+  "observed_dirty": 0,
+  "observed_head": "75a2575085b65325b9e2245677f2db730fcf09b2",
   "owner": "ar1498-repair-luna56",
   "plan": "../plans/AR-1498.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated artifact executor and activation authority behind the ASB agent lifecycle router.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Authenticated lifecycle artifact executor",
-  "updated_at": "2026-09-28T17:01:46+00:00",
+  "updated_at": "2026-09-28T17:02:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1498"
 }
 ---
