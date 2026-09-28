@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supply the runtime-owned authenticated bootstrap authority required for normal live dispatch.",
-  "task_revision": 64,
+  "task_revision": 65,
   "title": "Runtime-owned bootstrap authority",
-  "updated_at": "2026-09-28T21:29:05+00:00",
+  "updated_at": "2026-09-28T21:29:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1502"
 }
 ---
@@ -238,3 +238,9 @@ dependency-safe and must not synthesize authority or accept caller-built input.
 
 - 2026-09-28T21:29:05+00:00: Recorded command exit 0; command argv SHA-256
   165b66592d52ddd4e707177d6fbd75dd46166e641fe1d35c2e6222ed3e115a0b.
+
+- 2026-09-28T21:29:44+00:00: Gate annotation: 21:28:47 exit 0 was coordinator-wrapped cargo test -p
+  asb-runtime live_service::tests::bootstrap_ --no-fail-fast (6/6 bootstrap tests passed; all
+  filtered targets compiled). 21:29:05 exit 0 was coordinator-wrapped cargo fmt --all -- --check
+  after the visibility/dead-code repair. Serial clippy immediately after also completed with
+  Finished dev profile and no diagnostics; diff review follows.
