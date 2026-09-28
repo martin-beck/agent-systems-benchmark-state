@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add an explicit development-only unverified bundle profile without weakening production or customer-release verification.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Development-only unverified bundle profile",
-  "updated_at": "2026-09-28T13:06:21+00:00",
+  "updated_at": "2026-09-28T13:07:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1495-development-unverified-bundle-profile"
 }
 ---
@@ -101,3 +101,6 @@ above.
   be0b78e482ea004600dc60974e3eb629fe19aba615d56ddf85fc3ed7d777457c.
 
 - 2026-09-28T13:06:21+00:00: Heartbeat by ar1332-record-replay-luna56.
+
+- 2026-09-28T13:07:14+00:00: Recorded command exit 0; command argv SHA-256
+  78041b3e7e13276795cd5715bb05c8a7632d9913e4b86fb941ae87d0c4cdd4ee.
