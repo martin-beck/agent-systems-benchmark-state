@@ -181,7 +181,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1502](../tasks/AR-1502-runtime-bootstrap-authority.md): Runtime-owned bootstrap authority | ar1502-repair-restart-luna56 | Supply the runtime-owned authenticated bootstrap authority required for normal live dispatch. | Implement the runtime-owned bootstrap source and store enrollment seam in the isolated worktree; add deterministic local/mock positive and negative tests before broader gates. |
+| P0 | [AR-1502](../tasks/AR-1502-runtime-bootstrap-authority.md): Runtime-owned bootstrap authority | ar1502-repair-restart-luna56 | Supply the runtime-owned authenticated bootstrap authority required for normal live dispatch. | Independent review of b62664c8710e25752730762016659a300b5a896a, then exact-head hosted gates; retain workspace asb-metrics flake as external baseline evidence unless reproduced. |
 
 ### Blocked (74)
 

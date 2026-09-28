@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1502-runtime-bootstrap-authority",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "b62664c8710e25752730762016659a300b5a896a",
   "claim_expires": "2026-09-28T22:01:12+00:00",
   "depends_on": [
     "AR-1473",
@@ -10,7 +10,7 @@
     "AR-1501"
   ],
   "id": "AR-1502",
-  "next_action": "Implement the runtime-owned bootstrap source and store enrollment seam in the isolated worktree; add deterministic local/mock positive and negative tests before broader gates.",
+  "next_action": "Independent review of b62664c8710e25752730762016659a300b5a896a, then exact-head hosted gates; retain workspace asb-metrics flake as external baseline evidence unless reproduced.",
   "observed_branch": "feature/ar-1502-runtime-bootstrap-authority",
   "observed_dirty": 0,
   "observed_head": "b62664c8710e25752730762016659a300b5a896a",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supply the runtime-owned authenticated bootstrap authority required for normal live dispatch.",
-  "task_revision": 70,
+  "task_revision": 71,
   "title": "Runtime-owned bootstrap authority",
-  "updated_at": "2026-09-28T21:31:12+00:00",
+  "updated_at": "2026-09-28T21:31:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1502"
 }
 ---
@@ -255,3 +255,11 @@ dependency-safe and must not synthesize authority or accept caller-built input.
   81ccce9b3a4946dfad84c25cca49a3dde371c63bfad21b3ffca3c466a3878416.
 
 - 2026-09-28T21:31:12+00:00: Heartbeat by ar1502-repair-restart-luna56.
+
+- 2026-09-28T21:31:26+00:00: Committed SSH-signed+DCO b62664c8710e25752730762016659a300b5a896a.
+  Final diff is live_service.rs plus AUTH_ENROLLMENT.md: sealed runtime source, full
+  session/namespace/relay/lease/credential/expiry binding, source-only store enrollment, receipt
+  validation, revoke/restart fail-closed, and crate-private legacy ingestion. Gates: focused
+  bootstrap 6/6, runtime 149 passed/1 ignored, fmt check, serial clippy, diff check all passed.
+  Workspace test had one order-sensitive pre-existing asb-metrics mismatch (MalformedEvidence
+  expected, ProbeRejected observed); isolated test passed.
