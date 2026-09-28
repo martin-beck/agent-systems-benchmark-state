@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-28T23:11:39+00:00",
+  "updated_at": "2026-09-28T23:12:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -143,3 +143,9 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-28T23:11:39+00:00: Recorded command exit 101; command argv SHA-256
   7fc852536b8fb5ccc5f554968a228534cdc199e2aba684765a68f5bc9084a7b6.
+
+- 2026-09-28T23:12:01+00:00: Exact gate at 23:11:39Z: handoffctl run -- cargo clippy --locked -p
+  asb-control -p asb-runtime -p asb-cli --all-targets -- -D warnings exited 101. Four
+  clippy::nonminimal_bool errors in asb-control/src/protocol.rs:1623-1626 used
+  !validate_digest(...).is_ok(); repaired to validate_digest(...).is_err(). The preceding cargo fmt
+  --check passed.
