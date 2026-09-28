@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a development-only credential enrollment contract for the setup wizard.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Development credential enrollment contract",
-  "updated_at": "2026-09-28T17:54:18+00:00",
+  "updated_at": "2026-09-28T17:54:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1499"
 }
 ---
@@ -32,3 +32,6 @@ labelled and isolated.
 - 2026-09-28T17:52:57+00:00: Claimed by ar1499-credential-enrollment-luna56.
 
 - 2026-09-28T17:54:18+00:00: Heartbeat by ar1499-credential-enrollment-luna56.
+
+- 2026-09-28T17:54:38+00:00: Recorded command exit 0; command argv SHA-256
+  076fe524537ec3a75da38298f6a6861e1c359e988a56c0d8a8a49258fb08bb43.
