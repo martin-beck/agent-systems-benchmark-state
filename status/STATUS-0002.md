@@ -180,7 +180,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1499](../tasks/AR-1499-development-credential-enrollment.md): Development credential enrollment contract | ar1499-credential-enrollment-luna56 | Implement versioned development credential enrollment contract with deterministic local/mock identity | Create the signed DCO commit from the reviewed clean diff, push the exact branch, open PR, and wait for all required exact-head checks. |
+| P0 | [AR-1499](../tasks/AR-1499-development-credential-enrollment.md): Development credential enrollment contract | ar1499-credential-enrollment-luna56 | Implement versioned development credential enrollment contract with deterministic local/mock identity | PR #377 is open at exact reviewed head 86bb90c; monitor independent review and all required exact-head CI checks, repair any failures before merge. |
 
 ### Blocked (74)
 

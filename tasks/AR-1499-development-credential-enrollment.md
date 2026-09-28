@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1499-development-credential-enrollment",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "86bb90ceb44d9cfed8e56500ba7c6e0297767bcf",
   "claim_expires": "2026-09-28T19:54:18+00:00",
   "depends_on": [
     "AR-1442",
     "AR-1496"
   ],
   "id": "AR-1499",
-  "next_action": "Create the signed DCO commit from the reviewed clean diff, push the exact branch, open PR, and wait for all required exact-head checks.",
+  "next_action": "PR #377 is open at exact reviewed head 86bb90c; monitor independent review and all required exact-head CI checks, repair any failures before merge.",
   "observed_branch": "feature/ar-1499-development-credential-enrollment",
   "observed_dirty": 0,
   "observed_head": "86bb90ceb44d9cfed8e56500ba7c6e0297767bcf",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement versioned development credential enrollment contract with deterministic local/mock identity",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Development credential enrollment contract",
-  "updated_at": "2026-09-28T18:08:23+00:00",
+  "updated_at": "2026-09-28T18:08:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1499"
 }
 ---
@@ -73,3 +73,7 @@ labelled and isolated.
 
 - 2026-09-28T18:08:23+00:00: Recorded command exit 0; command argv SHA-256
   1dd205e08c1c70282b67c15e6e13176cb9ac6360c08c45e13702fae83f9aea22.
+
+- 2026-09-28T18:08:49+00:00: Signed+DCO commit 86bb90ceb44d9cfed8e56500ba7c6e0297767bcf verified
+  with Martin Beck SSH key SHA256:a36V6yPvRZyxnQ2113tiA/MlHt7mPfJEXAGByBXVkuE. Exact branch pushed
+  and PR #377 opened: https://github.com/martin-beck/agent-systems-benchmark/pull/377.
