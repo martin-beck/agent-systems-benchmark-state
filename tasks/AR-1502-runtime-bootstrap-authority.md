@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supply the runtime-owned authenticated bootstrap authority required for normal live dispatch.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Runtime-owned bootstrap authority",
-  "updated_at": "2026-09-28T21:16:02+00:00",
+  "updated_at": "2026-09-28T21:16:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1502"
 }
 ---
@@ -109,3 +109,6 @@ dependency-safe and must not synthesize authority or accept caller-built input.
 - 2026-09-28T21:16:02+00:00: Fresh repair worker read complete AWQ and ASB coordination
   instructions; preserved prior live_service.rs seam audit/diff at 7167e3d. Next: reproduce exact
   cargo failures through handoffctl and repair authority boundary without caller bypass.
+
+- 2026-09-28T21:16:11+00:00: Recorded command exit 101; command argv SHA-256
+  1415b9baa15767351fea9e11ff5ce8985cdcf78b05aa68506b1d2bd9d4f6d2bd.
