@@ -10,17 +10,17 @@
   "id": "AR-1501",
   "next_action": "Add explicit bounded provider/auth/reference fields to RemoteVerificationRequestV1, call enrollment validation before verify_remote, add positive and tamper tests, then commit signed corrective revision and rerun gates.",
   "observed_branch": "feature/ar-1501-production-credential-hardening",
-  "observed_dirty": 2,
-  "observed_head": "c16eed3ce8683d764ff4d6756df36fcc30d3db7c",
+  "observed_dirty": 0,
+  "observed_head": "eb2239ab2f4643601eff22a574386076ad6e1bf6",
   "owner": "ar1501-credential-contract-repair-luna56",
   "plan": "../plans/AR-1501-production-credential-hardening.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Track production credential secrecy and authentication hardening after the prototype.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Production credential hardening follow-up",
-  "updated_at": "2026-09-28T20:17:42+00:00",
+  "updated_at": "2026-09-28T20:17:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1501"
 }
 ---
