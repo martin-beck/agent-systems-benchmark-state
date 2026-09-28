@@ -9,7 +9,8 @@
     "AR-1020",
     "AR-1190",
     "AR-1191",
-    "AR-1496"
+    "AR-1496",
+    "AR-1498"
   ],
   "id": "AR-1199",
   "next_action": "Blocked: authenticated renderer-neutral router and owner-only control transport are already on protected main; remaining AgentInstall/Status/Cancel/Retry/Remove backend is intentionally fail-closed at crates/asb-cli/src/control.rs:3088 because no lifecycle artifact executor/activation authority exists. Need an authorized lifecycle executor contract or successor AR before implementation.",
