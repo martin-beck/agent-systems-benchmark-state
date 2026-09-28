@@ -174,7 +174,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md): Authenticated TUI install router | ar1199-router-impl | Expose an authenticated renderer-neutral ASB router for asb tui install and lifecycle operations. | Promote after AR-1496 successor evidence and all router dependencies are reconciled; implement the renderer-neutral authenticated CLI/control route and full integration tests. |
+| P0 | [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md): Authenticated TUI install router | ar1199-router-impl | Expose an authenticated renderer-neutral ASB router for asb tui install and lifecycle operations. | Create isolated AR worktree from exact origin/main; inspect asb-cli and asb-control routing seams, then implement authenticated tui lifecycle dispatch with fixtures and integration tests. |
 | P0 | [AR-1490](../tasks/AR-1490-fresh-package-runtime-acceptance.md): Fresh package runtime acceptance | ar1490-dev-acceptance-luna56 | Run fresh package first-customer runtime acceptance and produce an explicit readiness report. | Correct the generated TOML plan to use the nested ExperimentManifestV1 tables expected by the CLI, revalidate with installed asb plan, then execute run/sweep and recovery checks. |
 
 ### Blocked (73)

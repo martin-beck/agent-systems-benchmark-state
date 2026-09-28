@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1199-authenticated-tui-install-router",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "45df6590cbf9ab75f07dcc0b753335949e28d937",
   "claim_expires": "2026-09-28T16:55:06+00:00",
   "depends_on": [
     "AR-1018",
@@ -12,16 +12,16 @@
     "AR-1496"
   ],
   "id": "AR-1199",
-  "next_action": "Promote after AR-1496 successor evidence and all router dependencies are reconciled; implement the renderer-neutral authenticated CLI/control route and full integration tests.",
+  "next_action": "Create isolated AR worktree from exact origin/main; inspect asb-cli and asb-control routing seams, then implement authenticated tui lifecycle dispatch with fixtures and integration tests.",
   "owner": "ar1199-router-impl",
   "plan": "../plans/AR-1199.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Expose an authenticated renderer-neutral ASB router for asb tui install and lifecycle operations.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Authenticated TUI install router",
-  "updated_at": "2026-09-28T14:55:06+00:00",
+  "updated_at": "2026-09-28T14:55:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1199"
 }
 ---
@@ -36,3 +36,6 @@ repository.
   completed successor AR-1496; all router dependencies are done.
 
 - 2026-09-28T14:55:06+00:00: Claimed by ar1199-router-impl.
+
+- 2026-09-28T14:55:49+00:00: Checkpoint: claimed AR at exact origin/main base; isolated worktree
+  creation and renderer-neutral routing inspection are next.
