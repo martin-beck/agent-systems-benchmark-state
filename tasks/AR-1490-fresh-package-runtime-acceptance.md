@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run fresh package first-customer runtime acceptance and produce an explicit readiness report.",
-  "task_revision": 93,
+  "task_revision": 94,
   "title": "Fresh package runtime acceptance",
-  "updated_at": "2026-09-28T15:16:55+00:00",
+  "updated_at": "2026-09-28T15:17:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1490-fresh-package-runtime-acceptance"
 }
 ---
@@ -343,3 +343,6 @@ when exact package or clean-environment inputs are absent.
   clean root under default signed policy correctly failed closed with runtime bundle signature
   verification failed (exit 2). This confirms the unsigned bypass is explicit and bounded; no
   production/customer release claim.
+
+- 2026-09-28T15:17:03+00:00: Recorded command exit 0; command argv SHA-256
+  d04aa803a9fcb854b247572f9b417fd1935a57ca978bb887d2e7c188e99db043.
