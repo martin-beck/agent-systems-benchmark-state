@@ -8,7 +8,7 @@
     "AR-1500"
   ],
   "id": "AR-1501",
-  "next_action": "Run full applicable workspace formatting, clippy, tests, docs and build gates; independently review exact commit before publication.",
+  "next_action": "Publish exact clean signed commit c16eed3 through handoffctl, then obtain independent review and exact-head CI.",
   "observed_branch": "feature/ar-1501-production-credential-hardening",
   "observed_dirty": 0,
   "observed_head": "c16eed3ce8683d764ff4d6756df36fcc30d3db7c",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Track production credential secrecy and authentication hardening after the prototype.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Production credential hardening follow-up",
-  "updated_at": "2026-09-28T20:12:57+00:00",
+  "updated_at": "2026-09-28T20:13:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1501"
 }
 ---
@@ -164,3 +164,10 @@ This AR is intentionally not required for the development build cycle.
 
 - 2026-09-28T20:12:57+00:00: Recorded command exit 0; command argv SHA-256
   b7c1bd7abcc21a2d2b7851e3c19b5eece224e6abf67ab56b582453c98727e148.
+
+- 2026-09-28T20:13:14+00:00: Workspace test evidence: the initial parallel cargo test --locked
+  --workspace recorded exit 101, but its output was truncated before the failing test name.
+  Independent package runs for all 15 workspace crates passed, including asb-agents; a serial
+  workspace rerun with --no-fail-fast -- --test-threads=1 also exited 0. No failure reproduces and
+  no product-specific test is implicated; preserve the original exit as a non-reproducible
+  parallel-run failure, not a publication/CI failure.
