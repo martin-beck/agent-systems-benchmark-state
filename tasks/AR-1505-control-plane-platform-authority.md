@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-28T23:13:17+00:00",
+  "updated_at": "2026-09-28T23:13:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -160,3 +160,10 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-28T23:13:17+00:00: Recorded command exit 101; command argv SHA-256
   41d9e7ab675a15433922e000e6344bdcbbc8b7a1ce999cfa353e5747a4031238.
+
+- 2026-09-28T23:13:44+00:00: Exact gate at 23:13:17Z: handoffctl run -- cargo test --locked -p
+  asb-cli --lib --no-fail-fast ran 129 tests; 128 passed, 1 failed in existing
+  control::tests::production_backend_runs_without_frontend_and_recovers_idempotency at
+  control.rs:8325, unwrap Err operation: control state root is already owned. This is a test-root
+  ownership collision/cleanup issue outside the bootstrap diff; no compiler or bootstrap assertion
+  failed. Runtime live_service focused suite separately passed 47 tests.
