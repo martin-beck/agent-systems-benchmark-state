@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1504",
-  "next_action": "Await AR-1503 protected merge; then rebase this isolated branch and implement production launcher/session-discovery seam against the merged owner. In parallel inspect existing runtime/CLI boundaries and draft tests.",
+  "next_action": "Implement the missing runtime-owned platform adapter/session locator on protected main, with authenticated socket ownership/permissions, private input construction, opaque source handoff and lifecycle tests; do not copy AR-1503 fa\u00e7ade. If platform authority contract cannot be established from existing control protocol, create a narrowly scoped successor AR for that protocol contract with exact symbols and keep this AR blocked.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the real runtime/platform-owned launcher and authenticated session discovery for AR-1503.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Runtime/platform launcher seam",
-  "updated_at": "2026-09-28T22:46:43+00:00",
+  "updated_at": "2026-09-28T22:47:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1504-runtime-platform-launcher-seam"
 }
 ---
@@ -76,3 +76,16 @@ caller-built runtime inputs, or weakening native/credential/egress gates.
   product files changed.
 
 - 2026-09-28T22:46:43+00:00: Heartbeat by ar1504-launcher-luna56.
+
+- 2026-09-28T22:47:36+00:00: Exact protected-main symbol audit: asb-cli::run at
+  crates/asb-cli/src/lib.rs:96 invokes dispatch(args, stdout, stderr, None, None), while
+  live-provider branches at lines 402-430 pass optional LiveProviderAttemptFactory; only
+  run_with_runtime_control_source (lines 212-229) accepts an opaque source and fails closed. AR-1502
+  exposes RuntimeBootstrapRequestV1, RuntimeCertificateChainStore,
+  RuntimeCertificateAuthoritySource::new, RuntimeAuthorityInputResolver, and
+  LiveProviderRuntimeBridge, but constructors needed for authenticated platform inputs remain
+  crate-private and no default control-session discovery exists. Existing control client requires
+  caller path via ControlClient::connect_with_versions; no fixed runtime-owned socket locator is
+  defined. A real AR-1504 implementation therefore needs a new runtime-owned platform adapter that
+  authenticates/discovers the control endpoint and constructs private authority inputs; simply
+  wrapping optional inputs would be another façade and is rejected.
