@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P2 | [AR-1501](tasks/AR-1501-production-credential-hardening.md): Production credential hardening follow-up | Track production credential secrecy and authentication hardening after the prototype. | Add explicit bounded provider/auth/reference fields to RemoteVerificationRequestV1, call enrollment validation before verify_remote, add positive and tamper tests, then commit signed corrective revision and rerun gates. | ar1501-credential-contract-repair-luna56 |
+| P2 | [AR-1501](tasks/AR-1501-production-credential-hardening.md): Production credential hardening follow-up | Track production credential secrecy and authentication hardening after the prototype. | Push corrective exact head, rerun required local/full applicable gates, then refresh PR #380 checks and independent review before merge. | ar1501-credential-contract-repair-luna56 |
 
 ## Blocked
 

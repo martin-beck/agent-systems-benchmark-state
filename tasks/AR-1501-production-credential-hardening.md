@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1501-production-credential-hardening",
-  "checkpoint_commit": "c16eed3ce8683d764ff4d6756df36fcc30d3db7c",
+  "checkpoint_commit": "eb2239ab2f4643601eff22a574386076ad6e1bf6",
   "claim_expires": "2026-09-28T22:15:12+00:00",
   "depends_on": [
     "AR-1499",
     "AR-1500"
   ],
   "id": "AR-1501",
-  "next_action": "Add explicit bounded provider/auth/reference fields to RemoteVerificationRequestV1, call enrollment validation before verify_remote, add positive and tamper tests, then commit signed corrective revision and rerun gates.",
+  "next_action": "Push corrective exact head, rerun required local/full applicable gates, then refresh PR #380 checks and independent review before merge.",
   "observed_branch": "feature/ar-1501-production-credential-hardening",
   "observed_dirty": 0,
   "observed_head": "eb2239ab2f4643601eff22a574386076ad6e1bf6",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Track production credential secrecy and authentication hardening after the prototype.",
-  "task_revision": 66,
+  "task_revision": 67,
   "title": "Production credential hardening follow-up",
-  "updated_at": "2026-09-28T20:17:56+00:00",
+  "updated_at": "2026-09-28T20:18:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1501"
 }
 ---
@@ -210,3 +210,9 @@ This AR is intentionally not required for the development build cycle.
 
 - 2026-09-28T20:17:42+00:00: Recorded command exit 0; command argv SHA-256
   a990875b08061387c8b0eb2272bfacad90b99adae6195deaced5a510476f1d2e.
+
+- 2026-09-28T20:18:03+00:00: Applied independent-review repair in signed/DCO commit eb2239a.
+  RemoteVerificationRequestV1 now carries provider family, auth method, SecretReferenceV1 and
+  generation; verify_remote validates persisted enrollment before any verifier dispatch; tests
+  assert exact request binding and tampered persisted method is rejected. Focused 7/7 tests, package
+  clippy, formatting pass.
