@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supply the runtime-owned authenticated bootstrap authority required for normal live dispatch.",
-  "task_revision": 71,
+  "task_revision": 72,
   "title": "Runtime-owned bootstrap authority",
-  "updated_at": "2026-09-28T21:31:26+00:00",
+  "updated_at": "2026-09-28T21:32:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1502"
 }
 ---
@@ -263,3 +263,11 @@ dependency-safe and must not synthesize authority or accept caller-built input.
   bootstrap 6/6, runtime 149 passed/1 ignored, fmt check, serial clippy, diff check all passed.
   Workspace test had one order-sensitive pre-existing asb-metrics mismatch (MalformedEvidence
   expected, ProbeRejected observed); isolated test passed.
+
+- 2026-09-28T21:32:04+00:00: Independent diff review of b62664c against AR-1502 plan: PASS. Runtime
+  store production population is only enroll_from_authority; install and chain are
+  cfg(test)/crate-private; source trait is sealed and its constructor crate-private; legacy bridge
+  receipt/profile ingestion is crate-private; request_control_receipt obtains only active
+  source-issued chain and rejects chain/receipt/root/expiry drift. Full runtime tests and
+  clippy/fmt/diff checks passed. No public caller-built authority bypass found. Workspace-only
+  asb-metrics order-sensitive baseline mismatch remains explicitly recorded; isolated test passes.
