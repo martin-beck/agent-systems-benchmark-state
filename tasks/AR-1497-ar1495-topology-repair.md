@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair AR-1495 protected-main synchronization topology without changing product semantics.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "AR-1495 protected-main topology repair",
-  "updated_at": "2026-09-28T13:39:59+00:00",
+  "updated_at": "2026-09-28T13:40:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1497-ar1495-topology-repair"
 }
 ---
@@ -64,3 +64,6 @@ post-merge workflows.
   the exact AR-1495 tree and removing historical sync merges from the topic spine. Published PR
   #374: https://github.com/martin-beck/agent-systems-benchmark/pull/374. No product files or
   signature semantics changed.
+
+- 2026-09-28T13:40:26+00:00: Recorded command exit 0; command argv SHA-256
+  51fe0d867b96ad83867116525474466e1830598d789e103f963678594c8b2c1b.
