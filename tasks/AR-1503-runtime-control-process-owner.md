@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1503",
-  "next_action": "Rerun fmt and focused process_owner tests with unique private fixture roots.",
+  "next_action": "Rerun fmt and focused process_owner tests with short private socket paths.",
   "observed_branch": "feature/ar-1503-runtime-control-process-owner",
   "observed_dirty": 3,
   "observed_head": "3c6af6b351e0c32ee8f5e48716654d854dcbbac2",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Own the authenticated control session and hand off only an opaque live dispatch source.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Runtime/control process owner",
-  "updated_at": "2026-09-28T22:25:35+00:00",
+  "updated_at": "2026-09-28T22:25:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1503-runtime-control-process-owner"
 }
 ---
@@ -149,3 +149,8 @@ asb-tui, synthesize authority, or accept caller-built runtime inputs.
 
 - 2026-09-28T22:25:35+00:00: Recorded command exit 101; command argv SHA-256
   f99db2e56cd443f593f1572cfa9151b444d867796988ba718d32473db938e39a.
+
+- 2026-09-28T22:25:54+00:00: Focused gate after unique fixture suffix reached a transport fixture
+  constraint: ControlServer::bind rejected the generated socket with Io(InvalidInput: path must be
+  shorter than SUN_LEN) at process_owner.rs:474. The prior root included the 64-character nonce;
+  shortened test root to PID plus atomic counter while preserving per-test uniqueness and mode 0700.
