@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Own the authenticated control session and hand off only an opaque live dispatch source.",
-  "task_revision": 66,
+  "task_revision": 67,
   "title": "Runtime/control process owner",
-  "updated_at": "2026-09-28T22:36:19+00:00",
+  "updated_at": "2026-09-28T22:37:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1503-runtime-control-process-owner"
 }
 ---
@@ -240,3 +240,6 @@ asb-tui, synthesize authority, or accept caller-built runtime inputs.
   process_owner --no-fail-fast passed 2/2 after authenticated CONTROL_AUTH_HELPER_V1 negotiation;
   cargo fmt --all -- --check and cargo clippy --locked -p asb-runtime --all-targets -- -D warnings
   both passed. No stderr failure remains; prior 3d629de1 failure is resolved.
+
+- 2026-09-28T22:37:17+00:00: Recorded command exit 101; command argv SHA-256
+  534f8613e1c316db8f0f46dd989e44e14a8ca74304a94791b4e4a1c59b2fbb1d.
