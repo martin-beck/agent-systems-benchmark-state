@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Track production credential secrecy and authentication hardening after the prototype.",
-  "task_revision": 67,
+  "task_revision": 68,
   "title": "Production credential hardening follow-up",
-  "updated_at": "2026-09-28T20:18:03+00:00",
+  "updated_at": "2026-09-28T20:18:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1501"
 }
 ---
@@ -216,3 +216,6 @@ This AR is intentionally not required for the development build cycle.
   generation; verify_remote validates persisted enrollment before any verifier dispatch; tests
   assert exact request binding and tampered persisted method is rejected. Focused 7/7 tests, package
   clippy, formatting pass.
+
+- 2026-09-28T20:18:12+00:00: Recorded command exit 0; command argv SHA-256
+  abb5d32346d464eac33757c5f4c9593b265d92fb178de766ab06dd6210d9b614.
