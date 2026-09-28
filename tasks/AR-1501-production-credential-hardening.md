@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Track production credential secrecy and authentication hardening after the prototype.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Production credential hardening follow-up",
-  "updated_at": "2026-09-28T20:10:19+00:00",
+  "updated_at": "2026-09-28T20:10:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1501"
 }
 ---
@@ -146,3 +146,6 @@ This AR is intentionally not required for the development build cycle.
   e44c946a7b391d339073a4cee3d7f82f9d8fc784cc36dacf0d2e77a7dbe509f6.
 
 - 2026-09-28T20:10:19+00:00: Heartbeat by ar1501-credential-contract-repair-luna56.
+
+- 2026-09-28T20:10:27+00:00: Recorded command exit 0; command argv SHA-256
+  5799a971345c19586c5ccccfc536df42bd14426c321a5758b5d8014c4fab7171.
