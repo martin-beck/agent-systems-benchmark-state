@@ -10,17 +10,17 @@
   "id": "AR-1500",
   "next_action": "Rerun the failing asb-cli lifecycle test serially, then run all applicable gates, review and publish exact-head PR.",
   "observed_branch": "feature/ar-1500-development-credential-provider-fixture",
-  "observed_dirty": 5,
-  "observed_head": "ee8ea15c7c3bc3b3609dbfbc3b0637b8761973e5",
+  "observed_dirty": 0,
+  "observed_head": "e4f932a018795a6d707050a24a24ba55e734707e",
   "owner": "ar1500-provider-fixture-luna56",
   "plan": "../plans/AR-1500-development-credential-provider-fixture.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify generated development credentials through provider, capture and replay flows.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Development credential/provider lifecycle fixture",
-  "updated_at": "2026-09-28T19:16:44+00:00",
+  "updated_at": "2026-09-28T19:16:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1500"
 }
 ---
