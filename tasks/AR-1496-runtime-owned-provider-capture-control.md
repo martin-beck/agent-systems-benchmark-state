@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Complete runtime-owned provider capture, tuple cassette reconciliation and verified offline activation required by the setup wizard.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Runtime-owned provider capture and control activation",
-  "updated_at": "2026-09-28T13:56:05+00:00",
+  "updated_at": "2026-09-28T14:01:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1496-runtime-owned-provider-capture-control"
 }
 ---
@@ -141,3 +141,6 @@ execution or alter AR-1160's historical evidence.
   Signed+DCO commits e664ce9 and 06e51bf are pushed in PR #375. Focused evidence: cargo fmt check;
   asb-runtime local_mock_capture 2 passed; asb-cli runtime_capture 3 passed; asb-cli
   recording_campaign 3 passed. PR base is protected main 45df6590 and head e664ce9.
+
+- 2026-09-28T14:01:15+00:00: Recorded command exit 0; command argv SHA-256
+  ef19043205064ea87bec66574bfe246191c9311bc8c404cd8e347d08fbdc44f0.
