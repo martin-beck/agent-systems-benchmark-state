@@ -24,7 +24,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36460130504 | `9231a660675d` | push | Fault assurance | in_progress:- |
 | 36460130439 | `9231a660675d` | push | Hosted portability and native qualification | completed:success |
 | 36460130343 | `9231a660675d` | push | Huawei MIT source headers | completed:success |
-| 36460130327 | `9231a660675d` | push | Credential-free benchmark path | in_progress:- |
+| 36460130327 | `9231a660675d` | push | Credential-free benchmark path | completed:success |
 | 36460130241 | `9231a660675d` | push | Formal assurance | in_progress:- |
 | 36460130144 | `9231a660675d` | push | Rust verification | in_progress:- |
 | 36460130107 | `9231a660675d` | push | Repository quality | in_progress:- |
