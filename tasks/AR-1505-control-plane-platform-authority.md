@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 88,
+  "task_revision": 89,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-28T23:34:58+00:00",
+  "updated_at": "2026-09-28T23:35:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -371,3 +371,12 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-28T23:34:58+00:00: Recorded command exit 0; command argv SHA-256
   97f2ad617d5e6b44ccadff62990a74958519a5ce9c05194609beceb84799c8af.
+
+- 2026-09-28T23:35:24+00:00: Exact second publication failure at 23:34:32Z: gh pr create was invoked
+  through handoffctl without changing cwd, so gh operated from
+  /srv/data/projects/agent-systems-benchmark-state. Command used inline body and requested --base
+  main --head feature/ar-1505-control-plane-platform-authority; stderr: GraphQL: Head sha cannot be
+  blank, Base sha cannot be blank, No commits between main and
+  feature/ar-1505-control-plane-platform-authority, Head ref must be a branch. No product mutation
+  occurred. Corrective command explicitly cd to the declared product worktree and created PR #382 at
+  unchanged signed commit baa13ea.
