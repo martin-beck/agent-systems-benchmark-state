@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add an explicit development-only unverified bundle profile without weakening production or customer-release verification.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Development-only unverified bundle profile",
-  "updated_at": "2026-09-28T13:11:47+00:00",
+  "updated_at": "2026-09-28T13:11:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1495-development-unverified-bundle-profile"
 }
 ---
@@ -148,3 +148,6 @@ above.
   https://github.com/martin-beck/agent-systems-benchmark/pull/373. Scope is ASB asb-bundle
   verifier/tests/docs/schema only. AR-1490 remains blocked on external authorized signed customer
   package; no customer-release evidence is claimed.
+
+- 2026-09-28T13:11:57+00:00: Recorded command exit 0; command argv SHA-256
+  a9e8bf41eb80d6d983f7202ff3acabcb4913b90756bccac409c397d928c691e7.
