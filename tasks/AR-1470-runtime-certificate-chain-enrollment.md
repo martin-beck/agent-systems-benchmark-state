@@ -12,16 +12,16 @@
   "next_action": "Protected-main setup is not current: AR worktree is clean but 86 commits behind origin/main 7167e3d; refresh via handoffctl run, then implement the narrow runtime-owned authenticated enrollment source. Existing RuntimeAuthorityRecord holds only public digests/opaque chain metadata; no private bootstrap authority or caller-safe issuer is available. Do not fabricate authority.",
   "observed_branch": "feature/ar-1470-runtime-certificate-chain-enrollment",
   "observed_dirty": 0,
-  "observed_head": "b9d7b6ee251b3a119496d3c16f65ffc971704f3a",
+  "observed_head": "7167e3da7ab1fb35d4fc9c0e61ee754c89e670d6",
   "owner": "ar1470-runtime-enrollment-source-luna56",
   "plan": "../plans/AR-1470-runtime-certificate-chain-enrollment.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize runtime-owned certificate-chain enrollment authority for live dispatch.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Runtime certificate-chain enrollment materialization",
-  "updated_at": "2026-09-28T20:53:17+00:00",
+  "updated_at": "2026-09-28T20:53:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1470-runtime-certificate-chain-enrollment"
 }
 ---
