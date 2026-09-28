@@ -176,11 +176,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P2 | [AR-1501](../tasks/AR-1501-production-credential-hardening.md): Production credential hardening follow-up | Unclaimed | Track production credential secrecy and authentication hardening after the prototype. | Keep non-gating until production deployment is requested; replace development credentials with a reviewed secure authentication chain. |
+| P2 | [AR-1501](../tasks/AR-1501-production-credential-hardening.md): Production credential hardening follow-up | ar1501-credential-contract-repair-luna56 | Track production credential secrecy and authentication hardening after the prototype. | Keep non-gating until production deployment is requested; replace development credentials with a reviewed secure authentication chain. |
 
 ### Blocked (74)
 
