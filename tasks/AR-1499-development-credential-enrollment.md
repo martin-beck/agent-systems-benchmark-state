@@ -8,7 +8,7 @@
     "AR-1496"
   ],
   "id": "AR-1499",
-  "next_action": "PR #378 exact head 7bdda85 is open on repair/ar-1499-selection-binding; independently review the complete diff and wait for every required exact-head check to finish green before merging through handoffctl.",
+  "next_action": "PR #378 failed hosted portability run 36465569661 before tests: source identity rejected repair/ar-1499-selection-binding because HEAD 7bdda85 does not have protected merge base 65bcdf3 as an ancestor. Rebuild the repair branch from 65bcdf3, apply signed corrective changes 51c57d4/7bdda85, force-with-lease the dedicated branch, then rerun exact-head CI.",
   "observed_branch": "feature/ar-1499-development-credential-enrollment",
   "observed_dirty": 0,
   "observed_head": "7bdda85240653fa15e8eee602240137d88b8442b",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair merged development credential selection binding",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Development credential enrollment contract",
-  "updated_at": "2026-09-28T18:30:59+00:00",
+  "updated_at": "2026-09-28T18:31:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1499"
 }
 ---
@@ -168,3 +168,9 @@ labelled and isolated.
 
 - 2026-09-28T18:30:59+00:00: Recorded command exit 0; command argv SHA-256
   1024fc1e6cefa31b078f0b5d2ed85c7ea4586897b388bf1e308f62db58574461.
+
+- 2026-09-28T18:31:36+00:00: Material hosted failure: hosted portability run 36465569661 reported
+  source identity is not immutable for BASE_COMMIT=65bcdf3208db50bf6186eec5c2fe3c9ed6956b83.
+  Diagnosis: repair branch ancestry starts at pre-merge 9231a66 and therefore merge-base(base, head)
+  is not base; this is an immutable provenance/topology issue, not a test failure. Preserve run
+  evidence and repair branch topology before rerun.

@@ -180,7 +180,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1499](../tasks/AR-1499-development-credential-enrollment.md): Development credential enrollment contract | ar1499-selection-binding-repair-luna56 | Repair merged development credential selection binding | PR #378 exact head 7bdda85 is open on repair/ar-1499-selection-binding; independently review the complete diff and wait for every required exact-head check to finish green before merging through handoffctl. |
+| P0 | [AR-1499](../tasks/AR-1499-development-credential-enrollment.md): Development credential enrollment contract | ar1499-selection-binding-repair-luna56 | Repair merged development credential selection binding | PR #378 failed hosted portability run 36465569661 before tests: source identity rejected repair/ar-1499-selection-binding because HEAD 7bdda85 does not have protected merge base 65bcdf3 as an ancestor. Rebuild the repair branch from 65bcdf3, apply signed corrective changes 51c57d4/7bdda85, force-with-lease the dedicated branch, then rerun exact-head CI. |
 
 ### Blocked (74)
 
