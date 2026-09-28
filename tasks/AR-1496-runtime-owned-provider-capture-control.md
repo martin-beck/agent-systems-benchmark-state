@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Complete runtime-owned provider capture, tuple cassette reconciliation and verified offline activation required by the setup wizard.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Runtime-owned provider capture and control activation",
-  "updated_at": "2026-09-28T14:04:33+00:00",
+  "updated_at": "2026-09-28T14:11:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1496-runtime-owned-provider-capture-control"
 }
 ---
@@ -165,3 +165,6 @@ execution or alter AR-1160's historical evidence.
   cargo test --locked --workspace -- --test-threads=1 passed locally (all runnable tests green;
   expected environment-gated tests ignored). Signed+DCO commit 9021c33 pushed with force-with-lease.
   PR #375 now exact head 9021c33 against protected base 45df6590; hosted checks restarted.
+
+- 2026-09-28T14:11:02+00:00: Recorded command exit 0; command argv SHA-256
+  d08cde7596ddb71216aa14b7f34c908fab426055521b6abb18e7ed56beb4e4dc.
