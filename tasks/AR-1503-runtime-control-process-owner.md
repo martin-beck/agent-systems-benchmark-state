@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1503",
-  "next_action": "Rerun fmt and focused process_owner tests with the required authenticated protocol version.",
+  "next_action": "Independently review dirty diff, expand negative lifecycle coverage if needed, then run full applicable ASB gates.",
   "observed_branch": "feature/ar-1503-runtime-control-process-owner",
   "observed_dirty": 3,
   "observed_head": "3c6af6b351e0c32ee8f5e48716654d854dcbbac2",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Own the authenticated control session and hand off only an opaque live dispatch source.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Runtime/control process owner",
-  "updated_at": "2026-09-28T22:36:00+00:00",
+  "updated_at": "2026-09-28T22:36:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1503-runtime-control-process-owner"
 }
 ---
@@ -235,3 +235,8 @@ asb-tui, synthesize authority, or accept caller-built runtime inputs.
   e8beebac0638d83321c84d952814966bbba80dc16ee7dd3d3ead10f3c2b72292.
 
 - 2026-09-28T22:36:00+00:00: Heartbeat by ar1503-repair-luna56.
+
+- 2026-09-28T22:36:19+00:00: Repair worker result: focused cargo test --locked -p asb-runtime
+  process_owner --no-fail-fast passed 2/2 after authenticated CONTROL_AUTH_HELPER_V1 negotiation;
+  cargo fmt --all -- --check and cargo clippy --locked -p asb-runtime --all-targets -- -D warnings
+  both passed. No stderr failure remains; prior 3d629de1 failure is resolved.

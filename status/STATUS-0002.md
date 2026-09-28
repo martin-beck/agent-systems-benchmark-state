@@ -183,7 +183,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1503](../tasks/AR-1503-runtime-control-process-owner.md): Runtime/control process owner | ar1503-repair-luna56 | Own the authenticated control session and hand off only an opaque live dispatch source. | Rerun fmt and focused process_owner tests with the required authenticated protocol version. |
+| P0 | [AR-1503](../tasks/AR-1503-runtime-control-process-owner.md): Runtime/control process owner | ar1503-repair-luna56 | Own the authenticated control session and hand off only an opaque live dispatch source. | Independently review dirty diff, expand negative lifecycle coverage if needed, then run full applicable ASB gates. |
 
 ### Blocked (74)
 
