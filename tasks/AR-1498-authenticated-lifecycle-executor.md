@@ -3,7 +3,14 @@
   "branch": "feature/ar-1498-authenticated-lifecycle-executor",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1018", "AR-1019", "AR-1020", "AR-1190", "AR-1191", "AR-1496"],
+  "depends_on": [
+    "AR-1018",
+    "AR-1019",
+    "AR-1020",
+    "AR-1190",
+    "AR-1191",
+    "AR-1496"
+  ],
   "id": "AR-1498",
   "next_action": "Promote after coordinator review; define and implement the authenticated artifact executor and activation authority required by ASB lifecycle calls, with fail-closed restart-safe tests.",
   "observed_branch": "",
@@ -13,11 +20,11 @@
   "plan": "../plans/AR-1498.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Provide the authenticated artifact executor and activation authority behind the ASB agent lifecycle router.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Authenticated lifecycle artifact executor",
-  "updated_at": "2026-09-28T00:00:00+00:00",
+  "updated_at": "2026-09-28T15:02:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1498"
 }
 ---
@@ -34,3 +41,7 @@ and persists restart-safe lifecycle state for install, status, cancel, retry and
 stale, malformed, unauthorized, interrupted or unavailable artifacts must remain explicit typed
 failures. Add clean-home, cancellation/restart, privacy and negative-boundary tests plus exact
 protocol/schema fixtures consumed by AR-1199 and downstream asb-tui.
+
+- 2026-09-28T15:02:01+00:00: Promoted as the scoped successor required by blocked AR-1199: implement
+  authenticated lifecycle artifact executor and activation authority before reopening router/TUI
+  lifecycle support.
