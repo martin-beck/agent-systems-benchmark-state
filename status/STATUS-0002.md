@@ -177,11 +177,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1502](../tasks/AR-1502-runtime-bootstrap-authority.md): Runtime-owned bootstrap authority | Unclaimed | Supply the runtime-owned authenticated bootstrap authority required for normal live dispatch. | Promote and claim; implement the smallest runtime-owned authenticated bootstrap-authority source required by AR-1470, with deterministic mock qualification and fail-closed production adapter boundary. |
+| P0 | [AR-1502](../tasks/AR-1502-runtime-bootstrap-authority.md): Runtime-owned bootstrap authority | ar1502-seam-audit-repair-luna56 | Supply the runtime-owned authenticated bootstrap authority required for normal live dispatch. | Promote and claim; implement the smallest runtime-owned authenticated bootstrap-authority source required by AR-1470, with deterministic mock qualification and fail-closed production adapter boundary. |
 
 ### Blocked (74)
 
@@ -499,4 +499,3 @@
 | P0 | [AR-1475](../tasks/AR-1475-asb-metrics-evidence-fixture-repair.md): Repair asb-metrics evidence fixture classification | Unclaimed | Repair the deterministic ProbeRejected versus MalformedEvidence fixture failure blocking PR #345. | Release done after final reconcile; then rerun PR #345 exact-head validation. |
 | P0 | [AR-1476](../tasks/AR-1476-workspace-coverage-floor-repair.md): Repair workspace coverage floor | Unclaimed | Restore the enforced 90 percent workspace coverage floor blocking exact AR-1474 validation. | Rerun PR #345 exact-head validation against current protected main 1dada31c; no repair diff is required unless the current-base gate regresses. |
 | P0 | [AR-1478](../tasks/AR-1478-topic-synchronization-topology-repair.md): Repair topic synchronization topology | Unclaimed | Repair protected-main topic synchronization topology after AR-1477 merge policy failure. | Reconcile and doctor state; release AR-1478 done with complete merge and seven-workflow evidence. |
-| P0 | [AR-1479](../tasks/AR-1479-rust-ci-flake-repair.md): Rust CI timing and state-root flake repair | Unclaimed | Repair the unrelated Rust state-root collision and malformed-ready-marker timing flakes blocking AR-1420 exact-head CI. | Monitor exact-main post-merge workflows for 1015a461; after all seven green, release AR-1479 and requalify AR-1420 PR #350 head 2884508. |
