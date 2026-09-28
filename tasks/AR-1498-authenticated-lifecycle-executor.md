@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Lifecycle branch coverage expanded; serialized workspace llvm-cov 90.69% lines",
-  "task_revision": 71,
+  "task_revision": 72,
   "title": "Authenticated lifecycle artifact executor",
-  "updated_at": "2026-09-28T17:24:32+00:00",
+  "updated_at": "2026-09-28T17:25:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1498"
 }
 ---
@@ -249,3 +249,11 @@ protocol/schema fixtures consumed by AR-1199 and downstream asb-tui.
 
 - 2026-09-28T17:24:32+00:00: Recorded command exit 1; command argv SHA-256
   428457ea9cc6a21bd46c5be6651ba2faccb5b0b07ddc2fd6f96eca730dea5ab7.
+
+- 2026-09-28T17:25:00+00:00: Enforcing tools/quality/check_coverage.py failed exit 101 at 17:24:32Z
+  during capability_contract tests, not at coverage threshold: three tests observed generated
+  checkout profraw files default_15971809448624186031_0_634587.profraw and ...634588.profraw, then
+  panicked at crates/asb-cli/tests/capability_contract.rs:207. The cargo llvm-cov workspace
+  subprocess therefore returned 101 before reporting the floor. Next action: remove only those
+  generated profraw files via owned handoffctl workflow and rerun the enforcing gate cleanly; no
+  production gate or threshold change.
