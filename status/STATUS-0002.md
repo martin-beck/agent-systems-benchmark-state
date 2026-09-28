@@ -174,7 +174,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1490](../tasks/AR-1490-fresh-package-runtime-acceptance.md): Fresh package runtime acceptance | ar1490-dev-acceptance-luna56 | Run fresh package first-customer runtime acceptance and produce an explicit readiness report. | Recreate the disposable fixture agent inside the declared AR-1490 worktree, then generate a valid plan and run installed doctor/setup/run/sweep/replay/cancellation/restart/cleanup using unsigned-development verification. |
+| P0 | [AR-1490](../tasks/AR-1490-fresh-package-runtime-acceptance.md): Fresh package runtime acceptance | ar1490-dev-acceptance-luna56 | Run fresh package first-customer runtime acceptance and produce an explicit readiness report. | Correct the generated TOML plan to use the nested ExperimentManifestV1 tables expected by the CLI, revalidate with installed asb plan, then execute run/sweep and recovery checks. |
 
 ### Open (1)
 

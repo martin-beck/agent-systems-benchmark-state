@@ -10,7 +10,7 @@
     "AR-1489"
   ],
   "id": "AR-1490",
-  "next_action": "Recreate the disposable fixture agent inside the declared AR-1490 worktree, then generate a valid plan and run installed doctor/setup/run/sweep/replay/cancellation/restart/cleanup using unsigned-development verification.",
+  "next_action": "Correct the generated TOML plan to use the nested ExperimentManifestV1 tables expected by the CLI, revalidate with installed asb plan, then execute run/sweep and recovery checks.",
   "observed_branch": "qualification/ar-1490-fresh-package-runtime-acceptance",
   "observed_dirty": 2,
   "observed_head": "45df6590cbf9ab75f07dcc0b753335949e28d937",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run fresh package first-customer runtime acceptance and produce an explicit readiness report.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Fresh package runtime acceptance",
-  "updated_at": "2026-09-28T14:53:34+00:00",
+  "updated_at": "2026-09-28T14:54:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1490-fresh-package-runtime-acceptance"
 }
 ---
@@ -144,3 +144,10 @@ when exact package or clean-environment inputs are absent.
 
 - 2026-09-28T14:53:34+00:00: Recorded command exit 3; command argv SHA-256
   f17628d279336fa6a409883e518e3b534f49416dc1e889a504f8423982d0aac7.
+
+- 2026-09-28T14:54:31+00:00: Recorded failure: installed unsigned-development package was verified
+  successfully, but asb plan rejected the generated flat [experiment] TOML with structured
+  validation error experiment plan syntax or shape is invalid. No result/work roots or process were
+  created. Next action is to regenerate the same plan with nested
+  agent/model/tool_policy/workload/execution/platform/controls tables and re-run plan before
+  execution.
