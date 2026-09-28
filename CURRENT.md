@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1499](tasks/AR-1499-development-credential-enrollment.md): Development credential enrollment contract | Implement versioned development credential enrollment contract with deterministic local/mock identity | PR #377 exact head 86bb90c remains open; wait for remaining required CI (aarch64, TLC/Alloy, policy, Rust) and independent review; merge only after all green. | - |
+| P0 | [AR-1499](tasks/AR-1499-development-credential-enrollment.md): Development credential enrollment contract | Implement versioned development credential enrollment contract with deterministic local/mock identity | PR #377 exact head 86bb90c remains open; wait for remaining required CI (aarch64, TLC/Alloy, policy, Rust) and independent review; merge only after all green. | ar1499-selection-binding-repair-luna56 |
 
 ## Blocked
 
