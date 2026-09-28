@@ -1,13 +1,13 @@
 ---
 {
   "branch": "repair/ar-1495-topology",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "6db0d3cdf5c5e5961b61c7a262d90a63763ac4ef",
   "claim_expires": "2026-09-28T15:37:28+00:00",
   "depends_on": [
     "AR-1493"
   ],
   "id": "AR-1497",
-  "next_action": "Promote and claim AR-1497, inspect protected-main topology, and construct the smallest signed+DCO repair preserving the AR-1495 tree.",
+  "next_action": "Monitor PR #374 exact signed head 6db0d3c; merge only when all required checks are green, then verify eight post-merge workflows.",
   "observed_branch": "repair/ar-1495-topology",
   "observed_dirty": 0,
   "observed_head": "6db0d3cdf5c5e5961b61c7a262d90a63763ac4ef",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair AR-1495 protected-main synchronization topology without changing product semantics.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "AR-1495 protected-main topology repair",
-  "updated_at": "2026-09-28T13:39:39+00:00",
+  "updated_at": "2026-09-28T13:39:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1497-ar1495-topology-repair"
 }
 ---
@@ -57,3 +57,10 @@ post-merge workflows.
 
 - 2026-09-28T13:39:39+00:00: Recorded command exit 0; command argv SHA-256
   ddfc983a77ca84c5350b65a45bef09b1ed280e62924e99998ca39d5c1b100332.
+
+- 2026-09-28T13:39:59+00:00: AR-1496 was already occupied by unrelated provider-capture work, so
+  AR-1497 is the requested topology-only successor. Created empty signed+DCO commit
+  6db0d3cdf5c5e5961b61c7a262d90a63763ac4ef directly on current protected main 03d2d070, preserving
+  the exact AR-1495 tree and removing historical sync merges from the topic spine. Published PR
+  #374: https://github.com/martin-beck/agent-systems-benchmark/pull/374. No product files or
+  signature semantics changed.
