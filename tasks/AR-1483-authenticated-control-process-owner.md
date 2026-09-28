@@ -17,11 +17,11 @@
   "plan": "../plans/AR-1483-authenticated-control-process-owner.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Own authenticated control session and lifecycle while minting opaque CLI dispatch sources.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Authenticated control process owner",
-  "updated_at": "2026-09-27T12:44:21+00:00",
+  "updated_at": "2026-09-28T21:57:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1483-authenticated-control-process-owner"
 }
 ---
@@ -71,3 +71,8 @@ caller authority or modify asb-tui.
   entry/run still dispatches with None,None. Worktree clean; no safe duplicate or authority-exposing
   slice. Remaining next action is a backend-owned process launcher/session that constructs these
   private inputs and injects only AR-1480 opaque source.
+
+- 2026-09-28T21:57:13+00:00: Coordinator continuation after AR-1502 runtime bootstrap authority and
+  AR-1484 lifecycle contract are merged and verified. Re-audit the smallest owner integration slice
+  on protected main; preserve fail-closed boundaries and create a successor only if the
+  process-owner backend remains genuinely absent.
