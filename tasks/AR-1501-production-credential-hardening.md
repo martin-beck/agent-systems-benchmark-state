@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Track production credential secrecy and authentication hardening after the prototype.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Production credential hardening follow-up",
-  "updated_at": "2026-09-28T20:02:50+00:00",
+  "updated_at": "2026-09-28T20:03:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1501"
 }
 ---
@@ -87,3 +87,6 @@ This AR is intentionally not required for the development build cycle.
 - 2026-09-28T20:02:50+00:00: Focused compile/tests now pass: 6 production_auth tests. Clippy failed
   at exit 101 on two actionable lints: collapsible nested if in rotate and double_must_use on
   AuditLogV1::events. Repair both, rerun clippy, then commit.
+
+- 2026-09-28T20:03:04+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
