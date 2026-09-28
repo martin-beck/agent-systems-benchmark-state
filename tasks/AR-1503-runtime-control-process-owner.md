@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1503-runtime-control-process-owner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-28T23:03:41+00:00",
+  "claim_expires": "2026-09-29T00:34:10+00:00",
   "depends_on": [
     "AR-1473",
     "AR-1474",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Own the authenticated control session and hand off only an opaque live dispatch source.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Runtime/control process owner",
-  "updated_at": "2026-09-28T22:33:41+00:00",
+  "updated_at": "2026-09-28T22:34:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1503-runtime-control-process-owner"
 }
 ---
@@ -222,3 +222,5 @@ asb-tui, synthesize authority, or accept caller-built runtime inputs.
   on the same AR.
 
 - 2026-09-28T22:33:41+00:00: Claimed by ar1503-repair-luna56.
+
+- 2026-09-28T22:34:10+00:00: Heartbeat by ar1503-repair-luna56.
