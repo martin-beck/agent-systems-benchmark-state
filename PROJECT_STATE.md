@@ -22,13 +22,13 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 36467797104 | `ee8ea15c7c3b` | push | Huawei MIT source headers | completed:success |
-| 36467797042 | `ee8ea15c7c3b` | push | Credential-free benchmark path | in_progress:- |
-| 36467797019 | `ee8ea15c7c3b` | push | Emulated aarch64 portability | in_progress:- |
-| 36467797016 | `ee8ea15c7c3b` | push | Hosted portability and native qualification | in_progress:- |
-| 36467796989 | `ee8ea15c7c3b` | push | Repository quality | in_progress:- |
-| 36467796973 | `ee8ea15c7c3b` | push | Formal assurance | in_progress:- |
-| 36467796960 | `ee8ea15c7c3b` | push | Fault assurance | in_progress:- |
-| 36467796953 | `ee8ea15c7c3b` | push | Rust verification | in_progress:- |
+| 36467797042 | `ee8ea15c7c3b` | push | Credential-free benchmark path | completed:success |
+| 36467797019 | `ee8ea15c7c3b` | push | Emulated aarch64 portability | completed:success |
+| 36467797016 | `ee8ea15c7c3b` | push | Hosted portability and native qualification | completed:success |
+| 36467796989 | `ee8ea15c7c3b` | push | Repository quality | completed:success |
+| 36467796973 | `ee8ea15c7c3b` | push | Formal assurance | completed:success |
+| 36467796960 | `ee8ea15c7c3b` | push | Fault assurance | completed:success |
+| 36467796953 | `ee8ea15c7c3b` | push | Rust verification | completed:success |
 | 36466584386 | `0a2f6e9c74f9` | pull_request | Credential-free benchmark path | completed:success |
 | 36466584254 | `0a2f6e9c74f9` | pull_request | Fault assurance | completed:success |
 | 36466584206 | `0a2f6e9c74f9` | pull_request | Rust verification | completed:success |
