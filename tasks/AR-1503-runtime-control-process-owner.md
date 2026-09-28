@@ -14,7 +14,7 @@
   "id": "AR-1503",
   "next_action": "Implement the runtime/platform-owned control-session launcher and authenticated owner handoff in the declared isolated worktree; first preserve the source-only chain and private resolver boundary.",
   "observed_branch": "feature/ar-1503-runtime-control-process-owner",
-  "observed_dirty": 0,
+  "observed_dirty": 3,
   "observed_head": "3c6af6b351e0c32ee8f5e48716654d854dcbbac2",
   "owner": "ar1483-owner-integration-luna56",
   "plan": "../plans/AR-1503-runtime-control-process-owner.md",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Own the authenticated control session and hand off only an opaque live dispatch source.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Runtime/control process owner",
-  "updated_at": "2026-09-28T22:12:26+00:00",
+  "updated_at": "2026-09-28T22:12:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1503-runtime-control-process-owner"
 }
 ---
