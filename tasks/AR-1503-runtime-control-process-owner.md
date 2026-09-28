@@ -20,11 +20,11 @@
   "plan": "../plans/AR-1503-runtime-control-process-owner.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Own the authenticated control session and hand off only an opaque live dispatch source.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Runtime/control process owner",
-  "updated_at": "2026-09-29T00:05:00+00:00",
+  "updated_at": "2026-09-28T22:06:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1503-runtime-control-process-owner"
 }
 ---
@@ -37,3 +37,7 @@ asb-tui, synthesize authority, or accept caller-built runtime inputs.
   3c6af6b. AR-1502 supplies source-only bootstrap enrollment, but no owner yet constructs the
   authenticated control session, enrolled chain, private resolver, cancellation/teardown binding,
   and opaque AR-1480 source. The successor owns that missing runtime/platform boundary only.
+
+- 2026-09-28T22:06:07+00:00: Dependencies AR-1473, AR-1474, AR-1480, AR-1484, AR-1485, and AR-1502
+  verified done; promote the narrow runtime/platform-owned control-session launcher successor from
+  blocked AR-1483 evidence.
