@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supply the runtime-owned authenticated bootstrap authority required for normal live dispatch.",
-  "task_revision": 79,
+  "task_revision": 80,
   "title": "Runtime-owned bootstrap authority",
-  "updated_at": "2026-09-28T21:41:45+00:00",
+  "updated_at": "2026-09-28T21:42:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1502"
 }
 ---
@@ -298,3 +298,9 @@ dependency-safe and must not synthesize authority or accept caller-built input.
 
 - 2026-09-28T21:41:45+00:00: Recorded command exit 0; command argv SHA-256
   2e6d53f5ce3bb43ff7f1bcb103db49a0e1161043da80185d9420c5125c2a4696.
+
+- 2026-09-28T21:42:19+00:00: PR #381 exact-head hosted CI is terminal green at
+  b62664c8710e25752730762016659a300b5a896a: all 13 checks passed, including Rust checks (run
+  36486869794), policy/coverage/supply chain (36486869807), formal Kani/Loom/TLC, fault
+  fuzz/mutation, platform, credential-free, and emulated aarch64 (36486869929). Protected merge is
+  now authorized; next verify post-merge main workflows and exact consumed head.
