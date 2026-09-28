@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1499-development-credential-enrollment",
   "checkpoint_commit": "ee8ea15c7c3bc3b3609dbfbc3b0637b8761973e5",
-  "claim_expires": "2026-09-28T20:51:42+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1442",
     "AR-1496"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1499-development-credential-enrollment",
   "observed_dirty": 0,
   "observed_head": "0a2f6e9c74f98a0a8d59b6f834ef96ee63d5cfee",
-  "owner": "ar1499-selection-binding-repair-luna56",
+  "owner": "",
   "plan": "../plans/AR-1499-development-credential-enrollment.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Repair merged development credential selection binding",
-  "task_revision": 85,
+  "task_revision": 86,
   "title": "Development credential enrollment contract",
-  "updated_at": "2026-09-28T18:51:42+00:00",
+  "updated_at": "2026-09-28T18:57:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1499"
 }
 ---
@@ -259,3 +259,14 @@ labelled and isolated.
   yet.
 
 - 2026-09-28T18:51:42+00:00: Heartbeat by ar1499-selection-binding-repair-luna56.
+
+- 2026-09-28T18:57:28+00:00: Completed AR-1499 corrective repair. Prior PR #377 merged old head
+  86bb90c at protected merge 65bcdf3. Independent review found non-enrollment selection binding gap.
+  Corrective changes were rebuilt directly from protected main as signed DCO commits
+  ea823380bdafd7d5c36ea14fb6cb5cd450472270 and 0a2f6e9c74f98a0a8d59b6f834ef96ee63d5cfee; PR #378
+  exact head passed all 13 required checks, after preserving and repairing earlier topology/DCO
+  failures (runs 36465569661 and 36466191613). PR #378 merged at protected main
+  ee8ea15c7c3bc3b3609dbfbc3b0637b8761973e5. Exact tree matched reviewed head; post-merge focused
+  asb-config tests 7/7 and workspace cargo check passed; all eight post-merge workflows on ee8ea15
+  terminal success: 36467797104, 36467796973, 36467796960, 36467796989, 36467796953, 36467797019,
+  36467797042, 36467797016.
