@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1496](tasks/AR-1496-runtime-owned-provider-capture-control.md): Runtime-owned provider capture and control activation | Complete runtime-owned provider capture, tuple cassette reconciliation and verified offline activation required by the setup wizard. | Promote after AR-1151, AR-1330, AR-1433, AR-1447, AR-1450 and AR-1455 are verified; implement the real tuple capture/reconciliation and offline activation path over the existing control contracts. | ar1496-provider-capture-luna56 |
+| P0 | [AR-1496](tasks/AR-1496-runtime-owned-provider-capture-control.md): Runtime-owned provider capture and control activation | Complete runtime-owned provider capture, tuple cassette reconciliation and verified offline activation required by the setup wizard. | PR #375 is rebased onto protected main 45df6590; await exact-head hosted checks, then independent review and merge. | ar1496-provider-capture-luna56 |
 | P0 | [AR-1497](tasks/AR-1497-ar1495-topology-repair.md): AR-1495 protected-main topology repair | Repair AR-1495 protected-main synchronization topology without changing product semantics. | Monitor eight post-merge workflows for exact protected-main merge 45df6590; release AR-1497 only after all terminal SUCCESS. | ar1332-record-replay-luna56 |
 
 ## Blocked

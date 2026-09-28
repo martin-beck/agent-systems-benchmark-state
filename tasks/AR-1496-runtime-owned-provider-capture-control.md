@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1496-runtime-owned-provider-capture-control",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "e664ce9e5e29849db93cfdef3fa3f2d3fa11cd58",
   "claim_expires": "2026-09-28T16:30:50+00:00",
   "depends_on": [
     "AR-1151",
@@ -12,7 +12,7 @@
     "AR-1455"
   ],
   "id": "AR-1496",
-  "next_action": "Promote after AR-1151, AR-1330, AR-1433, AR-1447, AR-1450 and AR-1455 are verified; implement the real tuple capture/reconciliation and offline activation path over the existing control contracts.",
+  "next_action": "PR #375 is rebased onto protected main 45df6590; await exact-head hosted checks, then independent review and merge.",
   "observed_branch": "feature/ar-1496-runtime-owned-provider-capture-control",
   "observed_dirty": 0,
   "observed_head": "e664ce9e5e29849db93cfdef3fa3f2d3fa11cd58",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Complete runtime-owned provider capture, tuple cassette reconciliation and verified offline activation required by the setup wizard.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Runtime-owned provider capture and control activation",
-  "updated_at": "2026-09-28T13:55:20+00:00",
+  "updated_at": "2026-09-28T13:56:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1496-runtime-owned-provider-capture-control"
 }
 ---
@@ -133,3 +133,11 @@ execution or alter AR-1160's historical evidence.
 
 - 2026-09-28T13:55:20+00:00: Recorded command exit 0; command argv SHA-256
   ae6e09227e9511ac2945e649bf120a725abdb02f4b581383b0a4c27c9bc1dd73.
+
+- 2026-09-28T13:56:05+00:00: Implemented explicit runtime-owned deterministic local/mock capture:
+  StrictReplayService capture-only boundary, LocalMockProviderCapture backed by
+  LocalProviderMockBackend, authenticated redacted cassette bytes, secure digest-addressed
+  persistence, restart-safe fail-closed offline activation, and explicit serve --local-mock.
+  Signed+DCO commits e664ce9 and 06e51bf are pushed in PR #375. Focused evidence: cargo fmt check;
+  asb-runtime local_mock_capture 2 passed; asb-cli runtime_capture 3 passed; asb-cli
+  recording_campaign 3 passed. PR base is protected main 45df6590 and head e664ce9.
