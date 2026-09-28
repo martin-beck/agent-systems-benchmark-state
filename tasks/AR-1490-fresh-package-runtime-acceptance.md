@@ -13,16 +13,16 @@
   "next_action": "Promote and claim, then audit exact package and clean-environment inputs before executing the local/mock/replay readiness run.",
   "observed_branch": "qualification/ar-1490-fresh-package-runtime-acceptance",
   "observed_dirty": 0,
-  "observed_head": "b048fef92f4bdb4eedd5379d645f4288a4b6ab20",
+  "observed_head": "45df6590cbf9ab75f07dcc0b753335949e28d937",
   "owner": "ar1490-dev-acceptance-luna56",
   "plan": "../plans/AR-1490-fresh-package-runtime-acceptance.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run fresh package first-customer runtime acceptance and produce an explicit readiness report.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Fresh package runtime acceptance",
-  "updated_at": "2026-09-28T14:39:31+00:00",
+  "updated_at": "2026-09-28T14:39:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1490-fresh-package-runtime-acceptance"
 }
 ---
