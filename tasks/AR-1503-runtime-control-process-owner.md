@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1503",
-  "next_action": "Rerun fmt and focused process_owner tests.",
+  "next_action": "Rerun fmt and focused process_owner tests with unique private fixture roots.",
   "observed_branch": "feature/ar-1503-runtime-control-process-owner",
   "observed_dirty": 3,
   "observed_head": "3c6af6b351e0c32ee8f5e48716654d854dcbbac2",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Own the authenticated control session and hand off only an opaque live dispatch source.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Runtime/control process owner",
-  "updated_at": "2026-09-28T22:24:42+00:00",
+  "updated_at": "2026-09-28T22:25:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1503-runtime-control-process-owner"
 }
 ---
@@ -137,3 +137,9 @@ asb-tui, synthesize authority, or accept caller-built runtime inputs.
 
 - 2026-09-28T22:24:42+00:00: Recorded command exit 101; command argv SHA-256
   f99db2e56cd443f593f1572cfa9151b444d867796988ba718d32473db938e39a.
+
+- 2026-09-28T22:25:12+00:00: Focused tests then compiled but failed deterministically in parallel
+  fixture setup: ControlServer::bind returned Transport(Io(Address already in use)) at
+  process_owner.rs:470 because both tests used the same PID+nonce socket path; the companion test
+  then surfaced Receipt only because its server setup was contaminated. Added an atomic per-fixture
+  suffix while retaining mode-0700 private roots.
