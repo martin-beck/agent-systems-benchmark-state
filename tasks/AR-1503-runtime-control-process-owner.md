@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Own the authenticated control session and hand off only an opaque live dispatch source.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Runtime/control process owner",
-  "updated_at": "2026-09-28T22:23:25+00:00",
+  "updated_at": "2026-09-28T22:23:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1503-runtime-control-process-owner"
 }
 ---
@@ -120,3 +120,6 @@ asb-tui, synthesize authority, or accept caller-built runtime inputs.
   process_owner.rs:468 because the test root was created with shared permissions. Patched test
   fixture root to mode 0700; no authority or production boundary change. Next rerun focused gate
   through handoff.
+
+- 2026-09-28T22:23:33+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
