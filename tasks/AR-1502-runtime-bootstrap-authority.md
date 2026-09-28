@@ -12,7 +12,7 @@
   "id": "AR-1502",
   "next_action": "Implement the runtime-owned bootstrap source and store enrollment seam in the isolated worktree; add deterministic local/mock positive and negative tests before broader gates.",
   "observed_branch": "feature/ar-1502-runtime-bootstrap-authority",
-  "observed_dirty": 1,
+  "observed_dirty": 2,
   "observed_head": "7167e3da7ab1fb35d4fc9c0e61ee754c89e670d6",
   "owner": "ar1502-repair-restart-luna56",
   "plan": "../plans/AR-1502-runtime-bootstrap-authority.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supply the runtime-owned authenticated bootstrap authority required for normal live dispatch.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Runtime-owned bootstrap authority",
-  "updated_at": "2026-09-28T21:21:54+00:00",
+  "updated_at": "2026-09-28T21:22:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1502"
 }
 ---
