@@ -8,7 +8,7 @@
     "AR-1496"
   ],
   "id": "AR-1499",
-  "next_action": "PR #378 exact head 0a2f6e9 is now DCO-safe on repair/ar-1499-selection-binding, based directly on protected main 65bcdf3 with signed corrective commits ea82338 and 0a2f6e9. Monitor all exact-head checks; merge only after every required check is green and independent review is complete.",
+  "next_action": "PR #378 exact head 0a2f6e9 is DCO-safe and directly based on protected main 65bcdf3. Exact-head checks: green hosted portability, credential-free, fault, formal, headers, AWQ shadow; still running repository quality 36466584146, Rust 36466584206, and emulated aarch64 36466584095. Wait for all terminal green checks before merge.",
   "observed_branch": "feature/ar-1499-development-credential-enrollment",
   "observed_dirty": 0,
   "observed_head": "0a2f6e9c74f98a0a8d59b6f834ef96ee63d5cfee",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair merged development credential selection binding",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Development credential enrollment contract",
-  "updated_at": "2026-09-28T18:43:02+00:00",
+  "updated_at": "2026-09-28T18:43:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1499"
 }
 ---
@@ -229,3 +229,7 @@ labelled and isolated.
   merge-base 65bcdf3.
 
 - 2026-09-28T18:43:02+00:00: Heartbeat by ar1499-selection-binding-repair-luna56.
+
+- 2026-09-28T18:43:19+00:00: Current exact-head CI evidence for PR #378: hosted portability,
+  credential-free, fault assurance, formal assurance, headers and AWQ shadow all passed; repository
+  quality, Rust verification and emulated aarch64 remain in progress. Lease heartbeat refreshed.

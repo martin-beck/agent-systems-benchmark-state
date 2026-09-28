@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1499](tasks/AR-1499-development-credential-enrollment.md): Development credential enrollment contract | Repair merged development credential selection binding | PR #378 exact head 0a2f6e9 is now DCO-safe on repair/ar-1499-selection-binding, based directly on protected main 65bcdf3 with signed corrective commits ea82338 and 0a2f6e9. Monitor all exact-head checks; merge only after every required check is green and independent review is complete. | ar1499-selection-binding-repair-luna56 |
+| P0 | [AR-1499](tasks/AR-1499-development-credential-enrollment.md): Development credential enrollment contract | Repair merged development credential selection binding | PR #378 exact head 0a2f6e9 is DCO-safe and directly based on protected main 65bcdf3. Exact-head checks: green hosted portability, credential-free, fault, formal, headers, AWQ shadow; still running repository quality 36466584146, Rust 36466584206, and emulated aarch64 36466584095. Wait for all terminal green checks before merge. | ar1499-selection-binding-repair-luna56 |
 
 ## Blocked
 
