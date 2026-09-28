@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 133,
+  "task_revision": 134,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-28T23:59:08+00:00",
+  "updated_at": "2026-09-28T23:59:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -543,3 +543,6 @@ public credential/socket paths, or weakening fail-closed gates.
   RuntimeControlBootstrap block still indented as if inside the bridge impl. No semantic gate ran
   and no product mutation occurred. Corrective action: run cargo fmt --all through handoffctl, then
   rerun unchanged checks.
+
+- 2026-09-28T23:59:14+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
