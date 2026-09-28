@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1503](tasks/AR-1503-runtime-control-process-owner.md): Runtime/control process owner | Own the authenticated control session and hand off only an opaque live dispatch source. | Rerun fmt and focused process_owner tests after aligning receipt root claims. | ar1483-owner-integration-luna56 |
+| P0 | [AR-1503](tasks/AR-1503-runtime-control-process-owner.md): Runtime/control process owner | Own the authenticated control session and hand off only an opaque live dispatch source. | Rerun fmt and focused process_owner tests with the required authenticated protocol version. | ar1483-owner-integration-luna56 |
 
 ## Blocked
 

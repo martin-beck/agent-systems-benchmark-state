@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1503",
-  "next_action": "Rerun fmt and focused process_owner tests after aligning receipt root claims.",
+  "next_action": "Rerun fmt and focused process_owner tests with the required authenticated protocol version.",
   "observed_branch": "feature/ar-1503-runtime-control-process-owner",
   "observed_dirty": 3,
   "observed_head": "3c6af6b351e0c32ee8f5e48716654d854dcbbac2",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Own the authenticated control session and hand off only an opaque live dispatch source.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Runtime/control process owner",
-  "updated_at": "2026-09-28T22:29:52+00:00",
+  "updated_at": "2026-09-28T22:30:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1503-runtime-control-process-owner"
 }
 ---
@@ -184,3 +184,9 @@ asb-tui, synthesize authority, or accept caller-built runtime inputs.
 
 - 2026-09-28T22:29:52+00:00: Recorded command exit 101; command argv SHA-256
   3d629de1fe6e3a5ea8f5422d71a44cbb7269fc3994427f48ff960f17007caeda.
+
+- 2026-09-28T22:30:38+00:00: Focused diagnosis captured exact adapter error:
+  LiveProviderRuntimeBridge returned Transport because ControlClient::connect offered only
+  CONTROL_V1, while RuntimeReceipt requires CONTROL_AUTH_HELPER_V1 (v1.10), yielding
+  EndpointError::UnexpectedResponse. Test now negotiates CONTROL_AUTH_HELPER_V1 explicitly;
+  production adapter debug instrumentation removed.
