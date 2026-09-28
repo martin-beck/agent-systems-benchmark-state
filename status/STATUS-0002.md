@@ -176,11 +176,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1499](../tasks/AR-1499-development-credential-enrollment.md): Development credential enrollment contract | Unclaimed | Add a development-only credential enrollment contract for the setup wizard. | Promote after dependencies are complete; implement the versioned development enrollment contract with automatic local identity fallback and deterministic generated-key/mock-provider fixtures. |
+| P0 | [AR-1499](../tasks/AR-1499-development-credential-enrollment.md): Development credential enrollment contract | ar1499-credential-enrollment-luna56 | Add a development-only credential enrollment contract for the setup wizard. | Promote after dependencies are complete; implement the versioned development enrollment contract with automatic local identity fallback and deterministic generated-key/mock-provider fixtures. |
 
 ### Blocked (74)
 

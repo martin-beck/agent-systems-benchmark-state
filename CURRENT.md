@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1499](tasks/AR-1499-development-credential-enrollment.md): Development credential enrollment contract | Add a development-only credential enrollment contract for the setup wizard. | Promote after dependencies are complete; implement the versioned development enrollment contract with automatic local identity fallback and deterministic generated-key/mock-provider fixtures. | - |
+| P0 | [AR-1499](tasks/AR-1499-development-credential-enrollment.md): Development credential enrollment contract | Add a development-only credential enrollment contract for the setup wizard. | Promote after dependencies are complete; implement the versioned development enrollment contract with automatic local identity fallback and deterministic generated-key/mock-provider fixtures. | ar1499-credential-enrollment-luna56 |
 
 ## Blocked
 

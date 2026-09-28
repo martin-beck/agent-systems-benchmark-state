@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1499-development-credential-enrollment",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-28T19:52:57+00:00",
   "depends_on": [
     "AR-1442",
     "AR-1496"
   ],
   "id": "AR-1499",
   "next_action": "Promote after dependencies are complete; implement the versioned development enrollment contract with automatic local identity fallback and deterministic generated-key/mock-provider fixtures.",
-  "owner": "",
+  "owner": "ar1499-credential-enrollment-luna56",
   "plan": "../plans/AR-1499-development-credential-enrollment.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Add a development-only credential enrollment contract for the setup wizard.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Development credential enrollment contract",
-  "updated_at": "2026-09-28T17:52:54+00:00",
+  "updated_at": "2026-09-28T17:52:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1499"
 }
 ---
@@ -28,3 +28,5 @@ labelled and isolated.
 
 - 2026-09-28T17:52:54+00:00: Dependencies AR-1442 and AR-1496 are durably done; promote for
   implementation of development-only credential enrollment contract.
+
+- 2026-09-28T17:52:57+00:00: Claimed by ar1499-credential-enrollment-luna56.
