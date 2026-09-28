@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**517 ARs tracked** across 6 active status categories.
+**518 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 74 |
-| **Planned** | Defined work awaiting promotion or dependencies | 50 |
+| **Planned** | Defined work awaiting promotion or dependencies | 51 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 372 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -589,6 +589,7 @@ flowchart LR
         AR_1495["AR-1495 - Done"]:::status_done
         AR_1496["AR-1496 - Done"]:::status_done
         AR_1497["AR-1497 - Done"]:::status_done
+        AR_1498["AR-1498 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1247,13 +1248,16 @@ flowchart LR
     AR_1018 --> AR_1021
     AR_1018 --> AR_1022
     AR_1018 --> AR_1199
+    AR_1018 --> AR_1498
     AR_1019 --> AR_1020
     AR_1019 --> AR_1021
     AR_1019 --> AR_1022
     AR_1019 --> AR_1199
+    AR_1019 --> AR_1498
     AR_1020 --> AR_1021
     AR_1020 --> AR_1022
     AR_1020 --> AR_1199
+    AR_1020 --> AR_1498
     AR_1021 --> AR_1022
     AR_1022 --> AR_1024
     AR_1022 --> AR_1025
@@ -1354,8 +1358,10 @@ flowchart LR
     AR_1190 --> AR_1199
     AR_1190 --> AR_1299
     AR_1190 --> AR_1316
+    AR_1190 --> AR_1498
     AR_1191 --> AR_1199
     AR_1191 --> AR_1316
+    AR_1191 --> AR_1498
     AR_1200 --> AR_1226
     AR_1200 --> AR_1475
     AR_1200 --> AR_1476
@@ -1949,6 +1955,7 @@ flowchart LR
     AR_1493 --> AR_1495
     AR_1493 --> AR_1497
     AR_1496 --> AR_1199
+    AR_1496 --> AR_1498
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -2144,9 +2151,9 @@ flowchart LR
 | [AR-1015](../tasks/AR-1015-csb-measurement-adapter.md) | [AR-0601](../tasks/AR-0601-csb-integration.md), [AR-0602](../tasks/AR-0602-csb-monitoring-contention.md), [AR-0604](../tasks/AR-0604-csb-native-qualification.md), [AR-1013](../tasks/AR-1013-measurement-catalog-semantics.md) | [AR-1016](../tasks/AR-1016-measurement-integration-audit.md) |
 | [AR-1016](../tasks/AR-1016-measurement-integration-audit.md) | [AR-1002](../tasks/AR-1002-verifier-integrity.md), [AR-1007](../tasks/AR-1007-benchmark-validity.md), [AR-1014](../tasks/AR-1014-tui-measurement-selection.md), [AR-1015](../tasks/AR-1015-csb-measurement-adapter.md) | None |
 | [AR-1017](../tasks/AR-1017-asb-tui-separate-repository.md) | [AR-0803](../tasks/AR-0803-frontend-control-api.md), [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0806](../tasks/AR-0806-tui-history-analysis.md), [AR-0851](../tasks/AR-0851-shared-workflow-coordinator.md) | [AR-1018](../tasks/AR-1018-asb-tui-compatibility-detection.md), [AR-1019](../tasks/AR-1019-asb-tui-bundle-verification.md), [AR-1021](../tasks/AR-1021-asb-tui-release-promotion.md), [AR-1022](../tasks/AR-1022-asb-tui-release-contract-hardening.md), [AR-1030](../tasks/AR-1030-ratatui-dependency-closure.md) |
-| [AR-1018](../tasks/AR-1018-asb-tui-compatibility-detection.md) | [AR-1017](../tasks/AR-1017-asb-tui-separate-repository.md) | [AR-1019](../tasks/AR-1019-asb-tui-bundle-verification.md), [AR-1021](../tasks/AR-1021-asb-tui-release-promotion.md), [AR-1022](../tasks/AR-1022-asb-tui-release-contract-hardening.md), [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md) |
-| [AR-1019](../tasks/AR-1019-asb-tui-bundle-verification.md) | [AR-1017](../tasks/AR-1017-asb-tui-separate-repository.md), [AR-1018](../tasks/AR-1018-asb-tui-compatibility-detection.md) | [AR-1020](../tasks/AR-1020-asb-tui-install-selftest.md), [AR-1021](../tasks/AR-1021-asb-tui-release-promotion.md), [AR-1022](../tasks/AR-1022-asb-tui-release-contract-hardening.md), [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md) |
-| [AR-1020](../tasks/AR-1020-asb-tui-install-selftest.md) | [AR-1019](../tasks/AR-1019-asb-tui-bundle-verification.md) | [AR-1021](../tasks/AR-1021-asb-tui-release-promotion.md), [AR-1022](../tasks/AR-1022-asb-tui-release-contract-hardening.md), [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md) |
+| [AR-1018](../tasks/AR-1018-asb-tui-compatibility-detection.md) | [AR-1017](../tasks/AR-1017-asb-tui-separate-repository.md) | [AR-1019](../tasks/AR-1019-asb-tui-bundle-verification.md), [AR-1021](../tasks/AR-1021-asb-tui-release-promotion.md), [AR-1022](../tasks/AR-1022-asb-tui-release-contract-hardening.md), [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md), [AR-1498](../tasks/AR-1498-authenticated-lifecycle-executor.md) |
+| [AR-1019](../tasks/AR-1019-asb-tui-bundle-verification.md) | [AR-1017](../tasks/AR-1017-asb-tui-separate-repository.md), [AR-1018](../tasks/AR-1018-asb-tui-compatibility-detection.md) | [AR-1020](../tasks/AR-1020-asb-tui-install-selftest.md), [AR-1021](../tasks/AR-1021-asb-tui-release-promotion.md), [AR-1022](../tasks/AR-1022-asb-tui-release-contract-hardening.md), [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md), [AR-1498](../tasks/AR-1498-authenticated-lifecycle-executor.md) |
+| [AR-1020](../tasks/AR-1020-asb-tui-install-selftest.md) | [AR-1019](../tasks/AR-1019-asb-tui-bundle-verification.md) | [AR-1021](../tasks/AR-1021-asb-tui-release-promotion.md), [AR-1022](../tasks/AR-1022-asb-tui-release-contract-hardening.md), [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md), [AR-1498](../tasks/AR-1498-authenticated-lifecycle-executor.md) |
 | [AR-1021](../tasks/AR-1021-asb-tui-release-promotion.md) | [AR-0877](../tasks/AR-0877-formal-tla-artifact-availability.md), [AR-0906](../tasks/AR-0906-portable-oci-build-image-identity.md), [AR-1017](../tasks/AR-1017-asb-tui-separate-repository.md), [AR-1018](../tasks/AR-1018-asb-tui-compatibility-detection.md), [AR-1019](../tasks/AR-1019-asb-tui-bundle-verification.md), [AR-1020](../tasks/AR-1020-asb-tui-install-selftest.md) | [AR-1022](../tasks/AR-1022-asb-tui-release-contract-hardening.md) |
 | [AR-1022](../tasks/AR-1022-asb-tui-release-contract-hardening.md) | [AR-1017](../tasks/AR-1017-asb-tui-separate-repository.md), [AR-1018](../tasks/AR-1018-asb-tui-compatibility-detection.md), [AR-1019](../tasks/AR-1019-asb-tui-bundle-verification.md), [AR-1020](../tasks/AR-1020-asb-tui-install-selftest.md), [AR-1021](../tasks/AR-1021-asb-tui-release-promotion.md) | [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md), [AR-1060](../tasks/AR-1060-authenticated-control-endpoint-handoff.md) |
 | [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) | [AR-0803](../tasks/AR-0803-frontend-control-api.md), [AR-0840](../tasks/AR-0840-frontend-protocol-contract.md), [AR-0841](../tasks/AR-0841-frontend-local-transport.md), [AR-0842](../tasks/AR-0842-frontend-run-lifecycle.md), [AR-0843](../tasks/AR-0843-frontend-privacy-assurance.md), [AR-0844](../tasks/AR-0844-frontend-api-integration.md), [AR-0904](../tasks/AR-0904-contract-consistency.md) | [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md), [AR-1036](../tasks/AR-1036-measurement-catalog-control.md), [AR-1038](../tasks/AR-1038-capability-coverage-sink.md), [AR-1060](../tasks/AR-1060-authenticated-control-endpoint-handoff.md) |
@@ -2202,8 +2209,8 @@ flowchart LR
 | [AR-1170](../tasks/AR-1170.md) | [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md), [AR-1160](../tasks/AR-1160.md) | [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0823](../tasks/AR-0823-installation-qualification.md), [AR-0873](../tasks/AR-0873-ci-workflow-captures.md), [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md), [AR-1031](../tasks/AR-1031-asb-tui-landing-screen.md), [AR-1032](../tasks/AR-1032-asb-tui-contextual-help.md), [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md), [AR-1180](../tasks/AR-1180.md) |
 | [AR-1180](../tasks/AR-1180.md) | [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md), [AR-1140](../tasks/AR-1140.md), [AR-1170](../tasks/AR-1170.md) | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md) |
 | [AR-1181](../tasks/AR-1181.md) | None | None |
-| [AR-1190](../tasks/AR-1190.md) | None | [AR-1191](../tasks/AR-1191.md), [AR-1198](../tasks/AR-1198.md), [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md), [AR-1299](../tasks/AR-1299.md), [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md) |
-| [AR-1191](../tasks/AR-1191.md) | [AR-1190](../tasks/AR-1190.md) | [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md), [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md) |
+| [AR-1190](../tasks/AR-1190.md) | None | [AR-1191](../tasks/AR-1191.md), [AR-1198](../tasks/AR-1198.md), [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md), [AR-1299](../tasks/AR-1299.md), [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md), [AR-1498](../tasks/AR-1498-authenticated-lifecycle-executor.md) |
+| [AR-1191](../tasks/AR-1191.md) | [AR-1190](../tasks/AR-1190.md) | [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md), [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md), [AR-1498](../tasks/AR-1498-authenticated-lifecycle-executor.md) |
 | [AR-1196](../tasks/AR-1196-protected-main-dco-repair.md) | None | None |
 | [AR-1197](../tasks/AR-1197-control-scratch-isolation-current-main.md) | None | None |
 | [AR-1198](../tasks/AR-1198.md) | [AR-1190](../tasks/AR-1190.md) | None |
