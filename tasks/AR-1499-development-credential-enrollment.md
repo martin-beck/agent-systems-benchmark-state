@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1499-development-credential-enrollment",
-  "checkpoint_commit": "78c2717d47a0c90ad660c581a741f122417d9ccd",
+  "checkpoint_commit": "0a2f6e9c74f98a0a8d59b6f834ef96ee63d5cfee",
   "claim_expires": "2026-09-28T20:25:28+00:00",
   "depends_on": [
     "AR-1442",
     "AR-1496"
   ],
   "id": "AR-1499",
-  "next_action": "PR #378 exact head 78c2717 now has protected main 65bcdf3 as an ancestry anchor; merge-base(origin/main, head)=65bcdf3. Hosted portability previously failed at 7bdda85 due immutable-source topology; rerun and monitor every exact-head required check before merge.",
+  "next_action": "PR #378 exact head 0a2f6e9 is now DCO-safe on repair/ar-1499-selection-binding, based directly on protected main 65bcdf3 with signed corrective commits ea82338 and 0a2f6e9. Monitor all exact-head checks; merge only after every required check is green and independent review is complete.",
   "observed_branch": "feature/ar-1499-development-credential-enrollment",
   "observed_dirty": 0,
   "observed_head": "0a2f6e9c74f98a0a8d59b6f834ef96ee63d5cfee",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair merged development credential selection binding",
-  "task_revision": 74,
+  "task_revision": 75,
   "title": "Development credential enrollment contract",
-  "updated_at": "2026-09-28T18:38:03+00:00",
+  "updated_at": "2026-09-28T18:38:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1499"
 }
 ---
@@ -221,3 +221,9 @@ labelled and isolated.
 
 - 2026-09-28T18:38:03+00:00: Recorded command exit 0; command argv SHA-256
   0e8dbd11e4772f25a1c18c742829a06610017f40430ea6b5d8e08bd2ec7f45c0.
+
+- 2026-09-28T18:38:33+00:00: Rebuilt repair ref from protected main after policy run 36466191613
+  rejected merge-anchor 78c2717 for missing Signed-off-by. Signed DCO cherry-picks ea82338
+  (selection binding) and 0a2f6e9 (fresh Status semantics) now have SSH signatures and matching
+  trailers. Force-with-lease updated dedicated PR branch; verified remote head 0a2f6e9 and
+  merge-base 65bcdf3.
