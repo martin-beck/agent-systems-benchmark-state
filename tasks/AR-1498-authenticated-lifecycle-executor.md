@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Lifecycle branch coverage expanded; serialized workspace llvm-cov 90.69% lines",
-  "task_revision": 83,
+  "task_revision": 84,
   "title": "Authenticated lifecycle artifact executor",
-  "updated_at": "2026-09-28T17:30:01+00:00",
+  "updated_at": "2026-09-28T17:30:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1498"
 }
 ---
@@ -283,3 +283,11 @@ protocol/schema fixtures consumed by AR-1199 and downstream asb-tui.
 
 - 2026-09-28T17:30:01+00:00: Recorded command exit 101; command argv SHA-256
   c8a76a5b6599bb2e17ab7e4df1d840760367b2eac475d148b69151c3df326f96.
+
+- 2026-09-28T17:30:25+00:00: Workspace test attempt with explicit LLVM_PROFILE_FILE
+  target/asb-tests-%p-%m.profraw failed exit 101 only in
+  capability_contract::instrumented_canonical_and_failing_children_use_distinct_nondefault_profiles
+  at line 479: coverage_enabled became true from the env, but normal cargo test child binaries
+  emitted zero profiles (left 0, right 6). This is an invalid test invocation environment, not a
+  product failure. Next action: rerun workspace tests without LLVM_PROFILE_FILE, then continue
+  signed amend/push; coverage gate remains independently green using its explicit sink.
