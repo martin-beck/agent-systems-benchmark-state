@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1499-development-credential-enrollment",
   "checkpoint_commit": "86bb90ceb44d9cfed8e56500ba7c6e0297767bcf",
-  "claim_expires": "2026-09-28T20:15:13+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1442",
     "AR-1496"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1499-development-credential-enrollment",
   "observed_dirty": 0,
   "observed_head": "7bdda85240653fa15e8eee602240137d88b8442b",
-  "owner": "ar1499-credential-enrollment-luna56",
+  "owner": "",
   "plan": "../plans/AR-1499-development-credential-enrollment.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Implement versioned development credential enrollment contract with deterministic local/mock identity",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Development credential enrollment contract",
-  "updated_at": "2026-09-28T18:23:33+00:00",
+  "updated_at": "2026-09-28T18:23:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1499"
 }
 ---
@@ -113,3 +113,7 @@ labelled and isolated.
 
 - 2026-09-28T18:23:20+00:00: Recorded command exit 0; command argv SHA-256
   2be3afdb61adb6d3e6fddf88412ed32f53607df1f80f0bc47aeebd52dc481cc6.
+
+- 2026-09-28T18:23:48+00:00: Coordinator takeover: PR #377 merged old head 86bb90c before
+  independent selection-binding review. Preserve merged evidence; corrective commit 51c57d4 is on
+  branch but not main. Stop prior worker and start repair worker on same AR.

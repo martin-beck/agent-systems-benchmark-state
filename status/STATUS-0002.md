@@ -176,11 +176,11 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1499](../tasks/AR-1499-development-credential-enrollment.md): Development credential enrollment contract | ar1499-credential-enrollment-luna56 | Implement versioned development credential enrollment contract with deterministic local/mock identity | PR #377 exact head 86bb90c remains open; wait for remaining required CI (aarch64, TLC/Alloy, policy, Rust) and independent review; merge only after all green. |
+| P0 | [AR-1499](../tasks/AR-1499-development-credential-enrollment.md): Development credential enrollment contract | Unclaimed | Implement versioned development credential enrollment contract with deterministic local/mock identity | PR #377 exact head 86bb90c remains open; wait for remaining required CI (aarch64, TLC/Alloy, policy, Rust) and independent review; merge only after all green. |
 
 ### Blocked (74)
 
