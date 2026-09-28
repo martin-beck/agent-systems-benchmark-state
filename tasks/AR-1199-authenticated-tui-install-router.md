@@ -13,15 +13,18 @@
   ],
   "id": "AR-1199",
   "next_action": "Create isolated AR worktree from exact origin/main; inspect asb-cli and asb-control routing seams, then implement authenticated tui lifecycle dispatch with fixtures and integration tests.",
+  "observed_branch": "feature/ar-1199-authenticated-tui-install-router",
+  "observed_dirty": 0,
+  "observed_head": "45df6590cbf9ab75f07dcc0b753335949e28d937",
   "owner": "ar1199-router-impl",
   "plan": "../plans/AR-1199.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Expose an authenticated renderer-neutral ASB router for asb tui install and lifecycle operations.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Authenticated TUI install router",
-  "updated_at": "2026-09-28T14:55:49+00:00",
+  "updated_at": "2026-09-28T14:56:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1199"
 }
 ---
