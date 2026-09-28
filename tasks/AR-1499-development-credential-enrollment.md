@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair merged development credential selection binding",
-  "task_revision": 55,
+  "task_revision": 56,
   "title": "Development credential enrollment contract",
-  "updated_at": "2026-09-28T18:31:36+00:00",
+  "updated_at": "2026-09-28T18:31:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1499"
 }
 ---
@@ -174,3 +174,6 @@ labelled and isolated.
   Diagnosis: repair branch ancestry starts at pre-merge 9231a66 and therefore merge-base(base, head)
   is not base; this is an immutable provenance/topology issue, not a test failure. Preserve run
   evidence and repair branch topology before rerun.
+
+- 2026-09-28T18:31:57+00:00: Recorded command exit 0; command argv SHA-256
+  7b80382008cb01e3ea6fa6e88054b624464f9801b40ed57f947b01892a686ae8.
