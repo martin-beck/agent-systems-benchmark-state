@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-28T23:07:09+00:00",
+  "updated_at": "2026-09-28T23:07:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -98,3 +98,8 @@ public credential/socket paths, or weakening fail-closed gates.
   6ad2f71e2002b797aa7b80ba5f0bbcb7f925ac75dcc3b4c1d85e5543b906175f.
 
 - 2026-09-28T23:07:09+00:00: Heartbeat by ar1505-control-plane-luna56.
+
+- 2026-09-28T23:07:11+00:00: Applied compiler-suggested reborrow at endpoint.rs:343 after exact
+  E0382; added Catalog runtime_bootstraps initialization and MutationTarget
+  validation/reconciliation arms required by new bootstrap operation. The 23:05 repeated hash was
+  not rerun after repair until source changed.
