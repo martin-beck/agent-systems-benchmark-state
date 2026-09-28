@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run fresh package first-customer runtime acceptance and produce an explicit readiness report.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Fresh package runtime acceptance",
-  "updated_at": "2026-09-28T14:50:12+00:00",
+  "updated_at": "2026-09-28T14:50:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1490-fresh-package-runtime-acceptance"
 }
 ---
@@ -126,3 +126,6 @@ when exact package or clean-environment inputs are absent.
   checkout, so the AR worktree had no fixture file and no product mutation occurred. The stray file
   was immediately deleted. Next action is to create the fixture only in this declared ASB AR
   worktree and continue acceptance.
+
+- 2026-09-28T14:50:31+00:00: Recorded command exit 0; command argv SHA-256
+  8698233ac2bb504fe4fae3bc1799d976984bb5a0bf65d268d3f607a9062df03a.
