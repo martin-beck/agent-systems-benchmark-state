@@ -10,7 +10,7 @@
     "AR-1489"
   ],
   "id": "AR-1490",
-  "next_action": "Correct the generated TOML plan to use the nested ExperimentManifestV1 tables expected by the CLI, revalidate with installed asb plan, then execute run/sweep and recovery checks.",
+  "next_action": "Omit None-valued cassette_sha256 from TOML (TOML has no null literal), regenerate the nested plan, revalidate with installed asb plan, then execute run/sweep and recovery checks.",
   "observed_branch": "qualification/ar-1490-fresh-package-runtime-acceptance",
   "observed_dirty": 2,
   "observed_head": "45df6590cbf9ab75f07dcc0b753335949e28d937",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run fresh package first-customer runtime acceptance and produce an explicit readiness report.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Fresh package runtime acceptance",
-  "updated_at": "2026-09-28T14:55:14+00:00",
+  "updated_at": "2026-09-28T14:56:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1490-fresh-package-runtime-acceptance"
 }
 ---
@@ -157,3 +157,9 @@ when exact package or clean-environment inputs are absent.
 
 - 2026-09-28T14:55:14+00:00: Recorded command exit 3; command argv SHA-256
   f17628d279336fa6a409883e518e3b534f49416dc1e889a504f8423982d0aac7.
+
+- 2026-09-28T14:56:11+00:00: Recorded second plan failure: the regenerated nested plan still exited
+  3 with experiment plan syntax or shape is invalid. Inspection of the exact generated file found
+  controls.replay emitted cassette_sha256 = null, which is invalid TOML syntax; the validator
+  therefore never reached semantic checks and created no result/work roots. The helper is being
+  corrected to omit absent optional fields.
