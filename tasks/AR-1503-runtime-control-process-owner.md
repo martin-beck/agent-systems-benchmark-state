@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1503-runtime-control-process-owner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-29T00:33:15+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1473",
     "AR-1474",
@@ -16,15 +16,15 @@
   "observed_branch": "feature/ar-1503-runtime-control-process-owner",
   "observed_dirty": 3,
   "observed_head": "3c6af6b351e0c32ee8f5e48716654d854dcbbac2",
-  "owner": "ar1483-owner-integration-luna56",
+  "owner": "",
   "plan": "../plans/AR-1503-runtime-control-process-owner.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Own the authenticated control session and hand off only an opaque live dispatch source.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Runtime/control process owner",
-  "updated_at": "2026-09-28T22:33:18+00:00",
+  "updated_at": "2026-09-28T22:33:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1503-runtime-control-process-owner"
 }
 ---
@@ -216,3 +216,7 @@ asb-tui, synthesize authority, or accept caller-built runtime inputs.
 
 - 2026-09-28T22:33:18+00:00: Recorded command exit 0; command argv SHA-256
   cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
+
+- 2026-09-28T22:33:35+00:00: Coordinator takeover: stopped the prior worker after repeated
+  focused-gate failures; preserve all durable evidence and dirty worktree for a fresh repair worker
+  on the same AR.
