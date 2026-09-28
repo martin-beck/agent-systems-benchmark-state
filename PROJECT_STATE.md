@@ -16,21 +16,21 @@ Generated from local Git and GitHub. Do not edit.
 | #364 | `dependabot/cargo/jsonschema-0.56.0@1b649e680a58` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump jsonschema from 0.33.0 to 0.56.0 |
 | #365 | `dependabot/cargo/rcgen-0.14.10@8604b5977544` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump rcgen from 0.14.7 to 0.14.10 |
 | #366 | `dependabot/cargo/schemars-1.2.2@047b52b0b5b9` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump schemars from 1.0.4 to 1.2.2 |
-| #373 | `feature/ar-1495-development-unverified-bundle-profile@1f5b0f9e3c37` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS: | bundle: isolate development-only unverified signature profile |
+| #373 | `feature/ar-1495-development-unverified-bundle-profile@1f5b0f9e3c37` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | bundle: isolate development-only unverified signature profile |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36427087088 | `1f5b0f9e3c37` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 36427087088 | `1f5b0f9e3c37` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36427086978 | `1f5b0f9e3c37` | pull_request | Emulated aarch64 portability | pending:- |
 | 36427086966 | `1f5b0f9e3c37` | pull_request | Hosted portability and native qualification | in_progress:- |
 | 36427086965 | `1f5b0f9e3c37` | pull_request | Rust verification | pending:- |
 | 36427086943 | `1f5b0f9e3c37` | pull_request | Huawei MIT source headers | completed:success |
-| 36427086873 | `1f5b0f9e3c37` | pull_request | Formal assurance | pending:- |
+| 36427086873 | `1f5b0f9e3c37` | pull_request | Formal assurance | in_progress:- |
 | 36427086863 | `1f5b0f9e3c37` | pull_request | Credential-free benchmark path | in_progress:- |
-| 36427086854 | `1f5b0f9e3c37` | pull_request | Repository quality | in_progress:- |
+| 36427086854 | `1f5b0f9e3c37` | pull_request | Repository quality | completed:failure |
 | 36427086837 | `1f5b0f9e3c37` | pull_request | Fault assurance | in_progress:- |
-| 36426846396 | `a714861edd48` | pull_request | Formal assurance | in_progress:- |
+| 36426846396 | `a714861edd48` | pull_request | Formal assurance | completed:cancelled |
 | 36426846394 | `a714861edd48` | pull_request | Huawei MIT source headers | completed:success |
 | 36426846319 | `a714861edd48` | pull_request | Fault assurance | completed:success |
