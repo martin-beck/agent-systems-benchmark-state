@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1495-development-unverified-bundle-profile",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "48f082234cbb6aa8997d5dd59a2308799233bf73",
   "claim_expires": "2026-09-28T15:04:53+00:00",
   "depends_on": [
     "AR-1314",
@@ -10,7 +10,7 @@
     "AR-1493"
   ],
   "id": "AR-1495",
-  "next_action": "Promote and claim AR-1495, audit AR-1314 on protected main, and implement or repair the explicit development-only unverified bundle profile.",
+  "next_action": "Run complete workspace/docs/policy/release/clean gates, independently review exact diff, then publish exact signed+DCO head.",
   "observed_branch": "feature/ar-1495-development-unverified-bundle-profile",
   "observed_dirty": 0,
   "observed_head": "48f082234cbb6aa8997d5dd59a2308799233bf73",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add an explicit development-only unverified bundle profile without weakening production or customer-release verification.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Development-only unverified bundle profile",
-  "updated_at": "2026-09-28T13:05:00+00:00",
+  "updated_at": "2026-09-28T13:05:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1495-development-unverified-bundle-profile"
 }
 ---
@@ -89,3 +89,10 @@ above.
 
 - 2026-09-28T13:05:00+00:00: Recorded command exit 1; command argv SHA-256
   6d641cca764ff5d024d4d69a45e2a4983caedea4aadfdc5d831babec598fcc76.
+
+- 2026-09-28T13:05:25+00:00: Signed+DCO product commit 48f082234cbb6aa8997d5dd59a2308799233bf73
+  created after one shared coordinator LOCK_TIMEOUT retry. Focused profile tests 6/6 and complete
+  asb-bundle offline_verifier 24/24 pass. The first new test run failed because exact inventory did
+  not account for the tolerated development signature file; fixed expected_inventory to include it
+  only for AllowUnsignedDevelopment, while default and unsigned-release remain strict. Canonical
+  dirty user changes remain untouched; isolated worktree clean.
