@@ -13,18 +13,18 @@
   ],
   "id": "AR-1503",
   "next_action": "Promote and claim after reviewing the blocked AR-1483 evidence; implement the runtime/platform-owned control-session launcher and authenticated owner handoff.",
-  "observed_branch": "",
+  "observed_branch": "feature/ar-1503-runtime-control-process-owner",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "3c6af6b351e0c32ee8f5e48716654d854dcbbac2",
   "owner": "ar1483-owner-integration-luna56",
   "plan": "../plans/AR-1503-runtime-control-process-owner.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Own the authenticated control session and hand off only an opaque live dispatch source.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Runtime/control process owner",
-  "updated_at": "2026-09-28T22:07:24+00:00",
+  "updated_at": "2026-09-28T22:07:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1503-runtime-control-process-owner"
 }
 ---
