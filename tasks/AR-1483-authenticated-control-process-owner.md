@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1483-authenticated-control-process-owner",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-28T23:57:16+00:00",
   "depends_on": [
     "AR-1472",
     "AR-1473",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1483-authenticated-control-process-owner",
   "observed_dirty": 0,
   "observed_head": "eff9984fd11bec55e1e23366b3bba0bcb717826a",
-  "owner": "",
+  "owner": "ar1483-owner-integration-luna56",
   "plan": "../plans/AR-1483-authenticated-control-process-owner.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Own authenticated control session and lifecycle while minting opaque CLI dispatch sources.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Authenticated control process owner",
-  "updated_at": "2026-09-28T21:57:13+00:00",
+  "updated_at": "2026-09-28T21:57:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1483-authenticated-control-process-owner"
 }
 ---
@@ -76,3 +76,5 @@ caller authority or modify asb-tui.
   AR-1484 lifecycle contract are merged and verified. Re-audit the smallest owner integration slice
   on protected main; preserve fail-closed boundaries and create a successor only if the
   process-owner backend remains genuinely absent.
+
+- 2026-09-28T21:57:16+00:00: Claimed by ar1483-owner-integration-luna56.
