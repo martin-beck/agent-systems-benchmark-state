@@ -11,16 +11,16 @@
   "next_action": "PR #378 exact head 78c2717 now has protected main 65bcdf3 as an ancestry anchor; merge-base(origin/main, head)=65bcdf3. Hosted portability previously failed at 7bdda85 due immutable-source topology; rerun and monitor every exact-head required check before merge.",
   "observed_branch": "feature/ar-1499-development-credential-enrollment",
   "observed_dirty": 0,
-  "observed_head": "78c2717d47a0c90ad660c581a741f122417d9ccd",
+  "observed_head": "65bcdf3208db50bf6186eec5c2fe3c9ed6956b83",
   "owner": "ar1499-selection-binding-repair-luna56",
   "plan": "../plans/AR-1499-development-credential-enrollment.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair merged development credential selection binding",
-  "task_revision": 67,
+  "task_revision": 68,
   "title": "Development credential enrollment contract",
-  "updated_at": "2026-09-28T18:36:19+00:00",
+  "updated_at": "2026-09-28T18:36:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1499"
 }
 ---
