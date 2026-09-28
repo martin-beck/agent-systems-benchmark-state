@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated artifact executor and activation authority behind the ASB agent lifecycle router.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Authenticated lifecycle artifact executor",
-  "updated_at": "2026-09-28T16:51:34+00:00",
+  "updated_at": "2026-09-28T16:51:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1498"
 }
 ---
@@ -79,3 +79,8 @@ protocol/schema fixtures consumed by AR-1199 and downstream asb-tui.
 
 - 2026-09-28T16:51:34+00:00: Recorded command exit 101; command argv SHA-256
   1c69a4443966f5d335a0a526d0dac73a6d618685bc20a635e78578f17fe0d354.
+
+- 2026-09-28T16:51:56+00:00: Focused lifecycle test failed: unavailable-roster fixture intentionally
+  supplies placeholder catalog digest, but binding validation returned StaleIdentity before the
+  expected CapabilityUnavailable. Next action: preserve fail-closed unavailable behavior by checking
+  unavailable catalog identity before requiring digest, then rerun focused test.
