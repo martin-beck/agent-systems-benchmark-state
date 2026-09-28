@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1496-runtime-owned-provider-capture-control",
-  "checkpoint_commit": "b9a497c31151c1622653b2d1caf84af0dbbb3386",
+  "checkpoint_commit": "cb44d1bdcf903969bca43c564e5e2a8839506056",
   "claim_expires": "2026-09-28T16:30:50+00:00",
   "depends_on": [
     "AR-1151",
@@ -12,7 +12,7 @@
     "AR-1455"
   ],
   "id": "AR-1496",
-  "next_action": "PR #375 exact head b9a497c is pushed with review blockers repaired; obtain independent re-review and required hosted checks before any signed merge.",
+  "next_action": "PR #375 exact head cb44d1b is pushed with protocol-status validation repaired; obtain independent re-review and required hosted checks before any signed merge.",
   "observed_branch": "feature/ar-1496-runtime-owned-provider-capture-control",
   "observed_dirty": 0,
   "observed_head": "cb44d1bdcf903969bca43c564e5e2a8839506056",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Complete runtime-owned provider capture, tuple cassette reconciliation and verified offline activation required by the setup wizard.",
-  "task_revision": 62,
+  "task_revision": 63,
   "title": "Runtime-owned provider capture and control activation",
-  "updated_at": "2026-09-28T14:26:33+00:00",
+  "updated_at": "2026-09-28T14:35:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1496-runtime-owned-provider-capture-control"
 }
 ---
@@ -193,3 +193,12 @@ execution or alter AR-1160's historical evidence.
 
 - 2026-09-28T14:26:33+00:00: Recorded command exit 0; command argv SHA-256
   adb5299e0f623df53636981ffdcc540ddd4b56c76a814da8a10b433b903e786e.
+
+- 2026-09-28T16:28:00+00:00: Protocol status repair pushed at exact head cb44d1b. Status now
+  projects RecordingCampaignLifecycle, so complete/failed/cancelled/needs_reconciliation states
+  validate independently of planned-only RecordingCampaignPlan; v1.7 response schema regenerated.
+  Focused campaign tests and full cargo test --locked --workspace -- --test-threads=1 passed.
+  Independent re-review remains required; do not merge.
+
+- 2026-09-28T14:35:58+00:00: Recorded command exit 1; command argv SHA-256
+  b24c5d48f780a118537cb772329f85bf1f476f9d7e2722e4f45e786e54a51db9.
