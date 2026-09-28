@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Implement runtime-owned bootstrap response consumption and cancellation revocation/fencing in the existing AR-1505 worktree; add deterministic provider-free end-to-end tests.",
+  "next_action": "Retry the runtime bootstrap object insertion using the exact LiveProviderRuntimeBridge context; prior patch failed context matching without product mutation.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 1,
   "observed_head": "baa13ea675de2160dcf58f69b106e255f2c3d8de",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 123,
+  "task_revision": 124,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-28T23:54:42+00:00",
+  "updated_at": "2026-09-28T23:55:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -502,3 +502,9 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-28T23:54:42+00:00: Recorded command exit 1; command argv SHA-256
   d3ea269ca6fd05bec9346dc0d690ee1252f443aa8bd4a73b13f1d24b2f438b92.
+
+- 2026-09-28T23:55:13+00:00: 2026-09-28T23:54:42Z: Recorded command exit 1 for handoffctl run
+  --owner ar1505-repair-luna56 AR-1505 -- apply_patch <RuntimeControlBootstrap patch>; exact stderr:
+  Failed to find expected lines in crates/asb-runtime/src/live_service.rs at the bridge closing
+  context. Product mutation did not occur. Corrective action: inspect exact lines 1360-1411 and
+  reapply a narrower insertion before ingest_control_response.

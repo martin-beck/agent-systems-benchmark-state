@@ -188,7 +188,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1505](../tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | ar1505-repair-luna56 | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | Implement runtime-owned bootstrap response consumption and cancellation revocation/fencing in the existing AR-1505 worktree; add deterministic provider-free end-to-end tests. |
+| P0 | [AR-1505](../tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | ar1505-repair-luna56 | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | Retry the runtime bootstrap object insertion using the exact LiveProviderRuntimeBridge context; prior patch failed context matching without product mutation. |
 
 ### Blocked (76)
 
