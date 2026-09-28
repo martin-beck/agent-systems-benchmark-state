@@ -14,7 +14,7 @@
   "id": "AR-1498",
   "next_action": "Publish signed commit 75a2575085b65325b9e2245677f2db730fcf09b2 for independent review; require exact-head CI, merge integrity, post-merge verification, then release AR-1498 durably.",
   "observed_branch": "feature/ar-1498-authenticated-lifecycle-executor",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "75a2575085b65325b9e2245677f2db730fcf09b2",
   "owner": "ar1498-repair-luna56",
   "plan": "../plans/AR-1498.md",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated artifact executor and activation authority behind the ASB agent lifecycle router.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Authenticated lifecycle artifact executor",
-  "updated_at": "2026-09-28T17:08:30+00:00",
+  "updated_at": "2026-09-28T17:08:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1498"
 }
 ---

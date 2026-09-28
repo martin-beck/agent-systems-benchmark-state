@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**518 ARs tracked** across 6 active status categories.
+**521 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 74 |
-| **Planned** | Defined work awaiting promotion or dependencies | 50 |
+| **Planned** | Defined work awaiting promotion or dependencies | 53 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 373 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -590,6 +590,12 @@ flowchart LR
         AR_1496["AR-1496 - Done"]:::status_done
         AR_1497["AR-1497 - Done"]:::status_done
         AR_1498["AR-1498 - In progress"]:::status_in_progress
+        AR_1499["AR-1499 - Planned"]:::status_planned
+    end
+    subgraph series_15["15 - Additional work"]
+        direction TB
+        AR_1500["AR-1500 - Planned"]:::status_planned
+        AR_1501["AR-1501 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1859,12 +1865,14 @@ flowchart LR
     AR_1442 --> AR_1446
     AR_1442 --> AR_1447
     AR_1442 --> AR_1488
+    AR_1442 --> AR_1499
     AR_1443 --> AR_1331
     AR_1443 --> AR_1338
     AR_1443 --> AR_1444
     AR_1443 --> AR_1446
     AR_1443 --> AR_1448
     AR_1443 --> AR_1449
+    AR_1443 --> AR_1500
     AR_1446 --> AR_1331
     AR_1446 --> AR_1338
     AR_1446 --> AR_1448
@@ -1956,7 +1964,11 @@ flowchart LR
     AR_1493 --> AR_1497
     AR_1496 --> AR_1199
     AR_1496 --> AR_1498
+    AR_1496 --> AR_1499
     AR_1498 --> AR_1199
+    AR_1499 --> AR_1500
+    AR_1499 --> AR_1501
+    AR_1500 --> AR_1501
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -2319,5 +2331,3 @@ flowchart LR
 | [AR-1320](../tasks/AR-1320-persisted-agent-release-index.md) | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md) | None |
 | [AR-1322](../tasks/AR-1322-authenticated-release-index-source.md) | None | None |
 | [AR-1324](../tasks/AR-1324-auth-helper-control-contract.md) | None | None |
-| [AR-1325](../tasks/AR-1325-provider-openrouter.md) | [AR-0310](../tasks/AR-0310-provider-profile-contract.md), [AR-0318](../tasks/AR-0318-credential-reference-boundary.md) | [AR-1326](../tasks/AR-1326-openrouter-catalog-selection.md), [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md) |
-| [AR-1326](../tasks/AR-1326-openrouter-catalog-selection.md) | [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-1325](../tasks/AR-1325-provider-openrouter.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md) |
