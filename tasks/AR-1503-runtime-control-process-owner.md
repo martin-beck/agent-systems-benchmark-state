@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Own the authenticated control session and hand off only an opaque live dispatch source.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Runtime/control process owner",
-  "updated_at": "2026-09-28T22:37:52+00:00",
+  "updated_at": "2026-09-28T22:38:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1503-runtime-control-process-owner"
 }
 ---
@@ -252,3 +252,6 @@ asb-tui, synthesize authority, or accept caller-built runtime inputs.
   message="control state root is already owned" exit_code=4 settings_issue=InvalidFormat, panics at
   crates/asb-cli/src/control.rs:6521:45 and :8390:45. AR-1503 process_owner focused tests were
   green; no failure implicated in changed code. Do not repeat unchanged parallel workspace run.
+
+- 2026-09-28T22:38:01+00:00: Recorded command exit 0; command argv SHA-256
+  359d399dbe516e4a6c82de7a61b736b7d34fb7b6e8ffe552245ab234d396de60.
