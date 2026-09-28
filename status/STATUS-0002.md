@@ -169,14 +169,13 @@
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1495](../tasks/AR-1495-development-unverified-bundle-profile.md): Development-only unverified bundle profile | ar1332-record-replay-luna56 | Add an explicit development-only unverified bundle profile without weakening production or customer-release verification. | Monitor PR #373 fresh exact signed+DCO head 4d63a66; merge only after all required checks and independent review are green. |
 | P0 | [AR-1496](../tasks/AR-1496-runtime-owned-provider-capture-control.md): Runtime-owned provider capture and control activation | ar1496-provider-capture-luna56 | Complete runtime-owned provider capture, tuple cassette reconciliation and verified offline activation required by the setup wizard. | Promote after AR-1151, AR-1330, AR-1433, AR-1447, AR-1450 and AR-1455 are verified; implement the real tuple capture/reconciliation and offline activation path over the existing control contracts. |
 
-### Blocked (74)
+### Blocked (75)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -236,6 +235,7 @@
 | P0 | [AR-1482](../tasks/AR-1482-control-runtime-process-bootstrap.md): Control-runtime process bootstrap | Unclaimed | Compose authenticated control enrollment into the ordinary CLI process bootstrap. | Promote and claim, then inspect control/runtime process bootstrap APIs on protected main. |
 | P0 | [AR-1483](../tasks/AR-1483-authenticated-control-process-owner.md): Authenticated control process owner | Unclaimed | Own authenticated control session and lifecycle while minting opaque CLI dispatch sources. | Promote and claim, then audit whether the runtime/control owner contract can be implemented without caller authority. |
 | P0 | [AR-1490](../tasks/AR-1490-fresh-package-runtime-acceptance.md): Fresh package runtime acceptance | Unclaimed | Run fresh package first-customer runtime acceptance and produce an explicit readiness report. | Promote and claim, then audit exact package and clean-environment inputs before executing the local/mock/replay readiness run. |
+| P0 | [AR-1495](../tasks/AR-1495-development-unverified-bundle-profile.md): Development-only unverified bundle profile | Unclaimed | Add an explicit development-only unverified bundle profile without weakening production or customer-release verification. | Monitor PR #373 fresh exact signed+DCO head 4d63a66; merge only after all required checks and independent review are green. |
 | P1 | [AR-0604](../tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Unclaimed | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Obtain authorized native x86 runner and immutable CSB/Python evidence; rerun native_boundary and record A/B overhead. |
 | P1 | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Unclaimed | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Create successor AR for authenticated route/ancestor authority; preserve AR-1288 evidence and AR-0814 head 29cfa193. |
 | P1 | [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md): Qualify development host ASB runner operations | Unclaimed | Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery. | Run repeated clean ASB jobs on every declared development host label and audit reset, isolation, architecture, and artifact provenance. |
@@ -501,3 +501,4 @@
 | P0 | [AR-1487](../tasks/AR-1487-owner-backed-first-customer-qualification.md): Owner-backed first-customer qualification | Unclaimed | Qualify the owner-backed credential-free local/mock/replay first-customer journey. | Reconcile and doctor state projection; retain known generated WORKTREES/PROJECT_STATE caveat if reported. |
 | P0 | [AR-1488](../tasks/AR-1488-owner-backed-user-journey.md): Owner-backed first-customer user journey | Unclaimed | Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey. | Reconcile and doctor state projection; retain known generated WORKTREES/PROJECT_STATE caveat if reported. |
 | P0 | [AR-1489](../tasks/AR-1489-first-customer-package-consumption.md): First-customer package consumption | Unclaimed | Verify first-customer release package installation and owner-backed local/mock/replay consumption. | Reconcile and doctor state projection; retain known generated WORKTREES/PROJECT_STATE caveat if reported. |
+| P0 | [AR-1491](../tasks/AR-1491-self-contained-package-qualification-fixture.md): Self-contained package qualification fixture | Unclaimed | Add a self-contained non-production package qualification fixture using the offline verifier test-key pattern. | Reconcile and doctor state projection; retain generated WORKTREES/PROJECT_STATE caveat if reported. |

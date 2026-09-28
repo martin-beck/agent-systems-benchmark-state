@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1495-development-unverified-bundle-profile",
   "checkpoint_commit": "4d63a6642c60bb203d5646a732d46b17c823a6d9",
-  "claim_expires": "2026-09-28T15:15:31+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1314",
     "AR-1397",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1495-development-unverified-bundle-profile",
   "observed_dirty": 0,
   "observed_head": "4d63a6642c60bb203d5646a732d46b17c823a6d9",
-  "owner": "ar1332-record-replay-luna56",
+  "owner": "",
   "plan": "../plans/AR-1495-development-unverified-bundle-profile.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Add an explicit development-only unverified bundle profile without weakening production or customer-release verification.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Development-only unverified bundle profile",
-  "updated_at": "2026-09-28T13:33:54+00:00",
+  "updated_at": "2026-09-28T13:34:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1495-development-unverified-bundle-profile"
 }
 ---
@@ -265,3 +265,13 @@ above.
 
 - 2026-09-28T13:33:54+00:00: Recorded command exit 0; command argv SHA-256
   d153e6008c1cf5713ef7637dae154c6508401092f24cd5cc7c75cb44dd92d7bf.
+
+- 2026-09-28T13:34:21+00:00: AR-1495 implementation and PR #373 merged at protected main
+  03d2d0700696bad9549455510f37b24a1588b10e. Post-merge exact-main: Huawei 36428739168 SUCCESS;
+  Hosted 36428739158 SUCCESS; Credential-free 36428739236 SUCCESS; Fault 36428739104 SUCCESS; Formal
+  36428739253 SUCCESS; Rust 36428739145 still IN_PROGRESS at bounded release; Emulated AArch64
+  36428739092 still IN_PROGRESS; Repository Quality 36428739174 FAILURE with immutable policy:
+  protected-main topic synchronization merge must be at the tip. Product behavior is not implicated
+  and policy was not weakened. Next action: create topology-only successor preserving implementation
+  tree 4d63a66 and merge 03d2d07, obtain policy-compliant two-parent main merge, then rerun all
+  eight workflows before release.
