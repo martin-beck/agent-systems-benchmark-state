@@ -12,7 +12,7 @@
   "id": "AR-1495",
   "next_action": "Run complete workspace/docs/policy/release/clean gates, independently review exact diff, then publish exact signed+DCO head.",
   "observed_branch": "feature/ar-1495-development-unverified-bundle-profile",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "48f082234cbb6aa8997d5dd59a2308799233bf73",
   "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1495-development-unverified-bundle-profile.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add an explicit development-only unverified bundle profile without weakening production or customer-release verification.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Development-only unverified bundle profile",
-  "updated_at": "2026-09-28T13:10:02+00:00",
+  "updated_at": "2026-09-28T13:10:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1495-development-unverified-bundle-profile"
 }
 ---
