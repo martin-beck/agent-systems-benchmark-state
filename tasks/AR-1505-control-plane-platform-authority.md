@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Fix focused cargo check errors: remove/consume AtomicBool and add RuntimeControlBootstrap local handle revocation; then rustfmt and rerun check/tests.",
+  "next_action": "Run cargo fmt --all through handoffctl to normalize RuntimeControlBootstrap insertion, then rerun fmt check and cargo check.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 1,
   "observed_head": "baa13ea675de2160dcf58f69b106e255f2c3d8de",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 132,
+  "task_revision": 133,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-28T23:58:40+00:00",
+  "updated_at": "2026-09-28T23:59:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -536,3 +536,10 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-28T23:58:40+00:00: Recorded command exit 1; command argv SHA-256
   f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
+
+- 2026-09-28T23:59:08+00:00: 2026-09-28T23:58:40Z: Exact gate handoffctl run --owner
+  ar1505-repair-luna56 AR-1505 -- cargo fmt --all -- --check exited 1. stderr reported rustfmt diffs
+  in live_service.rs: import ordering, an extra blank before the bridge close, and the
+  RuntimeControlBootstrap block still indented as if inside the bridge impl. No semantic gate ran
+  and no product mutation occurred. Corrective action: run cargo fmt --all through handoffctl, then
+  rerun unchanged checks.
