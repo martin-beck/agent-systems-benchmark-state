@@ -174,7 +174,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md): Authenticated TUI install router | ar1199-router-impl | Expose an authenticated renderer-neutral ASB router for asb tui install and lifecycle operations. | Create isolated AR worktree from exact origin/main; inspect asb-cli and asb-control routing seams, then implement authenticated tui lifecycle dispatch with fixtures and integration tests. |
+| P0 | [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md): Authenticated TUI install router | ar1199-router-impl | Expose an authenticated renderer-neutral ASB router for asb tui install and lifecycle operations. | Blocked: authenticated renderer-neutral router and owner-only control transport are already on protected main; remaining AgentInstall/Status/Cancel/Retry/Remove backend is intentionally fail-closed at crates/asb-cli/src/control.rs:3088 because no lifecycle artifact executor/activation authority exists. Need an authorized lifecycle executor contract or successor AR before implementation. |
 | P0 | [AR-1490](../tasks/AR-1490-fresh-package-runtime-acceptance.md): Fresh package runtime acceptance | ar1490-dev-acceptance-luna56 | Run fresh package first-customer runtime acceptance and produce an explicit readiness report. | Repair the disposable fixture agent to emit the exact parser.py and tests.txt grading inventory, use a new run root/id, then rerun installed local/mock run and sweep. |
 
 ### Blocked (73)
