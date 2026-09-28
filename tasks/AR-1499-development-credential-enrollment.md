@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair merged development credential selection binding",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Development credential enrollment contract",
-  "updated_at": "2026-09-28T18:26:38+00:00",
+  "updated_at": "2026-09-28T18:26:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1499"
 }
 ---
@@ -131,3 +131,6 @@ labelled and isolated.
 
 - 2026-09-28T18:26:24+00:00: Recorded command exit 0; command argv SHA-256
   269d9932927113b6e908ea84a34378301ce04f087d80e842a14e957d570749e6.
+
+- 2026-09-28T18:26:52+00:00: Recorded command exit 1; command argv SHA-256
+  160108a40ab17a35d5c7aa7e76341c5e919b7db4cbb7ffb3cb3d441c04902690.
