@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Own the authenticated control session and hand off only an opaque live dispatch source.",
-  "task_revision": 61,
+  "task_revision": 62,
   "title": "Runtime/control process owner",
-  "updated_at": "2026-09-28T22:34:10+00:00",
+  "updated_at": "2026-09-28T22:34:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1503-runtime-control-process-owner"
 }
 ---
@@ -224,3 +224,6 @@ asb-tui, synthesize authority, or accept caller-built runtime inputs.
 - 2026-09-28T22:33:41+00:00: Claimed by ar1503-repair-luna56.
 
 - 2026-09-28T22:34:10+00:00: Heartbeat by ar1503-repair-luna56.
+
+- 2026-09-28T22:34:17+00:00: Recorded command exit 0; command argv SHA-256
+  f99db2e56cd443f593f1572cfa9151b444d867796988ba718d32473db938e39a.
