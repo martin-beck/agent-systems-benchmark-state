@@ -8,7 +8,7 @@
     "AR-1496"
   ],
   "id": "AR-1499",
-  "next_action": "Run full ASB quality gates, independently review the isolated diff, commit with SSH signature+DCO, publish exact-head PR and wait for required CI.",
+  "next_action": "Finish independent diff review and run serialized full gates; workspace test had one shared-root ownership collision in an unrelated asb-cli test and the focused serial rerun passed.",
   "observed_branch": "feature/ar-1499-development-credential-enrollment",
   "observed_dirty": 0,
   "observed_head": "9231a660675d4b01277a60b75d838d69c6bba917",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement versioned development credential enrollment contract with deterministic local/mock identity",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Development credential enrollment contract",
-  "updated_at": "2026-09-28T18:01:50+00:00",
+  "updated_at": "2026-09-28T18:04:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1499"
 }
 ---
@@ -45,3 +45,9 @@ labelled and isolated.
   restart/cancellation/error/privacy tests, and warning-only fallback for absent authentication,
   signature validation, and key-management services. Focused cargo test --locked -p asb-config: 28
   tests passed; cargo check --locked --workspace passed.
+
+- 2026-09-28T18:04:29+00:00: Material gate result: cargo test --locked --workspace ran 188 passed, 1
+  ignored in asb-agents and then encountered one unrelated parallel asb-cli test failure:
+  configuration_apply_is_idempotent_and_generation_fenced reported control state root already owned.
+  The exact test rerun serially with --test-threads=1 passed. Continue with serialized full gates to
+  avoid shared scratch-root interference.
