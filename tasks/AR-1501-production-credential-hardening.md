@@ -10,7 +10,7 @@
   "id": "AR-1501",
   "next_action": "Keep non-gating until production deployment is requested; replace development credentials with a reviewed secure authentication chain.",
   "observed_branch": "feature/ar-1501-production-credential-hardening",
-  "observed_dirty": 0,
+  "observed_dirty": 3,
   "observed_head": "556385bfdf8b044e9d6e7530972139b3beb31d91",
   "owner": "ar1501-production-hardening-luna56",
   "plan": "../plans/AR-1501-production-credential-hardening.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Track production credential secrecy and authentication hardening after the prototype.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Production credential hardening follow-up",
-  "updated_at": "2026-09-28T19:54:09+00:00",
+  "updated_at": "2026-09-28T19:54:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1501"
 }
 ---
