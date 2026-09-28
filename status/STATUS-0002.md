@@ -174,7 +174,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1496](../tasks/AR-1496-runtime-owned-provider-capture-control.md): Runtime-owned provider capture and control activation | ar1496-provider-capture-luna56 | Complete runtime-owned provider capture, tuple cassette reconciliation and verified offline activation required by the setup wizard. | PR #375 exact head b9a497c is pushed with review blockers repaired; obtain independent re-review and required hosted checks before any signed merge. |
+| P0 | [AR-1496](../tasks/AR-1496-runtime-owned-provider-capture-control.md): Runtime-owned provider capture and control activation | ar1496-provider-capture-luna56 | Complete runtime-owned provider capture, tuple cassette reconciliation and verified offline activation required by the setup wizard. | PR #375 exact head cb44d1b is pushed with protocol-status validation repaired; obtain independent re-review and required hosted checks before any signed merge. |
 
 ### Blocked (74)
 
