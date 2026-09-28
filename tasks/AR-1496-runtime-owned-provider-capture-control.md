@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Complete runtime-owned provider capture, tuple cassette reconciliation and verified offline activation required by the setup wizard.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Runtime-owned provider capture and control activation",
-  "updated_at": "2026-09-28T14:35:58+00:00",
+  "updated_at": "2026-09-28T14:36:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1496-runtime-owned-provider-capture-control"
 }
 ---
@@ -202,3 +202,6 @@ execution or alter AR-1160's historical evidence.
 
 - 2026-09-28T14:35:58+00:00: Recorded command exit 1; command argv SHA-256
   b24c5d48f780a118537cb772329f85bf1f476f9d7e2722e4f45e786e54a51db9.
+
+- 2026-09-28T14:36:50+00:00: Recorded command exit 0; command argv SHA-256
+  ad25c0d729c7a18d9bb1694f41331e8fdac1309ab6f66b4b6cab05169f72350e.
