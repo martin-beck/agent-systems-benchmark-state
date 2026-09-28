@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run fresh package first-customer runtime acceptance and produce an explicit readiness report.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Fresh package runtime acceptance",
-  "updated_at": "2026-09-28T14:41:18+00:00",
+  "updated_at": "2026-09-28T14:42:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1490-fresh-package-runtime-acceptance"
 }
 ---
@@ -82,3 +82,6 @@ when exact package or clean-environment inputs are absent.
 
 - 2026-09-28T14:41:18+00:00: Recorded command exit 0; command argv SHA-256
   8f88dd87044422ff7dc83e0d414f2d0cc66c2d4276edb4147c1e789c0e383015.
+
+- 2026-09-28T14:42:18+00:00: Recorded command exit 0; command argv SHA-256
+  d390d27c4ed46df463802c4ad5b858653ca03e940169f758a71c7c4914ba97c0.
