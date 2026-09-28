@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1500](tasks/AR-1500-development-credential-provider-fixture.md): Development credential/provider lifecycle fixture | Qualify generated development credentials through provider, capture and replay flows. | Rerun the failing asb-cli lifecycle test serially, then run all applicable gates, review and publish exact-head PR. | ar1500-provider-fixture-luna56 |
+| P0 | [AR-1500](tasks/AR-1500-development-credential-provider-fixture.md): Development credential/provider lifecycle fixture | Qualify generated development credentials through provider, capture and replay flows. | Monitor PR #379 exact-head required checks; independently review complete diff; merge only after all required checks are green, then run post-merge smoke and release AR durably. | ar1500-provider-fixture-luna56 |
 
 ## Blocked
 
