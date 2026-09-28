@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supply the runtime-owned authenticated bootstrap authority required for normal live dispatch.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Runtime-owned bootstrap authority",
-  "updated_at": "2026-09-28T21:43:48+00:00",
+  "updated_at": "2026-09-28T21:44:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1502"
 }
 ---
@@ -316,3 +316,10 @@ dependency-safe and must not synthesize authority or accept caller-built input.
 
 - 2026-09-28T21:43:48+00:00: Recorded command exit 0; command argv SHA-256
   269995efd83b186c80229f09e4de8fe394e6b76b1f66853628585c6cc682c9ad.
+
+- 2026-09-28T21:44:15+00:00: Protected merge complete: PR #381 merged at 2026-09-28T21:42:31Z as
+  main merge commit 3c6af6b351e0c32ee8f5e48716654d854dcbbac2 (PR head b62664c). origin/main fetched
+  to that exact SHA. Fresh post-merge push workflows started for exact 3c6af6b: runs 36487891440
+  credential-free, 36487891496 portability, 36487891362 headers (green), 36487891281 Rust,
+  36487891148 formal, 36487891307 aarch64, 36487891100 quality, 36487891091 fault (remaining in
+  progress). Next monitor terminal post-merge results.
