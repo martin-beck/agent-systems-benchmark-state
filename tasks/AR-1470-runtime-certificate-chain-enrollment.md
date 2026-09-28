@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1470-runtime-certificate-chain-enrollment",
   "checkpoint_commit": "b9d7b6ee251b3a119496d3c16f65ffc971704f3a",
-  "claim_expires": "2026-09-28T22:55:46+00:00",
+  "claim_expires": "2026-09-28T22:57:35+00:00",
   "depends_on": [
     "AR-1357",
     "AR-1359",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize runtime-owned certificate-chain enrollment authority for live dispatch.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Runtime certificate-chain enrollment materialization",
-  "updated_at": "2026-09-28T20:55:46+00:00",
+  "updated_at": "2026-09-28T20:57:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1470-runtime-certificate-chain-enrollment"
 }
 ---
@@ -140,3 +140,5 @@ actually consumed by the downstream adapters.
   with a bounded source-or-blocker task.
 
 - 2026-09-28T20:55:46+00:00: Claimed by ar1470-enrollment-source-repair-luna56.
+
+- 2026-09-28T20:57:35+00:00: Heartbeat by ar1470-enrollment-source-repair-luna56.
