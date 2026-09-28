@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1503](tasks/AR-1503-runtime-control-process-owner.md): Runtime/control process owner | Own the authenticated control session and hand off only an opaque live dispatch source. | Rerun fmt and focused process_owner tests with the required authenticated protocol version. | - |
+| P0 | [AR-1503](tasks/AR-1503-runtime-control-process-owner.md): Runtime/control process owner | Own the authenticated control session and hand off only an opaque live dispatch source. | Rerun fmt and focused process_owner tests with the required authenticated protocol version. | ar1503-repair-luna56 |
 
 ## Blocked
 

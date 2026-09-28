@@ -179,11 +179,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1503](../tasks/AR-1503-runtime-control-process-owner.md): Runtime/control process owner | Unclaimed | Own the authenticated control session and hand off only an opaque live dispatch source. | Rerun fmt and focused process_owner tests with the required authenticated protocol version. |
+| P0 | [AR-1503](../tasks/AR-1503-runtime-control-process-owner.md): Runtime/control process owner | ar1503-repair-luna56 | Own the authenticated control session and hand off only an opaque live dispatch source. | Rerun fmt and focused process_owner tests with the required authenticated protocol version. |
 
 ### Blocked (74)
 
