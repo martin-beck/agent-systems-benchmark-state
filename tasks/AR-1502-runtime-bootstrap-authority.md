@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1502-runtime-bootstrap-authority",
   "checkpoint_commit": "3c6af6b351e0c32ee8f5e48716654d854dcbbac2",
-  "claim_expires": "2026-09-28T22:22:20+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1473",
     "AR-1474",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1502-runtime-bootstrap-authority",
   "observed_dirty": 0,
   "observed_head": "b62664c8710e25752730762016659a300b5a896a",
-  "owner": "ar1502-repair-restart-luna56",
+  "owner": "",
   "plan": "../plans/AR-1502-runtime-bootstrap-authority.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Runtime-owned authenticated bootstrap authority merged and verified on main.",
-  "task_revision": 103,
+  "task_revision": 104,
   "title": "Runtime-owned bootstrap authority",
-  "updated_at": "2026-09-28T21:54:30+00:00",
+  "updated_at": "2026-09-28T21:54:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1502"
 }
 ---
@@ -376,3 +376,11 @@ dependency-safe and must not synthesize authority or accept caller-built input.
   3c6af6b351e0c32ee8f548716654d854dcbbac2; exact-head post-merge workflows all terminal success
   (36487891496, 36487891440, 36487891362, 36487891091, 36487891148, 36487891281, 36487891100,
   36487891307). Product worktree clean and origin/main exact merge SHA.
+
+- 2026-09-28T21:54:43+00:00: Released after protected PR #381 merge. Exact main SHA
+  3c6af6b351e0c32ee8f5e48716654d854dcbbac2 verified in origin/main. All 8 exact-head post-merge push
+  workflows terminal success: 36487891496 Hosted portability and native qualification; 36487891440
+  Credential-free benchmark path; 36487891362 Huawei MIT source headers; 36487891091 Fault
+  assurance; 36487891148 Formal assurance; 36487891281 Rust verification; 36487891100 Repository
+  quality; 36487891307 Emulated aarch64 portability. Product worktree clean; local focused/runtime
+  tests, fmt, clippy, and independent sealed-source/bypass review are recorded. No further action.
