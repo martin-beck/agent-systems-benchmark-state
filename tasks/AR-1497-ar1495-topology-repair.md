@@ -3,7 +3,7 @@
   "branch": "repair/ar-1495-topology",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1495", "AR-1493"],
+  "depends_on": ["AR-1493"],
   "id": "AR-1497",
   "next_action": "Promote and claim AR-1497, inspect protected-main topology, and construct the smallest signed+DCO repair preserving the AR-1495 tree.",
   "observed_branch": "",
