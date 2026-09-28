@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1500-development-credential-provider-fixture",
-  "checkpoint_commit": "e4f932a018795a6d707050a24a24ba55e734707e",
+  "checkpoint_commit": "bae4307ddd072c8903f77312aabcd4f053148cd5",
   "claim_expires": "2026-09-28T21:26:55+00:00",
   "depends_on": [
     "AR-1499",
     "AR-1443"
   ],
   "id": "AR-1500",
-  "next_action": "Monitor PR #379 exact-head required checks; independently review complete diff; merge only after all required checks are green, then run post-merge smoke and release AR durably.",
+  "next_action": "Monitor PR #379 at exact head bae4307; rerun/await required checks, merge only after all green, then perform post-merge smoke and release AR durably.",
   "observed_branch": "feature/ar-1500-development-credential-provider-fixture",
   "observed_dirty": 0,
   "observed_head": "bae4307ddd072c8903f77312aabcd4f053148cd5",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify generated development credentials through provider, capture and replay flows.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Development credential/provider lifecycle fixture",
-  "updated_at": "2026-09-28T19:27:03+00:00",
+  "updated_at": "2026-09-28T19:27:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1500"
 }
 ---
@@ -162,3 +162,13 @@ generated credentials as production-safe secrets.
 
 - 2026-09-28T19:27:03+00:00: Recorded command exit 0; command argv SHA-256
   422de929f35a13a7206d8a95352061502a93f1785f7694e5184458196cd08b15.
+
+- 2026-09-28T19:27:21+00:00: Review fixes are implemented in signed DCO commit
+  bae4307ddd072c8903f77312aabcd4f053148cd5. Receipt now binds the AR-1499 enrollment signature and
+  restart JSON is bounded before deserialization, with negative tests and documentation. Branch was
+  pushed to PR #379 exact head. Isolated coverage rerun used a dedicated LLVM_PROFILE_FILE sink but
+  was not terminal because an unrelated asb-cli
+  production_backend_runs_without_frontend_and_recovers_idempotency test hit shared
+  control-state-root ownership; generated profraw was removed. Focused fixture tests and workspace
+  clippy remain green; previous full workspace test completed green after serial contention
+  recovery.
