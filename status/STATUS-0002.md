@@ -180,7 +180,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1499](../tasks/AR-1499-development-credential-enrollment.md): Development credential enrollment contract | ar1499-credential-enrollment-luna56 | Implement versioned development credential enrollment contract with deterministic local/mock identity | Finish independent diff review and run serialized full gates; workspace test had one shared-root ownership collision in an unrelated asb-cli test and the focused serial rerun passed. |
+| P0 | [AR-1499](../tasks/AR-1499-development-credential-enrollment.md): Development credential enrollment contract | ar1499-credential-enrollment-luna56 | Implement versioned development credential enrollment contract with deterministic local/mock identity | Create the signed DCO commit from the reviewed clean diff, push the exact branch, open PR, and wait for all required exact-head checks. |
 
 ### Blocked (74)
 

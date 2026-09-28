@@ -8,7 +8,7 @@
     "AR-1496"
   ],
   "id": "AR-1499",
-  "next_action": "Finish independent diff review and run serialized full gates; workspace test had one shared-root ownership collision in an unrelated asb-cli test and the focused serial rerun passed.",
+  "next_action": "Create the signed DCO commit from the reviewed clean diff, push the exact branch, open PR, and wait for all required exact-head checks.",
   "observed_branch": "feature/ar-1499-development-credential-enrollment",
   "observed_dirty": 0,
   "observed_head": "9231a660675d4b01277a60b75d838d69c6bba917",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement versioned development credential enrollment contract with deterministic local/mock identity",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Development credential enrollment contract",
-  "updated_at": "2026-09-28T18:04:29+00:00",
+  "updated_at": "2026-09-28T18:06:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1499"
 }
 ---
@@ -51,3 +51,10 @@ labelled and isolated.
   configuration_apply_is_idempotent_and_generation_fenced reported control state root already owned.
   The exact test rerun serially with --test-threads=1 passed. Continue with serialized full gates to
   avoid shared scratch-root interference.
+
+- 2026-09-28T18:06:33+00:00: Serialized full cargo test --locked --workspace -- --test-threads=1
+  passed across the workspace (all non-ignored tests green; documented capability-dependent tests
+  remain ignored). RUSTDOCFLAGS=-D warnings cargo doc --locked --workspace --no-deps passed; cargo
+  build --locked --workspace --release passed (release/asb present). Independent review checked all
+  changed Rust/docs paths, privacy, bounds, generation/idempotency/restart/cancel/error behavior,
+  and diff --check.
