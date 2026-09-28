@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1495](tasks/AR-1495-development-unverified-bundle-profile.md): Development-only unverified bundle profile | Add an explicit development-only unverified bundle profile without weakening production or customer-release verification. | Monitor PR #373 synchronized exact head 1f5b0f9 and merge only after all required checks and independent review are green. | ar1332-record-replay-luna56 |
+| P0 | [AR-1495](tasks/AR-1495-development-unverified-bundle-profile.md): Development-only unverified bundle profile | Add an explicit development-only unverified bundle profile without weakening production or customer-release verification. | Monitor PR #373 fresh exact signed+DCO head 3b0bf6a and merge only after every required check and independent review is green. | ar1332-record-replay-luna56 |
 
 ## Blocked
 

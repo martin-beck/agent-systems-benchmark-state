@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1495-development-unverified-bundle-profile",
-  "checkpoint_commit": "1f5b0f9e3c3782e1f202aa700f6515eb8e51417f",
+  "checkpoint_commit": "3b0bf6a4525c3d1382639761dc9d3a31c833906b",
   "claim_expires": "2026-09-28T15:06:21+00:00",
   "depends_on": [
     "AR-1314",
@@ -10,7 +10,7 @@
     "AR-1493"
   ],
   "id": "AR-1495",
-  "next_action": "Monitor PR #373 synchronized exact head 1f5b0f9 and merge only after all required checks and independent review are green.",
+  "next_action": "Monitor PR #373 fresh exact signed+DCO head 3b0bf6a and merge only after every required check and independent review is green.",
   "observed_branch": "feature/ar-1495-development-unverified-bundle-profile",
   "observed_dirty": 0,
   "observed_head": "3b0bf6a4525c3d1382639761dc9d3a31c833906b",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add an explicit development-only unverified bundle profile without weakening production or customer-release verification.",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Development-only unverified bundle profile",
-  "updated_at": "2026-09-28T13:15:01+00:00",
+  "updated_at": "2026-09-28T13:15:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1495-development-unverified-bundle-profile"
 }
 ---
@@ -182,3 +182,9 @@ above.
 
 - 2026-09-28T13:15:01+00:00: Recorded command exit 0; command argv SHA-256
   720d731c5d457ef78d7c0a398f1e43164faf0a897457cc757ee951160731c7ed.
+
+- 2026-09-28T13:15:21+00:00: Second CI failure 36427086854 was classified precisely: synchronization
+  merge 1f5b0f9 had two parents but lacked Signed-off-by. Amended the merge with SSH signature and
+  matching DCO trailer, preserving parents (a714861 and e1be259) and reviewed tree; new exact head
+  3b0bf6a4525c3d1382639761dc9d3a31c833906b force-with-lease pushed to PR #373. Prior stale-base and
+  missing-DCO failures remain recorded; no product semantics changed.
