@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Track production credential secrecy and authentication hardening after the prototype.",
-  "task_revision": 96,
+  "task_revision": 97,
   "title": "Production credential hardening follow-up",
-  "updated_at": "2026-09-28T20:33:09+00:00",
+  "updated_at": "2026-09-28T20:33:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1501"
 }
 ---
@@ -310,3 +310,6 @@ This AR is intentionally not required for the development build cycle.
   merge 7167e3d, parents 556385b and eb2239a, tree 81fb376. PR is merged. Post-merge workflows for
   exact main SHA 7167e3d are running: runs 36479841975, 36479842058, 36479842163, 36479842147,
   36479842172, 36479842073, 36479842085; header run 36479842099 already passed.
+
+- 2026-09-28T20:33:49+00:00: Recorded command exit 0; command argv SHA-256
+  200f5d3a9261d71bc1287b126a79d45d16645ba50318f797e4fb6c42f72b0295.
