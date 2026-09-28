@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify generated development credentials through provider, capture and replay flows.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Development credential/provider lifecycle fixture",
-  "updated_at": "2026-09-28T19:13:35+00:00",
+  "updated_at": "2026-09-28T19:14:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1500"
 }
 ---
@@ -86,3 +86,6 @@ generated credentials as production-safe secrets.
 
 - 2026-09-28T19:13:35+00:00: Recorded command exit 0; command argv SHA-256
   0f4e3971bd739f0418ec492f712969e6e94b3efb043fb3fb3e4a27e45930d7a0.
+
+- 2026-09-28T19:14:24+00:00: Recorded command exit 0; command argv SHA-256
+  534f8613e1c316db8f0f46dd989e44e14a8ca74304a94791b4e4a1c59b2fbb1d.
