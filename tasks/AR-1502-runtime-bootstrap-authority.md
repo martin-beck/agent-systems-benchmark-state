@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supply the runtime-owned authenticated bootstrap authority required for normal live dispatch.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Runtime-owned bootstrap authority",
-  "updated_at": "2026-09-28T21:21:24+00:00",
+  "updated_at": "2026-09-28T21:21:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1502"
 }
 ---
@@ -156,3 +156,6 @@ dependency-safe and must not synthesize authority or accept caller-built input.
   (source bind, session/chain mismatch, expiry/cancellation/restart fail-closed), with all filtered
   targets compiling. Prior exit 101 E0599 and exit 2 quoting failure remain recorded with exact
   stderr.
+
+- 2026-09-28T21:21:54+00:00: Recorded command exit 0; command argv SHA-256
+  1fcbb273eb4724546cc9b354262a0f986690b3f6b9afd9c771a5e9a0bd1d3ecf.
