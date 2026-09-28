@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1496-runtime-owned-provider-capture-control",
   "checkpoint_commit": "cb44d1bdcf903969bca43c564e5e2a8839506056",
-  "claim_expires": "2026-09-28T16:30:50+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1151",
     "AR-1330",
@@ -16,15 +16,15 @@
   "observed_branch": "feature/ar-1496-runtime-owned-provider-capture-control",
   "observed_dirty": 0,
   "observed_head": "cb44d1bdcf903969bca43c564e5e2a8839506056",
-  "owner": "ar1496-provider-capture-luna56",
+  "owner": "",
   "plan": "../plans/AR-1496.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Complete runtime-owned provider capture, tuple cassette reconciliation and verified offline activation required by the setup wizard.",
-  "task_revision": 64,
+  "task_revision": 65,
   "title": "Runtime-owned provider capture and control activation",
-  "updated_at": "2026-09-28T14:36:50+00:00",
+  "updated_at": "2026-09-28T14:46:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1496-runtime-owned-provider-capture-control"
 }
 ---
@@ -205,3 +205,7 @@ execution or alter AR-1160's historical evidence.
 
 - 2026-09-28T14:36:50+00:00: Recorded command exit 0; command argv SHA-256
   ad25c0d729c7a18d9bb1694f41331e8fdac1309ab6f66b4b6cab05169f72350e.
+
+- 2026-09-28T14:46:50+00:00: PR #375 merged at protected main
+  8c53a4a62ecaa6fecc9eb195a105fc368a3395c8 after independent approval and exact-head checks; all
+  seven post-merge workflows succeeded.
