@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement versioned development credential enrollment contract with deterministic local/mock identity",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Development credential enrollment contract",
-  "updated_at": "2026-09-28T18:07:30+00:00",
+  "updated_at": "2026-09-28T18:07:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1499"
 }
 ---
@@ -67,3 +67,6 @@ labelled and isolated.
 
 - 2026-09-28T18:07:30+00:00: Recorded command exit 0; command argv SHA-256
   f63e4a14a49b43197787e250e7ce0255fe29f6e19e48666b106bab21d47b71bc.
+
+- 2026-09-28T18:07:53+00:00: Recorded command exit 1; command argv SHA-256
+  9e12b13128dd0a108d211e667c9c11c65b77ca1a38de8e9c8e9d7bd7e157aca3.
