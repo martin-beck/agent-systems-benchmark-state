@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 75,
+  "task_revision": 76,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-28T23:30:56+00:00",
+  "updated_at": "2026-09-28T23:31:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -314,3 +314,13 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-28T23:30:56+00:00: Recorded command exit 0; command argv SHA-256
   3a24fa191989202ee00bcd1f42ccaf99de452fd03e24e55cf98b88e47878bb0a.
+
+- 2026-09-28T23:31:22+00:00: Final gate status: cargo test --locked --workspace --no-fail-fast --
+  --test-threads=1 completed exit 0; all workspace unit, integration, schema, boundary, and doctests
+  passed (expected compile-fail doctests passed). Changed-package clippy -D warnings, package docs
+  with RUSTDOCFLAGS=-D warnings, serial package tests, schema conformance 4/4, fmt, and diff check
+  are green. No gate is blocked. The first 30-second invocation was interrupted before handoff
+  completion and produced only partial log; it was rerun with handoff timeout 600 and completed exit
+  0, with exact terminal evidence recorded by the successful state run. Known parallel asb-cli
+  state-root collision remains an environment collision only; serial full package and workspace
+  gates are green and no test was weakened. Ready for signed/DCO commit and PR publication.
