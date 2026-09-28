@@ -8,7 +8,7 @@
     "AR-1496"
   ],
   "id": "AR-1499",
-  "next_action": "PR #378 merged at protected main ee8ea15. Product tree matches origin/main and post-merge focused asb-config (7 tests) plus workspace check passed. Wait for all post-merge workflows on exact merge SHA ee8ea15 (currently 6 in progress) to terminate green, then release AR durably.",
+  "next_action": "Released; no further AR-1499 action. PR #378 merged at protected main ee8ea15; exact main tree and post-merge smoke verified, and all eight post-merge workflows passed.",
   "observed_branch": "feature/ar-1499-development-credential-enrollment",
   "observed_dirty": 0,
   "observed_head": "0a2f6e9c74f98a0a8d59b6f834ef96ee63d5cfee",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "done",
   "summary": "Repair merged development credential selection binding",
-  "task_revision": 86,
+  "task_revision": 87,
   "title": "Development credential enrollment contract",
-  "updated_at": "2026-09-28T18:57:28+00:00",
+  "updated_at": "2026-09-28T18:58:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1499"
 }
 ---
@@ -270,3 +270,6 @@ labelled and isolated.
   asb-config tests 7/7 and workspace cargo check passed; all eight post-merge workflows on ee8ea15
   terminal success: 36467797104, 36467796973, 36467796960, 36467796989, 36467796953, 36467797019,
   36467797042, 36467797016.
+
+- 2026-09-28T18:58:13+00:00: Corrected stale next_action after durable release so the completed AR
+  no longer advertises waiting or merge work.
