@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair AR-1495 protected-main synchronization topology without changing product semantics.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "AR-1495 protected-main topology repair",
-  "updated_at": "2026-09-28T13:38:48+00:00",
+  "updated_at": "2026-09-28T13:38:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1497-ar1495-topology-repair"
 }
 ---
@@ -51,3 +51,6 @@ post-merge workflows.
 
 - 2026-09-28T13:38:33+00:00: Recorded command exit 0; command argv SHA-256
   5b07b489a3267c59a24a067bbd68b7a3ca26e6abd841f40f73ba1c312e80ae3d.
+
+- 2026-09-28T13:38:54+00:00: Recorded command exit 0; command argv SHA-256
+  708d0efba8b908587b7d69ddfe22df394cb4e60ce44dcf08beb6301bced2fb6c.
