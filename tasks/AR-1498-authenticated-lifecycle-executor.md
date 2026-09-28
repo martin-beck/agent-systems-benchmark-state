@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated artifact executor and activation authority behind the ASB agent lifecycle router.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Authenticated lifecycle artifact executor",
-  "updated_at": "2026-09-28T16:50:51+00:00",
+  "updated_at": "2026-09-28T16:51:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1498"
 }
 ---
@@ -76,3 +76,6 @@ protocol/schema fixtures consumed by AR-1199 and downstream asb-tui.
 
 - 2026-09-28T16:50:51+00:00: Recorded command exit 0; command argv SHA-256
   73d005d4c4983870f0c5405c6c97dffbf521d57825b14d75dae888988fbdcd03.
+
+- 2026-09-28T16:51:34+00:00: Recorded command exit 101; command argv SHA-256
+  1c69a4443966f5d335a0a526d0dac73a6d618685bc20a635e78578f17fe0d354.
