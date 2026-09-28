@@ -12,17 +12,17 @@
   "id": "AR-1495",
   "next_action": "Monitor PR #373 fresh exact signed+DCO head 3b0bf6a and merge only after every required check and independent review is green.",
   "observed_branch": "feature/ar-1495-development-unverified-bundle-profile",
-  "observed_dirty": 1,
-  "observed_head": "3b0bf6a4525c3d1382639761dc9d3a31c833906b",
+  "observed_dirty": 0,
+  "observed_head": "4d63a6642c60bb203d5646a732d46b17c823a6d9",
   "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1495-development-unverified-bundle-profile.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add an explicit development-only unverified bundle profile without weakening production or customer-release verification.",
-  "task_revision": 56,
+  "task_revision": 57,
   "title": "Development-only unverified bundle profile",
-  "updated_at": "2026-09-28T13:16:48+00:00",
+  "updated_at": "2026-09-28T13:17:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1495-development-unverified-bundle-profile"
 }
 ---
