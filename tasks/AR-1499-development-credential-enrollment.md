@@ -10,7 +10,7 @@
   "id": "AR-1499",
   "next_action": "PR #377 exact head 86bb90c remains open; wait for remaining required CI (aarch64, TLC/Alloy, policy, Rust) and independent review; merge only after all green.",
   "observed_branch": "feature/ar-1499-development-credential-enrollment",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "86bb90ceb44d9cfed8e56500ba7c6e0297767bcf",
   "owner": "ar1499-credential-enrollment-luna56",
   "plan": "../plans/AR-1499-development-credential-enrollment.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement versioned development credential enrollment contract with deterministic local/mock identity",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Development credential enrollment contract",
-  "updated_at": "2026-09-28T18:19:56+00:00",
+  "updated_at": "2026-09-28T18:20:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1499"
 }
 ---
