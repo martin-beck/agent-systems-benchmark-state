@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1500-development-credential-provider-fixture",
-  "checkpoint_commit": "bae4307ddd072c8903f77312aabcd4f053148cd5",
+  "checkpoint_commit": "556385bfdf8b044e9d6e7530972139b3beb31d91",
   "claim_expires": "2026-09-28T21:28:28+00:00",
   "depends_on": [
     "AR-1499",
     "AR-1443"
   ],
   "id": "AR-1500",
-  "next_action": "Monitor PR #379 exact head bae4307; await Rust, repository-quality policy/coverage, and emulated-aarch64 checks, merge only after all required checks and independent review are green, then perform post-merge smoke and release AR durably.",
+  "next_action": "AR-1500 complete: PR #379 merged at exact checked head; post-merge main tree equality and offline fixture smoke passed. Continue dependent ARs.",
   "observed_branch": "feature/ar-1500-development-credential-provider-fixture",
   "observed_dirty": 0,
   "observed_head": "bae4307ddd072c8903f77312aabcd4f053148cd5",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify generated development credentials through provider, capture and replay flows.",
-  "task_revision": 73,
+  "task_revision": 74,
   "title": "Development credential/provider lifecycle fixture",
-  "updated_at": "2026-09-28T19:37:33+00:00",
+  "updated_at": "2026-09-28T19:38:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1500"
 }
 ---
@@ -229,3 +229,13 @@ generated credentials as production-safe secrets.
 
 - 2026-09-28T19:37:33+00:00: Recorded command exit 0; command argv SHA-256
   782e478b9c7d849c2cdda3f1efec00c5f0919958be6f00404541722f778f269b.
+
+- 2026-09-28T19:38:21+00:00: PR #379 merged through protected workflow at merge commit
+  556385bfdf8b044e9d6e7530972139b3beb31d91. All 13 exact-head required checks were terminal success,
+  including emulated aarch64; PR merge state was CLEAN. Post-merge fetched origin/main, verified the
+  merged main tree is identical to the reviewed feature tree, and ran offline asb-agents
+  development_fixture smoke: all 6 tests passed. Worktree is clean and contains no generated
+  profraw. Implementation delivers deterministic all-agent/default provider-free fixture,
+  enrollment-bound receipts, malformed/stale/mismatch rejection, bounded restart state,
+  cancellation/recovery, strict offline replay, comparison readiness, and nonblocking development
+  warnings.
