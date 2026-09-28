@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair merged development credential selection binding",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Development credential enrollment contract",
-  "updated_at": "2026-09-28T18:26:08+00:00",
+  "updated_at": "2026-09-28T18:26:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1499"
 }
 ---
@@ -128,3 +128,6 @@ labelled and isolated.
 - 2026-09-28T18:26:08+00:00: Coordinator takeover repair: stale PR #377 text replaced with durable
   record of merged old head, corrective selection-binding commits, and required new repair PR
   workflow.
+
+- 2026-09-28T18:26:24+00:00: Recorded command exit 0; command argv SHA-256
+  269d9932927113b6e908ea84a34378301ce04f087d80e842a14e957d570749e6.
