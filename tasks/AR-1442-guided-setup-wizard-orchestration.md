@@ -19,7 +19,7 @@
   "priority": "P0",
   "schema_version": 1,
   "status": "done",
-  "summary": "Qualify ASB CLI first-run and reconfiguration of agents, providers, auth methods, models and defaults.",
+  "summary": "Qualify ASB CLI first-run and reconfiguration of agents, providers, auth methods, models and defaults with a non-blocking development profile.",
   "task_revision": 10,
   "title": "Guided setup wizard orchestration",
   "updated_at": "2026-09-25T15:23:41+00:00",

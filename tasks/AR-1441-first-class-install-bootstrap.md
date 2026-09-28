@@ -28,6 +28,9 @@
 This is the install gate for the first-class user journey. It must compose the
 existing installer, bundle verification, and rollback work; it must not create
 a second package registry or bypass signed artifact and credential boundaries.
+The development profile may use generated local bundle/signature fixtures and
+must warn rather than block when production validation is unavailable; only the
+live/production profile requires the signed boundary.
 
 - 2026-09-25T15:17:21+00:00: Coordinator-approved ASB-only dependency transition: AR-0821 and
   AR-0822 provide completed install/lifecycle primitives. Remove AR-0823 UI/cross-repository audit

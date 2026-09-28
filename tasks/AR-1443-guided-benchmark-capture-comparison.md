@@ -18,7 +18,7 @@
   "priority": "P0",
   "schema_version": 1,
   "status": "done",
-  "summary": "Make benchmark, offline capture/replay, and result comparison a single guided workflow.",
+  "summary": "Make benchmark, offline capture/replay, and result comparison a single guided workflow with warning-only development prerequisites.",
   "task_revision": 9,
   "title": "Guided benchmark capture and comparison",
   "updated_at": "2026-09-25T15:36:30+00:00",
