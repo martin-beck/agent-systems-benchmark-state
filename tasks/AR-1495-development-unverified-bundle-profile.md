@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add an explicit development-only unverified bundle profile without weakening production or customer-release verification.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Development-only unverified bundle profile",
-  "updated_at": "2026-09-28T13:17:46+00:00",
+  "updated_at": "2026-09-28T13:17:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1495-development-unverified-bundle-profile"
 }
 ---
@@ -211,3 +211,6 @@ above.
   commit 4d63a66; existing v3 profile enum/schema remains authoritative, while behavior and boundary
   wording live in docs/tests. Diff is again four ASB files only. Prior stale-base and missing-DCO
   failures preserved. Force-with-lease updated PR #373.
+
+- 2026-09-28T13:17:56+00:00: Recorded command exit 0; command argv SHA-256
+  cb50046674eb2c1d3ea08f00711676986af43541c56734ab4055a7fa2ce063c5.
