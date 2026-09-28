@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1495-development-unverified-bundle-profile",
   "checkpoint_commit": "4d63a6642c60bb203d5646a732d46b17c823a6d9",
-  "claim_expires": "2026-09-28T16:17:41+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1314",
     "AR-1397",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1495-development-unverified-bundle-profile",
   "observed_dirty": 0,
   "observed_head": "4d63a6642c60bb203d5646a732d46b17c823a6d9",
-  "owner": "ar1332-record-replay-luna56",
+  "owner": "",
   "plan": "../plans/AR-1495-development-unverified-bundle-profile.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Add an explicit development-only unverified bundle profile without weakening production or customer-release verification.",
-  "task_revision": 80,
+  "task_revision": 81,
   "title": "Development-only unverified bundle profile",
-  "updated_at": "2026-09-28T14:17:41+00:00",
+  "updated_at": "2026-09-28T14:17:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1495-development-unverified-bundle-profile"
 }
 ---
@@ -280,3 +280,12 @@ above.
   preserves the exact tree and has green exact-main evidence.
 
 - 2026-09-28T14:17:41+00:00: Claimed by ar1332-record-replay-luna56.
+
+- 2026-09-28T14:17:53+00:00: AR-1495 implementation is complete and its stale topology blocker is
+  superseded by AR-1497. Exact development-profile tree is preserved through protected-main merge
+  45df6590cbf9ab75f07dcc0b753335949e28d937. AR-1497 PR #374 exact-head checks and all eight
+  post-merge workflows are green: Huawei 36431416937, Hosted 36431416952, Repository Quality
+  36431416984, Fault 36431417124, Formal 36431417042, Emulated AArch64 36431417245, Credential-free
+  36431417011, Rust 36431417064. The unsigned-development behavior and production/default
+  signature-required boundary are unchanged. AR-1490 remains separately blocked on authorized
+  external customer signing inputs.
