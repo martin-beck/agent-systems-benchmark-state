@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-28T23:05:41+00:00",
+  "updated_at": "2026-09-28T23:05:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -85,3 +85,9 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-28T23:05:28+00:00: Recorded command exit 101; command argv SHA-256
   6ad2f71e2002b797aa7b80ba5f0bbcb7f925ac75dcc3b4c1d85e5543b906175f.
+
+- 2026-09-28T23:05:54+00:00: Exact gate failure at 23:05:28Z: handoffctl run -- cargo check --locked
+  -p asb-control -p asb-runtime -p asb-cli exited 101. rustc E0382
+  crates/asb-control/src/endpoint.rs:348:54: PeerIdentity::from_fd(stream) moved &mut UnixStream
+  before read_frame_until; compiler suggested reborrow &mut *stream. This is a local borrow repair,
+  not a protocol blocker.
