@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Own authenticated control session and lifecycle while minting opaque CLI dispatch sources.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Authenticated control process owner",
-  "updated_at": "2026-09-28T21:58:56+00:00",
+  "updated_at": "2026-09-28T21:59:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1483-authenticated-control-process-owner"
 }
 ---
@@ -80,3 +80,6 @@ caller authority or modify asb-tui.
 - 2026-09-28T21:57:16+00:00: Claimed by ar1483-owner-integration-luna56.
 
 - 2026-09-28T21:58:56+00:00: Heartbeat by ar1483-owner-integration-luna56.
+
+- 2026-09-28T21:59:05+00:00: Recorded command exit 0; command argv SHA-256
+  91c481d4f1a058d3265e9102b0531d1eefe09cb45e5c1807ecda5e8c8b6b67d5.
