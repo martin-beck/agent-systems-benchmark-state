@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**523 ARs tracked** across 5 active status categories.
+**524 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 75 |
-| **Planned** | Defined work awaiting promotion or dependencies | 50 |
+| **Planned** | Defined work awaiting promotion or dependencies | 51 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 378 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -598,6 +598,7 @@ flowchart LR
         AR_1501["AR-1501 - Done"]:::status_done
         AR_1502["AR-1502 - Done"]:::status_done
         AR_1503["AR-1503 - Blocked"]:::status_blocked
+        AR_1504["AR-1504 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1942,8 +1943,10 @@ flowchart LR
     AR_1473 --> AR_1485
     AR_1473 --> AR_1502
     AR_1473 --> AR_1503
+    AR_1473 --> AR_1504
     AR_1474 --> AR_1502
     AR_1474 --> AR_1503
+    AR_1474 --> AR_1504
     AR_1475 --> AR_1478
     AR_1476 --> AR_1478
     AR_1480 --> AR_1481
@@ -1954,11 +1957,14 @@ flowchart LR
     AR_1480 --> AR_1486
     AR_1480 --> AR_1502
     AR_1480 --> AR_1503
+    AR_1480 --> AR_1504
     AR_1484 --> AR_1485
     AR_1484 --> AR_1486
     AR_1484 --> AR_1503
+    AR_1484 --> AR_1504
     AR_1485 --> AR_1486
     AR_1485 --> AR_1503
+    AR_1485 --> AR_1504
     AR_1486 --> AR_1487
     AR_1487 --> AR_1488
     AR_1488 --> AR_1489
@@ -1981,6 +1987,7 @@ flowchart LR
     AR_1500 --> AR_1501
     AR_1501 --> AR_1502
     AR_1502 --> AR_1503
+    AR_1502 --> AR_1504
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -2340,5 +2347,3 @@ flowchart LR
 | [AR-1315](../tasks/AR-1315-1307-1308-development-profile-metadata.md) | [AR-1314](../tasks/AR-1314-optional-bundle-signing-development-release.md) | None |
 | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md) | [AR-1190](../tasks/AR-1190.md), [AR-1191](../tasks/AR-1191.md), [AR-1310](../tasks/AR-1310-provider-capture-campaign.md), [AR-1319](../tasks/AR-1319-authenticated-agent-catalog-entry-contract.md) | [AR-1320](../tasks/AR-1320-persisted-agent-release-index.md), [AR-1422](../tasks/AR-1422-stale-agent-catalog-pr-cleanup.md), [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md) |
 | [AR-1319](../tasks/AR-1319-authenticated-agent-catalog-entry-contract.md) | [AR-1310](../tasks/AR-1310-provider-capture-campaign.md) | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md) |
-| [AR-1320](../tasks/AR-1320-persisted-agent-release-index.md) | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md) | None |
-| [AR-1322](../tasks/AR-1322-authenticated-release-index-source.md) | None | None |
