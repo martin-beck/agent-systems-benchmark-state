@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 100,
+  "task_revision": 101,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-28T23:39:29+00:00",
+  "updated_at": "2026-09-28T23:39:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -417,3 +417,9 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-28T23:39:29+00:00: Recorded command exit 8; command argv SHA-256
   83c36efbcc2e1f6abaeb27e7b87829205e42a03194aa2c8ffe77dfaa90b32bd7.
+
+- 2026-09-28T23:39:53+00:00: Exact-head PR #382 checks snapshot: pass: TLC/Alloy recovery (3m8s),
+  AWQ shadow, credential-free path, retained faults, platform evidence, bounded fuzz, Huawei/SPDX
+  headers, Kani, Loom/state, matcher/SLO, and all other completed checks. Pending: emulated aarch64,
+  Rust checks, and policy/coverage/supply chain. No failures; review decision remains absent and
+  merge is not authorized.
