@@ -12,7 +12,7 @@
   "id": "AR-1490",
   "next_action": "Recreate the disposable fixture agent inside the declared AR-1490 worktree, then generate a valid plan and run installed doctor/setup/run/sweep/replay/cancellation/restart/cleanup using unsigned-development verification.",
   "observed_branch": "qualification/ar-1490-fresh-package-runtime-acceptance",
-  "observed_dirty": 1,
+  "observed_dirty": 2,
   "observed_head": "45df6590cbf9ab75f07dcc0b753335949e28d937",
   "owner": "ar1490-dev-acceptance-luna56",
   "plan": "../plans/AR-1490-fresh-package-runtime-acceptance.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run fresh package first-customer runtime acceptance and produce an explicit readiness report.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Fresh package runtime acceptance",
-  "updated_at": "2026-09-28T14:53:08+00:00",
+  "updated_at": "2026-09-28T14:53:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1490-fresh-package-runtime-acceptance"
 }
 ---
