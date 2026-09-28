@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1503",
-  "next_action": "Implement the runtime/platform-owned control-session launcher and authenticated owner handoff in the declared isolated worktree; first preserve the source-only chain and private resolver boundary.",
+  "next_action": "Rerun focused process_owner tests after private test-root fix.",
   "observed_branch": "feature/ar-1503-runtime-control-process-owner",
   "observed_dirty": 3,
   "observed_head": "3c6af6b351e0c32ee8f5e48716654d854dcbbac2",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Own the authenticated control session and hand off only an opaque live dispatch source.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Runtime/control process owner",
-  "updated_at": "2026-09-28T22:22:36+00:00",
+  "updated_at": "2026-09-28T22:23:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1503-runtime-control-process-owner"
 }
 ---
@@ -114,3 +114,9 @@ asb-tui, synthesize authority, or accept caller-built runtime inputs.
 
 - 2026-09-28T22:22:36+00:00: Recorded command exit 101; command argv SHA-256
   f99db2e56cd443f593f1572cfa9151b444d867796988ba718d32473db938e39a.
+
+- 2026-09-28T22:23:25+00:00: Focused gate reached the next concrete fixture failure after removing
+  unused Fixture.chain: ControlServer::bind returned Transport(UnsafeRuntimeDirectory) at
+  process_owner.rs:468 because the test root was created with shared permissions. Patched test
+  fixture root to mode 0700; no authority or production boundary change. Next rerun focused gate
+  through handoff.

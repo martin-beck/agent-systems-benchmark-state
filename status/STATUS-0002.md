@@ -183,7 +183,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1503](../tasks/AR-1503-runtime-control-process-owner.md): Runtime/control process owner | ar1483-owner-integration-luna56 | Own the authenticated control session and hand off only an opaque live dispatch source. | Implement the runtime/platform-owned control-session launcher and authenticated owner handoff in the declared isolated worktree; first preserve the source-only chain and private resolver boundary. |
+| P0 | [AR-1503](../tasks/AR-1503-runtime-control-process-owner.md): Runtime/control process owner | ar1483-owner-integration-luna56 | Own the authenticated control session and hand off only an opaque live dispatch source. | Rerun focused process_owner tests after private test-root fix. |
 
 ### Blocked (74)
 
