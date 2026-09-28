@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supply the runtime-owned authenticated bootstrap authority required for normal live dispatch.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Runtime-owned bootstrap authority",
-  "updated_at": "2026-09-28T21:33:35+00:00",
+  "updated_at": "2026-09-28T21:38:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1502"
 }
 ---
@@ -287,3 +287,11 @@ dependency-safe and must not synthesize authority or accept caller-built input.
 
 - 2026-09-28T21:33:35+00:00: Recorded command exit 0; command argv SHA-256
   684774870d30f3385a0da13076ff92ba8edafa82c817445fdd10a116c4158984.
+
+- 2026-09-28T21:38:53+00:00: Published reviewed PR #381 at exact head
+  b62664c8710e25752730762016659a300b5a896a:
+  https://github.com/martin-beck/agent-systems-benchmark/pull/381. Hosted checks currently have 10
+  required green (credential-free, platform, formal Kani/Loom/TLC, retained faults/fuzz/mutation,
+  plus exact headers/AWQ where reported); Rust verification, policy/coverage/supply chain, and
+  emulated aarch64 remain pending. Continue waiting; do not merge until all required checks terminal
+  green.
