@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run fresh package first-customer runtime acceptance and produce an explicit readiness report.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Fresh package runtime acceptance",
-  "updated_at": "2026-09-28T14:36:40+00:00",
+  "updated_at": "2026-09-28T14:38:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1490-fresh-package-runtime-acceptance"
 }
 ---
@@ -65,3 +65,6 @@ when exact package or clean-environment inputs are absent.
   future gate and do not treat development output as a customer release.
 
 - 2026-09-28T14:36:40+00:00: Claimed by ar1490-dev-acceptance-luna56.
+
+- 2026-09-28T14:38:48+00:00: Recorded command exit 0; command argv SHA-256
+  ff6d1fa7a7185010f75fcfafe4bdc1bdd5b9804d8c2b3e7abdd8a1b96cd81c63.
