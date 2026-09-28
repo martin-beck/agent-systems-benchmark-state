@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1502](tasks/AR-1502-runtime-bootstrap-authority.md): Runtime-owned bootstrap authority | Supply the runtime-owned authenticated bootstrap authority required for normal live dispatch. | Implement the runtime-owned bootstrap source and store enrollment seam in the isolated worktree; add deterministic local/mock positive and negative tests before broader gates. | ar1502-seam-audit-repair-luna56 |
+| P0 | [AR-1502](tasks/AR-1502-runtime-bootstrap-authority.md): Runtime-owned bootstrap authority | Supply the runtime-owned authenticated bootstrap authority required for normal live dispatch. | Implement the runtime-owned bootstrap source and store enrollment seam in the isolated worktree; add deterministic local/mock positive and negative tests before broader gates. | - |
 
 ## Blocked
 

@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1502-runtime-bootstrap-authority",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-28T23:09:26+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1473",
     "AR-1474",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1502-runtime-bootstrap-authority",
   "observed_dirty": 1,
   "observed_head": "7167e3da7ab1fb35d4fc9c0e61ee754c89e670d6",
-  "owner": "ar1502-seam-audit-repair-luna56",
+  "owner": "",
   "plan": "../plans/AR-1502-runtime-bootstrap-authority.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Supply the runtime-owned authenticated bootstrap authority required for normal live dispatch.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Runtime-owned bootstrap authority",
-  "updated_at": "2026-09-28T21:13:59+00:00",
+  "updated_at": "2026-09-28T21:14:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1502"
 }
 ---
@@ -98,3 +98,6 @@ dependency-safe and must not synthesize authority or accept caller-built input.
 
 - 2026-09-28T21:13:59+00:00: Recorded command exit 0; command argv SHA-256
   cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
+
+- 2026-09-28T21:14:40+00:00: Coordinator takeover: stopped prior repair worker at user request;
+  preserve its audit and implementation diff, reopen same AR for a fresh repair worker.
