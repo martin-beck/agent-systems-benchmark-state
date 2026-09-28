@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supply the runtime-owned authenticated bootstrap authority required for normal live dispatch.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Runtime-owned bootstrap authority",
-  "updated_at": "2026-09-28T21:25:54+00:00",
+  "updated_at": "2026-09-28T21:26:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1502"
 }
 ---
@@ -196,3 +196,10 @@ dependency-safe and must not synthesize authority or accept caller-built input.
 
 - 2026-09-28T21:25:54+00:00: Recorded command exit 101; command argv SHA-256
   d8c6762a5ebff666276bb29d58951c352691a0fc2df4642d6c11e1c8e2d992f5.
+
+- 2026-09-28T21:26:15+00:00: Coordinator-wrapped cargo test --workspace --no-fail-fast reached all
+  crates but exited 101 on unrelated existing asb-metrics
+  kernel::tests::missing_malformed_and_unsafe_configuration_fail_closed: line 733 expected
+  ProbeResult::MalformedEvidence for malformed-tool, got ProbeRejected. ASB runtime tests remained
+  green (149 passed/1 ignored); no product mutation from this gate. I will rerun only the failing
+  asb-metrics test to determine deterministic environmental vs baseline cause.
