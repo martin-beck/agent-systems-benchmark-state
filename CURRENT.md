@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1502](tasks/AR-1502-runtime-bootstrap-authority.md): Runtime-owned bootstrap authority | Supply the runtime-owned authenticated bootstrap authority required for normal live dispatch. | Independent review of b62664c8710e25752730762016659a300b5a896a, then exact-head hosted gates; retain workspace asb-metrics flake as external baseline evidence unless reproduced. | ar1502-repair-restart-luna56 |
+| P0 | [AR-1502](tasks/AR-1502-runtime-bootstrap-authority.md): Runtime-owned bootstrap authority | Runtime-owned authenticated bootstrap authority merged and verified on main. | No further action; release AR-1502 after protected merge and exact-head post-merge workflows. | ar1502-repair-restart-luna56 |
 
 ## Blocked
 

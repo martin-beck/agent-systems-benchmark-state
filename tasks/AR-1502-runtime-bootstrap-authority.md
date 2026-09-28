@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1502-runtime-bootstrap-authority",
-  "checkpoint_commit": "b62664c8710e25752730762016659a300b5a896a",
+  "checkpoint_commit": "3c6af6b351e0c32ee8f5e48716654d854dcbbac2",
   "claim_expires": "2026-09-28T22:22:20+00:00",
   "depends_on": [
     "AR-1473",
@@ -10,7 +10,7 @@
     "AR-1501"
   ],
   "id": "AR-1502",
-  "next_action": "Independent review of b62664c8710e25752730762016659a300b5a896a, then exact-head hosted gates; retain workspace asb-metrics flake as external baseline evidence unless reproduced.",
+  "next_action": "No further action; release AR-1502 after protected merge and exact-head post-merge workflows.",
   "observed_branch": "feature/ar-1502-runtime-bootstrap-authority",
   "observed_dirty": 0,
   "observed_head": "b62664c8710e25752730762016659a300b5a896a",
@@ -19,10 +19,10 @@
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Supply the runtime-owned authenticated bootstrap authority required for normal live dispatch.",
-  "task_revision": 102,
+  "summary": "Runtime-owned authenticated bootstrap authority merged and verified on main.",
+  "task_revision": 103,
   "title": "Runtime-owned bootstrap authority",
-  "updated_at": "2026-09-28T21:54:02+00:00",
+  "updated_at": "2026-09-28T21:54:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1502"
 }
 ---
@@ -371,3 +371,8 @@ dependency-safe and must not synthesize authority or accept caller-built input.
 
 - 2026-09-28T21:54:02+00:00: Recorded command exit 0; command argv SHA-256
   28e653e27814c7e1b97d02e2669aa3e5d599e5979faa3b287c41398c6f5ce123.
+
+- 2026-09-28T21:54:30+00:00: Final evidence prepared: protected PR #381 merged to
+  3c6af6b351e0c32ee8f548716654d854dcbbac2; exact-head post-merge workflows all terminal success
+  (36487891496, 36487891440, 36487891362, 36487891091, 36487891148, 36487891281, 36487891100,
+  36487891307). Product worktree clean and origin/main exact merge SHA.
