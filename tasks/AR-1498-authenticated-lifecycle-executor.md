@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Lifecycle branch coverage expanded; serialized workspace llvm-cov 90.69% lines",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Authenticated lifecycle artifact executor",
-  "updated_at": "2026-09-28T17:30:25+00:00",
+  "updated_at": "2026-09-28T17:31:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1498"
 }
 ---
@@ -291,3 +291,6 @@ protocol/schema fixtures consumed by AR-1199 and downstream asb-tui.
   emitted zero profiles (left 0, right 6). This is an invalid test invocation environment, not a
   product failure. Next action: rerun workspace tests without LLVM_PROFILE_FILE, then continue
   signed amend/push; coverage gate remains independently green using its explicit sink.
+
+- 2026-09-28T17:31:13+00:00: Recorded command exit 0; command argv SHA-256
+  0e900534ba867924df666fbd0f9d7847f8625b85b35979a0a577a76e922ca992.
