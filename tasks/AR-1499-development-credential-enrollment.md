@@ -8,7 +8,7 @@
     "AR-1496"
   ],
   "id": "AR-1499",
-  "next_action": "PR #377 is open at exact reviewed head 86bb90c; monitor independent review and all required exact-head CI checks, repair any failures before merge.",
+  "next_action": "PR #377 exact head 86bb90c remains open; wait for remaining required CI (aarch64, TLC/Alloy, policy, Rust) and independent review; merge only after all green.",
   "observed_branch": "feature/ar-1499-development-credential-enrollment",
   "observed_dirty": 0,
   "observed_head": "86bb90ceb44d9cfed8e56500ba7c6e0297767bcf",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement versioned development credential enrollment contract with deterministic local/mock identity",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Development credential enrollment contract",
-  "updated_at": "2026-09-28T18:08:49+00:00",
+  "updated_at": "2026-09-28T18:13:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1499"
 }
 ---
@@ -77,3 +77,7 @@ labelled and isolated.
 - 2026-09-28T18:08:49+00:00: Signed+DCO commit 86bb90ceb44d9cfed8e56500ba7c6e0297767bcf verified
   with Martin Beck SSH key SHA256:a36V6yPvRZyxnQ2113tiA/MlHt7mPfJEXAGByBXVkuE. Exact branch pushed
   and PR #377 opened: https://github.com/martin-beck/agent-systems-benchmark/pull/377.
+
+- 2026-09-28T18:13:24+00:00: Local exact-topic DCO check and repository policy passed using
+  immutable base 9231a660675d4b01277a60b75d838d69c6bba917 and head
+  86bb90ceb44d9cfed8e56500ba7c6e0297767bcf. Hosted checks remain in progress with no failure.
