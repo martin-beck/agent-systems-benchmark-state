@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Own the authenticated control session and hand off only an opaque live dispatch source.",
-  "task_revision": 71,
+  "task_revision": 72,
   "title": "Runtime/control process owner",
-  "updated_at": "2026-09-28T22:38:18+00:00",
+  "updated_at": "2026-09-28T22:38:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1503-runtime-control-process-owner"
 }
 ---
@@ -258,3 +258,6 @@ asb-tui, synthesize authority, or accept caller-built runtime inputs.
 
 - 2026-09-28T22:38:18+00:00: Recorded command exit 0; command argv SHA-256
   f58d3b682c37dae03020a867de572ac725bbcc8742284fd403a6f6bc3fdd6417.
+
+- 2026-09-28T22:38:40+00:00: Recorded command exit 0; command argv SHA-256
+  08d57388abeac3a1c095ff93186ee24351040d12d34ebf7d4f49c95980a5621f.
