@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-28T23:00:14+00:00",
+  "updated_at": "2026-09-28T23:02:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -79,3 +79,6 @@ public credential/socket paths, or weakening fail-closed gates.
   and RuntimeCertificateAuthoritySource remain private runtime inputs. Existing
   ProvisionedControlServer/handoff.rs only passes an anonymous descriptor. This exact gap requires a
   new versioned authenticated bootstrap operation, not caller-supplied authority or synthetic paths.
+
+- 2026-09-28T23:02:29+00:00: Recorded command exit 101; command argv SHA-256
+  51ba69d4c610737a26b3ee3167f118767410cbc10708f3e6931f62c061247358.
