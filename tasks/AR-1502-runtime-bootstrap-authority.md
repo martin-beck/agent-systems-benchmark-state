@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supply the runtime-owned authenticated bootstrap authority required for normal live dispatch.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Runtime-owned bootstrap authority",
-  "updated_at": "2026-09-28T21:23:36+00:00",
+  "updated_at": "2026-09-28T21:23:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1502"
 }
 ---
@@ -176,3 +176,6 @@ dependency-safe and must not synthesize authority or accept caller-built input.
   149 passed, 1 ignored, binaries/integration/doc-tests green. Next gate cargo fmt --all -- --check
   reported exit 1 solely for rustfmt line wrapping at live_service.rs:317; no semantic failure. Will
   run coordinator-wrapped cargo fmt to apply canonical formatting, then rerun check.
+
+- 2026-09-28T21:23:43+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
