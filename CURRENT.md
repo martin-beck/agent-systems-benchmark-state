@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1503](tasks/AR-1503-runtime-control-process-owner.md): Runtime/control process owner | Own the authenticated control session and hand off only an opaque live dispatch source. | Promote and claim after reviewing the blocked AR-1483 evidence; implement the runtime/platform-owned control-session launcher and authenticated owner handoff. | - |
+| P0 | [AR-1503](tasks/AR-1503-runtime-control-process-owner.md): Runtime/control process owner | Own the authenticated control session and hand off only an opaque live dispatch source. | Promote and claim after reviewing the blocked AR-1483 evidence; implement the runtime/platform-owned control-session launcher and authenticated owner handoff. | ar1483-owner-integration-luna56 |
 
 ## Blocked
 

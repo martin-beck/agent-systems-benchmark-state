@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1503-runtime-control-process-owner",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T00:06:14+00:00",
   "depends_on": [
     "AR-1473",
     "AR-1474",
@@ -16,15 +16,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "ar1483-owner-integration-luna56",
   "plan": "../plans/AR-1503-runtime-control-process-owner.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Own the authenticated control session and hand off only an opaque live dispatch source.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Runtime/control process owner",
-  "updated_at": "2026-09-28T22:06:07+00:00",
+  "updated_at": "2026-09-28T22:06:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1503-runtime-control-process-owner"
 }
 ---
@@ -41,3 +41,5 @@ asb-tui, synthesize authority, or accept caller-built runtime inputs.
 - 2026-09-28T22:06:07+00:00: Dependencies AR-1473, AR-1474, AR-1480, AR-1484, AR-1485, and AR-1502
   verified done; promote the narrow runtime/platform-owned control-session launcher successor from
   blocked AR-1483 evidence.
+
+- 2026-09-28T22:06:14+00:00: Claimed by ar1483-owner-integration-luna56.
