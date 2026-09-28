@@ -10,7 +10,7 @@
   "id": "AR-1499",
   "next_action": "PR #377 merged old head 86bb90c at protected main 65bcdf3; corrective commits 51c57d4 and 7bdda85 are not in main. Create a new repair PR from the current main base, verify exact-head CI and merge only after all required gates pass.",
   "observed_branch": "feature/ar-1499-development-credential-enrollment",
-  "observed_dirty": 1,
+  "observed_dirty": 0,
   "observed_head": "7bdda85240653fa15e8eee602240137d88b8442b",
   "owner": "ar1499-selection-binding-repair-luna56",
   "plan": "../plans/AR-1499-development-credential-enrollment.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair merged development credential selection binding",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Development credential enrollment contract",
-  "updated_at": "2026-09-28T18:28:05+00:00",
+  "updated_at": "2026-09-28T18:28:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1499"
 }
 ---
