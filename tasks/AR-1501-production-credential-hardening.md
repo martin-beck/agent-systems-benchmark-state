@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Track production credential secrecy and authentication hardening after the prototype.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Production credential hardening follow-up",
-  "updated_at": "2026-09-28T20:13:14+00:00",
+  "updated_at": "2026-09-28T20:13:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1501"
 }
 ---
@@ -171,3 +171,6 @@ This AR is intentionally not required for the development build cycle.
   workspace rerun with --no-fail-fast -- --test-threads=1 also exited 0. No failure reproduces and
   no product-specific test is implicated; preserve the original exit as a non-reproducible
   parallel-run failure, not a publication/CI failure.
+
+- 2026-09-28T20:13:26+00:00: Recorded command exit 0; command argv SHA-256
+  5eeff2307eeecfd980e71f8900122d3fa1b131f10230aa2bf39c3a8e25f54488.
