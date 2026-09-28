@@ -8,7 +8,7 @@
     "AR-1443"
   ],
   "id": "AR-1500",
-  "next_action": "Promote after AR-1499; wire the deterministic development credential fixture and non-blocking auth/signature/key-management fallback into provider validation, capture, replay and comparison qualification.",
+  "next_action": "Rerun the failing asb-cli lifecycle test serially, then run all applicable gates, review and publish exact-head PR.",
   "observed_branch": "feature/ar-1500-development-credential-provider-fixture",
   "observed_dirty": 5,
   "observed_head": "ee8ea15c7c3bc3b3609dbfbc3b0637b8761973e5",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify generated development credentials through provider, capture and replay flows.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Development credential/provider lifecycle fixture",
-  "updated_at": "2026-09-28T19:13:25+00:00",
+  "updated_at": "2026-09-28T19:13:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1500"
 }
 ---
@@ -78,3 +78,8 @@ generated credentials as production-safe secrets.
   534f8613e1c316db8f0f46dd989e44e14a8ca74304a94791b4e4a1c59b2fbb1d.
 
 - 2026-09-28T19:13:25+00:00: Heartbeat by ar1500-provider-fixture-luna56.
+
+- 2026-09-28T19:13:28+00:00: Full cargo test --locked --workspace reached one unrelated asb-cli
+  failure: authenticated_lifecycle_activates_and_removes_signed_bundle returned control state root
+  is already owned from shared test-state contention. Focused fixture tests and workspace Clippy
+  passed; rerun serial focused test before final gate.
