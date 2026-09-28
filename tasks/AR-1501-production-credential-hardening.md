@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Track production credential secrecy and authentication hardening after the prototype.",
-  "task_revision": 86,
+  "task_revision": 87,
   "title": "Production credential hardening follow-up",
-  "updated_at": "2026-09-28T20:27:59+00:00",
+  "updated_at": "2026-09-28T20:28:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1501"
 }
 ---
@@ -277,3 +277,6 @@ This AR is intentionally not required for the development build cycle.
   20:25:35Z). Emulated-aarch64 run 36478232397 remains in progress at Materialize immutable aarch64
   guest userspace since 20:20:01Z with no step transition yet; job is not terminal, so preserve and
   monitor rather than cancel.
+
+- 2026-09-28T20:28:41+00:00: Recorded command exit 0; command argv SHA-256
+  28804214794126f12c55a4726beb81b50b24699fa9524a150149c5ac68eea688.
