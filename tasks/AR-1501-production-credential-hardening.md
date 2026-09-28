@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1501-production-credential-hardening",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-28T21:46:10+00:00",
+  "claim_expires": "2026-09-28T21:54:06+00:00",
   "depends_on": [
     "AR-1499",
     "AR-1500"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Track production credential secrecy and authentication hardening after the prototype.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Production credential hardening follow-up",
-  "updated_at": "2026-09-28T19:48:44+00:00",
+  "updated_at": "2026-09-28T19:54:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1501"
 }
 ---
@@ -34,3 +34,5 @@ This AR is intentionally not required for the development build cycle.
 
 - 2026-09-28T19:48:30+00:00: Recorded command exit 0; command argv SHA-256
   2c3f8fac18e3ee788132616a5ae8e57ad383d4576e404fa9fb96a415673262ac.
+
+- 2026-09-28T19:54:06+00:00: Heartbeat by ar1501-production-hardening-luna56.
