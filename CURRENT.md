@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1502](tasks/AR-1502-runtime-bootstrap-authority.md): Runtime-owned bootstrap authority | Supply the runtime-owned authenticated bootstrap authority required for normal live dispatch. | Promote and claim; implement the smallest runtime-owned authenticated bootstrap-authority source required by AR-1470, with deterministic mock qualification and fail-closed production adapter boundary. | - |
+| P0 | [AR-1502](tasks/AR-1502-runtime-bootstrap-authority.md): Runtime-owned bootstrap authority | Supply the runtime-owned authenticated bootstrap authority required for normal live dispatch. | Promote and claim; implement the smallest runtime-owned authenticated bootstrap-authority source required by AR-1470, with deterministic mock qualification and fail-closed production adapter boundary. | ar1502-runtime-bootstrap-authority-luna56 |
 
 ## Blocked
 
