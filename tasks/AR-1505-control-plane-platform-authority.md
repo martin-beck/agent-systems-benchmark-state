@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Repair P1 review findings before merge: wire control bootstrap response into runtime-owned enrollment/authority/provisioner and make cancel revoke the corresponding local runtime chain/attempt; add end-to-end deterministic tests.",
+  "next_action": "Implement runtime-owned bootstrap response consumption and cancellation revocation/fencing in the existing AR-1505 worktree; add deterministic provider-free end-to-end tests.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 0,
   "observed_head": "baa13ea675de2160dcf58f69b106e255f2c3d8de",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 117,
+  "task_revision": 118,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-28T23:51:08+00:00",
+  "updated_at": "2026-09-28T23:51:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -486,3 +486,8 @@ public credential/socket paths, or weakening fail-closed gates.
 - 2026-09-28T23:50:17+00:00: Claimed by ar1505-repair-luna56.
 
 - 2026-09-28T23:51:08+00:00: Heartbeat by ar1505-repair-luna56.
+
+- 2026-09-28T23:51:33+00:00: Repair worker active on existing PR #382 head
+  baa13ea675de2160dcf58f69b106e255f2c3d8de. Required product docs and complete AR/plan read.
+  Independent-review P1 blockers confirmed in live_service.rs; no files changed yet. Next inspect
+  runtime authority resolver/provisioner lifecycle and wire response/cancel through handoffctl run.
