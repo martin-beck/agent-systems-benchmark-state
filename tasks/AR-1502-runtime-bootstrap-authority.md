@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supply the runtime-owned authenticated bootstrap authority required for normal live dispatch.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Runtime-owned bootstrap authority",
-  "updated_at": "2026-09-28T21:01:40+00:00",
+  "updated_at": "2026-09-28T21:03:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1502"
 }
 ---
@@ -35,3 +35,6 @@ dependency-safe and must not synthesize authority or accept caller-built input.
   gap; dependencies AR-1473, AR-1474, AR-1480 and AR-1501 are done.
 
 - 2026-09-28T21:01:40+00:00: Claimed by ar1502-runtime-bootstrap-authority-luna56.
+
+- 2026-09-28T21:03:46+00:00: Recorded command exit 0; command argv SHA-256
+  2590014534974651c2b91354dd60132835962efb4ff1177601b4dba4f3912162.
