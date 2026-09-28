@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-28T23:17:59+00:00",
+  "updated_at": "2026-09-28T23:18:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -203,3 +203,11 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-28T23:17:59+00:00: Recorded command exit 101; command argv SHA-256
   5f0cf8b7f8b4d39559c6aa438cb9097561deab7ff7bad8dcd2b24f48a02fb447.
+
+- 2026-09-28T23:18:26+00:00: Exact gate at 23:17:59Z: handoffctl run -- cargo test --locked -p
+  asb-control -p asb-runtime --no-fail-fast -- --test-threads=1: all asb-control unit/integration
+  tests and all asb-runtime tests passed (70 control unit, 27 control, 7 endpoint, 4 schema; 149
+  runtime unit plus integration/doc tests), but
+  schema_conformance::checked_in_schemas_equal_fresh_generation failed because the checked-in
+  control schemas did not include the new RuntimeBootstrap variants. This is the required
+  generated-schema refresh, not a semantic test failure.
