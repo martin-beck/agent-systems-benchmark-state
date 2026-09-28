@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add an explicit development-only unverified bundle profile without weakening production or customer-release verification.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Development-only unverified bundle profile",
-  "updated_at": "2026-09-28T13:12:21+00:00",
+  "updated_at": "2026-09-28T13:12:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1495-development-unverified-bundle-profile"
 }
 ---
@@ -154,3 +154,6 @@ above.
 
 - 2026-09-28T13:12:21+00:00: Recorded command exit 0; command argv SHA-256
   eb2a749c629375169d8c769954f631def2abb41aa518cd48b268c7928971a37d.
+
+- 2026-09-28T13:12:42+00:00: Recorded command exit 0; command argv SHA-256
+  fceda6b77c52c0e30dcfe3a72c36af1c971859c8dcd7cd0e8d8d7a89f955a60a.
