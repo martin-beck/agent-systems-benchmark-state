@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Track production credential secrecy and authentication hardening after the prototype.",
-  "task_revision": 71,
+  "task_revision": 72,
   "title": "Production credential hardening follow-up",
-  "updated_at": "2026-09-28T20:19:55+00:00",
+  "updated_at": "2026-09-28T20:20:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1501"
 }
 ---
@@ -230,3 +230,6 @@ This AR is intentionally not required for the development build cycle.
   pass: focused production_auth 7/7, package clippy, workspace formatting, workspace clippy, and
   serial full workspace cargo test. Ready for exact-head hosted checks and renewed independent
   review.
+
+- 2026-09-28T20:20:04+00:00: Recorded command exit 0; command argv SHA-256
+  fe1598bee4c354f53018efdb9fba37cc9c5bc55b44431bc1cfd743ef84502315.
