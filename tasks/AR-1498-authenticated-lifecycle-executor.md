@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticated lifecycle executor with positive and negative coverage fixtures published",
-  "task_revision": 95,
+  "task_revision": 96,
   "title": "Authenticated lifecycle artifact executor",
-  "updated_at": "2026-09-28T17:34:51+00:00",
+  "updated_at": "2026-09-28T17:35:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1498"
 }
 ---
@@ -329,3 +329,6 @@ protocol/schema fixtures consumed by AR-1199 and downstream asb-tui.
   faults, and exact headers passed; TLC/Alloy, Rust, aarch64, policy/coverage/supply-chain, platform
   evidence, credential-free path, fuzz, Kani, matcher/SLO, Loom/state remain in progress. No merge
   attempted while checks are pending.
+
+- 2026-09-28T17:35:19+00:00: Recorded command exit 0; command argv SHA-256
+  82331e726694efef2b99dcc2a8de4f9196c6423b7a8d534e0336c83bcde93267.
