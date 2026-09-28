@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-28T23:31:29+00:00",
+  "updated_at": "2026-09-28T23:31:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -327,3 +327,11 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-28T23:31:29+00:00: Recorded command exit 1; command argv SHA-256
   7beec9e69f85e6e8c0929ac71a9ec77ea5fd6759af91d9889847385e2afae421.
+
+- 2026-09-28T23:31:54+00:00: Exact disposition for exit 1 at 23:31:29Z: publication preflight
+  invoked bash -lc cd /srv/data/projects/agent-systems-benchmark-ar-1505-control-plane-authority &&
+  git status --short. The declared worktree is actually
+  /srv/data/projects/agent-systems-benchmark-ar-1505-control-plane-platform-authority; stderr was
+  bash: line 1: cd: /srv/data/projects/agent-systems-benchmark-ar-1505-control-plane-authority: No
+  such file or directory. No product mutation occurred and no gate result was affected. Correcting
+  only the path before retry.
