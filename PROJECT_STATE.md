@@ -16,7 +16,7 @@ Generated from local Git and GitHub. Do not edit.
 | #364 | `dependabot/cargo/jsonschema-0.56.0@1b649e680a58` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump jsonschema from 0.33.0 to 0.56.0 |
 | #365 | `dependabot/cargo/rcgen-0.14.10@8604b5977544` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump rcgen from 0.14.7 to 0.14.10 |
 | #366 | `dependabot/cargo/schemars-1.2.2@047b52b0b5b9` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump schemars from 1.0.4 to 1.2.2 |
-| #373 | `feature/ar-1495-development-unverified-bundle-profile@4d63a6642c60` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | bundle: isolate development-only unverified signature profile |
+| #373 | `feature/ar-1495-development-unverified-bundle-profile@4d63a6642c60` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | bundle: isolate development-only unverified signature profile |
 
 ## Recent workflows
 
@@ -25,7 +25,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36427555103 | `4d63a6642c60` | pull_request | Repository quality | in_progress:- |
 | 36427555005 | `4d63a6642c60` | pull_request | Formal assurance | in_progress:- |
 | 36427555003 | `4d63a6642c60` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 36427554971 | `4d63a6642c60` | pull_request | Fault assurance | in_progress:- |
+| 36427554971 | `4d63a6642c60` | pull_request | Fault assurance | completed:success |
 | 36427554944 | `4d63a6642c60` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 36427554914 | `4d63a6642c60` | pull_request | Hosted portability and native qualification | completed:success |
 | 36427554849 | `4d63a6642c60` | pull_request | Huawei MIT source headers | completed:success |
