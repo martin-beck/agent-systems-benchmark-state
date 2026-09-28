@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supply the runtime-owned authenticated bootstrap authority required for normal live dispatch.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Runtime-owned bootstrap authority",
-  "updated_at": "2026-09-28T21:27:50+00:00",
+  "updated_at": "2026-09-28T21:28:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1502"
 }
 ---
@@ -220,3 +220,6 @@ dependency-safe and must not synthesize authority or accept caller-built input.
   callers do not satisfy library dead-code lint. No behavior failure; next add explicit
   allow(dead_code) only to these internal compatibility helpers, preserving the production
   visibility fence.
+
+- 2026-09-28T21:28:02+00:00: Recorded command exit 0; command argv SHA-256
+  66a540d02dc5a75be6d1e0606eb46aa240dc9a09bf507f3b960b6148143fc798.
