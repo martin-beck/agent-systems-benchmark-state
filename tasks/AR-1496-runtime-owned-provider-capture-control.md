@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1496-runtime-owned-provider-capture-control",
-  "checkpoint_commit": "e664ce9e5e29849db93cfdef3fa3f2d3fa11cd58",
+  "checkpoint_commit": "9021c331e8be5d9b6d8062c698fd06746f309ca5",
   "claim_expires": "2026-09-28T16:30:50+00:00",
   "depends_on": [
     "AR-1151",
@@ -12,7 +12,7 @@
     "AR-1455"
   ],
   "id": "AR-1496",
-  "next_action": "PR #375 is rebased onto protected main 45df6590; await exact-head hosted checks, then independent review and merge.",
+  "next_action": "PR #375 exact head 9021c33 is running required hosted checks; after all green obtain independent review, then perform signed merge and post-merge verification.",
   "observed_branch": "feature/ar-1496-runtime-owned-provider-capture-control",
   "observed_dirty": 0,
   "observed_head": "9021c331e8be5d9b6d8062c698fd06746f309ca5",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Complete runtime-owned provider capture, tuple cassette reconciliation and verified offline activation required by the setup wizard.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Runtime-owned provider capture and control activation",
-  "updated_at": "2026-09-28T14:04:00+00:00",
+  "updated_at": "2026-09-28T14:04:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1496-runtime-owned-provider-capture-control"
 }
 ---
@@ -156,3 +156,12 @@ execution or alter AR-1160's historical evidence.
 
 - 2026-09-28T14:04:00+00:00: Recorded command exit 0; command argv SHA-256
   ae6e09227e9511ac2945e649bf120a725abdb02f4b581383b0a4c27c9bc1dd73.
+
+- 2026-09-28T14:04:33+00:00: Diagnosed hosted Rust failure at exact head e664ce9:
+  workflow_transcript provenance test rejected stale cli_source_sha256 a2b8... while
+  crates/asb-cli/src/lib.rs actually hashes
+  cef0a54d4b335452dbcbfed96cc399ddd1cfd7b21f83a553b23df8c015ca48a7. Updated only
+  docs/examples/asb-cli-workflow-v1.provenance.json. Focused workflow_transcript 3/3 passed; full
+  cargo test --locked --workspace -- --test-threads=1 passed locally (all runnable tests green;
+  expected environment-gated tests ignored). Signed+DCO commit 9021c33 pushed with force-with-lease.
+  PR #375 now exact head 9021c33 against protected base 45df6590; hosted checks restarted.
