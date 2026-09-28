@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1470-runtime-certificate-chain-enrollment",
   "checkpoint_commit": "b9d7b6ee251b3a119496d3c16f65ffc971704f3a",
-  "claim_expires": "",
+  "claim_expires": "2026-09-28T22:55:46+00:00",
   "depends_on": [
     "AR-1357",
     "AR-1359",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1470-runtime-certificate-chain-enrollment",
   "observed_dirty": 0,
   "observed_head": "7167e3da7ab1fb35d4fc9c0e61ee754c89e670d6",
-  "owner": "",
+  "owner": "ar1470-enrollment-source-repair-luna56",
   "plan": "../plans/AR-1470-runtime-certificate-chain-enrollment.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Materialize runtime-owned certificate-chain enrollment authority for live dispatch.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Runtime certificate-chain enrollment materialization",
-  "updated_at": "2026-09-28T20:55:43+00:00",
+  "updated_at": "2026-09-28T20:55:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1470-runtime-certificate-chain-enrollment"
 }
 ---
@@ -138,3 +138,5 @@ actually consumed by the downstream adapters.
 - 2026-09-28T20:55:43+00:00: Coordinator recovery: protected-main refresh completed, but worker
   produced no implementation or precise blocker after current audit; preserve evidence and restart
   with a bounded source-or-blocker task.
+
+- 2026-09-28T20:55:46+00:00: Claimed by ar1470-enrollment-source-repair-luna56.
