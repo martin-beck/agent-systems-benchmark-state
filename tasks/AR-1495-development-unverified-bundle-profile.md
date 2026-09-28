@@ -18,11 +18,11 @@
   "plan": "../plans/AR-1495-development-unverified-bundle-profile.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Add an explicit development-only unverified bundle profile without weakening production or customer-release verification.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Development-only unverified bundle profile",
-  "updated_at": "2026-09-28T13:34:21+00:00",
+  "updated_at": "2026-09-28T14:17:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1495-development-unverified-bundle-profile"
 }
 ---
@@ -275,3 +275,6 @@ above.
   and policy was not weakened. Next action: create topology-only successor preserving implementation
   tree 4d63a66 and merge 03d2d07, obtain policy-compliant two-parent main merge, then rerun all
   eight workflows before release.
+
+- 2026-09-28T14:17:39+00:00: Resume only to reconcile stale blocked topology status: AR-1497 now
+  preserves the exact tree and has green exact-main evidence.

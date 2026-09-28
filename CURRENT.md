@@ -9,6 +9,12 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1496](tasks/AR-1496-runtime-owned-provider-capture-control.md): Runtime-owned provider capture and control activation | Complete runtime-owned provider capture, tuple cassette reconciliation and verified offline activation required by the setup wizard. | PR #375 exact head 9021c33 is running required hosted checks; after all green obtain independent review, then perform signed merge and post-merge verification. | ar1496-provider-capture-luna56 |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1495](tasks/AR-1495-development-unverified-bundle-profile.md): Development-only unverified bundle profile | Add an explicit development-only unverified bundle profile without weakening production or customer-release verification. | Monitor PR #373 fresh exact signed+DCO head 4d63a66; merge only after all required checks and independent review are green. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -69,7 +75,6 @@ Never edit this file directly.
 | P0 | [AR-1482](tasks/AR-1482-control-runtime-process-bootstrap.md): Control-runtime process bootstrap | Compose authenticated control enrollment into the ordinary CLI process bootstrap. | Promote and claim, then inspect control/runtime process bootstrap APIs on protected main. | - |
 | P0 | [AR-1483](tasks/AR-1483-authenticated-control-process-owner.md): Authenticated control process owner | Own authenticated control session and lifecycle while minting opaque CLI dispatch sources. | Promote and claim, then audit whether the runtime/control owner contract can be implemented without caller authority. | - |
 | P0 | [AR-1490](tasks/AR-1490-fresh-package-runtime-acceptance.md): Fresh package runtime acceptance | Run fresh package first-customer runtime acceptance and produce an explicit readiness report. | Promote and claim, then audit exact package and clean-environment inputs before executing the local/mock/replay readiness run. | - |
-| P0 | [AR-1495](tasks/AR-1495-development-unverified-bundle-profile.md): Development-only unverified bundle profile | Add an explicit development-only unverified bundle profile without weakening production or customer-release verification. | Monitor PR #373 fresh exact signed+DCO head 4d63a66; merge only after all required checks and independent review are green. | - |
 | P1 | [AR-0604](tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Obtain authorized native x86 runner and immutable CSB/Python evidence; rerun native_boundary and record A/B overhead. | - |
 | P1 | [AR-0814](tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Create successor AR for authenticated route/ancestor authority; preserve AR-1288 evidence and AR-0814 head 29cfa193. | - |
 | P1 | [AR-0832](tasks/AR-0832-aiws-runner-qualification.md): Qualify development host ASB runner operations | Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery. | Run repeated clean ASB jobs on every declared development host label and audit reset, isolation, architecture, and artifact provenance. | - |
