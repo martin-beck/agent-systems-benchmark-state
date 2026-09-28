@@ -20,11 +20,11 @@
   "plan": "../plans/AR-1505-control-plane-platform-authority.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-28T22:56:30+00:00",
+  "updated_at": "2026-09-28T22:56:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -55,3 +55,6 @@ Acceptance requires:
 
 Non-goals: asb-tui changes, live provider reachability, synthetic authority,
 public credential/socket paths, or weakening fail-closed gates.
+
+- 2026-09-28T22:56:27+00:00: Dependencies are done; promote the narrow control-plane
+  authority/bootstrap protocol successor required by AR-1504 exact blocker.
