@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1502](tasks/AR-1502-runtime-bootstrap-authority.md): Runtime-owned bootstrap authority | Supply the runtime-owned authenticated bootstrap authority required for normal live dispatch. | Promote and claim; implement the smallest runtime-owned authenticated bootstrap-authority source required by AR-1470, with deterministic mock qualification and fail-closed production adapter boundary. | ar1502-seam-audit-repair-luna56 |
+| P0 | [AR-1502](tasks/AR-1502-runtime-bootstrap-authority.md): Runtime-owned bootstrap authority | Supply the runtime-owned authenticated bootstrap authority required for normal live dispatch. | Implement the runtime-owned bootstrap source and store enrollment seam in the isolated worktree; add deterministic local/mock positive and negative tests before broader gates. | ar1502-seam-audit-repair-luna56 |
 
 ## Blocked
 

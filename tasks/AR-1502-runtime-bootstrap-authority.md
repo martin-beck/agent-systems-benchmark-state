@@ -10,7 +10,7 @@
     "AR-1501"
   ],
   "id": "AR-1502",
-  "next_action": "Promote and claim; implement the smallest runtime-owned authenticated bootstrap-authority source required by AR-1470, with deterministic mock qualification and fail-closed production adapter boundary.",
+  "next_action": "Implement the runtime-owned bootstrap source and store enrollment seam in the isolated worktree; add deterministic local/mock positive and negative tests before broader gates.",
   "observed_branch": "feature/ar-1502-runtime-bootstrap-authority",
   "observed_dirty": 0,
   "observed_head": "7167e3da7ab1fb35d4fc9c0e61ee754c89e670d6",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supply the runtime-owned authenticated bootstrap authority required for normal live dispatch.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Runtime-owned bootstrap authority",
-  "updated_at": "2026-09-28T21:06:58+00:00",
+  "updated_at": "2026-09-28T21:07:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1502"
 }
 ---
@@ -43,3 +43,10 @@ dependency-safe and must not synthesize authority or accept caller-built input.
   implementation progress after setup; preserve evidence and restart with a seam-audit-first worker.
 
 - 2026-09-28T21:06:58+00:00: Claimed by ar1502-seam-audit-repair-luna56.
+
+- 2026-09-28T21:07:05+00:00: Protected-main audit at 7167e3d confirmed the first bounded seam:
+  AuthenticatedChainEnrollmentV1 and RuntimeCertificateChainStore exist, but the store is populated
+  only from response metadata and no runtime-owned issuer binds control session, namespace,
+  relay/lease roots, credential reference, expiry, cancellation, and restart. Next implementation is
+  an explicit runtime-bootstrap source/request validation path that installs only source-issued
+  chains; normal receipt dispatch will fail closed when the store is not enrolled.
