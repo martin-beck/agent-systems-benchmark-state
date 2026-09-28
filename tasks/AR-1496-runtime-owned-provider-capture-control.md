@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1496-runtime-owned-provider-capture-control",
-  "checkpoint_commit": "9021c331e8be5d9b6d8062c698fd06746f309ca5",
+  "checkpoint_commit": "b9a497c31151c1622653b2d1caf84af0dbbb3386",
   "claim_expires": "2026-09-28T16:30:50+00:00",
   "depends_on": [
     "AR-1151",
@@ -12,7 +12,7 @@
     "AR-1455"
   ],
   "id": "AR-1496",
-  "next_action": "PR #375 exact head 9021c33 is running required hosted checks; after all green obtain independent review, then perform signed merge and post-merge verification.",
+  "next_action": "PR #375 exact head b9a497c is pushed with review blockers repaired; obtain independent re-review and required hosted checks before any signed merge.",
   "observed_branch": "feature/ar-1496-runtime-owned-provider-capture-control",
   "observed_dirty": 0,
   "observed_head": "b9a497c31151c1622653b2d1caf84af0dbbb3386",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Complete runtime-owned provider capture, tuple cassette reconciliation and verified offline activation required by the setup wizard.",
-  "task_revision": 57,
+  "task_revision": 58,
   "title": "Runtime-owned provider capture and control activation",
-  "updated_at": "2026-09-28T14:20:28+00:00",
+  "updated_at": "2026-09-28T14:25:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1496-runtime-owned-provider-capture-control"
 }
 ---
@@ -172,8 +172,18 @@ execution or alter AR-1160's historical evidence.
 - 2026-09-28T14:13:52+00:00: Recorded command exit 101; command argv SHA-256
   41603fc74c82940d20e8cd95eca021ebea841f8df8ee1d8bd13388499263b407.
 
+- 2026-09-28T15:10:00+00:00: Independent-review blocker repair implemented and pushed at exact
+  head b9a497c. Provider capture now redacts every non-routing body field before cassette
+  sealing, checkpoints each verified tuple durably, resumes without repeating complete tuples,
+  and fences cancellation/deadline through the runtime capture context. Reconciliation marks
+  only uncertain tuples stale and recomputes offline readiness from verified artifacts. Focused
+  control/runtime/replay tests and clippy passed; independent re-review is required before merge.
+
 - 2026-09-28T14:19:44+00:00: Recorded command exit 0; command argv SHA-256
   03afbd98fe1654c7f4e8438f06056525c8b70bf5c5e273dd7daaa24e5b818702.
 
 - 2026-09-28T14:20:14+00:00: Recorded command exit 0; command argv SHA-256
   adb5299e0f623df53636981ffdcc540ddd4b56c76a814da8a10b433b903e786e.
+
+- 2026-09-28T14:25:35+00:00: Recorded command exit 0; command argv SHA-256
+  042fd5aa32580334e2463587a8dad2ea155858bb413455922a25b9149ea6c3e7.
