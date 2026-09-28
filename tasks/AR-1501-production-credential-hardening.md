@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Track production credential secrecy and authentication hardening after the prototype.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Production credential hardening follow-up",
-  "updated_at": "2026-09-28T20:15:46+00:00",
+  "updated_at": "2026-09-28T20:16:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1501"
 }
 ---
@@ -195,3 +195,6 @@ This AR is intentionally not required for the development build cycle.
   provider family, auth method, and secret-reference identity, preventing adapter-side enforcement
   without ambient lookup. Repair request fields, validate persisted enrollment before dispatch, add
   exact-binding assertions, rerun focused/full gates.
+
+- 2026-09-28T20:16:31+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
