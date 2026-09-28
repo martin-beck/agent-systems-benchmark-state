@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 105,
+  "task_revision": 106,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-28T23:43:20+00:00",
+  "updated_at": "2026-09-28T23:43:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -436,3 +436,6 @@ public credential/socket paths, or weakening fail-closed gates.
   baa13ea675de2160dcf58f69b106e255f2c3d8de. Emulated aarch64 and policy/coverage/supply-chain have
   now passed; all listed CI checks except Rust checks are green. Rust verification remains in
   progress. Review decision is still empty, so merge remains blocked.
+
+- 2026-09-28T23:43:53+00:00: Recorded command exit 0; command argv SHA-256
+  d0da4315f4849e9337dd6bd117b5d2e8c7508bd15b8a6e8d8509b03f5cc3562a.
