@@ -12,7 +12,7 @@
   "id": "AR-1495",
   "next_action": "Promote and claim AR-1495, audit AR-1314 on protected main, and implement or repair the explicit development-only unverified bundle profile.",
   "observed_branch": "feature/ar-1495-development-unverified-bundle-profile",
-  "observed_dirty": 0,
+  "observed_dirty": 4,
   "observed_head": "a2d9be3eb3c77331a7a3498fdec8e54fb74ae8d6",
   "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1495-development-unverified-bundle-profile.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add an explicit development-only unverified bundle profile without weakening production or customer-release verification.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Development-only unverified bundle profile",
-  "updated_at": "2026-09-28T13:01:23+00:00",
+  "updated_at": "2026-09-28T13:01:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1495-development-unverified-bundle-profile"
 }
 ---
