@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1503",
-  "next_action": "Promote and claim after reviewing the blocked AR-1483 evidence; implement the runtime/platform-owned control-session launcher and authenticated owner handoff.",
+  "next_action": "Implement the runtime/platform-owned control-session launcher and authenticated owner handoff in the declared isolated worktree; first preserve the source-only chain and private resolver boundary.",
   "observed_branch": "feature/ar-1503-runtime-control-process-owner",
   "observed_dirty": 0,
   "observed_head": "3c6af6b351e0c32ee8f5e48716654d854dcbbac2",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Own the authenticated control session and hand off only an opaque live dispatch source.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Runtime/control process owner",
-  "updated_at": "2026-09-28T22:09:29+00:00",
+  "updated_at": "2026-09-28T22:09:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1503-runtime-control-process-owner"
 }
 ---
@@ -50,3 +50,9 @@ asb-tui, synthesize authority, or accept caller-built runtime inputs.
   ff6d1fa7a7185010f75fcfafe4bdc1bdd5b9804d8c2b3e7abdd8a1b96cd81c63.
 
 - 2026-09-28T22:09:29+00:00: Heartbeat by ar1483-owner-integration-luna56.
+
+- 2026-09-28T22:09:43+00:00: Successor is durably created, promoted, claimed, and has isolated
+  worktree at protected main 3c6af6b. AR-1483 remains blocked with exact evidence. State doctor
+  --live currently reports WORKTREES.md stale only because the generated inventory includes the
+  state checkout itself and its self-head advances on each signed reconcile; no product failure or
+  authority weakening.
