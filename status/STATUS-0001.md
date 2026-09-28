@@ -11,8 +11,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 74 |
 | **Planned** | Defined work awaiting promotion or dependencies | 51 |
 | **Future** | Deferred roadmap work | 1 |
@@ -594,7 +594,7 @@ flowchart LR
     end
     subgraph series_15["15 - Additional work"]
         direction TB
-        AR_1500["AR-1500 - Open"]:::status_open
+        AR_1500["AR-1500 - In progress"]:::status_in_progress
         AR_1501["AR-1501 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002

@@ -176,11 +176,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1500](../tasks/AR-1500-development-credential-provider-fixture.md): Development credential/provider lifecycle fixture | Unclaimed | Qualify generated development credentials through provider, capture and replay flows. | Promote after AR-1499; wire the deterministic development credential fixture and non-blocking auth/signature/key-management fallback into provider validation, capture, replay and comparison qualification. |
+| P0 | [AR-1500](../tasks/AR-1500-development-credential-provider-fixture.md): Development credential/provider lifecycle fixture | ar1500-provider-fixture-luna56 | Qualify generated development credentials through provider, capture and replay flows. | Promote after AR-1499; wire the deterministic development credential fixture and non-blocking auth/signature/key-management fallback into provider validation, capture, replay and comparison qualification. |
 
 ### Blocked (74)
 

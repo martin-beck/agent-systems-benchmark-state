@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1500](tasks/AR-1500-development-credential-provider-fixture.md): Development credential/provider lifecycle fixture | Qualify generated development credentials through provider, capture and replay flows. | Promote after AR-1499; wire the deterministic development credential fixture and non-blocking auth/signature/key-management fallback into provider validation, capture, replay and comparison qualification. | - |
+| P0 | [AR-1500](tasks/AR-1500-development-credential-provider-fixture.md): Development credential/provider lifecycle fixture | Qualify generated development credentials through provider, capture and replay flows. | Promote after AR-1499; wire the deterministic development credential fixture and non-blocking auth/signature/key-management fallback into provider validation, capture, replay and comparison qualification. | ar1500-provider-fixture-luna56 |
 
 ## Blocked
 
