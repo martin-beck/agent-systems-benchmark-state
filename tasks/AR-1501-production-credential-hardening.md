@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Track production credential secrecy and authentication hardening after the prototype.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Production credential hardening follow-up",
-  "updated_at": "2026-09-28T20:14:27+00:00",
+  "updated_at": "2026-09-28T20:14:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1501"
 }
 ---
@@ -182,3 +182,6 @@ This AR is intentionally not required for the development build cycle.
   opened PR #380. PR URL: https://github.com/martin-beck/agent-systems-benchmark/pull/380. Full
   package gates and serial full workspace test pass; awaiting independent review and exact-head
   hosted checks.
+
+- 2026-09-28T20:14:35+00:00: Recorded command exit 0; command argv SHA-256
+  bed98b83a72ecca7a4258564d91bd2142ddd97cefb0543e1306f10d46ec3270a.
