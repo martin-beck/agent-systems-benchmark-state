@@ -176,6 +176,12 @@
 
 ## Complete AR inventory
 
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P2 | [AR-1501](../tasks/AR-1501-production-credential-hardening.md): Production credential hardening follow-up | Unclaimed | Track production credential secrecy and authentication hardening after the prototype. | Keep non-gating until production deployment is requested; replace development credentials with a reviewed secure authentication chain. |
+
 ### Blocked (74)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -255,7 +261,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (51)
+### Planned (50)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -309,7 +315,6 @@
 | P2 | [AR-0602](../tasks/AR-0602-csb-monitoring-contention.md): Validate CSB monitoring and contention diagnostics | Unclaimed | Validate and integrate optional CSB resource monitoring and kernel-contention evidence without double counting or overstating support. | Audit CSB monitoring using native x86_64 oracles and required pinned QEMU AArch64 portable mapping/lifecycle checks; keep native ARM64 counters and performance as optional future evidence. |
 | P2 | [AR-0903](../tasks/AR-0903-release-qualification.md): Package and qualify the first release | Unclaimed | Deliver reproducible native release artifacts with complete support and evidence statements. | Audit milestone completeness and run isolated release qualification. |
 | P2 | [AR-1016](../tasks/AR-1016-measurement-integration-audit.md): Integrate and audit measurement selection and CSB evidence | Unclaimed | Audit selectable and CSB-backed measurements across live and replay runs. | Add end-to-end live/replay comparison, release documentation, and independent audit after AR-1014 and AR-1015. |
-| P2 | [AR-1501](../tasks/AR-1501-production-credential-hardening.md): Production credential hardening follow-up | Unclaimed | Track production credential secrecy and authentication hardening after the prototype. | Keep non-gating until production deployment is requested; replace development credentials with a reviewed secure authentication chain. |
 
 ### Future (1)
 

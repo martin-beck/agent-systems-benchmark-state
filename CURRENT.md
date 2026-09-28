@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P2 | [AR-1501](tasks/AR-1501-production-credential-hardening.md): Production credential hardening follow-up | Track production credential secrecy and authentication hardening after the prototype. | Keep non-gating until production deployment is requested; replace development credentials with a reviewed secure authentication chain. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -136,7 +142,6 @@ Never edit this file directly.
 | P2 | [AR-0602](tasks/AR-0602-csb-monitoring-contention.md): Validate CSB monitoring and contention diagnostics | Validate and integrate optional CSB resource monitoring and kernel-contention evidence without double counting or overstating support. | Audit CSB monitoring using native x86_64 oracles and required pinned QEMU AArch64 portable mapping/lifecycle checks; keep native ARM64 counters and performance as optional future evidence. | - |
 | P2 | [AR-0903](tasks/AR-0903-release-qualification.md): Package and qualify the first release | Deliver reproducible native release artifacts with complete support and evidence statements. | Audit milestone completeness and run isolated release qualification. | - |
 | P2 | [AR-1016](tasks/AR-1016-measurement-integration-audit.md): Integrate and audit measurement selection and CSB evidence | Audit selectable and CSB-backed measurements across live and replay runs. | Add end-to-end live/replay comparison, release documentation, and independent audit after AR-1014 and AR-1015. | - |
-| P2 | [AR-1501](tasks/AR-1501-production-credential-hardening.md): Production credential hardening follow-up | Track production credential secrecy and authentication hardening after the prototype. | Keep non-gating until production deployment is requested; replace development credentials with a reviewed secure authentication chain. | - |
 
 ## Future
 
