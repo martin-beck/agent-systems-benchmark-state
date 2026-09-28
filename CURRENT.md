@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1499](tasks/AR-1499-development-credential-enrollment.md): Development credential enrollment contract | Repair merged development credential selection binding | PR #378 exact head 0a2f6e9 has all required exact-head checks green and protected base ancestry verified. Invoke protected merge through handoffctl run, then verify the protected merge SHA, post-merge applicable smoke, and release AR durably. | ar1499-selection-binding-repair-luna56 |
+| P0 | [AR-1499](tasks/AR-1499-development-credential-enrollment.md): Development credential enrollment contract | Repair merged development credential selection binding | PR #378 merged at protected main ee8ea15. Product tree matches origin/main and post-merge focused asb-config (7 tests) plus workspace check passed. Wait for all post-merge workflows on exact merge SHA ee8ea15 (currently 6 in progress) to terminate green, then release AR durably. | ar1499-selection-binding-repair-luna56 |
 
 ## Blocked
 

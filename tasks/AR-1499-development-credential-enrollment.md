@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1499-development-credential-enrollment",
-  "checkpoint_commit": "0a2f6e9c74f98a0a8d59b6f834ef96ee63d5cfee",
+  "checkpoint_commit": "ee8ea15c7c3bc3b3609dbfbc3b0637b8761973e5",
   "claim_expires": "2026-09-28T20:46:38+00:00",
   "depends_on": [
     "AR-1442",
     "AR-1496"
   ],
   "id": "AR-1499",
-  "next_action": "PR #378 exact head 0a2f6e9 has all required exact-head checks green and protected base ancestry verified. Invoke protected merge through handoffctl run, then verify the protected merge SHA, post-merge applicable smoke, and release AR durably.",
+  "next_action": "PR #378 merged at protected main ee8ea15. Product tree matches origin/main and post-merge focused asb-config (7 tests) plus workspace check passed. Wait for all post-merge workflows on exact merge SHA ee8ea15 (currently 6 in progress) to terminate green, then release AR durably.",
   "observed_branch": "feature/ar-1499-development-credential-enrollment",
   "observed_dirty": 0,
   "observed_head": "0a2f6e9c74f98a0a8d59b6f834ef96ee63d5cfee",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair merged development credential selection binding",
-  "task_revision": 83,
+  "task_revision": 84,
   "title": "Development credential enrollment contract",
-  "updated_at": "2026-09-28T18:49:39+00:00",
+  "updated_at": "2026-09-28T18:50:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1499"
 }
 ---
@@ -252,3 +252,8 @@ labelled and isolated.
 
 - 2026-09-28T18:49:39+00:00: Recorded command exit 0; command argv SHA-256
   a37d35e290b63ddfe8627f9bdb0474ef6d3f2654ade91f05cd9a55c3a713fceb.
+
+- 2026-09-28T18:50:11+00:00: Protected merge verified: PR #378 head 0a2f6e9 merged at ee8ea15 with
+  base 65bcdf3. Exact main tree matches reviewed head; post-merge focused credential tests 7/7 and
+  workspace cargo check passed. Post-merge hosted workflows are still running; no release recorded
+  yet.
