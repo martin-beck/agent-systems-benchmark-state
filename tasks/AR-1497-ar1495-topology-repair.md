@@ -8,18 +8,18 @@
   ],
   "id": "AR-1497",
   "next_action": "Promote and claim AR-1497, inspect protected-main topology, and construct the smallest signed+DCO repair preserving the AR-1495 tree.",
-  "observed_branch": "",
+  "observed_branch": "repair/ar-1495-topology",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "03d2d0700696bad9549455510f37b24a1588b10e",
   "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1497-ar1495-topology-repair.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair AR-1495 protected-main synchronization topology without changing product semantics.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "AR-1495 protected-main topology repair",
-  "updated_at": "2026-09-28T13:37:52+00:00",
+  "updated_at": "2026-09-28T13:38:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1497-ar1495-topology-repair"
 }
 ---
