@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add an explicit development-only unverified bundle profile without weakening production or customer-release verification.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Development-only unverified bundle profile",
-  "updated_at": "2026-09-28T13:10:52+00:00",
+  "updated_at": "2026-09-28T13:11:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1495-development-unverified-bundle-profile"
 }
 ---
@@ -136,3 +136,6 @@ above.
   strict. Added schema boundary text and signed/DCO follow-up commit a714861. Full workspace cargo
   test, clippy, rustdoc, bundle tests 5/5, policy and DCO gates passed; one repository-policy
   polling LOCK_TIMEOUT was retried successfully.
+
+- 2026-09-28T13:11:05+00:00: Recorded command exit 0; command argv SHA-256
+  a40f1df5011d9a6563ea0b924e5b8cb13a53746710b2148292e3ea9446d67480.
