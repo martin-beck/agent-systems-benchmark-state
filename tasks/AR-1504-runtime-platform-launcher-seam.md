@@ -20,11 +20,11 @@
   "plan": "../plans/AR-1504-runtime-platform-launcher-seam.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Provide the real runtime/platform-owned launcher and authenticated session discovery for AR-1503.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Runtime/platform launcher seam",
-  "updated_at": "2026-09-28T22:41:00+00:00",
+  "updated_at": "2026-09-28T22:42:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1504-runtime-platform-launcher-seam"
 }
 ---
@@ -54,3 +54,7 @@ Acceptance requires:
 
 Non-goals: asb-tui changes, live provider reachability, generated authority,
 caller-built runtime inputs, or weakening native/credential/egress gates.
+
+- 2026-09-28T22:42:58+00:00: Dependencies AR-1473, AR-1474, AR-1480, AR-1484, AR-1485, and AR-1502
+  are done; promote the successor to implement the missing production runtime/platform launcher seam
+  identified by AR-1503.
