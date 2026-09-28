@@ -10,17 +10,17 @@
   "id": "AR-1501",
   "next_action": "Repair the two reported clippy lints, rerun package clippy and full applicable gates, then commit the bounded production credential contract.",
   "observed_branch": "feature/ar-1501-production-credential-hardening",
-  "observed_dirty": 3,
-  "observed_head": "556385bfdf8b044e9d6e7530972139b3beb31d91",
+  "observed_dirty": 0,
+  "observed_head": "c16eed3ce8683d764ff4d6756df36fcc30d3db7c",
   "owner": "ar1501-credential-contract-repair-luna56",
   "plan": "../plans/AR-1501-production-credential-hardening.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Track production credential secrecy and authentication hardening after the prototype.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Production credential hardening follow-up",
-  "updated_at": "2026-09-28T20:04:02+00:00",
+  "updated_at": "2026-09-28T20:04:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1501"
 }
 ---
