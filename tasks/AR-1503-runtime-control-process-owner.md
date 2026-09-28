@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Own the authenticated control session and hand off only an opaque live dispatch source.",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Runtime/control process owner",
-  "updated_at": "2026-09-28T22:30:38+00:00",
+  "updated_at": "2026-09-28T22:30:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1503-runtime-control-process-owner"
 }
 ---
@@ -190,3 +190,6 @@ asb-tui, synthesize authority, or accept caller-built runtime inputs.
   CONTROL_V1, while RuntimeReceipt requires CONTROL_AUTH_HELPER_V1 (v1.10), yielding
   EndpointError::UnexpectedResponse. Test now negotiates CONTROL_AUTH_HELPER_V1 explicitly;
   production adapter debug instrumentation removed.
+
+- 2026-09-28T22:30:44+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
