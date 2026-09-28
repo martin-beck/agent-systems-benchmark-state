@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1495-development-unverified-bundle-profile",
-  "checkpoint_commit": "a714861edd489ad678f635b6aa3ad5834edb40f3",
+  "checkpoint_commit": "1f5b0f9e3c3782e1f202aa700f6515eb8e51417f",
   "claim_expires": "2026-09-28T15:06:21+00:00",
   "depends_on": [
     "AR-1314",
@@ -10,7 +10,7 @@
     "AR-1493"
   ],
   "id": "AR-1495",
-  "next_action": "Monitor PR #373 exact signed head a714861 and merge only after every required check and independent review is green.",
+  "next_action": "Monitor PR #373 synchronized exact head 1f5b0f9 and merge only after all required checks and independent review are green.",
   "observed_branch": "feature/ar-1495-development-unverified-bundle-profile",
   "observed_dirty": 0,
   "observed_head": "1f5b0f9e3c3782e1f202aa700f6515eb8e51417f",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add an explicit development-only unverified bundle profile without weakening production or customer-release verification.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Development-only unverified bundle profile",
-  "updated_at": "2026-09-28T13:13:27+00:00",
+  "updated_at": "2026-09-28T13:13:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1495-development-unverified-bundle-profile"
 }
 ---
@@ -163,3 +163,10 @@ above.
 
 - 2026-09-28T13:13:27+00:00: Recorded command exit 0; command argv SHA-256
   720d731c5d457ef78d7c0a398f1e43164faf0a897457cc757ee951160731c7ed.
+
+- 2026-09-28T13:13:46+00:00: CI Repository Quality failure 36426846077 was classified as stale-base
+  policy: PR head a714861 was based on e1be259 while protected base had advanced; no product
+  failure. Fetched origin/main e1be259 and created signed non-squash synchronization merge
+  1f5b0f9e3c3782e1f202aa700f6515eb8e51417f, preserving the reviewed profile tree, then
+  force-with-lease updated PR #373. Prior failure and one observed handoff lock timeout are
+  preserved.
