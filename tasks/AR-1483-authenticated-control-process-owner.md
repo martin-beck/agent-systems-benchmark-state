@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1483-authenticated-control-process-owner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-28T23:58:56+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1472",
     "AR-1473",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1483-authenticated-control-process-owner",
   "observed_dirty": 0,
   "observed_head": "3c6af6b351e0c32ee8f5e48716654d854dcbbac2",
-  "owner": "ar1483-owner-integration-luna56",
+  "owner": "",
   "plan": "../plans/AR-1483-authenticated-control-process-owner.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Own authenticated control session and lifecycle while minting opaque CLI dispatch sources.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Authenticated control process owner",
-  "updated_at": "2026-09-28T22:02:13+00:00",
+  "updated_at": "2026-09-28T22:02:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1483-authenticated-control-process-owner"
 }
 ---
@@ -95,3 +95,19 @@ caller authority or modify asb-tui.
 
 - 2026-09-28T22:02:13+00:00: Recorded command exit 0; command argv SHA-256
   3a825ca37c26de9b62f4ea5c9b33e7766ea5c9d4fd34840b514068470c609d80.
+
+- 2026-09-28T22:02:44+00:00: Fresh protected-main re-audit at
+  3c6af6b351e0c32ee8f5e48716654d854dcbbac2 and refreshed isolated worktree exact same SHA, clean.
+  AR-1502 now provides sealed RuntimeBootstrapAuthoritySource/RuntimeCertificateAuthoritySource and
+  source-only chain enrollment, but no process owner: request_control_receipt still requires
+  caller-supplied ControlClient and RuntimeCertificateChainStore; RuntimeOwnedEnrollmentSource,
+  materialize_handle_from_resolver, and bootstrap constructors remain pub(crate); no runtime-owned
+  control socket/session discovery or private resolver/launch-input owner exists. asb-cli
+  entry/run/sweep still call dispatch(..., None, None), while only injected-source helpers can reach
+  AR-1480. Existing LocalMockRuntimeControlOwner is provider-free qualification only and cannot
+  satisfy authenticated chain/session/receipt. Focused cargo test --locked -p asb-runtime
+  control_owner --no-fail-fast passed 4/4. No product changes. Create a narrowly scoped successor
+  for the missing runtime/platform-owned control-session launcher and authenticated owner handoff;
+  it must own socket/session, source-issued chain, private resolver, launch inputs,
+  cancellation/teardown, and inject only opaque AR-1480 source, with no
+  CLI/config/endpoint/credential/policy/root/tool authority.
