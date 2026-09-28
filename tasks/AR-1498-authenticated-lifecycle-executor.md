@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated artifact executor and activation authority behind the ASB agent lifecycle router.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Authenticated lifecycle artifact executor",
-  "updated_at": "2026-09-28T16:50:39+00:00",
+  "updated_at": "2026-09-28T16:50:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1498"
 }
 ---
@@ -73,3 +73,6 @@ protocol/schema fixtures consumed by AR-1199 and downstream asb-tui.
 - 2026-09-28T16:50:39+00:00: Focused cargo check failed closed: Catalog initializer omitted newly
   required agent_lifecycles field at crates/asb-cli/src/control.rs:1179 (E0063). Next action:
   initialize lifecycle journal/generation/idempotency fields, rerun cargo check through handoffctl.
+
+- 2026-09-28T16:50:51+00:00: Recorded command exit 0; command argv SHA-256
+  73d005d4c4983870f0c5405c6c97dffbf521d57825b14d75dae888988fbdcd03.
