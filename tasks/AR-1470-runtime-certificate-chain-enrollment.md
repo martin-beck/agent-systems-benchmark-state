@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1470-runtime-certificate-chain-enrollment",
   "checkpoint_commit": "b9d7b6ee251b3a119496d3c16f65ffc971704f3a",
-  "claim_expires": "2026-09-28T22:57:35+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1357",
     "AR-1359",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1470-runtime-certificate-chain-enrollment",
   "observed_dirty": 0,
   "observed_head": "7167e3da7ab1fb35d4fc9c0e61ee754c89e670d6",
-  "owner": "ar1470-enrollment-source-repair-luna56",
+  "owner": "",
   "plan": "../plans/AR-1470-runtime-certificate-chain-enrollment.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Materialize runtime-owned certificate-chain enrollment authority for live dispatch.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Runtime certificate-chain enrollment materialization",
-  "updated_at": "2026-09-28T20:59:24+00:00",
+  "updated_at": "2026-09-28T20:59:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1470-runtime-certificate-chain-enrollment"
 }
 ---
@@ -160,3 +160,14 @@ actually consumed by the downstream adapters.
 
 - 2026-09-28T20:59:24+00:00: Recorded command exit 0; command argv SHA-256
   7d655c962bc832b241bc680277fa45afd83eb26f954d7453e3dbde7d193e6131.
+
+- 2026-09-28T20:59:55+00:00: Replacement audit complete on protected main 7167e3d. Existing
+  RuntimeCertificateChainStore, authenticated receipt bridge, RuntimeOwnedEnrollmentSource, and
+  RunnerBackend RuntimeAuthorityRecord validation are present; focused runtime source tests pass
+  2/2, control authority tests pass 2/2, and certificate enrollment tests pass 2/2. However no
+  legitimate runtime-owned private bootstrap authority/issuer exists or is consumed by normal
+  control dispatch: AuthEnroll/AuthHelperInvoke persist only endpoint and credential digests,
+  runtime_authorities has no production materializer, and install_runtime_authority is private
+  recovery/test wiring. Synthesizing a chain or deriving authority from caller/config would violate
+  AR boundaries. Preserve exact successor requirement: coordinator must create/promote smallest
+  successor supplying runtime-owned bootstrap authority. No product mutation made.
