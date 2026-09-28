@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run fresh package first-customer runtime acceptance and produce an explicit readiness report.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Fresh package runtime acceptance",
-  "updated_at": "2026-09-28T14:39:24+00:00",
+  "updated_at": "2026-09-28T14:39:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1490-fresh-package-runtime-acceptance"
 }
 ---
@@ -73,3 +73,6 @@ when exact package or clean-environment inputs are absent.
   9e808f764c153d2f3035fc39bfa8cca7bbe5bc485685eb9f14c5241806c63cb2.
 
 - 2026-09-28T14:39:24+00:00: Heartbeat by ar1490-dev-acceptance-luna56.
+
+- 2026-09-28T14:39:31+00:00: Recorded command exit 0; command argv SHA-256
+  91c481d4f1a058d3265e9102b0531d1eefe09cb45e5c1807ecda5e8c8b6b67d5.
