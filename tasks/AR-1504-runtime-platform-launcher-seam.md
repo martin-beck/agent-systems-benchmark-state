@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1504",
-  "next_action": "Create declared AR-1504 worktree from protected origin/main, then inspect exact dependency heads and implement launcher seam.",
+  "next_action": "Await AR-1503 protected merge; then rebase this isolated branch and implement production launcher/session-discovery seam against the merged owner. In parallel inspect existing runtime/CLI boundaries and draft tests.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the real runtime/platform-owned launcher and authenticated session discovery for AR-1503.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Runtime/platform launcher seam",
-  "updated_at": "2026-09-28T22:44:50+00:00",
+  "updated_at": "2026-09-28T22:45:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1504-runtime-platform-launcher-seam"
 }
 ---
@@ -68,3 +68,9 @@ caller-built runtime inputs, or weakening native/credential/egress gates.
   'agent-systems-benchmark-ar-1504-runtime-platform-launcher-seam'; no product mutation occurred.
   Next: create declared worktree using documented setup exception, then run all worktree operations
   through handoffctl.
+
+- 2026-09-28T22:45:34+00:00: Protected origin/main is 3c6af6b (PR #381 merge). Dependencies
+  AR-1473/1474/1480/1484/1485/1502 are durable done. AR-1503 is not merged and its process_owner.rs
+  exists only in its dirty worktree; therefore AR-1504 cannot truthfully compile against
+  RuntimeControlProcessOwner yet. Declared AR-1504 worktree created at protected origin/main; no
+  product files changed.

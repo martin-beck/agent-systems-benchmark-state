@@ -186,7 +186,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1504](../tasks/AR-1504-runtime-platform-launcher-seam.md): Runtime/platform launcher seam | ar1504-launcher-luna56 | Provide the real runtime/platform-owned launcher and authenticated session discovery for AR-1503. | Create declared AR-1504 worktree from protected origin/main, then inspect exact dependency heads and implement launcher seam. |
+| P0 | [AR-1504](../tasks/AR-1504-runtime-platform-launcher-seam.md): Runtime/platform launcher seam | ar1504-launcher-luna56 | Provide the real runtime/platform-owned launcher and authenticated session discovery for AR-1503. | Await AR-1503 protected merge; then rebase this isolated branch and implement production launcher/session-discovery seam against the merged owner. In parallel inspect existing runtime/CLI boundaries and draft tests. |
 
 ### Blocked (75)
 
