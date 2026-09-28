@@ -8,7 +8,7 @@
     "AR-1500"
   ],
   "id": "AR-1501",
-  "next_action": "Publish exact clean signed commit c16eed3 through handoffctl, then obtain independent review and exact-head CI.",
+  "next_action": "Obtain independent review of PR #380, verify exact-head required checks and DCO/signature, then merge only through protected signed merge workflow if all gates are green.",
   "observed_branch": "feature/ar-1501-production-credential-hardening",
   "observed_dirty": 0,
   "observed_head": "c16eed3ce8683d764ff4d6756df36fcc30d3db7c",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Track production credential secrecy and authentication hardening after the prototype.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Production credential hardening follow-up",
-  "updated_at": "2026-09-28T20:13:54+00:00",
+  "updated_at": "2026-09-28T20:14:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1501"
 }
 ---
@@ -177,3 +177,8 @@ This AR is intentionally not required for the development build cycle.
 
 - 2026-09-28T20:13:54+00:00: Recorded command exit 0; command argv SHA-256
   37cbc0ebd307b7223121e8244363e2e01ad325c93d22791a668d70bd12a6acce.
+
+- 2026-09-28T20:14:27+00:00: Published exact clean signed/DCO commit c16eed3 via handoffctl push;
+  opened PR #380. PR URL: https://github.com/martin-beck/agent-systems-benchmark/pull/380. Full
+  package gates and serial full workspace test pass; awaiting independent review and exact-head
+  hosted checks.

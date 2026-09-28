@@ -180,7 +180,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P2 | [AR-1501](../tasks/AR-1501-production-credential-hardening.md): Production credential hardening follow-up | ar1501-credential-contract-repair-luna56 | Track production credential secrecy and authentication hardening after the prototype. | Publish exact clean signed commit c16eed3 through handoffctl, then obtain independent review and exact-head CI. |
+| P2 | [AR-1501](../tasks/AR-1501-production-credential-hardening.md): Production credential hardening follow-up | ar1501-credential-contract-repair-luna56 | Track production credential secrecy and authentication hardening after the prototype. | Obtain independent review of PR #380, verify exact-head required checks and DCO/signature, then merge only through protected signed merge workflow if all gates are green. |
 
 ### Blocked (74)
 
