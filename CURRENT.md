@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1498](tasks/AR-1498-authenticated-lifecycle-executor.md): Authenticated lifecycle artifact executor | Lifecycle branch coverage expanded; serialized workspace llvm-cov 90.69% lines | Run remaining applicable fmt/check/clippy/workspace/docs/build gates, independently review diff, then amend signed DCO commit and force-with-lease push exact new PR head. | ar1498-repair-luna56 |
+| P0 | [AR-1498](tasks/AR-1498-authenticated-lifecycle-executor.md): Authenticated lifecycle artifact executor | Authenticated lifecycle executor with positive and negative coverage fixtures published | Wait for PR #376 exact-head CI at 55ff13fb6cb220034ccd1fb4febf0e86e848db94; record check results and hand off merge/post-merge release to coordinator. | ar1498-repair-luna56 |
 
 ## Blocked
 
