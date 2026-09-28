@@ -10,7 +10,7 @@
     "AR-1489"
   ],
   "id": "AR-1490",
-  "next_action": "Correct fixture parser.py emission from a literal double backslash to the required single escaped carriage-return sequence, verify installed output bytes and tests.txt, then run fresh run/sweep.",
+  "next_action": "Change the disposable plan run_id and result/work roots to a new exact identity after the failed ar1490-run2 attempt, validate the plan, then run and sweep.",
   "observed_branch": "qualification/ar-1490-fresh-package-runtime-acceptance",
   "observed_dirty": 3,
   "observed_head": "45df6590cbf9ab75f07dcc0b753335949e28d937",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run fresh package first-customer runtime acceptance and produce an explicit readiness report.",
-  "task_revision": 62,
+  "task_revision": 63,
   "title": "Fresh package runtime acceptance",
-  "updated_at": "2026-09-28T15:02:54+00:00",
+  "updated_at": "2026-09-28T15:03:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1490-fresh-package-runtime-acceptance"
 }
 ---
@@ -222,3 +222,9 @@ when exact package or clean-environment inputs are absent.
 
 - 2026-09-28T15:02:54+00:00: Recorded command exit 4; command argv SHA-256
   790db972f135a9c7143b9bac48bbcdf0165c92c79a231cef0310afad59b6deb8.
+
+- 2026-09-28T15:03:22+00:00: Recorded retry failure: the corrected fixture was installed and plan
+  ar1490-run2 validated, but execution was intentionally refused with operation error run identity
+  already exists or cannot be stored because the prior failed attempt had already created that run
+  journal. No duplicate execution occurred. Next action is to use a fresh run identity and disjoint
+  result/work roots.

@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1490](tasks/AR-1490-fresh-package-runtime-acceptance.md): Fresh package runtime acceptance | Run fresh package first-customer runtime acceptance and produce an explicit readiness report. | Correct fixture parser.py emission from a literal double backslash to the required single escaped carriage-return sequence, verify installed output bytes and tests.txt, then run fresh run/sweep. | ar1490-dev-acceptance-luna56 |
+| P0 | [AR-1490](tasks/AR-1490-fresh-package-runtime-acceptance.md): Fresh package runtime acceptance | Run fresh package first-customer runtime acceptance and produce an explicit readiness report. | Change the disposable plan run_id and result/work roots to a new exact identity after the failed ar1490-run2 attempt, validate the plan, then run and sweep. | ar1490-dev-acceptance-luna56 |
 | P0 | [AR-1498](tasks/AR-1498-authenticated-lifecycle-executor.md): Authenticated lifecycle artifact executor | Provide the authenticated artifact executor and activation authority behind the ASB agent lifecycle router. | Promote after coordinator review; define and implement the authenticated artifact executor and activation authority required by ASB lifecycle calls, with fail-closed restart-safe tests. | ar1498-lifecycle-executor |
 
 ## Blocked
