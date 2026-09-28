@@ -1337,7 +1337,6 @@ flowchart LR
     AR_1151 --> AR_1496
     AR_1160 --> AR_1034
     AR_1160 --> AR_1170
-    AR_1160 --> AR_1199
     AR_1160 --> AR_1227
     AR_1170 --> AR_0807
     AR_1170 --> AR_0809
@@ -1949,6 +1948,7 @@ flowchart LR
     AR_1492 --> AR_1493
     AR_1493 --> AR_1495
     AR_1493 --> AR_1497
+    AR_1496 --> AR_1199
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -2198,7 +2198,7 @@ flowchart LR
 | [AR-1140](../tasks/AR-1140.md) | [AR-1130](../tasks/AR-1130.md) | [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0823](../tasks/AR-0823-installation-qualification.md), [AR-1180](../tasks/AR-1180.md) |
 | [AR-1150](../tasks/AR-1150.md) | [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-1130](../tasks/AR-1130.md) | [AR-1151](../tasks/AR-1151.md) |
 | [AR-1151](../tasks/AR-1151.md) | [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-1150](../tasks/AR-1150.md), [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md), [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md) | [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-1160](../tasks/AR-1160.md), [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md), [AR-1310](../tasks/AR-1310-provider-capture-campaign.md), [AR-1496](../tasks/AR-1496-runtime-owned-provider-capture-control.md) |
-| [AR-1160](../tasks/AR-1160.md) | [AR-1060](../tasks/AR-1060-authenticated-control-endpoint-handoff.md), [AR-1151](../tasks/AR-1151.md) | [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md), [AR-1170](../tasks/AR-1170.md), [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md), [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md) |
+| [AR-1160](../tasks/AR-1160.md) | [AR-1060](../tasks/AR-1060-authenticated-control-endpoint-handoff.md), [AR-1151](../tasks/AR-1151.md) | [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md), [AR-1170](../tasks/AR-1170.md), [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md) |
 | [AR-1170](../tasks/AR-1170.md) | [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md), [AR-1160](../tasks/AR-1160.md) | [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0823](../tasks/AR-0823-installation-qualification.md), [AR-0873](../tasks/AR-0873-ci-workflow-captures.md), [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md), [AR-1031](../tasks/AR-1031-asb-tui-landing-screen.md), [AR-1032](../tasks/AR-1032-asb-tui-contextual-help.md), [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md), [AR-1180](../tasks/AR-1180.md) |
 | [AR-1180](../tasks/AR-1180.md) | [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md), [AR-1140](../tasks/AR-1140.md), [AR-1170](../tasks/AR-1170.md) | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md) |
 | [AR-1181](../tasks/AR-1181.md) | None | None |
@@ -2207,7 +2207,7 @@ flowchart LR
 | [AR-1196](../tasks/AR-1196-protected-main-dco-repair.md) | None | None |
 | [AR-1197](../tasks/AR-1197-control-scratch-isolation-current-main.md) | None | None |
 | [AR-1198](../tasks/AR-1198.md) | [AR-1190](../tasks/AR-1190.md) | None |
-| [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md) | [AR-1018](../tasks/AR-1018-asb-tui-compatibility-detection.md), [AR-1019](../tasks/AR-1019-asb-tui-bundle-verification.md), [AR-1020](../tasks/AR-1020-asb-tui-install-selftest.md), [AR-1160](../tasks/AR-1160.md), [AR-1190](../tasks/AR-1190.md), [AR-1191](../tasks/AR-1191.md) | None |
+| [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md) | [AR-1018](../tasks/AR-1018-asb-tui-compatibility-detection.md), [AR-1019](../tasks/AR-1019-asb-tui-bundle-verification.md), [AR-1020](../tasks/AR-1020-asb-tui-install-selftest.md), [AR-1190](../tasks/AR-1190.md), [AR-1191](../tasks/AR-1191.md), [AR-1496](../tasks/AR-1496-runtime-owned-provider-capture-control.md) | None |
 | [AR-1200](../tasks/AR-1200-metrics-timeout-fixture-stability.md) | None | [AR-1226](../tasks/AR-1226-protected-merge-tree-remediation.md), [AR-1475](../tasks/AR-1475-asb-metrics-evidence-fixture-repair.md), [AR-1476](../tasks/AR-1476-workspace-coverage-floor-repair.md), [AR-1477](../tasks/AR-1477-authority-resolver-coverage-tests.md) |
 | [AR-1210](../tasks/AR-1210-tutorial-contract-validator.md) | None | [AR-1211](../tasks/AR-1211-initial-setup-first-agent.md), [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md) |
 | [AR-1211](../tasks/AR-1211-initial-setup-first-agent.md) | [AR-1210](../tasks/AR-1210-tutorial-contract-validator.md) | [AR-1212](../tasks/AR-1212-benchmark-readiness.md), [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md) |

@@ -10,7 +10,7 @@
     "AR-1489"
   ],
   "id": "AR-1490",
-  "next_action": "Promote and claim, then audit exact package and clean-environment inputs before executing the local/mock/replay readiness run.",
+  "next_action": "Recreate the disposable fixture agent inside the declared AR-1490 worktree, then generate a valid plan and run installed doctor/setup/run/sweep/replay/cancellation/restart/cleanup using unsigned-development verification.",
   "observed_branch": "qualification/ar-1490-fresh-package-runtime-acceptance",
   "observed_dirty": 0,
   "observed_head": "45df6590cbf9ab75f07dcc0b753335949e28d937",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run fresh package first-customer runtime acceptance and produce an explicit readiness report.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Fresh package runtime acceptance",
-  "updated_at": "2026-09-28T14:49:58+00:00",
+  "updated_at": "2026-09-28T14:50:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1490-fresh-package-runtime-acceptance"
 }
 ---
@@ -120,3 +120,9 @@ when exact package or clean-environment inputs are absent.
   8698233ac2bb504fe4fae3bc1799d976984bb5a0bf65d268d3f607a9062df03a.
 
 - 2026-09-28T14:49:58+00:00: Heartbeat by ar1490-dev-acceptance-luna56.
+
+- 2026-09-28T14:50:12+00:00: Recorded failure: the first fixture-agent creation attempt exited 1
+  because apply_patch placed ar1490-fixture-agent.sh in the unrelated agent-workflow-quality
+  checkout, so the AR worktree had no fixture file and no product mutation occurred. The stray file
+  was immediately deleted. Next action is to create the fixture only in this declared ASB AR
+  worktree and continue acceptance.
