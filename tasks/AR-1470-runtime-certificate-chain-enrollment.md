@@ -9,7 +9,7 @@
     "AR-1362"
   ],
   "id": "AR-1470",
-  "next_action": "Coordinator must create/promote a narrow successor for authenticated runtime certificate-chain enrollment source: bind control-owned enrollment to RuntimeCertificateChainStore without caller-supplied authority, then wire normal live dispatch. Do not fabricate authority.",
+  "next_action": "Protected-main setup is not current: AR worktree is clean but 86 commits behind origin/main 7167e3d; refresh via handoffctl run, then implement the narrow runtime-owned authenticated enrollment source. Existing RuntimeAuthorityRecord holds only public digests/opaque chain metadata; no private bootstrap authority or caller-safe issuer is available. Do not fabricate authority.",
   "observed_branch": "feature/ar-1470-runtime-certificate-chain-enrollment",
   "observed_dirty": 0,
   "observed_head": "b9d7b6ee251b3a119496d3c16f65ffc971704f3a",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize runtime-owned certificate-chain enrollment authority for live dispatch.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Runtime certificate-chain enrollment materialization",
-  "updated_at": "2026-09-28T20:49:08+00:00",
+  "updated_at": "2026-09-28T20:51:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1470-runtime-certificate-chain-enrollment"
 }
 ---
@@ -109,3 +109,13 @@ actually consumed by the downstream adapters.
   scoped runtime-owned authenticated enrollment-source gap for ASB production dispatch.
 
 - 2026-09-28T20:49:08+00:00: Claimed by ar1470-runtime-enrollment-source-luna56.
+
+- 2026-09-28T20:51:34+00:00: Durable audit: declared AR-1470 worktree is clean at b9d7b6e, but stale
+  by 86 commits relative to protected origin/main 7167e3d, so setup is not complete. Existing
+  control/runtime seam has RuntimeCertificateChainStore, AuthenticatedChainEnrollmentV1,
+  RuntimeEnrollmentReceiptV1, and LiveProviderRuntimeBridge; control can issue a receipt only from
+  persisted RuntimeAuthorityRecord. That record contains trust-anchor digest and public chain
+  metadata, not private signing authority. No private bootstrap authority is present in the current
+  source/configuration; caller-supplied authority remains prohibited. Next action is safe
+  fast-forward refresh, then narrow source implementation or precise blocker if no runtime-owned
+  issuer exists.

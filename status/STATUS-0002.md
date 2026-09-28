@@ -180,7 +180,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1470](../tasks/AR-1470-runtime-certificate-chain-enrollment.md): Runtime certificate-chain enrollment materialization | ar1470-runtime-enrollment-source-luna56 | Materialize runtime-owned certificate-chain enrollment authority for live dispatch. | Coordinator must create/promote a narrow successor for authenticated runtime certificate-chain enrollment source: bind control-owned enrollment to RuntimeCertificateChainStore without caller-supplied authority, then wire normal live dispatch. Do not fabricate authority. |
+| P0 | [AR-1470](../tasks/AR-1470-runtime-certificate-chain-enrollment.md): Runtime certificate-chain enrollment materialization | ar1470-runtime-enrollment-source-luna56 | Materialize runtime-owned certificate-chain enrollment authority for live dispatch. | Protected-main setup is not current: AR worktree is clean but 86 commits behind origin/main 7167e3d; refresh via handoffctl run, then implement the narrow runtime-owned authenticated enrollment source. Existing RuntimeAuthorityRecord holds only public digests/opaque chain metadata; no private bootstrap authority or caller-safe issuer is available. Do not fabricate authority. |
 
 ### Blocked (73)
 
