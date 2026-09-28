@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add an explicit development-only unverified bundle profile without weakening production or customer-release verification.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Development-only unverified bundle profile",
-  "updated_at": "2026-09-28T13:13:46+00:00",
+  "updated_at": "2026-09-28T13:13:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1495-development-unverified-bundle-profile"
 }
 ---
@@ -170,3 +170,6 @@ above.
   1f5b0f9e3c3782e1f202aa700f6515eb8e51417f, preserving the reviewed profile tree, then
   force-with-lease updated PR #373. Prior failure and one observed handoff lock timeout are
   preserved.
+
+- 2026-09-28T13:13:57+00:00: Recorded command exit 0; command argv SHA-256
+  cb50046674eb2c1d3ea08f00711676986af43541c56734ab4055a7fa2ce063c5.
