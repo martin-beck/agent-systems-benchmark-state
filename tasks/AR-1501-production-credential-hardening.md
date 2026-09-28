@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1501-production-credential-hardening",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "c16eed3ce8683d764ff4d6756df36fcc30d3db7c",
   "claim_expires": "2026-09-28T22:02:02+00:00",
   "depends_on": [
     "AR-1499",
     "AR-1500"
   ],
   "id": "AR-1501",
-  "next_action": "Repair the two reported clippy lints, rerun package clippy and full applicable gates, then commit the bounded production credential contract.",
+  "next_action": "Run full applicable workspace formatting, clippy, tests, docs and build gates; independently review exact commit before publication.",
   "observed_branch": "feature/ar-1501-production-credential-hardening",
   "observed_dirty": 0,
   "observed_head": "c16eed3ce8683d764ff4d6756df36fcc30d3db7c",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Track production credential secrecy and authentication hardening after the prototype.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Production credential hardening follow-up",
-  "updated_at": "2026-09-28T20:04:16+00:00",
+  "updated_at": "2026-09-28T20:04:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1501"
 }
 ---
@@ -99,3 +99,9 @@ This AR is intentionally not required for the development build cycle.
 
 - 2026-09-28T20:04:02+00:00: Recorded command exit 0; command argv SHA-256
   b70783cdcb3ab0d6bf7d33e8944705339c1758e6ffe8392614c3d4d4f29f50bc.
+
+- 2026-09-28T20:04:37+00:00: Committed signed/DCO bounded production credential contract at c16eed3.
+  Includes explicit provider/auth metadata binding, redacted enrollment projection, fail-closed
+  secure-store boundary, deterministic digest-only mock store, generation-fenced rotation/revocation
+  rollback, bounded remote verification and credential-free audit log. Focused tests 6/6 and package
+  clippy pass.
