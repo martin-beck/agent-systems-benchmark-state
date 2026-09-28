@@ -8,7 +8,7 @@
     "AR-1500"
   ],
   "id": "AR-1501",
-  "next_action": "Push corrective exact head, rerun required local/full applicable gates, then refresh PR #380 checks and independent review before merge.",
+  "next_action": "Refresh PR #380 exact-head checks and review; merge only after all required checks are terminal green and review confirms binding repair.",
   "observed_branch": "feature/ar-1501-production-credential-hardening",
   "observed_dirty": 0,
   "observed_head": "eb2239ab2f4643601eff22a574386076ad6e1bf6",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Track production credential secrecy and authentication hardening after the prototype.",
-  "task_revision": 70,
+  "task_revision": 71,
   "title": "Production credential hardening follow-up",
-  "updated_at": "2026-09-28T20:19:34+00:00",
+  "updated_at": "2026-09-28T20:19:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1501"
 }
 ---
@@ -225,3 +225,8 @@ This AR is intentionally not required for the development build cycle.
 
 - 2026-09-28T20:19:34+00:00: Recorded command exit 0; command argv SHA-256
   1024fc1e6cefa31b078f0b5d2ed85c7ea4586897b388bf1e308f62db58574461.
+
+- 2026-09-28T20:19:55+00:00: Corrective head eb2239a pushed to PR #380. Post-repair local gates
+  pass: focused production_auth 7/7, package clippy, workspace formatting, workspace clippy, and
+  serial full workspace cargo test. Ready for exact-head hosted checks and renewed independent
+  review.
