@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1470](tasks/AR-1470-runtime-certificate-chain-enrollment.md): Runtime certificate-chain enrollment materialization | Materialize runtime-owned certificate-chain enrollment authority for live dispatch. | Coordinator must create/promote a narrow successor for authenticated runtime certificate-chain enrollment source: bind control-owned enrollment to RuntimeCertificateChainStore without caller-supplied authority, then wire normal live dispatch. Do not fabricate authority. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -58,7 +64,6 @@ Never edit this file directly.
 | P0 | [AR-1392](tasks/AR-1392-control-authority-materializer.md): Control-owned private authority materializer | Resolve private live authority from authenticated control enrollment without caller injection. | Resolve unrelated Rust CI failure or obtain coordinator-approved retry; do not merge PR #339 until every exact-head check is green. | - |
 | P0 | [AR-1464](tasks/AR-1464-formal-capacity-input-provisioning.md): Formal capacity and signed-input provisioning repair | Exact signed source, reviewed image, 64 GiB overlay, JDK/TLC/model and canonical lock are provisioned. Reclaimed the three stale AR-specific swap files and activated two fresh AR-specific swap files; repeated signed preflight now passes every gate except the unavailable exact seed digest. | Obtain or restore the reviewed full-exhaustive seed with SHA-256 b3383756b5cd357f58d923216effea33be35b793034de321c3c9ce460ece4b28. Do not regenerate or substitute a different seed. Then rerun the signed preflight, hand inputs to AR-1308, and remove/revert only the temporary AR-specific swap after the runner lifecycle. | - |
 | P0 | [AR-1465](tasks/AR-1465-reviewed-seed-archival-recovery.md): Reviewed full-exhaustive seed archival recovery | Expanded archival audit found no exact reviewed seed in approved state/runner roots, Git objects, the ASB product tree, seed-named second-disk files, or available GitHub Actions artifacts. | External operator must supply reviewed immutable seed bytes with exact SHA-256 b3383756b5cd357f58d923216effea33be35b793034de321c3c9ce460ece4b28 and provenance; independently verify them, bind them to AR-1308, and rerun signed preflight. Do not regenerate or substitute. | - |
-| P0 | [AR-1470](tasks/AR-1470-runtime-certificate-chain-enrollment.md): Runtime certificate-chain enrollment materialization | Materialize runtime-owned certificate-chain enrollment authority for live dispatch. | Coordinator must create/promote a narrow successor for authenticated runtime certificate-chain enrollment source: bind control-owned enrollment to RuntimeCertificateChainStore without caller-supplied authority, then wire normal live dispatch. Do not fabricate authority. | - |
 | P0 | [AR-1477](tasks/AR-1477-authority-resolver-coverage-tests.md): Cover authority resolver behavior | Raise exact hosted coverage above the enforced 90 percent floor for the authority resolver. | Create a narrow protected-main topology repair successor for merge 67fa0d1; repository policy requires topic synchronization merge at tip. Preserve all six other post-merge results and do not waive policy. | - |
 | P0 | [AR-1481](tasks/AR-1481-runtime-owned-cli-entry-bootstrap.md): Runtime-owned CLI entry bootstrap | Wire runtime-owned authenticated dispatch into the ordinary CLI entry path. | Promote and claim, then inspect the protected-main entrypoint and runtime/control bootstrap inputs. | - |
 | P0 | [AR-1482](tasks/AR-1482-control-runtime-process-bootstrap.md): Control-runtime process bootstrap | Compose authenticated control enrollment into the ordinary CLI process bootstrap. | Promote and claim, then inspect control/runtime process bootstrap APIs on protected main. | - |

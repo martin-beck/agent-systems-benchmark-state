@@ -176,7 +176,13 @@
 
 ## Complete AR inventory
 
-### Blocked (74)
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1470](../tasks/AR-1470-runtime-certificate-chain-enrollment.md): Runtime certificate-chain enrollment materialization | Unclaimed | Materialize runtime-owned certificate-chain enrollment authority for live dispatch. | Coordinator must create/promote a narrow successor for authenticated runtime certificate-chain enrollment source: bind control-owned enrollment to RuntimeCertificateChainStore without caller-supplied authority, then wire normal live dispatch. Do not fabricate authority. |
+
+### Blocked (73)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -231,7 +237,6 @@
 | P0 | [AR-1392](../tasks/AR-1392-control-authority-materializer.md): Control-owned private authority materializer | Unclaimed | Resolve private live authority from authenticated control enrollment without caller injection. | Resolve unrelated Rust CI failure or obtain coordinator-approved retry; do not merge PR #339 until every exact-head check is green. |
 | P0 | [AR-1464](../tasks/AR-1464-formal-capacity-input-provisioning.md): Formal capacity and signed-input provisioning repair | Unclaimed | Exact signed source, reviewed image, 64 GiB overlay, JDK/TLC/model and canonical lock are provisioned. Reclaimed the three stale AR-specific swap files and activated two fresh AR-specific swap files; repeated signed preflight now passes every gate except the unavailable exact seed digest. | Obtain or restore the reviewed full-exhaustive seed with SHA-256 b3383756b5cd357f58d923216effea33be35b793034de321c3c9ce460ece4b28. Do not regenerate or substitute a different seed. Then rerun the signed preflight, hand inputs to AR-1308, and remove/revert only the temporary AR-specific swap after the runner lifecycle. |
 | P0 | [AR-1465](../tasks/AR-1465-reviewed-seed-archival-recovery.md): Reviewed full-exhaustive seed archival recovery | Unclaimed | Expanded archival audit found no exact reviewed seed in approved state/runner roots, Git objects, the ASB product tree, seed-named second-disk files, or available GitHub Actions artifacts. | External operator must supply reviewed immutable seed bytes with exact SHA-256 b3383756b5cd357f58d923216effea33be35b793034de321c3c9ce460ece4b28 and provenance; independently verify them, bind them to AR-1308, and rerun signed preflight. Do not regenerate or substitute. |
-| P0 | [AR-1470](../tasks/AR-1470-runtime-certificate-chain-enrollment.md): Runtime certificate-chain enrollment materialization | Unclaimed | Materialize runtime-owned certificate-chain enrollment authority for live dispatch. | Coordinator must create/promote a narrow successor for authenticated runtime certificate-chain enrollment source: bind control-owned enrollment to RuntimeCertificateChainStore without caller-supplied authority, then wire normal live dispatch. Do not fabricate authority. |
 | P0 | [AR-1477](../tasks/AR-1477-authority-resolver-coverage-tests.md): Cover authority resolver behavior | Unclaimed | Raise exact hosted coverage above the enforced 90 percent floor for the authority resolver. | Create a narrow protected-main topology repair successor for merge 67fa0d1; repository policy requires topic synchronization merge at tip. Preserve all six other post-merge results and do not waive policy. |
 | P0 | [AR-1481](../tasks/AR-1481-runtime-owned-cli-entry-bootstrap.md): Runtime-owned CLI entry bootstrap | Unclaimed | Wire runtime-owned authenticated dispatch into the ordinary CLI entry path. | Promote and claim, then inspect the protected-main entrypoint and runtime/control bootstrap inputs. |
 | P0 | [AR-1482](../tasks/AR-1482-control-runtime-process-bootstrap.md): Control-runtime process bootstrap | Unclaimed | Compose authenticated control enrollment into the ordinary CLI process bootstrap. | Promote and claim, then inspect control/runtime process bootstrap APIs on protected main. |
@@ -496,4 +501,3 @@
 | P0 | [AR-1480](../tasks/AR-1480-runtime-control-cli-composition.md): Runtime-control CLI composition | Unclaimed | Compose authenticated runtime enrollment into opaque normal CLI run and sweep dispatch. | Run reconcile and doctor --live, then release AR-1480 done ownerless with complete merge/post-merge evidence. |
 | P0 | [AR-1484](../tasks/AR-1484-runtime-control-owner-contract.md): Runtime/control process-owner contract | Unclaimed | Define stable runtime/control process-owner lifecycle and opaque handoff contract. | Reconcile/doctor, then release AR-1484 done ownerless with complete merge/post-merge evidence. |
 | P0 | [AR-1485](../tasks/AR-1485-process-owner-local-mock-lifecycle.md): Process-owner local/mock lifecycle | Unclaimed | Implement runtime-owned local/mock process lifecycle and opaque-source handoff. | Release complete; retain exact merge and eight workflow evidence. |
-| P0 | [AR-1486](../tasks/AR-1486-runtime-owner-cli-entry-wiring.md): Runtime-owner CLI entry wiring | Unclaimed | Wire the runtime-owned local/mock process owner into ordinary CLI run and sweep. | Release complete; retain exact merge and eight workflow evidence. |

@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| P0 | [AR-1486](../tasks/AR-1486-runtime-owner-cli-entry-wiring.md): Runtime-owner CLI entry wiring | Unclaimed | Wire the runtime-owned local/mock process owner into ordinary CLI run and sweep. | Release complete; retain exact merge and eight workflow evidence. |
 | P0 | [AR-1487](../tasks/AR-1487-owner-backed-first-customer-qualification.md): Owner-backed first-customer qualification | Unclaimed | Qualify the owner-backed credential-free local/mock/replay first-customer journey. | Reconcile and doctor state projection; retain known generated WORKTREES/PROJECT_STATE caveat if reported. |
 | P0 | [AR-1488](../tasks/AR-1488-owner-backed-user-journey.md): Owner-backed first-customer user journey | Unclaimed | Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey. | Reconcile and doctor state projection; retain known generated WORKTREES/PROJECT_STATE caveat if reported. |
 | P0 | [AR-1489](../tasks/AR-1489-first-customer-package-consumption.md): First-customer package consumption | Unclaimed | Verify first-customer release package installation and owner-backed local/mock/replay consumption. | Reconcile and doctor state projection; retain known generated WORKTREES/PROJECT_STATE caveat if reported. |

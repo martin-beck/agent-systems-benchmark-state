@@ -17,11 +17,11 @@
   "plan": "../plans/AR-1470-runtime-certificate-chain-enrollment.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Materialize runtime-owned certificate-chain enrollment authority for live dispatch.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Runtime certificate-chain enrollment materialization",
-  "updated_at": "2026-09-27T03:21:49+00:00",
+  "updated_at": "2026-09-28T20:49:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1470-runtime-certificate-chain-enrollment"
 }
 ---
@@ -104,3 +104,6 @@ actually consumed by the downstream adapters.
   provider. Existing AR-1391/1392 are blocked on the same unresolved authority source; coordinator
   should create/promote a new narrowly scoped runtime-owned enrollment-source successor with
   explicit owner of private bootstrap inputs, rather than duplicate or weaken gates.
+
+- 2026-09-28T20:49:05+00:00: AR-1501 production credential contract is done; resume this exact
+  scoped runtime-owned authenticated enrollment-source gap for ASB production dispatch.
