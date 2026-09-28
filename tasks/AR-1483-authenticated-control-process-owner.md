@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1483-authenticated-control-process-owner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-28T23:57:16+00:00",
+  "claim_expires": "2026-09-28T23:58:56+00:00",
   "depends_on": [
     "AR-1472",
     "AR-1473",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Own authenticated control session and lifecycle while minting opaque CLI dispatch sources.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Authenticated control process owner",
-  "updated_at": "2026-09-28T21:57:16+00:00",
+  "updated_at": "2026-09-28T21:58:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1483-authenticated-control-process-owner"
 }
 ---
@@ -78,3 +78,5 @@ caller authority or modify asb-tui.
   process-owner backend remains genuinely absent.
 
 - 2026-09-28T21:57:16+00:00: Claimed by ar1483-owner-integration-luna56.
+
+- 2026-09-28T21:58:56+00:00: Heartbeat by ar1483-owner-integration-luna56.
