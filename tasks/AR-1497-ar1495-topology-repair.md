@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1495-topology",
   "checkpoint_commit": "45df6590cbf9ab75f07dcc0b753335949e28d937",
-  "claim_expires": "2026-09-28T15:55:17+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1493"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "repair/ar-1495-topology",
   "observed_dirty": 0,
   "observed_head": "6db0d3cdf5c5e5961b61c7a262d90a63763ac4ef",
-  "owner": "ar1332-record-replay-luna56",
+  "owner": "",
   "plan": "../plans/AR-1497-ar1495-topology-repair.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Repair AR-1495 protected-main synchronization topology without changing product semantics.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "AR-1495 protected-main topology repair",
-  "updated_at": "2026-09-28T13:58:36+00:00",
+  "updated_at": "2026-09-28T13:58:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1497-ar1495-topology-repair"
 }
 ---
@@ -110,3 +110,13 @@ post-merge workflows.
 
 - 2026-09-28T13:58:36+00:00: Recorded command exit 0; command argv SHA-256
   c9418b1c5d1f0dcfbbe3472025141b02e47bea5ca419920d24f51e8975bf0cee.
+
+- 2026-09-28T13:58:55+00:00: AR-1497 topology-only repair complete. AR-1496 was occupied by
+  unrelated provider capture, so AR-1497 preserved AR-1495 evidence without modifying product
+  semantics. Empty SSH-signed+DCO topic commit 6db0d3cdf5c5e5961b61c7a262d90a63763ac4ef was based
+  directly on protected main 03d2d070 and merged normally as
+  45df6590cbf9ab75f07dcc0b753335949e28d937. PR #374 exact-head checks all green. Eight exact-main
+  workflows all terminal SUCCESS: Huawei 36431416937, Hosted 36431416952, Repository Quality
+  36431416984, Fault 36431417124, Formal 36431417042, Emulated AArch64 36431417245, Credential-free
+  36431417011, Rust 36431417064. AR-1490 customer signing boundary remains unchanged and blocked on
+  external authorized inputs.
