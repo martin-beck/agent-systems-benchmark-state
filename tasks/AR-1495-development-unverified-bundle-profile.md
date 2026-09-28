@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add an explicit development-only unverified bundle profile without weakening production or customer-release verification.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Development-only unverified bundle profile",
-  "updated_at": "2026-09-28T13:05:25+00:00",
+  "updated_at": "2026-09-28T13:05:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1495-development-unverified-bundle-profile"
 }
 ---
@@ -96,3 +96,6 @@ above.
   not account for the tolerated development signature file; fixed expected_inventory to include it
   only for AllowUnsignedDevelopment, while default and unsigned-release remain strict. Canonical
   dirty user changes remain untouched; isolated worktree clean.
+
+- 2026-09-28T13:05:56+00:00: Recorded command exit 0; command argv SHA-256
+  be0b78e482ea004600dc60974e3eb629fe19aba615d56ddf85fc3ed7d777457c.
