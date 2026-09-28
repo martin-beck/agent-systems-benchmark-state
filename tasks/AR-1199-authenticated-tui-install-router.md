@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1199-authenticated-tui-install-router",
   "checkpoint_commit": "45df6590cbf9ab75f07dcc0b753335949e28d937",
-  "claim_expires": "2026-09-28T16:55:06+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1018",
     "AR-1019",
@@ -16,15 +16,15 @@
   "observed_branch": "feature/ar-1199-authenticated-tui-install-router",
   "observed_dirty": 0,
   "observed_head": "45df6590cbf9ab75f07dcc0b753335949e28d937",
-  "owner": "ar1199-router-impl",
+  "owner": "",
   "plan": "../plans/AR-1199.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Expose an authenticated renderer-neutral ASB router for asb tui install and lifecycle operations.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Authenticated TUI install router",
-  "updated_at": "2026-09-28T14:58:45+00:00",
+  "updated_at": "2026-09-28T15:00:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1199"
 }
 ---
@@ -48,3 +48,9 @@ repository.
   integration fixtures. RunnerBackend lifecycle calls explicitly return CapabilityUnavailable;
   AgentPackage exposes only digests/provenance, so claiming Active would be fabricated. No safe
   source mutation made.
+
+- 2026-09-28T15:00:25+00:00: Blocked after exact-main inspection: authenticated router/owner-only
+  transport and v1.4/v1.5 fixtures already exist, but lifecycle calls intentionally return
+  CapabilityUnavailable because no authenticated artifact executor/activation authority exists.
+  Focused tui_lifecycle and capability_contract tests passed 16/16; create a scoped
+  lifecycle-executor successor AR before implementation.
