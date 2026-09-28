@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run fresh package first-customer runtime acceptance and produce an explicit readiness report.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Fresh package runtime acceptance",
-  "updated_at": "2026-09-28T14:56:11+00:00",
+  "updated_at": "2026-09-28T14:56:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1490-fresh-package-runtime-acceptance"
 }
 ---
@@ -163,3 +163,6 @@ when exact package or clean-environment inputs are absent.
   controls.replay emitted cassette_sha256 = null, which is invalid TOML syntax; the validator
   therefore never reached semantic checks and created no result/work roots. The helper is being
   corrected to omit absent optional fields.
+
+- 2026-09-28T14:56:19+00:00: Recorded command exit 0; command argv SHA-256
+  70c85ca57fbe3f9d41057c711bcbf7d34b027c711ac5bbc8b4ff20067a803335.
