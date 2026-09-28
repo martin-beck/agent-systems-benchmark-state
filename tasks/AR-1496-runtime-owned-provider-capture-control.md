@@ -12,7 +12,7 @@
     "AR-1455"
   ],
   "id": "AR-1496",
-  "next_action": "PR #375 exact head cb44d1b is pushed with protocol-status validation repaired; obtain independent re-review and required hosted checks before any signed merge.",
+  "next_action": "Done: PR #375 merged at protected main 8c53a4a62ecaa6fecc9eb195a105fc368a3395c8; independent review passed and all seven post-merge workflows succeeded.",
   "observed_branch": "feature/ar-1496-runtime-owned-provider-capture-control",
   "observed_dirty": 0,
   "observed_head": "cb44d1bdcf903969bca43c564e5e2a8839506056",
