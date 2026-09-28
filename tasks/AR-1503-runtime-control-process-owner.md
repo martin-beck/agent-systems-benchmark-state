@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Own the authenticated control session and hand off only an opaque live dispatch source.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Runtime/control process owner",
-  "updated_at": "2026-09-28T22:24:18+00:00",
+  "updated_at": "2026-09-28T22:24:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1503-runtime-control-process-owner"
 }
 ---
@@ -131,3 +131,6 @@ asb-tui, synthesize authority, or accept caller-built runtime inputs.
   failure: process_owner.rs:18 unused import std::os::unix::fs::PermissionsExt under -D warnings.
   Cause: import was in non-test scope while only test fixture uses it. Moved the import into
   cfg(test) module; no production behavior change.
+
+- 2026-09-28T22:24:24+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
