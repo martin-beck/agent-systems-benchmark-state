@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P2 | [AR-1501](tasks/AR-1501-production-credential-hardening.md): Production credential hardening follow-up | Track production credential secrecy and authentication hardening after the prototype. | Keep non-gating until production deployment is requested; replace development credentials with a reviewed secure authentication chain. | ar1501-credential-contract-repair-luna56 |
+| P2 | [AR-1501](tasks/AR-1501-production-credential-hardening.md): Production credential hardening follow-up | Track production credential secrecy and authentication hardening after the prototype. | Repair the two reported clippy lints, rerun package clippy and full applicable gates, then commit the bounded production credential contract. | ar1501-credential-contract-repair-luna56 |
 
 ## Blocked
 

@@ -8,7 +8,7 @@
     "AR-1500"
   ],
   "id": "AR-1501",
-  "next_action": "Keep non-gating until production deployment is requested; replace development credentials with a reviewed secure authentication chain.",
+  "next_action": "Repair the two reported clippy lints, rerun package clippy and full applicable gates, then commit the bounded production credential contract.",
   "observed_branch": "feature/ar-1501-production-credential-hardening",
   "observed_dirty": 3,
   "observed_head": "556385bfdf8b044e9d6e7530972139b3beb31d91",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Track production credential secrecy and authentication hardening after the prototype.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Production credential hardening follow-up",
-  "updated_at": "2026-09-28T20:02:22+00:00",
+  "updated_at": "2026-09-28T20:02:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1501"
 }
 ---
@@ -83,3 +83,7 @@ This AR is intentionally not required for the development build cycle.
 
 - 2026-09-28T20:02:22+00:00: Recorded command exit 101; command argv SHA-256
   4340dcbf253e5e20fd7f5355131da4428901f1f912a4e0ac816826265343c6b5.
+
+- 2026-09-28T20:02:50+00:00: Focused compile/tests now pass: 6 production_auth tests. Clippy failed
+  at exit 101 on two actionable lints: collapsible nested if in rotate and double_must_use on
+  AuditLogV1::events. Repair both, rerun clippy, then commit.
