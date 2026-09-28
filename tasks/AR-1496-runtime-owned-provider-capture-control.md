@@ -14,17 +14,17 @@
   "id": "AR-1496",
   "next_action": "PR #375 exact head b9a497c is pushed with review blockers repaired; obtain independent re-review and required hosted checks before any signed merge.",
   "observed_branch": "feature/ar-1496-runtime-owned-provider-capture-control",
-  "observed_dirty": 3,
-  "observed_head": "b9a497c31151c1622653b2d1caf84af0dbbb3386",
+  "observed_dirty": 0,
+  "observed_head": "cb44d1bdcf903969bca43c564e5e2a8839506056",
   "owner": "ar1496-provider-capture-luna56",
   "plan": "../plans/AR-1496.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Complete runtime-owned provider capture, tuple cassette reconciliation and verified offline activation required by the setup wizard.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Runtime-owned provider capture and control activation",
-  "updated_at": "2026-09-28T14:25:53+00:00",
+  "updated_at": "2026-09-28T14:26:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1496-runtime-owned-provider-capture-control"
 }
 ---
