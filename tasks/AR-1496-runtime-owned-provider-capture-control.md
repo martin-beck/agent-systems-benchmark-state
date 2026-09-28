@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Complete runtime-owned provider capture, tuple cassette reconciliation and verified offline activation required by the setup wizard.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Runtime-owned provider capture and control activation",
-  "updated_at": "2026-09-28T13:30:50+00:00",
+  "updated_at": "2026-09-28T13:33:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1496-runtime-owned-provider-capture-control"
 }
 ---
@@ -34,3 +34,6 @@ execution or alter AR-1160's historical evidence.
   activation.
 
 - 2026-09-28T13:30:50+00:00: Claimed by ar1496-provider-capture-luna56.
+
+- 2026-09-28T13:33:27+00:00: Recorded command exit 0; command argv SHA-256
+  c0e0dc07aacb38aa9443d2d52938779899bb50c3def1047d4414404d72afff09.
