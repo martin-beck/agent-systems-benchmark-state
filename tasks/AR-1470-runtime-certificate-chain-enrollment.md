@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize runtime-owned certificate-chain enrollment authority for live dispatch.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Runtime certificate-chain enrollment materialization",
-  "updated_at": "2026-09-28T20:57:35+00:00",
+  "updated_at": "2026-09-28T20:57:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1470-runtime-certificate-chain-enrollment"
 }
 ---
@@ -142,3 +142,6 @@ actually consumed by the downstream adapters.
 - 2026-09-28T20:55:46+00:00: Claimed by ar1470-enrollment-source-repair-luna56.
 
 - 2026-09-28T20:57:35+00:00: Heartbeat by ar1470-enrollment-source-repair-luna56.
+
+- 2026-09-28T20:57:38+00:00: Recorded command exit 1; command argv SHA-256
+  3a8da5e6e884f97acd4fb9dbd5d5de0a956e1b59588c4b26c771301abd68836e.
