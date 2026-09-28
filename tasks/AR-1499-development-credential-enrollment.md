@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement versioned development credential enrollment contract with deterministic local/mock identity",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Development credential enrollment contract",
-  "updated_at": "2026-09-28T18:25:28+00:00",
+  "updated_at": "2026-09-28T18:25:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1499"
 }
 ---
@@ -121,3 +121,6 @@ labelled and isolated.
 - 2026-09-28T18:23:57+00:00: Claimed by ar1499-selection-binding-repair-luna56.
 
 - 2026-09-28T18:25:28+00:00: Heartbeat by ar1499-selection-binding-repair-luna56.
+
+- 2026-09-28T18:25:40+00:00: Recorded command exit 0; command argv SHA-256
+  321c534968b9c456a64caf5e6d09b63780c507f97548057d2bfe31edcfd73ff4.
