@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1498-authenticated-lifecycle-executor",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-28T18:42:51+00:00",
   "depends_on": [
     "AR-1018",
     "AR-1019",
@@ -16,15 +16,15 @@
   "observed_branch": "feature/ar-1498-authenticated-lifecycle-executor",
   "observed_dirty": 1,
   "observed_head": "8c53a4a62ecaa6fecc9eb195a105fc368a3395c8",
-  "owner": "",
+  "owner": "ar1498-repair-luna56",
   "plan": "../plans/AR-1498.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide the authenticated artifact executor and activation authority behind the ASB agent lifecycle router.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Authenticated lifecycle artifact executor",
-  "updated_at": "2026-09-28T16:42:24+00:00",
+  "updated_at": "2026-09-28T16:42:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1498"
 }
 ---
@@ -54,3 +54,5 @@ protocol/schema fixtures consumed by AR-1199 and downstream asb-tui.
 - 2026-09-28T16:42:24+00:00: Coordinator-authorized takeover: owner process absent; partial attempt
   independently reviewed as incomplete/non-compiling. Release claim for repair worker without
   deleting worktree or evidence.
+
+- 2026-09-28T16:42:51+00:00: Claimed by ar1498-repair-luna56.
