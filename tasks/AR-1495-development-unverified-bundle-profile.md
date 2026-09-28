@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1495-development-unverified-bundle-profile",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-28T14:59:54+00:00",
   "depends_on": [
     "AR-1314",
     "AR-1397",
@@ -14,15 +14,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1495-development-unverified-bundle-profile.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Add an explicit development-only unverified bundle profile without weakening production or customer-release verification.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Development-only unverified bundle profile",
-  "updated_at": "2026-09-28T12:59:44+00:00",
+  "updated_at": "2026-09-28T12:59:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1495-development-unverified-bundle-profile"
 }
 ---
@@ -50,3 +50,5 @@ above.
 
 - 2026-09-28T12:59:44+00:00: AR-1314 audit and explicit development-only unverified profile scope
   verified; AR-1490 remains external signed-release blocker
+
+- 2026-09-28T12:59:54+00:00: Claimed by ar1332-record-replay-luna56.
