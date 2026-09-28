@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-28T23:31:22+00:00",
+  "updated_at": "2026-09-28T23:31:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -324,3 +324,6 @@ public credential/socket paths, or weakening fail-closed gates.
   0, with exact terminal evidence recorded by the successful state run. Known parallel asb-cli
   state-root collision remains an environment collision only; serial full package and workspace
   gates are green and no test was weakened. Ready for signed/DCO commit and PR publication.
+
+- 2026-09-28T23:31:29+00:00: Recorded command exit 1; command argv SHA-256
+  7beec9e69f85e6e8c0929ac71a9ec77ea5fd6759af91d9889847385e2afae421.
