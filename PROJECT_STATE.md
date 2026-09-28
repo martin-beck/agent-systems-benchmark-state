@@ -23,7 +23,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 36464070119 | `65bcdf3208db` | push | Emulated aarch64 portability | in_progress:- |
 | 36464070070 | `65bcdf3208db` | push | Huawei MIT source headers | completed:success |
-| 36464070023 | `65bcdf3208db` | push | Formal assurance | in_progress:- |
+| 36464070023 | `65bcdf3208db` | push | Formal assurance | completed:success |
 | 36464070012 | `65bcdf3208db` | push | Repository quality | in_progress:- |
 | 36464070000 | `65bcdf3208db` | push | Hosted portability and native qualification | completed:success |
 | 36464069999 | `65bcdf3208db` | push | Credential-free benchmark path | completed:success |
