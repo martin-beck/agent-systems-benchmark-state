@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supply the runtime-owned authenticated bootstrap authority required for normal live dispatch.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Runtime-owned bootstrap authority",
-  "updated_at": "2026-09-28T21:16:41+00:00",
+  "updated_at": "2026-09-28T21:18:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1502"
 }
 ---
@@ -119,3 +119,6 @@ dependency-safe and must not synthesize authority or accept caller-built input.
   issue_metadata/AuthenticatedChainEnrollmentV1::issue_chain); -D warnings also reported dead_code
   for chain at line 262. Repair will use the runtime authority API and remove the unsafe caller
   bypass.
+
+- 2026-09-28T21:18:13+00:00: Recorded command exit 2; command argv SHA-256
+  fdd2f3e3a47179d0ede4c34e5d67020b051aaab7e3b2eb823b61ce22575ed00c.
