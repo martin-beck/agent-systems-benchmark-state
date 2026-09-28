@@ -14,7 +14,7 @@
   "id": "AR-1496",
   "next_action": "PR #375 is rebased onto protected main 45df6590; await exact-head hosted checks, then independent review and merge.",
   "observed_branch": "feature/ar-1496-runtime-owned-provider-capture-control",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "e664ce9e5e29849db93cfdef3fa3f2d3fa11cd58",
   "owner": "ar1496-provider-capture-luna56",
   "plan": "../plans/AR-1496.md",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Complete runtime-owned provider capture, tuple cassette reconciliation and verified offline activation required by the setup wizard.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Runtime-owned provider capture and control activation",
-  "updated_at": "2026-09-28T14:01:15+00:00",
+  "updated_at": "2026-09-28T14:01:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1496-runtime-owned-provider-capture-control"
 }
 ---
