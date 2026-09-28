@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1499-development-credential-enrollment",
-  "checkpoint_commit": "86bb90ceb44d9cfed8e56500ba7c6e0297767bcf",
+  "checkpoint_commit": "7bdda85240653fa15e8eee602240137d88b8442b",
   "claim_expires": "2026-09-28T20:25:28+00:00",
   "depends_on": [
     "AR-1442",
     "AR-1496"
   ],
   "id": "AR-1499",
-  "next_action": "PR #377 exact head 86bb90c remains open; wait for remaining required CI (aarch64, TLC/Alloy, policy, Rust) and independent review; merge only after all green.",
+  "next_action": "PR #377 merged old head 86bb90c at protected main 65bcdf3; corrective commits 51c57d4 and 7bdda85 are not in main. Create a new repair PR from the current main base, verify exact-head CI and merge only after all required gates pass.",
   "observed_branch": "feature/ar-1499-development-credential-enrollment",
   "observed_dirty": 0,
   "observed_head": "7bdda85240653fa15e8eee602240137d88b8442b",
@@ -17,10 +17,10 @@
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Implement versioned development credential enrollment contract with deterministic local/mock identity",
-  "task_revision": 37,
+  "summary": "Repair merged development credential selection binding",
+  "task_revision": 38,
   "title": "Development credential enrollment contract",
-  "updated_at": "2026-09-28T18:25:40+00:00",
+  "updated_at": "2026-09-28T18:26:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1499"
 }
 ---
@@ -124,3 +124,7 @@ labelled and isolated.
 
 - 2026-09-28T18:25:40+00:00: Recorded command exit 0; command argv SHA-256
   321c534968b9c456a64caf5e6d09b63780c507f97548057d2bfe31edcfd73ff4.
+
+- 2026-09-28T18:26:08+00:00: Coordinator takeover repair: stale PR #377 text replaced with durable
+  record of merged old head, corrective selection-binding commits, and required new repair PR
+  workflow.

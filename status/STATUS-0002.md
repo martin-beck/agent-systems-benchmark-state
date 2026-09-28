@@ -180,7 +180,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1499](../tasks/AR-1499-development-credential-enrollment.md): Development credential enrollment contract | ar1499-selection-binding-repair-luna56 | Implement versioned development credential enrollment contract with deterministic local/mock identity | PR #377 exact head 86bb90c remains open; wait for remaining required CI (aarch64, TLC/Alloy, policy, Rust) and independent review; merge only after all green. |
+| P0 | [AR-1499](../tasks/AR-1499-development-credential-enrollment.md): Development credential enrollment contract | ar1499-selection-binding-repair-luna56 | Repair merged development credential selection binding | PR #377 merged old head 86bb90c at protected main 65bcdf3; corrective commits 51c57d4 and 7bdda85 are not in main. Create a new repair PR from the current main base, verify exact-head CI and merge only after all required gates pass. |
 
 ### Blocked (74)
 
