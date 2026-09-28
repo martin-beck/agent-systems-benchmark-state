@@ -13,18 +13,18 @@
   ],
   "id": "AR-1505",
   "next_action": "Promote after dependency verification; define and implement the authenticated control-plane platform authority/bootstrap protocol needed by the runtime launcher.",
-  "observed_branch": "",
+  "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "3c6af6b351e0c32ee8f5e48716654d854dcbbac2",
   "owner": "ar1505-control-plane-luna56",
   "plan": "../plans/AR-1505-control-plane-platform-authority.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-28T22:58:32+00:00",
+  "updated_at": "2026-09-28T22:58:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
