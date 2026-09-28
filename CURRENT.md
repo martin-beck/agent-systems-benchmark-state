@@ -7,13 +7,8 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1495](tasks/AR-1495-development-unverified-bundle-profile.md): Development-only unverified bundle profile | Add an explicit development-only unverified bundle profile without weakening production or customer-release verification. | Monitor PR #373 fresh exact signed+DCO head 4d63a66; merge only after all required checks and independent review are green. | ar1332-record-replay-luna56 |
 | P0 | [AR-1496](tasks/AR-1496-runtime-owned-provider-capture-control.md): Runtime-owned provider capture and control activation | Complete runtime-owned provider capture, tuple cassette reconciliation and verified offline activation required by the setup wizard. | PR #375 exact head 9021c33 is running required hosted checks; after all green obtain independent review, then perform signed merge and post-merge verification. | ar1496-provider-capture-luna56 |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1495](tasks/AR-1495-development-unverified-bundle-profile.md): Development-only unverified bundle profile | Add an explicit development-only unverified bundle profile without weakening production or customer-release verification. | Monitor PR #373 fresh exact signed+DCO head 4d63a66; merge only after all required checks and independent review are green. | - |
 
 ## Blocked
 
