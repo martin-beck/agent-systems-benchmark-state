@@ -10,7 +10,7 @@
     "AR-1489"
   ],
   "id": "AR-1490",
-  "next_action": "Repair the disposable fixture agent to emit the exact parser.py and tests.txt grading inventory, use a new run root/id, then rerun installed local/mock run and sweep.",
+  "next_action": "Correct fixture parser.py emission from a literal double backslash to the required single escaped carriage-return sequence, verify installed output bytes and tests.txt, then run fresh run/sweep.",
   "observed_branch": "qualification/ar-1490-fresh-package-runtime-acceptance",
   "observed_dirty": 2,
   "observed_head": "45df6590cbf9ab75f07dcc0b753335949e28d937",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run fresh package first-customer runtime acceptance and produce an explicit readiness report.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Fresh package runtime acceptance",
-  "updated_at": "2026-09-28T14:59:35+00:00",
+  "updated_at": "2026-09-28T15:00:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1490-fresh-package-runtime-acceptance"
 }
 ---
@@ -197,3 +197,10 @@ when exact package or clean-environment inputs are absent.
 
 - 2026-09-28T14:59:35+00:00: Recorded command exit 5; command argv SHA-256
   d3911253abcdda827e8931919c2bf8d9e83912114139d1f4ad6baed0241695c7.
+
+- 2026-09-28T15:00:30+00:00: Recorded second local/mock execution failure: plan ar1490-run2
+  validated and admitted one attempt, but terminal decision was fail (handoff exit 5),
+  failed_check_count=1, exit_code=0, no timeout/cancel/infrastructure failure, stdout_bytes=92;
+  tests.txt was emitted, while parser.py contained a literal two-backslash \\r sequence instead of
+  the expected single escaped \\r source. This is a disposable fixture content error, not an ASB
+  runtime defect. Next action is to correct and inspect installed bytes before retry.
