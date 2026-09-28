@@ -8,7 +8,7 @@
     "AR-1496"
   ],
   "id": "AR-1499",
-  "next_action": "PR #377 merged old head 86bb90c at protected main 65bcdf3; corrective commits 51c57d4 and 7bdda85 are not in main. Create a new repair PR from the current main base, verify exact-head CI and merge only after all required gates pass.",
+  "next_action": "PR #378 exact head 7bdda85 is open on repair/ar-1499-selection-binding; independently review the complete diff and wait for every required exact-head check to finish green before merging through handoffctl.",
   "observed_branch": "feature/ar-1499-development-credential-enrollment",
   "observed_dirty": 0,
   "observed_head": "7bdda85240653fa15e8eee602240137d88b8442b",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair merged development credential selection binding",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Development credential enrollment contract",
-  "updated_at": "2026-09-28T18:29:39+00:00",
+  "updated_at": "2026-09-28T18:30:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1499"
 }
 ---
@@ -158,3 +158,7 @@ labelled and isolated.
 
 - 2026-09-28T18:29:39+00:00: Recorded command exit 0; command argv SHA-256
   944bf109b3e5b0b23469229698b91cf04120cb9c7ee5be7c4bfe37aca4eedc73.
+
+- 2026-09-28T18:30:03+00:00: Dedicated repair PR #378 created against current protected main. It
+  carries corrective selection-binding and fresh-status commits 51c57d4/7bdda85; focused asb-config
+  tests and fmt check passed.
