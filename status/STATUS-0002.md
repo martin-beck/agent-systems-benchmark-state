@@ -184,11 +184,11 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1505](../tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | ar1505-control-plane-luna56 | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | Repair P1 review findings before merge: wire control bootstrap response into runtime-owned enrollment/authority/provisioner and make cancel revoke the corresponding local runtime chain/attempt; add end-to-end deterministic tests. |
+| P0 | [AR-1505](../tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | Unclaimed | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | Repair P1 review findings before merge: wire control bootstrap response into runtime-owned enrollment/authority/provisioner and make cancel revoke the corresponding local runtime chain/attempt; add end-to-end deterministic tests. |
 
 ### Blocked (76)
 

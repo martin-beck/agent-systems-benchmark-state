@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1505-control-plane-platform-authority",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-29T01:46:05+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1473",
     "AR-1474",
@@ -16,15 +16,15 @@
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 0,
   "observed_head": "baa13ea675de2160dcf58f69b106e255f2c3d8de",
-  "owner": "ar1505-control-plane-luna56",
+  "owner": "",
   "plan": "../plans/AR-1505-control-plane-platform-authority.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 114,
+  "task_revision": 115,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-28T23:46:54+00:00",
+  "updated_at": "2026-09-28T23:48:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -475,3 +475,10 @@ public credential/socket paths, or weakening fail-closed gates.
   RuntimeCertificateChainStore::revoke or fences active attempts, so already-issued local chains
   remain usable until expiry despite control catalog record.revoked at asb-cli/control.rs:2203-2240.
   No P2 found beyond these P1s. Review was read-only; no product changes or merge performed.
+
+- 2026-09-28T23:48:58+00:00: Coordinator takeover: releasing this claim and stopping this worker. PR
+  #382 remains at signed exact head baa13ea675de2160dcf58f69b106e255f2c3d8de with all required CI
+  checks green, but independent review identified P1 blockers: bootstrap response is not wired into
+  runtime-owned enrollment/authority/provisioner, and cancellation does not revoke the corresponding
+  local runtime chain/attempt. AR is returned to open for a repair worker; no product files changed
+  and no merge performed.
