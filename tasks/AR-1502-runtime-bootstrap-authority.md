@@ -18,11 +18,11 @@
   "plan": "../plans/AR-1502-runtime-bootstrap-authority.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Supply the runtime-owned authenticated bootstrap authority required for normal live dispatch.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Runtime-owned bootstrap authority",
-  "updated_at": "2026-09-28T21:00:00+00:00",
+  "updated_at": "2026-09-28T21:01:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1502"
 }
 ---
@@ -30,3 +30,6 @@
 Successor to the precise missing-authority finding in AR-1470. The existing
 AR-1470 record remains blocked as historical evidence; this task is independently
 dependency-safe and must not synthesize authority or accept caller-built input.
+
+- 2026-09-28T21:01:37+00:00: AR-1470 audit identified a legitimate runtime-owned bootstrap-authority
+  gap; dependencies AR-1473, AR-1474, AR-1480 and AR-1501 are done.
