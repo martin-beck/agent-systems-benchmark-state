@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1501-production-credential-hardening",
-  "checkpoint_commit": "eb2239ab2f4643601eff22a574386076ad6e1bf6",
+  "checkpoint_commit": "7167e3da7ab1fb35d4fc9c0e61ee754c89e670d6",
   "claim_expires": "2026-09-28T22:27:44+00:00",
   "depends_on": [
     "AR-1499",
     "AR-1500"
   ],
   "id": "AR-1501",
-  "next_action": "Continue monitoring active quality and aarch64 jobs; merge only once both terminal green and independent review is recorded.",
+  "next_action": "Monitor all seven active post-merge workflows for terminal success, verify remote merge signature/tree/parents and main tree, then release AR with durable evidence.",
   "observed_branch": "feature/ar-1501-production-credential-hardening",
   "observed_dirty": 0,
   "observed_head": "eb2239ab2f4643601eff22a574386076ad6e1bf6",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Track production credential secrecy and authentication hardening after the prototype.",
-  "task_revision": 95,
+  "task_revision": 96,
   "title": "Production credential hardening follow-up",
-  "updated_at": "2026-09-28T20:32:40+00:00",
+  "updated_at": "2026-09-28T20:33:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1501"
 }
 ---
@@ -304,3 +304,9 @@ This AR is intentionally not required for the development build cycle.
 
 - 2026-09-28T20:32:40+00:00: Recorded command exit 0; command argv SHA-256
   e42c634f1c5528b72bb77083a0fedcce14e95121ad7aaef39be5ff3cdee937ff.
+
+- 2026-09-28T20:33:09+00:00: PR #380 passed all 13 exact-head checks at eb2239a and independent
+  review confirmed request-binding repair. Protected signed merge-integrity publication succeeded:
+  merge 7167e3d, parents 556385b and eb2239a, tree 81fb376. PR is merged. Post-merge workflows for
+  exact main SHA 7167e3d are running: runs 36479841975, 36479842058, 36479842163, 36479842147,
+  36479842172, 36479842073, 36479842085; header run 36479842099 already passed.

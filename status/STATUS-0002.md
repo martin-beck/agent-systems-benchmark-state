@@ -180,7 +180,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P2 | [AR-1501](../tasks/AR-1501-production-credential-hardening.md): Production credential hardening follow-up | ar1501-credential-contract-repair-luna56 | Track production credential secrecy and authentication hardening after the prototype. | Continue monitoring active quality and aarch64 jobs; merge only once both terminal green and independent review is recorded. |
+| P2 | [AR-1501](../tasks/AR-1501-production-credential-hardening.md): Production credential hardening follow-up | ar1501-credential-contract-repair-luna56 | Track production credential secrecy and authentication hardening after the prototype. | Monitor all seven active post-merge workflows for terminal success, verify remote merge signature/tree/parents and main tree, then release AR with durable evidence. |
 
 ### Blocked (74)
 
