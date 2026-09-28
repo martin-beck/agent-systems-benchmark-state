@@ -8,7 +8,7 @@
     "AR-1500"
   ],
   "id": "AR-1501",
-  "next_action": "Refresh PR #380 exact-head checks and review; merge only after all required checks are terminal green and review confirms binding repair.",
+  "next_action": "Continue monitoring active quality and aarch64 jobs; merge only once both terminal green and independent review is recorded.",
   "observed_branch": "feature/ar-1501-production-credential-hardening",
   "observed_dirty": 0,
   "observed_head": "eb2239ab2f4643601eff22a574386076ad6e1bf6",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Track production credential secrecy and authentication hardening after the prototype.",
-  "task_revision": 85,
+  "task_revision": 86,
   "title": "Production credential hardening follow-up",
-  "updated_at": "2026-09-28T20:27:44+00:00",
+  "updated_at": "2026-09-28T20:27:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1501"
 }
 ---
@@ -271,3 +271,9 @@ This AR is intentionally not required for the development build cycle.
   f747efb046703578e6d1c03abb7c151ae7a4d061d6e2a107bd51f9b33f6d8e83.
 
 - 2026-09-28T20:27:44+00:00: Heartbeat by ar1501-credential-contract-repair-luna56.
+
+- 2026-09-28T20:27:59+00:00: Hosted exact-head observation: PR #380 head eb2239a. Repository-quality
+  run 36478232112 is actively progressing (coverage completed; controlled-defect gate started at
+  20:25:35Z). Emulated-aarch64 run 36478232397 remains in progress at Materialize immutable aarch64
+  guest userspace since 20:20:01Z with no step transition yet; job is not terminal, so preserve and
+  monitor rather than cancel.

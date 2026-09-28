@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P2 | [AR-1501](tasks/AR-1501-production-credential-hardening.md): Production credential hardening follow-up | Track production credential secrecy and authentication hardening after the prototype. | Refresh PR #380 exact-head checks and review; merge only after all required checks are terminal green and review confirms binding repair. | ar1501-credential-contract-repair-luna56 |
+| P2 | [AR-1501](tasks/AR-1501-production-credential-hardening.md): Production credential hardening follow-up | Track production credential secrecy and authentication hardening after the prototype. | Continue monitoring active quality and aarch64 jobs; merge only once both terminal green and independent review is recorded. | ar1501-credential-contract-repair-luna56 |
 
 ## Blocked
 
