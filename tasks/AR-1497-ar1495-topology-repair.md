@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1495-topology",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-28T15:37:24+00:00",
   "depends_on": [
     "AR-1493"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1497-ar1495-topology-repair.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair AR-1495 protected-main synchronization topology without changing product semantics.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "AR-1495 protected-main topology repair",
-  "updated_at": "2026-09-28T13:37:15+00:00",
+  "updated_at": "2026-09-28T13:37:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1497-ar1495-topology-repair"
 }
 ---
@@ -41,3 +41,5 @@ post-merge workflows.
 - 2026-09-28T13:37:15+00:00: AR-1496 is occupied by unrelated provider capture; AR-1497 is narrow
   topology-only repair for AR-1495 protected-main policy failure and preserves AR-1495 evidence
   without product changes.
+
+- 2026-09-28T13:37:24+00:00: Claimed by ar1332-record-replay-luna56.
