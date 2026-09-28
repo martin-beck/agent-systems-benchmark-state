@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1505-control-plane-platform-authority",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T01:50:17+00:00",
   "depends_on": [
     "AR-1473",
     "AR-1474",
@@ -16,15 +16,15 @@
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 0,
   "observed_head": "baa13ea675de2160dcf58f69b106e255f2c3d8de",
-  "owner": "",
+  "owner": "ar1505-repair-luna56",
   "plan": "../plans/AR-1505-control-plane-platform-authority.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 115,
+  "task_revision": 116,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-28T23:48:58+00:00",
+  "updated_at": "2026-09-28T23:50:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -482,3 +482,5 @@ public credential/socket paths, or weakening fail-closed gates.
   runtime-owned enrollment/authority/provisioner, and cancellation does not revoke the corresponding
   local runtime chain/attempt. AR is returned to open for a repair worker; no product files changed
   and no merge performed.
+
+- 2026-09-28T23:50:17+00:00: Claimed by ar1505-repair-luna56.

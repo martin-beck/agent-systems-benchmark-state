@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1505](tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | Repair P1 review findings before merge: wire control bootstrap response into runtime-owned enrollment/authority/provisioner and make cancel revoke the corresponding local runtime chain/attempt; add end-to-end deterministic tests. | - |
+| P0 | [AR-1505](tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | Repair P1 review findings before merge: wire control bootstrap response into runtime-owned enrollment/authority/provisioner and make cancel revoke the corresponding local runtime chain/attempt; add end-to-end deterministic tests. | ar1505-repair-luna56 |
 
 ## Blocked
 
