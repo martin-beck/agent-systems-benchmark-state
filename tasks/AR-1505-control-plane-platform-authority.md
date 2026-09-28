@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 82,
+  "task_revision": 83,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-28T23:32:48+00:00",
+  "updated_at": "2026-09-28T23:33:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -344,3 +344,10 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-28T23:32:48+00:00: Recorded command exit 0; command argv SHA-256
   45718322599bbf9e6fc599246f545fb89d17f0bc6ac6db4e7b619afe3b27021f.
+
+- 2026-09-28T23:33:20+00:00: Publication preflight passed after correcting the worktree path.
+  Product worktree is clean at signed commit baa13ea675de2160dcf58f69b106e255f2c3d8de; git show
+  --show-signature reports Good git signature for martin.beck2@gmx.de, ED25519
+  SHA256:a36V6yPvRZyxnQ2113tiA/MlHt7mPfJEXAGByBXVkuE; commit includes matching Signed-off-by
+  trailer. All final workspace and focused gates are green; no gate is blocked. Ready to push and
+  open exact-head PR.
