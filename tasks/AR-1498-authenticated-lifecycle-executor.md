@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated artifact executor and activation authority behind the ASB agent lifecycle router.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Authenticated lifecycle artifact executor",
-  "updated_at": "2026-09-28T17:02:00+00:00",
+  "updated_at": "2026-09-28T17:02:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1498"
 }
 ---
@@ -134,3 +134,7 @@ protocol/schema fixtures consumed by AR-1199 and downstream asb-tui.
 
 - 2026-09-28T17:01:46+00:00: Recorded command exit 0; command argv SHA-256
   966f255df721cc909153bd2a6efdea5e36c3d398d368962a7f4a35c2436d4696.
+
+- 2026-09-28T17:02:26+00:00: Gate invocation failure: handoffctl run received RUSTDOCFLAGS=-D
+  warnings as an executable and exited FileNotFoundError before cargo doc. Next action: rerun with
+  env RUSTDOCFLAGS=-D warnings cargo doc through handoffctl; no product failure occurred.
