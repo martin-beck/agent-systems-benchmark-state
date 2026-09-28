@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 71,
+  "task_revision": 72,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-28T23:28:41+00:00",
+  "updated_at": "2026-09-28T23:29:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -295,3 +295,14 @@ public credential/socket paths, or weakening fail-closed gates.
   ownership collision remains dispositioned by serial green rerun and was not weakened. Receipt
   expiry equality validation and negative test added. Next: complete independent full diff review,
   then final workspace/full gate and publication preparation.
+
+- 2026-09-28T23:29:11+00:00: Independent semantic review completed after latest green gates:
+  RuntimeBootstrap is accepted only through execute_authenticated with kernel-derived SO_PEERCRED
+  session digest (uid/gid/pid plus runner instance); caller-supplied session digest is rejected on
+  mismatch before authority lookup. Response validation binds provider, generation, request nonce,
+  session, restart binding, chain digest, outer expiry, and receipt expiry; runtime adapter rechecks
+  current time and expiry equality. Cancellation requires provider/generation/session/cancellation
+  binding, marks the exact durable bootstrap revoked, removes replay mutation state, and rejects
+  stale/forged bindings; repeated cancellation is idempotent through its own mutation key. No
+  provider call, secret, path, or authority private material crosses the protocol. No PR or commit
+  has been created yet; next is final diff/full workspace review.
