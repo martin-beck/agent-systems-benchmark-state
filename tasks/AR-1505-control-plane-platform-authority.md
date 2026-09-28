@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1505-control-plane-platform-authority",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-29T00:59:05+00:00",
+  "claim_expires": "2026-09-29T01:05:57+00:00",
   "depends_on": [
     "AR-1473",
     "AR-1474",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-28T23:05:54+00:00",
+  "updated_at": "2026-09-28T23:05:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -91,3 +91,5 @@ public credential/socket paths, or weakening fail-closed gates.
   crates/asb-control/src/endpoint.rs:348:54: PeerIdentity::from_fd(stream) moved &mut UnixStream
   before read_frame_until; compiler suggested reborrow &mut *stream. This is a local borrow repair,
   not a protocol blocker.
+
+- 2026-09-28T23:05:57+00:00: Heartbeat by ar1505-control-plane-luna56.
