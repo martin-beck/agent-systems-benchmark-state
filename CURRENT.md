@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1500](tasks/AR-1500-development-credential-provider-fixture.md): Development credential/provider lifecycle fixture | Qualify generated development credentials through provider, capture and replay flows. | AR-1500 complete: PR #379 merged at exact checked head; post-merge main tree equality and offline fixture smoke passed. Continue dependent ARs. | ar1500-provider-fixture-luna56 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -343,6 +337,7 @@ Never edit this file directly.
 | P0 | [AR-1497](tasks/AR-1497-ar1495-topology-repair.md): AR-1495 protected-main topology repair | Repair AR-1495 protected-main synchronization topology without changing product semantics. | Monitor eight post-merge workflows for exact protected-main merge 45df6590; release AR-1497 only after all terminal SUCCESS. | - |
 | P0 | [AR-1498](tasks/AR-1498-authenticated-lifecycle-executor.md): Authenticated lifecycle artifact executor | PR 376 merged at protected main exact merge commit | Verify origin/main contains merge 9231a660675d4b01277a60b75d838d69c6bba917, run post-merge applicable smoke/build checks, then release AR-1498 durably. | - |
 | P0 | [AR-1499](tasks/AR-1499-development-credential-enrollment.md): Development credential enrollment contract | Repair merged development credential selection binding | Released; no further AR-1499 action. PR #378 merged at protected main ee8ea15; exact main tree and post-merge smoke verified, and all eight post-merge workflows passed. | - |
+| P0 | [AR-1500](tasks/AR-1500-development-credential-provider-fixture.md): Development credential/provider lifecycle fixture | Qualify generated development credentials through provider, capture and replay flows. | AR-1500 complete: PR #379 merged at exact checked head; post-merge main tree equality and offline fixture smoke passed. Continue dependent ARs. | - |
 | P1 | [AR-0002](tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. | - |
 | P1 | [AR-0003](tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. | - |
 | P1 | [AR-0004](tasks/AR-0004-ar-status-document.md): Generate the visual AR status document | Render every AR, status, and dependency as an accessible visual state document. | Await independent immutable-head review of state PR 3 at eedd311; repair findings before coordinator integration. | - |

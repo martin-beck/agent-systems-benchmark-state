@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1500-development-credential-provider-fixture",
   "checkpoint_commit": "556385bfdf8b044e9d6e7530972139b3beb31d91",
-  "claim_expires": "2026-09-28T21:28:28+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1499",
     "AR-1443"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1500-development-credential-provider-fixture",
   "observed_dirty": 0,
   "observed_head": "bae4307ddd072c8903f77312aabcd4f053148cd5",
-  "owner": "ar1500-provider-fixture-luna56",
+  "owner": "",
   "plan": "../plans/AR-1500-development-credential-provider-fixture.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Qualify generated development credentials through provider, capture and replay flows.",
-  "task_revision": 74,
+  "task_revision": 75,
   "title": "Development credential/provider lifecycle fixture",
-  "updated_at": "2026-09-28T19:38:21+00:00",
+  "updated_at": "2026-09-28T19:38:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1500"
 }
 ---
@@ -239,3 +239,7 @@ generated credentials as production-safe secrets.
   enrollment-bound receipts, malformed/stale/mismatch rejection, bounded restart state,
   cancellation/recovery, strict offline replay, comparison readiness, and nonblocking development
   warnings.
+
+- 2026-09-28T19:38:28+00:00: Released complete after protected merge PR #379 at
+  556385bfdf8b044e9d6e7530972139b3beb31d91, all 13 exact-head checks green, exact main tree
+  verification, and six offline fixture smoke tests passing.
