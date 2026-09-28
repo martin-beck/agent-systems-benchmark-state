@@ -1,13 +1,13 @@
 ---
 {
   "branch": "repair/ar-1495-topology",
-  "checkpoint_commit": "6db0d3cdf5c5e5961b61c7a262d90a63763ac4ef",
+  "checkpoint_commit": "45df6590cbf9ab75f07dcc0b753335949e28d937",
   "claim_expires": "2026-09-28T15:37:28+00:00",
   "depends_on": [
     "AR-1493"
   ],
   "id": "AR-1497",
-  "next_action": "Monitor PR #374 exact signed head 6db0d3c; merge only when all required checks are green, then verify eight post-merge workflows.",
+  "next_action": "Monitor eight post-merge workflows for exact protected-main merge 45df6590; release AR-1497 only after all terminal SUCCESS.",
   "observed_branch": "repair/ar-1495-topology",
   "observed_dirty": 0,
   "observed_head": "6db0d3cdf5c5e5961b61c7a262d90a63763ac4ef",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair AR-1495 protected-main synchronization topology without changing product semantics.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "AR-1495 protected-main topology repair",
-  "updated_at": "2026-09-28T13:50:42+00:00",
+  "updated_at": "2026-09-28T13:51:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1497-ar1495-topology-repair"
 }
 ---
@@ -91,3 +91,11 @@ post-merge workflows.
 
 - 2026-09-28T13:50:42+00:00: Recorded command exit 0; command argv SHA-256
   c9418b1c5d1f0dcfbbe3472025141b02e47bea5ca419920d24f51e8975bf0cee.
+
+- 2026-09-28T13:51:01+00:00: PR #374 exact head 6db0d3cdf5c5e5961b61c7a262d90a63763ac4ef had all 13
+  required checks SUCCESS/CLEAN and merged normally at 45df6590cbf9ab75f07dcc0b753335949e28d937. The
+  topology-only empty signed+DCO topic preserved the exact AR-1495 tree and resolved the
+  protected-main synchronization-merge-at-tip policy failure. Eight exact-main workflows launched:
+  Huawei 36431416937 SUCCESS; Hosted 36431416952 IN_PROGRESS; Repository Quality 36431416984
+  IN_PROGRESS; Fault 36431417124 IN_PROGRESS; Formal 36431417042 IN_PROGRESS; AArch64 36431417245
+  IN_PROGRESS; Credential-free 36431417011 IN_PROGRESS; Rust 36431417064 IN_PROGRESS.
