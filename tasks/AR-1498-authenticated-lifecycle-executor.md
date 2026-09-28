@@ -12,7 +12,7 @@
     "AR-1496"
   ],
   "id": "AR-1498",
-  "next_action": "Wait for PR #376 exact-head CI at 55ff13fb6cb220034ccd1fb4febf0e86e848db94; record check results and hand off merge/post-merge release to coordinator.",
+  "next_action": "Poll PR #376 checks at exact head until terminal; classify any failure and hand off green merge/post-merge release.",
   "observed_branch": "feature/ar-1498-authenticated-lifecycle-executor",
   "observed_dirty": 0,
   "observed_head": "55ff13fb6cb220034ccd1fb4febf0e86e848db94",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticated lifecycle executor with positive and negative coverage fixtures published",
-  "task_revision": 94,
+  "task_revision": 95,
   "title": "Authenticated lifecycle artifact executor",
-  "updated_at": "2026-09-28T17:34:22+00:00",
+  "updated_at": "2026-09-28T17:34:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1498"
 }
 ---
@@ -323,3 +323,9 @@ protocol/schema fixtures consumed by AR-1199 and downstream asb-tui.
 
 - 2026-09-28T17:34:22+00:00: Recorded command exit 0; command argv SHA-256
   86a11007eda5185acdfd66a06eb782b4258e144206f47a8203340ca73d79ed1b.
+
+- 2026-09-28T17:34:51+00:00: PR #376 verified OPEN at exact head
+  55ff13fb6cb220034ccd1fb4febf0e86e848db94. Initial refreshed CI snapshot: AWQ shadow, retained
+  faults, and exact headers passed; TLC/Alloy, Rust, aarch64, policy/coverage/supply-chain, platform
+  evidence, credential-free path, fuzz, Kani, matcher/SLO, Loom/state remain in progress. No merge
+  attempted while checks are pending.

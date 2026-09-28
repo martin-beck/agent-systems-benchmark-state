@@ -180,7 +180,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1498](../tasks/AR-1498-authenticated-lifecycle-executor.md): Authenticated lifecycle artifact executor | ar1498-repair-luna56 | Authenticated lifecycle executor with positive and negative coverage fixtures published | Wait for PR #376 exact-head CI at 55ff13fb6cb220034ccd1fb4febf0e86e848db94; record check results and hand off merge/post-merge release to coordinator. |
+| P0 | [AR-1498](../tasks/AR-1498-authenticated-lifecycle-executor.md): Authenticated lifecycle artifact executor | ar1498-repair-luna56 | Authenticated lifecycle executor with positive and negative coverage fixtures published | Poll PR #376 checks at exact head until terminal; classify any failure and hand off green merge/post-merge release. |
 
 ### Blocked (74)
 
