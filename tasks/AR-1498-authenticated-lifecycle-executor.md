@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1498-authenticated-lifecycle-executor",
   "checkpoint_commit": "9231a660675d4b01277a60b75d838d69c6bba917",
-  "claim_expires": "2026-09-28T19:39:27+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1018",
     "AR-1019",
@@ -16,15 +16,15 @@
   "observed_branch": "feature/ar-1498-authenticated-lifecycle-executor",
   "observed_dirty": 0,
   "observed_head": "55ff13fb6cb220034ccd1fb4febf0e86e848db94",
-  "owner": "ar1498-repair-luna56",
+  "owner": "",
   "plan": "../plans/AR-1498.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "PR 376 merged at protected main exact merge commit",
-  "task_revision": 113,
+  "task_revision": 114,
   "title": "Authenticated lifecycle artifact executor",
-  "updated_at": "2026-09-28T17:45:23+00:00",
+  "updated_at": "2026-09-28T17:46:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1498"
 }
 ---
@@ -391,3 +391,8 @@ protocol/schema fixtures consumed by AR-1199 and downstream asb-tui.
 
 - 2026-09-28T17:45:23+00:00: Recorded command exit 0; command argv SHA-256
   dbc31d2efc51a4b76cf2ee20293da25c8577a4c80fb06f4dfbfd1ea3619303d1.
+
+- 2026-09-28T17:46:04+00:00: AR-1498 durably released done after protected PR #376 merge at
+  9231a660675d4b01277a60b75d838d69c6bba917. origin/main contains reviewed head
+  55ff13fb6cb220034ccd1fb4febf0e86e848db94; source/docs content match and post-merge serialized
+  authenticated_lifecycle smoke is green 8/8.
