@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Track production credential secrecy and authentication hardening after the prototype.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Production credential hardening follow-up",
-  "updated_at": "2026-09-28T19:46:10+00:00",
+  "updated_at": "2026-09-28T19:48:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1501"
 }
 ---
@@ -28,3 +28,6 @@ This AR is intentionally not required for the development build cycle.
   objective requires advancing the explicitly non-gating hardening follow-up.
 
 - 2026-09-28T19:46:10+00:00: Claimed by ar1501-production-hardening-luna56.
+
+- 2026-09-28T19:48:30+00:00: Recorded command exit 0; command argv SHA-256
+  2c3f8fac18e3ee788132616a5ae8e57ad383d4576e404fa9fb96a415673262ac.
