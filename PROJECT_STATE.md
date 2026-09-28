@@ -16,21 +16,21 @@ Generated from local Git and GitHub. Do not edit.
 | #364 | `dependabot/cargo/jsonschema-0.56.0@1b649e680a58` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump jsonschema from 0.33.0 to 0.56.0 |
 | #365 | `dependabot/cargo/rcgen-0.14.10@8604b5977544` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump rcgen from 0.14.7 to 0.14.10 |
 | #366 | `dependabot/cargo/schemars-1.2.2@047b52b0b5b9` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump schemars from 1.0.4 to 1.2.2 |
-| #375 | `feature/ar-1496-runtime-owned-provider-capture-control@9021c331e8be` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(capture): wire runtime-owned local provider campaign |
+| #375 | `feature/ar-1496-runtime-owned-provider-capture-control@b9a497c31151` | `main` | UNSTABLE | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(capture): wire runtime-owned local provider campaign |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 36435215920 | `b9a497c31151` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 36435215722 | `b9a497c31151` | pull_request | Credential-free benchmark path | in_progress:- |
+| 36435215659 | `b9a497c31151` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 36435215657 | `b9a497c31151` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 36435215561 | `b9a497c31151` | pull_request | Formal assurance | in_progress:- |
+| 36435215550 | `b9a497c31151` | pull_request | Huawei MIT source headers | in_progress:- |
+| 36435215343 | `b9a497c31151` | pull_request | Rust verification | in_progress:- |
+| 36435215239 | `b9a497c31151` | pull_request | Fault assurance | queued:- |
+| 36435215237 | `b9a497c31151` | pull_request | Repository quality | in_progress:- |
 | 36433158573 | `9021c331e8be` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36433158533 | `9021c331e8be` | pull_request | Hosted portability and native qualification | completed:success |
 | 36433158507 | `9021c331e8be` | pull_request | Huawei MIT source headers | completed:success |
-| 36433158491 | `9021c331e8be` | pull_request | Fault assurance | completed:success |
-| 36433158477 | `9021c331e8be` | pull_request | Formal assurance | completed:success |
-| 36433158466 | `9021c331e8be` | pull_request | Credential-free benchmark path | completed:success |
-| 36433158465 | `9021c331e8be` | pull_request | Rust verification | completed:success |
-| 36433158462 | `9021c331e8be` | pull_request | Emulated aarch64 portability | completed:success |
-| 36433158422 | `9021c331e8be` | pull_request | Repository quality | completed:success |
-| 36432102890 | `e664ce9e5e29` | pull_request | Fault assurance | completed:success |
-| 36432102066 | `e664ce9e5e29` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 36432101984 | `e664ce9e5e29` | pull_request | Rust verification | completed:failure |
