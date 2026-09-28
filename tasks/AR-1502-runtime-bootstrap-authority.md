@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supply the runtime-owned authenticated bootstrap authority required for normal live dispatch.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Runtime-owned bootstrap authority",
-  "updated_at": "2026-09-28T21:09:26+00:00",
+  "updated_at": "2026-09-28T21:09:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1502"
 }
 ---
@@ -68,3 +68,6 @@ dependency-safe and must not synthesize authority or accept caller-built input.
   6cf5c4e2a9cf53fa8def50d7f9611e81c47712cb82a3685583e388faa6cc0454.
 
 - 2026-09-28T21:09:26+00:00: Heartbeat by ar1502-seam-audit-repair-luna56.
+
+- 2026-09-28T21:09:29+00:00: Recorded command exit 101; command argv SHA-256
+  84db3b42814a1ad583c2f76da7a5aced3b1dcc5bd1bfd9ed11f94645816935f5.
