@@ -1,7 +1,7 @@
 ---
 {
   "branch": "qualification/ar-1490-fresh-package-runtime-acceptance",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "45df6590cbf9ab75f07dcc0b753335949e28d937",
   "claim_expires": "2026-09-28T17:14:46+00:00",
   "depends_on": [
     "AR-1461",
@@ -10,7 +10,7 @@
     "AR-1489"
   ],
   "id": "AR-1490",
-  "next_action": "Remove temporary fixture/plan helpers after collecting final acceptance evidence, run full applicable gates on exact main, reconcile and release AR-1490 done with explicit unsigned-development-only status.",
+  "next_action": "No further AR-1490 action. Development unsigned qualification is complete; any customer/release publication remains separately gated by a genuinely signed production bundle.",
   "observed_branch": "qualification/ar-1490-fresh-package-runtime-acceptance",
   "observed_dirty": 0,
   "observed_head": "45df6590cbf9ab75f07dcc0b753335949e28d937",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run fresh package first-customer runtime acceptance and produce an explicit readiness report.",
-  "task_revision": 103,
+  "task_revision": 104,
   "title": "Fresh package runtime acceptance",
-  "updated_at": "2026-09-28T15:21:09+00:00",
+  "updated_at": "2026-09-28T15:21:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1490-fresh-package-runtime-acceptance"
 }
 ---
@@ -370,3 +370,26 @@ when exact package or clean-environment inputs are absent.
 
 - 2026-09-28T15:21:09+00:00: Recorded command exit 0; command argv SHA-256
   6840d2f0cea6f9cf6ffce81b9b1b74dcdddaff8701fc6cc1705c309033813254.
+
+- 2026-09-28T15:21:52+00:00: 2026-09-28T15:21:09+00:00: Completed AR-1490 local/mock/replay-only
+  acceptance on exact main 45df6590cbf9ab75f07dcc0b753335949e28d937 with the explicit
+  unsigned-development profile. Fresh bundle archive
+  /srv/data/projects/asb-ar1490-dev-bundle-45df659.tar.gz built and verified;
+  manifest=478616abdcd205630fdf7e9f44606f24884e79de97a34c654f2645ee3e2fc45d,
+  content=575a2f556469b3fe40cbe6d9f62de10c2e02e7ea9564a40591da4c66d8e23591,
+  profile=UnsignedDevelopment, signature_status=Unsigned, 3 artifacts. Clean archive extraction with
+  bounded placeholder manifest.json.sig passed explicit unsigned-development verification; default
+  signed-policy invocation failed closed with runtime bundle signature verification failed.
+  Installed CLI doctor, setup, help, plan, run, sweep, report all passed. Run ar1490-run4 completed
+  one graded attempt with 7/7 metrics and no failures/timeouts/cancellation; sweep capacities 1 and
+  2 both passed with 7/7 metrics; reports were terminal completed with execution hashes
+  364efcee3da9f97baaad3ba59e90e73098fc2e86e1c5789165dd1eaba0147a42, same for c1, and
+  70f2b6cfaef24ccef96e62ec9fafb4b2b5ab466d314b04c89546c9c7d000cec6 for c2. Work root was empty after
+  execution; XDG roots and install root were private. Focused
+  recovery/control/launch/live-service/replay/cancellation tests passed; full cargo fmt --all --
+  --check, clippy --locked --workspace --all-targets -D warnings, cargo test --locked --workspace,
+  RUSTDOCFLAGS=-Dwarnings cargo doc --locked --workspace --no-deps, and cargo build --locked
+  --workspace --release all passed. Real provider, credentials, network, native ARM, and
+  customer-release signing were intentionally not exercised; unsigned development remains truthful
+  and does not authorize production publication. Temporary fixture/plan helpers were removed and
+  product worktree is clean.
