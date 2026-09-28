@@ -18,11 +18,11 @@
   "plan": "../plans/AR-1490-fresh-package-runtime-acceptance.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Run fresh package first-customer runtime acceptance and produce an explicit readiness report.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Fresh package runtime acceptance",
-  "updated_at": "2026-09-27T15:38:50+00:00",
+  "updated_at": "2026-09-28T14:36:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1490-fresh-package-runtime-acceptance"
 }
 ---
@@ -59,3 +59,7 @@ when exact package or clean-environment inputs are absent.
   would not be first-customer release evidence and was not substituted. Next action: provision exact
   signed package and rerun clean install/doctor/setup/run/sweep/replay/cleanup acceptance. No
   product/asb-tui/provider changes made.
+
+- 2026-09-28T14:36:37+00:00: User-authorized development build may use the explicit
+  unsigned-development bundle profile; preserve customer-release signing evidence as an optional
+  future gate and do not treat development output as a customer release.
