@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 64,
+  "task_revision": 65,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-28T23:25:41+00:00",
+  "updated_at": "2026-09-28T23:26:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -260,3 +260,10 @@ public credential/socket paths, or weakening fail-closed gates.
   serial 129/129; git diff --check. Parallel asb-cli has known existing state-root collision (128
   pass, 1 fail), serial is green. Next: strengthen response binding review and run
   changed-package/full gates.
+
+- 2026-09-28T23:26:00+00:00: Exact disposition for recorded failure
+  ccfc6f0a1e826328dbed13f5b9f2f71a67021bc3e60e7ea80709f3429f90299a (23:24:31Z): the
+  schema_conformance gate was invoked from state-repository cwd, so Cargo searched
+  /srv/data/projects/agent-systems-benchmark-state and emitted  (exit 101). This was a
+  command-cwd/setup error, not a product compiler or test failure; the corrected explicit
+  product-worktree cd command passed 4/4 serial.
