@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supply the runtime-owned authenticated bootstrap authority required for normal live dispatch.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Runtime-owned bootstrap authority",
-  "updated_at": "2026-09-28T21:24:26+00:00",
+  "updated_at": "2026-09-28T21:24:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1502"
 }
 ---
@@ -188,3 +188,6 @@ dependency-safe and must not synthesize authority or accept caller-built input.
   --all -- --check exited 0. A concurrently started clippy command exited with LOCK_TIMEOUT after
   10s acquiring the coordinator lock (coordination serialization, not a Rust failure); rerun clippy
   serially next.
+
+- 2026-09-28T21:24:33+00:00: Recorded command exit 0; command argv SHA-256
+  165b66592d52ddd4e707177d6fbd75dd46166e641fe1d35c2e6222ed3e115a0b.
