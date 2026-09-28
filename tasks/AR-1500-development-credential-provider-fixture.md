@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify generated development credentials through provider, capture and replay flows.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Development credential/provider lifecycle fixture",
-  "updated_at": "2026-09-28T19:13:28+00:00",
+  "updated_at": "2026-09-28T19:13:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1500"
 }
 ---
@@ -83,3 +83,6 @@ generated credentials as production-safe secrets.
   failure: authenticated_lifecycle_activates_and_removes_signed_bundle returned control state root
   is already owned from shared test-state contention. Focused fixture tests and workspace Clippy
   passed; rerun serial focused test before final gate.
+
+- 2026-09-28T19:13:35+00:00: Recorded command exit 0; command argv SHA-256
+  0f4e3971bd739f0418ec492f712969e6e94b3efb043fb3fb3e4a27e45930d7a0.
