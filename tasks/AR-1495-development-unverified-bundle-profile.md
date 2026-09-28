@@ -13,16 +13,16 @@
   "next_action": "Monitor PR #373 synchronized exact head 1f5b0f9 and merge only after all required checks and independent review are green.",
   "observed_branch": "feature/ar-1495-development-unverified-bundle-profile",
   "observed_dirty": 0,
-  "observed_head": "1f5b0f9e3c3782e1f202aa700f6515eb8e51417f",
+  "observed_head": "3b0bf6a4525c3d1382639761dc9d3a31c833906b",
   "owner": "ar1332-record-replay-luna56",
   "plan": "../plans/AR-1495-development-unverified-bundle-profile.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add an explicit development-only unverified bundle profile without weakening production or customer-release verification.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Development-only unverified bundle profile",
-  "updated_at": "2026-09-28T13:14:40+00:00",
+  "updated_at": "2026-09-28T13:14:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1495-development-unverified-bundle-profile"
 }
 ---
