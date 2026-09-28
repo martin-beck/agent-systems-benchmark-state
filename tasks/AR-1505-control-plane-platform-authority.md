@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Retry the runtime bootstrap object insertion using the exact LiveProviderRuntimeBridge context; prior patch failed context matching without product mutation.",
+  "next_action": "Fix focused cargo check errors: remove/consume AtomicBool and add RuntimeControlBootstrap local handle revocation; then rustfmt and rerun check/tests.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 1,
   "observed_head": "baa13ea675de2160dcf58f69b106e255f2c3d8de",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 128,
+  "task_revision": 129,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-28T23:57:07+00:00",
+  "updated_at": "2026-09-28T23:57:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -520,3 +520,10 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-28T23:57:07+00:00: Recorded command exit 101; command argv SHA-256
   44858bcc1bea325f8e4ec42626fdf2970d2310a4694e160101531722dea4dfa4.
+
+- 2026-09-28T23:57:43+00:00: 2026-09-28T23:58:00Z: Exact focused gate handoffctl run --owner
+  ar1505-repair-luna56 AR-1505 -- cargo check --locked -p asb-runtime exited 101. stderr:
+  live_service.rs:34:14 unused import AtomicBool under -D warnings; live_service.rs:1537:24 no
+  method named revoke for &LiveProviderRuntimeHandle. No syntax error and no product test ran.
+  Corrective action is to add a runtime-owned revocation fence to the handle/provisioner, then rerun
+  unchanged check.
