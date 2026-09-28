@@ -175,7 +175,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1490](../tasks/AR-1490-fresh-package-runtime-acceptance.md): Fresh package runtime acceptance | ar1490-dev-acceptance-luna56 | Run fresh package first-customer runtime acceptance and produce an explicit readiness report. | Create a clean verifier root from the exact development bundle archive, leaving installed CLI and fixture helpers outside that root; rerun unsigned-development verification with the bounded placeholder signature, then remove temporary helpers and run final gates. |
+| P0 | [AR-1490](../tasks/AR-1490-fresh-package-runtime-acceptance.md): Fresh package runtime acceptance | ar1490-dev-acceptance-luna56 | Run fresh package first-customer runtime acceptance and produce an explicit readiness report. | Remove temporary fixture/plan helpers after collecting final acceptance evidence, run full applicable gates on exact main, reconcile and release AR-1490 done with explicit unsigned-development-only status. |
 | P0 | [AR-1498](../tasks/AR-1498-authenticated-lifecycle-executor.md): Authenticated lifecycle artifact executor | ar1498-lifecycle-executor | Provide the authenticated artifact executor and activation authority behind the ASB agent lifecycle router. | Promote after coordinator review; define and implement the authenticated artifact executor and activation authority required by ASB lifecycle calls, with fail-closed restart-safe tests. |
 
 ### Blocked (74)

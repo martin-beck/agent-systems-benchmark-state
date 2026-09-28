@@ -10,7 +10,7 @@
     "AR-1489"
   ],
   "id": "AR-1490",
-  "next_action": "Create a clean verifier root from the exact development bundle archive, leaving installed CLI and fixture helpers outside that root; rerun unsigned-development verification with the bounded placeholder signature, then remove temporary helpers and run final gates.",
+  "next_action": "Remove temporary fixture/plan helpers after collecting final acceptance evidence, run full applicable gates on exact main, reconcile and release AR-1490 done with explicit unsigned-development-only status.",
   "observed_branch": "qualification/ar-1490-fresh-package-runtime-acceptance",
   "observed_dirty": 3,
   "observed_head": "45df6590cbf9ab75f07dcc0b753335949e28d937",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run fresh package first-customer runtime acceptance and produce an explicit readiness report.",
-  "task_revision": 92,
+  "task_revision": 93,
   "title": "Fresh package runtime acceptance",
-  "updated_at": "2026-09-28T15:16:38+00:00",
+  "updated_at": "2026-09-28T15:16:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1490-fresh-package-runtime-acceptance"
 }
 ---
@@ -333,3 +333,13 @@ when exact package or clean-environment inputs are absent.
 
 - 2026-09-28T15:16:38+00:00: Recorded command exit 2; command argv SHA-256
   ddbed392466149ae3feb41bbf6b8317b9c112fdffc176571d42478d94892b1fc.
+
+- 2026-09-28T15:16:55+00:00: 2026-09-28T15:16:38+00:00: Clean verifier-root acceptance passed. Exact
+  archive was extracted without runtime-only helpers; bounded placeholder manifest.json.sig was
+  present; explicit --profile unsigned-development verified asb-runtime-dev-ar1490 0.1.0-dev-ar1490
+  with profile=UnsignedDevelopment, signature_status=Unsigned,
+  manifest=478616abdcd205630fdf7e9f44606f24884e79de97a34c654f2645ee3e2fc45d,
+  content=575a2f556469b3fe40cbe6d9f62de10c2e02e7ea9564a40591da4c66d8e23591, artifacts=3. The same
+  clean root under default signed policy correctly failed closed with runtime bundle signature
+  verification failed (exit 2). This confirms the unsigned bypass is explicit and bounded; no
+  production/customer release claim.
