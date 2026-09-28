@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated artifact executor and activation authority behind the ASB agent lifecycle router.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Authenticated lifecycle artifact executor",
-  "updated_at": "2026-09-28T17:08:47+00:00",
+  "updated_at": "2026-09-28T17:09:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1498"
 }
 ---
@@ -166,3 +166,8 @@ protocol/schema fixtures consumed by AR-1199 and downstream asb-tui.
 
 - 2026-09-28T17:08:47+00:00: Recorded command exit 101; command argv SHA-256
   d6afa28956d523a91329e955c754e6129775750d8b7005e15ca8a6096ed7e101.
+
+- 2026-09-28T17:09:21+00:00: Positive activation fixture initially failed the strict no-unsafe gate:
+  Rust 2024 std::env set_var/remove_var requires unsafe blocks, forbidden by first-party crate
+  policy. Next action: inject VerifierConfig through a test-only backend constructor/field, remove
+  all environment mutation, rerun focused activation test.
