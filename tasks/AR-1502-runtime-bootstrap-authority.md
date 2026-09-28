@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supply the runtime-owned authenticated bootstrap authority required for normal live dispatch.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Runtime-owned bootstrap authority",
-  "updated_at": "2026-09-28T21:38:53+00:00",
+  "updated_at": "2026-09-28T21:41:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1502"
 }
 ---
@@ -295,3 +295,6 @@ dependency-safe and must not synthesize authority or accept caller-built input.
   plus exact headers/AWQ where reported); Rust verification, policy/coverage/supply chain, and
   emulated aarch64 remain pending. Continue waiting; do not merge until all required checks terminal
   green.
+
+- 2026-09-28T21:41:45+00:00: Recorded command exit 0; command argv SHA-256
+  2e6d53f5ce3bb43ff7f1bcb103db49a0e1161043da80185d9420c5125c2a4696.
