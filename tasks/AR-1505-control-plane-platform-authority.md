@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 83,
+  "task_revision": 84,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-28T23:33:20+00:00",
+  "updated_at": "2026-09-28T23:33:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -351,3 +351,6 @@ public credential/socket paths, or weakening fail-closed gates.
   SHA256:a36V6yPvRZyxnQ2113tiA/MlHt7mPfJEXAGByBXVkuE; commit includes matching Signed-off-by
   trailer. All final workspace and focused gates are green; no gate is blocked. Ready to push and
   open exact-head PR.
+
+- 2026-09-28T23:33:28+00:00: Recorded command exit 0; command argv SHA-256
+  cc19e8c7b5831cda990605be9340eead32cc5364a3b7971e2f8103704fb3b0a4.
