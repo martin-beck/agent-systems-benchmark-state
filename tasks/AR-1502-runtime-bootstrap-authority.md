@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supply the runtime-owned authenticated bootstrap authority required for normal live dispatch.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Runtime-owned bootstrap authority",
-  "updated_at": "2026-09-28T21:18:41+00:00",
+  "updated_at": "2026-09-28T21:19:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1502"
 }
 ---
@@ -127,3 +127,6 @@ dependency-safe and must not synthesize authority or accept caller-built input.
   command; malformed shell quoting passed literal backslash-n text, so bash reported here-document
   wanted PATCHn*** and syntax error near unexpected token '(' before touching the product file. No
   product mutation occurred; next retry uses safely quoted apply_patch through handoffctl.
+
+- 2026-09-28T21:19:04+00:00: Recorded command exit 1; command argv SHA-256
+  37e7f6ab61d006fdfc05ba3aae49b5b960cc36fa8c0cf66ece454c1234a4cc55.
