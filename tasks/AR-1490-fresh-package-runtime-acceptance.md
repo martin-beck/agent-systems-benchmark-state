@@ -10,7 +10,7 @@
     "AR-1489"
   ],
   "id": "AR-1490",
-  "next_action": "Omit None-valued cassette_sha256 from TOML (TOML has no null literal), regenerate the nested plan, revalidate with installed asb plan, then execute run/sweep and recovery checks.",
+  "next_action": "Repair the disposable fixture agent to emit the exact parser.py and tests.txt grading inventory, use a new run root/id, then rerun installed local/mock run and sweep.",
   "observed_branch": "qualification/ar-1490-fresh-package-runtime-acceptance",
   "observed_dirty": 2,
   "observed_head": "45df6590cbf9ab75f07dcc0b753335949e28d937",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run fresh package first-customer runtime acceptance and produce an explicit readiness report.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Fresh package runtime acceptance",
-  "updated_at": "2026-09-28T14:57:11+00:00",
+  "updated_at": "2026-09-28T14:57:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1490-fresh-package-runtime-acceptance"
 }
 ---
@@ -172,3 +172,10 @@ when exact package or clean-environment inputs are absent.
 
 - 2026-09-28T14:57:11+00:00: Recorded command exit 5; command argv SHA-256
   d3911253abcdda827e8931919c2bf8d9e83912114139d1f4ad6baed0241695c7.
+
+- 2026-09-28T14:57:32+00:00: Recorded execution failure: installed unsigned-development package
+  passed plan and owner-backed run admission, but the fixture agent omitted the required tests.txt
+  artifact; run ar1490-run terminal decision was fail with failed_check_count=1, exit_code=0, no
+  timeout/cancellation/infrastructure error, and cleanup left work root empty. This is a harness
+  fixture defect, not an ASB runtime failure. Next action is to add the exact tests.txt expected
+  fixture and rerun with fresh result/work roots.
