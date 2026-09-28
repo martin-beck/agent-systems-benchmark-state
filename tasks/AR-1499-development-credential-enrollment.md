@@ -5,7 +5,7 @@
   "claim_expires": "",
   "depends_on": ["AR-1442", "AR-1496"],
   "id": "AR-1499",
-  "next_action": "Promote after dependencies are complete; implement the versioned development enrollment contract and deterministic generated-key/mock-provider fixtures.",
+  "next_action": "Promote after dependencies are complete; implement the versioned development enrollment contract with automatic local identity fallback and deterministic generated-key/mock-provider fixtures.",
   "owner": "",
   "plan": "../plans/AR-1499-development-credential-enrollment.md",
   "priority": "P0",

@@ -5,7 +5,7 @@
   "claim_expires": "",
   "depends_on": ["AR-1499", "AR-1443"],
   "id": "AR-1500",
-  "next_action": "Promote after AR-1499; wire the deterministic development credential fixture into provider validation, capture, replay and comparison qualification.",
+  "next_action": "Promote after AR-1499; wire the deterministic development credential fixture and non-blocking auth/signature/key-management fallback into provider validation, capture, replay and comparison qualification.",
   "owner": "",
   "plan": "../plans/AR-1500-development-credential-provider-fixture.md",
   "priority": "P0",
