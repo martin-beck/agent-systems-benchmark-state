@@ -170,17 +170,12 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1490](../tasks/AR-1490-fresh-package-runtime-acceptance.md): Fresh package runtime acceptance | ar1490-dev-acceptance-luna56 | Run fresh package first-customer runtime acceptance and produce an explicit readiness report. | Promote and claim, then audit exact package and clean-environment inputs before executing the local/mock/replay readiness run. |
 | P0 | [AR-1496](../tasks/AR-1496-runtime-owned-provider-capture-control.md): Runtime-owned provider capture and control activation | ar1496-provider-capture-luna56 | Complete runtime-owned provider capture, tuple cassette reconciliation and verified offline activation required by the setup wizard. | PR #375 exact head cb44d1b is pushed with protocol-status validation repaired; obtain independent re-review and required hosted checks before any signed merge. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1490](../tasks/AR-1490-fresh-package-runtime-acceptance.md): Fresh package runtime acceptance | Unclaimed | Run fresh package first-customer runtime acceptance and produce an explicit readiness report. | Promote and claim, then audit exact package and clean-environment inputs before executing the local/mock/replay readiness run. |
 
 ### Blocked (73)
 

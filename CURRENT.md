@@ -7,13 +7,8 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1490](tasks/AR-1490-fresh-package-runtime-acceptance.md): Fresh package runtime acceptance | Run fresh package first-customer runtime acceptance and produce an explicit readiness report. | Promote and claim, then audit exact package and clean-environment inputs before executing the local/mock/replay readiness run. | ar1490-dev-acceptance-luna56 |
 | P0 | [AR-1496](tasks/AR-1496-runtime-owned-provider-capture-control.md): Runtime-owned provider capture and control activation | Complete runtime-owned provider capture, tuple cassette reconciliation and verified offline activation required by the setup wizard. | PR #375 exact head cb44d1b is pushed with protocol-status validation repaired; obtain independent re-review and required hosted checks before any signed merge. | ar1496-provider-capture-luna56 |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1490](tasks/AR-1490-fresh-package-runtime-acceptance.md): Fresh package runtime acceptance | Run fresh package first-customer runtime acceptance and produce an explicit readiness report. | Promote and claim, then audit exact package and clean-environment inputs before executing the local/mock/replay readiness run. | - |
 
 ## Blocked
 

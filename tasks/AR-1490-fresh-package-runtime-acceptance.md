@@ -2,7 +2,7 @@
 {
   "branch": "qualification/ar-1490-fresh-package-runtime-acceptance",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-28T16:36:40+00:00",
   "depends_on": [
     "AR-1461",
     "AR-1462",
@@ -14,15 +14,15 @@
   "observed_branch": "qualification/ar-1490-fresh-package-runtime-acceptance",
   "observed_dirty": 0,
   "observed_head": "b048fef92f4bdb4eedd5379d645f4288a4b6ab20",
-  "owner": "",
+  "owner": "ar1490-dev-acceptance-luna56",
   "plan": "../plans/AR-1490-fresh-package-runtime-acceptance.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Run fresh package first-customer runtime acceptance and produce an explicit readiness report.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Fresh package runtime acceptance",
-  "updated_at": "2026-09-28T14:36:37+00:00",
+  "updated_at": "2026-09-28T14:36:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1490-fresh-package-runtime-acceptance"
 }
 ---
@@ -63,3 +63,5 @@ when exact package or clean-environment inputs are absent.
 - 2026-09-28T14:36:37+00:00: User-authorized development build may use the explicit
   unsigned-development bundle profile; preserve customer-release signing evidence as an optional
   future gate and do not treat development output as a customer release.
+
+- 2026-09-28T14:36:40+00:00: Claimed by ar1490-dev-acceptance-luna56.
