@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-28T23:09:35+00:00",
+  "updated_at": "2026-09-28T23:09:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -114,3 +114,11 @@ public credential/socket paths, or weakening fail-closed gates.
   86be4d3b0bdeb49663d8e7d90fc28e64e308bc71b7c7e0ea1c62c520e6377e24.
 
 - 2026-09-28T23:09:35+00:00: Heartbeat by ar1505-control-plane-luna56.
+
+- 2026-09-28T23:09:43+00:00: Protocol implementation now compiles. Focused evidence: cargo test
+  --locked -p asb-control --lib --no-fail-fast passed 70/70, including bootstrap identity-only
+  request, response session/generation/nonce/restart/expiry binding, cancellation binding, and
+  unknown-field rejection; cargo test --locked -p asb-cli --lib runtime_authority passed 2/2.
+  RuntimeBootstrap is server peer-bound through ControlBackend::execute_authenticated and
+  ControlClient::session_identity_sha256; RunnerBackend rejects mismatched caller hashes and records
+  revocation.
