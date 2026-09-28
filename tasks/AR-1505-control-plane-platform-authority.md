@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-28T23:25:00+00:00",
+  "updated_at": "2026-09-28T23:25:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -248,3 +248,15 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-28T23:25:00+00:00: Recorded command exit 0; command argv SHA-256
   f43731b911146d51ab3398482427c333a43e8c5ec2ebed23da68f3e14c009335.
+
+- 2026-09-28T23:25:41+00:00: Gate evidence: initial schema gate invocation omitted the required
+  product-worktree cd and exited 101 with exact stderr: error: could not find Cargo.toml in
+  /srv/data/projects/agent-systems-benchmark-state or any parent directory. Corrected command
+  explicitly cd'd to
+  /srv/data/projects/agent-systems-benchmark-ar-1505-control-plane-platform-authority;
+  schema_conformance passed 4/4 serial (checked-in equality, negative boundary rejection, fixtures,
+  envelope validation). Prior exit-0 sequence remains: cargo check asb-control/asb-runtime/asb-cli;
+  control lib 70/70; runtime live_service 47 passed; clippy -D warnings; fmt check; asb-cli lib
+  serial 129/129; git diff --check. Parallel asb-cli has known existing state-root collision (128
+  pass, 1 fail), serial is green. Next: strengthen response binding review and run
+  changed-package/full gates.
