@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1499-development-credential-enrollment",
-  "checkpoint_commit": "7bdda85240653fa15e8eee602240137d88b8442b",
+  "checkpoint_commit": "78c2717d47a0c90ad660c581a741f122417d9ccd",
   "claim_expires": "2026-09-28T20:25:28+00:00",
   "depends_on": [
     "AR-1442",
     "AR-1496"
   ],
   "id": "AR-1499",
-  "next_action": "PR #378 failed hosted portability run 36465569661 before tests: source identity rejected repair/ar-1499-selection-binding because HEAD 7bdda85 does not have protected merge base 65bcdf3 as an ancestor. Rebuild the repair branch from 65bcdf3, apply signed corrective changes 51c57d4/7bdda85, force-with-lease the dedicated branch, then rerun exact-head CI.",
+  "next_action": "PR #378 exact head 78c2717 now has protected main 65bcdf3 as an ancestry anchor; merge-base(origin/main, head)=65bcdf3. Hosted portability previously failed at 7bdda85 due immutable-source topology; rerun and monitor every exact-head required check before merge.",
   "observed_branch": "feature/ar-1499-development-credential-enrollment",
   "observed_dirty": 0,
   "observed_head": "78c2717d47a0c90ad660c581a741f122417d9ccd",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair merged development credential selection binding",
-  "task_revision": 64,
+  "task_revision": 65,
   "title": "Development credential enrollment contract",
-  "updated_at": "2026-09-28T18:34:49+00:00",
+  "updated_at": "2026-09-28T18:35:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1499"
 }
 ---
@@ -198,3 +198,8 @@ labelled and isolated.
 
 - 2026-09-28T18:34:49+00:00: Recorded command exit 0; command argv SHA-256
   f47b5012904ddcd474ba4aea964204445f004f0d6c60f5f60cfcd25453b3ffe5.
+
+- 2026-09-28T18:35:18+00:00: Topology repair: signed merge-anchor 78c2717 created on protected main
+  65bcdf3, preserving corrective commits 51c57d4 and 7bdda85. Dedicated repair branch
+  repair/ar-1499-selection-binding updated and verified at the same head; merge-base equals
+  protected base. Full local check/clippy/test/doc/release gates completed without failure.
