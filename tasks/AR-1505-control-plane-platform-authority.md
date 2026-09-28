@@ -14,17 +14,17 @@
   "id": "AR-1505",
   "next_action": "Implement versioned RuntimeBootstrap control operation and runtime adapter; add provider-free identity/generation/nonce/expiry/revocation/restart/cancellation/egress tests.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
-  "observed_dirty": 11,
-  "observed_head": "3c6af6b351e0c32ee8f5e48716654d854dcbbac2",
+  "observed_dirty": 0,
+  "observed_head": "baa13ea675de2160dcf58f69b106e255f2c3d8de",
   "owner": "ar1505-control-plane-luna56",
   "plan": "../plans/AR-1505-control-plane-platform-authority.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 80,
+  "task_revision": 81,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-28T23:32:25+00:00",
+  "updated_at": "2026-09-28T23:32:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
