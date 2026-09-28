@@ -10,7 +10,7 @@
     "AR-1489"
   ],
   "id": "AR-1490",
-  "next_action": "Run the runtime recovery/cancellation tests with separate cargo test invocations or one valid filter, then execute strict replay authority and cleanup checks; no product change is indicated.",
+  "next_action": "Re-run the development verifier smoke test with the exact accepted profile arguments after classifying the exit-2 invocation; then continue cleanup and final gates.",
   "observed_branch": "qualification/ar-1490-fresh-package-runtime-acceptance",
   "observed_dirty": 3,
   "observed_head": "45df6590cbf9ab75f07dcc0b753335949e28d937",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run fresh package first-customer runtime acceptance and produce an explicit readiness report.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Fresh package runtime acceptance",
-  "updated_at": "2026-09-28T15:12:47+00:00",
+  "updated_at": "2026-09-28T15:14:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1490-fresh-package-runtime-acceptance"
 }
 ---
@@ -299,3 +299,11 @@ when exact package or clean-environment inputs are absent.
 
 - 2026-09-28T15:12:47+00:00: Recorded command exit 2; command argv SHA-256
   0ea33d8e77fb93f7bba377fb23d135003b4f010654080aa5fdb5b04249115f0f.
+
+- 2026-09-28T15:14:38+00:00: 2026-09-28T15:12:47+00:00: Recorded exit 2 at the unsigned-development
+  verifier smoke-test stage after writing a bounded 13-byte placeholder manifest.json.sig. The task
+  projection retained only the command hash, not stderr; this is an acceptance-command failure
+  requiring immediate reproduction of the exact verifier invocation and stderr, not a product
+  result. Next action: inspect the installed verifier usage and rerun the single verifier command
+  through handoffctl with explicit --profile unsigned-development and the exact target/hash
+  arguments; preserve strict default verification evidence separately.

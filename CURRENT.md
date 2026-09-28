@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1490](tasks/AR-1490-fresh-package-runtime-acceptance.md): Fresh package runtime acceptance | Run fresh package first-customer runtime acceptance and produce an explicit readiness report. | Run the runtime recovery/cancellation tests with separate cargo test invocations or one valid filter, then execute strict replay authority and cleanup checks; no product change is indicated. | ar1490-dev-acceptance-luna56 |
+| P0 | [AR-1490](tasks/AR-1490-fresh-package-runtime-acceptance.md): Fresh package runtime acceptance | Run fresh package first-customer runtime acceptance and produce an explicit readiness report. | Re-run the development verifier smoke test with the exact accepted profile arguments after classifying the exit-2 invocation; then continue cleanup and final gates. | ar1490-dev-acceptance-luna56 |
 | P0 | [AR-1498](tasks/AR-1498-authenticated-lifecycle-executor.md): Authenticated lifecycle artifact executor | Provide the authenticated artifact executor and activation authority behind the ASB agent lifecycle router. | Promote after coordinator review; define and implement the authenticated artifact executor and activation authority required by ASB lifecycle calls, with fail-closed restart-safe tests. | ar1498-lifecycle-executor |
 
 ## Blocked
