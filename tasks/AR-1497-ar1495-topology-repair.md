@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair AR-1495 protected-main synchronization topology without changing product semantics.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "AR-1495 protected-main topology repair",
-  "updated_at": "2026-09-28T13:51:01+00:00",
+  "updated_at": "2026-09-28T13:52:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1497-ar1495-topology-repair"
 }
 ---
@@ -99,3 +99,6 @@ post-merge workflows.
   Huawei 36431416937 SUCCESS; Hosted 36431416952 IN_PROGRESS; Repository Quality 36431416984
   IN_PROGRESS; Fault 36431417124 IN_PROGRESS; Formal 36431417042 IN_PROGRESS; AArch64 36431417245
   IN_PROGRESS; Credential-free 36431417011 IN_PROGRESS; Rust 36431417064 IN_PROGRESS.
+
+- 2026-09-28T13:52:56+00:00: Recorded command exit 0; command argv SHA-256
+  c9418b1c5d1f0dcfbbe3472025141b02e47bea5ca419920d24f51e8975bf0cee.
