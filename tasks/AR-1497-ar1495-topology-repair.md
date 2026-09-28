@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair AR-1495 protected-main synchronization topology without changing product semantics.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "AR-1495 protected-main topology repair",
-  "updated_at": "2026-09-28T13:37:28+00:00",
+  "updated_at": "2026-09-28T13:37:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1497-ar1495-topology-repair"
 }
 ---
@@ -45,3 +45,6 @@ post-merge workflows.
 - 2026-09-28T13:37:24+00:00: Claimed by ar1332-record-replay-luna56.
 
 - 2026-09-28T13:37:28+00:00: Heartbeat by ar1332-record-replay-luna56.
+
+- 2026-09-28T13:37:52+00:00: Recorded command exit 0; command argv SHA-256
+  fe520199f971edc0f636e18c09ee56142b7bd8b1991a8efc54489eb95766b2d9.
