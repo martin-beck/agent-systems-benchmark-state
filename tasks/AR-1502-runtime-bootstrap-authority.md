@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supply the runtime-owned authenticated bootstrap authority required for normal live dispatch.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Runtime-owned bootstrap authority",
-  "updated_at": "2026-09-28T21:08:48+00:00",
+  "updated_at": "2026-09-28T21:09:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1502"
 }
 ---
@@ -63,3 +63,6 @@ dependency-safe and must not synthesize authority or accept caller-built input.
 
 - 2026-09-28T21:08:48+00:00: Recorded command exit 0; command argv SHA-256
   7ae190ca3c42dd8b3f76c53c59e8f1262925947da7664ad9c1c9e90005f99610.
+
+- 2026-09-28T21:09:04+00:00: Recorded command exit 1; command argv SHA-256
+  6cf5c4e2a9cf53fa8def50d7f9611e81c47712cb82a3685583e388faa6cc0454.
