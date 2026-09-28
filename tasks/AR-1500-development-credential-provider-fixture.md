@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify generated development credentials through provider, capture and replay flows.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Development credential/provider lifecycle fixture",
-  "updated_at": "2026-09-28T18:59:35+00:00",
+  "updated_at": "2026-09-28T19:00:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1500"
 }
 ---
@@ -31,3 +31,6 @@ generated credentials as production-safe secrets.
 - 2026-09-28T18:58:19+00:00: Claimed by ar1500-provider-fixture-luna56.
 
 - 2026-09-28T18:59:35+00:00: Heartbeat by ar1500-provider-fixture-luna56.
+
+- 2026-09-28T19:00:07+00:00: Recorded command exit 0; command argv SHA-256
+  f67ce52dfacb860d92b2464ed85d1277b484e3e4b645569dae3be9773fbab02e.
