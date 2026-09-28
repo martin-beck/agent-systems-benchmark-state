@@ -180,7 +180,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1498](../tasks/AR-1498-authenticated-lifecycle-executor.md): Authenticated lifecycle artifact executor | ar1498-repair-luna56 | Provide the authenticated artifact executor and activation authority behind the ASB agent lifecycle router. | Publish signed commit 75a2575085b65325b9e2245677f2db730fcf09b2 for independent review; require exact-head CI, merge integrity, post-merge verification, then release AR-1498 durably. |
+| P0 | [AR-1498](../tasks/AR-1498-authenticated-lifecycle-executor.md): Authenticated lifecycle artifact executor | ar1498-repair-luna56 | Lifecycle branch coverage expanded; serialized workspace llvm-cov 90.69&#37; lines | Run enforcing coverage floor and remaining applicable gates; classify any failures before signed amend/push. |
 
 ### Blocked (74)
 

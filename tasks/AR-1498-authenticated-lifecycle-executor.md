@@ -12,7 +12,7 @@
     "AR-1496"
   ],
   "id": "AR-1498",
-  "next_action": "Publish signed commit 75a2575085b65325b9e2245677f2db730fcf09b2 for independent review; require exact-head CI, merge integrity, post-merge verification, then release AR-1498 durably.",
+  "next_action": "Run enforcing coverage floor and remaining applicable gates; classify any failures before signed amend/push.",
   "observed_branch": "feature/ar-1498-authenticated-lifecycle-executor",
   "observed_dirty": 3,
   "observed_head": "75a2575085b65325b9e2245677f2db730fcf09b2",
@@ -21,10 +21,10 @@
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Provide the authenticated artifact executor and activation authority behind the ASB agent lifecycle router.",
-  "task_revision": 69,
+  "summary": "Lifecycle branch coverage expanded; serialized workspace llvm-cov 90.69% lines",
+  "task_revision": 70,
   "title": "Authenticated lifecycle artifact executor",
-  "updated_at": "2026-09-28T17:22:46+00:00",
+  "updated_at": "2026-09-28T17:23:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1498"
 }
 ---
@@ -238,3 +238,11 @@ protocol/schema fixtures consumed by AR-1199 and downstream asb-tui.
 
 - 2026-09-28T17:22:33+00:00: Recorded command exit 0; command argv SHA-256
   d9a8f100f96df20c7f9307e7cc89d05511178cb8038debdc7c4f40065c83a0f8.
+
+- 2026-09-28T17:23:42+00:00: Coverage repair slice completed: added serialized authenticated
+  lifecycle tests for target incompatibility, signature/provenance mismatch with
+  retry/idempotency/status, private bundle-root symlink rejection, cancel terminal/idempotency plus
+  remove/retry rejection, and expired install intent fencing. Focused lifecycle 8/8 passed.
+  Workspace cargo llvm-cov summary-only --fail-under-lines 0 passed serialized with TOTAL
+  67,382/73,655 lines = 90.69% (102,289 regions, 88.70% region coverage); no gate weakened. Next run
+  enforcing check_coverage floor.
