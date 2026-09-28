@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1503",
-  "next_action": "Independently review dirty diff, expand negative lifecycle coverage if needed, then run full applicable ASB gates.",
+  "next_action": "Diagnose unrelated full-workspace ASB test race, rerun serialized or focused affected gate; then independently review AR-1503 diff and decide whether platform-launcher seam is genuinely available.",
   "observed_branch": "feature/ar-1503-runtime-control-process-owner",
   "observed_dirty": 3,
   "observed_head": "3c6af6b351e0c32ee8f5e48716654d854dcbbac2",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Own the authenticated control session and hand off only an opaque live dispatch source.",
-  "task_revision": 68,
+  "task_revision": 69,
   "title": "Runtime/control process owner",
-  "updated_at": "2026-09-28T22:37:40+00:00",
+  "updated_at": "2026-09-28T22:37:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1503-runtime-control-process-owner"
 }
 ---
@@ -245,3 +245,10 @@ asb-tui, synthesize authority, or accept caller-built runtime inputs.
   534f8613e1c316db8f0f46dd989e44e14a8ca74304a94791b4e4a1c59b2fbb1d.
 
 - 2026-09-28T22:37:40+00:00: Heartbeat by ar1503-repair-luna56.
+
+- 2026-09-28T22:37:52+00:00: Full cargo test --locked --workspace reached ASB CLI but failed 2
+  unrelated existing control tests: configuration_apply_is_idempotent_and_generation_fenced and
+  state_root_is_exclusive_and_uncertain_restart_fails_closed. Exact stderr: CliError code=operation
+  message="control state root is already owned" exit_code=4 settings_issue=InvalidFormat, panics at
+  crates/asb-cli/src/control.rs:6521:45 and :8390:45. AR-1503 process_owner focused tests were
+  green; no failure implicated in changed code. Do not repeat unchanged parallel workspace run.
