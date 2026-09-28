@@ -12,7 +12,7 @@
   "id": "AR-1490",
   "next_action": "Remove temporary fixture/plan helpers after collecting final acceptance evidence, run full applicable gates on exact main, reconcile and release AR-1490 done with explicit unsigned-development-only status.",
   "observed_branch": "qualification/ar-1490-fresh-package-runtime-acceptance",
-  "observed_dirty": 3,
+  "observed_dirty": 0,
   "observed_head": "45df6590cbf9ab75f07dcc0b753335949e28d937",
   "owner": "ar1490-dev-acceptance-luna56",
   "plan": "../plans/AR-1490-fresh-package-runtime-acceptance.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run fresh package first-customer runtime acceptance and produce an explicit readiness report.",
-  "task_revision": 95,
+  "task_revision": 96,
   "title": "Fresh package runtime acceptance",
-  "updated_at": "2026-09-28T15:17:20+00:00",
+  "updated_at": "2026-09-28T15:17:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1490-fresh-package-runtime-acceptance"
 }
 ---
