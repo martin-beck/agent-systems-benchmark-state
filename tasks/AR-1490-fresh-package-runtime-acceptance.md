@@ -2,7 +2,7 @@
 {
   "branch": "qualification/ar-1490-fresh-package-runtime-acceptance",
   "checkpoint_commit": "45df6590cbf9ab75f07dcc0b753335949e28d937",
-  "claim_expires": "2026-09-28T17:14:46+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1461",
     "AR-1462",
@@ -14,15 +14,15 @@
   "observed_branch": "qualification/ar-1490-fresh-package-runtime-acceptance",
   "observed_dirty": 0,
   "observed_head": "45df6590cbf9ab75f07dcc0b753335949e28d937",
-  "owner": "ar1490-dev-acceptance-luna56",
+  "owner": "",
   "plan": "../plans/AR-1490-fresh-package-runtime-acceptance.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Run fresh package first-customer runtime acceptance and produce an explicit readiness report.",
-  "task_revision": 104,
+  "task_revision": 105,
   "title": "Fresh package runtime acceptance",
-  "updated_at": "2026-09-28T15:21:52+00:00",
+  "updated_at": "2026-09-28T15:22:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1490-fresh-package-runtime-acceptance"
 }
 ---
@@ -393,3 +393,8 @@ when exact package or clean-environment inputs are absent.
   customer-release signing were intentionally not exercised; unsigned development remains truthful
   and does not authorize production publication. Temporary fixture/plan helpers were removed and
   product worktree is clean.
+
+- 2026-09-28T15:22:04+00:00: AR-1490 complete: exact-main unsigned-development bundle passed fresh
+  package install/doctor/setup/plan/run/sweep/report, cancellation/recovery/replay and full
+  applicable Rust gates. Development-only unsigned status is explicit; no
+  production/customer-release signing or publication claim.
