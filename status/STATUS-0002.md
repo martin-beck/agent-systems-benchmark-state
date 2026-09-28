@@ -176,12 +176,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P2 | [AR-1501](../tasks/AR-1501-production-credential-hardening.md): Production credential hardening follow-up | ar1501-credential-contract-repair-luna56 | Track production credential secrecy and authentication hardening after the prototype. | Monitor all seven active post-merge workflows for terminal success, verify remote merge signature/tree/parents and main tree, then release AR with durable evidence. |
-
 ### Blocked (74)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -322,7 +316,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (376)
+### Done (377)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -501,3 +495,5 @@
 | P0 | [AR-1479](../tasks/AR-1479-rust-ci-flake-repair.md): Rust CI timing and state-root flake repair | Unclaimed | Repair the unrelated Rust state-root collision and malformed-ready-marker timing flakes blocking AR-1420 exact-head CI. | Monitor exact-main post-merge workflows for 1015a461; after all seven green, release AR-1479 and requalify AR-1420 PR #350 head 2884508. |
 | P0 | [AR-1480](../tasks/AR-1480-runtime-control-cli-composition.md): Runtime-control CLI composition | Unclaimed | Compose authenticated runtime enrollment into opaque normal CLI run and sweep dispatch. | Run reconcile and doctor --live, then release AR-1480 done ownerless with complete merge/post-merge evidence. |
 | P0 | [AR-1484](../tasks/AR-1484-runtime-control-owner-contract.md): Runtime/control process-owner contract | Unclaimed | Define stable runtime/control process-owner lifecycle and opaque handoff contract. | Reconcile/doctor, then release AR-1484 done ownerless with complete merge/post-merge evidence. |
+| P0 | [AR-1485](../tasks/AR-1485-process-owner-local-mock-lifecycle.md): Process-owner local/mock lifecycle | Unclaimed | Implement runtime-owned local/mock process lifecycle and opaque-source handoff. | Release complete; retain exact merge and eight workflow evidence. |
+| P0 | [AR-1486](../tasks/AR-1486-runtime-owner-cli-entry-wiring.md): Runtime-owner CLI entry wiring | Unclaimed | Wire the runtime-owned local/mock process owner into ordinary CLI run and sweep. | Release complete; retain exact merge and eight workflow evidence. |

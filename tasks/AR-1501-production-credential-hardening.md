@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1501-production-credential-hardening",
   "checkpoint_commit": "7167e3da7ab1fb35d4fc9c0e61ee754c89e670d6",
-  "claim_expires": "2026-09-28T22:27:44+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1499",
     "AR-1500"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1501-production-credential-hardening",
   "observed_dirty": 0,
   "observed_head": "eb2239ab2f4643601eff22a574386076ad6e1bf6",
-  "owner": "ar1501-credential-contract-repair-luna56",
+  "owner": "",
   "plan": "../plans/AR-1501-production-credential-hardening.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Track production credential secrecy and authentication hardening after the prototype.",
-  "task_revision": 108,
+  "task_revision": 109,
   "title": "Production credential hardening follow-up",
-  "updated_at": "2026-09-28T20:40:50+00:00",
+  "updated_at": "2026-09-28T20:41:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1501"
 }
 ---
@@ -346,3 +346,15 @@ This AR is intentionally not required for the development build cycle.
 
 - 2026-09-28T20:40:50+00:00: Recorded command exit 0; command argv SHA-256
   200f5d3a9261d71bc1287b126a79d45d16645ba50318f797e4fb6c42f72b0295.
+
+- 2026-09-28T20:41:44+00:00: Released after protected exact-head merge and post-merge verification.
+  Product PR #380 head eb2239ab2f4643601eff22a574386076ad6e1bf6; protected signed merge
+  7167e3da7ab1fb35d4fc9c0e61ee754c89e670d6 with parents 556385bfdf8b044e9d6e7530972139b3beb31d91 and
+  eb2239ab2f4643601eff22a574386076ad6e1bf6, tree 81fb376d05b0cdc445ba37ccb6c92eff582f8a8d. PR
+  exact-head checks all 13 green; post-merge exact-main workflows all 7 green: 36479841975,
+  36479842058, 36479842163, 36479842147, 36479842172, 36479842073, 36479842085; header 36479842099
+  green. Coordinator independently verified remote main, merge signature, DCO, parents and tree.
+  Bounded contract now provides explicit provider/auth/reference binding, fail-closed secure-store
+  boundary, deterministic digest-only mock, generation-fenced rotation/revocation, validated remote
+  verification and credential-free audit projection. Deployment-specific OS keychain adapters and
+  security review remain future follow-up, not claimed complete by this AR.

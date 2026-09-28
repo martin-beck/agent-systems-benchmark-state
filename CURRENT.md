@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P2 | [AR-1501](tasks/AR-1501-production-credential-hardening.md): Production credential hardening follow-up | Track production credential secrecy and authentication hardening after the prototype. | Monitor all seven active post-merge workflows for terminal success, verify remote merge signature/tree/parents and main tree, then release AR with durable evidence. | ar1501-credential-contract-repair-luna56 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -526,6 +520,7 @@ Never edit this file directly.
 | P2 | [AR-1414](tasks/AR-1414-action-pin-followup.md): Follow-up install-action pin qualification | Qualify the newer immutable install-action update reopened as PR #235. | Monitor seven post-merge workflows for merge 9d410f531bced0318df1ecc0614916488f62f4c5: 36026896292,36026896368,36026896414,36026896308,36026896341,36026896407,36026896374; release only after all terminal success. | - |
 | P2 | [AR-1457](tasks/AR-1457-retire-superseded-pr-332.md): Retire superseded AR-1453 pull request | Retire the obsolete pre-repair AR-1453 pull request without changing product code. | No further action; obsolete PR #332 was closed and authoritative PR #333 remains verified. | - |
 | P2 | [AR-1459](tasks/AR-1459-retire-stale-state-prs.md): Retire stale state-repository pull requests | Retire obsolete state-repository pull requests without changing product or formal gates. | No further action; stale state PRs were closed and blocked formal PR #25 remains intentionally open. | - |
+| P2 | [AR-1501](tasks/AR-1501-production-credential-hardening.md): Production credential hardening follow-up | Track production credential secrecy and authentication hardening after the prototype. | Monitor all seven active post-merge workflows for terminal success, verify remote merge signature/tree/parents and main tree, then release AR with durable evidence. | - |
 | P3 | [AR-0404](tasks/AR-0404-extended-workloads.md): Expand established benchmark catalogue | Evaluate SWE-bench Pro, BigCodeBench, EvalPlus and LiveCodeBench as optional suites. | Add signed normal follow-up after rewritten merge so push range is resolvable; rerun exact-main post-merge workflows. | - |
 | P3 | [AR-0406](tasks/AR-0406-evolving-workloads.md): Add evolving long-horizon workload sources | Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation. | Monitor all required post-merge CI runs for exact main ca6e75916a8c9831b9107377cd48d731463c272a; release only after every required gate is green. | - |
 | P3 | [AR-1006](tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Monitor post-merge workflows for main 4e2820b until terminal; verify exact tree/signature/DCO/policy, then release AR-1006 done. | - |
