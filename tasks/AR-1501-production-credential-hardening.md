@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Track production credential secrecy and authentication hardening after the prototype.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Production credential hardening follow-up",
-  "updated_at": "2026-09-28T20:04:37+00:00",
+  "updated_at": "2026-09-28T20:04:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1501"
 }
 ---
@@ -105,3 +105,6 @@ This AR is intentionally not required for the development build cycle.
   secure-store boundary, deterministic digest-only mock store, generation-fenced rotation/revocation
   rollback, bounded remote verification and credential-free audit log. Focused tests 6/6 and package
   clippy pass.
+
+- 2026-09-28T20:04:49+00:00: Recorded command exit 0; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
