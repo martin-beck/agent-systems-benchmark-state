@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Own authenticated control session and lifecycle while minting opaque CLI dispatch sources.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Authenticated control process owner",
-  "updated_at": "2026-09-28T22:01:24+00:00",
+  "updated_at": "2026-09-28T22:01:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1483-authenticated-control-process-owner"
 }
 ---
@@ -89,3 +89,6 @@ caller authority or modify asb-tui.
 
 - 2026-09-28T22:01:24+00:00: Recorded command exit 0; command argv SHA-256
   c5eccc3d1afed1e6c68b3d8252fcde0a62c5de59707b7ce3eef97e992da3b50c.
+
+- 2026-09-28T22:01:41+00:00: Recorded command exit 0; command argv SHA-256
+  35afefd3aa112cdb39f60d4382ed560174b801d288201d57d2751a5c2dbe2cc6.
