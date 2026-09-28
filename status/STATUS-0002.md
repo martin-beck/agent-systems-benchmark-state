@@ -182,11 +182,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1504](../tasks/AR-1504-runtime-platform-launcher-seam.md): Runtime/platform launcher seam | Unclaimed | Provide the real runtime/platform-owned launcher and authenticated session discovery for AR-1503. | Promote after dependency verification; implement and exercise the production runtime/platform launcher seam that invokes the authenticated process owner. |
+| P0 | [AR-1504](../tasks/AR-1504-runtime-platform-launcher-seam.md): Runtime/platform launcher seam | ar1504-launcher-luna56 | Provide the real runtime/platform-owned launcher and authenticated session discovery for AR-1503. | Promote after dependency verification; implement and exercise the production runtime/platform launcher seam that invokes the authenticated process owner. |
 
 ### Blocked (75)
 
