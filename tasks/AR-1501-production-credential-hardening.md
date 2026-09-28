@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1501-production-credential-hardening",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-28T21:54:06+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1499",
     "AR-1500"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1501-production-credential-hardening",
   "observed_dirty": 3,
   "observed_head": "556385bfdf8b044e9d6e7530972139b3beb31d91",
-  "owner": "ar1501-production-hardening-luna56",
+  "owner": "",
   "plan": "../plans/AR-1501-production-credential-hardening.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Track production credential secrecy and authentication hardening after the prototype.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Production credential hardening follow-up",
-  "updated_at": "2026-09-28T19:55:45+00:00",
+  "updated_at": "2026-09-28T19:56:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1501"
 }
 ---
@@ -48,3 +48,7 @@ This AR is intentionally not required for the development build cycle.
 
 - 2026-09-28T19:55:45+00:00: Recorded command exit 101; command argv SHA-256
   6f74029dfa93df8e559ccb7d48600763f5ab763d291342c56025e1704a39c2cd.
+
+- 2026-09-28T19:56:02+00:00: Coordinator recovery: worker held a valid lease but produced no product
+  or durable-state progress after worktree setup; preserve evidence and restart with a narrower
+  bounded hardening slice.
