@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1505](tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | Promote after dependency verification; define and implement the authenticated control-plane platform authority/bootstrap protocol needed by the runtime launcher. | ar1505-control-plane-luna56 |
+| P0 | [AR-1505](tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | Implement versioned RuntimeBootstrap control operation and runtime adapter; add provider-free identity/generation/nonce/expiry/revocation/restart/cancellation/egress tests. | ar1505-control-plane-luna56 |
 
 ## Blocked
 

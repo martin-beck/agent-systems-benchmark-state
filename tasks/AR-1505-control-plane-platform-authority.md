@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Promote after dependency verification; define and implement the authenticated control-plane platform authority/bootstrap protocol needed by the runtime launcher.",
+  "next_action": "Implement versioned RuntimeBootstrap control operation and runtime adapter; add provider-free identity/generation/nonce/expiry/revocation/restart/cancellation/egress tests.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 0,
   "observed_head": "3c6af6b351e0c32ee8f5e48716654d854dcbbac2",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-28T22:59:05+00:00",
+  "updated_at": "2026-09-28T23:00:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -70,3 +70,12 @@ public credential/socket paths, or weakening fail-closed gates.
   6840d2f0cea6f9cf6ffce81b9b1b74dcdddaff8701fc6cc1705c309033813254.
 
 - 2026-09-28T22:59:05+00:00: Heartbeat by ar1505-control-plane-luna56.
+
+- 2026-09-28T23:00:14+00:00: Setup audit at protected origin/main 3c6af6b: declared worktree
+  agent-systems-benchmark-ar-1505-control-plane-platform-authority is clean. Existing protocol
+  symbols: ControlCall::RuntimeReceipt and CONTROL_RUNTIME_RECEIPT_V1=1.10 return chain+receipt but
+  accept only provider/generation/request nonce; ControlBackend lacks peer/session identity;
+  RunnerBackend handles RuntimeReceipt at crates/asb-cli/src/control.rs:3177; RuntimeAuthorityRecord
+  and RuntimeCertificateAuthoritySource remain private runtime inputs. Existing
+  ProvisionedControlServer/handoff.rs only passes an anonymous descriptor. This exact gap requires a
+  new versioned authenticated bootstrap operation, not caller-supplied authority or synthetic paths.
