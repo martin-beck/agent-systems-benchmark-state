@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1502-runtime-bootstrap-authority",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-28T23:14:43+00:00",
   "depends_on": [
     "AR-1473",
     "AR-1474",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1502-runtime-bootstrap-authority",
   "observed_dirty": 1,
   "observed_head": "7167e3da7ab1fb35d4fc9c0e61ee754c89e670d6",
-  "owner": "",
+  "owner": "ar1502-repair-restart-luna56",
   "plan": "../plans/AR-1502-runtime-bootstrap-authority.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Supply the runtime-owned authenticated bootstrap authority required for normal live dispatch.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Runtime-owned bootstrap authority",
-  "updated_at": "2026-09-28T21:14:40+00:00",
+  "updated_at": "2026-09-28T21:14:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1502"
 }
 ---
@@ -101,3 +101,5 @@ dependency-safe and must not synthesize authority or accept caller-built input.
 
 - 2026-09-28T21:14:40+00:00: Coordinator takeover: stopped prior repair worker at user request;
   preserve its audit and implementation diff, reopen same AR for a fresh repair worker.
+
+- 2026-09-28T21:14:43+00:00: Claimed by ar1502-repair-restart-luna56.
