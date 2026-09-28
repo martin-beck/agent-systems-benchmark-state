@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated artifact executor and activation authority behind the ASB agent lifecycle router.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Authenticated lifecycle artifact executor",
-  "updated_at": "2026-09-28T17:14:40+00:00",
+  "updated_at": "2026-09-28T17:15:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1498"
 }
 ---
@@ -211,3 +211,10 @@ protocol/schema fixtures consumed by AR-1199 and downstream asb-tui.
 
 - 2026-09-28T17:14:40+00:00: Recorded command exit 101; command argv SHA-256
   3f1b1e1f454495847bdbef93c8cf9f779bcca72fefc66ee84bbb8642b7f1eb3d.
+
+- 2026-09-28T17:15:19+00:00: Gate classification: PR #376 Policy/coverage/supply-chain failed only
+  in local/hosted coverage stage. Hosted run reached workspace total 87.73% lines and floor 90 after
+  the large lifecycle slice; no compile/policy/supply-chain error. Local cargo llvm-cov also hit an
+  existing control test lock race (configuration_apply restart saw state root already owned) before
+  summary. Next action: rerun serialized focused/full local tests and amend signed commit; do not
+  weaken coverage gates.
