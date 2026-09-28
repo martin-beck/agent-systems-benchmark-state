@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1503",
-  "next_action": "Rerun fmt and focused process_owner tests with short private socket paths.",
+  "next_action": "Rerun fmt and focused process_owner tests after aligning receipt root claims.",
   "observed_branch": "feature/ar-1503-runtime-control-process-owner",
   "observed_dirty": 3,
   "observed_head": "3c6af6b351e0c32ee8f5e48716654d854dcbbac2",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Own the authenticated control session and hand off only an opaque live dispatch source.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Runtime/control process owner",
-  "updated_at": "2026-09-28T22:26:17+00:00",
+  "updated_at": "2026-09-28T22:27:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1503-runtime-control-process-owner"
 }
 ---
@@ -160,3 +160,9 @@ asb-tui, synthesize authority, or accept caller-built runtime inputs.
 
 - 2026-09-28T22:26:17+00:00: Recorded command exit 101; command argv SHA-256
   f99db2e56cd443f593f1572cfa9151b444d867796988ba718d32473db938e39a.
+
+- 2026-09-28T22:27:46+00:00: Focused gate now reaches owner construction but both tests fail with
+  the private error Receipt at process_owner.rs:478. Exact validation mismatch was receipt
+  lease_root_sha256/relay_root_sha256 values (2/3 digests) differing from bootstrap request roots
+  (6/5), causing active_chain_for_receipt to fail closed. Patched fixture receipt to use the
+  authenticated request roots; no production authority relaxation.
