@@ -22,7 +22,7 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 36437303929 | `8c53a4a62eca` | push | Rust verification | completed:success |
-| 36437303763 | `8c53a4a62eca` | push | Emulated aarch64 portability | in_progress:- |
+| 36437303763 | `8c53a4a62eca` | push | Emulated aarch64 portability | completed:success |
 | 36437303758 | `8c53a4a62eca` | push | Fault assurance | completed:success |
 | 36437303747 | `8c53a4a62eca` | push | Credential-free benchmark path | completed:success |
 | 36437303669 | `8c53a4a62eca` | push | Repository quality | in_progress:- |
