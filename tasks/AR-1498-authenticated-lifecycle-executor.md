@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "PR 376 merged at protected main exact merge commit",
-  "task_revision": 110,
+  "task_revision": 111,
   "title": "Authenticated lifecycle artifact executor",
-  "updated_at": "2026-09-28T17:44:21+00:00",
+  "updated_at": "2026-09-28T17:44:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1498"
 }
 ---
@@ -382,3 +382,6 @@ protocol/schema fixtures consumed by AR-1199 and downstream asb-tui.
   base main 8c53a4a62ecaa6fecc9eb195a105fc368a3395c8, source head
   55ff13fb6cb220034ccd1fb4febf0e86e848db94. Direct read-only gh verification confirmed state=MERGED.
   Handoff lock timed out after merge command, so post-merge verification is next.
+
+- 2026-09-28T17:44:30+00:00: Recorded command exit 0; command argv SHA-256
+  321c534968b9c456a64caf5e6d09b63780c507f97548057d2bfe31edcfd73ff4.
