@@ -8,12 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1495](tasks/AR-1495-development-unverified-bundle-profile.md): Development-only unverified bundle profile | Add an explicit development-only unverified bundle profile without weakening production or customer-release verification. | Monitor PR #373 fresh exact signed+DCO head 4d63a66; merge only after all required checks and independent review are green. | ar1332-record-replay-luna56 |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1496](tasks/AR-1496-runtime-owned-provider-capture-control.md): Runtime-owned provider capture and control activation | Complete runtime-owned provider capture, tuple cassette reconciliation and verified offline activation required by the setup wizard. | Promote after AR-1151, AR-1330, AR-1433, AR-1447, AR-1450 and AR-1455 are verified; implement the real tuple capture/reconciliation and offline activation path over the existing control contracts. | - |
+| P0 | [AR-1496](tasks/AR-1496-runtime-owned-provider-capture-control.md): Runtime-owned provider capture and control activation | Complete runtime-owned provider capture, tuple cassette reconciliation and verified offline activation required by the setup wizard. | Promote after AR-1151, AR-1330, AR-1433, AR-1447, AR-1450 and AR-1455 are verified; implement the real tuple capture/reconciliation and offline activation path over the existing control contracts. | ar1496-provider-capture-luna56 |
 
 ## Blocked
 
