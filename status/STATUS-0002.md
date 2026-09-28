@@ -171,7 +171,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1495](../tasks/AR-1495-development-unverified-bundle-profile.md): Development-only unverified bundle profile | ar1332-record-replay-luna56 | Add an explicit development-only unverified bundle profile without weakening production or customer-release verification. | Run complete workspace/docs/policy/release/clean gates, independently review exact diff, then publish exact signed+DCO head. |
+| P0 | [AR-1495](../tasks/AR-1495-development-unverified-bundle-profile.md): Development-only unverified bundle profile | ar1332-record-replay-luna56 | Add an explicit development-only unverified bundle profile without weakening production or customer-release verification. | Run final schema/docs/policy/clean checks, independently review exact signed head, and publish PR. |
 
 ### Blocked (74)
 

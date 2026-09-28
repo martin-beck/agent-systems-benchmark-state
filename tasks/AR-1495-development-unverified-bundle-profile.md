@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1495-development-unverified-bundle-profile",
-  "checkpoint_commit": "48f082234cbb6aa8997d5dd59a2308799233bf73",
+  "checkpoint_commit": "a714861edd489ad678f635b6aa3ad5834edb40f3",
   "claim_expires": "2026-09-28T15:06:21+00:00",
   "depends_on": [
     "AR-1314",
@@ -10,7 +10,7 @@
     "AR-1493"
   ],
   "id": "AR-1495",
-  "next_action": "Run complete workspace/docs/policy/release/clean gates, independently review exact diff, then publish exact signed+DCO head.",
+  "next_action": "Run final schema/docs/policy/clean checks, independently review exact signed head, and publish PR.",
   "observed_branch": "feature/ar-1495-development-unverified-bundle-profile",
   "observed_dirty": 0,
   "observed_head": "a714861edd489ad678f635b6aa3ad5834edb40f3",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add an explicit development-only unverified bundle profile without weakening production or customer-release verification.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Development-only unverified bundle profile",
-  "updated_at": "2026-09-28T13:10:37+00:00",
+  "updated_at": "2026-09-28T13:10:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1495-development-unverified-bundle-profile"
 }
 ---
@@ -128,3 +128,11 @@ above.
 
 - 2026-09-28T13:10:22+00:00: Recorded command exit 0; command argv SHA-256
   d7909284cbcd3230252c5fce9f3b1c35e1b6d2c31701cd0c54e49b00e87125ab.
+
+- 2026-09-28T13:10:52+00:00: Independent diff review: four implementation/documentation files plus
+  runtime-bundle schema description; only asb-bundle verifier/test/docs/schema changed, no
+  asb-tui/provider/customer-release path. Explicit AllowUnsignedDevelopment is the sole policy that
+  tolerates a bounded arbitrary signature file; default and unsigned-release negatives remain
+  strict. Added schema boundary text and signed/DCO follow-up commit a714861. Full workspace cargo
+  test, clippy, rustdoc, bundle tests 5/5, policy and DCO gates passed; one repository-policy
+  polling LOCK_TIMEOUT was retried successfully.
