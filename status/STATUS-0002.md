@@ -171,17 +171,12 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1490](../tasks/AR-1490-fresh-package-runtime-acceptance.md): Fresh package runtime acceptance | ar1490-dev-acceptance-luna56 | Run fresh package first-customer runtime acceptance and produce an explicit readiness report. | Correct fixture parser.py emission from a literal double backslash to the required single escaped carriage-return sequence, verify installed output bytes and tests.txt, then run fresh run/sweep. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1498](../tasks/AR-1498-authenticated-lifecycle-executor.md): Authenticated lifecycle artifact executor | Unclaimed | Provide the authenticated artifact executor and activation authority behind the ASB agent lifecycle router. | Promote after coordinator review; define and implement the authenticated artifact executor and activation authority required by ASB lifecycle calls, with fail-closed restart-safe tests. |
+| P0 | [AR-1498](../tasks/AR-1498-authenticated-lifecycle-executor.md): Authenticated lifecycle artifact executor | ar1498-lifecycle-executor | Provide the authenticated artifact executor and activation authority behind the ASB agent lifecycle router. | Promote after coordinator review; define and implement the authenticated artifact executor and activation authority required by ASB lifecycle calls, with fail-closed restart-safe tests. |
 
 ### Blocked (74)
 
@@ -505,3 +500,4 @@
 | P0 | [AR-1485](../tasks/AR-1485-process-owner-local-mock-lifecycle.md): Process-owner local/mock lifecycle | Unclaimed | Implement runtime-owned local/mock process lifecycle and opaque-source handoff. | Release complete; retain exact merge and eight workflow evidence. |
 | P0 | [AR-1486](../tasks/AR-1486-runtime-owner-cli-entry-wiring.md): Runtime-owner CLI entry wiring | Unclaimed | Wire the runtime-owned local/mock process owner into ordinary CLI run and sweep. | Release complete; retain exact merge and eight workflow evidence. |
 | P0 | [AR-1487](../tasks/AR-1487-owner-backed-first-customer-qualification.md): Owner-backed first-customer qualification | Unclaimed | Qualify the owner-backed credential-free local/mock/replay first-customer journey. | Reconcile and doctor state projection; retain known generated WORKTREES/PROJECT_STATE caveat if reported. |
+| P0 | [AR-1488](../tasks/AR-1488-owner-backed-user-journey.md): Owner-backed first-customer user journey | Unclaimed | Qualify the owner-backed first-customer install, operation, replay, evidence, and cleanup journey. | Reconcile and doctor state projection; retain known generated WORKTREES/PROJECT_STATE caveat if reported. |

@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1498-authenticated-lifecycle-executor",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-28T17:03:11+00:00",
   "depends_on": [
     "AR-1018",
     "AR-1019",
@@ -16,15 +16,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "ar1498-lifecycle-executor",
   "plan": "../plans/AR-1498.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide the authenticated artifact executor and activation authority behind the ASB agent lifecycle router.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Authenticated lifecycle artifact executor",
-  "updated_at": "2026-09-28T15:02:01+00:00",
+  "updated_at": "2026-09-28T15:03:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1498"
 }
 ---
@@ -45,3 +45,5 @@ protocol/schema fixtures consumed by AR-1199 and downstream asb-tui.
 - 2026-09-28T15:02:01+00:00: Promoted as the scoped successor required by blocked AR-1199: implement
   authenticated lifecycle artifact executor and activation authority before reopening router/TUI
   lifecycle support.
+
+- 2026-09-28T15:03:11+00:00: Claimed by ar1498-lifecycle-executor.
