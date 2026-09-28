@@ -3,7 +3,12 @@
   "branch": "feature/ar-1495-development-unverified-bundle-profile",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1314", "AR-1397", "AR-1491", "AR-1493"],
+  "depends_on": [
+    "AR-1314",
+    "AR-1397",
+    "AR-1491",
+    "AR-1493"
+  ],
   "id": "AR-1495",
   "next_action": "Promote and claim AR-1495, audit AR-1314 on protected main, and implement or repair the explicit development-only unverified bundle profile.",
   "observed_branch": "",
@@ -13,11 +18,11 @@
   "plan": "../plans/AR-1495-development-unverified-bundle-profile.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Add an explicit development-only unverified bundle profile without weakening production or customer-release verification.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Development-only unverified bundle profile",
-  "updated_at": "2026-09-28T12:00:00+02:00",
+  "updated_at": "2026-09-28T12:59:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1495-development-unverified-bundle-profile"
 }
 ---
@@ -42,3 +47,6 @@ above.
 - 2026-09-28: Created as the narrow successor for development-only
   qualification; AR-1490 remains the sole external signed-customer-release
   blocker.
+
+- 2026-09-28T12:59:44+00:00: AR-1314 audit and explicit development-only unverified profile scope
+  verified; AR-1490 remains external signed-release blocker
