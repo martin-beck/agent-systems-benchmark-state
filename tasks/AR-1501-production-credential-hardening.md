@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Track production credential secrecy and authentication hardening after the prototype.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Production credential hardening follow-up",
-  "updated_at": "2026-09-28T20:09:25+00:00",
+  "updated_at": "2026-09-28T20:09:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1501"
 }
 ---
@@ -138,3 +138,6 @@ This AR is intentionally not required for the development build cycle.
 
 - 2026-09-28T20:09:25+00:00: Recorded command exit 0; command argv SHA-256
   5ad8e8131827d7610a1229e99608a20b222becf6a93d47220208c819dfa83d9f.
+
+- 2026-09-28T20:09:44+00:00: Recorded command exit 0; command argv SHA-256
+  f582d8bb6466ccf3d2456e10853b1f56e59a488183b982dd5b48dd3bfd090ace.
