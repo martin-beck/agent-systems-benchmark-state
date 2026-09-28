@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1504-runtime-platform-launcher-seam",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-29T00:46:43+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1473",
     "AR-1474",
@@ -16,15 +16,15 @@
   "observed_branch": "feature/ar-1504-runtime-platform-launcher-seam",
   "observed_dirty": 2,
   "observed_head": "3c6af6b351e0c32ee8f5e48716654d854dcbbac2",
-  "owner": "ar1504-launcher-luna56",
+  "owner": "",
   "plan": "../plans/AR-1504-runtime-platform-launcher-seam.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide the real runtime/platform-owned launcher and authenticated session discovery for AR-1503.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Runtime/platform launcher seam",
-  "updated_at": "2026-09-28T22:54:14+00:00",
+  "updated_at": "2026-09-28T22:55:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1504-runtime-platform-launcher-seam"
 }
 ---
@@ -125,3 +125,23 @@ caller-built runtime inputs, or weakening native/credential/egress gates.
 
 - 2026-09-28T22:54:14+00:00: Recorded command exit 0; command argv SHA-256
   ddd1f81564413ac090ce5391ffdd3806d437cd5c6a31734f8b6d6acfbba3bf48.
+
+- 2026-09-28T22:55:03+00:00: AR-1504 produced a real, fail-closed platform socket discovery seam in
+  dirty worktree (platform_launcher.rs): fixed /run/user/<uid>/asb/control.sock locator,
+  owner/mode/socket checks, explicit receipt-capable negotiation, and 3 provider-free
+  positive/negative tests pass. Independent review rejects completion: RuntimePlatformControlSession
+  only owns ControlClient; it does not construct private
+  RuntimeAuthorityInputs/CertificateAuthority/BootstrapRequest or invoke an opaque
+  LiveProviderRuntimeDispatchSource. Existing ControlClient requires a path and AR-1502
+  constructors/private inputs are not obtainable from any current control protocol. Wiring
+  asb-cli::run's None,None to this partial session would either inject authority or fabricate a
+  dispatch source, violating fail-closed acceptance. Exact production symbols:
+  crates/asb-cli/src/lib.rs:96 dispatch(None,None), :402-430 optional live factory;
+  crates/asb-runtime/src/live_service.rs RuntimeAuthorityInputs (crate-private),
+  RuntimeAuthorityInputResolver::from_authenticated_enrollment,
+  RuntimeCertificateAuthoritySource::new, LiveProviderRuntimeBridge::request_control_receipt.
+  Targeted platform_launcher tests pass 3/3; no PR/commit published because acceptance is
+  incomplete. Create a narrowly scoped successor AR for the control-plane platform
+  authority/bootstrap protocol and then wire launcher to an owner-equivalent production path and CLI
+  runtime entrypoint. Preserve this dirty discovery patch as review input; do not merge it
+  standalone.
