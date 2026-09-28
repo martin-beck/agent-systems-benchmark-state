@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1495-development-unverified-bundle-profile",
-  "checkpoint_commit": "3b0bf6a4525c3d1382639761dc9d3a31c833906b",
+  "checkpoint_commit": "4d63a6642c60bb203d5646a732d46b17c823a6d9",
   "claim_expires": "2026-09-28T15:15:31+00:00",
   "depends_on": [
     "AR-1314",
@@ -10,7 +10,7 @@
     "AR-1493"
   ],
   "id": "AR-1495",
-  "next_action": "Monitor PR #373 fresh exact signed+DCO head 3b0bf6a and merge only after every required check and independent review is green.",
+  "next_action": "Monitor PR #373 fresh exact signed+DCO head 4d63a66; merge only after all required checks and independent review are green.",
   "observed_branch": "feature/ar-1495-development-unverified-bundle-profile",
   "observed_dirty": 0,
   "observed_head": "4d63a6642c60bb203d5646a732d46b17c823a6d9",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add an explicit development-only unverified bundle profile without weakening production or customer-release verification.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Development-only unverified bundle profile",
-  "updated_at": "2026-09-28T13:17:20+00:00",
+  "updated_at": "2026-09-28T13:17:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1495-development-unverified-bundle-profile"
 }
 ---
@@ -205,3 +205,9 @@ above.
 
 - 2026-09-28T13:17:20+00:00: Recorded command exit 0; command argv SHA-256
   720d731c5d457ef78d7c0a398f1e43164faf0a897457cc757ee951160731c7ed.
+
+- 2026-09-28T13:17:46+00:00: CI contract-consistency failure 36427276223 was classified: in-place v3
+  schema description edits are forbidden. Reverted the schema-only description change in signed+DCO
+  commit 4d63a66; existing v3 profile enum/schema remains authoritative, while behavior and boundary
+  wording live in docs/tests. Diff is again four ASB files only. Prior stale-base and missing-DCO
+  failures preserved. Force-with-lease updated PR #373.
