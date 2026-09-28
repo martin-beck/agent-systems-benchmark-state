@@ -10,7 +10,7 @@
     "AR-1493"
   ],
   "id": "AR-1495",
-  "next_action": "Run final schema/docs/policy/clean checks, independently review exact signed head, and publish PR.",
+  "next_action": "Monitor PR #373 exact signed head a714861 and merge only after every required check and independent review is green.",
   "observed_branch": "feature/ar-1495-development-unverified-bundle-profile",
   "observed_dirty": 0,
   "observed_head": "a714861edd489ad678f635b6aa3ad5834edb40f3",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add an explicit development-only unverified bundle profile without weakening production or customer-release verification.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Development-only unverified bundle profile",
-  "updated_at": "2026-09-28T13:11:27+00:00",
+  "updated_at": "2026-09-28T13:11:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1495-development-unverified-bundle-profile"
 }
 ---
@@ -142,3 +142,9 @@ above.
 
 - 2026-09-28T13:11:27+00:00: Recorded command exit 0; command argv SHA-256
   dcfb6bcf7d83c4e214be8694fd403fe17b5bb99047f9b03e1f4be782aac26018.
+
+- 2026-09-28T13:11:47+00:00: Published exact SSH-signed+DCO head
+  a714861edd489ad678f635b6aa3ad5834edb40f3 as PR #373:
+  https://github.com/martin-beck/agent-systems-benchmark/pull/373. Scope is ASB asb-bundle
+  verifier/tests/docs/schema only. AR-1490 remains blocked on external authorized signed customer
+  package; no customer-release evidence is claimed.
