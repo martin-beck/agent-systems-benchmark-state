@@ -10,7 +10,7 @@
     "AR-1489"
   ],
   "id": "AR-1490",
-  "next_action": "Redirect the corrected parser.py printf into parser.py (the previous script printed it only to stdout), preserve tests.txt, create a fresh run4 identity/root, then rerun plan/run/sweep.",
+  "next_action": "Run the runtime recovery/cancellation tests with separate cargo test invocations or one valid filter, then execute strict replay authority and cleanup checks; no product change is indicated.",
   "observed_branch": "qualification/ar-1490-fresh-package-runtime-acceptance",
   "observed_dirty": 3,
   "observed_head": "45df6590cbf9ab75f07dcc0b753335949e28d937",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run fresh package first-customer runtime acceptance and produce an explicit readiness report.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Fresh package runtime acceptance",
-  "updated_at": "2026-09-28T15:09:35+00:00",
+  "updated_at": "2026-09-28T15:10:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1490-fresh-package-runtime-acceptance"
 }
 ---
@@ -271,3 +271,10 @@ when exact package or clean-environment inputs are absent.
 
 - 2026-09-28T15:09:35+00:00: Recorded command exit 1; command argv SHA-256
   69b335ffa8ffefb85bc18edfe4ab3230bad2c29beb5433f856ad93a81f30c57f.
+
+- 2026-09-28T15:10:04+00:00: Recorded command failure at recovery stage: the attempted cargo test
+  invocation `cargo test --locked -p asb-runtime control_owner launch_factory live_service` exited 1
+  because Cargo accepts only one positional TESTNAME filter; it rejected launch_factory as an
+  unexpected argument before compiling or running any test. This is coordinator command syntax, not
+  a product/test failure. Next action is to run the same targeted filters as separate handoffctl
+  commands.
