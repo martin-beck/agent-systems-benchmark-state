@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1498-authenticated-lifecycle-executor",
-  "checkpoint_commit": "55ff13fb6cb220034ccd1fb4febf0e86e848db94",
+  "checkpoint_commit": "9231a660675d4b01277a60b75d838d69c6bba917",
   "claim_expires": "2026-09-28T19:39:27+00:00",
   "depends_on": [
     "AR-1018",
@@ -12,7 +12,7 @@
     "AR-1496"
   ],
   "id": "AR-1498",
-  "next_action": "Coordinator may merge PR #376 only at exact green head 55ff13fb6cb220034ccd1fb4febf0e86e848db94, then verify post-merge and release AR-1498 durably.",
+  "next_action": "Verify origin/main contains merge 9231a660675d4b01277a60b75d838d69c6bba917, run post-merge applicable smoke/build checks, then release AR-1498 durably.",
   "observed_branch": "feature/ar-1498-authenticated-lifecycle-executor",
   "observed_dirty": 0,
   "observed_head": "55ff13fb6cb220034ccd1fb4febf0e86e848db94",
@@ -21,10 +21,10 @@
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Authenticated lifecycle executor with positive and negative coverage fixtures published",
-  "task_revision": 109,
+  "summary": "PR 376 merged at protected main exact merge commit",
+  "task_revision": 110,
   "title": "Authenticated lifecycle artifact executor",
-  "updated_at": "2026-09-28T17:43:37+00:00",
+  "updated_at": "2026-09-28T17:44:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1498"
 }
 ---
@@ -376,3 +376,9 @@ protocol/schema fixtures consumed by AR-1199 and downstream asb-tui.
 
 - 2026-09-28T17:43:37+00:00: Recorded command exit 0; command argv SHA-256
   d9021b19604e7a9b10031a45b806f6eb6f6876e5d465670ad498a4ced9388af1.
+
+- 2026-09-28T17:44:21+00:00: Protected merge completed after all 13 exact-head checks passed. GitHub
+  PR #376 is MERGED at 2026-09-28T17:43:18Z; merge commit 9231a660675d4b01277a60b75d838d69c6bba917,
+  base main 8c53a4a62ecaa6fecc9eb195a105fc368a3395c8, source head
+  55ff13fb6cb220034ccd1fb4febf0e86e848db94. Direct read-only gh verification confirmed state=MERGED.
+  Handoff lock timed out after merge command, so post-merge verification is next.
