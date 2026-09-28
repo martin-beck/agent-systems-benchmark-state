@@ -14,17 +14,17 @@
   "id": "AR-1496",
   "next_action": "Promote after AR-1151, AR-1330, AR-1433, AR-1447, AR-1450 and AR-1455 are verified; implement the real tuple capture/reconciliation and offline activation path over the existing control contracts.",
   "observed_branch": "feature/ar-1496-runtime-owned-provider-capture-control",
-  "observed_dirty": 4,
-  "observed_head": "03d2d0700696bad9549455510f37b24a1588b10e",
+  "observed_dirty": 0,
+  "observed_head": "7510f6f36a000aa1085755ebc47ac17b5ea55b40",
   "owner": "ar1496-provider-capture-luna56",
   "plan": "../plans/AR-1496.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Complete runtime-owned provider capture, tuple cassette reconciliation and verified offline activation required by the setup wizard.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Runtime-owned provider capture and control activation",
-  "updated_at": "2026-09-28T13:49:45+00:00",
+  "updated_at": "2026-09-28T13:49:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1496-runtime-owned-provider-capture-control"
 }
 ---
