@@ -10,7 +10,7 @@
     "AR-1489"
   ],
   "id": "AR-1490",
-  "next_action": "Change the disposable plan run_id and result/work roots to a new exact identity after the failed ar1490-run2 attempt, validate the plan, then run and sweep.",
+  "next_action": "Redirect the corrected parser.py printf into parser.py (the previous script printed it only to stdout), preserve tests.txt, create a fresh run4 identity/root, then rerun plan/run/sweep.",
   "observed_branch": "qualification/ar-1490-fresh-package-runtime-acceptance",
   "observed_dirty": 3,
   "observed_head": "45df6590cbf9ab75f07dcc0b753335949e28d937",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run fresh package first-customer runtime acceptance and produce an explicit readiness report.",
-  "task_revision": 66,
+  "task_revision": 67,
   "title": "Fresh package runtime acceptance",
-  "updated_at": "2026-09-28T15:04:40+00:00",
+  "updated_at": "2026-09-28T15:05:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1490-fresh-package-runtime-acceptance"
 }
 ---
@@ -237,3 +237,10 @@ when exact package or clean-environment inputs are absent.
 
 - 2026-09-28T15:04:40+00:00: Recorded command exit 5; command argv SHA-256
   d3911253abcdda827e8931919c2bf8d9e83912114139d1f4ad6baed0241695c7.
+
+- 2026-09-28T15:05:56+00:00: Recorded third local/mock execution failure: plan ar1490-run3 validated
+  and admitted one attempt but failed with handoff exit 5, failed_check_count=1, exit_code=0,
+  stdout_bytes=91, no timeout/cancel/infrastructure failure. Installed byte inspection proved
+  tests.txt emitted exactly; parser.py was not modified because the fixture printed the expected
+  91-byte source to stdout without redirecting it to parser.py, so the grader correctly rejected the
+  existing initial file. Next action is to redirect parser output and use a fresh run identity.
