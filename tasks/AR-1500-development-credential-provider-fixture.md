@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify generated development credentials through provider, capture and replay flows.",
-  "task_revision": 66,
+  "task_revision": 67,
   "title": "Development credential/provider lifecycle fixture",
-  "updated_at": "2026-09-28T19:34:00+00:00",
+  "updated_at": "2026-09-28T19:34:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1500"
 }
 ---
@@ -208,3 +208,6 @@ generated credentials as production-safe secrets.
   verification, repository quality policy/coverage, and emulated aarch64 remain in progress. Local
   isolated coverage attempt remains recorded as nonterminal due unrelated shared control-state-root
   contention, with generated profraw removed.
+
+- 2026-09-28T19:34:11+00:00: Recorded command exit 8; command argv SHA-256
+  d179d98628fe8fa01d202d2fa2daf324be8750694f2263013da8be144e152a94.
