@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated artifact executor and activation authority behind the ASB agent lifecycle router.",
-  "task_revision": 56,
+  "task_revision": 57,
   "title": "Authenticated lifecycle artifact executor",
-  "updated_at": "2026-09-28T17:12:46+00:00",
+  "updated_at": "2026-09-28T17:13:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1498"
 }
 ---
@@ -196,3 +196,9 @@ protocol/schema fixtures consumed by AR-1199 and downstream asb-tui.
 
 - 2026-09-28T17:12:46+00:00: Recorded command exit 0; command argv SHA-256
   3bf29e8ea44b6d8ce41fde87fa8d710f224540bdb95f54f773e52712c161032c.
+
+- 2026-09-28T17:13:07+00:00: Positive fixture diagnosis: direct authenticated bundle verification
+  returned typed Content("artifact LICENSE permission mode differs"); fs::write inherited a
+  restrictive mode under the private test root, while the signed inventory required 0644. Fixed
+  fixture to set LICENSE mode 0644 explicitly; signed install -> Active -> marker/version store ->
+  remove now passes. Earlier install Failed was this verification mismatch, not production behavior.
