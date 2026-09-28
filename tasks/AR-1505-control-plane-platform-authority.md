@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Implement versioned RuntimeBootstrap control operation and runtime adapter; add provider-free identity/generation/nonce/expiry/revocation/restart/cancellation/egress tests.",
+  "next_action": "Repair P1 review findings before merge: wire control bootstrap response into runtime-owned enrollment/authority/provisioner and make cancel revoke the corresponding local runtime chain/attempt; add end-to-end deterministic tests.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 0,
   "observed_head": "baa13ea675de2160dcf58f69b106e255f2c3d8de",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 113,
+  "task_revision": 114,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-28T23:46:05+00:00",
+  "updated_at": "2026-09-28T23:46:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -461,3 +461,17 @@ public credential/socket paths, or weakening fail-closed gates.
   c6b4eb982fca44055c61e7e14067db0a5fd3c20de45a6c3350af38a4c1b4fe36.
 
 - 2026-09-28T23:46:05+00:00: Heartbeat by ar1505-control-plane-luna56.
+
+- 2026-09-28T23:46:54+00:00: Independent read-only exact-head review of PR #382 head
+  baa13ea675de2160dcf58f69b106e255f2c3d8de against base 3c6af6b found P1-1 at
+  crates/asb-runtime/src/live_service.rs:1448-1490: request_control_bootstrap validates the control
+  response and calls issue_runtime_chain, but discards the chain and returns the response; no
+  RuntimeCertificateChainStore::enroll_from_authority, RuntimeCertificateAuthoritySource,
+  RuntimeAuthorityInputs, or LiveProviderBootstrapSpec/provisioner is constructed, and the existing
+  composition remains dead-code/private. Thus AR acceptance requiring runtime adapter consumption of
+  the source and private authority/bootstrap construction is not met. P1-2 at
+  live_service.rs:1495-1530: cancel_control_bootstrap only sends RuntimeBootstrapCancel and returns
+  on Acknowledged; it has no store/authority/handle and never calls
+  RuntimeCertificateChainStore::revoke or fences active attempts, so already-issued local chains
+  remain usable until expiry despite control catalog record.revoked at asb-cli/control.rs:2203-2240.
+  No P2 found beyond these P1s. Review was read-only; no product changes or merge performed.
