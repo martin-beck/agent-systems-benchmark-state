@@ -12,7 +12,7 @@
     "AR-1496"
   ],
   "id": "AR-1498",
-  "next_action": "Poll PR #376 checks at exact head until terminal; classify any failure and hand off green merge/post-merge release.",
+  "next_action": "Continue bounded polling until all exact-head checks terminal; if green hand off merge/post-merge release, otherwise classify any failure.",
   "observed_branch": "feature/ar-1498-authenticated-lifecycle-executor",
   "observed_dirty": 0,
   "observed_head": "55ff13fb6cb220034ccd1fb4febf0e86e848db94",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticated lifecycle executor with positive and negative coverage fixtures published",
-  "task_revision": 97,
+  "task_revision": 98,
   "title": "Authenticated lifecycle artifact executor",
-  "updated_at": "2026-09-28T17:36:10+00:00",
+  "updated_at": "2026-09-28T17:36:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1498"
 }
 ---
@@ -335,3 +335,8 @@ protocol/schema fixtures consumed by AR-1199 and downstream asb-tui.
 
 - 2026-09-28T17:36:10+00:00: Recorded command exit 0; command argv SHA-256
   82331e726694efef2b99dcc2a8de4f9196c6423b7a8d534e0336c83bcde93267.
+
+- 2026-09-28T17:36:39+00:00: PR #376 exact-head check poll: passed retained faults, AWQ shadow
+  evidence, credential-free benchmark path, platform evidence, exact headers, bounded fuzz, Kani,
+  matcher/SLO, and Loom/state. TLC/Alloy, Rust ubuntu, emulated aarch64, and
+  policy/coverage/supply-chain remain IN_PROGRESS; no failures or merge action.
