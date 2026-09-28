@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1502-runtime-bootstrap-authority",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-28T23:06:58+00:00",
+  "claim_expires": "2026-09-28T23:07:37+00:00",
   "depends_on": [
     "AR-1473",
     "AR-1474",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supply the runtime-owned authenticated bootstrap authority required for normal live dispatch.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Runtime-owned bootstrap authority",
-  "updated_at": "2026-09-28T21:07:05+00:00",
+  "updated_at": "2026-09-28T21:07:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1502"
 }
 ---
@@ -50,3 +50,5 @@ dependency-safe and must not synthesize authority or accept caller-built input.
   relay/lease roots, credential reference, expiry, cancellation, and restart. Next implementation is
   an explicit runtime-bootstrap source/request validation path that installs only source-issued
   chains; normal receipt dispatch will fail closed when the store is not enrolled.
+
+- 2026-09-28T21:07:37+00:00: Heartbeat by ar1502-seam-audit-repair-luna56.
