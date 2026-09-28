@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supply the runtime-owned authenticated bootstrap authority required for normal live dispatch.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Runtime-owned bootstrap authority",
-  "updated_at": "2026-09-28T21:27:34+00:00",
+  "updated_at": "2026-09-28T21:27:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1502"
 }
 ---
@@ -212,3 +212,11 @@ dependency-safe and must not synthesize authority or accept caller-built input.
 
 - 2026-09-28T21:27:34+00:00: Recorded command exit 101; command argv SHA-256
   7927d6e4131924459c8a06e05e599203d5b8372ac0018d5a104d389f61d262d0.
+
+- 2026-09-28T21:27:50+00:00: After restricting the source constructor and legacy bridge ingestion
+  methods to pub(crate), focused cargo test exited 101 under -D warnings: dead_code for
+  RuntimeCertificateAuthoritySource::new (line 169) and bridge
+  materialize_profile/materialize_control_receipt_profile (lines 1299/1365), because test-only
+  callers do not satisfy library dead-code lint. No behavior failure; next add explicit
+  allow(dead_code) only to these internal compatibility helpers, preserving the production
+  visibility fence.
