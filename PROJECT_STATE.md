@@ -23,7 +23,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 36479842172 | `7167e3da7ab1` | push | Repository quality | in_progress:- |
 | 36479842163 | `7167e3da7ab1` | push | Emulated aarch64 portability | in_progress:- |
-| 36479842147 | `7167e3da7ab1` | push | Formal assurance | in_progress:- |
+| 36479842147 | `7167e3da7ab1` | push | Formal assurance | completed:success |
 | 36479842099 | `7167e3da7ab1` | push | Huawei MIT source headers | completed:success |
 | 36479842085 | `7167e3da7ab1` | push | Fault assurance | completed:success |
 | 36479842073 | `7167e3da7ab1` | push | Rust verification | in_progress:- |
