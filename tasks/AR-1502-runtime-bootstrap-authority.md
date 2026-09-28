@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supply the runtime-owned authenticated bootstrap authority required for normal live dispatch.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Runtime-owned bootstrap authority",
-  "updated_at": "2026-09-28T21:18:13+00:00",
+  "updated_at": "2026-09-28T21:18:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1502"
 }
 ---
@@ -122,3 +122,8 @@ dependency-safe and must not synthesize authority or accept caller-built input.
 
 - 2026-09-28T21:18:13+00:00: Recorded command exit 2; command argv SHA-256
   fdd2f3e3a47179d0ede4c34e5d67020b051aaab7e3b2eb823b61ce22575ed00c.
+
+- 2026-09-28T21:18:41+00:00: Exit 2 at 21:18:13 was the attempted coordinator-wrapped apply_patch
+  command; malformed shell quoting passed literal backslash-n text, so bash reported here-document
+  wanted PATCHn*** and syntax error near unexpected token '(' before touching the product file. No
+  product mutation occurred; next retry uses safely quoted apply_patch through handoffctl.
