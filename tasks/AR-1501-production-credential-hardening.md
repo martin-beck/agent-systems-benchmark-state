@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Track production credential secrecy and authentication hardening after the prototype.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Production credential hardening follow-up",
-  "updated_at": "2026-09-28T19:56:05+00:00",
+  "updated_at": "2026-09-28T19:56:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1501"
 }
 ---
@@ -54,3 +54,6 @@ This AR is intentionally not required for the development build cycle.
   bounded hardening slice.
 
 - 2026-09-28T19:56:05+00:00: Claimed by ar1501-credential-contract-repair-luna56.
+
+- 2026-09-28T19:56:39+00:00: Recorded command exit 0; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
