@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated artifact executor and activation authority behind the ASB agent lifecycle router.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Authenticated lifecycle artifact executor",
-  "updated_at": "2026-09-28T17:11:10+00:00",
+  "updated_at": "2026-09-28T17:11:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1498"
 }
 ---
@@ -184,3 +184,6 @@ protocol/schema fixtures consumed by AR-1199 and downstream asb-tui.
 - 2026-09-28T17:11:10+00:00: Positive signed activation fixture compiled but failed runtime
   assertion: install returned Failed instead of Active at control.rs:5747. Next action: expose
   bounded typed failure in test assertion, diagnose fixture verification mismatch, then rerun.
+
+- 2026-09-28T17:11:23+00:00: Recorded command exit 101; command argv SHA-256
+  3bf29e8ea44b6d8ce41fde87fa8d710f224540bdb95f54f773e52712c161032c.
