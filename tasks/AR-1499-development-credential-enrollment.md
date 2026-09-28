@@ -11,16 +11,16 @@
   "next_action": "PR #378 failed hosted portability run 36465569661 before tests: source identity rejected repair/ar-1499-selection-binding because HEAD 7bdda85 does not have protected merge base 65bcdf3 as an ancestor. Rebuild the repair branch from 65bcdf3, apply signed corrective changes 51c57d4/7bdda85, force-with-lease the dedicated branch, then rerun exact-head CI.",
   "observed_branch": "feature/ar-1499-development-credential-enrollment",
   "observed_dirty": 0,
-  "observed_head": "7bdda85240653fa15e8eee602240137d88b8442b",
+  "observed_head": "78c2717d47a0c90ad660c581a741f122417d9ccd",
   "owner": "ar1499-selection-binding-repair-luna56",
   "plan": "../plans/AR-1499-development-credential-enrollment.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair merged development credential selection binding",
-  "task_revision": 62,
+  "task_revision": 63,
   "title": "Development credential enrollment contract",
-  "updated_at": "2026-09-28T18:34:22+00:00",
+  "updated_at": "2026-09-28T18:34:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1499"
 }
 ---
