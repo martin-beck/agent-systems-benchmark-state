@@ -180,7 +180,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1500](../tasks/AR-1500-development-credential-provider-fixture.md): Development credential/provider lifecycle fixture | ar1500-provider-fixture-luna56 | Qualify generated development credentials through provider, capture and replay flows. | Monitor PR #379 at exact head bae4307; rerun/await required checks, merge only after all green, then perform post-merge smoke and release AR durably. |
+| P0 | [AR-1500](../tasks/AR-1500-development-credential-provider-fixture.md): Development credential/provider lifecycle fixture | ar1500-provider-fixture-luna56 | Qualify generated development credentials through provider, capture and replay flows. | Monitor PR #379 exact head bae4307; await Rust, repository-quality policy/coverage, and emulated-aarch64 checks, merge only after all required checks and independent review are green, then perform post-merge smoke and release AR durably. |
 
 ### Blocked (74)
 
