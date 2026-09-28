@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1504",
-  "next_action": "Promote after dependency verification; implement and exercise the production runtime/platform launcher seam that invokes the authenticated process owner.",
+  "next_action": "Create declared AR-1504 worktree from protected origin/main, then inspect exact dependency heads and implement launcher seam.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the real runtime/platform-owned launcher and authenticated session discovery for AR-1503.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Runtime/platform launcher seam",
-  "updated_at": "2026-09-28T22:43:51+00:00",
+  "updated_at": "2026-09-28T22:44:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1504-runtime-platform-launcher-seam"
 }
 ---
@@ -62,3 +62,9 @@ caller-built runtime inputs, or weakening native/credential/egress gates.
 - 2026-09-28T22:43:05+00:00: Claimed by ar1504-launcher-luna56.
 
 - 2026-09-28T22:43:51+00:00: Heartbeat by ar1504-launcher-luna56.
+
+- 2026-09-28T22:44:50+00:00: Setup attempt at protected origin/main: handoffctl run rejected
+  worktree creation because invocation worktree 'agent-systems-benchmark' does not match declared
+  'agent-systems-benchmark-ar-1504-runtime-platform-launcher-seam'; no product mutation occurred.
+  Next: create declared worktree using documented setup exception, then run all worktree operations
+  through handoffctl.
