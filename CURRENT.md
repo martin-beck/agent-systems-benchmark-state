@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0896](tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | Hostile harness repair is signed, but pinned MockAgents still accepts oversized requests and approved AArch64/network-none runner evidence is unavailable. | Keep AR-0890 blocked. Repair or replace the pinned MockAgents oversized-request behavior, then rerun amd64 hostile/repeat qualification and an approved network-none AArch64 QEMU lane; do not use host QEMU or claim support. | ar0896-mockagents-repair-luna56 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -81,6 +75,7 @@ Never edit this file directly.
 | P1 | [AR-0861](tasks/AR-0861-openjiuwen-parity.md): Add OpenJiuwen provider parity and support matrix evidence | Add OpenJiuwen provider parity and support matrix evidence. | Extend exact provider parity and the platform support matrix only for executable-qualified OpenJiuwen combinations under a serialized shared-path fence. | - |
 | P1 | [AR-0863](tasks/AR-0863-workbuddy-provenance.md): Pin WorkBuddy source, package, and license provenance | Pin WorkBuddy source, package, and license provenance. | Pin official source, package, dependency closure, license, executable digest, protocol mode, and supported platform before any adapter claim. | - |
 | P1 | [AR-0890](tasks/AR-0890-deterministic-llm-double-ci.md): Integrate a deterministic LLM double in CI | Add the independently selected deterministic protocol double as a pinned isolated CI test dependency. | Integrate only the selected exact mock artifact into credential-free CI with fail-closed startup, network denial, provenance, and hostile lifecycle tests. | - |
+| P1 | [AR-0896](tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | Hostile harness repair is signed, but pinned MockAgents still accepts oversized requests and approved AArch64/network-none runner evidence is unavailable. | Keep AR-0890 blocked. Repair or replace the pinned MockAgents oversized-request behavior, then rerun amd64 hostile/repeat qualification and an approved network-none AArch64 QEMU lane; do not use host QEMU or claim support. | - |
 | P1 | [AR-1249](tasks/AR-1249-mockagents-qualification-evidence.md): Complete MockAgents executable qualification evidence | Complete missing evidence for the pinned MockAgents executable qualification. | Create a narrowly scoped candidate-repair AR for MockAgents v0.5.0 streaming truncation; rerun strict lifecycle/network qualification only after truncate_after_chunks suppresses terminal [DONE]. | - |
 | P1 | [AR-1250](tasks/AR-1250-mockagents-harness-extension.md): Extend MockAgents qualification harness | Extend the pinned MockAgents executable qualification harness. | Route candidate oversized-request behavior to AR-1249 or a reviewed successor; do not weaken the harness rejection. After candidate repair, rerun arm64 and amd64 repeat qualification with the verified QEMU runner. | - |
 | P1 | [AR-1251](tasks/AR-1251-mockagents-transport-sandbox.md): Add MockAgents transport sandbox fixture | Add a bounded transport and sandbox fixture for MockAgents qualification. | Await reviewed AR-1252 integration allowing pinned MockAgents and Python client in one approved sandbox; then add real transport/lifecycle/egress tests. | - |

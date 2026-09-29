@@ -2,7 +2,7 @@
 {
   "branch": "test/mockagents-executable-qualification",
   "checkpoint_commit": "eb68fd8cba77735efccc168ebb18e8e56581bcfe",
-  "claim_expires": "2026-09-29T14:52:20+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0888",
     "AR-0889"
@@ -12,15 +12,15 @@
   "observed_branch": "test/mockagents-executable-qualification",
   "observed_dirty": 0,
   "observed_head": "eb68fd8cba77735efccc168ebb18e8e56581bcfe",
-  "owner": "ar0896-mockagents-repair-luna56",
+  "owner": "",
   "plan": "../plans/AR-0896.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Hostile harness repair is signed, but pinned MockAgents still accepts oversized requests and approved AArch64/network-none runner evidence is unavailable.",
-  "task_revision": 71,
+  "task_revision": 72,
   "title": "Qualify the pinned MockAgents executable",
-  "updated_at": "2026-09-29T12:52:47+00:00",
+  "updated_at": "2026-09-29T12:52:50+00:00",
   "worktree_key": "agent-systems-benchmark-mockagents-executable-qualification"
 }
 ---
@@ -253,3 +253,7 @@ synthetic fixture for black-box executable evidence.
   preflight fails closed before execution because no explicit approved emulator runner is available.
   No outbound-denial claim: host refusal is not network-none evidence; AR-1258 remains blocked on
   binfmt fix-binary F/approved maintenance.
+
+- 2026-09-29T12:52:50+00:00: Released blocked after signed hostile harness repair. Pinned amd64
+  fails on oversized request acceptance; approved network-none runner and AArch64 QEMU evidence
+  remain unavailable. Keep AR-0890 blocked and do not select MockAgents.
