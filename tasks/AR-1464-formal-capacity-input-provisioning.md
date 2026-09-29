@@ -10,11 +10,11 @@
   "plan": "../plans/AR-1464.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Exact signed source, reviewed image, 64 GiB overlay, JDK/TLC/model and canonical lock are provisioned. Reclaimed the three stale AR-specific swap files and activated two fresh AR-specific swap files; repeated signed preflight now passes every gate except the unavailable exact seed digest.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Formal capacity and signed-input provisioning repair",
-  "updated_at": "2026-09-26T21:39:59+00:00",
+  "updated_at": "2026-09-29T16:11:31+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1464-formal-capacity-input-provisioning"
 }
 ---
@@ -211,3 +211,6 @@ scope.
   provide >1 GiB free swap and the signed preflight now fails only on the missing exact reviewed
   seed digest b3383756b5cd357f58d923216effea33be35b793034de321c3c9ce460ece4b28. Preserve fail-closed
   state; no synthetic seed or TLC run.
+
+- 2026-09-29T16:11:31+00:00: Development path no longer depends on reviewed seed digests;
+  superseding this formal-only archival provisioning task for development execution.
