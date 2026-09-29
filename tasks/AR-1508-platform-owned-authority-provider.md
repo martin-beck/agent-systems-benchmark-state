@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Platform-owned authority provider",
-  "updated_at": "2026-09-29T02:24:15+00:00",
+  "updated_at": "2026-09-29T02:24:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1508-platform-owned-authority-provider"
 }
 ---
@@ -98,3 +98,6 @@ fixed-path authority, weakening formal/privacy/native gates.
   path, then delegates to the existing resolver. Focused test first exited 101 because -D warnings
   rejected unused lifecycle error variants; added the deliberate dead-code annotation to retain
   explicit fail-closed categories, and the exact focused test now passes.
+
+- 2026-09-29T02:24:35+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
