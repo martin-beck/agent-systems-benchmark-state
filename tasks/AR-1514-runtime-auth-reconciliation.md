@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1514-runtime-auth-reconciliation",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T15:50:24+00:00",
   "depends_on": [
     "AR-1499",
     "AR-1500"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1514-runtime-auth-reconciliation",
   "observed_dirty": 1,
   "observed_head": "d59e6a76a1c7a432e63f0d765909b554bd12416c",
-  "owner": "",
+  "owner": "ar1514-reconciliation-luna56",
   "plan": "../plans/AR-1514-runtime-auth-reconciliation.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair ASB development-runtime reconciliation between digest-only enrollment and helper invocation.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Reconciled development auth handoff runtime",
-  "updated_at": "2026-09-29T13:15:19+00:00",
+  "updated_at": "2026-09-29T13:50:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1514-runtime-auth-reconciliation"
 }
 ---
@@ -57,3 +57,5 @@ side of that repair.
 
 - 2026-09-29T13:14:40+00:00: Coordinator stopped this unrelated worker to focus exclusively on
   AR-1308; preserve AR-1514 progress and reopen later.
+
+- 2026-09-29T13:50:24+00:00: Claimed by ar1514-reconciliation-luna56.
