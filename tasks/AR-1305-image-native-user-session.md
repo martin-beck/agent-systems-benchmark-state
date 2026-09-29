@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1305-image-native-user-session",
   "checkpoint_commit": "00a47726683609b7fef8ea5738fed5a3692fac29",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T14:03:20+00:00",
   "depends_on": [
     "AR-1302"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "00a47726683609b7fef8ea5738fed5a3692fac29",
-  "owner": "",
+  "owner": "coordinator-ar1305-image-v2",
   "plan": "../plans/AR-1305.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Qualify image-native D-Bus user-session support for required TLC containment.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Image-native user-session support",
-  "updated_at": "2026-09-29T13:53:16+00:00",
+  "updated_at": "2026-09-29T13:53:20+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1305-image-native-user-session"
 }
 ---
@@ -224,3 +224,5 @@ limits and fail-closed behavior remain unchanged.
 
 - 2026-09-29T13:53:16+00:00: Reopening after installing working privileged libguestfs tooling;
   building a fresh immutable image from the reviewed Ubuntu base.
+
+- 2026-09-29T13:53:20+00:00: Claimed by coordinator-ar1305-image-v2.
