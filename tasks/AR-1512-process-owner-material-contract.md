@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated process-owner material source and ordinary CLI/control caller needed to consume runtime authority.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Authenticated process-owner material contract",
-  "updated_at": "2026-09-29T05:21:12+00:00",
+  "updated_at": "2026-09-29T05:21:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1512-process-owner-material-contract"
 }
 ---
@@ -175,3 +175,6 @@ host data, synthetic authority, or weakening fail-closed/native/formal gates.
   a4064abf22b73096ebb26df9bca8d1dc28a7d81f with SSH signature and matching DCO Signed-off-by.
   Product worktree is clean. Focused, serial workspace, clippy, docs, fmt, formal model, and focused
   source privacy gates pass; broad gitleaks only found ignored target artifacts.
+
+- 2026-09-29T05:21:39+00:00: Recorded command exit 0; command argv SHA-256
+  1024fc1e6cefa31b078f0b5d2ed85c7ea4586897b388bf1e308f62db58574461.
