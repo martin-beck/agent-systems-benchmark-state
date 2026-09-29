@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1482-control-runtime-process-bootstrap",
   "checkpoint_commit": "f92c2e941913129d7db50480f71e8361a0d43a0c",
-  "claim_expires": "2026-09-29T11:07:45+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1472",
     "AR-1473",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1482-control-runtime-process-bootstrap",
   "observed_dirty": 0,
   "observed_head": "fdc7f59f83f647ce099439b003848291e81dd3bb",
-  "owner": "ar1482-bootstrap-luna56",
+  "owner": "",
   "plan": "../plans/AR-1482-control-runtime-process-bootstrap.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Compose authenticated control enrollment into the ordinary CLI process bootstrap.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Control-runtime process bootstrap",
-  "updated_at": "2026-09-29T10:37:48+00:00",
+  "updated_at": "2026-09-29T10:37:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1482-control-runtime-process-bootstrap"
 }
 ---
@@ -89,3 +89,6 @@ providers, accept caller-built authority, or weaken fail-closed boundaries.
 
 - 2026-09-29T10:37:48+00:00: Persist exact protected-main audit checkpoint and truthful successor
   next action; no product changes.
+
+- 2026-09-29T10:37:51+00:00: Re-released blocked after persisting checkpoint
+  f92c2e941913129d7db50480f71e8361a0d43a0c and successor next action. No product changes.
