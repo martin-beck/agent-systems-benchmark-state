@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Unsigned-development capacity and exact-head fixture remain repaired; generated-seed validation passes. Portable-smoke v14 reaches PORTABLE_SMOKE_TRANSIENT_RC=0 and powers off, but attest.py still rejects one resolved guest input path as outside /srv/data/projects, so no portable attestation is claimed yet. Full state suite remains 200 passed/86 subtests.",
-  "task_revision": 603,
+  "task_revision": 604,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T17:21:15+00:00",
+  "updated_at": "2026-09-29T17:21:33+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1852,3 +1852,6 @@ must report `qualification_authorized: false`.
 
 - 2026-09-29T17:21:15+00:00: Recorded command exit 0; command argv SHA-256
   872d2c4c5cebdd37e8bdf2670982a63336c7bf39fe1fa5a2e9cfe98b1f471f13.
+
+- 2026-09-29T17:21:33+00:00: Recorded command exit 0; command argv SHA-256
+  9f817cabe50ab596e3b4d36285acbdbe572a95b5b3eed67827faa419f3a0bcbe.
