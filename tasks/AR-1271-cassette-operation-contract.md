@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1271-cassette-operation-contract",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-29T13:42:32+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1271-cassette-operation-contract",
   "observed_dirty": 0,
   "observed_head": "c41b423c0536fe30fd2b6c5a6a33e46c9102ec5e",
-  "owner": "ar1271-cassette-repair-luna56",
+  "owner": "",
   "plan": "../plans/AR-1271.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Define a dependency-neutral cassette request/response operation contract.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Dependency-neutral cassette operation contract",
-  "updated_at": "2026-09-29T11:42:56+00:00",
+  "updated_at": "2026-09-29T11:43:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1271-cassette-operation"
 }
 ---
@@ -124,3 +124,9 @@ Preserve AR-1270's blocked evidence and do not fabricate responses or authority.
   product mutation made. Exact successor contract: runtime must issue an authenticated immutable
   cassette-content/backend capability, CLI adapter must consume it once and invoke
   StrictReplayService under supervisor lifecycle before these fixtures can establish acceptance.
+
+- 2026-09-29T11:43:05+00:00: Blocked after exact audit at clean c41b423: no runtime-authenticated
+  cassette-content/backend capability exists. Actual StrictReplayService invocation would require
+  caller-supplied cassette/service/route authority and violate fail-closed contract. Successor must
+  add immutable runtime content/backend handle, one-shot CLI consumption, then supervised real
+  response/no-fallback/egress/cancel/restart/timeout/crash cleanup fixtures.
