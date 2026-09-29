@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1514](tasks/AR-1514-runtime-auth-reconciliation.md): Reconciled development auth handoff runtime | Repair ASB development-runtime reconciliation between digest-only enrollment and helper invocation. | PR #386 is open at exact head a97dfb39c78478445180db0e38574c17db266700 against protected base d59e6a76a1c7a432e63f0d765909b554bd12416c; hosted exact-head checks remain pending. Obtain independent review and terminal hosted checks before merge; do not claim paired asb-tui qualification here. | ar1514-reconciliation-luna56 |
+| P0 | [AR-1514](tasks/AR-1514-runtime-auth-reconciliation.md): Reconciled development auth handoff runtime | Repair ASB development-runtime reconciliation between digest-only enrollment and helper invocation. | Complete; PR #386 merged at bf89a45ddd71af96e6d4b6954320e199e147f83e. Protected main tree equals reviewed topic and post-merge auth-focused ASB tests pass. Paired asb-tui AR-1323 qualification remains external. | ar1514-reconciliation-luna56 |
 
 ## Open
 
