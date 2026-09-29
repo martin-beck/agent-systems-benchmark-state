@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1392-control-authority-materializer",
   "checkpoint_commit": "78ab92bdb87645ac5567fb3341b1b0b73dba5029",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T12:48:03+00:00",
   "depends_on": [
     "AR-1388",
     "AR-1385",
@@ -18,15 +18,15 @@
   "observed_branch": "feature/ar-1392-control-authority-materializer",
   "observed_dirty": 0,
   "observed_head": "78ab92bdb87645ac5567fb3341b1b0b73dba5029",
-  "owner": "",
+  "owner": "ar1392-topology-repair-luna56",
   "plan": "../plans/AR-1392-control-authority-materializer.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Resolve private live authority from authenticated control enrollment without caller injection.",
-  "task_revision": 123,
+  "task_revision": 124,
   "title": "Control-owned private authority materializer",
-  "updated_at": "2026-09-29T12:18:00+00:00",
+  "updated_at": "2026-09-29T12:18:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1392-control-authority-materializer"
 }
 ---
@@ -427,3 +427,5 @@ reachability.
 
 - 2026-09-29T12:18:00+00:00: Repair only the protected-main merge-topology policy failure for PR
   #339; preserve green product checks and do not change authority-materializer behavior.
+
+- 2026-09-29T12:18:03+00:00: Claimed by ar1392-topology-repair-luna56.
