@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1305](tasks/AR-1305-image-native-user-session.md): Image-native user-session support | Qualify image-native D-Bus user-session support for required TLC containment. | Blocked: guestfish read-only inspection fails before access because /usr/bin/supermin exits 1; approved root has ~4.9 GiB free, preventing safe image repair. Reopen only with reviewed working appliance/capacity; no portable fallback, AR-1304 limit changes, or qualification. | coordinator-ar1305-image-v2 |
-| P0 | [AR-1514](tasks/AR-1514-runtime-auth-reconciliation.md): Reconciled development auth handoff runtime | Repair ASB development-runtime reconciliation between digest-only enrollment and helper invocation. | Obtain independent exact-head review and hosted checks for a97dfb39c78478445180db0e38574c17db266700; then merge and rerun post-merge verification, or record the external blocker. | ar1514-reconciliation-luna56 |
+| P0 | [AR-1514](tasks/AR-1514-runtime-auth-reconciliation.md): Reconciled development auth handoff runtime | Repair ASB development-runtime reconciliation between digest-only enrollment and helper invocation. | PR #386 is open at exact head a97dfb39c78478445180db0e38574c17db266700 against protected base d59e6a76a1c7a432e63f0d765909b554bd12416c; hosted exact-head checks remain pending. Obtain independent review and terminal hosted checks before merge; do not claim paired asb-tui qualification here. | ar1514-reconciliation-luna56 |
 
 ## Blocked
 
