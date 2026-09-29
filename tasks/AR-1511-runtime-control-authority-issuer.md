@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T03:29:15+00:00",
+  "updated_at": "2026-09-29T03:30:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
@@ -160,3 +160,6 @@ production authority, or weakening fail-closed/native/formal gates.
   --test-threads=1 through handoffctl: terminal exit 0; all workspace tests and doc tests passed.
   The earlier parallel run's two asb-cli state-lock panics are order-sensitive baseline collisions,
   and the isolated filter passes 8/8. Product worktree remains clean at signed 1a26b02.
+
+- 2026-09-29T03:30:29+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
