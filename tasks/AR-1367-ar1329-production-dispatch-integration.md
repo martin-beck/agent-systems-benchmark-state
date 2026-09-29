@@ -18,11 +18,11 @@
   "plan": "../plans/AR-1367-ar1329-production-dispatch-integration.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Complete production asb run/sweep live-provider dispatch through runtime-owned authenticated acquisition and teardown.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "AR-1329 production dispatch integration",
-  "updated_at": "2026-09-29T22:51:42+00:00",
+  "updated_at": "2026-09-29T22:57:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1367-ar1329-production-dispatch-integration"
 }
 ---
@@ -111,3 +111,6 @@ reachability.
   no authenticated runtime/control enrollment source. Runtime acquire_from_record/materialization
   remains crate-private and requires a platform-owned source. Existing local/mock and strict-replay
   paths remain intact. No product mutation; route the production bridge to canonical AR-1523.
+
+- 2026-09-29T22:57:53+00:00: Reopen only to correct durable next action after the exact
+  production-dispatch audit; live authority source remains unavailable.
