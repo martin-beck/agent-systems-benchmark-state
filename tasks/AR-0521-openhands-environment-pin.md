@@ -2,7 +2,7 @@
 {
   "branch": "feature/replay-openhands-environment-pin",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-29T12:25:52+00:00",
+  "claim_expires": "2026-09-29T10:55:55+00:00",
   "depends_on": [
     "AR-0309"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair OpenHands replay environment provenance and reproducibility.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Reproduce and pin the OpenHands replay environment",
-  "updated_at": "2026-09-29T10:25:52+00:00",
+  "updated_at": "2026-09-29T10:25:55+00:00",
   "worktree_key": "agent-systems-benchmark-replay-openhands-environment-pin"
 }
 ---
@@ -44,3 +44,5 @@ Acceptance requires a content-addressed environment bundle, offline verifier, de
   7c6e56db809ea67d791db0aad45a1d0b4e7fe93c6218faa4f1f1856d76d6bc4e.
 
 - 2026-09-29T10:25:52+00:00: Heartbeat by ar0521-environment-pin-luna56.
+
+- 2026-09-29T10:25:55+00:00: Heartbeat by ar0521-environment-pin-luna56.
