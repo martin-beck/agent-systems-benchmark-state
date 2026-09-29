@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "checkpoint_commit": "d6e175abe060e6408977884c9c06c69a3a738b5b",
-  "claim_expires": "2026-09-29T19:11:39+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1304"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "d6e175abe060e6408977884c9c06c69a3a738b5b",
-  "owner": "coordinator-ar1308-evidence-update-20260929",
+  "owner": "",
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "QEMU fixture passes boot/transient/JAR checks; corrected full-tier rerun reproducibly times out at 1700s without attestation.",
-  "task_revision": 695,
+  "task_revision": 696,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T19:01:54+00:00",
+  "updated_at": "2026-09-29T19:01:57+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -2118,3 +2118,6 @@ must report `qualification_authorized: false`.
 - 2026-09-29T19:01:54+00:00: AR-1516 repaired the fixture and reran it. Sanitized evidence:
   /srv/data/projects/ar1308-development/diagnostic-ar1516-full3-summary.txt. No FULL_EXHAUSTIVE_RC
   or attestation marker was emitted.
+
+- 2026-09-29T19:01:57+00:00: Updated with AR-1516 corrected 1700s timeout evidence; capacity/model
+  decision belongs to AR-1309.
