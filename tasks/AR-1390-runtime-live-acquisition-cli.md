@@ -24,9 +24,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compose runtime-owned live provider acquisition and wire it into normal ASB run and sweep.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Runtime live acquisition and CLI bridge",
-  "updated_at": "2026-09-29T21:09:37+00:00",
+  "updated_at": "2026-09-29T21:20:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1390-runtime-live-acquisition-cli"
 }
 ---
@@ -169,3 +169,6 @@ reachability.
   c0b4c4e3c82f428c2a3d92f39f5218c3dc0d464275acc327497b90ad10af702a.
 
 - 2026-09-29T21:09:37+00:00: Heartbeat by coordinator-ar1390-live-dispatch-20260929.
+
+- 2026-09-29T21:20:48+00:00: Recorded command exit 0; command argv SHA-256
+  7513f4dcee2ca15d44e0b1a61a4f0fffd813651074ed85902919699439159705.
