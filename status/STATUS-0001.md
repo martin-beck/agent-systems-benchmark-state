@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**530 ARs tracked** across 5 active status categories.
+**531 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 79 |
-| **Planned** | Defined work awaiting promotion or dependencies | 50 |
+| **Planned** | Defined work awaiting promotion or dependencies | 51 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 379 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -605,6 +605,7 @@ flowchart LR
         AR_1508["AR-1508 - Blocked"]:::status_blocked
         AR_1509["AR-1509 - Blocked"]:::status_blocked
         AR_1510["AR-1510 - Blocked"]:::status_blocked
+        AR_1511["AR-1511 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1988,6 +1989,7 @@ flowchart LR
     AR_1484 --> AR_1507
     AR_1484 --> AR_1508
     AR_1484 --> AR_1509
+    AR_1484 --> AR_1511
     AR_1485 --> AR_1486
     AR_1485 --> AR_1503
     AR_1485 --> AR_1504
@@ -2024,6 +2026,7 @@ flowchart LR
     AR_1502 --> AR_1507
     AR_1502 --> AR_1508
     AR_1502 --> AR_1509
+    AR_1502 --> AR_1511
     AR_1505 --> AR_1506
     AR_1505 --> AR_1507
     AR_1505 --> AR_1508
@@ -2380,5 +2383,3 @@ flowchart LR
 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md) | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md) | [AR-1309](../tasks/AR-1309-reviewed-capacity-or-model-reduction.md) |
 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md) | [AR-1304](../tasks/AR-1304-required-tier-qemu-runner.md) | [AR-1309](../tasks/AR-1309-reviewed-capacity-or-model-reduction.md) |
 | [AR-1309](../tasks/AR-1309-reviewed-capacity-or-model-reduction.md) | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md), [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md) | None |
-| [AR-1310](../tasks/AR-1310-provider-capture-campaign.md) | [AR-1060](../tasks/AR-1060-authenticated-control-endpoint-handoff.md), [AR-1151](../tasks/AR-1151.md) | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md), [AR-1319](../tasks/AR-1319-authenticated-agent-catalog-entry-contract.md) |
-| [AR-1311](../tasks/AR-1311-planned-task-metadata-schema-repair.md) | None | None |
