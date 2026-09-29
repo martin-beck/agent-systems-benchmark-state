@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1511](tasks/AR-1511-runtime-control-authority-issuer.md): Runtime/control authority issuer and capability source | Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch. | Serial workspace cargo test is green; exact signed product head is 1a26b02. Next: independent exact-head diff review, then publish PR/CI through the guarded workflow; no live/provider claim. | - |
+| P0 | [AR-1511](tasks/AR-1511-runtime-control-authority-issuer.md): Runtime/control authority issuer and capability source | Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch. | Serial workspace cargo test is green; exact signed product head is 1a26b02. Next: independent exact-head diff review, then publish PR/CI through the guarded workflow; no live/provider claim. | ar1511-authority-repair-luna56 |
 
 ## Blocked
 

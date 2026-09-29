@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1511-runtime-control-authority-issuer",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T05:36:14+00:00",
   "depends_on": [
     "AR-1502",
     "AR-1484"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1511-runtime-control-authority-issuer",
   "observed_dirty": 2,
   "observed_head": "1a26b02e2b6de485e930a0448d7fe5d34aed3061",
-  "owner": "",
+  "owner": "ar1511-authority-repair-luna56",
   "plan": "../plans/AR-1511-runtime-control-authority-issuer.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T03:36:07+00:00",
+  "updated_at": "2026-09-29T03:36:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
@@ -200,3 +200,5 @@ production authority, or weakening fail-closed/native/formal gates.
 - 2026-09-29T03:36:07+00:00: Coordinator stopped worker after independent review found P1 lifecycle
   and production-callsite gaps; preserve signed 1a26b02 plus dirty follow-on diff and transfer to
   repair worker.
+
+- 2026-09-29T03:36:14+00:00: Claimed by ar1511-authority-repair-luna56.
