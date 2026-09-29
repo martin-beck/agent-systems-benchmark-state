@@ -196,7 +196,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1509](../tasks/AR-1509-authenticated-authority-provider-receipt.md): Authenticated authority-provider receipt | ar1509-repair-luna56 | Replace the AR-1508 test façade with an authenticated production authority-provider receipt and lifecycle fence. | Takeover recovery: audit preserved AR-1509 worktree/diff against protected merge f92c2e941913129d7db50480f71e8361a0d43a0c before deciding repair or truthful block. |
+| P0 | [AR-1509](../tasks/AR-1509-authenticated-authority-provider-receipt.md): Authenticated authority-provider receipt | ar1509-repair-luna56 | Replace the AR-1508 test façade with an authenticated production authority-provider receipt and lifecycle fence. | Repair audit: focused test initially failed because preserved dirty diff left a stale test-only binding field; patched test fixture to use the receipt validator. Next rerun focused gate, then assess production-callsite/authenticated-source blocker. |
 
 ### Blocked (77)
 

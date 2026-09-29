@@ -13,7 +13,7 @@
     "AR-1505"
   ],
   "id": "AR-1509",
-  "next_action": "Takeover recovery: audit preserved AR-1509 worktree/diff against protected merge f92c2e941913129d7db50480f71e8361a0d43a0c before deciding repair or truthful block.",
+  "next_action": "Repair audit: focused test initially failed because preserved dirty diff left a stale test-only binding field; patched test fixture to use the receipt validator. Next rerun focused gate, then assess production-callsite/authenticated-source blocker.",
   "observed_branch": "feature/ar-1509-authenticated-authority-provider-receipt",
   "observed_dirty": 1,
   "observed_head": "e437261f6fed268956cd436e06beb117549611ac",
@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Replace the AR-1508 test fa\u00e7ade with an authenticated production authority-provider receipt and lifecycle fence.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Authenticated authority-provider receipt",
-  "updated_at": "2026-09-29T02:49:13+00:00",
+  "updated_at": "2026-09-29T02:49:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1509-authenticated-authority-provider-receipt"
 }
 ---
@@ -121,3 +121,11 @@ mock production authority, or weakening formal/privacy/native gates.
   71352aa9e9a5c05420d63d2bfca4d0a03840f7d7a85c2d83dea1376fb75a4a02.
 
 - 2026-09-29T02:49:13+00:00: Heartbeat by ar1509-repair-luna56.
+
+- 2026-09-29T02:49:25+00:00: Audit evidence: branch e437261 atop protected
+  f92c2e941913129d7db50480f71e8361a0d43a0c with dirty live_service.rs; diff files README.md,
+  docs/PLATFORM_AUTHORITY_PROVIDER.md, crates/asb-runtime/src/live_service.rs; rg found
+  from_authenticated_material only at its definition and test line 3103 (no non-test
+  construction/callsite). Focused cargo test via handoffctl exited 101 at live_service.rs:3005 stale
+  material.binding_sha256 field; patched test fixture to call validate_authority_material. Existing
+  235f604/e437261 preserved.
