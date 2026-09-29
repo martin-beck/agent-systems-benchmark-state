@@ -236,11 +236,12 @@
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1367](../tasks/AR-1367-ar1329-production-dispatch-integration.md): AR-1329 production dispatch integration | coordinator-ar1367-production-dispatch-20260930 | Complete production asb run/sweep live-provider dispatch through runtime-owned authenticated acquisition and teardown. | Promote and claim this fresh AR-1329 successor, refresh an isolated worktree to protected main, audit the production run/sweep dispatch seam, and implement only through runtime-owned bridge inputs. |
 
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1533](../tasks/AR-1533.md): AR-1308 unsigned-development QEMU fixture repair | Unclaimed | Repair the provider-free unsigned-development QEMU fixture for AR-1308 and make its diagnostics, cleanup and non-qualification boundary reliable. | Promote after state review; repair and rerun the unsigned-development QEMU fixture with generated inputs, preserving formal AR-1308 blockers and non-qualifying evidence. |
+| P0 | [AR-1534](../tasks/AR-1534.md): Coordinator vendor integrity repair | Unclaimed | Repair the state repository&#x27;s coordinator vendor-integrity mismatch exposed after the AR-1530 capacity-profile merge. | Promote after coordinator review; reconcile the immutable coordinator vendor contract with the merged capacity-profile change without weakening vendor verification or modifying handoffctl in an unrelated AR. |
 
 ### Blocked (80)
 
@@ -327,7 +328,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (47)
+### Planned (46)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -346,7 +347,6 @@
 | P0 | [AR-1170](../tasks/AR-1170.md): Standalone TUI wizard | Unclaimed | Guide TUI setup through analysis. | Read the plan. |
 | P0 | [AR-1180](../tasks/AR-1180.md): Cross-project wizard qualification | Unclaimed | Qualify the complete wizard. | Read the plan. |
 | P0 | [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Unclaimed | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. |
-| P0 | [AR-1534](../tasks/AR-1534.md): Coordinator vendor integrity repair | Unclaimed | Repair the state repository&#x27;s coordinator vendor-integrity mismatch exposed after the AR-1530 capacity-profile merge. | Promote after coordinator review; reconcile the immutable coordinator vendor contract with the merged capacity-profile change without weakening vendor verification or modifying handoffctl in an unrelated AR. |
 | P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
 | P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
 | P1 | [AR-0810](../tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Unclaimed | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project&#x27;s GitHub Pages site. |
