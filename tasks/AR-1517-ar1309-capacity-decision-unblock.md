@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-29T19:36:02+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1304"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "coordinator-ar1517-capacity-decision-20260929",
+  "owner": "",
   "plan": "../plans/AR-1517-ar1309-capacity-decision-unblock.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Select a reviewed AR-1309 capacity/model contract after runner failure.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "AR-1309 capacity decision",
-  "updated_at": "2026-09-29T19:06:02+00:00",
+  "updated_at": "2026-09-29T19:06:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1517-ar1309-capacity-decision-unblock"
 }
 ---
@@ -32,3 +32,6 @@ formal qualification, and first-customer production readiness.
   capacity/model decision successor using terminal AR-1307/1308 evidence.
 
 - 2026-09-29T19:06:02+00:00: Claimed by coordinator-ar1517-capacity-decision-20260929.
+
+- 2026-09-29T19:06:42+00:00: Capacity decision recorded; implementation belongs to a separate
+  successor AR and does not widen AR-1307.
