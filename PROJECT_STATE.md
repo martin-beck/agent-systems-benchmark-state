@@ -21,14 +21,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36508408878 | `f92c2e941913` | push | Rust verification | in_progress:- |
+| 36508408878 | `f92c2e941913` | push | Rust verification | completed:success |
 | 36508408778 | `f92c2e941913` | push | Credential-free benchmark path | completed:success |
 | 36508408777 | `f92c2e941913` | push | Formal assurance | completed:success |
 | 36508408767 | `f92c2e941913` | push | Fault assurance | completed:success |
 | 36508408764 | `f92c2e941913` | push | Huawei MIT source headers | completed:success |
 | 36508408721 | `f92c2e941913` | push | Hosted portability and native qualification | completed:success |
-| 36508408649 | `f92c2e941913` | push | Repository quality | in_progress:- |
-| 36508408647 | `f92c2e941913` | push | Emulated aarch64 portability | in_progress:- |
+| 36508408649 | `f92c2e941913` | push | Repository quality | completed:success |
+| 36508408647 | `f92c2e941913` | push | Emulated aarch64 portability | completed:success |
 | 36507283180 | `c96be66213c9` | pull_request | Repository quality | completed:success |
 | 36507283164 | `c96be66213c9` | pull_request | Emulated aarch64 portability | completed:success |
 | 36507283132 | `c96be66213c9` | pull_request | Agent Workflow Quality shadow | completed:success |
