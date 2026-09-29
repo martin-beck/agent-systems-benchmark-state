@@ -217,7 +217,7 @@
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1390](../tasks/AR-1390-runtime-live-acquisition-cli.md): Runtime live acquisition and CLI bridge | coordinator-ar1390-live-dispatch-20260929 | Compose runtime-owned live provider acquisition and wire it into normal ASB run and sweep. | Claim the pre-bound isolated worktree, implement the runtime-owned live acquisition and normal CLI run/sweep bridge, and publish a signed PR. |
-| P0 | [AR-1510](../tasks/AR-1510-authenticated-control-source-wiring.md): Authenticated control source and production provider wiring | coordinator-ar1510-source-wiring-20260929 | Provide the authenticated platform control source and production lifecycle wiring required by the authority-provider receipt. | Blocked: obtain and integrate a real authenticated platform authority provider plus production control-client bootstrap/CLI wiring; create a narrower successor when that source/capability contract is available. |
+| P0 | [AR-1510](../tasks/AR-1510-authenticated-control-source-wiring.md): Authenticated control source and production provider wiring | coordinator-ar1510-source-wiring-20260929 | Provider boundary and expiry fencing are implemented and runtime/CLI tests mostly pass; ordinary production dispatch still lacks an authenticated non-test platform material source. | Remain blocked on the platform-owned deployment adapter: supply private roots, tool pins, policy/allowlist, credential capability and enrollment from authenticated runtime state without CLI/config/PATH injection, then wire the opaque source into ordinary run/sweep and rerun exact-head gates. |
 
 ### Blocked (75)
 

@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1510-authenticated-control-source-wiring",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "beedef76e835009e82f85c785967a36286748377",
   "claim_expires": "2026-09-29T23:16:57+00:00",
   "depends_on": [
     "AR-1505"
   ],
   "id": "AR-1510",
-  "next_action": "Blocked: obtain and integrate a real authenticated platform authority provider plus production control-client bootstrap/CLI wiring; create a narrower successor when that source/capability contract is available.",
+  "next_action": "Remain blocked on the platform-owned deployment adapter: supply private roots, tool pins, policy/allowlist, credential capability and enrollment from authenticated runtime state without CLI/config/PATH injection, then wire the opaque source into ordinary run/sweep and rerun exact-head gates.",
   "observed_branch": "feature/ar-1510-authenticated-control-source-wiring",
   "observed_dirty": 0,
   "observed_head": "beedef76e835009e82f85c785967a36286748377",
@@ -16,10 +16,10 @@
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Provide the authenticated platform control source and production lifecycle wiring required by the authority-provider receipt.",
-  "task_revision": 29,
+  "summary": "Provider boundary and expiry fencing are implemented and runtime/CLI tests mostly pass; ordinary production dispatch still lacks an authenticated non-test platform material source.",
+  "task_revision": 30,
   "title": "Authenticated control source and production provider wiring",
-  "updated_at": "2026-09-29T21:19:02+00:00",
+  "updated_at": "2026-09-29T21:19:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1510-authenticated-control-source-wiring"
 }
 ---
@@ -163,3 +163,7 @@ test-only façade publication, or weakening native/formal/privacy gates.
 
 - 2026-09-29T21:19:02+00:00: Recorded command exit 0; command argv SHA-256
   2d4fbad60516d7d4daaa76313c92782b56921fce4ba935788d7b25f5d971f120.
+
+- 2026-09-29T21:19:49+00:00: Current-main re-audit: provider contract and lifecycle fencing are
+  present; asb-runtime full suite passes, asb-cli isolated lock-contention test passes on rerun. No
+  safe production callsite exists, so no PR or qualification claim.
