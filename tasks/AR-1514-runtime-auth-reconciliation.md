@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1514-runtime-auth-reconciliation",
   "checkpoint_commit": "bf89a45ddd71af96e6d4b6954320e199e147f83e",
-  "claim_expires": "2026-09-29T14:47:48+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1499",
     "AR-1500"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1514-runtime-auth-reconciliation",
   "observed_dirty": 0,
   "observed_head": "a97dfb39c78478445180db0e38574c17db266700",
-  "owner": "ar1514-reconciliation-luna56",
+  "owner": "",
   "plan": "../plans/AR-1514-runtime-auth-reconciliation.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Repair ASB development-runtime reconciliation between digest-only enrollment and helper invocation.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Reconciled development auth handoff runtime",
-  "updated_at": "2026-09-29T14:20:06+00:00",
+  "updated_at": "2026-09-29T14:20:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1514-runtime-auth-reconciliation"
 }
 ---
@@ -128,3 +128,8 @@ side of that repair.
   bf89a45ddd71af96e6d4b6954320e199e147f83e; all hosted checks terminal SUCCESS; protected
   origin/main tree is identical to reviewed topic; six auth-focused ASB tests pass on merged tree.
   No asb-tui changes or production/provider claims.
+
+- 2026-09-29T14:20:15+00:00: Completed: ASB runtime auth reconciliation repair merged as PR #386 at
+  bf89a45ddd71af96e6d4b6954320e199e147f83e. Exact-head hosted checks, independent review,
+  protected-main tree verification, and post-merge auth-focused tests passed. Paired asb-tui AR-1323
+  qualification remains external evidence.
