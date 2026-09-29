@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "checkpoint_commit": "d6e175abe060e6408977884c9c06c69a3a738b5b",
-  "claim_expires": "2026-09-29T20:16:13+00:00",
+  "claim_expires": "2026-09-29T20:17:06+00:00",
   "depends_on": [
     "AR-1304"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Development verifier and portable admission repairs are validated: preloaded TLC JAR is accepted offline, runtime-root overrides remain bounded, and portable-smoke produced a success attestation after accounting for existing host threads. Full-exhaustive QEMU evidence is still pending; no reviewed seed or digest dependency remains.",
-  "task_revision": 682,
+  "task_revision": 683,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T18:16:13+00:00",
+  "updated_at": "2026-09-29T18:17:06+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -2078,3 +2078,5 @@ must report `qualification_authorized: false`.
 - 2026-09-29T18:15:18+00:00: Heartbeat by coordinator-ar1308-thread-admission-20260929.
 
 - 2026-09-29T18:16:13+00:00: Heartbeat by coordinator-ar1308-thread-admission-20260929.
+
+- 2026-09-29T18:17:06+00:00: Heartbeat by coordinator-ar1308-thread-admission-20260929.
