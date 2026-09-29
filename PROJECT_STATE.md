@@ -24,9 +24,9 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 36581635858 | `bf89a45ddd71` | push | Huawei MIT source headers | completed:success |
 | 36581635835 | `bf89a45ddd71` | push | Rust verification | in_progress:- |
-| 36581635826 | `bf89a45ddd71` | push | Credential-free benchmark path | in_progress:- |
+| 36581635826 | `bf89a45ddd71` | push | Credential-free benchmark path | completed:success |
 | 36581635780 | `bf89a45ddd71` | push | Emulated aarch64 portability | in_progress:- |
-| 36581635719 | `bf89a45ddd71` | push | Hosted portability and native qualification | in_progress:- |
+| 36581635719 | `bf89a45ddd71` | push | Hosted portability and native qualification | completed:success |
 | 36581635663 | `bf89a45ddd71` | push | Formal assurance | in_progress:- |
 | 36581635581 | `bf89a45ddd71` | push | Repository quality | in_progress:- |
 | 36581635527 | `bf89a45ddd71` | push | Fault assurance | in_progress:- |
