@@ -3,7 +3,7 @@
   "branch": "feature/ar-1510-authenticated-control-source-wiring",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1509"],
+  "depends_on": ["AR-1505"],
   "id": "AR-1510",
   "next_action": "Promote after the AR-1509 blocker evidence is reconciled; implement and verify an authenticated platform control source and production runtime wiring from protected main.",
   "observed_branch": "",
@@ -53,3 +53,5 @@ test-only façade publication, or weakening native/formal/privacy gates.
   non-test authenticated provider construction/callsite, only self-attested
   local-input digests, and no production transition fencing. Preserve its
   unmerged commits as evidence only; start from protected main.
+  AR-1509 remains a blocked audit rather than a prerequisite; this successor
+  starts from the protected AR-1505 merge and owns the missing boundary.
