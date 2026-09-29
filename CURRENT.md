@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1305](tasks/AR-1305-image-native-user-session.md): Image-native user-session support | Fresh immutable image v2 is reviewed for development use: base/package/result digests are recorded and a bounded network-disabled boot reaches user-session startup and FULL_EXHAUSTIVE_TRANSIENT_RC=0 without Transport endpoint failure. Development qualification does not depend on a reviewed seed digest; formal/publication qualification remains separate and optional. | Use any locally generated disposable seed with the explicit unsigned-development profile for further development tests. Do not block this AR on AR-1464/AR-1465 or a reviewed seed. If formal qualification is later authorized, open a new formal-only successor with its own reviewed-input contract. | coordinator-seed-policy-v1 |
+| P0 | [AR-1305](tasks/AR-1305-image-native-user-session.md): Image-native user-session support | Fresh immutable image v2 is reviewed for development use: base/package/result digests are recorded and a bounded network-disabled boot reaches user-session startup and FULL_EXHAUSTIVE_TRANSIENT_RC=0 without Transport endpoint failure. Development qualification does not depend on a reviewed seed digest; formal/publication qualification remains separate and optional. | Use any locally generated disposable seed with the explicit unsigned-development profile for further development tests. Do not block this AR on AR-1464/AR-1465 or a reviewed seed. If formal qualification is later authorized, open a new formal-only successor with its own reviewed-input contract. | - |
 
 ## Blocked
 

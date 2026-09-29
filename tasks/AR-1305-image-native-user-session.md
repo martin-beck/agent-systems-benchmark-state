@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1305-image-native-user-session",
   "checkpoint_commit": "00a47726683609b7fef8ea5738fed5a3692fac29",
-  "claim_expires": "2026-09-29T17:11:41+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1302"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "00a47726683609b7fef8ea5738fed5a3692fac29",
-  "owner": "coordinator-seed-policy-v1",
+  "owner": "",
   "plan": "../plans/AR-1305.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Fresh immutable image v2 is reviewed for development use: base/package/result digests are recorded and a bounded network-disabled boot reaches user-session startup and FULL_EXHAUSTIVE_TRANSIENT_RC=0 without Transport endpoint failure. Development qualification does not depend on a reviewed seed digest; formal/publication qualification remains separate and optional.",
-  "task_revision": 66,
+  "task_revision": 67,
   "title": "Image-native user-session support",
-  "updated_at": "2026-09-29T16:42:06+00:00",
+  "updated_at": "2026-09-29T16:42:23+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1305-image-native-user-session"
 }
 ---
@@ -259,3 +259,6 @@ limits and fail-closed behavior remain unchanged.
 
 - 2026-09-29T16:42:06+00:00: Recorded command exit 0; command argv SHA-256
   3928ec7ebeca0c39982ea5c5b3cd0be940403c062d0820fd9cc07209512e99b3.
+
+- 2026-09-29T16:42:23+00:00: Seed policy documentation updated; development remains unblocked with
+  generated disposable seeds, and lease is released for implementation work.
