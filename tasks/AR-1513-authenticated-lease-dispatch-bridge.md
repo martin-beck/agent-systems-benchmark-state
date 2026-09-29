@@ -3,7 +3,10 @@
   "branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1502", "AR-1484"],
+  "depends_on": [
+    "AR-1502",
+    "AR-1484"
+  ],
   "id": "AR-1513",
   "next_action": "Promote after AR-1512 review evidence is reconciled; replace public self-authenticated owner material with authenticated issuance and wire the lease to live dispatch.",
   "observed_branch": "",
@@ -13,11 +16,11 @@
   "plan": "../plans/AR-1513-authenticated-lease-dispatch-bridge.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T05:24:00+00:00",
+  "updated_at": "2026-09-29T05:26:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -53,3 +56,6 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
   are implemented.
   AR-1512 remains historical blocked evidence rather than a prerequisite;
   this task starts from protected main and owns the missing production bridge.
+
+- 2026-09-29T05:26:15+00:00: AR-1512 review blocker reconciled; promote authenticated issuance,
+  provenance, and live dispatch bridge successor.
