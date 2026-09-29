@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1508-platform-owned-authority-provider",
   "checkpoint_commit": "5344809cfe4f8f8b1a4bd734b606c347f693c349",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T12:04:31+00:00",
   "depends_on": [
     "AR-1473",
     "AR-1474",
@@ -17,15 +17,15 @@
   "observed_branch": "feature/ar-1508-platform-owned-authority-provider",
   "observed_dirty": 0,
   "observed_head": "5344809cfe4f8f8b1a4bd734b606c347f693c349",
-  "owner": "",
+  "owner": "ar1508-provider-repair2-luna56",
   "plan": "../plans/AR-1508-platform-owned-authority-provider.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material.",
-  "task_revision": 137,
+  "task_revision": 138,
   "title": "Platform-owned authority provider",
-  "updated_at": "2026-09-29T11:34:23+00:00",
+  "updated_at": "2026-09-29T11:34:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1508-platform-owned-authority-provider"
 }
 ---
@@ -484,3 +484,5 @@ fixed-path authority, weakening formal/privacy/native gates.
 - 2026-09-29T11:34:23+00:00: Independent review rejected 5344809 with P1 production-provider absence
   and missing expiry/revocation fencing. Start a new repair worker on the same AR; do not publish or
   merge.
+
+- 2026-09-29T11:34:31+00:00: Claimed by ar1508-provider-repair2-luna56.

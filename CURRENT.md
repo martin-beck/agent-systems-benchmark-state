@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1508](tasks/AR-1508-platform-owned-authority-provider.md): Platform-owned authority provider | Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material. | REJECTED: do not publish or merge 5344809. P1-1: add a non-test runtime/control implementation that obtains private roots/tools/policy/allowlist/credential/enrollment from authenticated AR-1505 control state and binds the full receipt; current RuntimePlatformAuthorityProvider/Handle has no production callsite (rg shows only live_service tests). P1-2: add current-time/revocation/restart/expiry fencing to provider materialization/enrollment before handle issuance; RuntimePlatformAuthorityBinding carries expires_at_unix_ms but materialize_provisioner has no now parameter and RuntimeAuthorityInputResolver::resolve checks only owner/generation/cancelled/torn_down. Add negative lifecycle tests, then repeat exact-head review and hosted checks. No push/merge. | - |
+| P0 | [AR-1508](tasks/AR-1508-platform-owned-authority-provider.md): Platform-owned authority provider | Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material. | REJECTED: do not publish or merge 5344809. P1-1: add a non-test runtime/control implementation that obtains private roots/tools/policy/allowlist/credential/enrollment from authenticated AR-1505 control state and binds the full receipt; current RuntimePlatformAuthorityProvider/Handle has no production callsite (rg shows only live_service tests). P1-2: add current-time/revocation/restart/expiry fencing to provider materialization/enrollment before handle issuance; RuntimePlatformAuthorityBinding carries expires_at_unix_ms but materialize_provisioner has no now parameter and RuntimeAuthorityInputResolver::resolve checks only owner/generation/cancelled/torn_down. Add negative lifecycle tests, then repeat exact-head review and hosted checks. No push/merge. | ar1508-provider-repair2-luna56 |
 
 ## Blocked
 
