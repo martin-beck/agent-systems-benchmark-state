@@ -21,11 +21,11 @@
   "plan": "../plans/AR-1508-platform-owned-authority-provider.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material.",
-  "task_revision": 139,
+  "task_revision": 140,
   "title": "Platform-owned authority provider",
-  "updated_at": "2026-09-29T11:36:31+00:00",
+  "updated_at": "2026-09-29T21:10:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1508-platform-owned-authority-provider"
 }
 ---
@@ -491,3 +491,7 @@ fixed-path authority, weakening formal/privacy/native gates.
   supplying private roots/tools/policy/allowlist/credential/enrollment; AR-1508 cannot safely
   implement provider. Lifecycle freshness fencing is also absent. Preserve no-publish state and
   create/advance a narrow platform material-provider/receipt successor before retrying.
+
+- 2026-09-29T21:10:52+00:00: Reopen rejected provider implementation: dependencies are done and the
+  remaining scope is the non-test runtime/control callsite plus lifecycle fencing; preserve
+  fail-closed authority.
