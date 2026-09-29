@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Inspect package coverage JSON and changed-line coverage, then add only targeted tests that materially exercise uncovered namespace/root binding behavior.",
+  "next_action": "Use only product-local ignored coverage artifacts, inspect changed-line coverage and add legitimate tests for the new bootstrap binding paths.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 0,
   "observed_head": "da5e2a916b66de9f31f2c5bcccd1f59f7b3321d2",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 247,
+  "task_revision": 248,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:52:08+00:00",
+  "updated_at": "2026-09-29T00:52:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -993,3 +993,8 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-29T00:52:08+00:00: Recorded command exit 0; command argv SHA-256
   9b6c3ee187b29577be5be26550ec565278a338ea96f913c404b69cdc4fb1559d.
+
+- 2026-09-29T00:52:28+00:00: Coverage JSON was initially written to /tmp during diagnostic
+  inspection. Corrective action completed through handoffctl: moved the retained asb-runtime report
+  into ignored product-local target/ar1505-coverage/runtime-coverage.json; no tracked product files
+  or repository boundary artifacts were left. The initial /tmp report is no longer present.
