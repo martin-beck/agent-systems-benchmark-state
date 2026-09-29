@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
   "checkpoint_commit": "bde018c10b3b69252f9a5b8429f9cc277e44953d",
-  "claim_expires": "2026-09-29T07:45:36+00:00",
+  "claim_expires": "2026-09-29T08:19:11+00:00",
   "depends_on": [
     "AR-1502",
     "AR-1484"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 85,
+  "task_revision": 86,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T06:15:52+00:00",
+  "updated_at": "2026-09-29T06:19:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -300,3 +300,5 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
 - 2026-09-29T06:15:52+00:00: Independent review of bde018c found three P1 blockers despite green
   hosted checks: incomplete enrollment binding, caller-supplied source not bound to lease, and
   lifecycle fencing stops after bridge consumption. Also P2 bounded-field limits.
+
+- 2026-09-29T06:19:11+00:00: Heartbeat by ar1513-repair2-luna56.
