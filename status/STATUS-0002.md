@@ -199,11 +199,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1513](../tasks/AR-1513-authenticated-lease-dispatch-bridge.md): Authenticated lease-to-live-dispatch bridge | Unclaimed | Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch. | Second independent review found remaining P1s: pinned executable/adapter provenance is not enforced at dispatch, ordinary production bootstrap-to-CLI wiring remains dead-code only, and policy/alternate-egress enrollment binding is incomplete; hosted workspace coverage is 88.05&#37; below 90&#37;. Repair all before merge. |
+| P0 | [AR-1513](../tasks/AR-1513-authenticated-lease-dispatch-bridge.md): Authenticated lease-to-live-dispatch bridge | ar1513-repair3-luna56 | Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch. | Second independent review found remaining P1s: pinned executable/adapter provenance is not enforced at dispatch, ordinary production bootstrap-to-CLI wiring remains dead-code only, and policy/alternate-egress enrollment binding is incomplete; hosted workspace coverage is 88.05&#37; below 90&#37;. Repair all before merge. |
 
 ### Blocked (81)
 

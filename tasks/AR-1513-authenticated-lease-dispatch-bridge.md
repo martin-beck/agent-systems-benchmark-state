@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
   "checkpoint_commit": "109f5fad424cb5493e834a0dcec9c09f1aeeae54",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T08:43:41+00:00",
   "depends_on": [
     "AR-1502",
     "AR-1484"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
   "observed_dirty": 0,
   "observed_head": "109f5fad424cb5493e834a0dcec9c09f1aeeae54",
-  "owner": "",
+  "owner": "ar1513-repair3-luna56",
   "plan": "../plans/AR-1513-authenticated-lease-dispatch-bridge.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 115,
+  "task_revision": 116,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T06:43:38+00:00",
+  "updated_at": "2026-09-29T06:43:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -390,3 +390,5 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
 
 - 2026-09-29T06:43:38+00:00: Release second repair claim for third repair pass; preserve 109f5fad
   and review/coverage evidence.
+
+- 2026-09-29T06:43:41+00:00: Claimed by ar1513-repair3-luna56.
