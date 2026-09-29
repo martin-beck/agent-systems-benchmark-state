@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1507-runtime-owned-authority-materialization",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T04:10:27+00:00",
   "depends_on": [
     "AR-1473",
     "AR-1474",
@@ -17,15 +17,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "ar1507-authority-luna56",
   "plan": "../plans/AR-1507-runtime-owned-authority-materialization.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Materialize private runtime launch authority from authenticated AR-1505 bootstrap state without caller or synthetic authority.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Runtime-owned authority materialization",
-  "updated_at": "2026-09-29T02:07:59+00:00",
+  "updated_at": "2026-09-29T02:10:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1507-runtime-owned-authority-materialization"
 }
 ---
@@ -64,3 +64,5 @@ first-customer production evidence.
 
 - 2026-09-29T02:07:59+00:00: Dependencies through AR-1505 verified done; AR-1506 independently
   established the missing private-authority materialization boundary.
+
+- 2026-09-29T02:10:27+00:00: Claimed by ar1507-authority-luna56.

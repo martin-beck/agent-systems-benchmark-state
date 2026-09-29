@@ -187,11 +187,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1507](../tasks/AR-1507-runtime-owned-authority-materialization.md): Runtime-owned authority materialization | Unclaimed | Materialize private runtime launch authority from authenticated AR-1505 bootstrap state without caller or synthetic authority. | Promote after dependency verification; define and implement the runtime-owned authority materializer that maps authenticated bootstrap state to private roots, tools, policy, and opaque dispatch source. |
+| P0 | [AR-1507](../tasks/AR-1507-runtime-owned-authority-materialization.md): Runtime-owned authority materialization | ar1507-authority-luna56 | Materialize private runtime launch authority from authenticated AR-1505 bootstrap state without caller or synthetic authority. | Promote after dependency verification; define and implement the runtime-owned authority materializer that maps authenticated bootstrap state to private roots, tools, policy, and opaque dispatch source. |
 
 ### Blocked (75)
 
