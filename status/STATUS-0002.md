@@ -199,11 +199,11 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1508](../tasks/AR-1508-platform-owned-authority-provider.md): Platform-owned authority provider | ar1508-provider-luna56 | Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material. | PR #384 open at exact head 2c70f811; obtain independent review and terminal hosted checks. GitHub initially reports mergeable=CONFLICTING despite remote main exactly f92c2e9 and branch ancestry clean; re-query before any merge. |
+| P0 | [AR-1508](../tasks/AR-1508-platform-owned-authority-provider.md): Platform-owned authority provider | Unclaimed | Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material. | PR #384 open at exact head 2c70f811; obtain independent review and terminal hosted checks. GitHub initially reports mergeable=CONFLICTING despite remote main exactly f92c2e9 and branch ancestry clean; re-query before any merge. |
 
 ### Blocked (81)
 
