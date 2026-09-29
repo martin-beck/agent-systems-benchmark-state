@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1510-authenticated-control-source-wiring",
   "checkpoint_commit": "beedef76e835009e82f85c785967a36286748377",
-  "claim_expires": "2026-09-29T23:16:57+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1505"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1510-authenticated-control-source-wiring",
   "observed_dirty": 0,
   "observed_head": "beedef76e835009e82f85c785967a36286748377",
-  "owner": "coordinator-ar1510-source-wiring-20260929",
+  "owner": "",
   "plan": "../plans/AR-1510-authenticated-control-source-wiring.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provider boundary and expiry fencing are implemented and runtime/CLI tests mostly pass; ordinary production dispatch still lacks an authenticated non-test platform material source.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Authenticated control source and production provider wiring",
-  "updated_at": "2026-09-29T21:19:49+00:00",
+  "updated_at": "2026-09-29T21:19:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1510-authenticated-control-source-wiring"
 }
 ---
@@ -167,3 +167,6 @@ test-only façade publication, or weakening native/formal/privacy gates.
 - 2026-09-29T21:19:49+00:00: Current-main re-audit: provider contract and lifecycle fencing are
   present; asb-runtime full suite passes, asb-cli isolated lock-contention test passes on rerun. No
   safe production callsite exists, so no PR or qualification claim.
+
+- 2026-09-29T21:19:51+00:00: Platform-owned non-test authority source/callsite remains unresolved;
+  preserve provider/fence checkpoint and route implementation to the deployment adapter successor.
