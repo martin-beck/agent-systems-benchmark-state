@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 243,
+  "task_revision": 244,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:48:34+00:00",
+  "updated_at": "2026-09-29T00:49:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -976,3 +976,6 @@ public credential/socket paths, or weakening fail-closed gates.
   tools/quality/check_coverage.py at 88.08 percent lines against the unchanged 90 percent floor.
   Existing product worktree is clean; no gate weakening planned. First action is to inspect the
   failed run logs and identify uncovered namespace/root binding branches.
+
+- 2026-09-29T00:49:47+00:00: Recorded command exit 101; command argv SHA-256
+  8413c0a56d63510ef9d0049edbfdb00e261d5c93fb70e384dcb8c51f04eb9711.
