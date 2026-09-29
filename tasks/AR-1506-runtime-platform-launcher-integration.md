@@ -15,7 +15,7 @@
   "id": "AR-1506",
   "next_action": "Implement runtime-owned platform launcher adapter and wire ordinary CLI run/sweep to an opaque authenticated dispatch source; add provider-free lifecycle negatives.",
   "observed_branch": "feature/ar-1506-runtime-platform-launcher-integration",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "c9f5c1890434b8980d29ebb64823032cf0cd3e52",
   "owner": "ar1506-launcher-luna56",
   "plan": "../plans/AR-1506-runtime-platform-launcher-integration.md",
@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect the merged authenticated platform authority/bootstrap protocol to production ASB process startup and ordinary CLI dispatch.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Runtime platform launcher integration",
-  "updated_at": "2026-09-29T02:02:53+00:00",
+  "updated_at": "2026-09-29T02:03:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1506-runtime-platform-launcher-integration"
 }
 ---
