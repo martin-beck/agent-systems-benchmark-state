@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1511-runtime-control-authority-issuer",
   "checkpoint_commit": "ac9306453dc97a100a57befcba0c8456b67a23db",
-  "claim_expires": "2026-09-29T05:58:53+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1502",
     "AR-1484"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1511-runtime-control-authority-issuer",
   "observed_dirty": 0,
   "observed_head": "ac9306453dc97a100a57befcba0c8456b67a23db",
-  "owner": "ar1511-authority-repair-luna56",
+  "owner": "",
   "plan": "../plans/AR-1511-runtime-control-authority-issuer.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 97,
+  "task_revision": 98,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T03:58:53+00:00",
+  "updated_at": "2026-09-29T04:02:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
@@ -354,3 +354,7 @@ production authority, or weakening fail-closed/native/formal gates.
 - 2026-09-29T03:58:36+00:00: Heartbeat by ar1511-authority-repair-luna56.
 
 - 2026-09-29T03:58:53+00:00: Heartbeat by ar1511-authority-repair-luna56.
+
+- 2026-09-29T04:02:26+00:00: Independent exact-head review found two P1s: materialize_provisioner
+  remains test-only and local cancellation digest differs from control-issued fence; preserve
+  ac93064 and assign final repair.
