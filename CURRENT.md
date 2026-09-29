@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1508](tasks/AR-1508-platform-owned-authority-provider.md): Platform-owned authority provider | Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material. | Promote after dependency verification; define the platform-owned authority provider and verified root/tool/policy source consumed by runtime materialization. | ar1508_provider_luna56 |
+| P0 | [AR-1508](tasks/AR-1508-platform-owned-authority-provider.md): Platform-owned authority provider | Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material. | Implement and verify provider contract on isolated AR-1508 worktree based on protected AR-1505 merge f92c2e9; then independent exact-head review and hosted checks. | ar1508_provider_luna56 |
 
 ## Blocked
 

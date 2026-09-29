@@ -13,7 +13,7 @@
     "AR-1505"
   ],
   "id": "AR-1508",
-  "next_action": "Promote after dependency verification; define the platform-owned authority provider and verified root/tool/policy source consumed by runtime materialization.",
+  "next_action": "Implement and verify provider contract on isolated AR-1508 worktree based on protected AR-1505 merge f92c2e9; then independent exact-head review and hosted checks.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Platform-owned authority provider",
-  "updated_at": "2026-09-29T02:18:11+00:00",
+  "updated_at": "2026-09-29T02:18:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1508-platform-owned-authority-provider"
 }
 ---
@@ -63,3 +63,8 @@ fixed-path authority, weakening formal/privacy/native gates.
 - 2026-09-29T02:17:57+00:00: Claimed by ar1508_provider_luna56.
 
 - 2026-09-29T02:18:11+00:00: Heartbeat by ar1508_provider_luna56.
+
+- 2026-09-29T02:18:21+00:00: Setup audit: state reconciled and live doctor prerequisites refreshed;
+  task revision 2 promoted/open then claimed at revision 3; dependencies include AR-1505 and are
+  recorded done; AR-1505 product worktree inspected for requested merge base f92c2e9. Product docs
+  and plan inspection now underway.
