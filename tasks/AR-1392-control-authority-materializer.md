@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1392-control-authority-materializer",
-  "checkpoint_commit": "78ab92bdb87645ac5567fb3341b1b0b73dba5029",
+  "checkpoint_commit": "0ea9671224ff6b51fbe0a3be4ac9817c4526356c",
   "claim_expires": "2026-09-29T14:29:53+00:00",
   "depends_on": [
     "AR-1388",
@@ -14,7 +14,7 @@
     "AR-1340"
   ],
   "id": "AR-1392",
-  "next_action": "Resolve unrelated Rust CI failure or obtain coordinator-approved retry; do not merge PR #339 until every exact-head check is green.",
+  "next_action": "PR #385 exact head 0ea9671: wait for all 12 required checks and independent review, then guarded non-squash merge; preserve PR #339 topology failure.",
   "observed_branch": "feature/ar-1392-control-authority-materializer",
   "observed_dirty": 0,
   "observed_head": "0ea9671224ff6b51fbe0a3be4ac9817c4526356c",
@@ -24,9 +24,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve private live authority from authenticated control enrollment without caller injection.",
-  "task_revision": 136,
+  "task_revision": 137,
   "title": "Control-owned private authority materializer",
-  "updated_at": "2026-09-29T12:29:53+00:00",
+  "updated_at": "2026-09-29T12:30:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1392-control-authority-materializer"
 }
 ---
@@ -452,3 +452,8 @@ reachability.
   3a5b5704ff2ae692c693fb95667249b4d4fe16df735e45db1fb48e11a6b2ec50.
 
 - 2026-09-29T12:29:53+00:00: Heartbeat by ar1392-topology-repair-luna56.
+
+- 2026-09-29T12:30:59+00:00: Topology-only synchronization topic published as PR #385 from current
+  origin/main 47329e35. Signed+DCO empty product commit 0ea9671; diff against current main is empty.
+  Preserved PR #339 head 78ab92b, merge 3cd6a5a, and Repository Quality failure 36279474851 as
+  immutable evidence. No product, authority, provider, or asb-tui changes.

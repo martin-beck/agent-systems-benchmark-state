@@ -203,7 +203,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1392](../tasks/AR-1392-control-authority-materializer.md): Control-owned private authority materializer | ar1392-topology-repair-luna56 | Resolve private live authority from authenticated control enrollment without caller injection. | Resolve unrelated Rust CI failure or obtain coordinator-approved retry; do not merge PR #339 until every exact-head check is green. |
+| P0 | [AR-1392](../tasks/AR-1392-control-authority-materializer.md): Control-owned private authority materializer | ar1392-topology-repair-luna56 | Resolve private live authority from authenticated control enrollment without caller injection. | PR #385 exact head 0ea9671: wait for all 12 required checks and independent review, then guarded non-squash merge; preserve PR #339 topology failure. |
 
 ### Blocked (80)
 
