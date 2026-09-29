@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated process-owner material source and ordinary CLI/control caller needed to consume runtime authority.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Authenticated process-owner material contract",
-  "updated_at": "2026-09-29T05:19:57+00:00",
+  "updated_at": "2026-09-29T05:20:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1512-process-owner-material-contract"
 }
 ---
@@ -164,3 +164,6 @@ host data, synthetic authority, or weakening fail-closed/native/formal gates.
   caller/PATH/config or digest-only records would fabricate authority. AR-1512 therefore does not
   claim live-provider reachability or ordinary live CLI execution; parent should create a successor
   AR for this authenticated lease-to-dispatch bridge.
+
+- 2026-09-29T05:20:12+00:00: Recorded command exit 0; command argv SHA-256
+  11d44af8ee7208d7ffbb3592cbffadd9b3afedecd11c366beebcb25778793502.
