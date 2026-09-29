@@ -7,7 +7,7 @@
     "AR-1304"
   ],
   "id": "AR-1308",
-  "next_action": "Release the stale claim as blocked, then promote AR-1516 to repair terminal-result capture and classify the bounded timeout; keep AR-1309 as the separate capacity/model-reduction successor. Development remains generated-seed and unsigned.",
+  "next_action": "Remain blocked pending AR-1309 capacity/model decision; development uses generated unsigned seeds and claims no formal qualification.",
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "d6e175abe060e6408977884c9c06c69a3a738b5b",
@@ -16,10 +16,10 @@
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Development QEMU fixture is bootable and offline-JAR verified, but full-exhaustive TLC produced no terminal result within 1200 seconds and was terminated; no qualification is claimed.",
-  "task_revision": 694,
+  "summary": "QEMU fixture passes boot/transient/JAR checks; corrected full-tier rerun reproducibly times out at 1700s without attestation.",
+  "task_revision": 695,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T19:01:39+00:00",
+  "updated_at": "2026-09-29T19:01:54+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -2114,3 +2114,7 @@ must report `qualification_authorized: false`.
   capacity decision to AR-1309.
 
 - 2026-09-29T19:01:39+00:00: Claimed by coordinator-ar1308-evidence-update-20260929.
+
+- 2026-09-29T19:01:54+00:00: AR-1516 repaired the fixture and reran it. Sanitized evidence:
+  /srv/data/projects/ar1308-development/diagnostic-ar1516-full3-summary.txt. No FULL_EXHAUSTIVE_RC
+  or attestation marker was emitted.

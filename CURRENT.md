@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1308](tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Development QEMU fixture is bootable and offline-JAR verified, but full-exhaustive TLC produced no terminal result within 1200 seconds and was terminated; no qualification is claimed. | Release the stale claim as blocked, then promote AR-1516 to repair terminal-result capture and classify the bounded timeout; keep AR-1309 as the separate capacity/model-reduction successor. Development remains generated-seed and unsigned. | coordinator-ar1308-evidence-update-20260929 |
+| P0 | [AR-1308](tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | QEMU fixture passes boot/transient/JAR checks; corrected full-tier rerun reproducibly times out at 1700s without attestation. | Remain blocked pending AR-1309 capacity/model decision; development uses generated unsigned seeds and claims no formal qualification. | coordinator-ar1308-evidence-update-20260929 |
 
 ## Open
 
