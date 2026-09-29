@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1509-authenticated-authority-provider-receipt",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-29T03:34:13+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1473",
     "AR-1474",
@@ -17,15 +17,15 @@
   "observed_branch": "feature/ar-1509-authenticated-authority-provider-receipt",
   "observed_dirty": 1,
   "observed_head": "e437261f6fed268956cd436e06beb117549611ac",
-  "owner": "ar1509-repair-luna56",
+  "owner": "",
   "plan": "../plans/AR-1509-authenticated-authority-provider-receipt.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Replace the AR-1508 test fa\u00e7ade with an authenticated production authority-provider receipt and lifecycle fence.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Authenticated authority-provider receipt",
-  "updated_at": "2026-09-29T02:54:15+00:00",
+  "updated_at": "2026-09-29T02:54:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1509-authenticated-authority-provider-receipt"
 }
 ---
@@ -175,3 +175,10 @@ mock production authority, or weakening formal/privacy/native gates.
   handle/resolver only after test-injected material; restart/revocation source is not wired into
   scheduler/attempt transitions. Do not publish façade; successor needs authenticated source
   contract and production wiring.
+
+- 2026-09-29T02:54:22+00:00: Blocked after takeover audit. Focused gate passes 53/53, but no
+  non-test authenticated provider construction/callsite exists: receipt is synthesized
+  self-attestation from local inputs, credential/enrollment/private-root source is absent, and
+  lifecycle fences are local-only. Preserve e437261/235f604 and dirty live_service.rs; successor
+  must implement authenticated control source, independently verifiable receipt, production live
+  run/sweep wiring, and transition-level restart/revocation/expiry checks.
