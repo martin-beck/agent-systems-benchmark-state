@@ -18,11 +18,11 @@
   "plan": "../plans/AR-0514.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Qualify replay conformance for OpenHands.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Qualify OpenHands replay",
-  "updated_at": "2026-09-08T08:52:11+00:00",
+  "updated_at": "2026-09-29T09:54:24+00:00",
   "worktree_key": "agent-systems-benchmark-replay-openhands"
 }
 ---
@@ -104,3 +104,7 @@ Qualify OpenHands record/replay, network denial, parity, retries, tool calls, ca
   replay. Worktree remains feature/replay-openhands at 64f6eb4e5bc70c6d70997a463e7e4884555bc4da with
   only untracked crates/asb-agents/tests/replay_openhands.rs; do not clean. Next action:
   create/review a pin-reproduction repair with immutable environment provenance before reclaiming.
+
+- 2026-09-29T09:54:24+00:00: Coordinator takeover: prior worker stopped after immutable OpenHands
+  environment digest could not be reproduced. Start bounded repair worker on the same AR to recover
+  or formally repair pin provenance; do not override digest or perform native replay.
