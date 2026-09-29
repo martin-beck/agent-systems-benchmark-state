@@ -223,11 +223,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1521](../tasks/AR-1521.md): AR-1307/1308 formal capacity repair implementation | Unclaimed | Implement the reviewed successor contract that repairs the AR-1308 full-tier capacity failure while preserving AR-1307 qualification boundaries. | Remain planned until AR-1529 selects and records the formal capacity or model-reduction contract; then implement that contract without changing AR-1307 limits. |
+| P0 | [AR-1521](../tasks/AR-1521.md): AR-1307/1308 formal capacity repair implementation | coordinator-ar1521-formal-capacity-20260930 | Implement the reviewed successor contract that repairs the AR-1308 full-tier capacity failure while preserving AR-1307 qualification boundaries. | Remain planned until AR-1529 selects and records the formal capacity or model-reduction contract; then implement that contract without changing AR-1307 limits. |
 
 ### Blocked (78)
 

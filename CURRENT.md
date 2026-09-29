@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1521](tasks/AR-1521.md): AR-1307/1308 formal capacity repair implementation | Implement the reviewed successor contract that repairs the AR-1308 full-tier capacity failure while preserving AR-1307 qualification boundaries. | Remain planned until AR-1529 selects and records the formal capacity or model-reduction contract; then implement that contract without changing AR-1307 limits. | - |
+| P0 | [AR-1521](tasks/AR-1521.md): AR-1307/1308 formal capacity repair implementation | Implement the reviewed successor contract that repairs the AR-1308 full-tier capacity failure while preserving AR-1307 qualification boundaries. | Remain planned until AR-1529 selects and records the formal capacity or model-reduction contract; then implement that contract without changing AR-1307 limits. | coordinator-ar1521-formal-capacity-20260930 |
 
 ## Blocked
 
