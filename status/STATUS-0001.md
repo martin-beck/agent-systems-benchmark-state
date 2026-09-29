@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**556 ARs tracked** across 6 active status categories.
+**557 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 82 |
-| **Planned** | Defined work awaiting promotion or dependencies | 48 |
+| **Planned** | Defined work awaiting promotion or dependencies | 49 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 396 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -631,6 +631,7 @@ flowchart LR
         AR_1534["AR-1534 - In progress"]:::status_in_progress
         AR_1535["AR-1535 - Planned"]:::status_planned
         AR_1536["AR-1536 - Planned"]:::status_planned
+        AR_1537["AR-1537 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2097,6 +2098,7 @@ flowchart LR
     AR_1530 --> AR_1522
     AR_1530 --> AR_1531
     AR_1530 --> AR_1534
+    AR_1530 --> AR_1537
     AR_1531 --> AR_1536
     AR_1532 --> AR_1535
     AR_1533 --> AR_1536
@@ -2441,4 +2443,3 @@ flowchart LR
 | [AR-1295](../tasks/AR-1295-vendor-fixture-v037.md) | None | None |
 | [AR-1296](../tasks/AR-1296-state-quality-baseline.md) | None | None |
 | [AR-1297](../tasks/AR-1297-task-schema-metadata.md) | None | None |
-| [AR-1298](../tasks/AR-1298-narrow-metadata-repair.md) | None | None |
