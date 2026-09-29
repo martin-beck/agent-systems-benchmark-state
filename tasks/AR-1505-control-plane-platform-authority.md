@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Wait for all exact-head CI to complete and obtain fresh independent review; record each terminal result and keep PR unmerged unless all required gates and review are green.",
+  "next_action": "Repair P1 namespace/root binding: bind RuntimeControlBootstrap materialization to actual authenticated namespace, relay-root and lease-root digests; reject RuntimeAuthorityInputs that do not match bootstrap receipt before provisioner creation; add mismatch tests.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 0,
   "observed_head": "95ac5453fe3a1fbc383afa2ce713a3dceff78437",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 179,
+  "task_revision": 180,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:19:34+00:00",
+  "updated_at": "2026-09-29T00:20:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -722,3 +722,19 @@ public credential/socket paths, or weakening fail-closed gates.
   assurance, platform evidence, policy coverage supply chain, Rust checks), with AWQ shadow,
   retained faults, and Huawei SPDX headers SUCCESS; bounded fuzz and matcher sentinels plus Kani and
   Loom/state models remain IN_PROGRESS. No merge.
+
+- 2026-09-29T00:20:32+00:00: Fresh independent read-only review of repaired PR #382 exact head
+  95ac5453fe3a1fbc383afa2ce713a3dceff78437 against base 3c6af6b: both prior P1s are fixed.
+  RuntimeControlBootstrap::from_response now enrolls RuntimeCertificateChainStore, materializes
+  LiveProviderRuntimeAuthorityProfile, and exposes materialize_provisioner/take_handle;
+  cancel_control_bootstrap verifies generation/cancellation binding, performs remote cancel, then
+  revoke_local revokes chain, resolver, provisioner fence, and handle. New tests cover response
+  consumption and local cancellation. Found one remaining P1: live_service.rs:1432-1441 fabricates
+  namespace_sha256 by copying receipt.relay_root_sha256, because the control bootstrap
+  request/response carries no namespace binding; then materialize_provisioner accepts arbitrary
+  RuntimeAuthorityInputs. RuntimeAuthorityInputResolver::from_authenticated_enrollment at
+  live_service.rs:494-509 checks only generation, target, credential and nonempty namespace, while
+  lease_root/relay_root/namespace are never compared to authenticated receipt/profile before handle
+  creation. A caller/runtime with mismatched namespace or roots can therefore obtain a provisioner
+  not bound to the issued bootstrap, violating AR-1505 namespace/relay/lease binding and fail-closed
+  authority requirements. No additional P2 findings. No product changes or merge performed.
