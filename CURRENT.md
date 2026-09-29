@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1504](tasks/AR-1504-runtime-platform-launcher-seam.md): Runtime/platform launcher seam | Provide the real runtime/platform-owned launcher and authenticated session discovery for AR-1503. | Implement the missing runtime-owned platform adapter/session locator on protected main, with authenticated socket ownership/permissions, private input construction, opaque source handoff and lifecycle tests; do not copy AR-1503 façade. If platform authority contract cannot be established from existing control protocol, create a narrowly scoped successor AR for that protocol contract with exact symbols and keep this AR blocked. | - |
+| P0 | [AR-1504](tasks/AR-1504-runtime-platform-launcher-seam.md): Runtime/platform launcher seam | Provide the real runtime/platform-owned launcher and authenticated session discovery for AR-1503. | Implement the missing runtime-owned platform adapter/session locator on protected main, with authenticated socket ownership/permissions, private input construction, opaque source handoff and lifecycle tests; do not copy AR-1503 façade. If platform authority contract cannot be established from existing control protocol, create a narrowly scoped successor AR for that protocol contract with exact symbols and keep this AR blocked. | coordinator-ar1504 |
 
 ## Blocked
 
