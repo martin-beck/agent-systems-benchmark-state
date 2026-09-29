@@ -230,11 +230,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1534](../tasks/AR-1534.md): Coordinator vendor integrity repair | Unclaimed | Repair the state repository&#x27;s coordinator vendor-integrity mismatch exposed after the AR-1530 capacity-profile merge. | Promote after coordinator review; reconcile the immutable coordinator vendor contract with the merged capacity-profile change without weakening vendor verification or modifying handoffctl in an unrelated AR. |
+| P0 | [AR-1534](../tasks/AR-1534.md): Coordinator vendor integrity repair | coordinator-ar1534-metadata-20260930 | Repair the state repository&#x27;s coordinator vendor-integrity mismatch exposed after the AR-1530 capacity-profile merge. | Promote after coordinator review; reconcile the immutable coordinator vendor contract with the merged capacity-profile change without weakening vendor verification or modifying handoffctl in an unrelated AR. |
 
 ### Blocked (82)
 
