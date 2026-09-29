@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1511-runtime-control-authority-issuer",
-  "checkpoint_commit": "ac9306453dc97a100a57befcba0c8456b67a23db",
+  "checkpoint_commit": "673b486ba89917e3bb08c884ee17e708e0776b07",
   "claim_expires": "2026-09-29T04:54:23+00:00",
   "depends_on": [
     "AR-1502",
     "AR-1484"
   ],
   "id": "AR-1511",
-  "next_action": "Repair production RuntimeControlBootstrap dispatch wiring and unify control-issued cancellation fence; add negative tests, then validate and request independent exact-head review.",
+  "next_action": "Obtain independent exact-head review of 673b486ba89917e3bb08c884ee17e708e0776b07 against protected f92c2e9; hold PR/push until approval.",
   "observed_branch": "feature/ar-1511-runtime-control-authority-issuer",
   "observed_dirty": 0,
   "observed_head": "673b486ba89917e3bb08c884ee17e708e0776b07",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 134,
+  "task_revision": 135,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T04:24:23+00:00",
+  "updated_at": "2026-09-29T04:24:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
@@ -454,3 +454,12 @@ production authority, or weakening fail-closed/native/formal gates.
   7ad690de3f116ed9f84d909b4bf1c8c9e20d508feaa5347e562382b9fc50bbe5.
 
 - 2026-09-29T04:24:23+00:00: Heartbeat by ar1511-final-repair-luna56.
+
+- 2026-09-29T04:24:38+00:00: Repaired both P1 roots: production LiveProviderRuntimeDispatchSource
+  now composes RuntimeControlBootstrap through an opaque provider-owned authority source with no
+  caller/PATH injection, and issuer capabilities consume the authenticated control-issued
+  cancellation fence. Added tamper and remote-revoke negative coverage; revoke invalidates issuer
+  before local persistence failure. SSH-signed DCO commit 673b486ba89917e3bb08c884ee17e708e0776b07.
+  Focused tests, serial asb-runtime (157 passed, 1 ignored), serial workspace, clippy -D warnings,
+  docs -Dwarnings, fmt check, and diff check green. Request independent exact-head review; no
+  PR/push.

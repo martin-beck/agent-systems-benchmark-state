@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1511](tasks/AR-1511-runtime-control-authority-issuer.md): Runtime/control authority issuer and capability source | Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch. | Repair production RuntimeControlBootstrap dispatch wiring and unify control-issued cancellation fence; add negative tests, then validate and request independent exact-head review. | ar1511-final-repair-luna56 |
+| P0 | [AR-1511](tasks/AR-1511-runtime-control-authority-issuer.md): Runtime/control authority issuer and capability source | Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch. | Obtain independent exact-head review of 673b486ba89917e3bb08c884ee17e708e0776b07 against protected f92c2e9; hold PR/push until approval. | ar1511-final-repair-luna56 |
 
 ## Blocked
 
