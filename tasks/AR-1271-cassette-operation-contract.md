@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1271",
-  "next_action": "Connect CassetteResponseSink to actual replay service and add real request/response, egress/no-fallback, cancellation/restart, timeout/crash cleanup fixtures.",
+  "next_action": "Requires a runtime-authenticated cassette-content/backend capability (successor AR-1272/AR-1274 seam) before actual StrictReplayService invocation; then add supervised response, no-fallback/egress, cancellation/restart, timeout/crash cleanup fixtures.",
   "observed_branch": "feature/ar-1271-cassette-operation-contract",
   "observed_dirty": 0,
   "observed_head": "c41b423c0536fe30fd2b6c5a6a33e46c9102ec5e",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define a dependency-neutral cassette request/response operation contract.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Dependency-neutral cassette operation contract",
-  "updated_at": "2026-09-29T11:42:32+00:00",
+  "updated_at": "2026-09-29T11:42:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1271-cassette-operation"
 }
 ---
@@ -116,3 +116,11 @@ Preserve AR-1270's blocked evidence and do not fabricate responses or authority.
 - 2026-09-29T11:37:07+00:00: Claimed by ar1271-cassette-repair-luna56.
 
 - 2026-09-29T11:42:32+00:00: Heartbeat by ar1271-cassette-repair-luna56.
+
+- 2026-09-29T11:42:56+00:00: Audit at clean c41b423: RuntimeCassetteOperation carries only
+  generation/cassette/route digests plus method/body; CassetteResponseSink is validation-only.
+  Connecting StrictReplayService would require caller-supplied cassette bytes/service/route
+  authority, which violates the existing blocked evidence and no-fabricated-authority boundary. No
+  product mutation made. Exact successor contract: runtime must issue an authenticated immutable
+  cassette-content/backend capability, CLI adapter must consume it once and invoke
+  StrictReplayService under supervisor lifecycle before these fixtures can establish acceptance.

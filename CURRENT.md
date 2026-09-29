@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1271](tasks/AR-1271-cassette-operation-contract.md): Dependency-neutral cassette operation contract | Define a dependency-neutral cassette request/response operation contract. | Connect CassetteResponseSink to actual replay service and add real request/response, egress/no-fallback, cancellation/restart, timeout/crash cleanup fixtures. | ar1271-cassette-repair-luna56 |
+| P0 | [AR-1271](tasks/AR-1271-cassette-operation-contract.md): Dependency-neutral cassette operation contract | Define a dependency-neutral cassette request/response operation contract. | Requires a runtime-authenticated cassette-content/backend capability (successor AR-1272/AR-1274 seam) before actual StrictReplayService invocation; then add supervised response, no-fallback/egress, cancellation/restart, timeout/crash cleanup fixtures. | ar1271-cassette-repair-luna56 |
 
 ## Blocked
 
