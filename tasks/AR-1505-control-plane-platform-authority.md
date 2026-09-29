@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Patch all eight resolver test call sites with binding arguments, then run focused tests and regenerate schemas.",
+  "next_action": "Apply the response clone correction, rerun focused protocol and runtime resolver tests, then regenerate schemas.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 3,
   "observed_head": "95ac5453fe3a1fbc383afa2ce713a3dceff78437",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 205,
+  "task_revision": 206,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:30:25+00:00",
+  "updated_at": "2026-09-29T00:31:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -828,3 +828,8 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-29T00:30:25+00:00: Recorded command exit 101; command argv SHA-256
   f1c4a865016bb936445d719b76ce59a79b6470346a4465def72a55baeb62d7ca.
+
+- 2026-09-29T00:31:02+00:00: 00:30:25Z focused asb-control test compile exited 101 with E0382 in
+  certificate.rs: response was moved into mismatched_receipt_expiry and then borrowed for the new
+  mismatched_namespace test. Corrective action: clone response for mismatched_receipt_expiry before
+  adding the independent namespace mismatch assertion.
