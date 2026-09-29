@@ -522,6 +522,7 @@ class TlcRunnerTests(unittest.TestCase):
         self.assertIn("TLC_SWAP_MAX=8G", capacity)
         self.assertIn("TLC_ADDRESS_SPACE_MAX=16G", capacity)
         self.assertIn("RuntimeMaxSec=7200", capacity)
+        self.assertIn("fallocate -l 8G /mnt/asb-data/guest.swap", capacity)
 
     def test_guest_seed_validates_containment_for_each_profile(self) -> None:
         portable = GUEST.build_user_data("portable-smoke")

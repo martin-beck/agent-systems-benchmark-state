@@ -23,6 +23,13 @@ def build_user_data(tier: str) -> str:
     address_space = env["TLC_ADDRESS_SPACE_MAX"]
     memory_max = env["TLC_MEMORY_MAX"]
     swap_max = env["TLC_SWAP_MAX"]
+    capacity_swap = (
+        "  - [bash, -c, 'fallocate -l 8G /mnt/asb-data/guest.swap && chmod 600 "
+        "/mnt/asb-data/guest.swap && mkswap /mnt/asb-data/guest.swap && swapon "
+        "/mnt/asb-data/guest.swap']\n"
+        if tier == "full-exhaustive-capacity"
+        else ""
+    )
     expected_containment = "portable" if tier == "portable-smoke" else "required"
     result_name = tier.upper().replace("-", "_")
     return f'''#cloud-config
@@ -61,6 +68,7 @@ runcmd:
   - [chown, -R, 1000:1000, /mnt/asb-data/state/tmp, /mnt/asb-data/state/evidence]
   - [chmod, "1777", /mnt/asb-data/tmp, /mnt/asb-data/state/tmp]
   - [chmod, "1777", /tmp]
+{capacity_swap}  - [systemctl, start, user-runtime-dir@1000.service]
   - [systemctl, start, user-runtime-dir@1000.service]
   - [systemctl, start, user@1000.service]
   - [runuser, -u, asb, --, env, XDG_RUNTIME_DIR=/run/user/1000, DBUS_SESSION_BUS_ADDRESS=unix:path={BUS}, systemctl, --user, start, dbus.service]
