@@ -199,11 +199,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1508](../tasks/AR-1508-platform-owned-authority-provider.md): Platform-owned authority provider | Unclaimed | Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material. | PR #384 remains open at exact head 2c70f811; protected origin/main is 47329e35 (AR-1513 merge), so GitHub reports DIRTY/CONFLICTING with zero hosted checks. Rebase onto 47329e35, then repeat independent exact-head review and hosted checks before merge. |
+| P0 | [AR-1508](../tasks/AR-1508-platform-owned-authority-provider.md): Platform-owned authority provider | ar1508-rebase-repair-luna56 | Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material. | PR #384 remains open at exact head 2c70f811; protected origin/main is 47329e35 (AR-1513 merge), so GitHub reports DIRTY/CONFLICTING with zero hosted checks. Rebase onto 47329e35, then repeat independent exact-head review and hosted checks before merge. |
 
 ### Blocked (81)
 
