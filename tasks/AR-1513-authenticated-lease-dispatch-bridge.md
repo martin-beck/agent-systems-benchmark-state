@@ -8,7 +8,7 @@
     "AR-1484"
   ],
   "id": "AR-1513",
-  "next_action": "PR #383 moved to exact signed repair head bde018c; await independent review and all protected checks, then verify terminal merge/postmerge.",
+  "next_action": "Repair P1 findings from independent exact-head review: bind enrollment identity/namespace/credential/relay/target, bind lease to dispatch source, and retain lifecycle fences after source consumption; then rerun review and protected gates.",
   "observed_branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
   "observed_dirty": 0,
   "observed_head": "bde018c10b3b69252f9a5b8429f9cc277e44953d",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T06:15:36+00:00",
+  "updated_at": "2026-09-29T06:15:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -296,3 +296,7 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
   and independent review P1 evidence.
 
 - 2026-09-29T06:15:36+00:00: Claimed by ar1513-repair2-luna56.
+
+- 2026-09-29T06:15:52+00:00: Independent review of bde018c found three P1 blockers despite green
+  hosted checks: incomplete enrollment binding, caller-supplied source not bound to lease, and
+  lifecycle fencing stops after bridge consumption. Also P2 bounded-field limits.
