@@ -10,7 +10,7 @@
   "id": "AR-1511",
   "next_action": "Repair material binding: diagnostic focused test failed because resolver credential digest differs from control receipt (credential=true; target/generation/tools/lease/relay/namespace matched), then rerun focused and serial gates.",
   "observed_branch": "feature/ar-1511-runtime-control-authority-issuer",
-  "observed_dirty": 4,
+  "observed_dirty": 0,
   "observed_head": "673b486ba89917e3bb08c884ee17e708e0776b07",
   "owner": "ar1511-production-debug-luna56",
   "plan": "../plans/AR-1511-runtime-control-authority-issuer.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 166,
+  "task_revision": 167,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T04:53:48+00:00",
+  "updated_at": "2026-09-29T04:54:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
