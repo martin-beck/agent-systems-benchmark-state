@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1514-runtime-auth-reconciliation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-29T15:11:22+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1499",
     "AR-1500"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1514-runtime-auth-reconciliation",
   "observed_dirty": 0,
   "observed_head": "d59e6a76a1c7a432e63f0d765909b554bd12416c",
-  "owner": "ar1514-reconciliation-luna56",
+  "owner": "",
   "plan": "../plans/AR-1514-runtime-auth-reconciliation.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Repair ASB development-runtime reconciliation between digest-only enrollment and helper invocation.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Reconciled development auth handoff runtime",
-  "updated_at": "2026-09-29T13:13:36+00:00",
+  "updated_at": "2026-09-29T13:14:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1514-runtime-auth-reconciliation"
 }
 ---
@@ -54,3 +54,6 @@ side of that repair.
 
 - 2026-09-29T13:13:36+00:00: Recorded command exit 0; command argv SHA-256
   80f481d66153e4e83448db65c8b64b4f2671a7482a45a2eab1b7c11059b6f4eb.
+
+- 2026-09-29T13:14:40+00:00: Coordinator stopped this unrelated worker to focus exclusively on
+  AR-1308; preserve AR-1514 progress and reopen later.

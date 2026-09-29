@@ -200,11 +200,11 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1514](../tasks/AR-1514-runtime-auth-reconciliation.md): Reconciled development auth handoff runtime | ar1514-reconciliation-luna56 | Repair ASB development-runtime reconciliation between digest-only enrollment and helper invocation. | Implement and qualify the disposable runtime reconciliation repair, then rerun the v1.10 helper handoff and capture successful digest-only AuthStatus for paired asb-tui AR-1323. |
+| P0 | [AR-1514](../tasks/AR-1514-runtime-auth-reconciliation.md): Reconciled development auth handoff runtime | Unclaimed | Repair ASB development-runtime reconciliation between digest-only enrollment and helper invocation. | Implement and qualify the disposable runtime reconciliation repair, then rerun the v1.10 helper handoff and capture successful digest-only AuthStatus for paired asb-tui AR-1323. |
 
 ### Blocked (79)
 
