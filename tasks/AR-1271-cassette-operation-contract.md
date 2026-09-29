@@ -17,11 +17,11 @@
   "plan": "../plans/AR-1271.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Define a dependency-neutral cassette request/response operation contract.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Dependency-neutral cassette operation contract",
-  "updated_at": "2026-09-16T23:19:36+00:00",
+  "updated_at": "2026-09-29T11:37:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1271-cassette-operation"
 }
 ---
@@ -108,3 +108,7 @@ Preserve AR-1270's blocked evidence and do not fabricate responses or authority.
   Requires an approved cassette-service backend/handle that binds immutable cassette content to
   runtime-issued operation before real request/response, egress, lifecycle, and no-fallback
   fixtures.
+
+- 2026-09-29T11:37:04+00:00: Platform-provider chain is independently blocked; advance this
+  dependency-complete cassette operation path to connect the existing contract to replay service and
+  lifecycle fixtures.
