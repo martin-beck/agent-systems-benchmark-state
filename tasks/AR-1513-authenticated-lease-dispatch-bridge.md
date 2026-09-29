@@ -10,7 +10,7 @@
   "id": "AR-1513",
   "next_action": "Review of 4807e96 found P1: run_with_runtime_control_bootstrap calls acquire before materialize_provisioner, so owner_id/resolver are unset and tests only assert failure; normal CLI run/sweep still bypasses bridge. Fix real materialization and successful provider-free production bridge, then rerun coverage/review.",
   "observed_branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
-  "observed_dirty": 5,
+  "observed_dirty": 7,
   "observed_head": "4807e9692a4e8f2bc22c647298878ec957f58304",
   "owner": "ar1513-repair4-luna56",
   "plan": "../plans/AR-1513-authenticated-lease-dispatch-bridge.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 369,
+  "task_revision": 370,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T09:21:36+00:00",
+  "updated_at": "2026-09-29T09:21:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
