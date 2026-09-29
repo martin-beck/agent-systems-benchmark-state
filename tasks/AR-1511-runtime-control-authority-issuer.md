@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1511-runtime-control-authority-issuer",
   "checkpoint_commit": "47329e35c03bf20505ce65c7a29487ab97c52ee9",
-  "claim_expires": "2026-09-29T13:38:52+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1502",
     "AR-1484"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1511-runtime-control-authority-issuer",
   "observed_dirty": 0,
   "observed_head": "673b486ba89917e3bb08c884ee17e708e0776b07",
-  "owner": "ar1511-reaudit-luna56",
+  "owner": "",
   "plan": "../plans/AR-1511-runtime-control-authority-issuer.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "superseded",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 174,
+  "task_revision": 175,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T13:09:47+00:00",
+  "updated_at": "2026-09-29T13:10:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
@@ -596,3 +596,9 @@ production authority, or weakening fail-closed/native/formal gates.
   2026-09-29T09:48:33Z). This supplies AR-1511 next_action; no unmerged AR-1511/1509/1510 façade was
   reused. Protected main was verified to contain the bridge; no remaining AR-1511 consumer wiring is
   actionable.
+
+- 2026-09-29T13:10:32+00:00: AR-1513 is the reviewed successor implementation of the missing source:
+  protected main merge 47329e35 contains runtime-enrollment-only process-owner material issuance and
+  ordinary authenticated run/sweep bridge, with independent review, required hosted checks, and
+  terminal post-merge success. AR-1511 has no remaining actionable consumer wiring; do not reuse its
+  unmerged façade.
