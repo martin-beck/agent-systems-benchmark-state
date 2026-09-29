@@ -200,11 +200,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Unclaimed | Prepared signed capacity passes image, 64 GiB overlay, exact ab485f767 source/tree, JDK/TLC/model and canonical lock; preflight fails only on host SwapFree below 1 GiB and unavailable reviewed seed b3383756...ece4b28. | External operator must supply reviewed seed b3383756...ece4b28 and safe &gt;=1 GiB host swap; rerun signed preflight, then boot once. Do not regenerate/substitute seed or widen limits. |
+| P0 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | coordinator-ar1308-swap | Prepared signed capacity passes image, 64 GiB overlay, exact ab485f767 source/tree, JDK/TLC/model and canonical lock; preflight fails only on host SwapFree below 1 GiB and unavailable reviewed seed b3383756...ece4b28. | External operator must supply reviewed seed b3383756...ece4b28 and safe &gt;=1 GiB host swap; rerun signed preflight, then boot once. Do not regenerate/substitute seed or widen limits. |
 
 ### Blocked (79)
 

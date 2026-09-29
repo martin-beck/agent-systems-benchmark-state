@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1308](tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Prepared signed capacity passes image, 64 GiB overlay, exact ab485f767 source/tree, JDK/TLC/model and canonical lock; preflight fails only on host SwapFree below 1 GiB and unavailable reviewed seed b3383756...ece4b28. | External operator must supply reviewed seed b3383756...ece4b28 and safe >=1 GiB host swap; rerun signed preflight, then boot once. Do not regenerate/substitute seed or widen limits. | - |
+| P0 | [AR-1308](tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Prepared signed capacity passes image, 64 GiB overlay, exact ab485f767 source/tree, JDK/TLC/model and canonical lock; preflight fails only on host SwapFree below 1 GiB and unavailable reviewed seed b3383756...ece4b28. | External operator must supply reviewed seed b3383756...ece4b28 and safe >=1 GiB host swap; rerun signed preflight, then boot once. Do not regenerate/substitute seed or widen limits. | coordinator-ar1308-swap |
 
 ## Blocked
 
