@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1510](tasks/AR-1510-authenticated-control-source-wiring.md): Authenticated control source and production provider wiring | Provide the authenticated platform control source and production lifecycle wiring required by the authority-provider receipt. | Clean worktree setup from protected main f92c2e94 is in progress; read product contracts and audit runtime/provider callsites before implementing authenticated control-source wiring. | - |
+| P0 | [AR-1510](tasks/AR-1510-authenticated-control-source-wiring.md): Authenticated control source and production provider wiring | Provide the authenticated platform control source and production lifecycle wiring required by the authority-provider receipt. | Clean worktree setup from protected main f92c2e94 is in progress; read product contracts and audit runtime/provider callsites before implementing authenticated control-source wiring. | ar1510-control-source-luna56 |
 
 ## Blocked
 
