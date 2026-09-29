@@ -2,7 +2,7 @@
 {
   "branch": "feature/replay-openhands-environment-pin",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T10:45:29+00:00",
   "depends_on": [
     "AR-0309"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "",
+  "owner": "ar0521-environment-pin-luna56",
   "plan": "../plans/AR-0521.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair OpenHands replay environment provenance and reproducibility.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Reproduce and pin the OpenHands replay environment",
-  "updated_at": "2026-09-29T10:15:22+00:00",
+  "updated_at": "2026-09-29T10:15:29+00:00",
   "worktree_key": "agent-systems-benchmark-replay-openhands-environment-pin"
 }
 ---
@@ -35,3 +35,5 @@ Acceptance requires a content-addressed environment bundle, offline verifier, de
 - 2026-09-29T10:15:22+00:00: AR-0309 is done; AR-0514 failure evidence is independently reviewed and
   is an explicit repair input, not a circular completion dependency. Begin immutable OpenHands
   provenance repair.
+
+- 2026-09-29T10:15:29+00:00: Claimed by ar0521-environment-pin-luna56.
