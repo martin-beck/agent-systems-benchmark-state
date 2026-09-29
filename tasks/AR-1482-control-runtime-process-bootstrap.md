@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compose authenticated control enrollment into the ordinary CLI process bootstrap.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Control-runtime process bootstrap",
-  "updated_at": "2026-09-29T10:35:15+00:00",
+  "updated_at": "2026-09-29T10:35:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1482-control-runtime-process-bootstrap"
 }
 ---
@@ -57,3 +57,7 @@ providers, accept caller-built authority, or weaken fail-closed boundaries.
 - 2026-09-29T10:32:22+00:00: Claimed by ar1482-bootstrap-luna56.
 
 - 2026-09-29T10:35:15+00:00: Heartbeat by ar1482-bootstrap-luna56.
+
+- 2026-09-29T10:35:18+00:00: Initial protected-main inspection: isolated worktree exact checkpoint
+  fdc7f59 (AR-1480 merge); runtime has receipt/chain APIs and opaque source seam but no
+  process-owned authenticated session/bootstrap. Refresh and safe owner slice pending.
