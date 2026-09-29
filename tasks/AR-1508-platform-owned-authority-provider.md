@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material.",
-  "task_revision": 134,
+  "task_revision": 135,
   "title": "Platform-owned authority provider",
-  "updated_at": "2026-09-29T11:33:04+00:00",
+  "updated_at": "2026-09-29T11:33:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1508-platform-owned-authority-provider"
 }
 ---
@@ -474,3 +474,6 @@ fixed-path authority, weakening formal/privacy/native gates.
   clean, origin/main ancestor, five commits SSH-signed, check_dco.py all commits certified. Diff
   limited to README, asb-cli/lib.rs, asb-runtime/live_service.rs, provider handoff doc, provenance
   fixture; no asb-tui/live-provider/credential changes. No push, PR update, or merge attempted.
+
+- 2026-09-29T11:33:15+00:00: Recorded command exit 0; command argv SHA-256
+  4ef853bcb403a46657f355ec4c3780017eded5e1921a8bcf872e118227f52c4e.
