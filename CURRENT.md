@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1511](tasks/AR-1511-runtime-control-authority-issuer.md): Runtime/control authority issuer and capability source | Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch. | Repair material binding: diagnostic focused test failed because resolver credential digest differs from control receipt (credential=true; target/generation/tools/lease/relay/namespace matched), then rerun focused and serial gates. | ar1511-production-debug-luna56 |
+| P0 | [AR-1511](tasks/AR-1511-runtime-control-authority-issuer.md): Runtime/control authority issuer and capability source | Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch. | Blocked on successor contract: add a real runtime/control process-owner material provider and ordinary CLI/control caller that supplies authenticated private roots, policy, allowlist, pinned tool bundle, namespace and launch input; then reapply production wiring, remote-revoke coverage, and gates. Do not derive authority from public digest-only records. | ar1511-production-debug-luna56 |
 
 ## Blocked
 

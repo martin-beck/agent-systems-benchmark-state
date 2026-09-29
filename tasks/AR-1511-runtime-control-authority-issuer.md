@@ -8,7 +8,7 @@
     "AR-1484"
   ],
   "id": "AR-1511",
-  "next_action": "Repair material binding: diagnostic focused test failed because resolver credential digest differs from control receipt (credential=true; target/generation/tools/lease/relay/namespace matched), then rerun focused and serial gates.",
+  "next_action": "Blocked on successor contract: add a real runtime/control process-owner material provider and ordinary CLI/control caller that supplies authenticated private roots, policy, allowlist, pinned tool bundle, namespace and launch input; then reapply production wiring, remote-revoke coverage, and gates. Do not derive authority from public digest-only records.",
   "observed_branch": "feature/ar-1511-runtime-control-authority-issuer",
   "observed_dirty": 0,
   "observed_head": "673b486ba89917e3bb08c884ee17e708e0776b07",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 167,
+  "task_revision": 168,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T04:54:01+00:00",
+  "updated_at": "2026-09-29T04:54:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
@@ -556,3 +556,16 @@ production authority, or weakening fail-closed/native/formal gates.
 
 - 2026-09-29T04:53:48+00:00: Recorded command exit 0; command argv SHA-256
   aed3030dc2bade7d7f295e121c26053cfa48a71f92b18ed68315944ca7bff53b.
+
+- 2026-09-29T04:54:17+00:00: Captured actual bounded diagnostic before repair: cargo test --locked
+  -p asb-runtime live_service::tests::control_bootstrap_composes_production_dispatch_through_issuer
+  -- --exact --nocapture compiled, then failed assertion because dirty material binding compared
+  resolver credential f... against control receipt c...;
+  target/generation/tools/lease/relay/namespace matched. Aligning the fixture made the focused test
+  pass 1/1. Audit then found the dirty production path remained unsound:
+  RuntimeAuthorityInputResolver had only a private test/provider construction path, no non-test
+  material producer or ordinary CLI/control caller; asb-control records contain digest-only metadata
+  and cannot safely reconstruct roots/tools/policy/namespace. Backed up dirty diff outside
+  repositories and reverted only the four uncommitted files to clean signed head 673b486. Exact
+  successor is the missing authenticated process-owner material contract; no commit or publication
+  claim.
