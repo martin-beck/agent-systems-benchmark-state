@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T03:27:35+00:00",
+  "updated_at": "2026-09-29T03:28:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
@@ -150,3 +150,6 @@ production authority, or weakening fail-closed/native/formal gates.
   was already owned (parallel test lock collision). No authority_issuer failure. Serial cargo test
   -p asb-cli authenticated_lifecycle_ passed 8/8. This is an environmental/order-sensitive baseline
   failure, not changed code.
+
+- 2026-09-29T03:28:21+00:00: Recorded command exit 0; command argv SHA-256
+  75c78d32767dce560bf5f297627c4f938f132975bbcda14d85ca271d3cd6f91e.
