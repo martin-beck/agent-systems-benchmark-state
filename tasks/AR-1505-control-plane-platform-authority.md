@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Run fmt and focused asb-runtime coverage tests for the applied namespace binding success/mismatch paths; then run unchanged workspace coverage gate serially and capture line total.",
+  "next_action": "Capture terminal local check_coverage.py result; clean generated profraw artifacts; if line floor passes, run changed-package gates/full gates, signed DCO commit and push same branch, then rerun exact-head policy.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 3,
   "observed_head": "da5e2a916b66de9f31f2c5bcccd1f59f7b3321d2",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 278,
+  "task_revision": 279,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T01:15:23+00:00",
+  "updated_at": "2026-09-29T01:15:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -1093,3 +1093,10 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-29T01:15:10+00:00: Recorded command exit 0; command argv SHA-256
   9947c1bcd91fba492fbcb55c4f9fccc6c7e57e54cea1c6a61b274b1f1e558fb1.
+
+- 2026-09-29T01:15:48+00:00: Focused handoffctl test completed exit 0: cargo test --locked -p
+  asb-runtime --lib control_bootstrap --no-fail-fast -- --test-threads=1; 4 passed, 0 failed, 150
+  filtered. cargo fmt --all -- --check also passed. Serial unchanged tools/quality/check_coverage.py
+  remains running with output redirected to ignored target/ar1505-coverage/quality-followup.log; no
+  overlapping coverage process is active. Focused test generated only checkout profraw artifacts,
+  which will be removed by exact filename after coverage completes.
