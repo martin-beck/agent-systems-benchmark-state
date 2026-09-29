@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect the merged authenticated platform authority/bootstrap protocol to production ASB process startup and ordinary CLI dispatch.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Runtime platform launcher integration",
-  "updated_at": "2026-09-29T01:48:47+00:00",
+  "updated_at": "2026-09-29T01:49:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1506-runtime-platform-launcher-integration"
 }
 ---
@@ -59,3 +59,6 @@ production evidence.
   AR-1505 verified done; begin production launcher integration.
 
 - 2026-09-29T01:48:47+00:00: Claimed by ar1506-launcher-luna56.
+
+- 2026-09-29T01:49:03+00:00: Recorded command exit 0; command argv SHA-256
+  f5a589cdf7ff0b0c4aa322d6e6d65fbb05fd91306ad84af64030c0948de4ef59.
