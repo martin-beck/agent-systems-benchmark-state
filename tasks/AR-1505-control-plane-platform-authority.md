@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Add authenticated namespace_sha256 to RuntimeBootstrapRequestV1 and RuntimeBootstrapResponseV1, echo and validate it in control, compare all three bindings in the runtime resolver, add positive and negative tests and regenerate v1.11 schemas.",
+  "next_action": "Complete runtime authenticated binding implementation and update all request and response fixtures, then regenerate v1.11 schemas and run formatter and focused compile tests.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 2,
   "observed_head": "95ac5453fe3a1fbc383afa2ce713a3dceff78437",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 186,
+  "task_revision": 187,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:23:42+00:00",
+  "updated_at": "2026-09-29T00:24:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -760,3 +760,11 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-29T00:23:42+00:00: Recorded command exit 0; command argv SHA-256
   e561aa0f5de72f5201cacc4a2354c15f883f2893e5b1062d7859d2cffaa5e14e.
+
+- 2026-09-29T00:24:02+00:00: 00:22:54Z protocol patch attempt exited 1. Exact apply_patch stderr:
+  Failed to find expected lines in live_service.rs: pub(crate) struct
+  RuntimeAuthorityInputResolverState. Because apply_patch is atomic, that attempt made no product
+  changes; subsequent inspection found duplicate namespace additions from an overlapping retry in
+  certificate.rs and control.rs. Corrective action: removed duplicate namespace fields, validation
+  clauses, and initializer entries, leaving one field per request and response; the protocol patch
+  is now structurally clean before runtime binding work.
