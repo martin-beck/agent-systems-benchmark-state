@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1482-control-runtime-process-bootstrap",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-29T11:06:21+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1472",
     "AR-1473",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1482-control-runtime-process-bootstrap",
   "observed_dirty": 0,
   "observed_head": "fdc7f59f83f647ce099439b003848291e81dd3bb",
-  "owner": "ar1482-bootstrap-luna56",
+  "owner": "",
   "plan": "../plans/AR-1482-control-runtime-process-bootstrap.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Compose authenticated control enrollment into the ordinary CLI process bootstrap.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Control-runtime process bootstrap",
-  "updated_at": "2026-09-29T10:36:21+00:00",
+  "updated_at": "2026-09-29T10:36:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1482-control-runtime-process-bootstrap"
 }
 ---
@@ -66,3 +66,18 @@ providers, accept caller-built authority, or weaken fail-closed boundaries.
   e4c7da3fda196c5534ced604a155ab5e580df6541519325fe2d7ff144d8d7265.
 
 - 2026-09-29T10:36:21+00:00: Heartbeat by ar1482-bootstrap-luna56.
+
+- 2026-09-29T10:36:49+00:00: Blocked after exact protected-main audit at
+  f92c2e941913129d7db50480f71e8361a0d43a0c. RuntimeControlBootstrap validates authenticated
+  generation/session/namespace/expiry/receipt and exposes opaque chain/profile, but
+  materialize_provisioner remains crate-private and requires caller-supplied RuntimeAuthorityInputs
+  plus state_path; no runtime/platform-owned provider materializes
+  roots/tools/policy/allowlist/namespace. Runtime request_control_bootstrap still requires
+  caller-supplied ControlClient/socket and request. asb-cli::run at crates/asb-cli/src/lib.rs:95-96
+  still dispatches None,None; only injected-source helpers reach AR-1480. Publishing an owner
+  wrapper would accept or synthesize authority and violate fail-closed boundaries. Existing narrow
+  successor AR-1506 owns production launcher integration but is blocked pending real private
+  authority materialization; AR-1510 owns authenticated control-source/provider wiring and is
+  likewise blocked. Next action: implement authenticated platform authority provider/materializer
+  and production session discovery, then wire opaque source to ordinary run/sweep; preserve no
+  asb-tui/live-provider/credentials/synthetic authority.
