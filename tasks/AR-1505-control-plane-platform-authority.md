@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Monitor all required post-merge workflows for exact main SHA f92c2e941913129d7db50480f71e8361a0d43a0c; close AR only after every required result is terminal SUCCESS and post-merge verification is recorded.",
+  "next_action": "Continue polling Repository quality, Rust verification, and Emulated aarch64 portability for exact main SHA f92c2e941913129d7db50480f71e8361a0d43a0c; then record terminal results and close AR.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 0,
   "observed_head": "c96be66213c9a09870e7e6b38784bc7910dff728",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 301,
+  "task_revision": 302,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T01:33:18+00:00",
+  "updated_at": "2026-09-29T01:36:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -1187,3 +1187,9 @@ public credential/socket paths, or weakening fail-closed gates.
 - 2026-09-29T01:33:18+00:00: Protected merge completed through handoffctl run with PR #382 exact
   head c96be662; immutable merge commit f92c2e941913129d7db50480f71e8361a0d43a0c. Post-merge
   assurance workflows are running; AR remains in_progress.
+
+- 2026-09-29T01:36:08+00:00: Post-merge snapshot: exact main SHA
+  f92c2e941913129d7db50480f71e8361a0d43a0c. Terminal SUCCESS: Huawei MIT source headers, Hosted
+  portability and native qualification, Credential-free benchmark path, Fault assurance, Formal
+  assurance. IN_PROGRESS: Repository quality, Rust verification, Emulated aarch64 portability. No
+  failures observed.

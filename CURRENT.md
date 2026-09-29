@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1505](tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | Monitor all required post-merge workflows for exact main SHA f92c2e941913129d7db50480f71e8361a0d43a0c; close AR only after every required result is terminal SUCCESS and post-merge verification is recorded. | coordinator-ar1505 |
+| P0 | [AR-1505](tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | Continue polling Repository quality, Rust verification, and Emulated aarch64 portability for exact main SHA f92c2e941913129d7db50480f71e8361a0d43a0c; then record terminal results and close AR. | coordinator-ar1505 |
 
 ## Blocked
 
