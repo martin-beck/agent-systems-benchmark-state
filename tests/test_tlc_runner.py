@@ -460,7 +460,12 @@ class TlcRunnerTests(unittest.TestCase):
 
     def test_tier_evidence_records_separate_address_space_bound(self) -> None:
         tiers = ATTEST.read_tier_evidence(ROOT / "formal" / "tier-evidence.json")
-        for tier in tiers.values():
+        for name, tier in tiers.items():
+            if name == "full-exhaustive-capacity":
+                self.assertEqual(tier["memory_max"], "8G")
+                self.assertEqual(tier["swap_max"], "8G")
+                self.assertEqual(tier["address_space_max"], "16G")
+                continue
             self.assertEqual(tier["memory_max"], "3G")
             self.assertEqual(tier["swap_max"], "3G")
             self.assertEqual(tier["address_space_max"], "8G")
@@ -469,6 +474,11 @@ class TlcRunnerTests(unittest.TestCase):
         tiers = ATTEST.read_tier_evidence(ROOT / "formal" / "tier-evidence.json")
         self.assertEqual(tiers["pr-publication"]["timeout_seconds"], 1800)
         self.assertEqual(tiers["full-exhaustive"]["timeout_seconds"], 7200)
+        self.assertEqual(tiers["full-exhaustive-capacity"]["timeout_seconds"], 7200)
+        self.assertNotEqual(
+            tiers["full-exhaustive"]["memory_max"],
+            tiers["full-exhaustive-capacity"]["memory_max"],
+        )
 
     def test_full_exhaustive_rejects_required_timeout(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
@@ -482,25 +492,36 @@ class TlcRunnerTests(unittest.TestCase):
     def test_tier_profile_rejects_unknown_and_preserves_required_bound(self) -> None:
         self.assertEqual(PROFILES.timeout_for_tier("pr-publication"), 1800)
         self.assertEqual(PROFILES.timeout_for_tier("full-exhaustive"), 7200)
+        self.assertEqual(PROFILES.timeout_for_tier("full-exhaustive-capacity"), 7200)
         with self.assertRaisesRegex(ValueError, "unknown formal tier"):
             PROFILES.timeout_for_tier("unknown")
 
     def test_guest_seed_exports_tier_timeout_and_bounds(self) -> None:
         required = SEED.environment_for_tier("pr-publication")
         full = SEED.environment_for_tier("full-exhaustive")
+        capacity = SEED.environment_for_tier("full-exhaustive-capacity")
         self.assertEqual(required["TLC_TIMEOUT_SECONDS"], "1800")
         self.assertEqual(full["TLC_TIMEOUT_SECONDS"], "7200")
         self.assertEqual(full["TLC_MEMORY_MAX"], required["TLC_MEMORY_MAX"])
+        self.assertEqual(capacity["TLC_MEMORY_MAX"], "8G")
+        self.assertEqual(capacity["TLC_SWAP_MAX"], "8G")
+        self.assertEqual(capacity["TLC_ADDRESS_SPACE_MAX"], "16G")
+        self.assertEqual(capacity["TLC_HEAP"], "6144m")
         with self.assertRaisesRegex(ValueError, "unknown formal tier"):
             SEED.environment_for_tier("unknown")
 
     def test_guest_seed_renders_execution_timeout(self) -> None:
         required = GUEST.build_user_data("pr-publication")
         full = GUEST.build_user_data("full-exhaustive")
+        capacity = GUEST.build_user_data("full-exhaustive-capacity")
         self.assertIn("TLC_TIMEOUT_SECONDS=1800", required)
         self.assertIn("RuntimeMaxSec=1800", required)
         self.assertIn("TLC_TIMEOUT_SECONDS=7200", full)
         self.assertIn("RuntimeMaxSec=7200", full)
+        self.assertIn("TLC_MEMORY_MAX=8G", capacity)
+        self.assertIn("TLC_SWAP_MAX=8G", capacity)
+        self.assertIn("TLC_ADDRESS_SPACE_MAX=16G", capacity)
+        self.assertIn("RuntimeMaxSec=7200", capacity)
 
     def test_guest_seed_validates_containment_for_each_profile(self) -> None:
         portable = GUEST.build_user_data("portable-smoke")
@@ -536,7 +557,7 @@ class TlcRunnerTests(unittest.TestCase):
         self.assertIn("TLC_RUNTIME_ROOT:-/srv/data/projects/.asb-tlc", verify)
         self.assertIn('PRELOADED_JAR="${TLC_JAR_PATH:-}"', verify)
         self.assertIn('if [[ -n "${PRELOADED_JAR}" ]]', verify)
-        self.assertIn('TLC_JAR_PATH must name a regular preloaded JAR', verify)
+        self.assertIn("TLC_JAR_PATH must name a regular preloaded JAR", verify)
         self.assertIn("curl --fail", verify)
         self.assertIn("sha256sum --check --strict", verify)
 

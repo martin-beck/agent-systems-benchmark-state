@@ -30,6 +30,14 @@ EXPECTED_MODELS = {
         "Handoffctl",
         "HandoffctlRecovery",
     },
+    "full-exhaustive-capacity": {
+        "HandoffctlBinding",
+        "HandoffctlLocks",
+        "HandoffctlRun",
+        "HandoffctlStorage",
+        "Handoffctl",
+        "HandoffctlRecovery",
+    },
 }
 MODEL_SOURCE = {"HandoffctlPR": "Handoffctl"}
 TIER_KEYS = {
@@ -122,14 +130,15 @@ def read_tier_evidence(path: Path) -> dict[str, dict[str, object]]:  # noqa: C90
             raise ValueError(f"tier evidence for {tier} has an unexpected model set")
         if entry["workers"] != 2:
             raise ValueError(f"tier evidence for {tier} has unsupported bounds")
+        capacity = tier == "full-exhaustive-capacity"
         if (
-            entry["heap"] != "2048m"
-            or entry["memory_max"] != "3G"
-            or entry["swap_max"] != "3G"
-            or entry["address_space_max"] != "8G"
+            entry["heap"] != ("6144m" if capacity else "2048m")
+            or entry["memory_max"] != ("8G" if capacity else "3G")
+            or entry["swap_max"] != ("8G" if capacity else "3G")
+            or entry["address_space_max"] != ("16G" if capacity else "8G")
         ):
             raise ValueError(f"tier evidence for {tier} has unsupported memory bounds")
-        expected_timeout = 7200 if tier == "full-exhaustive" else 1800
+        expected_timeout = 7200 if tier in {"full-exhaustive", "full-exhaustive-capacity"} else 1800
         if entry["timeout_seconds"] != expected_timeout:
             raise ValueError(f"tier evidence for {tier} has unsupported timeout")
         expected_containment = (
@@ -137,7 +146,7 @@ def read_tier_evidence(path: Path) -> dict[str, dict[str, object]]:  # noqa: C90
         )
         if entry["containment"] != expected_containment:
             raise ValueError(f"tier evidence for {tier} has unsupported containment")
-        if entry["exhaustive"] != (tier == "full-exhaustive"):
+        if entry["exhaustive"] != (tier in {"full-exhaustive", "full-exhaustive-capacity"}):
             raise ValueError(f"tier evidence for {tier} has incorrect exhaustive flag")
     return tiers
 
@@ -221,7 +230,7 @@ def main() -> int:  # noqa: C901
     result = {
         "schema_version": 1,
         "profile": args.tier,
-        "exhaustive": args.tier == "full-exhaustive",
+        "exhaustive": args.tier in {"full-exhaustive", "full-exhaustive-capacity"},
         "commit": commit,
         "tree": tree,
         "formal_input_sha256": formal_hash,
@@ -264,8 +273,13 @@ def main() -> int:  # noqa: C901
         "freshness_seconds": 0,
         "non_claims": [
             f"{args.tier} is non-exhaustive and cannot support full formal claims"
-            if args.tier != "full-exhaustive"
-            else "full-exhaustive is bounded model checking, not an implementation proof",
+            if args.tier not in {"full-exhaustive", "full-exhaustive-capacity"}
+            else (
+                "full-exhaustive-capacity is a separate capacity contract and not "
+                "AR-1307 full-tier evidence"
+                if args.tier == "full-exhaustive-capacity"
+                else "full-exhaustive is bounded model checking, not an implementation proof"
+            ),
             "bounded model checking does not prove implementation correspondence",
             "state_counts are unavailable unless parsed from TLC output and are not evidence "
             "of exhaustive exploration",

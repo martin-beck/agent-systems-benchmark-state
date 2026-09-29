@@ -192,3 +192,7 @@ This option is intentionally CLI-only; there is no environment override. The che
 `formal/handoffctl/verify.sh` workflow never supplies it and therefore cannot silently replace
 canonical publication admission. An isolated run is local diagnostic evidence only and must not be
 reported as a canonical publication or weekly full attestation.
+The separate `full-exhaustive-capacity` tier uses the same six configurations with
+the reviewed capacity contract (`6144m` heap, `8G` memory, `8G` swap, and `16G`
+address space). Its attestation is distinct and cannot qualify AR-1307's
+`full-exhaustive` tier.

@@ -33,6 +33,17 @@
       "address_space_max": "8G",
       "timeout_seconds": 7200,
       "containment": "systemd-run-user-cgroup"
+    },
+    "full-exhaustive-capacity": {
+      "models": ["HandoffctlBinding", "HandoffctlLocks", "HandoffctlRun", "HandoffctlStorage", "Handoffctl", "HandoffctlRecovery"],
+      "exhaustive": true,
+      "workers": 2,
+      "heap": "6144m",
+      "memory_max": "8G",
+      "swap_max": "8G",
+      "address_space_max": "16G",
+      "timeout_seconds": 7200,
+      "containment": "systemd-run-user-cgroup"
     }
   }
 }

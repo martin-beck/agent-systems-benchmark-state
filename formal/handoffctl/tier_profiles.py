@@ -9,6 +9,7 @@ TIER_TIMEOUT_SECONDS = {
     "portable-smoke": 1800,
     "pr-publication": 1800,
     "full-exhaustive": 7200,
+    "full-exhaustive-capacity": 7200,
 }
 
 

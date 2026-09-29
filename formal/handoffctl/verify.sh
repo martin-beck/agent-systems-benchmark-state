@@ -3,8 +3,8 @@
 # SPDX-License-Identifier: MIT
 set -euo pipefail
 
-if [[ "${1:-}" != "--tier" || ( "${2:-}" != "portable-smoke" && "${2:-}" != "pr-publication" && "${2:-}" != "full-exhaustive" ) || "$#" -ne 2 ]]; then
-    echo "usage: $0 --tier portable-smoke|pr-publication|full-exhaustive" >&2
+if [[ "${1:-}" != "--tier" || ( "${2:-}" != "portable-smoke" && "${2:-}" != "pr-publication" && "${2:-}" != "full-exhaustive" && "${2:-}" != "full-exhaustive-capacity" ) || "$#" -ne 2 ]]; then
+    echo "usage: $0 --tier portable-smoke|pr-publication|full-exhaustive|full-exhaustive-capacity" >&2
     exit 64
 fi
 readonly TIER="$2"
