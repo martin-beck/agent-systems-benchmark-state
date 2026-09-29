@@ -14,7 +14,7 @@
     "AR-1340"
   ],
   "id": "AR-1392",
-  "next_action": "Monitor seven exact-main workflows for merge d59e6a7: Huawei 36568751882 green; hosted 36568751695, fault 36568751891, formal 36568751877, Rust 36568751779, emulated AArch64 36568751799, Repository quality 36568751966 pending.",
+  "next_action": "Release done after exact main d59e6a7 verification; seven required workflows terminal green and remote main matches.",
   "observed_branch": "feature/ar-1392-control-authority-materializer",
   "observed_dirty": 0,
   "observed_head": "0ea9671224ff6b51fbe0a3be4ac9817c4526356c",
@@ -24,9 +24,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve private live authority from authenticated control enrollment without caller injection.",
-  "task_revision": 140,
+  "task_revision": 141,
   "title": "Control-owned private authority materializer",
-  "updated_at": "2026-09-29T12:38:55+00:00",
+  "updated_at": "2026-09-29T12:41:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1392-control-authority-materializer"
 }
 ---
@@ -470,3 +470,13 @@ reachability.
   parents 47329e35c03bf20505ce65c7a29487ab97c52ee9 and 0ea9671224ff6b51fbe0a3be4ac9817c4526356c;
   tree equals current main and topic. Historical PR #339 failure 36279474851 and merge 3cd6a5a
   preserved.
+
+- 2026-09-29T12:41:27+00:00: Complete topology repair evidence: remote refs/heads/main is
+  d59e6a76a1c7a432e63f0d765909b554bd12416c. Protected merge has first parent
+  47329e35c03bf20505ce65c7a29487ab97c52ee9 and second parent
+  0ea9671224ff6b51fbe0a3be4ac9817c4526356c; both parent trees equal, reviewed 78ab92b remains
+  ancestor, and product diff is empty. Seven exact-main workflows terminal SUCCESS: Hosted
+  36568751695, Rust 36568751779, Emulated AArch64 36568751799, Formal 36568751877, Huawei
+  36568751882, Fault 36568751891, Repository quality 36568751966. Credential-free 36568752123 also
+  SUCCESS. PR #385 exact head 0ea9671 had all 13 checks SUCCESS. Historical PR #339 merge 3cd6a5a
+  and failure 36279474851 remain immutable evidence.

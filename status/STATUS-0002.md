@@ -204,7 +204,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1392](../tasks/AR-1392-control-authority-materializer.md): Control-owned private authority materializer | ar1392-topology-repair-luna56 | Resolve private live authority from authenticated control enrollment without caller injection. | Monitor seven exact-main workflows for merge d59e6a7: Huawei 36568751882 green; hosted 36568751695, fault 36568751891, formal 36568751877, Rust 36568751779, emulated AArch64 36568751799, Repository quality 36568751966 pending. |
+| P0 | [AR-1392](../tasks/AR-1392-control-authority-materializer.md): Control-owned private authority materializer | ar1392-topology-repair-luna56 | Resolve private live authority from authenticated control enrollment without caller injection. | Release done after exact main d59e6a7 verification; seven required workflows terminal green and remote main matches. |
 
 ### Blocked (80)
 
