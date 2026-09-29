@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1532](tasks/AR-1532.md): AR-1307 unsigned-development runner repair | Repair and independently qualify the provider-free unsigned-development runner path associated with AR-1307 without changing formal limits or evidence gates. | Promote after state review; audit and repair the unsigned-development runner path, then independently run its focused and full state gates without claiming formal qualification. | coordinator-ar1532-metadata-20260930 |
+| P0 | [AR-1532](tasks/AR-1532.md): AR-1307 unsigned-development runner repair | Repair and independently qualify the provider-free unsigned-development runner path associated with AR-1307 without changing formal limits or evidence gates. | Wait for AR-1534 to repair the approved coordinator vendor boundary; then rerun vendor verification, full state gates and exact-head review. Preserve the non-qualifying development result and do not claim formal AR-1307 qualification. | coordinator-ar1532-metadata-20260930 |
 
 ## Blocked
 
