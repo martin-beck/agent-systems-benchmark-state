@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1524](tasks/AR-1524.md): Repair live-dispatch dependency graph | Repair the stale AR-1374/1375 dependency cycle and make AR-1523 the canonical live-dispatch successor. | Promote after dependency verification; supersede the stale AR-1375 cycle and route AR-1374 to AR-1523 without changing product code. | coordinator-ar1524-graph-repair-20260930 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |

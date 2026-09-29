@@ -216,12 +216,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1524](../tasks/AR-1524.md): Repair live-dispatch dependency graph | coordinator-ar1524-graph-repair-20260930 | Repair the stale AR-1374/1375 dependency cycle and make AR-1523 the canonical live-dispatch successor. | Promote after dependency verification; supersede the stale AR-1375 cycle and route AR-1374 to AR-1523 without changing product code. |
-
 ### Blocked (78)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -366,7 +360,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (389)
+### Done (390)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -505,3 +499,4 @@
 | P0 | [AR-1383](../tasks/AR-1383-runtime-authority-profile.md): Runtime-owned authority profile materialization | Unclaimed | Materialize runtime-owned live authority profile for authenticated execution. | Independent review complete; full runtime tests 114 passed/1 ignored, check and clippy -D warnings passed. Publish clean exact-head PR through handoffctl, then monitor required CI. |
 | P0 | [AR-1384](../tasks/AR-1384-runtime-bootstrap-materialization.md): Runtime-owned bootstrap materialization | Unclaimed | Materialize the runtime-owned live bootstrap handle from authenticated authority. | Independent review complete; focused authority-profile tests (2), full asb-runtime tests (116 passed, 1 capability-gated ignored), fmt/check, and clippy -D warnings pass. Publish clean exact-head PR through handoffctl, then monitor exact-head CI. |
 | P0 | [AR-1385](../tasks/AR-1385-runtime-live-dispatch-source.md): Authenticated runtime live dispatch source | Unclaimed | Materialize the authenticated runtime-owned live dispatch source for production asb run and sweep. | PR #280 force-updated to signed+DCO exact head 02b79f3; monitor fresh required checks, repair only evidenced failures, then merge only after independent review and all checks green. |
+| P0 | [AR-1388](../tasks/AR-1388-runtime-authority-materializer.md): Runtime authority receipt materializer | Unclaimed | Materialize runtime-owned provider authority from authenticated receipt and chain state. | Done: original merge and AR-1389 replacement evidence verified; no further action remains. |
