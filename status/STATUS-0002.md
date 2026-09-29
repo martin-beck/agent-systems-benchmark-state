@@ -228,6 +228,12 @@
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1526](../tasks/AR-1526.md): First-customer local/replay qualification | coordinator-ar1526-first-customer-20260930 | Qualify the merged ASB production-shaped local/mock and strict-replay customer path with sanitized evidence. | Promote after dependency verification; run the disposable first-customer-style local/mock and strict-replay qualification on exact protected main. |
 
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1528](../tasks/AR-1528.md): Rerun AR-1307/1308 development fixtures | Unclaimed | Run the repaired AR-1307/1308 unsigned-development fixture path and preserve separate formal qualification blockers. | Remain planned until AR-1527 completes; implement and rerun the corrected unsigned-development fixtures for AR-1307/1308 with bounded evidence and no formal qualification claim. |
+
 ### Blocked (78)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -311,7 +317,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (50)
+### Planned (49)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -333,7 +339,6 @@
 | P0 | [AR-1309](../tasks/AR-1309-reviewed-capacity-or-model-reduction.md): Reviewed full-exhaustive capacity or model-reduction contract | Unclaimed | Provide a reviewed successor contract after terminal full-exhaustive capacity OOM. | Remain planned until the coordinator reviews the AR-1308 terminal OOM evidence and selects a separately scoped capacity contract or model-reduction profile; do not rerun or widen AR-1307 limits. |
 | P0 | [AR-1521](../tasks/AR-1521.md): AR-1307/1308 formal capacity repair implementation | Unclaimed | Implement the reviewed successor contract that repairs the AR-1308 full-tier capacity failure while preserving AR-1307 qualification boundaries. | Remain planned until AR-1309 selects and records the formal capacity or model-reduction contract; then implement that contract without changing AR-1307 limits. |
 | P0 | [AR-1522](../tasks/AR-1522.md): AR-1307/1308 formal qualification rerun | Unclaimed | Run and independently verify the repaired AR-1307/1308 full-tier qualification, or leave a truthful classified blocker. | Remain planned until AR-1521 is merged and its exact-head CI evidence is green; then run the one authorized terminal qualification attempt. |
-| P0 | [AR-1528](../tasks/AR-1528.md): Rerun AR-1307/1308 development fixtures | Unclaimed | Run the repaired AR-1307/1308 unsigned-development fixture path and preserve separate formal qualification blockers. | Remain planned until AR-1527 completes; implement and rerun the corrected unsigned-development fixtures for AR-1307/1308 with bounded evidence and no formal qualification claim. |
 | P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
 | P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
 | P1 | [AR-0810](../tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Unclaimed | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project&#x27;s GitHub Pages site. |
