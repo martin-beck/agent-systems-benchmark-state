@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1307-portable-tlc-runner-repair",
   "checkpoint_commit": "ab485f767fbddbd8adfc27b5120f3df0a045b762",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T16:23:21+00:00",
   "depends_on": [
     "AR-1302"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "969eef05834a4ce5f711bbafaa5798549abd95c8",
-  "owner": "",
+  "owner": "coordinator-dev-seed-policy-20260929",
   "plan": "../plans/AR-1307.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 738,
+  "task_revision": 739,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-29T16:13:18+00:00",
+  "updated_at": "2026-09-29T16:13:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -2111,3 +2111,5 @@ authorize qualification, publication, or release evidence; selecting
 
 - 2026-09-29T16:13:18+00:00: Development profile policy changed: runner development no longer
   depends on reviewed seed digests; formal qualification remains separate.
+
+- 2026-09-29T16:13:21+00:00: Claimed by coordinator-dev-seed-policy-20260929.
