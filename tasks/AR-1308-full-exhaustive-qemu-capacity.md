@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Prepared signed capacity passes image, 64 GiB overlay, exact ab485f767 source/tree, JDK/TLC/model and canonical lock; host capacity now passes with dedicated swap, but the reviewed seed b3383756...ece4b28 is unavailable.",
-  "task_revision": 572,
+  "task_revision": 573,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T13:16:08+00:00",
+  "updated_at": "2026-09-29T13:23:37+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1747,3 +1747,8 @@ must report `qualification_authorized: false`.
 
 - 2026-09-29T13:16:08+00:00: Released blocked: host capacity and swap are ready; exact reviewed seed
   remains the only missing signed preflight input.
+
+- 2026-09-29T13:23:37+00:00: Unsigned-development diagnostic was explicitly run with a locally
+  generated NoCloud seed; preflight passed as diagnostic and one network-disabled QEMU boot powered
+  down, but guest fixture failed because the copied data image lacks the expected UUID and base
+  image lacks user asb. No signed qualification or release claim.
