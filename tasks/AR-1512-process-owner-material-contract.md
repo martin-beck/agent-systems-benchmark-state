@@ -9,18 +9,18 @@
   ],
   "id": "AR-1512",
   "next_action": "Create clean isolated worktree from protected main f92c2e941913129d7db50480f71e8361a0d43a0c; audit ASB owner/enrollment/issuer/CLI contracts before implementation.",
-  "observed_branch": "",
+  "observed_branch": "feature/ar-1512-process-owner-material-contract",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "f92c2e941913129d7db50480f71e8361a0d43a0c",
   "owner": "ar1512-process-owner-luna56",
   "plan": "../plans/AR-1512-process-owner-material-contract.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated process-owner material source and ordinary CLI/control caller needed to consume runtime authority.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Authenticated process-owner material contract",
-  "updated_at": "2026-09-29T04:58:44+00:00",
+  "updated_at": "2026-09-29T04:58:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1512-process-owner-material-contract"
 }
 ---
