@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1510-authenticated-control-source-wiring.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provide the authenticated platform control source and production lifecycle wiring required by the authority-provider receipt.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Authenticated control source and production provider wiring",
-  "updated_at": "2026-09-29T10:42:37+00:00",
+  "updated_at": "2026-09-29T21:16:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1510-authenticated-control-source-wiring"
 }
 ---
@@ -142,3 +142,7 @@ test-only façade publication, or weakening native/formal/privacy gates.
   supplies private roots, namespace, pinned tools, policy/allowlist, credential capability, and
   lifecycle fences, then wire ordinary CLI live run/sweep and scheduler transitions. Do not derive
   authority from public digest-only records or caller-provided factories.
+
+- 2026-09-29T21:16:54+00:00: Reopen canonical production source/wiring successor: AR-1508 lifecycle
+  fencing is repaired; remaining scope is non-test authenticated platform authority materialization
+  and ordinary run/sweep wiring.
