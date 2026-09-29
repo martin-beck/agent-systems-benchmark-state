@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1516](tasks/AR-1516-ar1308-qemu-fixture-evidence-repair.md): AR-1308 QEMU fixture repair | Repair AR-1308 fixture/evidence for reproducible development runs. | Promote after AR-1308 terminates; repair fixture/evidence, rerun. | coordinator-ar1516-qemu-repair-20260929 |
+| P0 | [AR-1516](tasks/AR-1516-ar1308-qemu-fixture-evidence-repair.md): AR-1308 QEMU fixture repair | Fixture repair passed boot/transient/JAR checks; full tier timed out at 1700s without attestation. | Close fixture repair; hand timeout to AR-1309 for capacity/model decision. | coordinator-ar1516-qemu-repair-20260929 |
 
 ## Open
 

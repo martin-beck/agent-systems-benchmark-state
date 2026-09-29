@@ -7,7 +7,7 @@
     "AR-1304"
   ],
   "id": "AR-1516",
-  "next_action": "Promote after AR-1308 terminates; repair fixture/evidence, rerun.",
+  "next_action": "Close fixture repair; hand timeout to AR-1309 for capacity/model decision.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -16,10 +16,10 @@
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Repair AR-1308 fixture/evidence for reproducible development runs.",
-  "task_revision": 10,
+  "summary": "Fixture repair passed boot/transient/JAR checks; full tier timed out at 1700s without attestation.",
+  "task_revision": 11,
   "title": "AR-1308 QEMU fixture repair",
-  "updated_at": "2026-09-29T19:00:22+00:00",
+  "updated_at": "2026-09-29T19:01:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1516-ar1308-qemu-fixture-evidence-repair"
 }
 ---
@@ -49,3 +49,7 @@ qualification, or make reviewed seed material a development prerequisite.
 
 - 2026-09-29T19:00:22+00:00: Recorded command exit 124; command argv SHA-256
   bfa40e8bd0148672d622e616c80a78eb151dfaf338e54e2215f2a7c17f370659.
+
+- 2026-09-29T19:01:16+00:00: Sanitized evidence:
+  /srv/data/projects/ar1308-development/diagnostic-ar1516-full3-summary.txt. Corrected rerun passed
+  boot/transient/JAR checks and ended at outer timeout 1700s with no result marker.
