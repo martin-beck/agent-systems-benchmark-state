@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Add scoped too-many-arguments allowance to the existing launch factory extension point, rerun clippy, then docs/full gates.",
+  "next_action": "Apply the scoped clippy allowance at the exact LiveLaunchFactory::acquire declaration, then rerun clippy.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 2,
   "observed_head": "baa13ea675de2160dcf58f69b106e255f2c3d8de",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 155,
+  "task_revision": 156,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:08:00+00:00",
+  "updated_at": "2026-09-29T00:08:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -624,3 +624,9 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-29T00:08:00+00:00: Recorded command exit 1; command argv SHA-256
   c23b29d9f9ea6b9c13a535e82ade56f0cc25918a7aa075c73d8908290ccc3d8a.
+
+- 2026-09-29T00:08:36+00:00: 2026-09-29T00:08:00Z: Exact corrective mutation command handoffctl run
+  --owner ar1505-repair-luna56 AR-1505 -- apply_patch (allow before LiveLaunchFactory::acquire)
+  exited 1. stderr: Failed to find expected lines because the method is preceded by its two-line
+  Atomically acquire doc block, so product mutation did not occur. Corrective action: inspect lines
+  558-571 and apply the attribute immediately before pub fn acquire.
