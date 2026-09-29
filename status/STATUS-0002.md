@@ -230,11 +230,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1533](../tasks/AR-1533.md): AR-1308 unsigned-development QEMU fixture repair | Unclaimed | Repair the provider-free unsigned-development QEMU fixture for AR-1308 and make its diagnostics, cleanup and non-qualification boundary reliable. | Promote after state review; repair and rerun the unsigned-development QEMU fixture with generated inputs, preserving formal AR-1308 blockers and non-qualifying evidence. |
+| P0 | [AR-1533](../tasks/AR-1533.md): AR-1308 unsigned-development QEMU fixture repair | coordinator-ar1533-metadata-20260930 | Repair the provider-free unsigned-development QEMU fixture for AR-1308 and make its diagnostics, cleanup and non-qualification boundary reliable. | Promote after state review; repair and rerun the unsigned-development QEMU fixture with generated inputs, preserving formal AR-1308 blockers and non-qualifying evidence. |
 
 ### Blocked (82)
 
