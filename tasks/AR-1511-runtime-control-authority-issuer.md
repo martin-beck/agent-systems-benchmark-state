@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 139,
+  "task_revision": 140,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T04:31:09+00:00",
+  "updated_at": "2026-09-29T04:34:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
@@ -474,3 +474,6 @@ production authority, or weakening fail-closed/native/formal gates.
 
 - 2026-09-29T04:31:09+00:00: Takeover heartbeat/audit: preserving clean signed 673b486 against
   protected f92c2e9; production-path repair begins for independent-review P1.
+
+- 2026-09-29T04:34:07+00:00: Recorded command exit 0; command argv SHA-256
+  43dd51120a88a861e8e4c00a18907a326695198b26d82d0391c92ddf401fb572.
