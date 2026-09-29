@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1367-ar1329-production-dispatch-integration",
   "checkpoint_commit": "0c6dc52e1f4aa5854f73081711dbd9a5bc1a5d7c",
-  "claim_expires": "2026-09-29T23:27:56+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1366",
     "AR-1340",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1367-ar1329-production-dispatch-integration",
   "observed_dirty": 0,
   "observed_head": "bf89a45ddd71af96e6d4b6954320e199e147f83e",
-  "owner": "coordinator-ar1367-metadata-20260930",
+  "owner": "",
   "plan": "../plans/AR-1367-ar1329-production-dispatch-integration.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Complete production asb run/sweep live-provider dispatch through runtime-owned authenticated acquisition and teardown.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "AR-1329 production dispatch integration",
-  "updated_at": "2026-09-29T22:58:09+00:00",
+  "updated_at": "2026-09-29T22:58:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1367-ar1329-production-dispatch-integration"
 }
 ---
@@ -119,3 +119,7 @@ reachability.
 
 - 2026-09-29T22:58:09+00:00: Corrected durable next action after exact production-dispatch audit; no
   product mutation.
+
+- 2026-09-29T22:58:12+00:00: Durable next action corrected. Exact protected-main audit remains
+  valid: PlanAuthoritySource rejects live mode and no authenticated platform-owned authority source
+  exists; AR-1523 owns the blocker.
