@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1513](tasks/AR-1513-authenticated-lease-dispatch-bridge.md): Authenticated lease-to-live-dispatch bridge | Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch. | Promote after AR-1512 review evidence is reconciled; replace public self-authenticated owner material with authenticated issuance and wire the lease to live dispatch. | ar1513-lease-bridge-luna56 |
+| P0 | [AR-1513](tasks/AR-1513-authenticated-lease-dispatch-bridge.md): Authenticated lease-to-live-dispatch bridge | Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch. | Audit protected-main owner/enrollment issuer, ProcessOwnerMaterialLease, LiveProviderRuntimeHandle/DispatchSource, and ordinary CLI run/sweep seams; then implement authenticated bridge and provenance checks in isolated worktree. | ar1513-lease-bridge-luna56 |
 
 ## Blocked
 

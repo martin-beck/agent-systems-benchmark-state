@@ -8,7 +8,7 @@
     "AR-1484"
   ],
   "id": "AR-1513",
-  "next_action": "Promote after AR-1512 review evidence is reconciled; replace public self-authenticated owner material with authenticated issuance and wire the lease to live dispatch.",
+  "next_action": "Audit protected-main owner/enrollment issuer, ProcessOwnerMaterialLease, LiveProviderRuntimeHandle/DispatchSource, and ordinary CLI run/sweep seams; then implement authenticated bridge and provenance checks in isolated worktree.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T05:28:04+00:00",
+  "updated_at": "2026-09-29T05:28:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -63,3 +63,8 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
 - 2026-09-29T05:26:18+00:00: Claimed by ar1513-lease-bridge-luna56.
 
 - 2026-09-29T05:28:04+00:00: Heartbeat by ar1513-lease-bridge-luna56.
+
+- 2026-09-29T05:28:13+00:00: Heartbeat/setup audit: authoritative task state is
+  agent-systems-benchmark-state; protected product main f92c2e941913129d7db50480f71e8361a0d43a0c.
+  Product main is dirty with unrelated changes, so it will not be reused. AR-1512 a4064ab is review
+  evidence only; starting fresh isolated bridge worktree.
