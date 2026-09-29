@@ -17,7 +17,6 @@
   "summary": "Repair AR-1308 fixture/evidence for reproducible development runs.",
   "task_revision": 1,
   "title": "AR-1308 QEMU fixture repair",
-  "task_revision": 1,
   "updated_at": "2026-09-29T18:25:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1516-ar1308-qemu-fixture-evidence-repair"
 }
