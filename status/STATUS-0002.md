@@ -203,7 +203,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1513](../tasks/AR-1513-authenticated-lease-dispatch-bridge.md): Authenticated lease-to-live-dispatch bridge | ar1513-repair3-luna56 | Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch. | Commit and push the reviewed AR-1513 repair at the exact signed head, then obtain fresh independent review and exact-head protected checks before any merge. |
+| P0 | [AR-1513](../tasks/AR-1513-authenticated-lease-dispatch-bridge.md): Authenticated lease-to-live-dispatch bridge | ar1513-repair3-luna56 | Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch. | Request fresh independent review of exact pushed head cfed22b; wait for exact-head protected checks, then stop for approval before any merge. |
 
 ### Blocked (81)
 

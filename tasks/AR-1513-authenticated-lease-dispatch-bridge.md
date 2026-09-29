@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
-  "checkpoint_commit": "109f5fad424cb5493e834a0dcec9c09f1aeeae54",
+  "checkpoint_commit": "cfed22bec49eaf9c74abf000ca274b3a353da3a9",
   "claim_expires": "2026-09-29T09:13:27+00:00",
   "depends_on": [
     "AR-1502",
     "AR-1484"
   ],
   "id": "AR-1513",
-  "next_action": "Commit and push the reviewed AR-1513 repair at the exact signed head, then obtain fresh independent review and exact-head protected checks before any merge.",
+  "next_action": "Request fresh independent review of exact pushed head cfed22b; wait for exact-head protected checks, then stop for approval before any merge.",
   "observed_branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
   "observed_dirty": 0,
   "observed_head": "cfed22bec49eaf9c74abf000ca274b3a353da3a9",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 201,
+  "task_revision": 202,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T07:22:56+00:00",
+  "updated_at": "2026-09-29T07:23:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -616,3 +616,9 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
 
 - 2026-09-29T07:22:56+00:00: Recorded command exit 0; command argv SHA-256
   530ad0fd2fa5a848ab262df94ac62be28bf16f9846cd6cdd21f24b87c577da82.
+
+- 2026-09-29T07:23:25+00:00: Repair committed and pushed at exact head
+  cfed22bec49eaf9c74abf000ca274b3a353da3a9. SSH signature verified (ED25519 key
+  SHA256:a36V6yPvRZyxnQ2113tiA/MlHt7mPfJEXAGByBXVkuE) with matching DCO Signed-off-by. Product tree
+  was clean with no profraw artifacts before push. Full coverage exited 0 at 90.35% line coverage;
+  focused runtime 161 passed/1 ignored, CLI workflow 3 passed, clippy and fmt passed.
