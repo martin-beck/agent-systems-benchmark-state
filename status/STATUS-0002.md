@@ -226,7 +226,13 @@
 
 ## Complete AR inventory
 
-### Blocked (80)
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1367](../tasks/AR-1367-ar1329-production-dispatch-integration.md): AR-1329 production dispatch integration | Unclaimed | Complete production asb run/sweep live-provider dispatch through runtime-owned authenticated acquisition and teardown. | Promote and claim this fresh AR-1329 successor, refresh an isolated worktree to protected main, audit the production run/sweep dispatch seam, and implement only through runtime-owned bridge inputs. |
+
+### Blocked (79)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -269,7 +275,6 @@
 | P0 | [AR-1358](../tasks/AR-1358-runtime-enrollment-cli-dispatch.md): Runtime enrollment CLI dispatch | Unclaimed | Consume runtime-attested enrollment records in asb run and sweep without exposing authority. | Promote after AR-1357 is done, then wire asb run/sweep through runtime-attested enrollment records with fail-closed positive and negative tests. |
 | P0 | [AR-1360](../tasks/AR-1360-runtime-cli-dispatch-consumer.md): Runtime CLI dispatch consumer | Unclaimed | Connect authenticated runtime enrollment receipts to asb run and sweep without exposing authority. | Promote after AR-1359 is done, then implement the production asb run/sweep consumer for authenticated runtime enrollment receipts with fail-closed tests. |
 | P0 | [AR-1361](../tasks/AR-1361-runtime-control-receipt-source.md): Runtime control receipt source | Unclaimed | Provide authenticated control receipt delivery and runtime-owned dispatch composition for CLI consumers. | Promote after AR-1359 is done, then add an authenticated control receipt source and runtime-owned dispatch factory without exposing authority to CLI. |
-| P0 | [AR-1367](../tasks/AR-1367-ar1329-production-dispatch-integration.md): AR-1329 production dispatch integration | Unclaimed | Complete production asb run/sweep live-provider dispatch through runtime-owned authenticated acquisition and teardown. | Promote and claim this fresh AR-1329 successor, refresh an isolated worktree to protected main, audit the production run/sweep dispatch seam, and implement only through runtime-owned bridge inputs. |
 | P0 | [AR-1368](../tasks/AR-1368-control-receipt-runtime-source.md): Control receipt runtime source | Unclaimed | Provide the authenticated runtime-owned ControlClient receipt source required by AR-1329 production dispatch. | Promote and claim the missing runtime-owned ControlClient receipt source, then add the authenticated control operation and production enrollment materialization without exposing authority. |
 | P0 | [AR-1374](../tasks/AR-1374-cli-live-dispatch.md): Production live-provider dispatch | Unclaimed | Consume authenticated runtime receipts in production asb run and sweep dispatch; stale AR-1375 duplicate superseded by AR-1523. | Remain blocked on canonical AR-1523&#x27;s central-orchestrator live AuthoritySource adapter; then requalify run/sweep locally before any publication. |
 | P0 | [AR-1376](../tasks/AR-1376-runtime-live-adapter.md): Runtime-owned live adapter | Unclaimed | Materialize authenticated runtime receipts into opaque live dispatch attempts. | Audit blocker: ControlClient can issue RuntimeReceipt, but no runtime-owned authenticated chain store/source is available to validate the receipt. Do not synthesize a chain or accept caller authority. Create a successor for chain enrollment materialization before adapter implementation. |
@@ -504,4 +509,3 @@
 | P0 | [AR-1379](../tasks/AR-1379-live-dispatch-integration.md): Production live dispatch integration | Unclaimed | Integrate authenticated runtime live dispatch into asb run and sweep. | Monitor rerun of post-merge Rust workflow and remaining six workflows at exact main SHA 1e2c591; release only after all seven terminal SUCCESS. |
 | P0 | [AR-1380](../tasks/AR-1380-runtime-scheduler-composition.md): Runtime scheduler composition for live dispatch | Unclaimed | Compose runtime-owned live attempts for production run and sweep scheduling. | PR #276 force-updated to exact head ab4e60c on protected main 16bca1f9 after policy/platform stale-base failure. Monitor fresh exact-head checks; repair any new failures, merge only green, then verify seven post-merge workflows. |
 | P0 | [AR-1381](../tasks/AR-1381-live-cli-scheduler-wiring.md): Runtime-owned live CLI scheduler wiring | Unclaimed | Wire runtime-owned live scheduler authority into production asb run and sweep. | PR #277 force-updated to exact head 4ba3085 after provenance fixture repair. Monitor fresh exact-head checks; repair any new failures, merge only green, then verify seven post-merge workflows. |
-| P0 | [AR-1383](../tasks/AR-1383-runtime-authority-profile.md): Runtime-owned authority profile materialization | Unclaimed | Materialize runtime-owned live authority profile for authenticated execution. | Independent review complete; full runtime tests 114 passed/1 ignored, check and clippy -D warnings passed. Publish clean exact-head PR through handoffctl, then monitor required CI. |

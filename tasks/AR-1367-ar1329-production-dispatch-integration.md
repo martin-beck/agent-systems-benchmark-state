@@ -18,11 +18,11 @@
   "plan": "../plans/AR-1367-ar1329-production-dispatch-integration.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Complete production asb run/sweep live-provider dispatch through runtime-owned authenticated acquisition and teardown.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "AR-1329 production dispatch integration",
-  "updated_at": "2026-09-24T05:42:25+00:00",
+  "updated_at": "2026-09-29T22:24:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1367-ar1329-production-dispatch-integration"
 }
 ---
@@ -86,3 +86,7 @@ and teardown, and fail-closed denial of unapproved external traffic remain requi
 contracts. Existing live-provider dependency edges describe production integration
 ordering only and must not be used to block local qualification or to claim external
 reachability.
+
+- 2026-09-29T22:24:51+00:00: Dependencies are complete; re-audit the protected-main production
+  dispatch seam against canonical AR-1523 without requiring live provider reachability for
+  development.
