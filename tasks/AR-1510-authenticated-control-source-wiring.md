@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1510-authenticated-control-source-wiring",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-29T03:29:27+00:00",
+  "claim_expires": "2026-09-29T04:03:26+00:00",
   "depends_on": [
     "AR-1505"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated platform control source and production lifecycle wiring required by the authority-provider receipt.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Authenticated control source and production provider wiring",
-  "updated_at": "2026-09-29T03:02:20+00:00",
+  "updated_at": "2026-09-29T03:03:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1510-authenticated-control-source-wiring"
 }
 ---
@@ -74,3 +74,5 @@ test-only façade publication, or weakening native/formal/privacy gates.
 
 - 2026-09-29T03:02:20+00:00: Recorded command exit 0; command argv SHA-256
   3b47dab5249ed79d8d94244ee308b7a7e49c78e7b6a110bb8eafbd47db3a9f11.
+
+- 2026-09-29T03:03:26+00:00: Heartbeat by ar1510-control-source-luna56.
