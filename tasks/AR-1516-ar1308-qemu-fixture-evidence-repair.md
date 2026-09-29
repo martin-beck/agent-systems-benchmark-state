@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair AR-1308 fixture/evidence for reproducible development runs.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "AR-1308 QEMU fixture repair",
-  "updated_at": "2026-09-29T18:30:22+00:00",
+  "updated_at": "2026-09-29T18:31:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1516-ar1308-qemu-fixture-evidence-repair"
 }
 ---
@@ -32,3 +32,6 @@ qualification, or make reviewed seed material a development prerequisite.
   fixture/evidence repair.
 
 - 2026-09-29T18:30:22+00:00: Claimed by coordinator-ar1516-qemu-repair-20260929.
+
+- 2026-09-29T18:31:17+00:00: Recorded command exit 0; command argv SHA-256
+  e1fcf0bdd256d379165cfe69378cd2e293f1c34b1c61233c53c08619ced73f15.
