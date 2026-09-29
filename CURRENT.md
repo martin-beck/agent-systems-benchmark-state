@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1508](tasks/AR-1508-platform-owned-authority-provider.md): Platform-owned authority provider | Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material. | PR #384 open at exact head 2c70f811; obtain independent review and terminal hosted checks. GitHub initially reports mergeable=CONFLICTING despite remote main exactly f92c2e9 and branch ancestry clean; re-query before any merge. | - |
+| P0 | [AR-1508](tasks/AR-1508-platform-owned-authority-provider.md): Platform-owned authority provider | Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material. | PR #384 open at exact head 2c70f811; obtain independent review and terminal hosted checks. GitHub initially reports mergeable=CONFLICTING despite remote main exactly f92c2e9 and branch ancestry clean; re-query before any merge. | ar1508-provider-luna56 |
 
 ## Blocked
 

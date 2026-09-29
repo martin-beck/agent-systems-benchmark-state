@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1508-platform-owned-authority-provider",
   "checkpoint_commit": "2c70f81100ca0c4e911ec5d6c02736182b101a3b",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T11:26:36+00:00",
   "depends_on": [
     "AR-1473",
     "AR-1474",
@@ -17,15 +17,15 @@
   "observed_branch": "feature/ar-1508-platform-owned-authority-provider",
   "observed_dirty": 0,
   "observed_head": "2c70f81100ca0c4e911ec5d6c02736182b101a3b",
-  "owner": "",
+  "owner": "ar1508-provider-luna56",
   "plan": "../plans/AR-1508-platform-owned-authority-provider.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material.",
-  "task_revision": 62,
+  "task_revision": 63,
   "title": "Platform-owned authority provider",
-  "updated_at": "2026-09-29T10:54:44+00:00",
+  "updated_at": "2026-09-29T10:56:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1508-platform-owned-authority-provider"
 }
 ---
@@ -245,3 +245,5 @@ fixed-path authority, weakening formal/privacy/native gates.
   from f92c2e9 to 47329e35 (AR-1513 merge), so PR #384 reports DIRTY/CONFLICTING with no hosted
   checks yet. Rebase onto current protected main and repeat independent review/exact-head hosted
   checks before merge; no merge or force update attempted.
+
+- 2026-09-29T10:56:36+00:00: Claimed by ar1508-provider-luna56.
