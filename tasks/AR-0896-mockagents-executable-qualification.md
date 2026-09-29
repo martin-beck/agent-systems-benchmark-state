@@ -10,17 +10,17 @@
   "id": "AR-0896",
   "next_action": "Remain blocked until the complete pinned MockAgents hostile qualification is implemented and rerun: tool/tool-result, cancellation/backpressure, outbound-denial, repeated-clean-state, and executable arm64 QEMU cases with deterministic evidence. Do not select MockAgents or advance AR-0890.",
   "observed_branch": "test/mockagents-executable-qualification",
-  "observed_dirty": 2,
-  "observed_head": "3f1de4106adf9ad6c34759638d70e9001709ab0a",
+  "observed_dirty": 0,
+  "observed_head": "eb68fd8cba77735efccc168ebb18e8e56581bcfe",
   "owner": "ar0896-mockagents-repair-luna56",
   "plan": "../plans/AR-0896.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change.",
-  "task_revision": 68,
+  "task_revision": 69,
   "title": "Qualify the pinned MockAgents executable",
-  "updated_at": "2026-09-29T12:51:53+00:00",
+  "updated_at": "2026-09-29T12:52:08+00:00",
   "worktree_key": "agent-systems-benchmark-mockagents-executable-qualification"
 }
 ---
