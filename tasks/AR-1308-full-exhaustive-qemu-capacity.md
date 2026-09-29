@@ -7,7 +7,7 @@
     "AR-1304"
   ],
   "id": "AR-1308",
-  "next_action": "Obtain the exact reviewed full-exhaustive seed digest b3383756b5cd357f58d923216effea33be35b793034de321c3c9ce460ece4b28 through AR-1465, then rerun signed preflight and the full 7200-second qualification with v9-style self-contained Git/JDK/TLC inputs. Do not substitute the diagnostic seed or claim qualification.",
+  "next_action": "Continue development qualification with any locally generated disposable seed and record qualification_authorized=false. Treat AR-1464/AR-1465 as formal-only archival work; do not block development or customer-facing mock/integration work on their seed. Formal/publication qualification remains a separate optional path requiring its own reviewed inputs.",
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
@@ -16,10 +16,10 @@
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Unsigned-development fixture v9 uses the exact AR-1307 head with self-contained Git metadata, self-contained JDK, preloaded TLC, and repaired state bind. Preflight passes; bounded network-disabled QEMU reaches FULL_EXHAUSTIVE_TRANSIENT_RC=0 and starts the offline TLC process without provenance or java.security errors. The bounded window ends before full exhaustive attestation, so no formal qualification is claimed.",
-  "task_revision": 590,
+  "summary": "Unsigned-development capacity fixture is complete and no longer depends on a reviewed seed digest: the validator accepts locally generated seeds for this explicit diagnostic profile, while signed/formal validation remains digest-pinned. v9 fixture repairs cover state layout, exact-head Git provenance, offline TLC, and self-contained JDK; bounded boot reached transient RC=0 and launched TLC.",
+  "task_revision": 591,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T16:10:53+00:00",
+  "updated_at": "2026-09-29T16:11:04+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1812,3 +1812,7 @@ must report `qualification_authorized: false`.
   reviewed seed digests; formal profile remains separate.
 
 - 2026-09-29T16:10:53+00:00: Claimed by coordinator-dev-seed-policy-20260929.
+
+- 2026-09-29T16:11:04+00:00: Development policy updated in signed+DCO state commit 7f576c8ba: seed
+  digests are not required for unsigned-development. Focused validator tests pass 23/23, including
+  generated-seed acceptance and signed-profile rejection. No formal or release evidence is claimed.
