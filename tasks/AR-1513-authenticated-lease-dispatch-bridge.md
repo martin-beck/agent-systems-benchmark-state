@@ -10,17 +10,17 @@
   "id": "AR-1513",
   "next_action": "Commit and push the reviewed AR-1513 repair at the exact signed head, then obtain fresh independent review and exact-head protected checks before any merge.",
   "observed_branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
-  "observed_dirty": 5,
-  "observed_head": "109f5fad424cb5493e834a0dcec9c09f1aeeae54",
+  "observed_dirty": 0,
+  "observed_head": "cfed22bec49eaf9c74abf000ca274b3a353da3a9",
   "owner": "ar1513-repair3-luna56",
   "plan": "../plans/AR-1513-authenticated-lease-dispatch-bridge.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 197,
+  "task_revision": 198,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T07:21:50+00:00",
+  "updated_at": "2026-09-29T07:22:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
