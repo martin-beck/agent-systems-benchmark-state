@@ -29,9 +29,17 @@ DEFAULT_SWAP_MAX = "3G"
 # consume the physical-memory contract by accident.
 DEFAULT_ADDRESS_SPACE_MAX = "8G"
 # Formal runtime state is deliberately kept on the project's approved
-# second-disk root.  Source checkouts may live in disposable CI paths, but
+# second-disk root. Source checkouts may live in disposable CI paths, but
 # queue, temporary JVM state and evidence must never silently follow them.
-APPROVED_RUNTIME_ROOT = Path("/srv/data/projects") / ".asb-tlc"
+_APPROVED_PROJECT_ROOT = Path("/srv/data/projects")
+_configured_runtime_root = Path(
+    os.environ.get("TLC_RUNTIME_ROOT", str(_APPROVED_PROJECT_ROOT / ".asb-tlc"))
+)
+if _configured_runtime_root.is_symlink():
+    raise RuntimeError("TLC_RUNTIME_ROOT must not be a symbolic link")
+APPROVED_RUNTIME_ROOT = _configured_runtime_root.resolve()
+if not APPROVED_RUNTIME_ROOT.is_relative_to(_APPROVED_PROJECT_ROOT):
+    raise RuntimeError("TLC_RUNTIME_ROOT must remain under /srv/data/projects")
 _PROJECT_ROOT = Path(__file__).resolve().parents[1]
 _WORKER_ROOT = APPROVED_RUNTIME_ROOT / (f"worker-{getattr(os, 'getuid', lambda: 0)()}")
 DEFAULT_QUEUE = str(_WORKER_ROOT / "queue")
