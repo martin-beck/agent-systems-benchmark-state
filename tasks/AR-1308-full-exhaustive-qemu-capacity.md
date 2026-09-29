@@ -7,7 +7,7 @@
     "AR-1304"
   ],
   "id": "AR-1308",
-  "next_action": "Repair the development-only guest fixture: create the expected UUID-backed data image and asb user, regenerate the local NoCloud seed, rerun unsigned-development preflight and one bounded network-disabled boot. Do not label it signed qualification or release evidence.",
+  "next_action": "Repair the development-only state data layout so /mnt/asb-data/state exists before bind, rerun unsigned-development preflight and one bounded boot, and record only sanitized markers. No signing or signed authority is required for this diagnostic profile.",
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
@@ -16,10 +16,10 @@
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Unsigned-development diagnostic preflight passes with local seed; bounded network-disabled QEMU boot reaches cloud-init but fixture fails on missing data UUID and asb user. This is development evidence only.",
-  "task_revision": 578,
+  "summary": "Unsigned-development fixture v2 boots network-disabled, creates asb user/data UUID, reaches cloud-init and transient cgroup RC=0, then powers down; state bind path remains incomplete.",
+  "task_revision": 579,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T13:28:53+00:00",
+  "updated_at": "2026-09-29T13:29:04+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1769,3 +1769,7 @@ must report `qualification_authorized: false`.
   absent. No signing was used or required.
 
 - 2026-09-29T13:28:53+00:00: Claimed by coordinator-ar1308-development-v2.
+
+- 2026-09-29T13:29:04+00:00: Diagnostic v2 used local seed d442a24... and no signed
+  commit/tag/authority. QEMU reached FULL_EXHAUSTIVE_TRANSIENT_RC=0 and poweroff; cloud-init
+  reported /mnt/asb-data/state absent, so verify.sh did not run.

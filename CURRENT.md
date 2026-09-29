@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1308](tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Unsigned-development diagnostic preflight passes with local seed; bounded network-disabled QEMU boot reaches cloud-init but fixture fails on missing data UUID and asb user. This is development evidence only. | Repair the development-only guest fixture: create the expected UUID-backed data image and asb user, regenerate the local NoCloud seed, rerun unsigned-development preflight and one bounded network-disabled boot. Do not label it signed qualification or release evidence. | coordinator-ar1308-development-v2 |
+| P0 | [AR-1308](tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Unsigned-development fixture v2 boots network-disabled, creates asb user/data UUID, reaches cloud-init and transient cgroup RC=0, then powers down; state bind path remains incomplete. | Repair the development-only state data layout so /mnt/asb-data/state exists before bind, rerun unsigned-development preflight and one bounded boot, and record only sanitized markers. No signing or signed authority is required for this diagnostic profile. | coordinator-ar1308-development-v2 |
 
 ## Open
 
