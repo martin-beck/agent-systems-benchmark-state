@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Unsigned-development fixture v3 now populates the disposable state volume, creates asb user/data UUID, reaches the bound state checkout, and records transient cgroup RC=0 before poweroff. Formal verify remains intentionally non-qualifying because the network-disabled diagnostic cannot download TLC and therefore produces no attestation.",
-  "task_revision": 584,
+  "task_revision": 585,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T13:44:43+00:00",
+  "updated_at": "2026-09-29T14:15:48+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1793,3 +1793,6 @@ must report `qualification_authorized: false`.
 - 2026-09-29T13:44:43+00:00: Released after fixture v3 repair and bounded diagnostic. State layout
   is repaired and verified; formal qualification remains blocked by intentionally unavailable signed
   AR-1307 inputs and network-disabled verify download.
+
+- 2026-09-29T14:15:48+00:00: Reopening fixture repair for exact-head offline verifier and
+  self-contained JDK corrections.
