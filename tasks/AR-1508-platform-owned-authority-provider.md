@@ -13,7 +13,7 @@
     "AR-1505"
   ],
   "id": "AR-1508",
-  "next_action": "Independent exact-head review and protected merge workflow for signed head 2c70f811; hosted exact-head checks must be observed before merge.",
+  "next_action": "PR #384 open at exact head 2c70f811; obtain independent review and terminal hosted checks. GitHub initially reports mergeable=CONFLICTING despite remote main exactly f92c2e9 and branch ancestry clean; re-query before any merge.",
   "observed_branch": "feature/ar-1508-platform-owned-authority-provider",
   "observed_dirty": 0,
   "observed_head": "2c70f81100ca0c4e911ec5d6c02736182b101a3b",
@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Platform-owned authority provider",
-  "updated_at": "2026-09-29T10:52:59+00:00",
+  "updated_at": "2026-09-29T10:53:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1508-platform-owned-authority-provider"
 }
 ---
@@ -225,3 +225,9 @@ fixed-path authority, weakening formal/privacy/native gates.
 
 - 2026-09-29T10:52:59+00:00: Recorded command exit 0; command argv SHA-256
   f5a589cdf7ff0b0c4aa322d6e6d65fbb05fd91306ad84af64030c0948de4ef59.
+
+- 2026-09-29T10:53:38+00:00: Published signed candidate branch and PR #384. Remote main resolves to
+  protected AR-1505 merge f92c2e941; candidate is exactly three commits descendant with clean
+  merge-base and no worktree changes. GitHub PR API currently reports OPEN, head 2c70f811, no checks
+  yet, mergeable CONFLICTING; this appears GitHub mergeability lag because remote main is the
+  requested f92c2e9 and git confirms f92c2e9 is ancestor. No merge attempted.
