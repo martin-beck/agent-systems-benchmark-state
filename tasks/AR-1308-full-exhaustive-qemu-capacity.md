@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "checkpoint_commit": "d6e175abe060e6408977884c9c06c69a3a738b5b",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T19:11:39+00:00",
   "depends_on": [
     "AR-1304"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "d6e175abe060e6408977884c9c06c69a3a738b5b",
-  "owner": "",
+  "owner": "coordinator-ar1308-evidence-update-20260929",
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Development QEMU fixture is bootable and offline-JAR verified, but full-exhaustive TLC produced no terminal result within 1200 seconds and was terminated; no qualification is claimed.",
-  "task_revision": 693,
+  "task_revision": 694,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T19:01:36+00:00",
+  "updated_at": "2026-09-29T19:01:39+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -2112,3 +2112,5 @@ must report `qualification_authorized: false`.
 
 - 2026-09-29T19:01:36+00:00: Resume briefly to incorporate AR-1516 terminal evidence and route
   capacity decision to AR-1309.
+
+- 2026-09-29T19:01:39+00:00: Claimed by coordinator-ar1308-evidence-update-20260929.
