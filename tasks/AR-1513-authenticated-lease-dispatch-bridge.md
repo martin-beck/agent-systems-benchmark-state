@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
-  "checkpoint_commit": "fd6e2ea58e066642ce441e40a75eb7a092d22139",
+  "checkpoint_commit": "4807e9692a4e8f2bc22c647298878ec957f58304",
   "claim_expires": "2026-09-29T10:42:28+00:00",
   "depends_on": [
     "AR-1502",
     "AR-1484"
   ],
   "id": "AR-1513",
-  "next_action": "Fresh review of fd6e2ea: P1 distinct alternate-egress/allowlist binding remains mismatched, P1 ordinary CLI run/sweep still does not invoke owner-lease bridge, and hosted coverage is 87.99% (reviewer saw 89.87%) below 90%. Continue repair before merge.",
+  "next_action": "Fresh independent review and exact-head CI for signed 4807e96; verify hosted workspace coverage and no profraw before approval.",
   "observed_branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
   "observed_dirty": 0,
   "observed_head": "4807e9692a4e8f2bc22c647298878ec957f58304",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 315,
+  "task_revision": 316,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T08:42:28+00:00",
+  "updated_at": "2026-09-29T08:42:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -901,3 +901,14 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
   d04aa803a9fcb854b247572f9b417fd1935a57ca978bb887d2e7c188e99db043.
 
 - 2026-09-29T08:42:28+00:00: Heartbeat by ar1513-repair4-luna56.
+
+- 2026-09-29T08:42:43+00:00: Follow-up repair pushed exact signed DCO 4807e96. Runtime owner
+  enrollment now takes the resolver-authenticated concrete allowlist identity, so alternate egress
+  cannot collapse to receipt.target; added a negative target-digest assertion and canonical
+  policy/egress tests. Production run_with_runtime_control_bootstrap is exercised for both run and
+  sweep entry shapes before dispatch/lease failure, proving the bridge call path and fail-closed
+  behavior; local/mock remains separate. Coverage diagnostics: clean exact-head check_coverage was
+  blocked before report by cargo-llvm-cov leaving default_*.profraw in crates/asb-cli (exit 1 at
+  08:30/08:31); capability child fallback now uses /tmp external sink. All profraw removed
+  afterward. Focused runtime 164 pass/1 ignored, CLI 131 pass, clippy and fmt pass. Remote branch
+  exactly 4807e96, tree clean. Hosted exact-head coverage/review still required.
