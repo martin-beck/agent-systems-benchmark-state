@@ -199,11 +199,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1513](../tasks/AR-1513-authenticated-lease-dispatch-bridge.md): Authenticated lease-to-live-dispatch bridge | Unclaimed | Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch. | Promote after AR-1512 review evidence is reconciled; replace public self-authenticated owner material with authenticated issuance and wire the lease to live dispatch. |
+| P0 | [AR-1513](../tasks/AR-1513-authenticated-lease-dispatch-bridge.md): Authenticated lease-to-live-dispatch bridge | ar1513-lease-bridge-luna56 | Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch. | Promote after AR-1512 review evidence is reconciled; replace public self-authenticated owner material with authenticated issuance and wire the lease to live dispatch. |
 
 ### Blocked (81)
 

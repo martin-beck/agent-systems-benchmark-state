@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1513](tasks/AR-1513-authenticated-lease-dispatch-bridge.md): Authenticated lease-to-live-dispatch bridge | Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch. | Promote after AR-1512 review evidence is reconciled; replace public self-authenticated owner material with authenticated issuance and wire the lease to live dispatch. | - |
+| P0 | [AR-1513](tasks/AR-1513-authenticated-lease-dispatch-bridge.md): Authenticated lease-to-live-dispatch bridge | Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch. | Promote after AR-1512 review evidence is reconciled; replace public self-authenticated owner material with authenticated issuance and wire the lease to live dispatch. | ar1513-lease-bridge-luna56 |
 
 ## Blocked
 
