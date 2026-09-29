@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1390](tasks/AR-1390-runtime-live-acquisition-cli.md): Runtime live acquisition and CLI bridge | Audit complete: normal CLI bridge is blocked by the missing authenticated platform authority deployment adapter; no safe product mutation was made. | Wait for AR-1523 platform authority deployment adapter to provide the runtime-owned opaque source; then re-audit and implement the ordinary run/sweep bridge with exact-head gates. | coordinator-ar1390-live-dispatch-20260929 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -59,6 +53,7 @@ Never edit this file directly.
 | P0 | [AR-1382](tasks/AR-1382-authenticated-live-execution-source.md): Authenticated live execution source | Materialize authenticated runtime-owned live execution for asb run and sweep. | Promote and claim this dependency-valid authenticated execution-source successor, then implement runtime-owned scheduler materialization. | - |
 | P0 | [AR-1386](tasks/AR-1386-live-cli-dispatch-integration.md): Production live CLI dispatch integration | Integrate authenticated runtime live dispatch into production asb run and sweep. | Refresh the declared isolated worktree from protected main, integrate the authenticated runtime live dispatch source into production asb run and sweep, and add local provider-mock plus fail-closed egress/teardown tests. | - |
 | P0 | [AR-1387](tasks/AR-1387-runtime-control-cli-bridge.md): Authenticated runtime-control CLI bridge | Bridge authenticated runtime/control bootstrap state into the production CLI dispatch path. | Resume AR-1391 runtime-control bootstrap constructor; AR-1387 remains blocked pending that successor and has no safe in-scope product diff. | - |
+| P0 | [AR-1390](tasks/AR-1390-runtime-live-acquisition-cli.md): Runtime live acquisition and CLI bridge | Audit complete: normal CLI bridge is blocked by the missing authenticated platform authority deployment adapter; no safe product mutation was made. | Wait for AR-1523 platform authority deployment adapter to provide the runtime-owned opaque source; then re-audit and implement the ordinary run/sweep bridge with exact-head gates. | - |
 | P0 | [AR-1391](tasks/AR-1391-runtime-control-bootstrap-constructor.md): Runtime control bootstrap constructor | Materialize authenticated runtime live authority into an opaque source without caller injection. | Claim the pre-bound isolated worktree, implement the runtime/control-owned authenticated bootstrap constructor, and publish a signed PR. | - |
 | P0 | [AR-1470](tasks/AR-1470-runtime-certificate-chain-enrollment.md): Runtime certificate-chain enrollment materialization | Materialize runtime-owned certificate-chain enrollment authority for live dispatch. | Protected-main setup is not current: AR worktree is clean but 86 commits behind origin/main 7167e3d; refresh via handoffctl run, then implement the narrow runtime-owned authenticated enrollment source. Existing RuntimeAuthorityRecord holds only public digests/opaque chain metadata; no private bootstrap authority or caller-safe issuer is available. Do not fabricate authority. | - |
 | P0 | [AR-1481](tasks/AR-1481-runtime-owned-cli-entry-bootstrap.md): Runtime-owned CLI entry bootstrap | Wire runtime-owned authenticated dispatch into the ordinary CLI entry path. | Promote and claim, then inspect the protected-main entrypoint and runtime/control bootstrap inputs. | - |

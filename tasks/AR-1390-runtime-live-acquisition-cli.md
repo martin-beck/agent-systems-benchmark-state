@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1390-runtime-live-acquisition-cli",
   "checkpoint_commit": "10bffbf015bd7ca78d8c0d18f04cf0190195e933",
-  "claim_expires": "2026-09-29T23:21:42+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1388",
     "AR-1385",
@@ -18,15 +18,15 @@
   "observed_branch": "feature/ar-1390-runtime-live-acquisition-cli",
   "observed_dirty": 0,
   "observed_head": "bf89a45ddd71af96e6d4b6954320e199e147f83e",
-  "owner": "coordinator-ar1390-live-dispatch-20260929",
+  "owner": "",
   "plan": "../plans/AR-1390-runtime-live-acquisition-cli.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Audit complete: normal CLI bridge is blocked by the missing authenticated platform authority deployment adapter; no safe product mutation was made.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Runtime live acquisition and CLI bridge",
-  "updated_at": "2026-09-29T21:22:02+00:00",
+  "updated_at": "2026-09-29T21:22:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1390-runtime-live-acquisition-cli"
 }
 ---
@@ -181,3 +181,6 @@ reachability.
 - 2026-09-29T21:22:02+00:00: Reconciled current main and declared worktree. Existing runtime/control
   helpers remain injection-only; no production source exists. Route to AR-1523 without weakening
   authority or live-provider gates.
+
+- 2026-09-29T21:22:05+00:00: Release ownerless after audit; AR-1523 owns the missing platform source
+  needed before this CLI bridge can proceed.
