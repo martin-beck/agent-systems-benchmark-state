@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 384,
+  "task_revision": 385,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T09:37:40+00:00",
+  "updated_at": "2026-09-29T09:38:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -1086,3 +1086,6 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
 - 2026-09-29T09:37:40+00:00: Review approval conditional satisfied: authenticated materialization,
   canonical policy/allowlist and alternate-egress, positive run/sweep bridge, signed DCO, clean
   tree. Required hosted checks including Policy/Coverage, Rust, aarch64, formal and AWQ all pass.
+
+- 2026-09-29T09:38:33+00:00: Recorded command exit 0; command argv SHA-256
+  4ad7393eed9424f64cda31a6c62dda01e93853e39032e398efd990cea46c850e.
