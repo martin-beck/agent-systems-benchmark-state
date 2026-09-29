@@ -10,7 +10,7 @@
   "id": "AR-1512",
   "next_action": "Implement owner-side material contract/store and ordinary runtime caller from clean protected-main worktree.",
   "observed_branch": "feature/ar-1512-process-owner-material-contract",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "f92c2e941913129d7db50480f71e8361a0d43a0c",
   "owner": "ar1512-process-owner-luna56",
   "plan": "../plans/AR-1512-process-owner-material-contract.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated process-owner material source and ordinary CLI/control caller needed to consume runtime authority.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Authenticated process-owner material contract",
-  "updated_at": "2026-09-29T05:07:23+00:00",
+  "updated_at": "2026-09-29T05:07:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1512-process-owner-material-contract"
 }
 ---
