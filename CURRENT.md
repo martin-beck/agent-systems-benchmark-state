@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1508](tasks/AR-1508-platform-owned-authority-provider.md): Platform-owned authority provider | Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material. | Run full exact-head product gates on signed commits 7306f83 and 0135650; obtain independent review before publication. | ar1508-provider-luna56 |
+| P0 | [AR-1508](tasks/AR-1508-platform-owned-authority-provider.md): Platform-owned authority provider | Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material. | Independent exact-head review and protected merge workflow for signed head 2c70f811; hosted exact-head checks must be observed before merge. | ar1508-provider-luna56 |
 
 ## Blocked
 

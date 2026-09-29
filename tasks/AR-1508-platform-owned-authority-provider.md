@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1508-platform-owned-authority-provider",
-  "checkpoint_commit": "0135650a2f54c3a6e79ad3d345c03c4ebc43d35d",
+  "checkpoint_commit": "2c70f81100ca0c4e911ec5d6c02736182b101a3b",
   "claim_expires": "2026-09-29T11:13:46+00:00",
   "depends_on": [
     "AR-1473",
@@ -13,7 +13,7 @@
     "AR-1505"
   ],
   "id": "AR-1508",
-  "next_action": "Run full exact-head product gates on signed commits 7306f83 and 0135650; obtain independent review before publication.",
+  "next_action": "Independent exact-head review and protected merge workflow for signed head 2c70f811; hosted exact-head checks must be observed before merge.",
   "observed_branch": "feature/ar-1508-platform-owned-authority-provider",
   "observed_dirty": 0,
   "observed_head": "2c70f81100ca0c4e911ec5d6c02736182b101a3b",
@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Platform-owned authority provider",
-  "updated_at": "2026-09-29T10:50:50+00:00",
+  "updated_at": "2026-09-29T10:51:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1508-platform-owned-authority-provider"
 }
 ---
@@ -203,3 +203,13 @@ fixed-path authority, weakening formal/privacy/native gates.
 
 - 2026-09-29T10:50:50+00:00: Recorded command exit 0; command argv SHA-256
   b49a90ee600c1023cee9ee9f9e8a4f9a06c53eef8c48d3932d88e482126c7c01.
+
+- 2026-09-29T10:51:24+00:00: Final exact-head candidate audit: signed commits 7306f830, 013565032,
+  and 2c70f811 are clean, DCO-matching, and based on protected AR-1505 merge f92c2e941. Diff is
+  limited to README, runtime live_service provider/materialization contract, and platform authority
+  handoff docs; no asb-tui, credentials, fixed-path discovery, PATH, or synthetic/live provider
+  changes. Gates pass: cargo fmt --all --check; cargo clippy --locked --workspace --all-targets --
+  -D warnings; cargo test --locked --workspace (155 runtime tests, all workspace tests pass; one
+  initial CLI state-root collision reran serially and passed); env RUSTDOCFLAGS=-D warnings cargo
+  doc --locked --workspace --no-deps; cargo build --locked --workspace --release. Independent review
+  repaired the missing tool-pin-to-claim comparison before this final head.
