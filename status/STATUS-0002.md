@@ -203,7 +203,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0514](../tasks/AR-0514-replay-openhands.md): Qualify OpenHands replay | ar0514-repair-luna56 | Qualify replay conformance for OpenHands. | Recover exact approved OpenHands environment digest 63727569 from immutable provenance; otherwise schedule pin-reproduction repair before native replay. |
+| P0 | [AR-0514](../tasks/AR-0514-replay-openhands.md): Qualify OpenHands replay | ar0514-repair-luna56 | Qualify replay conformance for OpenHands. | Independent review and exact-head CI of 3ccee911; exact approved OpenHands environment digest remains unrecoverable, so native replay stays blocked pending AR-0521 pin-reproduction repair. |
 
 ### Blocked (80)
 

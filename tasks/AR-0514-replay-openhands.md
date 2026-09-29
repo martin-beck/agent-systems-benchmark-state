@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/replay-openhands",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "3ccee91118b3a43eda123b0107d04ea4c2e3d80a",
   "claim_expires": "2026-09-29T11:58:48+00:00",
   "depends_on": [
     "AR-0309",
@@ -10,7 +10,7 @@
     "AR-0401"
   ],
   "id": "AR-0514",
-  "next_action": "Recover exact approved OpenHands environment digest 63727569 from immutable provenance; otherwise schedule pin-reproduction repair before native replay.",
+  "next_action": "Independent review and exact-head CI of 3ccee911; exact approved OpenHands environment digest remains unrecoverable, so native replay stays blocked pending AR-0521 pin-reproduction repair.",
   "observed_branch": "feature/replay-openhands",
   "observed_dirty": 0,
   "observed_head": "3ccee91118b3a43eda123b0107d04ea4c2e3d80a",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for OpenHands.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Qualify OpenHands replay",
-  "updated_at": "2026-09-29T10:02:37+00:00",
+  "updated_at": "2026-09-29T10:02:54+00:00",
   "worktree_key": "agent-systems-benchmark-replay-openhands"
 }
 ---
@@ -141,3 +141,11 @@ Qualify OpenHands record/replay, network denial, parity, retries, tool calls, ca
 
 - 2026-09-29T10:02:37+00:00: Recorded command exit 1; command argv SHA-256
   58efd0affcb2c9f32aaf8ca3f4bc33231fb90a3629aaa22f553e12fb696e2042.
+
+- 2026-09-29T10:02:54+00:00: Bounded repair committed as 3ccee91118b3a43eda123b0107d04ea4c2e3d80a
+  (SSH-signed, DCO): retained the prior ignored OpenHands replay fixture and added provider-free
+  local mock strict-replay qualification. Focused cargo test passes: 2 deterministic tests passed, 1
+  native OpenHands test remains intentionally ignored because exact CPython/wheel/site-packages
+  provenance is absent. Earlier five digest recipes remain non-matching; no override, credentials,
+  native replay, or external provider effect. Exact digest is still blocked; AR-0521 must publish an
+  immutable environment bundle/verifier before native replay.
