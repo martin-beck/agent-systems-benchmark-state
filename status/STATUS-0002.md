@@ -201,7 +201,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1511](../tasks/AR-1511-runtime-control-authority-issuer.md): Runtime/control authority issuer and capability source | ar1511-authority-issuer-luna56 | Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch. | Promote after AR-1510 blocker evidence is reconciled; implement the runtime/control authority issuer and capability contract from protected main. |
+| P0 | [AR-1511](../tasks/AR-1511-runtime-control-authority-issuer.md): Runtime/control authority issuer and capability source | ar1511-authority-issuer-luna56 | Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch. | Clean isolated worktree is ready at protected main f92c2e941913129d7db50480f71e8361a0d43a0c; audit existing owner/enrollment/certificate/runtime contracts and define issuer gap. |
 
 ### Blocked (79)
 

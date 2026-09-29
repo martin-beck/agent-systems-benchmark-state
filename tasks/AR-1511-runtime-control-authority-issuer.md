@@ -8,7 +8,7 @@
     "AR-1484"
   ],
   "id": "AR-1511",
-  "next_action": "Promote after AR-1510 blocker evidence is reconciled; implement the runtime/control authority issuer and capability contract from protected main.",
+  "next_action": "Clean isolated worktree is ready at protected main f92c2e941913129d7db50480f71e8361a0d43a0c; audit existing owner/enrollment/certificate/runtime contracts and define issuer gap.",
   "observed_branch": "feature/ar-1511-runtime-control-authority-issuer",
   "observed_dirty": 0,
   "observed_head": "f92c2e941913129d7db50480f71e8361a0d43a0c",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T03:11:57+00:00",
+  "updated_at": "2026-09-29T03:12:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
@@ -71,3 +71,8 @@ production authority, or weakening fail-closed/native/formal gates.
   bf7d0931c592ad3af8a21d778a3e4043e3ab3385d3765e4101138a38171673af.
 
 - 2026-09-29T03:11:57+00:00: Heartbeat by ar1511-authority-issuer-luna56.
+
+- 2026-09-29T03:12:00+00:00: Setup audit: initial worktree command targeted the state checkout and
+  failed with invalid reference; explicit git -C product worktree creation then succeeded. Clean
+  branch feature/ar-1511-runtime-control-authority-issuer is at protected main
+  f92c2e941913129d7db50480f71e8361a0d43a0c with no product changes.
