@@ -24,9 +24,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve private live authority from authenticated control enrollment without caller injection.",
-  "task_revision": 137,
+  "task_revision": 138,
   "title": "Control-owned private authority materializer",
-  "updated_at": "2026-09-29T12:30:59+00:00",
+  "updated_at": "2026-09-29T12:32:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1392-control-authority-materializer"
 }
 ---
@@ -457,3 +457,6 @@ reachability.
   origin/main 47329e35. Signed+DCO empty product commit 0ea9671; diff against current main is empty.
   Preserved PR #339 head 78ab92b, merge 3cd6a5a, and Repository Quality failure 36279474851 as
   immutable evidence. No product, authority, provider, or asb-tui changes.
+
+- 2026-09-29T12:32:09+00:00: Recorded command exit 0; command argv SHA-256
+  470508dc7a172b72f7538dcbf6f1a8824b673ad0714e9e24e8a48392c566e7c6.
