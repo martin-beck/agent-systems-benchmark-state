@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1506](tasks/AR-1506-runtime-platform-launcher-integration.md): Runtime platform launcher integration | Connect the merged authenticated platform authority/bootstrap protocol to production ASB process startup and ordinary CLI dispatch. | Promote after dependency verification; implement the runtime-owned platform launcher/session and wire ordinary asb-cli dispatch to an opaque authenticated source. | - |
+| P0 | [AR-1506](tasks/AR-1506-runtime-platform-launcher-integration.md): Runtime platform launcher integration | Connect the merged authenticated platform authority/bootstrap protocol to production ASB process startup and ordinary CLI dispatch. | Promote after dependency verification; implement the runtime-owned platform launcher/session and wire ordinary asb-cli dispatch to an opaque authenticated source. | ar1506-launcher-luna56 |
 
 ## Blocked
 

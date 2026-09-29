@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1506-runtime-platform-launcher-integration",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T03:48:47+00:00",
   "depends_on": [
     "AR-1473",
     "AR-1474",
@@ -17,15 +17,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "ar1506-launcher-luna56",
   "plan": "../plans/AR-1506-runtime-platform-launcher-integration.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Connect the merged authenticated platform authority/bootstrap protocol to production ASB process startup and ordinary CLI dispatch.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Runtime platform launcher integration",
-  "updated_at": "2026-09-29T01:47:30+00:00",
+  "updated_at": "2026-09-29T01:48:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1506-runtime-platform-launcher-integration"
 }
 ---
@@ -57,3 +57,5 @@ production evidence.
 
 - 2026-09-29T01:47:30+00:00: Dependencies AR-1473, AR-1474, AR-1480, AR-1484, AR-1485, AR-1502, and
   AR-1505 verified done; begin production launcher integration.
+
+- 2026-09-29T01:48:47+00:00: Claimed by ar1506-launcher-luna56.
