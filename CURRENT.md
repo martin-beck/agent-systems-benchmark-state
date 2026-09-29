@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1511](tasks/AR-1511-runtime-control-authority-issuer.md): Runtime/control authority issuer and capability source | Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch. | Independent exact-head review assigned for clean ac9306453dc97a100a57befcba0c8456b67a23db against f92c2e9; hold PR/push until review result. | - |
+| P0 | [AR-1511](tasks/AR-1511-runtime-control-authority-issuer.md): Runtime/control authority issuer and capability source | Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch. | Independent exact-head review assigned for clean ac9306453dc97a100a57befcba0c8456b67a23db against f92c2e9; hold PR/push until review result. | ar1511-final-repair-luna56 |
 
 ## Blocked
 

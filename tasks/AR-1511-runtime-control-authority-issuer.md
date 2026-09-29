@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1511-runtime-control-authority-issuer",
   "checkpoint_commit": "ac9306453dc97a100a57befcba0c8456b67a23db",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T06:02:32+00:00",
   "depends_on": [
     "AR-1502",
     "AR-1484"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1511-runtime-control-authority-issuer",
   "observed_dirty": 0,
   "observed_head": "ac9306453dc97a100a57befcba0c8456b67a23db",
-  "owner": "",
+  "owner": "ar1511-final-repair-luna56",
   "plan": "../plans/AR-1511-runtime-control-authority-issuer.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 98,
+  "task_revision": 99,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T04:02:26+00:00",
+  "updated_at": "2026-09-29T04:02:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
@@ -358,3 +358,5 @@ production authority, or weakening fail-closed/native/formal gates.
 - 2026-09-29T04:02:26+00:00: Independent exact-head review found two P1s: materialize_provisioner
   remains test-only and local cancellation digest differs from control-issued fence; preserve
   ac93064 and assign final repair.
+
+- 2026-09-29T04:02:32+00:00: Claimed by ar1511-final-repair-luna56.
