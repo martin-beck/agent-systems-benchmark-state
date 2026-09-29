@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair ASB development-runtime reconciliation between digest-only enrollment and helper invocation.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Reconciled development auth handoff runtime",
-  "updated_at": "2026-09-29T13:11:22+00:00",
+  "updated_at": "2026-09-29T13:11:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1514-runtime-auth-reconciliation"
 }
 ---
@@ -45,3 +45,6 @@ side of that repair.
   and this task must not modify asb-tui.
 
 - 2026-09-29T13:11:22+00:00: Claimed by ar1514-reconciliation-luna56.
+
+- 2026-09-29T13:11:41+00:00: Recorded command exit 0; command argv SHA-256
+  27fa0990588e4a6f2da5aff610eb5fe7d433c883022dbd2766eba32f8f6699d3.
