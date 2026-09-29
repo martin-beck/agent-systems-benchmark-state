@@ -219,11 +219,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1526](../tasks/AR-1526.md): First-customer local/replay qualification | Unclaimed | Qualify the merged ASB production-shaped local/mock and strict-replay customer path with sanitized evidence. | Promote after dependency verification; run the disposable first-customer-style local/mock and strict-replay qualification on exact protected main. |
+| P0 | [AR-1526](../tasks/AR-1526.md): First-customer local/replay qualification | coordinator-ar1526-first-customer-20260930 | Qualify the merged ASB production-shaped local/mock and strict-replay customer path with sanitized evidence. | Promote after dependency verification; run the disposable first-customer-style local/mock and strict-replay qualification on exact protected main. |
 
 ### Blocked (78)
 
