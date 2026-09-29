@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 174,
+  "task_revision": 175,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:18:09+00:00",
+  "updated_at": "2026-09-29T00:18:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -701,3 +701,6 @@ public credential/socket paths, or weakening fail-closed gates.
   returned exit 1 only after the product commit, while auto-pushing state commit
   3af8ce53f808da0befc62c97e3e9b62912fb3f95 to state main; remote rejected that state push. Product
   commit itself succeeded and remains local pending product branch push.
+
+- 2026-09-29T00:18:17+00:00: Recorded command exit 0; command argv SHA-256
+  115a28b65160c6e90b714d050a6f4583b7c46fde11739a8c110e46994e782112.
