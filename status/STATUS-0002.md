@@ -188,7 +188,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1505](../tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | ar1505-repair-luna56 | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | Run cargo fmt --all through handoffctl to normalize RuntimeControlBootstrap insertion, then rerun fmt check and cargo check. |
+| P0 | [AR-1505](../tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | ar1505-repair-luna56 | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | Remove the unused bridge field from RuntimeControlBootstrap, rerun cargo fmt --check and cargo check, then add focused response-consumption/cancellation tests. |
 
 ### Blocked (76)
 

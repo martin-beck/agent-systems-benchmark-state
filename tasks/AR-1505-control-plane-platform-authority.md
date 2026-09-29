@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Run cargo fmt --all through handoffctl to normalize RuntimeControlBootstrap insertion, then rerun fmt check and cargo check.",
+  "next_action": "Remove the unused bridge field from RuntimeControlBootstrap, rerun cargo fmt --check and cargo check, then add focused response-consumption/cancellation tests.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 1,
   "observed_head": "baa13ea675de2160dcf58f69b106e255f2c3d8de",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 136,
+  "task_revision": 137,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-28T23:59:59+00:00",
+  "updated_at": "2026-09-29T00:00:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -552,3 +552,9 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-28T23:59:59+00:00: Recorded command exit 0; command argv SHA-256
   c8353b4947531d7ce59f279da9736183b2598c8f14fa31ad655dee57684d4e2d.
+
+- 2026-09-29T00:00:29+00:00: 2026-09-28T23:59:35Z: Exact gate handoffctl run --owner
+  ar1505-repair-luna56 AR-1505 -- cargo check --locked -p asb-runtime exited 101 after formatter
+  normalization. stderr: live_service.rs:1403:5 field bridge is never read under -D warnings; no
+  malformed code or toolchain failure. Corrective action: remove the redundant bridge field (profile
+  already retains the consumed attestation), then rerun focused gates.
