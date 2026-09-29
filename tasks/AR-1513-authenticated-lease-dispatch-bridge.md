@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 188,
+  "task_revision": 189,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T07:18:57+00:00",
+  "updated_at": "2026-09-29T07:19:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -580,3 +580,6 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
   workspace floor 90%) and critical package totals green; no floor or exclusion changes. Generated
   crates/asb-cli profraw artifacts were removed. Focused runtime 161 passed/1 ignored, CLI workflow
   3 passed, provenance test passed.
+
+- 2026-09-29T07:19:04+00:00: Recorded command exit 0; command argv SHA-256
+  38ec9250868454682fb0a1479274a6b2af8cde48add6ff4ec7b4bde3ab173e9a.
