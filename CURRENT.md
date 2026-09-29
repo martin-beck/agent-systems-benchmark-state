@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1521](tasks/AR-1521.md): AR-1307/1308 formal capacity repair implementation | Implement the reviewed successor contract that repairs the AR-1308 full-tier capacity failure while preserving AR-1307 qualification boundaries. | Promote and claim after AR-1530's merged signed-capacity-8g profile is verified; implement the formal runner handoff without changing AR-1307 limits. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -66,7 +72,6 @@ Never edit this file directly.
 | P0 | [AR-1510](tasks/AR-1510-authenticated-control-source-wiring.md): Authenticated control source and production provider wiring | Provider boundary and expiry fencing are implemented and runtime/CLI tests mostly pass; ordinary production dispatch still lacks an authenticated non-test platform material source. | Remain blocked on the platform-owned deployment adapter: supply private roots, tool pins, policy/allowlist, credential capability and enrollment from authenticated runtime state without CLI/config/PATH injection, then wire the opaque source into ordinary run/sweep and rerun exact-head gates. | - |
 | P0 | [AR-1512](tasks/AR-1512-process-owner-material-contract.md): Authenticated process-owner material contract | Provide the authenticated process-owner material source and ordinary CLI/control caller needed to consume runtime authority. | Independent exact-head review of a4064abf; create successor for authenticated lease-to-LiveProviderRuntimeHandle bridge, then publish exact-head PR/CI if review accepts provider-free boundary. | - |
 | P0 | [AR-1518](tasks/AR-1518.md): C | Capacity profile boots and runs, but the 1700-second bounded QEMU attempt timed out without terminal TLC result or attestation. | Use AR-1519 for separately scoped reduced-model development; do not claim AR-1307 or AR-1308 formal qualification. | - |
-| P0 | [AR-1521](tasks/AR-1521.md): AR-1307/1308 formal capacity repair implementation | Implement the reviewed successor contract that repairs the AR-1308 full-tier capacity failure while preserving AR-1307 qualification boundaries. | Promote and claim after AR-1530's merged signed-capacity-8g profile is verified; implement the formal runner handoff without changing AR-1307 limits. | - |
 | P0 | [AR-1523](tasks/AR-1523.md): Platform authority deployment adapter | Central orchestration is merged for local/replay, but PlanAuthoritySource still rejects live mode and no runtime-owned platform source supplies private authority for first-customer dispatch. | Remain blocked until a runtime/control deployment owner supplies an authenticated private authority source and opaque materialization handoff; then replace PlanAuthoritySource's live-mode rejection with the central orchestrator adapter and run exact-head gates. | - |
 | P1 | [AR-0604](tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Obtain authorized native x86 runner and immutable CSB/Python evidence; rerun native_boundary and record A/B overhead. | - |
 | P1 | [AR-0814](tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Create successor AR for authenticated route/ancestor authority; preserve AR-1288 evidence and AR-0814 head 29cfa193. | - |
