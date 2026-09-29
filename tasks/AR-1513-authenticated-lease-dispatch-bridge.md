@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
   "checkpoint_commit": "be018d4f1159bde9b9725f085cb8959edf7cde4e",
-  "claim_expires": "2026-09-29T07:32:46+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1502",
     "AR-1484"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
   "observed_dirty": 0,
   "observed_head": "be018d4f1159bde9b9725f085cb8959edf7cde4e",
-  "owner": "ar1513-lease-bridge-luna56",
+  "owner": "",
   "plan": "../plans/AR-1513-authenticated-lease-dispatch-bridge.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T05:45:26+00:00",
+  "updated_at": "2026-09-29T05:47:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -171,3 +171,6 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
 - 2026-09-29T05:45:26+00:00: Published PR #383 from exact signed head be018d4 against protected base
   f92c2e9. GitHub reports mergeable; required checks are pending, with AWQ shadow and source-header
   checks already green. No merge authority claimed.
+
+- 2026-09-29T05:47:20+00:00: Coordinator takeover after stopping prior worker; preserve PR #383
+  exact-head evidence be018d4 and reassign repair worker on same AR.
