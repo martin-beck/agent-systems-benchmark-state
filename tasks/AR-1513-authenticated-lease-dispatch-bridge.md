@@ -10,7 +10,7 @@
   "id": "AR-1513",
   "next_action": "Audit protected-main owner/enrollment issuer, ProcessOwnerMaterialLease, LiveProviderRuntimeHandle/DispatchSource, and ordinary CLI run/sweep seams; then implement authenticated bridge and provenance checks in isolated worktree.",
   "observed_branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "f92c2e941913129d7db50480f71e8361a0d43a0c",
   "owner": "ar1513-lease-bridge-luna56",
   "plan": "../plans/AR-1513-authenticated-lease-dispatch-bridge.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T05:33:01+00:00",
+  "updated_at": "2026-09-29T05:33:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
