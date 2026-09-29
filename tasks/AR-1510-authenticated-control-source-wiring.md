@@ -7,7 +7,7 @@
     "AR-1505"
   ],
   "id": "AR-1510",
-  "next_action": "Promote after the AR-1509 blocker evidence is reconciled; implement and verify an authenticated platform control source and production runtime wiring from protected main.",
+  "next_action": "Clean worktree setup from protected main f92c2e94 is in progress; read product contracts and audit runtime/provider callsites before implementing authenticated control-source wiring.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated platform control source and production lifecycle wiring required by the authority-provider receipt.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Authenticated control source and production provider wiring",
-  "updated_at": "2026-09-29T02:59:27+00:00",
+  "updated_at": "2026-09-29T02:59:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1510-authenticated-control-source-wiring"
 }
 ---
@@ -64,3 +64,7 @@ test-only façade publication, or weakening native/formal/privacy gates.
 - 2026-09-29T02:58:16+00:00: Claimed by ar1510-control-source-luna56.
 
 - 2026-09-29T02:59:27+00:00: Heartbeat by ar1510-control-source-luna56.
+
+- 2026-09-29T02:59:42+00:00: Initial heartbeat/setup audit: state lease renewed; protected product
+  main f92c2e941913129d7db50480f71e8361a0d43a0c verified. Product checkout is dirty with unrelated
+  in-progress changes, so work will use an isolated worktree. AR-1509 commits will not be reused.
