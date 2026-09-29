@@ -10,17 +10,17 @@
   "id": "AR-1513",
   "next_action": "Repair P1 findings from independent exact-head review: bind enrollment identity/namespace/credential/relay/target, bind lease to dispatch source, and retain lifecycle fences after source consumption; then rerun review and protected gates.",
   "observed_branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
-  "observed_dirty": 2,
-  "observed_head": "bde018c10b3b69252f9a5b8429f9cc277e44953d",
+  "observed_dirty": 0,
+  "observed_head": "109f5fad424cb5493e834a0dcec9c09f1aeeae54",
   "owner": "ar1513-repair2-luna56",
   "plan": "../plans/AR-1513-authenticated-lease-dispatch-bridge.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 109,
+  "task_revision": 110,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T06:35:28+00:00",
+  "updated_at": "2026-09-29T06:35:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
