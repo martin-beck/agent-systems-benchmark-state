@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Wait for the four remaining checks and fresh independent review; record terminal statuses and keep PR unmerged.",
+  "next_action": "Wait for the final three checks and fresh independent review; record terminal statuses and keep PR unmerged.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 0,
   "observed_head": "da5e2a916b66de9f31f2c5bcccd1f59f7b3321d2",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 239,
+  "task_revision": 240,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:44:52+00:00",
+  "updated_at": "2026-09-29T00:45:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -962,3 +962,7 @@ public credential/socket paths, or weakening fail-closed gates.
   sentinels in addition to the prior eight green checks; four remain IN_PROGRESS: emulated aarch64,
   TLC and Alloy recovery models, policy coverage supply chain, and Rust checks. PR 382 remains OPEN
   at exact head with reviews empty and no merge.
+
+- 2026-09-29T00:45:42+00:00: Exact-head da5e2a9 CI now has TLC and Alloy recovery models SUCCESS;
+  three checks remain IN_PROGRESS: emulated aarch64, policy coverage supply chain, and Rust checks.
+  All other exact-head checks are SUCCESS. PR 382 remains OPEN with reviews empty and no merge.
