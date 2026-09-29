@@ -115,6 +115,26 @@ class Ar1308CapacityTests(unittest.TestCase):
         self.assertEqual(validator.validate_receipt(candidate, "unsigned-development"), [])
         self.assertIn("seed_sha256", " ".join(validator.validate_receipt(candidate)))
 
+    def test_signed_capacity_8g_is_separate_formal_profile(self) -> None:
+        candidate = copy.deepcopy(RECEIPT)
+        candidate["guest_memory_bytes"] = 8 * validator.GIB
+        candidate["guest_swap_bytes"] = 8 * validator.GIB
+        self.assertEqual(validator.validate_receipt(candidate, "signed-capacity-8g"), [])
+        self.assertTrue(validator.validate_receipt(candidate, "signed"))
+
+    def test_signed_capacity_8g_rejects_wrong_capacity_and_unsigned_remains_nonformal(self) -> None:
+        candidate = copy.deepcopy(RECEIPT)
+        candidate["guest_memory_bytes"] = 9 * validator.GIB
+        candidate["guest_swap_bytes"] = 8 * validator.GIB
+        self.assertIn(
+            "guest memory",
+            " ".join(validator.validate_receipt(candidate, "signed-capacity-8g")),
+        )
+        diagnostic = copy.deepcopy(RECEIPT)
+        diagnostic["pinned_inputs"]["ar1307_commit"] = "a" * 40
+        diagnostic["seed_sha256"] = "development-generated"
+        self.assertEqual(validator.validate_receipt(diagnostic, "unsigned-development"), [])
+
     def test_unsigned_development_source_must_match_pin(self) -> None:
         from tempfile import TemporaryDirectory
 

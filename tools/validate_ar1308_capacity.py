@@ -19,7 +19,8 @@ GIB = 1024**3
 REQUIRED_COMMIT = "ab485f767fbddbd8adfc27b5120f3df0a045b762"
 REQUIRED_IMAGE_SHA256 = "612b2c0cc1bc413a6cb8c38fd611794caf0f2b436c50013d8b3794db12ad7354"
 REQUIRED_TLC_SHA256 = "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88"
-PROFILES = {"signed", "unsigned-development"}
+PROFILES = {"signed", "signed-capacity-8g", "unsigned-development"}
+FORMAL_PROFILES = {"signed", "signed-capacity-8g"}
 MIN_GUEST_MEMORY = 48 * GIB
 MIN_HOST_MEMORY = 56 * GIB
 MIN_HOST_DISK = 16 * GIB
@@ -79,15 +80,26 @@ def _validate_isolation(receipt: dict[str, Any]) -> list[str]:
     return issues
 
 
-def _validate_capacity(receipt: dict[str, Any]) -> list[str]:
+def _validate_capacity(receipt: dict[str, Any], profile: str = "signed") -> list[str]:
     issues: list[str] = []
-    if (
-        not isinstance(receipt.get("guest_memory_bytes"), int)
-        or receipt["guest_memory_bytes"] < MIN_GUEST_MEMORY
+    if profile == "signed-capacity-8g":
+        required_memory = 8 * GIB
+        required_swap = 8 * GIB
+        memory_message = "guest memory must be exactly 8 GiB for signed-capacity-8g"
+        swap_message = "guest swap must be exactly 8 GiB for signed-capacity-8g"
+    else:
+        required_memory = MIN_GUEST_MEMORY
+        required_swap = 16 * GIB
+        memory_message = "guest memory must be at least 48 GiB"
+        swap_message = "guest swap must be exactly 16 GiB"
+    if not isinstance(receipt.get("guest_memory_bytes"), int) or (
+        receipt["guest_memory_bytes"] != required_memory
+        if profile == "signed-capacity-8g"
+        else receipt["guest_memory_bytes"] < required_memory
     ):
-        issues.append("guest memory must be at least 48 GiB")
-    if receipt.get("guest_swap_bytes") != 16 * GIB:
-        issues.append("guest swap must be exactly 16 GiB")
+        issues.append(memory_message)
+    if receipt.get("guest_swap_bytes") != required_swap:
+        issues.append(swap_message)
     if (
         not isinstance(receipt.get("guest_disk_bytes"), int)
         or receipt["guest_disk_bytes"] < 64 * GIB
@@ -104,7 +116,7 @@ def _validate_inputs(receipt: dict[str, Any], profile: str = "signed") -> list[s
     issues: list[str] = []
     inputs = receipt.get("pinned_inputs")
     commit = inputs.get("ar1307_commit") if isinstance(inputs, dict) else None
-    if profile == "signed":
+    if profile in FORMAL_PROFILES:
         if commit != REQUIRED_COMMIT:
             issues.append("pinned input is not the exact signed AR-1307 head")
     elif (
@@ -126,7 +138,7 @@ def _validate_inputs(receipt: dict[str, Any], profile: str = "signed") -> list[s
     # Development fixtures may generate a fresh NoCloud seed locally.  The
     # signed profile remains digest-pinned; the diagnostic profile only
     # requires a present seed and must never authorize qualification.
-    if profile == "signed":
+    if profile in FORMAL_PROFILES:
         digest_keys = (*digest_keys, "seed_sha256")
     issues.extend(
         f"{key} must be a lowercase SHA-256 digest"
@@ -142,11 +154,11 @@ def validate_receipt(receipt: dict[str, Any], profile: str = "signed") -> list[s
     """Validate the closed receipt schema and unchanged process contract."""
     issues: list[str] = []
     if profile not in PROFILES:
-        issues.append("profile must be signed or unsigned-development")
+        issues.append("profile must be signed, signed-capacity-8g or unsigned-development")
     if set(receipt) - RECEIPT_KEYS:
         issues.append("receipt contains unknown fields")
     issues.extend(_validate_isolation(receipt))
-    issues.extend(_validate_capacity(receipt))
+    issues.extend(_validate_capacity(receipt, profile))
     issues.extend(_validate_inputs(receipt, profile))
     if receipt.get("process_contract") != CONTRACT:
         issues.append("process contract must remain 8G AS, 3G/3G, 200%, 2 workers, 7200 seconds")
@@ -234,7 +246,7 @@ def _validate_source(receipt: dict[str, Any], source: Path, profile: str = "sign
     pinned_inputs = receipt.get("pinned_inputs")
     expected = pinned_inputs.get("ar1307_commit") if isinstance(pinned_inputs, dict) else None
     verified = _run(["git", "-C", str(source), "verify-commit", "HEAD"])
-    if profile == "signed":
+    if profile in FORMAL_PROFILES:
         if head.stdout.strip() != REQUIRED_COMMIT or verified.returncode != 0:
             issues.append("source is not the exact signed AR-1307 commit")
     elif head.stdout.strip() != expected:
@@ -245,7 +257,12 @@ def _validate_source(receipt: dict[str, Any], source: Path, profile: str = "sign
 
 
 def _validate_artifacts(
-    receipt: dict[str, Any], model: Path, seed: Path, jdk: Path, jar: Path, lock: Path,
+    receipt: dict[str, Any],
+    model: Path,
+    seed: Path,
+    jdk: Path,
+    jar: Path,
+    lock: Path,
     profile: str = "signed",
 ) -> list[str]:
     issues: list[str] = []
@@ -253,7 +270,7 @@ def _validate_artifacts(
         issues.append("model/config input is missing or has the wrong digest")
     if not seed.is_file():
         issues.append("seed input is missing")
-    elif profile == "signed" and _digest(seed) != _string(receipt, "seed_sha256"):
+    elif profile in FORMAL_PROFILES and _digest(seed) != _string(receipt, "seed_sha256"):
         issues.append("seed input is missing or has the wrong digest")
     if not lock.exists() or lock.stat().st_mode & 0o002:
         issues.append("admission-lock input is missing or writable by other users")
@@ -308,7 +325,7 @@ def main(argv: list[str] | None = None) -> int:
         "--profile",
         choices=sorted(PROFILES),
         default="signed",
-        help="explicitly select signed qualification or diagnostic unsigned development",
+        help=("select signed, signed-capacity-8g, or diagnostic unsigned-development"),
     )
     args = parser.parse_args(argv)
     try:
@@ -342,9 +359,9 @@ def main(argv: list[str] | None = None) -> int:
         return 1
     result = {
         "profile": args.profile,
-        "qualification_authorized": args.profile == "signed",
+        "qualification_authorized": args.profile in FORMAL_PROFILES,
         "runner_id": receipt["runner_id"],
-        "status": "ready" if args.profile == "signed" else "diagnostic",
+        "status": "ready" if args.profile in FORMAL_PROFILES else "diagnostic",
     }
     print(json.dumps(result, sort_keys=True))
     return 0
