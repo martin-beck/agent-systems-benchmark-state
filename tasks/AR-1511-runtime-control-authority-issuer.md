@@ -9,18 +9,18 @@
   ],
   "id": "AR-1511",
   "next_action": "Promote after AR-1510 blocker evidence is reconciled; implement the runtime/control authority issuer and capability contract from protected main.",
-  "observed_branch": "",
+  "observed_branch": "feature/ar-1511-runtime-control-authority-issuer",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "f92c2e941913129d7db50480f71e8361a0d43a0c",
   "owner": "ar1511-authority-issuer-luna56",
   "plan": "../plans/AR-1511-runtime-control-authority-issuer.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T03:10:16+00:00",
+  "updated_at": "2026-09-29T03:10:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
