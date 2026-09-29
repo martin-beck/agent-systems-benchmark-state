@@ -17,14 +17,14 @@ Generated from local Git and GitHub. Do not edit.
 | #365 | `dependabot/cargo/rcgen-0.14.10@8604b5977544` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump rcgen from 0.14.7 to 0.14.10 |
 | #366 | `dependabot/cargo/schemars-1.2.2@047b52b0b5b9` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump schemars from 1.0.4 to 1.2.2 |
 | #384 | `feature/ar-1508-platform-owned-authority-provider@2c70f81100ca` | `main` | DIRTY | - | feat(runtime): platform-owned authority provider |
-| #386 | `feature/ar-1514-runtime-auth-reconciliation@a97dfb39c784` | `main` | UNSTABLE | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | fix(control): reconcile helper auth status mutations |
+| #386 | `feature/ar-1514-runtime-auth-reconciliation@a97dfb39c784` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | fix(control): reconcile helper auth status mutations |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36578937308 | `a97dfb39c784` | pull_request | Agent Workflow Quality shadow | in_progress:- |
-| 36578937301 | `a97dfb39c784` | pull_request | Fault assurance | queued:- |
+| 36578937308 | `a97dfb39c784` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 36578937301 | `a97dfb39c784` | pull_request | Fault assurance | in_progress:- |
 | 36578937277 | `a97dfb39c784` | pull_request | Credential-free benchmark path | in_progress:- |
 | 36578937269 | `a97dfb39c784` | pull_request | Formal assurance | in_progress:- |
 | 36578937260 | `a97dfb39c784` | pull_request | Rust verification | in_progress:- |
