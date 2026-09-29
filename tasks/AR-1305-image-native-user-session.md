@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1305-image-native-user-session",
   "checkpoint_commit": "00a47726683609b7fef8ea5738fed5a3692fac29",
-  "claim_expires": "2026-09-29T16:17:52+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1302"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "00a47726683609b7fef8ea5738fed5a3692fac29",
-  "owner": "coordinator-ar1305-review-20260929",
+  "owner": "",
   "plan": "../plans/AR-1305.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Independent artifact review completed for fresh image v2: reviewed Ubuntu base SHA-256 289c24e8e1b73d491091eace032ad93a3b335b200d68109b9db451c82a3f4, staged dbus-user-session package SHA-256 e585b1694b854c3b75bfb39cc4022cafe7b14e44fd435433b613b8fb9919cb41, resulting qcow2 SHA-256 2fa6685e201f4f59398c28eac4178daafb701067b10ffdc486b9a00555857f4f. Bounded network-disabled boot reached FULL_EXHAUSTIVE_TRANSIENT_RC=0 without Transport endpoint failure. Formal required-tier evidence is not claimed.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Image-native user-session support",
-  "updated_at": "2026-09-29T16:08:06+00:00",
+  "updated_at": "2026-09-29T16:08:09+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1305-image-native-user-session"
 }
 ---
@@ -240,3 +240,6 @@ limits and fail-closed behavior remain unchanged.
 - 2026-09-29T16:08:06+00:00: Independent review verified base/package/result digests and sanitized
   diagnostic evidence at /srv/data/projects/ar1308-development/diagnostic-v4-image-v2-summary.txt.
   Image remains disposable and must not be treated as a production image.
+
+- 2026-09-29T16:08:09+00:00: Released after independent image artifact review; waiting only for
+  exact signed formal input recovery and required-tier gates.
