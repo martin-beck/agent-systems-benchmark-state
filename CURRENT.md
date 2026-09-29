@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1512](tasks/AR-1512-process-owner-material-contract.md): Authenticated process-owner material contract | Provide the authenticated process-owner material source and ordinary CLI/control caller needed to consume runtime authority. | Promote after AR-1511 blocker evidence is reconciled; define and implement the authenticated process-owner material contract and ordinary control caller. | - |
+| P0 | [AR-1512](tasks/AR-1512-process-owner-material-contract.md): Authenticated process-owner material contract | Provide the authenticated process-owner material source and ordinary CLI/control caller needed to consume runtime authority. | Promote after AR-1511 blocker evidence is reconciled; define and implement the authenticated process-owner material contract and ordinary control caller. | ar1512-process-owner-luna56 |
 
 ## Blocked
 

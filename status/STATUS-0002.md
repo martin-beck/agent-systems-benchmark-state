@@ -198,11 +198,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1512](../tasks/AR-1512-process-owner-material-contract.md): Authenticated process-owner material contract | Unclaimed | Provide the authenticated process-owner material source and ordinary CLI/control caller needed to consume runtime authority. | Promote after AR-1511 blocker evidence is reconciled; define and implement the authenticated process-owner material contract and ordinary control caller. |
+| P0 | [AR-1512](../tasks/AR-1512-process-owner-material-contract.md): Authenticated process-owner material contract | ar1512-process-owner-luna56 | Provide the authenticated process-owner material source and ordinary CLI/control caller needed to consume runtime authority. | Promote after AR-1511 blocker evidence is reconciled; define and implement the authenticated process-owner material contract and ordinary control caller. |
 
 ### Blocked (80)
 
