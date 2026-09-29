@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
   "checkpoint_commit": "be018d4f1159bde9b9725f085cb8959edf7cde4e",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T06:32:23+00:00",
   "depends_on": [
     "AR-1502",
     "AR-1484"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
   "observed_dirty": 0,
   "observed_head": "be018d4f1159bde9b9725f085cb8959edf7cde4e",
-  "owner": "",
+  "owner": "ar1513-repair-luna56",
   "plan": "../plans/AR-1513-authenticated-lease-dispatch-bridge.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T05:47:20+00:00",
+  "updated_at": "2026-09-29T05:47:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -174,3 +174,5 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
 
 - 2026-09-29T05:47:20+00:00: Coordinator takeover after stopping prior worker; preserve PR #383
   exact-head evidence be018d4 and reassign repair worker on same AR.
+
+- 2026-09-29T05:47:23+00:00: Claimed by ar1513-repair-luna56.
