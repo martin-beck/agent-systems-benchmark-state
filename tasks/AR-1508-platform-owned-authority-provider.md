@@ -13,7 +13,7 @@
     "AR-1505"
   ],
   "id": "AR-1508",
-  "next_action": "Independent exact-head review of 5344809 against protected origin/main=47329e35, then publish only after review accepts provider-only boundary; no push or merge yet.",
+  "next_action": "REJECTED: do not publish or merge 5344809. P1-1: add a non-test runtime/control implementation that obtains private roots/tools/policy/allowlist/credential/enrollment from authenticated AR-1505 control state and binds the full receipt; current RuntimePlatformAuthorityProvider/Handle has no production callsite (rg shows only live_service tests). P1-2: add current-time/revocation/restart/expiry fencing to provider materialization/enrollment before handle issuance; RuntimePlatformAuthorityBinding carries expires_at_unix_ms but materialize_provisioner has no now parameter and RuntimeAuthorityInputResolver::resolve checks only owner/generation/cancelled/torn_down. Add negative lifecycle tests, then repeat exact-head review and hosted checks. No push/merge.",
   "observed_branch": "feature/ar-1508-platform-owned-authority-provider",
   "observed_dirty": 0,
   "observed_head": "5344809cfe4f8f8b1a4bd734b606c347f693c349",
@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material.",
-  "task_revision": 133,
+  "task_revision": 134,
   "title": "Platform-owned authority provider",
-  "updated_at": "2026-09-29T11:32:06+00:00",
+  "updated_at": "2026-09-29T11:33:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1508-platform-owned-authority-provider"
 }
 ---
@@ -451,3 +451,26 @@ fixed-path authority, weakening formal/privacy/native gates.
 
 - 2026-09-29T11:32:06+00:00: Recorded command exit 0; command argv SHA-256
   460960ea7a48f085b15ba81df6589970a0b5408d6749c32214ca14d9b83c648f.
+
+- 2026-09-29T11:33:04+00:00: Independent exact-head review of 5344809 against protected
+  origin/main=47329e35: REJECTED with two P1 findings. P1-1 production provider boundary absent:
+  RuntimePlatformAuthorityProvider and RuntimePlatformAuthorityProviderHandle are crate-private; rg
+  over crates shows implementations/calls only in live_service.rs tests (FixtureAuthorityProvider,
+  UnavailableAuthorityProvider, and test materialization_bootstrap_fixture), while
+  from_authenticated_material has no non-test caller. The added docs explicitly defer authenticated
+  implementation to first-customer handoff, so this is a test façade rather than authenticated
+  runtime/control source. P1-2 lifecycle freshness is not enforced at provider boundary:
+  RuntimePlatformAuthorityBinding includes expires_at_unix_ms, but materialize_provisioner(&mut
+  self, owner, provider) takes no current time and never checks expiry/revocation/restart;
+  RuntimeAuthorityInputResolver::resolve checks only owner/generation/cancelled/torn_down, and
+  RuntimeOwnedEnrollmentSource::enroll can mint a handle without time validation. A handle can
+  therefore be created from an expired-but-retained bootstrap unless the separate owner lease path
+  happens to be used. Required green evidence: cargo fmt --all --check; cargo test --locked -p
+  asb-runtime (166 passed, 1 ignored plus binaries/integration); cargo clippy --locked --workspace
+  --all-targets -D warnings; cargo test --locked --workspace passed; cargo doc with RUSTDOCFLAGS=-D
+  warnings; cargo build --locked --workspace --release; serial cargo test --locked -p asb-cli --
+  --test-threads=1 (131 passed plus integration suites). Initial parallel asb-cli run had one
+  state-root collision; exact test and serial package rerun passed. git status clean, diff --check
+  clean, origin/main ancestor, five commits SSH-signed, check_dco.py all commits certified. Diff
+  limited to README, asb-cli/lib.rs, asb-runtime/live_service.rs, provider handoff doc, provenance
+  fixture; no asb-tui/live-provider/credential changes. No push, PR update, or merge attempted.
