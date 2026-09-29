@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1505](tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | Apply the scoped clippy allowance at the exact LiveLaunchFactory::acquire declaration, then rerun clippy. | ar1505-repair-luna56 |
+| P0 | [AR-1505](tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | Independent review complete; run git diff check and exact-head status, create SSH-signed DCO repair commit on existing branch, then push existing PR #382 and request fresh review. | ar1505-repair-luna56 |
 
 ## Blocked
 

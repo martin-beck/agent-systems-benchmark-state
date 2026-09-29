@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Apply the scoped clippy allowance at the exact LiveLaunchFactory::acquire declaration, then rerun clippy.",
+  "next_action": "Independent review complete; run git diff check and exact-head status, create SSH-signed DCO repair commit on existing branch, then push existing PR #382 and request fresh review.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 2,
   "observed_head": "baa13ea675de2160dcf58f69b106e255f2c3d8de",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 161,
+  "task_revision": 162,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:11:04+00:00",
+  "updated_at": "2026-09-29T00:11:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -645,3 +645,11 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-29T00:11:04+00:00: Recorded command exit 0; command argv SHA-256
   f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
+
+- 2026-09-29T00:11:38+00:00: Changed-package clippy -D warnings passed after scoped allowance;
+  workspace RUSTDOCFLAGS=-D warnings cargo doc --locked --workspace --no-deps passed; cargo fmt
+  --all -- --check passed. Full workspace serial cargo test passed exit 0: all workspace
+  unit/integration/doc tests green, including asb-agents 201 passed/1 ignored, asb-control 70 + 27
+  control + 7 endpoint + 4 schema, asb-runtime 151/0/1 ignored plus process 8/sandbox 15/scheduler
+  16, asb-cli 129, and remaining workspace suites; no failures. Generated schema conformance
+  remained green 4/4 in workspace run. Next exact diff review and signed commit.
