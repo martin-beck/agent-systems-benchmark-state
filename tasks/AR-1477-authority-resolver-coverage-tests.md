@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Raise exact hosted coverage above the enforced 90 percent floor for the authority resolver.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Cover authority resolver behavior",
-  "updated_at": "2026-09-29T12:09:00+00:00",
+  "updated_at": "2026-09-29T12:10:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1477-authority-resolver-coverage-tests"
 }
 ---
@@ -255,3 +255,6 @@ the coverage floor remains unchanged.
   policy/post-merge gates without waiver.
 
 - 2026-09-29T12:09:00+00:00: Claimed by ar1477-topology-repair-luna56.
+
+- 2026-09-29T12:10:11+00:00: Recorded command exit 0; command argv SHA-256
+  fa1ab7baafb93a5c0e7df68703a8dc54e6405b9feac8f96ae2133eb43e768cd5.
