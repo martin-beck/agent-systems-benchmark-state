@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T05:44:29+00:00",
+  "updated_at": "2026-09-29T05:44:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -161,3 +161,6 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
   provenance, lifecycle-fenced lease bridge, runtime-control caller, CLI run/sweep adapter, docs,
   and refreshed source provenance digest. Focused runtime 156 pass/1 ignored, serial workspace pass,
   clippy pass, rustdoc pass, formal manifest tests pass, and gitleaks reports no leaks.
+
+- 2026-09-29T05:44:42+00:00: Recorded command exit 0; command argv SHA-256
+  a21a8490d084b880fb0788c13b8c5b1e596ee37485b1c6f9f71fbeee6e61d68e.
