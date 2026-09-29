@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1510-authenticated-control-source-wiring",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T23:16:57+00:00",
   "depends_on": [
     "AR-1505"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1510-authenticated-control-source-wiring",
   "observed_dirty": 0,
   "observed_head": "f92c2e941913129d7db50480f71e8361a0d43a0c",
-  "owner": "",
+  "owner": "coordinator-ar1510-source-wiring-20260929",
   "plan": "../plans/AR-1510-authenticated-control-source-wiring.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide the authenticated platform control source and production lifecycle wiring required by the authority-provider receipt.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Authenticated control source and production provider wiring",
-  "updated_at": "2026-09-29T21:16:54+00:00",
+  "updated_at": "2026-09-29T21:16:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1510-authenticated-control-source-wiring"
 }
 ---
@@ -146,3 +146,5 @@ test-only façade publication, or weakening native/formal/privacy gates.
 - 2026-09-29T21:16:54+00:00: Reopen canonical production source/wiring successor: AR-1508 lifecycle
   fencing is repaired; remaining scope is non-test authenticated platform authority materialization
   and ordinary run/sweep wiring.
+
+- 2026-09-29T21:16:57+00:00: Claimed by coordinator-ar1510-source-wiring-20260929.
