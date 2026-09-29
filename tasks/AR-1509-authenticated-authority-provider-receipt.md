@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1509-authenticated-authority-provider-receipt",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T04:44:42+00:00",
   "depends_on": [
     "AR-1473",
     "AR-1474",
@@ -17,15 +17,15 @@
   "observed_branch": "feature/ar-1509-authenticated-authority-provider-receipt",
   "observed_dirty": 1,
   "observed_head": "e437261f6fed268956cd436e06beb117549611ac",
-  "owner": "",
+  "owner": "ar1509-repair-luna56",
   "plan": "../plans/AR-1509-authenticated-authority-provider-receipt.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Replace the AR-1508 test fa\u00e7ade with an authenticated production authority-provider receipt and lifecycle fence.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Authenticated authority-provider receipt",
-  "updated_at": "2026-09-29T02:44:35+00:00",
+  "updated_at": "2026-09-29T02:44:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1509-authenticated-authority-provider-receipt"
 }
 ---
@@ -97,3 +97,5 @@ mock production authority, or weakening formal/privacy/native gates.
 
 - 2026-09-29T02:44:35+00:00: Coordinator stopped the worker and is recovering this AR for a repair
   worker; preserve existing commits, dirty diff, and command evidence. No completion claim.
+
+- 2026-09-29T02:44:42+00:00: Claimed by ar1509-repair-luna56.
