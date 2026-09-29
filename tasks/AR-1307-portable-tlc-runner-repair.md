@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1307-portable-tlc-runner-repair",
   "checkpoint_commit": "ab485f767fbddbd8adfc27b5120f3df0a045b762",
-  "claim_expires": "2026-09-29T16:23:21+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1302"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "969eef05834a4ce5f711bbafaa5798549abd95c8",
-  "owner": "coordinator-dev-seed-policy-20260929",
+  "owner": "",
   "plan": "../plans/AR-1307.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Runner implementation remains blocked for its unrelated formal CI OOM/publication transition, but development execution no longer depends on a reviewed seed digest. The explicit unsigned-development profile accepts locally generated disposable seeds and remains qualification_authorized=false.",
-  "task_revision": 740,
+  "task_revision": 741,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-29T16:13:31+00:00",
+  "updated_at": "2026-09-29T16:13:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -2117,3 +2117,6 @@ authorize qualification, publication, or release evidence; selecting
 - 2026-09-29T16:13:31+00:00: Seed-digest dependency removed from development coordination. Existing
   signed/formal gates and the AR-1307 resource contract remain unchanged; no qualification or
   release evidence is claimed.
+
+- 2026-09-29T16:13:34+00:00: Released after development seed-policy update; remaining blocker is
+  formal runner qualification, not development seed availability.
