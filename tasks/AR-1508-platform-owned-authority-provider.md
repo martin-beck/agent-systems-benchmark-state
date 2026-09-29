@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1508-platform-owned-authority-provider",
-  "checkpoint_commit": "06e91829123cb1498e566f595aa2e114ff5833f4",
+  "checkpoint_commit": "5344809cfe4f8f8b1a4bd734b606c347f693c349",
   "claim_expires": "2026-09-29T13:16:28+00:00",
   "depends_on": [
     "AR-1473",
@@ -13,7 +13,7 @@
     "AR-1505"
   ],
   "id": "AR-1508",
-  "next_action": "Rebased local candidate onto protected 47329e35 at 06e91829, but publication blocked: cargo test -p asb-runtime fails at live_service.rs:2015 because materialize_runtime_owner still injects RuntimeAuthorityInputs and state_path into the new provider-only API, and live_service.rs:3346 still destructures the now-three-element fixture as two. The public asb-cli RuntimeControlBootstrapRunInput still carries owner_inputs/owner_state_path, violating the fail-closed contract. Resolve API/callers within AR scope or record successor blocker; do not push or merge.",
+  "next_action": "Independent exact-head review of 5344809 against protected origin/main=47329e35, then publish only after review accepts provider-only boundary; no push or merge yet.",
   "observed_branch": "feature/ar-1508-platform-owned-authority-provider",
   "observed_dirty": 0,
   "observed_head": "5344809cfe4f8f8b1a4bd734b606c347f693c349",
@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material.",
-  "task_revision": 100,
+  "task_revision": 101,
   "title": "Platform-owned authority provider",
-  "updated_at": "2026-09-29T11:16:28+00:00",
+  "updated_at": "2026-09-29T11:16:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1508-platform-owned-authority-provider"
 }
 ---
@@ -345,3 +345,13 @@ fixed-path authority, weakening formal/privacy/native gates.
   b49a90ee600c1023cee9ee9f9e8a4f9a06c53eef8c48d3932d88e482126c7c01.
 
 - 2026-09-29T11:16:28+00:00: Heartbeat by ar1508-integration-repair-luna56.
+
+- 2026-09-29T11:16:42+00:00: Integration repair complete at 5344809: removed
+  RuntimeControlOwnerInputs and public materialize_runtime_owner caller seam;
+  RuntimeControlBootstrapRunInput now carries only contract/material/launch/limits/digests/time; CLI
+  bridge fails closed until runtime-owned provider materializes bootstrap. Updated provider-only
+  allowlist fixture and CLI provenance digest. Focused runtime (166 passed), focused CLI, full
+  workspace tests (all passed; one initial provenance digest failure repaired), fmt, clippy,
+  rustdoc, and release build pass. Commits 03ef142 and 5344809 are SSH-signed DCO. Initial workspace
+  test also hit a coordinator lock timeout before retrying successfully; no push, PR update, hosted
+  checks, or merge.
