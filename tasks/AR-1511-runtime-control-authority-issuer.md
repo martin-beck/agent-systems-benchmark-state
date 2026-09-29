@@ -10,7 +10,7 @@
   "id": "AR-1511",
   "next_action": "Serial workspace cargo test is green; exact signed product head is 1a26b02. Next: independent exact-head diff review, then publish PR/CI through the guarded workflow; no live/provider claim.",
   "observed_branch": "feature/ar-1511-runtime-control-authority-issuer",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "1a26b02e2b6de485e930a0448d7fe5d34aed3061",
   "owner": "ar1511-authority-issuer-luna56",
   "plan": "../plans/AR-1511-runtime-control-authority-issuer.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T03:30:29+00:00",
+  "updated_at": "2026-09-29T03:30:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
