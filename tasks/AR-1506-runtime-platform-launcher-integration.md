@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1506-runtime-platform-launcher-integration",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-29T04:04:22+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1473",
     "AR-1474",
@@ -17,15 +17,15 @@
   "observed_branch": "feature/ar-1506-runtime-platform-launcher-integration",
   "observed_dirty": 0,
   "observed_head": "8b0394e70f7970a17dec354a68d0c056adb31236",
-  "owner": "ar1506-launcher-luna56",
+  "owner": "",
   "plan": "../plans/AR-1506-runtime-platform-launcher-integration.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Connect the merged authenticated platform authority/bootstrap protocol to production ASB process startup and ordinary CLI dispatch.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Runtime platform launcher integration",
-  "updated_at": "2026-09-29T02:05:04+00:00",
+  "updated_at": "2026-09-29T02:05:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1506-runtime-platform-launcher-integration"
 }
 ---
@@ -151,3 +151,10 @@ production evidence.
   construction crate-private; no safe platform-owned mapping to lease/relay/tool/policy roots exists
   in this checkout. Implementing one from fixed paths or mock data would synthesize authority and
   violate AR-1506 non-goals. Current commit 8b0394e is intentionally not pushed.
+
+- 2026-09-29T02:05:37+00:00: Blocked after independent exact-diff review: signed local commit
+  8b0394e remains unpushed because public source injection and offline production entry do not
+  satisfy acceptance. The missing boundary is runtime-owned construction of private
+  RuntimeAuthorityInputs (lease/relay/tool/policy roots) from authenticated AR-1505 bootstrap state.
+  Create a narrow authority-materialization successor; do not synthesize fixed paths or mock
+  authority.
