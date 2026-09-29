@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 255,
+  "task_revision": 256,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:57:25+00:00",
+  "updated_at": "2026-09-29T00:57:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -1024,3 +1024,6 @@ public credential/socket paths, or weakening fail-closed gates.
   traceback confirms cargo test exited 101 before coverage summary. This is a local diagnostic
   concurrency artifact, not evidence to weaken the floor. Corrective action: stop overlapping
   coverage runs, clean only generated profraw artifacts, and use serial coverage execution.
+
+- 2026-09-29T00:57:40+00:00: Recorded command exit 0; command argv SHA-256
+  3f54591e71e0a8ccd2b10c3ea4e7dcdb3df803450aecea5a5da3435e4b6ae89e.
