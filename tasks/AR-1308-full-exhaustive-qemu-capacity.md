@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "checkpoint_commit": "df0e402f442468e43e06b7c1acb3c3667277fb75",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T14:25:51+00:00",
   "depends_on": [
     "AR-1304"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
-  "owner": "",
+  "owner": "coordinator-ar1308-fixture-v9",
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Unsigned-development fixture v3 now populates the disposable state volume, creates asb user/data UUID, reaches the bound state checkout, and records transient cgroup RC=0 before poweroff. Formal verify remains intentionally non-qualifying because the network-disabled diagnostic cannot download TLC and therefore produces no attestation.",
-  "task_revision": 585,
+  "task_revision": 586,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T14:15:48+00:00",
+  "updated_at": "2026-09-29T14:15:51+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1796,3 +1796,5 @@ must report `qualification_authorized: false`.
 
 - 2026-09-29T14:15:48+00:00: Reopening fixture repair for exact-head offline verifier and
   self-contained JDK corrections.
+
+- 2026-09-29T14:15:51+00:00: Claimed by coordinator-ar1308-fixture-v9.
