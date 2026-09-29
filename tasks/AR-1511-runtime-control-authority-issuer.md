@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1511-runtime-control-authority-issuer",
   "checkpoint_commit": "673b486ba89917e3bb08c884ee17e708e0776b07",
-  "claim_expires": "2026-09-29T06:54:26+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1502",
     "AR-1484"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1511-runtime-control-authority-issuer",
   "observed_dirty": 0,
   "observed_head": "673b486ba89917e3bb08c884ee17e708e0776b07",
-  "owner": "ar1511-production-debug-luna56",
+  "owner": "",
   "plan": "../plans/AR-1511-runtime-control-authority-issuer.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 170,
+  "task_revision": 171,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T04:54:30+00:00",
+  "updated_at": "2026-09-29T04:55:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
@@ -574,3 +574,8 @@ production authority, or weakening fail-closed/native/formal gates.
 
 - 2026-09-29T04:54:30+00:00: Recorded command exit 0; command argv SHA-256
   58e1646eab9303c9fcfea7deefceb083a03f41a8c97a1eb52d7500ea15f54aae.
+
+- 2026-09-29T04:55:15+00:00: Production-path repair confirmed no non-test material producer or
+  ordinary CLI/control caller exists; digest-only records cannot reconstruct authenticated private
+  roots/tools/policy/namespace/launch input. Dirty edits reverted, 673b486 preserved. Create
+  successor contract AR.
