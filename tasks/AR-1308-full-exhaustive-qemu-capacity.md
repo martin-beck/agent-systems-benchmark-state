@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "checkpoint_commit": "c8a0c83a79f91bdf963daa6785be3157af790953",
-  "claim_expires": "2026-09-29T18:50:44+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1304"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
-  "owner": "coordinator-ar1308-offline-fixture-20260929",
+  "owner": "",
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Development fixture path defect repaired and focused tests pass, but portable-smoke still fails closed at TLC JVM startup with pthread_create EAGAIN (host runner capacity), before attestation. No seed-digest blocker remains and no formal qualification is claimed.",
-  "task_revision": 617,
+  "task_revision": 618,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T17:27:58+00:00",
+  "updated_at": "2026-09-29T17:28:16+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1898,3 +1898,8 @@ must report `qualification_authorized: false`.
 
 - 2026-09-29T17:27:58+00:00: Recorded command exit 0; command argv SHA-256
   485e73efc80049e04b21c712f9e505e0779ef462c0139e438c31f8d856ca5052.
+
+- 2026-09-29T17:28:16+00:00: Development path and verifier fixture are repaired; release remains
+  blocked only on disposable runner capacity (JVM pthread_create EAGAIN) for portable-smoke
+  attestation. Full state suite 200 passed/86 subtests passed; no reviewed seed or digest dependency
+  remains.
