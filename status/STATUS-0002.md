@@ -200,11 +200,11 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1305](../tasks/AR-1305-image-native-user-session.md): Image-native user-session support | coordinator-ar1305-devtest-20260929 | Image v2 remains reviewed for development use, but the fresh generated-seed smoke was inconclusive: initial seed argument order caused userdata to be ignored, and the corrected run booted without executing runcmd. No formal evidence is claimed. | Repair the disposable cloud-init/QEMU fixture: generate the NoCloud seed with user-data before meta-data, attach a writable data overlay, and make runcmd execute the bounded image-native systemd-run probe. Then rerun once and record FULL_EXHAUSTIVE_TRANSIENT_RC=0; do not claim formal attestation. |
+| P0 | [AR-1305](../tasks/AR-1305-image-native-user-session.md): Image-native user-session support | Unclaimed | Image v2 remains reviewed for development use, but the fresh generated-seed smoke was inconclusive: initial seed argument order caused userdata to be ignored, and the corrected run booted without executing runcmd. No formal evidence is claimed. | Repair the disposable cloud-init/QEMU fixture: generate the NoCloud seed with user-data before meta-data, attach a writable data overlay, and make runcmd execute the bounded image-native systemd-run probe. Then rerun once and record FULL_EXHAUSTIVE_TRANSIENT_RC=0; do not claim formal attestation. |
 
 ### Blocked (76)
 

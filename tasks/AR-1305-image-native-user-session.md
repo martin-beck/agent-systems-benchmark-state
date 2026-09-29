@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1305-image-native-user-session",
   "checkpoint_commit": "00a47726683609b7fef8ea5738fed5a3692fac29",
-  "claim_expires": "2026-09-29T17:45:57+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1302"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "00a47726683609b7fef8ea5738fed5a3692fac29",
-  "owner": "coordinator-ar1305-devtest-20260929",
+  "owner": "",
   "plan": "../plans/AR-1305.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Image v2 remains reviewed for development use, but the fresh generated-seed smoke was inconclusive: initial seed argument order caused userdata to be ignored, and the corrected run booted without executing runcmd. No formal evidence is claimed.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Image-native user-session support",
-  "updated_at": "2026-09-29T16:57:25+00:00",
+  "updated_at": "2026-09-29T16:57:33+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1305-image-native-user-session"
 }
 ---
@@ -293,3 +293,6 @@ limits and fail-closed behavior remain unchanged.
   cloud-localds arguments reversed and explicitly logged userdata ignored; second used correct order
   and writable data overlay, reached cloud-init target but did not execute runcmd before controlled
   teardown. Preserve diagnostic serial privately; repair fixture generation before closure.
+
+- 2026-09-29T16:57:33+00:00: Released ownerless after bounded diagnostic; next action is the
+  cloud-init/QEMU fixture repair recorded above.
