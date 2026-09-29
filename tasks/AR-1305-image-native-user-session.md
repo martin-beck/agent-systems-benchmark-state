@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1305.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Qualify image-native D-Bus user-session support for required TLC containment.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Image-native user-session support",
-  "updated_at": "2026-09-18T21:11:45+00:00",
+  "updated_at": "2026-09-29T13:53:16+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1305-image-native-user-session"
 }
 ---
@@ -221,3 +221,6 @@ limits and fail-closed behavior remain unchanged.
 
 - 2026-09-18T21:11:45+00:00: Schema repair only: shortened next_action below 300 characters while
   preserving the exact guestfish/supermin, capacity, no-fallback, and no-limit-change blockers.
+
+- 2026-09-29T13:53:16+00:00: Reopening after installing working privileged libguestfs tooling;
+  building a fresh immutable image from the reviewed Ubuntu base.
