@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1506-runtime-platform-launcher-integration",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-29T02:27:50+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1473",
     "AR-1474",
@@ -17,15 +17,15 @@
   "observed_branch": "feature/ar-1506-runtime-platform-launcher-integration",
   "observed_dirty": 0,
   "observed_head": "8b0394e70f7970a17dec354a68d0c056adb31236",
-  "owner": "coordinator-ar1506",
+  "owner": "",
   "plan": "../plans/AR-1506-runtime-platform-launcher-integration.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Connect the merged authenticated platform authority/bootstrap protocol to production ASB process startup and ordinary CLI dispatch.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Runtime platform launcher integration",
-  "updated_at": "2026-09-29T02:07:50+00:00",
+  "updated_at": "2026-09-29T02:07:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1506-runtime-platform-launcher-integration"
 }
 ---
@@ -164,3 +164,7 @@ production evidence.
   creation.
 
 - 2026-09-29T02:07:50+00:00: Claimed by coordinator-ar1506.
+
+- 2026-09-29T02:07:53+00:00: AR-1507 is now the narrow successor for runtime-owned private authority
+  materialization. Preserve signed local facade 8b0394e unmerged until AR-1507 resolves the
+  source-injection and production-entry gaps.
