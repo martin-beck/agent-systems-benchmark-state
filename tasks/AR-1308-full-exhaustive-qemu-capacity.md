@@ -9,7 +9,7 @@
   "id": "AR-1308",
   "next_action": "Path handling is repaired: verify.sh now honors a regular preloaded TLC_JAR_PATH, and tlc_runner derives worker queues/temp/lock from a bounded TLC_RUNTIME_ROOT under /srv/data/projects. Rerun portable-smoke on a capacity-available disposable runner and record PORTABLE_SMOKE_EVIDENCE_OK; do not weaken required resource bounds or substitute reviewed seeds.",
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "3d3235c301a6d621b18df2ce9b3f9c118e8e9c98",
   "owner": "coordinator-ar1308-thread-admission-20260929",
   "plan": "../plans/AR-1308.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Development fixture path defect repaired and focused tests pass, but portable-smoke still fails closed at TLC JVM startup with pthread_create EAGAIN (host runner capacity), before attestation. No seed-digest blocker remains and no formal qualification is claimed.",
-  "task_revision": 629,
+  "task_revision": 630,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T17:36:42+00:00",
+  "updated_at": "2026-09-29T17:36:56+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
