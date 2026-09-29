@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1508-platform-owned-authority-provider",
   "checkpoint_commit": "06e91829123cb1498e566f595aa2e114ff5833f4",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T11:34:58+00:00",
   "depends_on": [
     "AR-1473",
     "AR-1474",
@@ -17,15 +17,15 @@
   "observed_branch": "feature/ar-1508-platform-owned-authority-provider",
   "observed_dirty": 0,
   "observed_head": "06e91829123cb1498e566f595aa2e114ff5833f4",
-  "owner": "",
+  "owner": "ar1508-integration-repair-luna56",
   "plan": "../plans/AR-1508-platform-owned-authority-provider.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Platform-owned authority provider",
-  "updated_at": "2026-09-29T11:04:30+00:00",
+  "updated_at": "2026-09-29T11:04:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1508-platform-owned-authority-provider"
 }
 ---
@@ -294,3 +294,5 @@ fixed-path authority, weakening formal/privacy/native gates.
   public CLI bridge still exposes caller authority. No push, PR update, merge, or hosted checks.
   Next worker must remove caller injection, update all callsites/tests, rerun independent exact-head
   gates, then publish.
+
+- 2026-09-29T11:04:58+00:00: Claimed by ar1508-integration-repair-luna56.

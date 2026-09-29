@@ -199,11 +199,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1508](../tasks/AR-1508-platform-owned-authority-provider.md): Platform-owned authority provider | Unclaimed | Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material. | Rebased local candidate onto protected 47329e35 at 06e91829, but publication blocked: cargo test -p asb-runtime fails at live_service.rs:2015 because materialize_runtime_owner still injects RuntimeAuthorityInputs and state_path into the new provider-only API, and live_service.rs:3346 still destructures the now-three-element fixture as two. The public asb-cli RuntimeControlBootstrapRunInput still carries owner_inputs/owner_state_path, violating the fail-closed contract. Resolve API/callers within AR scope or record successor blocker; do not push or merge. |
+| P0 | [AR-1508](../tasks/AR-1508-platform-owned-authority-provider.md): Platform-owned authority provider | ar1508-integration-repair-luna56 | Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material. | Rebased local candidate onto protected 47329e35 at 06e91829, but publication blocked: cargo test -p asb-runtime fails at live_service.rs:2015 because materialize_runtime_owner still injects RuntimeAuthorityInputs and state_path into the new provider-only API, and live_service.rs:3346 still destructures the now-three-element fixture as two. The public asb-cli RuntimeControlBootstrapRunInput still carries owner_inputs/owner_state_path, violating the fail-closed contract. Resolve API/callers within AR scope or record successor blocker; do not push or merge. |
 
 ### Blocked (81)
 
