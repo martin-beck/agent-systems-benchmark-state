@@ -203,11 +203,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1515](../tasks/AR-1515-ar1307-runner-ci-oom-repair.md): AR-1307 runner CI repair | Unclaimed | Repair runner OOM/admission failure without widening its contract. | Promote after AR-1307; reproduce, repair, and rerun gates. |
+| P0 | [AR-1515](../tasks/AR-1515-ar1307-runner-ci-oom-repair.md): AR-1307 runner CI repair | coordinator-ar1515-runner-ci-20260929 | Repair runner OOM/admission failure without widening its contract. | Promote after AR-1307; reproduce, repair, and rerun gates. |
 
 ### Blocked (76)
 

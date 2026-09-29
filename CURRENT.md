@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1515](tasks/AR-1515-ar1307-runner-ci-oom-repair.md): AR-1307 runner CI repair | Repair runner OOM/admission failure without widening its contract. | Promote after AR-1307; reproduce, repair, and rerun gates. | - |
+| P0 | [AR-1515](tasks/AR-1515-ar1307-runner-ci-oom-repair.md): AR-1307 runner CI repair | Repair runner OOM/admission failure without widening its contract. | Promote after AR-1307; reproduce, repair, and rerun gates. | coordinator-ar1515-runner-ci-20260929 |
 
 ## Blocked
 
