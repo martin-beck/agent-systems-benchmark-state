@@ -8,7 +8,7 @@
     "AR-1484"
   ],
   "id": "AR-1513",
-  "next_action": "Implement runtime owner issuer call path and lease-to-dispatch lifecycle tests; then add provenance negatives and ordinary CLI/control adapter wiring.",
+  "next_action": "Harden bridge API review: remove any remaining public authority construction, add exact lease dispatch lifecycle negatives, run focused/full gates, then commit signed DCO.",
   "observed_branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
   "observed_dirty": 6,
   "observed_head": "f92c2e941913129d7db50480f71e8361a0d43a0c",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T05:37:08+00:00",
+  "updated_at": "2026-09-29T05:37:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -100,3 +100,11 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
 
 - 2026-09-29T05:37:08+00:00: Recorded command exit 0; command argv SHA-256
   bedfb3381b748877015928201c1d5e3d1ec4c97afb1b6f35e212a3b347e58607.
+
+- 2026-09-29T05:37:24+00:00: Focused runtime gate now passes after wiring runtime-owner call path:
+  cargo fmt and cargo test --locked -p asb-runtime --lib -- --test-threads=1: 156 passed, 1 ignored.
+  Added RuntimeControlBootstrap::process_owner_material_caller/acquire_process_owner_material
+  authenticated composition methods and CLI run_with_process_owner_material_bridge ordinary
+  run/sweep adapter. Added deterministic unknown-field, expiry, replay, revoke, hash-drift,
+  missing/non-executable/symlink provenance tests and docs. Worktree remains intentionally dirty
+  with these six product files pending review.

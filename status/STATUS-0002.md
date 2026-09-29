@@ -203,7 +203,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1513](../tasks/AR-1513-authenticated-lease-dispatch-bridge.md): Authenticated lease-to-live-dispatch bridge | ar1513-lease-bridge-luna56 | Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch. | Implement runtime owner issuer call path and lease-to-dispatch lifecycle tests; then add provenance negatives and ordinary CLI/control adapter wiring. |
+| P0 | [AR-1513](../tasks/AR-1513-authenticated-lease-dispatch-bridge.md): Authenticated lease-to-live-dispatch bridge | ar1513-lease-bridge-luna56 | Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch. | Harden bridge API review: remove any remaining public authority construction, add exact lease dispatch lifecycle negatives, run focused/full gates, then commit signed DCO. |
 
 ### Blocked (81)
 
