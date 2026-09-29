@@ -24,7 +24,6 @@ def build_user_data(tier: str) -> str:
     return f'''#cloud-config
 package_update: false
 users:
-  - default
   - name: asb
     uid: 1000
     shell: /bin/bash
