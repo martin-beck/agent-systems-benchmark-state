@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1517](tasks/AR-1517-ar1309-capacity-decision-unblock.md): AR-1309 capacity decision | Select a reviewed AR-1309 capacity/model contract after runner failure. | Classify evidence and select AR-1309's capacity/model contract. | - |
+| P0 | [AR-1517](tasks/AR-1517-ar1309-capacity-decision-unblock.md): AR-1309 capacity decision | Select a reviewed AR-1309 capacity/model contract after runner failure. | Classify evidence and select AR-1309's capacity/model contract. | coordinator-ar1517-capacity-decision-20260929 |
 
 ## Blocked
 
