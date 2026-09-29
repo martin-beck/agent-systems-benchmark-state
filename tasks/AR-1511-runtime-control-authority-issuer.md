@@ -8,7 +8,7 @@
     "AR-1484"
   ],
   "id": "AR-1511",
-  "next_action": "Independent exact-head review assigned for clean ac9306453dc97a100a57befcba0c8456b67a23db against f92c2e9; hold PR/push until review result.",
+  "next_action": "Repair production RuntimeControlBootstrap dispatch wiring and unify control-issued cancellation fence; add negative tests, then validate and request independent exact-head review.",
   "observed_branch": "feature/ar-1511-runtime-control-authority-issuer",
   "observed_dirty": 0,
   "observed_head": "ac9306453dc97a100a57befcba0c8456b67a23db",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 100,
+  "task_revision": 101,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T04:03:52+00:00",
+  "updated_at": "2026-09-29T04:03:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
@@ -362,3 +362,7 @@ production authority, or weakening fail-closed/native/formal gates.
 - 2026-09-29T04:02:32+00:00: Claimed by ar1511-final-repair-luna56.
 
 - 2026-09-29T04:03:52+00:00: Heartbeat by ar1511-final-repair-luna56.
+
+- 2026-09-29T04:03:55+00:00: Takeover audit: exact clean product head
+  ac9306453dc97a100a57befcba0c8456b67a23db is the assigned review head against protected
+  f92c2e941913129d7db50480f71e8361a0d43a0c; prior review text is stale. Beginning root-cause repair.
