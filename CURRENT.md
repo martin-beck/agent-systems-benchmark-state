@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1519](tasks/AR-1519.md): AR-1307/1308 reduced-model development profile | Reduced development tier implemented with explicit 900s/1-worker/2G/2G/4G bounds and non-claiming attestation. | Independently review the exact head, then release this development-only repair; full AR-1307/1308 qualification remains separate. | coordinator-ar1519-reduced-model-20260929 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
