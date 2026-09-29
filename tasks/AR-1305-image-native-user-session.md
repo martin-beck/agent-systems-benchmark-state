@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Image v2 remains reviewed for development use, but the fresh generated-seed smoke was inconclusive: initial seed argument order caused userdata to be ignored, and the corrected run booted without executing runcmd. No formal evidence is claimed.",
-  "task_revision": 103,
+  "task_revision": 104,
   "title": "Image-native user-session support",
-  "updated_at": "2026-09-29T17:14:04+00:00",
+  "updated_at": "2026-09-29T17:14:21+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1305-image-native-user-session"
 }
 ---
@@ -370,3 +370,6 @@ limits and fail-closed behavior remain unchanged.
 
 - 2026-09-29T17:14:04+00:00: Recorded command exit 0; command argv SHA-256
   17858c7fc7230e6e8fede8f7ec3043f85d3475d82b50759d6e233eea27369fce.
+
+- 2026-09-29T17:14:21+00:00: Recorded command exit 0; command argv SHA-256
+  07243af63dc111520113b7465dbf932bb7a7db1074ef6c0aee7a77604d4f4474.
