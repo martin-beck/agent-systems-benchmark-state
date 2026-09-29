@@ -2,7 +2,7 @@
 {
   "branch": "feature/replay-openhands",
   "checkpoint_commit": "3ccee91118b3a43eda123b0107d04ea4c2e3d80a",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T10:34:43+00:00",
   "depends_on": [
     "AR-0309",
     "AR-0503",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/replay-openhands",
   "observed_dirty": 0,
   "observed_head": "3ccee91118b3a43eda123b0107d04ea4c2e3d80a",
-  "owner": "",
+  "owner": "ar0514-review-luna56",
   "plan": "../plans/AR-0514.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Qualify replay conformance for OpenHands.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Qualify OpenHands replay",
-  "updated_at": "2026-09-29T10:04:40+00:00",
+  "updated_at": "2026-09-29T10:04:43+00:00",
   "worktree_key": "agent-systems-benchmark-replay-openhands"
 }
 ---
@@ -170,3 +170,5 @@ Qualify OpenHands record/replay, network denial, parity, retries, tool calls, ca
 
 - 2026-09-29T10:04:40+00:00: Run independent review and exact-head CI for bounded repair commit
   3ccee911 before retaining the truthful AR-0521 provenance block.
+
+- 2026-09-29T10:04:43+00:00: Claimed by ar0514-review-luna56.
