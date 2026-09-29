@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1511-runtime-control-authority-issuer",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-29T05:29:12+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1502",
     "AR-1484"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1511-runtime-control-authority-issuer",
   "observed_dirty": 2,
   "observed_head": "1a26b02e2b6de485e930a0448d7fe5d34aed3061",
-  "owner": "ar1511-authority-issuer-luna56",
+  "owner": "",
   "plan": "../plans/AR-1511-runtime-control-authority-issuer.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T03:35:40+00:00",
+  "updated_at": "2026-09-29T03:36:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
@@ -196,3 +196,7 @@ production authority, or weakening fail-closed/native/formal gates.
 
 - 2026-09-29T03:35:40+00:00: Recorded command exit 101; command argv SHA-256
   5286f5b03a50ded77ba040cd3bb90e976569e9dac453baee2d6983b92b4d0672.
+
+- 2026-09-29T03:36:07+00:00: Coordinator stopped worker after independent review found P1 lifecycle
+  and production-callsite gaps; preserve signed 1a26b02 plus dirty follow-on diff and transfer to
+  repair worker.
