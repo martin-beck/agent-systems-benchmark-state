@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1512-process-owner-material-contract",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-29T06:58:03+00:00",
+  "claim_expires": "2026-09-29T07:04:46+00:00",
   "depends_on": [
     "AR-1502",
     "AR-1484"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated process-owner material source and ordinary CLI/control caller needed to consume runtime authority.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Authenticated process-owner material contract",
-  "updated_at": "2026-09-29T04:58:57+00:00",
+  "updated_at": "2026-09-29T05:04:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1512-process-owner-material-contract"
 }
 ---
@@ -71,3 +71,5 @@ host data, synthetic authority, or weakening fail-closed/native/formal gates.
 
 - 2026-09-29T04:58:44+00:00: Recorded command exit 0; command argv SHA-256
   227bd2b8f251398a28e02809a6a2e32716ea68be7d6a13f02381b8daf3223aa1.
+
+- 2026-09-29T05:04:46+00:00: Heartbeat by ar1512-process-owner-luna56.
