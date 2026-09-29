@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1308](tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Development fixture path defect repaired and focused tests pass, but portable-smoke still fails closed at TLC JVM startup with pthread_create EAGAIN (host runner capacity), before attestation. No seed-digest blocker remains and no formal qualification is claimed. | Path handling is repaired: verify.sh now honors a regular preloaded TLC_JAR_PATH, and tlc_runner derives worker queues/temp/lock from a bounded TLC_RUNTIME_ROOT under /srv/data/projects. Rerun portable-smoke on a capacity-available disposable runner and record PORTABLE_SMOKE_EVIDENCE_OK; do not weaken required resource bounds or substitute reviewed seeds. | coordinator-ar1308-thread-admission-20260929 |
+| P0 | [AR-1308](tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Development verifier and portable admission repairs are validated: preloaded TLC JAR is accepted offline, runtime-root overrides remain bounded, and portable-smoke produced a success attestation after accounting for existing host threads. Full-exhaustive QEMU evidence is still pending; no reviewed seed or digest dependency remains. | Portable-smoke now succeeds with the preloaded offline TLC JAR and host-thread-aware nproc admission. Run the full-exhaustive tier on a fresh disposable QEMU/data overlay using the same generated-seed unsigned-development profile; record sanitized success or the exact remaining capacity failure. Keep formal/publication qualification separate. | coordinator-ar1308-thread-admission-20260929 |
 
 ## Blocked
 

@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
-  "checkpoint_commit": "c8a0c83a79f91bdf963daa6785be3157af790953",
+  "checkpoint_commit": "d6e175abe060e6408977884c9c06c69a3a738b5b",
   "claim_expires": "2026-09-29T19:02:03+00:00",
   "depends_on": [
     "AR-1304"
   ],
   "id": "AR-1308",
-  "next_action": "Path handling is repaired: verify.sh now honors a regular preloaded TLC_JAR_PATH, and tlc_runner derives worker queues/temp/lock from a bounded TLC_RUNTIME_ROOT under /srv/data/projects. Rerun portable-smoke on a capacity-available disposable runner and record PORTABLE_SMOKE_EVIDENCE_OK; do not weaken required resource bounds or substitute reviewed seeds.",
+  "next_action": "Portable-smoke now succeeds with the preloaded offline TLC JAR and host-thread-aware nproc admission. Run the full-exhaustive tier on a fresh disposable QEMU/data overlay using the same generated-seed unsigned-development profile; record sanitized success or the exact remaining capacity failure. Keep formal/publication qualification separate.",
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "d6e175abe060e6408977884c9c06c69a3a738b5b",
@@ -16,10 +16,10 @@
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Development fixture path defect repaired and focused tests pass, but portable-smoke still fails closed at TLC JVM startup with pthread_create EAGAIN (host runner capacity), before attestation. No seed-digest blocker remains and no formal qualification is claimed.",
-  "task_revision": 634,
+  "summary": "Development verifier and portable admission repairs are validated: preloaded TLC JAR is accepted offline, runtime-root overrides remain bounded, and portable-smoke produced a success attestation after accounting for existing host threads. Full-exhaustive QEMU evidence is still pending; no reviewed seed or digest dependency remains.",
+  "task_revision": 635,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T17:37:34+00:00",
+  "updated_at": "2026-09-29T17:38:58+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1939,3 +1939,10 @@ must report `qualification_authorized: false`.
 
 - 2026-09-29T17:37:34+00:00: Recorded command exit 0; command argv SHA-256
   5054620f4734c09cd06b16a560593673cd03a52f6fa926c0a5307e04357747ea.
+
+- 2026-09-29T17:38:58+00:00: Portable-smoke exact run succeeded with
+  TLC_JAR_PATH=/srv/data/projects/ar1308-development/state-seed-v14/tla2tools.jar, TLC_RUNTIME_ROOT
+  under /srv/data/projects, and generated preloaded attestation
+  /srv/data/projects/ar1308-development/portable-preloaded-attestation-threadfix-v2.json. Earlier
+  EAGAIN was fixed by deriving RLIMIT_NPROC from /proc task counts rather than process count.
+  Focused tests pass; full suite next.
