@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1526](tasks/AR-1526.md): First-customer local/replay qualification | Qualify the merged ASB production-shaped local/mock and strict-replay customer path with sanitized evidence. | Promote after dependency verification; run the disposable first-customer-style local/mock and strict-replay qualification on exact protected main. | - |
+| P0 | [AR-1526](tasks/AR-1526.md): First-customer local/replay qualification | Qualify the merged ASB production-shaped local/mock and strict-replay customer path with sanitized evidence. | Promote after dependency verification; run the disposable first-customer-style local/mock and strict-replay qualification on exact protected main. | coordinator-ar1526-recovery-20260930 |
 
 ## Blocked
 
