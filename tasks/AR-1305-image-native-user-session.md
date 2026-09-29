@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1305",
-  "next_action": "Use any locally generated disposable seed with the explicit unsigned-development profile for further development tests. Do not block this AR on AR-1464/AR-1465 or a reviewed seed. If formal qualification is later authorized, open a new formal-only successor with its own reviewed-input contract.",
+  "next_action": "Repair the disposable cloud-init/QEMU fixture: generate the NoCloud seed with user-data before meta-data, attach a writable data overlay, and make runcmd execute the bounded image-native systemd-run probe. Then rerun once and record FULL_EXHAUSTIVE_TRANSIENT_RC=0; do not claim formal attestation.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "00a47726683609b7fef8ea5738fed5a3692fac29",
@@ -16,10 +16,10 @@
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Fresh immutable image v2 is reviewed for development use: base/package/result digests are recorded and a bounded network-disabled boot reaches user-session startup and FULL_EXHAUSTIVE_TRANSIENT_RC=0 without Transport endpoint failure. Development qualification does not depend on a reviewed seed digest; formal/publication qualification remains separate and optional.",
-  "task_revision": 76,
+  "summary": "Image v2 remains reviewed for development use, but the fresh generated-seed smoke was inconclusive: initial seed argument order caused userdata to be ignored, and the corrected run booted without executing runcmd. No formal evidence is claimed.",
+  "task_revision": 77,
   "title": "Image-native user-session support",
-  "updated_at": "2026-09-29T16:56:56+00:00",
+  "updated_at": "2026-09-29T16:57:25+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1305-image-native-user-session"
 }
 ---
@@ -288,3 +288,8 @@ limits and fail-closed behavior remain unchanged.
 
 - 2026-09-29T16:56:56+00:00: Recorded command exit 0; command argv SHA-256
   77e3e810093e453a4afee20df37df645faa87f34ffbf2224ee6789910b3c814e.
+
+- 2026-09-29T16:57:25+00:00: Bounded generated-seed QEMU attempts were run. First attempt had
+  cloud-localds arguments reversed and explicitly logged userdata ignored; second used correct order
+  and writable data overlay, reached cloud-init target but did not execute runcmd before controlled
+  teardown. Preserve diagnostic serial privately; repair fixture generation before closure.
