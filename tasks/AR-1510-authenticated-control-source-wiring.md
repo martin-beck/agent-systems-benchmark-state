@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1510-authenticated-control-source-wiring.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provide the authenticated platform control source and production lifecycle wiring required by the authority-provider receipt.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Authenticated control source and production provider wiring",
-  "updated_at": "2026-09-29T03:06:56+00:00",
+  "updated_at": "2026-09-29T10:38:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1510-authenticated-control-source-wiring"
 }
 ---
@@ -116,3 +116,6 @@ test-only façade publication, or weakening native/formal/privacy gates.
   non-goals and fail-closed requirements. Next action: create narrower successor to integrate a real
   authenticated platform authority provider and production control-client bootstrap/CLI wiring once
   that platform source and capability contract are available; do not publish AR-1509 façade commits.
+
+- 2026-09-29T10:38:34+00:00: AR-1482 independently confirmed the same missing process-owned
+  authenticated control source; start the narrower AR-1505-based production wiring successor.
