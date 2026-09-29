@@ -8,7 +8,7 @@
     "AR-1484"
   ],
   "id": "AR-1513",
-  "next_action": "Audit protected-main owner/enrollment issuer, ProcessOwnerMaterialLease, LiveProviderRuntimeHandle/DispatchSource, and ordinary CLI run/sweep seams; then implement authenticated bridge and provenance checks in isolated worktree.",
+  "next_action": "Implement runtime owner issuer call path and lease-to-dispatch lifecycle tests; then add provenance negatives and ordinary CLI/control adapter wiring.",
   "observed_branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
   "observed_dirty": 2,
   "observed_head": "f92c2e941913129d7db50480f71e8361a0d43a0c",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T05:33:30+00:00",
+  "updated_at": "2026-09-29T05:34:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -79,3 +79,12 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
 
 - 2026-09-29T05:33:30+00:00: Recorded command exit 101; command argv SHA-256
   bedfb3381b748877015928201c1d5e3d1ec4c97afb1b6f35e212a3b347e58607.
+
+- 2026-09-29T05:34:00+00:00: Call-graph audit complete: protected main already has authenticated
+  control bootstrap -> RuntimeCertificateChainStore -> LiveProviderRuntimeAuthorityProfile ->
+  crate-private RuntimeOwnedEnrollmentSource -> LiveProviderRuntimeHandle ->
+  LiveProviderRuntimeDispatchSource -> CLI run/sweep. It has no ProcessOwnerMaterialLease consumer.
+  Added initial process_owner_material module on isolated protected-main worktree with opaque
+  issuer/store, nonce/replay/lifecycle fencing, symlink/executable/hash checks, and one-shot
+  lease-to-dispatch bridge; focused compile currently reports unused integration seams pending
+  runtime-owner wiring.
