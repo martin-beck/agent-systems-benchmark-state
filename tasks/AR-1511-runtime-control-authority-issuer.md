@@ -8,7 +8,7 @@
     "AR-1484"
   ],
   "id": "AR-1511",
-  "next_action": "Repair P1 lifecycle fences and production issuer integration; preserve 1a26b02 plus dirty diff as audit evidence; add negative tests/docs, then independent review.",
+  "next_action": "Run full asb-runtime/workspace gates after lifecycle repair; add generated docs/negative contract coverage, then inspect exact diff for independent review.",
   "observed_branch": "feature/ar-1511-runtime-control-authority-issuer",
   "observed_dirty": 2,
   "observed_head": "1a26b02e2b6de485e930a0448d7fe5d34aed3061",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 67,
+  "task_revision": 68,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T03:46:08+00:00",
+  "updated_at": "2026-09-29T03:46:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
@@ -254,3 +254,14 @@ production authority, or weakening fail-closed/native/formal gates.
 
 - 2026-09-29T03:46:08+00:00: Recorded command exit 0; command argv SHA-256
   d8c4bcc56a467f35f78e136a07d5519b01f64f075054bd0b9df191dfde0e43c7.
+
+- 2026-09-29T03:46:33+00:00: Lifecycle repair progress: shared Arc atomic lifecycle now propagates
+  issuer revoke/teardown to previously issued capabilities; capability verify requires current
+  cancellation and restart fences; revoke requires validated
+  binding/nonce/control-session/cancellation/restart proof and is idempotent. Added request
+  constructor and deterministic negative tests for fence drift and forged revoke. Initial full
+  asb-runtime gate failed only at
+  live_service::tests::control_bootstrap_materializes_only_matching_private_bindings with actual
+  EnrollmentMismatch because dirty fixture changed response generation to 7 but left chain identity
+  generation/digest at 1; fixed fixture to rebuild chain generation/digest. Focused rerun passed 1/1
+  plus binaries/integration targets. No opaque diagnostic retained; failure was recorded here.
