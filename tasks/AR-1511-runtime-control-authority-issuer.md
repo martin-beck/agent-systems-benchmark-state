@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T03:12:00+00:00",
+  "updated_at": "2026-09-29T03:12:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
@@ -76,3 +76,6 @@ production authority, or weakening fail-closed/native/formal gates.
   failed with invalid reference; explicit git -C product worktree creation then succeeded. Clean
   branch feature/ar-1511-runtime-control-authority-issuer is at protected main
   f92c2e941913129d7db50480f71e8361a0d43a0c with no product changes.
+
+- 2026-09-29T03:12:20+00:00: Recorded command exit 0; command argv SHA-256
+  295a35f99d4aa7024b5e0a35d1dd38654014d35e0d6da14a79231d3b8d7d50ba.
