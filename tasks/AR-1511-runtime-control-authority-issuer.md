@@ -8,7 +8,7 @@
     "AR-1484"
   ],
   "id": "AR-1511",
-  "next_action": "Commit 1a26b02 adds runtime-owned authenticated issuer/capability and docs; focused runtime authority tests, fmt check, and clippy pass. Next run workspace quality/review and wire only through runtime-owned composition.",
+  "next_action": "Workspace test rerun is needed serially: first workspace run had two pre-existing asb-cli lock-ownership failures from parallel tests; isolated authenticated_lifecycle_ filter passes 8/8. Then rerun workspace without parallel lock collisions and run exact diff review.",
   "observed_branch": "feature/ar-1511-runtime-control-authority-issuer",
   "observed_dirty": 0,
   "observed_head": "1a26b02e2b6de485e930a0448d7fe5d34aed3061",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T03:27:07+00:00",
+  "updated_at": "2026-09-29T03:27:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
@@ -143,3 +143,10 @@ production authority, or weakening fail-closed/native/formal gates.
 
 - 2026-09-29T03:27:07+00:00: Recorded command exit 0; command argv SHA-256
   af534639c3c39c31b189af38674a35ff1cd70138179487f1d660e9c22a29f510.
+
+- 2026-09-29T03:27:35+00:00: Workspace cargo test --locked --workspace --no-fail-fast reached one
+  target failure: asb-cli tests authenticated_lifecycle_rejects_provenance_and_retries_idempotently
+  and authenticated_lifecycle_restart_fences_unfinished_intent panicked because control state root
+  was already owned (parallel test lock collision). No authority_issuer failure. Serial cargo test
+  -p asb-cli authenticated_lifecycle_ passed 8/8. This is an environmental/order-sensitive baseline
+  failure, not changed code.
