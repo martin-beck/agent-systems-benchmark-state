@@ -7,7 +7,7 @@
     "AR-1304"
   ],
   "id": "AR-1308",
-  "next_action": "Portable-smoke now succeeds with the preloaded offline TLC JAR and host-thread-aware nproc admission. Run the full-exhaustive tier on a fresh disposable QEMU/data overlay using the same generated-seed unsigned-development profile; record sanitized success or the exact remaining capacity failure. Keep formal/publication qualification separate.",
+  "next_action": "Release the stale claim as blocked, then promote AR-1516 to repair terminal-result capture and classify the bounded timeout; keep AR-1309 as the separate capacity/model-reduction successor. Development remains generated-seed and unsigned.",
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "d6e175abe060e6408977884c9c06c69a3a738b5b",
@@ -16,10 +16,10 @@
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Development verifier and portable admission repairs are validated: preloaded TLC JAR is accepted offline, runtime-root overrides remain bounded, and portable-smoke produced a success attestation after accounting for existing host threads. Full-exhaustive QEMU evidence is still pending; no reviewed seed or digest dependency remains.",
-  "task_revision": 690,
+  "summary": "Development QEMU fixture is bootable and offline-JAR verified, but full-exhaustive TLC produced no terminal result within 1200 seconds and was terminated; no qualification is claimed.",
+  "task_revision": 691,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T18:26:47+00:00",
+  "updated_at": "2026-09-29T18:28:33+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -2100,3 +2100,8 @@ must report `qualification_authorized: false`.
 
 - 2026-09-29T18:26:47+00:00: Recorded command exit 0; command argv SHA-256
   64c01cd03fd738dc8f43a021946b7e35dc185074fb04415a13f7d52c1ec4d186.
+
+- 2026-09-29T18:28:33+00:00: Terminal evidence: serial-ar1308-full2b.log reached
+  FULL_EXHAUSTIVE_TRANSIENT_RC=0 and /mnt/asb-data/tla2tools.jar: OK; qemu timeout terminated the
+  run at 1200s with no FULL_EXHAUSTIVE_RC or attestation marker. This is a development
+  capacity/nonterminal failure, not a model result or formal qualification.

@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1308](tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Development verifier and portable admission repairs are validated: preloaded TLC JAR is accepted offline, runtime-root overrides remain bounded, and portable-smoke produced a success attestation after accounting for existing host threads. Full-exhaustive QEMU evidence is still pending; no reviewed seed or digest dependency remains. | Portable-smoke now succeeds with the preloaded offline TLC JAR and host-thread-aware nproc admission. Run the full-exhaustive tier on a fresh disposable QEMU/data overlay using the same generated-seed unsigned-development profile; record sanitized success or the exact remaining capacity failure. Keep formal/publication qualification separate. | coordinator-ar1308-thread-admission-20260929 |
+| P0 | [AR-1308](tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Development QEMU fixture is bootable and offline-JAR verified, but full-exhaustive TLC produced no terminal result within 1200 seconds and was terminated; no qualification is claimed. | Release the stale claim as blocked, then promote AR-1516 to repair terminal-result capture and classify the bounded timeout; keep AR-1309 as the separate capacity/model-reduction successor. Development remains generated-seed and unsigned. | coordinator-ar1308-thread-admission-20260929 |
 
 ## Blocked
 
