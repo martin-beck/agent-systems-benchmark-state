@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind immutable cassette content to a runtime-authenticated replay backend handle.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Authenticated immutable cassette backend",
-  "updated_at": "2026-09-29T11:56:46+00:00",
+  "updated_at": "2026-09-29T11:57:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1272-cassette-backend"
 }
 ---
@@ -160,3 +160,6 @@ paths as authority.
 
 - 2026-09-29T11:56:46+00:00: Recorded command exit 0; command argv SHA-256
   e3e8589c14f2775f7ef4cd479c18f3fefd2f56e77a38c0a93ba1c5ed4cff8db9.
+
+- 2026-09-29T11:57:05+00:00: Recorded command exit 1; command argv SHA-256
+  15d937d322e5246048aa5fcb911d915ea57e5672a0e0acb46bd69cd1788ea068.
