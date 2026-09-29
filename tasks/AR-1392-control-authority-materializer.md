@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1392-control-authority-materializer",
-  "checkpoint_commit": "0ea9671224ff6b51fbe0a3be4ac9817c4526356c",
+  "checkpoint_commit": "d59e6a76a1c7a432e63f0d765909b554bd12416c",
   "claim_expires": "2026-09-29T14:29:53+00:00",
   "depends_on": [
     "AR-1388",
@@ -14,7 +14,7 @@
     "AR-1340"
   ],
   "id": "AR-1392",
-  "next_action": "PR #385 exact head 0ea9671: wait for all 12 required checks and independent review, then guarded non-squash merge; preserve PR #339 topology failure.",
+  "next_action": "Monitor seven exact-main workflows for merge d59e6a7: Huawei 36568751882 green; hosted 36568751695, fault 36568751891, formal 36568751877, Rust 36568751779, emulated AArch64 36568751799, Repository quality 36568751966 pending.",
   "observed_branch": "feature/ar-1392-control-authority-materializer",
   "observed_dirty": 0,
   "observed_head": "0ea9671224ff6b51fbe0a3be4ac9817c4526356c",
@@ -24,9 +24,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve private live authority from authenticated control enrollment without caller injection.",
-  "task_revision": 139,
+  "task_revision": 140,
   "title": "Control-owned private authority materializer",
-  "updated_at": "2026-09-29T12:32:48+00:00",
+  "updated_at": "2026-09-29T12:38:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1392-control-authority-materializer"
 }
 ---
@@ -463,3 +463,10 @@ reachability.
 
 - 2026-09-29T12:32:48+00:00: Recorded command exit 0; command argv SHA-256
   570dabf9edffd4125d21ef78768dd7a405e00bd4b62eb797a5ad1737825b024f.
+
+- 2026-09-29T12:38:55+00:00: PR #385 exact head 0ea9671224ff6b51fbe0a3be4ac9817c4526356c had all 13
+  displayed checks SUCCESS (the required 12 plus credential-free), zero changed files, and CLEAN
+  merge state. Guarded normal merge completed as d59e6a76a1c7a432e63f0d765909b554bd12416c with
+  parents 47329e35c03bf20505ce65c7a29487ab97c52ee9 and 0ea9671224ff6b51fbe0a3be4ac9817c4526356c;
+  tree equals current main and topic. Historical PR #339 failure 36279474851 and merge 3cd6a5a
+  preserved.

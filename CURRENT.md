@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1392](tasks/AR-1392-control-authority-materializer.md): Control-owned private authority materializer | Resolve private live authority from authenticated control enrollment without caller injection. | PR #385 exact head 0ea9671: wait for all 12 required checks and independent review, then guarded non-squash merge; preserve PR #339 topology failure. | ar1392-topology-repair-luna56 |
+| P0 | [AR-1392](tasks/AR-1392-control-authority-materializer.md): Control-owned private authority materializer | Resolve private live authority from authenticated control enrollment without caller injection. | Monitor seven exact-main workflows for merge d59e6a7: Huawei 36568751882 green; hosted 36568751695, fault 36568751891, formal 36568751877, Rust 36568751779, emulated AArch64 36568751799, Repository quality 36568751966 pending. | ar1392-topology-repair-luna56 |
 
 ## Blocked
 
