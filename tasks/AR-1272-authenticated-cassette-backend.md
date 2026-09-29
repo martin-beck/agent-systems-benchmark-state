@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind immutable cassette content to a runtime-authenticated replay backend handle.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Authenticated immutable cassette backend",
-  "updated_at": "2026-09-29T11:51:23+00:00",
+  "updated_at": "2026-09-29T11:51:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1272-cassette-backend"
 }
 ---
@@ -136,3 +136,6 @@ paths as authority.
   8d92c9ec1f81ff812a80c64561a3fcc2dd8af4dfeb06454e7db3ca63060c6a02.
 
 - 2026-09-29T11:51:23+00:00: Heartbeat by ar1272-cassette-backend-luna56.
+
+- 2026-09-29T11:51:25+00:00: Recorded command exit 0; command argv SHA-256
+  b40166b3a961e48fe0576df8d25e40ae337d9a0c38632ec2ceaca49f8cd9d118.
