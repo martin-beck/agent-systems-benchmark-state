@@ -226,11 +226,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1367](../tasks/AR-1367-ar1329-production-dispatch-integration.md): AR-1329 production dispatch integration | Unclaimed | Complete production asb run/sweep live-provider dispatch through runtime-owned authenticated acquisition and teardown. | Promote and claim this fresh AR-1329 successor, refresh an isolated worktree to protected main, audit the production run/sweep dispatch seam, and implement only through runtime-owned bridge inputs. |
+| P0 | [AR-1367](../tasks/AR-1367-ar1329-production-dispatch-integration.md): AR-1329 production dispatch integration | coordinator-ar1367-production-dispatch-20260930 | Complete production asb run/sweep live-provider dispatch through runtime-owned authenticated acquisition and teardown. | Promote and claim this fresh AR-1329 successor, refresh an isolated worktree to protected main, audit the production run/sweep dispatch seam, and implement only through runtime-owned bridge inputs. |
 
 ### Blocked (79)
 

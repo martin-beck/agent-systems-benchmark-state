@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1367-ar1329-production-dispatch-integration",
   "checkpoint_commit": "0c6dc52e1f4aa5854f73081711dbd9a5bc1a5d7c",
-  "claim_expires": "",
+  "claim_expires": "2026-09-30T00:24:53+00:00",
   "depends_on": [
     "AR-1366",
     "AR-1340",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1367-ar1329-production-dispatch-integration",
   "observed_dirty": 0,
   "observed_head": "5c4d5304e53d2cd9559999a00afd86cac28d29dc",
-  "owner": "",
+  "owner": "coordinator-ar1367-production-dispatch-20260930",
   "plan": "../plans/AR-1367-ar1329-production-dispatch-integration.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Complete production asb run/sweep live-provider dispatch through runtime-owned authenticated acquisition and teardown.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "AR-1329 production dispatch integration",
-  "updated_at": "2026-09-29T22:24:51+00:00",
+  "updated_at": "2026-09-29T22:24:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1367-ar1329-production-dispatch-integration"
 }
 ---
@@ -90,3 +90,5 @@ reachability.
 - 2026-09-29T22:24:51+00:00: Dependencies are complete; re-audit the protected-main production
   dispatch seam against canonical AR-1523 without requiring live provider reachability for
   development.
+
+- 2026-09-29T22:24:53+00:00: Claimed by coordinator-ar1367-production-dispatch-20260930.

@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1367](tasks/AR-1367-ar1329-production-dispatch-integration.md): AR-1329 production dispatch integration | Complete production asb run/sweep live-provider dispatch through runtime-owned authenticated acquisition and teardown. | Promote and claim this fresh AR-1329 successor, refresh an isolated worktree to protected main, audit the production run/sweep dispatch seam, and implement only through runtime-owned bridge inputs. | - |
+| P0 | [AR-1367](tasks/AR-1367-ar1329-production-dispatch-integration.md): AR-1329 production dispatch integration | Complete production asb run/sweep live-provider dispatch through runtime-owned authenticated acquisition and teardown. | Promote and claim this fresh AR-1329 successor, refresh an isolated worktree to protected main, audit the production run/sweep dispatch seam, and implement only through runtime-owned bridge inputs. | coordinator-ar1367-production-dispatch-20260930 |
 
 ## Blocked
 
