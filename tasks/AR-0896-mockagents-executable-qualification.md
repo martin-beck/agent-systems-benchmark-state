@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Qualify the pinned MockAgents executable",
-  "updated_at": "2026-09-29T12:48:33+00:00",
+  "updated_at": "2026-09-29T12:49:17+00:00",
   "worktree_key": "agent-systems-benchmark-mockagents-executable-qualification"
 }
 ---
@@ -222,3 +222,6 @@ synthetic fixture for black-box executable evidence.
 
 - 2026-09-29T12:48:33+00:00: Recorded command exit 1; command argv SHA-256
   cb1a9cd79c106f3be2f1d5d586febb95ac09f117e929aa2baae400367e3d35d6.
+
+- 2026-09-29T12:49:17+00:00: Recorded command exit 1; command argv SHA-256
+  6eee98df250337563426f92e6685c7dc352c2aa997a03610ba2d5f0a0177c457.
