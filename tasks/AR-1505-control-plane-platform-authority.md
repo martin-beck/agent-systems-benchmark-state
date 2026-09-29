@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Monitor rerun Repository quality workflow 36504328236 on exact head da5e2a9 to terminal; if green request fresh exact-head independent review, do not merge.",
+  "next_action": "Diagnose exact hosted 89.98 percent line-floor miss from workflow 36504328236; add only focused legitimate provider-free coverage for AR-1505 paths, rerun unchanged gates, then signed DCO commit/push and fresh review.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 0,
   "observed_head": "da5e2a916b66de9f31f2c5bcccd1f59f7b3321d2",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 268,
+  "task_revision": 269,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T01:07:17+00:00",
+  "updated_at": "2026-09-29T01:09:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -1057,3 +1057,11 @@ public credential/socket paths, or weakening fail-closed gates.
   were removed.
 
 - 2026-09-29T01:07:17+00:00: Heartbeat by ar1505-repair-luna56.
+
+- 2026-09-29T01:09:41+00:00: Fresh-runner rerun 36504328236 reached terminal FAILURE at
+  2026-09-29T01:09:10Z on exact head da5e2a916b66de9f31f2c5bcccd1f59f7b3321d2. Hosted log shows all
+  policy steps through dependency checks SUCCESS, then Enforce coverage floors failed: TOTAL 105836
+  regions 88.07 percent, 69999 lines covered of 77015, line coverage 89.98 percent, and cargo
+  llvm-cov --workspace --all-targets --fail-under-lines 90 returned exit 1. This disproves the
+  earlier local profraw-only classification as sufficient; floor is genuinely 0.02 percentage points
+  under. No product mutation or gate weakening made; next action is focused coverage diagnosis.
