@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "checkpoint_commit": "df0e402f442468e43e06b7c1acb3c3667277fb75",
-  "claim_expires": "2026-09-29T14:04:31+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1304"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
-  "owner": "ar1308-capacity-repair-luna56",
+  "owner": "",
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Prepared signed capacity passes image, 64 GiB overlay, exact ab485f767 source/tree, JDK/TLC/model and canonical lock; preflight fails only on host SwapFree below 1 GiB and unavailable reviewed seed b3383756...ece4b28.",
-  "task_revision": 559,
+  "task_revision": 560,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T12:06:49+00:00",
+  "updated_at": "2026-09-29T12:06:58+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1704,3 +1704,9 @@ must report `qualification_authorized: false`.
   model af8af6a9..., canonical owner-private lock, and unchanged 3G/3G/2-worker/2-core/8G/7200s
   contract. Focused tests 22/22 pass. No VM/TLC boot or qualification; successor requires external
   immutable seed and safe swap.
+
+- 2026-09-29T12:06:58+00:00: Released blocked after bounded repair: signed preflight passes repaired
+  image/64 GiB overlay/exact ab485f767 source/tree/JDK/TLC/model/canonical lock, but host SwapFree
+  remains below 1 GiB and reviewed seed b3383756...ece4b28 is unavailable. 22/22 focused tests pass;
+  no VM/TLC boot or qualification. External operator must supply exact seed and safe swap; do not
+  regenerate/substitute or widen AR-1307 limits.
