@@ -16,11 +16,11 @@
   "plan": "../plans/AR-0896.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Qualify the pinned MockAgents executable",
-  "updated_at": "2026-09-16T18:37:54+00:00",
+  "updated_at": "2026-09-29T12:42:30+00:00",
   "worktree_key": "agent-systems-benchmark-mockagents-executable-qualification"
 }
 ---
@@ -205,3 +205,7 @@ synthetic fixture for black-box executable evidence.
 
 - 2026-09-16T18:37:54+00:00: Released ownerless blocked after terminal rerun success and local 3/3
   smoke qualification; complete hostile cases and arm64 executable evidence remain required.
+
+- 2026-09-29T12:42:30+00:00: AR-1308 external seed/swap remain unavailable; advance the
+  dependency-complete MockAgents qualification audit to determine whether hostile lifecycle/network
+  and AArch64 evidence can now be produced without weakening gates.
