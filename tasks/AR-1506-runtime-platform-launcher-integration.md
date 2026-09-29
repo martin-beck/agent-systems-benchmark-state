@@ -13,7 +13,7 @@
     "AR-1505"
   ],
   "id": "AR-1506",
-  "next_action": "Implement runtime-owned platform launcher adapter and wire ordinary CLI run/sweep to an opaque authenticated dispatch source; add provider-free lifecycle negatives.",
+  "next_action": "Blocked pending a real runtime-owned platform adapter that constructs private RuntimeAuthorityInputs from authenticated AR-1505 bootstrap state; do not publish current facade. Required follow-up must remove public source injection and wire the production entrypoint without synthetic roots/tools/policy.",
   "observed_branch": "feature/ar-1506-runtime-platform-launcher-integration",
   "observed_dirty": 0,
   "observed_head": "8b0394e70f7970a17dec354a68d0c056adb31236",
@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect the merged authenticated platform authority/bootstrap protocol to production ASB process startup and ordinary CLI dispatch.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Runtime platform launcher integration",
-  "updated_at": "2026-09-29T02:04:22+00:00",
+  "updated_at": "2026-09-29T02:05:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1506-runtime-platform-launcher-integration"
 }
 ---
@@ -143,3 +143,11 @@ production evidence.
   fb41037a684c4eacabd62eb60a0ae25a18a6247d6c01ca1a8338a3de1e54b7d4.
 
 - 2026-09-29T02:04:22+00:00: Heartbeat by ar1506-launcher-luna56.
+
+- 2026-09-29T02:05:04+00:00: Independent exact-diff review found two P1 gaps:
+  RuntimePlatformLauncher::from_authenticated_source is public and accepts a caller-supplied opaque
+  source; asb-cli::run remains DispatchAuthority::Offline, so the helper is not production entry
+  wiring. AR-1505 exposes only authenticated digest metadata and keeps RuntimeAuthorityInputs
+  construction crate-private; no safe platform-owned mapping to lease/relay/tool/policy roots exists
+  in this checkout. Implementing one from fixed paths or mock data would synthesize authority and
+  violate AR-1506 non-goals. Current commit 8b0394e is intentionally not pushed.
