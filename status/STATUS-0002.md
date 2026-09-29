@@ -200,16 +200,11 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1305](../tasks/AR-1305-image-native-user-session.md): Image-native user-session support | coordinator-ar1305-image-v2 | Fresh immutable qcow2 image v2 was built from the reviewed Ubuntu 24.04 base with the staged dbus-user-session package injected offline. A bounded network-disabled QEMU boot using the repaired data fixture reached systemd user-session startup and FULL_EXHAUSTIVE_TRANSIENT_RC=0; no Transport endpoint failure was observed. This is development evidence only and not formal qualification. | Independent review the image package/base digests and run the complete AR-1304 required-tier gates against this fresh image, including exact signed inputs and attestation. Keep AR-1305 open until those gates pass; do not substitute this diagnostic run for formal qualification. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
+| P0 | [AR-1305](../tasks/AR-1305-image-native-user-session.md): Image-native user-session support | Unclaimed | Fresh immutable qcow2 image v2 was built from the reviewed Ubuntu 24.04 base with the staged dbus-user-session package injected offline. A bounded network-disabled QEMU boot using the repaired data fixture reached systemd user-session startup and FULL_EXHAUSTIVE_TRANSIENT_RC=0; no Transport endpoint failure was observed. This is development evidence only and not formal qualification. | Independent review the image package/base digests and run the complete AR-1304 required-tier gates against this fresh image, including exact signed inputs and attestation. Keep AR-1305 open until those gates pass; do not substitute this diagnostic run for formal qualification. |
 | P0 | [AR-1514](../tasks/AR-1514-runtime-auth-reconciliation.md): Reconciled development auth handoff runtime | Unclaimed | Repair ASB development-runtime reconciliation between digest-only enrollment and helper invocation. | PR #386 is open at exact head a97dfb39c78478445180db0e38574c17db266700 against protected base d59e6a76a1c7a432e63f0d765909b554bd12416c; hosted exact-head checks remain pending. Obtain independent review and terminal hosted checks before merge; do not claim paired asb-tui qualification here. |
 
 ### Blocked (78)
