@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "checkpoint_commit": "df0e402f442468e43e06b7c1acb3c3667277fb75",
-  "claim_expires": "2026-09-29T14:25:51+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1304"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
-  "owner": "coordinator-ar1308-fixture-v9",
+  "owner": "",
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Unsigned-development fixture v9 uses the exact AR-1307 head with self-contained Git metadata, self-contained JDK, preloaded TLC, and repaired state bind. Preflight passes; bounded network-disabled QEMU reaches FULL_EXHAUSTIVE_TRANSIENT_RC=0 and starts the offline TLC process without provenance or java.security errors. The bounded window ends before full exhaustive attestation, so no formal qualification is claimed.",
-  "task_revision": 587,
+  "task_revision": 588,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T14:16:04+00:00",
+  "updated_at": "2026-09-29T14:16:07+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1804,3 +1804,6 @@ must report `qualification_authorized: false`.
   launched TLC offline; no network fallback or signing bypass was used. Diagnostic artifacts remain
   under /srv/data/projects/ar1308-development; raw serial was truncated after sanitized marker
   extraction.
+
+- 2026-09-29T14:16:07+00:00: Released after v9 fixture repair. Formal qualification remains blocked
+  solely by the unavailable exact reviewed seed and the bounded run not producing full attestation.
