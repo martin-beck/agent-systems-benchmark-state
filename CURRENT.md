@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1367](tasks/AR-1367-ar1329-production-dispatch-integration.md): AR-1329 production dispatch integration | Complete production asb run/sweep live-provider dispatch through runtime-owned authenticated acquisition and teardown. | Promote and claim this fresh AR-1329 successor, refresh an isolated worktree to protected main, audit the production run/sweep dispatch seam, and implement only through runtime-owned bridge inputs. | coordinator-ar1367-metadata-20260930 |
+| P0 | [AR-1367](tasks/AR-1367-ar1329-production-dispatch-integration.md): AR-1329 production dispatch integration | Complete production asb run/sweep live-provider dispatch through runtime-owned authenticated acquisition and teardown. | Remain blocked on canonical AR-1523: a platform-owned authenticated private authority source and opaque materialization handoff are required before replacing PlanAuthoritySource live-mode rejection. Then rerun exact-head production dispatch gates. | coordinator-ar1367-metadata-20260930 |
 
 ## Blocked
 

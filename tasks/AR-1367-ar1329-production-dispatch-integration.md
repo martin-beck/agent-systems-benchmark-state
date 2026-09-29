@@ -10,7 +10,7 @@
     "AR-1328"
   ],
   "id": "AR-1367",
-  "next_action": "Promote and claim this fresh AR-1329 successor, refresh an isolated worktree to protected main, audit the production run/sweep dispatch seam, and implement only through runtime-owned bridge inputs.",
+  "next_action": "Remain blocked on canonical AR-1523: a platform-owned authenticated private authority source and opaque materialization handoff are required before replacing PlanAuthoritySource live-mode rejection. Then rerun exact-head production dispatch gates.",
   "observed_branch": "feature/ar-1367-ar1329-production-dispatch-integration",
   "observed_dirty": 0,
   "observed_head": "bf89a45ddd71af96e6d4b6954320e199e147f83e",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Complete production asb run/sweep live-provider dispatch through runtime-owned authenticated acquisition and teardown.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "AR-1329 production dispatch integration",
-  "updated_at": "2026-09-29T22:57:56+00:00",
+  "updated_at": "2026-09-29T22:58:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1367-ar1329-production-dispatch-integration"
 }
 ---
@@ -116,3 +116,6 @@ reachability.
   production-dispatch audit; live authority source remains unavailable.
 
 - 2026-09-29T22:57:56+00:00: Claimed by coordinator-ar1367-metadata-20260930.
+
+- 2026-09-29T22:58:09+00:00: Corrected durable next action after exact production-dispatch audit; no
+  product mutation.
