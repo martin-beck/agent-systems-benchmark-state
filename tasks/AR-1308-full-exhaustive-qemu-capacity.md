@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Unsigned-development fixture v2 boots network-disabled, creates asb user/data UUID, reaches cloud-init and transient cgroup RC=0, then powers down; state bind path remains incomplete.",
-  "task_revision": 580,
+  "task_revision": 581,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T13:29:07+00:00",
+  "updated_at": "2026-09-29T13:44:10+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1777,3 +1777,6 @@ must report `qualification_authorized: false`.
 - 2026-09-29T13:29:07+00:00: Released blocked for the next unsigned-development fixture repair:
   create the state directory/layout before bind. Signing is not a requirement for this diagnostic
   path.
+
+- 2026-09-29T13:44:10+00:00: Repairing unsigned-development fixture v3: populated disposable state
+  volume and rerunning bounded no-network boot.
