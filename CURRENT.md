@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1534](tasks/AR-1534.md): Coordinator vendor integrity repair | Coordinator-state AR-0022 has signed+DCO local implementation 24d1b1d with 1454-test, Ruff, format, and mypy gates green; no reviewed PR, hosted CI, or immutable release yet, so vendor integrity remains fail-closed. | Remain blocked pending coordinator-state AR-0022 reviewed PR, green exact-head hosted CI, and immutable v0.3.26 release. Then synchronize the exact vendor snapshot, rerun vendor verification and all ASB state gates, independently review the diff, and only then resume AR-1532/1533 qualification work. | codex-asb-ar1534-coordinator-followup-20260930 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -77,6 +71,7 @@ Never edit this file directly.
 | P0 | [AR-1531](tasks/AR-1531.md): Provision signed 8G formal capacity fixture | Provision the missing 8G/8G disposable formal fixture and resource evidence required by AR-1522. | External operator must supply the exact reviewed formal seed and matching model/JDK/TLC/source inputs; preserve the provisioned 8 GiB/8 GiB fixture and do not run qualification before preflight passes. | - |
 | P0 | [AR-1532](tasks/AR-1532.md): AR-1307 unsigned-development runner repair | Repair and independently qualify the provider-free unsigned-development runner path associated with AR-1307 without changing formal limits or evidence gates. | Wait for AR-1534 to repair the approved coordinator vendor boundary; then rerun vendor verification, full state gates and exact-head review. Preserve the non-qualifying development result and do not claim formal AR-1307 qualification. | - |
 | P0 | [AR-1533](tasks/AR-1533.md): AR-1308 unsigned-development QEMU fixture repair | Repair the provider-free unsigned-development QEMU fixture for AR-1308 and make its diagnostics, cleanup and non-qualification boundary reliable. | Wait for AR-1534 to repair the approved coordinator vendor boundary; then rerun vendor verification, full state gates and exact-head review. Preserve the diagnostic qualification_authorized=false result and do not claim formal AR-1308 qualification. | - |
+| P0 | [AR-1534](tasks/AR-1534.md): Coordinator vendor integrity repair | Coordinator-state AR-0022 has signed+DCO local implementation 24d1b1d with 1454-test, Ruff, format, and mypy gates green; no reviewed PR, hosted CI, or immutable release yet, so vendor integrity remains fail-closed. | Remain blocked pending coordinator-state AR-0022 reviewed PR, green exact-head hosted CI, and immutable v0.3.26 release. Then synchronize the exact vendor snapshot, rerun vendor verification and all ASB state gates, independently review the diff, and only then resume AR-1532/1533 qualification work. | - |
 | P1 | [AR-0604](tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Obtain authorized native x86 runner and immutable CSB/Python evidence; rerun native_boundary and record A/B overhead. | - |
 | P1 | [AR-0814](tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Create successor AR for authenticated route/ancestor authority; preserve AR-1288 evidence and AR-0814 head 29cfa193. | - |
 | P1 | [AR-0832](tasks/AR-0832-aiws-runner-qualification.md): Qualify development host ASB runner operations | Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery. | Run repeated clean ASB jobs on every declared development host label and audit reset, isolation, architecture, and artifact provenance. | - |
