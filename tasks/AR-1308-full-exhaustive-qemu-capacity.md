@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "checkpoint_commit": "df0e402f442468e43e06b7c1acb3c3667277fb75",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T13:33:40+00:00",
   "depends_on": [
     "AR-1304"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
-  "owner": "",
+  "owner": "coordinator-ar1308-development",
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Prepared signed capacity passes image, 64 GiB overlay, exact ab485f767 source/tree, JDK/TLC/model and canonical lock; host capacity now passes with dedicated swap, but the reviewed seed b3383756...ece4b28 is unavailable.",
-  "task_revision": 573,
+  "task_revision": 574,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T13:23:37+00:00",
+  "updated_at": "2026-09-29T13:23:40+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1752,3 +1752,5 @@ must report `qualification_authorized: false`.
   generated NoCloud seed; preflight passed as diagnostic and one network-disabled QEMU boot powered
   down, but guest fixture failed because the copied data image lacks the expected UUID and base
   image lacks user asb. No signed qualification or release claim.
+
+- 2026-09-29T13:23:40+00:00: Claimed by coordinator-ar1308-development.
