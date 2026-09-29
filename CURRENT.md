@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1529](tasks/AR-1529.md): AR-1307/1308 formal capacity decision successor | Replace the stale AR-1309 dependency with a reviewed formal capacity/model decision grounded in the completed capacity and reduced-profile evidence. | Promote after dependency verification; review AR-1517/AR-1520 and record the narrow formal capacity/model contract for AR-1307/1308 without requiring a development seed archive. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -108,7 +114,6 @@ Never edit this file directly.
 | P0 | [AR-1309](tasks/AR-1309-reviewed-capacity-or-model-reduction.md): Reviewed full-exhaustive capacity or model-reduction contract | Provide a reviewed successor contract after terminal full-exhaustive capacity OOM. | Superseded by AR-1529: preserve this historical decision record and do not promote it because its dependency on blocked AR-1307/1308 cannot express the already completed capacity decision. | - |
 | P0 | [AR-1521](tasks/AR-1521.md): AR-1307/1308 formal capacity repair implementation | Implement the reviewed successor contract that repairs the AR-1308 full-tier capacity failure while preserving AR-1307 qualification boundaries. | Remain planned until AR-1529 selects and records the formal capacity or model-reduction contract; then implement that contract without changing AR-1307 limits. | - |
 | P0 | [AR-1522](tasks/AR-1522.md): AR-1307/1308 formal qualification rerun | Run and independently verify the repaired AR-1307/1308 full-tier qualification, or leave a truthful classified blocker. | Remain planned until AR-1521 is merged and its exact-head CI evidence is green; then run the one authorized terminal qualification attempt. | - |
-| P0 | [AR-1529](tasks/AR-1529.md): AR-1307/1308 formal capacity decision successor | Replace the stale AR-1309 dependency with a reviewed formal capacity/model decision grounded in the completed capacity and reduced-profile evidence. | Promote after dependency verification; review AR-1517/AR-1520 and record the narrow formal capacity/model contract for AR-1307/1308 without requiring a development seed archive. | - |
 | P1 | [AR-0808](tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. | - |
 | P1 | [AR-0809](tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. | - |
 | P1 | [AR-0810](tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project's GitHub Pages site. | - |
