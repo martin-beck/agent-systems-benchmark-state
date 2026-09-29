@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Image v2 remains reviewed for development use, but the fresh generated-seed smoke was inconclusive: initial seed argument order caused userdata to be ignored, and the corrected run booted without executing runcmd. No formal evidence is claimed.",
-  "task_revision": 79,
+  "task_revision": 80,
   "title": "Image-native user-session support",
-  "updated_at": "2026-09-29T16:58:19+00:00",
+  "updated_at": "2026-09-29T16:58:22+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1305-image-native-user-session"
 }
 ---
@@ -298,3 +298,6 @@ limits and fail-closed behavior remain unchanged.
   cloud-init/QEMU fixture repair recorded above.
 
 - 2026-09-29T16:58:19+00:00: Claimed by coordinator-ar1305-devtest-20260929b.
+
+- 2026-09-29T16:58:22+00:00: Recorded command exit 0; command argv SHA-256
+  45f7ba5d79480800bf1eac5893237f8eee7f5942ae85f0a725c50c3e73cea5d9.
