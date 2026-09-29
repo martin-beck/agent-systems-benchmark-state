@@ -10,9 +10,10 @@
   "plan": "../plans/AR-1309.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "superseded",
   "summary": "Provide a reviewed successor contract after terminal full-exhaustive capacity OOM.",
-  "task_revision": 2,
+  "superseded_by": "AR-1529",
+  "task_revision": 3,
   "title": "Reviewed full-exhaustive capacity or model-reduction contract",
   "updated_at": "2026-09-18T19:10:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1309-reviewed-capacity-or-model-reduction"
