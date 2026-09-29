@@ -8,7 +8,7 @@
     "AR-1484"
   ],
   "id": "AR-1511",
-  "next_action": "Workspace test rerun is needed serially: first workspace run had two pre-existing asb-cli lock-ownership failures from parallel tests; isolated authenticated_lifecycle_ filter passes 8/8. Then rerun workspace without parallel lock collisions and run exact diff review.",
+  "next_action": "Serial workspace cargo test is green; exact signed product head is 1a26b02. Next: independent exact-head diff review, then publish PR/CI through the guarded workflow; no live/provider claim.",
   "observed_branch": "feature/ar-1511-runtime-control-authority-issuer",
   "observed_dirty": 0,
   "observed_head": "1a26b02e2b6de485e930a0448d7fe5d34aed3061",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T03:29:12+00:00",
+  "updated_at": "2026-09-29T03:29:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
@@ -155,3 +155,8 @@ production authority, or weakening fail-closed/native/formal gates.
   75c78d32767dce560bf5f297627c4f938f132975bbcda14d85ca271d3cd6f91e.
 
 - 2026-09-29T03:29:12+00:00: Heartbeat by ar1511-authority-issuer-luna56.
+
+- 2026-09-29T03:29:15+00:00: Reran cargo test --locked --workspace --no-fail-fast --
+  --test-threads=1 through handoffctl: terminal exit 0; all workspace tests and doc tests passed.
+  The earlier parallel run's two asb-cli state-lock panics are order-sensitive baseline collisions,
+  and the isolated filter passes 8/8. Product worktree remains clean at signed 1a26b02.

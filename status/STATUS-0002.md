@@ -201,7 +201,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1511](../tasks/AR-1511-runtime-control-authority-issuer.md): Runtime/control authority issuer and capability source | ar1511-authority-issuer-luna56 | Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch. | Workspace test rerun is needed serially: first workspace run had two pre-existing asb-cli lock-ownership failures from parallel tests; isolated authenticated_lifecycle_ filter passes 8/8. Then rerun workspace without parallel lock collisions and run exact diff review. |
+| P0 | [AR-1511](../tasks/AR-1511-runtime-control-authority-issuer.md): Runtime/control authority issuer and capability source | ar1511-authority-issuer-luna56 | Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch. | Serial workspace cargo test is green; exact signed product head is 1a26b02. Next: independent exact-head diff review, then publish PR/CI through the guarded workflow; no live/provider claim. |
 
 ### Blocked (79)
 
