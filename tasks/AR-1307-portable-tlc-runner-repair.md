@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "PR #25 is open at exact signed+DCO head ab485f767, but full-exhaustive formal CI run 35342513872 failed truthfully after Java OOM during liveness checking at the unchanged 3G/3G/2-worker contract. AR-1308 provides the prepared 32 GiB/64 GiB offline QEMU capacity; bind the exact signed bundle and rerun only after its seed/JDK/TLC preflight passes. Do not qualify or weaken the contract.",
+  "next_action": "Continue provider-free development tests with generated seeds through the unsigned-development profile. Do not make AR-1307 or its dependents wait for archival seed recovery; if formal/publication qualification is later authorized, use a separate formal-only successor with reviewed inputs.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "969eef05834a4ce5f711bbafaa5798549abd95c8",
@@ -16,10 +16,10 @@
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 739,
+  "summary": "Runner implementation remains blocked for its unrelated formal CI OOM/publication transition, but development execution no longer depends on a reviewed seed digest. The explicit unsigned-development profile accepts locally generated disposable seeds and remains qualification_authorized=false.",
+  "task_revision": 740,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-29T16:13:21+00:00",
+  "updated_at": "2026-09-29T16:13:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -2113,3 +2113,7 @@ authorize qualification, publication, or release evidence; selecting
   depends on reviewed seed digests; formal qualification remains separate.
 
 - 2026-09-29T16:13:21+00:00: Claimed by coordinator-dev-seed-policy-20260929.
+
+- 2026-09-29T16:13:31+00:00: Seed-digest dependency removed from development coordination. Existing
+  signed/formal gates and the AR-1307 resource contract remain unchanged; no qualification or
+  release evidence is claimed.
