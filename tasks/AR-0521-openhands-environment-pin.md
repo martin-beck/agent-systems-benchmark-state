@@ -8,18 +8,18 @@
   ],
   "id": "AR-0521",
   "next_action": "Use the recorded AR-0514 failure evidence to define an immutable, reproducible OpenHands environment bundle and verifier; AR-0514 remains blocked until this evidence is independently verified.",
-  "observed_branch": "",
+  "observed_branch": "feature/replay-openhands-environment-pin",
   "observed_dirty": 0,
-  "observed_head": "0000000000000000000000000000000000000000",
+  "observed_head": "bd7d10d4a760a84fa42de2b1fa9e97e8ea85ba09",
   "owner": "ar0521-environment-pin-luna56",
   "plan": "../plans/AR-0521.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair OpenHands replay environment provenance and reproducibility.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Reproduce and pin the OpenHands replay environment",
-  "updated_at": "2026-09-29T10:18:42+00:00",
+  "updated_at": "2026-09-29T10:18:56+00:00",
   "worktree_key": "agent-systems-benchmark-replay-openhands-environment-pin"
 }
 ---
