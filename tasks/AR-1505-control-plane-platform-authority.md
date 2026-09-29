@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 246,
+  "task_revision": 247,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:51:06+00:00",
+  "updated_at": "2026-09-29T00:52:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -990,3 +990,6 @@ public credential/socket paths, or weakening fail-closed gates.
   unknown and is not being inferred. Corrective action: run a bounded package-level llvm-cov command
   with an explicit log and tail capture; it completed successfully for asb-runtime and saved
   /tmp/ar1505-runtime-coverage.json.
+
+- 2026-09-29T00:52:08+00:00: Recorded command exit 0; command argv SHA-256
+  9b6c3ee187b29577be5be26550ec565278a338ea96f913c404b69cdc4fb1559d.
