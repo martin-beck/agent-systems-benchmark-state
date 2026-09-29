@@ -234,7 +234,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1534](../tasks/AR-1534.md): Coordinator vendor integrity repair | codex-asb-ar1534-coordinator-followup-20260930 | Repair the state repository&#x27;s coordinator vendor-integrity mismatch exposed after the AR-1530 capacity-profile merge. | Remain blocked pending coordinator-state AR-0022: an approved upstream bounded actionable-state projection release. After AR-0022 exact release/CI evidence is available, synchronize the immutable vendor snapshot, rerun vendor verification and all ASB state gates, then independently review the exact diff. Never rewrite the vendor manifest or patch handoffctl locally. |
+| P0 | [AR-1534](../tasks/AR-1534.md): Coordinator vendor integrity repair | codex-asb-ar1534-coordinator-followup-20260930 | Coordinator-state AR-0022 has signed+DCO local implementation 24d1b1d with 1454-test, Ruff, format, and mypy gates green; no reviewed PR, hosted CI, or immutable release yet, so vendor integrity remains fail-closed. | Remain blocked pending coordinator-state AR-0022 reviewed PR, green exact-head hosted CI, and immutable v0.3.26 release. Then synchronize the exact vendor snapshot, rerun vendor verification and all ASB state gates, independently review the diff, and only then resume AR-1532/1533 qualification work. |
 
 ### Blocked (82)
 
