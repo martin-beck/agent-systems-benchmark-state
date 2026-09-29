@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1509-authenticated-authority-provider-receipt",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-29T04:44:42+00:00",
+  "claim_expires": "2026-09-29T03:15:24+00:00",
   "depends_on": [
     "AR-1473",
     "AR-1474",
@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Replace the AR-1508 test fa\u00e7ade with an authenticated production authority-provider receipt and lifecycle fence.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Authenticated authority-provider receipt",
-  "updated_at": "2026-09-29T02:44:42+00:00",
+  "updated_at": "2026-09-29T02:45:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1509-authenticated-authority-provider-receipt"
 }
 ---
@@ -99,3 +99,5 @@ mock production authority, or weakening formal/privacy/native gates.
   worker; preserve existing commits, dirty diff, and command evidence. No completion claim.
 
 - 2026-09-29T02:44:42+00:00: Claimed by ar1509-repair-luna56.
+
+- 2026-09-29T02:45:24+00:00: Heartbeat by ar1509-repair-luna56.
