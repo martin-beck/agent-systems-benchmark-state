@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 154,
+  "task_revision": 155,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:07:51+00:00",
+  "updated_at": "2026-09-29T00:08:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -621,3 +621,6 @@ public credential/socket paths, or weakening fail-closed gates.
   clippy::too-many-arguments under -D warnings. No other diagnostics. Corrective action: retain this
   explicit runtime extension point with a narrow function-level allowance, then rerun unchanged
   clippy.
+
+- 2026-09-29T00:08:00+00:00: Recorded command exit 1; command argv SHA-256
+  c23b29d9f9ea6b9c13a535e82ade56f0cc25918a7aa075c73d8908290ccc3d8a.
