@@ -5,7 +5,7 @@
   "claim_expires": "",
   "depends_on": ["AR-1373", "AR-1374"],
   "id": "AR-1375",
-  "next_action": "Wait for AR-1374 blocker resolution, then implement the runtime-owned authenticated control adapter for CLI live dispatch.",
+  "next_action": "No further action; superseded by AR-1523, which owns the central-orchestrator live authority adapter.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -13,8 +13,8 @@
   "plan": "../plans/AR-1375-live-control-dispatch-source.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
-  "summary": "Supply authenticated runtime control receipts to production live dispatch.",
+  "status": "superseded",
+  "summary": "Superseded duplicate: its dependency on AR-1374 formed a stale cycle; AR-1523 is canonical.",
   "task_revision": 1,
   "title": "Runtime-owned live control dispatch source",
   "updated_at": "2026-09-24T02:40:00+00:00",
@@ -38,3 +38,6 @@ and teardown, and fail-closed denial of unapproved external traffic remain requi
 contracts. Existing live-provider dependency edges describe production integration
 ordering only and must not be used to block local qualification or to claim external
 reachability.
+
+- 2026-09-30: Superseded by AR-1523. The original AR-1374 dependency forms a
+  stale cycle; preserve this historical audit and do not revive the duplicate.

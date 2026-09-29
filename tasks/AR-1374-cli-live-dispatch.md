@@ -10,7 +10,7 @@
     "AR-1328"
   ],
   "id": "AR-1374",
-  "next_action": "Unblock after AR-1375 supplies the authenticated runtime control adapter and cross-crate bootstrap seam; then requalify run/sweep locally before any publication.",
+  "next_action": "Remain blocked on canonical AR-1523's central-orchestrator live AuthoritySource adapter; then requalify run/sweep locally before any publication.",
   "observed_branch": "feature/ar-1374-cli-live-dispatch",
   "observed_dirty": 0,
   "observed_head": "363b21f81d5c5ab364c2e2a923bd82676feaf343",
@@ -19,7 +19,7 @@
   "priority": "P0",
   "schema_version": 1,
   "status": "blocked",
-  "summary": "Consume authenticated runtime receipts in production asb run and sweep dispatch.",
+  "summary": "Consume authenticated runtime receipts in production asb run and sweep dispatch; stale AR-1375 duplicate superseded by AR-1523.",
   "task_revision": 37,
   "title": "Production live-provider dispatch",
   "updated_at": "2026-09-27T11:14:58+00:00",
@@ -168,4 +168,8 @@ reachability.
   in asb-runtime; no control-session/receipt/chain/bootstrap composition constructs the source for
   normal CLI run/sweep. AR-1375 remains circular because it depends on AR-1374. No safe in-scope
   product change can complete this adapter without a new dependency-safe successor; no authority
-  fabricated, no asb-tui/live provider.
+fabricated, no asb-tui/live provider.
+
+- 2026-09-30: Graph repair AR-1524 superseded the circular AR-1375 duplicate.
+  Canonical remaining work is AR-1523's central-orchestrator live authority
+  adapter; this task remains blocked and no product qualification is claimed.
