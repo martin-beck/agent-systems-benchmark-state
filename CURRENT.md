@@ -3,16 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0514](tasks/AR-0514-replay-openhands.md): Qualify OpenHands replay | Qualify replay conformance for OpenHands. | Independent review and exact-head CI of 3ccee911; exact approved OpenHands environment digest remains unrecoverable, so native replay stays blocked pending AR-0521 pin-reproduction repair. | ar0514-review-luna56 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-0514](tasks/AR-0514-replay-openhands.md): Qualify OpenHands replay | Qualify replay conformance for OpenHands. | Independent review and exact-head CI of 3ccee911; exact approved OpenHands environment digest remains unrecoverable, so native replay stays blocked pending AR-0521 pin-reproduction repair. | - |
 | P0 | [AR-0836](tasks/AR-0836-runner-isolation-hardening.md): Harden runner isolation and credential boundaries | Harden development-host runner isolation against same-UID job tampering and diagnostic leakage. | Independently review immutable signed candidate 9b4e7084e02cdb3a1ff56dc55bbdce413ed6b1d3; keep trusted workflows blocked and AR-0836 in progress until required AR-0837 proves the digest-pinned no-host-mount job-container boundary. | - |
 | P0 | [AR-1024](tasks/AR-1024-asb-tui-lifecycle-router.md): Implement `asb tui` lifecycle routing | Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend. | After AR-1010, AR-1037 and AR-1060 are done, rebase c545c33 onto protected ASB main and implement only the ASB provisioning half before regenerated evidence and trusted asb-tui pinning. | - |
 | P0 | [AR-1025](tasks/AR-1025-standalone-asb-tui-application.md): Build the standalone asb-tui application | Deliver the actual standalone interactive asb-tui application without an ASB workspace dependency. | Blocked: implementation belongs to asb-tui, but current scope forbids touching that repository; AR-1010/AR-1060 also retain unresolved publication blockers. Obtain explicit scope/dependency repair before re-opening. | - |
