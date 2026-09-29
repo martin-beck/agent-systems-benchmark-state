@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1507-runtime-owned-authority-materialization",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-29T04:10:27+00:00",
+  "claim_expires": "2026-09-29T04:13:07+00:00",
   "depends_on": [
     "AR-1473",
     "AR-1474",
@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize private runtime launch authority from authenticated AR-1505 bootstrap state without caller or synthetic authority.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Runtime-owned authority materialization",
-  "updated_at": "2026-09-29T02:11:10+00:00",
+  "updated_at": "2026-09-29T02:13:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1507-runtime-owned-authority-materialization"
 }
 ---
@@ -69,3 +69,5 @@ first-customer production evidence.
 
 - 2026-09-29T02:10:57+00:00: Recorded command exit 0; command argv SHA-256
   9b4be95fa2550260cc2e64b5f30cbf63d5ffe2b10389749630788f6a0fec525b.
+
+- 2026-09-29T02:13:07+00:00: Heartbeat by ar1507-authority-luna56.
