@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1513](tasks/AR-1513-authenticated-lease-dispatch-bridge.md): Authenticated lease-to-live-dispatch bridge | Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch. | Fresh review of cfed22b found P1 policy hash mismatch blocking realistic authenticated bridging, P1 ordinary lease bridge still unused by run/sweep, P2 alternate-egress collapsed to target, and hosted workspace coverage 88.03% below 90%. Repair before merge. | ar1513-repair4-luna56 |
+| P0 | [AR-1513](tasks/AR-1513-authenticated-lease-dispatch-bridge.md): Authenticated lease-to-live-dispatch bridge | Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch. | Fresh independent review and exact-head CI for signed fd6e2ea; do not merge without approval. | ar1513-repair4-luna56 |
 
 ## Blocked
 

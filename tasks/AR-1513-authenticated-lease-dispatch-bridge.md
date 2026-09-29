@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
-  "checkpoint_commit": "cfed22bec49eaf9c74abf000ca274b3a353da3a9",
+  "checkpoint_commit": "fd6e2ea58e066642ce441e40a75eb7a092d22139",
   "claim_expires": "2026-09-29T10:02:03+00:00",
   "depends_on": [
     "AR-1502",
     "AR-1484"
   ],
   "id": "AR-1513",
-  "next_action": "Fresh review of cfed22b found P1 policy hash mismatch blocking realistic authenticated bridging, P1 ordinary lease bridge still unused by run/sweep, P2 alternate-egress collapsed to target, and hosted workspace coverage 88.03% below 90%. Repair before merge.",
+  "next_action": "Fresh independent review and exact-head CI for signed fd6e2ea; do not merge without approval.",
   "observed_branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
   "observed_dirty": 0,
   "observed_head": "fd6e2ea58e066642ce441e40a75eb7a092d22139",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 259,
+  "task_revision": 260,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T08:02:03+00:00",
+  "updated_at": "2026-09-29T08:02:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -757,3 +757,16 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
   d04aa803a9fcb854b247572f9b417fd1935a57ca978bb887d2e7c188e99db043.
 
 - 2026-09-29T08:02:03+00:00: Heartbeat by ar1513-repair4-luna56.
+
+- 2026-09-29T08:02:20+00:00: Fourth repair pushed signed DCO fd6e2ea (remote exact). Canonical
+  provider-policy-v1 binding now matches control enrollment, owner material, namespace, handoff, and
+  dispatch; provider-allowlist-v1 keeps alternate-egress distinct from target. Added production
+  run_with_runtime_control_bootstrap composition consuming acquire_process_owner_material ->
+  bridge_process_owner_material -> dispatch source -> CLI run/sweep; local mock remains explicit
+  qualification only. Coverage check exited 0 with critical totals >=90%; LLVM_PROFILE_FILE external
+  temp sink prevents child contract tests seeing checkout profraw, and all generated profraw
+  artifacts were removed. Focused runtime 161 pass/1 ignored, CLI 130 pass, workflow provenance 3
+  pass, clippy -D warnings pass, fmt pass. Recorded failures were addressed: 07:44 exit 101 was
+  transient state-root ownership race on coverage rerun; 07:45 and 07:56 exit 1 coverage/profile
+  runs were caused by checkout profraw visibility and were fixed by the external sink; clippy
+  too-many-arguments was fixed by typed input grouping. Tree clean.
