@@ -35,3 +35,7 @@ formal qualification, and first-customer production readiness.
 
 - 2026-09-29T19:06:42+00:00: Capacity decision recorded; implementation belongs to a separate
   successor AR and does not widen AR-1307.
+
+- Decision detail: retain AR-1307's 3G/3G/2-worker/8G/7200s contract. The successor uses a
+  separately provisioned disposable VM with 8G memory and 8G guest swap, the same model and
+  inputs, a distinct profile/attestation, and the same bounded 7200s execution limit.
