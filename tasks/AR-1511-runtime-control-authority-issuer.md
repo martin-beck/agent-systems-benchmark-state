@@ -3,7 +3,10 @@
   "branch": "feature/ar-1511-runtime-control-authority-issuer",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1502", "AR-1484"],
+  "depends_on": [
+    "AR-1502",
+    "AR-1484"
+  ],
   "id": "AR-1511",
   "next_action": "Promote after AR-1510 blocker evidence is reconciled; implement the runtime/control authority issuer and capability contract from protected main.",
   "observed_branch": "",
@@ -13,11 +16,11 @@
   "plan": "../plans/AR-1511-runtime-control-authority-issuer.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T03:07:00+00:00",
+  "updated_at": "2026-09-29T03:07:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
@@ -53,3 +56,6 @@ production authority, or weakening fail-closed/native/formal gates.
   authenticated authority issuer/capability source exists on protected main.
   Implement this source first, then re-open the consumer wiring in a follow-on
   AR; preserve AR-1509/1510 unmerged façade work as evidence only.
+
+- 2026-09-29T03:07:20+00:00: AR-1510 blocker evidence reconciled; promote the prerequisite authority
+  issuer/capability source before consumer wiring.
