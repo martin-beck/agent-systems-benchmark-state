@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T05:42:05+00:00",
+  "updated_at": "2026-09-29T05:42:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -139,3 +139,6 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
   completed successfully after refreshing the CLI provenance digest. All unit/integration/doc tests
   passed; only pre-existing environment-qualified tests remained ignored. Product worktree is still
   intentionally dirty with seven AR-1513 files including provenance update.
+
+- 2026-09-29T05:42:34+00:00: Recorded command exit 0; command argv SHA-256
+  5c8da9b34935360f7399b9d4b260d9a460b442f2f0ca08eddaee6e8f11776ef0.
