@@ -7,7 +7,7 @@
     "AR-1304"
   ],
   "id": "AR-1308",
-  "next_action": "Repair the development-only state data layout so /mnt/asb-data/state exists before bind, rerun unsigned-development preflight and one bounded boot, and record only sanitized markers. No signing or signed authority is required for this diagnostic profile.",
+  "next_action": "Keep unsigned-development fixture v3 and sanitized diagnostic evidence; do not claim formal qualification. A future bounded diagnostic may preload a reviewed local TLC artifact or use a test-only verifier shim if needed; signed/full qualification still requires the exact signed AR-1307 inputs and its separate gates.",
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
@@ -16,10 +16,10 @@
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Unsigned-development fixture v2 boots network-disabled, creates asb user/data UUID, reaches cloud-init and transient cgroup RC=0, then powers down; state bind path remains incomplete.",
-  "task_revision": 582,
+  "summary": "Unsigned-development fixture v3 now populates the disposable state volume, creates asb user/data UUID, reaches the bound state checkout, and records transient cgroup RC=0 before poweroff. Formal verify remains intentionally non-qualifying because the network-disabled diagnostic cannot download TLC and therefore produces no attestation.",
+  "task_revision": 583,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T13:44:13+00:00",
+  "updated_at": "2026-09-29T13:44:40+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1782,3 +1782,10 @@ must report `qualification_authorized: false`.
   volume and rerunning bounded no-network boot.
 
 - 2026-09-29T13:44:13+00:00: Claimed by coordinator-ar1308-fixture-v3.
+
+- 2026-09-29T13:44:40+00:00: Fixture repair complete: data-v3.raw contains state checkout, pinned
+  JDK, and TLC artifact; seed-v3 removes destructive mkfs and creates /mnt/asb-data/state before
+  bind. Preflight passed with qualification_authorized=false. Bounded QEMU boot reached cloud-init,
+  state bind, FULL_EXHAUSTIVE_TRANSIENT_RC=0, then verify failed only at curl github.com due -nic
+  none and no attestation was claimed. Sanitized markers at
+  /srv/data/projects/ar1308-development/diagnostic-v3-summary.txt; raw serial was truncated.

@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1308](tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Unsigned-development fixture v2 boots network-disabled, creates asb user/data UUID, reaches cloud-init and transient cgroup RC=0, then powers down; state bind path remains incomplete. | Repair the development-only state data layout so /mnt/asb-data/state exists before bind, rerun unsigned-development preflight and one bounded boot, and record only sanitized markers. No signing or signed authority is required for this diagnostic profile. | coordinator-ar1308-fixture-v3 |
+| P0 | [AR-1308](tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Unsigned-development fixture v3 now populates the disposable state volume, creates asb user/data UUID, reaches the bound state checkout, and records transient cgroup RC=0 before poweroff. Formal verify remains intentionally non-qualifying because the network-disabled diagnostic cannot download TLC and therefore produces no attestation. | Keep unsigned-development fixture v3 and sanitized diagnostic evidence; do not claim formal qualification. A future bounded diagnostic may preload a reviewed local TLC artifact or use a test-only verifier shim if needed; signed/full qualification still requires the exact signed AR-1307 inputs and its separate gates. | coordinator-ar1308-fixture-v3 |
 
 ## Open
 
