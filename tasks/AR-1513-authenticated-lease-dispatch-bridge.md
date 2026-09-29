@@ -8,7 +8,7 @@
     "AR-1484"
   ],
   "id": "AR-1513",
-  "next_action": "Fresh independent review and exact-head CI for signed fd6e2ea; do not merge without approval.",
+  "next_action": "Fresh review of fd6e2ea: P1 distinct alternate-egress/allowlist binding remains mismatched, P1 ordinary CLI run/sweep still does not invoke owner-lease bridge, and hosted coverage is 87.99% (reviewer saw 89.87%) below 90%. Continue repair before merge.",
   "observed_branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
   "observed_dirty": 0,
   "observed_head": "fd6e2ea58e066642ce441e40a75eb7a092d22139",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 260,
+  "task_revision": 261,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T08:02:20+00:00",
+  "updated_at": "2026-09-29T08:07:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -770,3 +770,7 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
   transient state-root ownership race on coverage rerun; 07:45 and 07:56 exit 1 coverage/profile
   runs were caused by checkout profraw visibility and were fixed by the external sink; clippy
   too-many-arguments was fixed by typed input grouping. Tree clean.
+
+- 2026-09-29T08:07:35+00:00: Independent review confirms canonical policy and executable provenance
+  fixed, but alternate-egress, actual CLI callsite/end-to-end bridge, and exact hosted coverage
+  remain blockers.

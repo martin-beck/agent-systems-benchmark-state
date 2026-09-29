@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1513](tasks/AR-1513-authenticated-lease-dispatch-bridge.md): Authenticated lease-to-live-dispatch bridge | Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch. | Fresh independent review and exact-head CI for signed fd6e2ea; do not merge without approval. | ar1513-repair4-luna56 |
+| P0 | [AR-1513](tasks/AR-1513-authenticated-lease-dispatch-bridge.md): Authenticated lease-to-live-dispatch bridge | Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch. | Fresh review of fd6e2ea: P1 distinct alternate-egress/allowlist binding remains mismatched, P1 ordinary CLI run/sweep still does not invoke owner-lease bridge, and hosted coverage is 87.99% (reviewer saw 89.87%) below 90%. Continue repair before merge. | ar1513-repair4-luna56 |
 
 ## Blocked
 
