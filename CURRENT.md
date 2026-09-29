@@ -8,12 +8,12 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1367](tasks/AR-1367-ar1329-production-dispatch-integration.md): AR-1329 production dispatch integration | Complete production asb run/sweep live-provider dispatch through runtime-owned authenticated acquisition and teardown. | Promote and claim this fresh AR-1329 successor, refresh an isolated worktree to protected main, audit the production run/sweep dispatch seam, and implement only through runtime-owned bridge inputs. | coordinator-ar1367-production-dispatch-20260930 |
+| P0 | [AR-1532](tasks/AR-1532.md): AR-1307 unsigned-development runner repair | Repair and independently qualify the provider-free unsigned-development runner path associated with AR-1307 without changing formal limits or evidence gates. | Promote after state review; audit and repair the unsigned-development runner path, then independently run its focused and full state gates without claiming formal qualification. | coordinator-ar1532-development-20260930 |
 
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1532](tasks/AR-1532.md): AR-1307 unsigned-development runner repair | Repair and independently qualify the provider-free unsigned-development runner path associated with AR-1307 without changing formal limits or evidence gates. | Promote after state review; audit and repair the unsigned-development runner path, then independently run its focused and full state gates without claiming formal qualification. | - |
 | P0 | [AR-1533](tasks/AR-1533.md): AR-1308 unsigned-development QEMU fixture repair | Repair the provider-free unsigned-development QEMU fixture for AR-1308 and make its diagnostics, cleanup and non-qualification boundary reliable. | Promote after state review; repair and rerun the unsigned-development QEMU fixture with generated inputs, preserving formal AR-1308 blockers and non-qualifying evidence. | - |
 
 ## Blocked
