@@ -8,7 +8,7 @@
     "AR-1484"
   ],
   "id": "AR-1511",
-  "next_action": "Clean isolated worktree is ready at protected main f92c2e941913129d7db50480f71e8361a0d43a0c; audit existing owner/enrollment/certificate/runtime contracts and define issuer gap.",
+  "next_action": "Authority issuer module added on clean protected-main worktree; run focused cargo checks, repair compiler/lint failures, then add deterministic issuer tests and generated contract documentation.",
   "observed_branch": "feature/ar-1511-runtime-control-authority-issuer",
   "observed_dirty": 0,
   "observed_head": "f92c2e941913129d7db50480f71e8361a0d43a0c",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T03:17:29+00:00",
+  "updated_at": "2026-09-29T03:17:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
@@ -84,3 +84,8 @@ production authority, or weakening fail-closed/native/formal gates.
   48458d4adcbc2714c4ae60f17ec39d916357031118af6e75d9a5cd826c73f20e.
 
 - 2026-09-29T03:17:29+00:00: Heartbeat by ar1511-authority-issuer-luna56.
+
+- 2026-09-29T03:17:44+00:00: Baseline cargo check --locked -p asb-runtime -p asb-cli completed
+  successfully at protected main (exit 0); earlier state recorded exit 2 for a setup attempt, but no
+  product diagnostic was present. Product implementation now adds the runtime-owned issuer seam;
+  focused compile follows.
