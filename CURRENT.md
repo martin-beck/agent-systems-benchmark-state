@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1513](tasks/AR-1513-authenticated-lease-dispatch-bridge.md): Authenticated lease-to-live-dispatch bridge | Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch. | PR #383 moved to exact signed repair head bde018c; await independent review and all protected checks, then verify terminal merge/postmerge. | - |
+| P0 | [AR-1513](tasks/AR-1513-authenticated-lease-dispatch-bridge.md): Authenticated lease-to-live-dispatch bridge | Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch. | PR #383 moved to exact signed repair head bde018c; await independent review and all protected checks, then verify terminal merge/postmerge. | ar1513-repair2-luna56 |
 
 ## Blocked
 
