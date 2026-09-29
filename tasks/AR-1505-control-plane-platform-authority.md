@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 253,
+  "task_revision": 254,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:55:57+00:00",
+  "updated_at": "2026-09-29T00:56:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -1010,3 +1010,6 @@ public credential/socket paths, or weakening fail-closed gates.
   zero-coverage binaries and low-covered modules. Before adding tests, I am rerunning the unchanged
   tools/quality/check_coverage.py command through handoffctl to determine reproducibility and exact
   floor behavior, with logs kept under ignored target/ar1505-coverage.
+
+- 2026-09-29T00:56:44+00:00: Recorded command exit 1; command argv SHA-256
+  6ccbad7b0df7b174bed426e8006e995834ee6e089a699df42d8b9b14a749eb29.
