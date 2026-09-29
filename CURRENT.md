@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1531](tasks/AR-1531.md): Provision signed 8G formal capacity fixture | Provision the missing 8G/8G disposable formal fixture and resource evidence required by AR-1522. | Promote after dependency verification; provision a disposable signed-capacity-8g QEMU fixture and satisfy host/guest resource preflight without changing the formal seed gate. | - |
+| P0 | [AR-1531](tasks/AR-1531.md): Provision signed 8G formal capacity fixture | Provision the missing 8G/8G disposable formal fixture and resource evidence required by AR-1522. | Promote after dependency verification; provision a disposable signed-capacity-8g QEMU fixture and satisfy host/guest resource preflight without changing the formal seed gate. | coordinator-ar1531-capacity-fixture-20260930 |
 
 ## Blocked
 
