@@ -7,7 +7,7 @@
     "AR-1304"
   ],
   "id": "AR-1308",
-  "next_action": "Obtain the reviewed immutable seed with SHA-256 b3383756b5cd357f58d923216effea33be35b793034de321c3c9ce460ece4b28; then rerun the signed preflight and boot once. Dedicated swap capacity is provisioned and host validation passes. Do not regenerate/substitute the seed or widen limits.",
+  "next_action": "Repair the development-only guest fixture: create the expected UUID-backed data image and asb user, regenerate the local NoCloud seed, rerun unsigned-development preflight and one bounded network-disabled boot. Do not label it signed qualification or release evidence.",
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
@@ -16,10 +16,10 @@
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Prepared signed capacity passes image, 64 GiB overlay, exact ab485f767 source/tree, JDK/TLC/model and canonical lock; host capacity now passes with dedicated swap, but the reviewed seed b3383756...ece4b28 is unavailable.",
-  "task_revision": 574,
+  "summary": "Unsigned-development diagnostic preflight passes with local seed; bounded network-disabled QEMU boot reaches cloud-init but fixture fails on missing data UUID and asb user. This is development evidence only.",
+  "task_revision": 575,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T13:23:40+00:00",
+  "updated_at": "2026-09-29T13:23:50+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1754,3 +1754,7 @@ must report `qualification_authorized: false`.
   image lacks user asb. No signed qualification or release claim.
 
 - 2026-09-29T13:23:40+00:00: Claimed by coordinator-ar1308-development.
+
+- 2026-09-29T13:23:50+00:00: Development signing was not required. Local seed d442a24d... and
+  diagnostic seed image d442a24d... were used; raw serial output was discarded. Signed
+  full-exhaustive qualification remains a separate optional production-evidence profile.
