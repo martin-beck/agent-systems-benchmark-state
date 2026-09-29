@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 248,
+  "task_revision": 249,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:52:28+00:00",
+  "updated_at": "2026-09-29T00:54:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -998,3 +998,6 @@ public credential/socket paths, or weakening fail-closed gates.
   inspection. Corrective action completed through handoffctl: moved the retained asb-runtime report
   into ignored product-local target/ar1505-coverage/runtime-coverage.json; no tracked product files
   or repository boundary artifacts were left. The initial /tmp report is no longer present.
+
+- 2026-09-29T00:54:17+00:00: Recorded command exit 0; command argv SHA-256
+  c3d0613c612d738238e35990eeadacbce5cc860e467a647436522b090943af71.
