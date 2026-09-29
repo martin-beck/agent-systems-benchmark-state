@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1272",
-  "next_action": "Wire execute_runtime_cassette into argument-level replay command and add real response parity plus egress/no-fallback/cancel/restart/timeout/crash cleanup fixtures.",
+  "next_action": "Complete backend capability review; runtime branch has no authenticated launch-record/isolation issuer, so parent must decide whether this bounded capability plus real StrictReplayService fixture is sufficient or leave blocked for launch-authority successor.",
   "observed_branch": "feature/ar-1272-authenticated-cassette-backend",
   "observed_dirty": 10,
   "observed_head": "85c0f5bc558c90f0543424cdb37017a824c227bb",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind immutable cassette content to a runtime-authenticated replay backend handle.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Authenticated immutable cassette backend",
-  "updated_at": "2026-09-29T11:57:05+00:00",
+  "updated_at": "2026-09-29T11:57:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1272-cassette-backend"
 }
 ---
@@ -163,3 +163,9 @@ paths as authority.
 
 - 2026-09-29T11:57:05+00:00: Recorded command exit 1; command argv SHA-256
   15d937d322e5246048aa5fcb911d915ea57e5672a0e0acb46bd69cd1788ea068.
+
+- 2026-09-29T11:57:34+00:00: Heartbeat/audit: current 85c0f5b wrapper still has caller-owned
+  StrictReplayLaunchRecord, route, request, and isolation. No runtime-authenticated launch source
+  exists in this branch. Added a neutral immutable backend capability and real in-process cassette
+  response path for review; external supervised egress/cancel/restart/timeout/crash proof remains
+  unavailable without the missing runtime authority source.

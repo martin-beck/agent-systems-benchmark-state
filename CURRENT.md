@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1272](tasks/AR-1272-authenticated-cassette-backend.md): Authenticated immutable cassette backend | Bind immutable cassette content to a runtime-authenticated replay backend handle. | Wire execute_runtime_cassette into argument-level replay command and add real response parity plus egress/no-fallback/cancel/restart/timeout/crash cleanup fixtures. | ar1272-cassette-backend-luna56 |
+| P0 | [AR-1272](tasks/AR-1272-authenticated-cassette-backend.md): Authenticated immutable cassette backend | Bind immutable cassette content to a runtime-authenticated replay backend handle. | Complete backend capability review; runtime branch has no authenticated launch-record/isolation issuer, so parent must decide whether this bounded capability plus real StrictReplayService fixture is sufficient or leave blocked for launch-authority successor. | ar1272-cassette-backend-luna56 |
 
 ## Blocked
 
