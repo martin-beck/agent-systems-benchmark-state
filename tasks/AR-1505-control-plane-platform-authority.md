@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Continue waiting for the five in-progress exact-head checks and fresh independent review; record terminal results and keep PR unmerged.",
+  "next_action": "Add authenticated namespace_sha256 to RuntimeBootstrapRequestV1 and RuntimeBootstrapResponseV1, echo and validate it in control, compare all three bindings in the runtime resolver, add positive and negative tests and regenerate v1.11 schemas.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 0,
   "observed_head": "95ac5453fe3a1fbc383afa2ce713a3dceff78437",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 181,
+  "task_revision": 182,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:20:45+00:00",
+  "updated_at": "2026-09-29T00:22:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -744,3 +744,10 @@ public credential/socket paths, or weakening fail-closed gates.
   evidence, retained faults, Huawei SPDX headers, bounded fuzz regressions, Kani bounded proofs, and
   Loom/state models. IN_PROGRESS: emulated aarch64, TLC and Alloy recovery models, policy coverage
   supply chain, Rust checks, and matcher and SLO mutation sentinels. No failures and no merge.
+
+- 2026-09-29T00:22:40+00:00: Independent review P1-3 is active: RuntimeBootstrapResponseV1 has no
+  authenticated namespace claim; current runtime aliases namespace_sha256 from relay root, and
+  resolver checks only nonempty namespace plus generation target credential. Repair is now in
+  progress to add explicit namespace binding to the bootstrap protocol and fail-closed namespace
+  relay-root lease-root comparisons before provisioner materialization. Existing exact-head CI
+  results remain recorded; no merge.

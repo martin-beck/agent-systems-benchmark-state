@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1505](tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | Continue waiting for the five in-progress exact-head checks and fresh independent review; record terminal results and keep PR unmerged. | ar1505-repair-luna56 |
+| P0 | [AR-1505](tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | Add authenticated namespace_sha256 to RuntimeBootstrapRequestV1 and RuntimeBootstrapResponseV1, echo and validate it in control, compare all three bindings in the runtime resolver, add positive and negative tests and regenerate v1.11 schemas. | ar1505-repair-luna56 |
 
 ## Blocked
 
