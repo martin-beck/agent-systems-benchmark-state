@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Wait for the final three checks and fresh independent review; record terminal statuses and keep PR unmerged.",
+  "next_action": "Inspect the exact failed hosted coverage logs and local coverage mapping, then add focused provider-free positive and negative tests for legitimate new binding behavior.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 0,
   "observed_head": "da5e2a916b66de9f31f2c5bcccd1f59f7b3321d2",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 242,
+  "task_revision": 243,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:48:20+00:00",
+  "updated_at": "2026-09-29T00:48:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -970,3 +970,9 @@ public credential/socket paths, or weakening fail-closed gates.
 - 2026-09-29T00:47:18+00:00: Heartbeat by ar1505-repair-luna56.
 
 - 2026-09-29T00:48:20+00:00: Heartbeat by ar1505-repair-luna56.
+
+- 2026-09-29T00:48:34+00:00: Coverage repair started on exact-head
+  da5e2a916b66de9f31f2c5bcccd1f59f7b3321d2 after required Policy, coverage, and supply chain failed
+  tools/quality/check_coverage.py at 88.08 percent lines against the unchanged 90 percent floor.
+  Existing product worktree is clean; no gate weakening planned. First action is to inspect the
+  failed run logs and identify uncovered namespace/root binding branches.
