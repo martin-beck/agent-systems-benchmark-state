@@ -14,17 +14,17 @@
   "id": "AR-1505",
   "next_action": "Push existing product branch feature/ar-1505-control-plane-platform-authority via handoffctl run, then record exact remote head and request exact-head CI and fresh independent review for PR 382.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
-  "observed_dirty": 2,
-  "observed_head": "baa13ea675de2160dcf58f69b106e255f2c3d8de",
+  "observed_dirty": 0,
+  "observed_head": "95ac5453fe3a1fbc383afa2ce713a3dceff78437",
   "owner": "ar1505-repair-luna56",
   "plan": "../plans/AR-1505-control-plane-platform-authority.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 175,
+  "task_revision": 176,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:18:17+00:00",
+  "updated_at": "2026-09-29T00:18:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
