@@ -8,7 +8,7 @@
     "AR-1484"
   ],
   "id": "AR-1513",
-  "next_action": "Second independent review found remaining P1s: pinned executable/adapter provenance is not enforced at dispatch, ordinary production bootstrap-to-CLI wiring remains dead-code only, and policy/alternate-egress enrollment binding is incomplete; hosted workspace coverage is 88.05% below 90%. Repair all before merge.",
+  "next_action": "Commit and push the reviewed AR-1513 repair at the exact signed head, then obtain fresh independent review and exact-head protected checks before any merge.",
   "observed_branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
   "observed_dirty": 5,
   "observed_head": "109f5fad424cb5493e834a0dcec9c09f1aeeae54",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 187,
+  "task_revision": 188,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T07:18:22+00:00",
+  "updated_at": "2026-09-29T07:18:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -572,3 +572,11 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
 
 - 2026-09-29T07:18:08+00:00: Recorded command exit 0; command argv SHA-256
   39a4c0ad8235c4427391f0f1672fb11dade377ac12ea59b500ace05729a63129.
+
+- 2026-09-29T07:18:57+00:00: Third repair pass: dispatch now rejects non-pinned executable paths,
+  adapter digest drift, non-denied network, and source policy/target/alternate-egress enrollment
+  drift. Ordinary asb run/sweep --local-mock dispatch is covered by provider-free integration tests;
+  docs updated. Full tools/quality/check_coverage.py exited 0: 90.35% line coverage (configured
+  workspace floor 90%) and critical package totals green; no floor or exclusion changes. Generated
+  crates/asb-cli profraw artifacts were removed. Focused runtime 161 passed/1 ignored, CLI workflow
+  3 passed, provenance test passed.
