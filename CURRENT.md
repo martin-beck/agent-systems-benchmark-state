@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1520](tasks/AR-1520.md): AR-1308 reduced-profile runtime qualification | Qualify the new reduced-model development profile in a disposable provider-free VM without promoting its result to formal evidence. | Promote and run one bounded self-contained QEMU qualification for development-reduced, then inspect sanitized evidence. | - |
+| P0 | [AR-1520](tasks/AR-1520.md): AR-1308 reduced-profile runtime qualification | Qualify the new reduced-model development profile in a disposable provider-free VM without promoting its result to formal evidence. | Promote and run one bounded self-contained QEMU qualification for development-reduced, then inspect sanitized evidence. | coordinator-ar1520-qemu-20260929 |
 
 ## Blocked
 

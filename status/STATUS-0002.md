@@ -209,11 +209,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1520](../tasks/AR-1520.md): AR-1308 reduced-profile runtime qualification | Unclaimed | Qualify the new reduced-model development profile in a disposable provider-free VM without promoting its result to formal evidence. | Promote and run one bounded self-contained QEMU qualification for development-reduced, then inspect sanitized evidence. |
+| P0 | [AR-1520](../tasks/AR-1520.md): AR-1308 reduced-profile runtime qualification | coordinator-ar1520-qemu-20260929 | Qualify the new reduced-model development profile in a disposable provider-free VM without promoting its result to formal evidence. | Promote and run one bounded self-contained QEMU qualification for development-reduced, then inspect sanitized evidence. |
 
 ### Blocked (77)
 
