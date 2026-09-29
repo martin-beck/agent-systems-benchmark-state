@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Development verifier and portable admission repairs are validated: preloaded TLC JAR is accepted offline, runtime-root overrides remain bounded, and portable-smoke produced a success attestation after accounting for existing host threads. Full-exhaustive QEMU evidence is still pending; no reviewed seed or digest dependency remains.",
-  "task_revision": 673,
+  "task_revision": 674,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T18:05:21+00:00",
+  "updated_at": "2026-09-29T18:05:38+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -2058,3 +2058,6 @@ must report `qualification_authorized: false`.
 
 - 2026-09-29T18:05:21+00:00: Recorded command exit 0; command argv SHA-256
   0ba77c0d5ac2c8ac8710e38b5f92fc7f9150d9f29aab43f4bc7feb3320e8b2c0.
+
+- 2026-09-29T18:05:38+00:00: Recorded command exit 0; command argv SHA-256
+  1c70dd673eba433572dc46d99cdbfc692baabd5c52ca0be71cedb08dac858711.
