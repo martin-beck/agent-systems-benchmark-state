@@ -8,7 +8,7 @@
     "AR-1484"
   ],
   "id": "AR-1512",
-  "next_action": "Promote after AR-1511 blocker evidence is reconciled; define and implement the authenticated process-owner material contract and ordinary control caller.",
+  "next_action": "Create clean isolated worktree from protected main f92c2e941913129d7db50480f71e8361a0d43a0c; audit ASB owner/enrollment/issuer/CLI contracts before implementation.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated process-owner material source and ordinary CLI/control caller needed to consume runtime authority.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Authenticated process-owner material contract",
-  "updated_at": "2026-09-29T04:58:03+00:00",
+  "updated_at": "2026-09-29T04:58:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1512-process-owner-material-contract"
 }
 ---
@@ -64,3 +64,7 @@ host data, synthetic authority, or weakening fail-closed/native/formal gates.
 - 2026-09-29T04:56:11+00:00: Claimed by ar1512-process-owner-luna56.
 
 - 2026-09-29T04:58:03+00:00: Heartbeat by ar1512-process-owner-luna56.
+
+- 2026-09-29T04:58:06+00:00: Setup audit: authoritative AR-1512 state is ASB state checkout;
+  protected main is f92c2e941913129d7db50480f71e8361a0d43a0c. Existing product main is dirty and
+  AR-1511 work must not be reused. Starting isolated worktree and contract audit.

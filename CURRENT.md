@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1512](tasks/AR-1512-process-owner-material-contract.md): Authenticated process-owner material contract | Provide the authenticated process-owner material source and ordinary CLI/control caller needed to consume runtime authority. | Promote after AR-1511 blocker evidence is reconciled; define and implement the authenticated process-owner material contract and ordinary control caller. | ar1512-process-owner-luna56 |
+| P0 | [AR-1512](tasks/AR-1512-process-owner-material-contract.md): Authenticated process-owner material contract | Provide the authenticated process-owner material source and ordinary CLI/control caller needed to consume runtime authority. | Create clean isolated worktree from protected main f92c2e941913129d7db50480f71e8361a0d43a0c; audit ASB owner/enrollment/issuer/CLI contracts before implementation. | ar1512-process-owner-luna56 |
 
 ## Blocked
 
