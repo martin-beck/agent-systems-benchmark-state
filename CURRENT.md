@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1305](tasks/AR-1305-image-native-user-session.md): Image-native user-session support | Fresh immutable qcow2 image v2 was built from the reviewed Ubuntu 24.04 base with the staged dbus-user-session package injected offline. A bounded network-disabled QEMU boot using the repaired data fixture reached systemd user-session startup and FULL_EXHAUSTIVE_TRANSIENT_RC=0; no Transport endpoint failure was observed. This is development evidence only and not formal qualification. | Independent review the image package/base digests and run the complete AR-1304 required-tier gates against this fresh image, including exact signed inputs and attestation. Keep AR-1305 open until those gates pass; do not substitute this diagnostic run for formal qualification. | - |
+| P0 | [AR-1305](tasks/AR-1305-image-native-user-session.md): Image-native user-session support | Fresh immutable qcow2 image v2 was built from the reviewed Ubuntu 24.04 base with the staged dbus-user-session package injected offline. A bounded network-disabled QEMU boot using the repaired data fixture reached systemd user-session startup and FULL_EXHAUSTIVE_TRANSIENT_RC=0; no Transport endpoint failure was observed. This is development evidence only and not formal qualification. | Independent review the image package/base digests and run the complete AR-1304 required-tier gates against this fresh image, including exact signed inputs and attestation. Keep AR-1305 open until those gates pass; do not substitute this diagnostic run for formal qualification. | coordinator-ar1305-review-20260929 |
 
 ## Blocked
 

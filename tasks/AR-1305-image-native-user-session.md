@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1305-image-native-user-session",
   "checkpoint_commit": "00a47726683609b7fef8ea5738fed5a3692fac29",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T16:17:52+00:00",
   "depends_on": [
     "AR-1302"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "00a47726683609b7fef8ea5738fed5a3692fac29",
-  "owner": "",
+  "owner": "coordinator-ar1305-review-20260929",
   "plan": "../plans/AR-1305.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Fresh immutable qcow2 image v2 was built from the reviewed Ubuntu 24.04 base with the staged dbus-user-session package injected offline. A bounded network-disabled QEMU boot using the repaired data fixture reached systemd user-session startup and FULL_EXHAUSTIVE_TRANSIENT_RC=0; no Transport endpoint failure was observed. This is development evidence only and not formal qualification.",
-  "task_revision": 57,
+  "task_revision": 58,
   "title": "Image-native user-session support",
-  "updated_at": "2026-09-29T13:57:57+00:00",
+  "updated_at": "2026-09-29T16:07:52+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1305-image-native-user-session"
 }
 ---
@@ -234,3 +234,5 @@ limits and fail-closed behavior remain unchanged.
 
 - 2026-09-29T13:57:57+00:00: Released for independent review and formal required-tier qualification;
   diagnostic image repair succeeded but formal gates remain.
+
+- 2026-09-29T16:07:52+00:00: Claimed by coordinator-ar1305-review-20260929.
