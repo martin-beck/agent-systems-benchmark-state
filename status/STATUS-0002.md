@@ -200,12 +200,17 @@
 
 ## Complete AR inventory
 
-### Open (2)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1464](../tasks/AR-1464-formal-capacity-input-provisioning.md): Formal capacity and signed-input provisioning repair | coordinator-dev-seed-policy-20260929 | Exact signed source, reviewed image, 64 GiB overlay, JDK/TLC/model and canonical lock are provisioned. Reclaimed the three stale AR-specific swap files and activated two fresh AR-specific swap files; repeated signed preflight now passes every gate except the unavailable exact seed digest. | Obtain or restore the reviewed full-exhaustive seed with SHA-256 b3383756b5cd357f58d923216effea33be35b793034de321c3c9ce460ece4b28. Do not regenerate or substitute a different seed. Then rerun the signed preflight, hand inputs to AR-1308, and remove/revert only the temporary AR-specific swap after the runner lifecycle. |
+
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1305](../tasks/AR-1305-image-native-user-session.md): Image-native user-session support | Unclaimed | Independent artifact review completed for fresh image v2: reviewed Ubuntu base SHA-256 289c24e8e1b73d491091eace032ad93a3b335b200d68109b9db451c82a3f4, staged dbus-user-session package SHA-256 e585b1694b854c3b75bfb39cc4022cafe7b14e44fd435433b613b8fb9919cb41, resulting qcow2 SHA-256 2fa6685e201f4f59398c28eac4178daafb701067b10ffdc486b9a00555857f4f. Bounded network-disabled boot reached FULL_EXHAUSTIVE_TRANSIENT_RC=0 without Transport endpoint failure. Formal required-tier evidence is not claimed. | Bind this reviewed image only after the exact AR-1307 signed seed is recovered through AR-1465/AR-1464; rerun signed preflight and complete AR-1304 required-tier attestation. Keep AR-1305 open until exact signed inputs and full gates pass. |
-| P0 | [AR-1464](../tasks/AR-1464-formal-capacity-input-provisioning.md): Formal capacity and signed-input provisioning repair | Unclaimed | Exact signed source, reviewed image, 64 GiB overlay, JDK/TLC/model and canonical lock are provisioned. Reclaimed the three stale AR-specific swap files and activated two fresh AR-specific swap files; repeated signed preflight now passes every gate except the unavailable exact seed digest. | Obtain or restore the reviewed full-exhaustive seed with SHA-256 b3383756b5cd357f58d923216effea33be35b793034de321c3c9ce460ece4b28. Do not regenerate or substitute a different seed. Then rerun the signed preflight, hand inputs to AR-1308, and remove/revert only the temporary AR-specific swap after the runner lifecycle. |
 
 ### Blocked (77)
 
