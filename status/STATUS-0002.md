@@ -200,12 +200,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1305](../tasks/AR-1305-image-native-user-session.md): Image-native user-session support | coordinator-ar1305-devtest-20260929b | Development-complete: fresh image v2 plus writable disposable data overlay and locally generated unsigned-development seed reached FULL_EXHAUSTIVE_TRANSIENT_RC=0. Generator now provisions the UID-1000 asb user without default-user collision. Formal attestation is intentionally not claimed. | No further development action. Preserve the generated-seed image-native evidence; any signed/formal/publication qualification must use a separate formal successor and must not block development. |
-
 ### Blocked (76)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -347,7 +341,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (383)
+### Done (384)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -454,6 +448,7 @@
 | P0 | [AR-1300](../tasks/AR-1300-runtime-cassette-dispatch-seam.md): Runtime-to-replay cassette dispatch seam | Unclaimed | Connect runtime-issued cassette operations to the real strict-replay dispatch path. | No further action; merged commit 9263f8310cbf4d222d09d0d1eaef4b4bdfb72e05 and exact-main post-merge gates are green. |
 | P0 | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | Unclaimed | Provision a clean portable TLC CI/VM runner for state formal admission. | Use run_lifecycle from signed commit 1fd5e31cf to create a fresh overlay, boot the UUID-serial data disk, run guest UUID/mount preflight, then execute f1931686c portable-smoke and capture sanitized terminal attestation. Do not claim qualification from container evidence. |
 | P0 | [AR-1304](../tasks/AR-1304-required-tier-qemu-runner.md): Required-tier QEMU user-bus runner | Unclaimed | Create a clean required-containment QEMU runner for formal publication evidence. | Independent exact-head review of signed commits 56001d6e2, 151bd0f99, de489eac9, and current seed/receipt chain; then hand required pr-publication evidence to AR-1293. Do not run full-exhaustive until coordinator accepts the attestation. |
+| P0 | [AR-1305](../tasks/AR-1305-image-native-user-session.md): Image-native user-session support | Unclaimed | Development-complete: fresh image v2 plus writable disposable data overlay and locally generated unsigned-development seed reached FULL_EXHAUSTIVE_TRANSIENT_RC=0. Generator now provisions the UID-1000 asb user without default-user collision. Formal attestation is intentionally not claimed. | No further development action. Preserve the generated-seed image-native evidence; any signed/formal/publication qualification must use a separate formal successor and must not block development. |
 | P0 | [AR-1306](../tasks/AR-1306-authenticated-fault-matrix-qualification.md): Authenticated strict-replay fault-matrix qualification | Unclaimed | Qualify the real authenticated strict-replay service and fault matrix missing from PR #221. | Recheck approved exact head, merge the PR, verify post-merge state, and close AR with durable evidence. |
 | P0 | [AR-1310](../tasks/AR-1310-provider-capture-campaign.md): Runtime-owned provider capture and recording campaign qualification | Unclaimed | Runtime-owned provider capture and recording campaign qualification. | Implementation and coverage successor are merged; retain historical DCO finding as AR-1313 and continue with authenticated agent-catalog producer AR-1316. |
 | P0 | [AR-1312](../tasks/AR-1312-post-merge-coverage-floor.md): Post-merge workspace coverage floor repair | Unclaimed | Repair the post-merge workspace coverage deficit without weakening the 90&#37; floor. | AR complete: signed coverage repair merged as PR #238 and post-merge workspace coverage verification passed; retain evidence and continue with AR-1316. |

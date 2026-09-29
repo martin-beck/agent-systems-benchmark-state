@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1305-image-native-user-session",
   "checkpoint_commit": "89e13cf73e049a44e94d0d363de8891e29fcc2ac",
-  "claim_expires": "2026-09-29T17:58:19+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1302"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "00a47726683609b7fef8ea5738fed5a3692fac29",
-  "owner": "coordinator-ar1305-devtest-20260929b",
+  "owner": "",
   "plan": "../plans/AR-1305.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Development-complete: fresh image v2 plus writable disposable data overlay and locally generated unsigned-development seed reached FULL_EXHAUSTIVE_TRANSIENT_RC=0. Generator now provisions the UID-1000 asb user without default-user collision. Formal attestation is intentionally not claimed.",
-  "task_revision": 108,
+  "task_revision": 109,
   "title": "Image-native user-session support",
-  "updated_at": "2026-09-29T17:19:35+00:00",
+  "updated_at": "2026-09-29T17:19:43+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1305-image-native-user-session"
 }
 ---
@@ -389,3 +389,7 @@ limits and fail-closed behavior remain unchanged.
   FULL_EXHAUSTIVE_TRANSIENT_RC=0. Sanitized evidence:
   /srv/data/projects/ar1308-development/diagnostic-ar1305-generated-seed-summary.txt. No reviewed
   seed digest or formal attestation was required or claimed.
+
+- 2026-09-29T17:19:43+00:00: Development acceptance complete with fresh generated-seed image-native
+  transient evidence and full state gates; formal/publication qualification remains a separate
+  successor.
