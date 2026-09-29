@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T05:28:13+00:00",
+  "updated_at": "2026-09-29T05:28:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -68,3 +68,6 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
   agent-systems-benchmark-state; protected product main f92c2e941913129d7db50480f71e8361a0d43a0c.
   Product main is dirty with unrelated changes, so it will not be reused. AR-1512 a4064ab is review
   evidence only; starting fresh isolated bridge worktree.
+
+- 2026-09-29T05:28:41+00:00: Recorded command exit 0; command argv SHA-256
+  933f1d0074a2ef06c2e574cd30093456f8b922e36d1a373e90edf3a4a6401309.
