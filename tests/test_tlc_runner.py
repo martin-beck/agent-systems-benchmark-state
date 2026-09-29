@@ -512,6 +512,8 @@ class TlcRunnerTests(unittest.TestCase):
     def test_guest_seed_contains_complete_bounded_bootstrap(self) -> None:
         seed = GUEST.build_user_data("full-exhaustive")
         for contract in (
+            "- name: asb",
+            "uid: 1000",
             "mount, UUID=" + GUEST.DATA_UUID,
             "TLC_JAR_PATH=/mnt/asb-data/tla2tools.jar",
             "TLC_JAR_SHA256=936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",

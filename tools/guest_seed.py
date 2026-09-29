@@ -23,6 +23,13 @@ def build_user_data(tier: str) -> str:
     result_name = tier.upper().replace("-", "_")
     return f'''#cloud-config
 package_update: false
+users:
+  - default
+  - name: asb
+    uid: 1000
+    shell: /bin/bash
+    lock_passwd: true
+    groups: [adm, cdrom, sudo, dip, plugdev, lxd, netdev]
 package_upgrade: false
 bootcmd:
   - [mkdir, -p, /usr/local/libexec/asb-offline]
