@@ -21,11 +21,11 @@
   "plan": "../plans/AR-1508-platform-owned-authority-provider.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Platform-owned authority provider",
-  "updated_at": "2026-09-29T02:31:49+00:00",
+  "updated_at": "2026-09-29T10:43:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1508-platform-owned-authority-provider"
 }
 ---
@@ -158,3 +158,7 @@ fixed-path authority, weakening formal/privacy/native gates.
   independently bind tools/policy/allowlist/endpoint; resolver lacks post-materialization
   expiry/revocation fencing; credential/enrollment material is not implemented. Preserve commits
   unpushed. Create AR-1509 for a real platform provider receipt and lifecycle fence.
+
+- 2026-09-29T10:43:43+00:00: AR-1510 confirms the same missing provider boundary; AR-1508 has the
+  narrow provider/materialization candidate and now needs exact-head gates and independent review
+  before publication.

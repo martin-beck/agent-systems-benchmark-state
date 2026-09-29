@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1508](tasks/AR-1508-platform-owned-authority-provider.md): Platform-owned authority provider | Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material. | Run full exact-head product gates on signed commits 7306f83 and 0135650; obtain independent review before publication. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -66,7 +72,6 @@ Never edit this file directly.
 | P0 | [AR-1483](tasks/AR-1483-authenticated-control-process-owner.md): Authenticated control process owner | Own authenticated control session and lifecycle while minting opaque CLI dispatch sources. | Promote and claim, then audit whether the runtime/control owner contract can be implemented without caller authority. | - |
 | P0 | [AR-1506](tasks/AR-1506-runtime-platform-launcher-integration.md): Runtime platform launcher integration | Connect the merged authenticated platform authority/bootstrap protocol to production ASB process startup and ordinary CLI dispatch. | Blocked pending a real runtime-owned platform adapter that constructs private RuntimeAuthorityInputs from authenticated AR-1505 bootstrap state; do not publish current facade. Required follow-up must remove public source injection and wire the production entrypoint without synthetic roots/tools/policy. | - |
 | P0 | [AR-1507](tasks/AR-1507-runtime-owned-authority-materialization.md): Runtime-owned authority materialization | Materialize private runtime launch authority from authenticated AR-1505 bootstrap state without caller or synthetic authority. | Promote after dependency verification; define and implement the runtime-owned authority materializer that maps authenticated bootstrap state to private roots, tools, policy, and opaque dispatch source. | - |
-| P0 | [AR-1508](tasks/AR-1508-platform-owned-authority-provider.md): Platform-owned authority provider | Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material. | Run full exact-head product gates on signed commits 7306f83 and 0135650; obtain independent review before publication. | - |
 | P0 | [AR-1509](tasks/AR-1509-authenticated-authority-provider-receipt.md): Authenticated authority-provider receipt | Replace the AR-1508 test façade with an authenticated production authority-provider receipt and lifecycle fence. | Blocked: implement a real runtime/control platform-authority adapter that obtains credential/enrollment/private roots from authenticated control state, emits a control-authenticated receipt, wires materialize_provisioner into live run/sweep, and rechecks restart/revocation/expiry at transitions; preserve this worktree for successor AR. | - |
 | P0 | [AR-1510](tasks/AR-1510-authenticated-control-source-wiring.md): Authenticated control source and production provider wiring | Provide the authenticated platform control source and production lifecycle wiring required by the authority-provider receipt. | Blocked: obtain and integrate a real authenticated platform authority provider plus production control-client bootstrap/CLI wiring; create a narrower successor when that source/capability contract is available. | - |
 | P0 | [AR-1511](tasks/AR-1511-runtime-control-authority-issuer.md): Runtime/control authority issuer and capability source | Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch. | Blocked on successor contract: add a real runtime/control process-owner material provider and ordinary CLI/control caller that supplies authenticated private roots, policy, allowlist, pinned tool bundle, namespace and launch input; then reapply production wiring, remote-revoke coverage, and gates. Do not derive authority from public digest-only records. | - |
