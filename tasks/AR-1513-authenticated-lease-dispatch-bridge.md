@@ -8,7 +8,7 @@
     "AR-1484"
   ],
   "id": "AR-1513",
-  "next_action": "Harden bridge API review: remove any remaining public authority construction, add exact lease dispatch lifecycle negatives, run focused/full gates, then commit signed DCO.",
+  "next_action": "Add exact lease dispatch lifecycle negatives and review API authority boundaries; then run full gates and commit signed DCO.",
   "observed_branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
   "observed_dirty": 6,
   "observed_head": "f92c2e941913129d7db50480f71e8361a0d43a0c",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T05:38:32+00:00",
+  "updated_at": "2026-09-29T05:38:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -114,3 +114,8 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
 
 - 2026-09-29T05:38:32+00:00: Recorded command exit 0; command argv SHA-256
   9b498ebdee73cab471971c5dafbe261dc25698666e300cea3661fb0b83d17145.
+
+- 2026-09-29T05:38:48+00:00: Focused clippy gate passed through handoffctl: cargo clippy --locked -p
+  asb-runtime -p asb-cli --all-targets -- -D warnings. Removed broad module dead-code allowance;
+  retained only narrow integration-seam allows. Runtime focused tests remain 156 passed, 1 ignored.
+  Product diff remains six files pending lifecycle/source review.
