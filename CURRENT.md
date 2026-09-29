@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1505](tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | Rerun full workspace tests serially with captured terminal status, then inspect diff and commit the P1-3 repair if green. | ar1505-repair-luna56 |
+| P0 | [AR-1505](tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | Inspect final five-file diff including generated v1.11 schemas, run git diff check, then create the signed DCO repair commit and push the existing branch for fresh exact-head review. | ar1505-repair-luna56 |
 
 ## Blocked
 

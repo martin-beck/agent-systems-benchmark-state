@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Rerun full workspace tests serially with captured terminal status, then inspect diff and commit the P1-3 repair if green.",
+  "next_action": "Inspect final five-file diff including generated v1.11 schemas, run git diff check, then create the signed DCO repair commit and push the existing branch for fresh exact-head review.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 5,
   "observed_head": "95ac5453fe3a1fbc383afa2ce713a3dceff78437",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 222,
+  "task_revision": 223,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:37:13+00:00",
+  "updated_at": "2026-09-29T00:38:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -887,3 +887,9 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-29T00:37:13+00:00: Recorded command exit 0; command argv SHA-256
   b7c1bd7abcc21a2d2b7851e3c19b5eece224e6abf67ab56b582453c98727e148.
+
+- 2026-09-29T00:38:10+00:00: A second bounded workspace-test invocation was rejected by handoffctl
+  with exact stderr ERROR: LOCK_TIMEOUT after 10.0s acquiring shared coordinator lock because the
+  first full workspace run was still active. The original run subsequently terminated successfully
+  (exit 0) per the durable coordinator result. Focused schema, protocol, resolver, fmt,
+  changed-package check, clippy, and docs gates are green.
