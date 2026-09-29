@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-29T07:26:18+00:00",
+  "claim_expires": "2026-09-29T07:28:04+00:00",
   "depends_on": [
     "AR-1502",
     "AR-1484"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T05:26:18+00:00",
+  "updated_at": "2026-09-29T05:28:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -61,3 +61,5 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
   provenance, and live dispatch bridge successor.
 
 - 2026-09-29T05:26:18+00:00: Claimed by ar1513-lease-bridge-luna56.
+
+- 2026-09-29T05:28:04+00:00: Heartbeat by ar1513-lease-bridge-luna56.
