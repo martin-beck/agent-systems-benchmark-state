@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 86,
+  "task_revision": 87,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T03:55:04+00:00",
+  "updated_at": "2026-09-29T03:55:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
@@ -327,3 +327,6 @@ production authority, or weakening fail-closed/native/formal gates.
   materialization/revoke integration, deterministic negative tests, fixture correction, and docs.
   git diff --check against protected f92c2e9 is clean. No PR/publication claim; request independent
   exact-head review now.
+
+- 2026-09-29T03:55:27+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
