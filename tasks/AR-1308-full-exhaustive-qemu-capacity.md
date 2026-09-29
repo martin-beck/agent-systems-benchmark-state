@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "checkpoint_commit": "df0e402f442468e43e06b7c1acb3c3667277fb75",
-  "claim_expires": "2026-09-29T13:54:13+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1304"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
-  "owner": "coordinator-ar1308-fixture-v3",
+  "owner": "",
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Unsigned-development fixture v3 now populates the disposable state volume, creates asb user/data UUID, reaches the bound state checkout, and records transient cgroup RC=0 before poweroff. Formal verify remains intentionally non-qualifying because the network-disabled diagnostic cannot download TLC and therefore produces no attestation.",
-  "task_revision": 583,
+  "task_revision": 584,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T13:44:40+00:00",
+  "updated_at": "2026-09-29T13:44:43+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1789,3 +1789,7 @@ must report `qualification_authorized: false`.
   state bind, FULL_EXHAUSTIVE_TRANSIENT_RC=0, then verify failed only at curl github.com due -nic
   none and no attestation was claimed. Sanitized markers at
   /srv/data/projects/ar1308-development/diagnostic-v3-summary.txt; raw serial was truncated.
+
+- 2026-09-29T13:44:43+00:00: Released after fixture v3 repair and bounded diagnostic. State layout
+  is repaired and verified; formal qualification remains blocked by intentionally unavailable signed
+  AR-1307 inputs and network-disabled verify download.
