@@ -226,13 +226,7 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1531](../tasks/AR-1531.md): Provision signed 8G formal capacity fixture | coordinator-ar1531-capacity-fixture-20260930 | Provision the missing 8G/8G disposable formal fixture and resource evidence required by AR-1522. | Promote after dependency verification; provision a disposable signed-capacity-8g QEMU fixture and satisfy host/guest resource preflight without changing the formal seed gate. |
-
-### Blocked (79)
+### Blocked (80)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -297,6 +291,7 @@
 | P0 | [AR-1518](../tasks/AR-1518.md): C | Unclaimed | Capacity profile boots and runs, but the 1700-second bounded QEMU attempt timed out without terminal TLC result or attestation. | Use AR-1519 for separately scoped reduced-model development; do not claim AR-1307 or AR-1308 formal qualification. |
 | P0 | [AR-1522](../tasks/AR-1522.md): AR-1307/1308 formal qualification rerun | Unclaimed | Run and independently verify the repaired AR-1307/1308 full-tier qualification, or leave a truthful classified blocker. | Remain planned until AR-1530&#x27;s signed-capacity-8g profile is verified on protected main; then run the one authorized terminal qualification attempt. |
 | P0 | [AR-1523](../tasks/AR-1523.md): Platform authority deployment adapter | Unclaimed | Central orchestration is merged for local/replay, but PlanAuthoritySource still rejects live mode and no runtime-owned platform source supplies private authority for first-customer dispatch. | Remain blocked until a runtime/control deployment owner supplies an authenticated private authority source and opaque materialization handoff; then replace PlanAuthoritySource&#x27;s live-mode rejection with the central orchestrator adapter and run exact-head gates. |
+| P0 | [AR-1531](../tasks/AR-1531.md): Provision signed 8G formal capacity fixture | Unclaimed | Provision the missing 8G/8G disposable formal fixture and resource evidence required by AR-1522. | Promote after dependency verification; provision a disposable signed-capacity-8g QEMU fixture and satisfy host/guest resource preflight without changing the formal seed gate. |
 | P1 | [AR-0604](../tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Unclaimed | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Obtain authorized native x86 runner and immutable CSB/Python evidence; rerun native_boundary and record A/B overhead. |
 | P1 | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Unclaimed | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Create successor AR for authenticated route/ancestor authority; preserve AR-1288 evidence and AR-0814 head 29cfa193. |
 | P1 | [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md): Qualify development host ASB runner operations | Unclaimed | Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery. | Run repeated clean ASB jobs on every declared development host label and audit reset, isolation, architecture, and artifact provenance. |
@@ -509,3 +504,4 @@
 | P0 | [AR-1378](../tasks/AR-1378-live-control-adapter.md): Authenticated live control adapter | Unclaimed | Bind authenticated control receipts to runtime-owned live dispatch. | PR #275 is published at exact head 5f1902c. Monitor all required checks; repair failures through handoffctl, merge only after independent review and green exact-head CI, then verify seven post-merge workflows. |
 | P0 | [AR-1379](../tasks/AR-1379-live-dispatch-integration.md): Production live dispatch integration | Unclaimed | Integrate authenticated runtime live dispatch into asb run and sweep. | Monitor rerun of post-merge Rust workflow and remaining six workflows at exact main SHA 1e2c591; release only after all seven terminal SUCCESS. |
 | P0 | [AR-1380](../tasks/AR-1380-runtime-scheduler-composition.md): Runtime scheduler composition for live dispatch | Unclaimed | Compose runtime-owned live attempts for production run and sweep scheduling. | PR #276 force-updated to exact head ab4e60c on protected main 16bca1f9 after policy/platform stale-base failure. Monitor fresh exact-head checks; repair any new failures, merge only green, then verify seven post-merge workflows. |
+| P0 | [AR-1381](../tasks/AR-1381-live-cli-scheduler-wiring.md): Runtime-owned live CLI scheduler wiring | Unclaimed | Wire runtime-owned live scheduler authority into production asb run and sweep. | PR #277 force-updated to exact head 4ba3085 after provenance fixture repair. Monitor fresh exact-head checks; repair any new failures, merge only green, then verify seven post-merge workflows. |
