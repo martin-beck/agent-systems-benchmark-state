@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1505-control-plane-platform-authority",
-  "checkpoint_commit": "95ac5453fe3a1fbc383afa2ce713a3dceff78437",
+  "checkpoint_commit": "da5e2a916b66de9f31f2c5bcccd1f59f7b3321d2",
   "claim_expires": "2026-09-29T01:51:57+00:00",
   "depends_on": [
     "AR-1473",
@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Run separate resolver and control-bootstrap tests, then changed-package clippy/check and commit the clean namespace-binding diff.",
+  "next_action": "Request fresh independent review at da5e2a916b66de9f31f2c5bcccd1f59f7b3321d2 and monitor all exact-head CI to terminal green before any merge.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 0,
   "observed_head": "da5e2a916b66de9f31f2c5bcccd1f59f7b3321d2",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 234,
+  "task_revision": 235,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:41:32+00:00",
+  "updated_at": "2026-09-29T00:42:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -926,3 +926,10 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-29T00:41:32+00:00: Recorded command exit 0; command argv SHA-256
   115a28b65160c6e90b714d050a6f4583b7c46fde11739a8c110e46994e782112.
+
+- 2026-09-29T00:42:03+00:00: P1-3 namespace binding repair committed and pushed. Product commit
+  da5e2a916b66de9f31f2c5bcccd1f59f7b3321d2 has a verified good SSH signature for martin.beck2@gmx.de
+  and matching DCO Signed-off-by trailer. Remote branch and PR 382 exact head equal
+  da5e2a916b66de9f31f2c5bcccd1f59f7b3321d2. Fresh CI snapshot: 13 checks restarted; Huawei SPDX
+  headers SUCCESS, AWQ shadow QUEUED, and the remaining checks IN_PROGRESS. PR remains OPEN with no
+  reviews and no merge.
