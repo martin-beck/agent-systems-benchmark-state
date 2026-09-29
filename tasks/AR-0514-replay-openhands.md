@@ -2,7 +2,7 @@
 {
   "branch": "feature/replay-openhands",
   "checkpoint_commit": "3ccee91118b3a43eda123b0107d04ea4c2e3d80a",
-  "claim_expires": "2026-09-29T11:58:48+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0309",
     "AR-0503",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/replay-openhands",
   "observed_dirty": 0,
   "observed_head": "3ccee91118b3a43eda123b0107d04ea4c2e3d80a",
-  "owner": "ar0514-repair-luna56",
+  "owner": "",
   "plan": "../plans/AR-0514.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Qualify replay conformance for OpenHands.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Qualify OpenHands replay",
-  "updated_at": "2026-09-29T10:03:50+00:00",
+  "updated_at": "2026-09-29T10:04:07+00:00",
   "worktree_key": "agent-systems-benchmark-replay-openhands"
 }
 ---
@@ -158,3 +158,12 @@ Qualify OpenHands record/replay, network denial, parity, retries, tool calls, ca
 
 - 2026-09-29T10:03:50+00:00: Recorded command exit 1; command argv SHA-256
   aa635cf14f01d7c3c510ec2850c005cde159391e2909b2c37f12525a5716ea55.
+
+- 2026-09-29T10:04:07+00:00: Truthful blocked boundary after bounded repair 3ccee911: immutable
+  AR-0309 metadata preserves SDK 1.17.0 upstream commit/tree, wheel/source hashes, freeze and
+  approved digest, but no retained environment bundle, lock archive, exact Python executable or
+  matching site-packages tree exists. Five dependency-preserving recipes produced non-matching
+  digests. Provider-free local mock strict-replay and malformed/tool-inconsistent negative tests
+  pass; native journey remains ignored. No digest override, credentials or native replay. Unblock
+  only after AR-0521 publishes an independently verified content-addressed environment bundle,
+  offline verifier and altered-input rejection, then requalify AR-0514.
