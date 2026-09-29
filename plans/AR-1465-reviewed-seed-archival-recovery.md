@@ -1,4 +1,10 @@
-# AR-1465: Reviewed full-exhaustive seed archival recovery
+# AR-1465: Reviewed full-exhaustive seed archival recovery (formal-only)
+
+This archival task is not a development prerequisite. The
+`unsigned-development` AR-1308 profile may generate a disposable local seed
+without a reviewed digest and must report `qualification_authorized: false`.
+This task remains relevant only if the signed/formal/publication profile is
+explicitly resumed.
 
 ## Required work
 

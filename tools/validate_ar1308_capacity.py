@@ -120,10 +120,14 @@ def _validate_inputs(receipt: dict[str, Any], profile: str = "signed") -> list[s
     digest_keys = (
         "image_sha256",
         "model_config_sha256",
-        "seed_sha256",
         "source_tree_sha256",
         "validator_sha256",
     )
+    # Development fixtures may generate a fresh NoCloud seed locally.  The
+    # signed profile remains digest-pinned; the diagnostic profile only
+    # requires a present seed and must never authorize qualification.
+    if profile == "signed":
+        digest_keys = (*digest_keys, "seed_sha256")
     issues.extend(
         f"{key} must be a lowercase SHA-256 digest"
         for key in digest_keys
@@ -241,12 +245,15 @@ def _validate_source(receipt: dict[str, Any], source: Path, profile: str = "sign
 
 
 def _validate_artifacts(
-    receipt: dict[str, Any], model: Path, seed: Path, jdk: Path, jar: Path, lock: Path
+    receipt: dict[str, Any], model: Path, seed: Path, jdk: Path, jar: Path, lock: Path,
+    profile: str = "signed",
 ) -> list[str]:
     issues: list[str] = []
     if not model.is_file() or _digest(model) != _string(receipt, "model_config_sha256"):
         issues.append("model/config input is missing or has the wrong digest")
-    if not seed.is_file() or _digest(seed) != _string(receipt, "seed_sha256"):
+    if not seed.is_file():
+        issues.append("seed input is missing")
+    elif profile == "signed" and _digest(seed) != _string(receipt, "seed_sha256"):
         issues.append("seed input is missing or has the wrong digest")
     if not lock.exists() or lock.stat().st_mode & 0o002:
         issues.append("admission-lock input is missing or writable by other users")
@@ -278,7 +285,7 @@ def validate_live(
     issues = validate_host(host_capacity(root))
     issues.extend(_validate_vm(image, overlay))
     issues.extend(_validate_source(receipt, source, profile))
-    issues.extend(_validate_artifacts(receipt, model, seed, jdk, jar, lock))
+    issues.extend(_validate_artifacts(receipt, model, seed, jdk, jar, lock, profile))
     return issues
 
 

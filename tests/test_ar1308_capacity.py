@@ -108,6 +108,13 @@ class Ar1308CapacityTests(unittest.TestCase):
         self.assertEqual(validator.validate_receipt(candidate, "unsigned-development"), [])
         self.assertTrue(validator.validate_receipt(candidate))
 
+    def test_unsigned_development_does_not_require_seed_digest(self) -> None:
+        candidate = copy.deepcopy(RECEIPT)
+        candidate["pinned_inputs"]["ar1307_commit"] = "a" * 40
+        candidate["seed_sha256"] = "development-generated"
+        self.assertEqual(validator.validate_receipt(candidate, "unsigned-development"), [])
+        self.assertIn("seed_sha256", " ".join(validator.validate_receipt(candidate)))
+
     def test_unsigned_development_source_must_match_pin(self) -> None:
         from tempfile import TemporaryDirectory
 
