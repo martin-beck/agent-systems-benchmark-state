@@ -199,16 +199,11 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### Blocked (81)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0514](../tasks/AR-0514-replay-openhands.md): Qualify OpenHands replay | ar0514-review-luna56 | Qualify replay conformance for OpenHands. | Wait for AR-0521 to publish and independently verify the signed content-addressed OpenHands environment bundle, offline verifier, reproducible approved digest, and altered-input rejection; then reclaim AR-0514 for native replay requalification. |
-
-### Blocked (80)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
+| P0 | [AR-0514](../tasks/AR-0514-replay-openhands.md): Qualify OpenHands replay | Unclaimed | Qualify replay conformance for OpenHands. | Wait for AR-0521 to publish and independently verify the signed content-addressed OpenHands environment bundle, offline verifier, reproducible approved digest, and altered-input rejection; then reclaim AR-0514 for native replay requalification. |
 | P0 | [AR-0836](../tasks/AR-0836-runner-isolation-hardening.md): Harden runner isolation and credential boundaries | Unclaimed | Harden development-host runner isolation against same-UID job tampering and diagnostic leakage. | Independently review immutable signed candidate 9b4e7084e02cdb3a1ff56dc55bbdce413ed6b1d3; keep trusted workflows blocked and AR-0836 in progress until required AR-0837 proves the digest-pinned no-host-mount job-container boundary. |
 | P0 | [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md): Implement &#96;asb tui&#96; lifecycle routing | Unclaimed | Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend. | After AR-1010, AR-1037 and AR-1060 are done, rebase c545c33 onto protected ASB main and implement only the ASB provisioning half before regenerated evidence and trusted asb-tui pinning. |
 | P0 | [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md): Build the standalone asb-tui application | Unclaimed | Deliver the actual standalone interactive asb-tui application without an ASB workspace dependency. | Blocked: implementation belongs to asb-tui, but current scope forbids touching that repository; AR-1010/AR-1060 also retain unresolved publication blockers. Obtain explicit scope/dependency repair before re-opening. |
@@ -496,3 +491,4 @@
 | P0 | [AR-1398](../tasks/AR-1398-signed-protected-main-recovery.md): Signed protected-main recovery | Unclaimed | Restore signed+DCO protected-main evidence after an unsigned GitHub-generated repair merge. | Watch all seven exact-main workflows for merge b63394b; after terminal success, record conclusions and release AR-1398 done. |
 | P0 | [AR-1421](../tasks/AR-1421-protected-main-literature-merge-race.md): Protected-main literature merge race repair | Unclaimed | Repair protected-main merge-tree requalification after a literature PR merges onto an advanced main. | Release AR-1421 done: merged tree equals reviewed topic tree e5d99b7; parents are 5ddac12 and 28e3560; topic passes SSH signature and DCO. Seven exact-main workflows all terminal SUCCESS. |
 | P0 | [AR-1427](../tasks/AR-1427-protected-main-merge-tree-requalification.md): Protected-main merge-tree requalification repair | Unclaimed | Repair exact protected-main merge-tree requalification after sequential tutorial merges. | Promote and reproduce PR #310 merge f511645 versus reviewed topic 9d97e168; repair exact protected-main merge-tree requalification, then rerun AR-1215 post-merge evidence. |
+| P0 | [AR-1431](../tasks/AR-1431-protected-main-stale-base-repair.md): Protected-main stale-base merge requalification repair | Unclaimed | Prevent stale-base sequential merges from passing review but failing protected-main merge-tree policy. | Monitor seven post-merge workflows for exact merge ed907603; release AR-1431 only after all seven terminal success, then coordinate AR-1216 release. |

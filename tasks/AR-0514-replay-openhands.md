@@ -2,7 +2,7 @@
 {
   "branch": "feature/replay-openhands",
   "checkpoint_commit": "3ccee91118b3a43eda123b0107d04ea4c2e3d80a",
-  "claim_expires": "2026-09-29T10:42:48+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0309",
     "AR-0503",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/replay-openhands",
   "observed_dirty": 0,
   "observed_head": "3ccee91118b3a43eda123b0107d04ea4c2e3d80a",
-  "owner": "ar0514-review-luna56",
+  "owner": "",
   "plan": "../plans/AR-0514.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Qualify replay conformance for OpenHands.",
-  "task_revision": 62,
+  "task_revision": 63,
   "title": "Qualify OpenHands replay",
-  "updated_at": "2026-09-29T10:13:00+00:00",
+  "updated_at": "2026-09-29T10:13:14+00:00",
   "worktree_key": "agent-systems-benchmark-replay-openhands"
 }
 ---
@@ -223,3 +223,8 @@ Qualify OpenHands record/replay, network denial, parity, retries, tool calls, ca
 
 - 2026-09-29T10:13:00+00:00: Corrected stale operational next action after independent review; no
   product changes.
+
+- 2026-09-29T10:13:14+00:00: Review handoff complete. AR-0514 remains blocked solely on AR-0521
+  immutable environment provenance; corrected next action now points to signed content-addressed
+  bundle, offline verifier, reproducible approved digest, altered-input rejection, and subsequent
+  native replay requalification.
