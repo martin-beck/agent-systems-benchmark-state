@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-29T20:32:39+00:00",
+  "claim_expires": "2026-09-29T20:45:03+00:00",
   "depends_on": [
     "AR-1304"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair AR-1308 fixture/evidence for reproducible development runs.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "AR-1308 QEMU fixture repair",
-  "updated_at": "2026-09-29T18:32:39+00:00",
+  "updated_at": "2026-09-29T18:45:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1516-ar1308-qemu-fixture-evidence-repair"
 }
 ---
@@ -40,3 +40,5 @@ qualification, or make reviewed seed material a development prerequisite.
   803d50b8039f7dc9ac880183c777199c36352d4afba6f948f2ebbe23090ef694.
 
 - 2026-09-29T18:32:39+00:00: Heartbeat by coordinator-ar1516-qemu-repair-20260929.
+
+- 2026-09-29T18:45:03+00:00: Heartbeat by coordinator-ar1516-qemu-repair-20260929.
