@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1507-runtime-owned-authority-materialization",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-29T04:13:07+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1473",
     "AR-1474",
@@ -17,15 +17,15 @@
   "observed_branch": "feature/ar-1507-runtime-owned-authority-materialization",
   "observed_dirty": 0,
   "observed_head": "f92c2e941913129d7db50480f71e8361a0d43a0c",
-  "owner": "ar1507-authority-luna56",
+  "owner": "",
   "plan": "../plans/AR-1507-runtime-owned-authority-materialization.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Materialize private runtime launch authority from authenticated AR-1505 bootstrap state without caller or synthetic authority.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Runtime-owned authority materialization",
-  "updated_at": "2026-09-29T02:13:07+00:00",
+  "updated_at": "2026-09-29T02:13:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1507-runtime-owned-authority-materialization"
 }
 ---
@@ -71,3 +71,12 @@ first-customer production evidence.
   9b4be95fa2550260cc2e64b5f30cbf63d5ffe2b10389749630788f6a0fec525b.
 
 - 2026-09-29T02:13:07+00:00: Heartbeat by ar1507-authority-luna56.
+
+- 2026-09-29T02:13:40+00:00: Blocked at protected main f92c2e941913129d7db50480f71e8361a0d43a0c:
+  AR-1505 bootstrap authenticates only digest claims.
+  RuntimeControlBootstrap::materialize_provisioner still accepts caller-supplied
+  RuntimeAuthorityInputs (roots, tools, policy, namespace, config), and no runtime/platform-owned
+  mapping contract exists. Fixed paths, PATH discovery, or mock data would synthesize authority and
+  violate AR-1507. No product mutation; AR-1506 signed facade remains unmerged. Required narrow
+  successor: define and implement the platform-owned authority provider/materialization contract,
+  including verified root/tool/policy source and enrollment/receipt handoff.
