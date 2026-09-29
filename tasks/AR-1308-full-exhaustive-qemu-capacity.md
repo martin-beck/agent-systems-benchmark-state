@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Unsigned-development capacity and exact-head fixture remain repaired; generated-seed validation passes. Portable-smoke v14 reaches PORTABLE_SMOKE_TRANSIENT_RC=0 and powers off, but attest.py still rejects one resolved guest input path as outside /srv/data/projects, so no portable attestation is claimed yet. Full state suite remains 200 passed/86 subtests.",
-  "task_revision": 600,
+  "task_revision": 601,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T16:37:16+00:00",
+  "updated_at": "2026-09-29T17:20:41+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1843,3 +1843,7 @@ must report `qualification_authorized: false`.
 
 - 2026-09-29T16:37:16+00:00: Released after recording the remaining portable-smoke attestation path
   defect; development seed digest remains non-blocking.
+
+- 2026-09-29T17:20:41+00:00: AR-1305 development image/seed path is now complete; resume AR-1308 to
+  repair the remaining portable-smoke path and preloaded verifier fixture without changing formal
+  limits.
