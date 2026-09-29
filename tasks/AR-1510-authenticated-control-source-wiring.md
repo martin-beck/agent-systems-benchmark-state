@@ -8,18 +8,18 @@
   ],
   "id": "AR-1510",
   "next_action": "Clean worktree setup from protected main f92c2e94 is in progress; read product contracts and audit runtime/provider callsites before implementing authenticated control-source wiring.",
-  "observed_branch": "",
+  "observed_branch": "feature/ar-1510-authenticated-control-source-wiring",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "f92c2e941913129d7db50480f71e8361a0d43a0c",
   "owner": "ar1510-control-source-luna56",
   "plan": "../plans/AR-1510-authenticated-control-source-wiring.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated platform control source and production lifecycle wiring required by the authority-provider receipt.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Authenticated control source and production provider wiring",
-  "updated_at": "2026-09-29T03:00:29+00:00",
+  "updated_at": "2026-09-29T03:00:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1510-authenticated-control-source-wiring"
 }
 ---
