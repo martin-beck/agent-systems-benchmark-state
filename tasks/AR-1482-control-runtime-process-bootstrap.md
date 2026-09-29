@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1482-control-runtime-process-bootstrap",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "f92c2e941913129d7db50480f71e8361a0d43a0c",
   "claim_expires": "2026-09-29T11:07:45+00:00",
   "depends_on": [
     "AR-1472",
@@ -9,7 +9,7 @@
     "AR-1480"
   ],
   "id": "AR-1482",
-  "next_action": "Promote and claim, then inspect control/runtime process bootstrap APIs on protected main.",
+  "next_action": "Blocked pending a real authenticated platform authority provider/materializer and runtime-owned session discovery; continue via AR-1506/AR-1510 successor path.",
   "observed_branch": "feature/ar-1482-control-runtime-process-bootstrap",
   "observed_dirty": 0,
   "observed_head": "fdc7f59f83f647ce099439b003848291e81dd3bb",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compose authenticated control enrollment into the ordinary CLI process bootstrap.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Control-runtime process bootstrap",
-  "updated_at": "2026-09-29T10:37:45+00:00",
+  "updated_at": "2026-09-29T10:37:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1482-control-runtime-process-bootstrap"
 }
 ---
@@ -86,3 +86,6 @@ providers, accept caller-built authority, or weaken fail-closed boundaries.
   truthful successor next action after blocker audit.
 
 - 2026-09-29T10:37:45+00:00: Claimed by ar1482-bootstrap-luna56.
+
+- 2026-09-29T10:37:48+00:00: Persist exact protected-main audit checkpoint and truthful successor
+  next action; no product changes.

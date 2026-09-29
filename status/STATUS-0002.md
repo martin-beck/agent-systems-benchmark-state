@@ -203,7 +203,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1482](../tasks/AR-1482-control-runtime-process-bootstrap.md): Control-runtime process bootstrap | ar1482-bootstrap-luna56 | Compose authenticated control enrollment into the ordinary CLI process bootstrap. | Promote and claim, then inspect control/runtime process bootstrap APIs on protected main. |
+| P0 | [AR-1482](../tasks/AR-1482-control-runtime-process-bootstrap.md): Control-runtime process bootstrap | ar1482-bootstrap-luna56 | Compose authenticated control enrollment into the ordinary CLI process bootstrap. | Blocked pending a real authenticated platform authority provider/materializer and runtime-owned session discovery; continue via AR-1506/AR-1510 successor path. |
 
 ### Blocked (81)
 
