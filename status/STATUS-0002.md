@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| [AR-1310](../tasks/AR-1310-provider-capture-campaign.md) | [AR-1060](../tasks/AR-1060-authenticated-control-endpoint-handoff.md), [AR-1151](../tasks/AR-1151.md) | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md), [AR-1319](../tasks/AR-1319-authenticated-agent-catalog-entry-contract.md) |
 | [AR-1311](../tasks/AR-1311-planned-task-metadata-schema-repair.md) | None | None |
 | [AR-1312](../tasks/AR-1312-post-merge-coverage-floor.md) | None | None |
 | [AR-1313](../tasks/AR-1313-historical-dco-909078c-repair.md) | None | None |
@@ -197,11 +196,11 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1511](../tasks/AR-1511-runtime-control-authority-issuer.md): Runtime/control authority issuer and capability source | ar1511-production-path-luna56 | Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch. | Implement authenticated runtime material provider from non-test owner state, bind launch program/adapter provenance, wire ordinary CLI/control caller, add remote-revoke test, then focused gates and independent exact-head review. |
+| P0 | [AR-1511](../tasks/AR-1511-runtime-control-authority-issuer.md): Runtime/control authority issuer and capability source | Unclaimed | Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch. | Implement authenticated runtime material provider from non-test owner state, bind launch program/adapter provenance, wire ordinary CLI/control caller, add remote-revoke test, then focused gates and independent exact-head review. |
 
 ### Blocked (79)
 

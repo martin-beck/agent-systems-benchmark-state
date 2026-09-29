@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1511-runtime-control-authority-issuer",
   "checkpoint_commit": "673b486ba89917e3bb08c884ee17e708e0776b07",
-  "claim_expires": "2026-09-29T06:31:02+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1502",
     "AR-1484"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1511-runtime-control-authority-issuer",
   "observed_dirty": 4,
   "observed_head": "673b486ba89917e3bb08c884ee17e708e0776b07",
-  "owner": "ar1511-production-path-luna56",
+  "owner": "",
   "plan": "../plans/AR-1511-runtime-control-authority-issuer.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 159,
+  "task_revision": 160,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T04:45:59+00:00",
+  "updated_at": "2026-09-29T04:47:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
@@ -532,3 +532,6 @@ production authority, or weakening fail-closed/native/formal gates.
 
 - 2026-09-29T04:45:59+00:00: Recorded command exit 101; command argv SHA-256
   f703e043696157a1995049f67d4d96b11b2968e534fd7ca88b3ea9fc61a7f5f7.
+
+- 2026-09-29T04:47:09+00:00: Stopped repeated focused-test loop; preserve dirty production-path
+  edits and exact failure hashes, transfer to diagnostic repair worker for root-cause capture.
