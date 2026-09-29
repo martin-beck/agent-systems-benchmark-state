@@ -200,11 +200,16 @@
 
 ## Complete AR inventory
 
-### Open (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Unclaimed | Unsigned-development fixture v2 boots network-disabled, creates asb user/data UUID, reaches cloud-init and transient cgroup RC=0, then powers down; state bind path remains incomplete. | Repair the development-only state data layout so /mnt/asb-data/state exists before bind, rerun unsigned-development preflight and one bounded boot, and record only sanitized markers. No signing or signed authority is required for this diagnostic profile. |
+| P0 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | coordinator-ar1308-fixture-v3 | Unsigned-development fixture v2 boots network-disabled, creates asb user/data UUID, reaches cloud-init and transient cgroup RC=0, then powers down; state bind path remains incomplete. | Repair the development-only state data layout so /mnt/asb-data/state exists before bind, rerun unsigned-development preflight and one bounded boot, and record only sanitized markers. No signing or signed authority is required for this diagnostic profile. |
+
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-1514](../tasks/AR-1514-runtime-auth-reconciliation.md): Reconciled development auth handoff runtime | Unclaimed | Repair ASB development-runtime reconciliation between digest-only enrollment and helper invocation. | Implement and qualify the disposable runtime reconciliation repair, then rerun the v1.10 helper handoff and capture successful digest-only AuthStatus for paired asb-tui AR-1323. |
 
 ### Blocked (78)

@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "checkpoint_commit": "df0e402f442468e43e06b7c1acb3c3667277fb75",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T13:54:13+00:00",
   "depends_on": [
     "AR-1304"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
-  "owner": "",
+  "owner": "coordinator-ar1308-fixture-v3",
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Unsigned-development fixture v2 boots network-disabled, creates asb user/data UUID, reaches cloud-init and transient cgroup RC=0, then powers down; state bind path remains incomplete.",
-  "task_revision": 581,
+  "task_revision": 582,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T13:44:10+00:00",
+  "updated_at": "2026-09-29T13:44:13+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1780,3 +1780,5 @@ must report `qualification_authorized: false`.
 
 - 2026-09-29T13:44:10+00:00: Repairing unsigned-development fixture v3: populated disposable state
   volume and rerunning bounded no-network boot.
+
+- 2026-09-29T13:44:13+00:00: Claimed by coordinator-ar1308-fixture-v3.
