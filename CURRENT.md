@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1482](tasks/AR-1482-control-runtime-process-bootstrap.md): Control-runtime process bootstrap | Compose authenticated control enrollment into the ordinary CLI process bootstrap. | Promote and claim, then inspect control/runtime process bootstrap APIs on protected main. | - |
+| P0 | [AR-1482](tasks/AR-1482-control-runtime-process-bootstrap.md): Control-runtime process bootstrap | Compose authenticated control enrollment into the ordinary CLI process bootstrap. | Promote and claim, then inspect control/runtime process bootstrap APIs on protected main. | ar1482-bootstrap-luna56 |
 
 ## Blocked
 

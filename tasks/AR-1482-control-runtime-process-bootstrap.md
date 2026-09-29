@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1482-control-runtime-process-bootstrap",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T11:07:45+00:00",
   "depends_on": [
     "AR-1472",
     "AR-1473",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1482-control-runtime-process-bootstrap",
   "observed_dirty": 0,
   "observed_head": "fdc7f59f83f647ce099439b003848291e81dd3bb",
-  "owner": "",
+  "owner": "ar1482-bootstrap-luna56",
   "plan": "../plans/AR-1482-control-runtime-process-bootstrap.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Compose authenticated control enrollment into the ordinary CLI process bootstrap.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Control-runtime process bootstrap",
-  "updated_at": "2026-09-29T10:37:42+00:00",
+  "updated_at": "2026-09-29T10:37:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1482-control-runtime-process-bootstrap"
 }
 ---
@@ -84,3 +84,5 @@ providers, accept caller-built authority, or weaken fail-closed boundaries.
 
 - 2026-09-29T10:37:42+00:00: Re-open briefly only to persist exact protected-main checkpoint and
   truthful successor next action after blocker audit.
+
+- 2026-09-29T10:37:45+00:00: Claimed by ar1482-bootstrap-luna56.
