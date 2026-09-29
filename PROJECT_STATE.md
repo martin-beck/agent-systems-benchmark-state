@@ -17,20 +17,21 @@ Generated from local Git and GitHub. Do not edit.
 | #365 | `dependabot/cargo/rcgen-0.14.10@8604b5977544` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump rcgen from 0.14.7 to 0.14.10 |
 | #366 | `dependabot/cargo/schemars-1.2.2@047b52b0b5b9` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump schemars from 1.0.4 to 1.2.2 |
 | #384 | `feature/ar-1508-platform-owned-authority-provider@2c70f81100ca` | `main` | DIRTY | - | feat(runtime): platform-owned authority provider |
+| #385 | `feature/ar-1392-control-authority-materializer@0ea9671224ff` | `main` | UNSTABLE | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, QUEUED:, IN_PROGRESS: | repair: synchronize AR-1392 protected topology |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 36567744949 | `0ea9671224ff` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 36567744933 | `0ea9671224ff` | pull_request | Credential-free benchmark path | queued:- |
+| 36567744871 | `0ea9671224ff` | pull_request | Fault assurance | queued:- |
+| 36567744843 | `0ea9671224ff` | pull_request | Repository quality | in_progress:- |
+| 36567744839 | `0ea9671224ff` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 36567744822 | `0ea9671224ff` | pull_request | Huawei MIT source headers | in_progress:- |
+| 36567744771 | `0ea9671224ff` | pull_request | Formal assurance | in_progress:- |
+| 36567744650 | `0ea9671224ff` | pull_request | Rust verification | in_progress:- |
+| 36567744614 | `0ea9671224ff` | pull_request | Hosted portability and native qualification | in_progress:- |
 | 36552610477 | `47329e35c03b` | schedule | Fault assurance | completed:success |
 | 36550478232 | `47329e35c03b` | push | Formal assurance | completed:success |
 | 36550478042 | `47329e35c03b` | push | Rust verification | completed:success |
-| 36550478039 | `47329e35c03b` | push | Hosted portability and native qualification | completed:success |
-| 36550478037 | `47329e35c03b` | push | Fault assurance | completed:success |
-| 36550478002 | `47329e35c03b` | push | Emulated aarch64 portability | completed:success |
-| 36550477996 | `47329e35c03b` | push | Credential-free benchmark path | completed:success |
-| 36550477947 | `47329e35c03b` | push | Huawei MIT source headers | completed:success |
-| 36550477933 | `47329e35c03b` | push | Repository quality | completed:success |
-| 36549137937 | `8b9b41c904c6` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 36549137897 | `8b9b41c904c6` | pull_request | Huawei MIT source headers | completed:success |
-| 36549137895 | `8b9b41c904c6` | pull_request | Rust verification | completed:success |
