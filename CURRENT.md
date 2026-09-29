@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1513](tasks/AR-1513-authenticated-lease-dispatch-bridge.md): Authenticated lease-to-live-dispatch bridge | Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch. | Rerun serial workspace after updating CLI provenance hash; then run docs/formal/privacy gates and review exact diff. | ar1513-lease-bridge-luna56 |
+| P0 | [AR-1513](tasks/AR-1513-authenticated-lease-dispatch-bridge.md): Authenticated lease-to-live-dispatch bridge | Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch. | Run docs/formal/privacy gates and inspect exact diff; then sign DCO commit and request independent exact-head review. | ar1513-lease-bridge-luna56 |
 
 ## Blocked
 

@@ -8,7 +8,7 @@
     "AR-1484"
   ],
   "id": "AR-1513",
-  "next_action": "Rerun serial workspace after updating CLI provenance hash; then run docs/formal/privacy gates and review exact diff.",
+  "next_action": "Run docs/formal/privacy gates and inspect exact diff; then sign DCO commit and request independent exact-head review.",
   "observed_branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
   "observed_dirty": 7,
   "observed_head": "f92c2e941913129d7db50480f71e8361a0d43a0c",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T05:41:48+00:00",
+  "updated_at": "2026-09-29T05:42:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -134,3 +134,8 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
 
 - 2026-09-29T05:41:48+00:00: Recorded command exit 0; command argv SHA-256
   7b80382008cb01e3ea6fa6e88054b624464f9801b40ed57f947b01892a686ae8.
+
+- 2026-09-29T05:42:05+00:00: Serial workspace cargo test --locked --workspace -- --test-threads=1
+  completed successfully after refreshing the CLI provenance digest. All unit/integration/doc tests
+  passed; only pre-existing environment-qualified tests remained ignored. Product worktree is still
+  intentionally dirty with seven AR-1513 files including provenance update.
