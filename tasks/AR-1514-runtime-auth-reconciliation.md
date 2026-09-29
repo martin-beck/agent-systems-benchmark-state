@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair ASB development-runtime reconciliation between digest-only enrollment and helper invocation.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Reconciled development auth handoff runtime",
-  "updated_at": "2026-09-29T13:56:11+00:00",
+  "updated_at": "2026-09-29T13:56:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1514-runtime-auth-reconciliation"
 }
 ---
@@ -94,3 +94,6 @@ side of that repair.
   AuthStatus projections; signed product commit a97dfb39c78478445180db0e38574c17db266700. Focused
   auth tests (6), clippy, full locked workspace tests, rustdoc, and diff-check passed; no
   asb-tui/provider/production claims.
+
+- 2026-09-29T13:56:29+00:00: Recorded command exit 0; command argv SHA-256
+  3d665c34b9d5d82efcd8ebee8ba6fbec4ddc671ce6e5d20aaafa26760a677271.
