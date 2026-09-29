@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Request fresh independent review at da5e2a916b66de9f31f2c5bcccd1f59f7b3321d2 and monitor all exact-head CI to terminal green before any merge.",
+  "next_action": "Continue monitoring the nine in-progress exact-head checks and obtain fresh independent review; record terminal results and keep PR unmerged until all required checks and review are green.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 0,
   "observed_head": "da5e2a916b66de9f31f2c5bcccd1f59f7b3321d2",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 235,
+  "task_revision": 236,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:42:03+00:00",
+  "updated_at": "2026-09-29T00:42:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -933,3 +933,9 @@ public credential/socket paths, or weakening fail-closed gates.
   da5e2a916b66de9f31f2c5bcccd1f59f7b3321d2. Fresh CI snapshot: 13 checks restarted; Huawei SPDX
   headers SUCCESS, AWQ shadow QUEUED, and the remaining checks IN_PROGRESS. PR remains OPEN with no
   reviews and no merge.
+
+- 2026-09-29T00:42:57+00:00: Exact-head CI refresh for da5e2a916b66de9f31f2c5bcccd1f59f7b3321d2:
+  SUCCESS AWQ shadow evidence, retained faults, Huawei SPDX headers, and Kani bounded proofs.
+  IN_PROGRESS credential-free benchmark, emulated aarch64, TLC and Alloy, platform evidence, policy
+  coverage supply chain, Rust checks, bounded fuzz regressions, matcher SLO sentinels, and
+  Loom/state models. PR 382 remains OPEN with reviews empty; no merge.
