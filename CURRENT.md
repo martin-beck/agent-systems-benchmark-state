@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1513](tasks/AR-1513-authenticated-lease-dispatch-bridge.md): Authenticated lease-to-live-dispatch bridge | Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch. | Fresh independent review and exact-head CI for signed 4807e96; verify hosted workspace coverage and no profraw before approval. | ar1513-repair4-luna56 |
+| P0 | [AR-1513](tasks/AR-1513-authenticated-lease-dispatch-bridge.md): Authenticated lease-to-live-dispatch bridge | Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch. | Review of 4807e96 found P1: run_with_runtime_control_bootstrap calls acquire before materialize_provisioner, so owner_id/resolver are unset and tests only assert failure; normal CLI run/sweep still bypasses bridge. Fix real materialization and successful provider-free production bridge, then rerun coverage/review. | ar1513-repair4-luna56 |
 
 ## Blocked
 

@@ -8,7 +8,7 @@
     "AR-1484"
   ],
   "id": "AR-1513",
-  "next_action": "Fresh independent review and exact-head CI for signed 4807e96; verify hosted workspace coverage and no profraw before approval.",
+  "next_action": "Review of 4807e96 found P1: run_with_runtime_control_bootstrap calls acquire before materialize_provisioner, so owner_id/resolver are unset and tests only assert failure; normal CLI run/sweep still bypasses bridge. Fix real materialization and successful provider-free production bridge, then rerun coverage/review.",
   "observed_branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
   "observed_dirty": 0,
   "observed_head": "4807e9692a4e8f2bc22c647298878ec957f58304",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 316,
+  "task_revision": 317,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T08:42:43+00:00",
+  "updated_at": "2026-09-29T08:44:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -912,3 +912,7 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
   08:30/08:31); capability child fallback now uses /tmp external sink. All profraw removed
   afterward. Focused runtime 164 pass/1 ignored, CLI 131 pass, clippy and fmt pass. Remote branch
   exactly 4807e96, tree clean. Hosted exact-head coverage/review still required.
+
+- 2026-09-29T08:44:27+00:00: Independent review confirms prior auth/lifecycle/provenance fixes but
+  bridge remains unusable; alternate-egress only works after missing materialization. Preserve
+  4807e96 evidence.
