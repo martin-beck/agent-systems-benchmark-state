@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Remove the unused bridge field from RuntimeControlBootstrap, rerun cargo fmt --check and cargo check, then add focused response-consumption/cancellation tests.",
+  "next_action": "Rerun cargo fmt --check serially after removing bridge, then focused runtime tests; prior parallel check was green but paired formatter invocation hit coordinator lock timeout.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 1,
   "observed_head": "baa13ea675de2160dcf58f69b106e255f2c3d8de",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 138,
+  "task_revision": 139,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:00:39+00:00",
+  "updated_at": "2026-09-29T00:01:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -561,3 +561,10 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-29T00:00:39+00:00: Recorded command exit 0; command argv SHA-256
   44858bcc1bea325f8e4ec42626fdf2970d2310a4694e160101531722dea4dfa4.
+
+- 2026-09-29T00:01:16+00:00: 2026-09-29T00:00:20Z: Two focused handoffctl runs were launched
+  concurrently. cargo check --locked -p asb-runtime completed exit 0 after bridge removal. cargo fmt
+  --all -- --check returned exit 1 with only the remaining rustfmt indentation diff at
+  live_service.rs:1459. The handoffctl formatter wrapper also emitted ERROR: LOCK_TIMEOUT after
+  10.0s acquiring exclusive coordinator lock because of concurrency. No product gate was
+  invalidated; corrective action is serial fmt-check.
