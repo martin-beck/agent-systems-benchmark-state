@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Continue polling Repository quality, Rust verification, and Emulated aarch64 portability for exact main SHA f92c2e941913129d7db50480f71e8361a0d43a0c; then record terminal results and close AR.",
+  "next_action": "No further AR-1505 action; merge and post-merge assurance complete.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 0,
   "observed_head": "c96be66213c9a09870e7e6b38784bc7910dff728",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 302,
+  "task_revision": 303,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T01:36:08+00:00",
+  "updated_at": "2026-09-29T01:40:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -1193,3 +1193,10 @@ public credential/socket paths, or weakening fail-closed gates.
   portability and native qualification, Credential-free benchmark path, Fault assurance, Formal
   assurance. IN_PROGRESS: Repository quality, Rust verification, Emulated aarch64 portability. No
   failures observed.
+
+- 2026-09-29T01:40:48+00:00: Post-merge verification complete for immutable main SHA
+  f92c2e941913129d7db50480f71e8361a0d43a0c. All required workflows terminal SUCCESS: Repository
+  quality 36508408649; Formal assurance 36508408777; Huawei MIT source headers 36508408764; Fault
+  assurance 36508408767; Rust verification 36508408878; Credential-free benchmark path 36508408778;
+  Hosted portability and native qualification 36508408721; Emulated aarch64 portability 36508408647.
+  Exact public main ref matches merge commit.
