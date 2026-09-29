@@ -24,9 +24,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve private live authority from authenticated control enrollment without caller injection.",
-  "task_revision": 124,
+  "task_revision": 125,
   "title": "Control-owned private authority materializer",
-  "updated_at": "2026-09-29T12:18:03+00:00",
+  "updated_at": "2026-09-29T12:19:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1392-control-authority-materializer"
 }
 ---
@@ -429,3 +429,6 @@ reachability.
   #339; preserve green product checks and do not change authority-materializer behavior.
 
 - 2026-09-29T12:18:03+00:00: Claimed by ar1392-topology-repair-luna56.
+
+- 2026-09-29T12:19:38+00:00: Recorded command exit 0; command argv SHA-256
+  570dabf9edffd4125d21ef78768dd7a405e00bd4b62eb797a5ad1737825b024f.
