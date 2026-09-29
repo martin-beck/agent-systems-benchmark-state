@@ -187,7 +187,13 @@
 
 ## Complete AR inventory
 
-### Blocked (75)
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1506](../tasks/AR-1506-runtime-platform-launcher-integration.md): Runtime platform launcher integration | Unclaimed | Connect the merged authenticated platform authority/bootstrap protocol to production ASB process startup and ordinary CLI dispatch. | Blocked pending a real runtime-owned platform adapter that constructs private RuntimeAuthorityInputs from authenticated AR-1505 bootstrap state; do not publish current facade. Required follow-up must remove public source injection and wire the production entrypoint without synthetic roots/tools/policy. |
+
+### Blocked (74)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -247,7 +253,6 @@
 | P0 | [AR-1481](../tasks/AR-1481-runtime-owned-cli-entry-bootstrap.md): Runtime-owned CLI entry bootstrap | Unclaimed | Wire runtime-owned authenticated dispatch into the ordinary CLI entry path. | Promote and claim, then inspect the protected-main entrypoint and runtime/control bootstrap inputs. |
 | P0 | [AR-1482](../tasks/AR-1482-control-runtime-process-bootstrap.md): Control-runtime process bootstrap | Unclaimed | Compose authenticated control enrollment into the ordinary CLI process bootstrap. | Promote and claim, then inspect control/runtime process bootstrap APIs on protected main. |
 | P0 | [AR-1483](../tasks/AR-1483-authenticated-control-process-owner.md): Authenticated control process owner | Unclaimed | Own authenticated control session and lifecycle while minting opaque CLI dispatch sources. | Promote and claim, then audit whether the runtime/control owner contract can be implemented without caller authority. |
-| P0 | [AR-1506](../tasks/AR-1506-runtime-platform-launcher-integration.md): Runtime platform launcher integration | Unclaimed | Connect the merged authenticated platform authority/bootstrap protocol to production ASB process startup and ordinary CLI dispatch. | Blocked pending a real runtime-owned platform adapter that constructs private RuntimeAuthorityInputs from authenticated AR-1505 bootstrap state; do not publish current facade. Required follow-up must remove public source injection and wire the production entrypoint without synthetic roots/tools/policy. |
 | P1 | [AR-0604](../tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Unclaimed | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Obtain authorized native x86 runner and immutable CSB/Python evidence; rerun native_boundary and record A/B overhead. |
 | P1 | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Unclaimed | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Create successor AR for authenticated route/ancestor authority; preserve AR-1288 evidence and AR-0814 head 29cfa193. |
 | P1 | [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md): Qualify development host ASB runner operations | Unclaimed | Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery. | Run repeated clean ASB jobs on every declared development host label and audit reset, isolation, architecture, and artifact provenance. |

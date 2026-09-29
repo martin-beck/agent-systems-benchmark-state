@@ -21,11 +21,11 @@
   "plan": "../plans/AR-1506-runtime-platform-launcher-integration.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Connect the merged authenticated platform authority/bootstrap protocol to production ASB process startup and ordinary CLI dispatch.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Runtime platform launcher integration",
-  "updated_at": "2026-09-29T02:05:37+00:00",
+  "updated_at": "2026-09-29T02:07:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1506-runtime-platform-launcher-integration"
 }
 ---
@@ -158,3 +158,7 @@ production evidence.
   RuntimeAuthorityInputs (lease/relay/tool/policy roots) from authenticated AR-1505 bootstrap state.
   Create a narrow authority-materialization successor; do not synthesize fixed paths or mock
   authority.
+
+- 2026-09-29T02:07:47+00:00: Create successor AR-1507 for the missing runtime-owned authority
+  materialization; this predecessor remains blocked and will be re-blocked after durable task
+  creation.
