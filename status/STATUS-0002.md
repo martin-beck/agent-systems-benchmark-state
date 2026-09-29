@@ -224,11 +224,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1530](../tasks/AR-1530.md): State formal capacity profile for AR-1307/1308 | Unclaimed | Implement the state-owned 8G/8G formal capacity profile selected by AR-1529 and route it to AR-1522. | Promote after dependency verification; implement the state-owned signed-capacity-8g validator/runner profile and its fail-closed tests without changing unsigned-development. |
+| P0 | [AR-1530](../tasks/AR-1530.md): State formal capacity profile for AR-1307/1308 | coordinator-ar1530-state-formal-capacity-20260930 | Implement the state-owned 8G/8G formal capacity profile selected by AR-1529 and route it to AR-1522. | Promote after dependency verification; implement the state-owned signed-capacity-8g validator/runner profile and its fail-closed tests without changing unsigned-development. |
 
 ### Blocked (79)
 
