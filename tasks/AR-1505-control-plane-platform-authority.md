@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Run unchanged quality coverage command and capture terminal result; only then decide whether focused new-path tests can materially address the required failure.",
+  "next_action": "Clean generated checkout profraw artifacts through handoffctl, then run one serial coverage command and inspect the terminal coverage result before adding tests.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 3,
   "observed_head": "da5e2a916b66de9f31f2c5bcccd1f59f7b3321d2",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 254,
+  "task_revision": 255,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:56:44+00:00",
+  "updated_at": "2026-09-29T00:57:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -1013,3 +1013,14 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-29T00:56:44+00:00: Recorded command exit 1; command argv SHA-256
   6ccbad7b0df7b174bed426e8006e995834ee6e089a699df42d8b9b14a749eb29.
+
+- 2026-09-29T00:57:25+00:00: Unchanged local tools/quality/check_coverage.py rerun did not reach the
+  coverage floor: it exited 101 because three asb-cli capability_contract tests observed concurrent
+  checkout .profraw files left by overlapping llvm-cov diagnostics. Exact failures were
+  canonical_and_failing_children_are_parallel_safe_and_leave_checkout_clean,
+  coverage_pattern_parser_rejects_runtime_fallback_and_shared_forms, and
+  instrumented_canonical_and_failing_children_use_distinct_nondefault_profiles; stderr reported
+  unexpected files default_126752781326858929_0_2952329.profraw and ...2952330.profraw. The
+  traceback confirms cargo test exited 101 before coverage summary. This is a local diagnostic
+  concurrency artifact, not evidence to weaken the floor. Corrective action: stop overlapping
+  coverage runs, clean only generated profraw artifacts, and use serial coverage execution.
