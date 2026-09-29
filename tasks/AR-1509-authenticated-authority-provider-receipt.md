@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Replace the AR-1508 test fa\u00e7ade with an authenticated production authority-provider receipt and lifecycle fence.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Authenticated authority-provider receipt",
-  "updated_at": "2026-09-29T02:48:24+00:00",
+  "updated_at": "2026-09-29T02:48:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1509-authenticated-authority-provider-receipt"
 }
 ---
@@ -116,3 +116,6 @@ mock production authority, or weakening formal/privacy/native gates.
 
 - 2026-09-29T02:48:24+00:00: Recorded command exit 0; command argv SHA-256
   e19e111889555f244ae480ec663433af53ed10e1a1bebea2735fa0b4c53666ac.
+
+- 2026-09-29T02:48:45+00:00: Recorded command exit 101; command argv SHA-256
+  71352aa9e9a5c05420d63d2bfca4d0a03840f7d7a85c2d83dea1376fb75a4a02.
