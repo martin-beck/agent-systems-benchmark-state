@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Fresh immutable image v2 is reviewed for development use: base/package/result digests are recorded and a bounded network-disabled boot reaches user-session startup and FULL_EXHAUSTIVE_TRANSIENT_RC=0 without Transport endpoint failure. Development qualification does not depend on a reviewed seed digest; formal/publication qualification remains separate and optional.",
-  "task_revision": 75,
+  "task_revision": 76,
   "title": "Image-native user-session support",
-  "updated_at": "2026-09-29T16:54:39+00:00",
+  "updated_at": "2026-09-29T16:56:56+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1305-image-native-user-session"
 }
 ---
@@ -285,3 +285,6 @@ limits and fail-closed behavior remain unchanged.
 
 - 2026-09-29T16:54:39+00:00: Recorded command exit 0; command argv SHA-256
   03771b8154701796fc1d8929a9046cd4306004844ed4ccc1038db929fe5ce149.
+
+- 2026-09-29T16:56:56+00:00: Recorded command exit 0; command argv SHA-256
+  77e3e810093e453a4afee20df37df645faa87f34ffbf2224ee6789910b3c814e.
