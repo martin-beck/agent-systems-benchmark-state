@@ -14,17 +14,17 @@
   "id": "AR-1505",
   "next_action": "Run changed-package check/clippy and full workspace gates on the 61-line focused coverage patch; then independently review, sign DCO commit, push same branch, rerun exact-head policy and request fresh review.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
-  "observed_dirty": 1,
-  "observed_head": "da5e2a916b66de9f31f2c5bcccd1f59f7b3321d2",
+  "observed_dirty": 0,
+  "observed_head": "c96be66213c9a09870e7e6b38784bc7910dff728",
   "owner": "ar1505-repair-luna56",
   "plan": "../plans/AR-1505-control-plane-platform-authority.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 286,
+  "task_revision": 287,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T01:17:49+00:00",
+  "updated_at": "2026-09-29T01:18:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
