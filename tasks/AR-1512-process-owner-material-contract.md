@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1512-process-owner-material-contract",
   "checkpoint_commit": "a4064abf22b73096ebb26df9bca8d1dc28a7d81f",
-  "claim_expires": "2026-09-29T07:10:39+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1502",
     "AR-1484"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1512-process-owner-material-contract",
   "observed_dirty": 0,
   "observed_head": "a4064abf22b73096ebb26df9bca8d1dc28a7d81f",
-  "owner": "ar1512-process-owner-luna56",
+  "owner": "",
   "plan": "../plans/AR-1512-process-owner-material-contract.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide the authenticated process-owner material source and ordinary CLI/control caller needed to consume runtime authority.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Authenticated process-owner material contract",
-  "updated_at": "2026-09-29T05:22:04+00:00",
+  "updated_at": "2026-09-29T05:25:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1512-process-owner-material-contract"
 }
 ---
@@ -181,3 +181,7 @@ host data, synthetic authority, or weakening fail-closed/native/formal gates.
 
 - 2026-09-29T05:22:04+00:00: Repository-wide cargo clippy --locked --workspace --all-targets -- -D
   warnings passed at exact product head a4064abf.
+
+- 2026-09-29T05:25:13+00:00: Independent review found P1s: public owner store self-authenticates
+  arbitrary material; no non-test lease-to-live-dispatch bridge; lexical paths lack
+  executable/hash/symlink provenance. Preserve signed a4064ab and create narrower successor.
