@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1514-runtime-auth-reconciliation",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T15:11:22+00:00",
   "depends_on": [
     "AR-1499",
     "AR-1500"
@@ -12,15 +12,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "ar1514-reconciliation-luna56",
   "plan": "../plans/AR-1514-runtime-auth-reconciliation.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair ASB development-runtime reconciliation between digest-only enrollment and helper invocation.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Reconciled development auth handoff runtime",
-  "updated_at": "2026-09-29T13:07:44+00:00",
+  "updated_at": "2026-09-29T13:11:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1514-runtime-auth-reconciliation"
 }
 ---
@@ -43,3 +43,5 @@ side of that repair.
 - 2026-09-29T13:07:44+00:00: Dependencies AR-1499 and AR-1500 are done. Promote the ASB-only
   disposable runtime reconciliation repair; paired asb-tui qualification remains external evidence
   and this task must not modify asb-tui.
+
+- 2026-09-29T13:11:22+00:00: Claimed by ar1514-reconciliation-luna56.
