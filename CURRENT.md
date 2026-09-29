@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1534](tasks/AR-1534.md): Coordinator vendor integrity repair | Repair the state repository's coordinator vendor-integrity mismatch exposed after the AR-1530 capacity-profile merge. | Remain blocked until coordinator maintenance supplies an approved upstream patch/release containing the bounded state-view behavior, or an allowed relocation is explicitly authorized; current upstream v0.3.48 still lacks the fix. Do not rewrite the vendor manifest or patch handoffctl in an unrelated AR. | codex-asb-ar1534-handoff-20260930 |
+| P0 | [AR-1534](tasks/AR-1534.md): Coordinator vendor integrity repair | Repair the state repository's coordinator vendor-integrity mismatch exposed after the AR-1530 capacity-profile merge. | Remain blocked pending coordinator-state AR-0022: an approved upstream bounded actionable-state projection release. After AR-0022 exact release/CI evidence is available, synchronize the immutable vendor snapshot, rerun vendor verification and all ASB state gates, then independently review the exact diff. Never rewrite the vendor manifest or patch handoffctl locally. | codex-asb-ar1534-handoff-20260930 |
 
 ## Blocked
 
