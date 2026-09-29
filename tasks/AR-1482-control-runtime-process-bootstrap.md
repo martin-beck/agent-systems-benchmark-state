@@ -17,11 +17,11 @@
   "plan": "../plans/AR-1482-control-runtime-process-bootstrap.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Compose authenticated control enrollment into the ordinary CLI process bootstrap.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Control-runtime process bootstrap",
-  "updated_at": "2026-09-27T12:04:45+00:00",
+  "updated_at": "2026-09-29T10:32:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1482-control-runtime-process-bootstrap"
 }
 ---
@@ -50,3 +50,6 @@ providers, accept caller-built authority, or weaken fail-closed boundaries.
   without fabricating authority or exposing caller/config inputs. Next action: define and implement
   the authenticated control-runtime process owner/launcher that supplies these opaque inputs, then
   wire AR-1480 seam and qualify local/mock/replay.
+
+- 2026-09-29T10:32:19+00:00: Dependencies AR-1472, AR-1473 and AR-1480 are done; start the narrow
+  process-owned control bootstrap successor identified by the prior protected-main audit.
