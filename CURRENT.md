@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1518](tasks/AR-1518.md): Capacity | Cap. | Go. | - |
+| P0 | [AR-1518](tasks/AR-1518.md): C | C | C | - |
 
 ## Blocked
 

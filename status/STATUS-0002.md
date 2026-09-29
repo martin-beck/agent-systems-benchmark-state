@@ -210,7 +210,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1518](../tasks/AR-1518.md): Capacity | Unclaimed | Cap. | Go. |
+| P0 | [AR-1518](../tasks/AR-1518.md): C | Unclaimed | C | C |
 
 ### Blocked (76)
 
