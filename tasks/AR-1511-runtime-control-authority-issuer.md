@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1511-runtime-control-authority-issuer",
-  "checkpoint_commit": "673b486ba89917e3bb08c884ee17e708e0776b07",
+  "checkpoint_commit": "47329e35c03bf20505ce65c7a29487ab97c52ee9",
   "claim_expires": "2026-09-29T13:38:52+00:00",
   "depends_on": [
     "AR-1502",
     "AR-1484"
   ],
   "id": "AR-1511",
-  "next_action": "Blocked on successor contract: add a real runtime/control process-owner material provider and ordinary CLI/control caller that supplies authenticated private roots, policy, allowlist, pinned tool bundle, namespace and launch input; then reapply production wiring, remote-revoke coverage, and gates. Do not derive authority from public digest-only records.",
+  "next_action": "No further AR-1511 implementation: AR-1513 supplies the authenticated process-owner material source and ordinary run/sweep bridge on protected main 47329e35. Preserve AR-1513 merge and post-merge evidence; do not revive the old AR-1511 fa\u00e7ade.",
   "observed_branch": "feature/ar-1511-runtime-control-authority-issuer",
   "observed_dirty": 0,
   "observed_head": "673b486ba89917e3bb08c884ee17e708e0776b07",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 173,
+  "task_revision": 174,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T13:08:52+00:00",
+  "updated_at": "2026-09-29T13:09:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
@@ -585,3 +585,14 @@ production authority, or weakening fail-closed/native/formal gates.
   for successor disposition.
 
 - 2026-09-29T13:08:52+00:00: Claimed by ar1511-reaudit-luna56.
+
+- 2026-09-29T13:09:47+00:00: Re-audit against protected main after AR-1513: exact merge 47329e35
+  adds process_owner_material with runtime-enrollment-only issuance, opaque capability/lease, nonce
+  replay and expiry fencing, authenticated restart/cancellation/revoke/teardown lifecycle,
+  executable/hash/symlink provenance, and alternate-egress binding. It also adds
+  RuntimeControlBootstrap::materialize_runtime_owner and CLI run_with_runtime_control_bootstrap,
+  which consume owner material into ordinary run/sweep dispatch. AR-1513 completion evidence records
+  independent review, required hosted checks, and post-merge success (state task evidence at
+  2026-09-29T09:48:33Z). This supplies AR-1511 next_action; no unmerged AR-1511/1509/1510 façade was
+  reused. Protected main was verified to contain the bridge; no remaining AR-1511 consumer wiring is
+  actionable.

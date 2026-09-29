@@ -204,7 +204,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1511](../tasks/AR-1511-runtime-control-authority-issuer.md): Runtime/control authority issuer and capability source | ar1511-reaudit-luna56 | Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch. | Blocked on successor contract: add a real runtime/control process-owner material provider and ordinary CLI/control caller that supplies authenticated private roots, policy, allowlist, pinned tool bundle, namespace and launch input; then reapply production wiring, remote-revoke coverage, and gates. Do not derive authority from public digest-only records. |
+| P0 | [AR-1511](../tasks/AR-1511-runtime-control-authority-issuer.md): Runtime/control authority issuer and capability source | ar1511-reaudit-luna56 | Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch. | No further AR-1511 implementation: AR-1513 supplies the authenticated process-owner material source and ordinary run/sweep bridge on protected main 47329e35. Preserve AR-1513 merge and post-merge evidence; do not revive the old AR-1511 façade. |
 
 ### Open (1)
 
