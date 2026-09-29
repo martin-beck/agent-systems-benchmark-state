@@ -20,11 +20,11 @@
   "plan": "../plans/AR-1503-runtime-control-process-owner.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Own the authenticated control session and hand off only an opaque live dispatch source.",
-  "task_revision": 74,
+  "task_revision": 75,
   "title": "Runtime/control process owner",
-  "updated_at": "2026-09-28T22:39:31+00:00",
+  "updated_at": "2026-09-29T01:46:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1503-runtime-control-process-owner"
 }
 ---
@@ -272,3 +272,7 @@ asb-tui, synthesize authority, or accept caller-built runtime inputs.
   test-only façade. Acceptance explicitly requires real launcher, so AR remains blocked; create
   successor for launcher seam. Full workspace parallel state-root failures were unrelated and
   serialized affected tests passed.
+
+- 2026-09-29T01:46:00+00:00: AR-1505 is merged and supplies authenticated platform
+  authority/bootstrap. Reopen briefly to create the scoped production launcher successor, then
+  supersede this historical process-owner audit.
