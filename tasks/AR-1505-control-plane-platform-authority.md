@@ -14,7 +14,7 @@
   "id": "AR-1505",
   "next_action": "Use only product-local ignored coverage artifacts, inspect changed-line coverage and add legitimate tests for the new bootstrap binding paths.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
-  "observed_dirty": 2,
+  "observed_dirty": 3,
   "observed_head": "da5e2a916b66de9f31f2c5bcccd1f59f7b3321d2",
   "owner": "ar1505-repair-luna56",
   "plan": "../plans/AR-1505-control-plane-platform-authority.md",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 251,
+  "task_revision": 252,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:55:20+00:00",
+  "updated_at": "2026-09-29T00:55:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
