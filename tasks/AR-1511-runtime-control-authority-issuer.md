@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1511-runtime-control-authority-issuer",
-  "checkpoint_commit": "49bf84275f0df05b7ce310f36f87e29c420b8e34",
+  "checkpoint_commit": "ac9306453dc97a100a57befcba0c8456b67a23db",
   "claim_expires": "2026-09-29T05:49:08+00:00",
   "depends_on": [
     "AR-1502",
     "AR-1484"
   ],
   "id": "AR-1511",
-  "next_action": "Independent exact-head review required for 49bf842 against f92c2e9; verify lifecycle teardown/revoke/fence and production materialize_provisioner callsite. No publish until review passes.",
+  "next_action": "Independent exact-head review assigned for clean ac9306453dc97a100a57befcba0c8456b67a23db against f92c2e9; hold PR/push until review result.",
   "observed_branch": "feature/ar-1511-runtime-control-authority-issuer",
   "observed_dirty": 0,
   "observed_head": "ac9306453dc97a100a57befcba0c8456b67a23db",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 93,
+  "task_revision": 94,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T03:57:20+00:00",
+  "updated_at": "2026-09-29T03:57:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
@@ -342,3 +342,9 @@ production authority, or weakening fail-closed/native/formal gates.
 
 - 2026-09-29T03:57:20+00:00: Recorded command exit 0; command argv SHA-256
   b7c1bd7abcc21a2d2b7851e3c19b5eece224e6abf67ab56b582453c98727e148.
+
+- 2026-09-29T03:57:37+00:00: Clean final product head is ac9306453dc97a100a57befcba0c8456b67a23db, a
+  new SSH-signed DCO commit adding the alternate-target/egress-drift negative test to signed repair
+  49bf842. Product worktree is clean; serial workspace tests reran exit 0 after this commit, and
+  focused test/format/clippy gates were green. Independent exact-head review is assigned; no PR or
+  push.

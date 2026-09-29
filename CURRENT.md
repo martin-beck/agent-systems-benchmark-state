@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1511](tasks/AR-1511-runtime-control-authority-issuer.md): Runtime/control authority issuer and capability source | Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch. | Independent exact-head review required for 49bf842 against f92c2e9; verify lifecycle teardown/revoke/fence and production materialize_provisioner callsite. No publish until review passes. | ar1511-authority-repair-luna56 |
+| P0 | [AR-1511](tasks/AR-1511-runtime-control-authority-issuer.md): Runtime/control authority issuer and capability source | Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch. | Independent exact-head review assigned for clean ac9306453dc97a100a57befcba0c8456b67a23db against f92c2e9; hold PR/push until review result. | ar1511-authority-repair-luna56 |
 
 ## Blocked
 
