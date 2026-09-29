@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1511](tasks/AR-1511-runtime-control-authority-issuer.md): Runtime/control authority issuer and capability source | Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch. | Implement authenticated runtime material provider from non-test owner state, bind launch program/adapter provenance, wire ordinary CLI/control caller, add remote-revoke test, then focused gates and independent exact-head review. | - |
+| P0 | [AR-1511](tasks/AR-1511-runtime-control-authority-issuer.md): Runtime/control authority issuer and capability source | Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch. | Implement authenticated runtime material provider from non-test owner state, bind launch program/adapter provenance, wire ordinary CLI/control caller, add remote-revoke test, then focused gates and independent exact-head review. | ar1511-production-debug-luna56 |
 
 ## Blocked
 
