@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1367-ar1329-production-dispatch-integration",
   "checkpoint_commit": "0c6dc52e1f4aa5854f73081711dbd9a5bc1a5d7c",
-  "claim_expires": "2026-09-30T00:51:09+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1366",
     "AR-1340",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1367-ar1329-production-dispatch-integration",
   "observed_dirty": 0,
   "observed_head": "bf89a45ddd71af96e6d4b6954320e199e147f83e",
-  "owner": "coordinator-ar1367-production-dispatch-20260930",
+  "owner": "",
   "plan": "../plans/AR-1367-ar1329-production-dispatch-integration.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Complete production asb run/sweep live-provider dispatch through runtime-owned authenticated acquisition and teardown.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "AR-1329 production dispatch integration",
-  "updated_at": "2026-09-29T22:51:09+00:00",
+  "updated_at": "2026-09-29T22:51:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1367-ar1329-production-dispatch-integration"
 }
 ---
@@ -105,3 +105,9 @@ reachability.
   1f77f0a8a53061fcd85f9fe998aefee958ccee86048f742e3840d8ca5d8b8fa5.
 
 - 2026-09-29T22:51:09+00:00: Heartbeat by coordinator-ar1367-production-dispatch-20260930.
+
+- 2026-09-29T22:51:42+00:00: Exact protected-main audit at bf89a45ddd71af96e6d4b6954320e199e147f83e:
+  PlanAuthoritySource in crates/asb-cli/src/control.rs rejects ExecutionMode::Live; ordinary CLI has
+  no authenticated runtime/control enrollment source. Runtime acquire_from_record/materialization
+  remains crate-private and requires a platform-owned source. Existing local/mock and strict-replay
+  paths remain intact. No product mutation; route the production bridge to canonical AR-1523.
