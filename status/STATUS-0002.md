@@ -212,7 +212,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1519](../tasks/AR-1519.md): AR-1307/1308 reduced-model development profile | coordinator-ar1519-reduced-model-20260929 | Provide a separately scoped reduced-model development path after full-capacity timeout, without weakening AR-1307/1308. | Promote and implement the explicit reduced-model development profile with fail-closed non-attestation tests. |
+| P0 | [AR-1519](../tasks/AR-1519.md): AR-1307/1308 reduced-model development profile | coordinator-ar1519-reduced-model-20260929 | Reduced development tier implemented with explicit 900s/1-worker/2G/2G/4G bounds and non-claiming attestation. | Independently review the exact head, then release this development-only repair; full AR-1307/1308 qualification remains separate. |
 
 ### Blocked (77)
 
