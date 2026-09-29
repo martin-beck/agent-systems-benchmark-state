@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1308](tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Unsigned-development capacity and exact-head fixture remain repaired; generated-seed validation passes. Portable-smoke v14 reaches PORTABLE_SMOKE_TRANSIENT_RC=0 and powers off, but attest.py still rejects one resolved guest input path as outside /srv/data/projects, so no portable attestation is claimed yet. Full state suite remains 200 passed/86 subtests. | Repair the remaining portable-smoke path-resolution fixture defect so both output and preloaded TLC paths resolve under the guest bind root, rerun one bounded portable-smoke boot, and record PORTABLE_SMOKE_EVIDENCE_OK. Continue using locally generated seeds; reviewed seed digests are not a development prerequisite. | - |
+| P0 | [AR-1308](tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Unsigned-development capacity and exact-head fixture remain repaired; generated-seed validation passes. Portable-smoke v14 reaches PORTABLE_SMOKE_TRANSIENT_RC=0 and powers off, but attest.py still rejects one resolved guest input path as outside /srv/data/projects, so no portable attestation is claimed yet. Full state suite remains 200 passed/86 subtests. | Repair the remaining portable-smoke path-resolution fixture defect so both output and preloaded TLC paths resolve under the guest bind root, rerun one bounded portable-smoke boot, and record PORTABLE_SMOKE_EVIDENCE_OK. Continue using locally generated seeds; reviewed seed digests are not a development prerequisite. | coordinator-ar1308-offline-fixture-20260929 |
 
 ## Blocked
 
