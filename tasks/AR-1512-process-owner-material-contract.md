@@ -8,7 +8,7 @@
     "AR-1484"
   ],
   "id": "AR-1512",
-  "next_action": "Run focused runtime tests including caller, serial workspace, docs/rustdoc/privacy/formal gates; inspect complete diff for authority and privacy boundaries.",
+  "next_action": "Run serial workspace test and required privacy/formal checks; then inspect exact diff and commit signed DCO.",
   "observed_branch": "feature/ar-1512-process-owner-material-contract",
   "observed_dirty": 4,
   "observed_head": "f92c2e941913129d7db50480f71e8361a0d43a0c",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated process-owner material source and ordinary CLI/control caller needed to consume runtime authority.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Authenticated process-owner material contract",
-  "updated_at": "2026-09-29T05:13:06+00:00",
+  "updated_at": "2026-09-29T05:13:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1512-process-owner-material-contract"
 }
 ---
@@ -127,3 +127,8 @@ host data, synthetic authority, or weakening fail-closed/native/formal gates.
 
 - 2026-09-29T05:13:06+00:00: Recorded command exit 0; command argv SHA-256
   de4935b3061b251d99b621a57a775c4761c0e0911d9dbe0263925f702b4e329b.
+
+- 2026-09-29T05:13:22+00:00: Validation: cargo fmt, 5 focused process_owner_material tests, -D
+  warnings clippy, and workspace rustdoc -D warnings pass. Full cargo test --locked --workspace had
+  one pre-existing parallel control test failure (production_backend... state root already owned);
+  exact same test rerun serially with --test-threads=1 passed. No product test failure remains.

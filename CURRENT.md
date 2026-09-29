@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1512](tasks/AR-1512-process-owner-material-contract.md): Authenticated process-owner material contract | Provide the authenticated process-owner material source and ordinary CLI/control caller needed to consume runtime authority. | Run focused runtime tests including caller, serial workspace, docs/rustdoc/privacy/formal gates; inspect complete diff for authority and privacy boundaries. | ar1512-process-owner-luna56 |
+| P0 | [AR-1512](tasks/AR-1512-process-owner-material-contract.md): Authenticated process-owner material contract | Provide the authenticated process-owner material source and ordinary CLI/control caller needed to consume runtime authority. | Run serial workspace test and required privacy/formal checks; then inspect exact diff and commit signed DCO. | ar1512-process-owner-luna56 |
 
 ## Blocked
 
