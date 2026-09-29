@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-29T07:28:04+00:00",
+  "claim_expires": "2026-09-29T07:32:46+00:00",
   "depends_on": [
     "AR-1502",
     "AR-1484"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T05:28:55+00:00",
+  "updated_at": "2026-09-29T05:32:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -71,3 +71,5 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
 
 - 2026-09-29T05:28:41+00:00: Recorded command exit 0; command argv SHA-256
   933f1d0074a2ef06c2e574cd30093456f8b922e36d1a373e90edf3a4a6401309.
+
+- 2026-09-29T05:32:46+00:00: Heartbeat by ar1513-lease-bridge-luna56.
