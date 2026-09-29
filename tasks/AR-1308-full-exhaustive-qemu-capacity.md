@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "checkpoint_commit": "d6e175abe060e6408977884c9c06c69a3a738b5b",
-  "claim_expires": "2026-09-29T20:18:22+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1304"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "d6e175abe060e6408977884c9c06c69a3a738b5b",
-  "owner": "coordinator-ar1308-thread-admission-20260929",
+  "owner": "",
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Development QEMU fixture is bootable and offline-JAR verified, but full-exhaustive TLC produced no terminal result within 1200 seconds and was terminated; no qualification is claimed.",
-  "task_revision": 691,
+  "task_revision": 692,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T18:28:33+00:00",
+  "updated_at": "2026-09-29T18:28:42+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -2105,3 +2105,7 @@ must report `qualification_authorized: false`.
   FULL_EXHAUSTIVE_TRANSIENT_RC=0 and /mnt/asb-data/tla2tools.jar: OK; qemu timeout terminated the
   run at 1200s with no FULL_EXHAUSTIVE_RC or attestation marker. This is a development
   capacity/nonterminal failure, not a model result or formal qualification.
+
+- 2026-09-29T18:28:42+00:00: Released after bounded full-exhaustive QEMU timeout. Portable admission
+  and offline JAR checks passed; no terminal TLC result or attestation was produced. AR-1516 owns
+  fixture/evidence repair; AR-1309 owns capacity/model-reduction decisions.
