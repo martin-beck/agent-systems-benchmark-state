@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Hold PR 382 OPEN at exact head c96be662; all required checks and independent exact-head review are green. No merge from repair worker; parent decides protected merge.",
+  "next_action": "Parent may use the established protected merge path for PR 382 at c96be662; durable independent exact-head review evidence is the review gate, and no formal GitHub review submission is required by current ASB workflow. Do not merge from this repair worker.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 0,
   "observed_head": "c96be66213c9a09870e7e6b38784bc7910dff728",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 295,
+  "task_revision": 296,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T01:30:19+00:00",
+  "updated_at": "2026-09-29T01:31:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -1161,3 +1161,14 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-29T01:30:19+00:00: Recorded command exit 1; command argv SHA-256
   20e89812caeea4c8ea157a887b48c761855cb1bad7e164a171d9d942668c897d.
+
+- 2026-09-29T01:31:06+00:00: Inspected ASB merge/review workflow via state policy and handoffctl
+  observations. docs/COORDINATOR_LOCAL_POLICY.md requires exact-head checks, privacy/signature/DCO,
+  and independent review before protected merge, but does not require a GitHub review object.
+  Current PR 382 read-only gh view: CLEAN/MERGEABLE, all 13 checks SUCCESS, reviewDecision empty and
+  reviews []. GitHub branch-protection API via handoffctl returned HTTP 404 Branch not protected.
+  Established merged ASB PRs #341, #359, and #360 all independently recorded exact-head review
+  evidence and merged normally while their live gh fields also showed reviewDecision empty and
+  reviews []; this is the project precedent. Conclusion: no authorized formal review submission is
+  required here; durable independent review evidence suffices. No review was fabricated/submitted
+  and no merge attempted.
