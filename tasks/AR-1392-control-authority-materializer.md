@@ -17,16 +17,16 @@
   "next_action": "Resolve unrelated Rust CI failure or obtain coordinator-approved retry; do not merge PR #339 until every exact-head check is green.",
   "observed_branch": "feature/ar-1392-control-authority-materializer",
   "observed_dirty": 0,
-  "observed_head": "47329e35c03bf20505ce65c7a29487ab97c52ee9",
+  "observed_head": "0ea9671224ff6b51fbe0a3be4ac9817c4526356c",
   "owner": "ar1392-topology-repair-luna56",
   "plan": "../plans/AR-1392-control-authority-materializer.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve private live authority from authenticated control enrollment without caller injection.",
-  "task_revision": 132,
+  "task_revision": 133,
   "title": "Control-owned private authority materializer",
-  "updated_at": "2026-09-29T12:22:00+00:00",
+  "updated_at": "2026-09-29T12:22:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1392-control-authority-materializer"
 }
 ---
