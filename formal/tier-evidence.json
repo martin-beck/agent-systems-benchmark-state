@@ -1,6 +1,17 @@
 {
   "schema_version": 1,
   "tiers": {
+    "development-reduced": {
+      "models": ["HandoffctlBinding", "HandoffctlRecovery"],
+      "exhaustive": false,
+      "workers": 1,
+      "heap": "1024m",
+      "memory_max": "2G",
+      "swap_max": "2G",
+      "address_space_max": "4G",
+      "timeout_seconds": 900,
+      "containment": "systemd-run-user-cgroup"
+    },
     "portable-smoke": {
       "models": ["HandoffctlBinding"],
       "exhaustive": false,

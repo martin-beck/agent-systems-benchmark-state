@@ -160,6 +160,10 @@ the JAR or modify coordinator state.
 
 Formal tiers are explicit: `verify.sh --tier portable-smoke` runs one model
 and is non-exhaustive; it cannot produce publication or full evidence.
+`verify.sh --tier development-reduced` runs the bounded Binding and Recovery
+models with a 900-second, 1-worker, 2G/2G/4G contract. It is an offline,
+provider-free development diagnostic and explicitly cannot emit full-tier or
+publication qualification evidence.
 `verify.sh --tier pr-publication` checks every invariant family. Five models
 use their full configurations; the general lifecycle model uses the
 one-process `HandoffctlPR.cfg`, while the separate lock and recovery models

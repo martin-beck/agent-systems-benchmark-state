@@ -3,8 +3,8 @@
 # SPDX-License-Identifier: MIT
 set -euo pipefail
 
-if [[ "${1:-}" != "--tier" || ( "${2:-}" != "portable-smoke" && "${2:-}" != "pr-publication" && "${2:-}" != "full-exhaustive" && "${2:-}" != "full-exhaustive-capacity" ) || "$#" -ne 2 ]]; then
-    echo "usage: $0 --tier portable-smoke|pr-publication|full-exhaustive|full-exhaustive-capacity" >&2
+if [[ "${1:-}" != "--tier" || ( "${2:-}" != "development-reduced" && "${2:-}" != "portable-smoke" && "${2:-}" != "pr-publication" && "${2:-}" != "full-exhaustive" && "${2:-}" != "full-exhaustive-capacity" ) || "$#" -ne 2 ]]; then
+    echo "usage: $0 --tier development-reduced|portable-smoke|pr-publication|full-exhaustive|full-exhaustive-capacity" >&2
     exit 64
 fi
 readonly TIER="$2"
@@ -56,7 +56,11 @@ run_model() {
     printf "%s success\n" "${model}" >> "${MANIFEST}"
 }
 
-if [[ "${TIER}" == "portable-smoke" ]]; then
+if [[ "${TIER}" == "development-reduced" ]]; then
+    # Development-only bounded coverage. It cannot produce full-tier evidence.
+    run_model HandoffctlBinding
+    run_model HandoffctlRecovery
+elif [[ "${TIER}" == "portable-smoke" ]]; then
     # Smoke is deliberately non-exhaustive and never produces full evidence.
     run_model HandoffctlBinding
 elif [[ "${TIER}" == "pr-publication" ]]; then
@@ -78,4 +82,4 @@ else
     run_model HandoffctlRecovery
 fi
 python3 "${SPEC_DIR}/attest.py" --tier "${TIER}" --output "${ATTESTATION}" --jar "${JAR}" --manifest "${MANIFEST}" \
-    --models $(if [[ "${TIER}" == "portable-smoke" ]]; then echo HandoffctlBinding; elif [[ "${TIER}" == "pr-publication" ]]; then echo HandoffctlBinding HandoffctlLocks HandoffctlRun HandoffctlStorage HandoffctlPR HandoffctlRecovery; else echo HandoffctlBinding HandoffctlLocks HandoffctlRun HandoffctlStorage Handoffctl HandoffctlRecovery; fi)
+    --models $(if [[ "${TIER}" == "development-reduced" ]]; then echo HandoffctlBinding HandoffctlRecovery; elif [[ "${TIER}" == "portable-smoke" ]]; then echo HandoffctlBinding; elif [[ "${TIER}" == "pr-publication" ]]; then echo HandoffctlBinding HandoffctlLocks HandoffctlRun HandoffctlStorage HandoffctlPR HandoffctlRecovery; else echo HandoffctlBinding HandoffctlLocks HandoffctlRun HandoffctlStorage Handoffctl HandoffctlRecovery; fi)

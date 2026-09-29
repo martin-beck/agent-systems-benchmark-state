@@ -466,6 +466,11 @@ class TlcRunnerTests(unittest.TestCase):
                 self.assertEqual(tier["swap_max"], "8G")
                 self.assertEqual(tier["address_space_max"], "16G")
                 continue
+            if name == "development-reduced":
+                self.assertEqual(tier["memory_max"], "2G")
+                self.assertEqual(tier["swap_max"], "2G")
+                self.assertEqual(tier["address_space_max"], "4G")
+                continue
             self.assertEqual(tier["memory_max"], "3G")
             self.assertEqual(tier["swap_max"], "3G")
             self.assertEqual(tier["address_space_max"], "8G")
@@ -493,6 +498,7 @@ class TlcRunnerTests(unittest.TestCase):
         self.assertEqual(PROFILES.timeout_for_tier("pr-publication"), 1800)
         self.assertEqual(PROFILES.timeout_for_tier("full-exhaustive"), 7200)
         self.assertEqual(PROFILES.timeout_for_tier("full-exhaustive-capacity"), 7200)
+        self.assertEqual(PROFILES.timeout_for_tier("development-reduced"), 900)
         with self.assertRaisesRegex(ValueError, "unknown formal tier"):
             PROFILES.timeout_for_tier("unknown")
 
@@ -500,11 +506,16 @@ class TlcRunnerTests(unittest.TestCase):
         required = SEED.environment_for_tier("pr-publication")
         full = SEED.environment_for_tier("full-exhaustive")
         capacity = SEED.environment_for_tier("full-exhaustive-capacity")
+        reduced = SEED.environment_for_tier("development-reduced")
         self.assertEqual(required["TLC_TIMEOUT_SECONDS"], "1800")
         self.assertEqual(full["TLC_TIMEOUT_SECONDS"], "7200")
         self.assertEqual(full["TLC_MEMORY_MAX"], required["TLC_MEMORY_MAX"])
         self.assertEqual(capacity["TLC_MEMORY_MAX"], "8G")
         self.assertEqual(capacity["TLC_SWAP_MAX"], "8G")
+        self.assertEqual(reduced["TLC_HEAP"], "1024m")
+        self.assertEqual(reduced["TLC_MEMORY_MAX"], "2G")
+        self.assertEqual(reduced["TLC_SWAP_MAX"], "2G")
+        self.assertEqual(reduced["TLC_ADDRESS_SPACE_MAX"], "4G")
         self.assertEqual(capacity["TLC_ADDRESS_SPACE_MAX"], "16G")
         self.assertEqual(capacity["TLC_HEAP"], "6144m")
         with self.assertRaisesRegex(ValueError, "unknown formal tier"):
@@ -514,6 +525,7 @@ class TlcRunnerTests(unittest.TestCase):
         required = GUEST.build_user_data("pr-publication")
         full = GUEST.build_user_data("full-exhaustive")
         capacity = GUEST.build_user_data("full-exhaustive-capacity")
+        reduced = GUEST.build_user_data("development-reduced")
         self.assertIn("TLC_TIMEOUT_SECONDS=1800", required)
         self.assertIn("RuntimeMaxSec=1800", required)
         self.assertIn("TLC_TIMEOUT_SECONDS=7200", full)
@@ -523,6 +535,13 @@ class TlcRunnerTests(unittest.TestCase):
         self.assertIn("TLC_ADDRESS_SPACE_MAX=16G", capacity)
         self.assertIn("RuntimeMaxSec=7200", capacity)
         self.assertIn("fallocate -l 8G /mnt/asb-data/guest.swap", capacity)
+        self.assertIn("TLC_TIMEOUT_SECONDS=900", reduced)
+        self.assertIn("TLC_HEAP=1024m", reduced)
+        self.assertIn("TLC_MEMORY_MAX=2G", reduced)
+        self.assertIn("TLC_SWAP_MAX=2G", reduced)
+        self.assertIn("TLC_ADDRESS_SPACE_MAX=4G", reduced)
+        self.assertIn("--tier development-reduced", reduced)
+        self.assertIn("DEVELOPMENT_REDUCED_EVIDENCE_OK", reduced)
 
     def test_guest_seed_validates_containment_for_each_profile(self) -> None:
         portable = GUEST.build_user_data("portable-smoke")

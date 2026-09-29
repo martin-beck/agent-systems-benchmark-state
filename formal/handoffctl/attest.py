@@ -13,6 +13,7 @@ import time
 from pathlib import Path
 
 EXPECTED_MODELS = {
+    "development-reduced": {"HandoffctlBinding", "HandoffctlRecovery"},
     "portable-smoke": {"HandoffctlBinding"},
     "pr-publication": {
         "HandoffctlBinding",
@@ -128,17 +129,23 @@ def read_tier_evidence(path: Path) -> dict[str, dict[str, object]]:  # noqa: C90
             raise ValueError(f"tier evidence for {tier} has duplicate or invalid models")
         if set(models) != EXPECTED_MODELS[tier]:
             raise ValueError(f"tier evidence for {tier} has an unexpected model set")
-        if entry["workers"] != 2:
+        expected_workers = 1 if tier == "development-reduced" else 2
+        if entry["workers"] != expected_workers:
             raise ValueError(f"tier evidence for {tier} has unsupported bounds")
         capacity = tier == "full-exhaustive-capacity"
+        reduced = tier == "development-reduced"
         if (
-            entry["heap"] != ("6144m" if capacity else "2048m")
-            or entry["memory_max"] != ("8G" if capacity else "3G")
-            or entry["swap_max"] != ("8G" if capacity else "3G")
-            or entry["address_space_max"] != ("16G" if capacity else "8G")
+            entry["heap"] != ("6144m" if capacity else ("1024m" if reduced else "2048m"))
+            or entry["memory_max"] != ("8G" if capacity else ("2G" if reduced else "3G"))
+            or entry["swap_max"] != ("8G" if capacity else ("2G" if reduced else "3G"))
+            or entry["address_space_max"] != ("16G" if capacity else ("4G" if reduced else "8G"))
         ):
             raise ValueError(f"tier evidence for {tier} has unsupported memory bounds")
-        expected_timeout = 7200 if tier in {"full-exhaustive", "full-exhaustive-capacity"} else 1800
+        expected_timeout = (
+            900
+            if reduced
+            else (7200 if tier in {"full-exhaustive", "full-exhaustive-capacity"} else 1800)
+        )
         if entry["timeout_seconds"] != expected_timeout:
             raise ValueError(f"tier evidence for {tier} has unsupported timeout")
         expected_containment = (

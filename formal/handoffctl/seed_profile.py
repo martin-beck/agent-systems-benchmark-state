@@ -23,11 +23,12 @@ def _timeout_for_tier(tier: str) -> int:
 def environment_for_tier(tier: str) -> dict[str, str]:
     """Return the bounded runner variables a guest seed must export."""
     capacity = tier == "full-exhaustive-capacity"
+    reduced = tier == "development-reduced"
     return {
-        "TLC_CGROUP_MODE": "required" if tier != "portable-smoke" else "portable",
+        "TLC_CGROUP_MODE": "required" if tier not in {"portable-smoke"} else "portable",
         "TLC_TIMEOUT_SECONDS": str(_timeout_for_tier(tier)),
-        "TLC_HEAP": "6144m" if capacity else "2048m",
-        "TLC_ADDRESS_SPACE_MAX": "16G" if capacity else "8G",
-        "TLC_MEMORY_MAX": "8G" if capacity else "3G",
-        "TLC_SWAP_MAX": "8G" if capacity else "3G",
+        "TLC_HEAP": "6144m" if capacity else ("1024m" if reduced else "2048m"),
+        "TLC_ADDRESS_SPACE_MAX": "16G" if capacity else ("4G" if reduced else "8G"),
+        "TLC_MEMORY_MAX": "8G" if capacity else ("2G" if reduced else "3G"),
+        "TLC_SWAP_MAX": "8G" if capacity else ("2G" if reduced else "3G"),
     }

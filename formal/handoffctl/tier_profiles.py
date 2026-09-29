@@ -6,6 +6,7 @@
 from __future__ import annotations
 
 TIER_TIMEOUT_SECONDS = {
+    "development-reduced": 900,
     "portable-smoke": 1800,
     "pr-publication": 1800,
     "full-exhaustive": 7200,
