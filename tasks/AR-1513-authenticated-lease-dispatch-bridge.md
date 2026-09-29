@@ -8,7 +8,7 @@
     "AR-1484"
   ],
   "id": "AR-1513",
-  "next_action": "Request fresh independent exact-head review of 8b9b41c; verify hosted checks and no merge without approval.",
+  "next_action": "Independent exact-head review of 8b9b41c found no P1/P2 findings; all hosted required checks are terminal green at exact head. Merge PR #383 through guarded handoffctl run, then verify post-merge workflows and close AR.",
   "observed_branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
   "observed_dirty": 0,
   "observed_head": "8b9b41c904c6e850b6f354960181b1b2191ea6ac",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 383,
+  "task_revision": 384,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T09:26:18+00:00",
+  "updated_at": "2026-09-29T09:37:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -1082,3 +1082,7 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
   fixed; checkout default profraw contamination avoided with external LLVM_PROFILE_FILE and
   artifacts cleaned; initial handoff git-add pathspec exit 128 came from state cwd and was recovered
   with signed commit.
+
+- 2026-09-29T09:37:40+00:00: Review approval conditional satisfied: authenticated materialization,
+  canonical policy/allowlist and alternate-egress, positive run/sweep bridge, signed DCO, clean
+  tree. Required hosted checks including Policy/Coverage, Rust, aarch64, formal and AWQ all pass.

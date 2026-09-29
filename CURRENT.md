@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1513](tasks/AR-1513-authenticated-lease-dispatch-bridge.md): Authenticated lease-to-live-dispatch bridge | Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch. | Request fresh independent exact-head review of 8b9b41c; verify hosted checks and no merge without approval. | ar1513-repair4-luna56 |
+| P0 | [AR-1513](tasks/AR-1513-authenticated-lease-dispatch-bridge.md): Authenticated lease-to-live-dispatch bridge | Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch. | Independent exact-head review of 8b9b41c found no P1/P2 findings; all hosted required checks are terminal green at exact head. Merge PR #383 through guarded handoffctl run, then verify post-merge workflows and close AR. | ar1513-repair4-luna56 |
 
 ## Blocked
 
