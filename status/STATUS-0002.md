@@ -218,7 +218,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1390](../tasks/AR-1390-runtime-live-acquisition-cli.md): Runtime live acquisition and CLI bridge | coordinator-ar1390-live-dispatch-20260929 | Compose runtime-owned live provider acquisition and wire it into normal ASB run and sweep. | Claim the pre-bound isolated worktree, implement the runtime-owned live acquisition and normal CLI run/sweep bridge, and publish a signed PR. |
+| P0 | [AR-1390](../tasks/AR-1390-runtime-live-acquisition-cli.md): Runtime live acquisition and CLI bridge | coordinator-ar1390-live-dispatch-20260929 | Audit complete: normal CLI bridge is blocked by the missing authenticated platform authority deployment adapter; no safe product mutation was made. | Wait for AR-1523 platform authority deployment adapter to provide the runtime-owned opaque source; then re-audit and implement the ordinary run/sweep bridge with exact-head gates. |
 
 ### Blocked (76)
 
@@ -505,4 +505,3 @@
 | P0 | [AR-1385](../tasks/AR-1385-runtime-live-dispatch-source.md): Authenticated runtime live dispatch source | Unclaimed | Materialize the authenticated runtime-owned live dispatch source for production asb run and sweep. | PR #280 force-updated to signed+DCO exact head 02b79f3; monitor fresh required checks, repair only evidenced failures, then merge only after independent review and all checks green. |
 | P0 | [AR-1388](../tasks/AR-1388-runtime-authority-materializer.md): Runtime authority receipt materializer | Unclaimed | Materialize runtime-owned provider authority from authenticated receipt and chain state. | Done: original merge and AR-1389 replacement evidence verified; no further action remains. |
 | P0 | [AR-1389](../tasks/AR-1389-formal-fixture-exec-race.md): Formal fixture executable race repair | Unclaimed | Repair the formal online-build fixture race that caused ETXTBSY after AR-1388 merge. | Done: atomic fixture repair merged at 10bffbf015bd7ca78d8c0d18f04cf0190195e933 and all seven post-merge workflows passed. |
-| P0 | [AR-1392](../tasks/AR-1392-control-authority-materializer.md): Control-owned private authority materializer | Unclaimed | Resolve private live authority from authenticated control enrollment without caller injection. | Release done after exact main d59e6a7 verification; seven required workflows terminal green and remote main matches. |

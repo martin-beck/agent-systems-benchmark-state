@@ -14,7 +14,7 @@
     "AR-1340"
   ],
   "id": "AR-1390",
-  "next_action": "Claim the pre-bound isolated worktree, implement the runtime-owned live acquisition and normal CLI run/sweep bridge, and publish a signed PR.",
+  "next_action": "Wait for AR-1523 platform authority deployment adapter to provide the runtime-owned opaque source; then re-audit and implement the ordinary run/sweep bridge with exact-head gates.",
   "observed_branch": "feature/ar-1390-runtime-live-acquisition-cli",
   "observed_dirty": 0,
   "observed_head": "bf89a45ddd71af96e6d4b6954320e199e147f83e",
@@ -23,10 +23,10 @@
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Compose runtime-owned live provider acquisition and wire it into normal ASB run and sweep.",
-  "task_revision": 43,
+  "summary": "Audit complete: normal CLI bridge is blocked by the missing authenticated platform authority deployment adapter; no safe product mutation was made.",
+  "task_revision": 44,
   "title": "Runtime live acquisition and CLI bridge",
-  "updated_at": "2026-09-29T21:21:42+00:00",
+  "updated_at": "2026-09-29T21:22:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1390-runtime-live-acquisition-cli"
 }
 ---
@@ -177,3 +177,7 @@ reachability.
   9c032c1d63f47937ebe3fef785b8e5790bcb8bfb83338f75d0ddfaf7837fb347.
 
 - 2026-09-29T21:21:42+00:00: Heartbeat by coordinator-ar1390-live-dispatch-20260929.
+
+- 2026-09-29T21:22:02+00:00: Reconciled current main and declared worktree. Existing runtime/control
+  helpers remain injection-only; no production source exists. Route to AR-1523 without weakening
+  authority or live-provider gates.

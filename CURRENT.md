@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1390](tasks/AR-1390-runtime-live-acquisition-cli.md): Runtime live acquisition and CLI bridge | Compose runtime-owned live provider acquisition and wire it into normal ASB run and sweep. | Claim the pre-bound isolated worktree, implement the runtime-owned live acquisition and normal CLI run/sweep bridge, and publish a signed PR. | coordinator-ar1390-live-dispatch-20260929 |
+| P0 | [AR-1390](tasks/AR-1390-runtime-live-acquisition-cli.md): Runtime live acquisition and CLI bridge | Audit complete: normal CLI bridge is blocked by the missing authenticated platform authority deployment adapter; no safe product mutation was made. | Wait for AR-1523 platform authority deployment adapter to provide the runtime-owned opaque source; then re-audit and implement the ordinary run/sweep bridge with exact-head gates. | coordinator-ar1390-live-dispatch-20260929 |
 
 ## Blocked
 
