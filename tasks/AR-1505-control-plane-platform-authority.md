@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1505-control-plane-platform-authority",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "95ac5453fe3a1fbc383afa2ce713a3dceff78437",
   "claim_expires": "2026-09-29T01:51:57+00:00",
   "depends_on": [
     "AR-1473",
@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Run serial formatter, focused runtime tests, changed package check and clippy, then inspect final diff and create signed DCO commit.",
+  "next_action": "Push existing product branch feature/ar-1505-control-plane-platform-authority via handoffctl run, then record exact remote head and request exact-head CI and fresh independent review for PR 382.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 2,
   "observed_head": "baa13ea675de2160dcf58f69b106e255f2c3d8de",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 173,
+  "task_revision": 174,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:17:47+00:00",
+  "updated_at": "2026-09-29T00:18:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -694,3 +694,10 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-29T00:17:47+00:00: Recorded command exit 0; command argv SHA-256
   45f6440c2e88f24da521bbfd84f28ffe13251bb0fc3550e2c7479377fdaad0c0.
+
+- 2026-09-29T00:18:09+00:00: Product commit 95ac5453fe3a1fbc383afa2ce713a3dceff78437 was created
+  through handoffctl run with SSH signature and matching DCO Signed-off-by trailer. Signature
+  verified as good for martin.beck2@gmx.de. Product worktree is clean. The handoffctl command
+  returned exit 1 only after the product commit, while auto-pushing state commit
+  3af8ce53f808da0befc62c97e3e9b62912fb3f95 to state main; remote rejected that state push. Product
+  commit itself succeeded and remains local pending product branch push.

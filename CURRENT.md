@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1505](tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | Run serial formatter, focused runtime tests, changed package check and clippy, then inspect final diff and create signed DCO commit. | ar1505-repair-luna56 |
+| P0 | [AR-1505](tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | Push existing product branch feature/ar-1505-control-plane-platform-authority via handoffctl run, then record exact remote head and request exact-head CI and fresh independent review for PR 382. | ar1505-repair-luna56 |
 
 ## Blocked
 
