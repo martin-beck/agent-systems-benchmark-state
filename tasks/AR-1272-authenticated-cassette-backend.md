@@ -11,7 +11,7 @@
   "id": "AR-1272",
   "next_action": "Wire execute_runtime_cassette into argument-level replay command and add real response parity plus egress/no-fallback/cancel/restart/timeout/crash cleanup fixtures.",
   "observed_branch": "feature/ar-1272-authenticated-cassette-backend",
-  "observed_dirty": 0,
+  "observed_dirty": 6,
   "observed_head": "85c0f5bc558c90f0543424cdb37017a824c227bb",
   "owner": "ar1272-cassette-backend-luna56",
   "plan": "../plans/AR-1272.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind immutable cassette content to a runtime-authenticated replay backend handle.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Authenticated immutable cassette backend",
-  "updated_at": "2026-09-29T11:50:54+00:00",
+  "updated_at": "2026-09-29T11:51:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1272-cassette-backend"
 }
 ---
