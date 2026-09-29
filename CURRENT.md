@@ -3,12 +3,17 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1516](tasks/AR-1516-ar1308-qemu-fixture-evidence-repair.md): AR-1308 QEMU fixture repair | Repair AR-1308 fixture/evidence for reproducible development runs. | Promote after AR-1308 terminates; repair fixture/evidence, rerun. | coordinator-ar1516-qemu-repair-20260929 |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1515](tasks/AR-1515-ar1307-runner-ci-oom-repair.md): AR-1307 runner CI repair | Repair runner OOM/admission failure without widening its contract. | Promote after AR-1307; reproduce, repair, and rerun gates. | - |
-| P0 | [AR-1516](tasks/AR-1516-ar1308-qemu-fixture-evidence-repair.md): AR-1308 QEMU fixture repair | Repair AR-1308 fixture/evidence for reproducible development runs. | Promote after AR-1308 terminates; repair fixture/evidence, rerun. | - |
 
 ## Blocked
 

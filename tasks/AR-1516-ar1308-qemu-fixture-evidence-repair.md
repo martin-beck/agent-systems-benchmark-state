@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T18:50:22+00:00",
   "depends_on": [
     "AR-1304"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "coordinator-ar1516-qemu-repair-20260929",
   "plan": "../plans/AR-1516-ar1308-qemu-fixture-evidence-repair.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair AR-1308 fixture/evidence for reproducible development runs.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "AR-1308 QEMU fixture repair",
-  "updated_at": "2026-09-29T18:30:11+00:00",
+  "updated_at": "2026-09-29T18:30:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1516-ar1308-qemu-fixture-evidence-repair"
 }
 ---
@@ -30,3 +30,5 @@ qualification, or make reviewed seed material a development prerequisite.
 
 - 2026-09-29T18:30:11+00:00: Completed AR-1304 dependency verified; promote independent AR-1308
   fixture/evidence repair.
+
+- 2026-09-29T18:30:22+00:00: Claimed by coordinator-ar1516-qemu-repair-20260929.

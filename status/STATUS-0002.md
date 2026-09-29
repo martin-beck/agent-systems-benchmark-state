@@ -203,12 +203,17 @@
 
 ## Complete AR inventory
 
-### Open (2)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1516](../tasks/AR-1516-ar1308-qemu-fixture-evidence-repair.md): AR-1308 QEMU fixture repair | coordinator-ar1516-qemu-repair-20260929 | Repair AR-1308 fixture/evidence for reproducible development runs. | Promote after AR-1308 terminates; repair fixture/evidence, rerun. |
+
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1515](../tasks/AR-1515-ar1307-runner-ci-oom-repair.md): AR-1307 runner CI repair | Unclaimed | Repair runner OOM/admission failure without widening its contract. | Promote after AR-1307; reproduce, repair, and rerun gates. |
-| P0 | [AR-1516](../tasks/AR-1516-ar1308-qemu-fixture-evidence-repair.md): AR-1308 QEMU fixture repair | Unclaimed | Repair AR-1308 fixture/evidence for reproducible development runs. | Promote after AR-1308 terminates; repair fixture/evidence, rerun. |
 
 ### Blocked (76)
 
