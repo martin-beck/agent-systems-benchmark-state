@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1508](tasks/AR-1508-platform-owned-authority-provider.md): Platform-owned authority provider | Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material. | Run full exact-head product gates on signed commits 7306f83 and 0135650; obtain independent review before publication. | ar1508_provider_luna56 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -71,6 +65,7 @@ Never edit this file directly.
 | P0 | [AR-1483](tasks/AR-1483-authenticated-control-process-owner.md): Authenticated control process owner | Own authenticated control session and lifecycle while minting opaque CLI dispatch sources. | Promote and claim, then audit whether the runtime/control owner contract can be implemented without caller authority. | - |
 | P0 | [AR-1506](tasks/AR-1506-runtime-platform-launcher-integration.md): Runtime platform launcher integration | Connect the merged authenticated platform authority/bootstrap protocol to production ASB process startup and ordinary CLI dispatch. | Blocked pending a real runtime-owned platform adapter that constructs private RuntimeAuthorityInputs from authenticated AR-1505 bootstrap state; do not publish current facade. Required follow-up must remove public source injection and wire the production entrypoint without synthetic roots/tools/policy. | - |
 | P0 | [AR-1507](tasks/AR-1507-runtime-owned-authority-materialization.md): Runtime-owned authority materialization | Materialize private runtime launch authority from authenticated AR-1505 bootstrap state without caller or synthetic authority. | Promote after dependency verification; define and implement the runtime-owned authority materializer that maps authenticated bootstrap state to private roots, tools, policy, and opaque dispatch source. | - |
+| P0 | [AR-1508](tasks/AR-1508-platform-owned-authority-provider.md): Platform-owned authority provider | Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material. | Run full exact-head product gates on signed commits 7306f83 and 0135650; obtain independent review before publication. | - |
 | P1 | [AR-0604](tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Obtain authorized native x86 runner and immutable CSB/Python evidence; rerun native_boundary and record A/B overhead. | - |
 | P1 | [AR-0814](tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Create successor AR for authenticated route/ancestor authority; preserve AR-1288 evidence and AR-0814 head 29cfa193. | - |
 | P1 | [AR-0832](tasks/AR-0832-aiws-runner-qualification.md): Qualify development host ASB runner operations | Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery. | Run repeated clean ASB jobs on every declared development host label and audit reset, isolation, architecture, and artifact provenance. | - |

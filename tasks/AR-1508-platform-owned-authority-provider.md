@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1508-platform-owned-authority-provider",
   "checkpoint_commit": "0135650a2f54c3a6e79ad3d345c03c4ebc43d35d",
-  "claim_expires": "2026-09-29T04:18:11+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1473",
     "AR-1474",
@@ -17,15 +17,15 @@
   "observed_branch": "feature/ar-1508-platform-owned-authority-provider",
   "observed_dirty": 0,
   "observed_head": "013565032506a3a70a34fc727970a6dd40c377c1",
-  "owner": "ar1508_provider_luna56",
+  "owner": "",
   "plan": "../plans/AR-1508-platform-owned-authority-provider.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Platform-owned authority provider",
-  "updated_at": "2026-09-29T02:31:19+00:00",
+  "updated_at": "2026-09-29T02:31:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1508-platform-owned-authority-provider"
 }
 ---
@@ -151,3 +151,10 @@ fixed-path authority, weakening formal/privacy/native gates.
 
 - 2026-09-29T02:31:19+00:00: Recorded command exit 0; command argv SHA-256
   79bec090309cc89803dbedc97f657de211f21b609a26c1a28a455a7f48d24def.
+
+- 2026-09-29T02:31:49+00:00: Independent exact-diff review rejects publication. Signed commits
+  7306f83/0135650 add only a crate-private/test provider façade: no production authenticated
+  provider or non-test materialization callsite; binding digest is self-attestation and does not
+  independently bind tools/policy/allowlist/endpoint; resolver lacks post-materialization
+  expiry/revocation fencing; credential/enrollment material is not implemented. Preserve commits
+  unpushed. Create AR-1509 for a real platform provider receipt and lifecycle fence.
