@@ -2,19 +2,19 @@
 {
   "branch": "repair/ar-1464-formal-capacity-input-provisioning",
   "checkpoint_commit": "ab485f767fbddbd8adfc27b5120f3df0a045b762",
-  "claim_expires": "2026-09-29T16:21:34+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1464",
   "next_action": "Obtain or restore the reviewed full-exhaustive seed with SHA-256 b3383756b5cd357f58d923216effea33be35b793034de321c3c9ce460ece4b28. Do not regenerate or substitute a different seed. Then rerun the signed preflight, hand inputs to AR-1308, and remove/revert only the temporary AR-specific swap after the runner lifecycle.",
-  "owner": "coordinator-dev-seed-policy-20260929",
+  "owner": "",
   "plan": "../plans/AR-1464.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "superseded",
   "summary": "Exact signed source, reviewed image, 64 GiB overlay, JDK/TLC/model and canonical lock are provisioned. Reclaimed the three stale AR-specific swap files and activated two fresh AR-specific swap files; repeated signed preflight now passes every gate except the unavailable exact seed digest.",
-  "task_revision": 56,
+  "task_revision": 57,
   "title": "Formal capacity and signed-input provisioning repair",
-  "updated_at": "2026-09-29T16:11:34+00:00",
+  "updated_at": "2026-09-29T16:11:42+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1464-formal-capacity-input-provisioning"
 }
 ---
@@ -216,3 +216,7 @@ scope.
   superseding this formal-only archival provisioning task for development execution.
 
 - 2026-09-29T16:11:34+00:00: Claimed by coordinator-dev-seed-policy-20260929.
+
+- 2026-09-29T16:11:42+00:00: Superseded for development: unsigned-development now accepts locally
+  generated disposable seeds without reviewed digests. The formal signed/publication profile remains
+  documented separately and may be reopened only when a formal release is explicitly authorized.
