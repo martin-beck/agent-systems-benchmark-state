@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1511-runtime-control-authority-issuer",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "49bf84275f0df05b7ce310f36f87e29c420b8e34",
   "claim_expires": "2026-09-29T05:49:08+00:00",
   "depends_on": [
     "AR-1502",
     "AR-1484"
   ],
   "id": "AR-1511",
-  "next_action": "Inspect final exact diff against f92c2e9; preserve 1a26b02 as evidence, then request independent exact-head review. Do not publish until signed repair commit and review.",
+  "next_action": "Independent exact-head review required for 49bf842 against f92c2e9; verify lifecycle teardown/revoke/fence and production materialize_provisioner callsite. No publish until review passes.",
   "observed_branch": "feature/ar-1511-runtime-control-authority-issuer",
   "observed_dirty": 0,
   "observed_head": "49bf84275f0df05b7ce310f36f87e29c420b8e34",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 85,
+  "task_revision": 86,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T03:54:45+00:00",
+  "updated_at": "2026-09-29T03:55:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
@@ -319,3 +319,11 @@ production authority, or weakening fail-closed/native/formal gates.
 
 - 2026-09-29T03:54:32+00:00: Recorded command exit 0; command argv SHA-256
   c8006e15a2bd34f0eba5b2e84c5f0339a707c77da1253cd0642faa8f665da1ef.
+
+- 2026-09-29T03:55:04+00:00: Final repair commit 49bf84275f0df05b7ce310f36f87e29c420b8e34 is
+  SSH-signed and DCO-signed by Martin Beck; product worktree is clean at exact head. It preserves
+  prior signed 1a26b02 and includes lifecycle Arc invalidation, current cancellation/restart
+  verification fences, authenticated revoke proof, request constructor, live_service production
+  materialization/revoke integration, deterministic negative tests, fixture correction, and docs.
+  git diff --check against protected f92c2e9 is clean. No PR/publication claim; request independent
+  exact-head review now.
