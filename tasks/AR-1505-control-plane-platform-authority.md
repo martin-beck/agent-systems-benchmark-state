@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Rerun cargo fmt --check serially after removing bridge, then focused runtime tests; prior parallel check was green but paired formatter invocation hit coordinator lock timeout.",
+  "next_action": "Run changed-package clippy/docs/full workspace gates, then independently review complete working diff and create signed DCO repair commit on existing branch.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 2,
   "observed_head": "baa13ea675de2160dcf58f69b106e255f2c3d8de",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 151,
+  "task_revision": 152,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:06:47+00:00",
+  "updated_at": "2026-09-29T00:07:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -601,3 +601,13 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-29T00:06:47+00:00: Recorded command exit 0; command argv SHA-256
   88abc45ac563806cb0cf489cdec266a195116987e7573f4c5a454df65cc43b8a.
+
+- 2026-09-29T00:07:16+00:00: Repair implementation now consumes RuntimeBootstrapResponseV1 into
+  RuntimeControlBootstrap: validates response, reconstructs runtime certificate authority source,
+  enrolls local chain store, materializes receipt profile, and exposes only runtime-owned
+  provisioner materialization. cancel_control_bootstrap now requires the paired bootstrap and
+  revokes local chain/resolver/provisioner. LiveProviderAttempt carries shared AtomicBool fence
+  checked before relay/spawn. Exact focused test handoffctl run cargo test --locked -p asb-runtime
+  --lib live_service::tests::control_bootstrap --no-fail-fast -- --test-threads=1 passed 2/2. Exact
+  full asb-runtime serial test passed 151, 0 failed, 1 ignored plus 3 integration binaries (8, 15,
+  16) and 2 doctests.

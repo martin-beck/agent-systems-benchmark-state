@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1505](tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | Rerun cargo fmt --check serially after removing bridge, then focused runtime tests; prior parallel check was green but paired formatter invocation hit coordinator lock timeout. | ar1505-repair-luna56 |
+| P0 | [AR-1505](tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | Run changed-package clippy/docs/full workspace gates, then independently review complete working diff and create signed DCO repair commit on existing branch. | ar1505-repair-luna56 |
 
 ## Blocked
 
