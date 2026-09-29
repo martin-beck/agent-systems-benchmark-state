@@ -210,7 +210,7 @@
 | [AR-1517](../tasks/AR-1517-ar1309-capacity-decision-unblock.md) | [AR-1304](../tasks/AR-1304-required-tier-qemu-runner.md) | [AR-1518](../tasks/AR-1518.md), [AR-1529](../tasks/AR-1529.md) |
 | [AR-1518](../tasks/AR-1518.md) | [AR-1517](../tasks/AR-1517-ar1309-capacity-decision-unblock.md) | None |
 | [AR-1519](../tasks/AR-1519.md) | [AR-1304](../tasks/AR-1304-required-tier-qemu-runner.md) | [AR-1520](../tasks/AR-1520.md), [AR-1528](../tasks/AR-1528.md) |
-| [AR-1520](../tasks/AR-1520.md) | [AR-1519](../tasks/AR-1519.md) | [AR-1521](../tasks/AR-1521.md), [AR-1526](../tasks/AR-1526.md), [AR-1528](../tasks/AR-1528.md), [AR-1529](../tasks/AR-1529.md) |
+| [AR-1520](../tasks/AR-1520.md) | [AR-1519](../tasks/AR-1519.md) | [AR-1521](../tasks/AR-1521.md), [AR-1526](../tasks/AR-1526.md), [AR-1528](../tasks/AR-1528.md), [AR-1529](../tasks/AR-1529.md), [AR-1530](../tasks/AR-1530.md) |
 | [AR-1521](../tasks/AR-1521.md) | [AR-1520](../tasks/AR-1520.md), [AR-1529](../tasks/AR-1529.md) | [AR-1522](../tasks/AR-1522.md) |
 | [AR-1522](../tasks/AR-1522.md) | [AR-1521](../tasks/AR-1521.md) | None |
 | [AR-1523](../tasks/AR-1523.md) | [AR-1453](../tasks/AR-1453-frontend-orchestration-wiring.md), [AR-1505](../tasks/AR-1505-control-plane-platform-authority.md), [AR-1513](../tasks/AR-1513-authenticated-lease-dispatch-bridge.md), [AR-1514](../tasks/AR-1514-runtime-auth-reconciliation.md) | None |
@@ -219,7 +219,8 @@
 | [AR-1526](../tasks/AR-1526.md) | [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md), [AR-1453](../tasks/AR-1453-frontend-orchestration-wiring.md), [AR-1455](../tasks/AR-1455-runtime-owned-guided-replay-entrypoint.md), [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md), [AR-1514](../tasks/AR-1514-runtime-auth-reconciliation.md), [AR-1520](../tasks/AR-1520.md) | None |
 | [AR-1527](../tasks/AR-1527.md) | None | [AR-1528](../tasks/AR-1528.md) |
 | [AR-1528](../tasks/AR-1528.md) | [AR-1519](../tasks/AR-1519.md), [AR-1520](../tasks/AR-1520.md), [AR-1527](../tasks/AR-1527.md) | None |
-| [AR-1529](../tasks/AR-1529.md) | [AR-1517](../tasks/AR-1517-ar1309-capacity-decision-unblock.md), [AR-1520](../tasks/AR-1520.md) | [AR-1521](../tasks/AR-1521.md) |
+| [AR-1529](../tasks/AR-1529.md) | [AR-1517](../tasks/AR-1517-ar1309-capacity-decision-unblock.md), [AR-1520](../tasks/AR-1520.md) | [AR-1521](../tasks/AR-1521.md), [AR-1530](../tasks/AR-1530.md) |
+| [AR-1530](../tasks/AR-1530.md) | [AR-1520](../tasks/AR-1520.md), [AR-1529](../tasks/AR-1529.md) | None |
 
 ## Complete AR inventory
 
@@ -307,7 +308,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (48)
+### Planned (49)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -328,6 +329,7 @@
 | P0 | [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Unclaimed | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. |
 | P0 | [AR-1309](../tasks/AR-1309-reviewed-capacity-or-model-reduction.md): Reviewed full-exhaustive capacity or model-reduction contract | Unclaimed | Provide a reviewed successor contract after terminal full-exhaustive capacity OOM. | Superseded by AR-1529: preserve this historical decision record and do not promote it because its dependency on blocked AR-1307/1308 cannot express the already completed capacity decision. |
 | P0 | [AR-1522](../tasks/AR-1522.md): AR-1307/1308 formal qualification rerun | Unclaimed | Run and independently verify the repaired AR-1307/1308 full-tier qualification, or leave a truthful classified blocker. | Remain planned until AR-1521 is merged and its exact-head CI evidence is green; then run the one authorized terminal qualification attempt. |
+| P0 | [AR-1530](../tasks/AR-1530.md): State formal capacity profile for AR-1307/1308 | Unclaimed | Implement the state-owned 8G/8G formal capacity profile selected by AR-1529 and route it to AR-1522. | Promote after dependency verification; implement the state-owned signed-capacity-8g validator/runner profile and its fail-closed tests without changing unsigned-development. |
 | P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
 | P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
 | P1 | [AR-0810](../tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Unclaimed | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project&#x27;s GitHub Pages site. |
@@ -502,4 +504,3 @@
 | P0 | [AR-1379](../tasks/AR-1379-live-dispatch-integration.md): Production live dispatch integration | Unclaimed | Integrate authenticated runtime live dispatch into asb run and sweep. | Monitor rerun of post-merge Rust workflow and remaining six workflows at exact main SHA 1e2c591; release only after all seven terminal SUCCESS. |
 | P0 | [AR-1380](../tasks/AR-1380-runtime-scheduler-composition.md): Runtime scheduler composition for live dispatch | Unclaimed | Compose runtime-owned live attempts for production run and sweep scheduling. | PR #276 force-updated to exact head ab4e60c on protected main 16bca1f9 after policy/platform stale-base failure. Monitor fresh exact-head checks; repair any new failures, merge only green, then verify seven post-merge workflows. |
 | P0 | [AR-1381](../tasks/AR-1381-live-cli-scheduler-wiring.md): Runtime-owned live CLI scheduler wiring | Unclaimed | Wire runtime-owned live scheduler authority into production asb run and sweep. | PR #277 force-updated to exact head 4ba3085 after provenance fixture repair. Monitor fresh exact-head checks; repair any new failures, merge only green, then verify seven post-merge workflows. |
-| P0 | [AR-1383](../tasks/AR-1383-runtime-authority-profile.md): Runtime-owned authority profile materialization | Unclaimed | Materialize runtime-owned live authority profile for authenticated execution. | Independent review complete; full runtime tests 114 passed/1 ignored, check and clippy -D warnings passed. Publish clean exact-head PR through handoffctl, then monitor required CI. |
