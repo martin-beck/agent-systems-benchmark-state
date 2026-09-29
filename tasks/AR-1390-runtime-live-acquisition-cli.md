@@ -22,11 +22,11 @@
   "plan": "../plans/AR-1390-runtime-live-acquisition-cli.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Compose runtime-owned live provider acquisition and wire it into normal ASB run and sweep.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Runtime live acquisition and CLI bridge",
-  "updated_at": "2026-09-26T22:41:54+00:00",
+  "updated_at": "2026-09-29T21:00:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1390-runtime-live-acquisition-cli"
 }
 ---
@@ -138,3 +138,6 @@ reachability.
   an opaque runtime-owned dispatch source, including authenticated chain binding and concrete
   lease/relay/tool bootstrap, to normal asb run/sweep; then resume AR-1390 without weakening egress
   gates.
+
+- 2026-09-29T21:00:31+00:00: Dependencies are now durably done; reopen this production dispatch
+  successor for implementation and exact-head qualification.

@@ -209,7 +209,13 @@
 
 ## Complete AR inventory
 
-### Blocked (77)
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1390](../tasks/AR-1390-runtime-live-acquisition-cli.md): Runtime live acquisition and CLI bridge | Unclaimed | Compose runtime-owned live provider acquisition and wire it into normal ASB run and sweep. | Claim the pre-bound isolated worktree, implement the runtime-owned live acquisition and normal CLI run/sweep bridge, and publish a signed PR. |
+
+### Blocked (76)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -259,7 +265,6 @@
 | P0 | [AR-1382](../tasks/AR-1382-authenticated-live-execution-source.md): Authenticated live execution source | Unclaimed | Materialize authenticated runtime-owned live execution for asb run and sweep. | Promote and claim this dependency-valid authenticated execution-source successor, then implement runtime-owned scheduler materialization. |
 | P0 | [AR-1386](../tasks/AR-1386-live-cli-dispatch-integration.md): Production live CLI dispatch integration | Unclaimed | Integrate authenticated runtime live dispatch into production asb run and sweep. | Refresh the declared isolated worktree from protected main, integrate the authenticated runtime live dispatch source into production asb run and sweep, and add local provider-mock plus fail-closed egress/teardown tests. |
 | P0 | [AR-1387](../tasks/AR-1387-runtime-control-cli-bridge.md): Authenticated runtime-control CLI bridge | Unclaimed | Bridge authenticated runtime/control bootstrap state into the production CLI dispatch path. | Resume AR-1391 runtime-control bootstrap constructor; AR-1387 remains blocked pending that successor and has no safe in-scope product diff. |
-| P0 | [AR-1390](../tasks/AR-1390-runtime-live-acquisition-cli.md): Runtime live acquisition and CLI bridge | Unclaimed | Compose runtime-owned live provider acquisition and wire it into normal ASB run and sweep. | Claim the pre-bound isolated worktree, implement the runtime-owned live acquisition and normal CLI run/sweep bridge, and publish a signed PR. |
 | P0 | [AR-1391](../tasks/AR-1391-runtime-control-bootstrap-constructor.md): Runtime control bootstrap constructor | Unclaimed | Materialize authenticated runtime live authority into an opaque source without caller injection. | Claim the pre-bound isolated worktree, implement the runtime/control-owned authenticated bootstrap constructor, and publish a signed PR. |
 | P0 | [AR-1470](../tasks/AR-1470-runtime-certificate-chain-enrollment.md): Runtime certificate-chain enrollment materialization | Unclaimed | Materialize runtime-owned certificate-chain enrollment authority for live dispatch. | Protected-main setup is not current: AR worktree is clean but 86 commits behind origin/main 7167e3d; refresh via handoffctl run, then implement the narrow runtime-owned authenticated enrollment source. Existing RuntimeAuthorityRecord holds only public digests/opaque chain metadata; no private bootstrap authority or caller-safe issuer is available. Do not fabricate authority. |
 | P0 | [AR-1481](../tasks/AR-1481-runtime-owned-cli-entry-bootstrap.md): Runtime-owned CLI entry bootstrap | Unclaimed | Wire runtime-owned authenticated dispatch into the ordinary CLI entry path. | Promote and claim, then inspect the protected-main entrypoint and runtime/control bootstrap inputs. |
