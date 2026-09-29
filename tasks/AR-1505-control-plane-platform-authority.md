@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1505-control-plane-platform-authority",
   "checkpoint_commit": "f92c2e941913129d7db50480f71e8361a0d43a0c",
-  "claim_expires": "2026-09-29T02:32:05+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1473",
     "AR-1474",
@@ -16,15 +16,15 @@
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 0,
   "observed_head": "c96be66213c9a09870e7e6b38784bc7910dff728",
-  "owner": "coordinator-ar1505",
+  "owner": "",
   "plan": "../plans/AR-1505-control-plane-platform-authority.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 303,
+  "task_revision": 304,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T01:40:48+00:00",
+  "updated_at": "2026-09-29T01:40:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -1200,3 +1200,7 @@ public credential/socket paths, or weakening fail-closed gates.
   assurance 36508408767; Rust verification 36508408878; Credential-free benchmark path 36508408778;
   Hosted portability and native qualification 36508408721; Emulated aarch64 portability 36508408647.
   Exact public main ref matches merge commit.
+
+- 2026-09-29T01:40:54+00:00: AR-1505 complete: signed implementation c96be662 merged as
+  f92c2e941913129d7db50480f71e8361a0d43a0c; exact-head independent review, all required PR checks,
+  and all post-merge assurance workflows passed.
