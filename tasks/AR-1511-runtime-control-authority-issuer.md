@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1511-runtime-control-authority-issuer",
   "checkpoint_commit": "673b486ba89917e3bb08c884ee17e708e0776b07",
-  "claim_expires": "2026-09-29T04:54:23+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1502",
     "AR-1484"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1511-runtime-control-authority-issuer",
   "observed_dirty": 0,
   "observed_head": "673b486ba89917e3bb08c884ee17e708e0776b07",
-  "owner": "ar1511-final-repair-luna56",
+  "owner": "",
   "plan": "../plans/AR-1511-runtime-control-authority-issuer.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 135,
+  "task_revision": 136,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T04:24:38+00:00",
+  "updated_at": "2026-09-29T04:29:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
@@ -463,3 +463,7 @@ production authority, or weakening fail-closed/native/formal gates.
   Focused tests, serial asb-runtime (157 passed, 1 ignored), serial workspace, clippy -D warnings,
   docs -Dwarnings, fmt check, and diff check green. Request independent exact-head review; no
   PR/push.
+
+- 2026-09-29T04:29:23+00:00: Independent exact-head review of 673b486 found P1: dispatch/provider
+  remains test-only with no ordinary CLI production caller or non-test material producer; preserve
+  clean signed head and assign final production-path repair.
