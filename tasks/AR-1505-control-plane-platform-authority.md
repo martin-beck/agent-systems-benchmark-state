@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Apply the fence-retention patch correctly, rerun serial fmt check and focused tests, then sign and commit the product repair.",
+  "next_action": "Run serial formatter, focused runtime tests, changed package check and clippy, then inspect final diff and create signed DCO commit.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 2,
   "observed_head": "baa13ea675de2160dcf58f69b106e255f2c3d8de",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 166,
+  "task_revision": 167,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:15:19+00:00",
+  "updated_at": "2026-09-29T00:15:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -670,3 +670,9 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-29T00:15:19+00:00: Recorded command exit 0; command argv SHA-256
   55ee9eb9e13af57c94d5ba99e3dcf67560635b95c5121a8d6daedc402bacf69c.
+
+- 2026-09-29T00:15:41+00:00: Corrected the failed patch invocation: used an argv-safe handoffctl run
+  bash command with base64 patch input. Product live_service.rs now retains a shared provisioner
+  fence in RuntimeControlBootstrap, sets it when materializing the handle, and raises it during
+  local cancellation even after the handle has been taken. Product diff remains limited to the two
+  intended runtime files.

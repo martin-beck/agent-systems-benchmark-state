@@ -188,7 +188,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1505](../tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | ar1505-repair-luna56 | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | Apply the fence-retention patch correctly, rerun serial fmt check and focused tests, then sign and commit the product repair. |
+| P0 | [AR-1505](../tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | ar1505-repair-luna56 | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | Run serial formatter, focused runtime tests, changed package check and clippy, then inspect final diff and create signed DCO commit. |
 
 ### Blocked (76)
 
