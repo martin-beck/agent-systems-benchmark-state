@@ -21,11 +21,11 @@
   "plan": "../plans/AR-1507-runtime-owned-authority-materialization.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Materialize private runtime launch authority from authenticated AR-1505 bootstrap state without caller or synthetic authority.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Runtime-owned authority materialization",
-  "updated_at": "2026-09-29T04:06:00+02:00",
+  "updated_at": "2026-09-29T02:07:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1507-runtime-owned-authority-materialization"
 }
 ---
@@ -61,3 +61,6 @@ first-customer production evidence.
 - 2026-09-29T04:06:00+02:00: Created from AR-1506 independent P1 findings. The
   launcher facade is intentionally preserved as unmerged evidence until this
   runtime-owned authority materialization contract exists.
+
+- 2026-09-29T02:07:59+00:00: Dependencies through AR-1505 verified done; AR-1506 independently
+  established the missing private-authority materialization boundary.
