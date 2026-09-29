@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "checkpoint_commit": "c8a0c83a79f91bdf963daa6785be3157af790953",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T19:02:03+00:00",
   "depends_on": [
     "AR-1304"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
-  "owner": "",
+  "owner": "coordinator-ar1308-thread-admission-20260929",
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Development fixture path defect repaired and focused tests pass, but portable-smoke still fails closed at TLC JVM startup with pthread_create EAGAIN (host runner capacity), before attestation. No seed-digest blocker remains and no formal qualification is claimed.",
-  "task_revision": 619,
+  "task_revision": 620,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T17:32:00+00:00",
+  "updated_at": "2026-09-29T17:32:03+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1907,3 +1907,5 @@ must report `qualification_authorized: false`.
 - 2026-09-29T17:32:00+00:00: Portable admission EAGAIN is attributable to nproc counting processes
   instead of Linux tasks; resume bounded repair in the declared AR worktree without weakening task
   limits.
+
+- 2026-09-29T17:32:03+00:00: Claimed by coordinator-ar1308-thread-admission-20260929.

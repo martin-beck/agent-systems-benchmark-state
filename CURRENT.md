@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1308](tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Development fixture path defect repaired and focused tests pass, but portable-smoke still fails closed at TLC JVM startup with pthread_create EAGAIN (host runner capacity), before attestation. No seed-digest blocker remains and no formal qualification is claimed. | Path handling is repaired: verify.sh now honors a regular preloaded TLC_JAR_PATH, and tlc_runner derives worker queues/temp/lock from a bounded TLC_RUNTIME_ROOT under /srv/data/projects. Rerun portable-smoke on a capacity-available disposable runner and record PORTABLE_SMOKE_EVIDENCE_OK; do not weaken required resource bounds or substitute reviewed seeds. | - |
+| P0 | [AR-1308](tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Development fixture path defect repaired and focused tests pass, but portable-smoke still fails closed at TLC JVM startup with pthread_create EAGAIN (host runner capacity), before attestation. No seed-digest blocker remains and no formal qualification is claimed. | Path handling is repaired: verify.sh now honors a regular preloaded TLC_JAR_PATH, and tlc_runner derives worker queues/temp/lock from a bounded TLC_RUNTIME_ROOT under /srv/data/projects. Rerun portable-smoke on a capacity-available disposable runner and record PORTABLE_SMOKE_EVIDENCE_OK; do not weaken required resource bounds or substitute reviewed seeds. | coordinator-ar1308-thread-admission-20260929 |
 
 ## Blocked
 
