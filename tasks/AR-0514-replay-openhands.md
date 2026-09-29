@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for OpenHands.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Qualify OpenHands replay",
-  "updated_at": "2026-09-29T10:02:54+00:00",
+  "updated_at": "2026-09-29T10:03:02+00:00",
   "worktree_key": "agent-systems-benchmark-replay-openhands"
 }
 ---
@@ -149,3 +149,6 @@ Qualify OpenHands record/replay, network denial, parity, retries, tool calls, ca
   provenance is absent. Earlier five digest recipes remain non-matching; no override, credentials,
   native replay, or external provider effect. Exact digest is still blocked; AR-0521 must publish an
   immutable environment bundle/verifier before native replay.
+
+- 2026-09-29T10:03:02+00:00: Recorded command exit 0; command argv SHA-256
+  3c96acaf60ffa8bf99feba8f091ce5c047786b4250d95c723a7f72079f8f7360.
