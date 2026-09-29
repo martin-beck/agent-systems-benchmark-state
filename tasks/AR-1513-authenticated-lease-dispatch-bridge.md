@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
-  "checkpoint_commit": "4807e9692a4e8f2bc22c647298878ec957f58304",
+  "checkpoint_commit": "8b9b41c904c6e850b6f354960181b1b2191ea6ac",
   "claim_expires": "2026-09-29T09:47:03+00:00",
   "depends_on": [
     "AR-1502",
     "AR-1484"
   ],
   "id": "AR-1513",
-  "next_action": "Review of 4807e96 found P1: run_with_runtime_control_bootstrap calls acquire before materialize_provisioner, so owner_id/resolver are unset and tests only assert failure; normal CLI run/sweep still bypasses bridge. Fix real materialization and successful provider-free production bridge, then rerun coverage/review.",
+  "next_action": "Request fresh independent exact-head review of 8b9b41c; verify hosted checks and no merge without approval.",
   "observed_branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
   "observed_dirty": 0,
   "observed_head": "8b9b41c904c6e850b6f354960181b1b2191ea6ac",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 382,
+  "task_revision": 383,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T09:25:56+00:00",
+  "updated_at": "2026-09-29T09:26:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -1071,3 +1071,14 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
 
 - 2026-09-29T09:25:56+00:00: Recorded command exit 0; command argv SHA-256
   a232c87a967aa8daca5a5fe8d0753aafe7a547e06d889cf113fe742540766af4.
+
+- 2026-09-29T09:26:18+00:00: Repair4 complete on exact 8b9b41c: materialize authenticated runtime
+  owner before lease acquisition; derive tool bundle identity from authenticated control claims;
+  canonicalize policy once and bind complete allowlist as distinct alternate-egress identity;
+  run/sweep bridge now reaches positive materialization->lease->dispatch-source path. Focused
+  runtime/CLI tests, clippy, fmt, provenance, and clean workspace coverage passed; workspace line
+  coverage 90.67%, critical package 95.86%. Recorded failures and causes: transient
+  control-state-root-already-owned test passed on rerun; stale provenance hash after source edit
+  fixed; checkout default profraw contamination avoided with external LLVM_PROFILE_FILE and
+  artifacts cleaned; initial handoff git-add pathspec exit 128 came from state cwd and was recovered
+  with signed commit.
