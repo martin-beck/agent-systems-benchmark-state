@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 223,
+  "task_revision": 224,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:38:10+00:00",
+  "updated_at": "2026-09-29T00:38:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -893,3 +893,6 @@ public credential/socket paths, or weakening fail-closed gates.
   first full workspace run was still active. The original run subsequently terminated successfully
   (exit 0) per the durable coordinator result. Focused schema, protocol, resolver, fmt,
   changed-package check, clippy, and docs gates are green.
+
+- 2026-09-29T00:38:36+00:00: Recorded command exit 0; command argv SHA-256
+  8b1c86997bc9c5df3159020a5b5f17a72a4a5d627032b82b145bdaa05446c694.
