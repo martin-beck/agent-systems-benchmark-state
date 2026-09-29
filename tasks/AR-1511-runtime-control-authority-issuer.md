@@ -8,7 +8,7 @@
     "AR-1484"
   ],
   "id": "AR-1511",
-  "next_action": "Serial workspace cargo test is green; exact signed product head is 1a26b02. Next: independent exact-head diff review, then publish PR/CI through the guarded workflow; no live/provider claim.",
+  "next_action": "Repair P1 lifecycle fences and production issuer integration; preserve 1a26b02 plus dirty diff as audit evidence; add negative tests/docs, then independent review.",
   "observed_branch": "feature/ar-1511-runtime-control-authority-issuer",
   "observed_dirty": 2,
   "observed_head": "1a26b02e2b6de485e930a0448d7fe5d34aed3061",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T03:37:48+00:00",
+  "updated_at": "2026-09-29T03:38:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
@@ -207,3 +207,15 @@ production authority, or weakening fail-closed/native/formal gates.
 
 - 2026-09-29T03:37:48+00:00: Recorded command exit 0; command argv SHA-256
   44858bcc1bea325f8e4ec42626fdf2970d2310a4694e160101531722dea4dfa4.
+
+- 2026-09-29T03:38:23+00:00: Takeover audit: exact diff against protected f92c2e9 is 716 insertions
+  across README.md, crates/asb-runtime/src/authority_issuer.rs, crates/asb-runtime/src/lib.rs,
+  crates/asb-runtime/src/live_service.rs, and docs/RUNTIME_CONTROL_AUTHORITY_ISSUER.md. Signed
+  1a26b02 has matching DCO; dirty follow-on modifies authority_issuer.rs (crate-visible binding
+  digest plus cfg(test) mismatch eprintln) and live_service.rs (bootstrap issuer/capability fields,
+  materialize_provisioner construction, fixture fields). git diff --check is clean. Through
+  owner-scoped handoffctl run, cargo check --locked -p asb-runtime exited 0 on dirty follow-on;
+  current product dirty=2 and head=1a26b02. Independent review P1 findings remain: teardown does not
+  invalidate already-issued capability; verify has no current restart/cancellation fence and revoke
+  lacks authenticated proof; no non-test production issuer construction/callsite was proven. Repair
+  now; no publish claim.
