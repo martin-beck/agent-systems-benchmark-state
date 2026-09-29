@@ -8,7 +8,7 @@
     "AR-1484"
   ],
   "id": "AR-1511",
-  "next_action": "Implement authenticated runtime material provider from non-test owner state, bind launch program/adapter provenance, wire ordinary CLI/control caller, add remote-revoke test, then focused gates and independent exact-head review.",
+  "next_action": "Repair material binding: diagnostic focused test failed because resolver credential digest differs from control receipt (credential=true; target/generation/tools/lease/relay/namespace matched), then rerun focused and serial gates.",
   "observed_branch": "feature/ar-1511-runtime-control-authority-issuer",
   "observed_dirty": 4,
   "observed_head": "673b486ba89917e3bb08c884ee17e708e0776b07",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 162,
+  "task_revision": 163,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T04:48:45+00:00",
+  "updated_at": "2026-09-29T04:49:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
@@ -540,3 +540,10 @@ production authority, or weakening fail-closed/native/formal gates.
 
 - 2026-09-29T04:48:45+00:00: Recorded command exit 101; command argv SHA-256
   127686b77cc5decf62725f1fe901c1a2ab31b94a9399093b6a843c55fbbb8ff7.
+
+- 2026-09-29T04:49:25+00:00: Bounded owner-scoped cargo test --locked -p asb-runtime
+  live_service::tests::control_bootstrap_composes_production_dispatch_through_issuer -- --exact
+  --nocapture exited 101. Actual stderr/stdout: material binding mismatch target=false
+  generation=false credential=true allowlist=false tools=false lease=false relay=false
+  namespace=false; panic at live_service.rs:3256 assertion material_result.is_ok(). Root cause is
+  resolver fixture/control binding credential and allowlist mismatch, not a compiler failure.
