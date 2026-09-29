@@ -2028,7 +2028,7 @@ flowchart LR
     AR_1505 --> AR_1507
     AR_1505 --> AR_1508
     AR_1505 --> AR_1509
-    AR_1509 --> AR_1510
+    AR_1505 --> AR_1510
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
