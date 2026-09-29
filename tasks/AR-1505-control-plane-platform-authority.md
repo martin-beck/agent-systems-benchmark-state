@@ -14,7 +14,7 @@
   "id": "AR-1505",
   "next_action": "Add authenticated namespace_sha256 to RuntimeBootstrapRequestV1 and RuntimeBootstrapResponseV1, echo and validate it in control, compare all three bindings in the runtime resolver, add positive and negative tests and regenerate v1.11 schemas.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "95ac5453fe3a1fbc383afa2ce713a3dceff78437",
   "owner": "ar1505-repair-luna56",
   "plan": "../plans/AR-1505-control-plane-platform-authority.md",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 183,
+  "task_revision": 184,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:22:54+00:00",
+  "updated_at": "2026-09-29T00:23:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
