@@ -184,12 +184,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1504](../tasks/AR-1504-runtime-platform-launcher-seam.md): Runtime/platform launcher seam | coordinator-ar1504 | Provide the real runtime/platform-owned launcher and authenticated session discovery for AR-1503. | Implement the missing runtime-owned platform adapter/session locator on protected main, with authenticated socket ownership/permissions, private input construction, opaque source handoff and lifecycle tests; do not copy AR-1503 façade. If platform authority contract cannot be established from existing control protocol, create a narrowly scoped successor AR for that protocol contract with exact symbols and keep this AR blocked. |
-
 ### Blocked (75)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -498,3 +492,4 @@
 | P0 | [AR-1460](../tasks/AR-1460-current-main-first-customer-requalification.md): Current-main first-customer requalification | Unclaimed | Requalify first-customer readiness after the latest local-mock campaign merge. | Release done: current protected-main first-customer qualification passed with credential-free local/mock and strict-replay evidence; no deterministic repair AR. |
 | P0 | [AR-1461](../tasks/AR-1461-first-customer-release-readiness.md): First-customer release readiness and publication | Unclaimed | Prepare and publish the first-customer ASB release from the currently qualified main. | No further action; v0.1.0 was published and fresh customer-consumption verification is recorded. |
 | P0 | [AR-1462](../tasks/AR-1462-pinned-release-toolchain-bundle-workflow.md): Pinned release toolchain and first-customer bundle workflow | Unclaimed | Establish reproducible supply-chain checks and first-customer release bundle publication workflow. | No further action; PR #337 merged and all seven exact-main post-merge workflows are green. |
+| P0 | [AR-1463](../tasks/AR-1463-current-main-requalification-after-capture.md): Current-main first-customer requalification after capture integration | Unclaimed | Exact protected main is requalified for first-customer production-like use: install/build, local/mock workloads, capture redaction and content-addressed sealing, strict offline replay, recovery/privacy/egress denial, coverage and deterministic/formal gates pass; existing v0.1.0 remains the verified release. | No new release publication; retain v0.1.0 as the verified customer release and repeat qualification only for a later protected-main revision. |

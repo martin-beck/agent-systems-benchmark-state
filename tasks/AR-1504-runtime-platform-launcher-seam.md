@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1504-runtime-platform-launcher-seam",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-29T02:13:17+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1473",
     "AR-1474",
@@ -16,15 +16,15 @@
   "observed_branch": "feature/ar-1504-runtime-platform-launcher-seam",
   "observed_dirty": 2,
   "observed_head": "3c6af6b351e0c32ee8f5e48716654d854dcbbac2",
-  "owner": "coordinator-ar1504",
+  "owner": "",
   "plan": "../plans/AR-1504-runtime-platform-launcher-seam.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "superseded",
   "summary": "Provide the real runtime/platform-owned launcher and authenticated session discovery for AR-1503.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Runtime/platform launcher seam",
-  "updated_at": "2026-09-29T01:43:17+00:00",
+  "updated_at": "2026-09-29T01:43:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1504-runtime-platform-launcher-seam"
 }
 ---
@@ -151,3 +151,8 @@ caller-built runtime inputs, or weakening native/credential/egress gates.
   predecessor as superseded.
 
 - 2026-09-29T01:43:17+00:00: Claimed by coordinator-ar1504.
+
+- 2026-09-29T01:43:20+00:00: Superseded by AR-1505. Authenticated platform authority/bootstrap
+  protocol was implemented, independently reviewed, merged as
+  f92c2e941913129d7db50480f71e8361a0d43a0c, and all post-merge assurance passed. The incomplete
+  AR-1504 discovery-only patch remains unmerged.
