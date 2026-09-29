@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
-  "checkpoint_commit": "8b9b41c904c6e850b6f354960181b1b2191ea6ac",
+  "checkpoint_commit": "47329e35c03bf20505ce65c7a29487ab97c52ee9",
   "claim_expires": "2026-09-29T09:47:03+00:00",
   "depends_on": [
     "AR-1502",
     "AR-1484"
   ],
   "id": "AR-1513",
-  "next_action": "Independent exact-head review of 8b9b41c found no P1/P2 findings; all hosted required checks are terminal green at exact head. Merge PR #383 through guarded handoffctl run, then verify post-merge workflows and close AR.",
+  "next_action": "PR #383 merged at 47329e35; monitor post-merge workflows 36550477933, 36550477996, 36550478002, 36550478037, 36550478039, 36550478042, 36550478232 to terminal success, then verify protected main and close AR.",
   "observed_branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
   "observed_dirty": 0,
   "observed_head": "8b9b41c904c6e850b6f354960181b1b2191ea6ac",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 385,
+  "task_revision": 386,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T09:38:33+00:00",
+  "updated_at": "2026-09-29T09:39:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -1089,3 +1089,7 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
 
 - 2026-09-29T09:38:33+00:00: Recorded command exit 0; command argv SHA-256
   4ad7393eed9424f64cda31a6c62dda01e93853e39032e398efd990cea46c850e.
+
+- 2026-09-29T09:39:59+00:00: Guarded exact-head merge completed through handoffctl run with
+  match-head 8b9b41c. Merge commit 47329e35 created; all required pre-merge checks and independent
+  review were green. Post-merge assurance is now pending.
