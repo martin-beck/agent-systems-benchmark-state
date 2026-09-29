@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 298,
+  "task_revision": 299,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T01:32:05+00:00",
+  "updated_at": "2026-09-29T01:32:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -1177,3 +1177,6 @@ public credential/socket paths, or weakening fail-closed gates.
   coordinator taking over protected merge transition.
 
 - 2026-09-29T01:32:05+00:00: Claimed by coordinator-ar1505.
+
+- 2026-09-29T01:32:18+00:00: Recorded command exit 1; command argv SHA-256
+  0e9138bf47d88c343bce7d7ae1da6bba9b2d7ce543330ed1c2ec4ece054f4b3a.
