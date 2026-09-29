@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "checkpoint_commit": "df0e402f442468e43e06b7c1acb3c3667277fb75",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T16:25:34+00:00",
   "depends_on": [
     "AR-1304"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
-  "owner": "",
+  "owner": "coordinator-dev-seed-policy-20260929",
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Unsigned-development capacity fixture is complete and no longer depends on a reviewed seed digest: the validator accepts locally generated seeds for this explicit diagnostic profile, while signed/formal validation remains digest-pinned. v9 fixture repairs cover state layout, exact-head Git provenance, offline TLC, and self-contained JDK; bounded boot reached transient RC=0 and launched TLC.",
-  "task_revision": 593,
+  "task_revision": 594,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T16:15:31+00:00",
+  "updated_at": "2026-09-29T16:15:34+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1822,3 +1822,5 @@ must report `qualification_authorized: false`.
 
 - 2026-09-29T16:15:31+00:00: Full state suite after seed-policy change: PYTHONPATH=. uv run --frozen
   --offline pytest -q -> 200 passed, 86 subtests passed.
+
+- 2026-09-29T16:15:34+00:00: Claimed by coordinator-dev-seed-policy-20260929.

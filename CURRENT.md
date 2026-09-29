@@ -3,12 +3,17 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1308](tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Unsigned-development capacity fixture is complete and no longer depends on a reviewed seed digest: the validator accepts locally generated seeds for this explicit diagnostic profile, while signed/formal validation remains digest-pinned. v9 fixture repairs cover state layout, exact-head Git provenance, offline TLC, and self-contained JDK; bounded boot reached transient RC=0 and launched TLC. | Continue development qualification with any locally generated disposable seed and record qualification_authorized=false. Treat AR-1464/AR-1465 as formal-only archival work; do not block development or customer-facing mock/integration work on their seed. Formal/publication qualification remains a separate optional path requiring its own reviewed inputs. | coordinator-dev-seed-policy-20260929 |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1305](tasks/AR-1305-image-native-user-session.md): Image-native user-session support | Fresh immutable image v2 is reviewed for development use: base/package/result digests are recorded and a bounded network-disabled boot reaches user-session startup and FULL_EXHAUSTIVE_TRANSIENT_RC=0 without Transport endpoint failure. Development qualification does not depend on a reviewed seed digest; formal/publication qualification remains separate and optional. | Use any locally generated disposable seed with the explicit unsigned-development profile for further development tests. Do not block this AR on AR-1464/AR-1465 or a reviewed seed. If formal qualification is later authorized, open a new formal-only successor with its own reviewed-input contract. | - |
-| P0 | [AR-1308](tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Unsigned-development capacity fixture is complete and no longer depends on a reviewed seed digest: the validator accepts locally generated seeds for this explicit diagnostic profile, while signed/formal validation remains digest-pinned. v9 fixture repairs cover state layout, exact-head Git provenance, offline TLC, and self-contained JDK; bounded boot reached transient RC=0 and launched TLC. | Continue development qualification with any locally generated disposable seed and record qualification_authorized=false. Treat AR-1464/AR-1465 as formal-only archival work; do not block development or customer-facing mock/integration work on their seed. Formal/publication qualification remains a separate optional path requiring its own reviewed inputs. | - |
 
 ## Blocked
 
