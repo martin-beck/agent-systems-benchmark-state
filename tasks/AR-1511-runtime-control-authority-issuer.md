@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T03:26:46+00:00",
+  "updated_at": "2026-09-29T03:27:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
@@ -140,3 +140,6 @@ production authority, or weakening fail-closed/native/formal gates.
 
 - 2026-09-29T03:26:46+00:00: Recorded command exit 1; command argv SHA-256
   5d2fa3064369b66ae32c80132b1c61d7da582f5ec042c2a64f6ab9f002e2fd4d.
+
+- 2026-09-29T03:27:07+00:00: Recorded command exit 0; command argv SHA-256
+  af534639c3c39c31b189af38674a35ff1cd70138179487f1d660e9c22a29f510.
