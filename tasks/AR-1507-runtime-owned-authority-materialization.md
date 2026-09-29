@@ -14,18 +14,18 @@
   ],
   "id": "AR-1507",
   "next_action": "Promote after dependency verification; define and implement the runtime-owned authority materializer that maps authenticated bootstrap state to private roots, tools, policy, and opaque dispatch source.",
-  "observed_branch": "",
+  "observed_branch": "feature/ar-1507-runtime-owned-authority-materialization",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "f92c2e941913129d7db50480f71e8361a0d43a0c",
   "owner": "ar1507-authority-luna56",
   "plan": "../plans/AR-1507-runtime-owned-authority-materialization.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Materialize private runtime launch authority from authenticated AR-1505 bootstrap state without caller or synthetic authority.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Runtime-owned authority materialization",
-  "updated_at": "2026-09-29T02:10:57+00:00",
+  "updated_at": "2026-09-29T02:11:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1507-runtime-owned-authority-materialization"
 }
 ---
