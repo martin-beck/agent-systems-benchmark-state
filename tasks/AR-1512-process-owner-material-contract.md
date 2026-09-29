@@ -8,7 +8,7 @@
     "AR-1484"
   ],
   "id": "AR-1512",
-  "next_action": "Create clean isolated worktree from protected main f92c2e941913129d7db50480f71e8361a0d43a0c; audit ASB owner/enrollment/issuer/CLI contracts before implementation.",
+  "next_action": "Implement owner-side material contract/store and ordinary runtime caller from clean protected-main worktree.",
   "observed_branch": "feature/ar-1512-process-owner-material-contract",
   "observed_dirty": 0,
   "observed_head": "f92c2e941913129d7db50480f71e8361a0d43a0c",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated process-owner material source and ordinary CLI/control caller needed to consume runtime authority.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Authenticated process-owner material contract",
-  "updated_at": "2026-09-29T05:04:46+00:00",
+  "updated_at": "2026-09-29T05:04:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1512-process-owner-material-contract"
 }
 ---
@@ -73,3 +73,8 @@ host data, synthetic authority, or weakening fail-closed/native/formal gates.
   227bd2b8f251398a28e02809a6a2e32716ea68be7d6a13f02381b8daf3223aa1.
 
 - 2026-09-29T05:04:46+00:00: Heartbeat by ar1512-process-owner-luna56.
+
+- 2026-09-29T05:04:58+00:00: Audit complete: protected main has digest-only RuntimeAuthorityRecord
+  and RuntimeBootstrapRecord; no non-test owner material source. RuntimeAuthorityInputs are internal
+  and the materialization path is absent outside test/internal seams. AR-1511 dirty worktree is not
+  reused.
