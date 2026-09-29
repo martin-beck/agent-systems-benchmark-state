@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 141,
+  "task_revision": 142,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T04:34:52+00:00",
+  "updated_at": "2026-09-29T04:38:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
@@ -484,3 +484,6 @@ production authority, or weakening fail-closed/native/formal gates.
   RuntimePlatformAuthorityMaterial::for_test is the sole material constructor. Existing control
   backend owns authenticated bootstrap records, so repair will add a provider-owned source backed by
   runtime/control state and an ordinary CLI/control composition path.
+
+- 2026-09-29T04:38:09+00:00: Recorded command exit 101; command argv SHA-256
+  295a35f99d4aa7024b5e0a35d1dd38654014d35e0d6da14a79231d3b8d7d50ba.
