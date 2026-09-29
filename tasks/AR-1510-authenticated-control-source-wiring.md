@@ -10,16 +10,16 @@
   "next_action": "Blocked: obtain and integrate a real authenticated platform authority provider plus production control-client bootstrap/CLI wiring; create a narrower successor when that source/capability contract is available.",
   "observed_branch": "feature/ar-1510-authenticated-control-source-wiring",
   "observed_dirty": 0,
-  "observed_head": "bf89a45ddd71af96e6d4b6954320e199e147f83e",
+  "observed_head": "beedef76e835009e82f85c785967a36286748377",
   "owner": "coordinator-ar1510-source-wiring-20260929",
   "plan": "../plans/AR-1510-authenticated-control-source-wiring.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated platform control source and production lifecycle wiring required by the authority-provider receipt.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Authenticated control source and production provider wiring",
-  "updated_at": "2026-09-29T21:17:53+00:00",
+  "updated_at": "2026-09-29T21:18:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1510-authenticated-control-source-wiring"
 }
 ---
