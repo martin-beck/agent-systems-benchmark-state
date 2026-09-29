@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Unsigned-development capacity fixture is complete and no longer depends on a reviewed seed digest: validator accepts locally generated seeds for this explicit diagnostic profile, while signed/formal validation remains digest-pinned. v9 repairs cover state layout, exact-head Git provenance, offline TLC, and self-contained JDK; bounded boot reached transient RC=0 and launched TLC. Full state suite after the policy change passes 200 tests and 86 subtests.",
-  "task_revision": 596,
+  "task_revision": 597,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T16:15:50+00:00",
+  "updated_at": "2026-09-29T16:36:58+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1831,3 +1831,6 @@ must report `qualification_authorized: false`.
 
 - 2026-09-29T16:15:50+00:00: Released with development seed dependency removed; only the separate
   formal/publication profile remains blocked by its own reviewed-input contract.
+
+- 2026-09-29T16:36:58+00:00: Portable-smoke development boot reached transient RC=0 but attestation
+  rejected its resolved input path; repairing fixture path layout before claiming guest evidence.
