@@ -224,12 +224,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1521](../tasks/AR-1521.md): AR-1307/1308 formal capacity repair implementation | coordinator-ar1521-formal-capacity-20260930 | Implement the reviewed successor contract that repairs the AR-1308 full-tier capacity failure while preserving AR-1307 qualification boundaries. | Promote and claim after AR-1530&#x27;s merged signed-capacity-8g profile is verified; implement the formal runner handoff without changing AR-1307 limits. |
-
 ### Blocked (78)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -508,3 +502,4 @@
 | P0 | [AR-1379](../tasks/AR-1379-live-dispatch-integration.md): Production live dispatch integration | Unclaimed | Integrate authenticated runtime live dispatch into asb run and sweep. | Monitor rerun of post-merge Rust workflow and remaining six workflows at exact main SHA 1e2c591; release only after all seven terminal SUCCESS. |
 | P0 | [AR-1380](../tasks/AR-1380-runtime-scheduler-composition.md): Runtime scheduler composition for live dispatch | Unclaimed | Compose runtime-owned live attempts for production run and sweep scheduling. | PR #276 force-updated to exact head ab4e60c on protected main 16bca1f9 after policy/platform stale-base failure. Monitor fresh exact-head checks; repair any new failures, merge only green, then verify seven post-merge workflows. |
 | P0 | [AR-1381](../tasks/AR-1381-live-cli-scheduler-wiring.md): Runtime-owned live CLI scheduler wiring | Unclaimed | Wire runtime-owned live scheduler authority into production asb run and sweep. | PR #277 force-updated to exact head 4ba3085 after provenance fixture repair. Monitor fresh exact-head checks; repair any new failures, merge only green, then verify seven post-merge workflows. |
+| P0 | [AR-1383](../tasks/AR-1383-runtime-authority-profile.md): Runtime-owned authority profile materialization | Unclaimed | Materialize runtime-owned live authority profile for authenticated execution. | Independent review complete; full runtime tests 114 passed/1 ignored, check and clippy -D warnings passed. Publish clean exact-head PR through handoffctl, then monitor required CI. |
