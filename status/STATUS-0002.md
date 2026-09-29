@@ -199,11 +199,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1513](../tasks/AR-1513-authenticated-lease-dispatch-bridge.md): Authenticated lease-to-live-dispatch bridge | Unclaimed | Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch. | Fresh review of cfed22b found P1 policy hash mismatch blocking realistic authenticated bridging, P1 ordinary lease bridge still unused by run/sweep, P2 alternate-egress collapsed to target, and hosted workspace coverage 88.03&#37; below 90&#37;. Repair before merge. |
+| P0 | [AR-1513](../tasks/AR-1513-authenticated-lease-dispatch-bridge.md): Authenticated lease-to-live-dispatch bridge | ar1513-repair4-luna56 | Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch. | Fresh review of cfed22b found P1 policy hash mismatch blocking realistic authenticated bridging, P1 ordinary lease bridge still unused by run/sweep, P2 alternate-egress collapsed to target, and hosted workspace coverage 88.03&#37; below 90&#37;. Repair before merge. |
 
 ### Blocked (81)
 
