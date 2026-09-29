@@ -217,11 +217,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1525](../tasks/AR-1525.md): Repair stale authority dependency graph | Unclaimed | Remove the obsolete AR-1370 dependency on superseded AR-1369 and preserve canonical authority evidence. | Promote after dependency verification; supersede stale AR-1370 and route remaining authority work through AR-1523. |
+| P1 | [AR-1525](../tasks/AR-1525.md): Repair stale authority dependency graph | coordinator-ar1525-authority-graph-20260930 | Remove the obsolete AR-1370 dependency on superseded AR-1369 and preserve canonical authority evidence. | Promote after dependency verification; supersede stale AR-1370 and route remaining authority work through AR-1523. |
 
 ### Blocked (78)
 
