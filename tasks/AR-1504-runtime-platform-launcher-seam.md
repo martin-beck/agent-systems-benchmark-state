@@ -20,11 +20,11 @@
   "plan": "../plans/AR-1504-runtime-platform-launcher-seam.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provide the real runtime/platform-owned launcher and authenticated session discovery for AR-1503.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Runtime/platform launcher seam",
-  "updated_at": "2026-09-28T22:55:03+00:00",
+  "updated_at": "2026-09-29T01:43:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1504-runtime-platform-launcher-seam"
 }
 ---
@@ -145,3 +145,7 @@ caller-built runtime inputs, or weakening native/credential/egress gates.
   authority/bootstrap protocol and then wire launcher to an owner-equivalent production path and CLI
   runtime entrypoint. Preserve this dirty discovery patch as review input; do not merge it
   standalone.
+
+- 2026-09-29T01:43:09+00:00: Successor AR-1505 delivered the missing authenticated platform
+  authority/bootstrap protocol and merged with full post-merge assurance; reopen only to close this
+  predecessor as superseded.
