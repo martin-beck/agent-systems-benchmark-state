@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Apply the remaining local hunks for response namespace wiring, resolver binding argument, fixtures, and tests without overlapping patches.",
+  "next_action": "Patch all eight resolver test call sites with binding arguments, then run focused tests and regenerate schemas.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 3,
   "observed_head": "95ac5453fe3a1fbc383afa2ce713a3dceff78437",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 198,
+  "task_revision": 199,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:27:39+00:00",
+  "updated_at": "2026-09-29T00:28:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -802,3 +802,11 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-29T00:27:39+00:00: Recorded command exit 101; command argv SHA-256
   77fe26680b8362d3af2ccb9eb342a2dc6362ae48953654d8bc8ee68ff5a99ce0.
+
+- 2026-09-29T00:28:05+00:00: Focused runtime test compile exited 101 after protocol wiring. Exact
+  compiler diagnostics: eight E0061 errors in live_service.rs tests at lines 3771, 3808, 3817, 3841,
+  3865, 3878, 3898, and 3925; RuntimeAuthorityInputResolver::from_authenticated_enrollment takes 5
+  arguments but each test supplied 4, missing RuntimeAuthorityInputBinding. No production compile
+  error remained. Corrective action: update every resolver test call with
+  RuntimeAuthorityInputBinding::from_inputs for the corresponding inputs, including mutated
+  generation and target cases.
