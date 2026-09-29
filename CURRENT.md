@@ -8,12 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1526](tasks/AR-1526.md): First-customer local/replay qualification | Qualify the merged ASB production-shaped local/mock and strict-replay customer path with sanitized evidence. | Promote after dependency verification; run the disposable first-customer-style local/mock and strict-replay qualification on exact protected main. | coordinator-ar1526-first-customer-20260930 |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1527](tasks/AR-1527.md): Normalize AR-1307/1308 development seed policy | Remove reviewed seed and digest prerequisites from the AR-1307/1308 development path while preserving separate formal and release evidence gates. | Promote after state review; audit AR-1307/1308 and every active dependent for development-only seed/digest prerequisites, then normalize their task and plan language without changing formal gates. | - |
+| P0 | [AR-1527](tasks/AR-1527.md): Normalize AR-1307/1308 development seed policy | Remove reviewed seed and digest prerequisites from the AR-1307/1308 development path while preserving separate formal and release evidence gates. | Promote after state review; audit AR-1307/1308 and every active dependent for development-only seed/digest prerequisites, then normalize their task and plan language without changing formal gates. | coordinator-ar1527-seed-policy-20260930 |
 
 ## Blocked
 
