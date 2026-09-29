@@ -10,7 +10,7 @@
   "id": "AR-1511",
   "next_action": "Run full asb-runtime/workspace gates after lifecycle repair; add generated docs/negative contract coverage, then inspect exact diff for independent review.",
   "observed_branch": "feature/ar-1511-runtime-control-authority-issuer",
-  "observed_dirty": 2,
+  "observed_dirty": 3,
   "observed_head": "1a26b02e2b6de485e930a0448d7fe5d34aed3061",
   "owner": "ar1511-authority-repair-luna56",
   "plan": "../plans/AR-1511-runtime-control-authority-issuer.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T03:48:14+00:00",
+  "updated_at": "2026-09-29T03:48:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
