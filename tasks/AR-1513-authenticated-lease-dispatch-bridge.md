@@ -10,7 +10,7 @@
   "id": "AR-1513",
   "next_action": "Fresh review of fd6e2ea: P1 distinct alternate-egress/allowlist binding remains mismatched, P1 ordinary CLI run/sweep still does not invoke owner-lease bridge, and hosted coverage is 87.99% (reviewer saw 89.87%) below 90%. Continue repair before merge.",
   "observed_branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
-  "observed_dirty": 5,
+  "observed_dirty": 7,
   "observed_head": "fd6e2ea58e066642ce441e40a75eb7a092d22139",
   "owner": "ar1513-repair4-luna56",
   "plan": "../plans/AR-1513-authenticated-lease-dispatch-bridge.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 300,
+  "task_revision": 301,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T08:36:06+00:00",
+  "updated_at": "2026-09-29T08:36:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
