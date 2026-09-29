@@ -1,14 +1,14 @@
 ---
 {
   "branch": "test/mockagents-executable-qualification",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "eb68fd8cba77735efccc168ebb18e8e56581bcfe",
   "claim_expires": "2026-09-29T14:52:20+00:00",
   "depends_on": [
     "AR-0888",
     "AR-0889"
   ],
   "id": "AR-0896",
-  "next_action": "Remain blocked until the complete pinned MockAgents hostile qualification is implemented and rerun: tool/tool-result, cancellation/backpressure, outbound-denial, repeated-clean-state, and executable arm64 QEMU cases with deterministic evidence. Do not select MockAgents or advance AR-0890.",
+  "next_action": "Keep AR-0890 blocked. Repair or replace the pinned MockAgents oversized-request behavior, then rerun amd64 hostile/repeat qualification and an approved network-none AArch64 QEMU lane; do not use host QEMU or claim support.",
   "observed_branch": "test/mockagents-executable-qualification",
   "observed_dirty": 0,
   "observed_head": "eb68fd8cba77735efccc168ebb18e8e56581bcfe",
@@ -17,10 +17,10 @@
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change.",
-  "task_revision": 70,
+  "summary": "Hostile harness repair is signed, but pinned MockAgents still accepts oversized requests and approved AArch64/network-none runner evidence is unavailable.",
+  "task_revision": 71,
   "title": "Qualify the pinned MockAgents executable",
-  "updated_at": "2026-09-29T12:52:20+00:00",
+  "updated_at": "2026-09-29T12:52:47+00:00",
   "worktree_key": "agent-systems-benchmark-mockagents-executable-qualification"
 }
 ---
@@ -245,3 +245,11 @@ synthetic fixture for black-box executable evidence.
   6ebedce167121da5f4a7b8e10619e3b5d52b8d0c2d288e6013a132604ea7d7fe.
 
 - 2026-09-29T12:52:20+00:00: Heartbeat by ar0896-mockagents-repair-luna56.
+
+- 2026-09-29T12:52:47+00:00: Signed SSH/DCO eb68fd8 adds real tool/tool-result ordering and orphan
+  rejection, cancellation usability, process-group cleanup, recursive semantic/SSE repeat hashing,
+  explicit platform selection, and fail-closed runner validation. Focused tests 11/11 and Ruff pass.
+  Pinned amd64 run fails closed because v0.5.0 accepts the bounded oversized request. Pinned arm64
+  preflight fails closed before execution because no explicit approved emulator runner is available.
+  No outbound-denial claim: host refusal is not network-none evidence; AR-1258 remains blocked on
+  binfmt fix-binary F/approved maintenance.
