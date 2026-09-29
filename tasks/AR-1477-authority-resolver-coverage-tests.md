@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1477-authority-resolver-coverage-tests",
   "checkpoint_commit": "67fa0d1a7ff90a9d3a38dadf7d69101e8c70d32a",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T12:39:00+00:00",
   "depends_on": [
     "AR-1200",
     "AR-1379",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1477-authority-resolver-coverage-tests",
   "observed_dirty": 0,
   "observed_head": "3b8b2001b7fe19f1fdd47dedfa2156eca8a8a6cb",
-  "owner": "",
+  "owner": "ar1477-topology-repair-luna56",
   "plan": "../plans/AR-1477-authority-resolver-coverage-tests.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Raise exact hosted coverage above the enforced 90 percent floor for the authority resolver.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Cover authority resolver behavior",
-  "updated_at": "2026-09-29T12:08:57+00:00",
+  "updated_at": "2026-09-29T12:09:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1477-authority-resolver-coverage-tests"
 }
 ---
@@ -253,3 +253,5 @@ the coverage floor remains unchanged.
 - 2026-09-29T12:08:57+00:00: Repair the protected-main topic-synchronization topology failure for
   merged coverage change 67fa0d1; preserve all other green evidence and rerun exact
   policy/post-merge gates without waiver.
+
+- 2026-09-29T12:09:00+00:00: Claimed by ar1477-topology-repair-luna56.
