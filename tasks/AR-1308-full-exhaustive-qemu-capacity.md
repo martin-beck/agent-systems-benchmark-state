@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Prepared signed capacity passes image, 64 GiB overlay, exact ab485f767 source/tree, JDK/TLC/model and canonical lock; preflight fails only on host SwapFree below 1 GiB and unavailable reviewed seed b3383756...ece4b28.",
-  "task_revision": 568,
+  "task_revision": 569,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T13:10:39+00:00",
+  "updated_at": "2026-09-29T13:15:33+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1735,3 +1735,7 @@ must report `qualification_authorized: false`.
 
 - 2026-09-29T13:10:39+00:00: Released blocked: host swap capacity is sufficient and durably
   recorded; exact reviewed seed b3383756...ece4b28 remains the sole outstanding input.
+
+- 2026-09-29T13:15:33+00:00: Coordinator revalidated host capacity with two active 2 GiB dedicated
+  swap files; update stale summary to record the exact reviewed seed as the only remaining preflight
+  blocker.
