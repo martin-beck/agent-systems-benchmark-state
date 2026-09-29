@@ -87,7 +87,9 @@ def root_relative(path: Path) -> str:
     try:
         return str(path.resolve().relative_to(APPROVED_RUNTIME_ROOT))
     except ValueError as error:
-        raise ValueError("attestation path is outside /srv/data/projects") from error
+        raise ValueError(
+            f"attestation path is outside /srv/data/projects: {path} -> {path.resolve()}"
+        ) from error
 
 
 def read_manifest(path: Path) -> dict[str, str]:
