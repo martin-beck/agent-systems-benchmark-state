@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 203,
+  "task_revision": 204,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:29:44+00:00",
+  "updated_at": "2026-09-29T00:30:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -822,3 +822,6 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-29T00:29:44+00:00: Recorded command exit 0; command argv SHA-256
   abcfb654a484eaf262c30352536cf86ba00d01ba666eb3fc4b636c8ed7d1303d.
+
+- 2026-09-29T00:30:03+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
