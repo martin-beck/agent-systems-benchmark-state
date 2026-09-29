@@ -13,16 +13,16 @@
   "next_action": "Promote and claim this fresh AR-1329 successor, refresh an isolated worktree to protected main, audit the production run/sweep dispatch seam, and implement only through runtime-owned bridge inputs.",
   "observed_branch": "feature/ar-1367-ar1329-production-dispatch-integration",
   "observed_dirty": 0,
-  "observed_head": "5c4d5304e53d2cd9559999a00afd86cac28d29dc",
+  "observed_head": "bf89a45ddd71af96e6d4b6954320e199e147f83e",
   "owner": "coordinator-ar1367-production-dispatch-20260930",
   "plan": "../plans/AR-1367-ar1329-production-dispatch-integration.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Complete production asb run/sweep live-provider dispatch through runtime-owned authenticated acquisition and teardown.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "AR-1329 production dispatch integration",
-  "updated_at": "2026-09-29T22:25:28+00:00",
+  "updated_at": "2026-09-29T22:25:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1367-ar1329-production-dispatch-integration"
 }
 ---
