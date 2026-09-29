@@ -8,7 +8,7 @@
     "AR-1484"
   ],
   "id": "AR-1513",
-  "next_action": "Add exact lease dispatch lifecycle negatives and review API authority boundaries; then run full gates and commit signed DCO.",
+  "next_action": "Rerun serial workspace after updating CLI provenance hash; then run docs/formal/privacy gates and review exact diff.",
   "observed_branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
   "observed_dirty": 7,
   "observed_head": "f92c2e941913129d7db50480f71e8361a0d43a0c",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T05:40:51+00:00",
+  "updated_at": "2026-09-29T05:41:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -125,3 +125,9 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
 
 - 2026-09-29T05:40:38+00:00: Recorded command exit 0; command argv SHA-256
   9ff4e40d0a608a041abbfd1d435a9e4d565a2c8931e342870e1969854466c867.
+
+- 2026-09-29T05:41:00+00:00: Serial workspace cargo test reached all suites; one deterministic
+  provenance fixture failed only because crates/asb-cli/src/lib.rs changed. Updated
+  docs/examples/asb-cli-workflow-v1.provenance.json cli_source_sha256 to the exact new digest
+  d6dd51e5... and focused provenance test now passes. No product behavior failure observed; rerun
+  full workspace is required.
