@@ -199,17 +199,12 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-0514](../tasks/AR-0514-replay-openhands.md): Qualify OpenHands replay | coordinator | Qualify replay conformance for OpenHands. | Wait for AR-0521 to publish and independently verify the signed content-addressed OpenHands environment bundle, offline verifier, reproducible approved digest, and altered-input rejection; then reclaim AR-0514 for native replay requalification. |
 | P0 | [AR-0521](../tasks/AR-0521-openhands-environment-pin.md): Reproduce and pin the OpenHands replay environment | ar0521-environment-pin-luna56 | Repair OpenHands replay environment provenance and reproducibility. | Use the recorded AR-0514 failure evidence to define an immutable, reproducible OpenHands environment bundle and verifier; AR-0514 remains blocked until this evidence is independently verified. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0514](../tasks/AR-0514-replay-openhands.md): Qualify OpenHands replay | Unclaimed | Qualify replay conformance for OpenHands. | Wait for AR-0521 to publish and independently verify the signed content-addressed OpenHands environment bundle, offline verifier, reproducible approved digest, and altered-input rejection; then reclaim AR-0514 for native replay requalification. |
 
 ### Blocked (80)
 
