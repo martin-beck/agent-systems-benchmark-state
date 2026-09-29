@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair ASB development-runtime reconciliation between digest-only enrollment and helper invocation.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Reconciled development auth handoff runtime",
-  "updated_at": "2026-09-29T13:53:51+00:00",
+  "updated_at": "2026-09-29T13:54:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1514-runtime-auth-reconciliation"
 }
 ---
@@ -80,3 +80,6 @@ side of that repair.
 
 - 2026-09-29T13:53:51+00:00: Recorded command exit 0; command argv SHA-256
   7c730eec3ea71bd24ffc5a9255bf7f542481bf601dba6c72bed6e00f6c2fab3c.
+
+- 2026-09-29T13:54:18+00:00: Recorded command exit 0; command argv SHA-256
+  28358b8048b4bb42bab1e7207a4a518f3d4ff0440c49f39ac36d99fbcd1c0854.
