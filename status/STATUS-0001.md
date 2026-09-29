@@ -14,11 +14,11 @@
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 80 |
-| **Planned** | Defined work awaiting promotion or dependencies | 47 |
+| **Planned** | Defined work awaiting promotion or dependencies | 46 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 396 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
-| **Superseded** | Replaced by another AR | 27 |
+| **Superseded** | Replaced by another AR | 28 |
 
 ## Dependency graph
 
@@ -405,7 +405,7 @@ flowchart LR
         AR_1306["AR-1306 - Done"]:::status_done
         AR_1307["AR-1307 - Blocked"]:::status_blocked
         AR_1308["AR-1308 - Blocked"]:::status_blocked
-        AR_1309["AR-1309 - Planned"]:::status_planned
+        AR_1309["AR-1309 - Superseded"]:::status_superseded
         AR_1310["AR-1310 - Done"]:::status_done
         AR_1311["AR-1311 - Done"]:::status_done
         AR_1312["AR-1312 - Done"]:::status_done
