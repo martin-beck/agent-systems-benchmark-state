@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1310](../tasks/AR-1310-provider-capture-campaign.md) | [AR-1060](../tasks/AR-1060-authenticated-control-endpoint-handoff.md), [AR-1151](../tasks/AR-1151.md) | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md), [AR-1319](../tasks/AR-1319-authenticated-agent-catalog-entry-contract.md) |
 | [AR-1311](../tasks/AR-1311-planned-task-metadata-schema-repair.md) | None | None |
 | [AR-1312](../tasks/AR-1312-post-merge-coverage-floor.md) | None | None |
 | [AR-1313](../tasks/AR-1313-historical-dco-909078c-repair.md) | None | None |
@@ -196,11 +197,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1511](../tasks/AR-1511-runtime-control-authority-issuer.md): Runtime/control authority issuer and capability source | Unclaimed | Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch. | Promote after AR-1510 blocker evidence is reconciled; implement the runtime/control authority issuer and capability contract from protected main. |
+| P0 | [AR-1511](../tasks/AR-1511-runtime-control-authority-issuer.md): Runtime/control authority issuer and capability source | ar1511-authority-issuer-luna56 | Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch. | Promote after AR-1510 blocker evidence is reconciled; implement the runtime/control authority issuer and capability contract from protected main. |
 
 ### Blocked (79)
 
@@ -495,4 +496,3 @@
 | P0 | [AR-1431](../tasks/AR-1431-protected-main-stale-base-repair.md): Protected-main stale-base merge requalification repair | Unclaimed | Prevent stale-base sequential merges from passing review but failing protected-main merge-tree policy. | Monitor seven post-merge workflows for exact merge ed907603; release AR-1431 only after all seven terminal success, then coordinate AR-1216 release. |
 | P0 | [AR-1432](../tasks/AR-1432-local-openrouter-execution-bridge.md): Local OpenRouter execution bridge | Unclaimed | Qualify credential-free OpenRouter user execution through a deterministic loopback mock without external-provider access. | Local deterministic mock-attempt backend is delivered by AR-1433 (PR #325, merge 2872a31f) and is no longer blocked for development qualification. Preserve this AR&#x27;s remaining optional production live-bridge boundary: do not synthesize LiveProviderAttempt or weaken ProviderEgressTarget; runtime-owned relay/backend acquisition remains separately fail-closed. |
 | P0 | [AR-1433](../tasks/AR-1433-runtime-mock-attempt-backend.md): Runtime mock-attempt backend | Unclaimed | Add an approved runtime mock-attempt backend for deterministic local run and sweep qualification. | Done: signed+DCO PR #325 merged as 2872a31f with all seven exact-main workflows green and post-merge local-mock verification complete. Preserve AR-1432&#x27;s separate optional production live-bridge blocker. |
-| P0 | [AR-1434](../tasks/AR-1434-runtime-local-mock-attempt-adapter.md): Runtime local mock-attempt adapter | Unclaimed | Add an approved runtime mock-attempt adapter for deterministic local run and sweep qualification. | Monitor exact merge 4736db727b13140364b8acd32cf77b7b375eeb17 until all seven post-merge workflows are terminal success: Fault assurance, Formal assurance, Repository quality, Emulated aarch64 portability, Rust verification, Hosted portability and native qualification, Huawei MIT source headers. Then run exact-main reconciliation and release only with durable evidence. |

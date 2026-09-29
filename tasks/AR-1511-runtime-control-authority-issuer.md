@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1511-runtime-control-authority-issuer",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T05:07:26+00:00",
   "depends_on": [
     "AR-1502",
     "AR-1484"
@@ -12,15 +12,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "ar1511-authority-issuer-luna56",
   "plan": "../plans/AR-1511-runtime-control-authority-issuer.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T03:07:20+00:00",
+  "updated_at": "2026-09-29T03:07:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
@@ -59,3 +59,5 @@ production authority, or weakening fail-closed/native/formal gates.
 
 - 2026-09-29T03:07:20+00:00: AR-1510 blocker evidence reconciled; promote the prerequisite authority
   issuer/capability source before consumer wiring.
+
+- 2026-09-29T03:07:26+00:00: Claimed by ar1511-authority-issuer-luna56.
