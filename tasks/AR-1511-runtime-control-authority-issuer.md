@@ -10,7 +10,7 @@
   "id": "AR-1511",
   "next_action": "Repair production RuntimeControlBootstrap dispatch wiring and unify control-issued cancellation fence; add negative tests, then validate and request independent exact-head review.",
   "observed_branch": "feature/ar-1511-runtime-control-authority-issuer",
-  "observed_dirty": 2,
+  "observed_dirty": 3,
   "observed_head": "ac9306453dc97a100a57befcba0c8456b67a23db",
   "owner": "ar1511-final-repair-luna56",
   "plan": "../plans/AR-1511-runtime-control-authority-issuer.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 113,
+  "task_revision": 114,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T04:13:44+00:00",
+  "updated_at": "2026-09-29T04:13:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
