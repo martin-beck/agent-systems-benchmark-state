@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1305-image-native-user-session",
   "checkpoint_commit": "00a47726683609b7fef8ea5738fed5a3692fac29",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T17:58:19+00:00",
   "depends_on": [
     "AR-1302"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "00a47726683609b7fef8ea5738fed5a3692fac29",
-  "owner": "",
+  "owner": "coordinator-ar1305-devtest-20260929b",
   "plan": "../plans/AR-1305.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Image v2 remains reviewed for development use, but the fresh generated-seed smoke was inconclusive: initial seed argument order caused userdata to be ignored, and the corrected run booted without executing runcmd. No formal evidence is claimed.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Image-native user-session support",
-  "updated_at": "2026-09-29T16:57:33+00:00",
+  "updated_at": "2026-09-29T16:58:19+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1305-image-native-user-session"
 }
 ---
@@ -296,3 +296,5 @@ limits and fail-closed behavior remain unchanged.
 
 - 2026-09-29T16:57:33+00:00: Released ownerless after bounded diagnostic; next action is the
   cloud-init/QEMU fixture repair recorded above.
+
+- 2026-09-29T16:58:19+00:00: Claimed by coordinator-ar1305-devtest-20260929b.
