@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
-  "checkpoint_commit": "c8a0c83a7c0d3a7b6bfa2bcbb9bc80f95c60e7bd",
+  "checkpoint_commit": "c8a0c83a79f91bdf963daa6785be3157af790953",
   "claim_expires": "2026-09-29T18:50:44+00:00",
   "depends_on": [
     "AR-1304"
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Development fixture path defect repaired and focused tests pass, but portable-smoke still fails closed at TLC JVM startup with pthread_create EAGAIN (host runner capacity), before attestation. No seed-digest blocker remains and no formal qualification is claimed.",
-  "task_revision": 615,
+  "task_revision": 616,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T17:27:03+00:00",
+  "updated_at": "2026-09-29T17:27:24+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1891,3 +1891,7 @@ must report `qualification_authorized: false`.
   error disappeared; the next diagnostic failed only at JVM thread creation EAGAIN even with reduced
   diagnostic workers/heap. Full state suite remains to be rerun after source change; retain this as
   a runner-capacity blocker, not a seed blocker.
+
+- 2026-09-29T17:27:24+00:00: Corrected the durable checkpoint to the full source commit
+  c8a0c83a79f91bdf963daa6785be3157af790953; previous abbreviated metadata was invalid and is
+  repaired.
