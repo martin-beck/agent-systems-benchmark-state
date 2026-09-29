@@ -3,7 +3,9 @@
   "branch": "feature/ar-1510-authenticated-control-source-wiring",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1505"],
+  "depends_on": [
+    "AR-1505"
+  ],
   "id": "AR-1510",
   "next_action": "Promote after the AR-1509 blocker evidence is reconciled; implement and verify an authenticated platform control source and production runtime wiring from protected main.",
   "observed_branch": "",
@@ -13,11 +15,11 @@
   "plan": "../plans/AR-1510-authenticated-control-source-wiring.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Provide the authenticated platform control source and production lifecycle wiring required by the authority-provider receipt.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Authenticated control source and production provider wiring",
-  "updated_at": "2026-09-29T02:55:00+00:00",
+  "updated_at": "2026-09-29T02:58:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1510-authenticated-control-source-wiring"
 }
 ---
@@ -55,3 +57,6 @@ test-only façade publication, or weakening native/formal/privacy gates.
   unmerged commits as evidence only; start from protected main.
   AR-1509 remains a blocked audit rather than a prerequisite; this successor
   starts from the protected AR-1505 merge and owns the missing boundary.
+
+- 2026-09-29T02:58:10+00:00: AR-1509 blocker evidence reconciled; successor starts from protected
+  AR-1505 and owns authenticated control-source production wiring.
