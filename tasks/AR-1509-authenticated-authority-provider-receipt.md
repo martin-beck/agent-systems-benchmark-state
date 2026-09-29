@@ -13,7 +13,7 @@
     "AR-1505"
   ],
   "id": "AR-1509",
-  "next_action": "Repair audit: focused test initially failed because preserved dirty diff left a stale test-only binding field; patched test fixture to use the receipt validator. Next rerun focused gate, then assess production-callsite/authenticated-source blocker.",
+  "next_action": "Blocked: implement a real runtime/control platform-authority adapter that obtains credential/enrollment/private roots from authenticated control state, emits a control-authenticated receipt, wires materialize_provisioner into live run/sweep, and rechecks restart/revocation/expiry at transitions; preserve this worktree for successor AR.",
   "observed_branch": "feature/ar-1509-authenticated-authority-provider-receipt",
   "observed_dirty": 1,
   "observed_head": "e437261f6fed268956cd436e06beb117549611ac",
@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Replace the AR-1508 test fa\u00e7ade with an authenticated production authority-provider receipt and lifecycle fence.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Authenticated authority-provider receipt",
-  "updated_at": "2026-09-29T02:53:54+00:00",
+  "updated_at": "2026-09-29T02:54:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1509-authenticated-authority-provider-receipt"
 }
 ---
@@ -162,3 +162,16 @@ mock production authority, or weakening formal/privacy/native gates.
 
 - 2026-09-29T02:53:54+00:00: Recorded command exit 0; command argv SHA-256
   f70b770accb32a5a6b26c6d605e740acdffc8d3c0a4276fe79d38fa273bf3431.
+
+- 2026-09-29T02:54:15+00:00: Focused gate now passes: cargo test --locked -p asb-runtime
+  live_service --lib => 53 passed, 0 failed, 103 filtered. git diff --check passes; preserved branch
+  remains e437261 atop protected f92c2e941913129d7db50480f71e8361a0d43a0c with dirty
+  live_service.rs. Blocker evidence: rg shows
+  RuntimePlatformAuthorityProviderHandle::from_authenticated_material only at definition and test
+  fixture line 3101; RuntimePlatformAuthorityMaterial::for_test is cfg(test) at line 589 and all
+  material constructions are test-only. authority_material_receipt() synthesizes binding/material
+  digests from local inputs, so receipt is self-attestation; no independent control
+  signature/receipt verifier or production provider callsite exists. Lifecycle cancel fences local
+  handle/resolver only after test-injected material; restart/revocation source is not wired into
+  scheduler/attempt transitions. Do not publish façade; successor needs authenticated source
+  contract and production wiring.

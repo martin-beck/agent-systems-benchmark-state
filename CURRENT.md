@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1509](tasks/AR-1509-authenticated-authority-provider-receipt.md): Authenticated authority-provider receipt | Replace the AR-1508 test façade with an authenticated production authority-provider receipt and lifecycle fence. | Repair audit: focused test initially failed because preserved dirty diff left a stale test-only binding field; patched test fixture to use the receipt validator. Next rerun focused gate, then assess production-callsite/authenticated-source blocker. | ar1509-repair-luna56 |
+| P0 | [AR-1509](tasks/AR-1509-authenticated-authority-provider-receipt.md): Authenticated authority-provider receipt | Replace the AR-1508 test façade with an authenticated production authority-provider receipt and lifecycle fence. | Blocked: implement a real runtime/control platform-authority adapter that obtains credential/enrollment/private roots from authenticated control state, emits a control-authenticated receipt, wires materialize_provisioner into live run/sweep, and rechecks restart/revocation/expiry at transitions; preserve this worktree for successor AR. | ar1509-repair-luna56 |
 
 ## Blocked
 
