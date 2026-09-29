@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1524](tasks/AR-1524.md): Repair live-dispatch dependency graph | Repair the stale AR-1374/1375 dependency cycle and make AR-1523 the canonical live-dispatch successor. | Promote after dependency verification; supersede the stale AR-1375 cycle and route AR-1374 to AR-1523 without changing product code. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -110,7 +116,6 @@ Never edit this file directly.
 | P0 | [AR-1375](tasks/AR-1375-live-control-dispatch-source.md): Runtime-owned live control dispatch source | Supply authenticated runtime control receipts to production live dispatch. | Wait for AR-1374 blocker resolution, then implement the runtime-owned authenticated control adapter for CLI live dispatch. | - |
 | P0 | [AR-1521](tasks/AR-1521.md): AR-1307/1308 formal capacity repair implementation | Implement the reviewed successor contract that repairs the AR-1308 full-tier capacity failure while preserving AR-1307 qualification boundaries. | Remain planned until AR-1309 selects and records the formal capacity or model-reduction contract; then implement that contract without changing AR-1307 limits. | - |
 | P0 | [AR-1522](tasks/AR-1522.md): AR-1307/1308 formal qualification rerun | Run and independently verify the repaired AR-1307/1308 full-tier qualification, or leave a truthful classified blocker. | Remain planned until AR-1521 is merged and its exact-head CI evidence is green; then run the one authorized terminal qualification attempt. | - |
-| P0 | [AR-1524](tasks/AR-1524.md): Repair live-dispatch dependency graph | Repair the stale AR-1374/1375 dependency cycle and make AR-1523 the canonical live-dispatch successor. | Promote after dependency verification; supersede the stale AR-1375 cycle and route AR-1374 to AR-1523 without changing product code. | - |
 | P1 | [AR-0808](tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. | - |
 | P1 | [AR-0809](tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. | - |
 | P1 | [AR-0810](tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project's GitHub Pages site. | - |
