@@ -7,7 +7,7 @@
     "AR-1304"
   ],
   "id": "AR-1308",
-  "next_action": "Remain blocked pending AR-1309 capacity/model decision; development uses generated unsigned seeds and claims no formal qualification.",
+  "next_action": "Remain blocked pending AR-1529 capacity/model decision; development uses generated unsigned seeds and claims no formal qualification.",
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "d6e175abe060e6408977884c9c06c69a3a738b5b",
