@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1508-platform-owned-authority-provider",
   "checkpoint_commit": "5344809cfe4f8f8b1a4bd734b606c347f693c349",
-  "claim_expires": "2026-09-29T13:16:28+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1473",
     "AR-1474",
@@ -17,15 +17,15 @@
   "observed_branch": "feature/ar-1508-platform-owned-authority-provider",
   "observed_dirty": 0,
   "observed_head": "5344809cfe4f8f8b1a4bd734b606c347f693c349",
-  "owner": "ar1508-integration-repair-luna56",
+  "owner": "",
   "plan": "../plans/AR-1508-platform-owned-authority-provider.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material.",
-  "task_revision": 136,
+  "task_revision": 137,
   "title": "Platform-owned authority provider",
-  "updated_at": "2026-09-29T11:33:40+00:00",
+  "updated_at": "2026-09-29T11:34:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1508-platform-owned-authority-provider"
 }
 ---
@@ -480,3 +480,7 @@ fixed-path authority, weakening formal/privacy/native gates.
 
 - 2026-09-29T11:33:40+00:00: Recorded command exit 0; command argv SHA-256
   78202f4806e4b9bc87160ff23cc0ebc3782019ed08cfa0677de2f41e9f50e58d.
+
+- 2026-09-29T11:34:23+00:00: Independent review rejected 5344809 with P1 production-provider absence
+  and missing expiry/revocation fencing. Start a new repair worker on the same AR; do not publish or
+  merge.
