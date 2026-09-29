@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 282,
+  "task_revision": 283,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T01:16:31+00:00",
+  "updated_at": "2026-09-29T01:16:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -1110,3 +1110,6 @@ public credential/socket paths, or weakening fail-closed gates.
   passed. Exactly two generated asb-cli profraw files (default_126752781326858929_0_3204435.profraw
   and ...3204436.profraw) were removed through handoffctl; product tree now contains only intended
   live_service.rs diff. Focused bootstrap tests remain 4/4 green.
+
+- 2026-09-29T01:16:42+00:00: Recorded command exit 0; command argv SHA-256
+  6ad2f71e2002b797aa7b80ba5f0bbcb7f925ac75dcc3b4c1d85e5543b906175f.
