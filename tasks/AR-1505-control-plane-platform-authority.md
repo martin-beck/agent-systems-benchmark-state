@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1505-control-plane-platform-authority",
   "checkpoint_commit": "c96be66213c9a09870e7e6b38784bc7910dff728",
-  "claim_expires": "2026-09-29T03:29:14+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1473",
     "AR-1474",
@@ -16,15 +16,15 @@
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 0,
   "observed_head": "c96be66213c9a09870e7e6b38784bc7910dff728",
-  "owner": "ar1505-repair-luna56",
+  "owner": "",
   "plan": "../plans/AR-1505-control-plane-platform-authority.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 296,
+  "task_revision": 297,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T01:31:06+00:00",
+  "updated_at": "2026-09-29T01:31:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -1172,3 +1172,6 @@ public credential/socket paths, or weakening fail-closed gates.
   reviews []; this is the project precedent. Conclusion: no authorized formal review submission is
   required here; durable independent review evidence suffices. No review was fabricated/submitted
   and no merge attempted.
+
+- 2026-09-29T01:31:59+00:00: Repair worker stopped after exact-head CI and independent review;
+  coordinator taking over protected merge transition.
