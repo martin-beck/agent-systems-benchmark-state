@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "checkpoint_commit": "df0e402f442468e43e06b7c1acb3c3667277fb75",
-  "claim_expires": "2026-09-29T12:31:12+00:00",
+  "claim_expires": "2026-09-29T14:04:31+00:00",
   "depends_on": [
     "AR-1304"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bounded signed preflight failed closed: prepared runner receipt and JDK/TLC/model are present, but host swap, image, overlay capacity, exact source tree, seed and admission lock are missing.",
-  "task_revision": 555,
+  "task_revision": 556,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T12:01:12+00:00",
+  "updated_at": "2026-09-29T12:04:31+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1688,3 +1688,5 @@ must report `qualification_authorized: false`.
   its 3G/3G formal contract.
 
 - 2026-09-29T12:01:12+00:00: Claimed by ar1308-capacity-repair-luna56.
+
+- 2026-09-29T12:04:31+00:00: Heartbeat by ar1308-capacity-repair-luna56.
