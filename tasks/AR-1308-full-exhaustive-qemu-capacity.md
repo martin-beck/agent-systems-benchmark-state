@@ -7,7 +7,7 @@
     "AR-1304"
   ],
   "id": "AR-1308",
-  "next_action": "Continue development qualification with any locally generated disposable seed and record qualification_authorized=false. Treat AR-1464/AR-1465 as formal-only archival work; do not block development or customer-facing mock/integration work on their seed. Formal/publication qualification remains a separate optional path requiring its own reviewed inputs.",
+  "next_action": "Repair the remaining portable-smoke path-resolution fixture defect so both output and preloaded TLC paths resolve under the guest bind root, rerun one bounded portable-smoke boot, and record PORTABLE_SMOKE_EVIDENCE_OK. Continue using locally generated seeds; reviewed seed digests are not a development prerequisite.",
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
@@ -16,10 +16,10 @@
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Unsigned-development capacity fixture is complete and no longer depends on a reviewed seed digest: validator accepts locally generated seeds for this explicit diagnostic profile, while signed/formal validation remains digest-pinned. v9 repairs cover state layout, exact-head Git provenance, offline TLC, and self-contained JDK; bounded boot reached transient RC=0 and launched TLC. Full state suite after the policy change passes 200 tests and 86 subtests.",
-  "task_revision": 598,
+  "summary": "Unsigned-development capacity and exact-head fixture remain repaired; generated-seed validation passes. Portable-smoke v14 reaches PORTABLE_SMOKE_TRANSIENT_RC=0 and powers off, but attest.py still rejects one resolved guest input path as outside /srv/data/projects, so no portable attestation is claimed yet. Full state suite remains 200 passed/86 subtests.",
+  "task_revision": 599,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T16:37:01+00:00",
+  "updated_at": "2026-09-29T16:37:13+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1836,3 +1836,7 @@ must report `qualification_authorized: false`.
   rejected its resolved input path; repairing fixture path layout before claiming guest evidence.
 
 - 2026-09-29T16:37:01+00:00: Claimed by coordinator-portable-attestation-v14.
+
+- 2026-09-29T16:37:13+00:00: Sanitized evidence:
+  /srv/data/projects/ar1308-development/diagnostic-portable-v14-summary.txt. Development-only
+  failure is path policy, not provider access, signing, or formal seed authority.
