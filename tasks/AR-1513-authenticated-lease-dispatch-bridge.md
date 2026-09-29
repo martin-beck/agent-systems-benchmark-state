@@ -10,7 +10,7 @@
   "id": "AR-1513",
   "next_action": "PR #383 is open at exact head be018d4; await independent review and all protected checks, then verify terminal merge/postmerge.",
   "observed_branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
-  "observed_dirty": 1,
+  "observed_dirty": 3,
   "observed_head": "be018d4f1159bde9b9725f085cb8959edf7cde4e",
   "owner": "ar1513-repair-luna56",
   "plan": "../plans/AR-1513-authenticated-lease-dispatch-bridge.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T06:01:00+00:00",
+  "updated_at": "2026-09-29T06:01:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
