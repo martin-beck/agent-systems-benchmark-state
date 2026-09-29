@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1530](tasks/AR-1530.md): State formal capacity profile for AR-1307/1308 | Implement the state-owned 8G/8G formal capacity profile selected by AR-1529 and route it to AR-1522. | Promote after dependency verification; implement the state-owned signed-capacity-8g validator/runner profile and its fail-closed tests without changing unsigned-development. | coordinator-ar1530-state-formal-capacity-20260930 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
