@@ -557,6 +557,7 @@ class TlcRunnerTests(unittest.TestCase):
             "uid: 1000",
             "mount, UUID=" + GUEST.DATA_UUID,
             "TLC_JAR_PATH=/srv/data/projects/tla2tools.jar",
+            "TLC_RUNTIME_ROOT=/srv/data/projects/.asb-tlc",
             "TLC_JAR_SHA256=936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
             "user-runtime-dir@1000.service",
             "user@1000.service",
