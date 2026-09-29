@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
-  "checkpoint_commit": "bde018c10b3b69252f9a5b8429f9cc277e44953d",
+  "checkpoint_commit": "109f5fad424cb5493e834a0dcec9c09f1aeeae54",
   "claim_expires": "2026-09-29T08:36:05+00:00",
   "depends_on": [
     "AR-1502",
     "AR-1484"
   ],
   "id": "AR-1513",
-  "next_action": "Repair P1 findings from independent exact-head review: bind enrollment identity/namespace/credential/relay/target, bind lease to dispatch source, and retain lifecycle fences after source consumption; then rerun review and protected gates.",
+  "next_action": "Independent exact-head review of 109f5fad, then protected CI; do not merge before separate approval.",
   "observed_branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
   "observed_dirty": 0,
   "observed_head": "109f5fad424cb5493e834a0dcec9c09f1aeeae54",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 112,
+  "task_revision": 113,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T06:36:05+00:00",
+  "updated_at": "2026-09-29T06:36:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -372,3 +372,14 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
   72af92f2f40f31c428b55b4e1dc7ae5af541642583f0c881108b86064db7ee8d.
 
 - 2026-09-29T06:36:05+00:00: Heartbeat by ar1513-repair2-luna56.
+
+- 2026-09-29T06:36:25+00:00: Second repair complete at exact signed head 109f5fad. Runtime owner
+  material now requires authenticated enrollment binding for owner, endpoint, namespace, session,
+  generation, expiry, restart/cancel/revoke/teardown fences, credential, target, alternate egress,
+  tool, lease/relay roots, and enrollment fingerprint; removed crate-private self-authenticated
+  from_runtime_authenticated production path. Live dispatch sources carry the enrollment fingerprint
+  and retain a shared lifecycle fence checked at every scheduler acquire, while
+  RuntimeControlBootstrap exposes the bootstrap->lease->source bridge. Added bounded private fields
+  and provider-free negative tests for forged bindings plus post-consumption fencing. Focused
+  runtime: 160 passed, 1 ignored; full locked workspace tests passed; focused clippy passed;
+  SSH-signed DCO commit and push confirmed. Independent review remains required.
