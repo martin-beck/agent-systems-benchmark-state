@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1514-runtime-auth-reconciliation",
   "checkpoint_commit": "a97dfb39c78478445180db0e38574c17db266700",
-  "claim_expires": "2026-09-29T15:50:24+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1499",
     "AR-1500"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1514-runtime-auth-reconciliation",
   "observed_dirty": 0,
   "observed_head": "a97dfb39c78478445180db0e38574c17db266700",
-  "owner": "ar1514-reconciliation-luna56",
+  "owner": "",
   "plan": "../plans/AR-1514-runtime-auth-reconciliation.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Repair ASB development-runtime reconciliation between digest-only enrollment and helper invocation.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Reconciled development auth handoff runtime",
-  "updated_at": "2026-09-29T13:57:43+00:00",
+  "updated_at": "2026-09-29T13:57:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1514-runtime-auth-reconciliation"
 }
 ---
@@ -104,3 +104,8 @@ side of that repair.
 - 2026-09-29T13:57:43+00:00: Published signed topic and opened PR #386. GitHub checks snapshot: AWQ
   shadow and Huawei SPDX checks passed; Rust, quality, fault, formal, portability, and
   credential-free checks pending. Merge and post-merge verification remain unproven.
+
+- 2026-09-29T13:57:54+00:00: Released while PR #386 hosted checks and independent review are
+  pending. Exact next action: wait for terminal checks, obtain convergent review, merge exact head
+  if green, then verify protected main and post-merge ASB runtime smoke; keep paired asb-tui AR-1323
+  qualification external.
