@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1477](tasks/AR-1477-authority-resolver-coverage-tests.md): Cover authority resolver behavior | Raise exact hosted coverage above the enforced 90 percent floor for the authority resolver. | Create a narrow protected-main topology repair successor for merge 67fa0d1; repository policy requires topic synchronization merge at tip. Preserve all six other post-merge results and do not waive policy. | ar1477-topology-repair-luna56 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -330,6 +324,7 @@ Never edit this file directly.
 | P0 | [AR-1474](tasks/AR-1474-runtime-authority-input-resolver.md): Runtime-owned authority-input resolver | Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority. | Release AR-1474 done; old PR coverage failure superseded by AR-1477 tests and AR-1478 topology repair. | - |
 | P0 | [AR-1475](tasks/AR-1475-asb-metrics-evidence-fixture-repair.md): Repair asb-metrics evidence fixture classification | Repair the deterministic ProbeRejected versus MalformedEvidence fixture failure blocking PR #345. | Release done after final reconcile; then rerun PR #345 exact-head validation. | - |
 | P0 | [AR-1476](tasks/AR-1476-workspace-coverage-floor-repair.md): Repair workspace coverage floor | Restore the enforced 90 percent workspace coverage floor blocking exact AR-1474 validation. | Rerun PR #345 exact-head validation against current protected main 1dada31c; no repair diff is required unless the current-base gate regresses. | - |
+| P0 | [AR-1477](tasks/AR-1477-authority-resolver-coverage-tests.md): Cover authority resolver behavior | Raise exact hosted coverage above the enforced 90 percent floor for the authority resolver. | Create a narrow protected-main topology repair successor for merge 67fa0d1; repository policy requires topic synchronization merge at tip. Preserve all six other post-merge results and do not waive policy. | - |
 | P0 | [AR-1478](tasks/AR-1478-topic-synchronization-topology-repair.md): Repair topic synchronization topology | Repair protected-main topic synchronization topology after AR-1477 merge policy failure. | Reconcile and doctor state; release AR-1478 done with complete merge and seven-workflow evidence. | - |
 | P0 | [AR-1479](tasks/AR-1479-rust-ci-flake-repair.md): Rust CI timing and state-root flake repair | Repair the unrelated Rust state-root collision and malformed-ready-marker timing flakes blocking AR-1420 exact-head CI. | Monitor exact-main post-merge workflows for 1015a461; after all seven green, release AR-1479 and requalify AR-1420 PR #350 head 2884508. | - |
 | P0 | [AR-1480](tasks/AR-1480-runtime-control-cli-composition.md): Runtime-control CLI composition | Compose authenticated runtime enrollment into opaque normal CLI run and sweep dispatch. | Run reconcile and doctor --live, then release AR-1480 done ownerless with complete merge/post-merge evidence. | - |

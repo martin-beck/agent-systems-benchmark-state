@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1477-authority-resolver-coverage-tests",
   "checkpoint_commit": "67fa0d1a7ff90a9d3a38dadf7d69101e8c70d32a",
-  "claim_expires": "2026-09-29T12:39:00+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1200",
     "AR-1379",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1477-authority-resolver-coverage-tests",
   "observed_dirty": 0,
   "observed_head": "3b8b2001b7fe19f1fdd47dedfa2156eca8a8a6cb",
-  "owner": "ar1477-topology-repair-luna56",
+  "owner": "",
   "plan": "../plans/AR-1477-authority-resolver-coverage-tests.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Raise exact hosted coverage above the enforced 90 percent floor for the authority resolver.",
-  "task_revision": 79,
+  "task_revision": 80,
   "title": "Cover authority resolver behavior",
-  "updated_at": "2026-09-29T12:11:26+00:00",
+  "updated_at": "2026-09-29T12:14:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1477-authority-resolver-coverage-tests"
 }
 ---
@@ -261,3 +261,11 @@ the coverage floor remains unchanged.
 
 - 2026-09-29T12:11:26+00:00: Recorded command exit 0; command argv SHA-256
   a6906a2c4eb88339538f386db11525bd0421945de99783fafaf3ab35f8a694c1.
+
+- 2026-09-29T12:14:55+00:00: Verified protected-main topology repair already merged by PR #348 as
+  fac11a22: exact parents 67fa0d1 and d1456b8, topic-tip sync at tip, empty product diff, policy
+  verifier passes. Current origin/main 47329e3 contains fac11a22. Preserved immutable failure
+  36297383090; PR #347 implementation checks and all six other post-merge results preserved. PR #348
+  had all 12 exact-head checks SUCCESS and all seven exact-main workflows SUCCESS (36298610650,
+  36298610655, 36298610658, 36298610671, 36298610685, 36298610690, 36298610696). No
+  product/provider/asb-tui changes.
