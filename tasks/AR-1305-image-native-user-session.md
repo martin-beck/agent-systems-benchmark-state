@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1305",
-  "next_action": "Bind this reviewed image only after the exact AR-1307 signed seed is recovered through AR-1465/AR-1464; rerun signed preflight and complete AR-1304 required-tier attestation. Keep AR-1305 open until exact signed inputs and full gates pass.",
+  "next_action": "Use any locally generated disposable seed with the explicit unsigned-development profile for further development tests. Do not block this AR on AR-1464/AR-1465 or a reviewed seed. If formal qualification is later authorized, open a new formal-only successor with its own reviewed-input contract.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "00a47726683609b7fef8ea5738fed5a3692fac29",
@@ -16,10 +16,10 @@
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Independent artifact review completed for fresh image v2: reviewed Ubuntu base SHA-256 289c24e8e1b73d491091eace032ad93a3b335b200d68109b9db451c82a3f4, staged dbus-user-session package SHA-256 e585b1694b854c3b75bfb39cc4022cafe7b14e44fd435433b613b8fb9919cb41, resulting qcow2 SHA-256 2fa6685e201f4f59398c28eac4178daafb701067b10ffdc486b9a00555857f4f. Bounded network-disabled boot reached FULL_EXHAUSTIVE_TRANSIENT_RC=0 without Transport endpoint failure. Formal required-tier evidence is not claimed.",
-  "task_revision": 61,
+  "summary": "Fresh immutable image v2 is reviewed for development use: base/package/result digests are recorded and a bounded network-disabled boot reaches user-session startup and FULL_EXHAUSTIVE_TRANSIENT_RC=0 without Transport endpoint failure. Development qualification does not depend on a reviewed seed digest; formal/publication qualification remains separate and optional.",
+  "task_revision": 62,
   "title": "Image-native user-session support",
-  "updated_at": "2026-09-29T16:12:47+00:00",
+  "updated_at": "2026-09-29T16:12:49+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1305-image-native-user-session"
 }
 ---
@@ -245,3 +245,6 @@ limits and fail-closed behavior remain unchanged.
   exact signed formal input recovery and required-tier gates.
 
 - 2026-09-29T16:12:47+00:00: Claimed by coordinator-dev-seed-policy-20260929.
+
+- 2026-09-29T16:12:49+00:00: Development seed policy applied consistently: AR-1305 no longer
+  requires a reviewed seed digest. No formal or production evidence is claimed.
