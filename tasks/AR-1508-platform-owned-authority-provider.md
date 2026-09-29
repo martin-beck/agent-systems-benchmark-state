@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1508-platform-owned-authority-provider",
   "checkpoint_commit": "06e91829123cb1498e566f595aa2e114ff5833f4",
-  "claim_expires": "2026-09-29T12:59:06+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1473",
     "AR-1474",
@@ -17,15 +17,15 @@
   "observed_branch": "feature/ar-1508-platform-owned-authority-provider",
   "observed_dirty": 0,
   "observed_head": "06e91829123cb1498e566f595aa2e114ff5833f4",
-  "owner": "ar1508-rebase-repair-luna56",
+  "owner": "",
   "plan": "../plans/AR-1508-platform-owned-authority-provider.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Platform-owned authority provider",
-  "updated_at": "2026-09-29T11:04:13+00:00",
+  "updated_at": "2026-09-29T11:04:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1508-platform-owned-authority-provider"
 }
 ---
@@ -286,3 +286,11 @@ fixed-path authority, weakening formal/privacy/native gates.
   cargo test --locked -p asb-runtime was run through handoffctl and failed with E0061 at
   live_service.rs:2015 (old three-argument caller API) and E0308 at live_service.rs:3346 (stale
   two-element fixture destructure). No push, PR update, merge, or hosted checks attempted.
+
+- 2026-09-29T11:04:30+00:00: Released for repair, not merged: rebased local branch onto protected
+  47329e35 at 06e91829123cb1498e566f595aa2e114ff5833f4. Exact cargo test --locked -p asb-runtime
+  failed at live_service.rs:2015 (materialize_runtime_owner still passes caller
+  RuntimeAuthorityInputs/state_path to provider-only API) and line 3346 (stale fixture arity);
+  public CLI bridge still exposes caller authority. No push, PR update, merge, or hosted checks.
+  Next worker must remove caller injection, update all callsites/tests, rerun independent exact-head
+  gates, then publish.
