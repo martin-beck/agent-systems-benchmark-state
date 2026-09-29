@@ -20,6 +20,6 @@
 6. Update AR-1307 and AR-1293 with durable evidence. Do not claim formal or
    release qualification from development fixtures.
 
-Dependencies: AR-1307. This repair must not modify handoffctl itself, require a
+Dependency: completed AR-1302. It repairs AR-1307's recorded failure and must not modify handoffctl itself, require a
 native ARM host, require a live provider, or introduce reviewed seed digests as
 a development prerequisite.

@@ -3,7 +3,7 @@
   "branch": "",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1307"],
+  "depends_on": ["AR-1302"],
   "id": "AR-1515",
   "next_action": "Promote after AR-1307; reproduce, repair, and rerun gates.",
   "observed_branch": "",

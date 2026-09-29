@@ -3,7 +3,7 @@
   "branch": "",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1308"],
+  "depends_on": ["AR-1304"],
   "id": "AR-1516",
   "next_action": "Promote after AR-1308 terminates; repair fixture/evidence, rerun.",
   "observed_branch": "",

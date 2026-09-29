@@ -198,8 +198,8 @@
 | [AR-1512](../tasks/AR-1512-process-owner-material-contract.md) | [AR-1484](../tasks/AR-1484-runtime-control-owner-contract.md), [AR-1502](../tasks/AR-1502-runtime-bootstrap-authority.md) | None |
 | [AR-1513](../tasks/AR-1513-authenticated-lease-dispatch-bridge.md) | [AR-1484](../tasks/AR-1484-runtime-control-owner-contract.md), [AR-1502](../tasks/AR-1502-runtime-bootstrap-authority.md) | None |
 | [AR-1514](../tasks/AR-1514-runtime-auth-reconciliation.md) | [AR-1499](../tasks/AR-1499-development-credential-enrollment.md), [AR-1500](../tasks/AR-1500-development-credential-provider-fixture.md) | None |
-| [AR-1515](../tasks/AR-1515-ar1307-runner-ci-oom-repair.md) | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md) | None |
-| [AR-1516](../tasks/AR-1516-ar1308-qemu-fixture-evidence-repair.md) | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md) | None |
+| [AR-1515](../tasks/AR-1515-ar1307-runner-ci-oom-repair.md) | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md) | None |
+| [AR-1516](../tasks/AR-1516-ar1308-qemu-fixture-evidence-repair.md) | [AR-1304](../tasks/AR-1304-required-tier-qemu-runner.md) | None |
 
 ## Complete AR inventory
 

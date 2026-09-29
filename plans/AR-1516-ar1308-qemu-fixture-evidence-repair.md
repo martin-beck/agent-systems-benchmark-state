@@ -20,5 +20,5 @@
    to AR-1309; development evidence must remain labelled
    `qualification_authorized=false`.
 
-Dependencies: AR-1308. This AR must not require reviewed seed digests, a native
+Dependency: completed AR-1304. This AR repairs AR-1308's recorded failure and must not require reviewed seed digests, a native
 ARM host, a live provider, or changes to handoffctl.
