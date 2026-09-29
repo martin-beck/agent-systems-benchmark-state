@@ -230,11 +230,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1534](../tasks/AR-1534.md): Coordinator vendor integrity repair | Unclaimed | Coordinator-state AR-0022 has signed+DCO local implementation 24d1b1d with 1454-test, Ruff, format, and mypy gates green; no reviewed PR, hosted CI, or immutable release yet, so vendor integrity remains fail-closed. | Remain blocked pending coordinator-state AR-0022 reviewed PR, green exact-head hosted CI, and immutable v0.3.26 release. Then synchronize the exact vendor snapshot, rerun vendor verification and all ASB state gates, independently review the diff, and only then resume AR-1532/1533 qualification work. |
+| P0 | [AR-1534](../tasks/AR-1534.md): Coordinator vendor integrity repair | codex-asb-ar1534-v0349-sync-20260930 | Coordinator-state AR-0022 has signed+DCO local implementation 24d1b1d with 1454-test, Ruff, format, and mypy gates green; no reviewed PR, hosted CI, or immutable release yet, so vendor integrity remains fail-closed. | Remain blocked pending coordinator-state AR-0022 reviewed PR, green exact-head hosted CI, and immutable v0.3.26 release. Then synchronize the exact vendor snapshot, rerun vendor verification and all ASB state gates, independently review the diff, and only then resume AR-1532/1533 qualification work. |
 
 ### Blocked (82)
 
