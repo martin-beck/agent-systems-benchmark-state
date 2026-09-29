@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1512](tasks/AR-1512-process-owner-material-contract.md): Authenticated process-owner material contract | Provide the authenticated process-owner material source and ordinary CLI/control caller needed to consume runtime authority. | Inspect exact diff and commit the provider-free contract/store; parent must create successor for authenticated lease-to-LiveProviderRuntimeHandle bridge before claiming live CLI run/sweep. | ar1512-process-owner-luna56 |
+| P0 | [AR-1512](tasks/AR-1512-process-owner-material-contract.md): Authenticated process-owner material contract | Provide the authenticated process-owner material source and ordinary CLI/control caller needed to consume runtime authority. | Independent exact-head review of a4064abf; create successor for authenticated lease-to-LiveProviderRuntimeHandle bridge, then publish exact-head PR/CI if review accepts provider-free boundary. | ar1512-process-owner-luna56 |
 
 ## Blocked
 

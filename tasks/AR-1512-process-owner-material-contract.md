@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1512-process-owner-material-contract",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "a4064abf22b73096ebb26df9bca8d1dc28a7d81f",
   "claim_expires": "2026-09-29T07:10:39+00:00",
   "depends_on": [
     "AR-1502",
     "AR-1484"
   ],
   "id": "AR-1512",
-  "next_action": "Inspect exact diff and commit the provider-free contract/store; parent must create successor for authenticated lease-to-LiveProviderRuntimeHandle bridge before claiming live CLI run/sweep.",
+  "next_action": "Independent exact-head review of a4064abf; create successor for authenticated lease-to-LiveProviderRuntimeHandle bridge, then publish exact-head PR/CI if review accepts provider-free boundary.",
   "observed_branch": "feature/ar-1512-process-owner-material-contract",
   "observed_dirty": 0,
   "observed_head": "a4064abf22b73096ebb26df9bca8d1dc28a7d81f",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated process-owner material source and ordinary CLI/control caller needed to consume runtime authority.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Authenticated process-owner material contract",
-  "updated_at": "2026-09-29T05:20:54+00:00",
+  "updated_at": "2026-09-29T05:21:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1512-process-owner-material-contract"
 }
 ---
@@ -170,3 +170,8 @@ host data, synthetic authority, or weakening fail-closed/native/formal gates.
 
 - 2026-09-29T05:20:40+00:00: Recorded command exit 0; command argv SHA-256
   098c5f8f0cc65de3ffef5239475be95453164710e11616a99e5a9e4dd0074e6f.
+
+- 2026-09-29T05:21:12+00:00: Provider-free contract/store committed cleanly at exact head
+  a4064abf22b73096ebb26df9bca8d1dc28a7d81f with SSH signature and matching DCO Signed-off-by.
+  Product worktree is clean. Focused, serial workspace, clippy, docs, fmt, formal model, and focused
+  source privacy gates pass; broad gitleaks only found ignored target artifacts.
