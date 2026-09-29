@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Run changed-package clippy/docs/full workspace gates, then independently review complete working diff and create signed DCO repair commit on existing branch.",
+  "next_action": "Add scoped too-many-arguments allowance to the existing launch factory extension point, rerun clippy, then docs/full gates.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 2,
   "observed_head": "baa13ea675de2160dcf58f69b106e255f2c3d8de",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 153,
+  "task_revision": 154,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:07:23+00:00",
+  "updated_at": "2026-09-29T00:07:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -614,3 +614,10 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-29T00:07:23+00:00: Recorded command exit 101; command argv SHA-256
   7fc852536b8fb5ccc5f554968a228534cdc199e2aba684765a68f5bc9084a7b6.
+
+- 2026-09-29T00:07:51+00:00: 2026-09-29T00:03:40Z: Exact changed-package clippy handoffctl run cargo
+  clippy --locked -p asb-control -p asb-runtime -p asb-cli --all-targets -- -D warnings exited 101.
+  stderr: launch_factory.rs:562 function LiveLaunchFactory::acquire has too many arguments (8/7),
+  clippy::too-many-arguments under -D warnings. No other diagnostics. Corrective action: retain this
+  explicit runtime extension point with a narrow function-level allowance, then rerun unchanged
+  clippy.
