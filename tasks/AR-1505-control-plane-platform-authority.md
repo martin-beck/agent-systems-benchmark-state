@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Capture terminal local check_coverage.py result; clean generated profraw artifacts; if line floor passes, run changed-package gates/full gates, signed DCO commit and push same branch, then rerun exact-head policy.",
+  "next_action": "Run changed-package check/clippy and full workspace gates on the 61-line focused coverage patch; then independently review, sign DCO commit, push same branch, rerun exact-head policy and request fresh review.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 1,
   "observed_head": "da5e2a916b66de9f31f2c5bcccd1f59f7b3321d2",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 281,
+  "task_revision": 282,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T01:16:18+00:00",
+  "updated_at": "2026-09-29T01:16:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -1103,3 +1103,10 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-29T01:16:05+00:00: Recorded command exit 0; command argv SHA-256
   8b3ad38ae2863e422106d4f6c03a8d41a9f3a4ff4295b6325cbd29786ca479b7.
+
+- 2026-09-29T01:16:31+00:00: Serial local tools/quality/check_coverage.py completed exit 0 through
+  handoffctl. Ignored log target/ar1505-coverage/quality-followup.log reports workspace TOTAL 105914
+  regions 88.51 percent and lines 70046 covered of 76724, 90.47 percent; all critical package floors
+  passed. Exactly two generated asb-cli profraw files (default_126752781326858929_0_3204435.profraw
+  and ...3204436.profraw) were removed through handoffctl; product tree now contains only intended
+  live_service.rs diff. Focused bootstrap tests remain 4/4 green.

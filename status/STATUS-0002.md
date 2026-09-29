@@ -188,7 +188,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1505](../tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | ar1505-repair-luna56 | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | Capture terminal local check_coverage.py result; clean generated profraw artifacts; if line floor passes, run changed-package gates/full gates, signed DCO commit and push same branch, then rerun exact-head policy. |
+| P0 | [AR-1505](../tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | ar1505-repair-luna56 | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | Run changed-package check/clippy and full workspace gates on the 61-line focused coverage patch; then independently review, sign DCO commit, push same branch, rerun exact-head policy and request fresh review. |
 
 ### Blocked (76)
 
