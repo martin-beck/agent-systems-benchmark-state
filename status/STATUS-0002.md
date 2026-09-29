@@ -188,7 +188,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1505](../tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | ar1505-repair-luna56 | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | Complete runtime authenticated binding implementation and update all request and response fixtures, then regenerate v1.11 schemas and run formatter and focused compile tests. |
+| P0 | [AR-1505](../tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | ar1505-repair-luna56 | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | Apply the remaining local hunks for response namespace wiring, resolver binding argument, fixtures, and tests without overlapping patches. |
 
 ### Blocked (76)
 

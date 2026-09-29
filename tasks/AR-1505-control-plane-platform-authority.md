@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Complete runtime authenticated binding implementation and update all request and response fixtures, then regenerate v1.11 schemas and run formatter and focused compile tests.",
+  "next_action": "Apply the remaining local hunks for response namespace wiring, resolver binding argument, fixtures, and tests without overlapping patches.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 3,
   "observed_head": "95ac5453fe3a1fbc383afa2ce713a3dceff78437",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 190,
+  "task_revision": 191,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:25:04+00:00",
+  "updated_at": "2026-09-29T00:25:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -774,3 +774,10 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-29T00:24:50+00:00: Recorded command exit 0; command argv SHA-256
   e3c096ed2c44cc6adc4c61f679135e29107af49e2e15dada78aac701caf35f97.
+
+- 2026-09-29T00:25:18+00:00: 00:24:25Z smaller runtime binding patch attempt exited 1 with exact
+  stderr: Failed to find expected lines in live_service.rs: namespace_sha256:
+  response.receipt.relay_root_sha256.clone(). The hunk was stale because the current context
+  differed; apply_patch was atomic and product files were unchanged by that attempt. Corrective
+  action: split the patch into context-local hunks; the RuntimeAuthorityInputBinding type and
+  resolver comparison hunk now applied successfully.
