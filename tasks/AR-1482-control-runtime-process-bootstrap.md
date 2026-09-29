@@ -17,11 +17,11 @@
   "plan": "../plans/AR-1482-control-runtime-process-bootstrap.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Compose authenticated control enrollment into the ordinary CLI process bootstrap.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Control-runtime process bootstrap",
-  "updated_at": "2026-09-29T10:36:49+00:00",
+  "updated_at": "2026-09-29T10:37:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1482-control-runtime-process-bootstrap"
 }
 ---
@@ -81,3 +81,6 @@ providers, accept caller-built authority, or weaken fail-closed boundaries.
   likewise blocked. Next action: implement authenticated platform authority provider/materializer
   and production session discovery, then wire opaque source to ordinary run/sweep; preserve no
   asb-tui/live-provider/credentials/synthetic authority.
+
+- 2026-09-29T10:37:42+00:00: Re-open briefly only to persist exact protected-main checkpoint and
+  truthful successor next action after blocker audit.
