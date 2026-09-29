@@ -223,12 +223,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1529](../tasks/AR-1529.md): AR-1307/1308 formal capacity decision successor | coordinator-ar1529-capacity-decision-20260930 | Replace the stale AR-1309 dependency with a reviewed formal capacity/model decision grounded in the completed capacity and reduced-profile evidence. | Promote after dependency verification; review AR-1517/AR-1520 and record the narrow formal capacity/model contract for AR-1307/1308 without requiring a development seed archive. |
-
 ### Blocked (78)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -372,7 +366,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (394)
+### Done (395)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -508,3 +502,4 @@
 | P0 | [AR-1379](../tasks/AR-1379-live-dispatch-integration.md): Production live dispatch integration | Unclaimed | Integrate authenticated runtime live dispatch into asb run and sweep. | Monitor rerun of post-merge Rust workflow and remaining six workflows at exact main SHA 1e2c591; release only after all seven terminal SUCCESS. |
 | P0 | [AR-1380](../tasks/AR-1380-runtime-scheduler-composition.md): Runtime scheduler composition for live dispatch | Unclaimed | Compose runtime-owned live attempts for production run and sweep scheduling. | PR #276 force-updated to exact head ab4e60c on protected main 16bca1f9 after policy/platform stale-base failure. Monitor fresh exact-head checks; repair any new failures, merge only green, then verify seven post-merge workflows. |
 | P0 | [AR-1381](../tasks/AR-1381-live-cli-scheduler-wiring.md): Runtime-owned live CLI scheduler wiring | Unclaimed | Wire runtime-owned live scheduler authority into production asb run and sweep. | PR #277 force-updated to exact head 4ba3085 after provenance fixture repair. Monitor fresh exact-head checks; repair any new failures, merge only green, then verify seven post-merge workflows. |
+| P0 | [AR-1383](../tasks/AR-1383-runtime-authority-profile.md): Runtime-owned authority profile materialization | Unclaimed | Materialize runtime-owned live authority profile for authenticated execution. | Independent review complete; full runtime tests 114 passed/1 ignored, check and clippy -D warnings passed. Publish clean exact-head PR through handoffctl, then monitor required CI. |
