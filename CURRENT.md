@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1508](tasks/AR-1508-platform-owned-authority-provider.md): Platform-owned authority provider | Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material. | Provider seam implemented in isolated worktree at protected AR-1505 merge f92c2e9; focused compile/test initially failed on dead-code-denied provider error variants, then passed after explicit fail-closed error contract annotation. Add lifecycle negatives and run full gates. | ar1508_provider_luna56 |
+| P0 | [AR-1508](tasks/AR-1508-platform-owned-authority-provider.md): Platform-owned authority provider | Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material. | Run full exact-head product gates on signed commits 7306f83 and 0135650; obtain independent review before publication. | ar1508_provider_luna56 |
 
 ## Blocked
 

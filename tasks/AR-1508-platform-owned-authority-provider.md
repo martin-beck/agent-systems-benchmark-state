@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1508-platform-owned-authority-provider",
-  "checkpoint_commit": "f92c2e941913129d7db50480f71e8361a0d43a0c",
+  "checkpoint_commit": "0135650a2f54c3a6e79ad3d345c03c4ebc43d35d",
   "claim_expires": "2026-09-29T04:18:11+00:00",
   "depends_on": [
     "AR-1473",
@@ -13,7 +13,7 @@
     "AR-1505"
   ],
   "id": "AR-1508",
-  "next_action": "Provider seam implemented in isolated worktree at protected AR-1505 merge f92c2e9; focused compile/test initially failed on dead-code-denied provider error variants, then passed after explicit fail-closed error contract annotation. Add lifecycle negatives and run full gates.",
+  "next_action": "Run full exact-head product gates on signed commits 7306f83 and 0135650; obtain independent review before publication.",
   "observed_branch": "feature/ar-1508-platform-owned-authority-provider",
   "observed_dirty": 0,
   "observed_head": "013565032506a3a70a34fc727970a6dd40c377c1",
@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Platform-owned authority provider",
-  "updated_at": "2026-09-29T02:30:03+00:00",
+  "updated_at": "2026-09-29T02:30:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1508-platform-owned-authority-provider"
 }
 ---
@@ -137,3 +137,11 @@ fixed-path authority, weakening formal/privacy/native gates.
 
 - 2026-09-29T02:29:49+00:00: Recorded command exit 0; command argv SHA-256
   80e1eb9890f3dfad67ec444d6e89d59576e05226594eb494dccd9069a7cc055c.
+
+- 2026-09-29T02:30:07+00:00: Audit follow-up: the provider contract now has a production
+  RuntimePlatformAuthorityProviderHandle. Runtime/control creates it only from authenticated
+  platform material after complete binding verification; bootstrap consumes that handle and
+  revalidates it on materialization. No live/fixed-path/synthetic source was invented. The handle is
+  exercised by the positive bootstrap test; unavailable, tampered, and relative-path provider
+  failures are covered deterministically. Focused six-test group and package Clippy pass. Initial
+  Clippy failure (two unnecessary to_owned calls) was repaired through handoffctl.
