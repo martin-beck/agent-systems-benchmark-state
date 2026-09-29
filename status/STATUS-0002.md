@@ -224,11 +224,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1522](../tasks/AR-1522.md): AR-1307/1308 formal qualification rerun | Unclaimed | Run and independently verify the repaired AR-1307/1308 full-tier qualification, or leave a truthful classified blocker. | Remain planned until AR-1530&#x27;s signed-capacity-8g profile is verified on protected main; then run the one authorized terminal qualification attempt. |
+| P0 | [AR-1522](../tasks/AR-1522.md): AR-1307/1308 formal qualification rerun | coordinator-ar1522-formal-qualification-20260930 | Run and independently verify the repaired AR-1307/1308 full-tier qualification, or leave a truthful classified blocker. | Remain planned until AR-1530&#x27;s signed-capacity-8g profile is verified on protected main; then run the one authorized terminal qualification attempt. |
 
 ### Blocked (78)
 

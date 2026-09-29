@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1522](tasks/AR-1522.md): AR-1307/1308 formal qualification rerun | Run and independently verify the repaired AR-1307/1308 full-tier qualification, or leave a truthful classified blocker. | Remain planned until AR-1530's signed-capacity-8g profile is verified on protected main; then run the one authorized terminal qualification attempt. | - |
+| P0 | [AR-1522](tasks/AR-1522.md): AR-1307/1308 formal qualification rerun | Run and independently verify the repaired AR-1307/1308 full-tier qualification, or leave a truthful classified blocker. | Remain planned until AR-1530's signed-capacity-8g profile is verified on protected main; then run the one authorized terminal qualification attempt. | coordinator-ar1522-formal-qualification-20260930 |
 
 ## Blocked
 
