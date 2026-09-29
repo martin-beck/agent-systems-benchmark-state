@@ -45,6 +45,16 @@ The preflight defaults to the signed qualification profile. An explicit
 `unsigned-development` invocation may validate only a diagnostic fixture and
 must report `qualification_authorized: false`.
 
+### Current development policy
+
+Development and diagnostic execution is independent of the formal seed
+archive. It may generate a disposable local seed and use local/mock inputs;
+no reviewed seed bytes, seed receipt, seed digest, signed bundle, or
+publication digest may block this profile. Exact signed inputs remain required
+only for the full formal/publication/release claim. Historical checkpoints
+below that mention the unavailable reviewed seed are retained for audit and do
+not reintroduce a development dependency.
+
 
 - 2026-09-18T13:45:32+00:00: AR-1304 is done; promote capacity follow-on to open for independent
   worker assignment. Preserve AR-1307 3G/3G contract and exact-head dependency.

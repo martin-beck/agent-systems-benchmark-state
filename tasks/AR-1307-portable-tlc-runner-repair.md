@@ -48,6 +48,16 @@ The validator's `signed` profile is the default and the only profile that may
 authorize qualification, publication, or release evidence; selecting
 `unsigned-development` must produce a labelled diagnostic result.
 
+### Current development policy
+
+The paragraphs above govern claims, not ordinary development execution. The
+`unsigned-development` path must not require archival seed bytes, a reviewed
+seed receipt or seed digest, a signed bundle, or a publication digest. It may
+generate a disposable local seed and use local/mock fixtures, while always
+emitting `qualification_authorized=false`. Historical checkpoints below that
+mention unavailable reviewed seeds are preserved as evidence and are not
+current prerequisites.
+
 - 2026-09-17T23:55:00+00:00: Created as the repair successor after independent exact-head review
   found AR-1302's runner bypassed canonical admission/attestation and lacked required bounded
   execution, profile alignment, provenance, and clean publication evidence. Depends only on done
