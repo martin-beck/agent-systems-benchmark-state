@@ -8,7 +8,7 @@
     "AR-1484"
   ],
   "id": "AR-1512",
-  "next_action": "Run serial workspace test and required privacy/formal checks; then inspect exact diff and commit signed DCO.",
+  "next_action": "Add privacy-safe working-tree scan evidence and inspect exact diff; do not claim live CLI dispatch without an authenticated lease-to-runtime bridge.",
   "observed_branch": "feature/ar-1512-process-owner-material-contract",
   "observed_dirty": 4,
   "observed_head": "f92c2e941913129d7db50480f71e8361a0d43a0c",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated process-owner material source and ordinary CLI/control caller needed to consume runtime authority.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Authenticated process-owner material contract",
-  "updated_at": "2026-09-29T05:18:13+00:00",
+  "updated_at": "2026-09-29T05:18:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1512-process-owner-material-contract"
 }
 ---
@@ -147,3 +147,9 @@ host data, synthetic authority, or weakening fail-closed/native/formal gates.
 
 - 2026-09-29T05:18:13+00:00: Recorded command exit 1; command argv SHA-256
   25b1df8dd63fb1b3a38f5aaeaf898c92fc50712558301926a3cf7fa34df6f648.
+
+- 2026-09-29T05:18:58+00:00: Privacy gate diagnostics: both gitleaks working-tree scans exited 1
+  because generated ignored target artifacts matched the repository private-key rule at
+  target/debug/deps/libpem-8b69321e2a0b9039.rmeta:71 and
+  target/doc/src/asb_control/protocol.rs.html:2317. No introduced source/doc file matched; findings
+  are environmental build artifacts, not product authority. Formal cargo test passed.
