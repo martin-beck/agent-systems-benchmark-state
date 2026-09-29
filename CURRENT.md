@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1503](tasks/AR-1503-runtime-control-process-owner.md): Runtime/control process owner | Own the authenticated control session and hand off only an opaque live dispatch source. | Diagnose unrelated full-workspace ASB test race, rerun serialized or focused affected gate; then independently review AR-1503 diff and decide whether platform-launcher seam is genuinely available. | coordinator-ar1503 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -551,6 +545,7 @@ Never edit this file directly.
 | P0 | [AR-1301](tasks/AR-1301-replay-lifecycle-fault-matrix.md): Supervised replay lifecycle fault matrix | Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end. | Implement runtime-owned listener fixtures and cause-specific assertions; rerun the matrix and exact-head CI, obtain approval, merge, and reconcile. | - |
 | P0 | [AR-1369](tasks/AR-1369-control-backend-authority-materialization.md): ControlBackend authority materialization | Materialize authenticated live-provider authority in ControlBackend for runtime receipt issuance. | Promote and claim the missing ControlBackend authority materialization, then persist authenticated chain/target/tool/lease/relay state for the receipt source. | - |
 | P0 | [AR-1468](tasks/AR-1468-control-authority-materialization-successor.md): Control authority materialization successor | Implement the control-owned authority materializer without the superseded AR-1369 dependency deadlock. | Promote and claim the corrected-dependency successor, then implement the owner-checked control authority materializer through the reviewed workflow. | - |
+| P0 | [AR-1503](tasks/AR-1503-runtime-control-process-owner.md): Runtime/control process owner | Own the authenticated control session and hand off only an opaque live dispatch source. | Diagnose unrelated full-workspace ASB test race, rerun serialized or focused affected gate; then independently review AR-1503 diff and decide whether platform-launcher seam is genuinely available. | - |
 | P0 | [AR-1504](tasks/AR-1504-runtime-platform-launcher-seam.md): Runtime/platform launcher seam | Provide the real runtime/platform-owned launcher and authenticated session discovery for AR-1503. | Implement the missing runtime-owned platform adapter/session locator on protected main, with authenticated socket ownership/permissions, private input construction, opaque source handoff and lifecycle tests; do not copy AR-1503 façade. If platform authority contract cannot be established from existing control protocol, create a narrowly scoped successor AR for that protocol contract with exact symbols and keep this AR blocked. | - |
 | P1 | [AR-1333](tasks/AR-1333-multi-agent-workload-campaign.md): Multi-agent by workload benchmark campaign | Run the multi-agent by workload benchmark campaign with per-tuple evidence and offline replay. | Keep AR-1333 as the optional production/live campaign successor; implement the mandatory credential-free local/mock campaign through AR-1456 and do not wait on AR-1329 for local qualification. | - |
 | P1 | [AR-1343](tasks/AR-1343-runtime-live-provider-relay.md): Runtime live-provider relay service and CLI acquisition | Add the runtime live-provider relay service and per-attempt opaque factory acquisition required by asb run and sweep. | BLOCKED on concrete missing primitives: asb-runtime has no production supervisor constructor for pinned SandboxBackend/live gate and no runtime-owned target/namespace provisioning; asb-agents ResolvedCredential transport is crate-private and cannot safely cross into runtime; no CLI service can acquire lease, credential, target, namespace, token, and relay atomically. Keep AR-1329 fail-closed. Coordinator must promote a narrowly scoped cross-crate runtime provisioning repair before AR-1343 can proceed. | - |

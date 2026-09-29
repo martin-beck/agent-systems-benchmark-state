@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1503-runtime-control-process-owner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-29T02:16:03+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1473",
     "AR-1474",
@@ -16,15 +16,15 @@
   "observed_branch": "feature/ar-1503-runtime-control-process-owner",
   "observed_dirty": 3,
   "observed_head": "3c6af6b351e0c32ee8f5e48716654d854dcbbac2",
-  "owner": "coordinator-ar1503",
+  "owner": "",
   "plan": "../plans/AR-1503-runtime-control-process-owner.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "superseded",
   "summary": "Own the authenticated control session and hand off only an opaque live dispatch source.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Runtime/control process owner",
-  "updated_at": "2026-09-29T01:46:59+00:00",
+  "updated_at": "2026-09-29T01:47:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1503-runtime-control-process-owner"
 }
 ---
@@ -284,3 +284,8 @@ asb-tui, synthesize authority, or accept caller-built runtime inputs.
 
 - 2026-09-29T01:46:59+00:00: Recorded command exit 0; command argv SHA-256
   4c0593a32959f1cb20d18610ec9e59c544f10e1464ad6f3a0bfe22d86084494c.
+
+- 2026-09-29T01:47:21+00:00: Historical AR-1503 implementation was never accepted or published.
+  Narrow successor AR-1506 now owns the remaining production platform-launcher/session integration
+  against merged AR-1505 authority contract; all dirty AR-1503 evidence remains preserved and
+  unmerged.
