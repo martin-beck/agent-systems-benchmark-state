@@ -230,12 +230,11 @@
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1367](../tasks/AR-1367-ar1329-production-dispatch-integration.md): AR-1329 production dispatch integration | coordinator-ar1367-production-dispatch-20260930 | Complete production asb run/sweep live-provider dispatch through runtime-owned authenticated acquisition and teardown. | Promote and claim this fresh AR-1329 successor, refresh an isolated worktree to protected main, audit the production run/sweep dispatch seam, and implement only through runtime-owned bridge inputs. |
-| P0 | [AR-1532](../tasks/AR-1532.md): AR-1307 unsigned-development runner repair | coordinator-ar1532-development-20260930 | Repair and independently qualify the provider-free unsigned-development runner path associated with AR-1307 without changing formal limits or evidence gates. | Promote after state review; audit and repair the unsigned-development runner path, then independently run its focused and full state gates without claiming formal qualification. |
 
 ### Open (1)
 
@@ -243,7 +242,7 @@
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1533](../tasks/AR-1533.md): AR-1308 unsigned-development QEMU fixture repair | Unclaimed | Repair the provider-free unsigned-development QEMU fixture for AR-1308 and make its diagnostics, cleanup and non-qualification boundary reliable. | Promote after state review; repair and rerun the unsigned-development QEMU fixture with generated inputs, preserving formal AR-1308 blockers and non-qualifying evidence. |
 
-### Blocked (79)
+### Blocked (80)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -308,6 +307,7 @@
 | P0 | [AR-1522](../tasks/AR-1522.md): AR-1307/1308 formal qualification rerun | Unclaimed | Run and independently verify the repaired AR-1307/1308 full-tier qualification, or leave a truthful classified blocker. | Remain blocked until AR-1531 supplies the capacity fixture and an external operator supplies the exact reviewed formal seed/input bundle; then run the one authorized terminal qualification attempt. |
 | P0 | [AR-1523](../tasks/AR-1523.md): Platform authority deployment adapter | Unclaimed | Central orchestration is merged for local/replay, but PlanAuthoritySource still rejects live mode and no runtime-owned platform source supplies private authority for first-customer dispatch. | Remain blocked until a runtime/control deployment owner supplies an authenticated private authority source and opaque materialization handoff; then replace PlanAuthoritySource&#x27;s live-mode rejection with the central orchestrator adapter and run exact-head gates. |
 | P0 | [AR-1531](../tasks/AR-1531.md): Provision signed 8G formal capacity fixture | Unclaimed | Provision the missing 8G/8G disposable formal fixture and resource evidence required by AR-1522. | External operator must supply the exact reviewed formal seed and matching model/JDK/TLC/source inputs; preserve the provisioned 8 GiB/8 GiB fixture and do not run qualification before preflight passes. |
+| P0 | [AR-1532](../tasks/AR-1532.md): AR-1307 unsigned-development runner repair | Unclaimed | Repair and independently qualify the provider-free unsigned-development runner path associated with AR-1307 without changing formal limits or evidence gates. | Promote after state review; audit and repair the unsigned-development runner path, then independently run its focused and full state gates without claiming formal qualification. |
 | P1 | [AR-0604](../tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Unclaimed | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Obtain authorized native x86 runner and immutable CSB/Python evidence; rerun native_boundary and record A/B overhead. |
 | P1 | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Unclaimed | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Create successor AR for authenticated route/ancestor authority; preserve AR-1288 evidence and AR-0814 head 29cfa193. |
 | P1 | [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md): Qualify development host ASB runner operations | Unclaimed | Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery. | Run repeated clean ASB jobs on every declared development host label and audit reset, isolation, architecture, and artifact provenance. |
