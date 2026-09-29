@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1509-authenticated-authority-provider-receipt",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-29T04:34:57+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1473",
     "AR-1474",
@@ -17,15 +17,15 @@
   "observed_branch": "feature/ar-1509-authenticated-authority-provider-receipt",
   "observed_dirty": 1,
   "observed_head": "e437261f6fed268956cd436e06beb117549611ac",
-  "owner": "ar1509-receipt-luna56",
+  "owner": "",
   "plan": "../plans/AR-1509-authenticated-authority-provider-receipt.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Replace the AR-1508 test fa\u00e7ade with an authenticated production authority-provider receipt and lifecycle fence.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Authenticated authority-provider receipt",
-  "updated_at": "2026-09-29T02:42:48+00:00",
+  "updated_at": "2026-09-29T02:44:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1509-authenticated-authority-provider-receipt"
 }
 ---
@@ -94,3 +94,6 @@ mock production authority, or weakening formal/privacy/native gates.
 
 - 2026-09-29T02:42:48+00:00: Recorded command exit 101; command argv SHA-256
   44858bcc1bea325f8e4ec42626fdf2970d2310a4694e160101531722dea4dfa4.
+
+- 2026-09-29T02:44:35+00:00: Coordinator stopped the worker and is recovering this AR for a repair
+  worker; preserve existing commits, dirty diff, and command evidence. No completion claim.

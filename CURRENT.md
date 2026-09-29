@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1509](tasks/AR-1509-authenticated-authority-provider-receipt.md): Authenticated authority-provider receipt | Replace the AR-1508 test façade with an authenticated production authority-provider receipt and lifecycle fence. | Audit AR-1505 merge f92c2e9 and AR-1508 unmerged commits; create isolated exact-base worktree for implementation. | ar1509-receipt-luna56 |
+| P0 | [AR-1509](tasks/AR-1509-authenticated-authority-provider-receipt.md): Authenticated authority-provider receipt | Replace the AR-1508 test façade with an authenticated production authority-provider receipt and lifecycle fence. | Audit AR-1505 merge f92c2e9 and AR-1508 unmerged commits; create isolated exact-base worktree for implementation. | - |
 
 ## Blocked
 
