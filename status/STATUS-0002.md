@@ -230,11 +230,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1534](../tasks/AR-1534.md): Coordinator vendor integrity repair | Unclaimed | Repair the state repository&#x27;s coordinator vendor-integrity mismatch exposed after the AR-1530 capacity-profile merge. | Remain blocked pending coordinator-state AR-0022: an approved upstream bounded actionable-state projection release. After AR-0022 exact release/CI evidence is available, synchronize the immutable vendor snapshot, rerun vendor verification and all ASB state gates, then independently review the exact diff. Never rewrite the vendor manifest or patch handoffctl locally. |
+| P0 | [AR-1534](../tasks/AR-1534.md): Coordinator vendor integrity repair | codex-asb-ar1534-coordinator-followup-20260930 | Repair the state repository&#x27;s coordinator vendor-integrity mismatch exposed after the AR-1530 capacity-profile merge. | Remain blocked pending coordinator-state AR-0022: an approved upstream bounded actionable-state projection release. After AR-0022 exact release/CI evidence is available, synchronize the immutable vendor snapshot, rerun vendor verification and all ASB state gates, then independently review the exact diff. Never rewrite the vendor manifest or patch handoffctl locally. |
 
 ### Blocked (82)
 
