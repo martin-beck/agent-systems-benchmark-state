@@ -194,11 +194,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1510](../tasks/AR-1510-authenticated-control-source-wiring.md): Authenticated control source and production provider wiring | Unclaimed | Provide the authenticated platform control source and production lifecycle wiring required by the authority-provider receipt. | Promote after the AR-1509 blocker evidence is reconciled; implement and verify an authenticated platform control source and production runtime wiring from protected main. |
+| P0 | [AR-1510](../tasks/AR-1510-authenticated-control-source-wiring.md): Authenticated control source and production provider wiring | ar1510-control-source-luna56 | Provide the authenticated platform control source and production lifecycle wiring required by the authority-provider receipt. | Promote after the AR-1509 blocker evidence is reconciled; implement and verify an authenticated platform control source and production runtime wiring from protected main. |
 
 ### Blocked (78)
 

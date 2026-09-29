@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1510-authenticated-control-source-wiring",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T04:58:16+00:00",
   "depends_on": [
     "AR-1505"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "ar1510-control-source-luna56",
   "plan": "../plans/AR-1510-authenticated-control-source-wiring.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide the authenticated platform control source and production lifecycle wiring required by the authority-provider receipt.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Authenticated control source and production provider wiring",
-  "updated_at": "2026-09-29T02:58:10+00:00",
+  "updated_at": "2026-09-29T02:58:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1510-authenticated-control-source-wiring"
 }
 ---
@@ -60,3 +60,5 @@ test-only façade publication, or weakening native/formal/privacy gates.
 
 - 2026-09-29T02:58:10+00:00: AR-1509 blocker evidence reconciled; successor starts from protected
   AR-1505 and owns authenticated control-source production wiring.
+
+- 2026-09-29T02:58:16+00:00: Claimed by ar1510-control-source-luna56.

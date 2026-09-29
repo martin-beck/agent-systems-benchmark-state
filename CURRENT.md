@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1510](tasks/AR-1510-authenticated-control-source-wiring.md): Authenticated control source and production provider wiring | Provide the authenticated platform control source and production lifecycle wiring required by the authority-provider receipt. | Promote after the AR-1509 blocker evidence is reconciled; implement and verify an authenticated platform control source and production runtime wiring from protected main. | - |
+| P0 | [AR-1510](tasks/AR-1510-authenticated-control-source-wiring.md): Authenticated control source and production provider wiring | Provide the authenticated platform control source and production lifecycle wiring required by the authority-provider receipt. | Promote after the AR-1509 blocker evidence is reconciled; implement and verify an authenticated platform control source and production runtime wiring from protected main. | ar1510-control-source-luna56 |
 
 ## Blocked
 
