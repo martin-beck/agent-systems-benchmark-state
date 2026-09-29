@@ -8,7 +8,7 @@
     "AR-1484"
   ],
   "id": "AR-1511",
-  "next_action": "Obtain independent exact-head review of 673b486ba89917e3bb08c884ee17e708e0776b07 against protected f92c2e9; hold PR/push until approval.",
+  "next_action": "Audit 673b486 production call graph; add ordinary CLI/control caller and non-test provider-owned authenticated material source, then add remote-revoke coverage and obtain independent exact-head review.",
   "observed_branch": "feature/ar-1511-runtime-control-authority-issuer",
   "observed_dirty": 0,
   "observed_head": "673b486ba89917e3bb08c884ee17e708e0776b07",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 138,
+  "task_revision": 139,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T04:31:02+00:00",
+  "updated_at": "2026-09-29T04:31:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
@@ -471,3 +471,6 @@ production authority, or weakening fail-closed/native/formal gates.
 - 2026-09-29T04:29:31+00:00: Claimed by ar1511-production-path-luna56.
 
 - 2026-09-29T04:31:02+00:00: Heartbeat by ar1511-production-path-luna56.
+
+- 2026-09-29T04:31:09+00:00: Takeover heartbeat/audit: preserving clean signed 673b486 against
+  protected f92c2e9; production-path repair begins for independent-review P1.

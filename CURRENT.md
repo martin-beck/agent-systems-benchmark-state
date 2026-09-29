@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1511](tasks/AR-1511-runtime-control-authority-issuer.md): Runtime/control authority issuer and capability source | Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch. | Obtain independent exact-head review of 673b486ba89917e3bb08c884ee17e708e0776b07 against protected f92c2e9; hold PR/push until approval. | ar1511-production-path-luna56 |
+| P0 | [AR-1511](tasks/AR-1511-runtime-control-authority-issuer.md): Runtime/control authority issuer and capability source | Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch. | Audit 673b486 production call graph; add ordinary CLI/control caller and non-test provider-owned authenticated material source, then add remote-revoke coverage and obtain independent exact-head review. | ar1511-production-path-luna56 |
 
 ## Blocked
 
