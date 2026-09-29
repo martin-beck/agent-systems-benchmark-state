@@ -8,7 +8,7 @@
     "AR-1484"
   ],
   "id": "AR-1513",
-  "next_action": "Independent exact-head review of signed be018d4; then publish PR and await protected exact-head checks.",
+  "next_action": "PR #383 is open at exact head be018d4; await independent review and all protected checks, then verify terminal merge/postmerge.",
   "observed_branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
   "observed_dirty": 0,
   "observed_head": "be018d4f1159bde9b9725f085cb8959edf7cde4e",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T05:45:05+00:00",
+  "updated_at": "2026-09-29T05:45:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -167,3 +167,7 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
 
 - 2026-09-29T05:45:05+00:00: Recorded command exit 0; command argv SHA-256
   1f540aeee2629e67b769c48e24d39320eb8679d18cc219ae826a9d2df0ec097d.
+
+- 2026-09-29T05:45:26+00:00: Published PR #383 from exact signed head be018d4 against protected base
+  f92c2e9. GitHub reports mergeable; required checks are pending, with AWQ shadow and source-header
+  checks already green. No merge authority claimed.
