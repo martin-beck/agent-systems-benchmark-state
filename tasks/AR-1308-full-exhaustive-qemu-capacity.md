@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bounded signed preflight failed closed: prepared runner receipt and JDK/TLC/model are present, but host swap, image, overlay capacity, exact source tree, seed and admission lock are missing.",
-  "task_revision": 557,
+  "task_revision": 558,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T12:05:27+00:00",
+  "updated_at": "2026-09-29T12:06:04+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1693,3 +1693,6 @@ must report `qualification_authorized: false`.
 
 - 2026-09-29T12:05:27+00:00: Recorded command exit 1; command argv SHA-256
   6b8c36c8fa84269287216a6c3b8cb79adb645b6ba831d28d05763eda07fdf962.
+
+- 2026-09-29T12:06:04+00:00: Recorded command exit 0; command argv SHA-256
+  c8209208c13baa11e599fd2c937bbc639cbd2aaad17a035c3f9762ad351ccaa9.
