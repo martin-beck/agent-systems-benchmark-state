@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1511-runtime-control-authority-issuer.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 171,
+  "task_revision": 172,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T04:55:15+00:00",
+  "updated_at": "2026-09-29T13:08:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
@@ -579,3 +579,7 @@ production authority, or weakening fail-closed/native/formal gates.
   ordinary CLI/control caller exists; digest-only records cannot reconstruct authenticated private
   roots/tools/policy/namespace/launch input. Dirty edits reverted, 673b486 preserved. Create
   successor contract AR.
+
+- 2026-09-29T13:08:45+00:00: Re-audit after AR-1513 protected merge 47329e35: authenticated
+  process-owner material and ordinary run/sweep bridge are now present on protected main; reopening
+  for successor disposition.
