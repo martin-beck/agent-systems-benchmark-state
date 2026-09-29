@@ -14,18 +14,18 @@
   ],
   "id": "AR-1509",
   "next_action": "Audit AR-1505 merge f92c2e9 and AR-1508 unmerged commits; create isolated exact-base worktree for implementation.",
-  "observed_branch": "",
+  "observed_branch": "feature/ar-1509-authenticated-authority-provider-receipt",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "f92c2e941913129d7db50480f71e8361a0d43a0c",
   "owner": "ar1509-receipt-luna56",
   "plan": "../plans/AR-1509-authenticated-authority-provider-receipt.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Replace the AR-1508 test fa\u00e7ade with an authenticated production authority-provider receipt and lifecycle fence.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Authenticated authority-provider receipt",
-  "updated_at": "2026-09-29T02:35:36+00:00",
+  "updated_at": "2026-09-29T02:35:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1509-authenticated-authority-provider-receipt"
 }
 ---
