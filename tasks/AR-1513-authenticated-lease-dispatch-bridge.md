@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "be018d4f1159bde9b9725f085cb8959edf7cde4e",
   "claim_expires": "2026-09-29T07:32:46+00:00",
   "depends_on": [
     "AR-1502",
     "AR-1484"
   ],
   "id": "AR-1513",
-  "next_action": "Run docs/formal/privacy gates and inspect exact diff; then sign DCO commit and request independent exact-head review.",
+  "next_action": "Independent exact-head review of signed be018d4; then publish PR and await protected exact-head checks.",
   "observed_branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
   "observed_dirty": 0,
   "observed_head": "be018d4f1159bde9b9725f085cb8959edf7cde4e",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T05:44:18+00:00",
+  "updated_at": "2026-09-29T05:44:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -154,3 +154,10 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
 
 - 2026-09-29T05:44:05+00:00: Recorded command exit 0; command argv SHA-256
   8f49593a34777459c9034d780e25976a6c3c5dd6a24231dcd34d4e02350a702b.
+
+- 2026-09-29T05:44:29+00:00: Committed exact isolated protected-main implementation at
+  be018d4f1159bde9b9725f085cb8959edf7cde4e. Commit is SSH-signed by Martin Beck and carries matching
+  DCO trailer. Seven tracked files changed: opaque authenticated issuer/store, strict executable
+  provenance, lifecycle-fenced lease bridge, runtime-control caller, CLI run/sweep adapter, docs,
+  and refreshed source provenance digest. Focused runtime 156 pass/1 ignored, serial workspace pass,
+  clippy pass, rustdoc pass, formal manifest tests pass, and gitleaks reports no leaks.

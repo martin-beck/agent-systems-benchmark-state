@@ -203,7 +203,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1513](../tasks/AR-1513-authenticated-lease-dispatch-bridge.md): Authenticated lease-to-live-dispatch bridge | ar1513-lease-bridge-luna56 | Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch. | Run docs/formal/privacy gates and inspect exact diff; then sign DCO commit and request independent exact-head review. |
+| P0 | [AR-1513](../tasks/AR-1513-authenticated-lease-dispatch-bridge.md): Authenticated lease-to-live-dispatch bridge | ar1513-lease-bridge-luna56 | Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch. | Independent exact-head review of signed be018d4; then publish PR and await protected exact-head checks. |
 
 ### Blocked (81)
 
