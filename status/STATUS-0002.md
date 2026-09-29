@@ -203,7 +203,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | ar1308-capacity-repair-luna56 | Bounded signed preflight failed closed: prepared runner receipt and JDK/TLC/model are present, but host swap, image, overlay capacity, exact source tree, seed and admission lock are missing. | Provision the reviewed Ubuntu 24.04 image and &gt;=64 GiB overlay, exact signed AR-1307 ab485f767 source checkout/tree, matching seed and canonical admission lock, then restore &gt;=1 GiB host swap and rerun the signed preflight before any QEMU/TLC boot. |
+| P0 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | ar1308-capacity-repair-luna56 | Prepared signed capacity passes image, 64 GiB overlay, exact ab485f767 source/tree, JDK/TLC/model and canonical lock; preflight fails only on host SwapFree below 1 GiB and unavailable reviewed seed b3383756...ece4b28. | External operator must supply reviewed seed b3383756...ece4b28 and safe &gt;=1 GiB host swap; rerun signed preflight, then boot once. Do not regenerate/substitute seed or widen limits. |
 
 ### Blocked (81)
 

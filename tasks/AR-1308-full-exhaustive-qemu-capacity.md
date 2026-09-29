@@ -7,7 +7,7 @@
     "AR-1304"
   ],
   "id": "AR-1308",
-  "next_action": "Provision the reviewed Ubuntu 24.04 image and >=64 GiB overlay, exact signed AR-1307 ab485f767 source checkout/tree, matching seed and canonical admission lock, then restore >=1 GiB host swap and rerun the signed preflight before any QEMU/TLC boot.",
+  "next_action": "External operator must supply reviewed seed b3383756...ece4b28 and safe >=1 GiB host swap; rerun signed preflight, then boot once. Do not regenerate/substitute seed or widen limits.",
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
@@ -16,10 +16,10 @@
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Bounded signed preflight failed closed: prepared runner receipt and JDK/TLC/model are present, but host swap, image, overlay capacity, exact source tree, seed and admission lock are missing.",
-  "task_revision": 558,
+  "summary": "Prepared signed capacity passes image, 64 GiB overlay, exact ab485f767 source/tree, JDK/TLC/model and canonical lock; preflight fails only on host SwapFree below 1 GiB and unavailable reviewed seed b3383756...ece4b28.",
+  "task_revision": 559,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T12:06:04+00:00",
+  "updated_at": "2026-09-29T12:06:49+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1696,3 +1696,11 @@ must report `qualification_authorized: false`.
 
 - 2026-09-29T12:06:04+00:00: Recorded command exit 0; command argv SHA-256
   c8209208c13baa11e599fd2c937bbc639cbd2aaad17a035c3f9762ad351ccaa9.
+
+- 2026-09-29T12:06:49+00:00: 2026-09-29 bounded repair: governed signed preflight exit 1 found only
+  host SwapFree below 1 GiB and missing/wrong exact reviewed seed
+  b3383756b5cd357f58d923216effea33be35b793034de321c3c9ce460ece4b28. Verified exact signed AR-1307
+  ab485f767 source/tree, reviewed Ubuntu image 612b2c0c..., 64 GiB overlay, JDK 17, TLC 936a2620...,
+  model af8af6a9..., canonical owner-private lock, and unchanged 3G/3G/2-worker/2-core/8G/7200s
+  contract. Focused tests 22/22 pass. No VM/TLC boot or qualification; successor requires external
+  immutable seed and safe swap.
