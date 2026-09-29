@@ -218,7 +218,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1523](../tasks/AR-1523.md): Platform authority deployment adapter | coordinator-ar1523-platform-authority-20260930 | Provide the missing first-customer platform adapter that supplies authenticated private runtime authority to ASB production dispatch. | Remain planned until the coordinator assigns the deployment-adapter owner and confirms the private runtime authority handoff contract; then implement and qualify the adapter. |
+| P0 | [AR-1523](../tasks/AR-1523.md): Platform authority deployment adapter | coordinator-ar1523-platform-authority-20260930 | Audit complete: current protocol provides authenticated digest receipts only and the CLI composition still accepts caller-supplied private owner inputs; no safe platform authority source exists to implement this AR without a deployment owner. | Remain blocked until a runtime/control deployment owner supplies an authenticated private authority source and opaque materialization handoff. Then replace the public owner-input composition, wire ordinary run/sweep, and run exact-head gates. |
 
 ### Blocked (77)
 
