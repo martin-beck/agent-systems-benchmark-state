@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Diagnose exact hosted 89.98 percent line-floor miss from workflow 36504328236; add only focused legitimate provider-free coverage for AR-1505 paths, rerun unchanged gates, then signed DCO commit/push and fresh review.",
+  "next_action": "Apply focused provider-free coverage patch for namespace binding and materialization using an argv-safe handoffctl invocation, then run unchanged local policy coverage.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 0,
   "observed_head": "da5e2a916b66de9f31f2c5bcccd1f59f7b3321d2",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 269,
+  "task_revision": 270,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T01:09:41+00:00",
+  "updated_at": "2026-09-29T01:11:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -1065,3 +1065,9 @@ public credential/socket paths, or weakening fail-closed gates.
   llvm-cov --workspace --all-targets --fail-under-lines 90 returned exit 1. This disproves the
   earlier local profraw-only classification as sufficient; floor is genuinely 0.02 percentage points
   under. No product mutation or gate weakening made; next action is focused coverage diagnosis.
+
+- 2026-09-29T01:11:10+00:00: Coverage patch attempt failed before handoffctl execution: local shell
+  stderr was /bin/bash: -c: line 1: unexpected EOF while looking for matching quote. No product
+  mutation occurred and no test ran. Corrective action: retry with a single argv-safe base64 patch
+  argument and explicit closed quoting; preserve only focused positive/negative namespace/root
+  binding tests.
