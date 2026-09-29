@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1511-runtime-control-authority-issuer",
   "checkpoint_commit": "ac9306453dc97a100a57befcba0c8456b67a23db",
-  "claim_expires": "2026-09-29T05:49:08+00:00",
+  "claim_expires": "2026-09-29T05:58:13+00:00",
   "depends_on": [
     "AR-1502",
     "AR-1484"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 94,
+  "task_revision": 95,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T03:57:37+00:00",
+  "updated_at": "2026-09-29T03:58:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
@@ -348,3 +348,5 @@ production authority, or weakening fail-closed/native/formal gates.
   49bf842. Product worktree is clean; serial workspace tests reran exit 0 after this commit, and
   focused test/format/clippy gates were green. Independent exact-head review is assigned; no PR or
   push.
+
+- 2026-09-29T03:58:13+00:00: Heartbeat by ar1511-authority-repair-luna56.
