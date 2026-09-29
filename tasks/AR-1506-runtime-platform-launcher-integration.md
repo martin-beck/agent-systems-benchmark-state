@@ -13,7 +13,7 @@
     "AR-1505"
   ],
   "id": "AR-1506",
-  "next_action": "Promote after dependency verification; implement the runtime-owned platform launcher/session and wire ordinary asb-cli dispatch to an opaque authenticated source.",
+  "next_action": "Implement runtime-owned platform launcher adapter and wire ordinary CLI run/sweep to an opaque authenticated dispatch source; add provider-free lifecycle negatives.",
   "observed_branch": "feature/ar-1506-runtime-platform-launcher-integration",
   "observed_dirty": 0,
   "observed_head": "f92c2e941913129d7db50480f71e8361a0d43a0c",
@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect the merged authenticated platform authority/bootstrap protocol to production ASB process startup and ordinary CLI dispatch.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Runtime platform launcher integration",
-  "updated_at": "2026-09-29T01:51:21+00:00",
+  "updated_at": "2026-09-29T01:53:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1506-runtime-platform-launcher-integration"
 }
 ---
@@ -78,3 +78,9 @@ production evidence.
 
 - 2026-09-29T01:51:07+00:00: Recorded command exit 0; command argv SHA-256
   f9e58004e68bbe6dbe53beccbe5bb05ce78bc92eeadfbfc27796188aead36608.
+
+- 2026-09-29T01:53:05+00:00: Audit: isolated product worktree
+  agent-systems-benchmark-ar-1506-runtime-platform-launcher-integration is clean at exact AR-1505
+  merge f92c2e941913129d7db50480f71e8361a0d43a0c. AR-1505 bootstrap/chain/receipt and opaque
+  dispatch APIs are present, but asb-cli::run still dispatches with None,None and no runtime
+  platform adapter consumes RuntimeControlBootstrap. Next action is the narrow adapter/wiring slice.

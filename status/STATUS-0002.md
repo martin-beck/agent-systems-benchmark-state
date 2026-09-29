@@ -190,7 +190,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1506](../tasks/AR-1506-runtime-platform-launcher-integration.md): Runtime platform launcher integration | ar1506-launcher-luna56 | Connect the merged authenticated platform authority/bootstrap protocol to production ASB process startup and ordinary CLI dispatch. | Promote after dependency verification; implement the runtime-owned platform launcher/session and wire ordinary asb-cli dispatch to an opaque authenticated source. |
+| P0 | [AR-1506](../tasks/AR-1506-runtime-platform-launcher-integration.md): Runtime platform launcher integration | ar1506-launcher-luna56 | Connect the merged authenticated platform authority/bootstrap protocol to production ASB process startup and ordinary CLI dispatch. | Implement runtime-owned platform launcher adapter and wire ordinary CLI run/sweep to an opaque authenticated dispatch source; add provider-free lifecycle negatives. |
 
 ### Blocked (74)
 
