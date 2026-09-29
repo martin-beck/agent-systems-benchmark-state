@@ -15,17 +15,17 @@
   "id": "AR-1508",
   "next_action": "Provider seam implemented in isolated worktree at protected AR-1505 merge f92c2e9; focused compile/test initially failed on dead-code-denied provider error variants, then passed after explicit fail-closed error contract annotation. Add lifecycle negatives and run full gates.",
   "observed_branch": "feature/ar-1508-platform-owned-authority-provider",
-  "observed_dirty": 3,
-  "observed_head": "f92c2e941913129d7db50480f71e8361a0d43a0c",
+  "observed_dirty": 0,
+  "observed_head": "7306f8308a427223e74b7829484cae209c1cacee",
   "owner": "ar1508_provider_luna56",
   "plan": "../plans/AR-1508-platform-owned-authority-provider.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Platform-owned authority provider",
-  "updated_at": "2026-09-29T02:26:52+00:00",
+  "updated_at": "2026-09-29T02:27:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1508-platform-owned-authority-provider"
 }
 ---
