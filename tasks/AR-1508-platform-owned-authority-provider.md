@@ -14,18 +14,18 @@
   ],
   "id": "AR-1508",
   "next_action": "PR #384 remains open at exact head 2c70f811; protected origin/main is 47329e35 (AR-1513 merge), so GitHub reports DIRTY/CONFLICTING with zero hosted checks. Rebase onto 47329e35, then repeat independent exact-head review and hosted checks before merge.",
-  "observed_branch": "DETACHED",
-  "observed_dirty": 3,
-  "observed_head": "47329e35c03bf20505ce65c7a29487ab97c52ee9",
+  "observed_branch": "feature/ar-1508-platform-owned-authority-provider",
+  "observed_dirty": 0,
+  "observed_head": "06e91829123cb1498e566f595aa2e114ff5833f4",
   "owner": "ar1508-rebase-repair-luna56",
   "plan": "../plans/AR-1508-platform-owned-authority-provider.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material.",
-  "task_revision": 73,
+  "task_revision": 74,
   "title": "Platform-owned authority provider",
-  "updated_at": "2026-09-29T11:01:35+00:00",
+  "updated_at": "2026-09-29T11:01:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1508-platform-owned-authority-provider"
 }
 ---
