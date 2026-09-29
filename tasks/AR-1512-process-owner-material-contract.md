@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated process-owner material source and ordinary CLI/control caller needed to consume runtime authority.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Authenticated process-owner material contract",
-  "updated_at": "2026-09-29T05:18:58+00:00",
+  "updated_at": "2026-09-29T05:19:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1512-process-owner-material-contract"
 }
 ---
@@ -153,3 +153,6 @@ host data, synthetic authority, or weakening fail-closed/native/formal gates.
   target/debug/deps/libpem-8b69321e2a0b9039.rmeta:71 and
   target/doc/src/asb_control/protocol.rs.html:2317. No introduced source/doc file matched; findings
   are environmental build artifacts, not product authority. Formal cargo test passed.
+
+- 2026-09-29T05:19:11+00:00: Recorded command exit 0; command argv SHA-256
+  47a11eb1c45b816c00415363181aa85c2fa29b932224e9de115f41db041dc138.
