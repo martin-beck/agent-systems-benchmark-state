@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 262,
+  "task_revision": 263,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T08:07:50+00:00",
+  "updated_at": "2026-09-29T08:08:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -776,3 +776,6 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
   remain blockers.
 
 - 2026-09-29T08:07:50+00:00: Heartbeat by ar1513-repair4-luna56.
+
+- 2026-09-29T08:08:00+00:00: Recorded command exit 0; command argv SHA-256
+  d04aa803a9fcb854b247572f9b417fd1935a57ca978bb887d2e7c188e99db043.
