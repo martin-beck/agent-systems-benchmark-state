@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1534](tasks/AR-1534.md): Coordinator vendor integrity repair | Repair the state repository's coordinator vendor-integrity mismatch exposed after the AR-1530 capacity-profile merge. | Promote after coordinator review; reconcile the immutable coordinator vendor contract with the merged capacity-profile change without weakening vendor verification or modifying handoffctl in an unrelated AR. | coordinator-ar1534-metadata-20260930 |
+| P0 | [AR-1534](tasks/AR-1534.md): Coordinator vendor integrity repair | Repair the state repository's coordinator vendor-integrity mismatch exposed after the AR-1530 capacity-profile merge. | Remain blocked until coordinator maintenance supplies an approved upstream vendor upgrade or an allowed relocation of the bounded state-view behavior; do not rewrite the vendor manifest or patch handoffctl in an unrelated AR. | coordinator-ar1534-metadata-20260930 |
 
 ## Blocked
 
