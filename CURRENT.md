@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1532](tasks/AR-1532.md): AR-1307 unsigned-development runner repair | Repair and independently qualify the provider-free unsigned-development runner path associated with AR-1307 without changing formal limits or evidence gates. | Promote after state review; audit and repair the unsigned-development runner path, then independently run its focused and full state gates without claiming formal qualification. | - |
+| P0 | [AR-1532](tasks/AR-1532.md): AR-1307 unsigned-development runner repair | Repair and independently qualify the provider-free unsigned-development runner path associated with AR-1307 without changing formal limits or evidence gates. | Promote after state review; audit and repair the unsigned-development runner path, then independently run its focused and full state gates without claiming formal qualification. | coordinator-ar1532-metadata-20260930 |
 
 ## Blocked
 
