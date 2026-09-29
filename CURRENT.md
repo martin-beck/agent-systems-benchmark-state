@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1523](tasks/AR-1523.md): Platform authority deployment adapter | Provide the missing first-customer platform adapter that supplies authenticated private runtime authority to ASB production dispatch. | Remain planned until the coordinator assigns the deployment-adapter owner and confirms the private runtime authority handoff contract; then implement and qualify the adapter. | - |
+| P0 | [AR-1523](tasks/AR-1523.md): Platform authority deployment adapter | Provide the missing first-customer platform adapter that supplies authenticated private runtime authority to ASB production dispatch. | Remain planned until the coordinator assigns the deployment-adapter owner and confirms the private runtime authority handoff contract; then implement and qualify the adapter. | coordinator-ar1523-platform-authority-20260930 |
 
 ## Blocked
 

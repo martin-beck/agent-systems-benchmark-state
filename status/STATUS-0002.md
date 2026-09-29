@@ -214,11 +214,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1523](../tasks/AR-1523.md): Platform authority deployment adapter | Unclaimed | Provide the missing first-customer platform adapter that supplies authenticated private runtime authority to ASB production dispatch. | Remain planned until the coordinator assigns the deployment-adapter owner and confirms the private runtime authority handoff contract; then implement and qualify the adapter. |
+| P0 | [AR-1523](../tasks/AR-1523.md): Platform authority deployment adapter | coordinator-ar1523-platform-authority-20260930 | Provide the missing first-customer platform adapter that supplies authenticated private runtime authority to ASB production dispatch. | Remain planned until the coordinator assigns the deployment-adapter owner and confirms the private runtime authority handoff contract; then implement and qualify the adapter. |
 
 ### Blocked (77)
 
