@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Development QEMU fixture is bootable and offline-JAR verified, but full-exhaustive TLC produced no terminal result within 1200 seconds and was terminated; no qualification is claimed.",
-  "task_revision": 692,
+  "task_revision": 693,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T18:28:42+00:00",
+  "updated_at": "2026-09-29T19:01:36+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -2109,3 +2109,6 @@ must report `qualification_authorized: false`.
 - 2026-09-29T18:28:42+00:00: Released after bounded full-exhaustive QEMU timeout. Portable admission
   and offline JAR checks passed; no terminal TLC result or attestation was produced. AR-1516 owns
   fixture/evidence repair; AR-1309 owns capacity/model-reduction decisions.
+
+- 2026-09-29T19:01:36+00:00: Resume briefly to incorporate AR-1516 terminal evidence and route
+  capacity decision to AR-1309.
