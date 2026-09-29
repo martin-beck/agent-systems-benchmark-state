@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 80,
+  "task_revision": 81,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T06:07:31+00:00",
+  "updated_at": "2026-09-29T06:07:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -284,4 +284,7 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
   e863990689a3d5434e9dc00fecf982715c2f989c13c279e7e89c5293807a591b.
 
 - 2026-09-29T06:07:31+00:00: Recorded command exit 8; command argv SHA-256
+  e863990689a3d5434e9dc00fecf982715c2f989c13c279e7e89c5293807a591b.
+
+- 2026-09-29T06:07:54+00:00: Recorded command exit 8; command argv SHA-256
   e863990689a3d5434e9dc00fecf982715c2f989c13c279e7e89c5293807a591b.
