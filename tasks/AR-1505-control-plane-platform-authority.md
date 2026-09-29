@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 187,
+  "task_revision": 188,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:24:02+00:00",
+  "updated_at": "2026-09-29T00:24:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -768,3 +768,6 @@ public credential/socket paths, or weakening fail-closed gates.
   certificate.rs and control.rs. Corrective action: removed duplicate namespace fields, validation
   clauses, and initializer entries, leaving one field per request and response; the protocol patch
   is now structurally clean before runtime binding work.
+
+- 2026-09-29T00:24:25+00:00: Recorded command exit 1; command argv SHA-256
+  9e852b059163e2af1f047d98d6b7f49f3a1421d6c1288c9c0cab7c90b3e41fab.
