@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Monitor exact-head CI at da5e2a916b66de9f31f2c5bcccd1f59f7b3321d2; review found no remaining P1/P2 blockers.",
+  "next_action": "Continue monitoring the five remaining exact-head checks and fresh independent review; record all terminal results and keep PR unmerged.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 0,
   "observed_head": "da5e2a916b66de9f31f2c5bcccd1f59f7b3321d2",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 237,
+  "task_revision": 238,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:43:08+00:00",
+  "updated_at": "2026-09-29T00:43:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -951,3 +951,9 @@ public credential/socket paths, or weakening fail-closed gates.
   lease-root digest mismatch before provisioner creation; mismatch tests cover all three.
   launch_factory fencing and local cancellation remain intact from prior repair. No P1/P2 findings;
   no product changes or merge performed.
+
+- 2026-09-29T00:43:35+00:00: Exact-head da5e2a916b66de9f31f2c5bcccd1f59f7b3321d2 CI progressed:
+  SUCCESS credential-free benchmark, platform evidence, AWQ shadow, retained faults, Huawei SPDX
+  headers, bounded fuzz regressions, Kani proofs, and Loom/state models. IN_PROGRESS emulated
+  aarch64, TLC and Alloy, policy coverage supply chain, Rust checks, and matcher SLO sentinels. PR
+  remains OPEN with no reviews; no merge.
