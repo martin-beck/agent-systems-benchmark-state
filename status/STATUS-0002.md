@@ -200,12 +200,17 @@
 
 ## Complete AR inventory
 
-### Open (2)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | coordinator-portable-attestation-v14 | Unsigned-development capacity fixture is complete and no longer depends on a reviewed seed digest: validator accepts locally generated seeds for this explicit diagnostic profile, while signed/formal validation remains digest-pinned. v9 repairs cover state layout, exact-head Git provenance, offline TLC, and self-contained JDK; bounded boot reached transient RC=0 and launched TLC. Full state suite after the policy change passes 200 tests and 86 subtests. | Continue development qualification with any locally generated disposable seed and record qualification_authorized=false. Treat AR-1464/AR-1465 as formal-only archival work; do not block development or customer-facing mock/integration work on their seed. Formal/publication qualification remains a separate optional path requiring its own reviewed inputs. |
+
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1305](../tasks/AR-1305-image-native-user-session.md): Image-native user-session support | Unclaimed | Fresh immutable image v2 is reviewed for development use: base/package/result digests are recorded and a bounded network-disabled boot reaches user-session startup and FULL_EXHAUSTIVE_TRANSIENT_RC=0 without Transport endpoint failure. Development qualification does not depend on a reviewed seed digest; formal/publication qualification remains separate and optional. | Use any locally generated disposable seed with the explicit unsigned-development profile for further development tests. Do not block this AR on AR-1464/AR-1465 or a reviewed seed. If formal qualification is later authorized, open a new formal-only successor with its own reviewed-input contract. |
-| P0 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Unclaimed | Unsigned-development capacity fixture is complete and no longer depends on a reviewed seed digest: validator accepts locally generated seeds for this explicit diagnostic profile, while signed/formal validation remains digest-pinned. v9 repairs cover state layout, exact-head Git provenance, offline TLC, and self-contained JDK; bounded boot reached transient RC=0 and launched TLC. Full state suite after the policy change passes 200 tests and 86 subtests. | Continue development qualification with any locally generated disposable seed and record qualification_authorized=false. Treat AR-1464/AR-1465 as formal-only archival work; do not block development or customer-facing mock/integration work on their seed. Formal/publication qualification remains a separate optional path requiring its own reviewed inputs. |
 
 ### Blocked (75)
 
@@ -493,4 +498,3 @@
 | P0 | [AR-1398](../tasks/AR-1398-signed-protected-main-recovery.md): Signed protected-main recovery | Unclaimed | Restore signed+DCO protected-main evidence after an unsigned GitHub-generated repair merge. | Watch all seven exact-main workflows for merge b63394b; after terminal success, record conclusions and release AR-1398 done. |
 | P0 | [AR-1421](../tasks/AR-1421-protected-main-literature-merge-race.md): Protected-main literature merge race repair | Unclaimed | Repair protected-main merge-tree requalification after a literature PR merges onto an advanced main. | Release AR-1421 done: merged tree equals reviewed topic tree e5d99b7; parents are 5ddac12 and 28e3560; topic passes SSH signature and DCO. Seven exact-main workflows all terminal SUCCESS. |
 | P0 | [AR-1427](../tasks/AR-1427-protected-main-merge-tree-requalification.md): Protected-main merge-tree requalification repair | Unclaimed | Repair exact protected-main merge-tree requalification after sequential tutorial merges. | Promote and reproduce PR #310 merge f511645 versus reviewed topic 9d97e168; repair exact protected-main merge-tree requalification, then rerun AR-1215 post-merge evidence. |
-| P0 | [AR-1431](../tasks/AR-1431-protected-main-stale-base-repair.md): Protected-main stale-base merge requalification repair | Unclaimed | Prevent stale-base sequential merges from passing review but failing protected-main merge-tree policy. | Monitor seven post-merge workflows for exact merge ed907603; release AR-1431 only after all seven terminal success, then coordinate AR-1216 release. |
