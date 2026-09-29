@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T06:04:02+00:00",
+  "updated_at": "2026-09-29T06:04:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -254,3 +254,6 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
   passed; local check_coverage.py workspace plus asb-core/asb-protocol/asb-replay passed with floors
   unchanged (90 workspace, 95 critical). Hosted policy check at prior head failed only coverage
   89.96%; rerun required on repair head. Worktree clean and push confirmed.
+
+- 2026-09-29T06:04:11+00:00: Recorded command exit 0; command argv SHA-256
+  fdace47918dc480cb30f27fe64a3446e37cdf3c1c497a29b1dfd7e94473c14b3.
