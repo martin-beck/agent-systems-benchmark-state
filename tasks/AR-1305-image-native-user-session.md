@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1305-image-native-user-session",
-  "checkpoint_commit": "00a47726683609b7fef8ea5738fed5a3692fac29",
+  "checkpoint_commit": "89e13cf73e049a44e94d0d363de8891e29fcc2ac",
   "claim_expires": "2026-09-29T17:58:19+00:00",
   "depends_on": [
     "AR-1302"
   ],
   "id": "AR-1305",
-  "next_action": "Repair the disposable cloud-init/QEMU fixture: generate the NoCloud seed with user-data before meta-data, attach a writable data overlay, and make runcmd execute the bounded image-native systemd-run probe. Then rerun once and record FULL_EXHAUSTIVE_TRANSIENT_RC=0; do not claim formal attestation.",
+  "next_action": "No further development action. Preserve the generated-seed image-native evidence; any signed/formal/publication qualification must use a separate formal successor and must not block development.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "00a47726683609b7fef8ea5738fed5a3692fac29",
@@ -16,10 +16,10 @@
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Image v2 remains reviewed for development use, but the fresh generated-seed smoke was inconclusive: initial seed argument order caused userdata to be ignored, and the corrected run booted without executing runcmd. No formal evidence is claimed.",
-  "task_revision": 107,
+  "summary": "Development-complete: fresh image v2 plus writable disposable data overlay and locally generated unsigned-development seed reached FULL_EXHAUSTIVE_TRANSIENT_RC=0. Generator now provisions the UID-1000 asb user without default-user collision. Formal attestation is intentionally not claimed.",
+  "task_revision": 108,
   "title": "Image-native user-session support",
-  "updated_at": "2026-09-29T17:18:43+00:00",
+  "updated_at": "2026-09-29T17:19:35+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1305-image-native-user-session"
 }
 ---
@@ -382,3 +382,10 @@ limits and fail-closed behavior remain unchanged.
 
 - 2026-09-29T17:18:43+00:00: Recorded command exit 0; command argv SHA-256
   ccced930fe6aabf9f1bbbdb14073d74d7b0ee77dfbc8ec51eae83f373baa5389.
+
+- 2026-09-29T17:19:35+00:00: Repaired tools/guest_seed.py to create the required asb UID 1000 user
+  without the image default-user collision; focused 41 tests and full state suite 200 passed/86
+  subtests passed. Fresh-root QEMU run with generated disposable seed reached
+  FULL_EXHAUSTIVE_TRANSIENT_RC=0. Sanitized evidence:
+  /srv/data/projects/ar1308-development/diagnostic-ar1305-generated-seed-summary.txt. No reviewed
+  seed digest or formal attestation was required or claimed.

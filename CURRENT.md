@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1305](tasks/AR-1305-image-native-user-session.md): Image-native user-session support | Image v2 remains reviewed for development use, but the fresh generated-seed smoke was inconclusive: initial seed argument order caused userdata to be ignored, and the corrected run booted without executing runcmd. No formal evidence is claimed. | Repair the disposable cloud-init/QEMU fixture: generate the NoCloud seed with user-data before meta-data, attach a writable data overlay, and make runcmd execute the bounded image-native systemd-run probe. Then rerun once and record FULL_EXHAUSTIVE_TRANSIENT_RC=0; do not claim formal attestation. | coordinator-ar1305-devtest-20260929b |
+| P0 | [AR-1305](tasks/AR-1305-image-native-user-session.md): Image-native user-session support | Development-complete: fresh image v2 plus writable disposable data overlay and locally generated unsigned-development seed reached FULL_EXHAUSTIVE_TRANSIENT_RC=0. Generator now provisions the UID-1000 asb user without default-user collision. Formal attestation is intentionally not claimed. | No further development action. Preserve the generated-seed image-native evidence; any signed/formal/publication qualification must use a separate formal successor and must not block development. | coordinator-ar1305-devtest-20260929b |
 
 ## Blocked
 
