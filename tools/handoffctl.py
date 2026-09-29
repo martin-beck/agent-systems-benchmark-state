@@ -587,7 +587,12 @@ def render_current(tasks: list[Task]) -> str:
     def clean(value: object) -> str:
         return str(value or "-").replace("|", "\\|").replace("\n", " ")
 
-    for status in STATUSES:
+    # CURRENT is the compact operational queue. Complete historical inventory,
+    # including done/cancelled/superseded records, remains in STATUS.md and the
+    # task files; repeating it here makes the projection exceed its bounded
+    # state-file size and prevents new claims from being recorded.
+    actionable = ("in_progress", "open", "blocked", "planned", "future")
+    for status in actionable:
         rows = sorted(
             groups[status], key=lambda meta: (PRIORITIES.index(meta["priority"]), meta["id"])
         )

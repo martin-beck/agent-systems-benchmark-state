@@ -536,9 +536,12 @@ class HandoffTest(unittest.TestCase):
         current = CORE.render_current(CORE.all_tasks())
         self.assertIn("## Open", current)
         self.assertIn("[AR-0001]", current)
+        done = self.make_task("AR-0002", status="done")
+        self.assertNotIn("[AR-0002]", CORE.render_current(CORE.all_tasks()))
+        self.assertTrue(done.exists())
         status = CORE.render_status_view(CORE.all_tasks())
         self.assertIn("flowchart LR", status)
-        self.assertIn("**1 ARs tracked**", status)
+        self.assertIn("**2 ARs tracked**", status)
 
     def test_status_is_deterministic_complete_accessible_and_injection_safe(self) -> None:
         self.make_task(
