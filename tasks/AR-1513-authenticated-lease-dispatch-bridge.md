@@ -524,4 +524,4 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
   88e9f364a7f3d7a9c0a6b2399387eb9286a89d7ad0e21ebdc78e73c6f5bff981.
 
 - 2026-09-29T07:11:29+00:00: Recorded command exit 0; command argv SHA-256
-  52775fdb3faca708599b62a4ec07156acefc2c720384c3a8d2b46f88825d91c2.
+  21117094098b2364bae217ba70b85ae8881fc18f01a49e5fbd7c5885212604e1.
