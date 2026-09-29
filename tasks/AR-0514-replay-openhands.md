@@ -10,7 +10,7 @@
     "AR-0401"
   ],
   "id": "AR-0514",
-  "next_action": "Independent review and exact-head CI of 3ccee911; exact approved OpenHands environment digest remains unrecoverable, so native replay stays blocked pending AR-0521 pin-reproduction repair.",
+  "next_action": "Wait for AR-0521 to publish and independently verify the signed content-addressed OpenHands environment bundle, offline verifier, reproducible approved digest, and altered-input rejection; then reclaim AR-0514 for native replay requalification.",
   "observed_branch": "feature/replay-openhands",
   "observed_dirty": 0,
   "observed_head": "3ccee91118b3a43eda123b0107d04ea4c2e3d80a",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for OpenHands.",
-  "task_revision": 61,
+  "task_revision": 62,
   "title": "Qualify OpenHands replay",
-  "updated_at": "2026-09-29T10:12:48+00:00",
+  "updated_at": "2026-09-29T10:13:00+00:00",
   "worktree_key": "agent-systems-benchmark-replay-openhands"
 }
 ---
@@ -220,3 +220,6 @@ Qualify OpenHands record/replay, network denial, parity, retries, tool calls, ca
   the AR-0521 provenance gate, then release blocked again.
 
 - 2026-09-29T10:12:48+00:00: Claimed by ar0514-review-luna56.
+
+- 2026-09-29T10:13:00+00:00: Corrected stale operational next action after independent review; no
+  product changes.
