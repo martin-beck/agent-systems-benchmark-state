@@ -10,11 +10,11 @@
   "plan": "../plans/AR-1465-reviewed-seed-archival-recovery.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Expanded archival audit found no exact reviewed seed in approved state/runner roots, Git objects, the ASB product tree, seed-named second-disk files, or available GitHub Actions artifacts.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Reviewed full-exhaustive seed archival recovery",
-  "updated_at": "2026-09-26T22:21:50+00:00",
+  "updated_at": "2026-09-29T16:12:06+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1465-reviewed-seed-archival-recovery"
 }
 ---
@@ -112,3 +112,6 @@ needed by AR-1308. It must not weaken formal gates or invent equivalent input.
 
 - 2026-09-26T22:21:50+00:00: Returned blocked/ownerless after expanded search; no substitute seed or
   gate weakening.
+
+- 2026-09-29T16:12:06+00:00: Development path no longer depends on reviewed seed digests;
+  superseding formal-only archival recovery for development execution.
