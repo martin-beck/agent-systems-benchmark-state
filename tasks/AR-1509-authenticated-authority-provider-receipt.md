@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1509-authenticated-authority-provider-receipt",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-29T04:34:45+00:00",
+  "claim_expires": "2026-09-29T04:34:57+00:00",
   "depends_on": [
     "AR-1473",
     "AR-1474",
@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Replace the AR-1508 test fa\u00e7ade with an authenticated production authority-provider receipt and lifecycle fence.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Authenticated authority-provider receipt",
-  "updated_at": "2026-09-29T02:34:45+00:00",
+  "updated_at": "2026-09-29T02:34:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1509-authenticated-authority-provider-receipt"
 }
 ---
@@ -61,3 +61,5 @@ mock production authority, or weakening formal/privacy/native gates.
   the need for an independently verifiable production provider receipt and lifecycle fence.
 
 - 2026-09-29T02:34:45+00:00: Claimed by ar1509-receipt-luna56.
+
+- 2026-09-29T02:34:57+00:00: Heartbeat by ar1509-receipt-luna56.
