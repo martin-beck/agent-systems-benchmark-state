@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Unsigned-development diagnostic preflight passes with local seed; bounded network-disabled QEMU boot reaches cloud-init but fixture fails on missing data UUID and asb user. This is development evidence only.",
-  "task_revision": 576,
+  "task_revision": 577,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T13:23:53+00:00",
+  "updated_at": "2026-09-29T13:28:50+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1762,3 +1762,8 @@ must report `qualification_authorized: false`.
 - 2026-09-29T13:23:53+00:00: Released blocked for development repair: unsigned diagnostic path is
   available, but the disposable guest fixture needs UUID/data-image and asb-user repair before a
   meaningful development run.
+
+- 2026-09-29T13:28:50+00:00: Unsigned-development fixture v2 created asb user and UUID-backed data
+  disk. One bounded network-disabled QEMU boot reached cloud-init and transient cgroup RC=0, then
+  powered down; remaining development failure is state bind path because mounted state directory is
+  absent. No signing was used or required.
