@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1525](tasks/AR-1525.md): Repair stale authority dependency graph | Remove the obsolete AR-1370 dependency on superseded AR-1369 and preserve canonical authority evidence. | Promote after dependency verification; supersede stale AR-1370 and route remaining authority work through AR-1523. | coordinator-ar1525-authority-graph-20260930 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |

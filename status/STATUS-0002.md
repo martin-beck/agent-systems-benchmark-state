@@ -217,12 +217,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1525](../tasks/AR-1525.md): Repair stale authority dependency graph | coordinator-ar1525-authority-graph-20260930 | Remove the obsolete AR-1370 dependency on superseded AR-1369 and preserve canonical authority evidence. | Promote after dependency verification; supersede stale AR-1370 and route remaining authority work through AR-1523. |
-
 ### Blocked (78)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -366,7 +360,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (390)
+### Done (391)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -506,3 +500,4 @@
 | P0 | [AR-1384](../tasks/AR-1384-runtime-bootstrap-materialization.md): Runtime-owned bootstrap materialization | Unclaimed | Materialize the runtime-owned live bootstrap handle from authenticated authority. | Independent review complete; focused authority-profile tests (2), full asb-runtime tests (116 passed, 1 capability-gated ignored), fmt/check, and clippy -D warnings pass. Publish clean exact-head PR through handoffctl, then monitor exact-head CI. |
 | P0 | [AR-1385](../tasks/AR-1385-runtime-live-dispatch-source.md): Authenticated runtime live dispatch source | Unclaimed | Materialize the authenticated runtime-owned live dispatch source for production asb run and sweep. | PR #280 force-updated to signed+DCO exact head 02b79f3; monitor fresh required checks, repair only evidenced failures, then merge only after independent review and all checks green. |
 | P0 | [AR-1388](../tasks/AR-1388-runtime-authority-materializer.md): Runtime authority receipt materializer | Unclaimed | Materialize runtime-owned provider authority from authenticated receipt and chain state. | Done: original merge and AR-1389 replacement evidence verified; no further action remains. |
+| P0 | [AR-1389](../tasks/AR-1389-formal-fixture-exec-race.md): Formal fixture executable race repair | Unclaimed | Repair the formal online-build fixture race that caused ETXTBSY after AR-1388 merge. | Done: atomic fixture repair merged at 10bffbf015bd7ca78d8c0d18f04cf0190195e933 and all seven post-merge workflows passed. |
