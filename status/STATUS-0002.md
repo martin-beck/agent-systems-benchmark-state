@@ -206,11 +206,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1518](../tasks/AR-1518.md): C | Unclaimed | C | C |
+| P0 | [AR-1518](../tasks/AR-1518.md): C | a | C | C |
 
 ### Blocked (76)
 

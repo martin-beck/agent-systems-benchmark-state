@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1518](tasks/AR-1518.md): C | C | C | - |
+| P0 | [AR-1518](tasks/AR-1518.md): C | C | C | a |
 
 ## Blocked
 
