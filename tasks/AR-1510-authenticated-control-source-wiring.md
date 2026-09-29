@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1510-authenticated-control-source-wiring",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-29T11:11:22+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1505"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1510-authenticated-control-source-wiring",
   "observed_dirty": 0,
   "observed_head": "f92c2e941913129d7db50480f71e8361a0d43a0c",
-  "owner": "ar1510-control-source-luna56",
+  "owner": "",
   "plan": "../plans/AR-1510-authenticated-control-source-wiring.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide the authenticated platform control source and production lifecycle wiring required by the authority-provider receipt.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Authenticated control source and production provider wiring",
-  "updated_at": "2026-09-29T10:42:16+00:00",
+  "updated_at": "2026-09-29T10:42:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1510-authenticated-control-source-wiring"
 }
 ---
@@ -129,3 +129,16 @@ test-only façade publication, or weakening native/formal/privacy gates.
 
 - 2026-09-29T10:42:16+00:00: Recorded command exit 1; command argv SHA-256
   3aed3851a9b66faf3a9f2ffd112063afac835e7b3302c35a4077d5844834265d.
+
+- 2026-09-29T10:42:37+00:00: Protected-main audit at f92c2e941913129d7db50480f71e8361a0d43a0c after
+  AR-1505: certificate/receipt/bootstrap contracts exist and validate bindings, but AuthEnroll
+  persists only endpoint/credential locator metadata; RuntimeAuthorityRecord installation is private
+  and test-only; runtime materialize_provisioner has only test callsites; ordinary CLI live
+  run/sweep still rejects without an externally supplied LiveProviderAttemptFactory. No
+  authenticated platform authority issuer/provider or production control-client bootstrap callsite
+  exists. Implementing AR-1510 now would fabricate roots/tools/policy/allowlist/credential authority
+  or accept caller/PATH injection, violating fail-closed boundaries. Smallest successor: add a
+  runtime-owned authenticated process-material provider/issuer and production control client that
+  supplies private roots, namespace, pinned tools, policy/allowlist, credential capability, and
+  lifecycle fences, then wire ordinary CLI live run/sweep and scheduler transitions. Do not derive
+  authority from public digest-only records or caller-provided factories.
