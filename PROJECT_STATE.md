@@ -22,14 +22,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36568752123 | `d59e6a76a1c7` | push | Credential-free benchmark path | in_progress:- |
-| 36568751966 | `d59e6a76a1c7` | push | Repository quality | in_progress:- |
-| 36568751891 | `d59e6a76a1c7` | push | Fault assurance | in_progress:- |
+| 36568752123 | `d59e6a76a1c7` | push | Credential-free benchmark path | completed:success |
+| 36568751966 | `d59e6a76a1c7` | push | Repository quality | completed:success |
+| 36568751891 | `d59e6a76a1c7` | push | Fault assurance | completed:success |
 | 36568751882 | `d59e6a76a1c7` | push | Huawei MIT source headers | completed:success |
-| 36568751877 | `d59e6a76a1c7` | push | Formal assurance | in_progress:- |
-| 36568751799 | `d59e6a76a1c7` | push | Emulated aarch64 portability | in_progress:- |
-| 36568751779 | `d59e6a76a1c7` | push | Rust verification | in_progress:- |
-| 36568751695 | `d59e6a76a1c7` | push | Hosted portability and native qualification | in_progress:- |
+| 36568751877 | `d59e6a76a1c7` | push | Formal assurance | completed:success |
+| 36568751799 | `d59e6a76a1c7` | push | Emulated aarch64 portability | completed:success |
+| 36568751779 | `d59e6a76a1c7` | push | Rust verification | completed:success |
+| 36568751695 | `d59e6a76a1c7` | push | Hosted portability and native qualification | completed:success |
 | 36567744949 | `0ea9671224ff` | pull_request | Emulated aarch64 portability | completed:success |
 | 36567744933 | `0ea9671224ff` | pull_request | Credential-free benchmark path | completed:success |
 | 36567744871 | `0ea9671224ff` | pull_request | Fault assurance | completed:success |
