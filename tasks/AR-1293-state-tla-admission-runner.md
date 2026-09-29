@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1293-state-tla-admission",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-29T16:24:05+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1293",
   "next_action": "Use the generated-seed unsigned-development path for provider-free runner and integration tests, recording qualification_authorized=false. Do not wait on archival seed recovery; create a separate formal-only successor only if signed publication qualification is explicitly requested.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "f1931686c9297f5661446bf1871870b659d69684",
-  "owner": "coordinator-dev-seed-policy-20260929",
+  "owner": "",
   "plan": "../plans/AR-1293.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Development runner work may proceed with locally generated disposable seeds under unsigned-development; reviewed seed digests are not a development prerequisite. Formal/publication qualification remains separate and is not claimed.",
-  "task_revision": 750,
+  "task_revision": 751,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-29T16:14:15+00:00",
+  "updated_at": "2026-09-29T16:14:18+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -2248,3 +2248,6 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-29T16:14:15+00:00: Updated dependency language to remove seed-digest blocking from
   development while preserving the formal runner/resource contract and fail-closed signed profile.
+
+- 2026-09-29T16:14:18+00:00: Released after removing development seed-digest dependency; remaining
+  blockers are runner implementation/formal transition, not generated-seed availability.

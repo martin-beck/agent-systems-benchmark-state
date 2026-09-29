@@ -200,19 +200,13 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | coordinator-dev-seed-policy-20260929 | Development runner work may proceed with locally generated disposable seeds under unsigned-development; reviewed seed digests are not a development prerequisite. Formal/publication qualification remains separate and is not claimed. | Use the generated-seed unsigned-development path for provider-free runner and integration tests, recording qualification_authorized=false. Do not wait on archival seed recovery; create a separate formal-only successor only if signed publication qualification is explicitly requested. |
-
 ### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1305](../tasks/AR-1305-image-native-user-session.md): Image-native user-session support | Unclaimed | Fresh immutable image v2 is reviewed for development use: base/package/result digests are recorded and a bounded network-disabled boot reaches user-session startup and FULL_EXHAUSTIVE_TRANSIENT_RC=0 without Transport endpoint failure. Development qualification does not depend on a reviewed seed digest; formal/publication qualification remains separate and optional. | Use any locally generated disposable seed with the explicit unsigned-development profile for further development tests. Do not block this AR on AR-1464/AR-1465 or a reviewed seed. If formal qualification is later authorized, open a new formal-only successor with its own reviewed-input contract. |
 
-### Blocked (75)
+### Blocked (76)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -248,6 +242,7 @@
 | P0 | [AR-1283](../tasks/AR-1283-formal-lockfile.md): Formal lockfile CI drift repair | Unclaimed | Repair formal workspace lockfile drift that fails the locked CI gate. | Promote after dependency verification; regenerate and verify formal/Cargo.lock so hosted --locked formal tests do not attempt updates. |
 | P0 | [AR-1284](../tasks/AR-1284-runtime-strict-replay-lifecycle.md): Runtime-owned strict-replay lifecycle execution | Unclaimed | Connect authenticated replay transport to the runtime-owned primary strict-replay lifecycle. | Split a runtime-owned launch-factory/CLI entrypoint successor: current protected main has only caller-constructible ReplayTransportIssuer and SandboxBackend APIs, so AR-1284 cannot safely wire primary replay without fabricating authority. |
 | P0 | [AR-1292](../tasks/AR-1292-tla-provenance-repair.md): Pinned TLA+ artifact provenance repair | Unclaimed | Repair or formally retain the pinned TLA+ artifact provenance mismatch blocking formal assurance. | Await signed or attested immutable TLA+ v1.8.0 provenance, or deterministic source-build qualification for 142d0ba; do not update hash only. |
+| P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Unclaimed | Development runner work may proceed with locally generated disposable seeds under unsigned-development; reviewed seed digests are not a development prerequisite. Formal/publication qualification remains separate and is not claimed. | Use the generated-seed unsigned-development path for provider-free runner and integration tests, recording qualification_authorized=false. Do not wait on archival seed recovery; create a separate formal-only successor only if signed publication qualification is explicitly requested. |
 | P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Unclaimed | Runner implementation remains blocked for its unrelated formal CI OOM/publication transition, but development execution no longer depends on a reviewed seed digest. The explicit unsigned-development profile accepts locally generated disposable seeds and remains qualification_authorized=false. | Continue provider-free development tests with generated seeds through the unsigned-development profile. Do not make AR-1307 or its dependents wait for archival seed recovery; if formal/publication qualification is later authorized, use a separate formal-only successor with reviewed inputs. |
 | P0 | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Unclaimed | Unsigned-development capacity fixture is complete and no longer depends on a reviewed seed digest: the validator accepts locally generated seeds for this explicit diagnostic profile, while signed/formal validation remains digest-pinned. v9 fixture repairs cover state layout, exact-head Git provenance, offline TLC, and self-contained JDK; bounded boot reached transient RC=0 and launched TLC. | Continue development qualification with any locally generated disposable seed and record qualification_authorized=false. Treat AR-1464/AR-1465 as formal-only archival work; do not block development or customer-facing mock/integration work on their seed. Formal/publication qualification remains a separate optional path requiring its own reviewed inputs. |
 | P0 | [AR-1355](../tasks/AR-1355-runtime-attested-enrollment-record.md): Runtime-attested enrollment record transport | Unclaimed | Transport runtime-attested enrollment authority without exposing it to the CLI. | Implement the runtime/control-owned attested enrollment-record transport, validate target/tool/lease/relay authority inside asb-runtime, mint opaque handles, then consume them in asb run/sweep with positive and negative tests. |
