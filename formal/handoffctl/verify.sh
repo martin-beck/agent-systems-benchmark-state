@@ -26,11 +26,24 @@ readonly MANIFEST="${TEMP_DIR}/outcomes.manifest"
 : > "${MANIFEST}"
 trap 'rm -rf -- "${TEMP_DIR}"' EXIT
 
-readonly JAR="${TEMP_DIR}/tla2tools.jar"
-readonly URL="https://github.com/tlaplus/tlaplus/releases/download/v${TLA_VERSION}/tla2tools.jar"
-
-curl --fail --location --retry 3 --show-error --silent --output "${JAR}" "${URL}"
-printf '%s  %s\n' "${TLA_SHA256}" "${JAR}" | sha256sum --check --strict
+readonly PRELOADED_JAR="${TLC_JAR_PATH:-}"
+readonly EXPECTED_JAR_SHA256="${TLC_JAR_SHA256:-${TLA_SHA256}}"
+if [[ ! "${EXPECTED_JAR_SHA256}" =~ ^[0-9a-fA-F]{64}$ ]]; then
+    echo "TLC_JAR_SHA256 must be a 64-character hexadecimal digest" >&2
+    exit 78
+fi
+if [[ -n "${PRELOADED_JAR}" ]]; then
+    if [[ -L "${PRELOADED_JAR}" || ! -f "${PRELOADED_JAR}" ]]; then
+        echo "TLC_JAR_PATH must name a regular preloaded JAR" >&2
+        exit 78
+    fi
+    readonly JAR="${PRELOADED_JAR}"
+else
+    readonly JAR="${TEMP_DIR}/tla2tools.jar"
+    readonly URL="https://github.com/tlaplus/tlaplus/releases/download/v${TLA_VERSION}/tla2tools.jar"
+    curl --fail --location --retry 3 --show-error --silent --output "${JAR}" "${URL}"
+fi
+printf '%s  %s\n' "${EXPECTED_JAR_SHA256}" "${JAR}" | sha256sum --check --strict
 
 run_model() {
     local model="$1"

@@ -534,6 +534,9 @@ class TlcRunnerTests(unittest.TestCase):
     def test_verify_requires_preloaded_digest_pinned_jar_without_network_fallback(self) -> None:
         verify = (ROOT / "formal/handoffctl/verify.sh").read_text(encoding="utf-8")
         self.assertIn("TLC_RUNTIME_ROOT:-/srv/data/projects/.asb-tlc", verify)
+        self.assertIn('PRELOADED_JAR="${TLC_JAR_PATH:-}"', verify)
+        self.assertIn('if [[ -n "${PRELOADED_JAR}" ]]', verify)
+        self.assertIn('TLC_JAR_PATH must name a regular preloaded JAR', verify)
         self.assertIn("curl --fail", verify)
         self.assertIn("sha256sum --check --strict", verify)
 
