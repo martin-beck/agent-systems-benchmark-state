@@ -1,13 +1,13 @@
 ---
 {
   "branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
-  "checkpoint_commit": "df0e402f442468e43e06b7c1acb3c3667277fb75",
+  "checkpoint_commit": "c8a0c83a7c0d3a7b6bfa2bcbb9bc80f95c60e7bd",
   "claim_expires": "2026-09-29T18:50:44+00:00",
   "depends_on": [
     "AR-1304"
   ],
   "id": "AR-1308",
-  "next_action": "Repair the remaining portable-smoke path-resolution fixture defect so both output and preloaded TLC paths resolve under the guest bind root, rerun one bounded portable-smoke boot, and record PORTABLE_SMOKE_EVIDENCE_OK. Continue using locally generated seeds; reviewed seed digests are not a development prerequisite.",
+  "next_action": "Path handling is repaired: verify.sh now honors a regular preloaded TLC_JAR_PATH, and tlc_runner derives worker queues/temp/lock from a bounded TLC_RUNTIME_ROOT under /srv/data/projects. Rerun portable-smoke on a capacity-available disposable runner and record PORTABLE_SMOKE_EVIDENCE_OK; do not weaken required resource bounds or substitute reviewed seeds.",
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
@@ -16,10 +16,10 @@
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Unsigned-development capacity and exact-head fixture remain repaired; generated-seed validation passes. Portable-smoke v14 reaches PORTABLE_SMOKE_TRANSIENT_RC=0 and powers off, but attest.py still rejects one resolved guest input path as outside /srv/data/projects, so no portable attestation is claimed yet. Full state suite remains 200 passed/86 subtests.",
-  "task_revision": 614,
+  "summary": "Development fixture path defect repaired and focused tests pass, but portable-smoke still fails closed at TLC JVM startup with pthread_create EAGAIN (host runner capacity), before attestation. No seed-digest blocker remains and no formal qualification is claimed.",
+  "task_revision": 615,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T17:26:21+00:00",
+  "updated_at": "2026-09-29T17:27:03+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1885,3 +1885,9 @@ must report `qualification_authorized: false`.
 
 - 2026-09-29T17:26:21+00:00: Recorded command exit 1; command argv SHA-256
   1b3c2d0191c1a611d03377cb98d0d3925fc45e8a54d4f96b3ba168a7a8bd08bf.
+
+- 2026-09-29T17:27:03+00:00: Source commits fix preloaded offline JAR handling and bounded
+  runtime-root propagation. Exact preloaded JAR digest was accepted and the previous outside-root
+  error disappeared; the next diagnostic failed only at JVM thread creation EAGAIN even with reduced
+  diagnostic workers/heap. Full state suite remains to be rerun after source change; retain this as
+  a runner-capacity blocker, not a seed blocker.
