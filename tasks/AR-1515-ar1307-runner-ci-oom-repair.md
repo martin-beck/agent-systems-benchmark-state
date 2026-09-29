@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1515",
-  "next_action": "Promote after AR-1307; reproduce, repair, and rerun gates.",
+  "next_action": "No runner source repair remains; AR-1309 owns the separately reviewed capacity/model-reduction decision.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -16,10 +16,10 @@
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Repair runner OOM/admission failure without widening its contract.",
-  "task_revision": 3,
+  "summary": "Triage complete: AR-1307 runner admission and diagnostics are intact; remaining failure is workload capacity under the unchanged 3G/3G contract.",
+  "task_revision": 4,
   "title": "AR-1307 runner CI repair",
-  "updated_at": "2026-09-29T19:02:06+00:00",
+  "updated_at": "2026-09-29T19:03:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1515-ar1307-runner-ci-oom-repair"
 }
 ---
@@ -33,3 +33,7 @@ evidence. Generated disposable seeds are sufficient for development tests.
   runner failure repair.
 
 - 2026-09-29T19:02:06+00:00: Claimed by coordinator-ar1515-runner-ci-20260929.
+
+- 2026-09-29T19:03:19+00:00: Reviewed AR-1307 terminal evidence and current runner paths. The
+  failure is Java liveness OOM/nonterminal capacity, not a runner admission defect; no contract
+  widening or code mutation is justified.

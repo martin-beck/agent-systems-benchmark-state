@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1515](tasks/AR-1515-ar1307-runner-ci-oom-repair.md): AR-1307 runner CI repair | Repair runner OOM/admission failure without widening its contract. | Promote after AR-1307; reproduce, repair, and rerun gates. | coordinator-ar1515-runner-ci-20260929 |
+| P0 | [AR-1515](tasks/AR-1515-ar1307-runner-ci-oom-repair.md): AR-1307 runner CI repair | Triage complete: AR-1307 runner admission and diagnostics are intact; remaining failure is workload capacity under the unchanged 3G/3G contract. | No runner source repair remains; AR-1309 owns the separately reviewed capacity/model-reduction decision. | coordinator-ar1515-runner-ci-20260929 |
 
 ## Blocked
 
