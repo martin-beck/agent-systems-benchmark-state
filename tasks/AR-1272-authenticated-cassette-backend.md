@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1272-authenticated-cassette-backend",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T12:13:42+00:00",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1272-authenticated-cassette-backend",
   "observed_dirty": 0,
   "observed_head": "85c0f5bc558c90f0543424cdb37017a824c227bb",
-  "owner": "",
+  "owner": "ar1272-cassette-backend-luna56",
   "plan": "../plans/AR-1272.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Bind immutable cassette content to a runtime-authenticated replay backend handle.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Authenticated immutable cassette backend",
-  "updated_at": "2026-09-29T11:43:39+00:00",
+  "updated_at": "2026-09-29T11:43:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1272-cassette-backend"
 }
 ---
@@ -126,3 +126,5 @@ paths as authority.
 - 2026-09-29T11:43:39+00:00: AR-1271 independently confirmed the missing runtime-authenticated
   cassette backend; advance AR-1272 to complete immutable backend capability and supervised replay
   handoff.
+
+- 2026-09-29T11:43:42+00:00: Claimed by ar1272-cassette-backend-luna56.
