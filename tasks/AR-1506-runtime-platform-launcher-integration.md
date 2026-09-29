@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect the merged authenticated platform authority/bootstrap protocol to production ASB process startup and ordinary CLI dispatch.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Runtime platform launcher integration",
-  "updated_at": "2026-09-29T01:53:05+00:00",
+  "updated_at": "2026-09-29T01:54:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1506-runtime-platform-launcher-integration"
 }
 ---
@@ -84,3 +84,6 @@ production evidence.
   merge f92c2e941913129d7db50480f71e8361a0d43a0c. AR-1505 bootstrap/chain/receipt and opaque
   dispatch APIs are present, but asb-cli::run still dispatches with None,None and no runtime
   platform adapter consumes RuntimeControlBootstrap. Next action is the narrow adapter/wiring slice.
+
+- 2026-09-29T01:54:46+00:00: Recorded command exit 0; command argv SHA-256
+  b945362378f77f64a68eb9e8d400e693e008357f0cc0d69f7bfe3bb93e47ae02.
