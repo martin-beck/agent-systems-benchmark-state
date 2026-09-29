@@ -212,7 +212,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1518](../tasks/AR-1518.md): C | coordinator-ar1518-repair-close-20260929 | Separate 8G/8G/16G capacity tier implemented; focused and full state tests pass. | Run the capacity-profile QEMU qualification, then independently review and publish the exact head. |
+| P0 | [AR-1518](../tasks/AR-1518.md): C | coordinator-ar1518-repair-close-20260929 | Capacity profile boots and runs, but the 1700-second bounded QEMU attempt timed out without terminal TLC result or attestation. | Use AR-1519 for separately scoped reduced-model development; do not claim AR-1307 or AR-1308 formal qualification. |
 
 ### Blocked (76)
 
