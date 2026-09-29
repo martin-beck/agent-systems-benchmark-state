@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Complete production asb run/sweep live-provider dispatch through runtime-owned authenticated acquisition and teardown.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "AR-1329 production dispatch integration",
-  "updated_at": "2026-09-29T22:29:51+00:00",
+  "updated_at": "2026-09-29T22:30:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1367-ar1329-production-dispatch-integration"
 }
 ---
@@ -100,3 +100,6 @@ reachability.
   d1c8186c6c83e370a511410072acacb20cb44ca600da6d9a56b39214a6e9f7fd.
 
 - 2026-09-29T22:29:51+00:00: Heartbeat by coordinator-ar1367-production-dispatch-20260930.
+
+- 2026-09-29T22:30:00+00:00: Recorded command exit 0; command argv SHA-256
+  1f77f0a8a53061fcd85f9fe998aefee958ccee86048f742e3840d8ca5d8b8fa5.
