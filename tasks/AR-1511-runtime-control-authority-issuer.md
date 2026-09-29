@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1511-runtime-control-authority-issuer",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-29T05:24:10+00:00",
+  "claim_expires": "2026-09-29T05:29:12+00:00",
   "depends_on": [
     "AR-1502",
     "AR-1484"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T03:28:21+00:00",
+  "updated_at": "2026-09-29T03:29:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
@@ -153,3 +153,5 @@ production authority, or weakening fail-closed/native/formal gates.
 
 - 2026-09-29T03:28:21+00:00: Recorded command exit 0; command argv SHA-256
   75c78d32767dce560bf5f297627c4f938f132975bbcda14d85ca271d3cd6f91e.
+
+- 2026-09-29T03:29:12+00:00: Heartbeat by ar1511-authority-issuer-luna56.
