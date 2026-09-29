@@ -17,11 +17,11 @@
   "plan": "../plans/AR-1272.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Bind immutable cassette content to a runtime-authenticated replay backend handle.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Authenticated immutable cassette backend",
-  "updated_at": "2026-09-16T23:28:23+00:00",
+  "updated_at": "2026-09-29T11:43:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1272-cassette-backend"
 }
 ---
@@ -122,3 +122,7 @@ paths as authority.
   argument-level dispatch with runtime-owned record/route/request/isolation and supervised
   egress/cancel/restart/timeout/crash cleanup remains unimplemented. Do not claim wrapper-only
   execution as acceptance.
+
+- 2026-09-29T11:43:39+00:00: AR-1271 independently confirmed the missing runtime-authenticated
+  cassette backend; advance AR-1272 to complete immutable backend capability and supervised replay
+  handoff.
