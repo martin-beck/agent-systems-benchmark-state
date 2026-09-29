@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated process-owner material source and ordinary CLI/control caller needed to consume runtime authority.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Authenticated process-owner material contract",
-  "updated_at": "2026-09-29T04:58:06+00:00",
+  "updated_at": "2026-09-29T04:58:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1512-process-owner-material-contract"
 }
 ---
@@ -68,3 +68,6 @@ host data, synthetic authority, or weakening fail-closed/native/formal gates.
 - 2026-09-29T04:58:06+00:00: Setup audit: authoritative AR-1512 state is ASB state checkout;
   protected main is f92c2e941913129d7db50480f71e8361a0d43a0c. Existing product main is dirty and
   AR-1511 work must not be reused. Starting isolated worktree and contract audit.
+
+- 2026-09-29T04:58:44+00:00: Recorded command exit 0; command argv SHA-256
+  227bd2b8f251398a28e02809a6a2e32716ea68be7d6a13f02381b8daf3223aa1.
