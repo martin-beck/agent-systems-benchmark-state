@@ -3,11 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1308](tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Unsigned-development diagnostic preflight passes with local seed; bounded network-disabled QEMU boot reaches cloud-init but fixture fails on missing data UUID and asb user. This is development evidence only. | Repair the development-only guest fixture: create the expected UUID-backed data image and asb user, regenerate the local NoCloud seed, rerun unsigned-development preflight and one bounded network-disabled boot. Do not label it signed qualification or release evidence. | coordinator-ar1308-development-v2 |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1308](tasks/AR-1308-full-exhaustive-qemu-capacity.md): Full-exhaustive QEMU capacity qualification | Unsigned-development diagnostic preflight passes with local seed; bounded network-disabled QEMU boot reaches cloud-init but fixture fails on missing data UUID and asb user. This is development evidence only. | Repair the development-only guest fixture: create the expected UUID-backed data image and asb user, regenerate the local NoCloud seed, rerun unsigned-development preflight and one bounded network-disabled boot. Do not label it signed qualification or release evidence. | - |
 | P0 | [AR-1514](tasks/AR-1514-runtime-auth-reconciliation.md): Reconciled development auth handoff runtime | Repair ASB development-runtime reconciliation between digest-only enrollment and helper invocation. | Implement and qualify the disposable runtime reconciliation repair, then rerun the v1.10 helper handoff and capture successful digest-only AuthStatus for paired asb-tui AR-1323. | - |
 
 ## Blocked

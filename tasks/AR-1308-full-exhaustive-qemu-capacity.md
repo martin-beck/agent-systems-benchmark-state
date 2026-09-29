@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "checkpoint_commit": "df0e402f442468e43e06b7c1acb3c3667277fb75",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T13:38:53+00:00",
   "depends_on": [
     "AR-1304"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
-  "owner": "",
+  "owner": "coordinator-ar1308-development-v2",
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Unsigned-development diagnostic preflight passes with local seed; bounded network-disabled QEMU boot reaches cloud-init but fixture fails on missing data UUID and asb user. This is development evidence only.",
-  "task_revision": 577,
+  "task_revision": 578,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T13:28:50+00:00",
+  "updated_at": "2026-09-29T13:28:53+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1767,3 +1767,5 @@ must report `qualification_authorized: false`.
   disk. One bounded network-disabled QEMU boot reached cloud-init and transient cgroup RC=0, then
   powered down; remaining development failure is state bind path because mounted state directory is
   absent. No signing was used or required.
+
+- 2026-09-29T13:28:53+00:00: Claimed by coordinator-ar1308-development-v2.
