@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
   "checkpoint_commit": "47329e35c03bf20505ce65c7a29487ab97c52ee9",
-  "claim_expires": "2026-09-29T09:47:03+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1502",
     "AR-1484"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
   "observed_dirty": 0,
   "observed_head": "8b9b41c904c6e850b6f354960181b1b2191ea6ac",
-  "owner": "ar1513-repair4-luna56",
+  "owner": "",
   "plan": "../plans/AR-1513-authenticated-lease-dispatch-bridge.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 386,
+  "task_revision": 387,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T09:39:59+00:00",
+  "updated_at": "2026-09-29T09:48:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -1093,3 +1093,10 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
 - 2026-09-29T09:39:59+00:00: Guarded exact-head merge completed through handoffctl run with
   match-head 8b9b41c. Merge commit 47329e35 created; all required pre-merge checks and independent
   review were green. Post-merge assurance is now pending.
+
+- 2026-09-29T09:48:33+00:00: AR-1513 complete: PR #383 exact signed head 8b9b41c merged as protected
+  main 47329e35. Remote main verified at 47329e35. Post-merge workflows all terminal success:
+  Repository quality 36550477933; Credential-free benchmark path 36550477996; Emulated aarch64
+  36550478002; Fault assurance 36550478037; Hosted portability/native qualification 36550478039;
+  Rust verification 36550478042; Formal assurance 36550478232. Independent review found no remaining
+  P1/P2 findings. Product tree clean and durable evidence recorded.
