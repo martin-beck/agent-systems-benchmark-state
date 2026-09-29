@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1523](tasks/AR-1523.md): Platform authority deployment adapter | Audit complete: current protocol provides authenticated digest receipts only and the CLI composition still accepts caller-supplied private owner inputs; no safe platform authority source exists to implement this AR without a deployment owner. | Remain blocked until a runtime/control deployment owner supplies an authenticated private authority source and opaque materialization handoff. Then replace the public owner-input composition, wire ordinary run/sweep, and run exact-head gates. | - |
+| P0 | [AR-1523](tasks/AR-1523.md): Platform authority deployment adapter | Audit complete: current protocol provides authenticated digest receipts only and the CLI composition still accepts caller-supplied private owner inputs; no safe platform authority source exists to implement this AR without a deployment owner. | Remain blocked until a runtime/control deployment owner supplies an authenticated private authority source and opaque materialization handoff. Then replace the public owner-input composition, wire ordinary run/sweep, and run exact-head gates. | coordinator-ar1523-live-orchestrator-20260930 |
 
 ## Blocked
 
