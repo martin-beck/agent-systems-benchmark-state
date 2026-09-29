@@ -10,17 +10,17 @@
   "id": "AR-1511",
   "next_action": "Authority issuer module added on clean protected-main worktree; run focused cargo checks, repair compiler/lint failures, then add deterministic issuer tests and generated contract documentation.",
   "observed_branch": "feature/ar-1511-runtime-control-authority-issuer",
-  "observed_dirty": 4,
-  "observed_head": "f92c2e941913129d7db50480f71e8361a0d43a0c",
+  "observed_dirty": 0,
+  "observed_head": "1a26b02e2b6de485e930a0448d7fe5d34aed3061",
   "owner": "ar1511-authority-issuer-luna56",
   "plan": "../plans/AR-1511-runtime-control-authority-issuer.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T03:24:10+00:00",
+  "updated_at": "2026-09-29T03:24:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
