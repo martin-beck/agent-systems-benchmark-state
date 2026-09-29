@@ -2,7 +2,7 @@
 {
   "branch": "feature/replay-openhands",
   "checkpoint_commit": "3ccee91118b3a43eda123b0107d04ea4c2e3d80a",
-  "claim_expires": "2026-09-29T10:25:44+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0309",
     "AR-0503",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/replay-openhands",
   "observed_dirty": 0,
   "observed_head": "3ccee91118b3a43eda123b0107d04ea4c2e3d80a",
-  "owner": "coordinator",
+  "owner": "",
   "plan": "../plans/AR-0514.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Qualify replay conformance for OpenHands.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Qualify OpenHands replay",
-  "updated_at": "2026-09-29T10:15:44+00:00",
+  "updated_at": "2026-09-29T10:15:47+00:00",
   "worktree_key": "agent-systems-benchmark-replay-openhands"
 }
 ---
@@ -233,3 +233,6 @@ Qualify OpenHands record/replay, network denial, parity, retries, tool calls, ca
   circular AR-0521 dependency while preserving AR-0514 blocked provenance gate.
 
 - 2026-09-29T10:15:44+00:00: Claimed by coordinator.
+
+- 2026-09-29T10:15:47+00:00: AR-0514 remains blocked after independent review of 3ccee911; AR-0521
+  is now promoted to repair its immutable environment provenance without circular dependency.
