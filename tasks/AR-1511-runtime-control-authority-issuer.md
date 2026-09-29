@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1511-runtime-control-authority-issuer",
   "checkpoint_commit": "673b486ba89917e3bb08c884ee17e708e0776b07",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T06:29:31+00:00",
   "depends_on": [
     "AR-1502",
     "AR-1484"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1511-runtime-control-authority-issuer",
   "observed_dirty": 0,
   "observed_head": "673b486ba89917e3bb08c884ee17e708e0776b07",
-  "owner": "",
+  "owner": "ar1511-production-path-luna56",
   "plan": "../plans/AR-1511-runtime-control-authority-issuer.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 136,
+  "task_revision": 137,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T04:29:23+00:00",
+  "updated_at": "2026-09-29T04:29:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
@@ -467,3 +467,5 @@ production authority, or weakening fail-closed/native/formal gates.
 - 2026-09-29T04:29:23+00:00: Independent exact-head review of 673b486 found P1: dispatch/provider
   remains test-only with no ordinary CLI production caller or non-test material producer; preserve
   clean signed head and assign final production-path repair.
+
+- 2026-09-29T04:29:31+00:00: Claimed by ar1511-production-path-luna56.
