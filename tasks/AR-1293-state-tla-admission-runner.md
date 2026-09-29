@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1293-state-tla-admission",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T16:24:05+00:00",
   "depends_on": [],
   "id": "AR-1293",
   "next_action": "Blocked: AR-1307 remote head ab485f767 != required 969eef058. AR-1308 preflight had 4.9 GiB free vs 16 GiB minimum and missing lock/JDK/TLC at runtime root. Reopen only with exact input bundle and passing preflight; do not run TLC locally.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "f1931686c9297f5661446bf1871870b659d69684",
-  "owner": "",
+  "owner": "coordinator-dev-seed-policy-20260929",
   "plan": "../plans/AR-1293.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 748,
+  "task_revision": 749,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-29T16:14:02+00:00",
+  "updated_at": "2026-09-29T16:14:05+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -2243,3 +2243,5 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-29T16:14:02+00:00: Development profile no longer depends on reviewed seed digests; update
   dependency transition while preserving formal qualification gates.
+
+- 2026-09-29T16:14:05+00:00: Claimed by coordinator-dev-seed-policy-20260929.
