@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Independent review complete; run git diff check and exact-head status, create SSH-signed DCO repair commit on existing branch, then push existing PR #382 and request fresh review.",
+  "next_action": "Apply the fence-retention patch correctly, rerun serial fmt check and focused tests, then sign and commit the product repair.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 2,
   "observed_head": "baa13ea675de2160dcf58f69b106e255f2c3d8de",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 163,
+  "task_revision": 164,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:13:34+00:00",
+  "updated_at": "2026-09-29T00:14:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -656,3 +656,11 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-29T00:13:34+00:00: Recorded command exit 2; command argv SHA-256
   48458d4adcbc2714c4ae60f17ec39d916357031118af6e75d9a5cd826c73f20e.
+
+- 2026-09-29T00:14:19+00:00: 00:13:34Z product mutation failed: handoffctl run with apply_patch
+  heredoc exited 2. Exact stderr: Usage: apply_patch PATCH; echo PATCH pipe apply_patch. This
+  happened because argv execution does not provide a shell or heredoc. Product files were unchanged
+  and still contain the expected two-file dirty diff. State reconciliation commits 4a20edb8c and
+  2757422ea were created by the coordinator and are state maintenance, not product work. Corrective
+  action is to apply the narrow fence-retention patch using the supported patch mechanism, then
+  verify the product diff.
