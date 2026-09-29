@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1529](tasks/AR-1529.md): AR-1307/1308 formal capacity decision successor | Replace the stale AR-1309 dependency with a reviewed formal capacity/model decision grounded in the completed capacity and reduced-profile evidence. | Promote after dependency verification; review AR-1517/AR-1520 and record the narrow formal capacity/model contract for AR-1307/1308 without requiring a development seed archive. | - |
+| P0 | [AR-1529](tasks/AR-1529.md): AR-1307/1308 formal capacity decision successor | Replace the stale AR-1309 dependency with a reviewed formal capacity/model decision grounded in the completed capacity and reduced-profile evidence. | Promote after dependency verification; review AR-1517/AR-1520 and record the narrow formal capacity/model contract for AR-1307/1308 without requiring a development seed archive. | coordinator-ar1529-capacity-decision-20260930 |
 
 ## Blocked
 
