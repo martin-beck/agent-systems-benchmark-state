@@ -3,7 +3,9 @@
   "branch": "",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1304"],
+  "depends_on": [
+    "AR-1304"
+  ],
   "id": "AR-1517",
   "next_action": "Promote after AR-1304; classify evidence and select AR-1309's capacity/model contract.",
   "observed_branch": "",
@@ -13,11 +15,11 @@
   "plan": "../plans/AR-1517-ar1309-capacity-decision-unblock.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Unblock AR-1309 with a reviewed capacity/model contract after the runner failures.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "AR-1309 capacity decision unblock",
-  "updated_at": "2026-09-29T19:10:00+00:00",
+  "updated_at": "2026-09-29T19:05:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1517-ar1309-capacity-decision-unblock"
 }
 ---
@@ -25,3 +27,6 @@
 This is a decision and contract AR, not permission to widen existing formal
 limits. It preserves the distinction between provider-free development tests,
 formal qualification, and first-customer production readiness.
+
+- 2026-09-29T19:05:20+00:00: Completed AR-1304 dependency verified; promote independent
+  capacity/model decision successor using terminal AR-1307/1308 evidence.
