@@ -10,17 +10,17 @@
   "id": "AR-1513",
   "next_action": "Run docs/formal/privacy gates and inspect exact diff; then sign DCO commit and request independent exact-head review.",
   "observed_branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
-  "observed_dirty": 7,
-  "observed_head": "f92c2e941913129d7db50480f71e8361a0d43a0c",
+  "observed_dirty": 0,
+  "observed_head": "be018d4f1159bde9b9725f085cb8959edf7cde4e",
   "owner": "ar1513-lease-bridge-luna56",
   "plan": "../plans/AR-1513-authenticated-lease-dispatch-bridge.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T05:44:05+00:00",
+  "updated_at": "2026-09-29T05:44:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
