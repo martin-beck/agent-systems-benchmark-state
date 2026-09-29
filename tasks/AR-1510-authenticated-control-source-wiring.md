@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1510-authenticated-control-source-wiring",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-29T04:58:16+00:00",
+  "claim_expires": "2026-09-29T03:29:27+00:00",
   "depends_on": [
     "AR-1505"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated platform control source and production lifecycle wiring required by the authority-provider receipt.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Authenticated control source and production provider wiring",
-  "updated_at": "2026-09-29T02:58:16+00:00",
+  "updated_at": "2026-09-29T02:59:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1510-authenticated-control-source-wiring"
 }
 ---
@@ -62,3 +62,5 @@ test-only façade publication, or weakening native/formal/privacy gates.
   AR-1505 and owns authenticated control-source production wiring.
 
 - 2026-09-29T02:58:16+00:00: Claimed by ar1510-control-source-luna56.
+
+- 2026-09-29T02:59:27+00:00: Heartbeat by ar1510-control-source-luna56.
