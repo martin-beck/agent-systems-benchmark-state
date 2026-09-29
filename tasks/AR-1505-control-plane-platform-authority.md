@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Monitor all required PR 382 checks on exact head c96be662, especially new Repository quality run 36507283180; after terminal green request fresh independent review, do not merge.",
+  "next_action": "Monitor required PR #382 checks at exact head c96be662; independent review found no remaining P1/P2 blockers.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 0,
   "observed_head": "c96be66213c9a09870e7e6b38784bc7910dff728",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 290,
+  "task_revision": 291,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T01:19:02+00:00",
+  "updated_at": "2026-09-29T01:19:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -1139,3 +1139,11 @@ public credential/socket paths, or weakening fail-closed gates.
   run 36507283180 (Policy, coverage, and supply chain), Rust checks, portability, formal/fault
   assurance, and credential-free path. Two header checks are already SUCCESS; reviews remain empty
   and no merge performed.
+
+- 2026-09-29T01:19:54+00:00: Fresh independent read-only review of PR #382 exact head
+  c96be66213c9a09870e7e6b38784bc7910dff728 against base 3c6af6b is clean. Coverage-test repair adds
+  deterministic runtime tests for empty-chain/namespace response rejection, matching private
+  namespace/relay-root/lease-root materialization, and mismatched namespace rejection; no production
+  behavior regression. Existing explicit namespace request/response schema binding,
+  RuntimeAuthorityInputBinding comparisons, and cancellation/provisioner fencing remain intact. No
+  P1/P2 findings; no product changes or merge performed.
