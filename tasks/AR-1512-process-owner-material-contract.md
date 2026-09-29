@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated process-owner material source and ordinary CLI/control caller needed to consume runtime authority.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Authenticated process-owner material contract",
-  "updated_at": "2026-09-29T05:13:22+00:00",
+  "updated_at": "2026-09-29T05:14:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1512-process-owner-material-contract"
 }
 ---
@@ -132,3 +132,6 @@ host data, synthetic authority, or weakening fail-closed/native/formal gates.
   warnings clippy, and workspace rustdoc -D warnings pass. Full cargo test --locked --workspace had
   one pre-existing parallel control test failure (production_backend... state root already owned);
   exact same test rerun serially with --test-threads=1 passed. No product test failure remains.
+
+- 2026-09-29T05:14:08+00:00: Recorded command exit 0; command argv SHA-256
+  7b80382008cb01e3ea6fa6e88054b624464f9801b40ed57f947b01892a686ae8.
