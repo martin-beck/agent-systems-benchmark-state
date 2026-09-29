@@ -18,11 +18,11 @@
   "plan": "../plans/AR-0514.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Qualify replay conformance for OpenHands.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Qualify OpenHands replay",
-  "updated_at": "2026-09-29T10:13:14+00:00",
+  "updated_at": "2026-09-29T10:15:12+00:00",
   "worktree_key": "agent-systems-benchmark-replay-openhands"
 }
 ---
@@ -228,3 +228,6 @@ Qualify OpenHands record/replay, network denial, parity, retries, tool calls, ca
   immutable environment provenance; corrected next action now points to signed content-addressed
   bundle, offline verifier, reproducible approved digest, altered-input rejection, and subsequent
   native replay requalification.
+
+- 2026-09-29T10:15:12+00:00: Coordinator-owned state metadata repair committed at 7d40425ee: remove
+  circular AR-0521 dependency while preserving AR-0514 blocked provenance gate.
