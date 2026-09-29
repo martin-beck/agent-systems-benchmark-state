@@ -201,7 +201,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1511](../tasks/AR-1511-runtime-control-authority-issuer.md): Runtime/control authority issuer and capability source | ar1511-authority-repair-luna56 | Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch. | Run full asb-runtime/workspace gates after lifecycle repair; add generated docs/negative contract coverage, then inspect exact diff for independent review. |
+| P0 | [AR-1511](../tasks/AR-1511-runtime-control-authority-issuer.md): Runtime/control authority issuer and capability source | ar1511-authority-repair-luna56 | Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch. | Run clippy/docs and inspect exact repair diff; then request independent exact-head review before any publication. |
 
 ### Blocked (79)
 

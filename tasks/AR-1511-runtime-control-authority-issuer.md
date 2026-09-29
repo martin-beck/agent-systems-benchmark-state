@@ -8,7 +8,7 @@
     "AR-1484"
   ],
   "id": "AR-1511",
-  "next_action": "Run full asb-runtime/workspace gates after lifecycle repair; add generated docs/negative contract coverage, then inspect exact diff for independent review.",
+  "next_action": "Run clippy/docs and inspect exact repair diff; then request independent exact-head review before any publication.",
   "observed_branch": "feature/ar-1511-runtime-control-authority-issuer",
   "observed_dirty": 3,
   "observed_head": "1a26b02e2b6de485e930a0448d7fe5d34aed3061",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 72,
+  "task_revision": 73,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T03:49:08+00:00",
+  "updated_at": "2026-09-29T03:49:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
@@ -273,3 +273,9 @@ production authority, or weakening fail-closed/native/formal gates.
   b7c1bd7abcc21a2d2b7851e3c19b5eece224e6abf67ab56b582453c98727e148.
 
 - 2026-09-29T03:49:08+00:00: Heartbeat by ar1511-authority-repair-luna56.
+
+- 2026-09-29T03:49:20+00:00: Owner-scoped serial workspace cargo test --locked --workspace
+  --no-fail-fast -- --test-threads=1 exited 0 after fixture correction; asb-runtime 157 tests and
+  all workspace targets passed with only pre-existing environment-gated ignores. Product remains
+  intentionally dirty (authority_issuer.rs, live_service.rs,
+  docs/RUNTIME_CONTROL_AUTHORITY_ISSUER.md) pending final diff review; no publish/PR claim.
