@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect the merged authenticated platform authority/bootstrap protocol to production ASB process startup and ordinary CLI dispatch.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Runtime platform launcher integration",
-  "updated_at": "2026-09-29T01:57:43+00:00",
+  "updated_at": "2026-09-29T01:57:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1506-runtime-platform-launcher-integration"
 }
 ---
@@ -96,3 +96,6 @@ production evidence.
 
 - 2026-09-29T01:57:29+00:00: Recorded command exit 0; command argv SHA-256
   ddd1f81564413ac090ce5391ffdd3806d437cd5c6a31734f8b6d6acfbba3bf48.
+
+- 2026-09-29T01:57:47+00:00: Recorded command exit 1; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
