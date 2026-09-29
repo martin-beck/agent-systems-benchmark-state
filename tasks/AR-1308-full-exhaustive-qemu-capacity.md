@@ -7,7 +7,7 @@
     "AR-1304"
   ],
   "id": "AR-1308",
-  "next_action": "Keep unsigned-development fixture v3 and sanitized diagnostic evidence; do not claim formal qualification. A future bounded diagnostic may preload a reviewed local TLC artifact or use a test-only verifier shim if needed; signed/full qualification still requires the exact signed AR-1307 inputs and its separate gates.",
+  "next_action": "Obtain the exact reviewed full-exhaustive seed digest b3383756b5cd357f58d923216effea33be35b793034de321c3c9ce460ece4b28 through AR-1465, then rerun signed preflight and the full 7200-second qualification with v9-style self-contained Git/JDK/TLC inputs. Do not substitute the diagnostic seed or claim qualification.",
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
@@ -16,10 +16,10 @@
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Unsigned-development fixture v3 now populates the disposable state volume, creates asb user/data UUID, reaches the bound state checkout, and records transient cgroup RC=0 before poweroff. Formal verify remains intentionally non-qualifying because the network-disabled diagnostic cannot download TLC and therefore produces no attestation.",
-  "task_revision": 586,
+  "summary": "Unsigned-development fixture v9 uses the exact AR-1307 head with self-contained Git metadata, self-contained JDK, preloaded TLC, and repaired state bind. Preflight passes; bounded network-disabled QEMU reaches FULL_EXHAUSTIVE_TRANSIENT_RC=0 and starts the offline TLC process without provenance or java.security errors. The bounded window ends before full exhaustive attestation, so no formal qualification is claimed.",
+  "task_revision": 587,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T14:15:51+00:00",
+  "updated_at": "2026-09-29T14:16:04+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1798,3 +1798,9 @@ must report `qualification_authorized: false`.
   self-contained JDK corrections.
 
 - 2026-09-29T14:15:51+00:00: Claimed by coordinator-ar1308-fixture-v9.
+
+- 2026-09-29T14:16:04+00:00: Fixture repair chain v3-v9 fixed state layout, verifier contract,
+  embedded Git provenance, and host-only JDK symlinks. v9 bounded boot reached transient RC=0 and
+  launched TLC offline; no network fallback or signing bypass was used. Diagnostic artifacts remain
+  under /srv/data/projects/ar1308-development; raw serial was truncated after sanitized marker
+  extraction.
