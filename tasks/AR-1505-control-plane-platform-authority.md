@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 288,
+  "task_revision": 289,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T01:18:19+00:00",
+  "updated_at": "2026-09-29T01:18:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -1129,3 +1129,6 @@ public credential/socket paths, or weakening fail-closed gates.
   check --locked and clippy --locked -D warnings both exited 0. Created signed SSH/DCO commit
   c96be66213c9a09870e7e6b38784bc7910dff728; git show --show-signature verifies ED25519 signature and
   matching Signed-off-by trailer. Product worktree is clean.
+
+- 2026-09-29T01:18:30+00:00: Recorded command exit 0; command argv SHA-256
+  115a28b65160c6e90b714d050a6f4583b7c46fde11739a8c110e46994e782112.
