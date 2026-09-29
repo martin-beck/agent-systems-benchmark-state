@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 221,
+  "task_revision": 222,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:36:29+00:00",
+  "updated_at": "2026-09-29T00:37:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -884,3 +884,6 @@ public credential/socket paths, or weakening fail-closed gates.
   assertion diagnostics. The exact test was rerun serially through handoffctl and passed 1/1 with
   all filtered integration targets clean. No product code changed. Treat workspace aggregate as
   requiring one clean rerun before commit.
+
+- 2026-09-29T00:37:13+00:00: Recorded command exit 0; command argv SHA-256
+  b7c1bd7abcc21a2d2b7851e3c19b5eece224e6abf67ab56b582453c98727e148.
