@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1307.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 737,
+  "task_revision": 738,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-26T18:47:47+00:00",
+  "updated_at": "2026-09-29T16:13:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -2108,3 +2108,6 @@ authorize qualification, publication, or release evidence; selecting
   unchanged 3G memory/3G swap/2-worker contract. Prepared AR-1308 QEMU capacity exists but remains
   unqualified pending exact signed bundle, seed, JDK/TLC and preflight. Preserve fail-closed formal
   gate; no source mutation.
+
+- 2026-09-29T16:13:18+00:00: Development profile policy changed: runner development no longer
+  depends on reviewed seed digests; formal qualification remains separate.
