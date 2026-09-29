@@ -208,11 +208,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1518](../tasks/AR-1518.md): C | Unclaimed | Separate 8G/8G/16G capacity tier implemented; focused and full state tests pass. | Run the capacity-profile QEMU qualification, then independently review and publish the exact head. |
+| P0 | [AR-1518](../tasks/AR-1518.md): C | coordinator-ar1518-repair-close-20260929 | Separate 8G/8G/16G capacity tier implemented; focused and full state tests pass. | Run the capacity-profile QEMU qualification, then independently review and publish the exact head. |
 
 ### Blocked (76)
 

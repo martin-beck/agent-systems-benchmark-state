@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1518](tasks/AR-1518.md): C | Separate 8G/8G/16G capacity tier implemented; focused and full state tests pass. | Run the capacity-profile QEMU qualification, then independently review and publish the exact head. | - |
+| P0 | [AR-1518](tasks/AR-1518.md): C | Separate 8G/8G/16G capacity tier implemented; focused and full state tests pass. | Run the capacity-profile QEMU qualification, then independently review and publish the exact head. | coordinator-ar1518-repair-close-20260929 |
 
 ## Blocked
 
