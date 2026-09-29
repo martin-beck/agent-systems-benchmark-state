@@ -10,7 +10,7 @@
   "id": "AR-1513",
   "next_action": "Second independent review found remaining P1s: pinned executable/adapter provenance is not enforced at dispatch, ordinary production bootstrap-to-CLI wiring remains dead-code only, and policy/alternate-egress enrollment binding is incomplete; hosted workspace coverage is 88.05% below 90%. Repair all before merge.",
   "observed_branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
-  "observed_dirty": 6,
+  "observed_dirty": 4,
   "observed_head": "109f5fad424cb5493e834a0dcec9c09f1aeeae54",
   "owner": "ar1513-repair3-luna56",
   "plan": "../plans/AR-1513-authenticated-lease-dispatch-bridge.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 148,
+  "task_revision": 149,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T07:04:18+00:00",
+  "updated_at": "2026-09-29T07:04:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
