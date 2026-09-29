@@ -22,11 +22,11 @@
   "plan": "../plans/AR-1392-control-authority-materializer.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Resolve private live authority from authenticated control enrollment without caller injection.",
-  "task_revision": 122,
+  "task_revision": 123,
   "title": "Control-owned private authority materializer",
-  "updated_at": "2026-09-26T23:30:03+00:00",
+  "updated_at": "2026-09-29T12:18:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1392-control-authority-materializer"
 }
 ---
@@ -424,3 +424,6 @@ reachability.
   blocked/ownerless pending a separate topology-repair successor; next action is create that
   successor using a non-squash protected-main merge topology and rerun all seven workflows. No code
   or unrelated metrics changes.
+
+- 2026-09-29T12:18:00+00:00: Repair only the protected-main merge-topology policy failure for PR
+  #339; preserve green product checks and do not change authority-materializer behavior.

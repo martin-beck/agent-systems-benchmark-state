@@ -199,7 +199,13 @@
 
 ## Complete AR inventory
 
-### Blocked (81)
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1392](../tasks/AR-1392-control-authority-materializer.md): Control-owned private authority materializer | Unclaimed | Resolve private live authority from authenticated control enrollment without caller injection. | Resolve unrelated Rust CI failure or obtain coordinator-approved retry; do not merge PR #339 until every exact-head check is green. |
+
+### Blocked (80)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -252,7 +258,6 @@
 | P0 | [AR-1387](../tasks/AR-1387-runtime-control-cli-bridge.md): Authenticated runtime-control CLI bridge | Unclaimed | Bridge authenticated runtime/control bootstrap state into the production CLI dispatch path. | Resume AR-1391 runtime-control bootstrap constructor; AR-1387 remains blocked pending that successor and has no safe in-scope product diff. |
 | P0 | [AR-1390](../tasks/AR-1390-runtime-live-acquisition-cli.md): Runtime live acquisition and CLI bridge | Unclaimed | Compose runtime-owned live provider acquisition and wire it into normal ASB run and sweep. | Claim the pre-bound isolated worktree, implement the runtime-owned live acquisition and normal CLI run/sweep bridge, and publish a signed PR. |
 | P0 | [AR-1391](../tasks/AR-1391-runtime-control-bootstrap-constructor.md): Runtime control bootstrap constructor | Unclaimed | Materialize authenticated runtime live authority into an opaque source without caller injection. | Claim the pre-bound isolated worktree, implement the runtime/control-owned authenticated bootstrap constructor, and publish a signed PR. |
-| P0 | [AR-1392](../tasks/AR-1392-control-authority-materializer.md): Control-owned private authority materializer | Unclaimed | Resolve private live authority from authenticated control enrollment without caller injection. | Resolve unrelated Rust CI failure or obtain coordinator-approved retry; do not merge PR #339 until every exact-head check is green. |
 | P0 | [AR-1464](../tasks/AR-1464-formal-capacity-input-provisioning.md): Formal capacity and signed-input provisioning repair | Unclaimed | Exact signed source, reviewed image, 64 GiB overlay, JDK/TLC/model and canonical lock are provisioned. Reclaimed the three stale AR-specific swap files and activated two fresh AR-specific swap files; repeated signed preflight now passes every gate except the unavailable exact seed digest. | Obtain or restore the reviewed full-exhaustive seed with SHA-256 b3383756b5cd357f58d923216effea33be35b793034de321c3c9ce460ece4b28. Do not regenerate or substitute a different seed. Then rerun the signed preflight, hand inputs to AR-1308, and remove/revert only the temporary AR-specific swap after the runner lifecycle. |
 | P0 | [AR-1465](../tasks/AR-1465-reviewed-seed-archival-recovery.md): Reviewed full-exhaustive seed archival recovery | Unclaimed | Expanded archival audit found no exact reviewed seed in approved state/runner roots, Git objects, the ASB product tree, seed-named second-disk files, or available GitHub Actions artifacts. | External operator must supply reviewed immutable seed bytes with exact SHA-256 b3383756b5cd357f58d923216effea33be35b793034de321c3c9ce460ece4b28 and provenance; independently verify them, bind them to AR-1308, and rerun signed preflight. Do not regenerate or substitute. |
 | P0 | [AR-1470](../tasks/AR-1470-runtime-certificate-chain-enrollment.md): Runtime certificate-chain enrollment materialization | Unclaimed | Materialize runtime-owned certificate-chain enrollment authority for live dispatch. | Protected-main setup is not current: AR worktree is clean but 86 commits behind origin/main 7167e3d; refresh via handoffctl run, then implement the narrow runtime-owned authenticated enrollment source. Existing RuntimeAuthorityRecord holds only public digests/opaque chain metadata; no private bootstrap authority or caller-safe issuer is available. Do not fabricate authority. |
