@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 206,
+  "task_revision": 207,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:31:02+00:00",
+  "updated_at": "2026-09-29T00:31:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -833,3 +833,6 @@ public credential/socket paths, or weakening fail-closed gates.
   certificate.rs: response was moved into mismatched_receipt_expiry and then borrowed for the new
   mismatched_namespace test. Corrective action: clone response for mismatched_receipt_expiry before
   adding the independent namespace mismatch assertion.
+
+- 2026-09-29T00:31:13+00:00: Recorded command exit 0; command argv SHA-256
+  36a8d83b90fbd9cf6f383a0184a4adefcba92e6191eab2fad1f8ed1db2490549.
