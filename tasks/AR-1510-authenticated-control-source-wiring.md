@@ -1,0 +1,55 @@
+---
+{
+  "branch": "feature/ar-1510-authenticated-control-source-wiring",
+  "checkpoint_commit": "",
+  "claim_expires": "",
+  "depends_on": ["AR-1509"],
+  "id": "AR-1510",
+  "next_action": "Promote after the AR-1509 blocker evidence is reconciled; implement and verify an authenticated platform control source and production runtime wiring from protected main.",
+  "observed_branch": "",
+  "observed_dirty": 0,
+  "observed_head": "",
+  "owner": "",
+  "plan": "../plans/AR-1510-authenticated-control-source-wiring.md",
+  "priority": "P0",
+  "schema_version": 1,
+  "status": "planned",
+  "summary": "Provide the authenticated platform control source and production lifecycle wiring required by the authority-provider receipt.",
+  "task_revision": 1,
+  "title": "Authenticated control source and production provider wiring",
+  "updated_at": "2026-09-29T02:55:00+00:00",
+  "worktree_key": "agent-systems-benchmark-ar-1510-authenticated-control-source-wiring"
+}
+---
+
+AR-1509 proved the receipt façade and lifecycle tests but was correctly blocked:
+all material construction is test-only, receipts are self-attested from caller
+inputs, and no live runtime/sweep path obtains authority from an authenticated
+control source. This successor owns the missing production boundary.
+
+Acceptance requires:
+
+- a non-test platform/control adapter that obtains private roots, namespace,
+  tool bundle, policy/allowlist, credential capability and enrollment material
+  from authenticated control state without caller/config/PATH injection;
+- an independently verifiable control-authenticated receipt binding endpoint,
+  namespace, lease/relay roots, tool/policy digests, credential reference,
+  generation, restart, cancellation and expiry claims;
+- production runtime/control bootstrap, ordinary CLI live run/sweep and
+  scheduler attempt transitions consume only the verified receipt/provider;
+- expiry, revocation, cancellation, restart, teardown and alternate-egress
+  denial are checked at every transition, with deterministic provider-free
+  positive and negative tests;
+- preserve zero-runtime-dependency/offline-after-install boundaries and do not
+  require live external provider reachability;
+- independent exact-head review, SSH-signed DCO commit, focused and full gates,
+  hosted checks, protected merge, and terminal post-merge assurance.
+
+Non-goals: asb-tui changes, public credentials, synthetic production authority,
+test-only façade publication, or weakening native/formal/privacy gates.
+
+- 2026-09-29T02:55:00+00:00: Created as the narrow successor to AR-1509.
+  AR-1509 focused gate passed 53/53, but independent audit found no
+  non-test authenticated provider construction/callsite, only self-attested
+  local-input digests, and no production transition fencing. Preserve its
+  unmerged commits as evidence only; start from protected main.
