@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 86,
+  "task_revision": 87,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T06:19:11+00:00",
+  "updated_at": "2026-09-29T06:22:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -302,3 +302,6 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
   lifecycle fencing stops after bridge consumption. Also P2 bounded-field limits.
 
 - 2026-09-29T06:19:11+00:00: Heartbeat by ar1513-repair2-luna56.
+
+- 2026-09-29T06:22:39+00:00: Recorded command exit 101; command argv SHA-256
+  44858bcc1bea325f8e4ec42626fdf2970d2310a4694e160101531722dea4dfa4.
