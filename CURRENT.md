@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1511](tasks/AR-1511-runtime-control-authority-issuer.md): Runtime/control authority issuer and capability source | Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch. | Run clippy/docs and inspect exact repair diff; then request independent exact-head review before any publication. | ar1511-authority-repair-luna56 |
+| P0 | [AR-1511](tasks/AR-1511-runtime-control-authority-issuer.md): Runtime/control authority issuer and capability source | Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch. | Inspect final exact diff against f92c2e9; preserve 1a26b02 as evidence, then request independent exact-head review. Do not publish until signed repair commit and review. | ar1511-authority-repair-luna56 |
 
 ## Blocked
 

@@ -8,7 +8,7 @@
     "AR-1484"
   ],
   "id": "AR-1511",
-  "next_action": "Run clippy/docs and inspect exact repair diff; then request independent exact-head review before any publication.",
+  "next_action": "Inspect final exact diff against f92c2e9; preserve 1a26b02 as evidence, then request independent exact-head review. Do not publish until signed repair commit and review.",
   "observed_branch": "feature/ar-1511-runtime-control-authority-issuer",
   "observed_dirty": 3,
   "observed_head": "1a26b02e2b6de485e930a0448d7fe5d34aed3061",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T03:50:55+00:00",
+  "updated_at": "2026-09-29T03:51:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
@@ -291,3 +291,11 @@ production authority, or weakening fail-closed/native/formal gates.
 
 - 2026-09-29T03:50:55+00:00: Recorded command exit 0; command argv SHA-256
   f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
+
+- 2026-09-29T03:51:40+00:00: Final focused gates: cargo clippy --locked --workspace --all-targets --
+  -D warnings, RUSTDOCFLAGS=-Dwarnings cargo doc --locked --workspace --no-deps, and cargo fmt --all
+  -- --check exited 0. Clippy's one initial failure was actual unnecessary  on the
+  cancellation-fence  at live_service.rs:1616; removed and reran green. Serial workspace cargo test
+  had exited 0 before docs/final cleanup and all asb-runtime tests passed after fixture repair.
+  Product remains dirty=3; exact diff still includes preserved signed 1a26b02 plus
+  lifecycle/integration/docs follow-on; no publication claim.
