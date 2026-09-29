@@ -198,7 +198,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1510](../tasks/AR-1510-authenticated-control-source-wiring.md): Authenticated control source and production provider wiring | ar1510-control-source-luna56 | Provide the authenticated platform control source and production lifecycle wiring required by the authority-provider receipt. | Clean worktree setup from protected main f92c2e94 is in progress; read product contracts and audit runtime/provider callsites before implementing authenticated control-source wiring. |
+| P0 | [AR-1510](../tasks/AR-1510-authenticated-control-source-wiring.md): Authenticated control source and production provider wiring | ar1510-control-source-luna56 | Provide the authenticated platform control source and production lifecycle wiring required by the authority-provider receipt. | Blocked: obtain and integrate a real authenticated platform authority provider plus production control-client bootstrap/CLI wiring; create a narrower successor when that source/capability contract is available. |
 
 ### Blocked (78)
 

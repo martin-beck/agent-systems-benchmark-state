@@ -7,7 +7,7 @@
     "AR-1505"
   ],
   "id": "AR-1510",
-  "next_action": "Clean worktree setup from protected main f92c2e94 is in progress; read product contracts and audit runtime/provider callsites before implementing authenticated control-source wiring.",
+  "next_action": "Blocked: obtain and integrate a real authenticated platform authority provider plus production control-client bootstrap/CLI wiring; create a narrower successor when that source/capability contract is available.",
   "observed_branch": "feature/ar-1510-authenticated-control-source-wiring",
   "observed_dirty": 0,
   "observed_head": "f92c2e941913129d7db50480f71e8361a0d43a0c",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated platform control source and production lifecycle wiring required by the authority-provider receipt.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Authenticated control source and production provider wiring",
-  "updated_at": "2026-09-29T03:06:31+00:00",
+  "updated_at": "2026-09-29T03:06:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1510-authenticated-control-source-wiring"
 }
 ---
@@ -97,3 +97,6 @@ test-only façade publication, or weakening native/formal/privacy gates.
   explicit durable next action.
 
 - 2026-09-29T03:06:31+00:00: Claimed by ar1510-control-source-luna56.
+
+- 2026-09-29T03:06:45+00:00: Durable next_action corrected after blocker audit; exact evidence is in
+  the subsequent blocked-release note.
