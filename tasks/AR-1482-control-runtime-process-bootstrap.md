@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1482-control-runtime-process-bootstrap",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-29T11:02:22+00:00",
+  "claim_expires": "2026-09-29T11:05:15+00:00",
   "depends_on": [
     "AR-1472",
     "AR-1473",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compose authenticated control enrollment into the ordinary CLI process bootstrap.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Control-runtime process bootstrap",
-  "updated_at": "2026-09-29T10:32:22+00:00",
+  "updated_at": "2026-09-29T10:35:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1482-control-runtime-process-bootstrap"
 }
 ---
@@ -55,3 +55,5 @@ providers, accept caller-built authority, or weaken fail-closed boundaries.
   process-owned control bootstrap successor identified by the prior protected-main audit.
 
 - 2026-09-29T10:32:22+00:00: Claimed by ar1482-bootstrap-luna56.
+
+- 2026-09-29T10:35:15+00:00: Heartbeat by ar1482-bootstrap-luna56.
