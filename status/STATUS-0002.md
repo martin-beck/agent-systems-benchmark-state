@@ -222,10 +222,11 @@
 | [AR-1527](../tasks/AR-1527.md) | None | [AR-1528](../tasks/AR-1528.md) |
 | [AR-1528](../tasks/AR-1528.md) | [AR-1519](../tasks/AR-1519.md), [AR-1520](../tasks/AR-1520.md), [AR-1527](../tasks/AR-1527.md) | [AR-1532](../tasks/AR-1532.md), [AR-1533](../tasks/AR-1533.md) |
 | [AR-1529](../tasks/AR-1529.md) | [AR-1517](../tasks/AR-1517-ar1309-capacity-decision-unblock.md), [AR-1520](../tasks/AR-1520.md) | [AR-1530](../tasks/AR-1530.md) |
-| [AR-1530](../tasks/AR-1530.md) | [AR-1520](../tasks/AR-1520.md), [AR-1529](../tasks/AR-1529.md) | [AR-1521](../tasks/AR-1521.md), [AR-1522](../tasks/AR-1522.md), [AR-1531](../tasks/AR-1531.md) |
+| [AR-1530](../tasks/AR-1530.md) | [AR-1520](../tasks/AR-1520.md), [AR-1529](../tasks/AR-1529.md) | [AR-1521](../tasks/AR-1521.md), [AR-1522](../tasks/AR-1522.md), [AR-1531](../tasks/AR-1531.md), [AR-1534](../tasks/AR-1534.md) |
 | [AR-1531](../tasks/AR-1531.md) | [AR-1520](../tasks/AR-1520.md), [AR-1530](../tasks/AR-1530.md) | None |
 | [AR-1532](../tasks/AR-1532.md) | [AR-1528](../tasks/AR-1528.md) | None |
 | [AR-1533](../tasks/AR-1533.md) | [AR-1528](../tasks/AR-1528.md) | None |
+| [AR-1534](../tasks/AR-1534.md) | [AR-1530](../tasks/AR-1530.md) | None |
 
 ## Complete AR inventory
 
@@ -326,7 +327,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (46)
+### Planned (47)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -345,6 +346,7 @@
 | P0 | [AR-1170](../tasks/AR-1170.md): Standalone TUI wizard | Unclaimed | Guide TUI setup through analysis. | Read the plan. |
 | P0 | [AR-1180](../tasks/AR-1180.md): Cross-project wizard qualification | Unclaimed | Qualify the complete wizard. | Read the plan. |
 | P0 | [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Unclaimed | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. |
+| P0 | [AR-1534](../tasks/AR-1534.md): Coordinator vendor integrity repair | Unclaimed | Repair the state repository&#x27;s coordinator vendor-integrity mismatch exposed after the AR-1530 capacity-profile merge. | Promote after coordinator review; reconcile the immutable coordinator vendor contract with the merged capacity-profile change without weakening vendor verification or modifying handoffctl in an unrelated AR. |
 | P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
 | P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
 | P1 | [AR-0810](../tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Unclaimed | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project&#x27;s GitHub Pages site. |
@@ -514,4 +516,3 @@
 | P0 | [AR-1371](../tasks/AR-1371-runner-authority-injection.md): Runner authority injection | Unclaimed | Inject existing authenticated certificate authority and runtime enrollment material into RunnerBackend/Catalog without synthetic authority. | PR #271 merged as 3f0b67638647dc016f7d5abd3e246baf3ae4ec29 after all 12 exact-head checks passed. Seven post-merge workflows are running; monitor all to terminal success before releasing AR. |
 | P0 | [AR-1372](../tasks/AR-1372-topology-repair.md): Protected merge topology repair | Unclaimed | Repair protected-main merge topology after AR-1371 without changing product behavior. | PR #272 merged with protected non-squash topology as 265b936d995148f8e40e36664cf68bf12affc20d. Seven post-merge workflows for exact merge are running; monitor all to terminal success, then release AR-1372 and reconcile AR-1371. |
 | P0 | [AR-1373](../tasks/AR-1373-authenticated-receipt-source.md): Authenticated runtime receipt source | Unclaimed | Provide the authenticated ControlBackend runtime receipt source for AR-1329 production dispatch. | PR #273 force-updated to exact head c623a006 after preserving historical v1 through v1.7 schemas. Monitor all required checks from the new head; repair any failure through handoffctl, merge only after independent review and all checks green, then verify seven post-merge workflows. |
-| P0 | [AR-1377](../tasks/AR-1377-runtime-chain-store.md): Runtime-owned certificate-chain store | Unclaimed | Persist authenticated runtime certificate-chain material for live dispatch. | PR #274 force-updated to exact head 4163194 on current protected main 50acdcab after Repository quality base failure. Focused live_service rerun passes; monitor all required exact-head checks, repair failures, merge only green, then verify seven post-merge workflows. |
