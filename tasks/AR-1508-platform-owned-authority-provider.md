@@ -15,17 +15,17 @@
   "id": "AR-1508",
   "next_action": "Run full exact-head product gates on signed commits 7306f83 and 0135650; obtain independent review before publication.",
   "observed_branch": "feature/ar-1508-platform-owned-authority-provider",
-  "observed_dirty": 1,
-  "observed_head": "013565032506a3a70a34fc727970a6dd40c377c1",
+  "observed_dirty": 0,
+  "observed_head": "2c70f81100ca0c4e911ec5d6c02736182b101a3b",
   "owner": "ar1508-provider-luna56",
   "plan": "../plans/AR-1508-platform-owned-authority-provider.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Platform-owned authority provider",
-  "updated_at": "2026-09-29T10:47:31+00:00",
+  "updated_at": "2026-09-29T10:47:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1508-platform-owned-authority-provider"
 }
 ---
