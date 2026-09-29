@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material.",
-  "task_revision": 89,
+  "task_revision": 90,
   "title": "Platform-owned authority provider",
-  "updated_at": "2026-09-29T11:11:58+00:00",
+  "updated_at": "2026-09-29T11:12:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1508-platform-owned-authority-provider"
 }
 ---
@@ -319,3 +319,6 @@ fixed-path authority, weakening formal/privacy/native gates.
 
 - 2026-09-29T11:11:43+00:00: Recorded command exit 0; command argv SHA-256
   5baca0896f5553b237d70ecc909a8ecbdb84f68b9545c0a0aea2ae1b8ce26c95.
+
+- 2026-09-29T11:12:12+00:00: Recorded command exit 0; command argv SHA-256
+  1024fc1e6cefa31b078f0b5d2ed85c7ea4586897b388bf1e308f62db58574461.
