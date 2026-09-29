@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1508-platform-owned-authority-provider",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "f92c2e941913129d7db50480f71e8361a0d43a0c",
   "claim_expires": "2026-09-29T04:18:11+00:00",
   "depends_on": [
     "AR-1473",
@@ -13,7 +13,7 @@
     "AR-1505"
   ],
   "id": "AR-1508",
-  "next_action": "Implement and verify provider contract on isolated AR-1508 worktree based on protected AR-1505 merge f92c2e9; then independent exact-head review and hosted checks.",
+  "next_action": "Provider seam implemented in isolated worktree at protected AR-1505 merge f92c2e9; focused compile/test initially failed on dead-code-denied provider error variants, then passed after explicit fail-closed error contract annotation. Add lifecycle negatives and run full gates.",
   "observed_branch": "feature/ar-1508-platform-owned-authority-provider",
   "observed_dirty": 1,
   "observed_head": "f92c2e941913129d7db50480f71e8361a0d43a0c",
@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Platform-owned authority provider",
-  "updated_at": "2026-09-29T02:23:54+00:00",
+  "updated_at": "2026-09-29T02:24:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1508-platform-owned-authority-provider"
 }
 ---
@@ -89,3 +89,12 @@ fixed-path authority, weakening formal/privacy/native gates.
 
 - 2026-09-29T02:23:54+00:00: Recorded command exit 0; command argv SHA-256
   03315ef10f14441f5aadec73db36f3fb7b35454147c037b191e659b38ff938ee.
+
+- 2026-09-29T02:24:15+00:00: Concrete protected-main audit: AR-1505 merge
+  f92c2e941913129d7db50480f71e8361a0d43a0c contains RuntimeControlBootstrap materialization with
+  caller-supplied RuntimeAuthorityInputs and PathBuf. AR-1508 now introduces the crate-private
+  RuntimePlatformAuthorityBinding and provider/material contract; materialization receives only
+  owner plus provider, validates session/generation/expiry/root/tool claims and provider-owned state
+  path, then delegates to the existing resolver. Focused test first exited 101 because -D warnings
+  rejected unused lifecycle error variants; added the deliberate dead-code annotation to retain
+  explicit fail-closed categories, and the exact focused test now passes.
