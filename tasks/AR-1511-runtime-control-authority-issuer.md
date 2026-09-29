@@ -8,7 +8,7 @@
     "AR-1484"
   ],
   "id": "AR-1511",
-  "next_action": "Authority issuer module added on clean protected-main worktree; run focused cargo checks, repair compiler/lint failures, then add deterministic issuer tests and generated contract documentation.",
+  "next_action": "Commit 1a26b02 adds runtime-owned authenticated issuer/capability and docs; focused runtime authority tests, fmt check, and clippy pass. Next run workspace quality/review and wire only through runtime-owned composition.",
   "observed_branch": "feature/ar-1511-runtime-control-authority-issuer",
   "observed_dirty": 0,
   "observed_head": "1a26b02e2b6de485e930a0448d7fe5d34aed3061",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T03:24:23+00:00",
+  "updated_at": "2026-09-29T03:24:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
@@ -123,3 +123,11 @@ production authority, or weakening fail-closed/native/formal gates.
   bdd4e37a5c3088d2f9634b08f5cf43c035a62493e3c91cadb061fbb6ba1f322f.
 
 - 2026-09-29T03:24:10+00:00: Heartbeat by ar1511-authority-issuer-luna56.
+
+- 2026-09-29T03:24:25+00:00: Implemented and signed 1a26b02e2b6de485e930a0448d7fe5d34aed3061 from
+  protected main f92c2e9. Issuer requires owner contract, authenticated chain/enrollment, and
+  runtime input record; binds
+  endpoint/session/namespace/credential/generation/lease/relay/tools/policy/allowlist/target/restart/expiry;
+  one-shot nonce, receipt/chain verification, replay, drift, expiry, revoke and teardown denial.
+  Focused cargo test authority_issuer: 3 passed; cargo fmt check and clippy -D warnings passed.
+  Initial cargo check failure was missing thiserror; replaced with std Error and recheck passed.

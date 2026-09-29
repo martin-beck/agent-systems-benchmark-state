@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1511](tasks/AR-1511-runtime-control-authority-issuer.md): Runtime/control authority issuer and capability source | Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch. | Authority issuer module added on clean protected-main worktree; run focused cargo checks, repair compiler/lint failures, then add deterministic issuer tests and generated contract documentation. | ar1511-authority-issuer-luna56 |
+| P0 | [AR-1511](tasks/AR-1511-runtime-control-authority-issuer.md): Runtime/control authority issuer and capability source | Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch. | Commit 1a26b02 adds runtime-owned authenticated issuer/capability and docs; focused runtime authority tests, fmt check, and clippy pass. Next run workspace quality/review and wire only through runtime-owned composition. | ar1511-authority-issuer-luna56 |
 
 ## Blocked
 
