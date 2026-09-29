@@ -8,7 +8,7 @@
     "AR-1484"
   ],
   "id": "AR-1512",
-  "next_action": "Add privacy-safe working-tree scan evidence and inspect exact diff; do not claim live CLI dispatch without an authenticated lease-to-runtime bridge.",
+  "next_action": "Inspect exact diff and commit the provider-free contract/store; parent must create successor for authenticated lease-to-LiveProviderRuntimeHandle bridge before claiming live CLI run/sweep.",
   "observed_branch": "feature/ar-1512-process-owner-material-contract",
   "observed_dirty": 4,
   "observed_head": "f92c2e941913129d7db50480f71e8361a0d43a0c",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated process-owner material source and ordinary CLI/control caller needed to consume runtime authority.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Authenticated process-owner material contract",
-  "updated_at": "2026-09-29T05:19:11+00:00",
+  "updated_at": "2026-09-29T05:19:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1512-process-owner-material-contract"
 }
 ---
@@ -156,3 +156,11 @@ host data, synthetic authority, or weakening fail-closed/native/formal gates.
 
 - 2026-09-29T05:19:11+00:00: Recorded command exit 0; command argv SHA-256
   47a11eb1c45b816c00415363181aa85c2fa29b932224e9de115f41db041dc138.
+
+- 2026-09-29T05:19:57+00:00: Exact narrower missing primitive: no protected-main non-test
+  owner/platform adapter accepts ProcessOwnerMaterialLease and mints
+  LiveProviderRuntimeHandle/LiveProviderRuntimeDispatchSource. Existing live dispatch constructors
+  require RuntimeOwnedEnrollmentSource and crate-private authenticated resolver; converting from
+  caller/PATH/config or digest-only records would fabricate authority. AR-1512 therefore does not
+  claim live-provider reachability or ordinary live CLI execution; parent should create a successor
+  AR for this authenticated lease-to-dispatch bridge.

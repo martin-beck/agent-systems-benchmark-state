@@ -202,7 +202,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1512](../tasks/AR-1512-process-owner-material-contract.md): Authenticated process-owner material contract | ar1512-process-owner-luna56 | Provide the authenticated process-owner material source and ordinary CLI/control caller needed to consume runtime authority. | Add privacy-safe working-tree scan evidence and inspect exact diff; do not claim live CLI dispatch without an authenticated lease-to-runtime bridge. |
+| P0 | [AR-1512](../tasks/AR-1512-process-owner-material-contract.md): Authenticated process-owner material contract | ar1512-process-owner-luna56 | Provide the authenticated process-owner material source and ordinary CLI/control caller needed to consume runtime authority. | Inspect exact diff and commit the provider-free contract/store; parent must create successor for authenticated lease-to-LiveProviderRuntimeHandle bridge before claiming live CLI run/sweep. |
 
 ### Blocked (80)
 
