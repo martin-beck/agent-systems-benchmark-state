@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1508-platform-owned-authority-provider",
   "checkpoint_commit": "5344809cfe4f8f8b1a4bd734b606c347f693c349",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T23:10:55+00:00",
   "depends_on": [
     "AR-1473",
     "AR-1474",
@@ -17,15 +17,15 @@
   "observed_branch": "feature/ar-1508-platform-owned-authority-provider",
   "observed_dirty": 0,
   "observed_head": "5344809cfe4f8f8b1a4bd734b606c347f693c349",
-  "owner": "",
+  "owner": "coordinator-ar1508-provider-20260929",
   "plan": "../plans/AR-1508-platform-owned-authority-provider.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material.",
-  "task_revision": 140,
+  "task_revision": 141,
   "title": "Platform-owned authority provider",
-  "updated_at": "2026-09-29T21:10:52+00:00",
+  "updated_at": "2026-09-29T21:10:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1508-platform-owned-authority-provider"
 }
 ---
@@ -495,3 +495,5 @@ fixed-path authority, weakening formal/privacy/native gates.
 - 2026-09-29T21:10:52+00:00: Reopen rejected provider implementation: dependencies are done and the
   remaining scope is the non-test runtime/control callsite plus lifecycle fencing; preserve
   fail-closed authority.
+
+- 2026-09-29T21:10:55+00:00: Claimed by coordinator-ar1508-provider-20260929.
