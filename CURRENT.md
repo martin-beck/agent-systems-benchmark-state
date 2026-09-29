@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1517](tasks/AR-1517-ar1309-capacity-decision-unblock.md): AR-1309 capacity decision unblock | Unblock AR-1309 with a reviewed capacity/model contract after the runner failures. | Promote after AR-1304; classify evidence and select AR-1309's capacity/model contract. | - |
+| P0 | [AR-1517](tasks/AR-1517-ar1309-capacity-decision-unblock.md): AR-1309 capacity decision | Select a reviewed AR-1309 capacity/model contract after runner failure. | Classify evidence and select AR-1309's capacity/model contract. | - |
 
 ## Blocked
 
