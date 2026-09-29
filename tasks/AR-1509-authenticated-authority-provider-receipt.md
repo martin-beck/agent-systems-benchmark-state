@@ -13,7 +13,7 @@
     "AR-1505"
   ],
   "id": "AR-1509",
-  "next_action": "Promote after dependency verification; implement a real runtime-owned authority-provider receipt, independent claim verification, and post-materialization lifecycle fencing.",
+  "next_action": "Audit AR-1505 merge f92c2e9 and AR-1508 unmerged commits; create isolated exact-base worktree for implementation.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Replace the AR-1508 test fa\u00e7ade with an authenticated production authority-provider receipt and lifecycle fence.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Authenticated authority-provider receipt",
-  "updated_at": "2026-09-29T02:34:57+00:00",
+  "updated_at": "2026-09-29T02:35:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1509-authenticated-authority-provider-receipt"
 }
 ---
@@ -63,3 +63,7 @@ mock production authority, or weakening formal/privacy/native gates.
 - 2026-09-29T02:34:45+00:00: Claimed by ar1509-receipt-luna56.
 
 - 2026-09-29T02:34:57+00:00: Heartbeat by ar1509-receipt-luna56.
+
+- 2026-09-29T02:35:00+00:00: Setup audit: state reconciled and AR-1509 claimed; product docs,
+  architecture, quality, complete task/plan, and AR-1508 rejection evidence inspected. Starting
+  protected-main audit and isolated worktree.
