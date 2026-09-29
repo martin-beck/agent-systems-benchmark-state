@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "checkpoint_commit": "df0e402f442468e43e06b7c1acb3c3667277fb75",
-  "claim_expires": "2026-09-29T13:25:42+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1304"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
-  "owner": "coordinator-ar1308-summary",
+  "owner": "",
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Prepared signed capacity passes image, 64 GiB overlay, exact ab485f767 source/tree, JDK/TLC/model and canonical lock; host capacity now passes with dedicated swap, but the reviewed seed b3383756...ece4b28 is unavailable.",
-  "task_revision": 571,
+  "task_revision": 572,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T13:15:56+00:00",
+  "updated_at": "2026-09-29T13:16:08+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1744,3 +1744,6 @@ must report `qualification_authorized: false`.
 
 - 2026-09-29T13:15:56+00:00: Corrected stale summary after revalidating the host: SwapFree is above
   the 1 GiB floor; exact seed remains unavailable.
+
+- 2026-09-29T13:16:08+00:00: Released blocked: host capacity and swap are ready; exact reviewed seed
+  remains the only missing signed preflight input.
