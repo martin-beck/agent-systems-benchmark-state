@@ -12,9 +12,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 80 |
-| **Planned** | Defined work awaiting promotion or dependencies | 50 |
+| **Planned** | Defined work awaiting promotion or dependencies | 49 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 380 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -105,7 +105,7 @@ flowchart LR
         AR_0518["AR-0518 - Done"]:::status_done
         AR_0519["AR-0519 - Done"]:::status_done
         AR_0520["AR-0520 - Done"]:::status_done
-        AR_0521["AR-0521 - Planned"]:::status_planned
+        AR_0521["AR-0521 - Open"]:::status_open
     end
     subgraph series_06["06 - Metrics"]
         direction TB

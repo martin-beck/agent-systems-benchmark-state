@@ -3,14 +3,24 @@
   "branch": "feature/replay-openhands-environment-pin",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-0309"],
+  "depends_on": [
+    "AR-0309"
+  ],
   "id": "AR-0521",
   "next_action": "Use the recorded AR-0514 failure evidence to define an immutable, reproducible OpenHands environment bundle and verifier; AR-0514 remains blocked until this evidence is independently verified.",
-  "observed_branch": "", "observed_dirty": 0, "observed_head": "0000000000000000000000000000000000000000", "owner": "",
-  "plan": "../plans/AR-0521.md", "priority": "P0", "schema_version": 1,
-  "status": "planned", "summary": "Repair OpenHands replay environment provenance and reproducibility.",
-  "task_revision": 2, "title": "Reproduce and pin the OpenHands replay environment",
-  "updated_at": "2026-09-08T10:50:00+00:00", "worktree_key": "agent-systems-benchmark-replay-openhands-environment-pin"
+  "observed_branch": "",
+  "observed_dirty": 0,
+  "observed_head": "0000000000000000000000000000000000000000",
+  "owner": "",
+  "plan": "../plans/AR-0521.md",
+  "priority": "P0",
+  "schema_version": 1,
+  "status": "open",
+  "summary": "Repair OpenHands replay environment provenance and reproducibility.",
+  "task_revision": 3,
+  "title": "Reproduce and pin the OpenHands replay environment",
+  "updated_at": "2026-09-29T10:15:22+00:00",
+  "worktree_key": "agent-systems-benchmark-replay-openhands-environment-pin"
 }
 ---
 ## AR-0521
@@ -21,3 +31,7 @@ Acceptance requires a content-addressed environment bundle, offline verifier, de
 
 - 2026-09-08T10:50:00+00:00: Restored the required zero-hash sentinel for an unobserved
   planned worktree.
+
+- 2026-09-29T10:15:22+00:00: AR-0309 is done; AR-0514 failure evidence is independently reviewed and
+  is an explicit repair input, not a circular completion dependency. Begin immutable OpenHands
+  provenance repair.
