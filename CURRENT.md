@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1505](tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | Repair P1 namespace/root binding: bind RuntimeControlBootstrap materialization to actual authenticated namespace, relay-root and lease-root digests; reject RuntimeAuthorityInputs that do not match bootstrap receipt before provisioner creation; add mismatch tests. | ar1505-repair-luna56 |
+| P0 | [AR-1505](tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | Continue waiting for the five in-progress exact-head checks and fresh independent review; record terminal results and keep PR unmerged. | ar1505-repair-luna56 |
 
 ## Blocked
 

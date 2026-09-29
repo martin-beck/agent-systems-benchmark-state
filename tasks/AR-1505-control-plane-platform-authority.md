@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Repair P1 namespace/root binding: bind RuntimeControlBootstrap materialization to actual authenticated namespace, relay-root and lease-root digests; reject RuntimeAuthorityInputs that do not match bootstrap receipt before provisioner creation; add mismatch tests.",
+  "next_action": "Continue waiting for the five in-progress exact-head checks and fresh independent review; record terminal results and keep PR unmerged.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 0,
   "observed_head": "95ac5453fe3a1fbc383afa2ce713a3dceff78437",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 180,
+  "task_revision": 181,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:20:32+00:00",
+  "updated_at": "2026-09-29T00:20:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -738,3 +738,9 @@ public credential/socket paths, or weakening fail-closed gates.
   creation. A caller/runtime with mismatched namespace or roots can therefore obtain a provisioner
   not bound to the issued bootstrap, violating AR-1505 namespace/relay/lease binding and fail-closed
   authority requirements. No additional P2 findings. No product changes or merge performed.
+
+- 2026-09-29T00:20:45+00:00: Follow-up exact-head snapshot remains 95ac545 and PR OPEN with no
+  reviews. Terminal CI now SUCCESS: Credential-free benchmark path, platform evidence, AWQ shadow
+  evidence, retained faults, Huawei SPDX headers, bounded fuzz regressions, Kani bounded proofs, and
+  Loom/state models. IN_PROGRESS: emulated aarch64, TLC and Alloy recovery models, policy coverage
+  supply chain, Rust checks, and matcher and SLO mutation sentinels. No failures and no merge.
