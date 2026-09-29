@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 164,
+  "task_revision": 165,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:14:19+00:00",
+  "updated_at": "2026-09-29T00:14:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -664,3 +664,6 @@ public credential/socket paths, or weakening fail-closed gates.
   2757422ea were created by the coordinator and are state maintenance, not product work. Corrective
   action is to apply the narrow fence-retention patch using the supported patch mechanism, then
   verify the product diff.
+
+- 2026-09-29T00:14:36+00:00: Recorded command exit 2; command argv SHA-256
+  8c2f3825fa5dd0f4ded6bf0112b146e7bc4ac99d64391e8b17427d318acd8e68.
