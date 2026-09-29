@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1392-control-authority-materializer",
   "checkpoint_commit": "d59e6a76a1c7a432e63f0d765909b554bd12416c",
-  "claim_expires": "2026-09-29T14:29:53+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1388",
     "AR-1385",
@@ -18,15 +18,15 @@
   "observed_branch": "feature/ar-1392-control-authority-materializer",
   "observed_dirty": 0,
   "observed_head": "0ea9671224ff6b51fbe0a3be4ac9817c4526356c",
-  "owner": "ar1392-topology-repair-luna56",
+  "owner": "",
   "plan": "../plans/AR-1392-control-authority-materializer.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Resolve private live authority from authenticated control enrollment without caller injection.",
-  "task_revision": 141,
+  "task_revision": 142,
   "title": "Control-owned private authority materializer",
-  "updated_at": "2026-09-29T12:41:27+00:00",
+  "updated_at": "2026-09-29T12:41:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1392-control-authority-materializer"
 }
 ---
@@ -480,3 +480,10 @@ reachability.
   36568751882, Fault 36568751891, Repository quality 36568751966. Credential-free 36568752123 also
   SUCCESS. PR #385 exact head 0ea9671 had all 13 checks SUCCESS. Historical PR #339 merge 3cd6a5a
   and failure 36279474851 remain immutable evidence.
+
+- 2026-09-29T12:41:36+00:00: Released done: PR #385 exact head 0ea9671 all checks SUCCESS; guarded
+  normal two-parent merge d59e6a7 has current main first parent and empty-diff topic second parent.
+  Remote main verified at d59e6a7. Seven exact-main workflows terminal SUCCESS: Hosted 36568751695,
+  Rust 36568751779, Emulated AArch64 36568751799, Formal 36568751877, Huawei 36568751882, Fault
+  36568751891, Repository quality 36568751966; credential-free 36568752123 also SUCCESS. Preserved
+  PR #339 topology failure 36279474851 and merge 3cd6a5a.
