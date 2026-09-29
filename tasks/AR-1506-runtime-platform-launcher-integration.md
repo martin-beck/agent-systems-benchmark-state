@@ -21,11 +21,11 @@
   "plan": "../plans/AR-1506-runtime-platform-launcher-integration.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Connect the merged authenticated platform authority/bootstrap protocol to production ASB process startup and ordinary CLI dispatch.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Runtime platform launcher integration",
-  "updated_at": "2026-09-29T03:46:10+02:00",
+  "updated_at": "2026-09-29T01:47:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1506-runtime-platform-launcher-integration"
 }
 ---
@@ -54,3 +54,6 @@ production evidence.
 - 2026-09-29T03:46:10+02:00: Created as the narrow successor to the historical AR-1503/1504
   process-owner and launcher audits. AR-1505 merged at f92c2e941913129d7db50480f71e8361a0d43a0c,
   supplying the authenticated platform bootstrap contract required to implement this integration.
+
+- 2026-09-29T01:47:30+00:00: Dependencies AR-1473, AR-1474, AR-1480, AR-1484, AR-1485, AR-1502, and
+  AR-1505 verified done; begin production launcher integration.
