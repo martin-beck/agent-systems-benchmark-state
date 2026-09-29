@@ -2,7 +2,7 @@
 {
   "branch": "feature/replay-openhands",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-29T10:16:10+00:00",
+  "claim_expires": "2026-09-29T11:58:48+00:00",
   "depends_on": [
     "AR-0309",
     "AR-0503",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for OpenHands.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Qualify OpenHands replay",
-  "updated_at": "2026-09-29T09:56:10+00:00",
+  "updated_at": "2026-09-29T09:58:48+00:00",
   "worktree_key": "agent-systems-benchmark-replay-openhands"
 }
 ---
@@ -112,3 +112,5 @@ Qualify OpenHands record/replay, network denial, parity, retries, tool calls, ca
 - 2026-09-29T09:54:27+00:00: Claimed by ar0514-repair-luna56.
 
 - 2026-09-29T09:56:10+00:00: Heartbeat by ar0514-repair-luna56.
+
+- 2026-09-29T09:58:48+00:00: Heartbeat by ar0514-repair-luna56.
