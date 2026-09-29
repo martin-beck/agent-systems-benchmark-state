@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Apply the response clone correction, rerun focused protocol and runtime resolver tests, then regenerate schemas.",
+  "next_action": "Run schema conformance, full formatter, changed-package check and clippy, then full workspace tests/docs before final signed repair commit.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 5,
   "observed_head": "95ac5453fe3a1fbc383afa2ce713a3dceff78437",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 212,
+  "task_revision": 213,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:33:01+00:00",
+  "updated_at": "2026-09-29T00:33:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -848,3 +848,11 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-29T00:32:47+00:00: Recorded command exit 0; command argv SHA-256
   5b533e3a17c1e9cae8972803d3c720a69bc890efd80882c672eb7d010be9fce2.
+
+- 2026-09-29T00:33:14+00:00: Schema generation correction: an initial cargo run request used example
+  name generate_schema and exited 101 with exact stderr: error no example target named
+  generate_schema in asb-control package; available example was generate_schema in asb-bundle.
+  Inspection of asb-control Cargo.toml showed the registered target is generate-control-schema.
+  Corrective action: reran cargo run --locked -p asb-control --example generate-control-schema with
+  all schema output directories v1 through v1.11; generation completed successfully and updated
+  generated artifacts.
