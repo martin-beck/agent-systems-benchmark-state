@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1508-platform-owned-authority-provider",
   "checkpoint_commit": "dd1981a7e6b607ee051d68e2bb107654f1fd1965",
-  "claim_expires": "2026-09-29T23:10:55+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1473",
     "AR-1474",
@@ -17,15 +17,15 @@
   "observed_branch": "feature/ar-1508-platform-owned-authority-provider",
   "observed_dirty": 0,
   "observed_head": "dd1981a7e6b607ee051d68e2bb107654f1fd1965",
-  "owner": "coordinator-ar1508-provider-20260929",
+  "owner": "",
   "plan": "../plans/AR-1508-platform-owned-authority-provider.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Lifecycle expiry fencing repaired and covered by seven focused plus 167 full asb-runtime tests; production platform authority callsite remains absent.",
-  "task_revision": 157,
+  "task_revision": 158,
   "title": "Platform-owned authority provider",
-  "updated_at": "2026-09-29T21:16:42+00:00",
+  "updated_at": "2026-09-29T21:16:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1508-platform-owned-authority-provider"
 }
 ---
@@ -537,3 +537,7 @@ fixed-path authority, weakening formal/privacy/native gates.
 - 2026-09-29T21:16:42+00:00: Implemented now-time and generation/expiry fencing before provider
   materialization; focused 7/7 and full asb-runtime 167 passed. The original P1-1 production
   source/callsite remains unresolved, so this AR is not complete.
+
+- 2026-09-29T21:16:44+00:00: Partial repair checkpoint dd1981a adds lifecycle fencing and tests;
+  leave blocked on the separately owned non-test platform authority source/callsite. No PR or
+  qualification claim.
