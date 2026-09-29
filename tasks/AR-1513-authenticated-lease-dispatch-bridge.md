@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T05:38:48+00:00",
+  "updated_at": "2026-09-29T05:40:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -119,3 +119,6 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
   asb-runtime -p asb-cli --all-targets -- -D warnings. Removed broad module dead-code allowance;
   retained only narrow integration-seam allows. Runtime focused tests remain 156 passed, 1 ignored.
   Product diff remains six files pending lifecycle/source review.
+
+- 2026-09-29T05:40:09+00:00: Recorded command exit 101; command argv SHA-256
+  7b80382008cb01e3ea6fa6e88054b624464f9801b40ed57f947b01892a686ae8.
