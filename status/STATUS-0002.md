@@ -214,6 +214,12 @@
 
 ## Complete AR inventory
 
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1523](../tasks/AR-1523.md): Platform authority deployment adapter | Unclaimed | Provide the missing first-customer platform adapter that supplies authenticated private runtime authority to ASB production dispatch. | Remain planned until the coordinator assigns the deployment-adapter owner and confirms the private runtime authority handoff contract; then implement and qualify the adapter. |
+
 ### Blocked (77)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -296,7 +302,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (52)
+### Planned (51)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -320,7 +326,6 @@
 | P0 | [AR-1375](../tasks/AR-1375-live-control-dispatch-source.md): Runtime-owned live control dispatch source | Unclaimed | Supply authenticated runtime control receipts to production live dispatch. | Wait for AR-1374 blocker resolution, then implement the runtime-owned authenticated control adapter for CLI live dispatch. |
 | P0 | [AR-1521](../tasks/AR-1521.md): AR-1307/1308 formal capacity repair implementation | Unclaimed | Implement the reviewed successor contract that repairs the AR-1308 full-tier capacity failure while preserving AR-1307 qualification boundaries. | Remain planned until AR-1309 selects and records the formal capacity or model-reduction contract; then implement that contract without changing AR-1307 limits. |
 | P0 | [AR-1522](../tasks/AR-1522.md): AR-1307/1308 formal qualification rerun | Unclaimed | Run and independently verify the repaired AR-1307/1308 full-tier qualification, or leave a truthful classified blocker. | Remain planned until AR-1521 is merged and its exact-head CI evidence is green; then run the one authorized terminal qualification attempt. |
-| P0 | [AR-1523](../tasks/AR-1523.md): Platform authority deployment adapter | Unclaimed | Provide the missing first-customer platform adapter that supplies authenticated private runtime authority to ASB production dispatch. | Remain planned until the coordinator assigns the deployment-adapter owner and confirms the private runtime authority handoff contract; then implement and qualify the adapter. |
 | P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
 | P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
 | P1 | [AR-0810](../tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Unclaimed | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project&#x27;s GitHub Pages site. |
@@ -500,4 +505,3 @@
 | P0 | [AR-1385](../tasks/AR-1385-runtime-live-dispatch-source.md): Authenticated runtime live dispatch source | Unclaimed | Materialize the authenticated runtime-owned live dispatch source for production asb run and sweep. | PR #280 force-updated to signed+DCO exact head 02b79f3; monitor fresh required checks, repair only evidenced failures, then merge only after independent review and all checks green. |
 | P0 | [AR-1388](../tasks/AR-1388-runtime-authority-materializer.md): Runtime authority receipt materializer | Unclaimed | Materialize runtime-owned provider authority from authenticated receipt and chain state. | Done: original merge and AR-1389 replacement evidence verified; no further action remains. |
 | P0 | [AR-1389](../tasks/AR-1389-formal-fixture-exec-race.md): Formal fixture executable race repair | Unclaimed | Repair the formal online-build fixture race that caused ETXTBSY after AR-1388 merge. | Done: atomic fixture repair merged at 10bffbf015bd7ca78d8c0d18f04cf0190195e933 and all seven post-merge workflows passed. |
-| P0 | [AR-1392](../tasks/AR-1392-control-authority-materializer.md): Control-owned private authority materializer | Unclaimed | Resolve private live authority from authenticated control enrollment without caller injection. | Release done after exact main d59e6a7 verification; seven required workflows terminal green and remote main matches. |
