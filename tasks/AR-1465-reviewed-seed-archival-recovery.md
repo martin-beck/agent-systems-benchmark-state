@@ -2,19 +2,19 @@
 {
   "branch": "repair/ar-1465-reviewed-seed-archival-recovery",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-29T16:22:09+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1465",
   "next_action": "External operator must supply reviewed immutable seed bytes with exact SHA-256 b3383756b5cd357f58d923216effea33be35b793034de321c3c9ce460ece4b28 and provenance; independently verify them, bind them to AR-1308, and rerun signed preflight. Do not regenerate or substitute.",
-  "owner": "coordinator-dev-seed-policy-20260929",
+  "owner": "",
   "plan": "../plans/AR-1465-reviewed-seed-archival-recovery.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "superseded",
   "summary": "Expanded archival audit found no exact reviewed seed in approved state/runner roots, Git objects, the ASB product tree, seed-named second-disk files, or available GitHub Actions artifacts.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Reviewed full-exhaustive seed archival recovery",
-  "updated_at": "2026-09-29T16:12:09+00:00",
+  "updated_at": "2026-09-29T16:12:12+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1465-reviewed-seed-archival-recovery"
 }
 ---
@@ -117,3 +117,7 @@ needed by AR-1308. It must not weaken formal gates or invent equivalent input.
   superseding formal-only archival recovery for development execution.
 
 - 2026-09-29T16:12:09+00:00: Claimed by coordinator-dev-seed-policy-20260929.
+
+- 2026-09-29T16:12:12+00:00: Superseded for development: generated local seeds are allowed only
+  under unsigned-development and remain diagnostic. The archival seed remains a
+  formal/publication-only concern.
