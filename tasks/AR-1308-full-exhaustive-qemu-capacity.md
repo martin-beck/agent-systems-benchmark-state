@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "checkpoint_commit": "df0e402f442468e43e06b7c1acb3c3667277fb75",
-  "claim_expires": "2026-09-29T13:38:53+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1304"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
-  "owner": "coordinator-ar1308-development-v2",
+  "owner": "",
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Unsigned-development fixture v2 boots network-disabled, creates asb user/data UUID, reaches cloud-init and transient cgroup RC=0, then powers down; state bind path remains incomplete.",
-  "task_revision": 579,
+  "task_revision": 580,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T13:29:04+00:00",
+  "updated_at": "2026-09-29T13:29:07+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1773,3 +1773,7 @@ must report `qualification_authorized: false`.
 - 2026-09-29T13:29:04+00:00: Diagnostic v2 used local seed d442a24... and no signed
   commit/tag/authority. QEMU reached FULL_EXHAUSTIVE_TRANSIENT_RC=0 and poweroff; cloud-init
   reported /mnt/asb-data/state absent, so verify.sh did not run.
+
+- 2026-09-29T13:29:07+00:00: Released blocked for the next unsigned-development fixture repair:
+  create the state directory/layout before bind. Signing is not a requirement for this diagnostic
+  path.
