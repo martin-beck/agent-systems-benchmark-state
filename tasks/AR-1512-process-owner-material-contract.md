@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated process-owner material source and ordinary CLI/control caller needed to consume runtime authority.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Authenticated process-owner material contract",
-  "updated_at": "2026-09-29T05:12:49+00:00",
+  "updated_at": "2026-09-29T05:13:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1512-process-owner-material-contract"
 }
 ---
@@ -124,3 +124,6 @@ host data, synthetic authority, or weakening fail-closed/native/formal gates.
 
 - 2026-09-29T05:12:49+00:00: Recorded command exit 101; command argv SHA-256
   534f8613e1c316db8f0f46dd989e44e14a8ca74304a94791b4e4a1c59b2fbb1d.
+
+- 2026-09-29T05:13:06+00:00: Recorded command exit 0; command argv SHA-256
+  de4935b3061b251d99b621a57a775c4761c0e0911d9dbe0263925f702b4e329b.
