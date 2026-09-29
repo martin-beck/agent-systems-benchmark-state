@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1505](tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | Run changed-package check/clippy and full workspace gates on the 61-line focused coverage patch; then independently review, sign DCO commit, push same branch, rerun exact-head policy and request fresh review. | ar1505-repair-luna56 |
+| P0 | [AR-1505](tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | Push signed commit c96be662 to existing feature branch; refresh PR 382 exact head and rerun Repository quality workflow, then monitor all checks and request fresh independent review. | ar1505-repair-luna56 |
 
 ## Blocked
 
