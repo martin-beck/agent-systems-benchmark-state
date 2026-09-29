@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair AR-1308 fixture/evidence for reproducible development runs.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "AR-1308 QEMU fixture repair",
-  "updated_at": "2026-09-29T18:50:27+00:00",
+  "updated_at": "2026-09-29T19:00:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1516-ar1308-qemu-fixture-evidence-repair"
 }
 ---
@@ -46,3 +46,6 @@ qualification, or make reviewed seed material a development prerequisite.
 - 2026-09-29T18:47:28+00:00: Heartbeat by coordinator-ar1516-qemu-repair-20260929.
 
 - 2026-09-29T18:50:27+00:00: Heartbeat by coordinator-ar1516-qemu-repair-20260929.
+
+- 2026-09-29T19:00:22+00:00: Recorded command exit 124; command argv SHA-256
+  bfa40e8bd0148672d622e616c80a78eb151dfaf338e54e2215f2a7c17f370659.
