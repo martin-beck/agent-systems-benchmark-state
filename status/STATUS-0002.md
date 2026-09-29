@@ -192,11 +192,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1509](../tasks/AR-1509-authenticated-authority-provider-receipt.md): Authenticated authority-provider receipt | Unclaimed | Replace the AR-1508 test façade with an authenticated production authority-provider receipt and lifecycle fence. | Promote after dependency verification; implement a real runtime-owned authority-provider receipt, independent claim verification, and post-materialization lifecycle fencing. |
+| P0 | [AR-1509](../tasks/AR-1509-authenticated-authority-provider-receipt.md): Authenticated authority-provider receipt | ar1509-receipt-luna56 | Replace the AR-1508 test façade with an authenticated production authority-provider receipt and lifecycle fence. | Promote after dependency verification; implement a real runtime-owned authority-provider receipt, independent claim verification, and post-materialization lifecycle fencing. |
 
 ### Blocked (77)
 
