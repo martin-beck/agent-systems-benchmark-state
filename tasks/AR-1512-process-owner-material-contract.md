@@ -8,7 +8,7 @@
     "AR-1484"
   ],
   "id": "AR-1512",
-  "next_action": "Add runtime/control caller facade over validated owner store; then run focused, format, clippy, docs and serial workspace gates.",
+  "next_action": "Run focused runtime tests including caller, serial workspace, docs/rustdoc/privacy/formal gates; inspect complete diff for authority and privacy boundaries.",
   "observed_branch": "feature/ar-1512-process-owner-material-contract",
   "observed_dirty": 4,
   "observed_head": "f92c2e941913129d7db50480f71e8361a0d43a0c",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated process-owner material source and ordinary CLI/control caller needed to consume runtime authority.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Authenticated process-owner material contract",
-  "updated_at": "2026-09-29T05:10:39+00:00",
+  "updated_at": "2026-09-29T05:11:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1512-process-owner-material-contract"
 }
 ---
@@ -103,3 +103,12 @@ host data, synthetic authority, or weakening fail-closed/native/formal gates.
   df2bc9374902110cacfc5431fc10b3a68e6e9bc8662799a8fabb9f6e07a98612.
 
 - 2026-09-29T05:10:39+00:00: Heartbeat by ar1512-process-owner-luna56.
+
+- 2026-09-29T05:11:00+00:00: Implemented process_owner_material module from protected f92c2e9:
+  versioned deny-unknown-fields contract binds
+  endpoint/session/generation/expiry/restart/cancel/revoke/teardown/target/alternate
+  egress/namespace/credential/tool/policy/allowlist/private roots/launch provenance; owner-side
+  private store consumes nonces and fences lifecycle; RuntimeProcessOwnerMaterialCaller accepts only
+  nonce. Added provider-free positive/negative tests and docs/README link. Focused runtime tests 4/4
+  and clippy -D warnings pass after formatting. Initial compile failure was recorded separately; no
+  product authority was derived from digest-only records.
