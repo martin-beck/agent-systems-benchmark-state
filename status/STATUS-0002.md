@@ -211,8 +211,8 @@
 | [AR-1518](../tasks/AR-1518.md) | [AR-1517](../tasks/AR-1517-ar1309-capacity-decision-unblock.md) | None |
 | [AR-1519](../tasks/AR-1519.md) | [AR-1304](../tasks/AR-1304-required-tier-qemu-runner.md) | [AR-1520](../tasks/AR-1520.md), [AR-1528](../tasks/AR-1528.md) |
 | [AR-1520](../tasks/AR-1520.md) | [AR-1519](../tasks/AR-1519.md) | [AR-1521](../tasks/AR-1521.md), [AR-1526](../tasks/AR-1526.md), [AR-1528](../tasks/AR-1528.md), [AR-1529](../tasks/AR-1529.md), [AR-1530](../tasks/AR-1530.md) |
-| [AR-1521](../tasks/AR-1521.md) | [AR-1520](../tasks/AR-1520.md), [AR-1530](../tasks/AR-1530.md) | [AR-1522](../tasks/AR-1522.md) |
-| [AR-1522](../tasks/AR-1522.md) | [AR-1521](../tasks/AR-1521.md) | None |
+| [AR-1521](../tasks/AR-1521.md) | [AR-1520](../tasks/AR-1520.md), [AR-1530](../tasks/AR-1530.md) | None |
+| [AR-1522](../tasks/AR-1522.md) | [AR-1530](../tasks/AR-1530.md) | None |
 | [AR-1523](../tasks/AR-1523.md) | [AR-1453](../tasks/AR-1453-frontend-orchestration-wiring.md), [AR-1505](../tasks/AR-1505-control-plane-platform-authority.md), [AR-1513](../tasks/AR-1513-authenticated-lease-dispatch-bridge.md), [AR-1514](../tasks/AR-1514-runtime-auth-reconciliation.md) | None |
 | [AR-1524](../tasks/AR-1524.md) | [AR-1373](../tasks/AR-1373-authenticated-receipt-source.md), [AR-1453](../tasks/AR-1453-frontend-orchestration-wiring.md) | None |
 | [AR-1525](../tasks/AR-1525.md) | [AR-1453](../tasks/AR-1453-frontend-orchestration-wiring.md), [AR-1505](../tasks/AR-1505-control-plane-platform-authority.md) | None |
@@ -220,7 +220,7 @@
 | [AR-1527](../tasks/AR-1527.md) | None | [AR-1528](../tasks/AR-1528.md) |
 | [AR-1528](../tasks/AR-1528.md) | [AR-1519](../tasks/AR-1519.md), [AR-1520](../tasks/AR-1520.md), [AR-1527](../tasks/AR-1527.md) | None |
 | [AR-1529](../tasks/AR-1529.md) | [AR-1517](../tasks/AR-1517-ar1309-capacity-decision-unblock.md), [AR-1520](../tasks/AR-1520.md) | [AR-1530](../tasks/AR-1530.md) |
-| [AR-1530](../tasks/AR-1530.md) | [AR-1520](../tasks/AR-1520.md), [AR-1529](../tasks/AR-1529.md) | [AR-1521](../tasks/AR-1521.md) |
+| [AR-1530](../tasks/AR-1530.md) | [AR-1520](../tasks/AR-1520.md), [AR-1529](../tasks/AR-1529.md) | [AR-1521](../tasks/AR-1521.md), [AR-1522](../tasks/AR-1522.md) |
 
 ## Complete AR inventory
 
@@ -327,7 +327,7 @@
 | P0 | [AR-1180](../tasks/AR-1180.md): Cross-project wizard qualification | Unclaimed | Qualify the complete wizard. | Read the plan. |
 | P0 | [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Unclaimed | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. |
 | P0 | [AR-1309](../tasks/AR-1309-reviewed-capacity-or-model-reduction.md): Reviewed full-exhaustive capacity or model-reduction contract | Unclaimed | Provide a reviewed successor contract after terminal full-exhaustive capacity OOM. | Superseded by AR-1529: preserve this historical decision record and do not promote it because its dependency on blocked AR-1307/1308 cannot express the already completed capacity decision. |
-| P0 | [AR-1522](../tasks/AR-1522.md): AR-1307/1308 formal qualification rerun | Unclaimed | Run and independently verify the repaired AR-1307/1308 full-tier qualification, or leave a truthful classified blocker. | Remain planned until AR-1521 is merged and its exact-head CI evidence is green; then run the one authorized terminal qualification attempt. |
+| P0 | [AR-1522](../tasks/AR-1522.md): AR-1307/1308 formal qualification rerun | Unclaimed | Run and independently verify the repaired AR-1307/1308 full-tier qualification, or leave a truthful classified blocker. | Remain planned until AR-1530&#x27;s signed-capacity-8g profile is verified on protected main; then run the one authorized terminal qualification attempt. |
 | P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
 | P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
 | P1 | [AR-0810](../tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Unclaimed | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project&#x27;s GitHub Pages site. |

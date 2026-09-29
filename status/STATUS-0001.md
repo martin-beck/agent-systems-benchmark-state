@@ -2082,10 +2082,10 @@ flowchart LR
     AR_1520 --> AR_1528
     AR_1520 --> AR_1529
     AR_1520 --> AR_1530
-    AR_1521 --> AR_1522
     AR_1527 --> AR_1528
     AR_1529 --> AR_1530
     AR_1530 --> AR_1521
+    AR_1530 --> AR_1522
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
