@@ -199,11 +199,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1508](../tasks/AR-1508-platform-owned-authority-provider.md): Platform-owned authority provider | Unclaimed | Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material. | Run full exact-head product gates on signed commits 7306f83 and 0135650; obtain independent review before publication. |
+| P0 | [AR-1508](../tasks/AR-1508-platform-owned-authority-provider.md): Platform-owned authority provider | ar1508-provider-luna56 | Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material. | Run full exact-head product gates on signed commits 7306f83 and 0135650; obtain independent review before publication. |
 
 ### Blocked (81)
 

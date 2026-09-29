@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1508-platform-owned-authority-provider",
   "checkpoint_commit": "0135650a2f54c3a6e79ad3d345c03c4ebc43d35d",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T11:13:46+00:00",
   "depends_on": [
     "AR-1473",
     "AR-1474",
@@ -17,15 +17,15 @@
   "observed_branch": "feature/ar-1508-platform-owned-authority-provider",
   "observed_dirty": 0,
   "observed_head": "013565032506a3a70a34fc727970a6dd40c377c1",
-  "owner": "",
+  "owner": "ar1508-provider-luna56",
   "plan": "../plans/AR-1508-platform-owned-authority-provider.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Platform-owned authority provider",
-  "updated_at": "2026-09-29T10:43:43+00:00",
+  "updated_at": "2026-09-29T10:43:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1508-platform-owned-authority-provider"
 }
 ---
@@ -162,3 +162,5 @@ fixed-path authority, weakening formal/privacy/native gates.
 - 2026-09-29T10:43:43+00:00: AR-1510 confirms the same missing provider boundary; AR-1508 has the
   narrow provider/materialization candidate and now needs exact-head gates and independent review
   before publication.
+
+- 2026-09-29T10:43:46+00:00: Claimed by ar1508-provider-luna56.
