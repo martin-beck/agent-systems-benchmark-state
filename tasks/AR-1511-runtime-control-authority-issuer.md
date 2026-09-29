@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1511-runtime-control-authority-issuer",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-29T05:36:14+00:00",
+  "claim_expires": "2026-09-29T05:37:15+00:00",
   "depends_on": [
     "AR-1502",
     "AR-1484"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T03:36:14+00:00",
+  "updated_at": "2026-09-29T03:37:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
@@ -202,3 +202,5 @@ production authority, or weakening fail-closed/native/formal gates.
   repair worker.
 
 - 2026-09-29T03:36:14+00:00: Claimed by ar1511-authority-repair-luna56.
+
+- 2026-09-29T03:37:15+00:00: Heartbeat by ar1511-authority-repair-luna56.
