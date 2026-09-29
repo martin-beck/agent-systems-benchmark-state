@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1513](tasks/AR-1513-authenticated-lease-dispatch-bridge.md): Authenticated lease-to-live-dispatch bridge | Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch. | Fresh review of cfed22b found P1 policy hash mismatch blocking realistic authenticated bridging, P1 ordinary lease bridge still unused by run/sweep, P2 alternate-egress collapsed to target, and hosted workspace coverage 88.03% below 90%. Repair before merge. | ar1513-repair3-luna56 |
+| P0 | [AR-1513](tasks/AR-1513-authenticated-lease-dispatch-bridge.md): Authenticated lease-to-live-dispatch bridge | Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch. | Fresh review of cfed22b found P1 policy hash mismatch blocking realistic authenticated bridging, P1 ordinary lease bridge still unused by run/sweep, P2 alternate-egress collapsed to target, and hosted workspace coverage 88.03% below 90%. Repair before merge. | - |
 
 ## Blocked
 

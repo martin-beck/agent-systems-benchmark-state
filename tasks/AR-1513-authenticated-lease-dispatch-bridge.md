@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
   "checkpoint_commit": "cfed22bec49eaf9c74abf000ca274b3a353da3a9",
-  "claim_expires": "2026-09-29T09:13:27+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1502",
     "AR-1484"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
   "observed_dirty": 0,
   "observed_head": "cfed22bec49eaf9c74abf000ca274b3a353da3a9",
-  "owner": "ar1513-repair3-luna56",
+  "owner": "",
   "plan": "../plans/AR-1513-authenticated-lease-dispatch-bridge.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 204,
+  "task_revision": 205,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T07:29:46+00:00",
+  "updated_at": "2026-09-29T07:29:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -628,3 +628,6 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
 
 - 2026-09-29T07:29:46+00:00: Independent exact-head review: provenance enforcement improved, but
   live bridge and policy/egress semantics remain incomplete; preserve all evidence.
+
+- 2026-09-29T07:29:49+00:00: Release third repair claim for fourth repair pass; preserve cfed22b and
+  review/coverage evidence.
