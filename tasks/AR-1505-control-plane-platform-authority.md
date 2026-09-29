@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1505-control-plane-platform-authority",
-  "checkpoint_commit": "c96be66213c9a09870e7e6b38784bc7910dff728",
+  "checkpoint_commit": "f92c2e941913129d7db50480f71e8361a0d43a0c",
   "claim_expires": "2026-09-29T02:32:05+00:00",
   "depends_on": [
     "AR-1473",
@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Parent may use the established protected merge path for PR 382 at c96be662; durable independent exact-head review evidence is the review gate, and no formal GitHub review submission is required by current ASB workflow. Do not merge from this repair worker.",
+  "next_action": "Monitor all required post-merge workflows for exact main SHA f92c2e941913129d7db50480f71e8361a0d43a0c; close AR only after every required result is terminal SUCCESS and post-merge verification is recorded.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 0,
   "observed_head": "c96be66213c9a09870e7e6b38784bc7910dff728",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 300,
+  "task_revision": 301,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T01:32:42+00:00",
+  "updated_at": "2026-09-29T01:33:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -1183,3 +1183,7 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-29T01:32:42+00:00: Recorded command exit 0; command argv SHA-256
   4a32240f7d585a675d0059f62aa5eb4574ec409bfca6864949181811c434fdd5.
+
+- 2026-09-29T01:33:18+00:00: Protected merge completed through handoffctl run with PR #382 exact
+  head c96be662; immutable merge commit f92c2e941913129d7db50480f71e8361a0d43a0c. Post-merge
+  assurance workflows are running; AR remains in_progress.
