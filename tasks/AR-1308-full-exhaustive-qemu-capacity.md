@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Development fixture path defect repaired and focused tests pass, but portable-smoke still fails closed at TLC JVM startup with pthread_create EAGAIN (host runner capacity), before attestation. No seed-digest blocker remains and no formal qualification is claimed.",
-  "task_revision": 618,
+  "task_revision": 619,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T17:28:16+00:00",
+  "updated_at": "2026-09-29T17:32:00+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1903,3 +1903,7 @@ must report `qualification_authorized: false`.
   blocked only on disposable runner capacity (JVM pthread_create EAGAIN) for portable-smoke
   attestation. Full state suite 200 passed/86 subtests passed; no reviewed seed or digest dependency
   remains.
+
+- 2026-09-29T17:32:00+00:00: Portable admission EAGAIN is attributable to nproc counting processes
+  instead of Linux tasks; resume bounded repair in the declared AR worktree without weakening task
+  limits.
