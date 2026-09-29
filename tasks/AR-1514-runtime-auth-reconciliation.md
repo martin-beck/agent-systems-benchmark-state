@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1514-runtime-auth-reconciliation",
   "checkpoint_commit": "a97dfb39c78478445180db0e38574c17db266700",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T14:47:48+00:00",
   "depends_on": [
     "AR-1499",
     "AR-1500"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1514-runtime-auth-reconciliation",
   "observed_dirty": 0,
   "observed_head": "a97dfb39c78478445180db0e38574c17db266700",
-  "owner": "",
+  "owner": "ar1514-reconciliation-luna56",
   "plan": "../plans/AR-1514-runtime-auth-reconciliation.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair ASB development-runtime reconciliation between digest-only enrollment and helper invocation.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Reconciled development auth handoff runtime",
-  "updated_at": "2026-09-29T13:57:54+00:00",
+  "updated_at": "2026-09-29T14:17:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1514-runtime-auth-reconciliation"
 }
 ---
@@ -109,3 +109,5 @@ side of that repair.
   pending. Exact next action: wait for terminal checks, obtain convergent review, merge exact head
   if green, then verify protected main and post-merge ASB runtime smoke; keep paired asb-tui AR-1323
   qualification external.
+
+- 2026-09-29T14:17:48+00:00: Claimed by ar1514-reconciliation-luna56.
