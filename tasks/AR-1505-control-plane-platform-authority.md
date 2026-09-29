@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 227,
+  "task_revision": 228,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:39:40+00:00",
+  "updated_at": "2026-09-29T00:39:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -908,3 +908,6 @@ public credential/socket paths, or weakening fail-closed gates.
   control_bootstrap_response_is_consumed_into_runtime_chain_and_profile found, followed by Usage
   cargo test OPTIONS TESTNAME. Product code was unchanged. Corrective action: run the resolver and
   control-bootstrap filters as separate serial handoffctl commands.
+
+- 2026-09-29T00:39:47+00:00: Recorded command exit 0; command argv SHA-256
+  f15da442bb51797fe82a063bcd739647cd753eea9aefd418bc9ae37fe36f7cc4.
