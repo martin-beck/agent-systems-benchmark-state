@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated platform control source and production lifecycle wiring required by the authority-provider receipt.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Authenticated control source and production provider wiring",
-  "updated_at": "2026-09-29T21:16:57+00:00",
+  "updated_at": "2026-09-29T21:17:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1510-authenticated-control-source-wiring"
 }
 ---
@@ -148,3 +148,6 @@ test-only façade publication, or weakening native/formal/privacy gates.
   and ordinary run/sweep wiring.
 
 - 2026-09-29T21:16:57+00:00: Claimed by coordinator-ar1510-source-wiring-20260929.
+
+- 2026-09-29T21:17:07+00:00: Recorded command exit 0; command argv SHA-256
+  ac0fbf8964ccc05f72432709176c5d049e4d2e219fa10b02dfdb5f1ec424b648.
