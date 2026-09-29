@@ -2,7 +2,7 @@
 {
   "branch": "feature/replay-openhands",
   "checkpoint_commit": "3ccee91118b3a43eda123b0107d04ea4c2e3d80a",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T10:42:48+00:00",
   "depends_on": [
     "AR-0309",
     "AR-0503",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/replay-openhands",
   "observed_dirty": 0,
   "observed_head": "3ccee91118b3a43eda123b0107d04ea4c2e3d80a",
-  "owner": "",
+  "owner": "ar0514-review-luna56",
   "plan": "../plans/AR-0514.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Qualify replay conformance for OpenHands.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Qualify OpenHands replay",
-  "updated_at": "2026-09-29T10:12:38+00:00",
+  "updated_at": "2026-09-29T10:12:48+00:00",
   "worktree_key": "agent-systems-benchmark-replay-openhands"
 }
 ---
@@ -218,3 +218,5 @@ Qualify OpenHands record/replay, network denial, parity, retries, tool calls, ca
 
 - 2026-09-29T10:12:38+00:00: Review completed; reopen briefly to correct the durable next action to
   the AR-0521 provenance gate, then release blocked again.
+
+- 2026-09-29T10:12:48+00:00: Claimed by ar0514-review-luna56.
