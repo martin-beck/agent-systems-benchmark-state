@@ -188,7 +188,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1505](../tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | ar1505-repair-luna56 | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | Clean generated checkout profraw artifacts through handoffctl, then run one serial coverage command and inspect the terminal coverage result before adding tests. |
+| P0 | [AR-1505](../tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | ar1505-repair-luna56 | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | Monitor rerun Repository quality workflow 36504328236 on exact head da5e2a9 to terminal; if green request fresh exact-head independent review, do not merge. |
 
 ### Blocked (76)
 

@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Clean generated checkout profraw artifacts through handoffctl, then run one serial coverage command and inspect the terminal coverage result before adding tests.",
+  "next_action": "Monitor rerun Repository quality workflow 36504328236 on exact head da5e2a9 to terminal; if green request fresh exact-head independent review, do not merge.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 0,
   "observed_head": "da5e2a916b66de9f31f2c5bcccd1f59f7b3321d2",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 266,
+  "task_revision": 267,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T01:04:25+00:00",
+  "updated_at": "2026-09-29T01:05:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -1048,3 +1048,10 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-29T01:04:25+00:00: Recorded command exit 0; command argv SHA-256
   fb41f68ba14ee4f785b43026791aa8296b713c52f67af6dd3830da20b3e10a13.
+
+- 2026-09-29T01:05:14+00:00: Reran the failed Repository quality workflow exactly via handoffctl: gh
+  run rerun 36504328236 --failed --repo martin-beck/agent-systems-benchmark. Read-only gh run view
+  confirms run 36504328236 is now IN_PROGRESS on exact head da5e2a916b66de9f31f2c5bcccd1f59f7b3321d2
+  at https://github.com/martin-beck/agent-systems-benchmark/actions/runs/36504328236. Product tree
+  is clean and no coverage-floor or product commit was changed; stale generated profraw artifacts
+  were removed.
