@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 279,
+  "task_revision": 280,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T01:15:48+00:00",
+  "updated_at": "2026-09-29T01:16:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -1100,3 +1100,6 @@ public credential/socket paths, or weakening fail-closed gates.
   remains running with output redirected to ignored target/ar1505-coverage/quality-followup.log; no
   overlapping coverage process is active. Focused test generated only checkout profraw artifacts,
   which will be removed by exact filename after coverage completes.
+
+- 2026-09-29T01:16:05+00:00: Recorded command exit 0; command argv SHA-256
+  8b3ad38ae2863e422106d4f6c03a8d41a9f3a4ff4295b6325cbd29786ca479b7.
