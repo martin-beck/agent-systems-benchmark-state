@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Request fresh independent review and exact-head CI for 95ac5453fe3a1fbc383afa2ce713a3dceff78437; keep PR unmerged until both are green.",
+  "next_action": "Wait for all exact-head CI to complete and obtain fresh independent review; record each terminal result and keep PR unmerged unless all required gates and review are green.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 0,
   "observed_head": "95ac5453fe3a1fbc383afa2ce713a3dceff78437",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 178,
+  "task_revision": 179,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:19:16+00:00",
+  "updated_at": "2026-09-29T00:19:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -715,3 +715,10 @@ public credential/socket paths, or weakening fail-closed gates.
   95ac5453fe3a1fbc383afa2ce713a3dceff78437 with two commits including the signed repair. GitHub
   currently shows no reviewers and no completed review; the web checks panel did not expose
   exact-head results, so CI remains pending or not observable from this session. No merge performed.
+
+- 2026-09-29T00:19:34+00:00: Exact-head PR refresh via gh confirms headRefOid
+  95ac5453fe3a1fbc383afa2ce713a3dceff78437, PR OPEN, reviews empty. CI has started on this exact
+  SHA: six primary gates are IN_PROGRESS (Credential-free benchmark path, emulated aarch64, formal
+  assurance, platform evidence, policy coverage supply chain, Rust checks), with AWQ shadow,
+  retained faults, and Huawei SPDX headers SUCCESS; bounded fuzz and matcher sentinels plus Kani and
+  Loom/state models remain IN_PROGRESS. No merge.

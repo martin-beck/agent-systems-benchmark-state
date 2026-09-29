@@ -188,7 +188,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1505](../tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | ar1505-repair-luna56 | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | Request fresh independent review and exact-head CI for 95ac5453fe3a1fbc383afa2ce713a3dceff78437; keep PR unmerged until both are green. |
+| P0 | [AR-1505](../tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | ar1505-repair-luna56 | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | Wait for all exact-head CI to complete and obtain fresh independent review; record each terminal result and keep PR unmerged unless all required gates and review are green. |
 
 ### Blocked (76)
 
