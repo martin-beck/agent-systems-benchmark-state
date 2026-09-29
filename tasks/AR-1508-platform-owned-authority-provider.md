@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1508-platform-owned-authority-provider",
   "checkpoint_commit": "5344809cfe4f8f8b1a4bd734b606c347f693c349",
-  "claim_expires": "2026-09-29T12:04:31+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1473",
     "AR-1474",
@@ -17,15 +17,15 @@
   "observed_branch": "feature/ar-1508-platform-owned-authority-provider",
   "observed_dirty": 0,
   "observed_head": "5344809cfe4f8f8b1a4bd734b606c347f693c349",
-  "owner": "ar1508-provider-repair2-luna56",
+  "owner": "",
   "plan": "../plans/AR-1508-platform-owned-authority-provider.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material.",
-  "task_revision": 138,
+  "task_revision": 139,
   "title": "Platform-owned authority provider",
-  "updated_at": "2026-09-29T11:34:31+00:00",
+  "updated_at": "2026-09-29T11:36:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1508-platform-owned-authority-provider"
 }
 ---
@@ -486,3 +486,8 @@ fixed-path authority, weakening formal/privacy/native gates.
   merge.
 
 - 2026-09-29T11:34:31+00:00: Claimed by ar1508-provider-repair2-luna56.
+
+- 2026-09-29T11:36:31+00:00: Protected AR-1505 lacks authenticated runtime/control operation
+  supplying private roots/tools/policy/allowlist/credential/enrollment; AR-1508 cannot safely
+  implement provider. Lifecycle freshness fencing is also absent. Preserve no-publish state and
+  create/advance a narrow platform material-provider/receipt successor before retrying.
