@@ -10,7 +10,7 @@
   "id": "AR-1513",
   "next_action": "Add exact lease dispatch lifecycle negatives and review API authority boundaries; then run full gates and commit signed DCO.",
   "observed_branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
-  "observed_dirty": 6,
+  "observed_dirty": 7,
   "observed_head": "f92c2e941913129d7db50480f71e8361a0d43a0c",
   "owner": "ar1513-lease-bridge-luna56",
   "plan": "../plans/AR-1513-authenticated-lease-dispatch-bridge.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T05:40:38+00:00",
+  "updated_at": "2026-09-29T05:40:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
