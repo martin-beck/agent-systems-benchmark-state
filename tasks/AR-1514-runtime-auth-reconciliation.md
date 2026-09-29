@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1514-runtime-auth-reconciliation.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Repair ASB development-runtime reconciliation between digest-only enrollment and helper invocation.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Reconciled development auth handoff runtime",
-  "updated_at": "2026-09-29T12:30:00+00:00",
+  "updated_at": "2026-09-29T13:07:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1514-runtime-auth-reconciliation"
 }
 ---
@@ -39,3 +39,7 @@ side of that repair.
   are allowed in fixtures or evidence.
 - Paired consumer qualification is tracked by asb-tui AR-1323; this local ASB
   task does not modify the asb-tui repository.
+
+- 2026-09-29T13:07:44+00:00: Dependencies AR-1499 and AR-1500 are done. Promote the ASB-only
+  disposable runtime reconciliation repair; paired asb-tui qualification remains external evidence
+  and this task must not modify asb-tui.
