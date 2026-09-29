@@ -8,12 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1526](tasks/AR-1526.md): First-customer local/replay qualification | Qualify the merged ASB production-shaped local/mock and strict-replay customer path with sanitized evidence. | Promote after dependency verification; run the disposable first-customer-style local/mock and strict-replay qualification on exact protected main. | coordinator-ar1526-first-customer-20260930 |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1528](tasks/AR-1528.md): Rerun AR-1307/1308 development fixtures | Run the repaired AR-1307/1308 unsigned-development fixture path and preserve separate formal qualification blockers. | Remain planned until AR-1527 completes; implement and rerun the corrected unsigned-development fixtures for AR-1307/1308 with bounded evidence and no formal qualification claim. | - |
+| P0 | [AR-1528](tasks/AR-1528.md): Rerun AR-1307/1308 development fixtures | Run the repaired AR-1307/1308 unsigned-development fixture path and preserve separate formal qualification blockers. | Remain planned until AR-1527 completes; implement and rerun the corrected unsigned-development fixtures for AR-1307/1308 with bounded evidence and no formal qualification claim. | coordinator-ar1528-development-fixture-20260930 |
 
 ## Blocked
 
