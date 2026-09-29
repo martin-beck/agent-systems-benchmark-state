@@ -3,7 +3,10 @@
   "branch": "feature/ar-1512-process-owner-material-contract",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1502", "AR-1484"],
+  "depends_on": [
+    "AR-1502",
+    "AR-1484"
+  ],
   "id": "AR-1512",
   "next_action": "Promote after AR-1511 blocker evidence is reconciled; define and implement the authenticated process-owner material contract and ordinary control caller.",
   "observed_branch": "",
@@ -13,11 +16,11 @@
   "plan": "../plans/AR-1512-process-owner-material-contract.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Provide the authenticated process-owner material source and ordinary CLI/control caller needed to consume runtime authority.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Authenticated process-owner material contract",
-  "updated_at": "2026-09-29T04:56:00+00:00",
+  "updated_at": "2026-09-29T04:56:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1512-process-owner-material-contract"
 }
 ---
@@ -54,3 +57,6 @@ host data, synthetic authority, or weakening fail-closed/native/formal gates.
   AR-1511. Its diagnostic audit showed that implementing a consumer over
   digest-only records would fabricate authority; build the authenticated
   process-owner source and ordinary caller first.
+
+- 2026-09-29T04:56:08+00:00: AR-1511 diagnostic blocker reconciled; promote prerequisite
+  authenticated process-owner material contract and ordinary caller.
