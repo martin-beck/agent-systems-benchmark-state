@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1508-platform-owned-authority-provider",
-  "checkpoint_commit": "2c70f81100ca0c4e911ec5d6c02736182b101a3b",
+  "checkpoint_commit": "06e91829123cb1498e566f595aa2e114ff5833f4",
   "claim_expires": "2026-09-29T12:59:06+00:00",
   "depends_on": [
     "AR-1473",
@@ -13,7 +13,7 @@
     "AR-1505"
   ],
   "id": "AR-1508",
-  "next_action": "PR #384 remains open at exact head 2c70f811; protected origin/main is 47329e35 (AR-1513 merge), so GitHub reports DIRTY/CONFLICTING with zero hosted checks. Rebase onto 47329e35, then repeat independent exact-head review and hosted checks before merge.",
+  "next_action": "Rebased local candidate onto protected 47329e35 at 06e91829, but publication blocked: cargo test -p asb-runtime fails at live_service.rs:2015 because materialize_runtime_owner still injects RuntimeAuthorityInputs and state_path into the new provider-only API, and live_service.rs:3346 still destructures the now-three-element fixture as two. The public asb-cli RuntimeControlBootstrapRunInput still carries owner_inputs/owner_state_path, violating the fail-closed contract. Resolve API/callers within AR scope or record successor blocker; do not push or merge.",
   "observed_branch": "feature/ar-1508-platform-owned-authority-provider",
   "observed_dirty": 0,
   "observed_head": "06e91829123cb1498e566f595aa2e114ff5833f4",
@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material.",
-  "task_revision": 75,
+  "task_revision": 76,
   "title": "Platform-owned authority provider",
-  "updated_at": "2026-09-29T11:02:33+00:00",
+  "updated_at": "2026-09-29T11:04:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1508-platform-owned-authority-provider"
 }
 ---
@@ -278,3 +278,11 @@ fixed-path authority, weakening formal/privacy/native gates.
 
 - 2026-09-29T11:02:33+00:00: Recorded command exit 101; command argv SHA-256
   44014d1953a8d245bec969da28df5931f8e670f0ff73d02a479a40e33d530f3b.
+
+- 2026-09-29T11:04:13+00:00: Rebase onto protected origin/main=47329e35 completed with one
+  legitimate fixture conflict resolved by retaining AR-1513 owner_id plus AR-1508 provider binding.
+  New local head 06e91829123cb1498e566f595aa2e114ff5833f4 has three SSH-signed DCO commits and clean
+  diff limited to README, live_service provider/materialization, and provider handoff docs. Exact
+  cargo test --locked -p asb-runtime was run through handoffctl and failed with E0061 at
+  live_service.rs:2015 (old three-argument caller API) and E0308 at live_service.rs:3346 (stale
+  two-element fixture destructure). No push, PR update, merge, or hosted checks attempted.
