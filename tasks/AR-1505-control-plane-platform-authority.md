@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Inspect final five-file diff including generated v1.11 schemas, run git diff check, then create the signed DCO repair commit and push the existing branch for fresh exact-head review.",
+  "next_action": "Run separate resolver and control-bootstrap tests, then changed-package clippy/check and commit the clean namespace-binding diff.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 5,
   "observed_head": "95ac5453fe3a1fbc383afa2ce713a3dceff78437",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 226,
+  "task_revision": 227,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:39:14+00:00",
+  "updated_at": "2026-09-29T00:39:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -902,3 +902,9 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-29T00:39:14+00:00: Recorded command exit 1; command argv SHA-256
   6865acce6a77aa9668c7df308ed1aae5e7b1c5649ec67c7ab2b850749e70907f.
+
+- 2026-09-29T00:39:40+00:00: Focused test command at 00:35Z exited 1 before running tests because
+  cargo test accepts only one TESTNAME filter; exact stderr: error unexpected argument
+  control_bootstrap_response_is_consumed_into_runtime_chain_and_profile found, followed by Usage
+  cargo test OPTIONS TESTNAME. Product code was unchanged. Corrective action: run the resolver and
+  control-bootstrap filters as separate serial handoffctl commands.
