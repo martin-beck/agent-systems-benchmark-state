@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1505](tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | Parent may use the established protected merge path for PR 382 at c96be662; durable independent exact-head review evidence is the review gate, and no formal GitHub review submission is required by current ASB workflow. Do not merge from this repair worker. | - |
+| P0 | [AR-1505](tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | Parent may use the established protected merge path for PR 382 at c96be662; durable independent exact-head review evidence is the review gate, and no formal GitHub review submission is required by current ASB workflow. Do not merge from this repair worker. | coordinator-ar1505 |
 
 ## Blocked
 

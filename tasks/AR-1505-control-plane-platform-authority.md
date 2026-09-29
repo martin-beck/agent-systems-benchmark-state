@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1505-control-plane-platform-authority",
   "checkpoint_commit": "c96be66213c9a09870e7e6b38784bc7910dff728",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T02:32:05+00:00",
   "depends_on": [
     "AR-1473",
     "AR-1474",
@@ -16,15 +16,15 @@
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 0,
   "observed_head": "c96be66213c9a09870e7e6b38784bc7910dff728",
-  "owner": "",
+  "owner": "coordinator-ar1505",
   "plan": "../plans/AR-1505-control-plane-platform-authority.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 297,
+  "task_revision": 298,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T01:31:59+00:00",
+  "updated_at": "2026-09-29T01:32:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -1175,3 +1175,5 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-29T01:31:59+00:00: Repair worker stopped after exact-head CI and independent review;
   coordinator taking over protected merge transition.
+
+- 2026-09-29T01:32:05+00:00: Claimed by coordinator-ar1505.
