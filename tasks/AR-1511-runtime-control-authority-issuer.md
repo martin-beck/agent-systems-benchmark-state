@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T03:51:40+00:00",
+  "updated_at": "2026-09-29T03:52:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
@@ -299,3 +299,8 @@ production authority, or weakening fail-closed/native/formal gates.
   had exited 0 before docs/final cleanup and all asb-runtime tests passed after fixture repair.
   Product remains dirty=3; exact diff still includes preserved signed 1a26b02 plus
   lifecycle/integration/docs follow-on; no publication claim.
+
+- 2026-09-29T03:52:00+00:00: Correction to prior note: Clippy initial failure was the unnecessary
+  to_owned call on the cancellation-fence string reference at live_service.rs:1616; it was removed
+  and the gate reran green. The prior note shell rendering dropped those literal identifiers; no
+  product file was affected.
