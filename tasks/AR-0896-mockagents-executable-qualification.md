@@ -2,7 +2,7 @@
 {
   "branch": "test/mockagents-executable-qualification",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T13:12:32+00:00",
   "depends_on": [
     "AR-0888",
     "AR-0889"
@@ -12,15 +12,15 @@
   "observed_branch": "test/mockagents-executable-qualification",
   "observed_dirty": 0,
   "observed_head": "3f1de4106adf9ad6c34759638d70e9001709ab0a",
-  "owner": "",
+  "owner": "ar0896-mockagents-repair-luna56",
   "plan": "../plans/AR-0896.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Qualify the pinned MockAgents executable",
-  "updated_at": "2026-09-29T12:42:30+00:00",
+  "updated_at": "2026-09-29T12:42:32+00:00",
   "worktree_key": "agent-systems-benchmark-mockagents-executable-qualification"
 }
 ---
@@ -209,3 +209,5 @@ synthetic fixture for black-box executable evidence.
 - 2026-09-29T12:42:30+00:00: AR-1308 external seed/swap remain unavailable; advance the
   dependency-complete MockAgents qualification audit to determine whether hostile lifecycle/network
   and AArch64 evidence can now be produced without weakening gates.
+
+- 2026-09-29T12:42:32+00:00: Claimed by ar0896-mockagents-repair-luna56.
