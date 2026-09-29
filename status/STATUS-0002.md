@@ -210,7 +210,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1518](../tasks/AR-1518.md): C | a | C | C |
+| P0 | [AR-1518](../tasks/AR-1518.md): C | a | Separate 8G/8G/16G capacity tier implemented; focused and full state tests pass. | Run the capacity-profile QEMU qualification, then independently review and publish the exact head. |
 
 ### Blocked (76)
 
