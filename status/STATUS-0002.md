@@ -234,7 +234,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1533](../tasks/AR-1533.md): AR-1308 unsigned-development QEMU fixture repair | coordinator-ar1533-metadata-20260930 | Repair the provider-free unsigned-development QEMU fixture for AR-1308 and make its diagnostics, cleanup and non-qualification boundary reliable. | Promote after state review; repair and rerun the unsigned-development QEMU fixture with generated inputs, preserving formal AR-1308 blockers and non-qualifying evidence. |
+| P0 | [AR-1533](../tasks/AR-1533.md): AR-1308 unsigned-development QEMU fixture repair | coordinator-ar1533-metadata-20260930 | Repair the provider-free unsigned-development QEMU fixture for AR-1308 and make its diagnostics, cleanup and non-qualification boundary reliable. | Wait for AR-1534 to repair the approved coordinator vendor boundary; then rerun vendor verification, full state gates and exact-head review. Preserve the diagnostic qualification_authorized=false result and do not claim formal AR-1308 qualification. |
 
 ### Blocked (82)
 
