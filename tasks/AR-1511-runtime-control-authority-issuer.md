@@ -8,7 +8,7 @@
     "AR-1484"
   ],
   "id": "AR-1511",
-  "next_action": "Audit 673b486 production call graph; add ordinary CLI/control caller and non-test provider-owned authenticated material source, then add remote-revoke coverage and obtain independent exact-head review.",
+  "next_action": "Implement authenticated runtime material provider from non-test owner state, bind launch program/adapter provenance, wire ordinary CLI/control caller, add remote-revoke test, then focused gates and independent exact-head review.",
   "observed_branch": "feature/ar-1511-runtime-control-authority-issuer",
   "observed_dirty": 0,
   "observed_head": "673b486ba89917e3bb08c884ee17e708e0776b07",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 140,
+  "task_revision": 141,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T04:34:07+00:00",
+  "updated_at": "2026-09-29T04:34:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
@@ -477,3 +477,10 @@ production authority, or weakening fail-closed/native/formal gates.
 
 - 2026-09-29T04:34:07+00:00: Recorded command exit 0; command argv SHA-256
   43dd51120a88a861e8e4c00a18907a326695198b26d82d0391c92ddf401fb572.
+
+- 2026-09-29T04:34:52+00:00: Call-graph audit recorded:
+  LiveProviderRuntimeDispatchSource::from_control_bootstrap and run_with_runtime_control_source have
+  only cfg(test) callers; RuntimeControlDispatchSource has only test implementation;
+  RuntimePlatformAuthorityMaterial::for_test is the sole material constructor. Existing control
+  backend owns authenticated bootstrap records, so repair will add a provider-owned source backed by
+  runtime/control state and an ordinary CLI/control composition path.
