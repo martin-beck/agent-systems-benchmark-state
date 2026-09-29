@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**540 ARs tracked** across 6 active status categories.
+**542 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 76 |
-| **Planned** | Defined work awaiting promotion or dependencies | 49 |
+| **Planned** | Defined work awaiting promotion or dependencies | 51 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 389 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -615,6 +615,8 @@ flowchart LR
         AR_1518["AR-1518 - Blocked"]:::status_blocked
         AR_1519["AR-1519 - Done"]:::status_done
         AR_1520["AR-1520 - Done"]:::status_done
+        AR_1521["AR-1521 - Planned"]:::status_planned
+        AR_1522["AR-1522 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1548,6 +1550,7 @@ flowchart LR
     AR_1304 --> AR_1519
     AR_1307 --> AR_1309
     AR_1308 --> AR_1309
+    AR_1309 --> AR_1521
     AR_1310 --> AR_1316
     AR_1310 --> AR_1319
     AR_1314 --> AR_1315
@@ -2051,7 +2054,10 @@ flowchart LR
     AR_1505 --> AR_1509
     AR_1505 --> AR_1510
     AR_1517 --> AR_1518
+    AR_1518 --> AR_1521
     AR_1519 --> AR_1520
+    AR_1520 --> AR_1521
+    AR_1521 --> AR_1522
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -2399,4 +2405,3 @@ flowchart LR
 | [AR-1303](../tasks/AR-1303-hosted-platform-diagnostics.md) | [AR-0907](../tasks/AR-0907-hosted-runner-evidence-classification.md), [AR-1252](../tasks/AR-1252-approved-isolated-qualification-runner.md) | None |
 | [AR-1304](../tasks/AR-1304-required-tier-qemu-runner.md) | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md) | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md), [AR-1516](../tasks/AR-1516-ar1308-qemu-fixture-evidence-repair.md), [AR-1517](../tasks/AR-1517-ar1309-capacity-decision-unblock.md), [AR-1519](../tasks/AR-1519.md) |
 | [AR-1305](../tasks/AR-1305-image-native-user-session.md) | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md) | None |
-| [AR-1306](../tasks/AR-1306-authenticated-fault-matrix-qualification.md) | [AR-1287](../tasks/AR-1287-delegated-sandbox-runner.md), [AR-1300](../tasks/AR-1300-runtime-cassette-dispatch-seam.md) | None |
