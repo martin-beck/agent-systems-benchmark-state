@@ -8,7 +8,7 @@
     "AR-1484"
   ],
   "id": "AR-1513",
-  "next_action": "Request fresh independent review of exact pushed head cfed22b; wait for exact-head protected checks, then stop for approval before any merge.",
+  "next_action": "Fresh review of cfed22b found P1 policy hash mismatch blocking realistic authenticated bridging, P1 ordinary lease bridge still unused by run/sweep, P2 alternate-egress collapsed to target, and hosted workspace coverage 88.03% below 90%. Repair before merge.",
   "observed_branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
   "observed_dirty": 0,
   "observed_head": "cfed22bec49eaf9c74abf000ca274b3a353da3a9",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 203,
+  "task_revision": 204,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T07:23:37+00:00",
+  "updated_at": "2026-09-29T07:29:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -625,3 +625,6 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
 
 - 2026-09-29T07:23:37+00:00: Recorded command exit 0; command argv SHA-256
   05daf4803d57586e8e8d556fa1cf0836d98c6925336da66c08435211bb769398.
+
+- 2026-09-29T07:29:46+00:00: Independent exact-head review: provenance enforcement improved, but
+  live bridge and policy/egress semantics remain incomplete; preserve all evidence.
