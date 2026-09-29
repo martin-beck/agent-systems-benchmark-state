@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
   "checkpoint_commit": "be018d4f1159bde9b9725f085cb8959edf7cde4e",
-  "claim_expires": "2026-09-29T06:32:23+00:00",
+  "claim_expires": "2026-09-29T07:48:31+00:00",
   "depends_on": [
     "AR-1502",
     "AR-1484"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T05:47:23+00:00",
+  "updated_at": "2026-09-29T05:48:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -176,3 +176,5 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
   exact-head evidence be018d4 and reassign repair worker on same AR.
 
 - 2026-09-29T05:47:23+00:00: Claimed by ar1513-repair-luna56.
+
+- 2026-09-29T05:48:31+00:00: Heartbeat by ar1513-repair-luna56.
