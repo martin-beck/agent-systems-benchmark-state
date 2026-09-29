@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "checkpoint_commit": "df0e402f442468e43e06b7c1acb3c3667277fb75",
-  "claim_expires": "2026-09-29T13:33:40+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1304"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
-  "owner": "coordinator-ar1308-development",
+  "owner": "",
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Unsigned-development diagnostic preflight passes with local seed; bounded network-disabled QEMU boot reaches cloud-init but fixture fails on missing data UUID and asb user. This is development evidence only.",
-  "task_revision": 575,
+  "task_revision": 576,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T13:23:50+00:00",
+  "updated_at": "2026-09-29T13:23:53+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1758,3 +1758,7 @@ must report `qualification_authorized: false`.
 - 2026-09-29T13:23:50+00:00: Development signing was not required. Local seed d442a24d... and
   diagnostic seed image d442a24d... were used; raw serial output was discarded. Signed
   full-exhaustive qualification remains a separate optional production-evidence profile.
+
+- 2026-09-29T13:23:53+00:00: Released blocked for development repair: unsigned diagnostic path is
+  available, but the disposable guest fixture needs UUID/data-image and asb-user repair before a
+  meaningful development run.
