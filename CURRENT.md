@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1513](tasks/AR-1513-authenticated-lease-dispatch-bridge.md): Authenticated lease-to-live-dispatch bridge | Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch. | Independent exact-head review of 109f5fad, then protected CI; do not merge before separate approval. | ar1513-repair2-luna56 |
+| P0 | [AR-1513](tasks/AR-1513-authenticated-lease-dispatch-bridge.md): Authenticated lease-to-live-dispatch bridge | Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch. | Second independent review found remaining P1s: pinned executable/adapter provenance is not enforced at dispatch, ordinary production bootstrap-to-CLI wiring remains dead-code only, and policy/alternate-egress enrollment binding is incomplete; hosted workspace coverage is 88.05% below 90%. Repair all before merge. | ar1513-repair2-luna56 |
 
 ## Blocked
 

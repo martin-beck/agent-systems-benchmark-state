@@ -8,7 +8,7 @@
     "AR-1484"
   ],
   "id": "AR-1513",
-  "next_action": "Independent exact-head review of 109f5fad, then protected CI; do not merge before separate approval.",
+  "next_action": "Second independent review found remaining P1s: pinned executable/adapter provenance is not enforced at dispatch, ordinary production bootstrap-to-CLI wiring remains dead-code only, and policy/alternate-egress enrollment binding is incomplete; hosted workspace coverage is 88.05% below 90%. Repair all before merge.",
   "observed_branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
   "observed_dirty": 0,
   "observed_head": "109f5fad424cb5493e834a0dcec9c09f1aeeae54",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 113,
+  "task_revision": 114,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T06:36:25+00:00",
+  "updated_at": "2026-09-29T06:43:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -383,3 +383,7 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
   and provider-free negative tests for forged bindings plus post-consumption fencing. Focused
   runtime: 160 passed, 1 ignored; full locked workspace tests passed; focused clippy passed;
   SSH-signed DCO commit and push confirmed. Independent review remains required.
+
+- 2026-09-29T06:43:35+00:00: Independent exact-head review of 109f5fad: prior
+  enrollment/source/lifecycle findings appear closed, but new P1s block merge; preserve all evidence
+  and failed coverage.
