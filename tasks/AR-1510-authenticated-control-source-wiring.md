@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated platform control source and production lifecycle wiring required by the authority-provider receipt.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Authenticated control source and production provider wiring",
-  "updated_at": "2026-09-29T02:59:42+00:00",
+  "updated_at": "2026-09-29T03:00:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1510-authenticated-control-source-wiring"
 }
 ---
@@ -68,3 +68,6 @@ test-only façade publication, or weakening native/formal/privacy gates.
 - 2026-09-29T02:59:42+00:00: Initial heartbeat/setup audit: state lease renewed; protected product
   main f92c2e941913129d7db50480f71e8361a0d43a0c verified. Product checkout is dirty with unrelated
   in-progress changes, so work will use an isolated worktree. AR-1509 commits will not be reused.
+
+- 2026-09-29T03:00:29+00:00: Recorded command exit 0; command argv SHA-256
+  50ed27b19fa10dbd81bbbc22a461533a005f4c833af7c90efa4234855887898b.
