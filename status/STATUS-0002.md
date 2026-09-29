@@ -200,11 +200,16 @@
 
 ## Complete AR inventory
 
-### Open (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1511](../tasks/AR-1511-runtime-control-authority-issuer.md): Runtime/control authority issuer and capability source | Unclaimed | Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch. | Blocked on successor contract: add a real runtime/control process-owner material provider and ordinary CLI/control caller that supplies authenticated private roots, policy, allowlist, pinned tool bundle, namespace and launch input; then reapply production wiring, remote-revoke coverage, and gates. Do not derive authority from public digest-only records. |
+| P0 | [AR-1511](../tasks/AR-1511-runtime-control-authority-issuer.md): Runtime/control authority issuer and capability source | ar1511-reaudit-luna56 | Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch. | Blocked on successor contract: add a real runtime/control process-owner material provider and ordinary CLI/control caller that supplies authenticated private roots, policy, allowlist, pinned tool bundle, namespace and launch input; then reapply production wiring, remote-revoke coverage, and gates. Do not derive authority from public digest-only records. |
+
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-1514](../tasks/AR-1514-runtime-auth-reconciliation.md): Reconciled development auth handoff runtime | Unclaimed | Repair ASB development-runtime reconciliation between digest-only enrollment and helper invocation. | Implement and qualify the disposable runtime reconciliation repair, then rerun the v1.10 helper handoff and capture successful digest-only AuthStatus for paired asb-tui AR-1323. |
 
 ### Blocked (79)
