@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 191,
+  "task_revision": 192,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:25:18+00:00",
+  "updated_at": "2026-09-29T00:25:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -781,3 +781,6 @@ public credential/socket paths, or weakening fail-closed gates.
   differed; apply_patch was atomic and product files were unchanged by that attempt. Corrective
   action: split the patch into context-local hunks; the RuntimeAuthorityInputBinding type and
   resolver comparison hunk now applied successfully.
+
+- 2026-09-29T00:25:30+00:00: Recorded command exit 0; command argv SHA-256
+  a5f2329a1a9453d4481fe46dd00b5be7583402d56d5c2fc85fd7974186657db6.
