@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1534](tasks/AR-1534.md): Coordinator vendor integrity repair | Repair the state repository's coordinator vendor-integrity mismatch exposed after the AR-1530 capacity-profile merge. | Remain blocked until coordinator maintenance supplies an approved upstream patch/release containing the bounded state-view behavior, or an allowed relocation is explicitly authorized; current upstream v0.3.48 still lacks the fix. Do not rewrite the vendor manifest or patch handoffctl in an unrelated AR. | - |
+| P0 | [AR-1534](tasks/AR-1534.md): Coordinator vendor integrity repair | Repair the state repository's coordinator vendor-integrity mismatch exposed after the AR-1530 capacity-profile merge. | Remain blocked until coordinator maintenance supplies an approved upstream patch/release containing the bounded state-view behavior, or an allowed relocation is explicitly authorized; current upstream v0.3.48 still lacks the fix. Do not rewrite the vendor manifest or patch handoffctl in an unrelated AR. | codex-asb-ar1534-handoff-20260930 |
 
 ## Blocked
 
