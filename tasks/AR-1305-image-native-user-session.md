@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1305",
-  "next_action": "Blocked: guestfish read-only inspection fails before access because /usr/bin/supermin exits 1; approved root has ~4.9 GiB free, preventing safe image repair. Reopen only with reviewed working appliance/capacity; no portable fallback, AR-1304 limit changes, or qualification.",
+  "next_action": "Independent review the image package/base digests and run the complete AR-1304 required-tier gates against this fresh image, including exact signed inputs and attestation. Keep AR-1305 open until those gates pass; do not substitute this diagnostic run for formal qualification.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "00a47726683609b7fef8ea5738fed5a3692fac29",
@@ -16,10 +16,10 @@
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Qualify image-native D-Bus user-session support for required TLC containment.",
-  "task_revision": 55,
+  "summary": "Fresh immutable qcow2 image v2 was built from the reviewed Ubuntu 24.04 base with the staged dbus-user-session package injected offline. A bounded network-disabled QEMU boot using the repaired data fixture reached systemd user-session startup and FULL_EXHAUSTIVE_TRANSIENT_RC=0; no Transport endpoint failure was observed. This is development evidence only and not formal qualification.",
+  "task_revision": 56,
   "title": "Image-native user-session support",
-  "updated_at": "2026-09-29T13:53:20+00:00",
+  "updated_at": "2026-09-29T13:57:50+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1305-image-native-user-session"
 }
 ---
@@ -226,3 +226,8 @@ limits and fail-closed behavior remain unchanged.
   building a fresh immutable image from the reviewed Ubuntu base.
 
 - 2026-09-29T13:53:20+00:00: Claimed by coordinator-ar1305-image-v2.
+
+- 2026-09-29T13:57:50+00:00: Tooling repair: privileged guestfish/virt-customize works with sudo and
+  explicit qcow2 format; previous supermin failure was caused by unreadable host kernel. Image v2 is
+  fresh and base image remains unchanged. Sanitized evidence:
+  /srv/data/projects/ar1308-development/diagnostic-v4-image-v2-summary.txt.
