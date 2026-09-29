@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**538 ARs tracked** across 5 active status categories.
+**539 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 77 |
-| **Planned** | Defined work awaiting promotion or dependencies | 49 |
+| **Planned** | Defined work awaiting promotion or dependencies | 50 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 387 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -613,6 +613,7 @@ flowchart LR
         AR_1516["AR-1516 - Done"]:::status_done
         AR_1517["AR-1517 - Done"]:::status_done
         AR_1518["AR-1518 - Blocked"]:::status_blocked
+        AR_1519["AR-1519 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1543,6 +1544,7 @@ flowchart LR
     AR_1304 --> AR_1308
     AR_1304 --> AR_1516
     AR_1304 --> AR_1517
+    AR_1304 --> AR_1519
     AR_1307 --> AR_1309
     AR_1308 --> AR_1309
     AR_1310 --> AR_1316
@@ -2393,7 +2395,6 @@ flowchart LR
 | [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md) | [AR-1287](../tasks/AR-1287-delegated-sandbox-runner.md), [AR-1300](../tasks/AR-1300-runtime-cassette-dispatch-seam.md) | None |
 | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md) | None | [AR-1304](../tasks/AR-1304-required-tier-qemu-runner.md), [AR-1305](../tasks/AR-1305-image-native-user-session.md), [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md), [AR-1515](../tasks/AR-1515-ar1307-runner-ci-oom-repair.md) |
 | [AR-1303](../tasks/AR-1303-hosted-platform-diagnostics.md) | [AR-0907](../tasks/AR-0907-hosted-runner-evidence-classification.md), [AR-1252](../tasks/AR-1252-approved-isolated-qualification-runner.md) | None |
-| [AR-1304](../tasks/AR-1304-required-tier-qemu-runner.md) | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md) | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md), [AR-1516](../tasks/AR-1516-ar1308-qemu-fixture-evidence-repair.md), [AR-1517](../tasks/AR-1517-ar1309-capacity-decision-unblock.md) |
+| [AR-1304](../tasks/AR-1304-required-tier-qemu-runner.md) | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md) | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md), [AR-1516](../tasks/AR-1516-ar1308-qemu-fixture-evidence-repair.md), [AR-1517](../tasks/AR-1517-ar1309-capacity-decision-unblock.md), [AR-1519](../tasks/AR-1519.md) |
 | [AR-1305](../tasks/AR-1305-image-native-user-session.md) | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md) | None |
 | [AR-1306](../tasks/AR-1306-authenticated-fault-matrix-qualification.md) | [AR-1287](../tasks/AR-1287-delegated-sandbox-runner.md), [AR-1300](../tasks/AR-1300-runtime-cassette-dispatch-seam.md) | None |
-| [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md) | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md) | [AR-1309](../tasks/AR-1309-reviewed-capacity-or-model-reduction.md) |
