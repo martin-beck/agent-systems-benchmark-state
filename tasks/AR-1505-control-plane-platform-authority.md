@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Refresh PR 382 exact head and CI status, then request fresh independent review at exact commit 95ac5453fe3a1fbc383afa2ce713a3dceff78437. Do not merge.",
+  "next_action": "Request fresh independent review and exact-head CI for 95ac5453fe3a1fbc383afa2ce713a3dceff78437; keep PR unmerged until both are green.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 0,
   "observed_head": "95ac5453fe3a1fbc383afa2ce713a3dceff78437",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 177,
+  "task_revision": 178,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:18:49+00:00",
+  "updated_at": "2026-09-29T00:19:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -709,3 +709,9 @@ public credential/socket paths, or weakening fail-closed gates.
   refs/heads/feature/ar-1505-control-plane-platform-authority and local HEAD both equal
   95ac5453fe3a1fbc383afa2ce713a3dceff78437. Product worktree is clean. The preceding state auto-push
   rejection remains a separate state-repository synchronization issue.
+
+- 2026-09-29T00:19:16+00:00: PR 382 refresh confirms open branch
+  feature/ar-1505-control-plane-platform-authority at exact head
+  95ac5453fe3a1fbc383afa2ce713a3dceff78437 with two commits including the signed repair. GitHub
+  currently shows no reviewers and no completed review; the web checks panel did not expose
+  exact-head results, so CI remains pending or not observable from this session. No merge performed.
