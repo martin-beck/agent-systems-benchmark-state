@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-29T20:50:27+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1304"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "coordinator-ar1516-qemu-repair-20260929",
+  "owner": "",
   "plan": "../plans/AR-1516-ar1308-qemu-fixture-evidence-repair.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Fixture repair passed boot/transient/JAR checks; full tier timed out at 1700s without attestation.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "AR-1308 QEMU fixture repair",
-  "updated_at": "2026-09-29T19:01:16+00:00",
+  "updated_at": "2026-09-29T19:01:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1516-ar1308-qemu-fixture-evidence-repair"
 }
 ---
@@ -53,3 +53,8 @@ qualification, or make reviewed seed material a development prerequisite.
 - 2026-09-29T19:01:16+00:00: Sanitized evidence:
   /srv/data/projects/ar1308-development/diagnostic-ar1516-full3-summary.txt. Corrected rerun passed
   boot/transient/JAR checks and ended at outer timeout 1700s with no result marker.
+
+- 2026-09-29T19:01:25+00:00: Fixture/evidence repair complete. Self-contained generated-seed QEMU
+  rerun passed boot, transient admission, and preloaded JAR verification; full tier reached the
+  corrected 1700s outer bound without a terminal TLC result or attestation. AR-1309 owns
+  capacity/model-reduction decision; no formal/publication qualification claimed.
