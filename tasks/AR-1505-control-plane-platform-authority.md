@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Continue monitoring the nine in-progress exact-head checks and obtain fresh independent review; record terminal results and keep PR unmerged until all required checks and review are green.",
+  "next_action": "Monitor exact-head CI at da5e2a916b66de9f31f2c5bcccd1f59f7b3321d2; review found no remaining P1/P2 blockers.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 0,
   "observed_head": "da5e2a916b66de9f31f2c5bcccd1f59f7b3321d2",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 236,
+  "task_revision": 237,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:42:57+00:00",
+  "updated_at": "2026-09-29T00:43:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -939,3 +939,15 @@ public credential/socket paths, or weakening fail-closed gates.
   IN_PROGRESS credential-free benchmark, emulated aarch64, TLC and Alloy, platform evidence, policy
   coverage supply chain, Rust checks, bounded fuzz regressions, matcher SLO sentinels, and
   Loom/state models. PR 382 remains OPEN with reviews empty; no merge.
+
+- 2026-09-29T00:43:08+00:00: Fresh independent read-only exact-head review of PR #382 at
+  da5e2a916b66de9f31f2c5bcccd1f59f7b3321d2 against base 3c6af6b is clean for the prior
+  namespace/root blocker. Control RuntimeBootstrapRequest/Response now require and echo
+  namespace_sha256 with deny_unknown_fields/schema v1.11 regeneration; response.validate_for
+  compares namespace, session, nonce, restart, generation and receipt expiry/chain.
+  RuntimeControlBootstrap.from_response binds namespace from the authenticated response, and
+  materialize_provisioner passes response namespace plus receipt relay_root/lease_root through
+  RuntimeAuthorityInputBinding. RuntimeAuthorityInputResolver rejects any namespace, relay-root, or
+  lease-root digest mismatch before provisioner creation; mismatch tests cover all three.
+  launch_factory fencing and local cancellation remain intact from prior repair. No P1/P2 findings;
+  no product changes or merge performed.
