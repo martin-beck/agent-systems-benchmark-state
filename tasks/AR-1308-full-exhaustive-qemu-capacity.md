@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Bounded signed preflight failed closed: prepared runner receipt and JDK/TLC/model are present, but host swap, image, overlay capacity, exact source tree, seed and admission lock are missing.",
-  "task_revision": 553,
+  "task_revision": 554,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-26T21:10:39+00:00",
+  "updated_at": "2026-09-29T12:01:09+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1682,3 +1682,7 @@ must report `qualification_authorized: false`.
   ab485f767 source/tree, matching seed, and canonical admission lock. Present: JDK 17, pinned TLC
   digest, model digest, prepared QEMU receipt and unchanged 3G/3G/2-worker/2-core/8G/7200s contract.
   Do not run QEMU/TLC. Next action: provision those exact inputs and swap, rerun signed preflight.
+
+- 2026-09-29T12:01:09+00:00: Advance the reviewed disposable capacity/preflight repair: provision or
+  qualify the exact runner/image/overlay/swap/source/seed/lock inputs for AR-1307 without changing
+  its 3G/3G formal contract.
