@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Run schema conformance, full formatter, changed-package check and clippy, then full workspace tests/docs before final signed repair commit.",
+  "next_action": "Rerun full workspace tests serially with captured terminal status, then inspect diff and commit the P1-3 repair if green.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 5,
   "observed_head": "95ac5453fe3a1fbc383afa2ce713a3dceff78437",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 220,
+  "task_revision": 221,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:36:12+00:00",
+  "updated_at": "2026-09-29T00:36:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -877,3 +877,10 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-29T00:36:12+00:00: Recorded command exit 101; command argv SHA-256
   b7c1bd7abcc21a2d2b7851e3c19b5eece224e6abf67ab56b582453c98727e148.
+
+- 2026-09-29T00:36:29+00:00: Workspace serial test run reached the asb-cli control suite and
+  reported one transient failure in
+  production_backend_runs_without_frontend_and_recovers_idempotency; output was truncated before its
+  assertion diagnostics. The exact test was rerun serially through handoffctl and passed 1/1 with
+  all filtered integration targets clean. No product code changed. Treat workspace aggregate as
+  requiring one clean rerun before commit.
