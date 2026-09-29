@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1519](tasks/AR-1519.md): AR-1307/1308 reduced-model development profile | Provide a separately scoped reduced-model development path after full-capacity timeout, without weakening AR-1307/1308. | Promote and implement the explicit reduced-model development profile with fail-closed non-attestation tests. | - |
+| P0 | [AR-1519](tasks/AR-1519.md): AR-1307/1308 reduced-model development profile | Provide a separately scoped reduced-model development path after full-capacity timeout, without weakening AR-1307/1308. | Promote and implement the explicit reduced-model development profile with fail-closed non-attestation tests. | coordinator-ar1519-reduced-model-20260929 |
 
 ## Blocked
 

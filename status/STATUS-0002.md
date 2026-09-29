@@ -208,11 +208,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1519](../tasks/AR-1519.md): AR-1307/1308 reduced-model development profile | Unclaimed | Provide a separately scoped reduced-model development path after full-capacity timeout, without weakening AR-1307/1308. | Promote and implement the explicit reduced-model development profile with fail-closed non-attestation tests. |
+| P0 | [AR-1519](../tasks/AR-1519.md): AR-1307/1308 reduced-model development profile | coordinator-ar1519-reduced-model-20260929 | Provide a separately scoped reduced-model development path after full-capacity timeout, without weakening AR-1307/1308. | Promote and implement the explicit reduced-model development profile with fail-closed non-attestation tests. |
 
 ### Blocked (77)
 
