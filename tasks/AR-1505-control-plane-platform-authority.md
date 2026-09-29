@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Push existing product branch feature/ar-1505-control-plane-platform-authority via handoffctl run, then record exact remote head and request exact-head CI and fresh independent review for PR 382.",
+  "next_action": "Refresh PR 382 exact head and CI status, then request fresh independent review at exact commit 95ac5453fe3a1fbc383afa2ce713a3dceff78437. Do not merge.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 0,
   "observed_head": "95ac5453fe3a1fbc383afa2ce713a3dceff78437",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 176,
+  "task_revision": 177,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:18:31+00:00",
+  "updated_at": "2026-09-29T00:18:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -704,3 +704,8 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-29T00:18:17+00:00: Recorded command exit 0; command argv SHA-256
   115a28b65160c6e90b714d050a6f4583b7c46fde11739a8c110e46994e782112.
+
+- 2026-09-29T00:18:49+00:00: Product branch push completed through handoffctl run. Remote
+  refs/heads/feature/ar-1505-control-plane-platform-authority and local HEAD both equal
+  95ac5453fe3a1fbc383afa2ce713a3dceff78437. Product worktree is clean. The preceding state auto-push
+  rejection remains a separate state-repository synchronization issue.
