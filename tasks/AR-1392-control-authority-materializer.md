@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1392-control-authority-materializer",
   "checkpoint_commit": "78ab92bdb87645ac5567fb3341b1b0b73dba5029",
-  "claim_expires": "2026-09-29T12:48:03+00:00",
+  "claim_expires": "2026-09-29T14:29:53+00:00",
   "depends_on": [
     "AR-1388",
     "AR-1385",
@@ -24,9 +24,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve private live authority from authenticated control enrollment without caller injection.",
-  "task_revision": 135,
+  "task_revision": 136,
   "title": "Control-owned private authority materializer",
-  "updated_at": "2026-09-29T12:23:05+00:00",
+  "updated_at": "2026-09-29T12:29:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1392-control-authority-materializer"
 }
 ---
@@ -450,3 +450,5 @@ reachability.
 
 - 2026-09-29T12:23:05+00:00: Recorded command exit 0; command argv SHA-256
   3a5b5704ff2ae692c693fb95667249b4d4fe16df735e45db1fb48e11a6b2ec50.
+
+- 2026-09-29T12:29:53+00:00: Heartbeat by ar1392-topology-repair-luna56.
