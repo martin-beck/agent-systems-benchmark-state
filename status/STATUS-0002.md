@@ -190,11 +190,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1508](../tasks/AR-1508-platform-owned-authority-provider.md): Platform-owned authority provider | Unclaimed | Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material. | Promote after dependency verification; define the platform-owned authority provider and verified root/tool/policy source consumed by runtime materialization. |
+| P0 | [AR-1508](../tasks/AR-1508-platform-owned-authority-provider.md): Platform-owned authority provider | ar1508_provider_luna56 | Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material. | Promote after dependency verification; define the platform-owned authority provider and verified root/tool/policy source consumed by runtime materialization. |
 
 ### Blocked (76)
 

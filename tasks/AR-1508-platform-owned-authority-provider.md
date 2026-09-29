@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1508-platform-owned-authority-provider",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T04:17:57+00:00",
   "depends_on": [
     "AR-1473",
     "AR-1474",
@@ -17,15 +17,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "ar1508_provider_luna56",
   "plan": "../plans/AR-1508-platform-owned-authority-provider.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Platform-owned authority provider",
-  "updated_at": "2026-09-29T02:15:14+00:00",
+  "updated_at": "2026-09-29T02:17:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1508-platform-owned-authority-provider"
 }
 ---
@@ -59,3 +59,5 @@ fixed-path authority, weakening formal/privacy/native gates.
 
 - 2026-09-29T02:15:14+00:00: Dependencies through AR-1505 verified done; AR-1507 established the
   missing platform-owned authority provider contract.
+
+- 2026-09-29T02:17:57+00:00: Claimed by ar1508_provider_luna56.
