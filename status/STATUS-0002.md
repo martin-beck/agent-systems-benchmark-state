@@ -184,11 +184,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1503](../tasks/AR-1503-runtime-control-process-owner.md): Runtime/control process owner | Unclaimed | Own the authenticated control session and hand off only an opaque live dispatch source. | Diagnose unrelated full-workspace ASB test race, rerun serialized or focused affected gate; then independently review AR-1503 diff and decide whether platform-launcher seam is genuinely available. |
+| P0 | [AR-1503](../tasks/AR-1503-runtime-control-process-owner.md): Runtime/control process owner | coordinator-ar1503 | Own the authenticated control session and hand off only an opaque live dispatch source. | Diagnose unrelated full-workspace ASB test race, rerun serialized or focused affected gate; then independently review AR-1503 diff and decide whether platform-launcher seam is genuinely available. |
 
 ### Blocked (74)
 

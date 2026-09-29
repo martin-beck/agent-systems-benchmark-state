@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1503](tasks/AR-1503-runtime-control-process-owner.md): Runtime/control process owner | Own the authenticated control session and hand off only an opaque live dispatch source. | Diagnose unrelated full-workspace ASB test race, rerun serialized or focused affected gate; then independently review AR-1503 diff and decide whether platform-launcher seam is genuinely available. | - |
+| P0 | [AR-1503](tasks/AR-1503-runtime-control-process-owner.md): Runtime/control process owner | Own the authenticated control session and hand off only an opaque live dispatch source. | Diagnose unrelated full-workspace ASB test race, rerun serialized or focused affected gate; then independently review AR-1503 diff and decide whether platform-launcher seam is genuinely available. | coordinator-ar1503 |
 
 ## Blocked
 
