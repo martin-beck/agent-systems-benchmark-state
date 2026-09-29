@@ -203,7 +203,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1513](../tasks/AR-1513-authenticated-lease-dispatch-bridge.md): Authenticated lease-to-live-dispatch bridge | ar1513-repair-luna56 | Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch. | PR #383 is open at exact head be018d4; await independent review and all protected checks, then verify terminal merge/postmerge. |
+| P0 | [AR-1513](../tasks/AR-1513-authenticated-lease-dispatch-bridge.md): Authenticated lease-to-live-dispatch bridge | ar1513-repair-luna56 | Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch. | PR #383 moved to exact signed repair head bde018c; await independent review and all protected checks, then verify terminal merge/postmerge. |
 
 ### Blocked (81)
 

@@ -1,14 +1,14 @@
 ---
 {
   "branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
-  "checkpoint_commit": "be018d4f1159bde9b9725f085cb8959edf7cde4e",
+  "checkpoint_commit": "bde018c10b3b69252f9a5b8429f9cc277e44953d",
   "claim_expires": "2026-09-29T06:50:19+00:00",
   "depends_on": [
     "AR-1502",
     "AR-1484"
   ],
   "id": "AR-1513",
-  "next_action": "PR #383 is open at exact head be018d4; await independent review and all protected checks, then verify terminal merge/postmerge.",
+  "next_action": "PR #383 moved to exact signed repair head bde018c; await independent review and all protected checks, then verify terminal merge/postmerge.",
   "observed_branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
   "observed_dirty": 0,
   "observed_head": "bde018c10b3b69252f9a5b8429f9cc277e44953d",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 68,
+  "task_revision": 69,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T06:03:30+00:00",
+  "updated_at": "2026-09-29T06:04:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -246,3 +246,11 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
 
 - 2026-09-29T06:03:30+00:00: Recorded command exit 0; command argv SHA-256
   72af92f2f40f31c428b55b4e1dc7ae5af541642583f0c881108b86064db7ee8d.
+
+- 2026-09-29T06:04:02+00:00: Coverage repair pushed at exact signed DCO head
+  bde018c10b3b69252f9a5b8429f9cc277e44953d. Added provider-free tests for invalid tool/material
+  shape, opaque debug projections, material digest mismatch, lifecycle cancel/restart/teardown and
+  expiry/time fences. Focused runtime tests: 159 passed, 1 ignored; clippy -p asb-runtime -p asb-cli
+  passed; local check_coverage.py workspace plus asb-core/asb-protocol/asb-replay passed with floors
+  unchanged (90 workspace, 95 critical). Hosted policy check at prior head failed only coverage
+  89.96%; rerun required on repair head. Worktree clean and push confirmed.
