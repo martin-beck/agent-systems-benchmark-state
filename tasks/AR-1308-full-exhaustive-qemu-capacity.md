@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "checkpoint_commit": "df0e402f442468e43e06b7c1acb3c3667277fb75",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T16:20:53+00:00",
   "depends_on": [
     "AR-1304"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
-  "owner": "",
+  "owner": "coordinator-dev-seed-policy-20260929",
   "plan": "../plans/AR-1308.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Unsigned-development fixture v9 uses the exact AR-1307 head with self-contained Git metadata, self-contained JDK, preloaded TLC, and repaired state bind. Preflight passes; bounded network-disabled QEMU reaches FULL_EXHAUSTIVE_TRANSIENT_RC=0 and starts the offline TLC process without provenance or java.security errors. The bounded window ends before full exhaustive attestation, so no formal qualification is claimed.",
-  "task_revision": 589,
+  "task_revision": 590,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T16:10:50+00:00",
+  "updated_at": "2026-09-29T16:10:53+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1810,3 +1810,5 @@ must report `qualification_authorized: false`.
 
 - 2026-09-29T16:10:50+00:00: Updating profile policy so unsigned-development no longer depends on
   reviewed seed digests; formal profile remains separate.
+
+- 2026-09-29T16:10:53+00:00: Claimed by coordinator-dev-seed-policy-20260929.
