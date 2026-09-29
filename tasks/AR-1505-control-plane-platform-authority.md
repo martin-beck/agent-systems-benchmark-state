@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Apply focused provider-free coverage patch for namespace binding and materialization using an argv-safe handoffctl invocation, then run unchanged local policy coverage.",
+  "next_action": "Run fmt and focused asb-runtime coverage tests for the applied namespace binding success/mismatch paths; then run unchanged workspace coverage gate serially and capture line total.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 1,
   "observed_head": "da5e2a916b66de9f31f2c5bcccd1f59f7b3321d2",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 273,
+  "task_revision": 274,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T01:12:41+00:00",
+  "updated_at": "2026-09-29T01:12:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -1077,3 +1077,10 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-29T01:12:28+00:00: Recorded command exit 0; command argv SHA-256
   0094259960c7110aa7a3923cf6f74f111a4b1e124fd6390fcf3c59cebdef0b70.
+
+- 2026-09-29T01:12:56+00:00: The first corrected base64 patch invocation reached handoffctl but
+  apply_patch exited 1 with exact stderr: Failed to find expected lines in live_service.rs for the
+  fixture signature; no product mutation from that attempt. Corrective action: inspected exact
+  current context and applied a narrower argv-safe base64 patch successfully. Product diff now
+  contains only the namespace response binding check plus focused positive materialization and
+  negative empty-chain/namespace-mismatch tests.

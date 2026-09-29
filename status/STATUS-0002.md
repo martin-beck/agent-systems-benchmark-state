@@ -188,7 +188,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1505](../tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | ar1505-repair-luna56 | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | Apply focused provider-free coverage patch for namespace binding and materialization using an argv-safe handoffctl invocation, then run unchanged local policy coverage. |
+| P0 | [AR-1505](../tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | ar1505-repair-luna56 | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | Run fmt and focused asb-runtime coverage tests for the applied namespace binding success/mismatch paths; then run unchanged workspace coverage gate serially and capture line total. |
 
 ### Blocked (76)
 
