@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1293.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 747,
+  "task_revision": 748,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-18T21:08:20+00:00",
+  "updated_at": "2026-09-29T16:14:02+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -2240,3 +2240,6 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-18T21:08:20+00:00: Schema repair only: shortened next_action below 300 characters while
   preserving the exact runner, disk, and input blockers; implementation and gates unchanged.
+
+- 2026-09-29T16:14:02+00:00: Development profile no longer depends on reviewed seed digests; update
+  dependency transition while preserving formal qualification gates.
