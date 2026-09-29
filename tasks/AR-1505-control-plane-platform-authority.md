@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 162,
+  "task_revision": 163,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:11:38+00:00",
+  "updated_at": "2026-09-29T00:13:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -653,3 +653,6 @@ public credential/socket paths, or weakening fail-closed gates.
   control + 7 endpoint + 4 schema, asb-runtime 151/0/1 ignored plus process 8/sandbox 15/scheduler
   16, asb-cli 129, and remaining workspace suites; no failures. Generated schema conformance
   remained green 4/4 in workspace run. Next exact diff review and signed commit.
+
+- 2026-09-29T00:13:34+00:00: Recorded command exit 2; command argv SHA-256
+  48458d4adcbc2714c4ae60f17ec39d916357031118af6e75d9a5cd826c73f20e.
