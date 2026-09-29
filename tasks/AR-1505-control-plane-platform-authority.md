@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Inspect the exact failed hosted coverage logs and local coverage mapping, then add focused provider-free positive and negative tests for legitimate new binding behavior.",
+  "next_action": "Inspect package coverage JSON and changed-line coverage, then add only targeted tests that materially exercise uncovered namespace/root binding behavior.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 0,
   "observed_head": "da5e2a916b66de9f31f2c5bcccd1f59f7b3321d2",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 245,
+  "task_revision": 246,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:50:44+00:00",
+  "updated_at": "2026-09-29T00:51:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -982,3 +982,11 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-29T00:50:44+00:00: Recorded command exit 0; command argv SHA-256
   599743eacf1ccef351fbbc468ed3a712539be17367101a5ba6d2449b8143c096.
+
+- 2026-09-29T00:51:06+00:00: Coverage inspection command `RUST_TEST_THREADS=1 cargo llvm-cov
+  --locked --workspace --all-targets --json --output-path /tmp/ar1505-coverage.json` was run through
+  handoffctl and terminated exit 101 at 00:49:47Z, but the yielded coordinator output did not
+  include terminal stderr and no JSON output file remained. Therefore the toolchain/test cause is
+  unknown and is not being inferred. Corrective action: run a bounded package-level llvm-cov command
+  with an explicit log and tail capture; it completed successfully for asb-runtime and saved
+  /tmp/ar1505-runtime-coverage.json.
