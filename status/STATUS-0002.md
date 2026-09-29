@@ -222,12 +222,11 @@
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1526](../tasks/AR-1526.md): First-customer local/replay qualification | coordinator-ar1526-first-customer-20260930 | Qualify the merged ASB production-shaped local/mock and strict-replay customer path with sanitized evidence. | Promote after dependency verification; run the disposable first-customer-style local/mock and strict-replay qualification on exact protected main. |
-| P0 | [AR-1527](../tasks/AR-1527.md): Normalize AR-1307/1308 development seed policy | coordinator-ar1527-seed-policy-20260930 | Remove reviewed seed and digest prerequisites from the AR-1307/1308 development path while preserving separate formal and release evidence gates. | Promote after state review; audit AR-1307/1308 and every active dependent for development-only seed/digest prerequisites, then normalize their task and plan language without changing formal gates. |
 
 ### Blocked (78)
 
@@ -373,7 +372,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (391)
+### Done (392)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -507,3 +506,4 @@
 | P0 | [AR-1377](../tasks/AR-1377-runtime-chain-store.md): Runtime-owned certificate-chain store | Unclaimed | Persist authenticated runtime certificate-chain material for live dispatch. | PR #274 force-updated to exact head 4163194 on current protected main 50acdcab after Repository quality base failure. Focused live_service rerun passes; monitor all required exact-head checks, repair failures, merge only green, then verify seven post-merge workflows. |
 | P0 | [AR-1378](../tasks/AR-1378-live-control-adapter.md): Authenticated live control adapter | Unclaimed | Bind authenticated control receipts to runtime-owned live dispatch. | PR #275 is published at exact head 5f1902c. Monitor all required checks; repair failures through handoffctl, merge only after independent review and green exact-head CI, then verify seven post-merge workflows. |
 | P0 | [AR-1379](../tasks/AR-1379-live-dispatch-integration.md): Production live dispatch integration | Unclaimed | Integrate authenticated runtime live dispatch into asb run and sweep. | Monitor rerun of post-merge Rust workflow and remaining six workflows at exact main SHA 1e2c591; release only after all seven terminal SUCCESS. |
+| P0 | [AR-1380](../tasks/AR-1380-runtime-scheduler-composition.md): Runtime scheduler composition for live dispatch | Unclaimed | Compose runtime-owned live attempts for production run and sweep scheduling. | PR #276 force-updated to exact head ab4e60c on protected main 16bca1f9 after policy/platform stale-base failure. Monitor fresh exact-head checks; repair any new failures, merge only green, then verify seven post-merge workflows. |
