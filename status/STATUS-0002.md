@@ -204,10 +204,10 @@
 | [AR-1515](../tasks/AR-1515-ar1307-runner-ci-oom-repair.md) | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md) | None |
 | [AR-1516](../tasks/AR-1516-ar1308-qemu-fixture-evidence-repair.md) | [AR-1304](../tasks/AR-1304-required-tier-qemu-runner.md) | None |
 | [AR-1517](../tasks/AR-1517-ar1309-capacity-decision-unblock.md) | [AR-1304](../tasks/AR-1304-required-tier-qemu-runner.md) | [AR-1518](../tasks/AR-1518.md) |
-| [AR-1518](../tasks/AR-1518.md) | [AR-1517](../tasks/AR-1517-ar1309-capacity-decision-unblock.md) | [AR-1521](../tasks/AR-1521.md) |
+| [AR-1518](../tasks/AR-1518.md) | [AR-1517](../tasks/AR-1517-ar1309-capacity-decision-unblock.md) | None |
 | [AR-1519](../tasks/AR-1519.md) | [AR-1304](../tasks/AR-1304-required-tier-qemu-runner.md) | [AR-1520](../tasks/AR-1520.md) |
 | [AR-1520](../tasks/AR-1520.md) | [AR-1519](../tasks/AR-1519.md) | [AR-1521](../tasks/AR-1521.md) |
-| [AR-1521](../tasks/AR-1521.md) | [AR-1309](../tasks/AR-1309-reviewed-capacity-or-model-reduction.md), [AR-1518](../tasks/AR-1518.md), [AR-1520](../tasks/AR-1520.md) | [AR-1522](../tasks/AR-1522.md) |
+| [AR-1521](../tasks/AR-1521.md) | [AR-1309](../tasks/AR-1309-reviewed-capacity-or-model-reduction.md), [AR-1520](../tasks/AR-1520.md) | [AR-1522](../tasks/AR-1522.md) |
 | [AR-1522](../tasks/AR-1522.md) | [AR-1521](../tasks/AR-1521.md) | None |
 
 ## Complete AR inventory
