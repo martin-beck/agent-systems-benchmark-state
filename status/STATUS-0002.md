@@ -200,12 +200,17 @@
 
 ## Complete AR inventory
 
-### Open (2)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1465](../tasks/AR-1465-reviewed-seed-archival-recovery.md): Reviewed full-exhaustive seed archival recovery | coordinator-dev-seed-policy-20260929 | Expanded archival audit found no exact reviewed seed in approved state/runner roots, Git objects, the ASB product tree, seed-named second-disk files, or available GitHub Actions artifacts. | External operator must supply reviewed immutable seed bytes with exact SHA-256 b3383756b5cd357f58d923216effea33be35b793034de321c3c9ce460ece4b28 and provenance; independently verify them, bind them to AR-1308, and rerun signed preflight. Do not regenerate or substitute. |
+
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1305](../tasks/AR-1305-image-native-user-session.md): Image-native user-session support | Unclaimed | Independent artifact review completed for fresh image v2: reviewed Ubuntu base SHA-256 289c24e8e1b73d491091eace032ad93a3b335b200d68109b9db451c82a3f4, staged dbus-user-session package SHA-256 e585b1694b854c3b75bfb39cc4022cafe7b14e44fd435433b613b8fb9919cb41, resulting qcow2 SHA-256 2fa6685e201f4f59398c28eac4178daafb701067b10ffdc486b9a00555857f4f. Bounded network-disabled boot reached FULL_EXHAUSTIVE_TRANSIENT_RC=0 without Transport endpoint failure. Formal required-tier evidence is not claimed. | Bind this reviewed image only after the exact AR-1307 signed seed is recovered through AR-1465/AR-1464; rerun signed preflight and complete AR-1304 required-tier attestation. Keep AR-1305 open until exact signed inputs and full gates pass. |
-| P0 | [AR-1465](../tasks/AR-1465-reviewed-seed-archival-recovery.md): Reviewed full-exhaustive seed archival recovery | Unclaimed | Expanded archival audit found no exact reviewed seed in approved state/runner roots, Git objects, the ASB product tree, seed-named second-disk files, or available GitHub Actions artifacts. | External operator must supply reviewed immutable seed bytes with exact SHA-256 b3383756b5cd357f58d923216effea33be35b793034de321c3c9ce460ece4b28 and provenance; independently verify them, bind them to AR-1308, and rerun signed preflight. Do not regenerate or substitute. |
 
 ### Blocked (76)
 
