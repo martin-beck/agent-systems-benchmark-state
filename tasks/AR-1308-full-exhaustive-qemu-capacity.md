@@ -7,7 +7,7 @@
     "AR-1304"
   ],
   "id": "AR-1308",
-  "next_action": "Obtain the reviewed immutable seed with SHA-256 b3383756b5cd357f58d923216effea33be35b793034de321c3c9ce460ece4b28; then rerun the signed preflight and boot once. Host swap capacity is now provisioned. Do not regenerate/substitute the seed or widen limits.",
+  "next_action": "Obtain the reviewed immutable seed with SHA-256 b3383756b5cd357f58d923216effea33be35b793034de321c3c9ce460ece4b28; then rerun the signed preflight and boot once. Two dedicated 2 GiB temporary swap files are active and host capacity passes. Do not regenerate/substitute the seed or widen limits.",
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "659030fffd7e5aa2c0eaaa4dc384d2c619dc57ca",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prepared signed capacity passes image, 64 GiB overlay, exact ab485f767 source/tree, JDK/TLC/model and canonical lock; preflight fails only on host SwapFree below 1 GiB and unavailable reviewed seed b3383756...ece4b28.",
-  "task_revision": 566,
+  "task_revision": 567,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T13:10:26+00:00",
+  "updated_at": "2026-09-29T13:10:36+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1728,3 +1728,7 @@ must report `qualification_authorized: false`.
   seed remains unavailable.
 
 - 2026-09-29T13:10:26+00:00: Claimed by coordinator-ar1308-capacity.
+
+- 2026-09-29T13:10:36+00:00: Host capacity revalidated with 2.0 GiB free swap after adding
+  ar1308-recovery4.swap. Exact seed search across approved second-disk roots found no matching
+  bytes; only nonmatching historical artifacts exist.
