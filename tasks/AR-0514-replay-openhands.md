@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for OpenHands.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Qualify OpenHands replay",
-  "updated_at": "2026-09-29T10:04:43+00:00",
+  "updated_at": "2026-09-29T10:06:21+00:00",
   "worktree_key": "agent-systems-benchmark-replay-openhands"
 }
 ---
@@ -172,3 +172,6 @@ Qualify OpenHands record/replay, network denial, parity, retries, tool calls, ca
   3ccee911 before retaining the truthful AR-0521 provenance block.
 
 - 2026-09-29T10:04:43+00:00: Claimed by ar0514-review-luna56.
+
+- 2026-09-29T10:06:21+00:00: Recorded command exit 0; command argv SHA-256
+  eb0bda22244ba2ee1fb6df77e8248fc5c8f5e866e08a5e496ebbacfe5d1ce828.
