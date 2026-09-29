@@ -15,17 +15,17 @@
   "id": "AR-1508",
   "next_action": "REJECTED: do not publish or merge 5344809. P1-1: add a non-test runtime/control implementation that obtains private roots/tools/policy/allowlist/credential/enrollment from authenticated AR-1505 control state and binds the full receipt; current RuntimePlatformAuthorityProvider/Handle has no production callsite (rg shows only live_service tests). P1-2: add current-time/revocation/restart/expiry fencing to provider materialization/enrollment before handle issuance; RuntimePlatformAuthorityBinding carries expires_at_unix_ms but materialize_provisioner has no now parameter and RuntimeAuthorityInputResolver::resolve checks only owner/generation/cancelled/torn_down. Add negative lifecycle tests, then repeat exact-head review and hosted checks. No push/merge.",
   "observed_branch": "feature/ar-1508-platform-owned-authority-provider",
-  "observed_dirty": 1,
-  "observed_head": "7d788f6c2faabfb8a2d03ca42051418d9b433ed5",
+  "observed_dirty": 0,
+  "observed_head": "dd1981a7e6b607ee051d68e2bb107654f1fd1965",
   "owner": "coordinator-ar1508-provider-20260929",
   "plan": "../plans/AR-1508-platform-owned-authority-provider.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material.",
-  "task_revision": 155,
+  "task_revision": 156,
   "title": "Platform-owned authority provider",
-  "updated_at": "2026-09-29T21:15:50+00:00",
+  "updated_at": "2026-09-29T21:16:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1508-platform-owned-authority-provider"
 }
 ---
