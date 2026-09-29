@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1271-cassette-operation-contract",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-29T12:07:07+00:00",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1271-cassette-operation-contract",
   "observed_dirty": 0,
   "observed_head": "c41b423c0536fe30fd2b6c5a6a33e46c9102ec5e",
-  "owner": "",
+  "owner": "ar1271-cassette-repair-luna56",
   "plan": "../plans/AR-1271.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Define a dependency-neutral cassette request/response operation contract.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Dependency-neutral cassette operation contract",
-  "updated_at": "2026-09-29T11:37:04+00:00",
+  "updated_at": "2026-09-29T11:37:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1271-cassette-operation"
 }
 ---
@@ -112,3 +112,5 @@ Preserve AR-1270's blocked evidence and do not fabricate responses or authority.
 - 2026-09-29T11:37:04+00:00: Platform-provider chain is independently blocked; advance this
   dependency-complete cassette operation path to connect the existing contract to replay service and
   lifecycle fixtures.
+
+- 2026-09-29T11:37:07+00:00: Claimed by ar1271-cassette-repair-luna56.

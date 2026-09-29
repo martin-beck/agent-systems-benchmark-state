@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1271](tasks/AR-1271-cassette-operation-contract.md): Dependency-neutral cassette operation contract | Define a dependency-neutral cassette request/response operation contract. | Connect CassetteResponseSink to actual replay service and add real request/response, egress/no-fallback, cancellation/restart, timeout/crash cleanup fixtures. | - |
+| P0 | [AR-1271](tasks/AR-1271-cassette-operation-contract.md): Dependency-neutral cassette operation contract | Define a dependency-neutral cassette request/response operation contract. | Connect CassetteResponseSink to actual replay service and add real request/response, egress/no-fallback, cancellation/restart, timeout/crash cleanup fixtures. | ar1271-cassette-repair-luna56 |
 
 ## Blocked
 
