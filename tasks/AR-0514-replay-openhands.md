@@ -18,11 +18,11 @@
   "plan": "../plans/AR-0514.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Qualify replay conformance for OpenHands.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Qualify OpenHands replay",
-  "updated_at": "2026-09-29T10:11:53+00:00",
+  "updated_at": "2026-09-29T10:12:38+00:00",
   "worktree_key": "agent-systems-benchmark-replay-openhands"
 }
 ---
@@ -215,3 +215,6 @@ Qualify OpenHands record/replay, network denial, parity, retries, tool calls, ca
   non-matching. No digest override, live credentials, or provider effect. Keep AR-0521 provenance
   blocker; unblock only after its signed content-addressed bundle, offline verifier, reproducible
   approved digest, and altered-input rejection are independently verified, then requalify AR-0514.
+
+- 2026-09-29T10:12:38+00:00: Review completed; reopen briefly to correct the durable next action to
+  the AR-0521 provenance gate, then release blocked again.
