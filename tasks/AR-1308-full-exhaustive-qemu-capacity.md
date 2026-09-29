@@ -16,10 +16,10 @@
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Unsigned-development capacity fixture is complete and no longer depends on a reviewed seed digest: the validator accepts locally generated seeds for this explicit diagnostic profile, while signed/formal validation remains digest-pinned. v9 fixture repairs cover state layout, exact-head Git provenance, offline TLC, and self-contained JDK; bounded boot reached transient RC=0 and launched TLC.",
-  "task_revision": 594,
+  "summary": "Unsigned-development capacity fixture is complete and no longer depends on a reviewed seed digest: validator accepts locally generated seeds for this explicit diagnostic profile, while signed/formal validation remains digest-pinned. v9 repairs cover state layout, exact-head Git provenance, offline TLC, and self-contained JDK; bounded boot reached transient RC=0 and launched TLC. Full state suite after the policy change passes 200 tests and 86 subtests.",
+  "task_revision": 595,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T16:15:34+00:00",
+  "updated_at": "2026-09-29T16:15:47+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1824,3 +1824,7 @@ must report `qualification_authorized: false`.
   --offline pytest -q -> 200 passed, 86 subtests passed.
 
 - 2026-09-29T16:15:34+00:00: Claimed by coordinator-dev-seed-policy-20260929.
+
+- 2026-09-29T16:15:47+00:00: Development policy is in signed+DCO state commit 7f576c8ba. Focused
+  validator tests 23/23 and full state suite 200 passed/86 subtests passed. No formal or release
+  evidence is claimed.
