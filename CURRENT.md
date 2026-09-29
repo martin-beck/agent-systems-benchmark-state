@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1505](tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | Use only product-local ignored coverage artifacts, inspect changed-line coverage and add legitimate tests for the new bootstrap binding paths. | ar1505-repair-luna56 |
+| P0 | [AR-1505](tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | Run unchanged quality coverage command and capture terminal result; only then decide whether focused new-path tests can materially address the required failure. | ar1505-repair-luna56 |
 
 ## Blocked
 

@@ -12,7 +12,7 @@
     "AR-1502"
   ],
   "id": "AR-1505",
-  "next_action": "Use only product-local ignored coverage artifacts, inspect changed-line coverage and add legitimate tests for the new bootstrap binding paths.",
+  "next_action": "Run unchanged quality coverage command and capture terminal result; only then decide whether focused new-path tests can materially address the required failure.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
   "observed_dirty": 3,
   "observed_head": "da5e2a916b66de9f31f2c5bcccd1f59f7b3321d2",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 252,
+  "task_revision": 253,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:55:33+00:00",
+  "updated_at": "2026-09-29T00:55:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
@@ -1004,3 +1004,9 @@ public credential/socket paths, or weakening fail-closed gates.
 
 - 2026-09-29T00:55:20+00:00: Recorded command exit 0; command argv SHA-256
   09e7322d3f6e327f474686177a1d82de63e2f4e170e9b478edf2258eace8a4fa.
+
+- 2026-09-29T00:55:57+00:00: The retained product-local coverage JSON confirms asb-runtime
+  live_service is 90.015 percent lines; workspace 88.08 percent is dominated by existing
+  zero-coverage binaries and low-covered modules. Before adding tests, I am rerunning the unchanged
+  tools/quality/check_coverage.py command through handoffctl to determine reproducibility and exact
+  floor behavior, with logs kept under ignored target/ar1505-coverage.
