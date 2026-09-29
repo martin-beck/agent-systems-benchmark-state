@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
   "checkpoint_commit": "bde018c10b3b69252f9a5b8429f9cc277e44953d",
-  "claim_expires": "2026-09-29T08:06:57+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1502",
     "AR-1484"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1513-authenticated-lease-dispatch-bridge",
   "observed_dirty": 0,
   "observed_head": "bde018c10b3b69252f9a5b8429f9cc277e44953d",
-  "owner": "ar1513-repair-luna56",
+  "owner": "",
   "plan": "../plans/AR-1513-authenticated-lease-dispatch-bridge.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch.",
-  "task_revision": 82,
+  "task_revision": 83,
   "title": "Authenticated lease-to-live-dispatch bridge",
-  "updated_at": "2026-09-29T06:08:17+00:00",
+  "updated_at": "2026-09-29T06:15:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1513-authenticated-lease-dispatch-bridge"
 }
 ---
@@ -291,3 +291,6 @@ data, synthetic authority, or weakening fail-closed/native/formal gates.
 
 - 2026-09-29T06:08:17+00:00: Recorded command exit 0; command argv SHA-256
   8238f54d71d8240b0810691b341a9ffd092e7f9a6867a6275ea5ea2909274edd.
+
+- 2026-09-29T06:15:34+00:00: Release completed repair claim for second repair pass; preserve bde018c
+  and independent review P1 evidence.
