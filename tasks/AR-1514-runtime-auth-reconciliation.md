@@ -10,7 +10,7 @@
   "id": "AR-1514",
   "next_action": "Implement and qualify the disposable runtime reconciliation repair, then rerun the v1.10 helper handoff and capture successful digest-only AuthStatus for paired asb-tui AR-1323.",
   "observed_branch": "feature/ar-1514-runtime-auth-reconciliation",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "d59e6a76a1c7a432e63f0d765909b554bd12416c",
   "owner": "",
   "plan": "../plans/AR-1514-runtime-auth-reconciliation.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "open",
   "summary": "Repair ASB development-runtime reconciliation between digest-only enrollment and helper invocation.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Reconciled development auth handoff runtime",
-  "updated_at": "2026-09-29T13:14:40+00:00",
+  "updated_at": "2026-09-29T13:15:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1514-runtime-auth-reconciliation"
 }
 ---
