@@ -199,7 +199,13 @@
 
 ## Complete AR inventory
 
-### Blocked (82)
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1477](../tasks/AR-1477-authority-resolver-coverage-tests.md): Cover authority resolver behavior | Unclaimed | Raise exact hosted coverage above the enforced 90 percent floor for the authority resolver. | Create a narrow protected-main topology repair successor for merge 67fa0d1; repository policy requires topic synchronization merge at tip. Preserve all six other post-merge results and do not waive policy. |
+
+### Blocked (81)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -256,7 +262,6 @@
 | P0 | [AR-1464](../tasks/AR-1464-formal-capacity-input-provisioning.md): Formal capacity and signed-input provisioning repair | Unclaimed | Exact signed source, reviewed image, 64 GiB overlay, JDK/TLC/model and canonical lock are provisioned. Reclaimed the three stale AR-specific swap files and activated two fresh AR-specific swap files; repeated signed preflight now passes every gate except the unavailable exact seed digest. | Obtain or restore the reviewed full-exhaustive seed with SHA-256 b3383756b5cd357f58d923216effea33be35b793034de321c3c9ce460ece4b28. Do not regenerate or substitute a different seed. Then rerun the signed preflight, hand inputs to AR-1308, and remove/revert only the temporary AR-specific swap after the runner lifecycle. |
 | P0 | [AR-1465](../tasks/AR-1465-reviewed-seed-archival-recovery.md): Reviewed full-exhaustive seed archival recovery | Unclaimed | Expanded archival audit found no exact reviewed seed in approved state/runner roots, Git objects, the ASB product tree, seed-named second-disk files, or available GitHub Actions artifacts. | External operator must supply reviewed immutable seed bytes with exact SHA-256 b3383756b5cd357f58d923216effea33be35b793034de321c3c9ce460ece4b28 and provenance; independently verify them, bind them to AR-1308, and rerun signed preflight. Do not regenerate or substitute. |
 | P0 | [AR-1470](../tasks/AR-1470-runtime-certificate-chain-enrollment.md): Runtime certificate-chain enrollment materialization | Unclaimed | Materialize runtime-owned certificate-chain enrollment authority for live dispatch. | Protected-main setup is not current: AR worktree is clean but 86 commits behind origin/main 7167e3d; refresh via handoffctl run, then implement the narrow runtime-owned authenticated enrollment source. Existing RuntimeAuthorityRecord holds only public digests/opaque chain metadata; no private bootstrap authority or caller-safe issuer is available. Do not fabricate authority. |
-| P0 | [AR-1477](../tasks/AR-1477-authority-resolver-coverage-tests.md): Cover authority resolver behavior | Unclaimed | Raise exact hosted coverage above the enforced 90 percent floor for the authority resolver. | Create a narrow protected-main topology repair successor for merge 67fa0d1; repository policy requires topic synchronization merge at tip. Preserve all six other post-merge results and do not waive policy. |
 | P0 | [AR-1481](../tasks/AR-1481-runtime-owned-cli-entry-bootstrap.md): Runtime-owned CLI entry bootstrap | Unclaimed | Wire runtime-owned authenticated dispatch into the ordinary CLI entry path. | Promote and claim, then inspect the protected-main entrypoint and runtime/control bootstrap inputs. |
 | P0 | [AR-1482](../tasks/AR-1482-control-runtime-process-bootstrap.md): Control-runtime process bootstrap | Unclaimed | Compose authenticated control enrollment into the ordinary CLI process bootstrap. | Blocked pending a real authenticated platform authority provider/materializer and runtime-owned session discovery; continue via AR-1506/AR-1510 successor path. |
 | P0 | [AR-1483](../tasks/AR-1483-authenticated-control-process-owner.md): Authenticated control process owner | Unclaimed | Own authenticated control session and lifecycle while minting opaque CLI dispatch sources. | Promote and claim, then audit whether the runtime/control owner contract can be implemented without caller authority. |

@@ -17,11 +17,11 @@
   "plan": "../plans/AR-1477-authority-resolver-coverage-tests.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Raise exact hosted coverage above the enforced 90 percent floor for the authority resolver.",
-  "task_revision": 75,
+  "task_revision": 76,
   "title": "Cover authority resolver behavior",
-  "updated_at": "2026-09-27T05:32:20+00:00",
+  "updated_at": "2026-09-29T12:08:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1477-authority-resolver-coverage-tests"
 }
 ---
@@ -249,3 +249,7 @@ the coverage floor remains unchanged.
   quality run 36297383090 failed policy: protected-main topic synchronization merge must be at the
   tip. Preserve this immutable failure and create a narrow topology repair successor; do not release
   done or waive policy. Six other post-merge workflows are being monitored separately.
+
+- 2026-09-29T12:08:57+00:00: Repair the protected-main topic-synchronization topology failure for
+  merged coverage change 67fa0d1; preserve all other green evidence and rerun exact
+  policy/post-merge gates without waiver.
