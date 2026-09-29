@@ -10,17 +10,17 @@
   "id": "AR-1511",
   "next_action": "Inspect final exact diff against f92c2e9; preserve 1a26b02 as evidence, then request independent exact-head review. Do not publish until signed repair commit and review.",
   "observed_branch": "feature/ar-1511-runtime-control-authority-issuer",
-  "observed_dirty": 3,
-  "observed_head": "1a26b02e2b6de485e930a0448d7fe5d34aed3061",
+  "observed_dirty": 0,
+  "observed_head": "49bf84275f0df05b7ce310f36f87e29c420b8e34",
   "owner": "ar1511-authority-repair-luna56",
   "plan": "../plans/AR-1511-runtime-control-authority-issuer.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T03:54:32+00:00",
+  "updated_at": "2026-09-29T03:54:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
