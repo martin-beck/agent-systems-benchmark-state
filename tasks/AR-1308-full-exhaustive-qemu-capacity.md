@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Development fixture path defect repaired and focused tests pass, but portable-smoke still fails closed at TLC JVM startup with pthread_create EAGAIN (host runner capacity), before attestation. No seed-digest blocker remains and no formal qualification is claimed.",
-  "task_revision": 630,
+  "task_revision": 631,
   "title": "Full-exhaustive QEMU capacity qualification",
-  "updated_at": "2026-09-29T17:36:56+00:00",
+  "updated_at": "2026-09-29T17:36:59+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"
 }
 ---
@@ -1930,3 +1930,6 @@ must report `qualification_authorized: false`.
 
 - 2026-09-29T17:36:42+00:00: Recorded command exit 0; command argv SHA-256
   66940d0f9cd46bacca4560c569346e7933d9773b001c792511947a8071a3d2f5.
+
+- 2026-09-29T17:36:59+00:00: Recorded command exit 0; command argv SHA-256
+  286ddab2049d3a9d8d304bb548c7a78eb0945c9c25ec80671f1dab78301bc39d.
