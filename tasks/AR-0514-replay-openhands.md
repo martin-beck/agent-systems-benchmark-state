@@ -12,17 +12,17 @@
   "id": "AR-0514",
   "next_action": "Recover exact approved OpenHands environment digest 63727569 from immutable provenance; otherwise schedule pin-reproduction repair before native replay.",
   "observed_branch": "feature/replay-openhands",
-  "observed_dirty": 1,
-  "observed_head": "64f6eb4e5bc70c6d70997a463e7e4884555bc4da",
+  "observed_dirty": 0,
+  "observed_head": "3ccee91118b3a43eda123b0107d04ea4c2e3d80a",
   "owner": "ar0514-repair-luna56",
   "plan": "../plans/AR-0514.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for OpenHands.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Qualify OpenHands replay",
-  "updated_at": "2026-09-29T10:02:15+00:00",
+  "updated_at": "2026-09-29T10:02:29+00:00",
   "worktree_key": "agent-systems-benchmark-replay-openhands"
 }
 ---
