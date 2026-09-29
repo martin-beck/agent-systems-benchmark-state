@@ -213,7 +213,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1520](../tasks/AR-1520.md): AR-1308 reduced-profile runtime qualification | coordinator-ar1520-qemu-20260929 | Qualify the new reduced-model development profile in a disposable provider-free VM without promoting its result to formal evidence. | Promote and run one bounded self-contained QEMU qualification for development-reduced, then inspect sanitized evidence. |
+| P0 | [AR-1520](../tasks/AR-1520.md): AR-1308 reduced-profile runtime qualification | coordinator-ar1520-qemu-20260929 | Reduced profile passes self-contained QEMU: transient admission, bounded models, sanitized non-claiming attestation, and clean poweroff. | Release after exact-head review; retain AR-1307/1308 formal qualification as separate blocked gates. |
 
 ### Blocked (77)
 
