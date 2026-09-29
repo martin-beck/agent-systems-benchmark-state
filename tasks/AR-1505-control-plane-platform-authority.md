@@ -14,17 +14,17 @@
   "id": "AR-1505",
   "next_action": "Run separate resolver and control-bootstrap tests, then changed-package clippy/check and commit the clean namespace-binding diff.",
   "observed_branch": "feature/ar-1505-control-plane-platform-authority",
-  "observed_dirty": 5,
-  "observed_head": "95ac5453fe3a1fbc383afa2ce713a3dceff78437",
+  "observed_dirty": 0,
+  "observed_head": "da5e2a916b66de9f31f2c5bcccd1f59f7b3321d2",
   "owner": "ar1505-repair-luna56",
   "plan": "../plans/AR-1505-control-plane-platform-authority.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB.",
-  "task_revision": 232,
+  "task_revision": 233,
   "title": "Control-plane platform authority/bootstrap protocol",
-  "updated_at": "2026-09-29T00:41:05+00:00",
+  "updated_at": "2026-09-29T00:41:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1505-control-plane-platform-authority"
 }
 ---
