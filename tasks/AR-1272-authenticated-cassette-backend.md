@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1272-authenticated-cassette-backend",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-29T13:51:23+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1272-authenticated-cassette-backend",
   "observed_dirty": 10,
   "observed_head": "85c0f5bc558c90f0543424cdb37017a824c227bb",
-  "owner": "ar1272-cassette-backend-luna56",
+  "owner": "",
   "plan": "../plans/AR-1272.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Bind immutable cassette content to a runtime-authenticated replay backend handle.",
-  "task_revision": 55,
+  "task_revision": 56,
   "title": "Authenticated immutable cassette backend",
-  "updated_at": "2026-09-29T11:58:48+00:00",
+  "updated_at": "2026-09-29T11:59:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1272-cassette-backend"
 }
 ---
@@ -175,3 +175,11 @@ paths as authority.
 
 - 2026-09-29T11:58:48+00:00: Recorded command exit 1; command argv SHA-256
   4df5864f7e162f24fedf0f1d3f74fa54ae50bc03997f3873c812c2015b725c3e.
+
+- 2026-09-29T11:59:16+00:00: Exact blocker confirmed after dependency audit:
+  execute_runtime_cassette receives caller-supplied StrictReplayLaunchRecord, ReplayRoute,
+  ReplayHttpRequest, and ProcessIsolationCapability; no runtime-owned issuer supplies these
+  identities in this checkout. A typed backend wrapper would be validation-only and cannot establish
+  egress, cancellation/restart, timeout/crash cleanup or no-fallback authority. Successor must
+  provide runtime-owned launch-authority/operation source and supervised replay lifecycle before
+  implementation can be claimed. No signed product checkpoint or completion claim.
