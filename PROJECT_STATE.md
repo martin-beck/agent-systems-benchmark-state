@@ -23,13 +23,13 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 36581635858 | `bf89a45ddd71` | push | Huawei MIT source headers | completed:success |
-| 36581635835 | `bf89a45ddd71` | push | Rust verification | in_progress:- |
+| 36581635835 | `bf89a45ddd71` | push | Rust verification | completed:success |
 | 36581635826 | `bf89a45ddd71` | push | Credential-free benchmark path | completed:success |
-| 36581635780 | `bf89a45ddd71` | push | Emulated aarch64 portability | in_progress:- |
+| 36581635780 | `bf89a45ddd71` | push | Emulated aarch64 portability | completed:success |
 | 36581635719 | `bf89a45ddd71` | push | Hosted portability and native qualification | completed:success |
-| 36581635663 | `bf89a45ddd71` | push | Formal assurance | in_progress:- |
-| 36581635581 | `bf89a45ddd71` | push | Repository quality | in_progress:- |
-| 36581635527 | `bf89a45ddd71` | push | Fault assurance | in_progress:- |
+| 36581635663 | `bf89a45ddd71` | push | Formal assurance | completed:success |
+| 36581635581 | `bf89a45ddd71` | push | Repository quality | completed:success |
+| 36581635527 | `bf89a45ddd71` | push | Fault assurance | completed:success |
 | 36578937308 | `a97dfb39c784` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36578937301 | `a97dfb39c784` | pull_request | Fault assurance | completed:success |
 | 36578937277 | `a97dfb39c784` | pull_request | Credential-free benchmark path | completed:success |
