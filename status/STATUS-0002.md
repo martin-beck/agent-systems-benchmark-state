@@ -202,7 +202,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1512](../tasks/AR-1512-process-owner-material-contract.md): Authenticated process-owner material contract | ar1512-process-owner-luna56 | Provide the authenticated process-owner material source and ordinary CLI/control caller needed to consume runtime authority. | Implement owner-side material contract/store and ordinary runtime caller from clean protected-main worktree. |
+| P0 | [AR-1512](../tasks/AR-1512-process-owner-material-contract.md): Authenticated process-owner material contract | ar1512-process-owner-luna56 | Provide the authenticated process-owner material source and ordinary CLI/control caller needed to consume runtime authority. | Add runtime/control caller facade over validated owner store; then run focused, format, clippy, docs and serial workspace gates. |
 
 ### Blocked (80)
 

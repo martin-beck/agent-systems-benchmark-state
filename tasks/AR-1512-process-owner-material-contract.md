@@ -8,7 +8,7 @@
     "AR-1484"
   ],
   "id": "AR-1512",
-  "next_action": "Implement owner-side material contract/store and ordinary runtime caller from clean protected-main worktree.",
+  "next_action": "Add runtime/control caller facade over validated owner store; then run focused, format, clippy, docs and serial workspace gates.",
   "observed_branch": "feature/ar-1512-process-owner-material-contract",
   "observed_dirty": 2,
   "observed_head": "f92c2e941913129d7db50480f71e8361a0d43a0c",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the authenticated process-owner material source and ordinary CLI/control caller needed to consume runtime authority.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Authenticated process-owner material contract",
-  "updated_at": "2026-09-29T05:07:42+00:00",
+  "updated_at": "2026-09-29T05:08:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1512-process-owner-material-contract"
 }
 ---
@@ -84,3 +84,8 @@ host data, synthetic authority, or weakening fail-closed/native/formal gates.
 
 - 2026-09-29T05:07:42+00:00: Recorded command exit 0; command argv SHA-256
   1c6e3d8d232e466e14598929e51bba34dbfff29b29579b2c872590b2de8e94e0.
+
+- 2026-09-29T05:08:21+00:00: Focused test first failed at 05:07:23 during compilation: four test
+  assertions compared Result<opaque capability/lease/store, error> with assert_eq!, requiring
+  PartialEq on private opaque types. Patched tests to use matches! without exposing or deriving
+  equality for capabilities/material. Retry at 05:08 passed 4 process_owner_material tests.
