@@ -15,7 +15,7 @@
   "id": "AR-1508",
   "next_action": "Implement and verify provider contract on isolated AR-1508 worktree based on protected AR-1505 merge f92c2e9; then independent exact-head review and hosted checks.",
   "observed_branch": "feature/ar-1508-platform-owned-authority-provider",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "f92c2e941913129d7db50480f71e8361a0d43a0c",
   "owner": "ar1508_provider_luna56",
   "plan": "../plans/AR-1508-platform-owned-authority-provider.md",
@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Platform-owned authority provider",
-  "updated_at": "2026-09-29T02:22:14+00:00",
+  "updated_at": "2026-09-29T02:22:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1508-platform-owned-authority-provider"
 }
 ---
