@@ -18,11 +18,11 @@
   "plan": "../plans/AR-0514.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Qualify replay conformance for OpenHands.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Qualify OpenHands replay",
-  "updated_at": "2026-09-29T10:04:07+00:00",
+  "updated_at": "2026-09-29T10:04:40+00:00",
   "worktree_key": "agent-systems-benchmark-replay-openhands"
 }
 ---
@@ -167,3 +167,6 @@ Qualify OpenHands record/replay, network denial, parity, retries, tool calls, ca
   pass; native journey remains ignored. No digest override, credentials or native replay. Unblock
   only after AR-0521 publishes an independently verified content-addressed environment bundle,
   offline verifier and altered-input rejection, then requalify AR-0514.
+
+- 2026-09-29T10:04:40+00:00: Run independent review and exact-head CI for bounded repair commit
+  3ccee911 before retaining the truthful AR-0521 provenance block.
