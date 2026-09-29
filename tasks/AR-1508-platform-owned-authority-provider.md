@@ -1,7 +1,7 @@
 ---
 {
   "branch": "feature/ar-1508-platform-owned-authority-provider",
-  "checkpoint_commit": "5344809cfe4f8f8b1a4bd734b606c347f693c349",
+  "checkpoint_commit": "dd1981a7e6b607ee051d68e2bb107654f1fd1965",
   "claim_expires": "2026-09-29T23:10:55+00:00",
   "depends_on": [
     "AR-1473",
@@ -13,7 +13,7 @@
     "AR-1505"
   ],
   "id": "AR-1508",
-  "next_action": "REJECTED: do not publish or merge 5344809. P1-1: add a non-test runtime/control implementation that obtains private roots/tools/policy/allowlist/credential/enrollment from authenticated AR-1505 control state and binds the full receipt; current RuntimePlatformAuthorityProvider/Handle has no production callsite (rg shows only live_service tests). P1-2: add current-time/revocation/restart/expiry fencing to provider materialization/enrollment before handle issuance; RuntimePlatformAuthorityBinding carries expires_at_unix_ms but materialize_provisioner has no now parameter and RuntimeAuthorityInputResolver::resolve checks only owner/generation/cancelled/torn_down. Add negative lifecycle tests, then repeat exact-head review and hosted checks. No push/merge.",
+  "next_action": "Route remaining P1-1 to AR-1510/AR-1391: provide a non-test runtime/control platform source for private roots, tools, policy, allowlist, credential capability and enrollment, then wire it into ordinary run/sweep. Do not merge this branch or claim qualification until exact-head review and hosted checks pass.",
   "observed_branch": "feature/ar-1508-platform-owned-authority-provider",
   "observed_dirty": 0,
   "observed_head": "dd1981a7e6b607ee051d68e2bb107654f1fd1965",
@@ -22,10 +22,10 @@
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Provide an authenticated platform-owned source for private runtime roots, tools, policy, and enrollment material.",
-  "task_revision": 156,
+  "summary": "Lifecycle expiry fencing repaired and covered by seven focused plus 167 full asb-runtime tests; production platform authority callsite remains absent.",
+  "task_revision": 157,
   "title": "Platform-owned authority provider",
-  "updated_at": "2026-09-29T21:16:03+00:00",
+  "updated_at": "2026-09-29T21:16:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1508-platform-owned-authority-provider"
 }
 ---
@@ -533,3 +533,7 @@ fixed-path authority, weakening formal/privacy/native gates.
 
 - 2026-09-29T21:15:50+00:00: Recorded command exit 0; command argv SHA-256
   ebebe2f412893a0a909128b39d663d0aabca5864321baf94fd1e62e0c660e351.
+
+- 2026-09-29T21:16:42+00:00: Implemented now-time and generation/expiry fencing before provider
+  materialization; focused 7/7 and full asb-runtime 167 passed. The original P1-1 production
+  source/callsite remains unresolved, so this AR is not complete.
