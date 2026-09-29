@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1510-authenticated-control-source-wiring",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-29T03:16:31+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1505"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1510-authenticated-control-source-wiring",
   "observed_dirty": 0,
   "observed_head": "f92c2e941913129d7db50480f71e8361a0d43a0c",
-  "owner": "ar1510-control-source-luna56",
+  "owner": "",
   "plan": "../plans/AR-1510-authenticated-control-source-wiring.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide the authenticated platform control source and production lifecycle wiring required by the authority-provider receipt.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Authenticated control source and production provider wiring",
-  "updated_at": "2026-09-29T03:06:45+00:00",
+  "updated_at": "2026-09-29T03:06:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1510-authenticated-control-source-wiring"
 }
 ---
@@ -100,3 +100,19 @@ test-only façade publication, or weakening native/formal/privacy gates.
 
 - 2026-09-29T03:06:45+00:00: Durable next_action corrected after blocker audit; exact evidence is in
   the subsequent blocked-release note.
+
+- 2026-09-29T03:06:56+00:00: Blocked after exact protected-main audit at
+  f92c2e941913129d7db50480f71e8361a0d43a0c. Evidence: asb-runtime live_service.rs exposes
+  RuntimeControlBootstrap::materialize_provisioner only as a crate-private test-fixture seam taking
+  caller-provided RuntimeAuthorityInputs and state_path; every callsite is under the runtime
+  unit-test module (lines 2657-2666). RuntimePlatformAuthorityProvider/production provider
+  construction is absent on protected main. asb-cli control.rs persists RuntimeAuthorityRecord only
+  through private install_runtime_authority called during restart validation and test fixtures
+  (lines 1115-1119, 2073-2105, 5097-5199); no production AuthEnroll/AuthHelperInvoke path creates
+  authenticated authority material. asb-cli ordinary run/sweep rejects absent live_factory (lib.rs
+  lines 3214-3217), and runtime dispatch source helpers are only API/test seams, not ordinary
+  dispatch callsites. Implementing now would require inventing
+  certificate/roots/tools/policy/allowlist or accepting caller/PATH authority, violating AR-1510
+  non-goals and fail-closed requirements. Next action: create narrower successor to integrate a real
+  authenticated platform authority provider and production control-client bootstrap/CLI wiring once
+  that platform source and capability contract are available; do not publish AR-1509 façade commits.
