@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**546 ARs tracked** across 6 active status categories.
+**548 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 78 |
-| **Planned** | Defined work awaiting promotion or dependencies | 49 |
+| **Planned** | Defined work awaiting promotion or dependencies | 51 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 391 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -621,6 +621,8 @@ flowchart LR
         AR_1524["AR-1524 - Done"]:::status_done
         AR_1525["AR-1525 - Done"]:::status_done
         AR_1526["AR-1526 - In progress"]:::status_in_progress
+        AR_1527["AR-1527 - Planned"]:::status_planned
+        AR_1528["AR-1528 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2072,9 +2074,12 @@ flowchart LR
     AR_1514 --> AR_1526
     AR_1517 --> AR_1518
     AR_1519 --> AR_1520
+    AR_1519 --> AR_1528
     AR_1520 --> AR_1521
     AR_1520 --> AR_1526
+    AR_1520 --> AR_1528
     AR_1521 --> AR_1522
+    AR_1527 --> AR_1528
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -2418,4 +2423,3 @@ flowchart LR
 | [AR-1299](../tasks/AR-1299.md) | [AR-1190](../tasks/AR-1190.md) | None |
 | [AR-1300](../tasks/AR-1300-runtime-cassette-dispatch-seam.md) | [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md), [AR-1285](../tasks/AR-1285-runtime-launch-factory.md) | [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md), [AR-1306](../tasks/AR-1306-authenticated-fault-matrix-qualification.md) |
 | [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md) | [AR-1287](../tasks/AR-1287-delegated-sandbox-runner.md), [AR-1300](../tasks/AR-1300-runtime-cassette-dispatch-seam.md) | None |
-| [AR-1302](../tasks/AR-1302-portable-tlc-runner.md) | None | [AR-1304](../tasks/AR-1304-required-tier-qemu-runner.md), [AR-1305](../tasks/AR-1305-image-native-user-session.md), [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md), [AR-1515](../tasks/AR-1515-ar1307-runner-ci-oom-repair.md) |
