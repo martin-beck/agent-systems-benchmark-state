@@ -10,17 +10,17 @@
   "id": "AR-1511",
   "next_action": "Independent exact-head review required for 49bf842 against f92c2e9; verify lifecycle teardown/revoke/fence and production materialize_provisioner callsite. No publish until review passes.",
   "observed_branch": "feature/ar-1511-runtime-control-authority-issuer",
-  "observed_dirty": 1,
-  "observed_head": "49bf84275f0df05b7ce310f36f87e29c420b8e34",
+  "observed_dirty": 0,
+  "observed_head": "ac9306453dc97a100a57befcba0c8456b67a23db",
   "owner": "ar1511-authority-repair-luna56",
   "plan": "../plans/AR-1511-runtime-control-authority-issuer.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the authenticated runtime/control authority issuer and opaque capability source required by production dispatch.",
-  "task_revision": 91,
+  "task_revision": 92,
   "title": "Runtime/control authority issuer and capability source",
-  "updated_at": "2026-09-29T03:56:18+00:00",
+  "updated_at": "2026-09-29T03:56:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1511-runtime-control-authority-issuer"
 }
 ---
