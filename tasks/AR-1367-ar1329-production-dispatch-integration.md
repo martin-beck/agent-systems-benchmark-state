@@ -18,9 +18,19 @@
   "plan": "../plans/AR-1367-ar1329-production-dispatch-integration.md",
   "priority": "P0",
   "schema_version": 1,
+  "spec_acceptance": {
+    "evidence_class": "contract-test",
+    "evidence_digest": "sha256:62ce6cfcb368a490d8bc86165f49da6c21eb94e8763b1559365ce4ca636f82a1",
+    "evidence_ref": "quality/AR-1367-development-local-mock.txt",
+    "spec_ref": "specs/AR-1367.json",
+    "spec_revision": 1,
+    "status": "pass"
+  },
+  "spec_ref": "specs/AR-1367.json",
+  "spec_revision": 1,
   "status": "in_progress",
   "summary": "Development asb run/sweep dispatch is qualified with local/mock and strict replay; deployment-owned live-provider materialization is optional future hardening.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "AR-1329 production dispatch integration",
   "updated_at": "2026-09-30T05:01:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1367-ar1329-production-dispatch-integration"

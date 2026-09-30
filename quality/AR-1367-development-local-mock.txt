@@ -1,0 +1,9 @@
+AR-1367 development qualification evidence
+
+Exact protected-main commit: bf89a45ddd71af96e6d4b6954320e199e147f83e
+
+The ordinary run/sweep dispatch path passed both targeted provider-free
+qualification tests: local-mock owner selection and local-mock run/sweep
+teardown. No deployment-owned authenticated authority or external provider was
+used. This evidence is development-only and does not claim live-provider or
+formal AR-1307/1308 readiness.
