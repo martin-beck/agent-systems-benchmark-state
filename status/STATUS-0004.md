@@ -77,11 +77,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1547](../tasks/AR-1547.md): Coordinator v0.3.52 vendor adoption and compatibility rerun | Unclaimed | Adopt coordinator v0.3.52 and rerun the ASB state-worktree compatibility gates after the rejected v0.3.51 tag. | Promote and claim; record v0.3.52 vendor adoption, rerun AR-1540/AR-1541 compatibility and full state gates on the clean snapshot, then release AR-1544/AR-1534 successors with exact evidence. |
+| P0 | [AR-1547](../tasks/AR-1547.md): Coordinator v0.3.52 vendor adoption and compatibility rerun | asb-ar1547-v0352-adoption-20260930 | Adopt coordinator v0.3.52 and rerun the ASB state-worktree compatibility gates after the rejected v0.3.51 tag. | Promote and claim; record v0.3.52 vendor adoption, rerun AR-1540/AR-1541 compatibility and full state gates on the clean snapshot, then release AR-1544/AR-1534 successors with exact evidence. |
 
 ### Blocked (89)
 

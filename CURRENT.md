@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1547](tasks/AR-1547.md): Coordinator v0.3.52 vendor adoption and compatibility rerun | Adopt coordinator v0.3.52 and rerun the ASB state-worktree compatibility gates after the rejected v0.3.51 tag. | Promote and claim; record v0.3.52 vendor adoption, rerun AR-1540/AR-1541 compatibility and full state gates on the clean snapshot, then release AR-1544/AR-1534 successors with exact evidence. | - |
+| P0 | [AR-1547](tasks/AR-1547.md): Coordinator v0.3.52 vendor adoption and compatibility rerun | Adopt coordinator v0.3.52 and rerun the ASB state-worktree compatibility gates after the rejected v0.3.51 tag. | Promote and claim; record v0.3.52 vendor adoption, rerun AR-1540/AR-1541 compatibility and full state gates on the clean snapshot, then release AR-1544/AR-1534 successors with exact evidence. | asb-ar1547-v0352-adoption-20260930 |
 
 ## Blocked
 
