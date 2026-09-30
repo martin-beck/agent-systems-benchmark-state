@@ -3,12 +3,17 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1565](tasks/AR-1565.md): ASB yanked dependency lock repair | Repair the yanked dependency lock that blocks all protected ASB merges. | Promote and claim the dependency-lock repair, update the minimal yanked transitive crate closure, and independently run cargo deny/audit plus the full required PR checks. | ar1565-lock-repair |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1562](tasks/AR-1562.md): ASB TUI development release-channel contract | Add explicit ASB TUI release-channel selection with a development default. | Run full asb-cli quality gates and independent review of explicit channel parser/output. Then reconcile branch metadata and prepare exact-head PR; AR-1563 remains blocked until this contract is integrated. | - |
-| P0 | [AR-1565](tasks/AR-1565.md): ASB yanked dependency lock repair | Repair the yanked dependency lock that blocks all protected ASB merges. | Promote and claim the dependency-lock repair, update the minimal yanked transitive crate closure, and independently run cargo deny/audit plus the full required PR checks. | - |
 
 ## Blocked
 

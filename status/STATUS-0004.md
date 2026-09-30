@@ -124,12 +124,17 @@
 
 ## Complete AR inventory
 
-### Open (2)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1565](../tasks/AR-1565.md): ASB yanked dependency lock repair | ar1565-lock-repair | Repair the yanked dependency lock that blocks all protected ASB merges. | Promote and claim the dependency-lock repair, update the minimal yanked transitive crate closure, and independently run cargo deny/audit plus the full required PR checks. |
+
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1562](../tasks/AR-1562.md): ASB TUI development release-channel contract | Unclaimed | Add explicit ASB TUI release-channel selection with a development default. | Run full asb-cli quality gates and independent review of explicit channel parser/output. Then reconcile branch metadata and prepare exact-head PR; AR-1563 remains blocked until this contract is integrated. |
-| P0 | [AR-1565](../tasks/AR-1565.md): ASB yanked dependency lock repair | Unclaimed | Repair the yanked dependency lock that blocks all protected ASB merges. | Promote and claim the dependency-lock repair, update the minimal yanked transitive crate closure, and independently run cargo deny/audit plus the full required PR checks. |
 
 ### Blocked (80)
 
