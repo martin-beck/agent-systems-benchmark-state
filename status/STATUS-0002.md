@@ -3196,7 +3196,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Clone and build the current asb-tui main head for the ASB dev channel. |
-| Next action | Ready for independent re-review of PR #398 at exact head 00b058a. Verify shallow filtered clone, 2 GiB recursive workspace quota, setsid process-group execution and group termination on timeout, cleanup, digest-bound atomic dev install, and unchanged stable channel. |
+| Next action | Ready for independent re-review of PR #398 at exact head 46133cd. Verify live quota monitoring, concurrent bounded output drain, process-group descendant termination, staging cleanup preserving prior install, digest-bound atomic dev install, and unchanged stable channel. |
 
 ### AR-1564 — ASB development TUI lifecycle integration
 
