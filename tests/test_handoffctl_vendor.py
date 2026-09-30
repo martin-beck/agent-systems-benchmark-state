@@ -31,9 +31,9 @@ PR_HEAD = "e4fecc1e65e640d436e4d01b8418fb7dc73c7c4e"
 PR_HEAD_TREE = "600b2d960e16cb5b144ec0db8b1e833f7fe797a0"
 ATTESTED_UPSTREAM_COMMIT = "9733b341f25b145d6dfad8414933cb6348701769"
 ATTESTED_MANIFEST_SHA256 = "60d7c3c634c14f6df34874ace6044e9058a3621f78d51491407f9ed5aa0c871a"
-CURRENT_UPSTREAM_COMMIT = "1d806fa2996bde732f624cd63c2088a99f839431"
-CURRENT_UPSTREAM_VERSION = "v0.3.52"
-CURRENT_MANIFEST_SHA256 = "61226920ec443f8ea522a3ad2511ac06fb41cd68d481afdb6bc53d3148cce43f"
+CURRENT_UPSTREAM_COMMIT = "b476a61e93d777e163148d15490adec6e21fca41"
+CURRENT_UPSTREAM_VERSION = "v0.3.53"
+CURRENT_MANIFEST_SHA256 = "d481cb0f6791c724989c8f05c4b9e2a8b3fa3bf023b5f7b54b1f6337bec211da"
 ATTESTED_IDENTITIES = {
     "Pull request": "https://github.com/martin-beck/agent-systems-benchmark-state/pull/10",
     "Pull-request head": PR_HEAD,
@@ -66,6 +66,7 @@ class VendorTest(unittest.TestCase):
                 if destination_name == "tools/handoffctl.py":
                     contents = contents.replace(b'COORDINATOR_VERSION = "0.3.50"', b'COORDINATOR_VERSION = "0.3.7"')
                     contents = contents.replace(b'COORDINATOR_VERSION = "0.3.52"', b'COORDINATOR_VERSION = "0.3.7"')
+                    contents = contents.replace(b'COORDINATOR_VERSION = "0.3.53"', b'COORDINATOR_VERSION = "0.3.7"')
                 source.write_bytes(contents)
                 source.chmod(destination.stat().st_mode & 0o777)
             else:
