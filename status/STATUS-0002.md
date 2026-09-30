@@ -3062,15 +3062,15 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | asb-output-mode-worker |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Make ASB commands human-readable by default and preserve JSON through a global --json flag. |
-| Next action | Promote and claim after dependency review; add the global human-readable output renderer and --json override. |
+| Next action | Implementation merged in ASB main; retain exact PR, provenance and hosted-check evidence. |
 
 ### AR-1555 — Plan and output workflow qualification
 
@@ -3715,7 +3715,7 @@ flowchart LR
         AR_1551["AR-1551 - Cancelled"]:::status_cancelled
         AR_1552["AR-1552 - Done"]:::status_done
         AR_1553["AR-1553 - Done"]:::status_done
-        AR_1554["AR-1554 - In progress"]:::status_in_progress
+        AR_1554["AR-1554 - Done"]:::status_done
         AR_1555["AR-1555 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
@@ -4889,3 +4889,6 @@ flowchart LR
     AR_1385 --> AR_1387
     AR_1385 --> AR_1388
     AR_1385 --> AR_1390
+    AR_1385 --> AR_1391
+    AR_1385 --> AR_1392
+    AR_1385 --> AR_1393

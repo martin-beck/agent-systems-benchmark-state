@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1554](tasks/AR-1554.md): Global human-readable output mode | Make ASB commands human-readable by default and preserve JSON through a global --json flag. | Promote and claim after dependency review; add the global human-readable output renderer and --json override. | asb-output-mode-worker |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |

@@ -98,12 +98,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1554](../tasks/AR-1554.md): Global human-readable output mode | asb-output-mode-worker | Make ASB commands human-readable by default and preserve JSON through a global --json flag. | Promote and claim after dependency review; add the global human-readable output renderer and --json override. |
-
 ### Blocked (80)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -249,7 +243,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (413)
+### Done (414)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -478,6 +472,7 @@
 | P0 | [AR-1550](../tasks/AR-1550.md): Compatibility blocker graph reconciliation | Unclaimed | Reconcile stale compatibility blocker records after AR-1549 without claiming formal qualification. | Promote and claim; reconcile stale AR-1534/1540/1541/1544 blocker metadata with the verified v0.3.53 receipts, preserving historical failure evidence. |
 | P0 | [AR-1552](../tasks/AR-1552.md): Dynamic workload-backed plan generation | Unclaimed | Generate benchmark plans from the canonical supported-workload catalog, including workloads added later. | Implementation merged in ASB main; retain exact PR, provenance and hosted-check evidence. |
 | P0 | [AR-1553](../tasks/AR-1553.md): Plan creation CLI workflow | Unclaimed | Expose dynamic workload plan creation through a simple ASB CLI command. | Implementation and qualification merged in ASB main; retain exact PR and test evidence. |
+| P0 | [AR-1554](../tasks/AR-1554.md): Global human-readable output mode | Unclaimed | Make ASB commands human-readable by default and preserve JSON through a global --json flag. | Implementation merged in ASB main; retain exact PR, provenance and hosted-check evidence. |
 | P1 | [AR-0002](../tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Unclaimed | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. |
 | P1 | [AR-0003](../tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Unclaimed | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. |
 | P1 | [AR-0004](../tasks/AR-0004-ar-status-document.md): Generate the visual AR status document | Unclaimed | Render every AR, status, and dependency as an accessible visual state document. | Await independent immutable-head review of state PR 3 at eedd311; repair findings before coordinator integration. |
@@ -527,3 +522,4 @@
 | P1 | [AR-0819](../tasks/AR-0819-ssh-remote-bootstrap.md): Add SSH remote discovery and bootstrap | Unclaimed | Use configured SSH hosts as the safe default path to a remote runner and help establish dedicated key authentication. | Integrate signed no-ff PR #98 onto current main, then run and verify all exact-main post-merge workflows before release. |
 | P1 | [AR-0820](../tasks/AR-0820-verifiable-install-artifacts.md): Publish verifiable installation artifacts | Unclaimed | Publish verifiable native bundles and metadata that a small bootstrapper can select safely. | Build signed platform manifests and relocatable ASB plus asb-tui installation bundles. |
 | P1 | [AR-0821](../tasks/AR-0821-one-line-local-install.md): Add guided one-line local installation | Unclaimed | Turn a single documented command into a safe guided local ASB and TUI first run. | Monitor all required post-merge CI runs for exact main 513c1d926458f1cb6a26d3f7277dc7d9b1496df3; release only after every gate is green. |
+| P1 | [AR-0822](../tasks/AR-0822-install-upgrade-rollback.md): Add safe installation lifecycle management | Unclaimed | Manage the complete installed lifecycle without losing configuration, history, runs, or trust state. | Implement verified upgrades, migrations, rollback, repair, and non-destructive uninstall. |
