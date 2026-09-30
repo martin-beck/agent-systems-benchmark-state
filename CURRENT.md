@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1562](tasks/AR-1562.md): ASB TUI development release-channel contract | Add explicit ASB TUI release-channel selection with a development default. | Run full asb-cli quality gates and independent review of explicit channel parser/output. Then reconcile branch metadata and prepare exact-head PR; AR-1563 remains blocked until this contract is integrated. | ar1562-dev-channel-contract |
+| P0 | [AR-1562](tasks/AR-1562.md): ASB TUI development release-channel contract | Add explicit ASB TUI release-channel selection with a development default. | Run full asb-cli quality gates and independent review of explicit channel parser/output. Then reconcile branch metadata and prepare exact-head PR; AR-1563 remains blocked until this contract is integrated. | - |
 
 ## Blocked
 
