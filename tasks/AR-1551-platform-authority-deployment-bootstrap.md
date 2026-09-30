@@ -13,11 +13,11 @@
   "owner": "",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Provision the missing authenticated platform authority deployment required for first-customer live dispatch.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "First-customer platform authority deployment bootstrap",
-  "updated_at": "2026-09-30T05:06:00+00:00"
+  "updated_at": "2026-09-30T03:09:02+00:00"
 }
 ---
 
@@ -52,3 +52,6 @@ Acceptance requires:
 
 This AR supplies deployment authority only; AR-1523 owns the ASB production
 adapter and final live-dispatch qualification.
+
+- 2026-09-30T03:09:02+00:00: Dependencies AR-1505, AR-1513 and AR-1514 are done; the missing
+  deployment-owned authority source is the canonical first-customer live-dispatch blocker.
