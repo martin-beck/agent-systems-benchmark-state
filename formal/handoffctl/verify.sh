@@ -3,8 +3,8 @@
 # SPDX-License-Identifier: MIT
 set -euo pipefail
 
-if [[ "${1:-}" != "--tier" || ( "${2:-}" != "portable-smoke" && "${2:-}" != "pr-fast" && "${2:-}" != "pr-publication" && "${2:-}" != "full-exhaustive" ) || "$#" -ne 2 ]]; then
-    echo "usage: $0 --tier portable-smoke|pr-fast|pr-publication|full-exhaustive" >&2
+if [[ "${1:-}" != "--tier" || ( "${2:-}" != "development-reduced" && "${2:-}" != "portable-smoke" && "${2:-}" != "pr-fast" && "${2:-}" != "pr-publication" && "${2:-}" != "full-exhaustive" && "${2:-}" != "full-exhaustive-capacity" ) || "$#" -ne 2 ]]; then
+    echo "usage: $0 --tier development-reduced|portable-smoke|pr-fast|pr-publication|full-exhaustive|full-exhaustive-capacity" >&2
     exit 64
 fi
 readonly TIER="$2"
@@ -13,15 +13,32 @@ readonly ATTESTATION="${TLC_ATTESTATION_PATH:-${TMPDIR:-/tmp}/handoffctl-${TIER}
 readonly TLA_VERSION=1.7.4
 readonly TLA_SHA256=936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88
 readonly SPEC_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
-readonly TEMP_DIR="$(mktemp -d)"
+readonly RUNTIME_ROOT="${TLC_RUNTIME_ROOT:-/srv/data/projects/.asb-tlc}"
+if [[ -L "${RUNTIME_ROOT}" ]]; then
+    echo "TLC_RUNTIME_ROOT must not be a symbolic link" >&2
+    exit 78
+fi
+mkdir -p "${RUNTIME_ROOT}"
+chmod 700 "${RUNTIME_ROOT}"
+readonly TEMP_DIR="$(mktemp -d "${RUNTIME_ROOT%/}/verify.XXXXXX")"
+chmod 700 "${TEMP_DIR}"
 readonly MANIFEST="${TEMP_DIR}/outcomes.manifest"
 : > "${MANIFEST}"
 trap 'rm -rf -- "${TEMP_DIR}"' EXIT
 
-readonly JAR="${TEMP_DIR}/tla2tools.jar"
-readonly URL="https://github.com/tlaplus/tlaplus/releases/download/v${TLA_VERSION}/tla2tools.jar"
-
-curl --fail --location --retry 3 --show-error --silent --output "${JAR}" "${URL}"
+readonly PRELOADED_JAR="${TLC_JAR_PATH:-}"
+readonly EXPECTED_JAR_SHA256="${TLC_JAR_SHA256:-${TLA_SHA256}}"
+if [[ -n "${PRELOADED_JAR}" ]]; then
+    if [[ -L "${PRELOADED_JAR}" || ! -f "${PRELOADED_JAR}" ]]; then
+        echo "TLC_JAR_PATH must name a regular preloaded JAR" >&2
+        exit 78
+    fi
+    readonly JAR="${PRELOADED_JAR}"
+else
+    readonly JAR="${TEMP_DIR}/tla2tools.jar"
+    readonly URL="https://github.com/tlaplus/tlaplus/releases/download/v${TLA_VERSION}/tla2tools.jar"
+    curl --fail --location --retry 3 --show-error --silent --output "${JAR}" "${URL}"
+fi
 printf '%s  %s\n' "${TLA_SHA256}" "${JAR}" | sha256sum --check --strict
 
 run_model() {
@@ -43,13 +60,12 @@ run_model() {
     printf "%s success\n" "${model}" >> "${MANIFEST}"
 }
 
-if [[ "${TIER}" == "portable-smoke" ]]; then
+if [[ "${TIER}" == "development-reduced" ]]; then
+    run_model HandoffctlBinding
+    run_model HandoffctlRecovery
+elif [[ "${TIER}" == "portable-smoke" ]]; then
     # Smoke is deliberately non-exhaustive and never produces full evidence.
     run_model HandoffctlBinding
-elif [[ "${TIER}" == "pr-fast" ]]; then
-    # Deliberately smaller safety-only required merge gate.
-    run_model HandoffctlFast
-    run_model OracleInteractionGates
 elif [[ "${TIER}" == "pr-publication" ]]; then
     # PR publication checks every invariant family. The general lifecycle
     # model uses a one-process configuration; weekly full evidence retains its
@@ -69,4 +85,4 @@ else
     run_model HandoffctlRecovery
 fi
 python3 "${SPEC_DIR}/attest.py" --tier "${TIER}" --output "${ATTESTATION}" --jar "${JAR}" --manifest "${MANIFEST}" \
-    --models $(if [[ "${TIER}" == "portable-smoke" ]]; then echo HandoffctlBinding; elif [[ "${TIER}" == "pr-fast" ]]; then echo HandoffctlFast OracleInteractionGates; elif [[ "${TIER}" == "pr-publication" ]]; then echo HandoffctlBinding HandoffctlLocks HandoffctlRun HandoffctlStorage HandoffctlPR HandoffctlRecovery; else echo HandoffctlBinding HandoffctlLocks HandoffctlRun HandoffctlStorage Handoffctl HandoffctlRecovery; fi)
+    --models $(if [[ "${TIER}" == "development-reduced" ]]; then echo HandoffctlBinding HandoffctlRecovery; elif [[ "${TIER}" == "portable-smoke" ]]; then echo HandoffctlBinding; elif [[ "${TIER}" == "pr-publication" ]]; then echo HandoffctlBinding HandoffctlLocks HandoffctlRun HandoffctlStorage HandoffctlPR HandoffctlRecovery; else echo HandoffctlBinding HandoffctlLocks HandoffctlRun HandoffctlStorage Handoffctl HandoffctlRecovery; fi)

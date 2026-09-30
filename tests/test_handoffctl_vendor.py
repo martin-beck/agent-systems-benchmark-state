@@ -31,8 +31,9 @@ PR_HEAD = "e4fecc1e65e640d436e4d01b8418fb7dc73c7c4e"
 PR_HEAD_TREE = "600b2d960e16cb5b144ec0db8b1e833f7fe797a0"
 ATTESTED_UPSTREAM_COMMIT = "9733b341f25b145d6dfad8414933cb6348701769"
 ATTESTED_MANIFEST_SHA256 = "60d7c3c634c14f6df34874ace6044e9058a3621f78d51491407f9ed5aa0c871a"
-CURRENT_UPSTREAM_COMMIT = "550c014c440cc9bc45727fea71d90a9025c554c3"
-CURRENT_MANIFEST_SHA256 = "ae32e5d831fa31defb734cb04dd47a9d09bdaae3a60cf77d8a350224fe17e2f0"
+CURRENT_UPSTREAM_COMMIT = "1d806fa2996bde732f624cd63c2088a99f839431"
+CURRENT_UPSTREAM_VERSION = "v0.3.52"
+CURRENT_MANIFEST_SHA256 = "61226920ec443f8ea522a3ad2511ac06fb41cd68d481afdb6bc53d3148cce43f"
 ATTESTED_IDENTITIES = {
     "Pull request": "https://github.com/martin-beck/agent-systems-benchmark-state/pull/10",
     "Pull-request head": PR_HEAD,
@@ -63,10 +64,8 @@ class VendorTest(unittest.TestCase):
             if destination.is_file():
                 contents = destination.read_bytes()
                 if destination_name == "tools/handoffctl.py":
-                    contents = contents.replace(
-                        b'COORDINATOR_VERSION = "0.3.50"',
-                        b'COORDINATOR_VERSION = "0.3.7"',
-                    )
+                    contents = contents.replace(b'COORDINATOR_VERSION = "0.3.50"', b'COORDINATOR_VERSION = "0.3.7"')
+                    contents = contents.replace(b'COORDINATOR_VERSION = "0.3.52"', b'COORDINATOR_VERSION = "0.3.7"')
                 source.write_bytes(contents)
                 source.chmod(destination.stat().st_mode & 0o777)
             else:
@@ -105,7 +104,7 @@ class VendorTest(unittest.TestCase):
         manifest_bytes = (ROOT / VENDOR.LOCK_NAME).read_bytes()
         self.assertEqual(CURRENT_MANIFEST_SHA256, hashlib.sha256(manifest_bytes).hexdigest())
         manifest = json.loads(manifest_bytes)
-        self.assertEqual("v0.3.7", manifest["upstream"]["version"])
+        self.assertEqual(CURRENT_UPSTREAM_VERSION, manifest["upstream"]["version"])
         self.assertEqual(CURRENT_UPSTREAM_COMMIT, manifest["upstream"]["commit"])
 
     def test_sync_verify_and_detect_tampering(self) -> None:

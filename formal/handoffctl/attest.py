@@ -14,6 +14,7 @@ import time
 from pathlib import Path
 
 EXPECTED_MODELS = {
+    "development-reduced": {"HandoffctlBinding", "HandoffctlRecovery"},
     "portable-smoke": {"HandoffctlBinding"},
     "pr-fast": {"HandoffctlFast", "OracleInteractionGates"},
     "pr-publication": {
@@ -32,6 +33,14 @@ EXPECTED_MODELS = {
         "Handoffctl",
         "HandoffctlRecovery",
     },
+    "full-exhaustive-capacity": {
+        "HandoffctlBinding",
+        "HandoffctlLocks",
+        "HandoffctlRun",
+        "HandoffctlStorage",
+        "Handoffctl",
+        "HandoffctlRecovery",
+    },
 }
 MODEL_SOURCE = {
     "HandoffctlPR": "Handoffctl",
@@ -39,6 +48,12 @@ MODEL_SOURCE = {
     "OracleInteractionGates": "../oracle/OracleInteractionGates",
 }
 MODEL_CONFIG = {"OracleInteractionGates": "../oracle/OracleInteractionGates"}
+TIER_KEYS = {
+    "models", "exhaustive", "workers", "heap", "memory_max", "swap_max",
+    "address_space_max", "timeout_seconds", "containment",
+}
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+APPROVED_RUNTIME_ROOT = Path("/srv/data/projects")
 
 
 def effective_bound(name: str, default: str, boundary: str) -> str:
@@ -54,7 +69,73 @@ def effective_bound(name: str, default: str, boundary: str) -> str:
 
 
 def digest(path: Path) -> str:
+    if not path.is_file():
+        raise ValueError(f"required evidence file is missing: {path}")
     return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def read_manifest(path: Path) -> dict[str, str]:
+    """Read and validate the bounded runner outcome manifest."""
+    outcomes: dict[str, str] = {}
+    try:
+        lines = path.read_text(encoding="utf-8").splitlines()
+    except OSError as error:
+        raise ValueError(f"cannot read outcome manifest: {error}") from error
+    for number, line in enumerate(lines, 1):
+        fields = line.split()
+        if len(fields) != 2 or fields[1] not in {"success", "failed"}:
+            raise ValueError(f"malformed outcome manifest line {number}: expected MODEL success")
+        model, result = fields
+        if model in outcomes:
+            raise ValueError(f"duplicate outcome manifest entry for {model}")
+        outcomes[model] = result
+    if not outcomes:
+        raise ValueError("outcome manifest is empty")
+    return outcomes
+
+
+def read_tier_evidence(path: Path) -> dict[str, dict[str, object]]:
+    """Read the exact resource contract used by every formal tier."""
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as error:
+        raise ValueError(f"tier evidence is unreadable or malformed: {error}") from error
+    if not isinstance(payload, dict) or set(payload) != {"schema_version", "tiers"}:
+        raise ValueError("tier evidence must contain only schema_version and tiers")
+    if payload["schema_version"] != 1 or not isinstance(payload["tiers"], dict):
+        raise ValueError("tier evidence has an unsupported schema")
+    tiers = payload["tiers"]
+    evidence_tiers = set(EXPECTED_MODELS) - {"pr-fast"}
+    if set(tiers) != evidence_tiers:
+        raise ValueError("tier evidence does not describe exactly the supported tiers")
+    for tier, entry in tiers.items():
+        if not isinstance(entry, dict) or set(entry) != TIER_KEYS:
+            raise ValueError(f"tier evidence for {tier} has unknown or missing fields")
+        models = entry["models"]
+        if not isinstance(models, list) or len(models) != len(set(models)):
+            raise ValueError(f"tier evidence for {tier} has duplicate or invalid models")
+        if set(models) != EXPECTED_MODELS[tier]:
+            raise ValueError(f"tier evidence for {tier} has an unexpected model set")
+        reduced = tier == "development-reduced"
+        capacity = tier == "full-exhaustive-capacity"
+        if entry["workers"] != (1 if reduced else 2):
+            raise ValueError(f"tier evidence for {tier} has unsupported bounds")
+        expected = (
+            ("6144m", "8G", "8G", "16G") if capacity else
+            (("1024m", "2G", "2G", "4G") if reduced else
+             ("2048m", "3G", "3G", "8G"))
+        )
+        if tuple(entry[k] for k in ("heap", "memory_max", "swap_max", "address_space_max")) != expected:
+            raise ValueError(f"tier evidence for {tier} has unsupported memory bounds")
+        expected_timeout = 900 if reduced else (7200 if tier in {"full-exhaustive", "full-exhaustive-capacity"} else 1800)
+        if entry["timeout_seconds"] != expected_timeout:
+            raise ValueError(f"tier evidence for {tier} has unsupported timeout")
+        expected_containment = "portable-timeout-prlimit" if tier == "portable-smoke" else "systemd-run-user-cgroup"
+        if entry["containment"] != expected_containment:
+            raise ValueError(f"tier evidence for {tier} has unsupported containment")
+        if entry["exhaustive"] != (tier in {"full-exhaustive", "full-exhaustive-capacity"}):
+            raise ValueError(f"tier evidence for {tier} has incorrect exhaustive flag")
+    return tiers
 
 
 def main() -> int:

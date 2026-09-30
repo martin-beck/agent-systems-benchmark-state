@@ -126,7 +126,7 @@ def contract(backend: str = "git") -> dict[str, Any]:
             "operation": {
                 "operation_id": f"{operation_id}:rollback",
                 "opcode": "backend.restore",
-                "inputs": dict(inputs),
+                "inputs": {**inputs, "target": "rollback"},
                 "timeout_seconds": 30,
                 "resources": ["coordinator-state"],
                 "preconditions": ["ready"],
