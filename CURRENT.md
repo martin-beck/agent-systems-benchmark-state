@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1536](tasks/AR-1536.md): AR-1308 capacity and preflight handoff repair | Repair AR-1308 capacity/preflight handoff after the unsigned-development fixture and approved vendor boundary are complete. | Promote after AR-1533, AR-1534 and AR-1543 are done; rerun the clean unsigned-development diagnostic preflight and record a sanitized handoff. AR-1531 exact formal inputs remain separate optional formal work and cannot block development. | coordinator-ar1536-development-20260930 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |

@@ -2810,11 +2810,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | coordinator-ar1536-development-20260930 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Repair AR-1308 capacity/preflight handoff after the unsigned-development fixture and approved vendor boundary are complete. |
@@ -3641,7 +3641,7 @@ flowchart LR
         AR_1533["AR-1533 - Done"]:::status_done
         AR_1534["AR-1534 - Done"]:::status_done
         AR_1535["AR-1535 - Blocked"]:::status_blocked
-        AR_1536["AR-1536 - In progress"]:::status_in_progress
+        AR_1536["AR-1536 - Done"]:::status_done
         AR_1537["AR-1537 - Blocked"]:::status_blocked
         AR_1538["AR-1538 - Blocked"]:::status_blocked
         AR_1539["AR-1539 - Blocked"]:::status_blocked
@@ -4911,3 +4911,5 @@ flowchart LR
     AR_1430 --> AR_1424
     AR_1433 --> AR_1446
     AR_1433 --> AR_1447
+    AR_1433 --> AR_1451
+    AR_1433 --> AR_1452
