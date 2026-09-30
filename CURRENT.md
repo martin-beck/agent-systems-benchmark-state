@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1544](tasks/AR-1544.md): State-worktree observation compatibility | Repair the coordinator v0.3.50 state-worktree observation regression required by ASB coordination and AR-1307/1308 gates. | Promote after AR-1530; compare the approved coordinator v0.3.50 project scan with ASB's state-worktree safety contract, restore bounded state-repository worktree observations through an approved coordinator release or adapter, and rerun the exact compatibility gates. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -119,7 +125,6 @@ Never edit this file directly.
 | P0 | [AR-1536](tasks/AR-1536.md): AR-1308 capacity and preflight handoff repair | Repair AR-1308 capacity/preflight handoff after the unsigned-development fixture and approved vendor boundary are complete. | Promote only after AR-1531, AR-1533, AR-1534 and AR-1543 are done; rerun clean diagnostic/formal preflight, verify every exact input and hand a terminal-ready receipt to AR-1522 or record the missing input blocker. | - |
 | P0 | [AR-1542](tasks/AR-1542.md): AR-1307 runner integration closure | Close ASB-owned AR-1307 runner regressions after the coordinator v0.3.50 compatibility repairs and prepare the formal-readiness handoff. | Promote after all dependencies are done; run the exact v0.3.50 vendor-integrated AR-1307 runner gates, repair only ASB-owned regressions, and hand a clean evidence bundle to AR-1535 or record a precise blocker. | - |
 | P0 | [AR-1543](tasks/AR-1543.md): AR-1308 QEMU integration closure | Close ASB-owned AR-1308 QEMU and preflight regressions after coordinator v0.3.50 compatibility repairs and prepare the capacity handoff. | Promote after all dependencies are done; run the exact v0.3.50 vendor-integrated AR-1308 QEMU and preflight gates, repair only ASB-owned regressions, and hand a clean receipt to AR-1536 or record a precise blocker. | - |
-| P0 | [AR-1544](tasks/AR-1544.md): State-worktree observation compatibility | Repair the coordinator v0.3.50 state-worktree observation regression required by ASB coordination and AR-1307/1308 gates. | Promote after AR-1530; compare the approved coordinator v0.3.50 project scan with ASB's state-worktree safety contract, restore bounded state-repository worktree observations through an approved coordinator release or adapter, and rerun the exact compatibility gates. | - |
 | P1 | [AR-0808](tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. | - |
 | P1 | [AR-0809](tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. | - |
 | P1 | [AR-0810](tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project's GitHub Pages site. | - |
