@@ -87,6 +87,12 @@
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1550](../tasks/AR-1550.md): Compatibility blocker graph reconciliation | asb-ar1550-graph-reconcile-20260930 | Reconcile stale compatibility blocker records after AR-1549 without claiming formal qualification. | Promote and claim; reconcile stale AR-1534/1540/1541/1544 blocker metadata with the verified v0.3.53 receipts, preserving historical failure evidence. |
 
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1532](../tasks/AR-1532.md): AR-1307 unsigned-development runner repair | Unclaimed | Repair and independently qualify the provider-free unsigned-development runner path associated with AR-1307 without changing formal limits or evidence gates. | Promote and claim; rerun the provider-free unsigned-development AR-1307 runner path on the v0.3.53-compatible state, then record non-qualifying evidence. |
+
 ### Blocked (83)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -175,7 +181,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (54)
+### Planned (53)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -194,7 +200,6 @@
 | P0 | [AR-1170](../tasks/AR-1170.md): Standalone TUI wizard | Unclaimed | Guide TUI setup through analysis. | Read the plan. |
 | P0 | [AR-1180](../tasks/AR-1180.md): Cross-project wizard qualification | Unclaimed | Qualify the complete wizard. | Read the plan. |
 | P0 | [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Unclaimed | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. |
-| P0 | [AR-1532](../tasks/AR-1532.md): AR-1307 unsigned-development runner repair | Unclaimed | Repair and independently qualify the provider-free unsigned-development runner path associated with AR-1307 without changing formal limits or evidence gates. | Promote and claim; rerun the provider-free unsigned-development AR-1307 runner path on the v0.3.53-compatible state, then record non-qualifying evidence. |
 | P0 | [AR-1533](../tasks/AR-1533.md): AR-1308 unsigned-development QEMU fixture repair | Unclaimed | Repair the provider-free unsigned-development QEMU fixture for AR-1308 and make its diagnostics, cleanup and non-qualification boundary reliable. | Promote and claim; rerun the provider-free unsigned-development AR-1308 QEMU fixture on the v0.3.53-compatible state and preserve qualification_authorized=false. |
 | P0 | [AR-1535](../tasks/AR-1535.md): AR-1307 formal-readiness handoff repair | Unclaimed | Reconcile AR-1307&#x27;s repaired development runner with the formal qualification handoff after the approved vendor release. | Promote only after AR-1532, AR-1534 and AR-1542 are done; rerun exact-head vendor/state gates, audit AR-1307 formal-input readiness, and hand an exact sanitized bundle to AR-1522 or record the missing external input without substituting it. |
 | P0 | [AR-1536](../tasks/AR-1536.md): AR-1308 capacity and preflight handoff repair | Unclaimed | Repair AR-1308 capacity/preflight handoff after the unsigned-development fixture and approved vendor boundary are complete. | Promote only after AR-1531, AR-1533, AR-1534 and AR-1543 are done; rerun clean diagnostic/formal preflight, verify every exact input and hand a terminal-ready receipt to AR-1522 or record the missing input blocker. |

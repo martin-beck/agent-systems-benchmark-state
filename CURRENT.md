@@ -9,6 +9,12 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1550](tasks/AR-1550.md): Compatibility blocker graph reconciliation | Reconcile stale compatibility blocker records after AR-1549 without claiming formal qualification. | Promote and claim; reconcile stale AR-1534/1540/1541/1544 blocker metadata with the verified v0.3.53 receipts, preserving historical failure evidence. | asb-ar1550-graph-reconcile-20260930 |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1532](tasks/AR-1532.md): AR-1307 unsigned-development runner repair | Repair and independently qualify the provider-free unsigned-development runner path associated with AR-1307 without changing formal limits or evidence gates. | Promote and claim; rerun the provider-free unsigned-development AR-1307 runner path on the v0.3.53-compatible state, then record non-qualifying evidence. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -116,7 +122,6 @@ Never edit this file directly.
 | P0 | [AR-1170](tasks/AR-1170.md): Standalone TUI wizard | Guide TUI setup through analysis. | Read the plan. | - |
 | P0 | [AR-1180](tasks/AR-1180.md): Cross-project wizard qualification | Qualify the complete wizard. | Read the plan. | - |
 | P0 | [AR-1227](tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. | - |
-| P0 | [AR-1532](tasks/AR-1532.md): AR-1307 unsigned-development runner repair | Repair and independently qualify the provider-free unsigned-development runner path associated with AR-1307 without changing formal limits or evidence gates. | Promote and claim; rerun the provider-free unsigned-development AR-1307 runner path on the v0.3.53-compatible state, then record non-qualifying evidence. | - |
 | P0 | [AR-1533](tasks/AR-1533.md): AR-1308 unsigned-development QEMU fixture repair | Repair the provider-free unsigned-development QEMU fixture for AR-1308 and make its diagnostics, cleanup and non-qualification boundary reliable. | Promote and claim; rerun the provider-free unsigned-development AR-1308 QEMU fixture on the v0.3.53-compatible state and preserve qualification_authorized=false. | - |
 | P0 | [AR-1535](tasks/AR-1535.md): AR-1307 formal-readiness handoff repair | Reconcile AR-1307's repaired development runner with the formal qualification handoff after the approved vendor release. | Promote only after AR-1532, AR-1534 and AR-1542 are done; rerun exact-head vendor/state gates, audit AR-1307 formal-input readiness, and hand an exact sanitized bundle to AR-1522 or record the missing external input without substituting it. | - |
 | P0 | [AR-1536](tasks/AR-1536.md): AR-1308 capacity and preflight handoff repair | Repair AR-1308 capacity/preflight handoff after the unsigned-development fixture and approved vendor boundary are complete. | Promote only after AR-1531, AR-1533, AR-1534 and AR-1543 are done; rerun clean diagnostic/formal preflight, verify every exact input and hand a terminal-ready receipt to AR-1522 or record the missing input blocker. | - |
