@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/martin-beck/agent-workflow-coordinator/schema/session-record.schema.json",
+  "title": "Durable work-session snapshot",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "task", "task_revision", "recorded_at", "trigger", "status", "context_digest", "step_state", "artifact_refs", "next_action"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "task": {"type": "string", "pattern": "^AR-[0-9]{4}$"},
+    "task_revision": {"type": "integer", "minimum": 1},
+    "recorded_at": {"type": "string", "minLength": 1},
+    "trigger": {"enum": ["update", "run"]},
+    "status": {"type": "string", "minLength": 1},
+    "context_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+    "step_state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "task_revision"],
+      "properties": {
+        "status": {"type": "string", "minLength": 1},
+        "task_revision": {"type": "integer", "minimum": 1}
+      }
+    },
+    "artifact_refs": {"type": "array", "items": {"type": "string", "minLength": 1}, "maxItems": 8},
+    "next_action": {"type": "string", "maxLength": 1024}
+  }
+}

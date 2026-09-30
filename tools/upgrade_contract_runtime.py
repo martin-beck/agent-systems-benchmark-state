@@ -28,6 +28,7 @@ INPUT_FIELDS = {
     "fencing_token",
     "backup_operation_id",
 }
+ROLLBACK_INPUT_FIELDS = INPUT_FIELDS | {"target"}
 _TOP_FIELDS = {
     "schema_version",
     "operation_id",
@@ -44,10 +45,10 @@ _RELEASE_FIELDS = {
     "source_commit",
     "tag_ref",
     "tag_object",
-    "signature_sha256",
     "trust_policy_sha256",
     "vendor_manifest_sha256",
 }
+_OPTIONAL_RELEASE_FIELDS = {"signature_sha256"}
 _OPERATION_FIELDS = {
     "operation_id",
     "opcode",
@@ -107,14 +108,21 @@ def _unique_objects(value: list[object], label: str) -> None:
 
 
 def _release(value: object, label: str) -> dict[str, Any]:
-    release = _mapping(value, _RELEASE_FIELDS, label)
+    if not isinstance(value, dict) or set(value) not in (
+        _RELEASE_FIELDS,
+        _RELEASE_FIELDS | _OPTIONAL_RELEASE_FIELDS,
+    ):
+        raise RuntimeContractError(f"{label} fields are invalid")
+    release = value
     version = _matches(release["version"], _VERSION, f"{label} version")
     _matches(release["source_commit"], _COMMIT, f"{label} source commit")
     _matches(release["tag_object"], _COMMIT, f"{label} tag object")
     if release["tag_ref"] != f"refs/tags/{version}":
         raise RuntimeContractError(f"{label} tag reference is invalid")
-    for field in ("signature_sha256", "trust_policy_sha256", "vendor_manifest_sha256"):
+    for field in ("trust_policy_sha256", "vendor_manifest_sha256"):
         _matches(release[field], _DIGEST, f"{label} {field}")
+    if "signature_sha256" in release:
+        _matches(release["signature_sha256"], _DIGEST, f"{label} signature digest")
     return release
 
 
@@ -136,8 +144,14 @@ def _check(value: object) -> None:
         _string_list(check[field], f"precondition {field}")
 
 
-def _inputs(value: object, backend: str, operation_id: str) -> dict[str, Any]:
-    inputs = _mapping(value, INPUT_FIELDS, "operation inputs")
+def _inputs(
+    value: object, backend: str, operation_id: str, *, rollback: bool = False
+) -> dict[str, Any]:
+    inputs = _mapping(
+        value, ROLLBACK_INPUT_FIELDS if rollback else INPUT_FIELDS, "operation inputs"
+    )
+    if rollback and inputs["target"] != "rollback":
+        raise RuntimeContractError("rollback target is invalid")
     if inputs["backend"] != backend:
         raise RuntimeContractError("operation backend identity changed")
     _matches(inputs["selector_ref"], _SELECTOR, "runtime selector reference")
@@ -151,7 +165,9 @@ def _inputs(value: object, backend: str, operation_id: str) -> dict[str, Any]:
     return inputs
 
 
-def _operation(value: object, backend: str, operation_id: str) -> dict[str, Any]:
+def _operation(
+    value: object, backend: str, operation_id: str, *, rollback: bool = False
+) -> dict[str, Any]:
     operation = _mapping(value, _OPERATION_FIELDS, "operation")
     _matches(operation["operation_id"], _OPERATION_ID, "operation ID")
     _choice(
@@ -159,7 +175,7 @@ def _operation(value: object, backend: str, operation_id: str) -> dict[str, Any]
         {*PHASE_OPCODES.values(), "backend.restore"},
         "operation opcode",
     )
-    _inputs(operation["inputs"], backend, operation_id)
+    _inputs(operation["inputs"], backend, operation_id, rollback=rollback)
     timeout = operation["timeout_seconds"]
     if type(timeout) is not int or not 1 <= timeout <= 86400:
         raise RuntimeContractError("operation timeout is invalid")
@@ -284,11 +300,12 @@ def validate_runtime_contract(document: object) -> dict[str, Any]:  # noqa: C901
         not in {"persist-operation-id-and-reconcile", "safe-mode"}
     ):
         raise RuntimeContractError("rollback contract is invalid")
-    rollback_operation = _operation(rollback["operation"], backend, operation_id)
+    rollback_operation = _operation(rollback["operation"], backend, operation_id, rollback=True)
     if (
         rollback_operation["operation_id"] != f"{operation_id}:rollback"
         or rollback_operation["opcode"] != "backend.restore"
-        or rollback_operation["inputs"] != canonical_inputs
+        or {key: value for key, value in rollback_operation["inputs"].items() if key != "target"}
+        != canonical_inputs
     ):
         raise RuntimeContractError("rollback operation is not bound")
     return contract

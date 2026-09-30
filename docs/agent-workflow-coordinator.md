@@ -13,7 +13,7 @@ Initialization creates three tracked files:
 
 Every command after `init` verifies the profile UUID, state checkout root and origin, product
 identity from private runtime configuration, product checkout origin, and the caller's current
-working directory. Calls from another project fail before locking or reading/mutating task state.
+working directory. Calls from another project fail before locking or reading/mutating task status.
 The binding is an accidental-misuse boundary, not protection against someone who deliberately
 rewrites the coordinator source, Git history, and binding files.
 
@@ -22,6 +22,10 @@ rewrites the coordinator source, Git history, and binding files.
 - `.runtime/config.json`: ignored, mode 0600, with machine-local paths and optional push.
 - `.runtime/coordinator.sqlite3`: ignored SQLite WAL authority for default-backend projects.
 - `tasks/`: Markdown records with strict JSON front matter.
+- Hierarchical task records may set `parent_task_ref` and the reciprocal `children` list. Both
+  sides are required to name existing tasks, edges must be acyclic, and a parent cannot release
+  to `done` while any child is non-terminal. The task-record schema is
+  `schema/task-record.schema.json`.
 - `plans/`: detailed plans referenced by tasks.
 - `CURRENT.md`: deterministic compact queue; never edit directly.
 - `STATUS.md`: optional deterministic portfolio view or, for large projects, a compact index to
@@ -29,6 +33,19 @@ rewrites the coordinator source, Git history, and binding files.
   the complete graph, dependency index and AR inventory.
 - `PROJECT_STATE.md` and `WORKTREES.md`: generated live observations.
 - `coordinator.vendor.json`: upstream version, commit and SHA-256 for every vendored file.
+- `sessions/AR-####.jsonl`: bounded, content-minimized session snapshots. Each record stores
+  only a context digest, step state, safe artifact references and the next action; raw prompts,
+  logs and command output are never retained. The latest record can be replayed with
+  `tools/handoffctl snapshot --task AR-####`.
+- `checkpoints/AR-####.jsonl`: bounded task checkpoints. Each record stores task metadata,
+  artifact references, a body digest and the signed source commit; raw command output is never
+  retained. Create one with `tools/handoffctl checkpoint AR-#### --owner OWNER
+  --expected-revision REV`.
+- `rollbacks/operations.jsonl`: bounded rollback journal. Planned, restore-started, completed and
+  ambiguous states are durable; an ambiguous operation must be reconciled before retrying.
+- `directives/records.jsonl`: bounded board-directive journal. Each revision carries its authority,
+  precedence, role/task scope, lease and lifecycle. Equal-precedence overlapping active directives
+  are rejected unless they are escalated to guidance AR-0053.
 
 ## Initialize exactly once
 
@@ -80,6 +97,37 @@ tools/handoffctl release AR-0001 --owner worker-unique --status done \
 tools/handoffctl reconcile --commit --push
 tools/handoffctl doctor --live
 ```
+
+Restore a verified checkpoint only from a clean descendant product checkout:
+
+```sh
+tools/handoffctl rollback --checkpoint AR-####-r####
+tools/handoffctl rollback --checkpoint AR-####-r####
+tools/handoffctl rollback --checkpoint AR-####-r#### --reconcile
+```
+
+Create and transition a directive with exact ownership and revision fencing:
+
+These commands are currently available for the Git authority backend; AR-0083
+tracks the corresponding SQLite migration and doctor coverage.
+
+```sh
+tools/handoffctl directive create --directive-id UD-0001 --authority BOARD-001 \
+  --precedence 10 --role-scope implementer --statement "Preserve the release boundary." \
+  --owner BOARD_OWNER
+tools/handoffctl directive transition UD-0001 activate --owner BOARD_OWNER \
+  --expected-revision 1
+tools/handoffctl directive list --lifecycle active
+```
+
+An overlapping directive at the same precedence cannot become active. Supplying
+`--guidance-ref AR-0053` records it as `escalated` instead, leaving the conflict
+visible for board guidance resolution.
+
+`--reconcile` is required only after a rollback is recorded as `restore_started`
+or `ambiguous`. It may continue only when the product checkout is at the exact
+durable rollback head (or at the previously recorded pre-rollback head when no
+product commit was published); otherwise the operation remains fail-closed.
 
 Use `promote` only for `planned -> open` after dependencies complete. Use `resume` only for
 `blocked -> open` after independently verifying the external blocker. Both require the exact

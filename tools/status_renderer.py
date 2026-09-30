@@ -180,6 +180,72 @@ def _overview(tasks: list[Task], statuses: tuple[str, ...], project_title: str) 
     return lines
 
 
+def _rollup_group(meta: Meta) -> tuple[str, str]:
+    """Return safe, deterministic role/team labels without exposing task bodies."""
+    role = str(meta.get("role") or "unassigned")
+    team = str(meta.get("team") or "unassigned")
+    return role, team
+
+
+def _hierarchy_rollups(tasks: list[Task]) -> list[str]:
+    """Render company, role/team, and task drill-down projections."""
+    counts = Counter(meta["status"] for _, meta, _ in tasks)
+    lines = [
+        "",
+        "## Company hierarchy rollup",
+        "",
+        "This deterministic view contains task metadata only; raw logs, command output, and "
+        "credentials are never rendered.",
+        "",
+        "| Metric | Value |",
+        "| --- | ---: |",
+        f"| Tasks | {len(tasks)} |",
+        f"| Parent tasks | {sum(bool(meta.get('children')) for _, meta, _ in tasks)} |",
+        f"| Child tasks | {sum(bool(meta.get('parent_task_ref')) for _, meta, _ in tasks)} |",
+        f"| Open or active | {counts['open'] + counts['in_progress']} |",
+        f"| Blocked | {counts['blocked']} |",
+        "",
+        "## Role and team rollup",
+        "",
+        "| Role | Team | Tasks | Open/active | Blocked | Done |",
+        "| --- | --- | ---: | ---: | ---: | ---: |",
+    ]
+    groups: dict[tuple[str, str], list[Meta]] = {}
+    for _, meta, _ in tasks:
+        groups.setdefault(_rollup_group(meta), []).append(meta)
+    for (role, team), members in sorted(groups.items()):
+        group_counts = Counter(item["status"] for item in members)
+        lines.append(
+            f"| {_plain(role)} | {_plain(team)} | {len(members)} | "
+            f"{group_counts['open'] + group_counts['in_progress']} | "
+            f"{group_counts['blocked']} | {group_counts['done']} |"
+        )
+    lines.extend(["", "## Task drill-down", ""])
+    for _, meta, _ in sorted(tasks, key=lambda task: task[1]["id"]):
+        children = ", ".join(sorted(str(item) for item in meta.get("children", []))) or "None"
+        parent = str(meta.get("parent_task_ref") or "None")
+        role, team = _rollup_group(meta)
+        lines.extend(
+            [
+                f"### {_plain(meta['id'])} — {_plain(meta['title'])}",
+                "",
+                "| Field | Value |",
+                "| --- | --- |",
+                f"| Status | {_plain(meta['status'])} |",
+                f"| Priority | {_plain(meta['priority'])} |",
+                f"| Role | {_plain(role)} |",
+                f"| Team | {_plain(team)} |",
+                f"| Owner | {_plain(meta.get('owner') or 'Unclaimed')} |",
+                f"| Parent | {_plain(parent)} |",
+                f"| Children | {_plain(children)} |",
+                f"| Summary | {_plain(meta['summary'])} |",
+                f"| Next action | {_plain(meta['next_action'])} |",
+                "",
+            ]
+        )
+    return lines
+
+
 def _graph_data(tasks: list[Task]) -> tuple[dict[str, list[str]], list[tuple[str, str]]]:
     reverse: dict[str, list[str]] = {meta["id"]: [] for _, meta, _ in tasks}
     edges: list[tuple[str, str]] = []
@@ -300,6 +366,7 @@ def render_status(
     filenames = _validated_filenames(tasks, statuses, priorities)
     reverse, edges = _graph_data(tasks)
     lines = _overview(tasks, statuses, project_title)
+    lines.extend(_hierarchy_rollups(tasks))
     lines.extend(_graph(tasks, statuses, edges))
     lines.extend(_dependencies(tasks, filenames, reverse))
     lines.extend(_inventory(tasks, statuses, priorities, filenames))
@@ -310,7 +377,11 @@ def _status_index(full: str, page_names: list[str]) -> str:
     """Return a compact root index for a status view split across pages."""
     lines = full.splitlines()
     overview_end = next(
-        (index for index, line in enumerate(lines) if line == "## Dependency graph"),
+        (
+            index
+            for index, line in enumerate(lines)
+            if line in {"## Company hierarchy rollup", "## Dependency graph"}
+        ),
         len(lines),
     )
     overview = lines[:overview_end]

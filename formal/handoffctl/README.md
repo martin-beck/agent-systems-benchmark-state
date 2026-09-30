@@ -12,10 +12,10 @@ records the largest finite process, task, actor, project, worktree, and revision
 their checked configurations. Each `.cfg` file remains authoritative for the exact bound of its
 model.
 
-The correspondence classification is `not-proven`. Passing TLC establishes the invariants and
+The correspondence classification is `best-effort`. Passing TLC establishes the invariants and
 temporal properties below only for the tracked TLA+ specifications under those finite bounds and
 assumptions. The implementation tests are separate evidence that selected Python behavior
-corresponds to the abstractions; neither evidence source proves implementation refinement or the
+corresponds to the abstractions; neither evidence source claims or requires implementation refinement or the
 correctness of Python, Git, SQLite, operating-system, kernel, filesystem, or arbitrary wrapped
 commands. The explicit assumptions, non-claims, and limitations in `formal/evidence.json` are part
 of this contract and must remain aligned with the configurations and runner.
@@ -23,20 +23,24 @@ of this contract and must remain aligned with the configurations and runner.
 ## Transition contract
 
 Every accepted lifecycle command increments `task_revision` exactly once and validates the result.
+Task hierarchy edges are reciprocal and acyclic; the bounded lifecycle model includes one parent
+with one child and rejects `release --status done` while that child is non-terminal. The Python
+validator additionally checks arbitrary task graphs and migration preservation.
 For Git authority, the task and generated projections update under the same repository lock and a
 detected pre-commit failure restores them. For SQLite authority, one database transaction commits
 the task first and generated projections are recoverable output. A rejected command leaves
-authoritative revision, task state and owner unchanged.
+authoritative revision, task status and owner unchanged.
 
 | Command | Required source | Required actor/revision | Result |
 | --- | --- | --- | --- |
 | `promote` | `planned`, unowned, dependencies done | exact revision | `open` |
-| `resume` | `blocked`, unowned | exact revision | `open` |
+| `pause` | `in_progress`, owned | exact revision and owner | `blocked`, ownership and lease cleared |
+| `resume` | `blocked`, unowned, paused session | exact revision and session reference | `open` |
 | `claim` | `open`, dependencies done | owner has no active task | `in_progress`, lease set |
 | `heartbeat` | `in_progress` | current owner, positive lease | lease renewed |
 | `update` | `in_progress` | current owner, exact revision | active fields updated |
 | `release` | `in_progress` | current owner | chosen non-active state, owner and lease cleared |
-| `recover-expired` | expired `in_progress` | exact revision | `open`, ownership cleared |
+| `recover-expired` | expired `in_progress` with a valid session | exact revision | `open`, ownership cleared, session restored |
 | `run` record | `in_progress`, unexpired | owner and current revision | bounded result recorded |
 
 `release --status` currently accepts every schema status other than
@@ -85,6 +89,7 @@ readers, a competing writer, and bounded lock-wait timeout. TLC checks:
 - coherent ownership and at most one active task per actor;
 - no lost or duplicate accepted mutation through exact revision accounting;
 - atomic task/projection revision advancement and rollback;
+- reciprocal, bounded acyclic parent/child edges and done-rollup admission;
 - rejection of invalid source, owner, dependency, and revision combinations;
 - timeout without state mutation when another process holds the lock;
 - acceptance of eligible recovery despite simultaneous expiries and an unrelated repository
@@ -160,10 +165,6 @@ the JAR or modify coordinator state.
 
 Formal tiers are explicit: `verify.sh --tier portable-smoke` runs one model
 and is non-exhaustive; it cannot produce publication or full evidence.
-`verify.sh --tier development-reduced` runs the bounded Binding and Recovery
-models with a 900-second, 1-worker, 2G/2G/4G contract. It is an offline,
-provider-free development diagnostic and explicitly cannot emit full-tier or
-publication qualification evidence.
 `verify.sh --tier pr-publication` checks every invariant family. Five models
 use their full configurations; the general lifecycle model uses the
 one-process `HandoffctlPR.cfg`, while the separate lock and recovery models
@@ -174,10 +175,11 @@ scheduled weekly or manually dispatched gate. A release claim requires its
 fresh exact-head full attestation; neither smaller tier substitutes for it.
 
 Each model is executed through `tools/tlc_runner.py`, never directly through
-TLC. The runner uses finite workers (`2`), a `2048m` heap for cgroup-contained
-publication runs, a `512m` heap for hosted smoke, CPU quota (`200%`), process
-limit (`64`), a 1200-second PR or 6000-second weekly per-model deadline, and
-cgroup memory/swap limits (`3G`/`3G`). A canonical host-wide admission lock prevents
+TLC. The runner uses finite workers (`2`), a `4096m` heap for cgroup-contained
+same-repository publication and weekly runs, a `512m` heap for hosted smoke, CPU
+quota (`200%`), process limit (`64`), a 1200-second ordinary PR or 6000-second
+release-sensitive/weekly per-model deadline, and cgroup memory/swap limits (`6G`/`6G`) for contained runs
+and (`3G`/`3G`) for hosted smoke. A canonical host-wide admission lock prevents
 multiple formal jobs from competing for memory while leaving coordinator worker
 processes and leases untouched. A durable per-job queue record survives caller
 death for stale-job recovery; completed, failed, and canceled outcomes retain
@@ -196,7 +198,3 @@ This option is intentionally CLI-only; there is no environment override. The che
 `formal/handoffctl/verify.sh` workflow never supplies it and therefore cannot silently replace
 canonical publication admission. An isolated run is local diagnostic evidence only and must not be
 reported as a canonical publication or weekly full attestation.
-The separate `full-exhaustive-capacity` tier uses the same six configurations with
-the reviewed capacity contract (`6144m` heap, `8G` memory, `8G` swap, and `16G`
-address space). Its attestation is distinct and cannot qualify AR-1307's
-`full-exhaustive` tier.

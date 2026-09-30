@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agent-workflow.example/schema/rollback-record.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "operation_id", "checkpoint", "task", "source_commit", "current_commit", "rollback_commit", "recorded_at", "status", "revision"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "operation_id": {"type": "string", "format": "uuid"},
+    "checkpoint": {"type": "string", "pattern": "^AR-[0-9]{4}-r[0-9]{4}$"},
+    "task": {"type": "string", "pattern": "^AR-[0-9]{4}$"},
+    "source_commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "current_commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "rollback_commit": {"type": "string", "anyOf": [{"const": ""}, {"pattern": "^[0-9a-f]{40}$"}]},
+    "recorded_at": {"type": "string", "minLength": 1},
+    "status": {"enum": ["planned", "restore_started", "rollback_completed", "ambiguous"]},
+    "revision": {"type": "integer", "minimum": 1}
+  }
+}

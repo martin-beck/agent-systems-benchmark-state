@@ -1,60 +1,53 @@
 {
   "schema_version": 1,
-  "tiers": {
-    "development-reduced": {
-      "models": ["HandoffctlBinding", "HandoffctlRecovery"],
-      "exhaustive": false,
-      "workers": 1,
-      "heap": "1024m",
-      "memory_max": "2G",
-      "swap_max": "2G",
-      "address_space_max": "4G",
-      "timeout_seconds": 900,
-      "containment": "systemd-run-user-cgroup"
-    },
+  "profiles": {
     "portable-smoke": {
-      "models": ["HandoffctlBinding"],
       "exhaustive": false,
-      "workers": 2,
-      "heap": "2048m",
-      "memory_max": "3G",
-      "swap_max": "3G",
-      "address_space_max": "8G",
-      "timeout_seconds": 1800,
-      "containment": "portable-timeout-prlimit"
+      "models": ["HandoffctlBinding"],
+      "claims": "smoke-only; no full formal evidence or release attestation"
+    },
+    "pr-fast": {
+      "exhaustive": false,
+      "models": ["HandoffctlFast", "OracleInteractionGates"],
+      "claims": "required bounded safety-only merge gate; no liveness, full formal evidence, or release attestation"
     },
     "pr-publication": {
-      "models": ["HandoffctlBinding", "HandoffctlLocks", "HandoffctlRun", "HandoffctlStorage", "HandoffctlPR", "HandoffctlRecovery"],
       "exhaustive": false,
-      "workers": 2,
-      "heap": "2048m",
-      "memory_max": "3G",
-      "swap_max": "3G",
-      "address_space_max": "8G",
-      "timeout_seconds": 1800,
-      "containment": "systemd-run-user-cgroup"
+      "models": [
+        "HandoffctlBinding",
+        "HandoffctlLocks",
+        "HandoffctlRun",
+        "HandoffctlStorage",
+        "HandoffctlPR",
+        "HandoffctlRecovery"
+      ],
+      "claims": "all invariant families with bounded lifecycle coverage; no full two-process lifecycle cross-product or release attestation"
     },
     "full-exhaustive": {
-      "models": ["HandoffctlBinding", "HandoffctlLocks", "HandoffctlRun", "HandoffctlStorage", "Handoffctl", "HandoffctlRecovery"],
       "exhaustive": true,
-      "workers": 2,
-      "heap": "2048m",
-      "memory_max": "3G",
-      "swap_max": "3G",
-      "address_space_max": "8G",
-      "timeout_seconds": 7200,
-      "containment": "systemd-run-user-cgroup"
-    },
-    "full-exhaustive-capacity": {
-      "models": ["HandoffctlBinding", "HandoffctlLocks", "HandoffctlRun", "HandoffctlStorage", "Handoffctl", "HandoffctlRecovery"],
-      "exhaustive": true,
-      "workers": 2,
-      "heap": "6144m",
-      "memory_max": "8G",
-      "swap_max": "8G",
-      "address_space_max": "16G",
-      "timeout_seconds": 7200,
-      "containment": "systemd-run-user-cgroup"
+      "models": [
+        "HandoffctlBinding",
+        "HandoffctlLocks",
+        "HandoffctlRun",
+        "HandoffctlStorage",
+        "Handoffctl",
+        "HandoffctlRecovery"
+      ],
+      "claims": "all tracked models, configurations, invariants, and liveness properties"
     }
-  }
+  },
+  "required_full_inputs": [
+    "formal/handoffctl/verify.sh",
+    "formal/handoffctl/*.tla",
+    "formal/handoffctl/*.cfg",
+    "tools/tlc_runner.py",
+    "formal/evidence.json",
+    "formal/tier-evidence.json"
+  ],
+  "non_claims": [
+    "portable-smoke does not prove exhaustive model coverage",
+    "pr-publication does not prove the full two-process lifecycle cross-product",
+    "portable address-space limits are not equivalent to cgroup RSS or swap accounting",
+    "neither tier proves implementation correspondence"
+  ]
 }

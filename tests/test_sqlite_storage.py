@@ -15,12 +15,14 @@ import sys
 import time
 import unittest
 from collections.abc import Callable
+from contextlib import closing
 from pathlib import Path
 from tempfile import TemporaryDirectory
 from typing import Any, Literal
 from unittest.mock import patch
 
 from tools.sqlite_storage import (
+    SQLiteAuthorityBinding,
     SQLiteBackend,
     StorageContentionError,
     _translate,
@@ -156,15 +158,70 @@ def revision_stress_worker(
 
 
 class SQLiteStorageTest(unittest.TestCase):
+    def test_authority_sidecar_descriptor_failures_are_fail_closed(self) -> None:
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            root.chmod(0o700)
+            authority = root / "authority.sqlite"
+            authority.write_bytes(b"authority")
+            parent = os.open(root, os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW)
+            try:
+                with self.assertRaisesRegex(RuntimeError, "sidecar is unavailable"):
+                    SQLiteAuthorityBinding._open_retained(parent, "missing-wal", "sidecar")
+
+                hardlink_source = root / "hardlink-source"
+                hardlink_source.write_bytes(b"unsafe")
+                os.link(hardlink_source, root / "unsafe-wal")
+                with self.assertRaisesRegex(RuntimeError, "sidecar is unsafe"):
+                    SQLiteAuthorityBinding._open_retained(parent, "unsafe-wal", "sidecar")
+
+                retained = root / "retained-wal"
+                retained.write_bytes(b"retained")
+                retained.chmod(0o600)
+                descriptor, identity = SQLiteAuthorityBinding._open_retained(
+                    parent, retained.name, "sidecar"
+                )
+                try:
+                    retained.unlink()
+                    with self.assertRaisesRegex(RuntimeError, "sidecar is unavailable"):
+                        SQLiteAuthorityBinding._assert_retained(
+                            parent, retained.name, descriptor, identity, "sidecar"
+                        )
+                    retained.write_bytes(b"replacement")
+                    retained.chmod(0o600)
+                    with self.assertRaisesRegex(RuntimeError, "sidecar identity changed"):
+                        SQLiteAuthorityBinding._assert_retained(
+                            parent, retained.name, descriptor, identity, "sidecar"
+                        )
+                    retained.chmod(0o644)
+                    with self.assertRaisesRegex(RuntimeError, "sidecar identity changed"):
+                        SQLiteAuthorityBinding._assert_retained(
+                            parent, retained.name, descriptor, identity, "sidecar"
+                        )
+                finally:
+                    os.close(descriptor)
+
+                with self.assertRaisesRegex(RuntimeError, "sidecar is unavailable"):
+                    SQLiteAuthorityBinding._open_sidecar_set(parent, authority)
+            finally:
+                os.close(parent)
+
+    def test_retained_authority_parent_identity_rejects_ancestor_replacement(self) -> None:
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            authority = root / "authority.sqlite"
+            authority.write_bytes(b"authority")
+            parent = root.stat()
+            with self.assertRaisesRegex(RuntimeError, "parent identity changed"):
+                SQLiteAuthorityBinding._assert_parent_identity(
+                    authority, (parent.st_dev, parent.st_ino), (parent.st_dev, parent.st_ino + 1)
+                )
+
     def setUp(self) -> None:
         self.temporary = TemporaryDirectory()
         self.root = Path(self.temporary.name)
         self.tasks = self.root / "tasks"
         self.tasks.mkdir()
-        # v0.3.50's owner-only fence provisions beneath the runtime root;
-        # create the isolated parent explicitly instead of relying on a
-        # process-global project runtime.
-        (self.root / ".runtime").mkdir()
         self.database = self.root / ".runtime/coordinator.sqlite3"
 
     def tearDown(self) -> None:
@@ -192,6 +249,12 @@ class SQLiteStorageTest(unittest.TestCase):
         CORE.PROJECT_CONFIG = self.root / ".handoffctl.json"
         CORE.BINDING = self.root / "coordinator.binding.json"
         CORE.BACKEND_CONFIG = self.root / "coordinator.backend.json"
+        CORE.CONTROL_DATABASE = CORE.RUNTIME / "coordinator.control.sqlite3"
+        CORE.AUTHORITY_MARKER = CORE.RUNTIME / "coordinator.authority-marker.json"
+        CORE.AUTHORITY_LIFECYCLE = CORE.RUNTIME / "coordinator.authority-lifecycle.json"
+        CORE.AUTHORITY_LOCK = CORE.RUNTIME / "coordinator.authority.lock"
+        CORE.CONTROL_BINDING = CORE.RUNTIME / "coordinator.control-binding.json"
+        CORE.CONTROL_LOCK = CORE.RUNTIME / ".coordinator.control.sqlite3.lock"
         CORE.DATABASE = self.database
         CORE.PROJECT_CONFIG.write_text(
             json.dumps(
@@ -515,9 +578,75 @@ class SQLiteStorageTest(unittest.TestCase):
         with self.assertRaisesRegex(RuntimeError, "already uses"):
             CORE.cmd_migrate(argparse.Namespace(to="git"))
 
+    def test_migration_preserves_hierarchy_session_and_checkpoint_records(self) -> None:
+        self.configure_core()
+        parent = task("AR-0001")
+        child = task("AR-0002")
+        parent[1]["children"] = ["AR-0002"]
+        child[1]["parent_task_ref"] = "AR-0001"
+        self.write_git_tasks([parent, child])
+        CORE.append_session_record(
+            self.root,
+            CORE.build_session_record(parent[1], "update", "2026-09-08T00:02:00+00:00"),
+        )
+        CORE.append_checkpoint(
+            self.root,
+            CORE.build_checkpoint(parent[1], parent[2], "a" * 40, "2026-09-08T00:03:00+00:00"),
+        )
+        with (
+            patch.object(CORE, "sync_replica_before_write"),
+            patch.object(
+                CORE,
+                "run",
+                return_value=subprocess.CompletedProcess([], 0, "b" * 40 + "\n", ""),
+            ),
+            patch("builtins.print"),
+        ):
+            CORE.cmd_migrate(argparse.Namespace(to="sqlite"))
+        backend = SQLiteBackend(self.database, BINDING, self.tasks)
+        self.assertEqual(["AR-0002"], backend.load_tasks()[0][1]["children"])
+        self.assertEqual(1, len(backend.load_session_records()))
+        self.assertEqual(1, len(backend.load_checkpoint_records()))
+        with patch("builtins.print"):
+            CORE.cmd_migrate(argparse.Namespace(to="git"))
+        self.assertEqual(1, len(CORE.storage_backend().load_session_records()))
+        self.assertEqual(1, len(CORE.storage_backend().load_checkpoint_records()))
+
     def test_sqlite_cli_lifecycle_uses_same_transition_contract(self) -> None:
         self.configure_core(backend="sqlite")
-        self.create()
+        task_path, task_meta, task_body = task("AR-0001")
+        task_meta.update(
+            {
+                "spec_ref": "spec.json",
+                "spec_revision": 1,
+                "spec_acceptance": {
+                    "spec_ref": "spec.json",
+                    "spec_revision": 1,
+                    "status": "pass",
+                    "evidence_class": "contract-test",
+                    "evidence_ref": "awq/evidence/AR-0001",
+                    "evidence_digest": "sha256:" + "c" * 64,
+                },
+            }
+        )
+        self.create([(task_path, task_meta, task_body)])
+        (self.root / "spec.json").write_text(
+            json.dumps(
+                {
+                    "schema_version": 1,
+                    "spec_ref": "spec.json",
+                    "spec_revision": 1,
+                    "acceptance_predicates": [{"id": "predicate", "description": "pass"}],
+                    "definition_of_done": ["pass"],
+                    "inputs": [{"id": "input", "description": "input"}],
+                    "outputs": [{"id": "output", "description": "output"}],
+                    "allowed_tools": ["source.read"],
+                    "forbidden_tools": [],
+                    "required_evidence_classes": ["contract-test"],
+                    "gates": [{"id": "gate", "description": "pass"}],
+                }
+            )
+        )
         CORE.export_sqlite_projections()
         with patch.object(CORE, "push_replica"):
             CORE.mutate(
@@ -585,6 +714,10 @@ class SQLiteStorageTest(unittest.TestCase):
     def test_sqlite_command_journal_snapshot_doctor_and_offline_reconcile(self) -> None:
         self.configure_core(backend="sqlite")
         self.create()
+        self.assertEqual([], CORE.storage_backend().load_session_records())
+        tasks = CORE.all_tasks()
+        with patch.object(CORE, "storage_backend", return_value=CORE.GitBackend()):
+            CORE.write_sqlite_projections(tasks)
         CORE.export_sqlite_projections()
         CORE.append_command_result("AR-0001", "worker", "f" * 64, 0, False)
         with patch("builtins.print") as output:
@@ -603,8 +736,20 @@ class SQLiteStorageTest(unittest.TestCase):
     def test_sqlite_run_needs_no_runtime_or_network_publication(self) -> None:
         self.configure_core(backend="sqlite")
         self.create()
+        stale = self.root / "sessions/AR-9999.jsonl"
+        stale.parent.mkdir()
+        stale.write_text("stale\n")
         CORE.export_sqlite_projections()
         CORE.mutate(argparse.Namespace(task="AR-0001", owner="worker", lease_minutes=10), "claim")
+        CORE.mutate(
+            argparse.Namespace(
+                task="AR-0001",
+                owner="worker",
+                expected_revision=2,
+                source_commit="d" * 40,
+            ),
+            "checkpoint",
+        )
         args = argparse.Namespace(
             task="AR-0001", owner="worker", timeout_seconds=5.0, command=["/bin/true"]
         )
@@ -615,7 +760,62 @@ class SQLiteStorageTest(unittest.TestCase):
         self.assertEqual(
             1, connection.execute("SELECT count(*) FROM command_results").fetchone()[0]
         )
+        self.assertEqual(
+            (1, "run"),
+            connection.execute(
+                "SELECT count(*), json_extract(record_json, '$.trigger') FROM session_records"
+            ).fetchone(),
+        )
+        self.assertEqual(
+            (1, "d" * 40),
+            connection.execute(
+                "SELECT count(*), json_extract(record_json, '$.source_commit') "
+                "FROM checkpoint_records"
+            ).fetchone(),
+        )
+        self.assertTrue((self.root / "checkpoints/AR-0001.jsonl").exists())
+        self.assertFalse(stale.exists())
+        with patch("builtins.print"):
+            CORE.cmd_snapshot("AR-0001")
         connection.close()
+
+    def test_sqlite_session_record_reader_rejects_corrupt_rows(self) -> None:
+        self.configure_core(backend="sqlite")
+        self.create()
+        connection = sqlite3.connect(self.database)
+        connection.execute(
+            "CREATE TABLE session_records(sequence INTEGER PRIMARY KEY, task_id TEXT, "
+            "task_revision INTEGER, record_json TEXT, recorded_at TEXT)"
+        )
+        connection.execute("INSERT INTO session_records VALUES (1, 'AR-0001', 2, '[]', 'now')")
+        connection.commit()
+        connection.close()
+        with self.assertRaisesRegex(RuntimeError, "invalid session record"):
+            CORE.storage_backend().load_session_records()
+        connection = sqlite3.connect(self.database)
+        connection.execute("UPDATE session_records SET record_json='not-json'")
+        connection.commit()
+        connection.close()
+        with self.assertRaisesRegex(RuntimeError, "invalid session JSON"):
+            CORE.storage_backend().load_session_records()
+
+    def test_sqlite_session_reader_translates_unexpected_database_errors(self) -> None:
+        self.configure_core(backend="sqlite")
+        self.create()
+
+        class BrokenConnection:
+            def execute(self, _query: str, _parameters: tuple[object, ...] = ()) -> Any:
+                raise sqlite3.OperationalError("database unavailable")
+
+            def close(self) -> None:
+                return None
+
+        backend = CORE.storage_backend()
+        with (
+            patch.object(backend, "_connect", return_value=BrokenConnection()),
+            self.assertRaisesRegex(RuntimeError, "database unavailable"),
+        ):
+            backend.load_session_records()
 
     def test_selector_rejects_malformed_unknown_and_mismatched_values(self) -> None:
         self.configure_core()
@@ -800,6 +1000,22 @@ class SQLiteStorageTest(unittest.TestCase):
         self.assertEqual(["AR-0001"], projected)
         with self.assertRaisesRegex(RuntimeError, "BACKEND_INACTIVE"):
             backend.load_tasks()
+
+    def test_retire_selector_failure_rolls_back_database_state(self) -> None:
+        backend = self.create()
+
+        def fail_selector() -> None:
+            raise RuntimeError("selector switch failed")
+
+        with self.assertRaisesRegex(RuntimeError, "selector switch failed"):
+            backend.retire(lambda _tasks: None, fail_selector)
+
+        self.assertEqual("open", backend.load_tasks()[0][1]["status"])
+        with closing(sqlite3.connect(self.database)) as connection, connection:
+            self.assertEqual(
+                "active",
+                connection.execute("SELECT value FROM metadata WHERE key='state'").fetchone()[0],
+            )
 
     def test_git_writer_waiting_across_backend_switch_is_fenced(self) -> None:
         self.configure_core(backend="git")

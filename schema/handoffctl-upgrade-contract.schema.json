@@ -46,13 +46,13 @@
     "release": {
       "additionalProperties": false,
       "type": "object",
-      "required": ["version", "source_commit", "tag_ref", "tag_object", "signature_sha256", "trust_policy_sha256", "vendor_manifest_sha256"],
+      "required": ["version", "source_commit", "tag_ref", "tag_object", "trust_policy_sha256", "vendor_manifest_sha256"],
       "properties": {
         "version": {"pattern": "^v[0-9]+\\.[0-9]+\\.[0-9]+$", "type": "string"},
         "source_commit": {"pattern": "^[0-9a-f]{40}$", "type": "string"},
         "tag_ref": {"pattern": "^refs/tags/v[0-9]+\\.[0-9]+\\.[0-9]+$", "type": "string"},
         "tag_object": {"pattern": "^[0-9a-f]{40}$", "type": "string"},
-        "signature_sha256": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+        "signature_sha256": {"description": "SHA-256 of the supported tag signature block, or 64 zeroes for an unsigned/lightweight tag.", "pattern": "^[0-9a-f]{64}$", "type": "string"},
         "trust_policy_sha256": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
         "vendor_manifest_sha256": {"pattern": "^[0-9a-f]{64}$", "type": "string"}
       }
@@ -110,6 +110,7 @@
         "barrier_id": {"pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$", "type": "string"},
         "fencing_token": {"pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$", "type": "string"},
         "backup_operation_id": {"pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$", "type": "string"}
+        ,"target": {"const": "rollback"}
       }
     },
     "backend": {

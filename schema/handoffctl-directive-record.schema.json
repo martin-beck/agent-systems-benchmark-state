@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/martin-beck/agent-workflow-coordinator/schema/directive-record.schema.json",
+  "title": "Coordinator user directive record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "directive_id", "authority", "precedence", "scope", "statement", "lifecycle", "revision", "owner", "claim_expires", "guidance_ref", "created_at", "updated_at"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "directive_id": {"type": "string", "pattern": "^UD-[0-9]{4}$"},
+    "authority": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._/-]{2,127}$"},
+    "precedence": {"type": "integer", "minimum": 1},
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["roles", "tasks"],
+      "properties": {
+        "roles": {"type": "array", "uniqueItems": true, "items": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._/-]{2,127}$"}},
+        "tasks": {"type": "array", "uniqueItems": true, "items": {"type": "string", "pattern": "^AR-[0-9]{4}$"}}
+      },
+      "anyOf": [{"properties": {"roles": {"minItems": 1}}}, {"properties": {"tasks": {"minItems": 1}}}]
+    },
+    "statement": {"type": "string", "minLength": 1, "maxLength": 4096, "pattern": "^[^\\n]+$"},
+    "lifecycle": {"enum": ["proposed", "active", "superseded", "revoked", "escalated"]},
+    "revision": {"type": "integer", "minimum": 1},
+    "owner": {"type": "string", "pattern": "^(?:|[A-Za-z0-9][A-Za-z0-9._/-]{2,127})$"},
+    "claim_expires": {"type": "string"},
+    "guidance_ref": {"type": "string", "pattern": "^(?:|AR-0053)$"},
+    "created_at": {"type": "string", "minLength": 1},
+    "updated_at": {"type": "string", "minLength": 1}
+  }
+}
