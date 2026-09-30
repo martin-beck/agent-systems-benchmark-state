@@ -26,9 +26,9 @@ Generated from local Git and GitHub. Do not edit.
 | 36698045112 | `7aa09a0bde66` | push | Fault assurance | completed:success |
 | 36698045104 | `7aa09a0bde66` | push | Huawei MIT source headers | completed:success |
 | 36698045081 | `7aa09a0bde66` | push | Credential-free benchmark path | completed:success |
-| 36698045077 | `7aa09a0bde66` | push | Rust verification | in_progress:- |
+| 36698045077 | `7aa09a0bde66` | push | Rust verification | completed:failure |
 | 36698045072 | `7aa09a0bde66` | push | Hosted portability and native qualification | completed:success |
-| 36698045014 | `7aa09a0bde66` | push | Repository quality | in_progress:- |
+| 36698045014 | `7aa09a0bde66` | push | Repository quality | completed:success |
 | 36698044867 | `7aa09a0bde66` | push | Formal assurance | completed:success |
 | 36697657341 | `89336bee0b9d` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36697657290 | `89336bee0b9d` | pull_request | Emulated aarch64 portability | completed:success |

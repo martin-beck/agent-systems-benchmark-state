@@ -3128,6 +3128,20 @@
 | Summary | Publish the ASB release containing the dynamic plan and output-mode workflow after exact green-main verification. |
 | Next action | Promote only after the plan/output qualification and protected-main repair are released; build and publish the next ASB development release from one exact green main SHA. |
 
+### AR-1559 — Machine consumer JSON opt-in repair
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair the Rust workflow&#x27;s workload catalog JSON consumer after the human-output default change. |
+| Next action | Promote and repair machine-consuming workload-catalog checks to request --json explicitly; rerun the exact Rust workflow and post-merge checks. |
+
 
 ## Dependency graph
 
@@ -3762,6 +3776,7 @@ flowchart LR
         AR_1556["AR-1556 - Planned"]:::status_planned
         AR_1557["AR-1557 - In progress"]:::status_in_progress
         AR_1558["AR-1558 - Planned"]:::status_planned
+        AR_1559["AR-1559 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4837,26 +4852,3 @@ flowchart LR
     AR_1362 --> AR_1369
     AR_1362 --> AR_1376
     AR_1362 --> AR_1378
-    AR_1362 --> AR_1379
-    AR_1362 --> AR_1380
-    AR_1362 --> AR_1381
-    AR_1362 --> AR_1468
-    AR_1362 --> AR_1470
-    AR_1362 --> AR_1471
-    AR_1362 --> AR_1474
-    AR_1363 --> AR_1472
-    AR_1364 --> AR_1365
-    AR_1364 --> AR_1366
-    AR_1364 --> AR_1369
-    AR_1364 --> AR_1376
-    AR_1364 --> AR_1377
-    AR_1364 --> AR_1378
-    AR_1364 --> AR_1379
-    AR_1364 --> AR_1380
-    AR_1364 --> AR_1381
-    AR_1364 --> AR_1468
-    AR_1365 --> AR_1366
-    AR_1365 --> AR_1373
-    AR_1366 --> AR_1367
-    AR_1366 --> AR_1368
-    AR_1366 --> AR_1369

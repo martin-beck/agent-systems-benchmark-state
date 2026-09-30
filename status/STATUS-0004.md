@@ -1,5 +1,7 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1453](../tasks/AR-1453-frontend-orchestration-wiring.md) | [AR-1452](../tasks/AR-1452-runtime-orchestration-service.md) | [AR-1455](../tasks/AR-1455-runtime-owned-guided-replay-entrypoint.md), [AR-1457](../tasks/AR-1457-retire-superseded-pr-332.md), [AR-1458](../tasks/AR-1458-first-customer-requalification-after-orchestration.md), [AR-1523](../tasks/AR-1523.md), [AR-1524](../tasks/AR-1524.md), [AR-1525](../tasks/AR-1525.md), [AR-1526](../tasks/AR-1526.md) |
+| [AR-1454](../tasks/AR-1454-protected-main-tree-repair-runtime-replay.md) | [AR-1451](../tasks/AR-1451-central-orchestration-authority-design.md), [AR-1452](../tasks/AR-1452-runtime-orchestration-service.md) | None |
 | [AR-1455](../tasks/AR-1455-runtime-owned-guided-replay-entrypoint.md) | [AR-1448](../tasks/AR-1448-runtime-replay-authority-source.md), [AR-1450](../tasks/AR-1450-runtime-owned-local-replay-acquisition.md), [AR-1453](../tasks/AR-1453-frontend-orchestration-wiring.md) | [AR-1487](../tasks/AR-1487-owner-backed-first-customer-qualification.md), [AR-1488](../tasks/AR-1488-owner-backed-user-journey.md), [AR-1496](../tasks/AR-1496-runtime-owned-provider-capture-control.md), [AR-1526](../tasks/AR-1526.md) |
 | [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md) | [AR-1332](../tasks/AR-1332-record-live-replay-offline.md), [AR-1433](../tasks/AR-1433-runtime-mock-attempt-backend.md), [AR-1447](../tasks/AR-1447-asb-local-campaign-qualification.md) | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md), [AR-1458](../tasks/AR-1458-first-customer-requalification-after-orchestration.md), [AR-1460](../tasks/AR-1460-current-main-first-customer-requalification.md), [AR-1461](../tasks/AR-1461-first-customer-release-readiness.md), [AR-1526](../tasks/AR-1526.md) |
 | [AR-1457](../tasks/AR-1457-retire-superseded-pr-332.md) | [AR-1453](../tasks/AR-1453-frontend-orchestration-wiring.md) | [AR-1459](../tasks/AR-1459-retire-stale-state-prs.md) |
@@ -98,11 +100,12 @@
 | [AR-1551](../tasks/AR-1551-platform-authority-deployment-bootstrap.md) | [AR-1505](../tasks/AR-1505-control-plane-platform-authority.md), [AR-1513](../tasks/AR-1513-authenticated-lease-dispatch-bridge.md), [AR-1514](../tasks/AR-1514-runtime-auth-reconciliation.md) | None |
 | [AR-1552](../tasks/AR-1552.md) | None | [AR-1553](../tasks/AR-1553.md), [AR-1555](../tasks/AR-1555.md) |
 | [AR-1553](../tasks/AR-1553.md) | [AR-1552](../tasks/AR-1552.md) | [AR-1555](../tasks/AR-1555.md) |
-| [AR-1554](../tasks/AR-1554.md) | None | [AR-1555](../tasks/AR-1555.md) |
+| [AR-1554](../tasks/AR-1554.md) | None | [AR-1555](../tasks/AR-1555.md), [AR-1559](../tasks/AR-1559.md) |
 | [AR-1555](../tasks/AR-1555.md) | [AR-1552](../tasks/AR-1552.md), [AR-1553](../tasks/AR-1553.md), [AR-1554](../tasks/AR-1554.md) | [AR-1556](../tasks/AR-1556.md), [AR-1558](../tasks/AR-1558.md) |
 | [AR-1556](../tasks/AR-1556.md) | [AR-1555](../tasks/AR-1555.md) | None |
 | [AR-1557](../tasks/AR-1557.md) | None | [AR-1558](../tasks/AR-1558.md) |
 | [AR-1558](../tasks/AR-1558.md) | [AR-1555](../tasks/AR-1555.md), [AR-1557](../tasks/AR-1557.md) | None |
+| [AR-1559](../tasks/AR-1559.md) | [AR-1554](../tasks/AR-1554.md) | None |
 
 ## Complete AR inventory
 
@@ -198,7 +201,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (50)
+### Planned (51)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -221,6 +224,7 @@
 | P0 | [AR-1546](../tasks/AR-1546.md): AR-1308 formal capacity-input readiness repair | Unclaimed | Audit and repair the AR-1308 capacity/input handoff after diagnostic QEMU integration, without executing qualification. | Formal-only work: after AR-1531 and AR-1536, verify the exact 8 GiB/8 GiB fixture and AR-1308 formal inputs for AR-1522. Do not block or alter the completed unsigned-development path. |
 | P0 | [AR-1556](../tasks/AR-1556.md): Protected-main merge-topology gate repair | Unclaimed | Repair and verify the protected-main repository-quality gate after the plan/output merge series. | Promote after AR-1555 functional evidence; diagnose and repair the protected-main merge-topology gate for the plan/output series, then verify the exact current main checks. |
 | P0 | [AR-1558](../tasks/AR-1558.md): ASB plan/output release publication | Unclaimed | Publish the ASB release containing the dynamic plan and output-mode workflow after exact green-main verification. | Promote only after the plan/output qualification and protected-main repair are released; build and publish the next ASB development release from one exact green main SHA. |
+| P0 | [AR-1559](../tasks/AR-1559.md): Machine consumer JSON opt-in repair | Unclaimed | Repair the Rust workflow&#x27;s workload catalog JSON consumer after the human-output default change. | Promote and repair machine-consuming workload-catalog checks to request --json explicitly; rerun the exact Rust workflow and post-merge checks. |
 | P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
 | P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
 | P1 | [AR-0810](../tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Unclaimed | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project&#x27;s GitHub Pages site. |
@@ -526,6 +530,3 @@
 | P1 | [AR-0603](../tasks/AR-0603-csb-execution-assurance.md): Establish pinned CSB execution and conformance boundary | Unclaimed | Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary. | Completed; retain explicit Ubuntu 24.04 x86_64 support limits. |
 | P1 | [AR-0701](../tasks/AR-0701-platform-manifests.md): Pin distribution and architecture support matrix | Unclaimed | Define Ubuntu, Debian, Fedora, enterprise, openSUSE, Arch, Alpine and openEuler target manifests. | Run final coordination repository validation and live doctor, then release AR-0701 done if state and all product worktrees remain consistent. |
 | P1 | [AR-0702](../tasks/AR-0702-native-platforms.md): Validate native Linux kernels and architectures | Unclaimed | Qualify native x86_64 and required emulated AArch64 portability; track native ARM64 as optional future evidence. | Rebase PR #31, replace native ARM64 completion gates with the pinned QEMU AArch64 lane where applicable, document native ARM64 as optional future qualification, and rerun exact-head checks. |
-| P1 | [AR-0704](../tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | PR #119 exact head 4630f90 is rebased onto protected main 5ddac12. Fresh exact-head checks were absent immediately after force-push; close/reopen retriggered them. At last query all 12 checks are pending except AWQ shadow and SPDX headers pass. Wait for every required check terminal success; do not merge on partial/pending evidence. |
-| P1 | [AR-0707](../tasks/AR-0707-emulated-aarch64-portability.md): Qualify emulated aarch64 portability | Unclaimed | Add explicit emulated-aarch64 portability qualification without claiming native support. | Provide a reproducible x86_64-hosted aarch64 VM/emulation lane for userspace portability and negative qualification only. |
-| P1 | [AR-0801](../tasks/AR-0801-terminal-interface.md): Implement terminal and automation interfaces | Unclaimed | Provide doctor, plan, run, sweep, compare and report with stable JSON output. | No further AR-0801 action; preserve the verified doctor, plan, run, sweep, compare, report, and serve surface, with record and replay explicitly unsupported. |
