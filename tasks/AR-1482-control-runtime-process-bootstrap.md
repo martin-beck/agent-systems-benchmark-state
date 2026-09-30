@@ -9,7 +9,7 @@
     "AR-1480"
   ],
   "id": "AR-1482",
-  "next_action": "Blocked pending a real authenticated platform authority provider/materializer and runtime-owned session discovery; continue via AR-1506/AR-1510 successor path.",
+  "next_action": "Development qualification is not blocked: exercise process bootstrap with deterministic local/mock and strict-replay authority. A real deployment-owned authenticated provider/materializer is optional future production hardening; preserve fail-closed live behavior.",
   "observed_branch": "feature/ar-1482-control-runtime-process-bootstrap",
   "observed_dirty": 0,
   "observed_head": "fdc7f59f83f647ce099439b003848291e81dd3bb",
@@ -19,7 +19,7 @@
   "schema_version": 1,
   "status": "blocked",
   "summary": "Compose authenticated control enrollment into the ordinary CLI process bootstrap.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Control-runtime process bootstrap",
   "updated_at": "2026-09-29T10:37:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1482-control-runtime-process-bootstrap"

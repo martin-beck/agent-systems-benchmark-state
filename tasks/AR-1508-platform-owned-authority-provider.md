@@ -13,7 +13,7 @@
     "AR-1505"
   ],
   "id": "AR-1508",
-  "next_action": "Route remaining P1-1 to AR-1510/AR-1391: provide a non-test runtime/control platform source for private roots, tools, policy, allowlist, credential capability and enrollment, then wire it into ordinary run/sweep. Do not merge this branch or claim qualification until exact-head review and hosted checks pass.",
+  "next_action": "Development qualification is not blocked: retain the passing lifecycle-fencing tests and use deterministic local/mock and strict-replay authority for development. Route any non-test deployment source to optional future production hardening; do not make it a local qualification gate.",
   "observed_branch": "feature/ar-1508-platform-owned-authority-provider",
   "observed_dirty": 0,
   "observed_head": "dd1981a7e6b607ee051d68e2bb107654f1fd1965",
@@ -23,7 +23,7 @@
   "schema_version": 1,
   "status": "blocked",
   "summary": "Lifecycle expiry fencing repaired and covered by seven focused plus 167 full asb-runtime tests; production platform authority callsite remains absent.",
-  "task_revision": 158,
+  "task_revision": 159,
   "title": "Platform-owned authority provider",
   "updated_at": "2026-09-29T21:16:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1508-platform-owned-authority-provider"

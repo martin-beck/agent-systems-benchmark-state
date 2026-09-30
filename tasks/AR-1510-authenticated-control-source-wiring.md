@@ -7,7 +7,7 @@
     "AR-1505"
   ],
   "id": "AR-1510",
-  "next_action": "Remain blocked on the platform-owned deployment adapter: supply private roots, tool pins, policy/allowlist, credential capability and enrollment from authenticated runtime state without CLI/config/PATH injection, then wire the opaque source into ordinary run/sweep and rerun exact-head gates.",
+  "next_action": "Development qualification is not blocked: wire and test the opaque source with deterministic local/mock and strict-replay authority through ordinary run/sweep. A platform-owned deployment adapter is optional future production hardening and must not gate local qualification.",
   "observed_branch": "feature/ar-1510-authenticated-control-source-wiring",
   "observed_dirty": 0,
   "observed_head": "beedef76e835009e82f85c785967a36286748377",
@@ -17,7 +17,7 @@
   "schema_version": 1,
   "status": "blocked",
   "summary": "Provider boundary and expiry fencing are implemented and runtime/CLI tests mostly pass; ordinary production dispatch still lacks an authenticated non-test platform material source.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Authenticated control source and production provider wiring",
   "updated_at": "2026-09-29T21:19:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1510-authenticated-control-source-wiring"

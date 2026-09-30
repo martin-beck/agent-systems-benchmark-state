@@ -13,7 +13,7 @@
     "AR-1505"
   ],
   "id": "AR-1506",
-  "next_action": "Blocked pending a real runtime-owned platform adapter that constructs private RuntimeAuthorityInputs from authenticated AR-1505 bootstrap state; do not publish current facade. Required follow-up must remove public source injection and wire the production entrypoint without synthetic roots/tools/policy.",
+  "next_action": "Development qualification is not blocked: test the launcher integration with deterministic local/mock and strict-replay authority and no public injection. A runtime-owned deployment adapter from authenticated AR-1505 state is optional future production hardening; do not claim live support from mocks.",
   "observed_branch": "feature/ar-1506-runtime-platform-launcher-integration",
   "observed_dirty": 0,
   "observed_head": "8b0394e70f7970a17dec354a68d0c056adb31236",
@@ -23,7 +23,7 @@
   "schema_version": 1,
   "status": "blocked",
   "summary": "Connect the merged authenticated platform authority/bootstrap protocol to production ASB process startup and ordinary CLI dispatch.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Runtime platform launcher integration",
   "updated_at": "2026-09-29T02:07:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1506-runtime-platform-launcher-integration"

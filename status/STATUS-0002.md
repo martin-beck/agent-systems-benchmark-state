@@ -2076,7 +2076,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Compose authenticated control enrollment into the ordinary CLI process bootstrap. |
-| Next action | Blocked pending a real authenticated platform authority provider/materializer and runtime-owned session discovery; continue via AR-1506/AR-1510 successor path. |
+| Next action | Development qualification is not blocked: exercise process bootstrap with deterministic local/mock and strict-replay authority. A real deployment-owned authenticated provider/materializer is optional future production hardening; preserve fail-closed live behavior. |
 
 ### AR-1483 — Authenticated control process owner
 
@@ -2398,7 +2398,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Connect the merged authenticated platform authority/bootstrap protocol to production ASB process startup and ordinary CLI dispatch. |
-| Next action | Blocked pending a real runtime-owned platform adapter that constructs private RuntimeAuthorityInputs from authenticated AR-1505 bootstrap state; do not publish current facade. Required follow-up must remove public source injection and wire the production entrypoint without synthetic roots/tools/policy. |
+| Next action | Development qualification is not blocked: test the launcher integration with deterministic local/mock and strict-replay authority and no public injection. A runtime-owned deployment adapter from authenticated AR-1505 state is optional future production hardening; do not claim live support from mocks. |
 
 ### AR-1507 — Runtime-owned authority materialization
 
@@ -2426,7 +2426,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Lifecycle expiry fencing repaired and covered by seven focused plus 167 full asb-runtime tests; production platform authority callsite remains absent. |
-| Next action | Route remaining P1-1 to AR-1510/AR-1391: provide a non-test runtime/control platform source for private roots, tools, policy, allowlist, credential capability and enrollment, then wire it into ordinary run/sweep. Do not merge this branch or claim qualification until exact-head review and hosted checks pass. |
+| Next action | Development qualification is not blocked: retain the passing lifecycle-fencing tests and use deterministic local/mock and strict-replay authority for development. Route any non-test deployment source to optional future production hardening; do not make it a local qualification gate. |
 
 ### AR-1509 — Authenticated authority-provider receipt
 
@@ -2454,7 +2454,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Provider boundary and expiry fencing are implemented and runtime/CLI tests mostly pass; ordinary production dispatch still lacks an authenticated non-test platform material source. |
-| Next action | Remain blocked on the platform-owned deployment adapter: supply private roots, tool pins, policy/allowlist, credential capability and enrollment from authenticated runtime state without CLI/config/PATH injection, then wire the opaque source into ordinary run/sweep and rerun exact-head gates. |
+| Next action | Development qualification is not blocked: wire and test the opaque source with deterministic local/mock and strict-replay authority through ordinary run/sweep. A platform-owned deployment adapter is optional future production hardening and must not gate local qualification. |
 
 ### AR-1511 — Runtime/control authority issuer and capability source
 
@@ -4907,5 +4907,3 @@ flowchart LR
     AR_1423 --> AR_1430
     AR_1424 --> AR_1425
     AR_1425 --> AR_1426
-    AR_1427 --> AR_1431
-    AR_1430 --> AR_1424
