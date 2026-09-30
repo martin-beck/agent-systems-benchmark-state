@@ -2804,7 +2804,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Reconcile AR-1307&#x27;s repaired development runner with the formal qualification handoff after the approved vendor release. |
-| Next action | Blocked: an authorized external operator must provide the exact reviewed AR-1307 formal seed and matching model/JDK/TLC/source bundle; do not substitute development fixtures. Then AR-1545 audits the inputs and hands a sanitized receipt to AR-1522. |
+| Next action | Formal-only blocker: an authorized external operator must provide the exact reviewed AR-1307 seed and matching model/JDK/TLC/source bundle; do not substitute development fixtures. This does not block the completed unsigned-development path. Then AR-1545 audits the inputs for AR-1522. |
 
 ### AR-1536 — AR-1308 capacity and preflight handoff repair
 
@@ -2944,7 +2944,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Audit and repair the AR-1307 formal-input handoff after development runner integration, without executing qualification. |
-| Next action | Promote after AR-1535; inventory and independently verify every exact AR-1307 formal input, then hand a sanitized readiness receipt to AR-1522 or record the specific external-input blocker. |
+| Next action | Formal-only work: after AR-1535 supplies reviewed inputs, inventory and independently verify every exact AR-1307 formal input for AR-1522. Do not block or alter the completed unsigned-development path. |
 
 ### AR-1546 — AR-1308 formal capacity-input readiness repair
 
@@ -2958,7 +2958,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Audit and repair the AR-1308 capacity/input handoff after diagnostic QEMU integration, without executing qualification. |
-| Next action | Promote after AR-1531 and AR-1536; verify the exact 8 GiB/8 GiB fixture and every AR-1308 formal input, then hand a sanitized readiness receipt to AR-1522 or record the measured blocker. |
+| Next action | Formal-only work: after AR-1531 and AR-1536, verify the exact 8 GiB/8 GiB fixture and AR-1308 formal inputs for AR-1522. Do not block or alter the completed unsigned-development path. |
 
 ### AR-1547 — Coordinator v0.3.52 vendor adoption and compatibility rerun
 
@@ -4914,5 +4914,3 @@ flowchart LR
     AR_1433 --> AR_1451
     AR_1433 --> AR_1452
     AR_1433 --> AR_1456
-    AR_1433 --> AR_1496
-    AR_1434 --> AR_1435
