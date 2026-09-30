@@ -2908,7 +2908,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | open |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -3648,7 +3648,7 @@ flowchart LR
         AR_1540["AR-1540 - Done"]:::status_done
         AR_1541["AR-1541 - Done"]:::status_done
         AR_1542["AR-1542 - Done"]:::status_done
-        AR_1543["AR-1543 - Planned"]:::status_planned
+        AR_1543["AR-1543 - Open"]:::status_open
         AR_1544["AR-1544 - Superseded"]:::status_superseded
         AR_1545["AR-1545 - Planned"]:::status_planned
         AR_1546["AR-1546 - Planned"]:::status_planned
