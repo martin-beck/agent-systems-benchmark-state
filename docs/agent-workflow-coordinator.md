@@ -177,6 +177,12 @@ regenerates the project profile or binding. Review the full vendor diff and run 
 tests before committing. On interruption, inspect the manifest, hashes, refs, release and CI before
 retrying.
 
+The vendor boundary intentionally excludes formal qualification models,
+attestation helpers, tier evidence and launchers owned by downstream quality
+projects. Those paths remain downstream-owned and must not be overwritten by
+coordinator sync; coordinator formal models are still tested and released by
+this repository itself.
+
 ## Proof boundary
 
 The bundled TLA+ models exhaustively check bounded transition, reader/writer lock, and project
