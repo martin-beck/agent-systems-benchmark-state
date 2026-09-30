@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1552](tasks/AR-1552.md): Dynamic workload-backed plan generation | Generate benchmark plans from the canonical supported-workload catalog, including workloads added later. | Promote and claim after dependency review; implement the canonical catalog-backed workload selector and valid plan materializer. | - |
+| P0 | [AR-1552](tasks/AR-1552.md): Dynamic workload-backed plan generation | Generate benchmark plans from the canonical supported-workload catalog, including workloads added later. | Promote and claim after dependency review; implement the canonical catalog-backed workload selector and valid plan materializer. | asb-plan-command-worker |
 
 ## Blocked
 

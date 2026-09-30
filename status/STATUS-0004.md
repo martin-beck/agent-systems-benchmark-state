@@ -98,11 +98,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1552](../tasks/AR-1552.md): Dynamic workload-backed plan generation | Unclaimed | Generate benchmark plans from the canonical supported-workload catalog, including workloads added later. | Promote and claim after dependency review; implement the canonical catalog-backed workload selector and valid plan materializer. |
+| P0 | [AR-1552](../tasks/AR-1552.md): Dynamic workload-backed plan generation | asb-plan-command-worker | Generate benchmark plans from the canonical supported-workload catalog, including workloads added later. | Promote and claim after dependency review; implement the canonical catalog-backed workload selector and valid plan materializer. |
 
 ### Blocked (80)
 

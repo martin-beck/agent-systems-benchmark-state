@@ -3034,11 +3034,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | asb-plan-command-worker |
 | Parent | None |
 | Children | None |
 | Summary | Generate benchmark plans from the canonical supported-workload catalog, including workloads added later. |
@@ -3713,7 +3713,7 @@ flowchart LR
         AR_1549["AR-1549 - Done"]:::status_done
         AR_1550["AR-1550 - Done"]:::status_done
         AR_1551["AR-1551 - Cancelled"]:::status_cancelled
-        AR_1552["AR-1552 - Open"]:::status_open
+        AR_1552["AR-1552 - In progress"]:::status_in_progress
         AR_1553["AR-1553 - Planned"]:::status_planned
         AR_1554["AR-1554 - Planned"]:::status_planned
         AR_1555["AR-1555 - Planned"]:::status_planned
@@ -4886,5 +4886,3 @@ flowchart LR
     AR_1384 --> AR_1388
     AR_1384 --> AR_1389
     AR_1385 --> AR_1386
-    AR_1385 --> AR_1387
-    AR_1385 --> AR_1388
