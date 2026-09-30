@@ -98,11 +98,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1555](../tasks/AR-1555.md): Plan and output workflow qualification | Unclaimed | Qualify plan creation and output modes as one simple ASB user journey. | Promote after AR-1552, AR-1553 and AR-1554; run cross-command qualification and publish the user workflow. |
+| P0 | [AR-1555](../tasks/AR-1555.md): Plan and output workflow qualification | asb-plan-command-worker | Qualify plan creation and output modes as one simple ASB user journey. | Promote after AR-1552, AR-1553 and AR-1554; run cross-command qualification and publish the user workflow. |
 
 ### Blocked (80)
 

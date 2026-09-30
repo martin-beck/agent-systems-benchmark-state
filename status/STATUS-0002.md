@@ -3076,11 +3076,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | asb-plan-command-worker |
 | Parent | None |
 | Children | None |
 | Summary | Qualify plan creation and output modes as one simple ASB user journey. |
@@ -3716,7 +3716,7 @@ flowchart LR
         AR_1552["AR-1552 - Done"]:::status_done
         AR_1553["AR-1553 - Done"]:::status_done
         AR_1554["AR-1554 - Done"]:::status_done
-        AR_1555["AR-1555 - Open"]:::status_open
+        AR_1555["AR-1555 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4891,4 +4891,3 @@ flowchart LR
     AR_1385 --> AR_1390
     AR_1385 --> AR_1391
     AR_1385 --> AR_1392
-    AR_1385 --> AR_1393
