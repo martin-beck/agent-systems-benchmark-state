@@ -3104,11 +3104,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | asb-signature-repair-worker |
 | Parent | None |
 | Children | None |
 | Summary | Repair protected-main signature evidence after the receipt PR rebase generated an unsigned topic commit. |
@@ -3746,7 +3746,7 @@ flowchart LR
         AR_1554["AR-1554 - Done"]:::status_done
         AR_1555["AR-1555 - In progress"]:::status_in_progress
         AR_1556["AR-1556 - Planned"]:::status_planned
-        AR_1557["AR-1557 - Open"]:::status_open
+        AR_1557["AR-1557 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4870,5 +4870,3 @@ flowchart LR
     AR_1373 --> AR_1390
     AR_1373 --> AR_1391
     AR_1373 --> AR_1392
-    AR_1373 --> AR_1393
-    AR_1373 --> AR_1472

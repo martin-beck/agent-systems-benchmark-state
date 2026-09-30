@@ -104,17 +104,12 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1555](../tasks/AR-1555.md): Plan and output workflow qualification | asb-plan-command-worker | Qualify plan creation and output modes as one simple ASB user journey. | Promote after AR-1552, AR-1553 and AR-1554; run cross-command qualification and publish the user workflow. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1557](../tasks/AR-1557.md): Protected-main receipt signature repair | Unclaimed | Repair protected-main signature evidence after the receipt PR rebase generated an unsigned topic commit. | Promote and repair the unsigned receipt merge at 75a7e63 with a locally signed topic commit and protected non-squash merge; verify exact-main policy and hosted checks. |
+| P0 | [AR-1557](../tasks/AR-1557.md): Protected-main receipt signature repair | asb-signature-repair-worker | Repair protected-main signature evidence after the receipt PR rebase generated an unsigned topic commit. | Promote and repair the unsigned receipt merge at 75a7e63 with a locally signed topic commit and protected non-squash merge; verify exact-main policy and hosted checks. |
 
 ### Blocked (80)
 
