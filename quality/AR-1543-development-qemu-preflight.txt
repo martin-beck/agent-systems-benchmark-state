@@ -1,0 +1,10 @@
+AR-1543 unsigned-development integration evidence
+
+The provider-free AR-1308 diagnostic profile was exercised through the exact
+state-repository validator test suite. `pytest -q tests/test_ar1308_capacity.py`
+passed 25 tests and one subtest, covering receipt shape, host capacity, QEMU
+metadata, source/input binding, network and mount denial, process limits,
+cleanup/admission identity, malformed input rejection, and the explicit
+unsigned-development no-seed-digest policy. The profile remains diagnostic
+(`qualification_authorized=false`); this receipt makes no formal capacity
+qualification claim and uses no deployment authority or external provider.
