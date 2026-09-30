@@ -1,0 +1,9 @@
+AR-1536 unsigned-development handoff evidence
+
+The provider-free AR-1308 diagnostic handoff was rerun through the exact state
+validator suite: `pytest -q tests/test_ar1308_capacity.py` passed 25 tests and
+one subtest. Coverage includes host/QEMU metadata, capacity, source and input
+binding, network/mount denial, cleanup/admission identity, malformed input
+rejection, and the explicit unsigned-development policy. This is a diagnostic
+handoff only (`qualification_authorized=false`); missing AR-1531 formal inputs
+remain separately classified and no formal capacity claim is made.
