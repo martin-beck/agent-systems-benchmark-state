@@ -1,15 +1,17 @@
 # AR-1543 plan: AR-1308 QEMU integration closure
 
-1. Read AR-1307, AR-1308, AR-1531, AR-1533, AR-1534, AR-1540, AR-1541 and
-   AR-1536 completely, then verify the exact dependency heads, v0.3.50 vendor
-   snapshot and signed-capacity-8g fixture.
-2. Run the diagnostic QEMU fixture and formal preflight from a clean disposable
+1. Read AR-1307, AR-1308, AR-1533, AR-1534, AR-1540, AR-1541 and AR-1536
+   completely, then verify the exact dependency heads and the approved
+   development fixture. AR-1531 signed-capacity inputs are optional formal work
+   and must not gate this path.
+2. Run the diagnostic unsigned-development QEMU fixture and preflight from a clean disposable
    worktree with network disabled. Check guest memory/swap, image and overlay
    identity, mounts, JAR/model paths, transient admission, cancellation,
    teardown and sanitized evidence without retaining serial logs or host data.
 3. Repair only ASB-owned fixture assembly, preflight adapters, tests or docs.
    Do not edit handoffctl, coordinator source, formal validators, capacity
-   limits, reviewed-input requirements or attestation policy.
+   limits, or attestation policy. Keep formal reviewed-input requirements
+   fail-closed, but do not make them a development prerequisite.
 4. Add positive and negative coverage for generated-seed diagnostics, missing
    or mismatched formal inputs, malformed attestations, wrong image/overlay,
    network denial, timeout/cancellation and cleanup.
@@ -20,4 +22,5 @@
    from this AR.
 
 Success is reproducibly green diagnostic/preflight integration against the
-approved vendor release and a truthful, exact-input formal handoff boundary.
+approved development fixture and a truthful, separately scoped formal handoff
+boundary.
