@@ -1,0 +1,11 @@
+AR-1374 development qualification evidence
+
+Exact protected-main commit: bf89a45ddd71af96e6d4b6954320e199e147f83e
+
+Ordinary run/sweep dispatch was qualified through deterministic local/mock and
+strict-replay authority. The targeted production-backend recovery test passed
+twice after one transient state-root ownership failure; the subsequent full
+asb-cli suite passed 133 unit, 12 capability-contract, 3 CLI E2E, 5 guide, 2
+package, 2 setup, 4 TUI lifecycle, 3 workflow-transcript, and 0 doctests. No
+live provider or deployment-owned authority was used. This is development
+qualification only and makes no formal AR-1307/1308 claim.

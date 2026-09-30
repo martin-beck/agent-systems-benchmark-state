@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1374](tasks/AR-1374-cli-live-dispatch.md): Production live-provider dispatch | Consume authenticated runtime receipts in production asb run and sweep dispatch; stale AR-1375 duplicate superseded by AR-1523. | Development path is actionable after AR-1523/1390: requalify the existing ordinary run/sweep bridge with deterministic local/mock and strict-replay authority. Deployment-owned live-provider authority remains optional future hardening. | coordinator-ar1374-development-20260930 |
+| P0 | [AR-1374](tasks/AR-1374-cli-live-dispatch.md): Production live-provider dispatch | Development ordinary run/sweep dispatch is qualified with local/mock and strict replay; deployment-owned live-provider authority is optional future hardening. | Development qualification complete on exact protected main with deterministic local/mock and strict-replay authority. Deployment-owned live-provider authority remains optional future hardening; no development action remains. | coordinator-ar1374-development-20260930 |
 
 ## Blocked
 

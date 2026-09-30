@@ -605,8 +605,8 @@
 | Owner | coordinator-ar1374-development-20260930 |
 | Parent | None |
 | Children | None |
-| Summary | Consume authenticated runtime receipts in production asb run and sweep dispatch; stale AR-1375 duplicate superseded by AR-1523. |
-| Next action | Development path is actionable after AR-1523/1390: requalify the existing ordinary run/sweep bridge with deterministic local/mock and strict-replay authority. Deployment-owned live-provider authority remains optional future hardening. |
+| Summary | Development ordinary run/sweep dispatch is qualified with local/mock and strict replay; deployment-owned live-provider authority is optional future hardening. |
+| Next action | Development qualification complete on exact protected main with deterministic local/mock and strict-replay authority. Deployment-owned live-provider authority remains optional future hardening; no development action remains. |
 
 ### AR-1375 — Runtime-owned live control dispatch source
 
@@ -4901,4 +4901,3 @@ flowchart LR
     AR_1419 --> AR_1420
     AR_1419 --> AR_1423
     AR_1420 --> AR_1424
-    AR_1421 --> AR_1427

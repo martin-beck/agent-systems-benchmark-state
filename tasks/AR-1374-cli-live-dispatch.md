@@ -10,7 +10,7 @@
     "AR-1328"
   ],
   "id": "AR-1374",
-  "next_action": "Development path is actionable after AR-1523/1390: requalify the existing ordinary run/sweep bridge with deterministic local/mock and strict-replay authority. Deployment-owned live-provider authority remains optional future hardening.",
+  "next_action": "Development qualification complete on exact protected main with deterministic local/mock and strict-replay authority. Deployment-owned live-provider authority remains optional future hardening; no development action remains.",
   "observed_branch": "feature/ar-1374-cli-live-dispatch",
   "observed_dirty": 0,
   "observed_head": "bf89a45ddd71af96e6d4b6954320e199e147f83e",
@@ -18,18 +18,36 @@
   "plan": "../plans/AR-1374-cli-live-dispatch.md",
   "priority": "P0",
   "schema_version": 1,
+  "spec_acceptance": {
+    "evidence_class": "contract-test",
+    "evidence_digest": "sha256:a8b28a84516ead48fbb0fa490f5ccbe6198d964f62ef49316870e2d0a3785760",
+    "evidence_ref": "quality/AR-1374-development-local-mock.txt",
+    "spec_ref": "specs/AR-1374.json",
+    "spec_revision": 1,
+    "status": "pass"
+  },
+  "spec_ref": "specs/AR-1374.json",
+  "spec_revision": 1,
   "status": "in_progress",
-  "summary": "Consume authenticated runtime receipts in production asb run and sweep dispatch; stale AR-1375 duplicate superseded by AR-1523.",
-  "task_revision": 52,
+  "summary": "Development ordinary run/sweep dispatch is qualified with local/mock and strict replay; deployment-owned live-provider authority is optional future hardening.",
+  "task_revision": 54,
   "title": "Production live-provider dispatch",
   "updated_at": "2026-09-30T04:57:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1374-cli-live-dispatch"
 }
 ---
 
-Successor to the completed authenticated receipt source AR-1373. This task
-must not claim end-to-end OpenRouter readiness until real runtime/provider
-execution and teardown are verified.
+Successor to the completed authenticated receipt source AR-1373. For
+development, this task qualifies ordinary run/sweep dispatch with deterministic
+local/mock and strict-replay authority. It does not claim end-to-end
+OpenRouter/live-provider readiness; a deployment-owned live adapter is optional
+future hardening.
+
+- 2026-09-30T06:30:00+00:00: Development qualification passed on exact protected main
+  bf89a45. The transient state-root ownership failure was reproduced once, then the targeted
+  recovery test passed twice and the full asb-cli suite passed (133 unit, 12 capability, 3 CLI E2E,
+  5 guide, 2 package, 2 setup, 4 TUI lifecycle, 3 workflow transcript and 0 doctests). No live
+  provider or deployment-owned authority was used.
 
 - 2026-09-24T02:35:00+00:00: Created as the dependency-valid successor for
   AR-1329 production run/sweep dispatch.
