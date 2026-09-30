@@ -86,11 +86,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1390](../tasks/AR-1390-runtime-live-acquisition-cli.md): Runtime live acquisition and CLI bridge | Unclaimed | Development local/mock and strict-replay run/sweep bridge is actionable; deployment-owned authenticated live authority is optional future hardening, not a development blocker. | Development path is actionable without AR-1523: re-audit and implement the ordinary run/sweep bridge against the existing deterministic local/mock and strict-replay authority, with exact-head gates. Deployment-owned authenticated live authority remains optional future production hardening. |
+| P0 | [AR-1390](../tasks/AR-1390-runtime-live-acquisition-cli.md): Runtime live acquisition and CLI bridge | coordinator-ar1390-development-20260930 | Development local/mock and strict-replay run/sweep bridge is actionable; deployment-owned authenticated live authority is optional future hardening, not a development blocker. | Development path is actionable without AR-1523: re-audit and implement the ordinary run/sweep bridge against the existing deterministic local/mock and strict-replay authority, with exact-head gates. Deployment-owned authenticated live authority remains optional future production hardening. |
 
 ### Blocked (82)
 
