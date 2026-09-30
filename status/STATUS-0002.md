@@ -237,17 +237,12 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1534](../tasks/AR-1534.md): Coordinator vendor integrity repair | codex-asb-ar1534-v0349-sync-20260930 | Coordinator metadata repair v0.3.50 is published; rerun approved vendor sync and all ASB gates against the exact immutable release. | Synchronize the exact coordinator v0.3.50 tag/source into ASB; rerun vendor verification, full state gates and exact-head review. Preserve AR-1307/1308 formal qualification as separate and do not claim it from development fixtures. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1538](../tasks/AR-1538.md): Coordinator v0.3.50 downstream integration | Unclaimed | Integrate coordinator v0.3.50 into ASB without breaking project-owned formal, test and validator contracts. | Promote after AR-1537 establishes the complete allowlist; consume clean v0.3.50, reconcile ASB-owned formal/tests compatibility, and publish only after all exact-head gates pass. |
+| P0 | [AR-1538](../tasks/AR-1538.md): Coordinator v0.3.50 downstream integration | codex-asb-ar1538-v0350-integration-20260930 | Integrate coordinator v0.3.50 into ASB without breaking project-owned formal, test and validator contracts. | Promote after AR-1537 establishes the complete allowlist; consume clean v0.3.50, reconcile ASB-owned formal/tests compatibility, and publish only after all exact-head gates pass. |
 
 ### Blocked (83)
 
