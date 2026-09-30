@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1549](tasks/AR-1549.md): Coordinator v0.3.53 compatibility closure | Rerun the compatibility gates previously blocked by the rejected coordinator vendor snapshots. | Promote and claim; rerun the state-worktree, session, SQLite and full compatibility gates against the verified v0.3.53 snapshot, then hand exact results to AR-1534/1542/1543. | asb-ar1549-v0353-compatibility-20260930 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
