@@ -98,17 +98,12 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1553](../tasks/AR-1553.md): Plan creation CLI workflow | asb-plan-command-worker | Expose dynamic workload plan creation through a simple ASB CLI command. | Promote after AR-1552; add the discoverable asb plan-create command and noninteractive selection options. |
 | P0 | [AR-1554](../tasks/AR-1554.md): Global human-readable output mode | asb-output-mode-worker | Make ASB commands human-readable by default and preserve JSON through a global --json flag. | Promote and claim after dependency review; add the global human-readable output renderer and --json override. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1553](../tasks/AR-1553.md): Plan creation CLI workflow | Unclaimed | Expose dynamic workload plan creation through a simple ASB CLI command. | Promote after AR-1552; add the discoverable asb plan-create command and noninteractive selection options. |
 
 ### Blocked (80)
 
