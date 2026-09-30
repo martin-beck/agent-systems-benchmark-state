@@ -3170,6 +3170,48 @@
 | Summary | Repair strict mypy failures that prevent the changed coordination repository from reaching a releasable state. |
 | Next action | Promote and resolve the latent strict-mypy import/typing failures after the formatter repair; preserve fail-closed optional authority boundaries and rerun hosted state verification. |
 
+### AR-1562 — ASB TUI development release-channel contract
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Add explicit ASB TUI release-channel selection with a development default. |
+| Next action | Define and implement the explicit dev/stable/nightly/experimental channel contract with dev as the current default; keep production channels fail-closed when metadata is absent. |
+
+### AR-1563 — ASB dev-channel clone/build materialization
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Clone and build the current asb-tui main head for the ASB dev channel. |
+| Next action | Implement bounded dev-channel clone, exact main-head resolution, locked release build, temporary staging, digest capture, cleanup, and atomic materialization. |
+
+### AR-1564 — ASB development TUI lifecycle integration
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Integrate the dev-built TUI into the ASB lifecycle and launch path. |
+| Next action | Wire the development materialized executable into install, status, upgrade, launch, and remove with the asb-tui development router and publish exact-head CI evidence. |
+
 
 ## Dependency graph
 
@@ -3807,6 +3849,9 @@ flowchart LR
         AR_1559["AR-1559 - Done"]:::status_done
         AR_1560["AR-1560 - Superseded"]:::status_superseded
         AR_1561["AR-1561 - Cancelled"]:::status_cancelled
+        AR_1562["AR-1562 - Planned"]:::status_planned
+        AR_1563["AR-1563 - Planned"]:::status_planned
+        AR_1564["AR-1564 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4770,73 +4815,3 @@ flowchart LR
     AR_1328 --> AR_1343
     AR_1328 --> AR_1346
     AR_1328 --> AR_1347
-    AR_1328 --> AR_1348
-    AR_1328 --> AR_1349
-    AR_1328 --> AR_1350
-    AR_1328 --> AR_1367
-    AR_1328 --> AR_1368
-    AR_1328 --> AR_1374
-    AR_1328 --> AR_1432
-    AR_1328 --> AR_1433
-    AR_1328 --> AR_1436
-    AR_1328 --> AR_1437
-    AR_1328 --> AR_1440
-    AR_1328 --> AR_1442
-    AR_1329 --> AR_1330
-    AR_1329 --> AR_1333
-    AR_1330 --> AR_1463
-    AR_1330 --> AR_1496
-    AR_1331 --> AR_1332
-    AR_1331 --> AR_1338
-    AR_1332 --> AR_1333
-    AR_1332 --> AR_1456
-    AR_1333 --> AR_1335
-    AR_1333 --> AR_1336
-    AR_1333 --> AR_1420
-    AR_1334 --> AR_1335
-    AR_1334 --> AR_1336
-    AR_1335 --> AR_1336
-    AR_1337 --> AR_1397
-    AR_1337 --> AR_1398
-    AR_1338 --> AR_1526
-    AR_1339 --> AR_1340
-    AR_1339 --> AR_1341
-    AR_1339 --> AR_1342
-    AR_1339 --> AR_1343
-    AR_1339 --> AR_1344
-    AR_1339 --> AR_1345
-    AR_1339 --> AR_1346
-    AR_1339 --> AR_1347
-    AR_1339 --> AR_1348
-    AR_1339 --> AR_1349
-    AR_1339 --> AR_1350
-    AR_1339 --> AR_1351
-    AR_1339 --> AR_1367
-    AR_1339 --> AR_1368
-    AR_1339 --> AR_1374
-    AR_1339 --> AR_1390
-    AR_1339 --> AR_1391
-    AR_1339 --> AR_1392
-    AR_1339 --> AR_1393
-    AR_1340 --> AR_1329
-    AR_1340 --> AR_1342
-    AR_1340 --> AR_1343
-    AR_1340 --> AR_1344
-    AR_1340 --> AR_1345
-    AR_1340 --> AR_1346
-    AR_1340 --> AR_1347
-    AR_1340 --> AR_1348
-    AR_1340 --> AR_1349
-    AR_1340 --> AR_1350
-    AR_1340 --> AR_1351
-    AR_1340 --> AR_1367
-    AR_1340 --> AR_1368
-    AR_1340 --> AR_1374
-    AR_1340 --> AR_1390
-    AR_1340 --> AR_1391
-    AR_1340 --> AR_1392
-    AR_1340 --> AR_1393
-    AR_1341 --> AR_1390
-    AR_1341 --> AR_1391
-    AR_1341 --> AR_1392
-    AR_1341 --> AR_1393

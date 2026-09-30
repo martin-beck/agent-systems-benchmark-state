@@ -1,5 +1,75 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+    AR_1328 --> AR_1348
+    AR_1328 --> AR_1349
+    AR_1328 --> AR_1350
+    AR_1328 --> AR_1367
+    AR_1328 --> AR_1368
+    AR_1328 --> AR_1374
+    AR_1328 --> AR_1432
+    AR_1328 --> AR_1433
+    AR_1328 --> AR_1436
+    AR_1328 --> AR_1437
+    AR_1328 --> AR_1440
+    AR_1328 --> AR_1442
+    AR_1329 --> AR_1330
+    AR_1329 --> AR_1333
+    AR_1330 --> AR_1463
+    AR_1330 --> AR_1496
+    AR_1331 --> AR_1332
+    AR_1331 --> AR_1338
+    AR_1332 --> AR_1333
+    AR_1332 --> AR_1456
+    AR_1333 --> AR_1335
+    AR_1333 --> AR_1336
+    AR_1333 --> AR_1420
+    AR_1334 --> AR_1335
+    AR_1334 --> AR_1336
+    AR_1335 --> AR_1336
+    AR_1337 --> AR_1397
+    AR_1337 --> AR_1398
+    AR_1338 --> AR_1526
+    AR_1339 --> AR_1340
+    AR_1339 --> AR_1341
+    AR_1339 --> AR_1342
+    AR_1339 --> AR_1343
+    AR_1339 --> AR_1344
+    AR_1339 --> AR_1345
+    AR_1339 --> AR_1346
+    AR_1339 --> AR_1347
+    AR_1339 --> AR_1348
+    AR_1339 --> AR_1349
+    AR_1339 --> AR_1350
+    AR_1339 --> AR_1351
+    AR_1339 --> AR_1367
+    AR_1339 --> AR_1368
+    AR_1339 --> AR_1374
+    AR_1339 --> AR_1390
+    AR_1339 --> AR_1391
+    AR_1339 --> AR_1392
+    AR_1339 --> AR_1393
+    AR_1340 --> AR_1329
+    AR_1340 --> AR_1342
+    AR_1340 --> AR_1343
+    AR_1340 --> AR_1344
+    AR_1340 --> AR_1345
+    AR_1340 --> AR_1346
+    AR_1340 --> AR_1347
+    AR_1340 --> AR_1348
+    AR_1340 --> AR_1349
+    AR_1340 --> AR_1350
+    AR_1340 --> AR_1351
+    AR_1340 --> AR_1367
+    AR_1340 --> AR_1368
+    AR_1340 --> AR_1374
+    AR_1340 --> AR_1390
+    AR_1340 --> AR_1391
+    AR_1340 --> AR_1392
+    AR_1340 --> AR_1393
+    AR_1341 --> AR_1390
+    AR_1341 --> AR_1391
+    AR_1341 --> AR_1392
+    AR_1341 --> AR_1393
     AR_1341 --> AR_1432
     AR_1341 --> AR_1433
     AR_1341 --> AR_1434
@@ -474,6 +544,9 @@
     AR_1555 --> AR_1556
     AR_1555 --> AR_1558
     AR_1557 --> AR_1558
+    AR_1562 --> AR_1563
+    AR_1562 --> AR_1564
+    AR_1563 --> AR_1564
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -954,7 +1027,3 @@
 | [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md) | [AR-1437](../tasks/AR-1437-local-record-replay-campaign.md), [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md), [AR-1447](../tasks/AR-1447-asb-local-campaign-qualification.md) | [AR-1331](../tasks/AR-1331-runtime-replay-launch-authority.md), [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md), [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md), [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md), [AR-1448](../tasks/AR-1448-runtime-replay-authority-source.md), [AR-1449](../tasks/AR-1449-runtime-owned-local-replay-cli.md), [AR-1500](../tasks/AR-1500-development-credential-provider-fixture.md) |
 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md) | [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md) | None |
 | [AR-1445](../tasks/AR-1445-protected-main-topology-repair-openrouter.md) | None | None |
-| [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md) | [AR-1433](../tasks/AR-1433-runtime-mock-attempt-backend.md), [AR-1441](../tasks/AR-1441-first-class-install-bootstrap.md), [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md), [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md) | [AR-1331](../tasks/AR-1331-runtime-replay-launch-authority.md), [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md), [AR-1448](../tasks/AR-1448-runtime-replay-authority-source.md), [AR-1458](../tasks/AR-1458-first-customer-requalification-after-orchestration.md), [AR-1487](../tasks/AR-1487-owner-backed-first-customer-qualification.md) |
-| [AR-1447](../tasks/AR-1447-asb-local-campaign-qualification.md) | [AR-1433](../tasks/AR-1433-runtime-mock-attempt-backend.md), [AR-1437](../tasks/AR-1437-local-record-replay-campaign.md), [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md) | [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md), [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md), [AR-1496](../tasks/AR-1496-runtime-owned-provider-capture-control.md) |
-| [AR-1448](../tasks/AR-1448-runtime-replay-authority-source.md) | [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md), [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md) | [AR-1449](../tasks/AR-1449-runtime-owned-local-replay-cli.md), [AR-1450](../tasks/AR-1450-runtime-owned-local-replay-acquisition.md), [AR-1451](../tasks/AR-1451-central-orchestration-authority-design.md), [AR-1452](../tasks/AR-1452-runtime-orchestration-service.md), [AR-1455](../tasks/AR-1455-runtime-owned-guided-replay-entrypoint.md) |
-| [AR-1449](../tasks/AR-1449-runtime-owned-local-replay-cli.md) | [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md), [AR-1448](../tasks/AR-1448-runtime-replay-authority-source.md) | None |
