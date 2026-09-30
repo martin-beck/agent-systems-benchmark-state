@@ -109,11 +109,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1556](../tasks/AR-1556.md): Protected-main merge-topology gate repair | Unclaimed | Repair and verify the protected-main repository-quality gate after the plan/output merge series. | Promote after AR-1555 functional evidence; diagnose and repair the protected-main merge-topology gate for the plan/output series, then verify the exact current main checks. |
+| P0 | [AR-1556](../tasks/AR-1556.md): Protected-main merge-topology gate repair | asb-signature-repair-worker | Repair and verify the protected-main repository-quality gate after the plan/output merge series. | Promote after AR-1555 functional evidence; diagnose and repair the protected-main merge-topology gate for the plan/output series, then verify the exact current main checks. |
 
 ### Blocked (80)
 
