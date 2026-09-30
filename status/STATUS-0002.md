@@ -3086,6 +3086,20 @@
 | Summary | Qualify plan creation and output modes as one simple ASB user journey. |
 | Next action | Promote after AR-1552, AR-1553 and AR-1554; run cross-command qualification and publish the user workflow. |
 
+### AR-1556 — Protected-main merge-topology gate repair
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair and verify the protected-main repository-quality gate after the plan/output merge series. |
+| Next action | Promote after AR-1555 functional evidence; diagnose and repair the protected-main merge-topology gate for the plan/output series, then verify the exact current main checks. |
+
 
 ## Dependency graph
 
@@ -3717,6 +3731,7 @@ flowchart LR
         AR_1553["AR-1553 - Done"]:::status_done
         AR_1554["AR-1554 - Done"]:::status_done
         AR_1555["AR-1555 - In progress"]:::status_in_progress
+        AR_1556["AR-1556 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4866,28 +4881,3 @@ flowchart LR
     AR_1379 --> AR_1474
     AR_1379 --> AR_1475
     AR_1379 --> AR_1476
-    AR_1379 --> AR_1477
-    AR_1379 --> AR_1478
-    AR_1380 --> AR_1381
-    AR_1380 --> AR_1382
-    AR_1380 --> AR_1383
-    AR_1380 --> AR_1384
-    AR_1380 --> AR_1385
-    AR_1380 --> AR_1386
-    AR_1381 --> AR_1382
-    AR_1381 --> AR_1383
-    AR_1381 --> AR_1384
-    AR_1381 --> AR_1385
-    AR_1381 --> AR_1386
-    AR_1383 --> AR_1384
-    AR_1384 --> AR_1385
-    AR_1384 --> AR_1386
-    AR_1384 --> AR_1387
-    AR_1384 --> AR_1388
-    AR_1384 --> AR_1389
-    AR_1385 --> AR_1386
-    AR_1385 --> AR_1387
-    AR_1385 --> AR_1388
-    AR_1385 --> AR_1390
-    AR_1385 --> AR_1391
-    AR_1385 --> AR_1392

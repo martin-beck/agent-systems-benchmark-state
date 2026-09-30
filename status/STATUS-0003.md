@@ -1,5 +1,30 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+    AR_1379 --> AR_1477
+    AR_1379 --> AR_1478
+    AR_1380 --> AR_1381
+    AR_1380 --> AR_1382
+    AR_1380 --> AR_1383
+    AR_1380 --> AR_1384
+    AR_1380 --> AR_1385
+    AR_1380 --> AR_1386
+    AR_1381 --> AR_1382
+    AR_1381 --> AR_1383
+    AR_1381 --> AR_1384
+    AR_1381 --> AR_1385
+    AR_1381 --> AR_1386
+    AR_1383 --> AR_1384
+    AR_1384 --> AR_1385
+    AR_1384 --> AR_1386
+    AR_1384 --> AR_1387
+    AR_1384 --> AR_1388
+    AR_1384 --> AR_1389
+    AR_1385 --> AR_1386
+    AR_1385 --> AR_1387
+    AR_1385 --> AR_1388
+    AR_1385 --> AR_1390
+    AR_1385 --> AR_1391
+    AR_1385 --> AR_1392
     AR_1385 --> AR_1393
     AR_1385 --> AR_1432
     AR_1385 --> AR_1433
@@ -329,6 +354,7 @@
     AR_1552 --> AR_1555
     AR_1553 --> AR_1555
     AR_1554 --> AR_1555
+    AR_1555 --> AR_1556
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -821,5 +847,3 @@
 | [AR-1455](../tasks/AR-1455-runtime-owned-guided-replay-entrypoint.md) | [AR-1448](../tasks/AR-1448-runtime-replay-authority-source.md), [AR-1450](../tasks/AR-1450-runtime-owned-local-replay-acquisition.md), [AR-1453](../tasks/AR-1453-frontend-orchestration-wiring.md) | [AR-1487](../tasks/AR-1487-owner-backed-first-customer-qualification.md), [AR-1488](../tasks/AR-1488-owner-backed-user-journey.md), [AR-1496](../tasks/AR-1496-runtime-owned-provider-capture-control.md), [AR-1526](../tasks/AR-1526.md) |
 | [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md) | [AR-1332](../tasks/AR-1332-record-live-replay-offline.md), [AR-1433](../tasks/AR-1433-runtime-mock-attempt-backend.md), [AR-1447](../tasks/AR-1447-asb-local-campaign-qualification.md) | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md), [AR-1458](../tasks/AR-1458-first-customer-requalification-after-orchestration.md), [AR-1460](../tasks/AR-1460-current-main-first-customer-requalification.md), [AR-1461](../tasks/AR-1461-first-customer-release-readiness.md), [AR-1526](../tasks/AR-1526.md) |
 | [AR-1457](../tasks/AR-1457-retire-superseded-pr-332.md) | [AR-1453](../tasks/AR-1453-frontend-orchestration-wiring.md) | [AR-1459](../tasks/AR-1459-retire-stale-state-prs.md) |
-| [AR-1458](../tasks/AR-1458-first-customer-requalification-after-orchestration.md) | [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md), [AR-1453](../tasks/AR-1453-frontend-orchestration-wiring.md), [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md) | [AR-1460](../tasks/AR-1460-current-main-first-customer-requalification.md) |
-| [AR-1459](../tasks/AR-1459-retire-stale-state-prs.md) | [AR-1457](../tasks/AR-1457-retire-superseded-pr-332.md) | None |

@@ -2,8 +2,8 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `bf89a45ddd71af96e6d4b6954320e199e147f83e`
-- Local origin/main: `bf89a45ddd71af96e6d4b6954320e199e147f83e`
+- Product remote main: `d178ef34747e99747e00b0ef7350c789eec62198`
+- Local origin/main: `d178ef34747e99747e00b0ef7350c789eec62198`
 - Primary worktree head: `bd7d10d4a760a84fa42de2b1fa9e97e8ea85ba09`
 
 ## Open pull requests
@@ -22,15 +22,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36581635858 | `bf89a45ddd71` | push | Huawei MIT source headers | completed:success |
-| 36581635835 | `bf89a45ddd71` | push | Rust verification | completed:success |
-| 36581635826 | `bf89a45ddd71` | push | Credential-free benchmark path | completed:success |
-| 36581635780 | `bf89a45ddd71` | push | Emulated aarch64 portability | completed:success |
-| 36581635719 | `bf89a45ddd71` | push | Hosted portability and native qualification | completed:success |
-| 36581635663 | `bf89a45ddd71` | push | Formal assurance | completed:success |
-| 36581635581 | `bf89a45ddd71` | push | Repository quality | completed:success |
-| 36581635527 | `bf89a45ddd71` | push | Fault assurance | completed:success |
-| 36578937308 | `a97dfb39c784` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 36578937301 | `a97dfb39c784` | pull_request | Fault assurance | completed:success |
-| 36578937277 | `a97dfb39c784` | pull_request | Credential-free benchmark path | completed:success |
-| 36578937269 | `a97dfb39c784` | pull_request | Formal assurance | completed:success |
+| 36695964160 | `d178ef34747e` | push | Hosted portability and native qualification | completed:success |
+| 36695964146 | `d178ef34747e` | push | Repository quality | completed:failure |
+| 36695964141 | `d178ef34747e` | push | Fault assurance | completed:success |
+| 36695964088 | `d178ef34747e` | push | Formal assurance | in_progress:- |
+| 36695964064 | `d178ef34747e` | push | Huawei MIT source headers | completed:success |
+| 36695964063 | `d178ef34747e` | push | Emulated aarch64 portability | in_progress:- |
+| 36695964052 | `d178ef34747e` | push | Rust verification | in_progress:- |
+| 36695964043 | `d178ef34747e` | push | Credential-free benchmark path | completed:success |
+| 36695657466 | `e36d69ab9966` | push | Credential-free benchmark path | completed:success |
+| 36695657431 | `e36d69ab9966` | push | Emulated aarch64 portability | completed:cancelled |
+| 36695657413 | `e36d69ab9966` | push | Rust verification | completed:failure |
+| 36695657386 | `e36d69ab9966` | push | Formal assurance | completed:cancelled |
