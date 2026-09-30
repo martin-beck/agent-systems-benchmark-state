@@ -238,7 +238,7 @@
 | [AR-1531](../tasks/AR-1531.md) | [AR-1520](../tasks/AR-1520.md), [AR-1530](../tasks/AR-1530.md) | [AR-1536](../tasks/AR-1536.md), [AR-1543](../tasks/AR-1543.md) |
 | [AR-1532](../tasks/AR-1532.md) | [AR-1528](../tasks/AR-1528.md) | [AR-1535](../tasks/AR-1535.md), [AR-1542](../tasks/AR-1542.md) |
 | [AR-1533](../tasks/AR-1533.md) | [AR-1528](../tasks/AR-1528.md) | [AR-1536](../tasks/AR-1536.md), [AR-1543](../tasks/AR-1543.md) |
-| [AR-1534](../tasks/AR-1534.md) | [AR-1530](../tasks/AR-1530.md) | [AR-1535](../tasks/AR-1535.md), [AR-1536](../tasks/AR-1536.md), [AR-1542](../tasks/AR-1542.md), [AR-1543](../tasks/AR-1543.md) |
+| [AR-1534](../tasks/AR-1534.md) | [AR-1530](../tasks/AR-1530.md) | [AR-1535](../tasks/AR-1535.md), [AR-1536](../tasks/AR-1536.md), [AR-1542](../tasks/AR-1542.md), [AR-1543](../tasks/AR-1543.md), [AR-1544](../tasks/AR-1544.md) |
 | [AR-1535](../tasks/AR-1535.md) | [AR-1532](../tasks/AR-1532.md), [AR-1534](../tasks/AR-1534.md), [AR-1542](../tasks/AR-1542.md) | None |
 | [AR-1536](../tasks/AR-1536.md) | [AR-1531](../tasks/AR-1531.md), [AR-1533](../tasks/AR-1533.md), [AR-1534](../tasks/AR-1534.md), [AR-1543](../tasks/AR-1543.md) | None |
 | [AR-1537](../tasks/AR-1537.md) | [AR-1530](../tasks/AR-1530.md) | None |
@@ -246,8 +246,9 @@
 | [AR-1539](../tasks/AR-1539.md) | [AR-1530](../tasks/AR-1530.md) | None |
 | [AR-1540](../tasks/AR-1540.md) | [AR-1530](../tasks/AR-1530.md) | [AR-1542](../tasks/AR-1542.md), [AR-1543](../tasks/AR-1543.md) |
 | [AR-1541](../tasks/AR-1541.md) | [AR-1530](../tasks/AR-1530.md) | [AR-1542](../tasks/AR-1542.md), [AR-1543](../tasks/AR-1543.md) |
-| [AR-1542](../tasks/AR-1542.md) | [AR-1532](../tasks/AR-1532.md), [AR-1534](../tasks/AR-1534.md), [AR-1540](../tasks/AR-1540.md), [AR-1541](../tasks/AR-1541.md) | [AR-1535](../tasks/AR-1535.md) |
-| [AR-1543](../tasks/AR-1543.md) | [AR-1531](../tasks/AR-1531.md), [AR-1533](../tasks/AR-1533.md), [AR-1534](../tasks/AR-1534.md), [AR-1540](../tasks/AR-1540.md), [AR-1541](../tasks/AR-1541.md) | [AR-1536](../tasks/AR-1536.md) |
+| [AR-1542](../tasks/AR-1542.md) | [AR-1532](../tasks/AR-1532.md), [AR-1534](../tasks/AR-1534.md), [AR-1540](../tasks/AR-1540.md), [AR-1541](../tasks/AR-1541.md), [AR-1544](../tasks/AR-1544.md) | [AR-1535](../tasks/AR-1535.md) |
+| [AR-1543](../tasks/AR-1543.md) | [AR-1531](../tasks/AR-1531.md), [AR-1533](../tasks/AR-1533.md), [AR-1534](../tasks/AR-1534.md), [AR-1540](../tasks/AR-1540.md), [AR-1541](../tasks/AR-1541.md), [AR-1544](../tasks/AR-1544.md) | [AR-1536](../tasks/AR-1536.md) |
+| [AR-1544](../tasks/AR-1544.md) | [AR-1534](../tasks/AR-1534.md) | [AR-1542](../tasks/AR-1542.md), [AR-1543](../tasks/AR-1543.md) |
 
 ## Complete AR inventory
 
@@ -349,7 +350,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (50)
+### Planned (51)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -372,6 +373,7 @@
 | P0 | [AR-1536](../tasks/AR-1536.md): AR-1308 capacity and preflight handoff repair | Unclaimed | Repair AR-1308 capacity/preflight handoff after the unsigned-development fixture and approved vendor boundary are complete. | Promote only after AR-1531, AR-1533, AR-1534 and AR-1543 are done; rerun clean diagnostic/formal preflight, verify every exact input and hand a terminal-ready receipt to AR-1522 or record the missing input blocker. |
 | P0 | [AR-1542](../tasks/AR-1542.md): AR-1307 runner integration closure | Unclaimed | Close ASB-owned AR-1307 runner regressions after the coordinator v0.3.50 compatibility repairs and prepare the formal-readiness handoff. | Promote after all dependencies are done; run the exact v0.3.50 vendor-integrated AR-1307 runner gates, repair only ASB-owned regressions, and hand a clean evidence bundle to AR-1535 or record a precise blocker. |
 | P0 | [AR-1543](../tasks/AR-1543.md): AR-1308 QEMU integration closure | Unclaimed | Close ASB-owned AR-1308 QEMU and preflight regressions after coordinator v0.3.50 compatibility repairs and prepare the capacity handoff. | Promote after all dependencies are done; run the exact v0.3.50 vendor-integrated AR-1308 QEMU and preflight gates, repair only ASB-owned regressions, and hand a clean receipt to AR-1536 or record a precise blocker. |
+| P0 | [AR-1544](../tasks/AR-1544.md): State-worktree observation compatibility | Unclaimed | Repair the coordinator v0.3.50 state-worktree observation regression required by ASB coordination and AR-1307/1308 gates. | Promote after AR-1534; compare the approved coordinator v0.3.50 project scan with ASB&#x27;s state-worktree safety contract, restore bounded state-repository worktree observations through an approved coordinator release or adapter, and rerun the exact compatibility gates. |
 | P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
 | P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
 | P1 | [AR-0810](../tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Unclaimed | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project&#x27;s GitHub Pages site. |
@@ -523,5 +525,3 @@
 | P0 | [AR-1312](../tasks/AR-1312-post-merge-coverage-floor.md): Post-merge workspace coverage floor repair | Unclaimed | Repair the post-merge workspace coverage deficit without weakening the 90&#37; floor. | AR complete: signed coverage repair merged as PR #238 and post-merge workspace coverage verification passed; retain evidence and continue with AR-1316. |
 | P0 | [AR-1313](../tasks/AR-1313-historical-dco-909078c-repair.md): Historical DCO merge-integrity recovery | Unclaimed | Forward-only signed DCO recovery candidate published as PR #231. | All PR #290 exact-head checks are green; obtain independent review, then run signed merge_pr.py against exact base e41d4df/head 3420355/tree e1120e9 and verify seven post-merge workflows. |
 | P0 | [AR-1314](../tasks/AR-1314-optional-bundle-signing-development-release.md): Optional runtime-bundle signing for development and tagged releases | Unclaimed | Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile. | Blocked on AR-1397 integration repair: post-merge Repository quality rejects c58b0b0 tree against reviewed topic after AR-1395 advanced main, and c58 Rust workflow dispatch 35980460560 was cancelled by a higher-priority waiting request for refs/heads/main. Preserve all evidence; after AR-1397 repair and queue quiescence, rerun all seven exact-main workflows including Rust. |
-| P0 | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | Unclaimed | Publish the verified ASB agent catalog required by the first-run setup wizard. | Release AR-1316 as satisfied by exact current main; no new product diff or PR is required because producer implementation is already merged and verified. |
-| P0 | [AR-1319](../tasks/AR-1319-authenticated-agent-catalog-entry-contract.md): Authenticated agent catalog entry contract | Unclaimed | Make incomplete authenticated agent catalog entries truthful and selectable only after verification. | Completed; preserve the merged contract as the prerequisite for AR-1316 producer and future verified release-index work. |
