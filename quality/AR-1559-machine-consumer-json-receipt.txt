@@ -1,0 +1,25 @@
+AR-1559 machine consumer JSON repair receipt
+
+Exact repaired main: ce190124b4ce8794d9311aae92d86ec042df7307
+PR: #395, merge commit ce190124b4ce8794d9311aae92d86ec042df7307
+Topic: 9462798a6391dc7b13fbf4b76051c124e15b2a9c (signed, DCO-bearing)
+
+Failure reproduced on prior main 7aa09a0bde6667dd1af42afb204e12eac7d666a2:
+Rust verification failed because workload-catalog human output was parsed as
+JSON. The workflow now invokes `asb --json workload-catalog` explicitly.
+
+Local evidence:
+- workload catalog generation and parity check passed (25 entries).
+- cargo test --locked -p asb-cli --test cli_e2e --test guide_examples --test workflow_transcript: 11 passed.
+
+Hosted exact-main evidence for ce190124:
+- Repository quality 36699804880: success
+- Rust verification 36699805173 attempt 2: success (136 library tests and workflow checks)
+- Credential-free benchmark path 36699805095: success
+- Hosted portability/native qualification 36699805131: success
+- Formal assurance 36699805065: success
+- Fault assurance 36699804929: success
+- Emulated aarch64 portability 36699805213: success
+- Huawei MIT source headers 36699805385: success
+
+No provider contact or credential material was introduced.
