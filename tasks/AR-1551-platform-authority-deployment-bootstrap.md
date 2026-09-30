@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-30T05:09:05+00:00",
+  "claim_expires": "2026-09-30T05:09:34+00:00",
   "depends_on": [
     "AR-1505",
     "AR-1513",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision the missing authenticated platform authority deployment required for first-customer live dispatch.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "First-customer platform authority deployment bootstrap",
-  "updated_at": "2026-09-30T03:09:16+00:00"
+  "updated_at": "2026-09-30T03:09:34+00:00"
 }
 ---
 
@@ -60,3 +60,5 @@ adapter and final live-dispatch qualification.
 
 - 2026-09-30T03:09:16+00:00: Recorded command exit 0; command argv SHA-256
   a1159e9df3670d549d04524532629f5477ceb7deec9b45e47e8c009506ecb2c8.
+
+- 2026-09-30T03:09:34+00:00: Heartbeat by coordinator-ar1551-platform-authority-20260930.
