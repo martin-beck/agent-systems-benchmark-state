@@ -98,6 +98,12 @@
 
 ## Complete AR inventory
 
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1552](../tasks/AR-1552.md): Dynamic workload-backed plan generation | Unclaimed | Generate benchmark plans from the canonical supported-workload catalog, including workloads added later. | Promote and claim after dependency review; implement the canonical catalog-backed workload selector and valid plan materializer. |
+
 ### Blocked (80)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -183,7 +189,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (52)
+### Planned (51)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -204,7 +210,6 @@
 | P0 | [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Unclaimed | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. |
 | P0 | [AR-1545](../tasks/AR-1545.md): AR-1307 formal-input readiness repair | Unclaimed | Audit and repair the AR-1307 formal-input handoff after development runner integration, without executing qualification. | Formal-only work: after AR-1535 supplies reviewed inputs, inventory and independently verify every exact AR-1307 formal input for AR-1522. Do not block or alter the completed unsigned-development path. |
 | P0 | [AR-1546](../tasks/AR-1546.md): AR-1308 formal capacity-input readiness repair | Unclaimed | Audit and repair the AR-1308 capacity/input handoff after diagnostic QEMU integration, without executing qualification. | Formal-only work: after AR-1531 and AR-1536, verify the exact 8 GiB/8 GiB fixture and AR-1308 formal inputs for AR-1522. Do not block or alter the completed unsigned-development path. |
-| P0 | [AR-1552](../tasks/AR-1552.md): Dynamic workload-backed plan generation | Unclaimed | Generate benchmark plans from the canonical supported-workload catalog, including workloads added later. | Promote and claim after dependency review; implement the canonical catalog-backed workload selector and valid plan materializer. |
 | P0 | [AR-1553](../tasks/AR-1553.md): Plan creation CLI workflow | Unclaimed | Expose dynamic workload plan creation through a simple ASB CLI command. | Promote after AR-1552; add the discoverable asb plan-create command and noninteractive selection options. |
 | P0 | [AR-1554](../tasks/AR-1554.md): Global human-readable output mode | Unclaimed | Make ASB commands human-readable by default and preserve JSON through a global --json flag. | Promote and claim after dependency review; add the global human-readable output renderer and --json override. |
 | P0 | [AR-1555](../tasks/AR-1555.md): Plan and output workflow qualification | Unclaimed | Qualify plan creation and output modes as one simple ASB user journey. | Promote after AR-1552, AR-1553 and AR-1554; run cross-command qualification and publish the user workflow. |
@@ -522,4 +527,3 @@
 | P1 | [AR-0819](../tasks/AR-0819-ssh-remote-bootstrap.md): Add SSH remote discovery and bootstrap | Unclaimed | Use configured SSH hosts as the safe default path to a remote runner and help establish dedicated key authentication. | Integrate signed no-ff PR #98 onto current main, then run and verify all exact-main post-merge workflows before release. |
 | P1 | [AR-0820](../tasks/AR-0820-verifiable-install-artifacts.md): Publish verifiable installation artifacts | Unclaimed | Publish verifiable native bundles and metadata that a small bootstrapper can select safely. | Build signed platform manifests and relocatable ASB plus asb-tui installation bundles. |
 | P1 | [AR-0821](../tasks/AR-0821-one-line-local-install.md): Add guided one-line local installation | Unclaimed | Turn a single documented command into a safe guided local ASB and TUI first run. | Monitor all required post-merge CI runs for exact main 513c1d926458f1cb6a26d3f7277dc7d9b1496df3; release only after every gate is green. |
-| P1 | [AR-0822](../tasks/AR-0822-install-upgrade-rollback.md): Add safe installation lifecycle management | Unclaimed | Manage the complete installed lifecycle without losing configuration, history, runs, or trust state. | Implement verified upgrades, migrations, rollback, repair, and non-destructive uninstall. |
