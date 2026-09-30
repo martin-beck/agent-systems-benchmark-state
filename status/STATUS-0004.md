@@ -131,13 +131,18 @@
 
 ## Complete AR inventory
 
-### Open (3)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1568](../tasks/AR-1568.md): ASB exact current-main identity binding | ar1568-current-main-identity | Bind development metadata and broker descriptors to the exact ASB source identity. | Promote after AR-1564 and replace stale compile-time identity constants with exact running-source identity evidence. |
+
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1566](../tasks/AR-1566.md): ASB development broker handoff integration | Unclaimed | Wire ASB development launch through the authenticated asb-tui broker handoff seam. | Promote and implement the development broker handoff seam after the asb-tui descriptor contract is available; add exact-head integration tests. |
 | P0 | [AR-1567](../tasks/AR-1567.md): ASB development trusted toolchain discovery | Unclaimed | Make development installation resolve a trusted cargo/toolchain without hard-coded host paths. | Promote after AR-1563 and implement controlled trusted toolchain discovery with tests on a clean host. |
-| P0 | [AR-1568](../tasks/AR-1568.md): ASB exact current-main identity binding | Unclaimed | Bind development metadata and broker descriptors to the exact ASB source identity. | Promote after AR-1564 and replace stale compile-time identity constants with exact running-source identity evidence. |
 
 ### Blocked (80)
 

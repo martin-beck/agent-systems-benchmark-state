@@ -3,13 +3,18 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1568](tasks/AR-1568.md): ASB exact current-main identity binding | Bind development metadata and broker descriptors to the exact ASB source identity. | Promote after AR-1564 and replace stale compile-time identity constants with exact running-source identity evidence. | ar1568-current-main-identity |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1566](tasks/AR-1566.md): ASB development broker handoff integration | Wire ASB development launch through the authenticated asb-tui broker handoff seam. | Promote and implement the development broker handoff seam after the asb-tui descriptor contract is available; add exact-head integration tests. | - |
 | P0 | [AR-1567](tasks/AR-1567.md): ASB development trusted toolchain discovery | Make development installation resolve a trusted cargo/toolchain without hard-coded host paths. | Promote after AR-1563 and implement controlled trusted toolchain discovery with tests on a clean host. | - |
-| P0 | [AR-1568](tasks/AR-1568.md): ASB exact current-main identity binding | Bind development metadata and broker descriptors to the exact ASB source identity. | Promote after AR-1564 and replace stale compile-time identity constants with exact running-source identity evidence. | - |
 
 ## Blocked
 
