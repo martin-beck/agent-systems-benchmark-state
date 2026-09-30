@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1450](../tasks/AR-1450-runtime-owned-local-replay-acquisition.md) | [AR-1448](../tasks/AR-1448-runtime-replay-authority-source.md) | [AR-1455](../tasks/AR-1455-runtime-owned-guided-replay-entrypoint.md), [AR-1487](../tasks/AR-1487-owner-backed-first-customer-qualification.md), [AR-1488](../tasks/AR-1488-owner-backed-user-journey.md), [AR-1496](../tasks/AR-1496-runtime-owned-provider-capture-control.md) |
 | [AR-1451](../tasks/AR-1451-central-orchestration-authority-design.md) | [AR-1341](../tasks/AR-1341-runtime-observed-namespace-repair.md), [AR-1357](../tasks/AR-1357-runtime-attested-enrollment-record.md), [AR-1433](../tasks/AR-1433-runtime-mock-attempt-backend.md), [AR-1448](../tasks/AR-1448-runtime-replay-authority-source.md) | [AR-1452](../tasks/AR-1452-runtime-orchestration-service.md), [AR-1454](../tasks/AR-1454-protected-main-tree-repair-runtime-replay.md) |
 | [AR-1452](../tasks/AR-1452-runtime-orchestration-service.md) | [AR-1357](../tasks/AR-1357-runtime-attested-enrollment-record.md), [AR-1433](../tasks/AR-1433-runtime-mock-attempt-backend.md), [AR-1448](../tasks/AR-1448-runtime-replay-authority-source.md), [AR-1451](../tasks/AR-1451-central-orchestration-authority-design.md) | [AR-1453](../tasks/AR-1453-frontend-orchestration-wiring.md), [AR-1454](../tasks/AR-1454-protected-main-tree-repair-runtime-replay.md) |
 | [AR-1453](../tasks/AR-1453-frontend-orchestration-wiring.md) | [AR-1452](../tasks/AR-1452-runtime-orchestration-service.md) | [AR-1455](../tasks/AR-1455-runtime-owned-guided-replay-entrypoint.md), [AR-1457](../tasks/AR-1457-retire-superseded-pr-332.md), [AR-1458](../tasks/AR-1458-first-customer-requalification-after-orchestration.md), [AR-1523](../tasks/AR-1523.md), [AR-1524](../tasks/AR-1524.md), [AR-1525](../tasks/AR-1525.md), [AR-1526](../tasks/AR-1526.md) |
@@ -113,11 +114,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1561](../tasks/AR-1561.md): State strict-mypy repair | Unclaimed | Repair strict mypy failures that prevent the changed coordination repository from reaching a releasable state. | Promote and resolve the latent strict-mypy import/typing failures after the formatter repair; preserve fail-closed optional authority boundaries and rerun hosted state verification. |
+| P0 | [AR-1561](../tasks/AR-1561.md): State strict-mypy repair | asb-state-mypy-worker | Repair strict mypy failures that prevent the changed coordination repository from reaching a releasable state. | Promote and resolve the latent strict-mypy import/typing failures after the formatter repair; preserve fail-closed optional authority boundaries and rerun hosted state verification. |
 
 ### Blocked (80)
 
@@ -530,5 +531,3 @@
 | P1 | [AR-0502](../tasks/AR-0502-replay-cassettes.md): Implement immutable response cassette format | Unclaimed | Store versioned provider requests, event streams, causal IDs and integrity metadata. | Run full coordination validation, reconcile/snapshot/live doctor, verify clean synchronized repositories, then release AR-0502 done and return Cargo fence. |
 | P1 | [AR-0503](../tasks/AR-0503-strict-replay.md): Implement strict provider response replay | Unclaimed | Serve local recorded responses while real agent and tools execute. | Run live coordination reconciliation/doctor and complete state validation; release AR-0503 done only if clean synchronized evidence remains exact. |
 | P1 | [AR-0504](../tasks/AR-0504-replay-pacing.md): Implement pacing and replay overhead assessment | Unclaimed | Support immediate, fixed-latency, original-paced and seeded synthetic scenarios. | Run live coordination doctor/reconciliation, then release AR-0504 done with exact postmerge evidence. |
-| P1 | [AR-0505](../tasks/AR-0505-agent-replay-conformance.md): Prove real-agent replay conformance | Unclaimed | Test each actual client through recording and offline replay of engineering tasks. | Independently review the exact current-main four-agent native loopback evidence and capability limits; if accepted, release AR-0505 done without adding duplicate aggregate-matrix product changes. |
-| P1 | [AR-0603](../tasks/AR-0603-csb-execution-assurance.md): Establish pinned CSB execution and conformance boundary | Unclaimed | Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary. | Completed; retain explicit Ubuntu 24.04 x86_64 support limits. |

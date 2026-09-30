@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1561](tasks/AR-1561.md): State strict-mypy repair | Repair strict mypy failures that prevent the changed coordination repository from reaching a releasable state. | Promote and resolve the latent strict-mypy import/typing failures after the formatter repair; preserve fail-closed optional authority boundaries and rerun hosted state verification. | - |
+| P0 | [AR-1561](tasks/AR-1561.md): State strict-mypy repair | Repair strict mypy failures that prevent the changed coordination repository from reaching a releasable state. | Promote and resolve the latent strict-mypy import/typing failures after the formatter repair; preserve fail-closed optional authority boundaries and rerun hosted state verification. | asb-state-mypy-worker |
 
 ## Blocked
 

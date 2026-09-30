@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+    AR_1341 --> AR_1432
     AR_1341 --> AR_1433
     AR_1341 --> AR_1434
     AR_1341 --> AR_1451
@@ -957,4 +958,3 @@
 | [AR-1447](../tasks/AR-1447-asb-local-campaign-qualification.md) | [AR-1433](../tasks/AR-1433-runtime-mock-attempt-backend.md), [AR-1437](../tasks/AR-1437-local-record-replay-campaign.md), [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md) | [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md), [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md), [AR-1496](../tasks/AR-1496-runtime-owned-provider-capture-control.md) |
 | [AR-1448](../tasks/AR-1448-runtime-replay-authority-source.md) | [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md), [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md) | [AR-1449](../tasks/AR-1449-runtime-owned-local-replay-cli.md), [AR-1450](../tasks/AR-1450-runtime-owned-local-replay-acquisition.md), [AR-1451](../tasks/AR-1451-central-orchestration-authority-design.md), [AR-1452](../tasks/AR-1452-runtime-orchestration-service.md), [AR-1455](../tasks/AR-1455-runtime-owned-guided-replay-entrypoint.md) |
 | [AR-1449](../tasks/AR-1449-runtime-owned-local-replay-cli.md) | [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md), [AR-1448](../tasks/AR-1448-runtime-replay-authority-source.md) | None |
-| [AR-1450](../tasks/AR-1450-runtime-owned-local-replay-acquisition.md) | [AR-1448](../tasks/AR-1448-runtime-replay-authority-source.md) | [AR-1455](../tasks/AR-1455-runtime-owned-guided-replay-entrypoint.md), [AR-1487](../tasks/AR-1487-owner-backed-first-customer-qualification.md), [AR-1488](../tasks/AR-1488-owner-backed-user-journey.md), [AR-1496](../tasks/AR-1496-runtime-owned-provider-capture-control.md) |
