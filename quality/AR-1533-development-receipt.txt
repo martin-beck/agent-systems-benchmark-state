@@ -1,0 +1,7 @@
+AR-1533 provider-free AR-1308 development QEMU receipt
+
+State compatibility: coordinator v0.3.53, verified by AR-1547/1549
+Focused fixture/preflight/separation tests: 66/66 PASS
+Inputs: generated/local mock fixtures only; no reviewed seed or signing authority
+Evidence: diagnostic path preserves qualification_authorized=false and cleanup checks
+Claim: development-only diagnostic; AR-1308 formal qualification is not claimed

@@ -1,0 +1,7 @@
+AR-1532 provider-free AR-1307 development receipt
+
+State compatibility: coordinator v0.3.53, verified by AR-1547/1549
+Focused development/formal-separation tests: 66/66 PASS
+Inputs: generated/local mock fixtures only; no reviewed seed or signing authority
+Formal profiles: fail closed on missing or mismatched exact inputs
+Claim: development-only diagnostic; AR-1307 formal qualification is not claimed
