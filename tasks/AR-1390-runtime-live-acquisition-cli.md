@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1390-runtime-live-acquisition-cli",
   "checkpoint_commit": "10bffbf015bd7ca78d8c0d18f04cf0190195e933",
-  "claim_expires": "2026-09-30T05:22:29+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1388",
     "AR-1385",
@@ -18,7 +18,7 @@
   "observed_branch": "feature/ar-1390-runtime-live-acquisition-cli",
   "observed_dirty": 0,
   "observed_head": "bf89a45ddd71af96e6d4b6954320e199e147f83e",
-  "owner": "coordinator-ar1390-development-20260930",
+  "owner": "",
   "plan": "../plans/AR-1390-runtime-live-acquisition-cli.md",
   "priority": "P0",
   "schema_version": 1,
@@ -32,11 +32,11 @@
   },
   "spec_ref": "specs/AR-1390.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Development local/mock and strict-replay run/sweep bridge is actionable; deployment-owned authenticated live authority is optional future hardening, not a development blocker.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Runtime live acquisition and CLI bridge",
-  "updated_at": "2026-09-30T04:52:40+00:00",
+  "updated_at": "2026-09-30T04:53:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1390-runtime-live-acquisition-cli"
 }
 ---
@@ -212,3 +212,6 @@ reachability.
 
 - 2026-09-30T04:52:40+00:00: Recorded command exit 0; command argv SHA-256
   73e4cbcc0c00b4193e3d7917700f4a2274915d89fa375710ab5148fc63899039.
+
+- 2026-09-30T04:53:40+00:00: Development local/mock and strict-replay run/sweep bridge qualified on
+  exact protected main bf89a45; deployment-owned live authority remains optional future hardening.

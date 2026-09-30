@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1390](tasks/AR-1390-runtime-live-acquisition-cli.md): Runtime live acquisition and CLI bridge | Development local/mock and strict-replay run/sweep bridge is actionable; deployment-owned authenticated live authority is optional future hardening, not a development blocker. | Development path is actionable without AR-1523: re-audit and implement the ordinary run/sweep bridge against the existing deterministic local/mock and strict-replay authority, with exact-head gates. Deployment-owned authenticated live authority remains optional future production hardening. | coordinator-ar1390-development-20260930 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |

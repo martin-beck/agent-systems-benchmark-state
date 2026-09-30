@@ -822,11 +822,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | coordinator-ar1390-development-20260930 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Development local/mock and strict-replay run/sweep bridge is actionable; deployment-owned authenticated live authority is optional future hardening, not a development blocker. |
@@ -3493,7 +3493,7 @@ flowchart LR
         AR_1387["AR-1387 - Blocked"]:::status_blocked
         AR_1388["AR-1388 - Done"]:::status_done
         AR_1389["AR-1389 - Done"]:::status_done
-        AR_1390["AR-1390 - In progress"]:::status_in_progress
+        AR_1390["AR-1390 - Done"]:::status_done
         AR_1391["AR-1391 - Blocked"]:::status_blocked
         AR_1392["AR-1392 - Done"]:::status_done
         AR_1393["AR-1393 - Done"]:::status_done
@@ -4905,3 +4905,5 @@ flowchart LR
     AR_1423 --> AR_1424
     AR_1423 --> AR_1426
     AR_1423 --> AR_1430
+    AR_1424 --> AR_1425
+    AR_1425 --> AR_1426
