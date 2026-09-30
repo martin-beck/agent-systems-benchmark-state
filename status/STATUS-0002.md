@@ -2866,11 +2866,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | asb-ar1540-close-20260930 |
 | Parent | None |
 | Children | None |
 | Summary | Session/checkpoint/recovery compatibility is green against coordinator v0.3.53; close with AR-1549 evidence. |
@@ -3631,7 +3631,7 @@ flowchart LR
         AR_1537["AR-1537 - Blocked"]:::status_blocked
         AR_1538["AR-1538 - Blocked"]:::status_blocked
         AR_1539["AR-1539 - Blocked"]:::status_blocked
-        AR_1540["AR-1540 - Open"]:::status_open
+        AR_1540["AR-1540 - In progress"]:::status_in_progress
         AR_1541["AR-1541 - Planned"]:::status_planned
         AR_1542["AR-1542 - Planned"]:::status_planned
         AR_1543["AR-1543 - Planned"]:::status_planned
@@ -4924,5 +4924,3 @@ flowchart LR
     AR_1443 --> AR_1448
     AR_1443 --> AR_1449
     AR_1443 --> AR_1500
-    AR_1446 --> AR_1331
-    AR_1446 --> AR_1338

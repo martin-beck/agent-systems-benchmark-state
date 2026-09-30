@@ -8,13 +8,8 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1534](tasks/AR-1534.md): Coordinator vendor integrity repair | Immutable coordinator v0.3.53 vendor boundary and ASB lifecycle/session/SQLite compatibility are green; close with successor receipts. | Promote and close from AR-1547/AR-1549: v0.3.53 vendor verification and all compatibility gates are green; preserve the separate formal qualification boundary. | asb-ar1534-close-20260930 |
+| P0 | [AR-1540](tasks/AR-1540.md): Session and lifecycle contract compatibility | Session/checkpoint/recovery compatibility is green against coordinator v0.3.53; close with AR-1549 evidence. | Promote and close from AR-1549's v0.3.53 compatibility receipt; no additional ASB-owned session repair remains. | asb-ar1540-close-20260930 |
 | P0 | [AR-1550](tasks/AR-1550.md): Compatibility blocker graph reconciliation | Reconcile stale compatibility blocker records after AR-1549 without claiming formal qualification. | Promote and claim; reconcile stale AR-1534/1540/1541/1544 blocker metadata with the verified v0.3.53 receipts, preserving historical failure evidence. | asb-ar1550-graph-reconcile-20260930 |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1540](tasks/AR-1540.md): Session and lifecycle contract compatibility | Session/checkpoint/recovery compatibility is green against coordinator v0.3.53; close with AR-1549 evidence. | Promote and close from AR-1549's v0.3.53 compatibility receipt; no additional ASB-owned session repair remains. | - |
 
 ## Blocked
 
