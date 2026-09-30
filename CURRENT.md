@@ -10,6 +10,12 @@ Never edit this file directly.
 | P0 | [AR-1555](tasks/AR-1555.md): Plan and output workflow qualification | Qualify plan creation and output modes as one simple ASB user journey. | Promote after AR-1552, AR-1553 and AR-1554; run cross-command qualification and publish the user workflow. | asb-plan-command-worker |
 | P0 | [AR-1557](tasks/AR-1557.md): Protected-main receipt signature repair | Repair protected-main signature evidence after the receipt PR rebase generated an unsigned topic commit. | Promote and repair the unsigned receipt merge at 75a7e63 with a locally signed topic commit and protected non-squash merge; verify exact-main policy and hosted checks. | asb-signature-repair-worker |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1559](tasks/AR-1559.md): Machine consumer JSON opt-in repair | Repair the Rust workflow's workload catalog JSON consumer after the human-output default change. | Promote and repair machine-consuming workload-catalog checks to request --json explicitly; rerun the exact Rust workflow and post-merge checks. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -118,7 +124,6 @@ Never edit this file directly.
 | P0 | [AR-1546](tasks/AR-1546.md): AR-1308 formal capacity-input readiness repair | Audit and repair the AR-1308 capacity/input handoff after diagnostic QEMU integration, without executing qualification. | Formal-only work: after AR-1531 and AR-1536, verify the exact 8 GiB/8 GiB fixture and AR-1308 formal inputs for AR-1522. Do not block or alter the completed unsigned-development path. | - |
 | P0 | [AR-1556](tasks/AR-1556.md): Protected-main merge-topology gate repair | Repair and verify the protected-main repository-quality gate after the plan/output merge series. | Promote after AR-1555 functional evidence; diagnose and repair the protected-main merge-topology gate for the plan/output series, then verify the exact current main checks. | - |
 | P0 | [AR-1558](tasks/AR-1558.md): ASB plan/output release publication | Publish the ASB release containing the dynamic plan and output-mode workflow after exact green-main verification. | Promote only after the plan/output qualification and protected-main repair are released; build and publish the next ASB development release from one exact green main SHA. | - |
-| P0 | [AR-1559](tasks/AR-1559.md): Machine consumer JSON opt-in repair | Repair the Rust workflow's workload catalog JSON consumer after the human-output default change. | Promote and repair machine-consuming workload-catalog checks to request --json explicitly; rerun the exact Rust workflow and post-merge checks. | - |
 | P1 | [AR-0808](tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. | - |
 | P1 | [AR-0809](tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. | - |
 | P1 | [AR-0810](tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project's GitHub Pages site. | - |
