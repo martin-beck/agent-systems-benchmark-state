@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1288](../tasks/AR-1288-certificate-chain-authz.md) | [AR-0813](../tasks/AR-0813-remote-control-transport.md) | [AR-1370](../tasks/AR-1370-runner-authority-materialization.md), [AR-1371](../tasks/AR-1371-runner-authority-injection.md), [AR-1377](../tasks/AR-1377-runtime-chain-store.md), [AR-1468](../tasks/AR-1468-control-authority-materialization-successor.md) |
 | [AR-1289](../tasks/AR-1289-formal-lock-gate.md) | None | None |
 | [AR-1290](../tasks/AR-1290-dependabot-dco-boundary-recovery.md) | None | None |
 | [AR-1291](../tasks/AR-1291-superseded-pointer-repair.md) | None | None |
@@ -238,15 +239,15 @@
 | [AR-1532](../tasks/AR-1532.md) | [AR-1528](../tasks/AR-1528.md) | [AR-1535](../tasks/AR-1535.md), [AR-1542](../tasks/AR-1542.md) |
 | [AR-1533](../tasks/AR-1533.md) | [AR-1528](../tasks/AR-1528.md) | [AR-1536](../tasks/AR-1536.md), [AR-1543](../tasks/AR-1543.md) |
 | [AR-1534](../tasks/AR-1534.md) | [AR-1530](../tasks/AR-1530.md) | [AR-1535](../tasks/AR-1535.md), [AR-1536](../tasks/AR-1536.md), [AR-1542](../tasks/AR-1542.md), [AR-1543](../tasks/AR-1543.md) |
-| [AR-1535](../tasks/AR-1535.md) | [AR-1532](../tasks/AR-1532.md), [AR-1534](../tasks/AR-1534.md) | None |
-| [AR-1536](../tasks/AR-1536.md) | [AR-1531](../tasks/AR-1531.md), [AR-1533](../tasks/AR-1533.md), [AR-1534](../tasks/AR-1534.md) | None |
+| [AR-1535](../tasks/AR-1535.md) | [AR-1532](../tasks/AR-1532.md), [AR-1534](../tasks/AR-1534.md), [AR-1542](../tasks/AR-1542.md) | None |
+| [AR-1536](../tasks/AR-1536.md) | [AR-1531](../tasks/AR-1531.md), [AR-1533](../tasks/AR-1533.md), [AR-1534](../tasks/AR-1534.md), [AR-1543](../tasks/AR-1543.md) | None |
 | [AR-1537](../tasks/AR-1537.md) | [AR-1530](../tasks/AR-1530.md) | None |
 | [AR-1538](../tasks/AR-1538.md) | [AR-1530](../tasks/AR-1530.md) | None |
 | [AR-1539](../tasks/AR-1539.md) | [AR-1530](../tasks/AR-1530.md) | None |
 | [AR-1540](../tasks/AR-1540.md) | [AR-1530](../tasks/AR-1530.md) | [AR-1542](../tasks/AR-1542.md), [AR-1543](../tasks/AR-1543.md) |
 | [AR-1541](../tasks/AR-1541.md) | [AR-1530](../tasks/AR-1530.md) | [AR-1542](../tasks/AR-1542.md), [AR-1543](../tasks/AR-1543.md) |
-| [AR-1542](../tasks/AR-1542.md) | [AR-1532](../tasks/AR-1532.md), [AR-1534](../tasks/AR-1534.md), [AR-1540](../tasks/AR-1540.md), [AR-1541](../tasks/AR-1541.md) | None |
-| [AR-1543](../tasks/AR-1543.md) | [AR-1531](../tasks/AR-1531.md), [AR-1533](../tasks/AR-1533.md), [AR-1534](../tasks/AR-1534.md), [AR-1540](../tasks/AR-1540.md), [AR-1541](../tasks/AR-1541.md) | None |
+| [AR-1542](../tasks/AR-1542.md) | [AR-1532](../tasks/AR-1532.md), [AR-1534](../tasks/AR-1534.md), [AR-1540](../tasks/AR-1540.md), [AR-1541](../tasks/AR-1541.md) | [AR-1535](../tasks/AR-1535.md) |
+| [AR-1543](../tasks/AR-1543.md) | [AR-1531](../tasks/AR-1531.md), [AR-1533](../tasks/AR-1533.md), [AR-1534](../tasks/AR-1534.md), [AR-1540](../tasks/AR-1540.md), [AR-1541](../tasks/AR-1541.md) | [AR-1536](../tasks/AR-1536.md) |
 
 ## Complete AR inventory
 
@@ -524,4 +525,3 @@
 | P0 | [AR-1314](../tasks/AR-1314-optional-bundle-signing-development-release.md): Optional runtime-bundle signing for development and tagged releases | Unclaimed | Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile. | Blocked on AR-1397 integration repair: post-merge Repository quality rejects c58b0b0 tree against reviewed topic after AR-1395 advanced main, and c58 Rust workflow dispatch 35980460560 was cancelled by a higher-priority waiting request for refs/heads/main. Preserve all evidence; after AR-1397 repair and queue quiescence, rerun all seven exact-main workflows including Rust. |
 | P0 | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | Unclaimed | Publish the verified ASB agent catalog required by the first-run setup wizard. | Release AR-1316 as satisfied by exact current main; no new product diff or PR is required because producer implementation is already merged and verified. |
 | P0 | [AR-1319](../tasks/AR-1319-authenticated-agent-catalog-entry-contract.md): Authenticated agent catalog entry contract | Unclaimed | Make incomplete authenticated agent catalog entries truthful and selectable only after verification. | Completed; preserve the merged contract as the prerequisite for AR-1316 producer and future verified release-index work. |
-| P0 | [AR-1320](../tasks/AR-1320-persisted-agent-release-index.md): Persisted authenticated agent release index | Unclaimed | Persist and verify the ASB agent release index used by the setup wizard. | Do not create a new PR: origin/main already contains the AR-1320 persistence commit (77571ff), while the isolated branch is 226 commits behind and has no open PR. Release this AR with durable merged-main and verification evidence, then continue with AR-1322. |
