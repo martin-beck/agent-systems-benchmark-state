@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1562](tasks/AR-1562.md): ASB TUI development release-channel contract | Add explicit ASB TUI release-channel selection with a development default. | Define and implement the explicit dev/stable/nightly/experimental channel contract with dev as the current default; keep production channels fail-closed when metadata is absent. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -109,7 +115,6 @@ Never edit this file directly.
 | P0 | [AR-1227](tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. | - |
 | P0 | [AR-1545](tasks/AR-1545.md): AR-1307 formal-input readiness repair | Audit and repair the AR-1307 formal-input handoff after development runner integration, without executing qualification. | Formal-only work: after AR-1535 supplies reviewed inputs, inventory and independently verify every exact AR-1307 formal input for AR-1522. Do not block or alter the completed unsigned-development path. | - |
 | P0 | [AR-1546](tasks/AR-1546.md): AR-1308 formal capacity-input readiness repair | Audit and repair the AR-1308 capacity/input handoff after diagnostic QEMU integration, without executing qualification. | Formal-only work: after AR-1531 and AR-1536, verify the exact 8 GiB/8 GiB fixture and AR-1308 formal inputs for AR-1522. Do not block or alter the completed unsigned-development path. | - |
-| P0 | [AR-1562](tasks/AR-1562.md): ASB TUI development release-channel contract | Add explicit ASB TUI release-channel selection with a development default. | Define and implement the explicit dev/stable/nightly/experimental channel contract with dev as the current default; keep production channels fail-closed when metadata is absent. | - |
 | P0 | [AR-1563](tasks/AR-1563.md): ASB dev-channel clone/build materialization | Clone and build the current asb-tui main head for the ASB dev channel. | Implement bounded dev-channel clone, exact main-head resolution, locked release build, temporary staging, digest capture, cleanup, and atomic materialization. | - |
 | P0 | [AR-1564](tasks/AR-1564.md): ASB development TUI lifecycle integration | Integrate the dev-built TUI into the ASB lifecycle and launch path. | Wire the development materialized executable into install, status, upgrade, launch, and remove with the asb-tui development router and publish exact-head CI evidence. | - |
 | P1 | [AR-0808](tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. | - |
