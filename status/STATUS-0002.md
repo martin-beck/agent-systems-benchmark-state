@@ -507,8 +507,8 @@
 | Owner | Unclaimed |
 | Parent | None |
 | Children | None |
-| Summary | Complete production asb run/sweep live-provider dispatch through runtime-owned authenticated acquisition and teardown. |
-| Next action | Development path is actionable after AR-1523/1390: requalify run/sweep through deterministic local/mock and strict-replay runtime authority with exact-head gates. Deployment-owned live-provider materialization is optional future hardening. |
+| Summary | Development asb run/sweep dispatch is qualified with local/mock and strict replay; deployment-owned live-provider materialization is optional future hardening. |
+| Next action | Development qualification complete on exact protected main with deterministic local/mock and strict-replay runtime authority. Deployment-owned live-provider materialization remains optional future hardening; no development action remains. |
 
 ### AR-1368 — Control receipt runtime source
 
@@ -4902,5 +4902,3 @@ flowchart LR
     AR_1419 --> AR_1423
     AR_1420 --> AR_1424
     AR_1421 --> AR_1427
-    AR_1423 --> AR_1424
-    AR_1423 --> AR_1426

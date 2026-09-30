@@ -10,7 +10,7 @@
     "AR-1328"
   ],
   "id": "AR-1367",
-  "next_action": "Development path is actionable after AR-1523/1390: requalify run/sweep through deterministic local/mock and strict-replay runtime authority with exact-head gates. Deployment-owned live-provider materialization is optional future hardening.",
+  "next_action": "Development qualification complete on exact protected main with deterministic local/mock and strict-replay runtime authority. Deployment-owned live-provider materialization remains optional future hardening; no development action remains.",
   "observed_branch": "feature/ar-1367-ar1329-production-dispatch-integration",
   "observed_dirty": 0,
   "observed_head": "bf89a45ddd71af96e6d4b6954320e199e147f83e",
@@ -19,16 +19,22 @@
   "priority": "P0",
   "schema_version": 1,
   "status": "planned",
-  "summary": "Complete production asb run/sweep live-provider dispatch through runtime-owned authenticated acquisition and teardown.",
-  "task_revision": 29,
+  "summary": "Development asb run/sweep dispatch is qualified with local/mock and strict replay; deployment-owned live-provider materialization is optional future hardening.",
+  "task_revision": 30,
   "title": "AR-1329 production dispatch integration",
   "updated_at": "2026-09-29T22:58:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1367-ar1329-production-dispatch-integration"
 }
 ---
 
-Successor for the blocked AR-1329 execution path. Do not resume stale AR-1329
-metadata, touch asb-tui, or expose live authority through CLI/config input.
+Successor for the blocked AR-1329 execution path. For development, qualify the
+existing ordinary run/sweep bridge with deterministic local/mock and strict
+replay, without touching asb-tui or exposing authority through CLI/config
+input. This does not claim live-provider readiness.
+
+- 2026-09-30T06:45:00+00:00: Development path is satisfied by the exact-main AR-1390/1374
+  dispatch qualification receipts. No deployment-owned authenticated source or external provider
+  is required; live-provider materialization remains optional future hardening.
 
 - 2026-09-24T00:44:01+00:00: Promote fresh AR-1329 successor after runtime-owned receipt consumer
   AR-1366 completed; preserve fail-closed live execution.
