@@ -252,11 +252,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1544](../tasks/AR-1544.md): State-worktree observation compatibility | Unclaimed | Repair the coordinator v0.3.50 state-worktree observation regression required by ASB coordination and AR-1307/1308 gates. | Promote after AR-1530; compare the approved coordinator v0.3.50 project scan with ASB&#x27;s state-worktree safety contract, restore bounded state-repository worktree observations through an approved coordinator release or adapter, and rerun the exact compatibility gates. |
+| P0 | [AR-1544](../tasks/AR-1544.md): State-worktree observation compatibility | coordinator-ar1544-state-worktree-20260930 | Repair the coordinator v0.3.50 state-worktree observation regression required by ASB coordination and AR-1307/1308 gates. | Promote after AR-1530; compare the approved coordinator v0.3.50 project scan with ASB&#x27;s state-worktree safety contract, restore bounded state-repository worktree observations through an approved coordinator release or adapter, and rerun the exact compatibility gates. |
 
 ### Blocked (88)
 

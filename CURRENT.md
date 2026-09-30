@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1544](tasks/AR-1544.md): State-worktree observation compatibility | Repair the coordinator v0.3.50 state-worktree observation regression required by ASB coordination and AR-1307/1308 gates. | Promote after AR-1530; compare the approved coordinator v0.3.50 project scan with ASB's state-worktree safety contract, restore bounded state-repository worktree observations through an approved coordinator release or adapter, and rerun the exact compatibility gates. | - |
+| P0 | [AR-1544](tasks/AR-1544.md): State-worktree observation compatibility | Repair the coordinator v0.3.50 state-worktree observation regression required by ASB coordination and AR-1307/1308 gates. | Promote after AR-1530; compare the approved coordinator v0.3.50 project scan with ASB's state-worktree safety contract, restore bounded state-repository worktree observations through an approved coordinator release or adapter, and rerun the exact compatibility gates. | coordinator-ar1544-state-worktree-20260930 |
 
 ## Blocked
 
