@@ -1,0 +1,18 @@
+AR-1552 acceptance receipt
+==========================
+
+Protected ASB merge commit: bd634f11c3eb44099dac2f58946df1f97fe0fe0d
+Pull request: https://github.com/martin-beck/agent-systems-benchmark/pull/387
+
+Implementation:
+- `asb plan create` selects from the canonical workload catalog.
+- Host-platform runnable filtering is applied; unavailable/methodology-only entries fail closed.
+- Executable bytes are digest-bound and the emitted schema-v2 plan is validated before creation.
+- New catalog entries are discovered without a second CLI list.
+
+Evidence:
+- `cargo test -p asb-cli --lib`: 134 passed.
+- `cargo check -p asb-cli`: passed.
+- `cargo fmt --all -- --check`: passed.
+- `workflow_transcript`: 3 passed after the exact source provenance digest refresh.
+- Hosted PR checks were green before merge.
