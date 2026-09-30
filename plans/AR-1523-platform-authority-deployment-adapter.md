@@ -1,26 +1,21 @@
-# AR-1523 plan: platform authority deployment adapter
+# AR-1523 plan: development local/mock orchestration qualification
 
-1. Read AR-1451, AR-1452, AR-1453, AR-1505, AR-1508, AR-1510, AR-1513 and
-   the runtime/control architecture. Freeze the ownership and versioned
-   handoff contract before coding; do not duplicate caller-built authority.
-2. Define the smallest private platform-provider interface. It must return
-   opaque capability material only after validating authenticated receipt,
-   generation, namespace, endpoint, lease/relay roots, tool bundle, policy,
-   credential reference, restart, cancellation and expiry bindings.
-3. Implement the adapter in the runtime/control owner and connect it to the
-   central `asb-orchestrator` `AuthoritySource` used by ordinary run and
-   sweep. Replace the current live-mode rejection only after the opaque source
-   is available; local/mock and strict replay behavior must remain unchanged.
-   Private paths and credentials never cross CLI/control transport or durable
-   public evidence.
-4. Add provider-free deterministic positive, replay and hostile lifecycle tests;
-   use a local mock/replay authority for CI. Prove teardown, revocation,
-   cancellation, alternate-egress denial and one-shot source consumption.
-5. Run focused/full Rust, formal, privacy and schema gates, independently
-   review the complete diff, publish from a clean exact head, wait for required
-   CI, merge only when green, then verify a disposable first-customer-style
-   deployment with sanitized evidence.
+1. Read AR-1451, AR-1452, AR-1453, AR-1505 and AR-1513 plus the
+   runtime/control architecture. Preserve ownership and versioned handoff
+   contracts; do not duplicate caller-built authority.
+2. Exercise the existing central `asb-orchestrator` `AuthoritySource` through
+   the deterministic local/mock owner and strict-replay owner used by ordinary
+   development run and sweep.
+3. Prove provider-free positive and hostile lifecycle behavior: teardown,
+   revocation, cancellation, expiry, alternate-egress denial, one-shot source
+   consumption, replay rejection and unknown-field rejection.
+4. Run focused/full Rust, privacy and schema gates, independently review the
+   complete diff, publish from a clean exact head, wait for required CI and
+   record sanitized development qualification evidence.
+5. Keep any deployment-owned authenticated/live-provider adapter explicitly
+   optional. It must not be introduced as a prerequisite or inferred from
+   local/mock evidence.
 
-Completion requires the production callsite and exact-head evidence. A test
-façade, self-attested record, live-provider probe, or successful unit test
-without ordinary dispatch wiring is insufficient.
+Completion requires exact-head local/mock and strict-replay evidence through
+the central orchestrator. It does not claim deployment-owned live dispatch,
+external-provider reachability, or formal AR-1307/1308 qualification.

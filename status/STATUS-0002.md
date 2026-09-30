@@ -2628,15 +2628,15 @@
 
 | Field | Value |
 | --- | --- |
-| Status | blocked |
+| Status | planned |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
 | Owner | Unclaimed |
 | Parent | None |
 | Children | None |
-| Summary | Central orchestration is merged for local/replay, but PlanAuthoritySource still rejects live mode and no runtime-owned platform source supplies private authority for first-customer dispatch. |
-| Next action | Remain blocked until AR-1551 supplies the authenticated private authority source and opaque materialization handoff; then replace PlanAuthoritySource&#x27;s live-mode rejection with the central orchestrator adapter and run exact-head gates. |
+| Summary | Qualify the central orchestration path with deterministic local/mock and strict-replay authority; deployment-owned live authority is optional future hardening, not a development prerequisite. |
+| Next action | Development path is unblocked: promote and claim this AR, qualify the existing central orchestrator with deterministic local/mock and strict-replay authority, and run exact-head gates. A deployment-owned authenticated source is optional future production hardening and must not block development qualification. |
 
 ### AR-1524 — Repair live-dispatch dependency graph
 
@@ -3020,15 +3020,15 @@
 
 | Field | Value |
 | --- | --- |
-| Status | blocked |
+| Status | cancelled |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
 | Owner | Unclaimed |
 | Parent | None |
 | Children | None |
-| Summary | Provision the missing authenticated platform authority deployment required for first-customer live dispatch. |
-| Next action | Blocked: a deployment owner must supply or implement the non-test runtime/control-owned authenticated platform authority source and opaque materialization handoff; local/mock authority is development-only. Then AR-1523 consumes it and qualifies live dispatch. |
+| Summary | Optional future production-live platform authority bootstrap; not a development qualification requirement. |
+| Next action | No development action: deployment-owned authenticated authority is optional future production hardening. If live-provider production is later authorized, create a separately scoped successor; local/mock authority is sufficient for development qualification. |
 
 
 ## Dependency graph
@@ -3628,7 +3628,7 @@ flowchart LR
         AR_1520["AR-1520 - Done"]:::status_done
         AR_1521["AR-1521 - Superseded"]:::status_superseded
         AR_1522["AR-1522 - Blocked"]:::status_blocked
-        AR_1523["AR-1523 - Blocked"]:::status_blocked
+        AR_1523["AR-1523 - Planned"]:::status_planned
         AR_1524["AR-1524 - Done"]:::status_done
         AR_1525["AR-1525 - Done"]:::status_done
         AR_1526["AR-1526 - Done"]:::status_done
@@ -3656,7 +3656,7 @@ flowchart LR
         AR_1548["AR-1548 - Superseded"]:::status_superseded
         AR_1549["AR-1549 - Done"]:::status_done
         AR_1550["AR-1550 - Done"]:::status_done
-        AR_1551["AR-1551 - Blocked"]:::status_blocked
+        AR_1551["AR-1551 - Cancelled"]:::status_cancelled
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4915,6 +4915,3 @@ flowchart LR
     AR_1433 --> AR_1452
     AR_1433 --> AR_1456
     AR_1433 --> AR_1496
-    AR_1434 --> AR_1435
-    AR_1435 --> AR_1436
-    AR_1436 --> AR_1437

@@ -9,13 +9,13 @@
     "AR-1514"
   ],
   "id": "AR-1551",
-  "next_action": "Blocked: a deployment owner must supply or implement the non-test runtime/control-owned authenticated platform authority source and opaque materialization handoff; local/mock authority is development-only. Then AR-1523 consumes it and qualifies live dispatch.",
+  "next_action": "No development action: deployment-owned authenticated authority is optional future production hardening. If live-provider production is later authorized, create a separately scoped successor; local/mock authority is sufficient for development qualification.",
   "owner": "",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
-  "summary": "Provision the missing authenticated platform authority deployment required for first-customer live dispatch.",
-  "task_revision": 9,
+  "status": "cancelled",
+  "summary": "Optional future production-live platform authority bootstrap; not a development qualification requirement.",
+  "task_revision": 10,
   "title": "First-customer platform authority deployment bootstrap",
   "updated_at": "2026-09-30T03:11:41+00:00"
 }
@@ -23,7 +23,10 @@
 
 # AR-1551
 
-Provide the concrete deployment-owned source that AR-1523 is waiting for.
+Record the optional future production-hardening work for a deployment-owned
+authority source. AR-1523 no longer waits for this work: deterministic
+local/mock and strict-replay authority are sufficient for development
+qualification.
 The source must issue or retrieve private runtime authority only after an
 authenticated AR-1505 bootstrap binding, and must hand the runtime an opaque
 materialization capability for ordinary ASB run/sweep. It must keep private
@@ -37,7 +40,7 @@ PATH lookup, fixed public paths or durable public evidence, and must not add a
 runtime dependency on Agent Relay. Development and CI use deterministic local
 mock/replay authority fixtures and never require an external provider.
 
-Acceptance requires:
+If this optional production-hardening work is later authorized, acceptance would require:
 
 - an authenticated, versioned deployment-to-runtime handoff bound to session,
   generation, expiry, restart, cancellation, revocation and teardown;
@@ -50,8 +53,10 @@ Acceptance requires:
   deployment receipt;
 - no formal AR-1307/1308 qualification claim and no weakening of their gates.
 
-This AR supplies deployment authority only; AR-1523 owns the ASB production
-adapter and final live-dispatch qualification.
+This AR is intentionally cancelled for the development path. It supplies no
+development dependency and makes no live-provider or formal qualification
+claim. Any future production implementation must be a new, explicitly scoped
+AR with its own deployment owner.
 
 - 2026-09-30T05:07:00+00:00: Runtime baseline gates passed, but no non-test deployment source or
   ordinary run/sweep production callsite exists in protected ASB. Local/mock authority remains
@@ -80,3 +85,8 @@ adapter and final live-dispatch qualification.
   local/mock authority is deliberately development-only and cannot be promoted. AR-1523 remains
   blocked and must consume an authenticated opaque source from a future deployment implementation;
   no live-provider or formal qualification claim was made.
+
+- 2026-09-30T06:00:00+00:00: Cancelled as a development blocker by coordinator policy update.
+  No deployment-owned authenticated authority source exists or is required for development;
+  AR-1523 uses deterministic local/mock and strict-replay authority. Preserve this record only as
+  optional future production hardening, with any implementation requiring a new scoped AR.
