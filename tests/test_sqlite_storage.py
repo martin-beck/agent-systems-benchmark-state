@@ -161,6 +161,10 @@ class SQLiteStorageTest(unittest.TestCase):
         self.root = Path(self.temporary.name)
         self.tasks = self.root / "tasks"
         self.tasks.mkdir()
+        # v0.3.50's owner-only fence provisions beneath the runtime root;
+        # create the isolated parent explicitly instead of relying on a
+        # process-global project runtime.
+        (self.root / ".runtime").mkdir()
         self.database = self.root / ".runtime/coordinator.sqlite3"
 
     def tearDown(self) -> None:
