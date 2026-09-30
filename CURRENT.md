@@ -8,12 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1534](tasks/AR-1534.md): Coordinator vendor integrity repair | Coordinator metadata repair v0.3.50 is published; rerun approved vendor sync and all ASB gates against the exact immutable release. | Synchronize the exact coordinator v0.3.50 tag/source into ASB; rerun vendor verification, full state gates and exact-head review. Preserve AR-1307/1308 formal qualification as separate and do not claim it from development fixtures. | codex-asb-ar1534-v0349-sync-20260930 |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1540](tasks/AR-1540.md): Session and lifecycle contract compatibility | Repair ASB-owned session/checkpoint/recovery integration against coordinator v0.3.50. | Promote after the AR-1539 classification; repair ASB-owned session/checkpoint/recovery fixtures and argument adapters against v0.3.50, then rerun all state gates. | - |
+| P0 | [AR-1540](tasks/AR-1540.md): Session and lifecycle contract compatibility | Repair ASB-owned session/checkpoint/recovery integration against coordinator v0.3.50. | Promote after the AR-1539 classification; repair ASB-owned session/checkpoint/recovery fixtures and argument adapters against v0.3.50, then rerun all state gates. | codex-asb-ar1540-session-20260930 |
 
 ## Blocked
 
