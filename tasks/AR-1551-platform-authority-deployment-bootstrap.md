@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision the missing authenticated platform authority deployment required for first-customer live dispatch.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "First-customer platform authority deployment bootstrap",
-  "updated_at": "2026-09-30T03:09:37+00:00"
+  "updated_at": "2026-09-30T03:10:29+00:00"
 }
 ---
 
@@ -65,3 +65,6 @@ adapter and final live-dispatch qualification.
 
 - 2026-09-30T03:09:37+00:00: Recorded command exit 0; command argv SHA-256
   67348e3ff9b95e3f784d2495799176e1c6d53e658d3193972c3a9cb85e7ca378.
+
+- 2026-09-30T03:10:29+00:00: Recorded command exit 0; command argv SHA-256
+  f74a3e0c628aa519165a1e8299575f4a296a60e1a070dedb989674b1f7fffe94.
