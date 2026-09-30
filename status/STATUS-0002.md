@@ -3216,11 +3216,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | open |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1565-lock-repair |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Repair the yanked dependency lock that blocks all protected ASB merges. |
@@ -3866,7 +3866,7 @@ flowchart LR
         AR_1562["AR-1562 - Open"]:::status_open
         AR_1563["AR-1563 - Planned"]:::status_planned
         AR_1564["AR-1564 - Planned"]:::status_planned
-        AR_1565["AR-1565 - In progress"]:::status_in_progress
+        AR_1565["AR-1565 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4803,3 +4803,4 @@ flowchart LR
     AR_1310 --> AR_1316
     AR_1310 --> AR_1319
     AR_1314 --> AR_1315
+    AR_1314 --> AR_1495
