@@ -500,11 +500,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | coordinator-ar1367-development-20260930 |
 | Parent | None |
 | Children | None |
 | Summary | Development asb run/sweep dispatch is qualified with local/mock and strict replay; deployment-owned live-provider materialization is optional future hardening. |
@@ -3470,7 +3470,7 @@ flowchart LR
         AR_1364["AR-1364 - Done"]:::status_done
         AR_1365["AR-1365 - Done"]:::status_done
         AR_1366["AR-1366 - Done"]:::status_done
-        AR_1367["AR-1367 - Open"]:::status_open
+        AR_1367["AR-1367 - In progress"]:::status_in_progress
         AR_1368["AR-1368 - Blocked"]:::status_blocked
         AR_1369["AR-1369 - Superseded"]:::status_superseded
         AR_1370["AR-1370 - Superseded"]:::status_superseded
@@ -4900,5 +4900,3 @@ flowchart LR
     AR_1418 --> AR_1425
     AR_1419 --> AR_1420
     AR_1419 --> AR_1423
-    AR_1420 --> AR_1424
-    AR_1421 --> AR_1427

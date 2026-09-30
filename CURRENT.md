@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1367](tasks/AR-1367-ar1329-production-dispatch-integration.md): AR-1329 production dispatch integration | Development asb run/sweep dispatch is qualified with local/mock and strict replay; deployment-owned live-provider materialization is optional future hardening. | Development qualification complete on exact protected main with deterministic local/mock and strict-replay runtime authority. Deployment-owned live-provider materialization remains optional future hardening; no development action remains. | - |
+| P0 | [AR-1367](tasks/AR-1367-ar1329-production-dispatch-integration.md): AR-1329 production dispatch integration | Development asb run/sweep dispatch is qualified with local/mock and strict replay; deployment-owned live-provider materialization is optional future hardening. | Development qualification complete on exact protected main with deterministic local/mock and strict-replay runtime authority. Deployment-owned live-provider materialization remains optional future hardening; no development action remains. | coordinator-ar1367-development-20260930 |
 
 ## Blocked
 

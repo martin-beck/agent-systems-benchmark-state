@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1367-ar1329-production-dispatch-integration",
   "checkpoint_commit": "0c6dc52e1f4aa5854f73081711dbd9a5bc1a5d7c",
-  "claim_expires": "",
+  "claim_expires": "2026-09-30T05:29:06+00:00",
   "depends_on": [
     "AR-1366",
     "AR-1340",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1367-ar1329-production-dispatch-integration",
   "observed_dirty": 0,
   "observed_head": "bf89a45ddd71af96e6d4b6954320e199e147f83e",
-  "owner": "",
+  "owner": "coordinator-ar1367-development-20260930",
   "plan": "../plans/AR-1367-ar1329-production-dispatch-integration.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Development asb run/sweep dispatch is qualified with local/mock and strict replay; deployment-owned live-provider materialization is optional future hardening.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "AR-1329 production dispatch integration",
-  "updated_at": "2026-09-30T04:59:03+00:00",
+  "updated_at": "2026-09-30T04:59:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1367-ar1329-production-dispatch-integration"
 }
 ---
@@ -132,3 +132,5 @@ reachability.
 
 - 2026-09-30T04:59:03+00:00: Development qualification uses deterministic local/mock and strict
   replay; live deployment remains optional.
+
+- 2026-09-30T04:59:06+00:00: Claimed by coordinator-ar1367-development-20260930.
