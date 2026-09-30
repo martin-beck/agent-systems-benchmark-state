@@ -3114,6 +3114,20 @@
 | Summary | Repair protected-main signature evidence after the receipt PR rebase generated an unsigned topic commit. |
 | Next action | Promote and repair the unsigned receipt merge at 75a7e63 with a locally signed topic commit and protected non-squash merge; verify exact-main policy and hosted checks. |
 
+### AR-1558 — ASB plan/output release publication
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Publish the ASB release containing the dynamic plan and output-mode workflow after exact green-main verification. |
+| Next action | Promote only after the plan/output qualification and protected-main repair are released; build and publish the next ASB development release from one exact green main SHA. |
+
 
 ## Dependency graph
 
@@ -3747,6 +3761,7 @@ flowchart LR
         AR_1555["AR-1555 - In progress"]:::status_in_progress
         AR_1556["AR-1556 - Planned"]:::status_planned
         AR_1557["AR-1557 - In progress"]:::status_in_progress
+        AR_1558["AR-1558 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4845,28 +4860,3 @@ flowchart LR
     AR_1366 --> AR_1367
     AR_1366 --> AR_1368
     AR_1366 --> AR_1369
-    AR_1366 --> AR_1373
-    AR_1366 --> AR_1376
-    AR_1366 --> AR_1378
-    AR_1366 --> AR_1379
-    AR_1366 --> AR_1380
-    AR_1366 --> AR_1381
-    AR_1366 --> AR_1390
-    AR_1366 --> AR_1391
-    AR_1366 --> AR_1392
-    AR_1366 --> AR_1393
-    AR_1366 --> AR_1468
-    AR_1369 --> AR_1370
-    AR_1371 --> AR_1373
-    AR_1373 --> AR_1374
-    AR_1373 --> AR_1375
-    AR_1373 --> AR_1376
-    AR_1373 --> AR_1377
-    AR_1373 --> AR_1381
-    AR_1373 --> AR_1382
-    AR_1373 --> AR_1383
-    AR_1373 --> AR_1384
-    AR_1373 --> AR_1385
-    AR_1373 --> AR_1390
-    AR_1373 --> AR_1391
-    AR_1373 --> AR_1392

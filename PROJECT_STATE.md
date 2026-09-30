@@ -2,35 +2,35 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `75a7e630ea739e45b4ee41d02c17f5804891c113`
-- Local origin/main: `75a7e630ea739e45b4ee41d02c17f5804891c113`
+- Product remote main: `7aa09a0bde6667dd1af42afb204e12eac7d666a2`
+- Local origin/main: `7aa09a0bde6667dd1af42afb204e12eac7d666a2`
 - Primary worktree head: `bd7d10d4a760a84fa42de2b1fa9e97e8ea85ba09`
 
 ## Open pull requests
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #361 | `dependabot/github_actions/taiki-e/install-action-2.87.17@5d928611df27` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.14 to 2.87.17 |
-| #362 | `dependabot/cargo/serde_json-1.0.151@20dd222de144` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump serde_json from 1.0.143 to 1.0.151 |
-| #363 | `dependabot/cargo/rustix-1.1.5@8063a5a69951` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump rustix from 1.1.4 to 1.1.5 |
-| #364 | `dependabot/cargo/jsonschema-0.56.0@1b649e680a58` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump jsonschema from 0.33.0 to 0.56.0 |
-| #365 | `dependabot/cargo/rcgen-0.14.10@8604b5977544` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump rcgen from 0.14.7 to 0.14.10 |
-| #366 | `dependabot/cargo/schemars-1.2.2@047b52b0b5b9` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump schemars from 1.0.4 to 1.2.2 |
-| #384 | `feature/ar-1508-platform-owned-authority-provider@2c70f81100ca` | `main` | DIRTY | - | feat(runtime): platform-owned authority provider |
+| #361 | `dependabot/github_actions/taiki-e/install-action-2.87.17@5d928611df27` | `main` | UNKNOWN | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.14 to 2.87.17 |
+| #362 | `dependabot/cargo/serde_json-1.0.151@20dd222de144` | `main` | UNKNOWN | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump serde_json from 1.0.143 to 1.0.151 |
+| #363 | `dependabot/cargo/rustix-1.1.5@8063a5a69951` | `main` | UNKNOWN | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump rustix from 1.1.4 to 1.1.5 |
+| #364 | `dependabot/cargo/jsonschema-0.56.0@1b649e680a58` | `main` | UNKNOWN | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump jsonschema from 0.33.0 to 0.56.0 |
+| #365 | `dependabot/cargo/rcgen-0.14.10@8604b5977544` | `main` | UNKNOWN | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump rcgen from 0.14.7 to 0.14.10 |
+| #366 | `dependabot/cargo/schemars-1.2.2@047b52b0b5b9` | `main` | UNKNOWN | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump schemars from 1.0.4 to 1.2.2 |
+| #384 | `feature/ar-1508-platform-owned-authority-provider@2c70f81100ca` | `main` | UNKNOWN | - | feat(runtime): platform-owned authority provider |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36697392382 | `75a7e630ea73` | push | Hosted portability and native qualification | in_progress:- |
-| 36697392284 | `75a7e630ea73` | push | Emulated aarch64 portability | pending:- |
-| 36697392006 | `75a7e630ea73` | push | Huawei MIT source headers | completed:success |
-| 36697391951 | `75a7e630ea73` | push | Credential-free benchmark path | in_progress:- |
-| 36697391939 | `75a7e630ea73` | push | Rust verification | pending:- |
-| 36697391897 | `75a7e630ea73` | push | Fault assurance | in_progress:- |
-| 36697391890 | `75a7e630ea73` | push | Formal assurance | pending:- |
-| 36697391872 | `75a7e630ea73` | push | Repository quality | pending:- |
-| 36697385617 | `2bc138bec3b5` | pull_request | Hosted portability and native qualification | completed:success |
-| 36697385444 | `2bc138bec3b5` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 36697385391 | `2bc138bec3b5` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 36697385310 | `2bc138bec3b5` | pull_request | Formal assurance | in_progress:- |
+| 36698045184 | `7aa09a0bde66` | push | Emulated aarch64 portability | in_progress:- |
+| 36698045112 | `7aa09a0bde66` | push | Fault assurance | completed:success |
+| 36698045104 | `7aa09a0bde66` | push | Huawei MIT source headers | completed:success |
+| 36698045081 | `7aa09a0bde66` | push | Credential-free benchmark path | completed:success |
+| 36698045077 | `7aa09a0bde66` | push | Rust verification | in_progress:- |
+| 36698045072 | `7aa09a0bde66` | push | Hosted portability and native qualification | completed:success |
+| 36698045014 | `7aa09a0bde66` | push | Repository quality | in_progress:- |
+| 36698044867 | `7aa09a0bde66` | push | Formal assurance | in_progress:- |
+| 36697657341 | `89336bee0b9d` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 36697657290 | `89336bee0b9d` | pull_request | Emulated aarch64 portability | completed:success |
+| 36697657248 | `89336bee0b9d` | pull_request | Credential-free benchmark path | completed:success |
+| 36697657221 | `89336bee0b9d` | pull_request | Fault assurance | completed:success |
