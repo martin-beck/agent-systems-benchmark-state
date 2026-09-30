@@ -2880,7 +2880,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | open |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -3632,7 +3632,7 @@ flowchart LR
         AR_1538["AR-1538 - Blocked"]:::status_blocked
         AR_1539["AR-1539 - Blocked"]:::status_blocked
         AR_1540["AR-1540 - In progress"]:::status_in_progress
-        AR_1541["AR-1541 - Planned"]:::status_planned
+        AR_1541["AR-1541 - Open"]:::status_open
         AR_1542["AR-1542 - Planned"]:::status_planned
         AR_1543["AR-1543 - Planned"]:::status_planned
         AR_1544["AR-1544 - Superseded"]:::status_superseded
