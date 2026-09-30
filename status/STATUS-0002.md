@@ -3156,6 +3156,20 @@
 | Summary | Repair the state repository formatting gate before publishing its coordination release. |
 | Next action | Promote and format tests/test_handoffctl_vendor.py with the pinned Ruff tool; rerun exact state verification and record the repair. |
 
+### AR-1561 — State strict-mypy repair
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair strict mypy failures that prevent the changed coordination repository from reaching a releasable state. |
+| Next action | Promote and resolve the latent strict-mypy import/typing failures after the formatter repair; preserve fail-closed optional authority boundaries and rerun hosted state verification. |
+
 
 ## Dependency graph
 
@@ -3792,6 +3806,7 @@ flowchart LR
         AR_1558["AR-1558 - Done"]:::status_done
         AR_1559["AR-1559 - Done"]:::status_done
         AR_1560["AR-1560 - In progress"]:::status_in_progress
+        AR_1561["AR-1561 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4825,28 +4840,3 @@ flowchart LR
     AR_1341 --> AR_1391
     AR_1341 --> AR_1392
     AR_1341 --> AR_1393
-    AR_1341 --> AR_1432
-    AR_1341 --> AR_1433
-    AR_1341 --> AR_1434
-    AR_1341 --> AR_1451
-    AR_1342 --> AR_1344
-    AR_1342 --> AR_1345
-    AR_1342 --> AR_1390
-    AR_1342 --> AR_1391
-    AR_1342 --> AR_1392
-    AR_1342 --> AR_1393
-    AR_1342 --> AR_1432
-    AR_1342 --> AR_1433
-    AR_1342 --> AR_1434
-    AR_1347 --> AR_1349
-    AR_1347 --> AR_1350
-    AR_1347 --> AR_1351
-    AR_1350 --> AR_1349
-    AR_1350 --> AR_1351
-    AR_1351 --> AR_1352
-    AR_1352 --> AR_1353
-    AR_1352 --> AR_1354
-    AR_1352 --> AR_1355
-    AR_1352 --> AR_1356
-    AR_1356 --> AR_1357
-    AR_1357 --> AR_1358
