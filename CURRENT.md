@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1563](tasks/AR-1563.md): ASB dev-channel clone/build materialization | Clone and build the current asb-tui main head for the ASB dev channel. | Ready for independent review/PR checks at exact branch head a8d45db atop protected main 6d4014204f0e08ae7f037d63cac0051e5d3def0e. Review bounded clone/head resolution, fixed git/cargo tools, private temp workspace, 15-minute timeout, digest-bound atomic dev installation, cleanup, and stable-channel isolation. | ar1563-dev-materialization |
+| P0 | [AR-1563](tasks/AR-1563.md): ASB dev-channel clone/build materialization | Clone and build the current asb-tui main head for the ASB dev channel. | Ready for independent re-review of PR #398 at exact head 00b058a. Verify shallow filtered clone, 2 GiB recursive workspace quota, setsid process-group execution and group termination on timeout, cleanup, digest-bound atomic dev install, and unchanged stable channel. | ar1563-dev-materialization |
 
 ## Blocked
 
