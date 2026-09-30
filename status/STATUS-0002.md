@@ -3210,7 +3210,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Integrate the dev-built TUI into the ASB lifecycle and launch path. |
-| Next action | Wire the development materialized executable into install, status, upgrade, launch, and remove with the asb-tui development router and publish exact-head CI evidence. |
+| Next action | Ready for independent review of PR #399 at exact head 72c1f1b. Verify dev install/upgrade identity persistence, status/doctor/launch/remove routing, atomic remove rollback, stable-channel isolation, and exact-current-main compatibility. |
 
 ### AR-1565 — ASB yanked dependency lock repair
 
@@ -4795,6 +4795,3 @@ flowchart LR
     AR_1302 --> AR_1307
     AR_1302 --> AR_1515
     AR_1304 --> AR_1308
-    AR_1304 --> AR_1516
-    AR_1304 --> AR_1517
-    AR_1304 --> AR_1519

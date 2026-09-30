@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1564](tasks/AR-1564.md): ASB development TUI lifecycle integration | Integrate the dev-built TUI into the ASB lifecycle and launch path. | Wire the development materialized executable into install, status, upgrade, launch, and remove with the asb-tui development router and publish exact-head CI evidence. | ar1564-dev-lifecycle |
+| P0 | [AR-1564](tasks/AR-1564.md): ASB development TUI lifecycle integration | Integrate the dev-built TUI into the ASB lifecycle and launch path. | Ready for independent review of PR #399 at exact head 72c1f1b. Verify dev install/upgrade identity persistence, status/doctor/launch/remove routing, atomic remove rollback, stable-channel isolation, and exact-current-main compatibility. | ar1564-dev-lifecycle |
 
 ## Blocked
 
