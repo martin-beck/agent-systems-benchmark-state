@@ -24,9 +24,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Development local/mock and strict-replay run/sweep bridge is actionable; deployment-owned authenticated live authority is optional future hardening, not a development blocker.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Runtime live acquisition and CLI bridge",
-  "updated_at": "2026-09-30T04:51:48+00:00",
+  "updated_at": "2026-09-30T04:52:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1390-runtime-live-acquisition-cli"
 }
 ---
@@ -194,3 +194,6 @@ reachability.
   local/mock and strict replay without deployment-owned authentication.
 
 - 2026-09-30T04:51:48+00:00: Claimed by coordinator-ar1390-development-20260930.
+
+- 2026-09-30T04:52:13+00:00: Recorded command exit 0; command argv SHA-256
+  0660ca32d8a6240e6455aef0c4adc9d5fe1cd8d2dc21f15df9a7413fcc6920fa.
