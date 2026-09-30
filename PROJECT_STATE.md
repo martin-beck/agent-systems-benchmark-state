@@ -27,7 +27,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36792683335 | `e8afc588cbe1` | push | Hosted portability and native qualification | completed:success |
 | 36792683320 | `e8afc588cbe1` | push | Repository quality | completed:failure |
 | 36792683315 | `e8afc588cbe1` | push | Formal assurance | completed:success |
-| 36792683311 | `e8afc588cbe1` | push | Rust verification | in_progress:- |
+| 36792683311 | `e8afc588cbe1` | push | Rust verification | completed:failure |
 | 36792683300 | `e8afc588cbe1` | push | Credential-free benchmark path | completed:success |
 | 36792683299 | `e8afc588cbe1` | push | Fault assurance | completed:success |
 | 36791932087 | `4a654767fd55` | pull_request | Emulated aarch64 portability | completed:success |
