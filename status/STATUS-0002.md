@@ -2636,7 +2636,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Central orchestration is merged for local/replay, but PlanAuthoritySource still rejects live mode and no runtime-owned platform source supplies private authority for first-customer dispatch. |
-| Next action | Remain blocked until a runtime/control deployment owner supplies an authenticated private authority source and opaque materialization handoff; then replace PlanAuthoritySource&#x27;s live-mode rejection with the central orchestrator adapter and run exact-head gates. |
+| Next action | Remain blocked until AR-1551 supplies the authenticated private authority source and opaque materialization handoff; then replace PlanAuthoritySource&#x27;s live-mode rejection with the central orchestrator adapter and run exact-head gates. |
 
 ### AR-1524 — Repair live-dispatch dependency graph
 
@@ -3015,6 +3015,20 @@
 | Children | None |
 | Summary | Reconcile stale compatibility blocker records after AR-1549 without claiming formal qualification. |
 | Next action | Promote and claim; reconcile stale AR-1534/1540/1541/1544 blocker metadata with the verified v0.3.53 receipts, preserving historical failure evidence. |
+
+### AR-1551 — First-customer platform authority deployment bootstrap
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Provision the missing authenticated platform authority deployment required for first-customer live dispatch. |
+| Next action | Promote after AR-1505, AR-1513 and AR-1514 are done; implement and deploy the runtime/control-owned authenticated platform authority source, then hand its opaque materialization contract to AR-1523. |
 
 
 ## Dependency graph
@@ -3642,6 +3656,7 @@ flowchart LR
         AR_1548["AR-1548 - Superseded"]:::status_superseded
         AR_1549["AR-1549 - Done"]:::status_done
         AR_1550["AR-1550 - Done"]:::status_done
+        AR_1551["AR-1551 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4906,28 +4921,3 @@ flowchart LR
     AR_1436 --> AR_1440
     AR_1436 --> AR_1442
     AR_1437 --> AR_1440
-    AR_1437 --> AR_1443
-    AR_1437 --> AR_1447
-    AR_1441 --> AR_1442
-    AR_1441 --> AR_1446
-    AR_1441 --> AR_1488
-    AR_1442 --> AR_1338
-    AR_1442 --> AR_1443
-    AR_1442 --> AR_1446
-    AR_1442 --> AR_1447
-    AR_1442 --> AR_1488
-    AR_1442 --> AR_1499
-    AR_1443 --> AR_1331
-    AR_1443 --> AR_1338
-    AR_1443 --> AR_1444
-    AR_1443 --> AR_1446
-    AR_1443 --> AR_1448
-    AR_1443 --> AR_1449
-    AR_1443 --> AR_1500
-    AR_1446 --> AR_1331
-    AR_1446 --> AR_1338
-    AR_1446 --> AR_1448
-    AR_1446 --> AR_1458
-    AR_1446 --> AR_1487
-    AR_1447 --> AR_1443
-    AR_1447 --> AR_1456
