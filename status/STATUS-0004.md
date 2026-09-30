@@ -121,11 +121,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1562](../tasks/AR-1562.md): ASB TUI development release-channel contract | Unclaimed | Add explicit ASB TUI release-channel selection with a development default. | Define and implement the explicit dev/stable/nightly/experimental channel contract with dev as the current default; keep production channels fail-closed when metadata is absent. |
+| P0 | [AR-1562](../tasks/AR-1562.md): ASB TUI development release-channel contract | ar1562-dev-channel-contract | Add explicit ASB TUI release-channel selection with a development default. | Define and implement the explicit dev/stable/nightly/experimental channel contract with dev as the current default; keep production channels fail-closed when metadata is absent. |
 
 ### Blocked (80)
 

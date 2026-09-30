@@ -3174,11 +3174,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1562-dev-channel-contract |
 | Parent | None |
 | Children | None |
 | Summary | Add explicit ASB TUI release-channel selection with a development default. |
@@ -3849,7 +3849,7 @@ flowchart LR
         AR_1559["AR-1559 - Done"]:::status_done
         AR_1560["AR-1560 - Superseded"]:::status_superseded
         AR_1561["AR-1561 - Cancelled"]:::status_cancelled
-        AR_1562["AR-1562 - Open"]:::status_open
+        AR_1562["AR-1562 - In progress"]:::status_in_progress
         AR_1563["AR-1563 - Planned"]:::status_planned
         AR_1564["AR-1564 - Planned"]:::status_planned
     end
@@ -4814,4 +4814,3 @@ flowchart LR
     AR_1328 --> AR_1342
     AR_1328 --> AR_1343
     AR_1328 --> AR_1346
-    AR_1328 --> AR_1347

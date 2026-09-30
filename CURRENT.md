@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1562](tasks/AR-1562.md): ASB TUI development release-channel contract | Add explicit ASB TUI release-channel selection with a development default. | Define and implement the explicit dev/stable/nightly/experimental channel contract with dev as the current default; keep production channels fail-closed when metadata is absent. | - |
+| P0 | [AR-1562](tasks/AR-1562.md): ASB TUI development release-channel contract | Add explicit ASB TUI release-channel selection with a development default. | Define and implement the explicit dev/stable/nightly/experimental channel contract with dev as the current default; keep production channels fail-closed when metadata is absent. | ar1562-dev-channel-contract |
 
 ## Blocked
 
