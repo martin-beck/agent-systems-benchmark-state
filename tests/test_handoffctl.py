@@ -145,9 +145,9 @@ class HandoffTest(unittest.TestCase):
     def test_checkpoint_update_requires_full_lowercase_commit(self) -> None:
         metadata: dict[str, object] = {}
         with self.assertRaisesRegex(RuntimeError, "full lowercase Git commit"):
-            CORE.apply_checkpoint(SimpleNamespace(checkpoint_commit="bad"), metadata)
+            CORE.apply_checkpoint(SimpleNamespace(checkpoint_commit="bad", owner=""), metadata)
         checkpoint = "a" * 40
-        CORE.apply_checkpoint(SimpleNamespace(checkpoint_commit=checkpoint), metadata)
+        CORE.apply_checkpoint(SimpleNamespace(checkpoint_commit=checkpoint, owner=""), metadata)
         self.assertEqual(metadata["checkpoint_commit"], checkpoint)
 
     """Exercise transaction safety without accessing the live project."""
