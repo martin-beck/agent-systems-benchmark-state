@@ -7,5000 +7,2440 @@
 
 ## Portfolio overview
 
-**557 ARs tracked** across 6 active status categories.
+**558 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 82 |
-| **Planned** | Defined work awaiting promotion or dependencies | 48 |
+| **Planned** | Defined work awaiting promotion or dependencies | 49 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 396 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 28 |
 
-## Company hierarchy rollup
-
-This deterministic view contains task metadata only; raw logs, command output, and credentials are never rendered.
-
-| Metric | Value |
-| --- | ---: |
-| Tasks | 557 |
-| Parent tasks | 0 |
-| Child tasks | 0 |
-| Open or active | 2 |
-| Blocked | 82 |
-
-## Role and team rollup
-
-| Role | Team | Tasks | Open/active | Blocked | Done |
-| --- | --- | ---: | ---: | ---: | ---: |
-| unassigned | unassigned | 557 | 2 | 82 | 396 |
-
-## Task drill-down
-
-### AR-0001 — Bootstrap public repositories
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Establish both public MIT repositories, Rust workspace, coordination reuse and evidence-backed plans. |
-| Next action | No action; foundation verified. Begin AR-0002, AR-0003, AR-0101, AR-0501 or AR-0701 through the coordinator. |
-
-### AR-0002 — Harden reusable coordination framework
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Adapt generic coordination tooling for public ASB workers without importing private state. |
-| Next action | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. |
-
-### AR-0003 — Enforce Rust and repository quality gates
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. |
-| Next action | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. |
-
-### AR-0004 — Generate the visual AR status document
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Render every AR, status, and dependency as an accessible visual state document. |
-| Next action | Await independent immutable-head review of state PR 3 at eedd311; repair findings before coordinator integration. |
-
-### AR-0005 — Add transactional AR promotion
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Make planned-to-open promotion a transactional handoffctl operation. |
-| Next action | Await immutable independent review of exact state PR #4 head 4e56e83 and integrate only after verified green CI. |
-
-### AR-0101 — Freeze versioned extension and result contracts
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Specify typed agent, workload, collector, runtime and result contracts before parallel implementations. |
-| Next action | Await independent immutable-head delta review and coordinator integration of exact green PR #3 head 9e90c6a6; then run post-merge verification. |
-
-### AR-0102 — Implement process execution and cancellation
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Run real client processes with bounded I/O, monotonic deadlines and process-tree ownership. |
-| Next action | Release done after successful reviewed integration, exact-main local/hosted checks, synchronized refs and live state doctor. |
-
-### AR-0103 — Implement isolated execution and resource leases
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets. |
-| Next action | Release AR-0103 done after exact-main local and hosted post-merge verification. |
-
-### AR-0104 — Implement durable run storage and recovery
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Persist manifests, event streams, artifact hashes and recoverable execution intentions. |
-| Next action | Await exact-head PR 6 CI and independent immutable-head review; repair findings before coordinator integration. |
-
-### AR-0105 — Repair sandbox test target portability
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Remove repository-target assumptions from sandbox lease tests so clean external Cargo targets work. |
-| Next action | Release AR-0105 done after repaired exact-main local/hosted/state validation. |
-
-### AR-0201 — Collect portable system and session metrics
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Collect procfs and cgroup v2 CPU, memory, I/O, faults, pressure and throttling. |
-| Next action | Run final state reconcile/live doctor/full validation, then release AR-0201 done and explicitly return the Cargo workspace/lock fence. |
-
-### AR-0202 — Add optional kernel diagnostics
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P2 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. |
-| Next action | Run final exact-main and local post-merge verification using required native x86_64 kernel evidence and applicable pinned QEMU AArch64 portability checks; record native ARM64 PMU/eBPF as optional future evidence, then release. |
-
-### AR-0203 — Implement statistical and SLO assessment
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Compute latency distributions, quality/throughput intervals and evidence-aware SLO results. |
-| Next action | Create and push reviewed signed+DCO no-ff merge of exact head 3bcfd85; verify PR merge identity, then run exact-main local and hosted post-merge checks. |
-
-### AR-0204 — Implement capacity sweeps and arrival scheduling
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Run repeated closed-loop and open-loop experiments with bounded concurrency. |
-| Next action | Await coordinator postmerge local validation/state doctor confirmation before releasing AR-0204. |
-
-### AR-0301 — Implement OpenCode client adapter
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Run pinned OpenCode through its structured supported interfaces. |
-| Next action | Await exact PR #13 head dfb0d54 hosted CI and immutable independent review; integrate only if both are green. |
-
-### AR-0302 — Implement OpenDesk client adapter
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Support the bitclub OpenDesk CLI with its own dialect and compatibility record. |
-| Next action | Publish approved 8eb99d3, require exact-head CI and immutable review, integrate only signed+DCO green head, then run post-merge verification. |
-
-### AR-0303 — Implement aider client adapter
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Support unattended aider editing with bounded input, output and repository changes. |
-| Next action | Publish immutable da81ead6932c5d5469ca57fc981646fa980c2780, open focused PR, and require exact-head CI before integration. |
-
-### AR-0304 — Implement Codex client adapter
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Use Codex noninteractive structured events or app-server with declared capability boundaries. |
-| Next action | Monitor PR 24 exact head eb03bd9 x86_64/aarch64 Rust, quality/coverage/supply, and formal CI; investigate any failure and do not merge without coordinator authorization. |
-
-### AR-0305 — Implement Gemini CLI client adapter
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Run pinned Gemini CLI through noninteractive JSON events. |
-| Next action | Await exact-main quality and Rust CI at signed merge e85548d; then reconcile/live doctor and release only if all green and clean. |
-
-### AR-0306 — Implement Qwen Code client adapter
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Run pinned Qwen Code through isolated headless stream-JSON. |
-| Next action | Merge reviewed exact candidate 0be96c9 with a signed DCO merge commit, push exact main, run post-merge gates and require fresh exact-main CI. |
-
-### AR-0307 — Implement goose client adapter
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Run pinned AAIF goose in no-session structured mode. |
-| Next action | Inspect exact-main merge 61b5dd33ba04295a476e444d8bfd338ab972507a runs 34078486469 Rust/native x86_64+aarch64, 34078486478 quality, and 34078486470 formal; release only after all green and residual/state/live audit. |
-
-### AR-0308 — Implement mini-SWE-agent client adapter
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P2 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Run pinned mini-SWE-agent as a bounded batch engineering agent. |
-| Next action | Run final state validation/live doctor and release done after confirming clean synchronized product/state refs at signed merge a0d80e4. |
-
-### AR-0309 — Implement maintained OpenHands SDK client adapter
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P2 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Run a maintained MIT OpenHands SDK or canonical headless client. |
-| Next action | Monitor PR #65 exact-head CI for fec0487, investigate any failure, and await final review; do not merge. |
-
-### AR-0310 — Define common provider profiles
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Normalize one provider configuration for safe translation across heterogeneous agent adapters. |
-| Next action | Monitor exact-main hosted runs for signed merge d384c4c54a4576dadaae3a542cfc09a5e339a4fe, then run live state validation and await release authorization. |
-
-### AR-0311 — Support a shared OpenAI provider
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Apply one default OpenAI provider profile consistently to all supported agents. |
-| Next action | Monitor PR #73 exact head 1128595cd2f93988374be008fcecda07fef9fde4; do not merge until every required exact-head check is green and coordinator authorizes integration. |
-
-### AR-0312 — Support a shared local Ollama provider
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Apply one pinned local Ollama provider and model configuration to all supported agents. |
-| Next action | Monitor fresh exact-head CI for PR #71 at rebased 8137f5baa0535e5d6e74d5a81e1dfbb0deaa2615; do not merge pending coordinator review. |
-
-### AR-0313 — Configure one provider for all agents
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Let test plans select one provider profile for every chosen supported agent atomically. |
-| Next action | Wait for PR #78 exact-head CI; independently review immutable diff, then merge serially only if every required check is green. |
-
-### AR-0314 — Choose matching replay or live provider execution
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Offer matching prior recordings or an actual provider connection without silently choosing either. |
-| Next action | Durable release and post-merge verification are complete; no further AR-0314 action. |
-
-### AR-0315 — Verify cross-agent provider parity
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Conformance-test identical OpenAI and Ollama profiles across the complete supported-agent matrix. |
-| Next action | Complete; no further action. |
-
-### AR-0316 — Publish reproducible agent runtime bundles
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Make supported agent installations reproducible, license-audited, SBOM-backed, and independently verifiable. |
-| Next action | No further action for the released fail-closed catalog; complete runtime closures remain future work and must not be inferred. |
-
-### AR-0317 — Define runtime bundle manifest and verifier
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Define common signed runtime bundle manifests and offline verification. |
-| Next action | Completed; retain Linux/operator-owned acquisition limits. |
-
-### AR-0318 — Implement the credential-reference boundary
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Resolve provider credential references without exposing secrets or accepting ambient credentials. |
-| Next action | Coordinator decision required: formally amend AR-0318 outcome/acceptance to Environment-only support, or authorize separately specified private locator contracts before implementing FileDescriptor/Helper; do not release done under the current three-source plan. |
-
-### AR-0319 — Implement credential FD and helper resolvers
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Add explicit file-descriptor and helper credential references without ambient-secret fallback. |
-| Next action | Monitor every PR #87 exact-head workflow to terminal; merge only after all checks are green and coordinator confirms integration authorization, then run exact-main postmerge gates and release. |
-
-### AR-0320 — Integrate provider credential boundary
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Integrate the verified environment credential resolver into the product workspace. |
-| Next action | Monitor PR #80 exact head 0f92642/base 9feeba652 checks to terminal; investigate any failure, merge only with coordinator authorization after all required checks green, then exact-main postmerge verification and release. |
-
-### AR-0401 — Implement original engineering workloads
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Deliver bug fix, feature addition, refactoring, test generation, dependency migration, build repair and repository navigation fixtures via extension API. |
-| Next action | Await coordinator integration authorization for exact reviewed green PR #20 head 41ffc6e; retain Cargo fence, then signed no-ff merge and complete exact-main post-merge validation. |
-
-### AR-0402 — Integrate SWE-bench and Aider Polyglot
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P2 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Add versioned external workload adapters without vendoring datasets. |
-| Next action | Complete AR-0402 acceptance review and determine whether remaining production integration belongs in a successor AR; do not claim real evaluator qualification. |
-
-### AR-0403 — Integrate Terminal-Bench workloads
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P2 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Import terminal tasks through an adapter to the published harness or task format. |
-| Next action | Durable release and post-merge verification are complete; no further AR-0403 action. Native execution, reset, network isolation, evaluator image/SBOM, and native aarch64 remain unqualified. |
-
-### AR-0404 — Expand established benchmark catalogue
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P3 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Evaluate SWE-bench Pro, BigCodeBench, EvalPlus and LiveCodeBench as optional suites. |
-| Next action | Add signed normal follow-up after rewritten merge so push range is resolvable; rerun exact-main post-merge workflows. |
-
-### AR-0405 — Add performance and reproducibility workloads
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P2 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Assess SWE-Perf, SWE-fficiency and CORE-Bench for correctness-preserving optimization and reproducibility. |
-| Next action | Integrate signed no-ff after PR #96 exact-head CI is fully green; then run post-merge exact-main verification before release. |
-
-### AR-0406 — Add evolving long-horizon workload sources
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P3 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation. |
-| Next action | Monitor all required post-merge CI runs for exact main ca6e75916a8c9831b9107377cd48d731463c272a; release only after every required gate is green. |
-
-### AR-0501 — Evaluate replay literature and reusable tools
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Compare literature and record/replay implementations using identical synthetic conformance cases. |
-| Next action | Await independent immutable-head review and coordinator integration of product PR #4; then run exact-main post-merge verification before release. |
-
-### AR-0502 — Implement immutable response cassette format
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Store versioned provider requests, event streams, causal IDs and integrity metadata. |
-| Next action | Run full coordination validation, reconcile/snapshot/live doctor, verify clean synchronized repositories, then release AR-0502 done and return Cargo fence. |
-
-### AR-0503 — Implement strict provider response replay
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Serve local recorded responses while real agent and tools execute. |
-| Next action | Run live coordination reconciliation/doctor and complete state validation; release AR-0503 done only if clean synchronized evidence remains exact. |
-
-### AR-0504 — Implement pacing and replay overhead assessment
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Support immediate, fixed-latency, original-paced and seeded synthetic scenarios. |
-| Next action | Run live coordination doctor/reconciliation, then release AR-0504 done with exact postmerge evidence. |
-
-### AR-0505 — Prove real-agent replay conformance
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Test each actual client through recording and offline replay of engineering tasks. |
-| Next action | Independently review the exact current-main four-agent native loopback evidence and capability limits; if accepted, release AR-0505 done without adding duplicate aggregate-matrix product changes. |
-
-### AR-0506 — Qualify OpenCode replay
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Qualify replay conformance for OpenCode. |
-| Next action | Monitor rerun of exact-head x86 Rust job after investigated bounded ETXTBSY fixture flake; merge only after every workflow is green. |
-
-### AR-0507 — Qualify OpenDesk replay
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Qualify replay conformance for OpenDesk. |
-| Next action | Independently review immutable head 24a5519ef006c063f3a8d6e81d0928f2e9e986f9/tree 96f01bd39cd5e75a70d3618cec55e603b9643d38; publish only after approval, then require exact-head x86_64/aarch64 quality/formal/fault CI. |
-
-### AR-0508 — Qualify aider replay
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Qualify replay conformance for aider. |
-| Next action | Await independent immutable review of exact ec0a2930690c108987b4a867632316651282cc97; if approved, publish with an exact absent-ref lease, open focused PR, and require exact-head CI before integration. |
-
-### AR-0509 — Qualify Codex replay
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Qualify replay conformance for Codex. |
-| Next action | Monitor PR #45 exact d086fec checks; investigate any failure, then integrate only after every required workflow is green. |
-
-### AR-0510 — Qualify Gemini replay
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Qualify replay conformance for Gemini. |
-| Next action | Independent immutable review of one-path timing repair 1366ad3bd03fe8806e80223a55989e34fd72245a before publication. |
-
-### AR-0511 — Qualify Qwen Code replay
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Qualify replay conformance for Qwen Code. |
-| Next action | Release done after exact-main merge 1963364e75eec8cfcde0cfd0eaca672df12a2968 passed local post-merge gates and hosted runs 34156966254 quality, 34156966248 formal, 34156966219 Rust, and 34156966214 fault. |
-
-### AR-0512 — Qualify goose replay
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Qualify replay conformance for goose. |
-| Next action | Hold immutable 6dfa688 for independent review; publish only after approval. |
-
-### AR-0513 — Qualify mini-SWE replay
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Qualify replay conformance for mini-SWE-agent. |
-| Next action | Run final coordination reconcile, snapshot, full state validation and live doctor; release AR-0513 done only if product/state refs and worktrees remain clean and synchronized. |
-
-### AR-0514 — Qualify OpenHands replay
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Qualify replay conformance for OpenHands. |
-| Next action | Wait for AR-0521 to publish and independently verify the signed content-addressed OpenHands environment bundle, offline verifier, reproducible approved digest, and altered-input rejection; then reclaim AR-0514 for native replay requalification. |
-
-### AR-0515 — Aggregate replay conformance matrix
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Aggregate complete per-agent replay conformance. |
-| Next action | Aggregate per-agent replay evidence into the complete supported-agent conformance matrix. |
-
-### AR-0516 — OpenDesk strict-replay HTTP compatibility
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Add narrowly scoped strict-replay compatibility for pinned OpenDesk traffic. |
-| Next action | Monitor exact-main 8eff6f95 CI; release only after every run is green and final synchronized state/live validation passes. |
-
-### AR-0517 — Replay redacted request pointers
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Make privacy-safe redacted request bodies strictly replayable. |
-| Next action | Apply bounded cassette request redaction pointers during strict incoming JSON comparison and align dialect option invariants. |
-
-### AR-0518 — Gemini GenerateContent strict-replay dialect
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Add strict replay support for Gemini GenerateContent SSE traffic. |
-| Next action | Await exact-main quality/Rust x86_64+aarch64/fault CI for signed merge 74d311ca; then reconcile, live doctor, and release AR-0518. |
-
-### AR-0519 — Gemini thinkingConfig contract repair
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Correct Gemini thinkingConfig strict-replay contract from pinned capture evidence. |
-| Next action | Monitor PR #47 exact immutable head 0aff702 CI; integrate only after every x86_64/aarch64 quality/formal/fault check is green and coordinator authorizes. |
-
-### AR-0520 — Interaction-aware request redaction
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Support per-interaction request redaction policies for mixed catalog and private requests. |
-| Next action | Independent immutable review of exact 867861c95c192659102d07f0093a69b58d281513; publish only after approval, then require exact-head x86_64/aarch64 CI. |
-
-### AR-0521 — Reproduce and pin the OpenHands replay environment
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Repair OpenHands replay environment provenance and reproducibility. |
-| Next action | Use the recorded AR-0514 failure evidence to define an immutable, reproducible OpenHands environment bundle and verifier; AR-0514 remains blocked until this evidence is independently verified. |
-
-### AR-0601 — Prototype optional CSB integration
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P2 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Reuse CSB application execution and monitoring where contracts fit ASB. |
-| Next action | Monitor PR #70 exact-head CI for terminal results; do not merge without coordinator authorization. |
-
-### AR-0602 — Validate CSB monitoring and contention diagnostics
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P2 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Validate and integrate optional CSB resource monitoring and kernel-contention evidence without double counting or overstating support. |
-| Next action | Audit CSB monitoring using native x86_64 oracles and required pinned QEMU AArch64 portable mapping/lifecycle checks; keep native ARM64 counters and performance as optional future evidence. |
-
-### AR-0603 — Establish pinned CSB execution and conformance boundary
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary. |
-| Next action | Completed; retain explicit Ubuntu 24.04 x86_64 support limits. |
-
-### AR-0604 — Qualify native CSB monitoring contention and overhead
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. |
-| Next action | Obtain authorized native x86 runner and immutable CSB/Python evidence; rerun native_boundary and record A/B overhead. |
-
-### AR-0701 — Pin distribution and architecture support matrix
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Define Ubuntu, Debian, Fedora, enterprise, openSUSE, Arch, Alpine and openEuler target manifests. |
-| Next action | Run final coordination repository validation and live doctor, then release AR-0701 done if state and all product worktrees remain consistent. |
-
-### AR-0702 — Validate native Linux kernels and architectures
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Qualify native x86_64 and required emulated AArch64 portability; track native ARM64 as optional future evidence. |
-| Next action | Rebase PR #31, replace native ARM64 completion gates with the pinned QEMU AArch64 lane where applicable, document native ARM64 as optional future qualification, and rerun exact-head checks. |
-
-### AR-0703 — Provision native platform qualification capacity
-
-| Field | Value |
-| --- | --- |
-| Status | future |
-| Priority | P4 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. |
-| Next action | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
-
-### AR-0704 — Control native capacity lifecycle
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Control genuine native platform capacity lifecycle. |
-| Next action | PR #119 exact head 4630f90 is rebased onto protected main 5ddac12. Fresh exact-head checks were absent immediately after force-push; close/reopen retriggered them. At last query all 12 checks are pending except AWQ shadow and SPDX headers pass. Wait for every required check terminal success; do not merge on partial/pending evidence. |
-
-### AR-0705 — Provide native Debian capacity
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P2 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Qualify booted Debian on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. |
-| Next action | Qualify native x86_64 Debian and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
-
-### AR-0706 — Provide native openEuler capacity
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P2 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. |
-| Next action | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
-
-### AR-0707 — Qualify emulated aarch64 portability
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Add explicit emulated-aarch64 portability qualification without claiming native support. |
-| Next action | Provide a reproducible x86_64-hosted aarch64 VM/emulation lane for userspace portability and negative qualification only. |
-
-### AR-0801 — Implement terminal and automation interfaces
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Provide doctor, plan, run, sweep, compare and report with stable JSON output. |
-| Next action | No further AR-0801 action; preserve the verified doctor, plan, run, sweep, compare, report, and serve surface, with record and replay explicitly unsupported. |
-
-### AR-0802 — Deliver runnable user and extension guides
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P2 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Publish executable offline quickstart, workload/agent extension guide and reproducibility guide. |
-| Next action | Capture actual CLI workflows after commands are implemented. |
-
-### AR-0803 — Define the frontend control API
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary. |
-| Next action | Await coordinator authorization to integrate exact green PR #63 head 8d7d90014dbcf4df2f08be90b08392776d702a11; do not rewrite or merge meanwhile. |
-
-### AR-0804 — Build the terminal settings wizard
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Guide users through agents, providers, workloads, resources, replay, metrics, and output settings. |
-| Next action | Complete; no further action. |
-
-### AR-0805 — Add terminal run control and status
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI. |
-| Next action | Complete; no further action. |
-
-### AR-0806 — Add terminal history and analysis
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI. |
-| Next action | Repair merge DCO trailer and add a signed normal ancestry commit; rerun exact-main gates. |
-
-### AR-0807 — Qualify terminal frontend usability and isolation
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Qualify the standalone TUI across terminals and platforms without perturbing benchmark results. |
-| Next action | Independently qualify terminal UX, accessibility, isolation, packaging and recovery after the complete standalone wizard passes focused assurance. |
-
-### AR-0808 — Publish core program workflow guides
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. |
-| Next action | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
-
-### AR-0809 — Publish terminal frontend workflow guides
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. |
-| Next action | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
-
-### AR-0810 — Publish workflow documentation to GitHub Pages
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. |
-| Next action | Build and publish the versioned workflow documentation on the project&#x27;s GitHub Pages site. |
-
-### AR-0811 — Audit workflow documentation and publication
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Qualify documentation completeness, executability, accessibility, privacy, provenance, and release accuracy. |
-| Next action | Independently audit every published workflow against released programs and deployed Pages output. |
-
-### AR-0812 — Deliver modern adaptive terminal rendering
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Use modern terminal capabilities for polished visual fidelity with robust SSH/multiplexer fallbacks. |
-| Next action | Implement capability-aware premium rendering, channel detection, and resize-safe responsive layouts. |
-
-### AR-0813 — Add secure remote control transport
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client. |
-| Next action | AR-1259 remains open after unsigned recovery merge 8b81be4; await repository-level signed protected-main recovery and exact-main policy before closing AR-0813. |
-
-### AR-0814 — Secure remote enrollment and authorization
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. |
-| Next action | Create successor AR for authenticated route/ancestor authority; preserve AR-1288 evidence and AR-0814 head 29cfa193. |
-
-### AR-0815 — Manage remote benchmark run lifecycles
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Manage durable benchmark runs from another machine without making the frontend their owner. |
-| Next action | Implement remote validation, launch, detach, reconnect, status, cancellation, and recovery workflows. |
-
-### AR-0816 — Qualify cross-platform remote control
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Validate remote TUI interoperability with native x86_64 and required emulated AArch64 coverage; keep native ARM64 optional. |
-| Next action | Prove native x86_64 and pinned QEMU AArch64 controller-runner protocol workflows across available distributions; document native ARM64 cross-host testing as optional future evidence. |
-
-### AR-0817 — Build remote terminal frontend workflows
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Make secure two-machine benchmark operation clear and efficient in the terminal frontend. |
-| Next action | Integrate polished connection, trust, remote launch, detach, reconnect, and management journeys into the TUI. |
-
-### AR-0818 — Audit remote benchmark control
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Attack and qualify remote benchmark control before any release enables it. |
-| Next action | Independently audit remote protocol, trust, authorization, lifecycle, interoperability, privacy, and operational safety. |
-
-### AR-0819 — Add SSH remote discovery and bootstrap
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Use configured SSH hosts as the safe default path to a remote runner and help establish dedicated key authentication. |
-| Next action | Integrate signed no-ff PR #98 onto current main, then run and verify all exact-main post-merge workflows before release. |
-
-### AR-0820 — Publish verifiable installation artifacts
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Publish verifiable native bundles and metadata that a small bootstrapper can select safely. |
-| Next action | Build signed platform manifests and relocatable ASB plus asb-tui installation bundles. |
-
-### AR-0821 — Add guided one-line local installation
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Turn a single documented command into a safe guided local ASB and TUI first run. |
-| Next action | Monitor all required post-merge CI runs for exact main 513c1d926458f1cb6a26d3f7277dc7d9b1496df3; release only after every gate is green. |
-
-### AR-0822 — Add safe installation lifecycle management
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Manage the complete installed lifecycle without losing configuration, history, runs, or trust state. |
-| Next action | Implement verified upgrades, migrations, rollback, repair, and non-destructive uninstall. |
-
-### AR-0823 — Audit installation and first-run experience
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Qualify the one-line experience and complete install lifecycle across the supported native matrix. |
-| Next action | Independently attack and usability-test first install, onboarding, upgrade, rollback, repair, and uninstall. |
-
-### AR-0830 — Provision hardened development host ASB runner capacity
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Add isolated, disposable ASB self-hosted CI capacity on development host beside existing runners. |
-| Next action | Reboot persistence is deferred to AR-0833; AR-0830 proven scope is complete. |
-
-### AR-0831 — Integrate development host ASB runners with GitHub workflows
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Route explicitly trusted ASB CI jobs to qualified development host runners while preserving disposable public-PR isolation. |
-| Next action | Hold exact unpublished f55f98cc79b75226a537600258dde5e57333bdeb for independent immutable security review; publish only after approval. |
-
-### AR-0832 — Qualify development host ASB runner operations
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery. |
-| Next action | Run repeated clean ASB jobs on every declared development host label and audit reset, isolation, architecture, and artifact provenance. |
-
-### AR-0833 — Qualify tokenless runner reboot lifecycle
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Qualify safe reboot and restart lifecycle for disposable development-host ASB runners. |
-| Next action | Design and qualify a tokenless supervisor/orchestration path that can provision fresh ephemeral registrations after boot without storing reusable GitHub credentials. |
-
-### AR-0834 — Repair handoffctl lint regression
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Repair the coordination-tool Ruff regression discovered during AR-0830 reconciliation. |
-| Next action | No further action; repair is integrated and verified. |
-
-### AR-0835 — Remediate runner privacy and workflow guards
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Remediate runner privacy leakage and protected-workflow guard gaps found during independent audit. |
-| Next action | Hold exact unpublished c25e3d20d0ddf494d3a222aaf18f44e3de4c4b73 for independent immutable privacy/security review; do not dispatch either persistent-runner workflow. |
-
-### AR-0836 — Harden runner isolation and credential boundaries
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Harden development-host runner isolation against same-UID job tampering and diagnostic leakage. |
-| Next action | Independently review immutable signed candidate 9b4e7084e02cdb3a1ff56dc55bbdce413ed6b1d3; keep trusted workflows blocked and AR-0836 in progress until required AR-0837 proves the digest-pinned no-host-mount job-container boundary. |
-
-### AR-0837 — Qualify containerized runner boundary
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Provide the containerized workflow boundary required for safe trusted runner claims. |
-| Next action | Define and qualify a digest-pinned workflow container boundary separating operator, listener, and job principals without host mounts. |
-
-### AR-0840 — Define frontend protocol contract
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Define the stable frontend control protocol contract. |
-| Next action | Define version-negotiated frontend requests, events, capabilities, and fixtures. |
-
-### AR-0841 — Implement frontend local transport
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Implement the local frontend control transport and authorization boundary. |
-| Next action | Implement bounded owner-only Unix-socket transport with peer checks and fail-closed framing. |
-
-### AR-0842 — Implement frontend run lifecycle
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Define and implement frontend-independent run lifecycle semantics. |
-| Next action | Implement idempotent launch, cancellation, status reconnect, history, and recovery semantics. |
-
-### AR-0843 — Assure frontend privacy and faults
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Qualify frontend privacy, artifact access, and fault behavior. |
-| Next action | Monitor PR #69 exact-head CI at cca49ec3bea429a90a267600acf821cebe45c138; investigate any failure and do not merge without coordinator authorization. |
-
-### AR-0844 — Integrate frontend control API
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Integrate and qualify the frontend control API as an independent boundary. |
-| Next action | Monitor PR #76 exact head 76cc86f23a48d5af275b2fed9d70f54199e38637 CI to terminal; investigate failures and do not merge without coordinator authorization. |
-
-### AR-0845 — Harden CI artifact quota behavior
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Prevent exhausted GitHub artifact quota from obscuring authoritative ASB results. |
-| Next action | Independently review immutable candidate 7d98653e7e7f219cced6abfb5c611d2614c72bd7 tree 2b02deda39ae1e4a4b40e9c3e960f1f0336f19b3; do not publish before approval. |
-
-### AR-0846 — Add linked artifact retention and cleanup
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Manage ASB GitHub artifact retention and cleanup without deleting required evidence. |
-| Next action | Implement dry-run inventory and explicitly authorized bounded cleanup for linked GitHub artifacts. |
-
-### AR-0847 — Frontend control API repair
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Repair and independently qualify the blocked frontend control API candidate. |
-| Next action | Monitor PR #54 exact head 0d2534f614cdc3ec43199bcb6da25083ef680f24; merge only after all required exact-head checks are terminal green and coordinator authorization. |
-
-### AR-0848 — Qualify native x86 capacity
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Qualify authorized disposable native x86_64 capacity on a development host. |
-| Next action | Await fresh independent immutable review of rebased signed head 45604cd323c5de0ab9c7eaf0b6a39d90f4d43002 on exact product main f42645dd05f17eca5635ca2e82057b703a03a1c3; only then update PR #58 by exact force-with-lease and require fresh exact-head CI. |
-
-### AR-0849 — Repair AR-0801 documentation consistency
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Repair stale AR-0801 implementation and CLI documentation claims. |
-| Next action | Align AR-0801 task text, generated status next_action, and product README with the implemented and merged CLI command surface; verify links and exact command examples. |
-
-### AR-0850 — Repair deterministic aider replay
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Repair aider replay nondeterminism caused by process-dependent file ordering. |
-| Next action | Make pinned aider multi-file capture ordering deterministic across separately spawned processes, then prove strict replay parity and rerun the native journey. |
-
-### AR-0851 — Adopt shared workflow coordinator
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Adopt the canonical coordinator as a pinned offline-capable vendor artifact while preserving ASB extensions. |
-| Next action | Rebase the immutable v0.1.3 integration tree onto current state main under coordinator serialization, rerun exact-tree gates, and present a signed review candidate; do not publish or merge before review. |
-
-### AR-0852 — Adopt coordinator path isolation fix
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Adopt the path-exclusive coordinator commit fix discovered during live integration. |
-| Next action | Preserve merged v0.1.4 effect e52ce3aa without history rewrite; complete a focused signed+DCO repair or documented signed state replacement under AR-0853, then re-audit live main before releasing AR-0852. |
-
-### AR-0853 — Repair coordinator merge attestation
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Repair the v0.1.4 coordinator merge attestation without rewriting published history. |
-| Next action | Repair the attestation test to validate a closed fetch-free signed representation and installed manifest without requiring the unreachable historical merge object; document that limitation, rerun gates, and publish a signed successor by exact lease. |
-
-### AR-0854 — Upgrade shared workflow coordinator to v0.2.0
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Adopt coordinator v0.2.0 concurrency, recovery, durable-run, replica, and vendor hardening. |
-| Next action | Promote and claim the upgrade, vendor signed v0.2.0 in an isolated worktree, and publish only after exact-head gates pass. |
-
-### AR-0855 — Enforce Huawei MIT source headers
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. |
-| Next action | Complete; no further action. |
-
-### AR-0856 — Coordinate OpenJiuwen and WorkBuddy agent support
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Coordinate independently qualified OpenJiuwen and WorkBuddy support without merging their provenance or evidence boundaries. |
-| Next action | Keep planned while both child series run independently; complete only after AR-0862 and AR-0868 are durably done with executable live/replay qualification. |
-
-### AR-0857 — Pin OpenJiuwen source, package, and license provenance
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Pin OpenJiuwen source, package, and license provenance. |
-| Next action | Integrate signed no-ff PR #97 onto current main, then run and verify all exact-main post-merge workflows before release. |
-
-### AR-0858 — Implement the OpenJiuwen contract and capability adapter
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Implement the OpenJiuwen contract and capability adapter. |
-| Next action | Monitor all required post-merge CI runs for exact main 096dc4f275c05ad81772f443b6f22dddfb92da3d; release only after every required gate is green. |
-
-### AR-0859 — Qualify pinned OpenJiuwen live execution
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Qualify pinned OpenJiuwen live execution. |
-| Next action | No further action; live qualification and protected-main recovery are complete. |
-
-### AR-0860 — Qualify strict OpenJiuwen replay
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Qualify strict OpenJiuwen replay. |
-| Next action | Monitor draft PR #189 exact-head CI and request independent review; do not merge until all gates/review green. Head c894a34. |
-
-### AR-0861 — Add OpenJiuwen provider parity and support matrix evidence
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Add OpenJiuwen provider parity and support matrix evidence. |
-| Next action | Extend exact provider parity and the platform support matrix only for executable-qualified OpenJiuwen combinations under a serialized shared-path fence. |
-
-### AR-0862 — Independently qualify and document OpenJiuwen support
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Independently qualify and document OpenJiuwen support. |
-| Next action | Run independent exact-tree qualification with native x86_64 and required pinned QEMU AArch64 portability gates; document native ARM64 as optional future evidence. |
-
-### AR-0863 — Pin WorkBuddy source, package, and license provenance
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Pin WorkBuddy source, package, and license provenance. |
-| Next action | Pin official source, package, dependency closure, license, executable digest, protocol mode, and supported platform before any adapter claim. |
-
-### AR-0864 — Implement the WorkBuddy contract and capability adapter
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Implement the WorkBuddy contract and capability adapter. |
-| Next action | Implement the bounded agent contract, exact provider translation, and capability registration from the pinned protocol; keep live support unclaimed. |
-
-### AR-0865 — Qualify pinned WorkBuddy live execution
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Qualify pinned WorkBuddy live execution. |
-| Next action | Run the pinned executable against a credential-free loopback provider and prove editing, tools, usage, cancellation, cleanup, and network denial. |
-
-### AR-0866 — Qualify strict WorkBuddy replay
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Qualify strict WorkBuddy replay. |
-| Next action | Seal the sanitized live capture and prove strict offline replay, causal parity, malformed-record rejection, and zero external network. |
-
-### AR-0867 — Add WorkBuddy provider parity and support matrix evidence
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Add WorkBuddy provider parity and support matrix evidence. |
-| Next action | Extend exact provider parity and the platform support matrix only for executable-qualified WorkBuddy combinations under a serialized shared-path fence. |
-
-### AR-0868 — Independently qualify and document WorkBuddy support
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Independently qualify and document WorkBuddy support. |
-| Next action | Run independent exact-tree qualification with native x86_64 and required pinned QEMU AArch64 portability gates; document native ARM64 as optional future evidence. |
-
-### AR-0869 — Add CLI multi-agent provider selection
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Select several agents and apply one preconfigured provider profile through inspectable command-line options. |
-| Next action | Complete; no further action. |
-
-### AR-0870 — Add TUI multi-agent provider selection
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Choose several agents and one preconfigured provider for all of them from negotiated TUI selection lists. |
-| Next action | Push signed repair b3c19b1 with force-with-lease, then rerun exact-head PR checks; do not merge until all required jobs pass. |
-
-### AR-0871 — Deliver record and replay user workflows
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Make recording and strict replay complete, explicit, privacy-safe user workflows in both CLI and TUI. |
-| Next action | Deliver executable CLI and TUI journeys for recording LLM responses and replaying an exact compatible cassette. |
-
-### AR-0872 — Publish beginner workflow documentation
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Publish linked beginner workflows for setup, multi-agent runs, progress, comparison, recording, and replay with and without the TUI. |
-| Next action | Create a signed no-ff integration merge for PR #95 from current main, run post-merge checks, fast-forward main, and release AR-0872. |
-
-### AR-0873 — Generate asb-tui CI workflow screenshots
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Produce reproducible standalone TUI screenshots and text equivalents from workflows executed in CI. |
-| Next action | Generate privacy-safe asb-tui workflow screenshots from real synthetic CI executions. |
-
-### AR-0874 — Automate workflow documentation refresh
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Automatically refresh or reject stale workflow documentation and CI captures when essential user-visible behavior changes. |
-| Next action | Add essential-change detection, deterministic regeneration, and reviewed update automation for workflows and captures. |
-
-### AR-0875 — Extend control history and analysis protocol
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Extend frontend history and analysis contracts with bounded provenance, integrity, outcome, compatibility, and confounder evidence. |
-| Next action | After AR-0806 completes, define the versioned history and analysis protocol extension before serialized CLI backend integration. |
-
-### AR-0876 — Wire provider-aware agent launches
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Apply validated provider selections at the authoritative agent launch boundary and reject conflicting runtime configuration. |
-| Next action | Create signed+DCO follow-up parented bc071fd, force-with-lease origin/main 32562e8, rerun exact-main postmerge workflows. |
-
-### AR-0877 — Repair formal TLA artifact availability
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Repair the formal workflow&#x27;s unavailable TLA+ artifact pin without weakening provenance or offline verification. |
-| Next action | Hold local bridge 49ae13f and PR #120. AR-0906 is blocked on active AR-0907 hosted-evidence classification; after AR-0907 and AR-0906 integrate, rebase once, range-diff, rerun full gates, then exact-lease update PR #120. |
-
-### AR-0878 — Qualify immutable TLA tool provenance
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build. |
-| Next action | Release AR-0878 done after final state reconcile, snapshot, and live doctor; exact-main product verification is complete. |
-
-### AR-0879 — Plan deterministic LLM doubles and local inference
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Research deterministic LLM test doubles and local inference options, document ASB recommendations, and create implementation-ready follow-up ARs. |
-| Next action | Obtain independent exact-head review of green product PR 107 at bda6cc8a and state PR 16 at 9de11a52; state global schema remains pre-existingly blocked only by active AR-0878 next_action length. |
-
-### AR-0880 — Repair OpenJiuwen runtime closure
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Repair the incomplete pinned OpenJiuwen Python runtime closure required by live qualification. |
-| Next action | Durable release and exact-main verification are complete; no further AR-0880 action. AR-0859 owns live loopback qualification. |
-
-### AR-0888 — Spike deterministic LLM double conformance
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Measure deterministic LLM test doubles against one hostile ASB protocol and isolation suite before selecting any dependency. |
-| Next action | Build the isolated OpenAI and Anthropic conformance spike, execute exact pinned candidates, and publish pass, fail, unsupported, and untested evidence. |
-
-### AR-0889 — Define the LLM fixture and scenario contract
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Define generated synthetic LLM scenarios without weakening the existing content-addressed cassette replay contract. |
-| Next action | Specify and implement the selected synthetic fixture and scenario contract with strict evidence labels, privacy bounds, and fail-closed validation. |
-
-### AR-0890 — Integrate a deterministic LLM double in CI
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Add the independently selected deterministic protocol double as a pinned isolated CI test dependency. |
-| Next action | Integrate only the selected exact mock artifact into credential-free CI with fail-closed startup, network denial, provenance, and hostile lifecycle tests. |
-
-### AR-0891 — Qualify local inference provider profiles
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server. |
-| Next action | Wait for and verify all six post-merge exact-main workflows on adac76558387cb0bdd09e2ba6cbfe49b9bc205be, then release AR-0891 and promote the next dependency-ready AR. |
-
-### AR-0892 — Compare LLM test and inference evidence modes
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Quantify what each LLM execution mode proves without pooling unlike evidence or hiding harness saturation. |
-| Next action | Execute balanced synthetic, strict replay, local inference, and remote live comparisons and publish bounded claims and capacity evidence. |
-
-### AR-0893 — Document CLI setup for LLM doubles and local inference
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Provide executable beginner-safe CLI workflows for negotiated LLM modes without claiming unfinished TUI parity. |
-| Next action | Add concise CLI setup, preflight, run, inspect, compare, and teardown workflows only for exact supported mock and local profiles. |
-
-### AR-0894 — Add TUI parity for supported LLM modes
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Add tested TUI parity for supported LLM setup and diagnostics only after CLI and existing TUI evidence are stable. |
-| Next action | After CLI and existing TUI CI-evidence dependencies complete, implement discoverable TUI parity for negotiated supported profiles and modes. |
-
-### AR-0895 — Verify every coordination-content pull request
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Close the workflow path-filter gap that lets coordination-content pull requests skip strict state consistency and DCO checks. |
-| Next action | Rebase the approved three-path patch onto current repaired/licensed state main, preserve exact scope/signature/DCO, guarded force-with-lease PR #17, and require fresh exact-head CI before merge. |
-
-### AR-0896 — Qualify the pinned MockAgents executable
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Hostile harness repair is signed, but pinned MockAgents still accepts oversized requests and approved AArch64/network-none runner evidence is unavailable. |
-| Next action | Keep AR-0890 blocked. Repair or replace the pinned MockAgents oversized-request behavior, then rerun amd64 hostile/repeat qualification and an approved network-none AArch64 QEMU lane; do not use host QEMU or claim support. |
-
-### AR-0897 — Restore main merge integrity
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path. |
-| Next action | Monitor exact-main CI for signed recovery c261af0, then verify policy and close AR-0897. |
-
-### AR-0898 — Make ShellCheck fail closed
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Resolve GitHub issue 117 by installing and explicitly enforcing a digest-pinned ShellCheck. |
-| Next action | Retain merged PR #190 evidence and all six successful protected-main workflows; release after exact-main verification. |
-
-### AR-0899 — Align and harden Gitleaks execution
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Resolve GitHub issue 118 by making local and CI Gitleaks scans deterministic and config changes fail closed. |
-| Next action | Monitor post-merge workflows for main 3e8d589 until terminal; verify exact tree/signature/DCO/policy, then release AR-0899 done. |
-
-### AR-0901 — Prove critical state and concurrency invariants
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Use bounded proofs and model tests for safety-critical domain logic. |
-| Next action | Await independent immutable-head review of PR 14 at 2a495a99; repair any findings without merging or releasing. |
-
-### AR-0902 — Add fuzz mutation and lifecycle fault campaigns
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection. |
-| Next action | Run final coordination reconcile/snapshot/live doctor/full validation and release AR-0902 done only if clean synchronized state remains exact. |
-
-### AR-0903 — Package and qualify the first release
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P2 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Deliver reproducible native release artifacts with complete support and evidence statements. |
-| Next action | Audit milestone completeness and run isolated release qualification. |
-
-### AR-0904 — Machine-check protocol and artifact consistency
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Make schemas, Rust types, protocol examples, CLI capability output and documentation mechanically agree. |
-| Next action | Obtain fresh exact-main CI for signed+DCO main 92569367347b49c497780fa40195971ff655b0f4 using a resolvable base, then rerun final clean synchronized state validation and release only if all workflows pass. |
-
-### AR-0905 — Model execution recovery and worker fencing
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Apply bounded formal models to run lifecycle, leases, recovery, replay cursors and uncertain external effects. |
-| Next action | Monitor PR #57 exact head a288bb3485aa2a65ffa79626c3352c6522791138; investigate failures and merge only after every required exact-head check is green and coordinator authorizes. |
-
-### AR-0906 — Verify formal OCI build identity portably
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Make deterministic formal source builds verify OCI image identity portably across Docker engines. |
-| Next action | Combined PR #122 proves formal/emulated paths; hold all PRs while native Ubuntu runner-release mismatch is repaired or classified. |
-
-### AR-0907 — Classify hosted runner evidence without weakening native qualification
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Separate rolling hosted portability checks from immutable native qualification evidence. |
-| Next action | Hold PR 123 at f0b7b46; integrate AR-0906 then AR-0877, rebase once, and require fresh all-green exact-head CI before merge. |
-
-### AR-0908 — Harden control-state lock test isolation
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Harden asb-cli control-state lock test isolation and deterministic reopen coverage. |
-| Next action | Post-merge verification is complete; release AR-0908 done against the merged PR #173 implementation. |
-
-### AR-0909 — Harden mini-SWE cancellation reap test isolation
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. |
-| Next action | Post-merge verified: PR127 change is present in signed protected main merge 7d43c1e; retain merge-attestation evidence and continue normal coordinator monitoring. |
-
-### AR-1001 — Define experiment identity and comparability
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Make every comparison content-addressed and explicit about agent, model, workload and platform confounders. |
-| Next action | Await coordinator integration authorization for independently approved exact PR #17 head eb5e849; do not merge or release. Cargo workspace/lock and experiment-schema fence remains held by AR-1001. |
-
-### AR-1002 — Protect verifiers and support offline rescoring
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Separate immutable graders from agent work and version scoring independently of execution. |
-| Next action | Monitor PR #62 exact head 3fc65ea73badcea31497e53644fdad8778115870 quality, emulated-aarch64, fault, Rust x86_64/aarch64, and formal runs; investigate failures and do not merge without authorization. |
-
-### AR-1003 — Enforce cost token and action budgets
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Bound and report wall time, actions, tokens and monetary cost without treating unavailable telemetry as zero. |
-| Next action | Await coordinator merge review and explicit serialized integration authorization for all-green PR 74; do not change head. |
-
-### AR-1004 — Measure reliability and mixed-workload fairness
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Report repeated-attempt reliability and prevent aggregate results from hiding starvation or hard strata. |
-| Next action | Verify exact main 814397f with post-merge local gates and all fresh exact-main hosted CI; release only after green reconciliation. |
-
-### AR-1005 — Export interoperable privacy-safe traces
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P2 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Expose stable causal ASB events and optional standards-based telemetry without binding storage to an evolving convention. |
-| Next action | Monitor PR #75 exact head 921cf004 CI; classify any failure before repair and do not merge without coordinator authorization. |
-
-### AR-1006 — Coordinate distributed experiment workers
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P3 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Schedule trials across native-capability workers while preserving per-host capacity meaning. |
-| Next action | Monitor post-merge workflows for main 4e2820b until terminal; verify exact tree/signature/DCO/policy, then release AR-1006 done. |
-
-### AR-1007 — Maintain benchmark validity and portability registry
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Track dataset provenance, contamination risk, grader validity and native portability per workload revision. |
-| Next action | Implement registry schema and validation for built-in and imported workloads. |
-
-### AR-1008 — Integrate Agent Workflow Quality in shadow mode
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Pin AWQ v0.1.0 in Agent Systems Benchmark and its state repository without replacing native gates or coordinator behavior. |
-| Next action | Claim, create an isolated product worktree, add pinned policies and shadow workflows to both repositories, then publish reviewed evidence. |
-
-### AR-1010 — Adopt Ratatui/Crossterm TUI foundation
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Adopt Ratatui and Crossterm as the supported professional TUI foundation. |
-| Next action | Remain open pending a supported AR-1062 signed publication/repair successor, green exact-main Repository quality and Trusted main, and recovered AR-1060 control-publication provenance. Do not repeat merged foundation work or add UI code to ASB. |
-
-### AR-1011 — Deliver TUI UX quality features
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Deliver an easy, discoverable, keyboard-first TUI experience for setup and benchmark analysis. |
-| Next action | Integrate AR-1014, AR-1031 through AR-1035 and AR-1170 after the focused standalone wizard journeys complete. |
-
-### AR-1012 — Qualify TUI quality and isolation
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Qualify TUI reliability, accessibility, performance isolation, and reproducible CI captures. |
-| Next action | Qualify the complete Ratatui/Crossterm TUI across terminals, failure paths, accessibility checks, and benchmark-overhead budgets. |
-
-### AR-1013 — Version the measurement catalog and semantic groups
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Define selectable ASB measurements grouped by stable semantic meaning. |
-| Next action | Independently review immutable PR #131 exact head 78c63febc0ce6c4724bf4d14121e9ae178e2a020 tree 9303272ac7070a742249722c0f9e13568c3ed660; require all exact-head CI terminal green and approval; do not merge. |
-
-### AR-1014 — Add grouped measurement selection to the TUI
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Let users select grouped measurements from the standalone ASB TUI. |
-| Next action | After AR-1025, AR-1033 and ASB AR-1037 complete, implement the bounded selector with precise v1.3 validation UX, generic v1.2 fallback and canonical plan round trips only in standalone asb-tui. |
-
-### AR-1015 — Add a pinned, provenance-safe CSB measurement adapter
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Import qualified CSB resource, system-statistics, and contention measurements into ASB. |
-| Next action | Inventory pinned CSB signals and implement only contract-compatible adapters after the catalog is accepted. |
-
-### AR-1016 — Integrate and audit measurement selection and CSB evidence
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P2 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Audit selectable and CSB-backed measurements across live and replay runs. |
-| Next action | Add end-to-end live/replay comparison, release documentation, and independent audit after AR-1014 and AR-1015. |
-
-### AR-1017 — Create the standalone asb-tui extension repository
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Build asb-tui as an isolated optional repository and extension. |
-| Next action | Publication and exact-head verification complete; no further AR-1017 action. |
-
-### AR-1018 — Add asb-tui compatibility and terminal capability detection
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Detect whether an asb-tui bundle is compatible before installation or launch. |
-| Next action | Await coordinator independent validation of exact-main attestation, post-merge CI, restored protections, and divergent local empty attestation; do not release. |
-
-### AR-1019 — Verify signed asb-tui extension bundles
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Verify asb-tui bundles before installation or execution. |
-| Next action | Publish exact clean 67839598 after final privacy review; open focused PR and require exact-head hosted CI before merge. |
-
-### AR-1020 — Add isolated asb-tui install and self-test lifecycle
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Install and operate asb-tui safely as an optional extension. |
-| Next action | Publish c5454fa through a protected pull request, verify exact-head hosted CI, merge with DCO and verified signature, then run hosted and trusted local post-merge CI. |
-
-### AR-1021 — Audit and promote the asb-tui release channel
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P2 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Audit and promote asb-tui from optional extension to verified release when eligible. |
-| Next action | Review exact-head PR 8 hosted evidence, merge without weakening permanent protections, then obtain exact-main hosted and trusted local evidence. |
-
-### AR-1022 — Harden the asb-tui release lifecycle contract
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Turn the tested unverified asb-tui lifecycle boundary into a release-safe delegated contract. |
-| Next action | Wait for AR-1030 PR 11 to merge, rebase signed+DCO AR-1022 PR 10 onto exact new asb-tui main, reconcile overlaps to source_only_unverified, rerun full gates and exact-head CI, then integrate by protected admin merge only when all requirements are green. |
-
-### AR-1023 — Add the ASB frontend capabilities command
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Publish the ASB capability negotiation command required by the standalone frontend. |
-| Next action | Monitor exact head d60d2351004479998608f2141730849366351373 on PR 128, repair any CI failure, obtain independent review, merge through policy, and run post-merge verification. |
-
-### AR-1024 — Implement &#96;asb tui&#96; lifecycle routing
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend. |
-| Next action | After AR-1010, AR-1037 and AR-1060 are done, rebase c545c33 onto protected ASB main and implement only the ASB provisioning half before regenerated evidence and trusted asb-tui pinning. |
-
-### AR-1025 — Build the standalone asb-tui application
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Deliver the actual standalone interactive asb-tui application without an ASB workspace dependency. |
-| Next action | Blocked: implementation belongs to asb-tui, but current scope forbids touching that repository; AR-1010/AR-1060 also retain unresolved publication blockers. Obtain explicit scope/dependency repair before re-opening. |
-
-### AR-1026 — Qualify cross-repository ASB and asb-tui integration
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Integrate and adversarially test the exact ASB and asb-tui revisions together. |
-| Next action | Wait for AR-1024, AR-1025, AR-1029 and the complete standalone UI integration AR-1011, then qualify exact install, update, rollback, launch, remove and benchmark-continuity paths across both repositories. |
-
-### AR-1027 — Publish the verified asb-tui release
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Create and independently promote the first installable signed asb-tui release channel. |
-| Next action | Publish the first verified asb-tui release only after ASB release, complete UI/install qualification and exact cross-repository evidence are done. |
-
-### AR-1028 — Generate ASB CLI workflow captures
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Produce reproducible ASB CLI transcripts separately from standalone TUI screenshots. |
-| Next action | Release done after verified corrective publication and exact-tree post-merge transcript regeneration. |
-
-### AR-1029 — Remove the legacy in-tree TUI implementation
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Ensure agent-systems-benchmark contains no TUI renderer or terminal application implementation. |
-| Next action | Remove the legacy ASB renderer only after the standalone application and trusted router are complete. |
-
-### AR-1030 — Resolve the Ratatui dependency closure
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Make the maintained Ratatui release consumable by standalone asb-tui without hiding supply-chain exceptions. |
-| Next action | Register/authorize a GitHub-recognized signing identity for exact head c0dfdd3114741f9415a124f4d4995dac354b4260, or explicitly approve a GitHub rebase/squash rewrite; then rerun exact-head gates and merge PR #11. |
-
-### AR-1031 — Build the standalone TUI landing screen
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Add a state-aware landing screen with primary journeys and bounded recent activity. |
-| Next action | Implement the landing screen after the shell, visual system and first-run wizard expose stable typed routes. |
-
-### AR-1032 — Add contextual hotkeys and complete action help
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Provide a context-fitted hotkey window, global action search and mechanically complete help. |
-| Next action | Add the contextual action registry, search field, fitted hotkey window and complete help coverage after the user-facing screens exist. |
-
-### AR-1033 — Establish the professional TUI visual system
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Create a responsive, accessible and professional visual system for every TUI screen. |
-| Next action | Create the standalone Ratatui visual system after the application shell is integrated. |
-
-### AR-1034 — Add the standalone TUI configuration center
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Add a searchable configuration menu for frontend preferences and benchmark defaults. |
-| Next action | Implement the non-secret configuration center foundation after the visual system and ASB wizard control API are stable; AR-1170 owns provider, authentication and default integration. |
-
-### AR-1035 — Build recent-runs, report and comparison workspaces
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Add searchable recent runs, report inspection and evidence-qualified comparison workspaces. |
-| Next action | Implement report and comparison screens after recording workflows publish stable live and strict-replay source labels. |
-
-### AR-1036 — Publish the measurement catalog control contract
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Expose the versioned ASB measurement catalog to standalone frontends without UI code. |
-| Next action | Catalog control v1.2 is merged and qualified; AR-1037 may now carry selected measurement IDs through validated ASB plans. |
-
-### AR-1037 — Add measurement selection to validated run plans
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Carry catalog-backed measurement choices through ASB plan validation, collection and evidence. |
-| Next action | After AR-1036, add canonical measurement IDs to validated ASB plans and make collection honor them without any UI code. |
-
-### AR-1038 — Preserve coverage sinks in sanitized CLI child tests
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Prevent sanitized capability child tests from writing default profraw files into the source checkout. |
-| Next action | Post-merge verified on protected main fd7daa4; retain PR132 merge/tree/signature evidence and continue coordinator monitoring. |
-
-### AR-1039 — Attest the measurement catalog merge boundary
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Recover the measurement catalog publication boundary without rewriting protected main. |
-| Next action | Current exact head 7b3ef113 is clean and signed/DCO, with PR140 merge attestation artifacts. Independently review this successor against AR-1039 plan; do not mutate or rewrite historical PR131/PR134. |
-
-### AR-1040 — Reconcile protected-merge signature verification
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Align offline signature policy with the repository-required GitHub merge path. |
-| Next action | AR-1040 acceptance complete at protected main 6155d63bec04a5c76c4323843c26649b0c084f6e; release done. |
-
-### AR-1041 — Make Gemini hook readiness publication atomic
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Eliminate the load-sensitive Gemini hook readiness race without weakening validation. |
-| Next action | Post-merge verified: PR136 exact head 55648d5 is present in protected main fd7daa4 with all PR checks green; current main AArch64 failure is unrelated Goose fixture AR-1235. |
-
-### AR-1042 — Capture alternate-screen TUI readiness deterministically
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Make tmux TUI readiness validate the displayed alternate screen deterministically. |
-| Next action | Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification. |
-
-### AR-1043 — Qualify exact topic-tip synchronization merges
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Accept one exact signed topic-tip sync merge without weakening protected-main policy. |
-| Next action | Complete; no further action. |
-
-### AR-1044 — Recover tmux foreground-group qualification
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. |
-| Next action | No further action: AR-1044 safety repair is accepted by the later trusted-main run 34872879697 at main 78bf72d; AR-1048 and all downstream tmux recoveries are superseded or completed. Preserve merged evidence; do not touch asb-tui source from ASB. |
-
-### AR-1045 — Attest the Gemini readiness merge boundary
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Recover the Gemini readiness publication boundary without rewriting protected main. |
-| Next action | Await fresh immutable review of clean signed+DCO current-main successor d0ea32ce84f600e505899e2e3d2fdb885ee7ad76, tree d6f734bc270281957b1c2268fa0c12db2e2c6075, parent 252f746e903555c2dc626fadfa1a75bb76913144. Do not push before READY. |
-
-### AR-1046 — Serialize emulated AArch64 agent tests
-
-| Field | Value |
-| --- | --- |
-| Status | superseded |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Make the emulated AArch64 asb-agents fake-node readiness fixtures deterministic without changing production semantics. |
-| Next action | No further action: AR-1047 superseded the disproven serialization hypothesis. |
-
-### AR-1047 — Close the Gemini hook-marker appearance race
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Treat a regular marker published between absent open and fallback lstat as pending for descriptor validation on the next poll. |
-| Next action | PR #139 exact 661d52c/tree 3931f7cb is independently approved and 12/12 exact-head green; await explicit root authorization and exact multiline protected merge recipe. |
-
-### AR-1048 — Make tmux window-option setup portable
-
-| Field | Value |
-| --- | --- |
-| Status | superseded |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Use an explicit tmux window-option command so trusted-main terminal qualification is portable. |
-| Next action | No further action: AR-1049 superseded this recovery after PR #15 merged and Trusted main falsified fixed session:0 targeting. |
-
-### AR-1049 — Bind tmux setup to its created window
-
-| Field | Value |
-| --- | --- |
-| Status | superseded |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Bind tmux remain-on-exit setup to the exact created window identity instead of a fixed index. |
-| Next action | No further action: AR-1050 superseded this recovery after PR #16 merged and Trusted main exposed downstream startup readiness. |
-
-### AR-1050 — Acquire authenticated tmux startup readiness
-
-| Field | Value |
-| --- | --- |
-| Status | superseded |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Wait for bounded stable authenticated tmux server, session and window readiness after detached creation. |
-| Next action | No further action: AR-1052 superseded this recovery after PR #17 merged and Trusted main exposed the unavailable server-authority observation. |
-
-### AR-1051 — Attest the measurement catalog merge boundary
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Record the exact reviewed measurement-catalog merge and its non-compliant GitHub-authored DCO identity without rewriting history. |
-| Next action | Push exact approved head 7b3ef113d2b77c3982748f16c540d0e556252464, open the protected-merge PR, and require all exact-head checks before merge. |
-
-### AR-1052 — Diagnose trusted tmux server authority
-
-| Field | Value |
-| --- | --- |
-| Status | superseded |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Diagnose and repair the trusted-runner tmux server-authority portability gap without weakening cleanup authentication. |
-| Next action | No further action: AR-1054 superseded this recovery after PR #19 merged and exact-main exposed the downstream socket-completion failure. |
-
-### AR-1053 — Harden the standalone asb-tui roadmap
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Make the standalone asb-tui UX roadmap detailed, non-overlapping and dependency-executable. |
-| Next action | Harden the audited standalone asb-tui task and plan records without changing either product repository or feature-task status. |
-
-### AR-1054 — Repair tmux socket connection completion
-
-| Field | Value |
-| --- | --- |
-| Status | superseded |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Repair trusted tmux socket connection completion without weakening authenticated cleanup authority. |
-| Next action | No further action: AR-1056 superseded this recovery after PR #20 merged and exact-main localized a remaining connection-stage failure. |
-
-### AR-1055 — Harden asb-tui install integration readiness
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Make the asb tui install and full interactive integration sequence dependency-executable. |
-| Next action | Bind AR-1026 to the complete standalone UI and record the exact router, release and cross-repository qualification gaps without changing product code or feature-task status. |
-
-### AR-1056 — Diagnose tmux socket connection stage
-
-| Field | Value |
-| --- | --- |
-| Status | superseded |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Diagnose and repair the remaining trusted tmux socket connection-stage failure. |
-| Next action | No further action: AR-1058 superseded this diagnostic after PR #21 proved socket substages were no longer the blocker. |
-
-### AR-1057 — Harden asb-tui control v1.3 readiness
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Make standalone asb-tui consume precise privacy-safe measurement validation diagnostics. |
-| Next action | Bind the standalone client and measurement-selection UX roadmap to ASB control v1.3 precise diagnostics with closed v1.2 fallback behavior. |
-
-### AR-1058 — Diagnose tmux startup observation
-
-| Field | Value |
-| --- | --- |
-| Status | superseded |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Diagnose and repair the remaining trusted tmux stable-startup observation failure. |
-| Next action | No further action: AR-1061 superseded this recovery after PR #22 merged and tested the remaining fixture-contention hypothesis. |
-
-### AR-1059 — Harden lifecycle-router publication readiness
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Harden the ASB lifecycle-router roadmap before rebasing and publishing it. |
-| Next action | Bind AR-1024 to the exact rebase, environment, process-cleanup, no-daemon and trusted-pin gates required before lifecycle-router publication. |
-
-### AR-1060 — Add authenticated control endpoint handoff
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Hand the standalone frontend an authenticated ASB control connection without exposing endpoint paths. |
-| Next action | Stop descendant recovery: every commit atop ec0c7a3 retains the invalid merge in its policy range. Escalate for an authorized repository-level recovery that neither rewrites history nor weakens signature/DCO policy; keep AR-1060 and AR-1024 blocked. No UI work. |
-
-### AR-1061 — Isolate concurrent trusted tmux fixtures
-
-| Field | Value |
-| --- | --- |
-| Status | superseded |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Diagnose and isolate concurrent trusted tmux fixture contention. |
-| Next action | No further action: AR-1062 superseded the falsified fixture-contention hypothesis with nested server/connect diagnostics. |
-
-### AR-1062 — Diagnose nested tmux server connection failures
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Diagnose the exact nested tmux server and rejected socket-error class on trusted main. |
-| Next action | Run exact Rust 1.93.0 full gates on the diagnostic-only test patch, then freeze a signed DCO commit for immutable review. |
-
-### AR-1064 — Recover hosted tmux startup readiness
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Recover authenticated tmux startup observation on the hosted trusted runner without weakening authority or cleanup. |
-| Next action | PR #26 is exact-head green but protected merge is blocked because GitHub reports the required context as pending; resolve policy/check-run propagation without admin bypass, then require post-merge Trusted main. |
-
-### AR-1065 — Normalize asb-tui branch required-status policy
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Normalize asb-tui main branch protection so successful GitHub Actions checks can merge. |
-| Next action | A repository maintainer must remove the stale legacy required-status context from asb-tui main while retaining the app-scoped GitHub Actions check, then re-evaluate PR #26. |
-
-### AR-1100 — Configuration defaults
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Persist configuration defaults. |
-| Next action | Post-merge verification complete at protected ASB main; retain merged evidence and monitor downstream wizard dependencies. |
-
-### AR-1110 — Provider and model registry
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Manage providers and models. |
-| Next action | Post-merge verification complete: PR #180 merged at 600d5a28; exact-main tree matches feature tree, focused asb-config tests and full offline workspace tests passed, worktree clean. Release AR-1110 as done. |
-
-### AR-1120 — Authentication enrollment
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Enroll provider authentication. |
-| Next action | AR complete: merged PR #176 at bd9e153a; post-merge exact-main verification and full auth package gates passed; retain closure evidence in state. |
-
-### AR-1130 — Configured provider launches
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Launch agents with configured providers. |
-| Next action | Post-merge verification complete: PR #181 merged at 0443ebac; exact-main tree matches feature tree, focused provider-launch/workflow tests and full locked offline workspace tests passed, worktree clean. Release AR-1130 as done. |
-
-### AR-1140 — CLI setup wizard
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Guide CLI setup and reconfiguration. |
-| Next action | Wait for PR #186 exact-head CI and independent review on 1e3212b; do not merge. |
-
-### AR-1150 — Recording campaigns
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Record response cassettes. |
-| Next action | Post-merge verification complete: PR #182 merged at a83ba8e; exact-main tree matches feature tree, focused replay tests and full locked offline workspace tests passed, worktree clean. Release AR-1150 as done. |
-
-### AR-1151 — Strict offline replay
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Replay strictly without providers. |
-| Next action | Monitor PR #225 fresh gates at exact head 20db76e; after green review/merge, implement AR-1160 runtime campaign launch/progress/cancel, cassette coverage reconciliation, and offline-default activation. |
-
-### AR-1160 — Wizard control API
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Wizard control API |
-| Next action | Keep AR-1160 blocked. Create a fresh scoped AR for runtime-owned authenticated provider capture, per-tuple cassette reconciliation, and verified offline activation; preserve fail-closed gates and do not change this AR&#x27;s historical evidence. |
-
-### AR-1170 — Standalone TUI wizard
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Guide TUI setup through analysis. |
-| Next action | Read the plan. |
-
-### AR-1180 — Cross-project wizard qualification
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Qualify the complete wizard. |
-| Next action | Read the plan. |
-
-### AR-1181 — TLA admission
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Bound ASB TLC memory. |
-| Next action | No independent work remains: AR-1293 owns the state-scoped runner and AR-1307/AR-1308 own qualification/capacity; preserve their blocked evidence and do not duplicate runner work. |
-
-### AR-1190 — Authenticated agent catalog control
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Expose a verified, capability-aware local-agent catalog to asb-tui. |
-| Next action | Wait for exact-main post-merge assurance on 748c16ba67b9cff5a08558784dd183d020a1f2d4, then qualify ASB v1.4 fixtures against asb-tui PR #86. |
-
-### AR-1191 — Verified local-agent lifecycle
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Install, activate, verify and recover supported local benchmark agents safely. |
-| Next action | Run independent review on lifecycle PR #169 head 6d210836d4b45942aa6b9b2530c30a0afe30144a after hosted checks, then merge and qualify asb-tui. |
-
-### AR-1196 — Protected-main DCO history repair
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Restore a Signed-off-by-bearing protected-main history after the catalog merge. |
-| Next action | Completed: PR #170 merged; stale duplicate PR #171 requires authorized cleanup. |
-
-### AR-1197 — Qualify current-main control scratch isolation
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Qualify concurrent ASB control scratch-root isolation on current repaired main. |
-| Next action | Obtain independent immutable-head review of PR #173; then merge only through protected main after exact-head checks remain green, and verify post-merge assurance at the resulting main SHA. |
-
-### AR-1198 — Canonical authenticated agent-catalog digest
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Define and enforce the canonical authenticated ASB v1.4 agent-catalog digest. |
-| Next action | Independently review PR #174 at exact head 3cc8fa1a27587642bda5100f45140c11f1fd0c6d, run cross-repository vector checks with asb-tui AR-1195, then merge only after all exact-head checks are green. |
-
-### AR-1199 — Authenticated TUI install router
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Expose an authenticated renderer-neutral ASB router for asb tui install and lifecycle operations. |
-| Next action | Blocked: authenticated renderer-neutral router and owner-only control transport are already on protected main; remaining AgentInstall/Status/Cancel/Retry/Remove backend is intentionally fail-closed at crates/asb-cli/src/control.rs:3088 because no lifecycle artifact executor/activation authority exists. Need an authorized lifecycle executor contract or successor AR before implementation. |
-
-### AR-1200 — Kernel diagnostic rejection fixture stability
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P2 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Remove hosted timing flakiness from the bounded kernel diagnostic rejection test. |
-| Next action | Review and merge the isolated test-fixture stabilization after exact-head CI passes; do not modify production timeout policy. |
-
-### AR-1210 — Tutorial contract and syntax validator
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Define offline tutorial steps and validate them against the ASB CLI grammar. |
-| Next action | Do not release AR-1210 yet: post-merge Repository quality run 35054743606 failed because protected merge commit 4d4a0c4 lacks Signed-off-by. Coordinate merge-integrity/DCO repair and rerun exact-main assurance; preserve merged main and all evidence. |
-
-### AR-1211 — Initial setup and first agent connection tutorial
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Teach first-time users to initialize ASB and add the first agent connection. |
-| Next action | Implement the syntax-checked tutorial for ASB initialization, first-agent registration, and agent connection setup. |
-
-### AR-1212 — Agent benchmark-readiness tutorial
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Teach users to test configured-agent benchmark eligibility without running an agent. |
-| Next action | Release AR-1212 as done with complete merge and post-merge evidence; then reconcile and monitor stale PR #306/AR-1316 closure. |
-
-### AR-1213 — Benchmark run and shared-agent configuration tutorials
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Teach benchmark execution and extending agents with one shared configuration. |
-| Next action | Implement syntax-checked tutorials for one benchmark run and atomic shared configuration across selected agents. |
-
-### AR-1214 — LLM response record/replay tutorial
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Teach privacy-safe LLM response recording and strict offline replay. |
-| Next action | PR #311 exists at exact head fe00f59; run independent review and exact-head CI, then merge and complete seven post-merge checks. |
-
-### AR-1215 — Multi-agent result comparison tutorial
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Teach conservative comparison of multiple agents from the same benchmark. |
-| Next action | Resolve or requalify post-merge repository-quality failure for merge f51164569bf4da67a0759328b4be280385abe9a4; then rerun/monitor all seven post-merge workflows to terminal and release only after all succeed. |
-
-### AR-1216 — ASB tutorial freshness CI and documentation qualification
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Continuously keep ASB tutorial commands and steps syntactically current. |
-| Next action | AR-1431 repair is required: post-merge Repository Quality run 36066329347 rejected merge e82e2e6 because protected main advanced from reviewed base d9eb6c2 to 8d1889b. Preserve the failure, requalify the stale-base boundary, then rerun required post-merge workflows before release. |
-
-### AR-1226 — Protected merge-tree remediation
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Remediate the protected-main merge-tree mismatch from stale-base PR merging. |
-| Next action | No further action; AR-1226 is complete. Preserve PR #218 and merge 7ea3e001 evidence. |
-
-### AR-1227 — Authenticated startup-readiness contract
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. |
-| Next action | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. |
-
-### AR-1228 — Qualify provider authentication backends and probes
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Qualify provider authentication backends, probes and application integration. |
-| Next action | PR #177 exact head 2d716c8 includes std-only polled connect/write, authenticated Gemini/Ollama wire fixtures, and stabilized malformed/redirect/oversized response fixtures. Await exact-head CI and independent review; investigate any architecture-runner failures. |
-
-### AR-1229 — Provider authentication application integration
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Integrate provider authentication into ASB config, control and CLI surfaces. |
-| Next action | AR complete: merged PR #179 at 2f96f211; retain post-merge verification and release evidence in durable history. |
-
-### AR-1230 — Authenticated provider-request seam and secret injection contract
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Define the approved bounded provider authentication request and secret-injection seam. |
-| Next action | Re-review PR #178 exact head and rerun CI; preserve provider seam and delegated transport/application gates. |
-
-### AR-1231 — Strict replay execution and egress-isolation seam
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Execute real agents through strict replay without provider egress or live fallback. |
-| Next action | Rerun exact-head CI for b622554 and obtain independent review; successful qualified cassette service construction, route identity mismatch coverage, and credential/ambient-field rejection tests are now present. Runtime child supervision remains AR-1232. |
-
-### AR-1232 — Sandboxed replay process supervision
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Supervise strict replay adapters inside the approved network-denied sandbox. |
-| Next action | Await merged AR-1233/1234 runtime namespace capability, then bind replay launch and rerun lifecycle/egress tests. |
-
-### AR-1233 — Approved loopback-only sandbox transport
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Provide an authenticated loopback-only sandbox transport for strict replay services. |
-| Next action | Typed LoopbackOnly policy slice 143213c passes full asb-runtime package tests; actual attested loopback namespace/listener binding remains required. Implement backend capability without weakening Deny, then add native child-service/provider-egress tests and full workspace gates. |
-
-### AR-1234 — Runtime-owned loopback namespace capability
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Provide an approved runtime-owned loopback-only sandbox namespace capability. |
-| Next action | Capability audit complete: pinned tools exist but unshare -n fails Operation not permitted. Do not add ambient privileged setup or host sharing. Require approved runtime-owned loopback namespace/helper capability, then implement native service/egress tests. |
-
-### AR-1235 — Portable Goose diagnostic fixture
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Repair Goose diagnostic fixture portability under emulated AArch64. |
-| Next action | Hosted Emulated aarch64 portability workflow 35062888126 succeeded at exact head fd7daa43549edd67b60076aa6b1eee333061b438; job 104686828496 terminal success. This closes the original Goose exit-127 evidence as runner-only/transient; no source diff was required. Release AR done/ownerless. |
-
-### AR-1236 — Runtime-owned loopback sidecar capability
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Provide a runtime-owned private-namespace loopback sidecar capability. |
-| Next action | Implement the versioned runtime-issued sidecar handoff: same-private-namespace sidecar and adapter, authenticated route/generation/command metadata, listener readiness, bounded forwarding, teardown, and non-interference tests; preserve NetworkPolicy::Deny. |
-
-### AR-1237 — Strict-replay child launch bridge
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Map the authenticated relay into the strict-replay child launch contract. |
-| Next action | Extend the reviewed strict-replay launch contract to map ReplayRelayHandoff into the child-visible HTTP loopback endpoint, with authenticated route/generation metadata and bounded lifecycle ownership. |
-
-### AR-1238 — Runtime-owned loopback supervisor
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Provide the runtime-owned private-namespace supervisor for loopback replay. |
-| Next action | Run native bwrap end-to-end matrix using VerifiedBundle-provided supervisor/sidecar paths; current runtime API now confines paths and verifies content hashes. |
-
-### AR-1239 — Signed supervisor and sidecar runtime bundle
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Package and sign the verified loopback supervisor and sidecar runtime payloads. |
-| Next action | Implement asb-bundle-owned manifest/payload wiring for the supervisor and sidecar, then sign and verify the canonical bundle offline. |
-
-### AR-1240 — Native signed-bundle supervisor fixture
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Add native signed-bundle fixture and end-to-end supervisor isolation tests. |
-| Next action | Extend native fixture invocation from helper lifecycle proof to authenticated cassette HTTP success plus provider/descendant denial and cleanup/non-interference matrix. |
-
-### AR-1241 — Native isolation negative and lifecycle matrix
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Complete native signed-bundle isolation negative and lifecycle evidence. |
-| Next action | Add provider/external/descendant egress denial and timeout/cancel/crash/non-interference tests for the signed native bundle. |
-
-### AR-1242 — Enforce signed protected-main admission
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Prevent protected-main admission from creating unsigned GitHub merge commits. |
-| Next action | No further action; signed merge and all exact-main post-merge gates are complete. |
-
-### AR-1243 — Installable signed runtime bundle assembly
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Build, sign, verify, and publish installable supervisor and sidecar runtime bundles. |
-| Next action | No further action; clean signed bundle assembly, verification, and deterministic build gates are complete. |
-
-### AR-1244 — Publish AR-1232 strict-replay supervision
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Publish strict-replay supervision integration. |
-| Next action | No further action; signed publication and all exact-main post-merge gates are complete. |
-
-### AR-1245 — Post-merge DCO admission evidence
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Repair DCO admission for the immutable PR-192 GitHub merge while preserving strict future checks. |
-| Next action | Monitor PR #194 required checks; merge only after all protected checks pass. |
-
-### AR-1246 — Protected-main DCO flow
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Durably admit authenticated GitHub protected-main merges without one-off DCO hash exceptions. |
-| Next action | Wait for remaining required PR #195 checks; merge only when all are successful, then run post-merge verification. |
-
-### AR-1247 — Protected-main DCO workflow binding
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Route the Rust verification workflow through durable protected-main DCO admission on generated merge commits. |
-| Next action | Update verify.yml main-push DCO certification to use protected-main admission and add workflow regression coverage. |
-
-### AR-1248 — Bounded strict-replay CLI consumer contract
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Define the strict-replay CLI consumer contract. |
-| Next action | Await runtime-owned launch authority, then wire replay through supervised context and add lifecycle/no-fallback tests. |
-
-### AR-1249 — Complete MockAgents executable qualification evidence
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Complete missing evidence for the pinned MockAgents executable qualification. |
-| Next action | Create a narrowly scoped candidate-repair AR for MockAgents v0.5.0 streaming truncation; rerun strict lifecycle/network qualification only after truncate_after_chunks suppresses terminal &#91;DONE&#93;. |
-
-### AR-1250 — Extend MockAgents qualification harness
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Extend the pinned MockAgents executable qualification harness. |
-| Next action | Route candidate oversized-request behavior to AR-1249 or a reviewed successor; do not weaken the harness rejection. After candidate repair, rerun arm64 and amd64 repeat qualification with the verified QEMU runner. |
-
-### AR-1251 — Add MockAgents transport sandbox fixture
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Add a bounded transport and sandbox fixture for MockAgents qualification. |
-| Next action | Await reviewed AR-1252 integration allowing pinned MockAgents and Python client in one approved sandbox; then add real transport/lifecycle/egress tests. |
-
-### AR-1252 — Provision approved isolated qualification runner
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Provision an approved isolated qualification runner for ASB executable evidence. |
-| Next action | Monitor post-merge workflows for main 85bcd1e until terminal; verify exact tree/signature/DCO/policy, then release AR-1252 done. |
-
-### AR-1253 — Provision pinned Python transport fixture runtime
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Provision pinned Python transport fixture runtime. |
-| Next action | Monitor post-merge workflows for exact main a0befc0 until all seven terminal SUCCESS; verify exact tree/signature/DCO/policy, then release AR-1253 done. |
-
-### AR-1254 — Qualify MockAgents through pinned Python transport
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Qualify MockAgents through the pinned Python sandbox. |
-| Next action | Await AR-1258 pinned arm64 runner and AR-1255 transport evidence; then qualify protocol, cancellation, egress and restart. |
-
-### AR-1255 — Bundle MockAgents transport and QEMU runner
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Bundle MockAgents transport and QEMU runner. |
-| Next action | Provision a digest-pinned bundled transport/QEMU runner and implement real in-container evidence. |
-
-### AR-1256 — Execute bundled MockAgents transport in isolation
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Execute bundled MockAgents transport in isolation. |
-| Next action | Implement bundled in-container MockAgents transport and digest-pinned arm64 QEMU evidence. |
-
-### AR-1257 — Qualify digest-pinned multiarch MockAgents image
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Qualify a digest-pinned multiarch MockAgents OCI image for QEMU isolation. |
-| Next action | Read the complete plan and verify official digest-pinned multiarch image, signature, license, and QEMU capability before any support claim. |
-
-### AR-1258 — Provision Docker binfmt/QEMU capability
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Provision and verify Docker binfmt/QEMU for multiarch qualification. |
-| Next action | Await an approved maintenance window with zero Docker workloads; snapshot binfmt state, apply rollback-safe F registration, then rerun pinned arm64 Alpine /bin/true with network disabled and record sanitized interpreter, digest, provenance, timeout, and rollback evidence. Keep qualification blocked. |
-
-### AR-1259 — Protected-main DCO recovery for PR202
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Recover a signed protected-main DCO boundary after the unsigned PR202 web merge. |
-| Next action | Monitor exact-main 0a808a6 post-merge workflows to terminal; release AR-1259 and hand off AR-0813 only after all required policies pass. |
-
-### AR-1260 — Runtime-owned strict-replay integration
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Integrate strict replay with runtime-owned attestation and supervised sandbox execution. |
-| Next action | Blocked pending runtime-owned launch context injection: CLI dispatch has no safe source for SidecarHandoff, SandboxBackend, ResourceLease, or pinned supervisor/sidecar commands. Runtime API presence alone does not authorize CLI fabrication; create a narrow runtime-to-CLI entrypoint or successor AR. |
-
-### AR-1261 — Runtime-to-CLI strict-replay handoff entrypoint
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Provide a runtime-owned entrypoint for strict-replay CLI supervision. |
-| Next action | Reconcile coordinator view against declared runtime-cli worktree; then run focused/full gates and review exact signed head d91520f. |
-
-### AR-1262 — Runtime-owned strict-replay launch authority
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Issue runtime-owned authority for supervised strict-replay execution. |
-| Next action | Do not merge PR #207; create runtime-to-CLI authority successor and rerun lifecycle, egress and no-fallback evidence. |
-
-### AR-1263 — Stabilize sandbox scope classification gate
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Stabilize intermittent sandbox scope classification in the quality gate. |
-| Next action | Complete: feature 0acbc1d tree equals signed protected main 69e8b064; AR-1264 recovery and all seven exact-main workflows SUCCESS. Preserve PR205 and recovery traceability. |
-
-### AR-1264 — Recover signed integration after PR #205
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Recover signed protected-main integration after PR #205. |
-| Next action | Complete: signed main 69e8b064 verified exact parents/tree/DCO; all seven post-merge workflows SUCCESS. Preserve AR-1263 traceability and recovery evidence. |
-
-### AR-1265 — Runtime-owned strict-replay CLI entrypoint
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Provide a real runtime-owned strict-replay CLI entrypoint. |
-| Next action | Runtime/CLI owner must add an authenticated context-bearing replay-plan dispatch entrypoint; then exercise cassette request/response and lifecycle/egress tests through it. |
-
-### AR-1266 — Authenticated replay dispatch context
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Add authenticated runtime context to the actual strict-replay CLI dispatch path. |
-| Next action | Connect runtime context to supervised cassette execution rather than merely offline replay; add request/response, egress denial, cancellation/restart/timeout/crash cleanup and no-fallback tests. |
-
-### AR-1267 — Runtime strict-replay execution hook
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Implement real runtime-owned strict-replay execution and lifecycle supervision. |
-| Next action | Add actual replay CLI argument wiring and bounded lifecycle/egress/no-fallback tests around authenticated execution hook; then run full gates. |
-
-### AR-1268 — Break strict-replay runtime/CLI dependency cycle
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Break the strict-replay runtime/CLI dependency cycle with a shared transport contract. |
-| Next action | Await approved runtime-owned launch bundle/factory exposing SandboxLaunchInput, ResourceLease, pinned commands, and supervised lifecycle to the transport adapter; then add real child lifecycle/egress tests. |
-
-### AR-1269 — Runtime-owned replay launch-bundle factory
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Create runtime-owned launch bundles for supervised strict replay. |
-| Next action | Await approved runtime-issued cassette-service handle/shared transport extension; then connect it to spawn_runtime_replay and run real request/response, egress, cancellation/restart, timeout/crash cleanup, no-fallback fixtures. |
-
-### AR-1270 — Runtime-issued cassette-service handle
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Provide a runtime-issued cassette-service handle for supervised strict replay. |
-| Next action | Expose a runtime-owned cassette operation/response handle and connect it to actual replay dispatch; add supervised lifecycle/egress/no-fallback fixtures before full gates. |
-
-### AR-1271 — Dependency-neutral cassette operation contract
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Define a dependency-neutral cassette request/response operation contract. |
-| Next action | Requires a runtime-authenticated cassette-content/backend capability (successor AR-1272/AR-1274 seam) before actual StrictReplayService invocation; then add supervised response, no-fallback/egress, cancellation/restart, timeout/crash cleanup fixtures. |
-
-### AR-1272 — Authenticated immutable cassette backend
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Bind immutable cassette content to a runtime-authenticated replay backend handle. |
-| Next action | Complete backend capability review; runtime branch has no authenticated launch-record/isolation issuer, so parent must decide whether this bounded capability plus real StrictReplayService fixture is sufficient or leave blocked for launch-authority successor. |
-
-### AR-1273 — Complete runtime-owned replay request context
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Provide complete runtime-owned context for strict-replay execution. |
-| Next action | Integrate ReplayRequestContext into actual argument-level replay dispatch and connect runtime cassette service; add real response parity and supervised egress/no-fallback/cancel/restart/timeout/crash cleanup tests. |
-
-### AR-1274 — Runtime cassette operation executor adapter
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Provide a runtime cassette operation executor callback boundary. |
-| Next action | Provide CLI/replay adapter over RuntimeOperationHandle and bind actual replay command; add supervised lifecycle/egress/no-fallback fixtures. |
-
-### AR-1275 — Runtime operation injection into replay dispatcher
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Inject runtime-owned operation handles into actual strict-replay dispatch. |
-| Next action | Bind runtime-issued operation handle into the primary argument-level replay command; add supervised cassette response/egress/cancel/restart/timeout/crash/cleanup evidence. |
-
-### AR-1276 — Primary replay runtime integration
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Integrate runtime-owned operation execution into the primary strict-replay command. |
-| Next action | Promote after dependency verification; wire the primary replay command to runtime-issued operation execution and prove supervised lifecycle behavior. |
-
-### AR-1277 — Runtime-to-CLI replay transport boundary
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Provide a runtime-issued transport channel for primary strict replay. |
-| Next action | Wire ReplayTransportClient into the primary replay dispatch and connect runtime-issued cassette service; add supervised egress/lifecycle evidence. |
-
-### AR-1278 — Primary replay runtime client handoff
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Connect the primary replay command to the runtime-issued transport client. |
-| Next action | Promote after dependency verification; hand the runtime-issued replay client into primary argument dispatch and prove supervised lifecycle behavior. |
-
-### AR-1279 — End-to-end primary replay runtime handoff
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Implement end-to-end runtime-owned execution for primary strict replay. |
-| Next action | Promote after dependency verification; implement transport plus primary runtime-client handoff from protected main and prove full supervised lifecycle. |
-
-### AR-1280 — Cross-crate replay process entrypoint
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Implement the cross-crate runtime process entrypoint for primary strict replay. |
-| Next action | Extend replay-plan dispatch to invoke runtime-owned supervised process with argument-level command and cassette service; preserve denied egress/no-fallback and add lifecycle fault tests. Current signed head f92a86b provides bridge/binding baseline. |
-
-### AR-1281 — Supervised cassette lifecycle execution
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Execute primary strict replay through a supervised runtime cassette lifecycle. |
-| Next action | Promote after dependency verification; implement the complete supervised cassette path and lifecycle fault matrix from protected main. |
-
-### AR-1282 — Authenticated replay transport foundation
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Land the authenticated runtime-to-CLI replay transport foundation. |
-| Next action | Coverage repaired at signed head b1fb837: asb-core replay_transport 98.24&#37; lines and 97.53&#37; regions, above unchanged 95&#37; floor; focused core 4/4 and runtime 6/6 pass. Fmt, workspace locked tests, and clippy pass; push exact head and await fresh PR #208 checks. |
-
-### AR-1283 — Formal lockfile CI drift repair
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Repair formal workspace lockfile drift that fails the locked CI gate. |
-| Next action | Promote after dependency verification; regenerate and verify formal/Cargo.lock so hosted --locked formal tests do not attempt updates. |
-
-### AR-1284 — Runtime-owned strict-replay lifecycle execution
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Connect authenticated replay transport to the runtime-owned primary strict-replay lifecycle. |
-| Next action | Split a runtime-owned launch-factory/CLI entrypoint successor: current protected main has only caller-constructible ReplayTransportIssuer and SandboxBackend APIs, so AR-1284 cannot safely wire primary replay without fabricating authority. |
-
-### AR-1285 — Runtime-owned strict-replay launch factory
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Provide a runtime-owned launch factory for authenticated strict-replay CLI execution. |
-| Next action | Merged as signed local protected merge 2fd9055 (parents f9ddf7e and 0f876c7). Monitor exact-main post-merge workflows 35173271478/71480/71491/71497/71506/71516 to terminal; release done only after all success and verify main signature/DCO. |
-
-### AR-1286 — Supervised strict-replay cassette lifecycle
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Execute strict-replay cassettes through the runtime-owned supervised lifecycle. |
-| Next action | Await terminal post-merge workflows for protected main 2066e323; then verify exact merge/policy/evidence and close lifecycle acceptance. |
-
-### AR-1287 — Delegated sandbox runner capability
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Provide a delegated runner for real strict-replay child lifecycle qualification. |
-| Next action | No further action; protected merge 7ea3e001 exact-main workflows 35202285902/85873/85881/85905/85917/85930/85955 all green, and KVM guest passed 51 normal plus the qualified backend test. AR-1301 is promoted and active. |
-
-### AR-1288 — Runtime certificate issuance and chain validation
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814. |
-| Next action | Preserve merged code; repair protected-main DCO integrity forward-only, rerun exact-main gates, then release. |
-
-### AR-1289 — Repair formal lock gate
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Repair the stale formal Cargo.lock required by hosted exact-head gates. |
-| Next action | Policy check 35177646319 failed only on pre-existing Gemini timing assertion; exact targeted test passed 3/3 locally. Failed hosted job rerun requested once; monitor rerun plus remaining required checks, merge only if all terminal-success. |
-
-### AR-1290 — Dependabot DCO boundary recovery
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Recover protected-main DCO assurance for the immutable Dependabot serde commit without weakening broad policy. |
-| Next action | Monitor exact-main post-merge workflows for c1b1860786e844adb69b8f74e39af290592a89c8 to terminal SUCCESS; verify protected main signature/DCO/tree and release AR-1290 done. |
-
-### AR-1291 — Repair superseded dependency pointers
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Repair missing successor pointers on superseded dependency tasks. |
-| Next action | Claim the state-repair AR, add the verified successor pointers to AR-1052/1054/1056/1058/1061, reconcile and validate AR-1010 dependency readiness. |
-
-### AR-1292 — Pinned TLA+ artifact provenance repair
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Repair or formally retain the pinned TLA+ artifact provenance mismatch blocking formal assurance. |
-| Next action | Await signed or attested immutable TLA+ v1.8.0 provenance, or deterministic source-build qualification for 142d0ba; do not update hash only. |
-
-### AR-1293 — State-scoped TLA admission runner
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Development runner work may proceed with locally generated disposable seeds under unsigned-development; reviewed seed digests are not a development prerequisite. Formal/publication qualification remains separate and is not claimed. |
-| Next action | Use the generated-seed unsigned-development path for provider-free runner and integration tests, recording qualification_authorized=false. Do not wait on archival seed recovery; create a separate formal-only successor only if signed publication qualification is explicitly requested. |
-
-### AR-1294 — State formal-gate baseline integrity
-
-| Field | Value |
-| --- | --- |
-| Status | superseded |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Restore vendor and formal admission baseline integrity needed to qualify AR-1293. |
-| Next action | Audit the vendor lock/digest mismatch and root-owned TLC admission lock; repair only through immutable provenance and owner-safe lock handling, then rerun full state/formal gates. |
-
-### AR-1295 — Coordinator vendor v0.3.7 fixture alignment
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Align stale coordinator vendor tests with the verified immutable v0.3.7 pin. |
-| Next action | Repair current generated-state blockers (AR-1160, AR-1258, AR-1303, malformed AR-1309), then re-audit exact-head publication. |
-
-### AR-1296 — State quality-gate baseline
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Restore strict state-repository mypy and coverage quality gates without weakening thresholds. |
-| Next action | Repair explicit tools package identity and add bounded offline upgrade-command coverage until strict mypy and the unchanged 95&#37; coverage gate pass. |
-
-### AR-1297 — Task schema and metadata consistency
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Repair task schema and metadata consistency without weakening coordinator validation. |
-| Next action | Repair every reported task schema/metadata error from durable evidence, add strict superseded_by schema coverage, regenerate views, and rerun all state gates. |
-
-### AR-1298 — Narrow task metadata repair scope
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Narrow AR-1297 metadata changes to the exact evidence-backed schema repairs. |
-| Next action | Restore unrelated task files to pre-AR-1297 bytes, retain only evidence-backed schema-failure repairs, regenerate views, and rerun all gates. |
-
-### AR-1299 — Complete authenticated agent catalog identity metadata
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Complete authenticated agent catalog signer, provenance, SBOM and license metadata. |
-| Next action | No further action; protected merge 7ea3e001dffa13eca5ff0f05444c2b3b9d4df928, all seven exact-main workflows, signature/DCO, and merge-tree policy are verified. |
-
-### AR-1300 — Runtime-to-replay cassette dispatch seam
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Connect runtime-issued cassette operations to the real strict-replay dispatch path. |
-| Next action | No further action; merged commit 9263f8310cbf4d222d09d0d1eaef4b4bdfb72e05 and exact-main post-merge gates are green. |
-
-### AR-1301 — Supervised replay lifecycle fault matrix
-
-| Field | Value |
-| --- | --- |
-| Status | superseded |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end. |
-| Next action | Implement runtime-owned listener fixtures and cause-specific assertions; rerun the matrix and exact-head CI, obtain approval, merge, and reconcile. |
-
-### AR-1302 — Portable TLC CI/VM runner
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Provision a clean portable TLC CI/VM runner for state formal admission. |
-| Next action | Use run_lifecycle from signed commit 1fd5e31cf to create a fresh overlay, boot the UUID-serial data disk, run guest UUID/mount preflight, then execute f1931686c portable-smoke and capture sanitized terminal attestation. Do not claim qualification from container evidence. |
-
-### AR-1303 — Privacy-safe hosted platform failure diagnostics
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Add privacy-safe fixed diagnostics for hosted platform evidence failures. |
-| Next action | PR #220 merged after exact-head review; verify resulting main post-merge workflows and retain terminal workflow evidence. Diagnostics remain opt-in and privacy-safe; no gate weakening. |
-
-### AR-1304 — Required-tier QEMU user-bus runner
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Create a clean required-containment QEMU runner for formal publication evidence. |
-| Next action | Independent exact-head review of signed commits 56001d6e2, 151bd0f99, de489eac9, and current seed/receipt chain; then hand required pr-publication evidence to AR-1293. Do not run full-exhaustive until coordinator accepts the attestation. |
-
-### AR-1305 — Image-native user-session support
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Development-complete: fresh image v2 plus writable disposable data overlay and locally generated unsigned-development seed reached FULL_EXHAUSTIVE_TRANSIENT_RC=0. Generator now provisions the UID-1000 asb user without default-user collision. Formal attestation is intentionally not claimed. |
-| Next action | No further development action. Preserve the generated-seed image-native evidence; any signed/formal/publication qualification must use a separate formal successor and must not block development. |
-
-### AR-1306 — Authenticated strict-replay fault-matrix qualification
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Qualify the real authenticated strict-replay service and fault matrix missing from PR #221. |
-| Next action | Recheck approved exact head, merge the PR, verify post-merge state, and close AR with durable evidence. |
-
-### AR-1307 — Portable TLC runner repair and qualification
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Runner implementation remains blocked for its unrelated formal CI OOM/publication transition, but development execution no longer depends on a reviewed seed digest. The explicit unsigned-development profile accepts locally generated disposable seeds and remains qualification_authorized=false. |
-| Next action | Continue provider-free development tests with generated seeds through the unsigned-development profile. Do not make AR-1307 or its dependents wait for archival seed recovery; if formal/publication qualification is later authorized, use a separate formal-only successor with reviewed inputs. |
-
-### AR-1308 — Full-exhaustive QEMU capacity qualification
-
-| Field | Value |
-| --- | --- |
-| Status | blocked |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | QEMU fixture passes boot/transient/JAR checks; corrected full-tier rerun reproducibly times out at 1700s without attestation. |
-| Next action | Remain blocked pending AR-1531 fixture provisioning and exact formal input recovery; development uses generated unsigned seeds and claims no formal qualification. |
-
-### AR-1309 — Reviewed full-exhaustive capacity or model-reduction contract
-
-| Field | Value |
-| --- | --- |
-| Status | superseded |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Provide a reviewed successor contract after terminal full-exhaustive capacity OOM. |
-| Next action | Superseded by AR-1529: preserve this historical decision record and do not promote it because its dependency on blocked AR-1307/1308 cannot express the already completed capacity decision. |
-
-### AR-1310 — Runtime-owned provider capture and recording campaign qualification
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Runtime-owned provider capture and recording campaign qualification. |
-| Next action | Implementation and coverage successor are merged; retain historical DCO finding as AR-1313 and continue with authenticated agent-catalog producer AR-1316. |
-
-### AR-1311 — Repair planned-task metadata schema contradiction
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Repair planned-task metadata that violates the current live-observation schema. |
-| Next action | Claim this metadata-only repair, remove unsupported empty live-observation fields from planned AR-1309, regenerate views, and rerun schema and state gates. Do not alter AR-1309 meaning or claim implementation. |
-
-### AR-1312 — Post-merge workspace coverage floor repair
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Repair the post-merge workspace coverage deficit without weakening the 90&#37; floor. |
-| Next action | AR complete: signed coverage repair merged as PR #238 and post-merge workspace coverage verification passed; retain evidence and continue with AR-1316. |
-
-### AR-1313 — Historical DCO merge-integrity recovery
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Forward-only signed DCO recovery candidate published as PR #231. |
-| Next action | All PR #290 exact-head checks are green; obtain independent review, then run signed merge_pr.py against exact base e41d4df/head 3420355/tree e1120e9 and verify seven post-merge workflows. |
-
-### AR-1314 — Optional runtime-bundle signing for development and tagged releases
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile. |
-| Next action | Blocked on AR-1397 integration repair: post-merge Repository quality rejects c58b0b0 tree against reviewed topic after AR-1395 advanced main, and c58 Rust workflow dispatch 35980460560 was cancelled by a higher-priority waiting request for refs/heads/main. Preserve all evidence; after AR-1397 repair and queue quiescence, rerun all seven exact-main workflows including Rust. |
-
-### AR-1315 — Formal runner development-profile metadata repair
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Align formal-runner task metadata with the explicit unsigned development profile. |
-| Next action | Independent review of signed state commit da9c31036; publish/reconcile through handoffctl, then run doctor --live and record exact durable outcome. |
-
-### AR-1316 — Authenticated agent catalog producer
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Publish the verified ASB agent catalog required by the first-run setup wizard. |
-| Next action | Release AR-1316 as satisfied by exact current main; no new product diff or PR is required because producer implementation is already merged and verified. |
-
-### AR-1319 — Authenticated agent catalog entry contract
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Make incomplete authenticated agent catalog entries truthful and selectable only after verification. |
-| Next action | Completed; preserve the merged contract as the prerequisite for AR-1316 producer and future verified release-index work. |
-
-### AR-1320 — Persisted authenticated agent release index
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Persist and verify the ASB agent release index used by the setup wizard. |
-| Next action | Do not create a new PR: origin/main already contains the AR-1320 persistence commit (77571ff), while the isolated branch is 226 commits behind and has no open PR. Release this AR with durable merged-main and verification evidence, then continue with AR-1322. |
-
-### AR-1322 — Authenticated agent release-index source
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Promote only completely verified agents from a signed local release index. |
-| Next action | Run post-merge live ASB-to-asb-tui catalog projection with a configured signed index; keep unavailable fallback when trust configuration is absent. |
-
-### AR-1324 — Authenticated credential-helper control contract
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P0 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Own the ASB control and runner backend for safe credential-helper invocation. |
-| Next action | Monitor authoritative pull_request checks for PR #248 at 5abd8c7; merge only after all required checks pass, then perform ASB↔asb-tui first-user/live-provider wizard acceptance. |
-
-### AR-1325 — Support a shared OpenRouter provider
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Define one pinned credential-free OpenRouter provider profile for compatible ASB agent adapters. |
-| Next action | Repair protected-main merge-tree admission after post-merge Repository quality failed on 56c882a: protected-main merge tree differs from reviewed topic tree; create and execute a dedicated repair AR, then rerun all exact-main workflows before treating AR-1325 as done. |
-
-### AR-1326 — Select OpenRouter through the CLI provider catalog
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Advertise the OpenRouter profile in the CLI provider catalog and accept it in provider-plan selection. |
-| Next action | No further action; merged PR #250 and all seven post-merge workflows are recorded green. |
-
-### AR-1327 — OpenRouter adapter projections and parity conformance
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Wire the OpenRouter endpoint and model through every compatible agent adapter projection and prove parity with hostile conformance evidence. |
-| Next action | No further action; merged PR #251 and exact post-merge workflows are recorded green. |
-
-### AR-1328 — OpenRouter free-model user configuration and key enrollment
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Persist the per-user OpenRouter free-model configuration and credential-free key enrollment. |
-| Next action | Promote AR-1329 live-provider run execution; preserve credential-free configuration and exact-head evidence. |
-
-### AR-1329 — Local-mock run execution with optional live-provider integration
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Qualify asb run and sweep through a mandatory deterministic local mock; retain optional fail-closed live integration. |
-| Next action | Local deterministic mock run/sweep qualification is delivered by AR-1433 (PR #325, merge 2872a31f, all exact-main gates green). AR-1329 remains blocked only for optional production live-provider integration: an atomic runtime-owned LiveProviderRuntimeService must resolve pinned policy, enrolled credentials, attested namespace/relay, concrete egress target, ResourceLease, SandboxBackend, and one LiveProviderAttempt per scheduler attempt with cancellation teardown. Do not use external reachability as a CI gate; preserve NetworkPolicy::Deny and direct/alternate egress denial. AR-1446 may consume the local path without waiting for this optional boundary. |
-
-### AR-1330 — Live provider capture into a sealed cassette
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Runtime-authorized capture now seals redacted content-addressed cassettes through StrictReplayService; deterministic local/mock qualification is sufficient and external provider reachability remains optional. |
-| Next action | No further implementation action; preserve local/mock and strict-replay evidence for future production integration. |
-
-### AR-1331 — Runtime-owned strict-replay launch authority
-
-| Field | Value |
-| --- | --- |
-| Status | done |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
+## Dependency graph
+
+Arrows point from each prerequisite to the work that depends on it. Color is redundant
+with the status text inside every node; the tables below are the complete text
+alternative.
+
+```mermaid
+flowchart LR
+    subgraph series_00["00 - Coordination foundation"]
+        direction TB
+        AR_0001["AR-0001 - Done"]:::status_done
+        AR_0002["AR-0002 - Done"]:::status_done
+        AR_0003["AR-0003 - Done"]:::status_done
+        AR_0004["AR-0004 - Done"]:::status_done
+        AR_0005["AR-0005 - Done"]:::status_done
+    end
+    subgraph series_01["01 - Contracts and runtime"]
+        direction TB
+        AR_0101["AR-0101 - Done"]:::status_done
+        AR_0102["AR-0102 - Done"]:::status_done
+        AR_0103["AR-0103 - Done"]:::status_done
+        AR_0104["AR-0104 - Done"]:::status_done
+        AR_0105["AR-0105 - Done"]:::status_done
+    end
+    subgraph series_02["02 - Analysis"]
+        direction TB
+        AR_0201["AR-0201 - Done"]:::status_done
+        AR_0202["AR-0202 - Done"]:::status_done
+        AR_0203["AR-0203 - Done"]:::status_done
+        AR_0204["AR-0204 - Done"]:::status_done
+    end
+    subgraph series_03["03 - Adapters and workloads"]
+        direction TB
+        AR_0301["AR-0301 - Done"]:::status_done
+        AR_0302["AR-0302 - Done"]:::status_done
+        AR_0303["AR-0303 - Done"]:::status_done
+        AR_0304["AR-0304 - Done"]:::status_done
+        AR_0305["AR-0305 - Done"]:::status_done
+        AR_0306["AR-0306 - Done"]:::status_done
+        AR_0307["AR-0307 - Done"]:::status_done
+        AR_0308["AR-0308 - Done"]:::status_done
+        AR_0309["AR-0309 - Done"]:::status_done
+        AR_0310["AR-0310 - Done"]:::status_done
+        AR_0311["AR-0311 - Done"]:::status_done
+        AR_0312["AR-0312 - Done"]:::status_done
+        AR_0313["AR-0313 - Done"]:::status_done
+        AR_0314["AR-0314 - Done"]:::status_done
+        AR_0315["AR-0315 - Done"]:::status_done
+        AR_0316["AR-0316 - Done"]:::status_done
+        AR_0317["AR-0317 - Done"]:::status_done
+        AR_0318["AR-0318 - Done"]:::status_done
+        AR_0319["AR-0319 - Done"]:::status_done
+        AR_0320["AR-0320 - Done"]:::status_done
+    end
+    subgraph series_04["04 - Live measurement"]
+        direction TB
+        AR_0401["AR-0401 - Done"]:::status_done
+        AR_0402["AR-0402 - Done"]:::status_done
+        AR_0403["AR-0403 - Done"]:::status_done
+        AR_0404["AR-0404 - Done"]:::status_done
+        AR_0405["AR-0405 - Done"]:::status_done
+        AR_0406["AR-0406 - Done"]:::status_done
+    end
+    subgraph series_05["05 - Replay"]
+        direction TB
+        AR_0501["AR-0501 - Done"]:::status_done
+        AR_0502["AR-0502 - Done"]:::status_done
+        AR_0503["AR-0503 - Done"]:::status_done
+        AR_0504["AR-0504 - Done"]:::status_done
+        AR_0505["AR-0505 - Done"]:::status_done
+        AR_0506["AR-0506 - Done"]:::status_done
+        AR_0507["AR-0507 - Done"]:::status_done
+        AR_0508["AR-0508 - Done"]:::status_done
+        AR_0509["AR-0509 - Done"]:::status_done
+        AR_0510["AR-0510 - Done"]:::status_done
+        AR_0511["AR-0511 - Done"]:::status_done
+        AR_0512["AR-0512 - Done"]:::status_done
+        AR_0513["AR-0513 - Done"]:::status_done
+        AR_0514["AR-0514 - Blocked"]:::status_blocked
+        AR_0515["AR-0515 - Planned"]:::status_planned
+        AR_0516["AR-0516 - Done"]:::status_done
+        AR_0517["AR-0517 - Done"]:::status_done
+        AR_0518["AR-0518 - Done"]:::status_done
+        AR_0519["AR-0519 - Done"]:::status_done
+        AR_0520["AR-0520 - Done"]:::status_done
+        AR_0521["AR-0521 - Blocked"]:::status_blocked
+    end
+    subgraph series_06["06 - Metrics"]
+        direction TB
+        AR_0601["AR-0601 - Done"]:::status_done
+        AR_0602["AR-0602 - Planned"]:::status_planned
+        AR_0603["AR-0603 - Done"]:::status_done
+        AR_0604["AR-0604 - Blocked"]:::status_blocked
+    end
+    subgraph series_07["07 - Platforms"]
+        direction TB
+        AR_0701["AR-0701 - Done"]:::status_done
+        AR_0702["AR-0702 - Done"]:::status_done
+        AR_0703["AR-0703 - Future"]:::status_future
+        AR_0704["AR-0704 - Done"]:::status_done
+        AR_0705["AR-0705 - Blocked"]:::status_blocked
+        AR_0706["AR-0706 - Blocked"]:::status_blocked
+        AR_0707["AR-0707 - Done"]:::status_done
+    end
+    subgraph series_08["08 - Interfaces"]
+        direction TB
+        AR_0801["AR-0801 - Done"]:::status_done
+        AR_0802["AR-0802 - Done"]:::status_done
+        AR_0803["AR-0803 - Done"]:::status_done
+        AR_0804["AR-0804 - Done"]:::status_done
+        AR_0805["AR-0805 - Done"]:::status_done
+        AR_0806["AR-0806 - Done"]:::status_done
+        AR_0807["AR-0807 - Planned"]:::status_planned
+        AR_0808["AR-0808 - Planned"]:::status_planned
+        AR_0809["AR-0809 - Planned"]:::status_planned
+        AR_0810["AR-0810 - Planned"]:::status_planned
+        AR_0811["AR-0811 - Planned"]:::status_planned
+        AR_0812["AR-0812 - Done"]:::status_done
+        AR_0813["AR-0813 - Done"]:::status_done
+        AR_0814["AR-0814 - Blocked"]:::status_blocked
+        AR_0815["AR-0815 - Planned"]:::status_planned
+        AR_0816["AR-0816 - Planned"]:::status_planned
+        AR_0817["AR-0817 - Planned"]:::status_planned
+        AR_0818["AR-0818 - Planned"]:::status_planned
+        AR_0819["AR-0819 - Done"]:::status_done
+        AR_0820["AR-0820 - Done"]:::status_done
+        AR_0821["AR-0821 - Done"]:::status_done
+        AR_0822["AR-0822 - Done"]:::status_done
+        AR_0823["AR-0823 - Planned"]:::status_planned
+        AR_0830["AR-0830 - Done"]:::status_done
+        AR_0831["AR-0831 - Done"]:::status_done
+        AR_0832["AR-0832 - Blocked"]:::status_blocked
+        AR_0833["AR-0833 - Planned"]:::status_planned
+        AR_0834["AR-0834 - Done"]:::status_done
+        AR_0835["AR-0835 - Done"]:::status_done
+        AR_0836["AR-0836 - Blocked"]:::status_blocked
+        AR_0837["AR-0837 - Planned"]:::status_planned
+        AR_0840["AR-0840 - Done"]:::status_done
+        AR_0841["AR-0841 - Done"]:::status_done
+        AR_0842["AR-0842 - Done"]:::status_done
+        AR_0843["AR-0843 - Done"]:::status_done
+        AR_0844["AR-0844 - Done"]:::status_done
+        AR_0845["AR-0845 - Done"]:::status_done
+        AR_0846["AR-0846 - Planned"]:::status_planned
+        AR_0847["AR-0847 - Done"]:::status_done
+        AR_0848["AR-0848 - Done"]:::status_done
+        AR_0849["AR-0849 - Done"]:::status_done
+        AR_0850["AR-0850 - Done"]:::status_done
+        AR_0851["AR-0851 - Done"]:::status_done
+        AR_0852["AR-0852 - Done"]:::status_done
+        AR_0853["AR-0853 - Done"]:::status_done
+        AR_0854["AR-0854 - Done"]:::status_done
+        AR_0855["AR-0855 - Done"]:::status_done
+        AR_0856["AR-0856 - Planned"]:::status_planned
+        AR_0857["AR-0857 - Done"]:::status_done
+        AR_0858["AR-0858 - Done"]:::status_done
+        AR_0859["AR-0859 - Done"]:::status_done
+        AR_0860["AR-0860 - Done"]:::status_done
+        AR_0861["AR-0861 - Blocked"]:::status_blocked
+        AR_0862["AR-0862 - Planned"]:::status_planned
+        AR_0863["AR-0863 - Blocked"]:::status_blocked
+        AR_0864["AR-0864 - Planned"]:::status_planned
+        AR_0865["AR-0865 - Planned"]:::status_planned
+        AR_0866["AR-0866 - Planned"]:::status_planned
+        AR_0867["AR-0867 - Planned"]:::status_planned
+        AR_0868["AR-0868 - Planned"]:::status_planned
+        AR_0869["AR-0869 - Done"]:::status_done
+        AR_0870["AR-0870 - Done"]:::status_done
+        AR_0871["AR-0871 - Done"]:::status_done
+        AR_0872["AR-0872 - Done"]:::status_done
+        AR_0873["AR-0873 - Planned"]:::status_planned
+        AR_0874["AR-0874 - Planned"]:::status_planned
+        AR_0875["AR-0875 - Done"]:::status_done
+        AR_0876["AR-0876 - Done"]:::status_done
+        AR_0877["AR-0877 - Done"]:::status_done
+        AR_0878["AR-0878 - Done"]:::status_done
+        AR_0879["AR-0879 - Done"]:::status_done
+        AR_0880["AR-0880 - Done"]:::status_done
+        AR_0888["AR-0888 - Done"]:::status_done
+        AR_0889["AR-0889 - Done"]:::status_done
+        AR_0890["AR-0890 - Blocked"]:::status_blocked
+        AR_0891["AR-0891 - Done"]:::status_done
+        AR_0892["AR-0892 - Planned"]:::status_planned
+        AR_0893["AR-0893 - Planned"]:::status_planned
+        AR_0894["AR-0894 - Planned"]:::status_planned
+        AR_0895["AR-0895 - Done"]:::status_done
+        AR_0896["AR-0896 - Blocked"]:::status_blocked
+        AR_0897["AR-0897 - Done"]:::status_done
+        AR_0898["AR-0898 - Done"]:::status_done
+        AR_0899["AR-0899 - Done"]:::status_done
+    end
+    subgraph series_09["09 - Assurance"]
+        direction TB
+        AR_0901["AR-0901 - Done"]:::status_done
+        AR_0902["AR-0902 - Done"]:::status_done
+        AR_0903["AR-0903 - Planned"]:::status_planned
+        AR_0904["AR-0904 - Done"]:::status_done
+        AR_0905["AR-0905 - Done"]:::status_done
+        AR_0906["AR-0906 - Done"]:::status_done
+        AR_0907["AR-0907 - Done"]:::status_done
+        AR_0908["AR-0908 - Done"]:::status_done
+        AR_0909["AR-0909 - Done"]:::status_done
+    end
+    subgraph series_10["10 - Reliability and release"]
+        direction TB
+        AR_1001["AR-1001 - Done"]:::status_done
+        AR_1002["AR-1002 - Done"]:::status_done
+        AR_1003["AR-1003 - Done"]:::status_done
+        AR_1004["AR-1004 - Done"]:::status_done
+        AR_1005["AR-1005 - Done"]:::status_done
+        AR_1006["AR-1006 - Done"]:::status_done
+        AR_1007["AR-1007 - Done"]:::status_done
+        AR_1008["AR-1008 - Done"]:::status_done
+        AR_1010["AR-1010 - Done"]:::status_done
+        AR_1011["AR-1011 - Planned"]:::status_planned
+        AR_1012["AR-1012 - Planned"]:::status_planned
+        AR_1013["AR-1013 - Done"]:::status_done
+        AR_1014["AR-1014 - Planned"]:::status_planned
+        AR_1015["AR-1015 - Planned"]:::status_planned
+        AR_1016["AR-1016 - Planned"]:::status_planned
+        AR_1017["AR-1017 - Done"]:::status_done
+        AR_1018["AR-1018 - Done"]:::status_done
+        AR_1019["AR-1019 - Done"]:::status_done
+        AR_1020["AR-1020 - Done"]:::status_done
+        AR_1021["AR-1021 - Done"]:::status_done
+        AR_1022["AR-1022 - Done"]:::status_done
+        AR_1023["AR-1023 - Done"]:::status_done
+        AR_1024["AR-1024 - Blocked"]:::status_blocked
+        AR_1025["AR-1025 - Blocked"]:::status_blocked
+        AR_1026["AR-1026 - Planned"]:::status_planned
+        AR_1027["AR-1027 - Planned"]:::status_planned
+        AR_1028["AR-1028 - Done"]:::status_done
+        AR_1029["AR-1029 - Planned"]:::status_planned
+        AR_1030["AR-1030 - Done"]:::status_done
+        AR_1031["AR-1031 - Planned"]:::status_planned
+        AR_1032["AR-1032 - Planned"]:::status_planned
+        AR_1033["AR-1033 - Planned"]:::status_planned
+        AR_1034["AR-1034 - Planned"]:::status_planned
+        AR_1035["AR-1035 - Planned"]:::status_planned
+        AR_1036["AR-1036 - Done"]:::status_done
+        AR_1037["AR-1037 - Done"]:::status_done
+        AR_1038["AR-1038 - Done"]:::status_done
+        AR_1039["AR-1039 - Done"]:::status_done
+        AR_1040["AR-1040 - Done"]:::status_done
+        AR_1041["AR-1041 - Done"]:::status_done
+        AR_1042["AR-1042 - Done"]:::status_done
+        AR_1043["AR-1043 - Done"]:::status_done
+        AR_1044["AR-1044 - Done"]:::status_done
+        AR_1045["AR-1045 - Done"]:::status_done
+        AR_1046["AR-1046 - Superseded"]:::status_superseded
+        AR_1047["AR-1047 - Done"]:::status_done
+        AR_1048["AR-1048 - Superseded"]:::status_superseded
+        AR_1049["AR-1049 - Superseded"]:::status_superseded
+        AR_1050["AR-1050 - Superseded"]:::status_superseded
+        AR_1051["AR-1051 - Done"]:::status_done
+        AR_1052["AR-1052 - Superseded"]:::status_superseded
+        AR_1053["AR-1053 - Done"]:::status_done
+        AR_1054["AR-1054 - Superseded"]:::status_superseded
+        AR_1055["AR-1055 - Done"]:::status_done
+        AR_1056["AR-1056 - Superseded"]:::status_superseded
+        AR_1057["AR-1057 - Done"]:::status_done
+        AR_1058["AR-1058 - Superseded"]:::status_superseded
+        AR_1059["AR-1059 - Done"]:::status_done
+        AR_1060["AR-1060 - Done"]:::status_done
+        AR_1061["AR-1061 - Superseded"]:::status_superseded
+        AR_1062["AR-1062 - Done"]:::status_done
+        AR_1064["AR-1064 - Done"]:::status_done
+        AR_1065["AR-1065 - Done"]:::status_done
+    end
+    subgraph series_11["11 - Additional work"]
+        direction TB
+        AR_1100["AR-1100 - Done"]:::status_done
+        AR_1110["AR-1110 - Done"]:::status_done
+        AR_1120["AR-1120 - Done"]:::status_done
+        AR_1130["AR-1130 - Done"]:::status_done
+        AR_1140["AR-1140 - Done"]:::status_done
+        AR_1150["AR-1150 - Done"]:::status_done
+        AR_1151["AR-1151 - Done"]:::status_done
+        AR_1160["AR-1160 - Blocked"]:::status_blocked
+        AR_1170["AR-1170 - Planned"]:::status_planned
+        AR_1180["AR-1180 - Planned"]:::status_planned
+        AR_1181["AR-1181 - Blocked"]:::status_blocked
+        AR_1190["AR-1190 - Done"]:::status_done
+        AR_1191["AR-1191 - Done"]:::status_done
+        AR_1196["AR-1196 - Done"]:::status_done
+        AR_1197["AR-1197 - Done"]:::status_done
+        AR_1198["AR-1198 - Done"]:::status_done
+        AR_1199["AR-1199 - Blocked"]:::status_blocked
+    end
+    subgraph series_12["12 - Additional work"]
+        direction TB
+        AR_1200["AR-1200 - Done"]:::status_done
+        AR_1210["AR-1210 - Done"]:::status_done
+        AR_1211["AR-1211 - Done"]:::status_done
+        AR_1212["AR-1212 - Done"]:::status_done
+        AR_1213["AR-1213 - Done"]:::status_done
+        AR_1214["AR-1214 - Done"]:::status_done
+        AR_1215["AR-1215 - Done"]:::status_done
+        AR_1216["AR-1216 - Done"]:::status_done
+        AR_1226["AR-1226 - Done"]:::status_done
+        AR_1227["AR-1227 - Planned"]:::status_planned
+        AR_1228["AR-1228 - Done"]:::status_done
+        AR_1229["AR-1229 - Done"]:::status_done
+        AR_1230["AR-1230 - Done"]:::status_done
+        AR_1231["AR-1231 - Done"]:::status_done
+        AR_1232["AR-1232 - Done"]:::status_done
+        AR_1233["AR-1233 - Done"]:::status_done
+        AR_1234["AR-1234 - Done"]:::status_done
+        AR_1235["AR-1235 - Done"]:::status_done
+        AR_1236["AR-1236 - Done"]:::status_done
+        AR_1237["AR-1237 - Done"]:::status_done
+        AR_1238["AR-1238 - Done"]:::status_done
+        AR_1239["AR-1239 - Done"]:::status_done
+        AR_1240["AR-1240 - Done"]:::status_done
+        AR_1241["AR-1241 - Done"]:::status_done
+        AR_1242["AR-1242 - Done"]:::status_done
+        AR_1243["AR-1243 - Done"]:::status_done
+        AR_1244["AR-1244 - Done"]:::status_done
+        AR_1245["AR-1245 - Done"]:::status_done
+        AR_1246["AR-1246 - Done"]:::status_done
+        AR_1247["AR-1247 - Done"]:::status_done
+        AR_1248["AR-1248 - Blocked"]:::status_blocked
+        AR_1249["AR-1249 - Blocked"]:::status_blocked
+        AR_1250["AR-1250 - Blocked"]:::status_blocked
+        AR_1251["AR-1251 - Blocked"]:::status_blocked
+        AR_1252["AR-1252 - Done"]:::status_done
+        AR_1253["AR-1253 - Done"]:::status_done
+        AR_1254["AR-1254 - Blocked"]:::status_blocked
+        AR_1255["AR-1255 - Planned"]:::status_planned
+        AR_1256["AR-1256 - Blocked"]:::status_blocked
+        AR_1257["AR-1257 - Planned"]:::status_planned
+        AR_1258["AR-1258 - Blocked"]:::status_blocked
+        AR_1259["AR-1259 - Done"]:::status_done
+        AR_1260["AR-1260 - Blocked"]:::status_blocked
+        AR_1261["AR-1261 - Blocked"]:::status_blocked
+        AR_1262["AR-1262 - Blocked"]:::status_blocked
+        AR_1263["AR-1263 - Done"]:::status_done
+        AR_1264["AR-1264 - Done"]:::status_done
+        AR_1265["AR-1265 - Blocked"]:::status_blocked
+        AR_1266["AR-1266 - Blocked"]:::status_blocked
+        AR_1267["AR-1267 - Blocked"]:::status_blocked
+        AR_1268["AR-1268 - Blocked"]:::status_blocked
+        AR_1269["AR-1269 - Blocked"]:::status_blocked
+        AR_1270["AR-1270 - Blocked"]:::status_blocked
+        AR_1271["AR-1271 - Blocked"]:::status_blocked
+        AR_1272["AR-1272 - Blocked"]:::status_blocked
+        AR_1273["AR-1273 - Blocked"]:::status_blocked
+        AR_1274["AR-1274 - Blocked"]:::status_blocked
+        AR_1275["AR-1275 - Blocked"]:::status_blocked
+        AR_1276["AR-1276 - Blocked"]:::status_blocked
+        AR_1277["AR-1277 - Blocked"]:::status_blocked
+        AR_1278["AR-1278 - Blocked"]:::status_blocked
+        AR_1279["AR-1279 - Blocked"]:::status_blocked
+        AR_1280["AR-1280 - Blocked"]:::status_blocked
+        AR_1281["AR-1281 - Blocked"]:::status_blocked
+        AR_1282["AR-1282 - Done"]:::status_done
+        AR_1283["AR-1283 - Blocked"]:::status_blocked
+        AR_1284["AR-1284 - Blocked"]:::status_blocked
+        AR_1285["AR-1285 - Done"]:::status_done
+        AR_1286["AR-1286 - Done"]:::status_done
+        AR_1287["AR-1287 - Done"]:::status_done
+        AR_1288["AR-1288 - Done"]:::status_done
+        AR_1289["AR-1289 - Done"]:::status_done
+        AR_1290["AR-1290 - Done"]:::status_done
+        AR_1291["AR-1291 - Done"]:::status_done
+        AR_1292["AR-1292 - Blocked"]:::status_blocked
+        AR_1293["AR-1293 - Blocked"]:::status_blocked
+        AR_1294["AR-1294 - Superseded"]:::status_superseded
+        AR_1295["AR-1295 - Done"]:::status_done
+        AR_1296["AR-1296 - Done"]:::status_done
+        AR_1297["AR-1297 - Done"]:::status_done
+        AR_1298["AR-1298 - Done"]:::status_done
+        AR_1299["AR-1299 - Done"]:::status_done
+    end
+    subgraph series_13["13 - Additional work"]
+        direction TB
+        AR_1300["AR-1300 - Done"]:::status_done
+        AR_1301["AR-1301 - Superseded"]:::status_superseded
+        AR_1302["AR-1302 - Done"]:::status_done
+        AR_1303["AR-1303 - Done"]:::status_done
+        AR_1304["AR-1304 - Done"]:::status_done
+        AR_1305["AR-1305 - Done"]:::status_done
+        AR_1306["AR-1306 - Done"]:::status_done
+        AR_1307["AR-1307 - Blocked"]:::status_blocked
+        AR_1308["AR-1308 - Blocked"]:::status_blocked
+        AR_1309["AR-1309 - Superseded"]:::status_superseded
+        AR_1310["AR-1310 - Done"]:::status_done
+        AR_1311["AR-1311 - Done"]:::status_done
+        AR_1312["AR-1312 - Done"]:::status_done
+        AR_1313["AR-1313 - Done"]:::status_done
+        AR_1314["AR-1314 - Done"]:::status_done
+        AR_1315["AR-1315 - Done"]:::status_done
+        AR_1316["AR-1316 - Done"]:::status_done
+        AR_1319["AR-1319 - Done"]:::status_done
+        AR_1320["AR-1320 - Done"]:::status_done
+        AR_1322["AR-1322 - Done"]:::status_done
+        AR_1324["AR-1324 - Done"]:::status_done
+        AR_1325["AR-1325 - Done"]:::status_done
+        AR_1326["AR-1326 - Done"]:::status_done
+        AR_1327["AR-1327 - Done"]:::status_done
+        AR_1328["AR-1328 - Done"]:::status_done
+        AR_1329["AR-1329 - Done"]:::status_done
+        AR_1330["AR-1330 - Done"]:::status_done
+        AR_1331["AR-1331 - Done"]:::status_done
+        AR_1332["AR-1332 - Done"]:::status_done
+        AR_1333["AR-1333 - Superseded"]:::status_superseded
+        AR_1334["AR-1334 - Done"]:::status_done
+        AR_1335["AR-1335 - Done"]:::status_done
+        AR_1336["AR-1336 - Done"]:::status_done
+        AR_1337["AR-1337 - Done"]:::status_done
+        AR_1338["AR-1338 - Done"]:::status_done
+        AR_1339["AR-1339 - Done"]:::status_done
+        AR_1340["AR-1340 - Done"]:::status_done
+        AR_1341["AR-1341 - Done"]:::status_done
+        AR_1342["AR-1342 - Done"]:::status_done
+        AR_1343["AR-1343 - Superseded"]:::status_superseded
+        AR_1344["AR-1344 - Done"]:::status_done
+        AR_1345["AR-1345 - Done"]:::status_done
+        AR_1346["AR-1346 - Superseded"]:::status_superseded
+        AR_1347["AR-1347 - Done"]:::status_done
+        AR_1348["AR-1348 - Superseded"]:::status_superseded
+        AR_1349["AR-1349 - Superseded"]:::status_superseded
+        AR_1350["AR-1350 - Done"]:::status_done
+        AR_1351["AR-1351 - Done"]:::status_done
+        AR_1352["AR-1352 - Done"]:::status_done
+        AR_1353["AR-1353 - Superseded"]:::status_superseded
+        AR_1354["AR-1354 - Blocked"]:::status_blocked
+        AR_1355["AR-1355 - Blocked"]:::status_blocked
+        AR_1356["AR-1356 - Done"]:::status_done
+        AR_1357["AR-1357 - Done"]:::status_done
+        AR_1358["AR-1358 - Blocked"]:::status_blocked
+        AR_1359["AR-1359 - Done"]:::status_done
+        AR_1360["AR-1360 - Blocked"]:::status_blocked
+        AR_1361["AR-1361 - Blocked"]:::status_blocked
+        AR_1362["AR-1362 - Done"]:::status_done
+        AR_1363["AR-1363 - Done"]:::status_done
+        AR_1364["AR-1364 - Done"]:::status_done
+        AR_1365["AR-1365 - Done"]:::status_done
+        AR_1366["AR-1366 - Done"]:::status_done
+        AR_1367["AR-1367 - Blocked"]:::status_blocked
+        AR_1368["AR-1368 - Blocked"]:::status_blocked
+        AR_1369["AR-1369 - Superseded"]:::status_superseded
+        AR_1370["AR-1370 - Superseded"]:::status_superseded
+        AR_1371["AR-1371 - Done"]:::status_done
+        AR_1372["AR-1372 - Done"]:::status_done
+        AR_1373["AR-1373 - Done"]:::status_done
+        AR_1374["AR-1374 - Blocked"]:::status_blocked
+        AR_1375["AR-1375 - Superseded"]:::status_superseded
+        AR_1376["AR-1376 - Blocked"]:::status_blocked
+        AR_1377["AR-1377 - Done"]:::status_done
+        AR_1378["AR-1378 - Done"]:::status_done
+        AR_1379["AR-1379 - Done"]:::status_done
+        AR_1380["AR-1380 - Done"]:::status_done
+        AR_1381["AR-1381 - Done"]:::status_done
+        AR_1382["AR-1382 - Blocked"]:::status_blocked
+        AR_1383["AR-1383 - Done"]:::status_done
+        AR_1384["AR-1384 - Done"]:::status_done
+        AR_1385["AR-1385 - Done"]:::status_done
+        AR_1386["AR-1386 - Blocked"]:::status_blocked
+        AR_1387["AR-1387 - Blocked"]:::status_blocked
+        AR_1388["AR-1388 - Done"]:::status_done
+        AR_1389["AR-1389 - Done"]:::status_done
+        AR_1390["AR-1390 - Blocked"]:::status_blocked
+        AR_1391["AR-1391 - Blocked"]:::status_blocked
+        AR_1392["AR-1392 - Done"]:::status_done
+        AR_1393["AR-1393 - Done"]:::status_done
+        AR_1394["AR-1394 - Done"]:::status_done
+        AR_1395["AR-1395 - Done"]:::status_done
+        AR_1396["AR-1396 - Done"]:::status_done
+        AR_1397["AR-1397 - Done"]:::status_done
+        AR_1398["AR-1398 - Done"]:::status_done
+        AR_1399["AR-1399 - Done"]:::status_done
+    end
+    subgraph series_14["14 - Additional work"]
+        direction TB
+        AR_1400["AR-1400 - Done"]:::status_done
+        AR_1401["AR-1401 - Done"]:::status_done
+        AR_1402["AR-1402 - Done"]:::status_done
+        AR_1403["AR-1403 - Done"]:::status_done
+        AR_1404["AR-1404 - Done"]:::status_done
+        AR_1405["AR-1405 - Done"]:::status_done
+        AR_1406["AR-1406 - Done"]:::status_done
+        AR_1407["AR-1407 - Done"]:::status_done
+        AR_1408["AR-1408 - Done"]:::status_done
+        AR_1409["AR-1409 - Done"]:::status_done
+        AR_1410["AR-1410 - Done"]:::status_done
+        AR_1411["AR-1411 - Done"]:::status_done
+        AR_1412["AR-1412 - Done"]:::status_done
+        AR_1413["AR-1413 - Done"]:::status_done
+        AR_1414["AR-1414 - Done"]:::status_done
+        AR_1415["AR-1415 - Done"]:::status_done
+        AR_1416["AR-1416 - Done"]:::status_done
+        AR_1417["AR-1417 - Done"]:::status_done
+        AR_1418["AR-1418 - Done"]:::status_done
+        AR_1419["AR-1419 - Done"]:::status_done
+        AR_1420["AR-1420 - Done"]:::status_done
+        AR_1421["AR-1421 - Done"]:::status_done
+        AR_1422["AR-1422 - Done"]:::status_done
+        AR_1423["AR-1423 - Done"]:::status_done
+        AR_1424["AR-1424 - Done"]:::status_done
+        AR_1425["AR-1425 - Done"]:::status_done
+        AR_1426["AR-1426 - Done"]:::status_done
+        AR_1427["AR-1427 - Done"]:::status_done
+        AR_1430["AR-1430 - Done"]:::status_done
+        AR_1431["AR-1431 - Done"]:::status_done
+        AR_1432["AR-1432 - Done"]:::status_done
+        AR_1433["AR-1433 - Done"]:::status_done
+        AR_1434["AR-1434 - Done"]:::status_done
+        AR_1435["AR-1435 - Done"]:::status_done
+        AR_1436["AR-1436 - Done"]:::status_done
+        AR_1437["AR-1437 - Done"]:::status_done
+        AR_1438["AR-1438 - Done"]:::status_done
+        AR_1440["AR-1440 - Done"]:::status_done
+        AR_1441["AR-1441 - Done"]:::status_done
+        AR_1442["AR-1442 - Done"]:::status_done
+        AR_1443["AR-1443 - Done"]:::status_done
+        AR_1444["AR-1444 - Blocked"]:::status_blocked
+        AR_1445["AR-1445 - Done"]:::status_done
+        AR_1446["AR-1446 - Done"]:::status_done
+        AR_1447["AR-1447 - Done"]:::status_done
+        AR_1448["AR-1448 - Done"]:::status_done
+        AR_1449["AR-1449 - Blocked"]:::status_blocked
+        AR_1450["AR-1450 - Done"]:::status_done
+        AR_1451["AR-1451 - Done"]:::status_done
+        AR_1452["AR-1452 - Done"]:::status_done
+        AR_1453["AR-1453 - Done"]:::status_done
+        AR_1454["AR-1454 - Done"]:::status_done
+        AR_1455["AR-1455 - Done"]:::status_done
+        AR_1456["AR-1456 - Done"]:::status_done
+        AR_1457["AR-1457 - Done"]:::status_done
+        AR_1458["AR-1458 - Done"]:::status_done
+        AR_1459["AR-1459 - Done"]:::status_done
+        AR_1460["AR-1460 - Done"]:::status_done
+        AR_1461["AR-1461 - Done"]:::status_done
+        AR_1462["AR-1462 - Done"]:::status_done
+        AR_1463["AR-1463 - Done"]:::status_done
+        AR_1464["AR-1464 - Superseded"]:::status_superseded
+        AR_1465["AR-1465 - Superseded"]:::status_superseded
+        AR_1466["AR-1466 - Done"]:::status_done
+        AR_1467["AR-1467 - Done"]:::status_done
+        AR_1468["AR-1468 - Superseded"]:::status_superseded
+        AR_1469["AR-1469 - Done"]:::status_done
+        AR_1470["AR-1470 - Blocked"]:::status_blocked
+        AR_1471["AR-1471 - Done"]:::status_done
+        AR_1472["AR-1472 - Done"]:::status_done
+        AR_1473["AR-1473 - Done"]:::status_done
+        AR_1474["AR-1474 - Done"]:::status_done
+        AR_1475["AR-1475 - Done"]:::status_done
+        AR_1476["AR-1476 - Done"]:::status_done
+        AR_1477["AR-1477 - Done"]:::status_done
+        AR_1478["AR-1478 - Done"]:::status_done
+        AR_1479["AR-1479 - Done"]:::status_done
+        AR_1480["AR-1480 - Done"]:::status_done
+        AR_1481["AR-1481 - Blocked"]:::status_blocked
+        AR_1482["AR-1482 - Blocked"]:::status_blocked
+        AR_1483["AR-1483 - Blocked"]:::status_blocked
+        AR_1484["AR-1484 - Done"]:::status_done
+        AR_1485["AR-1485 - Done"]:::status_done
+        AR_1486["AR-1486 - Done"]:::status_done
+        AR_1487["AR-1487 - Done"]:::status_done
+        AR_1488["AR-1488 - Done"]:::status_done
+        AR_1489["AR-1489 - Done"]:::status_done
+        AR_1490["AR-1490 - Done"]:::status_done
+        AR_1491["AR-1491 - Done"]:::status_done
+        AR_1492["AR-1492 - Done"]:::status_done
+        AR_1493["AR-1493 - Done"]:::status_done
+        AR_1495["AR-1495 - Done"]:::status_done
+        AR_1496["AR-1496 - Done"]:::status_done
+        AR_1497["AR-1497 - Done"]:::status_done
+        AR_1498["AR-1498 - Done"]:::status_done
+        AR_1499["AR-1499 - Done"]:::status_done
+    end
+    subgraph series_15["15 - Additional work"]
+        direction TB
+        AR_1500["AR-1500 - Done"]:::status_done
+        AR_1501["AR-1501 - Done"]:::status_done
+        AR_1502["AR-1502 - Done"]:::status_done
+        AR_1503["AR-1503 - Superseded"]:::status_superseded
+        AR_1504["AR-1504 - Superseded"]:::status_superseded
+        AR_1505["AR-1505 - Done"]:::status_done
+        AR_1506["AR-1506 - Blocked"]:::status_blocked
+        AR_1507["AR-1507 - Blocked"]:::status_blocked
+        AR_1508["AR-1508 - Blocked"]:::status_blocked
+        AR_1509["AR-1509 - Blocked"]:::status_blocked
+        AR_1510["AR-1510 - Blocked"]:::status_blocked
+        AR_1511["AR-1511 - Superseded"]:::status_superseded
+        AR_1512["AR-1512 - Blocked"]:::status_blocked
+        AR_1513["AR-1513 - Done"]:::status_done
+        AR_1514["AR-1514 - Done"]:::status_done
+        AR_1515["AR-1515 - Done"]:::status_done
+        AR_1516["AR-1516 - Done"]:::status_done
+        AR_1517["AR-1517 - Done"]:::status_done
+        AR_1518["AR-1518 - Blocked"]:::status_blocked
+        AR_1519["AR-1519 - Done"]:::status_done
+        AR_1520["AR-1520 - Done"]:::status_done
+        AR_1521["AR-1521 - Superseded"]:::status_superseded
+        AR_1522["AR-1522 - Blocked"]:::status_blocked
+        AR_1523["AR-1523 - Blocked"]:::status_blocked
+        AR_1524["AR-1524 - Done"]:::status_done
+        AR_1525["AR-1525 - Done"]:::status_done
+        AR_1526["AR-1526 - Done"]:::status_done
+        AR_1527["AR-1527 - Done"]:::status_done
+        AR_1528["AR-1528 - Done"]:::status_done
+        AR_1529["AR-1529 - Done"]:::status_done
+        AR_1530["AR-1530 - Done"]:::status_done
+        AR_1531["AR-1531 - Blocked"]:::status_blocked
+        AR_1532["AR-1532 - Blocked"]:::status_blocked
+        AR_1533["AR-1533 - Blocked"]:::status_blocked
+        AR_1534["AR-1534 - In progress"]:::status_in_progress
+        AR_1535["AR-1535 - Planned"]:::status_planned
+        AR_1536["AR-1536 - Planned"]:::status_planned
+        AR_1537["AR-1537 - In progress"]:::status_in_progress
+        AR_1538["AR-1538 - Planned"]:::status_planned
+    end
+    AR_0001 --> AR_0002
+    AR_0001 --> AR_0003
+    AR_0001 --> AR_0101
+    AR_0001 --> AR_0501
+    AR_0001 --> AR_0701
+    AR_0002 --> AR_0004
+    AR_0002 --> AR_0005
+    AR_0002 --> AR_0830
+    AR_0002 --> AR_0834
+    AR_0002 --> AR_0895
+    AR_0002 --> AR_0903
+    AR_0003 --> AR_0830
+    AR_0003 --> AR_0831
+    AR_0003 --> AR_0845
+    AR_0003 --> AR_0855
+    AR_0003 --> AR_0877
+    AR_0003 --> AR_0878
+    AR_0003 --> AR_0895
+    AR_0003 --> AR_0897
+    AR_0003 --> AR_0898
+    AR_0003 --> AR_0899
+    AR_0003 --> AR_0903
+    AR_0003 --> AR_0906
+    AR_0003 --> AR_1235
+    AR_0003 --> AR_1242
+    AR_0003 --> AR_1252
+    AR_0003 --> AR_1283
+    AR_0004 --> AR_0005
+    AR_0004 --> AR_0849
+    AR_0101 --> AR_0102
+    AR_0101 --> AR_0104
+    AR_0101 --> AR_0201
+    AR_0101 --> AR_0203
+    AR_0101 --> AR_0301
+    AR_0101 --> AR_0302
+    AR_0101 --> AR_0303
+    AR_0101 --> AR_0304
+    AR_0101 --> AR_0305
+    AR_0101 --> AR_0306
+    AR_0101 --> AR_0307
+    AR_0101 --> AR_0308
+    AR_0101 --> AR_0309
+    AR_0101 --> AR_0310
+    AR_0101 --> AR_0317
+    AR_0101 --> AR_0401
+    AR_0101 --> AR_0502
+    AR_0101 --> AR_0517
+    AR_0101 --> AR_0601
+    AR_0101 --> AR_0603
+    AR_0101 --> AR_0801
+    AR_0101 --> AR_0803
+    AR_0101 --> AR_0840
+    AR_0101 --> AR_0847
+    AR_0101 --> AR_0857
+    AR_0101 --> AR_0863
+    AR_0101 --> AR_0875
+    AR_0101 --> AR_0901
+    AR_0101 --> AR_0904
+    AR_0101 --> AR_0908
+    AR_0101 --> AR_0909
+    AR_0101 --> AR_1001
+    AR_0101 --> AR_1003
+    AR_0101 --> AR_1005
+    AR_0101 --> AR_1013
+    AR_0102 --> AR_0103
+    AR_0102 --> AR_0201
+    AR_0102 --> AR_0204
+    AR_0102 --> AR_0301
+    AR_0102 --> AR_0302
+    AR_0102 --> AR_0303
+    AR_0102 --> AR_0304
+    AR_0102 --> AR_0305
+    AR_0102 --> AR_0306
+    AR_0102 --> AR_0307
+    AR_0102 --> AR_0308
+    AR_0102 --> AR_0309
+    AR_0102 --> AR_0317
+    AR_0102 --> AR_0318
+    AR_0102 --> AR_0503
+    AR_0102 --> AR_0601
+    AR_0102 --> AR_0603
+    AR_0102 --> AR_0857
+    AR_0102 --> AR_0863
+    AR_0102 --> AR_0875
+    AR_0102 --> AR_0876
+    AR_0102 --> AR_0901
+    AR_0102 --> AR_0905
+    AR_0102 --> AR_0908
+    AR_0102 --> AR_0909
+    AR_0103 --> AR_0105
+    AR_0103 --> AR_0202
+    AR_0103 --> AR_0204
+    AR_0103 --> AR_0305
+    AR_0103 --> AR_0306
+    AR_0103 --> AR_0307
+    AR_0103 --> AR_0308
+    AR_0103 --> AR_0309
+    AR_0103 --> AR_0401
+    AR_0103 --> AR_0601
+    AR_0103 --> AR_0603
+    AR_0103 --> AR_0702
+    AR_0103 --> AR_0703
+    AR_0103 --> AR_0704
+    AR_0103 --> AR_0707
+    AR_0103 --> AR_0830
+    AR_0103 --> AR_0848
+    AR_0103 --> AR_0857
+    AR_0103 --> AR_0863
+    AR_0103 --> AR_0875
+    AR_0103 --> AR_0876
+    AR_0103 --> AR_0902
+    AR_0103 --> AR_0908
+    AR_0103 --> AR_0909
+    AR_0103 --> AR_1002
+    AR_0104 --> AR_0204
+    AR_0104 --> AR_0314
+    AR_0104 --> AR_0601
+    AR_0104 --> AR_0603
+    AR_0104 --> AR_0801
+    AR_0104 --> AR_0803
+    AR_0104 --> AR_0805
+    AR_0104 --> AR_0806
+    AR_0104 --> AR_0822
+    AR_0104 --> AR_0841
+    AR_0104 --> AR_0847
+    AR_0104 --> AR_0902
+    AR_0104 --> AR_0905
+    AR_0104 --> AR_1002
+    AR_0104 --> AR_1005
+    AR_0104 --> AR_1037
+    AR_0105 --> AR_0204
+    AR_0201 --> AR_0202
+    AR_0201 --> AR_0204
+    AR_0201 --> AR_0504
+    AR_0201 --> AR_0601
+    AR_0201 --> AR_0602
+    AR_0201 --> AR_0604
+    AR_0201 --> AR_0702
+    AR_0201 --> AR_0703
+    AR_0201 --> AR_0705
+    AR_0201 --> AR_0706
+    AR_0201 --> AR_0848
+    AR_0202 --> AR_0602
+    AR_0202 --> AR_0604
+    AR_0203 --> AR_0204
+    AR_0203 --> AR_0806
+    AR_0203 --> AR_0901
+    AR_0203 --> AR_1001
+    AR_0203 --> AR_1004
+    AR_0204 --> AR_0801
+    AR_0204 --> AR_0803
+    AR_0204 --> AR_0805
+    AR_0204 --> AR_0847
+    AR_0204 --> AR_0903
+    AR_0204 --> AR_0905
+    AR_0204 --> AR_1004
+    AR_0204 --> AR_1006
+    AR_0301 --> AR_0311
+    AR_0301 --> AR_0312
+    AR_0301 --> AR_0315
+    AR_0301 --> AR_0316
+    AR_0301 --> AR_0505
+    AR_0301 --> AR_0506
+    AR_0301 --> AR_1003
+    AR_0302 --> AR_0311
+    AR_0302 --> AR_0312
+    AR_0302 --> AR_0315
+    AR_0302 --> AR_0316
+    AR_0302 --> AR_0505
+    AR_0302 --> AR_0507
+    AR_0302 --> AR_0516
+    AR_0302 --> AR_1003
+    AR_0303 --> AR_0311
+    AR_0303 --> AR_0312
+    AR_0303 --> AR_0315
+    AR_0303 --> AR_0316
+    AR_0303 --> AR_0505
+    AR_0303 --> AR_0508
+    AR_0303 --> AR_0850
+    AR_0303 --> AR_1003
+    AR_0304 --> AR_0311
+    AR_0304 --> AR_0312
+    AR_0304 --> AR_0315
+    AR_0304 --> AR_0316
+    AR_0304 --> AR_0505
+    AR_0304 --> AR_0509
+    AR_0304 --> AR_1003
+    AR_0305 --> AR_0311
+    AR_0305 --> AR_0312
+    AR_0305 --> AR_0315
+    AR_0305 --> AR_0316
+    AR_0305 --> AR_0510
+    AR_0306 --> AR_0311
+    AR_0306 --> AR_0312
+    AR_0306 --> AR_0315
+    AR_0306 --> AR_0316
+    AR_0306 --> AR_0511
+    AR_0307 --> AR_0311
+    AR_0307 --> AR_0312
+    AR_0307 --> AR_0315
+    AR_0307 --> AR_0316
+    AR_0307 --> AR_0512
+    AR_0308 --> AR_0311
+    AR_0308 --> AR_0312
+    AR_0308 --> AR_0315
+    AR_0308 --> AR_0316
+    AR_0308 --> AR_0513
+    AR_0308 --> AR_0909
+    AR_0309 --> AR_0311
+    AR_0309 --> AR_0312
+    AR_0309 --> AR_0315
+    AR_0309 --> AR_0316
+    AR_0309 --> AR_0514
+    AR_0309 --> AR_0521
+    AR_0310 --> AR_0311
+    AR_0310 --> AR_0312
+    AR_0310 --> AR_0314
+    AR_0310 --> AR_0318
+    AR_0310 --> AR_0857
+    AR_0310 --> AR_0863
+    AR_0310 --> AR_1325
+    AR_0311 --> AR_0313
+    AR_0311 --> AR_0315
+    AR_0312 --> AR_0313
+    AR_0312 --> AR_0315
+    AR_0312 --> AR_0879
+    AR_0312 --> AR_0891
+    AR_0313 --> AR_0314
+    AR_0313 --> AR_0315
+    AR_0313 --> AR_0804
+    AR_0313 --> AR_0869
+    AR_0313 --> AR_0876
+    AR_0313 --> AR_0879
+    AR_0313 --> AR_0891
+    AR_0313 --> AR_1100
+    AR_0313 --> AR_1326
+    AR_0314 --> AR_0315
+    AR_0314 --> AR_0804
+    AR_0314 --> AR_0808
+    AR_0314 --> AR_0871
+    AR_0315 --> AR_0857
+    AR_0315 --> AR_0863
+    AR_0315 --> AR_0879
+    AR_0315 --> AR_0891
+    AR_0315 --> AR_0903
+    AR_0315 --> AR_1110
+    AR_0315 --> AR_1327
+    AR_0316 --> AR_0876
+    AR_0317 --> AR_0857
+    AR_0317 --> AR_0863
+    AR_0317 --> AR_0876
+    AR_0318 --> AR_0314
+    AR_0318 --> AR_0319
+    AR_0318 --> AR_0320
+    AR_0318 --> AR_0869
+    AR_0318 --> AR_0876
+    AR_0318 --> AR_1325
+    AR_0319 --> AR_0876
+    AR_0319 --> AR_1228
+    AR_0319 --> AR_1230
+    AR_0320 --> AR_0869
+    AR_0320 --> AR_0876
+    AR_0320 --> AR_1120
+    AR_0320 --> AR_1228
+    AR_0320 --> AR_1230
+    AR_0401 --> AR_0402
+    AR_0401 --> AR_0403
+    AR_0401 --> AR_0405
+    AR_0401 --> AR_0505
+    AR_0401 --> AR_0506
+    AR_0401 --> AR_0507
+    AR_0401 --> AR_0508
+    AR_0401 --> AR_0509
+    AR_0401 --> AR_0510
+    AR_0401 --> AR_0511
+    AR_0401 --> AR_0512
+    AR_0401 --> AR_0513
+    AR_0401 --> AR_0514
+    AR_0401 --> AR_0702
+    AR_0401 --> AR_0703
+    AR_0401 --> AR_0705
+    AR_0401 --> AR_0706
+    AR_0401 --> AR_0802
+    AR_0401 --> AR_0808
+    AR_0401 --> AR_0848
+    AR_0401 --> AR_1002
+    AR_0401 --> AR_1004
+    AR_0401 --> AR_1007
+    AR_0402 --> AR_0404
+    AR_0402 --> AR_0406
+    AR_0403 --> AR_0404
+    AR_0404 --> AR_1394
+    AR_0405 --> AR_1394
+    AR_0406 --> AR_1394
+    AR_0501 --> AR_0502
+    AR_0501 --> AR_0879
+    AR_0502 --> AR_0503
+    AR_0502 --> AR_0516
+    AR_0502 --> AR_0517
+    AR_0502 --> AR_0518
+    AR_0502 --> AR_0520
+    AR_0502 --> AR_0871
+    AR_0502 --> AR_0879
+    AR_0502 --> AR_0901
+    AR_0502 --> AR_1005
+    AR_0502 --> AR_1330
+    AR_0503 --> AR_0314
+    AR_0503 --> AR_0504
+    AR_0503 --> AR_0505
+    AR_0503 --> AR_0506
+    AR_0503 --> AR_0507
+    AR_0503 --> AR_0508
+    AR_0503 --> AR_0509
+    AR_0503 --> AR_0510
+    AR_0503 --> AR_0511
+    AR_0503 --> AR_0512
+    AR_0503 --> AR_0513
+    AR_0503 --> AR_0514
+    AR_0503 --> AR_0516
+    AR_0503 --> AR_0517
+    AR_0503 --> AR_0518
+    AR_0503 --> AR_0520
+    AR_0503 --> AR_0857
+    AR_0503 --> AR_0863
+    AR_0503 --> AR_0871
+    AR_0503 --> AR_0879
+    AR_0503 --> AR_0902
+    AR_0503 --> AR_0905
+    AR_0503 --> AR_1330
+    AR_0504 --> AR_0314
+    AR_0504 --> AR_0505
+    AR_0504 --> AR_0506
+    AR_0504 --> AR_0507
+    AR_0504 --> AR_0508
+    AR_0504 --> AR_0509
+    AR_0504 --> AR_0510
+    AR_0504 --> AR_0511
+    AR_0504 --> AR_0512
+    AR_0504 --> AR_0513
+    AR_0504 --> AR_0514
+    AR_0504 --> AR_0516
+    AR_0504 --> AR_0517
+    AR_0504 --> AR_0879
+    AR_0505 --> AR_0315
+    AR_0505 --> AR_0802
+    AR_0505 --> AR_0808
+    AR_0505 --> AR_0871
+    AR_0505 --> AR_0879
+    AR_0505 --> AR_0903
+    AR_0505 --> AR_1151
+    AR_0505 --> AR_1231
+    AR_0505 --> AR_1232
+    AR_0506 --> AR_0515
+    AR_0507 --> AR_0515
+    AR_0508 --> AR_0515
+    AR_0508 --> AR_0850
+    AR_0509 --> AR_0515
+    AR_0510 --> AR_0515
+    AR_0511 --> AR_0515
+    AR_0512 --> AR_0515
+    AR_0513 --> AR_0515
+    AR_0514 --> AR_0515
+    AR_0517 --> AR_0518
+    AR_0517 --> AR_0520
+    AR_0518 --> AR_0519
+    AR_0601 --> AR_0405
+    AR_0601 --> AR_0602
+    AR_0601 --> AR_0604
+    AR_0601 --> AR_1015
+    AR_0602 --> AR_1015
+    AR_0603 --> AR_0601
+    AR_0604 --> AR_0602
+    AR_0604 --> AR_1015
+    AR_0701 --> AR_0317
+    AR_0701 --> AR_0702
+    AR_0701 --> AR_0703
+    AR_0701 --> AR_0704
+    AR_0701 --> AR_0707
+    AR_0701 --> AR_0820
+    AR_0701 --> AR_0848
+    AR_0701 --> AR_1007
+    AR_0702 --> AR_0807
+    AR_0702 --> AR_0813
+    AR_0702 --> AR_0816
+    AR_0702 --> AR_0903
+    AR_0702 --> AR_0907
+    AR_0702 --> AR_1006
+    AR_0704 --> AR_0705
+    AR_0704 --> AR_0706
+    AR_0801 --> AR_0802
+    AR_0801 --> AR_0803
+    AR_0801 --> AR_0808
+    AR_0801 --> AR_0820
+    AR_0801 --> AR_0840
+    AR_0801 --> AR_0842
+    AR_0801 --> AR_0847
+    AR_0801 --> AR_0849
+    AR_0801 --> AR_0869
+    AR_0802 --> AR_0808
+    AR_0802 --> AR_0809
+    AR_0802 --> AR_0872
+    AR_0802 --> AR_0903
+    AR_0803 --> AR_0804
+    AR_0803 --> AR_0805
+    AR_0803 --> AR_0813
+    AR_0803 --> AR_0819
+    AR_0803 --> AR_0821
+    AR_0803 --> AR_1010
+    AR_0803 --> AR_1017
+    AR_0803 --> AR_1023
+    AR_0804 --> AR_0805
+    AR_0804 --> AR_0807
+    AR_0804 --> AR_0809
+    AR_0804 --> AR_0812
+    AR_0804 --> AR_0817
+    AR_0804 --> AR_0819
+    AR_0804 --> AR_0820
+    AR_0804 --> AR_0821
+    AR_0804 --> AR_0870
+    AR_0804 --> AR_1010
+    AR_0804 --> AR_1014
+    AR_0804 --> AR_1017
+    AR_0804 --> AR_1025
+    AR_0805 --> AR_0806
+    AR_0805 --> AR_0807
+    AR_0805 --> AR_0809
+    AR_0805 --> AR_0812
+    AR_0805 --> AR_0815
+    AR_0805 --> AR_0817
+    AR_0805 --> AR_0821
+    AR_0805 --> AR_0870
+    AR_0805 --> AR_1010
+    AR_0805 --> AR_1014
+    AR_0805 --> AR_1017
+    AR_0805 --> AR_1025
+    AR_0806 --> AR_0807
+    AR_0806 --> AR_0809
+    AR_0806 --> AR_0812
+    AR_0806 --> AR_0817
+    AR_0806 --> AR_0875
+    AR_0806 --> AR_1010
+    AR_0806 --> AR_1017
+    AR_0806 --> AR_1025
+    AR_0807 --> AR_0809
+    AR_0807 --> AR_0823
+    AR_0807 --> AR_0873
+    AR_0807 --> AR_0903
+    AR_0807 --> AR_1012
+    AR_0808 --> AR_0810
+    AR_0808 --> AR_0811
+    AR_0809 --> AR_0810
+    AR_0809 --> AR_0811
+    AR_0810 --> AR_0811
+    AR_0811 --> AR_0903
+    AR_0812 --> AR_0807
+    AR_0812 --> AR_0820
+    AR_0812 --> AR_1033
+    AR_0813 --> AR_0814
+    AR_0813 --> AR_0818
+    AR_0813 --> AR_1288
+    AR_0814 --> AR_0815
+    AR_0814 --> AR_0818
+    AR_0815 --> AR_0816
+    AR_0815 --> AR_0817
+    AR_0815 --> AR_0818
+    AR_0816 --> AR_0817
+    AR_0816 --> AR_0818
+    AR_0817 --> AR_0809
+    AR_0817 --> AR_0818
+    AR_0818 --> AR_0903
+    AR_0819 --> AR_0809
+    AR_0819 --> AR_0815
+    AR_0819 --> AR_0816
+    AR_0819 --> AR_0817
+    AR_0819 --> AR_0818
+    AR_0820 --> AR_0821
+    AR_0820 --> AR_0822
+    AR_0820 --> AR_1024
+    AR_0821 --> AR_0808
+    AR_0821 --> AR_0809
+    AR_0821 --> AR_0822
+    AR_0821 --> AR_0823
+    AR_0821 --> AR_1024
+    AR_0821 --> AR_1441
+    AR_0822 --> AR_0808
+    AR_0822 --> AR_0809
+    AR_0822 --> AR_0823
+    AR_0822 --> AR_1024
+    AR_0822 --> AR_1441
+    AR_0823 --> AR_0903
+    AR_0823 --> AR_1027
+    AR_0830 --> AR_0831
+    AR_0830 --> AR_0832
+    AR_0830 --> AR_0833
+    AR_0830 --> AR_0834
+    AR_0830 --> AR_0835
+    AR_0830 --> AR_0836
+    AR_0830 --> AR_1438
+    AR_0831 --> AR_0832
+    AR_0831 --> AR_0835
+    AR_0831 --> AR_0836
+    AR_0831 --> AR_0845
+    AR_0832 --> AR_0833
+    AR_0835 --> AR_0837
+    AR_0836 --> AR_0837
+    AR_0840 --> AR_0841
+    AR_0840 --> AR_0842
+    AR_0840 --> AR_0843
+    AR_0840 --> AR_0844
+    AR_0840 --> AR_1023
+    AR_0841 --> AR_0842
+    AR_0841 --> AR_0843
+    AR_0841 --> AR_0844
+    AR_0841 --> AR_1023
+    AR_0842 --> AR_0844
+    AR_0842 --> AR_1023
+    AR_0843 --> AR_0844
+    AR_0843 --> AR_1023
+    AR_0844 --> AR_0870
+    AR_0844 --> AR_1023
+    AR_0845 --> AR_0846
+    AR_0848 --> AR_0907
+    AR_0851 --> AR_1017
+    AR_0855 --> AR_0857
+    AR_0855 --> AR_0863
+    AR_0857 --> AR_0858
+    AR_0857 --> AR_0880
+    AR_0858 --> AR_0859
+    AR_0859 --> AR_0860
+    AR_0860 --> AR_0861
+    AR_0861 --> AR_0862
+    AR_0862 --> AR_0856
+    AR_0863 --> AR_0864
+    AR_0864 --> AR_0865
+    AR_0865 --> AR_0866
+    AR_0866 --> AR_0867
+    AR_0867 --> AR_0868
+    AR_0868 --> AR_0856
+    AR_0869 --> AR_0870
+    AR_0869 --> AR_0871
+    AR_0869 --> AR_0872
+    AR_0869 --> AR_0876
+    AR_0869 --> AR_0893
+    AR_0870 --> AR_0871
+    AR_0870 --> AR_0872
+    AR_0870 --> AR_0894
+    AR_0870 --> AR_1011
+    AR_0870 --> AR_1025
+    AR_0871 --> AR_0872
+    AR_0871 --> AR_0879
+    AR_0871 --> AR_0893
+    AR_0871 --> AR_1011
+    AR_0871 --> AR_1025
+    AR_0871 --> AR_1150
+    AR_0872 --> AR_0808
+    AR_0872 --> AR_0809
+    AR_0872 --> AR_0873
+    AR_0872 --> AR_0893
+    AR_0872 --> AR_1028
+    AR_0873 --> AR_0808
+    AR_0873 --> AR_0809
+    AR_0873 --> AR_0874
+    AR_0873 --> AR_0894
+    AR_0873 --> AR_1012
+    AR_0874 --> AR_0808
+    AR_0874 --> AR_0809
+    AR_0875 --> AR_0908
+    AR_0875 --> AR_1031
+    AR_0875 --> AR_1035
+    AR_0876 --> AR_1130
+    AR_0877 --> AR_1021
+    AR_0878 --> AR_0906
+    AR_0879 --> AR_0888
+    AR_0879 --> AR_0891
+    AR_0888 --> AR_0889
+    AR_0888 --> AR_0890
+    AR_0888 --> AR_0896
+    AR_0888 --> AR_1249
+    AR_0888 --> AR_1250
+    AR_0888 --> AR_1251
+    AR_0889 --> AR_0890
+    AR_0889 --> AR_0896
+    AR_0889 --> AR_1249
+    AR_0889 --> AR_1250
+    AR_0889 --> AR_1251
+    AR_0890 --> AR_0892
+    AR_0890 --> AR_0893
+    AR_0891 --> AR_0892
+    AR_0891 --> AR_0893
+    AR_0892 --> AR_0893
+    AR_0893 --> AR_0894
+    AR_0897 --> AR_0898
+    AR_0897 --> AR_0903
+    AR_0897 --> AR_1242
+    AR_0897 --> AR_1264
+    AR_0898 --> AR_0899
+    AR_0898 --> AR_0903
+    AR_0899 --> AR_0903
+    AR_0901 --> AR_0877
+    AR_0901 --> AR_0878
+    AR_0901 --> AR_0903
+    AR_0901 --> AR_0906
+    AR_0902 --> AR_0813
+    AR_0902 --> AR_0877
+    AR_0902 --> AR_0878
+    AR_0902 --> AR_0903
+    AR_0902 --> AR_0906
+    AR_0902 --> AR_0909
+    AR_0903 --> AR_0846
+    AR_0903 --> AR_1027
+    AR_0904 --> AR_1023
+    AR_0906 --> AR_0877
+    AR_0906 --> AR_1021
+    AR_0907 --> AR_1303
+    AR_1001 --> AR_0310
+    AR_1001 --> AR_0806
+    AR_1001 --> AR_0875
+    AR_1001 --> AR_0904
+    AR_1001 --> AR_1006
+    AR_1001 --> AR_1007
+    AR_1001 --> AR_1013
+    AR_1002 --> AR_0405
+    AR_1002 --> AR_1016
+    AR_1007 --> AR_0405
+    AR_1007 --> AR_0406
+    AR_1007 --> AR_1016
+    AR_1007 --> AR_1394
+    AR_1008 --> AR_0898
+    AR_1010 --> AR_1011
+    AR_1010 --> AR_1012
+    AR_1010 --> AR_1024
+    AR_1010 --> AR_1025
+    AR_1010 --> AR_1033
+    AR_1011 --> AR_0807
+    AR_1011 --> AR_1012
+    AR_1011 --> AR_1026
+    AR_1012 --> AR_0823
+    AR_1012 --> AR_0903
+    AR_1012 --> AR_1027
+    AR_1013 --> AR_1014
+    AR_1013 --> AR_1015
+    AR_1013 --> AR_1036
+    AR_1014 --> AR_1011
+    AR_1014 --> AR_1016
+    AR_1014 --> AR_1032
+    AR_1014 --> AR_1034
+    AR_1015 --> AR_1016
+    AR_1017 --> AR_1018
+    AR_1017 --> AR_1019
+    AR_1017 --> AR_1021
+    AR_1017 --> AR_1022
+    AR_1017 --> AR_1030
+    AR_1018 --> AR_1019
+    AR_1018 --> AR_1021
+    AR_1018 --> AR_1022
+    AR_1018 --> AR_1199
+    AR_1018 --> AR_1498
+    AR_1019 --> AR_1020
+    AR_1019 --> AR_1021
+    AR_1019 --> AR_1022
+    AR_1019 --> AR_1199
+    AR_1019 --> AR_1498
+    AR_1020 --> AR_1021
+    AR_1020 --> AR_1022
+    AR_1020 --> AR_1199
+    AR_1020 --> AR_1498
+    AR_1021 --> AR_1022
+    AR_1022 --> AR_1024
+    AR_1022 --> AR_1025
+    AR_1022 --> AR_1060
+    AR_1023 --> AR_1024
+    AR_1023 --> AR_1025
+    AR_1023 --> AR_1036
+    AR_1023 --> AR_1038
+    AR_1023 --> AR_1060
+    AR_1024 --> AR_1026
+    AR_1024 --> AR_1029
+    AR_1025 --> AR_1014
+    AR_1025 --> AR_1026
+    AR_1025 --> AR_1029
+    AR_1025 --> AR_1031
+    AR_1025 --> AR_1033
+    AR_1025 --> AR_1034
+    AR_1025 --> AR_1035
+    AR_1026 --> AR_0807
+    AR_1026 --> AR_0823
+    AR_1026 --> AR_1027
+    AR_1026 --> AR_1180
+    AR_1029 --> AR_0903
+    AR_1029 --> AR_1026
+    AR_1030 --> AR_1010
+    AR_1031 --> AR_1011
+    AR_1031 --> AR_1032
+    AR_1032 --> AR_1011
+    AR_1033 --> AR_1011
+    AR_1033 --> AR_1014
+    AR_1033 --> AR_1031
+    AR_1033 --> AR_1034
+    AR_1033 --> AR_1035
+    AR_1034 --> AR_1011
+    AR_1034 --> AR_1032
+    AR_1034 --> AR_1170
+    AR_1035 --> AR_1011
+    AR_1035 --> AR_1032
+    AR_1036 --> AR_1014
+    AR_1036 --> AR_1037
+    AR_1037 --> AR_1014
+    AR_1037 --> AR_1024
+    AR_1037 --> AR_1025
+    AR_1040 --> AR_1043
+    AR_1045 --> AR_1051
+    AR_1052 --> AR_1010
+    AR_1054 --> AR_1010
+    AR_1056 --> AR_1010
+    AR_1058 --> AR_1010
+    AR_1060 --> AR_1024
+    AR_1060 --> AR_1025
+    AR_1060 --> AR_1160
+    AR_1060 --> AR_1227
+    AR_1060 --> AR_1310
+    AR_1061 --> AR_1010
+    AR_1062 --> AR_1010
+    AR_1062 --> AR_1058
+    AR_1062 --> AR_1061
+    AR_1100 --> AR_1120
+    AR_1100 --> AR_1228
+    AR_1100 --> AR_1230
+    AR_1100 --> AR_1231
+    AR_1100 --> AR_1232
+    AR_1100 --> AR_1233
+    AR_1100 --> AR_1234
+    AR_1100 --> AR_1236
+    AR_1100 --> AR_1238
+    AR_1100 --> AR_1328
+    AR_1110 --> AR_1130
+    AR_1120 --> AR_1110
+    AR_1130 --> AR_1140
+    AR_1130 --> AR_1150
+    AR_1140 --> AR_0808
+    AR_1140 --> AR_0823
+    AR_1140 --> AR_1180
+    AR_1150 --> AR_1151
+    AR_1151 --> AR_0808
+    AR_1151 --> AR_1160
+    AR_1151 --> AR_1227
+    AR_1151 --> AR_1310
+    AR_1151 --> AR_1496
+    AR_1160 --> AR_1034
+    AR_1160 --> AR_1170
+    AR_1160 --> AR_1227
+    AR_1170 --> AR_0807
+    AR_1170 --> AR_0809
+    AR_1170 --> AR_0823
+    AR_1170 --> AR_0873
+    AR_1170 --> AR_1011
+    AR_1170 --> AR_1026
+    AR_1170 --> AR_1031
+    AR_1170 --> AR_1032
+    AR_1170 --> AR_1035
+    AR_1170 --> AR_1180
+    AR_1180 --> AR_0809
+    AR_1190 --> AR_1191
+    AR_1190 --> AR_1198
+    AR_1190 --> AR_1199
+    AR_1190 --> AR_1299
+    AR_1190 --> AR_1316
+    AR_1190 --> AR_1498
+    AR_1191 --> AR_1199
+    AR_1191 --> AR_1316
+    AR_1191 --> AR_1498
+    AR_1200 --> AR_1226
+    AR_1200 --> AR_1475
+    AR_1200 --> AR_1476
+    AR_1200 --> AR_1477
+    AR_1210 --> AR_1211
+    AR_1210 --> AR_1216
+    AR_1211 --> AR_1212
+    AR_1211 --> AR_1216
+    AR_1212 --> AR_1213
+    AR_1212 --> AR_1216
+    AR_1213 --> AR_1214
+    AR_1213 --> AR_1215
+    AR_1213 --> AR_1216
+    AR_1214 --> AR_1216
+    AR_1215 --> AR_1216
+    AR_1226 --> AR_1337
+    AR_1228 --> AR_1120
+    AR_1228 --> AR_1229
+    AR_1229 --> AR_1120
+    AR_1230 --> AR_1120
+    AR_1230 --> AR_1228
+    AR_1230 --> AR_1229
+    AR_1230 --> AR_1231
+    AR_1230 --> AR_1232
+    AR_1231 --> AR_1151
+    AR_1231 --> AR_1233
+    AR_1231 --> AR_1234
+    AR_1231 --> AR_1236
+    AR_1231 --> AR_1238
+    AR_1231 --> AR_1248
+    AR_1232 --> AR_1151
+    AR_1232 --> AR_1244
+    AR_1232 --> AR_1248
+    AR_1233 --> AR_1232
+    AR_1233 --> AR_1237
+    AR_1233 --> AR_1257
+    AR_1234 --> AR_1232
+    AR_1236 --> AR_1233
+    AR_1236 --> AR_1234
+    AR_1236 --> AR_1237
+    AR_1236 --> AR_1239
+    AR_1237 --> AR_1232
+    AR_1237 --> AR_1260
+    AR_1237 --> AR_1261
+    AR_1237 --> AR_1262
+    AR_1237 --> AR_1265
+    AR_1237 --> AR_1266
+    AR_1237 --> AR_1267
+    AR_1237 --> AR_1268
+    AR_1237 --> AR_1269
+    AR_1237 --> AR_1270
+    AR_1237 --> AR_1271
+    AR_1237 --> AR_1272
+    AR_1237 --> AR_1273
+    AR_1237 --> AR_1274
+    AR_1237 --> AR_1275
+    AR_1237 --> AR_1276
+    AR_1237 --> AR_1277
+    AR_1237 --> AR_1278
+    AR_1237 --> AR_1279
+    AR_1237 --> AR_1280
+    AR_1237 --> AR_1281
+    AR_1237 --> AR_1282
+    AR_1237 --> AR_1284
+    AR_1237 --> AR_1285
+    AR_1237 --> AR_1286
+    AR_1238 --> AR_1236
+    AR_1238 --> AR_1240
+    AR_1238 --> AR_1260
+    AR_1238 --> AR_1261
+    AR_1238 --> AR_1262
+    AR_1238 --> AR_1263
+    AR_1238 --> AR_1265
+    AR_1238 --> AR_1266
+    AR_1238 --> AR_1267
+    AR_1238 --> AR_1268
+    AR_1238 --> AR_1269
+    AR_1238 --> AR_1270
+    AR_1238 --> AR_1271
+    AR_1238 --> AR_1272
+    AR_1238 --> AR_1273
+    AR_1238 --> AR_1274
+    AR_1238 --> AR_1275
+    AR_1238 --> AR_1276
+    AR_1238 --> AR_1277
+    AR_1238 --> AR_1278
+    AR_1238 --> AR_1279
+    AR_1238 --> AR_1280
+    AR_1238 --> AR_1281
+    AR_1238 --> AR_1282
+    AR_1238 --> AR_1284
+    AR_1238 --> AR_1285
+    AR_1238 --> AR_1286
+    AR_1239 --> AR_1240
+    AR_1239 --> AR_1243
+    AR_1239 --> AR_1260
+    AR_1239 --> AR_1261
+    AR_1239 --> AR_1262
+    AR_1239 --> AR_1265
+    AR_1239 --> AR_1266
+    AR_1239 --> AR_1267
+    AR_1239 --> AR_1268
+    AR_1239 --> AR_1269
+    AR_1239 --> AR_1270
+    AR_1239 --> AR_1271
+    AR_1239 --> AR_1272
+    AR_1239 --> AR_1273
+    AR_1239 --> AR_1274
+    AR_1239 --> AR_1275
+    AR_1239 --> AR_1276
+    AR_1239 --> AR_1277
+    AR_1239 --> AR_1278
+    AR_1239 --> AR_1279
+    AR_1239 --> AR_1280
+    AR_1239 --> AR_1281
+    AR_1239 --> AR_1282
+    AR_1239 --> AR_1284
+    AR_1239 --> AR_1285
+    AR_1239 --> AR_1286
+    AR_1240 --> AR_1241
+    AR_1240 --> AR_1243
+    AR_1241 --> AR_1243
+    AR_1242 --> AR_1245
+    AR_1242 --> AR_1246
+    AR_1242 --> AR_1247
+    AR_1242 --> AR_1259
+    AR_1243 --> AR_1245
+    AR_1245 --> AR_1246
+    AR_1250 --> AR_1257
+    AR_1251 --> AR_1257
+    AR_1252 --> AR_1253
+    AR_1252 --> AR_1254
+    AR_1252 --> AR_1256
+    AR_1252 --> AR_1303
+    AR_1253 --> AR_1254
+    AR_1253 --> AR_1255
+    AR_1253 --> AR_1256
+    AR_1254 --> AR_1255
+    AR_1282 --> AR_1284
+    AR_1282 --> AR_1285
+    AR_1282 --> AR_1286
+    AR_1282 --> AR_1300
+    AR_1285 --> AR_1286
+    AR_1285 --> AR_1300
+    AR_1287 --> AR_1301
+    AR_1287 --> AR_1306
+    AR_1288 --> AR_1370
+    AR_1288 --> AR_1371
+    AR_1288 --> AR_1377
+    AR_1288 --> AR_1468
+    AR_1300 --> AR_1301
+    AR_1300 --> AR_1306
+    AR_1302 --> AR_1304
+    AR_1302 --> AR_1305
+    AR_1302 --> AR_1307
+    AR_1302 --> AR_1515
+    AR_1304 --> AR_1308
+    AR_1304 --> AR_1516
+    AR_1304 --> AR_1517
+    AR_1304 --> AR_1519
+    AR_1307 --> AR_1309
+    AR_1308 --> AR_1309
+    AR_1310 --> AR_1316
+    AR_1310 --> AR_1319
+    AR_1314 --> AR_1315
+    AR_1314 --> AR_1495
+    AR_1316 --> AR_1320
+    AR_1316 --> AR_1422
+    AR_1316 --> AR_1442
+    AR_1319 --> AR_1316
+    AR_1325 --> AR_1326
+    AR_1325 --> AR_1327
+    AR_1325 --> AR_1328
+    AR_1326 --> AR_1327
+    AR_1326 --> AR_1328
+    AR_1327 --> AR_1329
+    AR_1327 --> AR_1334
+    AR_1327 --> AR_1342
+    AR_1327 --> AR_1343
+    AR_1327 --> AR_1346
+    AR_1327 --> AR_1347
+    AR_1327 --> AR_1348
+    AR_1327 --> AR_1349
+    AR_1327 --> AR_1432
+    AR_1327 --> AR_1433
+    AR_1328 --> AR_1329
+    AR_1328 --> AR_1334
+    AR_1328 --> AR_1339
+    AR_1328 --> AR_1342
+    AR_1328 --> AR_1343
+    AR_1328 --> AR_1346
+    AR_1328 --> AR_1347
+    AR_1328 --> AR_1348
+    AR_1328 --> AR_1349
+    AR_1328 --> AR_1350
+    AR_1328 --> AR_1367
+    AR_1328 --> AR_1368
+    AR_1328 --> AR_1374
+    AR_1328 --> AR_1432
+    AR_1328 --> AR_1433
+    AR_1328 --> AR_1436
+    AR_1328 --> AR_1437
+    AR_1328 --> AR_1440
+    AR_1328 --> AR_1442
+    AR_1329 --> AR_1330
+    AR_1329 --> AR_1333
+    AR_1330 --> AR_1463
+    AR_1330 --> AR_1496
+    AR_1331 --> AR_1332
+    AR_1331 --> AR_1338
+    AR_1332 --> AR_1333
+    AR_1332 --> AR_1456
+    AR_1333 --> AR_1335
+    AR_1333 --> AR_1336
+    AR_1333 --> AR_1420
+    AR_1334 --> AR_1335
+    AR_1334 --> AR_1336
+    AR_1335 --> AR_1336
+    AR_1337 --> AR_1397
+    AR_1337 --> AR_1398
+    AR_1338 --> AR_1526
+    AR_1339 --> AR_1340
+    AR_1339 --> AR_1341
+    AR_1339 --> AR_1342
+    AR_1339 --> AR_1343
+    AR_1339 --> AR_1344
+    AR_1339 --> AR_1345
+    AR_1339 --> AR_1346
+    AR_1339 --> AR_1347
+    AR_1339 --> AR_1348
+    AR_1339 --> AR_1349
+    AR_1339 --> AR_1350
+    AR_1339 --> AR_1351
+    AR_1339 --> AR_1367
+    AR_1339 --> AR_1368
+    AR_1339 --> AR_1374
+    AR_1339 --> AR_1390
+    AR_1339 --> AR_1391
+    AR_1339 --> AR_1392
+    AR_1339 --> AR_1393
+    AR_1340 --> AR_1329
+    AR_1340 --> AR_1342
+    AR_1340 --> AR_1343
+    AR_1340 --> AR_1344
+    AR_1340 --> AR_1345
+    AR_1340 --> AR_1346
+    AR_1340 --> AR_1347
+    AR_1340 --> AR_1348
+    AR_1340 --> AR_1349
+    AR_1340 --> AR_1350
+    AR_1340 --> AR_1351
+    AR_1340 --> AR_1367
+    AR_1340 --> AR_1368
+    AR_1340 --> AR_1374
+    AR_1340 --> AR_1390
+    AR_1340 --> AR_1391
+    AR_1340 --> AR_1392
+    AR_1340 --> AR_1393
+    AR_1341 --> AR_1390
+    AR_1341 --> AR_1391
+    AR_1341 --> AR_1392
+    AR_1341 --> AR_1393
+    AR_1341 --> AR_1432
+    AR_1341 --> AR_1433
+    AR_1341 --> AR_1434
+    AR_1341 --> AR_1451
+    AR_1342 --> AR_1344
+    AR_1342 --> AR_1345
+    AR_1342 --> AR_1390
+    AR_1342 --> AR_1391
+    AR_1342 --> AR_1392
+    AR_1342 --> AR_1393
+    AR_1342 --> AR_1432
+    AR_1342 --> AR_1433
+    AR_1342 --> AR_1434
+    AR_1347 --> AR_1349
+    AR_1347 --> AR_1350
+    AR_1347 --> AR_1351
+    AR_1350 --> AR_1349
+    AR_1350 --> AR_1351
+    AR_1351 --> AR_1352
+    AR_1352 --> AR_1353
+    AR_1352 --> AR_1354
+    AR_1352 --> AR_1355
+    AR_1352 --> AR_1356
+    AR_1356 --> AR_1357
+    AR_1357 --> AR_1358
+    AR_1357 --> AR_1359
+    AR_1357 --> AR_1451
+    AR_1357 --> AR_1452
+    AR_1357 --> AR_1470
+    AR_1357 --> AR_1471
+    AR_1359 --> AR_1360
+    AR_1359 --> AR_1361
+    AR_1359 --> AR_1362
+    AR_1359 --> AR_1470
+    AR_1359 --> AR_1471
+    AR_1362 --> AR_1363
+    AR_1362 --> AR_1364
+    AR_1362 --> AR_1365
+    AR_1362 --> AR_1366
+    AR_1362 --> AR_1369
+    AR_1362 --> AR_1376
+    AR_1362 --> AR_1378
+    AR_1362 --> AR_1379
+    AR_1362 --> AR_1380
+    AR_1362 --> AR_1381
+    AR_1362 --> AR_1468
+    AR_1362 --> AR_1470
+    AR_1362 --> AR_1471
+    AR_1362 --> AR_1474
+    AR_1363 --> AR_1472
+    AR_1364 --> AR_1365
+    AR_1364 --> AR_1366
+    AR_1364 --> AR_1369
+    AR_1364 --> AR_1376
+    AR_1364 --> AR_1377
+    AR_1364 --> AR_1378
+    AR_1364 --> AR_1379
+    AR_1364 --> AR_1380
+    AR_1364 --> AR_1381
+    AR_1364 --> AR_1468
+    AR_1365 --> AR_1366
+    AR_1365 --> AR_1373
+    AR_1366 --> AR_1367
+    AR_1366 --> AR_1368
+    AR_1366 --> AR_1369
+    AR_1366 --> AR_1373
+    AR_1366 --> AR_1376
+    AR_1366 --> AR_1378
+    AR_1366 --> AR_1379
+    AR_1366 --> AR_1380
+    AR_1366 --> AR_1381
+    AR_1366 --> AR_1390
+    AR_1366 --> AR_1391
+    AR_1366 --> AR_1392
+    AR_1366 --> AR_1393
+    AR_1366 --> AR_1468
+    AR_1369 --> AR_1370
+    AR_1371 --> AR_1373
+    AR_1373 --> AR_1374
+    AR_1373 --> AR_1375
+    AR_1373 --> AR_1376
+    AR_1373 --> AR_1377
+    AR_1373 --> AR_1381
+    AR_1373 --> AR_1382
+    AR_1373 --> AR_1383
+    AR_1373 --> AR_1384
+    AR_1373 --> AR_1385
+    AR_1373 --> AR_1390
+    AR_1373 --> AR_1391
+    AR_1373 --> AR_1392
+    AR_1373 --> AR_1393
+    AR_1373 --> AR_1472
+    AR_1373 --> AR_1524
+    AR_1374 --> AR_1375
+    AR_1377 --> AR_1378
+    AR_1377 --> AR_1379
+    AR_1377 --> AR_1380
+    AR_1377 --> AR_1381
+    AR_1377 --> AR_1382
+    AR_1377 --> AR_1383
+    AR_1377 --> AR_1384
+    AR_1377 --> AR_1385
+    AR_1377 --> AR_1386
+    AR_1377 --> AR_1387
+    AR_1377 --> AR_1388
+    AR_1378 --> AR_1379
+    AR_1378 --> AR_1380
+    AR_1378 --> AR_1381
+    AR_1378 --> AR_1382
+    AR_1378 --> AR_1386
+    AR_1378 --> AR_1387
+    AR_1378 --> AR_1388
+    AR_1379 --> AR_1473
+    AR_1379 --> AR_1474
+    AR_1379 --> AR_1475
+    AR_1379 --> AR_1476
+    AR_1379 --> AR_1477
+    AR_1379 --> AR_1478
+    AR_1380 --> AR_1381
+    AR_1380 --> AR_1382
+    AR_1380 --> AR_1383
+    AR_1380 --> AR_1384
+    AR_1380 --> AR_1385
+    AR_1380 --> AR_1386
+    AR_1381 --> AR_1382
+    AR_1381 --> AR_1383
+    AR_1381 --> AR_1384
+    AR_1381 --> AR_1385
+    AR_1381 --> AR_1386
+    AR_1383 --> AR_1384
+    AR_1384 --> AR_1385
+    AR_1384 --> AR_1386
+    AR_1384 --> AR_1387
+    AR_1384 --> AR_1388
+    AR_1384 --> AR_1389
+    AR_1385 --> AR_1386
+    AR_1385 --> AR_1387
+    AR_1385 --> AR_1388
+    AR_1385 --> AR_1390
+    AR_1385 --> AR_1391
+    AR_1385 --> AR_1392
+    AR_1385 --> AR_1393
+    AR_1385 --> AR_1432
+    AR_1385 --> AR_1433
+    AR_1385 --> AR_1434
+    AR_1388 --> AR_1390
+    AR_1388 --> AR_1391
+    AR_1388 --> AR_1392
+    AR_1388 --> AR_1393
+    AR_1388 --> AR_1432
+    AR_1388 --> AR_1433
+    AR_1388 --> AR_1434
+    AR_1393 --> AR_1432
+    AR_1393 --> AR_1433
+    AR_1393 --> AR_1434
+    AR_1394 --> AR_1395
+    AR_1394 --> AR_1399
+    AR_1395 --> AR_1396
+    AR_1395 --> AR_1401
+    AR_1396 --> AR_1400
+    AR_1397 --> AR_1495
+    AR_1398 --> AR_1421
+    AR_1399 --> AR_1396
+    AR_1399 --> AR_1400
+    AR_1399 --> AR_1408
+    AR_1400 --> AR_1401
+    AR_1400 --> AR_1404
+    AR_1400 --> AR_1408
+    AR_1401 --> AR_1402
+    AR_1401 --> AR_1409
+    AR_1401 --> AR_1411
+    AR_1401 --> AR_1412
+    AR_1401 --> AR_1413
+    AR_1401 --> AR_1416
+    AR_1402 --> AR_1403
+    AR_1402 --> AR_1404
+    AR_1402 --> AR_1410
+    AR_1402 --> AR_1416
+    AR_1403 --> AR_1423
+    AR_1404 --> AR_1410
+    AR_1405 --> AR_1406
+    AR_1405 --> AR_1407
+    AR_1406 --> AR_1414
+    AR_1408 --> AR_1409
+    AR_1408 --> AR_1411
+    AR_1408 --> AR_1412
+    AR_1408 --> AR_1413
+    AR_1408 --> AR_1417
+    AR_1408 --> AR_1418
+    AR_1409 --> AR_1410
+    AR_1410 --> AR_1415
+    AR_1411 --> AR_1410
+    AR_1412 --> AR_1410
+    AR_1413 --> AR_1410
+    AR_1414 --> AR_1415
+    AR_1415 --> AR_1416
+    AR_1415 --> AR_1423
+    AR_1416 --> AR_1417
+    AR_1416 --> AR_1418
+    AR_1416 --> AR_1421
+    AR_1416 --> AR_1424
+    AR_1416 --> AR_1430
+    AR_1417 --> AR_1419
+    AR_1417 --> AR_1420
+    AR_1417 --> AR_1425
+    AR_1418 --> AR_1419
+    AR_1418 --> AR_1420
+    AR_1418 --> AR_1425
+    AR_1419 --> AR_1420
+    AR_1419 --> AR_1423
+    AR_1420 --> AR_1424
+    AR_1421 --> AR_1427
+    AR_1423 --> AR_1424
+    AR_1423 --> AR_1426
+    AR_1423 --> AR_1430
+    AR_1424 --> AR_1425
+    AR_1425 --> AR_1426
+    AR_1427 --> AR_1431
+    AR_1430 --> AR_1424
+    AR_1433 --> AR_1446
+    AR_1433 --> AR_1447
+    AR_1433 --> AR_1451
+    AR_1433 --> AR_1452
+    AR_1433 --> AR_1456
+    AR_1433 --> AR_1496
+    AR_1434 --> AR_1435
+    AR_1435 --> AR_1436
+    AR_1436 --> AR_1437
+    AR_1436 --> AR_1440
+    AR_1436 --> AR_1442
+    AR_1437 --> AR_1440
+    AR_1437 --> AR_1443
+    AR_1437 --> AR_1447
+    AR_1441 --> AR_1442
+    AR_1441 --> AR_1446
+    AR_1441 --> AR_1488
+    AR_1442 --> AR_1338
+    AR_1442 --> AR_1443
+    AR_1442 --> AR_1446
+    AR_1442 --> AR_1447
+    AR_1442 --> AR_1488
+    AR_1442 --> AR_1499
+    AR_1443 --> AR_1331
+    AR_1443 --> AR_1338
+    AR_1443 --> AR_1444
+    AR_1443 --> AR_1446
+    AR_1443 --> AR_1448
+    AR_1443 --> AR_1449
+    AR_1443 --> AR_1500
+    AR_1446 --> AR_1331
+    AR_1446 --> AR_1338
+    AR_1446 --> AR_1448
+    AR_1446 --> AR_1458
+    AR_1446 --> AR_1487
+    AR_1447 --> AR_1443
+    AR_1447 --> AR_1456
+    AR_1447 --> AR_1496
+    AR_1448 --> AR_1449
+    AR_1448 --> AR_1450
+    AR_1448 --> AR_1451
+    AR_1448 --> AR_1452
+    AR_1448 --> AR_1455
+    AR_1450 --> AR_1455
+    AR_1450 --> AR_1487
+    AR_1450 --> AR_1488
+    AR_1450 --> AR_1496
+    AR_1451 --> AR_1452
+    AR_1451 --> AR_1454
+    AR_1452 --> AR_1453
+    AR_1452 --> AR_1454
+    AR_1453 --> AR_1455
+    AR_1453 --> AR_1457
+    AR_1453 --> AR_1458
+    AR_1453 --> AR_1523
+    AR_1453 --> AR_1524
+    AR_1453 --> AR_1525
+    AR_1453 --> AR_1526
+    AR_1455 --> AR_1487
+    AR_1455 --> AR_1488
+    AR_1455 --> AR_1496
+    AR_1455 --> AR_1526
+    AR_1456 --> AR_1333
+    AR_1456 --> AR_1458
+    AR_1456 --> AR_1460
+    AR_1456 --> AR_1461
+    AR_1456 --> AR_1526
+    AR_1457 --> AR_1459
+    AR_1458 --> AR_1460
+    AR_1460 --> AR_1461
+    AR_1460 --> AR_1462
+    AR_1461 --> AR_1463
+    AR_1461 --> AR_1489
+    AR_1461 --> AR_1490
+    AR_1461 --> AR_1491
+    AR_1461 --> AR_1492
+    AR_1461 --> AR_1493
+    AR_1462 --> AR_1489
+    AR_1462 --> AR_1490
+    AR_1462 --> AR_1491
+    AR_1462 --> AR_1492
+    AR_1462 --> AR_1493
+    AR_1471 --> AR_1473
+    AR_1471 --> AR_1474
+    AR_1472 --> AR_1473
+    AR_1472 --> AR_1474
+    AR_1472 --> AR_1475
+    AR_1472 --> AR_1476
+    AR_1472 --> AR_1477
+    AR_1472 --> AR_1480
+    AR_1472 --> AR_1481
+    AR_1472 --> AR_1482
+    AR_1472 --> AR_1483
+    AR_1472 --> AR_1484
+    AR_1472 --> AR_1485
+    AR_1473 --> AR_1480
+    AR_1473 --> AR_1481
+    AR_1473 --> AR_1482
+    AR_1473 --> AR_1483
+    AR_1473 --> AR_1484
+    AR_1473 --> AR_1485
+    AR_1473 --> AR_1502
+    AR_1473 --> AR_1503
+    AR_1473 --> AR_1504
+    AR_1473 --> AR_1505
+    AR_1473 --> AR_1506
+    AR_1473 --> AR_1507
+    AR_1473 --> AR_1508
+    AR_1473 --> AR_1509
+    AR_1474 --> AR_1502
+    AR_1474 --> AR_1503
+    AR_1474 --> AR_1504
+    AR_1474 --> AR_1505
+    AR_1474 --> AR_1506
+    AR_1474 --> AR_1507
+    AR_1474 --> AR_1508
+    AR_1474 --> AR_1509
+    AR_1475 --> AR_1478
+    AR_1476 --> AR_1478
+    AR_1480 --> AR_1481
+    AR_1480 --> AR_1482
+    AR_1480 --> AR_1483
+    AR_1480 --> AR_1484
+    AR_1480 --> AR_1485
+    AR_1480 --> AR_1486
+    AR_1480 --> AR_1502
+    AR_1480 --> AR_1503
+    AR_1480 --> AR_1504
+    AR_1480 --> AR_1505
+    AR_1480 --> AR_1506
+    AR_1480 --> AR_1507
+    AR_1480 --> AR_1508
+    AR_1480 --> AR_1509
+    AR_1484 --> AR_1485
+    AR_1484 --> AR_1486
+    AR_1484 --> AR_1503
+    AR_1484 --> AR_1504
+    AR_1484 --> AR_1505
+    AR_1484 --> AR_1506
+    AR_1484 --> AR_1507
+    AR_1484 --> AR_1508
+    AR_1484 --> AR_1509
+    AR_1484 --> AR_1511
+    AR_1484 --> AR_1512
+    AR_1484 --> AR_1513
+    AR_1485 --> AR_1486
+    AR_1485 --> AR_1503
+    AR_1485 --> AR_1504
+    AR_1485 --> AR_1505
+    AR_1485 --> AR_1506
+    AR_1485 --> AR_1507
+    AR_1485 --> AR_1508
+    AR_1485 --> AR_1509
+    AR_1486 --> AR_1487
+    AR_1487 --> AR_1488
+    AR_1488 --> AR_1489
+    AR_1488 --> AR_1490
+    AR_1488 --> AR_1491
+    AR_1489 --> AR_1490
+    AR_1489 --> AR_1491
+    AR_1491 --> AR_1492
+    AR_1491 --> AR_1493
+    AR_1491 --> AR_1495
+    AR_1492 --> AR_1493
+    AR_1493 --> AR_1495
+    AR_1493 --> AR_1497
+    AR_1496 --> AR_1199
+    AR_1496 --> AR_1498
+    AR_1496 --> AR_1499
+    AR_1498 --> AR_1199
+    AR_1499 --> AR_1500
+    AR_1499 --> AR_1501
+    AR_1499 --> AR_1514
+    AR_1500 --> AR_1501
+    AR_1500 --> AR_1514
+    AR_1501 --> AR_1502
+    AR_1502 --> AR_1503
+    AR_1502 --> AR_1504
+    AR_1502 --> AR_1505
+    AR_1502 --> AR_1506
+    AR_1502 --> AR_1507
+    AR_1502 --> AR_1508
+    AR_1502 --> AR_1509
+    AR_1502 --> AR_1511
+    AR_1502 --> AR_1512
+    AR_1502 --> AR_1513
+    AR_1505 --> AR_1506
+    AR_1505 --> AR_1507
+    AR_1505 --> AR_1508
+    AR_1505 --> AR_1509
+    AR_1505 --> AR_1510
+    AR_1505 --> AR_1523
+    AR_1505 --> AR_1525
+    AR_1513 --> AR_1523
+    AR_1514 --> AR_1523
+    AR_1514 --> AR_1526
+    AR_1517 --> AR_1518
+    AR_1517 --> AR_1529
+    AR_1519 --> AR_1520
+    AR_1519 --> AR_1528
+    AR_1520 --> AR_1521
+    AR_1520 --> AR_1526
+    AR_1520 --> AR_1528
+    AR_1520 --> AR_1529
+    AR_1520 --> AR_1530
+    AR_1520 --> AR_1531
+    AR_1527 --> AR_1528
+    AR_1528 --> AR_1532
+    AR_1528 --> AR_1533
+    AR_1529 --> AR_1530
+    AR_1530 --> AR_1521
+    AR_1530 --> AR_1522
+    AR_1530 --> AR_1531
+    AR_1530 --> AR_1534
+    AR_1530 --> AR_1537
+    AR_1531 --> AR_1536
+    AR_1532 --> AR_1535
+    AR_1533 --> AR_1536
+    AR_1534 --> AR_1535
+    AR_1534 --> AR_1536
+    AR_1537 --> AR_1538
+    classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
+    classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
+    classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
+    classDef status_planned fill:#6a1b9a,color:#ffffff,stroke:#263238,stroke-width:2px
+    classDef status_future fill:#455a64,color:#ffffff,stroke:#263238,stroke-width:2px
+    classDef status_done fill:#00695c,color:#ffffff,stroke:#263238,stroke-width:2px
+    classDef status_cancelled fill:#616161,color:#ffffff,stroke:#263238,stroke-width:2px
+    classDef status_superseded fill:#5d4037,color:#ffffff,stroke:#263238,stroke-width:2px
+```
+
+### Accessible dependency index
+
+| AR | Prerequisites | Dependents |
+| --- | --- | --- |
+| [AR-0001](../tasks/AR-0001-repository-bootstrap.md) | None | [AR-0002](../tasks/AR-0002-coordination-assurance.md), [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0501](../tasks/AR-0501-replay-evaluation.md), [AR-0701](../tasks/AR-0701-platform-manifests.md) |
+| [AR-0002](../tasks/AR-0002-coordination-assurance.md) | [AR-0001](../tasks/AR-0001-repository-bootstrap.md) | [AR-0004](../tasks/AR-0004-ar-status-document.md), [AR-0005](../tasks/AR-0005-transactional-promotion.md), [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md), [AR-0834](../tasks/AR-0834-handoffctl-lint-regression.md), [AR-0895](../tasks/AR-0895-verify-coordination-content.md), [AR-0903](../tasks/AR-0903-release-qualification.md) |
+| [AR-0003](../tasks/AR-0003-quality-gates.md) | [AR-0001](../tasks/AR-0001-repository-bootstrap.md) | [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md), [AR-0831](../tasks/AR-0831-aiws-workflow-routing.md), [AR-0845](../tasks/AR-0845-ci-artifact-quota-resilience.md), [AR-0855](../tasks/AR-0855-huawei-mit-license-headers.md), [AR-0877](../tasks/AR-0877-formal-tla-artifact-availability.md), [AR-0878](../tasks/AR-0878-tla-source-build-provenance.md), [AR-0895](../tasks/AR-0895-verify-coordination-content.md), [AR-0897](../tasks/AR-0897-main-merge-integrity.md), [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md), [AR-0899](../tasks/AR-0899-gitleaks-revision-config-integrity.md), [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-0906](../tasks/AR-0906-portable-oci-build-image-identity.md), [AR-1235](../tasks/AR-1235-goose-diagnostic-fixture-portability.md), [AR-1242](../tasks/AR-1242-protected-main-admission.md), [AR-1252](../tasks/AR-1252-approved-isolated-qualification-runner.md), [AR-1283](../tasks/AR-1283-formal-lockfile.md) |
+| [AR-0004](../tasks/AR-0004-ar-status-document.md) | [AR-0002](../tasks/AR-0002-coordination-assurance.md) | [AR-0005](../tasks/AR-0005-transactional-promotion.md), [AR-0849](../tasks/AR-0849-ar0801-documentation-repair.md) |
+| [AR-0005](../tasks/AR-0005-transactional-promotion.md) | [AR-0002](../tasks/AR-0002-coordination-assurance.md), [AR-0004](../tasks/AR-0004-ar-status-document.md) | None |
+| [AR-0101](../tasks/AR-0101-extension-contracts.md) | [AR-0001](../tasks/AR-0001-repository-bootstrap.md) | [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0201](../tasks/AR-0201-portable-metrics.md), [AR-0203](../tasks/AR-0203-statistical-analysis.md), [AR-0301](../tasks/AR-0301-agent-opencode.md), [AR-0302](../tasks/AR-0302-agent-opendesk.md), [AR-0303](../tasks/AR-0303-agent-aider.md), [AR-0304](../tasks/AR-0304-agent-codex.md), [AR-0305](../tasks/AR-0305-agent-gemini.md), [AR-0306](../tasks/AR-0306-agent-qwen-code.md), [AR-0307](../tasks/AR-0307-agent-goose.md), [AR-0308](../tasks/AR-0308-agent-mini-swe.md), [AR-0309](../tasks/AR-0309-agent-openhands.md), [AR-0310](../tasks/AR-0310-provider-profile-contract.md), [AR-0317](../tasks/AR-0317-runtime-bundle-manifest.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0502](../tasks/AR-0502-replay-cassettes.md), [AR-0517](../tasks/AR-0517-redacted-request-pointer-replay.md), [AR-0601](../tasks/AR-0601-csb-integration.md), [AR-0603](../tasks/AR-0603-csb-execution-assurance.md), [AR-0801](../tasks/AR-0801-terminal-interface.md), [AR-0803](../tasks/AR-0803-frontend-control-api.md), [AR-0840](../tasks/AR-0840-frontend-protocol-contract.md), [AR-0847](../tasks/AR-0847-frontend-control-api-repair.md), [AR-0857](../tasks/AR-0857-openjiuwen-provenance.md), [AR-0863](../tasks/AR-0863-workbuddy-provenance.md), [AR-0875](../tasks/AR-0875-control-history-analysis-contract.md), [AR-0901](../tasks/AR-0901-formal-assurance.md), [AR-0904](../tasks/AR-0904-contract-consistency.md), [AR-0908](../tasks/AR-0908-control-state-lock-test-isolation.md), [AR-0909](../tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md), [AR-1001](../tasks/AR-1001-experiment-comparability.md), [AR-1003](../tasks/AR-1003-execution-budgets.md), [AR-1005](../tasks/AR-1005-trace-interoperability.md), [AR-1013](../tasks/AR-1013-measurement-catalog-semantics.md) |
+| [AR-0102](../tasks/AR-0102-process-runtime.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md) | [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0201](../tasks/AR-0201-portable-metrics.md), [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0301](../tasks/AR-0301-agent-opencode.md), [AR-0302](../tasks/AR-0302-agent-opendesk.md), [AR-0303](../tasks/AR-0303-agent-aider.md), [AR-0304](../tasks/AR-0304-agent-codex.md), [AR-0305](../tasks/AR-0305-agent-gemini.md), [AR-0306](../tasks/AR-0306-agent-qwen-code.md), [AR-0307](../tasks/AR-0307-agent-goose.md), [AR-0308](../tasks/AR-0308-agent-mini-swe.md), [AR-0309](../tasks/AR-0309-agent-openhands.md), [AR-0317](../tasks/AR-0317-runtime-bundle-manifest.md), [AR-0318](../tasks/AR-0318-credential-reference-boundary.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0601](../tasks/AR-0601-csb-integration.md), [AR-0603](../tasks/AR-0603-csb-execution-assurance.md), [AR-0857](../tasks/AR-0857-openjiuwen-provenance.md), [AR-0863](../tasks/AR-0863-workbuddy-provenance.md), [AR-0875](../tasks/AR-0875-control-history-analysis-contract.md), [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md), [AR-0901](../tasks/AR-0901-formal-assurance.md), [AR-0905](../tasks/AR-0905-recovery-models.md), [AR-0908](../tasks/AR-0908-control-state-lock-test-isolation.md), [AR-0909](../tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md) |
+| [AR-0103](../tasks/AR-0103-sandbox-runtime.md) | [AR-0102](../tasks/AR-0102-process-runtime.md) | [AR-0105](../tasks/AR-0105-sandbox-test-portability.md), [AR-0202](../tasks/AR-0202-kernel-diagnostics.md), [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0305](../tasks/AR-0305-agent-gemini.md), [AR-0306](../tasks/AR-0306-agent-qwen-code.md), [AR-0307](../tasks/AR-0307-agent-goose.md), [AR-0308](../tasks/AR-0308-agent-mini-swe.md), [AR-0309](../tasks/AR-0309-agent-openhands.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0601](../tasks/AR-0601-csb-integration.md), [AR-0603](../tasks/AR-0603-csb-execution-assurance.md), [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-0703](../tasks/AR-0703-native-platform-lab.md), [AR-0704](../tasks/AR-0704-native-capacity-controller.md), [AR-0707](../tasks/AR-0707-emulated-aarch64-portability.md), [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md), [AR-0848](../tasks/AR-0848-native-x86-capacity.md), [AR-0857](../tasks/AR-0857-openjiuwen-provenance.md), [AR-0863](../tasks/AR-0863-workbuddy-provenance.md), [AR-0875](../tasks/AR-0875-control-history-analysis-contract.md), [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md), [AR-0902](../tasks/AR-0902-fault-assurance.md), [AR-0908](../tasks/AR-0908-control-state-lock-test-isolation.md), [AR-0909](../tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md), [AR-1002](../tasks/AR-1002-verifier-integrity.md) |
+| [AR-0104](../tasks/AR-0104-durable-results.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md) | [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0314](../tasks/AR-0314-recording-source-choice.md), [AR-0601](../tasks/AR-0601-csb-integration.md), [AR-0603](../tasks/AR-0603-csb-execution-assurance.md), [AR-0801](../tasks/AR-0801-terminal-interface.md), [AR-0803](../tasks/AR-0803-frontend-control-api.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0806](../tasks/AR-0806-tui-history-analysis.md), [AR-0822](../tasks/AR-0822-install-upgrade-rollback.md), [AR-0841](../tasks/AR-0841-frontend-local-transport.md), [AR-0847](../tasks/AR-0847-frontend-control-api-repair.md), [AR-0902](../tasks/AR-0902-fault-assurance.md), [AR-0905](../tasks/AR-0905-recovery-models.md), [AR-1002](../tasks/AR-1002-verifier-integrity.md), [AR-1005](../tasks/AR-1005-trace-interoperability.md), [AR-1037](../tasks/AR-1037-measurement-selection-plan.md) |
+| [AR-0105](../tasks/AR-0105-sandbox-test-portability.md) | [AR-0103](../tasks/AR-0103-sandbox-runtime.md) | [AR-0204](../tasks/AR-0204-capacity-sweeps.md) |
+| [AR-0201](../tasks/AR-0201-portable-metrics.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md) | [AR-0202](../tasks/AR-0202-kernel-diagnostics.md), [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0504](../tasks/AR-0504-replay-pacing.md), [AR-0601](../tasks/AR-0601-csb-integration.md), [AR-0602](../tasks/AR-0602-csb-monitoring-contention.md), [AR-0604](../tasks/AR-0604-csb-native-qualification.md), [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-0703](../tasks/AR-0703-native-platform-lab.md), [AR-0705](../tasks/AR-0705-native-debian-capacity.md), [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md), [AR-0848](../tasks/AR-0848-native-x86-capacity.md) |
+| [AR-0202](../tasks/AR-0202-kernel-diagnostics.md) | [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0201](../tasks/AR-0201-portable-metrics.md) | [AR-0602](../tasks/AR-0602-csb-monitoring-contention.md), [AR-0604](../tasks/AR-0604-csb-native-qualification.md) |
+| [AR-0203](../tasks/AR-0203-statistical-analysis.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md) | [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0806](../tasks/AR-0806-tui-history-analysis.md), [AR-0901](../tasks/AR-0901-formal-assurance.md), [AR-1001](../tasks/AR-1001-experiment-comparability.md), [AR-1004](../tasks/AR-1004-reliability-fairness.md) |
+| [AR-0204](../tasks/AR-0204-capacity-sweeps.md) | [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0105](../tasks/AR-0105-sandbox-test-portability.md), [AR-0201](../tasks/AR-0201-portable-metrics.md), [AR-0203](../tasks/AR-0203-statistical-analysis.md) | [AR-0801](../tasks/AR-0801-terminal-interface.md), [AR-0803](../tasks/AR-0803-frontend-control-api.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0847](../tasks/AR-0847-frontend-control-api-repair.md), [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-0905](../tasks/AR-0905-recovery-models.md), [AR-1004](../tasks/AR-1004-reliability-fairness.md), [AR-1006](../tasks/AR-1006-distributed-workers.md) |
+| [AR-0301](../tasks/AR-0301-agent-opencode.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md) | [AR-0311](../tasks/AR-0311-provider-openai.md), [AR-0312](../tasks/AR-0312-provider-ollama.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0316](../tasks/AR-0316-agent-runtime-bundles.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-0506](../tasks/AR-0506-replay-opencode.md), [AR-1003](../tasks/AR-1003-execution-budgets.md) |
+| [AR-0302](../tasks/AR-0302-agent-opendesk.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md) | [AR-0311](../tasks/AR-0311-provider-openai.md), [AR-0312](../tasks/AR-0312-provider-ollama.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0316](../tasks/AR-0316-agent-runtime-bundles.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-0507](../tasks/AR-0507-replay-opendesk.md), [AR-0516](../tasks/AR-0516-opendesk-strict-replay-http-compatibility.md), [AR-1003](../tasks/AR-1003-execution-budgets.md) |
+| [AR-0303](../tasks/AR-0303-agent-aider.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md) | [AR-0311](../tasks/AR-0311-provider-openai.md), [AR-0312](../tasks/AR-0312-provider-ollama.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0316](../tasks/AR-0316-agent-runtime-bundles.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-0508](../tasks/AR-0508-replay-aider.md), [AR-0850](../tasks/AR-0850-aider-deterministic-replay.md), [AR-1003](../tasks/AR-1003-execution-budgets.md) |
+| [AR-0304](../tasks/AR-0304-agent-codex.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md) | [AR-0311](../tasks/AR-0311-provider-openai.md), [AR-0312](../tasks/AR-0312-provider-ollama.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0316](../tasks/AR-0316-agent-runtime-bundles.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-0509](../tasks/AR-0509-replay-codex.md), [AR-1003](../tasks/AR-1003-execution-budgets.md) |
+| [AR-0305](../tasks/AR-0305-agent-gemini.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md) | [AR-0311](../tasks/AR-0311-provider-openai.md), [AR-0312](../tasks/AR-0312-provider-ollama.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0316](../tasks/AR-0316-agent-runtime-bundles.md), [AR-0510](../tasks/AR-0510-replay-gemini.md) |
+| [AR-0306](../tasks/AR-0306-agent-qwen-code.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md) | [AR-0311](../tasks/AR-0311-provider-openai.md), [AR-0312](../tasks/AR-0312-provider-ollama.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0316](../tasks/AR-0316-agent-runtime-bundles.md), [AR-0511](../tasks/AR-0511-replay-qwen.md) |
+| [AR-0307](../tasks/AR-0307-agent-goose.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md) | [AR-0311](../tasks/AR-0311-provider-openai.md), [AR-0312](../tasks/AR-0312-provider-ollama.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0316](../tasks/AR-0316-agent-runtime-bundles.md), [AR-0512](../tasks/AR-0512-replay-goose.md) |
+| [AR-0308](../tasks/AR-0308-agent-mini-swe.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md) | [AR-0311](../tasks/AR-0311-provider-openai.md), [AR-0312](../tasks/AR-0312-provider-ollama.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0316](../tasks/AR-0316-agent-runtime-bundles.md), [AR-0513](../tasks/AR-0513-replay-miniswe.md), [AR-0909](../tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md) |
+| [AR-0309](../tasks/AR-0309-agent-openhands.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md) | [AR-0311](../tasks/AR-0311-provider-openai.md), [AR-0312](../tasks/AR-0312-provider-ollama.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0316](../tasks/AR-0316-agent-runtime-bundles.md), [AR-0514](../tasks/AR-0514-replay-openhands.md), [AR-0521](../tasks/AR-0521-openhands-environment-pin.md) |
+| [AR-0310](../tasks/AR-0310-provider-profile-contract.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-1001](../tasks/AR-1001-experiment-comparability.md) | [AR-0311](../tasks/AR-0311-provider-openai.md), [AR-0312](../tasks/AR-0312-provider-ollama.md), [AR-0314](../tasks/AR-0314-recording-source-choice.md), [AR-0318](../tasks/AR-0318-credential-reference-boundary.md), [AR-0857](../tasks/AR-0857-openjiuwen-provenance.md), [AR-0863](../tasks/AR-0863-workbuddy-provenance.md), [AR-1325](../tasks/AR-1325-provider-openrouter.md) |
+| [AR-0311](../tasks/AR-0311-provider-openai.md) | [AR-0301](../tasks/AR-0301-agent-opencode.md), [AR-0302](../tasks/AR-0302-agent-opendesk.md), [AR-0303](../tasks/AR-0303-agent-aider.md), [AR-0304](../tasks/AR-0304-agent-codex.md), [AR-0305](../tasks/AR-0305-agent-gemini.md), [AR-0306](../tasks/AR-0306-agent-qwen-code.md), [AR-0307](../tasks/AR-0307-agent-goose.md), [AR-0308](../tasks/AR-0308-agent-mini-swe.md), [AR-0309](../tasks/AR-0309-agent-openhands.md), [AR-0310](../tasks/AR-0310-provider-profile-contract.md) | [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md) |
+| [AR-0312](../tasks/AR-0312-provider-ollama.md) | [AR-0301](../tasks/AR-0301-agent-opencode.md), [AR-0302](../tasks/AR-0302-agent-opendesk.md), [AR-0303](../tasks/AR-0303-agent-aider.md), [AR-0304](../tasks/AR-0304-agent-codex.md), [AR-0305](../tasks/AR-0305-agent-gemini.md), [AR-0306](../tasks/AR-0306-agent-qwen-code.md), [AR-0307](../tasks/AR-0307-agent-goose.md), [AR-0308](../tasks/AR-0308-agent-mini-swe.md), [AR-0309](../tasks/AR-0309-agent-openhands.md), [AR-0310](../tasks/AR-0310-provider-profile-contract.md) | [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md), [AR-0891](../tasks/AR-0891-local-inference-provider-profiles.md) |
+| [AR-0313](../tasks/AR-0313-all-agents-provider.md) | [AR-0311](../tasks/AR-0311-provider-openai.md), [AR-0312](../tasks/AR-0312-provider-ollama.md) | [AR-0314](../tasks/AR-0314-recording-source-choice.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md), [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md), [AR-0891](../tasks/AR-0891-local-inference-provider-profiles.md), [AR-1100](../tasks/AR-1100.md), [AR-1326](../tasks/AR-1326-openrouter-catalog-selection.md) |
+| [AR-0314](../tasks/AR-0314-recording-source-choice.md) | [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0310](../tasks/AR-0310-provider-profile-contract.md), [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-0318](../tasks/AR-0318-credential-reference-boundary.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md) |
+| [AR-0315](../tasks/AR-0315-provider-parity-conformance.md) | [AR-0301](../tasks/AR-0301-agent-opencode.md), [AR-0302](../tasks/AR-0302-agent-opendesk.md), [AR-0303](../tasks/AR-0303-agent-aider.md), [AR-0304](../tasks/AR-0304-agent-codex.md), [AR-0305](../tasks/AR-0305-agent-gemini.md), [AR-0306](../tasks/AR-0306-agent-qwen-code.md), [AR-0307](../tasks/AR-0307-agent-goose.md), [AR-0308](../tasks/AR-0308-agent-mini-swe.md), [AR-0309](../tasks/AR-0309-agent-openhands.md), [AR-0311](../tasks/AR-0311-provider-openai.md), [AR-0312](../tasks/AR-0312-provider-ollama.md), [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-0314](../tasks/AR-0314-recording-source-choice.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md) | [AR-0857](../tasks/AR-0857-openjiuwen-provenance.md), [AR-0863](../tasks/AR-0863-workbuddy-provenance.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md), [AR-0891](../tasks/AR-0891-local-inference-provider-profiles.md), [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-1110](../tasks/AR-1110.md), [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md) |
+| [AR-0316](../tasks/AR-0316-agent-runtime-bundles.md) | [AR-0301](../tasks/AR-0301-agent-opencode.md), [AR-0302](../tasks/AR-0302-agent-opendesk.md), [AR-0303](../tasks/AR-0303-agent-aider.md), [AR-0304](../tasks/AR-0304-agent-codex.md), [AR-0305](../tasks/AR-0305-agent-gemini.md), [AR-0306](../tasks/AR-0306-agent-qwen-code.md), [AR-0307](../tasks/AR-0307-agent-goose.md), [AR-0308](../tasks/AR-0308-agent-mini-swe.md), [AR-0309](../tasks/AR-0309-agent-openhands.md) | [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md) |
+| [AR-0317](../tasks/AR-0317-runtime-bundle-manifest.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0701](../tasks/AR-0701-platform-manifests.md) | [AR-0857](../tasks/AR-0857-openjiuwen-provenance.md), [AR-0863](../tasks/AR-0863-workbuddy-provenance.md), [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md) |
+| [AR-0318](../tasks/AR-0318-credential-reference-boundary.md) | [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0310](../tasks/AR-0310-provider-profile-contract.md) | [AR-0314](../tasks/AR-0314-recording-source-choice.md), [AR-0319](../tasks/AR-0319-credential-fd-helper-resolvers.md), [AR-0320](../tasks/AR-0320-provider-credential-integration.md), [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md), [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md), [AR-1325](../tasks/AR-1325-provider-openrouter.md) |
+| [AR-0319](../tasks/AR-0319-credential-fd-helper-resolvers.md) | [AR-0318](../tasks/AR-0318-credential-reference-boundary.md) | [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md), [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) |
+| [AR-0320](../tasks/AR-0320-provider-credential-integration.md) | [AR-0318](../tasks/AR-0318-credential-reference-boundary.md) | [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md), [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md), [AR-1120](../tasks/AR-1120.md), [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) |
+| [AR-0401](../tasks/AR-0401-engineering-workloads.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md) | [AR-0402](../tasks/AR-0402-external-code-workloads.md), [AR-0403](../tasks/AR-0403-terminal-workloads.md), [AR-0405](../tasks/AR-0405-performance-workloads.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-0506](../tasks/AR-0506-replay-opencode.md), [AR-0507](../tasks/AR-0507-replay-opendesk.md), [AR-0508](../tasks/AR-0508-replay-aider.md), [AR-0509](../tasks/AR-0509-replay-codex.md), [AR-0510](../tasks/AR-0510-replay-gemini.md), [AR-0511](../tasks/AR-0511-replay-qwen.md), [AR-0512](../tasks/AR-0512-replay-goose.md), [AR-0513](../tasks/AR-0513-replay-miniswe.md), [AR-0514](../tasks/AR-0514-replay-openhands.md), [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-0703](../tasks/AR-0703-native-platform-lab.md), [AR-0705](../tasks/AR-0705-native-debian-capacity.md), [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md), [AR-0802](../tasks/AR-0802-executable-guides.md), [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0848](../tasks/AR-0848-native-x86-capacity.md), [AR-1002](../tasks/AR-1002-verifier-integrity.md), [AR-1004](../tasks/AR-1004-reliability-fairness.md), [AR-1007](../tasks/AR-1007-benchmark-validity.md) |
+| [AR-0402](../tasks/AR-0402-external-code-workloads.md) | [AR-0401](../tasks/AR-0401-engineering-workloads.md) | [AR-0404](../tasks/AR-0404-extended-workloads.md), [AR-0406](../tasks/AR-0406-evolving-workloads.md) |
+| [AR-0403](../tasks/AR-0403-terminal-workloads.md) | [AR-0401](../tasks/AR-0401-engineering-workloads.md) | [AR-0404](../tasks/AR-0404-extended-workloads.md) |
+| [AR-0404](../tasks/AR-0404-extended-workloads.md) | [AR-0402](../tasks/AR-0402-external-code-workloads.md), [AR-0403](../tasks/AR-0403-terminal-workloads.md) | [AR-1394](../tasks/AR-1394-literature-workload-registry.md) |
+| [AR-0405](../tasks/AR-0405-performance-workloads.md) | [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0601](../tasks/AR-0601-csb-integration.md), [AR-1002](../tasks/AR-1002-verifier-integrity.md), [AR-1007](../tasks/AR-1007-benchmark-validity.md) | [AR-1394](../tasks/AR-1394-literature-workload-registry.md) |
+| [AR-0406](../tasks/AR-0406-evolving-workloads.md) | [AR-0402](../tasks/AR-0402-external-code-workloads.md), [AR-1007](../tasks/AR-1007-benchmark-validity.md) | [AR-1394](../tasks/AR-1394-literature-workload-registry.md) |
+| [AR-0501](../tasks/AR-0501-replay-evaluation.md) | [AR-0001](../tasks/AR-0001-repository-bootstrap.md) | [AR-0502](../tasks/AR-0502-replay-cassettes.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md) |
+| [AR-0502](../tasks/AR-0502-replay-cassettes.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0501](../tasks/AR-0501-replay-evaluation.md) | [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0516](../tasks/AR-0516-opendesk-strict-replay-http-compatibility.md), [AR-0517](../tasks/AR-0517-redacted-request-pointer-replay.md), [AR-0518](../tasks/AR-0518-gemini-generate-content-replay.md), [AR-0520](../tasks/AR-0520-interaction-aware-redaction.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md), [AR-0901](../tasks/AR-0901-formal-assurance.md), [AR-1005](../tasks/AR-1005-trace-interoperability.md), [AR-1330](../tasks/AR-1330-live-capture-sealed-cassette.md) |
+| [AR-0503](../tasks/AR-0503-strict-replay.md) | [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0502](../tasks/AR-0502-replay-cassettes.md) | [AR-0314](../tasks/AR-0314-recording-source-choice.md), [AR-0504](../tasks/AR-0504-replay-pacing.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-0506](../tasks/AR-0506-replay-opencode.md), [AR-0507](../tasks/AR-0507-replay-opendesk.md), [AR-0508](../tasks/AR-0508-replay-aider.md), [AR-0509](../tasks/AR-0509-replay-codex.md), [AR-0510](../tasks/AR-0510-replay-gemini.md), [AR-0511](../tasks/AR-0511-replay-qwen.md), [AR-0512](../tasks/AR-0512-replay-goose.md), [AR-0513](../tasks/AR-0513-replay-miniswe.md), [AR-0514](../tasks/AR-0514-replay-openhands.md), [AR-0516](../tasks/AR-0516-opendesk-strict-replay-http-compatibility.md), [AR-0517](../tasks/AR-0517-redacted-request-pointer-replay.md), [AR-0518](../tasks/AR-0518-gemini-generate-content-replay.md), [AR-0520](../tasks/AR-0520-interaction-aware-redaction.md), [AR-0857](../tasks/AR-0857-openjiuwen-provenance.md), [AR-0863](../tasks/AR-0863-workbuddy-provenance.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md), [AR-0902](../tasks/AR-0902-fault-assurance.md), [AR-0905](../tasks/AR-0905-recovery-models.md), [AR-1330](../tasks/AR-1330-live-capture-sealed-cassette.md) |
+| [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0201](../tasks/AR-0201-portable-metrics.md), [AR-0503](../tasks/AR-0503-strict-replay.md) | [AR-0314](../tasks/AR-0314-recording-source-choice.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-0506](../tasks/AR-0506-replay-opencode.md), [AR-0507](../tasks/AR-0507-replay-opendesk.md), [AR-0508](../tasks/AR-0508-replay-aider.md), [AR-0509](../tasks/AR-0509-replay-codex.md), [AR-0510](../tasks/AR-0510-replay-gemini.md), [AR-0511](../tasks/AR-0511-replay-qwen.md), [AR-0512](../tasks/AR-0512-replay-goose.md), [AR-0513](../tasks/AR-0513-replay-miniswe.md), [AR-0514](../tasks/AR-0514-replay-openhands.md), [AR-0516](../tasks/AR-0516-opendesk-strict-replay-http-compatibility.md), [AR-0517](../tasks/AR-0517-redacted-request-pointer-replay.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md) |
+| [AR-0505](../tasks/AR-0505-agent-replay-conformance.md) | [AR-0301](../tasks/AR-0301-agent-opencode.md), [AR-0302](../tasks/AR-0302-agent-opendesk.md), [AR-0303](../tasks/AR-0303-agent-aider.md), [AR-0304](../tasks/AR-0304-agent-codex.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0802](../tasks/AR-0802-executable-guides.md), [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md), [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-1151](../tasks/AR-1151.md), [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md), [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md) |
+| [AR-0506](../tasks/AR-0506-replay-opencode.md) | [AR-0301](../tasks/AR-0301-agent-opencode.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md) |
+| [AR-0507](../tasks/AR-0507-replay-opendesk.md) | [AR-0302](../tasks/AR-0302-agent-opendesk.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md) |
+| [AR-0508](../tasks/AR-0508-replay-aider.md) | [AR-0303](../tasks/AR-0303-agent-aider.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md), [AR-0850](../tasks/AR-0850-aider-deterministic-replay.md) |
+| [AR-0509](../tasks/AR-0509-replay-codex.md) | [AR-0304](../tasks/AR-0304-agent-codex.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md) |
+| [AR-0510](../tasks/AR-0510-replay-gemini.md) | [AR-0305](../tasks/AR-0305-agent-gemini.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md) |
+| [AR-0511](../tasks/AR-0511-replay-qwen.md) | [AR-0306](../tasks/AR-0306-agent-qwen-code.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md) |
+| [AR-0512](../tasks/AR-0512-replay-goose.md) | [AR-0307](../tasks/AR-0307-agent-goose.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md) |
+| [AR-0513](../tasks/AR-0513-replay-miniswe.md) | [AR-0308](../tasks/AR-0308-agent-mini-swe.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md) |
+| [AR-0514](../tasks/AR-0514-replay-openhands.md) | [AR-0309](../tasks/AR-0309-agent-openhands.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md) |
+| [AR-0515](../tasks/AR-0515-replay-matrix.md) | [AR-0506](../tasks/AR-0506-replay-opencode.md), [AR-0507](../tasks/AR-0507-replay-opendesk.md), [AR-0508](../tasks/AR-0508-replay-aider.md), [AR-0509](../tasks/AR-0509-replay-codex.md), [AR-0510](../tasks/AR-0510-replay-gemini.md), [AR-0511](../tasks/AR-0511-replay-qwen.md), [AR-0512](../tasks/AR-0512-replay-goose.md), [AR-0513](../tasks/AR-0513-replay-miniswe.md), [AR-0514](../tasks/AR-0514-replay-openhands.md) | None |
+| [AR-0516](../tasks/AR-0516-opendesk-strict-replay-http-compatibility.md) | [AR-0302](../tasks/AR-0302-agent-opendesk.md), [AR-0502](../tasks/AR-0502-replay-cassettes.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | None |
+| [AR-0517](../tasks/AR-0517-redacted-request-pointer-replay.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0502](../tasks/AR-0502-replay-cassettes.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0518](../tasks/AR-0518-gemini-generate-content-replay.md), [AR-0520](../tasks/AR-0520-interaction-aware-redaction.md) |
+| [AR-0518](../tasks/AR-0518-gemini-generate-content-replay.md) | [AR-0502](../tasks/AR-0502-replay-cassettes.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0517](../tasks/AR-0517-redacted-request-pointer-replay.md) | [AR-0519](../tasks/AR-0519-gemini-thinking-config-contract.md) |
+| [AR-0519](../tasks/AR-0519-gemini-thinking-config-contract.md) | [AR-0518](../tasks/AR-0518-gemini-generate-content-replay.md) | None |
+| [AR-0520](../tasks/AR-0520-interaction-aware-redaction.md) | [AR-0502](../tasks/AR-0502-replay-cassettes.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0517](../tasks/AR-0517-redacted-request-pointer-replay.md) | None |
+| [AR-0521](../tasks/AR-0521-openhands-environment-pin.md) | [AR-0309](../tasks/AR-0309-agent-openhands.md) | None |
+| [AR-0601](../tasks/AR-0601-csb-integration.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0201](../tasks/AR-0201-portable-metrics.md), [AR-0603](../tasks/AR-0603-csb-execution-assurance.md) | [AR-0405](../tasks/AR-0405-performance-workloads.md), [AR-0602](../tasks/AR-0602-csb-monitoring-contention.md), [AR-0604](../tasks/AR-0604-csb-native-qualification.md), [AR-1015](../tasks/AR-1015-csb-measurement-adapter.md) |
+| [AR-0602](../tasks/AR-0602-csb-monitoring-contention.md) | [AR-0201](../tasks/AR-0201-portable-metrics.md), [AR-0202](../tasks/AR-0202-kernel-diagnostics.md), [AR-0601](../tasks/AR-0601-csb-integration.md), [AR-0604](../tasks/AR-0604-csb-native-qualification.md) | [AR-1015](../tasks/AR-1015-csb-measurement-adapter.md) |
+| [AR-0603](../tasks/AR-0603-csb-execution-assurance.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0104](../tasks/AR-0104-durable-results.md) | [AR-0601](../tasks/AR-0601-csb-integration.md) |
+| [AR-0604](../tasks/AR-0604-csb-native-qualification.md) | [AR-0201](../tasks/AR-0201-portable-metrics.md), [AR-0202](../tasks/AR-0202-kernel-diagnostics.md), [AR-0601](../tasks/AR-0601-csb-integration.md) | [AR-0602](../tasks/AR-0602-csb-monitoring-contention.md), [AR-1015](../tasks/AR-1015-csb-measurement-adapter.md) |
+| [AR-0701](../tasks/AR-0701-platform-manifests.md) | [AR-0001](../tasks/AR-0001-repository-bootstrap.md) | [AR-0317](../tasks/AR-0317-runtime-bundle-manifest.md), [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-0703](../tasks/AR-0703-native-platform-lab.md), [AR-0704](../tasks/AR-0704-native-capacity-controller.md), [AR-0707](../tasks/AR-0707-emulated-aarch64-portability.md), [AR-0820](../tasks/AR-0820-verifiable-install-artifacts.md), [AR-0848](../tasks/AR-0848-native-x86-capacity.md), [AR-1007](../tasks/AR-1007-benchmark-validity.md) |
+| [AR-0702](../tasks/AR-0702-native-platforms.md) | [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0201](../tasks/AR-0201-portable-metrics.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0701](../tasks/AR-0701-platform-manifests.md) | [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-0813](../tasks/AR-0813-remote-control-transport.md), [AR-0816](../tasks/AR-0816-cross-platform-remote-interoperability.md), [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-0907](../tasks/AR-0907-hosted-runner-evidence-classification.md), [AR-1006](../tasks/AR-1006-distributed-workers.md) |
+| [AR-0703](../tasks/AR-0703-native-platform-lab.md) | [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0201](../tasks/AR-0201-portable-metrics.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0701](../tasks/AR-0701-platform-manifests.md) | None |
+| [AR-0704](../tasks/AR-0704-native-capacity-controller.md) | [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0701](../tasks/AR-0701-platform-manifests.md) | [AR-0705](../tasks/AR-0705-native-debian-capacity.md), [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md) |
+| [AR-0705](../tasks/AR-0705-native-debian-capacity.md) | [AR-0201](../tasks/AR-0201-portable-metrics.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0704](../tasks/AR-0704-native-capacity-controller.md) | None |
+| [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md) | [AR-0201](../tasks/AR-0201-portable-metrics.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0704](../tasks/AR-0704-native-capacity-controller.md) | None |
+| [AR-0707](../tasks/AR-0707-emulated-aarch64-portability.md) | [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0701](../tasks/AR-0701-platform-manifests.md) | None |
+| [AR-0801](../tasks/AR-0801-terminal-interface.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0204](../tasks/AR-0204-capacity-sweeps.md) | [AR-0802](../tasks/AR-0802-executable-guides.md), [AR-0803](../tasks/AR-0803-frontend-control-api.md), [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0820](../tasks/AR-0820-verifiable-install-artifacts.md), [AR-0840](../tasks/AR-0840-frontend-protocol-contract.md), [AR-0842](../tasks/AR-0842-frontend-run-lifecycle.md), [AR-0847](../tasks/AR-0847-frontend-control-api-repair.md), [AR-0849](../tasks/AR-0849-ar0801-documentation-repair.md), [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md) |
+| [AR-0802](../tasks/AR-0802-executable-guides.md) | [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-0801](../tasks/AR-0801-terminal-interface.md) | [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0872](../tasks/AR-0872-beginner-workflow-documentation.md), [AR-0903](../tasks/AR-0903-release-qualification.md) |
+| [AR-0803](../tasks/AR-0803-frontend-control-api.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0801](../tasks/AR-0801-terminal-interface.md) | [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0813](../tasks/AR-0813-remote-control-transport.md), [AR-0819](../tasks/AR-0819-ssh-remote-bootstrap.md), [AR-0821](../tasks/AR-0821-one-line-local-install.md), [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md), [AR-1017](../tasks/AR-1017-asb-tui-separate-repository.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) |
+| [AR-0804](../tasks/AR-0804-tui-settings-wizard.md) | [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-0314](../tasks/AR-0314-recording-source-choice.md), [AR-0803](../tasks/AR-0803-frontend-control-api.md) | [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0812](../tasks/AR-0812-modern-terminal-rendering.md), [AR-0817](../tasks/AR-0817-remote-tui-workflows.md), [AR-0819](../tasks/AR-0819-ssh-remote-bootstrap.md), [AR-0820](../tasks/AR-0820-verifiable-install-artifacts.md), [AR-0821](../tasks/AR-0821-one-line-local-install.md), [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md), [AR-1014](../tasks/AR-1014-tui-measurement-selection.md), [AR-1017](../tasks/AR-1017-asb-tui-separate-repository.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md) |
+| [AR-0805](../tasks/AR-0805-tui-run-control.md) | [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0803](../tasks/AR-0803-frontend-control-api.md), [AR-0804](../tasks/AR-0804-tui-settings-wizard.md) | [AR-0806](../tasks/AR-0806-tui-history-analysis.md), [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0812](../tasks/AR-0812-modern-terminal-rendering.md), [AR-0815](../tasks/AR-0815-remote-run-lifecycle.md), [AR-0817](../tasks/AR-0817-remote-tui-workflows.md), [AR-0821](../tasks/AR-0821-one-line-local-install.md), [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md), [AR-1014](../tasks/AR-1014-tui-measurement-selection.md), [AR-1017](../tasks/AR-1017-asb-tui-separate-repository.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md) |
+| [AR-0806](../tasks/AR-0806-tui-history-analysis.md) | [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0203](../tasks/AR-0203-statistical-analysis.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-1001](../tasks/AR-1001-experiment-comparability.md) | [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0812](../tasks/AR-0812-modern-terminal-rendering.md), [AR-0817](../tasks/AR-0817-remote-tui-workflows.md), [AR-0875](../tasks/AR-0875-control-history-analysis-contract.md), [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md), [AR-1017](../tasks/AR-1017-asb-tui-separate-repository.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md) |
+| [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md) | [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0806](../tasks/AR-0806-tui-history-analysis.md), [AR-0812](../tasks/AR-0812-modern-terminal-rendering.md), [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md), [AR-1170](../tasks/AR-1170.md) | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0823](../tasks/AR-0823-installation-qualification.md), [AR-0873](../tasks/AR-0873-ci-workflow-captures.md), [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-1012](../tasks/AR-1012-tui-quality-assurance.md) |
+| [AR-0808](../tasks/AR-0808-core-workflow-guides.md) | [AR-0314](../tasks/AR-0314-recording-source-choice.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-0801](../tasks/AR-0801-terminal-interface.md), [AR-0802](../tasks/AR-0802-executable-guides.md), [AR-0821](../tasks/AR-0821-one-line-local-install.md), [AR-0822](../tasks/AR-0822-install-upgrade-rollback.md), [AR-0872](../tasks/AR-0872-beginner-workflow-documentation.md), [AR-0873](../tasks/AR-0873-ci-workflow-captures.md), [AR-0874](../tasks/AR-0874-automatic-workflow-refresh.md), [AR-1140](../tasks/AR-1140.md), [AR-1151](../tasks/AR-1151.md) | [AR-0810](../tasks/AR-0810-github-pages-documentation.md), [AR-0811](../tasks/AR-0811-documentation-qualification.md) |
+| [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md) | [AR-0802](../tasks/AR-0802-executable-guides.md), [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0806](../tasks/AR-0806-tui-history-analysis.md), [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-0817](../tasks/AR-0817-remote-tui-workflows.md), [AR-0819](../tasks/AR-0819-ssh-remote-bootstrap.md), [AR-0821](../tasks/AR-0821-one-line-local-install.md), [AR-0822](../tasks/AR-0822-install-upgrade-rollback.md), [AR-0872](../tasks/AR-0872-beginner-workflow-documentation.md), [AR-0873](../tasks/AR-0873-ci-workflow-captures.md), [AR-0874](../tasks/AR-0874-automatic-workflow-refresh.md), [AR-1170](../tasks/AR-1170.md), [AR-1180](../tasks/AR-1180.md) | [AR-0810](../tasks/AR-0810-github-pages-documentation.md), [AR-0811](../tasks/AR-0811-documentation-qualification.md) |
+| [AR-0810](../tasks/AR-0810-github-pages-documentation.md) | [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md) | [AR-0811](../tasks/AR-0811-documentation-qualification.md) |
+| [AR-0811](../tasks/AR-0811-documentation-qualification.md) | [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0810](../tasks/AR-0810-github-pages-documentation.md) | [AR-0903](../tasks/AR-0903-release-qualification.md) |
+| [AR-0812](../tasks/AR-0812-modern-terminal-rendering.md) | [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0806](../tasks/AR-0806-tui-history-analysis.md) | [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-0820](../tasks/AR-0820-verifiable-install-artifacts.md), [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md) |
+| [AR-0813](../tasks/AR-0813-remote-control-transport.md) | [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-0803](../tasks/AR-0803-frontend-control-api.md), [AR-0902](../tasks/AR-0902-fault-assurance.md) | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md), [AR-0818](../tasks/AR-0818-remote-control-security-audit.md), [AR-1288](../tasks/AR-1288-certificate-chain-authz.md) |
+| [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md) | [AR-0813](../tasks/AR-0813-remote-control-transport.md) | [AR-0815](../tasks/AR-0815-remote-run-lifecycle.md), [AR-0818](../tasks/AR-0818-remote-control-security-audit.md) |
+| [AR-0815](../tasks/AR-0815-remote-run-lifecycle.md) | [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md), [AR-0819](../tasks/AR-0819-ssh-remote-bootstrap.md) | [AR-0816](../tasks/AR-0816-cross-platform-remote-interoperability.md), [AR-0817](../tasks/AR-0817-remote-tui-workflows.md), [AR-0818](../tasks/AR-0818-remote-control-security-audit.md) |
+| [AR-0816](../tasks/AR-0816-cross-platform-remote-interoperability.md) | [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-0815](../tasks/AR-0815-remote-run-lifecycle.md), [AR-0819](../tasks/AR-0819-ssh-remote-bootstrap.md) | [AR-0817](../tasks/AR-0817-remote-tui-workflows.md), [AR-0818](../tasks/AR-0818-remote-control-security-audit.md) |
+| [AR-0817](../tasks/AR-0817-remote-tui-workflows.md) | [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0806](../tasks/AR-0806-tui-history-analysis.md), [AR-0815](../tasks/AR-0815-remote-run-lifecycle.md), [AR-0816](../tasks/AR-0816-cross-platform-remote-interoperability.md), [AR-0819](../tasks/AR-0819-ssh-remote-bootstrap.md) | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0818](../tasks/AR-0818-remote-control-security-audit.md) |
+| [AR-0818](../tasks/AR-0818-remote-control-security-audit.md) | [AR-0813](../tasks/AR-0813-remote-control-transport.md), [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md), [AR-0815](../tasks/AR-0815-remote-run-lifecycle.md), [AR-0816](../tasks/AR-0816-cross-platform-remote-interoperability.md), [AR-0817](../tasks/AR-0817-remote-tui-workflows.md), [AR-0819](../tasks/AR-0819-ssh-remote-bootstrap.md) | [AR-0903](../tasks/AR-0903-release-qualification.md) |
+| [AR-0819](../tasks/AR-0819-ssh-remote-bootstrap.md) | [AR-0803](../tasks/AR-0803-frontend-control-api.md), [AR-0804](../tasks/AR-0804-tui-settings-wizard.md) | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0815](../tasks/AR-0815-remote-run-lifecycle.md), [AR-0816](../tasks/AR-0816-cross-platform-remote-interoperability.md), [AR-0817](../tasks/AR-0817-remote-tui-workflows.md), [AR-0818](../tasks/AR-0818-remote-control-security-audit.md) |
+| [AR-0820](../tasks/AR-0820-verifiable-install-artifacts.md) | [AR-0701](../tasks/AR-0701-platform-manifests.md), [AR-0801](../tasks/AR-0801-terminal-interface.md), [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0812](../tasks/AR-0812-modern-terminal-rendering.md) | [AR-0821](../tasks/AR-0821-one-line-local-install.md), [AR-0822](../tasks/AR-0822-install-upgrade-rollback.md), [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md) |
+| [AR-0821](../tasks/AR-0821-one-line-local-install.md) | [AR-0803](../tasks/AR-0803-frontend-control-api.md), [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0820](../tasks/AR-0820-verifiable-install-artifacts.md) | [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0822](../tasks/AR-0822-install-upgrade-rollback.md), [AR-0823](../tasks/AR-0823-installation-qualification.md), [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md), [AR-1441](../tasks/AR-1441-first-class-install-bootstrap.md) |
+| [AR-0822](../tasks/AR-0822-install-upgrade-rollback.md) | [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0820](../tasks/AR-0820-verifiable-install-artifacts.md), [AR-0821](../tasks/AR-0821-one-line-local-install.md) | [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0823](../tasks/AR-0823-installation-qualification.md), [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md), [AR-1441](../tasks/AR-1441-first-class-install-bootstrap.md) |
+| [AR-0823](../tasks/AR-0823-installation-qualification.md) | [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-0821](../tasks/AR-0821-one-line-local-install.md), [AR-0822](../tasks/AR-0822-install-upgrade-rollback.md), [AR-1012](../tasks/AR-1012-tui-quality-assurance.md), [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md), [AR-1140](../tasks/AR-1140.md), [AR-1170](../tasks/AR-1170.md) | [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-1027](../tasks/AR-1027-asb-tui-verified-release.md) |
+| [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md) | [AR-0002](../tasks/AR-0002-coordination-assurance.md), [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md) | [AR-0831](../tasks/AR-0831-aiws-workflow-routing.md), [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md), [AR-0833](../tasks/AR-0833-aiws-runner-reboot-lifecycle.md), [AR-0834](../tasks/AR-0834-handoffctl-lint-regression.md), [AR-0835](../tasks/AR-0835-runner-privacy-guard-remediation.md), [AR-0836](../tasks/AR-0836-runner-isolation-hardening.md), [AR-1438](../tasks/AR-1438-hardened-trusted-runner-validation.md) |
+| [AR-0831](../tasks/AR-0831-aiws-workflow-routing.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md) | [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md), [AR-0835](../tasks/AR-0835-runner-privacy-guard-remediation.md), [AR-0836](../tasks/AR-0836-runner-isolation-hardening.md), [AR-0845](../tasks/AR-0845-ci-artifact-quota-resilience.md) |
+| [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md) | [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md), [AR-0831](../tasks/AR-0831-aiws-workflow-routing.md) | [AR-0833](../tasks/AR-0833-aiws-runner-reboot-lifecycle.md) |
+| [AR-0833](../tasks/AR-0833-aiws-runner-reboot-lifecycle.md) | [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md), [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md) | None |
+| [AR-0834](../tasks/AR-0834-handoffctl-lint-regression.md) | [AR-0002](../tasks/AR-0002-coordination-assurance.md), [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md) | None |
+| [AR-0835](../tasks/AR-0835-runner-privacy-guard-remediation.md) | [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md), [AR-0831](../tasks/AR-0831-aiws-workflow-routing.md) | [AR-0837](../tasks/AR-0837-containerized-runner-boundary.md) |
+| [AR-0836](../tasks/AR-0836-runner-isolation-hardening.md) | [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md), [AR-0831](../tasks/AR-0831-aiws-workflow-routing.md) | [AR-0837](../tasks/AR-0837-containerized-runner-boundary.md) |
+| [AR-0837](../tasks/AR-0837-containerized-runner-boundary.md) | [AR-0835](../tasks/AR-0835-runner-privacy-guard-remediation.md), [AR-0836](../tasks/AR-0836-runner-isolation-hardening.md) | None |
+| [AR-0840](../tasks/AR-0840-frontend-protocol-contract.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0801](../tasks/AR-0801-terminal-interface.md) | [AR-0841](../tasks/AR-0841-frontend-local-transport.md), [AR-0842](../tasks/AR-0842-frontend-run-lifecycle.md), [AR-0843](../tasks/AR-0843-frontend-privacy-assurance.md), [AR-0844](../tasks/AR-0844-frontend-api-integration.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) |
+| [AR-0841](../tasks/AR-0841-frontend-local-transport.md) | [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0840](../tasks/AR-0840-frontend-protocol-contract.md) | [AR-0842](../tasks/AR-0842-frontend-run-lifecycle.md), [AR-0843](../tasks/AR-0843-frontend-privacy-assurance.md), [AR-0844](../tasks/AR-0844-frontend-api-integration.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) |
+| [AR-0842](../tasks/AR-0842-frontend-run-lifecycle.md) | [AR-0801](../tasks/AR-0801-terminal-interface.md), [AR-0840](../tasks/AR-0840-frontend-protocol-contract.md), [AR-0841](../tasks/AR-0841-frontend-local-transport.md) | [AR-0844](../tasks/AR-0844-frontend-api-integration.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) |
+| [AR-0843](../tasks/AR-0843-frontend-privacy-assurance.md) | [AR-0840](../tasks/AR-0840-frontend-protocol-contract.md), [AR-0841](../tasks/AR-0841-frontend-local-transport.md) | [AR-0844](../tasks/AR-0844-frontend-api-integration.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) |
+| [AR-0844](../tasks/AR-0844-frontend-api-integration.md) | [AR-0840](../tasks/AR-0840-frontend-protocol-contract.md), [AR-0841](../tasks/AR-0841-frontend-local-transport.md), [AR-0842](../tasks/AR-0842-frontend-run-lifecycle.md), [AR-0843](../tasks/AR-0843-frontend-privacy-assurance.md) | [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) |
+| [AR-0845](../tasks/AR-0845-ci-artifact-quota-resilience.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0831](../tasks/AR-0831-aiws-workflow-routing.md) | [AR-0846](../tasks/AR-0846-artifact-retention-cleanup.md) |
+| [AR-0846](../tasks/AR-0846-artifact-retention-cleanup.md) | [AR-0845](../tasks/AR-0845-ci-artifact-quota-resilience.md), [AR-0903](../tasks/AR-0903-release-qualification.md) | None |
+| [AR-0847](../tasks/AR-0847-frontend-control-api-repair.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0801](../tasks/AR-0801-terminal-interface.md) | None |
+| [AR-0848](../tasks/AR-0848-native-x86-capacity.md) | [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0201](../tasks/AR-0201-portable-metrics.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0701](../tasks/AR-0701-platform-manifests.md) | [AR-0907](../tasks/AR-0907-hosted-runner-evidence-classification.md) |
+| [AR-0849](../tasks/AR-0849-ar0801-documentation-repair.md) | [AR-0004](../tasks/AR-0004-ar-status-document.md), [AR-0801](../tasks/AR-0801-terminal-interface.md) | None |
+| [AR-0850](../tasks/AR-0850-aider-deterministic-replay.md) | [AR-0303](../tasks/AR-0303-agent-aider.md), [AR-0508](../tasks/AR-0508-replay-aider.md) | None |
+| [AR-0851](../tasks/AR-0851-shared-workflow-coordinator.md) | None | [AR-1017](../tasks/AR-1017-asb-tui-separate-repository.md) |
+| [AR-0852](../tasks/AR-0852-coordinator-path-isolation.md) | None | None |
+| [AR-0853](../tasks/AR-0853-coordinator-merge-attestation.md) | None | None |
+| [AR-0854](../tasks/AR-0854-coordinator-v020-upgrade.md) | None | None |
+| [AR-0855](../tasks/AR-0855-huawei-mit-license-headers.md) | [AR-0003](../tasks/AR-0003-quality-gates.md) | [AR-0857](../tasks/AR-0857-openjiuwen-provenance.md), [AR-0863](../tasks/AR-0863-workbuddy-provenance.md) |
+| [AR-0856](../tasks/AR-0856-agent-openjiuwen-workbuddy.md) | [AR-0862](../tasks/AR-0862-openjiuwen-qualification.md), [AR-0868](../tasks/AR-0868-workbuddy-qualification.md) | None |
+| [AR-0857](../tasks/AR-0857-openjiuwen-provenance.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0310](../tasks/AR-0310-provider-profile-contract.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0317](../tasks/AR-0317-runtime-bundle-manifest.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0855](../tasks/AR-0855-huawei-mit-license-headers.md) | [AR-0858](../tasks/AR-0858-openjiuwen-adapter.md), [AR-0880](../tasks/AR-0880-openjiuwen-runtime-closure.md) |
+| [AR-0858](../tasks/AR-0858-openjiuwen-adapter.md) | [AR-0857](../tasks/AR-0857-openjiuwen-provenance.md) | [AR-0859](../tasks/AR-0859-openjiuwen-live.md) |
+| [AR-0859](../tasks/AR-0859-openjiuwen-live.md) | [AR-0858](../tasks/AR-0858-openjiuwen-adapter.md) | [AR-0860](../tasks/AR-0860-openjiuwen-replay.md) |
+| [AR-0860](../tasks/AR-0860-openjiuwen-replay.md) | [AR-0859](../tasks/AR-0859-openjiuwen-live.md) | [AR-0861](../tasks/AR-0861-openjiuwen-parity.md) |
+| [AR-0861](../tasks/AR-0861-openjiuwen-parity.md) | [AR-0860](../tasks/AR-0860-openjiuwen-replay.md) | [AR-0862](../tasks/AR-0862-openjiuwen-qualification.md) |
+| [AR-0862](../tasks/AR-0862-openjiuwen-qualification.md) | [AR-0861](../tasks/AR-0861-openjiuwen-parity.md) | [AR-0856](../tasks/AR-0856-agent-openjiuwen-workbuddy.md) |
+| [AR-0863](../tasks/AR-0863-workbuddy-provenance.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0310](../tasks/AR-0310-provider-profile-contract.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0317](../tasks/AR-0317-runtime-bundle-manifest.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0855](../tasks/AR-0855-huawei-mit-license-headers.md) | [AR-0864](../tasks/AR-0864-workbuddy-adapter.md) |
+| [AR-0864](../tasks/AR-0864-workbuddy-adapter.md) | [AR-0863](../tasks/AR-0863-workbuddy-provenance.md) | [AR-0865](../tasks/AR-0865-workbuddy-live.md) |
+| [AR-0865](../tasks/AR-0865-workbuddy-live.md) | [AR-0864](../tasks/AR-0864-workbuddy-adapter.md) | [AR-0866](../tasks/AR-0866-workbuddy-replay.md) |
+| [AR-0866](../tasks/AR-0866-workbuddy-replay.md) | [AR-0865](../tasks/AR-0865-workbuddy-live.md) | [AR-0867](../tasks/AR-0867-workbuddy-parity.md) |
+| [AR-0867](../tasks/AR-0867-workbuddy-parity.md) | [AR-0866](../tasks/AR-0866-workbuddy-replay.md) | [AR-0868](../tasks/AR-0868-workbuddy-qualification.md) |
+| [AR-0868](../tasks/AR-0868-workbuddy-qualification.md) | [AR-0867](../tasks/AR-0867-workbuddy-parity.md) | [AR-0856](../tasks/AR-0856-agent-openjiuwen-workbuddy.md) |
+| [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md) | [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-0318](../tasks/AR-0318-credential-reference-boundary.md), [AR-0320](../tasks/AR-0320-provider-credential-integration.md), [AR-0801](../tasks/AR-0801-terminal-interface.md) | [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-0872](../tasks/AR-0872-beginner-workflow-documentation.md), [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md), [AR-0893](../tasks/AR-0893-cli-local-llm-setup.md) |
+| [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md) | [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0844](../tasks/AR-0844-frontend-api-integration.md), [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md) | [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-0872](../tasks/AR-0872-beginner-workflow-documentation.md), [AR-0894](../tasks/AR-0894-tui-local-llm-parity.md), [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md) |
+| [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md) | [AR-0314](../tasks/AR-0314-recording-source-choice.md), [AR-0502](../tasks/AR-0502-replay-cassettes.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md), [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md) | [AR-0872](../tasks/AR-0872-beginner-workflow-documentation.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md), [AR-0893](../tasks/AR-0893-cli-local-llm-setup.md), [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md), [AR-1150](../tasks/AR-1150.md) |
+| [AR-0872](../tasks/AR-0872-beginner-workflow-documentation.md) | [AR-0802](../tasks/AR-0802-executable-guides.md), [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md), [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md) | [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0873](../tasks/AR-0873-ci-workflow-captures.md), [AR-0893](../tasks/AR-0893-cli-local-llm-setup.md), [AR-1028](../tasks/AR-1028-asb-cli-workflow-captures.md) |
+| [AR-0873](../tasks/AR-0873-ci-workflow-captures.md) | [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-0872](../tasks/AR-0872-beginner-workflow-documentation.md), [AR-1170](../tasks/AR-1170.md) | [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0874](../tasks/AR-0874-automatic-workflow-refresh.md), [AR-0894](../tasks/AR-0894-tui-local-llm-parity.md), [AR-1012](../tasks/AR-1012-tui-quality-assurance.md) |
+| [AR-0874](../tasks/AR-0874-automatic-workflow-refresh.md) | [AR-0873](../tasks/AR-0873-ci-workflow-captures.md) | [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md) |
+| [AR-0875](../tasks/AR-0875-control-history-analysis-contract.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0806](../tasks/AR-0806-tui-history-analysis.md), [AR-1001](../tasks/AR-1001-experiment-comparability.md) | [AR-0908](../tasks/AR-0908-control-state-lock-test-isolation.md), [AR-1031](../tasks/AR-1031-asb-tui-landing-screen.md), [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md) |
+| [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md) | [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-0316](../tasks/AR-0316-agent-runtime-bundles.md), [AR-0317](../tasks/AR-0317-runtime-bundle-manifest.md), [AR-0318](../tasks/AR-0318-credential-reference-boundary.md), [AR-0319](../tasks/AR-0319-credential-fd-helper-resolvers.md), [AR-0320](../tasks/AR-0320-provider-credential-integration.md), [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md) | [AR-1130](../tasks/AR-1130.md) |
+| [AR-0877](../tasks/AR-0877-formal-tla-artifact-availability.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0901](../tasks/AR-0901-formal-assurance.md), [AR-0902](../tasks/AR-0902-fault-assurance.md), [AR-0906](../tasks/AR-0906-portable-oci-build-image-identity.md) | [AR-1021](../tasks/AR-1021-asb-tui-release-promotion.md) |
+| [AR-0878](../tasks/AR-0878-tla-source-build-provenance.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0901](../tasks/AR-0901-formal-assurance.md), [AR-0902](../tasks/AR-0902-fault-assurance.md) | [AR-0906](../tasks/AR-0906-portable-oci-build-image-identity.md) |
+| [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md) | [AR-0312](../tasks/AR-0312-provider-ollama.md), [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0501](../tasks/AR-0501-replay-evaluation.md), [AR-0502](../tasks/AR-0502-replay-cassettes.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md) | [AR-0888](../tasks/AR-0888-llm-double-conformance-spike.md), [AR-0891](../tasks/AR-0891-local-inference-provider-profiles.md) |
+| [AR-0880](../tasks/AR-0880-openjiuwen-runtime-closure.md) | [AR-0857](../tasks/AR-0857-openjiuwen-provenance.md) | None |
+| [AR-0888](../tasks/AR-0888-llm-double-conformance-spike.md) | [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md) | [AR-0889](../tasks/AR-0889-llm-fixture-scenario-contract.md), [AR-0890](../tasks/AR-0890-deterministic-llm-double-ci.md), [AR-0896](../tasks/AR-0896-mockagents-executable-qualification.md), [AR-1249](../tasks/AR-1249-mockagents-qualification-evidence.md), [AR-1250](../tasks/AR-1250-mockagents-harness-extension.md), [AR-1251](../tasks/AR-1251-mockagents-transport-sandbox.md) |
+| [AR-0889](../tasks/AR-0889-llm-fixture-scenario-contract.md) | [AR-0888](../tasks/AR-0888-llm-double-conformance-spike.md) | [AR-0890](../tasks/AR-0890-deterministic-llm-double-ci.md), [AR-0896](../tasks/AR-0896-mockagents-executable-qualification.md), [AR-1249](../tasks/AR-1249-mockagents-qualification-evidence.md), [AR-1250](../tasks/AR-1250-mockagents-harness-extension.md), [AR-1251](../tasks/AR-1251-mockagents-transport-sandbox.md) |
+| [AR-0890](../tasks/AR-0890-deterministic-llm-double-ci.md) | [AR-0888](../tasks/AR-0888-llm-double-conformance-spike.md), [AR-0889](../tasks/AR-0889-llm-fixture-scenario-contract.md) | [AR-0892](../tasks/AR-0892-llm-mode-comparative-evidence.md), [AR-0893](../tasks/AR-0893-cli-local-llm-setup.md) |
+| [AR-0891](../tasks/AR-0891-local-inference-provider-profiles.md) | [AR-0312](../tasks/AR-0312-provider-ollama.md), [AR-0313](../tasks/AR-0313-all-agents-provider.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md) | [AR-0892](../tasks/AR-0892-llm-mode-comparative-evidence.md), [AR-0893](../tasks/AR-0893-cli-local-llm-setup.md) |
+| [AR-0892](../tasks/AR-0892-llm-mode-comparative-evidence.md) | [AR-0890](../tasks/AR-0890-deterministic-llm-double-ci.md), [AR-0891](../tasks/AR-0891-local-inference-provider-profiles.md) | [AR-0893](../tasks/AR-0893-cli-local-llm-setup.md) |
+| [AR-0893](../tasks/AR-0893-cli-local-llm-setup.md) | [AR-0869](../tasks/AR-0869-cli-multi-agent-provider-selection.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-0872](../tasks/AR-0872-beginner-workflow-documentation.md), [AR-0890](../tasks/AR-0890-deterministic-llm-double-ci.md), [AR-0891](../tasks/AR-0891-local-inference-provider-profiles.md), [AR-0892](../tasks/AR-0892-llm-mode-comparative-evidence.md) | [AR-0894](../tasks/AR-0894-tui-local-llm-parity.md) |
+| [AR-0894](../tasks/AR-0894-tui-local-llm-parity.md) | [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-0873](../tasks/AR-0873-ci-workflow-captures.md), [AR-0893](../tasks/AR-0893-cli-local-llm-setup.md) | None |
+| [AR-0895](../tasks/AR-0895-verify-coordination-content.md) | [AR-0002](../tasks/AR-0002-coordination-assurance.md), [AR-0003](../tasks/AR-0003-quality-gates.md) | None |
+| [AR-0896](../tasks/AR-0896-mockagents-executable-qualification.md) | [AR-0888](../tasks/AR-0888-llm-double-conformance-spike.md), [AR-0889](../tasks/AR-0889-llm-fixture-scenario-contract.md) | None |
+| [AR-0897](../tasks/AR-0897-main-merge-integrity.md) | [AR-0003](../tasks/AR-0003-quality-gates.md) | [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md), [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-1242](../tasks/AR-1242-protected-main-admission.md), [AR-1264](../tasks/AR-1264-pr205-merge-integrity.md) |
+| [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0897](../tasks/AR-0897-main-merge-integrity.md), [AR-1008](../tasks/AR-1008.md) | [AR-0899](../tasks/AR-0899-gitleaks-revision-config-integrity.md), [AR-0903](../tasks/AR-0903-release-qualification.md) |
+| [AR-0899](../tasks/AR-0899-gitleaks-revision-config-integrity.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md) | [AR-0903](../tasks/AR-0903-release-qualification.md) |
+| [AR-0901](../tasks/AR-0901-formal-assurance.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0203](../tasks/AR-0203-statistical-analysis.md), [AR-0502](../tasks/AR-0502-replay-cassettes.md) | [AR-0877](../tasks/AR-0877-formal-tla-artifact-availability.md), [AR-0878](../tasks/AR-0878-tla-source-build-provenance.md), [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-0906](../tasks/AR-0906-portable-oci-build-image-identity.md) |
+| [AR-0902](../tasks/AR-0902-fault-assurance.md) | [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0503](../tasks/AR-0503-strict-replay.md) | [AR-0813](../tasks/AR-0813-remote-control-transport.md), [AR-0877](../tasks/AR-0877-formal-tla-artifact-availability.md), [AR-0878](../tasks/AR-0878-tla-source-build-provenance.md), [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-0906](../tasks/AR-0906-portable-oci-build-image-identity.md), [AR-0909](../tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md) |
+| [AR-0903](../tasks/AR-0903-release-qualification.md) | [AR-0002](../tasks/AR-0002-coordination-assurance.md), [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-0802](../tasks/AR-0802-executable-guides.md), [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-0811](../tasks/AR-0811-documentation-qualification.md), [AR-0818](../tasks/AR-0818-remote-control-security-audit.md), [AR-0823](../tasks/AR-0823-installation-qualification.md), [AR-0897](../tasks/AR-0897-main-merge-integrity.md), [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md), [AR-0899](../tasks/AR-0899-gitleaks-revision-config-integrity.md), [AR-0901](../tasks/AR-0901-formal-assurance.md), [AR-0902](../tasks/AR-0902-fault-assurance.md), [AR-1012](../tasks/AR-1012-tui-quality-assurance.md), [AR-1029](../tasks/AR-1029-remove-legacy-in-tree-tui.md) | [AR-0846](../tasks/AR-0846-artifact-retention-cleanup.md), [AR-1027](../tasks/AR-1027-asb-tui-verified-release.md) |
+| [AR-0904](../tasks/AR-0904-contract-consistency.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-1001](../tasks/AR-1001-experiment-comparability.md) | [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) |
+| [AR-0905](../tasks/AR-0905-recovery-models.md) | [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0503](../tasks/AR-0503-strict-replay.md) | None |
+| [AR-0906](../tasks/AR-0906-portable-oci-build-image-identity.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0878](../tasks/AR-0878-tla-source-build-provenance.md), [AR-0901](../tasks/AR-0901-formal-assurance.md), [AR-0902](../tasks/AR-0902-fault-assurance.md) | [AR-0877](../tasks/AR-0877-formal-tla-artifact-availability.md), [AR-1021](../tasks/AR-1021-asb-tui-release-promotion.md) |
+| [AR-0907](../tasks/AR-0907-hosted-runner-evidence-classification.md) | [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-0848](../tasks/AR-0848-native-x86-capacity.md) | [AR-1303](../tasks/AR-1303-hosted-platform-diagnostics.md) |
+| [AR-0908](../tasks/AR-0908-control-state-lock-test-isolation.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0875](../tasks/AR-0875-control-history-analysis-contract.md) | None |
+| [AR-0909](../tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0308](../tasks/AR-0308-agent-mini-swe.md), [AR-0902](../tasks/AR-0902-fault-assurance.md) | None |
+| [AR-1001](../tasks/AR-1001-experiment-comparability.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0203](../tasks/AR-0203-statistical-analysis.md) | [AR-0310](../tasks/AR-0310-provider-profile-contract.md), [AR-0806](../tasks/AR-0806-tui-history-analysis.md), [AR-0875](../tasks/AR-0875-control-history-analysis-contract.md), [AR-0904](../tasks/AR-0904-contract-consistency.md), [AR-1006](../tasks/AR-1006-distributed-workers.md), [AR-1007](../tasks/AR-1007-benchmark-validity.md), [AR-1013](../tasks/AR-1013-measurement-catalog-semantics.md) |
+| [AR-1002](../tasks/AR-1002-verifier-integrity.md) | [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md) | [AR-0405](../tasks/AR-0405-performance-workloads.md), [AR-1016](../tasks/AR-1016-measurement-integration-audit.md) |
+| [AR-1003](../tasks/AR-1003-execution-budgets.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0301](../tasks/AR-0301-agent-opencode.md), [AR-0302](../tasks/AR-0302-agent-opendesk.md), [AR-0303](../tasks/AR-0303-agent-aider.md), [AR-0304](../tasks/AR-0304-agent-codex.md) | None |
+| [AR-1004](../tasks/AR-1004-reliability-fairness.md) | [AR-0203](../tasks/AR-0203-statistical-analysis.md), [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md) | None |
+| [AR-1005](../tasks/AR-1005-trace-interoperability.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0502](../tasks/AR-0502-replay-cassettes.md) | None |
+| [AR-1006](../tasks/AR-1006-distributed-workers.md) | [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-1001](../tasks/AR-1001-experiment-comparability.md) | None |
+| [AR-1007](../tasks/AR-1007-benchmark-validity.md) | [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0701](../tasks/AR-0701-platform-manifests.md), [AR-1001](../tasks/AR-1001-experiment-comparability.md) | [AR-0405](../tasks/AR-0405-performance-workloads.md), [AR-0406](../tasks/AR-0406-evolving-workloads.md), [AR-1016](../tasks/AR-1016-measurement-integration-audit.md), [AR-1394](../tasks/AR-1394-literature-workload-registry.md) |
+| [AR-1008](../tasks/AR-1008.md) | None | [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md) |
+| [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md) | [AR-0803](../tasks/AR-0803-frontend-control-api.md), [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0806](../tasks/AR-0806-tui-history-analysis.md), [AR-1030](../tasks/AR-1030-ratatui-dependency-closure.md), [AR-1052](../tasks/AR-1052-tmux-server-authority-portability.md), [AR-1054](../tasks/AR-1054-tmux-socket-connect-completion.md), [AR-1056](../tasks/AR-1056-tmux-socket-connect-diagnostics.md), [AR-1058](../tasks/AR-1058-tmux-startup-observation-diagnostics.md), [AR-1061](../tasks/AR-1061-isolate-concurrent-tmux-fixtures.md), [AR-1062](../tasks/AR-1062-diagnose-nested-tmux-server-connect.md) | [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1012](../tasks/AR-1012-tui-quality-assurance.md), [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md), [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md) |
+| [AR-1011](../tasks/AR-1011-tui-ux-quality.md) | [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md), [AR-1014](../tasks/AR-1014-tui-measurement-selection.md), [AR-1031](../tasks/AR-1031-asb-tui-landing-screen.md), [AR-1032](../tasks/AR-1032-asb-tui-contextual-help.md), [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md), [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md), [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md), [AR-1170](../tasks/AR-1170.md) | [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-1012](../tasks/AR-1012-tui-quality-assurance.md), [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md) |
+| [AR-1012](../tasks/AR-1012-tui-quality-assurance.md) | [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-0873](../tasks/AR-0873-ci-workflow-captures.md), [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md), [AR-1011](../tasks/AR-1011-tui-ux-quality.md) | [AR-0823](../tasks/AR-0823-installation-qualification.md), [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-1027](../tasks/AR-1027-asb-tui-verified-release.md) |
+| [AR-1013](../tasks/AR-1013-measurement-catalog-semantics.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-1001](../tasks/AR-1001-experiment-comparability.md) | [AR-1014](../tasks/AR-1014-tui-measurement-selection.md), [AR-1015](../tasks/AR-1015-csb-measurement-adapter.md), [AR-1036](../tasks/AR-1036-measurement-catalog-control.md) |
+| [AR-1014](../tasks/AR-1014-tui-measurement-selection.md) | [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-1013](../tasks/AR-1013-measurement-catalog-semantics.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md), [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md), [AR-1036](../tasks/AR-1036-measurement-catalog-control.md), [AR-1037](../tasks/AR-1037-measurement-selection-plan.md) | [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1016](../tasks/AR-1016-measurement-integration-audit.md), [AR-1032](../tasks/AR-1032-asb-tui-contextual-help.md), [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md) |
+| [AR-1015](../tasks/AR-1015-csb-measurement-adapter.md) | [AR-0601](../tasks/AR-0601-csb-integration.md), [AR-0602](../tasks/AR-0602-csb-monitoring-contention.md), [AR-0604](../tasks/AR-0604-csb-native-qualification.md), [AR-1013](../tasks/AR-1013-measurement-catalog-semantics.md) | [AR-1016](../tasks/AR-1016-measurement-integration-audit.md) |
+| [AR-1016](../tasks/AR-1016-measurement-integration-audit.md) | [AR-1002](../tasks/AR-1002-verifier-integrity.md), [AR-1007](../tasks/AR-1007-benchmark-validity.md), [AR-1014](../tasks/AR-1014-tui-measurement-selection.md), [AR-1015](../tasks/AR-1015-csb-measurement-adapter.md) | None |
+| [AR-1017](../tasks/AR-1017-asb-tui-separate-repository.md) | [AR-0803](../tasks/AR-0803-frontend-control-api.md), [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0806](../tasks/AR-0806-tui-history-analysis.md), [AR-0851](../tasks/AR-0851-shared-workflow-coordinator.md) | [AR-1018](../tasks/AR-1018-asb-tui-compatibility-detection.md), [AR-1019](../tasks/AR-1019-asb-tui-bundle-verification.md), [AR-1021](../tasks/AR-1021-asb-tui-release-promotion.md), [AR-1022](../tasks/AR-1022-asb-tui-release-contract-hardening.md), [AR-1030](../tasks/AR-1030-ratatui-dependency-closure.md) |
+| [AR-1018](../tasks/AR-1018-asb-tui-compatibility-detection.md) | [AR-1017](../tasks/AR-1017-asb-tui-separate-repository.md) | [AR-1019](../tasks/AR-1019-asb-tui-bundle-verification.md), [AR-1021](../tasks/AR-1021-asb-tui-release-promotion.md), [AR-1022](../tasks/AR-1022-asb-tui-release-contract-hardening.md), [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md), [AR-1498](../tasks/AR-1498-authenticated-lifecycle-executor.md) |
+| [AR-1019](../tasks/AR-1019-asb-tui-bundle-verification.md) | [AR-1017](../tasks/AR-1017-asb-tui-separate-repository.md), [AR-1018](../tasks/AR-1018-asb-tui-compatibility-detection.md) | [AR-1020](../tasks/AR-1020-asb-tui-install-selftest.md), [AR-1021](../tasks/AR-1021-asb-tui-release-promotion.md), [AR-1022](../tasks/AR-1022-asb-tui-release-contract-hardening.md), [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md), [AR-1498](../tasks/AR-1498-authenticated-lifecycle-executor.md) |
+| [AR-1020](../tasks/AR-1020-asb-tui-install-selftest.md) | [AR-1019](../tasks/AR-1019-asb-tui-bundle-verification.md) | [AR-1021](../tasks/AR-1021-asb-tui-release-promotion.md), [AR-1022](../tasks/AR-1022-asb-tui-release-contract-hardening.md), [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md), [AR-1498](../tasks/AR-1498-authenticated-lifecycle-executor.md) |
+| [AR-1021](../tasks/AR-1021-asb-tui-release-promotion.md) | [AR-0877](../tasks/AR-0877-formal-tla-artifact-availability.md), [AR-0906](../tasks/AR-0906-portable-oci-build-image-identity.md), [AR-1017](../tasks/AR-1017-asb-tui-separate-repository.md), [AR-1018](../tasks/AR-1018-asb-tui-compatibility-detection.md), [AR-1019](../tasks/AR-1019-asb-tui-bundle-verification.md), [AR-1020](../tasks/AR-1020-asb-tui-install-selftest.md) | [AR-1022](../tasks/AR-1022-asb-tui-release-contract-hardening.md) |
+| [AR-1022](../tasks/AR-1022-asb-tui-release-contract-hardening.md) | [AR-1017](../tasks/AR-1017-asb-tui-separate-repository.md), [AR-1018](../tasks/AR-1018-asb-tui-compatibility-detection.md), [AR-1019](../tasks/AR-1019-asb-tui-bundle-verification.md), [AR-1020](../tasks/AR-1020-asb-tui-install-selftest.md), [AR-1021](../tasks/AR-1021-asb-tui-release-promotion.md) | [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md), [AR-1060](../tasks/AR-1060-authenticated-control-endpoint-handoff.md) |
+| [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) | [AR-0803](../tasks/AR-0803-frontend-control-api.md), [AR-0840](../tasks/AR-0840-frontend-protocol-contract.md), [AR-0841](../tasks/AR-0841-frontend-local-transport.md), [AR-0842](../tasks/AR-0842-frontend-run-lifecycle.md), [AR-0843](../tasks/AR-0843-frontend-privacy-assurance.md), [AR-0844](../tasks/AR-0844-frontend-api-integration.md), [AR-0904](../tasks/AR-0904-contract-consistency.md) | [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md), [AR-1036](../tasks/AR-1036-measurement-catalog-control.md), [AR-1038](../tasks/AR-1038-capability-coverage-sink.md), [AR-1060](../tasks/AR-1060-authenticated-control-endpoint-handoff.md) |
+| [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md) | [AR-0820](../tasks/AR-0820-verifiable-install-artifacts.md), [AR-0821](../tasks/AR-0821-one-line-local-install.md), [AR-0822](../tasks/AR-0822-install-upgrade-rollback.md), [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md), [AR-1022](../tasks/AR-1022-asb-tui-release-contract-hardening.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md), [AR-1037](../tasks/AR-1037-measurement-selection-plan.md), [AR-1060](../tasks/AR-1060-authenticated-control-endpoint-handoff.md) | [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md), [AR-1029](../tasks/AR-1029-remove-legacy-in-tree-tui.md) |
+| [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md) | [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0806](../tasks/AR-0806-tui-history-analysis.md), [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md), [AR-1022](../tasks/AR-1022-asb-tui-release-contract-hardening.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md), [AR-1037](../tasks/AR-1037-measurement-selection-plan.md), [AR-1060](../tasks/AR-1060-authenticated-control-endpoint-handoff.md) | [AR-1014](../tasks/AR-1014-tui-measurement-selection.md), [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md), [AR-1029](../tasks/AR-1029-remove-legacy-in-tree-tui.md), [AR-1031](../tasks/AR-1031-asb-tui-landing-screen.md), [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md), [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md), [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md) |
+| [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md) | [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md), [AR-1029](../tasks/AR-1029-remove-legacy-in-tree-tui.md), [AR-1170](../tasks/AR-1170.md) | [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-0823](../tasks/AR-0823-installation-qualification.md), [AR-1027](../tasks/AR-1027-asb-tui-verified-release.md), [AR-1180](../tasks/AR-1180.md) |
+| [AR-1027](../tasks/AR-1027-asb-tui-verified-release.md) | [AR-0823](../tasks/AR-0823-installation-qualification.md), [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-1012](../tasks/AR-1012-tui-quality-assurance.md), [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md) | None |
+| [AR-1028](../tasks/AR-1028-asb-cli-workflow-captures.md) | [AR-0872](../tasks/AR-0872-beginner-workflow-documentation.md) | None |
+| [AR-1029](../tasks/AR-1029-remove-legacy-in-tree-tui.md) | [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md) | [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md) |
+| [AR-1030](../tasks/AR-1030-ratatui-dependency-closure.md) | [AR-1017](../tasks/AR-1017-asb-tui-separate-repository.md) | [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md) |
+| [AR-1031](../tasks/AR-1031-asb-tui-landing-screen.md) | [AR-0875](../tasks/AR-0875-control-history-analysis-contract.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md), [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md), [AR-1170](../tasks/AR-1170.md) | [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1032](../tasks/AR-1032-asb-tui-contextual-help.md) |
+| [AR-1032](../tasks/AR-1032-asb-tui-contextual-help.md) | [AR-1014](../tasks/AR-1014-tui-measurement-selection.md), [AR-1031](../tasks/AR-1031-asb-tui-landing-screen.md), [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md), [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md), [AR-1170](../tasks/AR-1170.md) | [AR-1011](../tasks/AR-1011-tui-ux-quality.md) |
+| [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md) | [AR-0812](../tasks/AR-0812-modern-terminal-rendering.md), [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md) | [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1014](../tasks/AR-1014-tui-measurement-selection.md), [AR-1031](../tasks/AR-1031-asb-tui-landing-screen.md), [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md), [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md) |
+| [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md) | [AR-1014](../tasks/AR-1014-tui-measurement-selection.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md), [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md), [AR-1160](../tasks/AR-1160.md) | [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1032](../tasks/AR-1032-asb-tui-contextual-help.md), [AR-1170](../tasks/AR-1170.md) |
+| [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md) | [AR-0875](../tasks/AR-0875-control-history-analysis-contract.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md), [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md), [AR-1170](../tasks/AR-1170.md) | [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1032](../tasks/AR-1032-asb-tui-contextual-help.md) |
+| [AR-1036](../tasks/AR-1036-measurement-catalog-control.md) | [AR-1013](../tasks/AR-1013-measurement-catalog-semantics.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) | [AR-1014](../tasks/AR-1014-tui-measurement-selection.md), [AR-1037](../tasks/AR-1037-measurement-selection-plan.md) |
+| [AR-1037](../tasks/AR-1037-measurement-selection-plan.md) | [AR-0104](../tasks/AR-0104-durable-results.md), [AR-1036](../tasks/AR-1036-measurement-catalog-control.md) | [AR-1014](../tasks/AR-1014-tui-measurement-selection.md), [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md) |
+| [AR-1038](../tasks/AR-1038-capability-coverage-sink.md) | [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) | None |
+| [AR-1039](../tasks/AR-1039-measurement-catalog-merge-attestation.md) | None | None |
+| [AR-1040](../tasks/AR-1040-protected-merge-signature-policy.md) | None | [AR-1043](../tasks/AR-1043-protected-topic-sync-topology.md) |
+| [AR-1041](../tasks/AR-1041-gemini-hook-readiness-race.md) | None | None |
+| [AR-1042](../tasks/AR-1042-tmux-alternate-screen-readiness.md) | None | None |
+| [AR-1043](../tasks/AR-1043-protected-topic-sync-topology.md) | [AR-1040](../tasks/AR-1040-protected-merge-signature-policy.md) | None |
+| [AR-1044](../tasks/AR-1044-tmux-pane-foreground-group-recovery.md) | None | None |
+| [AR-1045](../tasks/AR-1045-gemini-readiness-merge-attestation.md) | None | [AR-1051](../tasks/AR-1051-measurement-catalog-merge-attestation.md) |
+| [AR-1046](../tasks/AR-1046-serialize-emulated-aarch64-agent-tests.md) | None | None |
+| [AR-1047](../tasks/AR-1047-gemini-hook-marker-appearance-race.md) | None | None |
+| [AR-1048](../tasks/AR-1048-tmux-window-option-portability.md) | None | None |
+| [AR-1049](../tasks/AR-1049-tmux-created-window-identity.md) | None | None |
+| [AR-1050](../tasks/AR-1050-tmux-authenticated-startup-readiness.md) | None | None |
+| [AR-1051](../tasks/AR-1051-measurement-catalog-merge-attestation.md) | [AR-1045](../tasks/AR-1045-gemini-readiness-merge-attestation.md) | None |
+| [AR-1052](../tasks/AR-1052-tmux-server-authority-portability.md) | None | [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md) |
+| [AR-1053](../tasks/AR-1053-asb-tui-roadmap-hardening.md) | None | None |
+| [AR-1054](../tasks/AR-1054-tmux-socket-connect-completion.md) | None | [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md) |
+| [AR-1055](../tasks/AR-1055-asb-tui-install-integration-readiness.md) | None | None |
+| [AR-1056](../tasks/AR-1056-tmux-socket-connect-diagnostics.md) | None | [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md) |
+| [AR-1057](../tasks/AR-1057-asb-tui-control-v1-3-readiness.md) | None | None |
+| [AR-1058](../tasks/AR-1058-tmux-startup-observation-diagnostics.md) | [AR-1062](../tasks/AR-1062-diagnose-nested-tmux-server-connect.md) | [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md) |
+| [AR-1059](../tasks/AR-1059-asb-tui-lifecycle-router-publication-readiness.md) | None | None |
+| [AR-1060](../tasks/AR-1060-authenticated-control-endpoint-handoff.md) | [AR-1022](../tasks/AR-1022-asb-tui-release-contract-hardening.md), [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) | [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md), [AR-1025](../tasks/AR-1025-standalone-asb-tui-application.md), [AR-1160](../tasks/AR-1160.md), [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md), [AR-1310](../tasks/AR-1310-provider-capture-campaign.md) |
+| [AR-1061](../tasks/AR-1061-isolate-concurrent-tmux-fixtures.md) | [AR-1062](../tasks/AR-1062-diagnose-nested-tmux-server-connect.md) | [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md) |
+| [AR-1062](../tasks/AR-1062-diagnose-nested-tmux-server-connect.md) | None | [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md), [AR-1058](../tasks/AR-1058-tmux-startup-observation-diagnostics.md), [AR-1061](../tasks/AR-1061-isolate-concurrent-tmux-fixtures.md) |
+| [AR-1064](../tasks/AR-1064-tmux-hosted-startup-readiness-recovery.md) | None | None |
+| [AR-1065](../tasks/AR-1065-asb-tui-branch-policy-context.md) | None | None |
+| [AR-1100](../tasks/AR-1100.md) | [AR-0313](../tasks/AR-0313-all-agents-provider.md) | [AR-1120](../tasks/AR-1120.md), [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md), [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md), [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md), [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md), [AR-1234](../tasks/AR-1234-runtime-loopback-namespace.md), [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md) |
+| [AR-1110](../tasks/AR-1110.md) | [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-1120](../tasks/AR-1120.md) | [AR-1130](../tasks/AR-1130.md) |
+| [AR-1120](../tasks/AR-1120.md) | [AR-0320](../tasks/AR-0320-provider-credential-integration.md), [AR-1100](../tasks/AR-1100.md), [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md), [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) | [AR-1110](../tasks/AR-1110.md) |
+| [AR-1130](../tasks/AR-1130.md) | [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md), [AR-1110](../tasks/AR-1110.md) | [AR-1140](../tasks/AR-1140.md), [AR-1150](../tasks/AR-1150.md) |
+| [AR-1140](../tasks/AR-1140.md) | [AR-1130](../tasks/AR-1130.md) | [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0823](../tasks/AR-0823-installation-qualification.md), [AR-1180](../tasks/AR-1180.md) |
+| [AR-1150](../tasks/AR-1150.md) | [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-1130](../tasks/AR-1130.md) | [AR-1151](../tasks/AR-1151.md) |
+| [AR-1151](../tasks/AR-1151.md) | [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-1150](../tasks/AR-1150.md), [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md), [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md) | [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-1160](../tasks/AR-1160.md), [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md), [AR-1310](../tasks/AR-1310-provider-capture-campaign.md), [AR-1496](../tasks/AR-1496-runtime-owned-provider-capture-control.md) |
+| [AR-1160](../tasks/AR-1160.md) | [AR-1060](../tasks/AR-1060-authenticated-control-endpoint-handoff.md), [AR-1151](../tasks/AR-1151.md) | [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md), [AR-1170](../tasks/AR-1170.md), [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md) |
+| [AR-1170](../tasks/AR-1170.md) | [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md), [AR-1160](../tasks/AR-1160.md) | [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0823](../tasks/AR-0823-installation-qualification.md), [AR-0873](../tasks/AR-0873-ci-workflow-captures.md), [AR-1011](../tasks/AR-1011-tui-ux-quality.md), [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md), [AR-1031](../tasks/AR-1031-asb-tui-landing-screen.md), [AR-1032](../tasks/AR-1032-asb-tui-contextual-help.md), [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md), [AR-1180](../tasks/AR-1180.md) |
+| [AR-1180](../tasks/AR-1180.md) | [AR-1026](../tasks/AR-1026-asb-tui-cross-repository-integration.md), [AR-1140](../tasks/AR-1140.md), [AR-1170](../tasks/AR-1170.md) | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md) |
+| [AR-1181](../tasks/AR-1181.md) | None | None |
+| [AR-1190](../tasks/AR-1190.md) | None | [AR-1191](../tasks/AR-1191.md), [AR-1198](../tasks/AR-1198.md), [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md), [AR-1299](../tasks/AR-1299.md), [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md), [AR-1498](../tasks/AR-1498-authenticated-lifecycle-executor.md) |
+| [AR-1191](../tasks/AR-1191.md) | [AR-1190](../tasks/AR-1190.md) | [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md), [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md), [AR-1498](../tasks/AR-1498-authenticated-lifecycle-executor.md) |
+| [AR-1196](../tasks/AR-1196-protected-main-dco-repair.md) | None | None |
+| [AR-1197](../tasks/AR-1197-control-scratch-isolation-current-main.md) | None | None |
+| [AR-1198](../tasks/AR-1198.md) | [AR-1190](../tasks/AR-1190.md) | None |
+| [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md) | [AR-1018](../tasks/AR-1018-asb-tui-compatibility-detection.md), [AR-1019](../tasks/AR-1019-asb-tui-bundle-verification.md), [AR-1020](../tasks/AR-1020-asb-tui-install-selftest.md), [AR-1190](../tasks/AR-1190.md), [AR-1191](../tasks/AR-1191.md), [AR-1496](../tasks/AR-1496-runtime-owned-provider-capture-control.md), [AR-1498](../tasks/AR-1498-authenticated-lifecycle-executor.md) | None |
+| [AR-1200](../tasks/AR-1200-metrics-timeout-fixture-stability.md) | None | [AR-1226](../tasks/AR-1226-protected-merge-tree-remediation.md), [AR-1475](../tasks/AR-1475-asb-metrics-evidence-fixture-repair.md), [AR-1476](../tasks/AR-1476-workspace-coverage-floor-repair.md), [AR-1477](../tasks/AR-1477-authority-resolver-coverage-tests.md) |
+| [AR-1210](../tasks/AR-1210-tutorial-contract-validator.md) | None | [AR-1211](../tasks/AR-1211-initial-setup-first-agent.md), [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md) |
+| [AR-1211](../tasks/AR-1211-initial-setup-first-agent.md) | [AR-1210](../tasks/AR-1210-tutorial-contract-validator.md) | [AR-1212](../tasks/AR-1212-benchmark-readiness.md), [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md) |
+| [AR-1212](../tasks/AR-1212-benchmark-readiness.md) | [AR-1211](../tasks/AR-1211-initial-setup-first-agent.md) | [AR-1213](../tasks/AR-1213-benchmark-and-shared-config.md), [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md) |
+| [AR-1213](../tasks/AR-1213-benchmark-and-shared-config.md) | [AR-1212](../tasks/AR-1212-benchmark-readiness.md) | [AR-1214](../tasks/AR-1214-record-replay.md), [AR-1215](../tasks/AR-1215-result-comparison.md), [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md) |
+| [AR-1214](../tasks/AR-1214-record-replay.md) | [AR-1213](../tasks/AR-1213-benchmark-and-shared-config.md) | [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md) |
+| [AR-1215](../tasks/AR-1215-result-comparison.md) | [AR-1213](../tasks/AR-1213-benchmark-and-shared-config.md) | [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md) |
+| [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md) | [AR-1210](../tasks/AR-1210-tutorial-contract-validator.md), [AR-1211](../tasks/AR-1211-initial-setup-first-agent.md), [AR-1212](../tasks/AR-1212-benchmark-readiness.md), [AR-1213](../tasks/AR-1213-benchmark-and-shared-config.md), [AR-1214](../tasks/AR-1214-record-replay.md), [AR-1215](../tasks/AR-1215-result-comparison.md) | None |
+| [AR-1226](../tasks/AR-1226-protected-merge-tree-remediation.md) | [AR-1200](../tasks/AR-1200-metrics-timeout-fixture-stability.md) | [AR-1337](../tasks/AR-1337-protected-main-merge-tree-repair-openrouter.md) |
+| [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md) | [AR-1060](../tasks/AR-1060-authenticated-control-endpoint-handoff.md), [AR-1151](../tasks/AR-1151.md), [AR-1160](../tasks/AR-1160.md) | None |
+| [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md) | [AR-0319](../tasks/AR-0319-credential-fd-helper-resolvers.md), [AR-0320](../tasks/AR-0320-provider-credential-integration.md), [AR-1100](../tasks/AR-1100.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) | [AR-1120](../tasks/AR-1120.md), [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md) |
+| [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md) | [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) | [AR-1120](../tasks/AR-1120.md) |
+| [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) | [AR-0319](../tasks/AR-0319-credential-fd-helper-resolvers.md), [AR-0320](../tasks/AR-0320-provider-credential-integration.md), [AR-1100](../tasks/AR-1100.md) | [AR-1120](../tasks/AR-1120.md), [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md), [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md), [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md), [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md) |
+| [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md) | [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-1100](../tasks/AR-1100.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) | [AR-1151](../tasks/AR-1151.md), [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md), [AR-1234](../tasks/AR-1234-runtime-loopback-namespace.md), [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md) |
+| [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md) | [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-1100](../tasks/AR-1100.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md), [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md), [AR-1234](../tasks/AR-1234-runtime-loopback-namespace.md), [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md) | [AR-1151](../tasks/AR-1151.md), [AR-1244](../tasks/AR-1244-publish-replay-supervision.md), [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md) |
+| [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md) | [AR-1100](../tasks/AR-1100.md), [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md), [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md) | [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md), [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1257](../tasks/AR-1257-mockagents-qemu-image.md) |
+| [AR-1234](../tasks/AR-1234-runtime-loopback-namespace.md) | [AR-1100](../tasks/AR-1100.md), [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md), [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md) | [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md) |
+| [AR-1235](../tasks/AR-1235-goose-diagnostic-fixture-portability.md) | [AR-0003](../tasks/AR-0003-quality-gates.md) | None |
+| [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md) | [AR-1100](../tasks/AR-1100.md), [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md) | [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md), [AR-1234](../tasks/AR-1234-runtime-loopback-namespace.md), [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) |
+| [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md) | [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md), [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md) | [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md), [AR-1260](../tasks/AR-1260-runtime-owned-strict-replay-integration.md), [AR-1261](../tasks/AR-1261-runtime-to-cli-replay-entrypoint.md), [AR-1262](../tasks/AR-1262-runtime-owned-launch-authority.md), [AR-1265](../tasks/AR-1265-runtime-owned-replay-entrypoint.md), [AR-1266](../tasks/AR-1266-authenticated-replay-dispatch.md), [AR-1267](../tasks/AR-1267-runtime-replay-execution.md), [AR-1268](../tasks/AR-1268-replay-transport-boundary.md), [AR-1269](../tasks/AR-1269-runtime-replay-launch-factory.md), [AR-1270](../tasks/AR-1270-runtime-cassette-handle.md), [AR-1271](../tasks/AR-1271-cassette-operation-contract.md), [AR-1272](../tasks/AR-1272-authenticated-cassette-backend.md), [AR-1273](../tasks/AR-1273-complete-replay-context.md), [AR-1274](../tasks/AR-1274-runtime-cassette-executor-adapter.md), [AR-1275](../tasks/AR-1275-replay-operation-injection.md), [AR-1276](../tasks/AR-1276-primary-replay-runtime.md), [AR-1277](../tasks/AR-1277-runtime-cli-replay-transport.md), [AR-1278](../tasks/AR-1278-primary-runtime-client.md), [AR-1279](../tasks/AR-1279-end-to-end-replay-runtime.md), [AR-1280](../tasks/AR-1280-cross-crate-replay-entrypoint.md), [AR-1281](../tasks/AR-1281-supervised-cassette-lifecycle.md), [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md), [AR-1284](../tasks/AR-1284-runtime-strict-replay-lifecycle.md), [AR-1285](../tasks/AR-1285-runtime-launch-factory.md), [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md) |
+| [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md) | [AR-1100](../tasks/AR-1100.md), [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md) | [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md), [AR-1240](../tasks/AR-1240-native-signed-bundle-fixture.md), [AR-1260](../tasks/AR-1260-runtime-owned-strict-replay-integration.md), [AR-1261](../tasks/AR-1261-runtime-to-cli-replay-entrypoint.md), [AR-1262](../tasks/AR-1262-runtime-owned-launch-authority.md), [AR-1263](../tasks/AR-1263-sandbox-scope-classification-stability.md), [AR-1265](../tasks/AR-1265-runtime-owned-replay-entrypoint.md), [AR-1266](../tasks/AR-1266-authenticated-replay-dispatch.md), [AR-1267](../tasks/AR-1267-runtime-replay-execution.md), [AR-1268](../tasks/AR-1268-replay-transport-boundary.md), [AR-1269](../tasks/AR-1269-runtime-replay-launch-factory.md), [AR-1270](../tasks/AR-1270-runtime-cassette-handle.md), [AR-1271](../tasks/AR-1271-cassette-operation-contract.md), [AR-1272](../tasks/AR-1272-authenticated-cassette-backend.md), [AR-1273](../tasks/AR-1273-complete-replay-context.md), [AR-1274](../tasks/AR-1274-runtime-cassette-executor-adapter.md), [AR-1275](../tasks/AR-1275-replay-operation-injection.md), [AR-1276](../tasks/AR-1276-primary-replay-runtime.md), [AR-1277](../tasks/AR-1277-runtime-cli-replay-transport.md), [AR-1278](../tasks/AR-1278-primary-runtime-client.md), [AR-1279](../tasks/AR-1279-end-to-end-replay-runtime.md), [AR-1280](../tasks/AR-1280-cross-crate-replay-entrypoint.md), [AR-1281](../tasks/AR-1281-supervised-cassette-lifecycle.md), [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md), [AR-1284](../tasks/AR-1284-runtime-strict-replay-lifecycle.md), [AR-1285](../tasks/AR-1285-runtime-launch-factory.md), [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md) |
+| [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md) | [AR-1240](../tasks/AR-1240-native-signed-bundle-fixture.md), [AR-1243](../tasks/AR-1243-signed-bundle-assembly.md), [AR-1260](../tasks/AR-1260-runtime-owned-strict-replay-integration.md), [AR-1261](../tasks/AR-1261-runtime-to-cli-replay-entrypoint.md), [AR-1262](../tasks/AR-1262-runtime-owned-launch-authority.md), [AR-1265](../tasks/AR-1265-runtime-owned-replay-entrypoint.md), [AR-1266](../tasks/AR-1266-authenticated-replay-dispatch.md), [AR-1267](../tasks/AR-1267-runtime-replay-execution.md), [AR-1268](../tasks/AR-1268-replay-transport-boundary.md), [AR-1269](../tasks/AR-1269-runtime-replay-launch-factory.md), [AR-1270](../tasks/AR-1270-runtime-cassette-handle.md), [AR-1271](../tasks/AR-1271-cassette-operation-contract.md), [AR-1272](../tasks/AR-1272-authenticated-cassette-backend.md), [AR-1273](../tasks/AR-1273-complete-replay-context.md), [AR-1274](../tasks/AR-1274-runtime-cassette-executor-adapter.md), [AR-1275](../tasks/AR-1275-replay-operation-injection.md), [AR-1276](../tasks/AR-1276-primary-replay-runtime.md), [AR-1277](../tasks/AR-1277-runtime-cli-replay-transport.md), [AR-1278](../tasks/AR-1278-primary-runtime-client.md), [AR-1279](../tasks/AR-1279-end-to-end-replay-runtime.md), [AR-1280](../tasks/AR-1280-cross-crate-replay-entrypoint.md), [AR-1281](../tasks/AR-1281-supervised-cassette-lifecycle.md), [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md), [AR-1284](../tasks/AR-1284-runtime-strict-replay-lifecycle.md), [AR-1285](../tasks/AR-1285-runtime-launch-factory.md), [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md) |
+| [AR-1240](../tasks/AR-1240-native-signed-bundle-fixture.md) | [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | [AR-1241](../tasks/AR-1241-native-isolation-matrix.md), [AR-1243](../tasks/AR-1243-signed-bundle-assembly.md) |
+| [AR-1241](../tasks/AR-1241-native-isolation-matrix.md) | [AR-1240](../tasks/AR-1240-native-signed-bundle-fixture.md) | [AR-1243](../tasks/AR-1243-signed-bundle-assembly.md) |
+| [AR-1242](../tasks/AR-1242-protected-main-admission.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0897](../tasks/AR-0897-main-merge-integrity.md) | [AR-1245](../tasks/AR-1245-postmerge-dco-evidence.md), [AR-1246](../tasks/AR-1246-protected-main-dco-flow.md), [AR-1247](../tasks/AR-1247-protected-main-dco-workflow.md), [AR-1259](../tasks/AR-1259-protected-main-dco-recovery.md) |
+| [AR-1243](../tasks/AR-1243-signed-bundle-assembly.md) | [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md), [AR-1240](../tasks/AR-1240-native-signed-bundle-fixture.md), [AR-1241](../tasks/AR-1241-native-isolation-matrix.md) | [AR-1245](../tasks/AR-1245-postmerge-dco-evidence.md) |
+| [AR-1244](../tasks/AR-1244-publish-replay-supervision.md) | [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md) | None |
+| [AR-1245](../tasks/AR-1245-postmerge-dco-evidence.md) | [AR-1242](../tasks/AR-1242-protected-main-admission.md), [AR-1243](../tasks/AR-1243-signed-bundle-assembly.md) | [AR-1246](../tasks/AR-1246-protected-main-dco-flow.md) |
+| [AR-1246](../tasks/AR-1246-protected-main-dco-flow.md) | [AR-1242](../tasks/AR-1242-protected-main-admission.md), [AR-1245](../tasks/AR-1245-postmerge-dco-evidence.md) | None |
+| [AR-1247](../tasks/AR-1247-protected-main-dco-workflow.md) | [AR-1242](../tasks/AR-1242-protected-main-admission.md) | None |
+| [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md) | [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md), [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md) | None |
+| [AR-1249](../tasks/AR-1249-mockagents-qualification-evidence.md) | [AR-0888](../tasks/AR-0888-llm-double-conformance-spike.md), [AR-0889](../tasks/AR-0889-llm-fixture-scenario-contract.md) | None |
+| [AR-1250](../tasks/AR-1250-mockagents-harness-extension.md) | [AR-0888](../tasks/AR-0888-llm-double-conformance-spike.md), [AR-0889](../tasks/AR-0889-llm-fixture-scenario-contract.md) | [AR-1257](../tasks/AR-1257-mockagents-qemu-image.md) |
+| [AR-1251](../tasks/AR-1251-mockagents-transport-sandbox.md) | [AR-0888](../tasks/AR-0888-llm-double-conformance-spike.md), [AR-0889](../tasks/AR-0889-llm-fixture-scenario-contract.md) | [AR-1257](../tasks/AR-1257-mockagents-qemu-image.md) |
+| [AR-1252](../tasks/AR-1252-approved-isolated-qualification-runner.md) | [AR-0003](../tasks/AR-0003-quality-gates.md) | [AR-1253](../tasks/AR-1253-pinned-python-transport-runtime.md), [AR-1254](../tasks/AR-1254-mockagents-pinned-python-transport.md), [AR-1256](../tasks/AR-1256-bundled-mockagents-isolation.md), [AR-1303](../tasks/AR-1303-hosted-platform-diagnostics.md) |
+| [AR-1253](../tasks/AR-1253-pinned-python-transport-runtime.md) | [AR-1252](../tasks/AR-1252-approved-isolated-qualification-runner.md) | [AR-1254](../tasks/AR-1254-mockagents-pinned-python-transport.md), [AR-1255](../tasks/AR-1255-bundled-mockagents-qemu-runner.md), [AR-1256](../tasks/AR-1256-bundled-mockagents-isolation.md) |
+| [AR-1254](../tasks/AR-1254-mockagents-pinned-python-transport.md) | [AR-1252](../tasks/AR-1252-approved-isolated-qualification-runner.md), [AR-1253](../tasks/AR-1253-pinned-python-transport-runtime.md) | [AR-1255](../tasks/AR-1255-bundled-mockagents-qemu-runner.md) |
+| [AR-1255](../tasks/AR-1255-bundled-mockagents-qemu-runner.md) | [AR-1253](../tasks/AR-1253-pinned-python-transport-runtime.md), [AR-1254](../tasks/AR-1254-mockagents-pinned-python-transport.md) | None |
+| [AR-1256](../tasks/AR-1256-bundled-mockagents-isolation.md) | [AR-1252](../tasks/AR-1252-approved-isolated-qualification-runner.md), [AR-1253](../tasks/AR-1253-pinned-python-transport-runtime.md) | None |
+| [AR-1257](../tasks/AR-1257-mockagents-qemu-image.md) | [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md), [AR-1250](../tasks/AR-1250-mockagents-harness-extension.md), [AR-1251](../tasks/AR-1251-mockagents-transport-sandbox.md) | None |
+| [AR-1258](../tasks/AR-1258-docker-binfmt-qemu.md) | None | None |
+| [AR-1259](../tasks/AR-1259-protected-main-dco-recovery.md) | [AR-1242](../tasks/AR-1242-protected-main-admission.md) | None |
+| [AR-1260](../tasks/AR-1260-runtime-owned-strict-replay-integration.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
+| [AR-1261](../tasks/AR-1261-runtime-to-cli-replay-entrypoint.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
+| [AR-1262](../tasks/AR-1262-runtime-owned-launch-authority.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
+| [AR-1263](../tasks/AR-1263-sandbox-scope-classification-stability.md) | [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md) | None |
+| [AR-1264](../tasks/AR-1264-pr205-merge-integrity.md) | [AR-0897](../tasks/AR-0897-main-merge-integrity.md) | None |
+| [AR-1265](../tasks/AR-1265-runtime-owned-replay-entrypoint.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
+| [AR-1266](../tasks/AR-1266-authenticated-replay-dispatch.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
+| [AR-1267](../tasks/AR-1267-runtime-replay-execution.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
+| [AR-1268](../tasks/AR-1268-replay-transport-boundary.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
+| [AR-1269](../tasks/AR-1269-runtime-replay-launch-factory.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
+| [AR-1270](../tasks/AR-1270-runtime-cassette-handle.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
+| [AR-1271](../tasks/AR-1271-cassette-operation-contract.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
+| [AR-1272](../tasks/AR-1272-authenticated-cassette-backend.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
+| [AR-1273](../tasks/AR-1273-complete-replay-context.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
+| [AR-1274](../tasks/AR-1274-runtime-cassette-executor-adapter.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
+| [AR-1275](../tasks/AR-1275-replay-operation-injection.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
+| [AR-1276](../tasks/AR-1276-primary-replay-runtime.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
+| [AR-1277](../tasks/AR-1277-runtime-cli-replay-transport.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
+| [AR-1278](../tasks/AR-1278-primary-runtime-client.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
+| [AR-1279](../tasks/AR-1279-end-to-end-replay-runtime.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
+| [AR-1280](../tasks/AR-1280-cross-crate-replay-entrypoint.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
+| [AR-1281](../tasks/AR-1281-supervised-cassette-lifecycle.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
+| [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | [AR-1284](../tasks/AR-1284-runtime-strict-replay-lifecycle.md), [AR-1285](../tasks/AR-1285-runtime-launch-factory.md), [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md), [AR-1300](../tasks/AR-1300-runtime-cassette-dispatch-seam.md) |
+| [AR-1283](../tasks/AR-1283-formal-lockfile.md) | [AR-0003](../tasks/AR-0003-quality-gates.md) | None |
+| [AR-1284](../tasks/AR-1284-runtime-strict-replay-lifecycle.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md), [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md) | None |
+| [AR-1285](../tasks/AR-1285-runtime-launch-factory.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md), [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md) | [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md), [AR-1300](../tasks/AR-1300-runtime-cassette-dispatch-seam.md) |
+| [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md), [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md), [AR-1285](../tasks/AR-1285-runtime-launch-factory.md) | None |
+| [AR-1287](../tasks/AR-1287-delegated-sandbox-runner.md) | None | [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md), [AR-1306](../tasks/AR-1306-authenticated-fault-matrix-qualification.md) |
+| [AR-1288](../tasks/AR-1288-certificate-chain-authz.md) | [AR-0813](../tasks/AR-0813-remote-control-transport.md) | [AR-1370](../tasks/AR-1370-runner-authority-materialization.md), [AR-1371](../tasks/AR-1371-runner-authority-injection.md), [AR-1377](../tasks/AR-1377-runtime-chain-store.md), [AR-1468](../tasks/AR-1468-control-authority-materialization-successor.md) |
+| [AR-1289](../tasks/AR-1289-formal-lock-gate.md) | None | None |
+| [AR-1290](../tasks/AR-1290-dependabot-dco-boundary-recovery.md) | None | None |
+| [AR-1291](../tasks/AR-1291-superseded-pointer-repair.md) | None | None |
+| [AR-1292](../tasks/AR-1292-tla-provenance-repair.md) | None | None |
+| [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md) | None | None |
+| [AR-1294](../tasks/AR-1294-state-gate-baseline.md) | None | None |
+| [AR-1295](../tasks/AR-1295-vendor-fixture-v037.md) | None | None |
+| [AR-1296](../tasks/AR-1296-state-quality-baseline.md) | None | None |
