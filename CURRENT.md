@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1562](tasks/AR-1562.md): ASB TUI development release-channel contract | Add explicit ASB TUI release-channel selection with a development default. | Independent review fix pushed to feature/ar-1562-dev-release-channel-contract at exact head 61afc0e; preserve channel-neutral stable metadata for status/doctor/remove/launch. Await PR #396 checks/review; do not merge locally. | ar1562-channel-review-fix |
+| P0 | [AR-1562](tasks/AR-1562.md): ASB TUI development release-channel contract | Add explicit ASB TUI release-channel selection with a development default. | Ready for independent review on exact rebased head c46be39 atop protected main 73029d9164808ca531713da9ff8fb575968f6d74; hosted PR #396 checks must verify channel-neutral lifecycle metadata and full quality gates before merge. | ar1562-channel-review-fix |
 
 ## Open
 

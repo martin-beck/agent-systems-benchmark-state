@@ -3182,7 +3182,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Add explicit ASB TUI release-channel selection with a development default. |
-| Next action | Independent review fix pushed to feature/ar-1562-dev-release-channel-contract at exact head 61afc0e; preserve channel-neutral stable metadata for status/doctor/remove/launch. Await PR #396 checks/review; do not merge locally. |
+| Next action | Ready for independent review on exact rebased head c46be39 atop protected main 73029d9164808ca531713da9ff8fb575968f6d74; hosted PR #396 checks must verify channel-neutral lifecycle metadata and full quality gates before merge. |
 
 ### AR-1563 — ASB dev-channel clone/build materialization
 
