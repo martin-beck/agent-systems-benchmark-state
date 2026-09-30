@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1295](../tasks/AR-1295-vendor-fixture-v037.md) | None | None |
 | [AR-1296](../tasks/AR-1296-state-quality-baseline.md) | None | None |
 | [AR-1297](../tasks/AR-1297-task-schema-metadata.md) | None | None |
 | [AR-1298](../tasks/AR-1298-narrow-metadata-repair.md) | None | None |
@@ -239,17 +240,12 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1534](../tasks/AR-1534.md): Coordinator vendor integrity repair | codex-asb-ar1534-v0349-sync-20260930 | Coordinator metadata repair v0.3.50 is published; rerun approved vendor sync and all ASB gates against the exact immutable release. | Synchronize the exact coordinator v0.3.50 tag/source into ASB; rerun vendor verification, full state gates and exact-head review. Preserve AR-1307/1308 formal qualification as separate and do not claim it from development fixtures. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1539](../tasks/AR-1539.md): Coordinator v0.3.50 compatibility repair | Unclaimed | Repair ASB lifecycle/session and SQLite fence compatibility exposed by the exact v0.3.50 integration attempt. | Promote after the AR-1538 failure is recorded; repair v0.3.50 lifecycle/session and SQLite compatibility in a disposable worktree, then rerun every state gate before reconsidering AR-1534. |
+| P0 | [AR-1539](../tasks/AR-1539.md): Coordinator v0.3.50 compatibility repair | codex-asb-ar1539-v0350-compat-20260930 | Repair ASB lifecycle/session and SQLite fence compatibility exposed by the exact v0.3.50 integration attempt. | Promote after the AR-1538 failure is recorded; repair v0.3.50 lifecycle/session and SQLite compatibility in a disposable worktree, then rerun every state gate before reconsidering AR-1534. |
 
 ### Blocked (84)
 

@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**559 ARs tracked** across 7 active status categories.
+**559 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 84 |
 | **Planned** | Defined work awaiting promotion or dependencies | 48 |
 | **Future** | Deferred roadmap work | 1 |
@@ -633,7 +633,7 @@ flowchart LR
         AR_1536["AR-1536 - Planned"]:::status_planned
         AR_1537["AR-1537 - Blocked"]:::status_blocked
         AR_1538["AR-1538 - Blocked"]:::status_blocked
-        AR_1539["AR-1539 - Open"]:::status_open
+        AR_1539["AR-1539 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2444,4 +2444,3 @@ flowchart LR
 | [AR-1292](../tasks/AR-1292-tla-provenance-repair.md) | None | None |
 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md) | None | None |
 | [AR-1294](../tasks/AR-1294-state-gate-baseline.md) | None | None |
-| [AR-1295](../tasks/AR-1295-vendor-fixture-v037.md) | None | None |
