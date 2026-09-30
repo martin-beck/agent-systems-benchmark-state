@@ -2768,11 +2768,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | asb-ar1533-qemu-20260930 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Repair the provider-free unsigned-development QEMU fixture for AR-1308 and make its diagnostics, cleanup and non-qualification boundary reliable. |
@@ -3624,7 +3624,7 @@ flowchart LR
         AR_1530["AR-1530 - Done"]:::status_done
         AR_1531["AR-1531 - Blocked"]:::status_blocked
         AR_1532["AR-1532 - Done"]:::status_done
-        AR_1533["AR-1533 - In progress"]:::status_in_progress
+        AR_1533["AR-1533 - Done"]:::status_done
         AR_1534["AR-1534 - Done"]:::status_done
         AR_1535["AR-1535 - Planned"]:::status_planned
         AR_1536["AR-1536 - Planned"]:::status_planned
@@ -4928,3 +4928,4 @@ flowchart LR
     AR_1446 --> AR_1338
     AR_1446 --> AR_1448
     AR_1446 --> AR_1458
+    AR_1446 --> AR_1487
