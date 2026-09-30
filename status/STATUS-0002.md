@@ -2782,11 +2782,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | asb-ar1534-close-20260930 |
 | Parent | None |
 | Children | None |
 | Summary | Immutable coordinator v0.3.53 vendor boundary and ASB lifecycle/session/SQLite compatibility are green; close with successor receipts. |
@@ -3625,7 +3625,7 @@ flowchart LR
         AR_1531["AR-1531 - Blocked"]:::status_blocked
         AR_1532["AR-1532 - Blocked"]:::status_blocked
         AR_1533["AR-1533 - Blocked"]:::status_blocked
-        AR_1534["AR-1534 - Open"]:::status_open
+        AR_1534["AR-1534 - In progress"]:::status_in_progress
         AR_1535["AR-1535 - Planned"]:::status_planned
         AR_1536["AR-1536 - Planned"]:::status_planned
         AR_1537["AR-1537 - Blocked"]:::status_blocked
@@ -4925,5 +4925,3 @@ flowchart LR
     AR_1443 --> AR_1449
     AR_1443 --> AR_1500
     AR_1446 --> AR_1331
-    AR_1446 --> AR_1338
-    AR_1446 --> AR_1448
