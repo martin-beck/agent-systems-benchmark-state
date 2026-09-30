@@ -27,10 +27,10 @@ Generated from local Git and GitHub. Do not edit.
 | 36697392006 | `75a7e630ea73` | push | Huawei MIT source headers | completed:success |
 | 36697391951 | `75a7e630ea73` | push | Credential-free benchmark path | in_progress:- |
 | 36697391939 | `75a7e630ea73` | push | Rust verification | pending:- |
-| 36697391897 | `75a7e630ea73` | push | Fault assurance | pending:- |
+| 36697391897 | `75a7e630ea73` | push | Fault assurance | in_progress:- |
 | 36697391890 | `75a7e630ea73` | push | Formal assurance | pending:- |
 | 36697391872 | `75a7e630ea73` | push | Repository quality | pending:- |
-| 36697385617 | `2bc138bec3b5` | pull_request | Hosted portability and native qualification | in_progress:- |
-| 36697385444 | `2bc138bec3b5` | pull_request | Emulated aarch64 portability | pending:- |
+| 36697385617 | `2bc138bec3b5` | pull_request | Hosted portability and native qualification | completed:success |
+| 36697385444 | `2bc138bec3b5` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 36697385391 | `2bc138bec3b5` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36697385310 | `2bc138bec3b5` | pull_request | Formal assurance | in_progress:- |
