@@ -1,5 +1,11 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+    AR_1238 --> AR_1277
+    AR_1238 --> AR_1278
+    AR_1238 --> AR_1279
+    AR_1238 --> AR_1280
+    AR_1238 --> AR_1281
+    AR_1238 --> AR_1282
     AR_1238 --> AR_1284
     AR_1238 --> AR_1285
     AR_1238 --> AR_1286
@@ -1125,4 +1131,3 @@
 | [AR-1435](../tasks/AR-1435-local-mock-cli-wiring.md) | [AR-1434](../tasks/AR-1434-runtime-local-mock-attempt-adapter.md) | [AR-1436](../tasks/AR-1436-local-guided-cli-wrapper.md) |
 | [AR-1436](../tasks/AR-1436-local-guided-cli-wrapper.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1435](../tasks/AR-1435-local-mock-cli-wiring.md) | [AR-1437](../tasks/AR-1437-local-record-replay-campaign.md), [AR-1440](../tasks/AR-1440-openrouter-model-refresh-local-measurements.md), [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md) |
 | [AR-1437](../tasks/AR-1437-local-record-replay-campaign.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1436](../tasks/AR-1436-local-guided-cli-wrapper.md) | [AR-1440](../tasks/AR-1440-openrouter-model-refresh-local-measurements.md), [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md), [AR-1447](../tasks/AR-1447-asb-local-campaign-qualification.md) |
-| [AR-1438](../tasks/AR-1438-hardened-trusted-runner-validation.md) | [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md) | None |

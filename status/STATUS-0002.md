@@ -3266,7 +3266,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Bind development metadata and broker descriptors to the exact ASB source identity. |
-| Next action | Promote after AR-1564 and replace stale compile-time identity constants with exact running-source identity evidence. |
+| Next action | Ready for independent review of PR #400 at exact head 2e1e657. Verify build-time exact checkout commit/tree derivation, reproducible identity overrides, metadata/status/doctor identity validation, typed stale rejection, and unchanged stable behavior. |
 
 
 ## Dependency graph
@@ -4767,9 +4767,3 @@ flowchart LR
     AR_1238 --> AR_1274
     AR_1238 --> AR_1275
     AR_1238 --> AR_1276
-    AR_1238 --> AR_1277
-    AR_1238 --> AR_1278
-    AR_1238 --> AR_1279
-    AR_1238 --> AR_1280
-    AR_1238 --> AR_1281
-    AR_1238 --> AR_1282
