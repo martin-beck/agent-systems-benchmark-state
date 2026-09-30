@@ -1,5 +1,7 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md) | [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md) | None |
+| [AR-1445](../tasks/AR-1445-protected-main-topology-repair-openrouter.md) | None | None |
 | [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md) | [AR-1433](../tasks/AR-1433-runtime-mock-attempt-backend.md), [AR-1441](../tasks/AR-1441-first-class-install-bootstrap.md), [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md), [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md) | [AR-1331](../tasks/AR-1331-runtime-replay-launch-authority.md), [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md), [AR-1448](../tasks/AR-1448-runtime-replay-authority-source.md), [AR-1458](../tasks/AR-1458-first-customer-requalification-after-orchestration.md), [AR-1487](../tasks/AR-1487-owner-backed-first-customer-qualification.md) |
 | [AR-1447](../tasks/AR-1447-asb-local-campaign-qualification.md) | [AR-1433](../tasks/AR-1433-runtime-mock-attempt-backend.md), [AR-1437](../tasks/AR-1437-local-record-replay-campaign.md), [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md) | [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md), [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md), [AR-1496](../tasks/AR-1496-runtime-owned-provider-capture-control.md) |
 | [AR-1448](../tasks/AR-1448-runtime-replay-authority-source.md) | [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md), [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md) | [AR-1449](../tasks/AR-1449-runtime-owned-local-replay-cli.md), [AR-1450](../tasks/AR-1450-runtime-owned-local-replay-acquisition.md), [AR-1451](../tasks/AR-1451-central-orchestration-authority-design.md), [AR-1452](../tasks/AR-1452-runtime-orchestration-service.md), [AR-1455](../tasks/AR-1455-runtime-owned-guided-replay-entrypoint.md) |
@@ -118,6 +120,7 @@
 | [AR-1562](../tasks/AR-1562.md) | None | [AR-1563](../tasks/AR-1563.md), [AR-1564](../tasks/AR-1564.md) |
 | [AR-1563](../tasks/AR-1563.md) | [AR-1562](../tasks/AR-1562.md) | [AR-1564](../tasks/AR-1564.md) |
 | [AR-1564](../tasks/AR-1564.md) | [AR-1562](../tasks/AR-1562.md), [AR-1563](../tasks/AR-1563.md) | None |
+| [AR-1565](../tasks/AR-1565.md) | None | None |
 
 ## Complete AR inventory
 
@@ -212,7 +215,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (50)
+### Planned (51)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -235,6 +238,7 @@
 | P0 | [AR-1546](../tasks/AR-1546.md): AR-1308 formal capacity-input readiness repair | Unclaimed | Audit and repair the AR-1308 capacity/input handoff after diagnostic QEMU integration, without executing qualification. | Formal-only work: after AR-1531 and AR-1536, verify the exact 8 GiB/8 GiB fixture and AR-1308 formal inputs for AR-1522. Do not block or alter the completed unsigned-development path. |
 | P0 | [AR-1563](../tasks/AR-1563.md): ASB dev-channel clone/build materialization | Unclaimed | Clone and build the current asb-tui main head for the ASB dev channel. | Implement bounded dev-channel clone, exact main-head resolution, locked release build, temporary staging, digest capture, cleanup, and atomic materialization. |
 | P0 | [AR-1564](../tasks/AR-1564.md): ASB development TUI lifecycle integration | Unclaimed | Integrate the dev-built TUI into the ASB lifecycle and launch path. | Wire the development materialized executable into install, status, upgrade, launch, and remove with the asb-tui development router and publish exact-head CI evidence. |
+| P0 | [AR-1565](../tasks/AR-1565.md): ASB yanked dependency lock repair | Unclaimed | Repair the yanked dependency lock that blocks all protected ASB merges. | Promote and claim the dependency-lock repair, update the minimal yanked transitive crate closure, and independently run cargo deny/audit plus the full required PR checks. |
 | P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
 | P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
 | P1 | [AR-0810](../tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Unclaimed | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project&#x27;s GitHub Pages site. |
@@ -532,4 +536,3 @@
 | P1 | [AR-0314](../tasks/AR-0314-recording-source-choice.md): Choose matching replay or live provider execution | Unclaimed | Offer matching prior recordings or an actual provider connection without silently choosing either. | Durable release and post-merge verification are complete; no further AR-0314 action. |
 | P1 | [AR-0315](../tasks/AR-0315-provider-parity-conformance.md): Verify cross-agent provider parity | Unclaimed | Conformance-test identical OpenAI and Ollama profiles across the complete supported-agent matrix. | Complete; no further action. |
 | P1 | [AR-0316](../tasks/AR-0316-agent-runtime-bundles.md): Publish reproducible agent runtime bundles | Unclaimed | Make supported agent installations reproducible, license-audited, SBOM-backed, and independently verifiable. | No further action for the released fail-closed catalog; complete runtime closures remain future work and must not be inferred. |
-| P1 | [AR-0318](../tasks/AR-0318-credential-reference-boundary.md): Implement the credential-reference boundary | Unclaimed | Resolve provider credential references without exposing secrets or accepting ambient credentials. | Coordinator decision required: formally amend AR-0318 outcome/acceptance to Environment-only support, or authorize separately specified private locator contracts before implementing FileDescriptor/Helper; do not release done under the current three-source plan. |

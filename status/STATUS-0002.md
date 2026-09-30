@@ -3212,6 +3212,20 @@
 | Summary | Integrate the dev-built TUI into the ASB lifecycle and launch path. |
 | Next action | Wire the development materialized executable into install, status, upgrade, launch, and remove with the asb-tui development router and publish exact-head CI evidence. |
 
+### AR-1565 — ASB yanked dependency lock repair
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair the yanked dependency lock that blocks all protected ASB merges. |
+| Next action | Promote and claim the dependency-lock repair, update the minimal yanked transitive crate closure, and independently run cargo deny/audit plus the full required PR checks. |
+
 
 ## Dependency graph
 
@@ -3852,6 +3866,7 @@ flowchart LR
         AR_1562["AR-1562 - Open"]:::status_open
         AR_1563["AR-1563 - Planned"]:::status_planned
         AR_1564["AR-1564 - Planned"]:::status_planned
+        AR_1565["AR-1565 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4791,26 +4806,3 @@ flowchart LR
     AR_1314 --> AR_1495
     AR_1316 --> AR_1320
     AR_1316 --> AR_1422
-    AR_1316 --> AR_1442
-    AR_1319 --> AR_1316
-    AR_1325 --> AR_1326
-    AR_1325 --> AR_1327
-    AR_1325 --> AR_1328
-    AR_1326 --> AR_1327
-    AR_1326 --> AR_1328
-    AR_1327 --> AR_1329
-    AR_1327 --> AR_1334
-    AR_1327 --> AR_1342
-    AR_1327 --> AR_1343
-    AR_1327 --> AR_1346
-    AR_1327 --> AR_1347
-    AR_1327 --> AR_1348
-    AR_1327 --> AR_1349
-    AR_1327 --> AR_1432
-    AR_1327 --> AR_1433
-    AR_1328 --> AR_1329
-    AR_1328 --> AR_1334
-    AR_1328 --> AR_1339
-    AR_1328 --> AR_1342
-    AR_1328 --> AR_1343
-    AR_1328 --> AR_1346

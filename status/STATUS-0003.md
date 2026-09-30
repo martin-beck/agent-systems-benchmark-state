@@ -1,5 +1,28 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+    AR_1316 --> AR_1442
+    AR_1319 --> AR_1316
+    AR_1325 --> AR_1326
+    AR_1325 --> AR_1327
+    AR_1325 --> AR_1328
+    AR_1326 --> AR_1327
+    AR_1326 --> AR_1328
+    AR_1327 --> AR_1329
+    AR_1327 --> AR_1334
+    AR_1327 --> AR_1342
+    AR_1327 --> AR_1343
+    AR_1327 --> AR_1346
+    AR_1327 --> AR_1347
+    AR_1327 --> AR_1348
+    AR_1327 --> AR_1349
+    AR_1327 --> AR_1432
+    AR_1327 --> AR_1433
+    AR_1328 --> AR_1329
+    AR_1328 --> AR_1334
+    AR_1328 --> AR_1339
+    AR_1328 --> AR_1342
+    AR_1328 --> AR_1343
+    AR_1328 --> AR_1346
     AR_1328 --> AR_1347
     AR_1328 --> AR_1348
     AR_1328 --> AR_1349
@@ -1026,5 +1049,3 @@
 | [AR-1441](../tasks/AR-1441-first-class-install-bootstrap.md) | [AR-0821](../tasks/AR-0821-one-line-local-install.md), [AR-0822](../tasks/AR-0822-install-upgrade-rollback.md) | [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md), [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md), [AR-1488](../tasks/AR-1488-owner-backed-user-journey.md) |
 | [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md) | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1436](../tasks/AR-1436-local-guided-cli-wrapper.md), [AR-1441](../tasks/AR-1441-first-class-install-bootstrap.md) | [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md), [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md), [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md), [AR-1447](../tasks/AR-1447-asb-local-campaign-qualification.md), [AR-1488](../tasks/AR-1488-owner-backed-user-journey.md), [AR-1499](../tasks/AR-1499-development-credential-enrollment.md) |
 | [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md) | [AR-1437](../tasks/AR-1437-local-record-replay-campaign.md), [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md), [AR-1447](../tasks/AR-1447-asb-local-campaign-qualification.md) | [AR-1331](../tasks/AR-1331-runtime-replay-launch-authority.md), [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md), [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md), [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md), [AR-1448](../tasks/AR-1448-runtime-replay-authority-source.md), [AR-1449](../tasks/AR-1449-runtime-owned-local-replay-cli.md), [AR-1500](../tasks/AR-1500-development-credential-provider-fixture.md) |
-| [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md) | [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md) | None |
-| [AR-1445](../tasks/AR-1445-protected-main-topology-repair-openrouter.md) | None | None |
