@@ -2754,11 +2754,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | asb-ar1532-runner-20260930 |
 | Parent | None |
 | Children | None |
 | Summary | Repair and independently qualify the provider-free unsigned-development runner path associated with AR-1307 without changing formal limits or evidence gates. |
@@ -3623,7 +3623,7 @@ flowchart LR
         AR_1529["AR-1529 - Done"]:::status_done
         AR_1530["AR-1530 - Done"]:::status_done
         AR_1531["AR-1531 - Blocked"]:::status_blocked
-        AR_1532["AR-1532 - Open"]:::status_open
+        AR_1532["AR-1532 - In progress"]:::status_in_progress
         AR_1533["AR-1533 - Planned"]:::status_planned
         AR_1534["AR-1534 - Done"]:::status_done
         AR_1535["AR-1535 - Planned"]:::status_planned
@@ -4927,5 +4927,3 @@ flowchart LR
     AR_1446 --> AR_1331
     AR_1446 --> AR_1338
     AR_1446 --> AR_1448
-    AR_1446 --> AR_1458
-    AR_1446 --> AR_1487
