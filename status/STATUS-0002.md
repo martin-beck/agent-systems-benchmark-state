@@ -3226,6 +3226,48 @@
 | Summary | Repair the yanked dependency lock that blocks all protected ASB merges. |
 | Next action | Run complete required ASB quality suite and obtain independent lockfile review; cargo-deny/cargo-audit binaries are absent on this host and must run in hosted/qualified environment. Then prepare exact-head PR from signed commit 54505f2. |
 
+### AR-1566 — ASB development broker handoff integration
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Wire ASB development launch through the authenticated asb-tui broker handoff seam. |
+| Next action | Promote and implement the development broker handoff seam after the asb-tui descriptor contract is available; add exact-head integration tests. |
+
+### AR-1567 — ASB development trusted toolchain discovery
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Make development installation resolve a trusted cargo/toolchain without hard-coded host paths. |
+| Next action | Promote after AR-1563 and implement controlled trusted toolchain discovery with tests on a clean host. |
+
+### AR-1568 — ASB exact current-main identity binding
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Bind development metadata and broker descriptors to the exact ASB source identity. |
+| Next action | Promote after AR-1564 and replace stale compile-time identity constants with exact running-source identity evidence. |
+
 
 ## Dependency graph
 
@@ -3867,6 +3909,9 @@ flowchart LR
         AR_1563["AR-1563 - Done"]:::status_done
         AR_1564["AR-1564 - Done"]:::status_done
         AR_1565["AR-1565 - Done"]:::status_done
+        AR_1566["AR-1566 - Planned"]:::status_planned
+        AR_1567["AR-1567 - Planned"]:::status_planned
+        AR_1568["AR-1568 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4730,69 +4775,3 @@ flowchart LR
     AR_1238 --> AR_1282
     AR_1238 --> AR_1284
     AR_1238 --> AR_1285
-    AR_1238 --> AR_1286
-    AR_1239 --> AR_1240
-    AR_1239 --> AR_1243
-    AR_1239 --> AR_1260
-    AR_1239 --> AR_1261
-    AR_1239 --> AR_1262
-    AR_1239 --> AR_1265
-    AR_1239 --> AR_1266
-    AR_1239 --> AR_1267
-    AR_1239 --> AR_1268
-    AR_1239 --> AR_1269
-    AR_1239 --> AR_1270
-    AR_1239 --> AR_1271
-    AR_1239 --> AR_1272
-    AR_1239 --> AR_1273
-    AR_1239 --> AR_1274
-    AR_1239 --> AR_1275
-    AR_1239 --> AR_1276
-    AR_1239 --> AR_1277
-    AR_1239 --> AR_1278
-    AR_1239 --> AR_1279
-    AR_1239 --> AR_1280
-    AR_1239 --> AR_1281
-    AR_1239 --> AR_1282
-    AR_1239 --> AR_1284
-    AR_1239 --> AR_1285
-    AR_1239 --> AR_1286
-    AR_1240 --> AR_1241
-    AR_1240 --> AR_1243
-    AR_1241 --> AR_1243
-    AR_1242 --> AR_1245
-    AR_1242 --> AR_1246
-    AR_1242 --> AR_1247
-    AR_1242 --> AR_1259
-    AR_1243 --> AR_1245
-    AR_1245 --> AR_1246
-    AR_1250 --> AR_1257
-    AR_1251 --> AR_1257
-    AR_1252 --> AR_1253
-    AR_1252 --> AR_1254
-    AR_1252 --> AR_1256
-    AR_1252 --> AR_1303
-    AR_1253 --> AR_1254
-    AR_1253 --> AR_1255
-    AR_1253 --> AR_1256
-    AR_1254 --> AR_1255
-    AR_1282 --> AR_1284
-    AR_1282 --> AR_1285
-    AR_1282 --> AR_1286
-    AR_1282 --> AR_1300
-    AR_1285 --> AR_1286
-    AR_1285 --> AR_1300
-    AR_1287 --> AR_1301
-    AR_1287 --> AR_1306
-    AR_1288 --> AR_1370
-    AR_1288 --> AR_1371
-    AR_1288 --> AR_1377
-    AR_1288 --> AR_1468
-    AR_1300 --> AR_1301
-    AR_1300 --> AR_1306
-    AR_1302 --> AR_1304
-    AR_1302 --> AR_1305
-    AR_1302 --> AR_1307
-    AR_1302 --> AR_1515
-    AR_1304 --> AR_1308
-    AR_1304 --> AR_1516

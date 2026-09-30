@@ -2,8 +2,8 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `6d4014204f0e08ae7f037d63cac0051e5d3def0e`
-- Local origin/main: `6d4014204f0e08ae7f037d63cac0051e5d3def0e`
+- Product remote main: `e8afc588cbe1c1730add1f8d636fa3241276cc9a`
+- Local origin/main: `e8afc588cbe1c1730add1f8d636fa3241276cc9a`
 - Primary worktree head: `bd7d10d4a760a84fa42de2b1fa9e97e8ea85ba09`
 
 ## Open pull requests
@@ -22,15 +22,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36788532149 | `6d4014204f0e` | push | Rust verification | in_progress:- |
-| 36788532126 | `6d4014204f0e` | push | Formal assurance | completed:success |
-| 36788532115 | `6d4014204f0e` | push | Fault assurance | completed:success |
-| 36788532070 | `6d4014204f0e` | push | Emulated aarch64 portability | in_progress:- |
-| 36788532068 | `6d4014204f0e` | push | Hosted portability and native qualification | completed:success |
-| 36788532063 | `6d4014204f0e` | push | Credential-free benchmark path | completed:success |
-| 36788531970 | `6d4014204f0e` | push | Huawei MIT source headers | completed:success |
-| 36788531928 | `6d4014204f0e` | push | Repository quality | completed:failure |
-| 36787679426 | `c46be39bf10f` | pull_request | Emulated aarch64 portability | completed:success |
-| 36787679360 | `c46be39bf10f` | pull_request | Hosted portability and native qualification | completed:success |
-| 36787679333 | `c46be39bf10f` | pull_request | Repository quality | completed:success |
-| 36787679327 | `c46be39bf10f` | pull_request | Rust verification | completed:success |
+| 36792683378 | `e8afc588cbe1` | push | Emulated aarch64 portability | completed:success |
+| 36792683347 | `e8afc588cbe1` | push | Huawei MIT source headers | completed:success |
+| 36792683335 | `e8afc588cbe1` | push | Hosted portability and native qualification | completed:success |
+| 36792683320 | `e8afc588cbe1` | push | Repository quality | completed:failure |
+| 36792683315 | `e8afc588cbe1` | push | Formal assurance | completed:success |
+| 36792683311 | `e8afc588cbe1` | push | Rust verification | in_progress:- |
+| 36792683300 | `e8afc588cbe1` | push | Credential-free benchmark path | completed:success |
+| 36792683299 | `e8afc588cbe1` | push | Fault assurance | completed:success |
+| 36791932087 | `4a654767fd55` | pull_request | Emulated aarch64 portability | completed:success |
+| 36791931889 | `4a654767fd55` | pull_request | Fault assurance | completed:success |
+| 36791931880 | `4a654767fd55` | pull_request | Huawei MIT source headers | completed:success |
+| 36791931863 | `4a654767fd55` | pull_request | Rust verification | completed:success |

@@ -1,5 +1,71 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+    AR_1238 --> AR_1286
+    AR_1239 --> AR_1240
+    AR_1239 --> AR_1243
+    AR_1239 --> AR_1260
+    AR_1239 --> AR_1261
+    AR_1239 --> AR_1262
+    AR_1239 --> AR_1265
+    AR_1239 --> AR_1266
+    AR_1239 --> AR_1267
+    AR_1239 --> AR_1268
+    AR_1239 --> AR_1269
+    AR_1239 --> AR_1270
+    AR_1239 --> AR_1271
+    AR_1239 --> AR_1272
+    AR_1239 --> AR_1273
+    AR_1239 --> AR_1274
+    AR_1239 --> AR_1275
+    AR_1239 --> AR_1276
+    AR_1239 --> AR_1277
+    AR_1239 --> AR_1278
+    AR_1239 --> AR_1279
+    AR_1239 --> AR_1280
+    AR_1239 --> AR_1281
+    AR_1239 --> AR_1282
+    AR_1239 --> AR_1284
+    AR_1239 --> AR_1285
+    AR_1239 --> AR_1286
+    AR_1240 --> AR_1241
+    AR_1240 --> AR_1243
+    AR_1241 --> AR_1243
+    AR_1242 --> AR_1245
+    AR_1242 --> AR_1246
+    AR_1242 --> AR_1247
+    AR_1242 --> AR_1259
+    AR_1243 --> AR_1245
+    AR_1245 --> AR_1246
+    AR_1250 --> AR_1257
+    AR_1251 --> AR_1257
+    AR_1252 --> AR_1253
+    AR_1252 --> AR_1254
+    AR_1252 --> AR_1256
+    AR_1252 --> AR_1303
+    AR_1253 --> AR_1254
+    AR_1253 --> AR_1255
+    AR_1253 --> AR_1256
+    AR_1254 --> AR_1255
+    AR_1282 --> AR_1284
+    AR_1282 --> AR_1285
+    AR_1282 --> AR_1286
+    AR_1282 --> AR_1300
+    AR_1285 --> AR_1286
+    AR_1285 --> AR_1300
+    AR_1287 --> AR_1301
+    AR_1287 --> AR_1306
+    AR_1288 --> AR_1370
+    AR_1288 --> AR_1371
+    AR_1288 --> AR_1377
+    AR_1288 --> AR_1468
+    AR_1300 --> AR_1301
+    AR_1300 --> AR_1306
+    AR_1302 --> AR_1304
+    AR_1302 --> AR_1305
+    AR_1302 --> AR_1307
+    AR_1302 --> AR_1515
+    AR_1304 --> AR_1308
+    AR_1304 --> AR_1516
     AR_1304 --> AR_1517
     AR_1304 --> AR_1519
     AR_1307 --> AR_1309
@@ -581,6 +647,9 @@
     AR_1562 --> AR_1563
     AR_1562 --> AR_1564
     AR_1563 --> AR_1564
+    AR_1563 --> AR_1567
+    AR_1564 --> AR_1566
+    AR_1564 --> AR_1568
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -1055,6 +1124,3 @@
 | [AR-1436](../tasks/AR-1436-local-guided-cli-wrapper.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1435](../tasks/AR-1435-local-mock-cli-wiring.md) | [AR-1437](../tasks/AR-1437-local-record-replay-campaign.md), [AR-1440](../tasks/AR-1440-openrouter-model-refresh-local-measurements.md), [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md) |
 | [AR-1437](../tasks/AR-1437-local-record-replay-campaign.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1436](../tasks/AR-1436-local-guided-cli-wrapper.md) | [AR-1440](../tasks/AR-1440-openrouter-model-refresh-local-measurements.md), [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md), [AR-1447](../tasks/AR-1447-asb-local-campaign-qualification.md) |
 | [AR-1438](../tasks/AR-1438-hardened-trusted-runner-validation.md) | [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md) | None |
-| [AR-1440](../tasks/AR-1440-openrouter-model-refresh-local-measurements.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1436](../tasks/AR-1436-local-guided-cli-wrapper.md), [AR-1437](../tasks/AR-1437-local-record-replay-campaign.md) | None |
-| [AR-1441](../tasks/AR-1441-first-class-install-bootstrap.md) | [AR-0821](../tasks/AR-0821-one-line-local-install.md), [AR-0822](../tasks/AR-0822-install-upgrade-rollback.md) | [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md), [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md), [AR-1488](../tasks/AR-1488-owner-backed-user-journey.md) |
-| [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md) | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1436](../tasks/AR-1436-local-guided-cli-wrapper.md), [AR-1441](../tasks/AR-1441-first-class-install-bootstrap.md) | [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md), [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md), [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md), [AR-1447](../tasks/AR-1447-asb-local-campaign-qualification.md), [AR-1488](../tasks/AR-1488-owner-backed-user-journey.md), [AR-1499](../tasks/AR-1499-development-credential-enrollment.md) |
