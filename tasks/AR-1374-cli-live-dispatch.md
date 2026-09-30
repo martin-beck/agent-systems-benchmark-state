@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1374-cli-live-dispatch",
   "checkpoint_commit": "4ee5a4ed843c7dd7dda0b92dbe392f3787b4039f",
-  "claim_expires": "",
+  "claim_expires": "2026-09-30T05:24:33+00:00",
   "depends_on": [
     "AR-1373",
     "AR-1339",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1374-cli-live-dispatch",
   "observed_dirty": 0,
   "observed_head": "363b21f81d5c5ab364c2e2a923bd82676feaf343",
-  "owner": "",
+  "owner": "coordinator-ar1374-development-20260930",
   "plan": "../plans/AR-1374-cli-live-dispatch.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Consume authenticated runtime receipts in production asb run and sweep dispatch; stale AR-1375 duplicate superseded by AR-1523.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Production live-provider dispatch",
-  "updated_at": "2026-09-30T04:54:30+00:00",
+  "updated_at": "2026-09-30T04:54:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1374-cli-live-dispatch"
 }
 ---
@@ -176,3 +176,5 @@ fabricated, no asb-tui/live provider.
 
 - 2026-09-30T04:54:30+00:00: Development qualification uses existing local/mock and strict replay;
   AR-1523/1390 are complete and live deployment remains optional.
+
+- 2026-09-30T04:54:33+00:00: Claimed by coordinator-ar1374-development-20260930.

@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1374](tasks/AR-1374-cli-live-dispatch.md): Production live-provider dispatch | Consume authenticated runtime receipts in production asb run and sweep dispatch; stale AR-1375 duplicate superseded by AR-1523. | Development path is actionable after AR-1523/1390: requalify the existing ordinary run/sweep bridge with deterministic local/mock and strict-replay authority. Deployment-owned live-provider authority remains optional future hardening. | - |
+| P0 | [AR-1374](tasks/AR-1374-cli-live-dispatch.md): Production live-provider dispatch | Consume authenticated runtime receipts in production asb run and sweep dispatch; stale AR-1375 duplicate superseded by AR-1523. | Development path is actionable after AR-1523/1390: requalify the existing ordinary run/sweep bridge with deterministic local/mock and strict-replay authority. Deployment-owned live-provider authority remains optional future hardening. | coordinator-ar1374-development-20260930 |
 
 ## Blocked
 
