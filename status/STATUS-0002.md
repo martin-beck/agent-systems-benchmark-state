@@ -3146,11 +3146,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | asb-state-format-worker |
 | Parent | None |
 | Children | None |
 | Summary | Repair the state repository formatting gate before publishing its coordination release. |
@@ -3791,7 +3791,7 @@ flowchart LR
         AR_1557["AR-1557 - Done"]:::status_done
         AR_1558["AR-1558 - Done"]:::status_done
         AR_1559["AR-1559 - Done"]:::status_done
-        AR_1560["AR-1560 - Open"]:::status_open
+        AR_1560["AR-1560 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4850,4 +4850,3 @@ flowchart LR
     AR_1352 --> AR_1356
     AR_1356 --> AR_1357
     AR_1357 --> AR_1358
-    AR_1357 --> AR_1359

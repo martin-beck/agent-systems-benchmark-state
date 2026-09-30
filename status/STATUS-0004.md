@@ -111,11 +111,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1560](../tasks/AR-1560.md): State verification formatting repair | Unclaimed | Repair the state repository formatting gate before publishing its coordination release. | Promote and format tests/test_handoffctl_vendor.py with the pinned Ruff tool; rerun exact state verification and record the repair. |
+| P0 | [AR-1560](../tasks/AR-1560.md): State verification formatting repair | asb-state-format-worker | Repair the state repository formatting gate before publishing its coordination release. | Promote and format tests/test_handoffctl_vendor.py with the pinned Ruff tool; rerun exact state verification and record the repair. |
 
 ### Blocked (80)
 

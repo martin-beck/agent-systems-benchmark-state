@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1560](tasks/AR-1560.md): State verification formatting repair | Repair the state repository formatting gate before publishing its coordination release. | Promote and format tests/test_handoffctl_vendor.py with the pinned Ruff tool; rerun exact state verification and record the repair. | - |
+| P0 | [AR-1560](tasks/AR-1560.md): State verification formatting repair | Repair the state repository formatting gate before publishing its coordination release. | Promote and format tests/test_handoffctl_vendor.py with the pinned Ruff tool; rerun exact state verification and record the repair. | asb-state-format-worker |
 
 ## Blocked
 
