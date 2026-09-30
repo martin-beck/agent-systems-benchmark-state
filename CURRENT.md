@@ -9,6 +9,12 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1550](tasks/AR-1550.md): Compatibility blocker graph reconciliation | Reconcile stale compatibility blocker records after AR-1549 without claiming formal qualification. | Promote and claim; reconcile stale AR-1534/1540/1541/1544 blocker metadata with the verified v0.3.53 receipts, preserving historical failure evidence. | asb-ar1550-graph-reconcile-20260930 |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1534](tasks/AR-1534.md): Coordinator vendor integrity repair | Immutable coordinator v0.3.53 vendor boundary and ASB lifecycle/session/SQLite compatibility are green; close with successor receipts. | Promote and close from AR-1547/AR-1549: v0.3.53 vendor verification and all compatibility gates are green; preserve the separate formal qualification boundary. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -118,7 +124,6 @@ Never edit this file directly.
 | P0 | [AR-1170](tasks/AR-1170.md): Standalone TUI wizard | Guide TUI setup through analysis. | Read the plan. | - |
 | P0 | [AR-1180](tasks/AR-1180.md): Cross-project wizard qualification | Qualify the complete wizard. | Read the plan. | - |
 | P0 | [AR-1227](tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. | - |
-| P0 | [AR-1534](tasks/AR-1534.md): Coordinator vendor integrity repair | Immutable coordinator v0.3.53 vendor boundary and ASB lifecycle/session/SQLite compatibility are green; close with successor receipts. | Promote and close from AR-1547/AR-1549: v0.3.53 vendor verification and all compatibility gates are green; preserve the separate formal qualification boundary. | - |
 | P0 | [AR-1535](tasks/AR-1535.md): AR-1307 formal-readiness handoff repair | Reconcile AR-1307's repaired development runner with the formal qualification handoff after the approved vendor release. | Promote only after AR-1532, AR-1534 and AR-1542 are done; rerun exact-head vendor/state gates, audit AR-1307 formal-input readiness, and hand an exact sanitized bundle to AR-1522 or record the missing external input without substituting it. | - |
 | P0 | [AR-1536](tasks/AR-1536.md): AR-1308 capacity and preflight handoff repair | Repair AR-1308 capacity/preflight handoff after the unsigned-development fixture and approved vendor boundary are complete. | Promote only after AR-1531, AR-1533, AR-1534 and AR-1543 are done; rerun clean diagnostic/formal preflight, verify every exact input and hand a terminal-ready receipt to AR-1522 or record the missing input blocker. | - |
 | P0 | [AR-1540](tasks/AR-1540.md): Session and lifecycle contract compatibility | Session/checkpoint/recovery compatibility is green against coordinator v0.3.53; close with AR-1549 evidence. | Promote and close from AR-1549's v0.3.53 compatibility receipt; no additional ASB-owned session repair remains. | - |
