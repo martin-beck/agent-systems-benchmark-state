@@ -225,15 +225,15 @@
 | [AR-1527](../tasks/AR-1527.md) | None | [AR-1528](../tasks/AR-1528.md) |
 | [AR-1528](../tasks/AR-1528.md) | [AR-1519](../tasks/AR-1519.md), [AR-1520](../tasks/AR-1520.md), [AR-1527](../tasks/AR-1527.md) | [AR-1532](../tasks/AR-1532.md), [AR-1533](../tasks/AR-1533.md) |
 | [AR-1529](../tasks/AR-1529.md) | [AR-1517](../tasks/AR-1517-ar1309-capacity-decision-unblock.md), [AR-1520](../tasks/AR-1520.md) | [AR-1530](../tasks/AR-1530.md) |
-| [AR-1530](../tasks/AR-1530.md) | [AR-1520](../tasks/AR-1520.md), [AR-1529](../tasks/AR-1529.md) | [AR-1521](../tasks/AR-1521.md), [AR-1522](../tasks/AR-1522.md), [AR-1531](../tasks/AR-1531.md), [AR-1534](../tasks/AR-1534.md), [AR-1537](../tasks/AR-1537.md) |
+| [AR-1530](../tasks/AR-1530.md) | [AR-1520](../tasks/AR-1520.md), [AR-1529](../tasks/AR-1529.md) | [AR-1521](../tasks/AR-1521.md), [AR-1522](../tasks/AR-1522.md), [AR-1531](../tasks/AR-1531.md), [AR-1534](../tasks/AR-1534.md), [AR-1537](../tasks/AR-1537.md), [AR-1538](../tasks/AR-1538.md) |
 | [AR-1531](../tasks/AR-1531.md) | [AR-1520](../tasks/AR-1520.md), [AR-1530](../tasks/AR-1530.md) | [AR-1536](../tasks/AR-1536.md) |
 | [AR-1532](../tasks/AR-1532.md) | [AR-1528](../tasks/AR-1528.md) | [AR-1535](../tasks/AR-1535.md) |
 | [AR-1533](../tasks/AR-1533.md) | [AR-1528](../tasks/AR-1528.md) | [AR-1536](../tasks/AR-1536.md) |
 | [AR-1534](../tasks/AR-1534.md) | [AR-1530](../tasks/AR-1530.md) | [AR-1535](../tasks/AR-1535.md), [AR-1536](../tasks/AR-1536.md) |
 | [AR-1535](../tasks/AR-1535.md) | [AR-1532](../tasks/AR-1532.md), [AR-1534](../tasks/AR-1534.md) | None |
 | [AR-1536](../tasks/AR-1536.md) | [AR-1531](../tasks/AR-1531.md), [AR-1533](../tasks/AR-1533.md), [AR-1534](../tasks/AR-1534.md) | None |
-| [AR-1537](../tasks/AR-1537.md) | [AR-1530](../tasks/AR-1530.md) | [AR-1538](../tasks/AR-1538.md) |
-| [AR-1538](../tasks/AR-1538.md) | [AR-1537](../tasks/AR-1537.md) | None |
+| [AR-1537](../tasks/AR-1537.md) | [AR-1530](../tasks/AR-1530.md) | None |
+| [AR-1538](../tasks/AR-1538.md) | [AR-1530](../tasks/AR-1530.md) | None |
 
 ## Complete AR inventory
 
