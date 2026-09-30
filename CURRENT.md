@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1541](tasks/AR-1541.md): SQLite fence compatibility and isolation | Repair ASB-owned SQLite/WAL fence setup and isolation against coordinator v0.3.50. | After AR-1540 and the v0.3.50 runtime overlay are available, rerun SQLite focused/full gates on the immutable vendor snapshot; current isolated-runtime repair is committed but not yet qualified against v0.3.50. | codex-asb-ar1541-sqlite-20260930 |
+| P0 | [AR-1541](tasks/AR-1541.md): SQLite fence compatibility and isolation | Repair ASB-owned SQLite/WAL fence setup and isolation against coordinator v0.3.50. | Remain blocked pending AR-1540 and AR-1544; focused SQLite compatibility is green at 28/28, but rerun the full v0.3.50 vendor-integrated SQLite/state gates after session and state-worktree compatibility repairs. | codex-asb-ar1541-sqlite-20260930 |
 
 ## Blocked
 
