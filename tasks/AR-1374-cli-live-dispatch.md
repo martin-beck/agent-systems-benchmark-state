@@ -18,11 +18,11 @@
   "plan": "../plans/AR-1374-cli-live-dispatch.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Consume authenticated runtime receipts in production asb run and sweep dispatch; stale AR-1375 duplicate superseded by AR-1523.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Production live-provider dispatch",
-  "updated_at": "2026-09-27T11:14:58+00:00",
+  "updated_at": "2026-09-30T04:54:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1374-cli-live-dispatch"
 }
 ---
@@ -173,3 +173,6 @@ fabricated, no asb-tui/live provider.
 - 2026-09-30: Graph repair AR-1524 superseded the circular AR-1375 duplicate.
   Canonical remaining work is AR-1523's central-orchestrator live authority
   adapter; this task remains blocked and no product qualification is claimed.
+
+- 2026-09-30T04:54:30+00:00: Development qualification uses existing local/mock and strict replay;
+  AR-1523/1390 are complete and live deployment remains optional.
