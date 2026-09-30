@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md) | [AR-1437](../tasks/AR-1437-local-record-replay-campaign.md), [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md), [AR-1447](../tasks/AR-1447-asb-local-campaign-qualification.md) | [AR-1331](../tasks/AR-1331-runtime-replay-launch-authority.md), [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md), [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md), [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md), [AR-1448](../tasks/AR-1448-runtime-replay-authority-source.md), [AR-1449](../tasks/AR-1449-runtime-owned-local-replay-cli.md), [AR-1500](../tasks/AR-1500-development-credential-provider-fixture.md) |
 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md) | [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md) | None |
 | [AR-1445](../tasks/AR-1445-protected-main-topology-repair-openrouter.md) | None | None |
 | [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md) | [AR-1433](../tasks/AR-1433-runtime-mock-attempt-backend.md), [AR-1441](../tasks/AR-1441-first-class-install-bootstrap.md), [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md), [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md) | [AR-1331](../tasks/AR-1331-runtime-replay-launch-authority.md), [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md), [AR-1448](../tasks/AR-1448-runtime-replay-authority-source.md), [AR-1458](../tasks/AR-1458-first-customer-requalification-after-orchestration.md), [AR-1487](../tasks/AR-1487-owner-backed-first-customer-qualification.md) |
@@ -125,16 +124,11 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1562](../tasks/AR-1562.md): ASB TUI development release-channel contract | ar1562-channel-review-fix | Add explicit ASB TUI release-channel selection with a development default. | Ready for independent review on exact rebased head c46be39 atop protected main 73029d9164808ca531713da9ff8fb575968f6d74; hosted PR #396 checks must verify channel-neutral lifecycle metadata and full quality gates before merge. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
+| P0 | [AR-1562](../tasks/AR-1562.md): ASB TUI development release-channel contract | Unclaimed | Add explicit ASB TUI release-channel selection with a development default. | Ready for independent review on exact rebased head c46be39 atop protected main 73029d9164808ca531713da9ff8fb575968f6d74; hosted PR #396 checks must verify channel-neutral lifecycle metadata and full quality gates before merge. |
 | P0 | [AR-1565](../tasks/AR-1565.md): ASB yanked dependency lock repair | Unclaimed | Repair the yanked dependency lock that blocks all protected ASB merges. | Run complete required ASB quality suite and obtain independent lockfile review; cargo-deny/cargo-audit binaries are absent on this host and must run in hosted/qualified environment. Then prepare exact-head PR from signed commit 54505f2. |
 
 ### Blocked (80)
@@ -539,3 +533,6 @@
 | P1 | [AR-0311](../tasks/AR-0311-provider-openai.md): Support a shared OpenAI provider | Unclaimed | Apply one default OpenAI provider profile consistently to all supported agents. | Monitor PR #73 exact head 1128595cd2f93988374be008fcecda07fef9fde4; do not merge until every required exact-head check is green and coordinator authorizes integration. |
 | P1 | [AR-0312](../tasks/AR-0312-provider-ollama.md): Support a shared local Ollama provider | Unclaimed | Apply one pinned local Ollama provider and model configuration to all supported agents. | Monitor fresh exact-head CI for PR #71 at rebased 8137f5baa0535e5d6e74d5a81e1dfbb0deaa2615; do not merge pending coordinator review. |
 | P1 | [AR-0313](../tasks/AR-0313-all-agents-provider.md): Configure one provider for all agents | Unclaimed | Let test plans select one provider profile for every chosen supported agent atomically. | Wait for PR #78 exact-head CI; independently review immutable diff, then merge serially only if every required check is green. |
+| P1 | [AR-0314](../tasks/AR-0314-recording-source-choice.md): Choose matching replay or live provider execution | Unclaimed | Offer matching prior recordings or an actual provider connection without silently choosing either. | Durable release and post-merge verification are complete; no further AR-0314 action. |
+| P1 | [AR-0315](../tasks/AR-0315-provider-parity-conformance.md): Verify cross-agent provider parity | Unclaimed | Conformance-test identical OpenAI and Ollama profiles across the complete supported-agent matrix. | Complete; no further action. |
+| P1 | [AR-0316](../tasks/AR-0316-agent-runtime-bundles.md): Publish reproducible agent runtime bundles | Unclaimed | Make supported agent installations reproducible, license-audited, SBOM-backed, and independently verifiable. | No further action for the released fail-closed catalog; complete runtime closures remain future work and must not be inferred. |

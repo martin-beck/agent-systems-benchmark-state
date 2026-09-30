@@ -3,16 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1562](tasks/AR-1562.md): ASB TUI development release-channel contract | Add explicit ASB TUI release-channel selection with a development default. | Ready for independent review on exact rebased head c46be39 atop protected main 73029d9164808ca531713da9ff8fb575968f6d74; hosted PR #396 checks must verify channel-neutral lifecycle metadata and full quality gates before merge. | ar1562-channel-review-fix |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1562](tasks/AR-1562.md): ASB TUI development release-channel contract | Add explicit ASB TUI release-channel selection with a development default. | Ready for independent review on exact rebased head c46be39 atop protected main 73029d9164808ca531713da9ff8fb575968f6d74; hosted PR #396 checks must verify channel-neutral lifecycle metadata and full quality gates before merge. | - |
 | P0 | [AR-1565](tasks/AR-1565.md): ASB yanked dependency lock repair | Repair the yanked dependency lock that blocks all protected ASB merges. | Run complete required ASB quality suite and obtain independent lockfile review; cargo-deny/cargo-audit binaries are absent on this host and must run in hosted/qualified environment. Then prepare exact-head PR from signed commit 54505f2. | - |
 
 ## Blocked
