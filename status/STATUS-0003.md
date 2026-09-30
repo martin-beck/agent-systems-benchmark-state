@@ -1,5 +1,30 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+    AR_1453 --> AR_1525
+    AR_1453 --> AR_1526
+    AR_1455 --> AR_1487
+    AR_1455 --> AR_1488
+    AR_1455 --> AR_1496
+    AR_1455 --> AR_1526
+    AR_1456 --> AR_1333
+    AR_1456 --> AR_1458
+    AR_1456 --> AR_1460
+    AR_1456 --> AR_1461
+    AR_1456 --> AR_1526
+    AR_1457 --> AR_1459
+    AR_1458 --> AR_1460
+    AR_1460 --> AR_1461
+    AR_1460 --> AR_1462
+    AR_1461 --> AR_1463
+    AR_1461 --> AR_1489
+    AR_1461 --> AR_1490
+    AR_1461 --> AR_1491
+    AR_1461 --> AR_1492
+    AR_1461 --> AR_1493
+    AR_1462 --> AR_1489
+    AR_1462 --> AR_1490
+    AR_1462 --> AR_1491
+    AR_1462 --> AR_1492
     AR_1462 --> AR_1493
     AR_1471 --> AR_1473
     AR_1471 --> AR_1474
@@ -162,6 +187,7 @@
     AR_1544 --> AR_1543
     AR_1545 --> AR_1522
     AR_1546 --> AR_1522
+    AR_1547 --> AR_1548
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -668,4 +694,3 @@
 | [AR-1469](../tasks/AR-1469-ar1392-protected-topology-repair.md) | None | None |
 | [AR-1470](../tasks/AR-1470-runtime-certificate-chain-enrollment.md) | [AR-1357](../tasks/AR-1357-runtime-attested-enrollment-record.md), [AR-1359](../tasks/AR-1359-runtime-control-bridge.md), [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md) | None |
 | [AR-1471](../tasks/AR-1471-control-to-runtime-chain-binding.md) | [AR-1357](../tasks/AR-1357-runtime-attested-enrollment-record.md), [AR-1359](../tasks/AR-1359-runtime-control-bridge.md), [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md) | [AR-1473](../tasks/AR-1473-runtime-owned-enrollment-source.md), [AR-1474](../tasks/AR-1474-runtime-authority-input-resolver.md) |
-| [AR-1472](../tasks/AR-1472-authenticated-live-dispatch-adapter.md) | [AR-1363](../tasks/AR-1363-authenticated-control-receipt-source.md), [AR-1373](../tasks/AR-1373-authenticated-receipt-source.md) | [AR-1473](../tasks/AR-1473-runtime-owned-enrollment-source.md), [AR-1474](../tasks/AR-1474-runtime-authority-input-resolver.md), [AR-1475](../tasks/AR-1475-asb-metrics-evidence-fixture-repair.md), [AR-1476](../tasks/AR-1476-workspace-coverage-floor-repair.md), [AR-1477](../tasks/AR-1477-authority-resolver-coverage-tests.md), [AR-1480](../tasks/AR-1480-runtime-control-cli-composition.md), [AR-1481](../tasks/AR-1481-runtime-owned-cli-entry-bootstrap.md), [AR-1482](../tasks/AR-1482-control-runtime-process-bootstrap.md), [AR-1483](../tasks/AR-1483-authenticated-control-process-owner.md), [AR-1484](../tasks/AR-1484-runtime-control-owner-contract.md), [AR-1485](../tasks/AR-1485-process-owner-local-mock-lifecycle.md) |

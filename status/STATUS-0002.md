@@ -2974,6 +2974,20 @@
 | Summary | Adopt coordinator v0.3.52 and rerun the ASB state-worktree compatibility gates after the rejected v0.3.51 tag. |
 | Next action | Promote and claim; record v0.3.52 vendor adoption, rerun AR-1540/AR-1541 compatibility and full state gates on the clean snapshot, then release AR-1544/AR-1534 successors with exact evidence. |
 
+### AR-1548 — v0.3.52 formal and vendor fixture compatibility repair
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair ASB formal-tier and vendor-fixture compatibility defects found after adopting coordinator v0.3.52. |
+| Next action | Promote after AR-1547; repair the ASB-owned formal-tier and vendor-fixture compatibility defects exposed by the v0.3.52 full state gate, then rerun focused and full gates. |
+
 
 ## Dependency graph
 
@@ -3597,6 +3611,7 @@ flowchart LR
         AR_1545["AR-1545 - Planned"]:::status_planned
         AR_1546["AR-1546 - Planned"]:::status_planned
         AR_1547["AR-1547 - In progress"]:::status_in_progress
+        AR_1548["AR-1548 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4905,28 +4920,3 @@ flowchart LR
     AR_1453 --> AR_1458
     AR_1453 --> AR_1523
     AR_1453 --> AR_1524
-    AR_1453 --> AR_1525
-    AR_1453 --> AR_1526
-    AR_1455 --> AR_1487
-    AR_1455 --> AR_1488
-    AR_1455 --> AR_1496
-    AR_1455 --> AR_1526
-    AR_1456 --> AR_1333
-    AR_1456 --> AR_1458
-    AR_1456 --> AR_1460
-    AR_1456 --> AR_1461
-    AR_1456 --> AR_1526
-    AR_1457 --> AR_1459
-    AR_1458 --> AR_1460
-    AR_1460 --> AR_1461
-    AR_1460 --> AR_1462
-    AR_1461 --> AR_1463
-    AR_1461 --> AR_1489
-    AR_1461 --> AR_1490
-    AR_1461 --> AR_1491
-    AR_1461 --> AR_1492
-    AR_1461 --> AR_1493
-    AR_1462 --> AR_1489
-    AR_1462 --> AR_1490
-    AR_1462 --> AR_1491
-    AR_1462 --> AR_1492
