@@ -1,5 +1,91 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+    AR_1385 --> AR_1388
+    AR_1385 --> AR_1390
+    AR_1385 --> AR_1391
+    AR_1385 --> AR_1392
+    AR_1385 --> AR_1393
+    AR_1385 --> AR_1432
+    AR_1385 --> AR_1433
+    AR_1385 --> AR_1434
+    AR_1388 --> AR_1390
+    AR_1388 --> AR_1391
+    AR_1388 --> AR_1392
+    AR_1388 --> AR_1393
+    AR_1388 --> AR_1432
+    AR_1388 --> AR_1433
+    AR_1388 --> AR_1434
+    AR_1393 --> AR_1432
+    AR_1393 --> AR_1433
+    AR_1393 --> AR_1434
+    AR_1394 --> AR_1395
+    AR_1394 --> AR_1399
+    AR_1395 --> AR_1396
+    AR_1395 --> AR_1401
+    AR_1396 --> AR_1400
+    AR_1397 --> AR_1495
+    AR_1398 --> AR_1421
+    AR_1399 --> AR_1396
+    AR_1399 --> AR_1400
+    AR_1399 --> AR_1408
+    AR_1400 --> AR_1401
+    AR_1400 --> AR_1404
+    AR_1400 --> AR_1408
+    AR_1401 --> AR_1402
+    AR_1401 --> AR_1409
+    AR_1401 --> AR_1411
+    AR_1401 --> AR_1412
+    AR_1401 --> AR_1413
+    AR_1401 --> AR_1416
+    AR_1402 --> AR_1403
+    AR_1402 --> AR_1404
+    AR_1402 --> AR_1410
+    AR_1402 --> AR_1416
+    AR_1403 --> AR_1423
+    AR_1404 --> AR_1410
+    AR_1405 --> AR_1406
+    AR_1405 --> AR_1407
+    AR_1406 --> AR_1414
+    AR_1408 --> AR_1409
+    AR_1408 --> AR_1411
+    AR_1408 --> AR_1412
+    AR_1408 --> AR_1413
+    AR_1408 --> AR_1417
+    AR_1408 --> AR_1418
+    AR_1409 --> AR_1410
+    AR_1410 --> AR_1415
+    AR_1411 --> AR_1410
+    AR_1412 --> AR_1410
+    AR_1413 --> AR_1410
+    AR_1414 --> AR_1415
+    AR_1415 --> AR_1416
+    AR_1415 --> AR_1423
+    AR_1416 --> AR_1417
+    AR_1416 --> AR_1418
+    AR_1416 --> AR_1421
+    AR_1416 --> AR_1424
+    AR_1416 --> AR_1430
+    AR_1417 --> AR_1419
+    AR_1417 --> AR_1420
+    AR_1417 --> AR_1425
+    AR_1418 --> AR_1419
+    AR_1418 --> AR_1420
+    AR_1418 --> AR_1425
+    AR_1419 --> AR_1420
+    AR_1419 --> AR_1423
+    AR_1420 --> AR_1424
+    AR_1421 --> AR_1427
+    AR_1423 --> AR_1424
+    AR_1423 --> AR_1426
+    AR_1423 --> AR_1430
+    AR_1424 --> AR_1425
+    AR_1425 --> AR_1426
+    AR_1427 --> AR_1431
+    AR_1430 --> AR_1424
+    AR_1433 --> AR_1446
+    AR_1433 --> AR_1447
+    AR_1433 --> AR_1451
+    AR_1433 --> AR_1452
     AR_1433 --> AR_1456
     AR_1433 --> AR_1496
     AR_1434 --> AR_1435
@@ -243,6 +329,10 @@
     AR_1549 --> AR_1542
     AR_1549 --> AR_1543
     AR_1549 --> AR_1550
+    AR_1552 --> AR_1553
+    AR_1552 --> AR_1555
+    AR_1553 --> AR_1555
+    AR_1554 --> AR_1555
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -737,12 +827,3 @@
 | [AR-1457](../tasks/AR-1457-retire-superseded-pr-332.md) | [AR-1453](../tasks/AR-1453-frontend-orchestration-wiring.md) | [AR-1459](../tasks/AR-1459-retire-stale-state-prs.md) |
 | [AR-1458](../tasks/AR-1458-first-customer-requalification-after-orchestration.md) | [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md), [AR-1453](../tasks/AR-1453-frontend-orchestration-wiring.md), [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md) | [AR-1460](../tasks/AR-1460-current-main-first-customer-requalification.md) |
 | [AR-1459](../tasks/AR-1459-retire-stale-state-prs.md) | [AR-1457](../tasks/AR-1457-retire-superseded-pr-332.md) | None |
-| [AR-1460](../tasks/AR-1460-current-main-first-customer-requalification.md) | [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md), [AR-1458](../tasks/AR-1458-first-customer-requalification-after-orchestration.md) | [AR-1461](../tasks/AR-1461-first-customer-release-readiness.md), [AR-1462](../tasks/AR-1462-pinned-release-toolchain-bundle-workflow.md) |
-| [AR-1461](../tasks/AR-1461-first-customer-release-readiness.md) | [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md), [AR-1460](../tasks/AR-1460-current-main-first-customer-requalification.md) | [AR-1463](../tasks/AR-1463-current-main-requalification-after-capture.md), [AR-1489](../tasks/AR-1489-first-customer-package-consumption.md), [AR-1490](../tasks/AR-1490-fresh-package-runtime-acceptance.md), [AR-1491](../tasks/AR-1491-self-contained-package-qualification-fixture.md), [AR-1492](../tasks/AR-1492-customer-bundle-signing-handoff.md), [AR-1493](../tasks/AR-1493-release-authority-enrollment-handoff.md) |
-| [AR-1462](../tasks/AR-1462-pinned-release-toolchain-bundle-workflow.md) | [AR-1460](../tasks/AR-1460-current-main-first-customer-requalification.md) | [AR-1489](../tasks/AR-1489-first-customer-package-consumption.md), [AR-1490](../tasks/AR-1490-fresh-package-runtime-acceptance.md), [AR-1491](../tasks/AR-1491-self-contained-package-qualification-fixture.md), [AR-1492](../tasks/AR-1492-customer-bundle-signing-handoff.md), [AR-1493](../tasks/AR-1493-release-authority-enrollment-handoff.md) |
-| [AR-1463](../tasks/AR-1463-current-main-requalification-after-capture.md) | [AR-1330](../tasks/AR-1330-live-capture-sealed-cassette.md), [AR-1461](../tasks/AR-1461-first-customer-release-readiness.md) | None |
-| [AR-1464](../tasks/AR-1464-formal-capacity-input-provisioning.md) | None | None |
-| [AR-1465](../tasks/AR-1465-reviewed-seed-archival-recovery.md) | None | None |
-| [AR-1466](../tasks/AR-1466-state-ci-format-repair.md) | None | None |
-| [AR-1467](../tasks/AR-1467-terminal-ar-metadata-reconciliation.md) | None | None |
-| [AR-1468](../tasks/AR-1468-control-authority-materialization-successor.md) | [AR-1288](../tasks/AR-1288-certificate-chain-authz.md), [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md), [AR-1364](../tasks/AR-1364-authenticated-chain-enrollment.md), [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md) | None |

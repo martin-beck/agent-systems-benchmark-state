@@ -3030,6 +3030,62 @@
 | Summary | Optional future production-live platform authority bootstrap; not a development qualification requirement. |
 | Next action | No development action: deployment-owned authenticated authority is optional future production hardening. If live-provider production is later authorized, create a separately scoped successor; local/mock authority is sufficient for development qualification. |
 
+### AR-1552 — Dynamic workload-backed plan generation
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Generate benchmark plans from the canonical supported-workload catalog, including workloads added later. |
+| Next action | Promote and claim after dependency review; implement the canonical catalog-backed workload selector and valid plan materializer. |
+
+### AR-1553 — Plan creation CLI workflow
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Expose dynamic workload plan creation through a simple ASB CLI command. |
+| Next action | Promote after AR-1552; add the discoverable asb plan-create command and noninteractive selection options. |
+
+### AR-1554 — Global human-readable output mode
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Make ASB commands human-readable by default and preserve JSON through a global --json flag. |
+| Next action | Promote and claim after dependency review; add the global human-readable output renderer and --json override. |
+
+### AR-1555 — Plan and output workflow qualification
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Qualify plan creation and output modes as one simple ASB user journey. |
+| Next action | Promote after AR-1552, AR-1553 and AR-1554; run cross-command qualification and publish the user workflow. |
+
 
 ## Dependency graph
 
@@ -3657,6 +3713,10 @@ flowchart LR
         AR_1549["AR-1549 - Done"]:::status_done
         AR_1550["AR-1550 - Done"]:::status_done
         AR_1551["AR-1551 - Cancelled"]:::status_cancelled
+        AR_1552["AR-1552 - Planned"]:::status_planned
+        AR_1553["AR-1553 - Planned"]:::status_planned
+        AR_1554["AR-1554 - Planned"]:::status_planned
+        AR_1555["AR-1555 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4827,89 +4887,3 @@ flowchart LR
     AR_1384 --> AR_1389
     AR_1385 --> AR_1386
     AR_1385 --> AR_1387
-    AR_1385 --> AR_1388
-    AR_1385 --> AR_1390
-    AR_1385 --> AR_1391
-    AR_1385 --> AR_1392
-    AR_1385 --> AR_1393
-    AR_1385 --> AR_1432
-    AR_1385 --> AR_1433
-    AR_1385 --> AR_1434
-    AR_1388 --> AR_1390
-    AR_1388 --> AR_1391
-    AR_1388 --> AR_1392
-    AR_1388 --> AR_1393
-    AR_1388 --> AR_1432
-    AR_1388 --> AR_1433
-    AR_1388 --> AR_1434
-    AR_1393 --> AR_1432
-    AR_1393 --> AR_1433
-    AR_1393 --> AR_1434
-    AR_1394 --> AR_1395
-    AR_1394 --> AR_1399
-    AR_1395 --> AR_1396
-    AR_1395 --> AR_1401
-    AR_1396 --> AR_1400
-    AR_1397 --> AR_1495
-    AR_1398 --> AR_1421
-    AR_1399 --> AR_1396
-    AR_1399 --> AR_1400
-    AR_1399 --> AR_1408
-    AR_1400 --> AR_1401
-    AR_1400 --> AR_1404
-    AR_1400 --> AR_1408
-    AR_1401 --> AR_1402
-    AR_1401 --> AR_1409
-    AR_1401 --> AR_1411
-    AR_1401 --> AR_1412
-    AR_1401 --> AR_1413
-    AR_1401 --> AR_1416
-    AR_1402 --> AR_1403
-    AR_1402 --> AR_1404
-    AR_1402 --> AR_1410
-    AR_1402 --> AR_1416
-    AR_1403 --> AR_1423
-    AR_1404 --> AR_1410
-    AR_1405 --> AR_1406
-    AR_1405 --> AR_1407
-    AR_1406 --> AR_1414
-    AR_1408 --> AR_1409
-    AR_1408 --> AR_1411
-    AR_1408 --> AR_1412
-    AR_1408 --> AR_1413
-    AR_1408 --> AR_1417
-    AR_1408 --> AR_1418
-    AR_1409 --> AR_1410
-    AR_1410 --> AR_1415
-    AR_1411 --> AR_1410
-    AR_1412 --> AR_1410
-    AR_1413 --> AR_1410
-    AR_1414 --> AR_1415
-    AR_1415 --> AR_1416
-    AR_1415 --> AR_1423
-    AR_1416 --> AR_1417
-    AR_1416 --> AR_1418
-    AR_1416 --> AR_1421
-    AR_1416 --> AR_1424
-    AR_1416 --> AR_1430
-    AR_1417 --> AR_1419
-    AR_1417 --> AR_1420
-    AR_1417 --> AR_1425
-    AR_1418 --> AR_1419
-    AR_1418 --> AR_1420
-    AR_1418 --> AR_1425
-    AR_1419 --> AR_1420
-    AR_1419 --> AR_1423
-    AR_1420 --> AR_1424
-    AR_1421 --> AR_1427
-    AR_1423 --> AR_1424
-    AR_1423 --> AR_1426
-    AR_1423 --> AR_1430
-    AR_1424 --> AR_1425
-    AR_1425 --> AR_1426
-    AR_1427 --> AR_1431
-    AR_1430 --> AR_1424
-    AR_1433 --> AR_1446
-    AR_1433 --> AR_1447
-    AR_1433 --> AR_1451
-    AR_1433 --> AR_1452
