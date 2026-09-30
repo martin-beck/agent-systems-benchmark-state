@@ -79,12 +79,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1548](../tasks/AR-1548.md): v0.3.52 formal and vendor fixture compatibility repair | asb-ar1548-superseded-by-1547-20260930 | Repair ASB formal-tier and vendor-fixture compatibility defects found after adopting coordinator v0.3.52. | Promote after AR-1547; repair the ASB-owned formal-tier and vendor-fixture compatibility defects exposed by the v0.3.52 full state gate, then rerun focused and full gates. |
-
 ### Blocked (89)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -518,3 +512,4 @@
 | P1 | [AR-0848](../tasks/AR-0848-native-x86-capacity.md): Qualify native x86 capacity | Unclaimed | Qualify authorized disposable native x86_64 capacity on a development host. | Await fresh independent immutable review of rebased signed head 45604cd323c5de0ab9c7eaf0b6a39d90f4d43002 on exact product main f42645dd05f17eca5635ca2e82057b703a03a1c3; only then update PR #58 by exact force-with-lease and require fresh exact-head CI. |
 | P1 | [AR-0849](../tasks/AR-0849-ar0801-documentation-repair.md): Repair AR-0801 documentation consistency | Unclaimed | Repair stale AR-0801 implementation and CLI documentation claims. | Align AR-0801 task text, generated status next_action, and product README with the implemented and merged CLI command surface; verify links and exact command examples. |
 | P1 | [AR-0851](../tasks/AR-0851-shared-workflow-coordinator.md): Adopt shared workflow coordinator | Unclaimed | Adopt the canonical coordinator as a pinned offline-capable vendor artifact while preserving ASB extensions. | Rebase the immutable v0.1.3 integration tree onto current state main under coordinator serialization, rerun exact-tree gates, and present a signed review candidate; do not publish or merge before review. |
+| P1 | [AR-0852](../tasks/AR-0852-coordinator-path-isolation.md): Adopt coordinator path isolation fix | Unclaimed | Adopt the path-exclusive coordinator commit fix discovered during live integration. | Preserve merged v0.1.4 effect e52ce3aa without history rewrite; complete a focused signed+DCO repair or documented signed state replacement under AR-0853, then re-audit live main before releasing AR-0852. |
