@@ -1,0 +1,5 @@
+AR-1564 lifecycle receipt
+merged_sha=e8afc588cbe1c1730add1f8d636fa3241276cc9a
+pr=https://github.com/martin-beck/agent-systems-benchmark/pull/399
+checks=all required hosted checks passed
+review=independent rollback-safety review approved
