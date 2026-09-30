@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1542](tasks/AR-1542.md): AR-1307 runner integration closure | Close ASB-owned AR-1307 runner regressions after the coordinator v0.3.50 compatibility repairs and prepare the formal-readiness handoff. | Promote after AR-1532, AR-1534, AR-1540, AR-1541 and AR-1549 are done; run the exact v0.3.53 vendor-integrated AR-1307 runner gates and hand evidence to AR-1535. | - |
+| P0 | [AR-1542](tasks/AR-1542.md): AR-1307 runner integration closure | Close ASB-owned AR-1307 runner regressions after the coordinator v0.3.50 compatibility repairs and prepare the formal-readiness handoff. | Promote after AR-1532, AR-1534, AR-1540, AR-1541 and AR-1549 are done; run the exact v0.3.53 vendor-integrated AR-1307 runner gates and hand evidence to AR-1535. | asb-ar1542-ar1307-closure-20260930 |
 
 ## Blocked
 
