@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1544](tasks/AR-1544.md): State-worktree observation compatibility | Repair the coordinator v0.3.50 state-worktree observation regression required by ASB coordination and AR-1307/1308 gates. | Remain blocked pending coordinator-state AR-0025: merge/release the project_scan repair, then import the exact immutable coordinator commit through the approved vendor workflow and rerun the AR-1540/AR-1541/full state gates. | - |
+| P0 | [AR-1544](tasks/AR-1544.md): State-worktree observation compatibility | Repair the coordinator v0.3.50 state-worktree observation regression required by ASB coordination and AR-1307/1308 gates. | Remain blocked pending coordinator-state AR-0025: merge/release the project_scan repair, then import the exact immutable coordinator commit through the approved vendor workflow and rerun the AR-1540/AR-1541/full state gates. | asb-ar1544-v0351-adoption-20260930 |
 
 ## Blocked
 
