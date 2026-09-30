@@ -129,7 +129,7 @@ def _validate_inputs(receipt: dict[str, Any], profile: str = "signed") -> list[s
         issues.append("pinned JDK must be major version 17")
     if not isinstance(inputs, dict) or inputs.get("tlc_jar_sha256") != REQUIRED_TLC_SHA256:
         issues.append("pinned TLC artifact digest is not the reviewed artifact")
-    digest_keys = (
+    digest_keys: tuple[str, ...] = (
         "image_sha256",
         "model_config_sha256",
         "source_tree_sha256",

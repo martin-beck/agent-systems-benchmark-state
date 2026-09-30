@@ -60,8 +60,15 @@ class VendorTest(unittest.TestCase):
             source = self.source / source_name
             destination = ROOT / destination_name
             source.parent.mkdir(parents=True, exist_ok=True)
-            source.write_bytes(destination.read_bytes())
-            source.chmod(destination.stat().st_mode & 0o777)
+            if destination.is_file():
+                source.write_bytes(destination.read_bytes())
+                source.chmod(destination.stat().st_mode & 0o777)
+            else:
+                # New coordinator releases may add allowlisted files before
+                # this downstream checkout has consumed the release. Keep the
+                # unit fixture self-contained; the immutable release sync
+                # gate validates the real source files separately.
+                source.write_text(f"fixture:{destination_name}\n")
 
     def tearDown(self) -> None:
         self.temporary.cleanup()
