@@ -3196,7 +3196,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Clone and build the current asb-tui main head for the ASB dev channel. |
-| Next action | Implement bounded dev-channel clone, exact main-head resolution, locked release build, temporary staging, digest capture, cleanup, and atomic materialization. |
+| Next action | Ready for independent review/PR checks at exact branch head a8d45db atop protected main 6d4014204f0e08ae7f037d63cac0051e5d3def0e. Review bounded clone/head resolution, fixed git/cargo tools, private temp workspace, 15-minute timeout, digest-bound atomic dev installation, cleanup, and stable-channel isolation. |
 
 ### AR-1564 — ASB development TUI lifecycle integration
 
@@ -4795,10 +4795,3 @@ flowchart LR
     AR_1302 --> AR_1307
     AR_1302 --> AR_1515
     AR_1304 --> AR_1308
-    AR_1304 --> AR_1516
-    AR_1304 --> AR_1517
-    AR_1304 --> AR_1519
-    AR_1307 --> AR_1309
-    AR_1308 --> AR_1309
-    AR_1310 --> AR_1316
-    AR_1310 --> AR_1319
