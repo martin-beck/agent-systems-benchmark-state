@@ -2,8 +2,8 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `d178ef34747e99747e00b0ef7350c789eec62198`
-- Local origin/main: `d178ef34747e99747e00b0ef7350c789eec62198`
+- Product remote main: `75a7e630ea739e45b4ee41d02c17f5804891c113`
+- Local origin/main: `75a7e630ea739e45b4ee41d02c17f5804891c113`
 - Primary worktree head: `bd7d10d4a760a84fa42de2b1fa9e97e8ea85ba09`
 
 ## Open pull requests
@@ -22,15 +22,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36695964160 | `d178ef34747e` | push | Hosted portability and native qualification | completed:success |
-| 36695964146 | `d178ef34747e` | push | Repository quality | completed:failure |
-| 36695964141 | `d178ef34747e` | push | Fault assurance | completed:success |
-| 36695964088 | `d178ef34747e` | push | Formal assurance | in_progress:- |
-| 36695964064 | `d178ef34747e` | push | Huawei MIT source headers | completed:success |
-| 36695964063 | `d178ef34747e` | push | Emulated aarch64 portability | in_progress:- |
-| 36695964052 | `d178ef34747e` | push | Rust verification | in_progress:- |
-| 36695964043 | `d178ef34747e` | push | Credential-free benchmark path | completed:success |
-| 36695657466 | `e36d69ab9966` | push | Credential-free benchmark path | completed:success |
-| 36695657431 | `e36d69ab9966` | push | Emulated aarch64 portability | completed:cancelled |
-| 36695657413 | `e36d69ab9966` | push | Rust verification | completed:failure |
-| 36695657386 | `e36d69ab9966` | push | Formal assurance | completed:cancelled |
+| 36697392382 | `75a7e630ea73` | push | Hosted portability and native qualification | in_progress:- |
+| 36697392284 | `75a7e630ea73` | push | Emulated aarch64 portability | pending:- |
+| 36697392006 | `75a7e630ea73` | push | Huawei MIT source headers | completed:success |
+| 36697391951 | `75a7e630ea73` | push | Credential-free benchmark path | in_progress:- |
+| 36697391939 | `75a7e630ea73` | push | Rust verification | pending:- |
+| 36697391897 | `75a7e630ea73` | push | Fault assurance | pending:- |
+| 36697391890 | `75a7e630ea73` | push | Formal assurance | pending:- |
+| 36697391872 | `75a7e630ea73` | push | Repository quality | pending:- |
+| 36697385617 | `2bc138bec3b5` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 36697385444 | `2bc138bec3b5` | pull_request | Emulated aarch64 portability | pending:- |
+| 36697385391 | `2bc138bec3b5` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 36697385310 | `2bc138bec3b5` | pull_request | Formal assurance | in_progress:- |

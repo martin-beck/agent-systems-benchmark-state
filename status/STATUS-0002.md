@@ -3100,6 +3100,20 @@
 | Summary | Repair and verify the protected-main repository-quality gate after the plan/output merge series. |
 | Next action | Promote after AR-1555 functional evidence; diagnose and repair the protected-main merge-topology gate for the plan/output series, then verify the exact current main checks. |
 
+### AR-1557 — Protected-main receipt signature repair
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair protected-main signature evidence after the receipt PR rebase generated an unsigned topic commit. |
+| Next action | Promote and repair the unsigned receipt merge at 75a7e63 with a locally signed topic commit and protected non-squash merge; verify exact-main policy and hosted checks. |
+
 
 ## Dependency graph
 
@@ -3732,6 +3746,7 @@ flowchart LR
         AR_1554["AR-1554 - Done"]:::status_done
         AR_1555["AR-1555 - In progress"]:::status_in_progress
         AR_1556["AR-1556 - Planned"]:::status_planned
+        AR_1557["AR-1557 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4856,28 +4871,3 @@ flowchart LR
     AR_1373 --> AR_1391
     AR_1373 --> AR_1392
     AR_1373 --> AR_1393
-    AR_1373 --> AR_1472
-    AR_1373 --> AR_1524
-    AR_1374 --> AR_1375
-    AR_1377 --> AR_1378
-    AR_1377 --> AR_1379
-    AR_1377 --> AR_1380
-    AR_1377 --> AR_1381
-    AR_1377 --> AR_1382
-    AR_1377 --> AR_1383
-    AR_1377 --> AR_1384
-    AR_1377 --> AR_1385
-    AR_1377 --> AR_1386
-    AR_1377 --> AR_1387
-    AR_1377 --> AR_1388
-    AR_1378 --> AR_1379
-    AR_1378 --> AR_1380
-    AR_1378 --> AR_1381
-    AR_1378 --> AR_1382
-    AR_1378 --> AR_1386
-    AR_1378 --> AR_1387
-    AR_1378 --> AR_1388
-    AR_1379 --> AR_1473
-    AR_1379 --> AR_1474
-    AR_1379 --> AR_1475
-    AR_1379 --> AR_1476

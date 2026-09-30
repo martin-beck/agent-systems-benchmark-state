@@ -1,5 +1,7 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md) | [AR-1332](../tasks/AR-1332-record-live-replay-offline.md), [AR-1433](../tasks/AR-1433-runtime-mock-attempt-backend.md), [AR-1447](../tasks/AR-1447-asb-local-campaign-qualification.md) | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md), [AR-1458](../tasks/AR-1458-first-customer-requalification-after-orchestration.md), [AR-1460](../tasks/AR-1460-current-main-first-customer-requalification.md), [AR-1461](../tasks/AR-1461-first-customer-release-readiness.md), [AR-1526](../tasks/AR-1526.md) |
+| [AR-1457](../tasks/AR-1457-retire-superseded-pr-332.md) | [AR-1453](../tasks/AR-1453-frontend-orchestration-wiring.md) | [AR-1459](../tasks/AR-1459-retire-stale-state-prs.md) |
 | [AR-1458](../tasks/AR-1458-first-customer-requalification-after-orchestration.md) | [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md), [AR-1453](../tasks/AR-1453-frontend-orchestration-wiring.md), [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md) | [AR-1460](../tasks/AR-1460-current-main-first-customer-requalification.md) |
 | [AR-1459](../tasks/AR-1459-retire-stale-state-prs.md) | [AR-1457](../tasks/AR-1457-retire-superseded-pr-332.md) | None |
 | [AR-1460](../tasks/AR-1460-current-main-first-customer-requalification.md) | [AR-1456](../tasks/AR-1456-local-mock-multi-agent-campaign-successor.md), [AR-1458](../tasks/AR-1458-first-customer-requalification-after-orchestration.md) | [AR-1461](../tasks/AR-1461-first-customer-release-readiness.md), [AR-1462](../tasks/AR-1462-pinned-release-toolchain-bundle-workflow.md) |
@@ -98,6 +100,7 @@
 | [AR-1554](../tasks/AR-1554.md) | None | [AR-1555](../tasks/AR-1555.md) |
 | [AR-1555](../tasks/AR-1555.md) | [AR-1552](../tasks/AR-1552.md), [AR-1553](../tasks/AR-1553.md), [AR-1554](../tasks/AR-1554.md) | [AR-1556](../tasks/AR-1556.md) |
 | [AR-1556](../tasks/AR-1556.md) | [AR-1555](../tasks/AR-1555.md) | None |
+| [AR-1557](../tasks/AR-1557.md) | None | None |
 
 ## Complete AR inventory
 
@@ -192,7 +195,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (49)
+### Planned (50)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -214,6 +217,7 @@
 | P0 | [AR-1545](../tasks/AR-1545.md): AR-1307 formal-input readiness repair | Unclaimed | Audit and repair the AR-1307 formal-input handoff after development runner integration, without executing qualification. | Formal-only work: after AR-1535 supplies reviewed inputs, inventory and independently verify every exact AR-1307 formal input for AR-1522. Do not block or alter the completed unsigned-development path. |
 | P0 | [AR-1546](../tasks/AR-1546.md): AR-1308 formal capacity-input readiness repair | Unclaimed | Audit and repair the AR-1308 capacity/input handoff after diagnostic QEMU integration, without executing qualification. | Formal-only work: after AR-1531 and AR-1536, verify the exact 8 GiB/8 GiB fixture and AR-1308 formal inputs for AR-1522. Do not block or alter the completed unsigned-development path. |
 | P0 | [AR-1556](../tasks/AR-1556.md): Protected-main merge-topology gate repair | Unclaimed | Repair and verify the protected-main repository-quality gate after the plan/output merge series. | Promote after AR-1555 functional evidence; diagnose and repair the protected-main merge-topology gate for the plan/output series, then verify the exact current main checks. |
+| P0 | [AR-1557](../tasks/AR-1557.md): Protected-main receipt signature repair | Unclaimed | Repair protected-main signature evidence after the receipt PR rebase generated an unsigned topic commit. | Promote and repair the unsigned receipt merge at 75a7e63 with a locally signed topic commit and protected non-squash merge; verify exact-main policy and hosted checks. |
 | P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
 | P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
 | P1 | [AR-0810](../tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Unclaimed | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project&#x27;s GitHub Pages site. |
@@ -525,7 +529,3 @@
 | P1 | [AR-0803](../tasks/AR-0803-frontend-control-api.md): Define the frontend control API | Unclaimed | Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary. | Await coordinator authorization to integrate exact green PR #63 head 8d7d90014dbcf4df2f08be90b08392776d702a11; do not rewrite or merge meanwhile. |
 | P1 | [AR-0804](../tasks/AR-0804-tui-settings-wizard.md): Build the terminal settings wizard | Unclaimed | Guide users through agents, providers, workloads, resources, replay, metrics, and output settings. | Complete; no further action. |
 | P1 | [AR-0805](../tasks/AR-0805-tui-run-control.md): Add terminal run control and status | Unclaimed | Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI. | Complete; no further action. |
-| P1 | [AR-0806](../tasks/AR-0806-tui-history-analysis.md): Add terminal history and analysis | Unclaimed | Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI. | Repair merge DCO trailer and add a signed normal ancestry commit; rerun exact-main gates. |
-| P1 | [AR-0812](../tasks/AR-0812-modern-terminal-rendering.md): Deliver modern adaptive terminal rendering | Unclaimed | Use modern terminal capabilities for polished visual fidelity with robust SSH/multiplexer fallbacks. | Implement capability-aware premium rendering, channel detection, and resize-safe responsive layouts. |
-| P1 | [AR-0813](../tasks/AR-0813-remote-control-transport.md): Add secure remote control transport | Unclaimed | Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client. | AR-1259 remains open after unsigned recovery merge 8b81be4; await repository-level signed protected-main recovery and exact-main policy before closing AR-0813. |
-| P1 | [AR-0819](../tasks/AR-0819-ssh-remote-bootstrap.md): Add SSH remote discovery and bootstrap | Unclaimed | Use configured SSH hosts as the safe default path to a remote runner and help establish dedicated key authentication. | Integrate signed no-ff PR #98 onto current main, then run and verify all exact-main post-merge workflows before release. |
