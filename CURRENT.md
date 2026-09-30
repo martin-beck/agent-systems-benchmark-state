@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1541](tasks/AR-1541.md): SQLite fence compatibility and isolation | Repair ASB-owned SQLite/WAL fence setup and isolation against coordinator v0.3.50. | Remain blocked pending AR-1540 and AR-1544; focused SQLite compatibility is green at 28/28, but rerun the full v0.3.50 vendor-integrated SQLite/state gates after session and state-worktree compatibility repairs. | codex-asb-ar1541-sqlite-20260930 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -82,6 +76,7 @@ Never edit this file directly.
 | P0 | [AR-1538](tasks/AR-1538.md): Coordinator v0.3.50 downstream integration | v0.3.50 sync and immutable vendor verification pass, but the coordinator lifecycle/session contract is incompatible with ASB-owned tests and SQLite fence fixtures; a narrower compatibility successor is required. | Remain blocked pending AR-1539 compatibility repair. Preserve branch preserve/ar1538-v0350-mixed-snapshot and do not publish the failing integration. | - |
 | P0 | [AR-1539](tasks/AR-1539.md): Coordinator v0.3.50 compatibility repair | Compatibility audit reproduced the v0.3.50 failures and split them into AR-1540 session/lifecycle and AR-1541 SQLite fence repairs; no incompatible runtime is publishable. | Remain blocked pending AR-1540 and AR-1541. Preserve the exact v0.3.50 verifier result and the disposable failure evidence; resume AR-1534 only after both successors pass. | - |
 | P0 | [AR-1540](tasks/AR-1540.md): Session and lifecycle contract compatibility | Repair ASB-owned session/checkpoint/recovery integration against coordinator v0.3.50. | Remain blocked pending AR-1544 state-worktree observation compatibility; preserve the clean 77/78 v0.3.50-compatible focused tests and the exact failing state-worktree contract, then rerun the full suite after AR-1544. | - |
+| P0 | [AR-1541](tasks/AR-1541.md): SQLite fence compatibility and isolation | Repair ASB-owned SQLite/WAL fence setup and isolation against coordinator v0.3.50. | Remain blocked pending AR-1540 and AR-1544; focused SQLite compatibility is green at 28/28, but rerun the full v0.3.50 vendor-integrated SQLite/state gates after session and state-worktree compatibility repairs. | - |
 | P1 | [AR-0604](tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Obtain authorized native x86 runner and immutable CSB/Python evidence; rerun native_boundary and record A/B overhead. | - |
 | P1 | [AR-0814](tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Create successor AR for authenticated route/ancestor authority; preserve AR-1288 evidence and AR-0814 head 29cfa193. | - |
 | P1 | [AR-0832](tasks/AR-0832-aiws-runner-qualification.md): Qualify development host ASB runner operations | Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery. | Run repeated clean ASB jobs on every declared development host label and audit reset, isolation, architecture, and artifact provenance. | - |

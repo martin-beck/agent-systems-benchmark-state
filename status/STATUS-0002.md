@@ -252,13 +252,7 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1541](../tasks/AR-1541.md): SQLite fence compatibility and isolation | codex-asb-ar1541-sqlite-20260930 | Repair ASB-owned SQLite/WAL fence setup and isolation against coordinator v0.3.50. | Remain blocked pending AR-1540 and AR-1544; focused SQLite compatibility is green at 28/28, but rerun the full v0.3.50 vendor-integrated SQLite/state gates after session and state-worktree compatibility repairs. |
-
-### Blocked (87)
+### Blocked (88)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -331,6 +325,7 @@
 | P0 | [AR-1538](../tasks/AR-1538.md): Coordinator v0.3.50 downstream integration | Unclaimed | v0.3.50 sync and immutable vendor verification pass, but the coordinator lifecycle/session contract is incompatible with ASB-owned tests and SQLite fence fixtures; a narrower compatibility successor is required. | Remain blocked pending AR-1539 compatibility repair. Preserve branch preserve/ar1538-v0350-mixed-snapshot and do not publish the failing integration. |
 | P0 | [AR-1539](../tasks/AR-1539.md): Coordinator v0.3.50 compatibility repair | Unclaimed | Compatibility audit reproduced the v0.3.50 failures and split them into AR-1540 session/lifecycle and AR-1541 SQLite fence repairs; no incompatible runtime is publishable. | Remain blocked pending AR-1540 and AR-1541. Preserve the exact v0.3.50 verifier result and the disposable failure evidence; resume AR-1534 only after both successors pass. |
 | P0 | [AR-1540](../tasks/AR-1540.md): Session and lifecycle contract compatibility | Unclaimed | Repair ASB-owned session/checkpoint/recovery integration against coordinator v0.3.50. | Remain blocked pending AR-1544 state-worktree observation compatibility; preserve the clean 77/78 v0.3.50-compatible focused tests and the exact failing state-worktree contract, then rerun the full suite after AR-1544. |
+| P0 | [AR-1541](../tasks/AR-1541.md): SQLite fence compatibility and isolation | Unclaimed | Repair ASB-owned SQLite/WAL fence setup and isolation against coordinator v0.3.50. | Remain blocked pending AR-1540 and AR-1544; focused SQLite compatibility is green at 28/28, but rerun the full v0.3.50 vendor-integrated SQLite/state gates after session and state-worktree compatibility repairs. |
 | P1 | [AR-0604](../tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Unclaimed | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Obtain authorized native x86 runner and immutable CSB/Python evidence; rerun native_boundary and record A/B overhead. |
 | P1 | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Unclaimed | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Create successor AR for authenticated route/ancestor authority; preserve AR-1288 evidence and AR-0814 head 29cfa193. |
 | P1 | [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md): Qualify development host ASB runner operations | Unclaimed | Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery. | Run repeated clean ASB jobs on every declared development host label and audit reset, isolation, architecture, and artifact provenance. |
@@ -525,3 +520,4 @@
 | P0 | [AR-1312](../tasks/AR-1312-post-merge-coverage-floor.md): Post-merge workspace coverage floor repair | Unclaimed | Repair the post-merge workspace coverage deficit without weakening the 90&#37; floor. | AR complete: signed coverage repair merged as PR #238 and post-merge workspace coverage verification passed; retain evidence and continue with AR-1316. |
 | P0 | [AR-1313](../tasks/AR-1313-historical-dco-909078c-repair.md): Historical DCO merge-integrity recovery | Unclaimed | Forward-only signed DCO recovery candidate published as PR #231. | All PR #290 exact-head checks are green; obtain independent review, then run signed merge_pr.py against exact base e41d4df/head 3420355/tree e1120e9 and verify seven post-merge workflows. |
 | P0 | [AR-1314](../tasks/AR-1314-optional-bundle-signing-development-release.md): Optional runtime-bundle signing for development and tagged releases | Unclaimed | Make runtime-bundle signatures optional only through an explicit, truthfully labelled development/release profile. | Blocked on AR-1397 integration repair: post-merge Repository quality rejects c58b0b0 tree against reviewed topic after AR-1395 advanced main, and c58 Rust workflow dispatch 35980460560 was cancelled by a higher-priority waiting request for refs/heads/main. Preserve all evidence; after AR-1397 repair and queue quiescence, rerun all seven exact-main workflows including Rust. |
+| P0 | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md): Authenticated agent catalog producer | Unclaimed | Publish the verified ASB agent catalog required by the first-run setup wizard. | Release AR-1316 as satisfied by exact current main; no new product diff or PR is required because producer implementation is already merged and verified. |
