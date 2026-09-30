@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Development asb run/sweep dispatch is qualified with local/mock and strict replay; deployment-owned live-provider materialization is optional future hardening.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "AR-1329 production dispatch integration",
-  "updated_at": "2026-09-30T04:59:06+00:00",
+  "updated_at": "2026-09-30T04:59:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1367-ar1329-production-dispatch-integration"
 }
 ---
@@ -134,3 +134,6 @@ reachability.
   replay; live deployment remains optional.
 
 - 2026-09-30T04:59:06+00:00: Claimed by coordinator-ar1367-development-20260930.
+
+- 2026-09-30T04:59:37+00:00: Recorded command exit 0; command argv SHA-256
+  f68381338fcba36e835f8f34c2d1bb41cd641382e50bf5ef1525642cd27eac6b.
