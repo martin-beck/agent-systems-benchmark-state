@@ -9,15 +9,15 @@
     "AR-1514"
   ],
   "id": "AR-1551",
-  "next_action": "Promote after AR-1505, AR-1513 and AR-1514 are done; implement and deploy the runtime/control-owned authenticated platform authority source, then hand its opaque materialization contract to AR-1523.",
+  "next_action": "Blocked: a deployment owner must supply or implement the non-test runtime/control-owned authenticated platform authority source and opaque materialization handoff; local/mock authority is development-only. Then AR-1523 consumes it and qualifies live dispatch.",
   "owner": "",
   "priority": "P0",
   "schema_version": 1,
   "status": "blocked",
   "summary": "Provision the missing authenticated platform authority deployment required for first-customer live dispatch.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "First-customer platform authority deployment bootstrap",
-  "updated_at": "2026-09-30T03:10:57+00:00"
+  "updated_at": "2026-09-30T03:11:41+00:00"
 }
 ---
 
@@ -52,6 +52,10 @@ Acceptance requires:
 
 This AR supplies deployment authority only; AR-1523 owns the ASB production
 adapter and final live-dispatch qualification.
+
+- 2026-09-30T05:07:00+00:00: Runtime baseline gates passed, but no non-test deployment source or
+  ordinary run/sweep production callsite exists in protected ASB. Local/mock authority remains
+  deliberately non-qualifying; AR-1523 is still blocked pending this source.
 
 - 2026-09-30T03:09:02+00:00: Dependencies AR-1505, AR-1513 and AR-1514 are done; the missing
   deployment-owned authority source is the canonical first-customer live-dispatch blocker.
