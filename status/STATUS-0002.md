@@ -3188,11 +3188,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1563-dev-materialization |
 | Parent | None |
 | Children | None |
 | Summary | Clone and build the current asb-tui main head for the ASB dev channel. |
@@ -3864,7 +3864,7 @@ flowchart LR
         AR_1560["AR-1560 - Superseded"]:::status_superseded
         AR_1561["AR-1561 - Cancelled"]:::status_cancelled
         AR_1562["AR-1562 - Done"]:::status_done
-        AR_1563["AR-1563 - Open"]:::status_open
+        AR_1563["AR-1563 - In progress"]:::status_in_progress
         AR_1564["AR-1564 - Planned"]:::status_planned
         AR_1565["AR-1565 - Open"]:::status_open
     end
@@ -4802,4 +4802,3 @@ flowchart LR
     AR_1308 --> AR_1309
     AR_1310 --> AR_1316
     AR_1310 --> AR_1319
-    AR_1314 --> AR_1315
