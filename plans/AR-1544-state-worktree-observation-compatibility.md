@@ -1,6 +1,6 @@
 # AR-1544 plan: state-worktree observation compatibility
 
-1. Read AR-1534, AR-1540, AR-1541, AR-1542 and AR-1543 plus the ASB
+1. Read AR-1530, AR-1534, AR-1540, AR-1541, AR-1542 and AR-1543 plus the ASB
    coordination and vendor documentation. Reconcile the exact v0.3.50 source
    and the failing state-worktree test.
 2. Reproduce the failure in a clean disposable state/product pair and record
