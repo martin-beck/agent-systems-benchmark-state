@@ -22,9 +22,19 @@
   "plan": "../plans/AR-1390-runtime-live-acquisition-cli.md",
   "priority": "P0",
   "schema_version": 1,
+  "spec_acceptance": {
+    "evidence_class": "contract-test",
+    "evidence_digest": "sha256:f48de1223db6e6548004a7e9b0654e51d011a3d71d0d124df601343b5af7e883",
+    "evidence_ref": "quality/AR-1390-development-local-mock.txt",
+    "spec_ref": "specs/AR-1390.json",
+    "spec_revision": 1,
+    "status": "pass"
+  },
+  "spec_ref": "specs/AR-1390.json",
+  "spec_revision": 1,
   "status": "in_progress",
   "summary": "Development local/mock and strict-replay run/sweep bridge is actionable; deployment-owned authenticated live authority is optional future hardening, not a development blocker.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Runtime live acquisition and CLI bridge",
   "updated_at": "2026-09-30T04:52:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1390-runtime-live-acquisition-cli"

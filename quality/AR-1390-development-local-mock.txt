@@ -1,0 +1,13 @@
+AR-1390 development qualification evidence
+
+Exact protected-main commit: bf89a45ddd71af96e6d4b6954320e199e147f83e
+
+The ordinary run/sweep bridge was qualified through deterministic local/mock
+and strict-replay authority without deployment credentials or a live provider.
+asb-cli passed 133 unit tests, 12 capability-contract tests, 3 CLI E2E tests,
+5 guide tests, 2 package tests, 2 setup tests, 4 TUI lifecycle tests, 3
+workflow-transcript tests, and 0 doctests. asb-runtime passed 164 unit tests,
+3 loopback, 8 process-boundary, 15 sandbox-boundary, 16 scheduler-boundary,
+and 2 doctests; one delegated-capability test was ignored by its documented
+capability gate. This receipt claims development qualification only, not
+deployment-owned live-provider or formal AR-1307/1308 readiness.
