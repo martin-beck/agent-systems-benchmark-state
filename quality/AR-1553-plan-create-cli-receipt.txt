@@ -1,0 +1,12 @@
+AR-1553 acceptance receipt
+==========================
+
+Protected ASB merge commit: 751ac0b140f7ff45512fa394578d45dbc537ae83
+Pull request: https://github.com/martin-beck/agent-systems-benchmark/pull/389
+
+The catalog-backed `asb plan create` workflow was independently qualified on
+the exact AR-1552 merge base. Tests cover missing workload selection,
+fail-closed unavailable catalog entries, and the invariant that failed
+creation leaves no output file. The CLI workflow documents interactive TTY
+selection and scripted `--workload` selection. `cargo fmt`, the focused plan
+creation tests (2 passed), and workflow provenance tests (3 passed) passed.
