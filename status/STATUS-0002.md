@@ -2818,7 +2818,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair AR-1308 capacity/preflight handoff after the unsigned-development fixture and approved vendor boundary are complete. |
-| Next action | Promote after AR-1533, AR-1534 and AR-1543 are done; rerun the clean unsigned-development diagnostic preflight and record a sanitized handoff. AR-1531 exact formal inputs remain separate optional formal work and cannot block development. |
+| Next action | No development action remains. Preserve the unsigned-development handoff receipt; AR-1531 exact formal inputs remain separate optional formal work and cannot block development. |
 
 ### AR-1537 — Coordinator vendor bootstrap closure
 
@@ -2916,7 +2916,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Close ASB-owned AR-1308 QEMU and preflight regressions after coordinator v0.3.50 compatibility repairs and prepare the capacity handoff. |
-| Next action | No development action remains. Preserve the unsigned-development diagnostic receipt; AR-1531/1536 exact formal-input work remains separately scoped and fail-closed. |
+| Next action | No development action remains. Preserve the unsigned-development diagnostic receipt; AR-1531/1536 exact formal-input work is separately scoped and fail-closed. |
 
 ### AR-1544 — State-worktree observation compatibility
 
@@ -4913,3 +4913,6 @@ flowchart LR
     AR_1433 --> AR_1447
     AR_1433 --> AR_1451
     AR_1433 --> AR_1452
+    AR_1433 --> AR_1456
+    AR_1433 --> AR_1496
+    AR_1434 --> AR_1435
