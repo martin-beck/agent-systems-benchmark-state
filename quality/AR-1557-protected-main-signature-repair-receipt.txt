@@ -1,0 +1,24 @@
+AR-1557 protected-main receipt signature repair receipt
+
+Failure evidence:
+- Main 75a7e630ea739e45b4ee41d02c17f5804891c113 was a two-parent merge, but
+  its topic commit 2bc138bec3b5e449f8c2192ab941a2fe2f193322 lacked an allowed
+  SSH signature after hosting-service rebase.
+- Repository quality rejected that exact range for the missing SSH signature.
+
+Forward-only repair:
+- PR #394 topic 89336be0b9dae1a99b6c2546b87b16d639c6282 is locally SSH-signed
+  and DCO-bearing.
+- Protected merge 7aa09a0bde6667dd1af42afb204e12eac7d666a2 has first parent
+  75a7e630ea739e45b4ee41d02c17f5804891c113 and reviewed topic second parent
+  89336be0b9dae1a99b6c2546b87b16d639c6282.
+- Exact local protected-main repository policy passed, including signature,
+  topology, reviewed-tree and merge-preview checks.
+
+Hosted exact-main checks for 7aa09a0: Repository quality 36698045014,
+Rust verification 36698045077 attempt 2, credential-free 36698045081,
+hosted portability 36698045072, formal assurance 36698044867, fault assurance
+36698045112, emulated aarch64 36698045184 and Huawei headers 36698045104 all
+completed successfully.
+
+No history rewrite or policy waiver was used.
