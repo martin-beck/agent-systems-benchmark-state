@@ -14,7 +14,7 @@
     "AR-1340"
   ],
   "id": "AR-1390",
-  "next_action": "Wait for AR-1523 platform authority deployment adapter to provide the runtime-owned opaque source; then re-audit and implement the ordinary run/sweep bridge with exact-head gates.",
+  "next_action": "Development path is actionable without AR-1523: re-audit and implement the ordinary run/sweep bridge against the existing deterministic local/mock and strict-replay authority, with exact-head gates. Deployment-owned authenticated live authority remains optional future production hardening.",
   "observed_branch": "feature/ar-1390-runtime-live-acquisition-cli",
   "observed_dirty": 0,
   "observed_head": "bf89a45ddd71af96e6d4b6954320e199e147f83e",
@@ -22,9 +22,9 @@
   "plan": "../plans/AR-1390-runtime-live-acquisition-cli.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
-  "summary": "Audit complete: normal CLI bridge is blocked by the missing authenticated platform authority deployment adapter; no safe product mutation was made.",
-  "task_revision": 45,
+  "status": "planned",
+  "summary": "Development local/mock and strict-replay run/sweep bridge is actionable; deployment-owned authenticated live authority is optional future hardening, not a development blocker.",
+  "task_revision": 46,
   "title": "Runtime live acquisition and CLI bridge",
   "updated_at": "2026-09-29T21:22:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1390-runtime-live-acquisition-cli"
@@ -93,6 +93,11 @@ reachability.
 
 - 2026-09-26T22:36:07+00:00: Recorded command exit 0; command argv SHA-256
   ecab7acaea85899c89ac2eb533d546dda7146f21690aa0c8f37cd8323e44734a.
+
+- 2026-09-30T06:10:00+00:00: Development policy update removes the deployment-owned authenticated
+  authority requirement from this development path. Local/mock and strict-replay authority are
+  sufficient for qualification; preserve live-provider fail-closed behavior and treat any real
+  deployment adapter as optional future production hardening.
 
 - 2026-09-26T22:36:29+00:00: Recorded command exit 0; command argv SHA-256
   6841706a929a52545a2ee9664e0afd75f529bd56992ea3667f0e9182145366b2.

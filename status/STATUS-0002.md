@@ -822,15 +822,15 @@
 
 | Field | Value |
 | --- | --- |
-| Status | blocked |
+| Status | planned |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
 | Owner | Unclaimed |
 | Parent | None |
 | Children | None |
-| Summary | Audit complete: normal CLI bridge is blocked by the missing authenticated platform authority deployment adapter; no safe product mutation was made. |
-| Next action | Wait for AR-1523 platform authority deployment adapter to provide the runtime-owned opaque source; then re-audit and implement the ordinary run/sweep bridge with exact-head gates. |
+| Summary | Development local/mock and strict-replay run/sweep bridge is actionable; deployment-owned authenticated live authority is optional future hardening, not a development blocker. |
+| Next action | Development path is actionable without AR-1523: re-audit and implement the ordinary run/sweep bridge against the existing deterministic local/mock and strict-replay authority, with exact-head gates. Deployment-owned authenticated live authority remains optional future production hardening. |
 
 ### AR-1391 — Runtime control bootstrap constructor
 
@@ -3493,7 +3493,7 @@ flowchart LR
         AR_1387["AR-1387 - Blocked"]:::status_blocked
         AR_1388["AR-1388 - Done"]:::status_done
         AR_1389["AR-1389 - Done"]:::status_done
-        AR_1390["AR-1390 - Blocked"]:::status_blocked
+        AR_1390["AR-1390 - Planned"]:::status_planned
         AR_1391["AR-1391 - Blocked"]:::status_blocked
         AR_1392["AR-1392 - Done"]:::status_done
         AR_1393["AR-1393 - Done"]:::status_done
@@ -4909,9 +4909,3 @@ flowchart LR
     AR_1425 --> AR_1426
     AR_1427 --> AR_1431
     AR_1430 --> AR_1424
-    AR_1433 --> AR_1446
-    AR_1433 --> AR_1447
-    AR_1433 --> AR_1451
-    AR_1433 --> AR_1452
-    AR_1433 --> AR_1456
-    AR_1433 --> AR_1496

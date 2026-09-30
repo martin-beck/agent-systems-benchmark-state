@@ -11,8 +11,8 @@
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
-| **Blocked** | Cannot proceed until its recorded blocker clears | 83 |
-| **Planned** | Defined work awaiting promotion or dependencies | 50 |
+| **Blocked** | Cannot proceed until its recorded blocker clears | 82 |
+| **Planned** | Defined work awaiting promotion or dependencies | 51 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 406 |
 | **Cancelled** | Stopped with a recorded rationale | 1 |
