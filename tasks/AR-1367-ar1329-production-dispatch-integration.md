@@ -18,11 +18,11 @@
   "plan": "../plans/AR-1367-ar1329-production-dispatch-integration.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Development asb run/sweep dispatch is qualified with local/mock and strict replay; deployment-owned live-provider materialization is optional future hardening.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "AR-1329 production dispatch integration",
-  "updated_at": "2026-09-29T22:58:12+00:00",
+  "updated_at": "2026-09-30T04:59:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1367-ar1329-production-dispatch-integration"
 }
 ---
@@ -129,3 +129,6 @@ reachability.
 - 2026-09-29T22:58:12+00:00: Durable next action corrected. Exact protected-main audit remains
   valid: PlanAuthoritySource rejects live mode and no authenticated platform-owned authority source
   exists; AR-1523 owns the blocker.
+
+- 2026-09-30T04:59:03+00:00: Development qualification uses deterministic local/mock and strict
+  replay; live deployment remains optional.

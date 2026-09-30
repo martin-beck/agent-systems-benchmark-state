@@ -86,6 +86,12 @@
 
 ## Complete AR inventory
 
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1367](../tasks/AR-1367-ar1329-production-dispatch-integration.md): AR-1329 production dispatch integration | Unclaimed | Development asb run/sweep dispatch is qualified with local/mock and strict replay; deployment-owned live-provider materialization is optional future hardening. | Development qualification complete on exact protected main with deterministic local/mock and strict-replay runtime authority. Deployment-owned live-provider materialization remains optional future hardening; no development action remains. |
+
 ### Blocked (80)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -171,7 +177,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (51)
+### Planned (50)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -190,7 +196,6 @@
 | P0 | [AR-1170](../tasks/AR-1170.md): Standalone TUI wizard | Unclaimed | Guide TUI setup through analysis. | Read the plan. |
 | P0 | [AR-1180](../tasks/AR-1180.md): Cross-project wizard qualification | Unclaimed | Qualify the complete wizard. | Read the plan. |
 | P0 | [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Unclaimed | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. |
-| P0 | [AR-1367](../tasks/AR-1367-ar1329-production-dispatch-integration.md): AR-1329 production dispatch integration | Unclaimed | Development asb run/sweep dispatch is qualified with local/mock and strict replay; deployment-owned live-provider materialization is optional future hardening. | Development qualification complete on exact protected main with deterministic local/mock and strict-replay runtime authority. Deployment-owned live-provider materialization remains optional future hardening; no development action remains. |
 | P0 | [AR-1536](../tasks/AR-1536.md): AR-1308 capacity and preflight handoff repair | Unclaimed | Repair AR-1308 capacity/preflight handoff after the unsigned-development fixture and approved vendor boundary are complete. | Promote only after AR-1531, AR-1533, AR-1534 and AR-1543 are done; rerun clean diagnostic/formal preflight, verify every exact input and hand a terminal-ready receipt to AR-1522 or record the missing input blocker. |
 | P0 | [AR-1543](../tasks/AR-1543.md): AR-1308 QEMU integration closure | Unclaimed | Close ASB-owned AR-1308 QEMU and preflight regressions after coordinator v0.3.50 compatibility repairs and prepare the capacity handoff. | Promote after AR-1531, AR-1533, AR-1534, AR-1540, AR-1541 and AR-1549 are done; run the exact v0.3.53 vendor-integrated AR-1308 QEMU/preflight gates and hand evidence to AR-1536. |
 | P0 | [AR-1545](../tasks/AR-1545.md): AR-1307 formal-input readiness repair | Unclaimed | Audit and repair the AR-1307 formal-input handoff after development runner integration, without executing qualification. | Promote after AR-1535; inventory and independently verify every exact AR-1307 formal input, then hand a sanitized readiness receipt to AR-1522 or record the specific external-input blocker. |
@@ -516,4 +521,3 @@
 | P1 | [AR-0842](../tasks/AR-0842-frontend-run-lifecycle.md): Implement frontend run lifecycle | Unclaimed | Define and implement frontend-independent run lifecycle semantics. | Implement idempotent launch, cancellation, status reconnect, history, and recovery semantics. |
 | P1 | [AR-0843](../tasks/AR-0843-frontend-privacy-assurance.md): Assure frontend privacy and faults | Unclaimed | Qualify frontend privacy, artifact access, and fault behavior. | Monitor PR #69 exact-head CI at cca49ec3bea429a90a267600acf821cebe45c138; investigate any failure and do not merge without coordinator authorization. |
 | P1 | [AR-0844](../tasks/AR-0844-frontend-api-integration.md): Integrate frontend control API | Unclaimed | Integrate and qualify the frontend control API as an independent boundary. | Monitor PR #76 exact head 76cc86f23a48d5af275b2fed9d70f54199e38637 CI to terminal; investigate failures and do not merge without coordinator authorization. |
-| P1 | [AR-0845](../tasks/AR-0845-ci-artifact-quota-resilience.md): Harden CI artifact quota behavior | Unclaimed | Prevent exhausted GitHub artifact quota from obscuring authoritative ASB results. | Independently review immutable candidate 7d98653e7e7f219cced6abfb5c611d2614c72bd7 tree 2b02deda39ae1e4a4b40e9c3e960f1f0336f19b3; do not publish before approval. |
