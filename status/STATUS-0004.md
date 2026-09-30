@@ -77,6 +77,12 @@
 
 ## Complete AR inventory
 
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1547](../tasks/AR-1547.md): Coordinator v0.3.52 vendor adoption and compatibility rerun | Unclaimed | Adopt coordinator v0.3.52 and rerun the ASB state-worktree compatibility gates after the rejected v0.3.51 tag. | Promote and claim; record v0.3.52 vendor adoption, rerun AR-1540/AR-1541 compatibility and full state gates on the clean snapshot, then release AR-1544/AR-1534 successors with exact evidence. |
+
 ### Blocked (89)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -171,7 +177,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (53)
+### Planned (52)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -196,7 +202,6 @@
 | P0 | [AR-1543](../tasks/AR-1543.md): AR-1308 QEMU integration closure | Unclaimed | Close ASB-owned AR-1308 QEMU and preflight regressions after coordinator v0.3.50 compatibility repairs and prepare the capacity handoff. | Promote after all dependencies are done; run the exact v0.3.50 vendor-integrated AR-1308 QEMU and preflight gates, repair only ASB-owned regressions, and hand a clean receipt to AR-1536 or record a precise blocker. |
 | P0 | [AR-1545](../tasks/AR-1545.md): AR-1307 formal-input readiness repair | Unclaimed | Audit and repair the AR-1307 formal-input handoff after development runner integration, without executing qualification. | Promote after AR-1535; inventory and independently verify every exact AR-1307 formal input, then hand a sanitized readiness receipt to AR-1522 or record the specific external-input blocker. |
 | P0 | [AR-1546](../tasks/AR-1546.md): AR-1308 formal capacity-input readiness repair | Unclaimed | Audit and repair the AR-1308 capacity/input handoff after diagnostic QEMU integration, without executing qualification. | Promote after AR-1531 and AR-1536; verify the exact 8 GiB/8 GiB fixture and every AR-1308 formal input, then hand a sanitized readiness receipt to AR-1522 or record the measured blocker. |
-| P0 | [AR-1547](../tasks/AR-1547.md): Coordinator v0.3.52 vendor adoption and compatibility rerun | Unclaimed | Adopt coordinator v0.3.52 and rerun the ASB state-worktree compatibility gates after the rejected v0.3.51 tag. | Promote and claim; record v0.3.52 vendor adoption, rerun AR-1540/AR-1541 compatibility and full state gates on the clean snapshot, then release AR-1544/AR-1534 successors with exact evidence. |
 | P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
 | P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
 | P1 | [AR-0810](../tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Unclaimed | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project&#x27;s GitHub Pages site. |
