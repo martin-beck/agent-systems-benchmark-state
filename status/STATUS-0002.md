@@ -2978,11 +2978,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | asb-ar1548-superseded-by-1547-20260930 |
 | Parent | None |
 | Children | None |
 | Summary | Repair ASB formal-tier and vendor-fixture compatibility defects found after adopting coordinator v0.3.52. |
@@ -3611,7 +3611,7 @@ flowchart LR
         AR_1545["AR-1545 - Planned"]:::status_planned
         AR_1546["AR-1546 - Planned"]:::status_planned
         AR_1547["AR-1547 - Done"]:::status_done
-        AR_1548["AR-1548 - Open"]:::status_open
+        AR_1548["AR-1548 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4920,5 +4920,3 @@ flowchart LR
     AR_1453 --> AR_1458
     AR_1453 --> AR_1523
     AR_1453 --> AR_1524
-    AR_1453 --> AR_1525
-    AR_1453 --> AR_1526

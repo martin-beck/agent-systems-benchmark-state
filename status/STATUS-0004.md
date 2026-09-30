@@ -79,11 +79,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1548](../tasks/AR-1548.md): v0.3.52 formal and vendor fixture compatibility repair | Unclaimed | Repair ASB formal-tier and vendor-fixture compatibility defects found after adopting coordinator v0.3.52. | Promote after AR-1547; repair the ASB-owned formal-tier and vendor-fixture compatibility defects exposed by the v0.3.52 full state gate, then rerun focused and full gates. |
+| P0 | [AR-1548](../tasks/AR-1548.md): v0.3.52 formal and vendor fixture compatibility repair | asb-ar1548-superseded-by-1547-20260930 | Repair ASB formal-tier and vendor-fixture compatibility defects found after adopting coordinator v0.3.52. | Promote after AR-1547; repair the ASB-owned formal-tier and vendor-fixture compatibility defects exposed by the v0.3.52 full state gate, then rerun focused and full gates. |
 
 ### Blocked (89)
 

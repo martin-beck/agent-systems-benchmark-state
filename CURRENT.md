@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1548](tasks/AR-1548.md): v0.3.52 formal and vendor fixture compatibility repair | Repair ASB formal-tier and vendor-fixture compatibility defects found after adopting coordinator v0.3.52. | Promote after AR-1547; repair the ASB-owned formal-tier and vendor-fixture compatibility defects exposed by the v0.3.52 full state gate, then rerun focused and full gates. | - |
+| P0 | [AR-1548](tasks/AR-1548.md): v0.3.52 formal and vendor fixture compatibility repair | Repair ASB formal-tier and vendor-fixture compatibility defects found after adopting coordinator v0.3.52. | Promote after AR-1547; repair the ASB-owned formal-tier and vendor-fixture compatibility defects exposed by the v0.3.52 full state gate, then rerun focused and full gates. | asb-ar1548-superseded-by-1547-20260930 |
 
 ## Blocked
 
