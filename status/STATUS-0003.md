@@ -1,5 +1,7 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+    AR_1433 --> AR_1456
+    AR_1433 --> AR_1496
     AR_1434 --> AR_1435
     AR_1435 --> AR_1436
     AR_1436 --> AR_1437
@@ -745,4 +747,3 @@
 | [AR-1465](../tasks/AR-1465-reviewed-seed-archival-recovery.md) | None | None |
 | [AR-1466](../tasks/AR-1466-state-ci-format-repair.md) | None | None |
 | [AR-1467](../tasks/AR-1467-terminal-ar-metadata-reconciliation.md) | None | None |
-| [AR-1468](../tasks/AR-1468-control-authority-materialization-successor.md) | [AR-1288](../tasks/AR-1288-certificate-chain-authz.md), [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md), [AR-1364](../tasks/AR-1364-authenticated-chain-enrollment.md), [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md) | None |

@@ -2628,11 +2628,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | coordinator-ar1523-development-20260930 |
 | Parent | None |
 | Children | None |
 | Summary | Qualify the central orchestration path with deterministic local/mock and strict-replay authority; deployment-owned live authority is optional future hardening, not a development prerequisite. |
@@ -3628,7 +3628,7 @@ flowchart LR
         AR_1520["AR-1520 - Done"]:::status_done
         AR_1521["AR-1521 - Superseded"]:::status_superseded
         AR_1522["AR-1522 - Blocked"]:::status_blocked
-        AR_1523["AR-1523 - Open"]:::status_open
+        AR_1523["AR-1523 - In progress"]:::status_in_progress
         AR_1524["AR-1524 - Done"]:::status_done
         AR_1525["AR-1525 - Done"]:::status_done
         AR_1526["AR-1526 - Done"]:::status_done
@@ -4913,5 +4913,3 @@ flowchart LR
     AR_1433 --> AR_1447
     AR_1433 --> AR_1451
     AR_1433 --> AR_1452
-    AR_1433 --> AR_1456
-    AR_1433 --> AR_1496
