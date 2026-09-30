@@ -3210,7 +3210,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Integrate the dev-built TUI into the ASB lifecycle and launch path. |
-| Next action | Ready for independent review of PR #399 at exact head 72c1f1b. Verify dev install/upgrade identity persistence, status/doctor/launch/remove routing, atomic remove rollback, stable-channel isolation, and exact-current-main compatibility. |
+| Next action | Ready for independent re-review of PR #399 at exact head 4a65476. Verify reversible marker/version trash transaction, injected final-delete failure restoration, dev lifecycle routing, stable isolation, and exact-current-main compatibility. |
 
 ### AR-1565 — ASB yanked dependency lock repair
 
