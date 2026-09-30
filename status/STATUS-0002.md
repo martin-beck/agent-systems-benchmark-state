@@ -1,5 +1,7 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md) | None | None |
+| [AR-1294](../tasks/AR-1294-state-gate-baseline.md) | None | None |
 | [AR-1295](../tasks/AR-1295-vendor-fixture-v037.md) | None | None |
 | [AR-1296](../tasks/AR-1296-state-quality-baseline.md) | None | None |
 | [AR-1297](../tasks/AR-1297-task-schema-metadata.md) | None | None |
@@ -227,7 +229,7 @@
 | [AR-1527](../tasks/AR-1527.md) | None | [AR-1528](../tasks/AR-1528.md) |
 | [AR-1528](../tasks/AR-1528.md) | [AR-1519](../tasks/AR-1519.md), [AR-1520](../tasks/AR-1520.md), [AR-1527](../tasks/AR-1527.md) | [AR-1532](../tasks/AR-1532.md), [AR-1533](../tasks/AR-1533.md) |
 | [AR-1529](../tasks/AR-1529.md) | [AR-1517](../tasks/AR-1517-ar1309-capacity-decision-unblock.md), [AR-1520](../tasks/AR-1520.md) | [AR-1530](../tasks/AR-1530.md) |
-| [AR-1530](../tasks/AR-1530.md) | [AR-1520](../tasks/AR-1520.md), [AR-1529](../tasks/AR-1529.md) | [AR-1521](../tasks/AR-1521.md), [AR-1522](../tasks/AR-1522.md), [AR-1531](../tasks/AR-1531.md), [AR-1534](../tasks/AR-1534.md), [AR-1537](../tasks/AR-1537.md), [AR-1538](../tasks/AR-1538.md), [AR-1539](../tasks/AR-1539.md) |
+| [AR-1530](../tasks/AR-1530.md) | [AR-1520](../tasks/AR-1520.md), [AR-1529](../tasks/AR-1529.md) | [AR-1521](../tasks/AR-1521.md), [AR-1522](../tasks/AR-1522.md), [AR-1531](../tasks/AR-1531.md), [AR-1534](../tasks/AR-1534.md), [AR-1537](../tasks/AR-1537.md), [AR-1538](../tasks/AR-1538.md), [AR-1539](../tasks/AR-1539.md), [AR-1540](../tasks/AR-1540.md), [AR-1541](../tasks/AR-1541.md) |
 | [AR-1531](../tasks/AR-1531.md) | [AR-1520](../tasks/AR-1520.md), [AR-1530](../tasks/AR-1530.md) | [AR-1536](../tasks/AR-1536.md) |
 | [AR-1532](../tasks/AR-1532.md) | [AR-1528](../tasks/AR-1528.md) | [AR-1535](../tasks/AR-1535.md) |
 | [AR-1533](../tasks/AR-1533.md) | [AR-1528](../tasks/AR-1528.md) | [AR-1536](../tasks/AR-1536.md) |
@@ -237,6 +239,8 @@
 | [AR-1537](../tasks/AR-1537.md) | [AR-1530](../tasks/AR-1530.md) | None |
 | [AR-1538](../tasks/AR-1538.md) | [AR-1530](../tasks/AR-1530.md) | None |
 | [AR-1539](../tasks/AR-1539.md) | [AR-1530](../tasks/AR-1530.md) | None |
+| [AR-1540](../tasks/AR-1540.md) | [AR-1530](../tasks/AR-1530.md) | None |
+| [AR-1541](../tasks/AR-1541.md) | [AR-1530](../tasks/AR-1530.md) | None |
 
 ## Complete AR inventory
 
@@ -336,7 +340,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (48)
+### Planned (50)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -357,6 +361,8 @@
 | P0 | [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Unclaimed | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. |
 | P0 | [AR-1535](../tasks/AR-1535.md): AR-1307 formal-readiness handoff repair | Unclaimed | Reconcile AR-1307&#x27;s repaired development runner with the formal qualification handoff after the approved vendor release. | Promote only after AR-1532 and AR-1534 are done; rerun exact-head vendor/state gates, audit AR-1307 formal-input readiness, and hand an exact sanitized bundle to AR-1522 or record the missing external input without substituting it. |
 | P0 | [AR-1536](../tasks/AR-1536.md): AR-1308 capacity and preflight handoff repair | Unclaimed | Repair AR-1308 capacity/preflight handoff after the unsigned-development fixture and approved vendor boundary are complete. | Promote only after AR-1531, AR-1533 and AR-1534 are done; rerun clean diagnostic/formal preflight, verify every exact input and hand a terminal-ready receipt to AR-1522 or record the missing input blocker. |
+| P0 | [AR-1540](../tasks/AR-1540.md): Session and lifecycle contract compatibility | Unclaimed | Repair ASB-owned session/checkpoint/recovery integration against coordinator v0.3.50. | Promote after the AR-1539 classification; repair ASB-owned session/checkpoint/recovery fixtures and argument adapters against v0.3.50, then rerun all state gates. |
+| P0 | [AR-1541](../tasks/AR-1541.md): SQLite fence compatibility and isolation | Unclaimed | Repair ASB-owned SQLite/WAL fence setup and isolation against coordinator v0.3.50. | Promote after the AR-1539 classification; repair disposable ASB SQLite/WAL fence setup for v0.3.50 and rerun focused plus full gates without weakening identity checks. |
 | P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
 | P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
 | P1 | [AR-0810](../tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Unclaimed | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project&#x27;s GitHub Pages site. |
@@ -516,5 +522,3 @@
 | P0 | [AR-1337](../tasks/AR-1337-protected-main-merge-tree-repair-openrouter.md): Repair protected-main merge-tree admission after OpenRouter merge | Unclaimed | Repair the protected-main merge-tree admission defect exposed after the OpenRouter provider merge. | Await remaining PR #252 exact-head checks and independent review; then merge only via signed integration procedure at the current protected target and verify post-merge workflows. |
 | P0 | [AR-1341](../tasks/AR-1341-runtime-observed-namespace-repair.md): Runtime-observed namespace attestation repair | Unclaimed | Repair AR-1340 so live relay capabilities require runtime-observed child namespace agreement. | Monitor post-merge workflows for merge 2774b1d648b5c3bbda0e290e158dc352502d3768; after all seven exact-head workflows are green, release AR-1341 done with evidence and update AR-1340 security-hold transition. |
 | P0 | [AR-1356](../tasks/AR-1356-control-runtime-attestation-primitive.md): Control/runtime enrollment attestation primitive | Unclaimed | Issue runtime-owned live enrollment capability from authenticated control attestation. | PR #264 merged at a6f1915aa5117f0296b1b8f4b9c4692a956b3d86. Monitor all seven post-merge workflows to terminal success; then release AR-1356 done with exact evidence and advance AR-1355 consumer. |
-| P0 | [AR-1357](../tasks/AR-1357-runtime-attested-enrollment-record.md): Runtime-attested enrollment record transport | Unclaimed | Transport authenticated enrollment records into runtime without exposing authority to the CLI. | PR #265 merged at 7862e3bb90a777e86e30d23b6af9639935671efe. Monitor all seven post-merge workflows at exact merge SHA; release AR-1357 only after every workflow terminal-success. |
-| P0 | [AR-1359](../tasks/AR-1359-runtime-control-bridge.md): Runtime/control enrollment bridge | Unclaimed | Bridge authenticated control enrollment into runtime-owned opaque live authority. | PR #266 exact head f511910 is published. Monitor every exact-head required check, repair any failures without weakening gates, then merge only after all green and independent review. |
