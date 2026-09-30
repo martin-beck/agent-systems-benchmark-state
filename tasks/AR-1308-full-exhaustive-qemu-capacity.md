@@ -7,7 +7,7 @@
     "AR-1304"
   ],
   "id": "AR-1308",
-  "next_action": "Remain blocked pending AR-1531 fixture provisioning and exact formal input recovery; development uses generated unsigned seeds and claims no formal qualification.",
+  "next_action": "No further unsigned-development action remains: AR-1543/1536 provide the provider-free diagnostic QEMU/preflight handoff. Keep this AR blocked only for separately authorized formal capacity qualification with reviewed inputs.",
   "observed_branch": "feature/ar-1308-full-exhaustive-qemu-capacity",
   "observed_dirty": 0,
   "observed_head": "d6e175abe060e6408977884c9c06c69a3a738b5b",
@@ -17,7 +17,7 @@
   "schema_version": 1,
   "status": "blocked",
   "summary": "QEMU fixture passes boot/transient/JAR checks; corrected full-tier rerun reproducibly times out at 1700s without attestation.",
-  "task_revision": 696,
+  "task_revision": 697,
   "title": "Full-exhaustive QEMU capacity qualification",
   "updated_at": "2026-09-29T19:01:57+00:00",
   "worktree_key": "agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity"

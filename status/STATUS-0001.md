@@ -4728,7 +4728,7 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Parent | None |
 | Children | None |
 | Summary | Runner implementation remains blocked for its unrelated formal CI OOM/publication transition, but development execution no longer depends on a reviewed seed digest. The explicit unsigned-development profile accepts locally generated disposable seeds and remains qualification_authorized=false. |
-| Next action | Continue provider-free development tests with generated seeds through the unsigned-development profile. Do not make AR-1307 or its dependents wait for archival seed recovery; if formal/publication qualification is later authorized, use a separate formal-only successor with reviewed inputs. |
+| Next action | No further unsigned-development action remains: AR-1532/1542 and the AR-1536 handoff provide the provider-free diagnostic evidence. Keep this AR blocked only for separately authorized formal/publication qualification with reviewed inputs. |
 
 ### AR-1308 — Full-exhaustive QEMU capacity qualification
 
@@ -4742,7 +4742,7 @@ This deterministic view contains task metadata only; raw logs, command output, a
 | Parent | None |
 | Children | None |
 | Summary | QEMU fixture passes boot/transient/JAR checks; corrected full-tier rerun reproducibly times out at 1700s without attestation. |
-| Next action | Remain blocked pending AR-1531 fixture provisioning and exact formal input recovery; development uses generated unsigned seeds and claims no formal qualification. |
+| Next action | No further unsigned-development action remains: AR-1543/1536 provide the provider-free diagnostic QEMU/preflight handoff. Keep this AR blocked only for separately authorized formal capacity qualification with reviewed inputs. |
 
 ### AR-1309 — Reviewed full-exhaustive capacity or model-reduction contract
 

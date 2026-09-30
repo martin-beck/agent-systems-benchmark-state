@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Continue provider-free development tests with generated seeds through the unsigned-development profile. Do not make AR-1307 or its dependents wait for archival seed recovery; if formal/publication qualification is later authorized, use a separate formal-only successor with reviewed inputs.",
+  "next_action": "No further unsigned-development action remains: AR-1532/1542 and the AR-1536 handoff provide the provider-free diagnostic evidence. Keep this AR blocked only for separately authorized formal/publication qualification with reviewed inputs.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "969eef05834a4ce5f711bbafaa5798549abd95c8",
@@ -17,7 +17,7 @@
   "schema_version": 1,
   "status": "blocked",
   "summary": "Runner implementation remains blocked for its unrelated formal CI OOM/publication transition, but development execution no longer depends on a reviewed seed digest. The explicit unsigned-development profile accepts locally generated disposable seeds and remains qualification_authorized=false.",
-  "task_revision": 741,
+  "task_revision": 742,
   "title": "Portable TLC runner repair and qualification",
   "updated_at": "2026-09-29T16:13:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"

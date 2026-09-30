@@ -2622,7 +2622,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Run and independently verify the repaired AR-1307/1308 full-tier qualification, or leave a truthful classified blocker. |
-| Next action | Remain blocked until AR-1531 supplies the capacity fixture and an external operator supplies the exact reviewed formal seed/input bundle; then run the one authorized terminal qualification attempt. |
+| Next action | Formal-only blocker: wait for AR-1531 and the exact reviewed formal seed/input bundle before the one authorized terminal attempt. This does not block the completed unsigned-development/first-customer path. |
 
 ### AR-1523 — Platform authority deployment adapter
 
