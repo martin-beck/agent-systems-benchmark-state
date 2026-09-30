@@ -2908,11 +2908,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | coordinator-ar1543-development-20260930 |
 | Parent | None |
 | Children | None |
 | Summary | Close ASB-owned AR-1308 QEMU and preflight regressions after coordinator v0.3.50 compatibility repairs and prepare the capacity handoff. |
@@ -3648,7 +3648,7 @@ flowchart LR
         AR_1540["AR-1540 - Done"]:::status_done
         AR_1541["AR-1541 - Done"]:::status_done
         AR_1542["AR-1542 - Done"]:::status_done
-        AR_1543["AR-1543 - Open"]:::status_open
+        AR_1543["AR-1543 - In progress"]:::status_in_progress
         AR_1544["AR-1544 - Superseded"]:::status_superseded
         AR_1545["AR-1545 - Planned"]:::status_planned
         AR_1546["AR-1546 - Planned"]:::status_planned
@@ -4896,5 +4896,3 @@ flowchart LR
     AR_1417 --> AR_1420
     AR_1417 --> AR_1425
     AR_1418 --> AR_1419
-    AR_1418 --> AR_1420
-    AR_1418 --> AR_1425

@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1466](../tasks/AR-1466-state-ci-format-repair.md) | None | None |
 | [AR-1467](../tasks/AR-1467-terminal-ar-metadata-reconciliation.md) | None | None |
 | [AR-1468](../tasks/AR-1468-control-authority-materialization-successor.md) | [AR-1288](../tasks/AR-1288-certificate-chain-authz.md), [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md), [AR-1364](../tasks/AR-1364-authenticated-chain-enrollment.md), [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md) | None |
 | [AR-1469](../tasks/AR-1469-ar1392-protected-topology-repair.md) | None | None |
@@ -87,11 +88,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1543](../tasks/AR-1543.md): AR-1308 QEMU integration closure | Unclaimed | Close ASB-owned AR-1308 QEMU and preflight regressions after coordinator v0.3.50 compatibility repairs and prepare the capacity handoff. | Promote after AR-1533, AR-1534, AR-1540, AR-1541 and AR-1549 are done; run the provider-free unsigned-development AR-1308 QEMU/preflight gates and hand diagnostic evidence to AR-1536. AR-1531 exact formal inputs remain optional formal work and cannot block this development path. |
+| P0 | [AR-1543](../tasks/AR-1543.md): AR-1308 QEMU integration closure | coordinator-ar1543-development-20260930 | Close ASB-owned AR-1308 QEMU and preflight regressions after coordinator v0.3.50 compatibility repairs and prepare the capacity handoff. | Promote after AR-1533, AR-1534, AR-1540, AR-1541 and AR-1549 are done; run the provider-free unsigned-development AR-1308 QEMU/preflight gates and hand diagnostic evidence to AR-1536. AR-1531 exact formal inputs remain optional formal work and cannot block this development path. |
 
 ### Blocked (80)
 

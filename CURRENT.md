@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1543](tasks/AR-1543.md): AR-1308 QEMU integration closure | Close ASB-owned AR-1308 QEMU and preflight regressions after coordinator v0.3.50 compatibility repairs and prepare the capacity handoff. | Promote after AR-1533, AR-1534, AR-1540, AR-1541 and AR-1549 are done; run the provider-free unsigned-development AR-1308 QEMU/preflight gates and hand diagnostic evidence to AR-1536. AR-1531 exact formal inputs remain optional formal work and cannot block this development path. | - |
+| P0 | [AR-1543](tasks/AR-1543.md): AR-1308 QEMU integration closure | Close ASB-owned AR-1308 QEMU and preflight regressions after coordinator v0.3.50 compatibility repairs and prepare the capacity handoff. | Promote after AR-1533, AR-1534, AR-1540, AR-1541 and AR-1549 are done; run the provider-free unsigned-development AR-1308 QEMU/preflight gates and hand diagnostic evidence to AR-1536. AR-1531 exact formal inputs remain optional formal work and cannot block this development path. | coordinator-ar1543-development-20260930 |
 
 ## Blocked
 
