@@ -2818,7 +2818,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair AR-1308 capacity/preflight handoff after the unsigned-development fixture and approved vendor boundary are complete. |
-| Next action | Promote only after AR-1531, AR-1533, AR-1534 and AR-1543 are done; rerun clean diagnostic/formal preflight, verify every exact input and hand a terminal-ready receipt to AR-1522 or record the missing input blocker. |
+| Next action | Promote after AR-1533, AR-1534 and AR-1543 are done; rerun the clean unsigned-development diagnostic preflight and record a sanitized handoff. AR-1531 exact formal inputs remain separate optional formal work and cannot block development. |
 
 ### AR-1537 — Coordinator vendor bootstrap closure
 
@@ -4913,4 +4913,3 @@ flowchart LR
     AR_1433 --> AR_1447
     AR_1433 --> AR_1451
     AR_1433 --> AR_1452
-    AR_1433 --> AR_1456
