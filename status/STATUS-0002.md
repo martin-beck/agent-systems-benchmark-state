@@ -2782,15 +2782,15 @@
 
 | Field | Value |
 | --- | --- |
-| Status | blocked |
+| Status | planned |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
 | Owner | Unclaimed |
 | Parent | None |
 | Children | None |
-| Summary | Immutable v0.3.50 sync now passes its vendor verifier, but ASB-owned lifecycle/session and SQLite compatibility gates fail; successor AR-1540/1541 own repairs. |
-| Next action | Remain blocked pending AR-1540, AR-1541 and AR-1544. Resume exact v0.3.50 vendor verification and full state gates only after session, SQLite and state-worktree compatibility repairs pass; never claim AR-1307/1308 formal qualification from development fixtures. |
+| Summary | Immutable coordinator v0.3.53 vendor boundary and ASB lifecycle/session/SQLite compatibility are green; close with successor receipts. |
+| Next action | Promote and close from AR-1547/AR-1549: v0.3.53 vendor verification and all compatibility gates are green; preserve the separate formal qualification boundary. |
 
 ### AR-1535 — AR-1307 formal-readiness handoff repair
 
@@ -2866,29 +2866,29 @@
 
 | Field | Value |
 | --- | --- |
-| Status | blocked |
+| Status | planned |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
 | Owner | Unclaimed |
 | Parent | None |
 | Children | None |
-| Summary | Repair ASB-owned session/checkpoint/recovery integration against coordinator v0.3.50. |
-| Next action | Remain blocked pending AR-1544 state-worktree observation compatibility; preserve the clean 77/78 v0.3.50-compatible focused tests and the exact failing state-worktree contract, then rerun the full suite after AR-1544. |
+| Summary | Session/checkpoint/recovery compatibility is green against coordinator v0.3.53; close with AR-1549 evidence. |
+| Next action | Promote and close from AR-1549&#x27;s v0.3.53 compatibility receipt; no additional ASB-owned session repair remains. |
 
 ### AR-1541 — SQLite fence compatibility and isolation
 
 | Field | Value |
 | --- | --- |
-| Status | blocked |
+| Status | planned |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
 | Owner | Unclaimed |
 | Parent | None |
 | Children | None |
-| Summary | Repair ASB-owned SQLite/WAL fence setup and isolation against coordinator v0.3.50. |
-| Next action | Remain blocked pending AR-1540 and AR-1544; focused SQLite compatibility is green at 28/28, but rerun the full v0.3.50 vendor-integrated SQLite/state gates after session and state-worktree compatibility repairs. |
+| Summary | SQLite/WAL fence compatibility is green against coordinator v0.3.53; close with AR-1549 evidence. |
+| Next action | Promote and close from AR-1549&#x27;s v0.3.53 compatibility receipt; no additional ASB-owned SQLite repair remains. |
 
 ### AR-1542 — AR-1307 runner integration closure
 
@@ -2922,15 +2922,15 @@
 
 | Field | Value |
 | --- | --- |
-| Status | blocked |
+| Status | superseded |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
 | Owner | Unclaimed |
 | Parent | None |
 | Children | None |
-| Summary | Coordinator project-scan fix is merged, but v0.3.51 is rejected because runtime metadata declares 0.3.50; await AR-0027. |
-| Next action | Remain blocked pending coordinator-state AR-0027: publish a version-aligned immutable release, then rerun vendor sync, AR-1540/AR-1541 compatibility and full state gates; never consume v0.3.51. |
+| Summary | Historical v0.3.51 state-worktree blocker superseded by the verified v0.3.53 boundary and compatibility closure. |
+| Next action | Historical blocker superseded by AR-1547 and AR-1549; preserve the rejected v0.3.51 evidence and do not resume this record. |
 
 ### AR-1545 — AR-1307 formal-input readiness repair
 
@@ -3001,6 +3001,20 @@
 | Children | None |
 | Summary | Rerun the compatibility gates previously blocked by the rejected coordinator vendor snapshots. |
 | Next action | Promote and claim; rerun the state-worktree, session, SQLite and full compatibility gates against the verified v0.3.53 snapshot, then hand exact results to AR-1534/1542/1543. |
+
+### AR-1550 — Compatibility blocker graph reconciliation
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Reconcile stale compatibility blocker records after AR-1549 without claiming formal qualification. |
+| Next action | Promote and claim; reconcile stale AR-1534/1540/1541/1544 blocker metadata with the verified v0.3.53 receipts, preserving historical failure evidence. |
 
 
 ## Dependency graph
@@ -3611,22 +3625,23 @@ flowchart LR
         AR_1531["AR-1531 - Blocked"]:::status_blocked
         AR_1532["AR-1532 - Blocked"]:::status_blocked
         AR_1533["AR-1533 - Blocked"]:::status_blocked
-        AR_1534["AR-1534 - Blocked"]:::status_blocked
+        AR_1534["AR-1534 - Planned"]:::status_planned
         AR_1535["AR-1535 - Planned"]:::status_planned
         AR_1536["AR-1536 - Planned"]:::status_planned
         AR_1537["AR-1537 - Blocked"]:::status_blocked
         AR_1538["AR-1538 - Blocked"]:::status_blocked
         AR_1539["AR-1539 - Blocked"]:::status_blocked
-        AR_1540["AR-1540 - Blocked"]:::status_blocked
-        AR_1541["AR-1541 - Blocked"]:::status_blocked
+        AR_1540["AR-1540 - Planned"]:::status_planned
+        AR_1541["AR-1541 - Planned"]:::status_planned
         AR_1542["AR-1542 - Planned"]:::status_planned
         AR_1543["AR-1543 - Planned"]:::status_planned
-        AR_1544["AR-1544 - Blocked"]:::status_blocked
+        AR_1544["AR-1544 - Superseded"]:::status_superseded
         AR_1545["AR-1545 - Planned"]:::status_planned
         AR_1546["AR-1546 - Planned"]:::status_planned
         AR_1547["AR-1547 - Done"]:::status_done
         AR_1548["AR-1548 - Superseded"]:::status_superseded
         AR_1549["AR-1549 - Done"]:::status_done
+        AR_1550["AR-1550 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4903,12 +4918,3 @@ flowchart LR
     AR_1442 --> AR_1488
     AR_1442 --> AR_1499
     AR_1443 --> AR_1331
-    AR_1443 --> AR_1338
-    AR_1443 --> AR_1444
-    AR_1443 --> AR_1446
-    AR_1443 --> AR_1448
-    AR_1443 --> AR_1449
-    AR_1443 --> AR_1500
-    AR_1446 --> AR_1331
-    AR_1446 --> AR_1338
-    AR_1446 --> AR_1448
