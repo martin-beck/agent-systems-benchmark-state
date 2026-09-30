@@ -1,0 +1,18 @@
+AR-1554 acceptance receipt
+==========================
+
+Protected ASB merge commit: ecf1bda05a9b69c797bd514f18c2b155df5cb8fc
+Pull request: https://github.com/martin-beck/agent-systems-benchmark/pull/388
+
+ASB now renders human-readable command output by default from the executable
+entry point and preserves the structured JSON envelope behind the global
+`--json` flag. Exit codes, stderr progress, redaction boundaries and explicit
+capability JSON consumers were preserved. The branch was rebased onto the
+AR-1553 merge and its exact source provenance digest was refreshed.
+
+Evidence:
+- `cargo fmt --all -- --check`: passed.
+- `workflow_transcript`: 3 passed.
+- `capability_contract`: 12 passed.
+- Focused global output-mode unit test: passed.
+- Hosted PR checks passed before merge.
