@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**564 ARs tracked** across 5 active status categories.
+**566 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 89 |
-| **Planned** | Defined work awaiting promotion or dependencies | 50 |
+| **Planned** | Defined work awaiting promotion or dependencies | 52 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 396 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -639,6 +639,8 @@ flowchart LR
         AR_1542["AR-1542 - Planned"]:::status_planned
         AR_1543["AR-1543 - Planned"]:::status_planned
         AR_1544["AR-1544 - Blocked"]:::status_blocked
+        AR_1545["AR-1545 - Planned"]:::status_planned
+        AR_1546["AR-1546 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2113,6 +2115,7 @@ flowchart LR
     AR_1530 --> AR_1544
     AR_1531 --> AR_1536
     AR_1531 --> AR_1543
+    AR_1531 --> AR_1546
     AR_1532 --> AR_1535
     AR_1532 --> AR_1542
     AR_1533 --> AR_1536
@@ -2121,6 +2124,8 @@ flowchart LR
     AR_1534 --> AR_1536
     AR_1534 --> AR_1542
     AR_1534 --> AR_1543
+    AR_1535 --> AR_1545
+    AR_1536 --> AR_1546
     AR_1540 --> AR_1542
     AR_1540 --> AR_1543
     AR_1541 --> AR_1542
@@ -2129,6 +2134,8 @@ flowchart LR
     AR_1543 --> AR_1536
     AR_1544 --> AR_1542
     AR_1544 --> AR_1543
+    AR_1545 --> AR_1522
+    AR_1546 --> AR_1522
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -2457,4 +2464,3 @@ flowchart LR
 | [AR-1284](../tasks/AR-1284-runtime-strict-replay-lifecycle.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md), [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md) | None |
 | [AR-1285](../tasks/AR-1285-runtime-launch-factory.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md), [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md) | [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md), [AR-1300](../tasks/AR-1300-runtime-cassette-dispatch-seam.md) |
 | [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md), [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md), [AR-1285](../tasks/AR-1285-runtime-launch-factory.md) | None |
-| [AR-1287](../tasks/AR-1287-delegated-sandbox-runner.md) | None | [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md), [AR-1306](../tasks/AR-1306-authenticated-fault-matrix-qualification.md) |
