@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1565](tasks/AR-1565.md): ASB yanked dependency lock repair | Repair the yanked dependency lock that blocks all protected ASB merges. | Promote and claim the dependency-lock repair, update the minimal yanked transitive crate closure, and independently run cargo deny/audit plus the full required PR checks. | ar1565-lock-repair |
+| P0 | [AR-1565](tasks/AR-1565.md): ASB yanked dependency lock repair | Repair the yanked dependency lock that blocks all protected ASB merges. | Run complete required ASB quality suite and obtain independent lockfile review; cargo-deny/cargo-audit binaries are absent on this host and must run in hosted/qualified environment. Then prepare exact-head PR from signed commit 54505f2. | ar1565-lock-repair |
 
 ## Open
 

@@ -3224,7 +3224,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair the yanked dependency lock that blocks all protected ASB merges. |
-| Next action | Promote and claim the dependency-lock repair, update the minimal yanked transitive crate closure, and independently run cargo deny/audit plus the full required PR checks. |
+| Next action | Run complete required ASB quality suite and obtain independent lockfile review; cargo-deny/cargo-audit binaries are absent on this host and must run in hosted/qualified environment. Then prepare exact-head PR from signed commit 54505f2. |
 
 
 ## Dependency graph
@@ -4803,5 +4803,3 @@ flowchart LR
     AR_1310 --> AR_1316
     AR_1310 --> AR_1319
     AR_1314 --> AR_1315
-    AR_1314 --> AR_1495
-    AR_1316 --> AR_1320
