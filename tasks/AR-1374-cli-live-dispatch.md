@@ -10,7 +10,7 @@
     "AR-1328"
   ],
   "id": "AR-1374",
-  "next_action": "Development qualification complete on exact protected main with deterministic local/mock and strict-replay authority. Deployment-owned live-provider authority remains optional future hardening; no development action remains.",
+  "next_action": "No development action remains. Preserve the exact-main local/mock and strict-replay receipt; deployment-owned live-provider authority is optional future hardening.",
   "observed_branch": "feature/ar-1374-cli-live-dispatch",
   "observed_dirty": 0,
   "observed_head": "bf89a45ddd71af96e6d4b6954320e199e147f83e",

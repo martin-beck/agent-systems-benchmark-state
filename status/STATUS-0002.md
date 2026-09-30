@@ -508,7 +508,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Development asb run/sweep dispatch is qualified with local/mock and strict replay; deployment-owned live-provider materialization is optional future hardening. |
-| Next action | Development qualification complete on exact protected main with deterministic local/mock and strict-replay runtime authority. Deployment-owned live-provider materialization remains optional future hardening; no development action remains. |
+| Next action | No development action remains. Preserve the exact-main local/mock and strict-replay dispatch receipt; deployment-owned live-provider materialization is optional future hardening. |
 
 ### AR-1368 — Control receipt runtime source
 
@@ -606,7 +606,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Development ordinary run/sweep dispatch is qualified with local/mock and strict replay; deployment-owned live-provider authority is optional future hardening. |
-| Next action | Development qualification complete on exact protected main with deterministic local/mock and strict-replay authority. Deployment-owned live-provider authority remains optional future hardening; no development action remains. |
+| Next action | No development action remains. Preserve the exact-main local/mock and strict-replay receipt; deployment-owned live-provider authority is optional future hardening. |
 
 ### AR-1375 — Runtime-owned live control dispatch source
 
@@ -830,7 +830,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Development local/mock and strict-replay run/sweep bridge is actionable; deployment-owned authenticated live authority is optional future hardening, not a development blocker. |
-| Next action | Development path is actionable without AR-1523: re-audit and implement the ordinary run/sweep bridge against the existing deterministic local/mock and strict-replay authority, with exact-head gates. Deployment-owned authenticated live authority remains optional future production hardening. |
+| Next action | No development action remains. Preserve the local/mock and strict-replay receipt; any deployment-owned authenticated live authority is optional future hardening. |
 
 ### AR-1391 — Runtime control bootstrap constructor
 
@@ -2916,7 +2916,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Close ASB-owned AR-1308 QEMU and preflight regressions after coordinator v0.3.50 compatibility repairs and prepare the capacity handoff. |
-| Next action | Promote after AR-1533, AR-1534, AR-1540, AR-1541 and AR-1549 are done; run the provider-free unsigned-development AR-1308 QEMU/preflight gates and hand diagnostic evidence to AR-1536. AR-1531 exact formal inputs remain optional formal work and cannot block this development path. |
+| Next action | No development action remains. Preserve the unsigned-development diagnostic receipt; AR-1531/1536 exact formal-input work remains separately scoped and fail-closed. |
 
 ### AR-1544 — State-worktree observation compatibility
 
@@ -4898,3 +4898,19 @@ flowchart LR
     AR_1418 --> AR_1419
     AR_1418 --> AR_1420
     AR_1418 --> AR_1425
+    AR_1419 --> AR_1420
+    AR_1419 --> AR_1423
+    AR_1420 --> AR_1424
+    AR_1421 --> AR_1427
+    AR_1423 --> AR_1424
+    AR_1423 --> AR_1426
+    AR_1423 --> AR_1430
+    AR_1424 --> AR_1425
+    AR_1425 --> AR_1426
+    AR_1427 --> AR_1431
+    AR_1430 --> AR_1424
+    AR_1433 --> AR_1446
+    AR_1433 --> AR_1447
+    AR_1433 --> AR_1451
+    AR_1433 --> AR_1452
+    AR_1433 --> AR_1456

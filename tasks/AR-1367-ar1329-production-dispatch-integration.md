@@ -10,7 +10,7 @@
     "AR-1328"
   ],
   "id": "AR-1367",
-  "next_action": "Development qualification complete on exact protected main with deterministic local/mock and strict-replay runtime authority. Deployment-owned live-provider materialization remains optional future hardening; no development action remains.",
+  "next_action": "No development action remains. Preserve the exact-main local/mock and strict-replay dispatch receipt; deployment-owned live-provider materialization is optional future hardening.",
   "observed_branch": "feature/ar-1367-ar1329-production-dispatch-integration",
   "observed_dirty": 0,
   "observed_head": "bf89a45ddd71af96e6d4b6954320e199e147f83e",

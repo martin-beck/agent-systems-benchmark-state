@@ -1,21 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-    AR_1419 --> AR_1420
-    AR_1419 --> AR_1423
-    AR_1420 --> AR_1424
-    AR_1421 --> AR_1427
-    AR_1423 --> AR_1424
-    AR_1423 --> AR_1426
-    AR_1423 --> AR_1430
-    AR_1424 --> AR_1425
-    AR_1425 --> AR_1426
-    AR_1427 --> AR_1431
-    AR_1430 --> AR_1424
-    AR_1433 --> AR_1446
-    AR_1433 --> AR_1447
-    AR_1433 --> AR_1451
-    AR_1433 --> AR_1452
-    AR_1433 --> AR_1456
     AR_1433 --> AR_1496
     AR_1434 --> AR_1435
     AR_1435 --> AR_1436
@@ -760,3 +744,5 @@
 | [AR-1464](../tasks/AR-1464-formal-capacity-input-provisioning.md) | None | None |
 | [AR-1465](../tasks/AR-1465-reviewed-seed-archival-recovery.md) | None | None |
 | [AR-1466](../tasks/AR-1466-state-ci-format-repair.md) | None | None |
+| [AR-1467](../tasks/AR-1467-terminal-ar-metadata-reconciliation.md) | None | None |
+| [AR-1468](../tasks/AR-1468-control-authority-materialization-successor.md) | [AR-1288](../tasks/AR-1288-certificate-chain-authz.md), [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md), [AR-1364](../tasks/AR-1364-authenticated-chain-enrollment.md), [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md) | None |

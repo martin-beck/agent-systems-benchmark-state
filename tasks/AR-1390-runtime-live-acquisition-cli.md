@@ -14,7 +14,7 @@
     "AR-1340"
   ],
   "id": "AR-1390",
-  "next_action": "Development path is actionable without AR-1523: re-audit and implement the ordinary run/sweep bridge against the existing deterministic local/mock and strict-replay authority, with exact-head gates. Deployment-owned authenticated live authority remains optional future production hardening.",
+  "next_action": "No development action remains. Preserve the local/mock and strict-replay receipt; any deployment-owned authenticated live authority is optional future hardening.",
   "observed_branch": "feature/ar-1390-runtime-live-acquisition-cli",
   "observed_dirty": 0,
   "observed_head": "bf89a45ddd71af96e6d4b6954320e199e147f83e",
