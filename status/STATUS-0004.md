@@ -125,12 +125,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1563](../tasks/AR-1563.md): ASB dev-channel clone/build materialization | ar1563-dev-materialization | Clone and build the current asb-tui main head for the ASB dev channel. | Ready for independent re-review of PR #398 at exact head 46133cd. Verify live quota monitoring, concurrent bounded output drain, process-group descendant termination, staging cleanup preserving prior install, digest-bound atomic dev install, and unchanged stable channel. |
-
 ### Blocked (80)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -276,7 +270,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (420)
+### Done (421)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -511,6 +505,7 @@
 | P0 | [AR-1558](../tasks/AR-1558.md): ASB plan/output release publication | Unclaimed | Publish the ASB release containing the dynamic plan and output-mode workflow after exact green-main verification. | Release done: signed tag asb-0.1.0-plan-output-ce190 published from exact green ce190124 and fresh checksum/doctor consumption passed. |
 | P0 | [AR-1559](../tasks/AR-1559.md): Machine consumer JSON opt-in repair | Unclaimed | Repair the Rust workflow&#x27;s workload catalog JSON consumer after the human-output default change. | Release done: PR #395 merged at exact main ce190124 and all required hosted checks passed, including the rerun of Rust verification. |
 | P0 | [AR-1562](../tasks/AR-1562.md): ASB TUI development release-channel contract | Unclaimed | Add explicit ASB TUI release-channel selection with a development default. | Ready for independent review on exact rebased head c46be39 atop protected main 73029d9164808ca531713da9ff8fb575968f6d74; hosted PR #396 checks must verify channel-neutral lifecycle metadata and full quality gates before merge. |
+| P0 | [AR-1563](../tasks/AR-1563.md): ASB dev-channel clone/build materialization | Unclaimed | Clone and build the current asb-tui main head for the ASB dev channel. | Ready for independent re-review of PR #398 at exact head 46133cd. Verify live quota monitoring, concurrent bounded output drain, process-group descendant termination, staging cleanup preserving prior install, digest-bound atomic dev install, and unchanged stable channel. |
 | P0 | [AR-1565](../tasks/AR-1565.md): ASB yanked dependency lock repair | Unclaimed | Repair the yanked dependency lock that blocks all protected ASB merges. | Run complete required ASB quality suite and obtain independent lockfile review; cargo-deny/cargo-audit binaries are absent on this host and must run in hosted/qualified environment. Then prepare exact-head PR from signed commit 54505f2. |
 | P1 | [AR-0002](../tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Unclaimed | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. |
 | P1 | [AR-0003](../tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Unclaimed | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. |
