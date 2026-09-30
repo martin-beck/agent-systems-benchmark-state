@@ -22,11 +22,11 @@
   "plan": "../plans/AR-1390-runtime-live-acquisition-cli.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Development local/mock and strict-replay run/sweep bridge is actionable; deployment-owned authenticated live authority is optional future hardening, not a development blocker.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Runtime live acquisition and CLI bridge",
-  "updated_at": "2026-09-29T21:22:05+00:00",
+  "updated_at": "2026-09-30T04:51:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1390-runtime-live-acquisition-cli"
 }
 ---
@@ -189,3 +189,6 @@ reachability.
 
 - 2026-09-29T21:22:05+00:00: Release ownerless after audit; AR-1523 owns the missing platform source
   needed before this CLI bridge can proceed.
+
+- 2026-09-30T04:51:45+00:00: All runtime safety dependencies are done; develop against deterministic
+  local/mock and strict replay without deployment-owned authentication.
