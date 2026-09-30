@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1558](tasks/AR-1558.md): ASB plan/output release publication | Publish the ASB release containing the dynamic plan and output-mode workflow after exact green-main verification. | Promote only after the plan/output qualification and protected-main repair are released; build and publish the next ASB development release from one exact green main SHA. | asb-release-worker |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |

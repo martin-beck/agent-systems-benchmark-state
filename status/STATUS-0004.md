@@ -109,12 +109,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1558](../tasks/AR-1558.md): ASB plan/output release publication | asb-release-worker | Publish the ASB release containing the dynamic plan and output-mode workflow after exact green-main verification. | Promote only after the plan/output qualification and protected-main repair are released; build and publish the next ASB development release from one exact green main SHA. |
-
 ### Blocked (80)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -260,7 +254,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (417)
+### Done (418)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -492,6 +486,7 @@
 | P0 | [AR-1554](../tasks/AR-1554.md): Global human-readable output mode | Unclaimed | Make ASB commands human-readable by default and preserve JSON through a global --json flag. | Implementation merged in ASB main; retain exact PR, provenance and hosted-check evidence. |
 | P0 | [AR-1555](../tasks/AR-1555.md): Plan and output workflow qualification | Unclaimed | Qualify plan creation and output modes as one simple ASB user journey. | Release done: exact current main ce190124 qualifies dynamic plan creation, human/JSON output, local/mock run, report and compare workflow. |
 | P0 | [AR-1557](../tasks/AR-1557.md): Protected-main receipt signature repair | Unclaimed | Repair protected-main signature evidence after the receipt PR rebase generated an unsigned topic commit. | Release done: signed forward repair 7aa09a0 passed exact protected-main policy and all required hosted checks. |
+| P0 | [AR-1558](../tasks/AR-1558.md): ASB plan/output release publication | Unclaimed | Publish the ASB release containing the dynamic plan and output-mode workflow after exact green-main verification. | Release done: signed tag asb-0.1.0-plan-output-ce190 published from exact green ce190124 and fresh checksum/doctor consumption passed. |
 | P0 | [AR-1559](../tasks/AR-1559.md): Machine consumer JSON opt-in repair | Unclaimed | Repair the Rust workflow&#x27;s workload catalog JSON consumer after the human-output default change. | Release done: PR #395 merged at exact main ce190124 and all required hosted checks passed, including the rerun of Rust verification. |
 | P1 | [AR-0002](../tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Unclaimed | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. |
 | P1 | [AR-0003](../tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Unclaimed | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. |

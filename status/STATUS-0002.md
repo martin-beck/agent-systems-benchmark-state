@@ -3118,15 +3118,15 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | asb-release-worker |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Publish the ASB release containing the dynamic plan and output-mode workflow after exact green-main verification. |
-| Next action | Promote only after the plan/output qualification and protected-main repair are released; build and publish the next ASB development release from one exact green main SHA. |
+| Next action | Release done: signed tag asb-0.1.0-plan-output-ce190 published from exact green ce190124 and fresh checksum/doctor consumption passed. |
 
 ### AR-1559 — Machine consumer JSON opt-in repair
 
@@ -3775,7 +3775,7 @@ flowchart LR
         AR_1555["AR-1555 - Done"]:::status_done
         AR_1556["AR-1556 - Planned"]:::status_planned
         AR_1557["AR-1557 - Done"]:::status_done
-        AR_1558["AR-1558 - In progress"]:::status_in_progress
+        AR_1558["AR-1558 - Done"]:::status_done
         AR_1559["AR-1559 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
@@ -4856,3 +4856,6 @@ flowchart LR
     AR_1362 --> AR_1380
     AR_1362 --> AR_1381
     AR_1362 --> AR_1468
+    AR_1362 --> AR_1470
+    AR_1362 --> AR_1471
+    AR_1362 --> AR_1474
