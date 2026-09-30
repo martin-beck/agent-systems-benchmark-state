@@ -3090,11 +3090,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | superseded |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | asb-signature-repair-worker |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Repair and verify the protected-main repository-quality gate after the plan/output merge series. |
@@ -3773,7 +3773,7 @@ flowchart LR
         AR_1553["AR-1553 - Done"]:::status_done
         AR_1554["AR-1554 - Done"]:::status_done
         AR_1555["AR-1555 - Done"]:::status_done
-        AR_1556["AR-1556 - In progress"]:::status_in_progress
+        AR_1556["AR-1556 - Superseded"]:::status_superseded
         AR_1557["AR-1557 - Done"]:::status_done
         AR_1558["AR-1558 - Done"]:::status_done
         AR_1559["AR-1559 - Done"]:::status_done
@@ -4857,3 +4857,4 @@ flowchart LR
     AR_1362 --> AR_1381
     AR_1362 --> AR_1468
     AR_1362 --> AR_1470
+    AR_1362 --> AR_1471
