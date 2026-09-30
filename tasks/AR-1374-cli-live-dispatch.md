@@ -13,16 +13,16 @@
   "next_action": "Development path is actionable after AR-1523/1390: requalify the existing ordinary run/sweep bridge with deterministic local/mock and strict-replay authority. Deployment-owned live-provider authority remains optional future hardening.",
   "observed_branch": "feature/ar-1374-cli-live-dispatch",
   "observed_dirty": 0,
-  "observed_head": "363b21f81d5c5ab364c2e2a923bd82676feaf343",
+  "observed_head": "bf89a45ddd71af96e6d4b6954320e199e147f83e",
   "owner": "coordinator-ar1374-development-20260930",
   "plan": "../plans/AR-1374-cli-live-dispatch.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Consume authenticated runtime receipts in production asb run and sweep dispatch; stale AR-1375 duplicate superseded by AR-1523.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Production live-provider dispatch",
-  "updated_at": "2026-09-30T04:54:46+00:00",
+  "updated_at": "2026-09-30T04:55:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1374-cli-live-dispatch"
 }
 ---
