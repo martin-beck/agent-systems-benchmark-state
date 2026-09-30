@@ -1,5 +1,8 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+    AR_1436 --> AR_1440
+    AR_1436 --> AR_1442
+    AR_1437 --> AR_1440
     AR_1437 --> AR_1443
     AR_1437 --> AR_1447
     AR_1441 --> AR_1442
@@ -741,4 +744,3 @@
 | [AR-1466](../tasks/AR-1466-state-ci-format-repair.md) | None | None |
 | [AR-1467](../tasks/AR-1467-terminal-ar-metadata-reconciliation.md) | None | None |
 | [AR-1468](../tasks/AR-1468-control-authority-materialization-successor.md) | [AR-1288](../tasks/AR-1288-certificate-chain-authz.md), [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md), [AR-1364](../tasks/AR-1364-authenticated-chain-enrollment.md), [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md) | None |
-| [AR-1469](../tasks/AR-1469-ar1392-protected-topology-repair.md) | None | None |

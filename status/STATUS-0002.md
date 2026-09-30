@@ -2804,7 +2804,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Reconcile AR-1307&#x27;s repaired development runner with the formal qualification handoff after the approved vendor release. |
-| Next action | Promote only after AR-1532, AR-1534 and AR-1542 are done; rerun exact-head vendor/state gates, audit AR-1307 formal-input readiness, and hand an exact sanitized bundle to AR-1522 or record the missing external input without substituting it. |
+| Next action | Blocked: an authorized external operator must provide the exact reviewed AR-1307 formal seed and matching model/JDK/TLC/source bundle; do not substitute development fixtures. Then AR-1545 audits the inputs and hands a sanitized receipt to AR-1522. |
 
 ### AR-1536 — AR-1308 capacity and preflight handoff repair
 
@@ -3028,7 +3028,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Provision the missing authenticated platform authority deployment required for first-customer live dispatch. |
-| Next action | Promote after AR-1505, AR-1513 and AR-1514 are done; implement and deploy the runtime/control-owned authenticated platform authority source, then hand its opaque materialization contract to AR-1523. |
+| Next action | Blocked: a deployment owner must supply or implement the non-test runtime/control-owned authenticated platform authority source and opaque materialization handoff; local/mock authority is development-only. Then AR-1523 consumes it and qualifies live dispatch. |
 
 
 ## Dependency graph
@@ -4918,6 +4918,3 @@ flowchart LR
     AR_1434 --> AR_1435
     AR_1435 --> AR_1436
     AR_1436 --> AR_1437
-    AR_1436 --> AR_1440
-    AR_1436 --> AR_1442
-    AR_1437 --> AR_1440
