@@ -3076,15 +3076,15 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | asb-plan-command-worker |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Qualify plan creation and output modes as one simple ASB user journey. |
-| Next action | Promote after AR-1552, AR-1553 and AR-1554; run cross-command qualification and publish the user workflow. |
+| Next action | Release done: exact current main ce190124 qualifies dynamic plan creation, human/JSON output, local/mock run, report and compare workflow. |
 
 ### AR-1556 — Protected-main merge-topology gate repair
 
@@ -3772,7 +3772,7 @@ flowchart LR
         AR_1552["AR-1552 - Done"]:::status_done
         AR_1553["AR-1553 - Done"]:::status_done
         AR_1554["AR-1554 - Done"]:::status_done
-        AR_1555["AR-1555 - In progress"]:::status_in_progress
+        AR_1555["AR-1555 - Done"]:::status_done
         AR_1556["AR-1556 - Planned"]:::status_planned
         AR_1557["AR-1557 - Done"]:::status_done
         AR_1558["AR-1558 - Planned"]:::status_planned

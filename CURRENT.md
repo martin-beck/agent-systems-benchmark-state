@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1555](tasks/AR-1555.md): Plan and output workflow qualification | Qualify plan creation and output modes as one simple ASB user journey. | Promote after AR-1552, AR-1553 and AR-1554; run cross-command qualification and publish the user workflow. | asb-plan-command-worker |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
