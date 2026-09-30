@@ -235,17 +235,12 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1534](../tasks/AR-1534.md): Coordinator vendor integrity repair | codex-asb-ar1534-v0349-sync-20260930 | Coordinator metadata repair v0.3.50 is published; rerun approved vendor sync and all ASB gates against the exact immutable release. | Synchronize the exact coordinator v0.3.50 tag/source into ASB; rerun vendor verification, full state gates and exact-head review. Preserve AR-1307/1308 formal qualification as separate and do not claim it from development fixtures. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1537](../tasks/AR-1537.md): Coordinator vendor bootstrap closure | Unclaimed | Close the ASB vendor bootstrap allowlist so coordinator v0.3.50 installs a self-contained verifier without weakening the handoffctl gate. | Promote and implement the explicit v0.3.50 vendor-bootstrap allowlist closure; then release AR-1534 to rerun the clean immutable sync. |
+| P0 | [AR-1537](../tasks/AR-1537.md): Coordinator vendor bootstrap closure | codex-asb-ar1537-vendor-bootstrap-20260930 | Close the ASB vendor bootstrap allowlist so coordinator v0.3.50 installs a self-contained verifier without weakening the handoffctl gate. | Promote and implement the explicit v0.3.50 vendor-bootstrap allowlist closure; then release AR-1534 to rerun the clean immutable sync. |
 
 ### Blocked (82)
 
