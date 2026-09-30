@@ -2894,11 +2894,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | asb-ar1542-ar1307-closure-20260930 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Close ASB-owned AR-1307 runner regressions after the coordinator v0.3.50 compatibility repairs and prepare the formal-readiness handoff. |
@@ -3633,7 +3633,7 @@ flowchart LR
         AR_1539["AR-1539 - Blocked"]:::status_blocked
         AR_1540["AR-1540 - Done"]:::status_done
         AR_1541["AR-1541 - Done"]:::status_done
-        AR_1542["AR-1542 - In progress"]:::status_in_progress
+        AR_1542["AR-1542 - Done"]:::status_done
         AR_1543["AR-1543 - Planned"]:::status_planned
         AR_1544["AR-1544 - Superseded"]:::status_superseded
         AR_1545["AR-1545 - Planned"]:::status_planned
@@ -4929,3 +4929,5 @@ flowchart LR
     AR_1446 --> AR_1448
     AR_1446 --> AR_1458
     AR_1446 --> AR_1487
+    AR_1447 --> AR_1443
+    AR_1447 --> AR_1456

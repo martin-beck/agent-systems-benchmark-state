@@ -81,12 +81,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1542](../tasks/AR-1542.md): AR-1307 runner integration closure | asb-ar1542-ar1307-closure-20260930 | Close ASB-owned AR-1307 runner regressions after the coordinator v0.3.50 compatibility repairs and prepare the formal-readiness handoff. | Promote after AR-1532, AR-1534, AR-1540, AR-1541 and AR-1549 are done; run the exact v0.3.53 vendor-integrated AR-1307 runner gates and hand evidence to AR-1535. |
-
 ### Blocked (83)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -237,7 +231,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (404)
+### Done (405)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -454,6 +448,7 @@
 | P0 | [AR-1534](../tasks/AR-1534.md): Coordinator vendor integrity repair | Unclaimed | Immutable coordinator v0.3.53 vendor boundary and ASB lifecycle/session/SQLite compatibility are green; close with successor receipts. | Promote and close from AR-1547/AR-1549: v0.3.53 vendor verification and all compatibility gates are green; preserve the separate formal qualification boundary. |
 | P0 | [AR-1540](../tasks/AR-1540.md): Session and lifecycle contract compatibility | Unclaimed | Session/checkpoint/recovery compatibility is green against coordinator v0.3.53; close with AR-1549 evidence. | Promote and close from AR-1549&#x27;s v0.3.53 compatibility receipt; no additional ASB-owned session repair remains. |
 | P0 | [AR-1541](../tasks/AR-1541.md): SQLite fence compatibility and isolation | Unclaimed | SQLite/WAL fence compatibility is green against coordinator v0.3.53; close with AR-1549 evidence. | Promote and close from AR-1549&#x27;s v0.3.53 compatibility receipt; no additional ASB-owned SQLite repair remains. |
+| P0 | [AR-1542](../tasks/AR-1542.md): AR-1307 runner integration closure | Unclaimed | Close ASB-owned AR-1307 runner regressions after the coordinator v0.3.50 compatibility repairs and prepare the formal-readiness handoff. | Promote after AR-1532, AR-1534, AR-1540, AR-1541 and AR-1549 are done; run the exact v0.3.53 vendor-integrated AR-1307 runner gates and hand evidence to AR-1535. |
 | P0 | [AR-1547](../tasks/AR-1547.md): Coordinator v0.3.52 vendor adoption and compatibility rerun | Unclaimed | Adopt coordinator v0.3.52 and rerun the ASB state-worktree compatibility gates after the rejected v0.3.51 tag. | Promote and claim; record v0.3.52 vendor adoption, rerun AR-1540/AR-1541 compatibility and full state gates on the clean snapshot, then release AR-1544/AR-1534 successors with exact evidence. |
 | P0 | [AR-1549](../tasks/AR-1549.md): Coordinator v0.3.53 compatibility closure | Unclaimed | Rerun the compatibility gates previously blocked by the rejected coordinator vendor snapshots. | Promote and claim; rerun the state-worktree, session, SQLite and full compatibility gates against the verified v0.3.53 snapshot, then hand exact results to AR-1534/1542/1543. |
 | P0 | [AR-1550](../tasks/AR-1550.md): Compatibility blocker graph reconciliation | Unclaimed | Reconcile stale compatibility blocker records after AR-1549 without claiming formal qualification. | Promote and claim; reconcile stale AR-1534/1540/1541/1544 blocker metadata with the verified v0.3.53 receipts, preserving historical failure evidence. |
