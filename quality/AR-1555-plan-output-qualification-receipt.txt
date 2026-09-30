@@ -1,0 +1,25 @@
+AR-1555 plan and output workflow qualification receipt
+
+Exact qualified main: ce190124b4ce8794d9311aae92d86ec042df7307
+Feature merges: PR #387 (plan creation), #389 (plan-create workflow),
+#388 (human output/global JSON), #391 (machine consumers), #390 (local/mock
+measurement qualification), #392/#394 protected merge repairs, #395 catalog
+parity JSON consumer repair.
+
+Exact-main functional evidence:
+- cargo test --locked -p asb-cli --lib: 136 passed.
+- cargo test --locked -p asb-cli --test workflow_transcript: 3 passed.
+- Dynamic workload catalog plan creation, validation, two local/mock runs,
+  two reports, and compare all passed; compare returned comparable=true and no
+  differences.
+- Human output is default and `asb --json ...` preserves machine envelopes.
+- No provider contact or credential material was used.
+
+Hosted checks for ce190124 all completed successfully: Repository quality
+36699804880, Rust verification 36699805173 attempt 2, credential-free
+36699805095, hosted portability 36699805131, formal assurance 36699805065,
+fault assurance 36699804929, emulated aarch64 36699805213, and Huawei headers
+36699805385.
+
+The unsigned receipt merge at 75a7e63 was retained as immutable history and
+repaired forward by AR-1557; no policy gate was waived.
