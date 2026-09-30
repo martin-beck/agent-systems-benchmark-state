@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**558 ARs tracked** across 6 active status categories.
+**559 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 84 |
-| **Planned** | Defined work awaiting promotion or dependencies | 48 |
+| **Planned** | Defined work awaiting promotion or dependencies | 49 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 396 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -633,6 +633,7 @@ flowchart LR
         AR_1536["AR-1536 - Planned"]:::status_planned
         AR_1537["AR-1537 - Blocked"]:::status_blocked
         AR_1538["AR-1538 - Blocked"]:::status_blocked
+        AR_1539["AR-1539 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2101,6 +2102,7 @@ flowchart LR
     AR_1530 --> AR_1534
     AR_1530 --> AR_1537
     AR_1530 --> AR_1538
+    AR_1530 --> AR_1539
     AR_1531 --> AR_1536
     AR_1532 --> AR_1535
     AR_1533 --> AR_1536
@@ -2443,4 +2445,3 @@ flowchart LR
 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md) | None | None |
 | [AR-1294](../tasks/AR-1294-state-gate-baseline.md) | None | None |
 | [AR-1295](../tasks/AR-1295-vendor-fixture-v037.md) | None | None |
-| [AR-1296](../tasks/AR-1296-state-quality-baseline.md) | None | None |
