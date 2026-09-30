@@ -1,7 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-    AR_1418 --> AR_1420
-    AR_1418 --> AR_1425
     AR_1419 --> AR_1420
     AR_1419 --> AR_1423
     AR_1420 --> AR_1424
@@ -761,3 +759,4 @@
 | [AR-1463](../tasks/AR-1463-current-main-requalification-after-capture.md) | [AR-1330](../tasks/AR-1330-live-capture-sealed-cassette.md), [AR-1461](../tasks/AR-1461-first-customer-release-readiness.md) | None |
 | [AR-1464](../tasks/AR-1464-formal-capacity-input-provisioning.md) | None | None |
 | [AR-1465](../tasks/AR-1465-reviewed-seed-archival-recovery.md) | None | None |
+| [AR-1466](../tasks/AR-1466-state-ci-format-repair.md) | None | None |
