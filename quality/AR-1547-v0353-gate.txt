@@ -1,0 +1,12 @@
+AR-1547 v0.3.53 adoption receipt
+
+Coordinator release: v0.3.53
+Coordinator merge: b476a61e93d777e163148d15490adec6e21fca41
+Vendor verifier: PASS
+Formal artifacts: ASB-owned; absent from coordinator vendor manifest
+Focused TLC tests: 41/41 PASS
+Focused vendor tests: 8/8 PASS
+Hierarchy tests: 7/7 PASS
+Full ASB state suite: 238/238 PASS
+Repository: clean exact head, signed commits with matching DCO, pushed main
+Qualification claim: none; AR-1307/AR-1308 formal readiness remains separate

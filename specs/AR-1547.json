@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1547.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "vendor_identity", "description": "Coordinator v0.3.53 identity and manifest verify exactly."},
+    {"id": "focused_gates", "description": "Focused vendor, formal, hierarchy and compatibility tests pass."},
+    {"id": "full_state_gate", "description": "The complete ASB state test suite passes from the bound checkout."}
+  ],
+  "definition_of_done": [
+    "The exact v0.3.53 coordinator merge is vendored without formal-file collisions.",
+    "Focused and full state gates are green and recorded in sanitized evidence.",
+    "The clean signed/DCO snapshot is pushed and downstream handoff is explicit."
+  ],
+  "inputs": [
+    {"id": "coordinator_release", "description": "Immutable coordinator v0.3.53 tag and merge."},
+    {"id": "asb_state", "description": "Bound ASB state checkout and vendor manifest."}
+  ],
+  "outputs": [
+    {"id": "gate_receipt", "description": "Sanitized focused and full gate receipt."},
+    {"id": "vendor_snapshot", "description": "Verified coordinator vendor snapshot."}
+  ],
+  "allowed_tools": [
+    "tools/handoffctl",
+    "python",
+    "uv",
+    "git"
+  ],
+  "forbidden_tools": [],
+  "required_evidence_classes": ["mechanical", "contract-test"],
+  "gates": [
+    {"id": "exact_head", "description": "The reviewed tree is clean and pushed at the recorded commit."},
+    {"id": "vendor_verify", "description": "The vendor verifier accepts the exact immutable release."},
+    {"id": "full_tests", "description": "All applicable ASB state tests pass."}
+  ]
+}
