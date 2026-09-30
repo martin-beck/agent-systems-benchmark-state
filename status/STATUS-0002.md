@@ -3142,6 +3142,20 @@
 | Summary | Repair the Rust workflow&#x27;s workload catalog JSON consumer after the human-output default change. |
 | Next action | Release done: PR #395 merged at exact main ce190124 and all required hosted checks passed, including the rerun of Rust verification. |
 
+### AR-1560 — State verification formatting repair
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair the state repository formatting gate before publishing its coordination release. |
+| Next action | Promote and format tests/test_handoffctl_vendor.py with the pinned Ruff tool; rerun exact state verification and record the repair. |
+
 
 ## Dependency graph
 
@@ -3777,6 +3791,7 @@ flowchart LR
         AR_1557["AR-1557 - Done"]:::status_done
         AR_1558["AR-1558 - Done"]:::status_done
         AR_1559["AR-1559 - Done"]:::status_done
+        AR_1560["AR-1560 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4836,25 +4851,3 @@ flowchart LR
     AR_1356 --> AR_1357
     AR_1357 --> AR_1358
     AR_1357 --> AR_1359
-    AR_1357 --> AR_1451
-    AR_1357 --> AR_1452
-    AR_1357 --> AR_1470
-    AR_1357 --> AR_1471
-    AR_1359 --> AR_1360
-    AR_1359 --> AR_1361
-    AR_1359 --> AR_1362
-    AR_1359 --> AR_1470
-    AR_1359 --> AR_1471
-    AR_1362 --> AR_1363
-    AR_1362 --> AR_1364
-    AR_1362 --> AR_1365
-    AR_1362 --> AR_1366
-    AR_1362 --> AR_1369
-    AR_1362 --> AR_1376
-    AR_1362 --> AR_1378
-    AR_1362 --> AR_1379
-    AR_1362 --> AR_1380
-    AR_1362 --> AR_1381
-    AR_1362 --> AR_1468
-    AR_1362 --> AR_1470
-    AR_1362 --> AR_1471
