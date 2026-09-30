@@ -245,6 +245,12 @@
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1534](../tasks/AR-1534.md): Coordinator vendor integrity repair | codex-asb-ar1534-v0349-sync-20260930 | Coordinator metadata repair v0.3.50 is published; rerun approved vendor sync and all ASB gates against the exact immutable release. | Synchronize the exact coordinator v0.3.50 tag/source into ASB; rerun vendor verification, full state gates and exact-head review. Preserve AR-1307/1308 formal qualification as separate and do not claim it from development fixtures. |
 
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1539](../tasks/AR-1539.md): Coordinator v0.3.50 compatibility repair | Unclaimed | Repair ASB lifecycle/session and SQLite fence compatibility exposed by the exact v0.3.50 integration attempt. | Promote after the AR-1538 failure is recorded; repair v0.3.50 lifecycle/session and SQLite compatibility in a disposable worktree, then rerun every state gate before reconsidering AR-1534. |
+
 ### Blocked (84)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -334,7 +340,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (49)
+### Planned (48)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -355,7 +361,6 @@
 | P0 | [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Unclaimed | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. |
 | P0 | [AR-1535](../tasks/AR-1535.md): AR-1307 formal-readiness handoff repair | Unclaimed | Reconcile AR-1307&#x27;s repaired development runner with the formal qualification handoff after the approved vendor release. | Promote only after AR-1532 and AR-1534 are done; rerun exact-head vendor/state gates, audit AR-1307 formal-input readiness, and hand an exact sanitized bundle to AR-1522 or record the missing external input without substituting it. |
 | P0 | [AR-1536](../tasks/AR-1536.md): AR-1308 capacity and preflight handoff repair | Unclaimed | Repair AR-1308 capacity/preflight handoff after the unsigned-development fixture and approved vendor boundary are complete. | Promote only after AR-1531, AR-1533 and AR-1534 are done; rerun clean diagnostic/formal preflight, verify every exact input and hand a terminal-ready receipt to AR-1522 or record the missing input blocker. |
-| P0 | [AR-1539](../tasks/AR-1539.md): Coordinator v0.3.50 compatibility repair | Unclaimed | Repair ASB lifecycle/session and SQLite fence compatibility exposed by the exact v0.3.50 integration attempt. | Promote after the AR-1538 failure is recorded; repair v0.3.50 lifecycle/session and SQLite compatibility in a disposable worktree, then rerun every state gate before reconsidering AR-1534. |
 | P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
 | P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
 | P1 | [AR-0810](../tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Unclaimed | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project&#x27;s GitHub Pages site. |
