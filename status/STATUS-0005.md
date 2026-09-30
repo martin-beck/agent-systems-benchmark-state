@@ -1,7 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| P1 | [AR-0505](../tasks/AR-0505-agent-replay-conformance.md): Prove real-agent replay conformance | Unclaimed | Test each actual client through recording and offline replay of engineering tasks. | Independently review the exact current-main four-agent native loopback evidence and capability limits; if accepted, release AR-0505 done without adding duplicate aggregate-matrix product changes. |
-| P1 | [AR-0603](../tasks/AR-0603-csb-execution-assurance.md): Establish pinned CSB execution and conformance boundary | Unclaimed | Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary. | Completed; retain explicit Ubuntu 24.04 x86_64 support limits. |
 | P1 | [AR-0701](../tasks/AR-0701-platform-manifests.md): Pin distribution and architecture support matrix | Unclaimed | Define Ubuntu, Debian, Fedora, enterprise, openSUSE, Arch, Alpine and openEuler target manifests. | Run final coordination repository validation and live doctor, then release AR-0701 done if state and all product worktrees remain consistent. |
 | P1 | [AR-0702](../tasks/AR-0702-native-platforms.md): Validate native Linux kernels and architectures | Unclaimed | Qualify native x86_64 and required emulated AArch64 portability; track native ARM64 as optional future evidence. | Rebase PR #31, replace native ARM64 completion gates with the pinned QEMU AArch64 lane where applicable, document native ARM64 as optional future qualification, and rerun exact-head checks. |
 | P1 | [AR-0704](../tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | PR #119 exact head 4630f90 is rebased onto protected main 5ddac12. Fresh exact-head checks were absent immediately after force-push; close/reopen retriggered them. At last query all 12 checks are pending except AWQ shadow and SPDX headers pass. Wait for every required check terminal success; do not merge on partial/pending evidence. |
@@ -156,11 +154,12 @@
 | P3 | [AR-0406](../tasks/AR-0406-evolving-workloads.md): Add evolving long-horizon workload sources | Unclaimed | Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation. | Monitor all required post-merge CI runs for exact main ca6e75916a8c9831b9107377cd48d731463c272a; release only after every required gate is green. |
 | P3 | [AR-1006](../tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Unclaimed | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Monitor post-merge workflows for main 4e2820b until terminal; verify exact tree/signature/DCO/policy, then release AR-1006 done. |
 
-### Cancelled (1)
+### Cancelled (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1551](../tasks/AR-1551-platform-authority-deployment-bootstrap.md): First-customer platform authority deployment bootstrap | Unclaimed | Optional future production-live platform authority bootstrap; not a development qualification requirement. | No development action: deployment-owned authenticated authority is optional future production hardening. If live-provider production is later authorized, create a separately scoped successor; local/mock authority is sufficient for development qualification. |
+| P0 | [AR-1561](../tasks/AR-1561.md): State strict-mypy repair | Unclaimed | Repair strict mypy failures that prevent the changed coordination repository from reaching a releasable state. | Promote and resolve the latent strict-mypy import/typing failures after the formatter repair; preserve fail-closed optional authority boundaries and rerun hosted state verification. |
 
 ### Superseded (32)
 

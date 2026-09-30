@@ -3160,11 +3160,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | cancelled |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | asb-state-mypy-worker |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Repair strict mypy failures that prevent the changed coordination repository from reaching a releasable state. |
@@ -3806,7 +3806,7 @@ flowchart LR
         AR_1558["AR-1558 - Done"]:::status_done
         AR_1559["AR-1559 - Done"]:::status_done
         AR_1560["AR-1560 - Superseded"]:::status_superseded
-        AR_1561["AR-1561 - In progress"]:::status_in_progress
+        AR_1561["AR-1561 - Cancelled"]:::status_cancelled
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
