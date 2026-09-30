@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1535](tasks/AR-1535.md): AR-1307 formal-readiness handoff repair | Reconcile AR-1307's repaired development runner with the formal qualification handoff after the approved vendor release. | Promote only after AR-1532, AR-1534 and AR-1542 are done; rerun exact-head vendor/state gates, audit AR-1307 formal-input readiness, and hand an exact sanitized bundle to AR-1522 or record the missing external input without substituting it. | asb-ar1535-formal-readiness-20260930 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -75,6 +69,7 @@ Never edit this file directly.
 | P0 | [AR-1522](tasks/AR-1522.md): AR-1307/1308 formal qualification rerun | Run and independently verify the repaired AR-1307/1308 full-tier qualification, or leave a truthful classified blocker. | Remain blocked until AR-1531 supplies the capacity fixture and an external operator supplies the exact reviewed formal seed/input bundle; then run the one authorized terminal qualification attempt. | - |
 | P0 | [AR-1523](tasks/AR-1523.md): Platform authority deployment adapter | Central orchestration is merged for local/replay, but PlanAuthoritySource still rejects live mode and no runtime-owned platform source supplies private authority for first-customer dispatch. | Remain blocked until a runtime/control deployment owner supplies an authenticated private authority source and opaque materialization handoff; then replace PlanAuthoritySource's live-mode rejection with the central orchestrator adapter and run exact-head gates. | - |
 | P0 | [AR-1531](tasks/AR-1531.md): Provision signed 8G formal capacity fixture | Provision the missing 8G/8G disposable formal fixture and resource evidence required by AR-1522. | External operator must supply the exact reviewed formal seed and matching model/JDK/TLC/source inputs; preserve the provisioned 8 GiB/8 GiB fixture and do not run qualification before preflight passes. | - |
+| P0 | [AR-1535](tasks/AR-1535.md): AR-1307 formal-readiness handoff repair | Reconcile AR-1307's repaired development runner with the formal qualification handoff after the approved vendor release. | Promote only after AR-1532, AR-1534 and AR-1542 are done; rerun exact-head vendor/state gates, audit AR-1307 formal-input readiness, and hand an exact sanitized bundle to AR-1522 or record the missing external input without substituting it. | - |
 | P0 | [AR-1537](tasks/AR-1537.md): Coordinator vendor bootstrap closure | Allowlist closure is implemented and focused tests pass, but consuming v0.3.50 also changes ASB-owned formal/tests surfaces; AR-1538 owns that compatibility integration. | Remain blocked pending AR-1538 downstream integration. Preserve the repaired explicit allowlist and the mixed-snapshot failure; do not rerun sync until ASB-owned compatibility work is reviewed. | - |
 | P0 | [AR-1538](tasks/AR-1538.md): Coordinator v0.3.50 downstream integration | v0.3.50 sync and immutable vendor verification pass, but the coordinator lifecycle/session contract is incompatible with ASB-owned tests and SQLite fence fixtures; a narrower compatibility successor is required. | Remain blocked pending AR-1539 compatibility repair. Preserve branch preserve/ar1538-v0350-mixed-snapshot and do not publish the failing integration. | - |
 | P0 | [AR-1539](tasks/AR-1539.md): Coordinator v0.3.50 compatibility repair | Compatibility audit reproduced the v0.3.50 failures and split them into AR-1540 session/lifecycle and AR-1541 SQLite fence repairs; no incompatible runtime is publishable. | Remain blocked pending AR-1540, AR-1541 and AR-1544. Preserve the exact v0.3.50 verifier result and the disposable failure evidence; resume AR-1534 only after all compatibility successors pass. | - |

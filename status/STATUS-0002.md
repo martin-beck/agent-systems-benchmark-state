@@ -2796,11 +2796,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | blocked |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | asb-ar1535-formal-readiness-20260930 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Reconcile AR-1307&#x27;s repaired development runner with the formal qualification handoff after the approved vendor release. |
@@ -3626,7 +3626,7 @@ flowchart LR
         AR_1532["AR-1532 - Done"]:::status_done
         AR_1533["AR-1533 - Done"]:::status_done
         AR_1534["AR-1534 - Done"]:::status_done
-        AR_1535["AR-1535 - In progress"]:::status_in_progress
+        AR_1535["AR-1535 - Blocked"]:::status_blocked
         AR_1536["AR-1536 - Planned"]:::status_planned
         AR_1537["AR-1537 - Blocked"]:::status_blocked
         AR_1538["AR-1538 - Blocked"]:::status_blocked
@@ -4930,3 +4930,4 @@ flowchart LR
     AR_1446 --> AR_1458
     AR_1446 --> AR_1487
     AR_1447 --> AR_1443
+    AR_1447 --> AR_1456
