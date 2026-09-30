@@ -64,9 +64,15 @@ class VendorTest(unittest.TestCase):
             if destination.is_file():
                 contents = destination.read_bytes()
                 if destination_name == "tools/handoffctl.py":
-                    contents = contents.replace(b'COORDINATOR_VERSION = "0.3.50"', b'COORDINATOR_VERSION = "0.3.7"')
-                    contents = contents.replace(b'COORDINATOR_VERSION = "0.3.52"', b'COORDINATOR_VERSION = "0.3.7"')
-                    contents = contents.replace(b'COORDINATOR_VERSION = "0.3.53"', b'COORDINATOR_VERSION = "0.3.7"')
+                    contents = contents.replace(
+                        b'COORDINATOR_VERSION = "0.3.50"', b'COORDINATOR_VERSION = "0.3.7"'
+                    )
+                    contents = contents.replace(
+                        b'COORDINATOR_VERSION = "0.3.52"', b'COORDINATOR_VERSION = "0.3.7"'
+                    )
+                    contents = contents.replace(
+                        b'COORDINATOR_VERSION = "0.3.53"', b'COORDINATOR_VERSION = "0.3.7"'
+                    )
                 source.write_bytes(contents)
                 source.chmod(destination.stat().st_mode & 0o777)
             else:
