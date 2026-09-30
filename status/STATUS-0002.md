@@ -3244,11 +3244,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1567-toolchain-discovery |
 | Parent | None |
 | Children | None |
 | Summary | Make development installation resolve a trusted cargo/toolchain without hard-coded host paths. |
@@ -3910,7 +3910,7 @@ flowchart LR
         AR_1564["AR-1564 - Done"]:::status_done
         AR_1565["AR-1565 - Done"]:::status_done
         AR_1566["AR-1566 - Open"]:::status_open
-        AR_1567["AR-1567 - Open"]:::status_open
+        AR_1567["AR-1567 - In progress"]:::status_in_progress
         AR_1568["AR-1568 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
@@ -4773,4 +4773,3 @@ flowchart LR
     AR_1238 --> AR_1280
     AR_1238 --> AR_1281
     AR_1238 --> AR_1282
-    AR_1238 --> AR_1284
