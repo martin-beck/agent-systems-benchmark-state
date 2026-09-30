@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1564](tasks/AR-1564.md): ASB development TUI lifecycle integration | Integrate the dev-built TUI into the ASB lifecycle and launch path. | Wire the development materialized executable into install, status, upgrade, launch, and remove with the asb-tui development router and publish exact-head CI evidence. | - |
+| P0 | [AR-1564](tasks/AR-1564.md): ASB development TUI lifecycle integration | Integrate the dev-built TUI into the ASB lifecycle and launch path. | Wire the development materialized executable into install, status, upgrade, launch, and remove with the asb-tui development router and publish exact-head CI evidence. | ar1564-dev-lifecycle |
 
 ## Blocked
 

@@ -3202,11 +3202,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1564-dev-lifecycle |
 | Parent | None |
 | Children | None |
 | Summary | Integrate the dev-built TUI into the ASB lifecycle and launch path. |
@@ -3865,7 +3865,7 @@ flowchart LR
         AR_1561["AR-1561 - Cancelled"]:::status_cancelled
         AR_1562["AR-1562 - Done"]:::status_done
         AR_1563["AR-1563 - Done"]:::status_done
-        AR_1564["AR-1564 - Open"]:::status_open
+        AR_1564["AR-1564 - In progress"]:::status_in_progress
         AR_1565["AR-1565 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
@@ -4798,4 +4798,3 @@ flowchart LR
     AR_1304 --> AR_1516
     AR_1304 --> AR_1517
     AR_1304 --> AR_1519
-    AR_1307 --> AR_1309
