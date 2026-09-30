@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Consume authenticated runtime receipts in production asb run and sweep dispatch; stale AR-1375 duplicate superseded by AR-1523.",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Production live-provider dispatch",
-  "updated_at": "2026-09-30T04:56:35+00:00",
+  "updated_at": "2026-09-30T04:56:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1374-cli-live-dispatch"
 }
 ---
@@ -198,3 +198,6 @@ fabricated, no asb-tui/live provider.
 - 2026-09-30T04:56:33+00:00: Heartbeat by coordinator-ar1374-development-20260930.
 
 - 2026-09-30T04:56:35+00:00: Heartbeat by coordinator-ar1374-development-20260930.
+
+- 2026-09-30T04:56:39+00:00: Recorded command exit 0; command argv SHA-256
+  345d7b3281fe607521b7a5717d2e0525a02ad5ef9d3fc7d1f134b21109f9f94c.
