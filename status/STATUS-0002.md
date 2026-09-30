@@ -3132,11 +3132,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | asb-machine-json-worker |
 | Parent | None |
 | Children | None |
 | Summary | Repair the Rust workflow&#x27;s workload catalog JSON consumer after the human-output default change. |
@@ -3776,7 +3776,7 @@ flowchart LR
         AR_1556["AR-1556 - Planned"]:::status_planned
         AR_1557["AR-1557 - In progress"]:::status_in_progress
         AR_1558["AR-1558 - Planned"]:::status_planned
-        AR_1559["AR-1559 - Open"]:::status_open
+        AR_1559["AR-1559 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4851,4 +4851,3 @@ flowchart LR
     AR_1362 --> AR_1366
     AR_1362 --> AR_1369
     AR_1362 --> AR_1376
-    AR_1362 --> AR_1378
