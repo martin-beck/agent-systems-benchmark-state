@@ -3182,7 +3182,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Add explicit ASB TUI release-channel selection with a development default. |
-| Next action | Define and implement the explicit dev/stable/nightly/experimental channel contract with dev as the current default; keep production channels fail-closed when metadata is absent. |
+| Next action | Run full asb-cli quality gates and independent review of explicit channel parser/output. Then reconcile branch metadata and prepare exact-head PR; AR-1563 remains blocked until this contract is integrated. |
 
 ### AR-1563 — ASB dev-channel clone/build materialization
 
@@ -4813,4 +4813,3 @@ flowchart LR
     AR_1328 --> AR_1339
     AR_1328 --> AR_1342
     AR_1328 --> AR_1343
-    AR_1328 --> AR_1346
