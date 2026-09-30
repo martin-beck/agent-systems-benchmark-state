@@ -2916,7 +2916,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Close ASB-owned AR-1308 QEMU and preflight regressions after coordinator v0.3.50 compatibility repairs and prepare the capacity handoff. |
-| Next action | Promote after AR-1531, AR-1533, AR-1534, AR-1540, AR-1541 and AR-1549 are done; run the exact v0.3.53 vendor-integrated AR-1308 QEMU/preflight gates and hand evidence to AR-1536. |
+| Next action | Promote after AR-1533, AR-1534, AR-1540, AR-1541 and AR-1549 are done; run the provider-free unsigned-development AR-1308 QEMU/preflight gates and hand diagnostic evidence to AR-1536. AR-1531 exact formal inputs remain optional formal work and cannot block this development path. |
 
 ### AR-1544 — State-worktree observation compatibility
 
@@ -4898,7 +4898,3 @@ flowchart LR
     AR_1418 --> AR_1419
     AR_1418 --> AR_1420
     AR_1418 --> AR_1425
-    AR_1419 --> AR_1420
-    AR_1419 --> AR_1423
-    AR_1420 --> AR_1424
-    AR_1421 --> AR_1427
