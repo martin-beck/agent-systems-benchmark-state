@@ -3182,7 +3182,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Add explicit ASB TUI release-channel selection with a development default. |
-| Next action | Run full asb-cli quality gates and independent review of explicit channel parser/output. Then reconcile branch metadata and prepare exact-head PR; AR-1563 remains blocked until this contract is integrated. |
+| Next action | Independent review fix pushed to feature/ar-1562-dev-release-channel-contract at exact head 61afc0e; preserve channel-neutral stable metadata for status/doctor/remove/launch. Await PR #396 checks/review; do not merge locally. |
 
 ### AR-1563 — ASB dev-channel clone/build materialization
 
@@ -4801,4 +4801,3 @@ flowchart LR
     AR_1307 --> AR_1309
     AR_1308 --> AR_1309
     AR_1310 --> AR_1316
-    AR_1310 --> AR_1319
