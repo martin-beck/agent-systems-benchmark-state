@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1536](tasks/AR-1536.md): AR-1308 capacity and preflight handoff repair | Repair AR-1308 capacity/preflight handoff after the unsigned-development fixture and approved vendor boundary are complete. | Promote after AR-1533, AR-1534 and AR-1543 are done; rerun the clean unsigned-development diagnostic preflight and record a sanitized handoff. AR-1531 exact formal inputs remain separate optional formal work and cannot block development. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -107,7 +113,6 @@ Never edit this file directly.
 | P0 | [AR-1170](tasks/AR-1170.md): Standalone TUI wizard | Guide TUI setup through analysis. | Read the plan. | - |
 | P0 | [AR-1180](tasks/AR-1180.md): Cross-project wizard qualification | Qualify the complete wizard. | Read the plan. | - |
 | P0 | [AR-1227](tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. | - |
-| P0 | [AR-1536](tasks/AR-1536.md): AR-1308 capacity and preflight handoff repair | Repair AR-1308 capacity/preflight handoff after the unsigned-development fixture and approved vendor boundary are complete. | Promote after AR-1533, AR-1534 and AR-1543 are done; rerun the clean unsigned-development diagnostic preflight and record a sanitized handoff. AR-1531 exact formal inputs remain separate optional formal work and cannot block development. | - |
 | P0 | [AR-1545](tasks/AR-1545.md): AR-1307 formal-input readiness repair | Audit and repair the AR-1307 formal-input handoff after development runner integration, without executing qualification. | Promote after AR-1535; inventory and independently verify every exact AR-1307 formal input, then hand a sanitized readiness receipt to AR-1522 or record the specific external-input blocker. | - |
 | P0 | [AR-1546](tasks/AR-1546.md): AR-1308 formal capacity-input readiness repair | Audit and repair the AR-1308 capacity/input handoff after diagnostic QEMU integration, without executing qualification. | Promote after AR-1531 and AR-1536; verify the exact 8 GiB/8 GiB fixture and every AR-1308 formal input, then hand a sanitized readiness receipt to AR-1522 or record the measured blocker. | - |
 | P1 | [AR-0808](tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. | - |
