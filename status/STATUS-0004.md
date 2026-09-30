@@ -82,11 +82,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1550](../tasks/AR-1550.md): Compatibility blocker graph reconciliation | Unclaimed | Reconcile stale compatibility blocker records after AR-1549 without claiming formal qualification. | Promote and claim; reconcile stale AR-1534/1540/1541/1544 blocker metadata with the verified v0.3.53 receipts, preserving historical failure evidence. |
+| P0 | [AR-1550](../tasks/AR-1550.md): Compatibility blocker graph reconciliation | asb-ar1550-graph-reconcile-20260930 | Reconcile stale compatibility blocker records after AR-1549 without claiming formal qualification. | Promote and claim; reconcile stale AR-1534/1540/1541/1544 blocker metadata with the verified v0.3.53 receipts, preserving historical failure evidence. |
 
 ### Blocked (85)
 

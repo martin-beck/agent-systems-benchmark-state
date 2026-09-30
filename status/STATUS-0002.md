@@ -3006,11 +3006,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | asb-ar1550-graph-reconcile-20260930 |
 | Parent | None |
 | Children | None |
 | Summary | Reconcile stale compatibility blocker records after AR-1549 without claiming formal qualification. |
@@ -3641,7 +3641,7 @@ flowchart LR
         AR_1547["AR-1547 - Done"]:::status_done
         AR_1548["AR-1548 - Superseded"]:::status_superseded
         AR_1549["AR-1549 - Done"]:::status_done
-        AR_1550["AR-1550 - Open"]:::status_open
+        AR_1550["AR-1550 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4917,5 +4917,3 @@ flowchart LR
     AR_1442 --> AR_1447
     AR_1442 --> AR_1488
     AR_1442 --> AR_1499
-    AR_1443 --> AR_1331
-    AR_1443 --> AR_1338
