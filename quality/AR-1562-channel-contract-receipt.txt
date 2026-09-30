@@ -1,0 +1,5 @@
+AR-1562 channel contract receipt
+merged_sha=6d4014204f0e08ae7f037d63cac0051e5d3def0e
+pr=https://github.com/martin-beck/agent-systems-benchmark/pull/396
+checks=all required hosted checks passed
+review=independent review found no code-level blocker
