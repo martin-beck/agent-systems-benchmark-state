@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1540](tasks/AR-1540.md): Session and lifecycle contract compatibility | Repair ASB-owned session/checkpoint/recovery integration against coordinator v0.3.50. | Continue v0.3.50 compatibility work: update session-aware checkpoint/resume/recovery fixtures and done-admission data, then run the full suite on a clean vendor-integrated worktree. Current checkpoint repair is green only against the pre-v0.3.50 baseline. | codex-asb-ar1540-session-20260930 |
+| P0 | [AR-1540](tasks/AR-1540.md): Session and lifecycle contract compatibility | Repair ASB-owned session/checkpoint/recovery integration against coordinator v0.3.50. | Remain blocked pending AR-1544 state-worktree observation compatibility; preserve the clean 77/78 v0.3.50-compatible focused tests and the exact failing state-worktree contract, then rerun the full suite after AR-1544. | codex-asb-ar1540-session-20260930 |
 | P0 | [AR-1541](tasks/AR-1541.md): SQLite fence compatibility and isolation | Repair ASB-owned SQLite/WAL fence setup and isolation against coordinator v0.3.50. | After AR-1540 and the v0.3.50 runtime overlay are available, rerun SQLite focused/full gates on the immutable vendor snapshot; current isolated-runtime repair is committed but not yet qualified against v0.3.50. | codex-asb-ar1541-sqlite-20260930 |
 
 ## Blocked
