@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| [AR-1468](../tasks/AR-1468-control-authority-materialization-successor.md) | [AR-1288](../tasks/AR-1288-certificate-chain-authz.md), [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md), [AR-1364](../tasks/AR-1364-authenticated-chain-enrollment.md), [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md) | None |
 | [AR-1469](../tasks/AR-1469-ar1392-protected-topology-repair.md) | None | None |
 | [AR-1470](../tasks/AR-1470-runtime-certificate-chain-enrollment.md) | [AR-1357](../tasks/AR-1357-runtime-attested-enrollment-record.md), [AR-1359](../tasks/AR-1359-runtime-control-bridge.md), [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md) | None |
 | [AR-1471](../tasks/AR-1471-control-to-runtime-chain-binding.md) | [AR-1357](../tasks/AR-1357-runtime-attested-enrollment-record.md), [AR-1359](../tasks/AR-1359-runtime-control-bridge.md), [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md) | [AR-1473](../tasks/AR-1473-runtime-owned-enrollment-source.md), [AR-1474](../tasks/AR-1474-runtime-authority-input-resolver.md) |
@@ -85,12 +84,6 @@
 | [AR-1551](../tasks/AR-1551-platform-authority-deployment-bootstrap.md) | [AR-1505](../tasks/AR-1505-control-plane-platform-authority.md), [AR-1513](../tasks/AR-1513-authenticated-lease-dispatch-bridge.md), [AR-1514](../tasks/AR-1514-runtime-auth-reconciliation.md) | None |
 
 ## Complete AR inventory
-
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1523](../tasks/AR-1523.md): Platform authority deployment adapter | coordinator-ar1523-development-20260930 | Qualify the central orchestration path with deterministic local/mock and strict-replay authority; deployment-owned live authority is optional future hardening, not a development prerequisite. | Development path is unblocked: promote and claim this AR, qualify the existing central orchestrator with deterministic local/mock and strict-replay authority, and run exact-head gates. A deployment-owned authenticated source is optional future production hardening and must not block development qualification. |
 
 ### Blocked (83)
 
@@ -241,7 +234,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (405)
+### Done (406)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -447,6 +440,7 @@
 | P0 | [AR-1517](../tasks/AR-1517-ar1309-capacity-decision-unblock.md): AR-1309 capacity decision | Unclaimed | Select a reviewed AR-1309 capacity/model contract after runner failure. | Classify evidence and select AR-1309&#x27;s capacity/model contract. |
 | P0 | [AR-1519](../tasks/AR-1519.md): AR-1307/1308 reduced-model development profile | Unclaimed | Reduced development tier implemented with explicit 900s/1-worker/2G/2G/4G bounds and non-claiming attestation. | Independently review the exact head, then release this development-only repair; full AR-1307/1308 qualification remains separate. |
 | P0 | [AR-1520](../tasks/AR-1520.md): AR-1308 reduced-profile runtime qualification | Unclaimed | Reduced profile passes self-contained QEMU: transient admission, bounded models, sanitized non-claiming attestation, and clean poweroff. | Release after exact-head review; retain AR-1307/1308 formal qualification as separate blocked gates. |
+| P0 | [AR-1523](../tasks/AR-1523.md): Platform authority deployment adapter | Unclaimed | Qualify the central orchestration path with deterministic local/mock and strict-replay authority; deployment-owned live authority is optional future hardening, not a development prerequisite. | Development path is unblocked: promote and claim this AR, qualify the existing central orchestrator with deterministic local/mock and strict-replay authority, and run exact-head gates. A deployment-owned authenticated source is optional future production hardening and must not block development qualification. |
 | P0 | [AR-1524](../tasks/AR-1524.md): Repair live-dispatch dependency graph | Unclaimed | Repair the stale AR-1374/1375 dependency cycle and make AR-1523 the canonical live-dispatch successor. | Promote after dependency verification; supersede the stale AR-1375 cycle and route AR-1374 to AR-1523 without changing product code. |
 | P0 | [AR-1526](../tasks/AR-1526.md): First-customer local/replay qualification | Unclaimed | Qualify the merged ASB production-shaped local/mock and strict-replay customer path with sanitized evidence. | Promote after dependency verification; run the disposable first-customer-style local/mock and strict-replay qualification on exact protected main. |
 | P0 | [AR-1527](../tasks/AR-1527.md): Normalize AR-1307/1308 development seed policy | Unclaimed | Remove reviewed seed and digest prerequisites from the AR-1307/1308 development path while preserving separate formal and release evidence gates. | Promote after state review; audit AR-1307/1308 and every active dependent for development-only seed/digest prerequisites, then normalize their task and plan language without changing formal gates. |
@@ -522,3 +516,4 @@
 | P1 | [AR-0843](../tasks/AR-0843-frontend-privacy-assurance.md): Assure frontend privacy and faults | Unclaimed | Qualify frontend privacy, artifact access, and fault behavior. | Monitor PR #69 exact-head CI at cca49ec3bea429a90a267600acf821cebe45c138; investigate any failure and do not merge without coordinator authorization. |
 | P1 | [AR-0844](../tasks/AR-0844-frontend-api-integration.md): Integrate frontend control API | Unclaimed | Integrate and qualify the frontend control API as an independent boundary. | Monitor PR #76 exact head 76cc86f23a48d5af275b2fed9d70f54199e38637 CI to terminal; investigate failures and do not merge without coordinator authorization. |
 | P1 | [AR-0845](../tasks/AR-0845-ci-artifact-quota-resilience.md): Harden CI artifact quota behavior | Unclaimed | Prevent exhausted GitHub artifact quota from obscuring authoritative ASB results. | Independently review immutable candidate 7d98653e7e7f219cced6abfb5c611d2614c72bd7 tree 2b02deda39ae1e4a4b40e9c3e960f1f0336f19b3; do not publish before approval. |
+| P1 | [AR-0848](../tasks/AR-0848-native-x86-capacity.md): Qualify native x86 capacity | Unclaimed | Qualify authorized disposable native x86_64 capacity on a development host. | Await fresh independent immutable review of rebased signed head 45604cd323c5de0ab9c7eaf0b6a39d90f4d43002 on exact product main f42645dd05f17eca5635ca2e82057b703a03a1c3; only then update PR #58 by exact force-with-lease and require fresh exact-head CI. |
