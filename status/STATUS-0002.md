@@ -500,7 +500,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | blocked |
+| Status | planned |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -508,7 +508,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Complete production asb run/sweep live-provider dispatch through runtime-owned authenticated acquisition and teardown. |
-| Next action | Remain blocked on canonical AR-1523: a platform-owned authenticated private authority source and opaque materialization handoff are required before replacing PlanAuthoritySource live-mode rejection. Then rerun exact-head production dispatch gates. |
+| Next action | Development path is actionable after AR-1523/1390: requalify run/sweep through deterministic local/mock and strict-replay runtime authority with exact-head gates. Deployment-owned live-provider materialization is optional future hardening. |
 
 ### AR-1368 — Control receipt runtime source
 
@@ -598,7 +598,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | blocked |
+| Status | planned |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -606,7 +606,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Consume authenticated runtime receipts in production asb run and sweep dispatch; stale AR-1375 duplicate superseded by AR-1523. |
-| Next action | Remain blocked on canonical AR-1523&#x27;s central-orchestrator live AuthoritySource adapter; then requalify run/sweep locally before any publication. |
+| Next action | Development path is actionable after AR-1523/1390: requalify the existing ordinary run/sweep bridge with deterministic local/mock and strict-replay authority. Deployment-owned live-provider authority remains optional future hardening. |
 
 ### AR-1375 — Runtime-owned live control dispatch source
 
@@ -3470,14 +3470,14 @@ flowchart LR
         AR_1364["AR-1364 - Done"]:::status_done
         AR_1365["AR-1365 - Done"]:::status_done
         AR_1366["AR-1366 - Done"]:::status_done
-        AR_1367["AR-1367 - Blocked"]:::status_blocked
+        AR_1367["AR-1367 - Planned"]:::status_planned
         AR_1368["AR-1368 - Blocked"]:::status_blocked
         AR_1369["AR-1369 - Superseded"]:::status_superseded
         AR_1370["AR-1370 - Superseded"]:::status_superseded
         AR_1371["AR-1371 - Done"]:::status_done
         AR_1372["AR-1372 - Done"]:::status_done
         AR_1373["AR-1373 - Done"]:::status_done
-        AR_1374["AR-1374 - Blocked"]:::status_blocked
+        AR_1374["AR-1374 - Planned"]:::status_planned
         AR_1375["AR-1375 - Superseded"]:::status_superseded
         AR_1376["AR-1376 - Blocked"]:::status_blocked
         AR_1377["AR-1377 - Done"]:::status_done
@@ -4904,6 +4904,3 @@ flowchart LR
     AR_1421 --> AR_1427
     AR_1423 --> AR_1424
     AR_1423 --> AR_1426
-    AR_1423 --> AR_1430
-    AR_1424 --> AR_1425
-    AR_1425 --> AR_1426

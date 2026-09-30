@@ -10,7 +10,7 @@
     "AR-1328"
   ],
   "id": "AR-1367",
-  "next_action": "Remain blocked on canonical AR-1523: a platform-owned authenticated private authority source and opaque materialization handoff are required before replacing PlanAuthoritySource live-mode rejection. Then rerun exact-head production dispatch gates.",
+  "next_action": "Development path is actionable after AR-1523/1390: requalify run/sweep through deterministic local/mock and strict-replay runtime authority with exact-head gates. Deployment-owned live-provider materialization is optional future hardening.",
   "observed_branch": "feature/ar-1367-ar1329-production-dispatch-integration",
   "observed_dirty": 0,
   "observed_head": "bf89a45ddd71af96e6d4b6954320e199e147f83e",
@@ -18,9 +18,9 @@
   "plan": "../plans/AR-1367-ar1329-production-dispatch-integration.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "planned",
   "summary": "Complete production asb run/sweep live-provider dispatch through runtime-owned authenticated acquisition and teardown.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "AR-1329 production dispatch integration",
   "updated_at": "2026-09-29T22:58:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1367-ar1329-production-dispatch-integration"

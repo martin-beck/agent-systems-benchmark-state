@@ -10,7 +10,7 @@
     "AR-1328"
   ],
   "id": "AR-1374",
-  "next_action": "Remain blocked on canonical AR-1523's central-orchestrator live AuthoritySource adapter; then requalify run/sweep locally before any publication.",
+  "next_action": "Development path is actionable after AR-1523/1390: requalify the existing ordinary run/sweep bridge with deterministic local/mock and strict-replay authority. Deployment-owned live-provider authority remains optional future hardening.",
   "observed_branch": "feature/ar-1374-cli-live-dispatch",
   "observed_dirty": 0,
   "observed_head": "363b21f81d5c5ab364c2e2a923bd82676feaf343",
@@ -18,9 +18,9 @@
   "plan": "../plans/AR-1374-cli-live-dispatch.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "planned",
   "summary": "Consume authenticated runtime receipts in production asb run and sweep dispatch; stale AR-1375 duplicate superseded by AR-1523.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Production live-provider dispatch",
   "updated_at": "2026-09-27T11:14:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1374-cli-live-dispatch"
