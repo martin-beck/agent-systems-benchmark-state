@@ -3104,15 +3104,15 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | asb-signature-repair-worker |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Repair protected-main signature evidence after the receipt PR rebase generated an unsigned topic commit. |
-| Next action | Promote and repair the unsigned receipt merge at 75a7e63 with a locally signed topic commit and protected non-squash merge; verify exact-main policy and hosted checks. |
+| Next action | Release done: signed forward repair 7aa09a0 passed exact protected-main policy and all required hosted checks. |
 
 ### AR-1558 — ASB plan/output release publication
 
@@ -3774,7 +3774,7 @@ flowchart LR
         AR_1554["AR-1554 - Done"]:::status_done
         AR_1555["AR-1555 - In progress"]:::status_in_progress
         AR_1556["AR-1556 - Planned"]:::status_planned
-        AR_1557["AR-1557 - In progress"]:::status_in_progress
+        AR_1557["AR-1557 - Done"]:::status_done
         AR_1558["AR-1558 - Planned"]:::status_planned
         AR_1559["AR-1559 - Done"]:::status_done
     end
@@ -4853,3 +4853,7 @@ flowchart LR
     AR_1362 --> AR_1376
     AR_1362 --> AR_1378
     AR_1362 --> AR_1379
+    AR_1362 --> AR_1380
+    AR_1362 --> AR_1381
+    AR_1362 --> AR_1468
+    AR_1362 --> AR_1470

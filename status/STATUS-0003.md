@@ -1,9 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-    AR_1362 --> AR_1380
-    AR_1362 --> AR_1381
-    AR_1362 --> AR_1468
-    AR_1362 --> AR_1470
     AR_1362 --> AR_1471
     AR_1362 --> AR_1474
     AR_1363 --> AR_1472
