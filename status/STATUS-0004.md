@@ -109,13 +109,12 @@
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1555](../tasks/AR-1555.md): Plan and output workflow qualification | asb-plan-command-worker | Qualify plan creation and output modes as one simple ASB user journey. | Promote after AR-1552, AR-1553 and AR-1554; run cross-command qualification and publish the user workflow. |
 | P0 | [AR-1557](../tasks/AR-1557.md): Protected-main receipt signature repair | asb-signature-repair-worker | Repair protected-main signature evidence after the receipt PR rebase generated an unsigned topic commit. | Promote and repair the unsigned receipt merge at 75a7e63 with a locally signed topic commit and protected non-squash merge; verify exact-main policy and hosted checks. |
-| P0 | [AR-1559](../tasks/AR-1559.md): Machine consumer JSON opt-in repair | asb-machine-json-worker | Repair the Rust workflow&#x27;s workload catalog JSON consumer after the human-output default change. | Promote and repair machine-consuming workload-catalog checks to request --json explicitly; rerun the exact Rust workflow and post-merge checks. |
 
 ### Blocked (80)
 
@@ -263,7 +262,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (414)
+### Done (415)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -493,6 +492,7 @@
 | P0 | [AR-1552](../tasks/AR-1552.md): Dynamic workload-backed plan generation | Unclaimed | Generate benchmark plans from the canonical supported-workload catalog, including workloads added later. | Implementation merged in ASB main; retain exact PR, provenance and hosted-check evidence. |
 | P0 | [AR-1553](../tasks/AR-1553.md): Plan creation CLI workflow | Unclaimed | Expose dynamic workload plan creation through a simple ASB CLI command. | Implementation and qualification merged in ASB main; retain exact PR and test evidence. |
 | P0 | [AR-1554](../tasks/AR-1554.md): Global human-readable output mode | Unclaimed | Make ASB commands human-readable by default and preserve JSON through a global --json flag. | Implementation merged in ASB main; retain exact PR, provenance and hosted-check evidence. |
+| P0 | [AR-1559](../tasks/AR-1559.md): Machine consumer JSON opt-in repair | Unclaimed | Repair the Rust workflow&#x27;s workload catalog JSON consumer after the human-output default change. | Release done: PR #395 merged at exact main ce190124 and all required hosted checks passed, including the rerun of Rust verification. |
 | P1 | [AR-0002](../tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Unclaimed | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. |
 | P1 | [AR-0003](../tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Unclaimed | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. |
 | P1 | [AR-0004](../tasks/AR-0004-ar-status-document.md): Generate the visual AR status document | Unclaimed | Render every AR, status, and dependency as an accessible visual state document. | Await independent immutable-head review of state PR 3 at eedd311; repair findings before coordinator integration. |

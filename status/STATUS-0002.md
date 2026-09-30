@@ -3132,15 +3132,15 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | asb-machine-json-worker |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Repair the Rust workflow&#x27;s workload catalog JSON consumer after the human-output default change. |
-| Next action | Promote and repair machine-consuming workload-catalog checks to request --json explicitly; rerun the exact Rust workflow and post-merge checks. |
+| Next action | Release done: PR #395 merged at exact main ce190124 and all required hosted checks passed, including the rerun of Rust verification. |
 
 
 ## Dependency graph
@@ -3776,7 +3776,7 @@ flowchart LR
         AR_1556["AR-1556 - Planned"]:::status_planned
         AR_1557["AR-1557 - In progress"]:::status_in_progress
         AR_1558["AR-1558 - Planned"]:::status_planned
-        AR_1559["AR-1559 - In progress"]:::status_in_progress
+        AR_1559["AR-1559 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4851,3 +4851,5 @@ flowchart LR
     AR_1362 --> AR_1366
     AR_1362 --> AR_1369
     AR_1362 --> AR_1376
+    AR_1362 --> AR_1378
+    AR_1362 --> AR_1379
