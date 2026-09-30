@@ -61,7 +61,13 @@ class VendorTest(unittest.TestCase):
             destination = ROOT / destination_name
             source.parent.mkdir(parents=True, exist_ok=True)
             if destination.is_file():
-                source.write_bytes(destination.read_bytes())
+                contents = destination.read_bytes()
+                if destination_name == "tools/handoffctl.py":
+                    contents = contents.replace(
+                        b'COORDINATOR_VERSION = "0.3.50"',
+                        b'COORDINATOR_VERSION = "0.3.7"',
+                    )
+                source.write_bytes(contents)
                 source.chmod(destination.stat().st_mode & 0o777)
             else:
                 # New coordinator releases may add allowlisted files before
