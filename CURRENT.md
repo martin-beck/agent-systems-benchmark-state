@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1551](tasks/AR-1551-platform-authority-deployment-bootstrap.md): First-customer platform authority deployment bootstrap | Provision the missing authenticated platform authority deployment required for first-customer live dispatch. | Promote after AR-1505, AR-1513 and AR-1514 are done; implement and deploy the runtime/control-owned authenticated platform authority source, then hand its opaque materialization contract to AR-1523. | - |
+| P0 | [AR-1551](tasks/AR-1551-platform-authority-deployment-bootstrap.md): First-customer platform authority deployment bootstrap | Provision the missing authenticated platform authority deployment required for first-customer live dispatch. | Promote after AR-1505, AR-1513 and AR-1514 are done; implement and deploy the runtime/control-owned authenticated platform authority source, then hand its opaque materialization contract to AR-1523. | coordinator-ar1551-platform-authority-20260930 |
 
 ## Blocked
 

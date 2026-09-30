@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-30T05:09:05+00:00",
   "depends_on": [
     "AR-1505",
     "AR-1513",
@@ -10,14 +10,14 @@
   ],
   "id": "AR-1551",
   "next_action": "Promote after AR-1505, AR-1513 and AR-1514 are done; implement and deploy the runtime/control-owned authenticated platform authority source, then hand its opaque materialization contract to AR-1523.",
-  "owner": "",
+  "owner": "coordinator-ar1551-platform-authority-20260930",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provision the missing authenticated platform authority deployment required for first-customer live dispatch.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "First-customer platform authority deployment bootstrap",
-  "updated_at": "2026-09-30T03:09:02+00:00"
+  "updated_at": "2026-09-30T03:09:05+00:00"
 }
 ---
 
@@ -55,3 +55,5 @@ adapter and final live-dispatch qualification.
 
 - 2026-09-30T03:09:02+00:00: Dependencies AR-1505, AR-1513 and AR-1514 are done; the missing
   deployment-owned authority source is the canonical first-customer live-dispatch blocker.
+
+- 2026-09-30T03:09:05+00:00: Claimed by coordinator-ar1551-platform-authority-20260930.
