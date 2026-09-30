@@ -1,0 +1,5 @@
+AR-1563 materialization receipt
+merged_sha=357b1ef6600fb12bcea1df80c4fe25018f5af583
+pr=https://github.com/martin-beck/agent-systems-benchmark/pull/398
+checks=all required hosted checks passed
+review=independent review approved live quota/output/process-group repair
