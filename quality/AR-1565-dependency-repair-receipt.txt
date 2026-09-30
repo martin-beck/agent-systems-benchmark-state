@@ -1,0 +1,5 @@
+AR-1565 dependency repair receipt
+merged_sha=73029d9164808ca531713da9ff8fb575968f6d74
+pr=https://github.com/martin-beck/agent-systems-benchmark/pull/397
+checks=all required hosted checks passed
+scope=workspace,fuzz,formal lockfiles only
