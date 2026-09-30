@@ -9,7 +9,7 @@
   "id": "AR-1028",
   "next_action": "Release done after verified corrective publication and exact-tree post-merge transcript regeneration.",
   "observed_branch": "docs/asb-cli-workflow-captures-attestation",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "b18e38ad94f19ff3ea83f8214004a2d7987ba2bf",
   "owner": "",
   "plan": "../plans/AR-1028.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "done",
   "summary": "Produce reproducible ASB CLI transcripts separately from standalone TUI screenshots.",
-  "task_revision": 100,
+  "task_revision": 101,
   "title": "Generate ASB CLI workflow captures",
-  "updated_at": "2026-09-10T20:50:26+00:00",
+  "updated_at": "2026-09-30T08:53:14+00:00",
   "worktree_key": "agent-systems-benchmark-asb-cli-workflow-captures"
 }
 ---
