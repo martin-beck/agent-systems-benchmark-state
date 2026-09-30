@@ -9,6 +9,12 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1552](tasks/AR-1552.md): Dynamic workload-backed plan generation | Generate benchmark plans from the canonical supported-workload catalog, including workloads added later. | Promote and claim after dependency review; implement the canonical catalog-backed workload selector and valid plan materializer. | asb-plan-command-worker |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1554](tasks/AR-1554.md): Global human-readable output mode | Make ASB commands human-readable by default and preserve JSON through a global --json flag. | Promote and claim after dependency review; add the global human-readable output renderer and --json override. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -116,7 +122,6 @@ Never edit this file directly.
 | P0 | [AR-1545](tasks/AR-1545.md): AR-1307 formal-input readiness repair | Audit and repair the AR-1307 formal-input handoff after development runner integration, without executing qualification. | Formal-only work: after AR-1535 supplies reviewed inputs, inventory and independently verify every exact AR-1307 formal input for AR-1522. Do not block or alter the completed unsigned-development path. | - |
 | P0 | [AR-1546](tasks/AR-1546.md): AR-1308 formal capacity-input readiness repair | Audit and repair the AR-1308 capacity/input handoff after diagnostic QEMU integration, without executing qualification. | Formal-only work: after AR-1531 and AR-1536, verify the exact 8 GiB/8 GiB fixture and AR-1308 formal inputs for AR-1522. Do not block or alter the completed unsigned-development path. | - |
 | P0 | [AR-1553](tasks/AR-1553.md): Plan creation CLI workflow | Expose dynamic workload plan creation through a simple ASB CLI command. | Promote after AR-1552; add the discoverable asb plan-create command and noninteractive selection options. | - |
-| P0 | [AR-1554](tasks/AR-1554.md): Global human-readable output mode | Make ASB commands human-readable by default and preserve JSON through a global --json flag. | Promote and claim after dependency review; add the global human-readable output renderer and --json override. | - |
 | P0 | [AR-1555](tasks/AR-1555.md): Plan and output workflow qualification | Qualify plan creation and output modes as one simple ASB user journey. | Promote after AR-1552, AR-1553 and AR-1554; run cross-command qualification and publish the user workflow. | - |
 | P1 | [AR-0808](tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. | - |
 | P1 | [AR-0809](tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. | - |

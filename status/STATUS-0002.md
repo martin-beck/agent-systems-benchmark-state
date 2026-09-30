@@ -3062,7 +3062,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | open |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -3715,7 +3715,7 @@ flowchart LR
         AR_1551["AR-1551 - Cancelled"]:::status_cancelled
         AR_1552["AR-1552 - In progress"]:::status_in_progress
         AR_1553["AR-1553 - Planned"]:::status_planned
-        AR_1554["AR-1554 - Planned"]:::status_planned
+        AR_1554["AR-1554 - Open"]:::status_open
         AR_1555["AR-1555 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
@@ -4886,3 +4886,4 @@ flowchart LR
     AR_1384 --> AR_1388
     AR_1384 --> AR_1389
     AR_1385 --> AR_1386
+    AR_1385 --> AR_1387
