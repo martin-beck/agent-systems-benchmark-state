@@ -98,17 +98,12 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1552](../tasks/AR-1552.md): Dynamic workload-backed plan generation | asb-plan-command-worker | Generate benchmark plans from the canonical supported-workload catalog, including workloads added later. | Promote and claim after dependency review; implement the canonical catalog-backed workload selector and valid plan materializer. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1554](../tasks/AR-1554.md): Global human-readable output mode | Unclaimed | Make ASB commands human-readable by default and preserve JSON through a global --json flag. | Promote and claim after dependency review; add the global human-readable output renderer and --json override. |
+| P0 | [AR-1554](../tasks/AR-1554.md): Global human-readable output mode | asb-output-mode-worker | Make ASB commands human-readable by default and preserve JSON through a global --json flag. | Promote and claim after dependency review; add the global human-readable output renderer and --json override. |
 
 ### Blocked (80)
 
