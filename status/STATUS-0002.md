@@ -3020,11 +3020,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | blocked |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | coordinator-ar1551-platform-authority-20260930 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Provision the missing authenticated platform authority deployment required for first-customer live dispatch. |
@@ -3656,7 +3656,7 @@ flowchart LR
         AR_1548["AR-1548 - Superseded"]:::status_superseded
         AR_1549["AR-1549 - Done"]:::status_done
         AR_1550["AR-1550 - Done"]:::status_done
-        AR_1551["AR-1551 - In progress"]:::status_in_progress
+        AR_1551["AR-1551 - Blocked"]:::status_blocked
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4919,3 +4919,5 @@ flowchart LR
     AR_1435 --> AR_1436
     AR_1436 --> AR_1437
     AR_1436 --> AR_1440
+    AR_1436 --> AR_1442
+    AR_1437 --> AR_1440

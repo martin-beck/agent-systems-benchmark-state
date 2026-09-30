@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-30T05:09:34+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1505",
     "AR-1513",
@@ -10,14 +10,14 @@
   ],
   "id": "AR-1551",
   "next_action": "Promote after AR-1505, AR-1513 and AR-1514 are done; implement and deploy the runtime/control-owned authenticated platform authority source, then hand its opaque materialization contract to AR-1523.",
-  "owner": "coordinator-ar1551-platform-authority-20260930",
+  "owner": "",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provision the missing authenticated platform authority deployment required for first-customer live dispatch.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "First-customer platform authority deployment bootstrap",
-  "updated_at": "2026-09-30T03:10:29+00:00"
+  "updated_at": "2026-09-30T03:10:57+00:00"
 }
 ---
 
@@ -68,3 +68,11 @@ adapter and final live-dispatch qualification.
 
 - 2026-09-30T03:10:29+00:00: Recorded command exit 0; command argv SHA-256
   f74a3e0c628aa519165a1e8299575f4a296a60e1a070dedb989674b1f7fffe94.
+
+- 2026-09-30T03:10:57+00:00: Baseline exact-origin runtime gates pass: 164 asb-runtime unit tests, 3
+  loopback tests, 8 process-boundary tests, 15 sandbox-boundary tests, 16 scheduler-boundary tests
+  and 2 doctests. The implementation blocker is now explicit: protected ASB has no non-test
+  deployment-owned platform authority source or ordinary run/sweep production callsite. Existing
+  local/mock authority is deliberately development-only and cannot be promoted. AR-1523 remains
+  blocked and must consume an authenticated opaque source from a future deployment implementation;
+  no live-provider or formal qualification claim was made.
