@@ -3118,11 +3118,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | asb-release-worker |
 | Parent | None |
 | Children | None |
 | Summary | Publish the ASB release containing the dynamic plan and output-mode workflow after exact green-main verification. |
@@ -3775,7 +3775,7 @@ flowchart LR
         AR_1555["AR-1555 - Done"]:::status_done
         AR_1556["AR-1556 - Planned"]:::status_planned
         AR_1557["AR-1557 - Done"]:::status_done
-        AR_1558["AR-1558 - Open"]:::status_open
+        AR_1558["AR-1558 - In progress"]:::status_in_progress
         AR_1559["AR-1559 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
@@ -4856,4 +4856,3 @@ flowchart LR
     AR_1362 --> AR_1380
     AR_1362 --> AR_1381
     AR_1362 --> AR_1468
-    AR_1362 --> AR_1470
