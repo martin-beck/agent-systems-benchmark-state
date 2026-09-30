@@ -2762,7 +2762,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair and independently qualify the provider-free unsigned-development runner path associated with AR-1307 without changing formal limits or evidence gates. |
-| Next action | Wait for AR-1534 to repair the approved coordinator vendor boundary; then rerun vendor verification, full state gates and exact-head review. Preserve the non-qualifying development result and do not claim formal AR-1307 qualification. |
+| Next action | AR-1549 verifies the v0.3.53 compatibility boundary; promote after AR-1534 closes, then rerun this development-only runner path and preserve its non-qualifying result. |
 
 ### AR-1533 — AR-1308 unsigned-development QEMU fixture repair
 
@@ -2776,7 +2776,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair the provider-free unsigned-development QEMU fixture for AR-1308 and make its diagnostics, cleanup and non-qualification boundary reliable. |
-| Next action | Wait for AR-1534 to repair the approved coordinator vendor boundary; then rerun vendor verification, full state gates and exact-head review. Preserve the diagnostic qualification_authorized=false result and do not claim formal AR-1308 qualification. |
+| Next action | AR-1549 verifies the v0.3.53 compatibility boundary; promote after AR-1534 closes, then rerun this diagnostic QEMU path and preserve qualification_authorized=false. |
 
 ### AR-1534 — Coordinator vendor integrity repair
 
@@ -2902,7 +2902,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Close ASB-owned AR-1307 runner regressions after the coordinator v0.3.50 compatibility repairs and prepare the formal-readiness handoff. |
-| Next action | Promote after all dependencies are done; run the exact v0.3.50 vendor-integrated AR-1307 runner gates, repair only ASB-owned regressions, and hand a clean evidence bundle to AR-1535 or record a precise blocker. |
+| Next action | Promote after AR-1532, AR-1534, AR-1540, AR-1541 and AR-1549 are done; run the exact v0.3.53 vendor-integrated AR-1307 runner gates and hand evidence to AR-1535. |
 
 ### AR-1543 — AR-1308 QEMU integration closure
 
@@ -2916,7 +2916,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Close ASB-owned AR-1308 QEMU and preflight regressions after coordinator v0.3.50 compatibility repairs and prepare the capacity handoff. |
-| Next action | Promote after all dependencies are done; run the exact v0.3.50 vendor-integrated AR-1308 QEMU and preflight gates, repair only ASB-owned regressions, and hand a clean receipt to AR-1536 or record a precise blocker. |
+| Next action | Promote after AR-1531, AR-1533, AR-1534, AR-1540, AR-1541 and AR-1549 are done; run the exact v0.3.53 vendor-integrated AR-1308 QEMU/preflight gates and hand evidence to AR-1536. |
 
 ### AR-1544 — State-worktree observation compatibility
 
@@ -4917,3 +4917,12 @@ flowchart LR
     AR_1442 --> AR_1447
     AR_1442 --> AR_1488
     AR_1442 --> AR_1499
+    AR_1443 --> AR_1331
+    AR_1443 --> AR_1338
+    AR_1443 --> AR_1444
+    AR_1443 --> AR_1446
+    AR_1443 --> AR_1448
+    AR_1443 --> AR_1449
+    AR_1443 --> AR_1500
+    AR_1446 --> AR_1331
+    AR_1446 --> AR_1338
