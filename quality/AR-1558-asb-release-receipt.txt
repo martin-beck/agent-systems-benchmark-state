@@ -1,0 +1,23 @@
+AR-1558 ASB plan/output release receipt
+
+Exact green source: ce190124b4ce8794d9311aae92d86ec042df7307
+Release tag: asb-0.1.0-plan-output-ce190 (signed annotated tag)
+Release: https://github.com/martin-beck/agent-systems-benchmark/releases/tag/asb-0.1.0-plan-output-ce190
+
+Build and manifest:
+- cargo build --locked --workspace --release passed.
+- tools/release/build_manifest.py produced the unsigned-release manifest,
+  executable, SPDX SBOM, CycloneDX SBOM and SHA256SUMS.
+- Manifest source_revision is the exact source above; credentials=none and
+  network=none are recorded. This is a development/publication profile, not a
+  production signed runtime bundle.
+
+Fresh consumption:
+- gh release download fetched all five artifacts.
+- sha256sum -c SHA256SUMS passed for asb, manifest and both SBOMs.
+- Fresh downloaded binary `asb doctor` passed and advertised plan, run, report,
+  compare, record and replay commands.
+
+All required exact-main hosted checks for ce190124 were successful before
+publication. No force update, credential material or provider contact was
+used.
