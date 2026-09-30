@@ -2992,11 +2992,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | asb-ar1549-v0353-compatibility-20260930 |
 | Parent | None |
 | Children | None |
 | Summary | Rerun the compatibility gates previously blocked by the rejected coordinator vendor snapshots. |
@@ -3626,7 +3626,7 @@ flowchart LR
         AR_1546["AR-1546 - Planned"]:::status_planned
         AR_1547["AR-1547 - Done"]:::status_done
         AR_1548["AR-1548 - Superseded"]:::status_superseded
-        AR_1549["AR-1549 - Open"]:::status_open
+        AR_1549["AR-1549 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4910,5 +4910,3 @@ flowchart LR
     AR_1443 --> AR_1449
     AR_1443 --> AR_1500
     AR_1446 --> AR_1331
-    AR_1446 --> AR_1338
-    AR_1446 --> AR_1448

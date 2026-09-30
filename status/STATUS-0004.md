@@ -80,11 +80,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1549](../tasks/AR-1549.md): Coordinator v0.3.53 compatibility closure | Unclaimed | Rerun the compatibility gates previously blocked by the rejected coordinator vendor snapshots. | Promote and claim; rerun the state-worktree, session, SQLite and full compatibility gates against the verified v0.3.53 snapshot, then hand exact results to AR-1534/1542/1543. |
+| P0 | [AR-1549](../tasks/AR-1549.md): Coordinator v0.3.53 compatibility closure | asb-ar1549-v0353-compatibility-20260930 | Rerun the compatibility gates previously blocked by the rejected coordinator vendor snapshots. | Promote and claim; rerun the state-worktree, session, SQLite and full compatibility gates against the verified v0.3.53 snapshot, then hand exact results to AR-1534/1542/1543. |
 
 ### Blocked (89)
 
