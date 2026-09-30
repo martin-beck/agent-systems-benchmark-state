@@ -86,12 +86,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1374](../tasks/AR-1374-cli-live-dispatch.md): Production live-provider dispatch | coordinator-ar1374-development-20260930 | Development ordinary run/sweep dispatch is qualified with local/mock and strict replay; deployment-owned live-provider authority is optional future hardening. | Development qualification complete on exact protected main with deterministic local/mock and strict-replay authority. Deployment-owned live-provider authority remains optional future hardening; no development action remains. |
-
 ### Blocked (80)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -239,7 +233,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (407)
+### Done (408)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -370,6 +364,7 @@
 | P0 | [AR-1371](../tasks/AR-1371-runner-authority-injection.md): Runner authority injection | Unclaimed | Inject existing authenticated certificate authority and runtime enrollment material into RunnerBackend/Catalog without synthetic authority. | PR #271 merged as 3f0b67638647dc016f7d5abd3e246baf3ae4ec29 after all 12 exact-head checks passed. Seven post-merge workflows are running; monitor all to terminal success before releasing AR. |
 | P0 | [AR-1372](../tasks/AR-1372-topology-repair.md): Protected merge topology repair | Unclaimed | Repair protected-main merge topology after AR-1371 without changing product behavior. | PR #272 merged with protected non-squash topology as 265b936d995148f8e40e36664cf68bf12affc20d. Seven post-merge workflows for exact merge are running; monitor all to terminal success, then release AR-1372 and reconcile AR-1371. |
 | P0 | [AR-1373](../tasks/AR-1373-authenticated-receipt-source.md): Authenticated runtime receipt source | Unclaimed | Provide the authenticated ControlBackend runtime receipt source for AR-1329 production dispatch. | PR #273 force-updated to exact head c623a006 after preserving historical v1 through v1.7 schemas. Monitor all required checks from the new head; repair any failure through handoffctl, merge only after independent review and all checks green, then verify seven post-merge workflows. |
+| P0 | [AR-1374](../tasks/AR-1374-cli-live-dispatch.md): Production live-provider dispatch | Unclaimed | Development ordinary run/sweep dispatch is qualified with local/mock and strict replay; deployment-owned live-provider authority is optional future hardening. | Development qualification complete on exact protected main with deterministic local/mock and strict-replay authority. Deployment-owned live-provider authority remains optional future hardening; no development action remains. |
 | P0 | [AR-1377](../tasks/AR-1377-runtime-chain-store.md): Runtime-owned certificate-chain store | Unclaimed | Persist authenticated runtime certificate-chain material for live dispatch. | PR #274 force-updated to exact head 4163194 on current protected main 50acdcab after Repository quality base failure. Focused live_service rerun passes; monitor all required exact-head checks, repair failures, merge only green, then verify seven post-merge workflows. |
 | P0 | [AR-1378](../tasks/AR-1378-live-control-adapter.md): Authenticated live control adapter | Unclaimed | Bind authenticated control receipts to runtime-owned live dispatch. | PR #275 is published at exact head 5f1902c. Monitor all required checks; repair failures through handoffctl, merge only after independent review and green exact-head CI, then verify seven post-merge workflows. |
 | P0 | [AR-1379](../tasks/AR-1379-live-dispatch-integration.md): Production live dispatch integration | Unclaimed | Integrate authenticated runtime live dispatch into asb run and sweep. | Monitor rerun of post-merge Rust workflow and remaining six workflows at exact main SHA 1e2c591; release only after all seven terminal SUCCESS. |
@@ -521,3 +516,4 @@
 | P1 | [AR-0842](../tasks/AR-0842-frontend-run-lifecycle.md): Implement frontend run lifecycle | Unclaimed | Define and implement frontend-independent run lifecycle semantics. | Implement idempotent launch, cancellation, status reconnect, history, and recovery semantics. |
 | P1 | [AR-0843](../tasks/AR-0843-frontend-privacy-assurance.md): Assure frontend privacy and faults | Unclaimed | Qualify frontend privacy, artifact access, and fault behavior. | Monitor PR #69 exact-head CI at cca49ec3bea429a90a267600acf821cebe45c138; investigate any failure and do not merge without coordinator authorization. |
 | P1 | [AR-0844](../tasks/AR-0844-frontend-api-integration.md): Integrate frontend control API | Unclaimed | Integrate and qualify the frontend control API as an independent boundary. | Monitor PR #76 exact head 76cc86f23a48d5af275b2fed9d70f54199e38637 CI to terminal; investigate failures and do not merge without coordinator authorization. |
+| P1 | [AR-0845](../tasks/AR-0845-ci-artifact-quota-resilience.md): Harden CI artifact quota behavior | Unclaimed | Prevent exhausted GitHub artifact quota from obscuring authoritative ASB results. | Independently review immutable candidate 7d98653e7e7f219cced6abfb5c611d2614c72bd7 tree 2b02deda39ae1e4a4b40e9c3e960f1f0336f19b3; do not publish before approval. |

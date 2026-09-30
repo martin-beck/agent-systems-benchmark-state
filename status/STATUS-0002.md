@@ -598,11 +598,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | coordinator-ar1374-development-20260930 |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Development ordinary run/sweep dispatch is qualified with local/mock and strict replay; deployment-owned live-provider authority is optional future hardening. |
@@ -3477,7 +3477,7 @@ flowchart LR
         AR_1371["AR-1371 - Done"]:::status_done
         AR_1372["AR-1372 - Done"]:::status_done
         AR_1373["AR-1373 - Done"]:::status_done
-        AR_1374["AR-1374 - In progress"]:::status_in_progress
+        AR_1374["AR-1374 - Done"]:::status_done
         AR_1375["AR-1375 - Superseded"]:::status_superseded
         AR_1376["AR-1376 - Blocked"]:::status_blocked
         AR_1377["AR-1377 - Done"]:::status_done
@@ -4901,3 +4901,6 @@ flowchart LR
     AR_1419 --> AR_1420
     AR_1419 --> AR_1423
     AR_1420 --> AR_1424
+    AR_1421 --> AR_1427
+    AR_1423 --> AR_1424
+    AR_1423 --> AR_1426

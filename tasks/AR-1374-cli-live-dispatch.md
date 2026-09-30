@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1374-cli-live-dispatch",
   "checkpoint_commit": "4ee5a4ed843c7dd7dda0b92dbe392f3787b4039f",
-  "claim_expires": "2026-09-30T05:27:06+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1373",
     "AR-1339",
@@ -14,7 +14,7 @@
   "observed_branch": "feature/ar-1374-cli-live-dispatch",
   "observed_dirty": 0,
   "observed_head": "bf89a45ddd71af96e6d4b6954320e199e147f83e",
-  "owner": "coordinator-ar1374-development-20260930",
+  "owner": "",
   "plan": "../plans/AR-1374-cli-live-dispatch.md",
   "priority": "P0",
   "schema_version": 1,
@@ -28,11 +28,11 @@
   },
   "spec_ref": "specs/AR-1374.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Development ordinary run/sweep dispatch is qualified with local/mock and strict replay; deployment-owned live-provider authority is optional future hardening.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Production live-provider dispatch",
-  "updated_at": "2026-09-30T04:57:09+00:00",
+  "updated_at": "2026-09-30T04:58:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1374-cli-live-dispatch"
 }
 ---
@@ -224,3 +224,6 @@ fabricated, no asb-tui/live provider.
 
 - 2026-09-30T04:57:09+00:00: Recorded command exit 0; command argv SHA-256
   e267756eed95c553093a099b8aa2474a121aa2d7ec2c0849a9dd0611a9c4bc37.
+
+- 2026-09-30T04:58:31+00:00: Development local/mock and strict-replay dispatch qualification passed
+  on exact protected main; deployment-owned live authority remains optional future hardening.
