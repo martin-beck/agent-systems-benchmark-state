@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1367-ar1329-production-dispatch-integration",
   "checkpoint_commit": "0c6dc52e1f4aa5854f73081711dbd9a5bc1a5d7c",
-  "claim_expires": "2026-09-30T05:31:12+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1366",
     "AR-1340",
@@ -14,7 +14,7 @@
   "observed_branch": "feature/ar-1367-ar1329-production-dispatch-integration",
   "observed_dirty": 0,
   "observed_head": "bf89a45ddd71af96e6d4b6954320e199e147f83e",
-  "owner": "coordinator-ar1367-development-20260930",
+  "owner": "",
   "plan": "../plans/AR-1367-ar1329-production-dispatch-integration.md",
   "priority": "P0",
   "schema_version": 1,
@@ -28,11 +28,11 @@
   },
   "spec_ref": "specs/AR-1367.json",
   "spec_revision": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Development asb run/sweep dispatch is qualified with local/mock and strict replay; deployment-owned live-provider materialization is optional future hardening.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "AR-1329 production dispatch integration",
-  "updated_at": "2026-09-30T05:01:16+00:00",
+  "updated_at": "2026-09-30T05:02:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1367-ar1329-production-dispatch-integration"
 }
 ---
@@ -160,3 +160,6 @@ reachability.
 
 - 2026-09-30T05:01:16+00:00: Recorded command exit 0; command argv SHA-256
   5b7975a7593ba0e267af10a211980afc1adf5635226111721f1816d58dde8f89.
+
+- 2026-09-30T05:02:17+00:00: Development local/mock run/sweep dispatch qualification passed on exact
+  protected main; deployment-owned live authority remains optional future hardening.
