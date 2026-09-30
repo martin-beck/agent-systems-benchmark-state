@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**561 ARs tracked** across 6 active status categories.
+**563 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 86 |
-| **Planned** | Defined work awaiting promotion or dependencies | 48 |
+| **Planned** | Defined work awaiting promotion or dependencies | 50 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 396 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -636,6 +636,8 @@ flowchart LR
         AR_1539["AR-1539 - Blocked"]:::status_blocked
         AR_1540["AR-1540 - In progress"]:::status_in_progress
         AR_1541["AR-1541 - In progress"]:::status_in_progress
+        AR_1542["AR-1542 - Planned"]:::status_planned
+        AR_1543["AR-1543 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2108,10 +2110,19 @@ flowchart LR
     AR_1530 --> AR_1540
     AR_1530 --> AR_1541
     AR_1531 --> AR_1536
+    AR_1531 --> AR_1543
     AR_1532 --> AR_1535
+    AR_1532 --> AR_1542
     AR_1533 --> AR_1536
+    AR_1533 --> AR_1543
     AR_1534 --> AR_1535
     AR_1534 --> AR_1536
+    AR_1534 --> AR_1542
+    AR_1534 --> AR_1543
+    AR_1540 --> AR_1542
+    AR_1540 --> AR_1543
+    AR_1541 --> AR_1542
+    AR_1541 --> AR_1543
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -2442,7 +2453,3 @@ flowchart LR
 | [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md), [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md), [AR-1285](../tasks/AR-1285-runtime-launch-factory.md) | None |
 | [AR-1287](../tasks/AR-1287-delegated-sandbox-runner.md) | None | [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md), [AR-1306](../tasks/AR-1306-authenticated-fault-matrix-qualification.md) |
 | [AR-1288](../tasks/AR-1288-certificate-chain-authz.md) | [AR-0813](../tasks/AR-0813-remote-control-transport.md) | [AR-1370](../tasks/AR-1370-runner-authority-materialization.md), [AR-1371](../tasks/AR-1371-runner-authority-injection.md), [AR-1377](../tasks/AR-1377-runtime-chain-store.md), [AR-1468](../tasks/AR-1468-control-authority-materialization-successor.md) |
-| [AR-1289](../tasks/AR-1289-formal-lock-gate.md) | None | None |
-| [AR-1290](../tasks/AR-1290-dependabot-dco-boundary-recovery.md) | None | None |
-| [AR-1291](../tasks/AR-1291-superseded-pointer-repair.md) | None | None |
-| [AR-1292](../tasks/AR-1292-tla-provenance-repair.md) | None | None |
