@@ -81,11 +81,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1535](../tasks/AR-1535.md): AR-1307 formal-readiness handoff repair | Unclaimed | Reconcile AR-1307&#x27;s repaired development runner with the formal qualification handoff after the approved vendor release. | Promote only after AR-1532, AR-1534 and AR-1542 are done; rerun exact-head vendor/state gates, audit AR-1307 formal-input readiness, and hand an exact sanitized bundle to AR-1522 or record the missing external input without substituting it. |
+| P0 | [AR-1535](../tasks/AR-1535.md): AR-1307 formal-readiness handoff repair | asb-ar1535-formal-readiness-20260930 | Reconcile AR-1307&#x27;s repaired development runner with the formal qualification handoff after the approved vendor release. | Promote only after AR-1532, AR-1534 and AR-1542 are done; rerun exact-head vendor/state gates, audit AR-1307 formal-input readiness, and hand an exact sanitized bundle to AR-1522 or record the missing external input without substituting it. |
 
 ### Blocked (83)
 

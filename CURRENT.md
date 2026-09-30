@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1535](tasks/AR-1535.md): AR-1307 formal-readiness handoff repair | Reconcile AR-1307's repaired development runner with the formal qualification handoff after the approved vendor release. | Promote only after AR-1532, AR-1534 and AR-1542 are done; rerun exact-head vendor/state gates, audit AR-1307 formal-input readiness, and hand an exact sanitized bundle to AR-1522 or record the missing external input without substituting it. | - |
+| P0 | [AR-1535](tasks/AR-1535.md): AR-1307 formal-readiness handoff repair | Reconcile AR-1307's repaired development runner with the formal qualification handoff after the approved vendor release. | Promote only after AR-1532, AR-1534 and AR-1542 are done; rerun exact-head vendor/state gates, audit AR-1307 formal-input readiness, and hand an exact sanitized bundle to AR-1522 or record the missing external input without substituting it. | asb-ar1535-formal-readiness-20260930 |
 
 ## Blocked
 
