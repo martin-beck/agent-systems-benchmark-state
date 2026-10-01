@@ -3720,11 +3720,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | asb1612-recording |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Expose a simple ASB control operation to record responses for selected or all implemented workloads and make the sealed result available for the next offline run. |
@@ -4409,7 +4409,7 @@ flowchart LR
         AR_1608["AR-1608 - Done"]:::status_done
         AR_1609["AR-1609 - Done"]:::status_done
         AR_1611["AR-1611 - Done"]:::status_done
-        AR_1612["AR-1612 - In progress"]:::status_in_progress
+        AR_1612["AR-1612 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4530,3 +4530,4 @@ flowchart LR
     AR_0104 --> AR_0601
     AR_0104 --> AR_0603
     AR_0104 --> AR_0801
+    AR_0104 --> AR_0803

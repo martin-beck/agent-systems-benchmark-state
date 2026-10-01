@@ -217,12 +217,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1612](../tasks/AR-1612.md): Selected-workload recording campaign controls | asb1612-recording | Expose a simple ASB control operation to record responses for selected or all implemented workloads and make the sealed result available for the next offline run. | Promote after configuration persistence is released; implement typed selected/all workload planning, bounded execution, sealing, and offline activation. |
-
 ### Blocked (82)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -372,7 +366,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (452)
+### Done (453)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -552,3 +546,4 @@
 | P0 | [AR-1474](../tasks/AR-1474-runtime-authority-input-resolver.md): Runtime-owned authority-input resolver | Unclaimed | Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority. | Release AR-1474 done; old PR coverage failure superseded by AR-1477 tests and AR-1478 topology repair. |
 | P0 | [AR-1475](../tasks/AR-1475-asb-metrics-evidence-fixture-repair.md): Repair asb-metrics evidence fixture classification | Unclaimed | Repair the deterministic ProbeRejected versus MalformedEvidence fixture failure blocking PR #345. | Release done after final reconcile; then rerun PR #345 exact-head validation. |
 | P0 | [AR-1476](../tasks/AR-1476-workspace-coverage-floor-repair.md): Repair workspace coverage floor | Unclaimed | Restore the enforced 90 percent workspace coverage floor blocking exact AR-1474 validation. | Rerun PR #345 exact-head validation against current protected main 1dada31c; no repair diff is required unless the current-base gate regresses. |
+| P0 | [AR-1477](../tasks/AR-1477-authority-resolver-coverage-tests.md): Cover authority resolver behavior | Unclaimed | Raise exact hosted coverage above the enforced 90 percent floor for the authority resolver. | Create a narrow protected-main topology repair successor for merge 67fa0d1; repository policy requires topic synchronization merge at tip. Preserve all six other post-merge results and do not waive policy. |
