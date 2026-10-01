@@ -9,6 +9,12 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1597](tasks/AR-1597.md): Fault matrix and deterministic runner | Exercise all setup, recording, replay, benchmark, and recovery failure paths with bounded evidence. | Await independent review and hosted checks for PR #420 exact head 829f67f9d3f5cacf1328a0b7297733d0c747dd3c; repair only if checks/review identify a concrete issue. | ar1199-router-impl |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1599](tasks/AR-1599.md): Development install provenance and toolchain repair | Repair fresh-user dev installation provenance, toolchain discovery, and atomic publication. | Promote after the dependency releases and repair the current-main dev materializer/toolchain discovery before TUI qualification. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -120,7 +126,6 @@ Never edit this file directly.
 | P0 | [AR-1589](tasks/AR-1589.md): ASB development-channel provenance and fault matrix | Qualify ASB development-channel identity, metadata integrity, and cleanup failure paths. | Promote after AR-1588; implement the development-channel provenance envelope and adversarial fault matrix without weakening stable verification. | - |
 | P0 | [AR-1591](tasks/AR-1591.md): Post-release fresh-clone ASB consumption | Qualify fresh-clone consumption of the released development ASB journey. | Promote after the inherited-fd bridge and final cross-project qualification are released; run the fresh-clone post-release dev-channel journey and record exact evidence. | - |
 | P0 | [AR-1598](tasks/AR-1598.md): Fresh-user development qualification | Prove install-to-wizard-to-benchmark-to-offline-comparison works for a fresh development user. | Run the disposable fresh-user default-dev qualification after the fault-matrix runner is released. | - |
-| P0 | [AR-1599](tasks/AR-1599.md): Development install provenance and toolchain repair | Repair fresh-user dev installation provenance, toolchain discovery, and atomic publication. | Promote after the dependency releases and repair the current-main dev materializer/toolchain discovery before TUI qualification. | - |
 | P1 | [AR-0808](tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. | - |
 | P1 | [AR-0809](tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. | - |
 | P1 | [AR-0810](tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project's GitHub Pages site. | - |
