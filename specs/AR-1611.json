@@ -1,1 +1,30 @@
-{"id":"AR-1611","revision":1,"title":"Integrated dev-channel TUI install and launch","required_evidence":["fresh install","repeat upgrade","failure rollback","launch","exact source and binary digests"],"development_mode":{"missing_authentication":"warning","missing_signatures":"warning","missing_key_management":"warning"},"acceptance":{"evidence_class":"mechanical","evidence_ref":"quality/AR-1611-integrated-tui-install-receipt.txt","status":"pass"}}
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1611.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id":"dev-options","description":"Development install, upgrade, remove and launch honor offline, dry-run and launch options."},
+    {"id":"locking","description":"All development lifecycle mutations use the router lifecycle lock."},
+    {"id":"warnings","description":"Missing authentication, signatures and key management are explicit warning codes and never block development."},
+    {"id":"provenance","description":"Install, status, doctor and launch expose exact source commit/tree and executable digests."},
+    {"id":"evidence","description":"Exact protected-main merge and all required hosted checks are recorded in the receipt."}
+  ],
+  "definition_of_done": [
+    "Merged exact-main implementation passes local lifecycle tests and hosted checks.",
+    "Post-merge receipt records exact protected-main head and independent review evidence."
+  ],
+  "inputs": [
+    {"id":"dev-channel","description":"Current dev-channel ASB and asb-tui source heads."},
+    {"id":"lifecycle-router","description":"Existing bounded clone/build, publication, rollback and launch router."}
+  ],
+  "outputs": [
+    {"id":"integrated-install","description":"Atomic, lock-protected development TUI install and launch lifecycle with provenance and warnings."}
+  ],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["credential-bypass", "secret-output"],
+  "required_evidence_classes": ["contract-test", "mechanical", "environmental"],
+  "gates": [
+    {"id":"exact-main","description":"Merged commit is exact origin/main."},
+    {"id":"hosted","description":"All required PR and exact-main checks pass on merged head."}
+  ]
+}
