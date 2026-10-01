@@ -3434,7 +3434,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Complete real ASB-to-asb-tui inherited-fd broker qualification after the PTY seam exists. |
-| Next action | Await coverage/Rust/portability repair checks, then fresh exact-head review; ASB AR-1592 catalog compatibility remains a prerequisite before release. |
+| Next action | Await coverage/Rust/portability repair checks, then fresh exact-head review; ASB AR-1592 and AR-1593 catalog/version alignment remain prerequisites before release. |
 
 ### AR-1591 — Post-release fresh-clone ASB consumption
 
@@ -3462,7 +3462,21 @@
 | Parent | None |
 | Children | None |
 | Summary | Add ASB control-protocol catalog compatibility required by the released asb-tui bootstrap journey. |
-| Next action | Await all PR #413 hosted checks, then obtain independent exact-head review before merge and release. |
+| Next action | Await all PR #413 hosted checks, then obtain independent exact-head review; AR-1593 must resolve the common-version matrix before merge and release. |
+
+### AR-1593 — Catalog protocol version alignment
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Align ASB and asb-tui catalog protocol versions so the real bootstrap can negotiate a common catalog-capable version. |
+| Next action | Align the published BenchmarkCatalog version with the TUI common-version matrix, preserve older schema compatibility, and add cross-project negotiation evidence. |
 
 
 ## Dependency graph
@@ -4122,6 +4136,7 @@ flowchart LR
         AR_1590["AR-1590 - In progress"]:::status_in_progress
         AR_1591["AR-1591 - Planned"]:::status_planned
         AR_1592["AR-1592 - In progress"]:::status_in_progress
+        AR_1593["AR-1593 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4630,30 +4645,3 @@ flowchart LR
     AR_0836 --> AR_0837
     AR_0840 --> AR_0841
     AR_0840 --> AR_0842
-    AR_0840 --> AR_0843
-    AR_0840 --> AR_0844
-    AR_0840 --> AR_1023
-    AR_0841 --> AR_0842
-    AR_0841 --> AR_0843
-    AR_0841 --> AR_0844
-    AR_0841 --> AR_1023
-    AR_0842 --> AR_0844
-    AR_0842 --> AR_1023
-    AR_0843 --> AR_0844
-    AR_0843 --> AR_1023
-    AR_0844 --> AR_0870
-    AR_0844 --> AR_1023
-    AR_0845 --> AR_0846
-    AR_0848 --> AR_0907
-    AR_0851 --> AR_1017
-    AR_0855 --> AR_0857
-    AR_0855 --> AR_0863
-    AR_0857 --> AR_0858
-    AR_0857 --> AR_0880
-    AR_0858 --> AR_0859
-    AR_0859 --> AR_0860
-    AR_0860 --> AR_0861
-    AR_0861 --> AR_0862
-    AR_0862 --> AR_0856
-    AR_0863 --> AR_0864
-    AR_0864 --> AR_0865

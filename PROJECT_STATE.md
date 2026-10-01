@@ -18,21 +18,22 @@ Generated from local Git and GitHub. Do not edit.
 | #366 | `dependabot/cargo/schemars-1.2.2@047b52b0b5b9` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump schemars from 1.0.4 to 1.2.2 |
 | #384 | `feature/ar-1508-platform-owned-authority-provider@2c70f81100ca` | `main` | DIRTY | - | feat(runtime): platform-owned authority provider |
 | #410 | `feature/ar-1587-real-bridge@141fe3465af3` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(asb): qualify real development TUI bridge |
-| #412 | `feature/ar-1590-inherited-fd-bridge@1694421cb5f5` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(asb): send parent-first development broker handoff |
+| #412 | `feature/ar-1590-inherited-fd-bridge@0b46bceec0de` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(asb): send parent-first development broker handoff |
+| #413 | `feature/ar-1592-catalog-compat@2f1d3025effb` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(asb): add catalog compatibility contract |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36824413008 | `1694421cb5f5` | pull_request | Huawei MIT source headers | completed:success |
-| 36824412949 | `1694421cb5f5` | pull_request | Emulated aarch64 portability | completed:success |
-| 36824412934 | `1694421cb5f5` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 36824412911 | `1694421cb5f5` | pull_request | Fault assurance | completed:success |
-| 36824412853 | `1694421cb5f5` | pull_request | Repository quality | completed:failure |
-| 36824412811 | `1694421cb5f5` | pull_request | Formal assurance | completed:success |
-| 36824412791 | `1694421cb5f5` | pull_request | Hosted portability and native qualification | completed:success |
-| 36824412790 | `1694421cb5f5` | pull_request | Rust verification | completed:failure |
-| 36824412766 | `1694421cb5f5` | pull_request | Cross-repository development broker qualification | completed:success |
-| 36824412718 | `1694421cb5f5` | pull_request | Credential-free benchmark path | completed:failure |
-| 36824374027 | `9d7efa8a1df0` | pull_request | Fault assurance | completed:cancelled |
-| 36824373876 | `9d7efa8a1df0` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 36826530528 | `2f1d3025effb` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 36826530481 | `2f1d3025effb` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 36826530456 | `2f1d3025effb` | pull_request | Formal assurance | completed:success |
+| 36826530449 | `2f1d3025effb` | pull_request | Huawei MIT source headers | completed:success |
+| 36826530434 | `2f1d3025effb` | pull_request | Credential-free benchmark path | completed:success |
+| 36826530418 | `2f1d3025effb` | pull_request | Fault assurance | completed:success |
+| 36826530402 | `2f1d3025effb` | pull_request | Repository quality | in_progress:- |
+| 36826530390 | `2f1d3025effb` | pull_request | Rust verification | in_progress:- |
+| 36826530269 | `2f1d3025effb` | pull_request | Hosted portability and native qualification | completed:success |
+| 36826395946 | `57174cac178b` | pull_request | Fault assurance | completed:cancelled |
+| 36826395825 | `57174cac178b` | pull_request | Repository quality | completed:failure |
+| 36826395767 | `57174cac178b` | pull_request | Rust verification | completed:cancelled |

@@ -1,5 +1,32 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+    AR_0840 --> AR_0843
+    AR_0840 --> AR_0844
+    AR_0840 --> AR_1023
+    AR_0841 --> AR_0842
+    AR_0841 --> AR_0843
+    AR_0841 --> AR_0844
+    AR_0841 --> AR_1023
+    AR_0842 --> AR_0844
+    AR_0842 --> AR_1023
+    AR_0843 --> AR_0844
+    AR_0843 --> AR_1023
+    AR_0844 --> AR_0870
+    AR_0844 --> AR_1023
+    AR_0845 --> AR_0846
+    AR_0848 --> AR_0907
+    AR_0851 --> AR_1017
+    AR_0855 --> AR_0857
+    AR_0855 --> AR_0863
+    AR_0857 --> AR_0858
+    AR_0857 --> AR_0880
+    AR_0858 --> AR_0859
+    AR_0859 --> AR_0860
+    AR_0860 --> AR_0861
+    AR_0861 --> AR_0862
+    AR_0862 --> AR_0856
+    AR_0863 --> AR_0864
+    AR_0864 --> AR_0865
     AR_0865 --> AR_0866
     AR_0866 --> AR_0867
     AR_0867 --> AR_0868
@@ -995,6 +1022,8 @@
     AR_1589 --> AR_1591
     AR_1590 --> AR_1591
     AR_1592 --> AR_1590
+    AR_1592 --> AR_1593
+    AR_1593 --> AR_1590
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -1442,5 +1471,3 @@
 | [AR-1407](../tasks/AR-1407-sha2-compatibility.md) | [AR-1405](../tasks/AR-1405-open-dependency-pr-reconciliation.md) | None |
 | [AR-1408](../tasks/AR-1408-literature-inventory-closure.md) | [AR-1399](../tasks/AR-1399-literature-workload-registry-completeness.md), [AR-1400](../tasks/AR-1400-literature-catalog-activation.md) | [AR-1409](../tasks/AR-1409-interactive-literature-adapters.md), [AR-1411](../tasks/AR-1411-repository-terminal-adapters.md), [AR-1412](../tasks/AR-1412-code-generation-control-adapters.md), [AR-1413](../tasks/AR-1413-long-horizon-performance-adapters.md), [AR-1417](../tasks/AR-1417-interactive-stateful-literature-workloads.md), [AR-1418](../tasks/AR-1418-tool-use-reliability-safety-workloads.md) |
 | [AR-1409](../tasks/AR-1409-interactive-literature-adapters.md) | [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md), [AR-1408](../tasks/AR-1408-literature-inventory-closure.md) | [AR-1410](../tasks/AR-1410-literature-selector-completeness.md) |
-| [AR-1410](../tasks/AR-1410-literature-selector-completeness.md) | [AR-1402](../tasks/AR-1402-literature-cli-dispatch-integration.md), [AR-1404](../tasks/AR-1404-literature-documentation-matrix.md), [AR-1409](../tasks/AR-1409-interactive-literature-adapters.md), [AR-1411](../tasks/AR-1411-repository-terminal-adapters.md), [AR-1412](../tasks/AR-1412-code-generation-control-adapters.md), [AR-1413](../tasks/AR-1413-long-horizon-performance-adapters.md) | [AR-1415](../tasks/AR-1415-literature-selector-total-coverage.md) |
-| [AR-1411](../tasks/AR-1411-repository-terminal-adapters.md) | [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md), [AR-1408](../tasks/AR-1408-literature-inventory-closure.md) | [AR-1410](../tasks/AR-1410-literature-selector-completeness.md) |
