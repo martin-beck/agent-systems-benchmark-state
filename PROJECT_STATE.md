@@ -2,8 +2,8 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `da88696742de6256a05c7d10d41df6921669ffb6`
-- Local origin/main: `da88696742de6256a05c7d10d41df6921669ffb6`
+- Product remote main: `f86e4d7e8a958ec74b4294b329ea8f9fed467206`
+- Local origin/main: `f86e4d7e8a958ec74b4294b329ea8f9fed467206`
 - Primary worktree head: `bd7d10d4a760a84fa42de2b1fa9e97e8ea85ba09`
 
 ## Open pull requests
@@ -22,15 +22,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36899483984 | `da88696742de` | push | Repository quality | completed:success |
-| 36899483967 | `da88696742de` | push | Huawei MIT source headers | completed:success |
-| 36899483950 | `da88696742de` | push | Formal assurance | completed:success |
-| 36899483922 | `da88696742de` | push | Hosted portability and native qualification | completed:success |
-| 36899483921 | `da88696742de` | push | Rust verification | completed:success |
-| 36899483920 | `da88696742de` | push | Emulated aarch64 portability | completed:success |
-| 36899483907 | `da88696742de` | push | Fault assurance | completed:success |
-| 36899483902 | `da88696742de` | push | Credential-free benchmark path | completed:success |
-| 36899483862 | `da88696742de` | push | Cross-repository development broker qualification | completed:success |
-| 36895890514 | `8355afdd9f05` | pull_request | Emulated aarch64 portability | completed:success |
-| 36895890488 | `8355afdd9f05` | pull_request | Cross-repository development broker qualification | completed:success |
-| 36895890445 | `8355afdd9f05` | pull_request | Formal assurance | completed:success |
+| 36907690753 | `f86e4d7e8a95` | push | Fault assurance | completed:success |
+| 36907690740 | `f86e4d7e8a95` | push | Huawei MIT source headers | completed:success |
+| 36907690639 | `f86e4d7e8a95` | push | Cross-repository development broker qualification | completed:success |
+| 36907690607 | `f86e4d7e8a95` | push | Emulated aarch64 portability | in_progress:- |
+| 36907690587 | `f86e4d7e8a95` | push | Credential-free benchmark path | completed:success |
+| 36907690526 | `f86e4d7e8a95` | push | Rust verification | in_progress:- |
+| 36907690522 | `f86e4d7e8a95` | push | Formal assurance | in_progress:- |
+| 36907690390 | `f86e4d7e8a95` | push | Repository quality | in_progress:- |
+| 36907690366 | `f86e4d7e8a95` | push | Hosted portability and native qualification | completed:success |
+| 36906458705 | `bd40695b8e81` | pull_request | Cross-repository development broker qualification | completed:success |
+| 36906458601 | `bd40695b8e81` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 36906458588 | `bd40695b8e81` | pull_request | Emulated aarch64 portability | completed:success |
