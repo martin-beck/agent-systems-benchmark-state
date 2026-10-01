@@ -3660,6 +3660,34 @@
 | Summary | Real paired record/seal/reopen/offline-replay/compare qualification fixture |
 | Next action | Coordinate TUI codec repair: decode RecordingCampaignStatus.campaign as lifecycle, then rerun exact ASB/TUI PTY cassette qualification. |
 
+### AR-1607 — OpenRouter provider and model setup
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Expose OpenRouter, API-key reference, supported models, and validation to the development wizard. |
+| Next action | Promote after AR-1601 and implement the additive provider/catalog/config contract. |
+
+### AR-1608 — Configuration persistence and shared defaults
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Persist editable provider/agent/model/auth selections and shared defaults safely for subsequent runs. |
+| Next action | Promote after AR-1607 release and implement atomic redacted configuration updates. |
+
 
 ## Dependency graph
 
@@ -4335,6 +4363,8 @@ flowchart LR
         AR_1604["AR-1604 - Planned"]:::status_planned
         AR_1605["AR-1605 - Done"]:::status_done
         AR_1606["AR-1606 - In progress"]:::status_in_progress
+        AR_1607["AR-1607 - Planned"]:::status_planned
+        AR_1608["AR-1608 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4527,45 +4557,3 @@ flowchart LR
     AR_0305 --> AR_0312
     AR_0305 --> AR_0315
     AR_0305 --> AR_0316
-    AR_0305 --> AR_0510
-    AR_0306 --> AR_0311
-    AR_0306 --> AR_0312
-    AR_0306 --> AR_0315
-    AR_0306 --> AR_0316
-    AR_0306 --> AR_0511
-    AR_0307 --> AR_0311
-    AR_0307 --> AR_0312
-    AR_0307 --> AR_0315
-    AR_0307 --> AR_0316
-    AR_0307 --> AR_0512
-    AR_0308 --> AR_0311
-    AR_0308 --> AR_0312
-    AR_0308 --> AR_0315
-    AR_0308 --> AR_0316
-    AR_0308 --> AR_0513
-    AR_0308 --> AR_0909
-    AR_0309 --> AR_0311
-    AR_0309 --> AR_0312
-    AR_0309 --> AR_0315
-    AR_0309 --> AR_0316
-    AR_0309 --> AR_0514
-    AR_0309 --> AR_0521
-    AR_0310 --> AR_0311
-    AR_0310 --> AR_0312
-    AR_0310 --> AR_0314
-    AR_0310 --> AR_0318
-    AR_0310 --> AR_0857
-    AR_0310 --> AR_0863
-    AR_0310 --> AR_1325
-    AR_0311 --> AR_0313
-    AR_0311 --> AR_0315
-    AR_0312 --> AR_0313
-    AR_0312 --> AR_0315
-    AR_0312 --> AR_0879
-    AR_0312 --> AR_0891
-    AR_0313 --> AR_0314
-    AR_0313 --> AR_0315
-    AR_0313 --> AR_0804
-    AR_0313 --> AR_0869
-    AR_0313 --> AR_0876
-    AR_0313 --> AR_0879

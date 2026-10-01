@@ -17,20 +17,21 @@ Generated from local Git and GitHub. Do not edit.
 | #365 | `dependabot/cargo/rcgen-0.14.10@8604b5977544` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump rcgen from 0.14.7 to 0.14.10 |
 | #366 | `dependabot/cargo/schemars-1.2.2@047b52b0b5b9` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump schemars from 1.0.4 to 1.2.2 |
 | #384 | `feature/ar-1508-platform-owned-authority-provider@2c70f81100ca` | `main` | DIRTY | - | feat(runtime): platform-owned authority provider |
+| #426 | `feature/ar-1606-cassette-qualification@5b4d76c2c18c` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | test: qualify cassette lifecycle over inherited TUI broker |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 36893255014 | `5b4d76c2c18c` | pull_request | Credential-free benchmark path | in_progress:- |
+| 36893255009 | `5b4d76c2c18c` | pull_request | Repository quality | in_progress:- |
+| 36893254997 | `5b4d76c2c18c` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 36893254944 | `5b4d76c2c18c` | pull_request | Huawei MIT source headers | completed:success |
+| 36893254921 | `5b4d76c2c18c` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 36893254789 | `5b4d76c2c18c` | pull_request | Rust verification | in_progress:- |
+| 36893254757 | `5b4d76c2c18c` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 36893254753 | `5b4d76c2c18c` | pull_request | Fault assurance | in_progress:- |
+| 36893254700 | `5b4d76c2c18c` | pull_request | Cross-repository development broker qualification | in_progress:- |
+| 36893254687 | `5b4d76c2c18c` | pull_request | Formal assurance | in_progress:- |
 | 36882352412 | `2a9793fa9e69` | push | Cross-repository development broker qualification | completed:success |
 | 36882352311 | `2a9793fa9e69` | push | Emulated aarch64 portability | completed:success |
-| 36882352294 | `2a9793fa9e69` | push | Repository quality | completed:success |
-| 36882352190 | `2a9793fa9e69` | push | Fault assurance | completed:success |
-| 36882352167 | `2a9793fa9e69` | push | Huawei MIT source headers | completed:success |
-| 36882352160 | `2a9793fa9e69` | push | Credential-free benchmark path | completed:success |
-| 36882352154 | `2a9793fa9e69` | push | Hosted portability and native qualification | completed:success |
-| 36882352153 | `2a9793fa9e69` | push | Rust verification | completed:success |
-| 36882352091 | `2a9793fa9e69` | push | Formal assurance | completed:success |
-| 36881138606 | `59c0e5a35954` | pull_request | Fault assurance | completed:success |
-| 36881138505 | `59c0e5a35954` | pull_request | Emulated aarch64 portability | completed:success |
-| 36881138494 | `59c0e5a35954` | pull_request | Agent Workflow Quality shadow | completed:success |
