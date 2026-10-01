@@ -3462,7 +3462,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Add ASB control-protocol catalog compatibility required by the released asb-tui bootstrap journey. |
-| Next action | Await all PR #413 hosted checks, then obtain independent exact-head review and release the typed ASB catalog implementation; AR-1593 owns the follow-up common-version alignment. |
+| Next action | Spec acceptance metadata is missing; coordinator must attach the required receipt/digest before done release can be admitted. PR #413 merged at f8c8d6b2c7b1476b91d0c93183864f23abadc488. |
 
 ### AR-1593 — Catalog protocol version alignment
 
@@ -4608,4 +4608,3 @@ flowchart LR
     AR_0801 --> AR_0820
     AR_0801 --> AR_0840
     AR_0801 --> AR_0842
-    AR_0801 --> AR_0847
