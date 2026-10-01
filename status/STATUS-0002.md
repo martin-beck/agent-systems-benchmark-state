@@ -3566,11 +3566,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1199-router-impl |
 | Parent | None |
 | Children | None |
 | Summary | Keep normal development TUI builds within explicit source and artifact quotas. |
@@ -4244,7 +4244,7 @@ flowchart LR
     end
     subgraph series_16["16 - Additional work"]
         direction TB
-        AR_1600["AR-1600 - Open"]:::status_open
+        AR_1600["AR-1600 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4602,4 +4602,3 @@ flowchart LR
     AR_0507 --> AR_0515
     AR_0508 --> AR_0515
     AR_0508 --> AR_0850
-    AR_0509 --> AR_0515

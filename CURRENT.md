@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1600](tasks/AR-1600.md): Bounded development build-artifact staging | Keep normal development TUI builds within explicit source and artifact quotas. | Promote and implement bounded private Cargo target staging after the real paired qualification identifies the workspace quota failure. | - |
+| P0 | [AR-1600](tasks/AR-1600.md): Bounded development build-artifact staging | Keep normal development TUI builds within explicit source and artifact quotas. | Promote and implement bounded private Cargo target staging after the real paired qualification identifies the workspace quota failure. | ar1199-router-impl |
 
 ## Blocked
 

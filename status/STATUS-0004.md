@@ -193,11 +193,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1600](../tasks/AR-1600.md): Bounded development build-artifact staging | Unclaimed | Keep normal development TUI builds within explicit source and artifact quotas. | Promote and implement bounded private Cargo target staging after the real paired qualification identifies the workspace quota failure. |
+| P0 | [AR-1600](../tasks/AR-1600.md): Bounded development build-artifact staging | ar1199-router-impl | Keep normal development TUI builds within explicit source and artifact quotas. | Promote and implement bounded private Cargo target staging after the real paired qualification identifies the workspace quota failure. |
 
 ### Blocked (82)
 
