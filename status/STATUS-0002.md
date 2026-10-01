@@ -3462,7 +3462,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Add ASB control-protocol catalog compatibility required by the released asb-tui bootstrap journey. |
-| Next action | Implement the common-version control protocol and real backend responses for BenchmarkCatalog and MeasurementCatalog, then publish an exact signed PR and hosted evidence. |
+| Next action | Request independent review and monitor hosted checks for PR #413 at 57174ca; do not merge until exact-head approval. |
 
 
 ## Dependency graph
@@ -4654,3 +4654,6 @@ flowchart LR
     AR_0859 --> AR_0860
     AR_0860 --> AR_0861
     AR_0861 --> AR_0862
+    AR_0862 --> AR_0856
+    AR_0863 --> AR_0864
+    AR_0864 --> AR_0865

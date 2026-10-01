@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1590](tasks/AR-1590.md): Inherited-fd cross-repository qualification | Complete real ASB-to-asb-tui inherited-fd broker qualification after the PTY seam exists. | Await coverage/Rust/portability repair checks, then fresh exact-head review; ASB AR-1592 catalog compatibility remains a prerequisite before release. | ar1590-inherited-fd-bridge |
-| P0 | [AR-1592](tasks/AR-1592.md): ASB control catalog compatibility | Add ASB control-protocol catalog compatibility required by the released asb-tui bootstrap journey. | Implement the common-version control protocol and real backend responses for BenchmarkCatalog and MeasurementCatalog, then publish an exact signed PR and hosted evidence. | ar1592-catalog-compat |
+| P0 | [AR-1592](tasks/AR-1592.md): ASB control catalog compatibility | Add ASB control-protocol catalog compatibility required by the released asb-tui bootstrap journey. | Request independent review and monitor hosted checks for PR #413 at 57174ca; do not merge until exact-head approval. | ar1592-catalog-compat |
 
 ## Blocked
 
