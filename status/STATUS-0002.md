@@ -3356,11 +3356,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1576-bootstrap-projection |
 | Parent | None |
 | Children | None |
 | Summary | Make the development control backend satisfy the current asb-tui bootstrap projection without production credentials. |
@@ -4030,7 +4030,7 @@ flowchart LR
         AR_1572["AR-1572 - Done"]:::status_done
         AR_1573["AR-1573 - Done"]:::status_done
         AR_1574["AR-1574 - In progress"]:::status_in_progress
-        AR_1576["AR-1576 - Open"]:::status_open
+        AR_1576["AR-1576 - In progress"]:::status_in_progress
         AR_1577["AR-1577 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
@@ -4710,4 +4710,3 @@ flowchart LR
     AR_1023 --> AR_1060
     AR_1024 --> AR_1026
     AR_1024 --> AR_1029
-    AR_1025 --> AR_1014
