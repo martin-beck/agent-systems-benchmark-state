@@ -9,4 +9,5 @@ ordinary `cargo llvm-cov --workspace --all-targets` remains above the existing
 Required evidence: local coverage, full Rust tests, exact qualification
 workflow, signed/DCO repair PR, independent review, and all hosted checks.
 
-Dependency: ASB AR-1590. Downstream: AR-1590 release qualification.
+This is a repair seam for ASB AR-1590 and may proceed before AR-1590 is
+released. Downstream: AR-1590 release qualification.
