@@ -10,6 +10,12 @@ Never edit this file directly.
 | P0 | [AR-1574](tasks/AR-1574.md): ASB development control transport wiring | Wire the ASB development launch transport to the producer control bridge. | Await hosted gates and final independent review of cf974249328622d62dc863ce72d1ac08a70a8e32; merge only identical green head, then release AR-1574. | ar1574-transport-wiring |
 | P0 | [AR-1576](tasks/AR-1576.md): ASB development bootstrap projection | Make the development control backend satisfy the current asb-tui bootstrap projection without production credentials. | Promote and implement the development-only bootstrap projection contract required by current asb-tui startup. | ar1576-bootstrap-projection |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1578](tasks/AR-1578.md): ASB workspace coverage recovery | Recover the existing workspace coverage gate that currently blocks otherwise correct ASB transport changes. | Promote and assign an isolated worker to recover meaningful workspace coverage to the configured 90% floor without weakening the gate. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -119,7 +125,6 @@ Never edit this file directly.
 | P0 | [AR-1545](tasks/AR-1545.md): AR-1307 formal-input readiness repair | Audit and repair the AR-1307 formal-input handoff after development runner integration, without executing qualification. | Formal-only work: after AR-1535 supplies reviewed inputs, inventory and independently verify every exact AR-1307 formal input for AR-1522. Do not block or alter the completed unsigned-development path. | - |
 | P0 | [AR-1546](tasks/AR-1546.md): AR-1308 formal capacity-input readiness repair | Audit and repair the AR-1308 capacity/input handoff after diagnostic QEMU integration, without executing qualification. | Formal-only work: after AR-1531 and AR-1536, verify the exact 8 GiB/8 GiB fixture and AR-1308 formal inputs for AR-1522. Do not block or alter the completed unsigned-development path. | - |
 | P0 | [AR-1577](tasks/AR-1577.md): ASB interactive development supervision | Keep successful development TUI sessions interactive while bounding handshake and cleanup failure paths. | Promote after AR-1574 transport wiring is reviewed; repair interactive lifetime supervision and cleanup semantics. | - |
-| P0 | [AR-1578](tasks/AR-1578.md): ASB workspace coverage recovery | Recover the existing workspace coverage gate that currently blocks otherwise correct ASB transport changes. | Promote and assign an isolated worker to recover meaningful workspace coverage to the configured 90% floor without weakening the gate. | - |
 | P1 | [AR-0808](tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. | - |
 | P1 | [AR-0809](tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. | - |
 | P1 | [AR-0810](tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project's GitHub Pages site. | - |
