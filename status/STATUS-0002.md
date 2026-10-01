@@ -3560,7 +3560,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair fresh-user dev installation provenance, toolchain discovery, and atomic publication. |
-| Next action | PR #422 signed/DCO forward repair exact head 8f40d82663b863de89eb03be0ffd0f543dbfb5db is open on c193348f; await hosted checks and independent review, then construct signed two-parent merge with merge_pr.py and rerun policy/post-merge checks before release. |
+| Next action | Release admission is blocked by legacy/incomplete spec_acceptance metadata; preserve done implementation evidence and reconcile the spec gate through coordinator process before retrying release. |
 
 
 ## Dependency graph
@@ -4599,3 +4599,6 @@ flowchart LR
     AR_0601 --> AR_1015
     AR_0602 --> AR_1015
     AR_0603 --> AR_0601
+    AR_0604 --> AR_0602
+    AR_0604 --> AR_1015
+    AR_0701 --> AR_0317
