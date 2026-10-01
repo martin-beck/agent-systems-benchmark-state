@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1606](tasks/AR-1606.md): Cross-project cassette lifecycle qualification | Real paired record/seal/reopen/offline-replay/compare qualification fixture | Promote and implement the paired ControlServer/PTY cassette lifecycle qualification against TUI AR-1601. | - |
+| P0 | [AR-1606](tasks/AR-1606.md): Cross-project cassette lifecycle qualification | Real paired record/seal/reopen/offline-replay/compare qualification fixture | Promote and implement the paired ControlServer/PTY cassette lifecycle qualification against TUI AR-1601. | ar1496-cross-project-cassette-qualification |
 
 ## Blocked
 

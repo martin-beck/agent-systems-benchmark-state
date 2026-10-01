@@ -206,11 +206,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1606](../tasks/AR-1606.md): Cross-project cassette lifecycle qualification | Unclaimed | Real paired record/seal/reopen/offline-replay/compare qualification fixture | Promote and implement the paired ControlServer/PTY cassette lifecycle qualification against TUI AR-1601. |
+| P0 | [AR-1606](../tasks/AR-1606.md): Cross-project cassette lifecycle qualification | ar1496-cross-project-cassette-qualification | Real paired record/seal/reopen/offline-replay/compare qualification fixture | Promote and implement the paired ControlServer/PTY cassette lifecycle qualification against TUI AR-1601. |
 
 ### Blocked (82)
 
