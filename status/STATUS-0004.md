@@ -173,17 +173,17 @@
 | [AR-1576](../tasks/AR-1576.md) | [AR-1573](../tasks/AR-1573.md) | [AR-1588](../tasks/AR-1588.md), [AR-1590](../tasks/AR-1590.md), [AR-1592](../tasks/AR-1592.md), [AR-1594](../tasks/AR-1594.md) |
 | [AR-1577](../tasks/AR-1577.md) | [AR-1574](../tasks/AR-1574.md) | None |
 | [AR-1578](../tasks/AR-1578.md) | None | None |
-| [AR-1588](../tasks/AR-1588.md) | [AR-1564](../tasks/AR-1564.md), [AR-1568](../tasks/AR-1568.md), [AR-1576](../tasks/AR-1576.md) | [AR-1589](../tasks/AR-1589.md) |
-| [AR-1589](../tasks/AR-1589.md) | [AR-1588](../tasks/AR-1588.md) | [AR-1591](../tasks/AR-1591.md) |
+| [AR-1588](../tasks/AR-1588.md) | [AR-1564](../tasks/AR-1564.md), [AR-1568](../tasks/AR-1568.md), [AR-1576](../tasks/AR-1576.md) | [AR-1589](../tasks/AR-1589.md), [AR-1595](../tasks/AR-1595.md), [AR-1598](../tasks/AR-1598.md) |
+| [AR-1589](../tasks/AR-1589.md) | [AR-1588](../tasks/AR-1588.md) | [AR-1591](../tasks/AR-1591.md), [AR-1598](../tasks/AR-1598.md) |
 | [AR-1590](../tasks/AR-1590.md) | [AR-1576](../tasks/AR-1576.md), [AR-1592](../tasks/AR-1592.md), [AR-1593](../tasks/AR-1593.md), [AR-1594](../tasks/AR-1594.md) | [AR-1591](../tasks/AR-1591.md), [AR-1596](../tasks/AR-1596.md) |
 | [AR-1591](../tasks/AR-1591.md) | [AR-1589](../tasks/AR-1589.md), [AR-1590](../tasks/AR-1590.md) | [AR-1598](../tasks/AR-1598.md) |
 | [AR-1592](../tasks/AR-1592.md) | [AR-1576](../tasks/AR-1576.md) | [AR-1590](../tasks/AR-1590.md), [AR-1593](../tasks/AR-1593.md), [AR-1595](../tasks/AR-1595.md) |
 | [AR-1593](../tasks/AR-1593.md) | [AR-1592](../tasks/AR-1592.md) | [AR-1590](../tasks/AR-1590.md), [AR-1595](../tasks/AR-1595.md) |
 | [AR-1594](../tasks/AR-1594.md) | [AR-1576](../tasks/AR-1576.md) | [AR-1590](../tasks/AR-1590.md) |
-| [AR-1595](../tasks/AR-1595.md) | [AR-1592](../tasks/AR-1592.md), [AR-1593](../tasks/AR-1593.md) | [AR-1596](../tasks/AR-1596.md) |
+| [AR-1595](../tasks/AR-1595.md) | [AR-1588](../tasks/AR-1588.md), [AR-1592](../tasks/AR-1592.md), [AR-1593](../tasks/AR-1593.md) | [AR-1596](../tasks/AR-1596.md) |
 | [AR-1596](../tasks/AR-1596.md) | [AR-1590](../tasks/AR-1590.md), [AR-1595](../tasks/AR-1595.md) | [AR-1597](../tasks/AR-1597.md) |
 | [AR-1597](../tasks/AR-1597.md) | [AR-1596](../tasks/AR-1596.md) | [AR-1598](../tasks/AR-1598.md) |
-| [AR-1598](../tasks/AR-1598.md) | [AR-1591](../tasks/AR-1591.md), [AR-1597](../tasks/AR-1597.md) | None |
+| [AR-1598](../tasks/AR-1598.md) | [AR-1588](../tasks/AR-1588.md), [AR-1589](../tasks/AR-1589.md), [AR-1591](../tasks/AR-1591.md), [AR-1597](../tasks/AR-1597.md) | None |
 
 ## Complete AR inventory
 
@@ -550,4 +550,3 @@
 | P0 | [AR-1505](../tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | Unclaimed | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | No further AR-1505 action; merge and post-merge assurance complete. |
 | P0 | [AR-1513](../tasks/AR-1513-authenticated-lease-dispatch-bridge.md): Authenticated lease-to-live-dispatch bridge | Unclaimed | Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch. | PR #383 merged at 47329e35; monitor post-merge workflows 36550477933, 36550477996, 36550478002, 36550478037, 36550478039, 36550478042, 36550478232 to terminal success, then verify protected main and close AR. |
 | P0 | [AR-1514](../tasks/AR-1514-runtime-auth-reconciliation.md): Reconciled development auth handoff runtime | Unclaimed | Repair ASB development-runtime reconciliation between digest-only enrollment and helper invocation. | Complete; PR #386 merged at bf89a45ddd71af96e6d4b6954320e199e147f83e. Protected main tree equals reviewed topic and post-merge auth-focused ASB tests pass. Paired asb-tui AR-1323 qualification remains external. |
-| P0 | [AR-1515](../tasks/AR-1515-ar1307-runner-ci-oom-repair.md): AR-1307 runner CI repair | Unclaimed | Triage complete: AR-1307 runner admission and diagnostics are intact; remaining failure is workload capacity under the unchanged 3G/3G contract. | No runner source repair remains; AR-1309 owns the separately reviewed capacity/model-reduction decision. |
