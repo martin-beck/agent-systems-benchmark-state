@@ -3560,7 +3560,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair fresh-user dev installation provenance, toolchain discovery, and atomic publication. |
-| Next action | Do not release yet: exact post-merge workflows for c193348f are green, but repository_policy rejects the merge commit for missing matching Signed-off-by. Create a signed DCO forward repair merge/descendant, rerun exact-main policy and post-merge checks, then release. |
+| Next action | PR #422 signed/DCO forward repair exact head 8f40d82663b863de89eb03be0ffd0f543dbfb5db is open on c193348f; await hosted checks and independent review, then construct signed two-parent merge with merge_pr.py and rerun policy/post-merge checks before release. |
 
 
 ## Dependency graph

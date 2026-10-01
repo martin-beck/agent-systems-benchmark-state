@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1597](tasks/AR-1597.md): Fault matrix and deterministic runner | Exercise all setup, recording, replay, benchmark, and recovery failure paths with bounded evidence. | Await fresh independent review and all hosted checks for PR #420 exact head dd6d9b6; merge with protected two-parent topology only after approval, then verify post-merge and release. | coordinator-pr420-review |
-| P0 | [AR-1599](tasks/AR-1599.md): Development install provenance and toolchain repair | Repair fresh-user dev installation provenance, toolchain discovery, and atomic publication. | Do not release yet: exact post-merge workflows for c193348f are green, but repository_policy rejects the merge commit for missing matching Signed-off-by. Create a signed DCO forward repair merge/descendant, rerun exact-main policy and post-merge checks, then release. | ar1199-router-impl |
+| P0 | [AR-1599](tasks/AR-1599.md): Development install provenance and toolchain repair | Repair fresh-user dev installation provenance, toolchain discovery, and atomic publication. | PR #422 signed/DCO forward repair exact head 8f40d82663b863de89eb03be0ffd0f543dbfb5db is open on c193348f; await hosted checks and independent review, then construct signed two-parent merge with merge_pr.py and rerun policy/post-merge checks before release. | ar1199-router-impl |
 
 ## Blocked
 
