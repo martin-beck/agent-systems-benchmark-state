@@ -3282,6 +3282,20 @@
 | Summary | Repair merged identity generation so stable/source-archive ASB builds work without a Git checkout. |
 | Next action | PR #402 at exact head 459282047f8c03d3a9aa0c28cac6abec6437f7af; await independent review and all hosted checks, then merge/release or repair. |
 
+### AR-1570 — ASB dynamic development broker handoff
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Wire the ASB development lifecycle through the dynamic asb-tui broker handoff. |
+| Next action | Promote after asb-tui AR-1344 is merged; wire ASB development launch through the dynamic asb-tui broker descriptor and qualify exact heads. |
+
 
 ## Dependency graph
 
@@ -3927,6 +3941,7 @@ flowchart LR
         AR_1567["AR-1567 - In progress"]:::status_in_progress
         AR_1568["AR-1568 - Done"]:::status_done
         AR_1569["AR-1569 - In progress"]:::status_in_progress
+        AR_1570["AR-1570 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4738,25 +4753,3 @@ flowchart LR
     AR_1236 --> AR_1233
     AR_1236 --> AR_1234
     AR_1236 --> AR_1237
-    AR_1236 --> AR_1239
-    AR_1237 --> AR_1232
-    AR_1237 --> AR_1260
-    AR_1237 --> AR_1261
-    AR_1237 --> AR_1262
-    AR_1237 --> AR_1265
-    AR_1237 --> AR_1266
-    AR_1237 --> AR_1267
-    AR_1237 --> AR_1268
-    AR_1237 --> AR_1269
-    AR_1237 --> AR_1270
-    AR_1237 --> AR_1271
-    AR_1237 --> AR_1272
-    AR_1237 --> AR_1273
-    AR_1237 --> AR_1274
-    AR_1237 --> AR_1275
-    AR_1237 --> AR_1276
-    AR_1237 --> AR_1277
-    AR_1237 --> AR_1278
-    AR_1237 --> AR_1279
-    AR_1237 --> AR_1280
-    AR_1237 --> AR_1281
