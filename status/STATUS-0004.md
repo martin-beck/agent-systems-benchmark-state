@@ -210,7 +210,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1606](../tasks/AR-1606.md): Cross-project cassette lifecycle qualification | ar1496-cross-project-cassette-qualification | Real paired record/seal/reopen/offline-replay/compare qualification fixture | Promote and implement the paired ControlServer/PTY cassette lifecycle qualification against TUI AR-1601. |
+| P0 | [AR-1606](../tasks/AR-1606.md): Cross-project cassette lifecycle qualification | ar1496-cross-project-cassette-qualification | Real paired record/seal/reopen/offline-replay/compare qualification fixture | Coordinate paired TUI #200 codec/projection repair for malformed v1.12 RecordingCampaignStatus frame before rerunning ASB PTY cassette qualification. |
 
 ### Blocked (82)
 

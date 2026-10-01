@@ -3658,7 +3658,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Real paired record/seal/reopen/offline-replay/compare qualification fixture |
-| Next action | Promote and implement the paired ControlServer/PTY cassette lifecycle qualification against TUI AR-1601. |
+| Next action | Coordinate paired TUI #200 codec/projection repair for malformed v1.12 RecordingCampaignStatus frame before rerunning ASB PTY cassette qualification. |
 
 
 ## Dependency graph
@@ -4569,4 +4569,3 @@ flowchart LR
     AR_0313 --> AR_0869
     AR_0313 --> AR_0876
     AR_0313 --> AR_0879
-    AR_0313 --> AR_0891
