@@ -3434,7 +3434,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Complete real ASB-to-asb-tui inherited-fd broker qualification after the PTY seam exists. |
-| Next action | Await hosted checks for repaired PR #412 exact head 1694421; then independent review of qualification workflow, ordered typed bootstrap, and bounded cleanup. |
+| Next action | Wait for ASB AR-1592 catalog compatibility, then rerun PR #412 against the exact released TUI with ordered catalog/bootstrap evidence and bounded cleanup. |
 
 ### AR-1591 — Post-release fresh-clone ASB consumption
 
@@ -3449,6 +3449,20 @@
 | Children | None |
 | Summary | Qualify fresh-clone consumption of the released development ASB journey. |
 | Next action | Promote after the inherited-fd bridge and final cross-project qualification are released; run the fresh-clone post-release dev-channel journey and record exact evidence. |
+
+### AR-1592 — ASB control catalog compatibility
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Add ASB control-protocol catalog compatibility required by the released asb-tui bootstrap journey. |
+| Next action | Implement the common-version control protocol and real backend responses for BenchmarkCatalog and MeasurementCatalog, then publish an exact signed PR and hosted evidence. |
 
 
 ## Dependency graph
@@ -4107,6 +4121,7 @@ flowchart LR
         AR_1589["AR-1589 - Planned"]:::status_planned
         AR_1590["AR-1590 - In progress"]:::status_in_progress
         AR_1591["AR-1591 - Planned"]:::status_planned
+        AR_1592["AR-1592 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4640,27 +4655,3 @@ flowchart LR
     AR_0860 --> AR_0861
     AR_0861 --> AR_0862
     AR_0862 --> AR_0856
-    AR_0863 --> AR_0864
-    AR_0864 --> AR_0865
-    AR_0865 --> AR_0866
-    AR_0866 --> AR_0867
-    AR_0867 --> AR_0868
-    AR_0868 --> AR_0856
-    AR_0869 --> AR_0870
-    AR_0869 --> AR_0871
-    AR_0869 --> AR_0872
-    AR_0869 --> AR_0876
-    AR_0869 --> AR_0893
-    AR_0870 --> AR_0871
-    AR_0870 --> AR_0872
-    AR_0870 --> AR_0894
-    AR_0870 --> AR_1011
-    AR_0870 --> AR_1025
-    AR_0871 --> AR_0872
-    AR_0871 --> AR_0879
-    AR_0871 --> AR_0893
-    AR_0871 --> AR_1011
-    AR_0871 --> AR_1025
-    AR_0871 --> AR_1150
-    AR_0872 --> AR_0808
-    AR_0872 --> AR_0809

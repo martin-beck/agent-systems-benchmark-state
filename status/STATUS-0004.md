@@ -1,5 +1,8 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1412](../tasks/AR-1412-code-generation-control-adapters.md) | [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md), [AR-1408](../tasks/AR-1408-literature-inventory-closure.md) | [AR-1410](../tasks/AR-1410-literature-selector-completeness.md) |
+| [AR-1413](../tasks/AR-1413-long-horizon-performance-adapters.md) | [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md), [AR-1408](../tasks/AR-1408-literature-inventory-closure.md) | [AR-1410](../tasks/AR-1410-literature-selector-completeness.md) |
+| [AR-1414](../tasks/AR-1414-action-pin-followup.md) | [AR-1406](../tasks/AR-1406-action-pin-policy-migration.md) | [AR-1415](../tasks/AR-1415-literature-selector-total-coverage.md) |
 | [AR-1415](../tasks/AR-1415-literature-selector-total-coverage.md) | [AR-1410](../tasks/AR-1410-literature-selector-completeness.md), [AR-1414](../tasks/AR-1414-action-pin-followup.md) | [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md), [AR-1423](../tasks/AR-1423-literature-docs-registry-reconciliation.md) |
 | [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md) | [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md), [AR-1402](../tasks/AR-1402-literature-cli-dispatch-integration.md), [AR-1415](../tasks/AR-1415-literature-selector-total-coverage.md) | [AR-1417](../tasks/AR-1417-interactive-stateful-literature-workloads.md), [AR-1418](../tasks/AR-1418-tool-use-reliability-safety-workloads.md), [AR-1421](../tasks/AR-1421-protected-main-literature-merge-race.md), [AR-1424](../tasks/AR-1424-all-literature-selector-campaign.md), [AR-1430](../tasks/AR-1430-literature-workload-catalog-gap-closure.md) |
 | [AR-1417](../tasks/AR-1417-interactive-stateful-literature-workloads.md) | [AR-1408](../tasks/AR-1408-literature-inventory-closure.md), [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md) | [AR-1419](../tasks/AR-1419-literature-framework-boundaries.md), [AR-1420](../tasks/AR-1420-literature-workload-campaign-integration.md), [AR-1425](../tasks/AR-1425-literature-workload-release-readiness.md) |
@@ -156,13 +159,14 @@
 | [AR-1572](../tasks/AR-1572.md) | [AR-1567](../tasks/AR-1567.md) | None |
 | [AR-1573](../tasks/AR-1573.md) | [AR-1570](../tasks/AR-1570.md) | [AR-1574](../tasks/AR-1574.md), [AR-1576](../tasks/AR-1576.md) |
 | [AR-1574](../tasks/AR-1574.md) | [AR-1573](../tasks/AR-1573.md) | [AR-1577](../tasks/AR-1577.md) |
-| [AR-1576](../tasks/AR-1576.md) | [AR-1573](../tasks/AR-1573.md) | [AR-1588](../tasks/AR-1588.md), [AR-1590](../tasks/AR-1590.md) |
+| [AR-1576](../tasks/AR-1576.md) | [AR-1573](../tasks/AR-1573.md) | [AR-1588](../tasks/AR-1588.md), [AR-1590](../tasks/AR-1590.md), [AR-1592](../tasks/AR-1592.md) |
 | [AR-1577](../tasks/AR-1577.md) | [AR-1574](../tasks/AR-1574.md) | None |
 | [AR-1578](../tasks/AR-1578.md) | None | None |
 | [AR-1588](../tasks/AR-1588.md) | [AR-1564](../tasks/AR-1564.md), [AR-1568](../tasks/AR-1568.md), [AR-1576](../tasks/AR-1576.md) | [AR-1589](../tasks/AR-1589.md) |
 | [AR-1589](../tasks/AR-1589.md) | [AR-1588](../tasks/AR-1588.md) | [AR-1591](../tasks/AR-1591.md) |
-| [AR-1590](../tasks/AR-1590.md) | [AR-1576](../tasks/AR-1576.md) | [AR-1591](../tasks/AR-1591.md) |
+| [AR-1590](../tasks/AR-1590.md) | [AR-1576](../tasks/AR-1576.md), [AR-1592](../tasks/AR-1592.md) | [AR-1591](../tasks/AR-1591.md) |
 | [AR-1591](../tasks/AR-1591.md) | [AR-1589](../tasks/AR-1589.md), [AR-1590](../tasks/AR-1590.md) | None |
+| [AR-1592](../tasks/AR-1592.md) | [AR-1576](../tasks/AR-1576.md) | [AR-1590](../tasks/AR-1590.md) |
 
 ## Complete AR inventory
 
@@ -170,7 +174,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1590](../tasks/AR-1590.md): Inherited-fd cross-repository qualification | ar1590-inherited-fd-bridge | Complete real ASB-to-asb-tui inherited-fd broker qualification after the PTY seam exists. | Await hosted checks for repaired PR #412 exact head 1694421; then independent review of qualification workflow, ordered typed bootstrap, and bounded cleanup. |
+| P0 | [AR-1590](../tasks/AR-1590.md): Inherited-fd cross-repository qualification | ar1590-inherited-fd-bridge | Complete real ASB-to-asb-tui inherited-fd broker qualification after the PTY seam exists. | Wait for ASB AR-1592 catalog compatibility, then rerun PR #412 against the exact released TUI with ordered catalog/bootstrap evidence and bounded cleanup. |
 
 ### Blocked (82)
 
@@ -259,7 +263,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (51)
+### Planned (52)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -283,6 +287,7 @@
 | P0 | [AR-1588](../tasks/AR-1588.md): ASB development-channel command surface | Unclaimed | Make ASB lifecycle commands consistently select and default the development release channel. | Promote after dependencies are released; implement and qualify consistent --channel selection with default dev across ASB lifecycle commands. |
 | P0 | [AR-1589](../tasks/AR-1589.md): ASB development-channel provenance and fault matrix | Unclaimed | Qualify ASB development-channel identity, metadata integrity, and cleanup failure paths. | Promote after AR-1588; implement the development-channel provenance envelope and adversarial fault matrix without weakening stable verification. |
 | P0 | [AR-1591](../tasks/AR-1591.md): Post-release fresh-clone ASB consumption | Unclaimed | Qualify fresh-clone consumption of the released development ASB journey. | Promote after the inherited-fd bridge and final cross-project qualification are released; run the fresh-clone post-release dev-channel journey and record exact evidence. |
+| P0 | [AR-1592](../tasks/AR-1592.md): ASB control catalog compatibility | Unclaimed | Add ASB control-protocol catalog compatibility required by the released asb-tui bootstrap journey. | Implement the common-version control protocol and real backend responses for BenchmarkCatalog and MeasurementCatalog, then publish an exact signed PR and hosted evidence. |
 | P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
 | P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
 | P1 | [AR-0810](../tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Unclaimed | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project&#x27;s GitHub Pages site. |
@@ -540,6 +545,3 @@
 | P0 | [AR-1532](../tasks/AR-1532.md): AR-1307 unsigned-development runner repair | Unclaimed | Repair and independently qualify the provider-free unsigned-development runner path associated with AR-1307 without changing formal limits or evidence gates. | Promote and claim; rerun the provider-free unsigned-development AR-1307 runner path on the v0.3.53-compatible state, then record non-qualifying evidence. |
 | P0 | [AR-1533](../tasks/AR-1533.md): AR-1308 unsigned-development QEMU fixture repair | Unclaimed | Repair the provider-free unsigned-development QEMU fixture for AR-1308 and make its diagnostics, cleanup and non-qualification boundary reliable. | Promote and claim; rerun the provider-free unsigned-development AR-1308 QEMU fixture on the v0.3.53-compatible state and preserve qualification_authorized=false. |
 | P0 | [AR-1534](../tasks/AR-1534.md): Coordinator vendor integrity repair | Unclaimed | Immutable coordinator v0.3.53 vendor boundary and ASB lifecycle/session/SQLite compatibility are green; close with successor receipts. | Promote and close from AR-1547/AR-1549: v0.3.53 vendor verification and all compatibility gates are green; preserve the separate formal qualification boundary. |
-| P0 | [AR-1536](../tasks/AR-1536.md): AR-1308 capacity and preflight handoff repair | Unclaimed | Repair AR-1308 capacity/preflight handoff after the unsigned-development fixture and approved vendor boundary are complete. | No development action remains. Preserve the unsigned-development handoff receipt; AR-1531 exact formal inputs remain separate optional formal work and cannot block development. |
-| P0 | [AR-1540](../tasks/AR-1540.md): Session and lifecycle contract compatibility | Unclaimed | Session/checkpoint/recovery compatibility is green against coordinator v0.3.53; close with AR-1549 evidence. | Promote and close from AR-1549&#x27;s v0.3.53 compatibility receipt; no additional ASB-owned session repair remains. |
-| P0 | [AR-1541](../tasks/AR-1541.md): SQLite fence compatibility and isolation | Unclaimed | SQLite/WAL fence compatibility is green against coordinator v0.3.53; close with AR-1549 evidence. | Promote and close from AR-1549&#x27;s v0.3.53 compatibility receipt; no additional ASB-owned SQLite repair remains. |
