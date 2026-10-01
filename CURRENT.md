@@ -7,13 +7,8 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1597](tasks/AR-1597.md): Fault matrix and deterministic runner | Exercise all setup, recording, replay, benchmark, and recovery failure paths with bounded evidence. | Await independent review and hosted checks for PR #420 exact head 829f67f9d3f5cacf1328a0b7297733d0c747dd3c; repair only if checks/review identify a concrete issue. | coordinator-pr420-review |
 | P0 | [AR-1599](tasks/AR-1599.md): Development install provenance and toolchain repair | Repair fresh-user dev installation provenance, toolchain discovery, and atomic publication. | PR #421 exact head c11a51a4af1ae1086b5a98624606e0dff1103670 remains open; hosted checks are running and independent review is required before any protected merge. | ar1199-router-impl |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1597](tasks/AR-1597.md): Fault matrix and deterministic runner | Exercise all setup, recording, replay, benchmark, and recovery failure paths with bounded evidence. | Await independent review and hosted checks for PR #420 exact head 829f67f9d3f5cacf1328a0b7297733d0c747dd3c; repair only if checks/review identify a concrete issue. | - |
 
 ## Blocked
 
