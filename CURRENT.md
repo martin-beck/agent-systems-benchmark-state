@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1596](tasks/AR-1596.md): Cassette and offline lifecycle integration | Provide deterministic cassette recording and provider-free replay for benchmark workloads. | Released: monitor downstream AR-1597 consumption of cassette/offline lifecycle. | ar1496-cassette-lifecycle |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
