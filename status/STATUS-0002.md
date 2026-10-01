@@ -3566,7 +3566,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -3574,7 +3574,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Keep normal development TUI builds within explicit source and artifact quotas. |
-| Next action | PR #423 exact signed head dcdba04 is rebased directly onto protected main 1f0c259; await hosted checks and fresh independent review. |
+| Next action | Release admission after acceptance receipt. |
 
 ### AR-1601 — Development-channel publication and provenance qualification
 
@@ -4272,7 +4272,7 @@ flowchart LR
     end
     subgraph series_16["16 - Additional work"]
         direction TB
-        AR_1600["AR-1600 - Open"]:::status_open
+        AR_1600["AR-1600 - Done"]:::status_done
         AR_1601["AR-1601 - Planned"]:::status_planned
         AR_1602["AR-1602 - Done"]:::status_done
     end
@@ -4590,3 +4590,7 @@ flowchart LR
     AR_0503 --> AR_0508
     AR_0503 --> AR_0509
     AR_0503 --> AR_0510
+    AR_0503 --> AR_0511
+    AR_0503 --> AR_0512
+    AR_0503 --> AR_0513
+    AR_0503 --> AR_0514

@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1600](tasks/AR-1600.md): Bounded development build-artifact staging | Keep normal development TUI builds within explicit source and artifact quotas. | PR #423 exact signed head dcdba04 is rebased directly onto protected main 1f0c259; await hosted checks and fresh independent review. | - |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
