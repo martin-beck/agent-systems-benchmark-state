@@ -213,11 +213,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1609](../tasks/AR-1609.md): Coding-agent adapter catalog and compatibility | Unclaimed | Expose explicit opencode/opendesk adapter compatibility for provider, model, authentication, and benchmark defaults. | Promote after AR-1607 release; implement additive adapter records and compatibility diagnostics. |
+| P0 | [AR-1609](../tasks/AR-1609.md): Coding-agent adapter catalog and compatibility | ar1609_adapter_backend | Expose explicit opencode/opendesk adapter compatibility for provider, model, authentication, and benchmark defaults. | Promote after AR-1607 release; implement additive adapter records and compatibility diagnostics. |
 
 ### Blocked (82)
 

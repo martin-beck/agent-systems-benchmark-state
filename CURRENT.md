@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1609](tasks/AR-1609.md): Coding-agent adapter catalog and compatibility | Expose explicit opencode/opendesk adapter compatibility for provider, model, authentication, and benchmark defaults. | Promote after AR-1607 release; implement additive adapter records and compatibility diagnostics. | - |
+| P0 | [AR-1609](tasks/AR-1609.md): Coding-agent adapter catalog and compatibility | Expose explicit opencode/opendesk adapter compatibility for provider, model, authentication, and benchmark defaults. | Promote after AR-1607 release; implement additive adapter records and compatibility diagnostics. | ar1609_adapter_backend |
 
 ## Blocked
 
