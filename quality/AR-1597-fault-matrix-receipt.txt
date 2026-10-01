@@ -1,0 +1,10 @@
+# AR-1597 acceptance receipt
+
+- Implementation PR: ASB PR #420, final rebased signed/DCO head 39af93e9b0e703e9adb8a3452c9e66a9189b64ea.
+- Base: signed current main 677d990519335139ac64fd06dafba2777d35342c.
+- Protected merge: signed two-parent commit 9c6a69a0f91c2e025a8e99964e0983afaeb60d90, parents 677d990519335139ac64fd06dafba2777d35342c and 39af93e9b0e703e9adb8a3452c9e66a9189b64ea, tree 0f2287abbe6b1c9f63ed4eec0261ab854a36012b.
+- Independent review: APPROVE at exact rebased head 39af93e9.
+- Local evidence: fault-matrix suite 9/9 twice, strict ResourceWarning run, py_compile, diff check, bounded output/workspace/process-group/network tests, and leader-exits-first escaped-marker regression.
+- Hosted evidence: all PR checks passed; all required post-merge workflows for 9c6a69a0 passed, including successful attempt 2 of hosted portability run 36853582145 after an isolated diagnostic failure on attempt 1.
+- Contract evidence: human-readable default output, `--json` machine mode, typed development warnings, strict network isolation, private-root cleanup, descendant kill/reap, and privacy-safe errors.
+- Classification: contract-test/mechanical/environmental; development-only and credential-free.

@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1597.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "bounded-runner", "description": "The fault-matrix runner bounds output, time, workspace, subprocess lifetime, process-group descendants, cleanup, and network isolation with typed privacy-safe results."},
+    {"id": "fault-coverage", "description": "Setup, recording, replay, benchmark, recovery, timeout, output overflow, malformed warning, unavailable isolation, and leader-exits-first descendant cases are exercised deterministically."},
+    {"id": "signed-integration", "description": "The exact reviewed implementation is signed/DCO-certified, independently approved, hosted-green, and merged with signed two-parent topology."},
+    {"id": "development-boundary", "description": "Missing authentication, signatures, and key-management services are visible warning-only development outcomes; production fail-closed behavior remains covered."}
+  ],
+  "definition_of_done": [
+    "PR #420 is merged at signed two-parent commit 9c6a69a0 on current main.",
+    "All exact post-merge workflows pass, including the rerun of hosted process diagnostics.",
+    "The runner is ready for paired TUI fault/recovery qualification."
+  ],
+  "inputs": [
+    {"id": "implementation", "description": "PR #420 exact final head 39af93e9 and signed merge 9c6a69a0."}
+  ],
+  "outputs": [
+    {"id": "fault-matrix-runner", "description": "Deterministic bounded fault-matrix runner and manifest for ASB/TUI development qualification."}
+  ],
+  "allowed_tools": ["python3", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": [],
+  "required_evidence_classes": ["contract-test", "mechanical", "environmental"],
+  "gates": [
+    {"id": "hosted", "description": "All required workflows pass on signed merge 9c6a69a0."},
+    {"id": "policy", "description": "Signed merge parents/tree and repository policy/DCO are verified."}
+  ]
+}
