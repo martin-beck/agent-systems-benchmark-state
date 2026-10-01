@@ -3560,7 +3560,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair fresh-user dev installation provenance, toolchain discovery, and atomic publication. |
-| Next action | Promote after the dependency releases and repair the current-main dev materializer/toolchain discovery before TUI qualification. |
+| Next action | Repair tui.rs dev materializer: remove ambient PATH cargo fallback, verify cloned HEAD equals ls-remote main commit, and roll back newly published dev version on metadata/publication failure; add focused tests, then run CLI gates. |
 
 
 ## Dependency graph
@@ -4603,7 +4603,3 @@ flowchart LR
     AR_0604 --> AR_1015
     AR_0701 --> AR_0317
     AR_0701 --> AR_0702
-    AR_0701 --> AR_0703
-    AR_0701 --> AR_0704
-    AR_0701 --> AR_0707
-    AR_0701 --> AR_0820
