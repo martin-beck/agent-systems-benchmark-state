@@ -3552,15 +3552,15 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1199-router-impl |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Repair fresh-user dev installation provenance, toolchain discovery, and atomic publication. |
-| Next action | Release admission is blocked by legacy/incomplete spec_acceptance metadata; preserve done implementation evidence and reconcile the spec gate through coordinator process before retrying release. |
+| Next action | Release the completed exact-provenance implementation after coordinator acceptance of the versioned specification and receipt. |
 
 
 ## Dependency graph
@@ -4226,7 +4226,7 @@ flowchart LR
         AR_1596["AR-1596 - Done"]:::status_done
         AR_1597["AR-1597 - Open"]:::status_open
         AR_1598["AR-1598 - Planned"]:::status_planned
-        AR_1599["AR-1599 - In progress"]:::status_in_progress
+        AR_1599["AR-1599 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4603,3 +4603,7 @@ flowchart LR
     AR_0604 --> AR_1015
     AR_0701 --> AR_0317
     AR_0701 --> AR_0702
+    AR_0701 --> AR_0703
+    AR_0701 --> AR_0704
+    AR_0701 --> AR_0707
+    AR_0701 --> AR_0820

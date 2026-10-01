@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1599](tasks/AR-1599.md): Development install provenance and toolchain repair | Repair fresh-user dev installation provenance, toolchain discovery, and atomic publication. | Release admission is blocked by legacy/incomplete spec_acceptance metadata; preserve done implementation evidence and reconcile the spec gate through coordinator process before retrying release. | ar1199-router-impl |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
