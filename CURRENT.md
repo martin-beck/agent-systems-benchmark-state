@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1567](tasks/AR-1567.md): ASB development trusted toolchain discovery | Implement trusted development cargo discovery | Obtain independent review and hosted green checks for PR #401 at 97929864fc7232d671a5b63dcb77261a1742fd97 | ar1567-toolchain-discovery |
-| P0 | [AR-1569](tasks/AR-1569.md): ASB source-archive identity repair | Repair merged identity generation so stable/source-archive ASB builds work without a Git checkout. | Promote and repair source-archive/stable builds so missing .git metadata cannot break non-development builds while development identity remains exact. | ar1569-archive-repair |
+| P0 | [AR-1569](tasks/AR-1569.md): ASB source-archive identity repair | Repair merged identity generation so stable/source-archive ASB builds work without a Git checkout. | PR #402 at exact head 459282047f8c03d3a9aa0c28cac6abec6437f7af; await independent review and all hosted checks, then merge/release or repair. | ar1569-archive-repair |
 
 ## Blocked
 

@@ -3280,7 +3280,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair merged identity generation so stable/source-archive ASB builds work without a Git checkout. |
-| Next action | Promote and repair source-archive/stable builds so missing .git metadata cannot break non-development builds while development identity remains exact. |
+| Next action | PR #402 at exact head 459282047f8c03d3a9aa0c28cac6abec6437f7af; await independent review and all hosted checks, then merge/release or repair. |
 
 
 ## Dependency graph
