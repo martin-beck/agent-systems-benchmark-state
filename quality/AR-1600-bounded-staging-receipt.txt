@@ -1,0 +1,10 @@
+# AR-1600 acceptance receipt
+
+- Implementation PR: ASB PR #423, exact signed/DCO head dcdba04e01cba36f668358bf76aba22b99513deb.
+- Implementation merge: signed two-parent merge c94586d0751b144523fcbe05b81e3fbc81a44af9 on protected main.
+- Independent review: exact-head review found no source blocker; quota aggregation, cleanup/reap, private artifact modes, and regression coverage were verified.
+- Hosted PR evidence: all required PR checks passed, including Rust, policy/coverage, aarch64, formal, credential-free, fault, portability, and broker checks.
+- Post-merge evidence: all nine exact-main workflows for c94586d passed: credential-free 36868453812, formal 36868453757 (retry after transient Temurin HTTP 504), broker 36868453674, hosted portability 36868453611, aarch64 36868453775, repository quality 36868453854, fault 36868453709, Rust 36868453667, headers 36868453614.
+- Local evidence: focused TUI suite 48/48, cargo fmt, clippy, and diff checks passed.
+- Contract evidence: source and private Cargo target roots are independently quota-bound; process groups are killed/reaped on timeout, scan, quota, and staging failure; artifact trees are private and cleaned atomically.
+- Classification: contract-test/mechanical/hosted; development-only missing authentication, signatures, and key management remain warning-only and non-blocking.
