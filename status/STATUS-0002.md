@@ -3492,6 +3492,62 @@
 | Summary | Keep the real cross-repository qualification while preserving the enforced workspace coverage floor. |
 | Next action | Await hosted checks on 63e16ee, then obtain a fresh independent exact-head review and release the repair seam. |
 
+### AR-1595 — Development setup capability contract
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Expose provider, authentication, model, agent, and default-selection capabilities for the development wizard. |
+| Next action | Implement the versioned development setup capability contract after the catalog alignment releases. |
+
+### AR-1596 — Cassette and offline lifecycle integration
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Provide deterministic cassette recording and provider-free replay for benchmark workloads. |
+| Next action | Implement cassette recording/sealing and offline replay lifecycle after the setup capability contract is released. |
+
+### AR-1597 — Fault matrix and deterministic runner
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Exercise all setup, recording, replay, benchmark, and recovery failure paths with bounded evidence. |
+| Next action | Build the isolated fault-matrix runner once cassette lifecycle behavior is released. |
+
+### AR-1598 — Fresh-user development qualification
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Prove install-to-wizard-to-benchmark-to-offline-comparison works for a fresh development user. |
+| Next action | Run the disposable fresh-user default-dev qualification after the fault-matrix runner is released. |
+
 
 ## Dependency graph
 
@@ -4152,6 +4208,10 @@ flowchart LR
         AR_1592["AR-1592 - In progress"]:::status_in_progress
         AR_1593["AR-1593 - Planned"]:::status_planned
         AR_1594["AR-1594 - In progress"]:::status_in_progress
+        AR_1595["AR-1595 - Planned"]:::status_planned
+        AR_1596["AR-1596 - Planned"]:::status_planned
+        AR_1597["AR-1597 - Planned"]:::status_planned
+        AR_1598["AR-1598 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4549,89 +4609,3 @@ flowchart LR
     AR_0801 --> AR_0840
     AR_0801 --> AR_0842
     AR_0801 --> AR_0847
-    AR_0801 --> AR_0849
-    AR_0801 --> AR_0869
-    AR_0802 --> AR_0808
-    AR_0802 --> AR_0809
-    AR_0802 --> AR_0872
-    AR_0802 --> AR_0903
-    AR_0803 --> AR_0804
-    AR_0803 --> AR_0805
-    AR_0803 --> AR_0813
-    AR_0803 --> AR_0819
-    AR_0803 --> AR_0821
-    AR_0803 --> AR_1010
-    AR_0803 --> AR_1017
-    AR_0803 --> AR_1023
-    AR_0804 --> AR_0805
-    AR_0804 --> AR_0807
-    AR_0804 --> AR_0809
-    AR_0804 --> AR_0812
-    AR_0804 --> AR_0817
-    AR_0804 --> AR_0819
-    AR_0804 --> AR_0820
-    AR_0804 --> AR_0821
-    AR_0804 --> AR_0870
-    AR_0804 --> AR_1010
-    AR_0804 --> AR_1014
-    AR_0804 --> AR_1017
-    AR_0804 --> AR_1025
-    AR_0805 --> AR_0806
-    AR_0805 --> AR_0807
-    AR_0805 --> AR_0809
-    AR_0805 --> AR_0812
-    AR_0805 --> AR_0815
-    AR_0805 --> AR_0817
-    AR_0805 --> AR_0821
-    AR_0805 --> AR_0870
-    AR_0805 --> AR_1010
-    AR_0805 --> AR_1014
-    AR_0805 --> AR_1017
-    AR_0805 --> AR_1025
-    AR_0806 --> AR_0807
-    AR_0806 --> AR_0809
-    AR_0806 --> AR_0812
-    AR_0806 --> AR_0817
-    AR_0806 --> AR_0875
-    AR_0806 --> AR_1010
-    AR_0806 --> AR_1017
-    AR_0806 --> AR_1025
-    AR_0807 --> AR_0809
-    AR_0807 --> AR_0823
-    AR_0807 --> AR_0873
-    AR_0807 --> AR_0903
-    AR_0807 --> AR_1012
-    AR_0808 --> AR_0810
-    AR_0808 --> AR_0811
-    AR_0809 --> AR_0810
-    AR_0809 --> AR_0811
-    AR_0810 --> AR_0811
-    AR_0811 --> AR_0903
-    AR_0812 --> AR_0807
-    AR_0812 --> AR_0820
-    AR_0812 --> AR_1033
-    AR_0813 --> AR_0814
-    AR_0813 --> AR_0818
-    AR_0813 --> AR_1288
-    AR_0814 --> AR_0815
-    AR_0814 --> AR_0818
-    AR_0815 --> AR_0816
-    AR_0815 --> AR_0817
-    AR_0815 --> AR_0818
-    AR_0816 --> AR_0817
-    AR_0816 --> AR_0818
-    AR_0817 --> AR_0809
-    AR_0817 --> AR_0818
-    AR_0818 --> AR_0903
-    AR_0819 --> AR_0809
-    AR_0819 --> AR_0815
-    AR_0819 --> AR_0816
-    AR_0819 --> AR_0817
-    AR_0819 --> AR_0818
-    AR_0820 --> AR_0821
-    AR_0820 --> AR_0822
-    AR_0820 --> AR_1024
-    AR_0821 --> AR_0808
-    AR_0821 --> AR_0809
-    AR_0821 --> AR_0822
-    AR_0821 --> AR_0823

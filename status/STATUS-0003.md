@@ -1,5 +1,91 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+    AR_0801 --> AR_0849
+    AR_0801 --> AR_0869
+    AR_0802 --> AR_0808
+    AR_0802 --> AR_0809
+    AR_0802 --> AR_0872
+    AR_0802 --> AR_0903
+    AR_0803 --> AR_0804
+    AR_0803 --> AR_0805
+    AR_0803 --> AR_0813
+    AR_0803 --> AR_0819
+    AR_0803 --> AR_0821
+    AR_0803 --> AR_1010
+    AR_0803 --> AR_1017
+    AR_0803 --> AR_1023
+    AR_0804 --> AR_0805
+    AR_0804 --> AR_0807
+    AR_0804 --> AR_0809
+    AR_0804 --> AR_0812
+    AR_0804 --> AR_0817
+    AR_0804 --> AR_0819
+    AR_0804 --> AR_0820
+    AR_0804 --> AR_0821
+    AR_0804 --> AR_0870
+    AR_0804 --> AR_1010
+    AR_0804 --> AR_1014
+    AR_0804 --> AR_1017
+    AR_0804 --> AR_1025
+    AR_0805 --> AR_0806
+    AR_0805 --> AR_0807
+    AR_0805 --> AR_0809
+    AR_0805 --> AR_0812
+    AR_0805 --> AR_0815
+    AR_0805 --> AR_0817
+    AR_0805 --> AR_0821
+    AR_0805 --> AR_0870
+    AR_0805 --> AR_1010
+    AR_0805 --> AR_1014
+    AR_0805 --> AR_1017
+    AR_0805 --> AR_1025
+    AR_0806 --> AR_0807
+    AR_0806 --> AR_0809
+    AR_0806 --> AR_0812
+    AR_0806 --> AR_0817
+    AR_0806 --> AR_0875
+    AR_0806 --> AR_1010
+    AR_0806 --> AR_1017
+    AR_0806 --> AR_1025
+    AR_0807 --> AR_0809
+    AR_0807 --> AR_0823
+    AR_0807 --> AR_0873
+    AR_0807 --> AR_0903
+    AR_0807 --> AR_1012
+    AR_0808 --> AR_0810
+    AR_0808 --> AR_0811
+    AR_0809 --> AR_0810
+    AR_0809 --> AR_0811
+    AR_0810 --> AR_0811
+    AR_0811 --> AR_0903
+    AR_0812 --> AR_0807
+    AR_0812 --> AR_0820
+    AR_0812 --> AR_1033
+    AR_0813 --> AR_0814
+    AR_0813 --> AR_0818
+    AR_0813 --> AR_1288
+    AR_0814 --> AR_0815
+    AR_0814 --> AR_0818
+    AR_0815 --> AR_0816
+    AR_0815 --> AR_0817
+    AR_0815 --> AR_0818
+    AR_0816 --> AR_0817
+    AR_0816 --> AR_0818
+    AR_0817 --> AR_0809
+    AR_0817 --> AR_0818
+    AR_0818 --> AR_0903
+    AR_0819 --> AR_0809
+    AR_0819 --> AR_0815
+    AR_0819 --> AR_0816
+    AR_0819 --> AR_0817
+    AR_0819 --> AR_0818
+    AR_0820 --> AR_0821
+    AR_0820 --> AR_0822
+    AR_0820 --> AR_1024
+    AR_0821 --> AR_0808
+    AR_0821 --> AR_0809
+    AR_0821 --> AR_0822
+    AR_0821 --> AR_0823
     AR_0821 --> AR_1024
     AR_0821 --> AR_1441
     AR_0822 --> AR_0808
@@ -1047,10 +1133,17 @@
     AR_1588 --> AR_1589
     AR_1589 --> AR_1591
     AR_1590 --> AR_1591
+    AR_1590 --> AR_1596
+    AR_1591 --> AR_1598
     AR_1592 --> AR_1590
     AR_1592 --> AR_1593
+    AR_1592 --> AR_1595
     AR_1593 --> AR_1590
+    AR_1593 --> AR_1595
     AR_1594 --> AR_1590
+    AR_1595 --> AR_1596
+    AR_1596 --> AR_1597
+    AR_1597 --> AR_1598
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -1489,10 +1582,3 @@
 | [AR-1398](../tasks/AR-1398-signed-protected-main-recovery.md) | [AR-1337](../tasks/AR-1337-protected-main-merge-tree-repair-openrouter.md) | [AR-1421](../tasks/AR-1421-protected-main-literature-merge-race.md) |
 | [AR-1399](../tasks/AR-1399-literature-workload-registry-completeness.md) | [AR-1394](../tasks/AR-1394-literature-workload-registry.md) | [AR-1396](../tasks/AR-1396-literature-workload-selection.md), [AR-1400](../tasks/AR-1400-literature-catalog-activation.md), [AR-1408](../tasks/AR-1408-literature-inventory-closure.md) |
 | [AR-1400](../tasks/AR-1400-literature-catalog-activation.md) | [AR-1396](../tasks/AR-1396-literature-workload-selection.md), [AR-1399](../tasks/AR-1399-literature-workload-registry-completeness.md) | [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md), [AR-1404](../tasks/AR-1404-literature-documentation-matrix.md), [AR-1408](../tasks/AR-1408-literature-inventory-closure.md) |
-| [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md) | [AR-1395](../tasks/AR-1395-literature-workload-adapters.md), [AR-1400](../tasks/AR-1400-literature-catalog-activation.md) | [AR-1402](../tasks/AR-1402-literature-cli-dispatch-integration.md), [AR-1409](../tasks/AR-1409-interactive-literature-adapters.md), [AR-1411](../tasks/AR-1411-repository-terminal-adapters.md), [AR-1412](../tasks/AR-1412-code-generation-control-adapters.md), [AR-1413](../tasks/AR-1413-long-horizon-performance-adapters.md), [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md) |
-| [AR-1402](../tasks/AR-1402-literature-cli-dispatch-integration.md) | [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md) | [AR-1403](../tasks/AR-1403-literature-external-qualification.md), [AR-1404](../tasks/AR-1404-literature-documentation-matrix.md), [AR-1410](../tasks/AR-1410-literature-selector-completeness.md), [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md) |
-| [AR-1403](../tasks/AR-1403-literature-external-qualification.md) | [AR-1402](../tasks/AR-1402-literature-cli-dispatch-integration.md) | [AR-1423](../tasks/AR-1423-literature-docs-registry-reconciliation.md) |
-| [AR-1404](../tasks/AR-1404-literature-documentation-matrix.md) | [AR-1400](../tasks/AR-1400-literature-catalog-activation.md), [AR-1402](../tasks/AR-1402-literature-cli-dispatch-integration.md) | [AR-1410](../tasks/AR-1410-literature-selector-completeness.md) |
-| [AR-1405](../tasks/AR-1405-open-dependency-pr-reconciliation.md) | None | [AR-1406](../tasks/AR-1406-action-pin-policy-migration.md), [AR-1407](../tasks/AR-1407-sha2-compatibility.md) |
-| [AR-1406](../tasks/AR-1406-action-pin-policy-migration.md) | [AR-1405](../tasks/AR-1405-open-dependency-pr-reconciliation.md) | [AR-1414](../tasks/AR-1414-action-pin-followup.md) |
-| [AR-1407](../tasks/AR-1407-sha2-compatibility.md) | [AR-1405](../tasks/AR-1405-open-dependency-pr-reconciliation.md) | None |
