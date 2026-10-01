@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1604](tasks/AR-1604.md): ASB guided command output contract | Make install, wizard, benchmark, recording, replay, comparison, and lifecycle diagnostics simple and consistently human-readable with opt-in JSON. | Promote after AR-1603 acceptance; inventory commands and repair any inconsistent default/--json behavior. | asb1604-output |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |

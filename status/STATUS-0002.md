@@ -3622,11 +3622,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | asb1604-output |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Make install, wizard, benchmark, recording, replay, comparison, and lifecycle diagnostics simple and consistently human-readable with opt-in JSON. |
@@ -4444,7 +4444,7 @@ flowchart LR
         AR_1601["AR-1601 - Done"]:::status_done
         AR_1602["AR-1602 - Done"]:::status_done
         AR_1603["AR-1603 - Done"]:::status_done
-        AR_1604["AR-1604 - In progress"]:::status_in_progress
+        AR_1604["AR-1604 - Done"]:::status_done
         AR_1605["AR-1605 - Done"]:::status_done
         AR_1606["AR-1606 - Done"]:::status_done
         AR_1607["AR-1607 - Done"]:::status_done
@@ -4505,3 +4505,4 @@ flowchart LR
     AR_0101 --> AR_0517
     AR_0101 --> AR_0601
     AR_0101 --> AR_0603
+    AR_0101 --> AR_0801

@@ -224,12 +224,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1604](../tasks/AR-1604.md): ASB guided command output contract | asb1604-output | Make install, wizard, benchmark, recording, replay, comparison, and lifecycle diagnostics simple and consistently human-readable with opt-in JSON. | Promote after AR-1603 acceptance; inventory commands and repair any inconsistent default/--json behavior. |
-
 ### Blocked (82)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -379,7 +373,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (455)
+### Done (456)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
