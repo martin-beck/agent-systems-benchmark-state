@@ -3321,8 +3321,8 @@
 | Owner | ar1572-toolchain-runner |
 | Parent | None |
 | Children | None |
-| Summary | Private reproducible development toolchain runner implemented and proposed in PR #404. |
-| Next action | Run hosted checks and obtain independent review for PR #404 at a269e1a; then merge only after approval. |
+| Summary | Private reproducible development toolchain runner hardened and proposed in PR #404. |
+| Next action | Run hosted checks and obtain independent review for PR #404 at 7e4814a; then merge only after approval. |
 
 ### AR-1573 — ASB development control producer bridge
 
@@ -4723,3 +4723,4 @@ flowchart LR
     AR_1060 --> AR_1160
     AR_1060 --> AR_1227
     AR_1060 --> AR_1310
+    AR_1061 --> AR_1010
