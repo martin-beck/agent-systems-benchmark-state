@@ -217,11 +217,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1598](../tasks/AR-1598.md): Fresh-user development qualification | Unclaimed | Prove install-to-wizard-to-benchmark-to-offline-comparison works for a fresh development user. | Run the disposable fresh-user default-dev qualification after the fault-matrix runner is released. |
+| P0 | [AR-1598](../tasks/AR-1598.md): Fresh-user development qualification | asb1603-acceptance | Prove install-to-wizard-to-benchmark-to-offline-comparison works for a fresh development user. | Run the disposable fresh-user default-dev qualification after the fault-matrix runner is released. |
 
 ### Blocked (82)
 
