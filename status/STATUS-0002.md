@@ -3560,7 +3560,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair fresh-user dev installation provenance, toolchain discovery, and atomic publication. |
-| Next action | PR #421 exact head c11a51a4af1ae1086b5a98624606e0dff1103670 remains open; hosted checks are running and independent review is required before any protected merge. |
+| Next action | Monitor exact post-merge workflows for c193348fbaa382251950040cd16897767c7b8207; release AR-1599 only after every required workflow is green and exact main/tree/parents are verified. |
 
 
 ## Dependency graph
@@ -4602,4 +4602,3 @@ flowchart LR
     AR_0604 --> AR_0602
     AR_0604 --> AR_1015
     AR_0701 --> AR_0317
-    AR_0701 --> AR_0702
