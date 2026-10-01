@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1574](tasks/AR-1574.md): ASB development control transport wiring | Wire the ASB development launch transport to the producer control bridge. | Promote after AR-1573; wire the producer bridge into ASB development launch and rerun exact-head cross-project qualification. | ar1574-transport-wiring |
+| P0 | [AR-1574](tasks/AR-1574.md): ASB development control transport wiring | Wire the ASB development launch transport to the producer control bridge. | Await hosted gates and independent review of PR #406; merge only identical green head, then release AR-1574. | ar1574-transport-wiring |
 
 ## Blocked
 

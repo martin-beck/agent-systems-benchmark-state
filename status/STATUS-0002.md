@@ -3350,7 +3350,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Wire the ASB development launch transport to the producer control bridge. |
-| Next action | Promote after AR-1573; wire the producer bridge into ASB development launch and rerun exact-head cross-project qualification. |
+| Next action | Await hosted gates and independent review of PR #406; merge only identical green head, then release AR-1574. |
 
 
 ## Dependency graph
@@ -4725,3 +4725,4 @@ flowchart LR
     AR_1060 --> AR_1310
     AR_1061 --> AR_1010
     AR_1062 --> AR_1010
+    AR_1062 --> AR_1058
