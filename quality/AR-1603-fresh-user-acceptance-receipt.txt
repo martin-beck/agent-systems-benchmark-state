@@ -1,0 +1,16 @@
+AR-1603 fresh-user wizard and offline benchmark acceptance receipt
+
+ASB exact main: 3d87e99b300def775afcf6d70ce8c0a4872cb591
+TUI exact main: d604dcb3160179e5cdf518c1d40a956c3135a1cc
+
+Paired acceptance evidence:
+- Install/build and disposable setup completed with human-readable output and
+  machine-readable JSON/format projections where supported.
+- Wizard selected provider, model, coding agents, authentication mode, and
+  shared defaults without blocking on development-only missing credentials.
+- Selected/all workload recording sealed a cassette; the TUI runtime authority
+  handoff enabled offline replay with egress denied and comparison output.
+- Cleanup and typed negative paths completed; exact product checks are green.
+
+The standalone ASB CLI intentionally requires a runtime-issued replay authority;
+the paired TUI journey provides that authority rather than bypassing the seam.

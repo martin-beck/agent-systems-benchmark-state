@@ -1,0 +1,15 @@
+AR-1598 fresh-user development qualification receipt
+
+ASB exact main: 3d87e99b300def775afcf6d70ce8c0a4872cb591
+TUI exact main: d604dcb3160179e5cdf518c1d40a956c3135a1cc
+
+Evidence:
+- Fresh XDG roots completed setup, OpenRouter configuration, model and agent/provider selection, and non-blocking development-auth warnings.
+- Two isolated local-mock benchmark runs produced manifests/journals and comparable results.
+- A two-workload recording campaign sealed with complete coverage and offline readiness.
+- Malformed cassette, unknown argument, missing-authority, and recording confirmation negatives failed closed with typed errors.
+- TUI paired journey supplied runtime-issued replay authority and offline replay/comparison evidence.
+- No production credentials, signatures, or key-management services were required.
+
+Independent paired qualification: ASB and TUI acceptance workers passed their
+local suites against exact current heads; hosted product checks passed.
