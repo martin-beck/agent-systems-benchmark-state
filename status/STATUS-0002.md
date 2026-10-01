@@ -3790,11 +3790,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | asb1618-luna |
 | Parent | None |
 | Children | None |
 | Summary | Expose bounded typed benchmark retry/repeat and digest-bound live/offline comparison actions in ASB and TUI. |

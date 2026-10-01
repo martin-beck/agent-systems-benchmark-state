@@ -230,17 +230,12 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1617](../tasks/AR-1617.md): Explicit cassette seal, reopen, and removal operations | asb1617-1618-luna | Add typed seal, interrupted-capture reopen, and bounded development cassette removal across ASB and TUI. | Promote after AR-1614; implement versioned backend/TUI lifecycle operations and stale/terminal negatives. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1618](../tasks/AR-1618.md): Operator retry and live/offline comparison dispatch | Unclaimed | Expose bounded typed benchmark retry/repeat and digest-bound live/offline comparison actions in ASB and TUI. | Promote after AR-1614; implement paired retry/comparison control and stale/idempotency negatives. |
+| P0 | [AR-1618](../tasks/AR-1618.md): Operator retry and live/offline comparison dispatch | asb1618-luna | Expose bounded typed benchmark retry/repeat and digest-bound live/offline comparison actions in ASB and TUI. | Promote after AR-1614; implement paired retry/comparison control and stale/idempotency negatives. |
 
 ### Blocked (82)
 
