@@ -3324,6 +3324,34 @@
 | Summary | Provide the approved private toolchain runner needed for credential-free ASB development setup. |
 | Next action | Promote and provide a private, reproducible development toolchain runner accepted by the ASB resolver for clean qualification and first-time setup. |
 
+### AR-1573 — ASB development control producer bridge
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Expose the ASB-side development control producer bridge required by the asb-tui adopted stream. |
+| Next action | Promote and expose a bounded ASB development producer-side control handshake/backend/result bridge compatible with asb-tui broker adoption. |
+
+### AR-1574 — ASB development control transport wiring
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Wire the ASB development launch transport to the producer control bridge. |
+| Next action | Promote after AR-1573; wire the producer bridge into ASB development launch and rerun exact-head cross-project qualification. |
+
 
 ## Dependency graph
 
@@ -3972,6 +4000,8 @@ flowchart LR
         AR_1570["AR-1570 - Done"]:::status_done
         AR_1571["AR-1571 - Blocked"]:::status_blocked
         AR_1572["AR-1572 - In progress"]:::status_in_progress
+        AR_1573["AR-1573 - Planned"]:::status_planned
+        AR_1574["AR-1574 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4692,48 +4722,3 @@ flowchart LR
     AR_1060 --> AR_1025
     AR_1060 --> AR_1160
     AR_1060 --> AR_1227
-    AR_1060 --> AR_1310
-    AR_1061 --> AR_1010
-    AR_1062 --> AR_1010
-    AR_1062 --> AR_1058
-    AR_1062 --> AR_1061
-    AR_1100 --> AR_1120
-    AR_1100 --> AR_1228
-    AR_1100 --> AR_1230
-    AR_1100 --> AR_1231
-    AR_1100 --> AR_1232
-    AR_1100 --> AR_1233
-    AR_1100 --> AR_1234
-    AR_1100 --> AR_1236
-    AR_1100 --> AR_1238
-    AR_1100 --> AR_1328
-    AR_1110 --> AR_1130
-    AR_1120 --> AR_1110
-    AR_1130 --> AR_1140
-    AR_1130 --> AR_1150
-    AR_1140 --> AR_0808
-    AR_1140 --> AR_0823
-    AR_1140 --> AR_1180
-    AR_1150 --> AR_1151
-    AR_1151 --> AR_0808
-    AR_1151 --> AR_1160
-    AR_1151 --> AR_1227
-    AR_1151 --> AR_1310
-    AR_1151 --> AR_1496
-    AR_1160 --> AR_1034
-    AR_1160 --> AR_1170
-    AR_1160 --> AR_1227
-    AR_1170 --> AR_0807
-    AR_1170 --> AR_0809
-    AR_1170 --> AR_0823
-    AR_1170 --> AR_0873
-    AR_1170 --> AR_1011
-    AR_1170 --> AR_1026
-    AR_1170 --> AR_1031
-    AR_1170 --> AR_1032
-    AR_1170 --> AR_1035
-    AR_1170 --> AR_1180
-    AR_1180 --> AR_0809
-    AR_1190 --> AR_1191
-    AR_1190 --> AR_1198
-    AR_1190 --> AR_1199

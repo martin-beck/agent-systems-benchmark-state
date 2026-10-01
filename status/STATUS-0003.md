@@ -1,5 +1,50 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+    AR_1060 --> AR_1310
+    AR_1061 --> AR_1010
+    AR_1062 --> AR_1010
+    AR_1062 --> AR_1058
+    AR_1062 --> AR_1061
+    AR_1100 --> AR_1120
+    AR_1100 --> AR_1228
+    AR_1100 --> AR_1230
+    AR_1100 --> AR_1231
+    AR_1100 --> AR_1232
+    AR_1100 --> AR_1233
+    AR_1100 --> AR_1234
+    AR_1100 --> AR_1236
+    AR_1100 --> AR_1238
+    AR_1100 --> AR_1328
+    AR_1110 --> AR_1130
+    AR_1120 --> AR_1110
+    AR_1130 --> AR_1140
+    AR_1130 --> AR_1150
+    AR_1140 --> AR_0808
+    AR_1140 --> AR_0823
+    AR_1140 --> AR_1180
+    AR_1150 --> AR_1151
+    AR_1151 --> AR_0808
+    AR_1151 --> AR_1160
+    AR_1151 --> AR_1227
+    AR_1151 --> AR_1310
+    AR_1151 --> AR_1496
+    AR_1160 --> AR_1034
+    AR_1160 --> AR_1170
+    AR_1160 --> AR_1227
+    AR_1170 --> AR_0807
+    AR_1170 --> AR_0809
+    AR_1170 --> AR_0823
+    AR_1170 --> AR_0873
+    AR_1170 --> AR_1011
+    AR_1170 --> AR_1026
+    AR_1170 --> AR_1031
+    AR_1170 --> AR_1032
+    AR_1170 --> AR_1035
+    AR_1170 --> AR_1180
+    AR_1180 --> AR_0809
+    AR_1190 --> AR_1191
+    AR_1190 --> AR_1198
+    AR_1190 --> AR_1199
     AR_1190 --> AR_1299
     AR_1190 --> AR_1316
     AR_1190 --> AR_1498
@@ -752,6 +797,8 @@
     AR_1568 --> AR_1569
     AR_1568 --> AR_1570
     AR_1570 --> AR_1571
+    AR_1570 --> AR_1573
+    AR_1573 --> AR_1574
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -1216,7 +1263,3 @@
 | [AR-1424](../tasks/AR-1424-all-literature-selector-campaign.md) | [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md), [AR-1420](../tasks/AR-1420-literature-workload-campaign-integration.md), [AR-1423](../tasks/AR-1423-literature-docs-registry-reconciliation.md), [AR-1430](../tasks/AR-1430-literature-workload-catalog-gap-closure.md) | [AR-1425](../tasks/AR-1425-literature-workload-release-readiness.md) |
 | [AR-1425](../tasks/AR-1425-literature-workload-release-readiness.md) | [AR-1417](../tasks/AR-1417-interactive-stateful-literature-workloads.md), [AR-1418](../tasks/AR-1418-tool-use-reliability-safety-workloads.md), [AR-1424](../tasks/AR-1424-all-literature-selector-campaign.md) | [AR-1426](../tasks/AR-1426-evolving-literature-window-refresh.md) |
 | [AR-1426](../tasks/AR-1426-evolving-literature-window-refresh.md) | [AR-1423](../tasks/AR-1423-literature-docs-registry-reconciliation.md), [AR-1425](../tasks/AR-1425-literature-workload-release-readiness.md) | None |
-| [AR-1427](../tasks/AR-1427-protected-main-merge-tree-requalification.md) | [AR-1421](../tasks/AR-1421-protected-main-literature-merge-race.md) | [AR-1431](../tasks/AR-1431-protected-main-stale-base-repair.md) |
-| [AR-1430](../tasks/AR-1430-literature-workload-catalog-gap-closure.md) | [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md), [AR-1423](../tasks/AR-1423-literature-docs-registry-reconciliation.md) | [AR-1424](../tasks/AR-1424-all-literature-selector-campaign.md) |
-| [AR-1431](../tasks/AR-1431-protected-main-stale-base-repair.md) | [AR-1427](../tasks/AR-1427-protected-main-merge-tree-requalification.md) | None |
-| [AR-1432](../tasks/AR-1432-local-openrouter-execution-bridge.md) | [AR-1327](../tasks/AR-1327-openrouter-adapter-parity.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1341](../tasks/AR-1341-runtime-observed-namespace-repair.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md), [AR-1385](../tasks/AR-1385-runtime-live-dispatch-source.md), [AR-1388](../tasks/AR-1388-runtime-authority-materializer.md), [AR-1393](../tasks/AR-1393-local-provider-authority-provisioning.md) | None |
