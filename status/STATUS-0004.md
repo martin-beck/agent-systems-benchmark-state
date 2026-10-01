@@ -135,18 +135,13 @@
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1566](../tasks/AR-1566.md): ASB development broker handoff integration | ar1566-broker-handoff | Wire ASB development launch through the authenticated asb-tui broker handoff seam. | Promote and implement the development broker handoff seam after the asb-tui descriptor contract is available; add exact-head integration tests. |
 | P0 | [AR-1567](../tasks/AR-1567.md): ASB development trusted toolchain discovery | ar1567-toolchain-discovery | Implement trusted development cargo discovery | Obtain independent review and hosted green checks for PR #401 at 97929864fc7232d671a5b63dcb77261a1742fd97 |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1569](../tasks/AR-1569.md): ASB source-archive identity repair | Unclaimed | Repair merged identity generation so stable/source-archive ASB builds work without a Git checkout. | Promote and repair source-archive/stable builds so missing .git metadata cannot break non-development builds while development identity remains exact. |
+| P0 | [AR-1569](../tasks/AR-1569.md): ASB source-archive identity repair | ar1569-archive-repair | Repair merged identity generation so stable/source-archive ASB builds work without a Git checkout. | Promote and repair source-archive/stable builds so missing .git metadata cannot break non-development builds while development identity remains exact. |
 
 ### Blocked (80)
 
@@ -540,3 +535,4 @@
 | P1 | [AR-0103](../tasks/AR-0103-sandbox-runtime.md): Implement isolated execution and resource leases | Unclaimed | Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets. | Release AR-0103 done after exact-main local and hosted post-merge verification. |
 | P1 | [AR-0104](../tasks/AR-0104-durable-results.md): Implement durable run storage and recovery | Unclaimed | Persist manifests, event streams, artifact hashes and recoverable execution intentions. | Await exact-head PR 6 CI and independent immutable-head review; repair findings before coordinator integration. |
 | P1 | [AR-0201](../tasks/AR-0201-portable-metrics.md): Collect portable system and session metrics | Unclaimed | Collect procfs and cgroup v2 CPU, memory, I/O, faults, pressure and throttling. | Run final state reconcile/live doctor/full validation, then release AR-0201 done and explicitly return the Cargo workspace/lock fence. |
+| P1 | [AR-0203](../tasks/AR-0203-statistical-analysis.md): Implement statistical and SLO assessment | Unclaimed | Compute latency distributions, quality/throughput intervals and evidence-aware SLO results. | Create and push reviewed signed+DCO no-ff merge of exact head 3bcfd85; verify PR merge identity, then run exact-main local and hosted post-merge checks. |
