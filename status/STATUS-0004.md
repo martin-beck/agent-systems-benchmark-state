@@ -190,16 +190,11 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1597](../tasks/AR-1597.md): Fault matrix and deterministic runner | ar1199-router-impl | Exercise all setup, recording, replay, benchmark, and recovery failure paths with bounded evidence. | Await independent review and hosted checks for PR #420 exact head 829f67f9d3f5cacf1328a0b7297733d0c747dd3c; repair only if checks/review identify a concrete issue. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
+| P0 | [AR-1597](../tasks/AR-1597.md): Fault matrix and deterministic runner | Unclaimed | Exercise all setup, recording, replay, benchmark, and recovery failure paths with bounded evidence. | Await independent review and hosted checks for PR #420 exact head 829f67f9d3f5cacf1328a0b7297733d0c747dd3c; repair only if checks/review identify a concrete issue. |
 | P0 | [AR-1599](../tasks/AR-1599.md): Development install provenance and toolchain repair | Unclaimed | Repair fresh-user dev installation provenance, toolchain discovery, and atomic publication. | Promote after the dependency releases and repair the current-main dev materializer/toolchain discovery before TUI qualification. |
 
 ### Blocked (82)

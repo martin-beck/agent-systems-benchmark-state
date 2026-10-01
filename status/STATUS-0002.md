@@ -3524,11 +3524,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | open |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1199-router-impl |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Exercise all setup, recording, replay, benchmark, and recovery failure paths with bounded evidence. |
@@ -4224,7 +4224,7 @@ flowchart LR
         AR_1594["AR-1594 - Done"]:::status_done
         AR_1595["AR-1595 - Done"]:::status_done
         AR_1596["AR-1596 - Done"]:::status_done
-        AR_1597["AR-1597 - In progress"]:::status_in_progress
+        AR_1597["AR-1597 - Open"]:::status_open
         AR_1598["AR-1598 - Planned"]:::status_planned
         AR_1599["AR-1599 - Open"]:::status_open
     end
@@ -4607,3 +4607,4 @@ flowchart LR
     AR_0701 --> AR_0704
     AR_0701 --> AR_0707
     AR_0701 --> AR_0820
+    AR_0701 --> AR_0848
