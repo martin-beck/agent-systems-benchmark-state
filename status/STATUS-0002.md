@@ -3434,7 +3434,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Complete real ASB-to-asb-tui inherited-fd broker qualification after the PTY seam exists. |
-| Next action | Promote after the asb-tui PTY seam is released; complete non-ignored exact-binary inherited-fd wire qualification and merge/release the bridge successor. |
+| Next action | Repair PR #412 at 0762cf2: qualify exact TUI binary in hosted CI and complete bounded ordered bootstrap/fault evidence before independent re-review. |
 
 ### AR-1591 — Post-release fresh-clone ASB consumption
 
@@ -4664,3 +4664,4 @@ flowchart LR
     AR_0871 --> AR_1150
     AR_0872 --> AR_0808
     AR_0872 --> AR_0809
+    AR_0872 --> AR_0873
