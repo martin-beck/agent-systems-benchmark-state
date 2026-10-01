@@ -191,7 +191,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1596](../tasks/AR-1596.md): Cassette and offline lifecycle integration | ar1496-cassette-lifecycle | Provide deterministic cassette recording and provider-free replay for benchmark workloads. | PR418 merged at 23ca7ba but protected-main topology policy rejected its squash publication. Obtain independent approval and all hosted checks for focused PR #419 at a64f1f5, then merge PR419 with a real two-parent --merge commit before releasing AR-1596. |
+| P0 | [AR-1596](../tasks/AR-1596.md): Cassette and offline lifecycle integration | ar1496-cassette-lifecycle | Provide deterministic cassette recording and provider-free replay for benchmark workloads. | Post-merge main 3f95bfff has policy/quality green but aarch64 portability failed one pre-existing goose diagnostic/symlink test (199 passed, 1 failed); failed job rerun requested. Release AR-1596 only after rerun and all required main checks pass. |
 
 ### Blocked (82)
 

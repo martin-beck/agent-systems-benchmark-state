@@ -3518,7 +3518,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Provide deterministic cassette recording and provider-free replay for benchmark workloads. |
-| Next action | PR418 merged at 23ca7ba but protected-main topology policy rejected its squash publication. Obtain independent approval and all hosted checks for focused PR #419 at a64f1f5, then merge PR419 with a real two-parent --merge commit before releasing AR-1596. |
+| Next action | Post-merge main 3f95bfff has policy/quality green but aarch64 portability failed one pre-existing goose diagnostic/symlink test (199 passed, 1 failed); failed job rerun requested. Release AR-1596 only after rerun and all required main checks pass. |
 
 ### AR-1597 — Fault matrix and deterministic runner
 
