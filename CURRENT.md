@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1612](tasks/AR-1612.md): Selected-workload recording campaign controls | Expose a simple ASB control operation to record responses for selected or all implemented workloads and make the sealed result available for the next offline run. | Promote after configuration persistence is released; implement typed selected/all workload planning, bounded execution, sealing, and offline activation. | - |
+| P0 | [AR-1612](tasks/AR-1612.md): Selected-workload recording campaign controls | Expose a simple ASB control operation to record responses for selected or all implemented workloads and make the sealed result available for the next offline run. | Promote after configuration persistence is released; implement typed selected/all workload planning, bounded execution, sealing, and offline activation. | asb1612-recording |
 
 ## Blocked
 

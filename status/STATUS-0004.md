@@ -217,11 +217,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1612](../tasks/AR-1612.md): Selected-workload recording campaign controls | Unclaimed | Expose a simple ASB control operation to record responses for selected or all implemented workloads and make the sealed result available for the next offline run. | Promote after configuration persistence is released; implement typed selected/all workload planning, bounded execution, sealing, and offline activation. |
+| P0 | [AR-1612](../tasks/AR-1612.md): Selected-workload recording campaign controls | asb1612-recording | Expose a simple ASB control operation to record responses for selected or all implemented workloads and make the sealed result available for the next offline run. | Promote after configuration persistence is released; implement typed selected/all workload planning, bounded execution, sealing, and offline activation. |
 
 ### Blocked (82)
 
