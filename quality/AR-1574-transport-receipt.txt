@@ -1,0 +1,7 @@
+AR-1574 development control transport receipt
+merged_sha=f23fbc71626974892c101ef939e91b1d38624120
+reviewed_pr_head=0980a1e17682faa5e2b3001c413bf8cbb1039cb3
+pr=https://github.com/martin-beck/agent-systems-benchmark/pull/406
+checks=all required hosted checks passed, including repository quality, platform evidence, Rust verification, formal assurance, fault assurance, and credential-free benchmark path
+review=two independent reviews approved the repaired exact head; catalog refresh actions are fenced with typed CapabilityUnavailable
+local=37 TUI unit tests passed; focused transport, descendant cleanup, process-group, backend projection, mutation-fence, and formatting/clippy checks passed
