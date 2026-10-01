@@ -1,0 +1,16 @@
+AR-1614 immutable dev-channel bundle receipt
+
+Protected product repository: martin-beck/agent-systems-benchmark
+Pull request: #432
+Merged protected-main head: 104910a872c3f6c19a5b7823876e5f7f033f74d1
+Implementation head: 23f1e7941e364c4c53f719ac9b9fe79823c84545
+
+Implementation evidence:
+- Development TUI installs are bound to content-addressed manifests.
+- Missing or mismatched manifests return typed development_installation_invalid diagnostics.
+- Focused bundle/manifest tests, format, and clippy passed.
+- Development-only missing credentials, signatures, and key management remain warning-only.
+
+Independent review: exact-base implementation reviewed; hosted PR checks passed.
+Hosted PR checks: all required checks passed, including AWQ shadow evidence,
+policy/supply-chain, Rust, portability, platform, and exact TUI journey.

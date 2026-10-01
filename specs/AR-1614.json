@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1614.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id":"immutable-manifest","description":"ASB dev-channel installs and validates a content-addressed TUI bundle with an immutable manifest."},
+    {"id":"default-dev","description":"The dev channel is the default and resolves the current public main bundle."},
+    {"id":"invalid-artifact","description":"Missing or mismatched manifests fail with typed diagnostics before launch."},
+    {"id":"development-mode","description":"Missing development credentials, signatures, and key management remain visible warnings and never block."}
+  ],
+  "definition_of_done": [
+    "Merged exact-main implementation passes focused bundle/manifest tests and all required hosted checks.",
+    "Independent review verifies manifest binding and invalid-artifact rejection.",
+    "Post-merge receipt records exact protected-main head and hosted checks."
+  ],
+  "inputs": [{"id":"dev-channel","description":"ASB TUI install/status/launch path using the default dev channel."}],
+  "outputs": [{"id":"bundle-install","description":"Validated immutable bundle manifest and typed failure behavior."}],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["secret-output", "credential-bypass"],
+  "required_evidence_classes": ["contract-test", "mechanical", "environmental"],
+  "gates": [{"id":"exact-main","description":"Merged implementation is exact origin/main."},{"id":"hosted","description":"All required PR and exact-main checks pass on merged head."}]
+}
