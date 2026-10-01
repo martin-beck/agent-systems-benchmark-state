@@ -1,0 +1,17 @@
+AR-1609 coding-agent adapter catalog post-merge receipt
+
+Exact protected main: f86e4d7e8a958ec74b4294b329ea8f9fed467206
+Merged PR: 427
+
+Local evidence on the merged implementation:
+- cargo test -p asb-cli --test capability_contract --locked: 13 passed.
+- cargo test -p asb-cli --test workflow_transcript --locked: 3 passed.
+- python tools/quality/contract_consistency.py --run-tests: all registered suites passed.
+- cargo fmt --check and cargo clippy -p asb-cli --all-targets -- -D warnings passed.
+
+Hosted exact-head evidence: all 14 PR checks passed, including Rust checks,
+contract consistency, policy/coverage/supply-chain, retained faults, bounded
+fuzz, Kani, Loom/state models, platform, and TUI journeys.
+
+Catalog digest binds adapter IDs, providers, model constraints, authentication
+references, availability, and diagnostics. No credentials are present.
