@@ -3590,6 +3590,20 @@
 | Summary | Qualify current-main dev-channel publication and exact provenance across ASB and asb-tui. |
 | Next action | Promote after ASB AR-1600 and the paired TUI channel surface are released; run the exact-head dev-channel publication and provenance qualification. |
 
+### AR-1602 — Cassette lifecycle control contract
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Expose real cassette identity, sealing, and replay dispatch to the TUI without fabricated continuity. |
+| Next action | Promote after the current ASB lifecycle repairs are released; implement and qualify the additive cassette record/seal/replay control contract. |
+
 
 ## Dependency graph
 
@@ -4260,6 +4274,7 @@ flowchart LR
         direction TB
         AR_1600["AR-1600 - In progress"]:::status_in_progress
         AR_1601["AR-1601 - Planned"]:::status_planned
+        AR_1602["AR-1602 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4569,27 +4584,3 @@ flowchart LR
     AR_0502 --> AR_1330
     AR_0503 --> AR_0314
     AR_0503 --> AR_0504
-    AR_0503 --> AR_0505
-    AR_0503 --> AR_0506
-    AR_0503 --> AR_0507
-    AR_0503 --> AR_0508
-    AR_0503 --> AR_0509
-    AR_0503 --> AR_0510
-    AR_0503 --> AR_0511
-    AR_0503 --> AR_0512
-    AR_0503 --> AR_0513
-    AR_0503 --> AR_0514
-    AR_0503 --> AR_0516
-    AR_0503 --> AR_0517
-    AR_0503 --> AR_0518
-    AR_0503 --> AR_0520
-    AR_0503 --> AR_0857
-    AR_0503 --> AR_0863
-    AR_0503 --> AR_0871
-    AR_0503 --> AR_0879
-    AR_0503 --> AR_0902
-    AR_0503 --> AR_0905
-    AR_0503 --> AR_1330
-    AR_0504 --> AR_0314
-    AR_0504 --> AR_0505
-    AR_0504 --> AR_0506
