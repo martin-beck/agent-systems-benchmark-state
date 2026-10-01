@@ -3378,7 +3378,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Keep successful development TUI sessions interactive while bounding handshake and cleanup failure paths. |
-| Next action | Promote after AR-1574 transport wiring is reviewed; repair interactive lifetime supervision and cleanup semantics. |
+| Next action | Await hosted checks and independent review of PR #408 exact head e6f3d900f1a4a79b0f188d0e11a81730903a78d8; merge/release only identical green head. |
 
 ### AR-1578 — ASB workspace coverage recovery
 
@@ -4698,4 +4698,3 @@ flowchart LR
     AR_1017 --> AR_1018
     AR_1017 --> AR_1019
     AR_1017 --> AR_1021
-    AR_1017 --> AR_1022
