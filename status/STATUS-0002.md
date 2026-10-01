@@ -3532,7 +3532,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Exercise all setup, recording, replay, benchmark, and recovery failure paths with bounded evidence. |
-| Next action | PR #420 exact head 32b5c514f3ca07eeaf18f3f0cb0c0b0b652f2bb0 is open; await hosted checks and independent review, then repair/merge only with green gates. |
+| Next action | PR #420 exact head 32b5c514f3ca07eeaf18f3f0cb0c0b0b652f2bb0 is open; await all hosted checks and independent review, then repair/merge only with green gates. |
 
 ### AR-1598 — Fresh-user development qualification
 
