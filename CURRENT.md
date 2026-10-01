@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1599](tasks/AR-1599.md): Development install provenance and toolchain repair | Repair fresh-user dev installation provenance, toolchain discovery, and atomic publication. | Repair tui.rs dev materializer: remove ambient PATH cargo fallback, verify cloned HEAD equals ls-remote main commit, and roll back newly published dev version on metadata/publication failure; add focused tests, then run CLI gates. | ar1199-router-impl |
+| P0 | [AR-1599](tasks/AR-1599.md): Development install provenance and toolchain repair | Repair fresh-user dev installation provenance, toolchain discovery, and atomic publication. | PR #421 exact head c11a51a is open; await hosted checks and independent review, repair only concrete findings, then merge/reverify before release. | ar1199-router-impl |
 
 ## Open
 
