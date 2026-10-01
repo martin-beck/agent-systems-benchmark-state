@@ -160,7 +160,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1574](../tasks/AR-1574.md): ASB development control transport wiring | ar1574-transport-wiring | Wire the ASB development launch transport to the producer control bridge. | Await hosted gates and final independent review of cf974249328622d62dc863ce72d1ac08a70a8e32; merge only identical green head, then release AR-1574. |
+| P0 | [AR-1574](../tasks/AR-1574.md): ASB development control transport wiring | ar1574-transport-wiring | Wire the ASB development launch transport to the producer control bridge. | Await AR-1578 workspace coverage recovery and hosted rerun; merge only identical green e2986e6 or later head, then release AR-1574. |
 | P0 | [AR-1576](../tasks/AR-1576.md): ASB development bootstrap projection | ar1576-bootstrap-projection | Make the development control backend satisfy the current asb-tui bootstrap projection without production credentials. | Promote and implement the development-only bootstrap projection contract required by current asb-tui startup. |
 | P0 | [AR-1578](../tasks/AR-1578.md): ASB workspace coverage recovery | ar1578-coverage-recovery | Recover the existing workspace coverage gate that currently blocks otherwise correct ASB transport changes. | Promote and assign an isolated worker to recover meaningful workspace coverage to the configured 90&#37; floor without weakening the gate. |
 
