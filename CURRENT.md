@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1572](tasks/AR-1572.md): ASB approved development toolchain runner | Private reproducible development toolchain runner implemented and proposed in PR #404. | Run hosted checks and obtain independent review for PR #404 at 18ba0fe; then merge only after approval. | ar1572-toolchain-runner |
+| P0 | [AR-1572](tasks/AR-1572.md): ASB approved development toolchain runner | Private reproducible development toolchain runner implemented and proposed in PR #404. | Run hosted checks and obtain independent review for PR #404 at a269e1a; then merge only after approval. | ar1572-toolchain-runner |
 | P0 | [AR-1573](tasks/AR-1573.md): ASB development control producer bridge | Expose the ASB-side development control producer bridge required by the asb-tui adopted stream. | Promote and expose a bounded ASB development producer-side control handshake/backend/result bridge compatible with asb-tui broker adoption. | ar1573-control-bridge |
 
 ## Blocked
