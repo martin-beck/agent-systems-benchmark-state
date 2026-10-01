@@ -1,0 +1,10 @@
+# AR-1595 acceptance receipt
+
+- Exact implementation PR: ASB PR #415
+- Reviewed source head: 25fe156c483e882633f2e68816424f6147b7b170
+- Merge commit: 14ac606df73d237911c60ce02384e70a1a753a83
+- Independent review: APPROVE at exact head; provenance repair changed only the expected public-fixture SHA-256 binding.
+- Local evidence: workflow transcript 3/3, setup contract 2/2, package qualification fixture 2/2, locked `cargo check -p asb-cli`, and 153/153 ASB CLI unit tests.
+- Hosted evidence: all required PR checks passed, including credential-free benchmark, cross-repository broker qualification, Rust, repository quality, formal assurance, fault assurance, portability, and supply-chain checks.
+- Contract evidence: versioned development setup capability schema, Gemini/provider-model parity, secret-free credential fixture, and explicit warning-only development auth fallback.
+- Classification: contract-test/mechanical/hosted; development-only and credential-free.
