@@ -1,0 +1,10 @@
+# AR-1599 acceptance receipt
+
+- Implementation PR: ASB PR #421, exact signed/DCO head c11a51a4af1ae1086b5a98624606e0dff1103670.
+- Implementation merge: c193348fbaa382251950040cd16897767c7b8207, parents 3f95bfff6613f191038c4a4f6d0d3d86c09fe6ca and c11a51a4af1ae1086b5a98624606e0dff1103670, tree 832c21148407af759c779c6a103ee727760fbe8c.
+- Historical merge-integrity repair: PR #422 exact signed/DCO head 8f40d82663b863de89eb03be0ffd0f543dbfb5db; signed two-parent merge 677d990519335139ac64fd06dafba2777d35342c with parents c193348fbaa382251950040cd16897767c7b8207 and 8f40d82663b863de89eb03be0ffd0f543dbfb5db; unchanged tree 832c21148407af759c779c6a103ee727760fbe8c.
+- Independent review: APPROVE for PR #421 and PR #422 at their exact heads.
+- Hosted evidence: all PR #421 and PR #422 required checks passed; all eight post-merge workflows for 677d990519335139ac64fd06dafba2777d35342c passed (Repository quality, Rust, formal assurance, portability/aarch64, credential-free, fault, and cross-repository qualification).
+- Local evidence: cargo fmt/clippy and focused setup tests passed for PR #421; fault-matrix and strict ResourceWarning checks passed for the paired fault runner; repository_policy.py and check_dco.py both pass for c193348fbaa382251950040cd16897767c7b8207..677d990519335139ac64fd06dafba2777d35342c.
+- Contract evidence: exact ls-remote/main and detached-HEAD identity binding, strict trusted Cargo resolution, atomic publication rollback, and unchanged development-only warning semantics.
+- Classification: contract-test/mechanical/hosted; development-only and credential-free.
