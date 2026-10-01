@@ -3314,11 +3314,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1572-toolchain-runner |
 | Parent | None |
 | Children | None |
 | Summary | Provide the approved private toolchain runner needed for credential-free ASB development setup. |
@@ -3971,7 +3971,7 @@ flowchart LR
         AR_1569["AR-1569 - Done"]:::status_done
         AR_1570["AR-1570 - Done"]:::status_done
         AR_1571["AR-1571 - In progress"]:::status_in_progress
-        AR_1572["AR-1572 - Open"]:::status_open
+        AR_1572["AR-1572 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4736,4 +4736,3 @@ flowchart LR
     AR_1180 --> AR_0809
     AR_1190 --> AR_1191
     AR_1190 --> AR_1198
-    AR_1190 --> AR_1199

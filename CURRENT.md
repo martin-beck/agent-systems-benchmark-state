@@ -8,12 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1571](tasks/AR-1571.md): ASB development broker channel transport handoff | Provide the bounded broker channel transport that completes ASB to asb-tui launch handoff. | Promote and implement the ASB-side inherited broker channel/socketpair handoff required by asb-tui run --broker --development. | ar1571-broker-channel |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1572](tasks/AR-1572.md): ASB approved development toolchain runner | Provide the approved private toolchain runner needed for credential-free ASB development setup. | Promote and provide a private, reproducible development toolchain runner accepted by the ASB resolver for clean qualification and first-time setup. | - |
+| P0 | [AR-1572](tasks/AR-1572.md): ASB approved development toolchain runner | Provide the approved private toolchain runner needed for credential-free ASB development setup. | Promote and provide a private, reproducible development toolchain runner accepted by the ASB resolver for clean qualification and first-time setup. | ar1572-toolchain-runner |
 
 ## Blocked
 
