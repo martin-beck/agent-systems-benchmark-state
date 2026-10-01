@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1574](tasks/AR-1574.md): ASB development control transport wiring | Wire the ASB development launch transport to the producer control bridge. | Promote after AR-1573; wire the producer bridge into ASB development launch and rerun exact-head cross-project qualification. | - |
+| P0 | [AR-1574](tasks/AR-1574.md): ASB development control transport wiring | Wire the ASB development launch transport to the producer control bridge. | Promote after AR-1573; wire the producer bridge into ASB development launch and rerun exact-head cross-project qualification. | ar1574-transport-wiring |
 
 ## Blocked
 

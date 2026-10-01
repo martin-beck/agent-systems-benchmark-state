@@ -147,11 +147,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1574](../tasks/AR-1574.md): ASB development control transport wiring | Unclaimed | Wire the ASB development launch transport to the producer control bridge. | Promote after AR-1573; wire the producer bridge into ASB development launch and rerun exact-head cross-project qualification. |
+| P0 | [AR-1574](../tasks/AR-1574.md): ASB development control transport wiring | ar1574-transport-wiring | Wire the ASB development launch transport to the producer control bridge. | Promote after AR-1573; wire the producer bridge into ASB development launch and rerun exact-head cross-project qualification. |
 
 ### Blocked (82)
 

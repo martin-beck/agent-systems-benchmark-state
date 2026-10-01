@@ -3342,11 +3342,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1574-transport-wiring |
 | Parent | None |
 | Children | None |
 | Summary | Wire the ASB development launch transport to the producer control bridge. |
@@ -4001,7 +4001,7 @@ flowchart LR
         AR_1571["AR-1571 - Blocked"]:::status_blocked
         AR_1572["AR-1572 - Done"]:::status_done
         AR_1573["AR-1573 - Done"]:::status_done
-        AR_1574["AR-1574 - Open"]:::status_open
+        AR_1574["AR-1574 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4725,5 +4725,3 @@ flowchart LR
     AR_1060 --> AR_1310
     AR_1061 --> AR_1010
     AR_1062 --> AR_1010
-    AR_1062 --> AR_1058
-    AR_1062 --> AR_1061
