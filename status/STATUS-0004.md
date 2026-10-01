@@ -1,5 +1,8 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1436](../tasks/AR-1436-local-guided-cli-wrapper.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1435](../tasks/AR-1435-local-mock-cli-wiring.md) | [AR-1437](../tasks/AR-1437-local-record-replay-campaign.md), [AR-1440](../tasks/AR-1440-openrouter-model-refresh-local-measurements.md), [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md) |
+| [AR-1437](../tasks/AR-1437-local-record-replay-campaign.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1436](../tasks/AR-1436-local-guided-cli-wrapper.md) | [AR-1440](../tasks/AR-1440-openrouter-model-refresh-local-measurements.md), [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md), [AR-1447](../tasks/AR-1447-asb-local-campaign-qualification.md) |
+| [AR-1438](../tasks/AR-1438-hardened-trusted-runner-validation.md) | [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md) | None |
 | [AR-1440](../tasks/AR-1440-openrouter-model-refresh-local-measurements.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1436](../tasks/AR-1436-local-guided-cli-wrapper.md), [AR-1437](../tasks/AR-1437-local-record-replay-campaign.md) | None |
 | [AR-1441](../tasks/AR-1441-first-class-install-bootstrap.md) | [AR-0821](../tasks/AR-0821-one-line-local-install.md), [AR-0822](../tasks/AR-0822-install-upgrade-rollback.md) | [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md), [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md), [AR-1488](../tasks/AR-1488-owner-backed-user-journey.md) |
 | [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md) | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1436](../tasks/AR-1436-local-guided-cli-wrapper.md), [AR-1441](../tasks/AR-1441-first-class-install-bootstrap.md) | [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md), [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md), [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md), [AR-1447](../tasks/AR-1447-asb-local-campaign-qualification.md), [AR-1488](../tasks/AR-1488-owner-backed-user-journey.md), [AR-1499](../tasks/AR-1499-development-credential-enrollment.md) |
@@ -127,7 +130,8 @@
 | [AR-1565](../tasks/AR-1565.md) | None | None |
 | [AR-1566](../tasks/AR-1566.md) | [AR-1564](../tasks/AR-1564.md) | None |
 | [AR-1567](../tasks/AR-1567.md) | [AR-1563](../tasks/AR-1563.md) | None |
-| [AR-1568](../tasks/AR-1568.md) | [AR-1564](../tasks/AR-1564.md) | None |
+| [AR-1568](../tasks/AR-1568.md) | [AR-1564](../tasks/AR-1564.md) | [AR-1569](../tasks/AR-1569.md) |
+| [AR-1569](../tasks/AR-1569.md) | [AR-1568](../tasks/AR-1568.md) | None |
 
 ## Complete AR inventory
 
@@ -223,7 +227,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (48)
+### Planned (49)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -244,6 +248,7 @@
 | P0 | [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Unclaimed | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. |
 | P0 | [AR-1545](../tasks/AR-1545.md): AR-1307 formal-input readiness repair | Unclaimed | Audit and repair the AR-1307 formal-input handoff after development runner integration, without executing qualification. | Formal-only work: after AR-1535 supplies reviewed inputs, inventory and independently verify every exact AR-1307 formal input for AR-1522. Do not block or alter the completed unsigned-development path. |
 | P0 | [AR-1546](../tasks/AR-1546.md): AR-1308 formal capacity-input readiness repair | Unclaimed | Audit and repair the AR-1308 capacity/input handoff after diagnostic QEMU integration, without executing qualification. | Formal-only work: after AR-1531 and AR-1536, verify the exact 8 GiB/8 GiB fixture and AR-1308 formal inputs for AR-1522. Do not block or alter the completed unsigned-development path. |
+| P0 | [AR-1569](../tasks/AR-1569.md): ASB source-archive identity repair | Unclaimed | Repair merged identity generation so stable/source-archive ASB builds work without a Git checkout. | Promote and repair source-archive/stable builds so missing .git metadata cannot break non-development builds while development identity remains exact. |
 | P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
 | P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
 | P1 | [AR-0810](../tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Unclaimed | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project&#x27;s GitHub Pages site. |
@@ -531,7 +536,3 @@
 | P1 | [AR-0104](../tasks/AR-0104-durable-results.md): Implement durable run storage and recovery | Unclaimed | Persist manifests, event streams, artifact hashes and recoverable execution intentions. | Await exact-head PR 6 CI and independent immutable-head review; repair findings before coordinator integration. |
 | P1 | [AR-0201](../tasks/AR-0201-portable-metrics.md): Collect portable system and session metrics | Unclaimed | Collect procfs and cgroup v2 CPU, memory, I/O, faults, pressure and throttling. | Run final state reconcile/live doctor/full validation, then release AR-0201 done and explicitly return the Cargo workspace/lock fence. |
 | P1 | [AR-0203](../tasks/AR-0203-statistical-analysis.md): Implement statistical and SLO assessment | Unclaimed | Compute latency distributions, quality/throughput intervals and evidence-aware SLO results. | Create and push reviewed signed+DCO no-ff merge of exact head 3bcfd85; verify PR merge identity, then run exact-main local and hosted post-merge checks. |
-| P1 | [AR-0204](../tasks/AR-0204-capacity-sweeps.md): Implement capacity sweeps and arrival scheduling | Unclaimed | Run repeated closed-loop and open-loop experiments with bounded concurrency. | Await coordinator postmerge local validation/state doctor confirmation before releasing AR-0204. |
-| P1 | [AR-0301](../tasks/AR-0301-agent-opencode.md): Implement OpenCode client adapter | Unclaimed | Run pinned OpenCode through its structured supported interfaces. | Await exact PR #13 head dfb0d54 hosted CI and immutable independent review; integrate only if both are green. |
-| P1 | [AR-0302](../tasks/AR-0302-agent-opendesk.md): Implement OpenDesk client adapter | Unclaimed | Support the bitclub OpenDesk CLI with its own dialect and compatibility record. | Publish approved 8eb99d3, require exact-head CI and immutable review, integrate only signed+DCO green head, then run post-merge verification. |
-| P1 | [AR-0303](../tasks/AR-0303-agent-aider.md): Implement aider client adapter | Unclaimed | Support unattended aider editing with bounded input, output and repository changes. | Publish immutable da81ead6932c5d5469ca57fc981646fa980c2780, open focused PR, and require exact-head CI before integration. |

@@ -3268,6 +3268,20 @@
 | Summary | Bind development metadata and broker descriptors to the exact ASB source identity. |
 | Next action | Ready for independent review of PR #400 at exact head 665b6eb. Verify build-time exact checkout commit/tree derivation, required source headers, reproducible identity overrides, metadata/status/doctor identity validation, typed stale rejection, and unchanged stable behavior. |
 
+### AR-1569 — ASB source-archive identity repair
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair merged identity generation so stable/source-archive ASB builds work without a Git checkout. |
+| Next action | Promote and repair source-archive/stable builds so missing .git metadata cannot break non-development builds while development identity remains exact. |
+
 
 ## Dependency graph
 
@@ -3912,6 +3926,7 @@ flowchart LR
         AR_1566["AR-1566 - In progress"]:::status_in_progress
         AR_1567["AR-1567 - In progress"]:::status_in_progress
         AR_1568["AR-1568 - Done"]:::status_done
+        AR_1569["AR-1569 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4745,26 +4760,3 @@ flowchart LR
     AR_1237 --> AR_1279
     AR_1237 --> AR_1280
     AR_1237 --> AR_1281
-    AR_1237 --> AR_1282
-    AR_1237 --> AR_1284
-    AR_1237 --> AR_1285
-    AR_1237 --> AR_1286
-    AR_1238 --> AR_1236
-    AR_1238 --> AR_1240
-    AR_1238 --> AR_1260
-    AR_1238 --> AR_1261
-    AR_1238 --> AR_1262
-    AR_1238 --> AR_1263
-    AR_1238 --> AR_1265
-    AR_1238 --> AR_1266
-    AR_1238 --> AR_1267
-    AR_1238 --> AR_1268
-    AR_1238 --> AR_1269
-    AR_1238 --> AR_1270
-    AR_1238 --> AR_1271
-    AR_1238 --> AR_1272
-    AR_1238 --> AR_1273
-    AR_1238 --> AR_1274
-    AR_1238 --> AR_1275
-    AR_1238 --> AR_1276
-    AR_1238 --> AR_1277
