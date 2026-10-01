@@ -17,21 +17,22 @@ Generated from local Git and GitHub. Do not edit.
 | #365 | `dependabot/cargo/rcgen-0.14.10@8604b5977544` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump rcgen from 0.14.7 to 0.14.10 |
 | #366 | `dependabot/cargo/schemars-1.2.2@047b52b0b5b9` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump schemars from 1.0.4 to 1.2.2 |
 | #384 | `feature/ar-1508-platform-owned-authority-provider@2c70f81100ca` | `main` | DIRTY | - | feat(runtime): platform-owned authority provider |
-| #420 | `feature/ar-1597-fault-matrix@b6986ec51370` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(asb): add bounded fault matrix runner |
+| #420 | `feature/ar-1597-fault-matrix@797e795ebf50` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(asb): add bounded fault matrix runner |
+| #422 | `feature/ar-1599-dco-forward-repair@8f40d82663b8` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore: restore signed merge provenance |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36849461935 | `b6986ec51370` | pull_request | Formal assurance | completed:success |
-| 36849461922 | `b6986ec51370` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 36849461882 | `b6986ec51370` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 36849461859 | `b6986ec51370` | pull_request | Cross-repository development broker qualification | completed:success |
-| 36849461799 | `b6986ec51370` | pull_request | Huawei MIT source headers | completed:success |
-| 36849461797 | `b6986ec51370` | pull_request | Fault assurance | completed:success |
-| 36849461786 | `b6986ec51370` | pull_request | Rust verification | in_progress:- |
-| 36849461775 | `b6986ec51370` | pull_request | Repository quality | in_progress:- |
-| 36849461744 | `b6986ec51370` | pull_request | Hosted portability and native qualification | completed:success |
-| 36849461731 | `b6986ec51370` | pull_request | Credential-free benchmark path | completed:success |
-| 36848935411 | `c193348fbaa3` | push | Hosted portability and native qualification | completed:success |
-| 36848935388 | `c193348fbaa3` | push | Repository quality | completed:success |
+| 36850673411 | `797e795ebf50` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 36850673316 | `797e795ebf50` | pull_request | Rust verification | in_progress:- |
+| 36850673280 | `797e795ebf50` | pull_request | Fault assurance | completed:success |
+| 36850673259 | `797e795ebf50` | pull_request | Cross-repository development broker qualification | completed:success |
+| 36850673219 | `797e795ebf50` | pull_request | Credential-free benchmark path | completed:success |
+| 36850673166 | `797e795ebf50` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 36850673110 | `797e795ebf50` | pull_request | Formal assurance | in_progress:- |
+| 36850673091 | `797e795ebf50` | pull_request | Hosted portability and native qualification | completed:success |
+| 36850673049 | `797e795ebf50` | pull_request | Repository quality | in_progress:- |
+| 36850673029 | `797e795ebf50` | pull_request | Huawei MIT source headers | completed:success |
+| 36850616290 | `8f40d82663b8` | pull_request | Credential-free benchmark path | completed:success |
+| 36850616214 | `8f40d82663b8` | pull_request | Fault assurance | completed:success |
