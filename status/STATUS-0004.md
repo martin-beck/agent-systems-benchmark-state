@@ -193,6 +193,12 @@
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1590](../tasks/AR-1590.md): Inherited-fd cross-repository qualification | ar1590-inherited-fd-bridge | Complete real ASB-to-asb-tui inherited-fd broker qualification after the PTY seam exists. | Await coverage/Rust/portability repair checks, then fresh exact-head review; ASB AR-1592 and AR-1593 catalog/version alignment remain prerequisites before release. |
 
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1595](../tasks/AR-1595.md): Development setup capability contract | Unclaimed | Expose provider, authentication, model, agent, and default-selection capabilities for the development wizard. | Implement the versioned development setup capability contract after the catalog alignment releases. |
+
 ### Blocked (82)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -280,7 +286,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (55)
+### Planned (54)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -304,7 +310,6 @@
 | P0 | [AR-1588](../tasks/AR-1588.md): ASB development-channel command surface | Unclaimed | Make ASB lifecycle commands consistently select and default the development release channel. | Promote after dependencies are released; implement and qualify consistent --channel selection with default dev across ASB lifecycle commands. |
 | P0 | [AR-1589](../tasks/AR-1589.md): ASB development-channel provenance and fault matrix | Unclaimed | Qualify ASB development-channel identity, metadata integrity, and cleanup failure paths. | Promote after AR-1588; implement the development-channel provenance envelope and adversarial fault matrix without weakening stable verification. |
 | P0 | [AR-1591](../tasks/AR-1591.md): Post-release fresh-clone ASB consumption | Unclaimed | Qualify fresh-clone consumption of the released development ASB journey. | Promote after the inherited-fd bridge and final cross-project qualification are released; run the fresh-clone post-release dev-channel journey and record exact evidence. |
-| P0 | [AR-1595](../tasks/AR-1595.md): Development setup capability contract | Unclaimed | Expose provider, authentication, model, agent, and default-selection capabilities for the development wizard. | Implement the versioned development setup capability contract after the catalog alignment releases. |
 | P0 | [AR-1596](../tasks/AR-1596.md): Cassette and offline lifecycle integration | Unclaimed | Provide deterministic cassette recording and provider-free replay for benchmark workloads. | Implement cassette recording/sealing and offline replay lifecycle after the setup capability contract is released. |
 | P0 | [AR-1597](../tasks/AR-1597.md): Fault matrix and deterministic runner | Unclaimed | Exercise all setup, recording, replay, benchmark, and recovery failure paths with bounded evidence. | Build the isolated fault-matrix runner once cassette lifecycle behavior is released. |
 | P0 | [AR-1598](../tasks/AR-1598.md): Fresh-user development qualification | Unclaimed | Prove install-to-wizard-to-benchmark-to-offline-comparison works for a fresh development user. | Run the disposable fresh-user default-dev qualification after the fault-matrix runner is released. |
