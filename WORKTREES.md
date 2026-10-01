@@ -560,7 +560,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-ar1601-qual` | `DETACHED` | `c94586d0751b` | 0 | behind 25, ahead 0 |
 | `asb-ar1603-acceptance` | `DETACHED` | `3d87e99b300d` | 0 | behind 5, ahead 0 |
 | `asb-ar1611-asb` | `feature/ar-1611-asb-router` | `eb74d68b464f` | 0 | behind 10, ahead 0 |
-| `asb-ar1617-1618` | `feature/ar-1617-1618` | `85e4ae539bd6` | 0 | behind 0, ahead 0 |
+| `asb-ar1617-1618` | `feature/ar-1617-1618` | `51f08a4f3ede` | 12 | behind 0, ahead 1 |
+| changed files | - | - | - | `crates/asb-cli/src/control.rs`, `crates/asb-control/schema/v1.10/request.schema.json`, `crates/asb-control/schema/v1.10/response.schema.json`, `crates/asb-control/schema/v1.11/request.schema.json`, `crates/asb-control/schema/v1.12/request.schema.json`, `crates/asb-control/schema/v1.2/request.schema.json`, `crates/asb-control/schema/v1.3/request.schema.json`, `crates/asb-control/schema/v1.4/request.schema.json`, `crates/asb-control/schema/v1.5/request.schema.json`, `crates/asb-control/schema/v1.6/request.schema.json`, `crates/asb-control/schema/v1.7/request.schema.json`, `crates/asb-control/schema/v1/request.schema.json` |
 | `asb-base-cov2` | `DETACHED` | `9c6a69a0f91c` | 2 | behind 38, ahead 0 |
 | changed files | - | - | - | `crates/asb-cli/default_2328882718243884030_0_991568.profraw`, `crates/asb-cli/default_2328882718243884030_0_991569.profraw` |
 | `asb-boundary-hardening` | `DETACHED` | `d32748d0795e` | 0 | behind 66, ahead 411 |
@@ -634,44 +635,44 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb399-review.MQitMA` | `DETACHED` | `72c1f1b3f977` | 0 | behind 66, ahead 1323 |
 | `asb399b-review.2KSXai` | `DETACHED` | `4a654767fd55` | 0 | behind 66, ahead 1324 |
 | `pr256-review` | `DETACHED` | `0c19231abaf4` | 0 | behind 66, ahead 900 |
-| `agent-systems-benchmark-state` | `main` | `1c91036694ef` | 6 | behind 0, ahead 0 |
-| changed files | - | - | - | `STATUS.md`, `status/STATUS-0001.md`, `status/STATUS-0002.md`, `status/STATUS-0003.md`, `status/STATUS-0004.md`, `status/STATUS-0005.md` |
-| `agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity` | `feature/ar-1308-full-exhaustive-qemu-capacity` | `d6e175abe060` | 0 | behind 22756, ahead 2 |
-| `agent-systems-benchmark-coordination-assurance` | `feature/coordination-assurance` | `adfde31ad408` | 0 | behind 50636, ahead 0 |
-| `agent-systems-benchmark-coordination-lint-regression` | `fix/handoffctl-apply-resume-lint` | `746042a0e55e` | 0 | behind 45379, ahead 0 |
-| `agent-systems-benchmark-coordinator-merge-attestation` | `fix/coordinator-v014-merge-attestation` | `655817806e2b` | 0 | behind 42461, ahead 0 |
-| `agent-systems-benchmark-state-ar-1293-tla-admission` | `feature/ar-1293-state-tla-admission` | `f1931686c929` | 0 | behind 26625, ahead 4 |
-| `agent-systems-benchmark-state-ar-1293-tla-admission-v2` | `feature/ar-1293-state-tla-admission-v2` | `fa57625d9d25` | 0 | behind 26344, ahead 35 |
-| `agent-systems-benchmark-state-ar-1295-vendor-fixtures` | `repair/ar-1295-vendor-fixtures` | `c8c5a25e0ba3` | 0 | behind 22118, ahead 0 |
-| `agent-systems-benchmark-state-ar-1302-portable-tlc-runner` | `feature/ar-1302-portable-tlc-runner` | `d35c18a5343b` | 1 | behind 26302, ahead 25 |
+| `review-asb433.4ox3` | `DETACHED` | `51f08a4f3ede` | 0 | behind 0, ahead 1 |
+| `agent-systems-benchmark-state` | `main` | `11189003f8a3` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-asb-ar-1308-full-exhaustive-qemu-capacity` | `feature/ar-1308-full-exhaustive-qemu-capacity` | `d6e175abe060` | 0 | behind 22763, ahead 2 |
+| `agent-systems-benchmark-coordination-assurance` | `feature/coordination-assurance` | `adfde31ad408` | 0 | behind 50643, ahead 0 |
+| `agent-systems-benchmark-coordination-lint-regression` | `fix/handoffctl-apply-resume-lint` | `746042a0e55e` | 0 | behind 45386, ahead 0 |
+| `agent-systems-benchmark-coordinator-merge-attestation` | `fix/coordinator-v014-merge-attestation` | `655817806e2b` | 0 | behind 42468, ahead 0 |
+| `agent-systems-benchmark-state-ar-1293-tla-admission` | `feature/ar-1293-state-tla-admission` | `f1931686c929` | 0 | behind 26632, ahead 4 |
+| `agent-systems-benchmark-state-ar-1293-tla-admission-v2` | `feature/ar-1293-state-tla-admission-v2` | `fa57625d9d25` | 0 | behind 26351, ahead 35 |
+| `agent-systems-benchmark-state-ar-1295-vendor-fixtures` | `repair/ar-1295-vendor-fixtures` | `c8c5a25e0ba3` | 0 | behind 22125, ahead 0 |
+| `agent-systems-benchmark-state-ar-1302-portable-tlc-runner` | `feature/ar-1302-portable-tlc-runner` | `d35c18a5343b` | 1 | behind 26309, ahead 25 |
 | changed files | - | - | - | `private/` |
-| `agent-systems-benchmark-state-ar-1304-required-tier-qemu-runner` | `feature/ar-1304-required-tier-qemu-runner` | `923378246980` | 0 | behind 25033, ahead 21 |
-| `agent-systems-benchmark-state-ar-1307-portable-tlc-runner` | `DETACHED` | `7eafd883460e` | 0 | behind 24124, ahead 552 |
-| `agent-systems-benchmark-state-ar-1307-portable-tlc-runner-repair` | `feature/ar-1307-portable-tlc-runner-repair` | `91bbfd5287fd` | 2 | behind 24124, ahead 82 |
+| `agent-systems-benchmark-state-ar-1304-required-tier-qemu-runner` | `feature/ar-1304-required-tier-qemu-runner` | `923378246980` | 0 | behind 25040, ahead 21 |
+| `agent-systems-benchmark-state-ar-1307-portable-tlc-runner` | `DETACHED` | `7eafd883460e` | 0 | behind 24131, ahead 552 |
+| `agent-systems-benchmark-state-ar-1307-portable-tlc-runner-repair` | `feature/ar-1307-portable-tlc-runner-repair` | `91bbfd5287fd` | 2 | behind 24131, ahead 82 |
 | changed files | - | - | - | `tests/test_tlc_runner.py`, `tools/tlc_runner.py` |
-| `agent-systems-benchmark-state-ar-1307-signed-history` | `feature/ar-1307-signed-history` | `ab485f767fbd` | 0 | behind 23128, ahead 13 |
-| `agent-systems-benchmark-state-ar-1313-historical-dco-909078c` | `repair/ar-1313-historical-dco-909078c` | `8e5598eab3b3` | 0 | behind 21335, ahead 0 |
-| `agent-systems-benchmark-state-ar-1314-optional-bundle-signing` | `DETACHED` | `b7184f17be4d` | 0 | behind 21333, ahead 0 |
-| `agent-systems-benchmark-state-ar-1530-state-formal-capacity` | `feature/ar-1530-state-formal-capacity` | `c50273754b45` | 0 | behind 1215, ahead 0 |
-| `agent-systems-benchmark-state-ar-1532-ar1307-development-runner-repair` | `feature/ar-1532-ar1307-development-runner-repair` | `3f82e2d604ae` | 0 | behind 1128, ahead 1 |
-| `agent-systems-benchmark-state-ar-1533-ar1308-development-qemu-repair` | `feature/ar-1533-ar1308-development-qemu-repair` | `ffd65019dd32` | 0 | behind 1092, ahead 1 |
-| `agent-systems-benchmark-state-ar-status-document` | `feature/ar-status-document` | `eedd3119c08b` | 0 | behind 49913, ahead 0 |
-| `agent-systems-benchmark-state-ar1061-tmux-isolation` | `docs/ar1061-tmux-live-fixture-isolation` | `51cd8f1d82da` | 1 | behind 33280, ahead 0 |
+| `agent-systems-benchmark-state-ar-1307-signed-history` | `feature/ar-1307-signed-history` | `ab485f767fbd` | 0 | behind 23135, ahead 13 |
+| `agent-systems-benchmark-state-ar-1313-historical-dco-909078c` | `repair/ar-1313-historical-dco-909078c` | `8e5598eab3b3` | 0 | behind 21342, ahead 0 |
+| `agent-systems-benchmark-state-ar-1314-optional-bundle-signing` | `DETACHED` | `b7184f17be4d` | 0 | behind 21340, ahead 0 |
+| `agent-systems-benchmark-state-ar-1530-state-formal-capacity` | `feature/ar-1530-state-formal-capacity` | `c50273754b45` | 0 | behind 1222, ahead 0 |
+| `agent-systems-benchmark-state-ar-1532-ar1307-development-runner-repair` | `feature/ar-1532-ar1307-development-runner-repair` | `3f82e2d604ae` | 0 | behind 1135, ahead 1 |
+| `agent-systems-benchmark-state-ar-1533-ar1308-development-qemu-repair` | `feature/ar-1533-ar1308-development-qemu-repair` | `ffd65019dd32` | 0 | behind 1099, ahead 1 |
+| `agent-systems-benchmark-state-ar-status-document` | `feature/ar-status-document` | `eedd3119c08b` | 0 | behind 49920, ahead 0 |
+| `agent-systems-benchmark-state-ar1061-tmux-isolation` | `docs/ar1061-tmux-live-fixture-isolation` | `51cd8f1d82da` | 1 | behind 33287, ahead 0 |
 | changed files | - | - | - | `.runtime` |
-| `agent-systems-benchmark-state-formal-verification` | `fix/handoffctl-ci-dco-merge` | `dfb7061b0239` | 0 | behind 43212, ahead 0 |
-| `agent-systems-benchmark-state-huawei-mit-headers` | `fix/huawei-mit-license-headers` | `3ff44bd93d1a` | 0 | behind 40196, ahead 0 |
-| `agent-systems-benchmark-state-local-llm-testing-recommendations` | `docs/local-llm-testing-recommendations-state` | `1bd496c86c84` | 0 | behind 38517, ahead 4 |
-| `agent-systems-benchmark-state-local-llm-testing-recommendations-clean` | `docs/local-llm-testing-recommendations-state-clean` | `355dd134d222` | 0 | behind 38315, ahead 0 |
-| `agent-systems-benchmark-state-native-arm-policy` | `policy/optional-native-arm64` | `78c9ade2c3e0` | 0 | behind 37784, ahead 0 |
-| `agent-systems-benchmark-state-native-arm-task-policy` | `policy/optional-native-arm64-tasks` | `e76b58553f23` | 0 | behind 37749, ahead 0 |
-| `agent-systems-benchmark-state-promotion` | `feature/transactional-promotion` | `4e56e83d4f09` | 0 | behind 48524, ahead 0 |
-| `agent-systems-benchmark-state-shared-coordinator` | `feature/shared-workflow-coordinator` | `e4fecc1e65e6` | 0 | behind 42584, ahead 0 |
-| `agent-systems-benchmark-state-status-size-repair` | `fix/status-size-observation-cleanup` | `4288aec63ff5` | 0 | behind 33156, ahead 2 |
-| `agent-systems-benchmark-state-verify-coordination-content` | `ci/verify-coordination-content` | `431e5041cebf` | 0 | behind 37835, ahead 0 |
-| `ar1307-seed-5b2` | `DETACHED` | `5b2ab9a75e37` | 0 | behind 22150, ahead 0 |
-| `ar1308-ar1307-source` | `DETACHED` | `ab485f767fbd` | 0 | behind 23128, ahead 13 |
-| `asb-ar1540-v0350` | `DETACHED` | `91c2d64d229c` | 29 | behind 936, ahead 0 |
+| `agent-systems-benchmark-state-formal-verification` | `fix/handoffctl-ci-dco-merge` | `dfb7061b0239` | 0 | behind 43219, ahead 0 |
+| `agent-systems-benchmark-state-huawei-mit-headers` | `fix/huawei-mit-license-headers` | `3ff44bd93d1a` | 0 | behind 40203, ahead 0 |
+| `agent-systems-benchmark-state-local-llm-testing-recommendations` | `docs/local-llm-testing-recommendations-state` | `1bd496c86c84` | 0 | behind 38524, ahead 4 |
+| `agent-systems-benchmark-state-local-llm-testing-recommendations-clean` | `docs/local-llm-testing-recommendations-state-clean` | `355dd134d222` | 0 | behind 38322, ahead 0 |
+| `agent-systems-benchmark-state-native-arm-policy` | `policy/optional-native-arm64` | `78c9ade2c3e0` | 0 | behind 37791, ahead 0 |
+| `agent-systems-benchmark-state-native-arm-task-policy` | `policy/optional-native-arm64-tasks` | `e76b58553f23` | 0 | behind 37756, ahead 0 |
+| `agent-systems-benchmark-state-promotion` | `feature/transactional-promotion` | `4e56e83d4f09` | 0 | behind 48531, ahead 0 |
+| `agent-systems-benchmark-state-shared-coordinator` | `feature/shared-workflow-coordinator` | `e4fecc1e65e6` | 0 | behind 42591, ahead 0 |
+| `agent-systems-benchmark-state-status-size-repair` | `fix/status-size-observation-cleanup` | `4288aec63ff5` | 0 | behind 33163, ahead 2 |
+| `agent-systems-benchmark-state-verify-coordination-content` | `ci/verify-coordination-content` | `431e5041cebf` | 0 | behind 37842, ahead 0 |
+| `ar1307-seed-5b2` | `DETACHED` | `5b2ab9a75e37` | 0 | behind 22157, ahead 0 |
+| `ar1308-ar1307-source` | `DETACHED` | `ab485f767fbd` | 0 | behind 23135, ahead 13 |
+| `asb-ar1540-v0350` | `DETACHED` | `91c2d64d229c` | 29 | behind 943, ahead 0 |
 | changed files | - | - | - | `coordinator.vendor.json`, `docs/agent-workflow-coordinator.md`, `tests/test_handoffctl.py`, `tests/test_sqlite_storage.py`, `tools/handoffctl.py`, `tools/sqlite_storage.py`, `tools/status_renderer.py`, `tools/upgrade_commands.py`, `tools/admission_lease.py`, `tools/board_metrics.py`, `tools/checkpoint_records.py`, `tools/directive_records.py`, `tools/hierarchy.py`, `tools/lifecycle_trace.py`, `tools/lock_domain.py`, `tools/lock_domain_scope.py`, `tools/mutation_fence.py`, `tools/oracle_lifecycle.py`, `tools/production_upgrade_binding.py`, `tools/rollback_control_store.py`, `tools/rollback_evidence.py`, `tools/rollback_records.py`, `tools/runtime_bootstrap.py`, `tools/session_records.py`, `tools/sqlite_wal_lifecycle.py`, `tools/task_spec.py`, `tools/upgrade_authority.py`, `tools/upgrade_binding.py`, `tools/upgrade_identity.py` |
-| `asb-state-ar1198` | `ar1198-catalog-digest` | `f660ec7db80c` | 2 | behind 32879, ahead 0 |
+| `asb-state-ar1198` | `ar1198-catalog-digest` | `f660ec7db80c` | 2 | behind 32886, ahead 0 |
 | changed files | - | - | - | `plans/AR-1198.md`, `tasks/AR-1198.md` |
-| `review-ar1308-e11` | `DETACHED` | `e11adae64fc3` | 0 | behind 23037, ahead 3 |
+| `review-ar1308-e11` | `DETACHED` | `e11adae64fc3` | 0 | behind 23044, ahead 3 |
