@@ -1,5 +1,7 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1397](../tasks/AR-1397-protected-main-postmerge-concurrency-repair.md) | [AR-1337](../tasks/AR-1337-protected-main-merge-tree-repair-openrouter.md) | [AR-1495](../tasks/AR-1495-development-unverified-bundle-profile.md) |
+| [AR-1398](../tasks/AR-1398-signed-protected-main-recovery.md) | [AR-1337](../tasks/AR-1337-protected-main-merge-tree-repair-openrouter.md) | [AR-1421](../tasks/AR-1421-protected-main-literature-merge-race.md) |
 | [AR-1399](../tasks/AR-1399-literature-workload-registry-completeness.md) | [AR-1394](../tasks/AR-1394-literature-workload-registry.md) | [AR-1396](../tasks/AR-1396-literature-workload-selection.md), [AR-1400](../tasks/AR-1400-literature-catalog-activation.md), [AR-1408](../tasks/AR-1408-literature-inventory-closure.md) |
 | [AR-1400](../tasks/AR-1400-literature-catalog-activation.md) | [AR-1396](../tasks/AR-1396-literature-workload-selection.md), [AR-1399](../tasks/AR-1399-literature-workload-registry-completeness.md) | [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md), [AR-1404](../tasks/AR-1404-literature-documentation-matrix.md), [AR-1408](../tasks/AR-1408-literature-inventory-closure.md) |
 | [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md) | [AR-1395](../tasks/AR-1395-literature-workload-adapters.md), [AR-1400](../tasks/AR-1400-literature-catalog-activation.md) | [AR-1402](../tasks/AR-1402-literature-cli-dispatch-integration.md), [AR-1409](../tasks/AR-1409-interactive-literature-adapters.md), [AR-1411](../tasks/AR-1411-repository-terminal-adapters.md), [AR-1412](../tasks/AR-1412-code-generation-control-adapters.md), [AR-1413](../tasks/AR-1413-long-horizon-performance-adapters.md), [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md) |
@@ -184,9 +186,10 @@
 | [AR-1594](../tasks/AR-1594.md) | [AR-1576](../tasks/AR-1576.md) | [AR-1590](../tasks/AR-1590.md) |
 | [AR-1595](../tasks/AR-1595.md) | [AR-1592](../tasks/AR-1592.md), [AR-1593](../tasks/AR-1593.md) | [AR-1596](../tasks/AR-1596.md) |
 | [AR-1596](../tasks/AR-1596.md) | [AR-1590](../tasks/AR-1590.md), [AR-1595](../tasks/AR-1595.md) | [AR-1597](../tasks/AR-1597.md) |
-| [AR-1597](../tasks/AR-1597.md) | [AR-1596](../tasks/AR-1596.md) | [AR-1598](../tasks/AR-1598.md) |
+| [AR-1597](../tasks/AR-1597.md) | [AR-1596](../tasks/AR-1596.md) | [AR-1598](../tasks/AR-1598.md), [AR-1600](../tasks/AR-1600.md) |
 | [AR-1598](../tasks/AR-1598.md) | [AR-1588](../tasks/AR-1588.md), [AR-1589](../tasks/AR-1589.md), [AR-1591](../tasks/AR-1591.md), [AR-1597](../tasks/AR-1597.md) | None |
-| [AR-1599](../tasks/AR-1599.md) | [AR-1563](../tasks/AR-1563.md), [AR-1564](../tasks/AR-1564.md), [AR-1568](../tasks/AR-1568.md), [AR-1588](../tasks/AR-1588.md) | None |
+| [AR-1599](../tasks/AR-1599.md) | [AR-1563](../tasks/AR-1563.md), [AR-1564](../tasks/AR-1564.md), [AR-1568](../tasks/AR-1568.md), [AR-1588](../tasks/AR-1588.md) | [AR-1600](../tasks/AR-1600.md) |
+| [AR-1600](../tasks/AR-1600.md) | [AR-1597](../tasks/AR-1597.md), [AR-1599](../tasks/AR-1599.md) | None |
 
 ## Complete AR inventory
 
@@ -277,7 +280,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (51)
+### Planned (52)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -301,6 +304,7 @@
 | P0 | [AR-1589](../tasks/AR-1589.md): ASB development-channel provenance and fault matrix | Unclaimed | Qualify ASB development-channel identity, metadata integrity, and cleanup failure paths. | Promote after AR-1588; implement the development-channel provenance envelope and adversarial fault matrix without weakening stable verification. |
 | P0 | [AR-1591](../tasks/AR-1591.md): Post-release fresh-clone ASB consumption | Unclaimed | Qualify fresh-clone consumption of the released development ASB journey. | Promote after the inherited-fd bridge and final cross-project qualification are released; run the fresh-clone post-release dev-channel journey and record exact evidence. |
 | P0 | [AR-1598](../tasks/AR-1598.md): Fresh-user development qualification | Unclaimed | Prove install-to-wizard-to-benchmark-to-offline-comparison works for a fresh development user. | Run the disposable fresh-user default-dev qualification after the fault-matrix runner is released. |
+| P0 | [AR-1600](../tasks/AR-1600.md): Bounded development build-artifact staging | Unclaimed | Keep normal development TUI builds within explicit source and artifact quotas. | Promote and implement bounded private Cargo target staging after the real paired qualification identifies the workspace quota failure. |
 | P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
 | P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
 | P1 | [AR-0810](../tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Unclaimed | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project&#x27;s GitHub Pages site. |
@@ -543,6 +547,3 @@
 | P0 | [AR-1505](../tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | Unclaimed | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | No further AR-1505 action; merge and post-merge assurance complete. |
 | P0 | [AR-1513](../tasks/AR-1513-authenticated-lease-dispatch-bridge.md): Authenticated lease-to-live-dispatch bridge | Unclaimed | Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch. | PR #383 merged at 47329e35; monitor post-merge workflows 36550477933, 36550477996, 36550478002, 36550478037, 36550478039, 36550478042, 36550478232 to terminal success, then verify protected main and close AR. |
 | P0 | [AR-1514](../tasks/AR-1514-runtime-auth-reconciliation.md): Reconciled development auth handoff runtime | Unclaimed | Repair ASB development-runtime reconciliation between digest-only enrollment and helper invocation. | Complete; PR #386 merged at bf89a45ddd71af96e6d4b6954320e199e147f83e. Protected main tree equals reviewed topic and post-merge auth-focused ASB tests pass. Paired asb-tui AR-1323 qualification remains external. |
-| P0 | [AR-1515](../tasks/AR-1515-ar1307-runner-ci-oom-repair.md): AR-1307 runner CI repair | Unclaimed | Triage complete: AR-1307 runner admission and diagnostics are intact; remaining failure is workload capacity under the unchanged 3G/3G contract. | No runner source repair remains; AR-1309 owns the separately reviewed capacity/model-reduction decision. |
-| P0 | [AR-1516](../tasks/AR-1516-ar1308-qemu-fixture-evidence-repair.md): AR-1308 QEMU fixture repair | Unclaimed | Fixture repair passed boot/transient/JAR checks; full tier timed out at 1700s without attestation. | Close fixture repair; hand timeout to AR-1309 for capacity/model decision. |
-| P0 | [AR-1517](../tasks/AR-1517-ar1309-capacity-decision-unblock.md): AR-1309 capacity decision | Unclaimed | Select a reviewed AR-1309 capacity/model contract after runner failure. | Classify evidence and select AR-1309&#x27;s capacity/model contract. |

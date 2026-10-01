@@ -3562,6 +3562,20 @@
 | Summary | Repair fresh-user dev installation provenance, toolchain discovery, and atomic publication. |
 | Next action | Release the completed exact-provenance implementation after coordinator acceptance of the versioned specification and receipt. |
 
+### AR-1600 — Bounded development build-artifact staging
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Keep normal development TUI builds within explicit source and artifact quotas. |
+| Next action | Promote and implement bounded private Cargo target staging after the real paired qualification identifies the workspace quota failure. |
+
 
 ## Dependency graph
 
@@ -4228,6 +4242,10 @@ flowchart LR
         AR_1598["AR-1598 - Planned"]:::status_planned
         AR_1599["AR-1599 - Done"]:::status_done
     end
+    subgraph series_16["16 - Additional work"]
+        direction TB
+        AR_1600["AR-1600 - Planned"]:::status_planned
+    end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
     AR_0001 --> AR_0101
@@ -4585,28 +4603,3 @@ flowchart LR
     AR_0508 --> AR_0515
     AR_0508 --> AR_0850
     AR_0509 --> AR_0515
-    AR_0510 --> AR_0515
-    AR_0511 --> AR_0515
-    AR_0512 --> AR_0515
-    AR_0513 --> AR_0515
-    AR_0514 --> AR_0515
-    AR_0517 --> AR_0518
-    AR_0517 --> AR_0520
-    AR_0518 --> AR_0519
-    AR_0601 --> AR_0405
-    AR_0601 --> AR_0602
-    AR_0601 --> AR_0604
-    AR_0601 --> AR_1015
-    AR_0602 --> AR_1015
-    AR_0603 --> AR_0601
-    AR_0604 --> AR_0602
-    AR_0604 --> AR_1015
-    AR_0701 --> AR_0317
-    AR_0701 --> AR_0702
-    AR_0701 --> AR_0703
-    AR_0701 --> AR_0704
-    AR_0701 --> AR_0707
-    AR_0701 --> AR_0820
-    AR_0701 --> AR_0848
-    AR_0701 --> AR_1007
-    AR_0702 --> AR_0807

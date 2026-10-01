@@ -24,13 +24,13 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 36853582242 | `9c6a69a0f91c` | push | Cross-repository development broker qualification | completed:success |
 | 36853582232 | `9c6a69a0f91c` | push | Credential-free benchmark path | completed:success |
-| 36853582187 | `9c6a69a0f91c` | push | Repository quality | in_progress:- |
-| 36853582172 | `9c6a69a0f91c` | push | Emulated aarch64 portability | in_progress:- |
+| 36853582187 | `9c6a69a0f91c` | push | Repository quality | completed:success |
+| 36853582172 | `9c6a69a0f91c` | push | Emulated aarch64 portability | completed:success |
 | 36853582145 | `9c6a69a0f91c` | push | Hosted portability and native qualification | completed:success |
 | 36853582141 | `9c6a69a0f91c` | push | Huawei MIT source headers | completed:success |
 | 36853582135 | `9c6a69a0f91c` | push | Formal assurance | completed:success |
 | 36853582132 | `9c6a69a0f91c` | push | Fault assurance | completed:success |
-| 36853582113 | `9c6a69a0f91c` | push | Rust verification | in_progress:- |
+| 36853582113 | `9c6a69a0f91c` | push | Rust verification | completed:success |
 | 36853111161 | `39af93e9b0e7` | pull_request | Hosted portability and native qualification | completed:success |
 | 36853111027 | `39af93e9b0e7` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36853110965 | `39af93e9b0e7` | pull_request | Formal assurance | completed:success |
