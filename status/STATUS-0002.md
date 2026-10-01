@@ -3420,7 +3420,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Qualify ASB development-channel identity, metadata integrity, and cleanup failure paths. |
-| Next action | Promote after AR-1588; implement the development-channel provenance envelope and adversarial fault matrix without weakening stable verification. |
+| Next action | Run exact ASB dev provenance envelope and adversarial fault-matrix qualification on c94586d; capture machine-readable evidence and preserve prior-install assertions before independent review. |
 
 ### AR-1590 — Inherited-fd cross-repository qualification
 
@@ -4578,5 +4578,3 @@ flowchart LR
     AR_0401 --> AR_0506
     AR_0401 --> AR_0507
     AR_0401 --> AR_0508
-    AR_0401 --> AR_0509
-    AR_0401 --> AR_0510

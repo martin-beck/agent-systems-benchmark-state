@@ -206,7 +206,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1589](../tasks/AR-1589.md): ASB development-channel provenance and fault matrix | ar1199-provenance-matrix | Qualify ASB development-channel identity, metadata integrity, and cleanup failure paths. | Promote after AR-1588; implement the development-channel provenance envelope and adversarial fault matrix without weakening stable verification. |
+| P0 | [AR-1589](../tasks/AR-1589.md): ASB development-channel provenance and fault matrix | ar1199-provenance-matrix | Qualify ASB development-channel identity, metadata integrity, and cleanup failure paths. | Run exact ASB dev provenance envelope and adversarial fault-matrix qualification on c94586d; capture machine-readable evidence and preserve prior-install assertions before independent review. |
 
 ### Blocked (82)
 
