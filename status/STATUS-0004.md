@@ -142,7 +142,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1567](../tasks/AR-1567.md): ASB development trusted toolchain discovery | ar1567-toolchain-discovery | Implement trusted development cargo discovery | PR #401 rebased onto current main 6fab08b at exact head 50a33e213e01959dfa4e071e0b1b72cb6fab6911; hosted checks rerunning and independent review required before merge. |
+| P0 | [AR-1567](../tasks/AR-1567.md): ASB development trusted toolchain discovery | ar1567-toolchain-discovery | Implement trusted development cargo discovery | PR #401 is rebased onto current main 2eef71c at exact head bac495d0871c72b63bed9c55b2d2c557115a471d; hosted checks rerunning and independent review required before merge. |
 | P0 | [AR-1570](../tasks/AR-1570.md): ASB dynamic development broker handoff | ar1570-dynamic-broker-handoff | Implement dynamic development broker handoff | Independent review and hosted green checks for PR #403 at f0b55e9f9e3056003b5bf949fc54ea7425c494ab |
 
 ### Blocked (81)

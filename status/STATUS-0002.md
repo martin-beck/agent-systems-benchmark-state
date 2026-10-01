@@ -3252,7 +3252,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Implement trusted development cargo discovery |
-| Next action | PR #401 rebased onto current main 6fab08b at exact head 50a33e213e01959dfa4e071e0b1b72cb6fab6911; hosted checks rerunning and independent review required before merge. |
+| Next action | PR #401 is rebased onto current main 2eef71c at exact head bac495d0871c72b63bed9c55b2d2c557115a471d; hosted checks rerunning and independent review required before merge. |
 
 ### AR-1568 — ASB exact current-main identity binding
 
