@@ -164,11 +164,11 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1576](../tasks/AR-1576.md): ASB development bootstrap projection | ar1576-bootstrap-projection | Make the development control backend satisfy the current asb-tui bootstrap projection without production credentials. | Promote and implement the development-only bootstrap projection contract required by current asb-tui startup. |
+| P0 | [AR-1576](../tasks/AR-1576.md): ASB development bootstrap projection | Unclaimed | Make the development control backend satisfy the current asb-tui bootstrap projection without production credentials. | Promote and implement the development-only bootstrap projection contract required by current asb-tui startup. |
 
 ### Blocked (82)
 
