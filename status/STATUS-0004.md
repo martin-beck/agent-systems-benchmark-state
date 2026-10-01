@@ -183,6 +183,12 @@
 | P0 | [AR-1590](../tasks/AR-1590.md): Inherited-fd cross-repository qualification | ar1590-inherited-fd-bridge | Complete real ASB-to-asb-tui inherited-fd broker qualification after the PTY seam exists. | Await coverage/Rust/portability repair checks, then fresh exact-head review; ASB AR-1592 and AR-1593 catalog/version alignment remain prerequisites before release. |
 | P0 | [AR-1592](../tasks/AR-1592.md): ASB control catalog compatibility | ar1592-catalog-compat | Add ASB control-protocol catalog compatibility required by the released asb-tui bootstrap journey. | Await all PR #413 hosted checks, then obtain independent exact-head review and release the typed ASB catalog implementation; AR-1593 owns the follow-up common-version alignment. |
 
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1594](../tasks/AR-1594.md): Qualification coverage isolation | Unclaimed | Keep the real cross-repository qualification while preserving the enforced workspace coverage floor. | Repair PR #412 coverage isolation by feature-gating the external pinned-TUI qualification test and running it only in its dedicated workflow. |
+
 ### Blocked (82)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -270,7 +276,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (53)
+### Planned (52)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -295,7 +301,6 @@
 | P0 | [AR-1589](../tasks/AR-1589.md): ASB development-channel provenance and fault matrix | Unclaimed | Qualify ASB development-channel identity, metadata integrity, and cleanup failure paths. | Promote after AR-1588; implement the development-channel provenance envelope and adversarial fault matrix without weakening stable verification. |
 | P0 | [AR-1591](../tasks/AR-1591.md): Post-release fresh-clone ASB consumption | Unclaimed | Qualify fresh-clone consumption of the released development ASB journey. | Promote after the inherited-fd bridge and final cross-project qualification are released; run the fresh-clone post-release dev-channel journey and record exact evidence. |
 | P0 | [AR-1593](../tasks/AR-1593.md): Catalog protocol version alignment | Unclaimed | Align ASB and asb-tui catalog protocol versions so the real bootstrap can negotiate a common catalog-capable version. | Align the published BenchmarkCatalog version with the TUI common-version matrix, preserve older schema compatibility, and add cross-project negotiation evidence. |
-| P0 | [AR-1594](../tasks/AR-1594.md): Qualification coverage isolation | Unclaimed | Keep the real cross-repository qualification while preserving the enforced workspace coverage floor. | Repair PR #412 coverage isolation by feature-gating the external pinned-TUI qualification test and running it only in its dedicated workflow. |
 | P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
 | P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
 | P1 | [AR-0810](../tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Unclaimed | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project&#x27;s GitHub Pages site. |
@@ -545,4 +550,3 @@
 | P0 | [AR-1520](../tasks/AR-1520.md): AR-1308 reduced-profile runtime qualification | Unclaimed | Reduced profile passes self-contained QEMU: transient admission, bounded models, sanitized non-claiming attestation, and clean poweroff. | Release after exact-head review; retain AR-1307/1308 formal qualification as separate blocked gates. |
 | P0 | [AR-1523](../tasks/AR-1523.md): Platform authority deployment adapter | Unclaimed | Qualify the central orchestration path with deterministic local/mock and strict-replay authority; deployment-owned live authority is optional future hardening, not a development prerequisite. | Development path is unblocked: promote and claim this AR, qualify the existing central orchestrator with deterministic local/mock and strict-replay authority, and run exact-head gates. A deployment-owned authenticated source is optional future production hardening and must not block development qualification. |
 | P0 | [AR-1524](../tasks/AR-1524.md): Repair live-dispatch dependency graph | Unclaimed | Repair the stale AR-1374/1375 dependency cycle and make AR-1523 the canonical live-dispatch successor. | Promote after dependency verification; supersede the stale AR-1375 cycle and route AR-1374 to AR-1523 without changing product code. |
-| P0 | [AR-1526](../tasks/AR-1526.md): First-customer local/replay qualification | Unclaimed | Qualify the merged ASB production-shaped local/mock and strict-replay customer path with sanitized evidence. | No development action remains. Preserve the exact-main first-customer local/mock and strict-replay receipt; live-provider deployment remains optional future hardening. |
