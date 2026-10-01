@@ -3532,7 +3532,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Exercise all setup, recording, replay, benchmark, and recovery failure paths with bounded evidence. |
-| Next action | Await independent review and hosted checks for PR #420 exact head 829f67f9d3f5cacf1328a0b7297733d0c747dd3c; repair only if checks/review identify a concrete issue. |
+| Next action | Await fresh independent review and all hosted checks for PR #420 exact head dd6d9b6; merge with protected two-parent topology only after approval, then verify post-merge and release. |
 
 ### AR-1598 — Fresh-user development qualification
 
@@ -4603,4 +4603,3 @@ flowchart LR
     AR_0604 --> AR_1015
     AR_0701 --> AR_0317
     AR_0701 --> AR_0702
-    AR_0701 --> AR_0703
