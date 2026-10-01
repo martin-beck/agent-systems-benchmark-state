@@ -1,1 +1,32 @@
-{"id":"AR-1612","revision":1,"title":"Selected-workload recording campaign controls","required_evidence":["single selection","all selection","invalid selection rollback","sealed cassette","offline replay with egress denial"],"development_mode":{"missing_authentication":"warning","missing_signatures":"warning","missing_key_management":"warning"}}
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1612.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id":"selection","description":"Selected and explicit all-workload recording requests resolve through the authoritative bounded catalog."},
+    {"id":"wire-sentinel","description":"The all-workloads sentinel passes client and server admission, expands to a non-empty bounded matrix, and binds the response."},
+    {"id":"rollback","description":"Invalid, empty, duplicate, and oversized selections fail closed without partially activating a campaign."},
+    {"id":"offline","description":"A sealed cassette can be activated for offline replay with egress denied and digest-bound comparison."},
+    {"id":"development-mode","description":"Missing authentication, signatures, and key management remain visible development-only warnings and never block the prototype."}
+  ],
+  "definition_of_done": [
+    "Merged exact-main implementation passes focused recording, endpoint, and full hosted checks.",
+    "Independent review verifies the real wire admission path and bounded all-workloads behavior.",
+    "Post-merge receipt records exact protected-main head and exact-main checks."
+  ],
+  "inputs": [
+    {"id":"catalog","description":"Authoritative agent/provider/model/workload catalog."},
+    {"id":"recording-protocol","description":"Versioned recording campaign request, response binding, sealing, and offline replay protocol."}
+  ],
+  "outputs": [
+    {"id":"recording-controls","description":"Selected/all workload recording campaign controls with bounded execution and sealed offline replay activation."}
+  ],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["credential-bypass", "secret-output"],
+  "required_evidence_classes": ["contract-test", "mechanical", "environmental"],
+  "gates": [
+    {"id":"exact-main","description":"Merged implementation is exact origin/main."},
+    {"id":"hosted","description":"All required PR and exact-main checks pass on the merged head."}
+  ],
+  "development_mode": {"missing_authentication":"warning", "missing_signatures":"warning", "missing_key_management":"warning"}
+}
