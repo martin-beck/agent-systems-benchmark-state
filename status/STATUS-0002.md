@@ -3602,7 +3602,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Expose real cassette identity, sealing, and replay dispatch to the TUI without fabricated continuity. |
-| Next action | Independent review required for PR #424 at ac04977b5f69e69eade48158348ea329863443b8; hosted checks pending. |
+| Next action | Fresh independent review required for PR #424 at aab4e7c; hosted checks pending. |
 
 
 ## Dependency graph
@@ -4585,3 +4585,4 @@ flowchart LR
     AR_0503 --> AR_0314
     AR_0503 --> AR_0504
     AR_0503 --> AR_0505
+    AR_0503 --> AR_0506
