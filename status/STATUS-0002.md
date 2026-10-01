@@ -3532,7 +3532,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Exercise all setup, recording, replay, benchmark, and recovery failure paths with bounded evidence. |
-| Next action | Build the isolated fault-matrix runner once cassette lifecycle behavior is released. |
+| Next action | Push signed PR for exact head 32b5c514f3ca07eeaf18f3f0cb0c0b0b652f2bb0; run hosted gates and obtain independent review before merge. |
 
 ### AR-1598 — Fresh-user development qualification
 
@@ -4616,5 +4616,3 @@ flowchart LR
     AR_0802 --> AR_0872
     AR_0802 --> AR_0903
     AR_0803 --> AR_0804
-    AR_0803 --> AR_0805
-    AR_0803 --> AR_0813
