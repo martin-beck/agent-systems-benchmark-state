@@ -3258,11 +3258,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1568-current-main-identity |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Bind development metadata and broker descriptors to the exact ASB source identity. |
@@ -3911,7 +3911,7 @@ flowchart LR
         AR_1565["AR-1565 - Done"]:::status_done
         AR_1566["AR-1566 - Open"]:::status_open
         AR_1567["AR-1567 - In progress"]:::status_in_progress
-        AR_1568["AR-1568 - In progress"]:::status_in_progress
+        AR_1568["AR-1568 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4768,3 +4768,5 @@ flowchart LR
     AR_1238 --> AR_1275
     AR_1238 --> AR_1276
     AR_1238 --> AR_1277
+    AR_1238 --> AR_1278
+    AR_1238 --> AR_1279
