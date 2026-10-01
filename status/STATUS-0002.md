@@ -3646,6 +3646,20 @@
 | Summary | Expose catalog, record, seal, reopen, offline replay, and comparison through the real ASB control backend. |
 | Next action | Release admission after receipt acceptance. |
 
+### AR-1606 — Cross-project cassette lifecycle qualification
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Real paired record/seal/reopen/offline-replay/compare qualification fixture |
+| Next action | Promote and implement the paired ControlServer/PTY cassette lifecycle qualification against TUI AR-1601. |
+
 
 ## Dependency graph
 
@@ -4320,6 +4334,7 @@ flowchart LR
         AR_1603["AR-1603 - Planned"]:::status_planned
         AR_1604["AR-1604 - Planned"]:::status_planned
         AR_1605["AR-1605 - Done"]:::status_done
+        AR_1606["AR-1606 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4557,24 +4572,3 @@ flowchart LR
     AR_0313 --> AR_0891
     AR_0313 --> AR_1100
     AR_0313 --> AR_1326
-    AR_0314 --> AR_0315
-    AR_0314 --> AR_0804
-    AR_0314 --> AR_0808
-    AR_0314 --> AR_0871
-    AR_0315 --> AR_0857
-    AR_0315 --> AR_0863
-    AR_0315 --> AR_0879
-    AR_0315 --> AR_0891
-    AR_0315 --> AR_0903
-    AR_0315 --> AR_1110
-    AR_0315 --> AR_1327
-    AR_0316 --> AR_0876
-    AR_0317 --> AR_0857
-    AR_0317 --> AR_0863
-    AR_0317 --> AR_0876
-    AR_0318 --> AR_0314
-    AR_0318 --> AR_0319
-    AR_0318 --> AR_0320
-    AR_0318 --> AR_0869
-    AR_0318 --> AR_0876
-    AR_0318 --> AR_1325
