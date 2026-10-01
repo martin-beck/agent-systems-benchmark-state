@@ -3602,7 +3602,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Expose real cassette identity, sealing, and replay dispatch to the TUI without fabricated continuity. |
-| Next action | Fresh independent review required for PR #424 at 9c1392b; hosted coverage checks pending. |
+| Next action | Fresh independent review required for PR #424 at 7ab4cbb; hosted coverage checks pending. |
 
 
 ## Dependency graph
