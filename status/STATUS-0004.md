@@ -208,7 +208,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1591](../tasks/AR-1591.md): Post-release fresh-clone ASB consumption | ar1496-postrelease-consumption | Qualify fresh-clone consumption of the released development ASB journey. | Promote after the inherited-fd bridge and final cross-project qualification are released; run the fresh-clone post-release dev-channel journey and record exact evidence. |
+| P0 | [AR-1591](../tasks/AR-1591.md): Post-release fresh-clone ASB consumption | ar1496-postrelease-consumption | Qualify fresh-clone consumption of the released development ASB journey. | Obtain independent review of exact fresh-clone receipt, then release AR-1591. |
 
 ### Blocked (82)
 

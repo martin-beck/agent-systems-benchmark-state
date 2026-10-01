@@ -3448,7 +3448,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Qualify fresh-clone consumption of the released development ASB journey. |
-| Next action | Promote after the inherited-fd bridge and final cross-project qualification are released; run the fresh-clone post-release dev-channel journey and record exact evidence. |
+| Next action | Obtain independent review of exact fresh-clone receipt, then release AR-1591. |
 
 ### AR-1592 — ASB control catalog compatibility
 
@@ -4573,3 +4573,7 @@ flowchart LR
     AR_0317 --> AR_0863
     AR_0317 --> AR_0876
     AR_0318 --> AR_0314
+    AR_0318 --> AR_0319
+    AR_0318 --> AR_0320
+    AR_0318 --> AR_0869
+    AR_0318 --> AR_0876
