@@ -1,0 +1,9 @@
+# AR-1590 acceptance receipt
+
+- Exact repair PR: ASB PR #416
+- Reviewed source head: f439b357ecc4edc5e37c7eebb9de2807d1a3cc5d
+- Merge commit: 67ac518fa3490fc179b09fd89e454332bdfaa585
+- Independent review: APPROVE at exact head; the only source change makes the qualification command execute the explicitly ignored test with `--ignored`.
+- Local evidence: exact qualification 1/1 using asb-tui source tree 38e076b75acb90ab29a703345c9d9d770e235b96 and binary SHA-256 254fcc05ec065881e259b2fbffe088a6c89a68f00e5cfc73542bdf3ab0dfa4eb.
+- Hosted evidence: all required PR checks passed, including the exact inherited-fd journey, credential-free benchmark, Rust, repository quality, formal assurance, fault assurance, portability, and supply-chain checks.
+- Classification: contract-test/mechanical/hosted; development-only and credential-free.
