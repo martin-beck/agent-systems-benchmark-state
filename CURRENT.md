@@ -10,6 +10,12 @@ Never edit this file directly.
 | P0 | [AR-1590](tasks/AR-1590.md): Inherited-fd cross-repository qualification | Complete real ASB-to-asb-tui inherited-fd broker qualification after the PTY seam exists. | Await coverage/Rust/portability repair checks, then fresh exact-head review; ASB AR-1592 and AR-1593 catalog/version alignment remain prerequisites before release. | ar1590-inherited-fd-bridge |
 | P0 | [AR-1595](tasks/AR-1595.md): Development setup capability contract | Expose provider, authentication, model, agent, and default-selection capabilities for the development wizard. | Rerun PR #415 hosted checks and obtain independent exact-head review at 25fe156c; do not merge until both approve. | ar1595-development-setup |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1588](tasks/AR-1588.md): ASB development-channel command surface | Make ASB lifecycle commands consistently select and default the development release channel. | Promote after dependencies are released; implement and qualify consistent --channel selection with default dev across ASB lifecycle commands. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -118,7 +124,6 @@ Never edit this file directly.
 | P0 | [AR-1227](tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. | - |
 | P0 | [AR-1545](tasks/AR-1545.md): AR-1307 formal-input readiness repair | Audit and repair the AR-1307 formal-input handoff after development runner integration, without executing qualification. | Formal-only work: after AR-1535 supplies reviewed inputs, inventory and independently verify every exact AR-1307 formal input for AR-1522. Do not block or alter the completed unsigned-development path. | - |
 | P0 | [AR-1546](tasks/AR-1546.md): AR-1308 formal capacity-input readiness repair | Audit and repair the AR-1308 capacity/input handoff after diagnostic QEMU integration, without executing qualification. | Formal-only work: after AR-1531 and AR-1536, verify the exact 8 GiB/8 GiB fixture and AR-1308 formal inputs for AR-1522. Do not block or alter the completed unsigned-development path. | - |
-| P0 | [AR-1588](tasks/AR-1588.md): ASB development-channel command surface | Make ASB lifecycle commands consistently select and default the development release channel. | Promote after dependencies are released; implement and qualify consistent --channel selection with default dev across ASB lifecycle commands. | - |
 | P0 | [AR-1589](tasks/AR-1589.md): ASB development-channel provenance and fault matrix | Qualify ASB development-channel identity, metadata integrity, and cleanup failure paths. | Promote after AR-1588; implement the development-channel provenance envelope and adversarial fault matrix without weakening stable verification. | - |
 | P0 | [AR-1591](tasks/AR-1591.md): Post-release fresh-clone ASB consumption | Qualify fresh-clone consumption of the released development ASB journey. | Promote after the inherited-fd bridge and final cross-project qualification are released; run the fresh-clone post-release dev-channel journey and record exact evidence. | - |
 | P0 | [AR-1596](tasks/AR-1596.md): Cassette and offline lifecycle integration | Provide deterministic cassette recording and provider-free replay for benchmark workloads. | Implement cassette recording/sealing and offline replay lifecycle after the setup capability contract is released. | - |

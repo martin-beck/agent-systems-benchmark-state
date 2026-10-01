@@ -194,6 +194,12 @@
 | P0 | [AR-1590](../tasks/AR-1590.md): Inherited-fd cross-repository qualification | ar1590-inherited-fd-bridge | Complete real ASB-to-asb-tui inherited-fd broker qualification after the PTY seam exists. | Await coverage/Rust/portability repair checks, then fresh exact-head review; ASB AR-1592 and AR-1593 catalog/version alignment remain prerequisites before release. |
 | P0 | [AR-1595](../tasks/AR-1595.md): Development setup capability contract | ar1595-development-setup | Expose provider, authentication, model, agent, and default-selection capabilities for the development wizard. | Rerun PR #415 hosted checks and obtain independent exact-head review at 25fe156c; do not merge until both approve. |
 
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1588](../tasks/AR-1588.md): ASB development-channel command surface | Unclaimed | Make ASB lifecycle commands consistently select and default the development release channel. | Promote after dependencies are released; implement and qualify consistent --channel selection with default dev across ASB lifecycle commands. |
+
 ### Blocked (82)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -281,7 +287,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (54)
+### Planned (53)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -302,7 +308,6 @@
 | P0 | [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Unclaimed | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. |
 | P0 | [AR-1545](../tasks/AR-1545.md): AR-1307 formal-input readiness repair | Unclaimed | Audit and repair the AR-1307 formal-input handoff after development runner integration, without executing qualification. | Formal-only work: after AR-1535 supplies reviewed inputs, inventory and independently verify every exact AR-1307 formal input for AR-1522. Do not block or alter the completed unsigned-development path. |
 | P0 | [AR-1546](../tasks/AR-1546.md): AR-1308 formal capacity-input readiness repair | Unclaimed | Audit and repair the AR-1308 capacity/input handoff after diagnostic QEMU integration, without executing qualification. | Formal-only work: after AR-1531 and AR-1536, verify the exact 8 GiB/8 GiB fixture and AR-1308 formal inputs for AR-1522. Do not block or alter the completed unsigned-development path. |
-| P0 | [AR-1588](../tasks/AR-1588.md): ASB development-channel command surface | Unclaimed | Make ASB lifecycle commands consistently select and default the development release channel. | Promote after dependencies are released; implement and qualify consistent --channel selection with default dev across ASB lifecycle commands. |
 | P0 | [AR-1589](../tasks/AR-1589.md): ASB development-channel provenance and fault matrix | Unclaimed | Qualify ASB development-channel identity, metadata integrity, and cleanup failure paths. | Promote after AR-1588; implement the development-channel provenance envelope and adversarial fault matrix without weakening stable verification. |
 | P0 | [AR-1591](../tasks/AR-1591.md): Post-release fresh-clone ASB consumption | Unclaimed | Qualify fresh-clone consumption of the released development ASB journey. | Promote after the inherited-fd bridge and final cross-project qualification are released; run the fresh-clone post-release dev-channel journey and record exact evidence. |
 | P0 | [AR-1596](../tasks/AR-1596.md): Cassette and offline lifecycle integration | Unclaimed | Provide deterministic cassette recording and provider-free replay for benchmark workloads. | Implement cassette recording/sealing and offline replay lifecycle after the setup capability contract is released. |
