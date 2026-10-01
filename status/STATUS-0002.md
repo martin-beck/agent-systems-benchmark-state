@@ -3336,7 +3336,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Expose the ASB-side development control producer bridge required by the asb-tui adopted stream. |
-| Next action | Await hosted gates and independent review of PR #405; merge only the identical green head, then release AR-1573 and promote AR-1574. |
+| Next action | Await all hosted gates and independent review of b4813cf; merge only identical green head, then release AR-1573 and promote AR-1574. |
 
 ### AR-1574 — ASB development control transport wiring
 
