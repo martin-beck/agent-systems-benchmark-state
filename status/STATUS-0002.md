@@ -3720,7 +3720,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | open |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -4409,7 +4409,7 @@ flowchart LR
         AR_1608["AR-1608 - Done"]:::status_done
         AR_1609["AR-1609 - Done"]:::status_done
         AR_1611["AR-1611 - Done"]:::status_done
-        AR_1612["AR-1612 - Planned"]:::status_planned
+        AR_1612["AR-1612 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
