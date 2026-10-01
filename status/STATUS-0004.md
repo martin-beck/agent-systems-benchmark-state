@@ -215,7 +215,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1606](../tasks/AR-1606.md): Cross-project cassette lifecycle qualification | ar1496-cross-project-cassette-qualification | Real paired record/seal/reopen/offline-replay/compare qualification fixture | Obtain independent review and hosted checks for PR #426 at 5b4d76c; then merge/release only after exact-head approval. |
+| P0 | [AR-1606](../tasks/AR-1606.md): Cross-project cassette lifecycle qualification | ar1496-cross-project-cassette-qualification | Real paired record/seal/reopen/offline-replay/compare qualification fixture | Rerun hosted PR #426 checks with workflow pin 8b69a7d; obtain independent review on final head before merge/release. |
 
 ### Blocked (82)
 

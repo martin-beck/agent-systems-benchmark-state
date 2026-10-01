@@ -3658,7 +3658,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Real paired record/seal/reopen/offline-replay/compare qualification fixture |
-| Next action | Obtain independent review and hosted checks for PR #426 at 5b4d76c; then merge/release only after exact-head approval. |
+| Next action | Rerun hosted PR #426 checks with workflow pin 8b69a7d; obtain independent review on final head before merge/release. |
 
 ### AR-1607 — OpenRouter provider and model setup
 
