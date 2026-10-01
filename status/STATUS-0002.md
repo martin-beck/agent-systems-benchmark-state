@@ -3518,7 +3518,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Provide deterministic cassette recording and provider-free replay for benchmark workloads. |
-| Next action | Implement cassette recording/sealing and offline replay lifecycle after the setup capability contract is released. |
+| Next action | Obtain independent exact-head review and all hosted checks for PR #418 at d25b153964fa0527281adc444f37ff0d842a0646; do not merge until both approve. |
 
 ### AR-1597 — Fault matrix and deterministic runner
 
@@ -4613,4 +4613,3 @@ flowchart LR
     AR_0801 --> AR_0869
     AR_0802 --> AR_0808
     AR_0802 --> AR_0809
-    AR_0802 --> AR_0872
