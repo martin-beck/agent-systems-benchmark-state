@@ -205,6 +205,12 @@
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1600](../tasks/AR-1600.md): Bounded development build-artifact staging | ar1199-router-impl | Keep normal development TUI builds within explicit source and artifact quotas. | PR #423 exact signed head 714bbcf is based on protected main; await fresh independent review and all hosted checks, then merge/release. |
 
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1602](../tasks/AR-1602.md): Cassette lifecycle control contract | Unclaimed | Expose real cassette identity, sealing, and replay dispatch to the TUI without fabricated continuity. | Promote after the current ASB lifecycle repairs are released; implement and qualify the additive cassette record/seal/replay control contract. |
+
 ### Blocked (82)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -292,7 +298,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (53)
+### Planned (52)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -317,7 +323,6 @@
 | P0 | [AR-1591](../tasks/AR-1591.md): Post-release fresh-clone ASB consumption | Unclaimed | Qualify fresh-clone consumption of the released development ASB journey. | Promote after the inherited-fd bridge and final cross-project qualification are released; run the fresh-clone post-release dev-channel journey and record exact evidence. |
 | P0 | [AR-1598](../tasks/AR-1598.md): Fresh-user development qualification | Unclaimed | Prove install-to-wizard-to-benchmark-to-offline-comparison works for a fresh development user. | Run the disposable fresh-user default-dev qualification after the fault-matrix runner is released. |
 | P0 | [AR-1601](../tasks/AR-1601.md): Development-channel publication and provenance qualification | Unclaimed | Qualify current-main dev-channel publication and exact provenance across ASB and asb-tui. | Promote after ASB AR-1600 and the paired TUI channel surface are released; run the exact-head dev-channel publication and provenance qualification. |
-| P0 | [AR-1602](../tasks/AR-1602.md): Cassette lifecycle control contract | Unclaimed | Expose real cassette identity, sealing, and replay dispatch to the TUI without fabricated continuity. | Promote after the current ASB lifecycle repairs are released; implement and qualify the additive cassette record/seal/replay control contract. |
 | P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
 | P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
 | P1 | [AR-0810](../tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Unclaimed | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project&#x27;s GitHub Pages site. |
@@ -552,4 +557,3 @@
 | P0 | [AR-1493](../tasks/AR-1493-release-authority-enrollment-handoff.md): Release-authority enrollment handoff | Unclaimed | Define and validate the external release-authority enrollment and signed-bundle verification handoff. | Reconcile and doctor state, then release AR-1493 done ownerless with complete merge and post-merge evidence. |
 | P0 | [AR-1495](../tasks/AR-1495-development-unverified-bundle-profile.md): Development-only unverified bundle profile | Unclaimed | Add an explicit development-only unverified bundle profile without weakening production or customer-release verification. | Monitor PR #373 fresh exact signed+DCO head 4d63a66; merge only after all required checks and independent review are green. |
 | P0 | [AR-1496](../tasks/AR-1496-runtime-owned-provider-capture-control.md): Runtime-owned provider capture and control activation | Unclaimed | Complete runtime-owned provider capture, tuple cassette reconciliation and verified offline activation required by the setup wizard. | Done: PR #375 merged at protected main 8c53a4a62ecaa6fecc9eb195a105fc368a3395c8; independent review passed and all seven post-merge workflows succeeded. |
-| P0 | [AR-1497](../tasks/AR-1497-ar1495-topology-repair.md): AR-1495 protected-main topology repair | Unclaimed | Repair AR-1495 protected-main synchronization topology without changing product semantics. | Monitor eight post-merge workflows for exact protected-main merge 45df6590; release AR-1497 only after all terminal SUCCESS. |

@@ -9,6 +9,12 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1600](tasks/AR-1600.md): Bounded development build-artifact staging | Keep normal development TUI builds within explicit source and artifact quotas. | PR #423 exact signed head 714bbcf is based on protected main; await fresh independent review and all hosted checks, then merge/release. | ar1199-router-impl |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1602](tasks/AR-1602.md): Cassette lifecycle control contract | Expose real cassette identity, sealing, and replay dispatch to the TUI without fabricated continuity. | Promote after the current ASB lifecycle repairs are released; implement and qualify the additive cassette record/seal/replay control contract. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -121,7 +127,6 @@ Never edit this file directly.
 | P0 | [AR-1591](tasks/AR-1591.md): Post-release fresh-clone ASB consumption | Qualify fresh-clone consumption of the released development ASB journey. | Promote after the inherited-fd bridge and final cross-project qualification are released; run the fresh-clone post-release dev-channel journey and record exact evidence. | - |
 | P0 | [AR-1598](tasks/AR-1598.md): Fresh-user development qualification | Prove install-to-wizard-to-benchmark-to-offline-comparison works for a fresh development user. | Run the disposable fresh-user default-dev qualification after the fault-matrix runner is released. | - |
 | P0 | [AR-1601](tasks/AR-1601.md): Development-channel publication and provenance qualification | Qualify current-main dev-channel publication and exact provenance across ASB and asb-tui. | Promote after ASB AR-1600 and the paired TUI channel surface are released; run the exact-head dev-channel publication and provenance qualification. | - |
-| P0 | [AR-1602](tasks/AR-1602.md): Cassette lifecycle control contract | Expose real cassette identity, sealing, and replay dispatch to the TUI without fabricated continuity. | Promote after the current ASB lifecycle repairs are released; implement and qualify the additive cassette record/seal/replay control contract. | - |
 | P1 | [AR-0808](tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. | - |
 | P1 | [AR-0809](tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. | - |
 | P1 | [AR-0810](tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project's GitHub Pages site. | - |
