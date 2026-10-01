@@ -2,8 +2,8 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `677d990519335139ac64fd06dafba2777d35342c`
-- Local origin/main: `677d990519335139ac64fd06dafba2777d35342c`
+- Product remote main: `9c6a69a0f91c2e025a8e99964e0983afaeb60d90`
+- Local origin/main: `9c6a69a0f91c2e025a8e99964e0983afaeb60d90`
 - Primary worktree head: `bd7d10d4a760a84fa42de2b1fa9e97e8ea85ba09`
 
 ## Open pull requests
@@ -17,21 +17,20 @@ Generated from local Git and GitHub. Do not edit.
 | #365 | `dependabot/cargo/rcgen-0.14.10@8604b5977544` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump rcgen from 0.14.7 to 0.14.10 |
 | #366 | `dependabot/cargo/schemars-1.2.2@047b52b0b5b9` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump schemars from 1.0.4 to 1.2.2 |
 | #384 | `feature/ar-1508-platform-owned-authority-provider@2c70f81100ca` | `main` | DIRTY | - | feat(runtime): platform-owned authority provider |
-| #420 | `feature/ar-1597-fault-matrix@797e795ebf50` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(asb): add bounded fault matrix runner |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36851137532 | `677d99051933` | push | Cross-repository development broker qualification | completed:success |
-| 36851137492 | `677d99051933` | push | Huawei MIT source headers | completed:success |
-| 36851137488 | `677d99051933` | push | Formal assurance | completed:success |
-| 36851137481 | `677d99051933` | push | Hosted portability and native qualification | completed:success |
-| 36851137470 | `677d99051933` | push | Repository quality | completed:success |
-| 36851137430 | `677d99051933` | push | Credential-free benchmark path | completed:success |
-| 36851137429 | `677d99051933` | push | Fault assurance | completed:success |
-| 36851137395 | `677d99051933` | push | Emulated aarch64 portability | completed:success |
-| 36851137348 | `677d99051933` | push | Rust verification | completed:success |
-| 36850673411 | `797e795ebf50` | pull_request | Emulated aarch64 portability | completed:success |
-| 36850673316 | `797e795ebf50` | pull_request | Rust verification | completed:success |
-| 36850673280 | `797e795ebf50` | pull_request | Fault assurance | completed:success |
+| 36853582242 | `9c6a69a0f91c` | push | Cross-repository development broker qualification | completed:success |
+| 36853582232 | `9c6a69a0f91c` | push | Credential-free benchmark path | completed:success |
+| 36853582187 | `9c6a69a0f91c` | push | Repository quality | in_progress:- |
+| 36853582172 | `9c6a69a0f91c` | push | Emulated aarch64 portability | in_progress:- |
+| 36853582145 | `9c6a69a0f91c` | push | Hosted portability and native qualification | completed:success |
+| 36853582141 | `9c6a69a0f91c` | push | Huawei MIT source headers | completed:success |
+| 36853582135 | `9c6a69a0f91c` | push | Formal assurance | completed:success |
+| 36853582132 | `9c6a69a0f91c` | push | Fault assurance | completed:success |
+| 36853582113 | `9c6a69a0f91c` | push | Rust verification | in_progress:- |
+| 36853111161 | `39af93e9b0e7` | pull_request | Hosted portability and native qualification | completed:success |
+| 36853111027 | `39af93e9b0e7` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 36853110965 | `39af93e9b0e7` | pull_request | Formal assurance | completed:success |
