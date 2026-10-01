@@ -1,0 +1,6 @@
+AR-1568 exact current-main identity receipt
+merged_sha=6fab08b538bd7a1c17f03d8834095c004db77f02
+reviewed_pr_head=665b6eb258e3ba19cde41736470fd64069a388df
+pr=https://github.com/martin-beck/agent-systems-benchmark/pull/400
+checks=all 13 required hosted checks passed on reviewed head
+review=independent source review approved; focused/full local tests and clippy passed
