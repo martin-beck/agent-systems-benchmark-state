@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1590](tasks/AR-1590.md): Inherited-fd cross-repository qualification | Complete real ASB-to-asb-tui inherited-fd broker qualification after the PTY seam exists. | Repair PR #412 at 0762cf2: qualify exact TUI binary in hosted CI and complete bounded ordered bootstrap/fault evidence before independent re-review. | ar1590-inherited-fd-bridge |
+| P0 | [AR-1590](tasks/AR-1590.md): Inherited-fd cross-repository qualification | Complete real ASB-to-asb-tui inherited-fd broker qualification after the PTY seam exists. | Await hosted checks for repaired PR #412 exact head 1694421; then independent review of qualification workflow, ordered typed bootstrap, and bounded cleanup. | ar1590-inherited-fd-bridge |
 
 ## Blocked
 
