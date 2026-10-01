@@ -15,4 +15,6 @@ Required evidence:
 - no authentication/signature/key-management blocking in development mode;
 - exact signed/DCO PR, independent review, and green hosted checks.
 
-Dependencies: AR-1576. Downstream: AR-1590.
+Dependencies: AR-1576. Downstream: AR-1593 and AR-1590. The implementation
+may release independently of the version-alignment follow-up once its own
+schema, backend, review, and hosted gates are green.
