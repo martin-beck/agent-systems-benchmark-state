@@ -3321,8 +3321,8 @@
 | Owner | ar1572-toolchain-runner |
 | Parent | None |
 | Children | None |
-| Summary | Provide the approved private toolchain runner needed for credential-free ASB development setup. |
-| Next action | Promote and provide a private, reproducible development toolchain runner accepted by the ASB resolver for clean qualification and first-time setup. |
+| Summary | Private reproducible development toolchain runner implemented and proposed in PR #404. |
+| Next action | Run hosted checks and obtain independent review for PR #404 at 18ba0fe; then merge only after approval. |
 
 ### AR-1573 — ASB development control producer bridge
 
@@ -4721,3 +4721,5 @@ flowchart LR
     AR_1060 --> AR_1024
     AR_1060 --> AR_1025
     AR_1060 --> AR_1160
+    AR_1060 --> AR_1227
+    AR_1060 --> AR_1310
