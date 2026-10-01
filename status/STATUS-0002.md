@@ -3574,7 +3574,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Keep normal development TUI builds within explicit source and artifact quotas. |
-| Next action | PR #423 exact signed head 637b276 is based on protected main; hosted coverage rerun and fresh independent review pending. |
+| Next action | PR #423 exact signed head dcdba04 is rebased directly onto protected main 1f0c259; await hosted checks and fresh independent review. |
 
 ### AR-1601 — Development-channel publication and provenance qualification
 
