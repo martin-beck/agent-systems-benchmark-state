@@ -1,0 +1,8 @@
+# AR-1601 acceptance receipt
+
+- Exact pair: ASB c94586d0751b144523fcbe05b81e3fbc81a44af9 (tree 90689f90759056d806b69442c461a8390d405ee7) and TUI 6b5f343a1181eb1bb673e09838ce5d4f094bf137 (tree 6a45c411fd1393cf151fda65b115e024828499a7).
+- Fresh journey: default-dev installation succeeded with private XDG roots and explicit trusted tool wrappers; provenance retained exact source/tree identities and executable digest c97f5fce3d7fef7f890d78dc3d70460fa00b1ba7bd01c23fd2ba5fc1cd8cd1f2.
+- Lifecycle evidence: status development_installed, doctor development_verified, remove development_removed, and post-remove cleanup passed.
+- Channel evidence: stable redirect_rejected; nightly and experimental channel_unavailable without fallback; non-terminal launch failed closed as environment_path_invalid.
+- Independent review: exact-head review approved the receipt and paired identities.
+- Classification: contract-test/mechanical/environmental; missing development auth, signatures, and key management remained non-blocking.
