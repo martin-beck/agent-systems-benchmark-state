@@ -3574,7 +3574,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Keep normal development TUI builds within explicit source and artifact quotas. |
-| Next action | Promote and implement bounded private Cargo target staging after the real paired qualification identifies the workspace quota failure. |
+| Next action | Commit/push signed bounded-target staging PR, then run hosted checks and obtain independent review. |
 
 
 ## Dependency graph
@@ -4602,3 +4602,4 @@ flowchart LR
     AR_0507 --> AR_0515
     AR_0508 --> AR_0515
     AR_0508 --> AR_0850
+    AR_0509 --> AR_0515

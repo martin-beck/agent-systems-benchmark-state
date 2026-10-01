@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1600](tasks/AR-1600.md): Bounded development build-artifact staging | Keep normal development TUI builds within explicit source and artifact quotas. | Promote and implement bounded private Cargo target staging after the real paired qualification identifies the workspace quota failure. | ar1199-router-impl |
+| P0 | [AR-1600](tasks/AR-1600.md): Bounded development build-artifact staging | Keep normal development TUI builds within explicit source and artifact quotas. | Commit/push signed bounded-target staging PR, then run hosted checks and obtain independent review. | ar1199-router-impl |
 
 ## Blocked
 
