@@ -1,0 +1,7 @@
+AR-1577 interactive development supervision receipt
+merged_sha=27684d6398e92a0b524d103450d3a41465154b6b
+reviewed_pr_head=e6f3d901dffba31845273fafd436f613d1485790
+pr=https://github.com/martin-beck/agent-systems-benchmark/pull/408
+checks=all required hosted checks passed
+review=independent review approved the exact remote head; change is a focused regression test for long-lived descendant process-group cleanup with no behavior or gate weakening
+local=focused descendant process-group cleanup test passed
