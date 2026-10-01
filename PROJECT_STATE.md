@@ -17,7 +17,7 @@ Generated from local Git and GitHub. Do not edit.
 | #365 | `dependabot/cargo/rcgen-0.14.10@8604b5977544` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump rcgen from 0.14.7 to 0.14.10 |
 | #366 | `dependabot/cargo/schemars-1.2.2@047b52b0b5b9` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump schemars from 1.0.4 to 1.2.2 |
 | #384 | `feature/ar-1508-platform-owned-authority-provider@2c70f81100ca` | `main` | DIRTY | - | feat(runtime): platform-owned authority provider |
-| #423 | `fix/dev-workspace-quota-race@eaeadd5d1f97` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | Fix development workspace quota scan races |
+| #423 | `fix/dev-workspace-quota-race@eaeadd5d1f97` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Fix development workspace quota scan races |
 
 ## Recent workflows
 
@@ -28,7 +28,7 @@ Generated from local Git and GitHub. Do not edit.
 | 36856394817 | `eaeadd5d1f97` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36856394786 | `eaeadd5d1f97` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 36856394781 | `eaeadd5d1f97` | pull_request | Formal assurance | in_progress:- |
-| 36856394745 | `eaeadd5d1f97` | pull_request | Fault assurance | in_progress:- |
+| 36856394745 | `eaeadd5d1f97` | pull_request | Fault assurance | completed:success |
 | 36856394668 | `eaeadd5d1f97` | pull_request | Hosted portability and native qualification | completed:success |
 | 36856394657 | `eaeadd5d1f97` | pull_request | Rust verification | in_progress:- |
 | 36856394647 | `eaeadd5d1f97` | pull_request | Repository quality | in_progress:- |
