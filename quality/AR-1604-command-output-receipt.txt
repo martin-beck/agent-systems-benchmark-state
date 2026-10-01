@@ -1,0 +1,18 @@
+AR-1604 ASB guided command output contract receipt
+
+Protected product repository: martin-beck/agent-systems-benchmark
+Pull request: #431
+Merged protected-main head: 85e4ae539bd63a41e1bf3f063d64881dda5e206e
+Implementation head: 985682bae9e477655d8413894b3c7594d76b11e1
+
+Implementation evidence:
+- Human-readable output is the default for guided command results.
+- --json and --format json compatibility selectors produce stable machine output.
+- Malformed and unknown options fail with typed diagnostics; catalog/setup output is redacted.
+- Development-only missing credentials, signatures, and key management remain warning-only.
+
+Independent review: exact-head review approved after the provenance digest was regenerated.
+Hosted PR checks: all required checks passed on exact implementation head 985682b.
+Exact protected-main checks: credential-free, broker journey, fault, formal, platform,
+portability, repository quality, Rust, and source-header workflows all passed on
+merged head 85e4ae5.
