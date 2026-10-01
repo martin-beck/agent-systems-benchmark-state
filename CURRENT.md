@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1600](tasks/AR-1600.md): Bounded development build-artifact staging | Keep normal development TUI builds within explicit source and artifact quotas. | PR #423 exact signed head eaeadd5 is based on protected main; await fresh independent review and all hosted checks, then merge/release. | ar1199-router-impl |
+| P0 | [AR-1600](tasks/AR-1600.md): Bounded development build-artifact staging | Keep normal development TUI builds within explicit source and artifact quotas. | PR #423 exact signed head 714bbcf is based on protected main; await fresh independent review and all hosted checks, then merge/release. | ar1199-router-impl |
 
 ## Blocked
 
