@@ -1,5 +1,9 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1423](../tasks/AR-1423-literature-docs-registry-reconciliation.md) | [AR-1403](../tasks/AR-1403-literature-external-qualification.md), [AR-1415](../tasks/AR-1415-literature-selector-total-coverage.md), [AR-1419](../tasks/AR-1419-literature-framework-boundaries.md) | [AR-1424](../tasks/AR-1424-all-literature-selector-campaign.md), [AR-1426](../tasks/AR-1426-evolving-literature-window-refresh.md), [AR-1430](../tasks/AR-1430-literature-workload-catalog-gap-closure.md) |
+| [AR-1424](../tasks/AR-1424-all-literature-selector-campaign.md) | [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md), [AR-1420](../tasks/AR-1420-literature-workload-campaign-integration.md), [AR-1423](../tasks/AR-1423-literature-docs-registry-reconciliation.md), [AR-1430](../tasks/AR-1430-literature-workload-catalog-gap-closure.md) | [AR-1425](../tasks/AR-1425-literature-workload-release-readiness.md) |
+| [AR-1425](../tasks/AR-1425-literature-workload-release-readiness.md) | [AR-1417](../tasks/AR-1417-interactive-stateful-literature-workloads.md), [AR-1418](../tasks/AR-1418-tool-use-reliability-safety-workloads.md), [AR-1424](../tasks/AR-1424-all-literature-selector-campaign.md) | [AR-1426](../tasks/AR-1426-evolving-literature-window-refresh.md) |
+| [AR-1426](../tasks/AR-1426-evolving-literature-window-refresh.md) | [AR-1423](../tasks/AR-1423-literature-docs-registry-reconciliation.md), [AR-1425](../tasks/AR-1425-literature-workload-release-readiness.md) | None |
 | [AR-1427](../tasks/AR-1427-protected-main-merge-tree-requalification.md) | [AR-1421](../tasks/AR-1421-protected-main-literature-merge-race.md) | [AR-1431](../tasks/AR-1431-protected-main-stale-base-repair.md) |
 | [AR-1430](../tasks/AR-1430-literature-workload-catalog-gap-closure.md) | [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md), [AR-1423](../tasks/AR-1423-literature-docs-registry-reconciliation.md) | [AR-1424](../tasks/AR-1424-all-literature-selector-campaign.md) |
 | [AR-1431](../tasks/AR-1431-protected-main-stale-base-repair.md) | [AR-1427](../tasks/AR-1427-protected-main-merge-tree-requalification.md) | None |
@@ -142,8 +146,10 @@
 | [AR-1570](../tasks/AR-1570.md) | [AR-1568](../tasks/AR-1568.md) | [AR-1571](../tasks/AR-1571.md), [AR-1573](../tasks/AR-1573.md) |
 | [AR-1571](../tasks/AR-1571.md) | [AR-1570](../tasks/AR-1570.md) | None |
 | [AR-1572](../tasks/AR-1572.md) | [AR-1567](../tasks/AR-1567.md) | None |
-| [AR-1573](../tasks/AR-1573.md) | [AR-1570](../tasks/AR-1570.md) | [AR-1574](../tasks/AR-1574.md) |
-| [AR-1574](../tasks/AR-1574.md) | [AR-1573](../tasks/AR-1573.md) | None |
+| [AR-1573](../tasks/AR-1573.md) | [AR-1570](../tasks/AR-1570.md) | [AR-1574](../tasks/AR-1574.md), [AR-1576](../tasks/AR-1576.md) |
+| [AR-1574](../tasks/AR-1574.md) | [AR-1573](../tasks/AR-1573.md) | [AR-1577](../tasks/AR-1577.md) |
+| [AR-1576](../tasks/AR-1576.md) | [AR-1573](../tasks/AR-1573.md) | None |
+| [AR-1577](../tasks/AR-1577.md) | [AR-1574](../tasks/AR-1574.md) | None |
 
 ## Complete AR inventory
 
@@ -240,7 +246,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (48)
+### Planned (50)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -261,6 +267,8 @@
 | P0 | [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Unclaimed | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. |
 | P0 | [AR-1545](../tasks/AR-1545.md): AR-1307 formal-input readiness repair | Unclaimed | Audit and repair the AR-1307 formal-input handoff after development runner integration, without executing qualification. | Formal-only work: after AR-1535 supplies reviewed inputs, inventory and independently verify every exact AR-1307 formal input for AR-1522. Do not block or alter the completed unsigned-development path. |
 | P0 | [AR-1546](../tasks/AR-1546.md): AR-1308 formal capacity-input readiness repair | Unclaimed | Audit and repair the AR-1308 capacity/input handoff after diagnostic QEMU integration, without executing qualification. | Formal-only work: after AR-1531 and AR-1536, verify the exact 8 GiB/8 GiB fixture and AR-1308 formal inputs for AR-1522. Do not block or alter the completed unsigned-development path. |
+| P0 | [AR-1576](../tasks/AR-1576.md): ASB development bootstrap projection | Unclaimed | Make the development control backend satisfy the current asb-tui bootstrap projection without production credentials. | Promote and implement the development-only bootstrap projection contract required by current asb-tui startup. |
+| P0 | [AR-1577](../tasks/AR-1577.md): ASB interactive development supervision | Unclaimed | Keep successful development TUI sessions interactive while bounding handshake and cleanup failure paths. | Promote after AR-1574 transport wiring is reviewed; repair interactive lifetime supervision and cleanup semantics. |
 | P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
 | P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
 | P1 | [AR-0810](../tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Unclaimed | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project&#x27;s GitHub Pages site. |
@@ -533,8 +541,3 @@
 | P0 | [AR-1557](../tasks/AR-1557.md): Protected-main receipt signature repair | Unclaimed | Repair protected-main signature evidence after the receipt PR rebase generated an unsigned topic commit. | Release done: signed forward repair 7aa09a0 passed exact protected-main policy and all required hosted checks. |
 | P0 | [AR-1558](../tasks/AR-1558.md): ASB plan/output release publication | Unclaimed | Publish the ASB release containing the dynamic plan and output-mode workflow after exact green-main verification. | Release done: signed tag asb-0.1.0-plan-output-ce190 published from exact green ce190124 and fresh checksum/doctor consumption passed. |
 | P0 | [AR-1559](../tasks/AR-1559.md): Machine consumer JSON opt-in repair | Unclaimed | Repair the Rust workflow&#x27;s workload catalog JSON consumer after the human-output default change. | Release done: PR #395 merged at exact main ce190124 and all required hosted checks passed, including the rerun of Rust verification. |
-| P0 | [AR-1562](../tasks/AR-1562.md): ASB TUI development release-channel contract | Unclaimed | Add explicit ASB TUI release-channel selection with a development default. | Ready for independent review on exact rebased head c46be39 atop protected main 73029d9164808ca531713da9ff8fb575968f6d74; hosted PR #396 checks must verify channel-neutral lifecycle metadata and full quality gates before merge. |
-| P0 | [AR-1563](../tasks/AR-1563.md): ASB dev-channel clone/build materialization | Unclaimed | Clone and build the current asb-tui main head for the ASB dev channel. | Ready for independent re-review of PR #398 at exact head 46133cd. Verify live quota monitoring, concurrent bounded output drain, process-group descendant termination, staging cleanup preserving prior install, digest-bound atomic dev install, and unchanged stable channel. |
-| P0 | [AR-1564](../tasks/AR-1564.md): ASB development TUI lifecycle integration | Unclaimed | Integrate the dev-built TUI into the ASB lifecycle and launch path. | Ready for independent re-review of PR #399 at exact head 4a65476. Verify reversible marker/version trash transaction, injected final-delete failure restoration, dev lifecycle routing, stable isolation, and exact-current-main compatibility. |
-| P0 | [AR-1565](../tasks/AR-1565.md): ASB yanked dependency lock repair | Unclaimed | Repair the yanked dependency lock that blocks all protected ASB merges. | Run complete required ASB quality suite and obtain independent lockfile review; cargo-deny/cargo-audit binaries are absent on this host and must run in hosted/qualified environment. Then prepare exact-head PR from signed commit 54505f2. |
-| P0 | [AR-1567](../tasks/AR-1567.md): ASB development trusted toolchain discovery | Unclaimed | Implement trusted development cargo discovery | PR #401 is rebased onto current main 2eef71c at exact head bac495d0871c72b63bed9c55b2d2c557115a471d; hosted checks rerunning and independent review required before merge. |

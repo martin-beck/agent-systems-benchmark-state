@@ -3352,6 +3352,34 @@
 | Summary | Wire the ASB development launch transport to the producer control bridge. |
 | Next action | Await hosted gates and independent review of 445de07; merge only identical green head, then release AR-1574. |
 
+### AR-1576 — ASB development bootstrap projection
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Make the development control backend satisfy the current asb-tui bootstrap projection without production credentials. |
+| Next action | Promote and implement the development-only bootstrap projection contract required by current asb-tui startup. |
+
+### AR-1577 — ASB interactive development supervision
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Keep successful development TUI sessions interactive while bounding handshake and cleanup failure paths. |
+| Next action | Promote after AR-1574 transport wiring is reviewed; repair interactive lifetime supervision and cleanup semantics. |
+
 
 ## Dependency graph
 
@@ -4002,6 +4030,8 @@ flowchart LR
         AR_1572["AR-1572 - Done"]:::status_done
         AR_1573["AR-1573 - Done"]:::status_done
         AR_1574["AR-1574 - In progress"]:::status_in_progress
+        AR_1576["AR-1576 - Planned"]:::status_planned
+        AR_1577["AR-1577 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4681,48 +4711,3 @@ flowchart LR
     AR_1024 --> AR_1026
     AR_1024 --> AR_1029
     AR_1025 --> AR_1014
-    AR_1025 --> AR_1026
-    AR_1025 --> AR_1029
-    AR_1025 --> AR_1031
-    AR_1025 --> AR_1033
-    AR_1025 --> AR_1034
-    AR_1025 --> AR_1035
-    AR_1026 --> AR_0807
-    AR_1026 --> AR_0823
-    AR_1026 --> AR_1027
-    AR_1026 --> AR_1180
-    AR_1029 --> AR_0903
-    AR_1029 --> AR_1026
-    AR_1030 --> AR_1010
-    AR_1031 --> AR_1011
-    AR_1031 --> AR_1032
-    AR_1032 --> AR_1011
-    AR_1033 --> AR_1011
-    AR_1033 --> AR_1014
-    AR_1033 --> AR_1031
-    AR_1033 --> AR_1034
-    AR_1033 --> AR_1035
-    AR_1034 --> AR_1011
-    AR_1034 --> AR_1032
-    AR_1034 --> AR_1170
-    AR_1035 --> AR_1011
-    AR_1035 --> AR_1032
-    AR_1036 --> AR_1014
-    AR_1036 --> AR_1037
-    AR_1037 --> AR_1014
-    AR_1037 --> AR_1024
-    AR_1037 --> AR_1025
-    AR_1040 --> AR_1043
-    AR_1045 --> AR_1051
-    AR_1052 --> AR_1010
-    AR_1054 --> AR_1010
-    AR_1056 --> AR_1010
-    AR_1058 --> AR_1010
-    AR_1060 --> AR_1024
-    AR_1060 --> AR_1025
-    AR_1060 --> AR_1160
-    AR_1060 --> AR_1227
-    AR_1060 --> AR_1310
-    AR_1061 --> AR_1010
-    AR_1062 --> AR_1010
-    AR_1062 --> AR_1058

@@ -17,20 +17,21 @@ Generated from local Git and GitHub. Do not edit.
 | #365 | `dependabot/cargo/rcgen-0.14.10@8604b5977544` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump rcgen from 0.14.7 to 0.14.10 |
 | #366 | `dependabot/cargo/schemars-1.2.2@047b52b0b5b9` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump schemars from 1.0.4 to 1.2.2 |
 | #384 | `feature/ar-1508-platform-owned-authority-provider@2c70f81100ca` | `main` | DIRTY | - | feat(runtime): platform-owned authority provider |
+| #406 | `feature/ar-1574-transport-wiring@445de07d9565` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): wire development broker launch transport |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36801156348 | `877853389acc` | push | Rust verification | pending:- |
-| 36801156213 | `877853389acc` | push | Fault assurance | in_progress:- |
-| 36801156162 | `877853389acc` | push | Repository quality | completed:failure |
-| 36801156049 | `877853389acc` | push | Emulated aarch64 portability | pending:- |
-| 36801156023 | `877853389acc` | push | Credential-free benchmark path | in_progress:- |
-| 36801155976 | `877853389acc` | push | Huawei MIT source headers | completed:success |
-| 36801155970 | `877853389acc` | push | Formal assurance | in_progress:- |
-| 36801155948 | `877853389acc` | push | Hosted portability and native qualification | in_progress:- |
-| 36801135621 | `911dce051a97` | push | Formal assurance | completed:success |
-| 36801135619 | `911dce051a97` | push | Repository quality | completed:failure |
-| 36801135612 | `911dce051a97` | push | Emulated aarch64 portability | in_progress:- |
-| 36801135609 | `911dce051a97` | push | Huawei MIT source headers | completed:success |
+| 36802509996 | `445de07d9565` | pull_request | Credential-free benchmark path | completed:success |
+| 36802509943 | `445de07d9565` | pull_request | Repository quality | in_progress:- |
+| 36802509937 | `445de07d9565` | pull_request | Hosted portability and native qualification | completed:success |
+| 36802509880 | `445de07d9565` | pull_request | Huawei MIT source headers | completed:success |
+| 36802509879 | `445de07d9565` | pull_request | Rust verification | in_progress:- |
+| 36802509876 | `445de07d9565` | pull_request | Formal assurance | completed:success |
+| 36802509874 | `445de07d9565` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 36802509873 | `445de07d9565` | pull_request | Fault assurance | completed:success |
+| 36802509871 | `445de07d9565` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 36802396014 | `b9dc85c7eed9` | pull_request | Rust verification | completed:cancelled |
+| 36802395972 | `b9dc85c7eed9` | pull_request | Fault assurance | completed:cancelled |
+| 36802395919 | `b9dc85c7eed9` | pull_request | Emulated aarch64 portability | completed:cancelled |

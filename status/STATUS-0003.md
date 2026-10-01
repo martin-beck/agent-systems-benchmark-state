@@ -1,5 +1,50 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+    AR_1025 --> AR_1026
+    AR_1025 --> AR_1029
+    AR_1025 --> AR_1031
+    AR_1025 --> AR_1033
+    AR_1025 --> AR_1034
+    AR_1025 --> AR_1035
+    AR_1026 --> AR_0807
+    AR_1026 --> AR_0823
+    AR_1026 --> AR_1027
+    AR_1026 --> AR_1180
+    AR_1029 --> AR_0903
+    AR_1029 --> AR_1026
+    AR_1030 --> AR_1010
+    AR_1031 --> AR_1011
+    AR_1031 --> AR_1032
+    AR_1032 --> AR_1011
+    AR_1033 --> AR_1011
+    AR_1033 --> AR_1014
+    AR_1033 --> AR_1031
+    AR_1033 --> AR_1034
+    AR_1033 --> AR_1035
+    AR_1034 --> AR_1011
+    AR_1034 --> AR_1032
+    AR_1034 --> AR_1170
+    AR_1035 --> AR_1011
+    AR_1035 --> AR_1032
+    AR_1036 --> AR_1014
+    AR_1036 --> AR_1037
+    AR_1037 --> AR_1014
+    AR_1037 --> AR_1024
+    AR_1037 --> AR_1025
+    AR_1040 --> AR_1043
+    AR_1045 --> AR_1051
+    AR_1052 --> AR_1010
+    AR_1054 --> AR_1010
+    AR_1056 --> AR_1010
+    AR_1058 --> AR_1010
+    AR_1060 --> AR_1024
+    AR_1060 --> AR_1025
+    AR_1060 --> AR_1160
+    AR_1060 --> AR_1227
+    AR_1060 --> AR_1310
+    AR_1061 --> AR_1010
+    AR_1062 --> AR_1010
+    AR_1062 --> AR_1058
     AR_1062 --> AR_1061
     AR_1100 --> AR_1120
     AR_1100 --> AR_1228
@@ -795,6 +840,8 @@
     AR_1570 --> AR_1571
     AR_1570 --> AR_1573
     AR_1573 --> AR_1574
+    AR_1573 --> AR_1576
+    AR_1574 --> AR_1577
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -1255,7 +1302,3 @@
 | [AR-1420](../tasks/AR-1420-literature-workload-campaign-integration.md) | [AR-1333](../tasks/AR-1333-multi-agent-workload-campaign.md), [AR-1417](../tasks/AR-1417-interactive-stateful-literature-workloads.md), [AR-1418](../tasks/AR-1418-tool-use-reliability-safety-workloads.md), [AR-1419](../tasks/AR-1419-literature-framework-boundaries.md) | [AR-1424](../tasks/AR-1424-all-literature-selector-campaign.md) |
 | [AR-1421](../tasks/AR-1421-protected-main-literature-merge-race.md) | [AR-1398](../tasks/AR-1398-signed-protected-main-recovery.md), [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md) | [AR-1427](../tasks/AR-1427-protected-main-merge-tree-requalification.md) |
 | [AR-1422](../tasks/AR-1422-stale-agent-catalog-pr-cleanup.md) | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md) | None |
-| [AR-1423](../tasks/AR-1423-literature-docs-registry-reconciliation.md) | [AR-1403](../tasks/AR-1403-literature-external-qualification.md), [AR-1415](../tasks/AR-1415-literature-selector-total-coverage.md), [AR-1419](../tasks/AR-1419-literature-framework-boundaries.md) | [AR-1424](../tasks/AR-1424-all-literature-selector-campaign.md), [AR-1426](../tasks/AR-1426-evolving-literature-window-refresh.md), [AR-1430](../tasks/AR-1430-literature-workload-catalog-gap-closure.md) |
-| [AR-1424](../tasks/AR-1424-all-literature-selector-campaign.md) | [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md), [AR-1420](../tasks/AR-1420-literature-workload-campaign-integration.md), [AR-1423](../tasks/AR-1423-literature-docs-registry-reconciliation.md), [AR-1430](../tasks/AR-1430-literature-workload-catalog-gap-closure.md) | [AR-1425](../tasks/AR-1425-literature-workload-release-readiness.md) |
-| [AR-1425](../tasks/AR-1425-literature-workload-release-readiness.md) | [AR-1417](../tasks/AR-1417-interactive-stateful-literature-workloads.md), [AR-1418](../tasks/AR-1418-tool-use-reliability-safety-workloads.md), [AR-1424](../tasks/AR-1424-all-literature-selector-campaign.md) | [AR-1426](../tasks/AR-1426-evolving-literature-window-refresh.md) |
-| [AR-1426](../tasks/AR-1426-evolving-literature-window-refresh.md) | [AR-1423](../tasks/AR-1423-literature-docs-registry-reconciliation.md), [AR-1425](../tasks/AR-1425-literature-workload-release-readiness.md) | None |
