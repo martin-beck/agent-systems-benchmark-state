@@ -3658,7 +3658,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Real paired record/seal/reopen/offline-replay/compare qualification fixture |
-| Next action | Coordinate TUI codec repair: decode RecordingCampaignStatus.campaign as lifecycle, then rerun exact ASB/TUI PTY cassette qualification. |
+| Next action | Obtain independent review and hosted checks for PR #426 at 5b4d76c; then merge/release only after exact-head approval. |
 
 ### AR-1607 — OpenRouter provider and model setup
 
@@ -4557,3 +4557,4 @@ flowchart LR
     AR_0305 --> AR_0312
     AR_0305 --> AR_0315
     AR_0305 --> AR_0316
+    AR_0305 --> AR_0510

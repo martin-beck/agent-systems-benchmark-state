@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1606](tasks/AR-1606.md): Cross-project cassette lifecycle qualification | Real paired record/seal/reopen/offline-replay/compare qualification fixture | Coordinate TUI codec repair: decode RecordingCampaignStatus.campaign as lifecycle, then rerun exact ASB/TUI PTY cassette qualification. | ar1496-cross-project-cassette-qualification |
+| P0 | [AR-1606](tasks/AR-1606.md): Cross-project cassette lifecycle qualification | Real paired record/seal/reopen/offline-replay/compare qualification fixture | Obtain independent review and hosted checks for PR #426 at 5b4d76c; then merge/release only after exact-head approval. | ar1496-cross-project-cassette-qualification |
 
 ## Blocked
 
