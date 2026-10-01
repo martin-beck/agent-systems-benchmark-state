@@ -3266,7 +3266,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Bind development metadata and broker descriptors to the exact ASB source identity. |
-| Next action | Ready for independent review of PR #400 at exact head 2e1e657. Verify build-time exact checkout commit/tree derivation, reproducible identity overrides, metadata/status/doctor identity validation, typed stale rejection, and unchanged stable behavior. |
+| Next action | Ready for independent review of PR #400 at exact head 665b6eb. Verify build-time exact checkout commit/tree derivation, required source headers, reproducible identity overrides, metadata/status/doctor identity validation, typed stale rejection, and unchanged stable behavior. |
 
 
 ## Dependency graph
@@ -4766,4 +4766,3 @@ flowchart LR
     AR_1238 --> AR_1273
     AR_1238 --> AR_1274
     AR_1238 --> AR_1275
-    AR_1238 --> AR_1276

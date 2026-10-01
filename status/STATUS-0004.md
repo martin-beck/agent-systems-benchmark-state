@@ -137,7 +137,7 @@
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1567](../tasks/AR-1567.md): ASB development trusted toolchain discovery | ar1567-toolchain-discovery | Make development installation resolve a trusted cargo/toolchain without hard-coded host paths. | Promote after AR-1563 and implement controlled trusted toolchain discovery with tests on a clean host. |
-| P0 | [AR-1568](../tasks/AR-1568.md): ASB exact current-main identity binding | ar1568-current-main-identity | Bind development metadata and broker descriptors to the exact ASB source identity. | Ready for independent review of PR #400 at exact head 2e1e657. Verify build-time exact checkout commit/tree derivation, reproducible identity overrides, metadata/status/doctor identity validation, typed stale rejection, and unchanged stable behavior. |
+| P0 | [AR-1568](../tasks/AR-1568.md): ASB exact current-main identity binding | ar1568-current-main-identity | Bind development metadata and broker descriptors to the exact ASB source identity. | Ready for independent review of PR #400 at exact head 665b6eb. Verify build-time exact checkout commit/tree derivation, required source headers, reproducible identity overrides, metadata/status/doctor identity validation, typed stale rejection, and unchanged stable behavior. |
 
 ### Open (1)
 
