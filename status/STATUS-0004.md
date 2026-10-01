@@ -187,17 +187,12 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1588](../tasks/AR-1588.md): ASB development-channel command surface | ar1498-channel-surface | Make ASB lifecycle commands consistently select and default the development release channel. | Promote after dependencies are released; implement and qualify consistent --channel selection with default dev across ASB lifecycle commands. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1596](../tasks/AR-1596.md): Cassette and offline lifecycle integration | Unclaimed | Provide deterministic cassette recording and provider-free replay for benchmark workloads. | Implement cassette recording/sealing and offline replay lifecycle after the setup capability contract is released. |
+| P0 | [AR-1596](../tasks/AR-1596.md): Cassette and offline lifecycle integration | ar1496-cassette-lifecycle | Provide deterministic cassette recording and provider-free replay for benchmark workloads. | Implement cassette recording/sealing and offline replay lifecycle after the setup capability contract is released. |
 
 ### Blocked (82)
 

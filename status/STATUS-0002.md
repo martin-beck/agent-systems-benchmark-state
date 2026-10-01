@@ -3510,11 +3510,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1496-cassette-lifecycle |
 | Parent | None |
 | Children | None |
 | Summary | Provide deterministic cassette recording and provider-free replay for benchmark workloads. |
@@ -4209,7 +4209,7 @@ flowchart LR
         AR_1593["AR-1593 - Done"]:::status_done
         AR_1594["AR-1594 - Done"]:::status_done
         AR_1595["AR-1595 - Done"]:::status_done
-        AR_1596["AR-1596 - Open"]:::status_open
+        AR_1596["AR-1596 - In progress"]:::status_in_progress
         AR_1597["AR-1597 - Planned"]:::status_planned
         AR_1598["AR-1598 - Planned"]:::status_planned
     end
@@ -4614,5 +4614,3 @@ flowchart LR
     AR_0802 --> AR_0808
     AR_0802 --> AR_0809
     AR_0802 --> AR_0872
-    AR_0802 --> AR_0903
-    AR_0803 --> AR_0804
