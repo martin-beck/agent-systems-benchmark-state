@@ -191,7 +191,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1596](../tasks/AR-1596.md): Cassette and offline lifecycle integration | ar1496-cassette-lifecycle | Provide deterministic cassette recording and provider-free replay for benchmark workloads. | Obtain fresh independent exact-head review and all hosted checks for PR #418 at 4037ec95cb5ac6aca4257ed6924a43a30e0b9ccf; do not merge until both approve. |
+| P0 | [AR-1596](../tasks/AR-1596.md): Cassette and offline lifecycle integration | ar1496-cassette-lifecycle | Provide deterministic cassette recording and provider-free replay for benchmark workloads. | PR418 merged at 23ca7ba but protected-main topology policy rejected its squash publication. Obtain independent approval and all hosted checks for focused PR #419 at a64f1f5, then merge PR419 with a real two-parent --merge commit before releasing AR-1596. |
 
 ### Blocked (82)
 
@@ -550,4 +550,3 @@
 | P0 | [AR-1515](../tasks/AR-1515-ar1307-runner-ci-oom-repair.md): AR-1307 runner CI repair | Unclaimed | Triage complete: AR-1307 runner admission and diagnostics are intact; remaining failure is workload capacity under the unchanged 3G/3G contract. | No runner source repair remains; AR-1309 owns the separately reviewed capacity/model-reduction decision. |
 | P0 | [AR-1516](../tasks/AR-1516-ar1308-qemu-fixture-evidence-repair.md): AR-1308 QEMU fixture repair | Unclaimed | Fixture repair passed boot/transient/JAR checks; full tier timed out at 1700s without attestation. | Close fixture repair; hand timeout to AR-1309 for capacity/model decision. |
 | P0 | [AR-1517](../tasks/AR-1517-ar1309-capacity-decision-unblock.md): AR-1309 capacity decision | Unclaimed | Select a reviewed AR-1309 capacity/model contract after runner failure. | Classify evidence and select AR-1309&#x27;s capacity/model contract. |
-| P0 | [AR-1519](../tasks/AR-1519.md): AR-1307/1308 reduced-model development profile | Unclaimed | Reduced development tier implemented with explicit 900s/1-worker/2G/2G/4G bounds and non-claiming attestation. | Independently review the exact head, then release this development-only repair; full AR-1307/1308 qualification remains separate. |

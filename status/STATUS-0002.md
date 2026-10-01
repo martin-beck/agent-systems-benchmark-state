@@ -3518,7 +3518,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Provide deterministic cassette recording and provider-free replay for benchmark workloads. |
-| Next action | Obtain fresh independent exact-head review and all hosted checks for PR #418 at 4037ec95cb5ac6aca4257ed6924a43a30e0b9ccf; do not merge until both approve. |
+| Next action | PR418 merged at 23ca7ba but protected-main topology policy rejected its squash publication. Obtain independent approval and all hosted checks for focused PR #419 at a64f1f5, then merge PR419 with a real two-parent --merge commit before releasing AR-1596. |
 
 ### AR-1597 — Fault matrix and deterministic runner
 
@@ -4610,7 +4610,3 @@ flowchart LR
     AR_0801 --> AR_0842
     AR_0801 --> AR_0847
     AR_0801 --> AR_0849
-    AR_0801 --> AR_0869
-    AR_0802 --> AR_0808
-    AR_0802 --> AR_0809
-    AR_0802 --> AR_0872
