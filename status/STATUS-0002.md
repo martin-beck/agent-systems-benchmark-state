@@ -3658,7 +3658,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Real paired record/seal/reopen/offline-replay/compare qualification fixture |
-| Next action | Coordinate paired TUI #200 codec/projection repair for malformed v1.12 RecordingCampaignStatus frame before rerunning ASB PTY cassette qualification. |
+| Next action | Coordinate TUI codec repair: decode RecordingCampaignStatus.campaign as lifecycle, then rerun exact ASB/TUI PTY cassette qualification. |
 
 
 ## Dependency graph
