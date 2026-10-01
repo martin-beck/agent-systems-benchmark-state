@@ -3398,11 +3398,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1498-channel-surface |
 | Parent | None |
 | Children | None |
 | Summary | Make ASB lifecycle commands consistently select and default the development release channel. |
@@ -4201,7 +4201,7 @@ flowchart LR
         AR_1576["AR-1576 - Done"]:::status_done
         AR_1577["AR-1577 - Done"]:::status_done
         AR_1578["AR-1578 - Done"]:::status_done
-        AR_1588["AR-1588 - Open"]:::status_open
+        AR_1588["AR-1588 - In progress"]:::status_in_progress
         AR_1589["AR-1589 - Planned"]:::status_planned
         AR_1590["AR-1590 - In progress"]:::status_in_progress
         AR_1591["AR-1591 - Planned"]:::status_planned
@@ -4611,4 +4611,3 @@ flowchart LR
     AR_0801 --> AR_0847
     AR_0801 --> AR_0849
     AR_0801 --> AR_0869
-    AR_0802 --> AR_0808

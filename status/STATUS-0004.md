@@ -187,18 +187,13 @@
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1588](../tasks/AR-1588.md): ASB development-channel command surface | ar1498-channel-surface | Make ASB lifecycle commands consistently select and default the development release channel. | Promote after dependencies are released; implement and qualify consistent --channel selection with default dev across ASB lifecycle commands. |
 | P0 | [AR-1590](../tasks/AR-1590.md): Inherited-fd cross-repository qualification | ar1590-inherited-fd-bridge | Complete real ASB-to-asb-tui inherited-fd broker qualification after the PTY seam exists. | Await coverage/Rust/portability repair checks, then fresh exact-head review; ASB AR-1592 and AR-1593 catalog/version alignment remain prerequisites before release. |
 | P0 | [AR-1595](../tasks/AR-1595.md): Development setup capability contract | ar1595-development-setup | Expose provider, authentication, model, agent, and default-selection capabilities for the development wizard. | Rerun PR #415 hosted checks and obtain independent exact-head review at 25fe156c; do not merge until both approve. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1588](../tasks/AR-1588.md): ASB development-channel command surface | Unclaimed | Make ASB lifecycle commands consistently select and default the development release channel. | Promote after dependencies are released; implement and qualify consistent --channel selection with default dev across ASB lifecycle commands. |
 
 ### Blocked (82)
 
