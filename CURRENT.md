@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1574](tasks/AR-1574.md): ASB development control transport wiring | Wire the ASB development launch transport to the producer control bridge. | Await hosted gates and independent review of 445de07; merge only identical green head, then release AR-1574. | ar1574-transport-wiring |
+| P0 | [AR-1574](tasks/AR-1574.md): ASB development control transport wiring | Wire the ASB development launch transport to the producer control bridge. | Await hosted gates and independent review of dfc517123baa7a271b37a05349d6062de5c7d5b6; merge only identical green head, then release AR-1574. | ar1574-transport-wiring |
 | P0 | [AR-1576](tasks/AR-1576.md): ASB development bootstrap projection | Make the development control backend satisfy the current asb-tui bootstrap projection without production credentials. | Promote and implement the development-only bootstrap projection contract required by current asb-tui startup. | ar1576-bootstrap-projection |
 
 ## Blocked
