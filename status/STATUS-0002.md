@@ -3769,8 +3769,36 @@
 | Owner | Unclaimed |
 | Parent | None |
 | Children | None |
-| Summary | Qualify the installed TUI against the live ASB control route for lifecycle, retry, cancellation, stale, and removal behavior. |
-| Next action | Promote after AR-1614; repair the paired control/catalog handshake and execute live lifecycle qualification. |
+| Summary | Final qualification of the installed TUI against the live ASB control route after lifecycle and retry/compare operations exist. |
+| Next action | Promote after AR-1614, AR-1617, and AR-1618; execute exact-SHA live handshake and end-to-end lifecycle qualification. |
+
+### AR-1617 — Explicit cassette seal, reopen, and removal operations
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Add typed seal, interrupted-capture reopen, and bounded development cassette removal across ASB and TUI. |
+| Next action | Promote after AR-1614; implement versioned backend/TUI lifecycle operations and stale/terminal negatives. |
+
+### AR-1618 — Operator retry and live/offline comparison dispatch
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Expose bounded typed benchmark retry/repeat and digest-bound live/offline comparison actions in ASB and TUI. |
+| Next action | Promote after AR-1614; implement paired retry/comparison control and stale/idempotency negatives. |
 
 
 ## Dependency graph
@@ -4455,53 +4483,9 @@ flowchart LR
         AR_1613["AR-1613 - Planned"]:::status_planned
         AR_1614["AR-1614 - In progress"]:::status_in_progress
         AR_1615["AR-1615 - Planned"]:::status_planned
+        AR_1617["AR-1617 - Planned"]:::status_planned
+        AR_1618["AR-1618 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
     AR_0001 --> AR_0101
-    AR_0001 --> AR_0501
-    AR_0001 --> AR_0701
-    AR_0002 --> AR_0004
-    AR_0002 --> AR_0005
-    AR_0002 --> AR_0830
-    AR_0002 --> AR_0834
-    AR_0002 --> AR_0895
-    AR_0002 --> AR_0903
-    AR_0003 --> AR_0830
-    AR_0003 --> AR_0831
-    AR_0003 --> AR_0845
-    AR_0003 --> AR_0855
-    AR_0003 --> AR_0877
-    AR_0003 --> AR_0878
-    AR_0003 --> AR_0895
-    AR_0003 --> AR_0897
-    AR_0003 --> AR_0898
-    AR_0003 --> AR_0899
-    AR_0003 --> AR_0903
-    AR_0003 --> AR_0906
-    AR_0003 --> AR_1235
-    AR_0003 --> AR_1242
-    AR_0003 --> AR_1252
-    AR_0003 --> AR_1283
-    AR_0004 --> AR_0005
-    AR_0004 --> AR_0849
-    AR_0101 --> AR_0102
-    AR_0101 --> AR_0104
-    AR_0101 --> AR_0201
-    AR_0101 --> AR_0203
-    AR_0101 --> AR_0301
-    AR_0101 --> AR_0302
-    AR_0101 --> AR_0303
-    AR_0101 --> AR_0304
-    AR_0101 --> AR_0305
-    AR_0101 --> AR_0306
-    AR_0101 --> AR_0307
-    AR_0101 --> AR_0308
-    AR_0101 --> AR_0309
-    AR_0101 --> AR_0310
-    AR_0101 --> AR_0317
-    AR_0101 --> AR_0401
-    AR_0101 --> AR_0502
-    AR_0101 --> AR_0517
-    AR_0101 --> AR_0601
-    AR_0101 --> AR_0603
