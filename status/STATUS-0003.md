@@ -6,7 +6,7 @@
         AR_1613["AR-1613 - Planned"]:::status_planned
         AR_1614["AR-1614 - Done"]:::status_done
         AR_1615["AR-1615 - Planned"]:::status_planned
-        AR_1617["AR-1617 - Planned"]:::status_planned
+        AR_1617["AR-1617 - Open"]:::status_open
         AR_1618["AR-1618 - Planned"]:::status_planned
         AR_1619["AR-1619 - Planned"]:::status_planned
     end

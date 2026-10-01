@@ -230,6 +230,12 @@
 
 ## Complete AR inventory
 
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1617](../tasks/AR-1617.md): Explicit cassette seal, reopen, and removal operations | Unclaimed | Add typed seal, interrupted-capture reopen, and bounded development cassette removal across ASB and TUI. | Promote after AR-1614; implement versioned backend/TUI lifecycle operations and stale/terminal negatives. |
+
 ### Blocked (82)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -317,7 +323,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (53)
+### Planned (52)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -340,7 +346,6 @@
 | P0 | [AR-1546](../tasks/AR-1546.md): AR-1308 formal capacity-input readiness repair | Unclaimed | Audit and repair the AR-1308 capacity/input handoff after diagnostic QEMU integration, without executing qualification. | Formal-only work: after AR-1531 and AR-1536, verify the exact 8 GiB/8 GiB fixture and AR-1308 formal inputs for AR-1522. Do not block or alter the completed unsigned-development path. |
 | P0 | [AR-1613](../tasks/AR-1613.md): Current-main dev-channel consumption and quickstart qualification | Unclaimed | Prove a fresh clone can consume the published dev channel and complete the shortest install-to-offline-comparison journey. | Promote after paired AR-1614 and AR-1615 releases; run the disposable exact-head current-main journey and record paired evidence. |
 | P0 | [AR-1615](../tasks/AR-1615.md): Live ASB-TUI control handshake and lifecycle repair | Unclaimed | Final qualification of the installed TUI against the live ASB control route after lifecycle and retry/compare operations exist. | Promote after AR-1614, AR-1617, AR-1618, and AR-1619; execute exact-SHA live handshake and end-to-end lifecycle qualification. |
-| P0 | [AR-1617](../tasks/AR-1617.md): Explicit cassette seal, reopen, and removal operations | Unclaimed | Add typed seal, interrupted-capture reopen, and bounded development cassette removal across ASB and TUI. | Promote after AR-1614; implement versioned backend/TUI lifecycle operations and stale/terminal negatives. |
 | P0 | [AR-1618](../tasks/AR-1618.md): Operator retry and live/offline comparison dispatch | Unclaimed | Expose bounded typed benchmark retry/repeat and digest-bound live/offline comparison actions in ASB and TUI. | Promote after AR-1614; implement paired retry/comparison control and stale/idempotency negatives. |
 | P0 | [AR-1619](../tasks/AR-1619.md): Cross-repository lifecycle protocol repair | Unclaimed | Align ASB and TUI lifecycle schemas and executable dispatch, repair retry idempotency and cassette removal, and qualify the paired implementation. | Repair PRs 433 and 213 from independent review findings before merge. |
 | P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
