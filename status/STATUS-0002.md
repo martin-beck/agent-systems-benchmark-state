@@ -3604,6 +3604,34 @@
 | Summary | Expose real cassette identity, sealing, and replay dispatch to the TUI without fabricated continuity. |
 | Next action | Release admission after receipt acceptance. |
 
+### AR-1603 — Fresh-user wizard and offline benchmark acceptance
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Qualify the complete current-main install, wizard, benchmark, recording, offline replay, and comparison journey. |
+| Next action | Promote after ASB AR-1598/1601 and TUI AR-1601 are released; execute the disposable exact-head journey. |
+
+### AR-1604 — ASB guided command output contract
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Make install, wizard, benchmark, recording, replay, comparison, and lifecycle diagnostics simple and consistently human-readable with opt-in JSON. |
+| Next action | Promote after AR-1603 acceptance; inventory commands and repair any inconsistent default/--json behavior. |
+
 
 ## Dependency graph
 
@@ -4275,6 +4303,8 @@ flowchart LR
         AR_1600["AR-1600 - Done"]:::status_done
         AR_1601["AR-1601 - Done"]:::status_done
         AR_1602["AR-1602 - Done"]:::status_done
+        AR_1603["AR-1603 - Planned"]:::status_planned
+        AR_1604["AR-1604 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4551,50 +4581,3 @@ flowchart LR
     AR_0401 --> AR_0509
     AR_0401 --> AR_0510
     AR_0401 --> AR_0511
-    AR_0401 --> AR_0512
-    AR_0401 --> AR_0513
-    AR_0401 --> AR_0514
-    AR_0401 --> AR_0702
-    AR_0401 --> AR_0703
-    AR_0401 --> AR_0705
-    AR_0401 --> AR_0706
-    AR_0401 --> AR_0802
-    AR_0401 --> AR_0808
-    AR_0401 --> AR_0848
-    AR_0401 --> AR_1002
-    AR_0401 --> AR_1004
-    AR_0401 --> AR_1007
-    AR_0402 --> AR_0404
-    AR_0402 --> AR_0406
-    AR_0403 --> AR_0404
-    AR_0404 --> AR_1394
-    AR_0405 --> AR_1394
-    AR_0406 --> AR_1394
-    AR_0501 --> AR_0502
-    AR_0501 --> AR_0879
-    AR_0502 --> AR_0503
-    AR_0502 --> AR_0516
-    AR_0502 --> AR_0517
-    AR_0502 --> AR_0518
-    AR_0502 --> AR_0520
-    AR_0502 --> AR_0871
-    AR_0502 --> AR_0879
-    AR_0502 --> AR_0901
-    AR_0502 --> AR_1005
-    AR_0502 --> AR_1330
-    AR_0503 --> AR_0314
-    AR_0503 --> AR_0504
-    AR_0503 --> AR_0505
-    AR_0503 --> AR_0506
-    AR_0503 --> AR_0507
-    AR_0503 --> AR_0508
-    AR_0503 --> AR_0509
-    AR_0503 --> AR_0510
-    AR_0503 --> AR_0511
-    AR_0503 --> AR_0512
-    AR_0503 --> AR_0513
-    AR_0503 --> AR_0514
-    AR_0503 --> AR_0516
-    AR_0503 --> AR_0517
-    AR_0503 --> AR_0518
-    AR_0503 --> AR_0520
