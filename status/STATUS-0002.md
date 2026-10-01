@@ -3594,15 +3594,15 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1602-cassette-control |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Expose real cassette identity, sealing, and replay dispatch to the TUI without fabricated continuity. |
-| Next action | Fresh independent review required for PR #424 at 7ab4cbb; hosted coverage checks pending. |
+| Next action | Release admission after receipt acceptance. |
 
 
 ## Dependency graph
@@ -4274,7 +4274,7 @@ flowchart LR
         direction TB
         AR_1600["AR-1600 - In progress"]:::status_in_progress
         AR_1601["AR-1601 - Planned"]:::status_planned
-        AR_1602["AR-1602 - In progress"]:::status_in_progress
+        AR_1602["AR-1602 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4586,3 +4586,6 @@ flowchart LR
     AR_0503 --> AR_0504
     AR_0503 --> AR_0505
     AR_0503 --> AR_0506
+    AR_0503 --> AR_0507
+    AR_0503 --> AR_0508
+    AR_0503 --> AR_0509
