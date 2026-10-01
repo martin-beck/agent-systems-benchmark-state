@@ -10,6 +10,12 @@ Never edit this file directly.
 | P0 | [AR-1567](tasks/AR-1567.md): ASB development trusted toolchain discovery | Implement trusted development cargo discovery | Obtain independent review and hosted green checks for PR #401 at 97929864fc7232d671a5b63dcb77261a1742fd97 | ar1567-toolchain-discovery |
 | P0 | [AR-1569](tasks/AR-1569.md): ASB source-archive identity repair | Repair merged identity generation so stable/source-archive ASB builds work without a Git checkout. | PR #402 at exact head 459282047f8c03d3a9aa0c28cac6abec6437f7af; await independent review and all hosted checks, then merge/release or repair. | ar1569-archive-repair |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1570](tasks/AR-1570.md): ASB dynamic development broker handoff | Wire the ASB development lifecycle through the dynamic asb-tui broker handoff. | Promote after asb-tui AR-1344 is merged; wire ASB development launch through the dynamic asb-tui broker descriptor and qualify exact heads. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -117,7 +123,6 @@ Never edit this file directly.
 | P0 | [AR-1227](tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. | - |
 | P0 | [AR-1545](tasks/AR-1545.md): AR-1307 formal-input readiness repair | Audit and repair the AR-1307 formal-input handoff after development runner integration, without executing qualification. | Formal-only work: after AR-1535 supplies reviewed inputs, inventory and independently verify every exact AR-1307 formal input for AR-1522. Do not block or alter the completed unsigned-development path. | - |
 | P0 | [AR-1546](tasks/AR-1546.md): AR-1308 formal capacity-input readiness repair | Audit and repair the AR-1308 capacity/input handoff after diagnostic QEMU integration, without executing qualification. | Formal-only work: after AR-1531 and AR-1536, verify the exact 8 GiB/8 GiB fixture and AR-1308 formal inputs for AR-1522. Do not block or alter the completed unsigned-development path. | - |
-| P0 | [AR-1570](tasks/AR-1570.md): ASB dynamic development broker handoff | Wire the ASB development lifecycle through the dynamic asb-tui broker handoff. | Promote after asb-tui AR-1344 is merged; wire ASB development launch through the dynamic asb-tui broker descriptor and qualify exact heads. | - |
 | P1 | [AR-0808](tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. | - |
 | P1 | [AR-0809](tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. | - |
 | P1 | [AR-0810](tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project's GitHub Pages site. | - |

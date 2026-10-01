@@ -145,6 +145,12 @@
 | P0 | [AR-1567](../tasks/AR-1567.md): ASB development trusted toolchain discovery | ar1567-toolchain-discovery | Implement trusted development cargo discovery | Obtain independent review and hosted green checks for PR #401 at 97929864fc7232d671a5b63dcb77261a1742fd97 |
 | P0 | [AR-1569](../tasks/AR-1569.md): ASB source-archive identity repair | ar1569-archive-repair | Repair merged identity generation so stable/source-archive ASB builds work without a Git checkout. | PR #402 at exact head 459282047f8c03d3a9aa0c28cac6abec6437f7af; await independent review and all hosted checks, then merge/release or repair. |
 
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1570](../tasks/AR-1570.md): ASB dynamic development broker handoff | Unclaimed | Wire the ASB development lifecycle through the dynamic asb-tui broker handoff. | Promote after asb-tui AR-1344 is merged; wire ASB development launch through the dynamic asb-tui broker descriptor and qualify exact heads. |
+
 ### Blocked (81)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -231,7 +237,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (49)
+### Planned (48)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -252,7 +258,6 @@
 | P0 | [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Unclaimed | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. |
 | P0 | [AR-1545](../tasks/AR-1545.md): AR-1307 formal-input readiness repair | Unclaimed | Audit and repair the AR-1307 formal-input handoff after development runner integration, without executing qualification. | Formal-only work: after AR-1535 supplies reviewed inputs, inventory and independently verify every exact AR-1307 formal input for AR-1522. Do not block or alter the completed unsigned-development path. |
 | P0 | [AR-1546](../tasks/AR-1546.md): AR-1308 formal capacity-input readiness repair | Unclaimed | Audit and repair the AR-1308 capacity/input handoff after diagnostic QEMU integration, without executing qualification. | Formal-only work: after AR-1531 and AR-1536, verify the exact 8 GiB/8 GiB fixture and AR-1308 formal inputs for AR-1522. Do not block or alter the completed unsigned-development path. |
-| P0 | [AR-1570](../tasks/AR-1570.md): ASB dynamic development broker handoff | Unclaimed | Wire the ASB development lifecycle through the dynamic asb-tui broker handoff. | Promote after asb-tui AR-1344 is merged; wire ASB development launch through the dynamic asb-tui broker descriptor and qualify exact heads. |
 | P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
 | P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
 | P1 | [AR-0810](../tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Unclaimed | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project&#x27;s GitHub Pages site. |
@@ -536,4 +541,3 @@
 | P1 | [AR-0005](../tasks/AR-0005-transactional-promotion.md): Add transactional AR promotion | Unclaimed | Make planned-to-open promotion a transactional handoffctl operation. | Await immutable independent review of exact state PR #4 head 4e56e83 and integrate only after verified green CI. |
 | P1 | [AR-0101](../tasks/AR-0101-extension-contracts.md): Freeze versioned extension and result contracts | Unclaimed | Specify typed agent, workload, collector, runtime and result contracts before parallel implementations. | Await independent immutable-head delta review and coordinator integration of exact green PR #3 head 9e90c6a6; then run post-merge verification. |
 | P1 | [AR-0102](../tasks/AR-0102-process-runtime.md): Implement process execution and cancellation | Unclaimed | Run real client processes with bounded I/O, monotonic deadlines and process-tree ownership. | Release done after successful reviewed integration, exact-main local/hosted checks, synchronized refs and live state doctor. |
-| P1 | [AR-0103](../tasks/AR-0103-sandbox-runtime.md): Implement isolated execution and resource leases | Unclaimed | Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets. | Release AR-0103 done after exact-main local and hosted post-merge verification. |
