@@ -1,0 +1,7 @@
+AR-1578 workspace coverage recovery receipt
+merged_sha=5cce2a5fe9d9416a8f9fa510856e1ed027ac61e2
+reviewed_pr_head=9d8090989a8ace41b190e6f75d71cfb9ee56ec2a
+pr=https://github.com/martin-beck/agent-systems-benchmark/pull/407
+checks=all required hosted checks passed, including the configured 90% workspace line-coverage gate
+review=two independent reviews approved the exact head; tests cover lifecycle identity/idempotency, terminal progress/failure pairing, provider registration, canonical digest binding, duplicate methods, generation/order validation, and unsafe strings
+local=asb-control focused tests and clippy passed; no production behavior, threshold, or exclusion changes
