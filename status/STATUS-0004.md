@@ -174,7 +174,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1590](../tasks/AR-1590.md): Inherited-fd cross-repository qualification | ar1590-inherited-fd-bridge | Complete real ASB-to-asb-tui inherited-fd broker qualification after the PTY seam exists. | Await hosted checks for repair head 0b46bce and ASB AR-1592 catalog implementation; then obtain fresh independent exact-head review and rerun the cross-project journey. |
+| P0 | [AR-1590](../tasks/AR-1590.md): Inherited-fd cross-repository qualification | ar1590-inherited-fd-bridge | Complete real ASB-to-asb-tui inherited-fd broker qualification after the PTY seam exists. | Await coverage/Rust/portability repair checks, then fresh exact-head review; ASB AR-1592 catalog compatibility remains a prerequisite before release. |
 | P0 | [AR-1592](../tasks/AR-1592.md): ASB control catalog compatibility | ar1592-catalog-compat | Add ASB control-protocol catalog compatibility required by the released asb-tui bootstrap journey. | Implement the common-version control protocol and real backend responses for BenchmarkCatalog and MeasurementCatalog, then publish an exact signed PR and hosted evidence. |
 
 ### Blocked (82)
@@ -544,3 +544,4 @@
 | P0 | [AR-1530](../tasks/AR-1530.md): State formal capacity profile for AR-1307/1308 | Unclaimed | Implement the state-owned 8G/8G formal capacity profile selected by AR-1529 and route it to AR-1522. | No further action: merged PR #31 provides the signed-capacity-8g profile; AR-1531 owns disposable fixture provisioning. |
 | P0 | [AR-1532](../tasks/AR-1532.md): AR-1307 unsigned-development runner repair | Unclaimed | Repair and independently qualify the provider-free unsigned-development runner path associated with AR-1307 without changing formal limits or evidence gates. | Promote and claim; rerun the provider-free unsigned-development AR-1307 runner path on the v0.3.53-compatible state, then record non-qualifying evidence. |
 | P0 | [AR-1533](../tasks/AR-1533.md): AR-1308 unsigned-development QEMU fixture repair | Unclaimed | Repair the provider-free unsigned-development QEMU fixture for AR-1308 and make its diagnostics, cleanup and non-qualification boundary reliable. | Promote and claim; rerun the provider-free unsigned-development AR-1308 QEMU fixture on the v0.3.53-compatible state and preserve qualification_authorized=false. |
+| P0 | [AR-1534](../tasks/AR-1534.md): Coordinator vendor integrity repair | Unclaimed | Immutable coordinator v0.3.53 vendor boundary and ASB lifecycle/session/SQLite compatibility are green; close with successor receipts. | Promote and close from AR-1547/AR-1549: v0.3.53 vendor verification and all compatibility gates are green; preserve the separate formal qualification boundary. |

@@ -3434,7 +3434,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Complete real ASB-to-asb-tui inherited-fd broker qualification after the PTY seam exists. |
-| Next action | Await hosted checks for repair head 0b46bce and ASB AR-1592 catalog implementation; then obtain fresh independent exact-head review and rerun the cross-project journey. |
+| Next action | Await coverage/Rust/portability repair checks, then fresh exact-head review; ASB AR-1592 catalog compatibility remains a prerequisite before release. |
 
 ### AR-1591 — Post-release fresh-clone ASB consumption
 
@@ -4653,3 +4653,4 @@ flowchart LR
     AR_0858 --> AR_0859
     AR_0859 --> AR_0860
     AR_0860 --> AR_0861
+    AR_0861 --> AR_0862
