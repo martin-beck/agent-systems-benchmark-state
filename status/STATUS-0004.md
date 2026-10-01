@@ -217,11 +217,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1603](../tasks/AR-1603.md): Fresh-user wizard and offline benchmark acceptance | Unclaimed | Qualify the complete current-main install, wizard, benchmark, recording, offline replay, and comparison journey. | Promote after ASB AR-1598/1601 and TUI AR-1601 are released; execute the disposable exact-head journey. |
+| P0 | [AR-1603](../tasks/AR-1603.md): Fresh-user wizard and offline benchmark acceptance | asb1603-acceptance | Qualify the complete current-main install, wizard, benchmark, recording, offline replay, and comparison journey. | Promote after ASB AR-1598/1601 and TUI AR-1601 are released; execute the disposable exact-head journey. |
 
 ### Blocked (82)
 
