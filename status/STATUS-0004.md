@@ -143,7 +143,7 @@
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1567](../tasks/AR-1567.md): ASB development trusted toolchain discovery | ar1567-toolchain-discovery | Implement trusted development cargo discovery | Obtain independent review and hosted green checks for PR #401 at 97929864fc7232d671a5b63dcb77261a1742fd97 |
-| P0 | [AR-1569](../tasks/AR-1569.md): ASB source-archive identity repair | ar1569-archive-repair | Repair merged identity generation so stable/source-archive ASB builds work without a Git checkout. | PR #402 at exact head 459282047f8c03d3a9aa0c28cac6abec6437f7af; await independent review and all hosted checks, then merge/release or repair. |
+| P0 | [AR-1569](../tasks/AR-1569.md): ASB source-archive identity repair | ar1569-archive-repair | Repair merged identity generation so stable/source-archive ASB builds work without a Git checkout. | PR #402 is at exact head e05e7ff403ce6a1a91f4f05d5ea0c570eeb9d9d2; hosted checks rerunning after parent-git archive guard. Await independent review and green checks, then merge/release or repair. |
 | P0 | [AR-1570](../tasks/AR-1570.md): ASB dynamic development broker handoff | ar1570-dynamic-broker-handoff | Wire the ASB development lifecycle through the dynamic asb-tui broker handoff. | Promote after asb-tui AR-1344 is merged; wire ASB development launch through the dynamic asb-tui broker descriptor and qualify exact heads. |
 
 ### Blocked (81)
@@ -536,4 +536,3 @@
 | P1 | [AR-0005](../tasks/AR-0005-transactional-promotion.md): Add transactional AR promotion | Unclaimed | Make planned-to-open promotion a transactional handoffctl operation. | Await immutable independent review of exact state PR #4 head 4e56e83 and integrate only after verified green CI. |
 | P1 | [AR-0101](../tasks/AR-0101-extension-contracts.md): Freeze versioned extension and result contracts | Unclaimed | Specify typed agent, workload, collector, runtime and result contracts before parallel implementations. | Await independent immutable-head delta review and coordinator integration of exact green PR #3 head 9e90c6a6; then run post-merge verification. |
 | P1 | [AR-0102](../tasks/AR-0102-process-runtime.md): Implement process execution and cancellation | Unclaimed | Run real client processes with bounded I/O, monotonic deadlines and process-tree ownership. | Release done after successful reviewed integration, exact-main local/hosted checks, synchronized refs and live state doctor. |
-| P1 | [AR-0103](../tasks/AR-0103-sandbox-runtime.md): Implement isolated execution and resource leases | Unclaimed | Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets. | Release AR-0103 done after exact-main local and hosted post-merge verification. |

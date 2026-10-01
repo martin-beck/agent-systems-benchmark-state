@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1567](tasks/AR-1567.md): ASB development trusted toolchain discovery | Implement trusted development cargo discovery | Obtain independent review and hosted green checks for PR #401 at 97929864fc7232d671a5b63dcb77261a1742fd97 | ar1567-toolchain-discovery |
-| P0 | [AR-1569](tasks/AR-1569.md): ASB source-archive identity repair | Repair merged identity generation so stable/source-archive ASB builds work without a Git checkout. | PR #402 at exact head 459282047f8c03d3a9aa0c28cac6abec6437f7af; await independent review and all hosted checks, then merge/release or repair. | ar1569-archive-repair |
+| P0 | [AR-1569](tasks/AR-1569.md): ASB source-archive identity repair | Repair merged identity generation so stable/source-archive ASB builds work without a Git checkout. | PR #402 is at exact head e05e7ff403ce6a1a91f4f05d5ea0c570eeb9d9d2; hosted checks rerunning after parent-git archive guard. Await independent review and green checks, then merge/release or repair. | ar1569-archive-repair |
 | P0 | [AR-1570](tasks/AR-1570.md): ASB dynamic development broker handoff | Wire the ASB development lifecycle through the dynamic asb-tui broker handoff. | Promote after asb-tui AR-1344 is merged; wire ASB development launch through the dynamic asb-tui broker descriptor and qualify exact heads. | ar1570-dynamic-broker-handoff |
 
 ## Blocked

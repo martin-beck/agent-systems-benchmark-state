@@ -3280,7 +3280,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair merged identity generation so stable/source-archive ASB builds work without a Git checkout. |
-| Next action | PR #402 at exact head 459282047f8c03d3a9aa0c28cac6abec6437f7af; await independent review and all hosted checks, then merge/release or repair. |
+| Next action | PR #402 is at exact head e05e7ff403ce6a1a91f4f05d5ea0c570eeb9d9d2; hosted checks rerunning after parent-git archive guard. Await independent review and green checks, then merge/release or repair. |
 
 ### AR-1570 — ASB dynamic development broker handoff
 
@@ -4749,5 +4749,3 @@ flowchart LR
     AR_1233 --> AR_1232
     AR_1233 --> AR_1237
     AR_1233 --> AR_1257
-    AR_1234 --> AR_1232
-    AR_1236 --> AR_1233
