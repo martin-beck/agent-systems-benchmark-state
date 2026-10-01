@@ -187,11 +187,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1597](../tasks/AR-1597.md): Fault matrix and deterministic runner | Unclaimed | Exercise all setup, recording, replay, benchmark, and recovery failure paths with bounded evidence. | Build the isolated fault-matrix runner once cassette lifecycle behavior is released. |
+| P0 | [AR-1597](../tasks/AR-1597.md): Fault matrix and deterministic runner | ar1199-router-impl | Exercise all setup, recording, replay, benchmark, and recovery failure paths with bounded evidence. | Build the isolated fault-matrix runner once cassette lifecycle behavior is released. |
 
 ### Blocked (82)
 
