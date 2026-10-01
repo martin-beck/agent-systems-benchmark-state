@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1598.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id":"fresh-setup","description":"Disposable current-main setup selects provider, model, agents, and defaults without real credentials."},
+    {"id":"record","description":"Selected/all workloads record and seal a complete bounded cassette."},
+    {"id":"offline","description":"Paired runtime authority enables offline replay and comparison with egress denied."}
+  ],
+  "definition_of_done": ["Fresh-user transcript and cleanup are recorded.", "Independent paired acceptance and exact hosted checks pass."],
+  "inputs": [{"id":"paired-heads","description":"Exact ASB and TUI current-main heads."}],
+  "outputs": [{"id":"qualification","description":"Disposable install-to-offline-comparison acceptance receipt."}],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["credential-bypass", "secret-output"],
+  "required_evidence_classes": ["contract-test", "mechanical", "environmental"],
+  "gates": [{"id":"exact-heads","description":"ASB and TUI exact current-main heads are recorded."}, {"id":"hosted","description":"Required hosted checks pass."}]
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1603.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id":"install-wizard","description":"Fresh install reaches the selection-driven wizard and persists shared defaults."},
+    {"id":"benchmark","description":"Configured agents run benchmarks and produce comparable reports."},
+    {"id":"record-replay","description":"Selected/all recording seals a cassette and paired TUI authority enables offline replay."}
+  ],
+  "definition_of_done": ["Paired ASB/TUI exact-head journey passes with cleanup and typed negatives.", "Independent review and hosted checks are recorded."],
+  "inputs": [{"id":"paired-heads","description":"Exact ASB and TUI current-main heads and released prerequisite ARs."}],
+  "outputs": [{"id":"acceptance","description":"Complete fresh-user wizard, benchmark, recording, replay, and comparison receipt."}],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["credential-bypass", "secret-output"],
+  "required_evidence_classes": ["contract-test", "mechanical", "environmental"],
+  "gates": [{"id":"exact-heads","description":"ASB and TUI exact current-main heads are recorded."}, {"id":"hosted","description":"Required hosted and exact-main checks pass."}]
+}
