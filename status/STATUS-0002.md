@@ -3702,6 +3702,34 @@
 | Summary | Expose explicit opencode/opendesk adapter compatibility for provider, model, authentication, and benchmark defaults. |
 | Next action | Promote after AR-1607 release; implement additive adapter records and compatibility diagnostics. |
 
+### AR-1611 — Integrated dev-channel TUI install and launch
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Make asb tui install fetch the current dev-channel TUI, build it in a temporary staging area, publish atomically, and launch it through the trusted ASB router. |
+| Next action | Promote after the current install/router implementation is audited; add an exact-main disposable install, upgrade, rollback, and launch qualification. |
+
+### AR-1612 — Selected-workload recording campaign controls
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Expose a simple ASB control operation to record responses for selected or all implemented workloads and make the sealed result available for the next offline run. |
+| Next action | Promote after configuration persistence is released; implement typed selected/all workload planning, bounded execution, sealing, and offline activation. |
+
 
 ## Dependency graph
 
@@ -4380,6 +4408,8 @@ flowchart LR
         AR_1607["AR-1607 - Done"]:::status_done
         AR_1608["AR-1608 - In progress"]:::status_in_progress
         AR_1609["AR-1609 - Done"]:::status_done
+        AR_1611["AR-1611 - Planned"]:::status_planned
+        AR_1612["AR-1612 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4499,56 +4529,3 @@ flowchart LR
     AR_0104 --> AR_0314
     AR_0104 --> AR_0601
     AR_0104 --> AR_0603
-    AR_0104 --> AR_0801
-    AR_0104 --> AR_0803
-    AR_0104 --> AR_0805
-    AR_0104 --> AR_0806
-    AR_0104 --> AR_0822
-    AR_0104 --> AR_0841
-    AR_0104 --> AR_0847
-    AR_0104 --> AR_0902
-    AR_0104 --> AR_0905
-    AR_0104 --> AR_1002
-    AR_0104 --> AR_1005
-    AR_0104 --> AR_1037
-    AR_0105 --> AR_0204
-    AR_0201 --> AR_0202
-    AR_0201 --> AR_0204
-    AR_0201 --> AR_0504
-    AR_0201 --> AR_0601
-    AR_0201 --> AR_0602
-    AR_0201 --> AR_0604
-    AR_0201 --> AR_0702
-    AR_0201 --> AR_0703
-    AR_0201 --> AR_0705
-    AR_0201 --> AR_0706
-    AR_0201 --> AR_0848
-    AR_0202 --> AR_0602
-    AR_0202 --> AR_0604
-    AR_0203 --> AR_0204
-    AR_0203 --> AR_0806
-    AR_0203 --> AR_0901
-    AR_0203 --> AR_1001
-    AR_0203 --> AR_1004
-    AR_0204 --> AR_0801
-    AR_0204 --> AR_0803
-    AR_0204 --> AR_0805
-    AR_0204 --> AR_0847
-    AR_0204 --> AR_0903
-    AR_0204 --> AR_0905
-    AR_0204 --> AR_1004
-    AR_0204 --> AR_1006
-    AR_0301 --> AR_0311
-    AR_0301 --> AR_0312
-    AR_0301 --> AR_0315
-    AR_0301 --> AR_0316
-    AR_0301 --> AR_0505
-    AR_0301 --> AR_0506
-    AR_0301 --> AR_1003
-    AR_0302 --> AR_0311
-    AR_0302 --> AR_0312
-    AR_0302 --> AR_0315
-    AR_0302 --> AR_0316
-    AR_0302 --> AR_0505
-    AR_0302 --> AR_0507
-    AR_0302 --> AR_0516

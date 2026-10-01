@@ -1,5 +1,58 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+    AR_0104 --> AR_0801
+    AR_0104 --> AR_0803
+    AR_0104 --> AR_0805
+    AR_0104 --> AR_0806
+    AR_0104 --> AR_0822
+    AR_0104 --> AR_0841
+    AR_0104 --> AR_0847
+    AR_0104 --> AR_0902
+    AR_0104 --> AR_0905
+    AR_0104 --> AR_1002
+    AR_0104 --> AR_1005
+    AR_0104 --> AR_1037
+    AR_0105 --> AR_0204
+    AR_0201 --> AR_0202
+    AR_0201 --> AR_0204
+    AR_0201 --> AR_0504
+    AR_0201 --> AR_0601
+    AR_0201 --> AR_0602
+    AR_0201 --> AR_0604
+    AR_0201 --> AR_0702
+    AR_0201 --> AR_0703
+    AR_0201 --> AR_0705
+    AR_0201 --> AR_0706
+    AR_0201 --> AR_0848
+    AR_0202 --> AR_0602
+    AR_0202 --> AR_0604
+    AR_0203 --> AR_0204
+    AR_0203 --> AR_0806
+    AR_0203 --> AR_0901
+    AR_0203 --> AR_1001
+    AR_0203 --> AR_1004
+    AR_0204 --> AR_0801
+    AR_0204 --> AR_0803
+    AR_0204 --> AR_0805
+    AR_0204 --> AR_0847
+    AR_0204 --> AR_0903
+    AR_0204 --> AR_0905
+    AR_0204 --> AR_1004
+    AR_0204 --> AR_1006
+    AR_0301 --> AR_0311
+    AR_0301 --> AR_0312
+    AR_0301 --> AR_0315
+    AR_0301 --> AR_0316
+    AR_0301 --> AR_0505
+    AR_0301 --> AR_0506
+    AR_0301 --> AR_1003
+    AR_0302 --> AR_0311
+    AR_0302 --> AR_0312
+    AR_0302 --> AR_0315
+    AR_0302 --> AR_0316
+    AR_0302 --> AR_0505
+    AR_0302 --> AR_0507
+    AR_0302 --> AR_0516
     AR_0302 --> AR_1003
     AR_0303 --> AR_0311
     AR_0303 --> AR_0312
@@ -1383,18 +1436,25 @@
     AR_1598 --> AR_1603
     AR_1599 --> AR_1600
     AR_1599 --> AR_1601
+    AR_1599 --> AR_1611
     AR_1600 --> AR_1601
+    AR_1600 --> AR_1611
     AR_1601 --> AR_1603
     AR_1601 --> AR_1607
+    AR_1601 --> AR_1611
     AR_1602 --> AR_1605
     AR_1603 --> AR_1604
     AR_1605 --> AR_1603
     AR_1605 --> AR_1606
+    AR_1605 --> AR_1611
+    AR_1605 --> AR_1612
     AR_1606 --> AR_1603
+    AR_1606 --> AR_1612
     AR_1607 --> AR_1603
     AR_1607 --> AR_1608
     AR_1607 --> AR_1609
     AR_1608 --> AR_1603
+    AR_1608 --> AR_1612
     AR_1609 --> AR_1608
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -1817,4 +1877,3 @@
 | [AR-1381](../tasks/AR-1381-live-cli-scheduler-wiring.md) | [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md), [AR-1364](../tasks/AR-1364-authenticated-chain-enrollment.md), [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md), [AR-1373](../tasks/AR-1373-authenticated-receipt-source.md), [AR-1377](../tasks/AR-1377-runtime-chain-store.md), [AR-1378](../tasks/AR-1378-live-control-adapter.md), [AR-1380](../tasks/AR-1380-runtime-scheduler-composition.md) | [AR-1382](../tasks/AR-1382-authenticated-live-execution-source.md), [AR-1383](../tasks/AR-1383-runtime-authority-profile.md), [AR-1384](../tasks/AR-1384-runtime-bootstrap-materialization.md), [AR-1385](../tasks/AR-1385-runtime-live-dispatch-source.md), [AR-1386](../tasks/AR-1386-live-cli-dispatch-integration.md) |
 | [AR-1382](../tasks/AR-1382-authenticated-live-execution-source.md) | [AR-1373](../tasks/AR-1373-authenticated-receipt-source.md), [AR-1377](../tasks/AR-1377-runtime-chain-store.md), [AR-1378](../tasks/AR-1378-live-control-adapter.md), [AR-1380](../tasks/AR-1380-runtime-scheduler-composition.md), [AR-1381](../tasks/AR-1381-live-cli-scheduler-wiring.md) | None |
 | [AR-1383](../tasks/AR-1383-runtime-authority-profile.md) | [AR-1373](../tasks/AR-1373-authenticated-receipt-source.md), [AR-1377](../tasks/AR-1377-runtime-chain-store.md), [AR-1380](../tasks/AR-1380-runtime-scheduler-composition.md), [AR-1381](../tasks/AR-1381-live-cli-scheduler-wiring.md) | [AR-1384](../tasks/AR-1384-runtime-bootstrap-materialization.md) |
-| [AR-1384](../tasks/AR-1384-runtime-bootstrap-materialization.md) | [AR-1373](../tasks/AR-1373-authenticated-receipt-source.md), [AR-1377](../tasks/AR-1377-runtime-chain-store.md), [AR-1380](../tasks/AR-1380-runtime-scheduler-composition.md), [AR-1381](../tasks/AR-1381-live-cli-scheduler-wiring.md), [AR-1383](../tasks/AR-1383-runtime-authority-profile.md) | [AR-1385](../tasks/AR-1385-runtime-live-dispatch-source.md), [AR-1386](../tasks/AR-1386-live-cli-dispatch-integration.md), [AR-1387](../tasks/AR-1387-runtime-control-cli-bridge.md), [AR-1388](../tasks/AR-1388-runtime-authority-materializer.md), [AR-1389](../tasks/AR-1389-formal-fixture-exec-race.md) |
