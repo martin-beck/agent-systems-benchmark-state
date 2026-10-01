@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1596](tasks/AR-1596.md): Cassette and offline lifecycle integration | Provide deterministic cassette recording and provider-free replay for benchmark workloads. | Post-merge main 3f95bfff has policy/quality green but aarch64 portability failed one pre-existing goose diagnostic/symlink test (199 passed, 1 failed); failed job rerun requested. Release AR-1596 only after rerun and all required main checks pass. | ar1496-cassette-lifecycle |
+| P0 | [AR-1596](tasks/AR-1596.md): Cassette and offline lifecycle integration | Provide deterministic cassette recording and provider-free replay for benchmark workloads. | Released: monitor downstream AR-1597 consumption of cassette/offline lifecycle. | ar1496-cassette-lifecycle |
 
 ## Blocked
 

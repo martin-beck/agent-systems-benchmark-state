@@ -3518,7 +3518,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Provide deterministic cassette recording and provider-free replay for benchmark workloads. |
-| Next action | Post-merge main 3f95bfff has policy/quality green but aarch64 portability failed one pre-existing goose diagnostic/symlink test (199 passed, 1 failed); failed job rerun requested. Release AR-1596 only after rerun and all required main checks pass. |
+| Next action | Released: monitor downstream AR-1597 consumption of cassette/offline lifecycle. |
 
 ### AR-1597 — Fault matrix and deterministic runner
 
@@ -4610,3 +4610,10 @@ flowchart LR
     AR_0801 --> AR_0842
     AR_0801 --> AR_0847
     AR_0801 --> AR_0849
+    AR_0801 --> AR_0869
+    AR_0802 --> AR_0808
+    AR_0802 --> AR_0809
+    AR_0802 --> AR_0872
+    AR_0802 --> AR_0903
+    AR_0803 --> AR_0804
+    AR_0803 --> AR_0805
