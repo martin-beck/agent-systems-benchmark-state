@@ -3730,6 +3730,20 @@
 | Summary | Expose a simple ASB control operation to record responses for selected or all implemented workloads and make the sealed result available for the next offline run. |
 | Next action | Promote after configuration persistence is released; implement typed selected/all workload planning, bounded execution, sealing, and offline activation. |
 
+### AR-1613 — Current-main dev-channel consumption and quickstart qualification
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Prove a fresh clone can consume the published dev channel and complete the shortest install-to-offline-comparison journey. |
+| Next action | Promote after ASB/TUI AR-1604 release; run the disposable exact-head current-main journey and record paired evidence. |
+
 
 ## Dependency graph
 
@@ -4410,6 +4424,7 @@ flowchart LR
         AR_1609["AR-1609 - Done"]:::status_done
         AR_1611["AR-1611 - Done"]:::status_done
         AR_1612["AR-1612 - Done"]:::status_done
+        AR_1613["AR-1613 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4507,28 +4522,3 @@ flowchart LR
     AR_0103 --> AR_0306
     AR_0103 --> AR_0307
     AR_0103 --> AR_0308
-    AR_0103 --> AR_0309
-    AR_0103 --> AR_0401
-    AR_0103 --> AR_0601
-    AR_0103 --> AR_0603
-    AR_0103 --> AR_0702
-    AR_0103 --> AR_0703
-    AR_0103 --> AR_0704
-    AR_0103 --> AR_0707
-    AR_0103 --> AR_0830
-    AR_0103 --> AR_0848
-    AR_0103 --> AR_0857
-    AR_0103 --> AR_0863
-    AR_0103 --> AR_0875
-    AR_0103 --> AR_0876
-    AR_0103 --> AR_0902
-    AR_0103 --> AR_0908
-    AR_0103 --> AR_0909
-    AR_0103 --> AR_1002
-    AR_0104 --> AR_0204
-    AR_0104 --> AR_0314
-    AR_0104 --> AR_0601
-    AR_0104 --> AR_0603
-    AR_0104 --> AR_0801
-    AR_0104 --> AR_0803
-    AR_0104 --> AR_0805
