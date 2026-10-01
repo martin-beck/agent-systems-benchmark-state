@@ -3350,7 +3350,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Wire the ASB development launch transport to the producer control bridge. |
-| Next action | Await hosted gates and independent review of PR #406; merge only identical green head, then release AR-1574. |
+| Next action | Await hosted gates and independent review of b9dc85c; merge only identical green head, then release AR-1574. |
 
 
 ## Dependency graph
