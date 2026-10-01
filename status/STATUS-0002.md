@@ -3490,7 +3490,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Keep the real cross-repository qualification while preserving the enforced workspace coverage floor. |
-| Next action | Await hosted checks on 63e16ee, then obtain a fresh independent exact-head review and release the repair seam. |
+| Next action | Hosted checks are green and PR #412 merged as abedc66; add spec acceptance evidence or repair task metadata before done release. |
 
 ### AR-1595 — Development setup capability contract
 

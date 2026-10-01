@@ -9,7 +9,7 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1590](tasks/AR-1590.md): Inherited-fd cross-repository qualification | Complete real ASB-to-asb-tui inherited-fd broker qualification after the PTY seam exists. | Await coverage/Rust/portability repair checks, then fresh exact-head review; ASB AR-1592 and AR-1593 catalog/version alignment remain prerequisites before release. | ar1590-inherited-fd-bridge |
 | P0 | [AR-1592](tasks/AR-1592.md): ASB control catalog compatibility | Add ASB control-protocol catalog compatibility required by the released asb-tui bootstrap journey. | Await all PR #413 hosted checks, then obtain independent exact-head review and release the typed ASB catalog implementation; AR-1593 owns the follow-up common-version alignment. | ar1592-catalog-compat |
-| P0 | [AR-1594](tasks/AR-1594.md): Qualification coverage isolation | Keep the real cross-repository qualification while preserving the enforced workspace coverage floor. | Await hosted checks on 63e16ee, then obtain a fresh independent exact-head review and release the repair seam. | ar1498-qualification-coverage |
+| P0 | [AR-1594](tasks/AR-1594.md): Qualification coverage isolation | Keep the real cross-repository qualification while preserving the enforced workspace coverage floor. | Hosted checks are green and PR #412 merged as abedc66; add spec acceptance evidence or repair task metadata before done release. | ar1498-qualification-coverage |
 
 ## Blocked
 
