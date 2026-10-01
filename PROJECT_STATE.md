@@ -17,21 +17,21 @@ Generated from local Git and GitHub. Do not edit.
 | #365 | `dependabot/cargo/rcgen-0.14.10@8604b5977544` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump rcgen from 0.14.7 to 0.14.10 |
 | #366 | `dependabot/cargo/schemars-1.2.2@047b52b0b5b9` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump schemars from 1.0.4 to 1.2.2 |
 | #384 | `feature/ar-1508-platform-owned-authority-provider@2c70f81100ca` | `main` | DIRTY | - | feat(runtime): platform-owned authority provider |
-| #420 | `feature/ar-1597-fault-matrix@32b5c514f3ca` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | feat(asb): add bounded fault matrix runner |
+| #420 | `feature/ar-1597-fault-matrix@829f67f9d3f5` | `main` | UNSTABLE | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(asb): add bounded fault matrix runner |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36844300540 | `32b5c514f3ca` | pull_request | Repository quality | in_progress:- |
-| 36844300456 | `32b5c514f3ca` | pull_request | Hosted portability and native qualification | in_progress:- |
-| 36844300428 | `32b5c514f3ca` | pull_request | Rust verification | in_progress:- |
-| 36844300386 | `32b5c514f3ca` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 36844300379 | `32b5c514f3ca` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 36844300378 | `32b5c514f3ca` | pull_request | Huawei MIT source headers | completed:success |
-| 36844300376 | `32b5c514f3ca` | pull_request | Credential-free benchmark path | completed:success |
-| 36844300338 | `32b5c514f3ca` | pull_request | Fault assurance | in_progress:- |
-| 36844300299 | `32b5c514f3ca` | pull_request | Cross-repository development broker qualification | in_progress:- |
-| 36844300298 | `32b5c514f3ca` | pull_request | Formal assurance | in_progress:- |
-| 36842039159 | `3f95bfff6613` | push | Formal assurance | completed:success |
-| 36842039114 | `3f95bfff6613` | push | Fault assurance | completed:success |
+| 36846136680 | `829f67f9d3f5` | pull_request | Cross-repository development broker qualification | in_progress:- |
+| 36846136571 | `829f67f9d3f5` | pull_request | Repository quality | in_progress:- |
+| 36846136487 | `829f67f9d3f5` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 36846136468 | `829f67f9d3f5` | pull_request | Formal assurance | in_progress:- |
+| 36846136442 | `829f67f9d3f5` | pull_request | Credential-free benchmark path | in_progress:- |
+| 36846136440 | `829f67f9d3f5` | pull_request | Emulated aarch64 portability | queued:- |
+| 36846136418 | `829f67f9d3f5` | pull_request | Fault assurance | in_progress:- |
+| 36846136410 | `829f67f9d3f5` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 36846136394 | `829f67f9d3f5` | pull_request | Rust verification | in_progress:- |
+| 36846136373 | `829f67f9d3f5` | pull_request | Huawei MIT source headers | completed:success |
+| 36844300540 | `32b5c514f3ca` | pull_request | Repository quality | completed:success |
+| 36844300456 | `32b5c514f3ca` | pull_request | Hosted portability and native qualification | completed:success |
