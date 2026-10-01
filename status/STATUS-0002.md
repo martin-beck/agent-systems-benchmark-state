@@ -3426,11 +3426,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1590-inherited-fd-bridge |
 | Parent | None |
 | Children | None |
 | Summary | Complete real ASB-to-asb-tui inherited-fd broker qualification after the PTY seam exists. |
@@ -4105,7 +4105,7 @@ flowchart LR
         AR_1578["AR-1578 - Done"]:::status_done
         AR_1588["AR-1588 - Planned"]:::status_planned
         AR_1589["AR-1589 - Planned"]:::status_planned
-        AR_1590["AR-1590 - Open"]:::status_open
+        AR_1590["AR-1590 - In progress"]:::status_in_progress
         AR_1591["AR-1591 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
@@ -4664,5 +4664,3 @@ flowchart LR
     AR_0871 --> AR_1150
     AR_0872 --> AR_0808
     AR_0872 --> AR_0809
-    AR_0872 --> AR_0873
-    AR_0872 --> AR_0893

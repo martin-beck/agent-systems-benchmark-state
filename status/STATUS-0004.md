@@ -166,11 +166,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1590](../tasks/AR-1590.md): Inherited-fd cross-repository qualification | Unclaimed | Complete real ASB-to-asb-tui inherited-fd broker qualification after the PTY seam exists. | Promote after the asb-tui PTY seam is released; complete non-ignored exact-binary inherited-fd wire qualification and merge/release the bridge successor. |
+| P0 | [AR-1590](../tasks/AR-1590.md): Inherited-fd cross-repository qualification | ar1590-inherited-fd-bridge | Complete real ASB-to-asb-tui inherited-fd broker qualification after the PTY seam exists. | Promote after the asb-tui PTY seam is released; complete non-ignored exact-binary inherited-fd wire qualification and merge/release the bridge successor. |
 
 ### Blocked (82)
 

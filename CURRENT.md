@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1590](tasks/AR-1590.md): Inherited-fd cross-repository qualification | Complete real ASB-to-asb-tui inherited-fd broker qualification after the PTY seam exists. | Promote after the asb-tui PTY seam is released; complete non-ignored exact-binary inherited-fd wire qualification and merge/release the bridge successor. | - |
+| P0 | [AR-1590](tasks/AR-1590.md): Inherited-fd cross-repository qualification | Complete real ASB-to-asb-tui inherited-fd broker qualification after the PTY seam exists. | Promote after the asb-tui PTY seam is released; complete non-ignored exact-binary inherited-fd wire qualification and merge/release the bridge successor. | ar1590-inherited-fd-bridge |
 
 ## Blocked
 
