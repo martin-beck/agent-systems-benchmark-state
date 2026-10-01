@@ -3688,6 +3688,20 @@
 | Summary | Persist editable provider/agent/model/auth selections and shared defaults safely for subsequent runs. |
 | Next action | Promote after AR-1607 release and implement atomic redacted configuration updates. |
 
+### AR-1609 — Coding-agent adapter catalog and compatibility
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Expose explicit opencode/opendesk adapter compatibility for provider, model, authentication, and benchmark defaults. |
+| Next action | Promote after AR-1607 release; implement additive adapter records and compatibility diagnostics. |
+
 
 ## Dependency graph
 
@@ -4365,6 +4379,7 @@ flowchart LR
         AR_1606["AR-1606 - Done"]:::status_done
         AR_1607["AR-1607 - Planned"]:::status_planned
         AR_1608["AR-1608 - Planned"]:::status_planned
+        AR_1609["AR-1609 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4537,26 +4552,3 @@ flowchart LR
     AR_0302 --> AR_0505
     AR_0302 --> AR_0507
     AR_0302 --> AR_0516
-    AR_0302 --> AR_1003
-    AR_0303 --> AR_0311
-    AR_0303 --> AR_0312
-    AR_0303 --> AR_0315
-    AR_0303 --> AR_0316
-    AR_0303 --> AR_0505
-    AR_0303 --> AR_0508
-    AR_0303 --> AR_0850
-    AR_0303 --> AR_1003
-    AR_0304 --> AR_0311
-    AR_0304 --> AR_0312
-    AR_0304 --> AR_0315
-    AR_0304 --> AR_0316
-    AR_0304 --> AR_0505
-    AR_0304 --> AR_0509
-    AR_0304 --> AR_1003
-    AR_0305 --> AR_0311
-    AR_0305 --> AR_0312
-    AR_0305 --> AR_0315
-    AR_0305 --> AR_0316
-    AR_0305 --> AR_0510
-    AR_0306 --> AR_0311
-    AR_0306 --> AR_0312
