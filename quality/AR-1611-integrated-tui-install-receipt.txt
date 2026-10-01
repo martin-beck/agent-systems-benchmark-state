@@ -1,0 +1,23 @@
+AR-1611 integrated dev-channel TUI install and launch receipt
+
+Protected product repository: martin-beck/agent-systems-benchmark
+Pull request: #429
+Merged protected-main head: 4fc63cf625e4e16d3fed8763a5e492321754e317
+Merged at: 2026-10-01T20:05:00Z
+
+Implementation head: eb74d68b464f6b21056ff866bc2ee7d04fc6bfd2
+The router now honors development --offline/--dry-run/--launch, locks all
+development lifecycle mutations, emits explicit warning codes for missing
+authentication/signatures/key management, and carries source commit/tree and
+executable digests through install/status/doctor/launch.
+
+Local evidence:
+- cargo fmt --all -- --check: passed
+- cargo check -p asb-cli --locked: passed
+- cargo test -p asb-cli --locked --lib tui::tests: 50 passed
+- cargo test -p asb-cli --locked --test tui_lifecycle: 4 passed
+- independent review: approved; SSH signature and DCO verified
+
+Hosted evidence on merged head: exact-main Repository quality, Rust, aarch64,
+formal, fault, platform, TUI journey, credential-free, AWQ, and header checks
+all passed.
