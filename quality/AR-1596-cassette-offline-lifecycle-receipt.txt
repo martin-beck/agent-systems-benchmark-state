@@ -4,8 +4,12 @@ Source and merge
 - PR: https://github.com/martin-beck/agent-systems-benchmark/pull/418
 - reviewed source head: 4037ec95cb5ac6aca4257ed6924a43a30e0b9ccf
 - protected-main merge: 23ca7ba04746822133201f72b36539543371d697
+- protected-main topology repair merge: 3f95bfff6613f191038c4a4f6d0d3d86c09fe6ca
+- topology parents: 23ca7ba04746822133201f72b36539543371d697, a64f1f5ca526695c1568388ec8bc92bf56c136a8
 - independent review: APPROVE at exact reviewed head
 - hosted checks: all required checks SUCCESS, including Repository quality and coverage
+- post-merge required checks: all SUCCESS on main 3f95bfff, including Repository quality run 36842039073 and Rust verification run 36842039107
+- post-merge aarch64 retry: SUCCESS, run 36842039041 attempt 2 at 2026-10-01T09:35:32Z
 
 Behavioral evidence
 - record-campaign stages all sealed outputs and publishes only complete matrices
@@ -26,3 +30,4 @@ Local evidence
 
 Notes
 - One initial aggregate post-merge CLI run encountered transient private-root ownership residue; the exact failing test passed when rerun in isolation. No product change was made for that environmental flake.
+- Aarch64 attempt 1 had one platform scheduling/behavior failure in an existing goose diagnostic test; retry attempt 2 passed all guest tests.
