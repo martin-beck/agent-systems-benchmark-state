@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1596](tasks/AR-1596.md): Cassette and offline lifecycle integration | Provide deterministic cassette recording and provider-free replay for benchmark workloads. | Obtain fresh independent exact-head review and all hosted checks for PR #418 at 08b66057f78cb99c776977493e68f1364bb79fec; do not merge until both approve. | ar1496-cassette-lifecycle |
+| P0 | [AR-1596](tasks/AR-1596.md): Cassette and offline lifecycle integration | Provide deterministic cassette recording and provider-free replay for benchmark workloads. | Obtain fresh independent exact-head review and all hosted checks for PR #418 at 4037ec95cb5ac6aca4257ed6924a43a30e0b9ccf; do not merge until both approve. | ar1496-cassette-lifecycle |
 
 ## Blocked
 
