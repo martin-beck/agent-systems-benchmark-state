@@ -3251,8 +3251,8 @@
 | Owner | ar1567-toolchain-discovery |
 | Parent | None |
 | Children | None |
-| Summary | Make development installation resolve a trusted cargo/toolchain without hard-coded host paths. |
-| Next action | Promote after AR-1563 and implement controlled trusted toolchain discovery with tests on a clean host. |
+| Summary | Implement trusted development cargo discovery |
+| Next action | Obtain independent review and hosted green checks for PR #401 at 97929864fc7232d671a5b63dcb77261a1742fd97 |
 
 ### AR-1568 — ASB exact current-main identity binding
 
@@ -4766,3 +4766,5 @@ flowchart LR
     AR_1238 --> AR_1273
     AR_1238 --> AR_1274
     AR_1238 --> AR_1275
+    AR_1238 --> AR_1276
+    AR_1238 --> AR_1277

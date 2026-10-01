@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| [AR-1438](../tasks/AR-1438-hardened-trusted-runner-validation.md) | [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md) | None |
 | [AR-1440](../tasks/AR-1440-openrouter-model-refresh-local-measurements.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1436](../tasks/AR-1436-local-guided-cli-wrapper.md), [AR-1437](../tasks/AR-1437-local-record-replay-campaign.md) | None |
 | [AR-1441](../tasks/AR-1441-first-class-install-bootstrap.md) | [AR-0821](../tasks/AR-0821-one-line-local-install.md), [AR-0822](../tasks/AR-0822-install-upgrade-rollback.md) | [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md), [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md), [AR-1488](../tasks/AR-1488-owner-backed-user-journey.md) |
 | [AR-1442](../tasks/AR-1442-guided-setup-wizard-orchestration.md) | [AR-1316](../tasks/AR-1316-authenticated-agent-catalog-producer.md), [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1436](../tasks/AR-1436-local-guided-cli-wrapper.md), [AR-1441](../tasks/AR-1441-first-class-install-bootstrap.md) | [AR-1338](../tasks/AR-1338-guided-asb-command-wrapper.md), [AR-1443](../tasks/AR-1443-guided-benchmark-capture-comparison.md), [AR-1446](../tasks/AR-1446-first-customer-production-qualification.md), [AR-1447](../tasks/AR-1447-asb-local-campaign-qualification.md), [AR-1488](../tasks/AR-1488-owner-backed-user-journey.md), [AR-1499](../tasks/AR-1499-development-credential-enrollment.md) |
@@ -136,7 +135,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1567](../tasks/AR-1567.md): ASB development trusted toolchain discovery | ar1567-toolchain-discovery | Make development installation resolve a trusted cargo/toolchain without hard-coded host paths. | Promote after AR-1563 and implement controlled trusted toolchain discovery with tests on a clean host. |
+| P0 | [AR-1567](../tasks/AR-1567.md): ASB development trusted toolchain discovery | ar1567-toolchain-discovery | Implement trusted development cargo discovery | Obtain independent review and hosted green checks for PR #401 at 97929864fc7232d671a5b63dcb77261a1742fd97 |
 | P0 | [AR-1568](../tasks/AR-1568.md): ASB exact current-main identity binding | ar1568-current-main-identity | Bind development metadata and broker descriptors to the exact ASB source identity. | Ready for independent review of PR #400 at exact head 665b6eb. Verify build-time exact checkout commit/tree derivation, required source headers, reproducible identity overrides, metadata/status/doctor identity validation, typed stale rejection, and unchanged stable behavior. |
 
 ### Open (1)
@@ -540,3 +539,4 @@
 | P1 | [AR-0204](../tasks/AR-0204-capacity-sweeps.md): Implement capacity sweeps and arrival scheduling | Unclaimed | Run repeated closed-loop and open-loop experiments with bounded concurrency. | Await coordinator postmerge local validation/state doctor confirmation before releasing AR-0204. |
 | P1 | [AR-0301](../tasks/AR-0301-agent-opencode.md): Implement OpenCode client adapter | Unclaimed | Run pinned OpenCode through its structured supported interfaces. | Await exact PR #13 head dfb0d54 hosted CI and immutable independent review; integrate only if both are green. |
 | P1 | [AR-0302](../tasks/AR-0302-agent-opendesk.md): Implement OpenDesk client adapter | Unclaimed | Support the bitclub OpenDesk CLI with its own dialect and compatibility record. | Publish approved 8eb99d3, require exact-head CI and immutable review, integrate only signed+DCO green head, then run post-merge verification. |
+| P1 | [AR-0303](../tasks/AR-0303-agent-aider.md): Implement aider client adapter | Unclaimed | Support unattended aider editing with bounded input, output and repository changes. | Publish immutable da81ead6932c5d5469ca57fc981646fa980c2780, open focused PR, and require exact-head CI before integration. |
