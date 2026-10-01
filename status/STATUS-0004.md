@@ -170,9 +170,9 @@
 | [AR-1589](../tasks/AR-1589.md) | [AR-1588](../tasks/AR-1588.md) | [AR-1591](../tasks/AR-1591.md) |
 | [AR-1590](../tasks/AR-1590.md) | [AR-1576](../tasks/AR-1576.md), [AR-1592](../tasks/AR-1592.md), [AR-1593](../tasks/AR-1593.md), [AR-1594](../tasks/AR-1594.md) | [AR-1591](../tasks/AR-1591.md) |
 | [AR-1591](../tasks/AR-1591.md) | [AR-1589](../tasks/AR-1589.md), [AR-1590](../tasks/AR-1590.md) | None |
-| [AR-1592](../tasks/AR-1592.md) | [AR-1576](../tasks/AR-1576.md) | [AR-1590](../tasks/AR-1590.md), [AR-1593](../tasks/AR-1593.md), [AR-1594](../tasks/AR-1594.md) |
-| [AR-1593](../tasks/AR-1593.md) | [AR-1592](../tasks/AR-1592.md) | [AR-1590](../tasks/AR-1590.md), [AR-1594](../tasks/AR-1594.md) |
-| [AR-1594](../tasks/AR-1594.md) | [AR-1576](../tasks/AR-1576.md), [AR-1592](../tasks/AR-1592.md), [AR-1593](../tasks/AR-1593.md) | [AR-1590](../tasks/AR-1590.md) |
+| [AR-1592](../tasks/AR-1592.md) | [AR-1576](../tasks/AR-1576.md) | [AR-1590](../tasks/AR-1590.md), [AR-1593](../tasks/AR-1593.md) |
+| [AR-1593](../tasks/AR-1593.md) | [AR-1592](../tasks/AR-1592.md) | [AR-1590](../tasks/AR-1590.md) |
+| [AR-1594](../tasks/AR-1594.md) | [AR-1576](../tasks/AR-1576.md) | [AR-1590](../tasks/AR-1590.md) |
 
 ## Complete AR inventory
 
@@ -545,3 +545,4 @@
 | P0 | [AR-1520](../tasks/AR-1520.md): AR-1308 reduced-profile runtime qualification | Unclaimed | Reduced profile passes self-contained QEMU: transient admission, bounded models, sanitized non-claiming attestation, and clean poweroff. | Release after exact-head review; retain AR-1307/1308 formal qualification as separate blocked gates. |
 | P0 | [AR-1523](../tasks/AR-1523.md): Platform authority deployment adapter | Unclaimed | Qualify the central orchestration path with deterministic local/mock and strict-replay authority; deployment-owned live authority is optional future hardening, not a development prerequisite. | Development path is unblocked: promote and claim this AR, qualify the existing central orchestrator with deterministic local/mock and strict-replay authority, and run exact-head gates. A deployment-owned authenticated source is optional future production hardening and must not block development qualification. |
 | P0 | [AR-1524](../tasks/AR-1524.md): Repair live-dispatch dependency graph | Unclaimed | Repair the stale AR-1374/1375 dependency cycle and make AR-1523 the canonical live-dispatch successor. | Promote after dependency verification; supersede the stale AR-1375 cycle and route AR-1374 to AR-1523 without changing product code. |
+| P0 | [AR-1526](../tasks/AR-1526.md): First-customer local/replay qualification | Unclaimed | Qualify the merged ASB production-shaped local/mock and strict-replay customer path with sanitized evidence. | No development action remains. Preserve the exact-main first-customer local/mock and strict-replay receipt; live-provider deployment remains optional future hardening. |

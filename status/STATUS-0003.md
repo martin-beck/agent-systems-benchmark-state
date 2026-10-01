@@ -1048,9 +1048,7 @@
     AR_1590 --> AR_1591
     AR_1592 --> AR_1590
     AR_1592 --> AR_1593
-    AR_1592 --> AR_1594
     AR_1593 --> AR_1590
-    AR_1593 --> AR_1594
     AR_1594 --> AR_1590
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
