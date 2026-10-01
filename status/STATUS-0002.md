@@ -3310,6 +3310,20 @@
 | Summary | Provide the bounded broker channel transport that completes ASB to asb-tui launch handoff. |
 | Next action | Promote and implement the ASB-side inherited broker channel/socketpair handoff required by asb-tui run --broker --development. |
 
+### AR-1572 — ASB approved development toolchain runner
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Provide the approved private toolchain runner needed for credential-free ASB development setup. |
+| Next action | Promote and provide a private, reproducible development toolchain runner accepted by the ASB resolver for clean qualification and first-time setup. |
+
 
 ## Dependency graph
 
@@ -3957,6 +3971,7 @@ flowchart LR
         AR_1569["AR-1569 - Done"]:::status_done
         AR_1570["AR-1570 - Done"]:::status_done
         AR_1571["AR-1571 - In progress"]:::status_in_progress
+        AR_1572["AR-1572 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4722,26 +4737,3 @@ flowchart LR
     AR_1190 --> AR_1191
     AR_1190 --> AR_1198
     AR_1190 --> AR_1199
-    AR_1190 --> AR_1299
-    AR_1190 --> AR_1316
-    AR_1190 --> AR_1498
-    AR_1191 --> AR_1199
-    AR_1191 --> AR_1316
-    AR_1191 --> AR_1498
-    AR_1200 --> AR_1226
-    AR_1200 --> AR_1475
-    AR_1200 --> AR_1476
-    AR_1200 --> AR_1477
-    AR_1210 --> AR_1211
-    AR_1210 --> AR_1216
-    AR_1211 --> AR_1212
-    AR_1211 --> AR_1216
-    AR_1212 --> AR_1213
-    AR_1212 --> AR_1216
-    AR_1213 --> AR_1214
-    AR_1213 --> AR_1215
-    AR_1213 --> AR_1216
-    AR_1214 --> AR_1216
-    AR_1215 --> AR_1216
-    AR_1226 --> AR_1337
-    AR_1228 --> AR_1120
