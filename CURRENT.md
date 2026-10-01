@@ -3,11 +3,16 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1617](tasks/AR-1617.md): Explicit cassette seal, reopen, and removal operations | Add typed seal, interrupted-capture reopen, and bounded development cassette removal across ASB and TUI. | Promote after AR-1614; implement versioned backend/TUI lifecycle operations and stale/terminal negatives. | asb1617-1618-luna |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1617](tasks/AR-1617.md): Explicit cassette seal, reopen, and removal operations | Add typed seal, interrupted-capture reopen, and bounded development cassette removal across ASB and TUI. | Promote after AR-1614; implement versioned backend/TUI lifecycle operations and stale/terminal negatives. | - |
 | P0 | [AR-1618](tasks/AR-1618.md): Operator retry and live/offline comparison dispatch | Expose bounded typed benchmark retry/repeat and digest-bound live/offline comparison actions in ASB and TUI. | Promote after AR-1614; implement paired retry/comparison control and stale/idempotency negatives. | - |
 
 ## Blocked
