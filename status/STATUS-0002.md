@@ -3692,11 +3692,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1609_adapter_backend |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Expose explicit opencode/opendesk adapter compatibility for provider, model, authentication, and benchmark defaults. |
@@ -4379,7 +4379,7 @@ flowchart LR
         AR_1606["AR-1606 - Done"]:::status_done
         AR_1607["AR-1607 - Done"]:::status_done
         AR_1608["AR-1608 - Planned"]:::status_planned
-        AR_1609["AR-1609 - In progress"]:::status_in_progress
+        AR_1609["AR-1609 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4552,3 +4552,4 @@ flowchart LR
     AR_0302 --> AR_0505
     AR_0302 --> AR_0507
     AR_0302 --> AR_0516
+    AR_0302 --> AR_1003
