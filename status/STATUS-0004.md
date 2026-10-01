@@ -176,18 +176,13 @@
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1590](../tasks/AR-1590.md): Inherited-fd cross-repository qualification | ar1590-inherited-fd-bridge | Complete real ASB-to-asb-tui inherited-fd broker qualification after the PTY seam exists. | Await coverage/Rust/portability repair checks, then fresh exact-head review; ASB AR-1592 and AR-1593 catalog/version alignment remain prerequisites before release. |
 | P0 | [AR-1592](../tasks/AR-1592.md): ASB control catalog compatibility | ar1592-catalog-compat | Add ASB control-protocol catalog compatibility required by the released asb-tui bootstrap journey. | Await all PR #413 hosted checks, then obtain independent exact-head review and release the typed ASB catalog implementation; AR-1593 owns the follow-up common-version alignment. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1594](../tasks/AR-1594.md): Qualification coverage isolation | Unclaimed | Keep the real cross-repository qualification while preserving the enforced workspace coverage floor. | Repair PR #412 coverage isolation by feature-gating the external pinned-TUI qualification test and running it only in its dedicated workflow. |
+| P0 | [AR-1594](../tasks/AR-1594.md): Qualification coverage isolation | ar1498-qualification-coverage | Keep the real cross-repository qualification while preserving the enforced workspace coverage floor. | Repair PR #412 coverage isolation by feature-gating the external pinned-TUI qualification test and running it only in its dedicated workflow. |
 
 ### Blocked (82)
 
@@ -550,3 +545,4 @@
 | P0 | [AR-1520](../tasks/AR-1520.md): AR-1308 reduced-profile runtime qualification | Unclaimed | Reduced profile passes self-contained QEMU: transient admission, bounded models, sanitized non-claiming attestation, and clean poweroff. | Release after exact-head review; retain AR-1307/1308 formal qualification as separate blocked gates. |
 | P0 | [AR-1523](../tasks/AR-1523.md): Platform authority deployment adapter | Unclaimed | Qualify the central orchestration path with deterministic local/mock and strict-replay authority; deployment-owned live authority is optional future hardening, not a development prerequisite. | Development path is unblocked: promote and claim this AR, qualify the existing central orchestrator with deterministic local/mock and strict-replay authority, and run exact-head gates. A deployment-owned authenticated source is optional future production hardening and must not block development qualification. |
 | P0 | [AR-1524](../tasks/AR-1524.md): Repair live-dispatch dependency graph | Unclaimed | Repair the stale AR-1374/1375 dependency cycle and make AR-1523 the canonical live-dispatch successor. | Promote after dependency verification; supersede the stale AR-1375 cycle and route AR-1374 to AR-1523 without changing product code. |
+| P0 | [AR-1526](../tasks/AR-1526.md): First-customer local/replay qualification | Unclaimed | Qualify the merged ASB production-shaped local/mock and strict-replay customer path with sanitized evidence. | No development action remains. Preserve the exact-main first-customer local/mock and strict-replay receipt; live-provider deployment remains optional future hardening. |
