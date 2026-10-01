@@ -3378,7 +3378,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Keep successful development TUI sessions interactive while bounding handshake and cleanup failure paths. |
-| Next action | Await hosted checks and independent review of PR #408 exact head e6f3d900f1a4a79b0f188d0e11a81730903a78d8; merge/release only identical green head. |
+| Next action | Await hosted checks and independent review of PR #408 exact head e6f3d901dffba31845273fafd436f613d1485793; merge/release only identical green head. |
 
 ### AR-1578 — ASB workspace coverage recovery
 
