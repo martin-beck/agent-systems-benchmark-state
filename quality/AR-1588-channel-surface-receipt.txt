@@ -1,0 +1,10 @@
+# AR-1588 acceptance receipt
+
+- Exact implementation PR: ASB PR #417
+- Reviewed source head: 5c1b5425433bd3cea0bf9ebb131873d0e61c5e13
+- Merge commit: 3a354cf258ccf72caebd89de834c2faa015b998c
+- Independent review: APPROVE at exact rebased head; PR417 preserves PR415 setup/schema behavior and refreshes only the provenance digest required by the rebase.
+- Local evidence: 154 ASB CLI unit/integration tests, focused lifecycle/provenance tests, and clippy with warnings denied passed.
+- Hosted evidence: all required PR checks passed, including policy/coverage, Rust, aarch64 portability, exact inherited-fd qualification, credential-free benchmark, formal assurance, fault assurance, and supply-chain checks.
+- Contract evidence: explicit channel propagation, `dev` fresh-install default, active-channel preservation, typed unavailable-channel errors, and no fallback.
+- Classification: contract-test/mechanical/hosted; development-only and credential-free.
