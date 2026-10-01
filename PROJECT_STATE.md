@@ -25,11 +25,11 @@ Generated from local Git and GitHub. Do not edit.
 | 36907690753 | `f86e4d7e8a95` | push | Fault assurance | completed:success |
 | 36907690740 | `f86e4d7e8a95` | push | Huawei MIT source headers | completed:success |
 | 36907690639 | `f86e4d7e8a95` | push | Cross-repository development broker qualification | completed:success |
-| 36907690607 | `f86e4d7e8a95` | push | Emulated aarch64 portability | in_progress:- |
+| 36907690607 | `f86e4d7e8a95` | push | Emulated aarch64 portability | completed:success |
 | 36907690587 | `f86e4d7e8a95` | push | Credential-free benchmark path | completed:success |
-| 36907690526 | `f86e4d7e8a95` | push | Rust verification | in_progress:- |
+| 36907690526 | `f86e4d7e8a95` | push | Rust verification | completed:success |
 | 36907690522 | `f86e4d7e8a95` | push | Formal assurance | completed:success |
-| 36907690390 | `f86e4d7e8a95` | push | Repository quality | in_progress:- |
+| 36907690390 | `f86e4d7e8a95` | push | Repository quality | completed:success |
 | 36907690366 | `f86e4d7e8a95` | push | Hosted portability and native qualification | completed:success |
 | 36906458705 | `bd40695b8e81` | pull_request | Cross-repository development broker qualification | completed:success |
 | 36906458601 | `bd40695b8e81` | pull_request | Agent Workflow Quality shadow | completed:success |
