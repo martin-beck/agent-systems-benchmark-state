@@ -1,0 +1,10 @@
+# AR-1605 acceptance receipt
+
+- Implementation PR: ASB PR #425, exact signed/DCO head 59c0e5a359543d9055d1d31088b16ad3881ef2d9.
+- Implementation merge: signed protected-main merge 2a9793fa (PR #425).
+- Independent review: exact-head review approved the authenticated external-client cassette backend, identity fencing, offline replay, development boundary, and restart reconciliation.
+- Hosted PR evidence: PR #425 required checks passed, including exact TUI inherited-fd journey run 36881138309, Rust 36881138171, policy/coverage 36881138481, aarch64 36881138505, formal 36881138437, fault 36881138606, credential-free 36881138430, hosted portability 36881138241, and headers 36881138474.
+- Hosted exact-main evidence: post-merge workflows passed at 2a9793fa: broker 36882352412, aarch64 36882352311, policy/coverage 36882352294, fault 36882352190, headers 36882352167, credential-free 36882352160, hosted portability 36882352154, Rust 36882352153, and formal 36882352091.
+- Local evidence: focused recording_campaign_lifecycle_transitions_are_durable_and_fail_closed passed; development_backend_exposes_typed_read_only_capabilities passed; asb-control integration/schema/endpoint suites passed; cargo test --locked and cargo clippy --locked --all-targets -D warnings completed successfully; git diff --check was clean.
+- Contract evidence: authenticated ControlServer/ControlClient v1.12 catalog and replay return digest-only metadata and offline_only=true; runner, generation, campaign, provider profile, agent, workload, and cassette identity fences reject mismatches; a removed artifact is reported as NeedsReconciliation after reopening the backend.
+- Classification: contract-test/mechanical/hosted; development-only missing authentication, signatures, and key management remain warning-only and non-blocking.
