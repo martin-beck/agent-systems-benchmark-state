@@ -27,6 +27,5 @@
   "gates": [
     {"id":"exact-main","description":"Merged implementation is exact origin/main."},
     {"id":"hosted","description":"All required PR and exact-main checks pass on the merged head."}
-  ],
-  "development_mode": {"missing_authentication":"warning", "missing_signatures":"warning", "missing_key_management":"warning"}
+  ]
 }
