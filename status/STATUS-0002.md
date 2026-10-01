@@ -3706,11 +3706,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1611-install |
 | Parent | None |
 | Children | None |
 | Summary | Make asb tui install fetch the current dev-channel TUI, build it in a temporary staging area, publish atomically, and launch it through the trusted ASB router. |
@@ -4408,7 +4408,7 @@ flowchart LR
         AR_1607["AR-1607 - Done"]:::status_done
         AR_1608["AR-1608 - Done"]:::status_done
         AR_1609["AR-1609 - Done"]:::status_done
-        AR_1611["AR-1611 - Open"]:::status_open
+        AR_1611["AR-1611 - In progress"]:::status_in_progress
         AR_1612["AR-1612 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
@@ -4530,4 +4530,3 @@ flowchart LR
     AR_0104 --> AR_0601
     AR_0104 --> AR_0603
     AR_0104 --> AR_0801
-    AR_0104 --> AR_0803
