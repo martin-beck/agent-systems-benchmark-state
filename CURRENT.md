@@ -8,7 +8,6 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1588](tasks/AR-1588.md): ASB development-channel command surface | Make ASB lifecycle commands consistently select and default the development release channel. | Promote after dependencies are released; implement and qualify consistent --channel selection with default dev across ASB lifecycle commands. | ar1498-channel-surface |
-| P0 | [AR-1590](tasks/AR-1590.md): Inherited-fd cross-repository qualification | Complete real ASB-to-asb-tui inherited-fd broker qualification after the PTY seam exists. | Obtain hosted execution and independent exact-head review for PR #416 at f439b35; only then reassess AR-1590 acceptance and release. | ar1590-inherited-fd-bridge |
 
 ## Blocked
 
