@@ -217,12 +217,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1608](../tasks/AR-1608.md): Configuration persistence and shared defaults | ar1608_config_persistence | Persist editable provider/agent/model/auth selections and shared defaults safely for subsequent runs. | Promote after AR-1607 release and implement atomic redacted configuration updates. |
-
 ### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -379,7 +373,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (450)
+### Done (451)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -556,3 +550,5 @@
 | P0 | [AR-1471](../tasks/AR-1471-control-to-runtime-chain-binding.md): Control-to-runtime certificate-chain binding | Unclaimed | Bind authenticated control enrollment to runtime certificate-chain storage and live dispatch. | Reconcile and doctor live state, then release AR-1471 done with merge and seven exact-main workflow evidence. |
 | P0 | [AR-1472](../tasks/AR-1472-authenticated-live-dispatch-adapter.md): Authenticated live-dispatch adapter | Unclaimed | Connect authenticated control receipts to runtime-owned CLI live dispatch without a dependency cycle. | Run reconcile and doctor --live, then release AR-1472 done with merge and seven-workflow evidence. |
 | P0 | [AR-1473](../tasks/AR-1473-runtime-owned-enrollment-source.md): Runtime-owned authenticated enrollment source | Unclaimed | Resolve authenticated control enrollment into an opaque runtime-owned source for normal ASB run and sweep. | Reconcile/doctor live state, then release AR-1473 done. |
+| P0 | [AR-1474](../tasks/AR-1474-runtime-authority-input-resolver.md): Runtime-owned authority-input resolver | Unclaimed | Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority. | Release AR-1474 done; old PR coverage failure superseded by AR-1477 tests and AR-1478 topology repair. |
+| P0 | [AR-1475](../tasks/AR-1475-asb-metrics-evidence-fixture-repair.md): Repair asb-metrics evidence fixture classification | Unclaimed | Repair the deterministic ProbeRejected versus MalformedEvidence fixture failure blocking PR #345. | Release done after final reconcile; then rerun PR #345 exact-head validation. |

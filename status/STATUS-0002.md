@@ -3678,11 +3678,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1608_config_persistence |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Persist editable provider/agent/model/auth selections and shared defaults safely for subsequent runs. |
@@ -4406,7 +4406,7 @@ flowchart LR
         AR_1605["AR-1605 - Done"]:::status_done
         AR_1606["AR-1606 - Done"]:::status_done
         AR_1607["AR-1607 - Done"]:::status_done
-        AR_1608["AR-1608 - In progress"]:::status_in_progress
+        AR_1608["AR-1608 - Done"]:::status_done
         AR_1609["AR-1609 - Done"]:::status_done
         AR_1611["AR-1611 - Open"]:::status_open
         AR_1612["AR-1612 - Planned"]:::status_planned
@@ -4529,3 +4529,5 @@ flowchart LR
     AR_0104 --> AR_0314
     AR_0104 --> AR_0601
     AR_0104 --> AR_0603
+    AR_0104 --> AR_0801
+    AR_0104 --> AR_0803
