@@ -3230,11 +3230,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | blocked |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1566-broker-handoff |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Wire ASB development launch through the authenticated asb-tui broker handoff seam. |
@@ -3923,7 +3923,7 @@ flowchart LR
         AR_1563["AR-1563 - Done"]:::status_done
         AR_1564["AR-1564 - Done"]:::status_done
         AR_1565["AR-1565 - Done"]:::status_done
-        AR_1566["AR-1566 - In progress"]:::status_in_progress
+        AR_1566["AR-1566 - Blocked"]:::status_blocked
         AR_1567["AR-1567 - In progress"]:::status_in_progress
         AR_1568["AR-1568 - Done"]:::status_done
         AR_1569["AR-1569 - In progress"]:::status_in_progress
@@ -4759,3 +4759,4 @@ flowchart LR
     AR_1237 --> AR_1278
     AR_1237 --> AR_1279
     AR_1237 --> AR_1280
+    AR_1237 --> AR_1281
