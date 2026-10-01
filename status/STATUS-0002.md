@@ -3286,11 +3286,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1570-dynamic-broker-handoff |
 | Parent | None |
 | Children | None |
 | Summary | Wire the ASB development lifecycle through the dynamic asb-tui broker handoff. |
@@ -3941,7 +3941,7 @@ flowchart LR
         AR_1567["AR-1567 - In progress"]:::status_in_progress
         AR_1568["AR-1568 - Done"]:::status_done
         AR_1569["AR-1569 - In progress"]:::status_in_progress
-        AR_1570["AR-1570 - Open"]:::status_open
+        AR_1570["AR-1570 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4751,5 +4751,3 @@ flowchart LR
     AR_1233 --> AR_1257
     AR_1234 --> AR_1232
     AR_1236 --> AR_1233
-    AR_1236 --> AR_1234
-    AR_1236 --> AR_1237
