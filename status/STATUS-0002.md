@@ -3490,7 +3490,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Keep the real cross-repository qualification while preserving the enforced workspace coverage floor. |
-| Next action | Hosted checks are green and PR #412 merged as abedc66; add spec acceptance evidence or repair task metadata before done release. |
+| Next action | Release done after render and live doctor confirm the bound acceptance receipt. |
 
 ### AR-1595 — Development setup capability contract
 
@@ -4608,3 +4608,5 @@ flowchart LR
     AR_0801 --> AR_0820
     AR_0801 --> AR_0840
     AR_0801 --> AR_0842
+    AR_0801 --> AR_0847
+    AR_0801 --> AR_0849
