@@ -8,12 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1589](tasks/AR-1589.md): ASB development-channel provenance and fault matrix | Qualify ASB development-channel identity, metadata integrity, and cleanup failure paths. | Run exact ASB dev provenance envelope and adversarial fault-matrix qualification on c94586d; capture machine-readable evidence and preserve prior-install assertions before independent review. | ar1199-provenance-matrix |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1605](tasks/AR-1605.md): Authenticated cassette control backend | Expose catalog, record, seal, reopen, offline replay, and comparison through the real ASB control backend. | Promote after ASB AR-1602; implement the authenticated ControlServer/RunnerBackend cassette lifecycle and external-client evidence. | - |
+| P0 | [AR-1605](tasks/AR-1605.md): Authenticated cassette control backend | Expose catalog, record, seal, reopen, offline replay, and comparison through the real ASB control backend. | Promote after ASB AR-1602; implement the authenticated ControlServer/RunnerBackend cassette lifecycle and external-client evidence. | ar1496-cassette-backend |
 
 ## Blocked
 

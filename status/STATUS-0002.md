@@ -3636,11 +3636,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1496-cassette-backend |
 | Parent | None |
 | Children | None |
 | Summary | Expose catalog, record, seal, reopen, offline replay, and comparison through the real ASB control backend. |
@@ -4319,7 +4319,7 @@ flowchart LR
         AR_1602["AR-1602 - Done"]:::status_done
         AR_1603["AR-1603 - Planned"]:::status_planned
         AR_1604["AR-1604 - Planned"]:::status_planned
-        AR_1605["AR-1605 - Open"]:::status_open
+        AR_1605["AR-1605 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4569,4 +4569,3 @@ flowchart LR
     AR_0315 --> AR_1110
     AR_0315 --> AR_1327
     AR_0316 --> AR_0876
-    AR_0317 --> AR_0857
