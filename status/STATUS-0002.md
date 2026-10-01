@@ -3650,11 +3650,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1496-cross-project-cassette-qualification |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Real paired record/seal/reopen/offline-replay/compare qualification fixture |
@@ -4362,7 +4362,7 @@ flowchart LR
         AR_1603["AR-1603 - Planned"]:::status_planned
         AR_1604["AR-1604 - Planned"]:::status_planned
         AR_1605["AR-1605 - Done"]:::status_done
-        AR_1606["AR-1606 - In progress"]:::status_in_progress
+        AR_1606["AR-1606 - Done"]:::status_done
         AR_1607["AR-1607 - Planned"]:::status_planned
         AR_1608["AR-1608 - Planned"]:::status_planned
     end
@@ -4558,3 +4558,5 @@ flowchart LR
     AR_0305 --> AR_0315
     AR_0305 --> AR_0316
     AR_0305 --> AR_0510
+    AR_0306 --> AR_0311
+    AR_0306 --> AR_0312

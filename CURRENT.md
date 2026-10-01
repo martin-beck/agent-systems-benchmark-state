@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1606](tasks/AR-1606.md): Cross-project cassette lifecycle qualification | Real paired record/seal/reopen/offline-replay/compare qualification fixture | Release complete: PR #426 merged as da886967; exact-main hosted workflows and independent approval are recorded in spec/receipt. | ar1496-cross-project-cassette-qualification |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
