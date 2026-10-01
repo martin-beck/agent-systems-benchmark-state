@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1608.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "atomic-selection", "description": "Provider/model selections validate all references before atomic persistence and shared-default propagation."},
+    {"id": "redaction", "description": "Persisted configuration contains public identities and digest-only credential references, never secrets."},
+    {"id": "restart-recovery", "description": "Configuration survives restart and recovers a bounded interrupted temporary file."},
+    {"id": "development-boundary", "description": "Missing development authentication, signatures, and key management remain warning-only while production authorization stays fail-closed."},
+    {"id": "evidence", "description": "Exact protected-main merge and all required hosted checks are recorded in the release receipt."}
+  ],
+  "definition_of_done": [
+    "Merged exact-main implementation passes local contract and hosted checks.",
+    "Post-merge receipt records exact protected-main head and independent evidence."
+  ],
+  "inputs": [
+    {"id": "provider-catalog", "description": "Released provider and adapter compatibility catalog from AR-1607 and AR-1609."}
+  ],
+  "outputs": [
+    {"id": "configuration-persistence", "description": "Validated atomic provider selection, shared defaults, redaction, and recovery implementation."}
+  ],
+  "allowed_tools": ["cargo", "git", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["credential-bypass", "secret-output"],
+  "required_evidence_classes": ["contract-test", "mechanical", "environmental"],
+  "gates": [
+    {"id": "exact-main", "description": "Merged commit is exact origin/main."},
+    {"id": "hosted", "description": "All required PR checks pass on merged head."}
+  ]
+}

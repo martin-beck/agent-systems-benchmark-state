@@ -1,0 +1,26 @@
+AR-1608 configuration persistence and shared defaults post-merge receipt
+
+Protected product repository: martin-beck/agent-systems-benchmark
+Pull request: #428
+Merged protected-main head: cbb1c971678bbf218d8dd3568dfef4735737a2d7
+Merged at: 2026-10-01T19:41:52Z
+
+Implementation:
+- SSH-signed DCO commit: 61a71bcfedfb3b06b09f53d8800be820624c2f6f
+- Atomic validated provider/model selection mutation with shared-default propagation.
+- Digest-only credential references and secret-shaped endpoint rejection.
+- Interrupted bounded temporary-file recovery and restart persistence tests.
+- Development authentication/signature/key warnings remain non-blocking; production authorization remains fail-closed.
+
+Local evidence:
+- cargo test -p asb-config: 32 passed
+- cargo test -p asb-cli --test setup_contract --test package_qualification_fixture: 4 passed
+- cargo clippy -p asb-config --all-targets -- -D warnings: passed
+- cargo fmt --all -- --check: passed
+- git diff --check: passed
+- check_dco.py --base f86e4d7e8a958ec74b4294b329ea8f9fed467206 --head 61a71bcfedfb3b06b09f53d8800be820624c2f6f: passed
+
+Hosted evidence on merged head: all 14 required checks passed, including Rust checks,
+policy/coverage/supply chain, credential-free benchmark path, bounded fuzz regressions,
+retained faults, platform evidence, emulated aarch64, TUI PTY journey, Kani, Loom,
+TLC/Alloy, matcher/SLO sentinels, AWQ shadow evidence, and exact headers.
