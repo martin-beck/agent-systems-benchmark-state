@@ -3518,7 +3518,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Provide deterministic cassette recording and provider-free replay for benchmark workloads. |
-| Next action | Obtain independent exact-head review and all hosted checks for PR #418 at d25b153964fa0527281adc444f37ff0d842a0646; do not merge until both approve. |
+| Next action | Obtain fresh independent exact-head review and all hosted checks for PR #418 at 08b66057f78cb99c776977493e68f1364bb79fec; do not merge until both approve. |
 
 ### AR-1597 — Fault matrix and deterministic runner
 
