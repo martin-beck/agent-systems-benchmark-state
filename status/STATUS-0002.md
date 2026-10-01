@@ -3524,15 +3524,15 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | coordinator-pr420-review |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Exercise all setup, recording, replay, benchmark, and recovery failure paths with bounded evidence. |
-| Next action | Await all post-merge workflows for signed merge 9c6a69a0, then verify exact tree/parents and release the fault-matrix AR. |
+| Next action | Release the completed fault-matrix runner after coordinator acceptance of its versioned specification and receipt. |
 
 ### AR-1598 — Fresh-user development qualification
 
@@ -4224,7 +4224,7 @@ flowchart LR
         AR_1594["AR-1594 - Done"]:::status_done
         AR_1595["AR-1595 - Done"]:::status_done
         AR_1596["AR-1596 - Done"]:::status_done
-        AR_1597["AR-1597 - In progress"]:::status_in_progress
+        AR_1597["AR-1597 - Done"]:::status_done
         AR_1598["AR-1598 - Planned"]:::status_planned
         AR_1599["AR-1599 - Done"]:::status_done
     end
@@ -4608,3 +4608,5 @@ flowchart LR
     AR_0701 --> AR_0707
     AR_0701 --> AR_0820
     AR_0701 --> AR_0848
+    AR_0701 --> AR_1007
+    AR_0702 --> AR_0807

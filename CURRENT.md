@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1597](tasks/AR-1597.md): Fault matrix and deterministic runner | Exercise all setup, recording, replay, benchmark, and recovery failure paths with bounded evidence. | Await all post-merge workflows for signed merge 9c6a69a0, then verify exact tree/parents and release the fault-matrix AR. | coordinator-pr420-review |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
