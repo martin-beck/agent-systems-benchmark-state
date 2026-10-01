@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1571](tasks/AR-1571.md): ASB development broker channel transport handoff | Provide the bounded broker channel transport that completes ASB to asb-tui launch handoff. | Promote and implement the ASB-side inherited broker channel/socketpair handoff required by asb-tui run --broker --development. | - |
+| P0 | [AR-1571](tasks/AR-1571.md): ASB development broker channel transport handoff | Provide the bounded broker channel transport that completes ASB to asb-tui launch handoff. | Promote and implement the ASB-side inherited broker channel/socketpair handoff required by asb-tui run --broker --development. | ar1571-broker-channel |
 
 ## Blocked
 

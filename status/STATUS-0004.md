@@ -140,11 +140,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1571](../tasks/AR-1571.md): ASB development broker channel transport handoff | Unclaimed | Provide the bounded broker channel transport that completes ASB to asb-tui launch handoff. | Promote and implement the ASB-side inherited broker channel/socketpair handoff required by asb-tui run --broker --development. |
+| P0 | [AR-1571](../tasks/AR-1571.md): ASB development broker channel transport handoff | ar1571-broker-channel | Provide the bounded broker channel transport that completes ASB to asb-tui launch handoff. | Promote and implement the ASB-side inherited broker channel/socketpair handoff required by asb-tui run --broker --development. |
 
 ### Blocked (81)
 
@@ -535,4 +535,3 @@
 | P0 | [AR-1570](../tasks/AR-1570.md): ASB dynamic development broker handoff | Unclaimed | Implement dynamic development broker handoff | Independent review and hosted green checks for PR #403 at f0b55e9f9e3056003b5bf949fc54ea7425c494ab |
 | P1 | [AR-0002](../tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Unclaimed | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. |
 | P1 | [AR-0003](../tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Unclaimed | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. |
-| P1 | [AR-0004](../tasks/AR-0004-ar-status-document.md): Generate the visual AR status document | Unclaimed | Render every AR, status, and dependency as an accessible visual state document. | Await independent immutable-head review of state PR 3 at eedd311; repair findings before coordinator integration. |
