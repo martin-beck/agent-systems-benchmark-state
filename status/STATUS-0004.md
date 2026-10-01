@@ -224,11 +224,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1604](../tasks/AR-1604.md): ASB guided command output contract | Unclaimed | Make install, wizard, benchmark, recording, replay, comparison, and lifecycle diagnostics simple and consistently human-readable with opt-in JSON. | Promote after AR-1603 acceptance; inventory commands and repair any inconsistent default/--json behavior. |
+| P1 | [AR-1604](../tasks/AR-1604.md): ASB guided command output contract | asb1604-output | Make install, wizard, benchmark, recording, replay, comparison, and lifecycle diagnostics simple and consistently human-readable with opt-in JSON. | Promote after AR-1603 acceptance; inventory commands and repair any inconsistent default/--json behavior. |
 
 ### Blocked (82)
 
