@@ -9,6 +9,12 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1572](tasks/AR-1572.md): ASB approved development toolchain runner | Provide the approved private toolchain runner needed for credential-free ASB development setup. | Promote and provide a private, reproducible development toolchain runner accepted by the ASB resolver for clean qualification and first-time setup. | ar1572-toolchain-runner |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1573](tasks/AR-1573.md): ASB development control producer bridge | Expose the ASB-side development control producer bridge required by the asb-tui adopted stream. | Promote and expose a bounded ASB development producer-side control handshake/backend/result bridge compatible with asb-tui broker adoption. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -117,7 +123,6 @@ Never edit this file directly.
 | P0 | [AR-1227](tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. | - |
 | P0 | [AR-1545](tasks/AR-1545.md): AR-1307 formal-input readiness repair | Audit and repair the AR-1307 formal-input handoff after development runner integration, without executing qualification. | Formal-only work: after AR-1535 supplies reviewed inputs, inventory and independently verify every exact AR-1307 formal input for AR-1522. Do not block or alter the completed unsigned-development path. | - |
 | P0 | [AR-1546](tasks/AR-1546.md): AR-1308 formal capacity-input readiness repair | Audit and repair the AR-1308 capacity/input handoff after diagnostic QEMU integration, without executing qualification. | Formal-only work: after AR-1531 and AR-1536, verify the exact 8 GiB/8 GiB fixture and AR-1308 formal inputs for AR-1522. Do not block or alter the completed unsigned-development path. | - |
-| P0 | [AR-1573](tasks/AR-1573.md): ASB development control producer bridge | Expose the ASB-side development control producer bridge required by the asb-tui adopted stream. | Promote and expose a bounded ASB development producer-side control handshake/backend/result bridge compatible with asb-tui broker adoption. | - |
 | P0 | [AR-1574](tasks/AR-1574.md): ASB development control transport wiring | Wire the ASB development launch transport to the producer control bridge. | Promote after AR-1573; wire the producer bridge into ASB development launch and rerun exact-head cross-project qualification. | - |
 | P1 | [AR-0808](tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. | - |
 | P1 | [AR-0809](tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. | - |
