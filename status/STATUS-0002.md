@@ -3608,11 +3608,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | asb1603-acceptance |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Qualify the complete current-main install, wizard, benchmark, recording, offline replay, and comparison journey. |
@@ -4401,7 +4401,7 @@ flowchart LR
         AR_1600["AR-1600 - Done"]:::status_done
         AR_1601["AR-1601 - Done"]:::status_done
         AR_1602["AR-1602 - Done"]:::status_done
-        AR_1603["AR-1603 - In progress"]:::status_in_progress
+        AR_1603["AR-1603 - Done"]:::status_done
         AR_1604["AR-1604 - Planned"]:::status_planned
         AR_1605["AR-1605 - Done"]:::status_done
         AR_1606["AR-1606 - Done"]:::status_done
@@ -4530,3 +4530,5 @@ flowchart LR
     AR_0104 --> AR_0601
     AR_0104 --> AR_0603
     AR_0104 --> AR_0801
+    AR_0104 --> AR_0803
+    AR_0104 --> AR_0805

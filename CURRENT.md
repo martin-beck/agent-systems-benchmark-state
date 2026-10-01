@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1603](tasks/AR-1603.md): Fresh-user wizard and offline benchmark acceptance | Qualify the complete current-main install, wizard, benchmark, recording, offline replay, and comparison journey. | Promote after ASB AR-1598/1601 and TUI AR-1601 are released; execute the disposable exact-head journey. | asb1603-acceptance |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
