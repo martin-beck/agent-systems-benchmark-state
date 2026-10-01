@@ -3392,7 +3392,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Recover the existing workspace coverage gate that currently blocks otherwise correct ASB transport changes. |
-| Next action | Promote and assign an isolated worker to recover meaningful workspace coverage to the configured 90&#37; floor without weakening the gate. |
+| Next action | Run exact workspace coverage gate on PR #407; add only concrete stable control/transport tests needed to reach 90&#37;, then merge/release or report measured blocker. |
 
 
 ## Dependency graph
@@ -4698,4 +4698,3 @@ flowchart LR
     AR_1017 --> AR_1018
     AR_1017 --> AR_1019
     AR_1017 --> AR_1021
-    AR_1017 --> AR_1022
