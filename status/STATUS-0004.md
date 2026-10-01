@@ -147,11 +147,10 @@
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1572](../tasks/AR-1572.md): ASB approved development toolchain runner | ar1572-toolchain-runner | Private reproducible development toolchain runner hardened and proposed in PR #404. | Run hosted checks and obtain independent review for PR #404 at f423bca; then merge only after approval. |
 | P0 | [AR-1573](../tasks/AR-1573.md): ASB development control producer bridge | ar1573-control-bridge | Expose the ASB-side development control producer bridge required by the asb-tui adopted stream. | Await all hosted gates and independent review of b4813cf; merge only identical green head, then release AR-1573 and promote AR-1574. |
 
 ### Blocked (82)
@@ -301,7 +300,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (426)
+### Done (427)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -539,3 +538,4 @@
 | P0 | [AR-1563](../tasks/AR-1563.md): ASB dev-channel clone/build materialization | Unclaimed | Clone and build the current asb-tui main head for the ASB dev channel. | Ready for independent re-review of PR #398 at exact head 46133cd. Verify live quota monitoring, concurrent bounded output drain, process-group descendant termination, staging cleanup preserving prior install, digest-bound atomic dev install, and unchanged stable channel. |
 | P0 | [AR-1564](../tasks/AR-1564.md): ASB development TUI lifecycle integration | Unclaimed | Integrate the dev-built TUI into the ASB lifecycle and launch path. | Ready for independent re-review of PR #399 at exact head 4a65476. Verify reversible marker/version trash transaction, injected final-delete failure restoration, dev lifecycle routing, stable isolation, and exact-current-main compatibility. |
 | P0 | [AR-1565](../tasks/AR-1565.md): ASB yanked dependency lock repair | Unclaimed | Repair the yanked dependency lock that blocks all protected ASB merges. | Run complete required ASB quality suite and obtain independent lockfile review; cargo-deny/cargo-audit binaries are absent on this host and must run in hosted/qualified environment. Then prepare exact-head PR from signed commit 54505f2. |
+| P0 | [AR-1567](../tasks/AR-1567.md): ASB development trusted toolchain discovery | Unclaimed | Implement trusted development cargo discovery | PR #401 is rebased onto current main 2eef71c at exact head bac495d0871c72b63bed9c55b2d2c557115a471d; hosted checks rerunning and independent review required before merge. |

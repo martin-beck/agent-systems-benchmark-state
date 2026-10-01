@@ -3314,11 +3314,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1572-toolchain-runner |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Private reproducible development toolchain runner hardened and proposed in PR #404. |
@@ -3999,7 +3999,7 @@ flowchart LR
         AR_1569["AR-1569 - Done"]:::status_done
         AR_1570["AR-1570 - Done"]:::status_done
         AR_1571["AR-1571 - Blocked"]:::status_blocked
-        AR_1572["AR-1572 - In progress"]:::status_in_progress
+        AR_1572["AR-1572 - Done"]:::status_done
         AR_1573["AR-1573 - In progress"]:::status_in_progress
         AR_1574["AR-1574 - Planned"]:::status_planned
     end
@@ -4724,3 +4724,4 @@ flowchart LR
     AR_1060 --> AR_1227
     AR_1060 --> AR_1310
     AR_1061 --> AR_1010
+    AR_1062 --> AR_1010
