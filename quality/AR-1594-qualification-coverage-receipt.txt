@@ -1,0 +1,10 @@
+# AR-1594 acceptance receipt
+
+- Exact repair PR: ASB PR #412
+- Repair head: 63e16ee1c6c1099d29620fc50477d601dfca97b2
+- Merge head: abedc66
+- Qualification source: asb-tui cca57863a6da73b38668878fe79ba17a8a1d154d
+- Qualification contract: `cross-repo-qualification` feature is enabled only by `.github/workflows/cross-repo-development-qualification.yml`; the workflow builds the exact TUI source, records its source tree and executable SHA-256, and runs the real PTY/inherited-fd test.
+- Coverage contract: ordinary workspace coverage does not compile the external-process fixture; no threshold or exclusion policy was changed.
+- Verification: local asb-cli library suite 152 passed; formal feature/model checks passed; independent exact-head review approved; all required hosted PR checks passed before merge.
+- Classification: mechanical/contract-test/hosted; development-only and credential-free.

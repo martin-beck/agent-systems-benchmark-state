@@ -1,0 +1,7 @@
+AR-1592 ASB control catalog compatibility receipt
+merged_sha=f8c8d6b2c7b1476b91d0c93183864f23abadc488
+reviewed_pr_head=2f1d3025effbc53f72a44550a2980fc6c10af466
+pr=https://github.com/martin-beck/agent-systems-benchmark/pull/413
+checks=all required hosted checks passed on the exact reviewed head, including Rust, repository quality, credential-free benchmark, portability, formal, fault, header, and AWQ gates
+review=independent exact-head review approved typed BenchmarkCatalog and MeasurementCatalog protocol/backend responses, v1.10 common-version alignment follow-up, immutable historical schemas, development credential-free behavior, and stable fail-closed boundaries
+local=cargo check -p asb-control -p asb-cli; cargo test -p asb-control benchmark_catalog_tests; cargo test -p asb-control --test schema_conformance
