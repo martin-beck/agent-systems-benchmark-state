@@ -3238,7 +3238,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Wire ASB development launch through the authenticated asb-tui broker handoff seam. |
-| Next action | Promote and implement the development broker handoff seam after the asb-tui descriptor contract is available; add exact-head integration tests. |
+| Next action | Remain blocked as historical evidence; the active real bridge work is tracked by TUI AR-1587 and ASB AR-1590, which must complete before this boundary can be closed. |
 
 ### AR-1567 — ASB development trusted toolchain discovery
 
@@ -3308,7 +3308,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Provide the bounded broker channel transport that completes ASB to asb-tui launch handoff. |
-| Next action | Promote and implement the ASB-side inherited broker channel/socketpair handoff required by asb-tui run --broker --development. |
+| Next action | Remain blocked as historical evidence; the active exact inherited-fd qualification is tracked by ASB AR-1590 after TUI AR-1587 completes the real bridge. |
 
 ### AR-1572 — ASB approved development toolchain runner
 
@@ -3435,6 +3435,20 @@
 | Children | None |
 | Summary | Complete real ASB-to-asb-tui inherited-fd broker qualification after the PTY seam exists. |
 | Next action | Promote after the asb-tui PTY seam is released; complete non-ignored exact-binary inherited-fd wire qualification and merge/release the bridge successor. |
+
+### AR-1591 — Post-release fresh-clone ASB consumption
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Qualify fresh-clone consumption of the released development ASB journey. |
+| Next action | Promote after the inherited-fd bridge and final cross-project qualification are released; run the fresh-clone post-release dev-channel journey and record exact evidence. |
 
 
 ## Dependency graph
@@ -4092,6 +4106,7 @@ flowchart LR
         AR_1588["AR-1588 - Planned"]:::status_planned
         AR_1589["AR-1589 - Planned"]:::status_planned
         AR_1590["AR-1590 - Planned"]:::status_planned
+        AR_1591["AR-1591 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4649,28 +4664,3 @@ flowchart LR
     AR_0871 --> AR_1150
     AR_0872 --> AR_0808
     AR_0872 --> AR_0809
-    AR_0872 --> AR_0873
-    AR_0872 --> AR_0893
-    AR_0872 --> AR_1028
-    AR_0873 --> AR_0808
-    AR_0873 --> AR_0809
-    AR_0873 --> AR_0874
-    AR_0873 --> AR_0894
-    AR_0873 --> AR_1012
-    AR_0874 --> AR_0808
-    AR_0874 --> AR_0809
-    AR_0875 --> AR_0908
-    AR_0875 --> AR_1031
-    AR_0875 --> AR_1035
-    AR_0876 --> AR_1130
-    AR_0877 --> AR_1021
-    AR_0878 --> AR_0906
-    AR_0879 --> AR_0888
-    AR_0879 --> AR_0891
-    AR_0888 --> AR_0889
-    AR_0888 --> AR_0890
-    AR_0888 --> AR_0896
-    AR_0888 --> AR_1249
-    AR_0888 --> AR_1250
-    AR_0888 --> AR_1251
-    AR_0889 --> AR_0890

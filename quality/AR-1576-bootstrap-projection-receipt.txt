@@ -1,0 +1,7 @@
+AR-1576 development bootstrap projection receipt
+merged_sha=b7b6a35155bd431afa6f27995a3c9c04f3ae77f2
+reviewed_pr_head=ff12951ab5bcac396087266addfee3c7e427138e
+pr=https://github.com/martin-beck/agent-systems-benchmark/pull/411
+checks=all required hosted checks passed on reviewed head, including Rust, repository quality, credential-free benchmark, portability, formal, fault, header, and AWQ gates
+review=independent exact-head review approved typed MeasurementCatalog and History assertions, stable isolation, mutation fencing, and minimal test-only scope
+local=cargo test --locked -p asb-cli development_backend_exposes_typed_read_only_capabilities passed
