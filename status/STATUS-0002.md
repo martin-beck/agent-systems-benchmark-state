@@ -3350,7 +3350,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Wire the ASB development launch transport to the producer control bridge. |
-| Next action | Await hosted gates and independent review of dfc517123baa7a271b37a05349d6062de5c7d5b6; merge only identical green head, then release AR-1574. |
+| Next action | Await hosted gates and independent review of b6f6b2897ac0cec684b34a60a98764170bc6a5cc; merge only identical green head, then release AR-1574. |
 
 ### AR-1576 — ASB development bootstrap projection
 
