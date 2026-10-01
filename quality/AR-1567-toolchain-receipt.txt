@@ -1,0 +1,6 @@
+AR-1567 trusted development toolchain receipt
+merged_sha=773438ad4529559da3abc44819181a83cfefe8d6
+reviewed_pr_head=bac495d0871c72b63bed9c55b2d2c557115a471d
+pr=https://github.com/martin-beck/agent-systems-benchmark/pull/401
+checks=all 13 required hosted checks passed on reviewed head
+review=independent review approved; 31 focused tests, clippy/fmt, and package checks passed
