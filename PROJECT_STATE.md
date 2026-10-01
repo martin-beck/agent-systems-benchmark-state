@@ -18,7 +18,7 @@ Generated from local Git and GitHub. Do not edit.
 | #366 | `dependabot/cargo/schemars-1.2.2@047b52b0b5b9` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump schemars from 1.0.4 to 1.2.2 |
 | #384 | `feature/ar-1508-platform-owned-authority-provider@2c70f81100ca` | `main` | DIRTY | - | feat(runtime): platform-owned authority provider |
 | #401 | `feature/ar-1567-trusted-toolchain@97929864fc72` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): discover trusted development cargo |
-| #402 | `feature/ar-1569-source-archive-identity-repair@e05e7ff403ce` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(cli): support source archive identity builds |
+| #402 | `feature/ar-1569-source-archive-identity-repair@e05e7ff403ce` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(cli): support source archive identity builds |
 | #403 | `feature/ar-1570-dynamic-broker-handoff@4933d3b4460b` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): hand off dynamic development broker descriptor |
 
 ## Recent workflows
@@ -35,5 +35,5 @@ Generated from local Git and GitHub. Do not edit.
 | 36796650757 | `4933d3b4460b` | pull_request | Fault assurance | completed:success |
 | 36796650753 | `4933d3b4460b` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36796425775 | `e05e7ff403ce` | pull_request | Formal assurance | completed:success |
-| 36796425714 | `e05e7ff403ce` | pull_request | Rust verification | in_progress:- |
+| 36796425714 | `e05e7ff403ce` | pull_request | Rust verification | completed:success |
 | 36796425711 | `e05e7ff403ce` | pull_request | Fault assurance | completed:success |
