@@ -3462,7 +3462,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Add ASB control-protocol catalog compatibility required by the released asb-tui bootstrap journey. |
-| Next action | Request independent review and monitor hosted checks for PR #413 at 57174ca; do not merge until exact-head approval. |
+| Next action | Await all PR #413 hosted checks, then obtain independent exact-head review before merge and release. |
 
 
 ## Dependency graph
