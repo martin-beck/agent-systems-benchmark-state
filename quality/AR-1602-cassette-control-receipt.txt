@@ -1,0 +1,9 @@
+# AR-1602 acceptance receipt
+
+- Implementation PR: ASB PR #424, exact signed/DCO head 7ab4cbb16fe36bb35d8003ea3884841cca65bf34.
+- Implementation merge: signed two-parent merge 1f0c259013c9cfa4e6f488dd5108c757752a93f1 on protected main.
+- Independent review: exact-head review recorded for PR #424; additive v1.12, legacy v1.11 fallback, identity-bound replay, and provider-egress denial were verified.
+- Hosted evidence: PR #424 required checks passed; post-merge exact-main workflows passed (quality 36864921775, Rust 36864921740, aarch64 36864921910, formal 36864921706, fault 36864921823, credential-free 36864921990, hosted portability 36864921885, broker 36864921788, headers 36864921912).
+- Local evidence: cargo test -p asb-control --locked (91 passed), cassette lifecycle backend targeted tests passed, schema/contract and CLI focused tests passed with an isolated rerun for the known parallel state-root ownership flake.
+- Contract evidence: v1.12 cassette record/seal/replay control is wired through authoritative negotiation and admission; replay binds runner, campaign, generation, provider profile, agent, workload, and cassette digest, with offline_only=true and live_available=false.
+- Classification: contract-test/mechanical/hosted; development-only missing authentication, signatures, and key management remain warning-only and non-blocking.
