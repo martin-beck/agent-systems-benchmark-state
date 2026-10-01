@@ -3300,11 +3300,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | blocked |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1571-broker-channel |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Provide the bounded broker channel transport that completes ASB to asb-tui launch handoff. |
@@ -3970,7 +3970,7 @@ flowchart LR
         AR_1568["AR-1568 - Done"]:::status_done
         AR_1569["AR-1569 - Done"]:::status_done
         AR_1570["AR-1570 - Done"]:::status_done
-        AR_1571["AR-1571 - In progress"]:::status_in_progress
+        AR_1571["AR-1571 - Blocked"]:::status_blocked
         AR_1572["AR-1572 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
@@ -4736,3 +4736,4 @@ flowchart LR
     AR_1180 --> AR_0809
     AR_1190 --> AR_1191
     AR_1190 --> AR_1198
+    AR_1190 --> AR_1199
