@@ -1,0 +1,7 @@
+AR-1593 catalog version alignment receipt
+merged_sha=c0a3a890
+reviewed_pr_head=9dae105f7ec139e229ad5ba51cbc98bfb801478b
+pr=https://github.com/martin-beck/agent-systems-benchmark/pull/414
+checks=all required hosted checks passed on the exact reviewed head, including exact TUI inherited-fd journey, Rust, repository quality, credential-free benchmark, portability, formal, fault, header, and AWQ gates
+review=independent exact-head review approved v1.10 common-version alignment, immutable historical schemas, downgrade rejection, and typed negotiation tests
+local=cargo check -p asb-control -p asb-cli; cargo test -p asb-control benchmark_catalog_tests; cargo test -p asb-control --test schema_conformance
