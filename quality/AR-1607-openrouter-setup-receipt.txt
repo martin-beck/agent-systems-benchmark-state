@@ -1,0 +1,14 @@
+AR-1607 OpenRouter setup qualification receipt
+
+Source: agent-systems-benchmark origin/main da88696742de6256a05c7d10d41df6921669ffb6
+Tree: independently checked in isolated worktree /srv/data/projects/agent-systems-benchmark-ar-1609
+
+Evidence:
+- cargo test -p asb-agents openrouter: 14 passed; provider parity: 7 passed.
+- cargo test -p asb-cli --test setup_contract: 2 passed.
+- cargo test -p asb-cli setup_: 6 passed; provider_catalog: 3 passed.
+- Human default setup output and global --json setup output both verified.
+
+Verified predicates: pinned OpenRouter catalog/model, OPENROUTER_API_KEY redacted reference,
+unsupported model negatives, absent/mismatched credential fail-closed runtime behavior,
+development-only warning-only setup behavior, and secret-free catalog/config output.
