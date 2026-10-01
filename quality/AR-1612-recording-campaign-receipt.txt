@@ -1,0 +1,20 @@
+AR-1612 selected-workload recording campaign controls receipt
+
+Protected product repository: martin-beck/agent-systems-benchmark
+Pull request: #430
+Merged protected-main head: 3d87e99b300def775afcf6d70ce8c0a4872cb591
+Implementation head: 59b10ff5d8744bdfb7cff49f0ec448119764f395
+
+Implementation evidence:
+- Explicit all-workloads sentinel expands from the authoritative workload catalog.
+- Empty resolved catalogs and oversized matrices fail closed; bounded matrix limit is 256.
+- Wire validation permits the empty workload sentinel while continuing to reject empty agents and malformed explicit matrices.
+- Real ControlServer/ControlClient admission test exercises expansion, backend execution, and response validation.
+- Focused recording and endpoint tests pass.
+- Development authentication, signatures, and key management remain warning-only.
+
+Independent review: approved after endpoint admission integration coverage.
+Hosted PR checks: all required checks passed on the exact implementation head.
+Exact protected-main checks: Repository quality, Rust, aarch64, formal, fault,
+platform, TUI journey, credential-free, AWQ, and source-header checks all passed
+on merged head 3d87e99b300def775afcf6d70ce8c0a4872cb591.
