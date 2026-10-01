@@ -3658,7 +3658,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Real paired record/seal/reopen/offline-replay/compare qualification fixture |
-| Next action | Rerun hosted PR #426 checks with workflow pin 8b69a7d; obtain independent review on final head before merge/release. |
+| Next action | Release complete: PR #426 merged as da886967; exact-main hosted workflows and independent approval are recorded in spec/receipt. |
 
 ### AR-1607 — OpenRouter provider and model setup
 
