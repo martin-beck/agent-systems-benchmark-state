@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1573](tasks/AR-1573.md): ASB development control producer bridge | Expose the ASB-side development control producer bridge required by the asb-tui adopted stream. | Await all hosted gates and independent review of b4813cf; merge only identical green head, then release AR-1573 and promote AR-1574. | ar1573-control-bridge |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |

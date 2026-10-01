@@ -147,12 +147,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1573](../tasks/AR-1573.md): ASB development control producer bridge | ar1573-control-bridge | Expose the ASB-side development control producer bridge required by the asb-tui adopted stream. | Await all hosted gates and independent review of b4813cf; merge only identical green head, then release AR-1573 and promote AR-1574. |
-
 ### Blocked (82)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -300,7 +294,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (427)
+### Done (428)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
