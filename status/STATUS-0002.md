@@ -3394,6 +3394,34 @@
 | Summary | Recover the existing workspace coverage gate that currently blocks otherwise correct ASB transport changes. |
 | Next action | Run exact workspace coverage gate on PR #407 using /srv/data target; continue only with concrete stable tests needed for 90&#37;, then merge/release or report measured blocker. |
 
+### AR-1588 — ASB development-channel command surface
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Make ASB lifecycle commands consistently select and default the development release channel. |
+| Next action | Promote after dependencies are released; implement and qualify consistent --channel selection with default dev across ASB lifecycle commands. |
+
+### AR-1589 — ASB development-channel provenance and fault matrix
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Qualify ASB development-channel identity, metadata integrity, and cleanup failure paths. |
+| Next action | Promote after AR-1588; implement the development-channel provenance envelope and adversarial fault matrix without weakening stable verification. |
+
 
 ## Dependency graph
 
@@ -4047,6 +4075,8 @@ flowchart LR
         AR_1576["AR-1576 - In progress"]:::status_in_progress
         AR_1577["AR-1577 - Done"]:::status_done
         AR_1578["AR-1578 - Done"]:::status_done
+        AR_1588["AR-1588 - Planned"]:::status_planned
+        AR_1589["AR-1589 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4653,50 +4683,3 @@ flowchart LR
     AR_0902 --> AR_0813
     AR_0902 --> AR_0877
     AR_0902 --> AR_0878
-    AR_0902 --> AR_0903
-    AR_0902 --> AR_0906
-    AR_0902 --> AR_0909
-    AR_0903 --> AR_0846
-    AR_0903 --> AR_1027
-    AR_0904 --> AR_1023
-    AR_0906 --> AR_0877
-    AR_0906 --> AR_1021
-    AR_0907 --> AR_1303
-    AR_1001 --> AR_0310
-    AR_1001 --> AR_0806
-    AR_1001 --> AR_0875
-    AR_1001 --> AR_0904
-    AR_1001 --> AR_1006
-    AR_1001 --> AR_1007
-    AR_1001 --> AR_1013
-    AR_1002 --> AR_0405
-    AR_1002 --> AR_1016
-    AR_1007 --> AR_0405
-    AR_1007 --> AR_0406
-    AR_1007 --> AR_1016
-    AR_1007 --> AR_1394
-    AR_1008 --> AR_0898
-    AR_1010 --> AR_1011
-    AR_1010 --> AR_1012
-    AR_1010 --> AR_1024
-    AR_1010 --> AR_1025
-    AR_1010 --> AR_1033
-    AR_1011 --> AR_0807
-    AR_1011 --> AR_1012
-    AR_1011 --> AR_1026
-    AR_1012 --> AR_0823
-    AR_1012 --> AR_0903
-    AR_1012 --> AR_1027
-    AR_1013 --> AR_1014
-    AR_1013 --> AR_1015
-    AR_1013 --> AR_1036
-    AR_1014 --> AR_1011
-    AR_1014 --> AR_1016
-    AR_1014 --> AR_1032
-    AR_1014 --> AR_1034
-    AR_1015 --> AR_1016
-    AR_1017 --> AR_1018
-    AR_1017 --> AR_1019
-    AR_1017 --> AR_1021
-    AR_1017 --> AR_1022
-    AR_1017 --> AR_1030
