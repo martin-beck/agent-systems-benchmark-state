@@ -23,11 +23,11 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36794880540 | `6fab08b538bd` | push | Emulated aarch64 portability | in_progress:- |
+| 36794880540 | `6fab08b538bd` | push | Emulated aarch64 portability | completed:success |
 | 36794880539 | `6fab08b538bd` | push | Huawei MIT source headers | completed:success |
 | 36794880505 | `6fab08b538bd` | push | Repository quality | completed:failure |
 | 36794880496 | `6fab08b538bd` | push | Credential-free benchmark path | completed:success |
-| 36794880489 | `6fab08b538bd` | push | Rust verification | in_progress:- |
+| 36794880489 | `6fab08b538bd` | push | Rust verification | completed:failure |
 | 36794880488 | `6fab08b538bd` | push | Formal assurance | completed:success |
 | 36794880486 | `6fab08b538bd` | push | Fault assurance | completed:success |
 | 36794880481 | `6fab08b538bd` | push | Hosted portability and native qualification | completed:success |
