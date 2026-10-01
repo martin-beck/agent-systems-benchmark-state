@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1605](tasks/AR-1605.md): Authenticated cassette control backend | Expose catalog, record, seal, reopen, offline replay, and comparison through the real ASB control backend. | Run hosted PR #425 checks and obtain fresh independent exact-head review; do not merge until both are green/approved. | ar1496-cassette-backend |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
