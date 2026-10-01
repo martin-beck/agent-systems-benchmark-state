@@ -191,7 +191,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1597](../tasks/AR-1597.md): Fault matrix and deterministic runner | ar1199-router-impl | Exercise all setup, recording, replay, benchmark, and recovery failure paths with bounded evidence. | Run full local fault-matrix tests, sign and push the bounded process/network/privacy repair, then await independent review of PR #420. |
+| P0 | [AR-1597](../tasks/AR-1597.md): Fault matrix and deterministic runner | ar1199-router-impl | Exercise all setup, recording, replay, benchmark, and recovery failure paths with bounded evidence. | Await independent review and hosted checks for PR #420 exact head 829f67f9d3f5cacf1328a0b7297733d0c747dd3c; repair only if checks/review identify a concrete issue. |
 
 ### Blocked (82)
 
@@ -550,4 +550,3 @@
 | P0 | [AR-1516](../tasks/AR-1516-ar1308-qemu-fixture-evidence-repair.md): AR-1308 QEMU fixture repair | Unclaimed | Fixture repair passed boot/transient/JAR checks; full tier timed out at 1700s without attestation. | Close fixture repair; hand timeout to AR-1309 for capacity/model decision. |
 | P0 | [AR-1517](../tasks/AR-1517-ar1309-capacity-decision-unblock.md): AR-1309 capacity decision | Unclaimed | Select a reviewed AR-1309 capacity/model contract after runner failure. | Classify evidence and select AR-1309&#x27;s capacity/model contract. |
 | P0 | [AR-1519](../tasks/AR-1519.md): AR-1307/1308 reduced-model development profile | Unclaimed | Reduced development tier implemented with explicit 900s/1-worker/2G/2G/4G bounds and non-claiming attestation. | Independently review the exact head, then release this development-only repair; full AR-1307/1308 qualification remains separate. |
-| P0 | [AR-1520](../tasks/AR-1520.md): AR-1308 reduced-profile runtime qualification | Unclaimed | Reduced profile passes self-contained QEMU: transient admission, bounded models, sanitized non-claiming attestation, and clean poweroff. | Release after exact-head review; retain AR-1307/1308 formal qualification as separate blocked gates. |

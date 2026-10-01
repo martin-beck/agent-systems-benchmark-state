@@ -3532,7 +3532,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Exercise all setup, recording, replay, benchmark, and recovery failure paths with bounded evidence. |
-| Next action | Run full local fault-matrix tests, sign and push the bounded process/network/privacy repair, then await independent review of PR #420. |
+| Next action | Await independent review and hosted checks for PR #420 exact head 829f67f9d3f5cacf1328a0b7297733d0c747dd3c; repair only if checks/review identify a concrete issue. |
 
 ### AR-1598 — Fresh-user development qualification
 
@@ -4614,5 +4614,3 @@ flowchart LR
     AR_0802 --> AR_0808
     AR_0802 --> AR_0809
     AR_0802 --> AR_0872
-    AR_0802 --> AR_0903
-    AR_0803 --> AR_0804
