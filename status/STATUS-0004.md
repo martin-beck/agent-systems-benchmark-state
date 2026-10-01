@@ -210,7 +210,7 @@
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1589](../tasks/AR-1589.md): ASB development-channel provenance and fault matrix | ar1199-provenance-matrix | Qualify ASB development-channel identity, metadata integrity, and cleanup failure paths. | Request independent review of exact qualification evidence; after approval, release AR-1589 with c94586d and post-gate receipt (no product PR because current boundary already implements the planned envelope/fault matrix). |
-| P0 | [AR-1605](../tasks/AR-1605.md): Authenticated cassette control backend | ar1496-cassette-backend | Expose catalog, record, seal, reopen, offline replay, and comparison through the real ASB control backend. | Promote after ASB AR-1602; implement the authenticated ControlServer/RunnerBackend cassette lifecycle and external-client evidence. |
+| P0 | [AR-1605](../tasks/AR-1605.md): Authenticated cassette control backend | ar1496-cassette-backend | Expose catalog, record, seal, reopen, offline replay, and comparison through the real ASB control backend. | Run hosted PR #425 checks and obtain fresh independent exact-head review; do not merge until both are green/approved. |
 
 ### Blocked (82)
 

@@ -3644,7 +3644,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Expose catalog, record, seal, reopen, offline replay, and comparison through the real ASB control backend. |
-| Next action | Promote after ASB AR-1602; implement the authenticated ControlServer/RunnerBackend cassette lifecycle and external-client evidence. |
+| Next action | Run hosted PR #425 checks and obtain fresh independent exact-head review; do not merge until both are green/approved. |
 
 
 ## Dependency graph
