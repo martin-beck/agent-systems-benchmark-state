@@ -1,0 +1,8 @@
+# AR-1589 acceptance receipt
+
+- Exact product head: ASB c94586d0751b144523fcbe05b81e3fbc81a44af9.
+- Provenance/fault evidence: 56 focused control/provenance tests passed; 165 asb-cli workspace tests and the full locked workspace passed; Python fault matrix passed 9/9.
+- Covered boundaries: exact source/ASB commit and tree, executable digest, development channel marker, stale/malformed/mixed identity rejection, atomic rollback, prior-install preservation, quota/timeout/process cleanup, and warning-only development authentication/signature/key behavior.
+- Live matrix: all five network-isolated cases returned typed `runner_unavailable` because this host denies `unshare --net`; no host-network fallback occurred and private roots were cleaned.
+- Independent review: APPROVE at the exact head; the unavailable network isolation is recorded as an environmental limitation, not a false success.
+- Classification: contract-test/mechanical/environmental; development-only and credential-free.

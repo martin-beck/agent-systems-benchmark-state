@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "spec_ref": "specs/AR-1589.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [
+    {"id": "provenance", "description": "Development install/status/launch preserve exact source commit/tree, executable digest, channel, profile, and development-only identity."},
+    {"id": "fault-matrix", "description": "Stale, malformed, mixed-channel, partial-install, rollback, quota, timeout, process-cleanup, and network-fallback faults return typed bounded outcomes."},
+    {"id": "development-boundary", "description": "Missing development authentication, signatures, and key management remain visible warnings while stable/production behavior stays fail-closed."},
+    {"id": "reviewed-evidence", "description": "Exact-head qualification is independently reviewed, workspace checks are green, and the live environment limitation is recorded without a false claim."}
+  ],
+  "definition_of_done": [
+    "Exact ASB c94586d provenance and fault qualification is recorded.",
+    "Focused control/provenance, CLI workspace, and Python fault-matrix tests pass.",
+    "Network-isolated runner_unavailable is typed and never replaced by host-network fallback."
+  ],
+  "inputs": [
+    {"id": "implementation", "description": "ASB c94586d development-channel materializer, lifecycle, and fault-matrix runner."}
+  ],
+  "outputs": [
+    {"id": "qualification", "description": "Machine-readable provenance/fault receipt consumed by fresh-user qualification."}
+  ],
+  "allowed_tools": ["cargo", "git", "python3", "gh", "tools/handoffctl"],
+  "forbidden_tools": ["host-network-fallback", "credential-bypass"],
+  "required_evidence_classes": ["contract-test", "mechanical", "environmental"],
+  "gates": [
+    {"id": "tests", "description": "Focused and full workspace tests, format, and clippy pass."},
+    {"id": "independent", "description": "Independent review approves the exact receipt and records environment limitation."}
+  ]
+}
