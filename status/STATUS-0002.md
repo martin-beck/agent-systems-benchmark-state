@@ -3574,7 +3574,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Keep normal development TUI builds within explicit source and artifact quotas. |
-| Next action | Rebased PR #423 onto protected main 9c6a69a at signed head f49bec35; await hosted checks and independent review, then merge/release. |
+| Next action | PR #423 exact signed head eaeadd5 is based on protected main; await fresh independent review and all hosted checks, then merge/release. |
 
 
 ## Dependency graph
