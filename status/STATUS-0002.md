@@ -3482,11 +3482,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1498-qualification-coverage |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Keep the real cross-repository qualification while preserving the enforced workspace coverage floor. |
@@ -4207,7 +4207,7 @@ flowchart LR
         AR_1591["AR-1591 - Planned"]:::status_planned
         AR_1592["AR-1592 - In progress"]:::status_in_progress
         AR_1593["AR-1593 - Planned"]:::status_planned
-        AR_1594["AR-1594 - In progress"]:::status_in_progress
+        AR_1594["AR-1594 - Done"]:::status_done
         AR_1595["AR-1595 - Planned"]:::status_planned
         AR_1596["AR-1596 - Planned"]:::status_planned
         AR_1597["AR-1597 - Planned"]:::status_planned
@@ -4610,3 +4610,5 @@ flowchart LR
     AR_0801 --> AR_0842
     AR_0801 --> AR_0847
     AR_0801 --> AR_0849
+    AR_0801 --> AR_0869
+    AR_0802 --> AR_0808
