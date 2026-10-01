@@ -174,7 +174,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1590](../tasks/AR-1590.md): Inherited-fd cross-repository qualification | ar1590-inherited-fd-bridge | Complete real ASB-to-asb-tui inherited-fd broker qualification after the PTY seam exists. | Wait for ASB AR-1592 catalog compatibility, then rerun PR #412 against the exact released TUI with ordered catalog/bootstrap evidence and bounded cleanup. |
+| P0 | [AR-1590](../tasks/AR-1590.md): Inherited-fd cross-repository qualification | ar1590-inherited-fd-bridge | Complete real ASB-to-asb-tui inherited-fd broker qualification after the PTY seam exists. | Await hosted checks for repair head 0b46bce and ASB AR-1592 catalog implementation; then obtain fresh independent exact-head review and rerun the cross-project journey. |
 
 ### Blocked (82)
 
