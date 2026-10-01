@@ -3412,11 +3412,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1199-provenance-matrix |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Qualify ASB development-channel identity, metadata integrity, and cleanup failure paths. |
@@ -4300,7 +4300,7 @@ flowchart LR
         AR_1577["AR-1577 - Done"]:::status_done
         AR_1578["AR-1578 - Done"]:::status_done
         AR_1588["AR-1588 - Done"]:::status_done
-        AR_1589["AR-1589 - In progress"]:::status_in_progress
+        AR_1589["AR-1589 - Done"]:::status_done
         AR_1590["AR-1590 - Done"]:::status_done
         AR_1591["AR-1591 - Planned"]:::status_planned
         AR_1592["AR-1592 - Done"]:::status_done
@@ -4568,3 +4568,5 @@ flowchart LR
     AR_0315 --> AR_0903
     AR_0315 --> AR_1110
     AR_0315 --> AR_1327
+    AR_0316 --> AR_0876
+    AR_0317 --> AR_0857
