@@ -3490,7 +3490,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Keep the real cross-repository qualification while preserving the enforced workspace coverage floor. |
-| Next action | Repair PR #412 coverage isolation by feature-gating the external pinned-TUI qualification test and running it only in its dedicated workflow. |
+| Next action | Await hosted checks on 63e16ee, then obtain a fresh independent exact-head review and release the repair seam. |
 
 
 ## Dependency graph
@@ -4634,3 +4634,4 @@ flowchart LR
     AR_0821 --> AR_0808
     AR_0821 --> AR_0809
     AR_0821 --> AR_0822
+    AR_0821 --> AR_0823
