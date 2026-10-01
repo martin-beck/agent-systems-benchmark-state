@@ -3538,7 +3538,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | open |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -4393,7 +4393,7 @@ flowchart LR
         AR_1595["AR-1595 - Done"]:::status_done
         AR_1596["AR-1596 - Done"]:::status_done
         AR_1597["AR-1597 - Done"]:::status_done
-        AR_1598["AR-1598 - Planned"]:::status_planned
+        AR_1598["AR-1598 - Open"]:::status_open
         AR_1599["AR-1599 - Done"]:::status_done
     end
     subgraph series_16["16 - Additional work"]
