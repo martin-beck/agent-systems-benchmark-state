@@ -3440,11 +3440,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1496-postrelease-consumption |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Qualify fresh-clone consumption of the released development ASB journey. |
@@ -4302,7 +4302,7 @@ flowchart LR
         AR_1588["AR-1588 - Done"]:::status_done
         AR_1589["AR-1589 - Done"]:::status_done
         AR_1590["AR-1590 - Done"]:::status_done
-        AR_1591["AR-1591 - In progress"]:::status_in_progress
+        AR_1591["AR-1591 - Done"]:::status_done
         AR_1592["AR-1592 - Done"]:::status_done
         AR_1593["AR-1593 - Done"]:::status_done
         AR_1594["AR-1594 - Done"]:::status_done
@@ -4577,3 +4577,4 @@ flowchart LR
     AR_0318 --> AR_0320
     AR_0318 --> AR_0869
     AR_0318 --> AR_0876
+    AR_0318 --> AR_1325

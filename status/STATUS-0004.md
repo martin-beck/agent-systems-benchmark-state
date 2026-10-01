@@ -204,12 +204,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1591](../tasks/AR-1591.md): Post-release fresh-clone ASB consumption | ar1496-postrelease-consumption | Qualify fresh-clone consumption of the released development ASB journey. | Obtain independent review of exact fresh-clone receipt, then release AR-1591. |
-
 ### Blocked (82)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -359,7 +353,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (446)
+### Done (447)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -554,3 +548,4 @@
 | P0 | [AR-1492](../tasks/AR-1492-customer-bundle-signing-handoff.md): Customer bundle signing handoff | Unclaimed | Stage a deterministic customer bundle and provide an explicit external signing handoff and verifier. | Run state reconcile and doctor, then release AR-1492 done ownerless with merge and eight-workflow evidence. |
 | P0 | [AR-1493](../tasks/AR-1493-release-authority-enrollment-handoff.md): Release-authority enrollment handoff | Unclaimed | Define and validate the external release-authority enrollment and signed-bundle verification handoff. | Reconcile and doctor state, then release AR-1493 done ownerless with complete merge and post-merge evidence. |
 | P0 | [AR-1495](../tasks/AR-1495-development-unverified-bundle-profile.md): Development-only unverified bundle profile | Unclaimed | Add an explicit development-only unverified bundle profile without weakening production or customer-release verification. | Monitor PR #373 fresh exact signed+DCO head 4d63a66; merge only after all required checks and independent review are green. |
+| P0 | [AR-1496](../tasks/AR-1496-runtime-owned-provider-capture-control.md): Runtime-owned provider capture and control activation | Unclaimed | Complete runtime-owned provider capture, tuple cassette reconciliation and verified offline activation required by the setup wizard. | Done: PR #375 merged at protected main 8c53a4a62ecaa6fecc9eb195a105fc368a3395c8; independent review passed and all seven post-merge workflows succeeded. |

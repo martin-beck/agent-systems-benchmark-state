@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1591](tasks/AR-1591.md): Post-release fresh-clone ASB consumption | Qualify fresh-clone consumption of the released development ASB journey. | Obtain independent review of exact fresh-clone receipt, then release AR-1591. | ar1496-postrelease-consumption |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
