@@ -17,7 +17,7 @@ Generated from local Git and GitHub. Do not edit.
 | #365 | `dependabot/cargo/rcgen-0.14.10@8604b5977544` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump rcgen from 0.14.7 to 0.14.10 |
 | #366 | `dependabot/cargo/schemars-1.2.2@047b52b0b5b9` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump schemars from 1.0.4 to 1.2.2 |
 | #384 | `feature/ar-1508-platform-owned-authority-provider@2c70f81100ca` | `main` | DIRTY | - | feat(runtime): platform-owned authority provider |
-| #401 | `feature/ar-1567-trusted-toolchain@97929864fc72` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): discover trusted development cargo |
+| #401 | `feature/ar-1567-trusted-toolchain@50a33e213e01` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(cli): discover trusted development cargo |
 | #402 | `feature/ar-1569-source-archive-identity-repair@e05e7ff403ce` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(cli): support source archive identity builds |
 | #403 | `feature/ar-1570-dynamic-broker-handoff@4933d3b4460b` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): hand off dynamic development broker descriptor |
 
@@ -25,15 +25,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 36797149022 | `50a33e213e01` | pull_request | Fault assurance | in_progress:- |
+| 36797148917 | `50a33e213e01` | pull_request | Credential-free benchmark path | in_progress:- |
+| 36797148916 | `50a33e213e01` | pull_request | Repository quality | in_progress:- |
+| 36797148914 | `50a33e213e01` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 36797148902 | `50a33e213e01` | pull_request | Rust verification | in_progress:- |
+| 36797148875 | `50a33e213e01` | pull_request | Huawei MIT source headers | in_progress:- |
+| 36797148873 | `50a33e213e01` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 36797148854 | `50a33e213e01` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 36797148827 | `50a33e213e01` | pull_request | Formal assurance | in_progress:- |
 | 36796650834 | `4933d3b4460b` | pull_request | Hosted portability and native qualification | completed:success |
 | 36796650819 | `4933d3b4460b` | pull_request | Formal assurance | completed:success |
 | 36796650792 | `4933d3b4460b` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 36796650788 | `4933d3b4460b` | pull_request | Rust verification | in_progress:- |
-| 36796650786 | `4933d3b4460b` | pull_request | Credential-free benchmark path | completed:success |
-| 36796650776 | `4933d3b4460b` | pull_request | Repository quality | in_progress:- |
-| 36796650762 | `4933d3b4460b` | pull_request | Huawei MIT source headers | completed:success |
-| 36796650757 | `4933d3b4460b` | pull_request | Fault assurance | completed:success |
-| 36796650753 | `4933d3b4460b` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 36796425775 | `e05e7ff403ce` | pull_request | Formal assurance | completed:success |
-| 36796425714 | `e05e7ff403ce` | pull_request | Rust verification | completed:success |
-| 36796425711 | `e05e7ff403ce` | pull_request | Fault assurance | completed:success |
