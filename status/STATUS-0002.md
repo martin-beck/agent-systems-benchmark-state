@@ -3576,6 +3576,20 @@
 | Summary | Keep normal development TUI builds within explicit source and artifact quotas. |
 | Next action | PR #423 exact signed head eaeadd5 is based on protected main; await fresh independent review and all hosted checks, then merge/release. |
 
+### AR-1601 — Development-channel publication and provenance qualification
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Qualify current-main dev-channel publication and exact provenance across ASB and asb-tui. |
+| Next action | Promote after ASB AR-1600 and the paired TUI channel surface are released; run the exact-head dev-channel publication and provenance qualification. |
+
 
 ## Dependency graph
 
@@ -4245,6 +4259,7 @@ flowchart LR
     subgraph series_16["16 - Additional work"]
         direction TB
         AR_1600["AR-1600 - In progress"]:::status_in_progress
+        AR_1601["AR-1601 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4578,27 +4593,3 @@ flowchart LR
     AR_0504 --> AR_0314
     AR_0504 --> AR_0505
     AR_0504 --> AR_0506
-    AR_0504 --> AR_0507
-    AR_0504 --> AR_0508
-    AR_0504 --> AR_0509
-    AR_0504 --> AR_0510
-    AR_0504 --> AR_0511
-    AR_0504 --> AR_0512
-    AR_0504 --> AR_0513
-    AR_0504 --> AR_0514
-    AR_0504 --> AR_0516
-    AR_0504 --> AR_0517
-    AR_0504 --> AR_0879
-    AR_0505 --> AR_0315
-    AR_0505 --> AR_0802
-    AR_0505 --> AR_0808
-    AR_0505 --> AR_0871
-    AR_0505 --> AR_0879
-    AR_0505 --> AR_0903
-    AR_0505 --> AR_1151
-    AR_0505 --> AR_1231
-    AR_0505 --> AR_1232
-    AR_0506 --> AR_0515
-    AR_0507 --> AR_0515
-    AR_0508 --> AR_0515
-    AR_0508 --> AR_0850
