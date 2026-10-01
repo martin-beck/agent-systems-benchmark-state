@@ -3322,7 +3322,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Private reproducible development toolchain runner hardened and proposed in PR #404. |
-| Next action | Run hosted checks and obtain independent review for PR #404 at 1990499; then merge only after approval. |
+| Next action | Run hosted checks and obtain independent review for PR #404 at 6dccc35; then merge only after approval. |
 
 ### AR-1573 — ASB development control producer bridge
 

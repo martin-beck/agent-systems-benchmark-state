@@ -151,7 +151,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1572](../tasks/AR-1572.md): ASB approved development toolchain runner | ar1572-toolchain-runner | Private reproducible development toolchain runner hardened and proposed in PR #404. | Run hosted checks and obtain independent review for PR #404 at 1990499; then merge only after approval. |
+| P0 | [AR-1572](../tasks/AR-1572.md): ASB approved development toolchain runner | ar1572-toolchain-runner | Private reproducible development toolchain runner hardened and proposed in PR #404. | Run hosted checks and obtain independent review for PR #404 at 6dccc35; then merge only after approval. |
 | P0 | [AR-1573](../tasks/AR-1573.md): ASB development control producer bridge | ar1573-control-bridge | Expose the ASB-side development control producer bridge required by the asb-tui adopted stream. | Await hosted gates and independent review of PR #405; merge only the identical green head, then release AR-1573 and promote AR-1574. |
 
 ### Blocked (82)
