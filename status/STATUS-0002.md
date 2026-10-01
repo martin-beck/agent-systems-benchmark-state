@@ -3293,8 +3293,8 @@
 | Owner | ar1570-dynamic-broker-handoff |
 | Parent | None |
 | Children | None |
-| Summary | Wire the ASB development lifecycle through the dynamic asb-tui broker handoff. |
-| Next action | Promote after asb-tui AR-1344 is merged; wire ASB development launch through the dynamic asb-tui broker descriptor and qualify exact heads. |
+| Summary | Implement dynamic development broker handoff |
+| Next action | Independent review and hosted green checks for PR #403 at 4933d3b4460b4c66291822fd894ef04e010f0629; rebase after AR-1569 merge if needed |
 
 
 ## Dependency graph
@@ -4749,3 +4749,5 @@ flowchart LR
     AR_1233 --> AR_1232
     AR_1233 --> AR_1237
     AR_1233 --> AR_1257
+    AR_1234 --> AR_1232
+    AR_1236 --> AR_1233
