@@ -3580,7 +3580,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | open |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -4273,7 +4273,7 @@ flowchart LR
     subgraph series_16["16 - Additional work"]
         direction TB
         AR_1600["AR-1600 - Done"]:::status_done
-        AR_1601["AR-1601 - Planned"]:::status_planned
+        AR_1601["AR-1601 - Open"]:::status_open
         AR_1602["AR-1602 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
