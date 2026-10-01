@@ -156,12 +156,11 @@
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1576](../tasks/AR-1576.md): ASB development bootstrap projection | ar1576-bootstrap-projection | Make the development control backend satisfy the current asb-tui bootstrap projection without production credentials. | Promote and implement the development-only bootstrap projection contract required by current asb-tui startup. |
-| P0 | [AR-1577](../tasks/AR-1577.md): ASB interactive development supervision | ar1577-interactive-supervision | Keep successful development TUI sessions interactive while bounding handshake and cleanup failure paths. | Await hosted checks and independent review of PR #408 exact head e6f3d901dffba31845273fafd436f613d1485793; merge/release only identical green head. |
 
 ### Blocked (82)
 
@@ -309,7 +308,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (430)
+### Done (431)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -542,3 +541,4 @@
 | P0 | [AR-1555](../tasks/AR-1555.md): Plan and output workflow qualification | Unclaimed | Qualify plan creation and output modes as one simple ASB user journey. | Release done: exact current main ce190124 qualifies dynamic plan creation, human/JSON output, local/mock run, report and compare workflow. |
 | P0 | [AR-1557](../tasks/AR-1557.md): Protected-main receipt signature repair | Unclaimed | Repair protected-main signature evidence after the receipt PR rebase generated an unsigned topic commit. | Release done: signed forward repair 7aa09a0 passed exact protected-main policy and all required hosted checks. |
 | P0 | [AR-1558](../tasks/AR-1558.md): ASB plan/output release publication | Unclaimed | Publish the ASB release containing the dynamic plan and output-mode workflow after exact green-main verification. | Release done: signed tag asb-0.1.0-plan-output-ce190 published from exact green ce190124 and fresh checksum/doctor consumption passed. |
+| P0 | [AR-1559](../tasks/AR-1559.md): Machine consumer JSON opt-in repair | Unclaimed | Repair the Rust workflow&#x27;s workload catalog JSON consumer after the human-output default change. | Release done: PR #395 merged at exact main ce190124 and all required hosted checks passed, including the rerun of Rust verification. |

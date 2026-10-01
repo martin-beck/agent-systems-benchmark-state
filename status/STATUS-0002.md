@@ -3370,11 +3370,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1577-interactive-supervision |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Keep successful development TUI sessions interactive while bounding handshake and cleanup failure paths. |
@@ -4045,7 +4045,7 @@ flowchart LR
         AR_1573["AR-1573 - Done"]:::status_done
         AR_1574["AR-1574 - Done"]:::status_done
         AR_1576["AR-1576 - In progress"]:::status_in_progress
-        AR_1577["AR-1577 - In progress"]:::status_in_progress
+        AR_1577["AR-1577 - Done"]:::status_done
         AR_1578["AR-1578 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
@@ -4698,3 +4698,5 @@ flowchart LR
     AR_1017 --> AR_1018
     AR_1017 --> AR_1019
     AR_1017 --> AR_1021
+    AR_1017 --> AR_1022
+    AR_1017 --> AR_1030
