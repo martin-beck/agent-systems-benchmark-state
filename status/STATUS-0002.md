@@ -3560,7 +3560,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair fresh-user dev installation provenance, toolchain discovery, and atomic publication. |
-| Next action | PR #421 exact head c11a51a is open; await hosted checks and independent review, repair only concrete findings, then merge/reverify before release. |
+| Next action | PR #421 exact head c11a51a4af1ae1086b5a98624606e0dff1103670 remains open; hosted checks are running and independent review is required before any protected merge. |
 
 
 ## Dependency graph
@@ -4605,4 +4605,3 @@ flowchart LR
     AR_0701 --> AR_0702
     AR_0701 --> AR_0703
     AR_0701 --> AR_0704
-    AR_0701 --> AR_0707
