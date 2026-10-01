@@ -197,7 +197,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1600](../tasks/AR-1600.md): Bounded development build-artifact staging | ar1199-router-impl | Keep normal development TUI builds within explicit source and artifact quotas. | Commit/push signed bounded-target staging PR, then run hosted checks and obtain independent review. |
+| P0 | [AR-1600](../tasks/AR-1600.md): Bounded development build-artifact staging | ar1199-router-impl | Keep normal development TUI builds within explicit source and artifact quotas. | Rebased PR #423 onto protected main 9c6a69a at signed head f49bec35; await hosted checks and independent review, then merge/release. |
 
 ### Blocked (82)
 

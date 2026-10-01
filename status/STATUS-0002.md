@@ -3574,7 +3574,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Keep normal development TUI builds within explicit source and artifact quotas. |
-| Next action | Commit/push signed bounded-target staging PR, then run hosted checks and obtain independent review. |
+| Next action | Rebased PR #423 onto protected main 9c6a69a at signed head f49bec35; await hosted checks and independent review, then merge/release. |
 
 
 ## Dependency graph
@@ -4602,4 +4602,3 @@ flowchart LR
     AR_0507 --> AR_0515
     AR_0508 --> AR_0515
     AR_0508 --> AR_0850
-    AR_0509 --> AR_0515
