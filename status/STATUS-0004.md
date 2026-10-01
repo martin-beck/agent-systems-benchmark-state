@@ -138,11 +138,10 @@
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1567](../tasks/AR-1567.md): ASB development trusted toolchain discovery | ar1567-toolchain-discovery | Implement trusted development cargo discovery | PR #401 is rebased onto current main 2eef71c at exact head bac495d0871c72b63bed9c55b2d2c557115a471d; hosted checks rerunning and independent review required before merge. |
 | P0 | [AR-1570](../tasks/AR-1570.md): ASB dynamic development broker handoff | ar1570-dynamic-broker-handoff | Implement dynamic development broker handoff | Independent review and hosted green checks for PR #403 at f0b55e9f9e3056003b5bf949fc54ea7425c494ab |
 
 ### Blocked (81)
@@ -290,7 +289,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (424)
+### Done (425)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -528,6 +527,7 @@
 | P0 | [AR-1563](../tasks/AR-1563.md): ASB dev-channel clone/build materialization | Unclaimed | Clone and build the current asb-tui main head for the ASB dev channel. | Ready for independent re-review of PR #398 at exact head 46133cd. Verify live quota monitoring, concurrent bounded output drain, process-group descendant termination, staging cleanup preserving prior install, digest-bound atomic dev install, and unchanged stable channel. |
 | P0 | [AR-1564](../tasks/AR-1564.md): ASB development TUI lifecycle integration | Unclaimed | Integrate the dev-built TUI into the ASB lifecycle and launch path. | Ready for independent re-review of PR #399 at exact head 4a65476. Verify reversible marker/version trash transaction, injected final-delete failure restoration, dev lifecycle routing, stable isolation, and exact-current-main compatibility. |
 | P0 | [AR-1565](../tasks/AR-1565.md): ASB yanked dependency lock repair | Unclaimed | Repair the yanked dependency lock that blocks all protected ASB merges. | Run complete required ASB quality suite and obtain independent lockfile review; cargo-deny/cargo-audit binaries are absent on this host and must run in hosted/qualified environment. Then prepare exact-head PR from signed commit 54505f2. |
+| P0 | [AR-1567](../tasks/AR-1567.md): ASB development trusted toolchain discovery | Unclaimed | Implement trusted development cargo discovery | PR #401 is rebased onto current main 2eef71c at exact head bac495d0871c72b63bed9c55b2d2c557115a471d; hosted checks rerunning and independent review required before merge. |
 | P0 | [AR-1568](../tasks/AR-1568.md): ASB exact current-main identity binding | Unclaimed | Bind development metadata and broker descriptors to the exact ASB source identity. | Ready for independent review of PR #400 at exact head 665b6eb. Verify build-time exact checkout commit/tree derivation, required source headers, reproducible identity overrides, metadata/status/doctor identity validation, typed stale rejection, and unchanged stable behavior. |
 | P0 | [AR-1569](../tasks/AR-1569.md): ASB source-archive identity repair | Unclaimed | Repair merged identity generation so stable/source-archive ASB builds work without a Git checkout. | PR #402 is at exact head e05e7ff403ce6a1a91f4f05d5ea0c570eeb9d9d2; hosted checks rerunning after parent-git archive guard. Await independent review and green checks, then merge/release or repair. |
 | P1 | [AR-0002](../tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Unclaimed | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. |
@@ -536,3 +536,4 @@
 | P1 | [AR-0005](../tasks/AR-0005-transactional-promotion.md): Add transactional AR promotion | Unclaimed | Make planned-to-open promotion a transactional handoffctl operation. | Await immutable independent review of exact state PR #4 head 4e56e83 and integrate only after verified green CI. |
 | P1 | [AR-0101](../tasks/AR-0101-extension-contracts.md): Freeze versioned extension and result contracts | Unclaimed | Specify typed agent, workload, collector, runtime and result contracts before parallel implementations. | Await independent immutable-head delta review and coordinator integration of exact green PR #3 head 9e90c6a6; then run post-merge verification. |
 | P1 | [AR-0102](../tasks/AR-0102-process-runtime.md): Implement process execution and cancellation | Unclaimed | Run real client processes with bounded I/O, monotonic deadlines and process-tree ownership. | Release done after successful reviewed integration, exact-main local/hosted checks, synchronized refs and live state doctor. |
+| P1 | [AR-0103](../tasks/AR-0103-sandbox-runtime.md): Implement isolated execution and resource leases | Unclaimed | Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets. | Release AR-0103 done after exact-main local and hosted post-merge verification. |
