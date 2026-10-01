@@ -3552,11 +3552,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1199-router-impl |
 | Parent | None |
 | Children | None |
 | Summary | Repair fresh-user dev installation provenance, toolchain discovery, and atomic publication. |
@@ -4226,7 +4226,7 @@ flowchart LR
         AR_1596["AR-1596 - Done"]:::status_done
         AR_1597["AR-1597 - Open"]:::status_open
         AR_1598["AR-1598 - Planned"]:::status_planned
-        AR_1599["AR-1599 - Open"]:::status_open
+        AR_1599["AR-1599 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4607,4 +4607,3 @@ flowchart LR
     AR_0701 --> AR_0704
     AR_0701 --> AR_0707
     AR_0701 --> AR_0820
-    AR_0701 --> AR_0848
