@@ -28,9 +28,9 @@ Generated from local Git and GitHub. Do not edit.
 | 36801156049 | `877853389acc` | push | Emulated aarch64 portability | pending:- |
 | 36801156023 | `877853389acc` | push | Credential-free benchmark path | in_progress:- |
 | 36801155976 | `877853389acc` | push | Huawei MIT source headers | completed:success |
-| 36801155970 | `877853389acc` | push | Formal assurance | pending:- |
+| 36801155970 | `877853389acc` | push | Formal assurance | in_progress:- |
 | 36801155948 | `877853389acc` | push | Hosted portability and native qualification | in_progress:- |
-| 36801135621 | `911dce051a97` | push | Formal assurance | in_progress:- |
+| 36801135621 | `911dce051a97` | push | Formal assurance | completed:success |
 | 36801135619 | `911dce051a97` | push | Repository quality | completed:failure |
 | 36801135612 | `911dce051a97` | push | Emulated aarch64 portability | in_progress:- |
 | 36801135609 | `911dce051a97` | push | Huawei MIT source headers | completed:success |
