@@ -156,11 +156,10 @@
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1574](../tasks/AR-1574.md): ASB development control transport wiring | ar1574-transport-wiring | Wire the ASB development launch transport to the producer control bridge. | Await AR-1578 workspace coverage recovery and hosted rerun; merge only identical green e2986e6 or later head, then release AR-1574. |
 | P0 | [AR-1576](../tasks/AR-1576.md): ASB development bootstrap projection | ar1576-bootstrap-projection | Make the development control backend satisfy the current asb-tui bootstrap projection without production credentials. | Promote and implement the development-only bootstrap projection contract required by current asb-tui startup. |
 
 ### Blocked (82)
@@ -310,7 +309,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (429)
+### Done (430)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -542,3 +541,4 @@
 | P0 | [AR-1554](../tasks/AR-1554.md): Global human-readable output mode | Unclaimed | Make ASB commands human-readable by default and preserve JSON through a global --json flag. | Implementation merged in ASB main; retain exact PR, provenance and hosted-check evidence. |
 | P0 | [AR-1555](../tasks/AR-1555.md): Plan and output workflow qualification | Unclaimed | Qualify plan creation and output modes as one simple ASB user journey. | Release done: exact current main ce190124 qualifies dynamic plan creation, human/JSON output, local/mock run, report and compare workflow. |
 | P0 | [AR-1557](../tasks/AR-1557.md): Protected-main receipt signature repair | Unclaimed | Repair protected-main signature evidence after the receipt PR rebase generated an unsigned topic commit. | Release done: signed forward repair 7aa09a0 passed exact protected-main policy and all required hosted checks. |
+| P0 | [AR-1558](../tasks/AR-1558.md): ASB plan/output release publication | Unclaimed | Publish the ASB release containing the dynamic plan and output-mode workflow after exact green-main verification. | Release done: signed tag asb-0.1.0-plan-output-ce190 published from exact green ce190124 and fresh checksum/doctor consumption passed. |
