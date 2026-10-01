@@ -3742,7 +3742,35 @@
 | Parent | None |
 | Children | None |
 | Summary | Prove a fresh clone can consume the published dev channel and complete the shortest install-to-offline-comparison journey. |
-| Next action | Promote after ASB/TUI AR-1604 release; run the disposable exact-head current-main journey and record paired evidence. |
+| Next action | Promote after paired AR-1614 and AR-1615 releases; run the disposable exact-head current-main journey and record paired evidence. |
+
+### AR-1614 — Immutable dev-channel TUI bundle and installability
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Make the ASB dev channel resolve and install an exact public TUI bundle on a clean machine. |
+| Next action | Promote after AR-1604; implement the paired immutable channel manifest, router handoff, and clean-machine install qualification. |
+
+### AR-1615 — Live ASB-TUI control handshake and lifecycle repair
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Qualify the installed TUI against the live ASB control route for lifecycle, retry, cancellation, stale, and removal behavior. |
+| Next action | Promote after AR-1614; repair the paired control/catalog handshake and execute live lifecycle qualification. |
 
 
 ## Dependency graph
@@ -4425,6 +4453,8 @@ flowchart LR
         AR_1611["AR-1611 - Done"]:::status_done
         AR_1612["AR-1612 - Done"]:::status_done
         AR_1613["AR-1613 - Planned"]:::status_planned
+        AR_1614["AR-1614 - Planned"]:::status_planned
+        AR_1615["AR-1615 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4475,50 +4505,3 @@ flowchart LR
     AR_0101 --> AR_0517
     AR_0101 --> AR_0601
     AR_0101 --> AR_0603
-    AR_0101 --> AR_0801
-    AR_0101 --> AR_0803
-    AR_0101 --> AR_0840
-    AR_0101 --> AR_0847
-    AR_0101 --> AR_0857
-    AR_0101 --> AR_0863
-    AR_0101 --> AR_0875
-    AR_0101 --> AR_0901
-    AR_0101 --> AR_0904
-    AR_0101 --> AR_0908
-    AR_0101 --> AR_0909
-    AR_0101 --> AR_1001
-    AR_0101 --> AR_1003
-    AR_0101 --> AR_1005
-    AR_0101 --> AR_1013
-    AR_0102 --> AR_0103
-    AR_0102 --> AR_0201
-    AR_0102 --> AR_0204
-    AR_0102 --> AR_0301
-    AR_0102 --> AR_0302
-    AR_0102 --> AR_0303
-    AR_0102 --> AR_0304
-    AR_0102 --> AR_0305
-    AR_0102 --> AR_0306
-    AR_0102 --> AR_0307
-    AR_0102 --> AR_0308
-    AR_0102 --> AR_0309
-    AR_0102 --> AR_0317
-    AR_0102 --> AR_0318
-    AR_0102 --> AR_0503
-    AR_0102 --> AR_0601
-    AR_0102 --> AR_0603
-    AR_0102 --> AR_0857
-    AR_0102 --> AR_0863
-    AR_0102 --> AR_0875
-    AR_0102 --> AR_0876
-    AR_0102 --> AR_0901
-    AR_0102 --> AR_0905
-    AR_0102 --> AR_0908
-    AR_0102 --> AR_0909
-    AR_0103 --> AR_0105
-    AR_0103 --> AR_0202
-    AR_0103 --> AR_0204
-    AR_0103 --> AR_0305
-    AR_0103 --> AR_0306
-    AR_0103 --> AR_0307
-    AR_0103 --> AR_0308

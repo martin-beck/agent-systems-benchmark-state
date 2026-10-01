@@ -17,21 +17,21 @@ Generated from local Git and GitHub. Do not edit.
 | #365 | `dependabot/cargo/rcgen-0.14.10@8604b5977544` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump rcgen from 0.14.7 to 0.14.10 |
 | #366 | `dependabot/cargo/schemars-1.2.2@047b52b0b5b9` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump schemars from 1.0.4 to 1.2.2 |
 | #384 | `feature/ar-1508-platform-owned-authority-provider@2c70f81100ca` | `main` | DIRTY | - | feat(runtime): platform-owned authority provider |
-| #431 | `feature/ar-1604-command-output@985682bae9e4` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED: | feat(cli): standardize JSON output selector |
+| #431 | `feature/ar-1604-command-output@985682bae9e4` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): standardize JSON output selector |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36933728169 | `985682bae9e4` | pull_request | Emulated aarch64 portability | pending:- |
-| 36933728063 | `985682bae9e4` | pull_request | Agent Workflow Quality shadow | queued:- |
-| 36933728062 | `985682bae9e4` | pull_request | Rust verification | pending:- |
-| 36933728060 | `985682bae9e4` | pull_request | Hosted portability and native qualification | queued:- |
-| 36933727985 | `985682bae9e4` | pull_request | Credential-free benchmark path | queued:- |
-| 36933727984 | `985682bae9e4` | pull_request | Huawei MIT source headers | queued:- |
-| 36933727957 | `985682bae9e4` | pull_request | Fault assurance | queued:- |
-| 36933727946 | `985682bae9e4` | pull_request | Cross-repository development broker qualification | queued:- |
-| 36933727944 | `985682bae9e4` | pull_request | Formal assurance | pending:- |
-| 36933727929 | `985682bae9e4` | pull_request | Repository quality | pending:- |
+| 36933728169 | `985682bae9e4` | pull_request | Emulated aarch64 portability | completed:success |
+| 36933728063 | `985682bae9e4` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 36933728062 | `985682bae9e4` | pull_request | Rust verification | completed:success |
+| 36933728060 | `985682bae9e4` | pull_request | Hosted portability and native qualification | completed:success |
+| 36933727985 | `985682bae9e4` | pull_request | Credential-free benchmark path | completed:success |
+| 36933727984 | `985682bae9e4` | pull_request | Huawei MIT source headers | completed:success |
+| 36933727957 | `985682bae9e4` | pull_request | Fault assurance | completed:success |
+| 36933727946 | `985682bae9e4` | pull_request | Cross-repository development broker qualification | completed:success |
+| 36933727944 | `985682bae9e4` | pull_request | Formal assurance | completed:success |
+| 36933727929 | `985682bae9e4` | pull_request | Repository quality | completed:success |
 | 36933389901 | `d9df265db977` | pull_request | Hosted portability and native qualification | completed:success |
 | 36933389763 | `d9df265db977` | pull_request | Agent Workflow Quality shadow | completed:success |
