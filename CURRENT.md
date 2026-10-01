@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1598](tasks/AR-1598.md): Fresh-user development qualification | Prove install-to-wizard-to-benchmark-to-offline-comparison works for a fresh development user. | Run the disposable fresh-user default-dev qualification after the fault-matrix runner is released. | asb1603-acceptance |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |

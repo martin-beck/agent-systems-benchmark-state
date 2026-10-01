@@ -3538,11 +3538,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | asb1603-acceptance |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Prove install-to-wizard-to-benchmark-to-offline-comparison works for a fresh development user. |
@@ -4393,7 +4393,7 @@ flowchart LR
         AR_1595["AR-1595 - Done"]:::status_done
         AR_1596["AR-1596 - Done"]:::status_done
         AR_1597["AR-1597 - Done"]:::status_done
-        AR_1598["AR-1598 - In progress"]:::status_in_progress
+        AR_1598["AR-1598 - Done"]:::status_done
         AR_1599["AR-1599 - Done"]:::status_done
     end
     subgraph series_16["16 - Additional work"]
@@ -4530,3 +4530,4 @@ flowchart LR
     AR_0104 --> AR_0601
     AR_0104 --> AR_0603
     AR_0104 --> AR_0801
+    AR_0104 --> AR_0803
