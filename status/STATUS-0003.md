@@ -1,5 +1,29 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+    AR_0889 --> AR_0896
+    AR_0889 --> AR_1249
+    AR_0889 --> AR_1250
+    AR_0889 --> AR_1251
+    AR_0890 --> AR_0892
+    AR_0890 --> AR_0893
+    AR_0891 --> AR_0892
+    AR_0891 --> AR_0893
+    AR_0892 --> AR_0893
+    AR_0893 --> AR_0894
+    AR_0897 --> AR_0898
+    AR_0897 --> AR_0903
+    AR_0897 --> AR_1242
+    AR_0897 --> AR_1264
+    AR_0898 --> AR_0899
+    AR_0898 --> AR_0903
+    AR_0899 --> AR_0903
+    AR_0901 --> AR_0877
+    AR_0901 --> AR_0878
+    AR_0901 --> AR_0903
+    AR_0901 --> AR_0906
+    AR_0902 --> AR_0813
+    AR_0902 --> AR_0877
+    AR_0902 --> AR_0878
     AR_0902 --> AR_0903
     AR_0902 --> AR_0906
     AR_0902 --> AR_0909
@@ -918,6 +942,7 @@
     AR_1573 --> AR_1576
     AR_1574 --> AR_1577
     AR_1576 --> AR_1588
+    AR_1576 --> AR_1590
     AR_1588 --> AR_1589
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -1372,5 +1397,3 @@
 | [AR-1413](../tasks/AR-1413-long-horizon-performance-adapters.md) | [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md), [AR-1408](../tasks/AR-1408-literature-inventory-closure.md) | [AR-1410](../tasks/AR-1410-literature-selector-completeness.md) |
 | [AR-1414](../tasks/AR-1414-action-pin-followup.md) | [AR-1406](../tasks/AR-1406-action-pin-policy-migration.md) | [AR-1415](../tasks/AR-1415-literature-selector-total-coverage.md) |
 | [AR-1415](../tasks/AR-1415-literature-selector-total-coverage.md) | [AR-1410](../tasks/AR-1410-literature-selector-completeness.md), [AR-1414](../tasks/AR-1414-action-pin-followup.md) | [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md), [AR-1423](../tasks/AR-1423-literature-docs-registry-reconciliation.md) |
-| [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md) | [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md), [AR-1402](../tasks/AR-1402-literature-cli-dispatch-integration.md), [AR-1415](../tasks/AR-1415-literature-selector-total-coverage.md) | [AR-1417](../tasks/AR-1417-interactive-stateful-literature-workloads.md), [AR-1418](../tasks/AR-1418-tool-use-reliability-safety-workloads.md), [AR-1421](../tasks/AR-1421-protected-main-literature-merge-race.md), [AR-1424](../tasks/AR-1424-all-literature-selector-campaign.md), [AR-1430](../tasks/AR-1430-literature-workload-catalog-gap-closure.md) |
-| [AR-1417](../tasks/AR-1417-interactive-stateful-literature-workloads.md) | [AR-1408](../tasks/AR-1408-literature-inventory-closure.md), [AR-1416](../tasks/AR-1416-literature-mock-cross-product.md) | [AR-1419](../tasks/AR-1419-literature-framework-boundaries.md), [AR-1420](../tasks/AR-1420-literature-workload-campaign-integration.md), [AR-1425](../tasks/AR-1425-literature-workload-release-readiness.md) |

@@ -3422,6 +3422,20 @@
 | Summary | Qualify ASB development-channel identity, metadata integrity, and cleanup failure paths. |
 | Next action | Promote after AR-1588; implement the development-channel provenance envelope and adversarial fault matrix without weakening stable verification. |
 
+### AR-1590 — Inherited-fd cross-repository qualification
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Complete real ASB-to-asb-tui inherited-fd broker qualification after the PTY seam exists. |
+| Next action | Promote after the asb-tui PTY seam is released; complete non-ignored exact-binary inherited-fd wire qualification and merge/release the bridge successor. |
+
 
 ## Dependency graph
 
@@ -4077,6 +4091,7 @@ flowchart LR
         AR_1578["AR-1578 - Done"]:::status_done
         AR_1588["AR-1588 - Planned"]:::status_planned
         AR_1589["AR-1589 - Planned"]:::status_planned
+        AR_1590["AR-1590 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4659,27 +4674,3 @@ flowchart LR
     AR_0888 --> AR_1250
     AR_0888 --> AR_1251
     AR_0889 --> AR_0890
-    AR_0889 --> AR_0896
-    AR_0889 --> AR_1249
-    AR_0889 --> AR_1250
-    AR_0889 --> AR_1251
-    AR_0890 --> AR_0892
-    AR_0890 --> AR_0893
-    AR_0891 --> AR_0892
-    AR_0891 --> AR_0893
-    AR_0892 --> AR_0893
-    AR_0893 --> AR_0894
-    AR_0897 --> AR_0898
-    AR_0897 --> AR_0903
-    AR_0897 --> AR_1242
-    AR_0897 --> AR_1264
-    AR_0898 --> AR_0899
-    AR_0898 --> AR_0903
-    AR_0899 --> AR_0903
-    AR_0901 --> AR_0877
-    AR_0901 --> AR_0878
-    AR_0901 --> AR_0903
-    AR_0901 --> AR_0906
-    AR_0902 --> AR_0813
-    AR_0902 --> AR_0877
-    AR_0902 --> AR_0878
