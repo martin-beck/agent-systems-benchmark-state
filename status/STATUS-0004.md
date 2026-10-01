@@ -131,17 +131,12 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1566](../tasks/AR-1566.md): ASB development broker handoff integration | ar1566-broker-handoff | Wire ASB development launch through the authenticated asb-tui broker handoff seam. | Promote and implement the development broker handoff seam after the asb-tui descriptor contract is available; add exact-head integration tests. |
 | P0 | [AR-1567](../tasks/AR-1567.md): ASB development trusted toolchain discovery | ar1567-toolchain-discovery | Implement trusted development cargo discovery | Obtain independent review and hosted green checks for PR #401 at 97929864fc7232d671a5b63dcb77261a1742fd97 |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1566](../tasks/AR-1566.md): ASB development broker handoff integration | Unclaimed | Wire ASB development launch through the authenticated asb-tui broker handoff seam. | Promote and implement the development broker handoff seam after the asb-tui descriptor contract is available; add exact-head integration tests. |
 
 ### Blocked (80)
 
