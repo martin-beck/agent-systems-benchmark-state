@@ -3328,11 +3328,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1573-control-bridge |
 | Parent | None |
 | Children | None |
 | Summary | Expose the ASB-side development control producer bridge required by the asb-tui adopted stream. |
@@ -4000,7 +4000,7 @@ flowchart LR
         AR_1570["AR-1570 - Done"]:::status_done
         AR_1571["AR-1571 - Blocked"]:::status_blocked
         AR_1572["AR-1572 - In progress"]:::status_in_progress
-        AR_1573["AR-1573 - Open"]:::status_open
+        AR_1573["AR-1573 - In progress"]:::status_in_progress
         AR_1574["AR-1574 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
@@ -4721,4 +4721,3 @@ flowchart LR
     AR_1060 --> AR_1024
     AR_1060 --> AR_1025
     AR_1060 --> AR_1160
-    AR_1060 --> AR_1227

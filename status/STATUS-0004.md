@@ -147,17 +147,12 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1572](../tasks/AR-1572.md): ASB approved development toolchain runner | ar1572-toolchain-runner | Provide the approved private toolchain runner needed for credential-free ASB development setup. | Promote and provide a private, reproducible development toolchain runner accepted by the ASB resolver for clean qualification and first-time setup. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1573](../tasks/AR-1573.md): ASB development control producer bridge | Unclaimed | Expose the ASB-side development control producer bridge required by the asb-tui adopted stream. | Promote and expose a bounded ASB development producer-side control handshake/backend/result bridge compatible with asb-tui broker adoption. |
+| P0 | [AR-1573](../tasks/AR-1573.md): ASB development control producer bridge | ar1573-control-bridge | Expose the ASB-side development control producer bridge required by the asb-tui adopted stream. | Promote and expose a bounded ASB development producer-side control handshake/backend/result bridge compatible with asb-tui broker adoption. |
 
 ### Blocked (82)
 
