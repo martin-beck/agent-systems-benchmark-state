@@ -1,5 +1,9 @@
 # AR-1590 — inherited-fd cross-repository qualification
 
+Prerequisite: ASB AR-1592 must first publish the BenchmarkCatalog and
+MeasurementCatalog control contract and real backend responses. Do not treat
+the current Capabilities-only launch as a passing cross-project journey.
+
 Finish the ASB side of the real development broker journey after the
 asb-tui PTY handoff seam is available. Launch the exact pinned asb-tui binary
 through ASB's `launch_development_broker` path, capture and decode its actual
