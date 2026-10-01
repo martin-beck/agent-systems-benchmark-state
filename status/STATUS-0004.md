@@ -194,7 +194,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1597](../tasks/AR-1597.md): Fault matrix and deterministic runner | coordinator-pr420-review | Exercise all setup, recording, replay, benchmark, and recovery failure paths with bounded evidence. | Await fresh independent review and all hosted checks for PR #420 exact head dd6d9b6; merge with protected two-parent topology only after approval, then verify post-merge and release. |
+| P0 | [AR-1597](../tasks/AR-1597.md): Fault matrix and deterministic runner | coordinator-pr420-review | Exercise all setup, recording, replay, benchmark, and recovery failure paths with bounded evidence. | Await fresh independent review and all hosted checks for PR #420 exact head 39af93e9 on signed main 677d9905; merge with merge_pr.py only after approval, then verify post-merge and release. |
 
 ### Blocked (82)
 
