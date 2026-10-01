@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1614](tasks/AR-1614.md): Immutable dev-channel TUI bundle and installability | Make the ASB dev channel resolve and install an exact public TUI bundle on a clean machine. | Promote after AR-1604; implement the paired immutable channel manifest, router handoff, and clean-machine install qualification. | asb1614-bundle |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -118,9 +112,10 @@ Never edit this file directly.
 | P0 | [AR-1545](tasks/AR-1545.md): AR-1307 formal-input readiness repair | Audit and repair the AR-1307 formal-input handoff after development runner integration, without executing qualification. | Formal-only work: after AR-1535 supplies reviewed inputs, inventory and independently verify every exact AR-1307 formal input for AR-1522. Do not block or alter the completed unsigned-development path. | - |
 | P0 | [AR-1546](tasks/AR-1546.md): AR-1308 formal capacity-input readiness repair | Audit and repair the AR-1308 capacity/input handoff after diagnostic QEMU integration, without executing qualification. | Formal-only work: after AR-1531 and AR-1536, verify the exact 8 GiB/8 GiB fixture and AR-1308 formal inputs for AR-1522. Do not block or alter the completed unsigned-development path. | - |
 | P0 | [AR-1613](tasks/AR-1613.md): Current-main dev-channel consumption and quickstart qualification | Prove a fresh clone can consume the published dev channel and complete the shortest install-to-offline-comparison journey. | Promote after paired AR-1614 and AR-1615 releases; run the disposable exact-head current-main journey and record paired evidence. | - |
-| P0 | [AR-1615](tasks/AR-1615.md): Live ASB-TUI control handshake and lifecycle repair | Final qualification of the installed TUI against the live ASB control route after lifecycle and retry/compare operations exist. | Promote after AR-1614, AR-1617, and AR-1618; execute exact-SHA live handshake and end-to-end lifecycle qualification. | - |
+| P0 | [AR-1615](tasks/AR-1615.md): Live ASB-TUI control handshake and lifecycle repair | Final qualification of the installed TUI against the live ASB control route after lifecycle and retry/compare operations exist. | Promote after AR-1614, AR-1617, AR-1618, and AR-1619; execute exact-SHA live handshake and end-to-end lifecycle qualification. | - |
 | P0 | [AR-1617](tasks/AR-1617.md): Explicit cassette seal, reopen, and removal operations | Add typed seal, interrupted-capture reopen, and bounded development cassette removal across ASB and TUI. | Promote after AR-1614; implement versioned backend/TUI lifecycle operations and stale/terminal negatives. | - |
 | P0 | [AR-1618](tasks/AR-1618.md): Operator retry and live/offline comparison dispatch | Expose bounded typed benchmark retry/repeat and digest-bound live/offline comparison actions in ASB and TUI. | Promote after AR-1614; implement paired retry/comparison control and stale/idempotency negatives. | - |
+| P0 | [AR-1619](tasks/AR-1619.md): Cross-repository lifecycle protocol repair | Align ASB and TUI lifecycle schemas and executable dispatch, repair retry idempotency and cassette removal, and qualify the paired implementation. | Repair PRs 433 and 213 from independent review findings before merge. | - |
 | P1 | [AR-0808](tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. | - |
 | P1 | [AR-0809](tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. | - |
 | P1 | [AR-0810](tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project's GitHub Pages site. | - |

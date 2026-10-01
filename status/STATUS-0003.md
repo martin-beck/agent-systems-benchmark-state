@@ -1,5 +1,18 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+        AR_1609["AR-1609 - Done"]:::status_done
+        AR_1611["AR-1611 - Done"]:::status_done
+        AR_1612["AR-1612 - Done"]:::status_done
+        AR_1613["AR-1613 - Planned"]:::status_planned
+        AR_1614["AR-1614 - Done"]:::status_done
+        AR_1615["AR-1615 - Planned"]:::status_planned
+        AR_1617["AR-1617 - Planned"]:::status_planned
+        AR_1618["AR-1618 - Planned"]:::status_planned
+        AR_1619["AR-1619 - Planned"]:::status_planned
+    end
+    AR_0001 --> AR_0002
+    AR_0001 --> AR_0003
+    AR_0001 --> AR_0101
     AR_0001 --> AR_0501
     AR_0001 --> AR_0701
     AR_0002 --> AR_0004
@@ -1586,7 +1599,10 @@
     AR_1614 --> AR_1618
     AR_1615 --> AR_1613
     AR_1617 --> AR_1615
+    AR_1617 --> AR_1619
     AR_1618 --> AR_1615
+    AR_1618 --> AR_1619
+    AR_1619 --> AR_1615
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -2001,4 +2017,3 @@
 | [AR-1374](../tasks/AR-1374-cli-live-dispatch.md) | [AR-1328](../tasks/AR-1328-openrouter-free-model-config.md), [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1373](../tasks/AR-1373-authenticated-receipt-source.md) | [AR-1375](../tasks/AR-1375-live-control-dispatch-source.md) |
 | [AR-1375](../tasks/AR-1375-live-control-dispatch-source.md) | [AR-1373](../tasks/AR-1373-authenticated-receipt-source.md), [AR-1374](../tasks/AR-1374-cli-live-dispatch.md) | None |
 | [AR-1376](../tasks/AR-1376-runtime-live-adapter.md) | [AR-1362](../tasks/AR-1362-runtime-authority-enrollment-store.md), [AR-1364](../tasks/AR-1364-authenticated-chain-enrollment.md), [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md), [AR-1373](../tasks/AR-1373-authenticated-receipt-source.md) | None |
-| [AR-1377](../tasks/AR-1377-runtime-chain-store.md) | [AR-1288](../tasks/AR-1288-certificate-chain-authz.md), [AR-1364](../tasks/AR-1364-authenticated-chain-enrollment.md), [AR-1373](../tasks/AR-1373-authenticated-receipt-source.md) | [AR-1378](../tasks/AR-1378-live-control-adapter.md), [AR-1379](../tasks/AR-1379-live-dispatch-integration.md), [AR-1380](../tasks/AR-1380-runtime-scheduler-composition.md), [AR-1381](../tasks/AR-1381-live-cli-scheduler-wiring.md), [AR-1382](../tasks/AR-1382-authenticated-live-execution-source.md), [AR-1383](../tasks/AR-1383-runtime-authority-profile.md), [AR-1384](../tasks/AR-1384-runtime-bootstrap-materialization.md), [AR-1385](../tasks/AR-1385-runtime-live-dispatch-source.md), [AR-1386](../tasks/AR-1386-live-cli-dispatch-integration.md), [AR-1387](../tasks/AR-1387-runtime-control-cli-bridge.md), [AR-1388](../tasks/AR-1388-runtime-authority-materializer.md) |

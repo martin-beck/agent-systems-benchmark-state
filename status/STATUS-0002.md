@@ -3748,11 +3748,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | asb1614-bundle |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Make the ASB dev channel resolve and install an exact public TUI bundle on a clean machine. |
@@ -3770,7 +3770,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Final qualification of the installed TUI against the live ASB control route after lifecycle and retry/compare operations exist. |
-| Next action | Promote after AR-1614, AR-1617, and AR-1618; execute exact-SHA live handshake and end-to-end lifecycle qualification. |
+| Next action | Promote after AR-1614, AR-1617, AR-1618, and AR-1619; execute exact-SHA live handshake and end-to-end lifecycle qualification. |
 
 ### AR-1617 — Explicit cassette seal, reopen, and removal operations
 
@@ -3799,6 +3799,20 @@
 | Children | None |
 | Summary | Expose bounded typed benchmark retry/repeat and digest-bound live/offline comparison actions in ASB and TUI. |
 | Next action | Promote after AR-1614; implement paired retry/comparison control and stale/idempotency negatives. |
+
+### AR-1619 — Cross-repository lifecycle protocol repair
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Align ASB and TUI lifecycle schemas and executable dispatch, repair retry idempotency and cassette removal, and qualify the paired implementation. |
+| Next action | Repair PRs 433 and 213 from independent review findings before merge. |
 
 
 ## Dependency graph
@@ -4477,15 +4491,3 @@ flowchart LR
         AR_1606["AR-1606 - Done"]:::status_done
         AR_1607["AR-1607 - Done"]:::status_done
         AR_1608["AR-1608 - Done"]:::status_done
-        AR_1609["AR-1609 - Done"]:::status_done
-        AR_1611["AR-1611 - Done"]:::status_done
-        AR_1612["AR-1612 - Done"]:::status_done
-        AR_1613["AR-1613 - Planned"]:::status_planned
-        AR_1614["AR-1614 - In progress"]:::status_in_progress
-        AR_1615["AR-1615 - Planned"]:::status_planned
-        AR_1617["AR-1617 - Planned"]:::status_planned
-        AR_1618["AR-1618 - Planned"]:::status_planned
-    end
-    AR_0001 --> AR_0002
-    AR_0001 --> AR_0003
-    AR_0001 --> AR_0101
