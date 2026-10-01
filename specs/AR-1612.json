@@ -1,0 +1,1 @@
+{"id":"AR-1612","revision":1,"title":"Selected-workload recording campaign controls","required_evidence":["single selection","all selection","invalid selection rollback","sealed cassette","offline replay with egress denial"],"development_mode":{"missing_authentication":"warning","missing_signatures":"warning","missing_key_management":"warning"}}
