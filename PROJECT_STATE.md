@@ -17,21 +17,21 @@ Generated from local Git and GitHub. Do not edit.
 | #365 | `dependabot/cargo/rcgen-0.14.10@8604b5977544` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump rcgen from 0.14.7 to 0.14.10 |
 | #366 | `dependabot/cargo/schemars-1.2.2@047b52b0b5b9` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump schemars from 1.0.4 to 1.2.2 |
 | #384 | `feature/ar-1508-platform-owned-authority-provider@2c70f81100ca` | `main` | DIRTY | - | feat(runtime): platform-owned authority provider |
-| #401 | `feature/ar-1567-trusted-toolchain@bac495d0871c` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED: | feat(cli): discover trusted development cargo |
+| #401 | `feature/ar-1567-trusted-toolchain@bac495d0871c` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, QUEUED:, QUEUED:, QUEUED:, QUEUED: | feat(cli): discover trusted development cargo |
 | #403 | `feature/ar-1570-dynamic-broker-handoff@f0b55e9f9e30` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(cli): hand off dynamic development broker descriptor |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 36797393797 | `bac495d0871c` | pull_request | Rust verification | pending:- |
-| 36797393794 | `bac495d0871c` | pull_request | Credential-free benchmark path | queued:- |
-| 36797393787 | `bac495d0871c` | pull_request | Formal assurance | pending:- |
-| 36797393779 | `bac495d0871c` | pull_request | Agent Workflow Quality shadow | queued:- |
-| 36797393777 | `bac495d0871c` | pull_request | Huawei MIT source headers | queued:- |
-| 36797393774 | `bac495d0871c` | pull_request | Emulated aarch64 portability | pending:- |
-| 36797393770 | `bac495d0871c` | pull_request | Repository quality | pending:- |
-| 36797393765 | `bac495d0871c` | pull_request | Hosted portability and native qualification | queued:- |
+| 36797393797 | `bac495d0871c` | pull_request | Rust verification | queued:- |
+| 36797393794 | `bac495d0871c` | pull_request | Credential-free benchmark path | in_progress:- |
+| 36797393787 | `bac495d0871c` | pull_request | Formal assurance | queued:- |
+| 36797393779 | `bac495d0871c` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 36797393777 | `bac495d0871c` | pull_request | Huawei MIT source headers | completed:success |
+| 36797393774 | `bac495d0871c` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 36797393770 | `bac495d0871c` | pull_request | Repository quality | queued:- |
+| 36797393765 | `bac495d0871c` | pull_request | Hosted portability and native qualification | in_progress:- |
 | 36797393764 | `bac495d0871c` | pull_request | Fault assurance | queued:- |
 | 36797373853 | `f0b55e9f9e30` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 36797373795 | `f0b55e9f9e30` | pull_request | Huawei MIT source headers | completed:success |
