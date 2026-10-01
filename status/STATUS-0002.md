@@ -3548,6 +3548,20 @@
 | Summary | Prove install-to-wizard-to-benchmark-to-offline-comparison works for a fresh development user. |
 | Next action | Run the disposable fresh-user default-dev qualification after the fault-matrix runner is released. |
 
+### AR-1599 — Development install provenance and toolchain repair
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair fresh-user dev installation provenance, toolchain discovery, and atomic publication. |
+| Next action | Promote after the dependency releases and repair the current-main dev materializer/toolchain discovery before TUI qualification. |
+
 
 ## Dependency graph
 
@@ -4212,6 +4226,7 @@ flowchart LR
         AR_1596["AR-1596 - Done"]:::status_done
         AR_1597["AR-1597 - In progress"]:::status_in_progress
         AR_1598["AR-1598 - Planned"]:::status_planned
+        AR_1599["AR-1599 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4591,26 +4606,3 @@ flowchart LR
     AR_0701 --> AR_0703
     AR_0701 --> AR_0704
     AR_0701 --> AR_0707
-    AR_0701 --> AR_0820
-    AR_0701 --> AR_0848
-    AR_0701 --> AR_1007
-    AR_0702 --> AR_0807
-    AR_0702 --> AR_0813
-    AR_0702 --> AR_0816
-    AR_0702 --> AR_0903
-    AR_0702 --> AR_0907
-    AR_0702 --> AR_1006
-    AR_0704 --> AR_0705
-    AR_0704 --> AR_0706
-    AR_0801 --> AR_0802
-    AR_0801 --> AR_0803
-    AR_0801 --> AR_0808
-    AR_0801 --> AR_0820
-    AR_0801 --> AR_0840
-    AR_0801 --> AR_0842
-    AR_0801 --> AR_0847
-    AR_0801 --> AR_0849
-    AR_0801 --> AR_0869
-    AR_0802 --> AR_0808
-    AR_0802 --> AR_0809
-    AR_0802 --> AR_0872
