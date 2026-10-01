@@ -3392,7 +3392,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Recover the existing workspace coverage gate that currently blocks otherwise correct ASB transport changes. |
-| Next action | Run exact workspace coverage gate on PR #407; add only concrete stable control/transport tests needed to reach 90&#37;, then merge/release or report measured blocker. |
+| Next action | Run exact workspace coverage gate on PR #407 using /srv/data target; continue only with concrete stable tests needed for 90&#37;, then merge/release or report measured blocker. |
 
 
 ## Dependency graph
