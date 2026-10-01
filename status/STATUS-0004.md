@@ -156,17 +156,12 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1576](../tasks/AR-1576.md): ASB development bootstrap projection | ar1576-bootstrap-projection | Make the development control backend satisfy the current asb-tui bootstrap projection without production credentials. | Promote and implement the development-only bootstrap projection contract required by current asb-tui startup. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1577](../tasks/AR-1577.md): ASB interactive development supervision | Unclaimed | Keep successful development TUI sessions interactive while bounding handshake and cleanup failure paths. | Promote after AR-1574 transport wiring is reviewed; repair interactive lifetime supervision and cleanup semantics. |
+| P0 | [AR-1577](../tasks/AR-1577.md): ASB interactive development supervision | ar1577-interactive-supervision | Keep successful development TUI sessions interactive while bounding handshake and cleanup failure paths. | Promote after AR-1574 transport wiring is reviewed; repair interactive lifetime supervision and cleanup semantics. |
 
 ### Blocked (82)
 
