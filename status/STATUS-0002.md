@@ -3380,6 +3380,20 @@
 | Summary | Keep successful development TUI sessions interactive while bounding handshake and cleanup failure paths. |
 | Next action | Promote after AR-1574 transport wiring is reviewed; repair interactive lifetime supervision and cleanup semantics. |
 
+### AR-1578 — ASB workspace coverage recovery
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Recover the existing workspace coverage gate that currently blocks otherwise correct ASB transport changes. |
+| Next action | Promote and assign an isolated worker to recover meaningful workspace coverage to the configured 90&#37; floor without weakening the gate. |
+
 
 ## Dependency graph
 
@@ -4032,6 +4046,7 @@ flowchart LR
         AR_1574["AR-1574 - In progress"]:::status_in_progress
         AR_1576["AR-1576 - In progress"]:::status_in_progress
         AR_1577["AR-1577 - Planned"]:::status_planned
+        AR_1578["AR-1578 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4685,26 +4700,3 @@ flowchart LR
     AR_1017 --> AR_1021
     AR_1017 --> AR_1022
     AR_1017 --> AR_1030
-    AR_1018 --> AR_1019
-    AR_1018 --> AR_1021
-    AR_1018 --> AR_1022
-    AR_1018 --> AR_1199
-    AR_1018 --> AR_1498
-    AR_1019 --> AR_1020
-    AR_1019 --> AR_1021
-    AR_1019 --> AR_1022
-    AR_1019 --> AR_1199
-    AR_1019 --> AR_1498
-    AR_1020 --> AR_1021
-    AR_1020 --> AR_1022
-    AR_1020 --> AR_1199
-    AR_1020 --> AR_1498
-    AR_1021 --> AR_1022
-    AR_1022 --> AR_1024
-    AR_1022 --> AR_1025
-    AR_1022 --> AR_1060
-    AR_1023 --> AR_1024
-    AR_1023 --> AR_1025
-    AR_1023 --> AR_1036
-    AR_1023 --> AR_1038
-    AR_1023 --> AR_1060
