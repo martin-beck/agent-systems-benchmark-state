@@ -3580,15 +3580,15 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1199-channel-publication |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Qualify current-main dev-channel publication and exact provenance across ASB and asb-tui. |
-| Next action | Exact-head qualification receipt recorded; obtain independent review of evidence, then release only after coordinator review. |
+| Next action | Release admission after independent review and acceptance receipt. |
 
 ### AR-1602 — Cassette lifecycle control contract
 
@@ -4273,7 +4273,7 @@ flowchart LR
     subgraph series_16["16 - Additional work"]
         direction TB
         AR_1600["AR-1600 - Done"]:::status_done
-        AR_1601["AR-1601 - In progress"]:::status_in_progress
+        AR_1601["AR-1601 - Done"]:::status_done
         AR_1602["AR-1602 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
@@ -4594,3 +4594,7 @@ flowchart LR
     AR_0503 --> AR_0512
     AR_0503 --> AR_0513
     AR_0503 --> AR_0514
+    AR_0503 --> AR_0516
+    AR_0503 --> AR_0517
+    AR_0503 --> AR_0518
+    AR_0503 --> AR_0520

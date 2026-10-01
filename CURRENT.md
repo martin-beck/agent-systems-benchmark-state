@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1601](tasks/AR-1601.md): Development-channel publication and provenance qualification | Qualify current-main dev-channel publication and exact provenance across ASB and asb-tui. | Exact-head qualification receipt recorded; obtain independent review of evidence, then release only after coordinator review. | ar1199-channel-publication |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |

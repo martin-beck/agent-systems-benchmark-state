@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| [AR-1393](../tasks/AR-1393-local-provider-authority-provisioning.md) | [AR-1339](../tasks/AR-1339-live-provider-egress-backend.md), [AR-1340](../tasks/AR-1340-attested-live-relay-namespace-handoff.md), [AR-1341](../tasks/AR-1341-runtime-observed-namespace-repair.md), [AR-1342](../tasks/AR-1342-live-relay-factory-cli-integration.md), [AR-1366](../tasks/AR-1366-runtime-dispatch-consumer.md), [AR-1373](../tasks/AR-1373-authenticated-receipt-source.md), [AR-1385](../tasks/AR-1385-runtime-live-dispatch-source.md), [AR-1388](../tasks/AR-1388-runtime-authority-materializer.md) | [AR-1432](../tasks/AR-1432-local-openrouter-execution-bridge.md), [AR-1433](../tasks/AR-1433-runtime-mock-attempt-backend.md), [AR-1434](../tasks/AR-1434-runtime-local-mock-attempt-adapter.md) |
 | [AR-1394](../tasks/AR-1394-literature-workload-registry.md) | [AR-0404](../tasks/AR-0404-extended-workloads.md), [AR-0405](../tasks/AR-0405-performance-workloads.md), [AR-0406](../tasks/AR-0406-evolving-workloads.md), [AR-1007](../tasks/AR-1007-benchmark-validity.md) | [AR-1395](../tasks/AR-1395-literature-workload-adapters.md), [AR-1399](../tasks/AR-1399-literature-workload-registry-completeness.md) |
 | [AR-1395](../tasks/AR-1395-literature-workload-adapters.md) | [AR-1394](../tasks/AR-1394-literature-workload-registry.md) | [AR-1396](../tasks/AR-1396-literature-workload-selection.md), [AR-1401](../tasks/AR-1401-literature-local-mock-execution.md) |
 | [AR-1396](../tasks/AR-1396-literature-workload-selection.md) | [AR-1395](../tasks/AR-1395-literature-workload-adapters.md), [AR-1399](../tasks/AR-1399-literature-workload-registry-completeness.md) | [AR-1400](../tasks/AR-1400-literature-catalog-activation.md) |
@@ -199,12 +198,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1601](../tasks/AR-1601.md): Development-channel publication and provenance qualification | ar1199-channel-publication | Qualify current-main dev-channel publication and exact provenance across ASB and asb-tui. | Exact-head qualification receipt recorded; obtain independent review of evidence, then release only after coordinator review. |
-
 ### Blocked (82)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -354,7 +347,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (443)
+### Done (444)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -553,3 +546,6 @@
 | P0 | [AR-1497](../tasks/AR-1497-ar1495-topology-repair.md): AR-1495 protected-main topology repair | Unclaimed | Repair AR-1495 protected-main synchronization topology without changing product semantics. | Monitor eight post-merge workflows for exact protected-main merge 45df6590; release AR-1497 only after all terminal SUCCESS. |
 | P0 | [AR-1498](../tasks/AR-1498-authenticated-lifecycle-executor.md): Authenticated lifecycle artifact executor | Unclaimed | PR 376 merged at protected main exact merge commit | Verify origin/main contains merge 9231a660675d4b01277a60b75d838d69c6bba917, run post-merge applicable smoke/build checks, then release AR-1498 durably. |
 | P0 | [AR-1499](../tasks/AR-1499-development-credential-enrollment.md): Development credential enrollment contract | Unclaimed | Repair merged development credential selection binding | Released; no further AR-1499 action. PR #378 merged at protected main ee8ea15; exact main tree and post-merge smoke verified, and all eight post-merge workflows passed. |
+| P0 | [AR-1500](../tasks/AR-1500-development-credential-provider-fixture.md): Development credential/provider lifecycle fixture | Unclaimed | Qualify generated development credentials through provider, capture and replay flows. | AR-1500 complete: PR #379 merged at exact checked head; post-merge main tree equality and offline fixture smoke passed. Continue dependent ARs. |
+| P0 | [AR-1502](../tasks/AR-1502-runtime-bootstrap-authority.md): Runtime-owned bootstrap authority | Unclaimed | Runtime-owned authenticated bootstrap authority merged and verified on main. | No further action; release AR-1502 after protected merge and exact-head post-merge workflows. |
+| P0 | [AR-1505](../tasks/AR-1505-control-plane-platform-authority.md): Control-plane platform authority/bootstrap protocol | Unclaimed | Provide an authenticated platform protocol that issues private runtime bootstrap inputs to ASB. | No further AR-1505 action; merge and post-merge assurance complete. |
