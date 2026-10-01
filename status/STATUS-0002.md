@@ -3602,7 +3602,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Expose real cassette identity, sealing, and replay dispatch to the TUI without fabricated continuity. |
-| Next action | Promote after the current ASB lifecycle repairs are released; implement and qualify the additive cassette record/seal/replay control contract. |
+| Next action | Independent review required for PR #424 at ac04977b5f69e69eade48158348ea329863443b8; hosted checks pending. |
 
 
 ## Dependency graph
@@ -4583,3 +4583,5 @@ flowchart LR
     AR_0502 --> AR_1005
     AR_0502 --> AR_1330
     AR_0503 --> AR_0314
+    AR_0503 --> AR_0504
+    AR_0503 --> AR_0505
