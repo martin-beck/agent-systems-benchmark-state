@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1601](tasks/AR-1601.md): Development-channel publication and provenance qualification | Qualify current-main dev-channel publication and exact provenance across ASB and asb-tui. | Promote after ASB AR-1600 and the paired TUI channel surface are released; run the exact-head dev-channel publication and provenance qualification. | - |
+| P0 | [AR-1601](tasks/AR-1601.md): Development-channel publication and provenance qualification | Qualify current-main dev-channel publication and exact provenance across ASB and asb-tui. | Promote after ASB AR-1600 and the paired TUI channel surface are released; run the exact-head dev-channel publication and provenance qualification. | ar1199-channel-publication |
 
 ## Blocked
 
