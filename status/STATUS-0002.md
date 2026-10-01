@@ -3594,11 +3594,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1602-cassette-control |
 | Parent | None |
 | Children | None |
 | Summary | Expose real cassette identity, sealing, and replay dispatch to the TUI without fabricated continuity. |
@@ -4274,7 +4274,7 @@ flowchart LR
         direction TB
         AR_1600["AR-1600 - In progress"]:::status_in_progress
         AR_1601["AR-1601 - Planned"]:::status_planned
-        AR_1602["AR-1602 - Open"]:::status_open
+        AR_1602["AR-1602 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4583,5 +4583,3 @@ flowchart LR
     AR_0502 --> AR_1005
     AR_0502 --> AR_1330
     AR_0503 --> AR_0314
-    AR_0503 --> AR_0504
-    AR_0503 --> AR_0505

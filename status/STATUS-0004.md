@@ -199,17 +199,12 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1600](../tasks/AR-1600.md): Bounded development build-artifact staging | ar1199-router-impl | Keep normal development TUI builds within explicit source and artifact quotas. | PR #423 exact signed head 714bbcf is based on protected main; await fresh independent review and all hosted checks, then merge/release. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1602](../tasks/AR-1602.md): Cassette lifecycle control contract | Unclaimed | Expose real cassette identity, sealing, and replay dispatch to the TUI without fabricated continuity. | Promote after the current ASB lifecycle repairs are released; implement and qualify the additive cassette record/seal/replay control contract. |
+| P0 | [AR-1602](../tasks/AR-1602.md): Cassette lifecycle control contract | ar1602-cassette-control | Expose real cassette identity, sealing, and replay dispatch to the TUI without fabricated continuity. | Promote after the current ASB lifecycle repairs are released; implement and qualify the additive cassette record/seal/replay control contract. |
 
 ### Blocked (82)
 
@@ -557,3 +552,4 @@
 | P0 | [AR-1493](../tasks/AR-1493-release-authority-enrollment-handoff.md): Release-authority enrollment handoff | Unclaimed | Define and validate the external release-authority enrollment and signed-bundle verification handoff. | Reconcile and doctor state, then release AR-1493 done ownerless with complete merge and post-merge evidence. |
 | P0 | [AR-1495](../tasks/AR-1495-development-unverified-bundle-profile.md): Development-only unverified bundle profile | Unclaimed | Add an explicit development-only unverified bundle profile without weakening production or customer-release verification. | Monitor PR #373 fresh exact signed+DCO head 4d63a66; merge only after all required checks and independent review are green. |
 | P0 | [AR-1496](../tasks/AR-1496-runtime-owned-provider-capture-control.md): Runtime-owned provider capture and control activation | Unclaimed | Complete runtime-owned provider capture, tuple cassette reconciliation and verified offline activation required by the setup wizard. | Done: PR #375 merged at protected main 8c53a4a62ecaa6fecc9eb195a105fc368a3395c8; independent review passed and all seven post-merge workflows succeeded. |
+| P0 | [AR-1497](../tasks/AR-1497-ar1495-topology-repair.md): AR-1495 protected-main topology repair | Unclaimed | Repair AR-1495 protected-main synchronization topology without changing product semantics. | Monitor eight post-merge workflows for exact protected-main merge 45df6590; release AR-1497 only after all terminal SUCCESS. |
