@@ -8,12 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1590](tasks/AR-1590.md): Inherited-fd cross-repository qualification | Complete real ASB-to-asb-tui inherited-fd broker qualification after the PTY seam exists. | Await coverage/Rust/portability repair checks, then fresh exact-head review; ASB AR-1592 and AR-1593 catalog/version alignment remain prerequisites before release. | ar1590-inherited-fd-bridge |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1595](tasks/AR-1595.md): Development setup capability contract | Expose provider, authentication, model, agent, and default-selection capabilities for the development wizard. | Implement the versioned development setup capability contract after the catalog alignment releases. | - |
+| P0 | [AR-1595](tasks/AR-1595.md): Development setup capability contract | Expose provider, authentication, model, agent, and default-selection capabilities for the development wizard. | Implement the versioned development setup capability contract after the catalog alignment releases. | ar1595-development-setup |
 
 ## Blocked
 

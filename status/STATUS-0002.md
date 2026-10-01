@@ -3496,11 +3496,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1595-development-setup |
 | Parent | None |
 | Children | None |
 | Summary | Expose provider, authentication, model, agent, and default-selection capabilities for the development wizard. |
@@ -4208,7 +4208,7 @@ flowchart LR
         AR_1592["AR-1592 - Done"]:::status_done
         AR_1593["AR-1593 - Done"]:::status_done
         AR_1594["AR-1594 - Done"]:::status_done
-        AR_1595["AR-1595 - Open"]:::status_open
+        AR_1595["AR-1595 - In progress"]:::status_in_progress
         AR_1596["AR-1596 - Planned"]:::status_planned
         AR_1597["AR-1597 - Planned"]:::status_planned
         AR_1598["AR-1598 - Planned"]:::status_planned
@@ -4613,4 +4613,3 @@ flowchart LR
     AR_0801 --> AR_0869
     AR_0802 --> AR_0808
     AR_0802 --> AR_0809
-    AR_0802 --> AR_0872
