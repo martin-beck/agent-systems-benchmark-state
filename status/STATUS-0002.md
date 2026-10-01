@@ -3296,6 +3296,20 @@
 | Summary | Implement dynamic development broker handoff |
 | Next action | Independent review and hosted green checks for PR #403 at f0b55e9f9e3056003b5bf949fc54ea7425c494ab |
 
+### AR-1571 — ASB development broker channel transport handoff
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Provide the bounded broker channel transport that completes ASB to asb-tui launch handoff. |
+| Next action | Promote and implement the ASB-side inherited broker channel/socketpair handoff required by asb-tui run --broker --development. |
+
 
 ## Dependency graph
 
@@ -3942,6 +3956,7 @@ flowchart LR
         AR_1568["AR-1568 - Done"]:::status_done
         AR_1569["AR-1569 - Done"]:::status_done
         AR_1570["AR-1570 - Done"]:::status_done
+        AR_1571["AR-1571 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4731,26 +4746,3 @@ flowchart LR
     AR_1226 --> AR_1337
     AR_1228 --> AR_1120
     AR_1228 --> AR_1229
-    AR_1229 --> AR_1120
-    AR_1230 --> AR_1120
-    AR_1230 --> AR_1228
-    AR_1230 --> AR_1229
-    AR_1230 --> AR_1231
-    AR_1230 --> AR_1232
-    AR_1231 --> AR_1151
-    AR_1231 --> AR_1233
-    AR_1231 --> AR_1234
-    AR_1231 --> AR_1236
-    AR_1231 --> AR_1238
-    AR_1231 --> AR_1248
-    AR_1232 --> AR_1151
-    AR_1232 --> AR_1244
-    AR_1232 --> AR_1248
-    AR_1233 --> AR_1232
-    AR_1233 --> AR_1237
-    AR_1233 --> AR_1257
-    AR_1234 --> AR_1232
-    AR_1236 --> AR_1233
-    AR_1236 --> AR_1234
-    AR_1236 --> AR_1237
-    AR_1236 --> AR_1239
