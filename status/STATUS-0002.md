@@ -3632,6 +3632,20 @@
 | Summary | Make install, wizard, benchmark, recording, replay, comparison, and lifecycle diagnostics simple and consistently human-readable with opt-in JSON. |
 | Next action | Promote after AR-1603 acceptance; inventory commands and repair any inconsistent default/--json behavior. |
 
+### AR-1605 — Authenticated cassette control backend
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Expose catalog, record, seal, reopen, offline replay, and comparison through the real ASB control backend. |
+| Next action | Promote after ASB AR-1602; implement the authenticated ControlServer/RunnerBackend cassette lifecycle and external-client evidence. |
+
 
 ## Dependency graph
 
@@ -4305,6 +4319,7 @@ flowchart LR
         AR_1602["AR-1602 - Done"]:::status_done
         AR_1603["AR-1603 - Planned"]:::status_planned
         AR_1604["AR-1604 - Planned"]:::status_planned
+        AR_1605["AR-1605 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4555,26 +4570,3 @@ flowchart LR
     AR_0315 --> AR_1327
     AR_0316 --> AR_0876
     AR_0317 --> AR_0857
-    AR_0317 --> AR_0863
-    AR_0317 --> AR_0876
-    AR_0318 --> AR_0314
-    AR_0318 --> AR_0319
-    AR_0318 --> AR_0320
-    AR_0318 --> AR_0869
-    AR_0318 --> AR_0876
-    AR_0318 --> AR_1325
-    AR_0319 --> AR_0876
-    AR_0319 --> AR_1228
-    AR_0319 --> AR_1230
-    AR_0320 --> AR_0869
-    AR_0320 --> AR_0876
-    AR_0320 --> AR_1120
-    AR_0320 --> AR_1228
-    AR_0320 --> AR_1230
-    AR_0401 --> AR_0402
-    AR_0401 --> AR_0403
-    AR_0401 --> AR_0405
-    AR_0401 --> AR_0505
-    AR_0401 --> AR_0506
-    AR_0401 --> AR_0507
-    AR_0401 --> AR_0508
