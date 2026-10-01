@@ -18,7 +18,7 @@ Generated from local Git and GitHub. Do not edit.
 | #366 | `dependabot/cargo/schemars-1.2.2@047b52b0b5b9` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump schemars from 1.0.4 to 1.2.2 |
 | #384 | `feature/ar-1508-platform-owned-authority-provider@2c70f81100ca` | `main` | DIRTY | - | feat(runtime): platform-owned authority provider |
 | #423 | `fix/dev-workspace-quota-race@e6e3ca8b290c` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Fix development workspace quota scan races |
-| #424 | `ar1602-cassette-control@ac04977b5f69` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(control): add digest-only cassette replay contract |
+| #424 | `ar1602-cassette-control@ac04977b5f69` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | feat(control): add digest-only cassette replay contract |
 
 ## Recent workflows
 
@@ -26,13 +26,13 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 36858608251 | `ac04977b5f69` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 36858608228 | `ac04977b5f69` | pull_request | Repository quality | completed:failure |
-| 36858608190 | `ac04977b5f69` | pull_request | Cross-repository development broker qualification | in_progress:- |
+| 36858608190 | `ac04977b5f69` | pull_request | Cross-repository development broker qualification | completed:success |
 | 36858608178 | `ac04977b5f69` | pull_request | Formal assurance | in_progress:- |
-| 36858608147 | `ac04977b5f69` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 36858608147 | `ac04977b5f69` | pull_request | Hosted portability and native qualification | completed:success |
 | 36858608134 | `ac04977b5f69` | pull_request | Fault assurance | in_progress:- |
 | 36858608110 | `ac04977b5f69` | pull_request | Huawei MIT source headers | completed:success |
 | 36858608082 | `ac04977b5f69` | pull_request | Rust verification | in_progress:- |
 | 36858608076 | `ac04977b5f69` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 36858608074 | `ac04977b5f69` | pull_request | Credential-free benchmark path | in_progress:- |
+| 36858608074 | `ac04977b5f69` | pull_request | Credential-free benchmark path | completed:success |
 | 36857720874 | `e6e3ca8b290c` | pull_request | Emulated aarch64 portability | completed:success |
 | 36857720827 | `e6e3ca8b290c` | pull_request | Rust verification | completed:success |
