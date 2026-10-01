@@ -1,0 +1,6 @@
+AR-1569 source-archive identity repair receipt
+merged_sha=2eef71c795adf8e19f2a6b5e7c53d27b76421b25
+reviewed_pr_head=e05e7ff403ce6a1a91f4f05d5ea0c570eeb9d9d2
+pr=https://github.com/martin-beck/agent-systems-benchmark/pull/402
+checks=all 13 required hosted checks passed on reviewed head
+review=independent review approved; clean archive cargo check passed; focused/full local tests and clippy passed
