@@ -1,0 +1,8 @@
+AR-1572 approved development toolchain runner receipt
+merged_sha=877853389acc069d30064166d3dc789956c36589
+reviewed_pr_head=f423bca4a56e4024cb6768be8e6b36088e50a75d
+pr=https://github.com/martin-beck/agent-systems-benchmark/pull/404
+checks=all required hosted checks passed on reviewed head
+review=independent review approved after staged dispatch, bounded environment, ancestor ownership, cargo-home, rollback, and shell-input repairs
+local=34 focused Rust tests, clippy, fmt, shell syntax, runner regression, and offline Cargo qualification passed
+

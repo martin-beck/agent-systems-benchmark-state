@@ -1,0 +1,8 @@
+AR-1573 development control producer bridge receipt
+merged_sha=911dce051a97a5ba26902cef4f325dd2f421ec60
+reviewed_pr_head=b4813cf81af3e85a57fe1e4cd23029752762d703
+pr=https://github.com/martin-beck/agent-systems-benchmark/pull/405
+checks=all required hosted checks passed on reviewed head
+review=independent review approved after replacing raw stream/evidence inputs with typed authenticated generation, exact lifecycle protocol, peer identity, runner identity, and bounded malformed/timeout handling
+local=75 control unit tests, 27 integration tests, 7 endpoint tests, 4 schema tests, and 2 doctests passed
+
