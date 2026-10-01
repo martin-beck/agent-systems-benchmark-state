@@ -1,0 +1,19 @@
+AR: AR-1606
+PR: https://github.com/martin-beck/agent-systems-benchmark/pull/426
+Reviewed head: 8355afdd9f054b9f256a5c792be631f8ac6381f6
+Protected-main merge: da88696742de6256a05c7d10d41df6921669ffb6
+Independent review: APPROVE on the final signed head; qualification and cleanup evidence accepted.
+Pinned TUI source commit: 8b69a7d9c21a7e3b0a409c7ab525bd998487db63
+Pinned TUI source tree: 407229bbb737cc078f32e5cb387f8a8924eb70cf
+Pinned TUI binary SHA-256: d678780e019c1444e9728cf782de60c6fc4bdd07084c83eba9c8e94a8e4f8477
+Local evidence: exact inherited-fd PTY journey passed 5/5 stress runs (~5.9s each); focused ASB fixture and spawn-failure cleanup tests passed; workspace coverage measured above the 90% floor after behavioral coverage repair.
+Post-merge hosted workflows, all successful on da886967:
+- Hosted portability and native qualification: 36899483922
+- Credential-free benchmark path: 36899483902
+- Formal assurance: 36899483950
+- Fault assurance: 36899483907
+- Cross-repository development broker qualification: 36899483862
+- Huawei MIT source headers: 36899483967
+- Rust verification: 36899483921
+- Emulated aarch64 portability: 36899483920
+- Repository quality: 36899483984
