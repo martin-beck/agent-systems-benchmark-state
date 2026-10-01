@@ -3504,7 +3504,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Expose provider, authentication, model, agent, and default-selection capabilities for the development wizard. |
-| Next action | Implement the versioned development setup capability contract after the catalog alignment releases. |
+| Next action | Obtain independent exact-head review and all hosted checks for PR #415 at b7fef9c; do not merge until both approve. |
 
 ### AR-1596 — Cassette and offline lifecycle integration
 
@@ -4612,4 +4612,3 @@ flowchart LR
     AR_0801 --> AR_0849
     AR_0801 --> AR_0869
     AR_0802 --> AR_0808
-    AR_0802 --> AR_0809
