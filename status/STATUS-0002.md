@@ -3504,7 +3504,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Expose provider, authentication, model, agent, and default-selection capabilities for the development wizard. |
-| Next action | Obtain independent exact-head review and all hosted checks for PR #415 at b7fef9c; do not merge until both approve. |
+| Next action | Rerun PR #415 hosted checks and obtain independent exact-head review at 25fe156c; do not merge until both approve. |
 
 ### AR-1596 — Cassette and offline lifecycle integration
 
