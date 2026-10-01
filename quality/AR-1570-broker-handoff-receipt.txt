@@ -1,0 +1,6 @@
+AR-1570 dynamic development broker handoff receipt
+merged_sha=852dcb14f9c19b1663b5b95c3b4d39f9fb8fe52e
+reviewed_pr_head=f0b55e9f9e3056003b5bf949fc54ea7425c494ab
+pr=https://github.com/martin-beck/agent-systems-benchmark/pull/403
+checks=all 13 required hosted checks passed on reviewed head
+review=independent review approved after bounded terminal environment repair; focused/full local tests and clippy passed
