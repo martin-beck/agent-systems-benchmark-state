@@ -203,7 +203,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1600](../tasks/AR-1600.md): Bounded development build-artifact staging | ar1199-router-impl | Keep normal development TUI builds within explicit source and artifact quotas. | PR #423 exact signed head f5d6882 is based on protected main; hosted coverage rerun and fresh independent review pending. |
+| P0 | [AR-1600](../tasks/AR-1600.md): Bounded development build-artifact staging | ar1199-router-impl | Keep normal development TUI builds within explicit source and artifact quotas. | PR #423 exact signed head cb20d6e is based on protected main; hosted coverage rerun and fresh independent review pending. |
 | P0 | [AR-1602](../tasks/AR-1602.md): Cassette lifecycle control contract | ar1602-cassette-control | Expose real cassette identity, sealing, and replay dispatch to the TUI without fabricated continuity. | Fresh independent review required for PR #424 at 9c1392b; hosted coverage checks pending. |
 
 ### Blocked (82)
