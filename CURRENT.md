@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1570](tasks/AR-1570.md): ASB dynamic development broker handoff | Implement dynamic development broker handoff | Independent review and hosted green checks for PR #403 at f0b55e9f9e3056003b5bf949fc54ea7425c494ab | ar1570-dynamic-broker-handoff |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |

@@ -138,12 +138,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1570](../tasks/AR-1570.md): ASB dynamic development broker handoff | ar1570-dynamic-broker-handoff | Implement dynamic development broker handoff | Independent review and hosted green checks for PR #403 at f0b55e9f9e3056003b5bf949fc54ea7425c494ab |
-
 ### Blocked (81)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -289,7 +283,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (425)
+### Done (426)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -530,6 +524,7 @@
 | P0 | [AR-1567](../tasks/AR-1567.md): ASB development trusted toolchain discovery | Unclaimed | Implement trusted development cargo discovery | PR #401 is rebased onto current main 2eef71c at exact head bac495d0871c72b63bed9c55b2d2c557115a471d; hosted checks rerunning and independent review required before merge. |
 | P0 | [AR-1568](../tasks/AR-1568.md): ASB exact current-main identity binding | Unclaimed | Bind development metadata and broker descriptors to the exact ASB source identity. | Ready for independent review of PR #400 at exact head 665b6eb. Verify build-time exact checkout commit/tree derivation, required source headers, reproducible identity overrides, metadata/status/doctor identity validation, typed stale rejection, and unchanged stable behavior. |
 | P0 | [AR-1569](../tasks/AR-1569.md): ASB source-archive identity repair | Unclaimed | Repair merged identity generation so stable/source-archive ASB builds work without a Git checkout. | PR #402 is at exact head e05e7ff403ce6a1a91f4f05d5ea0c570eeb9d9d2; hosted checks rerunning after parent-git archive guard. Await independent review and green checks, then merge/release or repair. |
+| P0 | [AR-1570](../tasks/AR-1570.md): ASB dynamic development broker handoff | Unclaimed | Implement dynamic development broker handoff | Independent review and hosted green checks for PR #403 at f0b55e9f9e3056003b5bf949fc54ea7425c494ab |
 | P1 | [AR-0002](../tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Unclaimed | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. |
 | P1 | [AR-0003](../tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Unclaimed | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. |
 | P1 | [AR-0004](../tasks/AR-0004-ar-status-document.md): Generate the visual AR status document | Unclaimed | Render every AR, status, and dependency as an accessible visual state document. | Await independent immutable-head review of state PR 3 at eedd311; repair findings before coordinator integration. |

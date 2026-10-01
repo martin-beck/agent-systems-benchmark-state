@@ -3286,11 +3286,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1570-dynamic-broker-handoff |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Implement dynamic development broker handoff |
@@ -3941,7 +3941,7 @@ flowchart LR
         AR_1567["AR-1567 - Done"]:::status_done
         AR_1568["AR-1568 - Done"]:::status_done
         AR_1569["AR-1569 - Done"]:::status_done
-        AR_1570["AR-1570 - In progress"]:::status_in_progress
+        AR_1570["AR-1570 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4752,3 +4752,5 @@ flowchart LR
     AR_1234 --> AR_1232
     AR_1236 --> AR_1233
     AR_1236 --> AR_1234
+    AR_1236 --> AR_1237
+    AR_1236 --> AR_1239
