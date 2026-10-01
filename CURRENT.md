@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1614](tasks/AR-1614.md): Immutable dev-channel TUI bundle and installability | Make the ASB dev channel resolve and install an exact public TUI bundle on a clean machine. | Promote after AR-1604; implement the paired immutable channel manifest, router handoff, and clean-machine install qualification. | - |
+| P0 | [AR-1614](tasks/AR-1614.md): Immutable dev-channel TUI bundle and installability | Make the ASB dev channel resolve and install an exact public TUI bundle on a clean machine. | Promote after AR-1604; implement the paired immutable channel manifest, router handoff, and clean-machine install qualification. | asb1614-bundle |
 
 ## Blocked
 

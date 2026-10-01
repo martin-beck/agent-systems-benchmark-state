@@ -3748,11 +3748,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | asb1614-bundle |
 | Parent | None |
 | Children | None |
 | Summary | Make the ASB dev channel resolve and install an exact public TUI bundle on a clean machine. |
@@ -4453,7 +4453,7 @@ flowchart LR
         AR_1611["AR-1611 - Done"]:::status_done
         AR_1612["AR-1612 - Done"]:::status_done
         AR_1613["AR-1613 - Planned"]:::status_planned
-        AR_1614["AR-1614 - Open"]:::status_open
+        AR_1614["AR-1614 - In progress"]:::status_in_progress
         AR_1615["AR-1615 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
@@ -4505,4 +4505,3 @@ flowchart LR
     AR_0101 --> AR_0517
     AR_0101 --> AR_0601
     AR_0101 --> AR_0603
-    AR_0101 --> AR_0801

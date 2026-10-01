@@ -224,11 +224,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1614](../tasks/AR-1614.md): Immutable dev-channel TUI bundle and installability | Unclaimed | Make the ASB dev channel resolve and install an exact public TUI bundle on a clean machine. | Promote after AR-1604; implement the paired immutable channel manifest, router handoff, and clean-machine install qualification. |
+| P0 | [AR-1614](../tasks/AR-1614.md): Immutable dev-channel TUI bundle and installability | asb1614-bundle | Make the ASB dev channel resolve and install an exact public TUI bundle on a clean machine. | Promote after AR-1604; implement the paired immutable channel manifest, router handoff, and clean-machine install qualification. |
 
 ### Blocked (82)
 
