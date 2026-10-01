@@ -3294,7 +3294,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Implement dynamic development broker handoff |
-| Next action | Independent review and hosted green checks for PR #403 at 4933d3b4460b4c66291822fd894ef04e010f0629; rebase after AR-1569 merge if needed |
+| Next action | Independent review and hosted green checks for PR #403 at f0b55e9f9e3056003b5bf949fc54ea7425c494ab |
 
 
 ## Dependency graph
@@ -4749,3 +4749,5 @@ flowchart LR
     AR_1233 --> AR_1232
     AR_1233 --> AR_1237
     AR_1233 --> AR_1257
+    AR_1234 --> AR_1232
+    AR_1236 --> AR_1233
