@@ -3384,11 +3384,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | ar1578-coverage-recovery |
 | Parent | None |
 | Children | None |
 | Summary | Recover the existing workspace coverage gate that currently blocks otherwise correct ASB transport changes. |
@@ -4046,7 +4046,7 @@ flowchart LR
         AR_1574["AR-1574 - In progress"]:::status_in_progress
         AR_1576["AR-1576 - In progress"]:::status_in_progress
         AR_1577["AR-1577 - Planned"]:::status_planned
-        AR_1578["AR-1578 - Open"]:::status_open
+        AR_1578["AR-1578 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -4699,4 +4699,3 @@ flowchart LR
     AR_1017 --> AR_1019
     AR_1017 --> AR_1021
     AR_1017 --> AR_1022
-    AR_1017 --> AR_1030
