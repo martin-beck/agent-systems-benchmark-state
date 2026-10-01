@@ -3252,7 +3252,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Implement trusted development cargo discovery |
-| Next action | Obtain independent review and hosted green checks for PR #401 at 97929864fc7232d671a5b63dcb77261a1742fd97 |
+| Next action | PR #401 rebased onto current main 6fab08b at exact head 50a33e213e01959dfa4e071e0b1b72cb6fab6911; hosted checks rerunning and independent review required before merge. |
 
 ### AR-1568 — ASB exact current-main identity binding
 
@@ -4748,6 +4748,3 @@ flowchart LR
     AR_1232 --> AR_1248
     AR_1233 --> AR_1232
     AR_1233 --> AR_1237
-    AR_1233 --> AR_1257
-    AR_1234 --> AR_1232
-    AR_1236 --> AR_1233
