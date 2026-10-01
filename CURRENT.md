@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1601](tasks/AR-1601.md): Development-channel publication and provenance qualification | Qualify current-main dev-channel publication and exact provenance across ASB and asb-tui. | Promote after ASB AR-1600 and the paired TUI channel surface are released; run the exact-head dev-channel publication and provenance qualification. | ar1199-channel-publication |
+| P0 | [AR-1601](tasks/AR-1601.md): Development-channel publication and provenance qualification | Qualify current-main dev-channel publication and exact provenance across ASB and asb-tui. | Exact-head qualification receipt recorded; obtain independent review of evidence, then release only after coordinator review. | ar1199-channel-publication |
 
 ## Blocked
 

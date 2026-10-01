@@ -3588,7 +3588,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Qualify current-main dev-channel publication and exact provenance across ASB and asb-tui. |
-| Next action | Promote after ASB AR-1600 and the paired TUI channel surface are released; run the exact-head dev-channel publication and provenance qualification. |
+| Next action | Exact-head qualification receipt recorded; obtain independent review of evidence, then release only after coordinator review. |
 
 ### AR-1602 — Cassette lifecycle control contract
 
@@ -4593,3 +4593,4 @@ flowchart LR
     AR_0503 --> AR_0511
     AR_0503 --> AR_0512
     AR_0503 --> AR_0513
+    AR_0503 --> AR_0514
