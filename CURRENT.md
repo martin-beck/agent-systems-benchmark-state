@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1597](tasks/AR-1597.md): Fault matrix and deterministic runner | Exercise all setup, recording, replay, benchmark, and recovery failure paths with bounded evidence. | PR #420 exact head 32b5c514f3ca07eeaf18f3f0cb0c0b0b652f2bb0 is open; await all hosted checks and independent review, then repair/merge only with green gates. | ar1199-router-impl |
+| P0 | [AR-1597](tasks/AR-1597.md): Fault matrix and deterministic runner | Exercise all setup, recording, replay, benchmark, and recovery failure paths with bounded evidence. | Run full local fault-matrix tests, sign and push the bounded process/network/privacy repair, then await independent review of PR #420. | ar1199-router-impl |
 
 ## Blocked
 
