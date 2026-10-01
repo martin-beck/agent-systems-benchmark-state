@@ -194,7 +194,7 @@
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1597](../tasks/AR-1597.md): Fault matrix and deterministic runner | coordinator-pr420-review | Exercise all setup, recording, replay, benchmark, and recovery failure paths with bounded evidence. | Await fresh independent review and all hosted checks for PR #420 exact head 39af93e9 on signed main 677d9905; merge with merge_pr.py only after approval, then verify post-merge and release. |
+| P0 | [AR-1597](../tasks/AR-1597.md): Fault matrix and deterministic runner | coordinator-pr420-review | Exercise all setup, recording, replay, benchmark, and recovery failure paths with bounded evidence. | Await all post-merge workflows for signed merge 9c6a69a0, then verify exact tree/parents and release the fault-matrix AR. |
 
 ### Blocked (82)
 
@@ -550,3 +550,4 @@
 | P0 | [AR-1513](../tasks/AR-1513-authenticated-lease-dispatch-bridge.md): Authenticated lease-to-live-dispatch bridge | Unclaimed | Authenticate process-owner material, validate executable provenance, and connect leases to ordinary live dispatch. | PR #383 merged at 47329e35; monitor post-merge workflows 36550477933, 36550477996, 36550478002, 36550478037, 36550478039, 36550478042, 36550478232 to terminal success, then verify protected main and close AR. |
 | P0 | [AR-1514](../tasks/AR-1514-runtime-auth-reconciliation.md): Reconciled development auth handoff runtime | Unclaimed | Repair ASB development-runtime reconciliation between digest-only enrollment and helper invocation. | Complete; PR #386 merged at bf89a45ddd71af96e6d4b6954320e199e147f83e. Protected main tree equals reviewed topic and post-merge auth-focused ASB tests pass. Paired asb-tui AR-1323 qualification remains external. |
 | P0 | [AR-1515](../tasks/AR-1515-ar1307-runner-ci-oom-repair.md): AR-1307 runner CI repair | Unclaimed | Triage complete: AR-1307 runner admission and diagnostics are intact; remaining failure is workload capacity under the unchanged 3G/3G contract. | No runner source repair remains; AR-1309 owns the separately reviewed capacity/model-reduction decision. |
+| P0 | [AR-1516](../tasks/AR-1516-ar1308-qemu-fixture-evidence-repair.md): AR-1308 QEMU fixture repair | Unclaimed | Fixture repair passed boot/transient/JAR checks; full tier timed out at 1700s without attestation. | Close fixture repair; hand timeout to AR-1309 for capacity/model decision. |

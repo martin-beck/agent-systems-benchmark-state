@@ -3532,7 +3532,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Exercise all setup, recording, replay, benchmark, and recovery failure paths with bounded evidence. |
-| Next action | Await fresh independent review and all hosted checks for PR #420 exact head 39af93e9 on signed main 677d9905; merge with merge_pr.py only after approval, then verify post-merge and release. |
+| Next action | Await all post-merge workflows for signed merge 9c6a69a0, then verify exact tree/parents and release the fault-matrix AR. |
 
 ### AR-1598 — Fresh-user development qualification
 
@@ -4606,3 +4606,5 @@ flowchart LR
     AR_0701 --> AR_0703
     AR_0701 --> AR_0704
     AR_0701 --> AR_0707
+    AR_0701 --> AR_0820
+    AR_0701 --> AR_0848
