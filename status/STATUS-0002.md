@@ -3272,11 +3272,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | in_progress |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | ar1569-archive-repair |
+| Owner | Unclaimed |
 | Parent | None |
 | Children | None |
 | Summary | Repair merged identity generation so stable/source-archive ASB builds work without a Git checkout. |
@@ -3940,7 +3940,7 @@ flowchart LR
         AR_1566["AR-1566 - Blocked"]:::status_blocked
         AR_1567["AR-1567 - In progress"]:::status_in_progress
         AR_1568["AR-1568 - Done"]:::status_done
-        AR_1569["AR-1569 - In progress"]:::status_in_progress
+        AR_1569["AR-1569 - Done"]:::status_done
         AR_1570["AR-1570 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
@@ -4748,3 +4748,4 @@ flowchart LR
     AR_1232 --> AR_1248
     AR_1233 --> AR_1232
     AR_1233 --> AR_1237
+    AR_1233 --> AR_1257

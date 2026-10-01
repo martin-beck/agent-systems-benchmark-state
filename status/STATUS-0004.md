@@ -138,12 +138,11 @@
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1567](../tasks/AR-1567.md): ASB development trusted toolchain discovery | ar1567-toolchain-discovery | Implement trusted development cargo discovery | PR #401 rebased onto current main 6fab08b at exact head 50a33e213e01959dfa4e071e0b1b72cb6fab6911; hosted checks rerunning and independent review required before merge. |
-| P0 | [AR-1569](../tasks/AR-1569.md): ASB source-archive identity repair | ar1569-archive-repair | Repair merged identity generation so stable/source-archive ASB builds work without a Git checkout. | PR #402 is at exact head e05e7ff403ce6a1a91f4f05d5ea0c570eeb9d9d2; hosted checks rerunning after parent-git archive guard. Await independent review and green checks, then merge/release or repair. |
 | P0 | [AR-1570](../tasks/AR-1570.md): ASB dynamic development broker handoff | ar1570-dynamic-broker-handoff | Implement dynamic development broker handoff | Independent review and hosted green checks for PR #403 at 4933d3b4460b4c66291822fd894ef04e010f0629; rebase after AR-1569 merge if needed |
 
 ### Blocked (81)
@@ -291,7 +290,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (423)
+### Done (424)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -530,6 +529,7 @@
 | P0 | [AR-1564](../tasks/AR-1564.md): ASB development TUI lifecycle integration | Unclaimed | Integrate the dev-built TUI into the ASB lifecycle and launch path. | Ready for independent re-review of PR #399 at exact head 4a65476. Verify reversible marker/version trash transaction, injected final-delete failure restoration, dev lifecycle routing, stable isolation, and exact-current-main compatibility. |
 | P0 | [AR-1565](../tasks/AR-1565.md): ASB yanked dependency lock repair | Unclaimed | Repair the yanked dependency lock that blocks all protected ASB merges. | Run complete required ASB quality suite and obtain independent lockfile review; cargo-deny/cargo-audit binaries are absent on this host and must run in hosted/qualified environment. Then prepare exact-head PR from signed commit 54505f2. |
 | P0 | [AR-1568](../tasks/AR-1568.md): ASB exact current-main identity binding | Unclaimed | Bind development metadata and broker descriptors to the exact ASB source identity. | Ready for independent review of PR #400 at exact head 665b6eb. Verify build-time exact checkout commit/tree derivation, required source headers, reproducible identity overrides, metadata/status/doctor identity validation, typed stale rejection, and unchanged stable behavior. |
+| P0 | [AR-1569](../tasks/AR-1569.md): ASB source-archive identity repair | Unclaimed | Repair merged identity generation so stable/source-archive ASB builds work without a Git checkout. | PR #402 is at exact head e05e7ff403ce6a1a91f4f05d5ea0c570eeb9d9d2; hosted checks rerunning after parent-git archive guard. Await independent review and green checks, then merge/release or repair. |
 | P1 | [AR-0002](../tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Unclaimed | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. |
 | P1 | [AR-0003](../tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Unclaimed | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. |
 | P1 | [AR-0004](../tasks/AR-0004-ar-status-document.md): Generate the visual AR status document | Unclaimed | Render every AR, status, and dependency as an accessible visual state document. | Await independent immutable-head review of state PR 3 at eedd311; repair findings before coordinator integration. |
