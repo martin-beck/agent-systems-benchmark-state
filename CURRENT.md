@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1611](tasks/AR-1611.md): Integrated dev-channel TUI install and launch | Make asb tui install fetch the current dev-channel TUI, build it in a temporary staging area, publish atomically, and launch it through the trusted ASB router. | Promote after the current install/router implementation is audited; add an exact-main disposable install, upgrade, rollback, and launch qualification. | ar1611-install |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |

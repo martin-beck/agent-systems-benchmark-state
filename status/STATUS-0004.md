@@ -217,12 +217,6 @@
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1611](../tasks/AR-1611.md): Integrated dev-channel TUI install and launch | ar1611-install | Make asb tui install fetch the current dev-channel TUI, build it in a temporary staging area, publish atomically, and launch it through the trusted ASB router. | Promote after the current install/router implementation is audited; add an exact-main disposable install, upgrade, rollback, and launch qualification. |
-
 ### Blocked (82)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -373,7 +367,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (451)
+### Done (452)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -551,3 +545,5 @@
 | P0 | [AR-1472](../tasks/AR-1472-authenticated-live-dispatch-adapter.md): Authenticated live-dispatch adapter | Unclaimed | Connect authenticated control receipts to runtime-owned CLI live dispatch without a dependency cycle. | Run reconcile and doctor --live, then release AR-1472 done with merge and seven-workflow evidence. |
 | P0 | [AR-1473](../tasks/AR-1473-runtime-owned-enrollment-source.md): Runtime-owned authenticated enrollment source | Unclaimed | Resolve authenticated control enrollment into an opaque runtime-owned source for normal ASB run and sweep. | Reconcile/doctor live state, then release AR-1473 done. |
 | P0 | [AR-1474](../tasks/AR-1474-runtime-authority-input-resolver.md): Runtime-owned authority-input resolver | Unclaimed | Persist and resolve authenticated runtime authority inputs without caller-supplied or synthetic authority. | Release AR-1474 done; old PR coverage failure superseded by AR-1477 tests and AR-1478 topology repair. |
+| P0 | [AR-1475](../tasks/AR-1475-asb-metrics-evidence-fixture-repair.md): Repair asb-metrics evidence fixture classification | Unclaimed | Repair the deterministic ProbeRejected versus MalformedEvidence fixture failure blocking PR #345. | Release done after final reconcile; then rerun PR #345 exact-head validation. |
+| P0 | [AR-1476](../tasks/AR-1476-workspace-coverage-floor-repair.md): Repair workspace coverage floor | Unclaimed | Restore the enforced 90 percent workspace coverage floor blocking exact AR-1474 validation. | Rerun PR #345 exact-head validation against current protected main 1dada31c; no repair diff is required unless the current-base gate regresses. |
