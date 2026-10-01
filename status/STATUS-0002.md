@@ -3560,7 +3560,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Repair fresh-user dev installation provenance, toolchain discovery, and atomic publication. |
-| Next action | Monitor exact post-merge workflows for c193348fbaa382251950040cd16897767c7b8207; release AR-1599 only after every required workflow is green and exact main/tree/parents are verified. |
+| Next action | Do not release yet: exact post-merge workflows for c193348f are green, but repository_policy rejects the merge commit for missing matching Signed-off-by. Create a signed DCO forward repair merge/descendant, rerun exact-main policy and post-merge checks, then release. |
 
 
 ## Dependency graph
@@ -4599,6 +4599,3 @@ flowchart LR
     AR_0601 --> AR_1015
     AR_0602 --> AR_1015
     AR_0603 --> AR_0601
-    AR_0604 --> AR_0602
-    AR_0604 --> AR_1015
-    AR_0701 --> AR_0317

@@ -195,7 +195,7 @@
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1597](../tasks/AR-1597.md): Fault matrix and deterministic runner | coordinator-pr420-review | Exercise all setup, recording, replay, benchmark, and recovery failure paths with bounded evidence. | Await fresh independent review and all hosted checks for PR #420 exact head dd6d9b6; merge with protected two-parent topology only after approval, then verify post-merge and release. |
-| P0 | [AR-1599](../tasks/AR-1599.md): Development install provenance and toolchain repair | ar1199-router-impl | Repair fresh-user dev installation provenance, toolchain discovery, and atomic publication. | Monitor exact post-merge workflows for c193348fbaa382251950040cd16897767c7b8207; release AR-1599 only after every required workflow is green and exact main/tree/parents are verified. |
+| P0 | [AR-1599](../tasks/AR-1599.md): Development install provenance and toolchain repair | ar1199-router-impl | Repair fresh-user dev installation provenance, toolchain discovery, and atomic publication. | Do not release yet: exact post-merge workflows for c193348f are green, but repository_policy rejects the merge commit for missing matching Signed-off-by. Create a signed DCO forward repair merge/descendant, rerun exact-main policy and post-merge checks, then release. |
 
 ### Blocked (82)
 
