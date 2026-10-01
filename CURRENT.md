@@ -9,6 +9,12 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1588](tasks/AR-1588.md): ASB development-channel command surface | Make ASB lifecycle commands consistently select and default the development release channel. | Promote after dependencies are released; implement and qualify consistent --channel selection with default dev across ASB lifecycle commands. | ar1498-channel-surface |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1596](tasks/AR-1596.md): Cassette and offline lifecycle integration | Provide deterministic cassette recording and provider-free replay for benchmark workloads. | Implement cassette recording/sealing and offline replay lifecycle after the setup capability contract is released. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -119,7 +125,6 @@ Never edit this file directly.
 | P0 | [AR-1546](tasks/AR-1546.md): AR-1308 formal capacity-input readiness repair | Audit and repair the AR-1308 capacity/input handoff after diagnostic QEMU integration, without executing qualification. | Formal-only work: after AR-1531 and AR-1536, verify the exact 8 GiB/8 GiB fixture and AR-1308 formal inputs for AR-1522. Do not block or alter the completed unsigned-development path. | - |
 | P0 | [AR-1589](tasks/AR-1589.md): ASB development-channel provenance and fault matrix | Qualify ASB development-channel identity, metadata integrity, and cleanup failure paths. | Promote after AR-1588; implement the development-channel provenance envelope and adversarial fault matrix without weakening stable verification. | - |
 | P0 | [AR-1591](tasks/AR-1591.md): Post-release fresh-clone ASB consumption | Qualify fresh-clone consumption of the released development ASB journey. | Promote after the inherited-fd bridge and final cross-project qualification are released; run the fresh-clone post-release dev-channel journey and record exact evidence. | - |
-| P0 | [AR-1596](tasks/AR-1596.md): Cassette and offline lifecycle integration | Provide deterministic cassette recording and provider-free replay for benchmark workloads. | Implement cassette recording/sealing and offline replay lifecycle after the setup capability contract is released. | - |
 | P0 | [AR-1597](tasks/AR-1597.md): Fault matrix and deterministic runner | Exercise all setup, recording, replay, benchmark, and recovery failure paths with bounded evidence. | Build the isolated fault-matrix runner once cassette lifecycle behavior is released. | - |
 | P0 | [AR-1598](tasks/AR-1598.md): Fresh-user development qualification | Prove install-to-wizard-to-benchmark-to-offline-comparison works for a fresh development user. | Run the disposable fresh-user default-dev qualification after the fault-matrix runner is released. | - |
 | P1 | [AR-0808](tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. | - |
