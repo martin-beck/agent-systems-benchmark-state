@@ -4570,7 +4570,7 @@
 | Summary | Make the default-dev install path detect missing host tools before launch and return actionable typed recovery without turning development authentication or signature warnings into blockers. |
 | Next action | Add a bounded host/toolchain preflight to the paired install contract, classify missing tools and PTY limitations, and qualify retry/cleanup with exact-head evidence. |
 
-### AR-1679 — ASB legacy task-spec normalization
+### AR-1681 — Normalize residual ASB task specifications
 
 | Field | Value |
 | --- | --- |
@@ -4581,22 +4581,8 @@
 | Owner | Unclaimed |
 | Parent | None |
 | Children | None |
-| Summary | Normalize the remaining ASB legacy task-spec records rejected by strict validation without changing task intent or gates. |
-| Next action | Normalize AR-1625/1626/1628-1630 and AR-1641-1655, regenerate projections, and pass fresh strict validation. |
-
-### AR-1680 — Repair vendor manifest regression fixture
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Align the immutable vendor-manifest regression fixture with the intentional task-spec validator vocabulary extension. |
-| Next action | Run vendor verification and the complete vendor regression test on the exact signed head. |
+| Summary | Complete strict-schema normalization for residual ASB task records AR-1617 through AR-1621 without changing their acceptance or evidence requirements. |
+| Next action | Add only missing strict vocabulary fields, regenerate projections, and pass exact validation. |
 
 ### AR-1682 — Restore formal hierarchy model contract
 
@@ -4700,3 +4686,14 @@ flowchart LR
         AR_0401["AR-0401 - Done"]:::status_done
         AR_0402["AR-0402 - Done"]:::status_done
         AR_0403["AR-0403 - Done"]:::status_done
+        AR_0404["AR-0404 - Done"]:::status_done
+        AR_0405["AR-0405 - Done"]:::status_done
+        AR_0406["AR-0406 - Done"]:::status_done
+    end
+    subgraph series_05["05 - Replay"]
+        direction TB
+        AR_0501["AR-0501 - Done"]:::status_done
+        AR_0502["AR-0502 - Done"]:::status_done
+        AR_0503["AR-0503 - Done"]:::status_done
+        AR_0504["AR-0504 - Done"]:::status_done
+        AR_0505["AR-0505 - Done"]:::status_done
