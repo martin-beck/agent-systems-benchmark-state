@@ -1,5 +1,8 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1259](../tasks/AR-1259-protected-main-dco-recovery.md) | [AR-1242](../tasks/AR-1242-protected-main-admission.md) | None |
+| [AR-1260](../tasks/AR-1260-runtime-owned-strict-replay-integration.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
+| [AR-1261](../tasks/AR-1261-runtime-to-cli-replay-entrypoint.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
 | [AR-1262](../tasks/AR-1262-runtime-owned-launch-authority.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
 | [AR-1263](../tasks/AR-1263-sandbox-scope-classification-stability.md) | [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md) | None |
 | [AR-1264](../tasks/AR-1264-pr205-merge-integrity.md) | [AR-0897](../tasks/AR-0897-main-merge-integrity.md) | None |
@@ -381,7 +384,7 @@
 | [AR-1660](../tasks/AR-1660.md) | [AR-1654](../tasks/AR-1654.md), [AR-1657](../tasks/AR-1657.md), [AR-1659](../tasks/AR-1659.md) | [AR-1667](../tasks/AR-1667.md), [AR-1668](../tasks/AR-1668.md) |
 | [AR-1661](../tasks/AR-1661.md) | None | [AR-1663](../tasks/AR-1663.md), [AR-1665](../tasks/AR-1665.md) |
 | [AR-1663](../tasks/AR-1663.md) | [AR-1658](../tasks/AR-1658.md), [AR-1661](../tasks/AR-1661.md) | [AR-1665](../tasks/AR-1665.md), [AR-1666](../tasks/AR-1666.md) |
-| [AR-1665](../tasks/AR-1665.md) | [AR-1661](../tasks/AR-1661.md), [AR-1663](../tasks/AR-1663.md) | [AR-1666](../tasks/AR-1666.md), [AR-1670](../tasks/AR-1670.md) |
+| [AR-1665](../tasks/AR-1665.md) | [AR-1661](../tasks/AR-1661.md), [AR-1663](../tasks/AR-1663.md) | [AR-1666](../tasks/AR-1666.md), [AR-1670](../tasks/AR-1670.md), [AR-1680](../tasks/AR-1680.md) |
 | [AR-1666](../tasks/AR-1666.md) | [AR-1663](../tasks/AR-1663.md), [AR-1665](../tasks/AR-1665.md) | None |
 | [AR-1667](../tasks/AR-1667.md) | [AR-1658](../tasks/AR-1658.md), [AR-1659](../tasks/AR-1659.md), [AR-1660](../tasks/AR-1660.md) | [AR-1668](../tasks/AR-1668.md) |
 | [AR-1668](../tasks/AR-1668.md) | [AR-1660](../tasks/AR-1660.md), [AR-1667](../tasks/AR-1667.md) | [AR-1677](../tasks/AR-1677.md) |
@@ -392,6 +395,7 @@
 | [AR-1676](../tasks/AR-1676.md) | [AR-1658](../tasks/AR-1658.md), [AR-1674](../tasks/AR-1674.md), [AR-1675](../tasks/AR-1675.md) | [AR-1677](../tasks/AR-1677.md), [AR-1678](../tasks/AR-1678.md) |
 | [AR-1677](../tasks/AR-1677.md) | [AR-1668](../tasks/AR-1668.md), [AR-1676](../tasks/AR-1676.md) | [AR-1678](../tasks/AR-1678.md) |
 | [AR-1678](../tasks/AR-1678.md) | [AR-1676](../tasks/AR-1676.md), [AR-1677](../tasks/AR-1677.md) | None |
+| [AR-1680](../tasks/AR-1680.md) | [AR-1665](../tasks/AR-1665.md) | None |
 
 ## Complete AR inventory
 
@@ -488,7 +492,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (77)
+### Planned (78)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -566,6 +570,7 @@
 | P1 | [AR-1624](../tasks/AR-1624.md): AWQ/AWC quality and coordination gate | Unclaimed | Qualify the wizard release using current Agent Workflow Quality and Coordinator evidence, worker isolation, reconciliation, and recovery rules. | Promote after the release gate; run independent quality/coordination audit and recovery drill. |
 | P1 | [AR-1665](../tasks/AR-1665.md): Paired legacy task-spec metadata vocabulary repair | Unclaimed | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. |
 | P1 | [AR-1666](../tasks/AR-1666.md): Trusted-main broad TUI coverage qualification | Unclaimed | Raise current TUI main coverage from 89.43&#37; to the strict 90&#37; gate through behavior-focused tests without weakening thresholds. | Reproduce trusted-main coverage at exact head 06e96770, identify low-coverage wizard/runtime/UI paths, and add focused behavior tests preserving development nonblocking authentication, signature, and key-management rules. |
+| P1 | [AR-1680](../tasks/AR-1680.md): Repair vendor manifest regression fixture | Unclaimed | Align the immutable vendor-manifest regression fixture with the intentional task-spec validator vocabulary extension. | Run vendor verification and the complete vendor regression test on the exact signed head. |
 | P2 | [AR-0602](../tasks/AR-0602-csb-monitoring-contention.md): Validate CSB monitoring and contention diagnostics | Unclaimed | Validate and integrate optional CSB resource monitoring and kernel-contention evidence without double counting or overstating support. | Audit CSB monitoring using native x86_64 oracles and required pinned QEMU AArch64 portable mapping/lifecycle checks; keep native ARM64 counters and performance as optional future evidence. |
 | P2 | [AR-0903](../tasks/AR-0903-release-qualification.md): Package and qualify the first release | Unclaimed | Deliver reproducible native release artifacts with complete support and evidence statements. | Audit milestone completeness and run isolated release qualification. |
 | P2 | [AR-1016](../tasks/AR-1016-measurement-integration-audit.md): Integrate and audit measurement selection and CSB evidence | Unclaimed | Audit selectable and CSB-backed measurements across live and replay runs. | Add end-to-end live/replay comparison, release documentation, and independent audit after AR-1014 and AR-1015. |
@@ -599,6 +604,3 @@
 | P0 | [AR-0847](../tasks/AR-0847-frontend-control-api-repair.md): Frontend control API repair | Unclaimed | Repair and independently qualify the blocked frontend control API candidate. | Monitor PR #54 exact head 0d2534f614cdc3ec43199bcb6da25083ef680f24; merge only after all required exact-head checks are terminal green and coordinator authorization. |
 | P0 | [AR-0850](../tasks/AR-0850-aider-deterministic-replay.md): Repair deterministic aider replay | Unclaimed | Repair aider replay nondeterminism caused by process-dependent file ordering. | Make pinned aider multi-file capture ordering deterministic across separately spawned processes, then prove strict replay parity and rerun the native journey. |
 | P0 | [AR-0853](../tasks/AR-0853-coordinator-merge-attestation.md): Repair coordinator merge attestation | Unclaimed | Repair the v0.1.4 coordinator merge attestation without rewriting published history. | Repair the attestation test to validate a closed fetch-free signed representation and installed manifest without requiring the unreachable historical merge object; document that limitation, rerun gates, and publish a signed successor by exact lease. |
-| P0 | [AR-0872](../tasks/AR-0872-beginner-workflow-documentation.md): Publish beginner workflow documentation | Unclaimed | Publish linked beginner workflows for setup, multi-agent runs, progress, comparison, recording, and replay with and without the TUI. | Create a signed no-ff integration merge for PR #95 from current main, run post-merge checks, fast-forward main, and release AR-0872. |
-| P0 | [AR-0897](../tasks/AR-0897-main-merge-integrity.md): Restore main merge integrity | Unclaimed | Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path. | Monitor exact-main CI for signed recovery c261af0, then verify policy and close AR-0897. |
-| P0 | [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md): Make ShellCheck fail closed | Unclaimed | Resolve GitHub issue 117 by installing and explicitly enforcing a digest-pinned ShellCheck. | Retain merged PR #190 evidence and all six successful protected-main workflows; release after exact-main verification. |

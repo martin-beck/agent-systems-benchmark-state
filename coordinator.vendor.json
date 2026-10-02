@@ -149,7 +149,7 @@
       "source": "tools/status_renderer.py"
     },
     "tools/task_spec.py": {
-      "sha256": "99b6568042eb46955a419d9d8084b48229a1bd079360a246e468f97bdbd1f314",
+      "sha256": "5ad1bdb1b79dbb2e85233993f35b2e0f9bacc5d530bd26498d4fca27b65734d2",
       "source": "tools/task_spec.py"
     },
     "tools/upgrade_authority.py": {

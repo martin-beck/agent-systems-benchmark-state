@@ -1,5 +1,17 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+        AR_0707["AR-0707 - Done"]:::status_done
+    end
+    subgraph series_08["08 - Interfaces"]
+        direction TB
+        AR_0801["AR-0801 - Done"]:::status_done
+        AR_0802["AR-0802 - Done"]:::status_done
+        AR_0803["AR-0803 - Done"]:::status_done
+        AR_0804["AR-0804 - Done"]:::status_done
+        AR_0805["AR-0805 - Done"]:::status_done
+        AR_0806["AR-0806 - Done"]:::status_done
+        AR_0807["AR-0807 - Planned"]:::status_planned
+        AR_0808["AR-0808 - Planned"]:::status_planned
         AR_0809["AR-0809 - Planned"]:::status_planned
         AR_0810["AR-0810 - Planned"]:::status_planned
         AR_0811["AR-0811 - Planned"]:::status_planned
@@ -625,6 +637,7 @@
         AR_1676["AR-1676 - Planned"]:::status_planned
         AR_1677["AR-1677 - Planned"]:::status_planned
         AR_1678["AR-1678 - Planned"]:::status_planned
+        AR_1680["AR-1680 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2362,6 +2375,7 @@
     AR_1663 --> AR_1666
     AR_1665 --> AR_1666
     AR_1665 --> AR_1670
+    AR_1665 --> AR_1680
     AR_1667 --> AR_1668
     AR_1668 --> AR_1677
     AR_1670 --> AR_1671
@@ -2671,6 +2685,3 @@
 | [AR-1256](../tasks/AR-1256-bundled-mockagents-isolation.md) | [AR-1252](../tasks/AR-1252-approved-isolated-qualification-runner.md), [AR-1253](../tasks/AR-1253-pinned-python-transport-runtime.md) | None |
 | [AR-1257](../tasks/AR-1257-mockagents-qemu-image.md) | [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md), [AR-1250](../tasks/AR-1250-mockagents-harness-extension.md), [AR-1251](../tasks/AR-1251-mockagents-transport-sandbox.md) | None |
 | [AR-1258](../tasks/AR-1258-docker-binfmt-qemu.md) | None | None |
-| [AR-1259](../tasks/AR-1259-protected-main-dco-recovery.md) | [AR-1242](../tasks/AR-1242-protected-main-admission.md) | None |
-| [AR-1260](../tasks/AR-1260-runtime-owned-strict-replay-integration.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1261](../tasks/AR-1261-runtime-to-cli-replay-entrypoint.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
