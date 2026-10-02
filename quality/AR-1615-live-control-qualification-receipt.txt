@@ -1,0 +1,28 @@
+AR-1615 live ASB-TUI control qualification receipt
+Timestamp: 2026-10-02
+Status: BLOCKED_PENDING_HOSTED_TUI_GATE
+
+Exact inputs
+- ASB protected main: 1521b9800bf408ff833f8908391cdeedccee39c1
+- ASB tree: checked out exact commit above
+- asb-tui protected main: 867d302a8a9fd6d5865071ffd3b8dcc1c5f73c6a
+- asb-tui tree: 027b479684959a0961a5458bab847c539c98abae
+- asb-tui release binary SHA-256: 3a7dd9614a0a39070d5d13d1e5d037a137ef5ba15b1463916d88ec9800e17f62
+
+Disposable exact-main commands and results
+- `cargo test --locked` in the exact TUI worktree: 103/103 tests passed.
+- `cargo test --locked -p asb-cli tui::tests::development_bridge_serves_real_backend_over_private_control_socket -- --exact --nocapture`: passed.
+- `cargo test --locked -p asb-cli control::tests::production_backend_runs_without_frontend_and_recovers_idempotency -- --exact --nocapture`: passed.
+- `cargo test --locked -p asb-cli control::tests::recording_campaign_lifecycle_transitions_are_durable_and_fail_closed -- --exact --nocapture`: passed.
+- `cargo test --locked -p asb-cli control::tests::runtime_capture_callback_completes_exact_tuple_matrix -- --exact --nocapture`: passed.
+- Cross-repository live route (real ASB backend, exact TUI release binary, inherited-fd PTY, development descriptor, offline cassette selection/replay):
+  `ASB_TUI_QUALIFICATION=1 ASB_TUI_BINARY=/srv/data/projects/_ar1615-tui/target/release/asb-tui ASB_TUI_EXPECTED_SHA256=3a7dd9614a0a39070d5d13d1e5d037a137ef5ba15b1463916d88ec9800e17f62 ASB_TUI_SOURCE_COMMIT=867d302a8a9fd6d5865071ffd3b8dcc1c5f73c6a ASB_TUI_SOURCE_TREE=027b479684959a0961a5458bab847c539c98abae cargo test --locked -p asb-cli --features cross-repo-qualification tui::tests::pinned_tui_inherited_fd_development_launch_uses_pty_and_cleans_up -- --exact --ignored --nocapture`: passed in 5.91s.
+- The qualification observed typed bootstrap, cassette catalog/select/replay, offline-only replay, no capture dispatch, and bounded PTY shutdown/cleanup.
+
+Development policy
+- Missing authentication, signatures, and key management are warning-only in this development route; no production secret is emitted or required.
+
+Hosted evidence and blocker
+- ASB main cross-repository development broker qualification is green for 1521b98; Rust, platform, credential-free, fault, formal, and header gates were green or in progress at receipt time.
+- asb-tui main repository-quality is green, but Trusted main verification run 36951828878 is red solely at the repository-wide coverage threshold (total line coverage 89.52%, required gate not met). The tests themselves passed.
+- No ASB/TUI protocol or live-route defect was found. Do not lower coverage or add exclusions; resume AR-1615 after the TUI quality gate is repaired and rerun on exact main.
