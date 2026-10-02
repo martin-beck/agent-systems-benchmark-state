@@ -1,0 +1,18 @@
+AR-1635 control-state ownership test isolation receipt
+
+ASB PR: #438
+Reviewed head: 6a78b6f10f281c827aec42e519ce78b32fa4159c
+Protected-main merge: eb878e30be139f5077c319b51b9d4ce56712d182
+
+Repair: both production-backend idempotency and uncertain-restart tests retry only
+the exact `control state root is already owned` handoff diagnostic for a bounded
+window. Unexpected errors remain fail-fast; locking and recovery semantics were
+not weakened.
+
+Independent review: approved exact head.
+Local evidence: targeted tests passed; `cargo +1.93.0 test --locked -p asb-cli --lib`
+passed 182/182 twice consecutively; focused TUI tests and formatting passed.
+Hosted evidence: all required PR #438 checks passed, including policy/coverage,
+Rust, aarch64, platform, TUI PTY, fuzz, matcher, Kani, Loom, TLC, and credential-free paths.
+
+Development-only authentication, signatures, and key management remain warning-only.
