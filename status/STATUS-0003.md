@@ -1,8 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| Field | Value |
-| --- | --- |
-| Status | planned |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -10,7 +7,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Qualify selected/all workload recording, complete cassette sealing, and strict offline replay from the runner-owned route. |
-| Next action | Run selected and all-workload mock campaigns through capture, sealing, coverage gating, and offline replay with network denial evidence. |
+| Next action | Run exact post-merge selected and all-workload runner-owned capture, sealing, and strict offline replay qualification against ASB main d49b6815dbe6d7b453e87c84e50a2763eb807778; do not close from implementation evidence alone. |
 
 ### AR-1689 — Paired TUI fresh-user integration and receipt qualification
 
@@ -765,7 +762,7 @@ flowchart LR
         AR_1675["AR-1675 - Planned"]:::status_planned
         AR_1676["AR-1676 - Planned"]:::status_planned
         AR_1677["AR-1677 - Planned"]:::status_planned
-        AR_1678["AR-1678 - Planned"]:::status_planned
+        AR_1678["AR-1678 - Done"]:::status_done
         AR_1679["AR-1679 - Planned"]:::status_planned
         AR_1680["AR-1680 - Planned"]:::status_planned
         AR_1681["AR-1681 - Planned"]:::status_planned
