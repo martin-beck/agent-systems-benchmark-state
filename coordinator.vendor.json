@@ -45,7 +45,7 @@
       "source": "tests/test_checkpoint_records.py"
     },
     "tests/test_handoffctl.py": {
-      "sha256": "4c319b70d957564bc6641412807148315853a527b07fe2a28f9aad6efad96fca",
+      "sha256": "ce2d1bebe11a70fb10574429a7821c9039502a53512a8b1ec1b018c74d73f28a",
       "source": "tests/test_handoffctl.py"
     },
     "tests/test_hierarchy.py": {
@@ -81,7 +81,7 @@
       "source": "tools/handoffctl"
     },
     "tools/handoffctl.py": {
-      "sha256": "3f12b7fb566900b921bf3654fbb7d5394fb272bd4b6f81e257162eb6f609159a",
+      "sha256": "d9050b95fb654b2a6359499eee3be1de2c4eb6e58ee6d5270b5b7507d099f6db",
       "source": "tools/handoffctl.py"
     },
     "tools/handoffctl_vendor.py": {
