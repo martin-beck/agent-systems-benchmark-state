@@ -4682,22 +4682,17 @@
 | Summary | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. |
 | Next action | Complete provider-bound comparison and runner-owned capture/replay through AR-1651 and AR-1652, then publish exact-head paired evidence for AR-1613. |
 
+### AR-1687 — Provider-bound development comparison qualification
 
-## Dependency graph
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Qualify development/mock comparison against the selected provider and model identity without requiring production credentials. |
+| Next action | Run the provider-bound development comparison matrix at exact ASB head, record identity and comparison receipts, and verify unavailable-provider negatives. |
 
-Arrows point from each prerequisite to the work that depends on it. Color is redundant
-with the status text inside every node; the tables below are the complete text
-alternative.
-
-```mermaid
-flowchart LR
-    subgraph series_00["00 - Coordination foundation"]
-        direction TB
-        AR_0001["AR-0001 - Done"]:::status_done
-        AR_0002["AR-0002 - Done"]:::status_done
-        AR_0003["AR-0003 - Done"]:::status_done
-        AR_0004["AR-0004 - Done"]:::status_done
-        AR_0005["AR-0005 - Done"]:::status_done
-    end
-    subgraph series_01["01 - Contracts and runtime"]
-        direction TB
