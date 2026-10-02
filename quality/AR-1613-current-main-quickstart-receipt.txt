@@ -36,6 +36,29 @@
   warning contract. Existing product checkouts remained untouched and both
   fresh clones are clean.
 
+## Bounded environmental blocker
+
+- The successful *online* dev-channel install and its current paired channel
+  manifest were not proven in this run. The disposable network-denied run
+  intentionally returned `development_source_unavailable_offline`; this is an
+  environmental qualification gap, not a product success or a release claim.
+  The current-head receipt therefore remains `in_progress`/open.
+- Available prior manifest provenance was inspected but is not substituted for
+  the missing current-head result: the AR-1615 development manifest records
+  channel `dev`, `development_only:true`, ASB commit
+  `62fda2f3417bf69f1da5f288b0df1d389c853dfa`, ASB tree
+  `2ee1f48939a1d5ff5b4628befbe3968ae21288f7`, TUI commit
+  `a5eda0bc4ce3387398e29697fb7d06d59bb447b1`, TUI tree
+  `0db9835ba5905435b88f08c00530bc52649d963c`, executable digest
+  `f885b07b704725c6fb84c30546e0e6e5de0d26ff2e6a3ff8c506a8b1acc74dca`, and
+  target `x86_64-unknown-linux-gnu`. Those heads differ from this receipt's
+  current pair and are reference evidence only.
+- Exact follow-up: run the bounded online dev-channel materializer on a clean
+  host with network access, capture the paired current-main manifest digest and
+  source/tree/executable identities, then repeat install, wizard, workload,
+  capture/replay/offline comparison, and independent review. This is the
+  remaining AR-1613 acceptance evidence before release consideration.
+
 Classification: environmental, contract-test, mechanical, and journey evidence.
 No live provider, network fallback, production credential, or authentication
 service was used. The development fixture remains visibly warning-only while
