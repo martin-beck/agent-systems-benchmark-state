@@ -943,9 +943,9 @@ class HandoffTest(unittest.TestCase):
         with self.assertRaisesRegex(RuntimeError, "active task"):
             CORE.apply_heartbeat(args, {"status": "open"})
         with self.assertRaisesRegex(RuntimeError, "positive lease"):
-            CORE.apply_heartbeat(SimpleNamespace(lease_minutes=0, owner="worker-a"), {
-                "status": "in_progress"
-            })
+            CORE.apply_heartbeat(
+                SimpleNamespace(lease_minutes=0, owner="worker-a"), {"status": "in_progress"}
+            )
         meta = {"status": "in_progress"}
         self.assertEqual("Heartbeat by worker-a.", CORE.apply_heartbeat(args, meta))
         expiry = dt.datetime.fromisoformat(meta["claim_expires"])
