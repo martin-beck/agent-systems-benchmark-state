@@ -4238,11 +4238,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1650-release |
 | Parent | None |
 | Children | None |
 | Summary | Expose selected-agent/workload fan-out through the versioned ASB control route and standalone TUI. |

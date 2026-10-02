@@ -426,18 +426,18 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1649](../tasks/AR-1649.md): Comparison analysis and report | codex-ar1649-release | Produce typed selected-agent comparison analysis and human/JSON reports from paired runs. | Implement comparability analysis, confounder/unavailable evidence reporting, and projections for fan-out run references. |
+| P0 | [AR-1650](../tasks/AR-1650.md): Fan-out control protocol and TUI integration | codex-ar1650-release | Expose selected-agent/workload fan-out through the versioned ASB control route and standalone TUI. | Implement the paired protocol/TUI adapter over Orchestrator::admit_fanout with exact human/JSON and offline tests. |
 
-### Open (2)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1613](../tasks/AR-1613.md): Current-main dev-channel consumption and quickstart qualification | Unclaimed | Prove a fresh clone can consume the published dev channel and complete the shortest install-to-offline-comparison journey. | Use the installed current paired manifest for the repository-owned fresh-user wizard/fixture with a valid content-addressed experiment identity; capture/replay/offline-compare it and obtain independent review before release. |
-| P0 | [AR-1650](../tasks/AR-1650.md): Fan-out control protocol and TUI integration | Unclaimed | Expose selected-agent/workload fan-out through the versioned ASB control route and standalone TUI. | Implement the paired protocol/TUI adapter over Orchestrator::admit_fanout with exact human/JSON and offline tests. |
 
 ### Blocked (82)
 
