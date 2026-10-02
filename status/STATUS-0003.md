@@ -1,5 +1,36 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Qualify selected/all workload recording, complete cassette sealing, and strict offline replay from the runner-owned route. |
+| Next action | Run selected and all-workload mock campaigns through capture, sealing, coverage gating, and offline replay with network denial evidence. |
+
+
+## Dependency graph
+
+Arrows point from each prerequisite to the work that depends on it. Color is redundant
+with the status text inside every node; the tables below are the complete text
+alternative.
+
+```mermaid
+flowchart LR
+    subgraph series_00["00 - Coordination foundation"]
+        direction TB
+        AR_0001["AR-0001 - Done"]:::status_done
+        AR_0002["AR-0002 - Done"]:::status_done
+        AR_0003["AR-0003 - Done"]:::status_done
+        AR_0004["AR-0004 - Done"]:::status_done
+        AR_0005["AR-0005 - Done"]:::status_done
+    end
+    subgraph series_01["01 - Contracts and runtime"]
+        direction TB
         AR_0101["AR-0101 - Done"]:::status_done
         AR_0102["AR-0102 - Done"]:::status_done
         AR_0103["AR-0103 - Done"]:::status_done
@@ -729,6 +760,8 @@
         AR_1684["AR-1684 - Planned"]:::status_planned
         AR_1685["AR-1685 - Done"]:::status_done
         AR_1686["AR-1686 - In progress"]:::status_in_progress
+        AR_1687["AR-1687 - Planned"]:::status_planned
+        AR_1688["AR-1688 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2426,6 +2459,7 @@
     AR_1646 --> AR_1648
     AR_1646 --> AR_1652
     AR_1646 --> AR_1686
+    AR_1646 --> AR_1688
     AR_1647 --> AR_1643
     AR_1647 --> AR_1657
     AR_1648 --> AR_1647
@@ -2435,6 +2469,7 @@
     AR_1649 --> AR_1647
     AR_1649 --> AR_1651
     AR_1649 --> AR_1686
+    AR_1649 --> AR_1687
     AR_1650 --> AR_1647
     AR_1650 --> AR_1652
     AR_1650 --> AR_1686
@@ -2443,10 +2478,12 @@
     AR_1651 --> AR_1655
     AR_1651 --> AR_1657
     AR_1651 --> AR_1686
+    AR_1651 --> AR_1687
     AR_1652 --> AR_1643
     AR_1652 --> AR_1654
     AR_1652 --> AR_1655
     AR_1652 --> AR_1686
+    AR_1652 --> AR_1688
     AR_1653 --> AR_1654
     AR_1653 --> AR_1655
     AR_1653 --> AR_1658
@@ -2488,6 +2525,8 @@
     AR_1676 --> AR_1678
     AR_1677 --> AR_1678
     AR_1682 --> AR_1683
+    AR_1687 --> AR_1686
+    AR_1688 --> AR_1686
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
