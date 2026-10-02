@@ -4680,24 +4680,21 @@
 | Parent | None |
 | Children | None |
 | Summary | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. |
-| Next action | Complete provider-bound comparison and runner-owned capture/replay through AR-1651 and AR-1652, then publish exact-head paired evidence for AR-1613. |
+| Next action | Complete AR-1687 provider-bound comparison and AR-1688 runner-owned capture/replay qualification, then publish exact-head paired evidence for AR-1613. |
 
+### AR-1687 — Development/mock provider-bound comparison qualification
 
-## Dependency graph
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Qualify truthful comparison availability and provider-bound comparability for development and mock runs. |
+| Next action | Run the exact-main comparison matrix for available, unavailable, asymmetric, and multi-candidate provider selections; record typed results without provider contact. |
 
-Arrows point from each prerequisite to the work that depends on it. Color is redundant
-with the status text inside every node; the tables below are the complete text
-alternative.
+### AR-1688 — Runner-owned cassette capture and replay qualification
 
-```mermaid
-flowchart LR
-    subgraph series_00["00 - Coordination foundation"]
-        direction TB
-        AR_0001["AR-0001 - Done"]:::status_done
-        AR_0002["AR-0002 - Done"]:::status_done
-        AR_0003["AR-0003 - Done"]:::status_done
-        AR_0004["AR-0004 - Done"]:::status_done
-        AR_0005["AR-0005 - Done"]:::status_done
-    end
-    subgraph series_01["01 - Contracts and runtime"]
-        direction TB
