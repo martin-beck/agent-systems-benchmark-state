@@ -467,7 +467,7 @@
         AR_1658["AR-1658 - Planned"]:::status_planned
         AR_1659["AR-1659 - Planned"]:::status_planned
         AR_1660["AR-1660 - Planned"]:::status_planned
-        AR_1661["AR-1661 - Planned"]:::status_planned
+        AR_1661["AR-1661 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
