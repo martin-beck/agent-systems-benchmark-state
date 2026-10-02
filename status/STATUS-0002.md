@@ -4570,7 +4570,7 @@
 | Summary | Make the default-dev install path detect missing host tools before launch and return actionable typed recovery without turning development authentication or signature warnings into blockers. |
 | Next action | Add a bounded host/toolchain preflight to the paired install contract, classify missing tools and PTY limitations, and qualify retry/cleanup with exact-head evidence. |
 
-### AR-1680 — Repair vendor manifest regression fixture
+### AR-1682 — Restore formal hierarchy model contract
 
 | Field | Value |
 | --- | --- |
@@ -4581,8 +4581,8 @@
 | Owner | Unclaimed |
 | Parent | None |
 | Children | None |
-| Summary | Align the immutable vendor-manifest regression fixture with the intentional task-spec validator vocabulary extension. |
-| Next action | Run vendor verification and the complete vendor regression test on the exact signed head. |
+| Summary | Repair the PR-publication formal model fixture so its hierarchy invariant matches the declared task domain without weakening any invariant or hosted gate. |
+| Next action | Run exact formal publication verification and independent review on the corrected model fixture. |
 
 
 ## Dependency graph

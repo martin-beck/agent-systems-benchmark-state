@@ -384,7 +384,7 @@
 | [AR-1660](../tasks/AR-1660.md) | [AR-1654](../tasks/AR-1654.md), [AR-1657](../tasks/AR-1657.md), [AR-1659](../tasks/AR-1659.md) | [AR-1667](../tasks/AR-1667.md), [AR-1668](../tasks/AR-1668.md) |
 | [AR-1661](../tasks/AR-1661.md) | None | [AR-1663](../tasks/AR-1663.md), [AR-1665](../tasks/AR-1665.md) |
 | [AR-1663](../tasks/AR-1663.md) | [AR-1658](../tasks/AR-1658.md), [AR-1661](../tasks/AR-1661.md) | [AR-1665](../tasks/AR-1665.md), [AR-1666](../tasks/AR-1666.md) |
-| [AR-1665](../tasks/AR-1665.md) | [AR-1661](../tasks/AR-1661.md), [AR-1663](../tasks/AR-1663.md) | [AR-1666](../tasks/AR-1666.md), [AR-1670](../tasks/AR-1670.md), [AR-1680](../tasks/AR-1680.md) |
+| [AR-1665](../tasks/AR-1665.md) | [AR-1661](../tasks/AR-1661.md), [AR-1663](../tasks/AR-1663.md) | [AR-1666](../tasks/AR-1666.md), [AR-1670](../tasks/AR-1670.md), [AR-1682](../tasks/AR-1682.md) |
 | [AR-1666](../tasks/AR-1666.md) | [AR-1663](../tasks/AR-1663.md), [AR-1665](../tasks/AR-1665.md) | None |
 | [AR-1667](../tasks/AR-1667.md) | [AR-1658](../tasks/AR-1658.md), [AR-1659](../tasks/AR-1659.md), [AR-1660](../tasks/AR-1660.md) | [AR-1668](../tasks/AR-1668.md) |
 | [AR-1668](../tasks/AR-1668.md) | [AR-1660](../tasks/AR-1660.md), [AR-1667](../tasks/AR-1667.md) | [AR-1677](../tasks/AR-1677.md) |
@@ -395,7 +395,7 @@
 | [AR-1676](../tasks/AR-1676.md) | [AR-1658](../tasks/AR-1658.md), [AR-1674](../tasks/AR-1674.md), [AR-1675](../tasks/AR-1675.md) | [AR-1677](../tasks/AR-1677.md), [AR-1678](../tasks/AR-1678.md) |
 | [AR-1677](../tasks/AR-1677.md) | [AR-1668](../tasks/AR-1668.md), [AR-1676](../tasks/AR-1676.md) | [AR-1678](../tasks/AR-1678.md) |
 | [AR-1678](../tasks/AR-1678.md) | [AR-1676](../tasks/AR-1676.md), [AR-1677](../tasks/AR-1677.md) | None |
-| [AR-1680](../tasks/AR-1680.md) | [AR-1665](../tasks/AR-1665.md) | None |
+| [AR-1682](../tasks/AR-1682.md) | [AR-1665](../tasks/AR-1665.md) | None |
 
 ## Complete AR inventory
 
@@ -570,7 +570,7 @@
 | P1 | [AR-1624](../tasks/AR-1624.md): AWQ/AWC quality and coordination gate | Unclaimed | Qualify the wizard release using current Agent Workflow Quality and Coordinator evidence, worker isolation, reconciliation, and recovery rules. | Promote after the release gate; run independent quality/coordination audit and recovery drill. |
 | P1 | [AR-1665](../tasks/AR-1665.md): Paired legacy task-spec metadata vocabulary repair | Unclaimed | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. |
 | P1 | [AR-1666](../tasks/AR-1666.md): Trusted-main broad TUI coverage qualification | Unclaimed | Raise current TUI main coverage from 89.43&#37; to the strict 90&#37; gate through behavior-focused tests without weakening thresholds. | Reproduce trusted-main coverage at exact head 06e96770, identify low-coverage wizard/runtime/UI paths, and add focused behavior tests preserving development nonblocking authentication, signature, and key-management rules. |
-| P1 | [AR-1680](../tasks/AR-1680.md): Repair vendor manifest regression fixture | Unclaimed | Align the immutable vendor-manifest regression fixture with the intentional task-spec validator vocabulary extension. | Run vendor verification and the complete vendor regression test on the exact signed head. |
+| P1 | [AR-1682](../tasks/AR-1682.md): Restore formal hierarchy model contract | Unclaimed | Repair the PR-publication formal model fixture so its hierarchy invariant matches the declared task domain without weakening any invariant or hosted gate. | Run exact formal publication verification and independent review on the corrected model fixture. |
 | P2 | [AR-0602](../tasks/AR-0602-csb-monitoring-contention.md): Validate CSB monitoring and contention diagnostics | Unclaimed | Validate and integrate optional CSB resource monitoring and kernel-contention evidence without double counting or overstating support. | Audit CSB monitoring using native x86_64 oracles and required pinned QEMU AArch64 portable mapping/lifecycle checks; keep native ARM64 counters and performance as optional future evidence. |
 | P2 | [AR-0903](../tasks/AR-0903-release-qualification.md): Package and qualify the first release | Unclaimed | Deliver reproducible native release artifacts with complete support and evidence statements. | Audit milestone completeness and run isolated release qualification. |
 | P2 | [AR-1016](../tasks/AR-1016-measurement-integration-audit.md): Integrate and audit measurement selection and CSB evidence | Unclaimed | Audit selectable and CSB-backed measurements across live and replay runs. | Add end-to-end live/replay comparison, release documentation, and independent audit after AR-1014 and AR-1015. |
