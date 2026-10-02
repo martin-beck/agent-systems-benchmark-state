@@ -12,6 +12,20 @@
 | Summary | Qualify selected/all workload recording, complete cassette sealing, and strict offline replay from the runner-owned route. |
 | Next action | Run selected and all-workload mock campaigns through capture, sealing, coverage gating, and offline replay with network denial evidence. |
 
+### AR-1689 — Paired TUI fresh-user integration and receipt qualification
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Qualify the complete current-main TUI journey from wizard setup through valid plan, benchmark, recording, offline replay, comparison, and analysis. |
+| Next action | Run the disposable exact-head ASB/TUI journey and publish a privacy-safe paired receipt without closing AR-1686 prematurely. |
+
 
 ## Dependency graph
 
@@ -762,6 +776,7 @@ flowchart LR
         AR_1686["AR-1686 - In progress"]:::status_in_progress
         AR_1687["AR-1687 - Planned"]:::status_planned
         AR_1688["AR-1688 - Planned"]:::status_planned
+        AR_1689["AR-1689 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2525,8 +2540,11 @@ flowchart LR
     AR_1676 --> AR_1678
     AR_1677 --> AR_1678
     AR_1682 --> AR_1683
+    AR_1686 --> AR_1689
     AR_1687 --> AR_1686
+    AR_1687 --> AR_1689
     AR_1688 --> AR_1686
+    AR_1688 --> AR_1689
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -2806,4 +2824,3 @@ flowchart LR
 | [AR-1235](../tasks/AR-1235-goose-diagnostic-fixture-portability.md) | [AR-0003](../tasks/AR-0003-quality-gates.md) | None |
 | [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md) | [AR-1100](../tasks/AR-1100.md), [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md) | [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md), [AR-1234](../tasks/AR-1234-runtime-loopback-namespace.md), [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) |
 | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md) | [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md), [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md) | [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md), [AR-1260](../tasks/AR-1260-runtime-owned-strict-replay-integration.md), [AR-1261](../tasks/AR-1261-runtime-to-cli-replay-entrypoint.md), [AR-1262](../tasks/AR-1262-runtime-owned-launch-authority.md), [AR-1265](../tasks/AR-1265-runtime-owned-replay-entrypoint.md), [AR-1266](../tasks/AR-1266-authenticated-replay-dispatch.md), [AR-1267](../tasks/AR-1267-runtime-replay-execution.md), [AR-1268](../tasks/AR-1268-replay-transport-boundary.md), [AR-1269](../tasks/AR-1269-runtime-replay-launch-factory.md), [AR-1270](../tasks/AR-1270-runtime-cassette-handle.md), [AR-1271](../tasks/AR-1271-cassette-operation-contract.md), [AR-1272](../tasks/AR-1272-authenticated-cassette-backend.md), [AR-1273](../tasks/AR-1273-complete-replay-context.md), [AR-1274](../tasks/AR-1274-runtime-cassette-executor-adapter.md), [AR-1275](../tasks/AR-1275-replay-operation-injection.md), [AR-1276](../tasks/AR-1276-primary-replay-runtime.md), [AR-1277](../tasks/AR-1277-runtime-cli-replay-transport.md), [AR-1278](../tasks/AR-1278-primary-runtime-client.md), [AR-1279](../tasks/AR-1279-end-to-end-replay-runtime.md), [AR-1280](../tasks/AR-1280-cross-crate-replay-entrypoint.md), [AR-1281](../tasks/AR-1281-supervised-cassette-lifecycle.md), [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md), [AR-1284](../tasks/AR-1284-runtime-strict-replay-lifecycle.md), [AR-1285](../tasks/AR-1285-runtime-launch-factory.md), [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md) |
-| [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md) | [AR-1100](../tasks/AR-1100.md), [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md) | [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md), [AR-1240](../tasks/AR-1240-native-signed-bundle-fixture.md), [AR-1260](../tasks/AR-1260-runtime-owned-strict-replay-integration.md), [AR-1261](../tasks/AR-1261-runtime-to-cli-replay-entrypoint.md), [AR-1262](../tasks/AR-1262-runtime-owned-launch-authority.md), [AR-1263](../tasks/AR-1263-sandbox-scope-classification-stability.md), [AR-1265](../tasks/AR-1265-runtime-owned-replay-entrypoint.md), [AR-1266](../tasks/AR-1266-authenticated-replay-dispatch.md), [AR-1267](../tasks/AR-1267-runtime-replay-execution.md), [AR-1268](../tasks/AR-1268-replay-transport-boundary.md), [AR-1269](../tasks/AR-1269-runtime-replay-launch-factory.md), [AR-1270](../tasks/AR-1270-runtime-cassette-handle.md), [AR-1271](../tasks/AR-1271-cassette-operation-contract.md), [AR-1272](../tasks/AR-1272-authenticated-cassette-backend.md), [AR-1273](../tasks/AR-1273-complete-replay-context.md), [AR-1274](../tasks/AR-1274-runtime-cassette-executor-adapter.md), [AR-1275](../tasks/AR-1275-replay-operation-injection.md), [AR-1276](../tasks/AR-1276-primary-replay-runtime.md), [AR-1277](../tasks/AR-1277-runtime-cli-replay-transport.md), [AR-1278](../tasks/AR-1278-primary-runtime-client.md), [AR-1279](../tasks/AR-1279-end-to-end-replay-runtime.md), [AR-1280](../tasks/AR-1280-cross-crate-replay-entrypoint.md), [AR-1281](../tasks/AR-1281-supervised-cassette-lifecycle.md), [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md), [AR-1284](../tasks/AR-1284-runtime-strict-replay-lifecycle.md), [AR-1285](../tasks/AR-1285-runtime-launch-factory.md), [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md) |
