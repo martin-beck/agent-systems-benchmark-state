@@ -1,5 +1,48 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+        AR_0404["AR-0404 - Done"]:::status_done
+        AR_0405["AR-0405 - Done"]:::status_done
+        AR_0406["AR-0406 - Done"]:::status_done
+    end
+    subgraph series_05["05 - Replay"]
+        direction TB
+        AR_0501["AR-0501 - Done"]:::status_done
+        AR_0502["AR-0502 - Done"]:::status_done
+        AR_0503["AR-0503 - Done"]:::status_done
+        AR_0504["AR-0504 - Done"]:::status_done
+        AR_0505["AR-0505 - Done"]:::status_done
+        AR_0506["AR-0506 - Done"]:::status_done
+        AR_0507["AR-0507 - Done"]:::status_done
+        AR_0508["AR-0508 - Done"]:::status_done
+        AR_0509["AR-0509 - Done"]:::status_done
+        AR_0510["AR-0510 - Done"]:::status_done
+        AR_0511["AR-0511 - Done"]:::status_done
+        AR_0512["AR-0512 - Done"]:::status_done
+        AR_0513["AR-0513 - Done"]:::status_done
+        AR_0514["AR-0514 - Blocked"]:::status_blocked
+        AR_0515["AR-0515 - Planned"]:::status_planned
+        AR_0516["AR-0516 - Done"]:::status_done
+        AR_0517["AR-0517 - Done"]:::status_done
+        AR_0518["AR-0518 - Done"]:::status_done
+        AR_0519["AR-0519 - Done"]:::status_done
+        AR_0520["AR-0520 - Done"]:::status_done
+        AR_0521["AR-0521 - Blocked"]:::status_blocked
+    end
+    subgraph series_06["06 - Metrics"]
+        direction TB
+        AR_0601["AR-0601 - Done"]:::status_done
+        AR_0602["AR-0602 - Planned"]:::status_planned
+        AR_0603["AR-0603 - Done"]:::status_done
+        AR_0604["AR-0604 - Blocked"]:::status_blocked
+    end
+    subgraph series_07["07 - Platforms"]
+        direction TB
+        AR_0701["AR-0701 - Done"]:::status_done
+        AR_0702["AR-0702 - Done"]:::status_done
+        AR_0703["AR-0703 - Future"]:::status_future
+        AR_0704["AR-0704 - Done"]:::status_done
+        AR_0705["AR-0705 - Blocked"]:::status_blocked
+        AR_0706["AR-0706 - Blocked"]:::status_blocked
         AR_0707["AR-0707 - Done"]:::status_done
     end
     subgraph series_08["08 - Interfaces"]
@@ -638,6 +681,10 @@
         AR_1677["AR-1677 - Planned"]:::status_planned
         AR_1678["AR-1678 - Planned"]:::status_planned
         AR_1679["AR-1679 - Planned"]:::status_planned
+        AR_1680["AR-1680 - Planned"]:::status_planned
+        AR_1682["AR-1682 - Planned"]:::status_planned
+        AR_1683["AR-1683 - Planned"]:::status_planned
+        AR_1684["AR-1684 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2376,15 +2423,19 @@
     AR_1665 --> AR_1666
     AR_1665 --> AR_1670
     AR_1665 --> AR_1679
+    AR_1665 --> AR_1680
+    AR_1665 --> AR_1682
     AR_1667 --> AR_1668
     AR_1668 --> AR_1677
     AR_1670 --> AR_1671
+    AR_1671 --> AR_1684
     AR_1674 --> AR_1675
     AR_1674 --> AR_1676
     AR_1675 --> AR_1676
     AR_1676 --> AR_1677
     AR_1676 --> AR_1678
     AR_1677 --> AR_1678
+    AR_1682 --> AR_1683
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -2675,13 +2726,3 @@
 | [AR-1246](../tasks/AR-1246-protected-main-dco-flow.md) | [AR-1242](../tasks/AR-1242-protected-main-admission.md), [AR-1245](../tasks/AR-1245-postmerge-dco-evidence.md) | None |
 | [AR-1247](../tasks/AR-1247-protected-main-dco-workflow.md) | [AR-1242](../tasks/AR-1242-protected-main-admission.md) | None |
 | [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md) | [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md), [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md) | None |
-| [AR-1249](../tasks/AR-1249-mockagents-qualification-evidence.md) | [AR-0888](../tasks/AR-0888-llm-double-conformance-spike.md), [AR-0889](../tasks/AR-0889-llm-fixture-scenario-contract.md) | None |
-| [AR-1250](../tasks/AR-1250-mockagents-harness-extension.md) | [AR-0888](../tasks/AR-0888-llm-double-conformance-spike.md), [AR-0889](../tasks/AR-0889-llm-fixture-scenario-contract.md) | [AR-1257](../tasks/AR-1257-mockagents-qemu-image.md) |
-| [AR-1251](../tasks/AR-1251-mockagents-transport-sandbox.md) | [AR-0888](../tasks/AR-0888-llm-double-conformance-spike.md), [AR-0889](../tasks/AR-0889-llm-fixture-scenario-contract.md) | [AR-1257](../tasks/AR-1257-mockagents-qemu-image.md) |
-| [AR-1252](../tasks/AR-1252-approved-isolated-qualification-runner.md) | [AR-0003](../tasks/AR-0003-quality-gates.md) | [AR-1253](../tasks/AR-1253-pinned-python-transport-runtime.md), [AR-1254](../tasks/AR-1254-mockagents-pinned-python-transport.md), [AR-1256](../tasks/AR-1256-bundled-mockagents-isolation.md), [AR-1303](../tasks/AR-1303-hosted-platform-diagnostics.md) |
-| [AR-1253](../tasks/AR-1253-pinned-python-transport-runtime.md) | [AR-1252](../tasks/AR-1252-approved-isolated-qualification-runner.md) | [AR-1254](../tasks/AR-1254-mockagents-pinned-python-transport.md), [AR-1255](../tasks/AR-1255-bundled-mockagents-qemu-runner.md), [AR-1256](../tasks/AR-1256-bundled-mockagents-isolation.md) |
-| [AR-1254](../tasks/AR-1254-mockagents-pinned-python-transport.md) | [AR-1252](../tasks/AR-1252-approved-isolated-qualification-runner.md), [AR-1253](../tasks/AR-1253-pinned-python-transport-runtime.md) | [AR-1255](../tasks/AR-1255-bundled-mockagents-qemu-runner.md) |
-| [AR-1255](../tasks/AR-1255-bundled-mockagents-qemu-runner.md) | [AR-1253](../tasks/AR-1253-pinned-python-transport-runtime.md), [AR-1254](../tasks/AR-1254-mockagents-pinned-python-transport.md) | None |
-| [AR-1256](../tasks/AR-1256-bundled-mockagents-isolation.md) | [AR-1252](../tasks/AR-1252-approved-isolated-qualification-runner.md), [AR-1253](../tasks/AR-1253-pinned-python-transport-runtime.md) | None |
-| [AR-1257](../tasks/AR-1257-mockagents-qemu-image.md) | [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md), [AR-1250](../tasks/AR-1250-mockagents-harness-extension.md), [AR-1251](../tasks/AR-1251-mockagents-transport-sandbox.md) | None |
-| [AR-1258](../tasks/AR-1258-docker-binfmt-qemu.md) | None | None |
