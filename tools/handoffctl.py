@@ -85,7 +85,13 @@ if __package__:
         render_status,
         render_status_pages_from_text,
     )
-    from .task_spec import done_admission_error, task_spec_errors
+    from .task_spec import (
+        DIGEST,
+        EVIDENCE_CLASSES,
+        EVIDENCE_REF,
+        done_admission_error,
+        task_spec_errors,
+    )
 else:  # pragma: no cover - direct script execution
     try:
         from board_metrics import build_metrics  # type: ignore[import-not-found,no-redef]  # noqa: I001
@@ -158,6 +164,9 @@ else:  # pragma: no cover - direct script execution
         render_status_pages_from_text,
     )
     from task_spec import (  # type: ignore[import-not-found,no-redef]
+        DIGEST,
+        EVIDENCE_CLASSES,
+        EVIDENCE_REF,
         done_admission_error,
         task_spec_errors,
     )
@@ -1737,7 +1746,7 @@ def require_role_admission(owner_id: str, required_role: str = "implementer") ->
 
 
 def require_update_role_admission(kind: str, owner_id: str) -> None:
-    if kind in {"update", "pause"}:
+    if kind in {"update", "pause", "accept"}:
         require_role_admission(owner_id)
 
 
@@ -1932,6 +1941,34 @@ def apply_owned_change(  # noqa: C901
     if meta.get("owner") != args.owner:
         raise RuntimeError(f"{args.task} is owned by {meta.get('owner') or 'nobody'}")
     require_update_role_admission(kind, str(args.owner))
+    if kind == "accept":
+        if meta.get("status") != "in_progress":
+            raise RuntimeError("acceptance evidence requires an active task")
+        if args.expected_revision != meta["task_revision"]:
+            raise RuntimeError(
+                f"stale revision: expected {args.expected_revision}, current {meta['task_revision']}"
+            )
+        spec_ref = meta.get("spec_ref")
+        spec_revision = meta.get("spec_revision")
+        if not isinstance(spec_ref, str) or not isinstance(spec_revision, int):
+            raise RuntimeError("acceptance evidence requires a task spec")
+        if args.spec_ref != spec_ref or args.spec_revision != spec_revision:
+            raise RuntimeError("acceptance evidence spec reference does not match task")
+        if args.evidence_class not in EVIDENCE_CLASSES:
+            raise RuntimeError("acceptance evidence class is unknown")
+        if not EVIDENCE_REF.fullmatch(args.evidence_ref):
+            raise RuntimeError("acceptance evidence ref is invalid")
+        if not DIGEST.fullmatch(args.evidence_digest):
+            raise RuntimeError("acceptance evidence digest is invalid")
+        meta["spec_acceptance"] = {
+            "spec_ref": args.spec_ref,
+            "spec_revision": args.spec_revision,
+            "status": "pass",
+            "evidence_class": args.evidence_class,
+            "evidence_ref": args.evidence_ref,
+            "evidence_digest": args.evidence_digest,
+        }
+        return str(args.note)
     require_release_admission(kind, getattr(args, "status", None), meta, tasks)
     if kind == "heartbeat":
         if args.lease_minutes <= 0 or meta.get("status") != "in_progress":
@@ -3183,6 +3220,7 @@ def dispatch_bound_command(args: argparse.Namespace) -> int:  # noqa: C901
     elif args.cmd in (
         "claim",
         "heartbeat",
+        "accept",
         "release",
         "promote",
         "pause",
@@ -3303,6 +3341,16 @@ def main() -> int:
     item.add_argument(
         "--status", required=True, choices=[value for value in STATUSES if value != "in_progress"]
     )
+    item.add_argument("--note", required=True)
+    item = commands.add_parser("accept")
+    item.add_argument("task")
+    item.add_argument("--owner", required=True)
+    item.add_argument("--expected-revision", type=int, required=True)
+    item.add_argument("--spec-ref", required=True)
+    item.add_argument("--spec-revision", type=int, required=True)
+    item.add_argument("--evidence-class", required=True)
+    item.add_argument("--evidence-ref", required=True)
+    item.add_argument("--evidence-digest", required=True)
     item.add_argument("--note", required=True)
     item = commands.add_parser("promote")
     item.add_argument("task")
