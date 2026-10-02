@@ -418,11 +418,11 @@
 
 ## Complete AR inventory
 
-### In progress (1)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1613](../tasks/AR-1613.md): Current-main dev-channel consumption and quickstart qualification | codex-ar1613 | Prove a fresh clone can consume the published dev channel and complete the shortest install-to-offline-comparison journey. | Environmental blocker: run bounded online dev-channel materializer on a network-enabled clean host; capture current paired manifest digest/source-tree/executable provenance, repeat install-to-offline-comparison, then obtain independent review before release. |
+| P0 | [AR-1613](../tasks/AR-1613.md): Current-main dev-channel consumption and quickstart qualification | Unclaimed | Prove a fresh clone can consume the published dev channel and complete the shortest install-to-offline-comparison journey. | Environmental blocker: run bounded online dev-channel materializer on a network-enabled clean host; capture current paired manifest digest/source-tree/executable provenance, repeat install-to-offline-comparison, then obtain independent review before release. |
 
 ### Blocked (82)
 
