@@ -650,6 +650,7 @@
         AR_1678["AR-1678 - Planned"]:::status_planned
         AR_1680["AR-1680 - Planned"]:::status_planned
         AR_1682["AR-1682 - Planned"]:::status_planned
+        AR_1683["AR-1683 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2398,6 +2399,7 @@
     AR_1676 --> AR_1677
     AR_1676 --> AR_1678
     AR_1677 --> AR_1678
+    AR_1682 --> AR_1683
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px

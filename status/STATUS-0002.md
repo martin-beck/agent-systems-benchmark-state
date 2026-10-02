@@ -4598,6 +4598,20 @@
 | Summary | Repair the PR-publication formal model fixture so its hierarchy invariant matches the declared task domain without weakening any invariant or hosted gate. |
 | Next action | Run exact formal publication verification and independent review on the corrected model fixture. |
 
+### AR-1683 — Provide approved TLC attestation resource bounds
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Make the hosted formal workflow export the approved TLC memory and swap bounds required by attestation. |
+| Next action | Run formal publication verification and runner regression tests on the exact hosted head. |
+
 
 ## Dependency graph
 

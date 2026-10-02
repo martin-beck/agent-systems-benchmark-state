@@ -63,12 +63,14 @@ class TlcRunnerTests(unittest.TestCase):
         verify = (ROOT / "formal" / "handoffctl" / "verify.sh").read_text(encoding="utf-8")
         self.assertIn("TLC_RUNTIME_ROOT", workflow)
         self.assertIn("TLC_ATTESTATION_PATH", workflow)
+        self.assertIn("TLC_MEMORY_MAX: 3G", workflow)
+        self.assertIn("TLC_SWAP_MAX: 3G", workflow)
         self.assertIn("TLC_RUNTIME_ROOT", verify)
 
     def test_pr_tier_has_one_process_contract_fixture(self) -> None:
         config = (ROOT / "formal" / "handoffctl" / "HandoffctlPR.cfg").read_text(encoding="utf-8")
         self.assertIn("Processes = {p1}", config)
-        self.assertIn("Tasks = {t1}", config)
+        self.assertIn('Tasks = {"t1", "t2"}', config)
 
     def test_command_has_bounded_jvm_and_process_group(self) -> None:
         command = RUNNER.build_command(
