@@ -4570,6 +4570,20 @@
 | Summary | Make the default-dev install path detect missing host tools before launch and return actionable typed recovery without turning development authentication or signature warnings into blockers. |
 | Next action | Add a bounded host/toolchain preflight to the paired install contract, classify missing tools and PTY limitations, and qualify retry/cleanup with exact-head evidence. |
 
+### AR-1680 — Repair vendor manifest regression fixture
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Align the immutable vendor-manifest regression fixture with the intentional task-spec validator vocabulary extension. |
+| Next action | Run vendor verification and the complete vendor regression test on the exact signed head. |
+
 ### AR-1681 — Normalize residual ASB task specifications
 
 | Field | Value |
@@ -4583,48 +4597,6 @@
 | Children | None |
 | Summary | Complete strict-schema normalization for residual ASB task records AR-1617 through AR-1621 without changing their acceptance or evidence requirements. |
 | Next action | Add only missing strict vocabulary fields, regenerate projections, and pass exact validation. |
-
-### AR-1682 — Restore formal hierarchy model contract
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Repair the PR-publication formal model fixture so its hierarchy invariant matches the declared task domain without weakening any invariant or hosted gate. |
-| Next action | Run exact formal publication verification and independent review on the corrected model fixture. |
-
-### AR-1683 — Provide approved TLC attestation resource bounds
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Make the hosted formal workflow export the approved TLC memory and swap bounds required by attestation. |
-| Next action | Run formal publication verification and runner regression tests on the exact hosted head. |
-
-### AR-1684 — Harden runtime selector helper matrix
-
-| Field | Value |
-| --- | --- |
-| Status | planned |
-| Priority | P1 |
-| Role | unassigned |
-| Team | unassigned |
-| Owner | Unclaimed |
-| Parent | None |
-| Children | None |
-| Summary | Lock in fail-closed rejection of hostile selector directory, symlink, and non-regular entries. |
-| Next action | Run the targeted authority defensive matrix and full hosted checks on the signed head. |
 
 
 ## Dependency graph
@@ -4697,3 +4669,24 @@ flowchart LR
         AR_0503["AR-0503 - Done"]:::status_done
         AR_0504["AR-0504 - Done"]:::status_done
         AR_0505["AR-0505 - Done"]:::status_done
+        AR_0506["AR-0506 - Done"]:::status_done
+        AR_0507["AR-0507 - Done"]:::status_done
+        AR_0508["AR-0508 - Done"]:::status_done
+        AR_0509["AR-0509 - Done"]:::status_done
+        AR_0510["AR-0510 - Done"]:::status_done
+        AR_0511["AR-0511 - Done"]:::status_done
+        AR_0512["AR-0512 - Done"]:::status_done
+        AR_0513["AR-0513 - Done"]:::status_done
+        AR_0514["AR-0514 - Blocked"]:::status_blocked
+        AR_0515["AR-0515 - Planned"]:::status_planned
+        AR_0516["AR-0516 - Done"]:::status_done
+        AR_0517["AR-0517 - Done"]:::status_done
+        AR_0518["AR-0518 - Done"]:::status_done
+        AR_0519["AR-0519 - Done"]:::status_done
+        AR_0520["AR-0520 - Done"]:::status_done
+        AR_0521["AR-0521 - Blocked"]:::status_blocked
+    end
+    subgraph series_06["06 - Metrics"]
+        direction TB
+        AR_0601["AR-0601 - Done"]:::status_done
+        AR_0602["AR-0602 - Planned"]:::status_planned
