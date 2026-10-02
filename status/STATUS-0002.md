@@ -4430,6 +4430,34 @@
 | Summary | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. |
 | Next action | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. |
 
+### AR-1666 — Trusted-main broad TUI coverage qualification
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Raise current TUI main coverage from 89.43&#37; to the strict 90&#37; gate through behavior-focused tests without weakening thresholds. |
+| Next action | Reproduce trusted-main coverage at exact head 06e96770, identify low-coverage wizard/runtime/UI paths, and add focused behavior tests preserving development nonblocking authentication, signature, and key-management rules. |
+
+### AR-1667 — Paired dev release and downstream consumption qualification
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Publish and consume the exact default-dev ASB/TUI artifacts from a fresh clone with install, wizard, benchmark, replay, comparison, and rollback evidence. |
+| Next action | Reconcile implementation ARs and run the exact-head release and downstream-consumption matrix after trusted-main checks are green. |
+
 
 ## Dependency graph
 
@@ -4643,27 +4671,3 @@ flowchart LR
         AR_1005["AR-1005 - Done"]:::status_done
         AR_1006["AR-1006 - Done"]:::status_done
         AR_1007["AR-1007 - Done"]:::status_done
-        AR_1008["AR-1008 - Done"]:::status_done
-        AR_1010["AR-1010 - Done"]:::status_done
-        AR_1011["AR-1011 - Planned"]:::status_planned
-        AR_1012["AR-1012 - Planned"]:::status_planned
-        AR_1013["AR-1013 - Done"]:::status_done
-        AR_1014["AR-1014 - Planned"]:::status_planned
-        AR_1015["AR-1015 - Planned"]:::status_planned
-        AR_1016["AR-1016 - Planned"]:::status_planned
-        AR_1017["AR-1017 - Done"]:::status_done
-        AR_1018["AR-1018 - Done"]:::status_done
-        AR_1019["AR-1019 - Done"]:::status_done
-        AR_1020["AR-1020 - Done"]:::status_done
-        AR_1021["AR-1021 - Done"]:::status_done
-        AR_1022["AR-1022 - Done"]:::status_done
-        AR_1023["AR-1023 - Done"]:::status_done
-        AR_1024["AR-1024 - Blocked"]:::status_blocked
-        AR_1025["AR-1025 - Blocked"]:::status_blocked
-        AR_1026["AR-1026 - Planned"]:::status_planned
-        AR_1027["AR-1027 - Planned"]:::status_planned
-        AR_1028["AR-1028 - Done"]:::status_done
-        AR_1029["AR-1029 - Planned"]:::status_planned
-        AR_1030["AR-1030 - Done"]:::status_done
-        AR_1031["AR-1031 - Planned"]:::status_planned
-        AR_1032["AR-1032 - Planned"]:::status_planned
