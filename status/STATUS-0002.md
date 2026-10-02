@@ -4458,6 +4458,20 @@
 | Summary | Publish and consume the exact default-dev ASB/TUI artifacts from a fresh clone with install, wizard, benchmark, replay, comparison, and rollback evidence. |
 | Next action | Reconcile implementation ARs and run the exact-head release and downstream-consumption matrix after trusted-main checks are green. |
 
+### AR-1670 — Repair ASB state strict-mypy baseline
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Restore the missing typed coordinator adapters and repair strict mypy errors so Git-backed ASB state verification is runnable without weakening gates. |
+| Next action | Reproduce the failure on the current base, restore or correctly package the typed adapter/role modules, and run the full strict state workflow on the repair head. |
+
 
 ## Dependency graph
 
@@ -4658,16 +4672,3 @@ flowchart LR
         AR_0904["AR-0904 - Done"]:::status_done
         AR_0905["AR-0905 - Done"]:::status_done
         AR_0906["AR-0906 - Done"]:::status_done
-        AR_0907["AR-0907 - Done"]:::status_done
-        AR_0908["AR-0908 - Done"]:::status_done
-        AR_0909["AR-0909 - Done"]:::status_done
-    end
-    subgraph series_10["10 - Reliability and release"]
-        direction TB
-        AR_1001["AR-1001 - Done"]:::status_done
-        AR_1002["AR-1002 - Done"]:::status_done
-        AR_1003["AR-1003 - Done"]:::status_done
-        AR_1004["AR-1004 - Done"]:::status_done
-        AR_1005["AR-1005 - Done"]:::status_done
-        AR_1006["AR-1006 - Done"]:::status_done
-        AR_1007["AR-1007 - Done"]:::status_done
