@@ -7,7 +7,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Qualify selected/all workload recording, complete cassette sealing, and strict offline replay from the runner-owned route. |
-| Next action | Run exact post-merge selected and all-workload runner-owned capture, sealing, and strict offline replay qualification against ASB main d49b6815dbe6d7b453e87c84e50a2763eb807778; do not close from implementation evidence alone. |
+| Next action | No further action; exact post-merge runner-owned selected/all capture, sealing, generated-cassette strict replay, and denied-network evidence are recorded. |
 
 ### AR-1689 — Paired TUI fresh-user integration and receipt qualification
 
@@ -800,7 +800,7 @@ flowchart LR
         AR_1685["AR-1685 - Done"]:::status_done
         AR_1686["AR-1686 - In progress"]:::status_in_progress
         AR_1687["AR-1687 - Planned"]:::status_planned
-        AR_1688["AR-1688 - Planned"]:::status_planned
+        AR_1688["AR-1688 - Done"]:::status_done
         AR_1689["AR-1689 - Planned"]:::status_planned
         AR_1690["AR-1690 - Planned"]:::status_planned
         AR_1691["AR-1691 - Planned"]:::status_planned
