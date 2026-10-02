@@ -4668,6 +4668,20 @@
 | Summary | Repair task metadata and handoffctl validation so supported done transitions can record exact acceptance evidence without weakening fail-closed gates. |
 | Next action | Claim through handoffctl, implement the validated spec_acceptance metadata contract and focused rejection/acceptance tests, then open a reviewed state-only PR. |
 
+### AR-1686 — Current-head content-addressed plan generation and qualification repair
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. |
+| Next action | Replace hand-authored plan synthesis with plan create, add stale-identity negatives, and publish exact-head paired evidence for AR-1613. |
+
 
 ## Dependency graph
 
@@ -4686,19 +4700,4 @@ flowchart LR
         AR_0005["AR-0005 - Done"]:::status_done
     end
     subgraph series_01["01 - Contracts and runtime"]
-        direction TB
-        AR_0101["AR-0101 - Done"]:::status_done
-        AR_0102["AR-0102 - Done"]:::status_done
-        AR_0103["AR-0103 - Done"]:::status_done
-        AR_0104["AR-0104 - Done"]:::status_done
-        AR_0105["AR-0105 - Done"]:::status_done
-    end
-    subgraph series_02["02 - Analysis"]
-        direction TB
-        AR_0201["AR-0201 - Done"]:::status_done
-        AR_0202["AR-0202 - Done"]:::status_done
-        AR_0203["AR-0203 - Done"]:::status_done
-        AR_0204["AR-0204 - Done"]:::status_done
-    end
-    subgraph series_03["03 - Adapters and workloads"]
         direction TB

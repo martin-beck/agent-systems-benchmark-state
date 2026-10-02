@@ -5,7 +5,7 @@
 
 ## Portfolio overview
 
-**688 ARs tracked** across 7 active status categories.
+**689 ARs tracked** across 7 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
