@@ -60,7 +60,10 @@
     "observed_branch": {"type": "string", "maxLength": 160},
     "observed_head": {"type": "string", "pattern": "^(|[0-9a-f]{40})$"},
     "superseded_by": {"type": "string", "pattern": "^AR-[0-9]{4}$"},
-    "observed_dirty": {"type": "integer", "minimum": 0}
+    "observed_dirty": {"type": "integer", "minimum": 0},
+    "spec_ref": {"type": "string", "pattern": "^specs/AR-[0-9]{4}\\.json$"},
+    "spec_revision": {"type": "integer", "minimum": 1},
+    "spec_acceptance": {"type": "object", "additionalProperties": true}
   },
   "allOf": [
     {
