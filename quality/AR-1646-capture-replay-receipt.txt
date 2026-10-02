@@ -1,0 +1,14 @@
+AR-1646 acceptance receipt
+
+Status: pass (already implemented on protected ASB main)
+ASB protected main: 8e49e3f1c5ec0650eeb1f505b940606aa9371954
+
+Runtime-owned capture enforces identity/deadline/cancellation, seals and
+reopens cassettes for verification, and returns digest metadata. Campaign
+capture expands selected agent/workload tuples with checkpointing and marks
+offline_ready only after complete validated coverage. Offline replay requires
+opaque runtime authority bound to the cassette digest, uses strict replay, and
+reports network denied with no provider fallback.
+
+Verification: 189 asb-cli library tests, all asb-replay targets, and 164
+asb-runtime tests passed (one intentionally ignored capability test).
