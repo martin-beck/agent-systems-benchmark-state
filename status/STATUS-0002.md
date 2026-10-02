@@ -4402,6 +4402,20 @@
 | Summary | Restore parseable task front matter and an acyclic, complete Git-backed ASB coordination graph. |
 | Next action | Inventory malformed task records and dependency cycles, repair only historical metadata, regenerate status views, and verify handoffctl render-status --check. |
 
+### AR-1663 — Repair protected-main DCO recognition failure
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Repair the current protected-main merge metadata so DCO recognition succeeds without changing product files or development nonblocking behavior. |
+| Next action | Confirm AR-1661 and AR-1658 dependency evidence, then repair and independently verify the exact protected-main merge topology, Signed-off-by trailer, SSH signature, unchanged tree, and hosted policy. |
+
 
 ## Dependency graph
 
@@ -4650,15 +4664,3 @@ flowchart LR
         AR_1041["AR-1041 - Done"]:::status_done
         AR_1042["AR-1042 - Done"]:::status_done
         AR_1043["AR-1043 - Done"]:::status_done
-        AR_1044["AR-1044 - Done"]:::status_done
-        AR_1045["AR-1045 - Done"]:::status_done
-        AR_1046["AR-1046 - Superseded"]:::status_superseded
-        AR_1047["AR-1047 - Done"]:::status_done
-        AR_1048["AR-1048 - Superseded"]:::status_superseded
-        AR_1049["AR-1049 - Superseded"]:::status_superseded
-        AR_1050["AR-1050 - Superseded"]:::status_superseded
-        AR_1051["AR-1051 - Done"]:::status_done
-        AR_1052["AR-1052 - Superseded"]:::status_superseded
-        AR_1053["AR-1053 - Done"]:::status_done
-        AR_1054["AR-1054 - Superseded"]:::status_superseded
-        AR_1055["AR-1055 - Done"]:::status_done

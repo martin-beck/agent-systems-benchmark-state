@@ -1,5 +1,9 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1300](../tasks/AR-1300-runtime-cassette-dispatch-seam.md) | [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md), [AR-1285](../tasks/AR-1285-runtime-launch-factory.md) | [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md), [AR-1306](../tasks/AR-1306-authenticated-fault-matrix-qualification.md) |
+| [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md) | [AR-1287](../tasks/AR-1287-delegated-sandbox-runner.md), [AR-1300](../tasks/AR-1300-runtime-cassette-dispatch-seam.md) | None |
+| [AR-1302](../tasks/AR-1302-portable-tlc-runner.md) | None | [AR-1304](../tasks/AR-1304-required-tier-qemu-runner.md), [AR-1305](../tasks/AR-1305-image-native-user-session.md), [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md), [AR-1515](../tasks/AR-1515-ar1307-runner-ci-oom-repair.md) |
+| [AR-1303](../tasks/AR-1303-hosted-platform-diagnostics.md) | [AR-0907](../tasks/AR-0907-hosted-runner-evidence-classification.md), [AR-1252](../tasks/AR-1252-approved-isolated-qualification-runner.md) | None |
 | [AR-1304](../tasks/AR-1304-required-tier-qemu-runner.md) | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md) | [AR-1308](../tasks/AR-1308-full-exhaustive-qemu-capacity.md), [AR-1516](../tasks/AR-1516-ar1308-qemu-fixture-evidence-repair.md), [AR-1517](../tasks/AR-1517-ar1309-capacity-decision-unblock.md), [AR-1519](../tasks/AR-1519.md) |
 | [AR-1305](../tasks/AR-1305-image-native-user-session.md) | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md) | None |
 | [AR-1306](../tasks/AR-1306-authenticated-fault-matrix-qualification.md) | [AR-1287](../tasks/AR-1287-delegated-sandbox-runner.md), [AR-1300](../tasks/AR-1300-runtime-cassette-dispatch-seam.md) | None |
@@ -334,10 +338,11 @@
 | [AR-1655](../tasks/AR-1655.md) | [AR-1623](../tasks/AR-1623.md), [AR-1624](../tasks/AR-1624.md), [AR-1651](../tasks/AR-1651.md), [AR-1652](../tasks/AR-1652.md), [AR-1653](../tasks/AR-1653.md), [AR-1654](../tasks/AR-1654.md), [AR-1657](../tasks/AR-1657.md) | None |
 | [AR-1656](../tasks/AR-1656.md) | [AR-1607](../tasks/AR-1607.md), [AR-1608](../tasks/AR-1608.md), [AR-1609](../tasks/AR-1609.md) | [AR-1654](../tasks/AR-1654.md), [AR-1657](../tasks/AR-1657.md) |
 | [AR-1657](../tasks/AR-1657.md) | [AR-1641](../tasks/AR-1641.md), [AR-1645](../tasks/AR-1645.md), [AR-1647](../tasks/AR-1647.md), [AR-1651](../tasks/AR-1651.md), [AR-1656](../tasks/AR-1656.md) | [AR-1655](../tasks/AR-1655.md), [AR-1660](../tasks/AR-1660.md) |
-| [AR-1658](../tasks/AR-1658.md) | [AR-1562](../tasks/AR-1562.md), [AR-1563](../tasks/AR-1563.md), [AR-1653](../tasks/AR-1653.md) | [AR-1659](../tasks/AR-1659.md) |
+| [AR-1658](../tasks/AR-1658.md) | [AR-1562](../tasks/AR-1562.md), [AR-1563](../tasks/AR-1563.md), [AR-1653](../tasks/AR-1653.md) | [AR-1659](../tasks/AR-1659.md), [AR-1663](../tasks/AR-1663.md) |
 | [AR-1659](../tasks/AR-1659.md) | [AR-1611](../tasks/AR-1611.md), [AR-1658](../tasks/AR-1658.md) | [AR-1660](../tasks/AR-1660.md) |
 | [AR-1660](../tasks/AR-1660.md) | [AR-1654](../tasks/AR-1654.md), [AR-1657](../tasks/AR-1657.md), [AR-1659](../tasks/AR-1659.md) | None |
-| [AR-1661](../tasks/AR-1661.md) | None | None |
+| [AR-1661](../tasks/AR-1661.md) | None | [AR-1663](../tasks/AR-1663.md) |
+| [AR-1663](../tasks/AR-1663.md) | [AR-1658](../tasks/AR-1658.md), [AR-1661](../tasks/AR-1661.md) | None |
 
 ## Complete AR inventory
 
@@ -434,7 +439,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (65)
+### Planned (66)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -471,6 +476,7 @@
 | P0 | [AR-1658](../tasks/AR-1658.md): Development release-channel resolver contract | Unclaimed | Define and implement the ASB-side channel option with dev as the default and current-main provenance. | Implement the explicit channel parser/resolver and immutable current-main manifest checks, then add dev/stable/nightly/experimental negative coverage. |
 | P0 | [AR-1659](../tasks/AR-1659.md): Atomic TUI materializer and launch handoff | Unclaimed | Build the selected dev-channel TUI in a temporary location and atomically install and launch it from ASB. | Implement the bounded clone/build/materialize/rollback runner and verify cleanup, manifest compatibility, and launch diagnostics. |
 | P0 | [AR-1660](../tasks/AR-1660.md): Fresh-user setup-to-comparison acceptance runner | Unclaimed | Run one selectable ASB journey from install and wizard setup through benchmark, recording, offline replay, and comparison. | Implement the disposable acceptance runner and capture exact-head human and JSON receipts for the paired qualification gate. |
+| P0 | [AR-1663](../tasks/AR-1663.md): Repair protected-main DCO recognition failure | Unclaimed | Repair the current protected-main merge metadata so DCO recognition succeeds without changing product files or development nonblocking behavior. | Confirm AR-1661 and AR-1658 dependency evidence, then repair and independently verify the exact protected-main merge topology, Signed-off-by trailer, SSH signature, unchanged tree, and hosted policy. |
 | P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
 | P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
 | P1 | [AR-0810](../tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Unclaimed | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project&#x27;s GitHub Pages site. |
@@ -573,8 +579,3 @@
 | P0 | [AR-1196](../tasks/AR-1196-protected-main-dco-repair.md): Protected-main DCO history repair | Unclaimed | Restore a Signed-off-by-bearing protected-main history after the catalog merge. | Completed: PR #170 merged; stale duplicate PR #171 requires authorized cleanup. |
 | P0 | [AR-1198](../tasks/AR-1198.md): Canonical authenticated agent-catalog digest | Unclaimed | Define and enforce the canonical authenticated ASB v1.4 agent-catalog digest. | Independently review PR #174 at exact head 3cc8fa1a27587642bda5100f45140c11f1fd0c6d, run cross-repository vector checks with asb-tui AR-1195, then merge only after all exact-head checks are green. |
 | P0 | [AR-1210](../tasks/AR-1210-tutorial-contract-validator.md): Tutorial contract and syntax validator | Unclaimed | Define offline tutorial steps and validate them against the ASB CLI grammar. | Do not release AR-1210 yet: post-merge Repository quality run 35054743606 failed because protected merge commit 4d4a0c4 lacks Signed-off-by. Coordinate merge-integrity/DCO repair and rerun exact-main assurance; preserve merged main and all evidence. |
-| P0 | [AR-1211](../tasks/AR-1211-initial-setup-first-agent.md): Initial setup and first agent connection tutorial | Unclaimed | Teach first-time users to initialize ASB and add the first agent connection. | Implement the syntax-checked tutorial for ASB initialization, first-agent registration, and agent connection setup. |
-| P0 | [AR-1212](../tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Unclaimed | Teach users to test configured-agent benchmark eligibility without running an agent. | Release AR-1212 as done with complete merge and post-merge evidence; then reconcile and monitor stale PR #306/AR-1316 closure. |
-| P0 | [AR-1213](../tasks/AR-1213-benchmark-and-shared-config.md): Benchmark run and shared-agent configuration tutorials | Unclaimed | Teach benchmark execution and extending agents with one shared configuration. | Implement syntax-checked tutorials for one benchmark run and atomic shared configuration across selected agents. |
-| P0 | [AR-1214](../tasks/AR-1214-record-replay.md): LLM response record/replay tutorial | Unclaimed | Teach privacy-safe LLM response recording and strict offline replay. | PR #311 exists at exact head fe00f59; run independent review and exact-head CI, then merge and complete seven post-merge checks. |
-| P0 | [AR-1215](../tasks/AR-1215-result-comparison.md): Multi-agent result comparison tutorial | Unclaimed | Teach conservative comparison of multiple agents from the same benchmark. | Resolve or requalify post-merge repository-quality failure for merge f51164569bf4da67a0759328b4be280385abe9a4; then rerun/monitor all seven post-merge workflows to terminal and release only after all succeed. |

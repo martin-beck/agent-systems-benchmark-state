@@ -1,5 +1,17 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+        AR_1044["AR-1044 - Done"]:::status_done
+        AR_1045["AR-1045 - Done"]:::status_done
+        AR_1046["AR-1046 - Superseded"]:::status_superseded
+        AR_1047["AR-1047 - Done"]:::status_done
+        AR_1048["AR-1048 - Superseded"]:::status_superseded
+        AR_1049["AR-1049 - Superseded"]:::status_superseded
+        AR_1050["AR-1050 - Superseded"]:::status_superseded
+        AR_1051["AR-1051 - Done"]:::status_done
+        AR_1052["AR-1052 - Superseded"]:::status_superseded
+        AR_1053["AR-1053 - Done"]:::status_done
+        AR_1054["AR-1054 - Superseded"]:::status_superseded
+        AR_1055["AR-1055 - Done"]:::status_done
         AR_1056["AR-1056 - Superseded"]:::status_superseded
         AR_1057["AR-1057 - Done"]:::status_done
         AR_1058["AR-1058 - Superseded"]:::status_superseded
@@ -468,6 +480,7 @@
         AR_1659["AR-1659 - Planned"]:::status_planned
         AR_1660["AR-1660 - Planned"]:::status_planned
         AR_1661["AR-1661 - Done"]:::status_done
+        AR_1663["AR-1663 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2189,7 +2202,9 @@
     AR_1657 --> AR_1655
     AR_1657 --> AR_1660
     AR_1658 --> AR_1659
+    AR_1658 --> AR_1663
     AR_1659 --> AR_1660
+    AR_1661 --> AR_1663
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -2531,7 +2546,3 @@
 | [AR-1297](../tasks/AR-1297-task-schema-metadata.md) | None | None |
 | [AR-1298](../tasks/AR-1298-narrow-metadata-repair.md) | None | None |
 | [AR-1299](../tasks/AR-1299.md) | [AR-1190](../tasks/AR-1190.md) | None |
-| [AR-1300](../tasks/AR-1300-runtime-cassette-dispatch-seam.md) | [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md), [AR-1285](../tasks/AR-1285-runtime-launch-factory.md) | [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md), [AR-1306](../tasks/AR-1306-authenticated-fault-matrix-qualification.md) |
-| [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md) | [AR-1287](../tasks/AR-1287-delegated-sandbox-runner.md), [AR-1300](../tasks/AR-1300-runtime-cassette-dispatch-seam.md) | None |
-| [AR-1302](../tasks/AR-1302-portable-tlc-runner.md) | None | [AR-1304](../tasks/AR-1304-required-tier-qemu-runner.md), [AR-1305](../tasks/AR-1305-image-native-user-session.md), [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md), [AR-1515](../tasks/AR-1515-ar1307-runner-ci-oom-repair.md) |
-| [AR-1303](../tasks/AR-1303-hosted-platform-diagnostics.md) | [AR-0907](../tasks/AR-0907-hosted-runner-evidence-classification.md), [AR-1252](../tasks/AR-1252-approved-isolated-qualification-runner.md) | None |
