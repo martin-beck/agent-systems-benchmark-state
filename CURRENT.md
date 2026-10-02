@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1613](tasks/AR-1613.md): Current-main dev-channel consumption and quickstart qualification | Prove a fresh clone can consume the published dev channel and complete the shortest install-to-offline-comparison journey. | Run the disposable exact-head current-main journey now that AR-1615 and AR-1632 are complete; record the remaining wizard-to-benchmark/offline-comparison evidence. | - |
+| P0 | [AR-1613](tasks/AR-1613.md): Current-main dev-channel consumption and quickstart qualification | Prove a fresh clone can consume the published dev channel and complete the shortest install-to-offline-comparison journey. | Run the disposable exact-head current-main journey now that AR-1615 and AR-1632 are complete; record the remaining wizard-to-benchmark/offline-comparison evidence. | codex-ar1613 |
 
 ## Blocked
 
@@ -174,6 +174,12 @@ Never edit this file directly.
 | P1 | [AR-1624](tasks/AR-1624.md): AWQ/AWC quality and coordination gate | Qualify the wizard release using current Agent Workflow Quality and Coordinator evidence, worker isolation, reconciliation, and recovery rules. | Promote after the release gate; run independent quality/coordination audit and recovery drill. | - |
 | P1 | [AR-1665](tasks/AR-1665.md): Paired legacy task-spec metadata vocabulary repair | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. | - |
 | P1 | [AR-1666](tasks/AR-1666.md): Trusted-main broad TUI coverage qualification | Raise current TUI main coverage from 89.43% to the strict 90% gate through behavior-focused tests without weakening thresholds. | Reproduce trusted-main coverage at exact head 06e96770, identify low-coverage wizard/runtime/UI paths, and add focused behavior tests preserving development nonblocking authentication, signature, and key-management rules. | - |
+| P1 | [AR-1679](tasks/AR-1679.md): ASB legacy task-spec normalization | Normalize the remaining ASB legacy task-spec records rejected by strict validation without changing task intent or gates. | Normalize AR-1625/1626/1628-1630 and AR-1641-1655, regenerate projections, and pass fresh strict validation. | - |
+| P1 | [AR-1680](tasks/AR-1680.md): Repair vendor manifest regression fixture | Align the immutable vendor-manifest regression fixture with the intentional task-spec validator vocabulary extension. | Run vendor verification and the complete vendor regression test on the exact signed head. | - |
+| P1 | [AR-1681](tasks/AR-1681.md): Normalize residual ASB task specifications | Complete strict-schema normalization for residual ASB task records AR-1617 through AR-1621 without changing their acceptance or evidence requirements. | Add only missing strict vocabulary fields, regenerate projections, and pass exact validation. | - |
+| P1 | [AR-1682](tasks/AR-1682.md): Restore formal hierarchy model contract | Repair the PR-publication formal model fixture so its hierarchy invariant matches the declared task domain without weakening any invariant or hosted gate. | Run exact formal publication verification and independent review on the corrected model fixture. | - |
+| P1 | [AR-1683](tasks/AR-1683.md): Provide approved TLC attestation resource bounds | Make the hosted formal workflow export the approved TLC memory and swap bounds required by attestation. | Run formal publication verification and runner regression tests on the exact hosted head. | - |
+| P1 | [AR-1684](tasks/AR-1684.md): Harden runtime selector helper matrix | Lock in fail-closed rejection of hostile selector directory, symlink, and non-regular entries. | Run the targeted authority defensive matrix and full hosted checks on the signed head. | - |
 | P2 | [AR-0602](tasks/AR-0602-csb-monitoring-contention.md): Validate CSB monitoring and contention diagnostics | Validate and integrate optional CSB resource monitoring and kernel-contention evidence without double counting or overstating support. | Audit CSB monitoring using native x86_64 oracles and required pinned QEMU AArch64 portable mapping/lifecycle checks; keep native ARM64 counters and performance as optional future evidence. | - |
 | P2 | [AR-0903](tasks/AR-0903-release-qualification.md): Package and qualify the first release | Deliver reproducible native release artifacts with complete support and evidence statements. | Audit milestone completeness and run isolated release qualification. | - |
 | P2 | [AR-1016](tasks/AR-1016-measurement-integration-audit.md): Integrate and audit measurement selection and CSB evidence | Audit selectable and CSB-backed measurements across live and replay runs. | Add end-to-end live/replay comparison, release documentation, and independent audit after AR-1014 and AR-1015. | - |

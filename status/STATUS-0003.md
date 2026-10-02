@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+        AR_0314["AR-0314 - Done"]:::status_done
         AR_0315["AR-0315 - Done"]:::status_done
         AR_0316["AR-0316 - Done"]:::status_done
         AR_0317["AR-0317 - Done"]:::status_done
@@ -632,7 +633,7 @@
         AR_1609["AR-1609 - Done"]:::status_done
         AR_1611["AR-1611 - Done"]:::status_done
         AR_1612["AR-1612 - Done"]:::status_done
-        AR_1613["AR-1613 - Open"]:::status_open
+        AR_1613["AR-1613 - In progress"]:::status_in_progress
         AR_1614["AR-1614 - Done"]:::status_done
         AR_1615["AR-1615 - Done"]:::status_done
         AR_1617["AR-1617 - Done"]:::status_done
@@ -2736,4 +2737,3 @@
 | [AR-1242](../tasks/AR-1242-protected-main-admission.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0897](../tasks/AR-0897-main-merge-integrity.md) | [AR-1245](../tasks/AR-1245-postmerge-dco-evidence.md), [AR-1246](../tasks/AR-1246-protected-main-dco-flow.md), [AR-1247](../tasks/AR-1247-protected-main-dco-workflow.md), [AR-1259](../tasks/AR-1259-protected-main-dco-recovery.md) |
 | [AR-1243](../tasks/AR-1243-signed-bundle-assembly.md) | [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md), [AR-1240](../tasks/AR-1240-native-signed-bundle-fixture.md), [AR-1241](../tasks/AR-1241-native-isolation-matrix.md) | [AR-1245](../tasks/AR-1245-postmerge-dco-evidence.md) |
 | [AR-1244](../tasks/AR-1244-publish-replay-supervision.md) | [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md) | None |
-| [AR-1245](../tasks/AR-1245-postmerge-dco-evidence.md) | [AR-1242](../tasks/AR-1242-protected-main-admission.md), [AR-1243](../tasks/AR-1243-signed-bundle-assembly.md) | [AR-1246](../tasks/AR-1246-protected-main-dco-flow.md) |
