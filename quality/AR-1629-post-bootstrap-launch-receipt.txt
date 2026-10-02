@@ -1,0 +1,9 @@
+AR: AR-1629
+Status: DONE
+TUI implementation PR: #220, signed/DCO head 57aa4aa4994455a70225d16685e3567fa35bd478
+TUI merged protected-main commit: 25ec7b7506ced3d2f00c814e8b243645e87851f6
+Hosted evidence: Repository Quality run 36960665438 and AWQ shadow run 36960665597 passed on the exact reviewed head.
+Behavior: development startup adopts the attached output PTY when /dev/tty is unavailable after broker handoff; stable behavior remains /dev/tty-only.
+Local evidence: broker-handoff focused tests, full locked library suite, formatting, clippy, and inventory checks passed.
+ASB audit: exact ASB 62fda2f3417bf69f1da5f288b0df1d389c853dfa already provides the paired broker/control seam; no ASB code change was justified.
+Scope: post-bootstrap development launch progression only; development authentication, signatures, and key management remain warning-only and non-blocking.
