@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| P1 | [AR-1682](../tasks/AR-1682.md): Restore formal hierarchy model contract | Unclaimed | Repair the PR-publication formal model fixture so its hierarchy invariant matches the declared task domain without weakening any invariant or hosted gate. | Run exact formal publication verification and independent review on the corrected model fixture. |
 | P1 | [AR-1683](../tasks/AR-1683.md): Provide approved TLC attestation resource bounds | Unclaimed | Make the hosted formal workflow export the approved TLC memory and swap bounds required by attestation. | Run formal publication verification and runner regression tests on the exact hosted head. |
 | P1 | [AR-1684](../tasks/AR-1684.md): Harden runtime selector helper matrix | Unclaimed | Lock in fail-closed rejection of hostile selector directory, symlink, and non-regular entries. | Run the targeted authority defensive matrix and full hosted checks on the signed head. |
 | P2 | [AR-0602](../tasks/AR-0602-csb-monitoring-contention.md): Validate CSB monitoring and contention diagnostics | Unclaimed | Validate and integrate optional CSB resource monitoring and kernel-contention evidence without double counting or overstating support. | Audit CSB monitoring using native x86_64 oracles and required pinned QEMU AArch64 portable mapping/lifecycle checks; keep native ARM64 counters and performance as optional future evidence. |
@@ -13,7 +12,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (488)
+### Done (489)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -314,6 +313,7 @@
 | P0 | [AR-1646](../tasks/AR-1646.md): Development capture and replay route | Unclaimed | Expose a bounded development route for workload capture, cassette sealing, runtime-authorized replay, and offline execution. | No further action; current ASB runtime/control paths already satisfy the scoped capture, sealing, and strict offline replay contract. |
 | P0 | [AR-1648](../tasks/AR-1648.md): Selected-agent/workload fan-out | Unclaimed | Fan out persisted selected agents and workloads into durable online/offline run references. | No further action; merged ASB PR #445 and hosted/independent fan-out checks passed. |
 | P0 | [AR-1649](../tasks/AR-1649.md): Comparison analysis and report | Unclaimed | Produce typed selected-agent comparison analysis and human/JSON reports from paired runs. | Implement comparability analysis, confounder/unavailable evidence reporting, and projections for fan-out run references. |
+| P0 | [AR-1650](../tasks/AR-1650.md): Fan-out control protocol and TUI integration | Unclaimed | Expose selected-agent/workload fan-out through the versioned ASB control route and standalone TUI. | Implement the paired protocol/TUI adapter over Orchestrator::admit_fanout with exact human/JSON and offline tests. |
 | P0 | [AR-1661](../tasks/AR-1661.md): Repair coordination task schema and dependency graph | Unclaimed | Restore parseable task front matter and an acyclic, complete Git-backed ASB coordination graph. | Inventory malformed task records and dependency cycles, repair only historical metadata, regenerate status views, and verify handoffctl render-status --check. |
 | P0 | [AR-1685](../tasks/AR-1685.md): Spec-acceptance completion metadata contract | Unclaimed | Repair task metadata and handoffctl validation so supported done transitions can record exact acceptance evidence without weakening fail-closed gates. | Claim through handoffctl, implement the validated spec_acceptance metadata contract and focused rejection/acceptance tests, then open a reviewed state-only PR. |
 | P1 | [AR-0002](../tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Unclaimed | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. |
