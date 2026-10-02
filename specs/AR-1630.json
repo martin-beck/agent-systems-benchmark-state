@@ -1,12 +1,1 @@
-{
-  "id": "AR-1630",
-  "title": "Development unavailable-agent coverage",
-  "evidence_class": "hosted",
-  "acceptance": [
-    "unavailable choices remain visible",
-    "unsupported lifecycle polls are skipped",
-    "coverage threshold remains enforced",
-    "development auth/signature/key checks remain warning-only"
-  ],
-  "required_checks": ["repository-quality", "awq", "coverage"]
-}
+{"schema_version":1,"spec_ref":"specs/AR-1630.json","spec_revision":1,"acceptance_predicates":[{"id":"acceptance-1","description":"unavailable choices remain visible"},{"id":"acceptance-2","description":"unsupported lifecycle polls are skipped"},{"id":"acceptance-3","description":"coverage threshold remains enforced"},{"id":"acceptance-4","description":"development auth/signature/key checks remain warning-only"}],"definition_of_done":["Required check passes: repository-quality.","Required check passes: awq.","Required check passes: coverage."],"inputs":[{"id":"task-record","description":"Existing task acceptance, evidence requirements, and development-only constraints."}],"outputs":[{"id":"qualified-record","description":"Strict-schema task specification and generated coordination projections."}],"allowed_tools":["git","gh","tools/handoffctl"],"forbidden_tools":["product-code","credential-output","gate-weakening"],"required_evidence_classes":["hosted"],"gates":[{"id":"repository-quality","description":"Required check passes: repository-quality."},{"id":"awq","description":"Required check passes: awq."},{"id":"coverage","description":"Required check passes: coverage."}]}
