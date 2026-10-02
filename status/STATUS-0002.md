@@ -3742,7 +3742,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Prove a fresh clone can consume the published dev channel and complete the shortest install-to-offline-comparison journey. |
-| Next action | Run the disposable exact-head current-main journey now that AR-1615 and AR-1632 are complete; record the remaining wizard-to-benchmark/offline-comparison evidence. |
+| Next action | Await independent review and hosted checks on PR #45; then reconcile exact-main evidence and release. |
 
 ### AR-1614 — Immutable dev-channel TUI bundle and installability
 
@@ -4701,3 +4701,5 @@ flowchart LR
         AR_0311["AR-0311 - Done"]:::status_done
         AR_0312["AR-0312 - Done"]:::status_done
         AR_0313["AR-0313 - Done"]:::status_done
+        AR_0314["AR-0314 - Done"]:::status_done
+        AR_0315["AR-0315 - Done"]:::status_done

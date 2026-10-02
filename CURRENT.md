@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1613](tasks/AR-1613.md): Current-main dev-channel consumption and quickstart qualification | Prove a fresh clone can consume the published dev channel and complete the shortest install-to-offline-comparison journey. | Run the disposable exact-head current-main journey now that AR-1615 and AR-1632 are complete; record the remaining wizard-to-benchmark/offline-comparison evidence. | codex-ar1613 |
+| P0 | [AR-1613](tasks/AR-1613.md): Current-main dev-channel consumption and quickstart qualification | Prove a fresh clone can consume the published dev channel and complete the shortest install-to-offline-comparison journey. | Await independent review and hosted checks on PR #45; then reconcile exact-main evidence and release. | codex-ar1613 |
 
 ## Blocked
 
