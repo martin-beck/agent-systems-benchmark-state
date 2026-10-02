@@ -1,0 +1,11 @@
+AR-1648 acceptance receipt
+
+Status: pass
+ASB protected main: e00609051625aed012bb5b83c83e8ebfbc0b953a
+PR #445 signed head: f7371cff5748120caa20de83aae1c86eecaaf57e
+
+Typed fan-out validates all members before authority use, rejects duplicate
+tuples, creates deterministic idempotency keys and durable member run/attempt
+handles, binds offline cassette digests through existing RunRequest validation,
+and supports group/partial cancellation cleanup. Twenty-one orchestrator tests,
+independent review, DCO/signature, and all hosted gates passed.
