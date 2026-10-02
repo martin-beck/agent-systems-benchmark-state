@@ -727,7 +727,7 @@
         AR_1682["AR-1682 - Planned"]:::status_planned
         AR_1683["AR-1683 - Planned"]:::status_planned
         AR_1684["AR-1684 - Planned"]:::status_planned
-        AR_1685["AR-1685 - In progress"]:::status_in_progress
+        AR_1685["AR-1685 - Done"]:::status_done
         AR_1686["AR-1686 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
