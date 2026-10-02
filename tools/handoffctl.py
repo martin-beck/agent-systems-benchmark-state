@@ -1946,7 +1946,8 @@ def apply_owned_change(  # noqa: C901
             raise RuntimeError("acceptance evidence requires an active task")
         if args.expected_revision != meta["task_revision"]:
             raise RuntimeError(
-                f"stale revision: expected {args.expected_revision}, current {meta['task_revision']}"
+                f"stale revision: expected {args.expected_revision}, "
+                f"current {meta['task_revision']}"
             )
         spec_ref = meta.get("spec_ref")
         spec_revision = meta.get("spec_revision")

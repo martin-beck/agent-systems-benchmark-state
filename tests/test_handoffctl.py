@@ -869,17 +869,17 @@ class HandoffTest(unittest.TestCase):
                 "claim",
             )
             meta, _ = CORE.read_task(path)
-            base = dict(
-                task="AR-0001",
-                owner="worker-a",
-                expected_revision=meta["task_revision"],
-                spec_ref="other.json",
-                spec_revision=1,
-                evidence_class="contract-test",
-                evidence_ref="evidence/AR-0001",
-                evidence_digest="sha256:" + "a" * 64,
-                note="invalid acceptance evidence",
-            )
+            base = {
+                "task": "AR-0001",
+                "owner": "worker-a",
+                "expected_revision": meta["task_revision"],
+                "spec_ref": "other.json",
+                "spec_revision": 1,
+                "evidence_class": "contract-test",
+                "evidence_ref": "evidence/AR-0001",
+                "evidence_digest": "sha256:" + "a" * 64,
+                "note": "invalid acceptance evidence",
+            }
             with self.assertRaisesRegex(RuntimeError, "does not match"):
                 CORE.mutate(argparse.Namespace(**base), "accept")
             base["spec_ref"] = "spec.json"
