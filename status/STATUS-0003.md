@@ -1,5 +1,17 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+        AR_0301["AR-0301 - Done"]:::status_done
+        AR_0302["AR-0302 - Done"]:::status_done
+        AR_0303["AR-0303 - Done"]:::status_done
+        AR_0304["AR-0304 - Done"]:::status_done
+        AR_0305["AR-0305 - Done"]:::status_done
+        AR_0306["AR-0306 - Done"]:::status_done
+        AR_0307["AR-0307 - Done"]:::status_done
+        AR_0308["AR-0308 - Done"]:::status_done
+        AR_0309["AR-0309 - Done"]:::status_done
+        AR_0310["AR-0310 - Done"]:::status_done
+        AR_0311["AR-0311 - Done"]:::status_done
+        AR_0312["AR-0312 - Done"]:::status_done
         AR_0313["AR-0313 - Done"]:::status_done
         AR_0314["AR-0314 - Done"]:::status_done
         AR_0315["AR-0315 - Done"]:::status_done
@@ -700,6 +712,7 @@
         AR_1682["AR-1682 - Planned"]:::status_planned
         AR_1683["AR-1683 - Planned"]:::status_planned
         AR_1684["AR-1684 - Planned"]:::status_planned
+        AR_1686["AR-1686 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2391,19 +2404,24 @@
     AR_1645 --> AR_1647
     AR_1645 --> AR_1648
     AR_1645 --> AR_1657
+    AR_1645 --> AR_1686
     AR_1646 --> AR_1643
     AR_1646 --> AR_1647
     AR_1646 --> AR_1648
     AR_1646 --> AR_1652
+    AR_1646 --> AR_1686
     AR_1647 --> AR_1643
     AR_1647 --> AR_1657
     AR_1648 --> AR_1647
     AR_1648 --> AR_1649
     AR_1648 --> AR_1650
+    AR_1648 --> AR_1686
     AR_1649 --> AR_1647
     AR_1649 --> AR_1651
+    AR_1649 --> AR_1686
     AR_1650 --> AR_1647
     AR_1650 --> AR_1652
+    AR_1650 --> AR_1686
     AR_1651 --> AR_1643
     AR_1651 --> AR_1647
     AR_1651 --> AR_1655
@@ -2735,6 +2753,3 @@
 | [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md) | [AR-1240](../tasks/AR-1240-native-signed-bundle-fixture.md), [AR-1243](../tasks/AR-1243-signed-bundle-assembly.md), [AR-1260](../tasks/AR-1260-runtime-owned-strict-replay-integration.md), [AR-1261](../tasks/AR-1261-runtime-to-cli-replay-entrypoint.md), [AR-1262](../tasks/AR-1262-runtime-owned-launch-authority.md), [AR-1265](../tasks/AR-1265-runtime-owned-replay-entrypoint.md), [AR-1266](../tasks/AR-1266-authenticated-replay-dispatch.md), [AR-1267](../tasks/AR-1267-runtime-replay-execution.md), [AR-1268](../tasks/AR-1268-replay-transport-boundary.md), [AR-1269](../tasks/AR-1269-runtime-replay-launch-factory.md), [AR-1270](../tasks/AR-1270-runtime-cassette-handle.md), [AR-1271](../tasks/AR-1271-cassette-operation-contract.md), [AR-1272](../tasks/AR-1272-authenticated-cassette-backend.md), [AR-1273](../tasks/AR-1273-complete-replay-context.md), [AR-1274](../tasks/AR-1274-runtime-cassette-executor-adapter.md), [AR-1275](../tasks/AR-1275-replay-operation-injection.md), [AR-1276](../tasks/AR-1276-primary-replay-runtime.md), [AR-1277](../tasks/AR-1277-runtime-cli-replay-transport.md), [AR-1278](../tasks/AR-1278-primary-runtime-client.md), [AR-1279](../tasks/AR-1279-end-to-end-replay-runtime.md), [AR-1280](../tasks/AR-1280-cross-crate-replay-entrypoint.md), [AR-1281](../tasks/AR-1281-supervised-cassette-lifecycle.md), [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md), [AR-1284](../tasks/AR-1284-runtime-strict-replay-lifecycle.md), [AR-1285](../tasks/AR-1285-runtime-launch-factory.md), [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md) |
 | [AR-1240](../tasks/AR-1240-native-signed-bundle-fixture.md) | [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | [AR-1241](../tasks/AR-1241-native-isolation-matrix.md), [AR-1243](../tasks/AR-1243-signed-bundle-assembly.md) |
 | [AR-1241](../tasks/AR-1241-native-isolation-matrix.md) | [AR-1240](../tasks/AR-1240-native-signed-bundle-fixture.md) | [AR-1243](../tasks/AR-1243-signed-bundle-assembly.md) |
-| [AR-1242](../tasks/AR-1242-protected-main-admission.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0897](../tasks/AR-0897-main-merge-integrity.md) | [AR-1245](../tasks/AR-1245-postmerge-dco-evidence.md), [AR-1246](../tasks/AR-1246-protected-main-dco-flow.md), [AR-1247](../tasks/AR-1247-protected-main-dco-workflow.md), [AR-1259](../tasks/AR-1259-protected-main-dco-recovery.md) |
-| [AR-1243](../tasks/AR-1243-signed-bundle-assembly.md) | [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md), [AR-1240](../tasks/AR-1240-native-signed-bundle-fixture.md), [AR-1241](../tasks/AR-1241-native-isolation-matrix.md) | [AR-1245](../tasks/AR-1245-postmerge-dco-evidence.md) |
-| [AR-1244](../tasks/AR-1244-publish-replay-supervision.md) | [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md) | None |

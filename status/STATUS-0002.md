@@ -4654,6 +4654,20 @@
 | Summary | Lock in fail-closed rejection of hostile selector directory, symlink, and non-regular entries. |
 | Next action | Run the targeted authority defensive matrix and full hosted checks on the signed head. |
 
+### AR-1686 — Current-head content-addressed plan generation and qualification repair
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. |
+| Next action | Replace hand-authored plan synthesis with plan create, add stale-identity negatives, and publish exact-head paired evidence for AR-1613. |
+
 
 ## Dependency graph
 
@@ -4688,15 +4702,3 @@ flowchart LR
     end
     subgraph series_03["03 - Adapters and workloads"]
         direction TB
-        AR_0301["AR-0301 - Done"]:::status_done
-        AR_0302["AR-0302 - Done"]:::status_done
-        AR_0303["AR-0303 - Done"]:::status_done
-        AR_0304["AR-0304 - Done"]:::status_done
-        AR_0305["AR-0305 - Done"]:::status_done
-        AR_0306["AR-0306 - Done"]:::status_done
-        AR_0307["AR-0307 - Done"]:::status_done
-        AR_0308["AR-0308 - Done"]:::status_done
-        AR_0309["AR-0309 - Done"]:::status_done
-        AR_0310["AR-0310 - Done"]:::status_done
-        AR_0311["AR-0311 - Done"]:::status_done
-        AR_0312["AR-0312 - Done"]:::status_done
