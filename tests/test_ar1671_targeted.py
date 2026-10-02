@@ -605,6 +605,15 @@ class AuthorityDefensiveMatrix(unittest.TestCase):
                 with self.assertRaises(AuthorityError):
                     upgrade_authority._remove_selector_temporary(parent, selector.name)
                 selector.rmdir()
+                target = root / "target"
+                target.write_text("{}", encoding="utf-8")
+                selector.symlink_to(target)
+                with self.assertRaises(AuthorityError):
+                    upgrade_authority._existing_regular_identity(parent, selector.name)
+                with self.assertRaises(AuthorityError):
+                    upgrade_authority._remove_selector_temporary(parent, selector.name)
+                selector.unlink()
+                target.unlink()
                 selector.write_text("{}", encoding="utf-8")
                 with self.assertRaises(AuthorityError):
                     upgrade_authority._remove_selector_temporary(parent, selector.name)
