@@ -1,0 +1,11 @@
+AR-1641 acceptance receipt
+
+Status: pass
+ASB protected main: 8e49e3f1c5ec0650eeb1f505b940606aa9371954
+PR #442 signed head: d1b462e862425bcc84af72cee7155a40363509ee
+
+Setup now accepts multiple supported agents including opencode and opendesk,
+persists shared provider/model defaults atomically, and reloads them. Only
+credential-environment identity digests are stored; API-key values are not.
+Human output remains default and --json remains explicit. Focused setup,
+schema/configuration, policy, independent review, and hosted checks passed.
