@@ -1,0 +1,11 @@
+AR-1645 acceptance receipt
+
+Status: pass
+ASB protected main: 62f935c5924c0b9cce107f81ad7eb2599a224eb5
+PR #444 signed head: 92345bdce01022a41f9ba99e266647d1fb87f24d
+
+`plan --use-config` and `run --use-config` consume setup-selected generic
+profiles/defaults directly. Selected agents take precedence over stale legacy
+OpenRouter enrollment, while legacy fallback remains compatible. Exact setup →
+plan → local/mock run, schema, provenance, independent review, and all hosted
+checks passed.
