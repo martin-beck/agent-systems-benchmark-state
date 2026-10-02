@@ -720,8 +720,9 @@ class RollbackControlStoreTests(unittest.TestCase):
             (context, {**valid, "fencing_token": "other"}),
         ]
         for bad_context, bad_result in cases:
-            with self.subTest(context=bad_context, result=bad_result), self.assertRaisesRegex(
-                ControlStoreError, "release-specific"
+            with (
+                self.subTest(context=bad_context, result=bad_result),
+                self.assertRaisesRegex(ControlStoreError, "release-specific"),
             ):
                 rereader.reread_rollback(
                     cast(Mapping[str, object], bad_context),

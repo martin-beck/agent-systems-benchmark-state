@@ -64,8 +64,9 @@ class UpgradeCommandTests(unittest.TestCase):
             path = Path(directory) / "contract.json"
             path.write_text(json.dumps(contract()), encoding="utf-8")
             for action in ("", "inspect", "apply-now"):
-                with self.subTest(action=action), self.assertRaisesRegex(
-                    UpgradeCommandError, "unknown upgrade action"
+                with (
+                    self.subTest(action=action),
+                    self.assertRaisesRegex(UpgradeCommandError, "unknown upgrade action"),
                 ):
                     execute_upgrade_command(action, path, "sqlite")
             with self.assertRaisesRegex(
@@ -91,6 +92,7 @@ class UpgradeCommandTests(unittest.TestCase):
                     ExpectedRuntimeIdentity("a", "b", "c", "d", "e", "f"),
                     "bad",
                 )
+
     def setUp(self) -> None:
         self.temporary = tempfile.TemporaryDirectory()
         self.root = Path(self.temporary.name)

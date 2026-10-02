@@ -720,7 +720,7 @@ class RollbackDefensiveMatrix(unittest.TestCase):
                 patch.object(handoffctl, "ROOT", root),
                 patch.object(handoffctl, "generated_paths", return_value=[]),
             ):
-                    errors = handoffctl.privacy_errors()
+                errors = handoffctl.privacy_errors()
             self.assertTrue(errors)
             with patch.object(handoffctl, "ROOT", root):
                 self.assertTrue(handoffctl.introduced_content_errors({secret: "old"}))
