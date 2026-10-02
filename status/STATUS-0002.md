@@ -4470,7 +4470,21 @@
 | Parent | None |
 | Children | None |
 | Summary | Restore the missing typed coordinator adapters from the pinned vendor source and repair strict mypy errors without removing barrier, identity, rollback, or WAL safety semantics. |
-| Next action | Reproduce the failure on the current base, restore exact coordinator.vendor.json source (v0.3.53) or document a reviewed compatibility diff, and run the full strict state workflow on the repair head. |
+| Next action | After AR-1671 restores the 95&#37; coverage floor, run the exact-v0.3.53 restore with full strict state verification and safety evidence. |
+
+### AR-1671 — Restore ASB state coverage floor after Coordinator vendoring
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Raise exact-base ASB state coverage from 54&#37; and the exact Coordinator-v0.3.53 restore from 74&#37; to the unchanged 95&#37; gate with behavior tests. |
+| Next action | Inventory uncovered restored Coordinator modules and port/adapt authoritative behavior and negative tests without coverage exclusions or pragma suppression. |
 
 
 ## Dependency graph
@@ -4661,15 +4675,3 @@ flowchart LR
         AR_0895["AR-0895 - Done"]:::status_done
         AR_0896["AR-0896 - Blocked"]:::status_blocked
         AR_0897["AR-0897 - Done"]:::status_done
-        AR_0898["AR-0898 - Done"]:::status_done
-        AR_0899["AR-0899 - Done"]:::status_done
-    end
-    subgraph series_09["09 - Assurance"]
-        direction TB
-        AR_0901["AR-0901 - Done"]:::status_done
-        AR_0902["AR-0902 - Done"]:::status_done
-        AR_0903["AR-0903 - Planned"]:::status_planned
-        AR_0904["AR-0904 - Done"]:::status_done
-        AR_0905["AR-0905 - Done"]:::status_done
-        AR_0906["AR-0906 - Done"]:::status_done
-        AR_0907["AR-0907 - Done"]:::status_done

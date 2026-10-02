@@ -1,5 +1,17 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+        AR_0898["AR-0898 - Done"]:::status_done
+        AR_0899["AR-0899 - Done"]:::status_done
+    end
+    subgraph series_09["09 - Assurance"]
+        direction TB
+        AR_0901["AR-0901 - Done"]:::status_done
+        AR_0902["AR-0902 - Done"]:::status_done
+        AR_0903["AR-0903 - Planned"]:::status_planned
+        AR_0904["AR-0904 - Done"]:::status_done
+        AR_0905["AR-0905 - Done"]:::status_done
+        AR_0906["AR-0906 - Done"]:::status_done
+        AR_0907["AR-0907 - Done"]:::status_done
         AR_0908["AR-0908 - Done"]:::status_done
         AR_0909["AR-0909 - Done"]:::status_done
     end
@@ -532,6 +544,7 @@
         AR_1666["AR-1666 - Done"]:::status_done
         AR_1667["AR-1667 - Planned"]:::status_planned
         AR_1670["AR-1670 - Planned"]:::status_planned
+        AR_1671["AR-1671 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2262,11 +2275,14 @@
     AR_1661 --> AR_1663
     AR_1661 --> AR_1665
     AR_1661 --> AR_1670
+    AR_1661 --> AR_1671
     AR_1663 --> AR_1665
     AR_1663 --> AR_1666
     AR_1665 --> AR_1666
     AR_1665 --> AR_1670
+    AR_1665 --> AR_1671
     AR_1666 --> AR_1667
+    AR_1671 --> AR_1670
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -2589,4 +2605,3 @@
 | [AR-1278](../tasks/AR-1278-primary-runtime-client.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
 | [AR-1279](../tasks/AR-1279-end-to-end-replay-runtime.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
 | [AR-1280](../tasks/AR-1280-cross-crate-replay-entrypoint.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1281](../tasks/AR-1281-supervised-cassette-lifecycle.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
