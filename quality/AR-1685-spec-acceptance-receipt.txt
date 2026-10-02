@@ -1,0 +1,21 @@
+AR-1685 spec-acceptance metadata contract receipt
+
+Exact integrated state head: 229e19e3bc3535c03b7cc79b35cc65604bc399e0
+Merged PR: agent-systems-benchmark-state#46
+Implementation PR head reviewed: 229e19e3bc3535c03b7cc79b35cc65604bc399e0
+
+Evidence:
+- Hosted AWQ shadow evidence: pass.
+- Hosted Strict state consistency: pass.
+- Hosted Model and implementation contract: pass.
+- Hosted verify and vendor-integrity checks: pass.
+- Full local unittest suite: 1366 tests passed.
+- Full local coverage: 95%, unchanged threshold.
+- Acceptance mutation validates owner/status/revision/spec reference/spec
+  revision/evidence class/reference/digest and rejects invalid input without
+  mutating spec_acceptance.
+- All introduced commits are SSH-signed and carry matching DCO trailers.
+
+Development boundary: missing authentication, signatures, and key management
+remain visible development-only warnings and are not used as production or
+live-provider evidence.
