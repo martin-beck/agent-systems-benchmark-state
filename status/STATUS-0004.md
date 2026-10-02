@@ -383,12 +383,12 @@
 | [AR-1642](../tasks/AR-1642.md) | [AR-1607](../tasks/AR-1607.md), [AR-1621](../tasks/AR-1621.md) | [AR-1613](../tasks/AR-1613.md), [AR-1622](../tasks/AR-1622.md), [AR-1643](../tasks/AR-1643.md), [AR-1645](../tasks/AR-1645.md), [AR-1646](../tasks/AR-1646.md) |
 | [AR-1643](../tasks/AR-1643.md) | [AR-1613](../tasks/AR-1613.md), [AR-1641](../tasks/AR-1641.md), [AR-1642](../tasks/AR-1642.md), [AR-1645](../tasks/AR-1645.md), [AR-1646](../tasks/AR-1646.md), [AR-1647](../tasks/AR-1647.md), [AR-1651](../tasks/AR-1651.md), [AR-1652](../tasks/AR-1652.md) | [AR-1653](../tasks/AR-1653.md), [AR-1654](../tasks/AR-1654.md) |
 | [AR-1644](../tasks/AR-1644.md) | [AR-1615](../tasks/AR-1615.md), [AR-1632](../tasks/AR-1632.md) | [AR-1650](../tasks/AR-1650.md) |
-| [AR-1645](../tasks/AR-1645.md) | [AR-1641](../tasks/AR-1641.md), [AR-1642](../tasks/AR-1642.md) | [AR-1643](../tasks/AR-1643.md), [AR-1647](../tasks/AR-1647.md), [AR-1648](../tasks/AR-1648.md), [AR-1657](../tasks/AR-1657.md), [AR-1686](../tasks/AR-1686.md) |
-| [AR-1646](../tasks/AR-1646.md) | [AR-1617](../tasks/AR-1617.md), [AR-1619](../tasks/AR-1619.md), [AR-1620](../tasks/AR-1620.md), [AR-1642](../tasks/AR-1642.md) | [AR-1643](../tasks/AR-1643.md), [AR-1647](../tasks/AR-1647.md), [AR-1648](../tasks/AR-1648.md), [AR-1652](../tasks/AR-1652.md), [AR-1686](../tasks/AR-1686.md) |
+| [AR-1645](../tasks/AR-1645.md) | [AR-1641](../tasks/AR-1641.md), [AR-1642](../tasks/AR-1642.md) | [AR-1643](../tasks/AR-1643.md), [AR-1647](../tasks/AR-1647.md), [AR-1648](../tasks/AR-1648.md), [AR-1657](../tasks/AR-1657.md) |
+| [AR-1646](../tasks/AR-1646.md) | [AR-1617](../tasks/AR-1617.md), [AR-1619](../tasks/AR-1619.md), [AR-1620](../tasks/AR-1620.md), [AR-1642](../tasks/AR-1642.md) | [AR-1643](../tasks/AR-1643.md), [AR-1647](../tasks/AR-1647.md), [AR-1648](../tasks/AR-1648.md), [AR-1652](../tasks/AR-1652.md) |
 | [AR-1647](../tasks/AR-1647.md) | [AR-1645](../tasks/AR-1645.md), [AR-1646](../tasks/AR-1646.md), [AR-1648](../tasks/AR-1648.md), [AR-1649](../tasks/AR-1649.md), [AR-1650](../tasks/AR-1650.md), [AR-1651](../tasks/AR-1651.md) | [AR-1643](../tasks/AR-1643.md), [AR-1657](../tasks/AR-1657.md) |
-| [AR-1648](../tasks/AR-1648.md) | [AR-1645](../tasks/AR-1645.md), [AR-1646](../tasks/AR-1646.md) | [AR-1647](../tasks/AR-1647.md), [AR-1649](../tasks/AR-1649.md), [AR-1650](../tasks/AR-1650.md), [AR-1686](../tasks/AR-1686.md) |
-| [AR-1649](../tasks/AR-1649.md) | [AR-1648](../tasks/AR-1648.md) | [AR-1647](../tasks/AR-1647.md), [AR-1651](../tasks/AR-1651.md), [AR-1686](../tasks/AR-1686.md) |
-| [AR-1650](../tasks/AR-1650.md) | [AR-1644](../tasks/AR-1644.md), [AR-1648](../tasks/AR-1648.md) | [AR-1647](../tasks/AR-1647.md), [AR-1652](../tasks/AR-1652.md), [AR-1686](../tasks/AR-1686.md) |
+| [AR-1648](../tasks/AR-1648.md) | [AR-1645](../tasks/AR-1645.md), [AR-1646](../tasks/AR-1646.md) | [AR-1647](../tasks/AR-1647.md), [AR-1649](../tasks/AR-1649.md), [AR-1650](../tasks/AR-1650.md) |
+| [AR-1649](../tasks/AR-1649.md) | [AR-1648](../tasks/AR-1648.md) | [AR-1647](../tasks/AR-1647.md), [AR-1651](../tasks/AR-1651.md) |
+| [AR-1650](../tasks/AR-1650.md) | [AR-1644](../tasks/AR-1644.md), [AR-1648](../tasks/AR-1648.md) | [AR-1647](../tasks/AR-1647.md), [AR-1652](../tasks/AR-1652.md) |
 | [AR-1651](../tasks/AR-1651.md) | [AR-1649](../tasks/AR-1649.md) | [AR-1643](../tasks/AR-1643.md), [AR-1647](../tasks/AR-1647.md), [AR-1655](../tasks/AR-1655.md), [AR-1657](../tasks/AR-1657.md) |
 | [AR-1652](../tasks/AR-1652.md) | [AR-1646](../tasks/AR-1646.md), [AR-1650](../tasks/AR-1650.md) | [AR-1643](../tasks/AR-1643.md), [AR-1654](../tasks/AR-1654.md), [AR-1655](../tasks/AR-1655.md) |
 | [AR-1653](../tasks/AR-1653.md) | [AR-1562](../tasks/AR-1562.md), [AR-1563](../tasks/AR-1563.md), [AR-1564](../tasks/AR-1564.md), [AR-1613](../tasks/AR-1613.md), [AR-1623](../tasks/AR-1623.md), [AR-1643](../tasks/AR-1643.md) | [AR-1654](../tasks/AR-1654.md), [AR-1655](../tasks/AR-1655.md), [AR-1658](../tasks/AR-1658.md) |
@@ -418,7 +418,7 @@
 | [AR-1682](../tasks/AR-1682.md) | [AR-1665](../tasks/AR-1665.md) | [AR-1683](../tasks/AR-1683.md) |
 | [AR-1683](../tasks/AR-1683.md) | [AR-1682](../tasks/AR-1682.md) | None |
 | [AR-1684](../tasks/AR-1684.md) | [AR-1671](../tasks/AR-1671.md) | None |
-| [AR-1686](../tasks/AR-1686.md) | [AR-1645](../tasks/AR-1645.md), [AR-1646](../tasks/AR-1646.md), [AR-1648](../tasks/AR-1648.md), [AR-1649](../tasks/AR-1649.md), [AR-1650](../tasks/AR-1650.md) | None |
+| [AR-1685](../tasks/AR-1685.md) | None | None |
 
 ## Complete AR inventory
 
@@ -427,6 +427,12 @@
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1613](../tasks/AR-1613.md): Current-main dev-channel consumption and quickstart qualification | Unclaimed | Prove a fresh clone can consume the published dev channel and complete the shortest install-to-offline-comparison journey. | Use the installed current paired manifest for the repository-owned fresh-user wizard/fixture with a valid content-addressed experiment identity; capture/replay/offline-compare it and obtain independent review before release. |
+
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1685](../tasks/AR-1685.md): Spec-acceptance completion metadata contract | Unclaimed | Repair task metadata and handoffctl validation so supported done transitions can record exact acceptance evidence without weakening fail-closed gates. | Claim through handoffctl, implement the validated spec_acceptance metadata contract and focused rejection/acceptance tests, then open a reviewed state-only PR. |
 
 ### Blocked (82)
 
@@ -515,7 +521,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (84)
+### Planned (83)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -562,7 +568,6 @@
 | P0 | [AR-1676](../tasks/AR-1676.md): Paired ASB/TUI channel compatibility matrix | Unclaimed | Qualify ASB and asb-tui against the same dev/stable/nightly/experimental channel vocabulary, defaults, manifests, and typed failure cases. | Build the paired compatibility runner and exact-head receipt covering omitted dev, explicit channels, restart persistence, upgrade/rollback preservation, and unavailable-channel diagnostics. |
 | P0 | [AR-1677](../tasks/AR-1677.md): Channel-aware release and quickstart gate | Unclaimed | Make the default-dev clone, configure, benchmark, offline replay, comparison, and analysis journey channel-aware and release-gated. | Update the one-command quickstart and release gate to show the selected channel, preserve it through all runs, and verify online/offline analysis with a clean-room receipt. |
 | P0 | [AR-1678](../tasks/AR-1678.md): Development install host preflight and typed recovery | Unclaimed | Make the default-dev install path detect missing host tools before launch and return actionable typed recovery without turning development authentication or signature warnings into blockers. | Add a bounded host/toolchain preflight to the paired install contract, classify missing tools and PTY limitations, and qualify retry/cleanup with exact-head evidence. |
-| P0 | [AR-1686](../tasks/AR-1686.md): Current-head content-addressed plan generation and qualification repair | Unclaimed | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. | Replace hand-authored plan synthesis with plan create, add stale-identity negatives, and publish exact-head paired evidence for AR-1613. |
 | P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
 | P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
 | P1 | [AR-0810](../tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Unclaimed | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project&#x27;s GitHub Pages site. |
