@@ -1,7 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| P1 | [AR-1015](../tasks/AR-1015-csb-measurement-adapter.md): Add a pinned, provenance-safe CSB measurement adapter | Unclaimed | Import qualified CSB resource, system-statistics, and contention measurements into ASB. | Inventory pinned CSB signals and implement only contract-compatible adapters after the catalog is accepted. |
-| P1 | [AR-1027](../tasks/AR-1027-asb-tui-verified-release.md): Publish the verified asb-tui release | Unclaimed | Create and independently promote the first installable signed asb-tui release channel. | Publish the first verified asb-tui release only after ASB release, complete UI/install qualification and exact cross-repository evidence are done. |
 | P1 | [AR-1255](../tasks/AR-1255-bundled-mockagents-qemu-runner.md): Bundle MockAgents transport and QEMU runner | Unclaimed | Bundle MockAgents transport and QEMU runner. | Provision a digest-pinned bundled transport/QEMU runner and implement real in-container evidence. |
 | P1 | [AR-1257](../tasks/AR-1257-mockagents-qemu-image.md): Qualify digest-pinned multiarch MockAgents image | Unclaimed | Qualify a digest-pinned multiarch MockAgents OCI image for QEMU isolation. | Read the complete plan and verify official digest-pinned multiarch image, signature, license, and QEMU capability before any support claim. |
 | P1 | [AR-1624](../tasks/AR-1624.md): AWQ/AWC quality and coordination gate | Unclaimed | Qualify the wizard release using current Agent Workflow Quality and Coordinator evidence, worker isolation, reconciliation, and recovery rules. | Promote after the release gate; run independent quality/coordination audit and recovery drill. |
@@ -23,7 +21,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (489)
+### Done (490)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -326,6 +324,7 @@
 | P0 | [AR-1649](../tasks/AR-1649.md): Comparison analysis and report | Unclaimed | Produce typed selected-agent comparison analysis and human/JSON reports from paired runs. | Implement comparability analysis, confounder/unavailable evidence reporting, and projections for fan-out run references. |
 | P0 | [AR-1650](../tasks/AR-1650.md): Fan-out control protocol and TUI integration | Unclaimed | Expose selected-agent/workload fan-out through the versioned ASB control route and standalone TUI. | Implement the paired protocol/TUI adapter over Orchestrator::admit_fanout with exact human/JSON and offline tests. |
 | P0 | [AR-1661](../tasks/AR-1661.md): Repair coordination task schema and dependency graph | Unclaimed | Restore parseable task front matter and an acyclic, complete Git-backed ASB coordination graph. | Inventory malformed task records and dependency cycles, repair only historical metadata, regenerate status views, and verify handoffctl render-status --check. |
+| P0 | [AR-1678](../tasks/AR-1678.md): Development install host preflight and typed recovery | Unclaimed | Make the default-dev install path detect missing host tools before launch and return actionable typed recovery without turning development authentication or signature warnings into blockers. | No further action; merged ASB PR #456 at d49b6815dbe6d7b453e87c84e50a2763eb807778 and all hosted checks passed. |
 | P0 | [AR-1685](../tasks/AR-1685.md): Spec-acceptance completion metadata contract | Unclaimed | Repair task metadata and handoffctl validation so supported done transitions can record exact acceptance evidence without weakening fail-closed gates. | Claim through handoffctl, implement the validated spec_acceptance metadata contract and focused rejection/acceptance tests, then open a reviewed state-only PR. |
 | P1 | [AR-0002](../tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Unclaimed | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. |
 | P1 | [AR-0003](../tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Unclaimed | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. |

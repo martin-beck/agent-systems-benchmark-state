@@ -4560,7 +4560,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | done |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
@@ -4568,7 +4568,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Make the default-dev install path detect missing host tools before launch and return actionable typed recovery without turning development authentication or signature warnings into blockers. |
-| Next action | Add a bounded host/toolchain preflight to the paired install contract, classify missing tools and PTY limitations, and qualify retry/cleanup with exact-head evidence. |
+| Next action | No further action; merged ASB PR #456 at d49b6815dbe6d7b453e87c84e50a2763eb807778 and all hosted checks passed. |
 
 ### AR-1679 — ASB legacy task-spec normalization
 
@@ -4698,3 +4698,6 @@
 
 ### AR-1688 — Runner-owned cassette capture and replay qualification
 
+| Field | Value |
+| --- | --- |
+| Status | planned |

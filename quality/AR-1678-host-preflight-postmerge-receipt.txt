@@ -1,0 +1,20 @@
+# AR-1678 development install host preflight and typed recovery receipt
+
+Status: implementation merged and qualification complete.
+
+- ASB implementation PR #456 merged at `30080e19c26d69fbdd20536d4bd01016875dce46`.
+- Current ASB main after the dependent replay merge is
+  `d49b6815dbe6d7b453e87c84e50a2763eb807778`.
+- PR #456 hosted checks all passed: AWQ shadow, credential-free path, exact TUI
+  inherited-fd/PTY journey, aarch64 portability, retained faults, formal
+  assurance, platform evidence, source headers, policy/coverage/supply chain,
+  Rust verification, fuzz regressions, Kani, mutation sentinels, and Loom/state
+  models.
+- The merged preflight classifies missing host/toolchain/PTY prerequisites as
+  typed recoverable conditions before build or launch effects and preserves
+  cleanup/retry behavior.
+- Development authentication, signatures, and key management remain visible
+  warnings and never block the prototype.
+
+This receipt closes the scoped AR-1678 implementation and host qualification;
+it does not claim the broader paired fresh-user journey is complete.
