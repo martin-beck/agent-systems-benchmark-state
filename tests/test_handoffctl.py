@@ -948,7 +948,9 @@ class HandoffTest(unittest.TestCase):
             })
         meta = {"status": "in_progress"}
         self.assertEqual("Heartbeat by worker-a.", CORE.apply_heartbeat(args, meta))
-        self.assertRegex(meta["claim_expires"], r"^2026-10-02T")
+        expiry = dt.datetime.fromisoformat(meta["claim_expires"])
+        self.assertIsNotNone(expiry.tzinfo)
+        self.assertGreater(expiry, dt.datetime.now(dt.UTC))
 
     def test_claim_enforces_dependencies_owner_and_positive_lease(self) -> None:
         self.make_task("AR-0001")
