@@ -1,0 +1,8 @@
+AR: AR-1625
+TUI protected-main commit: a5eda0bc4ce3387398e29697fb7d06d59bb447b1
+Implementation PR: TUI #216, final signed head 308eabc6347f78b3021cada2c257183962d7784f
+Evidence: focused development lifecycle install/upgrade/status/tamper/filesystem tests, provider/model/auth/default validation tests, deterministic synthetic-PTY resize retry, and required UI module-inventory update. Coverage thresholds and authentication safeguards were not weakened.
+Hosted evidence: TUI PR #216 Rust and AWQ/repository-quality checks passed.
+Status: released after protected-main merge.
+
+Development-only authentication, signatures, and key management remain warning-only and non-blocking.

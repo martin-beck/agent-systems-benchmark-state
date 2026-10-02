@@ -1,0 +1,10 @@
+AR: AR-1626
+ASB protected-main commit: 62fda2f3417bf69f1da5f288b0df1d389c853dfa
+Implementation PR: ASB #436, final signed head cad51e2454c4776868ce8efbcf89da3ff4ccdd42
+Paired TUI protected-main commit: a5eda0bc4ce3387398e29697fb7d06d59bb447b1
+Evidence: development broker now validates and passes the parent /dev/pts terminal path across the fd handoff; deep XDG roots use a short private broker root under the Unix socket path limit. Focused path tests and the exact inherited-fd PTY journey passed.
+Review: independent exact-head review found no correctness blocker; signed/DCO commit verified.
+Hosted evidence: ASB PR #436 required workflows passed, including PTY, fault, policy/coverage, Rust, aarch64, formal, and platform checks.
+Status: released after protected-main merge.
+
+Development-only authentication, signatures, and key management remain warning-only and non-blocking.
