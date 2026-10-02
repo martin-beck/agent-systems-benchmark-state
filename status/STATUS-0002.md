@@ -3742,7 +3742,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Prove a fresh clone can consume the published dev channel and complete the shortest install-to-offline-comparison journey. |
-| Next action | Environmental blocker: run bounded online dev-channel materializer on a network-enabled clean host; capture current paired manifest digest/source-tree/executable provenance, repeat install-to-offline-comparison, then obtain independent review before release. |
+| Next action | Use the installed current paired manifest for the repository-owned fresh-user wizard/fixture with a valid content-addressed experiment identity; capture/replay/offline-compare it and obtain independent review before release. |
 
 ### AR-1614 — Immutable dev-channel TUI bundle and installability
 
@@ -4699,3 +4699,4 @@ flowchart LR
         AR_0309["AR-0309 - Done"]:::status_done
         AR_0310["AR-0310 - Done"]:::status_done
         AR_0311["AR-0311 - Done"]:::status_done
+        AR_0312["AR-0312 - Done"]:::status_done
