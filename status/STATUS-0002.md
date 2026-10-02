@@ -4570,6 +4570,20 @@
 | Summary | Make the default-dev install path detect missing host tools before launch and return actionable typed recovery without turning development authentication or signature warnings into blockers. |
 | Next action | Add a bounded host/toolchain preflight to the paired install contract, classify missing tools and PTY limitations, and qualify retry/cleanup with exact-head evidence. |
 
+### AR-1680 — Repair vendor manifest regression fixture
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Align the immutable vendor-manifest regression fixture with the intentional task-spec validator vocabulary extension. |
+| Next action | Run vendor verification and the complete vendor regression test on the exact signed head. |
+
 ### AR-1682 — Restore formal hierarchy model contract
 
 | Field | Value |
@@ -4676,14 +4690,3 @@ flowchart LR
         direction TB
         AR_0601["AR-0601 - Done"]:::status_done
         AR_0602["AR-0602 - Planned"]:::status_planned
-        AR_0603["AR-0603 - Done"]:::status_done
-        AR_0604["AR-0604 - Blocked"]:::status_blocked
-    end
-    subgraph series_07["07 - Platforms"]
-        direction TB
-        AR_0701["AR-0701 - Done"]:::status_done
-        AR_0702["AR-0702 - Done"]:::status_done
-        AR_0703["AR-0703 - Future"]:::status_future
-        AR_0704["AR-0704 - Done"]:::status_done
-        AR_0705["AR-0705 - Blocked"]:::status_blocked
-        AR_0706["AR-0706 - Blocked"]:::status_blocked
