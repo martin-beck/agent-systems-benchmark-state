@@ -1,5 +1,16 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+        AR_0315["AR-0315 - Done"]:::status_done
+        AR_0316["AR-0316 - Done"]:::status_done
+        AR_0317["AR-0317 - Done"]:::status_done
+        AR_0318["AR-0318 - Done"]:::status_done
+        AR_0319["AR-0319 - Done"]:::status_done
+        AR_0320["AR-0320 - Done"]:::status_done
+    end
+    subgraph series_04["04 - Live measurement"]
+        direction TB
+        AR_0401["AR-0401 - Done"]:::status_done
+        AR_0402["AR-0402 - Done"]:::status_done
         AR_0403["AR-0403 - Done"]:::status_done
         AR_0404["AR-0404 - Done"]:::status_done
         AR_0405["AR-0405 - Done"]:::status_done
@@ -681,6 +692,7 @@
         AR_1676["AR-1676 - Planned"]:::status_planned
         AR_1677["AR-1677 - Planned"]:::status_planned
         AR_1678["AR-1678 - Planned"]:::status_planned
+        AR_1679["AR-1679 - Planned"]:::status_planned
         AR_1680["AR-1680 - Planned"]:::status_planned
         AR_1681["AR-1681 - Planned"]:::status_planned
         AR_1682["AR-1682 - Planned"]:::status_planned
@@ -2423,6 +2435,7 @@
     AR_1663 --> AR_1666
     AR_1665 --> AR_1666
     AR_1665 --> AR_1670
+    AR_1665 --> AR_1679
     AR_1665 --> AR_1680
     AR_1665 --> AR_1681
     AR_1665 --> AR_1682
@@ -2724,6 +2737,3 @@
 | [AR-1243](../tasks/AR-1243-signed-bundle-assembly.md) | [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md), [AR-1240](../tasks/AR-1240-native-signed-bundle-fixture.md), [AR-1241](../tasks/AR-1241-native-isolation-matrix.md) | [AR-1245](../tasks/AR-1245-postmerge-dco-evidence.md) |
 | [AR-1244](../tasks/AR-1244-publish-replay-supervision.md) | [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md) | None |
 | [AR-1245](../tasks/AR-1245-postmerge-dco-evidence.md) | [AR-1242](../tasks/AR-1242-protected-main-admission.md), [AR-1243](../tasks/AR-1243-signed-bundle-assembly.md) | [AR-1246](../tasks/AR-1246-protected-main-dco-flow.md) |
-| [AR-1246](../tasks/AR-1246-protected-main-dco-flow.md) | [AR-1242](../tasks/AR-1242-protected-main-admission.md), [AR-1245](../tasks/AR-1245-postmerge-dco-evidence.md) | None |
-| [AR-1247](../tasks/AR-1247-protected-main-dco-workflow.md) | [AR-1242](../tasks/AR-1242-protected-main-admission.md) | None |
-| [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md) | [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md), [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md) | None |

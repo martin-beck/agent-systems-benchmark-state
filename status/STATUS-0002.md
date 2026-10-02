@@ -4570,6 +4570,20 @@
 | Summary | Make the default-dev install path detect missing host tools before launch and return actionable typed recovery without turning development authentication or signature warnings into blockers. |
 | Next action | Add a bounded host/toolchain preflight to the paired install contract, classify missing tools and PTY limitations, and qualify retry/cleanup with exact-head evidence. |
 
+### AR-1679 — ASB legacy task-spec normalization
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Normalize the remaining ASB legacy task-spec records rejected by strict validation without changing task intent or gates. |
+| Next action | Normalize AR-1625/1626/1628-1630 and AR-1641-1655, regenerate projections, and pass fresh strict validation. |
+
 ### AR-1680 — Repair vendor manifest regression fixture
 
 | Field | Value |
@@ -4688,14 +4702,3 @@ flowchart LR
         AR_0312["AR-0312 - Done"]:::status_done
         AR_0313["AR-0313 - Done"]:::status_done
         AR_0314["AR-0314 - Done"]:::status_done
-        AR_0315["AR-0315 - Done"]:::status_done
-        AR_0316["AR-0316 - Done"]:::status_done
-        AR_0317["AR-0317 - Done"]:::status_done
-        AR_0318["AR-0318 - Done"]:::status_done
-        AR_0319["AR-0319 - Done"]:::status_done
-        AR_0320["AR-0320 - Done"]:::status_done
-    end
-    subgraph series_04["04 - Live measurement"]
-        direction TB
-        AR_0401["AR-0401 - Done"]:::status_done
-        AR_0402["AR-0402 - Done"]:::status_done

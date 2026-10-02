@@ -1,5 +1,8 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| [AR-1246](../tasks/AR-1246-protected-main-dco-flow.md) | [AR-1242](../tasks/AR-1242-protected-main-admission.md), [AR-1245](../tasks/AR-1245-postmerge-dco-evidence.md) | None |
+| [AR-1247](../tasks/AR-1247-protected-main-dco-workflow.md) | [AR-1242](../tasks/AR-1242-protected-main-admission.md) | None |
+| [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md) | [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md), [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md) | None |
 | [AR-1249](../tasks/AR-1249-mockagents-qualification-evidence.md) | [AR-0888](../tasks/AR-0888-llm-double-conformance-spike.md), [AR-0889](../tasks/AR-0889-llm-fixture-scenario-contract.md) | None |
 | [AR-1250](../tasks/AR-1250-mockagents-harness-extension.md) | [AR-0888](../tasks/AR-0888-llm-double-conformance-spike.md), [AR-0889](../tasks/AR-0889-llm-fixture-scenario-contract.md) | [AR-1257](../tasks/AR-1257-mockagents-qemu-image.md) |
 | [AR-1251](../tasks/AR-1251-mockagents-transport-sandbox.md) | [AR-0888](../tasks/AR-0888-llm-double-conformance-spike.md), [AR-0889](../tasks/AR-0889-llm-fixture-scenario-contract.md) | [AR-1257](../tasks/AR-1257-mockagents-qemu-image.md) |
@@ -394,7 +397,7 @@
 | [AR-1660](../tasks/AR-1660.md) | [AR-1654](../tasks/AR-1654.md), [AR-1657](../tasks/AR-1657.md), [AR-1659](../tasks/AR-1659.md) | [AR-1667](../tasks/AR-1667.md), [AR-1668](../tasks/AR-1668.md) |
 | [AR-1661](../tasks/AR-1661.md) | None | [AR-1663](../tasks/AR-1663.md), [AR-1665](../tasks/AR-1665.md) |
 | [AR-1663](../tasks/AR-1663.md) | [AR-1658](../tasks/AR-1658.md), [AR-1661](../tasks/AR-1661.md) | [AR-1665](../tasks/AR-1665.md), [AR-1666](../tasks/AR-1666.md) |
-| [AR-1665](../tasks/AR-1665.md) | [AR-1661](../tasks/AR-1661.md), [AR-1663](../tasks/AR-1663.md) | [AR-1666](../tasks/AR-1666.md), [AR-1670](../tasks/AR-1670.md), [AR-1680](../tasks/AR-1680.md), [AR-1681](../tasks/AR-1681.md), [AR-1682](../tasks/AR-1682.md) |
+| [AR-1665](../tasks/AR-1665.md) | [AR-1661](../tasks/AR-1661.md), [AR-1663](../tasks/AR-1663.md) | [AR-1666](../tasks/AR-1666.md), [AR-1670](../tasks/AR-1670.md), [AR-1679](../tasks/AR-1679.md), [AR-1680](../tasks/AR-1680.md), [AR-1681](../tasks/AR-1681.md), [AR-1682](../tasks/AR-1682.md) |
 | [AR-1666](../tasks/AR-1666.md) | [AR-1663](../tasks/AR-1663.md), [AR-1665](../tasks/AR-1665.md) | None |
 | [AR-1667](../tasks/AR-1667.md) | [AR-1658](../tasks/AR-1658.md), [AR-1659](../tasks/AR-1659.md), [AR-1660](../tasks/AR-1660.md) | [AR-1668](../tasks/AR-1668.md) |
 | [AR-1668](../tasks/AR-1668.md) | [AR-1660](../tasks/AR-1660.md), [AR-1667](../tasks/AR-1667.md) | [AR-1677](../tasks/AR-1677.md) |
@@ -405,6 +408,7 @@
 | [AR-1676](../tasks/AR-1676.md) | [AR-1658](../tasks/AR-1658.md), [AR-1674](../tasks/AR-1674.md), [AR-1675](../tasks/AR-1675.md) | [AR-1677](../tasks/AR-1677.md), [AR-1678](../tasks/AR-1678.md) |
 | [AR-1677](../tasks/AR-1677.md) | [AR-1668](../tasks/AR-1668.md), [AR-1676](../tasks/AR-1676.md) | [AR-1678](../tasks/AR-1678.md) |
 | [AR-1678](../tasks/AR-1678.md) | [AR-1676](../tasks/AR-1676.md), [AR-1677](../tasks/AR-1677.md) | None |
+| [AR-1679](../tasks/AR-1679.md) | [AR-1665](../tasks/AR-1665.md) | None |
 | [AR-1680](../tasks/AR-1680.md) | [AR-1665](../tasks/AR-1665.md) | None |
 | [AR-1681](../tasks/AR-1681.md) | [AR-1665](../tasks/AR-1665.md) | None |
 | [AR-1682](../tasks/AR-1682.md) | [AR-1665](../tasks/AR-1665.md) | [AR-1683](../tasks/AR-1683.md) |
@@ -506,7 +510,7 @@
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-1444](../tasks/AR-1444-first-class-journey-qualification.md): First-class journey qualification | Unclaimed | Optional cross-repository journey evidence; never an ASB release blocker. | Optional cross-repository qualification only: wait for external asb-tui AR-1327 to provide an exact pinned acceptance revision and credential-free journey transcript; this AR is not an ASB release or first-customer blocker. Do not modify asb-tui from this repository. |
 
-### Planned (82)
+### Planned (83)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -584,6 +588,7 @@
 | P1 | [AR-1624](../tasks/AR-1624.md): AWQ/AWC quality and coordination gate | Unclaimed | Qualify the wizard release using current Agent Workflow Quality and Coordinator evidence, worker isolation, reconciliation, and recovery rules. | Promote after the release gate; run independent quality/coordination audit and recovery drill. |
 | P1 | [AR-1665](../tasks/AR-1665.md): Paired legacy task-spec metadata vocabulary repair | Unclaimed | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. |
 | P1 | [AR-1666](../tasks/AR-1666.md): Trusted-main broad TUI coverage qualification | Unclaimed | Raise current TUI main coverage from 89.43&#37; to the strict 90&#37; gate through behavior-focused tests without weakening thresholds. | Reproduce trusted-main coverage at exact head 06e96770, identify low-coverage wizard/runtime/UI paths, and add focused behavior tests preserving development nonblocking authentication, signature, and key-management rules. |
+| P1 | [AR-1679](../tasks/AR-1679.md): ASB legacy task-spec normalization | Unclaimed | Normalize the remaining ASB legacy task-spec records rejected by strict validation without changing task intent or gates. | Normalize AR-1625/1626/1628-1630 and AR-1641-1655, regenerate projections, and pass fresh strict validation. |
 | P1 | [AR-1680](../tasks/AR-1680.md): Repair vendor manifest regression fixture | Unclaimed | Align the immutable vendor-manifest regression fixture with the intentional task-spec validator vocabulary extension. | Run vendor verification and the complete vendor regression test on the exact signed head. |
 | P1 | [AR-1681](../tasks/AR-1681.md): Normalize residual ASB task specifications | Unclaimed | Complete strict-schema normalization for residual ASB task records AR-1617 through AR-1621 without changing their acceptance or evidence requirements. | Add only missing strict vocabulary fields, regenerate projections, and pass exact validation. |
 | P1 | [AR-1682](../tasks/AR-1682.md): Restore formal hierarchy model contract | Unclaimed | Repair the PR-publication formal model fixture so its hierarchy invariant matches the declared task domain without weakening any invariant or hosted gate. | Run exact formal publication verification and independent review on the corrected model fixture. |
@@ -607,6 +612,3 @@
 | P0 | [AR-0105](../tasks/AR-0105-sandbox-test-portability.md): Repair sandbox test target portability | Unclaimed | Remove repository-target assumptions from sandbox lease tests so clean external Cargo targets work. | Release AR-0105 done after repaired exact-main local/hosted/state validation. |
 | P0 | [AR-0317](../tasks/AR-0317-runtime-bundle-manifest.md): Define runtime bundle manifest and verifier | Unclaimed | Define common signed runtime bundle manifests and offline verification. | Completed; retain Linux/operator-owned acquisition limits. |
 | P0 | [AR-0506](../tasks/AR-0506-replay-opencode.md): Qualify OpenCode replay | Unclaimed | Qualify replay conformance for OpenCode. | Monitor rerun of exact-head x86 Rust job after investigated bounded ETXTBSY fixture flake; merge only after every workflow is green. |
-| P0 | [AR-0507](../tasks/AR-0507-replay-opendesk.md): Qualify OpenDesk replay | Unclaimed | Qualify replay conformance for OpenDesk. | Independently review immutable head 24a5519ef006c063f3a8d6e81d0928f2e9e986f9/tree 96f01bd39cd5e75a70d3618cec55e603b9643d38; publish only after approval, then require exact-head x86_64/aarch64 quality/formal/fault CI. |
-| P0 | [AR-0508](../tasks/AR-0508-replay-aider.md): Qualify aider replay | Unclaimed | Qualify replay conformance for aider. | Await independent immutable review of exact ec0a2930690c108987b4a867632316651282cc97; if approved, publish with an exact absent-ref lease, open focused PR, and require exact-head CI before integration. |
-| P0 | [AR-0509](../tasks/AR-0509-replay-codex.md): Qualify Codex replay | Unclaimed | Qualify replay conformance for Codex. | Monitor PR #45 exact d086fec checks; investigate any failure, then integrate only after every required workflow is green. |
