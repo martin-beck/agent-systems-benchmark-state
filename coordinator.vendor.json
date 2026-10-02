@@ -45,7 +45,7 @@
       "source": "tests/test_checkpoint_records.py"
     },
     "tests/test_handoffctl.py": {
-      "sha256": "abe7849de3be12a7d027e2fb8fbb97d6443f5aa2975bad723227d074b40d7e22",
+      "sha256": "53918bcb5f4c80fce9ba402d4b604c5ccfbe9b5da99aa618bd3f99d001fefdef",
       "source": "tests/test_handoffctl.py"
     },
     "tests/test_hierarchy.py": {

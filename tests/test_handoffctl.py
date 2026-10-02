@@ -897,15 +897,15 @@ class HandoffTest(unittest.TestCase):
             "spec_ref": "spec.json",
             "spec_revision": 2,
         }
-        valid = dict(
-            expected_revision=4,
-            spec_ref="spec.json",
-            spec_revision=2,
-            evidence_class="contract-test",
-            evidence_ref="evidence/AR-0001",
-            evidence_digest="sha256:" + "b" * 64,
-            note="accepted",
-        )
+        valid = {
+            "expected_revision": 4,
+            "spec_ref": "spec.json",
+            "spec_revision": 2,
+            "evidence_class": "contract-test",
+            "evidence_ref": "evidence/AR-0001",
+            "evidence_digest": "sha256:" + "b" * 64,
+            "note": "accepted",
+        }
         for message, meta_changes, changes in (
             ("active task", {"status": "open"}, {}),
             ("stale revision", {}, {"expected_revision": 3}),
