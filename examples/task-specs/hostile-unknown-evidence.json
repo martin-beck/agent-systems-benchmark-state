@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "spec_ref": "examples/task-specs/hostile-unknown-evidence.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [{"id": "valid", "description": "valid"}],
+  "definition_of_done": ["valid"],
+  "inputs": [{"id": "input", "description": "valid"}],
+  "outputs": [{"id": "output", "description": "valid"}],
+  "allowed_tools": ["source.read"],
+  "forbidden_tools": [],
+  "required_evidence_classes": ["invented"],
+  "gates": [{"id": "gate", "description": "valid"}]
+}

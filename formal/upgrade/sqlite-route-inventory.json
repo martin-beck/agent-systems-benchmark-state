@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "kind": "sqlite-authoritative-mutation-route-inventory",
+  "implementation": "tools/sqlite_storage.py",
+  "contract_sha256": "5e61e0f93178b8e29969b1fb74402c9a8a308d740b44da089ad749be9d5883c8",
+  "routes": [
+    {
+      "method": "mutate",
+      "operations": ["task transition", "dependency rewrite", "event append"],
+      "gate": "SQLiteBackend.transaction"
+    },
+    {
+      "method": "update_observations",
+      "operations": ["observation update", "reconciliation event append"],
+      "gate": "SQLiteBackend.transaction"
+    },
+    {
+      "method": "append_command_result",
+      "operations": ["command result append"],
+      "gate": "SQLiteBackend.transaction"
+    },
+    {
+      "method": "retire",
+      "operations": ["authority retirement", "selector switch callback"],
+      "gate": "SQLiteBackend.transaction"
+    }
+  ],
+  "nonclaims": [
+    "Static route coverage does not prove runtime refinement or authorize upgrade mutation.",
+    "The inventory does not cover read-only connections or future Git authority routes."
+  ]
+}

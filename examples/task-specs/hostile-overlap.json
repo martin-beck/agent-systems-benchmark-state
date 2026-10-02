@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "spec_ref": "examples/task-specs/hostile-overlap.json",
+  "spec_revision": 1,
+  "acceptance_predicates": [{"id": "valid", "description": "valid"}],
+  "definition_of_done": ["valid"],
+  "inputs": [{"id": "input", "description": "valid"}],
+  "outputs": [{"id": "output", "description": "valid"}],
+  "allowed_tools": ["authority.release"],
+  "forbidden_tools": ["authority.release"],
+  "required_evidence_classes": ["mechanical"],
+  "gates": [{"id": "gate", "description": "valid"}]
+}

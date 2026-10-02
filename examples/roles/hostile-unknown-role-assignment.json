@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "assignment_id": "assignment-worker-001",
+  "owner_id": "worker-001",
+  "roles": [{"role_id": "unknown-role", "expires_at": "2099-01-01T00:00:00Z"}],
+  "authorization_evidence": [{"kind": "review", "ref": "coordinator/authorizations/AR-0066", "digest": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}]
+}
