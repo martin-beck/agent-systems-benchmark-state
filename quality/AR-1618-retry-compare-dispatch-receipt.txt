@@ -1,0 +1,10 @@
+AR: AR-1618
+ASB protected-main commit: f563194d2555ff7e1fa26397aab40dacd7c9ab41
+Implementation PR: #433, final signed head 5fa1a7964f6b53fb1878376b43c2d86cb401fc53
+Paired TUI protected-main commit: 95d4c362bb7ef4bd9007c7aa77d87403f4a634db
+Evidence: bounded retry/repeat uses selected run identity and derived idempotency; live/offline comparison is digest-bound and protocol-versioned.
+Review: independent exact-head review found no remaining product blocker; all commits DCO/signed.
+Hosted evidence: PR #433 exact-head required workflows passed.
+Status: released after protected-main merge.
+
+Development-only authentication, signatures, and key management remain warning-only and non-blocking.

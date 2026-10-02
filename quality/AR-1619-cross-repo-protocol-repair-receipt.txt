@@ -1,0 +1,10 @@
+AR: AR-1619
+ASB protected-main commit: f563194d2555ff7e1fa26397aab40dacd7c9ab41
+TUI protected-main commit: 95d4c362bb7ef4bd9007c7aa77d87403f4a634db
+ASB PR #433 merged; TUI PR #213 merged after exact ASB-v1.13 requalification.
+Evidence: v1.8 compatibility retained, v1.13 lifecycle operations aligned, keyboard dispatch reachable, stable RunId selection, explicit cassette-delete confirmation, and retry/compare payload identity.
+Review: independent exact-head reviews found no remaining product blocker.
+Hosted evidence: ASB PR #433 and TUI PR #213 exact-head required workflows passed.
+Status: released after both protected-main merges.
+
+Development-only authentication, signatures, and key management remain warning-only and non-blocking.
