@@ -312,6 +312,11 @@ def _existing_regular_identity(parent: int, name: str) -> tuple[int, int] | None
 
 
 def _remove_selector_temporary(parent: int, entry: str) -> None:
+    # Only names emitted by commit_runtime_selector are eligible for cleanup.
+    # In particular, never unlink the active selector when a caller passes its
+    # ordinary name instead of a retained staging entry.
+    if re.fullmatch(r"\.[^/]+\.[0-9a-f]{32}", entry) is None:
+        raise AuthorityError("runtime selector temporary name is unsafe")
     descriptor = -1
     try:
         descriptor = os.open(entry, os.O_RDONLY | os.O_NOFOLLOW, dir_fd=parent)
