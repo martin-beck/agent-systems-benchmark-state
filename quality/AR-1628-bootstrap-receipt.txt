@@ -1,0 +1,12 @@
+AR-1628 bootstrap-stage receipt
+================================
+ASB/TUI merged TUI checkpoint: a7e3156b0d5f0aad8d6c75cf99818f4d935d134b
+PR: https://github.com/martin-beck/asb-tui/pull/218
+Implementation commit: 7b2333ecfdbb0cc3cdfc161155f93a411b40265f
+Hosted repository-quality: pass (run 36957252097, attempt 3)
+Hosted AWQ shadow/core policy: pass (run 36957252270, attempt 3)
+Signature/DCO: verified
+Local focused evidence: control_transport 27 passed; development_lifecycle 5 passed
+Result: bootstrap status-2 failure repaired; unavailable development agents remain visible and are not polled.
+Boundary: remaining top-level post-bootstrap launch timeout is AR-1629, not claimed here.
+Development auth/signature/key management remain warning-only.
