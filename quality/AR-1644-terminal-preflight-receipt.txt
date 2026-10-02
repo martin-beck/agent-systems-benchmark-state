@@ -1,0 +1,12 @@
+AR-1644 acceptance receipt
+
+Status: pass
+TUI protected main merge: a3dc76b048245c8112ce860b90253431b0843325
+PR: #223, signed head a24eed3ba5e554f0252028d4174420d45d1c5f1c
+
+The bounded terminal preflight returns typed environment_path_invalid for
+invalid/absent configured paths, while valid paths preserve ownership, symlink,
+device, and inherited-FD PTY handoff checks. Local full suite, inherited-FD
+qualification, formatting, UI-state validation, repository-quality, and AWQ
+checks passed. Development authentication/signature/key-management warnings
+remain non-blocking.
