@@ -712,7 +712,7 @@
         AR_1682["AR-1682 - Planned"]:::status_planned
         AR_1683["AR-1683 - Planned"]:::status_planned
         AR_1684["AR-1684 - Planned"]:::status_planned
-        AR_1686["AR-1686 - Planned"]:::status_planned
+        AR_1685["AR-1685 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2404,24 +2404,19 @@
     AR_1645 --> AR_1647
     AR_1645 --> AR_1648
     AR_1645 --> AR_1657
-    AR_1645 --> AR_1686
     AR_1646 --> AR_1643
     AR_1646 --> AR_1647
     AR_1646 --> AR_1648
     AR_1646 --> AR_1652
-    AR_1646 --> AR_1686
     AR_1647 --> AR_1643
     AR_1647 --> AR_1657
     AR_1648 --> AR_1647
     AR_1648 --> AR_1649
     AR_1648 --> AR_1650
-    AR_1648 --> AR_1686
     AR_1649 --> AR_1647
     AR_1649 --> AR_1651
-    AR_1649 --> AR_1686
     AR_1650 --> AR_1647
     AR_1650 --> AR_1652
-    AR_1650 --> AR_1686
     AR_1651 --> AR_1643
     AR_1651 --> AR_1647
     AR_1651 --> AR_1655

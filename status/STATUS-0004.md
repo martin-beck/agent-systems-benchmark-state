@@ -422,16 +422,11 @@
 
 ## Complete AR inventory
 
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1613](../tasks/AR-1613.md): Current-main dev-channel consumption and quickstart qualification | Unclaimed | Prove a fresh clone can consume the published dev channel and complete the shortest install-to-offline-comparison journey. | Use the installed current paired manifest for the repository-owned fresh-user wizard/fixture with a valid content-addressed experiment identity; capture/replay/offline-compare it and obtain independent review before release. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
 | P0 | [AR-1685](../tasks/AR-1685.md): Spec-acceptance completion metadata contract | Unclaimed | Repair task metadata and handoffctl validation so supported done transitions can record exact acceptance evidence without weakening fail-closed gates. | Claim through handoffctl, implement the validated spec_acceptance metadata contract and focused rejection/acceptance tests, then open a reviewed state-only PR. |
 
 ### Blocked (82)

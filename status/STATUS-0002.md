@@ -4654,19 +4654,19 @@
 | Summary | Lock in fail-closed rejection of hostile selector directory, symlink, and non-regular entries. |
 | Next action | Run the targeted authority defensive matrix and full hosted checks on the signed head. |
 
-### AR-1686 — Current-head content-addressed plan generation and qualification repair
+### AR-1685 — Spec-acceptance completion metadata contract
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | open |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
 | Owner | Unclaimed |
 | Parent | None |
 | Children | None |
-| Summary | Make the fresh-user qualification runner generate valid plans through the ASB plan-create path and prove run, capture, replay, and comparison end to end. |
-| Next action | Replace hand-authored plan synthesis with plan create, add stale-identity negatives, and publish exact-head paired evidence for AR-1613. |
+| Summary | Repair task metadata and handoffctl validation so supported done transitions can record exact acceptance evidence without weakening fail-closed gates. |
+| Next action | Claim through handoffctl, implement the validated spec_acceptance metadata contract and focused rejection/acceptance tests, then open a reviewed state-only PR. |
 
 
 ## Dependency graph
