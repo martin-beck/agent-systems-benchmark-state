@@ -302,7 +302,7 @@ class TlcRunnerTests(unittest.TestCase):
         self.assertTrue(Path(RUNNER.DEFAULT_QUEUE).is_relative_to(RUNNER.APPROVED_RUNTIME_ROOT))
         self.assertEqual(
             RUNNER.DEFAULT_ADMISSION_LOCK,
-            str(Path("/srv/data/projects/.asb-tlc") / "admission.lock"),
+            str(RUNNER.APPROVED_RUNTIME_ROOT / "admission.lock"),
         )
 
     def test_canonical_lock_is_shared_by_default(self) -> None:
