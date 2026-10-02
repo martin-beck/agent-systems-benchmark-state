@@ -4556,6 +4556,20 @@
 | Summary | Make the default-dev clone, configure, benchmark, offline replay, comparison, and analysis journey channel-aware and release-gated. |
 | Next action | Update the one-command quickstart and release gate to show the selected channel, preserve it through all runs, and verify online/offline analysis with a clean-room receipt. |
 
+### AR-1678 — Development install host preflight and typed recovery
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Make the default-dev install path detect missing host tools before launch and return actionable typed recovery without turning development authentication or signature warnings into blockers. |
+| Next action | Add a bounded host/toolchain preflight to the paired install contract, classify missing tools and PTY limitations, and qualify retry/cleanup with exact-head evidence. |
+
 
 ## Dependency graph
 
@@ -4671,15 +4685,3 @@ flowchart LR
         AR_0806["AR-0806 - Done"]:::status_done
         AR_0807["AR-0807 - Planned"]:::status_planned
         AR_0808["AR-0808 - Planned"]:::status_planned
-        AR_0809["AR-0809 - Planned"]:::status_planned
-        AR_0810["AR-0810 - Planned"]:::status_planned
-        AR_0811["AR-0811 - Planned"]:::status_planned
-        AR_0812["AR-0812 - Done"]:::status_done
-        AR_0813["AR-0813 - Done"]:::status_done
-        AR_0814["AR-0814 - Blocked"]:::status_blocked
-        AR_0815["AR-0815 - Planned"]:::status_planned
-        AR_0816["AR-0816 - Planned"]:::status_planned
-        AR_0817["AR-0817 - Planned"]:::status_planned
-        AR_0818["AR-0818 - Planned"]:::status_planned
-        AR_0819["AR-0819 - Done"]:::status_done
-        AR_0820["AR-0820 - Done"]:::status_done

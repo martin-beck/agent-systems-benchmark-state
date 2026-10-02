@@ -1,5 +1,17 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+        AR_0809["AR-0809 - Planned"]:::status_planned
+        AR_0810["AR-0810 - Planned"]:::status_planned
+        AR_0811["AR-0811 - Planned"]:::status_planned
+        AR_0812["AR-0812 - Done"]:::status_done
+        AR_0813["AR-0813 - Done"]:::status_done
+        AR_0814["AR-0814 - Blocked"]:::status_blocked
+        AR_0815["AR-0815 - Planned"]:::status_planned
+        AR_0816["AR-0816 - Planned"]:::status_planned
+        AR_0817["AR-0817 - Planned"]:::status_planned
+        AR_0818["AR-0818 - Planned"]:::status_planned
+        AR_0819["AR-0819 - Done"]:::status_done
+        AR_0820["AR-0820 - Done"]:::status_done
         AR_0821["AR-0821 - Done"]:::status_done
         AR_0822["AR-0822 - Done"]:::status_done
         AR_0823["AR-0823 - Planned"]:::status_planned
@@ -612,6 +624,7 @@
         AR_1675["AR-1675 - Planned"]:::status_planned
         AR_1676["AR-1676 - Planned"]:::status_planned
         AR_1677["AR-1677 - Planned"]:::status_planned
+        AR_1678["AR-1678 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2356,6 +2369,8 @@
     AR_1674 --> AR_1676
     AR_1675 --> AR_1676
     AR_1676 --> AR_1677
+    AR_1676 --> AR_1678
+    AR_1677 --> AR_1678
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -2659,7 +2674,3 @@
 | [AR-1259](../tasks/AR-1259-protected-main-dco-recovery.md) | [AR-1242](../tasks/AR-1242-protected-main-admission.md) | None |
 | [AR-1260](../tasks/AR-1260-runtime-owned-strict-replay-integration.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
 | [AR-1261](../tasks/AR-1261-runtime-to-cli-replay-entrypoint.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1262](../tasks/AR-1262-runtime-owned-launch-authority.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1263](../tasks/AR-1263-sandbox-scope-classification-stability.md) | [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md) | None |
-| [AR-1264](../tasks/AR-1264-pr205-merge-integrity.md) | [AR-0897](../tasks/AR-0897-main-merge-integrity.md) | None |
-| [AR-1265](../tasks/AR-1265-runtime-owned-replay-entrypoint.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
