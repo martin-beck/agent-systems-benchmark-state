@@ -1,0 +1,8 @@
+AR: AR-1633
+Status: DONE
+TUI implementation PR: #221, signed/DCO head ada93d17f7572842f0ba1d62d1aca5507368a55f
+TUI merged protected-main commit: 5146a08db5de6de8f02d4552117b35f55b58e33f
+Hosted evidence: Repository Quality run 36962693966 and AWQ shadow run 36962694286 passed on the exact rebased head.
+Behavior: direct asb-tui install/status/launch/upgrade/remove lifecycle commands now default to concise human-readable output; --json is explicit and --format json remains compatible.
+Tests: focused doctor/top-level tests, full locked test suite, formatting, inventory, and independent exact-head review passed.
+Scope: output parity only; development authentication, signatures, and key management remain warning-only and non-blocking.
