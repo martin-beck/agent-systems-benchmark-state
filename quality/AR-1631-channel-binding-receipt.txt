@@ -1,0 +1,7 @@
+AR: AR-1631
+Status: DONE
+ASB exact audited head: 62fda2f3417bf69f1da5f288b0df1d389c853dfa
+TUI exact current protected-main head: 25ec7b7506ced3d2f00c814e8b243645e87851f6
+Evidence: ASB and TUI both parse dev|stable|nightly|experimental; fresh installs default to dev; omitted channel preserves the active installation; lifecycle JSON carries channel/development-only classification; unsupported channels return typed channel_unavailable without fallback.
+Tests: ASB parser/channel coverage passed; TUI targeted channel/router tests 7/7 and full locked suite passed on the audited implementation. TUI post-bootstrap repair is additionally hosted-green in PR #220.
+Scope: existing released seams satisfy the paired binding; no product change was justified. Development authentication, signatures, and key management remain warning-only and non-blocking.
