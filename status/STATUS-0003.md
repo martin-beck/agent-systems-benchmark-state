@@ -1,5 +1,54 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+        AR_0821["AR-0821 - Done"]:::status_done
+        AR_0822["AR-0822 - Done"]:::status_done
+        AR_0823["AR-0823 - Planned"]:::status_planned
+        AR_0830["AR-0830 - Done"]:::status_done
+        AR_0831["AR-0831 - Done"]:::status_done
+        AR_0832["AR-0832 - Blocked"]:::status_blocked
+        AR_0833["AR-0833 - Planned"]:::status_planned
+        AR_0834["AR-0834 - Done"]:::status_done
+        AR_0835["AR-0835 - Done"]:::status_done
+        AR_0836["AR-0836 - Blocked"]:::status_blocked
+        AR_0837["AR-0837 - Planned"]:::status_planned
+        AR_0840["AR-0840 - Done"]:::status_done
+        AR_0841["AR-0841 - Done"]:::status_done
+        AR_0842["AR-0842 - Done"]:::status_done
+        AR_0843["AR-0843 - Done"]:::status_done
+        AR_0844["AR-0844 - Done"]:::status_done
+        AR_0845["AR-0845 - Done"]:::status_done
+        AR_0846["AR-0846 - Planned"]:::status_planned
+        AR_0847["AR-0847 - Done"]:::status_done
+        AR_0848["AR-0848 - Done"]:::status_done
+        AR_0849["AR-0849 - Done"]:::status_done
+        AR_0850["AR-0850 - Done"]:::status_done
+        AR_0851["AR-0851 - Done"]:::status_done
+        AR_0852["AR-0852 - Done"]:::status_done
+        AR_0853["AR-0853 - Done"]:::status_done
+        AR_0854["AR-0854 - Done"]:::status_done
+        AR_0855["AR-0855 - Done"]:::status_done
+        AR_0856["AR-0856 - Planned"]:::status_planned
+        AR_0857["AR-0857 - Done"]:::status_done
+        AR_0858["AR-0858 - Done"]:::status_done
+        AR_0859["AR-0859 - Done"]:::status_done
+        AR_0860["AR-0860 - Done"]:::status_done
+        AR_0861["AR-0861 - Blocked"]:::status_blocked
+        AR_0862["AR-0862 - Planned"]:::status_planned
+        AR_0863["AR-0863 - Blocked"]:::status_blocked
+        AR_0864["AR-0864 - Planned"]:::status_planned
+        AR_0865["AR-0865 - Planned"]:::status_planned
+        AR_0866["AR-0866 - Planned"]:::status_planned
+        AR_0867["AR-0867 - Planned"]:::status_planned
+        AR_0868["AR-0868 - Planned"]:::status_planned
+        AR_0869["AR-0869 - Done"]:::status_done
+        AR_0870["AR-0870 - Done"]:::status_done
+        AR_0871["AR-0871 - Done"]:::status_done
+        AR_0872["AR-0872 - Done"]:::status_done
+        AR_0873["AR-0873 - Planned"]:::status_planned
+        AR_0874["AR-0874 - Planned"]:::status_planned
+        AR_0875["AR-0875 - Done"]:::status_done
+        AR_0876["AR-0876 - Done"]:::status_done
+        AR_0877["AR-0877 - Done"]:::status_done
         AR_0878["AR-0878 - Done"]:::status_done
         AR_0879["AR-0879 - Done"]:::status_done
         AR_0880["AR-0880 - Done"]:::status_done
@@ -559,6 +608,10 @@
         AR_1668["AR-1668 - Planned"]:::status_planned
         AR_1670["AR-1670 - Planned"]:::status_planned
         AR_1671["AR-1671 - Planned"]:::status_planned
+        AR_1674["AR-1674 - Planned"]:::status_planned
+        AR_1675["AR-1675 - Planned"]:::status_planned
+        AR_1676["AR-1676 - Planned"]:::status_planned
+        AR_1677["AR-1677 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2282,8 +2335,12 @@
     AR_1658 --> AR_1659
     AR_1658 --> AR_1663
     AR_1658 --> AR_1667
+    AR_1658 --> AR_1674
+    AR_1658 --> AR_1675
+    AR_1658 --> AR_1676
     AR_1659 --> AR_1660
     AR_1659 --> AR_1667
+    AR_1659 --> AR_1674
     AR_1660 --> AR_1667
     AR_1660 --> AR_1668
     AR_1661 --> AR_1663
@@ -2293,7 +2350,12 @@
     AR_1665 --> AR_1666
     AR_1665 --> AR_1670
     AR_1667 --> AR_1668
+    AR_1668 --> AR_1677
     AR_1670 --> AR_1671
+    AR_1674 --> AR_1675
+    AR_1674 --> AR_1676
+    AR_1675 --> AR_1676
+    AR_1676 --> AR_1677
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -2601,15 +2663,3 @@
 | [AR-1263](../tasks/AR-1263-sandbox-scope-classification-stability.md) | [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md) | None |
 | [AR-1264](../tasks/AR-1264-pr205-merge-integrity.md) | [AR-0897](../tasks/AR-0897-main-merge-integrity.md) | None |
 | [AR-1265](../tasks/AR-1265-runtime-owned-replay-entrypoint.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1266](../tasks/AR-1266-authenticated-replay-dispatch.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1267](../tasks/AR-1267-runtime-replay-execution.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1268](../tasks/AR-1268-replay-transport-boundary.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1269](../tasks/AR-1269-runtime-replay-launch-factory.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1270](../tasks/AR-1270-runtime-cassette-handle.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1271](../tasks/AR-1271-cassette-operation-contract.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1272](../tasks/AR-1272-authenticated-cassette-backend.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1273](../tasks/AR-1273-complete-replay-context.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1274](../tasks/AR-1274-runtime-cassette-executor-adapter.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1275](../tasks/AR-1275-replay-operation-injection.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1276](../tasks/AR-1276-primary-replay-runtime.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1277](../tasks/AR-1277-runtime-cli-replay-transport.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |

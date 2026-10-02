@@ -4500,6 +4500,62 @@
 | Summary | Raise the repaired ASB coordination checkout back above the unchanged 95&#37; coverage gate with behavior-focused tests. |
 | Next action | Add focused tests for authority adapters, rollback/CAS lifecycle, handoff leases, oracle lifecycle, and upgrade contract paths, then pass the unchanged strict gate. |
 
+### AR-1674 — ASB channel option propagation and default persistence
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Carry the explicit release-channel option through install, status, launch, upgrade, rollback, and remove, with dev as the persisted default and stable typed diagnostics. |
+| Next action | Implement one shared channel selector for every supported ASB command, persist the selected channel for subsequent runs, and add human/JSON tests for omitted dev, explicit dev, and unavailable future channels. |
+
+### AR-1675 — ASB channel manifest and current-main provenance
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Publish a channel manifest that identifies the resolved source head and build, and make dev current-main provenance inspectable by the installer and TUI. |
+| Next action | Define the versioned manifest fields and validation rules, emit them from the dev materializer, and add tamper, stale-head, and future-channel fixtures without blocking development credentials. |
+
+### AR-1676 — Paired ASB/TUI channel compatibility matrix
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Qualify ASB and asb-tui against the same dev/stable/nightly/experimental channel vocabulary, defaults, manifests, and typed failure cases. |
+| Next action | Build the paired compatibility runner and exact-head receipt covering omitted dev, explicit channels, restart persistence, upgrade/rollback preservation, and unavailable-channel diagnostics. |
+
+### AR-1677 — Channel-aware release and quickstart gate
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P0 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Make the default-dev clone, configure, benchmark, offline replay, comparison, and analysis journey channel-aware and release-gated. |
+| Next action | Update the one-command quickstart and release gate to show the selected channel, preserve it through all runs, and verify online/offline analysis with a clean-room receipt. |
+
 
 ## Dependency graph
 
@@ -4627,52 +4683,3 @@ flowchart LR
         AR_0818["AR-0818 - Planned"]:::status_planned
         AR_0819["AR-0819 - Done"]:::status_done
         AR_0820["AR-0820 - Done"]:::status_done
-        AR_0821["AR-0821 - Done"]:::status_done
-        AR_0822["AR-0822 - Done"]:::status_done
-        AR_0823["AR-0823 - Planned"]:::status_planned
-        AR_0830["AR-0830 - Done"]:::status_done
-        AR_0831["AR-0831 - Done"]:::status_done
-        AR_0832["AR-0832 - Blocked"]:::status_blocked
-        AR_0833["AR-0833 - Planned"]:::status_planned
-        AR_0834["AR-0834 - Done"]:::status_done
-        AR_0835["AR-0835 - Done"]:::status_done
-        AR_0836["AR-0836 - Blocked"]:::status_blocked
-        AR_0837["AR-0837 - Planned"]:::status_planned
-        AR_0840["AR-0840 - Done"]:::status_done
-        AR_0841["AR-0841 - Done"]:::status_done
-        AR_0842["AR-0842 - Done"]:::status_done
-        AR_0843["AR-0843 - Done"]:::status_done
-        AR_0844["AR-0844 - Done"]:::status_done
-        AR_0845["AR-0845 - Done"]:::status_done
-        AR_0846["AR-0846 - Planned"]:::status_planned
-        AR_0847["AR-0847 - Done"]:::status_done
-        AR_0848["AR-0848 - Done"]:::status_done
-        AR_0849["AR-0849 - Done"]:::status_done
-        AR_0850["AR-0850 - Done"]:::status_done
-        AR_0851["AR-0851 - Done"]:::status_done
-        AR_0852["AR-0852 - Done"]:::status_done
-        AR_0853["AR-0853 - Done"]:::status_done
-        AR_0854["AR-0854 - Done"]:::status_done
-        AR_0855["AR-0855 - Done"]:::status_done
-        AR_0856["AR-0856 - Planned"]:::status_planned
-        AR_0857["AR-0857 - Done"]:::status_done
-        AR_0858["AR-0858 - Done"]:::status_done
-        AR_0859["AR-0859 - Done"]:::status_done
-        AR_0860["AR-0860 - Done"]:::status_done
-        AR_0861["AR-0861 - Blocked"]:::status_blocked
-        AR_0862["AR-0862 - Planned"]:::status_planned
-        AR_0863["AR-0863 - Blocked"]:::status_blocked
-        AR_0864["AR-0864 - Planned"]:::status_planned
-        AR_0865["AR-0865 - Planned"]:::status_planned
-        AR_0866["AR-0866 - Planned"]:::status_planned
-        AR_0867["AR-0867 - Planned"]:::status_planned
-        AR_0868["AR-0868 - Planned"]:::status_planned
-        AR_0869["AR-0869 - Done"]:::status_done
-        AR_0870["AR-0870 - Done"]:::status_done
-        AR_0871["AR-0871 - Done"]:::status_done
-        AR_0872["AR-0872 - Done"]:::status_done
-        AR_0873["AR-0873 - Planned"]:::status_planned
-        AR_0874["AR-0874 - Planned"]:::status_planned
-        AR_0875["AR-0875 - Done"]:::status_done
-        AR_0876["AR-0876 - Done"]:::status_done
-        AR_0877["AR-0877 - Done"]:::status_done
