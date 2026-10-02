@@ -4416,6 +4416,20 @@
 | Summary | Repair the current protected-main merge metadata so DCO recognition succeeds without changing product files or development nonblocking behavior. |
 | Next action | Confirm AR-1661 and AR-1658 dependency evidence, then repair and independently verify the exact protected-main merge topology, Signed-off-by trailer, SSH signature, unchanged tree, and hosted policy. |
 
+### AR-1665 — Paired legacy task-spec metadata vocabulary repair
+
+| Field | Value |
+| --- | --- |
+| Status | planned |
+| Priority | P1 |
+| Role | unassigned |
+| Team | unassigned |
+| Owner | Unclaimed |
+| Parent | None |
+| Children | None |
+| Summary | Record and repair only the historical coordination metadata needed for supported task-spec validation and evidence vocabulary. |
+| Next action | Normalize the paired AR-1658 through AR-1664 metadata slice, validate task specs and generated views, and preserve all product and development-only nonblocking semantics. |
+
 
 ## Dependency graph
 
@@ -4653,14 +4667,3 @@ flowchart LR
         AR_1030["AR-1030 - Done"]:::status_done
         AR_1031["AR-1031 - Planned"]:::status_planned
         AR_1032["AR-1032 - Planned"]:::status_planned
-        AR_1033["AR-1033 - Planned"]:::status_planned
-        AR_1034["AR-1034 - Planned"]:::status_planned
-        AR_1035["AR-1035 - Planned"]:::status_planned
-        AR_1036["AR-1036 - Done"]:::status_done
-        AR_1037["AR-1037 - Done"]:::status_done
-        AR_1038["AR-1038 - Done"]:::status_done
-        AR_1039["AR-1039 - Done"]:::status_done
-        AR_1040["AR-1040 - Done"]:::status_done
-        AR_1041["AR-1041 - Done"]:::status_done
-        AR_1042["AR-1042 - Done"]:::status_done
-        AR_1043["AR-1043 - Done"]:::status_done

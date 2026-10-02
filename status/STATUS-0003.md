@@ -1,5 +1,16 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+        AR_1033["AR-1033 - Planned"]:::status_planned
+        AR_1034["AR-1034 - Planned"]:::status_planned
+        AR_1035["AR-1035 - Planned"]:::status_planned
+        AR_1036["AR-1036 - Done"]:::status_done
+        AR_1037["AR-1037 - Done"]:::status_done
+        AR_1038["AR-1038 - Done"]:::status_done
+        AR_1039["AR-1039 - Done"]:::status_done
+        AR_1040["AR-1040 - Done"]:::status_done
+        AR_1041["AR-1041 - Done"]:::status_done
+        AR_1042["AR-1042 - Done"]:::status_done
+        AR_1043["AR-1043 - Done"]:::status_done
         AR_1044["AR-1044 - Done"]:::status_done
         AR_1045["AR-1045 - Done"]:::status_done
         AR_1046["AR-1046 - Superseded"]:::status_superseded
@@ -481,6 +492,7 @@
         AR_1660["AR-1660 - Planned"]:::status_planned
         AR_1661["AR-1661 - Done"]:::status_done
         AR_1663["AR-1663 - Planned"]:::status_planned
+        AR_1665["AR-1665 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2205,6 +2217,8 @@
     AR_1658 --> AR_1663
     AR_1659 --> AR_1660
     AR_1661 --> AR_1663
+    AR_1661 --> AR_1665
+    AR_1663 --> AR_1665
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -2540,9 +2554,3 @@
 | [AR-1291](../tasks/AR-1291-superseded-pointer-repair.md) | None | None |
 | [AR-1292](../tasks/AR-1292-tla-provenance-repair.md) | None | None |
 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md) | None | None |
-| [AR-1294](../tasks/AR-1294-state-gate-baseline.md) | None | None |
-| [AR-1295](../tasks/AR-1295-vendor-fixture-v037.md) | None | None |
-| [AR-1296](../tasks/AR-1296-state-quality-baseline.md) | None | None |
-| [AR-1297](../tasks/AR-1297-task-schema-metadata.md) | None | None |
-| [AR-1298](../tasks/AR-1298-narrow-metadata-repair.md) | None | None |
-| [AR-1299](../tasks/AR-1299.md) | [AR-1190](../tasks/AR-1190.md) | None |
