@@ -1,0 +1,42 @@
+# AR-1613 current-main dev-channel quickstart qualification receipt
+
+- Fresh source clones were used without modifying existing product checkouts.
+  ASB `main` head: `d7882b3d91e7aa1b09430e469654c77ba8053f2b` (tree
+  `82de7e63ddf0ee8b7df5cda2a88a0fce352c93db`); asb-tui `main` head:
+  `b344357ce0f28ddd168c569ea22a47bf552c60f3` (tree
+  `72595edc247d68b1e14ddf686cf3d65fd670b0f0`).
+- `cargo build --locked -p asb-cli` and `cargo build --locked` passed in the
+  respective fresh clones. Debug executable digests were recorded as ASB
+  `949864ec2cc1ed13af18b48868dff5521791fb8f9c12863f14553231c807c705` and TUI
+  `9ed393f99373c4f4405b84d4be510a3b36facbb504921a44212c218137162825`.
+- Disposable isolated XDG/HOME roots ran `doctor --json`, setup preflight, and
+  setup commit selecting provider `openrouter`, model
+  `cohere/north-mini-code:free`, and agent `codex`. Setup returned success,
+  `provider_contact:false`, and the visible development-only unavailable-auth
+  warning; no credential value was supplied or emitted. Provider catalog
+  advertised the same agent/provider/model matrix and marked Ollama unavailable
+  because verified daemon evidence was absent.
+- `cargo test --locked -p asb-cli --test guide_examples -- --nocapture` passed
+  5/5. This executes the documented local/mock plan, run, sweep, compare,
+  report, and record/replay guide workflow. `workflow_transcript` passed 3/3,
+  including reproducible privacy-safe capture/replay transcript checks.
+- Channel negatives are typed and fail closed: `asb tui install --channel
+  bogus --format=json` exited 2 with `unsupported asb tui channel`; `asb tui
+  install --channel dev --offline --dry-run --format=json` exited 3 with
+  `development_source_unavailable_offline`, `network:denied`, and
+  `development_only:true`; stable offline install exited 3 with
+  `cached_input_unavailable` and `development_only:false`.
+- Unavailable provider negative: `provider-plan` for Ollama exited 3 with
+  `provider profile is advertised but unavailable without verified daemon
+  evidence`; no fallback occurred. Standalone current-head TUI diagnostics
+  returned explicit `source_only_unverified` / development readiness results
+  without a broker, as required for a source-only binary.
+- A recursive scan of all captured JSON/log output found no secret-shaped value;
+  only the documented credential environment variable name appeared in the
+  warning contract. Existing product checkouts remained untouched and both
+  fresh clones are clean.
+
+Classification: environmental, contract-test, mechanical, and journey evidence.
+No live provider, network fallback, production credential, or authentication
+service was used. The development fixture remains visibly warning-only while
+production paths remain fail-closed.
