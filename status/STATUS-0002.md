@@ -3734,11 +3734,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | open |
+| Status | in_progress |
 | Priority | P0 |
 | Role | unassigned |
 | Team | unassigned |
-| Owner | Unclaimed |
+| Owner | codex-ar1613 |
 | Parent | None |
 | Children | None |
 | Summary | Prove a fresh clone can consume the published dev channel and complete the shortest install-to-offline-comparison journey. |
@@ -4699,4 +4699,3 @@ flowchart LR
         AR_0309["AR-0309 - Done"]:::status_done
         AR_0310["AR-0310 - Done"]:::status_done
         AR_0311["AR-0311 - Done"]:::status_done
-        AR_0312["AR-0312 - Done"]:::status_done
