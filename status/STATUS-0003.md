@@ -1,5 +1,66 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+        AR_0878["AR-0878 - Done"]:::status_done
+        AR_0879["AR-0879 - Done"]:::status_done
+        AR_0880["AR-0880 - Done"]:::status_done
+        AR_0888["AR-0888 - Done"]:::status_done
+        AR_0889["AR-0889 - Done"]:::status_done
+        AR_0890["AR-0890 - Blocked"]:::status_blocked
+        AR_0891["AR-0891 - Done"]:::status_done
+        AR_0892["AR-0892 - Planned"]:::status_planned
+        AR_0893["AR-0893 - Planned"]:::status_planned
+        AR_0894["AR-0894 - Planned"]:::status_planned
+        AR_0895["AR-0895 - Done"]:::status_done
+        AR_0896["AR-0896 - Blocked"]:::status_blocked
+        AR_0897["AR-0897 - Done"]:::status_done
+        AR_0898["AR-0898 - Done"]:::status_done
+        AR_0899["AR-0899 - Done"]:::status_done
+    end
+    subgraph series_09["09 - Assurance"]
+        direction TB
+        AR_0901["AR-0901 - Done"]:::status_done
+        AR_0902["AR-0902 - Done"]:::status_done
+        AR_0903["AR-0903 - Planned"]:::status_planned
+        AR_0904["AR-0904 - Done"]:::status_done
+        AR_0905["AR-0905 - Done"]:::status_done
+        AR_0906["AR-0906 - Done"]:::status_done
+        AR_0907["AR-0907 - Done"]:::status_done
+        AR_0908["AR-0908 - Done"]:::status_done
+        AR_0909["AR-0909 - Done"]:::status_done
+    end
+    subgraph series_10["10 - Reliability and release"]
+        direction TB
+        AR_1001["AR-1001 - Done"]:::status_done
+        AR_1002["AR-1002 - Done"]:::status_done
+        AR_1003["AR-1003 - Done"]:::status_done
+        AR_1004["AR-1004 - Done"]:::status_done
+        AR_1005["AR-1005 - Done"]:::status_done
+        AR_1006["AR-1006 - Done"]:::status_done
+        AR_1007["AR-1007 - Done"]:::status_done
+        AR_1008["AR-1008 - Done"]:::status_done
+        AR_1010["AR-1010 - Done"]:::status_done
+        AR_1011["AR-1011 - Planned"]:::status_planned
+        AR_1012["AR-1012 - Planned"]:::status_planned
+        AR_1013["AR-1013 - Done"]:::status_done
+        AR_1014["AR-1014 - Planned"]:::status_planned
+        AR_1015["AR-1015 - Planned"]:::status_planned
+        AR_1016["AR-1016 - Planned"]:::status_planned
+        AR_1017["AR-1017 - Done"]:::status_done
+        AR_1018["AR-1018 - Done"]:::status_done
+        AR_1019["AR-1019 - Done"]:::status_done
+        AR_1020["AR-1020 - Done"]:::status_done
+        AR_1021["AR-1021 - Done"]:::status_done
+        AR_1022["AR-1022 - Done"]:::status_done
+        AR_1023["AR-1023 - Done"]:::status_done
+        AR_1024["AR-1024 - Blocked"]:::status_blocked
+        AR_1025["AR-1025 - Blocked"]:::status_blocked
+        AR_1026["AR-1026 - Planned"]:::status_planned
+        AR_1027["AR-1027 - Planned"]:::status_planned
+        AR_1028["AR-1028 - Done"]:::status_done
+        AR_1029["AR-1029 - Planned"]:::status_planned
+        AR_1030["AR-1030 - Done"]:::status_done
+        AR_1031["AR-1031 - Planned"]:::status_planned
+        AR_1032["AR-1032 - Planned"]:::status_planned
         AR_1033["AR-1033 - Planned"]:::status_planned
         AR_1034["AR-1034 - Planned"]:::status_planned
         AR_1035["AR-1035 - Planned"]:::status_planned
@@ -493,6 +554,11 @@
         AR_1661["AR-1661 - Done"]:::status_done
         AR_1663["AR-1663 - Planned"]:::status_planned
         AR_1665["AR-1665 - Planned"]:::status_planned
+        AR_1666["AR-1666 - Planned"]:::status_planned
+        AR_1667["AR-1667 - Planned"]:::status_planned
+        AR_1668["AR-1668 - Planned"]:::status_planned
+        AR_1670["AR-1670 - Planned"]:::status_planned
+        AR_1671["AR-1671 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -2215,10 +2281,19 @@
     AR_1657 --> AR_1660
     AR_1658 --> AR_1659
     AR_1658 --> AR_1663
+    AR_1658 --> AR_1667
     AR_1659 --> AR_1660
+    AR_1659 --> AR_1667
+    AR_1660 --> AR_1667
+    AR_1660 --> AR_1668
     AR_1661 --> AR_1663
     AR_1661 --> AR_1665
     AR_1663 --> AR_1665
+    AR_1663 --> AR_1666
+    AR_1665 --> AR_1666
+    AR_1665 --> AR_1670
+    AR_1667 --> AR_1668
+    AR_1670 --> AR_1671
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -2538,19 +2613,3 @@
 | [AR-1275](../tasks/AR-1275-replay-operation-injection.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
 | [AR-1276](../tasks/AR-1276-primary-replay-runtime.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
 | [AR-1277](../tasks/AR-1277-runtime-cli-replay-transport.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1278](../tasks/AR-1278-primary-runtime-client.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1279](../tasks/AR-1279-end-to-end-replay-runtime.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1280](../tasks/AR-1280-cross-crate-replay-entrypoint.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1281](../tasks/AR-1281-supervised-cassette-lifecycle.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | [AR-1284](../tasks/AR-1284-runtime-strict-replay-lifecycle.md), [AR-1285](../tasks/AR-1285-runtime-launch-factory.md), [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md), [AR-1300](../tasks/AR-1300-runtime-cassette-dispatch-seam.md) |
-| [AR-1283](../tasks/AR-1283-formal-lockfile.md) | [AR-0003](../tasks/AR-0003-quality-gates.md) | None |
-| [AR-1284](../tasks/AR-1284-runtime-strict-replay-lifecycle.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md), [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md) | None |
-| [AR-1285](../tasks/AR-1285-runtime-launch-factory.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md), [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md) | [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md), [AR-1300](../tasks/AR-1300-runtime-cassette-dispatch-seam.md) |
-| [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md), [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md), [AR-1285](../tasks/AR-1285-runtime-launch-factory.md) | None |
-| [AR-1287](../tasks/AR-1287-delegated-sandbox-runner.md) | None | [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md), [AR-1306](../tasks/AR-1306-authenticated-fault-matrix-qualification.md) |
-| [AR-1288](../tasks/AR-1288-certificate-chain-authz.md) | [AR-0813](../tasks/AR-0813-remote-control-transport.md) | [AR-1370](../tasks/AR-1370-runner-authority-materialization.md), [AR-1371](../tasks/AR-1371-runner-authority-injection.md), [AR-1377](../tasks/AR-1377-runtime-chain-store.md), [AR-1468](../tasks/AR-1468-control-authority-materialization-successor.md) |
-| [AR-1289](../tasks/AR-1289-formal-lock-gate.md) | None | None |
-| [AR-1290](../tasks/AR-1290-dependabot-dco-boundary-recovery.md) | None | None |
-| [AR-1291](../tasks/AR-1291-superseded-pointer-repair.md) | None | None |
-| [AR-1292](../tasks/AR-1292-tla-provenance-repair.md) | None | None |
-| [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md) | None | None |
