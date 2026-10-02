@@ -1,7 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-        AR_0906["AR-0906 - Done"]:::status_done
-        AR_0907["AR-0907 - Done"]:::status_done
         AR_0908["AR-0908 - Done"]:::status_done
         AR_0909["AR-0909 - Done"]:::status_done
     end
@@ -531,7 +529,7 @@
         AR_1661["AR-1661 - Done"]:::status_done
         AR_1663["AR-1663 - Planned"]:::status_planned
         AR_1665["AR-1665 - Planned"]:::status_planned
-        AR_1666["AR-1666 - Planned"]:::status_planned
+        AR_1666["AR-1666 - Done"]:::status_done
         AR_1667["AR-1667 - Planned"]:::status_planned
         AR_1670["AR-1670 - Planned"]:::status_planned
     end

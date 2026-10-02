@@ -4434,7 +4434,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | planned |
+| Status | done |
 | Priority | P1 |
 | Role | unassigned |
 | Team | unassigned |
@@ -4442,7 +4442,7 @@
 | Parent | None |
 | Children | None |
 | Summary | Raise current TUI main coverage from 89.43&#37; to the strict 90&#37; gate through behavior-focused tests without weakening thresholds. |
-| Next action | Reproduce trusted-main coverage at exact head 06e96770, identify low-coverage wizard/runtime/UI paths, and add focused behavior tests preserving development nonblocking authentication, signature, and key-management rules. |
+| Next action | No further action; merged TUI PR #232 and exact post-merge trusted-main verification are green. |
 
 ### AR-1667 — Paired dev release and downstream consumption qualification
 
@@ -4671,3 +4671,5 @@ flowchart LR
         AR_0903["AR-0903 - Planned"]:::status_planned
         AR_0904["AR-0904 - Done"]:::status_done
         AR_0905["AR-0905 - Done"]:::status_done
+        AR_0906["AR-0906 - Done"]:::status_done
+        AR_0907["AR-0907 - Done"]:::status_done
