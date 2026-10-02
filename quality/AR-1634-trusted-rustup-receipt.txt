@@ -1,0 +1,1 @@
+AR-1634 acceptance: pass. PR #438 merged as eb878e30. Paired lifecycle evidence is recorded in AR-1639 receipt (sha256:b1acc19946a9ac94bc3dde11eb87c315010b938c832dbe180805fbefce59d33b); validated rustup/toolchain propagation works with cleared ambient PATH.
