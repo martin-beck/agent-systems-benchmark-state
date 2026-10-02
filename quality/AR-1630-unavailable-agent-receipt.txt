@@ -1,0 +1,8 @@
+AR: AR-1630
+Status: DONE
+TUI implementation PR: #219, signed/DCO head 59b23d25df84b3f531f440a8681771917e234787
+TUI merged protected-main commit: 419a059f4c1279f9bc2b2f8179705997bb224eee
+Hosted evidence: Repository Quality run 36961367026 and AWQ shadow run 36961367384 passed on the exact rebased head.
+Behavior: unavailable development agents remain visible in the catalog while lifecycle status is asserted only for available agents; setup controls and warning-only development auth paths are covered.
+Tests: focused transport/setup coverage, full locked library suite, format, clippy, and inventory checks passed; coverage threshold remained at or above the protected requirement.
+Scope: development availability and control coverage only; missing authentication, signatures, and key management remain warning-only and non-blocking.
