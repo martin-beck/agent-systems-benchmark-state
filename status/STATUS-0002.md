@@ -4692,15 +4692,3 @@ flowchart LR
         AR_0512["AR-0512 - Done"]:::status_done
         AR_0513["AR-0513 - Done"]:::status_done
         AR_0514["AR-0514 - Blocked"]:::status_blocked
-        AR_0515["AR-0515 - Planned"]:::status_planned
-        AR_0516["AR-0516 - Done"]:::status_done
-        AR_0517["AR-0517 - Done"]:::status_done
-        AR_0518["AR-0518 - Done"]:::status_done
-        AR_0519["AR-0519 - Done"]:::status_done
-        AR_0520["AR-0520 - Done"]:::status_done
-        AR_0521["AR-0521 - Blocked"]:::status_blocked
-    end
-    subgraph series_06["06 - Metrics"]
-        direction TB
-        AR_0601["AR-0601 - Done"]:::status_done
-        AR_0602["AR-0602 - Planned"]:::status_planned

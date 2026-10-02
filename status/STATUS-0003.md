@@ -1,5 +1,17 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+        AR_0515["AR-0515 - Planned"]:::status_planned
+        AR_0516["AR-0516 - Done"]:::status_done
+        AR_0517["AR-0517 - Done"]:::status_done
+        AR_0518["AR-0518 - Done"]:::status_done
+        AR_0519["AR-0519 - Done"]:::status_done
+        AR_0520["AR-0520 - Done"]:::status_done
+        AR_0521["AR-0521 - Blocked"]:::status_blocked
+    end
+    subgraph series_06["06 - Metrics"]
+        direction TB
+        AR_0601["AR-0601 - Done"]:::status_done
+        AR_0602["AR-0602 - Planned"]:::status_planned
         AR_0603["AR-0603 - Done"]:::status_done
         AR_0604["AR-0604 - Blocked"]:::status_blocked
     end
@@ -2694,5 +2706,3 @@
 | [AR-1250](../tasks/AR-1250-mockagents-harness-extension.md) | [AR-0888](../tasks/AR-0888-llm-double-conformance-spike.md), [AR-0889](../tasks/AR-0889-llm-fixture-scenario-contract.md) | [AR-1257](../tasks/AR-1257-mockagents-qemu-image.md) |
 | [AR-1251](../tasks/AR-1251-mockagents-transport-sandbox.md) | [AR-0888](../tasks/AR-0888-llm-double-conformance-spike.md), [AR-0889](../tasks/AR-0889-llm-fixture-scenario-contract.md) | [AR-1257](../tasks/AR-1257-mockagents-qemu-image.md) |
 | [AR-1252](../tasks/AR-1252-approved-isolated-qualification-runner.md) | [AR-0003](../tasks/AR-0003-quality-gates.md) | [AR-1253](../tasks/AR-1253-pinned-python-transport-runtime.md), [AR-1254](../tasks/AR-1254-mockagents-pinned-python-transport.md), [AR-1256](../tasks/AR-1256-bundled-mockagents-isolation.md), [AR-1303](../tasks/AR-1303-hosted-platform-diagnostics.md) |
-| [AR-1253](../tasks/AR-1253-pinned-python-transport-runtime.md) | [AR-1252](../tasks/AR-1252-approved-isolated-qualification-runner.md) | [AR-1254](../tasks/AR-1254-mockagents-pinned-python-transport.md), [AR-1255](../tasks/AR-1255-bundled-mockagents-qemu-runner.md), [AR-1256](../tasks/AR-1256-bundled-mockagents-isolation.md) |
-| [AR-1254](../tasks/AR-1254-mockagents-pinned-python-transport.md) | [AR-1252](../tasks/AR-1252-approved-isolated-qualification-runner.md), [AR-1253](../tasks/AR-1253-pinned-python-transport-runtime.md) | [AR-1255](../tasks/AR-1255-bundled-mockagents-qemu-runner.md) |
